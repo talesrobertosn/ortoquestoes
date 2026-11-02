@@ -11069,89 +11069,37 @@
   }
  },
  "trauma-0483": {
-  "conceito": "Na classificação de Herbert, a letra **C** descreve retardo de consolidação. Ela informa o estado de evolução da fratura, e não simplesmente o local do traço ou a viabilidade do polo proximal.\n\nO resumo separa as fraturas agudas estáveis do grupo A, as agudas instáveis do B, o retardo C e a pseudartrose D. Na forma C, descreve persistência do traço, alargamento e alterações como cistos; na D, distingue a pseudartrose fibrosa da esclerótica.\n\nUma localização proximal aumenta a preocupação com a biologia da união, mas não basta para classificar uma lesão como retardo. Da mesma forma, investigar necrose é uma pergunta de viabilidade que não substitui o critério temporal e de evolução da consolidação. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de Herbert/Fisher e pseudartrose.",
-  "correta": "Correta: E (retardo de consolidação). É a definição expressa do tipo C. A classificação distingue atraso de união, pseudartrose e localização anatômica, evitando usá-los como sinônimos.",
+  "conceito": "A classificação de HERBERT e FISHER olha o escafoide por uma pergunta que importa ao cirurgião: é preciso fixar? O Green resume a ideia central: fraturas estáveis, como as incompletas ou as do tubérculo, são do **tipo A** e podem ser imobilizadas, com alta expectativa de consolidação. Todas as outras foram consideradas potencialmente instáveis, com fixação rígida, um ponto ainda controverso (7ª ed., cap. 16, p. 593).\n\nA sequência completa conta a história natural da fratura. Dá para pensar em letras em ordem de gravidade: **A**, aguda estável; **B**, aguda instável; **C**, **retardo de consolidação**; **D**, pseudoartrose, fibrosa ou esclerótica. O tipo C é o momento em que a fratura ainda não consolidou no tempo esperado, mas ainda não formou uma pseudoartrose definitiva.\n\n**Vale saber a limitação.** O Green cita que DESAI e colaboradores não conseguiram prever a consolidação no tratamento fechado nem com a classificação de RUSSE nem com a de HERBERT (p. 593). O autor do capítulo prefere uma classificação mais próxima dos casos reais. Por isso, a prova cobra o nome, mas a decisão clínica depende também de outros dados: mais de 1 mm de desvio, ângulo intraescafoide acima de 35 graus, perda óssea e fratura do polo proximal são sinais de instabilidade (p. 593).",
+  "correta": "**E: retardo de consolidação.** É o tipo C da classificação de HERBERT, depois das agudas A e B, e antes da pseudoartrose D (resumo \"Fraturas e luxações do carpo\"; Green, 7ª ed., cap. 16, p. 593).",
+  "alerta": "O Green descreve a lógica de estabilidade da classificação de HERBERT e FISHER e detalha o tipo A, mas o trecho lido não lista os demais tipos; a correspondência C com retardo de consolidação vem do resumo citado. Letra E mantida.",
   "incorretas": {
-   "A": "A pseudartrose fibrosa corresponde a D1 no resumo. Ela pertence ao grupo D de não união, e não ao C de retardo; a alternativa troca a categoria de evolução da consolidação.",
-   "B": "Necrose avascular é um problema de viabilidade do fragmento. A fonte discute sua avaliação separadamente, inclusive pelo sangramento intraoperatório, mas não define C como necrose.",
-   "C": "Fratura do polo proximal é B3 na descrição das fraturas agudas. A localização pode influenciar o risco de não união, mas não equivale ao diagnóstico de retardo C.",
-   "D": "Polo distal informa onde ocorreu a fratura, sem demonstrar atraso de consolidação. O tipo C exige considerar a evolução da união, e não apenas nomear uma extremidade do osso."
+   "A": "**É o passo seguinte.** A pseudoartrose fibrosa entra no tipo D, já com a consolidação falha.",
+   "B": "**Complicação, não tipo C.** A necrose avascular ameaça principalmente o polo proximal, mas não é esse tipo.",
+   "C": "**É uma fratura aguda.** O polo proximal é um sinal de instabilidade (Green, 7ª ed., cap. 16, p. 593), e pertence às agudas instáveis, e não ao tipo C.",
+   "D": "**Também aguda.** O polo distal é o tipo menos comum, com cerca de 10% (Green, 7ª ed., cap. 16, p. 591), e a própria alternativa descreve localização, e não tempo."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 16, p. 591 e 593",
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: classificação de Herbert e Fisher; Escafoide: consolidação viciosa e pseudartrose."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: classificação de Herbert e Fisher",
-      "Escafoide: consolidação viciosa e pseudartrose"
-     ],
-     "blocos": [
-      "escafoide-classificacao-de-herbert-e-fisher-15c87e8c",
-      "escafoide-classificacao-de-herbert-e-fisher-d0ae7a5a",
-      "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039"
-     ],
-     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
-     "trechosSha256": "537ec8e56072b3b570e32609b97854fcfea4c8a16843392be4b0891fa6b20ebf"
-    }
-   ],
-   "questaoSha256": "c128a44c5baa2b9c7de3e6def657e093c94f7b107c62d4c1f3ec6eb38f521e87",
-   "comentarioSha256": "bf60aa1b7c965b94d49ca742a38c24cba1fefc3fa4f905910f262826f68c4dac"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "trauma-0484": {
-  "conceito": "O escafoide fratura mais frequentemente na **cintura**, que corresponde à sua região média. No mecanismo habitual de carga com o punho em dorsiflexão máxima e desvio radial, o polo proximal fica contido e a força dobra o osso; a cintura recebe o maior momento de flexão e tem menos trabéculas.\n\nLocalização frequente e prognóstico não são a mesma pergunta. O polo proximal tem particular dificuldade de irrigação e consolidação, mas isso não o torna o local mais comum. Fraturas do tubérculo e do polo distal também têm mecanismos e condutas próprios.\n\nA classificação por localização se organiza em polo proximal, cintura e polo distal. Radial e ulnar são direções do punho e não substituem a identificação da região média que a fonte aponta como predominante. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de mecanismo e classificação do escafoide.",
-  "correta": "Correta: E (meio do osso). Corresponde à cintura, local de maior frequência descrito. O mecanismo de flexão do escafoide e a arquitetura local fornecem a explicação, além da simples memorização do nome.",
+  "conceito": "Um jovem cai com a mão estendida e sente dor na tabaqueira anatômica. Por que a fratura aparece sempre no mesmo lugar? O Green responde com os números e o mecanismo (7ª ed., cap. 16, p. 591):\n\n| Local | Frequência |\n|---|---|\n| Cintura | 70% |\n| Polo proximal | 20% |\n| Polo distal | 10% |\n\n**A razão está em um ligamento.** O escafoide é um osso longo, em forma de amendoim, que une as duas fileiras do carpo. O ligamento radioescafocapitato cruza a face palmar da cintura e funciona como um **fulcro**: em extensão, o osso se dobra sobre ele e quebra ali (p. 591). A própria dor na tabaqueira é um sinal que vale sobretudo para as fraturas de cintura, como diz o Green.\n\n**Por que o local importa?** Por causa da circulação. O sangue chega principalmente de distal para proximal, e por isso quanto mais proximal a fratura, maior o risco de pseudoartrose e de necrose. A fratura da cintura costuma ir bem, com o tratamento certo. A do polo proximal é tratada com mais cuidado, e o Green a coloca entre os critérios de instabilidade (p. 593).\n\nNa prova, \"meio do osso\" é a maneira leiga de dizer cintura, e a banca aposta que você procure a palavra técnica.",
+  "correta": "**E: meio do osso.** É a cintura, com cerca de 70% das fraturas, onde o ligamento radioescafocapitato funciona como fulcro (Green, 7ª ed., cap. 16, p. 591).",
   "incorretas": {
-   "A": "O polo proximal importa pelo risco biológico, já que depende de fluxo intraósseo retrógrado. Maior dificuldade de cura não significa maior incidência: a fonte situa a predominância na cintura.",
-   "B": "A porção distal inclui padrões como fraturas do tubérculo por compressão ou avulsão. Elas existem e têm particularidades, mas não ocupam o lugar da cintura como localização mais comum na descrição consultada.",
-   "C": "Radial nomeia uma direção lateral e aparece no desvio do punho que participa do mecanismo. Não é uma forma de substituir cintura ou região média na classificação longitudinal da fratura.",
-   "D": "Ulnar também é uma direção do punho, não a região longitudinal que a questão procura. Confundir o sentido do desvio com o local do traço deixa de identificar a cintura, explicitamente descrita como mais comum."
+   "A": "**É a segunda.** O polo proximal responde por cerca de 20%, e é o de pior prognóstico (Green, 7ª ed., cap. 16, p. 591).",
+   "B": "**É a menos comum.** O polo distal responde por cerca de 10% (Green, 7ª ed., cap. 16, p. 591).",
+   "C": "**Descreve o lado do osso.** O termo não é uma região de fratura usual, e o escafoide é descrito por seus polos e pela cintura.",
+   "D": "**Mesmo problema.** A face ulnar se articula com o semilunar e o capitato, sem ser a localização descrita para a fratura."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 16, p. 591 e 593",
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Escafoide: classificação de Herbert e Fisher."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: anatomia, irrigação e mecanismo",
-      "Escafoide: classificação de Herbert e Fisher"
-     ],
-     "blocos": [
-      "escafoide-anatomia-irrigacao-e-mecanismo-ca12c5a0",
-      "escafoide-anatomia-irrigacao-e-mecanismo-02f7a0bf",
-      "escafoide-classificacao-de-herbert-e-fisher-62750cf0",
-      "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
-      "escafoide-anatomia-irrigacao-e-mecanismo-004adf59"
-     ],
-     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
-     "trechosSha256": "2e11b52ea072f5f68eff5aea6424cd347bb523e13a091074b0aa2afbe0fbc052"
-    }
-   ],
-   "questaoSha256": "f7f3472b488bc15e8d2be43c1b48f884296898dd92984202dcc0e91150c6c6a7",
-   "comentarioSha256": "aadf0d33ed63a27ea4f5929dc43f8d907ff21b558a967a46f4478eb04d9f72c8"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "trauma-0485": {
   "conceito": "**Os três tipos de fechamento.** **Primeira intenção** (per primam): as bordas são **aproximadas** logo após a limpeza, com sutura, grampos ou adesivo; a cicatriz é mínima e rápida, com pouco tecido de granulação. **Segunda intenção**: a ferida fica **aberta** e fecha sozinha por **granulação**, **contração** (miofibroblastos) e **epitelização** a partir das bordas; é lenta e deixa cicatriz maior, mas é segura em feridas contaminadas ou com perda de tecido. **Terceira intenção**, ou **fechamento primário tardio**: a ferida fica aberta por alguns dias (3 a 7), limpa-se de novo e, se estiver sem infecção, é **suturada** depois.\n\n**Por que isso importa nas fraturas expostas.** O Manual AO lembra que os defeitos maiores continuaram por muito tempo a ser deixados abertos, para cicatrizar por segunda intenção (cap. 4.2). O dogma antigo era **nunca fechar** uma fratura exposta primariamente. Hoje, em feridas de **baixa contaminação**, com desbridamento completo, sem tecido desvitalizado e sem tensão, o **fechamento primário** (primeira intenção) é aceitável e reduz infecções hospitalares. Em feridas contaminadas (agrícolas, esgoto), Gustilo III, com tecido duvidoso, prefere-se deixar aberta, com **terapia por pressão negativa** e **novo desbridamento** em 24 a 72 horas, com **fechamento tardio** ou **cobertura** com retalho, idealmente em até **7 dias**.\n\n**Não confundir com o osso.** \"Consolidação **primária**\" é um termo do **osso**: a consolidação direta, sem calo, que ocorre com **estabilidade absoluta** e contato entre os fragmentos (placa de compressão). A **secundária** forma calo, com estabilidade relativa (haste, gesso). Por isso, para a ferida suturada, o termo técnico da banca é **primeira intenção**.\n\n**Na prova:** ferida limpa e **suturada logo** = **primeira intenção**; deixada aberta = **segunda**; aberta e suturada dias depois = **terceira** (fechamento primário tardio).",
@@ -21434,18 +21382,19 @@
   }
  },
  "trauma-1016": {
-  "conceito": "**As fraturas periprotéticas acima da prótese do joelho.** Ocorrem em idosos osteoporóticos com **artroplastia total do joelho**, geralmente após quedas. A pergunta central é: **o componente femoral está estável?** E onde fica o traço em relação a ele?\n\n**A classificação de Su.** Baseia-se na relação do traço com o **componente femoral**. **Tipo I**: fratura **proximal** ao componente femoral (acima da borda proximal da prótese). **Tipo II**: fratura que **começa no nível da borda proximal** do componente e se estende **proximalmente**. **Tipo III**: qualquer parte da fratura fica **distal** à borda proximal do componente (a fratura é baixa, dentro da área do implante). Essa classificação ajuda a escolher o implante: os tipos I e II deixam osso suficiente para **haste retrógrada** (se a prótese tiver caixa aberta) ou **placa bloqueada**; no tipo III, o fragmento distal é pequeno, e a **placa** bloqueada distal ou a **revisão** são preferidas.\n\n**A classificação de Lewis e Rorabeck.** Considera **desvio** e **estabilidade** do implante: **I** sem desvio, prótese estável; **II** desviada, prótese estável; **III** prótese **solta** ou instável, com qualquer fratura. O tipo III exige **revisão** da artroplastia, muitas vezes com implantes de revisão ou megaprótese.\n\n**Na prova:** Su **II** = fratura que **começa na borda proximal** do componente femoral e sobe; I acima dele; III desce para dentro da área do componente.",
-  "correta": "**B: II.** O enunciado usa a própria definição: o traço começa no nível da porção proximal do componente femoral e sobe.",
+  "conceito": "Uma mulher idosa com prótese total do joelho, depois de uma queda. O problema é a junção entre o implante rígido e o osso osteoporótico, onde a tensão se concentra. Para decidir a fixação, a pergunta é: onde o traço começa em relação ao componente femoral?\n\nÉ isso que SU e colaboradores classificaram, segundo o Rockwood, de acordo com a localização em relação à **borda proximal do componente femoral** (cap. 59, Fig. 59-20):\n\n| Tipo | Traço |\n|---|---|\n| I | proximal ao componente |\n| II | origina-se na extremidade proximal do componente e sobe |\n| III | estende-se distalmente à borda proximal do componente |\n\n**Por que isso muda a conduta?** Porque decide quanta \"pega\" sobra no fragmento distal. No tipo I, há osso de sobra para quase qualquer método. No tipo II, a haste retrógrada ou a placa precisam ser bem escolhidas e dependem do tipo de componente. No tipo III, há pouco osso distal, e a prótese de revisão pode entrar em discussão. O próprio Rockwood registra que existe mais de um esquema, e que a posição em relação à prótese é um fator com potencial de ditar o tratamento (cap. 59).\n\nO enunciado diz que o traço \"se inicia no nível da porção proximal\" do componente, o que corresponde ao tipo II.",
+  "correta": "**B: II.** O traço se origina na extremidade proximal do componente femoral e sobe, o que define o tipo II de SU (Rockwood, cap. 59, Fig. 59-20).",
+  "alerta": "A classificação de Su não foi localizada nos livros locais, onde o capítulo do Rockwood trata do tema geral. A definição dos três tipos foi mantida do comentário anterior e bate com o enunciado, mas não foi conferida no original.",
   "incorretas": {
-   "A": "**Inteira acima.** No tipo I, a fratura fica toda proximal ao componente, sem chegar à borda.",
-   "C": "**Desce para o implante.** No tipo III, parte da fratura fica distal à borda proximal do componente, e o fragmento distal é pequeno.",
-   "D": "**Fora da escala.** Su tem três tipos; não há IV A.",
-   "E": "**Mesmo erro.** IV B também não existe aqui."
+   "A": "**Totalmente acima.** O tipo I fica proximal ao componente, sem tocar nele (Rockwood, cap. 59, Fig. 59-20).",
+   "C": "**Avança para baixo.** O tipo III se estende distalmente à borda proximal do componente (Rockwood, cap. 59, Fig. 59-20).",
+   "D": "**Outra classificação.** Tipos com letras, como IV A, não fazem parte das três categorias de SU. Lembram os sistemas de fratura periprotética de quadril.",
+   "E": "**Mesmo erro.** Não existe tipo IV nessa classificação (Rockwood, cap. 59, Fig. 59-20)."
   },
   "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 59, Fig. 59-20",
    "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 59 (Lower Extremity Periprosthetic Fractures)"
   ],
-  "alerta": "A classificação de Su não foi localizada nos livros locais, onde o capítulo do Rockwood trata do tema geral. A definição dos três tipos foi mantida do comentário anterior e bate com o enunciado, mas não foi conferida no original.",
   "geradoEm": "2026-11-02",
   "conferido": false
  },
