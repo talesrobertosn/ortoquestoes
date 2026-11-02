@@ -540,25 +540,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [repouso])
 
-  // Parallax leve com o mouse (computador, sem "menos animação").
-  useEffect(() => {
-    const el = palco.current
-    const alvo = el?.closest('.jn-heroi, .hd-topo') as HTMLElement | null
-    if (!el || !alvo || !window.matchMedia('(hover: hover) and (prefers-reduced-motion: no-preference)').matches) return
-    let quadro = 0
-    const mover = (e: PointerEvent) => {
-      cancelAnimationFrame(quadro)
-      quadro = requestAnimationFrame(() => {
-        const r = alvo.getBoundingClientRect()
-        el.style.setProperty('--mx', ((e.clientX - r.left) / r.width - 0.5).toFixed(3))
-        el.style.setProperty('--my', ((e.clientY - r.top) / r.height - 0.5).toFixed(3))
-      })
-    }
-    const sair = () => { el.style.setProperty('--mx', '0'); el.style.setProperty('--my', '0') }
-    alvo.addEventListener('pointermove', mover)
-    alvo.addEventListener('pointerleave', sair)
-    return () => { cancelAnimationFrame(quadro); alvo.removeEventListener('pointermove', mover); alvo.removeEventListener('pointerleave', sair) }
-  }, [])
+  // Sem parallax com o mouse (Tales, 02/11/2026: a arte "dava uma sambada" quando o mouse passava; a cena fica parada).
 
   const particulas = useMemo(() => Array.from({ length: 16 }, (_, i) => ({ x: (i * 37 + 11) % 100, y: (i * 53 + 7) % 70 + 5, t: 6 + (i % 5) * 1.6, d: -((i * 1.7) % 8) })), [])
   const brasas = useMemo(() => Array.from({ length: 9 }, (_, i) => ({ dx: ((i * 29) % 13) - 6, t: 1.8 + (i % 4) * 0.5, d: -((i * 0.7) % 3) })), [])
