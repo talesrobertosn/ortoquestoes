@@ -165,7 +165,7 @@ export default function Inicio() {
       <div className="a3-heroi__topo">
         <h1 className="a3-titulo-1 a3-so-leitor">Agora</h1>
         <span className="a3-rotulo">{dataHoje}</span>
-        {g && <p className="a3-heroi__frase">{g.listas.online.length} {g.listas.online.length === 1 ? 'pessoa online' : 'pessoas online'} · {n('assinantes')} de {g.totalAssinantes} assinantes entraram hoje{nm.estudaram.hoje !== null ? ` · ${inteiro(nm.estudaram.hoje)} ${nm.estudaram.hoje === 1 ? 'estudou' : 'estudaram'}` : ''}</p>}
+        {g && <p className="a3-heroi__frase">{g.listas.online.length} {g.listas.online.length === 1 ? 'pessoa online' : 'pessoas online'} · {n('assinantes')} de {g.totalAssinantes} assinantes entraram hoje · {inteiro(n('estudaram') ?? 0)} {n('estudaram') === 1 ? 'estudou' : 'estudaram'}</p>}
       </div>
       {g && <>
         <div className="a3-heroi__grupo">
@@ -183,8 +183,8 @@ export default function Inicio() {
             <Numero cor="lead" rotulo="Viram os planos" valor={semSinais ? null : n('viram')} nota={semSinais ? 'sinal indisponível' : 'não assinantes'} ativo={ativo('viram')} aoClicar={() => abrir('viram')} />
             {limite ? <Numero cor="gratis" rotulo="Bateram o limite" valor={n('limite')} nota={`de ${limite} grátis`} ativo={ativo('limite')} aoClicar={() => abrir('limite')} />
               : <Numero cor="gratis" rotulo="Assinantes ausentes" valor={n('ausentes')} nota="não entraram hoje" ativo={ativo('ausentes')} aoClicar={() => abrir('ausentes')} />}
-            <Numero cor="claro" rotulo="Estudaram" valor={nm.estudaram.hoje} nota={nm.questoes.hoje !== null ? `${inteiro(nm.questoes.hoje)} questões` : 'hoje'} ativo={ativo('estudaram')} aoClicar={() => abrir('estudaram')} />
-            <Numero cor="claro" rotulo="Cadastros" valor={nm.cadastros.hoje} nota={nm.cadastros7d !== null ? `${inteiro(nm.cadastros7d)} em 7 dias` : 'hoje'} ativo={ativo('cadastros')} aoClicar={() => abrir('cadastros')} />
+            <Numero cor="claro" rotulo="Estudaram" valor={n('estudaram')} nota={`${inteiro(g.listas.estudaram.reduce((t, u) => t + (u.respondidas_hoje ?? 0), 0))} questões`} ativo={ativo('estudaram')} aoClicar={() => abrir('estudaram')} />
+            <Numero cor="claro" rotulo="Cadastros" valor={n('cadastros')} nota={nm.cadastros7d !== null ? `${inteiro(nm.cadastros7d)} em 7 dias` : 'hoje'} ativo={ativo('cadastros')} aoClicar={() => abrir('cadastros')} />
             <Numero cor="claro" rotulo="Recebido" valor={nm.valorPago.hoje} formato={reais} nota={nm.valorPago.hoje === null ? 'hoje' : `${inteiro(nm.pagaram.hoje ?? 0)} ${nm.pagaram.hoje === 1 ? 'pagamento' : 'pagamentos'}`} aoClicar={() => nav.ir('cobrancas')} />
           </div>
         </div>
