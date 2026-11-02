@@ -28,7 +28,7 @@ export default function Avisos() {
   const [reprocessando, definirReprocessando] = useState<number | null>(null)
   const parte = defParte('pagamentos')
   const termo = normalizar(busca.trim())
-  const visiveis = useMemo(() => (eventos ?? []).filter(e => (status === 'todos' || (status === 'certo' ? ['processado', 'ignorado'].includes(e.status_processamento) : e.status_processamento === 'erro' && !lidos.has(String(e.id)))) && combina([e.id_evento, e.tipo, TIPOS_EVENTO[e.tipo ?? ''], e.id_recurso, e.erro, nomeErro(e.erro), e.nome, e.usuario], termo)), [eventos, status, termo])
+  const visiveis = useMemo(() => (eventos ?? []).filter(e => (status === 'todos' || (status === 'certo' ? ['processado', 'ignorado'].includes(e.status_processamento) : e.status_processamento === 'erro' && !lidos.has(String(e.id)))) && combina([e.id_evento, e.tipo, TIPOS_EVENTO[e.tipo ?? ''], e.id_recurso, e.erro, nomeErro(e.erro), e.nome, e.usuario], termo)), [eventos, status, termo, lidos])
   if (!eventos) return p.eventosQ.erro ? <Estado tipo="erro" titulo="Os avisos não carregaram" texto={p.erroDados} /> : <Carregando linhas={6} texto="Carregando os avisos…" />
 
   const naoVistos = eventos.filter(e => e.status_processamento === 'erro' && !lidos.has(String(e.id)))
