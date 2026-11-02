@@ -32183,35 +32183,37 @@
   "conferido": false
  },
  "mao-1874": {
-  "conceito": "O agente mais frequente de uma queimadura muda com a idade, e por isso as questões dependem de um detalhe do enunciado. Em crianças pequenas, é o **líquido quente**: em Parkland, numa série de 35 anos, a escaldadura respondeu por 42% das internações pediátricas, seguida pela chama, com 29% (PubMed 26613626). Em outra instituição, chegou a 83% (PMC11023416).\n\nConforme a criança cresce, a situação se inverte: nos adolescentes, a chama passa a dominar, com 47% em uma série (PMC11023416). Essa curva continua no adulto, em que chama direta e ignição de roupa são apontadas como a causa mais comum, enquanto a escaldadura predomina na infância.",
-  "correta": "**E: queimadura de flash e chama.** É a causa que passa a dominar na adolescência e continua no adulto, ao contrário da escaldadura da infância (PMC11023416).",
-  "alerta": "As fontes abertas consultadas mostram bem a curva até a adolescência, mas não trazem um registro específico de internações de adultos. A letra E foi mantida como gabarito da banca.",
+  "conceito": "O agente da queimadura segue a idade do paciente. Na criança pequena, é o líquido quente: em Parkland, a escaldadura foi a principal causa de internação pediátrica, com 42%, seguida da chama, com 29% (PubMed 26613626). Na adolescência, a chama assume o primeiro lugar, com 47% em uma série (PMC11023416). O adulto segue essa mesma tendência.\n\n**Por que importa saber disso?** O Green dá o motivo: a causa é o fator isolado mais útil para prever a cicatrização, e as queimaduras por chama são **o tipo mais grave**, com a exceção notável das lesões de alta tensão (7ª ed., cap. 57, p. 1928). A chama costuma atingir o dorso da mão, em uma pele fina, com tendões e articulações logo abaixo, e queima mais fundo do que a escaldadura. O enunciado reforça isso: face e ombro, com segundo e terceiro graus, depois de 7 dias de internação.\n\nO flash, por sua vez, é um pico curto de calor, como numa explosão de gás. Em um adulto, a combinação \"chama e flash\" fica no topo das listas, e o Green lembra que a mão muitas vezes é atingida porque está exposta, sem proteção (8ª ed., cap. 57).",
+  "correta": "**E: queimadura de flash e chama.** É a causa que domina a partir da adolescência e o tipo mais grave entre as térmicas comuns (PMC11023416; Green, 7ª ed., cap. 57, p. 1928).",
+  "alerta": "As fontes consultadas mostram bem a curva até a adolescência, mas não trazem um registro específico de internações de adultos. A letra E foi mantida como gabarito da banca.",
   "incorretas": {
-   "A": "**Graves, mas não as mais comuns.** As lesões elétricas têm grande importância cirúrgica, sem ser a principal causa de internação.",
-   "B": "**Causa típica da criança.** Domina em menores de 5 anos (PubMed 26613626) e perde espaço com a idade.",
-   "C": "**Em terceiro lugar nas séries.** Em Parkland, foram 10% das internações pediátricas (PubMed 26613626).",
-   "D": "**Pouco frequente.** As lesões químicas têm um contexto próprio, como o de acidentes de trabalho, e não lideram as internações."
+   "A": "**Grave, mas pouco frequente.** A alta tensão é a exceção à gravidade da chama (Green, 7ª ed., cap. 57, p. 1928), com destruição profunda, porém é bem menos comum.",
+   "B": "**A causa da criança.** Lidera na faixa pediátrica (PubMed 26613626) e, em jovens, costuma ter boa cicatrização espontânea (Green, p. 1928).",
+   "C": "**Em terceiro lugar na série.** O contato respondeu por 10% em Parkland (PubMed 26613626) e costuma ser uma lesão menor, embora frequente na mão.",
+   "D": "**Tem contexto próprio.** As lesões químicas são típicas de acidente de trabalho, tratadas com lavagem imediata com água (Green, 8ª ed., cap. 57, p. 2144), e não lideram as internações."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 57 (Burned Hand), p. 1928",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 57, p. 2144",
    "Epidemiology of pediatric burns at Parkland Hospital, PubMed 26613626",
-   "Pediatric Burns: Single Institution Review of 685 Patients, PMC11023416"
+   "Pediatric Burns: Review of 685 Patients, PMC11023416"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1875": {
-  "conceito": "A água fervente causa uma lesão clássica, e o que define a conduta é a profundidade. A queimadura **superficial de espessura parcial** é rosa, úmida, com bolhas, muito dolorosa, e clareia sob pressão, porque a circulação está preservada. Ela geralmente cicatriza em 10 a 15 dias, com pouca cicatriz, embora possa alterar a pigmentação (StatPearls, Thermal Burns; Burn Classification).\n\nA profunda é outra doença: atinge a derme reticular, lesa nervos e anexos, e leva 3 semanas ou mais para fechar (StatPearls). E a de espessura total não clareia à pressão.\n\nLembrando o EXCETO: o aspecto \"lagosta\" fala de um vermelho escuro uniforme, que não combina com o rosa úmido e bolhoso da lesão superficial de espessura parcial. Por isso, é ele a exceção.",
-  "correta": "**B: aspecto em lagosta vermelha escura em criança.** É o item que não pertence ao quadro. A queimadura superficial de espessura parcial é rosa e úmida, com bolhas, e clareia à pressão (StatPearls, Burn Classification).",
+  "conceito": "Uma panela de água fervente em uma criança de 3 anos: a primeira pergunta é a profundidade. O Green é direto: a causa da queimadura é o fator isolado mais útil para prever a cicatrização, e a escaldadura costuma dar um padrão de profundidade mista, com alta capacidade de cicatrização espontânea em pacientes jovens (7ª ed., cap. 57, p. 1928).\n\nPara reconhecer a queimadura **superficial de espessura parcial**, pense no que ela preservou. A circulação continua, e por isso a lesão é **rosa e clareia à pressão**. Os nervos estão íntegros, e por isso **dói muito**. A epiderme se destacou, e por isso há **bolhas**. O StatPearls descreve: dolorosa, com bolhas e vesículas e derme rosa e úmida, que cicatriza em 10 a 15 dias, com pouca cicatriz (Thermal Burns; Burn Classification). O tratamento segue a mesma lógica: creme antibacteriano e movimento precoce, sem operar (Green, p. 1928).\n\n**O EXCETO.** Qual item não combina? O aspecto de \"lagosta vermelha escura\", em uma cor intensa e sem o rosa úmido. Em uma criança, um vermelho profundo que não clareia faz pensar em uma lesão mais funda, em que a circulação já não responde. Não é o quadro da superficial.",
+  "correta": "**B: aspecto em lagosta vermelha escura em criança.** É o item que foge do quadro: a queimadura superficial de espessura parcial é rosa e úmida, com bolhas, e clareia à pressão (StatPearls, Burn Classification; Green, 7ª ed., cap. 57, p. 1928).",
   "incorretas": {
-   "A": "**Faz parte.** Rosa com bolhas é a imagem típica (StatPearls, Burn Classification).",
-   "C": "**Faz parte.** Com os nervos preservados, a dor é intensa (StatPearls, Thermal Burns).",
-   "D": "**Faz parte.** Como os anexos estão preservados, ela fecha sozinha, sem enxerto.",
-   "E": "**Faz parte.** O prazo está dentro do que o StatPearls descreve, de 10 a 15 dias."
+   "A": "**Faz parte.** Rosa com bolhas é o retrato da lesão (Green, 7ª ed., cap. 57, p. 1928).",
+   "C": "**Faz parte.** Os nervos preservados explicam a dor. Na de terceiro grau, ela desaparece (Green, p. 1928).",
+   "D": "**Faz parte.** Os anexos estão preservados, e a epitelização acontece sem enxerto (Green, p. 1928 e 1929).",
+   "E": "**Faz parte.** O StatPearls fala em 10 a 15 dias, e 14 está dentro disso (Thermal Burns)."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 57 (Burned Hand), p. 1928 e 1929",
    "StatPearls (NCBI Bookshelf), Thermal Burns (NBK430773)",
-   "StatPearls (NCBI Bookshelf), Burn Classification (NBK539773)",
-   "StatPearls (NCBI Bookshelf), Acute and Chronic Thermal Burn Evaluation and Management (NBK430730)"
+   "StatPearls (NCBI Bookshelf), Burn Classification (NBK539773)"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -32446,15 +32448,16 @@
   "conferido": false
  },
  "mao-1889": {
-  "conceito": "Em uma queimadura grande, o líquido não some: ele sai dos vasos para os tecidos, porque a permeabilidade capilar aumenta. Isso explica o edema e a hipovolemia ao mesmo tempo. Uma revisão descreve a perda de líquido para o tecido queimado e uma segunda fase, mais gradual, de 12 a 24 horas depois da lesão (PMC5214064).\n\nOutras fontes confirmam a janela: a hipovolemia intravascular e a hemoconcentração decorrem de edema maciço nas primeiras 12 a 24 horas (PMC3671671). Em queimaduras menores, o pico pode vir antes; o StatPearls cita de 8 a 12 horas (Parkland Formula). Por isso, o enunciado diz \"em grandes lesões\". A consequência prática é a reposição: o paciente precisa de mais volume exatamente nesse intervalo, e daí a fórmula dar metade do volume nas primeiras 8 horas.",
-  "correta": "**C: 12-24 horas.** É a janela de edema máximo citada nas revisões para as grandes queimaduras (PMC5214064; PMC3671671).",
+  "conceito": "Nas grandes queimaduras, o inchaço não termina nas primeiras horas: ele continua a crescer, e é isso que a questão quer que você saiba. O capilar vaza, o líquido rico em proteínas passa para o interstício (Green, 7ª ed., cap. 57, p. 1927), e o volume circulante cai.\n\n**Quando é o pico?** Uma revisão descreve uma fase rápida e uma segunda fase, mais gradual, de 12 a 24 horas depois da queimadura (PMC5214064). Outra confirma a hipovolemia e a hemoconcentração por edema maciço nas primeiras 12 a 24 horas (PMC3671671). Em lesões menores, o pico pode vir antes: o StatPearls cita de 8 a 12 horas (Parkland Formula). Por isso, o enunciado diz \"grandes lesões térmicas\".\n\n**Por que isso interessa ao cirurgião de mão?** Porque o edema máximo é também o momento em que a pressão sobe. O Green mostra as consequências: dentro dos compartimentos dos intrínsecos, ele pode exigir fasciotomia, e os compartimentos podem precisar de descompressão mais tarde do que a queimadura sugere (p. 1927 e 1930). A mão que parecia boa na admissão precisa ser reexaminada nesse intervalo. Em queimaduras circunferenciais, as indicações de escarotomia dependem dessa evolução (p. 1929 e 1930).",
+  "correta": "**C: 12-24 horas.** É a janela do edema máximo nas grandes queimaduras (PMC5214064; PMC3671671).",
   "incorretas": {
-   "A": "**Fase inicial.** O edema está se formando, mas o pico é depois.",
-   "B": "**A mais próxima.** De 8 a 12 horas é o que o StatPearls cita em geral (Parkland Formula), mas a pergunta fala de grandes lesões, em que a janela vai além.",
-   "D": "**Depois do pico.** Em 2 dias, a permeabilidade já está se normalizando.",
-   "E": "**Tarde demais.** Em 5 dias, o edema está sendo reabsorvido."
+   "A": "**Ainda em crescimento.** Nessas horas o edema está se formando, mas ainda não chegou ao máximo.",
+   "B": "**A mais próxima.** O StatPearls cita de 8 a 12 horas (Parkland Formula), o que a torna a distratora honesta. Nas grandes lesões, porém, as revisões estendem o pico até 12 a 24 horas (PMC5214064).",
+   "D": "**Já passou.** A permeabilidade tende a melhorar depois desse período, e a preocupação passa a ser a reabsorção do edema.",
+   "E": "**Bem depois.** Com 5 dias, o doente está mobilizando líquido, em uma fase já bem diferente da inicial."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 57 (Burned Hand), p. 1927, 1929 e 1930",
    "Burns: Pathophysiology of Systemic Complications, PMC5214064",
    "Curbing Inflammation in Burn Patients, PMC3671671",
    "StatPearls (NCBI Bookshelf), Parkland Formula (NBK537190)"
@@ -32831,15 +32834,16 @@
   "conferido": false
  },
  "mao-1906": {
-  "conceito": "Uma queimadura de 36% é um problema de temperatura tanto quanto de pele. A pele perdida era o que mantinha o calor. Por isso, a regra do transporte é: **cobrir limpo, seco, e aquecer**.\n\nOs guias de primeiros socorros concordam em evitar o excesso de resfriamento, em especial nas grandes queimaduras, em crianças e idosos (PMC8291991). O resfriamento prolongado pode levar à hipotermia em adultos com mais de 25% da superfície queimada, e o gelo nunca é adequado, porque pode aprofundar a lesão e causar hipotermia (PMC3038405; PMC4653976). Um guia de atendimento em ambientes de campo fala em pano limpo e seco como curativo, em lugar dos úmidos, e coloca a prevenção da hipotermia entre as prioridades (PMC11571820). Desbridar pode esperar pelo centro de queimados.",
-  "correta": "**D: cobrir as lesões com compressas estéreis e secas e manter a paciente aquecida.** Protege a ferida e evita a hipotermia durante o transporte (PMC8291991; PMC11571820).",
+  "conceito": "Na hora de transferir uma paciente com 36% de queimadura profunda, é natural querer fazer alguma coisa na ferida. O certo é o contrário: proteger, aquecer e levar. A explicação é fisiológica.\n\n**A pele perdida era o isolante.** Sem ela, a paciente perde calor e água continuamente, e cada grau a menos piora a coagulação e a perfusão. Uma revisão de guias internacionais encontrou consenso em evitar o resfriamento excessivo, especialmente nas queimaduras extensas, em crianças e idosos (PMC8291991). Em adultos com mais de 25% da superfície queimada, o resfriamento prolongado já pode levar à hipotermia (PMC3038405).\n\n**Mas e o resfriamento?** Ele existe, e a questão está na hora certa e no tamanho da área. O Green recomenda resfriar com água corrente nos primeiros 30 minutos, porque isso reduz o edema, e avisa: **compressas frias ou gelo moído podem causar dano adicional**, ao baixar demais a temperatura do tecido (7ª ed., cap. 57, p. 1929). Vale para a mão isolada. Em uma paciente com 36%, a compressa fria e úmida em área extensa troca um problema por outro, além de já ter passado o tempo útil.\n\n**O curativo.** Um guia de ambiente de campo sugere um pano limpo e seco, evitando os úmidos (PMC11571820). E o restante da assistência tem prioridade: via aérea e volume. O desbridamento fica para o centro de queimados.",
+  "correta": "**D: cobrir as lesões com compressas estéreis e secas e manter a paciente aquecida.** Protege a ferida e evita a hipotermia, que é o risco das grandes queimaduras (PMC8291991; PMC11571820).",
   "incorretas": {
-   "A": "**Atrasa e não é a prioridade.** Antes da transferência, o foco é via aérea, volume e temperatura. O desbridamento é um tempo posterior.",
-   "B": "**Antes da hora.** O curativo tópico específico é decidido no centro de queimados, e uma compressa úmida ainda resfriaria a paciente.",
-   "C": "**Risco de hipotermia.** A compressa fria e úmida em 36% da superfície pode esfriar demais a paciente (PMC8291991).",
-   "E": "**A opção perigosa.** O gelo nunca é adequado (PMC4653976)."
+   "A": "**Atrasa o que importa.** O desbridamento pode ser feito no centro de referência. Antes da transferência, a prioridade é estabilizar, e levar a paciente à sala só adiaria a chegada.",
+   "B": "**Fora de hora.** O curativo tópico é decidido depois da avaliação no centro. Além disso, uma compressa úmida nessa extensão resfria a paciente.",
+   "C": "**A resposta tentadora.** Faz sentido em uma queimadura pequena e recente. Em 36% da superfície, o risco de hipotermia passa a dominar (PMC8291991).",
+   "E": "**A opção perigosa.** O Green adverte que o gelo pode causar dano adicional ao tecido (7ª ed., cap. 57, p. 1929), e, em uma área tão grande, ainda causaria hipotermia (PMC4653976)."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 57 (Burned Hand), p. 1929",
    "A Rapid Review of Burns First Aid Guidelines, PMC8291991",
    "Pre-hospital care in burn injury, PMC3038405",
    "Minor burn management, PMC4653976",
@@ -32849,49 +32853,51 @@
   "conferido": false
  },
  "mao-1907": {
-  "conceito": "Queimadura \"intermediária\" ou de espessura parcial é a que vive na derme, e o que a salva é o que sobrou lá embaixo: folículos e glândulas guardam células capazes de refazer a epiderme. Por isso, ela pode fechar sozinha.\n\nO StatPearls detalha: a **superficial** é rosa, úmida, com bolhas, muito dolorosa, e cicatriza em 10 a 15 dias; a **profunda** atinge a derme reticular, lesa nervos e anexos, e geralmente leva 3 semanas ou mais (Thermal Burns; Burn Classification). Daí sai o número da alternativa correta: com tratamento adequado, de 2 a 3 semanas.\n\nAs erradas descrevem outras lesões: o tecido subcutâneo e o aspecto coriáceo pertencem à queimadura de espessura total, e o enxerto precoce é a conduta para ela, e não para a que pode cicatrizar sozinha.",
-  "correta": "**D: podem epitelizar em 2 ou 3 semanas com tratamento adequado.** É o tempo descrito para as queimaduras dérmicas, graças aos anexos preservados (StatPearls, Thermal Burns).",
+  "conceito": "Toda a conduta em queimadura depende de uma pergunta: ainda sobrou na derme o que é preciso para refazer a pele? O Green divide as lesões em uma figura que vale decorar (7ª ed., cap. 57, p. 1928):\n\n| Grau | Aspecto | Conduta |\n|---|---|---|\n| 1º | rosa, eritema, sem bolhas | conservadora |\n| 2º superficial | eritema, bolhas, rosa, dor | creme antibacteriano, movimento precoce |\n| 2º profundo | bolhas, áreas brancas e rosas, menos dor | observar; excisão e enxerto se não epitelizar |\n| 3º | branco, sem dor, veias trombosadas, couro | excisão tangencial e enxerto |\n| 4º | carbonizado, destruição profunda | alta voltagem |\n\nA queimadura \"intermediária\" é a de segundo grau. O segredo está nos anexos da pele, folículos e glândulas, que ficam na derme e guardam as células capazes de reepitelizar. Enquanto eles sobrevivem, a ferida pode se fechar sozinha. A queimadura profunda, de terceiro grau, destruiu essa reserva e não consegue se regenerar pela epitelização (Green, p. 1929).\n\n**Os prazos.** O StatPearls dá as referências: a superficial cicatriza em 10 a 15 dias, com pouca cicatriz, e a profunda leva 3 semanas ou mais, com nervos e anexos lesados (Thermal Burns). A alternativa correta é a soma dessas duas: de 2 a 3 semanas. O Green acrescenta um detalhe da mão: a pele da palma tem tanta capacidade de cicatrização que mesmo uma queimadura profunda ali pode fechar espontaneamente (p. 1929, Fig. 57.4).",
+  "correta": "**D: podem epitelizar em 2 ou 3 semanas com tratamento adequado.** A derme mantém os anexos, de onde surge a nova epiderme (Green, 7ª ed., cap. 57, p. 1928 e 1929). Os prazos correspondem aos do StatPearls (Thermal Burns).",
   "incorretas": {
-   "A": "**É a de espessura total.** Atingir o subcutâneo passa da definição de espessura parcial (StatPearls, Burn Classification).",
-   "B": "**Descreve a de espessura total.** O aspecto de couro é típico dela, e ela costuma ser insensível.",
-   "C": "**Não é a característica definidora.** Pode infectar, mas a alta probabilidade não é o que a distingue.",
-   "E": "**Só se não fechar.** O enxerto precoce é para a lesão profunda, que não epitelizaria sozinha."
+   "A": "**Passou da derme.** Comprometer o subcutâneo já é queimadura de espessura total, sem anexos para regenerar (Green, 7ª ed., cap. 57, p. 1929).",
+   "B": "**Junta dois quadros que se excluem.** O aspecto de couro é da lesão de terceiro grau, que **não** dói, porque os nervos foram destruídos (Green, p. 1928). A lesão muito dolorosa é a superficial, rosa e com bolhas.",
+   "C": "**Exagero.** Toda queimadura pode infectar, mas a probabilidade alta não é o traço que define essa profundidade. O Green usa creme antibacteriano justamente para evitar celulite e erisipela nessa fase de edema (p. 1931).",
+   "E": "**Só quando ela não fecha.** Para a de segundo grau, o Green recomenda observação e reserva a excisão com enxerto para a que não epiteliza. Enxertar logo seria retirar tecido que cicatrizaria sozinho (p. 1928)."
   },
   "referencias": [
-   "StatPearls (NCBI Bookshelf), Thermal Burns (NBK430773)",
-   "StatPearls (NCBI Bookshelf), Burn Classification (NBK539773)"
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 57 (Burned Hand), p. 1928, 1929 e 1931",
+   "StatPearls (NCBI Bookshelf), Thermal Burns (NBK430773)"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1908": {
-  "conceito": "Criança pequena, panela no fogão: a história se repete nas emergências. Em Parkland, uma série de 35 anos encontrou a escaldadura como principal causa de internação pediátrica, com 42%, seguida da chama, com 29%, e do contato, com 10% (PubMed 26613626). Em outra série pediátrica, a escaldadura chegou a 83% (PMC11023416).\n\nPor que tanta diferença em relação ao adolescente? Porque o risco acompanha o comportamento: a criança pequena alcança o que está quente, mas não entende o perigo. Com a idade, a chama assume o primeiro lugar; depois dos 10 anos, ela passa a ser a causa principal (PMC11023416). Do ponto de vista prático, isso torna a prevenção em casa o ponto central.",
-  "correta": "**B: líquido superaquecido.** A escaldadura é a causa mais comum nas séries pediátricas (PubMed 26613626; PMC11023416).",
+  "conceito": "Criança pequena alcança a panela, puxa a toalha, entra no banho sem testar a água. Por isso a escaldadura domina. Em Parkland, em 35 anos de internações pediátricas, a escaldadura respondeu por 42%, seguida da chama, com 29%, e do contato, com 10% (PubMed 26613626). Em outra instituição, chegou a 83% dos 685 pacientes (PMC11023416). Conforme a criança cresce, o padrão muda: na adolescência, a chama passa a liderar, com 47% (PMC11023416).\n\n**E o que muda na conduta?** O Green traz a lição prática: a causa da queimadura é o fator isolado mais útil para prever a cicatrização. A escaldadura produz, em geral, uma lesão de profundidade mista, com frequência na palma, e, sobretudo em pacientes mais jovens, tem **alta capacidade de cicatrização espontânea** (7ª ed., cap. 57, p. 1928). Já a chama é o tipo mais grave, com exceção da alta voltagem. Portanto, identificar o agente já diz se vale mais a pena esperar do que operar.\n\nEssa curva por idade é também um mapa de prevenção: na criança pequena, o perigo está na cozinha e no banho.",
+  "correta": "**B: líquido superaquecido.** É a causa mais comum nas séries pediátricas (PubMed 26613626; PMC11023416), e o Green registra sua boa capacidade de cicatrização nos mais jovens (7ª ed., cap. 57, p. 1928).",
   "incorretas": {
-   "A": "**É a do adolescente.** A chama domina na faixa mais velha (PMC11023416).",
-   "C": "**Rara nessa idade.** A alta voltagem é típica de acidentes de trabalho em adultos.",
-   "D": "**Acontece, mas não lidera.** A boca na tomada ou no fio é uma lesão clássica na criança pequena, porém menos frequente do que a escaldadura.",
-   "E": "**Menos frequente.** Os agentes químicos têm contexto próprio, e não lideram as séries."
+   "A": "**É do adolescente.** A chama lidera apenas nos mais velhos (PMC11023416). É também o tipo mais grave, segundo o Green (p. 1928).",
+   "C": "**Rara nessa idade.** A alta voltagem é, em geral, um acidente do trabalho do adulto, em que o Green descreve a destruição profunda e a necessidade de fasciotomia precoce (8ª ed., cap. 57, p. 2142).",
+   "D": "**Existe, mas não lidera.** O acidente da criança com a tomada é típico, mas sua frequência é bem menor do que a da escaldadura.",
+   "E": "**Menos frequente.** O produto químico guardado em casa é um risco real, mas não aparece no topo das séries (PubMed 26613626)."
   },
   "referencias": [
    "Epidemiology of pediatric burns at Parkland Hospital, PubMed 26613626",
-   "Pediatric Burns: Single Institution Review, PMC11023416"
+   "Pediatric Burns: Review of 685 Patients, PMC11023416",
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 57 (Burned Hand), p. 1928",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 57, p. 2142"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1909": {
-  "conceito": "Por que uma queimadura incha tanto, inclusive longe da ferida? Porque o capilar vaza. O tecido lesado libera mediadores, a parede do vaso fica mais permeável e o líquido, com proteínas, sai para o interstício. Uma revisão descreve exatamente isso: perda de fluido para o tecido queimado, por aumento da permeabilidade capilar a fluidos e macromoléculas e um aumento modesto da pressão hidrostática (PMC5214064).\n\nA consequência é dupla: hipovolemia e edema, que atinge o máximo em torno de 12 a 24 horas nas queimaduras grandes (PMC3671671). Por isso a reposição não é uma opção: é o tratamento da queimadura grave.",
-  "correta": "**A: aumento da permeabilidade capilar.** É o mecanismo central, descrito nas revisões sobre a fisiopatologia da queimadura (PMC5214064).",
+  "conceito": "Olhe uma mão queimada nas primeiras horas: ela vai inchando na sua frente, mesmo com a pele aparentemente íntegra em volta. Por quê? Porque o calor não lesa só a célula da superfície; ele também danifica a parede dos pequenos vasos, que passam a vazar.\n\nO Green descreve a cena em poucas linhas (7ª ed., cap. 57, p. 1927). O **líquido intravascular passa para o interstício e forma um edema rico em proteínas**. O detalhe \"rico em proteínas\" é a prova de que o problema está na permeabilidade: se fosse apenas pressão, sairia sobretudo água. As proteínas que saem levam mais água junto, e o ciclo se mantém. Além disso, **queimaduras de mais de 20% da superfície corporal causam edema generalizado**, inclusive em áreas não queimadas. O mesmo mecanismo explica a redução do volume circulante e a necessidade de reposição (PMC5214064).\n\n**Por que o edema não é só um incômodo?** Porque ele aumenta a pressão entre as células e reduz a circulação. Na musculatura intrínseca da mão, pode levar a uma síndrome compartimental que exige fasciotomia (Green, p. 1927). E ele alimenta outro problema: a chamada zona de estase, que ainda é viável, pode virar zona de necrose se a reposição de líquidos for insuficiente (p. 1927). Daí a pressa em resfriar nos primeiros 30 minutos, com água corrente, o que reduz a formação de edema (p. 1929).\n\n> **Na prova:** queimadura incha porque o capilar vaza. O edema é rico em proteínas.",
+  "correta": "**A: aumento da permeabilidade capilar.** O Green descreve a passagem do líquido intravascular ao interstício, com edema rico em proteínas, que é a assinatura do capilar permeável (7ª ed., cap. 57, p. 1927; PMC5214064).",
   "incorretas": {
-   "B": "**Não explica o vazamento.** Espasmo arterial reduz o fluxo, sem criar a saída de líquido e proteínas.",
-   "C": "**Só veias não bastam.** A dilatação venosa não muda a permeabilidade, que é a chave do edema (PMC5214064).",
-   "D": "**Pode piorar, mas não é a causa.** A linfa pode não dar conta do volume, sem ser ela o que dispara o edema.",
-   "E": "**Daria isquemia.** Uma obstrução arterial não produz o edema generalizado da queimadura."
+   "B": "**Reduziria o fluxo sem criar vazamento.** O espasmo arterial diminui a chegada de sangue, e sozinho não explicaria um líquido rico em proteínas fora do vaso. Na queimadura, ele pode participar da isquemia da zona de estase, mas não é a causa do edema.",
+   "C": "**Veia dilatada não vaza proteína.** A dilatação venosa acumula sangue, sem abrir a parede do capilar. O enunciado pede o mecanismo do edema, e a chave é a permeabilidade (Green, 7ª ed., cap. 57, p. 1927).",
+   "D": "**Pode piorar, mas não dá início.** A drenagem linfática pode ser insuficiente para o volume, o que agrava o inchaço. Mas o linfedema verdadeiro é crônico, e a queimadura é um edema agudo por vazamento.",
+   "E": "**Daria outro quadro.** A obstrução arterial causa isquemia, palidez e dor, e não um edema generalizado que atinge até as áreas sem queimadura (Green, 7ª ed., cap. 57, p. 1927)."
   },
   "referencias": [
-   "Burns: Pathophysiology of Systemic Complications, PMC5214064",
-   "Curbing Inflammation in Burn Patients, PMC3671671"
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 57 (Burned Hand), p. 1927 e 1929",
+   "Burns: Pathophysiology of Systemic Complications, PMC5214064"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -33004,17 +33010,19 @@
   "conferido": false
  },
  "mao-1916": {
-  "conceito": "Esta questão se resolve em dois passos: calcular a área e aplicar a fórmula. Faça com calma.\n\n**Área, pela regra dos nove.** Tronco anterior, 18%; tronco posterior, 18%; face posterior do membro inferior, 9%. Total: **45%**.\n\n**Volume, pela fórmula de Parkland.** O StatPearls dá: 4 ml por quilo, por porcentagem de superfície queimada, de cristaloide, com Ringer lactato como solução principal (Parkland Formula).\n\n4 × 75 kg × 45% = **13.500 ml em 24 horas**.\n\n**Distribuição.** Metade nas primeiras 8 horas: **6.750 ml**; a outra metade nas 16 horas seguintes. Note que, na prática, os centros costumam dar de 25% a 50% a mais do que a fórmula prevê (PMC3226577), e a fórmula é o ponto de partida, a ser ajustado pela diurese.",
-  "correta": "**C: 6.750 ml de cristaloides nas primeiras 8 horas.** Metade de 13.500 ml, calculados com 4 × 75 × 45 (StatPearls, Parkland Formula).",
+  "conceito": "Esta questão se resolve em dois passos, mas antes vale entender por que a fórmula existe. Depois da queimadura, o capilar vaza e o volume circulante cai. O Green explica o que está em jogo: a zona de estase, em volta da necrose, ainda é viável, mas **pode se converter em necrose se a reposição de líquidos for insuficiente** (7ª ed., cap. 57, p. 1927). Portanto, a reposição não trata só o choque; ela salva tecido.\n\n**Primeiro passo: a área, pela regra dos nove.**\n- Tronco anterior: 18%\n- Tronco posterior: 18%\n- Face posterior de um membro inferior: 9%\n- **Total: 45%**\n\n**Segundo passo: a fórmula de Parkland.** O StatPearls dá a conta: 4 ml por quilo, por porcentagem de superfície queimada, com Ringer lactato como cristaloide principal (Parkland Formula).\n\n4 × 75 kg × 45 = **13.500 ml em 24 horas**\n\n**A divisão no tempo.** Metade nas primeiras 8 horas, a partir da hora da queimadura: **6.750 ml**. A outra metade, nas 16 horas seguintes. O edema atinge o máximo por volta de 12 a 24 horas nas grandes queimaduras (PMC5214064).\n\n**E na prática?** A fórmula é apenas o começo. Os centros costumam dar de 25% a 50% a mais do que ela prevê (PMC3226577), e o que manda é a resposta do paciente, em especial a diurese. Mas, na prova, o que importa é a conta.",
+  "correta": "**C: 6.750 ml de cristaloides nas primeiras 8 horas.** É a metade de 13.500 ml, com 4 × 75 × 45 (StatPearls, Parkland Formula).",
   "incorretas": {
-   "A": "**Número certo, líquido errado.** A fórmula de Parkland usa cristaloide, e não coloide (StatPearls, Parkland Formula).",
-   "B": "**Dois erros.** O volume não fecha, e o líquido não é coloide.",
-   "D": "**Volume errado.** O total de 24 horas é de 13.500 ml.",
-   "E": "**O tempo está errado.** 6.750 ml é a metade que corre nas primeiras 8 horas, e não em 24 horas."
+   "A": "**Número certo, líquido errado.** Parkland é uma fórmula de cristaloide, com Ringer lactato (StatPearls, Parkland Formula). A banca conta com quem acha a conta e não presta atenção ao tipo.",
+   "B": "**Dois erros.** Nem o volume nem o líquido estão certos. O total de 24 horas é de 13.500 ml, em cristaloide.",
+   "D": "**O volume é baixo.** Com 8.000 ml em 24 horas, faltariam 5.500 ml. Quem chega aqui provavelmente errou a superfície corporal, por exemplo, usando cerca de 27%.",
+   "E": "**Erro de tempo.** Quem marca aqui encontrou 6.750 ml, mas distribuiu nas 24 horas. Seria a metade do volume necessário, com risco de converter a zona de estase em necrose (Green, 7ª ed., cap. 57, p. 1927)."
   },
   "referencias": [
    "StatPearls (NCBI Bookshelf), Parkland Formula (NBK537190)",
    "StatPearls (NCBI Bookshelf), Burn Fluid Resuscitation (NBK534227)",
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 57 (Burned Hand), p. 1927",
+   "Burns: Pathophysiology of Systemic Complications, PMC5214064",
    "Burn Resuscitation, PMC3226577"
   ],
   "geradoEm": "2026-11-02",
