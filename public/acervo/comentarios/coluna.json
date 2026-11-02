@@ -2097,17 +2097,18 @@
   "conferido": false
  },
  "coluna-0157": {
+  "conceito": "Na espondilodiscite do adulto, o germe isolado funciona como pista do lugar de onde a bactéria saiu. A pergunta pede essa ligação para dois grupos específicos, os enterococos e os estreptococos.\n\n**O mecanismo.** A infecção vertebral piogênica quase sempre é hematogênica: a bactéria circula, chega por via arterial ao **platô vertebral**, uma região muito vascularizada e de fluxo lento, e ali se deposita. Por isso o foco primário pode estar longe da coluna: trato urinário, aparelho respiratório, partes moles. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 49, p. 1945 aprox.) lista o S. aureus como o germe mais comum, acompanhado de gram-negativos e de outros gram-positivos; nos usuários de droga injetável sobe a Pseudomonas aeruginosa; e as infecções por **enterococos e estreptococos** são as que o livro associa à **endocardite** como fonte primária.\n\n**O raciocínio clínico.** Vegetações valvares liberam êmbolos sépticos e bacteremia contínua, e os cocos gram-positivos de baixa virulência (enterococos, estreptococos) são justamente os agentes típicos da endocardite. Quando a cultura do disco ou do sangue mostra um deles, vale buscar a valva com ecocardiograma antes de atribuir o quadro a uma origem urinária ou dentária.\n\nO assunto está na seção \"A coluna do adulto: endocardite como fonte\" do resumo.",
+  "correta": "**B) à endocardite.** É a fonte primária que o Campbell associa aos enterococos e estreptococos na infecção vertebral.",
   "incorretas": {
-   "A": "A pneumonia não é a fonte típica de osteomielite vertebral por esses germes. Enterococo, em particular, quase nunca causa pneumonia comunitária.",
-   "C": "A boca pode lançar estreptococos no sangue, mas o elo clínico entre esses germes e a coluna passa pela válvula cardíaca infectada. É a endocardite que se procura.",
-   "D": "O trato urinário é a porta das bactérias gram-negativas, como a E. coli, comuns no idoso. Enterococo pode vir da urina, mas a associação clássica cobrada é com endocardite."
+   "A": "**Pneumonia** é foco respiratório possível para qualquer germe que sangra para a coluna, mas o livro não a une a enterococos e estreptococos; ela aparece entre as origens gerais, sem o vínculo específico pedido.",
+   "C": "**Cavidade oral** parece natural para estreptococos viridans, e é por isso que a opção atrai; porém o texto do capítulo 49 não nomeia a boca como foco dessas infecções vertebrais, e sim a endocardite.",
+   "D": "**Trato urinário** é a armadilha do enterococo, germe urinário conhecido. O trato urinário consta apenas entre as origens possíveis da bacteremia em geral; o par enterococo e estreptococo foi ligado pelo livro à endocardite."
   },
-  "conceito": "Na infecção da coluna, o germe isolado funciona quase como uma pista de onde a infecção começou. A bactéria chega pelo sangue, e cada porta de entrada tem seus suspeitos habituais.\n\nQuando a hemocultura ou a biópsia vertebral mostram **estreptococo** ou **enterococo**, a pergunta seguinte deve ser: esse paciente tem **endocardite**? Esses germes são os grandes causadores de infecção das válvulas do coração. A válvula infectada lança bactérias no sangue continuamente, e a coluna, muito irrigada, é um destino frequente. Às vezes a dor nas costas é a primeira queixa de uma endocardite que ninguém tinha percebido.\n\nPor isso a conduta prática é pedir **ecocardiograma**, de preferência transesofágico, que enxerga melhor as válvulas. Se houver endocardite, ela muda tudo: o antibiótico é mais longo, às vezes a válvula precisa ser operada, e a infecção da coluna volta se a fonte não for tratada. Um detalhe extra: quando o estreptococo é do grupo bovis (gallolyticus), investiga-se também câncer de intestino com colonoscopia, porque essa associação é conhecida.\n\nOs outros caminhos têm outros germes. O trato urinário manda principalmente bactérias gram-negativas, como a E. coli, e é a porta clássica do idoso. A pele e os cateteres mandam o Staphylococcus aureus, o mais comum de todos. Usuários de drogas injetáveis trazem a Pseudomonas.",
-  "correta": "**À endocardite.** Estreptococo e enterococo são agentes típicos de endocardite, e a osteomielite vertebral por eles deve levar à investigação do coração com ecocardiograma.",
   "referencias": [
-   "Zimmerli W. Vertebral osteomyelitis. N Engl J Med. 2010;362(11):1022-1029."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49, p. 1945 aprox.",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0159": {

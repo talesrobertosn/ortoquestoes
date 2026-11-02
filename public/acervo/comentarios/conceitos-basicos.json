@@ -865,14 +865,19 @@
   "conferido": false
  },
  "conceitos-basicos-0064": {
+  "conceito": "Biofilme é a razão pela qual uma infecção com implante não se resolve só com antibiótico. A questão pergunta o que se deposita quando ele amadurece, e a resposta está na distinção entre o que a bactéria usa para grudar e o que ela mesma fabrica.\n\n**As etapas.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 841) descreve primeiro a **adesão**, em que adesinas da parede bacteriana reconhecem moléculas do hospedeiro na superfície do osso ou do metal; depois a **proliferação**, com secreção de uma matriz de polissacarídeo e proteína relativamente impermeável; e por fim o envoltório de **glicocálice**, uma camada de muco que protege as colônias. Em biofilmes polimicrobianos as colônias se comunicam por quorum sensing. O resultado é um organismo até **800 vezes menos sensível** ao antibiótico que a forma planctônica, e na fratura exposta o biofilme pode se formar em **horas**.\n\n**O mesmo quadro no Campbell.** Na figura de GRISTINA (Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2524), a colonização ocorre dentro de um biofilme **exopolissacarídeo** protetor, abundante no fragmento ósseo desvitalizado, e as defesas do hospedeiro não o penetram. É a matriz exopolissacarídea, portanto, que se acumula e marca a maturação.\n\nO biofilme está na seção \"Biofilme: por que o implante muda tudo\" do resumo.",
+  "correta": "**D) matriz exopolissacarídea.** É o material que a própria bactéria secreta e que envolve a colônia, formando o glicocálice protetor do biofilme maduro.",
   "incorretas": {
-   "A": "A fibronectina participa da fase inicial, recobrindo o implante e servindo de ponto de fixação para as bactérias.",
-   "B": "O fibrinogênio também participa da fase inicial de condicionamento do implante.",
-   "C": "O proteoglicano é um componente do tecido do hospedeiro, e não a matriz produzida pelas bactérias."
+   "A": "**Fibronectina** é proteína do hospedeiro à qual as adesinas do S. aureus se ligam na etapa inicial de adesão; é substrato de fixação, não o produto que se acumula na maturação.",
+   "B": "**Fibrinogênio** é molécula plasmática que cobre o implante e serve de ponto de ancoragem para a bactéria, mas pertence ao hospedeiro e à fase de adesão, não à construção da matriz.",
+   "C": "**Proteoglicano** é componente da cartilagem e da matriz extracelular do tecido, o que se perde na artrite séptica (30% em 48 horas); nada tem a ver com a matriz secretada pelo biofilme bacteriano."
   },
-  "conceito": "O **biofilme** é a forma como as bactérias se protegem sobre um implante metálico (placa, haste, prótese). Ele se forma em etapas:\n\n**Condicionamento.** Logo depois da cirurgia, o metal é recoberto por proteínas do próprio paciente, como fibronectina, fibrinogênio e colágeno.\n\n**Adesão.** As bactérias se prendem a essas proteínas, primeiro de forma frouxa (reversível), depois firme (irreversível).\n\n**Maturação.** As bactérias presas produzem uma **matriz exopolissacarídea**, uma espécie de gel de açúcares (também chamado glicocálix), e passam a viver dentro dela, em comunidade, com metabolismo muito reduzido. É essa matriz que define o biofilme maduro.\n\n**Dispersão.** Grupos de bactérias se soltam e vão colonizar outros lugares.\n\nO biofilme maduro é um grande problema. A matriz dificulta a chegada do antibiótico e das células de defesa até as bactérias. E bactérias \"adormecidas\" toleram doses de antibiótico muito maiores do que as que vivem soltas.\n\nPor isso, a infecção crônica em torno de um implante geralmente exige **retirar o implante**. Já na infecção precoce, antes de o biofilme amadurecer, é possível tentar limpar cirurgicamente e manter o implante, se estiver firme.",
-  "correta": "Matriz exopolissacarídea. É o gel de açúcares produzido pelas próprias bactérias que caracteriza o biofilme maduro.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, p. 841",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2524",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0065": {
@@ -1367,17 +1372,20 @@
   "conferido": false
  },
  "conceitos-basicos-0118": {
+  "conceito": "Na infecção periprotética não existe um exame único que feche o diagnóstico, e por isso o consenso da Musculoskeletal Infection Society (MSIS) separa critérios **maiores**, que bastam sozinhos, de critérios **menores**, que somam pontos. A pergunta toca num menor: a contagem de leucócitos no líquido sinovial.\n\n**A lógica do sistema.** Os maiores são a fístula que comunica com a articulação ou expõe a prótese e duas culturas positivas do mesmo organismo (Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 451 a 453). Os menores (PCR, VHS, leucócitos sinoviais ou esterase leucocitária ou alfa-defensina, porcentagem de neutrófilos, cultura única, histologia e purulência) pontuam, e uma soma de 6 ou mais define infecção, de 3 a 5 deixa o caso inconclusivo e abaixo de 3 afasta. Uma prótese não é uma articulação nativa: a sinóvia reage com menos células, de modo que os cortes são muito mais baixos que os 50.000/mm3 clássicos da artrite séptica nativa.\n\n**O que os livros trazem.** O Campbell dá cortes de 10.000 leucócitos no quadro agudo e 3.000 no crônico, com PMN de 70% a 90% (cap. 4, p. 284; cap. 8, p. 452), e cita mais de 3.000 células com 70% de PMN como sugestivo (p. 451). Os valores de 1.100 para joelho e 3.000 para quadril do gabarito oficial não aparecem nesses capítulos.\n\nO tema está na seção \"Infecção periprotética: MSIS, TSUKAYAMA e retenção\" do resumo.",
+  "correta": "**B) > 1.100 céls/uL para joelho e > 3.000 céls/uL para quadril.** É o par adotado como gabarito oficial; o que se sustenta pelo livro é a ideia de que a contagem sinovial é um critério menor com corte baixo.",
   "incorretas": {
-   "A": "O limite do joelho está certo, mas o do quadril é 3.000, e não 2.000.",
-   "C": "O limite do quadril está certo, mas o do joelho é 1.100, e não 2.100.",
-   "D": "Erra os dois: joelho acima de 1.100 e quadril acima de 3.000."
+   "A": "**1.100 para joelho e 2.000 para quadril** acerta o joelho e erra o quadril; o corte de 2.000 não corresponde ao par do gabarito.",
+   "C": "**2.100 para joelho e 3.000 para quadril** coloca no joelho um valor alto demais, e o par fica trocado em relação ao oficial.",
+   "D": "**2.100 para joelho e 2.000 para quadril** erra as duas articulações; é a combinação mais afastada do par aceito."
   },
-  "conceito": "Na articulação **natural** com infecção bacteriana, a contagem de leucócitos no líquido costuma passar de 50.000 por µL. Numa **prótese**, o líquido se comporta de forma diferente, e os limites que sugerem infecção são **muito mais baixos**. Um líquido com poucas células a mais do que o esperado já pode indicar infecção ao redor da prótese.\n\nPara a **infecção crônica** (que aparece semanas ou meses depois da cirurgia), os valores adotados pela fonte da questão, segundo os critérios da **MSIS** (Musculoskeletal Infection Society), são:\n\n**Joelho**: mais de **1.100** leucócitos por µL, com predomínio de neutrófilos.\n\n**Quadril**: mais de **3.000** leucócitos por µL, com predomínio de neutrófilos.\n\nEsse é um dos critérios menores. Os consensos mais recentes usam valores próximos e passaram a somar pontos de vários critérios.\n\nNo **pós-operatório recente**, os limites são bem mais altos, porque a própria cirurgia aumenta a contagem de células no líquido.\n\nAlém da contagem, outros testes do líquido ajudam no diagnóstico: a porcentagem de neutrófilos, a fita de esterase leucocitária, a alfa-defensina e a cultura.",
-  "correta": "Mais de 1.100 céls/µL para joelho e mais de 3.000 céls/µL para quadril. São os limites adotados como critério menor para infecção crônica.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 28"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8, pp. 451 a 453",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 4, p. 284",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
   ],
-  "geradoEm": "2026-10-03",
+  "alerta": "O Campbell's Operative Orthopaedics, 15ª ed. (cap. 4, p. 284; cap. 8, p. 451 e 452), traz os cortes de 10.000 (agudo) e 3.000 (crônico) e não os de 1.100 para o joelho e 3.000 para o quadril do gabarito oficial (B). O gabarito foi mantido; o livro não traz esse dado.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0119": {
@@ -1745,17 +1753,19 @@
   "conferido": false
  },
  "conceitos-basicos-0148": {
+  "conceito": "Um implante retirado em uma cirurgia de revisão chega ao laboratório coberto de biofilme, e esse é o problema: as bactérias estão coladas ao metal, e a cultura do tecido vizinho muitas vezes não as encontra. A questão pergunta o nome do método criado para soltar esses microrganismos.\n\n**Como funciona.** Na **sonicação**, o implante removido é colocado em um recipiente sólido, agitado em vórtex e submetido a ultrassom; a energia desaloja os microrganismos aderidos, e o líquido resultante é cultivado (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, p. 852). Na série de TRAMPUZ, a sensibilidade subiu de 60,8% (cultura convencional do tecido) para **78,5%**, com especificidade de 98,8%, sobretudo nas infecções polimicrobianas, e o germe sai viável para o antibiograma.\n\n**Por que a cultura comum falha.** A cultura é negativa em até 32% das infecções pós-trauma, em parte porque o swab e o tecido não alcançam as bactérias dentro do biofilme. A sonicação ataca exatamente esse ponto. O mesmo Rockwood pede de três a cinco amostras profundas, em número ímpar, e desaconselha o swab de fístula.\n\nO método está na seção \"Os germes e a cultura\" do resumo.",
+  "correta": "**A) sonicação.** Vórtex mais ultrassom soltam as bactérias aderidas ao implante e elevam a sensibilidade da cultura.",
   "incorretas": {
-   "B": "\"Fluidificação\" não é um método descrito para desprender bactérias de implantes.",
-   "C": "Extração nuclear não é a técnica usada para retirar bactérias do biofilme.",
-   "D": "A PCR detecta o material genético da bactéria, mas não a desprende do implante. Ela pode ser feita no líquido obtido pela sonicação."
+   "B": "**Fluidificação** não é técnica descrita nas fontes para desalojar bactérias de implantes; o termo soa plausível, mas não designa o método de ultrassom.",
+   "C": "**Extração nuclear** lembra a preparação de DNA para exames moleculares e não desaloja microrganismo nenhum de uma superfície metálica.",
+   "D": "**Reação em cadeia da polimerase (PCR)** amplifica DNA, inclusive de bactérias mortas, e identifica material genético; ela não solta a bactéria do implante, apenas poderia ser aplicada ao líquido depois que outro método o obtivesse."
   },
-  "conceito": "Na infecção de um implante ortopédico (placa, haste, prótese), as bactérias vivem grudadas no metal, dentro de uma camada protetora chamada **biofilme**. Isso cria um problema para o diagnóstico: as bactérias ficam presas ao implante, e as culturas do tecido ao redor muitas vezes saem **negativas**, principalmente se o paciente já recebeu antibiótico.\n\nA **sonicação** resolve isso. O implante retirado na cirurgia é colocado num recipiente com líquido estéril e submetido a **ultrassom** de baixa frequência. As vibrações formam microbolhas que estouram (cavitação) e **desprendem** as bactérias do biofilme, que passam para o líquido. Esse líquido é então cultivado, e também pode ser usado para exames moleculares.\n\nO ganho é um aumento importante da **sensibilidade** das culturas, sobretudo nas infecções crônicas e nos pacientes que já tomaram antibiótico.\n\nOutras medidas também aumentam a chance de identificar o germe:\n\nSuspender o antibiótico antes da coleta, quando possível.\n\nColher **várias amostras** de tecido profundo, com instrumentos separados.\n\nDeixar as culturas incubando por mais tempo, porque alguns germes, como o *Cutibacterium acnes*, crescem devagar.\n\nA **PCR** (reação em cadeia da polimerase) é um exame que detecta o material genético da bactéria. Ela pode ser feita no líquido da sonicação, mas não serve para desprender as bactérias do implante.",
-  "correta": "Sonicação. O ultrassom desprende as bactérias do biofilme do implante para o líquido, que é cultivado.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 4"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, p. 852",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
   ],
-  "geradoEm": "2026-10-03",
+  "alerta": "O Campbell's Operative Orthopaedics, 15ª ed., não descreve a sonicação; o fato está no Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, p. 852.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0149": {
@@ -2312,17 +2322,20 @@
   "conferido": false
  },
  "conceitos-basicos-0201": {
+  "conceito": "A brucelose, a febre ondulante, é zoonose de cabras, gado, porcos, cães e ovelhas, adquirida sobretudo por leite e derivados não pasteurizados. O esqueleto entra nela como complicação frequente, e a pergunta quer saber qual artrite predomina.\n\n**O que a série mostra.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 959 e 960) traz a maior série, do Kuwait, com 452 pacientes, um quarto deles abaixo de 15 anos. O acometimento osteoarticular chegou a 37,4%, e dentro dele a **artrite** foi a forma dominante (79,8%), à frente da espondilite (6%) e da osteomielite (2,4%). Entre as articulações, o **quadril** liderou com 53%, seguido de joelho (36%), sacroilíaca (20%) e tornozelo (15%). A cultura foi positiva em menos de 20% e o título de aglutinação acima de 1:160 sustenta o diagnóstico.\n\n**A divergência dos livros.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 25, p. 856) fala de outro recorte: o esqueleto axial (sacroileíte, espondilite, espondilodiscite) como local mais provável, com osso envolvido em 20% a 50%, e é preciso distinguir a espondilodiscite brucelar da tuberculosa. Quem pergunta pela artrite periférica mais comum fica com o quadril.\n\nO tema está na seção \"Micobactérias atípicas, brucelose e febre tifoide\" do resumo.",
+  "correta": "**C) quadril.** Na série do Tachdjian, é a articulação mais acometida pela artrite brucelar (53%).",
   "incorretas": {
-   "A": "O joelho é acometido, mas fica em segundo lugar entre as artrites periféricas.",
-   "B": "O punho é um local incomum de artrite na brucelose.",
-   "D": "O tornozelo é pouco acometido na brucelose."
+   "A": "**Joelho** é a articulação séptica mais comum em geral, o que leva ao reflexo da resposta; na brucelose ele vem em segundo lugar, com 36%.",
+   "B": "**Punho** não consta entre as articulações mais afetadas da série; quadril, joelho, sacroilíaca e tornozelo ocupam os primeiros lugares.",
+   "D": "**Tornozelo** aparece na série com 15%, a última das quatro articulações listadas, bem abaixo do quadril."
   },
-  "conceito": "A **brucelose** é uma doença transmitida por animais (zoonose), adquirida principalmente pelo consumo de leite não pasteurizado e queijos frescos, ou pelo contato direto com gado. A bactéria se espalha pelo corpo, e o **esqueleto** é um dos locais mais acometidos fora do fígado, baço e linfonodos.\n\nNo sistema musculoesquelético, há uma ordem de frequência:\n\nA **sacroiliíte** (inflamação da articulação entre o sacro e a bacia) é a forma mais comum, principalmente em jovens.\n\nA **espondilite** (infecção da coluna), principalmente na coluna lombar. Tem um sinal radiográfico característico, o **sinal de Pedro Pons**: uma erosão no canto da frente e de cima do corpo vertebral.\n\nEntre as **artrites periféricas** (fora da coluna e da bacia), a mais comum é a do **quadril**, especialmente em crianças, seguida pela do joelho.\n\nO quadro clínico costuma ser arrastado: **febre que vai e volta** (febre ondulante), suor intenso, dor nas articulações ou nas costas que se arrasta por semanas, e aumento do fígado e do baço. O diagnóstico é feito por exames de sangue (sorologia) e por hemoculturas incubadas por mais tempo. O tratamento é prolongado, com a combinação de dois antibióticos.",
-  "correta": "Quadril. Entre as artrites periféricas da brucelose, o quadril é a mais comum, especialmente em crianças.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 23"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, pp. 959 e 960",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 25, p. 856",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
   ],
-  "geradoEm": "2026-10-03",
+  "alerta": "O Campbell's Operative Orthopaedics, 15ª ed., cap. 25, p. 856, diz que o esqueleto axial (sacroileíte, espondilite) é o local osteoarticular mais provável da brucelose e não fala de artrite periférica; o gabarito oficial (quadril) é sustentado pelo Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 960.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0202": {
@@ -2692,14 +2705,20 @@
   "conferido": false
  },
  "conceitos-basicos-0240": {
+  "conceito": "Depois de uma osteossíntese, febre, dor, osteólise e soltura do material são achados que fazem pensar em infecção, mas também ocorrem na pseudoartrose asséptica e na soltura mecânica. A pergunta exige separar o que **sugere** do que **confirma**.\n\n**A lógica da especificidade.** O grupo internacional que definiu a infecção relacionada à fratura (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, Tabela 29-2, p. 837 aprox.) separou os critérios em confirmatórios e sugestivos. Confirmam: fístula, seio ou deiscência comunicando com osso ou implante; drenagem purulenta ou pus na cirurgia; o mesmo patógeno em pelo menos duas amostras profundas; e microrganismos em tecido profundo confirmados por histopatologia. Apenas sugerem: sinais clínicos, radiológicos, derrame articular novo, marcadores elevados (VHS, leucócitos, PCR), drenagem persistente e patógeno em amostra única.\n\n**A histologia.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 22, p. 790) usa a congelação intraoperatória como apoio, com mais de 10 leucócitos por campo de grande aumento indicando infecção e menos de 5 praticamente a excluindo. A contagem de polimorfonucleares na lâmina é, portanto, o critério histológico de infecção, e o gabarito oficial a adota como confirmatória.\n\nO tema está na seção \"Infecção relacionada à fratura: critérios e germes\" do resumo.",
+  "correta": "**D) Identificação de 5 ou mais polimorfonucleares em estudo histopatológico.** É o critério histológico que o gabarito oficial classifica como confirmatório.",
   "incorretas": {
-   "A": "Os marcadores inflamatórios elevados são apenas sugestivos de infecção.",
-   "B": "Uma única cultura positiva é sugestiva; para confirmar, são precisas duas ou mais com o mesmo germe.",
-   "C": "A osteólise e a soltura do material são sugestivas, porque também acontecem em falhas sem infecção."
+   "A": "**Elevação dos marcadores inflamatórios (VHS, PCR e leucócitos)** é critério sugestivo: sensível, porém inespecífico, pois sobe também em pseudoartrose, hematoma e trauma recente.",
+   "B": "**Patógeno em uma única cultura de tecido peri-implante** é sugestivo; um germe numa só amostra pode ser contaminante, e a confirmação exige o mesmo fenótipo em duas amostras profundas.",
+   "C": "**Osteólise ao redor dos parafusos, com soltura** é sinal radiológico sugestivo; a soltura mecânica e a falta de consolidação asséptica produzem o mesmo quadro."
   },
-  "conceito": "Um consenso internacional definiu critérios para diagnosticar a **infecção relacionada a fratura** (por exemplo, depois de uma osteossíntese), dividindo-os em **confirmatórios** e **sugestivos**.\n\n**Confirmatórios** (um só fecha o diagnóstico):\n\n**Fístula** ou abertura da ferida que se comunica com o osso ou o implante.\n\nSaída de **pus** pela ferida ou pus encontrado na cirurgia.\n\nO mesmo micro-organismo em **duas ou mais culturas** de tecido profundo.\n\n**Histopatologia** (exame do tecido ao microscópio) mostrando **5 ou mais polimorfonucleares** (neutrófilos) por campo de grande aumento, ou micro-organismos visíveis.\n\n**Sugestivos** (levantam suspeita):\n\nSinais locais e febre.\n\nDrenagem persistente que não é pus.\n\n**Marcadores inflamatórios** elevados no sangue.\n\n**Uma única** cultura positiva, que pode ser contaminação.\n\nAlterações na radiografia, como **osteólise** ao redor dos parafusos, afrouxamento do material ou fratura que não consolida.\n\nPor que a histologia confirma e a osteólise apenas sugere? Neutrófilos em grande número no tecido profundo indicam infecção ativa. Já a osteólise e o afrouxamento também acontecem quando o implante falha sem infecção, por excesso de movimento.",
-  "correta": "Identificação de 5 ou mais polimorfonucleares em estudo histopatológico. Neutrófilos em número elevado no tecido profundo confirmam infecção ativa.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, Tabela 29-2, p. 837 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 790",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "alerta": "Pela Tabela 29-2 do Rockwood and Green's Fractures in Adults, 10ª ed., a histopatologia confirma quando mostra microrganismos no tecido profundo; o corte de 5 ou mais polimorfonucleares do gabarito (D) não consta nessa tabela. O gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0241": {
@@ -2789,14 +2808,19 @@
   "conferido": false
  },
  "conceitos-basicos-0250": {
+  "conceito": "A pergunta é de anatomia aplicada: em que lugares a osteomielite de uma metáfise consegue romper para dentro da articulação e provocar artrite séptica. A resposta depende de onde a cápsula se insere em relação à fise.\n\n**A geografia.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, Fig. 23.23, p. 975) lista as metáfises **intra-articulares**: **rádio proximal, úmero proximal, fêmur proximal, e tíbia e fíbula distais**. Nelas a cápsula se insere abaixo da fise, a metáfise é banhada pelo líquido sinovial e o pus subperiosteal descomprime direto na articulação. Isso explica a distribuição da artrite séptica pediátrica: joelho 31%, quadril 23%, tornozelo 18% e ombro 14%. Em outros pontos, como o úmero distal, o rádio distal e a fíbula proximal, a metáfise é extracapsular e a osteomielite fica fora da articulação.\n\n**Uma segunda via.** Até cerca de 18 meses, vasos transfisários ligam metáfise e epífise; segundo o Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 821), existem no quadril, ombro, cotovelo e tornozelo, mas não no joelho. A via mais comum na criança, contudo, é a semeadura hematogênica da sinóvia durante bacteremia transitória.\n\nO tema está na seção \"Da metáfise à articulação\" do resumo.",
+  "correta": "**C) Úmero proximal, rádio proximal e fíbula distal.** São três das metáfises que ficam dentro da cápsula articular, e por isso a osteomielite delas descomprime na articulação.",
   "incorretas": {
-   "A": "O úmero proximal está certo, mas o rádio distal e a fíbula proximal ficam fora da cápsula.",
-   "B": "Só a fíbula distal está certa; o úmero distal e o rádio distal ficam fora da cápsula.",
-   "D": "O rádio proximal está certo, mas o úmero distal e a fíbula proximal ficam fora da cápsula."
+   "A": "**Úmero proximal, rádio distal e fíbula proximal** acerta o úmero e erra os outros dois: o rádio distal e a fíbula proximal têm metáfise extra-articular.",
+   "B": "**Úmero distal, rádio distal e fíbula distal** só acerta a fíbula distal; o úmero distal e o rádio distal não têm metáfise intracapsular na lista do livro.",
+   "D": "**Úmero distal, rádio proximal e fíbula proximal** acerta o rádio proximal, mas erra o úmero distal e a fíbula proximal. O erro típico é trocar proximal por distal."
   },
-  "conceito": "Na criança, a infecção do osso começa na **metáfise**, perto da placa de crescimento. Ela pode passar para a articulação vizinha e causar **artrite séptica** quando essa metáfise fica **dentro da cápsula** articular: a infecção rompe a cortical e cai diretamente na articulação.\n\nAs metáfises intracapsulares clássicas são quatro:\n\n**Fêmur proximal**: o colo do fêmur fica dentro da cápsula do quadril.\n\n**Úmero proximal**, no ombro.\n\n**Rádio proximal**: o colo do rádio, no cotovelo.\n\n**Fíbula distal**, no tornozelo.\n\nAs outras metáfises ficam **fora** da cápsula: fêmur distal e tíbia proximal (joelho), **rádio distal** (punho), **fíbula proximal** e **úmero distal**. Nelas, a infecção que rompe a cortical se espalha para as partes moles ao redor, e não para a articulação.\n\nPara não errar, é útil decorar as quatro intracapsulares: fêmur e úmero de cima, rádio de cima e fíbula de baixo.",
-  "correta": "Úmero proximal, rádio proximal e fíbula distal. As três metáfises ficam dentro da cápsula articular, junto com o fêmur proximal.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 975 (Fig. 23.23)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 821",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0251": {
@@ -3197,18 +3221,20 @@
   "conferido": false
  },
  "conceitos-basicos-0277": {
+  "conceito": "Um homem de 56 anos com placa e parafusos na tíbia, três meses de hiperemia, dor e febre de 38,1 ºC, osteólise ao redor dos parafusos, soltura parcial da placa, leucocitose, VHS e PCR altos e S. aureus na cultura de uma punção. A pergunta quer a classificação do quadro, e as opções se distinguem pelo grau de certeza.\n\n**Como o caso se lê.** Cada achado isolado é inespecífico. Osteólise com soltura e falta de consolidação ocorrem na falha asséptica e na pseudoartrose; febre e marcadores altos ocorrem em qualquer inflamação. O que pesa é a soma: sinais locais e sistêmicos de infecção, três meses depois da cirurgia, mais um germe típico, o S. aureus, que é o mais comum nas infecções ortopédicas (30% a 60% no Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, p. 842). Com esse conjunto, a resposta coerente do gabarito é infecção do sítio cirúrgico confirmada.\n\n**O ponto técnico.** A Tabela 29-2 do Rockwood and Green's Fractures in Adults, 10ª ed. (p. 837 aprox.) só considera confirmatórios a fístula, o pus, o mesmo germe em duas amostras profundas e microrganismos na histologia; o patógeno em uma única amostra profunda é sugestivo. Pela tabela estrita, este caso seria \"suspeito\". O gabarito oficial, porém, o trata como confirmado, e a banca raciocina clinicamente.\n\nA tabela está na seção \"Infecção relacionada à fratura: critérios e germes\" do resumo.",
+  "correta": "**B) infecção confirmada do sítio cirúrgico.** O quadro reúne febre, hiperemia, marcadores altos, osteólise com soltura e S. aureus em cultura, e o gabarito oficial o classifica como infecção confirmada.",
   "incorretas": {
-   "A": "Não é uma falha sem infecção: há febre, marcadores elevados e crescimento de bactéria.",
-   "C": "É a leitura do consenso atual, em que uma única cultura por punção é apenas sugestiva. Foi considerada incorreta pela banca.",
-   "D": "A pseudartrose está presente, mas é consequência da infecção, e não o diagnóstico principal."
+   "A": "**Falha asséptica do material de síntese** explicaria a soltura e a osteólise, mas não a febre, a hiperemia local e o germe isolado; com cultura positiva, o quadro deixa de ser asséptico.",
+   "C": "**Infecção suspeita do sítio cirúrgico** descreve o quadro com apenas critérios sugestivos, como marcadores altos e imagem; aqui há germe identificado e sinais inflamatórios evidentes, e o gabarito pesa isso a favor da confirmação.",
+   "D": "**Pseudoartrose** é a falta de consolidação, que de fato existe aqui, mas é consequência e não o diagnóstico principal; febre, pus e S. aureus apontam para a infecção como causa."
   },
-  "conceito": "O caso descreve um paciente operado com placa na tíbia que, três meses depois, tem vermelhidão, dor e febre no local. A radiografia mostra que a fratura não consolidou, há destruição de osso ao redor dos parafusos (osteólise) e a placa está se soltando. Os exames de sangue mostram leucócitos, VHS e PCR elevados, e a cultura de material colhido por punção cresceu *Staphylococcus aureus*. É o retrato de uma **infecção relacionada à fratura**.\n\nA questão é se a infecção está **confirmada** ou apenas **suspeita**.\n\nPelo consenso internacional atual, são **critérios confirmatórios**: fístula comunicando com o osso ou implante, saída de pus, o mesmo germe em **duas ou mais** culturas de **tecido profundo**, ou histologia com muitos neutrófilos no tecido. São **sugestivos**: sinais locais, febre, marcadores inflamatórios elevados, alterações na radiografia e **uma única** cultura positiva, como a obtida por punção.\n\nEsta banca considerou que a cultura positiva de um germe agressivo como o *S. aureus*, somada a todo o quadro, é suficiente para **confirmar** a infecção. Pelo consenso atual, uma cultura por punção seria apenas sugestiva. Por isso a questão tem um aviso.\n\nEm qualquer leitura, a conduta é a mesma: cirurgia para limpeza, coleta de várias amostras de tecido profundo, retirada da placa solta, nova estabilização e antibiótico dirigido. A pseudartrose é consequência da infecção.",
-  "correta": "Infecção confirmada do sítio cirúrgico, segundo o gabarito. A banca considerou a cultura de *S. aureus* somada ao quadro como suficiente, embora pelo consenso atual uma cultura de punção seja apenas sugestiva.",
-  "alerta": "Este mesmo enunciado aparece no acervo com dois gabaritos diferentes: aqui, infecção CONFIRMADA; em outra prova, infecção SUSPEITA. Pelo consenso de infecção relacionada a fratura, uma única cultura obtida por punção é critério apenas sugestivo, e a confirmação exigiria duas culturas concordantes de tecido profundo, histologia, fístula ou pus. Esta banca considerou a cultura positiva de germe virulento somada a todo o quadro como suficiente. Se você marcou \"suspeita\", seu raciocínio segue o consenso atual.",
   "referencias": [
-   "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 42"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, Tabela 29-2, p. 837 aprox.",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, p. 842",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
   ],
-  "geradoEm": "2026-10-03",
+  "alerta": "Pela Tabela 29-2 do Rockwood and Green's Fractures in Adults, 10ª ed., cultura de uma única amostra profunda é critério sugestivo, o que classificaria o caso como infecção suspeita; o gabarito oficial (infecção confirmada) foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0278": {
@@ -3285,17 +3311,19 @@
   "conferido": false
  },
  "conceitos-basicos-0283": {
+  "conceito": "A gangrena gasosa é a mionecrose por clostrídios, uma emergência que, sem tratamento, é **100% fatal**. A questão pede o agente mais frequente, e o nome certo vem do próprio quadro: um bastonete gram-positivo anaeróbio que cresce onde há tecido morto e pouco oxigênio.\n\n**O agente.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 84, p. 3620) afirma que o Clostridium perfringens, antigo C. welchii, é o organismo mais associado à gangrena gasosa. Os esporos, presentes no solo e nas feridas contaminadas, viram formas vegetativas no tecido necrótico e produzem toxinas. A **alfa** causa mionecrose e hemólise e é o principal fator de letalidade; a teta é hemolítica e cardiotóxica; a kappa é colagenase; a nu é desoxirribonuclease; a mu, hialuronidase. O tratamento é desbridamento amplo mais penicilina, cefalosporina e aminoglicosídeo; o oxigênio hiperbárico é adjuvante controverso (p. 3621). O livro acrescenta que cerca de 85% das infecções do tipo gangrena são não clostridiais.\n\n**Os outros clostrídios.** O capítulo 58 (p. 2562 aprox.) cita C. novyi e C. septicum entre os capazes de dar infecções dramáticas, mas a espécie dominante é a perfringens.\n\nO quadro está na seção \"A mão: paroníquia, mordeduras e gangrena gasosa\" do resumo.",
+  "correta": "**D) perfringens.** É o clostrídio mais associado à gangrena gasosa, e sua toxina alfa responde pela mionecrose e pela letalidade.",
   "incorretas": {
-   "A": "O *C. novyi* também causa gangrena gasosa, mas com menor frequência.",
-   "B": "O *C. difficile* causa colite, uma infecção do intestino, e não gangrena gasosa.",
-   "C": "O *C. septicum* está ligado à forma espontânea, em pacientes com câncer de cólon, e é menos frequente."
+   "A": "**Novyi** causa mionecrose e aparece entre os clostrídios do capítulo de fraturas, mas não é o mais frequente nem o mais associado à doença.",
+   "B": "**Difficile** é o agente da colite pseudomembranosa após antibiótico, doença intestinal sem relação com a infecção da musculatura.",
+   "C": "**Septicum** é causa reconhecida de mionecrose, citada no mesmo capítulo, porém em menor número de casos; fica atrás do perfringens."
   },
-  "conceito": "A **gangrena gasosa**, ou mionecrose clostridiana, é uma infecção muito grave dos músculos, causada por bactérias do gênero ***Clostridium***, que vivem no solo e no intestino e crescem em ambientes **sem oxigênio**, como músculos esmagados e feridas profundas contaminadas.\n\nO germe mais frequente, de longe, é o ***Clostridium perfringens***. Em seguida vêm o *C. novyi* e o *C. septicum*. Este último está ligado a uma forma **espontânea**, sem ferida, que aparece em pacientes com câncer de cólon.\n\nAs bactérias produzem toxinas que destroem o músculo e formam **gás** nos tecidos. O quadro evolui em horas:\n\n**Dor desproporcional** ao aspecto da ferida, muitas vezes o primeiro sinal.\n\n**Crepitação** ao tocar a pele, pelo gás acumulado.\n\nSecreção escura e aguada, descrita como \"água de lavar carne\".\n\nPele que muda de cor rapidamente e paciente com sinais de toxemia, como queda de pressão e confusão.\n\nO tratamento é uma emergência: **limpeza cirúrgica radical** imediata, retirando todo o músculo morto, às vezes com amputação, junto com antibióticos (penicilina e clindamicina, que reduz a produção de toxina). O oxigênio hiperbárico pode ser usado como complemento.\n\nO *C. difficile* é outro membro da família, mas causa uma infecção do intestino (colite), e não gangrena gasosa.",
-  "correta": "Perfringens. O *Clostridium perfringens* é, de longe, o germe mais frequente na gangrena gasosa.",
   "referencias": [
-   "Canale & Beaty: Campbell's Operative Orthopaedics, 11th Ed., p. 3073 (referência indicada na prova TARO 2013, questão 96)"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 84, pp. 3620 e 3621",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2562 aprox.",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0284": {
@@ -3365,20 +3393,21 @@
   "conferido": false
  },
  "conceitos-basicos-0288": {
+  "conceito": "Quem é o paciente? Um adulto jovem. A palavra decide a questão, porque o germe mais comum da artrite séptica muda com a idade, a exposição e o hospedeiro.\n\n**A resposta geral e a particular.** O S. aureus lidera a artrite séptica em todas as idades. Mas o Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, p. 825) lembra que a **Neisseria gonorrhoeae** responde por cerca de **75% das artrites sépticas dos adultos jovens saudáveis e sexualmente ativos**. Apenas menos de 3% dos infectados pelo gonococo desenvolvem artrite, mas, como a infecção é muito frequente nessa faixa, o número absoluto é grande. O quadro clássico é poliarticular, com rash papular, e as culturas articulares muitas vezes saem negativas; a faringe e a uretra rendem mais. O prognóstico com antibiótico é bom e a drenagem cirúrgica costuma ser desnecessária.\n\n**Os demais agentes.** A Tabela 24.3 do mesmo capítulo coloca o Hib nos lactentes de 3 meses a 5 anos não vacinados. A Pseudomonas aeruginosa vem com o pé puntiforme e com o usuário de droga injetável (Tabelas 24.1 e 24.2).\n\nO assunto está na seção \"Quem adoece e qual germe esperar\" do resumo.",
+  "correta": "**D) Neisseria gonorrhoeae.** É o agente mais comum da artrite séptica do adulto jovem sexualmente ativo, e é a letra que a bibliografia sustenta.",
   "incorretas": {
-   "A": "**Pseudomonas aeruginosa.** Pode causar infecção osteoarticular em cenários de inoculação, assistência à saúde ou fatores de risco particulares. Não é a associação clássica que a pergunta procura para o jovem sem outro contexto, mas uma história de exposição relevante mudaria a investigação microbiológica.",
-   "B": "**Haemophilus influenzae tipo b.** Era agente importante de artrite séptica na infância antes da vacinação conjugada. Sua frequência caiu acentuadamente; um adulto jovem sem condição predisponente não corresponde ao cenário em que esse agente seria a primeira hipótese.",
-   "C": "**Staphylococcus aureus é uma alternativa clinicamente forte.** É causa frequente de artrite séptica em adultos e não deixa de ocorrer porque o paciente é jovem. A pergunta parece usar a associação clássica entre juventude sexualmente ativa e gonococo, mas omite justamente a pista que separaria D de C com segurança."
+   "A": "**Pseudomonas aeruginosa** pertence ao usuário de droga injetável, ao diabético, ao pé após ferimento puntiforme e às articulações axiais da toxicomania; não ao adulto jovem saudável.",
+   "B": "**Haemophilus influenzae tipo B** era o principal agente em lactentes antes da vacina; hoje, o Hib é restrito ao não vacinado de 3 meses a 5 anos.",
+   "C": "**Staphylococcus aureus** é o germe mais comum no geral e isso torna a opção tentadora, mas a pergunta especifica o adulto jovem, em que o gonococo predomina."
   },
-  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. Mantivemos D como resposta provável da bibliografia histórica, mas \"adulto jovem\" isoladamente não informa atividade sexual, manifestações de infecção gonocócica ou epidemiologia local. Staphylococcus aureus é causa muito importante de artrite séptica também em jovens; a alternativa C não pode ser descartada por idade apenas.",
-  "conceito": "**Artrite piogênica é uma urgência, qualquer que seja a bactéria.** A chegada de microrganismos à articulação desencadeia inflamação intensa; enzimas de bactérias e neutrófilos podem lesar rapidamente a cartilagem. Dor, calor, derrame e perda dolorosa de movimento exigem avaliação do líquido sinovial, cultura e decisão rápida sobre antibiótico e drenagem. A idade modifica as hipóteses, mas não identifica sozinha o agente.\n\n**Por que o gonococo aparece na pergunta antiga.** Neisseria gonorrhoeae pode disseminar-se a partir de uma infecção mucosa e acometer adultos jovens sexualmente ativos. A forma disseminada frequentemente apresenta poliartralgia assimétrica, tenossinovite e lesões cutâneas petequiais ou pustulosas; também pode causar artrite séptica oligoarticular. Esse conjunto clínico e a história sexual sustentam investigar gonococo em amostras de sítios mucosos e, quando possível, do líquido articular. As diretrizes do CDC indicam ceftriaxona para a síndrome articular gonocócica, com avaliação de infecção por clamídia associada.\n\n**O diferencial que impede decorar a idade.** Staphylococcus aureus é o patógeno bacteriano mais frequente em muitas séries de artrite séptica do adulto, inclusive quando há bacteremia, ferida ou infecção cutânea. Pseudomonas ganha relevância em contextos específicos, como inoculação e determinados fatores de risco, e Haemophilus influenzae tipo b ficou muito menos comum após vacinação infantil. No atendimento real, a coleta de amostras e a cobertura empírica dependem do quadro e de riscos concretos, não da associação escolar \"jovem igual gonococo\".",
-  "correta": "**Neisseria gonorrhoeae é a resposta provável da fonte histórica.** É uma hipótese especialmente importante no adulto jovem com exposição sexual e síndrome de artrite, tenossinovite e lesões de pele. Como o enunciado não traz esses dados, não se pode afirmar que seja a causa mais comum em todo adulto jovem.",
   "referencias": [
-   "CDC. Gonococcal Infections Among Adolescents and Adults, STI Treatment Guidelines. https://www.cdc.gov/std/treatment-guidelines/gonorrhea-adults.htm",
-   "Pneumococcal Septic Arthritis among Adults, France, com comparação etiológica. https://wwwnc.cdc.gov/eid/article/31/1/24-0321_article"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 825",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 24, Tabelas 24.1 a 24.3, pp. 822 e 823",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
   ],
+  "alerta": "Questão sem gabarito oficial. O Campbell's Operative Orthopaedics, 15ª ed., cap. 24, p. 825, sustenta N. gonorrhoeae para o adulto jovem sexualmente ativo, a mesma resposta da bibliografia indicada pela prova, embora o livro diga que o S. aureus é o líder geral; a letra D é a provável.",
   "provavel": "D",
-  "geradoEm": "2026-10-08",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0289": {
@@ -3513,17 +3542,19 @@
   "conferido": false
  },
  "conceitos-basicos-0298": {
+  "conceito": "A paracoccidioidomicose, ou blastomicose sul-americana, é uma micose sistêmica do solo da América do Sul. A afirmativa tem duas partes, o osso como acometimento secundário e a faixa etária, e a primeira é a que as fontes alcançam.\n\n**O que os livros dizem sobre micoses ósseas.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 25, p. 860) descreve as micoses osteoarticulares como doenças de evolução lenta, que imitam metástase e tuberculose, diagnosticadas apenas quando se suspeita delas, adquiridas em geral pela **inalação de esporos**. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 961) separa duas rotas: inoculação direta (Aspergillus, Sporothrix, Scedosporium) e disseminação **hematogênica a partir do pulmão** (Candida, Blastomyces, Coccidioides, Histoplasma, Cryptococcus). Ou seja, o osso costuma ser alcançado de forma secundária ao foco pulmonar, o que sustenta a ideia central do enunciado.\n\n**O limite das fontes.** Nenhum dos dois livros descreve a paracoccidioidomicose, nem traz a porcentagem de casos até os 20 anos, nem o dado de acometimento ósseo isolado raro. Por isso a afirmativa só pode ser sustentada na sua lógica geral, e a bibliografia indicada pela prova a considera correta.\n\nAs micoses estão na seção \"Infecções fúngicas\" do resumo.",
+  "correta": "**A) Certo.** O osso é atingido de forma secundária, por disseminação a partir do pulmão, e o acometimento ósseo isolado é raro; é a resposta da bibliografia indicada pela prova.",
   "incorretas": {
-   "B": "**Errado seria defensável se a frase fosse lida como regra universal.** Há adultos com paracoccidioidomicose e há relatos de doença osteoarticular sem outro foco clinicamente detectável; essas exceções motivam o alerta, sem substituir a resposta provável cadastrada."
+   "B": "**Errado** exigiria que a micose atingisse o osso por via primária ou que o acometimento isolado fosse frequente, o contrário do que se descreve para as micoses sistêmicas inaladas, em que o pulmão é o foco inicial."
   },
-  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. A resposta provável foi mantida como “Certo”, mas a frase é excessivamente categórica: a forma osteoarticular predomina em pacientes jovens em algumas séries, porém casos ósseos isolados estão documentados e a idade da infecção não equivale à idade de manifestação clínica. Interprete-a como descrição de um padrão possível, não como regra epidemiológica universal.",
-  "conceito": "**Infecção sistêmica.** A paracoccidioidomicose é uma micose causada por fungos do gênero Paracoccidioides. A infecção é adquirida pela inalação, com foco inicial pulmonar; a disseminação hematogênica ou linfática pode atingir ossos e articulações. A apresentação clínica depende da resposta imune e pode surgir anos depois da exposição.\n\n**Forma osteoarticular.** Osteomielite e artrite podem produzir dor, edema, lesões líticas e, por vezes, acometimento multifocal. A forma aguda ou subaguda juvenil explica a associação com pacientes mais jovens, mas a doença também ocorre em adultos. O diagnóstico exige relacionar imagem, histopatologia ou identificação do fungo e pesquisa de outros focos.\n\n**Exceções importantes.** O comprometimento esquelético não exige que já se conheça doença pulmonar ou mucocutânea. Séries clínicas descrevem lesões aparentemente isoladas. Portanto, “secundária” descreve a via de disseminação usual; não significa que outro foco precise estar clinicamente demonstrado em cada caso.",
-  "correta": "**Certo é a resposta provável cadastrada, com ressalvas.** O acometimento ósseo costuma representar disseminação e a apresentação juvenil é reconhecida, mas a idade e a raridade de lesão isolada não devem ser tomadas como absolutos.",
   "referencias": [
-   "Revista Brasileira de Ortopedia. Maio 2005; p. 288."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 25, p. 860",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 961",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
   ],
+  "alerta": "Questão sem gabarito oficial. Nenhum dos livros conferidos (Campbell's Operative Orthopaedics, 15ª ed., cap. 25; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23) descreve a paracoccidioidomicose nem a faixa etária de até 20 anos; sustentam apenas a ideia geral de que o osso é atingido de forma secundária, por disseminação a partir do pulmão. A letra A é a provável, coerente com a bibliografia indicada pela prova.",
   "provavel": "A",
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0299": {
