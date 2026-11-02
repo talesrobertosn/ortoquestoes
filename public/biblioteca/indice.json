@@ -11285,7 +11285,7 @@
   },
   {
    "id": "tachdjian6-deficiencias-membros",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Deficiências dos membros na criança",
    "especialidade": "pediatria",
    "livro": "Tachdjian's Pediatric Orthopaedics",
@@ -11293,7 +11293,7 @@
    "capitulo": "Capítulo 21 · Limb Deficiencies",
    "resumo": "Terminologia (transversal e longitudinal, terminal e intercalar, ISO/ISPO); deficiência femoral focal proximal (AITKEN A a D, GILLESPIE A a C, PALEY 1, 2a e 2b, quadril em flexão, abdução e rotação externa, hemimelia fibular e cruzados ausentes, anomalias cardíacas, alongamento abaixo de 20 cm); hemimelia fibular (a mais comum, valgo, côndilo lateral e LCA, equinovalgo, coalizão e raios laterais, ACHTERMAN e KALAMCHI, BIRCH e o pé funcional, SYME com 25 cm ou mais); hemimelia tibial (JONES 1a a 4, sem quadríceps e patela, desarticulação do joelho, sinostose); bandas de STREETER.",
    "acesso": "gratis",
-   "minutos": 8,
+   "minutos": 31,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11326,6 +11326,51 @@
      "radar": "fundamento"
     },
     {
+     "id": "como-o-membro-se-forma-e-onde-ele-falha",
+     "titulo": "Como o membro se forma e onde ele falha",
+     "radar": "fundamento"
+    },
+    {
+     "id": "sindromes-que-mudam-a-conduta",
+     "titulo": "Síndromes que mudam a conduta",
+     "radar": "fundamento"
+    },
+    {
+     "id": "dffp-as-outras-classificacoes-e-a-radiografia-do",
+     "titulo": "DFFP: as outras classificações e a radiografia do AITKEN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dffp-do-exame-ao-plano-cirurgico",
+     "titulo": "DFFP: do exame ao plano cirúrgico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "alongamento-do-femur-curto-congenito",
+     "titulo": "Alongamento do fêmur curto congênito",
+     "radar": "fundamento"
+    },
+    {
+     "id": "hemimelia-fibular-birch-raios-e-a-idade-da-amput",
+     "titulo": "Hemimelia fibular: BIRCH, raios e a idade da amputação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hemimelia-tibial-alem-do-jones",
+     "titulo": "Hemimelia tibial: além do JONES",
+     "radar": "confirmado"
+    },
+    {
+     "id": "deficiencias-do-membro-superior",
+     "titulo": "Deficiências do membro superior",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "amputacoes-na-crianca-congenitas-e-adquiridas",
+     "titulo": "Amputações na criança: congênitas e adquiridas",
+     "radar": "fundamento"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -11343,7 +11388,11 @@
     "pediatria-0429",
     "pediatria-0009",
     "pediatria-0154",
-    "pediatria-0013"
+    "pediatria-0013",
+    "pediatria-0453",
+    "pediatria-0344",
+    "pediatria-0345",
+    "pediatria-0346"
    ],
    "treino": [
     "pediatria-1417",
