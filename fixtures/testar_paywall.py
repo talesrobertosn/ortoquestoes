@@ -20,7 +20,7 @@ MIGRACAO_ADMIN = (RAIZ / "supabase/migrations/202609231450_admin_assinaturas.sql
 MIGRACAO_ADMIN_EVENTOS = (RAIZ / "supabase/migrations/202609261540_admin_eventos.sql").read_text()
 # O painel foi dividido em abas: a página e os componentes em componentes/admin.
 PAGINA_ADMIN = (RAIZ / "src/paginas/AdminAssinaturas.tsx").read_text() + "".join(
-    arquivo.read_text() for arquivo in sorted((RAIZ / "src/componentes/admin").glob("*.ts*")))
+    arquivo.read_text() for arquivo in sorted([*(RAIZ / "src/componentes/admin").glob("*.ts*"), *(RAIZ / "src/admin").rglob("*.ts*")]))
 PAINEL_ADMIN = (RAIZ / "supabase/migrations/202609290100_painel_admin.sql").read_text()
 PAGINA_ASSINATURA = (RAIZ / "src/paginas/Assinatura.tsx").read_text()
 TERMOS = (RAIZ / "src/paginas/Termos.tsx").read_text()

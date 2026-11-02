@@ -1,0 +1,397 @@
+/* Painel 3.0 — peças próprias de cada módulo (o sistema comum está em admin.css). */
+
+/* ---------- Comando ---------- */
+.a3-comando-topo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(280px, 400px); align-items: stretch; gap: 24px; padding-top: 18px; }
+.a3-comando-topo__texto { display: grid; align-content: end; gap: 10px; }
+.a3-comando-frase { max-width: 62ch; font-size: 16px; line-height: 1.5; color: var(--a3-tinta-2); }
+.a3-comando-frase .a3-ponto { margin-top: 2px; align-self: flex-start; transform: translateY(6px); }
+.a3-comando-topo__controles { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 6px; }
+.a3-comando-cena { height: 150px; margin: 0; box-shadow: var(--a3-sombra); }
+@media (max-width: 1100px) { .a3-comando-topo { grid-template-columns: minmax(0, 1fr); } .a3-comando-cena { height: 120px; order: -1; } }
+@media (max-width: 899px) { .a3-comando-cena { height: 110px; } .a3-comando-frase { font-size: 15px; } }
+.a3-altura-cheia { height: 100%; }
+
+.a3-fila { display: grid; }
+.a3-fila__item { position: relative; display: grid; grid-template-columns: 4px minmax(0, 1fr) auto; align-items: center; gap: 14px; padding: 14px 20px; border-top: 1px solid var(--a3-linha); }
+.a3-fila__marca { align-self: stretch; border-radius: 4px; background: var(--a3-linha-2); }
+.a3-fila__item--critica .a3-fila__marca { background: var(--a3-erro); }
+.a3-fila__item--alta .a3-fila__marca { background: var(--a3-aviso); }
+.a3-fila__item--media .a3-fila__marca { background: var(--a3-tinta); }
+.a3-fila__texto { display: grid; gap: 3px; min-width: 0; }
+.a3-fila__titulo { font-weight: 500; }
+.a3-fila__titulo b { font-weight: 650; }
+.a3-fila__titulo::first-letter { text-transform: uppercase; }
+.a3-fila__causa { color: var(--a3-cinza); font-size: 13px; }
+.a3-fila__meta { display: flex; flex-wrap: wrap; gap: 6px; color: var(--a3-cinza); font-size: 12px; }
+.a3-fila--larga .a3-fila__item { padding: 16px 20px; }
+@media (max-width: 560px) { .a3-fila__item { grid-template-columns: 4px minmax(0, 1fr); } .a3-fila__item .a3-botao { grid-column: 2; justify-self: start; } }
+
+.a3-agora-numero { display: flex; align-items: baseline; gap: 10px; margin-bottom: 14px; }
+.a3-agora-numero .num { font-family: var(--a3-titulo); font-size: 40px; font-weight: 650; letter-spacing: -.04em; line-height: 1; }
+.a3-vivos { display: grid; gap: 2px; margin: 0 -10px; }
+.a3-vivos button { display: flex; align-items: center; gap: 10px; width: 100%; padding: 7px 10px; border: 0; border-radius: 12px; background: none; text-align: left; cursor: pointer; }
+.a3-vivos button:hover { background: var(--a3-alt); }
+.a3-vivos button > span:last-child { display: grid; min-width: 0; }
+.a3-vivos b { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-vivos small { color: var(--a3-cinza); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-atalhos-lista { display: grid; margin: 0 -10px; }
+.a3-atalhos-lista a { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 9px 10px; border-radius: 12px; text-decoration: none; }
+.a3-atalhos-lista a:hover { background: var(--a3-alt); }
+.a3-atalhos-lista a span { display: grid; }
+.a3-atalhos-lista small { color: var(--a3-cinza); font-size: 12px; }
+.a3-atalhos-lista .a3-icone { color: var(--a3-cinza-2); }
+
+.a3-cartao-grupo { display: grid; justify-items: start; gap: 6px; padding: 18px 20px; text-align: left; cursor: pointer; font: inherit; color: inherit; }
+.a3-cartao-grupo:hover { border-color: var(--a3-linha-2); }
+.a3-cartao-grupo[aria-pressed="true"] { border-color: var(--a3-tinta); box-shadow: 0 0 0 1px var(--a3-tinta); }
+.a3-cartao-grupo__n { font-family: var(--a3-titulo); font-size: 32px; font-weight: 650; letter-spacing: -.03em; line-height: 1; }
+
+/* ---------- Atividade agora ---------- */
+.a3-monitor { display: grid; max-height: 520px; overflow-y: auto; border-top: 1px solid var(--a3-linha); }
+.a3-monitor li + li { border-top: 1px solid var(--a3-linha); }
+.a3-monitor button { display: flex; align-items: flex-start; gap: 12px; width: 100%; padding: 12px 20px; border: 0; background: none; text-align: left; cursor: pointer; }
+.a3-monitor button:hover { background: var(--a3-alt); }
+.a3-monitor__texto { display: grid; gap: 2px; min-width: 0; }
+.a3-monitor__nome { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-weight: 600; }
+.a3-monitor__faz { font-size: 13px; overflow-wrap: anywhere; }
+.a3-dinheiro-bloco { display: grid; align-content: start; gap: 8px; padding: 14px; border: 1px solid var(--a3-linha); border-radius: 16px; }
+.a3-movimentos { display: grid; }
+.a3-movimentos li { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 6px 0; border-top: 1px solid var(--a3-linha); }
+.a3-movimentos li:first-child { border-top: 0; }
+.a3-movimentos button { display: grid; min-width: 0; padding: 0; border: 0; background: none; text-align: left; cursor: pointer; }
+.a3-movimentos button b { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-movimentos button span { color: var(--a3-cinza); font-size: 12px; }
+.a3-movimentos .num { font-weight: 600; white-space: nowrap; }
+
+/* ---------- Ficha e cartas ---------- */
+.a3-ficha-bloco { display: grid; gap: 10px; }
+.a3-ficha-bloco > header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+.a3-acao-cartao { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 18px; border: 1px solid var(--a3-linha); border-radius: 18px; }
+.a3-acao-cartao > div:first-child { display: grid; gap: 4px; max-width: 56ch; }
+.a3-acao-cartao--coluna { flex-direction: column; align-items: stretch; }
+@media (max-width: 560px) { .a3-acao-cartao { flex-direction: column; align-items: stretch; } }
+.a3-acoes-linha { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.a3-carta { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 24px; align-items: start; }
+.a3-carta__lado { position: sticky; top: 56px; display: grid; gap: 14px; padding: 16px; border-radius: 18px; background: var(--a3-alt); border: 1px solid var(--a3-linha); }
+@media (max-width: 860px) { .a3-carta { grid-template-columns: minmax(0, 1fr); } .a3-carta__lado { position: static; } }
+.a3-historico-cabeca { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+.a3-previa { margin: 0; border: 1px solid var(--a3-linha); border-radius: 18px; overflow: hidden; background: var(--a3-papel); }
+.a3-previa__topo { display: grid; gap: 2px; padding: 12px 16px; border-bottom: 1px solid var(--a3-linha); background: var(--a3-alt); font-size: 13px; }
+.a3-previa__topo b { display: inline-block; min-width: 64px; color: var(--a3-cinza); font-weight: 500; }
+.a3-previa iframe { display: block; width: 100%; height: 420px; border: 0; background: #fff; }
+
+/* Receita */
+.a3-previsao-topo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr); gap: 0; }
+.a3-previsao-topo > .a3-metrica { border-right: 1px solid var(--a3-linha); }
+.a3-soma { list-style: none; margin: 0; padding: 8px 24px; display: grid; }
+.a3-soma li { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 16px; padding: 12px 0; border-bottom: 1px solid var(--a3-linha); }
+.a3-soma li:last-child { border-bottom: 0; }
+.a3-soma li > span:first-child { color: var(--a3-cinza); }
+.a3-soma li b { font-weight: 600; font-variant-numeric: tabular-nums; text-align: right; }
+.a3-soma li .a3-qualidade { grid-column: 1 / -1; }
+@media (max-width: 720px) { .a3-previsao-topo { grid-template-columns: minmax(0, 1fr); } .a3-previsao-topo > .a3-metrica { border-right: 0; border-bottom: 1px solid var(--a3-linha); } .a3-soma { padding: 4px 18px; } }
+.a3-simulador { display: grid; gap: 14px; }
+.a3-simulador__controle { display: flex; align-items: center; gap: 16px; }
+.a3-simulador__controle input[type=range] { flex: 1; min-width: 0; accent-color: var(--a3-tinta); height: 24px; }
+.a3-simulador__controle output { font-size: 22px; font-weight: 600; min-width: 4ch; text-align: right; }
+.a3-metodo { padding: 0; }
+.a3-metodo > summary { cursor: pointer; padding: 16px 24px; font-weight: 500; list-style: none; display: flex; justify-content: space-between; }
+.a3-metodo > summary::after { content: '+'; color: var(--a3-cinza); }
+.a3-metodo[open] > summary::after { content: '−'; }
+.a3-metodo > .a3-texto { padding: 0 24px 20px; display: grid; gap: 10px; }
+
+/* Assinaturas */
+.a3-abas-grandes { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; border: 1px solid var(--a3-linha); border-radius: var(--a3-r-cartao); background: var(--a3-papel); box-shadow: var(--a3-sombra); overflow: hidden; }
+.a3-aba-grande { position: relative; display: grid; gap: 2px; justify-items: start; padding: 16px 20px; border: 0; border-left: 1px solid var(--a3-linha); background: none; color: var(--a3-cinza); font: inherit; font-size: 13px; text-align: left; cursor: pointer; transition: background-color .12s, color .12s; }
+.a3-aba-grande:first-child { border-left: 0; }
+.a3-aba-grande:hover { background: var(--a3-alt); color: var(--a3-tinta-2); }
+.a3-aba-grande[aria-selected="true"] { color: var(--a3-tinta); background: var(--a3-alt); }
+.a3-aba-grande[aria-selected="true"]::after { content: ""; position: absolute; left: 20px; right: 20px; bottom: 0; height: 2px; border-radius: 2px; background: var(--a3-tinta); }
+.a3-aba-grande:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: -4px; }
+.a3-aba-grande__numero { font-size: 26px; font-weight: 600; letter-spacing: -.03em; color: var(--a3-tinta); font-variant-numeric: tabular-nums; }
+@media (max-width: 720px) {
+  .a3-abas-grandes { display: flex; overflow-x: auto; scrollbar-width: none; }
+  .a3-aba-grande { flex: none; padding: 12px 16px; }
+  .a3-aba-grande__numero { font-size: 20px; }
+}
+.a3-vigencia { display: grid; gap: 5px; min-width: 120px; }
+.a3-vigencia__trilho { display: block; height: 6px; border-radius: 6px; background: var(--a3-recuo); overflow: hidden; }
+.a3-vigencia__trilho i { display: block; height: 100%; border-radius: inherit; background: var(--a3-tinta); }
+.a3-vigencia__trilho i.perto { background: var(--a3-aviso); }
+.a3-vigencia__trilho i.fim { background: var(--a3-cinza-2); }
+
+/* Cobranças: extrato agrupado por dia */
+.a3-extrato-topo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); align-items: center; }
+.a3-extrato-topo > .a3-metrica { border-right: 1px solid var(--a3-linha); }
+.a3-extrato-topo > .a3-pares { padding: 6px 24px; }
+.a3-extrato-topo dt { display: inline-flex; align-items: center; gap: 8px; }
+@media (max-width: 720px) { .a3-extrato-topo { grid-template-columns: minmax(0, 1fr); } .a3-extrato-topo > .a3-metrica { border-right: 0; border-bottom: 1px solid var(--a3-linha); } .a3-extrato-topo > .a3-pares { padding: 4px 18px; } }
+.a3-extrato { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--a3-linha); }
+.a3-extrato ul { list-style: none; margin: 0; padding: 0; }
+.a3-extrato__dia { position: sticky; top: 0; z-index: 1; display: flex; justify-content: space-between; gap: 12px; padding: 8px 20px; background: var(--a3-alt); border-bottom: 1px solid var(--a3-linha); color: var(--a3-cinza); font-size: 12px; font-weight: 500; text-transform: capitalize; }
+.a3-extrato__dia b { color: var(--a3-tinta-2); font-weight: 600; font-variant-numeric: tabular-nums; }
+.a3-extrato__linha { display: grid; grid-template-columns: 48px minmax(0, 1fr) auto 112px 32px; align-items: center; gap: 12px; min-height: 56px; padding: 6px 12px 6px 20px; border-bottom: 1px solid var(--a3-linha); }
+.a3-extrato > li:last-child .a3-extrato__linha:last-child { border-bottom: 0; }
+.a3-extrato__hora { color: var(--a3-cinza); font-size: 12.5px; }
+.a3-extrato__quem { display: grid; gap: 2px; min-width: 0; padding: 4px 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.a3-extrato__quem .a3-nome { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-extrato__quem .a3-sub { color: var(--a3-cinza); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-extrato__quem:hover .a3-nome { text-decoration: underline; text-underline-offset: 3px; }
+.a3-extrato__quem:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: 2px; border-radius: 6px; }
+.a3-extrato__selos { display: flex; gap: 4px; flex-wrap: wrap; justify-content: flex-end; }
+.a3-extrato__valor { text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }
+.a3-extrato__linha.devolvida .a3-extrato__valor, .a3-extrato__linha.devolvida .a3-nome { text-decoration: line-through; color: var(--a3-cinza); }
+.a3-extrato__vazio { width: 32px; }
+@media (max-width: 720px) {
+  .a3-extrato__dia { padding: 8px 16px; }
+  .a3-extrato__linha { grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "quem valor" "selos link"; gap: 4px 10px; padding: 10px 12px 10px 16px; }
+  .a3-extrato__hora { display: none; }
+  .a3-extrato__quem { grid-area: quem; }
+  .a3-extrato__valor { grid-area: valor; }
+  .a3-extrato__selos { grid-area: selos; justify-content: flex-start; }
+  .a3-extrato__linha > a, .a3-extrato__vazio { grid-area: link; justify-self: end; }
+}
+
+/* Avisos do processador: caixa de entrada com detalhe ao lado */
+.a3-caixa-entrada { display: grid; grid-template-columns: minmax(280px, 400px) minmax(0, 1fr); overflow: hidden; }
+.a3-caixa-entrada__lista { min-width: 0; border-right: 1px solid var(--a3-linha); }
+.a3-caixa-entrada__detalhe { min-width: 0; padding: 24px; }
+.a3-fila-avisos { list-style: none; margin: 0; padding: 0 0 8px; border-top: 1px solid var(--a3-linha); max-height: 560px; overflow-y: auto; }
+.a3-fila-avisos__item { display: grid; grid-template-columns: 8px minmax(0, 1fr) auto; align-items: center; gap: 12px; width: 100%; padding: 12px 20px; border: 0; border-bottom: 1px solid var(--a3-linha); background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.a3-fila-avisos__item:hover { background: var(--a3-alt); }
+.a3-fila-avisos__item[aria-current="true"] { background: var(--a3-recuo); box-shadow: inset 2px 0 0 var(--a3-tinta); }
+.a3-fila-avisos__item:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: -2px; }
+.a3-fila-avisos__texto { display: grid; gap: 2px; min-width: 0; }
+.a3-fila-avisos__texto .a3-nome { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-fila-avisos__texto .a3-sub { color: var(--a3-cinza); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-fila-avisos__quando { color: var(--a3-cinza); font-size: 12px; white-space: nowrap; }
+.a3-codigo { font-family: var(--a3-mono, ui-monospace, monospace); font-size: 12px; font-weight: 400 !important; overflow-wrap: anywhere; }
+@media (max-width: 860px) {
+  .a3-caixa-entrada { grid-template-columns: minmax(0, 1fr); }
+  .a3-caixa-entrada__lista { border-right: 0; border-bottom: 1px solid var(--a3-linha); }
+  .a3-fila-avisos { max-height: 320px; }
+  .a3-caixa-entrada__detalhe { padding: 18px; }
+}
+
+/* Triagem */
+.a3-mesa-passo { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: -8px 0 12px; }
+.a3-questao-ref { display: grid; gap: 6px; }
+.a3-questao-ref a { color: var(--a3-tinta); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.a3-questao-ref a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.a3-questao-ref p { font-size: 14px; line-height: 1.55; }
+.a3-citacao { margin: 0; padding: 14px 16px; border-left: 2px solid var(--a3-tinta); border-radius: 0 12px 12px 0; background: var(--a3-alt); font-size: 15px; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
+.a3-placar-mini { display: flex; gap: 6px 18px; flex-wrap: wrap; padding: 14px 20px 0; color: var(--a3-cinza); font-size: 13px; }
+.a3-placar-mini b { color: var(--a3-tinta); font-size: 18px; font-weight: 600; margin-right: 4px; font-variant-numeric: tabular-nums; }
+.a3-duas-barras { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.a3-duas-barras > div { display: grid; grid-template-columns: 1fr auto; gap: 6px 10px; align-items: baseline; }
+.a3-duas-barras b { font-size: 24px; font-weight: 600; letter-spacing: -.02em; }
+.a3-duas-barras i { grid-column: 1 / -1; display: block; height: 6px; border-radius: 6px; background: linear-gradient(90deg, var(--a3-tinta) var(--p), var(--a3-recuo) var(--p)); }
+.a3-duas-barras i.ruim { background: linear-gradient(90deg, var(--a3-erro) var(--p), var(--a3-recuo) var(--p)); }
+@media (max-width: 560px) { .a3-duas-barras { grid-template-columns: minmax(0, 1fr); } }
+.a3-abas-grandes--5 .a3-aba-grande__numero { min-height: 32px; display: flex; align-items: center; }
+
+/* Editor de questões: navegação | formulário | prévia */
+.a3-editor { display: grid; grid-template-columns: 240px minmax(0, 1fr) minmax(0, 380px); gap: 20px; align-items: start; }
+.a3-editor__lado, .a3-editor__centro { display: grid; gap: 16px; min-width: 0; }
+.a3-editor__lado { position: sticky; top: 16px; }
+.a3-editor__abrir { display: grid; gap: 12px; padding: 16px; }
+.a3-editor__numero { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: end; }
+.a3-editor__lista { padding: 0; }
+.a3-editor__lista > summary { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 12px 16px; cursor: pointer; font-weight: 500; font-size: 13.5px; list-style: none; }
+.a3-editor__lista ul { list-style: none; margin: 0; padding: 0 8px 8px; max-height: 260px; overflow-y: auto; }
+.a3-editor__lista button { display: flex; justify-content: space-between; width: 100%; padding: 7px 8px; border: 0; border-radius: 8px; background: none; color: var(--a3-tinta-2); font: inherit; font-size: 12.5px; font-family: var(--a3-mono, ui-monospace, monospace); text-align: left; cursor: pointer; }
+.a3-editor__lista button:hover { background: var(--a3-alt); }
+.a3-editor__lista button[aria-current="true"] { background: var(--a3-recuo); color: var(--a3-tinta); }
+.a3-editor__lista small { color: var(--a3-cinza); font-family: var(--a3-texto, inherit); }
+.a3-editor__topo { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding: 18px 20px; }
+.a3-editor__topo h2 { font-family: var(--a3-mono, ui-monospace, monospace); font-size: 17px; overflow-wrap: anywhere; }
+.a3-editor__bloco { display: grid; gap: 16px; padding: 20px; }
+.a3-editor__titulo { display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; }
+.a3-editor__titulo span { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--a3-tinta); color: var(--a3-papel); font-size: 11.5px; }
+.a3-editor__linha { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 12px; }
+.a3-editor__perigo { border-color: color-mix(in srgb, var(--a3-erro) 22%, var(--a3-linha)); }
+.a3-editor__salvar { position: sticky; bottom: 12px; z-index: 5; display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; padding: 10px 10px 10px 18px; border: 1px solid var(--a3-linha); border-radius: 20px; background: color-mix(in srgb, var(--a3-papel) 92%, transparent); backdrop-filter: blur(10px); box-shadow: 0 8px 30px rgba(0,0,0,.08); }
+.a3-editor__estado { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--a3-tinta-2); }
+.a3-editor__previa { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; border-radius: var(--a3-r-cartao); }
+.a3-texto-rico__barra { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.a3-texto-rico__barra > span:first-child { font-size: 12.5px; font-weight: 500; color: var(--a3-tinta-2); }
+.a3-texto-rico__ferramentas { display: inline-flex; gap: 2px; padding: 2px; border-radius: 10px; background: var(--a3-recuo); }
+.a3-texto-rico__ferramentas button { width: 28px; height: 24px; border: 0; border-radius: 8px; background: none; color: var(--a3-tinta-2); font: inherit; font-size: 12px; cursor: pointer; }
+.a3-texto-rico__ferramentas button:hover { background: var(--a3-papel); }
+.a3-texto-rico__ferramentas mark { padding: 0 3px; border-radius: 3px; }
+.a3-alternativas { display: grid; gap: 8px; }
+.a3-alternativa { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 10px; align-items: start; }
+.a3-alternativa__letra { position: relative; display: grid; place-items: center; width: 36px; height: 36px; border: 1px solid var(--a3-linha-2); border-radius: 50%; font-weight: 600; cursor: pointer; }
+.a3-alternativa__letra input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.a3-alternativa__letra:has(input:focus-visible) { outline: 2px solid var(--a3-tinta); outline-offset: 2px; }
+.a3-alternativa.correta .a3-alternativa__letra { background: var(--a3-tinta); border-color: var(--a3-tinta); color: var(--a3-papel); }
+.a3-alternativa.correta .a3-entrada { border-color: var(--a3-tinta); }
+.a3-galeria { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; }
+.a3-galeria__item { display: grid; gap: 6px; margin: 0; padding: 8px; border: 1px solid var(--a3-linha); border-radius: 14px; }
+.a3-galeria__item img { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; border-radius: 8px; background: var(--a3-alt); }
+.a3-galeria__item .a3-entrada { font-size: 12.5px; }
+.a3-galeria__enviar { display: grid; place-items: center; align-content: center; gap: 4px; min-height: 140px; padding: 12px; border: 1.5px dashed var(--a3-linha-2); border-radius: 14px; color: var(--a3-tinta-2); font-size: 13px; font-weight: 500; text-align: center; cursor: pointer; }
+.a3-galeria__enviar:hover { background: var(--a3-alt); }
+.a3-galeria__enviar:has(input:focus-visible) { outline: 2px solid var(--a3-tinta); outline-offset: 2px; }
+.a3-galeria__enviar small { color: var(--a3-cinza); font-weight: 400; font-size: 11.5px; }
+.a3-galeria__enviar.ocupado { opacity: .6; cursor: progress; }
+.a3-previa-questao { display: grid; gap: 12px; padding: 14px 20px 20px; font-size: 14px; line-height: 1.6; }
+.a3-previa-questao img { max-width: 100%; border-radius: 10px; }
+.a3-previa-questao__alts { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.a3-previa-questao__alts li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; padding: 8px 10px; border: 1px solid var(--a3-linha); border-radius: 12px; }
+.a3-previa-questao__alts li.correta { border-color: var(--a3-ok); background: var(--a3-ok-veu); }
+.a3-previa-questao__comentario { display: grid; gap: 10px; padding-top: 12px; border-top: 1px solid var(--a3-linha); }
+@media (max-width: 1280px) { .a3-editor { grid-template-columns: 220px minmax(0, 1fr); } .a3-editor__previa { grid-column: 2; position: static; max-height: none; } }
+@media (max-width: 860px) { .a3-editor { grid-template-columns: minmax(0, 1fr); } .a3-editor__lado { position: static; } .a3-editor__previa { grid-column: auto; } .a3-editor__linha { grid-template-columns: minmax(0, 1fr); } .a3-editor__salvar { bottom: 76px; } }
+
+/* Simulados */
+.a3-voltar { justify-self: start; margin-bottom: -12px; }
+.a3-erro-texto { color: var(--a3-erro); }
+.a3-calendario { list-style: none; margin: 0; padding: 16px 20px 20px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.a3-calendario__mes { display: grid; align-content: start; gap: 6px; min-height: 108px; padding: 12px; border: 1px solid var(--a3-linha); border-radius: 16px; }
+.a3-calendario__mes.passado { background: var(--a3-alt); }
+.a3-calendario__mes.sugerido { border-color: var(--a3-tinta); box-shadow: inset 0 0 0 1px var(--a3-tinta); }
+.a3-calendario__nome { font-size: 12px; font-weight: 600; letter-spacing: .02em; color: var(--a3-tinta-2); }
+.a3-calendario__edicao { display: grid; gap: 2px; padding: 8px 10px; border: 0; border-radius: 10px; background: var(--a3-recuo); color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.a3-calendario__edicao .a3-nome { font-size: 13px; font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-calendario__edicao .a3-sub { font-size: 11.5px; color: var(--a3-cinza); }
+.a3-calendario__edicao.s-no-ar, .a3-calendario__edicao.s-inscricoes { background: var(--a3-tinta); color: var(--a3-papel); }
+.a3-calendario__edicao.s-no-ar .a3-sub, .a3-calendario__edicao.s-inscricoes .a3-sub { color: color-mix(in srgb, var(--a3-papel) 70%, transparent); }
+.a3-calendario__edicao:focus-visible, .a3-calendario__vazio:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: 2px; }
+.a3-calendario__vazio { display: inline-flex; align-items: center; gap: 6px; padding: 8px 10px; border: 1px dashed var(--a3-linha-2); border-radius: 10px; background: none; color: var(--a3-cinza); font: inherit; font-size: 12.5px; cursor: pointer; }
+.a3-calendario__vazio:hover { color: var(--a3-tinta); border-color: var(--a3-tinta); }
+@media (max-width: 1100px) { .a3-calendario { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .a3-calendario { grid-template-columns: repeat(2, minmax(0, 1fr)); padding: 12px; } .a3-calendario__mes { min-height: 0; } }
+.a3-montagem { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 20px; align-items: start; }
+.a3-montagem__resumo { position: sticky; top: 16px; }
+.a3-montagem__botoes { display: grid; gap: 8px; padding: 16px 20px 20px; }
+.a3-checagens { list-style: none; margin: 0; padding: 12px 20px; display: grid; gap: 8px; font-size: 13px; }
+.a3-checagens li { display: flex; align-items: flex-start; gap: 8px; }
+.a3-checagens li.ok .a3-icone { color: var(--a3-ok); }
+.a3-checagens li.falha { color: var(--a3-erro); }
+@media (max-width: 1100px) { .a3-montagem { grid-template-columns: minmax(0, 1fr); } .a3-montagem__resumo { position: static; } }
+.a3-tres-campos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 720px) { .a3-tres-campos { grid-template-columns: minmax(0, 1fr); } }
+.a3-alvo { margin: 0; display: grid; gap: 10px; padding: 14px 16px; border: 1px solid var(--a3-linha); border-radius: 16px; }
+.a3-alvo figcaption { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.a3-alvo ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.a3-alvo li { display: grid; grid-template-columns: minmax(0, 180px) minmax(0, 1fr) 56px; gap: 10px; align-items: center; font-size: 13px; }
+.a3-alvo__nome { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-alvo__trilho { position: relative; height: 10px; border-radius: 6px; background: var(--a3-recuo); }
+.a3-alvo__trilho i { position: absolute; inset: 0 auto 0 0; border-radius: 6px; background: var(--a3-tinta); }
+.a3-alvo__trilho b { position: absolute; top: -3px; bottom: -3px; width: 2px; margin-left: -1px; background: var(--a3-aviso); }
+.a3-alvo li > .num { text-align: right; color: var(--a3-cinza); }
+.a3-alvo li > .num b { color: var(--a3-tinta); }
+@media (max-width: 560px) { .a3-alvo li { grid-template-columns: minmax(0, 1fr) 48px; } .a3-alvo__trilho { grid-column: 1 / -1; grid-row: 2; } }
+.a3-prova-lista { list-style: none; margin: 0; padding: 0; border: 1px solid var(--a3-linha); border-radius: 16px; overflow: hidden; }
+.a3-prova-lista li { display: grid; grid-template-columns: 32px minmax(0, 1fr) auto; gap: 12px; align-items: start; padding: 12px 14px; border-bottom: 1px solid var(--a3-linha); }
+.a3-prova-lista li:last-child { border-bottom: 0; }
+.a3-prova-lista__ordem { display: grid; place-items: center; width: 28px; height: 28px; border-radius: 8px; background: var(--a3-recuo); font-size: 12px; font-weight: 600; }
+.a3-prova-lista__texto { font-size: 13.5px; line-height: 1.5; color: var(--a3-tinta-2); }
+.a3-prova-lista__acoes { display: flex; gap: 4px; }
+@media (max-width: 560px) { .a3-prova-lista li { grid-template-columns: 28px minmax(0, 1fr); } .a3-prova-lista__acoes { grid-column: 2; } }
+.a3-previa-sn { display: grid; gap: 12px; padding: 22px; border-radius: 20px; background: var(--a3-alt); border: 1px solid var(--a3-linha); }
+.a3-previa-sn__titulo { font-size: 24px; font-weight: 650; letter-spacing: -.02em; }
+.a3-previa-sn__aberto { justify-self: start; padding: 3px 10px; border-radius: 999px; background: var(--a3-ok-veu); color: var(--a3-ok); font-size: 12px; font-weight: 500; }
+.a3-funil-sn { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; padding: 12px 0 0; }
+.a3-funil-sn > div { display: grid; gap: 6px; padding: 12px 20px 18px; border-left: 1px solid var(--a3-linha); }
+.a3-funil-sn > div:first-child { border-left: 0; }
+.a3-funil-sn b { font-size: 28px; font-weight: 600; letter-spacing: -.03em; }
+.a3-funil-sn i { display: block; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--a3-tinta) var(--p), var(--a3-recuo) var(--p)); }
+@media (max-width: 860px) { .a3-funil-sn { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-funil-sn > div { border-left: 0; border-top: 1px solid var(--a3-linha); } }
+
+/* Opiniões dos flashcards */
+.a3-mural { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--a3-linha); }
+.a3-mural li { display: grid; gap: 10px; padding: 16px 20px; border-bottom: 1px solid var(--a3-linha); }
+.a3-mural li:last-child { border-bottom: 0; }
+.a3-mural__topo { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; }
+.a3-mural__notas { display: flex; gap: 8px 24px; flex-wrap: wrap; }
+.a3-mural__texto { display: grid; gap: 4px; }
+.a3-mural__texto p { font-size: 14.5px; line-height: 1.55; overflow-wrap: anywhere; }
+.a3-nota { display: inline-flex; align-items: center; gap: 8px; }
+.a3-nota__tracos { display: inline-flex; gap: 3px; }
+.a3-nota__tracos i { width: 14px; height: 5px; border-radius: 3px; background: var(--a3-recuo); }
+.a3-nota__tracos i.cheio { background: var(--a3-tinta); }
+
+/* Campanhas */
+.a3-campanhas { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 20px; align-items: start; }
+.a3-campanhas__lista { position: sticky; top: 16px; display: grid; gap: 14px; padding: 14px 10px; }
+.a3-campanhas__lista > div { display: grid; gap: 2px; }
+.a3-campanhas__lista .a3-rotulo { padding: 0 10px 4px; }
+.a3-campanhas__lista button { display: grid; grid-template-columns: 18px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 9px 10px; border: 0; border-radius: 12px; background: none; color: var(--a3-tinta-2); font: inherit; font-size: 13.5px; text-align: left; cursor: pointer; }
+.a3-campanhas__lista button:hover { background: var(--a3-alt); }
+.a3-campanhas__lista button[aria-current="true"] { background: var(--a3-tinta); color: var(--a3-papel); }
+.a3-campanhas__lista button:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: 2px; }
+.a3-campanhas__lista b { font-weight: 600; }
+.a3-campanha__cabeca { padding: 20px 20px 4px; }
+.a3-passos { list-style: none; margin: 0; padding: 14px 20px; display: flex; gap: 6px; flex-wrap: wrap; }
+.a3-passos li { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px 5px 6px; border-radius: 999px; background: var(--a3-alt); color: var(--a3-cinza); font-size: 12.5px; font-weight: 500; }
+.a3-passos li span { display: grid; place-items: center; width: 20px; height: 20px; border-radius: 50%; background: var(--a3-recuo); font-size: 11px; }
+.a3-passos li.atual { background: var(--a3-tinta); color: var(--a3-papel); }
+.a3-passos li.atual span { background: var(--a3-papel); color: var(--a3-tinta); }
+.a3-passos li.feito { color: var(--a3-tinta); }
+.a3-passos li.feito span { background: var(--a3-ok); color: #fff; }
+.a3-campanha__numeros { display: flex; flex-wrap: wrap; gap: 0; margin: 0; border-top: 1px solid var(--a3-linha); border-bottom: 1px solid var(--a3-linha); }
+.a3-campanha__numeros > div { display: grid; gap: 2px; padding: 14px 20px; border-right: 1px solid var(--a3-linha); }
+.a3-campanha__numeros dt { color: var(--a3-cinza); font-size: 12px; }
+.a3-campanha__numeros dd { font-size: 24px; font-weight: 600; letter-spacing: -.02em; }
+.a3-campanha__acoes { display: flex; justify-content: flex-end; gap: 8px; flex-wrap: wrap; padding: 16px 20px; }
+.a3-previa-email { display: block; width: 100%; height: 560px; border: 1px solid var(--a3-linha); border-radius: 14px; background: #fff; }
+.a3-lista-nomes { margin: 0; padding: 10px 14px; max-height: 220px; overflow-y: auto; border-radius: 12px; background: var(--a3-alt); list-style: none; display: grid; gap: 2px; font-size: 13px; color: var(--a3-tinta-2); }
+@media (max-width: 960px) {
+  .a3-campanhas { grid-template-columns: minmax(0, 1fr); }
+  .a3-campanhas__lista { position: static; display: flex; overflow-x: auto; padding: 8px; gap: 4px; scrollbar-width: none; }
+  .a3-campanhas__lista > div { display: contents; }
+  .a3-campanhas__lista .a3-rotulo { display: none; }
+  .a3-campanhas__lista button { flex: none; }
+  .a3-campanha__numeros > div { flex: 1 1 45%; }
+  .a3-previa-email { height: 460px; }
+}
+
+/* Cartas pessoais: caixa de saída */
+.a3-abas-grandes--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.a3-caixa-saida { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr); gap: 20px; align-items: start; }
+.a3-caixa-saida__barra { display: flex; justify-content: space-between; align-items: center; gap: 8px; flex-wrap: wrap; padding: 14px 16px; border-bottom: 1px solid var(--a3-linha); }
+.a3-caixa-saida__carta { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; }
+.a3-saida { list-style: none; margin: 0; padding: 0; max-height: 640px; overflow-y: auto; }
+.a3-saida li { display: grid; grid-template-columns: 20px minmax(0, 1fr); align-items: center; gap: 8px; padding: 0 0 0 16px; border-bottom: 1px solid var(--a3-linha); }
+.a3-saida li.aberta { background: var(--a3-recuo); box-shadow: inset 2px 0 0 var(--a3-tinta); }
+.a3-saida li.desmarcada .a3-saida__abrir { opacity: .5; }
+.a3-saida input { width: 16px; height: 16px; accent-color: var(--a3-tinta); }
+.a3-saida__abrir { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; align-items: center; gap: 10px; padding: 12px 16px 12px 4px; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.a3-saida__abrir:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: -2px; }
+.a3-saida__texto { display: grid; gap: 2px; min-width: 0; }
+.a3-saida__texto .a3-nome { display: flex; gap: 6px; align-items: center; font-weight: 500; }
+.a3-saida__texto .a3-sub { color: var(--a3-cinza); font-size: 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.a3-saida__fora { border-top: 1px solid var(--a3-linha); }
+.a3-saida__fora summary { padding: 12px 16px; cursor: pointer; font-size: 13px; color: var(--a3-cinza); }
+.a3-saida__fora ul { list-style: none; margin: 0; padding: 0 16px 12px; display: grid; gap: 6px; }
+.a3-saida__fora li { display: flex; justify-content: space-between; gap: 8px; font-size: 13px; }
+.a3-envio-progresso { display: grid; gap: 6px; flex: 1 1 260px; font-size: 13px; }
+.a3-envio-progresso progress { width: 100%; height: 6px; accent-color: var(--a3-tinta); }
+@media (max-width: 1100px) { .a3-caixa-saida { grid-template-columns: minmax(0, 1fr); } .a3-caixa-saida__carta { position: static; max-height: none; } }
+@media (max-width: 720px) { .a3-abas-grandes--4 { display: flex; } }
+
+/* Catálogo de cartas */
+.a3-catalogo { display: grid; grid-template-columns: minmax(0, 420px) minmax(0, 1fr); gap: 20px; align-items: start; }
+.a3-catalogo__lista .a3-fila-avisos { max-height: 720px; }
+.a3-catalogo__detalhe { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; }
+.a3-carta-papel { display: grid; gap: 12px; padding: 22px 24px; border: 1px solid var(--a3-linha); border-radius: 16px; background: var(--a3-papel); box-shadow: 0 1px 0 var(--a3-linha), 0 10px 30px -18px rgba(0,0,0,.18); }
+.a3-carta-papel__assunto { font-size: 16px; font-weight: 600; }
+.a3-carta-papel__corpo { display: grid; gap: 10px; font-size: 14.5px; line-height: 1.65; color: var(--a3-tinta-2); white-space: pre-wrap; }
+@media (max-width: 1000px) { .a3-catalogo { grid-template-columns: minmax(0, 1fr); } .a3-catalogo__detalhe { position: static; max-height: none; } .a3-catalogo__lista .a3-fila-avisos { max-height: 360px; } }
+
+/* Configurações */
+.a3-chave-estado { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: start; }
+.a3-diferenca { display: grid; gap: 8px; padding: 14px 16px; border-radius: 14px; background: var(--a3-aviso-veu); }
+.a3-diferenca ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; font-size: 13.5px; font-weight: 500; }
+.a3-diferenca li { display: flex; gap: 8px; align-items: center; }
+.a3-navegador { overflow: hidden; border: 1px solid var(--a3-linha); border-radius: 14px; background: var(--fundo, var(--a3-papel)); }
+.a3-navegador__barra { display: flex; gap: 5px; padding: 8px 10px; border-bottom: 1px solid var(--a3-linha); background: var(--a3-alt); }
+.a3-navegador__barra i { width: 8px; height: 8px; border-radius: 50%; background: var(--a3-linha-2); }
+.a3-navegador--celular { max-width: 360px; }
+.a3-faixinha { border-bottom: 0; }
+.a3-faixinha .aviso-site__interno { padding: 0 14px; }
+.a3-faixinha .aviso-site__texto { white-space: normal; padding-block: 10px; }
+.a3-progresso { height: 6px; border-radius: 6px; background: var(--a3-recuo); overflow: hidden; }
+.a3-progresso i { display: block; height: 100%; background: var(--a3-tinta); transition: width .2s; }

@@ -1,6 +1,6 @@
 import { real } from '../../dados/planos'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
-import type { LinhaUsuario } from './AdminUsuarios'
+import type { LinhaUsuario } from '../../admin/dados/pessoas'
 import type { EventoPagamento } from './pagamentos'
 import { contaDeTeste } from './contasTeste'
 import { acertoAposRevisao, acertoReal, porcentagem } from './formatos'
