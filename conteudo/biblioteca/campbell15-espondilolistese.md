@@ -424,7 +424,7 @@ Tirar o arco que está solto parece inofensivo, mas ele ainda participa da estab
 conceito: A técnica de GILL é a laminectomia descompressiva de L5, retirando o arco posterior solto da espondilolistese ístmica; feita isoladamente é contraindicada, porque desestabiliza e o escorregamento progride, e por isso vem sempre com artrodese.
 como: O TARO 2021 perguntou o que é a técnica de GILL na listese L5-S1; o TARO 2022 perguntou, em duas versões, o tipo em que ela é indicada e o tipo em que é contraindicada, com o ístmico como gabarito nas duas.
 armadilha: Confundir com laminectomia de S1 ou com artrodese; esquecer que só existe lâmina solta no tipo ístmico.
-alerta: Os gabaritos de `coluna-0303` (indicada no ístmico) e `coluna-0303` (contraindicada no ístmico) só convivem pela leitura dos livros: a lâmina solta existe só no ístmico, onde a GILL é usada associada à fusão (Campbell, cap. 46, p. 1835), mas a GILL isolada é contraindicada nesse mesmo tipo (Campbell, cap. 46, p. 1833; cap. 42, p. 1674).
+alerta: O gabarito de `coluna-0303` (indicada no ístmico) e o da questão de enunciado quase igual que pergunta onde a GILL é contraindicada (também o ístmico) só convivem pela leitura dos livros: a lâmina solta existe só no ístmico, onde a GILL é usada associada à fusão (Campbell, cap. 46, p. 1835), mas a GILL isolada é contraindicada nesse mesmo tipo (Campbell, cap. 46, p. 1833; cap. 42, p. 1674).
 !fim
 
 # Espondilolistese ístmica do adulto {radar=confirmado}
