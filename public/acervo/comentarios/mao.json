@@ -31486,6 +31486,23 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1858": {
+  "conceito": "O tratamento conservador da mama é a soma de duas coisas: retirar o tumor com margem e irradiar o restante. Toda contraindicação decorre de uma dessas duas partes não ser possível, ou de o resultado estético não valer a pena.\n\nPense assim. **Não dá para irradiar:** radioterapia prévia na mama ou no tórax e gestação em que a radiação seria necessária durante a gravidez (StatPearls, Breast Cancer Conservation Therapy; PMC9272418). **Não dá para ter margem:** margens que continuam comprometidas apesar de ampliar a ressecção. **Não vale a pena:** tumor grande demais em relação à mama. Os livros divergem sobre chamar cada item de absoluto ou relativo, mas a lista é a mesma.\n\nO ponto que a banca testa: **o tamanho do tumor sozinho não é o critério**, e sim a relação com a mama. Um tumor com mais de 2 cm pode perfeitamente ser conservado numa mama maior.",
+  "correta": "**B: tumor com mais de 2 cm.** É a exceção. O que pesa é a relação entre tumor e mama, e não um número absoluto (StatPearls, Breast Cancer Surgery).",
+  "incorretas": {
+   "A": "**É contraindicação.** A radiação é contraindicada na gravidez, e por isso a conservação depende do momento da gestação (PMC9272418; StatPearls, Breast Cancer Conservation Therapy).",
+   "C": "**É contraindicação.** Margens persistentemente comprometidas, apesar da reexcisão, levam a outra cirurgia (StatPearls, Breast Cancer Surgery).",
+   "D": "**É contraindicação.** Uma nova dose de radiação na mesma área limita a segunda parte do tratamento (StatPearls, Breast Cancer Conservation Therapy).",
+   "E": "**É contraindicação.** Essa é a versão correta da ideia do tamanho: se o tumor é grande para a mama, o resultado estético fica ruim."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Breast Cancer Conservation Therapy (NBK547708)",
+   "StatPearls (NCBI Bookshelf), Breast Cancer Surgery (NBK553076)",
+   "Radiotherapy of Breast Cancer: Professional Guideline, PMC9272418"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1859": {
   "conceito": "O linfoma anaplásico de grandes células associado a implante (BIA-ALCL) é raro, e tudo nele gira em torno da cápsula. O quadro típico é um **seroma tardio**, às vezes com massa, anos depois da cirurgia (PMC6605706). O diagnóstico se apoia em clonalidade de células T, forte positividade para CD30 e a morfologia característica; a pesquisa de ALK é negativa (PMC9472752; PMC7480932).\n\nCom o diagnóstico, os passos são: estadiar, operar e seguir. A avaliação começa com ultrassonografia e, em casos selecionados, ressonância, e a **PET-CT pré-operatória é recomendada** para estadiamento e planejamento (PMC9472752). A cirurgia é a capsulectomia em bloco com retirada do implante, feita em quase 97% dos casos numa revisão sistemática (PMC9551598).\n\nA questão pede a incorreta: dizer que não é preciso estadiar contraria essas recomendações.",
   "correta": "**B: não são necessários estadiamento clínico pré-operatório com PET-CT e exames de imagem.** É a afirmação incorreta: a PET-CT é recomendada antes da cirurgia para estadiar e planejar (PMC9472752).",
@@ -31518,6 +31535,23 @@
    "StatPearls (NCBI Bookshelf), Breast Ptosis (NBK567792)",
    "StatPearls (NCBI Bookshelf), Mastopexy (NBK610682)",
    "Inverted-T pattern reduction mammoplasty, PMC8575710"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1861": {
+  "conceito": "Quem faz abdominoplastia precisa saber o que corta e o que sobra. A pele e a tela subcutânea do abdome recebem sangue de ramos das **epigástricas** e outros vasos da região. A artéria epigástrica superficial corre na tela subcutânea, nas regiões púbica e infraumbilical (StatPearls, Epigastric Artery).\n\nNa camada profunda, há duas fontes que se encontram: a **epigástrica superior**, continuação da torácica interna, irriga a parte alta do reto, e a **inferior**, que vem da ilíaca externa, irriga a parte baixa. As duas se conectam na altura do umbigo (StatPearls, Abdominal Wall). Por isso, é fácil desconfiar da palavra \"exclusivamente\" das outras alternativas: a parede abdominal tem muitos caminhos, e é essa redundância que permite levantar um retalho.",
+  "correta": "**A: a irrigação superficial da tela subcutânea é realizada por ramos das artérias epigástricas superior, inferior e superficial.** É a alternativa sem erro de nome nem o \"exclusivamente\" que marca as demais (StatPearls, Epigastric Artery).",
+  "incorretas": {
+   "B": "**\"Exclusivamente\" derruba.** A epigástrica superior divide a tarefa com a inferior, e as duas se unem no umbigo (StatPearls, Abdominal Wall).",
+   "C": "**Nome e origem trocados.** No segmento supraumbilical, a artéria é a epigástrica **superior**, continuação da torácica interna. A inferior vem da ilíaca externa (StatPearls, Epigastric Artery).",
+   "D": "**\"Exclusivamente\" de novo.** A drenagem venosa superficial tem mais de um caminho, e as veias acompanham os vários territórios (StatPearls, Anterolateral Abdominal Wall Veins).",
+   "E": "**Restringe demais.** A drenagem linfática tem vias diferentes acima e abaixo do umbigo, e os inguinais recebem principalmente a parte infraumbilical superficial."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Epigastric Artery (NBK537156)",
+   "StatPearls (NCBI Bookshelf), Abdominal Wall (NBK551649)",
+   "StatPearls (NCBI Bookshelf), Anterolateral Abdominal Wall Veins (NBK507909)"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31684,6 +31718,21 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1872": {
+  "conceito": "Depois de uma grande perda de peso, o braço fica com pele sobrando, mas nem sempre com a mesma combinação de pele e gordura. É isso que a Escala de PITTSBURGH mede: ela gradua dez regiões do corpo em uma escala de quatro pontos e ajuda a escolher o tratamento (Song et al., Semin Plast Surg 2006).\n\nNo braço, a graduação é uma combinação de pele e gordura:\n\n| Grau | Braço |\n|---|---|\n| 1 | muita gordura com bom tônus de pele; pode bastar a lipoaspiração |\n| 2 | pele frouxa e pendente, **sem** adiposidade importante |\n| 3 | pele frouxa e pendente **com** adiposidade importante |\n\nOs graus 2 e 3 pedem excisão direta para contornar braço e axila; no 3, pode ser necessário associar a lipoaspiração do que sobrar (Correction of Arm Ptosis with a Medial Bicipital Scar).",
+  "correta": "**C: 2.** É o grau com pele frouxa e pendente, sem adiposidade grave, como descrito para os braços na escala (Song et al., 2006).",
+  "incorretas": {
+   "A": "**Sem deformidade.** Essa paciente tem muita pele sobrando, e a escala parte do normal.",
+   "B": "**A gordura predomina.** O grau 1 tem pele boa e adiposidade significativa, com candidatas à lipoaspiração isolada.",
+   "D": "**A mais próxima.** O grau 3 tem pele frouxa e adiposidade grave. O enunciado diz o contrário: sem adiposidade grave.",
+   "E": "**Não existe no braço.** A escala é de quatro pontos, sem grau 4."
+  },
+  "referencias": [
+   "Song AY et al., Pittsburgh Rating Scale, Semin Plast Surg 2006;20:24-29, com a descrição dos graus do braço em Correction of Arm Ptosis with a Medial Bicipital Scar (Plast Reconstr Surg)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1873": {
   "conceito": "O esqueleto da face também envelhece, e não por igual. Por isso a aparência muda mesmo sem perda de pele. Uma revisão muito citada resume os pontos vulneráveis: o terço médio, sobretudo a maxila, incluindo a região piriforme; os aspectos **superomedial e inferolateral** da borda orbital; e a região pré-jowl da mandíbula (Changes in the Facial Skeleton With Aging, PMC3404279).\n\nA órbita, portanto, fica maior com a idade, mas de forma desigual. As alterações inferolaterais costumam aparecer antes, na meia-idade, enquanto a recessão superomedial pode só surgir na velhice (PMC3404279). O resultado é o que se vê na clínica: bolsa de gordura medial proeminente, sobrancelha medial mais alta e alongamento da junção pálpebra-bochecha. Uma revisão mais recente liga a reabsorção à menor carga mecânica sobre essas áreas (PMC12914125).",
   "correta": "**D: superomedial e inferolateral.** São as duas áreas da borda orbital que as revisões apontam com forte predisposição à reabsorção (PMC3404279).",
@@ -31696,6 +31745,23 @@
   "referencias": [
    "Changes in the Facial Skeleton With Aging, PMC3404279",
    "Facial bone aging: An update, PMC12914125"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1874": {
+  "conceito": "O agente mais frequente de uma queimadura muda com a idade, e por isso as questões dependem de um detalhe do enunciado. Em crianças pequenas, é o **líquido quente**: em Parkland, numa série de 35 anos, a escaldadura respondeu por 42% das internações pediátricas, seguida pela chama, com 29% (PubMed 26613626). Em outra instituição, chegou a 83% (PMC11023416).\n\nConforme a criança cresce, a situação se inverte: nos adolescentes, a chama passa a dominar, com 47% em uma série (PMC11023416). Essa curva continua no adulto, em que chama direta e ignição de roupa são apontadas como a causa mais comum, enquanto a escaldadura predomina na infância.",
+  "correta": "**E: queimadura de flash e chama.** É a causa que passa a dominar na adolescência e continua no adulto, ao contrário da escaldadura da infância (PMC11023416).",
+  "alerta": "As fontes abertas consultadas mostram bem a curva até a adolescência, mas não trazem um registro específico de internações de adultos. A letra E foi mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Graves, mas não as mais comuns.** As lesões elétricas têm grande importância cirúrgica, sem ser a principal causa de internação.",
+   "B": "**Causa típica da criança.** Domina em menores de 5 anos (PubMed 26613626) e perde espaço com a idade.",
+   "C": "**Em terceiro lugar nas séries.** Em Parkland, foram 10% das internações pediátricas (PubMed 26613626).",
+   "D": "**Pouco frequente.** As lesões químicas têm um contexto próprio, como o de acidentes de trabalho, e não lideram as internações."
+  },
+  "referencias": [
+   "Epidemiology of pediatric burns at Parkland Hospital, PubMed 26613626",
+   "Pediatric Burns: Single Institution Review of 685 Patients, PMC11023416"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31753,6 +31819,24 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1878": {
+  "conceito": "Uma ferida é como um canteiro de obras, em que cada profissional chega em uma hora. Primeiro as plaquetas e, logo, os neutrófilos fazem a limpeza inicial (StatPearls, Wound Healing Phases). Depois vem quem coordena tudo: o **macrófago**, célula que o StatPearls chama de a mais crítica da cicatrização (Wound Assessment).\n\nEm torno do 3º ao 5º dia, os macrófagos predominam. Faz sentido, porque a fase proliferativa começa por volta do terceiro dia e dura cerca de 2 semanas (PMC5817091), e são os sinais do macrófago que chamam fibroblastos e vasos novos. É também por isso que uma ferida sem macrófagos cicatriza mal, enquanto faltar neutrófilo pesa menos em uma ferida limpa.",
+  "correta": "**D: 3 - 5 dias.** É quando os macrófagos dominam, na transição para a fase proliferativa (StatPearls, Wound Assessment; PMC5817091).",
+  "alerta": "As fontes abertas consultadas confirmam a importância dos macrófagos e o início da proliferação no terceiro dia, mas não o intervalo exato de 3 a 5 dias. Letra D mantida, como na questão mao-1835, do mesmo caderno.",
+  "incorretas": {
+   "A": "**Cedo demais.** Em 1 hora, a cena é de hemostasia e vasoconstrição.",
+   "B": "**Ainda muito cedo.** Os neutrófilos estão chegando (StatPearls, Wound Healing Phases).",
+   "C": "**É a janela do neutrófilo.** Nas primeiras 24 a 48 horas, é ele que faz a limpeza.",
+   "E": "**Depois do pico.** Em 14 dias, a proliferação está terminando (PMC5817091)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Wound Assessment (NBK482198)",
+   "StatPearls (NCBI Bookshelf), Wound Healing Phases (NBK470443)",
+   "Role of MicroRNA in Proliferation Phase of Wound Healing, PMC5817091"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1879": {
   "conceito": "No nariz asiático, o dorso baixo e a ponta arredondada resultam de cartilagens alares mais fracas, columela curta e tecido fibroadiposo abundante (PMC4174207; PubMed 20446203). Por isso, a rinoplastia de aumento com implante, muitas vezes de silicone, é tão comum nesses pacientes.\n\nAs revisões listam os riscos: infecção, desvio, extrusão e inflamação tardia, além de mau posicionamento e aumento excessivo (PMC4174207). Com a pele fina e uma cápsula que pode encurtar o nariz, a cirurgia secundária é difícil (PMC4174244). Numa estimativa, as complicações dos implantes de silicone chegam a 36% (PMC11099405).\n\nO **desvio** é um problema particularmente visível, porque o implante rígido fica sob uma pele fina, e o olho percebe qualquer assimetria do dorso.",
   "correta": "**C: desvio do implante.** É a alternativa da banca, e o desvio está entre as complicações citadas nas revisões (PMC4174207).",
@@ -31768,6 +31852,79 @@
    "Rhinoplasty for the Asian nose, PubMed 20446203",
    "Silicone-induced Capsular Flap in Secondary Asian Rhinoplasty, PMC4174244",
    "Secondary rhinoplasty using a folded dermofat graft, PMC11099405"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1880": {
+  "conceito": "Anomalias vasculares ficam mais simples quando se pergunta: é um tumor, que cresce, ou uma malformação, que acompanha a criança? E, se for malformação, ela tem fluxo baixo ou alto?\n\nOs **hemangiomas** são tumores. O infantil cresce rapidamente nos primeiros meses e depois involui; o congênito já nasce pronto, e sua forma de regressão rápida é exatamente a característica cobrada. Nas malformações, o par que todos confundem é este: a **KLIPPEL-TRENAUNAY** é uma condição puramente de **baixo fluxo**, enquanto a **PARKES WEBER** tem fístulas arteriovenosas significativas, ou seja, **alto fluxo**, e pior prognóstico (PMC5944310). A diferença muda o tratamento, e por isso a ressonância com angiografia ajuda a identificar o shunt (PubMed 15007616).\n\nA **STURGE-WEBER** tem o seu endereço na face: mancha em vinho do porto no território superior do rosto, malformação leptomeníngea e lesões da coroide com glaucoma (PMC3276916). Por isso, o item fala em V par e olho.",
+  "correta": "**D: 1-IV, 2-V, 3-III, 4-I, 5-II.** O infantil cresce rápido; o congênito regride rápido; STURGE-WEBER é V par e olho; KLIPPEL-TRENAUNAY tem baixo fluxo; PARKES WEBER, alto (PMC5944310; PMC3276916).",
+  "incorretas": {
+   "A": "**Tudo fora de lugar.** Por exemplo, coloca o alto fluxo no hemangioma infantil e o baixo fluxo na PARKES WEBER.",
+   "B": "**Regressão no lugar do crescimento.** Inverte os dois hemangiomas e coloca STURGE-WEBER nas extremidades.",
+   "C": "**Só acerta a PARKES WEBER no fluxo errado.** Liga STURGE-WEBER a crescimento rápido e troca o par do fluxo.",
+   "E": "**Só acerta o congênito.** Coloca os outros quatro itens em lugares errados, inclusive o V par na KLIPPEL-TRENAUNAY."
+  },
+  "referencias": [
+   "Klippel-Trenaunay and Parkes-Weber syndromes, PMC5944310",
+   "Parkes Weber or Klippel-Trenaunay, PubMed 15007616",
+   "Overlap of Sturge-Weber and Klippel-Trenaunay, PMC3276916"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1881": {
+  "conceito": "Lipoaspiração parece um procedimento pequeno, mas as complicações graves vêm de dois lados: a farmacologia da solução infiltrada e o trombo.\n\nSobre a **lidocaína**, o número mais famoso é o de 35 mg/kg, de KLEIN, para a técnica tumescente (PubMed 2179348). Mas ele é uma estimativa: há valores publicados entre 35 e 55 mg/kg, e estudos procuram definir melhor o limite (PMC8480448). Por isso, tratar 35 mg/kg como \"máximo\" absoluto não corresponde ao que a literatura mostra, e a banca marcou F.\n\nSobre a **trombose**, a associação com abdominoplastia aumenta o risco, como a banca afirma. E a **reposição** de 0,25 ml por ml aspirado segue uma regra clássica para grandes volumes.",
+  "correta": "**E: F, V, F, V, V.** É a sequência da banca. O limite de lidocaína não é fixo em 35 mg/kg (PMC8480448), e o risco de trombose cresce com a abdominoplastia.",
+  "alerta": "As fontes abertas consultadas confirmam a discussão sobre o limite de lidocaína, mas não encontramos nelas a taxa de 2% de trombose, a reposição de 0,25 ml por ml aspirado nem o uso de vancomicina. A sequência E foi mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Primeira afirmação.** Trata 35 mg/kg como limite fixo, e as publicações vão até 55 mg/kg (PMC8480448).",
+   "B": "**Nega a vancomicina e a reposição.** A banca considera as duas verdadeiras, e a última está certa, mas as outras não fecham.",
+   "C": "**Duas trocas.** Aceita o limite de 35 mg/kg e rejeita a última afirmação, que é a mais coerente da lista.",
+   "D": "**A mais próxima.** Só erra a última: a associação com abdominoplastia aumenta a trombose."
+  },
+  "referencias": [
+   "Klein JA, Tumescent technique permits lidocaine doses of 35 mg/kg, PubMed 2179348",
+   "Toxicity of Infiltrative Lidocaine in Dermatologic Surgery, PMC8480448",
+   "Liposuction, PMC2825130"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1882": {
+  "conceito": "Osteomielite embaixo de uma úlcera de pressão é a razão de muitos retalhos falharem, e o manejo é mais controverso do que parece. Uma revisão lembra que não há dados de que cursos de mais de 6 semanas funcionem melhor (PMC6594415), e outra série, em lesados medulares, mostrou que, com um bom desbridamento, é possível encurtar o antibiótico (PubMed 18812715). Uma estratégia frequente é em dois tempos: desbridar, tratar a ferida com pressão negativa e, depois, fazer o retalho, com antibiótico prolongado (PMC5894174).\n\nVale notar que a biópsia depois do desbridamento parece necessária para firmar o diagnóstico (PMC4551477). A banca cria um cenário intermediário: biópsia negativa, com cultura positiva. Se a histologia não confirma a osteomielite, trata-se de contaminação ou de infecção superficial, e não há motivo para semanas de tratamento antes da cobertura: faz-se a reconstrução eletiva, com antibiótico por tempo curto.",
+  "correta": "**D: reconstrução eletiva com retalho e ATB por 2 semanas.** É a escolha da banca para biópsia negativa com cultura positiva, um cenário de menor evidência de osso infectado, em que o tratamento mais curto é defensável (PMC6594415; PubMed 18812715).",
+  "alerta": "As fontes consultadas discutem a duração do antibiótico e sustentam cursos mais curtos com bom desbridamento, mas não trazem este algoritmo específico nem o prazo de 2 semanas. A letra D foi mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Atraso sem ganho.** Seis semanas de antibiótico e nova punção tratam uma osteomielite que a biópsia não demonstrou (PMC6594415).",
+   "B": "**Serve à osteomielite confirmada.** Com biópsia positiva, o raciocínio de tratamento prolongado e retalho tardio faz mais sentido (PMC5894174).",
+   "C": "**Curto demais para a banca.** Quarenta e oito horas ignoram a cultura positiva.",
+   "E": "**Longo sem motivo.** Não há evidência de que cursos muito longos sejam superiores (PMC6594415)."
+  },
+  "referencias": [
+   "Osteomyelitis Complicating Sacral Pressure Ulcers, PMC6594415",
+   "Truncated osteomyelitis treatment, PubMed 18812715",
+   "Pressure ulcer-related pelvic osteomyelitis: two-stage strategy, PMC5894174",
+   "Pressure Ulcer-Related Pelvic Osteomyelitis: A Neglected Disease, PMC4551477"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1883": {
+  "conceito": "Terceira cirurgia e ponta que caiu: o problema é de sustentação. Em uma revisão, a ponta nasal precisa de algo firme, e é aí que entra o **enxerto columelar**. Uma revisão de enxertos em rinoplastia secundária diz que ele deve ser usado para combater ou evitar a ptose da ponta (PMC3709529). Quando **fixo** à espinha nasal, ele dá apoio e aumenta a projeção; **flutuante**, sobre os tecidos moles, apenas mantém o que existe. Um estudo recente reforça que ele projeta somente quando o cirurgião o desenha com esse objetivo (PMC12385454).\n\nOutros detalhes da questão são pequenas armadilhas. O **enxerto expansor** (spreader) é colocado entre o septo e as cartilagens laterais superiores, justamente nos pacientes com risco de colapso da válvula interna (PMC4577541; StatPearls, Rhinoplasty). Na **ressecção cefálica**, a recomendação é deixar uma tira de pelo menos 5 mm (PMC3593677), e não 10 mm.",
+  "correta": "**A: os enxertos columelares fixos aumentam a projeção da ponta, enquanto os flutuantes apenas mantêm a projeção.** É o uso clássico do enxerto (PMC3709529; PMC12385454).",
+  "incorretas": {
+   "B": "**A causa não bate.** Sangramento grave após a turbinoplastia não é uma regra específica do corneto médio. A questão da via aérea costuma envolver o inferior.",
+   "C": "**São ramos da facial.** A labial superior nasce da artéria facial, que termina como angular (Netter's Clinical Anatomy, cap. 8), sem relação com a oftálmica.",
+   "D": "**É o oposto.** O colapso da válvula interna é a indicação clássica do enxerto expansor (PMC4577541; StatPearls, Rhinoplasty).",
+   "E": "**Número errado.** A recomendação é deixar ao menos 5 mm (PMC3593677). Exigir 10 mm impediria a maioria das ressecções."
+  },
+  "referencias": [
+   "Grafting in revision rhinoplasty, PMC3709529",
+   "New Insights into the Role of Columellar Strut, PMC12385454",
+   "Free spreader grafts in rhinoplasty, PMC4577541",
+   "Primary Rhinoplasty, PMC3593677",
+   "StatPearls (NCBI Bookshelf), Rhinoplasty (NBK558970)"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31817,6 +31974,77 @@
   "referencias": [
    "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 28 (Neuropatias compressivas), p. 1091, 1103, 1105 e 1113",
    "Barros Filho e Lech, Exame Físico em Ortopedia, 3ª ed. (2017), cap. 8 e 9"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1887": {
+  "conceito": "O monóxido de carbono é traiçoeiro: o paciente pode estar rosado e saturando bem no oxímetro comum, enquanto a hemoglobina não transporta oxigênio. A dose do tóxico é medida pela carboxi-hemoglobina, e cada faixa tem o seu quadro geral:\n\n| Nível | Quadro |\n|---|---|\n| 10% a 20% | sintomas inespecíficos: dor de cabeça, tontura, náusea |\n| 20% a 30% | a faixa da banca para sonolência e letargia |\n| acima de 30% | comprometimento neurológico, síncope, arritmias, isquemia |\n\nOs números são aproximados. Uma revisão lembra que os sintomas têm correlação ruim com o nível (PMC2907971), e outra destaca que o oxigênio na cena pode reduzir o valor antes de o paciente chegar ao hospital (PMC2396464). Por isso, o nível baixo não exclui uma exposição importante. O tratamento inicial é o oxigênio a 100%.",
+  "correta": "**C: 20-30%.** É a faixa intermediária, entre os sintomas inespecíficos de 10% a 20% e o comprometimento neurológico acima de 30% (PMC7746039).",
+  "alerta": "As fontes abertas consultadas não trazem uma tabela que ligue a sonolência exatamente a 20% a 30%, e os sintomas têm correlação fraca com o nível (PMC2907971). A letra C foi mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Baixo.** Em geral, nessa faixa não há sintomas importantes.",
+   "B": "**Sintomas iniciais.** Dor de cabeça, tontura e náusea são típicas (PMC7746039).",
+   "D": "**Já é mais grave.** Acima de 30%, surgem comprometimento neurológico e síncope (PMC7746039).",
+   "E": "**Mais grave ainda.** O quadro seria de grande risco, além da letargia descrita."
+  },
+  "referencias": [
+   "Carbon Monoxide Poisoning: The Great Imitator, PMC7746039",
+   "Carbon monoxide poisoning (acute), PMC2907971",
+   "Smoke Inhalation Lung Injury: An Update, PMC2396464"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1889": {
+  "conceito": "Em uma queimadura grande, o líquido não some: ele sai dos vasos para os tecidos, porque a permeabilidade capilar aumenta. Isso explica o edema e a hipovolemia ao mesmo tempo. Uma revisão descreve a perda de líquido para o tecido queimado e uma segunda fase, mais gradual, de 12 a 24 horas depois da lesão (PMC5214064).\n\nOutras fontes confirmam a janela: a hipovolemia intravascular e a hemoconcentração decorrem de edema maciço nas primeiras 12 a 24 horas (PMC3671671). Em queimaduras menores, o pico pode vir antes; o StatPearls cita de 8 a 12 horas (Parkland Formula). Por isso, o enunciado diz \"em grandes lesões\". A consequência prática é a reposição: o paciente precisa de mais volume exatamente nesse intervalo, e daí a fórmula dar metade do volume nas primeiras 8 horas.",
+  "correta": "**C: 12-24 horas.** É a janela de edema máximo citada nas revisões para as grandes queimaduras (PMC5214064; PMC3671671).",
+  "incorretas": {
+   "A": "**Fase inicial.** O edema está se formando, mas o pico é depois.",
+   "B": "**A mais próxima.** De 8 a 12 horas é o que o StatPearls cita em geral (Parkland Formula), mas a pergunta fala de grandes lesões, em que a janela vai além.",
+   "D": "**Depois do pico.** Em 2 dias, a permeabilidade já está se normalizando.",
+   "E": "**Tarde demais.** Em 5 dias, o edema está sendo reabsorvido."
+  },
+  "referencias": [
+   "Burns: Pathophysiology of Systemic Complications, PMC5214064",
+   "Curbing Inflammation in Burn Patients, PMC3671671",
+   "StatPearls (NCBI Bookshelf), Parkland Formula (NBK537190)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1890": {
+  "conceito": "Tirar tecido queimado sangra muito, e planejar quanto sangue vai ser perdido define o tamanho de cada cirurgia. Um estudo prospectivo com 28 pacientes encontrou **100 ml para cada 1% de superfície corporal retirada** e relata que a maioria dos centros limita cada sessão a **10% a 20% da superfície** (PMC7049563). Essas são exatamente as afirmações I e II.\n\nVale ser honesto com os números: outras estimativas chegam a 200 a 250 ml por 1% (PMC9900031). Eles variam com a técnica, e não são lei.\n\nE a afirmação III? Quase toda ela está correta: torniquetes, curativos compressivos, eletrocautério e agentes hemostáticos. O detalhe está no fim: a injeção de epinefrina diluída é **subcutânea**, e não submuscular (PMC7049563), para reduzir o sangramento no plano da retirada. Um único adjetivo invalida a frase.",
+  "correta": "**D: apenas I e II.** Ambas têm respaldo em estudo clínico (PMC7049563). A III erra o plano da epinefrina.",
+  "incorretas": {
+   "A": "**Falta a II.** O limite de 10% a 20% por sessão é uma prática habitual dos centros (PMC7049563).",
+   "B": "**A III está errada.** A injeção de epinefrina é subcutânea (PMC7049563).",
+   "C": "**Só a afirmação falsa.** Exclui as duas verdadeiras.",
+   "E": "**O detalhe da III.** A banca conta com quem lê a lista e não presta atenção à palavra \"submuscular\"."
+  },
+  "referencias": [
+   "Serum albumin level difference in burn injury after tangential excision, PMC7049563",
+   "Reduced Intraoperative Blood Loss in Burn Surgery, PMC9900031"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1891": {
+  "conceito": "A queimadura grave é a maior agressão metabólica que o corpo pode sofrer. Com a hipermetabolia, a demanda calórica sobe tanto que muitos doentes não conseguem comer o suficiente, e a sonda se torna necessária. O início dentro de 24 horas é a recomendação comum (PMC3900018; PMC12641372).\n\nE a partir de que área? As fontes dão um limite de referência, sem consenso: os ensaios clínicos usaram 20%, 30% ou mais, e um estudo de Delphi afirma que as diretrizes nem explicam como adaptar a conduta a queimaduras de 20% ou 40% (PMC12784516). Em uma série retrospectiva, todos os doentes intubados com 20% ou mais começaram a dieta em menos de 24 horas, de forma segura (PMC8945782). É daí que vem a resposta didática de 20%.",
+  "correta": "**B: 20% SCQ.** É o corte didático adotado pela banca, compatível com os estudos sobre queimaduras acima de 20% (PMC8945782; PMC12641372).",
+  "alerta": "As fontes abertas não trazem o corte de 20% como regra formal de diretriz, e um estudo de Delphi aponta essa falta (PMC12784516). A decisão depende também da capacidade de comer. Letra B mantida.",
+  "incorretas": {
+   "A": "**Ainda abaixo do corte.** Há estudos em crianças de 15% a 30% (PMC11958579), mas não é esse o limite em adultos.",
+   "C": "**Sem correspondência.** Os cortes dos ensaios não ficam em 25%.",
+   "D": "**Alguns estudos usaram.** O corte de 30% apareceu em ensaios (PMC12641372), mas a banca escolheu o menor.",
+   "E": "**Espera demais.** Nessa extensão, a sonda já é indiscutível, e esperar até lá deixaria muitos doentes sem suporte."
+  },
+  "referencias": [
+   "Early Enteral Nutrition for Burn Injury, PMC3900018",
+   "Early versus delayed enteral nutrition for burn injuries, PMC12641372",
+   "Early enteral nutrition management: a Delphi study, PMC12784516",
+   "Enteral Nutrition During Burn Surgery, PMC8945782",
+   "Supplemental Nutrition Support in Pediatric Burns, PMC11958579"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
