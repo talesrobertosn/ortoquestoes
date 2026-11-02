@@ -46,7 +46,8 @@ export function usarDetalhes({ indice, marcadas, limite, meta }: {
     if (indice) for (const q of indice.questoes) {
       if (q.an || q.dup) continue
       validas++
-      infoPorId.set(q.id, { prova: q.p === null ? '' : indice.provas[q.p] ?? '', area: q.ar })
+      // Questão do ENARE que também é do treino da mão conta em Cirurgia da mão, como antes do filtro único.
+      infoPorId.set(q.id, { prova: q.p === null ? '' : indice.provas[q.p] ?? '', area: q.ar === 'enare' && q.aa?.includes('mao') ? 'mao' : q.ar })
     }
     // Eventos do período; a primeira tentativa de cada questão é a primeira de sempre (não a do período).
     const eventos: Array<Evento & { primeira: boolean }> = []

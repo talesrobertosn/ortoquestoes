@@ -86,8 +86,12 @@ cita o livro lido.
 Alertas nas divergências: 1853 (Wang e Yao tratam a ausência de extensor em hipodesenvolvimento), 1863 (Green: paroníquia
 é a mais comum da mão; gabarito de 2023 é o preliminar), 1865 (ordem completa dos dedos não está no Green), além de 1894, 1896 e 1897.
 
-**Falta com livro local:** pediatria-1057 a 1077 (Tachdjian); trauma-1725, 1727, 1728, 1732, 1736 (Rockwood); mao-1811 a 1814, 1820,
-1823, 1824, 1835, 1842, 1843, 1847, 1848, 1850 e 1851 (2022), 1884 e 1870 (2023), 1924 e 1927 (2025), que ainda precisam de leitura.
+**Lotes 02 a 04 aplicados** (`lotes/enare/enare_02.py` a `enare_04.py`): 15 de pediatria, 4 de trauma e 8 de mão (mao-1811, 1812, 1813, 1820, 1842, 1843, 1850, 1884).
+Alertas: pediatria-1061, 1063, 1066, 1067, 1068, 1069, 1075, 1076; trauma-1727, 1728, 1736; mao-1813, 1820, 1843.
+
+**Sem fonte nos livros locais, pedir livro:** pediatria-1057 (limites de angulação do antebraço aos 5 anos), pediatria-1074 (classificação de GOLDBERG),
+trauma-1732 (método de PECORELLI e DELLA TORRE). Faltam conferir nos livros: mao-1814, 1823, 1824, 1835, 1847, 1848, 1851, 1870, 1912, 1913, 1924, 1927 e 1928.
+O Green 7ª ed. (2017, em inglês) entrou na pasta em 02/11/2026, apelido `green7` em `scripts/livros.py`; não traz plástica geral.
 
 **Falta sem livro local:** a cirurgia plástica geral (mama, face, rinoplastia, orelha, queimadura sistêmica, melanoma e pele).
 Não há livro de plástica na biblioteca; pedir ao Tales. As 56 já comentadas antes (mediana de 1.343 caracteres no conceito) entram depois.
