@@ -7902,7 +7902,7 @@
   },
   {
    "id": "rockwoodcriancas10-07-patologicas-maus-tratos",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas patológicas e maus-tratos na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -7910,7 +7910,7 @@
    "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
    "resumo": "Cisto ósseo simples e aneurismático, fibroma não ossificante, displasia fibrosa, osteogênese imperfeita, escorbuto e fraturas nas doenças neuromusculares; nos maus-tratos, KLEINMAN (metafisária clássica, costela posterior, escápula, processo espinhoso, esterno), inventário esquelético abaixo de 2 anos repetido em 2 semanas, equimoses, queimaduras, fêmur e conduta.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 29,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7948,6 +7948,56 @@
      "radar": "oportunidade"
     },
     {
+     "id": "maus-tratos-em-numeros-definicao-familias-e-cria",
+     "titulo": "Maus-tratos em números: definição, famílias e crianças em risco",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-historia-que-nao-fecha-e-o-exame-da-cabeca-aos",
+     "titulo": "A história que não fecha e o exame da cabeça aos pés",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-osso-conta-o-mecanismo-pierce-king-e-os-ossos-",
+     "titulo": "O osso conta o mecanismo: PIERCE, KING e os ossos longos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "locais-incomuns-escapula-acromio-maos-e-pes",
+     "titulo": "Locais incomuns: escápula, acrômio, mãos e pés",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lesao-metafisaria-classica-por-dentro",
+     "titulo": "Lesão metafisária clássica por dentro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "costelas-e-coluna-o-torax-apertado-e-a-crianca-s",
+     "titulo": "Costelas e coluna: o tórax apertado e a criança sacudida",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "inventario-esqueletico-datacao-e-exames-de-labor",
+     "titulo": "Inventário esquelético, datação e exames de laboratório",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-que-imita-maus-tratos-e-o-que-nao-exclui",
+     "titulo": "O que imita maus-tratos e o que não exclui",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "internar-notificar-e-depor",
+     "titulo": "Internar, notificar e depor",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fraturas-patologicas-os-detalhes-que-decidem-a-c",
+     "titulo": "Fraturas patológicas: os detalhes que decidem a conduta",
+     "radar": "oportunidade"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -7967,7 +8017,10 @@
     "pediatria-0422",
     "pediatria-0478",
     "pediatria-0146",
-    "pediatria-0327"
+    "pediatria-0327",
+    "pediatria-0881",
+    "pediatria-0959",
+    "pediatria-0361"
    ],
    "treino": [
     "pediatria-1196",
