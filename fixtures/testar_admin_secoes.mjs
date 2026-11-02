@@ -69,6 +69,11 @@ try {
   assert.equal(ida('aba=geral'), '/admin')
   for (const antigo of ['aba=geral', 'aba=hoje', 'aba=agora', 'aba=configuracoes', 'aba=avaliacoes', 'aba=receita', 'aba=previsao', 'aba=xyz']) assert.ok(m.urlAntiga(new URLSearchParams(antigo)), antigo)
   for (const atual of ['', 'aba=usuarios&filtro=novos', 'aba=lembretes', 'aba=todas', 'aba=ajustes', 'aba=simulados', 'aba=cartas', 'aba=conteudo&vista=relatos', 'aba=financeiro&sub=previsao']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
+  // Abas antigas de Crescimento viram os itens próprios do menu.
+  assert.equal(ler('aba=crescimento&sub=retencao').parte, 'retencao')
+  assert.equal(ler('aba=crescimento&sub=perfis').parte, 'perfis')
+  assert.ok(m.urlAntiga(new URLSearchParams('aba=crescimento&sub=perfis')))
+  assert.equal(ler('aba=crescimento').parte, 'crescimento')
   assert.deepEqual(m.AREAS.map(a => m.partePadrao(a.id)), ['comando', 'usuarios', 'crescimento', 'financeiro', 'conteudo', 'lembretes', 'ajustes'])
 
   // ---------- Financeiro › Ganhos ----------

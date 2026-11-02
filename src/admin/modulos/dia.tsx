@@ -67,7 +67,7 @@ export function LinhaDoDia({ quadro }: { quadro: ReturnType<typeof quadroDoDia<L
   const estudo = useMemo(() => ({ pessoas: quadro.estudaram.length, questoes: quadro.estudaram.reduce((t, f) => t + (f.questoes ?? 0), 0) }), [quadro])
   const resumoEstudo = estudo.pessoas > 0 && <p className="a3-tempo__resumo">
     <b>{inteiro(estudo.pessoas)}</b> {estudo.pessoas === 1 ? 'pessoa estudou' : 'pessoas estudaram'} hoje{estudo.questoes > 0 && <>, <b>{inteiro(estudo.questoes)}</b> {estudo.questoes === 1 ? 'questão' : 'questões'}</>}
-    {' '}<a href="#a3-listas" className="a3-link">ver quem</a>
+    {' '}<a href="#a3-listas" className="a3-link" onClick={e => { e.preventDefault(); document.getElementById('a3-listas')?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>ver quem</a>
   </p>
   return <Painel titulo="Linha do dia" descricao="Cadastros e dinheiro de hoje, do mais recente ao mais antigo. O estudo aparece somado." justo={false}>
     {!p.usuarios ? <Carregando linhas={4} /> : !eventos.length ? <>{resumoEstudo}<Estado compacto icone="relogio" titulo="Nenhum cadastro ou pagamento hoje" texto="A linha se preenche sozinha a cada atualização." /></> : <>

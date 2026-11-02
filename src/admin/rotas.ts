@@ -127,7 +127,10 @@ export function lerUrl(consulta: URLSearchParams): EstadoUrl {
   const vistaLegada = bruta === 'avaliacoes' || bruta === 'relatos' ? bruta : null
   const id = consulta.get('id')
   const periodo = Number(consulta.get('periodo')) as Periodo
-  const parte: Parte = PARTES.has(bruta as Parte) ? bruta as Parte : LEGADO[bruta] ?? 'comando'
+  let parte: Parte = PARTES.has(bruta as Parte) ? bruta as Parte : LEGADO[bruta] ?? 'comando'
+  // Crescimento já foi tela com abas (?aba=crescimento&sub=retencao); essas abas hoje são itens próprios do menu.
+  const subAntiga = consulta.get('sub')
+  if (parte === 'crescimento' && (subAntiga === 'retencao' || subAntiga === 'perfis')) parte = subAntiga
   // A aba vem de ?sub=… ou do endereço antigo que apontava direto para ela (?aba=previsao, retencao, aviso…).
   const abas = abasDe(parte).map(a => a.id)
   const sub = [consulta.get('sub'), bruta].find(x => abas.includes(x as Parte)) as Parte | undefined
