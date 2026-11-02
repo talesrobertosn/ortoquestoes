@@ -58,10 +58,10 @@ export const AREAS: DefArea[] = [
     { id: 'opinioes', rotulo: 'Opiniões dos flashcards', pergunta: 'O que as pessoas dizem do som, do visual, do desempenho e do conteúdo.' },
   ] },
   { id: 'comunicacao', rotulo: 'E-mails', curto: 'E-mails', icone: 'carta', partes: [
-    { id: 'lembretes', rotulo: 'Lembretes', pergunta: 'Os lembretes prontos: para quem, prévia e envio.' },
+    { id: 'lembretes', rotulo: 'Lembretes', pergunta: 'O que está pendente para enviar: tudo de uma vez ou campanha por campanha.' },
     { id: 'cartas', rotulo: 'Cartas pessoais', pergunta: 'Uma carta escrita para cada pessoa de um grupo, com prévia e revisão.' },
-    { id: 'envios', rotulo: 'Relatórios e histórico', pergunta: 'Relatório mensal, e-mails automáticos e tudo o que já saiu.' },
-    { id: 'todas', rotulo: 'Todas as cartas', pergunta: 'Todas as cartas do site, com amostra viva, variações e prévia.' },
+    { id: 'envios', rotulo: 'Enviados', pergunta: 'Tudo o que já saiu, o relatório mensal e os e-mails automáticos.', antes: 'Relatórios e histórico' },
+    { id: 'todas', rotulo: 'Modelos', pergunta: 'Todos os modelos de carta do site, com amostra, variações e prévia. Nada sai daqui.', antes: 'Todas as cartas' },
   ] },
   { id: 'configuracoes', rotulo: 'Ajustes', curto: 'Ajustes', icone: 'ajustes', partes: [
     { id: 'ajustes', rotulo: 'Ajustes', pergunta: 'Limite gratuito, recursos pagos, pagamentos e o aviso no topo do site.' },
@@ -72,7 +72,7 @@ export const AREAS: DefArea[] = [
 /** Abas dentro de uma tela: a primeira é a padrão. O nome e a pergunta de cada aba ficam aqui. */
 const ABAS_DE: Partial<Record<Parte, DefParte[]>> = {
   financeiro: [
-    { id: 'financeiro', rotulo: 'Resumo', pergunta: 'Quanto entrou de fato, como se compõe e como se compara.' },
+    { id: 'financeiro', rotulo: 'Recebido', pergunta: 'Quanto entrou de fato, como se compõe e como se compara.' },
     { id: 'previsao', rotulo: 'Previsão', pergunta: 'O que deve entrar, com as hipóteses à vista; nunca somado ao que já entrou.' },
   ],
   ajustes: [

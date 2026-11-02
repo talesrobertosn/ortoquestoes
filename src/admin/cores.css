@@ -270,3 +270,16 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .a3-enviar-tudo__etapa, .a3-enviar-tudo__fim, .a3-enviar-tudo__regras { grid-column: 1 / -1; margin: 0; }
 .a3-botao--grande { min-height: 48px; padding: 0 22px; font-size: 15.5px; }
 @media (max-width: 640px) { .a3-enviar-tudo { grid-template-columns: 1fr; padding: 16px; } .a3-enviar-tudo .a3-botao--grande { width: 100%; justify-content: center; } }
+
+/* ───────── Fase 3 (02/11/2026): menos andares no celular ───────── */
+@media (max-width: 640px) {
+  /* A barra de cima já diz a área e a tela: o título grande não se repete (continua para leitores de tela). */
+  .a3-cabeca .a3-cabeca__texto > .a3-rotulo { display: none; }
+  .a3-cabeca .a3-cabeca__texto > h1.a3-titulo-1 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .a3-cabeca .a3-cabeca__texto > p { margin-top: 0; font-size: 14px; }
+  /* As abas do topo mostram que continuam à direita. */
+  .a3-movel-partes { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); padding-right: 40px; }
+  /* Filtros de lista: compactos, dois por linha, borda contínua. */
+  .a3-filtros label.a3-filtro { border-style: solid; font-size: 12.5px; padding: 0 10px; }
+}
+.a3-filtros label.a3-filtro { border-style: solid; }

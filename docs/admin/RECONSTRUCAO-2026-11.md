@@ -172,3 +172,23 @@ Base: `docs/admin/DIAGNOSTICO-UX-2026-11-02.md`. Só tela; nada muda no banco ne
   dois filtros úteis ("Precisam de você", "Tudo certo") e o título sem repetir.
 - Erros de texto: "Confirmado Confirmado" no Extrato, "Pix · cartão" invertido no Resumo, e os textos dos interruptores
   de Ajustes que descreviam o estado oposto.
+
+## Revisão de 02/11/2026 (autonomia total do Tales): e-mails, Crescimento, fase 2 e fase 3
+
+- **E-mails que travavam.** O servidor buscava só o tamanho do lote; quem estava segurado (descadastro ou cadência)
+  voltava sempre no começo da fila e travava o envio dos outros, e o resumo quinzenal (pesado por pessoa) estourava
+  o tempo da tela. Agora a função busca uma janela grande (200 lembretes, 500 relatórios), pula os segurados sem parar
+  e encerra cada chamada em 40 s, dizendo se ainda resta gente. Vale depois de colar `enviar-email` no Supabase.
+- **Enviar tudo** em Lembretes: um botão manda tudo o que está pendente (Pix termina hoje, Pix 3 dias, Primeira
+  missão, Fogueira apagando, Retomar a jornada e o resumo quinzenal), uma campanha de cada vez. As travas do servidor
+  continuam: descadastro, 48 h entre e-mails, 3 em 14 dias, uma vez por ausência.
+- **Crescimento** abre em "Desde sempre" (corta no primeiro dia com cadastro ou estudo); "30 dias" é a segunda opção.
+  Trocar de tela volta ao período padrão de cada tela.
+- **Fase 2 (parte 36).** `assinaturas.motivo_falha/falha_em` e `eventos_pagamento.id_usuario`; o webhook anota à parte
+  (PATCH separado que nunca lança erro) o `status_detail` da recusa e de quem é o aviso. O painel traduz o motivo
+  ("Saldo ou limite insuficiente", "O banco pediu para a pessoa autorizar a compra"…) com o que costuma resolver.
+  Recusas antigas aparecem como "motivo não registrado".
+- **Fase 3.** No celular, a barra de cima é o título (o grande não se repete) e as abas mostram que continuam à
+  direita. A fonte dos gráficos (nome da consulta) foi para "Ver dados". E-mails: Lembretes, Cartas pessoais,
+  Enviados e Modelos (a busca acha pelos nomes antigos); rótulos internos ("parte 31", "sem SQL") saíram.
+  Financeiro › Resumo tem as abas Recebido e Previsão.
