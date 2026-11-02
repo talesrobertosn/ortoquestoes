@@ -92,6 +92,7 @@ export default function Inicio() {
   const [filtro, definirFiltro] = useState<Filtro>('todos')
   const [foraEscolhida, definirFora] = useState<Fora | null>(null)
   const [busca, definirBusca] = useState('')
+  const [foraTodos, definirForaTodos] = useState(false)
   const [, recontar] = useState(0)
   useEffect(() => { carregarIndiceBiblioteca().then(i => { registrarTitulosResumos(i.capitulos); recontar(k => k + 1) }).catch(() => undefined) }, [])
   const sinaisLista = Array.isArray(p.sinaisQ.dados) ? p.sinaisQ.dados : null
@@ -185,7 +186,12 @@ export default function Inicio() {
         {(() => {
           const lista = g.fora[fora]
           if (!lista.length) return <div style={{ padding: 20 }}><Estado compacto icone="certo" titulo={fora === 'ausentes' ? 'Todos os assinantes entraram hoje.' : semSinais ? 'Sinal de planos indisponível.' : fora === 'saiu' ? 'Ninguém viu os planos hoje e saiu.' : 'Ninguém nos últimos 30 dias.'} /></div>
-          return <ul className="a3-pessoas-lista">{lista.slice(0, 30).map(u => <LinhaFora key={u.id_usuario} u={u} tipo={g.tipoDe(u)} />)}</ul>
+          const vistos = foraTodos ? lista : lista.slice(0, 30)
+          return <>
+            <ul className="a3-pessoas-lista">{vistos.map(u => <LinhaFora key={u.id_usuario} u={u} tipo={g.tipoDe(u)} />)}</ul>
+            {lista.length > 30 && <div className="a3-paginacao"><span>{vistos.length} de {lista.length}</span>
+              <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirForaTodos(v => !v)}>{foraTodos ? 'Mostrar só os 30 primeiros' : `Ver todos os ${lista.length}`}</button></div>}
+          </>
         })()}
       </section>
     </>}
