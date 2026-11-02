@@ -6605,34 +6605,36 @@
  },
  "ombro-cotovelo-0472": {
   "incorretas": {
-   "A": "**Anterolateral não é o sítio clássico.** Na luxação posterior, o defeito fica mais medial na face anterior.",
-   "C": "**Posterolateral descreve a Hill-Sachs clássica.** Ela acompanha a luxação anterior, não a posterior.",
-   "D": "**Posteromedial inverte a face atingida.** A borda posterior da glenoide imprime a face anteromedial da cabeça."
+   "A": "**Anterolateral troca o lado medial do defeito.** Embora a face anterior participe da impactação, a localização clássica da lesão é anteromedial, não anterolateral.",
+   "C": "**Posterolateral é a Hill-Sachs clássica.** Esse defeito acompanha a luxação anterior do ombro e pode ser confundido com a versão reversa se a direção da luxação não for considerada.",
+   "D": "**Posteromedial coloca a lesão na face errada da cabeça.** Na luxação posterior, quem encontra a borda posterior da glenoide é a superfície anteromedial da cabeça umeral."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "referencias": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7718575/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7718575/",
+   "https://www.mdpi.com/2077-0383/13/7/2085"
   ],
-  "conceito": "**Na luxação posterior, a marca fica na frente da cabeça umeral.** Ao deslocar-se para trás, a cabeça impacta sua face anteromedial contra a borda posterior da glenoide. Esse defeito é a lesão de McLaughlin, também chamada de Hill-Sachs reversa. Vale contrastá-la com a luxação anterior, que produz a lesão de Hill-Sachs na face posterolateral da cabeça.",
-  "correta": "**B, porção anteromedial (resposta provável).** É o local da impactação característica da luxação posterior.",
+  "conceito": "**A lesão de McLaughlin é a impactação anteromedial da cabeça umeral na luxação posterior do ombro.** Quando a cabeça se desloca para trás, sua superfície anterior e medial encontra a borda posterior da glenoide. A depressão óssea resultante também recebe o nome de Hill-Sachs reversa. Portanto, para localizar o defeito, é preciso identificar primeiro a direção da luxação e depois a face da cabeça que bate na glenoide, não a direção para a qual a cabeça se deslocou.\n\nO contraste que resolve as alternativas é a Hill-Sachs habitual da luxação anterior: nesse caso, a impactação ocorre na região posterolateral da cabeça umeral, contra a borda anterior da glenoide. Os nomes parecidos não indicam a mesma topografia. Uma luxação posterior pode passar despercebida em radiografia anteroposterior isolada; quando há suspeita clínica, incidência axilar ou imagem seccional ajuda a caracterizar o alinhamento e o defeito ósseo. Essa observação reforça o mecanismo, mas a questão pede somente a localização.",
+  "correta": "**B, porção anteromedial (resposta provável).** É a área comprimida contra a borda posterior da glenoide na luxação posterior, formando a lesão de McLaughlin ou Hill-Sachs reversa.",
+  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "provavel": "B",
-  "geradoEm": "2026-10-17",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0473": {
   "incorretas": {
-   "A": "**O complexo colateral lateral inicia a sequência.** Portanto, o colateral radial não é a última estrutura lesada.",
-   "B": "**A cápsula é acometida antes da ruptura medial completa.** A cápsula posterior não encerra a progressão.",
-   "C": "**A banda posterior cede antes da anterior.** É justamente a persistência da banda anterior que distingue a etapa medial anterior à ruptura completa."
+   "A": "**O colateral radial pertence ao complexo lateral.** Nesse modelo, o comprometimento lateral abre a sequência de instabilidade e antecede a lesão medial avançada. O componente ulnar lateral é especialmente importante para a instabilidade rotatória posterolateral.",
+   "B": "**A cápsula posterior é acometida antes da banda anterior medial.** A propagação capsular integra o estágio intermediário, de modo que sua lesão não encerra o círculo de Horii.",
+   "C": "**A banda posterior medial pode romper no estágio 3A.** Nessa fase, a banda anterior ainda pode servir de pivô; por isso a posterior não é a última das duas bandas mediais listadas."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "referencias": [
-   "https://www.actaorthopaedica.be/assets/415/10675934.pdf"
+   "https://www.actaorthopaedica.be/assets/415/10675934.pdf",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5444606/"
   ],
-  "conceito": "**O círculo de Horii progride de lateral para medial.** Na instabilidade rotatória posterolateral, rompe-se primeiro o complexo colateral lateral, particularmente o ligamento colateral ulnar lateral. A lesão avança pela cápsula e alcança o complexo colateral medial. A banda anterior do colateral medial pode permanecer íntegra mesmo quando o cotovelo já luxou: ela é o último elemento do padrão sequencial clássico a se romper.",
-  "correta": "**D, banda anterior do ligamento colateral medial (resposta provável).** Sua ruptura caracteriza o comprometimento medial mais avançado no círculo de Horii.",
+  "conceito": "**No círculo de Horii, a lesão ligamentar progride de lateral para medial.** O estágio inicial compromete o complexo colateral lateral, sobretudo seu componente ulnar lateral, e permite subluxação rotatória posterolateral. Com maior energia, a lesão se propaga pela cápsula anterior e posterior e alcança o lado medial. No estágio 3A, até a banda posterior do ligamento colateral medial pode estar rompida, mas sua banda anterior ainda funciona como ponto de rotação. A ruptura dessa banda caracteriza o estágio 3B, com perda mais ampla da estabilidade em varo, valgo e rotação.\n\nAssim, entre as quatro estruturas listadas, a banda anterior medial é a última na sequência **clássica descrita para esse mecanismo**. Isso não significa que toda luxação real siga obrigatoriamente a mesma ordem: estudos de imagem e outros modelos de trauma descrevem lesões que começam medialmente. A resposta provável se apoia no modelo de instabilidade rotatória posterolateral pressuposto pelo enunciado, não em uma regra universal para qualquer luxação do cotovelo.",
+  "correta": "**D, banda anterior do ligamento colateral medial (resposta provável).** Ela pode permanecer íntegra mesmo após a luxação do estágio 3A; sua ruptura marca a progressão ao estágio 3B do círculo de Horii.",
+  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "provavel": "D",
-  "geradoEm": "2026-10-17",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0474": {
