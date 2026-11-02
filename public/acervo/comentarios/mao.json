@@ -1,13 +1,19 @@
 {
  "mao-0001": {
+  "conceito": "Quando um nervo é interrompido por inteiro, a pele que ele serve deixa de receber a ordem de suar, de arrepiar e de manter o calibre dos vasos. É o ramo autonômico do exame, e ele inverte a intuição de quem espera que a pele \"descontrole\" e fique molhada.\n\n**O que o livro diz.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2982), descreve a perda da sudorese, do reflexo pilomotor e da paralisia vasomotora na zona autônoma, e acrescenta que a área de anidrose geralmente corresponde ao déficit sensitivo, mas pode ser ligeiramente maior. O capítulo 73 (p. 3256) dá o tempo: a área desnervada fica sem suor em cerca de 30 minutos. O Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 987), chama de sinal quase infalível nas primeiras 48 horas a pele quente e seca no território do nervo, e diz que a paralisia simpática é sinal seguro de interrupção de axônios.\n\n**Por que a área é igual ou maior.** A zona de perda sensitiva completa é a zona autônoma, a que só aquele nervo supre. A anidrose acompanha esse território e pode extrapolá-lo um pouco, como diz o Campbell. Daí a frase do enunciado: igual ou maior, nunca menor.\n\n**Como se desenha.** Teste do amido e iodo, impressão com ninidrina, resistência da pele e o teste do enrugamento, em que a pele desnervada não enruga na água.\n\nA seção \"O exame do nervo lesado\" do resumo reúne o sinal e as demais zonas sensitivas.",
+  "correta": "**A) anidrose em uma área geralmente igual ou maior que o déficit sensitivo.** É a descrição do Campbell: a pele desnervada deixa de suar na zona autônoma, e a área seca pode ser um pouco maior que a da perda sensitiva.",
   "incorretas": {
-   "B": "A extensão está invertida: quem tem grande sobreposição é a sensibilidade, e por isso é a área sensitiva que parece menor, não a área seca.",
-   "C": "Hiper-hidrose (suor excessivo) indica irritação simpática, como na síndrome de dor regional complexa, e não secção completa do nervo.",
-   "D": "Erra nos dois pontos: na secção completa não há hiper-hidrose, e a área autonômica não é menor que a sensitiva."
+   "B": "**Anidrose em área igual ou menor** acerta o sinal e erra o tamanho: o Campbell diz que a anidrose corresponde ao déficit sensitivo ou o ultrapassa um pouco, e não que fique contida dentro dele.",
+   "C": "**Hiper-hidrose em área igual ou maior** descreve o oposto da lesão completa. A sudorese excessiva aparece na lesão incompleta, sobretudo com causalgia, e não na interrupção total do nervo.",
+   "D": "**Hiper-hidrose em área igual ou menor** soma dois erros: troca a anidrose da lesão completa por sudorese excessiva, que é da lesão incompleta dolorosa, e ainda reduz a área em relação ao déficit sensitivo."
   },
-  "conceito": "Um nervo periférico, como o mediano ou o ulnar, não leva só fibras de **sensibilidade** e de **movimento**. Dentro dele correm também fibras do **sistema nervoso autônomo simpático**, que controlam as **glândulas de suor** (fibras sudomotoras), o calibre dos vasos (vasomotoras) e o arrepio dos pelos (pilomotoras).\n\n**Quando o nervo é seccionado por completo**, todas essas fibras param de funcionar ao mesmo tempo no território dele:\n\na pele perde a sensibilidade;\n\nas glândulas sudoríparas param: a pele fica **seca**, o que se chama **anidrose**;\n\nno início a pele fica quente (os vasos dilatam), e depois fria e pálida;\n\ncom o tempo, surgem alterações tróficas: pele lisa e brilhante, unhas alteradas e polpa do dedo atrofiada.\n\n**Por que a área seca é igual ou maior que a área sem sensibilidade**: a sensibilidade de um nervo tem muita **sobreposição** com a dos nervos vizinhos, que \"invadem\" as bordas do território e fazem a área insensível parecer menor. A inervação simpática sobrepõe bem menos. Por isso a **área anidrótica fica igual ou maior** que o déficit sensitivo.\n\n**Utilidade clínica**: a falta de suor pode ser testada objetivamente, sem depender da colaboração do paciente (útil em crianças), pelo **teste da ninidrina** ou pelo **teste do enrugamento**: a pele de um dedo desnervado **não enruga** quando fica muito tempo na água.\n\n**Na prova**: na lesão completa de nervo periférico há anidrose numa área igual ou maior que o déficit sensitivo.",
-  "correta": "Sem as fibras simpáticas, a glândula sudorípara para e surge anidrose, numa área igual ou maior que a sensitiva, porque a sobreposição simpática é pequena.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2982",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73 (Nerve Injuries at the Level of the Hand and Wrist), p. 3256",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), p. 987",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0002": {
@@ -39,19 +45,19 @@
   "conferido": false
  },
  "mao-0004": {
+  "conceito": "O plexo braquial avulsionado nas raízes altas deixa o paciente sem flexão do cotovelo, e a primeira prioridade da reconstrução é devolvê-la. A cirurgia de OBERLIN é a resposta mais direta a esse problema, e o nome dela é cobrado pelo que ela tira de onde e leva para onde.\n\n**A transferência.** Pelo Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1166), OBERLIN leva um fascículo motor do nervo ulnar para o ramo motor do bíceps, nas lesões de C5 e C6 com C8 e T1 preservados. É fácil, confiável e substituiu os intercostais nessa indicação. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2997), a chama de a primeira neurotização desse tipo, descrita em 1994.\n\n**Por que o ulnar pode ceder um fascículo.** A segregação funcional do nervo, descrita por SUNDERLAND, agrupa as fibras por destino ao longo do tronco. No braço, os fascículos posteromediais do ulnar levam fibras para os flexores do antebraço e os anterolaterais, para os intrínsecos da mão. O cirurgião escolhe o fascículo que, estimulado, flete o punho sem acionar a mão: perde-se pouco e ganha-se o bíceps, com o doador cortado perto do músculo-alvo.\n\n**O que é preciso conferir.** C8 e T1 intactos, porque são eles que formam o ulnar.\n\nO plexo e suas prioridades estão na seção \"Plexo braquial: prioridades e transferências\" do resumo.",
+  "correta": "**C) fascículo do nervo ulnar para o ramo motor do musculocutâneo.** É a definição da transferência de OBERLIN: um fascículo do ulnar, escolhido pela segregação funcional, reinerva o músculo que flete o cotovelo.",
   "incorretas": {
-   "A": "**Frênico para subescapular não identifica Oberlin.** A alternativa troca o doador ulnar e o receptor para o bíceps. A escolha de outro nervo em uma reconstrução do plexo não muda a definição da transferência clássica cobrada.",
-   "B": "**Acessório para supraescapular é uma transferência dirigida ao ombro.** É um par utilizado na reconstrução do plexo, mas o músculo-alvo e a função recuperada diferem da transferência ulnar-bíceps.",
-   "D": "**O receptor é compatível, mas o doador está errado.** Na Oberlin clássica utiliza-se um fascículo ulnar. Um exemplo distinto de uso do radial é a transferência de ramo motor do tríceps ao axilar, dirigida à função do ombro."
+   "A": "**Frênico para o subescapular** usaria um nervo de função vital para um alvo de menor importância, o que o Green desaconselha ao tratar das transferências nervosas.",
+   "B": "**Acessório para o supraescapular** é uma transferência real e muito usada, mas devolve abdução do ombro, não a flexão do cotovelo. O Green cita abdução antigravitacional em 92% com ela; não é a cirurgia de OBERLIN.",
+   "D": "**Fascículo do radial para o musculocutâneo** não está nos livros lidos como técnica nomeada. O doador de OBERLIN é o ulnar, e o Campbell cita o fascículo do ulnar, e depois o do mediano, para o musculocutâneo."
   },
-  "conceito": "**O objetivo é recuperar a flexão do cotovelo.** A transferência de Oberlin é uma neurotização distal empregada em lesões altas do plexo braquial. Seu cenário clássico é a lesão C5-C6 com paralisia do bíceps e nervo ulnar funcionante. A pergunta cobra o par doador-receptor, não apenas o nome de um nervo usado na reconstrução do plexo.\n\n**O doador é um fascículo ulnar, e o receptor é o ramo para o bíceps.** Transfere-se parte do nervo ulnar ao ramo motor do musculocutâneo destinado ao bíceps. Não se utiliza todo o ulnar nem se conecta indiscriminadamente ao tronco inteiro do musculocutâneo. A seleção de um doador funcionante procura obter reinervação do alvo sem perda relevante da função original da mão; preservação funcional é objetivo técnico, não garantia universal.\n\n**A indicação depende do que permaneceu íntegro.** Lesões C5-C6 constituem a indicação clássica, e séries clínicas também descrevem casos C5-C6-C7 selecionados. Examinar a função ulnar e caracterizar a extensão da lesão é essencial antes de escolher o doador. O tempo de desnervação e a viabilidade do músculo receptor influenciam a recuperação, por isso não se deve transformar um prazo isolado em critério absoluto de indicação.\n\n**Reconstruir o ombro exige outros pares nervosos.** A transferência do acessório ao supraescapular busca recuperação da função do ombro. Ramos motores do tríceps, provenientes do radial, podem ser transferidos ao axilar com objetivo semelhante. Essas operações podem integrar o mesmo plano reconstrutivo, mas não correspondem à transferência ulnar-bíceps denominada Oberlin.\n\n**Na prova:** reconheça doador, receptor e função: fascículo ulnar para ramo do musculocutâneo destinado ao bíceps, visando flexão do cotovelo. Um par nervoso válido para o ombro continua errado quando a pergunta é sobre Oberlin.",
-  "correta": "**Fascículo do ulnar para o ramo motor do musculocutâneo.** A alternativa C descreve a técnica clássica; o alvo específico é o ramo para o bíceps, permitindo recuperar a flexão do cotovelo.",
   "referencias": [
-   "Oberlin C et al. Nerve transfer to biceps muscle using a part of ulnar nerve for C5-C6 avulsion of the brachial plexus. J Hand Surg Am. 1994;19(2):232-237. DOI: 10.1016/0363-5023(94)90011-6. https://pubmed.ncbi.nlm.nih.gov/8201186/",
-   "Teboul F et al. Transfer of fascicles from the ulnar nerve to the nerve to the biceps in the treatment of upper brachial plexus palsy. J Bone Joint Surg Am. 2004;86(7):1485-1490. DOI: 10.2106/00004623-200407000-00018. https://pubmed.ncbi.nlm.nih.gov/15252097/",
-   "Bertelli JA, Ghizoni MF. Transfer of the accessory nerve to the suprascapular nerve in brachial plexus reconstruction. J Hand Surg Am. 2007;32(7):989-998. DOI: 10.1016/j.jhsa.2007.05.016. https://pubmed.ncbi.nlm.nih.gov/17826551/"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), p. 1166",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2997",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0005": {
@@ -1628,14 +1634,19 @@
   "conferido": false
  },
  "mao-0100": {
+  "conceito": "A classificação de SUNDERLAND é uma escada de dentro para fora: a cada grau, mais uma camada do nervo se rompe. Decorar a ordem das camadas resolve a questão, desde que se saiba que a pergunta pede o grau em que o perineuro já está lesado.\n\n**A escada.** Pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2979, Tabela 67.1), o grau I é a lesão da mielina, o II acrescenta o axônio, o III o tubo endoneural e seu conteúdo, o IV o perineuro e o V o tronco inteiro. Cada degrau soma o anterior, por isso o grau IV tem axônio, endoneuro e perineuro lesados.\n\n**Quem é cada camada.** O endoneuro envolve cada fibra; o perineuro agrupa as fibras em fascículos e é a barreira de difusão, forte contra tração e compressão; o epineuro, o mais abundante (60% a 85% da área de secção, no Green's Operative Hand Surgery, 7ª ed., cap. 30, pp. 981 e 982), envolve o conjunto.\n\n**O que sobra no grau IV.** Parte do epineuro, e talvez do perineuro. A continuidade do nervo é mantida só por cicatriz, e por isso o TINEL não avança e o prognóstico sem cirurgia é uniformemente ruim.\n\nA escada completa está na seção \"SEDDON e SUNDERLAND: o que foi rompido\" do resumo.",
+  "correta": "**C) IV.** É o grau em que axônio, endoneuro e perineuro (o fascículo) estão rompidos, restando parte do epineuro; a continuidade é feita só por cicatriz.",
   "incorretas": {
-   "A": "No tipo II só o axônio é lesado; o endoneuro íntegro guia a regeneração completa.",
-   "B": "No tipo III há lesão do axônio e do endoneuro, mas o perineuro continua íntegro.",
-   "D": "O tipo V é a secção completa, com lesão também do epineuro."
+   "A": "**II** rompe apenas o axônio, com tubo endoneural e perineuro íntegros; a degeneração walleriana acontece, mas o broto encontra o caminho de volta e a recuperação é boa.",
+   "B": "**III** rompe axônio e endoneuro e preserva o perineuro. A cicatriz endoneural desvia brotos, mas o fascículo continua inteiro, o que o separa do grau pedido.",
+   "D": "**V** é a transecção completa do tronco, com o epineuro também rompido; só ocorre em feridas abertas. O enunciado fala de lesão do fascículo, e não da perda de toda a continuidade."
   },
-  "conceito": "Um **nervo periférico** é organizado em camadas, como um cabo elétrico com vários fios:\n\n**axônio**: a fibra nervosa, o \"fio\" que conduz o impulso, envolvida por **mielina**;\n\n**endoneuro**: a capa de tecido que envolve **cada axônio**;\n\n**perineuro**: a capa que reúne vários axônios num **fascículo**;\n\n**epineuro**: a capa externa que envolve **todo o nervo**.\n\n**A classificação de Sunderland** gradua a lesão pela camada mais profunda atingida:\n\n**tipo I**: só um **bloqueio de condução**, com lesão da mielina, sem cortar o axônio (corresponde à **neuropraxia** de Seddon). Recupera completamente em dias ou semanas;\n\n**tipo II**: o **axônio** é lesado, mas o **endoneuro está íntegro** e serve de tubo-guia. O axônio cresce de novo pelo caminho certo, a cerca de 1 mm por dia, e a recuperação é completa;\n\n**tipo III**: axônio **e endoneuro** lesados. Os axônios podem crescer para tubos errados, e a recuperação é parcial e imprevisível;\n\n**tipo IV**: axônio, endoneuro **e perineuro** lesados. Só o **epineuro** continua inteiro: o nervo parece contínuo por fora, mas por dentro os axônios crescem em desordem e formam um **neuroma em continuidade**. Precisa de ressecção e enxerto;\n\n**tipo V**: **secção completa**, inclusive do epineuro (corresponde à **neurotmese**). Só recupera com reparo cirúrgico.\n\n**Um sinal útil**: o **sinal de Tinel** (choque ao percutir o nervo) **avança** ao longo do nervo quando ele está regenerando (tipos II e III), e fica **parado** no tipo IV, preso no neuroma.\n\n**Na prova**: lesão do axônio, do endoneuro e do perineuro, com o epineuro íntegro, é Sunderland tipo IV.",
-  "correta": "No tipo IV só o epineuro permanece íntegro, e os axônios crescem em desordem formando um neuroma em continuidade.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2979, Tabela 67.1",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), pp. 981 e 982",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0101": {
@@ -1928,14 +1939,19 @@
   }
  },
  "mao-0121": {
+  "conceito": "A distrofia simpático-reflexa, hoje síndrome dolorosa complexa regional tipo I, parece uma lesão de nervo e se confunde com ela, mas a pele conta uma história diferente: a síndrome acende o simpático, enquanto a desnervação completa o apaga.\n\n**As duas fases.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, pp. 2982 a 2984), descreve a fase inicial, simpaticamente mediada, chamada de \"quente\": edema, alteração vasomotora e sudomotora, pele eritematosa, edemaciada, quente ao toque e com hiper-hidrose. A fase tardia é a \"fria\": membro pálido e frio, pele e pelos alterados, unhas que crescem pouco, contratura e perda de massa óssea. Os sinais mais frequentes cobrados na questão são os da fase quente.\n\n**Por que pele seca não entra.** Pele seca e quente é o sinal de interrupção completa do axônio, descrito pelo Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 987), com anidrose no território do nervo. Na síndrome dolorosa, ao contrário, há sudorese aumentada: a pele eritematosa e suada indica simpático hiperativo, e não nervo seccionado.\n\n**Detalhe de diagnóstico.** O tipo I ocorre sem lesão neural definida; o tipo II, a causalgia, com lesão. A cintilografia trifásica é o exame radiológico mais sensível, e o diagnóstico antes de 6 meses dá melhor prognóstico.\n\nEstá na seção \"A síndrome dolorosa complexa regional\" do resumo.",
+  "correta": "**A) Aumento da temperatura, edema e eritema.** É a tríade da fase quente: vasodilatação, edema e pele avermelhada, junto da hiper-hidrose.",
   "incorretas": {
-   "B": "Edema e eritema estão certos, mas a pele seca é achado tardio; na fase inicial há aumento do suor.",
-   "C": "Mistura fases: eritema e calor são da fase quente, mas a pele seca pertence à fase atrófica.",
-   "D": "Apoia-se na pele seca, um achado tardio que não acompanha a fase quente."
+   "B": "**Edema, eritema e pele seca** acerta os dois primeiros achados e estraga o terceiro: a pele da fase quente é suada, e pele seca é sinal de desnervação completa, não de síndrome dolorosa.",
+   "C": "**Eritema, pele seca e aumento de temperatura** deixa de fora o edema, um dos sinais centrais da fase inicial, e inclui pele seca, que contraria a hiper-hidrose descrita pelo Campbell.",
+   "D": "**Pele seca, aumento de temperatura e eritema** reúne os mesmos três achados do conjunto que começa por eritema, só rearranjados; a ordem não muda o conteúdo, e a pele seca continua sendo o dado que não pertence à síndrome."
   },
-  "conceito": "A **distrofia simpático-reflexa** é hoje chamada de **síndrome de dor regional complexa** (SDRC). É um quadro de **dor desproporcional** ao trauma ou à cirurgia que a desencadeou (uma fratura, por exemplo), acompanhada de alterações na circulação, no suor, na pele e no movimento da região.\n\n**Os dois tipos**:\n\n**tipo I** (a antiga distrofia simpático-reflexa): **sem** lesão de nervo identificável;\n\n**tipo II** (a antiga causalgia): **com** lesão de um nervo identificável.\n\n**O diagnóstico** usa os **critérios de Budapeste**: dor contínua e desproporcional, com sinais em várias categorias: sensibilidade (dor ao simples toque, chamada alodinia), circulação (temperatura e cor da pele), suor e inchaço, e movimento e pele (rigidez, alterações tróficas).\n\n**As fases clássicas**:\n\n**fase aguda, \"quente\"**: a mão fica **quente**, **inchada** (edema) e **vermelha** (eritema), com **suor aumentado** (hiperidrose) e dor intensa. São os sinais **mais frequentes** e os primeiros;\n\n**fase distrófica**: a pele fica **fria**, arroxeada, a mão endurece e os ossos ficam porosos (osteopenia);\n\n**fase atrófica**: pele **seca** e fina, músculos atrofiados e contraturas.\n\n**O tratamento** deve ser **precoce**: analgesia, fisioterapia (dessensibilização e técnicas de imagem motora), corticoide, bisfosfonato e bloqueios.\n\n**Na prova**: na distrofia simpático-reflexa, os sinais mais frequentes são aumento da temperatura, edema e eritema, da fase quente.",
-  "correta": "A fase inicial, a mais frequente, tem mão quente, inchada e vermelha, com dor desproporcional e suor aumentado.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), pp. 2982 a 2984",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), p. 987",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0122": {
@@ -1955,14 +1971,19 @@
   "conferido": false
  },
  "mao-0123": {
+  "conceito": "A questão cobra a ponte entre as duas classificações do nervo: SEDDON dá três nomes, SUNDERLAND dá cinco graus, e o examinador pergunta onde a axonotmese cai na escada.\n\n**O que é axonotmese.** Pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2979), é a quebra do axônio com degeneração walleriana distal, mas com as células de SCHWANN e os tubos endoneurais preservados. O tubo vazio serve de trilho: o broto proximal desce por ele e reinerva o alvo de origem, e a recuperação espontânea é boa. O Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 982), resume a mesma ideia: axônio seccionado com lâmina basal íntegra permite regeneração ordenada.\n\n**Onde cai na escada.** Na Tabela 67.1 do Campbell, o rótulo \"axonotmese\" aparece na linha do grau II, o primeiro com axônio rompido. O grau I é a neurapraxia (bloqueio de condução, sem degeneração), e o V é a neurotmese. Os graus III e IV ficam no meio do caminho: o tubo endoneural já está rompido no III e o perineuro no IV, de modo que a regeneração deixa de ser ordenada.\n\n**Pista prática.** Se o TINEL avança e o tubo está íntegro, pense em grau II.\n\nA correspondência está na seção \"SEDDON e SUNDERLAND: o que foi rompido\" do resumo.",
+  "correta": "**B) II.** O grau II é o da axonotmese: axônio rompido, com tubo endoneural íntegro, de modo que a regeneração é ordenada.",
   "incorretas": {
-   "A": "O tipo I de Sunderland corresponde à neuropraxia, um bloqueio de condução sem lesão do axônio.",
-   "C": "O tipo III também é uma forma de axonotmese, mas com lesão do endoneuro e recuperação incompleta; a correspondência clássica é o tipo II.",
-   "D": "O tipo IV tem lesão do perineuro e forma neuroma em continuidade, exigindo cirurgia."
+   "A": "**I** é a neurapraxia: a mielina sofre, o axônio permanece anatomicamente íntegro e não há degeneração walleriana, nem TINEL que avança.",
+   "C": "**III** já inclui a ruptura do tubo endoneural, e a cicatriz que se forma ali desvia os brotos; a recuperação é incompleta, e o grau ocupa o espaço entre a axonotmese pura e a neurotmese.",
+   "D": "**IV** acrescenta a lesão do perineuro, com continuidade mantida só por cicatriz e prognóstico ruim sem cirurgia; está longe da axonotmese, que tem boa recuperação espontânea."
   },
-  "conceito": "Existem duas classificações clássicas das lesões de nervo periférico, e é preciso saber como elas se correspondem.\n\n**Seddon** (três graus):\n\n**neuropraxia**: só um bloqueio na condução do impulso, com lesão da mielina. O axônio está inteiro;\n\n**axonotmese**: o **axônio se rompe**, mas as capas de tecido em volta continuam, total ou parcialmente;\n\n**neurotmese**: o nervo é **cortado** por completo.\n\n**Sunderland** (cinco graus, mais detalhado):\n\n**I**: equivale à **neuropraxia**. Recupera completamente em dias a semanas;\n\n**II**: o **axônio** se rompe, mas o **endoneuro** (o tubo que envolve cada axônio) está íntegro. É a **axonotmese** \"pura\". O endoneuro funciona como um trilho que guia o axônio de volta ao destino certo, e a recuperação é **completa**, a cerca de 1 mm por dia;\n\n**III**: axônio e endoneuro lesados. Ainda é axonotmese, mas a recuperação é incompleta e imprevisível;\n\n**IV**: axônio, endoneuro e perineuro lesados; só o epineuro está inteiro. Forma-se um neuroma em continuidade, que precisa de cirurgia;\n\n**V**: secção completa. Equivale à **neurotmese**.\n\n**Outros conceitos**:\n\n**degeneração walleriana**: o pedaço do nervo abaixo da lesão degenera em 2 a 3 semanas. Por isso a eletroneuromiografia é mais útil a partir de 3 semanas;\n\n**Tinel que avança** ao longo do nervo com o tempo é sinal de regeneração.\n\n**Na prova**: a axonotmese corresponde, na forma mais típica, ao tipo II de Sunderland.",
-  "correta": "No tipo II o axônio se rompe, mas o endoneuro íntegro guia a regeneração, com recuperação completa: é a axonotmese pura.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2979, Tabela 67.1",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), p. 982",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0124": {
@@ -2349,14 +2370,19 @@
   "conferido": false
  },
  "mao-0147": {
+  "conceito": "No plexo braquial não se reconstrói tudo ao mesmo tempo: a ordem é escolhida pelo valor funcional, pela chance de recuperação e pela dificuldade de refazer a função mais tarde. O que vem na frente na fila é o cotovelo.\n\n**A ordem do Green.** O Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1159), baseia as prioridades em três critérios: significado funcional, probabilidade de recuperar (os músculos proximais vão melhor) e dificuldade de reconstrução secundária. No pan-plexo a sequência é: 1) flexão do cotovelo; 2) estabilização, abdução e rotação externa do ombro, pelo supraescapular e pelo axilar; 3) sensibilidade da mão; 4) flexão do punho e dos dedos; 5) extensão; 6) intrínsecos. Para C5 e C6, o par de metas é flexão do cotovelo e controle do ombro.\n\n**Por que o cotovelo primeiro.** É a função que as transferências, como a de OBERLIN, devolvem com mais segurança, usando doadores perto do bíceps. O ombro vem em seguida, com a transferência de LEECHAVENGVONGS e o acessório para o supraescapular.\n\n**Onde a questão escorrega.** O enunciado fala de sensibilidade da borda ulnar. O Green prioriza a sensibilidade da mão pelo fascículo lateral, que corresponde ao território de C6 e C7; a ordem das três metas, porém, coincide com o gabarito.\n\nA seção do resumo é \"Plexo braquial: prioridades e transferências\".",
+  "correta": "**B) Flexão do cotovelo, abdução do ombro, sensibilidade da borda ulnar do antebraço e mão.** Respeita a ordem do Green: cotovelo, depois estabilidade e abdução do ombro, depois sensibilidade da mão.",
   "incorretas": {
-   "A": "Inverte as duas primeiras: um ombro que abduz sem cotovelo que flete não consegue levar a mão ao rosto.",
-   "C": "Antecipa a sensibilidade: a abdução do ombro vem antes dela na ordem de prioridade.",
-   "D": "Inverte a hierarquia e deixa a flexão do cotovelo, a função mais importante, por último."
+   "A": "**Abdução do ombro primeiro** inverte as duas primeiras metas: no Green a flexão do cotovelo abre a lista, e o ombro vem logo depois.",
+   "C": "**Cotovelo, sensibilidade e depois ombro** acerta o primeiro item, mas põe a sensibilidade da mão antes da estabilidade e da abdução do ombro, que no Green são a segunda prioridade.",
+   "D": "**Ombro, sensibilidade e cotovelo** é a ordem mais distante da do livro: coloca o cotovelo por último, quando ele é a primeira prioridade da reconstrução."
   },
-  "conceito": "Nas lesões graves do **plexo braquial**, muitas vezes não é possível recuperar tudo. O cirurgião precisa escolher **quais funções reconstruir primeiro**, priorizando as que mais devolvem independência ao paciente.\n\n**A ordem de prioridade**:\n\n1. **flexão do cotovelo**: é a mais importante, porque permite **levar a mão à boca** e ao rosto, comer, pentear-se;\n\n2. **abdução e estabilização do ombro**: posiciona o braço no espaço, para que a mão possa ser levada aonde é preciso; inclui a rotação externa;\n\n3. **sensibilidade protetora** da borda ulnar da mão e do antebraço: a parte da mão que apoia na mesa precisa sentir dor e calor, para não se queimar ou ferir sem perceber;\n\n4. extensão do punho e dos dedos;\n\n5. flexão dos dedos, para a preensão;\n\n6. músculos intrínsecos da mão, que raramente recuperam.\n\n**Por que essa ordem**: de nada adianta um ombro que abduz se o cotovelo não dobra, porque a mão não chega ao rosto. E uma mão sem sensibilidade se fere com facilidade.\n\n**Como se reconstrói**: com **transferências de nervos** (levar um nervo que funciona até o músculo paralisado), por exemplo:\n\npara a flexão do cotovelo: um fascículo do nervo ulnar ligado ao ramo do bíceps (técnica de Oberlin), ou nervos intercostais ligados ao musculocutâneo;\n\npara o ombro: nervo acessório ligado ao supraescapular;\n\nem lesões totais: transferência de um músculo inteiro com seus vasos e nervo (como o grácil).\n\n**O momento**: idealmente entre **3 e 6 meses** após a lesão; os resultados pioram depois de 9 a 12 meses.\n\n**Na prova**: a ordem de prioridade é flexão do cotovelo, abdução do ombro e sensibilidade da borda ulnar.",
-  "correta": "A flexão do cotovelo vem primeiro por levar a mão ao rosto; depois o ombro posiciona a mão, e a sensibilidade ulnar a protege.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), p. 1159",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "alerta": "O Green (cap. 34, p. 1159) prioriza a sensibilidade da mão pelo fascículo lateral (território C6 e C7), e não especificamente a borda ulnar do antebraço. A ordem entre cotovelo, ombro e sensibilidade coincide com o gabarito oficial (B), que foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0148": {
@@ -2450,17 +2476,19 @@
   "conferido": false
  },
  "mao-0154": {
+  "conceito": "A protração da escápula, o movimento de levar a escápula para a frente e para fora, depende do serrátil anterior, e esse músculo serve ao exame como um pequeno detector de lesão proximal. A pergunta é o que a função presente diz sobre as raízes.\n\n**O exame.** O Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1151), ensina que a perda do romboide, pelo nervo dorsal da escápula (C5), e do serrátil anterior, pelo torácico longo (C5 a C7), indica lesão proximal ou pré-ganglionar das raízes altas. Esses nervos saem das raízes junto à coluna, antes do plexo propriamente dito. Se eles funcionam, a lesão está depois deles, no plexo supraclavicular, e a raiz de origem foi poupada em sua parte proximal.\n\n**A raiz que o gabarito escolhe.** C5 é a raiz mais alta, comum aos dois nervos do exame (dorsal da escápula e torácico longo). A lesão de C5 e C6 tira abdução, rotação do ombro, flexão do cotovelo e supinação, com a extensão do cotovelo normal, e é nessas raízes altas que o exame do serrátil e do romboide tem seu valor.\n\n**Contraste.** C8 e T1 nada têm a ver com esse movimento; ficam ligadas ao HORNER e aos intrínsecos da mão.\n\nO exame está na seção \"Plexo braquial: prioridades e transferências\" do resumo.",
+  "correta": "**A) C5.** O torácico longo, que move o serrátil, nasce de C5 a C7, e C5 é a raiz alta comum aos nervos que o exame da escápula testa; a protração presente mostra que ela não foi avulsionada.",
   "incorretas": {
-   "B": "C6 também contribui para o torácico longo, mas o achado é lido classicamente como marcador de C5.",
-   "C": "C7 é avaliada por outros marcadores, como o tríceps e os extensores do punho e dos dedos.",
-   "D": "C8 não inerva o serrátil anterior; é avaliada pelos flexores dos dedos."
+   "B": "**C6** contribui para o torácico longo, mas o Green não separa a contribuição de cada raiz no exame da protração; escolher C6 ignora que C5 é a raiz mais alta e comum a esse grupo.",
+   "C": "**C7** entra no torácico longo e fica na parte baixa da faixa C5 a C7. O Green não atribui a C7 sozinha a leitura da protração; ele a coloca dentro da faixa C5 a C7 do nervo.",
+   "D": "**C8** não participa do nervo torácico longo. Com T1, ela forma a parte baixa do plexo, onde a avulsão produz síndrome de HORNER e déficit dos intrínsecos."
   },
-  "conceito": "Na **lesão traumática do plexo braquial**, é fundamental saber se a raiz foi **arrancada da medula** (avulsão, lesão pré-ganglionar) ou se rompeu **fora** dela (lesão pós-ganglionar):\n\nse a raiz está **preservada** junto à medula, existe um **coto** que pode receber um enxerto de nervo;\n\nse foi **avulsionada**, não há coto, e só restam as **transferências** de outros nervos.\n\n**Como descobrir pelo exame**: alguns nervos saem **diretamente das raízes**, logo junto à coluna. Se os músculos que eles inervam **funcionam**, a raiz correspondente está preservada nesse ponto.\n\n**A protração da escápula**: é o movimento de levar a escápula para a frente, feito pelo **serrátil anterior**. Esse músculo é inervado pelo **nervo torácico longo**, que nasce diretamente das raízes **C5, C6 e C7**. Se a protração está **presente**, a raiz **C5** não foi arrancada da medula. Clinicamente, esse achado é lido como marcador de **C5** preservada.\n\n**Outros marcadores de raízes**:\n\n**romboides** (nervo dorsal da escápula) e **diafragma** (nervo frênico): também indicam C5 preservada;\n\n**C6**: bíceps e braquiorradial;\n\n**C7**: tríceps e extensores do punho e dos dedos;\n\n**C8**: flexores dos dedos;\n\n**T1**: músculos intrínsecos da mão; a **ausência de síndrome de Horner** indica que T1 não foi avulsionada.\n\n**Na prova**: a protração da escápula presente indica preservação da raiz C5.",
-  "correta": "O serrátil anterior é inervado pelo torácico longo, que sai direto das raízes; a protração presente indica que C5 não foi avulsionada.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.9"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), pp. 1149 a 1151",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "geradoEm": "2026-10-03",
+  "alerta": "O Green (cap. 34, p. 1151) cita o romboide (C5) e o serrátil anterior (C5 a C7) como sinais de lesão proximal das raízes altas, mas não descreve a manobra de protração nem diz que ela isola a raiz C5. O gabarito oficial (A) foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0155": {
@@ -3373,15 +3401,19 @@
   "conferido": false
  },
  "mao-0254": {
+  "conceito": "A lesão alta do plexo braquial costuma deixar o ombro sem abdução, porque o axilar perde sua fonte. A neurotização clássica do axilar pelo tríceps leva o nome do autor e a anatomia do doador, e a questão cobra os dois: qual cabeça e qual ramo.\n\n**A técnica.** Pelo Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1172), LEECHAVENGVONGS descreveu a transferência do ramo da cabeça longa do tríceps para a divisão anterior do nervo axilar, identificado no espaço quadrilateral. O deltoide contrai em cerca de 6 meses, e o arco chega a 124 graus quando se associa a transferência do acessório para o supraescapular.\n\n**Condição.** O tríceps doador precisa ter força 4 ou mais; com menos, a transferência é contraindicada, porque se perderia a extensão do cotovelo para ganhar a abdução.\n\n**O alvo é a divisão anterior.** O Green escolhe o ramo anterior, e não o posterior, como receptor, e o objetivo é devolver a abdução do ombro.\n\n**Como ela se encaixa.** Nas lesões C5 e C6 em que não há coto ou o tempo passou de 6 a 9 meses, o Green indica a dupla: acessório para supraescapular mais ramo do tríceps para a divisão anterior do axilar.\n\nA técnica está na seção \"Plexo braquial: prioridades e transferências\" do resumo.",
+  "correta": "**C) da cabeça longa do tríceps para o ramo anterior do nervo axilar.** É a transferência de LEECHAVENGVONGS: doador a cabeça longa, receptor a divisão anterior do axilar, no espaço quadrilateral.",
   "incorretas": {
-   "A": "A descrição original usa a cabeça longa do tríceps, e não a lateral, como doador.",
-   "B": "O doador original é a cabeça longa, e o receptor é o ramo anterior; o ramo posterior inerva o redondo menor e o deltoide posterior.",
-   "D": "O doador está certo, mas o receptor é o ramo anterior do axilar, responsável pela abdução, e não o posterior.",
-   "E": "O receptor está certo, mas o doador da descrição original é a cabeça longa, e não a medial."
+   "A": "**Cabeça lateral do tríceps para o ramo anterior** acerta o receptor e erra o doador: o livro descreve a cabeça longa, e a cabeça lateral não aparece como fonte dessa técnica.",
+   "B": "**Cabeça medial do tríceps para o ramo posterior** erra as duas pontas: o doador descrito é a cabeça longa e o receptor é a divisão anterior do axilar.",
+   "D": "**Cabeça longa para o ramo posterior** acerta o doador, mas leva o ramo para a divisão posterior do axilar; o Green destina a transferência à divisão anterior.",
+   "E": "**Cabeça medial do tríceps para o ramo anterior** acerta o receptor e troca o doador: nos livros lidos, a transferência clássica de LEECHAVENGVONGS parte da cabeça longa, não da medial."
   },
-  "conceito": "Nas lesões graves do **plexo braquial**, uma estratégia moderna é a **transferência de nervos** (neurotização): pegar um ramo de um nervo que **funciona**, cuja perda é pouco importante, e ligá-lo a um nervo **paralisado** perto do músculo que se quer recuperar.\n\n**A técnica de Leechavengvongs** (também chamada de técnica de Somsak):\n\né usada para recuperar a **abdução do ombro**, feita pelo **deltoide**;\n\no doador é o **ramo motor da cabeça longa do tríceps** (do nervo radial). O tríceps tem três cabeças, e perder o ramo de uma delas não compromete a extensão do cotovelo;\n\no receptor é o **ramo anterior do nervo axilar**, que inerva as partes anterior e média do deltoide, responsáveis pela abdução.\n\nA ligação é feita **por trás**, no braço, onde os dois nervos ficam próximos.\n\n**Por que as transferências perto do músculo funcionam bem**: o nervo novo chega ao músculo rapidamente, **antes** que a placa motora (a ligação entre o nervo e o músculo) se degenere. Idealmente, a cirurgia é feita nos primeiros 6 a 9 meses.\n\n**Outras transferências clássicas**:\n\n**Oberlin**: um fascículo do nervo ulnar ligado ao ramo do bíceps, para a flexão do cotovelo;\n\n**acessório para supraescapular**: para a abdução e a rotação externa do ombro;\n\n**intercostais para musculocutâneo**: nas avulsões totais.\n\n**Na prova**: a técnica de Leechavengvongs transfere o ramo motor da cabeça longa do tríceps para o ramo anterior do nervo axilar.",
-  "correta": "O ramo da cabeça longa do tríceps é transferido para o ramo anterior do axilar, devolvendo a abdução pelo deltoide anterior e médio.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), p. 1172",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0255": {
@@ -3978,17 +4010,19 @@
   "conferido": false
  },
  "mao-0303": {
-  "conceito": "### Envoltórios do nervo\n| Camada | Envolve | Sutura |\n|---|---|---|\n| endoneuro | cada axônio | ==não existe endoneurorrafia== |\n| perineuro | cada fascículo | perineurorrafia (fascicular) |\n| ==epineuro== | ==nervo inteiro== | ==epineurorrafia== (padrão) |\n\n### Técnicas\n| Técnica | Indicação | Vantagem × custo |\n|---|---|---|\n| ==epineurorrafia== | ==maioria dos reparos== | menos trauma e fibrose; alinhamento por vasos epineurais |\n| perineurorrafia | fascículos grandes, grupos motor e sensitivo conhecidos (ulnar no punho) | mais precisa, mais manipulação |\n| epiperineurorrafia | intermediária | pontos no epineuro e perineuro periférico |\n\n### Princípios\n- Sem tensão (fio 8-0 a 10-0 deve segurar); se houver gap, enxerto ou conduto.\n- Alinhar pelos vasos longitudinais e pelo desenho fascicular.\n\n> **Na prova:** sutura só do envoltório externo = ==epineurorrafia==.",
-  "correta": "**Epineurorrafia.**\n- Pontos só no epineuro, sem entrar nos fascículos.\n- Padrão na maioria dos reparos; menos fibrose interna.\n- Resultados não inferiores à sutura fascicular.",
+  "conceito": "Três desenhos contam a história de uma neurorrafia: os cotos preparados, o ponto passando e o nervo suturado. O que decide o nome da técnica é a camada em que o fio entra, e a figura mostra isso com clareza.\n\n**A imagem.** Um nervo cortado ao meio, em vista de cima. No primeiro quadro, os dois cotos mostram, na secção, a camada externa amarela e três fascículos redondos por dentro, com vasos longitudinais correndo na superfície. No segundo, o fio atravessa apenas a camada externa dos dois cotos, sem entrar nos fascículos. No terceiro, o nervo reconstituído e, ao lado, a secção com quatro nós em volta do contorno, cada um fechando a bainha externa. Os fascículos ficam intactos, e a orientação dos cotos foi dada pelos vasos da superfície.\n\n**O nome da técnica.** É a epineurorrafia. Pelo Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 993), a neurorrafia epineural une só o epineuro externo, guiada pelos vasos de superfície; na perineural o epineuro é aberto e se sutura o perineuro de fascículos correspondentes; na epiperineural o ponto pega epineuro e perineuro de um fascículo periférico.\n\n**Limite e vantagem.** Na ferida fresca, os fascículos podem girar dentro do epineuro. Em compensação, a epineural evita fio dentro do nervo, e o Campbell's Operative Orthopaedics, 15ª ed. (pp. 2993 e 2994), diz que a evidência a favor da perineural é pobre.\n\nA comparação está na seção \"A sutura: epineural, perineural, tensão e cola\" do resumo.",
+  "correta": "**A) epineurorrafia.** O fio passa só pela camada externa do nervo, orientada pelos vasos de superfície, e os fascículos não são tocados.",
   "incorretas": {
-   "B": "**Fascículo a fascículo.**\n- Útil em grupos conhecidos, mas não é a figura.",
-   "C": "**Não existe.**\n- O endoneuro envolve axônios isolados.",
-   "D": "**Intermediária.**\n- Pega o perineuro periférico; o fio da figura não chega lá."
+   "B": "**Perineurorrafia** exigiria abrir o epineuro e passar o ponto pelo perineuro de cada fascículo, com fio fino de 10-0. Na figura, os fascículos aparecem fechados e não há ponto entre eles.",
+   "C": "**Endoneurorrafia** não é uma técnica descrita nos livros lidos: o endoneuro envolve cada fibra, e a sutura de um fascículo toma o perineuro, nunca o endoneuro.",
+   "D": "**Epiperineurorrafia** passa o ponto pelo epineuro e também pelo perineuro de um fascículo periférico. Na ilustração, o fio fica fora dos fascículos, só na camada externa."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 62"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), p. 993",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), pp. 2993 e 2994",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0304": {
@@ -4512,17 +4546,19 @@
   "conferido": false
  },
  "mao-0341": {
+  "conceito": "Na lesão fechada, o cirurgião só vê o nervo em continuidade e precisa deduzir por dentro o que se rompeu. A classificação de SUNDERLAND dá a chave, e o enunciado pede o grau em que a fibra nervosa inteira, com seu envoltório imediato, foi lesada.\n\n**O que é a fibra.** Pelo Green's Operative Hand Surgery, 7ª ed. (cap. 30, pp. 980 e 981), a fibra nervosa é o axônio com a bainha de célula de SCHWANN, dentro de uma lâmina basal; o endoneuro a envolve, e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2979.e2), o descreve como um véu que forma um tubo em volta de cada bainha de SCHWANN. Lesar a fibra por inteiro é, portanto, romper o axônio e esse tubo endoneural.\n\n**Onde isso cai na escada.** Na Tabela 67.1 do Campbell, o grau III é o da lesão de axônios e tubos endoneurais com o perineuro preservado. O fascículo continua inteiro, mas a cicatriz que se forma dentro do endoneuro bloqueia tubos e desvia brotos para caminhos alheios. A recuperação é mais lenta e deixa um déficit permanente variável, embora o TINEL avance.\n\nNo II só o axônio se rompe e o tubo permanece, o que dá regeneração ordenada; no IV o perineuro também cede e a continuidade passa a ser só de cicatriz.\n\nA escada está na seção \"SEDDON e SUNDERLAND: o que foi rompido\" do resumo.",
+  "correta": "**B) III.** Axônio e tubo endoneural rompidos, com o perineuro preservado: é a lesão da fibra nervosa inteira.",
   "incorretas": {
-   "A": "No grau II só o axônio se rompe; o tubo endoneural íntegro guia a regeneração e a recuperação é completa.",
-   "C": "No grau IV o perineuro também se rompe e a lesão atinge o fascículo, formando neuroma em continuidade.",
-   "D": "O grau V é a secção completa do tronco, a neurotmese de Seddon."
+   "A": "**II** rompe só o axônio e preserva o tubo endoneural; a lâmina basal íntegra oferece o caminho perfeito e a recuperação é boa, sem a lesão da fibra como um todo.",
+   "C": "**IV** vai além da fibra: rompe também o perineuro, preservando só parte do epineuro. O enunciado fala da fibra, que é o nível do endoneuro, e não do fascículo.",
+   "D": "**V** é a transecção completa do tronco, só encontrada em feridas abertas. Numa lesão fechada, com o nervo em continuidade, o grau V deixa de ser o esperado."
   },
-  "conceito": "A **classificação de Sunderland** gradua a lesão do nervo periférico pela **camada** atingida, de dentro para fora. O nervo tem **axônios**, cada um dentro de um tubo de **endoneuro**; vários formam um **fascículo**, envolto pelo **perineuro**; os fascículos formam o tronco, envolto pelo **epineuro**.\n\n**Os graus**:\n\n**I**: bloqueio da condução, sem perda de axônio (**neuropraxia** de Seddon); recupera em semanas;\n\n**II**: o **axônio** se rompe, mas o tubo endoneural fica inteiro e guia o novo axônio ao alvo certo; recuperação **completa**;\n\n**III**: rompem o axônio **e o endoneuro**, ou seja, a **fibra nervosa**. Os axônios que crescem podem entrar em tubos errados: recuperação **parcial e imprevisível**;\n\n**IV**: rompe também o **perineuro**; só o epineuro mantém o nervo em continuidade. Forma-se um **neuroma em continuidade**, sem recuperação espontânea útil;\n\n**V**: secção completa do tronco (**neurotmese** de Seddon).\n\n**O sinal de Tinel** acompanha a regeneração: **avança** ao longo do nervo nos graus II e III e fica **parado** no grau IV, no local do neuroma.\n\n**Velocidade**: cerca de **1 mm por dia**. A placa motora degenera após 12 a 18 meses sem nervo, por isso o tempo importa.\n\n**Na prova**: lesão da fibra nervosa (axônio e endoneuro) = **Sunderland III**.",
-  "correta": "No grau III rompem o axônio e o endoneuro, que juntos formam a fibra nervosa, e a recuperação é parcial.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.8.1"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), pp. 2979 e 2979.e2",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), pp. 980 e 981",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0342": {
@@ -5394,17 +5430,19 @@
   "conferido": false
  },
  "mao-0437": {
+  "conceito": "Nome de autor é a pegadinha mais barata e mais cobrada nas transferências nervosas: a banca descreve a operação e pede o sobrenome. Aqui, a operação é levar o ramo motor do ulnar para o ramo motor do bíceps, e o nome é OBERLIN.\n\n**A técnica.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2997), diz que OBERLIN descreveu em 1994 a primeira neurotização desse tipo, indicada na lesão do musculocutâneo com perda da flexão do cotovelo, usando fascículos do ulnar para o nervo do bíceps, por uma incisão anterior 4 cm distal à inserção do peitoral maior. O Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1166), acrescenta que é fácil e confiável e que substituiu os intercostais nas lesões de C5 e C6 com C8 e T1 preservados.\n\n**Por que dá certo.** O ulnar tem de 6 a 10 fascículos no braço, e a segregação funcional de SUNDERLAND põe os posteromediais a serviço dos flexores do antebraço. Escolhe-se o que flete o punho sem acionar os intrínsecos: sacrifica-se pouco para devolver o cotovelo.\n\n**Outros nomes que aparecem na prova.** LEECHAVENGVONGS leva a cabeça longa do tríceps ao axilar, e MACKINNON reúne as transferências distais, como o flexor radial do carpo para o interósseo posterior.\n\nO resumo trata disso na seção \"Plexo braquial: prioridades e transferências\".",
+  "correta": "**A) OBERLIN.** A transferência de um fascículo do ulnar para o ramo motor do bíceps, de 1994, leva o nome dele.",
   "incorretas": {
-   "B": "Bertelli tem outras contribuições em transferências do plexo, mas esta técnica leva o nome de Oberlin.",
-   "C": "Zancolli é ligado à capsulodese em laço para a mão em garra.",
-   "D": "Mackinnon popularizou a dupla transferência, com o mediano para o braquial, e não a técnica original."
+   "B": "**BERTELLI** não aparece nos livros lidos entre os autores de transferências do plexo; o nome que os capítulos associam à ponte do ulnar para o bíceps é outro.",
+   "C": "**ZANCOLLI** não é citado pelos capítulos para essa transferência. A neurotização do ulnar para o bíceps é atribuída a OBERLIN, e nenhum dos dois livros a liga a ZANCOLLI.",
+   "D": "**MACKINNON** é citado pelo Green e pelo Campbell em outros contextos: a classificação mista (grau VI), as transferências distais do radial e a do interósseo anterior para o motor do ulnar, com NOVAK. A do ulnar para o bíceps não é dele."
   },
-  "conceito": "Nas **lesões do plexo braquial** do adulto, uma das prioridades é devolver a **flexão do cotovelo**. Quando as raízes altas (C5 e C6) não podem ser reparadas diretamente, usam-se **transferências nervosas**: um ramo de um nervo que funciona é ligado ao ramo do músculo paralisado, perto dele, o que encurta o tempo de regeneração.\n\n**A transferência de Oberlin**: um **fascículo do nervo ulnar** (geralmente o que vai para o flexor ulnar do carpo) é ligado ao **ramo motor do bíceps**, que vem do musculocutâneo. A perda do fascículo do ulnar é bem tolerada, e o bíceps volta a funcionar.\n\n**Variações**: a **dupla transferência** acrescenta um fascículo do **mediano** para o ramo do **braquial**, popularizada por **Mackinnon**, o que reforça a flexão do cotovelo.\n\n**Outras transferências clássicas**: o nervo **acessório** para o **supraescapular** (abdução e rotação do ombro) e um ramo do **radial** (cabeça do tríceps) para o **axilar** (deltoide).\n\n**O tempo importa**: a placa motora do músculo degenera depois de 12 a 18 meses sem nervo, por isso a cirurgia deve ser feita cedo, em geral entre 3 e 6 meses após a lesão.\n\n**Os outros nomes**: **Zancolli** é ligado à capsulodese (laço) para a garra da mão paralítica; **Bertelli** tem várias contribuições em transferências do plexo, mas não dá nome a esta.\n\n**Na prova**: fascículo do ulnar para o ramo do bíceps = **Oberlin**.",
-  "correta": "Oberlin descreveu a transferência de um fascículo do nervo ulnar para o ramo motor do bíceps.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 62"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2997",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), p. 1166",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0438": {
@@ -5509,19 +5547,20 @@
   "geradoEm": "2026-10-10"
  },
  "mao-0445": {
-  "conceito": "**Oberlin aproxima um nervo saudável de um músculo denervado.** Na técnica clássica, um fascículo motor do nervo ulnar é conectado ao ramo do musculocutâneo destinado ao bíceps. O objetivo é recuperar a flexão do cotovelo sem depender de regeneração por todo o trajeto desde o plexo até o braço.\n\nA indicação típica é uma lesão **C5–C6**, eventualmente incluindo C7, com **C8–T1 preservadas**. A lesão superior paralisa o bíceps, enquanto as raízes inferiores podem manter o ulnar funcionante. A questão só faz sentido quando coexistem um alvo que precisa de reinervação e um doador que realmente pode fornecer axônios.\n\n| Elemento | O que deve ser avaliado |\n| :--- | :--- |\n| Alvo | Bíceps denervado, ainda com possibilidade de recuperação muscular |\n| Doador | Função ulnar preservada, incluindo força e avaliação eletrofisiológica |\n| Distância | Coaptação próxima ao músculo, que encurta o caminho de regeneração |\n| Custo funcional | Seleção fascicular para limitar o prejuízo aos músculos originalmente inervados |\n\nA transferência **não utiliza todo o nervo ulnar**. A escolha do fascículo é orientada pela anatomia e pela estimulação intraoperatória. Transferir indiscriminadamente um nervo funcionante criaria um déficit grave na mão. Na transferência dupla, conhecida como Oberlin II, um fascículo do mediano pode ser destinado ao braquial; isso não muda a necessidade de verificar a integridade dos doadores.\n\nNas avulsões extensas, o problema é diferente: o ulnar pode estar tão comprometido quanto o bíceps. A escolha passa a considerar outros doadores ou reconstruções funcionais. Também não basta ter um nervo doador: denervação prolongada, atrofia muscular e atraso até a reinervação reduzem a perspectiva de recuperar força útil.",
-  "correta": "Nas lesões C5–C6, com ou sem C7, o bíceps perde sua inervação, enquanto a contribuição inferior para o ulnar pode continuar funcionante. Essa combinação oferece um alvo denervado e um doador utilizável. A seleção do fascículo e a avaliação eletrofisiológica ajudam a evitar prejuízo importante à mão.",
+  "conceito": "A transferência fascicular do ulnar para o bíceps só faz sentido quando o doador está sadio. A indicação depende de quais raízes foram lesadas e quais sobraram, e essa lógica de doador intacto é o que o enunciado pergunta.\n\n**Quem é doador.** O Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1166), indica a transferência de OBERLIN nas lesões de C5 e C6 com C8 e T1 preservados. Alguns autores a contraindicam em C5 a C7, porque o ulnar é formado por C7 a T1; os autores do capítulo a usam com sucesso mesmo assim, de modo que a indicação principal é a lesão alta com a parte baixa do plexo respeitada.\n\n**O que se ganha.** A flexão do cotovelo, primeira prioridade da reconstrução do plexo. Nas lesões C5 e C6, o déficit é de abdução, rotação do ombro, flexão do cotovelo e supinação, com extensão do cotovelo normal, e a transferência fascicular é preferida ao enxerto de C6 para o cotovelo.\n\n**Se faltar doador.** Com C8 e T1 lesados, o ulnar que sobra não é uma fonte confiável: a técnica perde o sentido, e a reconstrução passa a depender de outras fontes de nervo.\n\nA seção do resumo é \"Plexo braquial: prioridades e transferências\".",
+  "correta": "**A) de C5-C6 ou C5-C7 com preservação de C8-T1.** O doador, o fascículo do ulnar, vem de raízes sadias, e o déficit a corrigir é a flexão do cotovelo perdida pelas raízes altas.",
   "incorretas": {
-   "B": "C8 e T1 fornecem a maior parte da contribuição ao nervo ulnar. Sua lesão compromete justamente o doador proposto, além de afetar músculos intrínsecos da mão. Não é a situação clássica em que um fascículo ulnar saudável pode reinervar o bíceps.",
-   "C": "A lesão extensa até C8 pode reduzir ou inviabilizar os fascículos doadores. O caráter pré-ganglionar também impede reparo direto da raiz avulsionada, mas não garante que o ulnar esteja preservado. O critério decisivo aqui é a integridade funcional de C8–T1.",
-   "D": "A lesão proximal isolada do mediano não é a indicação descrita para recuperar a flexão do cotovelo por transferência ulnar para o bíceps. Trata-se de outro nervo-alvo e de outro déficit, que exigem planejamento reconstrutivo próprio."
+   "B": "**Isoladas de C8 e T1** lesariam justamente as raízes que formam o ulnar, o doador. O déficit seria da mão, não da flexão do cotovelo, e a transferência de OBERLIN não corrige isso.",
+   "C": "**Pré-ganglionares de C5 a C8** incluem a avulsão de C8, raiz doadora do ulnar. A indicação do Green exige C8 e T1 preservados, e o enunciado desfaz essa condição.",
+   "D": "**Do mediano proximais** são outro quadro, sem relação com a ponte do ulnar para o bíceps. Os livros indicam OBERLIN no déficit de flexão do cotovelo por lesão das raízes altas, e não em lesão de mediano."
   },
   "referencias": [
-   "Single Versus Double Fascicular \"Oberlin\" Nerve Transfer to Restore Elbow Flexion in Brachial Plexus Injury. https://pubmed.ncbi.nlm.nih.gov/40719456/",
-   "Adult brachial plexus injury: evaluation and management. https://pubmed.ncbi.nlm.nih.gov/24095074/"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), pp. 1149 e 1166",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2997",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-10"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "mao-0446": {
   "conceito": "**A profundidade da queimadura indica quais estruturas sobreviveram.** A pele não é apenas uma cobertura: contém vasos, terminações nervosas e anexos, como folículos e glândulas, que fornecem células para a epitelização. A preservação dessas estruturas explica a aparência, a dor e a capacidade de cicatrização.\n\n| Profundidade | Aspecto habitual | Sensibilidade e cicatrização |\n| :--- | :--- | :--- |\n| Superficial, apenas epidérmica | Eritema, sem bolhas típicas | Dolorosa; epiteliza sem perda dérmica |\n| Parcial superficial | Rosada, úmida, com bolhas e branqueamento à pressão | Muito dolorosa; anexos preservados favorecem cicatrização espontânea |\n| Parcial profunda | Mais pálida ou mosqueada, com perfusão reduzida | Sensibilidade menor e epitelização mais lenta; maior risco de cicatriz |\n| Espessura total | Branca, acastanhada ou carbonizada; superfície seca | Destruição dérmica e menor sensibilidade central; frequentemente exige excisão e cobertura |\n\nAs **bolhas** decorrem da separação de camadas superficiais. A dor intensa ocorre porque terminações sensitivas permanecem viáveis em um tecido inflamado. Por isso, mais dor não significa obrigatoriamente maior profundidade. Uma queimadura profunda pode ter um centro insensível e bordas muito dolorosas.\n\nA profundidade pode evoluir nos dias seguintes, e uma mesma área pode conter lesões de graus diferentes. Dor isolada não decide enxertia. Avaliam-se aspecto, perfusão, evolução e expectativa de epitelização.\n\nNa mão, a decisão ainda considera tendões, articulações e mobilidade. Uma lesão circunferencial profunda pode restringir a circulação com o edema e exigir descompressão. Exposição de tendão ou osso já representa um problema de cobertura muito além da queimadura parcial superficial descrita.",
@@ -5882,19 +5921,21 @@
   "conferido": false
  },
  "mao-0467": {
-  "conceito": "**Degeneração Walleriana ocorre no segmento distal de um axônio separado do corpo celular.** O axônio depende de transporte e manutenção vindos do soma. Quando a continuidade é interrompida, o trecho distal perde esse suporte e se desintegra, junto com a mielina que o envolve.\n\nO processo inclui alteração da membrana axonal, fragmentação do axônio e quebra do citoesqueleto. Células de Schwann e macrófagos participam da remoção dos detritos. No sistema nervoso periférico, as células de Schwann também organizam um ambiente que pode orientar os brotos regenerativos, caso o trajeto e as condições locais sejam favoráveis.\n\n| Fenômeno | Localização e significado |\n| :--- | :--- |\n| Degeneração Walleriana | Distal à interrupção axonal |\n| Alterações retrógradas | Coto proximal e corpo celular; resposta à lesão |\n| Fibrose local | Cicatrização e deposição de matriz, que podem dificultar regeneração |\n| Regeneração axonal | Crescimento a partir do segmento proximal sobrevivente |\n\nA resposta correta pelo mecanismo descrito é **C**, pois reúne localização distal e desintegração axonal. O gabarito fornecido marca **A**, que troca a localização para proximal. A letra oficial foi preservada, mas a afirmação proximal não deve ser aprendida como degeneração Walleriana.\n\nEssa distinção também esclarece a eletroneuromiografia. Logo após a lesão, o segmento distal ainda pode responder ao estímulo por algum tempo. A ausência inicial de sinais completos de denervação não prova continuidade nervosa. Os achados mudam conforme o processo distal avança, a distância até o músculo e a gravidade da lesão.\n\nDeposição de matriz e proliferação de fibroblastos podem ocorrer na resposta reparativa, mas não substituem a definição do processo axonal. Não se deve escolher uma alternativa apenas por ela reunir palavras associadas a lesão de nervo.",
-  "correta": "Os eventos de desintegração axonal estão descritos corretamente, mas a localização proximal está errada. A degeneração Walleriana clássica ocorre no segmento distal; alterações retrógradas próximas ao ponto de lesão são outro fenômeno.",
+  "conceito": "A degeneração walleriana é o primeiro passo do nervo para se regenerar: o segmento separado do corpo celular se desfaz, e a limpeza abre espaço para o broto. A questão pede onde ela acontece e quais eventos a compõem.\n\n**O que o Green diz.** O Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 984), afirma que a degeneração walleriana atinge o nervo distal e proximal ao ponto de interrupção e se estende ao corpo celular. No coto distal, a condução se perde, a resposta motora cessa por volta do terceiro dia, macrófagos limpam axoplasma e mielina, as células de SCHWANN mudam de fenótipo e os fibroblastos depositam colágeno endoneural, visível com 3 semanas. A degeneração gasta energia e não ocorre em membro isquêmico.\n\n**O que o Campbell diz.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2979.e3), reserva o nome walleriana para a degeneração distal e chama a reação proximal de primária, traumática ou retrógrada, que avança pelo menos um internodo com a mesma histologia.\n\n**O núcleo da definição.** Toda parte do neurônio separada do núcleo degenera: o axônio se fragmenta, o citoesqueleto se desfaz e a mielina se fragmenta em paralelo. Isso começa no grau II de SUNDERLAND, o primeiro com axônio rompido, e não no I.\n\nO resumo trata disso na seção \"Degeneração walleriana e regeneração\".",
+  "correta": "**A) proximalmente ao ponto de lesão e envolve a desintegração do axolema, a fragmentação celular, a despolimerização de microtúbulos e a quebra do citoesqueleto.** O gabarito oficial a toma como a correta: o Green estende a degeneração walleriana também ao coto proximal, e a lista de eventos é a do desmonte do axônio.",
   "incorretas": {
-   "B": "A localização distal e a desintegração da mielina são pertinentes. Entretanto, a alternativa enfatiza fibroblastos e deposição de matriz como se fossem a definição do processo, omitindo a desintegração axonal que o caracteriza. Fibrose e degeneração axonal não são sinônimos.",
-   "C": "É a descrição biologicamente adequada: o segmento distal, separado do corpo celular, apresenta desintegração axonal e quebra de membrana e citoesqueleto. A mielina também degenera e os detritos são removidos. O sistema mantém A porque foi a letra enviada no gabarito; isso não deve levar o aluno a rejeitar o mecanismo correto expresso em C.",
-   "D": "A opção erra a localização ao indicar proximal e descreve predominantemente uma resposta de cicatrização, com fibroblastos e deposição de matriz. A regeneração pode ser dificultada por fibrose, mas isso é diferente da desintegração do axônio distal que define degeneração Walleriana. Duas expressões de lesão nervosa foram combinadas sem reproduzir o processo pedido."
+   "B": "**Distalmente, com desintegração da mielina, proliferação de fibroblastos e matriz extracelular** troca o desmonte do axônio por eventos de cicatrização. Fibroblastos e colágeno aparecem depois, por volta de 3 semanas, e não definem a degeneração.",
+   "C": "**Distalmente, com desintegração do axolema, fragmentação, despolimerização e quebra do citoesqueleto** é a redação mais próxima da definição do Campbell, que chama de walleriana a degeneração distal. O gabarito oficial a considera errada, ver o alerta.",
+   "D": "**Proximalmente, com mielina, fibroblastos e matriz extracelular** acerta o lado que o gabarito aceita e erra o conteúdo, ao trocar o desmonte do axônio pela proliferação de fibroblastos e a deposição de matriz."
   },
   "referencias": [
-   "Wallerian Degeneration and Nerve Regeneration: A Review of Cellular and Molecular Events. https://pubmed.ncbi.nlm.nih.gov/42511709/"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), pp. 984 e 985",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2979.e3",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "conferido": false,
-  "alerta": "O gabarito oficial enviado aponta A e foi preservado. A degeneração Walleriana ocorre distalmente, como descreve C. A localização proximal indicada em A está em desacordo com o processo biológico.",
-  "geradoEm": "2026-10-10"
+  "alerta": "O Campbell (cap. 67, p. 2979.e3) chama de walleriana a degeneração distal e de retrógrada a proximal; pelo Campbell, a alternativa com \"distalmente\" e desintegração do axolema seria a correta. O Green (cap. 30, p. 984) diz que ela atinge o nervo distal e proximal. O gabarito oficial (A) foi mantido.",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "mao-0468": {
   "conceito": "**Aneurisma verdadeiro e pseudoaneurisma são problemas diferentes.** No verdadeiro, a dilatação envolve as camadas da parede arterial. No pseudoaneurisma, existe uma lesão da parede com sangue contido por tecidos adjacentes, em comunicação com o lúmen. O trauma é uma causa importante de lesões aneurismáticas do membro superior, sobretudo pseudoaneurismas.\n\nO mecanismo pode ser uma lesão penetrante, contusão, fratura, procedimento vascular ou microtrauma repetido. No território da mão, a artéria ulnar fica vulnerável no canal de Guyon e perto do hamato. Impactos repetidos na região hipotenar podem lesar a parede, provocar trombose, embolização distal ou formação aneurismática.\n\n**O problema não se limita ao aumento de volume.** A lesão pode comprimir um nervo, romper ou liberar êmbolos para os dedos. Assim, dor, massa pulsátil, parestesia e sinais de isquemia distal precisam ser integrados. A ausência de pulsação evidente não exclui uma lesão parcialmente trombosada.\n\nAterosclerose é uma causa importante de aneurismas em outros territórios, mas não deve ser automaticamente transferida como explicação predominante para todas as artérias do membro superior. Infecção também pode lesar a parede arterial, porém não torna fungos a causa habitual desta pergunta.\n\nA resposta **trauma** identifica o padrão etiológico clássico cobrado. Ela não autoriza concluir que qualquer aneurisma braquial, radial ou ulnar seja traumático: o diagnóstico precisa distinguir verdadeiro de falso e considerar localização, contexto clínico e imagem.",
@@ -5989,19 +6030,21 @@
   "geradoEm": "2026-10-10"
  },
  "mao-0475": {
-  "conceito": "**Fibrilação é atividade espontânea de uma fibra muscular denervada.** Na eletromiografia de agulha, o músculo saudável em repouso não apresenta esse padrão. Após perda da inervação axonal, alterações da membrana tornam a fibra capaz de disparar espontaneamente.\n\nOs **potenciais de fibrilação**, muitas vezes acompanhados de ondas agudas positivas, aparecem após um intervalo. A questão usa aproximadamente **duas semanas**, mas o tempo varia com a distância da lesão ao músculo, a gravidade e o local examinado. Um exame muito precoce pode ainda não mostrar todo o padrão de denervação.\n\n| Achado | Como é obtido | O que informa |\n| :--- | :--- | :--- |\n| Fibrilações | Agulha, em repouso | Instabilidade de fibras musculares, compatível com denervação no contexto adequado |\n| Potencial de unidade motora | Agulha, durante contração | Atividade do conjunto de fibras de uma unidade motora |\n| CMAP | Estímulo do nervo e registro muscular | Resposta muscular composta, cuja amplitude ajuda a avaliar perda motora |\n| Silêncio elétrico | Agulha, em repouso | Pode ser normal; depende do músculo e da fase da lesão |\n\nNão confunda **fibrilação** com fasciculação. A primeira é detectada eletricamente em fibras individuais; a segunda corresponde à descarga de uma unidade motora e pode ser visível como contração localizada.\n\nA eletroneuromiografia combina condução nervosa e exame de agulha. A baixa amplitude de CMAP pode acompanhar perda axonal, mas não é a descarga espontânea pedida. Potenciais motores com alterações de duração, amplitude e recrutamento ajudam a acompanhar reinervação. Nenhum desses achados, isoladamente, define causa, grau anatômico ou chance exata de recuperação.",
-  "correta": "Potenciais de fibrilação representam descargas espontâneas de fibras musculares denervadas. Podem começar a aparecer por volta de duas semanas, mas frequentemente levam algumas semanas para se tornar claros em todos os músculos examinados.",
+  "conceito": "A eletroneuromiografia não é um exame do dia da lesão: durante os primeiros dias ainda há condução no coto distal, e o músculo desnervado demora a mostrar o que perdeu. Saber em que ordem os sinais aparecem é o que a questão cobra.\n\n**A sequência.** O Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 988), diz que os potenciais de fibrilação são um dos sinais eletromiográficos mais precoces de desnervação, com início dependente da distância entre a lesão e o músculo e um intervalo de 10 a 14 dias antes de aparecerem. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2980), descreve nenhuma alteração significativa por 8 a 14 dias, depois fibrilações transitórias à inserção da agulha e fibrilações espontâneas entre 2 e 4 semanas, junto com o início da atrofia, que atinge 50% a 70% ao fim de cerca de 2 meses. Nas pp. 2985 e 2986, o Campbell põe as ondas positivas agudas aos 10 a 14 dias e as fibrilações entre 14 e 18 dias.\n\n**O que vem depois.** Reinervação aparece como potenciais de unidade motora voluntários, que costumam preceder a recuperação clínica; por volta de 3 meses há brotamento com aumento de amplitude.\n\n**Leitura prática.** Eletroneuromiografia muito precoce engana: ela não distingue neurapraxia de degeneração nos primeiros dias, e só mais tarde separa o bloqueio de condução da lesão degenerativa.\n\nO resumo traz tudo na seção \"Eletroneuromiografia e imagem\".",
+  "correta": "**A) Potenciais de fibrilação.** São o sinal de desnervação mais precoce, a partir de cerca de 2 semanas, coincidindo com o início da atrofia.",
   "incorretas": {
-   "B": "Potenciais de unidade motora são observados durante recrutamento voluntário e descrevem o conjunto de fibras controladas por um neurônio motor. Não equivalem à atividade espontânea precoce de uma fibra muscular denervada.",
-   "C": "O músculo normal em repouso deve ter silêncio elétrico depois da atividade de inserção. Assim, silêncio não é o sinal positivo de denervação perguntado e pode inclusive ocorrer em um exame realizado cedo demais.",
-   "D": "O CMAP é a resposta muscular composta à estimulação de um nervo. Sua amplitude pode diminuir com perda axonal, mas ele não é a descarga espontânea identificada pela agulha que o enunciado procura."
+   "B": "**Unidades motoras potenciais (MUPs)** voluntárias que reaparecem indicam reinervação, e não desnervação; o Green diz que elas costumam preceder a recuperação clínica.",
+   "C": "**Silêncio elétrico** não é um marco descrito pelos livros como sinal precoce de desnervação; o que os capítulos descrevem na fase inicial é a ausência de alteração significativa por 8 a 14 dias e, depois, a atividade espontânea.",
+   "D": "**Potenciais de ação musculares compostos (CMAPs)** vêm da condução nervosa. Na lesão degenerativa, a amplitude cai em 5 a 10 dias, mas isso mede o nervo, e o sinal pedido é o da atividade espontânea do músculo na agulha."
   },
   "referencias": [
-   "Wallerian Degeneration and Nerve Regeneration: A Review of Cellular and Molecular Events. https://pubmed.ncbi.nlm.nih.gov/42511709/",
-   "Electrodiagnosis in traumatic brachial plexus injury. https://pubmed.ncbi.nlm.nih.gov/23661958/"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), p. 988",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), pp. 2980, 2985 e 2986",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-10"
+  "alerta": "O Campbell (cap. 67, p. 2986) põe as ondas positivas agudas (10 a 14 dias) antes das fibrilações (14 a 18 dias), enquanto o Green (cap. 30, p. 988) chama a fibrilação de um dos sinais mais precoces, em 10 a 14 dias. O gabarito oficial (A) foi mantido.",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "mao-0476": {
   "conceito": "**WALANT significa cirurgia com o paciente acordado, anestesia local e sem torniquete.** A lidocaína fornece anestesia, enquanto a epinefrina promove vasoconstrição e ajuda a obter hemostasia. A ausência de sedação permite testar ativamente reparos e transferências tendíneas durante o procedimento, quando isso é pertinente.\n\nA questão, porém, pede a dose sem considerar epinefrina e oferece **8–11 mg/kg de lidocaína** em A. A medicação corresponde à técnica, mas a dose não corresponde ao limite convencional de infiltração sem vasoconstritor. O gabarito A foi preservado com alerta; não deve ser usado para orientar uma prescrição.\n\n| Lidocaína em infiltração convencional, adulto saudável | Limite de referência da bula consultada |\n| :--- | :--- |\n| Sem epinefrina | 4,5 mg/kg, geralmente até 300 mg |\n| Com epinefrina | 7 mg/kg, geralmente até 500 mg |\n\nProtocolos de anestesia tumescente têm condições próprias de concentração, absorção e monitorização. Seus limites não devem ser transportados para qualquer infiltração digital. Comorbidades, local de aplicação, outras doses administradas e risco de injeção intravascular também modificam a segurança.\n\n**Concentração não é dose total.** Lidocaína a 1% contém 10 mg/mL; a dose é calculada multiplicando a concentração pelo volume. Infiltrar uma solução mais diluída permite maior volume para a mesma quantidade de miligramas, mas não elimina a toxicidade sistêmica.\n\nSinais neurológicos e cardiovasculares podem ocorrer na toxicidade por anestésico local, exigindo reconhecimento e tratamento imediato. Bupivacaína e Marcaína são a mesma substância em nome genérico e comercial; as doses muito altas das alternativas B e C não se tornam seguras por trocar o nome. Epinefrina também exige seleção clínica, especialmente quando a circulação do dedo já está comprometida.",
@@ -6062,20 +6105,20 @@
   "geradoEm": "2026-10-10"
  },
  "mao-0480": {
-  "conceito": "**Pré-ganglionar significa lesão entre a medula e o gânglio da raiz dorsal.** Na avulsão, a conexão radicular é arrancada da medula. Numa lesão pós-ganglionar, o dano ocorre mais distalmente. A distinção modifica o potencial de enxertia e a escolha de transferências nervosas.\n\nO **sinal de Horner** reúne ptose, miose e, conforme a extensão, anidrose. Na lesão traumática do plexo, sugere interrupção da via simpática próxima a T1 e é um indício importante de lesão pré-ganglionar. Não demonstra isoladamente a situação de todas as raízes.\n\n| Achado | Como contribui |\n| :--- | :--- |\n| Horner | Sugere comprometimento simpático proximal, especialmente relacionado a T1 |\n| Potencial sensitivo preservado numa área anestésica | Favorece lesão proximal ao gânglio, pois o axônio periférico sensitivo permanece ligado ao seu corpo celular |\n| Denervação paravertebral | Apoia localização proximal por envolvimento de ramos dorsais |\n| Pseudomeningocele | Sugere lesão radicular, mas não prova avulsão em todos os casos |\n\nHá ambiguidade: **C também cita um achado que pode apoiar avulsão**, embora atrofia isolada não seja tão específica quanto avaliação eletrofisiológica integrada. Portanto, ela não deve ser ensinada como biologicamente incompatível com lesão pré-ganglionar. D é a resposta oficial por descrever a associação clássica com Horner.\n\nDor à percussão supraclavicular não localiza de modo confiável todas as lesões. Um Tinel ao longo de um nervo pode acompanhar regeneração pós-ganglionar, mas não substitui exame, imagem e eletrofisiologia. As raízes baixas são particularmente vulneráveis à avulsão; dizer que C8–T1 têm ancoragem mais resistente que C5–C6 inverte a relação tradicionalmente descrita.",
-  "correta": "Horner pode resultar da interrupção da via simpática e, no contexto de trauma do plexo, sugere lesão baixa pré-ganglionar. Isso aumenta a suspeita de avulsão, mas não substitui a investigação anatômica e funcional.",
+  "conceito": "No plexo braquial, a pergunta que antecede tudo é se a raiz foi arrancada da medula ou se o dano está depois do gânglio. A resposta muda o prognóstico e a cirurgia, porque a avulsão não tem como ser reparada. O exame tem sinais para cada hipótese.\n\n**HORNER.** O Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1150), descreve a síndrome de HORNER (miose, ptose, anidrose e enoftalmo) na lesão baixa C8 e T1. Na p. 1151, correlaciona o sinal com a avulsão de C8 e T1, porque o gânglio simpático de T1 fica junto da raiz: a interrupção da via simpática sugere lesão pré-ganglionar.\n\n**Os outros sinais de avulsão.** Perda do romboide e do serrátil anterior indica lesão proximal das raízes altas; ausência de TINEL ou de dor à percussão no pescoço sugere lesão pré-ganglionar; e a atrofia dos paraespinais está associada à avulsão. A dor à percussão supraclavicular, ao contrário, sugere lesão pós-ganglionar.\n\n**Contexto.** Pré-ganglionar é a raiz avulsionada da medula, não reparável; se não há recuperação em 2 ou 3 meses, indica-se a cirurgia, com transferências quando o coto proximal é irrecuperável.\n\nO resumo trata disso na seção \"Plexo braquial: prioridades e transferências\".",
+  "correta": "**D) o sinal de Horner resulta de interrupção da via simpática e sugere lesão pré-ganglionar.** A síndrome se associa à avulsão de C8 e T1, pela proximidade do gânglio simpático de T1 com a raiz.",
   "incorretas": {
-   "A": "C5 e C6 têm estruturas de ancoragem mais resistentes, enquanto as raízes inferiores são mais vulneráveis à avulsão. A alternativa inverte essa relação e não explica adequadamente a propensão das raízes baixas à lesão pré-ganglionar.",
-   "B": "Dor ou sinal de Tinel supraclavicular pode apoiar uma lesão pós-ganglionar, mas não confirma simultaneamente os dois tipos. A localização da lesão exige integração com exame motor, potenciais sensitivos e imagem das raízes.",
-   "C": "Denervação de músculos paravertebrais pode apoiar uma lesão muito proximal, e atrofia correspondente merece investigação. A afirmação não deve ser descartada como biologicamente impossível só para defender D; atrofia isolada, porém, não confirma avulsão e é menos específica que a demonstração eletrofisiológica."
+   "A": "**Tecidos de ancoragem C8-T1 mais resistentes que os de C5-C6** é uma comparação que os capítulos lidos do Green e do Campbell não trazem; sem fonte, a afirmação não se sustenta.",
+   "B": "**Dor à percussão supraclavicular sugerindo lesão pré e pós-ganglionar** inverte a leitura: a ausência de dor e de TINEL à percussão sugere lesão pré-ganglionar, e a presença sugere dano pós-ganglionar.",
+   "C": "**Atrofia dos paraespinais como indício de avulsão** é uma afirmação que o Green também sustenta, ao associar a atrofia paraespinal à avulsão radicular. Por isso ela não é falsa pelo livro, ver o alerta."
   },
   "referencias": [
-   "Adult brachial plexus injury: evaluation and management. https://pubmed.ncbi.nlm.nih.gov/24095074/",
-   "Electrodiagnosis in traumatic brachial plexus injury. https://pubmed.ncbi.nlm.nih.gov/23661958/"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), pp. 1150 e 1151",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "conferido": false,
-  "alerta": "O gabarito aponta D. A alternativa C também apresenta uma associação plausível com lesão muito proximal; atrofia isolada não prova avulsão. A questão não deve ser usada para negar o valor da denervação paravertebral.",
-  "geradoEm": "2026-10-10"
+  "alerta": "O Green (cap. 34, p. 1151) também associa a atrofia dos paraespinais à avulsão de raiz, o que torna a alternativa sobre paraespinais compatível com o livro. O gabarito oficial (D) foi mantido.",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "mao-0481": {
   "conceito": "**A articulação trapeziometacarpal permite oposição, mas precisa de estabilidade ligamentar.** Sua forma em sela favorece mobilidade em vários planos. Durante a pinça, cargas elevadas se concentram numa pequena superfície, e alterações da contenção podem favorecer subluxação e desgaste.\n\nNo modelo clássico cobrado, a insuficiência do **ligamento oblíquo anterior**, também chamado ligamento em bico, está associada à **subluxação dorsal da base do primeiro metacarpo**. A alternativa A reúne o ligamento e a direção esperados.\n\n| Estrutura | Papel relevante |\n| :--- | :--- |\n| Oblíquo anterior | Contenção volar, tradicionalmente relacionada à estabilidade da base |\n| Dorsorradial | Estabilizador dorsal importante, destacado em estudos biomecânicos modernos |\n| Intermetacarpal | Conexão com a base do segundo metacarpo |\n\nA estabilidade é compartilhada: não depende de um único ligamento em qualquer situação. Estudos modernos dão grande importância ao dorsorradial. Por isso, a explicação clássica não deve ser convertida em “o oblíquo anterior é sempre o único ou primeiro ligamento responsável”.\n\nNa rizartrose, a perda de congruência e a dor podem reduzir a força de pinça. A metacarpofalângica pode compensar com hiperextensão, o que também precisa ser avaliado. Instabilidade sem desgaste avançado e artrose estabelecida são problemas diferentes; a reconstrução de um ligamento não recompõe uma cartilagem já destruída.\n\nO tratamento considera dor, limitação, estágio articular e demanda. A questão pede a relação anatômica clássica, não a indicação de um procedimento específico. O detalhe decisivo é **anterior→subluxação dorsal**, evitando a inversão para volar nas alternativas.",
@@ -6656,14 +6699,19 @@
   "conferido": false
  },
  "mao-0523": {
+  "conceito": "Os atlas descrevem o mediano e o ulnar como territórios separados, mas a natureza deixa conexões entre eles, e a prova gosta delas porque explicam exames que parecem contraditórios. MARTIN-GRUBER é a do antebraço.\n\n**O que é.** O Green's Operative Hand Surgery, 7ª ed. (cap. 31, p. 1046), define a anastomose de MARTIN-GRUBER como uma conexão motora entre o mediano, ou o interósseo anterior, e o ulnar no antebraço proximal, presente em 17% das pessoas. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 3007), a menciona ao tratar do ulnar: as fibras correm com o mediano até o meio do antebraço e passam ao ulnar.\n\nNo tipo I, o mais comum (60%), fibras do mediano se juntam ao ulnar para músculos tidos como \"medianos\"; no II (35%), o mediano envia fibras a músculos \"ulnares\", como o primeiro interósseo dorsal; o III ocorre em 3% e o IV em 1%.\n\n**Por que importa.** Numa lesão alta do ulnar, os intrínsecos podem funcionar porque suas fibras viajam pelo mediano. A conexão equivalente na mão, entre os ramos motores do ulnar e do mediano, tem outro nome: RICHE-CANNIEU.\n\nO resumo a traz na seção \"Quadros de cada nervo\".",
+  "correta": "**C) mediano e ulnar.** MARTIN-GRUBER é a conexão motora entre o mediano, ou o interósseo anterior, e o ulnar no antebraço proximal, em cerca de 17%.",
   "incorretas": {
-   "A": "A Martin-Gruber não envolve o nervo radial.",
-   "B": "A Martin-Gruber não envolve o nervo radial.",
-   "D": "Radial e musculocutâneo não formam a anastomose de Martin-Gruber."
+   "A": "**Mediano e radial** não têm conexão descrita nos livros lidos com esse nome; o Green só descreve conexões do tipo entre mediano e ulnar no antebraço e na mão.",
+   "B": "**Ulnar e radial** fica longe do que os capítulos descrevem: o ulnar se comunica com o mediano, e não com o radial, nas anastomoses nomeadas de MARTIN-GRUBER e RICHE-CANNIEU.",
+   "D": "**Radial e musculocutâneo** não formam anastomose nomeada nos livros lidos. O musculocutâneo e o radial aparecem apenas em outros contextos, como o braquiorradial que mascara a lesão do musculocutâneo."
   },
-  "conceito": "A **anastomose de Martin-Gruber** é uma comunicação **motora no antebraço** entre os nervos **mediano e ulnar**: fibras do mediano (muitas vezes pelo interósseo anterior) passam para o ulnar e vão inervar músculos da mão. Aparece em cerca de 15 a 30% das pessoas.\n\n**As anastomoses entre mediano e ulnar**:\n\n**Martin-Gruber**: no antebraço, do **mediano para o ulnar**;\n\n**Marinacci**: no antebraço, do ulnar para o mediano; rara;\n\n**Riche-Cannieu**: na **palma**, entre o ramo profundo do ulnar e o ramo recorrente do mediano;\n\n**Berrettini**: na palma, entre ramos **sensitivos** digitais.\n\n**Por que importa**:\n\na **eletroneuromiografia** pode mostrar achados paradoxais e simular **bloqueio de condução** do ulnar no antebraço;\n\numa lesão **alta** do ulnar pode **poupar** os músculos intrínsecos;\n\nno túnel do carpo, a anastomose pode explicar atrofia de músculos que parecem ser do ulnar.\n\n**As outras combinações** das alternativas (mediano com radial, ulnar com radial, radial com musculocutâneo) não correspondem a essa anastomose.\n\n**Na prova**: Martin-Gruber = **mediano e ulnar**, no antebraço.",
-  "correta": "A Martin-Gruber é a comunicação motora entre o mediano e o ulnar no antebraço, com fibras do mediano passando para o ulnar.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31 (Principles of Tendon Transfers of Median, Radial, and Ulnar Nerves), p. 1046",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 3007",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0524": {
@@ -6715,14 +6763,19 @@
   "conferido": false
  },
  "mao-0528": {
+  "conceito": "O interósseo anterior é um ramo puramente motor do mediano que desce entre as duas cabeças do pronador redondo, e a lesão dele poupa a sensibilidade e o território dos músculos supridos antes da sua origem, mas tira a flexão profunda do polegar e dos dois dedos radiais.\n\n**O que ele inerva.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 3009), diz que o interósseo anterior sai da face posteromedial do mediano entre as cabeças do pronador redondo e inerva o flexor longo do polegar, a metade radial do flexor profundo dos dedos (indicador e médio) e o pronador quadrado. Fica de fora tudo o que o mediano supre antes dessa origem: o pronador redondo, o flexor radial do carpo e os flexores superficiais, que continuam funcionando.\n\n**Contraste com o mediano alto.** O Green's Operative Hand Surgery, 7ª ed. (cap. 31, pp. 1025 e 1026), diz que a paralisia alta do mediano paralisa também o pronador redondo, o flexor radial do carpo e todos os superficiais; a flexão do punho persiste pelo flexor ulnar do carpo.\n\n**Em resumo.** O ramo alcança o flexor profundo e o do polegar, e os superficiais ficam de fora.\n\nO resumo traz isso na seção \"Quadros de cada nervo\".",
+  "correta": "**D) flexor longo do polegar e flexor profundo dos dedos indicador e médio.** É o território do interósseo anterior, mais o pronador quadrado, que o Campbell também lista.",
   "incorretas": {
-   "A": "O flexor radial do carpo e o flexor superficial recebem ramos do mediano acima do interósseo anterior e ficam preservados.",
-   "B": "O flexor profundo está certo, mas o flexor radial do carpo é inervado por ramo proximal do mediano.",
-   "C": "O flexor longo do polegar está certo, mas o flexor superficial é inervado pelo mediano antes do interósseo anterior."
+   "A": "**Flexor radial do carpo e superficial do indicador e médio** pertencem a ramos que saem do mediano antes do interósseo anterior; ficam preservados nessa lesão e só se paralisam no mediano alto.",
+   "B": "**Flexor radial do carpo e profundo do indicador e médio** acerta o profundo, mas inclui o flexor radial do carpo, que sai do mediano acima da origem do interósseo e não é afetado.",
+   "C": "**Flexor longo do polegar e superficial do indicador e médio** acerta o polegar e erra o dedo: o superficial é suprido pelo mediano antes do interósseo, e o músculo dos dedos que o ramo alcança é o profundo."
   },
-  "conceito": "O **nervo interósseo anterior** é o ramo **motor puro** do mediano que sai logo abaixo do pronador redondo e desce sobre a membrana interóssea. Ele inerva:\n\n**flexor longo do polegar**: flexão da interfalângica do polegar;\n\n**flexor profundo do indicador e do médio**: flexão da interfalangiana distal desses dedos;\n\n**pronador quadrado**: pronação com o cotovelo fletido (a pronação geral é compensada pelo pronador redondo).\n\n**O quadro**: a pessoa não faz o **\"O\"** com o polegar e o indicador; as polpas encostam achatadas. A **sensibilidade é normal**, porque o nervo não tem ramos para a pele.\n\n**O que fica preservado** (o erro clássico): o **flexor superficial dos dedos**, o **flexor radial do carpo**, o palmar longo e o pronador redondo recebem ramos do mediano **acima** do interósseo anterior. Por isso, a interfalangiana proximal do indicador flete normal.\n\n**Na prova**: lesão do interósseo anterior = **flexor longo do polegar** e **flexor profundo do indicador e do médio**.",
-  "correta": "O interósseo anterior inerva o flexor longo do polegar e o flexor profundo do indicador e do médio, que ficam paralisados.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 3009",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31 (Principles of Tendon Transfers of Median, Radial, and Ulnar Nerves), pp. 1025 e 1026",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0529": {
@@ -6833,14 +6886,19 @@
   "conferido": false
  },
  "mao-0537": {
+  "conceito": "Graduar a recuperação motora de um nervo é contar quanto do músculo voltou a trabalhar, e a escala do Medical Research Council faz isso em seis degraus. O caso traz flexores, tênares e lumbricais contraindo sem vencer resistência, e a resposta está em ler a descrição contra a tabela.\n\n**A tabela.** Pelo Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 1002, Tabela 30.5), e pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, Tabela 67.2): M0 é ausência de contração; M1, contração perceptível nos músculos proximais; M2, contração perceptível nos proximais e nos distais; M3, proximais e distais com força para vencer resistência; M4, M3 com movimentos sinérgicos e independentes; M5, recuperação completa.\n\n**Proximal e distal na mão.** O Campbell (p. 2980) esclarece que, na mão, os proximais são os extrínsecos e os distais, os intrínsecos. No caso, os flexores profundos e superficiais dos dedos são os extrínsecos, e os tênares e os primeiros lumbricais, os intrínsecos supridos pelo mediano. Há contração nos dois grupos, mas sem força contra resistência e sem movimentos independentes: é o M2.\n\n**Por que isso interessa.** O grau orienta se a recuperação é boa, regular ou ruim: o M4 ou mais é bom, o M3 regular, o M2 ruim, e M1 ou M0 péssimos, segundo a Tabela 30.6 do Green.\n\nA escala está na seção \"Recuperação e prognóstico\" do resumo.",
+  "correta": "**C) M2.** Há contração perceptível nos músculos proximais (extrínsecos) e distais (intrínsecos), ainda sem vencer resistência.",
   "incorretas": {
-   "A": "M0 é ausência de contração, e aqui os músculos contraem.",
-   "B": "M1 é contração só nos músculos proximais; aqui os distais (tenares e lumbricais) já contraem.",
-   "D": "M3 exige força contra resistência, que o enunciado nega."
+   "A": "**M0** significa nenhuma contração. O paciente do caso contrai os flexores e os músculos tênares, de modo que há função motora, ainda que fraca.",
+   "B": "**M1** só admite contração perceptível nos músculos proximais. Aqui os tênares e os lumbricais, que são distais na mão, também contraem, o que ultrapassa o M1.",
+   "D": "**M3** exige que proximais e distais consigam agir contra resistência. O enunciado diz o contrário, que não há força para vencê-la, e isso mantém o grau abaixo do M3."
   },
-  "conceito": "Depois do reparo de um nervo, a recuperação motora é graduada pela **escala do British Medical Research Council** (Highet e Seddon). Ela acompanha a reinervação, que chega primeiro aos músculos **proximais** e depois aos **distais**:\n\n**M0**: nenhuma contração;\n\n**M1**: contração perceptível só nos músculos **proximais**;\n\n**M2**: contração perceptível nos músculos **proximais e distais**, sem função útil;\n\n**M3**: todos os músculos importantes com força **contra resistência**;\n\n**M4**: além disso, movimentos **isolados** e sinérgicos;\n\n**M5**: recuperação completa.\n\n**O caso**: lesão do mediano no antebraço. Já há contração nos flexores profundo e superficial (proximais) **e** nos músculos **tenares e primeiros lumbricais** (distais), mas **sem movimentos independentes e sem vencer resistência**. Isso é **M2**.\n\n**A escala sensitiva** vai de S0 (ausente) a S4 (completa). **M3 e S3** são o limiar considerado resultado útil.\n\n**Na prova**: contração em proximais e distais, sem vencer resistência = **M2**.",
-  "correta": "Há contração nos músculos proximais e distais do mediano, mas sem movimento independente nem força contra resistência, o que é M2.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), p. 1002",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), pp. 2980 e 2981",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0538": {
@@ -7131,14 +7189,19 @@
   "conferido": false
  },
  "mao-0557": {
+  "conceito": "No plexo lesado, o paciente não ganha tudo, e o cirurgião escolhe o que tentar primeiro. A pergunta junta duas coisas que se memorizam juntas: a meta de abertura e o nome da técnica que a serve.\n\n**A meta.** O Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1159), põe a flexão do cotovelo como primeira prioridade tanto no pan-plexo quanto nas lesões de C5 e C6, seguida da estabilidade, da abdução e da rotação externa do ombro. O critério é o valor funcional, a chance de recuperação, maior nos músculos proximais, e a dificuldade de reconstruir depois.\n\n**A técnica.** A neurotização que atende à flexão do cotovelo é a de OBERLIN, um fascículo motor do ulnar para o ramo motor do bíceps, com C8 e T1 preservados (Green, p. 1166; Campbell's Operative Orthopaedics, 15ª ed., cap. 67, p. 2997). Para o ombro, as técnicas são outras: o acessório para o supraescapular e a transferência da cabeça longa do tríceps para o axilar, de LEECHAVENGVONGS.\n\n**Como não errar.** Primeiro o cotovelo; o nome da técnica fica escolhido pela meta. Quem inverte a meta troca também a técnica.\n\nO resumo trata disso na seção \"Plexo braquial: prioridades e transferências\".",
+  "correta": "**B) ganho de flexão do cotovelo, Oberlin.** A flexão do cotovelo é a primeira prioridade, e OBERLIN, com o fascículo do ulnar para o bíceps, é a neurotização feita para ela.",
   "incorretas": {
-   "A": "O objetivo está certo, mas Steindler é uma flexorplastia muscular, não uma neurotização.",
-   "C": "A abdução do ombro vem depois da flexão do cotovelo, ainda que a técnica de Somsak sirva para ela.",
-   "D": "A abdução vem depois, e a técnica de Saha é uma transferência do trapézio, não uma neurotização."
+   "A": "**Cotovelo, Steindler** acerta a meta e liga a ela um nome que os livros lidos não associam à neurotização do plexo; a técnica nervosa para o cotovelo é a de OBERLIN.",
+   "C": "**Abdução do ombro, Somsak** começa pelo ombro, quando o Green abre a lista pelo cotovelo, e o nome citado não consta dos capítulos lidos entre as técnicas de neurotização.",
+   "D": "**Abdução do ombro, Saha** repete a ordem invertida, com o ombro na frente do cotovelo, e liga a ela um autor que os livros lidos não citam para essas transferências."
   },
-  "conceito": "Na **lesão grave do plexo braquial**, nem tudo pode ser recuperado, e o cirurgião precisa escolher o que reconstruir primeiro. A ordem de prioridade é bem estabelecida:\n\n**1º, flexão do cotovelo**: leva a mão até a boca e ao corpo; sem ela, o membro não tem função útil;\n\n**2º, estabilidade e abdução do ombro**: segura o ombro e posiciona o braço no espaço;\n\n**3º, sensibilidade protetora da mão**;\n\n**4º, extensão do punho e flexão dos dedos**: transferências tendíneas ou músculo livre (grácil);\n\n**5º, intrínsecos**: quase nunca se recuperam.\n\n**O tempo importa**: a placa motora do músculo desnervado degenera em **12 a 18 meses**. Por isso, a cirurgia é feita cedo, por volta de **3 a 6 meses** sem sinal de recuperação.\n\n**A neurotização (transferência de nervo) de cada função**:\n\n**Oberlin**: um **fascículo do ulnar** (o que vai para o flexor ulnar do carpo) ligado ao **ramo motor do bíceps**; dá **flexão do cotovelo**. A variação de Mackinnon (Oberlin dupla) acrescenta um fascículo do mediano para o ramo do braquial;\n\n**Somsak**: ramo do **tríceps** (radial) para o **nervo axilar**; dá abdução;\n\n**acessório para supraescapular**: abdução e rotação lateral;\n\n**intercostais para musculocutâneo**: outra opção de flexão do cotovelo.\n\n**O que não é neurotização**: **Steindler** é uma flexorplastia (avanço muscular), e **Saha** é a transferência do **trapézio**.\n\n**Na prova**: primeiro objetivo no plexo = **flexão do cotovelo**, por **Oberlin**.",
-  "correta": "A flexão do cotovelo é a primeira prioridade, e a transferência de Oberlin (fascículo do ulnar para o ramo do bíceps) é a neurotização clássica para ela.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), pp. 1159 e 1166",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2997",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0558": {
@@ -7332,18 +7395,19 @@
   "conferido": false
  },
  "mao-0571": {
-  "conceito": "**A imagem.** Mostra os cotos de um nervo cortado, com os **fascículos** expostos. Os pontos passam pela bainha de **cada fascículo** (o **perineuro**), alinhando fascículo com fascículo. Essa é a **neurorrafia perineural** (fascicular).\n\n**A arquitetura do nervo periférico.** Um nervo periférico é organizado em camadas de tecido conjuntivo, como um cabo elétrico com vários fios encapados dentro de uma capa comum.\n\n| Camada | O que envolve | Função |\n|---|---|---|\n| **Endoneuro** | Cada **fibra nervosa** (axônio com sua bainha de Schwann) | Tecido frouxo; ambiente da fibra |\n| **Perineuro** | Cada **fascículo** (um grupo de fibras) | **Denso e resistente**; **barreira hematoneural**; resistência à tração |\n| **Epineuro interno** | Preenche o espaço **entre os fascículos** | Amortecimento; vasos |\n| **Epineuro externo** | Envolve o **nervo inteiro** | Proteção; sutura epineural |\n| Mesoneuro | Liga o nervo às estruturas vizinhas | Permite o deslizamento do nervo |\n\n**O perineuro.** É formado por várias camadas de células achatadas, unidas por junções firmes. Ele:\n- mantém a **pressão dentro do fascículo**;\n- forma a **barreira hematoneural**, que protege as fibras de substâncias do sangue;\n- dá ao nervo grande parte da sua **resistência à tração**.\n\n**Por que isso importa na cirurgia.**\n- **Sutura epineural**: pontos no epineuro externo, alinhando o nervo pela posição dos vasos. É a técnica mais usada.\n- **Sutura perineural (fascicular)**: pontos no perineuro, alinhando grupos de fascículos. Mais precisa, mas causa mais trauma e cicatriz; útil quando os fascículos motores e sensitivos estão bem separados (por exemplo, no ulnar distal).\n- **Sutura epiperineural**: combina as duas.\n\n**A relação com as lesões nervosas (Sunderland).**\n- 1º grau: **neuropraxia** (bloqueio de condução, sem lesão do axônio).\n- 2º grau: lesão do **axônio**, com o **endoneuro** íntegro (axonotmese de bom prognóstico).\n- 3º grau: lesão do **endoneuro**, com o **perineuro** íntegro.\n- 4º grau: lesão do **perineuro**, só o epineuro íntegro (neuroma em continuidade).\n- 5º grau: secção completa (**neurotmese**).\n\nQuanto mais camadas lesadas, menor a chance de recuperação espontânea. A partir do 4º grau, a cirurgia é necessária.\n\n**As técnicas de neurorrafia, comparadas.**\n\n| Técnica | Onde passa o ponto | Vantagens e limites |\n|---|---|---|\n| **Epineural** | **Epineuro externo** (bainha do nervo inteiro) | Simples, rápida, menos trauma; o alinhamento é guiado pelos **vasos** da superfície |\n| **Perineural (fascicular)** | **Perineuro** de cada fascículo | Alinhamento mais preciso; mais trauma, mais material de sutura e mais cicatriz |\n| Epiperineural | Epineuro e perineuro juntos | Combina as duas |\n| Por grupos fasciculares | Epineuro interno, entre grupos de fascículos | Para nervos com grupos bem definidos (motor e sensitivo) |\n\nOs estudos não mostraram vantagem clara da perineural sobre a epineural na maioria das lesões. A perineural é útil quando os fascículos **motores** e **sensitivos** estão bem separados, como no **nervo ulnar distal** (ramo motor profundo e ramo sensitivo).\n\n**Os princípios de qualquer neurorrafia.**\n- Cotos **limpos**, cortados até encontrar fascículos de aspecto normal.\n- **Sem tensão**: se houver falha, usar **enxerto de nervo** (sural) ou conduto.\n- **Alinhamento** correto dos fascículos.\n- Fios finos (8-0 a 10-0) e magnificação (microscópio ou lupa).",
-  "correta": "**Correta: B (perineural).** A imagem mostra os pontos passando pelo **perineuro** de cada fascículo, alinhando fascículo com fascículo: é a **neurorrafia perineural** (fascicular).",
+  "conceito": "Esta ilustração mostra uma neurorrafia em que o cirurgião abriu o envoltório externo para trabalhar fascículo por fascículo. O nome da técnica decide-se pela camada em que o fio entra, e a figura deixa a resposta à vista.\n\n**A imagem.** Três quadros de um nervo cortado, com os fascículos desenhados como cilindros amarelos saindo do tubo externo aberto, vasos na superfície. No primeiro, os dois cotos, cada um com os fascículos expostos, e uma agulha chegando. No segundo, o fio passa por um fascículo de um coto e pelo fascículo correspondente do outro, ligando-os um a um. No terceiro, os cilindros estão unidos de um lado a outro, com pequenos nós na altura de cada fascículo.\n\n**A técnica.** É a neurorrafia perineural, ou fascicular. O Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 993), a descreve como a que abre o epineuro e sutura o perineuro de fascículos correspondentes; no mediano do punho, 6 a 8 feixes-chave recebem pontos perineurais de 10-0, completados com 9-0 pelo perineuro e epineuro (p. 994).\n\n**Ressalva do Campbell.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, pp. 2993 e 2994), é mais cético: a evidência de superioridade é pobre, a perineural é feita raramente, só em nervos grandes com grupos óbvios, porque fio dentro do nervo provoca cicatriz.\n\nO resumo trata disso na seção \"A sutura: epineural, perineural, tensão e cola\".",
+  "correta": "**B) perineural.** O epineuro está aberto e cada fascículo é suturado pelo seu envoltório, o perineuro, ao fascículo correspondente.",
   "incorretas": {
-   "A": "Na neurorrafia **epineural**, os pontos passam apenas pelo **epineuro externo**, a bainha do nervo inteiro, sem suturar fascículos individuais.",
-   "C": "O **endoneuro** envolve cada fibra nervosa e é delicado demais para receber pontos. Não existe neurorrafia endoneural.",
-   "D": "A sutura **interfascicular** (por grupos fasciculares) une **grupos** de fascículos pelo epineuro interno, e não cada fascículo pelo perineuro como na imagem."
+   "A": "**Epineural** une só o epineuro externo, guiada pelos vasos de superfície; na figura, o envoltório externo está aberto e os fascículos aparecem soltos, com pontos dados neles.",
+   "C": "**Endoneural** não é técnica descrita nos livros lidos: o endoneuro envolve cada fibra, e quem se sutura no fascículo é o perineuro.",
+   "D": "**Interfascicular** aparece nos livros em outros contextos, como enxerto interfascicular e neurólise interna, e não como nome da neurorrafia que une fascículos pelo perineuro."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 67",
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), pp. 993 e 994",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), pp. 2993 e 2994",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0572": {
@@ -7895,19 +7959,21 @@
   "conferido": false
  },
  "mao-0600": {
-  "conceito": "**Recuperação da sensibilidade após reparo nervoso.** Depois da sutura de um nervo periférico, os axônios crescem do coto proximal para o distal (cerca de 1 mm por dia) e precisam reinervar os receptores da pele. Os receptores e as fibras não se recuperam ao mesmo tempo, e a ordem de retorno segue a **complexidade** de cada modalidade.\n\n**Por que a dor volta primeiro.** A dor e a temperatura são conduzidas por **terminações nervosas livres** ligadas a fibras finas (A-delta e C). Essas terminações não dependem de um receptor especializado: basta o axônio chegar à pele. Já o tato fino depende de **mecanorreceptores encapsulados** (Meissner, Pacini, Merkel), que precisam ser reinervados corretamente e em número suficiente.\n\n**Ordem de retorno (Dellon).**\n\n| Ordem | Modalidade | Receptor ou fibra |\n|---|---|---|\n| 1 | **Dor e temperatura** | Terminações livres (fibras finas) |\n| 2 | Vibração de 30 ciclos por segundo | Meissner (adaptação rápida) |\n| 3 | Toque em movimento | Meissner |\n| 4 | Toque estático | Merkel (adaptação lenta) |\n| 5 | Vibração de 256 ciclos por segundo | Pacini |\n| 6 | Discriminação de dois pontos (móvel, depois estática) | Densidade de inervação |\n\n**Aplicações clínicas.**\n- **Sinal de Tinel** progressivo ao longo do nervo indica avanço dos axônios em regeneração.\n- A **reeducação sensitiva** (Dellon, Curtis e Edgerton) segue essa ordem: treina-se primeiro o toque em movimento e depois o estático.\n- A escala do Medical Research Council (S0 a S4) gradua a recuperação: S1 dor profunda, S2 dor superficial e algum tato, S3 dor e tato sem hiper-resposta, S3+ com alguma discriminação de dois pontos, S4 normal.\n\n> Após o reparo nervoso, a dor volta primeiro; a discriminação de dois pontos é a última.",
-  "correta": "**A: a dor (resposta pela bibliografia).** Dor e temperatura dependem de terminações nervosas livres, que voltam a funcionar assim que o axônio alcança a pele, antes da reinervação dos mecanorreceptores encapsulados.",
+  "conceito": "Depois que o nervo é reparado e o broto cresce, a sensibilidade não volta toda de uma vez. Ela volta em fila, e a fila obedece ao calibre das fibras: as finas, que transmitem dor, regeneram mais depressa.\n\n**A ordem.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2981, Tabela 67.3), com a sequência de DELLON, diz que a picada, isto é, a dor, é a primeira percepção a voltar; depois vem a vibração de 30 Hz e o toque em movimento; o toque constante e a vibração de 256 Hz são os últimos. As fibras finas, do grupo I, que levam dor, temperatura e função sudomotora, regeneram mais rápido que as do grupo II, que levam tato e vibração.\n\n**O que o paciente nota.** Em 2 ou 3 meses surge a parestesia e depois a hiperestesia; a qualidade melhora ao longo de 1,5 a 2 anos (Campbell, cap. 73, p. 3257). No sentido inverso, quando o nervo é lesado, a propriocepção é a primeira a sumir no bloqueio de condução, e a dor, a última.\n\nQuem testa o reparo começa pela picada, e a reeducação sensitiva de DELLON começa quando o paciente já reconhece estímulos na ponta dos dedos.\n\nA ordem do retorno está na seção \"Recuperação e prognóstico\" do resumo.",
+  "correta": "**A) a dor.** A picada é a primeira modalidade a retornar, porque as fibras finas regeneram mais rápido.",
   "incorretas": {
-   "B": "**O estímulo vibratório** de 30 ciclos (Meissner) é a segunda modalidade a retornar; o de 256 ciclos (Pacini) é tardio.",
-   "C": "**O toque estático** depende dos discos de Merkel e retorna depois do toque em movimento.",
-   "D": "**O toque em movimento** (Meissner) retorna depois da dor e da vibração de 30 ciclos."
+   "B": "**O estímulo vibratório** volta em etapas: a de 30 Hz vem depois da dor, e a de 256 Hz está entre as últimas modalidades a retornar.",
+   "C": "**O toque estático** (toque constante) fica entre os últimos a voltar, junto com a vibração de 256 Hz, muito depois da picada.",
+   "D": "**O toque em movimento** volta depois da dor, junto com a vibração de 30 Hz, e não abre a fila de recuperação."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 3228.",
-   "Dellon AL, Curtis RM, Edgerton MT. Reeducating sensation in the hand after nerve injury and repair. Plast Reconstr Surg. 1974;53(3):297-305."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2981, Tabela 67.3",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73 (Nerve Injuries at the Level of the Hand and Wrist), p. 3257",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
+  "alerta": "Questão sem gabarito oficial no acervo; a referência de origem é o Campbell's Operative Orthopaedics, 10ª ed. (p. 3228). Pela 15ª edição (cap. 67, p. 2981), a resposta sustentada é a dor (A), que coincide com o gabarito da bibliografia.",
   "provavel": "A",
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0601": {
@@ -8985,17 +9051,20 @@
   "conferido": false
  },
  "mao-0651": {
-  "conceito": "**As fibras autonômicas dos nervos periféricos.** Os nervos mistos, como o **mediano**, carregam três tipos de fibras: **motoras**, **sensitivas** e **autonômicas** (simpáticas pós-ganglionares). As fibras simpáticas controlam as **glândulas sudoríparas** (função sudomotora), os vasos (vasomotora) e os músculos eretores dos pelos.\n\n**O que acontece na lesão do nervo.** Quando o nervo é **seccionado**, as fibras simpáticas do território autônomo param de funcionar **imediatamente**. A pele da área inervada fica:\n- **seca** (**anidrose**): a sudorese desaparece logo após a lesão;\n- quente e vermelha no início (vasodilatação), depois fria e pálida;\n- com o tempo, lisa, brilhante e atrófica, com alterações das unhas.\n\n**A área autônoma do mediano.** É a **polpa do indicador** (e do médio), a região inervada só pelo mediano, sem sobreposição com outros nervos. Ela é o melhor local para testar a função do mediano.\n\n**Por que a afirmação está errada.** A polpa do indicador **não** mantém a sudorese por duas semanas após a lesão do mediano. A perda da sudorese é **imediata**, porque as fibras simpáticas são interrompidas junto com as outras. Essa é justamente a base dos testes **objetivos** de lesão nervosa.\n\n**Os testes objetivos (úteis em crianças, pacientes inconscientes ou não colaborativos).**\n- **Teste de enrugamento** (O'Riain): após imersão em água morna por cerca de 30 minutos, a pele normal da polpa **enruga**. A pele **desnervada não enruga**.\n- **Teste da ninidrina**: a impressão do dedo num papel com ninidrina revela o **suor**. A área desnervada não deixa marca.\n- Observação da pele **seca** (o \"tato seco\" da polpa e a lupa).\n\n**A recuperação.** Com a regeneração do nervo, a função sudomotora volta junto com a sensibilidade. A volta da sudorese é um sinal de que o nervo está se regenerando.",
-  "correta": "**Provável correta: B (Errado).** Na lesão do nervo mediano, as fibras simpáticas sudomotoras param de funcionar **imediatamente**, e a polpa do indicador (área autônoma do mediano) fica **seca** logo após o trauma. A falta de sudorese é a base dos testes objetivos, como o da ninidrina e o do enrugamento.",
+  "conceito": "O enunciado afirma que, depois da lesão do mediano, a polpa do indicador continuaria suando por duas semanas. Para julgá-lo é preciso saber o que a interrupção do nervo faz com a pele, em tempo e em área.\n\n**O que acontece com o suor.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 73, p. 3256), diz que a área desnervada fica sem suor em cerca de 30 minutos após a lesão, e que o teste do enrugamento, útil em criança, pode levar até 40 minutos para positivar. O Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 987), descreve como sinal quase infalível, nas primeiras 48 horas, a pele quente e seca no território do nervo lesado, e chama a paralisia simpática de sinal seguro de interrupção de axônios.\n\n**A polpa do indicador.** O indicador e o médio concentram a menor zona autônoma do mediano, as falanges distais (Campbell, cap. 67, p. 3009); é ali que a anidrose é mais confiável. A sudorese preservada na zona autônoma sugeriria interrupção incompleta, o que não é o caso de uma lesão completa.\n\nA afirmação é errada: a polpa deixa de suar em minutos a horas, e não depois de duas semanas.\n\nO resumo trata do sinal na seção \"O exame do nervo lesado: sensibilidade, simpático e TINEL\".",
+  "correta": "**B) Errado.** Na lesão do mediano a polpa do indicador, que fica na zona autônoma, perde a sudorese em cerca de 30 minutos, e a pele fica seca e quente nas primeiras 48 horas.",
   "incorretas": {
-   "A": "A perda da sudorese no território autônomo é **imediata** após a secção do nervo. Não há uma manutenção da sudorese por duas semanas."
+   "A": "**Certo** exigiria que a polpa continuasse suando por duas semanas, o que o Campbell e o Green contradizem: sudorese mantida na zona autônoma só sugere interrupção incompleta do nervo."
   },
   "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 8ª edição, p. 3344.",
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73 (Nerve Injuries at the Level of the Hand and Wrist), p. 3256",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), p. 987",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 3009",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
+  "alerta": "Questão sem gabarito oficial no acervo (a bibliografia indica o Campbell, 8ª ed., p. 3344, com resposta Errado). Pelo Campbell 15 (cap. 73, p. 3256) e pelo Green 7 (cap. 30, p. 987), a afirmação é errada, e a resposta provável é B.",
   "provavel": "B",
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0652": {
@@ -9652,18 +9721,18 @@
   "conferido": false
  },
  "mao-0683": {
-  "conceito": "**Na paralisia baixa isolada do mediano, muitos pacientes continuam abduzindo e opondo o polegar.** Isso surpreende quem decorou que \"mediano é oponência\", mas tem explicação anatômica.\n\n**Por que a função se mantém:**\n- a cabeça profunda do flexor curto do polegar e o adutor são inervados pelo ulnar e ajudam a posicionar o polegar;\n- variações de inervação são frequentes: em parte das mãos, o flexor curto (e às vezes o oponente) recebe fibras ulnares;\n- a **anastomose de Riche-Cannieu** (comunicação entre o ramo motor do ulnar e o ramo recorrente do mediano, na palma) pode manter a musculatura tenar funcionando mesmo com o mediano seccionado no punho;\n- a **anastomose de Martin-Gruber** (no antebraço, mediano para ulnar) não explica a oponência, mas confunde o exame de lesões altas e baixas.\n\nPor isso a indicação de oponentoplastia é funcional: só quando a perda é relevante para o paciente.",
-  "correta": "**A abdução e a oposição do polegar frequentemente estão mantidas.** A inervação ulnar de parte da musculatura tenar e as anastomoses entre mediano e ulnar permitem uma oposição funcional em boa parte dos casos.",
+  "conceito": "A paralisia baixa isolada do mediano é um quadro em que o polegar ainda faz mais do que a teoria faz supor, e o erro típico é achar que a oposição desaparece. A questão pede a leitura correta do que sobra.\n\n**O quadro.** O Green's Operative Hand Surgery, 7ª ed. (cap. 31, pp. 1025 a 1027), separa o mediano alto do baixo conforme a lesão fique proximal ou distal à origem do interósseo anterior. Na paralisia baixa, o que cai é o abdutor curto do polegar, o oponente e a cabeça superficial do flexor curto do polegar. Os flexores longos dos dedos, o do polegar e o pronador continuam intactos, porque seus ramos saem acima.\n\n**Por que a oposição resiste.** A abdução e a oposição do polegar frequentemente se mantêm após a lesão isolada e completa do mediano, pela função ulnar preservada. JENSEN encontrou necessidade de oponentoplastia em apenas 14%, e a oposição razoável é comum nas transecções completas. O abdutor curto é o motor principal da oposição, mas a inervação varia: o mediano supre abdutor, oponente e a cabeça superficial do flexor curto em 63%, só os dois primeiros em 30%.\n\n**Consequência.** O determinante principal da função na paralisia do mediano é a sensibilidade, e as melhores indicações de oponentoplastia são as lesões isoladas do ramo motor.\n\nO resumo traz o quadro na seção \"Quadros de cada nervo\".",
+  "correta": "**D) A abdução e oposição do polegar estão frequentemente mantidas.** O ulnar preservado sustenta parte dessas funções, e a oponentoplastia foi necessária em poucos casos.",
   "incorretas": {
-   "A": "A oponência não está ausente em todos os casos. Muitos pacientes mantêm uma oposição útil, graças à inervação ulnar e às variações anatômicas.",
-   "B": "A paralisia baixa poupa o flexor longo do polegar e a musculatura ulnar. O polegar mantém muito mais do que apenas a flexão da interfalângica.",
-   "C": "A oponentoplastia não é obrigatória. É indicada quando a perda da oposição causa limitação funcional acentuada."
+   "A": "**Oponência ausente em 100%** é um absoluto que o Green desmente: a oposição é frequentemente mantida, e a oposição razoável é comum nas transecções completas.",
+   "B": "**Polegar conserva apenas a flexão da IF** erra pelo excesso de perda: na paralisia baixa o flexor longo do polegar está preservado, e a abdução e a oposição, em geral, também.",
+   "C": "**Oponentoplastia necessária em todos os casos** contraria os números do Green, em que ela foi necessária em cerca de 14%; a sensibilidade pesa mais na função que o motor."
   },
   "referencias": [
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de paralisia do nervo mediano.",
-   "Rowntree T. Anomalous innervation of the hand muscles. J Bone Joint Surg Br. 1949;31B(4):505-10."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31 (Principles of Tendon Transfers of Median, Radial, and Ulnar Nerves), pp. 1025 a 1027",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0684": {
@@ -10356,19 +10425,19 @@
   "conferido": false
  },
  "mao-0727": {
-  "conceito": "**Splint interno (internal splint) é a transferência do pronador redondo para o extensor radial curto do carpo, feita precocemente na paralisia do radial.** Ela é realizada logo no momento do reparo do nervo (ou pouco depois), sem esperar a reinervação.\n\n**Por que fazer cedo:**\n- devolve a extensão ativa do punho enquanto o nervo regenera;\n- com o punho estendido, a tenodese dos flexores melhora a força de preensão;\n- dispensa órtese dinâmica por meses;\n- se o nervo recuperar, a transferência não atrapalha (funciona como um extensor a mais); se não recuperar, já é parte da reconstrução definitiva.\n\n**As transferências clássicas para a paralisia alta do radial:**\n\n| Função | Doador mais usado |\n|---|---|\n| Extensão do punho | Pronador redondo para o extensor radial curto do carpo |\n| Extensão dos dedos | Flexor ulnar do carpo (Jones) ou flexor radial do carpo (Brand) ou flexor superficial (Boyes) para o extensor comum |\n| Extensão e retropulsão do polegar | Palmar longo para o extensor longo do polegar (redirecionado) |",
-  "correta": "**Restaurar precocemente a extensão ativa do punho.** A transferência do pronador redondo para o extensor radial curto do carpo funciona como uma órtese interna enquanto o nervo radial se recupera.",
+  "conceito": "O nervo radial lesado deixa a mão caída, e a maior perda funcional não é a dos dedos, é a da preensão, que depende de um punho estendido e estável. O \"splint interno\" nasce dessa observação.\n\n**O que é.** O Green's Operative Hand Surgery, 7ª ed. (cap. 31, pp. 1061 e 1065), descreve as transferências precoces como \"tala interna\", criadas por BURKHALTER: no radial, o pronador redondo é transferido para o extensor radial curto do carpo, término-lateral, no mesmo tempo do reparo ou logo depois. O objetivo é restaurar logo a extensão ativa do punho e a força de preensão, e eliminar a tala externa.\n\n**Por que término-lateral.** O ERCC continua ligado ao próprio nervo; se o radial recupera, o músculo volta a trabalhar por conta própria e a transferência age em sinergia. Se não recupera, o pronador transferido fica como substituto permanente.\n\n**O que ela não faz.** Transferência tendínea nada faz pela sensibilidade. Também não é ela que devolve a extensão dos dedos: para isso, o Green descreve, na linha dos nervos, a transferência de MACKINNON do flexor radial do carpo para o interósseo posterior.\n\nO resumo trata disso na seção \"Transferências distais: nervo ou tendão\".",
+  "correta": "**C) Restaurar precocemente a extensão ativa do punho.** O pronador redondo passa para o extensor radial curto do carpo e devolve cedo a extensão do punho e a preensão.",
   "incorretas": {
-   "A": "Transferências tendinosas não restauram sensibilidade; o splint interno é motor.",
-   "B": "Evitar contraturas em flexão das MF é papel das órteses e da reabilitação. Não é o objetivo do splint interno.",
-   "D": "A extensão dos dedos exige outras transferências (por exemplo, flexor ulnar do carpo para o extensor comum); o splint interno trata o punho.",
-   "E": "A transferência tendinosa não é tratamento de dor neuropática."
+   "A": "**Restaurar a sensibilidade do polegar e do indicador** não cabe a uma transferência tendínea: o Green afirma que a transferência muscular nada faz pela sensibilidade.",
+   "B": "**Evitar contraturas em flexão das metacarpofalangeanas** descreve um efeito que os capítulos não atribuem ao splint interno do radial; o que eles descrevem é a extensão do punho.",
+   "D": "**Recuperar a extensão dos dedos** não é o objetivo da tala interna. A transferência de BURKHALTER tem como alvo o extensor do punho, e a extensão dos dedos exige outro procedimento.",
+   "E": "**Reduzir a dor neuropática** não é descrito como função da transferência tendínea; os capítulos tratam a dor neuropática ao falar dos nervos sensitivos, como o radial superficial, e não do splint interno."
   },
   "referencias": [
-   "Burkhalter WE. Early tendon transfer in upper extremity peripheral nerve injury. Clin Orthop Relat Res. 1974;(104):68-79.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de paralisia do nervo radial."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31 (Principles of Tendon Transfers of Median, Radial, and Ulnar Nerves), pp. 1061 e 1065",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0728": {
@@ -12372,18 +12441,22 @@
   "conferido": false
  },
  "mao-0837": {
-  "conceito": "**A cola de fibrina é usada como alternativa ou complemento à sutura epineural na neurorrafia.** Ela reproduz a última fase da coagulação: o fibrinogênio é convertido em fibrina pela trombina, formando um coágulo que mantém os cotos coaptados.\n\n**Técnica:**\n- coaptar os cotos alinhando os fascículos (pelo padrão de vasos epineurais e pela anatomia fascicular), sem tensão;\n- aplicar a cola ao redor da junção, evitando que entre entre os cotos (atrapalharia a regeneração);\n- manter os cotos imóveis por **cerca de 3 minutos** para que a polimerização dê resistência suficiente antes de mobilizar o membro ou mexer no campo.\n\n**Vantagens:** menos trauma ao nervo, menos reação inflamatória e menor tempo cirúrgico em relação a muitos pontos; usada com frequência em nervos digitais, em enxertos e em transferências nervosas. **Limitação:** resistência à tração menor que a da sutura; não deve ser usada sob tensão.",
-  "correta": "**3 minutos.** É o tempo mínimo de espera após a aplicação da cola de fibrina para que a polimerização mantenha a coaptação.",
+  "conceito": "A cola de fibrina entrou na microcirurgia do nervo para selar a linha de sutura, reduzir pontos e servir de barreira à cicatriz. A questão pede um número muito específico, o tempo de espera após aplicá-la, e esse número não está nos livros de referência do tema.\n\n**O que os livros dizem.** O Green's Operative Hand Surgery, 7ª ed. (cap. 30, p. 992), descreve a cola de fibrina (Tisseel) como um envelope que sela a linha de sutura, com a aprotinina diluída 1:4 em água estéril, porque sem diluir induz fibrose, e a agulha dirigida para longe da linha de reparo. A cola não resiste à tensão; NARAKAS achou resultados 15% melhores, e os autores preferem a cola a um excesso de pontos (p. 996).\n\n**O que o Campbell acrescenta.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 67, p. 2993), lembra que nenhuma cola aumentou a resistência do reparo, e que só uma delas não bloqueia a regeneração quando interposta. O capítulo 73 (p. 3260) cita um ensaio randomizado sem diferença de resultado em relação à microssutura no mediano e no ulnar do punho, com menor tempo operatório.\n\n**Conclusão.** Nenhum dos dois livros traz o tempo de espera. O gabarito oficial de 3 minutos fica como resposta da banca.\n\nA cola está na seção \"A sutura: epineural, perineural, tensão e cola\" do resumo.",
+  "correta": "**B) 3 minutos.** É o gabarito oficial da banca; o tempo de espera depois de aplicar a cola de fibrina não consta dos capítulos lidos, que descrevem a técnica e as limitações da cola.",
   "incorretas": {
-   "A": "Um minuto é pouco para a polimerização adequada.",
-   "C": "Cinco minutos não é o mínimo necessário, embora não seja prejudicial.",
-   "D": "Seis minutos excede o mínimo recomendado.",
-   "E": "Dez minutos é desnecessário como intervalo mínimo."
+   "A": "**1 minuto** não pode ser confirmado: o Green e o Campbell não trazem tempo de espera, e o gabarito oficial fixa um intervalo maior.",
+   "C": "**5 minutos** não aparece nos capítulos lidos; sem fonte para o intervalo, ele só é recusado por não coincidir com o gabarito oficial.",
+   "D": "**6 minutos** não tem respaldo nos livros, que não citam tempo de polimerização, e se afasta do intervalo mínimo que a banca adotou.",
+   "E": "**10 minutos** é o maior dos intervalos oferecidos e não tem apoio nos livros, que não trazem o dado; o gabarito oficial é outro."
   },
   "referencias": [
-   "Isaacs JE, McDaniel CO, Owen JR, Wayne JS. Comparative analysis of biomechanical performance of available 'nerve glues'. J Hand Surg Am. 2008;33(6):893-9."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair), pp. 992 e 996",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries), p. 2993",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73 (Nerve Injuries at the Level of the Hand and Wrist), p. 3260",
+   "Resumo OrtoQuestões: Lesões de nervos periféricos"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "Os capítulos lidos do Green (cap. 30) e do Campbell (caps. 67 e 73) não trazem o tempo de espera após a aplicação da cola de fibrina; o gabarito oficial (3 minutos) não é sustentado nem contrariado por eles e foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0838": {
