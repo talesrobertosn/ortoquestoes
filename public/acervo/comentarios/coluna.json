@@ -3789,20 +3789,21 @@
   "conferido": false
  },
  "coluna-0293": {
-  "conceito": "A questão cobra o vocabulário da escoliose, e cada alternativa errada tem uma única palavra ou número trocado. É o tipo de item que se resolve com a definição exata na cabeça.\n\n**As definições do Box 9.1.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 133), traz o glossário:\n- **curva torácica**: ápice entre **T2 e T11**;\n- **curva lombar**: ápice entre **L1 e L4**; toracolombar, ápice em T12, L1 ou no disco T12-L1; lombossacra, L5 ou abaixo; cervicotorácica, C7 ou T1;\n- **curva dupla**: duas curvas laterais no **mesmo** segmento da coluna;\n- **dupla maior**: duas curvas estruturais, geralmente de tamanho e rotação **semelhantes**;\n- **dupla torácica**: uma torácica superior estrutural, uma torácica inferior maior e mais deformante e uma lombar relativamente não estrutural.\n\n**Como a banca montou as armadilhas.** Encurtou os intervalos de ápice (T5 a T7 no lugar de T2 a T11; L2 a L3 no lugar de L1 a L4), trocou \"mesmo segmento\" por \"segmentos diferentes\" e \"semelhantes\" por \"diferentes\". Só a dupla torácica foi copiada sem alteração.\n\n**Uma ligação com a LENKE.** A dupla torácica do Box 9.1 corresponde ao tipo 2 de LENKE: torácica proximal estrutural, torácica principal maior, lombar não estrutural (Tachdjian, Tabela 9.3, p. 152).\n\nO glossário está na seção \"Definição, terminologia e classificação por idade\" do resumo.",
-  "correta": "**E) curva torácica dupla: torácica superior estrutural, torácica inferior maior e mais deformante, lombar relativamente não estrutural.** É a definição literal do Box 9.1.",
+  "conceito": "A nomenclatura da escoliose parece um detalhe, até o dia em que o relatório diz \"dupla maior\" e a conduta muda. O Tachdjian traz um glossário no início do capítulo (cap. 9, p. 138), que vale ler como uma régua: **toda curva é nomeada pelo seu ápice**, a vértebra mais desviada, e por seu caráter estrutural.\n\n| Termo | Definição do Tachdjian |\n|---|---|\n| Curva cervicotorácica | ápice em C7 ou T1 |\n| Curva torácica | ápice entre T2 e T11 |\n| Curva toracolombar | ápice em T12, L1 ou no espaço T12-L1 |\n| Curva lombar | ápice entre L1 e L4 |\n| Curva lombossacral | ápice em L5 ou abaixo |\n\nVêm então as combinações. **Curva dupla:** duas curvas laterais no **mesmo** segmento da coluna. **Curva dupla maior:** duas curvas estruturais, em geral de tamanho e rotação **semelhantes**. **Curva torácica dupla:** uma curva torácica superior estrutural, uma torácica inferior maior e mais deformante, e uma curva lombar relativamente não estrutural (p. 138).\n\nEsta última é a definição literal da alternativa correta. E repare como as outras foram \"quase copiadas\": a banca muda uma palavra só, e é por isso que essas alternativas enganam. Quem lê apenas o início da frase erra. Na prática, saber qual curva é estrutural decide o que entra na artrodese, para não incluir o que corrigiria sozinho.",
+  "correta": "**E: curva torácica dupla: curva torácica superior estrutural, uma torácica inferior maior e mais deformante e uma lombar relativamente não estrutural.** É a definição do glossário do Tachdjian (cap. 9, p. 138).",
   "incorretas": {
-   "A": "**Torácica com ápice entre T5 e T7** encurta demais o intervalo; o ápice torácico vai de T2 a T11.",
-   "B": "**Lombar com ápice entre L2 e L3** deixa de fora L1 e L4; o intervalo do livro vai de L1 a L4.",
-   "C": "**Curva dupla em segmentos diferentes** inverte a definição, que exige duas curvas laterais no mesmo segmento.",
-   "D": "**Dupla maior com tamanhos e rotações diferentes** troca a palavra-chave: as duas curvas estruturais são geralmente semelhantes."
+   "A": "**Faixa estreita demais.** A curva torácica tem o ápice entre T2 e T11, e não só entre T5 e T7 (Tachdjian, cap. 9, p. 138).",
+   "B": "**Mesmo erro.** A curva lombar tem o ápice entre L1 e L4 (Tachdjian, cap. 9, p. 138).",
+   "C": "**Uma palavra errada.** As duas curvas da curva dupla estão no **mesmo** segmento, e não em segmentos diferentes (Tachdjian, cap. 9, p. 138).",
+   "D": "**Outra palavra errada.** Na dupla maior, as curvas têm tamanho e rotação **semelhantes**, e não diferentes (Tachdjian, cap. 9, p. 138)."
   },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9 (Escoliose), p. 138",
    "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), p. 133, Box 9.1, e p. 152",
    "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1524",
    "Resumo OrtoQuestões: Escoliose idiopática"
   ],
-  "geradoEm": "2026-11-01",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0294": {
@@ -5138,19 +5139,20 @@
   }
  },
  "coluna-0358": {
-  "conceito": "**Radiculopatia S1: o quadro típico.** A raiz S1 é comprimida principalmente por hérnias paramedianas no disco L5-S1 (raiz descendente) ou por estenose do recesso lateral nesse nível.\n\n**Exame da raiz S1.**\n\n| Componente | Achado |\n|---|---|\n| Motor | **Tríceps sural** (flexão plantar), fibulares (eversão), glúteo máximo |\n| Sensitivo | Face posterior da panturrilha, **planta**, borda lateral do pé, quinto dedo |\n| Reflexo | **Aquileu** diminuído ou abolido |\n| Testes | Lasègue positivo; dificuldade para andar na ponta dos pés |\n\n**Comparação com outras raízes.**\n- **L4**: quadríceps, tibial anterior, face medial da perna, reflexo patelar.\n- **L5**: extensor longo do hálux, dorsiflexão, dorso do pé e hálux, sem reflexo confiável.\n- **L2 e L3**: flexão do quadril, adução, face anterior da coxa.\n\n**Atenção ao diabetes.** A neuropatia diabética também pode reduzir o reflexo aquileu (geralmente bilateral e simétrico) e causar parestesia plantar \"em bota\". No caso, a fraqueza do tríceps sural com dor lombar intensa sugere compressão radicular, mas a neuropatia deve entrar no diferencial e pode ser esclarecida pela eletroneuromiografia.\n\n> Fraqueza do tríceps sural, parestesia plantar e aquileu diminuído: raiz S1.",
-  "correta": "**E: S1.** A fraqueza do tríceps sural (flexão plantar), a parestesia na região plantar e a diminuição do reflexo aquileu formam a tríade da radiculopatia S1. O diabetes pode contribuir para a alteração do reflexo, mas o conjunto motor, sensitivo e reflexo aponta para S1.",
+  "conceito": "Um paciente diabético com dor lombar, tríceps sural fraco, parestesia na planta do pé e reflexo aquileu diminuído. Três achados, uma raiz. O Netter's Concise organiza isso em sua tabela de exame (cap. 2, p. 51):\n\n| Raiz | Reflexo | Sensibilidade | Motor |\n|---|---|---|---|\n| L4 | patelar | face medial da perna e tornozelo | tibial anterior |\n| L5 | nenhum | dorso do pé e 1º espaço | extensor longo do hálux |\n| S1 | **aquileu** | **planta e face lateral do pé** | **gastrocnêmio** |\n\nTudo aponta para **S1**. Para quem quer testar a força na beira do leito, basta pedir para ficar na ponta do pé várias vezes em um só apoio: o lado fraco cansa logo.\n\n**E a armadilha do enunciado?** Ele conta que o paciente é diabético de propósito. A neuropatia diabética também diminui o reflexo aquileu e causa parestesia plantar, em geral nos dois lados e progressiva. O que muda o raciocínio é a **dor lombar intensa** e a **fraqueza importante do tríceps sural**, que sugerem uma compressão localizada, mais do que uma neuropatia em bota. Isso vale também para quem espera uma hérnia L5-S1, uma das mais frequentes: quando há esses sinais, examine os dois lados e peça imagem.",
+  "correta": "**E: S1.** Tríceps sural, planta do pé e reflexo aquileu são os marcadores dessa raiz (Netter's Concise, cap. 2, p. 51).",
   "incorretas": {
-   "A": "**L3** afeta a flexão do quadril e a extensão do joelho, com alteração sensitiva na face anterior da coxa e no joelho. Não causa fraqueza do tríceps sural.",
-   "B": "**L2** afeta a flexão do quadril e a adução, com sensibilidade na face anterior e medial da coxa proximal. Não tem relação com o aquileu.",
-   "C": "**L4** afeta o quadríceps e o tibial anterior, com sensibilidade na face medial da perna e diminuição do reflexo patelar, não do aquileu.",
-   "D": "**L5** afeta a extensão do hálux e a dorsiflexão, com sensibilidade no dorso do pé. Não altera o reflexo aquileu nem a flexão plantar de forma significativa."
+   "A": "**Alta demais.** L3 corresponde à região anterior e medial da coxa (Netter's Concise, cap. 2, p. 51).",
+   "B": "**Ainda mais alta.** L2 não explicaria o reflexo nem o tríceps sural.",
+   "C": "**O reflexo é outro.** L4 é a raiz do reflexo patelar e da face medial da perna (Netter's Concise, cap. 2, p. 51).",
+   "D": "**A confusão comum.** L5 afeta o dorso do pé e o extensor do hálux, e não tem reflexo próprio (Netter's Concise, cap. 2, p. 51). O reflexo aquileu diminuído separa as duas."
   },
   "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 2, p. 51",
    "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
    "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Hérnia discal lombar."
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0359": {
