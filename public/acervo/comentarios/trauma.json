@@ -21571,17 +21571,19 @@
   }
  },
  "trauma-1023": {
+  "conceito": "Esta é uma figura de esqueleto com as áreas musculares pintadas, e a pergunta é qual músculo se insere na área marcada. Quem resolve é a geografia da face posterior da tíbia proximal.\n\n**A imagem.** Tíbia e fíbula de um membro inferior em vista posterior, com o pé embaixo. As áreas em vermelho são origens e as azuis, inserções. A seta aponta uma área azul triangular na parte mais alta da face posterior da tíbia, do lado medial, logo abaixo do côndilo e acima das faixas vermelhas que descem pelo corpo do osso.\n\n**O mapa da tíbia posterior** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho), aprox. p. 270 e 313). De cima para baixo: no côndilo medial, atrás, o sulco da inserção do **semimembranáceo**; abaixo dele, ocupando o triângulo proximal da face posterior, a inserção do **poplíteo**; logo abaixo do triângulo, a **linha do sóleo**, onde o sóleo nasce. Uma inserção larga, triangular e acima da linha do sóleo só pode ser do poplíteo.\n\n**O músculo.** O poplíteo nasce no côndilo lateral do fêmur, anterior e distal ao LCF, com origens acessórias na fíbula (pelo popliteofibular) e no corno posterior do menisco lateral (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1986). Corre obliquamente para baixo e para dentro e termina nessa área. É rotador medial da tíbia, destrava o joelho e, como estabilizador, segura a rotação externa.\n\n**Origem e inserção nas cores.** O gastrocnêmio aparece aqui só como lembrança: as suas cabeças nascem nos côndilos do fêmur, não na tíbia. O sóleo tem cor de origem, não de inserção, e fica abaixo da linha.\n\nA área está nas seções \"O canto posterolateral e o poplíteo\" e \"Ossos: fêmur distal, tíbia proximal e patela\" do resumo.",
+  "correta": "**B) poplíteo.** A área azul triangular no alto da face posterior da tíbia, acima da linha do sóleo, é a inserção do poplíteo.",
   "incorretas": {
-   "A": "**Abaixo.** O sóleo nasce na linha do sóleo e na fíbula, abaixo da área do poplíteo.",
-   "C": "**No fêmur.** O gastrocnêmio nasce nos côndilos femorais e se insere no calcâneo.",
-   "D": "**Posteromedial.** O semimembranáceo se insere na face posteromedial do côndilo tibial medial."
+   "A": "**Sóleo** nasce (não se insere) na linha do sóleo e na cabeça da fíbula, logo abaixo do triângulo; termina no calcâneo pelo tendão comum.",
+   "C": "**Gastrocnêmio** nasce nos côndilos do fêmur e termina no calcâneo; não tem área de inserção na tíbia proximal.",
+   "D": "**Semimembranáceo** insere-se mais alto e mais medial, no sulco da face posteromedial do côndilo medial, junto à linha articular."
   },
-  "conceito": "**O músculo poplíteo.** Nasce por um **tendão** na face **lateral** do **côndilo femoral lateral** (num sulco abaixo e à frente da origem do colateral lateral), passa **dentro** da cápsula articular, pelo **hiato poplíteo** do menisco lateral, e se torna muscular na face **posterior** da tíbia. Insere-se na face **posterior proximal da tíbia**, na área triangular **acima da linha do sóleo**, como mostra a região destacada na imagem.\n\n**As funções.** No início da **flexão** a partir da extensão completa, o poplíteo **roda internamente a tíbia** (ou externamente o fêmur, com o pé fixo), **destravando** o joelho do mecanismo de **parafuso** (screw-home), que trava o joelho em rotação externa da tíbia na extensão final. Ele também **retrai** o menisco lateral na flexão, evitando que seja pinçado, e é um estabilizador **posterolateral** importante.\n\n**O canto posterolateral.** O poplíteo faz parte do **complexo posterolateral** do joelho, junto com o **ligamento colateral lateral**, o **ligamento popliteofibular** (do tendão do poplíteo à cabeça da fíbula) e a cápsula posterolateral. Juntos, controlam o **varo** e a **rotação externa** da tíbia. A lesão do canto posterolateral, frequentemente associada às lesões dos cruzados, é detectada pelo **dial test** (aumento da rotação externa a 30 graus, e a 30 e 90 graus se houver LCP associado) e pelo **recurvato em rotação externa**. Deixar de tratá-la é causa de falha das reconstruções dos cruzados.\n\n**Os vizinhos na tíbia posterior.** O **sóleo** nasce na **linha do sóleo** e na cabeça da fíbula, abaixo da área do poplíteo. O **semimembranáceo** se insere na face **posteromedial** do côndilo tibial medial. O **gastrocnêmio** nasce nos **côndilos femorais**, e não na tíbia.\n\n**Na prova:** área triangular na face posterior proximal da tíbia, **acima da linha do sóleo** = inserção do **poplíteo**.",
-  "correta": "**Poplíteo.** A seta indica a área triangular da face posterior proximal da tíbia, acima da linha do sóleo, onde o poplíteo se insere.",
   "referencias": [
-   "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 8"
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho), aprox. p. 270 e 313",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1986",
+   "Resumo OrtoQuestões: Anatomia do joelho"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1024": {
@@ -21613,17 +21615,19 @@
   "conferido": false
  },
  "trauma-1026": {
+  "conceito": "Duas setas no lado medial da vista posterior do joelho, e as opções combinam os isquiotibiais mediais com o grácil e o sartório. A questão quer que se separe o tendão que passa reto para a pata de ganso do tendão que se ancora atrás da tíbia.\n\n**A imagem.** Joelho direito visto por trás, com as cabeças do gastrocnêmio cortadas no alto e a cápsula posterior exposta. A fíbula e o nervo fibular comum, amarelo, estão à direita, o que marca o lado lateral. No lado esquerdo, medial, a **seta 2**, mais alta, aponta o tendão largo que chega à face posteromedial da tíbia e se abre em faixas sobre a cápsula; a **seta 1**, mais baixa e mais superficial, aponta o tendão mais fino que passa por fora desse leque e continua para baixo e para a frente.\n\n**O raciocínio** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1984 e 1985; Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 8 (Coxa/Quadril), aprox. p. 240). Os dois nascem no túber isquiático e são inervados pela porção tibial do isquiático. O **semimembranáceo** termina na face posteromedial do côndilo medial e se abre em cinco expansões, a primeira o ligamento poplíteo oblíquo, que cruza a cápsula em direção ao lado lateral: é o tendão que se espalha, na seta 2. O **semitendíneo** é o tendão longo e redondo que segue além, contorna a tíbia e se junta ao grácil e ao sartório na **pata de ganso**: é o mais superficial e mais baixo, na seta 1.\n\n**Uso prático.** O semitendíneo é o tendão usado como enxerto na reconstrução do LCA; o semimembranáceo, com o oblíquo posterior e o corno posterior do menisco medial, forma o canto posteromedial.\n\nA distinção está nas seções \"O semimembranáceo e as suas cinco expansões\" e \"A coxa: quadríceps, sartório, grácil e isquiotibiais\" do resumo.",
+  "correta": "**C) semitendíneo e semimembranáceo.** A seta 1 marca o tendão fino e superficial que segue para a pata de ganso; a seta 2, o tendão que se abre em expansões na face posteromedial da tíbia.",
   "incorretas": {
-   "A": "**Primeira errada.** O grácil fica mais anterior e medial, e o tendão da seta 1 é o semitendíneo.",
-   "B": "**Invertido.** O semimembranáceo é o da seta 2, e o semitendíneo, o da seta 1.",
-   "D": "**Primeira errada.** A fáscia do sartório é mais anterior e superficial, e não corresponde à seta 1."
+   "A": "**Gracilis e semimembranáceo** acerta a seta 2, mas o grácil fica mais anterior na face medial, entre a primeira e a segunda camadas; o tendão superficial atrás é o semitendíneo.",
+   "B": "**Semimembranoso e semitendíneo** inverte a ordem: o que se abre em leque sobre a cápsula, na seta 2, é o semimembranáceo.",
+   "D": "**Fáscia do sartório e semimembranáceo** põe uma lâmina da primeira camada, que reveste a pata de ganso na face medial, no lugar de um tendão bem definido na face posterior."
   },
-  "conceito": "**O canto posteromedial do joelho.** Na face **posteromedial** do joelho, várias estruturas se sobrepõem. O **semimembranáceo** é o principal estabilizador dinâmico: tem inserção **ampla** e **profunda** na face **posteromedial** do côndilo tibial medial, com várias expansões, entre elas o **ligamento poplíteo oblíquo** (que se estende para a cápsula posterior) e fibras para o menisco medial. O **semitendíneo**, mais **superficial** e fino, corre sobre o semimembranáceo e segue para a frente, para se inserir na **pata de ganso** (com o grácil e o sartório), na face anteromedial da tíbia.\n\n**Como ler a imagem.** Na vista posterior, a seta superior (2) aponta o tendão **grosso** que se insere na face posteromedial da tíbia, com a expansão oblíqua para a cápsula: o **semimembranáceo**. A seta inferior (1) aponta o tendão **fino** e mais superficial que cruza em direção à pata de ganso: o **semitendíneo**.\n\n**A pata de ganso.** Formada, de anterior para posterior e de superficial para profundo, pelo **sartório**, **grácil** e **semitendíneo** (\"Say Grace before Tea\"). O **grácil** e o **semitendíneo** são os enxertos mais usados na reconstrução do LCA. Na retirada, é preciso liberar as **bandas acessórias** do semitendíneo para o gastrocnêmio, sob risco de cortar o enxerto curto. A **bursite anserina** causa dor na face medial da tíbia proximal.\n\n**O canto posteromedial em lesões.** Lesões do **semimembranáceo**, do **ligamento poplíteo oblíquo** e da cápsula posteromedial, associadas às do LCM e do LCA, causam **instabilidade anteromedial rotatória** e devem ser reconhecidas e reparadas.\n\n**Na prova:** vista posterior do joelho: seta **1** = **semitendíneo** (fino, superficial, vai à pata de ganso); seta **2** = **semimembranáceo** (grosso, inserção posteromedial profunda).",
-  "correta": "**Semitendíneo e semimembranáceo.** A seta 1 marca o tendão fino e superficial do semitendíneo, e a 2, o tendão grosso do semimembranáceo, com inserção posteromedial.",
   "referencias": [
-   "Netter, Atlas de Anatomia Humana, 7ª edição, Seção 2"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1984 e 1985",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 8 (Coxa/Quadril), aprox. p. 240",
+   "Resumo OrtoQuestões: Anatomia do joelho"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1027": {
@@ -21867,46 +21871,20 @@
   "conferido": false
  },
  "trauma-1040": {
-  "conceito": "O tendão do poplíteo é importante para **restringir a rotação externa da tíbia**, alternativa D. A aparente contradição com sua ação muscular desaparece quando se distingue o movimento que ele produz da direção de instabilidade que ajuda a conter.\n\nO músculo poplíteo atua como rotador interno dinâmico. Seu tendão participa do canto posterolateral, junto ao colateral fibular e ao popliteofibular. O resumo identifica poplíteo e colateral fibular como restritores primários da rotação externa; acima de 60 graus, poplíteo e popliteofibular recebem maior solicitação (Rockwood, 10ª ed., cap. 61, “Canto posterolateral”).\n\n**Produzir rotação interna e conter rotação externa são funções compatíveis.** Um sistema que puxa ou tensiona contra o deslocamento externo contribui para impedir que ele se torne excessivo. Responder “rotação interna” apenas porque esse é o sentido da ação muscular confunde função motora com direção restringida.\n\nPara o varo, o restritor estático primário é o colateral fibular, com participação secundária do restante do canto e do LCP. Para o valgo, o capítulo destaca a divisão proximal do colateral medial superficial. A pergunta não pede se o poplíteo participa de alguma estabilidade global, mas qual direção melhor caracteriza seu papel entre as opções.\n\nEssa distinção também ajuda a interpretar o teste do dial: aumento da rotação externa sugere falha dos restritores posterolaterais, e a comparação a 30 e 90 graus investiga se o LCP está associado.",
-  "correta": "**D.** A rotação tibial externa é a direção que o poplíteo ajuda a restringir como componente do canto posterolateral. Sua ação dinâmica de rotação interna não inverte essa função estabilizadora.",
+  "conceito": "O poplíteo tem duas faces, e esta questão vive da confusão entre elas: como músculo, roda a tíbia para dentro; como estabilizador, impede que ela rode para fora.\n\n**O músculo** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1986). Nasce no côndilo lateral do fêmur, anterior e distal ao LCF, com origens adicionais na fíbula, pelo popliteofibular, e no corno posterior do menisco lateral. Insere-se na face posterior da tíbia proximal. Ao contrair, é o **principal rotador medial da tíbia** no início da flexão: é quem destrava o joelho depois do \"screw home\" e retrai o menisco lateral.\n\n**O estabilizador** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho), aprox. p. 288 e 319). O Netter chama o poplíteo de **restritor primário da rotação lateral** do joelho e lista também o varo e a translação posterior entre os movimentos que ele resiste. O Campbell (p. 1993) concorda: o poplíteo e o popliteofibular resistem à translação posterior, ao varo e à **rotação externa**, e o poplíteo estabiliza dinamicamente contra a rotação tibial externa. A lógica é simples: um músculo que puxa a tíbia para dentro funciona, parado e tenso, como um freio da rotação para fora.\n\n**Quem segura os outros movimentos.** O **varo** tem o LCF como freio estático primário entre 0 e 30 graus; o poplíteo ajuda, mas não é o principal. O **valgo** é do LCT superficial, sobretudo a 30 graus, no lado oposto. A **rotação interna** tensiona os cruzados, que se enrolam, e é restringida pelas fibras de KAPLAN do trato iliotibial.\n\nO teste clínico que traduz isso é o dial: rotação externa aumentada a 30 graus indica lesão do canto posterolateral. O tema está na seção \"O canto posterolateral e o poplíteo\" do resumo.",
+  "correta": "**D) da rotação tibial externa.** O tendão poplíteo é o restritor primário da rotação lateral da tíbia; o músculo roda para dentro e, por isso, freia a rotação para fora.",
   "incorretas": {
-   "A": "**A.** O canto participa da resistência ao varo, mas o colateral fibular é o restritor estático primário destacado pelo capítulo. A função específica do poplíteo que discrimina esta questão é conter rotação externa.",
-   "B": "**B.** A principal restrição estática ao valgo pertence ao lado medial, especialmente à divisão proximal do colateral superficial. Não é a função que o resumo atribui como característica ao tendão poplíteo.",
-   "C": "**C.** Confunde movimento produzido com movimento restringido. O poplíteo roda dinamicamente a tíbia para dentro; no contexto de estabilidade perguntado, ajuda a impedir rotação excessiva para fora."
+   "A": "**Varo** é resistido pelo poplíteo de forma secundária; o freio estático primário é o LCF, entre 0 e 30 graus.",
+   "B": "**Valgo** pertence ao lado medial: o LCT superficial é o estabilizador principal, sobretudo a 30 graus de flexão.",
+   "C": "**Rotação tibial interna** é o movimento que o poplíteo produz ao contrair; quem a restringe são os cruzados, que se enrolam, e as fibras de KAPLAN."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Canto posterolateral; O lado medial."
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho), aprox. p. 288 e 319",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1986 e 1993",
+   "Resumo OrtoQuestões: Anatomia do joelho"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Canto posterolateral",
-      "O lado medial"
-     ],
-     "blocos": [
-      "canto-posterolateral-0b736828",
-      "canto-posterolateral-ed823b43",
-      "canto-posterolateral-6aabb99f",
-      "o-lado-medial-9548c808",
-      "canto-posterolateral-a148610d"
-     ],
-     "sha256": "7efdc99c30ef0866ae73cc4b708a07093b33c694714a3d8b5d284ed50eb22913",
-     "trechosSha256": "b394b1456f59c38fc88e83314f7f2353ab72b5326b2df52966cef710015df896"
-    }
-   ],
-   "questaoSha256": "03036e95952a5943a3a2762518d8d759b381a72fcf961298f2859b4d1697878a",
-   "comentarioSha256": "127017445f2bcb9d5223fcfef60599cbd9dfd26487761e58fdae9dd7b2b070b5"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "trauma-1041": {
   "incorretas": {
@@ -22072,17 +22050,18 @@
   }
  },
  "trauma-1047": {
+  "conceito": "O ligamento anterolateral (LAL) voltou ao centro da discussão do LCA, e a prova pede duas coisas sobre ele: a relação com a cápsula e o arco de movimento em que trabalha.\n\n**A anatomia** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1989 a 1992). O Campbell descreve o LAL como um ligamento distinto, encontrado em 97% dos cadáveres e **extra-articular**. Nasce na **região do epicôndilo lateral**, com variantes posteriores e proximais ou anteriores e distais ao LCF, e corre anteroinferiormente até a tíbia proximal, **a meio caminho entre o tubérculo de GERDY e a cabeça da fíbula**. Faz parte da terceira camada lateral de SEEBACHER, junto com o LCF, o popliteofibular, o fabelofibular e o tendão poplíteo.\n\n**A função.** Dá **estabilidade anterolateral**, impedindo a subluxação anterior do platô lateral, com efeito **mais significativo a 30 e a 90 graus de flexão**. É implicado nas **fraturas de SEGOND**, a pequena avulsão da borda lateral da tíbia que o Campbell considera patognomônica de lesão do LCA (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2066).\n\n**Onde está a armadilha.** A faixa de **0 a 30 graus** pertence a outro ligamento lateral: o LCF é o freio primário do varo nessa amplitude (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1990). E \"intra-articular\" descreveria os cruzados, que ficam dentro da articulação, embora fora da sinóvia.\n\nO ligamento está na seção \"O ligamento anterolateral\" do resumo.",
+  "correta": "**D) extra-articular que fornece estabilidade principalmente entre 30 e 90 graus de flexão.** O LAL é extra-articular, vai do epicôndilo lateral à tíbia entre GERDY e a fíbula, e atua sobretudo a 30 e 90 graus.",
   "incorretas": {
-   "A": "**Localização e faixa erradas.** Ele não é intra-articular, e perto da extensão o LCA domina o controle rotatório.",
-   "B": "**Localização errada.** A faixa está certa, mas o ligamento é extra-articular.",
-   "C": "**Faixa errada.** É extra-articular, mas sua contribuição maior é entre 30 e 90 graus."
+   "A": "**Intra-articular, 0 a 30 graus** erra as duas metades: o LAL fica fora da cápsula, e 0 a 30 graus é a faixa do LCF contra o varo.",
+   "B": "**Intra-articular, 30 a 90 graus** acerta o arco, mas põe dentro da articulação um ligamento da terceira camada lateral, externo à cápsula.",
+   "C": "**Extra-articular, 0 a 30 graus** acerta a posição e erra o arco: perto da extensão quem trabalha contra o varo é o LCF; o LAL tem efeito maior a 30 e 90 graus."
   },
-  "conceito": "**O ligamento anterolateral.** Descrito já no século XIX por **Segond** (uma banda fibrosa associada à fratura que leva seu nome) e redescoberto em 2013, o **ligamento anterolateral** (LAL) é uma estrutura **extra-articular** na face lateral do joelho. Nasce perto do **epicôndilo femoral lateral** (um pouco proximal e posterior a ele), cruza **superficialmente** o colateral lateral e se insere na tíbia **anterolateral**, entre o **tubérculo de Gerdy** e a cabeça da fíbula, próximo à área da **fratura de Segond**, com fibras para o menisco lateral.\n\n**A função.** Controla a **rotação interna** da tíbia, contribuindo para a estabilidade **rotatória anterolateral** junto com o LCA e o **trato iliotibial** (suas fibras profundas, as fibras de Kaplan). Fica mais **tenso** com a **flexão** e a rotação interna, e sua contribuição é maior entre cerca de **30 e 90 graus** de flexão. Perto da extensão, o **LCA** é o principal restritor rotatório.\n\n**A fratura de Segond.** É a avulsão óssea na tíbia **anterolateral**, logo abaixo do platô, pelo complexo anterolateral (LAL e fibras do trato iliotibial). É um sinal quase **patognomônico** de lesão do **LCA** (presente na grande maioria dos casos), e também de lesões meniscais.\n\n**Por que isso importa.** Pacientes com **pivot shift** muito positivo, **hiperfrouxidão**, esportes de pivô, revisão de LCA ou lesões anterolaterais associadas têm mais falha após a reconstrução isolada do LCA. Nesses casos, associa-se um **procedimento extra-articular lateral**: **reconstrução do LAL** ou **tenodese lateral extra-articular** (Lemaire modificada, com uma tira do trato iliotibial), que reduzem a instabilidade rotatória residual e a taxa de nova ruptura.\n\n**Na prova:** ligamento **anterolateral** = **extra-articular**, controla a rotação interna, mais atuante entre **30 e 90 graus** de flexão; ligado à fratura de **Segond**.",
-  "correta": "**Extra-articular, estabilizando principalmente entre 30 e 90 graus.** O ligamento anterolateral fica fora da articulação e se tensiona com a flexão e a rotação interna, contribuindo mais nessa faixa.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1989 a 1992 e 2066",
+   "Resumo OrtoQuestões: Anatomia do joelho"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1048": {
