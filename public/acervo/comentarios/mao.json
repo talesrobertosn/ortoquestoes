@@ -31417,6 +31417,128 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1854": {
+  "conceito": "A história da reconstrução da mama começa antes dos implantes, e a banca aqui pede um nome: quem primeiro levou músculo para o tórax depois do câncer? **Iginio TANSINI**, cirurgião italiano. Ele descreveu primeiro um retalho cutâneo, em 1896, e renovou o procedimento em 1906, incorporando o grande dorsal (PMC11650608; PMC10477619).\n\nConvém ter cuidado com a palavra \"reconstrução\". O objetivo original era fechar o defeito da mastectomia, não refazer a mama. A técnica foi muito usada na Europa entre 1910 e 1920, e só nos anos 1970 o grande dorsal foi padronizado para reconstrução autóloga (PMC10477619). Uma releitura dos desenhos originais sugere até que o pedículo era o do retalho escapular (Iginio Tansini revisited, PubMed 26214785). Mesmo assim, TANSINI é consistentemente creditado pelo primeiro uso de um retalho muscular na parede torácica (PMC3140231).",
+  "correta": "**D: retalho de Tansini.** É o retalho do grande dorsal descrito por ele no início do século XX, para o defeito da mastectomia (PMC10477619; PMC3140231).",
+  "alerta": "As fontes consultadas confirmam a contribuição de TANSINI; os outros nomes das alternativas não foram detalhados nelas, e por isso são tratados de modo geral. Letra D mantida.",
+  "incorretas": {
+   "A": "**Era dos implantes.** CRONIN é lembrado pela introdução do implante de silicone nos anos 1960, bem depois do início do século.",
+   "B": "**Grande nome, outro capítulo.** GILLIES é um dos pais da cirurgia plástica moderna, mas o retalho muscular do grande dorsal não leva o nome dele.",
+   "C": "**Outro doador.** HOLMSTRÖM é conhecido pela reconstrução microcirúrgica com tecido abdominal, várias décadas depois.",
+   "E": "**Também é abdome.** DREVER é ligado a retalhos do reto abdominal, sem relação com o grande dorsal."
+  },
+  "referencias": [
+   "Breast reconstruction with latissimus dorsi flap: a comprehensive review, PMC10477619",
+   "Updates on Breast Reconstruction, PMC11650608",
+   "Workhorse Flaps in Chest Wall Reconstruction, PMC3140231",
+   "Iginio Tansini revisited, Plast Reconstr Surg, PubMed 26214785"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1855": {
+  "conceito": "Grande parte do risco de câncer de mama pode ser resumida em uma ideia: quanto tempo o tecido mamário fica exposto ao estrogênio. Daí a lista do StatPearls: menarca precoce, menopausa tardia, nuliparidade, primeira gestação tardia, terapia hormonal e contraceptivo oral (Disparity in Early Detection of Breast Cancer). É exatamente a alternativa correta.\n\nVale ajustar os números das outras. As mutações germinativas, como as de BRCA1 e BRCA2, respondem por cerca de 5% a 10% dos casos, e não metade (StatPearls, Radiation Therapy for Early-Stage Breast Cancer; PMC11836418). Homens também têm a doença, e o risco é de cerca de 7% ao longo da vida em portadores de BRCA2 (StatPearls).",
+  "correta": "**C: está relacionado a fatores hormonais: menarca precoce, menopausa tardia, primeira gestação após 30 anos, nuliparidade e contraceptivos.** É a lista dos fatores reprodutivos do StatPearls (Disparity in Early Detection of Breast Cancer).",
+  "incorretas": {
+   "A": "**Homens também adoecem.** A doença é rara, mas existe, e portadores de BRCA2 têm risco de cerca de 7% (StatPearls, Radiation Therapy for Early-Stage Breast Cancer).",
+   "B": "**O número está inflado.** São cerca de 5% a 10% dos casos, e não 50% (PMC11836418).",
+   "D": "**Não é rastreio geral.** A ressonância é reservada a grupos específicos, como mulheres de alto risco. A mamografia é o exame populacional.",
+   "E": "**A idade está baixa.** As recomendações brasileiras de sociedades costumam começar aos 40 anos, e não aos 35."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Disparity in Early Detection of Breast Cancer (NBK564311)",
+   "StatPearls (NCBI Bookshelf), Radiation Therapy for Early-Stage Breast Cancer (NBK459174)",
+   "Breast cancer: pathogenesis and treatments, PMC11836418"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1856": {
+  "conceito": "BI-RADS 0 é o único que não responde à pergunta \"isso é benigno ou maligno?\". Ele diz apenas que o exame ainda não terminou: é preciso outra incidência, um exame complementar, ou comparar com exames anteriores. Por isso é tão fácil de marcar errado.\n\nA escala, em ordem: 0 incompleto; 1 negativo; 2 benigno, os dois em rotina; 3 provavelmente benigno, com controle em cerca de 6 meses, cuja segurança já foi medida (PMC8445238); 4 e 5, suspeitos, em biópsia. Cada alternativa errada da questão é a descrição de um desses números.",
+  "correta": "**A: indicar exame adicional, pois a lesão não foi suficientemente esclarecida.** É o significado de BI-RADS 0: avaliação incompleta.",
+  "incorretas": {
+   "B": "**É o BI-RADS 1.** Exame sem achados, em rotina.",
+   "C": "**É o BI-RADS 2.** Há um achado, com certeza benigno, em rotina.",
+   "D": "**É o BI-RADS 3.** Probabilidade muito baixa de malignidade, com controle em cerca de 6 meses (PMC8445238).",
+   "E": "**É o BI-RADS 4 ou 5.** Lesão suspeita, que vai para biópsia."
+  },
+  "referencias": [
+   "BI-RADS 3 on Screening Breast Ultrasound, PMC8445238"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1857": {
+  "conceito": "Um \"eczema\" unilateral do mamilo que não melhora: esse é o alerta. A doença de PAGET da mama parece uma doença de pele, mas costuma haver um câncer por baixo. Os sintomas mais comuns são secreção e alterações eczematosas no complexo aréolo-mamilar (PMC9722944). Ela representa de 1% a 3% dos cânceres de mama, ocorre principalmente na pós-menopausa e está quase sempre associada a um carcinoma subjacente (PMC9139704).\n\nO atraso no diagnóstico é o principal problema: o quadro pode imitar doenças benignas de pele, e por isso uma lesão persistente pede biópsia (PMC11346752).",
+  "correta": "**B: doença de Paget.** A lesão eczematosa no complexo aréolo-mamilar, em mulher depois da menopausa, é a apresentação típica (PMC9722944; PMC9139704).",
+  "alerta": "As revisões consultadas falam em pós-menopausa, sem a faixa exata de 60 a 70 anos do enunciado. Letra B mantida.",
+  "incorretas": {
+   "A": "**É uma massa.** O tumor filoide cresce como nódulo volumoso, e não como lesão eczematosa do mamilo.",
+   "C": "**Tipo histológico de massa.** O carcinoma mucinoso também se apresenta como nódulo, em geral sem esse aspecto na aréola.",
+   "D": "**Outra massa.** O medular é um nódulo bem delimitado, em geral em mulheres mais jovens.",
+   "E": "**Mais ligado a descarga.** O papilífero costuma envolver ductos, sem a lesão de pele eczematosa como apresentação principal."
+  },
+  "referencias": [
+   "Mammary Paget's Disease: An Update, PMC9139704",
+   "Paget's disease of the breast: Our 20 years' experience, PMC9722944",
+   "Mammary Paget's Disease Mimicking Benign and Malignant Dermatological Conditions, PMC11346752"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1859": {
+  "conceito": "O linfoma anaplásico de grandes células associado a implante (BIA-ALCL) é raro, e tudo nele gira em torno da cápsula. O quadro típico é um **seroma tardio**, às vezes com massa, anos depois da cirurgia (PMC6605706). O diagnóstico se apoia em clonalidade de células T, forte positividade para CD30 e a morfologia característica; a pesquisa de ALK é negativa (PMC9472752; PMC7480932).\n\nCom o diagnóstico, os passos são: estadiar, operar e seguir. A avaliação começa com ultrassonografia e, em casos selecionados, ressonância, e a **PET-CT pré-operatória é recomendada** para estadiamento e planejamento (PMC9472752). A cirurgia é a capsulectomia em bloco com retirada do implante, feita em quase 97% dos casos numa revisão sistemática (PMC9551598).\n\nA questão pede a incorreta: dizer que não é preciso estadiar contraria essas recomendações.",
+  "correta": "**B: não são necessários estadiamento clínico pré-operatório com PET-CT e exames de imagem.** É a afirmação incorreta: a PET-CT é recomendada antes da cirurgia para estadiar e planejar (PMC9472752).",
+  "incorretas": {
+   "A": "**Verdadeira.** O seroma tardio é a apresentação clássica, e o diagnóstico vem da análise do líquido e da cápsula (PMC6605706; PMC9472752).",
+   "C": "**Verdadeira.** A capsulectomia em bloco é o tratamento das fases iniciais (PMC9551598).",
+   "D": "**Verdadeira para quem não tem a doença.** A remoção profilática discutida pelas sociedades refere-se ao implante contralateral em quem já tem o diagnóstico (PMC11346714), e não às pacientes assintomáticas.",
+   "E": "**Verdadeira.** A positividade para CD30 é parte central do diagnóstico (PMC9472752)."
+  },
+  "referencias": [
+   "A Review of BIA-ALCL and Updated Treatment Guidelines, PMC9472752",
+   "BIA-ALCL: What We Know, PMC6605706",
+   "BIA-ALCL: An Updated Systematic Review, PMC9551598",
+   "AAPS Consensus on BIA-ALCL, PMC11346714",
+   "BIA-ALCL with Emphasis on Brentuximab, PMC7480932"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1860": {
+  "conceito": "REGNAULT, em 1976, resolveu a ptose com uma única referência: onde está o complexo aréolo-papilar em relação ao sulco inframamário (StatPearls, Breast Ptosis)?\n\n| Grau | Posição da aréola |\n|---|---|\n| I | ao nível do sulco |\n| II | abaixo do sulco, mas acima do ponto mais baixo da mama |\n| III | abaixo do sulco e no ponto mais baixo do contorno da glândula |\n| Pseudoptose | aréola no sulco ou acima, com a glândula caída abaixo dele |\n\nO enunciado descreve a aréola abaixo do sulco e do contorno da glândula, ou seja, grau III. Por isso, faz sentido a cicatriz em T invertido, que é a técnica para ptoses maiores, com muito excesso de pele. O preço é a carga de cicatriz e o risco de necrose na junção do T (StatPearls, Mastopexy; PMC8575710).",
+  "correta": "**C: ptose verdadeira grau 3.** A aréola está abaixo do sulco e no ponto mais baixo do contorno (StatPearls, Breast Ptosis).",
+  "incorretas": {
+   "A": "**A aréola ainda está no sulco.** No grau I, ela não passou para baixo dele (StatPearls, Breast Ptosis).",
+   "B": "**A mais próxima.** A aréola está abaixo do sulco, mas ainda acima do ponto mais baixo da mama (StatPearls, Breast Ptosis).",
+   "D": "**O termo descreve outro problema.** A ptose parcial não corresponde à posição do enunciado, em que a aréola caiu bem abaixo do sulco.",
+   "E": "**O oposto.** Na pseudoptose, a aréola fica no sulco ou acima, e é a glândula que desce (StatPearls, Breast Ptosis)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Breast Ptosis (NBK567792)",
+   "StatPearls (NCBI Bookshelf), Mastopexy (NBK610682)",
+   "Inverted-T pattern reduction mammoplasty, PMC8575710"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1862": {
+  "conceito": "Em um paciente com 45 dias de UTI, a lesão sacral é o resultado da pressão sobre uma saliência óssea. SHEA, em 1975, propôs graduar a lesão com base na fisiopatologia e associar cada grau à conduta: do cuidado local e das mudanças de decúbito nos graus mais leves até a excisão e o retalho nos mais profundos (Pressure sores: classification and management, PubMed 1192654).\n\nPense na profundidade. O estágio inicial é a pele íntegra, com eritema que não desaparece. O seguinte é a **perda parcial da pele**, como uma abrasão ou bolha, que fica na epiderme e na derme: é o que o enunciado descreve. Os próximos já passam da derme, e os mais graves chegam ao músculo e ao osso. A linguagem atual da NPUAP segue essa mesma ideia, usando agora o termo \"lesão\" e numerais arábicos (PubMed 27749790).",
+  "correta": "**B: estágio 2.** A lesão superficial, tipo abrasão ou bolha, com perda parcial de epiderme e derme, é o segundo degrau (PubMed 1192654; PubMed 27749790).",
+  "alerta": "O resumo disponível do artigo de SHEA fala em quatro graus, e o enunciado, em cinco grupos. A descrição do estágio 2 é a mesma nas duas formas. Letra B mantida.",
+  "incorretas": {
+   "A": "**A pele ainda está íntegra.** O estágio inicial é o eritema, sem perda de tecido.",
+   "C": "**Passou da derme.** O estágio 3 já atinge o subcutâneo, e o tratamento pode exigir excisão e retalho (PubMed 1192654).",
+   "D": "**Chega à profundidade.** O estágio 4 expõe músculo ou osso (PubMed 1192654).",
+   "E": "**O último grupo do enunciado.** Na ideia de escala, é a lesão extensa e profunda, e não a abrasão superficial."
+  },
+  "referencias": [
+   "Shea JD, Pressure sores: classification and management, PubMed 1192654",
+   "Revised NPUAP Pressure Injury Staging System, PubMed 27749790"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1863": {
   "conceito": "Dois dedos vermelhos e doloridos há dois dias: antes de nomear a infecção, o cirurgião de mão pergunta onde está o pus, e se ele existe. A anatomia da mão faz essa diferença valer muito, porque cada espaço tem conduta própria.\n\nA **celulite** é a infecção do subcutâneo, muitas vezes difusa, em geral por estafilococo ou estreptococo. Ela **não forma pus**, por isso começa com tratamento não cirúrgico; se não responder ao antibiótico venoso em 12 a 24 horas, o Green manda desconfiar de uma coleção escondida (cap. 2, Tipos de infecções). Um quadro difuso em mais de um dedo, como o do enunciado, combina com ela: uma infecção fechada num único compartimento costuma ficar restrita àquele dedo.\n\nSó que há uma ressalva importante. Quando o Green fala em frequência, a frase é outra: **a paroníquia é a infecção mais comum da mão**, três vezes mais frequente em mulheres, e o germe mais comum é o *S. aureus* (cap. 2, p. 20). A banca não listou a paroníquia com esse nome, e por isso a questão fica entre celulite e panarícios.\n\n> **Na prova:** sem pus e difusa, celulite: antibiótico e reavaliação em 12 a 24 horas. Se o livro perguntar a mais comum da mão, é a paroníquia.",
   "correta": "**B: a celulite.** É o gabarito da banca, e cabe no caso: vermelhidão e dor em dois dedos há dois dias, sem descrição de coleção. O Green define a celulite como infecção difusa do subcutâneo, sem pus, de tratamento inicial não cirúrgico (cap. 2). Veja no alerta a diferença para a frase de frequência do livro.",
@@ -31543,6 +31665,113 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1871": {
+  "conceito": "O nome \"melanoma juvenil\" é um susto histórico. Foi SOPHIE SPITZ, em 1948, quem descreveu essas lesões, e na época elas foram tratadas como potencialmente malignas; hoje, muitos autores defendem o caráter benigno em certas faixas de idade (PMC5390491).\n\nO nevo de SPITZ costuma ser uma pápula ou nódulo único, em forma de cúpula, geralmente na face e nos membros de crianças e adolescentes, com 3 a 15 mm e cor rosada, embora existam formas pigmentadas (PubMed 12660629; PMC12908600). Pode crescer rápido, chegando a cerca de 1 cm em até 6 meses (PubMed 34503728), o que assusta. A dificuldade prática é separá-lo do melanoma espitzoide, tanto na clínica quanto na histologia (PMC8245725).",
+  "correta": "**C: nevo de Spitz.** É o antigo melanoma juvenil, uma pápula em cúpula na face e nos membros de jovens (PMC5390491; PubMed 12660629).",
+  "incorretas": {
+   "A": "**Lesão de adulto com outro desenho.** O nevo displásico é plano, com bordas irregulares, em geral no tronco.",
+   "B": "**É o nome do displásico.** \"Nevo de Clark\" é outro nome para o nevo displásico, o que torna A e B a mesma ideia.",
+   "D": "**Mancha, não pápula.** O nevo spilus é uma mancha café com leite com pontos mais escuros dentro.",
+   "E": "**Cor diferente.** O nevo azul tem pigmento profundo, com a cor característica, e não a história do melanoma juvenil."
+  },
+  "referencias": [
+   "Spitz nevus in the pediatric population: protocol, PMC5390491",
+   "Multiple Spitz nevus, PubMed 12660629",
+   "Spitz Nevus: Review and Update, PubMed 34503728",
+   "Pediatric Spitzoid Melanoma, PMC12908600",
+   "Recurrence of melanoma after excised Spitz nevus, PMC8245725"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1873": {
+  "conceito": "O esqueleto da face também envelhece, e não por igual. Por isso a aparência muda mesmo sem perda de pele. Uma revisão muito citada resume os pontos vulneráveis: o terço médio, sobretudo a maxila, incluindo a região piriforme; os aspectos **superomedial e inferolateral** da borda orbital; e a região pré-jowl da mandíbula (Changes in the Facial Skeleton With Aging, PMC3404279).\n\nA órbita, portanto, fica maior com a idade, mas de forma desigual. As alterações inferolaterais costumam aparecer antes, na meia-idade, enquanto a recessão superomedial pode só surgir na velhice (PMC3404279). O resultado é o que se vê na clínica: bolsa de gordura medial proeminente, sobrancelha medial mais alta e alongamento da junção pálpebra-bochecha. Uma revisão mais recente liga a reabsorção à menor carga mecânica sobre essas áreas (PMC12914125).",
+  "correta": "**D: superomedial e inferolateral.** São as duas áreas da borda orbital que as revisões apontam com forte predisposição à reabsorção (PMC3404279).",
+  "incorretas": {
+   "A": "**Só uma certa.** A inferolateral está na lista, mas a superolateral não (PMC3404279).",
+   "B": "**As duas estão trocadas.** A resposta é o par oposto: superomedial e inferolateral (PMC3404279).",
+   "C": "**Só uma certa.** A superomedial entra; a inferomedial não (PMC3404279).",
+   "E": "**Só uma certa.** A superolateral não é uma área de reabsorção preferencial (PMC3404279)."
+  },
+  "referencias": [
+   "Changes in the Facial Skeleton With Aging, PMC3404279",
+   "Facial bone aging: An update, PMC12914125"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1875": {
+  "conceito": "A água fervente causa uma lesão clássica, e o que define a conduta é a profundidade. A queimadura **superficial de espessura parcial** é rosa, úmida, com bolhas, muito dolorosa, e clareia sob pressão, porque a circulação está preservada. Ela geralmente cicatriza em 10 a 15 dias, com pouca cicatriz, embora possa alterar a pigmentação (StatPearls, Thermal Burns; Burn Classification).\n\nA profunda é outra doença: atinge a derme reticular, lesa nervos e anexos, e leva 3 semanas ou mais para fechar (StatPearls). E a de espessura total não clareia à pressão.\n\nLembrando o EXCETO: o aspecto \"lagosta\" fala de um vermelho escuro uniforme, que não combina com o rosa úmido e bolhoso da lesão superficial de espessura parcial. Por isso, é ele a exceção.",
+  "correta": "**B: aspecto em lagosta vermelha escura em criança.** É o item que não pertence ao quadro. A queimadura superficial de espessura parcial é rosa e úmida, com bolhas, e clareia à pressão (StatPearls, Burn Classification).",
+  "incorretas": {
+   "A": "**Faz parte.** Rosa com bolhas é a imagem típica (StatPearls, Burn Classification).",
+   "C": "**Faz parte.** Com os nervos preservados, a dor é intensa (StatPearls, Thermal Burns).",
+   "D": "**Faz parte.** Como os anexos estão preservados, ela fecha sozinha, sem enxerto.",
+   "E": "**Faz parte.** O prazo está dentro do que o StatPearls descreve, de 10 a 15 dias."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Thermal Burns (NBK430773)",
+   "StatPearls (NCBI Bookshelf), Burn Classification (NBK539773)",
+   "StatPearls (NCBI Bookshelf), Acute and Chronic Thermal Burn Evaluation and Management (NBK430730)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1876": {
+  "conceito": "Quando se pode chamar uma ferida de crônica? Não há resposta universal, e vale saber disso. Uma revisão recente diz que não há consenso sobre o tempo necessário: alguns estudos definem como crônica a ferida que não cicatrizou em 4 semanas, outros em 3 meses, outros em 4 a 8 semanas. Um consenso usa outro critério: a ferida que não reduziu 40% a 50% depois de 4 semanas de cuidado padrão (PMC12358188).\n\nA banca escolheu 4 semanas, que é um dos cortes mais usados. O número faz sentido por outro motivo: a fase proliferativa normal deveria terminar em cerca de 2 semanas (PMC5817091). Uma ferida parada depois do dobro desse tempo não está mais seguindo a evolução esperada, e quem cuida dela deve procurar a causa.",
+  "correta": "**B: 4 semanas.** É o corte adotado pela banca e por vários estudos, ainda que não seja unânime (PMC12358188).",
+  "alerta": "Não há consenso: há definições de 4 semanas, 4 a 8 semanas, 6 semanas e 3 meses (PMC12358188). Em uma questão do mesmo caderno de 2022 (mao-1835), 4 meses é considerado errado. Letra B mantida.",
+  "incorretas": {
+   "A": "**Pouco tempo.** Com 2 semanas, a ferida ainda pode estar na proliferação normal (PMC5817091).",
+   "C": "**Dentro de uma das faixas, mas fora da escolha.** Alguns autores aceitam até 8 semanas, porém a banca preferiu o corte de 4 semanas (PMC12358188).",
+   "D": "**Definição de alguns estudos.** Três meses aparece na literatura, mas é a definição mais longa (PMC12358188).",
+   "E": "**Longo demais.** Seis meses não aparece como corte habitual, e essa espera atrasaria a investigação."
+  },
+  "referencias": [
+   "A Review of Chronic Wounds, PMC12358188",
+   "Role of MicroRNA in Proliferation Phase of Wound Healing, PMC5817091"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1877": {
+  "conceito": "O couro cabeludo é pouco elástico, mas tem uma circulação generosa, e a ideia de ORTICOCHEA foi usar essas duas características a favor. A técnica, publicada em 1967, divide o restante do couro cabeludo em vários retalhos que giram e fecham a falha, trocando área com cabelo por área com cabelo, com doador único. Mais tarde ele a modificou para três retalhos (PMC10082862).\n\nQuanto o método cobre? Os números variam entre as fontes. Uma revisão cita defeitos de até 30% do crânio com a técnica de quatro retalhos (PMC8526234), e outra refere-se a defeitos maiores que 15% do couro cabeludo (PMC2884702). Um relato de caso a chama de excelente opção para defeitos maiores que 50 cm² (PMC9441781). Para perdas maiores, como em avulsão extensa, é preciso expansão de tecido ou retalho livre.",
+  "correta": "**A: 30% da extensão do crânio.** É o limite citado para a técnica de quatro retalhos de ORTICOCHEA (PMC8526234).",
+  "incorretas": {
+   "B": "**Além do citado.** As revisões colocam o limite da técnica em torno de 30% (PMC8526234).",
+   "C": "**Confunde com outro método.** A referência a 50% aparece em revisões sobre expansão tecidual, e não sobre os retalhos de ORTICOCHEA (PMC8526234).",
+   "D": "**Muito além.** Defeitos dessa extensão pedem retalho livre (PMC3577606).",
+   "E": "**Também muito além.** Nessa extensão, retalhos locais não bastam (PMC3577606)."
+  },
+  "referencias": [
+   "Reconstruction of Complex Scalp Defects, PMC8526234",
+   "Tissue Expansion Reconstruction of the Scalp, PMC2884702",
+   "Modification of Orticochea Three-Flap Technique, PMC10082862",
+   "Free Flap Reconstruction for Complex Scalp Defects, PMC3577606",
+   "Large Scalp Defect Reconstruction, PMC9441781"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1879": {
+  "conceito": "No nariz asiático, o dorso baixo e a ponta arredondada resultam de cartilagens alares mais fracas, columela curta e tecido fibroadiposo abundante (PMC4174207; PubMed 20446203). Por isso, a rinoplastia de aumento com implante, muitas vezes de silicone, é tão comum nesses pacientes.\n\nAs revisões listam os riscos: infecção, desvio, extrusão e inflamação tardia, além de mau posicionamento e aumento excessivo (PMC4174207). Com a pele fina e uma cápsula que pode encurtar o nariz, a cirurgia secundária é difícil (PMC4174244). Numa estimativa, as complicações dos implantes de silicone chegam a 36% (PMC11099405).\n\nO **desvio** é um problema particularmente visível, porque o implante rígido fica sob uma pele fina, e o olho percebe qualquer assimetria do dorso.",
+  "correta": "**C: desvio do implante.** É a alternativa da banca, e o desvio está entre as complicações citadas nas revisões (PMC4174207).",
+  "alerta": "As revisões consultadas listam infecção, desvio, extrusão e inflamação tardia, mas não apontam qual é a mais comum. A letra C foi mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Real, mas não é a escolhida.** A infecção está nas listas, mas é menos visível no dia a dia do que o implante torto (PMC4174207).",
+   "B": "**Grave e menos frequente na lógica da banca.** A extrusão é uma das temidas, em geral tardia (PMC4174207).",
+   "D": "**Consequência possível.** A contratura da cápsula pode causar nariz curto, desvio ou migração do implante (PMC4174244), mas não é o que a banca pede.",
+   "E": "**Evento agudo e pouco específico.** O hematoma não é uma complicação peculiar do implante nasal."
+  },
+  "referencias": [
+   "Current Update in Asian Rhinoplasty, PMC4174207",
+   "Rhinoplasty for the Asian nose, PubMed 20446203",
+   "Silicone-induced Capsular Flap in Secondary Asian Rhinoplasty, PMC4174244",
+   "Secondary rhinoplasty using a folded dermofat graft, PMC11099405"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1884": {
   "conceito": "A paciente chega por causa da mama, mas a síndrome de POLAND é mais ampla do que o tórax. A pergunta testa justamente isso: quem olha só o tórax esquece que a anomalia pode descer pelo membro.\n\nO Green define a síndrome como a falta de um músculo da cintura escapular com anormalidades na mão, que podem ser muito discretas, e diz que não há correlação entre a gravidade de cada parte. O comum é a aplasia da **cabeça esternocostal do peitoral maior**, com braquidactilia dos dedos centrais; a causa provável é a interrupção do fluxo da artéria subclávia no embrião (7ª ed., cap. 36). Nas formas com simbraquidactilia, a hipoplasia da mão é unilateral, com falta de músculos da cintura escapular, e pode haver deformidade considerável da parede torácica (7ª ed., cap. 36).\n\nRepare no estilo das alternativas erradas: \"sempre\", \"nunca\", \"porção externa\". São absolutas ou trocam a estrutura, e são fáceis de desconfiar.\n\n> **Na prova:** POLAND é a soma de peitoral maior esternocostal e mão do mesmo lado. Desconfie de \"sempre\" e \"nunca\".",
   "correta": "**C: anomalias ipsilaterais da mão, do antebraço ou de todo o membro superior podem ocorrer.** É o espectro de hipoplasia descrito no Green, que vai de alterações mínimas a importantes (7ª ed., cap. 36).",
@@ -31554,6 +31783,24 @@
   },
   "referencias": [
    "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 36 (Deformidades da mão e dos dedos)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1885": {
+  "conceito": "Antes de planejar o retalho de grande dorsal para reconstruir a mama, a pergunta é simples: esse músculo e o pedículo dele estão intactos? A **toracotomia posterolateral clássica, sem preservar o músculo**, normalmente já o dividiu, e é por isso que ela limita o uso dele (PMC10348727). Se o músculo foi cortado, o retalho não tem como ser levado como planejado.\n\nCuriosamente, o pedículo toracodorsal lesado parece menos definitivo do que se imagina. Tradicionalmente, sua divisão era contraindicação, mas relatos mostram retalhos sobrevivendo pelas vias colaterais, como a artéria torácica lateral ou o ramo do serrátil, com avaliação por imagem pré-operatória ou angiografia intraoperatória (PMC13372286; PubMed 23219749). São casos isolados, mas mostram que a contraindicação é relativa.\n\nPor isso a banca aponta a toracotomia como a principal contraindicação, embora a alternativa A seja uma confusão legítima.",
+  "correta": "**B: toracotomia posteroanterior prévia.** A toracotomia que divide o músculo tira do retalho aquilo que ele precisa ter (PMC10348727). O enunciado usa \"posteroanterior\", mas a ideia é a posterolateral clássica.",
+  "alerta": "A lesão do pedículo toracodorsal (letra A) é tradicionalmente tratada como contraindicação, ainda que relatos recentes a relativizem (PMC13372286). A letra B foi mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Clássica, mas relativizada.** Tradicionalmente, era contraindicação; relatos mostram retalhos sobrevivendo por colaterais, sobretudo com avaliação prévia da perfusão (PMC13372286; PubMed 23219749).",
+   "C": "**Fator de risco, não contraindicação principal.** O tabagismo aumenta as complicações, mas não impede o retalho por si só.",
+   "D": "**Comum nessas pacientes.** O esvaziamento axilar pode ameaçar o pedículo, mas muitas mulheres reconstruídas já passaram por ele. Vale avaliar o pedículo.",
+   "E": "**Pode até favorecer a escolha.** Em tórax irradiado, um retalho com vascularização própria é uma opção frequente, em vez de só implantes."
+  },
+  "referencias": [
+   "Intercostal Artery-based Latissimus Dorsi Muscle after Division, PMC10348727",
+   "LD Flap Reconstruction Following Division of the Thoracodorsal Pedicle, PMC13372286",
+   "Survival of a pedicled latissimus dorsi flap without a thoracodorsal pedicle, PubMed 23219749"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
