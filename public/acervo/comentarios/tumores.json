@@ -1915,19 +1915,19 @@
   "conferido": false
  },
  "tumores-0170": {
-  "conceito": "**O laboratório do mieloma.** O mieloma é uma proliferação **clonal** de plasmócitos que produz uma imunoglobulina **monoclonal**. O Greenspan resume o achado: a urina contém proteína de Bence Jones, a razão albumina/globulina se inverte, as proteínas séricas totais aumentam, e a eletroforese demonstra gamaglobulinas monoclonais. Essas proteínas urinárias são **cadeias leves livres monoclonais**, kappa ou lambda. Elas são nefrotóxicas, precipitam nos túbulos e causam o rim do mieloma; no mieloma de cadeias leves, a eletroforese sérica pode ser **normal**, porque as cadeias são filtradas para a urina. Por isso a investigação inclui eletroforese e imunofixação da urina de 24 horas e dosagem de cadeias leves livres no soro.\n\n**O resto do quadro** cabe no **CRAB**: hipercalcemia, insuficiência renal, anemia e lesões ósseas. Pico policlonal indica inflamação, infecção ou doença autoimune, e não mieloma.\n\n**Na prova:** mieloma é **pico monoclonal e Bence-Jones na urina**; nunca policlonal, nunca hipocalcemia.",
-  "correta": "**E: presença de proteínas anormais na urina (proteína de Bence-Jones).** São cadeias leves produzidas pelo clone e filtradas pelo rim, e a marca clássica do laboratório do mieloma.",
+  "conceito": "O mieloma é o câncer primário mais comum do osso. Como o Campbell lembra, seu pico é na quinta a sétima década (cap. 27, p. 1024). Ao contrário dos tumores ósseos em geral, ele chega acompanhado de problemas sistêmicos: fraqueza, emagrecimento, anemia, trombocitopenia, neuropatia, **hipercalcemia** e **insuficiência renal**, frequentemente já no diagnóstico (p. 1025). Os ossos preferidos são a coluna, as costelas e a pelve, e a fratura patológica é relativamente comum.\n\n**Para entender os exames, comece pela célula.** O plasmócito é uma fábrica de anticorpos. No mieloma, um único clone de plasmócitos se multiplica e produz grande quantidade do mesmo anticorpo, ou de parte dele. Daí vêm três achados:\n\n- Na eletroforese do soro, um **pico monoclonal**, estreito, porque todas as moléculas são iguais.\n- Na urina, as cadeias leves livres, que passam pelo rim: a **proteína de BENCE-JONES**. É a alternativa correta, e essas cadeias também lesam o túbulo renal, o que explica a insuficiência.\n- No sangue, **cálcio alto**, porque o osso é destruído sem a formação correspondente.\n\nAs alternativas erradas invertem esses achados. Note o detalhe do \"policlonal\": esse padrão, largo, é o da inflamação crônica, em que muitos clones trabalham juntos.\n\n> **Na prova:** mieloma é monoclonal, com BENCE-JONES na urina e cálcio alto.",
+  "correta": "**E: presença de proteínas anormais na urina (proteína de Bence-Jones).** São as cadeias leves produzidas em excesso pelo clone de plasmócitos, e ajudam a explicar a insuficiência renal citada pelo Campbell (cap. 27, p. 1025).",
   "incorretas": {
-   "A": "**Pode existir, mas é inespecífica.** A proteína sérica total sobe mesmo; a hiperglobulinemia, porém, aparece em muitas doenças. A questão quer o achado que caracteriza o mieloma.",
-   "B": "**Clone, e não policlone.** O pico do mieloma é monoclonal. O policlonal sugere inflamação ou doença autoimune.",
-   "C": "**Ao contrário.** A reabsorção óssea eleva o cálcio; a hipocalcemia não faz parte do quadro.",
-   "D": "**Sem graça.** Proteínas normais não seriam achado, e o mieloma produz justamente as anormais."
+   "A": "**Termo impreciso.** Pode haver aumento de uma imunoglobulina, mas o achado que define a doença é o componente monoclonal, e a alternativa E é mais específica.",
+   "B": "**A palavra errada.** O pico do mieloma é **monoclonal**. O policlonal aponta para uma inflamação crônica.",
+   "C": "**O inverso.** O Campbell cita a **hipercalcemia** entre os problemas do diagnóstico (cap. 27, p. 1025), pela destruição óssea.",
+   "D": "**Contradiz a doença.** O mieloma é definido justamente pela proteína anormal produzida pelo clone."
   },
   "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 27, p. 1024 e 1025",
    "Greenspan, Radiologia Ortopédica, 6ª ed., capítulo sobre mieloma",
    "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 24 (General Principles of Tumors), p. 891, Quadro 24.3"
   ],
-  "formato": "corrido",
   "geradoEm": "2026-11-02",
   "conferido": false
  },

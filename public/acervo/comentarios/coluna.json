@@ -5305,19 +5305,20 @@
   }
  },
  "coluna-0365": {
-  "conceito": "**Classificação de Meyerding da espondilolistese.** Mede a translação anterior da vértebra superior sobre a inferior, em porcentagem do comprimento da placa terminal da vértebra de baixo, na radiografia em perfil em pé.\n\n**Como medir.** Divide-se a placa superior da vértebra inferior em quatro partes iguais e observa-se onde fica a borda posterior da vértebra que escorregou.\n\n| Grau | Deslizamento |\n|---|---|\n| I | Até 25% |\n| II | 25% a 50% |\n| III | 50% a 75% |\n| IV | 75% a 100% |\n| V (espondiloptose) | Acima de 100%: a vértebra caiu à frente da inferior |\n\n**Baixo grau e alto grau.** Graus I e II são de baixo grau; graus III a V, de alto grau. A distinção muda o tratamento: alto grau em paciente imaturo, sobretudo sintomático, costuma ser cirúrgico.\n\n**Outras medidas.** O ângulo de escorregamento (cifose lombossacral) e os parâmetros pélvicos (incidência pélvica, inclinação sacral) complementam a avaliação do risco de progressão.\n\n**O caso.** Grau III corresponde a deslizamento entre 50% e 75%; entre as alternativas, o valor compatível é 60%. Vale notar que, no adolescente, o deslizamento é muito mais comum em L5-S1; em L4-L5, deve-se considerar outras causas.\n\n> Meyerding III: deslizamento de 50% a 75%.",
-  "correta": "**C: 60%.** O grau III de Meyerding corresponde a um deslizamento entre 50% e 75% do comprimento da placa terminal da vértebra inferior. O valor de 60% está nessa faixa e caracteriza espondilolistese de alto grau.",
+  "conceito": "Um adolescente esportista com dor lombar que melhora em repouso: pense em espondilólise e espondilolistese. A pergunta é sobre a régua usada para medir quanto a vértebra escorregou.\n\nMEYERDING dividiu o corpo vertebral de baixo em quatro partes e usou o deslizamento em porcentagem:\n\n| Grau | Deslizamento |\n|---|---|\n| I | até 25% |\n| II | de 25% a 50% |\n| III | de 50% a 75% |\n| IV | mais de 75% |\n\nO **grau III**, portanto, fica entre 50% e 75%, e a única opção dentro dessa faixa é **60%**. O Tachdjian usa o mesmo corte, 50%, para separar as formas de baixo grau das de alto grau: Meyerding de 0 a 2, com menos de 50%, e Meyerding 3 ou mais, com 50% ou mais (cap. 11, p. 270 e 271). Essa linha tem peso clínico, porque o grupo de alto grau é onde o tratamento cirúrgico é mais discutido, e onde o equilíbrio da pelve e da coluna passa a orientar a conduta.\n\n**Um detalhe do enunciado.** A questão fala em L4-L5, mas a espondilolistese no adolescente é mais comum em L5-S1. A régua de MEYERDING é a mesma para qualquer nível, e por isso a pergunta se resolve do mesmo jeito.",
+  "correta": "**C: 60%.** Está entre 50% e 75%, a faixa do grau III de MEYERDING, de acordo com o corte de 50% para o alto grau do Tachdjian (cap. 11, p. 270 e 271).",
   "incorretas": {
-   "A": "**20%** corresponde ao grau I (até 25%), espondilolistese de baixo grau.",
-   "B": "**40%** corresponde ao grau II (25% a 50%), ainda considerado de baixo grau.",
-   "D": "**80%** corresponde ao grau IV (75% a 100%).",
-   "E": "**99%** está no grau IV, no limite da espondiloptose (grau V, acima de 100%)."
+   "A": "**Grau I.** Até 25% é o primeiro degrau.",
+   "B": "**Grau II.** Até 50% ainda é baixo grau, abaixo do corte do Tachdjian (cap. 11, p. 270).",
+   "D": "**Grau IV.** Acima de 75%, já é o degrau seguinte.",
+   "E": "**Grau IV, quase uma espondiloptose.** O nível fica além do pedido, muito perto de a vértebra perder todo o contato."
   },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 11, p. 270 e 271",
    "Meyerding HW. Spondylolisthesis. Surg Gynecol Obstet. 1932;54:371-377.",
    "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Espondilólise e espondilolistese."
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0366": {
