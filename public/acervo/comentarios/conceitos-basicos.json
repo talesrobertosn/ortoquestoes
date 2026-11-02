@@ -63,14 +63,20 @@
   "conferido": false
  },
  "conceitos-basicos-0005": {
+  "conceito": "Quando se fala em enxerto, três palavras separam o que o material faz de verdade: **osteogênese**, **osteoindução** e **osteocondução**. A biocerâmica, usada para ocupar espaço ou dar estrutura, cai quase sempre numa só delas, e é isso que a questão cobra.\n\n**As três propriedades** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 3 (Biologic and Biophysical Technologies for the Enhancement of Fracture Repair), p. 65 aprox.). Osteogênese é o enxerto formar osso por conta própria, porque traz **células vivas** que sobreviveram ao transplante. Osteoindução é recrutar células mesenquimais do hospedeiro e diferenciá-las em condroblastos e osteoblastos, papel clássico da BMP. Osteocondução é servir de **arcabouço passivo** por onde entram vasos e osso novo.\n\n**O que a cerâmica é.** Os substitutos sintéticos (hidroxiapatita, fosfato tricálcico, sulfato de cálcio, cimento de fosfato de cálcio) não têm área doadora nem risco de transmitir doença, mas **funcionam apenas como arcabouço**, sem células e sem sinal biológico. A diferença prática está no tempo de reabsorção: o sulfato de cálcio some em 6 a 12 semanas, o fosfato tricálcico em 6 a 18 meses e a hidroxiapatita leva mais de 10 anos. O cimento de fosfato de cálcio é o de maior resistência à compressão. Por isso a palavra \"estrutural\" no enunciado não muda a resposta: a cerâmica sustenta e conduz, não induz nem produz osso.\n\n**Quando ela basta.** Como o Rockwood (cap. 30, p. 909 aprox.) lembra, cerâmicas e aloenxerto sem componente biológico têm papel pequeno quando usados sozinhos numa pseudartrose; eles estendem o autoenxerto, mas não o substituem.\n\nA divisão entre as três propriedades está na seção \"Enxertos e substitutos ósseos\" do resumo.",
+  "correta": "**C) osteocondução.** A biocerâmica é um arcabouço poroso e passivo: deixa vasos e osteoblastos do hospedeiro entrarem, mas não traz células nem sinal para induzir osso.",
   "incorretas": {
-   "A": "A osteogênese exige células vivas, e a cerâmica é um material inorgânico, sem células.",
-   "B": "A osteoindução exige sinais como as BMPs, que a cerâmica pura não tem.",
-   "D": "Osteovascularização não é uma das propriedades clássicas usadas para classificar enxertos."
+   "A": "**Osteogênese** exige células vivas capazes de formar osso, como as do autoenxerto esponjoso ou do aspirado de medula; cerâmica é material inerte e não tem célula nenhuma.",
+   "B": "**Osteoindução** depende de um sinal biológico, como BMP ou matriz óssea desmineralizada; a cerâmica não libera fator nenhum e é a armadilha clássica de quem confunde conduzir com induzir.",
+   "D": "**Osteovascularização** não é uma das três propriedades descritas nos livros para enxertos; a entrada de vasos é consequência da osteocondução, não uma propriedade à parte."
   },
-  "conceito": "Um **enxerto ósseo** pode ajudar a formar osso de três maneiras diferentes, e cada material oferece uma combinação delas.\n\n**Osteogênese**: o enxerto traz **células vivas** capazes de formar osso. Só o osso do próprio paciente (autólogo), retirado na hora, e o aspirado de medula têm essa propriedade.\n\n**Osteoindução**: o enxerto traz **sinais químicos** que recrutam células do paciente e as fazem virar células formadoras de osso. Exemplos: as BMPs (proteínas morfogenéticas ósseas) e a matriz óssea desmineralizada.\n\n**Osteocondução**: o enxerto oferece apenas um **andaime**, uma estrutura porosa por onde os vasos e as células do próprio paciente crescem e depositam osso novo. Ele não traz células nem sinais.\n\nHá ainda a **osteointegração**, que é a ligação direta da superfície de um material ao osso, sem tecido fibroso no meio.\n\nAs **biocerâmicas** (hidroxiapatita, fosfato tricálcico, sulfato de cálcio) são materiais minerais sintéticos, sem células e sem fatores de crescimento. Funcionam como **andaime**: são **osteocondutoras**. Diferem na velocidade em que o corpo as reabsorve: o sulfato de cálcio some rápido, o fosfato tricálcico tem velocidade intermediária e a hidroxiapatita permanece por muito tempo.\n\nO enxerto autólogo é o único que reúne as três propriedades principais, por isso é considerado o padrão de referência.",
-  "correta": "Osteocondução. A biocerâmica é um arcabouço mineral por onde o osso do paciente cresce, sem trazer células nem sinais.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 3 (Biologic and Biophysical Technologies for the Enhancement of Fracture Repair), p. 65 e 69 aprox.",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 909 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 2 (enxertos), pp. 150 a 150.e2",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0006": {
@@ -200,14 +206,19 @@
   "conferido": false
  },
  "conceitos-basicos-0014": {
+  "conceito": "A cintilografia óssea com tecnécio mede atividade metabólica, não anatomia, e por isso ajuda a separar tipos de pseudartrose que a radiografia confunde.\n\n**Uma captação que vem em três padrões.** A cintilografia é inespecífica: quase toda pseudartrose capta o radiotraçador como uma fratura que consolida (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 885 a 886 aprox.). Dois tipos fogem disso. A **atrófica**, avascular e sem reação óssea, é relativamente **fria**. A **oligotrófica**, viável e com pouco calo, **capta**. A pergunta do enunciado descreve o terceiro padrão, o mais característico: uma **fenda fria entre duas áreas quentes**.\n\n**O que a fenda fria significa.** É a pseudartrose **sinovial**. O movimento excessivo e crônico no foco forma uma **pseudocápsula sinovial com líquido**, e os **canais medulares ficam selados**. Entre as extremidades, onde só há líquido e membrana, não há captação; nas pontas, o osso reativo capta. O Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2907) usa a expressão \"cold cleft\" para o mesmo achado, em meio a áreas de atividade aumentada.\n\n**Consequência no tratamento.** Por ter propriedades de hipertrófica, a sinovial é vital, mas exige desbridar a pseudocápsula, **abrir o canal** e dar estabilidade com compressão; o estímulo biológico ajuda.\n\nA tabela de tipos está na seção \"Classificação biológica: o que falta em cada tipo\" do resumo.",
+  "correta": "**A) sinovial.** A fenda fria entre duas áreas quentes é o retrato cintilográfico da falsa articulação, com pseudocápsula e canais medulares selados.",
   "incorretas": {
-   "B": "A pseudartrose atrófica capta pouco de forma difusa, sem o padrão de duas áreas quentes.",
-   "C": "A oligotrófica tem captação intermediária, sem uma fenda fria no meio.",
-   "D": "A hipertrófica capta intensamente e de forma contínua, sem interrupção."
+   "B": "**Atrófico** capta pouco ao longo de todo o foco, por ser avascular e sem reação óssea; o padrão é de frio relativo, sem as duas áreas quentes nas pontas.",
+   "C": "**Oligotrófico** é viável e capta; é justamente a cintilografia positiva que o separa da atrófica, e não há fenda fria no meio.",
+   "D": "**Hipertrófico** tem calo abundante e hipervascularização, com captação intensa no foco; a fenda fria só surge quando há pseudocápsula e canais selados, o que o torna sinovial."
   },
-  "conceito": "Uma **pseudartrose** é uma fratura que não consolidou. Para tratá-la, é preciso entender por que ela não consolidou, e a **cintilografia óssea** ajuda. Nesse exame, injeta-se uma substância radioativa que se acumula onde o osso está ativo, com metabolismo e circulação. As áreas que captam muito aparecem \"quentes\"; as que captam pouco, \"frias\".\n\n**Pseudartrose hipertrófica**: as pontas do osso estão cheias de vida, formam muito calo, mas não se unem porque há movimento demais. Na cintilografia, captação intensa e contínua. Falta estabilidade, não biologia.\n\n**Pseudartrose atrófica**: as pontas estão sem vida, sem calo. Capta pouco. Falta biologia.\n\n**Pseudartrose oligotrófica**: um meio-termo, com captação intermediária.\n\n**Pseudartrose sinovial**: entre as duas pontas do osso formou-se uma **falsa articulação**, uma cavidade revestida por uma membrana parecida com a sinovial e cheia de líquido. Na cintilografia, as duas pontas captam (áreas quentes), mas a cavidade no meio, sem vasos, não capta. O resultado é uma **fenda fria entre duas áreas quentes**.\n\nIsso muda a cirurgia: só estabilizar não basta. É preciso retirar a falsa articulação, abrir o canal das pontas do osso, avivar as superfícies, estabilizar e, em geral, colocar enxerto.",
-  "correta": "Sinovial. A fenda fria é a cavidade com líquido e membrana formada entre as pontas do osso, que capta pouco por não ter vasos.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 881, 885 e 886 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2907",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0015": {
@@ -410,17 +421,21 @@
   "conferido": false
  },
  "conceitos-basicos-0030": {
+  "conceito": "Comparar o esponjoso autólogo com o homólogo é perguntar o que sobra de um enxerto quando as células morrem no processamento. O autólogo vem do próprio paciente; o homólogo (aloenxerto) vem de **outro indivíduo** (Campbell's Operative Orthopaedics, 15ª ed., cap. 2 (enxertos), pp. 150 a 150.e2, p. 150.e1).\n\n**A tabela que decide a questão.** A Tabela 2.8 do Campbell, adaptada de KHAN, avalia osteogênese, osteocondução e osteoindução de cada enxerto. O **esponjoso autógeno** marca osteogênese forte, osteocondução forte e osteoindução fraca. O **esponjoso alógeno** marca osteogênese ausente, osteocondução forte e osteoindução fraca. A interseção é, portanto, **osteocondução e osteoindução**; a osteogênese pertence só ao autólogo, porque só ele traz células vivas que sobrevivem ao transplante (e, mesmo assim, apenas cerca de 15% dos osteócitos e osteoblastos, segundo o capítulo 30 do Rockwood, p. 904 a 905 aprox.).\n\n**Atenção à divergência.** O texto corrido do Campbell chama o aloenxerto esponjoso de osteocondutor e \"não osteoindutor\", e o Rockwood (cap. 3, p. 67 aprox.) o descreve como essencialmente osteocondutor, com indução variável só no DBM. O gabarito oficial segue a tabela, e é essa a leitura a adotar na prova.\n\nO quadro comparativo está na seção \"Enxertos e substitutos ósseos\" do resumo.",
+  "correta": "**C) osteocondução e osteoindução.** São as duas propriedades que a tabela do Campbell marca para os dois esponjosos; a terceira, a osteogênese, falta no homólogo.",
   "incorretas": {
-   "A": "O homólogo não tem osteogênese, porque o processamento mata as células.",
-   "B": "Pelo mesmo motivo, a osteogênese não é comum aos dois.",
-   "D": "A vascularização não é uma propriedade do enxerto esponjoso, que é revascularizado pelo paciente."
+   "A": "**Osteogênese e osteoindução** erra ao exigir célula viva nos dois; o enxerto homólogo é processado e chega sem células, de modo que não forma osso por conta própria.",
+   "B": "**Osteogênese e osteocondução** acerta a condução, mas inclui a formação de osso por células do próprio enxerto, que o aloenxerto não oferece.",
+   "D": "**Osteocondução e vascularização** usa um termo que os livros não tratam como propriedade de enxerto; a revascularização acontece em todo enxerto que conduz, e a osteoindução, que é a segunda propriedade comum, ficou de fora."
   },
-  "conceito": "Para tratar uma **pseudartrose** (fratura que não consolidou), muitas vezes se usa **enxerto ósseo esponjoso**, o osso \"de miolo\", poroso. Ele pode ser **autólogo** (do próprio paciente, geralmente da crista ilíaca) ou **homólogo** (de doador, de banco de ossos).\n\nUm enxerto pode ajudar a formar osso de três formas:\n\n**Osteogênese**: traz células vivas que formam osso.\n\n**Osteoindução**: traz sinais químicos (como as BMPs) que fazem as células do paciente se transformarem em células formadoras de osso.\n\n**Osteocondução**: oferece um andaime por onde o osso do paciente cresce.\n\nO **autólogo** tem as três. O **homólogo** perde a osteogênese, porque o processamento do banco de ossos mata as células, mas mantém o andaime e alguma capacidade indutora. Por isso, o que os dois têm **em comum** é a **osteocondução e a osteoindução**.\n\nA osteogênese, exclusiva do autólogo, é o que o mantém como padrão de referência na pseudartrose. O preço é a dor e as complicações no local de onde o osso foi retirado. Outra fonte de autólogo em grande volume é o canal do fêmur, colhido por um aparelho que fresa, irriga e aspira (RIA).\n\n\"Vascularização\" não é uma propriedade do enxerto esponjoso: ele não traz vasos próprios; é o paciente que o revasculariza. Enxertos que vêm com vasos próprios, como a fíbula vascularizada, são outra categoria.",
-  "correta": "Osteocondução e osteoindução. As duas propriedades estão presentes no esponjoso autólogo e no homólogo; a osteogênese é exclusiva do autólogo.",
+  "alerta": "O gabarito segue a Tabela 2.8 do Campbell (KHAN), que dá ao esponjoso alógeno osteoindução fraca. O texto do Campbell e o Rockwood (caps. 3 e 30) descrevem o aloenxerto processado como essencialmente osteocondutor, então os livros divergem entre si.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 2 (enxertos), pp. 150 a 150.e2 (Tabela 2.8)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 3 (Biologic and Biophysical Technologies for the Enhancement of Fracture Repair), p. 67 aprox.",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 904 a 905 e 909 aprox.",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0031": {
@@ -680,17 +695,19 @@
   "conferido": false
  },
  "conceitos-basicos-0051": {
+  "conceito": "Depois de uma haste, o canal está ocupado por metal, e é isso que decide qual exame vê a pseudartrose: o que atravessa o implante sem apagar a imagem.\n\n**A TC.** Reformata em qualquer plano e, na tíbia, teve **sensibilidade de 100%** e **especificidade de 62%** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 884 a 885 aprox.). Em termos de raciocínio, não deixa escapar uma pseudartrose, embora possa fazer suspeitar de uma que já consolidou. Ponte óssea em menos de 25% da circunferência significou 37,5% de falha, contra 9,7% quando passa de 25%. O Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2905 e 2924) concorda: altamente sensível, pouco específica, útil mesmo com implantes. Ela ainda avalia a rotação.\n\n**Por que a radiografia simples falha.** A união é a ponte de calo, mas a incidência fora do plano esconde o traço, e implantes muito estáveis mascaram os sintomas até quebrarem. Os sinais indiretos (implante solto ou quebrado, autodinamização) vêm da radiografia, mas o traço em si pode passar despercebido.\n\n**Os outros exames.** A cintilografia é inespecífica e serve à fenda fria da sinovial; o laboratório serve à infecção, sem prever a pseudartrose. Ressonância e planigrafia não figuram como exames de diagnóstico nos capítulos do tema.\n\nA tabela de exames está na seção \"Diagnóstico: clínica, imagem e laboratório\" do resumo.",
+  "correta": "**D) tomografia computadorizada.** É o exame de maior sensibilidade (100% na tíbia), útil mesmo com a haste no canal, ao custo de baixa especificidade (62%).",
   "incorretas": {
-   "A": "**Planigrafia.** Esse método forma cortes por movimento coordenado do tubo e do filme, reduzindo parcialmente a sobreposição. Foi útil antes da tomografia computadorizada, mas não fornece a mesma resolução, reconstruções multiplanares nem avaliação volumétrica do foco; não é a escolha atual quando se deseja esclarecer a união ao redor de uma haste.",
-   "B": "**Radiografia simples.** É a primeira etapa e o principal exame de seguimento, pois permite comparar alinhamento, integridade do implante e progressão do calo ao longo das consultas. A pergunta, porém, busca maior sensibilidade diante de possível pseudartrose: sobreposição de corticais e implante tornam uma radiografia isolada menos esclarecedora quando a união permanece incerta.",
-   "C": "**Ressonância magnética.** Mostra edema medular, abscessos e partes moles, podendo ajudar quando há suspeita de infecção ou diagnóstico alternativo. Para demonstrar ponte cortical após uma haste, a tomografia costuma ser mais direta; artefatos metálicos podem prejudicar a ressonância, apesar das sequências modernas de redução de artefato."
+   "A": "**Planigrafia** não é citada pelo Rockwood nem pelo Campbell entre os exames da pseudartrose; a TC é o exame de corte que os livros recomendam.",
+   "B": "**Radiografia simples** é o primeiro exame e mostra a ponte de calo e o implante quebrado, mas a incidência fora do plano esconde o traço, e por isso perde em sensibilidade para a TC.",
+   "C": "**Ressonância magnética** não é citada pelo Rockwood nem pelo Campbell como exame de escolha na pseudartrose; o exame de maior sensibilidade nos livros é a TC."
   },
-  "conceito": "**Consolidação não é uma fotografia isolada.** Após uma fratura diafisária fixada com haste intramedular, a avaliação combina dor à carga, estabilidade, evolução no tempo e formação de ponte óssea nas radiografias em duas incidências. Retardo de consolidação significa evolução mais lenta que a esperada; pseudartrose indica ausência de progressão para união, sem depender de um único limite de meses para todos os ossos e tratamentos. O primeiro exame costuma ser a radiografia seriada, porque mostra alinhamento, implante e mudança do calo com baixo custo e dose de radiação.\n\n**Por que a tomografia entra quando há dúvida.** Na radiografia, as corticais projetadas se sobrepõem e a haste pode ocultar parte do foco. Cortes finos e reconstruções da tomografia computadorizada permitem procurar ponte óssea em diferentes planos e distinguir uma cortical aparentemente unida em uma projeção de um traço ainda persistente. Em uma série de 35 pacientes com fratura da tíbia e radiografias inconclusivas, a tomografia teve sensibilidade de 100% para pseudartrose, mas especificidade de 62%: três fraturas chamadas de não consolidadas pela imagem estavam unidas na cirurgia. Esse resultado sustenta seu valor para detectar falha, não autoriza cirurgia com base somente no laudo.\n\n**Cada alternativa tem uma pergunta própria.** A ressonância caracteriza melhor medula e partes moles quando se investiga infecção, tumor ou outra causa de dor, embora metal possa degradar a imagem. A planigrafia é uma técnica antiga de tomografia linear, superada pela aquisição volumétrica. Antes de revisar uma haste por suspeita de pseudartrose, é preciso considerar também infecção relacionada à fratura e a adequação mecânica da fixação, porque ambas mudam o tratamento.",
-  "correta": "**Tomografia computadorizada.** Entre os métodos listados, é a melhor ferramenta adicional para procurar ausência de ponte óssea quando as radiografias após haste são duvidosas. O estudo citado mostrou alta sensibilidade nesse cenário específico, mas também falsos positivos; sintomas, exames seriados e contexto clínico continuam decisivos.",
   "referencias": [
-   "Bhattacharyya et al. The accuracy of computed tomography for the diagnosis of tibial nonunion. https://pubmed.ncbi.nlm.nih.gov/16595457/"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 883 a 885 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2905 e 2924",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "geradoEm": "2026-10-08",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0052": {
@@ -903,14 +920,19 @@
   "conferido": false
  },
  "conceitos-basicos-0067": {
+  "conceito": "Na tíbia, o osso é subcutâneo, o envelope muscular é incompleto e a irrigação periosteal é preciosa. Escolher o método de tratamento da pseudartrose diafisária é escolher o que preserva essa irrigação e ainda dá estabilidade.\n\n**A frase do Campbell** (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2924): a **haste intramedular fresada fechada** é o procedimento de escolha para a pseudartrose da tíbia. A via **fechada** preserva e até aumenta a irrigação periosteal; a **fresagem** acrescenta enxerto endosteal e inflamação útil ao foco. Na troca de haste, SWANSON teve **98%** de consolidação em tíbias assépticas com pelo menos 50% de aposição cortical, em média 4,8 meses.\n\n**A técnica 64.10.** Fibulectomia de 2 a 2,5 cm se a fíbula está arqueada e recebe a carga, porque a fíbula íntegra pode impedir a aposição; haste **ao menos 2 mm maior** que a anterior; fresar 1 mm além; **travar o parafuso distal primeiro** e comprimir; carga total liberada.\n\n**Quando mudar de ideia.** Fixador externo por mais de 2 semanas aumenta a infecção; fratura previamente infectada pede outra estratégia ou haste com antibiótico; desvio em baioneta, que não reduz fechado, obriga a abrir. A placa serve melhor à pseudartrose desalinhada em qualquer osso, mas na tíbia o lado convexo comprime com risco maior de infecção e falha.\n\nA tíbia está na seção \"Haste intramedular: troca, dinamização e a tíbia\" do resumo.",
+  "correta": "**B) haste intramedular fresada fechada.** É o método de escolha do Campbell para a pseudartrose diafisária da tíbia: preserva a irrigação periosteal e a fresagem deposita enxerto.",
   "incorretas": {
-   "A": "A placa exige abrir o foco e descolar as partes moles. Fica reservada a situações específicas, como pseudartroses perto da articulação.",
-   "C": "A osteotomia da fíbula é um complemento, usado quando a fíbula impede a compressão, e não trata a pseudartrose sozinha.",
-   "D": "A fresagem já leva enxerto ao foco. Abrir o foco só acrescenta agressão às partes moles, sem benefício."
+   "A": "**Placa e parafusos** exigem abordagem aberta num envelope de partes moles já limitado; no Campbell a placa tibial aparece com risco maior de infecção e falha, e fica para o desvio que a haste não corrige.",
+   "C": "**Osteotomia da fíbula com enxerto ósseo** descreve só um tempo do tratamento: a fibulectomia de 2 a 2,5 cm libera a compressão, mas a estabilidade vem da haste, não do enxerto.",
+   "D": "**Haste intramedular aberta com enxerto** abre o foco e agride a irrigação periosteal que a via fechada preserva; só se justifica quando o desvio não reduz por via fechada."
   },
-  "conceito": "A **pseudartrose** é uma fratura que não consolidou. Na diáfise da tíbia, a forma mais comum é a **hipertrófica**: as pontas do osso estão vivas, formam bastante calo, mas não se unem porque há movimento demais no foco. Ou seja, sobra biologia e falta estabilidade.\n\nO tratamento preferencial é a **haste intramedular fresada, colocada de forma fechada** (sem abrir o foco da fratura). Ela resolve o problema por vários caminhos ao mesmo tempo:\n\nA **fresagem** do canal (alargá-lo com brocas) produz fragmentos de osso que se depositam no foco e funcionam como um enxerto do próprio paciente.\n\nA **haste** dá a estabilidade que faltava.\n\nA técnica **fechada** não abre o foco nem descola os músculos e o periósteo, preservando o sangue que chega ao osso.\n\nA haste permite **apoiar o peso cedo**, e a carga estimula a consolidação.\n\nSe o paciente já tinha uma haste, a estratégia é trocá-la por uma mais grossa, depois de nova fresagem (*exchange nailing*).\n\nOutras opções têm indicações específicas: placa nas pseudartroses perto da articulação ou quando é preciso corrigir deformidade; enxerto ósseo nas atróficas, que precisam de biologia; tratamento da infecção antes de tudo nas infectadas. A osteotomia da fíbula é um complemento, quando a fíbula inteira impede a compressão do foco da tíbia.",
-  "correta": "Haste intramedular fresada fechada. Estabiliza o foco e leva enxerto pela fresagem, sem abrir a fratura nem prejudicar a circulação.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2922 e 2924 a 2926",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 895 a 897 aprox.",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0068": {
@@ -979,18 +1001,21 @@
   "conferido": false
  },
  "conceitos-basicos-0073": {
-  "conceito": "### O que as imagens mostram\n- **Primeira:** fêmur distal com placa e falha óssea metadiafisária (pseudartrose com perda de osso).\n- **Segunda:** implante retirado, **espaçador de cimento** ocupando o defeito, com estabilização provisória.\n- **Terceira:** nova placa e o defeito **preenchido por enxerto** em consolidação.\n\nÉ a técnica de ==Masquelet== (membrana induzida).\n\n### Os dois tempos\n- **1º tempo:** desbridamento radical, estabilização e **espaçador de cimento** (com ou sem antibiótico). Ao redor do cimento forma-se uma **membrana vascularizada**, rica em fatores de crescimento.\n- **2º tempo** (classicamente após 6 a 8 semanas): abre-se a membrana com cuidado, retira-se o cimento e preenche-se a cavidade com **enxerto esponjoso** (crista ilíaca, RIA), fechando a membrana sobre ele.\n\n### Por que funciona\nA membrana **impede a reabsorção** do enxerto e fornece vascularização e sinalização. Permite reconstruir defeitos de vários centímetros.\n\n> **Na prova:** espaçador de cimento + membrana induzida + enxerto = ==Masquelet==.",
-  "correta": "**Masquelet.**\n- Reconstrução pela membrana induzida.",
+  "conceito": "A pergunta une uma imagem e uma definição: pseudartrose infectada tratada pela **indução de membrana vascularizada**. A definição já entrega a técnica, e as radiografias mostram as etapas.\n\n**A imagem.** Três radiografias de um fêmur distal com placa lateral e parafusos epifisários. Na primeira, a placa ponteia um defeito ósseo metadiafisário, com o foco claramente aberto. Na do meio, o defeito está ocupado por uma massa densa e irregular, compatível com o **espaçador de cimento (PMMA)**, e há pontos de sutura ou grampos na pele lateral: é o fim do primeiro tempo. Na terceira, a mesma placa agora acompanha um segmento preenchido por osso de aspecto novo, o resultado da retirada do cimento e do **enxerto** no segundo tempo.\n\n**A técnica de MASQUELET** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 911 a 914 aprox.). O primeiro tempo desbrida e coloca o espaçador, com antibiótico quando há infecção; a reação ao cimento forma uma **membrana induzida** vascularizada, que produz fatores de crescimento como a BMP-2. Em 4 a 6 semanas (4 a 8 no Campbell, cap. 2; 6 no cap. 23, que descreve o espaçador com antibiótico na infecção), retira-se o cimento e enxerta-se esponjoso dentro da membrana, que o contém. Na infectada, o Rockwood acrescenta antibiótico local e sistêmico e fixação estável.\n\n**O que as outras opções não são.** PAPINEAU é enxerto aberto sobre granulação; JUDET é decorticação osteoperiosteal; RIA é um instrumento de colheita de enxerto.\n\nO quadro de técnicas com nome está na seção \"Defeitos ósseos e a técnica de MASQUELET\" do resumo.",
+  "correta": "**C) MASQUELET.** Espaçador de cimento no primeiro tempo, membrana induzida vascularizada e enxerto no segundo: é exatamente a sequência que as radiografias ilustram.",
   "incorretas": {
-   "A": "**Decorticação.**\n- Judet é decorticação osteoperiosteal, sem espaçador.",
-   "B": "**Enxertia aberta.**\n- Papineau deixa o enxerto esponjoso exposto, cicatrizando por segunda intenção.",
-   "D": "**Fonte de enxerto.**\n- O RIA fornece enxerto, mas não nomeia a técnica."
+   "A": "**JUDET** (com PATEL) descreveu a decorticação osteoperiosteal, em que se levantam fragmentos finos de osso preservando o periósteo; não envolve espaçador de cimento nem membrana induzida.",
+   "B": "**PAPINEAU** é o enxerto ósseo aberto sobre tecido de granulação, em três tempos (desbridamento e estabilização, autoenxerto, enxerto de pele); o leito vascularizado vem da granulação, e não de uma membrana formada por cimento.",
+   "D": "**RIA** é o sistema fresa-irrigador-aspirador, usado para colher enxerto do canal femoral; é uma fonte de osso, e não uma técnica de indução de membrana."
   },
   "referencias": [
-   "Masquelet AC, Begue T. The concept of induced membrane for reconstruction of long bone defects. Orthop Clin North Am. 2010;41:27-37.",
-   "Giannoudis PV et al. Masquelet technique for the treatment of bone defects. Injury. 2011;42:591-598."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 911 a 914 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 2 (enxertos), pp. 150 a 150.e2, p. 150.e1",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (osteomielite), pp. 814 e 815",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2916",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0074": {
@@ -1032,17 +1057,20 @@
   "conferido": false
  },
  "conceitos-basicos-0077": {
+  "conceito": "Para decidir se o anti-inflamatório atrapalha o osso, é preciso lembrar como a fratura começa a consolidar: com uma resposta inflamatória conduzida por **prostaglandinas**, produzidas pela **ciclo-oxigenase** (COX).\n\n**A posição do Rockwood** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 875 aprox.): **tanto os AINE tradicionais quanto os inibidores seletivos da COX-2 interferem** na suprarregulação da COX-2 e na síntese de prostaglandina no osso. O capítulo 3 (p. 74 aprox.) dá a biologia: a **COX-2 é necessária à ossificação endocondral**, e bloqueá-la diminui o calo; a COX-1 não parece afetar; a consolidação intramembranosa não é afetada. Como o não seletivo também bloqueia a COX-2, ele entra no mesmo grupo.\n\n**Os números clínicos.** Uma metanálise com mais de 10.000 pacientes encontrou OR 3 para pseudartrose, e OR 4,4 nos estudos de qualidade moderada em ossos longos; dose, via e duração não alteraram o risco. Outra revisão, com 12.895 pacientes, não achou evidência forte, e o cetorolaco por pouco tempo não aumentou o risco.\n\n**A nuance do Campbell** (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2904): os inibidores da COX-2 podem ter risco maior que os não seletivos, por isso preferem-se os não seletivos na dor aguda; o uso curto tem poucas consequências, mas o paciente em tratamento de pseudartrose deve minimizar os AINE. Essa preferência é de grau, e não uma isenção.\n\nA discussão está na seção \"Fatores de risco\", em \"Anti-inflamatórios\", do resumo.",
+  "correta": "**A) interferem.** Os dois grupos bloqueiam a COX-2, necessária à ossificação endocondral, e por isso ambos atrapalham a cicatrização.",
   "incorretas": {
-   "B": "Contraria os estudos, que mostram atraso da consolidação com os dois tipos, sobretudo em doses altas e por tempo prolongado.",
-   "C": "Não há essa diferença: os não seletivos também bloqueiam a COX-2 e também interferem.",
-   "D": "Pelo mesmo motivo, os seletivos também interferem, porque bloqueiam justamente a COX-2."
+   "B": "**Não interferem** contraria a metanálise de mais de 10.000 pacientes e a biologia da COX-2; o próprio Campbell pede para minimizar os AINE na pseudartrose.",
+   "C": "**Interferem e não interferem, respectivamente** reconhece o seletivo, mas exclui o não seletivo; este também suprime a COX-2 e o Rockwood coloca os dois no mesmo grupo.",
+   "D": "**Não interferem e interferem, respectivamente** inverte a ideia: poupa o seletivo da COX-2, que é justamente o alvo de que o osso precisa, e culpa só o não seletivo."
   },
-  "conceito": "Depois de uma fratura, o primeiro passo da consolidação é uma **fase inflamatória**. Ela não é um efeito colateral a ser eliminado: é parte do processo de cura. Nela, substâncias chamadas **prostaglandinas** ajudam a recrutar e transformar as células que vão formar o calo. A enzima responsável por produzir essas prostaglandinas no foco da fratura é a **COX-2**, que é ativada ali e é necessária para que células imaturas virem osteoblastos (as células que formam osso).\n\nOs **anti-inflamatórios não esteroides** (AINEs) funcionam justamente bloqueando as enzimas COX. Os **não seletivos** (como ibuprofeno, diclofenaco, naproxeno) bloqueiam a COX-1 e a COX-2. Os **seletivos** (como celecoxibe e etoricoxibe) bloqueiam principalmente a COX-2. Ou seja, **os dois tipos bloqueiam a COX-2**, e por isso **os dois interferem** na consolidação.\n\nEstudos em animais mostram atraso na consolidação, e estudos em pessoas associam seu uso a mais risco de retardo de consolidação e pseudartrose, principalmente com doses altas e uso prolongado. O efeito depende da dose e do tempo, e parece ser reversível.\n\nNa prática, o uso **curto**, de poucos dias, para aliviar a dor é considerado aceitável pela maioria. Evita-se o uso prolongado em fraturas com maior risco de não consolidar (como tíbia e escafoide), em fumantes e em cirurgias de artrodese.",
-  "correta": "Interferem. Os dois tipos de anti-inflamatório bloqueiam a COX-2, enzima necessária para a fase inflamatória da consolidação.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 29"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 875 aprox.",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 3 (Biologic and Biophysical Technologies for the Enhancement of Fracture Repair), p. 74 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2904",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0078": {
@@ -1266,17 +1294,19 @@
   "conferido": false
  },
  "conceitos-basicos-0097": {
+  "conceito": "Entre os substitutos ósseos sintéticos, o vidro bioativo é o que mais confunde, porque o nome sugere atividade biológica. O Campbell resolve a dúvida pela sua tabela de classificação.\n\n**A classificação** (Campbell's Operative Orthopaedics, 15ª ed., cap. 2 (enxertos), pp. 150 a 150.e2, eTabela 2.1). Os materiais são agrupados pela propriedade principal. **Osteocondução:** sulfato de cálcio, cerâmicas, cimento de fosfato de cálcio, colágeno, **vidro bioativo** e polímeros. **Osteoindução:** matriz óssea desmineralizada (DBM), proteínas morfogenéticas (BMP), fatores de crescimento e terapia gênica. **Osteogênese:** aspirado de medula óssea. Os compósitos misturam propriedades. O vidro bioativo está, portanto, na mesma linha das cerâmicas. **Por que isso faz sentido.** Um substituto sintético não tem célula viva, logo não pode ser osteogênico, e não carrega sinal solúvel de diferenciação, logo não é osteoindutor. Resta a função física: um esqueleto poroso onde o osso do hospedeiro se deposita. O capítulo 3 do Rockwood (p. 69 aprox.) escreve que os substitutos funcionam como arcabouço, sem osteogênese ou osteoindução.\n\n**Uso clínico.** Esses materiais poupam a área doadora, mas só funcionam quando o leito é biologicamente competente; numa pseudartrose atrófica, o arcabouço sozinho não repõe o que falta. A propriedade que fica no vidro é a condução.\n\nA tabela de substitutos e propriedades está na seção \"Enxertos e substitutos ósseos\" do resumo.",
+  "correta": "**D) osteocondutora.** O vidro bioativo entra na lista dos materiais osteocondutores do Campbell: oferece superfície e porosidade para o osso do hospedeiro crescer.",
   "incorretas": {
-   "A": "A propriedade osteogênica exige células vivas, que o vidro bioativo não tem.",
-   "B": "Os íons liberados podem estimular um pouco as células, mas a propriedade essencial do vidro bioativo é a osteocondução.",
-   "C": "Osteoinibitória não é uma propriedade usada para classificar substitutos ósseos."
+   "A": "**Osteogênica** pressupõe células vivas formando osso; um vidro sintético não carrega célula alguma, e só o aspirado de medula e o autoenxerto cumprem esse papel.",
+   "B": "**Osteoindutora** pertence a DBM, BMP e fatores de crescimento, que enviam sinal de diferenciação às células-tronco; o vidro não traz nenhum desses sinais.",
+   "C": "**Osteoinibitória** não é propriedade descrita para nenhum substituto ósseo nos livros; o vidro aparece nos livros como arcabouço osteocondutor."
   },
-  "conceito": "Os **substitutos ósseos** são materiais usados para preencher falhas no osso. Eles são classificados pelas propriedades que têm:\n\n**Osteogênese**: trazer células vivas que formam osso. Só o osso do próprio paciente, colhido na hora, tem essa propriedade.\n\n**Osteoindução**: trazer sinais químicos (como as BMPs) que transformam as células do paciente em células formadoras de osso.\n\n**Osteocondução**: servir de andaime, uma estrutura por onde o osso do paciente cresce.\n\nO **vidro bioativo** é um material sintético inorgânico, feito de sílica, cálcio, sódio e fósforo. Ele não tem células nem fatores de crescimento. Sua propriedade **essencial** é a **osteocondução**.\n\nEle tem uma característica especial: em contato com os líquidos do corpo, forma na sua superfície uma camada de hidroxiapatita (o mineral do osso), que se liga **quimicamente** ao osso. É isso que lhe dá o nome de \"bioativo\". Os íons que ele libera podem estimular um pouco as células, mas isso não o torna osteoindutor no sentido clássico.\n\nAlguns tipos de vidro bioativo também têm efeito **antibacteriano** local, porque deixam o ambiente alcalino, e por isso são usados no tratamento de osteomielite.",
-  "correta": "Osteocondutora. O vidro bioativo é um andaime mineral, sem células nem fatores de crescimento, que se liga quimicamente ao osso.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 53"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 2 (enxertos), pp. 150 a 150.e2",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 3 (Biologic and Biophysical Technologies for the Enhancement of Fracture Repair), p. 69 aprox.",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0098": {
@@ -1294,20 +1324,19 @@
   "conferido": false
  },
  "conceitos-basicos-0099": {
+  "conceito": "A pseudartrose não é só um problema radiográfico: mede-se o que ela tira do paciente. O Rockwood (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 873 aprox.) reúne dados de utilidade em saúde que permitem comparar com outras doenças.\n\n**Os números.** A taxa global de pseudartrose é de 4,9%, e retardo mais pseudartrose somam 6,9%. O escore médio de utilidade dos pacientes com pseudartrose de osso longo é **0,68**, pior que o do diabetes tipo I (0,88), do AVC (0,81) e da AIDS (0,79). A pseudartrose do **fêmur** afeta a saúde física como a artrose terminal do quadril. E, dentro dos ossos longos, **o antebraço teve os menores escores de utilidade**.\n\nO achado surpreende quem pensa em carga e imagina fêmur e tíbia como os piores; o texto apenas relata o dado, sem explicar a causa.\n\n**Outros dados do tema.** O Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2902) lembra que a pseudartrose da tíbia custa mais de duas vezes a fratura que consolida, que cerca de 30% dos tratados têm resultado funcional ruim e que o uso de opioide dura o dobro. Compensação trabalhista, pseudartrose do membro inferior, tabaco, perda óssea e escore funcional pré-operatório pesam no resultado.\n\nA seção \"Definições: retardo, pseudartrose e o tamanho do problema\" do resumo traz os números.",
+  "correta": "**B) antebraço.** O Rockwood relata que os pacientes com pseudartrose do antebraço tiveram os menores escores de utilidade entre os ossos longos.",
   "incorretas": {
-   "A": "A pseudartrose do úmero também causa dor e limitação importantes, mas não teve o menor escore na comparação cobrada.",
-   "C": "A do fêmur compromete a marcha e é muito incapacitante em outros estudos, mas não foi a de menor escore nessa comparação.",
-   "D": "A da tíbia é frequente e difícil de tratar, mas não teve o menor escore na comparação cobrada."
+   "A": "**Úmero** não é o osso de pior escore; é o que tolera encurtamento de 3 a 5 cm e, na diáfise, costuma ser tratado com placa e consolidar em mais de 90%.",
+   "C": "**Fêmur** tem impacto grande, comparável à artrose terminal do quadril, mas o livro aponta o antebraço como o pior.",
+   "D": "**Tíbia** é a de maior frequência de pseudartrose e de custo elevado, mais que o dobro, mas o menor escore de utilidade foi do antebraço."
   },
-  "conceito": "A **pseudartrose** (não consolidação) de um osso longo tem um impacto grande na vida do paciente. Estudos que mediram a **qualidade de vida** dessas pessoas, com questionários padronizados, mostraram escores comparáveis aos de doenças crônicas graves: dor persistente, limitação de movimentos, afastamento do trabalho e múltiplas cirurgias.\n\nEsta questão cobra o resultado de uma comparação específica entre os ossos. Nela, a pseudartrose do **antebraço** teve o **menor escore** de qualidade de vida.\n\nUma explicação razoável está na função do antebraço. Ele é formado por dois ossos, o rádio e a ulna, que trabalham juntos para girar a mão (pronação e supinação, o movimento de virar a palma para baixo e para cima). Uma pseudartrose de um deles compromete esse giro, o posicionamento da mão no espaço e, com isso, quase todas as atividades do dia a dia, como comer, se vestir, escrever e trabalhar.\n\nVale entender a questão como o resultado daquele estudo, e não como regra absoluta. O fêmur e a tíbia, por exemplo, comprometem a marcha e o apoio do peso, e aparecem com impacto muito grande em outros estudos. Por isso a questão tem um aviso.",
-  "correta": "Antebraço. Na comparação cobrada, a pseudartrose do antebraço teve o menor escore de qualidade de vida, pelo impacto no giro e no uso da mão.",
-  "alerta": "A resposta expressa o resultado de uma comparação observacional específica; não significa que toda pseudoartrose do antebraço produza pior qualidade de vida do que qualquer pseudoartrose do membro inferior.",
   "referencias": [
-   "Brinker MR, Trivedi A, O'Connor DP. Debilitating effects of femoral nonunion on health-related quality of life. J Orthop Trauma. 2017;31(2):e37-e42.",
-   "Schottel PC et al. Time trade-off as a measure of health-related quality of life: long bone nonunions have a devastating impact. J Bone Joint Surg Am. 2015;97(17):1406-1410.",
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 29"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 873 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2902",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0114": {
@@ -1562,14 +1591,19 @@
   "conferido": false
  },
  "conceitos-basicos-0139": {
+  "conceito": "O plasma rico em plaquetas é um concentrado autólogo: o sangue do próprio paciente é centrifugado para que as plaquetas fiquem acima do valor normal, que é de 150.000 a 450.000 por microlitro. Os grânulos alfa liberam TGF-beta, IGF, FGF, VEGF e PDGF, sinais que estimulam proliferação e angiogênese no foco.\n\n**A faixa eficaz.** O capítulo 3 do Rockwood (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 3 (Biologic and Biophysical Technologies for the Enhancement of Fracture Repair), p. 71 aprox.) dá o número que a prova cobra: para regenerar osso, a concentração deve ser de **2 a 6 vezes** a fisiológica, **idealmente 5 vezes**. O raciocínio é de janela terapêutica: com **menos** que isso, o sinal é fraco demais e **não tem efeito**; com **mais**, a resposta se inverte e **prejudica** a consolidação. Quanto mais concentrado, portanto, não é sinônimo de melhor.\n\n**Uma nota sobre outros números.** O capítulo 30 (p. 904 aprox.) fala em plaquetas a 300% a 600% e relata 92,8% de consolidação com PRP percutâneo contra 80% com troca de haste em pseudartroses oligotróficas. Os livros expressam a concentração de formas diferentes, e a questão usa a forma \"quantas vezes\", que corresponde ao capítulo 3. **Limite da evidência.** A literatura clínica sobre PRP no osso ainda é fraca; ele funciona como adjuvante, nunca como substituto da estabilidade e do desbridamento.\n\nO número e a explicação estão na seção \"Enxertos e substitutos ósseos\", em \"PRP e aspirado de medula\", do resumo.",
+  "correta": "**C) 2-6.** Essa é a faixa citada pelo Rockwood para regeneração óssea, com ideal de cerca de 5 vezes o valor fisiológico.",
   "incorretas": {
-   "A": "De 1 a 2 vezes, o plasma fica quase igual ao normal, sem concentração suficiente de fatores de crescimento.",
-   "B": "2 a 3 vezes fica no limite inferior e não cobre toda a faixa considerada útil.",
-   "D": "De 5 a 10 vezes ultrapassa a faixa útil, e concentrações muito altas podem ter efeito inibitório."
+   "A": "**1-2 vezes** fica abaixo do limiar: a concentração é pouco maior que a do sangue normal e, segundo o livro, não produz efeito sobre o osso.",
+   "B": "**2-3 vezes** começa na faixa certa, mas termina cedo; deixa de fora a região de 4 a 6, em que está o ideal de 5 vezes.",
+   "D": "**5-10 vezes** passa do teto de 6; concentrações acima disso inibem a resposta, e é a armadilha de quem acha que mais é melhor."
   },
-  "conceito": "O **plasma rico em plaquetas** (PRP) é obtido a partir do sangue do próprio paciente, que é centrifugado para concentrar as plaquetas num pequeno volume de plasma. A ideia é que as plaquetas, ao serem ativadas, liberam **fatores de crescimento** (como PDGF, TGF-beta e VEGF), substâncias que estimulam a cicatrização, a formação de vasos e a multiplicação de células.\n\nA **concentração** de plaquetas importa:\n\nSe for **baixa demais**, não há fatores de crescimento suficientes para fazer efeito.\n\nSe for **alta demais**, há estudos em laboratório mostrando um efeito paradoxal, de **inibição** das células.\n\nA faixa considerada útil fica em torno de **3 a 5 vezes** a concentração normal do sangue. A alternativa **2 a 6 vezes** engloba essa faixa.\n\nOutras variáveis mudam o produto: se ele contém muitos ou poucos glóbulos brancos, como as plaquetas são ativadas, o volume e o número de aplicações. Isso explica por que os estudos com PRP são tão difíceis de comparar.\n\nA evidência de benefício é variada. Há algum resultado favorável na epicondilite lateral e na artrose do joelho. Na **consolidação óssea**, a evidência ainda é fraca.",
-  "correta": "2 a 6 vezes. Essa faixa engloba a concentração considerada útil, de 3 a 5 vezes o valor normal do sangue.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 3 (Biologic and Biophysical Technologies for the Enhancement of Fracture Repair), p. 71 aprox.",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 903 a 904 aprox.",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0140": {
@@ -1710,17 +1744,19 @@
   "conferido": false
  },
  "conceitos-basicos-0145": {
+  "conceito": "Na pseudartrose atrófica, o foco é biologicamente pobre e, quando há encurtamento, falta também comprimento. O fixador circular de ILIZAROV resolve as duas coisas em níveis diferentes do mesmo osso.\n\n**A frase que a prova copia** (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2917). A atrófica com encurtamento é tratada com **compressão no foco**, somada a uma **corticotomia na região metafisária do mesmo osso** e **alongamento gradual** por essa corticotomia. O foco recebe compressão porque o osso atrófico precisa de contato; a distração dele, que só funciona na hipertrófica (onde o foco é biologicamente ativo e forma osso como um regenerado, até cerca de 1,5 cm), abriria um espaço que o tecido atrófico não preencheria.\n\n**Por que a metáfise.** ILIZAROV mostrou **hipervascularização** do membro depois da corticotomia e da distração gradual, e a corticotomia provavelmente traz parte do benefício biológico de um enxerto. A corticotomia de PALEY usa osteótomo de 5 mm e preserva a circulação periosteal e endosteal. A velocidade máxima é de cerca de 1 mm a cada 24 horas, o que explica o termo gradual.\n\n**Os modos.** Com encurtamento sem defeito, o bifocal (compressão-distração) comprime um nível e alonga outro. Com perda segmentar, faz-se transporte, e a ponta que chega pode precisar de enxerto.\n\nA descrição dos modos está na seção \"ILIZAROV, transporte ósseo e corticotomia\" do resumo.",
+  "correta": "**D) compressão com corticotomia metafisária e alongamento gradual.** Comprime-se o foco atrófico e se alonga, em ritmo lento, por uma corticotomia na metáfise do mesmo osso.",
   "incorretas": {
-   "A": "Afastar as pontas de uma pseudartrose atrófica não estimula a consolidação, e o alongamento de uma vez só não segue o princípio de Ilizarov.",
-   "B": "A compressão está certa, mas o corte na diáfise forma osso novo pior, e o alongamento de uma vez só não é o princípio do método.",
-   "C": "O corte na metáfise e o alongamento gradual estão certos, mas o foco atrófico precisa de compressão, e não de distração."
+   "A": "**Distração com corticotomia diafisária e alongamento único** erra em três pontos: distrai o foco que precisa de contato, corta na diáfise (menos vascularizada) e propõe um alongamento único, em vez de gradual.",
+   "B": "**Compressão com corticotomia diafisária e alongamento único** acerta a compressão do foco, mas escolhe o nível errado de corte e o ritmo errado: o alongamento deve ser gradual, na metáfise.",
+   "C": "**Distração com corticotomia metafisária e alongamento gradual** acerta a corticotomia e o ritmo, mas distrai o foco atrófico; nele o que se faz é compressão, e a distração fica para o nível da corticotomia."
   },
-  "conceito": "Esta questão combina dois problemas: uma **pseudartrose atrófica** (fratura que não consolidou, com pontas de osso sem vida e sem calo) e um **encurtamento** do membro. O método de **Ilizarov**, com fixador externo circular, resolve os dois ao mesmo tempo, mas com forças opostas em lugares diferentes.\n\n**No foco da pseudartrose: compressão.** Nas pontas atróficas, comprimir uma contra a outra estimula a biologia e fecha o espaço entre elas, permitindo a consolidação. Isso encurta um pouco mais o membro, mas resolve a pseudartrose.\n\n**Em outro ponto do osso: alongamento.** O cirurgião faz uma **corticotomia** (um corte da cortical, preservando o máximo possível do sangue do osso) na **metáfise**, a parte larga e esponjosa perto da articulação. Ali o osso é bem irrigado e forma osso novo com facilidade. Depois de uma espera de cerca de uma semana, o fixador afasta as pontas aos poucos, **gradualmente**, cerca de 1 mm por dia dividido em quatro vezes. O osso novo preenche o espaço, e o comprimento é recuperado.\n\nEssa técnica, com compressão num nível e alongamento em outro, é chamada **bifocal**.\n\nNa pseudartrose **hipertrófica** (pontas vivas, com muito calo), Ilizarov às vezes usava o oposto: distração lenta no próprio foco, que estimula o tecido a virar osso.",
-  "correta": "Compressão com corticotomia metafisária e alongamento gradual. Comprime-se o foco atrófico para consolidar e alonga-se aos poucos na metáfise para recuperar o comprimento.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 59"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2913 e 2917 a 2918",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 897 a 898 e 912 a 913 aprox.",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0146": {
@@ -1937,19 +1973,19 @@
   "conferido": false
  },
  "conceitos-basicos-0173": {
+  "conceito": "Prever quem vai desenvolver pseudartrose antes de fixar a fratura é a ideia do escore **NURD** (Nonunion Risk Determination), aplicado no momento da fixação definitiva (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 886 aprox.). A pontuação traduz o peso de cada fator.\n\n**A tabela.** Retalho vale **5 pontos**; síndrome compartimental, 4; condições crônicas, 3; fratura exposta, 2; sexo masculino, 1; mais 1 ponto por grau ASA e por porcentagem de contato cortical; padrão espiral e baixa energia subtraem 1 cada. O risco cresce com a soma: de 0 a 5 pontos, 2%; de 6 a 8, 22%; de 9 a 11, 42%; acima de 12, 61%. A versão NURD 2.0 prevê o risco nos três primeiros meses.\n\n**Por que o retalho é o maior.** Ele marca o pior envelope de partes moles, cobertura que só se precisou reconstruir porque a lesão desnudou o osso. É uma medida de biologia local, e vale mais que a própria fratura exposta, que somada ao retalho já está contada.\n\n**O raciocínio por trás.** O Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2904) lista o desnudamento de partes moles, a perda óssea e a lesão vascular entre as causas biológicas locais da pseudartrose, o mesmo eixo que o escore pontua mais alto. Na exposta com lesão extensa, a pseudartrose chega perto de 20%.\n\nA tabela do escore está na seção \"Fatores de risco\", em \"Prever a pseudartrose: NURD\", do resumo.",
+  "correta": "**C) retalho cirúrgico.** O retalho vale 5 pontos no NURD, o maior peso do escore, por marcar o pior envelope de partes moles.",
   "incorretas": {
-   "A": "A fratura exposta entra no escore, mas com pontuação menor que o retalho.",
-   "B": "O sexo masculino pontua pouco no escore.",
-   "D": "A síndrome compartimental pesa bastante, mas fica abaixo do retalho."
+   "A": "**Fratura exposta** vale apenas 2 pontos, embora seja o fator mais lembrado; é a armadilha de quem escolhe pelo risco clínico mais intuitivo.",
+   "B": "**Sexo masculino** soma 1 ponto, o menor peso entre os atributos listados.",
+   "D": "**Síndrome do compartimento** vale 4 pontos, o segundo maior valor, ficando um ponto abaixo do retalho."
   },
-  "conceito": "O escore **NURD** (*nonunion risk determination*, determinação do risco de não união), descrito por O'Halloran e colaboradores, estima o risco de uma fratura da **diáfise da tíbia** tratada com haste intramedular **não consolidar**. Ele usa informações disponíveis no momento da cirurgia definitiva e dá pontos a cada fator de risco.\n\nEntre os fatores das alternativas, os que mais pesam são os que indicam **lesão grave das partes moles**:\n\nA **necessidade de retalho** (cobertura da ferida com tecido trazido de outro lugar) é o atributo de **maior pontuação**.\n\nA **síndrome compartimental** (que exigiu fasciotomia) vem logo atrás.\n\nA **fratura exposta** pontua menos.\n\nO **sexo masculino** pontua pouco.\n\nOutros itens do escore incluem tabagismo, outras doenças, fragmentação e perda óssea, e o contato entre as corticais depois da fixação.\n\nA lógica é que o **envelope de partes moles** (músculos, periósteo e pele) é a principal fonte de sangue para o osso consolidar. Uma lesão que exigiu retalho ou fasciotomia indica que esse envelope foi muito danificado. Em outras palavras, a biologia ao redor da fratura pesa mais que o tipo de traço.\n\nNa prática, o escore ajuda a identificar cedo os pacientes de alto risco, que podem se beneficiar de acompanhamento mais próximo e de intervenções precoces, como enxerto ósseo.",
-  "correta": "Retalho cirúrgico. Entre as opções, é o atributo de maior pontuação no NURD, porque indica destruição grave do envelope de partes moles.",
   "referencias": [
-   "O'Halloran K et al. Will my tibial fracture heal? Predicting nonunion at the time of definitive fixation based on commonly available variables. Clin Orthop Relat Res. 2016;474:1385-1395.",
-   "Three predictive scores compared in tibial shaft fracture nonunion. World J Orthop. 2024;15(6):568-579. https://pmc.ncbi.nlm.nih.gov/articles/PMC11212531/",
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 29"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 874 e 886 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2904",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0174": {
@@ -2015,14 +2051,19 @@
   "conferido": false
  },
  "conceitos-basicos-0178": {
+  "conceito": "A palavra \"tutor\" aqui é o dispositivo que acompanha o osso, como a haste intramedular ou o fixador: ele mantém o alinhamento, mas deixa um pouco de movimento no foco. Isso define a via de cicatrização.\n\n**Consolidação secundária** (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2904). Fraturas tratadas sem cirurgia e as fixadas com **haste intramedular, placa em ponte e muitos fixadores** dependem de **estabilidade relativa**, com movimento interfragmentar de **0,2 a 1 mm**. A resposta do osso é formar **calo**, em quatro fases: inflamação, calo mole, calo duro e remodelação.\n\n**O contraste.** A **consolidação primária** exige **estabilidade absoluta**, com a placa rígida: movimento menor que 0,15 mm, deformação menor que 2%, sem calo, e um espaço maior que 0,1 mm a impede. O Rockwood (cap. 30, p. 876 aprox.) lembra que a placa rígida que deixa espaço no foco não sustenta a consolidação primária, porque os cones de corte precisam atravessar a fratura.\n\n**Quando o movimento erra a dose.** Movimento excessivo pode produzir calo abundante ou quase nenhum, e é assim que o mesmo tratamento conservador gera pseudartrose hipertrófica, oligotrófica ou atrófica.\n\nA comparação das duas vias está na seção \"Como o osso consolida e por que deixa de consolidar\" do resumo.",
+  "correta": "**A) formação do calo ósseo.** Com o tutor, a estabilidade é relativa, e a fratura consolida pela via secundária, com calo.",
   "incorretas": {
-   "B": "O crescimento de ósteons atravessando o traço é a consolidação direta, que exige estabilidade absoluta.",
-   "C": "A estabilização absoluta é o oposto do tutor, que permite algum movimento.",
-   "D": "A consolidação direta ou primária exige compressão e estabilidade absoluta, que o tutor não oferece."
+   "B": "**Crescimento do ósteon** descreve o remodelamento haversiano que atravessa o traço quando a estabilidade é absoluta, o que o tutor não garante.",
+   "C": "**Princípio da estabilização absoluta** é o da placa de compressão rígida; o tutor oferece estabilidade relativa, com movimento de 0,2 a 1 mm.",
+   "D": "**Princípio direto ou primário** corresponde à consolidação sem calo, com movimento inferior a 0,15 mm, que a placa rígida busca e a haste não."
   },
-  "conceito": "Os implantes podem estabilizar uma fratura de diferentes maneiras, chamadas de mecanismos: **compressão**, **banda de tensão**, **suporte**, **ponte** e **tutor** (do inglês *splint*).\n\nO **tutor** é o mecanismo da **haste intramedular** e do **fixador externo**. Eles alinham e sustentam a fratura como uma tala, mas **não eliminam** todo o movimento entre os fragmentos. Permitem um pequeno movimento controlado. Isso é chamado de **estabilidade relativa**.\n\nCom estabilidade relativa, o osso consolida da forma **secundária**, ou seja, **formando calo**. As etapas são:\n\nForma-se um **hematoma** e começa a inflamação.\n\nSurge o **calo mole**, feito de cartilagem e tecido fibroso, que une os fragmentos de forma ainda flexível.\n\nO calo mole é substituído por osso, formando o **calo duro** (ossificação endocondral).\n\nCom o tempo, o calo é **remodelado** e o osso volta à forma original.\n\nO oposto é a consolidação **direta** ou **primária**: quando os fragmentos estão perfeitamente encaixados e comprimidos, sem nenhum movimento (estabilidade absoluta), células especializadas atravessam o traço de fratura formando novos ósteons, sem calo. O tutor não oferece essa condição.",
-  "correta": "Formação do calo ósseo. O tutor dá estabilidade relativa, com pequeno movimento, e o osso consolida formando calo.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2904",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 876 aprox.",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0180": {
@@ -2075,14 +2116,19 @@
   "conferido": false
  },
  "conceitos-basicos-0185": {
+  "conceito": "O tabagismo é o fator de risco mais citado pelos cirurgiões de trauma, apontado por 81% numa enquete (diabetes por 59%, vasculopatia por 53%). A questão pede o mecanismo, e as alternativas trocam duas palavras.\n\n**O mecanismo** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 875 aprox.). Em animais, a nicotina, por **vasoconstrição, inibe a diferenciação dos tecidos e a resposta angiogênica** do início da consolidação, e **interfere diretamente na função dos osteoblastos**. Em humanos, o fumo reduz a expressão periosteal de BMP. Na tíbia exposta tratada com haste, o fumante teve **37% menos chance de consolidar** e **3,7 vezes mais osteomielite**, com efeito dose-dependente.\n\n**O que sai daí na prática.** Como o problema é a nicotina, e não a fumaça, o **adesivo de nicotina deve ser evitado**. O Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2904) diz que o tabaco chega a dobrar o risco, reduz o oxigênio cutâneo e a vascularização do foco, e que cerca de metade dos pacientes volta a fumar.\n\n**Como ler as alternativas.** A direção do efeito (diminui) e a célula-alvo (osteoblasto, a que forma osso) são os dois pontos de decisão; qualquer alternativa que troque um deles está errada. Condrócitos são as células da fase cartilaginosa do calo, que o texto não cita como alvo direto da nicotina.\n\nA seção \"Fatores de risco\", em \"Tabagismo e nicotina\", do resumo traz o mecanismo.",
+  "correta": "**A) Diminui a diferenciação dos tecidos e interfere diretamente na função dos osteoblastos.** É a redação do Rockwood: vasoconstrição, menos diferenciação e angiogênese, e ação direta sobre o osteoblasto.",
   "incorretas": {
-   "B": "A interferência nos osteoblastos está certa, mas a nicotina diminui, e não aumenta, a diferenciação.",
-   "C": "A diminuição da diferenciação está certa, mas o alvo direto clássico da nicotina é o osteoblasto, e não o condrócito.",
-   "D": "Erra os dois: a nicotina diminui a diferenciação e age principalmente sobre os osteoblastos."
+   "B": "**Aumenta a diferenciação dos tecidos** inverte o efeito da nicotina, que é inibidor; a segunda metade (osteoblastos) estaria certa, mas a primeira derruba a frase.",
+   "C": "**Diminui a diferenciação, mas sobre condrócitos** acerta o sentido do efeito e erra o alvo: o livro fala em função direta dos osteoblastos.",
+   "D": "**Aumenta a diferenciação e age nos condrócitos** erra nas duas metades, com efeito invertido e célula-alvo trocada."
   },
-  "conceito": "O **tabagismo** é um dos fatores que mais atrapalham a consolidação das fraturas, e ele age por vários caminhos ao mesmo tempo:\n\nA **nicotina** contrai os vasos sanguíneos e diminui o sangue que chega ao foco da fratura.\n\nO **monóxido de carbono** do cigarro se liga à hemoglobina e reduz o oxigênio levado aos tecidos.\n\nE a nicotina age diretamente nas células. Ela **diminui a diferenciação** das células imaturas (mesenquimais) em células de cartilagem e de osso, atrapalhando a passagem do calo mole (cartilaginoso) para o calo duro (de osso). E ela **interfere diretamente na função dos osteoblastos**, as células que formam osso, reduzindo sua multiplicação e a produção de matriz.\n\nO resultado clínico é conhecido: o fumante consolida **mais devagar**, tem mais **pseudartrose** (sobretudo na tíbia, no escafoide e nas cirurgias de artrodese) e mais infecção de ferida.\n\nDo ponto de vista prático, é o fator de risco **modificável** mais consistente. Parar de fumar ajuda, mesmo depois que a fratura já aconteceu.",
-  "correta": "Diminui a diferenciação dos tecidos e interfere diretamente na função dos osteoblastos. A nicotina prejudica tanto a formação das células ósseas quanto o trabalho delas.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 874 e 875 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2904",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0186": {
@@ -2211,46 +2257,22 @@
   "conferido": false
  },
  "conceitos-basicos-0195": {
-  "conceito": "A pseudartrose diafisária do úmero descrita como predominante é a **atrófica**, e a reconstrução mais usada é **placa com estímulo biológico por enxerto**, alternativa A.\n\nO problema tem duas dimensões: o foco precisa de estabilidade e de condições para voltar a consolidar. Na apresentação atrófica, apenas trocar o metal sem tratar a biologia pode deixar parte do problema. O resumo orienta desbridar até osso que sangra e reconstruir com placa forte e enxerto autólogo quando indicado (Rockwood, 10ª ed., cap. 37, “Pseudartrose”).\n\nA placa de compressão deve ter ancoragem adequada. O texto descreve quatro parafusos de cada lado, ou três quando há um bom parafuso de tração, sem transformar isso numa montagem idêntica para qualquer qualidade óssea ou defeito. Fibrose e calo podem envolver o radial; a revisão exige protegê-lo e tem maior risco neurológico que a fratura aguda.\n\n**Mais usada não significa única possível.** Haste e fixadores foram empregados, e a pseudartrose depois de haste pode receber placa complementar mantendo o implante. Nessa situação, a placa acrescenta sobretudo controle rotacional. Isso não muda a resposta à pergunta sobre o tipo predominante e a reconstrução mais frequente.\n\n> **Na prova:** atrófica com placa; na reconstrução, trate estabilidade e biologia, não apenas o nome do implante.",
-  "correta": "**A: atrófica e com placa.** É o padrão predominante e o tratamento mais usado, geralmente associado a enxerto e preparo do foco.",
+  "conceito": "A pseudartrose do úmero tem uma particularidade que muda o tratamento: o osso tolera encurtamento e a placa com compressão é a conduta preferida.\n\n**O tratamento.** O Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2911 e 2932) diz que a haste, sobretudo a troca, **não é a melhor opção no úmero**; a maioria das pseudartroses diafisárias é tratada com **redução aberta e placa de compressão**, com consolidação bem acima de 90%. O úmero tolera encurtamento de até 3 cm (Campbell) ou cerca de 5 cm (Rockwood, cap. 16), o que facilita aproximar as extremidades. Na atrófica com superfícies oblíquas sadias, o Rockwood mostra placa sem enxerto: nas diáfises com bordas sadias que se encaixam e comprimem sem defeito, o enxerto é dispensável.\n\n**A frequência.** O úmero diafisário tem cerca de 10% de pseudartrose independentemente do tratamento, mais na diáfise média e proximal com traço espiral ou oblíquo.\n\n**Ressalva sobre o tipo.** Os livros não dizem qual tipo biológico é o mais comum no úmero; mostram exemplos de hipertrófica, oligotrófica e atrófica após tratamento conservador. O gabarito oficial combina atrófica e placa, e a placa é a parte que os livros sustentam com clareza.\n\nA conduta por osso está na seção \"Placa e o tratamento por osso\" do resumo.",
+  "correta": "**A) atrófica e com placa.** O tratamento mais frequente da pseudartrose diafisária do úmero é a placa de compressão; o tipo atrófico é o apontado pelo gabarito.",
   "incorretas": {
-   "B": "**Acerta o tipo, mas troca a estratégia mais frequente.** A haste foi usada com resultados variáveis; o resumo aponta a placa com enxerto como a reconstrução mais popular e favorecida pela revisão citada.",
-   "C": "**Escolhe a placa e muda o tipo predominante.** A fonte descreve a maioria como atrófica, não oligotrófica; a preocupação biológica acompanha essa apresentação.",
-   "D": "**Não reproduz nenhum dos dois elementos pedidos.** A combinação de referência é atrófica com placa, sem excluir que outras apresentações ou técnicas existam em situações específicas."
+   "B": "**Atrófica e com haste** acerta o tipo do gabarito, mas pede a haste, que no úmero vai mal: o Campbell afirma que a troca de haste não é a melhor opção nesse osso.",
+   "C": "**Oligotrófica e com placa** acerta o tratamento, mas troca o tipo pelo que o gabarito oficial não adota como o mais comum.",
+   "D": "**Oligotrófica e com haste** erra nas duas metades: nem o tipo é o do gabarito, nem a haste é a conduta preferida no úmero."
   },
+  "alerta": "Os livros sustentam a placa, mas nenhum diz que a atrófica é o tipo mais comum no úmero; o gabarito oficial (atrófica e placa) foi mantido.",
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da diáfise do úmero”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 37 · Humeral Shaft Fractures. Seções: Pseudartrose."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2911 e 2932",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), figuras 30-2 e 30-14",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 16 (Open Fractures), perda óssea aguda",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-37-diafise-umero",
-     "titulo": "Fratura da diáfise do úmero",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 37 · Humeral Shaft Fractures",
-     "secoes": [
-      "Pseudartrose"
-     ],
-     "blocos": [
-      "pseudartrose-6427266b",
-      "pseudartrose-9719258c",
-      "pseudartrose-c68d4d26",
-      "pseudartrose-fc31c240",
-      "pseudartrose-51afd2d6",
-      "pseudartrose-17c20cc3"
-     ],
-     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
-     "trechosSha256": "698296d672c649f94feb72d3ab1a9be48be3cb141242fa0d097e9350fe570946"
-    }
-   ],
-   "questaoSha256": "21c3614e38eeebb6ffff22945a1a9041dd25b82838a9910dc06ebeea9d929ec6",
-   "comentarioSha256": "068972f8152d15fbc0f973f4009e8ba56a2c6d760f958f081768d64f9e24a155"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "conceitos-basicos-0196": {
   "conceito": "A **clavícula** é o primeiro osso do corpo a começar a ossificar, e faz isso de um jeito diferente dos outros ossos longos do membro superior.\n\nO Rockwood and Wilkins' Fractures in Children (cap. 20) descreve: a clavícula começa a se formar com **5 semanas e meia** de gestação, por **ossificação intramembranosa**, e com 8 semanas já tem a forma em S. Na ossificação intramembranosa, o osso se forma direto a partir do mesênquima, sem passar por um molde de cartilagem.\n\nJá o **úmero**, como os outros ossos longos dos membros, ossifica por via **endocondral**: primeiro se forma um molde de cartilagem, que depois é substituído por osso a partir dos centros de ossificação.\n\nDois detalhes da clavícula que a banca também gosta:\n- ela é o **primeiro** osso a começar a ossificar e o **último** a terminar: a epífise medial só ossifica aos 18 a 20 anos e fecha aos 22 a 25;\n- ela atinge **80%** do comprimento final aos 9 anos nas meninas e aos 12 nos meninos, mas os 20% finais ainda permitem remodelar fraturas no adolescente.",
@@ -2442,14 +2464,19 @@
   "conferido": false
  },
  "conceitos-basicos-0209": {
+  "conceito": "Descrever uma consolidação viciosa é localizar o ápice da deformidade e dizer em que plano o osso se desviou. Com duas radiografias ortogonais, o raciocínio é quase geométrico.\n\n**A caracterização** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 31 (Principles of Malunion Treatment), p. 939 aprox.). A deformidade é descrita por comprimento, angulação, rotação e translação, com radiografias AP e de perfil e o **CORA**, o centro de rotação da angulação. Se a angulação aparece **só no AP**, ela está no plano **frontal** (coronal); se aparece **só no perfil**, está no plano **sagital**. Quando o AP e o perfil mostram angulação, com o CORA **no mesmo nível nas duas incidências**, a deformidade não está em nenhum dos dois planos puros: está num **plano oblíquo**, resultante dos dois componentes somados.\n\n**O plano axial.** Os livros caracterizam a rotação como um parâmetro separado da angulação, e o enunciado fala de ápice, que é o ponto de angulação.\n\n**Uma observação clínica.** O mesmo capítulo lembra que dor ao estressar uma consolidação viciosa deve levantar a suspeita de que a fratura não consolidou. Na pseudartrose desalinhada, corrigir a deformidade é essencial, e a placa é a preferida qualquer que seja o local (Rockwood, cap. 30, p. 888 e 920 aprox.).\n\nA classificação do plano está na seção \"Deformidade associada e consolidação viciosa\" do resumo.",
+  "correta": "**D) oblíquo.** Ápice no mesmo nível nas duas incidências indica angulação com componentes frontal e sagital ao mesmo tempo, isto é, um plano oblíquo.",
   "incorretas": {
-   "A": "Uma deformidade axial é de comprimento e não produz um vértice angular.",
-   "B": "Uma deformidade sagital pura apareceria só na radiografia de perfil.",
-   "C": "Uma deformidade coronal pura apareceria só na radiografia de frente."
+   "A": "**Axial** não se refere à angulação; a rotação é um parâmetro separado, e o enunciado fala do ápice da deformidade.",
+   "B": "**Sagital** apareceria apenas na incidência de perfil, e o enunciado diz que o ápice está visível nas duas incidências.",
+   "C": "**Coronal** apareceria apenas na incidência frontal; como o ápice também se vê no perfil, existe componente sagital e o plano não é puro."
   },
-  "conceito": "Quando uma fratura consolida torta, a deformidade angular acontece num **único plano** no espaço. Mas nós a vemos em duas radiografias perpendiculares: a de frente (AP), que mostra o plano **coronal** (de um lado para o outro), e a de perfil, que mostra o plano **sagital** (da frente para trás).\n\nA forma como a deformidade aparece nas duas radiografias revela o plano real:\n\nSe o osso está torto **só na radiografia de frente** e reto no perfil, a deformidade é **coronal** pura (para dentro ou para fora, como varo ou valgo).\n\nSe está torto **só no perfil** e reto na de frente, a deformidade é **sagital** pura (para a frente ou para trás).\n\nSe aparece **torto nas duas** radiografias, com o vértice (ápice) **no mesmo nível**, a deformidade está num plano **oblíquo**, entre o coronal e o sagital. Cada radiografia mostra apenas uma parte dela.\n\nPara saber o tamanho e a direção reais, combinam-se os ângulos das duas radiografias, por cálculo ou por desenho, ou usa-se tomografia com reconstrução em três dimensões. O erro clássico é corrigir só o que se vê na radiografia de frente e deixar a parte do perfil sem correção.\n\nSe os vértices aparecem em **níveis diferentes** nas duas radiografias, há outro componente, como um deslocamento lateral ou mais de uma curva.",
-  "correta": "Oblíquo. Quando o vértice aparece no mesmo nível nas duas radiografias, a deformidade está num plano entre o coronal e o sagital.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 31 (Principles of Malunion Treatment), p. 939 aprox.",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 888 e 920 aprox.",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0210": {
@@ -2555,14 +2582,21 @@
   "conferido": false
  },
  "conceitos-basicos-0228": {
+  "conceito": "No membro inferior, o defeito ósseo agudo obriga a escolher entre encurtar, enxertar ou reconstruir, e o limite entre essas condutas é medido em centímetros.\n\n**A escala** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 16 (Open Fractures), perda óssea aguda; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 905 e 911 a 913 aprox.). Perda **menor que 2 cm** é bem tolerada e se resolve por encurtamento primário. Perda circunferencial **menor que 3 cm** pode ser resolvida com **autoenxerto**, em um segundo tempo. A crista ilíaca preenche no máximo 5 a 7 cm do defeito. Quando a perda **passa de 4 cm**, as opções ficam mais difíceis: o membro precisa suportar carga, e a fíbula vascularizada falha mais na perna, por fraturas de estresse. É nessa faixa que entram a **distração osteogênica** (encurtar e realongar, ou fixar no comprimento e **transportar** um segmento), a técnica de MASQUELET e a fíbula vascularizada.\n\n**O contexto.** O Campbell (cap. 64, p. 2910) acrescenta que, no membro inferior do adulto, a fíbula não vascularizada não hipertrofia o bastante e a vascularizada não o faz com rapidez; por isso distração osteogênica e MASQUELET são melhores para defeitos grandes. O úmero, que não sustenta carga, tolera encurtamento de cerca de 5 cm.\n\n**Ressalva.** O Rockwood fala em opções \"mais difíceis\" acima de 4 cm e inclui o transporte entre elas, sem fixar um número que o indique de forma exclusiva; o gabarito oficial é 4 cm.\n\nA escala está na seção \"Defeitos ósseos e a técnica de MASQUELET\" do resumo.",
+  "correta": "**D) 4,0 cm.** Acima desse valor, encurtar ou enxertar deixam de bastar, e o transporte ósseo entra como opção.",
   "incorretas": {
-   "A": "Uma falha de 1,5 cm é pequena e pode ser resolvida com encurtamento ou enxerto.",
-   "B": "Com 2,0 cm, o enxerto ósseo costuma bastar.",
-   "C": "3,0 cm ainda fica abaixo do limite em que o transporte ósseo é indicado."
+   "A": "**1,5 cm** é um defeito pequeno, abaixo dos 2 cm que o membro inferior tolera com encurtamento primário.",
+   "B": "**2,0 cm** ainda está no limite do encurtamento primário, que resolve sem reconstrução.",
+   "C": "**3,0 cm** corresponde ao limite do autoenxerto em segundo tempo para perda circunferencial; só depois dele, a partir de 4 cm, as opções se complicam."
   },
-  "conceito": "Em fraturas graves da tíbia, principalmente as expostas com perda de osso ou depois da limpeza de uma infecção, pode sobrar uma **falha óssea**: um trecho em que o osso simplesmente não existe mais. O tamanho dessa falha define a estratégia.\n\n**Falhas pequenas** podem ser resolvidas aproximando as pontas (encurtamento agudo) ou preenchendo o espaço com **enxerto ósseo** esponjoso do próprio paciente.\n\n**Falhas grandes**, acima de cerca de **4 cm**, são um problema para o enxerto comum: o centro do enxerto fica longe demais dos vasos e não é revascularizado. Nesses casos, as opções são outras.\n\nO **transporte ósseo**, pelo método de Ilizarov, é uma delas. O cirurgião faz um corte (corticotomia) num trecho saudável da tíbia, longe da falha, e usa um fixador externo para deslocar esse segmento de osso vivo devagar, cerca de 1 mm por dia, em direção à falha. Atrás do segmento que se move, forma-se osso novo (regenerado). Quando o segmento chega à outra ponta, a falha está preenchida.\n\nVantagens: permite retirar todo o osso infectado sem medo do tamanho da falha, e o osso formado é vivo e se remodela. Desvantagens: muitos meses de fixador, infecção nos pinos e, às vezes, dificuldade de consolidação no ponto de encontro final, que pode precisar de enxerto.\n\nOutras opções para falhas grandes são o enxerto vascularizado de fíbula e a técnica da membrana induzida (Masquelet).",
-  "correta": "4,0 cm. Acima de cerca de 4 cm, o enxerto comum não se revasculariza bem, e o transporte ósseo passa a ser indicado.",
-  "geradoEm": "2026-10-03",
+  "alerta": "O Rockwood (cap. 16) diz que acima de 4 cm \"as opções ficam mais difíceis\" e lista a distração osteogênica entre elas, sem fixar um número para indicar o transporte; o gabarito oficial (4 cm) foi mantido.",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 16 (Open Fractures), perda óssea aguda",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 905 e 911 a 913 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2910",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0229": {
@@ -2986,17 +3020,21 @@
   "conferido": false
  },
  "conceitos-basicos-0262": {
+  "conceito": "Defeito segmentar é a perda de um pedaço de osso que nenhum encurtamento ou enxerto simples resolve. A técnica descrita no enunciado, com cimento de PMMA que induz uma membrana, é a de **MASQUELET**, que o Rockwood (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 911 a 912 aprox.) prefere para a perda segmentar.\n\n**Primeiro tempo.** Desbrida-se o foco e preenche-se o defeito com um **espaçador de PMMA**, muitas vezes com antibiótico. O cimento faz duas coisas: mantém o espaço contra a invasão de tecido fibroso e, por reação de corpo estranho, **induz uma membrana** ao redor.\n\n**A membrana.** Parecida com sinovial, é bem vascularizada, **contém o enxerto** e **produz fatores de crescimento**, entre eles a **BMP-2**, com pico por volta de 4 semanas. É isso que o enunciado chama de potencial osteogênico. O Campbell (cap. 64, p. 2916) a chama de membrana bioativa.\n\n**Segundo tempo.** Quando a membrana está formada (4 a 6 semanas no Rockwood; 4 a 8 no cap. 2 do Campbell, p. 150.e1; 6 no cap. 23), abre-se a membrana, retira-se o cimento e enche-se o espaço com **esponjoso**. A estabilização é feita com haste bloqueada na diáfise ou placa bloqueada na metáfise, e a recorticalização leva 3 a 6 meses. A série original tinha 35 casos com defeitos de 4 a 25 cm. A técnica exige bom envelope de partes moles.\n\nOs prazos e a lógica das duas etapas estão na seção \"Defeitos ósseos e a técnica de MASQUELET\" do resumo.",
+  "correta": "**D) MASQUELET.** É o nome da técnica em dois tempos que usa o espaçador de PMMA para induzir a membrana osteogênica e depois enxerta o defeito.",
   "incorretas": {
-   "A": "Sporer está ligado à classificação de defeitos ósseos em revisões de prótese.",
-   "B": "Coonrad está ligado à prótese de cotovelo de Coonrad-Morrey.",
-   "C": "Scaglietti descreveu a injeção de corticoide no tratamento do cisto ósseo simples."
+   "A": "**SPORER** não é técnica de defeito ósseo descrita nos livros do tema; o nome não tem relação com espaçador de cimento ou membrana induzida.",
+   "B": "**COONRAD** não consta nos capítulos de pseudartrose e defeito; não há método com esse nome que use PMMA para formar membrana.",
+   "C": "**SCAGLIETTI** não é técnica de membrana induzida; nenhum dos livros o associa ao espaçador de PMMA."
   },
-  "conceito": "Quando sobra uma **falha óssea** grande, por exemplo depois de retirar osso infectado ou de uma fratura com perda de osso, uma das soluções é a técnica de **Masquelet**, também chamada técnica da **membrana induzida**. Ela é feita em dois tempos.\n\n**Primeiro tempo.** O cirurgião faz uma limpeza ampla, estabiliza o osso (com placa, haste ou fixador) e preenche a falha com um **espaçador de cimento ósseo** (polimetilmetacrilato), geralmente misturado com antibiótico. Em cerca de seis a oito semanas, o corpo forma ao redor do cimento uma **membrana** cheia de vasos e rica em fatores de crescimento, que estimulam a formação de osso.\n\n**Segundo tempo.** O cirurgião abre essa membrana com cuidado, retira o cimento e preenche o espaço com **enxerto ósseo** esponjoso do próprio paciente (da crista ilíaca ou do canal do fêmur). Depois, fecha a membrana sobre o enxerto.\n\nA membrana é a chave da técnica: ela leva sangue ao enxerto e o protege de ser reabsorvido. O cimento serve para induzi-la.\n\nOs outros nomes da questão pertencem a outros assuntos: **Scaglietti** descreveu a injeção de corticoide no cisto ósseo simples; **Coonrad** está ligado à prótese de cotovelo (Coonrad-Morrey); e **Sporer** aparece na classificação de defeitos ósseos em revisões de prótese (Paprosky-Sporer).",
-  "correta": "Masquelet. O espaçador de cimento induz uma membrana vascularizada que, no segundo tempo, recebe o enxerto ósseo.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.51"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 911 a 912 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 2 (enxertos), pp. 150 a 150.e2, p. 150.e1",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (osteomielite), pp. 814 e 815",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2916",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0263": {
@@ -3611,16 +3649,19 @@
   "conferido": false
  },
  "conceitos-basicos-0303": {
+  "conceito": "A afirmação é biológica: a estimulação elétrica influencia a proliferação de células e a produção de osso? A pergunta não é se o método cura a pseudartrose, e a diferença é decisiva.\n\n**O mecanismo** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 891 aprox.). O estímulo elétrico atua por **alteração dos potenciais elétricos** do foco. Em animais, os campos **reduziram a reabsorção osteoclástica, aumentaram a formação de osteoide e estimularam a angiogênese**. O capítulo 3 (p. 75 aprox.) aponta a via **cálcio-calmodulina**. São efeitos sobre atividade celular e formação de matriz, e é o que o enunciado afirma.\n\n**As formas.** Corrente contínua (a única invasiva, implantada), acoplamento capacitivo (24 horas por dia), campo eletromagnético pulsado, PEMF (8 a 12 horas por dia), e campos combinados (30 minutos por dia); mais de 400.000 pacientes tratados.\n\n**O que a clínica diz.** A metanálise de ALEEM (15 ensaios, 1.247 pacientes) mostrou redução absoluta de 15% na pseudartrose, com número necessário para tratar de 7; já o ensaio de ADIE em 218 tíbias agudas não mostrou benefício do PEMF. Requisitos: alinhamento aceitável, bordas próximas e ausência de sinovial; a atrófica e a pseudartrose antiga contam contra.\n\nA discussão está na seção \"Estímulo biofísico e tratamento não operatório\", em \"Estímulo elétrico\", do resumo.",
+  "correta": "**A) Certo.** O estímulo elétrico altera os potenciais do foco e, nos modelos biológicos, atua sobre a atividade celular e a formação de osteoide, como a frase afirma.",
   "incorretas": {
-   "B": "**Errado caberia se a frase prometesse consolidação por si só.** A modulação celular não substitui correção mecânica nem tratamento de infecção quando esses são os fatores dominantes."
+   "B": "**Errado** só se justificaria se a frase prometesse cura clínica garantida; como ela descreve o efeito sobre proliferação celular e formação óssea, os livros sustentam o enunciado."
   },
-  "conceito": "**O que é pseudartrose.** É a falha de consolidação de uma fratura após tempo suficiente para que a união fosse esperada, sem progresso radiográfico ou clínico. Antes de escolher um estímulo adicional, é preciso avaliar estabilidade, vascularização, tamanho do defeito, infecção e condições do paciente. Pseudartrose atrófica, com pouca atividade biológica, e hipertrófica, com calo exuberante mas instabilidade, pedem estratégias diferentes.\n\n**Estímulo elétrico.** Correntes aplicadas diretamente, por acoplamento capacitivo ou por campos eletromagnéticos pulsados procuram reproduzir sinais bioelétricos associados à reparação óssea. Estudos experimentais descrevem efeitos sobre proliferação e diferenciação celular, síntese de matriz e atividade osteoblástica. O efeito clínico depende da técnica e da seleção do caso; não é garantia de consolidação.\n\n**Limite do método.** Estímulo elétrico pode ser considerado como adjuvante em situações selecionadas, mas não corrige fixação instável, perda óssea importante nem infecção persistente. Nesses cenários, controle do foco, estabilidade e, quando necessário, enxertia ou reconstrução têm prioridade.",
-  "correta": "**Certo: há efeito biológico sobre a reparação.** A estimulação elétrica pode influenciar proliferação celular e formação de tecido ósseo, embora sua utilidade clínica dependa do contexto da pseudartrose.",
-  "referencias": [
-   "Rockwood CA et al. Fractures. Philadelphia: Lippincott. 4ª edição, p. 283."
-  ],
   "provavel": "A",
-  "geradoEm": "2026-09-30",
+  "alerta": "A questão não tem gabarito oficial no acervo. O Rockwood (caps. 3 e 30) sustenta \"Certo\", o que coincide com o gabarito da bibliografia citada (Rockwood, 4ª ed.). A evidência clínica do método é controversa, mas a afirmação trata do efeito biológico.",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 891 aprox.",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 3 (Biologic and Biophysical Technologies for the Enhancement of Fracture Repair), p. 75 a 76 aprox.",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0304": {
@@ -3677,16 +3718,19 @@
   "conferido": false
  },
  "conceitos-basicos-0308": {
+  "conceito": "A infecção num osso fraturado tem uma lógica que contraria a intuição de \"retirar todo o metal\": o que ameaça o tratamento é o **movimento**, e não só a bactéria.\n\n**O que os livros dizem.** O Rockwood (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 915 aprox.) coloca como objetivos primários da pseudartrose infectada o **desbridamento**, o **antibiótico específico** e a **estabilização óssea**. Um implante que ainda estabiliza pode beneficiar o tratamento da infecção, além do conforto e da função; retê-lo funciona melhor quando se espera consolidar sem enxerto. Quando o implante não estabiliza, ele sai, e o foco é fixado com fixador externo fora da zona infectada ou com haste de cimento com antibiótico, moldada num dreno de tórax. O metal favorece biofilme, e o enxerto recém-implantado é avascular, o que limita o enxerto precoce.\n\n**O método ativo.** No Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2916), JUDET e PATEL e WEBER e CECH defendem que restaurar a **continuidade óssea** tem prioridade sobre o tratamento da infecção: decorticação, desbridamento, alinhamento e **estabilização**, em geral com fixador externo, compressão e enxerto. Se a fratura já está firmemente fixada com placa ou haste, **a fixação não é mexida**. O sucesso vai de 83% a 98%. O método convencional, ao contrário, aguarda cerca de 6 meses sem sinais de infecção antes do enxerto.\n\nO quadro da infectada está na seção \"Pseudartrose infectada\" do resumo.",
+  "correta": "**A) Certo.** A estabilidade é objetivo primário no tratamento da fratura ou pseudartrose infectada, junto com desbridamento e antibiótico; a fixação firme existente é preservada.",
   "incorretas": {
-   "B": "**Errado seria adequado se a frase dissesse que estabilidade basta isoladamente.** Fixação estável, por si só, não esteriliza tecido necrótico nem substitui tratamento antimicrobiano e cirúrgico do foco."
+   "B": "**Errado** supõe que todo implante deve sair e que o movimento é aceitável na infecção; os livros dizem o contrário, pois só o material que não estabiliza é retirado."
   },
-  "conceito": "**Dois problemas simultâneos.** Fratura ou pseudartrose infectada reúne instabilidade mecânica e foco infeccioso. Movimento excessivo perpetua lesão de tecidos, dificulta formação de calo e pode prejudicar a recuperação local. Por isso a estabilização é um dos pilares da estratégia, mesmo quando também será necessário retirar tecido desvitalizado.\n\n**Tratamento combinado.** Controle da infecção requer coleta de amostras profundas, desbridamento adequado, antibioticoterapia dirigida e cobertura de partes moles. A fixação precisa manter alinhamento e estabilidade; conforme tempo de infecção, consolidação e condição do implante, ele pode ser preservado, trocado ou substituído por outra montagem.\n\n**Estabilidade não é sinônimo de manter todo implante.** Material frouxo ou associado a falha de consolidação pode precisar de revisão. Por outro lado, retirar indiscriminadamente uma fixação estável de fratura ainda não consolidada pode piorar o problema mecânico. A decisão articula erradicação do foco e possibilidade real de união óssea.",
-  "correta": "**Certo: estabilidade é fator primordial.** Ela favorece a consolidação e integra o controle da infecção, sempre em conjunto com desbridamento, antibióticos e manejo de partes moles.",
-  "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, vol. 3, p. 2707."
-  ],
   "provavel": "A",
-  "geradoEm": "2026-09-30",
+  "alerta": "A questão não tem gabarito oficial no acervo. O Rockwood (cap. 30) e o Campbell (cap. 64, método ativo) sustentam \"Certo\", o que coincide com o gabarito da bibliografia citada.",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 914 a 920 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2915 a 2917",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0309": {
@@ -5193,19 +5237,21 @@
   "conferido": false
  },
  "conceitos-basicos-0408": {
+  "conceito": "A onda de choque extracorpórea (ESWT) é um estímulo biofísico de energia bem maior que a do ultrassom terapêutico; em geral exige anestesia. A pergunta pede o que ela estimula, nos estudos in vitro.\n\n**O que o Rockwood descreve** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 893 aprox.). A ESWT **estimula a diferenciação osteogênica das células-tronco mesenquimais**, as propriedades biomecânicas do osso e a **angiogênese**. O capítulo 3 (p. 76 aprox.) resume que ela estimula a **osteogênese nas células estromais da medula óssea**. Em outras palavras, a resposta é de construção: mais diferenciação de células formadoras de osso e mais vasos. **Resultados clínicos.** Consolidação de 75,7% com uma sessão e 80,2% com uma a três; revisão de 924 pacientes, 76%, melhor na hipertrófica. Os efeitos adversos são edema, hematoma e petéquias. A segurança é boa, mas a eficácia se apoia em evidência pobre, de nível IV.\n\n**Como ler as opções.** Osteoclastos e fatores de degradação óssea representam reabsorção, o oposto do efeito descrito; fatores inflamatórios seriam a leitura de quem vê a onda de choque como agressão. Fatores de crescimento é a opção que corresponde ao estímulo osteogênico.\n\nO comparativo dos métodos está na seção \"Estímulo biofísico e tratamento não operatório\", em \"Ultrassom e ondas de choque\", do resumo.",
+  "correta": "**C) Fatores de crescimento.** É a opção mais compatível com a ESWT, que estimula a diferenciação osteogênica das células mesenquimais e a angiogênese.",
   "incorretas": {
-   "A": "**Osteoclastos reabsorvem osso.** Sua participação na remodelação pode ser necessária mais adiante, mas produção de osteoclastos não resume o efeito pró-consolidação que a questão busca.",
-   "B": "**Inflamação faz parte do início do reparo, porém a expressão é inespecífica.** O conjunto de mediadores destacado nos estudos citados é de fatores de crescimento, não simplesmente de fatores inflamatórios.",
-   "D": "**Degradação óssea não é o mecanismo regenerativo central.** A reabsorção pode acompanhar o remodelamento, mas estimular destruição isolada não estabelece ponte óssea estável."
+   "A": "**Osteoclastos** são as células de reabsorção, e o efeito descrito da onda de choque é de formação, com diferenciação osteogênica.",
+   "B": "**Fatores inflamatórios** seriam a leitura de que a onda é uma agressão tecidual; os livros descrevem estímulo osteogênico e angiogênico, e os efeitos adversos descritos (edema, hematoma, petéquias) são locais.",
+   "D": "**Fatores de degradação óssea** contrariam a finalidade de tratar a pseudartrose, que é ganhar osso; nada nos capítulos associa a ESWT a degradação."
   },
-  "alerta": "Não há gabarito oficial disponível para esta questão. A letra C é uma resposta provável fundamentada na bibliografia e não deve contar no desempenho como acerto ou erro oficial.",
-  "conceito": "**Ondas de choque são estímulos mecânicos com resposta celular.** A terapia extracorpórea aplica pulsos de pressão ao foco de pseudartrose. Estudos experimentais relacionam esse estímulo à sinalização para formação de vasos e osso, incluindo mediadores como VEGF, TGF-beta e BMP. A categoria que reúne esses mediadores, entre as alternativas, é a dos fatores de crescimento.\n\n**Mecanismo não equivale a indicação universal.** Estudos clínicos também observaram aumento de alguns desses mediadores após o tratamento, mas a pseudartrose pode persistir se houver instabilidade, infecção, perda óssea ou vascularidade inadequada. Antes de escolher qualquer intervenção, é preciso identificar a causa biológica e mecânica da falha de consolidação.\n\n**Não confunda as etapas do reparo.** Inflamação e atividade osteoclástica participam do remodelamento, mas não são o alvo específico perguntado. Os fatores de crescimento estimulam angiogênese e diferenciação de células formadoras de osso; isso explica por que a alternativa C é a mais coerente com a pergunta, sem prometer eficácia clínica para todo paciente.",
-  "correta": "**Fatores de crescimento, como VEGF, TGF-beta e BMP.** Eles representam a resposta osteogênica e angiogênica associada às ondas de choque na literatura consultada; a resposta é provável, pois não há chave oficial.",
-  "referencias": [
-   "The effects of shockwave on bone healing and systemic concentrations of NO, TGF-beta1, VEGF and BMP-2 in long bone non-unions. https://pubmed.ncbi.nlm.nih.gov/19281856/"
-  ],
   "provavel": "C",
-  "geradoEm": "2026-10-16",
+  "alerta": "A questão não tem gabarito oficial no acervo. O Rockwood descreve diferenciação osteogênica e angiogênese, sem as palavras \"fatores de crescimento\"; entre as opções, a mais compatível com o livro é \"Fatores de crescimento\".",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 30 (Principles of Nonunion and Bone Defect Treatment), p. 893 aprox.",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 3 (Biologic and Biophysical Technologies for the Enhancement of Fracture Repair), p. 76 aprox.",
+   "Resumo OrtoQuestões: Pseudartrose e retardo de consolidação"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0409": {
