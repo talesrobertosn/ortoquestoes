@@ -208,3 +208,54 @@ li.gratis .a3-numeros-pessoa .destaque b { color: var(--grafite); }
 /* Linha do dia enxuta: o estudo vira uma linha somada no topo. */
 .a3-tempo__resumo { margin: 0 0 12px; padding: 10px 12px; border-radius: 10px; background: color-mix(in srgb, var(--verdete) 8%, transparent); color: var(--grafite); font-size: 14px; }
 .a3-tempo__resumo b { color: var(--verdete); }
+
+/* ───────── Agora (02/11/2026): números clicáveis e uma lista de pessoas com abas ───────── */
+.a3-heroi { gap: 14px; padding-bottom: 36px; }
+.a3-heroi__topo { align-items: baseline; }
+.a3-heroi__frase { margin: 0; max-width: none !important; font-size: 15px !important; font-weight: 600; color: var(--sobre-heroi, #fff) !important; }
+.a3-heroi__grupo { display: grid; gap: 8px; }
+.a3-heroi__grupo-titulo { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--sobre-heroi-2, rgba(255,255,255,.8)); }
+.a3-heroi__numeros--3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+.a3-heroi__numeros--hoje { grid-template-columns: repeat(6, minmax(0, 1fr)) !important; }
+button.a3-heroi__numero { position: relative; font: inherit; text-align: left; color: inherit; cursor: pointer; min-width: 0;
+  transition: background .15s ease, border-color .15s ease, transform .15s ease; }
+button.a3-heroi__numero::after { content: "›"; position: absolute; top: 8px; right: 12px; font-size: 18px; line-height: 1; color: var(--sobre-heroi-2, rgba(255,255,255,.7)); }
+button.a3-heroi__numero:hover { background: rgba(255,255,255,.17); border-color: rgba(255,255,255,.4); transform: translateY(-1px); }
+button.a3-heroi__numero:focus-visible { outline: 2px solid var(--pixel-ouro, #f4cf7c); outline-offset: 2px; }
+button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22); border-color: var(--pixel-ouro, #f4cf7c); box-shadow: inset 0 0 0 1px var(--pixel-ouro, #f4cf7c); }
+.a3-heroi__numero--claro i { background: rgba(255,255,255,.75); }
+.a3-heroi__numero span, .a3-heroi__numero small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-right: 10px; }
+@media (max-width: 1100px) { .a3-heroi__numeros--hoje { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; } }
+@media (max-width: 640px) {
+  .a3-heroi { padding: 16px 14px 32px; gap: 12px; }
+  .a3-heroi__frase { font-size: 14px !important; }
+  .a3-heroi__numeros { gap: 8px !important; }
+  .a3-heroi__numero:first-child { grid-column: auto !important; }
+  button.a3-heroi__numero { padding: 9px 10px; }
+  button.a3-heroi__numero::after { top: 6px; right: 8px; font-size: 15px; }
+  .a3-heroi__numero span { font-size: 11px !important; gap: 5px !important; }
+  .a3-heroi__numero b { font-size: 22px !important; }
+  .a3-heroi__numero small { font-size: 10.5px !important; }
+}
+
+/* As abas da lista de pessoas quebram linha em vez de sumir à direita. */
+.a3-abas-locais--rolam { flex-wrap: wrap; gap: 6px; padding: 14px 20px 12px; overflow: visible; }
+.a3-abas-locais--rolam button { height: 34px; padding: 0 12px; border: 1px solid var(--a3-linha); border-radius: 999px; background: var(--superficie, #fff); font-size: 13px; }
+.a3-abas-locais--rolam button::after { display: none; }
+.a3-abas-locais--rolam button[aria-selected="true"] { background: var(--verdete); border-color: var(--verdete); color: var(--cor-sobre, #fff) !important; }
+.a3-abas-locais--rolam button[aria-selected="true"] .a3-cont { background: rgba(255,255,255,.22); color: inherit; }
+.a3-abas-locais--rolam button.vivo:not([aria-selected="true"])::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--acerto, #2e9b6a); }
+@media (max-width: 640px) { .a3-abas-locais--rolam { padding: 12px 14px 10px; } .a3-abas-locais--rolam button { height: 32px; font-size: 12.5px; padding: 0 10px; } }
+/* Filtro de quem está online: chips pequenos, do tamanho das abas acima. */
+#a3-pessoas .a3-chip { min-height: 32px; height: 32px; padding: 0 12px; font-size: 13px; font-weight: 500; }
+#a3-pessoas .a3-chips { gap: 6px; }
+.a3-heroi__numero--dinheiro b { font-size: 26px !important; }
+@media (max-width: 640px) {
+  button.a3-heroi__numero::after { display: none; }
+  .a3-heroi__numero span { white-space: normal !important; overflow: visible !important; padding-right: 0 !important; line-height: 1.2; align-items: flex-start !important; min-height: 2.4em; }
+  .a3-heroi__numero span i { margin-top: 3px; }
+  .a3-heroi__numero--dinheiro b { font-size: 17px !important; line-height: 1.6 !important; }
+  #a3-pessoas .a3-chip { min-height: 30px; height: 30px; padding: 0 10px; font-size: 12.5px; }
+}
+#a3-pessoas .a3-chip span { min-width: 20px; height: 20px; font-size: 11.5px; }
+@media (max-width: 360px) { .a3-heroi__numero span { font-size: 10px !important; } .a3-heroi__numero b { font-size: 20px !important; } button.a3-heroi__numero { padding: 8px 8px; } }

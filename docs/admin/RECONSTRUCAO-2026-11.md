@@ -142,3 +142,16 @@ ou `search_path` foi alterada. Nenhum dado administrativo foi exposto em endpoin
 - Linha do dia: deixou de ter uma linha por pessoa que estudou (repetia a lista "Estudaram hoje").
   Agora mostra uma linha somada (pessoas e questões, com "ver quem") e só cadastros e dinheiro,
   6 por vez, com "Ver mais" e "Recolher". Ela usa os dados já carregados, sem consulta extra.
+
+## Revisão de 02/11/2026 (tarde): Agora com números clicáveis e "tudo de hoje"
+
+Pedido do Tales: "faz esses botões serem clicáveis, mostrar fácil assinantes hoje, mostrar fácil tudo de hoje".
+
+- O topo junta dois grupos de números, todos botões: "Agora no site" (online, assinantes online, não assinantes
+  online) e "Hoje" (assinantes que entraram, viram os planos, bateram o limite, estudaram, cadastros, recebido).
+  Cada um abre a lista certa logo abaixo; "Recebido" abre o extrato.
+- Saiu o texto técnico do topo ("sinal nos últimos 5 min..."); virou uma frase do dia e uma nota no fim da página.
+- "Online agora", "Fora do site" e a faixa "Números do dia" viraram UMA lista de pessoas com abas que quebram linha:
+  Online agora, Assinantes hoje, Viram os planos hoje, Bateram o limite, Estudaram hoje, Cadastros hoje, Assinantes
+  que não entraram, Viram os planos em 30 dias.
+- A barra do celular deixou de repetir "Agora / Agora" (mostra "Painel" em cima).

@@ -13,7 +13,7 @@ import { usarNav } from '../nav'
 import { Icone } from '../ui/Icone'
 import { combina, haQuanto, horario, iniciais, inteiro, normalizar, reais } from '../ui/formato'
 import { Busca, Carregando, Estado, Painel } from '../ui/kit'
-import { Faz, LinhaDoDia, Listas, NumeroDia } from './dia'
+import { Faz, LinhaDoDia, Listas } from './dia'
 import { LinhaFila, useIrDestino, usarFila } from './fila'
 
 /** Último sinal da pessoa (aparelho, atividade ou login), para saber se entrou hoje. */
@@ -66,20 +66,19 @@ function Temperatura({ t }: { t: ReturnType<typeof temperatura> }) {
   return <b className={`a3-temp a3-temp--${t.nivel}`} title="Viu os planos, bateu o limite, questões no total e online agora">{t.rotulo}</b>
 }
 
-type Filtro = 'todos' | Tipo
-type Fora = 'ausentes' | 'saiu' | 'viram'
+type Filtro = 'todos' | 'assinante' | 'nao' | 'lead'
+/** As listas da página: o que está acontecendo agora e tudo de hoje. Cada número do topo abre uma delas. */
+type Vista = 'online' | 'assinantes' | 'viram' | 'limite' | 'estudaram' | 'cadastros' | 'ausentes' | 'viram30'
+const POR_VEZ = 30
 
 /**
- * Página inicial do painel (revisões de 02/11/2026, pedidos do Tales: "seguir o design do site", "me perco").
- * De cima para baixo, uma coisa de cada vez:
- * 1. Faixa de abertura no estilo do herói do site, com os totais (online, assinantes, não assinantes, viram os planos
- *    hoje, limite grátis).
- * 2. Online agora: UMA lista, com filtro (todos, assinantes, viram os planos hoje, não assinantes). Um fio de cor e um
- *    selo dizem o grupo: assinante em verdete, viu os planos em ouro, não assinante em ardósia. Questões de hoje e do
- *    total sempre lado a lado.
- * 3. Fora do site agora: UMA caixa com abas (assinantes que não entraram hoje; viram os planos hoje e saíram; viram os
- *    planos nos últimos 30 dias).
- * 4. Hoje: números, o que pede ação, a linha do dia e as listas.
+ * Página inicial do painel (revisão de 02/11/2026, pedido do Tales: "botões clicáveis, mostrar fácil assinantes hoje e
+ * tudo de hoje"). De cima para baixo:
+ * 1. Topo com dois grupos de números, todos clicáveis: "Agora no site" (online, assinantes online, não assinantes online)
+ *    e "Hoje" (assinantes que entraram, viram os planos, bateram o limite, estudaram, cadastros, recebido).
+ * 2. Pessoas: UMA lista com abas (online agora, assinantes hoje, viram os planos hoje, bateram o limite, estudaram hoje,
+ *    cadastros hoje, assinantes que não entraram, viram os planos em 30 dias). Clicar num número abre a aba certa.
+ * 3. Pede ação e a linha do dia; 4. as tabelas do dia.
  * A lista de pessoas se atualiza a cada 3 minutos e o resto a cada 5; o botão Atualizar busca na hora.
  */
 export default function Inicio() {
@@ -89,12 +88,13 @@ export default function Inicio() {
   const { funil } = usarFunil()
   const fila = usarFila()
   const irDestino = useIrDestino()
+  const [vista, definirVista] = useState<Vista>('online')
   const [filtro, definirFiltro] = useState<Filtro>('todos')
-  const [foraEscolhida, definirFora] = useState<Fora | null>(null)
   const [busca, definirBusca] = useState('')
-  const [foraTodos, definirForaTodos] = useState(false)
+  const [limiteLista, definirLimiteLista] = useState(POR_VEZ)
   const [, recontar] = useState(0)
   useEffect(() => { carregarIndiceBiblioteca().then(i => { registrarTitulosResumos(i.capitulos); recontar(k => k + 1) }).catch(() => undefined) }, [])
+  useEffect(() => { definirLimiteLista(POR_VEZ) }, [vista, filtro, busca])
   const sinaisLista = Array.isArray(p.sinaisQ.dados) ? p.sinaisQ.dados : null
   const quadro = useMemo(() => quadroDoDia({ usuarios: p.usuarios, sinais: sinaisLista, serie: Array.isArray(serieQ.dados) ? serieQ.dados : null, resumo: p.resumo, funil, assinaturas: p.reais, cobrancas: p.cobrancas }),
     [p.usuarios, sinaisLista, serieQ.dados, p.resumo, funil, p.reais, p.cobrancas])
@@ -110,102 +110,114 @@ export default function Inicio() {
     const tipoDe = (u: LinhaUsuario): Tipo => u.plano_vigente ? 'assinante' : viuHoje(sinal(u), hoje) ? 'lead' : 'gratis'
     const ordemTipo: Record<Tipo, number> = { lead: 0, assinante: 1, gratis: 2 }
     const pessoas = p.usuarios.filter(u => !u.administrador)
+    const recente = (a: LinhaUsuario, b: LinhaUsuario) => (ultimoSinal(b) ?? '').localeCompare(ultimoSinal(a) ?? '')
+    const porPlanos = (a: LinhaUsuario, b: LinhaUsuario) => (sinal(b)?.planos_ultima ?? '').localeCompare(sinal(a)?.planos_ultima ?? '')
     const online = pessoas.filter(u => u.online).sort((a, b) => ordemTipo[tipoDe(a)] - ordemTipo[tipoDe(b)]
       || temperatura(b, sinal(b), hoje, limite).pontos - temperatura(a, sinal(a), hoje, limite).pontos
       || (b.pagina_em ?? b.visto_em ?? '').localeCompare(a.pagina_em ?? a.visto_em ?? ''))
     const assinantes = pessoas.filter(u => u.plano_vigente)
-    const porPlanos = (a: LinhaUsuario, b: LinhaUsuario) => (sinal(b)?.planos_ultima ?? '').localeCompare(sinal(a)?.planos_ultima ?? '')
-    const leadsHoje = pessoas.filter(u => !u.plano_vigente && viuHoje(sinal(u), hoje))
-    return {
-      hoje, tipoDe, online,
-      conta: { assinante: online.filter(u => tipoDe(u) === 'assinante').length, lead: online.filter(u => tipoDe(u) === 'lead').length, gratis: online.filter(u => tipoDe(u) === 'gratis').length },
-      totalAssinantes: assinantes.length, leadsHoje,
-      fora: {
-        ausentes: assinantes.filter(u => { const s = ultimoSinal(u); return !s || diaSP(s) !== hoje }).sort((a, b) => (ultimoSinal(b) ?? '').localeCompare(ultimoSinal(a) ?? '')),
-        saiu: leadsHoje.filter(u => !u.online).sort(porPlanos),
-        viram: pessoas.filter(u => !u.plano_vigente && !u.online && viuPlanos(sinal(u)) && !viuHoje(sinal(u), hoje)).sort(porPlanos),
-      },
-      bateram: limite ? pessoas.filter(u => !u.plano_vigente && (u.respondidas_hoje ?? 0) >= limite).length : null,
-      questoesGratisHoje: pessoas.filter(u => !u.plano_vigente).reduce((s, u) => s + (u.respondidas_hoje ?? 0), 0),
+    const entrouHoje = (u: LinhaUsuario) => { const s = ultimoSinal(u); return !!s && diaSP(s) === hoje }
+    const porQuestoes = (a: LinhaUsuario, b: LinhaUsuario) => (b.respondidas_hoje ?? 0) - (a.respondidas_hoje ?? 0) || recente(a, b)
+    const listas: Record<Vista, LinhaUsuario[]> = {
+      online,
+      assinantes: assinantes.filter(entrouHoje).sort((a, b) => Number(b.online) - Number(a.online) || porQuestoes(a, b)),
+      viram: pessoas.filter(u => !u.plano_vigente && viuHoje(sinal(u), hoje)).sort(porPlanos),
+      limite: limite ? pessoas.filter(u => !u.plano_vigente && (u.respondidas_hoje ?? 0) >= limite).sort(porQuestoes) : [],
+      estudaram: quadro.estudaram.map(f => f.pessoa).filter(u => !u.administrador).sort(porQuestoes),
+      cadastros: pessoas.filter(u => diaSP(u.criado_em) === hoje).sort((a, b) => b.criado_em.localeCompare(a.criado_em)),
+      ausentes: assinantes.filter(u => !entrouHoje(u)).sort(recente),
+      viram30: pessoas.filter(u => !u.plano_vigente && viuPlanos(sinal(u)) && !viuHoje(sinal(u), hoje)).sort(porPlanos),
     }
-  }, [p.usuarios, p.sinais, limite])
+    return {
+      hoje, tipoDe, listas, totalAssinantes: assinantes.length,
+      conta: { assinante: online.filter(u => tipoDe(u) === 'assinante').length, lead: online.filter(u => tipoDe(u) === 'lead').length, gratis: online.filter(u => tipoDe(u) === 'gratis').length },
+    }
+  }, [p.usuarios, p.sinais, limite, quadro.estudaram])
   const semSinais = !p.sinaisQ.dados
-  // A caixa "Fora do site" abre na primeira aba que tem gente.
-  const fora: Fora = foraEscolhida ?? (g ? (['saiu', 'viram', 'ausentes'] as Fora[]).find(f => g.fora[f].length) ?? 'saiu' : 'saiu')
   const termo = normalizar(busca.trim())
-  const visiveis = g ? g.online.filter(u => (filtro === 'todos' || g.tipoDe(u) === filtro) && combina([u.nome, u.email], termo)) : []
+  const daVista = g ? g.listas[vista].filter(u => (vista !== 'online' || filtro === 'todos' || (filtro === 'nao' ? g.tipoDe(u) !== 'assinante' : g.tipoDe(u) === filtro)) && combina([u.nome, u.email], termo)) : []
+  const vistos = daVista.slice(0, limiteLista)
+
+  /** Abre uma lista a partir de um número do topo e rola até ela. */
+  const abrir = (v: Vista, f: Filtro = 'todos') => {
+    definirVista(v); definirFiltro(f); definirBusca('')
+    requestAnimationFrame(() => document.getElementById('a3-pessoas')?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+  }
+  const ativo = (v: Vista, f: Filtro = 'todos') => vista === v && (v !== 'online' || filtro === f)
+  const n = (v: Vista) => g ? g.listas[v].length : null
+  const dataHoje = new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long', timeZone: 'America/Sao_Paulo' })
+
+  const VISTAS: Array<{ id: Vista; rotulo: string; titulo: string; texto: string }> = [
+    { id: 'online', rotulo: 'Online agora', titulo: 'Online agora', texto: 'Quem usou o site nos últimos 5 minutos. Quem viu os planos hoje vem primeiro.' },
+    { id: 'assinantes', rotulo: 'Assinantes hoje', titulo: 'Assinantes que entraram hoje', texto: `${n('assinantes') ?? 0} de ${g?.totalAssinantes ?? 0} assinantes entraram hoje. Online primeiro, depois quem mais respondeu.` },
+    { id: 'viram', rotulo: 'Viram os planos hoje', titulo: 'Viram os planos hoje', texto: 'Não assinantes que abriram a página de preços hoje, online ou não. Os mais quentes para uma carta.' },
+    ...(limite ? [{ id: 'limite' as Vista, rotulo: 'Bateram o limite', titulo: 'Bateram o limite grátis hoje', texto: `Responderam as ${limite} questões grátis do dia e ficaram sem.` }] : []),
+    { id: 'estudaram', rotulo: 'Estudaram hoje', titulo: 'Estudaram hoje', texto: 'Questões, flashcards ou resumos hoje. Quem mais respondeu primeiro.' },
+    { id: 'cadastros', rotulo: 'Cadastros hoje', titulo: 'Criaram a conta hoje', texto: 'Do mais recente ao mais antigo.' },
+    { id: 'ausentes', rotulo: 'Assinantes que não entraram', titulo: 'Assinantes que não entraram hoje', texto: 'Quem paga e ainda não apareceu hoje. Quem sumiu há mais tempo fica no fim.' },
+    { id: 'viram30', rotulo: 'Viram os planos em 30 dias', titulo: 'Viram os planos nos últimos 30 dias', texto: 'Não assinantes que olharam os preços antes de hoje e não estão online.' },
+  ]
+  const atual = VISTAS.find(v => v.id === vista) ?? VISTAS[0]
+  const vazio: Record<Vista, string> = { online: g?.listas.online.length ? 'Ninguém neste filtro agora' : 'Ninguém online agora', assinantes: 'Nenhum assinante entrou hoje ainda', viram: semSinais ? 'Sinal de planos indisponível' : 'Ninguém viu os planos hoje', limite: 'Ninguém bateu o limite hoje', estudaram: 'Ninguém estudou hoje ainda', cadastros: 'Nenhum cadastro hoje ainda', ausentes: 'Todos os assinantes entraram hoje', viram30: 'Ninguém nos últimos 30 dias' }
 
   return <div className="a3-pilha a3-pilha--larga">
-    <section className="a3-heroi" aria-label="Resumo de agora">
+    <section className="a3-heroi" aria-label="Resumo de agora e de hoje">
       <div className="a3-heroi__topo">
-        <div>
-          <span className="a3-rotulo">{new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long', timeZone: 'America/Sao_Paulo' })}</span>
-          <h1 className="a3-titulo-1">Agora</h1>
-        </div>
-        <p>Online = sinal nos últimos 5 min · pessoas atualizam a cada 3 min, o resto a cada 5 · Atualizar busca na hora</p>
+        <h1 className="a3-titulo-1 a3-so-leitor">Agora</h1>
+        <span className="a3-rotulo">{dataHoje}</span>
+        {g && <p className="a3-heroi__frase">{g.listas.online.length} {g.listas.online.length === 1 ? 'pessoa online' : 'pessoas online'} · {n('assinantes')} de {g.totalAssinantes} assinantes entraram hoje · {inteiro(n('estudaram') ?? 0)} {n('estudaram') === 1 ? 'estudou' : 'estudaram'}</p>}
       </div>
-      {g && <div className="a3-heroi__numeros">
-        <Numero cor="vivo" rotulo="Online agora" valor={g.online.length} nota="sem contar administradores" />
-        <Numero cor="assinante" rotulo="Assinantes online" valor={g.conta.assinante} nota={`de ${g.totalAssinantes} assinantes`} />
-        <Numero cor="gratis" rotulo="Não assinantes online" valor={g.conta.gratis + g.conta.lead} nota={`${g.conta.lead} ${g.conta.lead === 1 ? 'viu' : 'viram'} os planos hoje`} />
-        <Numero cor="lead" rotulo="Viram os planos hoje" valor={semSinais ? null : g.leadsHoje.length} nota={semSinais ? 'sinal indisponível' : 'não assinantes, online ou não'} />
-        <Numero cor="gratis" rotulo={limite ? 'Bateram o limite grátis' : 'Questões grátis hoje'} valor={g.bateram ?? g.questoesGratisHoje}
-          nota={limite ? `limite de ${limite} por dia` : 'de não assinantes; limite desligado'} />
-      </div>}
+      {g && <>
+        <div className="a3-heroi__grupo">
+          <h2 className="a3-heroi__grupo-titulo"><i className="a3-ponto a3-ponto--vivo" aria-hidden="true" />Agora no site</h2>
+          <div className="a3-heroi__numeros a3-heroi__numeros--3">
+            <Numero cor="vivo" rotulo="Online" valor={g.listas.online.length} nota="últimos 5 min" ativo={ativo('online')} aoClicar={() => abrir('online')} />
+            <Numero cor="assinante" rotulo="Assinantes" valor={g.conta.assinante} nota={`de ${g.totalAssinantes}`} ativo={ativo('online', 'assinante')} aoClicar={() => abrir('online', 'assinante')} />
+            <Numero cor="gratis" rotulo="Não assinantes" valor={g.conta.gratis + g.conta.lead} nota={g.conta.lead ? `${g.conta.lead} ${g.conta.lead === 1 ? 'viu' : 'viram'} os planos` : 'online agora'} ativo={ativo('online', 'nao')} aoClicar={() => abrir('online', 'nao')} />
+          </div>
+        </div>
+        <div className="a3-heroi__grupo">
+          <h2 className="a3-heroi__grupo-titulo">Hoje</h2>
+          <div className="a3-heroi__numeros a3-heroi__numeros--hoje">
+            <Numero cor="assinante" rotulo="Assinantes hoje" valor={n('assinantes')} nota={`de ${g.totalAssinantes} entraram`} ativo={ativo('assinantes')} aoClicar={() => abrir('assinantes')} />
+            <Numero cor="lead" rotulo="Viram os planos" valor={semSinais ? null : n('viram')} nota={semSinais ? 'sinal indisponível' : 'não assinantes'} ativo={ativo('viram')} aoClicar={() => abrir('viram')} />
+            {limite ? <Numero cor="gratis" rotulo="Bateram o limite" valor={n('limite')} nota={`de ${limite} grátis`} ativo={ativo('limite')} aoClicar={() => abrir('limite')} />
+              : <Numero cor="gratis" rotulo="Assinantes ausentes" valor={n('ausentes')} nota="não entraram hoje" ativo={ativo('ausentes')} aoClicar={() => abrir('ausentes')} />}
+            <Numero cor="claro" rotulo="Estudaram" valor={n('estudaram')} nota={`${inteiro(g.listas.estudaram.reduce((t, u) => t + (u.respondidas_hoje ?? 0), 0))} questões`} ativo={ativo('estudaram')} aoClicar={() => abrir('estudaram')} />
+            <Numero cor="claro" rotulo="Cadastros" valor={n('cadastros')} nota={nm.cadastros7d !== null ? `${inteiro(nm.cadastros7d)} em 7 dias` : 'hoje'} ativo={ativo('cadastros')} aoClicar={() => abrir('cadastros')} />
+            <Numero cor="claro" rotulo="Recebido" valor={nm.valorPago.hoje} formato={reais} nota={nm.valorPago.hoje === null ? 'hoje' : `${inteiro(nm.pagaram.hoje ?? 0)} ${nm.pagaram.hoje === 1 ? 'pagamento' : 'pagamentos'}`} aoClicar={() => nav.ir('cobrancas')} />
+          </div>
+        </div>
+      </>}
     </section>
 
-    <nav className="a3-saltos" aria-label="Ir para">
-      {([['a3-online', 'Online agora'], ['a3-fora', 'Fora do site'], ['a3-hoje', 'Números do dia'], ['a3-acao', 'Pede ação'], ['a3-linha', 'Linha do dia'], ['a3-listas', 'Estudaram, entraram, dinheiro…']] as const)
-        .map(([id, r]) => <a key={id} href={`#${id}`} onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>{r}</a>)}
-    </nav>
-
-    {!g ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="A lista de quem está online não carregou" texto={p.erroDados} /> : <Carregando linhas={5} texto="Vendo quem está online…" />}</div> : <>
-      <section className="a3-painel a3-ancora" id="a3-online" aria-label="Online agora">
+    {!g ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="A lista de pessoas não carregou" texto={p.erroDados} /> : <Carregando linhas={5} texto="Vendo quem está online…" />}</div> :
+      <section className="a3-painel a3-ancora" id="a3-pessoas" aria-label="Pessoas">
+        <div className="a3-abas-locais a3-abas-locais--rolam" role="tablist" aria-label="Qual lista">
+          {VISTAS.map(v => <button key={v.id} type="button" role="tab" aria-selected={vista === v.id} className={v.id === 'online' ? 'vivo' : undefined}
+            onClick={() => { definirVista(v.id); definirFiltro('todos') }}>{v.rotulo}<span className="a3-cont">{n(v.id)}</span></button>)}
+        </div>
         <div className="a3-secao-cabeca">
-          <div><h2><i className="a3-ponto a3-ponto--vivo" aria-hidden="true" /> Online agora <span className="a3-bolha">{g.online.length}</span></h2><p>Nos últimos 5 minutos. Quem viu os planos hoje vem primeiro.</p></div>
+          <div><h2>{vista === 'online' && <i className="a3-ponto a3-ponto--vivo" aria-hidden="true" />} {atual.titulo} <span className="a3-bolha">{daVista.length}</span></h2><p>{atual.texto}</p></div>
         </div>
         <div className="a3-filtros">
-          <div className="a3-chips" role="group" aria-label="Filtrar quem está online">
-            <Filtro ativo={filtro === 'todos'} aoClicar={() => definirFiltro('todos')} contagem={g.online.length}>Todos</Filtro>
+          {vista === 'online' && <div className="a3-chips" role="group" aria-label="Filtrar quem está online">
+            <Filtro ativo={filtro === 'todos'} aoClicar={() => definirFiltro('todos')} contagem={g.listas.online.length}>Todos</Filtro>
             <Filtro ativo={filtro === 'assinante'} aoClicar={() => definirFiltro('assinante')} contagem={g.conta.assinante}>Assinantes</Filtro>
+            <Filtro ativo={filtro === 'nao'} aoClicar={() => definirFiltro('nao')} contagem={g.conta.gratis + g.conta.lead}>Não assinantes</Filtro>
             <Filtro ativo={filtro === 'lead'} aoClicar={() => definirFiltro('lead')} contagem={g.conta.lead}>Viram os planos hoje</Filtro>
-            <Filtro ativo={filtro === 'gratis'} aoClicar={() => definirFiltro('gratis')} contagem={g.conta.gratis}>Não assinantes</Filtro>
-          </div>
-          <Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar por nome" />
+          </div>}
+          <Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar por nome ou e-mail" />
         </div>
-        {!visiveis.length ? <div style={{ padding: 20 }}><Estado compacto icone="pessoas" titulo={g.online.length ? 'Ninguém neste filtro agora' : 'Ninguém online agora'} /></div> :
-          <ul className="a3-pessoas-lista">{visiveis.map(u => <LinhaOnline key={u.id_usuario} u={u} tipo={g.tipoDe(u)} hoje={g.hoje} limite={limite} />)}</ul>}
-      </section>
+        {!daVista.length ? <div style={{ padding: 20 }}><Estado compacto icone={vista === 'ausentes' ? 'certo' : 'pessoas'} titulo={termo ? 'Ninguém com esse nome nesta lista' : vazio[vista]} /></div> : <>
+          <ul className="a3-pessoas-lista">{vistos.map(u => u.online
+            ? <LinhaOnline key={u.id_usuario} u={u} tipo={g.tipoDe(u)} hoje={g.hoje} limite={limite} />
+            : <LinhaFora key={u.id_usuario} u={u} tipo={g.tipoDe(u)} />)}</ul>
+          {daVista.length > limiteLista && <div className="a3-paginacao"><span>{vistos.length} de {daVista.length}</span>
+            <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirLimiteLista(daVista.length)}>Ver todos os {daVista.length}</button></div>}
+        </>}
+      </section>}
 
-      <section className="a3-painel a3-ancora" id="a3-fora" aria-label="Fora do site agora">
-        <div className="a3-secao-cabeca"><div><h2>Fora do site agora</h2><p>Quem vale acompanhar mesmo sem estar online.</p></div></div>
-        <div className="a3-abas-locais" role="tablist" aria-label="Quem está fora do site">
-          {([['saiu', 'Viram os planos hoje e saíram', g.fora.saiu.length], ['viram', 'Viram os planos em 30 dias', g.fora.viram.length], ['ausentes', 'Assinantes que não entraram hoje', g.fora.ausentes.length]] as Array<[Fora, string, number]>)
-            .map(([id, r, n]) => <button key={id} type="button" role="tab" aria-selected={fora === id} onClick={() => definirFora(id)}>{r}<span className="a3-cont">{n}</span></button>)}
-        </div>
-        {(() => {
-          const lista = g.fora[fora]
-          if (!lista.length) return <div style={{ padding: 20 }}><Estado compacto icone="certo" titulo={fora === 'ausentes' ? 'Todos os assinantes entraram hoje.' : semSinais ? 'Sinal de planos indisponível.' : fora === 'saiu' ? 'Ninguém viu os planos hoje e saiu.' : 'Ninguém nos últimos 30 dias.'} /></div>
-          const vistos = foraTodos ? lista : lista.slice(0, 30)
-          return <>
-            <ul className="a3-pessoas-lista">{vistos.map(u => <LinhaFora key={u.id_usuario} u={u} tipo={g.tipoDe(u)} />)}</ul>
-            {lista.length > 30 && <div className="a3-paginacao"><span>{vistos.length} de {lista.length}</span>
-              <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirForaTodos(v => !v)}>{foraTodos ? 'Mostrar só os 30 primeiros' : `Ver todos os ${lista.length}`}</button></div>}
-          </>
-        })()}
-      </section>
-    </>}
-
-    <section className="a3-painel a3-ancora" id="a3-hoje" aria-label="Hoje">
-      <div className="a3-secao-cabeca"><div><h2>Hoje</h2><p>O dia em números. Hoje ainda está em andamento; "ontem" é o dia inteiro.</p></div></div>
-      <div className="a3-faixa-metricas" style={{ '--colunas': 5 } as React.CSSProperties}>
-        <NumeroDia rotulo="Entraram hoje" numero={nm.entraram} nota="estudando ou não" />
-        <NumeroDia rotulo="Estudaram hoje" numero={nm.estudaram} aoClicar={() => nav.ir('usuarios', { filtro: 'hoje' })} />
-        <NumeroDia rotulo="Questões hoje" numero={nm.questoes} />
-        <NumeroDia rotulo="Cadastros hoje" numero={nm.cadastros} nota={nm.cadastros7d !== null ? `${inteiro(nm.cadastros7d)} em 7 dias` : undefined} aoClicar={() => nav.ir('usuarios', { filtro: 'novos' })} />
-        <NumeroDia rotulo="Recebido hoje" numero={nm.valorPago} formato={reais} nota={nm.valorPago.hoje === null ? undefined : `${inteiro(nm.pagaram.hoje)} ${nm.pagaram.hoje === 1 ? 'pagamento' : 'pagamentos'}`} aoClicar={() => nav.ir('cobrancas')} />
-      </div>
-    </section>
     <div className="a3-grade a3-grade--12" style={{ alignItems: 'start' }}>
       <div style={{ gridColumn: 'span 5' }} id="a3-acao" className="a3-ancora">
         <Painel justo titulo={fila.length ? 'Pede ação' : 'Nada pedindo ação'} descricao={fila.length ? 'Do mais grave ao menos grave' : 'Sem falha de pagamento, relato aberto ou fonte fora do ar.'}>
@@ -216,15 +228,16 @@ export default function Inicio() {
       <div style={{ gridColumn: 'span 7' }} id="a3-linha" className="a3-ancora"><LinhaDoDia quadro={quadro} /></div>
     </div>
     <div id="a3-listas" className="a3-ancora"><Listas quadro={quadro} /></div>
+    <p className="a3-mudo a3-pequeno">Online é quem deu sinal nos últimos 5 minutos. A lista de pessoas se atualiza sozinha a cada 3 minutos e o resto a cada 5; o botão Atualizar, lá em cima, busca na hora.</p>
   </div>
 }
 
-function Numero({ cor, rotulo, valor, nota }: { cor: 'vivo' | Tipo; rotulo: string; valor: number | null; nota: string }) {
-  return <div className={`a3-heroi__numero a3-heroi__numero--${cor}`}>
+function Numero({ cor, rotulo, valor, nota, ativo, aoClicar, formato = inteiro }: { cor: 'vivo' | 'claro' | Tipo; rotulo: string; valor: number | null; nota: string; ativo?: boolean; aoClicar: () => void; formato?: (n: number) => string }) {
+  return <button type="button" className={`a3-heroi__numero a3-heroi__numero--${cor}${formato !== inteiro ? ' a3-heroi__numero--dinheiro' : ''}`} aria-pressed={ativo ?? false} onClick={aoClicar}>
     <span><i aria-hidden="true" />{rotulo}</span>
-    <b className="num">{valor === null ? '—' : inteiro(valor)}</b>
+    <b className="num">{valor === null ? '—' : formato(valor)}</b>
     <small>{nota}</small>
-  </div>
+  </button>
 }
 
 function Filtro({ ativo, aoClicar, contagem, children }: { ativo: boolean; aoClicar: () => void; contagem: number; children: ReactNode }) {
