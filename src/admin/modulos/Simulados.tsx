@@ -79,7 +79,7 @@ export default function Simulados() {
   const ir = (v: Vista) => { definirVista(v); document.querySelector('.a3-conteudo')?.scrollTo?.({ top: 0 }); window.scrollTo({ top: 0, behavior: 'smooth' }) }
   const atualizar = (nova: EdicaoAdminSN) => definirEdicoes(lista => [nova, ...(lista ?? []).filter(e => e.edicao !== nova.edicao)].sort((a, b) => b.abre_em.localeCompare(a.abre_em) || b.edicao.localeCompare(a.edicao)))
 
-  if (erro && !edicoes) return <div className="a3-pilha a3-pilha--larga"><Cabeca area="Estudo e conteúdo" titulo={parte.rotulo} pergunta={parte.pergunta} />
+  if (erro && !edicoes) return <div className="a3-pilha a3-pilha--larga"><Cabeca area="Conteúdo" titulo={parte.rotulo} pergunta={parte.pergunta} />
     <Estado tipo="erro" titulo="As edições não carregaram" texto={erro} acao={<button type="button" className="a3-botao" onClick={() => void carregar()}>Tentar de novo</button>} /></div>
   if (!edicoes) return <Carregando linhas={6} texto="Carregando as edições…" />
   const aberta = vista.tipo === 'edicao' ? edicoes.find(e => e.edicao === vista.edicao) ?? null : null
@@ -107,7 +107,7 @@ function Lista({ edicoes, aoMontar, aoAbrir }: { edicoes: EdicaoAdminSN[]; aoMon
   const meses = useMemo(() => Array.from({ length: 12 }, (_, i) => somarMeses(somarMeses(mesPadrao([]), -3), i)), [])
   const doMes = (m: string) => edicoes.filter(e => e.tipo === 'mensal' ? e.edicao === m : e.abre_em.slice(0, 7) === m)
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Estudo e conteúdo" titulo={parte.rotulo} pergunta="Uma prova por mês com as questões oficiais do TEOT e do TARO, a mesma para todo o país, e o simulado de véspera quando a prova chega."
+    <Cabeca area="Conteúdo" titulo={parte.rotulo} pergunta="Uma prova por mês com as questões oficiais do TEOT e do TARO, a mesma para todo o país, e o simulado de véspera quando a prova chega."
       acoes={<><button type="button" className="a3-botao" onClick={() => aoMontar(sugerido)}><Icone nome="lapis" tamanho={15} />Montar {nomeDoMes(sugerido).replace(/ de \d+$/, '')}</button>
         <button type="button" className="a3-botao a3-botao--contorno" onClick={() => aoMontar()}>Outra edição ou véspera</button></>} />
     {atrasada && <Faixa tom="aviso" titulo={`A edição de ${nomeDoMes(atrasada)} ainda não está pronta`}

@@ -82,7 +82,7 @@ export default function Cobrancas() {
   const contagem = (s: FiltroSituacao) => doMeio.filter(l => s === 'todas' || l.situacao === s).length
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Receita" titulo={parte.rotulo} pergunta={`${parte.pergunta} Valores brutos; taxa e líquido estão no extrato do Mercado Pago (o banco não guarda a taxa).${p.testes ? ' Contas de teste do dono ficam de fora.' : ''}`}
+    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Valores brutos; taxa e líquido estão no extrato do Mercado Pago (o banco não guarda a taxa).${p.testes ? ' Contas de teste do dono ficam de fora.' : ''}`}
       acoes={<><Segmento rotulo="Período" valor={periodo} aoMudar={definirPeriodo} opcoes={PERIODOS} />
         <button type="button" className="a3-botao a3-botao--contorno" onClick={exportar} disabled={!visiveis.length}><Icone nome="baixar" tamanho={15} />CSV</button></>} />
     {p.avisoCobrancas && <Faixa tom="aviso" titulo="Cobranças gravadas indisponíveis">{p.avisoCobrancas}</Faixa>}
@@ -94,8 +94,8 @@ export default function Cobrancas() {
         <span className="a3-metrica__linha">{inteiro(totais.quantidade)} {totais.quantidade === 1 ? 'cobrança' : 'cobranças'}{meio !== 'todos' ? ` · só ${rotuloMeio(meio)}` : ''}</span>
       </div>
       <dl className="a3-pares">
-        <div><dt><SeloQualidade q="confirmado" /> Confirmado</dt><dd>{reais(totais.confirmado)}</dd></div>
-        <div><dt><SeloQualidade q="estimado" /> Reconstruído</dt><dd>{reais(totais.estimado)} <span className="a3-mudo">· {totais.estimadas}</span></dd></div>
+        <div><dt><SeloQualidade q="confirmado" sempre /> Confirmado</dt><dd>{reais(totais.confirmado)}</dd></div>
+        <div><dt><SeloQualidade q="estimado" sempre /> Estimado</dt><dd>{reais(totais.estimado)} <span className="a3-mudo">· {totais.estimadas}</span></dd></div>
         <div><dt>Cartão · Pix</dt><dd>{reais(totais.cartao)} · {reais(totais.pix)} {totais.bruto ? <span className="a3-mudo">({pct(Math.round((totais.pix / totais.bruto) * 100))} Pix)</span> : null}</dd></div>
         <div><dt>Devolvido (fora do total)</dt><dd style={{ color: totais.devolvido ? 'var(--a3-erro)' : undefined }}>{reais(totais.devolvido)} <span className="a3-mudo">· {totais.devolvidas}</span></dd></div>
       </dl>
@@ -107,7 +107,7 @@ export default function Cobrancas() {
         <label className="a3-filtro">Meio<select value={meio} onChange={e => definirMeio(e.target.value as typeof meio)}><option value="todos">Pix e cartão</option><option value="pix">Pix</option><option value="cartao">Cartão</option></select></label>
       </div>
       <div className="a3-filtros" style={{ paddingTop: 0 }} role="group" aria-label="Situação">
-        {(['todas', 'paga', 'estimada', 'reembolsada'] as const).map(s => <Filtro key={s} ativo={situacao === s} aoClicar={() => definirSituacao(s)} contagem={contagem(s)}>{s === 'todas' ? 'Todas' : s === 'paga' ? 'Pagas' : s === 'estimada' ? 'Reconstruídas' : 'Reembolsadas'}</Filtro>)}
+        {(['todas', 'paga', 'estimada', 'reembolsada'] as const).map(s => <Filtro key={s} ativo={situacao === s} aoClicar={() => definirSituacao(s)} contagem={contagem(s)}>{s === 'todas' ? 'Todas' : s === 'paga' ? 'Pagas' : s === 'estimada' ? 'Estimadas' : 'Reembolsadas'}</Filtro>)}
       </div>
       {dias.length === 0 ? <div style={{ padding: 20 }}><Estado icone="receita" titulo={`Nenhuma cobrança ${NOME_PERIODO[periodo]}`} texto={situacao !== 'todas' || busca ? 'Tire um filtro para ver mais.' : 'É zero de verdade, não falta de dado.'} /></div> :
         <ol className="a3-extrato">{dias.map(d => <li key={d.dia}>
@@ -120,7 +120,7 @@ export default function Cobrancas() {
                 <span className="a3-nome">{l.nome}</span>
                 <span className="a3-sub">{rotuloPlano(l.plano)} · {l.tipo}{l.email && l.email !== l.nome ? ` · ${l.email}` : ''}</span>
               </button>
-              <span className="a3-extrato__selos"><Selo contorno>{rotuloMeio(l.meio)}</Selo>{l.situacao === 'estimada' && <Selo>Reconstruída</Selo>}{l.situacao === 'reembolsada' && <Selo tom="erro">Reembolsada{l.reembolsadaEm ? ` em ${dataBr(l.reembolsadaEm)}` : ''}</Selo>}</span>
+              <span className="a3-extrato__selos"><Selo contorno>{rotuloMeio(l.meio)}</Selo>{l.situacao === 'estimada' && <Selo>Estimada</Selo>}{l.situacao === 'reembolsada' && <Selo tom="erro">Reembolsada{l.reembolsadaEm ? ` em ${dataBr(l.reembolsadaEm)}` : ''}</Selo>}</span>
               <span className="a3-extrato__valor num">{l.situacao === 'reembolsada' ? '−' : '+'}{reais(l.valor)}</span>
               {link ? <a className="a3-botao a3-botao--fantasma a3-botao--icone a3-botao--pequeno" href={link} target="_blank" rel="noopener noreferrer" aria-label={`Abrir o pagamento de ${l.nome} no Mercado Pago`} title="Abrir no Mercado Pago"><Icone nome="externo" tamanho={15} /></a> : <span className="a3-extrato__vazio" />}
             </li>
@@ -129,6 +129,6 @@ export default function Cobrancas() {
       {visiveis.length > limite && <div className="a3-paginacao"><span>{inteiro(limite)} de {inteiro(visiveis.length)}</span>
         <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirLimite(n => n + POR_VEZ)}>Mostrar mais {Math.min(POR_VEZ, visiveis.length - limite)}</button></div>}
     </section>
-    <p className="a3-mudo a3-pequeno">Reconstruída: renovação antiga do cartão refeita pelo período do plano (o banco guarda só a última cobrança de cada cartão) ou assinatura paga sem a cobrança gravada.</p>
+    <p className="a3-mudo a3-pequeno">Estimada: renovação antiga do cartão refeita pelo período do plano (o banco guarda só a última cobrança de cada cartão) ou assinatura paga sem a cobrança gravada.</p>
   </div>
 }

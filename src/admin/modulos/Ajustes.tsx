@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { atualizarPremium } from '../../conta/premium'
 import { chamarRpc } from '../../servicos/supabase'
 import { erroDoPainel } from '../../componentes/admin/formatos'
-import { defParte } from '../rotas'
+import { defAba } from '../rotas'
 import { Icone } from '../ui/Icone'
 import { dataHora } from '../ui/formato'
 import { Cabeca, Carregando, Estado, Faixa, Interruptor, Painel, Selo } from '../ui/kit'
@@ -15,7 +15,7 @@ interface ConfigComercial { paywall_ativo: boolean; limite_diario_gratis: number
  * então cada mudança mostra o antes e o depois e pede confirmação; nada é salvo sozinho.
  */
 export default function Ajustes() {
-  const parte = defParte('ajustes')
+  const parte = defAba('ajustes')
   const [comercial, definirComercial] = useState<ConfigComercial | null>(null)
   const [rascunho, definirRascunho] = useState<ConfigComercial | null>(null)
   const [exclusivos, definirExclusivos] = useState<boolean | null>(null)
@@ -56,7 +56,7 @@ export default function Ajustes() {
   }
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Configurações" titulo={parte.rotulo} pergunta={`${parte.pergunta} Tudo aqui vale na hora para todo mundo.`} />
+    <Cabeca area="Ajustes" titulo={parte.rotulo} pergunta={`${parte.pergunta} Tudo aqui vale na hora para todo mundo.`} />
     {erro && <Faixa tom="erro" titulo="A configuração comercial não carregou">{erro}</Faixa>}
     <div className="a3-grade a3-grade--2" style={{ alignItems: 'start' }}>
       <Painel titulo="Limite gratuito e pagamentos" descricao={comercial ? `Última mudança em ${dataHora(comercial.atualizado_em)}.` : undefined}>

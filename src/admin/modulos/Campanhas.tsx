@@ -109,13 +109,13 @@ export default function Campanhas() {
     } finally { avisarEmailsEnviados() }
   }
 
-  if (erro) return <div className="a3-pilha a3-pilha--larga"><Cabeca area="Comunicação" titulo={parte.rotulo} pergunta={parte.pergunta} /><Estado tipo="erro" titulo="As campanhas não carregaram" texto={erro} /></div>
+  if (erro) return <div className="a3-pilha a3-pilha--larga"><Cabeca area="E-mails" titulo={parte.rotulo} pergunta={parte.pergunta} /><Estado tipo="erro" titulo="As campanhas não carregaram" texto={erro} /></div>
   const r = c ? resumo?.find(x => x.campanha === c.id) : null
   const aguardando = Array.isArray(lista) ? lista.filter(p => !p.liberado).length : 0
   const passo = execucao ? 4 : previa && typeof previa === 'object' ? 3 : 2
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Comunicação" titulo={parte.rotulo} pergunta={parte.pergunta}
+    <Cabeca area="E-mails" titulo={parte.rotulo} pergunta={parte.pergunta}
       acoes={<a className="a3-botao a3-botao--contorno" href={nav.link('cartas')} onClick={e => { e.preventDefault(); nav.ir('cartas') }}><Icone nome="carta" tamanho={15} />Carta pessoal por grupo</a>} />
     <Faixa titulo="Contra o spam, vale para tudo">Ninguém recebe dois lembretes em menos de 2 dias (só "Pix: termina hoje" passa, por ser o último aviso); o servidor segura quem recebeu qualquer e-mail nas últimas 48 horas ou 3 em 14 dias; e cada lembrete sai uma vez por ausência. "Primeira missão" e a carta "Criou e não começou" falam com as mesmas pessoas, assim como "Retomar a jornada" e "Sumiu": use um ou outro.</Faixa>
 

@@ -2,7 +2,9 @@
 //
 // Sobe o site com o Supabase falso de fixtures/painel_admin_falso.mjs (nenhuma RPC real, nenhum e-mail sai,
 // nenhuma cobrança é tocada) e confere:
-//  1. a casca nova: seis áreas na barra, trilha, "Atualizado às", sem a casca do site (cabeçalho e rodapé);
+//  1. a casca: as seis áreas com os nomes de antes (Agora, Pessoas, Financeiro, Conteúdo, E-mails, Ajustes); 1b. a página
+//     inicial começa por quem está online, assinantes separados por cor, assinantes que não entraram e quem viu os planos;
+//     (antes: seis áreas na barra, trilha, "Atualizado às", sem a casca do site (cabeçalho e rodapé);
 //  2. as 23 partes abrem sem erro de página, cada uma com o título certo e sem rolagem de lado no celular;
 //  3. endereços antigos (?aba=hoje, receita, operacoes, configuracoes, relatos, avaliacoes) abrindo no lugar novo;
 //  4. filtro e vista no endereço (Pessoas › Explorador, Qualidade do acervo) e Voltar do navegador;
@@ -23,12 +25,13 @@ import { iniciar, pedidos, rpcs } from './painel_admin_falso.mjs'
 const capturas = process.env.CAPTURAS ?? await mkdtemp(join(tmpdir(), 'orto-admin-e2e-'))
 await mkdir(capturas, { recursive: true })
 const { erros, contexto, abrir, fechar } = await iniciar()
+// Telas do menu (e as abas, pelo endereço) com o título que aparecem.
 const PARTES = {
-  comando: 'Estado do Orto Questões', agora: 'Atividade agora', pendencias: 'Pendências', usuarios: 'Explorador', crescimento: 'Aquisição e ativação', retencao: 'Retenção e ritmo', perfis: 'Perfis e origem',
-  conteudo: 'Qualidade do acervo', questoes: 'Editor de questões', simulados: 'Simulados', opinioes: 'Opiniões dos flashcards',
-  financeiro: 'Visão financeira', previsao: 'Previsão', assinaturas: 'Assinaturas', cobrancas: 'Cobranças', pagamentos: 'Avisos do processador',
-  lembretes: 'Campanhas', cartas: 'Cartas pessoais', envios: 'Relatórios e envios', todas: 'Catálogo de cartas',
-  ajustes: 'Acesso e pagamentos', aviso: 'Aviso no topo do site', exportar: 'Exportação',
+  '': 'Agora', 'aba=usuarios': 'Usuários', 'aba=crescimento': 'Aquisição', 'aba=crescimento&sub=retencao': 'Retenção', 'aba=crescimento&sub=perfis': 'Perfis e origem',
+  'aba=conteudo': 'Relatos e avaliações', 'aba=questoes': 'Editar questões', 'aba=simulados': 'Simulados', 'aba=opinioes': 'Opiniões dos flashcards',
+  'aba=financeiro': 'Ganhos', 'aba=financeiro&sub=previsao': 'Previsão', 'aba=assinaturas': 'Assinaturas', 'aba=cobrancas': 'Pagamentos', 'aba=pagamentos': 'Avisos de pagamento',
+  'aba=lembretes': 'Lembretes', 'aba=cartas': 'Cartas pessoais', 'aba=envios': 'Relatórios e histórico', 'aba=todas': 'Todas as cartas',
+  'aba=ajustes': 'Acesso e pagamentos', 'aba=ajustes&sub=aviso': 'Aviso no topo do site', 'aba=exportar': 'Exportar dados',
 }
 const titulo = p => p.locator('h1.a3-titulo-1').first().innerText()
 const chamadas = nome => pedidos.filter(x => x.rpc === nome).length
@@ -42,22 +45,37 @@ try {
   assert.equal(await pc.p.locator('.a3-casca').count(), 1)
   assert.equal(await pc.p.locator('header.cabecalho, footer.rodape').count(), 0, 'o painel abre sem a casca do site')
   const areas = await pc.p.locator('.a3-nav-area').allInnerTexts()
-  for (const area of ['Comando', 'Pessoas', 'Estudo e conteúdo', 'Receita', 'Comunicação', 'Configurações']) assert.ok(areas.join(' | ').includes(area), `área ${area} na barra: ${areas.join(' | ')}`)
+  for (const area of ['Agora', 'Pessoas', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes']) assert.ok(areas.join(' | ').includes(area), `área ${area} na barra: ${areas.join(' | ')}`)
   assert.match(await pc.p.locator('body').innerText(), /Atualizado às \d{2}:\d{2}/)
-  ok('casca nova com seis áreas e sem cabeçalho do site')
+  ok('casca com as seis áreas de antes e sem cabeçalho do site')
+
+  // ---------- 1b. Página inicial: quem está online primeiro, assinante separado de não assinante ----------
+  const primeiro = await pc.p.locator('.a3-conteudo section, .a3-conteudo .a3-painel').first().getAttribute('aria-label')
+  assert.equal(primeiro, 'Quem está online agora', 'a primeira coisa da página inicial é quem está online')
+  const assinante = pc.p.locator('.a3-online__grupo--assinante')
+  const gratis = pc.p.locator('.a3-online__grupo--gratis')
+  assert.ok(await assinante.getByText('Diego Alves').count(), 'assinante online no grupo dos assinantes')
+  assert.equal(await gratis.getByText('Diego Alves').count(), 0)
+  assert.ok(await gratis.getByText('Bruno Costa').count(), 'não assinante no grupo dos não assinantes')
+  const cor = await assinante.evaluate(el => getComputedStyle(el.querySelector('.a3-online__selo')).backgroundColor)
+  const corGratis = await gratis.evaluate(el => getComputedStyle(el.querySelector('.a3-online__selo')).backgroundColor)
+  assert.notEqual(cor, corGratis, 'assinante e não assinante com cores diferentes')
+  assert.match(await pc.p.locator('.a3-conteudo').innerText(), /assinantes não entraram hoje/)
+  assert.match(await pc.p.locator('.a3-conteudo').innerText(), /não assinantes viram os planos/)
+  ok('página inicial abre com quem está online, assinantes em verde, ausentes do dia e quem viu os planos')
 
   // ---------- 2. As 23 partes ----------
   for (const [parte, rotulo] of Object.entries(PARTES)) {
-    await abrir(pc.p, parte === 'comando' ? '' : `?aba=${parte}`)
+    await abrir(pc.p, parte ? `?${parte}` : '')
     await pc.p.waitForTimeout(400)
     assert.equal(await titulo(pc.p), rotulo, parte)
     assert.equal(await pc.p.getByText('Em reconstrução').count(), 0, `${parte} sem tela provisória`)
   }
-  assert.deepEqual(erros, [], 'nenhum erro de página nas 23 partes')
-  ok('23 partes abrem com o título certo e sem erro')
+  assert.deepEqual(erros, [], 'nenhum erro de página nas telas e abas')
+  ok(`${Object.keys(PARTES).length} telas e abas abrem com o título certo e sem erro`)
 
   // ---------- 3. Endereços antigos ----------
-  const legado = { hoje: 'Atividade agora', geral: 'Estado do Orto Questões', receita: 'Visão financeira', operacoes: 'Campanhas', configuracoes: 'Acesso e pagamentos', relatos: 'Qualidade do acervo', avaliacoes: 'Qualidade do acervo', avisos: 'Avisos do processador', mensal: 'Relatórios e envios' }
+  const legado = { hoje: 'Agora', geral: 'Agora', agora: 'Agora', receita: 'Ganhos', previsao: 'Previsão', retencao: 'Retenção', operacoes: 'Lembretes', configuracoes: 'Acesso e pagamentos', aviso: 'Aviso no topo do site', relatos: 'Relatos e avaliações', avaliacoes: 'Relatos e avaliações', avisos: 'Avisos de pagamento', mensal: 'Relatórios e histórico' }
   for (const [aba, rotulo] of Object.entries(legado)) {
     await abrir(pc.p, `?aba=${aba}`)
     assert.equal(await titulo(pc.p), rotulo, `?aba=${aba}`)
@@ -73,11 +91,11 @@ try {
   await pc.p.waitForTimeout(300)
   assert.match(pc.p.url(), /aba=usuarios&filtro=novos/)
   // Ir direto a uma parte (pela busca): clicar numa área abre a última parte vista nela, o que também é uma entrada.
-  await pc.p.keyboard.press('Control+k'); await pc.p.keyboard.type('Visão financeira'); await pc.p.waitForTimeout(200); await pc.p.keyboard.press('Enter')
+  await pc.p.keyboard.press('Control+k'); await pc.p.keyboard.type('Ganhos'); await pc.p.waitForTimeout(200); await pc.p.keyboard.press('Enter')
   await pc.p.waitForTimeout(500)
-  assert.equal(await titulo(pc.p), 'Visão financeira')
+  assert.equal(await titulo(pc.p), 'Ganhos')
   await pc.p.goBack(); await pc.p.waitForTimeout(600)
-  assert.equal(await titulo(pc.p), 'Explorador', 'Voltar do navegador volta à parte anterior')
+  assert.equal(await titulo(pc.p), 'Usuários', 'Voltar do navegador volta à parte anterior')
   assert.match(pc.p.url(), /filtro=novos/, 'e com o filtro')
   ok('filtro no endereço e Voltar do navegador')
 
@@ -96,11 +114,11 @@ try {
   await pc.p.keyboard.press('Control+k')
   const paleta = pc.p.locator('.a3-paleta')
   await paleta.waitFor({ timeout: 5_000 })
-  await pc.p.keyboard.type('cobran')
+  await pc.p.keyboard.type('pagamentos')
   await pc.p.waitForTimeout(300)
-  assert.ok(await paleta.getByText('Cobranças').count(), `acha a parte: ${JSON.stringify(await paleta.innerText())}`)
+  assert.ok(await paleta.getByText('Pagamentos', { exact: true }).count(), `acha a parte: ${JSON.stringify(await paleta.innerText())}`)
   await pc.p.keyboard.press('Enter'); await pc.p.waitForTimeout(600)
-  assert.equal(await titulo(pc.p), 'Cobranças', 'Enter navega')
+  assert.ok(['Pagamentos', 'Avisos de pagamento'].includes(await titulo(pc.p)), 'Enter navega')
   await pc.p.keyboard.press('Control+k')
   await pc.p.keyboard.type('Marina')
   await pc.p.waitForTimeout(400)
@@ -143,7 +161,7 @@ try {
 
   // ---------- 9. Celular ----------
   const cel = await contexto(390, 844, true)
-  for (const parte of ['', '?aba=agora', '?aba=usuarios', '?aba=financeiro', '?aba=conteudo', '?aba=lembretes', '?aba=cobrancas']) {
+  for (const parte of ['', '?aba=crescimento&sub=perfis', '?aba=usuarios', '?aba=financeiro', '?aba=conteudo', '?aba=lembretes', '?aba=cobrancas']) {
     await abrir(cel.p, parte)
     const largura = await cel.p.evaluate(() => document.documentElement.scrollWidth)
     assert.ok(largura <= 390, `${parte || 'comando'} sem rolagem de lado no celular (${largura})`)

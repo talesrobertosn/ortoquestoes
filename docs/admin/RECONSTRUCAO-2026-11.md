@@ -88,3 +88,18 @@ ou `search_path` foi alterada. Nenhum dado administrativo foi exposto em endpoin
 
 - Nenhuma mudança no banco: se uma parte nova pedir dado que o banco não tem, ela diz "indisponível".
 - O e2e não entra no `npm test` (precisa de navegador); roda à mão, como antes.
+
+## Revisão de 02/11/2026 (pedido do Tales: "ficou confuso, antes estava melhor")
+
+- **Menu com os nomes de antes**: Agora, Pessoas, Financeiro, Conteúdo, E-mails, Ajustes. De 23 para 17 itens;
+  o que era parecido virou **aba dentro da mesma tela** (`?sub=`): Crescimento (Aquisição, Retenção, Perfis e origem),
+  Financeiro › Ganhos (Ganhos, Previsão) e Ajustes (Acesso e pagamentos, Aviso no topo). Os endereços antigos
+  (`?aba=previsao`, `retencao`, `aviso`, `agora`, `pendencias`) abrem a aba certa.
+- **Página inicial = Agora**: a primeira coisa é quem está online (sinal nos últimos 5 minutos), em dois grupos com cor
+  própria: assinantes (verde) e não assinantes (cinza, com "viu os planos" quando for o caso). Logo abaixo, quantos
+  assinantes não entraram hoje (e quais deles viram os planos) e os não assinantes que viram os planos nos últimos
+  30 dias, com atalho para carta. Depois os números do dia, o que pede ação, a linha do dia e as listas.
+- **Menos leitura no Supabase**: os contadores do menu passaram de 1 em 1 minuto para 5 em 5 minutos, e trocar de tela
+  reaproveita o que foi lido nos últimos 5 minutos (antes, 15 segundos). Para ver na hora, o botão Atualizar.
+- **Financeiro mais simples**: "Reconstruído" voltou a ser "Estimado"; Ganhos sem os blocos repetidos (últimas cobranças,
+  ações) e com o mês a mês recolhido; selos "Confirmado" e "Derivado" só aparecem onde explicam algo.
