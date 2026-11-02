@@ -319,6 +319,12 @@ MATS: dict[str, Mat] = {
     "livro_vinho": Mat(rampa("#1c0508", "#30090e", "#480f16", "#62161e", "#7e2028", "#9a2e32", "#b44440"), hx("#120305"), rim=0.5, tex=0.06),
     "tubo": Mat(rampa("#0c0f12", "#161b20", "#222930", "#323b44", "#46525c", "#5e6c76"), hx("#06080a"), rim=0.6, brilho=0.5),
     "gravata": Mat(rampa("#1a0406", "#2e070b", "#4a0c12", "#661219", "#841c22", "#a02a2c"), hx("#100203"), rim=0.45, tex=0.04),
+    # terceira leva (01/11/2026, sempre no fim): neve, brasa, ferro da bigorna, bota encharcada e vidro da luneta
+    "neve": Mat(rampa("#3c4a66", "#5c6e8c", "#8496b2", "#aebfd4", "#d2deea", "#ebf2f8", "#fbfdff"), hx("#1c2234"), rim=0.45, tex=0.05, amb=0.3),
+    "brasa": Mat(rampa("#4a0c04", "#8a1e06", "#c8400c", "#f07018", "#ffa83a", "#ffd878", "#fff4d0"), hx("#2a0804"), emite=True, bloom=0.7),
+    "ferro": Mat(rampa("#0c0c10", "#16161c", "#202128", "#2c2e36", "#3c3f48", "#53575f", "#70757c", "#9aa0a4"), hx("#060609"), rim=0.5, tex=0.05, brilho=0.6),
+    "bota": Mat(rampa("#120f0a", "#1e1a12", "#2c261a", "#3c3422", "#4e442c", "#625637", "#786a44", "#8e7e54"), hx("#0a0806"), rim=0.45, tex=0.12),
+    "vidro": Mat(rampa("#0a1424", "#12223a", "#1c3452", "#2a4a6c", "#46688a", "#7a9cba"), hx("#060a12"), rim=0.3, brilho=1.0),
 }
 NOMES_MAT = list(MATS)
 IDX_MAT = {n: i for i, n in enumerate(NOMES_MAT)}
@@ -2588,6 +2594,447 @@ def q_acesso_social(k):
     return _q_acesso(k, roupa_social, "livro_vinho", "osso")
 
 
+# ═══════════════════════════════ terceira leva (01/11/2026): o diretor de cena da página inicial ═══════════════════════════════
+# Uma linha por cenário (cais, forja, acampamento, observatório, neve e o cais de novo), na folha esqueleto-poses3.png.
+# Só acrescentam: o mesmo rig, o mesmo crânio (modelo E) e a mesma armadura; nenhuma função antiga muda.
+def _vec(ang):
+    a = math.radians(ang)
+    return (math.cos(a), math.sin(a))
+
+
+def _mais(p, v, k=1.0):
+    return (p[0] + v[0] * k, p[1] + v[1] * k)
+
+
+def _ang_pose(vx, vy, s, inclina):
+    """Direção na tela -> ângulo no padrão de Pose (0 = para baixo, positivo = para fora do corpo)."""
+    return math.degrees(math.atan2(s * vx, vy)) + s * inclina
+
+
+def _ik(om, alvo, s, inclina, dobra=1.0, mao_ang=None):
+    """Braço de dois ossos (8,2 e 7,4) com a palma em `alvo`. mao_ang = direção dos dedos na tela (graus, 0 = direita,
+    90 = para baixo); dobra (+1 ou -1) escolhe o lado do cotovelo. Devolve (braço, antebraço, mão) no padrão de Pose."""
+    L1, L2, LM = 8.2, 7.4, 2.3
+    if mao_ang is None:
+        mao_ang = math.degrees(math.atan2(alvo[1] - om[1], alvo[0] - om[0]))
+    hv = _vec(mao_ang)
+    pu = (alvo[0] - hv[0] * LM, alvo[1] - hv[1] * LM)
+    dx, dy = pu[0] - om[0], pu[1] - om[1]
+    d = min(max(math.hypot(dx, dy), abs(L1 - L2) + 0.05), L1 + L2 - 0.05)
+    phi = math.atan2(dy, dx)
+    alfa = math.acos(max(-1.0, min(1.0, (L1 * L1 + d * d - L2 * L2) / (2 * L1 * d))))
+    th = phi + dobra * alfa
+    co = (om[0] + L1 * math.cos(th), om[1] + L1 * math.sin(th))
+    th2 = math.atan2(pu[1] - co[1], pu[0] - co[0])
+    return (_ang_pose(math.cos(th), math.sin(th), s, inclina), _ang_pose(math.cos(th2), math.sin(th2), s, inclina),
+            _ang_pose(hv[0], hv[1], s, inclina))
+
+
+def _com_maos(p: Pose, e=None, d=None) -> Pose:
+    """Pose com as palmas nos alvos: e/d = (alvo, direção dos dedos em graus, tipo da mão, dobra do cotovelo)."""
+    r = montar(p)
+    kw = {}
+    for lado, s, m in (("e", -1, e), ("d", 1, d)):
+        if m is not None:
+            alvo, ang, tipo, dobra = m
+            kw["be" if lado == "e" else "bd"] = (*_ik(r.j[f"ombro_{lado}"], alvo, s, p.inclina, dobra, ang), tipo)
+    return replace(p, **kw)
+
+
+def fio_fx(t: Tela, pts, cor="#e6e0cf", a=0.85):
+    """Linha de 1 pixel (fio de pesca) pelos pontos, sem pixels repetidos."""
+    feitos = set()
+    for (x0, y0), (x1, y1) in zip(pts, pts[1:]):
+        n = max(1, int(math.ceil(max(abs(x1 - x0), abs(y1 - y0)))))
+        for i in range(n + 1):
+            u = i / n
+            c = (int(math.floor(x0 + (x1 - x0) * u)), int(math.floor(y0 + (y1 - y0) * u)))
+            if c not in feitos:
+                feitos.add(c)
+                t.ponto_fx(c[0], c[1], cor, a)
+
+
+def gota_fx(t: Tela, x, y, a=1.0):
+    """Gota d'água de 2 pixels (cabeça clara, rastro azul)."""
+    t.ponto_fx(x, y, "#e8f6ff", a)
+    t.ponto_fx(x, y - 1, "#7fb6e0", a * 0.6)
+
+
+# ─────────── pesca ───────────
+def vara_pesca(t: Tela, base, ang, comp, z, curva=0.0):
+    """Vara de pesca de madeira com cabo de couro, carretel de latão e passadores de aço. ang em graus na tela
+    (-90 = para cima); curva = quanto a ponta cede para baixo (px). Devolve a ponta."""
+    d = _vec(ang)
+    n = (-d[1], d[0]) if d[0] >= 0 else (d[1], -d[0])     # perpendicular que aponta para baixo
+    P = lambda u: (base[0] + d[0] * comp * u + n[0] * curva * u * u, base[1] + d[1] * comp * u + n[1] * curva * u * u)
+    us = np.linspace(0, 1, 12)
+    pts = [P(u) for u in us]
+    t.pinta(traco(pts, list(np.linspace(1.05, 0.42, 12))), "madeira", z, R=0.9, pid="vara", semente=600,
+            tom=lambda X, Y: 0.08 * np.sin((X + Y) * 0.9))
+    for u in (0.34, 0.58, 0.8, 0.95):     # amarrações escuras e os passadores (aneizinhos) por baixo
+        c = P(u)
+        t.pinta(circulo(c, 0.9), "madeira", 0, sobre="vara", tom=-0.3, normal=False)
+        t.pinta(circulo(_mais(c, n, 1.25), 0.5), "aco", z - 0.05, R=0.5, pid="vara_anel", tom=0.2)
+    t.pinta(traco([P(0.0), P(0.08), P(0.17)], [1.45, 1.35, 1.2]), "couro", z + 0.02, R=1.2, pid="vara_cabo", semente=601)
+    for u in (0.03, 0.07, 0.11, 0.15):
+        t.pinta(circulo(P(u), 0.55), "couro", 0, sobre="vara_cabo", tom=-0.28, normal=False)
+    t.pinta(circulo(P(0.0), 1.3), "latao", z + 0.03, R=1.0, pid="vara_ponteira")
+    cr = _mais(P(0.2), n, 2.3)
+    t.pinta(circulo(cr, 1.9), "latao", z + 0.04, R=1.6, pid="carretel")
+    t.pinta(circulo(cr, 0.8), "orbita", 0, sobre="carretel", R=-0.6, tom=0.15)
+    t.pinta(capsula(cr, _mais(cr, n, 1.6), 0.35), "aco", z + 0.05, R=0.4, pid="carretel_alca", sem_contorno=True)
+    return pts[-1]
+
+
+def q_pescar(k):
+    """Em pé no cais, a vara nas duas mãos; a linha cai para fora do quadro à direita. Quadros 6–7: um puxão leve."""
+    s = _sn(k)
+    puxa = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.4][k]
+    ang = -40.0 + 1.6 * _sn(k, desloc=0.6) * (1 - puxa) - 12.0 * puxa
+    p = replace(BASE, x=-6.0, resp=0.5 + 0.5 * s, inclina=-0.6 - 3.2 * puxa, vira=0.45, cab=1.2 + 0.7 * s - 2.4 * puxa,
+                cab_dy=-0.8 * puxa, pano=k / NQ * TAU, ze=6.6, zd=6.6)
+    # a vara numa mão só (a direita, ao lado do corpo, onde a mão aparece contra o fundo); a esquerda no cinto
+    base = (49.0 - 0.6 * puxa, 98.6 - 3.4 * puxa)
+    d = _vec(ang)
+    hd = _vec(ang + 90)
+    p = _com_maos(p, e=((33.0, 96.0), 60.0, "punho", 1),
+                  d=(_mais(_mais(base, d, 5.6), hd, -1.6), ang + 90, "punho", -1))
+    t = Tela()
+
+    def ex(t, r):
+        ponta = vara_pesca(t, base, ang, 46.0, 7.3, curva=2.4 + 0.5 * s - 1.6 * puxa)
+        if puxa > 0.5:
+            pts = [ponta, (96.5, ponta[1] + 34.0)]        # linha esticada no puxão
+        else:
+            tr = [0.0, 0.6, -0.5, 0.8, -0.7, 0.4, 0.0, 0.3][k]
+            folga = 1.0 - 0.6 * puxa
+            pts = bezier(ponta, (ponta[0] + 2.0 + tr, ponta[1] + 24.0 * folga), (97.5, ponta[1] + 46.0 - 8 * puxa), 14)
+            pts = [(x + 0.35 * tr * math.sin(i * 1.7), y) for i, (x, y) in enumerate(pts)]
+        fio_fx(t, pts)
+        if puxa > 0.5:   # duas gotinhas soltas pela linha esticada
+            gota_fx(t, 93, ponta[1] + 22, 0.8)
+            gota_fx(t, 90, ponta[1] + 14, 0.55)
+    esqueleto(t, p, ex)
+    return t
+
+
+# ─────────── forja ───────────
+def bigorna(t: Tela, c, z):
+    """Bigorna pequena sobre um toco. c = meio da face de cima; o bico aponta para a esquerda."""
+    cx, cy = c
+    toco = caixa((cx + 0.5, cy + 15.8), 7.2, 7.6, r=1.6)
+    t.pinta(toco, "madeira", z - 0.4, R=2.6, pid="toco", semente=610, tom=-0.05,
+            relevo=lambda X, Y: (0.32 * np.sin(X * 1.9 + np.sin(Y * 0.7) * 1.4), 0.0 * X))
+    for i in range(4):
+        x = cx - 5.0 + i * 3.3
+        t.pinta(capsula((x, cy + 9.6), (x + 0.6, cy + 22.4), 0.3), "madeira", 0, sobre="toco", tom=-0.2, normal=False)
+    t.pinta(elipse((cx + 0.5, cy + 8.4), 7.2, 1.3), "madeira", z - 0.35, R=0.8, pid="toco_topo", tom=0.16)
+    # base com pezinhos, cintura e o bloco de cima com bico e talão
+    corpo = (caixa((cx, cy + 6.8), 6.4, 1.3, r=0.5) | caixa((cx, cy + 4.6), 3.6, 2.2, r=0.4)
+             | caixa((cx + 0.5, cy + 1.5), 7.4, 1.6, r=0.5) | caixa((cx + 7.4, cy + 2.2), 1.6, 1.0, r=0.3))
+    bico = poligono([(cx - 6.8, cy - 0.1), (cx - 13.6, cy + 0.7), (cx - 6.8, cy + 3.2)])
+    t.pinta(corpo.suave(bico, 0.6), "ferro", z, R=1.6, pid="bigorna", semente=611)
+    t.pinta(caixa((cx + 0.5, cy + 0.3), 7.4, 0.45) | poligono([(cx - 6.8, cy - 0.1), (cx - 13.0, cy + 0.6), (cx - 6.8, cy + 0.8)]),
+            "ferro", 0, sobre="bigorna", tom=0.34, normal=False)                      # face polida
+    t.pinta(caixa((cx + 4.6, cy + 0.6), 0.6, 0.5), "orbita", 0, sobre="bigorna", tom=0.1)      # furo quadrado
+    t.pinta(caixa((cx, cy + 4.6), 3.6, 2.2) & semiplano((cx - 1.6, 0), (1, 0)), "ferro", 0, sobre="bigorna", tom=0.1, normal=False)
+
+
+def martelo_forja(t: Tela, mao_p, ang, z):
+    """Martelo de ferreiro: cabo de madeira saindo da mão no ângulo `ang` (graus na tela); a cabeça de ferro fica
+    atravessada na ponta, com a face de bater virada para ang - 90."""
+    d = _vec(ang)
+    a = _mais(mao_p, d, -2.6)
+    b = _mais(mao_p, d, 11.0)
+    t.pinta(capsula(a, b, 0.95, 0.8), "madeira", z - 0.15, R=0.9, pid="martelo_cabo", semente=612)
+    t.pinta(capsula(_mais(mao_p, d, 6.0), _mais(mao_p, d, 7.2), 1.0), "couro", z - 0.12, R=0.9, pid="martelo_cunha")
+    # no quadro da cabeça, +y local é a face de bater (ang - 90 na tela) e -y a pena
+    q = Quadro2D(_mais(mao_p, d, 11.0), ang + 180)
+    cab = caixa((0.0, 0.6), 2.5, 4.4, r=0.7) | caixa((0.0, 4.6), 2.9, 1.2, r=0.4) | poligono([(-2.0, -3.6), (2.0, -3.6), (0.0, -6.4)])
+    t.pinta(q.forma(cab), "ferro", z + 0.1, R=1.8, pid="martelo_cab", semente=613)
+    t.pinta(q.forma(caixa((0.0, 5.4), 2.9, 0.45)), "ferro", 0, sobre="martelo_cab", tom=0.42, normal=False)
+    t.pinta(q.forma(caixa((-1.4, 0.4), 0.55, 3.6)), "ferro", 0, sobre="martelo_cab", tom=0.22, normal=False)
+
+
+def q_martelar(k):
+    """Ferreiro: martelo na mão esquerda batendo a barra em brasa na bigorna (à frente, à esquerda); faísca no impacto."""
+    s = _sn(k)
+    # (palma, ângulo do cabo): no alto (0 e 7), descendo, impacto no quadro 3, repique e volta
+    curso = [((30.4, 79.6), -100.0), ((31.2, 80.6), -128.0), ((35.4, 86.0), -160.0), ((42.9, 91.2), 170.0),
+             ((42.2, 89.8), 177.0), ((37.6, 85.0), -152.0), ((33.0, 81.2), -122.0), ((30.6, 79.8), -104.0)][k]
+    golpe = [0.0, 0.2, 0.7, 1.0, 0.8, 0.45, 0.15, 0.0][k]
+    p = replace(BASE, x=10.0, resp=0.5 + 0.5 * s, inclina=1.5 - 6.5 * golpe, vira=-0.35, cab=1.0 - 4.0 * golpe, cab_dy=0.4 * golpe,
+                pano=k / NQ * TAU, ze=7.2, zd=6.0, bd=(16.0 + 2 * golpe, 8.0, 4.0, "punho"),
+                pe=(10.0 + 3 * golpe, -4.0 - 3 * golpe), pd=(9.0, -4.0))
+    mao_e, ang_m = curso
+    p = _com_maos(p, e=(mao_e, ang_m - 90, "punho", 1))
+    t = Tela()
+    quente = 1.0 if k in (3, 4) else 0.0
+    t.luz(34.0, 98.0, 9.0, "#ff8a2a", 46.0, 0.85 + 0.35 * quente + 0.06 * math.sin(k * 2.7))
+
+    def ex(t, r):
+        bigorna(t, (33.0, 100.2), 4.4)
+        # barra em brasa deitada na face da bigorna: mais quente no meio, esfriando nas pontas
+        barra = caixa((34.0, 99.2), 6.6, 0.85, r=0.5)
+        t.pinta(barra, "brasa", 4.7, pid="barra", sem_contorno=True,
+                tom=lambda X, Y: np.clip(0.95 + 0.05 * quente - np.abs(X - 33.0) * 0.1, 0.12, 1.0))
+        t.pinta(barra.engrossa(0.55) - barra, "ferro", 4.65, R=0.6, pid="barra_casca", tom=-0.15)
+        martelo_forja(t, r.j["palma_e"], ang_m, p.ze + 0.5)
+        # faíscas de 1 a 2 pixels no impacto, voando para os lados e para cima
+        if k == 3:
+            for (x, y, cor, a) in ((30, 96, "#fffbe6", 1.0), (29, 95, "#ffd27a", 0.9), (38, 96, "#ffe9a8", 1.0), (39, 95, "#ffb050", 0.8),
+                                   (26, 93, "#ff9a3a", 0.85)):
+                t.ponto_fx(x, y, cor, a)
+        elif k == 4:
+            for (x, y, cor, a) in ((23, 90, "#ff8a3a", 0.75), (41, 92, "#ffb050", 0.6), (22, 92, "#c85a20", 0.45)):
+                t.ponto_fx(x, y, cor, a)
+    esqueleto(t, p, ex)
+    return t
+
+
+# ─────────── atiçar o fogo ───────────
+def graveto_brasa(t: Tela, cabo, ponta, z, k, aceso=1.0):
+    """Graveto comprido e torto, a ponta carbonizada com uma brasa acesa."""
+    mx, my = (cabo[0] + ponta[0]) / 2, (cabo[1] + ponta[1]) / 2
+    dx, dy = ponta[0] - cabo[0], ponta[1] - cabo[1]
+    L = math.hypot(dx, dy)
+    ux, uy = dx / L, dy / L
+    nx, ny = -uy, ux
+    pts = bezier(cabo, (mx + nx * 1.4, my + ny * 1.4), ponta, 12)
+    t.pinta(traco(pts, list(np.linspace(1.05, 0.72, 12))), "madeira", z, R=0.9, pid="graveto", semente=620,
+            tom=lambda X, Y: -0.22 + 0.06 * np.sin((X - Y) * 1.3))
+    for i in (2, 6, 9):     # nós e casca lascada
+        t.pinta(circulo(pts[i], 0.8), "madeira", 0, sobre="graveto", tom=-0.38, normal=False)
+    galho = pts[4]
+    t.pinta(capsula(galho, (galho[0] - nx * 2.6 + ux * 1.4, galho[1] - ny * 2.6 + uy * 1.4), 0.45), "madeira", z - 0.05, R=0.5, pid="graveto_galho", tom=-0.2)
+    # ponta carbonizada (carvão) e a brasa: mais forte logo depois de mexer no fogo
+    t.pinta(capsula(_mais(ponta, (ux, uy), -6.5), ponta, 0.9), "tinta", 0, sobre="graveto", R=0.8, tom=-0.1)
+    t.pinta(circulo(_mais(ponta, (ux, uy), -0.3), 1.75), "brasa", z + 0.05, pid="brasa", sem_contorno=True,
+            tom=lambda X, Y: np.clip(0.5 + 0.45 * aceso - np.hypot(X - ponta[0], Y - ponta[1]) * 0.2, 0.2, 1.0))
+    for j, (a_, o_) in enumerate(((-2.6, 0.5), (-4.4, -0.4))):     # fendas de brasa no carvão
+        c = _mais(_mais(ponta, (ux, uy), a_), (nx, ny), o_)
+        t.pinta(circulo(c, 0.5), "brasa", z + 0.04, pid=f"brasa_fenda{j}", sem_contorno=True, tom=0.35 + 0.35 * aceso - 0.12 * j)
+    t.luz(ponta[0] + 1, ponta[1] - 2, 8.0, "#ff8a2a", 14.0, 0.35 + 0.35 * aceso)
+
+
+def q_aticar(k):
+    """Agachado de leve e inclinado para a esquerda, atiça o fogo (fora do quadro) com um graveto comprido numa mão só;
+    a ponta em brasa solta faíscas quando mexe nas brasas."""
+    s = _sn(k)
+    estoca = [0.0, 0.35, 0.9, 1.0, 0.8, 0.45, 0.15, 0.0][k]
+    mexe = [0.0, 0.0, 0.0, 0.7, -0.7, 0.0, 0.0, 0.0][k]
+    p = replace(BASE, x=13.0, y=1.0, resp=0.5 + 0.5 * s, inclina=-9.0 - 3.0 * estoca, vira=-0.6, cab=-4.0 - 2.0 * estoca,
+                cab_dx=-0.4 * estoca, pano=k / NQ * TAU, ze=7.4, zd=6.0,
+                pe=(24.0 + 3.0 * estoca, -18.0 - 3.0 * estoca), pd=(18.0, -12.0), bd=(24.0, 14.0, 10.0, "aberta"))
+    ang = 151.0
+    d = _vec(ang)
+    ponta = _mais((11.0, 113.6), d, 6.0 * estoca)
+    ponta = (ponta[0] + mexe * 0.8, ponta[1] - mexe * 1.2)
+    mao = _mais(ponta, d, -41.0)
+    cabo = _mais(ponta, d, -47.0)
+    hd = _vec(ang - 90)
+    p = _com_maos(p, e=(_mais(mao, hd, -1.6), ang - 90, "punho", 1))
+    t = Tela()
+    luz_fogo(t, k, forca=1.0 + 0.4 * estoca)
+
+    def ex(t, r):
+        graveto_brasa(t, cabo, ponta, p.ze + 0.7, k, aceso=estoca)
+        # faíscas que sobem da ponta quando ele mexe nas brasas
+        for j in range(5):
+            fy = (k * 3 + j * 5) % 20
+            if fy > 15 or (estoca < 0.3 and j > 1):
+                continue
+            x = ponta[0] + 1.0 + j * 1.3 + math.sin(fy * 0.6 + j * 1.7) * 1.6 + fy * 0.25
+            y = ponta[1] - 3 - fy * 1.6
+            t.ponto_fx(x, y, "#ffe08a" if fy < 6 else "#ff8a3a", 0.95 - fy / 18)
+    esqueleto(t, p, ex)
+    return t
+
+
+# ─────────── observatório ───────────
+def luneta(t: Tela, olho, ang, z, foco, girar, k):
+    """Luneta pequena de latão num tripé de madeira. olho = ponta da ocular; ang = para onde aponta (graus na tela);
+    foco = quanto o tubo de dentro saiu (px); girar = ângulo do risco no botão de foco. Devolve (botão, lente)."""
+    d = _vec(ang)
+    n = (-d[1], d[0]) if d[0] >= 0 else (d[1], -d[0])     # para baixo
+    P = lambda s_, o=0.0: (olho[0] + d[0] * s_ + n[0] * o, olho[1] + d[1] * s_ + n[1] * o)
+    # tripé: três pernas finas abertas da cabeça (embaixo do meio do tubo) até o chão
+    cab_t = P(17.0, 4.2)
+    for j, (px, pz) in enumerate(((cab_t[0] - 9.0, z - 2.4), (cab_t[0] + 2.0, z - 0.4), (cab_t[0] + 15.0, z - 1.6))):
+        px = min(px, 93.0)
+        t.pinta(capsula(cab_t, (px, 122.4), 0.85, 0.65), "madeira", pz, R=0.8, pid=f"tripe{j}", semente=630 + j)
+        t.pinta(circulo((px, 122.2), 0.95), "latao", pz + 0.01, R=0.7, pid=f"tripe_pe{j}")
+    t.pinta(circulo(cab_t, 1.9), "latao", z - 0.3, R=1.4, pid="tripe_cab")
+    t.pinta(capsula(cab_t, P(17.0, 1.0), 0.8), "latao", z - 0.25, R=0.7, pid="tripe_cab")
+    # ocular escura, tubo de foco (sai e entra), tubo principal com anéis e a objetiva com o vidro
+    t.pinta(capsula(P(-0.6), P(2.6), 1.45), "ferro", z + 0.1, R=1.2, pid="ocular")
+    t.pinta(capsula(P(2.2), P(8.6 + foco), 1.8), "latao", z, R=1.6, pid="tubo_foco", semente=631)
+    t.pinta(capsula(P(8.0 + foco), P(31.0 + foco), 2.5, 2.9), "latao", z + 0.05, R=2.4, pid="tubo", semente=632)
+    for sx in (8.6, 17.0, 30.0):
+        t.pinta(capsula(P(sx - 0.6 + foco), P(sx + 0.6 + foco), 3.2), "latao", z + 0.09, R=1.3, pid=f"anel{sx}", tom=-0.12)
+    t.pinta(capsula(P(13.6 + foco), P(15.2 + foco), 2.6, 2.7), "couro", z + 0.08, R=1.6, pid="cinta", semente=633)
+    t.pinta(capsula(P(31.0 + foco), P(34.0 + foco), 3.4), "latao", z + 0.1, R=1.8, pid="objetiva", tom=0.05)
+    lente = P(34.4 + foco)
+    t.pinta(Quadro2D(lente, ang).forma(elipse((0, 0), 1.0, 2.8)), "vidro", z + 0.12, R=1.4, pid="lente", plano=(0.5, -0.4, 0.75))
+    # botão de foco: haste curta para baixo e um botão serrilhado com um risco que gira
+    haste_a = P(5.0, 1.4)
+    bot = P(5.2, 6.6)
+    t.pinta(capsula(haste_a, bot, 0.6), "latao", z + 0.15, R=0.6, pid="foco_haste")
+    t.pinta(circulo(bot, 1.8), "latao", z + 0.2, R=1.5, pid="foco_botao")
+    risco = _mais(bot, _vec(girar), 1.2)
+    t.pinta(capsula(bot, risco, 0.38), "orbita", 0, sobre="foco_botao", tom=0.2)
+    return bot, lente
+
+
+def q_luneta(k):
+    """No observatório: a cabeça inclinada para trás, o olho na ocular da luneta (apontada para cima, à direita),
+    girando o botão de foco; no quadro 5 um brilho na objetiva."""
+    s = _sn(k)
+    foco = 0.9 * _sn(k, desloc=0.5)
+    gira = k * 55.0
+    p = replace(BASE, x=-13.0, resp=0.5 + 0.5 * s, inclina=2.0, vira=0.6, cab=13.0 + 0.6 * _sn(k, desloc=1.2), cab_dy=0.3,
+                pano=k / NQ * TAU, ze=6.4, zd=9.6)
+    r0 = montar(p)
+    olho = r0.cab.p(1.2 + 3.4, 6.0)
+    ang = -33.0
+    dv = _vec(ang)
+    nv = (-dv[1], dv[0])
+    bot = (olho[0] + dv[0] * 5.2 + nv[0] * 6.6, olho[1] + dv[1] * 5.2 + nv[1] * 6.6)
+    tremor = 12.0 * math.sin(k / NQ * TAU * 2)
+    p = _com_maos(p, e=((25.0, 96.0), 70.0, "punho", 1), d=((bot[0] - 0.4, bot[1] + 1.9), -80.0 + tremor, "pinca", -1))
+    t = Tela()
+
+    def ex(t, r):
+        _, lente = luneta(t, olho, ang, 9.2, foco, gira, k)
+        if k in (5, 6):    # achou: um brilho na objetiva
+            cintila(t, lente[0] + 2, lente[1] - 2, 2 if k == 5 else 1, "#fff6c8", 0.95 if k == 5 else 0.6)
+    esqueleto(t, p, ex)
+    return t
+
+
+# ─────────── neve ───────────
+def boneco_de_neve(t: Tela, cx, z, com_cabeca):
+    """Boneco de neve pequeno: base, corpo com botões de carvão e braços de graveto; a cabeça vem de cabeca_neve()."""
+    t.pinta(elipse((cx, 122.4), 14.0, 1.9), "neve", z - 0.6, R=0.8, pid="neve_chao", tom=-0.05)
+    t.pinta(circulo((cx, 112.2), 10.4).borda(0.25, 1.4, 640), "neve", z, R=8.0, pid="neve_base", semente=640)
+    t.pinta(circulo((cx, 96.6), 7.4).borda(0.2, 1.4, 641), "neve", z + 0.1, R=5.6, pid="neve_corpo", semente=641)
+    for j, y in enumerate((94.4, 98.8, 108.0)):
+        t.pinta(circulo((cx - 1.6, y), 0.85), "orbita", z + 0.15, R=0.6, pid=f"botao{j}", tom=0.1)
+    t.pinta(traco([(cx + 6.2, 95.6), (cx + 10.6, 91.6), (cx + 12.6, 88.4)], 0.5), "madeira", z + 0.05, R=0.5, pid="braco_n1")
+    t.pinta(capsula((cx + 10.6, 91.6), (cx + 13.2, 92.4), 0.38), "madeira", z + 0.05, R=0.4, pid="braco_n1")
+    t.pinta(traco([(cx - 6.2, 96.8), (cx - 10.0, 98.4), (cx - 12.2, 101.2)], 0.5), "madeira", z + 0.05, R=0.5, pid="braco_n2")
+    if com_cabeca:
+        cabeca_neve(t, (cx, 84.4), z + 0.25)
+
+
+def cabeca_neve(t: Tela, c, z, aperta=0.0):
+    """A bola da cabeça: olhos de carvão e um narizinho de cenoura virado para a esquerda."""
+    t.pinta(elipse(c, 5.4 + 0.6 * aperta, 5.2 - 0.7 * aperta).borda(0.15, 1.6, 643), "neve", z, R=4.2, pid="neve_cabeca", semente=643)
+    for dx in (-2.6, 0.8):
+        t.pinta(circulo((c[0] + dx, c[1] - 1.0), 0.8), "orbita", z + 0.05, R=0.5, pid="neve_olho", tom=0.1)
+    t.pinta(poligono([(c[0] - 0.8, c[1] + 0.4), (c[0] - 0.8, c[1] + 1.8), (c[0] - 4.4, c[1] + 1.4)]), "abobora", z + 0.06, R=0.6, pid="cenoura")
+
+
+def q_boneco_neve(k):
+    """Molda a bola da cabeça nas mãos, põe no alto do boneco de neve, admira e tira de novo para ajeitar (laço)."""
+    s = _sn(k)
+    SX = 64.0
+    bola = [(34.0, 92.0), (34.0, 92.2), (34.4, 91.4), (45.0, 87.6), (55.0, 84.0), (SX, 84.4), (SX, 84.4), (50.0, 88.4)][k]
+    aperta = [0.0, 1.0, 0.3, 0.0, 0.0, 0.0, 0.0, 0.0][k]
+    alcance = [0.0, 0.0, 0.0, 0.4, 0.8, 1.0, 0.55, 0.6][k]
+    p = replace(BASE, x=-14.0, resp=0.5 + 0.5 * s, inclina=0.5 + 5.0 * alcance, vira=0.15 + 0.5 * alcance,
+                cab=1.5 - 2.0 * aperta + 2.0 * (k == 6), cab_dx=0.5 * alcance, pano=k / NQ * TAU, ze=8.6, zd=8.6)
+    bx, by = bola
+    if k <= 2:
+        dd = 6.8 - 0.9 * aperta
+        rot = [0.0, 0.0, 26.0][k]
+        ve = _vec(180 + rot)
+        e = ((bx + ve[0] * dd, by + ve[1] * dd), rot, "aberta", 1)
+        d = ((bx - ve[0] * dd, by - ve[1] * dd), 180 + rot, "aberta", -1)
+    elif k == 3:
+        e = ((bx - 5.6, by + 1.0), -10.0, "aberta", 1)
+        d = ((bx - 2.0, by + 5.0), -80.0, "aberta", -1)
+    elif k in (4, 7):
+        e = ((26.0, 96.0), 70.0, "aberta", 1)
+        d = ((bx - 5.2, by + 0.6), -10.0, "aberta", -1)
+    elif k == 5:
+        e = ((26.0, 96.0), 70.0, "aberta", 1)
+        d = ((bx - 5.2, by - 0.6), -25.0, "aberta", -1)
+    else:
+        e = ((26.0, 96.0), 70.0, "aberta", 1)
+        d = ((52.0, 90.0), 20.0, "aberta", -1)
+    p = _com_maos(p, e=e, d=d)
+    t = Tela()
+
+    def ex(t, r):
+        no_boneco = k in (5, 6)
+        boneco_de_neve(t, SX, 5.0, no_boneco)
+        if not no_boneco:
+            cabeca_neve(t, bola, 9.3, aperta)
+        # farelos de neve caindo de quem molda e de quem assenta
+        if k in (1, 2):
+            for j, (dx, dy) in enumerate(((-1.0, 7.0), (2.0, 9.5), (0.0, 13.0))):
+                t.ponto_fx(bx + dx + (k - 1) * 0.6, by + dy + (k - 1) * 3, "#f4f8ff", 0.9 - j * 0.2)
+        if k == 5:
+            for (dx, dy) in ((-6.0, 3.0), (6.2, 2.0)):
+                t.ponto_fx(SX + dx, 84.4 + dy, "#f4f8ff", 0.8)
+        if k == 6:
+            t.ponto_fx(SX - 7.0, 91.0, "#f4f8ff", 0.5)
+    esqueleto(t, p, ex)
+    return t
+
+
+# ─────────── pescou uma bota ───────────
+def bota_velha(t: Tela, gancho, ang, z, k):
+    """Bota velha encharcada pendurada pelo cadarço (gancho), bico para a esquerda, furo no bico e uma alga."""
+    q = _escala(Quadro2D(gancho, ang), 1.3)
+    cano = poligono([(-3.0, 0.4), (3.2, 0.0), (3.8, 9.6), (-2.6, 9.6)])
+    pe_ = caixa((-2.6, 11.0), 6.4, 2.6, r=2.2)
+    corpo = cano.suave(pe_, 1.4)
+    t.pinta(q.forma(corpo), "bota", z, R=2.6, pid="bota", uv=q.uv(), semente=650)
+    t.pinta(q.forma(caixa((-2.4, 13.7), 6.8, 0.9, r=0.5) | caixa((2.4, 13.2), 1.8, 1.2, r=0.4)), "couro", z + 0.05, R=0.8, pid="bota_sola", tom=-0.3)
+    t.pinta(q.forma(elipse((0.1, 0.4), 3.1, 0.95)), "interior", z + 0.06, R=-0.8, pid="bota_boca")
+    t.pinta(q.forma(caixa((0.1, 1.6), 3.4, 0.7, r=0.3)), "bota", 0, sobre="bota", tom=0.18, normal=False)
+    for j in range(3):   # cadarço cruzado na frente do cano
+        y = 2.6 + j * 2.1
+        t.pinta(q.forma(capsula((-2.6, y), (-0.6, y + 1.2), 0.32) | capsula((-2.6, y + 1.2), (-0.6, y), 0.32)), "papel", z + 0.07, R=0.4, pid="cadarco", tom=-0.35)
+    t.pinta(q.forma(elipse((-7.0, 11.2), 1.2, 0.9)), "orbita", z + 0.07, R=-0.6, pid="bota_furo", tom=0.05)
+    t.pinta(q.forma(capsula((1.4, 6.0), (2.6, 4.0), 0.3)), "bota", 0, sobre="bota", tom=-0.3, normal=False)   # rasgo
+    alga = [q.p(3.6, 12.6), q.p(5.0 + 0.6 * math.sin(k * 1.4), 15.2), q.p(4.2 + 0.8 * math.sin(k * 1.4 + 1), 18.2)]
+    t.pinta(traco(alga, [0.55, 0.45, 0.35]), "talo", z + 0.08, R=0.5, pid="alga")
+    return q.p(-7.0, 12.4), q.p(2.6, 14.8)
+
+
+def q_pescou_bota(k):
+    """Ergue a vara com uma bota velha pingando na ponta da linha; recua de leve, surpreso (sem boca), e a bota balança."""
+    s = _sn(k)
+    th = 11.0 * math.sin(k / NQ * TAU)
+    ang = -67.0 + 1.5 * math.sin(k / NQ * TAU + 0.8)
+    p = replace(BASE, x=-9.0, resp=0.5 + 0.5 * s, inclina=-6.5 + 0.8 * _sn(k, desloc=2), vira=0.75,
+                cab=6.0 + 1.0 * math.sin(k / NQ * TAU * 2), cab_dy=-1.6, cab_dx=-1.0, pano=k / NQ * TAU, ze=8.8, zd=6.6,
+                pe=(7.0, -3.0), pd=(20.0, -8.0))
+    # vara erguida na mão direita; a esquerda aberta no alto, de susto
+    base = (46.0, 96.0)
+    d = _vec(ang)
+    hd = _vec(ang + 90)
+    p = _com_maos(p, e=((18.0 + 0.4 * s, 71.0 + 0.5 * s), -115.0, "aberta", 1),
+                  d=(_mais(_mais(base, d, 6.4), hd, -1.6), ang + 90, "punho", -1))
+    t = Tela()
+
+    def ex(t, r):
+        ponta = vara_pesca(t, base, ang, 54.0, 7.3, curva=6.0 + 0.8 * math.cos(k / NQ * TAU))
+        L = 15.0
+        gancho = (ponta[0] + L * math.sin(math.radians(th)), ponta[1] + L * math.cos(math.radians(th)))
+        fio_fx(t, [ponta, gancho], a=0.9)
+        furo, sola = bota_velha(t, gancho, -18.0 - th * 1.25, 8.0, k)
+        for j in range(3):   # gotas pingando do furo e da sola
+            ox, oy = (furo, sola, furo)[j]
+            fy = (k * 4 + j * 7) % 16
+            gota_fx(t, ox + (j - 1) * 0.6, oy + 2 + fy * 1.6, 1.0 - fy / 18)
+    esqueleto(t, p, ex)
+    return t
+
+
 LINHAS = [
     ("acenar", "acenando", False, q_acenar),
     ("ler", "lendo", False, q_ler),
@@ -2624,12 +3071,21 @@ LINHAS = [
     # tela de entrar (31/10/2026): roupas novas do mesmo mascote, na folha esqueleto-acesso.png
     ("acesso_jaleco", "de jaleco longo dando boas-vindas", False, q_acesso_jaleco),
     ("acesso_social", "de blazer e gravata-borboleta dando boas-vindas", False, q_acesso_social),
+    # terceira leva (01/11/2026): o diretor de cena da página inicial, uma ação por cenário, na folha esqueleto-poses3.png
+    ("pescar", "pescando no cais", False, q_pescar),
+    ("martelar", "martelando na bigorna", False, q_martelar),
+    ("aticar", "atiçando o fogo com um graveto", False, q_aticar),
+    ("luneta", "olhando pela luneta", False, q_luneta),
+    ("boneco_neve", "fazendo um boneco de neve", False, q_boneco_neve),
+    ("pescou_bota", "pescou uma bota velha", False, q_pescou_bota),
 ]
 
 
 LINHAS_ANTIGAS = 14          # linhas que existiam antes de 31/10/2026 (não mudam nunca)
 LINHAS_POSES_31 = 9          # poses de 31/10/2026 (as primeiras de esqueleto-poses.png; também não mudam)
 LINHAS_POSES_2 = 7           # segunda leva (esqueleto-poses2.png; também não muda)
+LINHAS_ACESSO = 2            # tela de entrar (esqueleto-acesso.png; também não muda)
+LINHAS_POSES_3 = 6           # terceira leva (01/11/2026): o diretor de cena, em esqueleto-poses3.png
 
 
 def folha_esqueleto(so=None) -> Image.Image:
@@ -3264,7 +3720,10 @@ def main() -> None:
     salvar(esq.crop((0, a1, esq.width, a2)), PASTA / "esqueleto-poses.png")
     salvar(esq.crop((0, a2, esq.width, a3)), PASTA / "esqueleto-poses2.png")
     # tela de entrar (31/10/2026): jaleco longo e traje social, na sua própria folha
-    salvar(esq.crop((0, a3, esq.width, esq.height)), PASTA / "esqueleto-acesso.png")
+    a4 = a3 + FH * LINHAS_ACESSO
+    salvar(esq.crop((0, a3, esq.width, a4)), PASTA / "esqueleto-acesso.png")
+    # terceira leva (01/11/2026): as ações do diretor de cena da página inicial, uma por cenário
+    salvar(esq.crop((0, a4, esq.width, a4 + FH * LINHAS_POSES_3)), PASTA / "esqueleto-poses3.png")
     salvar(gato.crop((0, 0, gato.width, GH * LINHAS_GATO_ANTIGAS)), PASTA / "gato.png")
     g1, g2 = GH * LINHAS_GATO_ANTIGAS, GH * (LINHAS_GATO_ANTIGAS + LINHAS_GATO_POSES_31)
     salvar(gato.crop((0, g1, gato.width, g2)), PASTA / "gato-poses.png")

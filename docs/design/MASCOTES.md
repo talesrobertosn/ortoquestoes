@@ -223,6 +223,10 @@ martelo de reflexo, coroa de louros, medalha da sequência, flor e guarda-chuva 
   espiando.
 
 ### 5.3 Momentos de cinema (gatilhos do estudo)
+
+> **Nunca na sessão de questões (Tales, 01/11/2026):** treinar questões é a única área séria do site, sem bichos,
+> efeitos ou artifícios. Estes momentos só valem fora dela (página inicial, cenas da vila, Sala dos bichos).
+
 | Gatilho | Cena |
 |---|---|
 | Acertou 10 seguidas | Os três comemoram juntos; a coruja solta confete de penas |
@@ -408,6 +412,26 @@ dos conceitos. As do gato e do esqueleto são humor e não podem soar como bronc
 
 ---
 
+## 10. Prompts prontos para o ChatGPT (coruja e retratos)
+
+A coruja é desenho do Tales (PixelLab) e não sai por código como o esqueleto e o gato. Para as linhas novas dela,
+cole no ChatGPT e mande o arquivo de volta **numa mensagem só com ele**; o script `scripts/sprites/coruja_nova.py`
+recorta e alinha.
+
+**Coruja, movimentos novos (uma folha):**
+> Pixel art sprite sheet of the same small barn owl librarian from the attached reference (brown cloak, round
+> glasses, holding a small book), side view facing right, 5 frames per row, 4 rows, each frame 44x32 pixels on a flat
+> solid #00FF00 background, no text, same ground line in every frame, same colors and outline as the reference.
+> Row 1: turning the head 180 degrees and back. Row 2: adjusting the glasses with one wing (glint on the lens).
+> Row 3: puffing up the feathers in the cold, round like a ball. Row 4: sleeping standing on one leg, head tucked.
+
+**Retratos de diálogo (os três, 4 expressões cada):**
+> Pixel art dialogue portraits, 64x64 pixels each, 4 per row, flat solid #00FF00 background, no text. Row 1: the
+> attached chibi armored skeleton (big round cracked skull, large dark eye sockets, NO mouth, three-quarter view to
+> the left): neutral, pleased (eye sockets slightly narrowed), serious, surprised. Row 2: the attached orange chibi
+> cat with green eyes: sleepy, happy, annoyed, surprised. Row 3: the attached owl librarian with glasses: neutral,
+> proud, stern (glasses lowered), surprised.
+
 ## Andamento
 - 01/11/2026: plano escrito; ordem decidida (fatia vertical, luz, diretor de cena, repintura). Roupas por data em
   espera até o pedido do Natal.
@@ -424,4 +448,17 @@ dos conceitos. As do gato e do esqueleto são humor e não podem soar como bronc
   esqueleto enquanto a cena roda e para quando a pessoa toca num bicho. O gato dourado aparece em uma visita a cada
   150. As raridades vistas ficam em `localStorage['bichos:album']` (o álbum ainda não tem tela). Para testar:
   `sessionStorage['inicio:roteiro'] = '<id>'`.
-
+- 01/11/2026: **Sala dos bichos** (`#/bichos`, `paginas/Bichos.tsx`, no menu em Competir): a ficha dos três, com o
+  retrato vivo iluminado pela lareira, a troca de pose, uma fala por toque e o **álbum das raridades** (cartas com a
+  silhueta até a pessoa ver na página inicial).
+- 01/11/2026: **palcos (caminho 4, primeira leva de repintura)**. Esqueleto: `esqueleto-poses3.png` com pescar,
+  martelar, aticar, luneta, boneco_neve e pescou_bota (`scripts/gerar_mascote.py`, terceira leva). Gato: cinco linhas
+  novas no fim de `gato-fofo.png` (lambendo, cacando, pulando, derretido, assustado; `scripts/gerar_gato_fofo.py`).
+  Roteiros por cenário (`cenarios` em `roteiros.ts`): a pesca da bota no cais, a forja, o atiçar na fogueira, a
+  luneta no observatório e o boneco de neve; e o gato sendo gato (vaga-lume, derretido no sol, banho, susto do
+  reflexo). Mapas de luz gerados para as duas folhas. As poses novas também estão na Sala dos bichos.
+- 01/11/2026: **memória e vida na vila**. A página inicial lembra o dia da última visita (`bichos:ultima-visita`);
+  quem volta depois de dois dias ou mais ganha a cena de boas-vindas (o gato contou os dias). Nas cenas da vila
+  (Revisão, Caderno, Favoritas), o gato muda de atividade sozinho de tempos em tempos. Prompts para o ChatGPT na
+  seção 10.
+- 01/11/2026: os momentos de cinema **não** entram na sessão de questões (pedido do Tales: é a área séria do site).

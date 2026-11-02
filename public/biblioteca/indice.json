@@ -1643,15 +1643,15 @@
   },
   {
    "id": "campbell14-manguito-rotador",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Manguito rotador: exame, roturas e tratamento",
    "especialidade": "ombro-cotovelo",
    "livro": "Campbell's Operative Orthopaedics",
-   "edicao": "14ª edição (2021)",
+   "edicao": "14ª edição (2021), ampliado com a 15ª edição (2026)",
    "capitulo": "Capítulo 46 · Shoulder and Elbow Injuries, com os capítulos 52 · Arthroscopy of the Upper Extremity e 12 · Shoulder and Elbow Arthroplasty",
-   "resumo": "Anatomia (pares de forças, bainha do bíceps, cabo e crescente, arco coracoacromial); exame (NEER, HAWKINS, JOBE, PATTE, sinais de atraso, lift-off, belly-press, bear hug); impactos externo, subcoracoide e interno; COFIELD, GOUTALLIER e ELLMAN; história natural e tratamento inicial; parciais acima e abaixo de 50%; transferências (grande dorsal de GERBER, peitoral maior) e reparo parcial; nervo supraescapular a 1,8 cm; tecido da vírgula e subescapular; tendinite calcária; prótese reversa.",
+   "resumo": "Campbell 15: pegada de cada tendão, cinco camadas, cabo; acurácia dos testes (PARK), lags, subescapular; HAMADA, acrômio, ângulo crítico de 35 graus, GOUTALLIER e sinal da tangente; estágios de NEER; KEENER, 3 semanas e 4 meses, Box 51.5, DERWIN; fileiras, TRANTALIS, convergência, reabilitação; LAFOSSE; trapézio inferior e reconstrução capsular superior; SARKAR e UHTHOFF. Anatomia (pares de forças, bainha do bíceps, cabo e crescente, arco coracoacromial); exame (NEER, HAWKINS, JOBE, PATTE, sinais de atraso, lift-off, belly-press, bear hug); impactos externo, subcoracoide e interno; COFIELD, GOUTALLIER e ELLMAN; história natural e tratamento inicial; parciais acima e abaixo de 50%; transferências (grande dorsal de GERBER, peitoral maior) e reparo parcial; nervo supraescapular a 1,8 cm; tecido da vírgula e subescapular; tendinite calcária; prótese reversa.",
    "acesso": "gratis",
-   "minutos": 10,
+   "minutos": 31,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -1664,8 +1664,18 @@
      "radar": "fundamento"
     },
     {
+     "id": "o-que-o-campbell-15-acrescenta-a-anatomia",
+     "titulo": "O que o Campbell 15 acrescenta à anatomia",
+     "radar": "fundamento"
+    },
+    {
      "id": "exame-fisico",
      "titulo": "Exame físico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-em-numeros",
+     "titulo": "O exame em números",
      "radar": "confirmado"
     },
     {
@@ -1674,8 +1684,18 @@
      "radar": "confirmado"
     },
     {
+     "id": "impacto-estagios-de-neer-e-o-tratamento",
+     "titulo": "Impacto: estágios de NEER e o tratamento",
+     "radar": "confirmado"
+    },
+    {
      "id": "classificar-a-rotura",
      "titulo": "Classificar a rotura",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-hamada-acromio-angulo-critico-e-o-musculo",
+     "titulo": "Imagem: HAMADA, acrômio, ângulo crítico e o músculo",
      "radar": "confirmado"
     },
     {
@@ -1684,8 +1704,23 @@
      "radar": "fundamento"
     },
     {
+     "id": "historia-natural-indicacoes-e-o-que-piora-o-resu",
+     "titulo": "História natural, indicações e o que piora o resultado",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-reparo-por-dentro-fileiras-convergencia-e-reab",
+     "titulo": "O reparo por dentro: fileiras, convergência e reabilitação",
+     "radar": "confirmado"
+    },
+    {
      "id": "roturas-irreparaveis-e-transferencias",
      "titulo": "Roturas irreparáveis e transferências",
+     "radar": "confirmado"
+    },
+    {
+     "id": "irreparaveis-o-que-mais-existe-alem-do-grande-do",
+     "titulo": "Irreparáveis: o que mais existe além do grande dorsal",
      "radar": "confirmado"
     },
     {
@@ -1699,8 +1734,18 @@
      "radar": "confirmado"
     },
     {
+     "id": "subescapular-lafosse-e-o-reparo",
+     "titulo": "Subescapular: LAFOSSE e o reparo",
+     "radar": "confirmado"
+    },
+    {
      "id": "tendinite-calcaria",
      "titulo": "Tendinite calcária",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tendinite-calcaria-por-dentro",
+     "titulo": "Tendinite calcária por dentro",
      "radar": "confirmado"
     },
     {
@@ -1715,24 +1760,59 @@
     }
    ],
    "questoes": [
+    "ombro-cotovelo-0407",
+    "ombro-cotovelo-0455",
     "ombro-cotovelo-0406",
     "ombro-cotovelo-0015",
     "ombro-cotovelo-0056",
     "ombro-cotovelo-0013",
+    "ombro-cotovelo-0217",
+    "ombro-cotovelo-0055",
     "ombro-cotovelo-0053",
     "ombro-cotovelo-0062",
+    "ombro-cotovelo-0563",
     "ombro-cotovelo-0557",
     "ombro-cotovelo-0573",
     "ombro-cotovelo-0387",
+    "ombro-cotovelo-0182",
+    "ombro-cotovelo-0057",
+    "ombro-cotovelo-0468",
+    "ombro-cotovelo-0235",
+    "ombro-cotovelo-0088",
+    "ombro-cotovelo-0181",
+    "ombro-cotovelo-0186",
+    "ombro-cotovelo-0533",
+    "ombro-cotovelo-0208",
+    "ombro-cotovelo-0418",
     "ombro-cotovelo-0040",
     "ombro-cotovelo-0565",
+    "ombro-cotovelo-0232",
+    "ombro-cotovelo-0353",
+    "ombro-cotovelo-0396",
+    "ombro-cotovelo-0192",
+    "ombro-cotovelo-0502",
+    "ombro-cotovelo-0082",
     "ombro-cotovelo-0458",
     "ombro-cotovelo-0481",
     "ombro-cotovelo-0466",
     "ombro-cotovelo-0409",
     "ombro-cotovelo-0345",
     "ombro-cotovelo-0479",
+    "ombro-cotovelo-0058",
+    "ombro-cotovelo-0454",
+    "ombro-cotovelo-0443",
     "ombro-cotovelo-0242",
+    "ombro-cotovelo-0074",
+    "ombro-cotovelo-0038",
+    "ombro-cotovelo-0190",
+    "ombro-cotovelo-0009",
+    "ombro-cotovelo-0090",
+    "ombro-cotovelo-0299",
+    "ombro-cotovelo-0343",
+    "ombro-cotovelo-0453",
+    "ombro-cotovelo-0371",
+    "ombro-cotovelo-0421",
+    "ombro-cotovelo-0480",
     "ombro-cotovelo-0003",
     "ombro-cotovelo-0006"
    ],
@@ -2215,15 +2295,15 @@
   },
   {
    "id": "green8-neuropatias-compressao",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Neuropatias de compressão no membro superior",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
-   "edicao": "8ª edição (tradução)",
+   "edicao": "8ª edição (tradução), ampliado com a 7ª edição do Green's Operative Hand Surgery e o Campbell's Operative Orthopaedics, 15ª ed.",
    "capitulo": "Capítulo 28 · Neuropatias de compressão",
    "resumo": "Fisiopatologia (barreira, edema, perineuro, mielina, axônio), duplo esmagamento e testes provocativos por sítio; túnel do carpo (técnicas de CHOW e AGEE, arco palmar superficial, amiloidose); mediano proximal (STRUTHERS, pronador, lacertus, arco do FSD, GANTZER) e interósseo anterior; canal de GUYON (zonas I, II e III, ramo cutâneo dorsal); túnel cubital (2ª compressão mais comum, flexão reduz a área em 55%, OSBORNE, STRUTHERS, McGOWAN); radial superficial (WARTENBERG) e profundo (supinador).",
    "acesso": "gratis",
-   "minutos": 9,
+   "minutos": 32,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2261,6 +2341,51 @@
      "radar": "confirmado"
     },
     {
+     "id": "tunel-do-carpo-diagnostico-em-numeros",
+     "titulo": "Túnel do carpo: diagnóstico em números",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tunel-do-carpo-infiltracao-cirurgia-e-revisao",
+     "titulo": "Túnel do carpo: infiltração, cirurgia e revisão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pronador-e-interosseo-anterior-os-testes",
+     "titulo": "Pronador e interósseo anterior: os testes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tunel-cubital-exame-eletrodiagnostico-e-cirurgia",
+     "titulo": "Túnel cubital: exame, eletrodiagnóstico e cirurgia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-sinais-da-paralisia-do-ulnar",
+     "titulo": "Os sinais da paralisia do ulnar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "canal-de-guyon-paredes-e-falhas",
+     "titulo": "Canal de GUYON: paredes e falhas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "nervo-radial-tunel-radial-e-wartenberg",
+     "titulo": "Nervo radial: túnel radial e WARTENBERG",
+     "radar": "confirmado"
+    },
+    {
+     "id": "supraescapular-e-espaco-quadrangular",
+     "titulo": "Supraescapular e espaço quadrangular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "desfiladeiro-toracico",
+     "titulo": "Desfiladeiro torácico",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -2287,7 +2412,38 @@
     "mao-0093",
     "mao-0309",
     "mao-0614",
-    "mao-0498"
+    "mao-0498",
+    "mao-0060",
+    "mao-0593",
+    "mao-0043",
+    "mao-0155",
+    "mao-0087",
+    "mao-0086",
+    "mao-0089",
+    "mao-0178",
+    "mao-0338",
+    "mao-0012",
+    "mao-0308",
+    "ombro-cotovelo-0116",
+    "mao-0156",
+    "mao-0337",
+    "ombro-cotovelo-0007",
+    "mao-0407",
+    "mao-0433",
+    "mao-0335",
+    "mao-0583",
+    "mao-0565",
+    "mao-0428",
+    "ombro-cotovelo-0019",
+    "mao-0122",
+    "ombro-cotovelo-0117",
+    "ombro-cotovelo-0112",
+    "ombro-cotovelo-0429",
+    "mao-0034",
+    "mao-0010",
+    "mao-0248",
+    "mao-0081",
+    "mao-0425"
    ],
    "treino": [
     "mao-2580",
@@ -2305,15 +2461,15 @@
   },
   {
    "id": "green8-tendoes-flexores",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Lesões dos tendões flexores",
    "especialidade": "mao",
    "livro": "Green's Operative Hand Surgery",
-   "edicao": "8ª edição",
+   "edicao": "8ª edição, ampliado com o Green's Operative Hand Surgery, 7ª ed., e o Campbell's Operative Orthopaedics, 15ª ed.",
    "capitulo": "Capítulo 6 · Lesão do tendão flexor",
    "resumo": "Nutrição dupla (perfusão e difusão sinovial) e face palmar avascular; vínculos curtos e longos; polias anulares e cruciformes, com A2 e A4 indispensáveis; LEDDY e PACKER (tipo I na palma, sem vínculos, urgente); sutura central e epitendínea, lacerações parciais e a regra de 1 cm na zona 1; aderências, excursão e cicatrização intrínseca; enxertos (palmar longo, plantar), PULVERTAFT, quadriga, BOYES e PANEVA-HOLEVICH.",
    "acesso": "gratis",
-   "minutos": 3,
+   "minutos": 29,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2339,6 +2495,81 @@
      "id": "a-reconstrucao",
      "titulo": "A reconstrução",
      "radar": "confirmado"
+    },
+    {
+     "id": "os-musculos-flexores-extrinsecos-e-o-tunel-do-ca",
+     "titulo": "Os músculos flexores extrínsecos e o túnel do carpo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-bainha-as-polias-e-a-irrigacao-em-detalhe",
+     "titulo": "A bainha, as polias e a irrigação em detalhe",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-fisico-a-imagem-e-as-zonas",
+     "titulo": "O exame físico, a imagem e as zonas",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-momento-do-reparo",
+     "titulo": "O momento do reparo",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-sutura-material-calibre-e-configuracao",
+     "titulo": "A sutura: material, calibre e configuração",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-lesoes-parciais",
+     "titulo": "As lesões parciais",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-zona-1-e-a-avulsao-do-profundo-em-detalhe",
+     "titulo": "A zona 1 e a avulsão do profundo em detalhe",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-zona-2-as-zonas-proximais-e-o-polegar",
+     "titulo": "A zona 2, as zonas proximais e o polegar",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-biologia-da-cicatrizacao-e-a-reabilitacao",
+     "titulo": "A biologia da cicatrização e a reabilitação",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "as-complicacoes-e-a-tenolise",
+     "titulo": "As complicações e a tenólise",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-reconstrucao-escada-enxerto-em-um-tempo-e-doad",
+     "titulo": "A reconstrução: escada, enxerto em um tempo e doadores",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dois-tempos-polias-reconstruidas-e-o-polegar",
+     "titulo": "Dois tempos, polias reconstruídas e o polegar",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "quadriga-lumbrical-plus-e-as-complicacoes-do-enx",
+     "titulo": "Quadriga, lumbrical plus e as complicações do enxerto",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "flexores-na-crianca",
+     "titulo": "Flexores na criança",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -2359,7 +2590,11 @@
     "mao-0522",
     "mao-0231",
     "mao-0230",
-    "mao-0079"
+    "mao-0079",
+    "mao-0342",
+    "mao-0634",
+    "mao-0607",
+    "mao-0650"
    ],
    "treino": [
     "mao-2592",
@@ -2602,15 +2837,15 @@
   },
   {
    "id": "netter-anatomia-ombro-braco",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia do ombro e do braço",
    "especialidade": "ombro-cotovelo",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
-   "edicao": "2ª edição",
+   "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026), e o Green's Operative Hand Surgery, 7ª edição",
    "capitulo": "Capítulo 3 · Ombro e Capítulo 4 · Braço",
-   "resumo": "Quatro articulações e o ritmo 2:1; estabilizadores estáticos e dinâmicos; ligamentos glenoumerais (inferior, o mais importante), intervalo rotador e polia do bíceps; músculos do manguito, deltoide e redondo maior com os comentários clínicos; espaços triangular, quadrangular e intervalo triangular; plexo braquial (dorsal da escápula, torácico longo, supraescapular, peitorais, subescapulares, toracodorsal, axilar); compartimento anterior do braço e musculocutâneo.",
+   "resumo": "Ossificação e geometria (clavícula, glenoide 5 a 7 graus, úmero 35 e 130 graus, 80% do crescimento); esternoclavicular (costoclavicular, braquiocefálica), conoide e trapezoide, ROCKWOOD, NEER do terço lateral, BUFORD; artéria axilar em três partes, circunflexas, arqueada, HERTEL; distâncias do axilar, musculocutâneo e radial (12%, 91%, HASAN); vias deltopeitoral, divisão do deltoide, JUDET, úmero; portais; cortes do braço; AER, ZPA e Wnt. Quatro articulações e o ritmo 2:1; estabilizadores estáticos e dinâmicos; ligamentos glenoumerais (inferior, o mais importante), intervalo rotador e polia do bíceps; músculos do manguito, deltoide e redondo maior com os comentários clínicos; espaços triangular, quadrangular e intervalo triangular; plexo braquial (dorsal da escápula, torácico longo, supraescapular, peitorais, subescapulares, toracodorsal, axilar); compartimento anterior do braço e musculocutâneo.",
    "acesso": "gratis",
-   "minutos": 5,
+   "minutos": 26,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2618,8 +2853,18 @@
      "radar": "fundamento"
     },
     {
+     "id": "ossos-e-ossificacao",
+     "titulo": "Ossos e ossificação",
+     "radar": "confirmado"
+    },
+    {
      "id": "a-articulacao-e-a-estabilidade",
      "titulo": "A articulação e a estabilidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "esternoclavicular-acromioclavicular-e-os-ligamen",
+     "titulo": "Esternoclavicular, acromioclavicular e os ligamentos da cintura",
      "radar": "confirmado"
     },
     {
@@ -2628,8 +2873,18 @@
      "radar": "confirmado"
     },
     {
+     "id": "os-musculos-da-cintura-escapular-e-o-que-a-paral",
+     "titulo": "Os músculos da cintura escapular e o que a paralisia mostra",
+     "radar": "confirmado"
+    },
+    {
      "id": "os-espacos-posteriores",
      "titulo": "Os espaços posteriores",
+     "radar": "confirmado"
+    },
+    {
+     "id": "arterias-e-veias",
+     "titulo": "Artérias e veias",
      "radar": "confirmado"
     },
     {
@@ -2638,13 +2893,46 @@
      "radar": "confirmado"
     },
     {
+     "id": "os-nervos-no-braco-e-as-distancias-que-protegem",
+     "titulo": "Os nervos no braço e as distâncias que protegem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "vias-de-acesso-e-portais",
+     "titulo": "Vias de acesso e portais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cortes-do-braco-radiologia-e-embriologia",
+     "titulo": "Cortes do braço, radiologia e embriologia",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-anatomia-nas-fraturas-e-luxacoes",
+     "titulo": "A anatomia nas fraturas e luxações",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "infiltracoes-bloqueio-e-a-escapula-da-crianca",
+     "titulo": "Infiltrações, bloqueio e a escápula da criança",
+     "radar": "oportunidade"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
     }
    ],
    "questoes": [
+    "ombro-cotovelo-0442",
+    "ombro-cotovelo-0567",
     "ombro-cotovelo-0044",
+    "ombro-cotovelo-0262",
+    "ombro-cotovelo-0135",
+    "ombro-cotovelo-0255",
+    "ombro-cotovelo-0250",
+    "ombro-cotovelo-0537",
+    "ombro-cotovelo-0401",
     "ombro-cotovelo-0047",
     "ombro-cotovelo-0559",
     "ombro-cotovelo-0124",
@@ -2654,11 +2942,13 @@
     "ombro-cotovelo-0318",
     "ombro-cotovelo-0379",
     "ombro-cotovelo-0455",
+    "ombro-cotovelo-0315",
     "ombro-cotovelo-0462",
     "ombro-cotovelo-0429",
     "ombro-cotovelo-0485",
     "ombro-cotovelo-0113",
     "ombro-cotovelo-0061",
+    "ombro-cotovelo-0128",
     "ombro-cotovelo-0085",
     "ombro-cotovelo-0002",
     "ombro-cotovelo-0068",
@@ -2668,7 +2958,19 @@
     "ombro-cotovelo-0564",
     "ombro-cotovelo-0437",
     "ombro-cotovelo-0359",
-    "ombro-cotovelo-0388"
+    "ombro-cotovelo-0388",
+    "ombro-cotovelo-0542",
+    "ombro-cotovelo-0072",
+    "ombro-cotovelo-0456",
+    "ombro-cotovelo-0323",
+    "ombro-cotovelo-0131",
+    "ombro-cotovelo-0133",
+    "ombro-cotovelo-0554",
+    "ombro-cotovelo-0561",
+    "ombro-cotovelo-0303",
+    "conceitos-basicos-0123",
+    "ombro-cotovelo-0213",
+    "ombro-cotovelo-0365"
    ],
    "treino": [
     "ombro-cotovelo-0699",
@@ -2686,15 +2988,15 @@
   },
   {
    "id": "netter-anatomia-pe-tornozelo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia da perna, do tornozelo e do pé",
    "especialidade": "pe-tornozelo",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
-   "edicao": "2ª edição",
+   "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª ed., e o Rockwood and Green's Fractures in Adults, 10ª ed.",
    "capitulo": "Capítulo 9 · Perna e joelho e Capítulo 10 · Pé e tornozelo",
    "resumo": "Os quatro compartimentos da perna com músculos, nervos e artérias; o corredor atrás do maléolo medial (tibial posterior, flexor longo dos dedos, feixe tibial, flexor longo do hálux); inserções do fibular curto, do fibular longo, do tibial posterior e do tibial anterior; nervos sural, safeno, fibular superficial e profundo; tálus (irrigação pelo colo, necrose, ligamento mola, talocalcaneano interósseo); vias anterior do tornozelo e posterolateral.",
    "acesso": "gratis",
-   "minutos": 4,
+   "minutos": 26,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2725,6 +3027,66 @@
      "id": "as-vias-de-acesso",
      "titulo": "As vias de acesso",
      "radar": "confirmado"
+    },
+    {
+     "id": "a-tibia-a-fibula-e-a-irrigacao-da-diafise",
+     "titulo": "A tíbia, a fíbula e a irrigação da diáfise",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-compartimentos-da-perna-em-detalhe",
+     "titulo": "Os compartimentos da perna em detalhe",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-nervos-da-perna-e-do-pe",
+     "titulo": "Os nervos da perna e do pé",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-arterias-e-a-irrigacao-do-talus",
+     "titulo": "As artérias e a irrigação do tálus",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-corredor-do-tornozelo-e-a-frente-da-mortalha",
+     "titulo": "O corredor do tornozelo e a frente da mortalha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-ossos-do-tornozelo-e-do-pe",
+     "titulo": "Os ossos do tornozelo e do pé",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-ligamentos-sindesmose-laterais-deltoide-e-sub",
+     "titulo": "Os ligamentos: sindesmose, laterais, deltoide e subtalar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-tendao-do-calcaneo-e-a-fascia-plantar",
+     "titulo": "O tendão do calcâneo e a fáscia plantar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-musculos-intrinsecos-e-os-compartimentos-do-p",
+     "titulo": "Os músculos intrínsecos e os compartimentos do pé",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-marcha-e-o-pe-cavo",
+     "titulo": "A marcha e o pé cavo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-de-acesso-e-os-portais",
+     "titulo": "As vias de acesso e os portais",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -2757,7 +3119,19 @@
     "pe-tornozelo-0189",
     "pe-tornozelo-0068",
     "pe-tornozelo-0006",
-    "pe-tornozelo-0133"
+    "pe-tornozelo-0133",
+    "pe-tornozelo-0017",
+    "joelho-0150",
+    "joelho-0185",
+    "joelho-0147",
+    "pe-tornozelo-0119",
+    "pe-tornozelo-0295",
+    "pe-tornozelo-0337",
+    "pe-tornozelo-0297",
+    "pe-tornozelo-0257",
+    "pe-tornozelo-0351",
+    "pe-tornozelo-0362",
+    "pe-tornozelo-0342"
    ],
    "treino": [
     "pe-tornozelo-0425",
@@ -2773,15 +3147,15 @@
   },
   {
    "id": "netter-anatomia-quadril-coxa",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia do quadril e da coxa",
    "especialidade": "quadril",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
-   "edicao": "2ª edição",
+   "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª ed., e o Rockwood and Green's Fractures in Adults, 10ª ed.",
    "capitulo": "Capítulo 7 · Pelve e Capítulo 8 · Coxa e quadril",
    "resumo": "Fêmur proximal (calcar posteromedial, fossa piriforme, ângulo cervicodiafisário e anteversão); vascularização da cabeça femoral no adulto e na criança (circunflexa medial sob o quadrado femoral); nervos glúteos, obturatório, femoral e cutâneo femoral lateral; compartimentos e músculos da coxa com origens e inervação; canal adutor; vias anterior, anterolateral, lateral, posterior e medial com as estruturas em risco; quadrantes dos parafusos acetabulares.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 25,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2822,6 +3196,66 @@
      "id": "os-parafusos-do-acetabulo",
      "titulo": "Os parafusos do acetábulo",
      "radar": "confirmado"
+    },
+    {
+     "id": "ossificacao-colunas-e-angulos",
+     "titulo": "Ossificação, colunas e ângulos",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-anel-pelvico-articulacoes-e-ligamentos",
+     "titulo": "O anel pélvico: articulações e ligamentos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-capsula-do-quadril-o-labio-e-o-ligamento-em-y",
+     "titulo": "A cápsula do quadril, o lábio e o ligamento em Y",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-musculos-da-pelve-e-os-rotadores-curtos",
+     "titulo": "Os músculos da pelve e os rotadores curtos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-coxa-insercoes-nervos-e-fasciotomia",
+     "titulo": "A coxa: inserções, nervos e fasciotomia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-forames-isquiaticos-e-o-piriforme",
+     "titulo": "Os forames isquiáticos e o piriforme",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "os-plexos-lombar-e-sacral",
+     "titulo": "Os plexos lombar e sacral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-cabeca-femoral-os-ramos-da-circunflexa-medial",
+     "titulo": "A cabeça femoral: os ramos da circunflexa medial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiologia-da-pelve-e-do-acetabulo",
+     "titulo": "A radiologia da pelve e do acetábulo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-do-quadril-com-as-medidas",
+     "titulo": "As vias do quadril com as medidas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-do-acetabulo-e-a-corona-mortis",
+     "titulo": "As vias do acetábulo e a corona mortis",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -2865,7 +3299,27 @@
     "quadril-0071",
     "quadril-0048",
     "quadril-0640",
-    "quadril-0067"
+    "quadril-0067",
+    "quadril-0084",
+    "quadril-0219",
+    "quadril-0538",
+    "quadril-0087",
+    "trauma-0419",
+    "joelho-0154",
+    "trauma-0418",
+    "quadril-0053",
+    "quadril-0035",
+    "quadril-0122",
+    "quadril-0522",
+    "quadril-0021",
+    "quadril-0177",
+    "quadril-0045",
+    "quadril-0123",
+    "quadril-0188",
+    "quadril-0185",
+    "quadril-0232",
+    "quadril-0515",
+    "quadril-0224"
    ],
    "treino": [
     "quadril-0722",
@@ -10308,15 +10762,15 @@
   },
   {
    "id": "tachdjian6-alinhamento-torcoes-coxa-vara",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Alinhamento, torções e coxa vara na criança",
    "especialidade": "pediatria",
    "livro": "Tachdjian's Pediatric Orthopaedics",
-   "edicao": "6ª edição (2021)",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª edição (2026)",
    "capitulo": "Capítulo 16 · Congenital Coxa Vara, Capítulo 17 · Disorders of the Femur e Capítulo 18 · Disorders of the Leg",
-   "resumo": "Curva do alinhamento (varo máximo 6 a 12 meses, neutro 18 a 24, valgo máximo 2 a 4 anos, adulto aos 8); valgo patológico (osteodistrofia renal, COZEN, displasias, exostoses); BLOUNT (obeso, impulso lateral, torção interna e procurvato, LANGENSKIÖLD, órtese antes dos 3 anos, osteotomia com hipercorreção antes dos 4, epifisiólise nos estágios IV e V); displasia fibrocartilaginosa focal; perfil de STAHELI, anteversão de 40 a 16 graus, torção tibial e indicações de osteotomia; encurvamentos anterolateral, posteromedial e anteromedial; coxa vara do desenvolvimento (V invertido, HILGENREINER-epifisário 45 e 60, osteotomia valgizante, BORDEN, recidiva).",
+   "resumo": "BLOUNT por dentro (histologia, Box 18.1, LEVINE-DRENNAN acima de 11 graus, impulso lateral, diferenciais), LANGENSKIÖLD estágio a estágio (IV e V já são parada, VI com fusão a 90 graus, 4 anos, meninas negras, 100% de recidiva no IV e V negligenciado), osteotomias de RAB, LAURENCIN, GREENE e ZAYER e as complicações, BLOUNT do adolescente (fêmur distal em varo, sem hipercorreção), coxa vara pelo Campbell 15 (110 graus, PAUWELS, HILGENREINER-epifisário); curva do alinhamento (varo máximo 6 a 12 meses, neutro 18 a 24, valgo máximo 2 a 4 anos, adulto aos 8); valgo patológico (osteodistrofia renal, COZEN, displasias, exostoses); BLOUNT (obeso, impulso lateral, torção interna e procurvato, LANGENSKIÖLD, órtese antes dos 3 anos, osteotomia com hipercorreção antes dos 4, epifisiólise nos estágios IV e V); displasia fibrocartilaginosa focal; perfil de STAHELI, anteversão de 40 a 16 graus, torção tibial e indicações de osteotomia; encurvamentos anterolateral, posteromedial e anteromedial; coxa vara do desenvolvimento (V invertido, HILGENREINER-epifisário 45 e 60, osteotomia valgizante, BORDEN, recidiva).",
    "acesso": "gratis",
-   "minutos": 16,
+   "minutos": 32,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -10339,6 +10793,26 @@
      "radar": "confirmado"
     },
     {
+     "id": "blount-por-dentro-histologia-radiografia-e-os-an",
+     "titulo": "BLOUNT por dentro: histologia, radiografia e os ângulos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-estagios-de-langenskiold-um-por-um-e-o-tratam",
+     "titulo": "Os estágios de LANGENSKIÖLD, um por um, e o tratamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-osteotomias-da-tibia-vara-e-as-complicacoes",
+     "titulo": "As osteotomias da tíbia vara e as complicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tibia-vara-do-adolescente",
+     "titulo": "Tíbia vara do adolescente",
+     "radar": "oportunidade"
+    },
+    {
      "id": "perfil-rotacional-anteversao-femoral-e-torcao-ti",
      "titulo": "Perfil rotacional: anteversão femoral e torção tibial",
      "radar": "confirmado"
@@ -10354,6 +10828,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "coxa-vara-o-que-o-campbell-15-acrescenta",
+     "titulo": "Coxa vara: o que o Campbell 15 acrescenta",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -10362,11 +10841,39 @@
    "questoes": [
     "pediatria-0112",
     "pediatria-0264",
+    "pediatria-0498",
     "pediatria-0486",
     "pediatria-0818",
+    "pediatria-0810",
     "pediatria-0726",
     "pediatria-0806",
     "pediatria-0805",
+    "pediatria-0376",
+    "pediatria-0074",
+    "pediatria-0902",
+    "pediatria-0101",
+    "pediatria-0679",
+    "pediatria-0432",
+    "pediatria-0348",
+    "pediatria-0140",
+    "pediatria-0416",
+    "pediatria-0124",
+    "pediatria-0016",
+    "pediatria-0196",
+    "pediatria-0078",
+    "pediatria-0246",
+    "pediatria-0497",
+    "pediatria-0488",
+    "pediatria-0307",
+    "pediatria-0044",
+    "pediatria-0276",
+    "pediatria-0534",
+    "pediatria-0862",
+    "pediatria-0762",
+    "pediatria-0238",
+    "pediatria-0436",
+    "pediatria-0677",
+    "pediatria-0861",
     "pediatria-0440",
     "pediatria-0776",
     "pediatria-0778",
@@ -10379,6 +10886,8 @@
     "pediatria-0423",
     "pediatria-0338",
     "pediatria-0669",
+    "pediatria-0175",
+    "pediatria-0387",
     "pediatria-0085",
     "pediatria-0443",
     "pediatria-0490",
@@ -10387,7 +10896,11 @@
     "pediatria-0049",
     "pediatria-0407",
     "pediatria-0247",
-    "pediatria-0094"
+    "pediatria-0094",
+    "pediatria-0343",
+    "pediatria-0210",
+    "pediatria-0459",
+    "pediatria-0310"
    ],
    "treino": [
     "pediatria-1399",
@@ -10396,12 +10909,24 @@
     "pediatria-1400",
     "pediatria-1401",
     "pediatria-1410",
+    "pediatria-1479",
+    "pediatria-1480",
+    "pediatria-1481",
+    "pediatria-1477",
+    "pediatria-1478",
+    "pediatria-1485",
+    "pediatria-1475",
+    "pediatria-1476",
+    "pediatria-1484",
+    "pediatria-1486",
     "pediatria-1404",
     "pediatria-1405",
     "pediatria-1406",
     "pediatria-1407",
     "pediatria-1408",
-    "pediatria-1409"
+    "pediatria-1409",
+    "pediatria-1482",
+    "pediatria-1483"
    ],
    "subtemas": [
     "Genuvaro, genuvalgo e torções",
@@ -10411,15 +10936,15 @@
   },
   {
    "id": "tachdjian6-ddq",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Displasia do desenvolvimento do quadril",
    "especialidade": "pediatria",
    "livro": "Tachdjian's Pediatric Orthopaedics",
-   "edicao": "6ª edição (2021)",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 32)",
    "capitulo": "Capítulo 13 · Displasia do desenvolvimento do quadril",
    "resumo": "Fatores de risco (quadril esquerdo, primeiro filho, pélvica franca, oligodrâmnio, metatarso aduto); embriologia (fenda na 7ª semana, cabeça e acetábulo do mesmo mesênquima, núcleo entre 4 e 7 meses); obstáculos à redução (cápsula em ampulheta, limbo, pulvinar, ligamento redondo, iliopsoas); exame por idade (limitação da abdução, GALEAZZI, KLISIC); radiografia (HILGENREINER, PERKIN, SHENTON, índice acetabular); ultrassonografia (GRAF e HARCKE); PAVLIK; redução fechada e zona de segurança; necrose e epifisiodese trocantérica.",
    "acesso": "gratis",
-   "minutos": 5,
+   "minutos": 26,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -10450,6 +10975,66 @@
      "id": "a-reducao-fechada-e-as-sequelas",
      "titulo": "A redução fechada e as sequelas",
      "radar": "confirmado"
+    },
+    {
+     "id": "definicoes-numeros-e-fatores-de-risco",
+     "titulo": "Definições, números e fatores de risco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "patoanatomia-e-historia-natural",
+     "titulo": "Patoanatomia e história natural",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-em-cada-idade",
+     "titulo": "O exame em cada idade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ultrassonografia-graf-harcke-cobertura-e-rastrea",
+     "titulo": "Ultrassonografia: GRAF, HARCKE, cobertura e rastreamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radiografia-valores-por-idade-ihdi-e-severin",
+     "titulo": "Radiografia: valores por idade, IHDI e SEVERIN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-pavlik-em-detalhe",
+     "titulo": "O PAVLIK em detalhe",
+     "radar": "confirmado"
+    },
+    {
+     "id": "reducao-fechada-tracao-artrografia-e-gesso",
+     "titulo": "Redução fechada: tração, artrografia e gesso",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "reducao-aberta-encurtamento-e-a-crianca-que-cheg",
+     "titulo": "Redução aberta, encurtamento e a criança que chega tarde",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "osteotomias-pelvicas",
+     "titulo": "Osteotomias pélvicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "necrose-avascular-criterios-classificacoes-e-seq",
+     "titulo": "Necrose avascular: critérios, classificações e sequelas",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "displasia-residual-adolescente-e-luxacao-teratol",
+     "titulo": "Displasia residual, adolescente e luxação teratológica",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -10481,7 +11066,21 @@
     "pediatria-0093",
     "pediatria-0072",
     "pediatria-0351",
-    "pediatria-0248"
+    "pediatria-0248",
+    "pediatria-0789",
+    "pediatria-0860",
+    "pediatria-0767",
+    "pediatria-0877",
+    "pediatria-0795",
+    "pediatria-0878",
+    "pediatria-0763",
+    "pediatria-0519",
+    "pediatria-0489",
+    "pediatria-0444",
+    "pediatria-0502",
+    "pediatria-0172",
+    "quadril-0164",
+    "quadril-0029"
    ],
    "treino": [
     "pediatria-1419",
@@ -10575,15 +11174,15 @@
   },
   {
    "id": "tachdjian6-osteomielite",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Osteomielite e artrite séptica na criança",
    "especialidade": "conceitos-basicos",
    "livro": "Tachdjian's Pediatric Orthopaedics",
-   "edicao": "6ª edição (2021)",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed.",
    "capitulo": "Capítulo 23 · Infecções do sistema musculoesquelético",
    "resumo": "Metáfise (alças arteriolares e sinusoides lentos); vasos transfisários até 18 meses; metáfises intra-articulares (rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais); localizações; agentes por idade (S. aureus, Kingella, pneumococo, Hib); osteomielite subaguda e classificação de ROBERTS; discite e osteomielite vertebral; calcâneo hematogênico e Pseudomonas no ferimento puntiforme; sífilis congênita.",
    "acesso": "gratis",
-   "minutos": 3,
+   "minutos": 28,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -10609,6 +11208,76 @@
      "id": "a-coluna-e-as-especificas",
      "titulo": "A coluna e as específicas",
      "radar": "confirmado"
+    },
+    {
+     "id": "vias-de-entrada-idade-dos-vasos-e-a-artrite-sept",
+     "titulo": "Vias de entrada, idade dos vasos e a artrite séptica vizinha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "epidemiologia-clinica-e-diagnostico-diferencial",
+     "titulo": "Epidemiologia, clínica e diagnóstico diferencial",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "laboratorio-hemograma-vhs-pcr-e-culturas",
+     "titulo": "Laboratório: hemograma, VHS, PCR e culturas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-da-radiografia-a-rm",
+     "titulo": "Imagem: da radiografia à RM",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-antibiotico-na-oha",
+     "titulo": "O antibiótico na OHA",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-cirurgia-na-oha-e-as-complicacoes",
+     "titulo": "A cirurgia na OHA e as complicações",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "subaguda-e-abscesso-de-brodie-alem-da-classifica",
+     "titulo": "Subaguda e abscesso de BRODIE, além da classificação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-cronica-na-crianca-sequestro-involucro-e-jones",
+     "titulo": "A crônica na criança: sequestro, invólucro e JONES",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-cronica-do-adulto-e-o-estadiamento-de-cierny-e",
+     "titulo": "A crônica do adulto e o estadiamento de CIERNY e MADER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "espaco-morto-antibiotico-local-e-a-infeccao-com-",
+     "titulo": "Espaço morto, antibiótico local e a infecção com implante",
+     "radar": "confirmado"
+    },
+    {
+     "id": "formas-especiais-crmo-garre-falciforme-pe-e-pelv",
+     "titulo": "Formas especiais: CRMO, GARRÉ, falciforme, pé e pelve",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-coluna-da-discite-infantil-a-espondilodiscite-",
+     "titulo": "A coluna: da discite infantil à espondilodiscite do adulto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tuberculose-e-sifilis-as-especificas",
+     "titulo": "Tuberculose e sífilis: as específicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -10634,7 +11303,23 @@
     "conceitos-basicos-0054",
     "conceitos-basicos-0072",
     "conceitos-basicos-0225",
-    "conceitos-basicos-0078"
+    "conceitos-basicos-0078",
+    "conceitos-basicos-0271",
+    "conceitos-basicos-0292",
+    "conceitos-basicos-0284",
+    "conceitos-basicos-0285",
+    "conceitos-basicos-0171",
+    "tumores-0211",
+    "conceitos-basicos-0208",
+    "conceitos-basicos-0013",
+    "conceitos-basicos-0227",
+    "conceitos-basicos-0045",
+    "conceitos-basicos-0064",
+    "conceitos-basicos-0058",
+    "conceitos-basicos-0093",
+    "conceitos-basicos-0194",
+    "coluna-0157",
+    "osteometabolicas-0070"
    ],
    "treino": [
     "conceitos-basicos-0416",

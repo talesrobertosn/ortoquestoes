@@ -11,7 +11,7 @@ export type Bicho = 'esqueleto' | 'gato' | 'coruja'
 export type Acao =
   | { tipo: 'pose'; id: IdComportamento }
   | { tipo: 'gato-ir'; ate: 'fogo' | 'esqueleto' | 'longe' }
-  | { tipo: 'gato-pose'; id: 'acordado' | 'comemorando' | 'ronronando' | 'observando' | 'brincando' | 'sentado' }
+  | { tipo: 'gato-pose'; id: 'acordado' | 'comemorando' | 'ronronando' | 'observando' | 'brincando' | 'sentado' | 'lambendo' | 'cacando' | 'pulando' | 'derretido' | 'assustado' }
   | { tipo: 'coruja-voar' }
   | { tipo: 'estrela' }
 export type Passo = { quem?: Bicho; fala?: string; acao?: Acao; espera?: number }
@@ -21,6 +21,8 @@ export type Roteiro = {
   /** Chance relativa no sorteio. */
   peso: number
   horas?: Periodo[]
+  /** Só nestes cenários da página inicial (cenarios.ts): cada cena é um palco com ações próprias. */
+  cenarios?: string[]
   /** Bichos que precisam estar à vista (o gato e a coruja podem estar fora de cena em telas estreitas). */
   precisa?: Bicho[]
   /** Só uma vez a cada tantas visitas: entra no álbum quando aparece. */
@@ -86,6 +88,41 @@ export const ROTEIROS: Roteiro[] = [
     { quem: 'gato', fala: 'Domingo. O dia oficial da preguiça. Eu venci de novo.', acao: { tipo: 'gato-pose', id: 'ronronando' } }] },
   { id: 'madrugada', peso: 8, precisa: ['coruja'], quando: (d) => d.getHours() < 4, passos: [
     { quem: 'coruja', fala: 'Até eu fui dormir. Uma última questão e cama.' }] },
+
+  // ---- Cada cenário é um palco (terceira leva de poses do esqueleto) ----
+  { id: 'pesca', peso: 5, cenarios: ['cais'], passos: [
+    { quem: 'esqueleto', fala: 'Pescaria. Paciência é metade da revisão.', acao: { tipo: 'pose', id: 'pescar' } },
+    { acao: { tipo: 'pose', id: 'pescou_bota' }, espera: 1400 },
+    { quem: 'esqueleto', fala: 'Uma bota. Tamanho 42.' }, { quem: 'gato', fala: 'Não é peixe. Não me interessa.' },
+    { quem: 'coruja', fala: 'Pelo menos o calcâneo cabe nela.' }] },
+  { id: 'forja', peso: 5, cenarios: ['forja'], passos: [
+    { quem: 'esqueleto', fala: 'Forjando uma placa de compressão. Brincadeira: é uma ferradura.', acao: { tipo: 'pose', id: 'martelar' } },
+    { quem: 'coruja', fala: 'Na placa de compressão dinâmica, o furo oval deixa o parafuso comprimir o foco.' }] },
+  { id: 'atica', peso: 4, cenarios: ['acampamento', 'neve'], passos: [
+    { quem: 'esqueleto', fala: 'Fogo baixo e constante. Estudo também.', acao: { tipo: 'pose', id: 'aticar' } },
+    { quem: 'gato', fala: 'Mais perto não. Bigode é patrimônio.' }] },
+  { id: 'luneta', peso: 5, cenarios: ['observatorio'], passos: [
+    { quem: 'esqueleto', fala: 'Achei a constelação do fêmur.', acao: { tipo: 'pose', id: 'luneta' } },
+    { quem: 'coruja', fala: 'Essa é a Ursa Maior. Mas a ideia está ótima.' }] },
+  { id: 'boneco-neve', peso: 5, cenarios: ['neve'], passos: [
+    { quem: 'esqueleto', fala: 'Um boneco de neve. O primeiro com esqueleto.', acao: { tipo: 'pose', id: 'boneco_neve' } },
+    { quem: 'gato', fala: 'Frio demais. Me acorda na primavera.', acao: { tipo: 'gato-pose', id: 'ronronando' } }] },
+
+  // ---- O gato sendo gato (quarta leva de poses) ----
+  { id: 'vagalume', peso: 3, precisa: ['gato'], horas: ['noite'], passos: [
+    { acao: { tipo: 'gato-pose', id: 'cacando' }, espera: 2600 }, { acao: { tipo: 'gato-pose', id: 'pulando' }, espera: 1300 },
+    { quem: 'gato', fala: 'Quase. O vaga-lume é rápido.', acao: { tipo: 'gato-pose', id: 'sentado' } },
+    { quem: 'coruja', fala: 'Ele é uma luz. Você é um gato.' }] },
+  { id: 'derretido', peso: 3, precisa: ['gato'], horas: ['manha', 'tarde'], passos: [
+    { acao: { tipo: 'gato-pose', id: 'derretido' }, espera: 1800 },
+    { quem: 'gato', fala: 'Estou derretido. Chamam isso de termoterapia.' }, { quem: 'esqueleto', fala: 'Calor superficial. Trinta minutos, no máximo.' }] },
+  { id: 'banho', peso: 2, precisa: ['gato'], passos: [
+    { acao: { tipo: 'gato-pose', id: 'lambendo' }, espera: 2200 },
+    { quem: 'gato', fala: 'Higiene antes do estudo. É protocolo.' }] },
+  { id: 'susto-reflexo', peso: 2, precisa: ['gato'], passos: [
+    { quem: 'esqueleto', fala: 'Agora, o reflexo patelar.', acao: { tipo: 'pose', id: 'reflexo' } },
+    { acao: { tipo: 'gato-pose', id: 'assustado' }, espera: 1600 },
+    { quem: 'gato', fala: 'Avisa antes de bater o martelo!' }, { quem: 'coruja', fala: 'L3 e L4. O nervo é o femoral.' }] },
 
   // ---- Raridades (entram no álbum) ----
   { id: 'estrela-cadente', peso: 1, raro: true, horas: ['noite'], precisa: ['coruja'], passos: [

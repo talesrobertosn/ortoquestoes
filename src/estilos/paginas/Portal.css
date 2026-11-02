@@ -1,0 +1,188 @@
+/* O Portal do Conhecimento: a tela de entrar e criar conta (01/11/2026). Por cima de Acesso.css (os campos, o foco, os
+   erros e os botões do formulário continuam de lá); aqui a composição nova, em quatro planos:
+   1. a cena do salão de leitura (CenaPortal) como fundo do primeiro bloco: o título à esquerda, o esqueleto anfitrião
+      junto ao atril no meio;
+   2. o painel de entrar, claro, inteiro dentro da cena à direita, com margem e a coruja na borda (CorujaDoPainel);
+   3. a ficha de estudo com a questão real e o gato deitado na beira (QuestaoAcesso);
+   4. a jornada que a conta guarda, a vitrine de emblemas e as provas do acervo (JornadaAcesso).
+   Celular: cena compacta, título, painel, ficha, jornada e provas, nessa ordem; nada cobre campo nem botão. */
+
+.ac.acx {
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  grid-template-areas: "cena cena" "ficha provas" "jornada jornada";
+  grid-template-rows: auto auto auto;
+  gap: var(--e-6) var(--e-6);
+  max-width: 76rem;
+  padding-top: var(--e-3);
+}
+
+/* ---------- 1. A cena ---------- */
+.pc { --pc-altura: clamp(41rem, 47vw, 44rem); grid-area: cena; position: relative; isolation: isolate; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) minmax(21rem, 25rem);
+  align-items: start; gap: var(--e-6); min-height: var(--pc-altura); padding: clamp(1.5rem, 3vw, 2.5rem); border-radius: 20px;
+  /* A cena tem altura fixa (o esqueleto não cresce com o formulário); se o painel de criar conta for mais alto, o que
+     sobra embaixo continua o piso da pintura. */
+  background: linear-gradient(180deg, transparent calc(var(--pc-altura) - 2px), #9c946f calc(var(--pc-altura) - 2px), #d8d1b8 calc(var(--pc-altura) + 9rem), #ece7d8); }
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 24px 48px -30px rgba(60, 40, 10, 0.55); }
+.pc.pc--noite { background: linear-gradient(180deg, transparent calc(var(--pc-altura) - 2px), #2c2c2f calc(var(--pc-altura) - 2px), #161617 calc(var(--pc-altura) + 9rem), #121213); box-shadow: 0 24px 48px -28px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(240, 196, 106, 0.14); }
+/* O palco tem sempre a proporção da arte (3:1) e a altura do bloco; fica ancorado para o esqueleto (x 47,5% da arte)
+   cair no vão entre o título e o painel (51% da largura). As peças em % da arte continuam no lugar certo. */
+.pc-palco { position: absolute; z-index: -1; top: 0; left: 51%; height: var(--pc-altura); aspect-ratio: 3 / 1; transform: translateX(-47.5%); container-type: inline-size; }
+.pc-palco__arte { display: block; width: 100%; height: 100%; image-rendering: pixelated; }
+.pc-palco > span { position: absolute; left: var(--l); top: var(--t); width: var(--w); height: var(--h); }
+.pc-esqueleto .mascote { display: block; width: 100%; }
+.pc-chama { border-radius: 50%; pointer-events: none; mix-blend-mode: screen;
+  background: radial-gradient(closest-side, rgba(255, 200, 120, 0.55), rgba(255, 140, 50, 0.2) 55%, transparent);
+  animation: pc-chama 2.8s steps(4, end) var(--atraso, 0s) infinite; }
+@keyframes pc-chama { 0%, 100% { opacity: 0.75; transform: scale(1); } 35% { opacity: 1; transform: scale(1.06); } 70% { opacity: 0.85; transform: scale(0.97); } }
+/* O véu só onde há texto: o canto de cima à esquerda. De dia, papel claro; à noite, sombra. */
+.pc::before { content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: linear-gradient(90deg, rgba(250, 244, 230, 0.92) 0%, rgba(250, 244, 230, 0.8) 28%, rgba(250, 244, 230, 0.35) 40%, transparent 48%); }
+.pc--noite::before { background: linear-gradient(90deg, rgba(10, 8, 6, 0.86) 0%, rgba(10, 8, 6, 0.7) 28%, rgba(10, 8, 6, 0.3) 40%, transparent 48%); }
+.pc-texto { position: relative; z-index: 1; display: grid; align-self: start; gap: var(--e-2); max-width: 26rem; padding-top: clamp(0.5rem, 2vw, 1.5rem); }
+.pc-selo { margin: 0; color: var(--verdete); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.pc h1 { margin: 0; max-width: 19ch; color: var(--grafite, #12181a); font-family: var(--fonte-marca); font-size: clamp(1.9rem, 1rem + 2.2vw, 2.75rem); font-weight: 800; line-height: 1.03;
+  letter-spacing: -0.035em; text-wrap: balance; }
+.pc-lide { margin: 0; max-width: 42ch; color: #3a3328; line-height: 1.5; text-wrap: pretty; }
+.pc-gratis { margin: var(--e-1) 0 0; color: #5d5242; font-size: var(--meta); line-height: 1.45; }
+.pc--noite .pc-selo { color: var(--mundo-ouro); }
+.pc--noite h1 { color: var(--mundo-tinta); text-shadow: 0 2px 0 rgba(0, 0, 0, 0.45), 0 0 26px rgba(0, 0, 0, 0.55); }
+.pc--noite .pc-lide { color: var(--mundo-tinta-2); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+.pc--noite .pc-gratis { color: rgba(228, 216, 189, 0.85); text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+
+/* ---------- 2. O painel de entrar, pousado na cena ---------- */
+.ac.acx .ac-cartao.pa { grid-area: auto; position: relative; top: auto; z-index: 2; align-self: start; margin-top: 1.6rem; padding: clamp(1.25rem, 2.4vw, 1.75rem);
+  border-radius: 18px; background: var(--superficie); border: 1px solid var(--traco); box-shadow: 0 2px 0 rgba(255, 255, 255, 0.5) inset, 0 30px 60px -34px rgba(40, 28, 8, 0.6); }
+:root[data-tema="escuro"] .ac.acx .ac-cartao.pa { box-shadow: 0 0 0 1px rgba(240, 196, 106, 0.12), 0 30px 60px -30px rgba(0, 0, 0, 0.85); }
+/* A coruja na borda de cima, fora da caixa: o corpo na beira, a cabeça acima. */
+.pa-coruja { position: absolute; right: 1.25rem; bottom: calc(100% - 14px); z-index: 3; pointer-events: none; filter: drop-shadow(0 3px 0 rgba(27, 18, 8, 0.22)); }
+.pa-coruja .coruja-pixel { --coruja-escala: 2; }
+/* O atalho de quem entrou por último neste aparelho: o e-mail aparece mascarado. */
+.pa-atalho { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--e-2); padding: 6px; border-radius: var(--raio-controle);
+  background: var(--superficie-2); border: 1px solid var(--traco); }
+.pa-atalho__entrar { display: flex; align-items: center; gap: var(--e-3); min-height: 48px; min-width: 0; padding: 4px 8px; border: 0; border-radius: 8px; background: none;
+  color: var(--texto); font: inherit; text-align: left; cursor: pointer; }
+.pa-atalho__entrar:hover { background: var(--superficie); }
+.pa-atalho__entrar span:last-child { display: grid; min-width: 0; line-height: 1.25; }
+.pa-atalho__entrar strong { font-size: var(--corpo-menor); }
+.pa-atalho__entrar small { overflow: hidden; color: var(--texto-2); font-size: var(--meta); text-overflow: ellipsis; white-space: nowrap; }
+.pa-atalho__avatar { display: grid; flex: none; place-items: center; width: 2.2rem; height: 2.2rem; border-radius: 8px; background: var(--verdete); color: #fff; font-weight: 800; }
+.pa-atalho__esquecer { min-height: 44px; padding: 0 0.75rem; border: 0; border-radius: 8px; background: none; color: var(--texto-2); font: inherit; font-size: var(--meta); font-weight: 650; cursor: pointer; }
+.pa-atalho__esquecer:hover { color: var(--texto); text-decoration: underline; }
+.pa-atalho button:focus-visible { outline: 2px solid var(--foco, var(--verdete)); outline-offset: 2px; }
+
+/* ---------- 3. A ficha de estudo ---------- */
+.acx-ficha { grid-area: ficha; min-width: 0; padding-top: 1.4rem; }
+.fq { position: relative; display: grid; gap: var(--e-3); margin: 0; padding: clamp(1.15rem, 2.4vw, 1.6rem); border-radius: 16px; background: var(--superficie);
+  border: 1px solid var(--traco); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 18px 36px -26px rgba(40, 28, 8, 0.45); }
+/* A ficha tem cara de papel de estudo: uma margem vermelha fina à esquerda, como caderno. */
+.fq::before { content: ""; position: absolute; left: 2.6rem; top: 0; bottom: 0; width: 1px; background: rgba(179, 66, 58, 0.18); pointer-events: none; }
+.fq > * { position: relative; }
+.fq-gato { position: absolute; top: auto; bottom: calc(100% - 9px); left: 1.1rem; z-index: 2; width: 64px; pointer-events: none; }
+.fq-gato .gato-pixel { display: block; width: 64px; }
+.fq-topo { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2); padding-left: 2.1rem; }
+.fq-selo { padding: 0.15rem 0.55rem; border-radius: 999px; background: var(--mundo-ouro); color: #2a1a06; font-size: 0.7rem; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.fq-prova { color: var(--texto-2); font-size: var(--meta); font-weight: 700; }
+.fq-enunciado { margin: 0; padding-left: 2.1rem; font-weight: 650; font-size: 1.02rem; line-height: 1.5; text-wrap: pretty; outline: none; }
+.fq-alternativas { display: grid; gap: 7px; margin: 0; padding: 0 0 0 2.1rem; list-style: none; }
+.fq-alt { display: flex; align-items: flex-start; gap: var(--e-3); width: 100%; min-height: 44px; padding: 0.55rem 0.7rem; border: 1px solid var(--traco); border-radius: 10px;
+  background: var(--superficie-2); color: var(--texto); font: inherit; font-size: var(--corpo-menor); line-height: 1.4; text-align: left; cursor: pointer;
+  transition: border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease; }
+.fq-alt b { display: grid; flex: none; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 6px; background: var(--superficie); box-shadow: inset 0 0 0 1px var(--traco); font-size: 0.85rem; }
+.fq-alt > span { flex: 1; min-width: 0; padding-top: 0.1rem; }
+.fq-alt svg { flex: none; margin-top: 0.2rem; }
+.fq-alt:hover:not(:disabled) { border-color: var(--verdete); background: var(--superficie); transform: translateY(-1px); }
+.fq-alt:focus-visible { outline: 2px solid var(--foco, var(--verdete)); outline-offset: 2px; }
+.fq-alt:disabled { cursor: default; }
+.fq-alt--certa { border-color: var(--acerto); background: color-mix(in srgb, var(--acerto) 12%, var(--superficie)); }
+.fq-alt--certa b { background: var(--acerto); color: #fff; box-shadow: none; }
+.fq-alt--certa svg { color: var(--acerto); }
+.fq-alt--errada { border-color: var(--erro); background: color-mix(in srgb, var(--erro) 10%, var(--superficie)); }
+.fq-alt--errada svg { color: var(--erro); }
+.fq-alt--apagada { opacity: 0.6; }
+.fq-correcao { display: grid; gap: var(--e-2); margin-left: 2.1rem; padding: var(--e-3) var(--e-4); border-radius: 12px; background: var(--superficie-2); border: 1px solid var(--traco); }
+.fq-correcao p { margin: 0; font-size: var(--corpo-menor); line-height: 1.55; text-wrap: pretty; }
+.fq-veredito { display: flex; align-items: center; gap: var(--e-2); font-weight: 800; font-size: var(--corpo) !important; }
+.fq-veredito--certo { color: var(--acerto-texto, var(--acerto)); }
+.fq-veredito--errado { color: var(--erro-texto, var(--erro)); }
+.fq-convite { color: var(--texto-2); }
+.fq-convite a { display: inline-flex; align-items: center; gap: 0.25rem; color: var(--verdete); font-weight: 700; text-underline-offset: 3px; }
+.fq-rodape { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--e-2); padding-left: 2.1rem; }
+.fq-dica { color: var(--texto-2); font-size: var(--meta); }
+.fq-outra { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 40px; margin-left: auto; padding: 0 0.9rem; border: 1px solid var(--traco); border-radius: 999px;
+  background: var(--superficie); color: var(--verdete); font: inherit; font-size: var(--corpo-menor); font-weight: 750; cursor: pointer; }
+.fq-outra:hover:not(:disabled) { border-color: var(--verdete); }
+.fq-outra:disabled { opacity: 0.6; cursor: wait; }
+.fq-outra:focus-visible { outline: 2px solid var(--foco, var(--verdete)); outline-offset: 2px; }
+.fq-esqueleto { display: grid; gap: 8px; padding-left: 2.1rem; }
+.fq-esqueleto i { display: block; height: 44px; border-radius: 10px; background: var(--superficie-2); }
+.fq-esqueleto i:first-child { height: 3.2rem; }
+
+/* ---------- 4. A jornada, a vitrine e as provas ---------- */
+.pj { grid-area: jornada; display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--e-5); padding: clamp(1.4rem, 3vw, 2.25rem); border-radius: 20px;
+  background: var(--mundo-painel); color: var(--mundo-tinta); box-shadow: inset 0 0 0 1px var(--mundo-filete), 0 18px 40px -24px rgba(0, 0, 0, 0.55); }
+.pj-cabeca { display: grid; gap: var(--e-1); }
+.pj-selo { margin: 0; color: var(--mundo-ouro); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.pj h2 { margin: 0; font-family: var(--fonte-marca); font-size: clamp(1.4rem, 1rem + 1.4vw, 2rem); letter-spacing: -0.025em; line-height: 1.1; text-wrap: balance; }
+.pj-capitulos { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-4); margin: 0; padding: 0; list-style: none; }
+.pj-capitulo { position: relative; display: grid; align-content: start; gap: 0.35rem; padding: var(--e-4) var(--e-4) var(--e-4) calc(var(--e-4) + 2.4rem); border-radius: 14px;
+  background: rgba(255, 236, 200, 0.05); box-shadow: inset 0 0 0 1px var(--mundo-filete); }
+.pj-capitulo__numero { position: absolute; left: var(--e-4); top: var(--e-4); display: grid; place-items: center; width: 1.8rem; height: 1.8rem; border-radius: 6px;
+  background: var(--mundo-ouro); color: #2a1a06; font-family: var(--fonte-pixel-titulo); font-size: 1.15rem; }
+.pj-capitulo h3 { margin: 0; font-size: 1.05rem; }
+.pj-capitulo > p { margin: 0; color: var(--mundo-tinta-2); font-size: var(--meta); }
+.pj-capitulo ul { display: grid; gap: 0.45rem; margin: 0.4rem 0 0; padding: 0; list-style: none; }
+.pj-capitulo li { display: flex; align-items: flex-start; gap: 0.5rem; color: var(--mundo-tinta); font-size: var(--corpo-menor); line-height: 1.4; }
+.pj-capitulo li svg { flex: none; margin-top: 0.15rem; color: var(--mundo-ouro); }
+.pj-plano { margin-left: 0.4rem; padding: 0.05rem 0.4rem; border-radius: 999px; background: rgba(240, 196, 106, 0.16); color: var(--mundo-ouro); font-size: 0.68rem; font-weight: 800; vertical-align: 1px; }
+/* A vitrine: uma prateleira de madeira com os emblemas; o escolhido sobe um pouco e diz o nome. */
+.pj-vitrine { display: grid; gap: var(--e-3); }
+.pj-vitrine__prateleira { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 6px; padding: 10px 12px 14px; border-radius: 12px;
+  background: linear-gradient(180deg, transparent 72%, #5a3a1c 72%, #7a5228 80%, #3c2510 100%), rgba(255, 236, 200, 0.04); box-shadow: inset 0 0 0 1px var(--mundo-filete); }
+.pj-emblema { display: grid; place-items: center; width: 60px; height: 60px; padding: 0; border: 0; border-radius: 10px; background: none; cursor: pointer;
+  transition: transform 0.2s cubic-bezier(0.32, 0.72, 0, 1), filter 0.2s ease; }
+.pj-emblema img { image-rendering: pixelated; }
+.pj-emblema:hover, .pj-emblema[aria-pressed="true"] { transform: translateY(-4px); }
+.pj-emblema[aria-pressed="true"] { filter: drop-shadow(0 0 8px rgba(255, 210, 120, 0.55)); }
+.pj-emblema:focus-visible { outline: 2px solid var(--mundo-ouro); outline-offset: 2px; }
+.pj-vitrine__legenda { margin: 0; min-height: 1.5em; color: var(--mundo-tinta-2); font-size: var(--corpo-menor); text-align: center; }
+.pj-vitrine__legenda strong { margin-right: 0.35rem; color: var(--mundo-ouro); }
+
+.pp { grid-area: provas; display: grid; align-content: start; gap: var(--e-4); padding: 1.4rem 0 0; }
+.pp-titulo { margin: 0; font-family: var(--fonte-marca); font-size: 1.35rem; letter-spacing: -0.02em; }
+.pp-grupos { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--e-4); }
+.pp-grupo h3 { margin: 0 0 var(--e-2); color: var(--texto-2); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.pp-grupo ul { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.pp-grupo li { padding: 0.3rem 0.65rem; border-radius: 999px; background: var(--superficie); border: 1px solid var(--traco); color: var(--texto); font-size: var(--meta); font-weight: 650; }
+.pp-grupo:first-child li { border-color: color-mix(in srgb, var(--verdete) 45%, var(--traco)); color: var(--verdete); font-weight: 800; }
+.pp-nota { margin: 0; color: var(--texto-2); font-size: var(--meta); }
+
+@media (prefers-reduced-motion: reduce) { .pc-chama { animation: none; } .fq-alt, .pj-emblema { transition: none; } }
+
+/* ---------- Tablet, notebook estreito e celular: uma coluna, na ordem da prioridade (até 72rem não cabem título,
+   esqueleto e painel lado a lado) ---------- */
+@media (max-width: 71.99rem) {
+  .ac.acx { grid-template-columns: minmax(0, 1fr); grid-template-areas: "cena" "ficha" "provas" "jornada"; max-width: 44rem; gap: var(--e-5); }
+  .pc, .pc--noite { grid-template-columns: minmax(0, 1fr); gap: 0; min-height: 0; padding: 0; overflow: visible; background: none; box-shadow: none; }
+  .pc::before { display: none; }
+  .pc-palco { position: relative; z-index: 0; left: auto; width: 100%; height: auto; aspect-ratio: 3 / 1; transform: none; overflow: hidden; border-radius: 18px; box-shadow: 0 18px 36px -26px rgba(40, 28, 8, 0.6); }
+  .pc-texto { max-width: none; padding: var(--e-4) var(--e-1) 0; }
+  .pc--noite h1, .pc--noite .pc-lide, .pc--noite .pc-gratis { text-shadow: none; }
+  .pc--noite .pc-lide, .pc--noite .pc-gratis { color: var(--texto-2); }
+  .pc--noite h1 { color: var(--texto); }
+  .pc--noite .pc-selo { color: var(--verdete); }
+  .ac.acx .ac-cartao.pa { margin-top: 2.6rem; }
+  .pj-capitulos { grid-template-columns: minmax(0, 1fr); }
+  .pp-grupos { grid-template-columns: minmax(0, 1fr); gap: var(--e-4); }
+}
+@media (max-width: 47.99rem) {
+  .pc-palco { aspect-ratio: 296 / 160; }
+  .pc-palco > span { left: var(--lm); width: var(--wm); }
+  .pc h1 { font-size: clamp(1.6rem, 6.6vw, 2.1rem); }
+  /* No celular a frase longa sai: o formulário chega logo. */
+  .pc-lide { display: none; }
+  .ac.acx .ac-cartao.pa { padding: var(--e-4); }
+  .pa-coruja .coruja-pixel { --coruja-escala: 1.5; }
+  .fq::before { left: 1.6rem; }
+  .fq-topo, .fq-enunciado, .fq-alternativas, .fq-rodape, .fq-esqueleto { padding-left: 1.1rem; }
+  .fq-correcao { margin-left: 1.1rem; }
+}

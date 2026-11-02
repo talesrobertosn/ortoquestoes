@@ -1,0 +1,34 @@
+{
+  "id": "mao-1721",
+  "origem": "OrtoQuestões Simulados",
+  "prova": "OrtoQuestões Simulados",
+  "simulado": true,
+  "tema": "Mão e punho",
+  "temaSlug": "mao",
+  "subtema": "Outras malformações congênitas",
+  "enunciado": "Qual eixo de desenvolvimento do membro e qual anomalia congênita estão ligados a um defeito da crista ectodérmica apical, respectivamente?",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "anteroposterior (radioulnar); dimelia ulnar, a mão em espelho",
+      "porque": "É a linha da ZPA. O eixo anteroposterior, ou radioulnar, é comandado pela zona de atividade polarizadora, pelo sonic hedgehog, e a anomalia ligada a ela é a mão em espelho, a dimelia ulnar (Green, cap."
+    },
+    {
+      "letra": "B",
+      "texto": "proximodistal; deficiência transversa",
+      "porque": "Na Tabela 35.2 do Green, a crista ectodérmica apical, com os fatores de crescimento de fibroblastos, comanda o desenvolvimento proximal para distal, e sua falha produz deficiência transversal (cap."
+    },
+    {
+      "letra": "C",
+      "texto": "dorsoventral; síndrome unha-patela",
+      "porque": "É a linha da via Wnt. O eixo dorsoventral depende da via Wingless, com o fator de transcrição Lmx-1, e sua falha está ligada à síndrome unha-patela (Green, cap."
+    },
+    {
+      "letra": "D",
+      "texto": "proximodistal; polidactilia pré-axial",
+      "porque": "O eixo está certo, a anomalia não. Proximodistal é de fato o eixo da AER, mas a polidactilia pré-axial é um erro do eixo radioulnar, ligado à ZPA e ao sonic hedgehog (Green, cap."
+    }
+  ],
+  "gabarito": "B"
+}

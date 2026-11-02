@@ -197,6 +197,28 @@ function CorujaDoAcampamento({ poleiros: POLEIROS, luzes, periodo }: { poleiros:
 }
 
 
+/** Os bichos lembram de você: o dia da última visita fica no aparelho (sem servidor). Devolve quantos dias se passaram. */
+const CHAVE_VISITA = 'bichos:ultima-visita'
+let diasDaVisita: number | null = null
+function diasDesdeUltimaVisita(): number {
+  if (diasDaVisita !== null) return diasDaVisita
+  try {
+    const hoje = new Date(); hoje.setHours(0, 0, 0, 0)
+    const antes = Number(localStorage.getItem(CHAVE_VISITA) ?? 0)
+    localStorage.setItem(CHAVE_VISITA, String(hoje.getTime()))
+    return (diasDaVisita = antes ? Math.round((hoje.getTime() - antes) / 86400000) : 0)
+  } catch { return (diasDaVisita = 0) }
+}
+const POR_EXTENSO = ['zero', 'um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez']
+/** A cena de quem volta depois de alguns dias: o gato contou, a coruja acolhe, o esqueleto acena. */
+function roteiroDaVolta(dias: number): Roteiro {
+  const n = dias <= 10 ? POR_EXTENSO[dias] : String(dias)
+  return { id: 'volta', peso: 0, passos: [
+    { quem: 'gato', fala: `${n.charAt(0).toUpperCase()}${n.slice(1)} dias fora. Eu contei. Dormindo, mas contei.`, acao: { tipo: 'gato-pose', id: 'sentado' } },
+    { quem: 'coruja', fala: 'Que bom que voltou. Uma revisão curta já reacende tudo.' },
+    { quem: 'esqueleto', fala: 'A fogueira guardou brasa para você.', acao: { tipo: 'pose', id: 'acenar' } }] }
+}
+
 /** As raridades já vistas (o álbum dos bichos): ficam no aparelho, sem servidor. */
 const CHAVE_ALBUM = 'bichos:album'
 function guardarNoAlbum(id: string) {
@@ -222,7 +244,7 @@ const SELETOR_BICHO: Record<Bicho, string> = { esqueleto: '.hd-mascote .mascote_
  * à vista e a cena na tela; no celular, bem mais espaçado. Um toque em qualquer bicho interrompe a cena na hora.
  * Com "menos movimento", só as conversas (ninguém anda nem voa).
  */
-function DiretorDeCena({ palco, periodo, controles }: { palco: RefObject<HTMLDivElement | null>; periodo: Periodo; controles: Controles }) {
+function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObject<HTMLDivElement | null>; periodo: Periodo; cenario: string; controles: Controles }) {
   const [fala, definirFala] = useState<{ quem: Bicho; texto: string; x: number; y: number; n: number } | null>(null)
   const balao = useRef<HTMLSpanElement>(null)
   const ctl = useRef(controles)
@@ -235,7 +257,7 @@ function DiretorDeCena({ palco, periodo, controles }: { palco: RefObject<HTMLDiv
   useEffect(() => {
     const el = palco.current
     if (!el) return
-    let visivel = true, rodando = 0, timer = 0, ultimo = ''
+    let visivel = true, rodando = 0, timer = 0, ultimo = '', falas = 0
     const io = typeof IntersectionObserver !== 'undefined' ? new IntersectionObserver(([e]) => { visivel = e.isIntersecting }) : null
     io?.observe(el)
     const celular = () => typeof matchMedia !== 'undefined' && matchMedia('(max-width: 60rem)').matches
@@ -247,7 +269,7 @@ function DiretorDeCena({ palco, periodo, controles }: { palco: RefObject<HTMLDiv
     const sortear = (): Roteiro | null => {
       const agora = new Date()
       const raridade = Math.random() < 0.08
-      const opcoes = ROTEIROS.filter((r) => r.id !== ultimo && (!r.raro || raridade) && (!r.horas || r.horas.includes(periodo))
+      const opcoes = ROTEIROS.filter((r) => r.id !== ultimo && (!r.raro || raridade) && (!r.horas || r.horas.includes(periodo)) && (!r.cenarios || r.cenarios.includes(cenario))
         && (!r.quando || r.quando(agora)) && (r.precisa ?? []).every(aVista)
         && (r.passos.every((p) => p.acao?.tipo !== 'coruja-voar') || Number(el.querySelector<HTMLElement>('.hd-coruja')?.dataset.livres ?? 0) >= 2)
         && (!reduzMovimento() || r.passos.every((p) => !p.acao || p.acao.tipo === 'pose' || p.acao.tipo === 'gato-pose')))
@@ -270,11 +292,12 @@ function DiretorDeCena({ palco, periodo, controles }: { palco: RefObject<HTMLDiv
       for (const passo of r.passos) {
         if (passo.acao) agir(passo.acao)
         if (passo.fala && passo.quem) {
+          // Quem não está à vista nesta largura de tela só não fala; a cena segue com os outros.
           const alvo = el.querySelector(SELETOR_BICHO[passo.quem])
-          if (!alvo) break
+          if (!alvo) continue
           const P = el.getBoundingClientRect(), b = alvo.getBoundingClientRect()
           avisarFala('diretor')
-          definirFala({ quem: passo.quem, texto: passo.fala, x: ((b.left + b.width / 2 - P.left) / P.width) * 100, y: ((b.top - P.top) / P.height) * 100, n: Date.now() })
+          definirFala({ quem: passo.quem, texto: passo.fala, x: ((b.left + b.width / 2 - P.left) / P.width) * 100, y: ((b.top - P.top) / P.height) * 100, n: ++falas })
           if (!(await esperar(tempoDeLer(passo.fala), vez))) return
           definirFala(null)
           if (!(await esperar(350, vez))) return
@@ -287,9 +310,12 @@ function DiretorDeCena({ palco, periodo, controles }: { palco: RefObject<HTMLDiv
     // Para testar um roteiro: ?roteiro=monteggia na URL (ou sessionStorage['inicio:roteiro']) e ele entra em 2 s.
     let pedido: string | null = null
     try { pedido = new URLSearchParams(location.hash.split('?')[1] ?? location.search).get('roteiro') ?? sessionStorage.getItem('inicio:roteiro') } catch { /* sem armazenamento */ }
+    // Quem volta depois de dois dias ou mais é recebido logo na primeira cena.
+    const dias = diasDesdeUltimaVisita()
     const agendar = (primeira: boolean) => {
-      const forcado = primeira && pedido ? ROTEIROS.find((r) => r.id === pedido) ?? null : null
-      const [min, max] = forcado ? [2, 2] : primeira ? [25, 45] : celular() ? [150, 300] : [60, 120]
+      const forcado = primeira && pedido ? (pedido === 'volta' ? roteiroDaVolta(4) : ROTEIROS.find((r) => r.id === pedido) ?? null)
+        : primeira && dias >= 2 ? roteiroDaVolta(dias) : null
+      const [min, max] = forcado ? (pedido ? [2, 2] : [6, 9]) : primeira ? [25, 45] : celular() ? [150, 300] : [60, 120]
       timer = window.setTimeout(() => {
         const ocupado = el.querySelector('.hd-balao, .mascote__balao')
         const r = forcado ?? (!document.hidden && visivel && !ocupado ? sortear() : null)
@@ -299,7 +325,7 @@ function DiretorDeCena({ palco, periodo, controles }: { palco: RefObject<HTMLDiv
     }
     agendar(true)
     return () => { window.clearTimeout(timer); rodando++; io?.disconnect(); tirar() }
-  }, [palco, periodo])
+  }, [palco, periodo, cenario])
   if (!fala) return null
   return <span ref={balao} key={fala.n} className={`hd-balao hd-balao--longo hd-balao--diretor hd-balao--de-${fala.quem} ${fala.x > 52 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
     onClick={() => definirFala(null)} style={{ left: `${fala.x}%`, top: `${fala.y}%` }}>{fala.texto}</span>
@@ -550,6 +576,8 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   const luzGato = luzNoBicho(PONTOS_GATO[ponto].x + 18, PONTOS_GATO[ponto].y + 9, luzes, periodo)
 
   // O diretor de cena: a atividade que ele pede ao esqueleto, a estrela cadente e o gato dourado (uma visita em 150).
+  // Um contador (e não o relógio) dá a cada pedido do diretor uma chave nova, mesmo com o relógio parado.
+  const contaDiretor = useRef(0)
   const [poseDiretor, definirPoseDiretor] = useState<{ id: IdComportamento; n: number } | null>(null)
   const [emCena, definirEmCena] = useState(false)
   const [estrela, definirEstrela] = useState(0)
@@ -572,14 +600,14 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   }
   const controles: Controles = {
     emCena: definirEmCena,
-    pose: (id) => definirPoseDiretor(id ? { id, n: Date.now() } : null),
+    pose: (id) => definirPoseDiretor(id ? { id, n: ++contaDiretor.current } : null),
     gatoIr: levarGato,
     gatoPose: (id) => {
       definirGato((g) => (g === 'tala' || g === 'andando' ? g : id))
       // Comemorar e brincar são de momento: depois de um tempo ele volta a se acomodar no lugar.
-      if (id === 'comemorando' || id === 'brincando') window.setTimeout(() => definirGato((g) => (g === id ? poseDoPonto(agora.current.ponto) : g)), 6000)
+      if (['comemorando', 'brincando', 'pulando', 'assustado', 'lambendo', 'cacando', 'derretido'].includes(id)) window.setTimeout(() => definirGato((g) => (g === id ? poseDoPonto(agora.current.ponto) : g)), 6000)
     },
-    estrela: () => definirEstrela(Date.now()),
+    estrela: () => definirEstrela(++contaDiretor.current),
   }
 
   return (
@@ -640,7 +668,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
         {gato === 'tala' && !andando && <span ref={balaoGato} role="status" className={`hd-balao ${PONTOS_GATO[ponto].x > 250 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`}
           style={{ left: `${((PONTOS_GATO[ponto].x + 18) / 480) * 100}%`, top: `${((PONTOS_GATO[ponto].y - 2) / 200) * 100}%` }}>Tala ok. Retorno em 3 semanas.</span>}
         {estrela > 0 && <span className="hd-estrela-cadente" aria-hidden="true" />}
-        <DiretorDeCena palco={palco} periodo={periodo} controles={controles} />
+        <DiretorDeCena palco={palco} periodo={periodo} cenario={cenario.id} controles={controles} />
         <CorujaDoAcampamento key={cenario.id} poleiros={cenario.coruja} luzes={luzes} periodo={periodo} />
         <span className={`hd-particulas hd-particulas--${cenario.particulas}`} aria-hidden="true">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>
