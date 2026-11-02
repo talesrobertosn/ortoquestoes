@@ -186,6 +186,12 @@
   box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px rgba(0, 0, 0, 0.3); animation: cem-balao 0.2s ease-out;
 }
 @keyframes cem-balao { from { opacity: 0; transform: translateY(4px); } }
+/* A pontinha do balão, apontando para o bicho que fala (some quando o balão vai para o chão, longe dele). */
+.cem-heroi__balao::after {
+  content: ""; position: absolute; top: calc(100% + 1px); left: var(--cauda-x, calc(100% - 18px)); width: 14px; height: var(--cauda-h, 9px); translate: -50% 0;
+  background: #fbf3df; clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.cem-heroi__balao--sem-cauda::after { display: none; }
 .cem-heroi__visita .gato-pixel, .cem-heroi__visita .coruja-pixel { width: 100%; height: 100%; }
 .cem-heroi__visita .coruja-pixel { --coruja-escala: 1; }
 
