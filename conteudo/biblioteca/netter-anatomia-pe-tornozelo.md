@@ -6,7 +6,7 @@ especialidade: pe-tornozelo
 acesso: gratis
 livro: Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)
 edicao: 2ª edição, com o Campbell's Operative Orthopaedics, 15ª ed., e o Rockwood and Green's Fractures in Adults, 10ª ed.
-capitulo: Capítulo 9 · Perna e joelho e Capítulo 10 · Pé e tornozelo
+capitulo: Capítulo 10 · Pé e tornozelo (com a perna do capítulo 9)
 autores: Jon C. Thompson (ilustrações de Frank H. Netter)
 fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulos 9 e 10, sobretudo compartimentos, nervos, músculos, osteologia do tálus e do mediopé e articulações. Vias de acesso conferidas no HOPPENFELD, Surgical Exposures in Orthopaedics (5ª ed., 2016). Sem página impressa no texto extraído. Ampliado em 01/11/2026 com o Netter relido por inteiro (cap. 9 na parte da perna e cap. 10, inclusive as tabelas em imagem), o Campbell's Operative Orthopaedics, 15ª ed., caps. 1, 53, 88, 92, 93 e 94, e o Rockwood and Green's Fractures in Adults, 10ª ed. (anatomia).
 subtemas: Anatomia do pé e tornozelo

@@ -3310,6 +3310,140 @@
    ]
   },
   {
+   "id": "netter-anatomia-joelho",
+   "versao": 1,
+   "titulo": "Anatomia do joelho",
+   "especialidade": "joelho",
+   "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
+   "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026)",
+   "capitulo": "Capítulo 9 · Perna/Joelho",
+   "resumo": "Semimembranáceo e suas cinco expansões (a primeira é o ligamento poplíteo oblíquo) e o oblíquo posterior de HUGHSTON (espessamento do ligamento capsular medial); canto posterolateral com LCF, tendão poplíteo e popliteofibular (rotação externa); poplíteo roda medialmente a tíbia e destrava o joelho; ligamento anterolateral extra-articular, entre GERDY e a fíbula, atuando a 30 e 90 graus; LCA irrigado pela genicular média, feixes AM e PL; LCP e meniscofemorais de HUMPHREY e WRISBERG; platô lateral convexo; trato iliotibial em GERDY; fabela no gastrocnêmio lateral; via de GALLA e LOBENHOFFER entre semimembranáceo e gastrocnêmio medial; ângulo Q; COVENTRY com hipercorreção a 8 a 10 graus de valgo; nervos fibulares e safeno; testes do exame físico.",
+   "acesso": "gratis",
+   "minutos": 34,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "ossos-femur-distal-tibia-proximal-e-patela",
+     "titulo": "Ossos: fêmur distal, tíbia proximal e patela",
+     "radar": "confirmado"
+    },
+    {
+     "id": "eixos-alinhamento-e-o-angulo-q",
+     "titulo": "Eixos, alinhamento e o ângulo Q",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cinematica-rolar-deslizar-e-o-screw-home",
+     "titulo": "Cinemática: rolar, deslizar e o \"screw home\"",
+     "radar": "fundamento"
+    },
+    {
+     "id": "ligamentos-cruzados-e-meniscofemorais",
+     "titulo": "Ligamentos cruzados e meniscofemorais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "meniscos",
+     "titulo": "Meniscos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lado-medial-e-canto-posteromedial",
+     "titulo": "Lado medial e canto posteromedial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lado-lateral-canto-posterolateral-e-ligamento-an",
+     "titulo": "Lado lateral, canto posterolateral e ligamento anterolateral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "musculos-da-coxa-e-da-perna-em-torno-do-joelho",
+     "titulo": "Músculos da coxa e da perna em torno do joelho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "nervos-em-torno-do-joelho",
+     "titulo": "Nervos em torno do joelho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "arterias",
+     "titulo": "Artérias",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-articulacao-patelofemoral-e-a-tibiofibular-pro",
+     "titulo": "A articulação patelofemoral e a tibiofibular proximal",
+     "radar": "fundamento"
+    },
+    {
+     "id": "exame-fisico-que-depende-da-anatomia",
+     "titulo": "Exame físico que depende da anatomia",
+     "radar": "clinico"
+    },
+    {
+     "id": "portais-e-vias-de-acesso",
+     "titulo": "Portais e vias de acesso",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "joelho-0212",
+    "joelho-0151",
+    "joelho-0252",
+    "joelho-0209",
+    "joelho-0307",
+    "joelho-0240",
+    "joelho-0094",
+    "joelho-0260",
+    "trauma-1061",
+    "joelho-0169",
+    "trauma-1023",
+    "trauma-1026",
+    "quadril-0130",
+    "joelho-0061",
+    "joelho-0089",
+    "joelho-0114",
+    "quadril-0081",
+    "joelho-0184",
+    "joelho-0342",
+    "trauma-1040",
+    "joelho-0150",
+    "joelho-0109",
+    "joelho-0146",
+    "trauma-1047",
+    "joelho-0144",
+    "joelho-0235",
+    "quadril-0085",
+    "joelho-0154",
+    "joelho-0113",
+    "quadril-0137",
+    "joelho-0104",
+    "joelho-0111",
+    "joelho-0153",
+    "joelho-0238",
+    "joelho-0243",
+    "joelho-0147",
+    "joelho-0185",
+    "joelho-0215",
+    "joelho-0187"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Anatomia do joelho"
+   ]
+  },
+  {
    "id": "netter-anatomia-mao-punho-antebraco",
    "versao": 2,
    "titulo": "Anatomia da mão, do punho e do antebraço",
@@ -3694,7 +3828,7 @@
    "especialidade": "pe-tornozelo",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
    "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª ed., e o Rockwood and Green's Fractures in Adults, 10ª ed.",
-   "capitulo": "Capítulo 9 · Perna e joelho e Capítulo 10 · Pé e tornozelo",
+   "capitulo": "Capítulo 10 · Pé e tornozelo (com a perna do capítulo 9)",
    "resumo": "Os quatro compartimentos da perna com músculos, nervos e artérias; o corredor atrás do maléolo medial (tibial posterior, flexor longo dos dedos, feixe tibial, flexor longo do hálux); inserções do fibular curto, do fibular longo, do tibial posterior e do tibial anterior; nervos sural, safeno, fibular superficial e profundo; tálus (irrigação pelo colo, necrose, ligamento mola, talocalcaneano interósseo); vias anterior do tornozelo e posterolateral.",
    "acesso": "gratis",
    "minutos": 26,

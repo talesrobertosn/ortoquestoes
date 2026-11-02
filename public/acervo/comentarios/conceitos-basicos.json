@@ -1,13 +1,17 @@
 {
  "conceitos-basicos-0001": {
+  "conceito": "A pergunta é de biologia pura: quando uma diáfise quebra e forma calo, de onde chega o sangue que alimenta esse calo? A resposta muda a forma de operar, porque decide o que o cirurgião pode ou não descolar.\n\n**O que acontece com a circulação depois da fratura.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.2, p. 11) mostra que o fluxo cortical cai quase 50% logo após a fratura ou a osteotomia, seguido de hiperemia com pico em cerca de 2 semanas; há até uma inversão temporária do sentido normal, centrípeto, do fluxo na cortical. A cortical, portanto, é vítima do trauma, não fonte de socorro.\n\n**De onde vem o calo.** Estudos de microangiografia citados no mesmo capítulo (p. 12) mostram que **boa parte da irrigação do calo vem das partes moles ao redor**. Osso só se forma apoiado numa rede vascular, e a cartilagem do calo mole não persiste sem perfusão. A prova mais elegante dessa origem é a fresagem: ela reduz o fluxo endosteal, mas não altera a perfusão dentro do calo, justamente porque esse sangue chega pela musculatura e pelo envelope de partes moles. A resposta angiogênica também depende da fixação: é maior com fixação mais flexível, talvez porque o calo é maior, e menor quando o strain é excessivo.\n\n**A consequência prática.** É o motivo pelo qual o AO insiste em não desnudar fragmentos, preferir a placa em ponte com o foco intocado nas multifragmentares e preservar o músculo em volta da fratura: cada centímetro de partes moles arrancado é irrigação de calo perdida.\n\nA irrigação do calo está na seção \"De onde vem o sangue do calo\" do resumo.",
+  "correta": "**D) tecido mole adjacente.** A microangiografia mostra que a maior parte da irrigação do calo diafisário vem das partes moles em volta da fratura, e por isso a fresagem não reduz a perfusão do calo.",
   "incorretas": {
-   "A": "O endósteo depende da circulação medular, que é justamente a que se rompe com a fratura e com a fresagem.",
-   "B": "O periósteo participa, mas boa parte do seu sangue vem dos músculos que o recobrem. A fonte dominante é o tecido mole ao redor.",
-   "C": "O osso cortical é o tecido irrigado, e não uma fonte de sangue."
+   "A": "**Endósteo** é a fonte que a fratura e a fresagem mais lesam; a fresagem diminui o fluxo endosteal sem prejudicar a perfusão do calo, o que mostra que o calo não depende dele.",
+   "B": "**Periósteo** é a resposta tentadora, porque a camada importa para a vitalidade dos fragmentos e responde com hiperemia; mas o AO atribui a irrigação do calo às partes moles adjacentes, que o envolvem por fora.",
+   "C": "**Osso cortical** perde quase metade do seu fluxo logo após a fratura e chega a inverter o sentido da circulação; é tecido que precisa ser socorrido, não a origem da resposta vascular."
   },
-  "conceito": "A diáfise, o corpo de um osso longo como o fêmur ou a tíbia, recebe sangue de duas fontes. A **circulação medular** entra pela artéria nutrícia, corre dentro do canal e irriga a cortical **de dentro para fora**, cobrindo cerca de dois terços internos da parede do osso. A **circulação periosteal** vem do periósteo, a membrana que reveste o osso por fora, e irriga o terço externo.\n\nQuando a diáfise fratura, a circulação medular é **rompida** no foco: a artéria nutrícia e seus ramos dentro do canal são cortados junto com o osso. Nas fresagens para hastes intramedulares, o mesmo acontece. Nesse momento, quem assume é o lado de fora. O periósteo e, principalmente, os **músculos e tecidos moles** que envolvem o osso passam a mandar vasos para o foco, de fora para dentro. É dessa circulação **extraóssea**, vinda do tecido mole adjacente, que vem a maior parte da resposta vascular que vai formar o calo. Só depois, com semanas, a circulação medular se refaz.\n\nIsso tem uma consequência prática enorme: o **envelope de partes moles** ao redor da fratura é precioso. Desnudar o osso, descolar músculo e periósteo para expor e reduzir perfeitamente cada fragmento destrói a principal fonte de sangue da consolidação. Por isso a ortopedia moderna valoriza a redução indireta, as placas colocadas por pequenas incisões (técnicas minimamente invasivas) e a preservação do periósteo.",
-  "correta": "Tecido mole adjacente. Com a circulação medular rompida pela fratura, os músculos e partes moles ao redor passam a fornecer a maior parte do sangue ao foco.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, pp. 11 e 12",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0002": {
@@ -26,14 +30,21 @@
   "conferido": false
  },
  "conceitos-basicos-0003": {
+  "conceito": "A questão tem duas metades: quem a placa de neutralização protege e de que força. A primeira metade elimina metade das alternativas; a segunda depende do livro que a banca usou.\n\n**Por que o parafuso de tração precisa de ajuda.** O parafuso de tração gera compressão interfragmentária alta, acima de 2.500 N, mas age com um **braço de alavanca pequeno**: a compressão está concentrada numa área pequena em volta do parafuso. Contra flexão e cisalhamento ele é fraco, e não tolera nem uma sobrecarga única, porque a rosca espanada não recupera a força (AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, p. 21). Por isso, na diáfise, o parafuso de tração **sempre** vai acompanhado de uma placa, que o AO hoje chama de proteção e que antes se chamava neutralização.\n\n**Quem é protegido.** A tabela das funções da placa (AO, cap. 3.2.2, p. 186) é literal: a placa neutraliza as forças de flexão e de rotação **para proteger a fixação com parafuso de tração**. O foco já está comprimido pelo parafuso; o elo frágil da montagem é o próprio parafuso. Isso descarta as duas opções que falam em proteger o foco.\n\n**De qual força.** Aqui os livros divergem um pouco. O AO fala em flexão e rotação; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 404 aprox.) em torção e flexão; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2549, tabela 58.11) amplia para torção, flexão e cisalhamento. Entre as duas opções que falam do parafuso, só a flexão está nos três livros, e é a que o gabarito escolheu.\n\nA placa de proteção está na seção \"Placa de proteção (neutralização)\" do resumo.",
+  "correta": "**B) parafuso de tração das forças de flexão.** A placa protege o parafuso, que tem braço de alavanca pequeno, das forças de flexão e de rotação que ele não resiste sozinho.",
   "incorretas": {
-   "A": "A placa de neutralização protege o parafuso, e não diretamente o foco, que já está comprimido pelo parafuso de tração.",
-   "C": "O alvo está errado: quem a placa protege é o parafuso de tração.",
-   "D": "O alvo está certo, mas as forças descritas classicamente são de flexão e torção."
+   "A": "**Foco da fratura das forças de flexão** acerta a força e erra o alvo: quem fica vulnerável é o parafuso de tração, não o foco, que ele já mantém comprimido.",
+   "C": "**Foco da fratura das forças de cisalhamento** erra os dois termos: o protegido é o parafuso, e o AO não lista o cisalhamento entre as forças que a placa de proteção neutraliza.",
+   "D": "**Parafuso de tração das forças de cisalhamento** tem o alvo certo e é defensável pelo Campbell, que inclui o cisalhamento; o AO e o Rockwood, porém, falam em flexão e rotação, e a banca ficou com a flexão."
   },
-  "conceito": "O **parafuso de tração** (*lag screw*) é usado para comprimir dois fragmentos de osso um contra o outro. Ele pega só o fragmento do outro lado (o do lado da cabeça desliza livre), e ao apertar puxa os dois fragmentos juntos. É ótimo para essa compressão entre os fragmentos, mas sozinho é fraco: não resiste a forças de **flexão** (dobrar) nem de **torção**. Se o membro for usado, o parafuso se solta ou quebra.\n\nA **placa de neutralização** resolve isso. Ela é colocada sobre a fratura já comprimida pelo parafuso de tração e não faz compressão nova. Seu papel é absorver as forças de flexão, torção e carga que incidiriam sobre o parafuso, **protegendo** o parafuso de tração. Assim, ele só precisa fazer o que sabe: manter os fragmentos comprimidos. O nome diz tudo: ela neutraliza as forças que o parafuso não aguenta. Hoje também é chamada de **placa de proteção**.\n\nNa classificação AO, as placas são descritas pela **função** que exercem, e não pelo formato. As funções são: compressão, neutralização (ou proteção), suporte (*buttress*), banda de tensão e ponte. A mesma placa pode exercer funções diferentes conforme o modo de uso.",
-  "correta": "Proteger o parafuso de tração das forças de flexão. A placa absorve as forças de dobra e torção que soltariam o parafuso, que fica encarregado só da compressão.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, p. 21, e cap. 3.2.2, p. 186",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 404 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2549",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "alerta": "O Campbell's Operative Orthopaedics, 15ª ed. (tabela 58.11) diz que a placa de neutralização neutraliza torção, flexão e cisalhamento, o que tornaria a opção com cisalhamento defensável por esse livro. O AO fala em flexão e rotação. O gabarito oficial (B) foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0004": {
@@ -215,70 +226,54 @@
   "conferido": false
  },
  "conceitos-basicos-0016": {
+  "conceito": "A banca compara duas hastes na tíbia exposta e pergunta o que a fresagem aumenta. A pergunta só fica confusa para quem acha que fresar é \"agredir\" o osso e, por isso, piorar tudo.\n\n**O dano e o ganho.** Fresar lesa a irrigação endosteal e gera calor; em animais, a lesão endosteal é reversível em 8 a 12 semanas (AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.3.1, p. 218). Em troca, a fresagem traz vantagens biológicas: **aumenta a perfusão e a oxigenação das partes moles adjacentes**, os detritos da fresa são osteogênicos e osteoindutores e funcionam como enxerto local, há liberação de fatores de crescimento e cabe uma haste mais grossa e estável. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 398 aprox.) resume que a fresagem **estimula a irrigação periosteal**, e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2551) descreve hiperemia periosteal e muscular em resposta à fresagem. O organismo compensa por fora o que perdeu por dentro.\n\n**E nas expostas?** É aqui que a banca coloca as armadilhas. O AO (cap. 3.3.1, p. 219 e 221) relata que, na tíbia fechada, a metanálise mostrou menos pseudartrose, menos quebra de parafuso e menos troca de implante com fresagem; no estudo SPRINT, o benefício apareceu nas fechadas e **não houve diferença nas expostas**, inclusive na reoperação por infecção. Ou seja, nas expostas fresar não aumentou procedimentos secundários nem atrasou a consolidação; o que se mantém é o efeito biológico sobre o fluxo periosteal.\n\nA fresagem está na seção \"Fresar ou não fresar\" do resumo.",
+  "correta": "**A) do fluxo sanguíneo periosteal.** A fresagem lesa o endósteo, mas provoca hiperemia periosteal e muscular e aumenta a perfusão das partes moles em volta.",
   "incorretas": {
-   "B": "A fresagem não prolonga o tempo de consolidação.",
-   "C": "A dor na frente do joelho depende do ponto de entrada e do acesso, e não da fresagem.",
-   "D": "Nas fraturas fechadas, a haste fresada reduziu reoperações; nas expostas, não houve diferença clara."
+   "B": "**No tempo de consolidação** inverte o efeito: a fresagem traz enxerto local, fatores de crescimento e haste mais estável, e os estudos citados pelo AO mostram menos pseudartrose, não consolidação mais lenta.",
+   "C": "**De complicações patelofemorais** não aparece em nenhum dos capítulos como efeito da fresagem; o que a fresa muda é o canal medular e a irrigação, não a articulação do joelho.",
+   "D": "**Do número de procedimentos secundários** contraria o SPRINT: nas fechadas a fresagem reduziu reoperações, e nas expostas não houve diferença, nem na reoperação por infecção."
   },
-  "conceito": "A **haste intramedular** é colocada dentro do canal do osso. Antes de introduzi-la, o cirurgião pode **fresar** o canal, ou seja, alargá-lo com brocas progressivas, o que permite usar uma haste mais grossa e encaixada. A outra opção é a haste **não fresada**, mais fina, colocada sem alargar o canal.\n\nA fresagem destrói a **circulação endosteal**, o sangue que corre por dentro do canal e irriga a parte interna da cortical. O osso responde aumentando o fluxo pelo lado de fora: o **fluxo sanguíneo periosteal** e das partes moles ao redor aumenta, como uma compensação. Isso foi demonstrado em estudos experimentais.\n\nA fresagem tem outras vantagens: permite uma haste mais grossa e mais resistente, e os fragmentos de osso produzidos pelas brocas funcionam como um enxerto natural no foco da fratura.\n\nNas fraturas **fechadas** da tíbia, um grande estudo comparativo (SPRINT) mostrou menos reoperações com a haste fresada. Nas fraturas **expostas**, não houve diferença clara entre fresada e não fresada. Na prática, a haste fresada é muito usada também nas expostas de menor gravidade.",
-  "correta": "Do fluxo sanguíneo periosteal. Com a circulação de dentro do canal destruída pela fresagem, o osso compensa aumentando o fluxo pelo lado de fora.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.3.1, pp. 218 a 221",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 398 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2551",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0017": {
+  "conceito": "Esta versão da pergunta já entrega o alvo (o parafuso de tração) e cobra só o par de forças. A chave é entender o que um parafuso sozinho faz bem e o que faz mal.\n\n**O que o parafuso faz bem.** Um parafuso cortical de 4,5 mm bem apertado comprime o traço com 2.000 a 3.000 N, e essa compressão, somada ao atrito entre as superfícies, impede que os fragmentos se separem e deslizem: é a estabilidade absoluta (AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, p. 20 e 21). Compressão, portanto, é o trabalho dele, não uma ameaça.\n\n**O que o parafuso faz mal.** A compressão fica concentrada perto do parafuso, com braço de alavanca curto. Quando o membro é carregado, a **flexão** abre o traço como uma dobradiça, e a **rotação** gira um fragmento sobre o outro em torno do próprio eixo do parafuso; o AO lembra que um parafuso isolado não resiste à rotação (cap. 3.2.1, p. 176). A placa colocada por cima absorve essas duas cargas e poupa a rosca, que espanada não se recupera.\n\n**O texto do livro.** A tabela das funções da placa (AO, cap. 3.2.2, p. 186) define a proteção (neutralização) como a placa que neutraliza **flexão e rotação** para proteger a fixação com parafuso de tração. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 404 aprox.) diz torção e flexão; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2549) acrescenta o cisalhamento. O par que os três livros têm em comum é flexão e rotação (torção).\n\nA placa de proteção está na seção \"Placa de proteção (neutralização)\" do resumo.",
+  "correta": "**A) flexão e rotação.** É o par que o AO escreve na tabela das funções da placa: forças que o parafuso, com braço de alavanca pequeno, não resiste sozinho.",
   "incorretas": {
-   "B": "A compressão é o que o parafuso produz, e não uma força da qual ele precise ser protegido.",
-   "C": "Pelo mesmo motivo, a compressão não é a força a ser neutralizada.",
-   "D": "A definição clássica fala em flexão e rotação, e não em cisalhamento."
+   "B": "**Flexão e compressão** mistura uma ameaça real com o próprio trabalho do parafuso: compressão interfragmentária é o que o parafuso de tração produz, não algo de que precise ser protegido.",
+   "C": "**Rotação e compressão** tem o mesmo defeito: a rotação é ameaça, mas a compressão é o efeito desejado da montagem, e a flexão, a outra força que a placa neutraliza, ficou de fora.",
+   "D": "**Rotação e cisalhamento** tem apoio parcial no Campbell, que inclui o cisalhamento; mas deixa de fora a flexão, que os três livros citam e que é a carga principal que abre o traço."
   },
-  "conceito": "O **parafuso de tração** comprime dois fragmentos de osso um contra o outro, e é ótimo nisso. Mas sozinho ele não aguenta os esforços do dia a dia: não resiste a **flexão** (forças que dobram o osso), nem a **rotação** (forças que torcem), nem sustenta carga sobre o eixo. Se o membro for usado só com ele, o parafuso se solta.\n\nA **placa de neutralização**, também chamada de placa de proteção, é colocada sobre a fratura depois que o parafuso já fez a compressão. Ela não comprime nada de novo. Sua função é absorver as forças de **flexão e rotação** (e de carga axial), protegendo o parafuso. Assim, ele só precisa manter os fragmentos comprimidos.\n\nA combinação clássica parafuso de tração com placa de neutralização é usada em fraturas **em espiral ou oblíquas longas**, em que o traço permite um bom parafuso de tração, como em fraturas do úmero, da fíbula perto do tornozelo e do antebraço.\n\nUm detalhe que ajuda a eliminar alternativas: **compressão** é o que o parafuso de tração **produz**. Não faz sentido protegê-lo da força que ele mesmo gera.",
-  "correta": "Flexão e rotação. São as forças que o parafuso de tração sozinho não aguenta e que a placa absorve.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, pp. 20 e 21; cap. 3.2.1, p. 176; cap. 3.2.2, p. 186",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 404 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2549",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0018": {
-  "conceito": "Na fratura multifragmentária, o foco não fornece um encaixe cortical confiável para manter comprimento e rotação. Os bloqueios proximal e distal prendem os segmentos à haste e controlam **rotação e encurtamento**, alternativa D.\n\nNo istmo, o ajuste da haste ao canal ajuda a conter o alinhamento. Fora dele e nas fraturas cominutivas, aumenta a dependência dos bloqueios e do planejamento. O resumo lembra que a cominuição ameaçava justamente comprimento e rotação antes de o bloqueio estático se tornar rotina (Rockwood, 10ª ed., cap. 57, “Classificação” e “Bloqueio”).\n\n**Os parafusos não recuperam uma redução que não foi feita.** Comprimento e rotação devem ser acertados antes de bloquear. Na cominuição, o lado contralateral é a referência para medir; seguir apenas as corticais do foco pode deixar o membro curto ou rodado.\n\nA quantidade de parafusos depende da montagem e do padrão; o segundo é útil em fraturas distais, cominuição, osso ruim e carga precoce. A questão pede o controle acrescentado pelo bloqueio, não todos os objetivos da haste como sistema.",
-  "correta": "**D: rotação e encurtamento.** O bloqueio vincula os fragmentos à haste, evitando giro e telescopagem quando o foco cominutivo não oferece contenção suficiente.",
+  "conceito": "A pergunta é o motivo de existir o parafuso de bloqueio. Para responder, vale lembrar o que a haste sem bloqueio já fazia e o que não fazia.\n\n**A haste de KÜNTSCHER.** Era reta, fendada e sem bloqueio; estabilizava pelo contato justo da haste elástica com o osso, por isso servia só às fraturas simples do istmo (AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.3.1, p. 217). O capítulo de biologia (AO, cap. 1.2, p. 17) diz o que ela controlava: tinha boa estabilidade à **flexão e ao cisalhamento**, mas era **instável à torção e não impedia o encurtamento**. Ou seja, o tubo dentro do canal já resolve a angulação e a translação; o que ele não segura é o giro de um fragmento sobre o outro e o encaixe telescópico dos fragmentos.\n\n**O que o bloqueio acrescentou.** GROSSE e KEMPF introduziram os parafusos de bloqueio, que **impedem encurtamento e rotação** e ampliaram as indicações para fraturas mais proximais, mais distais e mais complexas (AO, cap. 3.3.1, p. 217). Numa fratura multifragmentar do fêmur não há contato cortical entre os fragmentos principais: nada impede o fêmur de encurtar ou girar, a não ser os parafusos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2550) chama de **estático** o bloqueio proximal e distal em furos redondos, que controla rotação, flexão e carga axial e é útil nas cominutivas fora do istmo.\n\n**O preço.** Com bloqueio estático, a carga de apoio passa direto aos parafusos, que podem falhar (AO, cap. 3.3.1, p. 231); por isso se recomendam pelo menos dois distais.\n\nO bloqueio está na seção \"Do KÜNTSCHER ao bloqueio\" do resumo.",
+  "correta": "**D) rotacional e o encurtamento.** São exatamente os dois desvios que a haste sem bloqueio não controlava e que os parafusos de GROSSE e KEMPF passaram a impedir.",
   "incorretas": {
-   "A": "**Descreve alinhamento e deslocamento, mas omite os controles decisivos do bloqueio.** O ajuste da haste no canal e a redução ajudam a orientar o eixo; a instabilidade particular do foco multifragmentário inclui giro e perda de comprimento.",
-   "B": "**Acerta comprimento e troca o outro componente.** O encurtamento é uma ameaça real sem contato cortical. O par que caracteriza a função acrescentada pelos bloqueios é comprimento com rotação, não apenas ângulo.",
-   "C": "**Acerta rotação e deixa de fora a telescopagem.** A translação deve ser corrigida na redução, mas a ausência de apoio cortical permite que os segmentos encurtem ao longo da haste. Esse é o segundo controle pedido."
+   "A": "**Angular e a translação** são os desvios que a própria haste controla pelo contato com o canal; a haste de KÜNTSCHER já era estável à flexão e ao cisalhamento, sem bloqueio.",
+   "B": "**Angular e o encurtamento** acerta o encurtamento, mas a angulação já é resistida pela haste dentro do canal; falta a rotação, que só o bloqueio segura.",
+   "C": "**Rotacional e a translação** acerta a rotação, mas a translação é contida pelo tubo intramedular; o outro desvio que exige o parafuso é o encurtamento da fratura sem contato cortical."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 57 · Femoral Shaft Fractures. Seções: Anatomia aplicada e forças deformantes; Classificação; Fresagem, diâmetro, bloqueio e carga; Comprimento e rotação."
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, p. 17; cap. 3.3.1, pp. 217 e 231",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2550",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-57-diafise-femur",
-     "titulo": "Fratura da diáfise do fêmur",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
-     "secoes": [
-      "Anatomia aplicada e forças deformantes",
-      "Classificação",
-      "Fresagem, diâmetro, bloqueio e carga",
-      "Comprimento e rotação"
-     ],
-     "blocos": [
-      "anatomia-aplicada-e-forcas-deformantes-9db652ad",
-      "classificacao-edfe091a",
-      "fresagem-diametro-bloqueio-e-carga-1700baf9",
-      "comprimento-e-rotacao-c13089a5",
-      "comprimento-e-rotacao-2bbb6c9f"
-     ],
-     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "e59728f5b03682042c366f34286a603ef862e01265cd3d6ae98bae472810f4df"
-    }
-   ],
-   "questaoSha256": "cd187c56bd305a6aa08f262861dd7766ebdc9315633d65b693d6f510131cb318",
-   "comentarioSha256": "53222db8af018b53d3294a69787562464b80db14131031ef9459cf4ed350808c"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "conceitos-basicos-0019": {
   "conceito": "### Tennis leg (ruptura do gastrocnêmio)\n- **Local:** **cabeça medial** do gastrocnêmio, na **junção miotendínea**.\n- **Quem:** adulto de **meia-idade**, esportista de fim de semana.\n- **Mecanismo:** o gastrocnêmio é **biarticular** (joelho e tornozelo). A tensão é máxima com:\n  - ==joelho em extensão==;\n  - ==tornozelo em dorsiflexão==;\n  - ==contração excêntrica== (o músculo alonga enquanto contrai).\n  - É a arrancada com a perna de trás estendida.\n- **Clínica:** \"**pedrada**\" na panturrilha, dor e equimose, que pode **descer** ao tornozelo.\n- **Diferenciais:**\n  - **TVP** (o hematoma pode até comprimir; fazer **Doppler**);\n  - ruptura do **Aquiles** (Thompson **normal** na tennis leg);\n  - cisto de Baker roto.\n- **Tratamento:** **conservador** (RICE, compressão, salto, reabilitação). Vigiar **síndrome compartimental** (rara).\n\n### Silfverskiöld\n- Dorsiflexão que **melhora com o joelho fletido** indica encurtamento do **gastrocnêmio**.\n- Dorsiflexão que **não melhora** indica encurtamento do **tríceps**, com o **sóleo**, que é monoarticular.\n\n> **Na prova:** tennis leg = ==excêntrica, joelho estendido, tornozelo em dorsiflexão==.",
@@ -369,14 +364,21 @@
   "conferido": false
  },
  "conceitos-basicos-0027": {
+  "conceito": "A pergunta descreve um problema mecânico que todo residente vê na mesa: a placa de compressão aperta a cortical de cima e abre a de baixo. As duas metades da resposta (como preparar a placa e por onde começar a parafusar) vêm desse mesmo problema.\n\n**Por que a placa reta falha.** A placa fica numa só face do osso. Quando ela é tensionada para comprimir o foco, a força age excentricamente: **placa reta tensionada sobre osso reto comprime só a cortical próxima e abre a cortical oposta** (AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, pp. 21 e 22). Numa fratura transversa, isso deixa um gap do outro lado, com movimento e strain alto.\n\n**A pré-curvatura.** A solução é curvar a placa um pouco além do contorno do osso, deixando um pequeno vão entre ela e o osso no nível da fratura. Ao tensionar, a placa se endireita e empurra também a cortical distante (AO, cap. 3.2.2, pp. 200 e 201). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 404 aprox.) chama isso de **sobrecontornar ou pré-tensionar** a placa; é o termo que a banca usou. \"Pré-moldar\" é só ajustar a placa ao contorno do osso, o que é o oposto da ideia: uma placa perfeitamente moldada se comporta como a placa reta.\n\n**A ordem dos parafusos.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2548, fig. 58.28) mostra que, com a placa pré-curvada, **os parafusos internos, perto do traço, vão primeiro**, e depois os externos. Se os externos forem colocados antes, a placa fica longa demais em relação ao osso entre os furos e a cortical próxima se abre.\n\nA pré-curvatura está na seção \"Compressão axial com placa e a pré-curvatura\" do resumo.",
+  "correta": "**C) pré-tensionada e os parafusos iniciais próximos ao traço de fratura.** A placa sobrecontornada comprime as duas corticais ao ser tensionada, e começar perto do traço evita abrir a cortical próxima.",
   "incorretas": {
-   "A": "Os parafusos perto do traço estão certos, mas uma placa apenas moldada ao osso deixa a cortical oposta abrir.",
-   "B": "Erra os dois: a placa só moldada deixa a cortical oposta abrir, e os parafusos longe do traço comprimem menos.",
-   "D": "A placa pré-tensionada está certa, mas os parafusos iniciais devem ficar perto do traço."
+   "A": "**Pré-moldada, parafusos perto do traço** acerta a ordem, mas a placa só ajustada ao contorno do osso comprime a cortical próxima e abre a oposta; falta a curvatura a mais.",
+   "B": "**Pré-moldada, parafusos longe do traço** erra as duas metades: a placa moldada ao contorno abre a cortical oposta, e começar pelas pontas abre a cortical próxima.",
+   "D": "**Pré-tensionada, parafusos longe do traço** prepara bem a placa, mas a sequência pelas pontas deixa a placa longa demais entre os furos, e a cortical próxima se abre, como mostra o Campbell."
   },
-  "conceito": "Na **estabilidade absoluta**, o objetivo é que os fragmentos fiquem tão comprimidos que não haja nenhum micromovimento entre eles. Assim, o osso consolida de forma **direta** (consolidação primária), sem formar calo. É a estratégia para fraturas simples, como as transversas e as oblíquas curtas, e para fraturas que entram na articulação.\n\nUma forma de conseguir isso é a **placa de compressão**, e dois detalhes técnicos fazem a diferença.\n\n**A placa pré-tensionada.** Se a placa for moldada exatamente no formato do osso, ao apertá-la, ela comprime só a cortical que fica logo abaixo dela. A cortical do lado oposto tende a se abrir, deixando uma fenda. Para evitar isso, o cirurgião dobra a placa levemente a mais (um sobrecontorno), de modo que ela fique um pouco afastada do osso no meio, sobre a fratura. Ao parafusar, a placa se achata contra o osso e comprime também a cortical do lado oposto.\n\n**Os primeiros parafusos perto do traço.** Os orifícios dessas placas têm uma rampa. Quando o parafuso é colocado de forma excêntrica (do lado do orifício mais longe da fratura), ao apertar, a cabeça desliza na rampa e empurra o fragmento em direção ao outro, comprimindo o foco. Colocar esses parafusos perto do traço aproveita melhor esse efeito.",
-  "correta": "Pré-tensionada e os parafusos iniciais próximos ao traço de fratura. O sobrecontorno comprime também a cortical oposta, e os parafusos excêntricos perto do traço empurram os fragmentos um contra o outro.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, pp. 21 e 22; cap. 3.2.2, pp. 200 e 201",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 404 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2548",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "alerta": "O AO fala em pré-curvar a placa, sem citar a ordem dos parafusos; a ordem (internos primeiro) e o termo \"pré-tensionar\" vêm do Campbell's Operative Orthopaedics, 15ª ed., e do Rockwood and Green's Fractures in Adults, 10ª ed. O gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0028": {
@@ -422,17 +424,18 @@
   "conferido": false
  },
  "conceitos-basicos-0031": {
+  "conceito": "A pergunta combina duas escolhas binárias: que circulação a placa bloqueada preserva e o que ela impede de se deslocar. As duas saem do mesmo princípio, o do fixador interno.\n\n**Como a placa convencional segura o osso.** Na placa convencional, a estabilidade depende do **atrito entre placa e osso**, criado ao apertar os parafusos e prensar a placa contra a cortical (AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.3.4, p. 269). Essa pressão esmaga a face externa do osso: o periósteo e a rede capilar abaixo da placa. A própria LC-DCP teve a face inferior escavada para reduzir esse contato (AO, cap. 1.2, p. 11). E o AO atribui a porose sob a placa à necrose por distúrbio vascular, não ao stress shielding (cap. 1.3, p. 28).\n\n**O que muda com o bloqueio.** O parafuso bloqueado rosqueia na própria placa; a placa deixa de ser pressionada contra o osso e o conjunto vira um fixador externo coberto por partes moles. Daí a primeira vantagem: **preserva a irrigação periosteal** (AO, cap. 3.3.4, p. 269). Endósteo não entra na conta, porque a placa fica fora do canal.\n\n**O parafuso que não se solta.** Em osso osteoporótico, o parafuso convencional espana com facilidade e falha em sequência, um a um. O bloqueado não pode ser apertado demais no osso, e **a construção não falha no nível de um parafuso isolado**: todos têm de sair juntos com a placa (AO, cap. 3.3.4, p. 272). O parafuso, preso à placa em ângulo fixo, resiste ao deslocamento (afrouxamento); é o ganho que o enunciado pede.\n\nA placa bloqueada está na seção \"Bloqueada: o fixador interno\" do resumo.",
+  "correta": "**D) periosteal e a resistência ao deslocamento do parafuso.** A placa não comprime o periósteo, e o parafuso, travado na placa em ângulo fixo, não afrouxa isolado.",
   "incorretas": {
-   "A": "Erra os dois: o fluxo preservado é o periosteal, e a vantagem mecânica é a do parafuso, que não se solta.",
-   "B": "O fluxo periosteal está certo, mas a vantagem não é da placa, que nem precisa encostar no osso. É o parafuso travado que não se solta.",
-   "C": "A resistência do parafuso está certa, mas o fluxo preservado é o periosteal, e não o endosteal."
+   "A": "**Endosteal e deslocamento da placa** erra a circulação (a placa fica fora do osso e não toca o endósteo) e o componente: o ganho mecânico é o parafuso travado, não a placa.",
+   "B": "**Periosteal e deslocamento da placa** acerta a circulação, mas a placa bloqueada nem é pressionada contra o osso; o que ganha resistência é o parafuso, preso a ela em ângulo fixo.",
+   "C": "**Endosteal e deslocamento do parafuso** acerta a mecânica, mas o endósteo é lesado pela haste e pela fresa, não pela placa; a placa convencional prejudica o periósteo."
   },
-  "conceito": "A **placa convencional** funciona pelo **atrito**. Os parafusos apertam a placa contra o osso, e é esse atrito entre placa e osso que segura a fratura. Isso tem dois custos. Primeiro, a placa esmaga o **periósteo** que fica embaixo dela, prejudicando o sangue que chega ao osso por fora. Segundo, cada parafuso trabalha sozinho: em osso fraco, eles podem se soltar um a um.\n\nNa **placa bloqueada**, a cabeça do parafuso tem rosca e se trava no orifício da placa, que também tem rosca. Placa e parafusos formam uma peça única, de **ângulo fixo**. Isso muda a mecânica:\n\nA placa **não precisa encostar** no osso. Ela funciona como um \"fixador externo colocado por dentro\". Por isso, **preserva o fluxo sanguíneo periosteal**.\n\nOs parafusos **não se soltam individualmente**. Como estão travados na placa, para a montagem falhar, todos teriam que se soltar ao mesmo tempo. Isso dá **resistência ao arrancamento do parafuso**.\n\nA placa bloqueada é especialmente útil em osso **osteoporótico**, em fraturas perto da articulação com fragmento curto e nas técnicas em ponte por pequenas incisões.\n\nUm cuidado: uma montagem bloqueada muito rígida pode atrapalhar a consolidação em fraturas cominutivas. Espaçar os parafusos deixa a placa trabalhar com alguma flexibilidade.",
-  "correta": "Periosteal e a resistência ao deslocamento do parafuso. A placa não precisa comprimir o periósteo, e os parafusos travados não se soltam um a um.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 11"
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, p. 11; cap. 1.3, p. 28; cap. 3.3.4, pp. 269 e 272",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0032": {
@@ -464,17 +467,20 @@
   "conferido": false
  },
  "conceitos-basicos-0034": {
+  "conceito": "A questão pede a frase de abertura do capítulo de parafusos. Quem entende como uma rosca funciona responde sem decorar e não cai na inversão das palavras.\n\n**O parafuso como máquina simples.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 3.2.1, p. 173) define: o parafuso é um dispositivo mecânico que **converte rotação em movimento linear**. A cada volta, a rosca avança no osso uma distância igual ao passo. Quando a cabeça encosta no córtex, o avanço adicional não tem para onde ir: vira **pré-carga**, que comprime os fragmentos e impede que se separem, enquanto o atrito entre as superfícies se opõe ao deslizamento. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 400 aprox.) diz o mesmo como máquina simples que produz movimento linear a partir da rotação, **convertendo torque em compressão**, e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2543) chama de valiosa a técnica de converter forças de torque em forças de compressão através da fratura.\n\n**Para onde vai o torque.** O AO mede a conversão (cap. 3.2.1, pp. 175 e 176): do torque aplicado num cortical de 4,5 mm, cerca de 50% se perdem no atrito sob a cabeça, 10% no atrito da rosca, e só 40% viram força axial, cerca de 670 N por Nm.\n\n**Por que o parafuso de tração.** Tração é função, não desenho: o parafuso só pega no fragmento distante, desliza no próximo e puxa um contra o outro. O cirurgião gira (torque) e o osso recebe compressão.\n\nO conceito está na seção \"O que é um parafuso\" do resumo.",
+  "correta": "**B) torque em compressão.** O cirurgião aplica torque; a rosca o transforma em avanço linear e, quando a cabeça encosta, em compressão interfragmentária.",
   "incorretas": {
-   "A": "É o contrário: o torque é a força aplicada pelo cirurgião, e o resultado é compressão.",
-   "C": "Também inverte: a compressão é o produto final, e não a força de entrada.",
-   "D": "A compressão é o resultado, e não algo que o parafuso converte em outra força."
+   "A": "**Força linear em torque** descreve o caminho inverso, o de uma porca empurrada que gira; no parafuso cirúrgico, o giro da chave é a entrada e o avanço é a saída.",
+   "C": "**Compressão em torque** troca a ordem: a compressão é o resultado final da montagem, não a energia que entra; o torque é o que o cirurgião aplica.",
+   "D": "**Compressão em força linear** não descreve conversão nenhuma útil: compressão já é uma força linear, e o parafuso não parte dela."
   },
-  "conceito": "Um parafuso é, no fundo, uma rampa enrolada em torno de um cilindro. Quando giramos o parafuso, essa rampa transforma a **rotação** em avanço em linha reta. É por isso que ele entra no osso quando o apertamos.\n\nO **parafuso de tração** usa isso para comprimir dois fragmentos. O truque é que a rosca só pega num dos fragmentos:\n\nNo fragmento **mais perto** da cabeça do parafuso, faz-se um furo largo, do diâmetro da rosca (o furo de deslizamento). A rosca passa por ele sem pegar.\n\nNo fragmento **mais longe**, faz-se um furo mais fino, e a rosca pega no osso.\n\nAo apertar, a cabeça do parafuso se apoia no fragmento perto, e a rosca puxa o fragmento longe em direção a ele. O **torque** que o cirurgião aplica com a chave se transforma em **compressão** entre os fragmentos.\n\nDetalhes que fazem a técnica funcionar: o parafuso deve ficar perpendicular ao traço da fratura. Se a rosca pegar nos dois fragmentos, não há compressão: o parafuso só mantém a distância entre eles (é chamado parafuso de posição). Parafusos com rosca só na ponta fazem tração pelo próprio desenho, desde que toda a rosca fique no fragmento de longe.",
-  "correta": "Torque em compressão. O giro aplicado na chave vira compressão entre os fragmentos, porque a rosca pega só no fragmento distante.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 11"
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.1, pp. 173, 175 e 176",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 400 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2543",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0035": {
@@ -740,92 +746,36 @@
   "conferido": false
  },
  "conceitos-basicos-0056": {
+  "conceito": "Um número da tabela do AO que a banca cobra pela ordem de grandeza. Não precisa decorar em casas decimais; precisa saber que um parafuso bem apertado comprime com a força do peso de umas duas centenas de quilos.\n\n**O número em três capítulos.** O capítulo de biologia do AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.2, pp. 20 e 21) diz que o parafuso de tração produz **mais de 2.500 N** de compressão, medidos em modelos de fotoelasticidade entre 2.500 e 3.000 N, e que essa compressão se mantém além do tempo de consolidação. O capítulo de parafusos (cap. 3.2.1, p. 181) mede o que cirurgiões experientes fazem na prática: com parafusos de 4,5 mm geram **2.000 a 3.000 N**, força que cai devagar ao longo de meses, mas dura mais que o tempo que os ósteons levam para cruzar o traço. O capítulo de placas (cap. 3.2.2, p. 198) repete que um parafuso de tração bem colocado em bom osso chega a 3.000 N.\n\n**Por que não apertar até o limite.** O cirurgião experiente chega perto do torque que espana a rosca e sobra pouca reserva para a carga funcional; hoje se recomenda apertar a cerca de **dois terços do torque possível** (AO, cap. 3.2.1, p. 181). A compressão estática alta não necrosa o osso (cap. 1.2, p. 20); o que solta o parafuso é o micromovimento na interface rosca e osso.\n\nO número está na seção \"O torque, a força axial e o limite de aperto\" do resumo.",
+  "correta": "**C) 2.500N.** É o valor que o AO dá para a compressão do parafuso de tração, dentro da faixa de 2.000 a 3.000 N medida com o cortical de 4,5 mm.",
   "incorretas": {
-   "A": "500 N é muito abaixo do que esse parafuso consegue gerar.",
-   "B": "1.000 N também fica abaixo do valor de referência.",
-   "D": "5.000 N ultrapassaria a resistência da rosca no osso, que espanaria antes."
+   "A": "**500 N** é cerca de um quinto do que o parafuso gera; seria a compressão de um aperto frouxo, longe da faixa de 2.000 a 3.000 N medida pelo AO.",
+   "B": "**1.000 N** ainda fica abaixo da metade do valor do livro; o cortical de 4,5 mm bem apertado passa de 2.000 N.",
+   "D": "**5.000 N** passa do que o livro mede: mesmo os especialistas chegam a cerca de 3.000 N, perto do ponto em que a rosca espana."
   },
-  "conceito": "O **parafuso de tração** comprime dois fragmentos de osso um contra o outro. A rosca pega só no fragmento de longe; a cabeça apoia no fragmento de perto; e ao apertar, o torque se transforma em compressão entre eles.\n\nPara o parafuso cortical de **4,5 mm**, usado em ossos grandes, os valores de referência da AO indicam uma compressão da ordem de **2.500 newtons**, numa faixa de cerca de 2.000 a 3.000 N. É uma força considerável, suficiente para produzir **estabilidade absoluta**: os fragmentos ficam tão firmes que o osso consolida de forma direta, sem formar calo.\n\nAlguns pontos práticos decorrem disso:\n\nApertar mais não aumenta a compressão. Passado certo ponto, a rosca simplesmente **espana**, destruindo o osso onde ela estava presa.\n\nNo osso **osteoporótico**, a rosca segura menos, e a compressão alcançada é bem menor.\n\nA compressão diminui com o tempo, porque o osso ao redor da rosca se remodela. Por isso, na diáfise de ossos longos, o parafuso de tração sozinho não basta: precisa de uma **placa de proteção** (neutralização) para absorver as forças de flexão e rotação.",
-  "correta": "Cerca de 2.500 N. É a ordem de grandeza da compressão gerada por um parafuso cortical de 4,5 mm usado como parafuso de tração.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, pp. 20 e 21; cap. 3.2.1, p. 181; cap. 3.2.2, p. 198",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0057": {
-  "conceito": "**O parafuso de tração precisa de comprimento de traço para comprimir dois fragmentos sem perder estabilidade.** No metacarpo, a fratura espiral oferece uma superfície longa de contato, que permite distribuir parafusos interfragmentários ao longo da fratura. A compressão aproxima as superfícies ósseas; a montagem também precisa controlar rotação e encurtamento.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, indica parafusos interfragmentários isolados para traços **oblíquos longos ou espirais**, com comprimento maior que duas vezes o diâmetro do osso. Os autores são mais exigentes em sua preferência para metacarpos e mencionam mais de três vezes o diâmetro. Esses números são critérios de comprimento do traço, não de comprimento do parafuso.\n\nUm traço curto oferece pouco espaço para posicionar implantes separados e manter redução e compressão. Uma fratura cominutiva acrescenta fragmentos que não formam simplesmente duas superfícies principais compressíveis; a escolha da estabilidade muda. Isso explica por que “espiral” é a melhor opção entre as quatro, sem concluir que todo traço espiral obrigatoriamente deve ser operado.\n\n**Leia a seção “Metacarpos: tolerância de desvio, colo do quinto e fixação”** no resumo da Biblioteca, especialmente “Quando operar e com quê”, para relacionar a geometria da fratura ao implante.",
-  "correta": "A fratura espiral oferece o traço longo necessário à fixação interfragmentária com parafusos de tração. O comprimento permite distribuir os parafusos e comprimir as superfícies, desde que os fragmentos sejam reconstruíveis. No metacarpo, os parafusos acompanham a espiral, sem necessidade de ficarem todos no mesmo sentido. A indicação depende também de instabilidade e condições locais; o formato do traço torna essa técnica possível, mas não obriga sua utilização em qualquer paciente.",
+  "conceito": "A pergunta é sobre metacarpo, mas a resposta sai dos princípios gerais do parafuso de tração: em que tipo de traço os parafusos sozinhos conseguem comprimir e segurar a fratura?\n\n**O que um parafuso de tração precisa.** Ele comprime uma área pequena e não resiste à rotação em torno do próprio eixo. Quando se usam só parafusos, o AO Principles of Fracture Management, 3ª ed. (2017) (cap. 3.2.1, p. 176) pede pelo menos **dois, bem separados** e de preferência em direções diferentes: o braço de alavanca passa a ser a distância entre eles. A orientação ideal é **perpendicular ao traço**, ou na bissetriz entre a perpendicular ao traço e a perpendicular ao eixo do osso (p. 183); o Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2543) lembra que a bissetriz só vale para inclinações menores que 40 graus. Numa espiral longa, vários parafusos seguem o plano da espiral (AO, p. 183).\n\n**Que traço oferece isso.** O traço espiral é longo, tem muita superfície de contato e espaço para dois ou três parafusos perpendiculares a ele e separados entre si. O Campbell (cap. 58, p. 2544) fecha a lógica pelo outro lado: **em fraturas transversas ou oblíquas curtas, os parafusos precisam ser combinados com placa**. No traço transverso, o parafuso perpendicular ao traço ficaria quase paralelo ao osso, impossível de colocar; no oblíquo curto não cabem dois parafusos afastados; na cominuição não há superfície grande para comprimir.\n\nA técnica está na seção \"A técnica do parafuso de tração\" do resumo.",
+  "correta": "**A) espiral.** O traço longo dá superfície e espaço para dois ou mais parafusos perpendiculares e afastados, a condição para parafusos sozinhos estabilizarem a fratura.",
   "incorretas": {
-   "B": "No traço transverso, a fratura cruza o osso em uma linha curta, sem a extensão longitudinal que permite distribuir parafusos de tração isolados. Isso reduz a capacidade de controlar os fragmentos com a montagem proposta. O resumo descreve outras possibilidades, como fios, parafuso intramedular em padrões selecionados e placa de compressão. A alternativa confunde compressão no foco com indicação de um parafuso interfragmentário isolado.",
-   "C": "Cominuição significa múltiplos fragmentos. Comprimir indiscriminadamente um foco sem duas superfícies principais reconstruídas pode comprometer comprimento e alinhamento. A estratégia precisa considerar a reconstrução possível e a estabilidade global, frequentemente com outro tipo de montagem. O resumo não apresenta a cominuição como o padrão ideal para parafusos de tração isolados.",
-   "D": "O traço oblíquo curto se aproxima de uma fratura com pouca extensão longitudinal disponível para acomodar a fixação interfragmentária. A expressão decisiva é “curto”: fraturas oblíquas longas podem ser indicadas, mas o mesmo não vale automaticamente para as curtas. O resumo descreve tração associada a neutralização por placa nesse padrão. Portanto, omitir a exigência de comprimento do traço muda a indicação."
+   "B": "**Transverso** não aceita parafuso perpendicular ao traço, que correria ao longo do osso; o Campbell pede placa para esse traço.",
+   "C": "**Cominutivo** não oferece uma superfície única e grande para comprimir; cada fragmento pequeno não tem como receber dois parafusos afastados.",
+   "D": "**Oblíquo curto** é a armadilha: o traço é inclinado, mas curto demais para dois parafusos separados, e o Campbell manda associá-lo a uma placa."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Metacarpos: tolerância de desvio, colo do quinto e fixação."
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.1, pp. 176 e 183",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, pp. 2543 e 2544",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-20",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-45-fraturas-mao",
-     "titulo": "Fraturas e luxações da mão",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
-     "secoes": [
-      "Metacarpos: tolerância de desvio, colo do quinto e fixação"
-     ],
-     "blocos": [
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f1dd6502",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-e61b475c",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d85bbba9",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-83bedd4b",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ba6bbbb0",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-15733f7f",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-65924b85",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ddb1b90b",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-f76ef4db",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-53b1d522",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1807e2e5",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-917587b3",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-1a48c9a5",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-72a9c81d",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-35966c8e",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3c678693",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-82cbbc32",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-5bf5ef4e",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94e86777",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-56e222b3",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-0fc4933f",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-4c661e55",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-673d9e11",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-49fa7821",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-78973376",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-cf3d2470",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-081ba120",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-79a7874d",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-ff77cf87",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-dad1a633",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-aa492047",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-7bc2f6ee",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3b3cab65",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-589579e7",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-8750411b",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-d0e66b96",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-483050da",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-b7a501a0",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-67e0e65a",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-3e3a4194",
-      "metacarpos-tolerancia-de-desvio-colo-do-quinto-e-94a6a59b"
-     ],
-     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
-     "trechosSha256": "0a0e045cca416ca4db7f1a0430a6394997040bcee0aee77299664d3b55159153"
-    }
-   ],
-   "questaoSha256": "b2f56ed6624b37fa5933d8ef48f09026f28c471b6f1527dd2679ede5158db513",
-   "comentarioSha256": "a405e727d945a3ed7fe870c95131d4f8699c68d36afb8fcd447b1f85a036c243"
-  }
+  "alerta": "A resposta vem dos princípios gerais do AO Principles of Fracture Management e do Campbell's Operative Orthopaedics, 15ª ed.; o capítulo de mão (Green's Operative Hand Surgery) não foi lido para este resumo. O gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "conceitos-basicos-0058": {
   "conceito": "A infecção que aparece logo depois de uma osteossíntese é feita por germes agressivos, que chegam no ato cirúrgico ou pela ferida e produzem sinais em poucos dias. A questão pede essa dupla de agentes.\n\n**O que os livros de osteomielite sustentam.** O **S. aureus** é a causa mais comum de infecção musculoesquelética em todas as idades (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 955), e no pós-traumático **predominam os estafilococos** (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 812). O S. aureus tem antígenos que aderem ao colágeno tipo 1 e um **glicocálice** que aumenta a aderência a implantes metálicos e o protege do antibiótico (Tachdjian, p. 964). Os **bacilos gram-negativos** aparecem no hospedeiro comprometido, na fratura exposta grave e no adulto com semeadura hematogênica (Campbell, p. 807).\n\n**O raciocínio do gabarito.** Germes de alta virulência dão a infecção precoce: S. aureus e gram-negativos. O estafilococo **coagulase-negativo** e os estreptococos de baixa virulência são lembrados nas infecções que se manifestam mais tarde.\n\nA infecção com implante está na seção \"Espaço morto, antibiótico local e a infecção com implante\" do resumo.",
@@ -981,14 +931,19 @@
   "conferido": false
  },
  "conceitos-basicos-0070": {
+  "conceito": "Esta é a questão que resume a teoria do strain de PERREN numa linha: compara o traço transverso com o multifragmentado e pede as duas consequências, o tamanho do strain e o tipo de estabilidade.\n\n**O que é strain.** É a deformação relativa do tecido dentro do gap: a variação de comprimento dividida pelo comprimento original (Δl/l), um número sem unidade expresso em porcentagem (AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, p. 18). Cada tecido aguenta um limite: o tecido de granulação tolera 100%, a cartilagem 15% (cap. 1.3, p. 27) e o osso intacto só 2%. Se o strain no foco passa da tolerância do tecido que deveria se formar, ele não se forma.\n\n**Por que o traço transverso sofre mais.** Imagine o mesmo movimento entre os dois fragmentos principais. Na transversa, todo esse movimento cai num único gap estreito: o Δl é o mesmo e o l é pequeno, e o strain dispara. Na multifragmentar, o movimento se divide entre vários traços, e cada gap deforma pouco (AO, cap. 1.2, p. 19). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 409 aprox.) dá uma imagem prática: strain é o movimento dividido pela área de superfície da fratura, e a cominutiva tem muito mais superfície.\n\n**A consequência.** Como a transversa não tolera movimento, ela pede **estabilidade absoluta**, que zera o movimento com redução anatômica e compressão. Fixá-la com placa em ponte (estabilidade relativa) é exatamente o que o AO proíbe: cria um ambiente de strain alto, com retardo e pseudartrose (cap. 1.2, p. 17; cap. 2.2, p. 90).\n\nO strain está na seção \"Por que a fratura simples e a multifragmentar se comportam diferente\" do resumo.",
+  "correta": "**C) maior, sendo melhor indicado estabilização absoluta.** O movimento concentrado num único gap dá strain alto, e só a fixação sem movimento resolve.",
   "incorretas": {
-   "A": "A deformação é de fato maior, mas a estabilidade relativa deixa movimento demais na fenda única.",
-   "B": "Inverte a premissa: na fratura transversa, a deformação é maior, porque o movimento se concentra numa só fenda.",
-   "D": "A estabilidade absoluta está certa, mas a deformação é maior, e não menor."
+   "A": "**Maior, com estabilização relativa** acerta o strain e erra a conduta: tala numa fratura simples deixa o movimento todo no único gap, e o AO associa isso a retardo e pseudartrose.",
+   "B": "**Menor, com estabilização relativa** descreve a fratura multifragmentar, não a transversa; é na cominutiva que o movimento se divide e o strain cai.",
+   "D": "**Menor, com estabilização absoluta** inverte o strain: a transversa tem o strain maior, e é justamente por isso que pede estabilidade absoluta."
   },
-  "conceito": "**Perren** explicou por que diferentes fraturas precisam de diferentes tipos de fixação usando o conceito de **deformação** (*strain*). A deformação é a variação do tamanho da fenda entre os fragmentos dividida pelo tamanho inicial dessa fenda. Cada tecido aguenta uma deformação máxima diferente: o tecido de granulação, que surge no começo da consolidação, tolera muita deformação; a cartilagem tolera menos; e o **osso** tolera muito pouco.\n\n**Fratura transversa.** Há uma única fenda, estreitíssima. Qualquer pequeno movimento entre os fragmentos representa uma variação **enorme** em relação ao tamanho dessa fenda. A deformação é **alta**, acima do que o osso aguenta, e o calo não consegue se formar. Por isso, a fratura transversa precisa de **estabilidade absoluta**: compressão entre os fragmentos que elimina a fenda e o movimento, e o osso consolida diretamente.\n\n**Fratura multifragmentar.** O mesmo movimento se divide entre várias fendas. Em cada uma, a deformação é **baixa**. Essa fratura tolera e até se beneficia de **estabilidade relativa** (como haste intramedular ou placa em ponte), que permite um pouco de movimento e consolida formando calo.\n\nO erro clássico é usar estabilidade relativa (por exemplo, placa em ponte) numa fratura simples, com uma fenda: a deformação fica alta e o resultado pode ser uma pseudartrose.",
-  "correta": "Maior, sendo melhor indicado estabilização absoluta. A fenda única e estreita concentra o movimento, e só a compressão que elimina a fenda permite a consolidação.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, pp. 17 a 19; cap. 1.3, p. 27; cap. 2.2, p. 90",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 409 aprox.",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0071": {
@@ -1131,17 +1086,19 @@
   "conferido": false
  },
  "conceitos-basicos-0081": {
+  "conceito": "A banda de tensão é um princípio de mecânica, não de anatomia; por isso a resposta não pode ser uma face com nome anatômico. O que importa é onde o osso está sendo tracionado.\n\n**A observação de PAUWELS.** Uma estrutura curva carregada no sentido do eixo sempre se dobra: um lado fica comprimido e o outro, tracionado. O lado tracionado é o **convexo**. O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 3.2.3, p. 209) explica que a banda de tensão, aplicada excentricamente na face convexa, **converte a força de tração em compressão na cortical oposta**: o implante segura o lado que tende a abrir, e a carga passa a fechar o traço do outro lado.\n\n**O exemplo do fêmur.** O fêmur é carregado excentricamente: a tração fica lateral e a compressão, medial. Uma placa lateral comprime o foco desde que a cortical medial esteja íntegra; uma placa medial não impede a abertura lateral e falha; e, se houver defeito medial, a placa lateral passa a sofrer flexão e quebra por fadiga (AO, cap. 3.2.3, p. 210). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2545) concorda: a placa no lado côncavo dobra e falha.\n\n**Os quatro requisitos.** Osso com carga excêntrica, implante na face de tração, implante que resista à tração e cortical oposta capaz de suportar compressão (AO, cap. 3.2.2, p. 203). Faltando a cortical oposta, não há apoio, e a banda vira uma placa que apenas dobra.\n\nA banda de tensão está na seção \"Banda de tensão\" do resumo.",
+  "correta": "**C) convexa.** É o lado tracionado do osso curvo; ali o implante converte a tração em compressão na cortical do outro lado.",
   "incorretas": {
-   "A": "\"Volar\" é uma referência anatômica, e o princípio é mecânico: depende de qual face sofre tração, e não do nome da face.",
-   "B": "Também é uma referência anatômica. O que importa é colocar o implante na face que sofre tração.",
-   "D": "A face côncava sofre compressão. Uma placa ali não impede que o outro lado se abra e tende a quebrar por fadiga."
+   "A": "**Volar** é nome anatômico, não mecânico; dependendo do osso e da deformidade, a face volar pode ser a comprimida, e então a placa ali não faria banda de tensão.",
+   "B": "**Dorsal** cai no mesmo problema: só seria a face certa se coincidisse com a convexidade, e a pergunta é sobre o princípio, válido para qualquer osso longo.",
+   "D": "**Côncava** é o lado comprimido; a placa ali não impede a abertura do lado oposto, dobra e falha, como mostram o AO no fêmur e o Campbell."
   },
-  "conceito": "O princípio da **banda de tensão** transforma uma força que abriria a fratura em uma força que a **comprime**. Para entender, é preciso olhar como um osso longo é carregado.\n\nQuando o peso passa pelo osso de forma excêntrica (fora do centro, o que é a regra na maioria dos ossos), o osso tende a se curvar levemente. Um lado é **comprimido** (o lado côncavo da curva) e o outro lado é **tracionado**, esticado (o lado **convexo**). Numa fratura, a tração tende a abrir o foco do lado convexo.\n\nSe o implante (placa, fios ou cerclagem) for colocado do lado **convexo**, o que sofre tração, ele impede que esse lado se abra. A força que abriria a fratura passa a ser transmitida como **compressão** sobre a cortical do outro lado. É como segurar uma vara que está sendo dobrada pelo lado de fora.\n\nSe a placa for colocada do lado côncavo, ela fica do lado que já está comprimido. O outro lado abre a cada carga, e a placa acaba quebrando por fadiga.\n\nExemplos clássicos: no **fêmur**, o lado que sofre tração é o lateral, e é ali que se coloca a placa. No **olécrano** e na **patela**, a banda de tensão com fios e cerclagem é colocada na face que sofre tração (posterior no olécrano, anterior na patela).\n\nUma condição importante: a cortical do lado oposto precisa estar **inteira**, para suportar a compressão.",
-  "correta": "Convexa. É a face que sofre tração; o implante colocado ali transforma essa tração em compressão no foco.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 53"
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.2, p. 203; cap. 3.2.3, pp. 209 e 210",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2545",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0082": {
@@ -1221,14 +1178,18 @@
   "conferido": false
  },
  "conceitos-basicos-0091": {
+  "conceito": "Uma pergunta curta que testa se você entendeu o strain ou só decorou a palavra. A intuição engana: a fratura multifragmentar parece \"pior\", mas mecanicamente ela aguenta mais movimento entre os fragmentos principais.\n\n**A explicação do AO.** Quando a fratura está apoiada numa tala (haste, placa em ponte, fixador, gesso), o movimento entre os fragmentos depende da carga, da rigidez da tala e da rigidez dos tecidos que fazem a ponte. O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.2, p. 19) é direto: **fraturas multifragmentares toleram mais movimento entre os dois fragmentos principais, porque o movimento total se divide entre vários traços**, e isso reduz o strain em cada gap. O livro usa até um vídeo para mostrar que a mesma força dá mais strain na fratura simples.\n\n**Um exemplo numérico.** Se os fragmentos principais se aproximam 1 mm e há um único gap de 1 mm, o tecido do gap sofre 100% de deformação, o limite do tecido de granulação. Se o mesmo 1 mm se reparte entre cinco gaps, cada um deforma bem menos, e a cartilagem (tolerância de 15%) e depois o osso conseguem se formar.\n\n**A aplicação.** É a base da placa em ponte: na fratura tipo C, a placa permite micromovimento, mas o strain fica dentro da tolerância e o calo se forma; na simples, o strain passa da tolerância e a consolidação não ocorre (AO, cap. 3.3.2, p. 242).\n\nO tema está na seção \"Por que a fratura simples e a multifragmentar se comportam diferente\" do resumo.",
+  "correta": "**B) toleram mais movimento entre os fragmentos.** O movimento total se distribui por vários traços, e o strain em cada gap fica baixo.",
   "incorretas": {
-   "A": "A tolerância não é igual: a geometria da fratura muda a deformação em cada fenda.",
-   "C": "Toda fratura instável precisa de fixação. O ponto é que a multifragmentar aceita estabilidade relativa, com algum movimento.",
-   "D": "É o contrário: quem tolera menos movimento é a fratura com uma única fenda estreita."
+   "A": "**Igual movimento** ignora a geometria: com o mesmo deslocamento, a fratura simples concentra tudo num gap e a multifragmentar divide, então a tolerância não é a mesma.",
+   "C": "**Necessitam de fixação para tolerar movimento** não diz nada sobre o strain; e a ideia de que precisam de fixação rígida contraria o próprio uso da placa em ponte nessas fraturas.",
+   "D": "**Toleram menos movimento** é a resposta da intuição e o oposto do livro: menos tolerância é a da fratura simples, que concentra o movimento num só gap."
   },
-  "conceito": "**Perren** explicou a consolidação usando o conceito de **deformação** (*strain*): a variação do tamanho de uma fenda entre fragmentos dividida pelo tamanho original dessa fenda. Cada tecido tolera uma deformação máxima, e o osso tolera muito pouca. Se a deformação numa fenda é alta demais, o osso não consegue se formar ali.\n\nNuma **fratura multifragmentar**, há **várias fendas** entre vários fragmentos. Quando o membro se move, o movimento total entre as pontas principais se **divide** entre essas fendas. Cada uma sofre só uma pequena parte, e a deformação em cada fenda é **baixa**. Por isso, essas fraturas **toleram mais movimento** e formam calo com facilidade. Elas aceitam e se beneficiam da **estabilidade relativa**, como a haste intramedular ou a placa em ponte, que permitem algum movimento controlado.\n\nA **fratura transversa** é o oposto: tem uma única fenda, estreita. Um pequeno movimento já representa uma deformação enorme nessa fenda. Ela precisa de **estabilidade absoluta**, com compressão que elimina o movimento.\n\nUm erro a evitar: tentar dar estabilidade absoluta a uma fratura cominutiva, descolando cada fragmento para comprimi-lo um a um. Isso tira o sangue dos fragmentos e destrói a biologia da consolidação.",
-  "correta": "Toleram mais movimento entre os fragmentos. O movimento se divide entre várias fendas, e a deformação em cada uma fica baixa.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, p. 19; cap. 3.3.2, p. 242",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0092": {
@@ -1243,14 +1204,18 @@
   "conferido": false
  },
  "conceitos-basicos-0093": {
+  "conceito": "A infecção depois da osteossíntese é classificada pelo tempo, e o tempo diz muito sobre o germe. A precoce aparece rápido porque foi causada por bactéria agressiva.\n\n**A classificação.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 5.3, p. 529) divide pelo início dos sintomas: **precoce**, com menos de 2 semanas; **tardia retardada**, de 3 a 10 semanas; e **tardia**, com mais de 10 semanas. Cerca de 5% das fraturas operadas infectam.\n\n**Os germes de cada fase.** As precoces são causadas por germes virulentos, que se manifestam logo: **Staphylococcus aureus e bacilos Gram-negativos** (AO, cap. 5.3, p. 530). As retardadas e as tardias vêm de inóculo pequeno de baixa virulência, como o estafilococo coagulase-negativo e o Propionibacterium acnes, que precisam de semanas a meses, protegidos no biofilme, para dar sintomas.\n\n**O raciocínio para não decorar.** Virulência alta dá infecção cedo, com febre, secreção e ferida inflamada nas primeiras semanas; virulência baixa dá dor e soltura tardias. O coagulase-negativo é o exemplo clássico do segundo grupo, por isso as duas opções que o colocam na infecção precoce caem de saída.\n\n**Sobre o estreptococo.** A tabela do resumo menciona o estreptococo do grupo A entre os germes das precoces, mas o par que o AO escreve para a precoce é S. aureus com bacilos Gram-negativos, e é esse par que a questão pede.\n\nA classificação está na seção \"Infecção após osteossíntese\" do resumo.",
+  "correta": "**B) aureus e BGN.** São os germes virulentos que o AO atribui à infecção precoce, de menos de 2 semanas.",
   "incorretas": {
-   "A": "O *S. aureus* está certo, mas o estreptococo não é o par clássico da infecção precoce pós-osteossíntese.",
-   "C": "O estafilococo coagulase-negativo, de baixa virulência, é típico da infecção tardia.",
-   "D": "Os gram-negativos aparecem na infecção precoce, mas o coagulase-negativo é típico da tardia."
+   "A": "**Aureus e estreptococo** acerta o principal agente, mas troca os bacilos Gram-negativos, que o AO cita ao lado do S. aureus, por um germe que aparece só como acréscimo.",
+   "C": "**Coagulase-negativo e estreptococo** põe na precoce o germe típico das infecções retardadas e tardias, de baixa virulência e inóculo pequeno.",
+   "D": "**Coagulase-negativo e BGN** acerta os Gram-negativos, mas o coagulase-negativo demora semanas para dar sintomas e pertence às formas retardada e tardia."
   },
-  "conceito": "Quando a infecção aparece depois de uma osteossíntese (cirurgia com placa, haste ou parafusos), o **tempo** até o início dos sintomas indica o tipo de germe mais provável.\n\nNa infecção **precoce**, nas primeiras semanas, a contaminação acontece durante a cirurgia ou pela ferida, e os germes são **virulentos**, capazes de causar infecção rápida e intensa. Os mais comuns são o *Staphylococcus aureus* e os **BGN**, bacilos gram-negativos (bactérias como *Pseudomonas*, *E. coli* e *Enterobacter*, comuns em fraturas expostas e no ambiente hospitalar).\n\nNa infecção **tardia**, meses depois, predominam germes de **baixa virulência**, que crescem devagar protegidos pelo biofilme, como os estafilococos coagulase-negativos (da pele) e o *Cutibacterium acnes*.\n\nO tempo também muda a conduta. Na infecção precoce, o biofilme ainda não amadureceu, e é possível fazer limpeza cirúrgica e antibiótico mantendo o implante, se ele estiver firme, até a fratura consolidar. Na tardia, em geral é preciso retirar o implante.\n\nPara identificar o germe, o ideal é colher várias amostras de **tecido profundo** durante a cirurgia, de preferência antes do antibiótico. Colher secreção da pele ou da fístula com cotonete (swab) é pouco confiável, porque pega germes da superfície.",
-  "correta": "Aureus e BGN. Na infecção precoce predominam germes virulentos, como o *S. aureus* e os bacilos gram-negativos.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 5.3, pp. 529 e 530",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0094": {
@@ -1430,17 +1395,19 @@
   "conferido": false
  },
  "conceitos-basicos-0120": {
+  "conceito": "O mesmo princípio cobrado em outro ano, com a frase \"de acordo com os princípios de osteossíntese\". O enunciado avisa que a resposta é mecânica, e o raciocínio parte de como um osso longo se deforma sob carga.\n\n**Osso curvo, dois lados.** Os ossos longos não são carregados exatamente no eixo; a carga excêntrica faz o osso se curvar, e numa estrutura curva sob carga axial um lado é comprimido e o outro tracionado (PAUWELS, citado no AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.3, p. 209). O lado que tende a abrir é o **convexo**.\n\n**Como a placa vira banda.** Fixada nesse lado, a placa recebe a tração e a transforma em compressão na cortical do lado oposto. É um uso inteligente da carga: quanto mais o membro trabalha, mais o traço do outro lado se fecha, desde que essa cortical esteja inteira e possa servir de apoio.\n\n**Dinâmica ou estática.** O AO (cap. 3.2.3, p. 213) separa a banda **dinâmica**, em que a compressão aumenta com o movimento, como na patela durante a flexão do joelho e no olécrano durante a flexão do cotovelo, da **estática**, em que a compressão fica constante, como no maléolo medial. O fio sob tração é forte, mas quebra por fadiga se receber flexão (p. 215). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 407 aprox.) acrescenta que a técnica é mais adequada para fraturas que falharam em tração, de traço transverso.\n\n**Quando falha.** Se a cortical oposta tem cominuição ou defeito, não há apoio; a placa passa a sofrer flexão a cada passo e quebra por fadiga (AO, cap. 3.2.3, p. 210).\n\nO princípio está na seção \"Banda de tensão\" do resumo.",
+  "correta": "**C) convexa.** Na face convexa a placa recebe a tração do osso curvo e devolve compressão à cortical oposta.",
   "incorretas": {
-   "A": "\"Volar\" é um nome anatômico. O princípio é mecânico: a placa vai na face que sofre tração, que varia conforme o osso e a carga.",
-   "B": "Pelo mesmo motivo, \"dorsal\" não define a face de tração. O que importa é o lado convexo.",
-   "D": "A face côncava já está comprimida. A placa ali não impede que o outro lado se abra e tende a falhar por fadiga."
+   "A": "**Volar** descreve um lado da mão e do antebraço, não um princípio; o que decide é qual face está tracionada, e isso varia com o osso e a carga.",
+   "B": "**Dorsal** é outro nome anatômico; só coincidiria com a banda de tensão se essa face fosse a convexa, e a pergunta vale para qualquer osso longo.",
+   "D": "**Côncava** é a face comprimida; uma placa ali não segura a abertura do outro lado e acaba dobrando, como o AO descreve com a placa medial no fêmur."
   },
-  "conceito": "O princípio da **banda de tensão** transforma uma força que abriria a fratura numa força que a **comprime**. Para funcionar, o implante precisa ficar do lado do osso que sofre **tração**.\n\nQuando um osso longo recebe carga fora do centro, o que é a regra, ele tende a se curvar. O lado de dentro da curva (côncavo) é **comprimido**, e o lado de fora (**convexo**) é **tracionado**, esticado. Numa fratura, essa tração tende a abrir o foco do lado convexo.\n\nSe a placa for colocada no lado **convexo**, ela impede que esse lado se abra. A força que abriria a fratura passa a comprimir a cortical do outro lado. É como segurar com a mão o lado de fora de uma vara que está sendo dobrada.\n\nSe a placa for colocada no lado côncavo, ela fica onde o osso já está comprimido. O lado convexo abre a cada carga, e a placa acaba quebrando por fadiga.\n\nUma condição importante: a cortical do lado oposto precisa estar **inteira**, para receber a compressão. Se houver fragmentos soltos desse lado, a placa não funciona como banda de tensão e passa a trabalhar em ponte.\n\nExemplos clássicos: no fêmur, a face lateral; no olécrano, a face posterior; na patela, a face anterior.",
-  "correta": "Convexa. É a face que sofre tração; a placa colocada ali transforma essa tração em compressão no foco.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 53"
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.3, pp. 209, 210, 213 e 215",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 407 aprox.",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0121": {
@@ -1687,69 +1654,51 @@
   "conferido": false
  },
  "conceitos-basicos-0142": {
-  "conceito": "A resposta **4,5 vezes** pertence a uma comparação específica, não a uma regra universal para toda haste. No estudo canadense citado pelo resumo, com 224 pacientes, houve pseudartrose em **7,5% sem fresagem e 1,7% com fresagem**, com risco relativo relatado de 4,5 para a não fresada.\n\nÉ útil separar percentual e razão. Os 7,5% são a frequência do desfecho num grupo; 4,5 expressa aproximadamente quantas vezes aquele risco foi maior que o do outro grupo. Não significa pseudartrose de 4,5% e não equivale a dizer que a maioria das hastes não fresadas falhará. A direção e a magnitude precisam permanecer ligadas à população e à comparação que as produziram (resumo do Rockwood, 10ª ed., cap. 57, “Fresar é a regra”).\n\nA dúvida biológica é compreensível: se a fresagem interrompe circulação medular, por que o resultado pode ser melhor? O resumo descreve aumento do fluxo periosteal após a agressão endosteal, material fresado depositado no foco com fatores osteoindutores e possibilidade de usar uma haste maior. Portanto, o efeito final depende da resposta biológica e da estabilidade, não apenas de uma fotografia do fluxo no instante da fresagem.\n\nAs metanálises apresentadas também favorecem a fresada em pseudartrose, falha do implante e reoperação, sem aumento demonstrado de síndrome do desconforto respiratório agudo, sangramento ou óbito. Isso sustenta a preferência do capítulo, mas não permite multiplicar automaticamente o risco individual de qualquer paciente por 4,5. Exposição, distração do foco e outras condições continuam importando.\n\nO resumo da Biblioteca reúne mecanismo e resultado clínico. Aprenda o número junto de sua origem: é uma comparação de não união entre fresada e não fresada na diáfise femoral, e não um coeficiente fixo de todo tratamento intramedular.",
-  "correta": "**D: 4,5 vezes.** É o risco relativo relatado no estudo citado para a haste não fresada em comparação à fresada. As frequências 7,5% e 1,7% dão sentido à ordem de grandeza.\n\nA resposta deve ser preservada como dado bibliográfico aproximado daquele estudo, sem transformá-la em percentual absoluto ou previsão individual.",
+  "conceito": "Um número de estudo clínico que a banca cobra seco. Vale entender de onde ele vem, porque o mesmo raciocínio responde as perguntas conceituais sobre fresagem.\n\n**O número.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 398 aprox.) relata que, no fêmur, as hastes **não fresadas** tiveram **risco relativo de pseudartrose 4,5 vezes maior** que as fresadas. O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 3.3.1, p. 220) chega à mesma conclusão por outro estudo multicêntrico: mais pseudartrose sem fresagem, e a haste fresada é o **padrão-ouro** da diáfise do fêmur.\n\n**Por que fresar ajuda o fêmur a consolidar.** A fresa alarga o canal e permite uma haste mais grossa, com mais contato e mais estabilidade. Além disso, os detritos da fresagem são osteogênicos e osteoindutores e funcionam como enxerto local depositado no foco, há liberação de fatores de crescimento, e a perfusão das partes moles adjacentes aumenta (AO, cap. 3.3.1, p. 218). O Rockwood resume que a fresagem estimula a irrigação periosteal.\n\n**E o custo.** A fresagem lesa a circulação endosteal e gera calor, mas a lesão é reversível em 8 a 12 semanas em animais, e o calo não depende do endósteo, porque recebe sangue das partes moles.\n\nO número está na seção \"Fresar ou não fresar\" do resumo.",
+  "correta": "**D) 4.5.** É o risco relativo de pseudartrose do fêmur com haste não fresada, segundo o Rockwood and Green's.",
   "incorretas": {
-   "A": "**Uma vez e meia reduziria bastante a diferença relatada.** A comparação apresentada é de 7,5% contra 1,7%, não de riscos próximos o suficiente para essa razão.\n\nO erro não está em reconhecer maior pseudartrose com não fresada, mas em trocar a magnitude do resultado que a pergunta exige.",
-   "B": "**Duas vezes e meia também não corresponde à comparação citada.** A direção do efeito está correta se se entende que não fresada tem mais pseudartrose, porém o estudo fornecido relata 4,5.\n\nNão é necessário escolher um número menor para parecer prudente. A prudência é manter o dado real ligado ao contexto, em vez de generalizá-lo.",
-   "C": "**Três vezes e meia continua abaixo do risco relativo apresentado.** O valor pedido não foi inferido apenas do fato de haver lesão da circulação endosteal; é resultado clínico da comparação entre grupos.\n\nTrocar o número não resolve os limites da evidência. Esses limites são explicados pela população e técnica estudadas, mantendo a estimativa publicada."
+   "A": "**1,5 vez** subestima muito o efeito; o estudo citado pelo Rockwood mostra um risco três vezes maior que esse.",
+   "B": "**2,5 vezes** fica abaixo do valor do livro; nenhum dos capítulos cita esse número para o fêmur sem fresagem.",
+   "C": "**3,5 vezes** é o distrator mais próximo, mas o número que o Rockwood dá para o fêmur sem fresagem é 4,5."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da diáfise do fêmur”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 57 · Femoral Shaft Fractures (John D. Adams Jr. e Kyle J. Jeray). Seções: Fresagem, diâmetro, bloqueio e carga; Pseudartrose, infecção, retirada e quebra da haste."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 398 aprox.",
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.3.1, pp. 218 e 220",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
-  "conferido": false,
-  "alerta": "O valor de 4,5 é o risco relativo relatado no estudo canadense citado pelo resumo (pseudartrose 7,5% sem fresagem versus 1,7% com fresagem). Não é um multiplicador universal para toda população, fratura ou implante; o gabarito D foi preservado.",
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-57-diafise-femur",
-     "titulo": "Fratura da diáfise do fêmur",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 57 · Femoral Shaft Fractures",
-     "secoes": [
-      "Fresagem, diâmetro, bloqueio e carga",
-      "Pseudartrose, infecção, retirada e quebra da haste"
-     ],
-     "blocos": [
-      "fresagem-diametro-bloqueio-e-carga-999f60a0",
-      "pseudartrose-infeccao-retirada-e-quebra-da-haste-785f0979"
-     ],
-     "sha256": "de4a1aa114e77e3a7c850d80f990a91921ab76852534b07ff1780a5008c71484",
-     "trechosSha256": "57b676d327175d95647a27a82969222ee09f683fdcaae5c2c185898bf6b58679"
-    }
-   ],
-   "questaoSha256": "30024be8a4740a9967d944d08a5aa9fcafd0cd452b82d93fef78fb1a5c4b4497",
-   "comentarioSha256": "814171290ac861f001725617189d56cc16862dd1ffa4090bbb27fb8bfd2bacde"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "conceitos-basicos-0143": {
+  "conceito": "Ductilidade, rigidez, resistência e fadiga são quatro propriedades que as bancas adoram trocar entre si. A forma mais segura de não errar é amarrar cada uma a uma cena clínica.\n\n**A definição.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.3, p. 28) define ductilidade como **o grau de deformação permanente (plástica) que o material tolera antes de romper**. Deformação plástica é a que não volta: o metal entorta e fica entortado. A norma exige que o parafuso cortical de 4,5 mm tolere mais de 180 graus de deformação angular antes de quebrar.\n\n**A cena clínica.** É a ductilidade que permite ao cirurgião **moldar uma placa** na mesa e que dá **aviso antes da falha**. O AO (cap. 1.3, p. 29) mostra a diferença na mão: o parafuso de aço, no torque máximo, assenta e a cabeça gira cerca de 1,5 volta até quebrar, e o cirurgião sente; o de titânio continua subindo o torque e quebra depois de mais 3 a 4 voltas, com pouco aviso. O titânio é menos dúctil.\n\n**As vizinhas que confundem.** Resistência é a carga suportada sem deformar ou falhar; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, p. 2 aprox.) separa a resistência ao escoamento, onde começa a deformação plástica, da resistência última, onde o material rompe. Fadiga é a falha sob carga repetida, e o limite de fadiga é a maior tensão suportada por ciclos infinitos, bem abaixo da resistência última (RWA, cap. 1, p. 8). O osso cortical resiste mais à compressão do que à tração, mas isso também não é ductilidade.\n\nAs definições estão na seção \"As definições que a banca troca entre si\" do resumo.",
+  "correta": "**A) capacidade de se deformar plasticamente antes da falha.** É a definição do AO: deformação permanente tolerada antes de romper.",
   "incorretas": {
-   "B": "A tensão cíclica que um material suporta antes de falhar é a resistência à fadiga.",
-   "C": "A tensão máxima que um material suporta antes de falhar é a sua resistência.",
-   "D": "A compressão máxima suportada é a resistência à compressão, e não a ductilidade."
+   "B": "**Tensão cíclica antes da falha** é a resistência à fadiga, medida pelo limite de fadiga; tem a ver com carga repetida, não com quanto o material entorta.",
+   "C": "**Tensão máxima antes da falha** é a resistência última, a carga em que o material rompe; um material pode ser muito resistente e pouco dúctil, como as ligas de titânio.",
+   "D": "**Compressão suportada antes da falha** é resistência à compressão, uma propriedade de carga, não de deformação; o cimento de fosfato de cálcio é forte em compressão e quebradiço."
   },
-  "conceito": "Os materiais usados nos implantes ortopédicos são descritos por propriedades mecânicas, e cada termo tem um significado preciso:\n\n**Ductilidade**: a capacidade de um material se **deformar de forma permanente** (deformação plástica) antes de romper. Um material dúctil \"avisa\": entorta antes de quebrar. É como um clipe de papel, que dobra várias vezes antes de partir.\n\n**Fragilidade**: o oposto. O material quebra sem se deformar antes, como uma cerâmica ou o cimento ósseo.\n\n**Resistência**: a tensão máxima que o material aguenta antes de falhar.\n\n**Resistência à fadiga**: quantos ciclos de carga repetida, abaixo da carga máxima, o material aguenta antes de quebrar.\n\n**Rigidez** (módulo de elasticidade): o quanto o material resiste a se deformar de forma reversível, voltando ao formato original quando a carga é retirada.\n\n**Tenacidade**: a energia total que o material absorve até romper.\n\nNa ortopedia, isso tem aplicação direta. O **aço inoxidável** é mais dúctil, o que permite moldar a placa ao osso durante a cirurgia. O **titânio** tem rigidez mais próxima da do osso, mas é mais sensível a riscos e entalhes. E os implantes geralmente quebram por **fadiga**: se o osso não consolida, a placa ou a haste recebem carga repetida a cada passo e acabam se rompendo.",
-  "correta": "Capacidade de se deformar plasticamente antes da falha. O material dúctil entorta de forma permanente antes de romper.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.3, pp. 28 e 29",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1, pp. 2 e 8 aprox.",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0144": {
+  "conceito": "A técnica \"pass-through\" é um truque de cirurgia articular, e a pergunta quer saber em que parte do osso ela é usada. O nome engana, porque o fio passa por várias regiões, mas o objetivo é um só.\n\n**A descrição.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 13, p. 441) descreve a técnica para estabilizar **fragmentos articulares afundados ou impactados** acessados por um traço externo. O exemplo mais comum é a fratura do platô tibial lateral com cisalhamento e afundamento: depois de elevar a superfície articular, fios de KIRSCHNER subcondrais são passados pela lateral através dos fragmentos articulares, puxados pelo lado medial até ficarem rentes à cortical lateral, e o trabalho continua (redução da cunha lateral e placa) sem que os fios atrapalhem.\n\n**Por que existe.** Na fratura articular, o objetivo é a congruência: redução anatômica e estabilidade absoluta, porque a incongruência leva a artrose (AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.2, p. 185). Os fragmentos elevados de cartilagem com osso subcondral são pequenos e tendem a afundar de novo. O fio que os atravessa funciona como uma jangada temporária logo abaixo da cartilagem, segurando a superfície enquanto o resto da montagem é feito.\n\n**O que a técnica segura.** O fio entra e sai pelas metáfises do platô, mas o que ele sustenta é a superfície articular reconstruída. É essa região que dá nome à indicação.\n\nA técnica está na seção \"Fragmentos articulares e a técnica \"pass-through\"\" do resumo.",
+  "correta": "**A) Superficie Articular.** Os fios subcondrais atravessam e sustentam os fragmentos articulares elevados, como no platô tibial lateral afundado.",
   "incorretas": {
-   "B": "Na diáfise, o objetivo é restaurar comprimento, eixo e rotação, e não a precisão milimétrica de uma superfície articular.",
-   "C": "Na metáfise, o objetivo é o alinhamento. A precisão da técnica é voltada aos fragmentos da articulação.",
-   "D": "Os côndilos podem ter fraturas articulares, mas o que define a indicação é a superfície articular, e não a região anatômica."
+   "B": "**Diáfise** não tem superfície articular a sustentar; ali a meta é comprimento, eixo e rotação, e os fios subcondrais não têm função.",
+   "C": "**Metáfise** é por onde o fio entra e sai, e é a armadilha da questão; o que ele segura é a cartilagem com o osso subcondral, não a metáfise.",
+   "D": "**Côndilos** descreve uma estrutura que contém metáfise e superfície; a técnica não é definida pelo côndilo, e sim pelos fragmentos articulares afundados que ela sustenta."
   },
-  "conceito": "A técnica **pass-through** é usada na redução de fraturas que atingem a **superfície articular**. Nela, um fio ou instrumento **atravessa** temporariamente um fragmento para que o cirurgião possa segurá-lo, manipulá-lo e posicioná-lo com precisão no lugar certo antes de fixá-lo definitivamente.\n\nEssa precisão é especialmente importante na superfície articular, porque ali qualquer degrau, mesmo pequeno, altera o encaixe entre as superfícies e concentra carga num ponto. Com o tempo, isso desgasta a cartilagem e leva à **artrose**.\n\nPor isso, as fraturas articulares seguem princípios próprios:\n\n**Redução anatômica** da superfície articular, sem degraus nem espaços.\n\n**Estabilidade absoluta** dos fragmentos articulares, com parafusos de compressão e placas, para que consolidem diretamente.\n\n**Restaurar o alinhamento** da metáfise (a parte larga do osso logo abaixo da articulação) em relação à diáfise.\n\n**Mobilização precoce** da articulação, para nutrir a cartilagem e evitar rigidez.\n\nQuando a superfície estava afundada e é elevada de volta ao lugar, sobra um espaço vazio embaixo dela, que é preenchido com enxerto ou substituto ósseo para não afundar de novo.",
-  "correta": "Superfície articular. A técnica permite manipular com precisão fragmentos articulares, onde qualquer degrau leva à artrose.",
   "referencias": [
-   "AO Foundation. AO Surgery Reference: Principles of articular fracture reduction and fixation. https://surgeryreference.aofoundation.org/",
-   "Browner BD et al. Skeletal Trauma. 6th ed. Elsevier; 2020. Principles of intra-articular fracture fixation."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 13, p. 441",
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.2, p. 185",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0145": {
@@ -2009,14 +1958,19 @@
   "conferido": false
  },
  "conceitos-basicos-0175": {
+  "conceito": "A ductilidade cobrada agora como \"capacidade do implante\". Em vez de repetir a definição, vale olhar por que essa propriedade interessa a quem opera: ela é o que separa uma falha anunciada de uma falha surpresa.\n\n**Elástico e plástico.** Todo material carregado primeiro se deforma de forma elástica: tirando a carga, volta ao formato. A partir do ponto de escoamento, a deformação passa a ser **plástica**, permanente (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1, p. 2 aprox.). Ductilidade é o quanto dessa zona plástica o material atravessa antes de romper (AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.3, p. 28). Um material dúctil entorta bastante antes de quebrar; um material frágil quebra quase no início da deformação. O osso, aliás, se comporta como vidro: forte, mas quebra com pequena deformação (AO, cap. 1.2, p. 10).\n\n**Por que o cirurgião precisa dela.** É a ductilidade que permite dobrar e torcer uma placa para moldá-la ao osso sem trincá-la. E é ela que avisa: o aço, mais dúctil, deixa a cabeça do parafuso girar cerca de 1,5 volta depois do torque máximo antes de quebrar; o titânio dá pouco retorno tátil (AO, cap. 1.3, p. 29). As ligas de titânio e o titânio muito trabalhado a frio são mais resistentes e menos dúcteis que o aço.\n\n**O que não é ductilidade.** Resistir à torção, à carga cíclica ou a uma força única são formas de resistência (strength) ou de resistência à fadiga, grandezas de carga, não de deformação.\n\nAs definições estão na seção \"As definições que a banca troca entre si\" do resumo.",
+  "correta": "**A) deformar antes da falha.** Ductilidade é a deformação plástica que o implante tolera antes de romper, e é ela que permite moldar e dá aviso.",
   "incorretas": {
-   "B": "A capacidade de suportar forças que torcem é a resistência à torção.",
-   "C": "A capacidade de suportar cargas repetidas antes de falhar é a resistência à fadiga.",
-   "D": "A capacidade de suportar uma carga única antes de falhar é a resistência."
+   "B": "**Resistir a forças torcionais** descreve resistência à torção, ligada ao diâmetro do núcleo do parafuso, e não à capacidade de deformar.",
+   "C": "**Resistir a forças cíclicas** é fadiga: falha por acúmulo de microfissuras sob carga repetida, abaixo da resistência última.",
+   "D": "**Resistir a uma força única** é a resistência última (strength), a carga em que o material rompe numa só aplicação."
   },
-  "conceito": "Os implantes ortopédicos (placas, parafusos, hastes) são feitos de materiais com propriedades mecânicas diferentes, e cada termo tem um significado preciso:\n\n**Ductilidade**: a capacidade de o material se **deformar de forma permanente antes de romper**. Um implante dúctil entorta antes de quebrar, como um clipe de papel. Isso é uma vantagem: ele \"avisa\" que está sobrecarregado.\n\n**Resistência**: a maior carga que o material aguenta numa única aplicação antes de falhar.\n\n**Resistência à fadiga**: quantos ciclos de carga repetida, menores que a carga máxima, o material aguenta antes de quebrar.\n\n**Rigidez**: o quanto o material resiste a se deformar de forma reversível.\n\n**Resistência à torção**: a capacidade de suportar forças que torcem.\n\nA fadiga é a mais importante na prática. A cada passo, a cada movimento, o implante recebe carga. São milhares de ciclos por dia. Se o osso não consolida e não assume parte dessa carga, o implante acaba quebrando por fadiga. Por isso se diz que existe uma corrida entre a consolidação do osso e a falha do implante.\n\nComo exemplos, o **aço inoxidável** é bastante dúctil (pode ser moldado), enquanto a **cerâmica** é frágil: quebra sem se deformar antes.",
-  "correta": "Deformar antes da falha. A ductilidade é a capacidade de o implante entortar de forma permanente antes de romper.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, p. 10; cap. 1.3, pp. 28 e 29",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1, p. 2 aprox.",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0176": {
@@ -2095,14 +2049,19 @@
   "conferido": false
  },
  "conceitos-basicos-0184": {
+  "conceito": "A questão cruza duas informações sobre o fosfato de cálcio: o tipo de ação biológica e a velocidade de reabsorção. As duas se lembram juntas se você souber o que o material é: um mineral parecido com o do osso.\n\n**As três propriedades.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.3, p. 34) separa **osteogênese** (formar osso a partir de células vivas), **osteocondução** (servir de arcabouço que guia o crescimento ósseo) e **osteoindução** (estimular células a formar osso). Osteocondutores: sulfato de cálcio, fosfato de cálcio e hidroxiapatita, compostos com colágeno e matriz óssea desmineralizada. Osteoindutoras: as BMP. O autoenxerto tem as três e continua padrão-ouro. O fosfato de cálcio não tem células nem proteína sinalizadora; é um suporte mineral, biocompatível, muito osteocondutor e frágil.\n\n**A reabsorção é lenta.** Por ser mineral, o organismo demora para removê-lo. O AO dá que a hidroxiapatita reabsorve em décadas e o β-TCP em 1 a 2 anos. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2, p. 69) dá os números da questão: o osso reabsorve o fosfato de cálcio **entre 6 meses e 10 anos**, o tricálcio fosfato em 6 a 18 meses, a hidroxiapatita fica visível por mais de 10 anos, e o cimento de fosfato de cálcio tem a maior resistência à compressão. Nada disso desaparece em 3 meses.\n\nO tema está na seção \"Substitutos ósseos e fosfato de cálcio\" do resumo.",
+  "correta": "**D) Osteocondutora e é reabsorvido a partir 6 meses.** É um arcabouço mineral sem ação indutora, removido lentamente, entre 6 meses e 10 anos.",
   "incorretas": {
-   "A": "Erra os dois: o fosfato de cálcio não é osteoindutor e é reabsorvido mais devagar.",
-   "B": "A osteocondução está certa, mas a reabsorção em até 3 meses é característica do sulfato de cálcio.",
-   "C": "O tempo de reabsorção está certo, mas o fosfato de cálcio é osteocondutor, e não osteoindutor."
+   "A": "**Osteoindutora, até 3 meses** erra as duas metades: indução é propriedade das BMP, e a reabsorção do fosfato de cálcio leva de meses a anos.",
+   "B": "**Osteocondutora, até 3 meses** acerta a propriedade, mas o fosfato de cálcio é lento: o mais rápido deles, o tricálcio fosfato, leva de 6 a 18 meses.",
+   "C": "**Osteoindutora, a partir de 6 meses** acerta o tempo, mas o fosfato de cálcio não tem sinal biológico para recrutar células; é arcabouço, não indutor."
   },
-  "conceito": "As **cerâmicas** usadas como substitutos ósseos são materiais minerais sintéticos, sem células e sem fatores de crescimento. Por isso, todas têm a mesma propriedade principal: a **osteocondução**. Elas funcionam como um andaime, por onde os vasos e as células do próprio paciente crescem e depositam osso novo.\n\nO que diferencia as cerâmicas entre si é a **velocidade com que o corpo as reabsorve**:\n\nO **sulfato de cálcio** é reabsorvido rápido, em algumas semanas. É útil como veículo para levar antibiótico ao osso, mas não aguenta carga.\n\nOs **fosfatos de cálcio** são reabsorvidos devagar. O **fosfato tricálcico** começa a ser reabsorvido a partir de cerca de **6 meses**, num processo que pode levar um a dois anos. A **hidroxiapatita** é reabsorvida tão lentamente que fica praticamente permanente.\n\nExistem também **cimentos de fosfato de cálcio**, que são aplicados como pasta e endurecem dentro do osso. Eles oferecem alguma resistência e são úteis para preencher o espaço que fica embaixo de uma superfície articular afundada que foi levantada de volta, como no platô da tíbia.\n\nO substituto ideal seria aquele reabsorvido no mesmo ritmo em que o osso novo se forma, sem sobrar material nem faltar sustentação.",
-  "correta": "Osteocondutora e é reabsorvido a partir de 6 meses. O fosfato de cálcio é um andaime mineral, reabsorvido lentamente.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.3, p. 34",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 2, p. 69",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0185": {
@@ -2338,17 +2297,18 @@
   "conferido": false
  },
  "conceitos-basicos-0200": {
+  "conceito": "Mesmo dentro da janela aguda, nem todo germe se deixa controlar só com desbridamento. O Campbell destaca um deles: o **Staphylococcus aureus** é **contraindicação relativa** ao desbridamento com retenção da prótese (Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 454).\n\n**Por que relativa.** O germe pesa contra salvar a prótese, mas não a proíbe: o livro lista o que melhora o resultado quando se tenta salvar a prótese, ou seja, infectologista, **6 semanas de antibiótico IV**, culturas em 2 semanas e **troca do polietileno** (p. 454). Ser relativa significa pesar o germe junto com os outros fatores: tempo de infecção (menos de 4 semanas ou hematogênica aguda), prótese fixa, partes moles e estado do paciente (p. 452).\n\n**E se a retenção não for possível.** A revisão em dois tempos continua disponível para qualquer germe, aureus incluído: espaçador com antibiótico, 6 semanas de IV e reimplante, com 89% a 100% de sucesso (p. 455). Não existe contraindicação ao dois tempos por causa do aureus; ele é, ao contrário, o caminho quando a retenção falha.\n\nA conduta está na seção \"Infecção periprotética: tratamento\" do resumo.",
+  "correta": "**C) contraindicação relativa para desbridamento com retenção da prótese.** O aureus reduz o sucesso da retenção, mas o livro a admite com troca do polietileno e 6 semanas de IV (p. 454).",
   "incorretas": {
-   "A": "O *S. aureus* não contraindica a revisão em dois tempos; ela é justamente a alternativa quando o DAIR não é adequado.",
-   "B": "O *S. aureus* não é indicação para o DAIR; ao contrário, aumenta a chance de falha.",
-   "D": "Não é contraindicação absoluta: com prótese fixa e boas partes moles, o DAIR pode ser tentado."
+   "A": "**Contraindicação de revisão em dois tempos** não existe para o aureus; o dois tempos é justamente a saída quando a retenção falha.",
+   "B": "**Indicação para retenção** ignora que o aureus piora o resultado do desbridamento; ele pesa contra, não a favor.",
+   "D": "**Contraindicação absoluta** exagera: o Campbell classifica o aureus como relativa e descreve como aumentar o sucesso da retenção."
   },
-  "conceito": "Quando uma prótese de joelho infecciona, uma das opções de tratamento é o **DAIR**, sigla em inglês para desbridamento, antibiótico e **retenção do implante**. O cirurgião abre o joelho, faz uma limpeza ampla, troca as peças móveis (o polietileno) e mantém os componentes fixados ao osso. Depois, o paciente recebe antibiótico por um tempo prolongado.\n\nO DAIR só funciona em situações específicas, todas ao mesmo tempo:\n\nInfecção **aguda**, logo depois da cirurgia ou de surgimento recente pelo sangue, com poucas semanas de sintomas. Depois disso, o **biofilme** (a camada protetora que as bactérias formam sobre o metal) amadurece, e não sai mais com limpeza.\n\nPrótese **bem fixa** ao osso.\n\nPele e partes moles que permitam fechar a ferida.\n\nO **germe** também pesa na decisão. Infecções pelo ***Staphylococcus aureus***, especialmente o resistente à meticilina (MRSA), têm taxas de falha do DAIR bem mais altas que as causadas por estreptococos ou germes menos agressivos. Por isso, o *S. aureus* é uma **contraindicação relativa**: ele não proíbe o DAIR, mas entra na balança junto com as condições do paciente e das partes moles. Com prótese bem fixa e boas partes moles, o DAIR ainda pode ser tentado.\n\nAlgumas medidas aumentam a chance de sucesso: limpeza radical, troca do polietileno e uso de antibiótico que age no biofilme, como a rifampicina para estafilococos.",
-  "correta": "Contraindicação relativa para desbridamento com retenção da prótese. O *S. aureus* aumenta a chance de falha, mas o DAIR ainda pode ser tentado em condições favoráveis.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 45"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 452, 454 e 455",
+   "Resumo OrtoQuestões: Artroplastia total do joelho"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0201": {
@@ -2420,14 +2380,19 @@
   "conferido": false
  },
  "conceitos-basicos-0206": {
+  "conceito": "Rigidez é a propriedade que diferencia o aço do titânio e o implante do osso. A pergunta pede a definição, e as alternativas erradas são outras propriedades com nomes parecidos.\n\n**A definição.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.3, p. 27) define rigidez (stiffness) como **a capacidade de resistir à deformação**. Mede-se pela relação entre carga e deformação elástica, e corresponde ao módulo de elasticidade do material; depende do material e também da forma do implante. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, pp. 2 e 8 aprox.) mostra a engenharia: dividindo a força pela área (tensão) e a deformação pelo comprimento (Δl/L), o módulo de YOUNG (E = tensão / deformação) vira propriedade do material, e na curva a rigidez é a **inclinação da porção elástica**. Curva mais inclinada, material mais rígido.\n\n**Os números.** O titânio comercialmente puro tem módulo de 110 GPa, o aço inoxidável 186 GPa e o osso cortical 20 GPa (AO, cap. 1.3, p. 27). Sob a mesma carga, o titânio deforma mais que o aço e fica mais perto do osso. Ser menos rígido não quer dizer ser mais fraco: a resistência última do titânio (860 MPa) é quase a do aço (900 MPa).\n\n**Rigidez não é fadiga nem stress shielding.** Fadiga é falha por carga cíclica; stress shielding é uma teoria sobre o efeito de um implante muito rígido no osso, que o AO, aliás, rejeita em favor da necrose de PERREN para explicar a porose sob a placa (cap. 1.3, p. 28).\n\nAs definições estão na seção \"As definições que a banca troca entre si\" do resumo.",
+  "correta": "**A) à deformação.** Rigidez é resistir à deformação sob carga; corresponde ao módulo de elasticidade, a inclinação da parte elástica da curva.",
   "incorretas": {
-   "B": "Resistir até o limite de fadiga descreve a resistência à fadiga, e não a rigidez.",
-   "C": "O stress shielding é uma consequência de implantes rígidos demais, e não algo a que o implante resista.",
-   "D": "Resistir a cargas repetidas é a resistência à fadiga, e nenhum material suporta carga sem alguma deformação."
+   "B": "**Até o limite de fadiga** confunde rigidez com fadiga; o limite de fadiga é a maior tensão suportada por ciclos infinitos, e um material pouco rígido pode ter fadiga melhor, como o titânio.",
+   "C": "**Ao efeito stress shielding** inverte causa e efeito: o stress shielding seria consequência de um implante rígido demais, não uma força a que ele resiste; e o AO atribui a porose à necrose.",
+   "D": "**Forças cíclicas sem deformação** mistura fadiga (carga cíclica) com rigidez; nenhum material resiste a carga sem deformar, ele só deforma menos quando é mais rígido."
   },
-  "conceito": "Os implantes ortopédicos são descritos por várias propriedades mecânicas, e a **rigidez** é a capacidade de **resistir à deformação** quando recebe carga. Um implante rígido se deforma pouco; um implante flexível se deforma mais (de forma reversível, voltando ao formato quando a carga é retirada).\n\nA rigidez depende de duas coisas:\n\nDo **material**, medido pelo módulo de elasticidade. Do mais rígido para o menos rígido: cerâmica, cromo-cobalto, aço, titânio, osso cortical, cimento e polietileno, osso esponjoso.\n\nDa **forma**: numa haste, por exemplo, a rigidez cresce com a quarta potência do raio. Uma haste um pouco mais grossa é muito mais rígida.\n\nNão confundir com outras propriedades:\n\n**Resistência**: a maior carga que o implante aguenta antes de quebrar.\n\n**Resistência à fadiga**: quantos ciclos de carga repetida ele aguenta.\n\n**Ductilidade**: o quanto ele entorta de forma permanente antes de romper.\n\nO **stress shielding** não é algo a que o implante \"resiste\". É uma **consequência** de um implante rígido demais: ele carrega quase todo o peso, o osso ao redor deixa de receber carga e, sem estímulo, perde massa (lei de Wolff). Um exemplo é a perda de osso embaixo de placas ou ao redor de hastes de prótese muito rígidas.",
-  "correta": "À deformação. A rigidez é a capacidade de o implante resistir a se deformar quando recebe carga.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.3, pp. 27 e 28",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1, pp. 2 e 8 aprox.",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0207": {
@@ -2514,14 +2479,18 @@
   "conferido": false
  },
  "conceitos-basicos-0224": {
+  "conceito": "Quatro códigos AO, e a pergunta é qual deles pede redução anatômica com estabilidade absoluta. Primeiro é preciso decifrar o código; depois, lembrar que tipo de fratura exige anatomia perfeita.\n\n**Lendo o código.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.4, pp. 40 a 45) ensina: o primeiro número é o osso (úmero 1, fêmur 3, tíbia 4), o segundo é o segmento (proximal 1, diáfise 2, distal 3). Então 31 é o fêmur proximal, 32 a diáfise do fêmur e 33 o fêmur distal. No fêmur proximal, o tipo A é trocantérico. Na diáfise, B é a fratura em cunha, com contato entre os fragmentos principais (na classificação da época, B1 era a cunha em espiral). No segmento terminal, C é a articular completa, e **C1 é a articular simples com metáfise simples**.\n\n**Quem pede anatomia.** As fraturas articulares precisam de redução anatômica e estabilidade absoluta, porque a incongruência leva a artrose e o calo não é desejado (AO, cap. 3.2.2, p. 185). O capítulo de placa em ponte é preciso (cap. 3.3.2, p. 244): as articulares simples com metáfise simples (C1) e as metafisárias simples vão para redução anatômica e compressão; as articulares com metáfise multifragmentar (C2 e C3) não servem para esse método na metáfise.\n\n**Por que não a diáfise.** Na diáfise basta restaurar comprimento, eixo e rotação; o antebraço é a exceção (AO, cap. 2.2, p. 84). Uma cunha do fêmur é tratada com haste, com estabilidade relativa e calo. E as trocantéricas são extra-articulares, sem superfície de cartilagem a reconstruir.\n\nA classificação e a indicação estão na seção \"O que cada fratura pede\" do resumo.",
+  "correta": "**D) 33 C 1.** Fêmur distal, articular completa, com traço articular simples e metáfise simples: a superfície articular exige anatomia, e a metáfise simples permite compressão.",
   "incorretas": {
-   "A": "A 31 A1 é uma fratura trocantérica extra-articular do fêmur proximal.",
-   "B": "A 31 A3 também é trocantérica e extra-articular.",
-   "C": "A 32 B1 é uma fratura da diáfise do fêmur em cunha. Na diáfise, a letra B indica cunha, e não fratura articular."
+   "A": "**31A1** é uma fratura trocantérica simples, extra-articular; não há cartilagem a reconstruir, e o objetivo é alinhamento e fixação estável, não anatomia de cada fragmento.",
+   "B": "**31A3** continua sendo trocantérica, também extra-articular; a fixação busca alinhamento e estabilidade da região, sem a exigência de congruência articular.",
+   "C": "**32B1** é uma cunha da diáfise do fêmur; na diáfise basta comprimento, eixo e rotação, e a fratura é tratada com haste, com consolidação por calo."
   },
-  "conceito": "A escolha entre **estabilidade absoluta** e **estabilidade relativa** depende de onde está a fratura.\n\nNas fraturas que entram na **superfície articular**, a regra é **redução anatômica** e **estabilidade absoluta**. A cartilagem não se remodela, e qualquer degrau deixado na superfície concentra carga e leva à artrose.\n\nNas fraturas da **diáfise**, basta uma redução **funcional** (restaurar comprimento, eixo e rotação), com **estabilidade relativa**, como a haste intramedular, que consolida com calo.\n\nPara resolver a questão, é preciso saber ler o **código AO/OTA** das fraturas:\n\nO **primeiro número** indica o osso: 3 é o fêmur, 4 é a tíbia.\n\nO **segundo número** indica o segmento: 1 é a parte de cima (proximal), 2 é a diáfise, 3 é a parte de baixo (distal).\n\nNos segmentos das pontas (proximal e distal), a **letra** indica se a fratura entra na articulação: **A** é extra-articular, **B** é articular parcial e **C** é articular completa.\n\nNa diáfise, as letras têm outro significado: A é simples, B é em cunha e C é multifragmentar.\n\nAplicando: **33-C1** é uma fratura **articular completa** do fêmur distal, que precisa de redução anatômica e estabilidade absoluta. As 31-A1 e 31-A3 são fraturas trocantéricas, fora da articulação. A 32-B1 é uma fratura da diáfise do fêmur em cunha, tratada com estabilidade relativa.",
-  "correta": "33 C1. É uma fratura articular completa do fêmur distal, que exige redução anatômica e estabilidade absoluta.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.4, pp. 40 a 45; cap. 2.2, p. 84; cap. 3.2.2, p. 185; cap. 3.3.2, p. 244",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0225": {
@@ -2658,14 +2627,19 @@
   "conferido": false
  },
  "conceitos-basicos-0235": {
+  "conceito": "Uma questão de filosofia do tratamento, mas com resposta literal no livro. Antes de pensar em placa, haste ou pinça de redução, o cirurgião tem de decidir que tipo de consolidação quer provocar.\n\n**A frase do livro.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, p. 22 aprox.) escreve que, como a fratura pode consolidar por dois caminhos, **a primeira e mais importante decisão ao planejar a fixação é qual modo de consolidação se deseja**. O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.2, p. 9) coloca a mesma ideia de outra forma: fixar é sempre um compromisso entre biologia e mecânica, e o implante ideal não é necessariamente o mais forte nem o mais rígido.\n\n**Por que essa decisão vem antes.** Os dois modos têm exigências mecânicas opostas. A **consolidação direta** (primária), por remodelação osteonal, só acontece com estabilidade absoluta: redução anatômica e compressão, sem movimento no foco (AO, cap. 1.2, pp. 12 e 15). A **consolidação indireta** (secundária), com calo, precisa de estabilidade relativa: movimento elástico e controlado, com strain dentro da tolerância. Uma fixação que impede todo movimento suprime o calo; uma tala numa fratura simples deixa strain demais. Escolhido o modo, todo o resto decorre: articular simples, redução anatômica e parafuso de tração com placa de proteção; diafisária multifragmentar, haste ou placa em ponte com redução indireta.\n\n**E a classificação?** Ela ajuda a decidir (uma 33C1 aponta para estabilidade absoluta, uma 32C3 para relativa), mas é uma ferramenta, não a decisão.\n\nO conceito está na seção \"O mecanismo que comanda tudo\" do resumo.",
+  "correta": "**D) O modo de consolidação desejado.** Direta ou com calo: os dois têm exigências mecânicas opostas, e implante e redução decorrem dessa escolha.",
   "incorretas": {
-   "A": "O método de redução é uma consequência do tipo de consolidação escolhido.",
-   "B": "A escolha do implante é a última peça do planejamento, e não a primeira.",
-   "C": "A classificação descreve a fratura e ajuda no raciocínio, mas não define sozinha a estratégia."
+   "A": "**O método de redução** depende do modo escolhido: redução direta e anatômica para estabilidade absoluta, indireta para estabilidade relativa; vem depois.",
+   "B": "**A escolha do implante** é consequência: a mesma placa pode comprimir ou fazer ponte, e quem decide a função é o cirurgião, conforme a consolidação desejada.",
+   "C": "**A classificação da fratura** orienta a decisão, mas não é ela; o Rockwood é explícito em pôr o modo de consolidação como a primeira e mais importante."
   },
-  "conceito": "No planejamento de uma cirurgia de fratura, a primeira e mais importante decisão, segundo os princípios da AO, é: **que tipo de consolidação eu quero?** Tudo o resto decorre disso.\n\nExistem dois caminhos:\n\n**Consolidação direta (primária)**, sem calo. Exige **redução anatômica**, **compressão** entre os fragmentos e **estabilidade absoluta**, ou seja, nenhum movimento no foco. É obrigatória nas fraturas que atingem a **superfície articular**, porque a cartilagem não tolera degraus. Também é usada em fraturas simples da diáfise do antebraço.\n\n**Consolidação secundária**, com calo. Exige apenas uma **redução funcional** (restaurar comprimento, eixo e rotação), **estabilidade relativa** (que permite um pequeno movimento) e preservação das partes moles. É o padrão nas fraturas da diáfise com vários fragmentos, tratadas com haste intramedular ou placa em ponte.\n\nDefinido o tipo de consolidação desejado, o cirurgião escolhe o método de redução, a via de acesso, o implante e a técnica de aplicação.\n\nA classificação da fratura é importante para descrevê-la e orientar o raciocínio, mas não define, sozinha, a estratégia. E o implante é a última peça da escolha, e não a primeira.",
-  "correta": "O modo de consolidação desejado. A decisão entre consolidação direta e com calo define todo o resto do planejamento.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1, p. 22 aprox.",
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, pp. 9, 12 e 15",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0236": {
@@ -2680,14 +2654,19 @@
   "conferido": false
  },
  "conceitos-basicos-0237": {
+  "conceito": "A pergunta pede para visualizar na radiografia a última passagem da consolidação com calo: o momento em que o calo já fez a ponte e o osso começa a voltar à sua forma.\n\n**As quatro fases.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.2, pp. 12 e 13) divide a consolidação indireta em inflamação (1 a 7 dias), **calo mole** (por volta de 2 a 3 semanas, quando os fragmentos param de se mover livremente), **calo duro** (até 3 a 4 meses, ossificação que começa na periferia, onde o strain é menor) e **remodelação** (meses a anos). O calo cresce enquanto o foco precisa de estabilidade: um calo largo, longe do eixo, resiste melhor à flexão e à torção, como um tubo grosso.\n\n**O que acontece na remodelação.** Uma vez feita a ponte óssea, aquele volume de calo não é mais necessário. A remodelação troca o osso trabeculado, imaturo, por osso lamelar, por erosão de superfície e remodelação osteonal, até o osso recuperar a **morfologia original, inclusive o canal medular** (AO, cap. 1.2, p. 13). Na radiografia, o calo periosteal, que tinha crescido para estabilizar, vai sendo reabsorvido e se afina: **diminui**.\n\n**O contraste com a absoluta.** Na estabilidade absoluta quase não há calo; aparece só uma linha fina, e calo nessa situação é sinal de instabilidade (AO, cap. 1.2, pp. 22 e 23). A questão fala em estabilidade relativa, em que o calo existe, cresce e depois encolhe.\n\nAs fases estão na seção \"Consolidação indireta, o caminho natural\" do resumo.",
+  "correta": "**C) Diminuído.** Na remodelação o calo é reabsorvido e o osso volta à morfologia original, com canal medular; o volume periosteal cai.",
   "incorretas": {
-   "A": "O calo não fica estável nessa transição: começa a diminuir à medida que é reabsorvido.",
-   "B": "A ausência de calo é típica da consolidação com estabilidade absoluta, ou de uma falha de consolidação.",
-   "D": "O calo aumenta na fase de reparo, antes da transição para a remodelação."
+   "A": "**Estável** descreveria um calo que não muda, mas a remodelação dura meses a anos justamente para trocar e reduzir esse osso até a forma original.",
+   "B": "**Ausente** é a imagem da estabilidade absoluta, que consolida quase sem calo; na relativa o calo existe e só desaparece aos poucos, não na transição.",
+   "D": "**Aumentado** descreve a fase de calo duro, antes da ponte óssea; depois que a fratura consolida, o calo deixa de crescer e passa a ser remodelado."
   },
-  "conceito": "Quando uma fratura é tratada com **estabilidade relativa** (haste intramedular, placa em ponte, gesso), ela consolida formando **calo**. Na radiografia, o calo periosteal, que se forma por fora do osso, ao redor do foco, passa por fases:\n\n**Fase de reparo.** O calo **cresce**, formando um volume em forma de fuso que envolve o foco da fratura e une os fragmentos. Quanto mais movimento houver no foco, maior tende a ser o calo.\n\n**Transição para a remodelação.** Quando o traço da fratura já está unido, o calo que sobra deixa de ser necessário e começa a ser **reabsorvido**. Na radiografia, ele aparece **diminuindo** e ficando mais organizado.\n\n**Remodelação.** Ao longo de meses a anos, o osso se reorganiza de acordo com a carga que recebe (lei de Wolff), e o contorno vai voltando ao normal.\n\nNa prática, a radiografia ajuda a acompanhar a consolidação. Um critério muito usado é a presença de **ponte de calo em pelo menos três das quatro corticais** vistas nas radiografias de frente e de perfil. E um calo que cresce por meses sem formar ponte sugere movimento demais no foco, com risco de pseudartrose hipertrófica.",
-  "correta": "Diminuído. Na transição para a remodelação, a fratura já está unida, e o calo excedente começa a ser reabsorvido.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, pp. 12, 13, 22 e 23",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "alerta": "O AO Principles of Fracture Management descreve a remodelação até a morfologia original, mas não usa a palavra \"diminuído\" para o aspecto radiográfico do calo; o gabarito oficial foi mantido, coerente com essa descrição.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0238": {
@@ -2853,14 +2832,18 @@
   "conferido": false
  },
  "conceitos-basicos-0253": {
+  "conceito": "Um número de geometria da placa, cobrado com uma pegadinha de ordem: a banca pede primeiro o transversal e depois o longitudinal.\n\n**Por que o furo permite inclinar.** A DCP e sua sucessora, a LC-DCP (PERREN, 1990), têm furos ovais em forma de cilindro inclinado. A cabeça do parafuso, ao descer pela rampa, desliza como uma bola e empurra o osso em direção à fratura, com deslocamento de até 1,0 mm (AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.2, pp. 186 a 188). Como o furo é comprido no eixo da placa, o parafuso pode ser inclinado bastante nesse sentido; no sentido da largura, o furo é estreito e a inclinação é pequena.\n\n**Os números.** O AO (cap. 3.2.2, p. 188) dá: **25 graus de inclinação no plano longitudinal** e **até 7 graus no plano transversal**. A inclinação longitudinal é útil, por exemplo, para passar um parafuso de tração pelo furo da placa, cruzando um traço oblíquo.\n\n**A ordem do enunciado.** Transversal e longitudinal, nessa ordem, dá 7 e 25. Quem lembra os números mas não a ordem cai em \"25 e 7\", que nem está entre as opções; quem confunde com as placas de ângulo variável lembra dos 15 graus de inclinação dos parafusos poliaxiais da LCP, que são outro implante (AO, cap. 3.2.2, p. 192 a 195).\n\n**As guias.** A guia dourada põe o furo 1,0 mm excêntrico (compressão), a verde 0,1 mm (neutra) (AO, cap. 3.2.2, p. 189).\n\nA placa está na seção \"A DCP e a LC-DCP\" do resumo.",
+  "correta": "**A) 7 graus e 25 graus.** O furo oval da DCP permite até 7 graus no plano transversal e 25 graus no longitudinal.",
   "incorretas": {
-   "B": "Os valores de 10 e 30 graus não correspondem aos descritos para a DCP.",
-   "C": "Inverte as direções e exagera o valor transversal: a inclinação maior é a longitudinal.",
-   "D": "Os valores de 10 e 15 graus não correspondem aos descritos para a DCP."
+   "B": "**10 e 30 graus** exagera os dois valores; o furo da DCP não permite 30 graus no comprimento nem 10 na largura.",
+   "C": "**15 e 7 graus** lembra os 15 graus dos parafusos de ângulo variável, outro implante, e põe o 7 no plano errado.",
+   "D": "**10 e 15 graus** não corresponde a nenhum dos planos da DCP; a inclinação longitudinal é bem maior, 25 graus."
   },
-  "conceito": "A **placa DCP** (do inglês *dynamic compression plate*, placa de compressão dinâmica) tem orifícios com uma forma especial: uma rampa inclinada combinada com uma cavidade arredondada. Essa geometria serve a duas funções.\n\n**Compressão axial.** Quando o parafuso é colocado de forma excêntrica (do lado do orifício mais longe da fratura), ao apertar, a cabeça desliza pela rampa e empurra o fragmento em direção ao outro, comprimindo o foco.\n\n**Inclinação do parafuso.** O formato do orifício permite inclinar o parafuso em certos limites:\n\nNo sentido **longitudinal** (ao longo do eixo da placa), cerca de **25 graus**. Isso é importante para passar um **parafuso de tração** pela placa, atravessando o traço de uma fratura oblíqua.\n\nNo sentido **transversal** (de um lado para o outro), cerca de **7 graus**.\n\nForçar o parafuso além desses limites impede que a cabeça assente bem no orifício e enfraquece a fixação.\n\nA **LC-DCP** é uma evolução da DCP. Ela tem sulcos na face de baixo, que reduzem o contato com o osso e preservam o periósteo, orifícios simétricos, que permitem comprimir nos dois sentidos, e permite maior inclinação longitudinal do parafuso.",
-  "correta": "7 graus e 25 graus. O orifício da DCP permite cerca de 7 graus de inclinação transversal e 25 graus longitudinal.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.2, pp. 186 a 195",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0254": {
@@ -3229,17 +3212,19 @@
   "conferido": false
  },
  "conceitos-basicos-0278": {
+  "conceito": "O paciente reumático chega à artroplastia tomando drogas de dois grupos muito diferentes, e a questão pede para separá-los. O Campbell reproduz, no capítulo 2, a diretriz de 2022 do American College of Rheumatology com a AAHKS para ATQ e ATJ eletivas (Campbell's Operative Orthopaedics, 15ª ed., cap. 2 (otimização perioperatória), Tabelas 2.3 e 2.4, p. 136 e 137).\n\n**Drogas sintéticas convencionais: continuam.** Metotrexato, sulfassalazina, hidroxicloroquina, leflunomida (e também doxiciclina e apremilaste) são mantidos durante a cirurgia. Suspendê-los arrisca a reativação da doença, que atrapalha a reabilitação, sem ganho claro contra infecção.\n\n**Biológicos: param.** Infliximabe, **adalimumabe**, etanercepte, golimumabe, abatacepte, certolizumabe, rituximabe, tocilizumabe e os demais são suspensos, e a cirurgia é marcada **no fim do intervalo da dose**, quando o efeito imunossupressor é menor. Os inibidores de JAK (tofacitinibe, baricitinibe, upadacitinibe) param 3 dias antes. O reinício espera a ferida cicatrizada, sem secreção nem infecção, em geral por volta de 14 dias.\n\n**Por que isso pesa na ATJ.** A artrite reumatoide já é fator de risco para infecção periprotética, sobretudo no homem soropositivo (Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 451); o biológico soma imunossupressão a esse terreno.\n\nA tabela dos antirreumáticos está na seção \"Pré-operatório e medicações\" do resumo.",
+  "correta": "**C) a adalimumabe.** É um biológico anti-TNF: pela diretriz citada no Campbell, é suspenso e a cirurgia é marcada no fim do ciclo de aplicação.",
   "incorretas": {
-   "A": "A leflunomida é um remédio convencional, mantido no período da cirurgia.",
-   "B": "O metotrexato também é mantido, porque suspendê-lo aumenta o risco de piora da doença.",
-   "D": "A hidroxicloroquina é mantida no período da cirurgia."
+   "A": "**Leflunomida** pertence às drogas sintéticas convencionais que a diretriz manda manter durante a artroplastia.",
+   "B": "**Metotrexato** é mantido; a tentação de suspendê-lo por medo de infecção é justamente a armadilha, porque a diretriz não o interrompe.",
+   "D": "**Hidroxicloroquina** quase não imunossuprime e continua no perioperatório, como as demais drogas sintéticas convencionais."
   },
-  "conceito": "Pacientes com doenças reumáticas, como a artrite reumatoide, usam remédios que controlam o sistema de defesa do corpo. Antes de uma prótese de quadril ou joelho, é preciso decidir quais manter e quais suspender, equilibrando dois riscos: infecção da prótese e piora da doença. As recomendações das sociedades americanas de reumatologia e de cirurgia do quadril e joelho orientam:\n\n**Remédios modificadores da doença convencionais** (metotrexato, leflunomida, hidroxicloroquina, sulfassalazina): **mantidos**. Suspendê-los aumenta o risco de a doença piorar, sem reduzir de forma comprovada o risco de infecção.\n\n**Remédios biológicos** (como o **adalimumabe**, que bloqueia o TNF, uma substância da inflamação): **suspensos**. A cirurgia é marcada para o fim do intervalo entre as doses, ou seja, para a semana em que a próxima dose seria aplicada. O adalimumabe, por exemplo, é aplicado a cada duas semanas, então a cirurgia é feita na terceira semana. O remédio é retomado depois que a ferida cicatriza, em cerca de duas semanas, se não houver infecção.\n\n**Inibidores de JAK** (como o tofacitinibe): suspensos alguns dias antes.\n\n**Corticoide**: mantido na dose habitual.",
-  "correta": "O adalimumabe. Os biológicos são suspensos antes da prótese, e a cirurgia é marcada para o fim do intervalo entre as doses.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 9"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 2 (otimização perioperatória), Tabelas 2.3 e 2.4, p. 136 e 137",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 451",
+   "Resumo OrtoQuestões: Artroplastia total do joelho"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0279": {
@@ -3257,17 +3242,18 @@
   "conferido": false
  },
  "conceitos-basicos-0280": {
+  "conceito": "A pergunta junta duas ferramentas: o código AO da diáfise e o strain de PERREN. Quem souber o que cada letra e número significam e lembrar que o strain cai quando o movimento se divide responde em segundos.\n\n**Os tipos diafisários.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.4, pp. 42 e 44) define: **A** simples (A1 espiral, A2 oblíqua de 30 graus ou mais, A3 transversa, menos de 30 graus); **B** em cunha, com contato entre os fragmentos principais; **C** multifragmentar, sem contato (C2 segmentar com fragmento intermediário intacto, C3 segmentar fragmentada).\n\n**Strain é deformação dividida.** Strain é Δl/l, a deformação relativa do tecido no gap (AO, cap. 1.2, p. 18). O mesmo movimento entre os fragmentos principais se concentra num único gap na fratura simples e se reparte entre vários gaps na multifragmentar (AO, cap. 1.2, p. 19). Quanto mais traços, menor a deformação de cada um.\n\n**Ordenando as opções.** A3, transversa, é a pior: traço único e curto, toda a deformação num gap estreito. A2 é um traço único mais longo, ainda simples. C2 tem dois traços, separados por um fragmento intacto: divide o movimento em dois. **C3** tem muitos traços, porque o segmento intermediário também está fragmentado: é a que mais divide o movimento e, portanto, a de **menor strain**, a candidata natural à estabilidade relativa, com haste ou placa em ponte.\n\nO strain está na seção \"Por que a fratura simples e a multifragmentar se comportam diferente\" do resumo.",
+  "correta": "**D) C3.** A segmentar fragmentada tem o maior número de traços para dividir o movimento entre os fragmentos principais, e por isso o menor strain.",
   "incorretas": {
-   "A": "A A2 é uma fratura simples oblíqua, com uma só fenda e deformação alta.",
-   "B": "A A3 é uma fratura simples transversa, também com deformação alta.",
-   "C": "A C2 é segmentar, com duas fendas principais, e tem deformação maior que a C3."
+   "A": "**A2** é oblíqua simples: um traço único, que recebe todo o movimento; tem strain alto e pede estabilidade absoluta.",
+   "B": "**A3** é transversa, o pior cenário: traço único e curto, com a maior deformação relativa entre as opções.",
+   "C": "**C2** tem dois traços com um segmento intacto no meio; divide o movimento por dois, mas menos que a C3, em que o segmento também está fragmentado."
   },
-  "conceito": "**Perren** explicou que a consolidação depende da **deformação** (*strain*) no foco da fratura: o quanto o espaço entre os fragmentos varia, dividido pelo tamanho desse espaço. O osso só se forma onde a deformação é pequena.\n\nNa classificação AO das fraturas da diáfise, as letras indicam a complexidade:\n\n**Tipo A**: fraturas **simples**, com um único traço (A1 em espiral, A2 oblíqua, A3 transversa).\n\n**Tipo B**: fraturas em **cunha**.\n\n**Tipo C**: fraturas **multifragmentárias** (C2 segmentar, C3 com muitos fragmentos irregulares).\n\nNuma fratura **simples**, há uma única fenda estreita. Qualquer pequeno movimento representa uma variação grande em relação a esse espaço pequeno: a deformação é **alta**. Por isso, essas fraturas precisam de estabilidade absoluta.\n\nNuma fratura **multifragmentária complexa** (C3), o movimento total se divide entre muitas fendas, entre muitos fragmentos. Em cada uma, a deformação é **baixa**. Por isso, essas fraturas toleram estabilidade relativa, como a placa em ponte ou a haste, e consolidam com calo.\n\nA fratura **segmentar** (C2) tem duas fendas principais, então a deformação já é menor que na simples, mas ainda maior que na C3, que tem muitas.",
-  "correta": "C3. Com muitos fragmentos, o movimento se divide entre várias fendas, e a deformação em cada uma é a menor.",
   "referencias": [
-   "AO Principles of Fracture Management, 2nd Ed., p. 22 (referência indicada na prova TARO 2013, questão 30)"
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.2, pp. 18 e 19; cap. 1.4, pp. 42 e 44",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0281": {
@@ -3396,33 +3382,40 @@
   "conferido": false
  },
  "conceitos-basicos-0289": {
+  "conceito": "Biofilme é a palavra que explica por que a infecção em torno de um implante é tão difícil de curar só com antibiótico. A questão pede a definição mais precisa.\n\n**Como ele se forma.** Logo após a cirurgia, proteínas do hospedeiro cobrem o implante e favorecem a adesão bacteriana. Na \"corrida pela superfície\", as bactérias aderidas produzem um **glicocálice de exopolissacarídeos** e, em poucas horas, passam a se comportar como um organismo multicelular (AO Principles of Fracture Management, 3ª ed. (2017), cap. 5.3, p. 529). O AO (p. 530) define o biofilme como micro-organismos que vivem **em aglomerados numa matriz hidratada aderida a uma superfície**: são as bactérias **sésseis**, em oposição às planctônicas, que nadam livres.\n\n**Por que importa.** Dentro do biofilme, as bactérias ficam **até 1.000 vezes mais resistentes** às defesas e aos antibióticos (AO, cap. 5.3, p. 532). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 841 aprox.) estima que até 65% das infecções ortopédicas são causadas por germes produtores de biofilme. É por isso que infecções tardias muitas vezes exigem retirar ou trocar o implante.\n\n**O que biofilme não é.** Não é uma espécie de germe: estafilococos sensíveis, resistentes, coagulase-negativos e Gram-negativos podem formá-lo. E não é um fenômeno do metal: corrosão, debris e metalose são problemas do implante, sem bactéria.\n\nO biofilme está na seção \"Infecção após osteossíntese\" do resumo.",
+  "correta": "**A) comunidade de bactérias sésseis com glicocálix.** É a definição do AO: aglomerados aderidos a uma superfície, envoltos em matriz de exopolissacarídeos.",
   "incorretas": {
-   "B": "**Estafilococo resistente à meticilina é um agente possível, não a definição.** Uma colônia de MRSA pode formar biofilme, assim como estafilococos sensíveis e outras bactérias. Resistência à meticilina é uma propriedade genética avaliada no antibiograma; tolerância dentro do biofilme é um fenômeno ligado à organização, à matriz e ao estado metabólico. Confundir os dois levaria a excluir incorretamente biofilme quando o microrganismo é sensível.",
-   "C": "**Corrosão e detritos descrevem desgaste ou degradação do material.** Partículas e alterações da superfície podem participar de reações locais e interagir com microrganismos, mas não formam por si uma comunidade séssil encapsulada em matriz. Se a pergunta investigasse falha do implante ou reação a detritos, a corrosão mereceria análise; para definir a estrutura bacteriana persistente, não serve.",
-   "D": "**Metalose é reação a partículas metálicas, sem exigir bactérias.** O tecido pode apresentar pigmentação e inflamação por produtos de desgaste, sobretudo em certos cenários de artroplastia. Isso é diferente de biofilme, que pressupõe microrganismos aderidos e matriz produzida pela comunidade. Ambas podem envolver implantes, mas o mecanismo e a investigação microbiológica não são equivalentes."
+   "B": "**Colônia de estafilococos meticilina-resistentes** confunde o biofilme com um germe; a resistência do biofilme vem da matriz e da vida séssil, não de uma espécie específica.",
+   "C": "**Corrosão induzida por debris** é um fenômeno do metal, como a corrosão em fenda do aço e o fretting entre componentes; não envolve bactéria.",
+   "D": "**Metalose por resposta imunológica** descreve reação a partículas metálicas no tecido, sem micro-organismo; o biofilme é, por definição, uma comunidade bacteriana."
   },
-  "conceito": "**Biofilme é um modo de vida, não uma espécie bacteriana.** Bactérias livres no líquido são chamadas planctônicas. Ao aderirem à superfície de uma placa, haste ou parafuso, podem formar uma comunidade séssil e produzir matriz extracelular de polissacarídeos, proteínas e DNA. Essa matriz, tradicionalmente chamada glicocálix, envolve as células e ajuda a manter a estrutura aderida. A opção A descreve essa organização; o metal é um possível suporte, não parte obrigatória da definição.\n\n**Por que a infecção persiste.** A matriz dificulta a ação das defesas e cria microambientes com disponibilidade desigual de nutrientes. Parte das bactérias cresce lentamente ou entra em estado de tolerância, no qual antibióticos ativos contra microrganismos em multiplicação podem funcionar menos. Isso não significa que todas carreguem um gene de resistência: um estafilococo sensível no antibiograma pode ser difícil de erradicar quando protegido em biofilme. Bactérias podem se desprender e voltar à forma planctônica, contribuindo para recorrência.\n\n**O que isso muda na osteossíntese.** Infecção relacionada à fratura exige pensar ao mesmo tempo em controle microbiológico, desbridamento, cobertura de partes moles, estabilidade e consolidação. A decisão de reter ou trocar o implante depende de tempo de sintomas, estabilidade da fixação, viabilidade tecidual, possibilidade de desbridamento e antimicrobianos ativos contra biofilme. Não se deve reduzir toda infecção precoce a retenção nem toda tardia a retirada imediata: remover uma fixação antes de garantir estabilidade pode comprometer a união óssea.",
-  "correta": "**Comunidade de bactérias sésseis com glicocálix é a resposta provável pela bibliografia.** Aderência, vida em comunidade e matriz extracelular definem o biofilme melhor que a espécie ou a resistência de uma bactéria isolada. Como não há gabarito oficial localizado para esta questão, A permanece indicada como provável, sem entrar no cálculo do desempenho.",
   "referencias": [
-   "Depypere M et al. Recommendations for Systemic Antimicrobial Therapy in Fracture-Related Infection. J Orthop Trauma, 2020. https://pmc.ncbi.nlm.nih.gov/articles/PMC6903362/"
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 5.3, pp. 529 a 532",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, p. 841 aprox.",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
+  "alerta": "Questão sem gabarito oficial. O AO Principles of Fracture Management sustenta a definição de comunidade de bactérias sésseis com glicocálice, a mesma resposta da bibliografia indicada pela prova; a letra A é a provável.",
   "provavel": "A",
-  "geradoEm": "2026-10-10",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0290": {
+  "conceito": "O arrancamento é a falha em que o parafuso sai do osso puxado ao longo do próprio eixo, levando a rosca com o osso que ela segurava. Para saber o que aumenta essa resistência, basta imaginar o que se rompe.\n\n**O cilindro de osso.** Quando o parafuso é arrancado, ele cisalha um cilindro de osso ao redor da rosca. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 423 aprox.) lista o que aumenta a força de arrancamento: **maior diâmetro do parafuso, mais roscas por comprimento, maior comprimento inserido e maior densidade óssea**. Diâmetro e comprimento definem a superfície desse cilindro: quanto maior a superfície, mais força para cisalhá-la. O macheamento em osso esponjoso reduz o arrancamento em 8% a 27%.\n\n**O papel do núcleo.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2542) diz que, quando o problema é arrancamento em osso mole, se prefere uma **rosca de diâmetro maior**; quando é fadiga em osso forte, um parafuso de raiz (núcleo) mais larga. O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 3.2.1, p. 183) completa: os parafusos resistem bem ao arrancamento axial e mal à flexão, por causa do núcleo pequeno, e 30% a mais de núcleo triplica a resistência à flexão.\n\n**Os distratores.** O passo maior significa menos roscas por comprimento, o contrário do que ajuda. A cabeça serve para não afundar no córtex (para isso existe a arruela) e não participa do cilindro arrancado. E a parte lisa do parafuso de tração parcialmente rosqueado é justamente a que desliza sem pegar no osso.\n\nO tema está na seção \"Força de arrancamento\" do resumo.",
+  "correta": "**B) diâmetro da rosca do parafuso.** O diâmetro externo define a superfície do cilindro de osso cisalhado no arrancamento; quanto maior, maior a força necessária.",
   "incorretas": {
-   "A": "**O passo da rosca tem efeito, mas não proporcionalidade direta simples.** Diminuir a distância entre filetes pode aumentar o número de voltas engajadas e modificar o fator de forma; profundidade e qualidade do osso interagem com esse efeito. Em determinados desenhos, um passo diferente melhora a fixação. A frase da alternativa, porém, afirma que aumentar o passo aumenta diretamente o arrancamento, o que não decorre do modelo experimental citado.",
-   "C": "**A cabeça transmite carga e compressão ao fragmento próximo.** Seu tamanho e uma eventual arruela podem distribuir pressão e evitar afundamento em osso frágil. Se a falha for o afundamento da cabeça, esse detalhe importa muito. No arrancamento axial da rosca do fragmento distante, porém, o diâmetro da cabeça não aumenta a superfície óssea cisalhada ao redor dos filetes.",
-   "D": "**A haste lisa deve deslizar no fragmento próximo para que o parafuso funcione como tração.** Seu diâmetro participa da resistência mecânica da haste e do dimensionamento do orifício, mas a região sem rosca não se ancora no osso como fazem os filetes do fragmento distante. Aumentá-la isoladamente não estabelece a relação de resistência ao arrancamento pedida."
+   "A": "**Passo da rosca** age ao contrário: passo maior quer dizer menos roscas por comprimento, e o Rockwood põe mais roscas por comprimento entre os fatores que aumentam o arrancamento.",
+   "C": "**Tamanho da cabeça** evita que o parafuso afunde no córtex próximo, papel da arruela em osso fino; não muda o osso que a rosca segura do outro lado.",
+   "D": "**Diâmetro da superfície lisa** é a parte do parafuso de tração que desliza no fragmento próximo sem pegar; ela não ancora nada."
   },
-  "conceito": "**A força que arranca o parafuso rompe o osso ao redor da rosca.** No ensaio de arrancamento axial, o parafuso é tracionado até as roscas cisalharem o material em que se apoiam. Mantidos os outros fatores constantes, aumentar o diâmetro externo, medido de crista a crista, amplia a circunferência de osso mobilizada. O comprimento rosqueado efetivamente engajado e a resistência ao cisalhamento do osso também influenciam a força final. Isso explica por que a alternativa B é a relação direta procurada.\n\n**A geometria inteira importa.** O diâmetro do núcleo é menor que o externo e se relaciona com a resistência do próprio parafuso à flexão e à quebra. A profundidade e o passo, distância axial entre voltas sucessivas, alteram o formato da rosca e a quantidade de osso entre seus filetes. Em ensaio experimental com parafusos esponjosos, Chapman e colaboradores encontraram influência do diâmetro maior, comprimento engajado, resistência do material e fator de forma que inclui profundidade e passo. Portanto, não é correto dizer que o passo seja irrelevante; apenas não há proporcionalidade direta simples do tipo enunciado na opção A.\n\n**Parafuso de tração não significa rosca nos dois fragmentos.** Para criar compressão interfragmentária, a rosca precisa agarrar o fragmento distante enquanto a parte próxima permite deslizamento, seja por haste lisa de um parafuso parcialmente rosqueado, seja por orifício alargado. Ao apertar, a cabeça empurra o fragmento próximo em direção ao distante. Se a rosca prender ambos, pode manter o afastamento; se não prender osso suficiente no fragmento distante, pode arrancar antes de gerar compressão adequada.",
-  "correta": "**Diâmetro externo da rosca é a resposta provável pela bibliografia.** Com os demais parâmetros comparáveis, uma rosca mais larga mobiliza maior perímetro de osso contra a força axial de arrancamento. A relação não dispensa avaliar densidade óssea, comprimento engajado e desenho dos filetes. Não foi localizado gabarito oficial para esta questão, por isso B permanece provável e não compõe o desempenho.",
   "referencias": [
-   "Chapman JR et al. Factors affecting the pullout strength of cancellous bone screws. J Biomech Eng, 1996. https://pubmed.ncbi.nlm.nih.gov/8872262/"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 423 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 58, p. 2542",
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.1, p. 183",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
+  "alerta": "Questão sem gabarito oficial. O Rockwood and Green's Fractures in Adults, 10ª ed., sustenta B (diâmetro do parafuso), a mesma resposta da bibliografia indicada pela prova. O Campbell's Operative Orthopaedics, 15ª ed., na mesma página em que recomenda rosca de diâmetro maior contra o arrancamento, escreve que a área da raiz determina essa resistência; a letra B é a provável.",
   "provavel": "B",
-  "geradoEm": "2026-10-10",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0291": {
@@ -5201,19 +5194,21 @@
   "conferido": false
  },
  "conceitos-basicos-0410": {
+  "conceito": "A questão mostra o desenho de um parafuso com quatro medidas marcadas e pede a alma. Alma é o nome em português para o núcleo (core): o cilindro central de metal, sem rosca.\n\n**A imagem.** Parafuso visto de lado, com cabeça arredondada em cima e a ponta entrando num bloco de osso esponjoso, onde o orifício já está rosqueado. **A**, logo abaixo da cabeça, são duas linhas verticais encostadas no fundo das roscas: medem o diâmetro do corpo entre as raízes, sem as cristas. **B**, um pouco abaixo, são colchetes mais afastados que alcançam as pontas das roscas: o diâmetro externo. **C** é uma seta vertical vermelha entre duas cristas vizinhas: a distância ao longo do eixo, o passo. **D** é um círculo em volta do perfil de um filete: a forma da rosca.\n\n**O que o livro chama de cada parte.** O AO Principles of Fracture Management, 3ª ed. (2017) (cap. 3.2.1, p. 173) descreve o **núcleo** (a alma), que dá a resistência; a **rosca**, que prende no osso; a ponta; a cabeça; e o encaixe. No cortical de 4,5 mm, o núcleo tem 3 mm, a rosca 4,5 mm e o passo 1,75 mm; a broca do orifício-piloto tem o diâmetro do núcleo, e o nome do parafuso vem do diâmetro da rosca (p. 174).\n\n**Por que importa.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 12, p. 400 aprox.) diz que o diâmetro interno determina a resistência à flexão; o AO (p. 183) mede que 30% a mais de núcleo triplica essa resistência. Por isso o parafuso bloqueado tem núcleo maior e rosca rasa (p. 177).\n\nA anatomia do parafuso está na seção \"O que é um parafuso\" do resumo.",
+  "correta": "**A) A.** A marca A mede o diâmetro entre as raízes da rosca, sem incluir as cristas: é a alma, o núcleo que corresponde à broca do orifício-piloto.",
   "incorretas": {
-   "B": "**B mede o diâmetro externo.** Essa medida inclui as cristas da rosca e seria pertinente para caracterizar a largura total ou planejar um orifício de deslizamento, não para nomear a alma.",
-   "C": "**C representa uma distância ao longo do eixo entre filetes.** Essa medida se relaciona ao passo da rosca, enquanto a alma é um diâmetro transversal do núcleo.",
-   "D": "**D destaca um elemento do perfil do filete.** O detalhe pode ajudar a discutir forma e ancoragem da rosca, mas não delimita a seção central do parafuso indicada por A."
+   "B": "**B** alcança as cristas dos filetes: é o diâmetro externo da rosca, que dá o nome ao parafuso (4,5 mm), e não o núcleo (3 mm).",
+   "C": "**C** é uma medida no sentido do eixo, entre duas cristas vizinhas: o passo, que no cortical de 4,5 mm é 1,75 mm.",
+   "D": "**D** destaca o perfil de um filete, a forma e a profundidade da rosca, que influenciam a pega no osso e o torque de espanamento, não o núcleo."
   },
-  "alerta": "Não há gabarito oficial disponível para esta questão. A letra A é a identificação provável da alma na imagem e não deve contar no desempenho como acerto ou erro oficial.",
-  "conceito": "**A alma é o núcleo central do parafuso.** Na figura, a marca A mede a largura do corpo entre as raízes da rosca, excluindo as cristas dos filetes. É a seção contínua de metal que permanece mesmo onde a rosca se aprofunda. Esse diâmetro não deve ser confundido com o tamanho externo usado para nomear comercialmente o parafuso.\n\n**As outras marcas mostram outra geometria.** B alcança as cristas e representa o diâmetro externo. C indica uma medida longitudinal entre filetes, relacionada ao passo. D aponta um detalhe localizado do perfil da rosca. Nenhuma dessas marcas mede a largura do núcleo que a pergunta chama de alma.\n\n**A distinção tem consequência mecânica e técnica.** A alma participa da resistência do parafuso à flexão e à torção; a rosca externa determina o contato com o osso. Ao preparar um parafuso de tração, o fragmento próximo precisa permitir deslizamento, enquanto a rosca ancora no fragmento distante. Os diâmetros das brocas devem seguir o sistema do implante, não uma estimativa visual do desenho.",
-  "correta": "**A marca A delimita o diâmetro da alma.** Ela atravessa o núcleo entre as raízes da rosca, sem incluir as cristas dos filetes; a identificação é provável na ausência de chave oficial.",
   "referencias": [
-   "AO Surgery Reference. Cortical lag screw insertion. https://surgeryreference.aofoundation.org/orthopedic-trauma/basic-technique/cortical-lag-screws"
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.2.1, pp. 173, 174, 177 e 183",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 12, p. 400 aprox.",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
   ],
+  "alerta": "Questão sem gabarito oficial. Pela figura, a marca A mede o núcleo entre as raízes da rosca, que é a alma descrita pelo AO Principles of Fracture Management; a letra A é a provável.",
   "provavel": "A",
-  "geradoEm": "2026-10-16",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "conceitos-basicos-0411": {
