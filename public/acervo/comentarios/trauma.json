@@ -44483,70 +44483,70 @@
   }
  },
  "trauma-1721": {
-  "incorretas": {
-   "B": "**Mistura três regiões.** Os lumbricais são centrais, os interósseos palmares ficam junto aos metacarpais e o adutor do polegar possui espaço próprio nessa divisão. A associação não descreve um compartimento único.",
-   "C": "**Os interósseos não são o conteúdo pedido do plano tendíneo central.** Os palmares e dorsais ocupam os intervalos metacarpais; os lumbricais acompanham os flexores no centro da palma.",
-   "D": "**Reúne estruturas profundas, mas omite o plano central.** Interósseos palmares e dorsais e adutor do polegar são grupos relevantes na avaliação do esmagamento, porém separados do conjunto de lumbricais e tendões flexores perguntado.",
-   "E": "**Acerta os dois conjuntos de tendões, mas troca lumbricais por interósseos palmares.** A origem dos lumbricais nos tendões profundos ajuda a localizar por que eles pertencem à resposta."
-  },
+  "conceito": "A mão esmagada é o caso em que um intrínseco pode sofrer em silêncio. O Green lista os compartimentos da mão na mesma tabela do antebraço (7ª ed., cap. 51, Tabela 51.4, p. 1768): **tenar, hipotenar, adutor do polegar, interósseos dorsais (4) e interósseos volares (3)**. Os dedos não são um compartimento verdadeiro, mas têm um epimísio grosso que pode precisar de descompressão.\n\nAgora repare no que a questão pergunta: o compartimento **central palmar**. Ele não está nessa lista de compartimentos musculares porque, em boa parte, é o local de passagem dos tendões. Entre a eminência tenar e a hipotenar, na palma, correm os tendões do flexor superficial e do profundo, e os lumbricais nascem justamente do profundo. Por isso, as três estruturas andam juntas. Os interósseos e o adutor, mais profundos, formam compartimentos próprios.\n\n**Como reconhecer a síndrome?** Na mão, a pista é a dor ao esticar os intrínsecos: metacarpofalângicas estendidas e interfalângicas fletidas, a mesma posição do teste de BUNNELL (Green, 7ª ed., cap. 10). Para a descompressão, o Green diz que o dorso do antebraço e os compartimentos da mão pedem incisões separadas (cap. 51, p. 1769). Um esquecimento comum é confiar na incisão palmar e não abrir os interósseos pelo dorso.",
+  "correta": "**A: lumbricais, tendões flexores superficiais e tendões flexores profundos dos dedos.** São as estruturas que ocupam a palma, entre as eminências. Os lumbricais nascem do flexor profundo, e os interósseos e o adutor têm compartimentos próprios (Green, 7ª ed., cap. 51, Tabela 51.4, p. 1768).",
   "alerta": "O gabarito oficial é A. A nomenclatura dos compartimentos da mão não é uniforme entre as fontes: algumas agrupam músculos intrínsecos de modo diferente. Nesta questão, \"central palmar\" designa o plano dos tendões flexores e lumbricais, enquanto interósseos e adutor do polegar são tratados como compartimentos separados.",
+  "incorretas": {
+   "B": "**Só o lumbrical está certo.** Interósseos palmares e adutor do polegar têm compartimentos próprios na tabela do Green (cap. 51, p. 1768).",
+   "C": "**Mistura de planos.** Os interósseos palmares e dorsais ficam entre os metacarpos, em compartimentos separados, e só os lumbricais estão na região central (Green, cap. 51, p. 1768).",
+   "D": "**Lista de compartimentos, mas não do central.** Os três existem na tabela do Green, cada um como compartimento próprio (cap. 51, p. 1768), o que torna a alternativa enganosa. Eles não formam o compartimento perguntado.",
+   "E": "**Quase.** Os flexores estão certos, mas os interósseos palmares ficam em compartimento próprio. Para fechar a resposta, a estrutura que anda com os tendões é o lumbrical."
+  },
   "referencias": [
-   "Mayo Clinic, Orthopedic Emergencies, corte transversal da mão (2023): https://ce.mayo.edu/sites/default/files/media/2023-10/23_Wilke_Orthopedic_Emergencies_CA.pdf",
-   "AO Surgery Reference, Compartment syndrome in the hand: https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/further-reading/compartment-syndrome-hand"
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 51, Tabela 51.4, p. 1768 e 1769; cap. 10"
   ],
-  "conceito": "**No esmagamento da mão, a pressão pode subir em espaços anatômicos distintos.** A palma central abriga o trajeto dos tendões flexores superficial e profundo dos dedos e os lumbricais, pequenos músculos que nascem dos tendões do flexor profundo e seguem para o aparelho extensor. Em planos separados ficam os interósseos entre os metacarpais e o adutor do polegar, mais radial e profundo.\n\nEssa distinção não é apenas um exercício de nomes: uma incisão que libera um espaço pode não descomprimir os demais. Dor desproporcional, tensão local e dor ao alongar passivamente a musculatura exigem avaliação urgente; a presença de pulso não exclui síndrome compartimental. No caso, a pergunta pede reconhecer quais estruturas compartilham o plano central palmar adotado pela banca, sem inferir que o restante da mão está protegido.",
-  "correta": "**A: lumbricais e tendões flexores superficial e profundo.** Os lumbricais se relacionam diretamente aos tendões do flexor profundo no centro da palma, e ambos os conjuntos de tendões atravessam esse plano. É o agrupamento que corresponde ao compartimento central empregado na questão.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1722": {
+  "conceito": "O paciente instável não aguenta uma cirurgia longa. Essa é a ideia central. O Rockwood lembra que, passado um limiar, pode surgir uma inflamação sistêmica grave: doentes muito traumatizados, com hemorragia maciça, podem entrar em SIRS, associada à falência múltipla de órgãos e à morte, e a fixação da fratura contribui para essa segunda resposta em quem está mal reanimado (cap. 14). Daí nasceu a expressão **controle de danos em ortopedia**: a fixação externa do fêmur, com pouco tempo cirúrgico e pouco sangramento (cap. 14).\n\nCom isso, dá para separar o que não pode esperar do que pode:\n\n| Na urgência | Depois da melhora fisiológica |\n|---|---|\n| Revascularização: membro sem sangue tem relógio | Placa ou haste definitiva |\n| Fasciotomia: compartimento apertado também tem relógio | Fixação ventral da coluna, cirurgia longa |\n| Fixação externa: estabiliza, com pouca agressão | Reconstruções |\n\nVale uma ressalva do próprio Rockwood: a experiência de grandes centros mostra que muitos pacientes com fratura do fêmur podem ser reanimados na chegada e receber a fixação definitiva cedo. Ou seja, o que manda é a fisiologia, e não só o tipo de fratura. Mas o enunciado diz \"instável\", e isso resolve a questão.",
+  "correta": "**C: revascularizações, fixação externa de ossos longos e fasciotomias.** São procedimentos rápidos, que salvam a vida ou o membro, sem o segundo golpe de uma cirurgia longa (Rockwood, cap. 14).",
   "incorretas": {
-   "A": "**A fixação definitiva é o ponto inadequado.** Revascularização e fasciotomia podem ser urgentes, mas uma osteossíntese longa eleva a carga fisiológica num paciente hemodinamicamente instável.",
-   "B": "**Inclui duas etapas geralmente postergadas.** Fixação definitiva de osso longo e abordagem ventral vertebral extensa não compõem o pacote inicial de controle de danos para o choque, embora possam ser indicadas após estabilização.",
-   "D": "**Fasciotomia e fixação externa são plausíveis, mas a fixação ventral vertebral não é a resposta inicial habitual.** Lesão medular ou instabilidade espinal exige proteção e avaliação especializada, sem converter automaticamente uma reconstrução ventral longa em cirurgia imediata durante choque.",
-   "E": "**Troca prioridades de controle de danos por duas cirurgias definitivas.** O fixador externo é temporário; reconstrução ventral e osteossíntese definitiva aguardam condições clínicas mais seguras, salvo necessidade excepcional individualizada."
+   "A": "**A fixação definitiva derruba.** Haste ou placa aumentam o tempo cirúrgico e o sangramento, e o Rockwood mostra o risco disso no doente mal reanimado (cap. 14). As outras duas estão certas.",
+   "B": "**Dois itens demorados.** Fixação definitiva e fixação ventral da coluna são grandes cirurgias. Não cabem no doente que está instável.",
+   "D": "**A coluna derruba.** A fixação externa e a fasciotomia estão certas, mas a via ventral da coluna é um procedimento longo, para depois da reanimação.",
+   "E": "**Só uma certa.** Apenas a fixação externa pertence ao controle de danos. As outras duas são justamente o que se adia."
   },
   "referencias": [
-   "Orthopaedic traumatology: fundamental principles and current controversies for the acute care surgeon (2018): https://pmc.ncbi.nlm.nih.gov/articles/PMC5887772/",
-   "Roles of Trauma CT and CTA in Salvaging the Threatened or Mangled Extremity (2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC8906352/"
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 14 (Politrauma), seção sobre SIRS e controle de danos ortopédico",
+   "Orthopaedic traumatology: principles and controversies for the acute care surgeon, PMC5887772"
   ],
-  "conceito": "**No politrauma instável, a primeira operação deve salvar a vida e o membro sem acrescentar uma agressão cirúrgica longa.** O controle de danos ortopédico estabiliza temporariamente fraturas de ossos longos, com frequência por fixador externo. Se há isquemia de extremidade, a reperfusão não pode esperar a osteossíntese definitiva; quando há síndrome compartimental, a fasciotomia precisa ser feita prontamente. A sequência exata entre estabilização e reparo vascular depende da lesão, do tempo de isquemia e da possibilidade de usar um desvio vascular temporário.\n\nPlacas ou hastes definitivas e reconstrução ventral de fratura vertebral podem ser necessárias depois, mas geralmente são adiadas até a ressuscitação e a melhora fisiológica. O objetivo é limitar tempo operatório, sangramento e o chamado segundo impacto inflamatório em quem já está em choque.",
-  "correta": "**C: revascularização, fixação externa e fasciotomia.** São intervenções que podem ser urgentes em um paciente instável: restauram fluxo, estabilizam rapidamente o osso e aliviam pressão muscular ameaçadora. A indicação concreta de cada uma depende das lesões presentes; a alternativa não afirma que todo politraumatizado precisa das três.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1723": {
-  "incorretas": {
-   "A": "**Milch** é empregado nas fraturas do côndilo lateral do úmero, considerando a relação do traço com a tróclea. Não classifica o cisalhamento articular isolado do capítulo descrito aqui.",
-   "B": "**Mason** organiza as fraturas da cabeça do rádio, no lado oposto da articulação radiocapitelar. A queda pode produzir lesões em ambas as superfícies, mas a questão localiza a fratura no úmero.",
-   "C": "**Riseborough e Radin** se aplica às fraturas intercondilianas do úmero distal, cujo traço separa as colunas e envolve a região troclear. Não é o epônimo do pequeno fragmento de cisalhamento capitellar.",
-   "E": "**Salter-Harris** descreve o trajeto de uma fratura em relação à fise. Aos 15 anos uma lesão fisária ainda pode ser relevante dependendo da maturidade esquelética, mas o enunciado não descreve acometimento da placa de crescimento; identifica uma fratura do capítulo."
-  },
+  "conceito": "Fratura do capítulo umeral em adolescente: um pedaço da frente do cotovelo sai, em um plano coronal, e pode ser difícil de ver na radiografia em AP. O problema é o bloqueio: o fragmento sobe para a fossa radial e impede a flexão.\n\nO Rockwood conta a história dos nomes (cap. 39). A fratura **HAHN-STEINTHAL**, ou tipo I convencional, tem a superfície articular do capítulo com o osso subcondral, ou seja, um fragmento grosso. A **KOCHER-LORENZ**, ou tipo II, é rara e tem a superfície articular com uma **fina camada** de osso. BRYAN e MORREY modificaram o esquema e acrescentaram o tipo III, cominutivo. Portanto, o nome da banca não é um sistema inteiro, mas um dos padrões da classificação, como explica o alerta.\n\n**E as outras?** Todas são nomes reais de classificações do cotovelo e arredores, cada uma para uma lesão diferente. Essa é a pegadinha: quem lembra só de \"cotovelo\" não distingue. Vale aprender o par nome e osso, porque o tratamento varia: o fragmento grosso, em geral, é fixado; o muito fino, sem osso que segure um parafuso, costuma ser retirado.",
+  "correta": "**D: Kocher e Lorenz.** É o nome dado ao padrão de fratura do capítulo com fina camada de osso subcondral, tipo II no sistema convencional (Rockwood, cap. 39).",
   "alerta": "O gabarito oficial é D, mas a redação chama Kocher-Lorenz de “método de classificação”. Kocher-Lorenz designa um padrão de fratura do capítulo (tipo II de Bryan-Morrey), não o nome do sistema completo. Sem imagem ou descrição do fragmento, também não é possível atribuir esse tipo específico à fratura do paciente.",
+  "incorretas": {
+   "A": "**Côndilo, não capítulo.** MILCH classifica as fraturas do côndilo lateral na criança, conforme o traço em relação à tróclea.",
+   "B": "**Cabeça do rádio.** MASON é o nome da classificação dessa fratura, na outra metade da articulação.",
+   "C": "**Intercondilar.** RISEBOROUGH e RADIN classificam as fraturas em T ou em Y do úmero distal.",
+   "E": "**Só em fise.** SALTER-HARRIS descreve o caminho do traço pela cartilagem de crescimento e não diz nada sobre esse fragmento do capítulo."
+  },
   "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 39",
    "Coronal Shear Fractures of the Distal Humerus: A Review of Diagnosis, Treatment, and Outcomes. Journal of Shoulder and Elbow Surgery International, 2021. Seção Classification. https://pmc.ncbi.nlm.nih.gov/articles/PMC8461205/",
    "Management and outcomes of capitellum fractures in adolescents: A case series and review of the literature. Journal of Orthopaedic Surgery and Research, 2025. Seção Classification. https://pmc.ncbi.nlm.nih.gov/articles/PMC12051655/"
   ],
-  "conceito": "O capítulo é a superfície articular lateral do úmero distal que recebe a cabeça do rádio. Uma queda sobre a mão pode transmitir força axial pelo rádio e cisalhar a superfície anterior do capítulo. O tamanho do fragmento importa: um bloco com osso subcondral permite estratégias de fixação diferentes das de uma lâmina predominantemente cartilaginosa. A radiografia lateral sugere o plano do cisalhamento; a tomografia ajuda quando é preciso delimitar a extensão à tróclea e a cominuição.\n\nNa classificação **Bryan-Morrey**, o tipo I, chamado Hahn-Steinthal, é um fragmento osteocondral maior; o tipo II, chamado **Kocher-Lorenz**, é uma lâmina articular com pouca ou nenhuma porção de osso subcondral; o tipo III é cominuto. A modificação de McKee acrescenta o tipo IV quando o traço se prolonga medialmente para a tróclea. Assim, Kocher-Lorenz é um epônimo de **padrão dentro de uma classificação**, não uma classificação autônoma. O caso informa apenas “fratura do capítulo”, sem caracterizar o fragmento. Isso permite escolher o epônimo relacionado à estrutura entre as opções, mas não diagnosticar um tipo II nesse adolescente.\n\nOutro cuidado é separar capítulo umeral de côndilo lateral: ambos ficam no úmero distal, porém seus esquemas classificatórios descrevem lesões anatômicas diferentes.",
-  "correta": "**D: Kocher e Lorenz.** É o único epônimo apresentado que se refere a uma fratura do capítulo umeral. Mais precisamente, corresponde ao tipo II da classificação de Bryan-Morrey, com fragmento predominantemente cartilaginoso. O enunciado não fornece imagem ou morfologia suficiente para afirmar que este paciente tem justamente esse tipo.",
-  "geradoEm": "2026-11-01",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1724": {
-  "incorretas": {
-   "B": "**Troca o componente energético por \"distúrbios emocionais\".** Saúde mental pode influenciar alimentação e treinamento, mas não substitui baixa disponibilidade energética ou comportamento alimentar alterado como componente da tríade.",
-   "C": "**Não reúne nenhum dos três componentes clássicos.** Polimenorreia significa ciclos frequentes, não a disfunção por supressão hormonal típica da tríade, e aumento muscular não é o marcador ósseo.",
-   "D": "**Acerta o eixo dietético, mas erra os outros dois.** Ciclos frequentes e ganho de musculatura não equivalem à amenorreia ou à baixa massa óssea da formulação histórica.",
-   "E": "**Acerta alimentação e amenorreia, mas não o terceiro componente.** O risco relevante é perda de saúde óssea e fratura por estresse, não aumento da musculatura."
-  },
+  "conceito": "Uma adolescente que se machuca toda hora, com suspeita de fratura por estresse. O que perguntar? Quanto ela come e como está a menstruação. É isso que a **tríade da mulher atleta** liga: a energia que falta, o hormônio que cai e o osso que perde.\n\nO raciocínio vai em cadeia. A atleta treina mais do que repõe pela alimentação. Com pouca energia disponível, o eixo hormonal se altera, e os ciclos ficam irregulares ou param. Sem estrogênio, o osso perde a sua proteção, e a densidade cai. A fratura por estresse é a consequência visível. A formulação clássica de prova é **distúrbio alimentar, amenorreia e osteoporose**.\n\nHoje, porém, o quadro é visto como um espectro. O American College of Sports Medicine e as revisões atuais falam em baixa disponibilidade energética, com ou sem transtorno alimentar, em disfunção menstrual e em baixa densidade óssea (PMC8702454). Assim, a menina não precisa de amenorreia completa nem de osteoporose estabelecida para merecer atenção. Em quem tem 14 anos, isso é ainda mais grave, porque a adolescência é o período de ganho de massa óssea, e a perda pode não ser recuperada depois.",
+  "correta": "**A: distúrbios dietéticos, amenorreia e osteoporose.** É a formulação clássica, que liga a baixa energia, a disfunção menstrual e o osso (ACSM; PMC8702454).",
   "alerta": "O gabarito oficial A expressa a formulação histórica da tríade. A definição atual descreve um espectro de baixa disponibilidade energética, com ou sem transtorno alimentar, disfunção menstrual e baixa densidade mineral óssea; não exige amenorreia completa nem osteoporose estabelecida, especialmente em adolescente.",
+  "incorretas": {
+   "B": "**A mais próxima.** Acerta dois itens, mas \"distúrbios emocionais\" não é o primeiro elemento da tríade. O problema está na ingestão de energia, mesmo que haja um componente emocional.",
+   "C": "**Três erros.** A polimenorreia é o oposto da falta de ciclos, e o aumento da musculatura não define o quadro.",
+   "D": "**Acerta só a dieta.** A menstruação diminui, e não aumenta. E o terceiro item é o osso, e não o músculo.",
+   "E": "**Acerta dois e erra o último.** Ganho de massa muscular não entra na tríade. O elemento que fecha é a perda óssea, que explica a fratura por estresse."
+  },
   "referencias": [
-   "American College of Sports Medicine, The Female Athlete Triad: https://www.acsm.org/docs/default-source/files-for-resource-library/the-female-athlete-triad.pdf",
-   "The Female Athlete Triad: Review of Current Literature (2021): https://pmc.ncbi.nlm.nih.gov/articles/PMC8702454/"
+   "American College of Sports Medicine, The Female Athlete Triad",
+   "The Female Athlete Triad: Review of Current Literature, PMC8702454"
   ],
-  "conceito": "**Uma atleta pode treinar mais energia do que consegue repor pela alimentação.** A baixa disponibilidade energética altera o eixo hormonal e pode causar ciclos menstruais irregulares ou ausência de menstruação. Ao mesmo tempo, compromete a formação e manutenção óssea, elevando o risco de lesão por estresse. Essa ligação entre nutrição, menstruação e osso é o centro da tríade da mulher atleta.\n\nA fórmula clássica de prova era distúrbio alimentar, amenorreia e osteoporose. Na prática atual, o espectro começa antes desses extremos: pode haver restrição alimentar sem transtorno formal, oligomenorreia sem amenorreia e densidade óssea reduzida sem osteoporose. Em uma menina de 14 anos com lesões repetidas, reconhecer precocemente esse processo é mais útil do que esperar todos os três diagnósticos avançados.",
-  "correta": "**A: distúrbios dietéticos, amenorreia e osteoporose.** É a tríade clássica que a questão pede. O mecanismo comum é o déficit energético, que se associa à disfunção menstrual e ao prejuízo da saúde óssea; o alerta delimita a terminologia moderna.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1725": {
@@ -44565,20 +44565,19 @@
   "conferido": false
  },
  "trauma-1726": {
-  "incorretas": {
-   "A": "**O abdutor longo do polegar é dorsal profundo.** Pronador quadrado e flexor do carpo são volares, mas basta esse abdutor posterior para invalidar o trio.",
-   "B": "**Contém dois elementos de fora do plano volar.** O abdutor longo do polegar é dorsal e o braquiorradial integra o grupo lateral móvel, embora o pronador quadrado seja volar.",
-   "D": "**Flexor do carpo não torna volares os demais.** O abdutor longo do polegar ocupa o compartimento dorsal profundo; o braquiorradial, o lateral móvel.",
-   "E": "**Acerta o flexor profundo dos dedos e o flexor do carpo, mas inclui abdutor dorsal.** A alternativa C troca esse abdutor pelo pronador quadrado, que efetivamente está no volar profundo."
-  },
+  "conceito": "Um esmagamento do antebraço pede fasciotomia, e quem vai descomprimir precisa saber o que há em cada compartimento. O Green traz a tabela em uma página só, que vale guardar (7ª ed., cap. 51, Tabela 51.4, p. 1768):\n\n| Compartimento | Conteúdo |\n|---|---|\n| Volar superficial | flexor radial do carpo, palmar longo, pronador redondo, flexor ulnar do carpo, flexor superficial dos dedos |\n| Volar profundo | flexor profundo dos dedos, flexor longo do polegar, pronador quadrado, nervo e artéria interósseos anteriores |\n| Mobile wad | braquiorradial, extensores radiais longo e curto do carpo |\n| Dorsal | extensor dos dedos, extensor ulnar do carpo, extensor longo do polegar, abdutor longo do polegar e outros |\n\nCom ela, a questão fica fácil: **tudo o que flete e prona é volar**. A resposta precisa ter o pronador quadrado e o flexor profundo juntos, os dois no plano profundo, com um flexor do carpo do plano superficial. O nome \"flexor longo do carpo\" não existe na nomenclatura usual, como diz o alerta.\n\n**Por que o plano profundo importa?** Ele é o primeiro a sofrer. O flexor profundo e o flexor longo do polegar ficam junto ao osso, e a isquemia deles é o que produz a contratura de VOLKMANN. Por isso, a fasciotomia volar precisa abrir também a fáscia do plano profundo, com incisão que pode ir do braço até o túnel do carpo, e o dorso e a mão exigem incisões separadas (Green, 7ª ed., cap. 51, p. 1769).",
+  "correta": "**C: pronador quadrado, flexor longo do carpo, flexor profundo dos dedos.** Todos ficam no compartimento volar, e o pronador quadrado e o flexor profundo estão no plano profundo (Green, 7ª ed., cap. 51, Tabela 51.4, p. 1768). Veja o alerta sobre o nome do flexor do carpo.",
   "alerta": "O enunciado usa \"flexor longo do carpo\", nome que não corresponde à nomenclatura anatômica usual. O gabarito oficial C é preservado porque pronador quadrado e flexor profundo dos dedos são volares e a terceira estrutura é descrita como flexora do carpo. A identificação exata desse músculo exigiria correção da redação original.",
+  "incorretas": {
+   "A": "**O abdutor longo do polegar é dorsal.** Ele está na lista do compartimento dorsal, com os extensores (Green, 7ª ed., cap. 51, Tabela 51.4, p. 1768). Os outros dois itens estão certos, e é isso que torna a alternativa perigosa.",
+   "B": "**Só o pronador quadrado é volar.** O abdutor longo é dorsal, e o braquiorradial pertence ao mobile wad, lateral (Green, cap. 51, p. 1768).",
+   "D": "**Só um volar.** O flexor do carpo é volar, mas os outros dois estão fora: dorsal e mobile wad, respectivamente (Green, cap. 51, p. 1768).",
+   "E": "**Dois volares e um intruso.** O abdutor longo do polegar é o intruso. Ele parece fazer parte por agir no polegar, mas abre o polegar a partir do dorso do antebraço (Green, cap. 51, p. 1768)."
+  },
   "referencias": [
-   "Forearm Compartment Syndrome (2013): https://pmc.ncbi.nlm.nih.gov/articles/PMC4005420/",
-   "Anatomy of forearm compartments by high-resolution ultrasound (2021): https://pmc.ncbi.nlm.nih.gov/articles/PMC8630951/"
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 51 (Síndrome compartimental e contratura isquêmica de Volkmann), Tabela 51.4, p. 1768 e 1769"
   ],
-  "conceito": "**O antebraço se organiza em plano volar flexor-pronador, plano dorsal extensor-supinador e grupo lateral móvel.** No volar superficial estão, entre outros, flexores radial e ulnar do carpo e flexor superficial dos dedos; no profundo, pronador quadrado, flexor profundo dos dedos e flexor longo do polegar. O abdutor longo do polegar, apesar de levar \"longo\" no nome, fica no plano dorsal profundo. O braquiorradial pertence ao grupo lateral móvel.\n\nUma síndrome compartimental após esmagamento exige procurar dor intensa e progressiva, tensão e dor ao alongamento passivo, sem esperar perda de pulso. Para responder à anatomia, localize os músculos por sua posição fascial, não apenas pelo movimento que o nome sugere.",
-  "correta": "**C: pronador quadrado, flexor do carpo e flexor profundo dos dedos.** Os dois músculos precisamente nomeados pertencem ao volar profundo; músculos flexores do carpo pertencem ao volar superficial. A expressão imprecisa da alternativa está registrada no alerta.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1727": {
@@ -44781,58 +44780,37 @@
   "conferido": false
  },
  "trauma-1734": {
-  "conceito": "**O oponente do polegar pertence ao compartimento tenar.** O resumo descreve esse espaço com três músculos: abdutor curto, flexor curto e oponente do polegar. A presença da palavra “polegar” no nome de uma estrutura não basta para colocá-la no tenar.\n\nA mão tem dez compartimentos nessa divisão: tenar, hipotenar, adutor do polegar, quatro interósseos dorsais e três interósseos palmares. O adutor do polegar merece destaque porque possui compartimento próprio, embora também atue sobre o polegar. Os interósseos tampouco fazem parte do tenar.\n\nUma síndrome tenar ameaça a função dos músculos que ocupam esse espaço. Contudo, no esmagamento, a investigação não deve parar em uma região apenas porque o enunciado a destacou: os demais espaços podem estar envolvidos e precisam de avaliação apropriada. A divisão anatômica orienta o exame e a descompressão.\n\n**Leia “Braço, antebraço e mão”, na Biblioteca.** Compare os três músculos tenares com o adutor em compartimento separado e com os grupos interósseos.",
-  "correta": "**A: músculo oponente do polegar.** Está explicitamente listado junto com abdutor curto e flexor curto no compartimento tenar. Sua localização explica por que pode ter a função comprometida quando esse espaço sofre elevação patológica de pressão.\n\nA resposta depende de pertencer ao compartimento, não apenas de mover o polegar.",
+  "conceito": "Uma mão com síndrome compartimental no tenar: o que deixa de funcionar? A pergunta é anatômica, e dá para resolvê-la com um truque: os três músculos do tenar movem o polegar para longe da palma, em direção à pinça.\n\nO Green lista os compartimentos da mão em sua Tabela 51.4 (7ª ed., cap. 51, p. 1768): tenar, hipotenar, **adutor do polegar**, interósseos dorsais e interósseos volares. O detalhe decisivo é este: o adutor do polegar tem **compartimento próprio**, separado do tenar. Essa separação faz sentido porque ele tem outra inervação, pelo ulnar, e fica em um plano profundo, enquanto o tenar é dominado pelo ramo recorrente do mediano.\n\nDentro do tenar estão o **abdutor curto**, o **flexor curto** e o **oponente do polegar**. Perder o oponente é perder a pinça de precisão, que é a função mais valiosa da mão. É por isso que o polegar que não opõe é a grande sequela da lesão baixa do mediano, e o Green dedica boa parte do capítulo de transferências a recuperá-la (8ª ed., cap. 31). Na síndrome compartimental, a fibrose desse compartimento ainda deixa o polegar aduzido e retraído.",
+  "correta": "**A: músculo oponente do polegar.** Fica no compartimento tenar, que o Green separa do adutor do polegar e dos interósseos (7ª ed., cap. 51, Tabela 51.4, p. 1768).",
   "incorretas": {
-   "B": "**O adutor do polegar tem compartimento próprio.** É a principal confusão entre as opções porque também está relacionado ao polegar. O resumo o conta separadamente do tenar, de modo que não integra o trio pedido.",
-   "C": "**Um tendão flexor profundo dos dedos não é um dos três músculos tenares.** A opção troca uma estrutura tendínea dos flexores por um músculo intrínseco do grupo descrito. A lista tenar é abdutor curto, flexor curto e oponente do polegar.",
-   "D": "**Lumbricais não integram a composição tenar apresentada.** Ser uma musculatura da mão não significa pertencer a esse compartimento específico. Para esta localização, a fonte nomeia o trio ligado ao polegar, sem incluir lumbricais.",
-   "E": "**Os interósseos dorsais são contados como quatro compartimentos separados do tenar.** A opção aponta um grupo real da mão, mas em outro espaço. Essa separação importa porque avaliar ou liberar o tenar não equivale automaticamente a tratar os interósseos."
+   "B": "**A pegadinha principal.** Parece do tenar por agir no polegar, mas tem compartimento próprio na tabela do Green (cap. 51, p. 1768), além de inervação ulnar.",
+   "C": "**É um tendão da palma.** O flexor profundo passa pelo centro da palma, em seu trajeto, sem pertencer ao tenar.",
+   "D": "**Plano central.** Os lumbricais nascem do flexor profundo e ficam no centro da palma, junto dos tendões.",
+   "E": "**Entre os metacarpos.** Os interósseos dorsais formam quatro compartimentos próprios (Green, cap. 51, p. 1768), e sua descompressão é feita pelo dorso."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Os compartimentos de cada região."
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 51, Tabela 51.4, p. 1768",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 31"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Os compartimentos de cada região"
-     ],
-     "blocos": [
-      "os-compartimentos-de-cada-regiao-231bd2af"
-     ],
-     "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
-     "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
-    }
-   ],
-   "questaoSha256": "add7381365d20e1879b7e3852d52d12470173e05f77a3e6f7e0b350aff7e8022",
-   "comentarioSha256": "33ba369aaf521f2ae3096500ec3b6230dd6c6170edea4cc40e06e30b8ac52a0a"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "trauma-1735": {
-  "incorretas": {
-   "A": "**Luxação anterior em 80%.** Inverte o sentido mais relacionado à perda do anteparo coronoide. Além disso, transfere indevidamente o percentual composto do estudo para uma direção específica de luxação.",
-   "B": "**Luxação lateral em 80%.** O número não foi calculado para luxações laterais no estudo citado. A classificação mede o tamanho da coronoide, não define uma direção lateral de deslocamento.",
-   "C": "**Luxação posterior em 40%.** Acerta a direção biomecanicamente preocupante, mas introduz um percentual sem apoio no dado clássico. O estudo registrou 80% de lesão associada de qualquer uma das duas categorias no tipo III.",
-   "D": "**Luxação anterior em 40%.** Combina uma direção que não traduz o mecanismo típico com um percentual não derivado da série original. O achado que merece busca ativa é instabilidade e lesão associada, não essa estimativa."
-  },
+  "conceito": "O coronoide é o batente da frente do cotovelo: ele impede que a ulna escorregue para trás. Quando quebra, o cotovelo perde esse apoio, e por isso as fraturas grandes combinam tanto com luxação posterior.\n\nO Rockwood descreve a classificação de REGAN e MORREY pela **altura** do fragmento no plano coronal (cap. 40): **tipo I**, a ponta, antes considerada avulsão, e hoje entendida como resultado de uma subluxação ou luxação; **tipo II**, menos de 50% da altura; **tipo III**, mais de 50%. Ela ainda se modifica com a letra A, para a fratura isolada, ou B, se há luxação associada.\n\n**Por que o tipo III é tão instável?** Porque se perde a base do coronoide, onde se inserem o braquial e o feixe anterior do colateral medial. Sem o batente nem esses estabilizadores, a ulna tende a sair para trás. O número da banca, 80%, vem do estudo original, e o alerta explica um cuidado importante sobre o que ele quer dizer.\n\nO Rockwood acrescenta que O'DRISCOLL propôs um sistema mais completo, que considera o tamanho e também a localização do fragmento (cap. 40). Isso importa porque nem toda lesão importante é só uma questão de altura: a faceta anteromedial, por exemplo, tem um mecanismo próprio.",
+  "correta": "**E: pode ocorrer luxação posterior do cotovelo em 80% dos casos.** É a direção esperada, já que o coronoide bloqueia o deslizamento posterior. O número vem do trabalho original, com a ressalva do alerta (Rockwood, cap. 40).",
   "alerta": "O gabarito oficial é E, mas o número de 80% no estudo original de Regan e Morrey corresponde à presença de luxação concomitante OU outra fratura associada nos casos tipo III, não especificamente à luxação posterior. A direção posterior é clinicamente plausível, porém a porcentagem específica afirmada na alternativa não foi demonstrada por essa fonte.",
+  "incorretas": {
+   "A": "**Direção errada.** Sem o batente anterior, a ulna escapa para trás, e não para a frente.",
+   "B": "**Direção errada.** Luxação lateral pura não é o padrão associado a essa fratura.",
+   "C": "**Direção certa, número baixo.** O número da banca é de 80%, a partir do estudo original.",
+   "D": "**Dois erros.** Nem a direção nem o número."
+  },
   "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40",
    "Regan W, Morrey BF. Fractures of the coronoid process of the ulna. Journal of Bone and Joint Surgery American, 1989;71(9):1348-1354. PMID: 2793888. https://pubmed.ncbi.nlm.nih.gov/2793888/",
    "Classifications in Brief: Regan-Morrey Classification of Coronoid Fractures. Clinical Orthopaedics and Related Research, 2019. https://pmc.ncbi.nlm.nih.gov/articles/PMC6437590/"
   ],
-  "conceito": "O processo coronoide é a projeção anterior da ulna que forma parte da incisura troclear. Ele funciona como anteparo ósseo contra o deslocamento posterior da ulna em relação ao úmero; cápsula e ligamentos completam a estabilidade. Por isso, uma fratura grande da coronoide deve levar à procura de luxação, fratura da cabeça do rádio e lesões ligamentares, mesmo que o cotovelo já tenha sido reduzido quando a radiografia é feita.\n\nA classificação **Regan-Morrey** usa o tamanho do fragmento visto na radiografia lateral: tipo I é a ponta; tipo II abrange até metade da altura; tipo III envolve mais da metade. O tamanho é uma pista de gravidade, não uma descrição completa do padrão de instabilidade. No estudo original de 35 pacientes, luxação **ou fratura associada** foi observada em 14% no tipo I, 56% no tipo II e 80% no tipo III. O estudo não afirma que 80% dos tipo III tiveram especificamente luxação posterior. Essa distinção entre desfecho composto e evento isolado é o ponto crítico desta questão.\n\nNa prática, a avaliação de um tipo III considera a congruência após redução, o restante da ulna proximal, a cabeça do rádio e a estabilidade ao movimento. A fratura extensa não deve ser tratada como mero achado radiográfico, pois perda do anteparo anterior e dano ligamentar podem permitir subluxação recorrente e rigidez posterior.",
-  "correta": "**E: luxação posterior em 80%, segundo a letra oficial.** A direção posterior é coerente com a função estabilizadora da coronoide e, entre as opções, é a associação que a banca pretendeu cobrar. Contudo, o 80% publicado por Regan e Morrey é de luxação **ou outra fratura associada**, sem discriminar uma taxa de luxação posterior. A resposta deve ser estudada com essa ressalva, não como estatística validada para a direção da luxação.",
-  "geradoEm": "2026-11-01",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1736": {
