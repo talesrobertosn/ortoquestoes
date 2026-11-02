@@ -21,7 +21,8 @@ export type Parte =
 export type FiltroPessoas = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 'novos_parados' | 'assinantes' | 'parados' | 'planos'
 /** As cinco vistas da triagem de conteúdo. */
 export type VistaTriagem = 'suspeitas' | 'faceis' | 'temas' | 'relatos' | 'avaliacoes'
-export type Periodo = 7 | 30 | 90
+/** Dias da janela; 0 é "desde sempre" (só em Crescimento, onde é o padrão). */
+export type Periodo = 0 | 7 | 30 | 90
 
 export interface DefParte { id: Parte; rotulo: string; pergunta: string; /** Nome antigo, para a busca ainda achar (revisão de 02/11/2026). */ antes?: string }
 export interface DefArea { id: Area; rotulo: string; curto: string; icone: NomeIconeAdmin; partes: DefParte[] }
@@ -107,7 +108,12 @@ const LEGADO: Record<string, Parte> = {
 }
 
 export const PERIODOS: Periodo[] = [7, 30, 90]
+/** Crescimento abre em "desde sempre" (pedido do Tales, 02/11/2026); 30 dias é a segunda opção. */
+export const PERIODOS_CRESCIMENTO: Periodo[] = [0, 30, 7, 90]
 export const PERIODO_PADRAO: Periodo = 30
+export const periodoPadrao = (parte: Parte): Periodo => parte === 'crescimento' ? 0 : PERIODO_PADRAO
+const periodoValido = (parte: Parte, n: number): n is Periodo => (parte === 'crescimento' ? PERIODOS_CRESCIMENTO : PERIODOS).includes(n as Periodo)
+export const rotuloPeriodo = (n: Periodo) => n === 0 ? 'Desde sempre' : `${n} dias`
 const COM_PERIODO = new Set<Parte>(['comando', 'crescimento', 'retencao', 'financeiro'])
 export type GrupoAssinatura = 'vigentes' | 'pendente' | 'falha_pagamento' | 'encerradas' | 'todas'
 const GRUPOS: GrupoAssinatura[] = ['vigentes', 'pendente', 'falha_pagamento', 'encerradas', 'todas']
@@ -128,7 +134,7 @@ export function lerUrl(consulta: URLSearchParams): EstadoUrl {
   const vista = consulta.get('vista') as VistaTriagem
   const vistaLegada = bruta === 'avaliacoes' || bruta === 'relatos' ? bruta : null
   const id = consulta.get('id')
-  const periodo = Number(consulta.get('periodo')) as Periodo
+  const periodoBruto = consulta.get('periodo')
   let parte: Parte = PARTES.has(bruta as Parte) ? bruta as Parte : LEGADO[bruta] ?? 'comando'
   // Crescimento já foi tela com abas (?aba=crescimento&sub=retencao); essas abas hoje são itens próprios do menu.
   const subAntiga = consulta.get('sub')
@@ -142,7 +148,7 @@ export function lerUrl(consulta: URLSearchParams): EstadoUrl {
     grupo: GRUPOS.includes(consulta.get('grupo') as GrupoAssinatura) ? consulta.get('grupo') as GrupoAssinatura : 'vigentes',
     vista: vistaLegada ?? (VISTAS.includes(vista) ? vista : 'suspeitas'),
     id: id && id.length <= 80 && ID_QUESTAO.test(id) ? id : null,
-    periodo: PERIODOS.includes(periodo) ? periodo : PERIODO_PADRAO,
+    periodo: periodoBruto !== null && periodoValido(parte, Number(periodoBruto)) ? Number(periodoBruto) as Periodo : periodoPadrao(parte),
   }
 }
 
@@ -156,7 +162,7 @@ export function urlDe({ parte, filtro, vista, id, periodo, sub, grupo }: EstadoU
   if (parte === 'assinaturas' && grupo && grupo !== 'vigentes') c.set('grupo', grupo)
   const abas = abasDe(parte)
   if (abas.length && sub !== abas[0].id && abas.some(a => a.id === sub)) c.set('sub', sub)
-  if (COM_PERIODO.has(parte) && periodo !== PERIODO_PADRAO) c.set('periodo', String(periodo))
+  if (COM_PERIODO.has(parte) && periodoValido(parte, periodo) && periodo !== periodoPadrao(parte)) c.set('periodo', String(periodo))
   const texto = c.toString()
   return texto ? `/admin?${texto}` : '/admin'
 }

@@ -64,6 +64,12 @@ try {
   assert.equal(ida('aba=conteudo&vista=temas'), '/admin?aba=conteudo&vista=temas')
   assert.equal(ida('aba=questoes&id=mao-0853'), '/admin?aba=questoes&id=mao-0853')
   assert.equal(ida('aba=financeiro&periodo=90'), '/admin?aba=financeiro&periodo=90')
+  // Crescimento abre em "desde sempre"; 30 dias vai no endereço. Fora de Crescimento, "desde sempre" não existe.
+  assert.equal(ler('aba=crescimento').periodo, 0)
+  assert.equal(ida('aba=crescimento'), '/admin?aba=crescimento')
+  assert.equal(ida('aba=crescimento&periodo=30'), '/admin?aba=crescimento&periodo=30')
+  assert.equal(ler('aba=financeiro&periodo=0').periodo, 30)
+  assert.equal(ler('aba=financeiro').periodo, 30)
   assert.equal(ida('aba=assinaturas&filtro=novos&id=x'), '/admin?aba=assinaturas')
   assert.equal(ler('aba=questoes&id=fulano@x.com').id, null, 'nada pessoal no endereço')
   assert.equal(ida('aba=geral'), '/admin')

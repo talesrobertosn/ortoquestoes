@@ -6,7 +6,7 @@ import { href, navegar } from '../util/rotas'
 import { ProvedorPainel, usarPainel } from './dados/painel'
 import { nomeDe } from './dados/pessoas'
 import { ContextoNav, type AbaFicha, type Nav } from './nav'
-import { AREAS, abasDe, areaDe, defArea, defParte, lerUrl, partePadrao, urlAntiga, urlDe, type Area, type EstadoUrl, type Parte } from './rotas'
+import { AREAS, abasDe, areaDe, defArea, defParte, lerUrl, partePadrao, periodoPadrao, urlAntiga, urlDe, type Area, type EstadoUrl, type Parte } from './rotas'
 import { Icone } from './ui/Icone'
 import { haQuanto, horario } from './ui/formato'
 import { Carregando, Estado } from './ui/kit'
@@ -92,7 +92,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
   useEffect(() => { const f = () => definirRolou(window.scrollY > 4); f(); window.addEventListener('scroll', f, { passive: true }); return () => window.removeEventListener('scroll', f) }, [])
 
   const nav: Nav = useMemo(() => {
-    const montar = (parteNova: Parte, extra?: Partial<Omit<EstadoUrl, 'parte'>>) => urlDe({ ...estado, filtro: 'todos', grupo: 'vigentes', ...(parteNova === estado.parte ? {} : { id: parteNova === 'questoes' ? estado.id : null }), ...extra, parte: parteNova })
+    const montar = (parteNova: Parte, extra?: Partial<Omit<EstadoUrl, 'parte'>>) => urlDe({ ...estado, filtro: 'todos', grupo: 'vigentes', ...(parteNova === estado.parte ? {} : { id: parteNova === 'questoes' ? estado.id : null, periodo: periodoPadrao(parteNova) }), ...extra, parte: parteNova })
     return {
       estado,
       ir: (parteNova, extra) => { const outra = parteNova !== estado.parte; navegar(montar(parteNova, extra), !outra); if (outra) window.scrollTo({ top: 0 }) },

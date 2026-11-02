@@ -4277,11 +4277,14 @@ var esperar = (ms) => new Promise((resolver) => setTimeout(resolver, ms));
 async function enviarRelatorios(mesPedido, limitePedido, quinzenal = false) {
   const mes = quinzenal ? quinzenaValida(mesPedido) : mesValido(mesPedido);
   const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80));
-  const r = quinzenal ? await banco("rpc/destinatarios_relatorio_quinzenal", { method: "POST", body: JSON.stringify({ p_ref: mes, p_limite: limite }) }) : await banco("rpc/destinatarios_relatorio_mensal", { method: "POST", body: JSON.stringify({ p_mes: mes, p_limite: limite }) });
+  const r = quinzenal ? await banco("rpc/destinatarios_relatorio_quinzenal", { method: "POST", body: JSON.stringify({ p_ref: mes, p_limite: JANELA_RELATORIO }) }) : await banco("rpc/destinatarios_relatorio_mensal", { method: "POST", body: JSON.stringify({ p_mes: mes, p_limite: JANELA_RELATORIO }) });
   if (!r.ok) throw new Error("consulta_destinatarios_falhou");
   const destinatarios = (await r.json()).map((d) => d.id_usuario);
-  let enviados = 0, falhas = 0, adiados = 0, recusados = 0;
+  let enviados = 0, falhas = 0, adiados = 0, recusados = 0, vistos = 0;
+  const inicio = Date.now();
   for (const id of destinatarios) {
+    if (enviados + falhas >= limite || Date.now() - inicio > ORCAMENTO_LOTE_MS) break;
+    vistos++;
     if (!await podeReceber(id, "relatorio")) {
       recusados++;
       continue;
@@ -4314,19 +4317,26 @@ async function enviarRelatorios(mesPedido, limitePedido, quinzenal = false) {
     }
     await esperar(600);
   }
-  return { mes, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
+  return { mes, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: restam(vistos, destinatarios.length, JANELA_RELATORIO, enviados + falhas) };
 }
+var JANELA_RELATORIO = 500;
+var JANELA_LEMBRETE = 200;
+var ORCAMENTO_LOTE_MS = 4e4;
+var restam = (vistos, total, janela, feitos) => vistos < total || total >= janela && feitos > 0;
 var TIPO_DA_CAMPANHA = { nunca: "nunca_comecou", tres_dias: "pausa", sete_dias: "sumiu", renovacao_pix: "pix_3_dias", renovacao_pix_hoje: "pix_hoje" };
 var CAMPANHAS = ["nunca", "tres_dias", "sete_dias", "renovacao_pix", "renovacao_pix_hoje"];
 var ehPix = (c) => c === "renovacao_pix" || c === "renovacao_pix_hoje";
 var campanhaValida = (c) => CAMPANHAS.includes(c ?? "") ? c : null;
 async function enviarLembretes(campanha, limitePedido, por) {
   const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80));
-  const r = ehPix(campanha) ? await banco("rpc/destinatarios_renovacao_pix", { method: "POST", body: JSON.stringify({ p_etapa: campanha === "renovacao_pix_hoje" ? "hoje" : "tres_dias", p_limite: limite }) }) : await banco("rpc/destinatarios_lembrete", { method: "POST", body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) });
+  const r = ehPix(campanha) ? await banco("rpc/destinatarios_renovacao_pix", { method: "POST", body: JSON.stringify({ p_etapa: campanha === "renovacao_pix_hoje" ? "hoje" : "tres_dias", p_limite: JANELA_LEMBRETE }) }) : await banco("rpc/destinatarios_lembrete", { method: "POST", body: JSON.stringify({ p_campanha: campanha, p_limite: JANELA_LEMBRETE }) });
   if (!r.ok) throw new Error("consulta_destinatarios_falhou");
   const destinatarios = await r.json();
-  let enviados = 0, falhas = 0, adiados = 0, recusados = 0;
+  let enviados = 0, falhas = 0, adiados = 0, recusados = 0, vistos = 0;
+  const inicio = Date.now();
   for (const d of destinatarios) {
+    if (enviados + falhas >= limite || Date.now() - inicio > ORCAMENTO_LOTE_MS) break;
+    vistos++;
     if (!await podeReceber(d.id_usuario, "lembretes")) {
       recusados++;
       continue;
@@ -4376,7 +4386,7 @@ async function enviarLembretes(campanha, limitePedido, por) {
     }
     await esperar(600);
   }
-  return { campanha, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite };
+  return { campanha, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: restam(vistos, destinatarios.length, JANELA_LEMBRETE, enviados + falhas) };
 }
 async function registrar(corpo) {
   return banco("emails_enviados", { method: "POST", body: JSON.stringify(corpo) });

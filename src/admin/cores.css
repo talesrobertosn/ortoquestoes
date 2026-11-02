@@ -262,3 +262,11 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .a3-fila__botoes { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
 .a3-detalhes-tecnicos summary { cursor: pointer; font-size: 12.5px; color: var(--ardosia); } .a3-detalhes-tecnicos[open] summary { margin-bottom: 4px; }
 @media (max-width: 560px) { .a3-fila__item .a3-fila__botoes { grid-column: 2; justify-content: flex-start; } .a3-fila__item .a3-fila__botoes .a3-botao { grid-column: auto; } }
+
+/* E-mails › Lembretes: um botão para mandar tudo o que está pendente. */
+.a3-enviar-tudo { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px 20px; padding: 20px; border-left: 4px solid var(--verdete); }
+.a3-enviar-tudo__texto h2 { margin: 0; }
+.a3-enviar-tudo__texto p { margin: 4px 0 0; }
+.a3-enviar-tudo__etapa, .a3-enviar-tudo__fim, .a3-enviar-tudo__regras { grid-column: 1 / -1; margin: 0; }
+.a3-botao--grande { min-height: 48px; padding: 0 22px; font-size: 15.5px; }
+@media (max-width: 640px) { .a3-enviar-tudo { grid-template-columns: 1fr; padding: 16px; } .a3-enviar-tudo .a3-botao--grande { width: 100%; justify-content: center; } }
