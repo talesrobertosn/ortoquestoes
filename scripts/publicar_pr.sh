@@ -4,6 +4,7 @@
 #   bash scripts/publicar_pr.sh "Título da PR" arquivo-do-corpo.md
 # Sai com código diferente de zero (e sem mesclar) se algum check falhar.
 set -uo pipefail
+export PYTHONUTF8=1  # no Windows, sem isto a trava falha ao ler o acervo com acentos
 TITULO="$1"; CORPO="$2"; BASE="claude/pdfs-questoes-tp64dr"
 RAMO=$(git rev-parse --abbrev-ref HEAD)
 # Trava de profundidade (30/10/2026): não publica resumo ou comentário abaixo do padrão.

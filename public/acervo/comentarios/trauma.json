@@ -44764,19 +44764,20 @@
   "conferido": false
  },
  "trauma-1733": {
+  "conceito": "A síndrome de resposta inflamatória sistêmica (SIRS) é a reação do corpo inteiro a uma agressão, que pode ser infecção, trauma ou queimadura. Para o ortopedista, ela não é um detalhe de terapia intensiva. O Rockwood lembra que o doente gravemente traumatizado, com hemorragia maciça, pode entrar em SIRS, um estado associado à falência de múltiplos órgãos e à morte, e que a própria fixação da fratura pode contribuir para essa resposta em quem está mal reanimado (cap. 14). É a base do raciocínio de controle de danos: operar demais, na hora errada, é um segundo golpe.\n\n**O diagnóstico é uma lista.** O StatPearls diz que a SIRS exige pelo menos dois critérios alterados (Systemic Inflammatory Response Syndrome). Os valores são:\n\n| Parâmetro | Critério |\n|---|---|\n| Temperatura | abaixo de 36 °C ou acima de 38 °C |\n| Frequência cardíaca | acima de 90 por minuto |\n| Frequência respiratória | acima de 20 por minuto |\n| Leucócitos | abaixo de 4.000 ou acima de 12.000 por µL, ou mais de 10% de formas jovens |\n\nA banca aposta nos números muito próximos. Olhe a tabela contra as alternativas: todas trazem um valor abaixo do corte, exceto uma. Atenção à temperatura: ela pode estar baixa ou alta. O doente de SIRS nem sempre tem febre, e a hipotermia é um critério, além de um mau sinal no politraumatizado.\n\n**Situação atual.** Essa lista saiu da definição de sepse desde o consenso Sepsis-3, mas continua sendo cobrada e útil em outros contextos (PMC8618061).",
+  "correta": "**A: temperatura corporal abaixo de 36 graus.** É um critério válido, já que a SIRS inclui temperatura menor que 36 °C ou maior que 38 °C (StatPearls, Systemic Inflammatory Response Syndrome).",
   "incorretas": {
-   "B": "**O limite clássico é acima de 90 batimentos por minuto.** Uma frequência acima de 80 pode continuar abaixo desse corte e não basta para o critério.",
-   "C": "**O limite respiratório é acima de 20 incursões por minuto.** Acima de 15 não define taquipneia pelo esquema de SIRS.",
-   "D": "**O corte de leucocitose é acima de 12.000 por microlitro.** Contagem acima de 10.000 pode permanecer fora do critério; também contam leucopenia abaixo de 4.000 ou desvio à esquerda importante.",
-   "E": "**O corte para formas jovens é maior que 10%.** Mais de 5% não alcança o valor estabelecido para esse componente do esquema clássico."
+   "B": "**O corte é maior.** O critério é frequência cardíaca acima de 90, e 80 é um valor normal (StatPearls).",
+   "C": "**O corte é maior.** O critério é frequência respiratória acima de 20. Quinze é normal (StatPearls).",
+   "D": "**O corte é maior.** O critério é acima de 12.000 leucócitos. Entre 10.000 e 12.000, o valor ainda não preenche o critério (StatPearls).",
+   "E": "**O corte é maior.** O critério é mais de 10% de neutrófilos jovens. A banca colocou a metade do valor (StatPearls)."
   },
   "referencias": [
-   "StatPearls, Systemic Inflammatory Response Syndrome: https://www.ncbi.nlm.nih.gov/books/NBK547669/",
-   "The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3): https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/"
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 14",
+   "StatPearls (NCBI Bookshelf), Systemic Inflammatory Response Syndrome (NBK547669)",
+   "Limited Utility of SIRS Criteria, PMC8618061"
   ],
-  "conceito": "**SIRS descreve uma resposta inflamatória sistêmica, não necessariamente uma infecção.** O critério clássico exige pelo menos dois achados entre temperatura acima de 38 ou abaixo de 36 graus Celsius, frequência cardíaca acima de 90 por minuto, frequência respiratória acima de 20 por minuto ou PaCO2 abaixo de 32 mmHg, e leucócitos acima de 12.000, abaixo de 4.000 por microlitro ou mais de 10% de formas jovens.\n\nApós trauma, inflamação estéril pode preencher esses critérios. Eles não equivalem, por si, a sepse: a definição contemporânea de sepse exige infecção com disfunção orgânica. A questão pede reconhecer um parâmetro compatível com o esquema de SIRS, não diagnosticar a síndrome por um dado isolado.",
-  "correta": "**A: temperatura abaixo de 36 graus.** Hipotermia é um dos limites clássicos de SIRS. Para preencher a síndrome pelo critério histórico, ainda seria necessário outro parâmetro alterado.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1734": {
