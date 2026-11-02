@@ -2,21 +2,22 @@ import { useMemo, useState } from 'react'
 import { contaDeTeste } from '../../componentes/admin/contasTeste'
 import { baixarCsv } from '../../componentes/admin/formatos'
 import { meioDe, precoDe, vigente } from '../../componentes/admin/receita'
-import { proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura, type Tom } from '../../componentes/admin/rotulos'
+import { motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura, type Tom } from '../../componentes/admin/rotulos'
 import { usarPainel, type LinhaAssinatura } from '../dados/painel'
 import { usarNav } from '../nav'
-import { defParte } from '../rotas'
+import { defParte, type GrupoAssinatura } from '../rotas'
+import { chaveFalha } from '../dados/metricas'
 import { Icone } from '../ui/Icone'
 import { combina, data, haQuanto, iniciais, inteiro, normalizar, reais } from '../ui/formato'
 import { Busca, Cabeca, Carregando, Estado, FiltrosAtivos, Selo } from '../ui/kit'
 import { Tabela, type Coluna } from '../ui/tabela'
 
-type Grupo = 'vigentes' | 'todas' | 'pendente' | 'falha_pagamento' | 'encerradas'
+type Grupo = GrupoAssinatura
 type Recorte = 'tudo' | '7' | '30' | '90' | '365'
 const GRUPOS: Array<[Grupo, string, string]> = [
   ['vigentes', 'Com acesso', 'Pagaram e o acesso vale agora (inclui quem desligou a renovação e ainda tem dias).'],
   ['pendente', 'Pendentes', 'Abriram o pagamento e ainda não pagaram.'],
-  ['falha_pagamento', 'Falha no pagamento', 'O Mercado Pago recusou a cobrança.'],
+  ['falha_pagamento', 'Cartão recusado', 'O cartão não passou: ao assinar (nada foi cobrado, nunca teve acesso) ou na renovação (pode perder o acesso). Marque "Resolvido" quando tratar.'],
   ['encerradas', 'Encerradas', 'Expiradas, canceladas sem acesso, reembolsadas ou pausadas.'],
   ['todas', 'Todas', 'Todas as linhas do banco, inclusive as de teste do dono.'],
 ]
@@ -42,7 +43,9 @@ function Vigencia({ a }: { a: LinhaAssinatura }) {
 export default function Assinaturas() {
   const p = usarPainel()
   const nav = usarNav()
-  const [grupo, definirGrupo] = useState<Grupo>('vigentes')
+  const grupo = nav.estado.grupo
+  const definirGrupo = (g: Grupo) => nav.ajustar({ grupo: g })
+  const { lidos, marcar } = p.lidosPagamento
   const [plano, definirPlano] = useState<'todos' | 'mensal' | 'semestral' | 'anual'>('todos')
   const [meio, definirMeio] = useState<'todos' | 'pix' | 'cartao'>('todos')
   const [recorte, definirRecorte] = useState<Recorte>('tudo')
@@ -77,11 +80,16 @@ export default function Assinaturas() {
         </span>
       </span>
     </span> },
-    { id: 'situacao', titulo: 'Situação', rotuloCelular: 'Situação', ordem: a => situacaoAssinatura(a).rotulo, celula: a => { const s = situacaoAssinatura(a); return <span title={s.detalhe}><Selo tom={TOM[s.tom]}>{s.rotulo}</Selo></span> } },
+    { id: 'situacao', titulo: 'Situação', rotuloCelular: 'Situação', ordem: a => situacaoAssinatura(a).rotulo, celula: a => { const s = situacaoAssinatura(a); return <span title={s.detalhe} style={{ display: 'grid', gap: 3, justifyItems: 'start' }}><Selo tom={TOM[s.tom]}>{s.rotulo}</Selo>{a.status === 'falha_pagamento' && <span className="a3-sub">{motivoRecusa(a.motivo_falha).texto}</span>}</span> } },
     { id: 'plano', titulo: 'Plano', rotuloCelular: 'Plano', ordem: a => precoDe(a.plano)?.total ?? 0, celula: a => <span>{rotuloPlano(a.plano)} · {rotuloMeio(meioDe(a))}<span className="a3-sub">{precoDe(a.plano) ? reais(precoDe(a.plano)!.total) : '—'}{meioDe(a) === 'cartao' ? (a.cancelar_ao_fim ? ' · não renova' : ' · renova sozinho') : ' · compra avulsa'}</span></span> },
     { id: 'vigencia', titulo: 'Período pago', soLargo: true, ordem: a => a.fim_periodo ?? '', celula: a => <Vigencia a={a} /> },
     { id: 'desde', titulo: 'Desde', numero: true, rotuloCelular: 'Desde', ordem: a => inicioDe(a), celula: a => <span>{data(inicioDe(a))}<span className="a3-sub">{haQuanto(inicioDe(a))}</span></span> },
     { id: 'proxima', titulo: 'Próximo marco', numero: true, soLargo: true, ordem: a => proximaData(a).valor ?? '', celula: a => { const x = proximaData(a); return <span>{x.valor ? data(x.valor) : '—'}<span className="a3-sub">{x.rotulo.toLowerCase()}</span></span> } },
+    ...(grupo === 'falha_pagamento' ? [{ id: 'resolver', titulo: '', rotuloCelular: 'Tratado', celula: (a: LinhaAssinatura) => {
+      const k = chaveFalha(a), feito = lidos.has(k)
+      return <button type="button" className={'a3-botao a3-botao--pequeno ' + (feito ? 'a3-botao--fantasma' : 'a3-botao--contorno')} aria-pressed={feito}
+        onClick={() => marcar([k], !feito)}><Icone nome={feito ? 'certo' : 'olho'} tamanho={14} />{feito ? 'Resolvido' : 'Marcar resolvido'}</button>
+    } } as Coluna<LinhaAssinatura>] : []),
   ]
   const exportar = () => baixarCsv(`ortoquestoes-assinaturas-${new Date().toISOString().slice(0, 10)}.csv`,
     ['Nome', 'E-mail', 'Plano', 'Meio', 'Situação', 'Assinante desde', 'Última cobrança paga', 'Data', 'Qual data', 'Cancela ao fim', 'Teste'],

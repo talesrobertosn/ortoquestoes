@@ -155,3 +155,40 @@ Pedido do Tales: "faz esses botões serem clicáveis, mostrar fácil assinantes 
   Online agora, Assinantes hoje, Viram os planos hoje, Bateram o limite, Estudaram hoje, Cadastros hoje, Assinantes
   que não entraram, Viram os planos em 30 dias.
 - A barra do celular deixou de repetir "Agora / Agora" (mostra "Painel" em cima).
+
+## Revisão de 02/11/2026 (fase 1 do diagnóstico): falhas de pagamento e Financeiro com nomes claros
+
+Base: `docs/admin/DIAGNOSTICO-UX-2026-11-02.md`. Só tela; nada muda no banco nem no pagamento.
+
+- "Falha no pagamento" virou dois casos: **Cartão recusado ao assinar** (sem nenhuma cobrança paga; nada foi cobrado, a
+  pessoa nunca teve acesso) e **Renovação recusada** (já tinha pago; pode perder o acesso). O primeiro é oportunidade
+  na fila por 14 dias; o segundo continua alta.
+- **Resolvido** em todo alerta de pagamento (fila "Pede ação", lista de assinantes, avisos do Mercado Pago), guardado no
+  servidor nos lidos de pagamento (chave `falha:<pessoa>:<atualização>`), com Desfazer. Se a assinatura muda, o alerta volta.
+- A fila leva direto ao grupo certo (`?aba=assinaturas&grupo=falha_pagamento`).
+- Ficha › Assinatura: recusa ao assinar mostra "Tentou assinar em" e "Cobrado: nada", com um convite para escrever
+  uma carta; códigos técnicos recolhidos em "Detalhes técnicos".
+- Financeiro: Resumo, Assinantes, Extrato e Avisos do Mercado Pago (a busca ainda acha pelos nomes antigos). Avisos com
+  dois filtros úteis ("Precisam de você", "Tudo certo") e o título sem repetir.
+- Erros de texto: "Confirmado Confirmado" no Extrato, "Pix · cartão" invertido no Resumo, e os textos dos interruptores
+  de Ajustes que descreviam o estado oposto.
+
+## Revisão de 02/11/2026 (autonomia total do Tales): e-mails, Crescimento, fase 2 e fase 3
+
+- **E-mails que travavam.** O servidor buscava só o tamanho do lote; quem estava segurado (descadastro ou cadência)
+  voltava sempre no começo da fila e travava o envio dos outros, e o resumo quinzenal (pesado por pessoa) estourava
+  o tempo da tela. Agora a função busca uma janela grande (200 lembretes, 500 relatórios), pula os segurados sem parar
+  e encerra cada chamada em 40 s, dizendo se ainda resta gente. Vale depois de colar `enviar-email` no Supabase.
+- **Enviar tudo** em Lembretes: um botão manda tudo o que está pendente (Pix termina hoje, Pix 3 dias, Primeira
+  missão, Fogueira apagando, Retomar a jornada e o resumo quinzenal), uma campanha de cada vez. As travas do servidor
+  continuam: descadastro, 48 h entre e-mails, 3 em 14 dias, uma vez por ausência.
+- **Crescimento** abre em "Desde sempre" (corta no primeiro dia com cadastro ou estudo); "30 dias" é a segunda opção.
+  Trocar de tela volta ao período padrão de cada tela.
+- **Fase 2 (parte 36).** `assinaturas.motivo_falha/falha_em` e `eventos_pagamento.id_usuario`; o webhook anota à parte
+  (PATCH separado que nunca lança erro) o `status_detail` da recusa e de quem é o aviso. O painel traduz o motivo
+  ("Saldo ou limite insuficiente", "O banco pediu para a pessoa autorizar a compra"…) com o que costuma resolver.
+  Recusas antigas aparecem como "motivo não registrado".
+- **Fase 3.** No celular, a barra de cima é o título (o grande não se repete) e as abas mostram que continuam à
+  direita. A fonte dos gráficos (nome da consulta) foi para "Ver dados". E-mails: Lembretes, Cartas pessoais,
+  Enviados e Modelos (a busca acha pelos nomes antigos); rótulos internos ("parte 31", "sem SQL") saíram.
+  Financeiro › Resumo tem as abas Recebido e Previsão.

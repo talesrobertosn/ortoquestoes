@@ -29,7 +29,7 @@ try {
   // Nenhuma parte do painel antigo some.
   for (const parte of ['usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'todas', 'ajustes'])
     assert.ok(partes.includes(parte), parte)
-  assert.deepEqual(m.defArea('receita').partes.map(p => p.rotulo), ['Ganhos', 'Assinaturas', 'Pagamentos', 'Avisos de pagamento'])
+  assert.deepEqual(m.defArea('receita').partes.map(p => p.rotulo), ['Resumo', 'Assinantes', 'Extrato', 'Avisos do Mercado Pago'])
   assert.deepEqual(m.abasDe('crescimento'), [], 'Crescimento é área própria, sem abas escondidas')
   assert.deepEqual(m.defArea('crescimento').partes.map(p => p.id), ['crescimento', 'retencao', 'perfis'])
   assert.deepEqual(m.abasDe('financeiro').map(a => a.id), ['financeiro', 'previsao'])
@@ -64,6 +64,12 @@ try {
   assert.equal(ida('aba=conteudo&vista=temas'), '/admin?aba=conteudo&vista=temas')
   assert.equal(ida('aba=questoes&id=mao-0853'), '/admin?aba=questoes&id=mao-0853')
   assert.equal(ida('aba=financeiro&periodo=90'), '/admin?aba=financeiro&periodo=90')
+  // Crescimento abre em "desde sempre"; 30 dias vai no endereço. Fora de Crescimento, "desde sempre" não existe.
+  assert.equal(ler('aba=crescimento').periodo, 0)
+  assert.equal(ida('aba=crescimento'), '/admin?aba=crescimento')
+  assert.equal(ida('aba=crescimento&periodo=30'), '/admin?aba=crescimento&periodo=30')
+  assert.equal(ler('aba=financeiro&periodo=0').periodo, 30)
+  assert.equal(ler('aba=financeiro').periodo, 30)
   assert.equal(ida('aba=assinaturas&filtro=novos&id=x'), '/admin?aba=assinaturas')
   assert.equal(ler('aba=questoes&id=fulano@x.com').id, null, 'nada pessoal no endereço')
   assert.equal(ida('aba=geral'), '/admin')
@@ -74,6 +80,10 @@ try {
   assert.equal(ler('aba=crescimento&sub=perfis').parte, 'perfis')
   assert.ok(m.urlAntiga(new URLSearchParams('aba=crescimento&sub=perfis')))
   assert.equal(ler('aba=crescimento').parte, 'crescimento')
+  // A fila manda direto para o grupo certo dos assinantes, e o grupo vai no endereço.
+  assert.equal(ler('aba=assinaturas&grupo=falha_pagamento').grupo, 'falha_pagamento')
+  assert.equal(ler('aba=assinaturas&grupo=xyz').grupo, 'vigentes')
+  assert.match(m.urlDe(ler('aba=assinaturas&grupo=falha_pagamento')), /grupo=falha_pagamento/)
   assert.deepEqual(m.AREAS.map(a => m.partePadrao(a.id)), ['comando', 'usuarios', 'crescimento', 'financeiro', 'conteudo', 'lembretes', 'ajustes'])
 
   // ---------- Financeiro › Ganhos ----------

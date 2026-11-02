@@ -76,14 +76,23 @@ try {
   // ---------- Fila de atenção ----------
   const fila = m.filaDeAtencao({
     eventos: [{ id: 1, status_processamento: 'erro', recebido_em: '2026-10-17T10:00:00Z' }, { id: 2, status_processamento: 'erro', recebido_em: '2026-10-17T11:00:00Z' }, { id: 3, status_processamento: 'processado', recebido_em: '2026-10-17T12:00:00Z' }],
-    lidosPagamento: new Set(['2']), assinaturas: [...assinaturas, assinatura('c', 'mensal', 'cartao', 1, { status: 'falha_pagamento' })],
+    lidosPagamento: new Set(['2']), assinaturas: [...assinaturas, assinatura('c', 'mensal', 'cartao', 1, { status: 'falha_pagamento' }), { id_usuario: 'novo', plano: 'anual', status: 'falha_pagamento', meio: 'cartao', criada_em: new Date(agora - 86_400_000).toISOString(), ultima_atualizacao: new Date(agora - 86_400_000).toISOString() }, { id_usuario: 'velho', plano: 'anual', status: 'falha_pagamento', meio: 'cartao', criada_em: '2026-01-01T00:00:00Z', ultima_atualizacao: '2026-01-01T00:00:00Z' }],
     pendenciasConteudo: 0, novosParados: [], fontesIndisponiveis: ['sinais'], agora,
   })
   assert.equal(fila[0].id, 'processador', 'falha do processador vem primeiro (crítica)')
   assert.equal(fila[0].contagem, 1, 'aviso marcado como visto sai da contagem')
-  assert.equal(fila[0].titulo, 'aviso do processador com falha')
+  assert.equal(fila[0].titulo, 'aviso do Mercado Pago com falha')
   assert.ok(fila.some(i => i.id === 'fonte:sinais' && i.grupo === 'tecnico'), 'fonte que falhou vira item, nunca zero')
-  assert.ok(fila.some(i => i.id === 'falha-pagamento'))
+  const ren = fila.find(i => i.id === 'falha-pagamento'), nova = fila.find(i => i.id === 'recusado-ao-assinar')
+  assert.ok(ren, 'renovação recusada entra na fila')
+  assert.equal(nova?.severidade, 'oportunidade', 'recusa ao assinar é oportunidade, não alarme')
+  assert.equal(nova?.contagem, 1, 'recusa ao assinar com mais de 14 dias sai sozinha')
+  assert.ok(nova.resolver?.length === 1 && ren.resolver?.length >= 1, 'os dois têm Resolvido')
+  const recusadas = [assinatura('c', 'mensal', 'cartao', 1, { status: 'falha_pagamento' }), { id_usuario: 'novo', plano: 'anual', status: 'falha_pagamento', meio: 'cartao', criada_em: new Date(agora - 86_400_000).toISOString(), ultima_atualizacao: new Date(agora - 86_400_000).toISOString() }]
+  const depois = m.filaDeAtencao({ eventos: [], lidosPagamento: new Set([...ren.resolver, ...nova.resolver]), assinaturas: recusadas, pendenciasConteudo: 0, novosParados: [], fontesIndisponiveis: [], agora })
+  assert.ok(!depois.some(i => i.id === 'falha-pagamento' || i.id === 'recusado-ao-assinar'), '"Resolvido" tira os dois da fila')
+  const mudou = m.filaDeAtencao({ eventos: [], lidosPagamento: new Set(ren.resolver), assinaturas: [{ ...recusadas[0], ultima_atualizacao: new Date(agora).toISOString() }], pendenciasConteudo: 0, novosParados: [], fontesIndisponiveis: [], agora })
+  assert.ok(mudou.some(i => i.id === 'falha-pagamento'), 'se a assinatura muda depois, o alerta volta')
   assert.ok(!fila.some(i => i.id === 'conteudo'), 'contagem zero não entra na fila')
   for (let i = 1; i < fila.length; i++) assert.ok(m.ORDEM_SEVERIDADE[fila[i - 1].severidade] <= m.ORDEM_SEVERIDADE[fila[i].severidade], 'ordenada por severidade')
 

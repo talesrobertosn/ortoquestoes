@@ -29,8 +29,8 @@ const { erros, contexto, abrir, fechar } = await iniciar()
 const PARTES = {
   '': 'Agora', 'aba=usuarios': 'Usuários', 'aba=crescimento': 'Aquisição e funil', 'aba=retencao': 'Retenção e ritmo', 'aba=perfis': 'Perfis e origem',
   'aba=conteudo': 'Relatos e avaliações', 'aba=questoes': 'Editar questões', 'aba=simulados': 'Simulados', 'aba=opinioes': 'Opiniões dos flashcards',
-  'aba=financeiro': 'Ganhos', 'aba=financeiro&sub=previsao': 'Previsão', 'aba=assinaturas': 'Assinaturas', 'aba=cobrancas': 'Pagamentos', 'aba=pagamentos': 'Avisos de pagamento',
-  'aba=lembretes': 'Lembretes', 'aba=cartas': 'Cartas pessoais', 'aba=envios': 'Relatórios e histórico', 'aba=todas': 'Todas as cartas',
+  'aba=financeiro': 'Recebido', 'aba=financeiro&sub=previsao': 'Previsão', 'aba=assinaturas': 'Assinantes', 'aba=cobrancas': 'Extrato', 'aba=pagamentos': 'Avisos do Mercado Pago',
+  'aba=lembretes': 'Lembretes', 'aba=cartas': 'Cartas pessoais', 'aba=envios': 'Enviados', 'aba=todas': 'Modelos',
   'aba=ajustes': 'Acesso e pagamentos', 'aba=ajustes&sub=aviso': 'Aviso no topo do site', 'aba=exportar': 'Exportar dados',
 }
 const titulo = p => p.locator('h1.a3-titulo-1').first().innerText()
@@ -88,7 +88,7 @@ try {
   ok(`${Object.keys(PARTES).length} telas e abas abrem com o título certo e sem erro`)
 
   // ---------- 3. Endereços antigos ----------
-  const legado = { hoje: 'Agora', geral: 'Agora', agora: 'Agora', receita: 'Ganhos', previsao: 'Previsão', retencao: 'Retenção e ritmo', operacoes: 'Lembretes', configuracoes: 'Acesso e pagamentos', aviso: 'Aviso no topo do site', relatos: 'Relatos e avaliações', avaliacoes: 'Relatos e avaliações', avisos: 'Avisos de pagamento', mensal: 'Relatórios e histórico' }
+  const legado = { hoje: 'Agora', geral: 'Agora', agora: 'Agora', receita: 'Recebido', previsao: 'Previsão', retencao: 'Retenção e ritmo', operacoes: 'Lembretes', configuracoes: 'Acesso e pagamentos', aviso: 'Aviso no topo do site', relatos: 'Relatos e avaliações', avaliacoes: 'Relatos e avaliações', avisos: 'Avisos do Mercado Pago', mensal: 'Enviados' }
   for (const [aba, rotulo] of Object.entries(legado)) {
     await abrir(pc.p, `?aba=${aba}`)
     assert.equal(await titulo(pc.p), rotulo, `?aba=${aba}`)
@@ -106,7 +106,7 @@ try {
   // Ir direto a uma parte (pela busca): clicar numa área abre a última parte vista nela, o que também é uma entrada.
   await pc.p.keyboard.press('Control+k'); await pc.p.keyboard.type('Ganhos'); await pc.p.waitForTimeout(200); await pc.p.keyboard.press('Enter')
   await pc.p.waitForTimeout(500)
-  assert.equal(await titulo(pc.p), 'Ganhos')
+  assert.equal(await titulo(pc.p), 'Recebido', 'o nome antigo ainda acha a parte')
   await pc.p.goBack(); await pc.p.waitForTimeout(600)
   assert.equal(await titulo(pc.p), 'Usuários', 'Voltar do navegador volta à parte anterior')
   assert.match(pc.p.url(), /filtro=novos/, 'e com o filtro')
@@ -129,9 +129,9 @@ try {
   await paleta.waitFor({ timeout: 5_000 })
   await pc.p.keyboard.type('pagamentos')
   await pc.p.waitForTimeout(300)
-  assert.ok(await paleta.getByText('Pagamentos', { exact: true }).count(), `acha a parte: ${JSON.stringify(await paleta.innerText())}`)
+  assert.ok(await paleta.getByText('Extrato', { exact: true }).count(), `acha a parte: ${JSON.stringify(await paleta.innerText())}`)
   await pc.p.keyboard.press('Enter'); await pc.p.waitForTimeout(600)
-  assert.ok(['Pagamentos', 'Avisos de pagamento'].includes(await titulo(pc.p)), 'Enter navega')
+  assert.ok(['Extrato', 'Avisos do Mercado Pago'].includes(await titulo(pc.p)), 'Enter navega')
   await pc.p.keyboard.press('Control+k')
   await pc.p.keyboard.type('Marina')
   await pc.p.waitForTimeout(400)

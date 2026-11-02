@@ -9,7 +9,7 @@ import { serieLimpa, usarFunil, usarRetencao, usarSerie } from '../dados/consult
 import { usarPainel } from '../dados/painel'
 import type { LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
-import { PERIODOS, defParte } from '../rotas'
+import { PERIODOS_CRESCIMENTO, defParte, rotuloPeriodo } from '../rotas'
 import { Icone } from '../ui/Icone'
 import { diaDaSerie, inteiro, pct } from '../ui/formato'
 import { Funil, Legenda, MapaCalor, Quadro, Ranking, SerieTempo } from '../ui/graficos'
@@ -57,10 +57,20 @@ function Aquisicao() {
   const p = usarPainel()
   const nav = usarNav()
   const periodo = nav.estado.periodo
-  const serieQ = usarSerie(periodo * 2)
+  const tudo = periodo === 0
+  // "Desde sempre": a série inteira (até um ano), cortada no primeiro dia com cadastro ou estudo.
+  const serieQ = usarSerie(tudo ? 365 : periodo * 2)
   const { funil, carregando } = usarFunil()
   const [agrupar, definirAgrupar] = useState<'semana' | 'mes'>('semana')
-  const cortes = useMemo(() => cortarPeriodos(serieLimpa(serieQ.dados), periodo), [serieQ.dados, periodo])
+  const cortes = useMemo(() => {
+    const limpa = serieLimpa(serieQ.dados)
+    if (!tudo || !limpa) return cortarPeriodos(limpa, periodo)
+    const ordenada = [...limpa].sort((a, b) => String(a.dia).localeCompare(String(b.dia)))
+    const primeiro = ordenada.findIndex(d => Number(d.cadastros) > 0 || Number(d.ativos) > 0)
+    const desde = primeiro < 0 ? ordenada : ordenada.slice(primeiro)
+    return cortarPeriodos(desde, Math.max(1, desde.length))
+  }, [serieQ.dados, periodo, tudo])
+  const janela = tudo ? `Desde o começo (${cortes?.atual.length ?? '…'} dias)` : `Últimos ${periodo} dias`
   const num = cortes ? numerosDoPeriodo(cortes) : null
   const ritmo = useMemo(() => {
     if (!p.usuariosReais || !p.reais) return null
@@ -74,18 +84,18 @@ function Aquisicao() {
   const esteCad = cad?.[cad.length - 1]?.n ?? 0, esteAss = ass?.[ass.length - 1]?.n ?? 0
   return <div className="a3-pilha a3-pilha--larga">
     <Cabeca area="Crescimento" titulo={parte.rotulo} pergunta={parte.pergunta}
-      acoes={<Segmento rotulo="Período" valor={periodo} aoMudar={d => nav.ajustar({ periodo: d })} opcoes={PERIODOS.map(d => [d, `${d} dias`] as [typeof d, string])} />} />
+      acoes={<Segmento rotulo="Período" valor={periodo} aoMudar={d => nav.ajustar({ periodo: d })} opcoes={PERIODOS_CRESCIMENTO.map(d => [d, rotuloPeriodo(d)] as [typeof d, string])} />} />
     <section className="a3-painel" aria-label="Aquisição no período">
       <div className="a3-faixa-metricas" style={{ '--colunas': 4 } as React.CSSProperties}>
-        <Metrica metrica="cadastros" valor={num ? inteiro(num.cadastros.atual) : serieQ.carregando ? '…' : null} variacao={num?.cadastros} tendencia={cortes?.atual.map(d => d.cadastros)} />
-        <Metrica metrica="estudaramDia" valor={num ? inteiro(num.estudaramDia.atual) : serieQ.carregando ? '…' : null} unidade="por dia" variacao={num?.estudaramDia} tendencia={cortes?.atual.map(d => d.ativos)} />
-        <Metrica metrica="questoes" valor={num ? inteiro(num.questoes.atual) : serieQ.carregando ? '…' : null} variacao={num?.questoes} tendencia={cortes?.atual.map(d => d.respostas)} />
+        <Metrica metrica="cadastros" valor={num ? inteiro(num.cadastros.atual) : serieQ.carregando ? '…' : null} variacao={tudo ? undefined : num?.cadastros} tendencia={cortes?.atual.map(d => d.cadastros)} />
+        <Metrica metrica="estudaramDia" valor={num ? inteiro(num.estudaramDia.atual) : serieQ.carregando ? '…' : null} unidade="por dia" variacao={tudo ? undefined : num?.estudaramDia} tendencia={cortes?.atual.map(d => d.ativos)} />
+        <Metrica metrica="questoes" valor={num ? inteiro(num.questoes.atual) : serieQ.carregando ? '…' : null} variacao={tudo ? undefined : num?.questoes} tendencia={cortes?.atual.map(d => d.respostas)} />
         <Metrica rotulo={`Conversão · ${agrupar === 'semana' ? 'esta semana' : 'este mês'}`} valor={ritmo ? pct(porcentagem(esteAss, esteCad)) : null} qualidade="derivado"
           nota={`${esteAss} ${esteAss === 1 ? 'assinante novo' : 'assinantes novos'} sobre ${esteCad} ${esteCad === 1 ? 'cadastro' : 'cadastros'} (correlação no tempo, não a mesma pessoa)`} />
       </div>
     </section>
 
-    <Quadro titulo="Cadastros e pessoas que estudaram, por dia" descricao={`Últimos ${periodo} dias, mesmo eixo (são pessoas). Hoje ainda está em andamento.`} fonte="serie_diaria_admin · dia de São Paulo" qualidade="confirmado"
+    <Quadro titulo="Cadastros e pessoas que estudaram, por dia" descricao={`${janela}, mesmo eixo (são pessoas). Hoje ainda está em andamento.`} fonte="serie_diaria_admin · dia de São Paulo" qualidade="confirmado"
       legenda={<Legenda itens={[{ nome: 'Pessoas que estudaram', chave: 'linha' }, { nome: 'Cadastros', chave: 'serie2' }]} />}
       estado={serieQ.carregando && !serieQ.dados ? <Carregando linhas={5} /> : !cortes ? <Estado compacto tipo="erro" titulo="Série indisponível" /> : undefined}
       tabela={cortes ? { cabecalho: ['Dia', 'Cadastros', 'Estudaram', 'Questões'], linhas: cortes.atual.map(d => [diaDaSerie(d.dia, true), d.cadastros, d.ativos, inteiro(d.respostas)]) } : null}>

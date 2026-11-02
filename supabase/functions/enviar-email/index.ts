@@ -216,13 +216,18 @@ const esperar = (ms: number) => new Promise((resolver) => setTimeout(resolver, m
 async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinzenal = false) {
   const mes = quinzenal ? quinzenaValida(mesPedido) : mesValido(mesPedido)
   const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80))
+  // Busca uma janela grande e pula quem está segurado (descadastro ou cadência) sem parar o lote:
+  // antes a janela era do tamanho do lote, e os segurados no começo da fila travavam o envio dos outros.
   const r = quinzenal
-    ? await banco('rpc/destinatarios_relatorio_quinzenal', { method: 'POST', body: JSON.stringify({ p_ref: mes, p_limite: limite }) })
-    : await banco('rpc/destinatarios_relatorio_mensal', { method: 'POST', body: JSON.stringify({ p_mes: mes, p_limite: limite }) })
+    ? await banco('rpc/destinatarios_relatorio_quinzenal', { method: 'POST', body: JSON.stringify({ p_ref: mes, p_limite: JANELA_RELATORIO }) })
+    : await banco('rpc/destinatarios_relatorio_mensal', { method: 'POST', body: JSON.stringify({ p_mes: mes, p_limite: JANELA_RELATORIO }) })
   if (!r.ok) throw new Error('consulta_destinatarios_falhou')
   const destinatarios = (await r.json() as Array<{ id_usuario: string }>).map((d) => d.id_usuario)
-  let enviados = 0, falhas = 0, adiados = 0, recusados = 0
+  let enviados = 0, falhas = 0, adiados = 0, recusados = 0, vistos = 0
+  const inicio = Date.now()
   for (const id of destinatarios) {
+    if (enviados + falhas >= limite || Date.now() - inicio > ORCAMENTO_LOTE_MS) break
+    vistos++
     if (!await podeReceber(id, 'relatorio')) { recusados++; continue }
     // Cadência: quem recebeu e-mail há menos de 48 h (ou 3 em 14 dias) fica para o próximo lote.
     const anteriores = await anterioresDe(id).catch(() => [] as EnvioAnterior[])
@@ -249,8 +254,18 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     }
     await esperar(600)
   }
-  return { mes, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
+  return { mes, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: restam(vistos, destinatarios.length, JANELA_RELATORIO, enviados + falhas) }
 }
+
+/** Janelas de busca (o máximo que cada consulta do banco devolve) e o tempo de cada chamada. */
+const JANELA_RELATORIO = 500
+const JANELA_LEMBRETE = 200
+const ORCAMENTO_LOTE_MS = 40_000
+/**
+ * Ainda há gente para a próxima chamada? Sim se o lote parou antes do fim da janela (limite ou tempo),
+ * ou se a janela veio cheia e esta volta mandou alguém (se ninguém saiu, os da janela estão todos segurados).
+ */
+const restam = (vistos: number, total: number, janela: number, feitos: number) => vistos < total || (total >= janela && feitos > 0)
 
 const TIPO_DA_CAMPANHA: Record<CampanhaLembrete, TipoCarta> = { nunca: 'nunca_comecou', tres_dias: 'pausa', sete_dias: 'sumiu', renovacao_pix: 'pix_3_dias', renovacao_pix_hoje: 'pix_hoje' }
 
@@ -266,12 +281,15 @@ const campanhaValida = (c?: string): CampanhaLembrete | null => (CAMPANHAS as re
 async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number | undefined, por: string | null) {
   const limite = Math.max(1, Math.min(Number(limitePedido) || 40, 80))
   const r = ehPix(campanha)
-    ? await banco('rpc/destinatarios_renovacao_pix', { method: 'POST', body: JSON.stringify({ p_etapa: campanha === 'renovacao_pix_hoje' ? 'hoje' : 'tres_dias', p_limite: limite }) })
-    : await banco('rpc/destinatarios_lembrete', { method: 'POST', body: JSON.stringify({ p_campanha: campanha, p_limite: limite }) })
+    ? await banco('rpc/destinatarios_renovacao_pix', { method: 'POST', body: JSON.stringify({ p_etapa: campanha === 'renovacao_pix_hoje' ? 'hoje' : 'tres_dias', p_limite: JANELA_LEMBRETE }) })
+    : await banco('rpc/destinatarios_lembrete', { method: 'POST', body: JSON.stringify({ p_campanha: campanha, p_limite: JANELA_LEMBRETE }) })
   if (!r.ok) throw new Error('consulta_destinatarios_falhou')
   const destinatarios = await r.json() as Array<{ id_usuario: string; referencia: string; email: string; nome: string | null; respondidas: number; dias_fora?: number; dias_restantes?: number; plano?: string; fim_periodo?: string }>
-  let enviados = 0, falhas = 0, adiados = 0, recusados = 0
+  let enviados = 0, falhas = 0, adiados = 0, recusados = 0, vistos = 0
+  const inicio = Date.now()
   for (const d of destinatarios) {
+    if (enviados + falhas >= limite || Date.now() - inicio > ORCAMENTO_LOTE_MS) break
+    vistos++
     if (!await podeReceber(d.id_usuario, 'lembretes')) { recusados++; continue }
     // Cadência (o "Pix termina hoje" é transacional e nunca é adiado).
     const anteriores = await anterioresDe(d.id_usuario).catch(() => [] as EnvioAnterior[])
@@ -307,7 +325,7 @@ async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number 
     }
     await esperar(600)
   }
-  return { campanha, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: destinatarios.length === limite }
+  return { campanha, enviados, falhas, adiados, recusados, lote: destinatarios.length, talvez_restem: restam(vistos, destinatarios.length, JANELA_LEMBRETE, enviados + falhas) }
 }
 
 async function registrar(corpo: Record<string, unknown>) {
