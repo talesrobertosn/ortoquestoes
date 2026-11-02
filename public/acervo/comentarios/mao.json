@@ -32296,6 +32296,39 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1902": {
+  "conceito": "Nas craniossinostoses sindrômicas, a regra é a herança autossômica dominante, e a banca pergunta pela exceção. Ela tem nome: **CARPENTER**.\n\nA síndrome de CARPENTER é causada por variantes bialélicas, ou seja, nas duas cópias do gene: RAB23, na forma mais comum, ou MEGF8, na mais rara. Os dois codificam reguladores negativos da via de sinalização hedgehog, o que liga a doença às suturas cranianas. O quadro central é craniossinostose com polissindactilia, e a criptorquidia em meninos é quase universal (PMC11220001; PMC1867103). A polissindactilia é a pista clínica que distingue esses pacientes.",
+  "correta": "**C: Carpenter.** É a craniossinostose por variantes bialélicas de RAB23 ou MEGF8, ou seja, de transmissão autossômica recessiva (PMC11220001; PMC1867103).",
+  "incorretas": {
+   "A": "**Dominante.** CROUZON segue a regra das síndromes com craniossinostose, sem as alterações de mão de APERT.",
+   "B": "**Dominante, e a mais cobrada na mão.** A mão de APERT é famosa pela sindactilia complexa (Green, 8ª ed., cap. 36, p. 1389), mas a herança é dominante, em geral por mutação nova.",
+   "D": "**Dominante.** PFEIFFER combina craniossinostose com polegares e háluxes largos, também sem o padrão recessivo.",
+   "E": "**Dominante.** SAETHRE-CHOTZEN é outra síndrome do mesmo grupo, igualmente fora da exceção."
+  },
+  "referencias": [
+   "The phenotype of MEGF8-related Carpenter syndrome, PMC11220001",
+   "RAB23 Mutations in Carpenter Syndrome, PMC1867103",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 36, p. 1389"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1903": {
+  "conceito": "Mastigar é, sobretudo, mover a mandíbula com força. Quem faz isso são os **quatro músculos primários da mastigação**: temporal, masseter, pterigoideo medial e pterigoideo lateral. Todos se prendem aos ramos da mandíbula e são inervados pelo trigêmeo (StatPearls, Anatomy, Head and Neck, Mastication Muscles).\n\nO **digástrico** tem outra função principal. Ele tem dois ventres e ajuda a abrir a boca, com o ventre anterior saindo da fossa digástrica da mandíbula e chegando ao hioide. Por isso, o StatPearls o coloca entre os **acessórios**, ao lado do milo-hioideo e do gênio-hioideo. Não é que ele não participe; ele apenas não está na lista clássica dos quatro.",
+  "correta": "**B: digástrico.** É um músculo acessório e não está entre os quatro primários da mastigação (StatPearls, Mastication Muscles).",
+  "incorretas": {
+   "A": "**Um dos quatro.** O pterigoideo lateral protrui a mandíbula e abre a boca (StatPearls, Mastication Muscles).",
+   "C": "**Um dos quatro.** O temporal fecha e retrai a mandíbula (StatPearls, Mastication Muscles).",
+   "D": "**Um dos quatro.** O masseter é o mais lembrado, por ser o elevador potente e palpável (StatPearls, Masseter Muscle).",
+   "E": "**Um dos quatro.** O pterigoideo medial ajuda a fechar a mandíbula (StatPearls, Mastication Muscles)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Anatomy, Head and Neck, Mastication Muscles (NBK541027)",
+   "StatPearls (NCBI Bookshelf), Masseter Muscle (NBK539869)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1904": {
   "conceito": "A queimadura elétrica de alta voltagem engana: a pele pode ter só pontos de entrada e saída, mas a corrente cozinha músculo, nervo e vaso por dentro, e o edema dentro dos compartimentos fechados vira síndrome compartimental.\n\n**A diferença entre as duas incisões.** A **escarotomia** corta a escara de pele queimada que aperta como um garrote; a **fasciotomia** abre a fáscia dos compartimentos musculares. No queimado comum, o edema da musculatura intrínseca já pode levar a uma síndrome compartimental que exige fasciotomia (Green, cap. 57, p. 2122).\n\n**Na lesão elétrica.** As técnicas de descompressão são **fundamentais** no tratamento inicial; as escarotomias devem ser **combinadas com fasciotomias**, descomprimindo dedos, túnel do carpo e canal de GUYON, abordando todos os compartimentos dorsais e palmares **em 6 a 8 horas**; às vezes é preciso abrir o epimísio. Edema, dor ao movimento passivo e firmeza geralmente bastam para o diagnóstico. Escarotomias podem ser feitas à beira do leito, mas **fasciotomias vão ao centro cirúrgico e são emergência**, que pode separar a amputação do salvamento do membro (Green, cap. 57, p. 2142).\n\n> **Na prova:** síndrome compartimental na queimadura ELÉTRICA = FASCIOTOMIA (centro cirúrgico, emergência, em 6 a 8 horas), com liberação do túnel do carpo e do canal de GUYON. Escarotomia sozinha não resolve.",
   "correta": "**D: fasciotomia.** Na lesão elétrica, a descompressão dos compartimentos por fasciotomia é emergência e decide entre salvar ou perder o membro (Green, cap. 57, p. 2142).",
@@ -32307,6 +32340,128 @@
   },
   "referencias": [
    "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução), cap. 57 (A mão queimada), p. 2122 e 2142"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1905": {
+  "conceito": "Uma ferida que não fecha, sobre uma cicatriz antiga de queimadura, em alguém de 62 anos: isso deve soar como alarme. É a **úlcera de MARJOLIN**, a transformação maligna de uma cicatriz crônica.\n\nA latência é longa, com média de cerca de 30 a 35 anos depois da queimadura em uma revisão, e cerca de 28 anos em outra, com casos entre 2 meses e 72 anos (PMC11847549; PMC13092995). O tipo mais comum é o carcinoma espinocelular, em cerca de 71% (PMC9666024). A degeneração é incomum, em cerca de 0,77% a 2% das cicatrizes (PMC12481854), mas a conduta é sempre a mesma: biopsiar.\n\nO Green ajuda a fixar o motivo: lesões crônicas da pele da mão também podem ser tumor, e a ferida que não cicatriza merece investigação (8ª ed., cap. 58).",
+  "correta": "**B: úlcera de Marjolin.** É a lesão ulcerada na cicatriz de queimadura, depois de décadas (PMC11847549).",
+  "alerta": "A alternativa E também descreve a histologia mais comum da úlcera de MARJOLIN, o carcinoma espinocelular (PMC9666024). A letra B é a mais específica para o quadro e foi mantida.",
+  "incorretas": {
+   "A": "**Fica no estômago.** A úlcera de CURLING é uma lesão de estresse gastroduodenal, no queimado agudo, e não na pele.",
+   "C": "**Mesmo erro.** Úlcera de estresse é uma lesão de mucosa digestiva.",
+   "D": "**Tipo menos comum aqui.** O basocelular é mais raro nesse contexto do que o espinocelular (PMC9666024).",
+   "E": "**A mais próxima.** É a histologia habitual (PMC9666024), mas o nome clínico da lesão em cicatriz é MARJOLIN, e é isso que a banca pergunta."
+  },
+  "referencias": [
+   "From perineal burn scar to Marjolin ulcer, PMC11847549",
+   "Squamous Cell Carcinoma in a Burn Scar, PMC13092995",
+   "Aggressive Acute Marjolin's Ulcer, PMC9666024",
+   "Post-traumatic acute Marjolin ulcer, PMC12481854",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 58"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1906": {
+  "conceito": "Uma queimadura de 36% é um problema de temperatura tanto quanto de pele. A pele perdida era o que mantinha o calor. Por isso, a regra do transporte é: **cobrir limpo, seco, e aquecer**.\n\nOs guias de primeiros socorros concordam em evitar o excesso de resfriamento, em especial nas grandes queimaduras, em crianças e idosos (PMC8291991). O resfriamento prolongado pode levar à hipotermia em adultos com mais de 25% da superfície queimada, e o gelo nunca é adequado, porque pode aprofundar a lesão e causar hipotermia (PMC3038405; PMC4653976). Um guia de atendimento em ambientes de campo fala em pano limpo e seco como curativo, em lugar dos úmidos, e coloca a prevenção da hipotermia entre as prioridades (PMC11571820). Desbridar pode esperar pelo centro de queimados.",
+  "correta": "**D: cobrir as lesões com compressas estéreis e secas e manter a paciente aquecida.** Protege a ferida e evita a hipotermia durante o transporte (PMC8291991; PMC11571820).",
+  "incorretas": {
+   "A": "**Atrasa e não é a prioridade.** Antes da transferência, o foco é via aérea, volume e temperatura. O desbridamento é um tempo posterior.",
+   "B": "**Antes da hora.** O curativo tópico específico é decidido no centro de queimados, e uma compressa úmida ainda resfriaria a paciente.",
+   "C": "**Risco de hipotermia.** A compressa fria e úmida em 36% da superfície pode esfriar demais a paciente (PMC8291991).",
+   "E": "**A opção perigosa.** O gelo nunca é adequado (PMC4653976)."
+  },
+  "referencias": [
+   "A Rapid Review of Burns First Aid Guidelines, PMC8291991",
+   "Pre-hospital care in burn injury, PMC3038405",
+   "Minor burn management, PMC4653976",
+   "Burn Wound Care Strategies for the Battlefield, PMC11571820"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1907": {
+  "conceito": "Queimadura \"intermediária\" ou de espessura parcial é a que vive na derme, e o que a salva é o que sobrou lá embaixo: folículos e glândulas guardam células capazes de refazer a epiderme. Por isso, ela pode fechar sozinha.\n\nO StatPearls detalha: a **superficial** é rosa, úmida, com bolhas, muito dolorosa, e cicatriza em 10 a 15 dias; a **profunda** atinge a derme reticular, lesa nervos e anexos, e geralmente leva 3 semanas ou mais (Thermal Burns; Burn Classification). Daí sai o número da alternativa correta: com tratamento adequado, de 2 a 3 semanas.\n\nAs erradas descrevem outras lesões: o tecido subcutâneo e o aspecto coriáceo pertencem à queimadura de espessura total, e o enxerto precoce é a conduta para ela, e não para a que pode cicatrizar sozinha.",
+  "correta": "**D: podem epitelizar em 2 ou 3 semanas com tratamento adequado.** É o tempo descrito para as queimaduras dérmicas, graças aos anexos preservados (StatPearls, Thermal Burns).",
+  "incorretas": {
+   "A": "**É a de espessura total.** Atingir o subcutâneo passa da definição de espessura parcial (StatPearls, Burn Classification).",
+   "B": "**Descreve a de espessura total.** O aspecto de couro é típico dela, e ela costuma ser insensível.",
+   "C": "**Não é a característica definidora.** Pode infectar, mas a alta probabilidade não é o que a distingue.",
+   "E": "**Só se não fechar.** O enxerto precoce é para a lesão profunda, que não epitelizaria sozinha."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Thermal Burns (NBK430773)",
+   "StatPearls (NCBI Bookshelf), Burn Classification (NBK539773)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1908": {
+  "conceito": "Criança pequena, panela no fogão: a história se repete nas emergências. Em Parkland, uma série de 35 anos encontrou a escaldadura como principal causa de internação pediátrica, com 42%, seguida da chama, com 29%, e do contato, com 10% (PubMed 26613626). Em outra série pediátrica, a escaldadura chegou a 83% (PMC11023416).\n\nPor que tanta diferença em relação ao adolescente? Porque o risco acompanha o comportamento: a criança pequena alcança o que está quente, mas não entende o perigo. Com a idade, a chama assume o primeiro lugar; depois dos 10 anos, ela passa a ser a causa principal (PMC11023416). Do ponto de vista prático, isso torna a prevenção em casa o ponto central.",
+  "correta": "**B: líquido superaquecido.** A escaldadura é a causa mais comum nas séries pediátricas (PubMed 26613626; PMC11023416).",
+  "incorretas": {
+   "A": "**É a do adolescente.** A chama domina na faixa mais velha (PMC11023416).",
+   "C": "**Rara nessa idade.** A alta voltagem é típica de acidentes de trabalho em adultos.",
+   "D": "**Acontece, mas não lidera.** A boca na tomada ou no fio é uma lesão clássica na criança pequena, porém menos frequente do que a escaldadura.",
+   "E": "**Menos frequente.** Os agentes químicos têm contexto próprio, e não lideram as séries."
+  },
+  "referencias": [
+   "Epidemiology of pediatric burns at Parkland Hospital, PubMed 26613626",
+   "Pediatric Burns: Single Institution Review, PMC11023416"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1909": {
+  "conceito": "Por que uma queimadura incha tanto, inclusive longe da ferida? Porque o capilar vaza. O tecido lesado libera mediadores, a parede do vaso fica mais permeável e o líquido, com proteínas, sai para o interstício. Uma revisão descreve exatamente isso: perda de fluido para o tecido queimado, por aumento da permeabilidade capilar a fluidos e macromoléculas e um aumento modesto da pressão hidrostática (PMC5214064).\n\nA consequência é dupla: hipovolemia e edema, que atinge o máximo em torno de 12 a 24 horas nas queimaduras grandes (PMC3671671). Por isso a reposição não é uma opção: é o tratamento da queimadura grave.",
+  "correta": "**A: aumento da permeabilidade capilar.** É o mecanismo central, descrito nas revisões sobre a fisiopatologia da queimadura (PMC5214064).",
+  "incorretas": {
+   "B": "**Não explica o vazamento.** Espasmo arterial reduz o fluxo, sem criar a saída de líquido e proteínas.",
+   "C": "**Só veias não bastam.** A dilatação venosa não muda a permeabilidade, que é a chave do edema (PMC5214064).",
+   "D": "**Pode piorar, mas não é a causa.** A linfa pode não dar conta do volume, sem ser ela o que dispara o edema.",
+   "E": "**Daria isquemia.** Uma obstrução arterial não produz o edema generalizado da queimadura."
+  },
+  "referencias": [
+   "Burns: Pathophysiology of Systemic Complications, PMC5214064",
+   "Curbing Inflammation in Burn Patients, PMC3671671"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1910": {
+  "conceito": "A lipoabdominoplastia de SALDANHA nasceu de um problema concreto. O grupo dele relatava 60% de seroma antes de limitar a dissecção e preservar a **fáscia de Scarpa** (PMC13153472). A ideia é simples: abaixo do umbigo, manter a fáscia de Scarpa e a gordura profunda, conservando os linfáticos e os vasos, e limitar o descolamento à região entre as bordas mediais dos retos (PMC4959978).\n\nA lipoaspiração superficial, herdada de DE SOUZA PINTO, é outro pilar da técnica, com a função de liberar o retalho (PMC13153472). Uma metanálise recente mostrou redução significativa do seroma com a preservação (RR 0,34), embora os resultados sobre perfusão sejam mais discretos, e alguns autores ainda discordem (PubMed 42214977; PubMed 41366104).",
+  "correta": "**A: preservar a fáscia de Scarpa na região infraumbilical.** É o ponto central da técnica, que reduz o seroma (PMC13153472; PubMed 42214977).",
+  "incorretas": {
+   "B": "**É o que a técnica evita.** Na clássica, o descolamento é amplo; aqui, limita-se ao túnel entre os retos (PMC4959978).",
+   "C": "**Só parte do princípio.** A lipoaspiração superficial é um pilar da técnica, mas o que a define é a preservação da fáscia (PMC13153472).",
+   "D": "**Não é o que a caracteriza.** A transposição do umbigo não é o traço distintivo da técnica.",
+   "E": "**Contraria a ideia.** A proposta é preservar a gordura profunda infraumbilical, e não aspirá-la (PMC4959978)."
+  },
+  "referencias": [
+   "Drainless Lipoabdominoplasty, PMC13153472",
+   "Deep-Plane Lipoabdominoplasty in East Asians, PMC4959978",
+   "Impact of Scarpa's fascia preservation: meta-analysis, PubMed 42214977",
+   "Scarpa Fascia Preservation and Skin Perfusion, PubMed 41366104"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1911": {
+  "conceito": "O queloide de lóbulo tem um detalhe a favor do paciente: o lóbulo é fácil de comprimir. A pressão sobre a cicatriz é uma das bases do tratamento dos queloides, e os **brincos de pressão** aproveitam essa anatomia.\n\nO queloide é uma cicatriz com crescimento além das bordas e colágeno desorganizado (StatPearls, Hypertrophic Scarring Keloids; PMC12495451). Retirar sem nada mais tende à recidiva, e daí a busca por associações: corticoide intralesional, radioterapia e pressão. A banca quer o que seria o tratamento primário, menos agressivo e sem efeitos da radiação, especialmente porque o paciente costuma ser jovem.",
+  "correta": "**E: compressão com brincos de pressão.** É a escolha da banca, uma opção não invasiva que aproveita a anatomia do lóbulo.",
+  "alerta": "As fontes abertas consultadas não definem a compressão isolada como tratamento primário do queloide de lóbulo, e o corticoide intralesional (letra C) também é usado como primeira linha em muitos serviços. A letra E foi mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Radiação não é primeira opção.** Em geral, ela fica como associação depois da retirada, e é mais uma razão para cautela em jovens (StatPearls, Radiation Therapy in the Treatment of Keloids).",
+   "B": "**Reservada para casos selecionados.** A associação de ressecção com radiação tem seu lugar, mas não é o primeiro passo (StatPearls, Radiation Therapy in the Treatment of Keloids).",
+   "C": "**A distratora forte.** Muitos serviços usam o corticoide intralesional cedo; é por isso que a questão é discutível (veja o alerta).",
+   "D": "**Isolada, recidiva.** A ressecção sem tratamento associado tende a voltar, como é típico dessa cicatriz."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Hypertrophic Scarring Keloids (NBK537058)",
+   "StatPearls (NCBI Bookshelf), Radiation Therapy in the Treatment of Keloids (NBK499973)",
+   "Hypertrophic Scarring and Keloids, PMC12495451"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -32348,6 +32503,182 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1914": {
+  "conceito": "O retalho de ABBÉ é uma ideia engenhosa: se o lábio superior perdeu tecido, tome emprestado do inferior, levando a artéria labial junto. É um retalho de lábio que gira em seu pedículo.\n\nUma revisão de reconstrução labial o descreve como uma técnica em **dois tempos**, comum em defeitos do lábio superior: no primeiro, o retalho é levantado, gira sobre a artéria labial e entra no defeito; o pedículo é dividido semanas depois (PMC11651870). Numa série, a divisão foi feita por volta de seis semanas. Enquanto isso, a boca fica parcialmente fechada, e a anestesia exige um cuidado especial com a via aérea (PubMed 36086897).\n\nNa fissura labial operada, ele é uma solução clássica para um lábio superior curto ou apertado (PMC6441439), o que explica a expressão \"aumentar sua dimensão horizontal\".",
+  "correta": "**B: tem como objetivo reparar perda do lábio superior ou aumentar sua dimensão horizontal.** É o uso descrito (PMC11651870; PMC6441439).",
+  "incorretas": {
+   "A": "**São dois tempos.** O pedículo só é dividido em uma segunda cirurgia (PMC11651870).",
+   "C": "**Lábio trocado.** O doador costuma ser o lábio inferior, para o superior. A banca aposta na inversão.",
+   "D": "**O contrário.** O retalho é de espessura total: leva pele, músculo e mucosa, e é essa a sua força.",
+   "E": "**Injusto.** É uma técnica consagrada, e funciona muito bem nas sequelas da fissura (PMC6441439)."
+  },
+  "referencias": [
+   "Lip Reconstruction, PMC11651870",
+   "Secondary Correction of the Midline Defect of Upper Lip, PMC6441439",
+   "Airway management during Abbé flap reconstruction, PubMed 36086897"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1915": {
+  "conceito": "LE FORT dividiu as fraturas do terço médio por orientação: nível I horizontal, nível II piramidal e nível III transverso (StatPearls, Le Fort Fractures). O nível III é o mais grave, porque o traço corre pelas suturas altas e separa toda a face do crânio: é a **disjunção craniofacial** (StatPearls, Anatomy, Head and Neck, Maxilla).\n\nNa prática, a face \"flutua\". Por isso, as fraturas de nível III se associam ao complexo naso-órbito-etmoidal, e exigem cuidado com a base do crânio (PMC9486697).",
+  "correta": "**B: disjunção craniofacial.** É a descrição clássica do nível III (StatPearls, Maxilla; PMC9486697).",
+  "incorretas": {
+   "A": "**Outro padrão, mais baixo.** Fratura transalveolar fica nos dentes, abaixo mesmo do nível I.",
+   "C": "**É o nível I.** A fratura transversa baixa, ou de GUÉRIN, solta o palato (StatPearls, Le Fort Fractures).",
+   "D": "**Pode acompanhar, mas não define.** A nasoetmoidal é um complexo próprio, frequentemente associado ao nível III (PMC9486697).",
+   "E": "**É o nível II.** Piramidal e nasomaxilar são sinônimos para ele (StatPearls, Le Fort Fractures)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Le Fort Fractures (NBK526060)",
+   "StatPearls (NCBI Bookshelf), Anatomy, Head and Neck, Maxilla (NBK538527)",
+   "Le Fort III fractures: An approach to resuscitation and management, PMC9486697"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1916": {
+  "conceito": "Esta questão se resolve em dois passos: calcular a área e aplicar a fórmula. Faça com calma.\n\n**Área, pela regra dos nove.** Tronco anterior, 18%; tronco posterior, 18%; face posterior do membro inferior, 9%. Total: **45%**.\n\n**Volume, pela fórmula de Parkland.** O StatPearls dá: 4 ml por quilo, por porcentagem de superfície queimada, de cristaloide, com Ringer lactato como solução principal (Parkland Formula).\n\n4 × 75 kg × 45% = **13.500 ml em 24 horas**.\n\n**Distribuição.** Metade nas primeiras 8 horas: **6.750 ml**; a outra metade nas 16 horas seguintes. Note que, na prática, os centros costumam dar de 25% a 50% a mais do que a fórmula prevê (PMC3226577), e a fórmula é o ponto de partida, a ser ajustado pela diurese.",
+  "correta": "**C: 6.750 ml de cristaloides nas primeiras 8 horas.** Metade de 13.500 ml, calculados com 4 × 75 × 45 (StatPearls, Parkland Formula).",
+  "incorretas": {
+   "A": "**Número certo, líquido errado.** A fórmula de Parkland usa cristaloide, e não coloide (StatPearls, Parkland Formula).",
+   "B": "**Dois erros.** O volume não fecha, e o líquido não é coloide.",
+   "D": "**Volume errado.** O total de 24 horas é de 13.500 ml.",
+   "E": "**O tempo está errado.** 6.750 ml é a metade que corre nas primeiras 8 horas, e não em 24 horas."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Parkland Formula (NBK537190)",
+   "StatPearls (NCBI Bookshelf), Burn Fluid Resuscitation (NBK534227)",
+   "Burn Resuscitation, PMC3226577"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1917": {
+  "conceito": "Nariz quebrado não quer dizer sala de cirurgia aberta. A redução fechada é indicada em fraturas simples, que causam obstrução ou mudança do formato do nariz (StatPearls, Nasal Fractures), e, em geral, reservada a fraturas não cominutivas (PMC6879701).\n\nEla depende de fazer a tarefa sem abrir: realinhar, tamponar e imobilizar. O tempo importa: antes de 3 a 5 dias, o edema atrapalha; depois de 10 a 14 dias, os fragmentos começam a fixar. O StatPearls lista como contraindicações apresentação com 2 a 3 semanas ou mais e fraturas com componente naso-órbito-etmoidal ou LE FORT, que exigem redução aberta (Nasal Fracture Reduction).",
+  "correta": "**D: houver condição de realinhamento, tamponamento e imobilização externa.** É o que a técnica fechada oferece, nas fraturas simples (StatPearls, Nasal Fractures; PMC6879701).",
+  "incorretas": {
+   "A": "**Pede abordagem aberta.** A cominuição foge das fraturas simples em que o método fechado funciona (PMC6879701).",
+   "B": "**Contraindicação direta.** O componente orbitoetmoidal exige redução aberta (StatPearls, Nasal Fracture Reduction).",
+   "C": "**Tarde demais.** Depois de 2 a 3 semanas, os fragmentos já fixaram (StatPearls, Nasal Fracture Reduction).",
+   "E": "**Ferida complexa muda o plano.** Com septo exposto e lesões da pele, o tratamento é mais aberto e passa a ser reparar as partes moles."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Nasal Fracture Reduction (NBK538299)",
+   "StatPearls (NCBI Bookshelf), Nasal Fractures (NBK555912)",
+   "Effectiveness of closed reduction on nasal bone fracture, PMC6879701"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1918": {
+  "conceito": "A palavra já explica a doença: \"cripto\", escondido; \"ótia\", orelha. Na **criptotia**, o polo superior da orelha fica escondido sob a pele da região temporal. É possível puxá-lo para fora, mas ele volta quando solto, porque falta o sulco retroauricular superior e há déficit de pele naquele ponto (PMC6615414; PMC3518002).\n\nA causa considerada principal é uma alteração dos músculos auriculares, em especial do auricular superior (PMC10623107). A deformidade é comum no Japão e na Coreia do Sul, com 1 caso para cada 400 a 500 nascimentos, e rara em populações caucasianas (PMC6952124). Na criança pequena, a orelha ainda é moldável, e é possível corrigir sem cirurgia (PubMed 33071167).",
+  "correta": "**E: sepultamento do polo superior da orelha sob o couro cabeludo.** É a definição, com a parte superior sob a pele temporal (PMC6615414; PMC3518002).",
+  "incorretas": {
+   "A": "**É a orelha proeminente.** O ângulo aumentado descreve a orelha em abano, e não a orelha escondida.",
+   "B": "**É a microtia.** Redução do tamanho é outra doença.",
+   "C": "**Trata-se de outra alteração de forma.** A anti-hélice pode estar deformada na criptotia (PMC6952124), mas isso não é o que a define.",
+   "D": "**É a orelha constrita.** A orelha em forma de copo é outra anomalia, em que o polo superior se dobra, sem ficar sob a pele."
+  },
+  "referencias": [
+   "Considerations for the Management of Cryptotia, PMC3518002",
+   "Cryptotia recurrence lowering technique, PMC6615414",
+   "Anatomical external auricular muscle transposition, PMC10623107",
+   "Finite Element Analysis of Two Surgical Methods for Cryptotia, PMC6952124",
+   "Non-surgical correction of cryptotia, PubMed 33071167"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1919": {
+  "conceito": "Fechar uma fenda palatina é suturar sob tensão, em um tecido fino, com um lado virado para a boca e outro para o nariz. Se a sutura abre em algum ponto, sobra uma comunicação: a **fístula oronasal**.\n\nAs revisões citam que o risco cresce com a tensão nos retalhos, o trauma, a infecção e a perfuração, e que a palatoplastia prévia é um fator (PMC11228353). A fístula causa fala anormal, má oclusão e passagem de líquidos da boca para o nariz (PMC9495852). Por isso, a palatoplastia está entre os reparos com maior necessidade de cirurgia secundária (PMC10924352).\n\nAs outras alternativas são menos adequadas como complicação tardia: sangramento e infecção são precoces, e o refluxo nasal costuma ser um sintoma da própria fístula.",
+  "correta": "**E: fístula oronasal.** É a complicação tardia típica da palatoplastia, com falhas no fechamento (PMC11228353; PMC9495852).",
+  "alerta": "As fontes abertas consultadas descrevem bem a fístula e os fatores de risco, sem afirmar literalmente que ela é a mais frequente. Letra E mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**É o sintoma, não a causa.** A regurgitação para o nariz costuma resultar da fístula (PMC9495852).",
+   "B": "**Precoce.** Sangramento é um problema do pós-operatório imediato.",
+   "C": "**Evento do ato cirúrgico.** A laceração acontece durante a cirurgia, e pode depois levar à fístula, mas não é uma complicação tardia.",
+   "D": "**Pouco frequente e precoce.** A boa circulação do palato faz da infecção um problema menos típico, embora seja fator de risco (PMC11228353)."
+  },
+  "referencias": [
+   "Oronasal Fistula Closure and Defect Reconstruction, PMC11228353",
+   "Reconstruction of Oronasal Fistula with Tongue Flap, PMC9495852",
+   "Two-stage palatal repair, PMC10924352"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1920": {
+  "conceito": "O lifting em plano profundo muda o foco: em vez de puxar só a pele, ele trabalha abaixo do SMAS e libera os ligamentos que seguram a face. A técnica se baseia em espaços anatômicos: o espaço pré-zigomático fica entre o orbicular do olho e o corpo do zigoma, e é dissecado primeiro, seguido dos pré-massetéricos (PMC12454624; PMC11195933).\n\nPara mover a parte anterior da face, é necessária a liberação completa dos ligamentos entre o espaço pré-zigomático e os três espaços pré-massetéricos, superior, médio e inferior (PMC11195933). Essa é a parte correta da alternativa. Quanto aos nervos, o plano fica superficial ao nível em que eles correm, mas a dissecção exige atenção, e costuma ser preferida a dissecção romba (PMC12193931).",
+  "correta": "**A: envolver a dissecção e abordagem do espaço pré-zigomático e dos espaços pré-massetéricos.** É o que define a técnica (PMC11195933; PMC12454624).",
+  "alerta": "As fontes confirmam os espaços pré-zigomático e pré-massetéricos, mas não incluem o espaço mastigatório na descrição da técnica lida. A letra A foi mantida como a mais adequada.",
+  "incorretas": {
+   "B": "**É a força do retalho profundo.** Ele é usado para reposicionar a parte média da face, e não só tracionar os tecidos inferiores (PMC4827655).",
+   "C": "**Não é a característica.** A técnica é definida pelo plano da dissecção. Existem até variantes endoscópicas, sem incisão ampla (PMC11756885).",
+   "D": "**Sem base.** Os autores citam a liberação ligamentar como o caminho para resultados mais duráveis, sem essa alta morbidade como característica.",
+   "E": "**Discutível.** O plano fica perto dos ramos do nervo, e por isso se exige cuidado com a dissecção (PMC12193931)."
+  },
+  "referencias": [
+   "Systematic Approach to Deep Plane Facelift, PMC12454624",
+   "Anatomy of the Facial Glideplanes, Deep Plane Spaces, and Ligaments, PMC11195933",
+   "Current Trends in Facelift and Necklift, PMC12193931",
+   "Total Composite Flap Facelift, PMC4827655",
+   "Transtemporal Endoscopic Deep Plane Face Lift, PMC11756885"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1921": {
+  "conceito": "Questão de ética que parece confusa por causa de duas negações: a pergunta é \"o que é vedado, EXCETO\". Ou seja, procure o que o médico **pode e deve** fazer.\n\nO capítulo sobre a relação entre médicos do Código de Ética Médica veda condutas como dificultar a informação a outro colega, fazer concorrência desleal, usar o cargo para impedir que subordinados atuem com ética e assumir posturas contrárias a movimentos legítimos da categoria para obter vantagem. A leitura atenta das alternativas A a D mostra todas elas como condutas proibidas.\n\nA alternativa E é o oposto: aliviar o sofrimento é um dever do médico, e não uma proibição. Por isso, é a exceção.",
+  "correta": "**E: fazer de tudo para aliviar o sofrimento do seu doente.** É um dever, e não uma vedação; daí ser a exceção pedida.",
+  "alerta": "Esta questão foi comentada a partir do raciocínio sobre o enunciado; o texto do Código de Ética Médica não está na biblioteca local e não foi lido aqui. A alternativa A contém um detalhe confuso (\"desde que autorizado\"), mas descreve a conduta vedada de negar informação com a autorização do paciente. Letra E mantida.",
+  "incorretas": {
+   "A": "**Vedado.** Negar informações a outro médico, quando o paciente autoriza, prejudica o cuidado.",
+   "B": "**Vedado.** A concorrência desleal é uma das proibições centrais da relação entre colegas.",
+   "C": "**Vedado.** Usar a hierarquia para impedir uma atuação ética fere o subordinado e o paciente.",
+   "D": "**Vedado.** Agir contra movimentos legítimos da categoria para obter vantagem é o exemplo típico da conduta proibida."
+  },
+  "referencias": [
+   "Conselho Federal de Medicina, Código de Ética Médica, capítulo Relação entre Médicos (não lido nesta revisão)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1922": {
+  "conceito": "Manchas azuis têm endereços. Saber onde elas ficam basta para resolver a maior parte das questões. O **nevo de OTA** é uma melanose dérmica congênita benigna que acompanha o trigêmeo, nos ramos oftálmico e maxilar: uma mancha azul-acinzentada ipsilateral na região periorbitária, na testa, na têmpora, na bochecha e no nariz, que frequentemente atinge a esclera (StatPearls, Nevus of Ota and Ito; PMC3335646).\n\nO olho é o motivo de levá-lo a sério: há relatos de glaucoma, catarata e melanoma de coroide (PMC11785537). O tratamento estético usa lasers de alexandrite, Q-switched ou picossegundo (PMC11208768).",
+  "correta": "**A: mancha escura, acinzentada ou azulada na região periorbitária.** É a localização e a cor típicas, ligadas ao trigêmeo (StatPearls, Nevus of Ota and Ito).",
+  "incorretas": {
+   "B": "**É o nevo de ITO.** Mesma lesão, outro endereço: ombro e tórax.",
+   "C": "**É o nevo de BECKER.** Mancha no ombro ou no tronco, muitas vezes com pelos.",
+   "D": "**É a mancha mongólica.** Azulada, na região sacral ou nas nádegas.",
+   "E": "**É o nevo azul.** Lesão elevada, ao contrário do nevo de OTA, que é plano (PMC3335646)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Nevus of Ota and Ito (NBK560574)",
+   "Nevus of Ota with Rare Palatal Involvement, PMC3335646",
+   "A Case of Nevus of Ota in Trinidad and Tobago, PMC11785537",
+   "Diffuse neurofibroma within nevus of Ota, PMC11208768"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1923": {
+  "conceito": "Menina que não menstrua, com características sexuais secundárias normais e cariótipo 46,XX: é a porta de entrada da síndrome de MAYER-ROKITANSKY-KÜSTER-HAUSER. Trata-se de uma **agenesia mülleriana**: o útero e a parte superior da vagina faltam ou são pouco desenvolvidos (PMC7439721; PMC3575620).\n\nA incidência é de cerca de 1 para 4.000 a 5.000 mulheres. O tipo 1 é isolado, enquanto o tipo 2 traz alterações renais, cardíacas e de outros órgãos (PMC7439721). Por isso, a cirurgia plástica pode entrar na reconstrução da vagina, e a avaliação do trato urinário é obrigatória. O diagnóstico costuma atrasar, surgindo na investigação de amenorreia primária ou na primeira relação sexual (PMC11343328).",
+  "correta": "**E: agenesia mülleriana, com atresia vaginal e anomalias uterinas e tubárias.** É a definição da síndrome (PMC7439721; PMC3575620).",
+  "incorretas": {
+   "A": "**É a síndrome de ANGELMAN.** O atraso, a ausência de fala e o riso excessivo descrevem esse quadro neurológico.",
+   "B": "**Descreve ambiguidade genital.** Hipertrofia clitoriana e gônada palpável não fazem parte da MRKH, que tem genitália externa normal (PMC7439721).",
+   "C": "**Quadro craniofacial sem relação.** Não é uma descrição de agenesia mülleriana.",
+   "D": "**É a síndrome de MILLER-DIEKER.** A lisencefalia é uma alteração do encéfalo, sem relação com a MRKH."
+  },
+  "referencias": [
+   "MRKH syndrome: a comprehensive update, PMC7439721",
+   "MRKH Syndrome: Embryology, Genetics, PMC3575620",
+   "MRKH Syndrome: A Case Report, PMC11343328"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1924": {
   "conceito": "LEDDERHOSE é a prima da doença de DUPUYTREN que aparece no pé: nódulos dentro das faixas da fáscia plantar. O StatPearls destaca que a doença é rara, benigna e compartilha a distribuição geográfica da contratura de DUPUYTREN, sendo mais comum em descendentes do norte da Europa (Plantar Fibromatosis). Cerca de 15% das pessoas com DUPUYTREN também a têm (PMC10605618), e o Green cita ambas no mesmo grupo de doenças fibrosas, junto com a de PEYRONIE e o ombro congelado (8ª ed., cap. 4, p. 149; 7ª ed., cap. 4, p. 132).\n\nO perfil do paciente é outro detalhe cobrado: a idade típica fica na quarta e quinta décadas, com taxas maiores acima dos 50 anos e em homens (PMC12706499; PMC13227022). Existe uma forma infantil, mas é rara e tem nome próprio, \"nódulos plantares anteromediais benignos\".\n\nPor que o nódulo plantar dói e atrapalha? Ele fica exatamente onde se pisa. Diferente da mão, costuma dar menos contratura.",
   "correta": "**A: espessamento e hialinização das fibras de colágeno da fáscia plantar, com nódulos palpáveis e retração.** O diagnóstico depende de identificar nódulos nas faixas da fáscia plantar (StatPearls, Plantar Fibromatosis).",
@@ -32362,6 +32693,38 @@
    "Ledderhose's Disease: An Up-to-Date Review, PMC10605618",
    "Green's Operative Hand Surgery, 8ª ed., cap. 4, p. 149",
    "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 4, p. 132"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1925": {
+  "conceito": "As estrias costumam ser explicadas como \"pele que rompeu\", e é preciso escolher o que exatamente sofreu. O StatPearls descreve a histologia: epiderme achatada, sem cones epiteliais, alteração da arquitetura dos feixes de colágeno e **degeneração da elastina** em toda a derme (Histology, Dermis).\n\nDentro da família elástica, há três tipos de fibras. As **elaunínicas** são horizontais, perto da junção entre as dermes papilar e reticular, e as **oxitalânicas** são perpendiculares, na derme papilar (StatPearls, Histology, Dermis). A banca pede exatamente esses dois nomes. Vale a ressalva: nem todo autor concorda com a ideia de \"ruptura\"; um estudo clássico defende que as estrias brancas são cicatrizes verdadeiras, em que um processo inflamatório destrói as fibras elásticas.",
+  "correta": "**C: fibras elaunínicas e oxitalânicas.** São fibras do sistema elástico da derme superficial, cuja degeneração participa da estria (StatPearls, Histology, Dermis).",
+  "alerta": "O StatPearls descreve a degeneração da elastina e as fibras elaunínicas e oxitalânicas, mas não encontramos estudo que ligue diretamente a estria à ruptura específica delas, e a própria ideia de ruptura é discutida. Letra C mantida.",
+  "incorretas": {
+   "A": "**A distratora mais próxima.** O colágeno também se altera (StatPearls, Histology, Dermis), mas a banca quer as fibras elásticas.",
+   "B": "**Não é uma estrutura que rompe.** A substância fundamental é um gel que preenche os espaços, sem ser um sistema de fibras.",
+   "D": "**Sem relação.** A estria não é uma doença do folículo.",
+   "E": "**Fica na epiderme.** A lesão da estria é principalmente dérmica; a epiderme apenas se achata (StatPearls, Histology, Dermis)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Histology, Dermis (NBK535346)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1926": {
+  "conceito": "Os prefixos resolvem: \"epi\", em cima, \"hipo\", embaixo. Na **epispádia**, a uretra se abre na face dorsal do pênis. Na **hipospádia**, abre-se na face ventral. A epispádia é a mais rara e costuma estar no espectro da extrofia vesical.\n\nO detalhe do controle urinário é o que confirma a resposta. Na epispádia, o defeito pode alcançar o colo vesical e o esfíncter, levando à incontinência; na hipospádia, o esfíncter costuma estar preservado. Na cirurgia plástica, as duas fazem parte da reconstrução genital.",
+  "correta": "**E: epispádia.** Abertura uretral dorsal, com possibilidade de perda do controle urinário.",
+  "alerta": "Esta questão foi comentada sem fonte específica recuperada para epispádia nas buscas realizadas. O conteúdo é conceito básico de urologia. Letra E mantida.",
+  "incorretas": {
+   "A": "**Mucosa exteriorizada.** O prolapso de uretra é uma eversão da mucosa, sem desvio do meato para o dorso.",
+   "B": "**Estreitamento.** A estenose reduz o calibre, sem mudar o local da abertura.",
+   "C": "**Curvatura.** A corda é o encurvamento ventral do pênis, muitas vezes junto da hipospádia.",
+   "D": "**O oposto.** A hipospádia abre na face ventral, e o esfíncter costuma ficar preservado."
+  },
+  "referencias": [
+   "Conceito básico de urologia, sem fonte específica lida nesta revisão"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -32398,6 +32761,59 @@
    "Full Thickness Skin Grafting in Pediatric Orthopaedic Surgery, PMC12088188",
    "Split vs full-thickness skin grafts in scalp reconstruction, PMC8721364",
    "Green's Operative Hand Surgery, 8ª ed., cap. 44"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1929": {
+  "conceito": "Para reconstruir a orelha com cartilagem da própria costela, a criança precisa ter costela suficiente. É isso que define a idade. O StatPearls resume os dois caminhos clássicos: BRENT recomenda esperar até os 6 anos, e NAGATA prefere até os 10 anos, com circunferência torácica acima de 60 cm na altura do xifoide (Ear Microtia).\n\nUm estudo com tomografia considerou os 6 anos a idade ideal com a técnica de expansão (PubMed 28692518), e, numa série, o primeiro tempo foi feito, em média, aos 8,5 anos (PMC5640338). A banca escolheu \"após os 7 anos\", valor no meio do caminho, mas a mensagem é a mesma: nem tão cedo que falte cartilagem, nem tão tarde que a criança passe anos sem orelha na escola.",
+  "correta": "**C: após os 7 anos.** Fica entre as idades de BRENT e NAGATA, garantindo cartilagem costal suficiente (StatPearls, Ear Microtia).",
+  "alerta": "As fontes citam 6 anos (BRENT), 10 anos (NAGATA) e uma média de 8,5 anos, e não exatamente 7 anos. Letra C mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Tarde demais.** A criança passaria toda a infância sem orelha, e nenhuma das técnicas exige tanta espera (StatPearls, Ear Microtia).",
+   "B": "**Um pouco cedo.** Antes dos 6 anos, a cartilagem costal costuma ser insuficiente (StatPearls, Ear Microtia).",
+   "D": "**O crescimento manda.** Sem cartilagem suficiente, a idade importa.",
+   "E": "**Impossível com cartilagem da costela.** Nessa idade, não há tecido nem um molde capaz de acompanhar a criança."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Ear Microtia (NBK563243)",
+   "Costal Cartilage Assessment in Surgical Timing, PubMed 28692518",
+   "Evaluation of 4 Outcomes Measures in Microtia Treatment, PMC5640338"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1930": {
+  "conceito": "Quem tem barriga depois de duas gestações muitas vezes não tem só pele sobrando: os retos se afastaram. Isso é a **diástase**, a separação em geral considerada a partir de 2 cm. Costurar a aponeurose para aproximar os músculos é a **plicatura**, e uma revisão a chama de tratamento padrão da diástase na abdominoplastia (PMC6877697).\n\nUm estudo recente sugere fazer a plicatura longitudinal quando a distância passa de 3 cm, ou de 2,5 a 3 cm com obesidade visceral (PMC12926602). Os dados sobre ganho de força são controversos, mas o efeito sobre o contorno é claro (PMC7839807). Portanto, a indicação é um achado anatômico: a diástase.",
+  "correta": "**D: em casos de diástase musculoaponeurótica.** É a indicação, e a plicatura é o tratamento padrão (PMC6877697).",
+  "incorretas": {
+   "A": "**Não é uma decisão do paciente.** A indicação depende do exame, ainda que a queixa estética possa motivar a consulta.",
+   "B": "**Outro problema.** Hérnia grande é um defeito da parede, e exige reparo próprio.",
+   "C": "**Sem indicação universal.** Se os retos estão na linha média, não há o que plicar.",
+   "E": "**Etapa opcional.** A plicatura dos oblíquos não é obrigatória, nem é o que define a dos retos."
+  },
+  "referencias": [
+   "Treatment Options for Abdominal Rectus Diastasis, PMC6877697",
+   "Effect of abdominoplasty with transverse plication, PMC12926602",
+   "Impact of Rectus Diastasis Repair: Systematic Review, PMC7839807"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1931": {
+  "conceito": "Reconstruir uma orelha com cartilagem da costela significa levar um molde sem vasos para baixo de uma pele fina. A cartilagem vive por difusão, e o que a envolve precisa nutri-la e protegê-la. Por isso, a formação de um **neopericôndrio** em torno do molde é o que a mantém viva depois da cirurgia.\n\nAs revisões sobre a microtia mostram que as técnicas baseadas em cartilagem costal, como as de BRENT e NAGATA, dependem de um bom envelope cutâneo e de tecido que recubra o molde (PMC4128432; StatPearls, Ear Microtia). Infecção e exposição são as complicações temidas, e uma revisão as coloca entre os principais desfechos de uma reconstrução (PMC5640338). Em tecido infectado, é o contrário do que a alternativa D sugere: o molde está em risco.",
+  "correta": "**A: é fundamental para o procedimento.** É a alternativa da banca: a sobrevivência do molde depende de um envoltório que o nutra (PMC4128432).",
+  "alerta": "As fontes abertas consultadas descrevem as técnicas de reconstrução e o papel do envelope, mas não usam o termo \"neopericôndrio\". A alternativa E (\"importante no planejamento\") também é plausível. Letra A mantida como gabarito da banca.",
+  "incorretas": {
+   "B": "**Vale para todas.** O molde de cartilagem é o princípio em comum das técnicas (PMC4128432).",
+   "C": "**Negaria a base biológica.** Sem nutrição por difusão, a cartilagem sofre.",
+   "D": "**O inverso.** Infecção é uma das grandes ameaças à reconstrução (PMC5640338).",
+   "E": "**A distratora próxima.** Verdadeira, mas mais fraca do que \"fundamental\", o termo que a banca escolheu."
+  },
+  "referencias": [
+   "Auricular reconstruction for microtia: A review, PMC4128432",
+   "StatPearls (NCBI Bookshelf), Ear Microtia (NBK563243)",
+   "Evaluation of 4 Outcomes Measures in Microtia Treatment, PMC5640338"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
