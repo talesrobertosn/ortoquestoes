@@ -31089,6 +31089,71 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1816": {
+  "conceito": "Em 1901, LE FORT percebeu que o terço médio da face tende a quebrar por linhas previsíveis de fraqueza. Os padrões envolvem as lâminas pterigoides do esfenoide e são divididos por orientação: horizontal, piramidal e transverso (StatPearls, Le Fort Fractures).\n\nDá para gravar pelo que se solta:\n\n| Nível | Desenho | O que fica solto |\n|---|---|---|\n| I | horizontal, acima dos ápices dentários (fratura de GUÉRIN) | o palato e os dentes superiores |\n| II | piramidal: base nos dentes, ápice nos ossos nasais | maxila e nariz |\n| III | transverso | toda a face em relação ao crânio (disjunção craniofacial) |\n\nA ordem ajuda no tratamento: quanto mais alto o nível, mais pilares a refazer. Os rebordos orbitais entram quando a linha sobe até a órbita, o que não acontece no nível I. E a proximidade com a órbita explica por que a cegueira é uma preocupação das fraturas altas, e não do nível I, cujo traço fica abaixo dela.",
+  "correta": "**B: as fraturas de Le Fort nível 2 são a fratura piramidal da maxila.** É a descrição do StatPearls: base nos dentes maxilares e ápice nos ossos nasais (Le Fort Fractures).",
+  "incorretas": {
+   "A": "**A direção está errada.** O nível I corre horizontalmente acima dos ápices dentários, e a palavra \"verticalmente\" derruba a frase (StatPearls, Le Fort Fractures).",
+   "C": "**Nomes trocados.** O nome de GUÉRIN está ligado à fratura transversa baixa, o nível I. O nível III é o transverso alto, a disjunção craniofacial, e é a mesma palavra \"transverso\" que faz a confusão.",
+   "D": "**Fixação de um nível mais alto.** O rebordo orbital inferior não é atingido no nível I, porque o traço passa abaixo da órbita (StatPearls, Le Fort Fractures). Fixar ali faz sentido nas fraturas que sobem até ela.",
+   "E": "**O nível está baixo demais.** A cegueira pode complicar fraturas que atingem a órbita, e o nível I não chega lá. A frase junta dois níveis como se tivessem o mesmo risco."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Le Fort Fractures (NBK526060)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1817": {
+  "conceito": "Olhos inclinados para baixo e para fora, falha na pálpebra inferior e bochecha achatada: esse rosto tem nome. A disostose mandibulofacial, ou síndrome de TREACHER COLLINS, reúne hipoplasia da mandíbula, da maxila e do zigoma, obliquidade antimongólica das fendas palpebrais, coloboma da pálpebra inferior e anomalias da orelha, muitas vezes com surdez (Treacher Collins syndrome: etiology, pathogenesis and prevention, PMC2986179).\n\nA explicação está no desenvolvimento: as estruturas afetadas vêm dos primeiros arcos faríngeos e, por isso, o defeito se concentra no terço médio e inferior da face. Em geral, é autossômica dominante, mais frequentemente pelo gene TCOF1, com penetrância variável (PMC8470852).\n\nQuem não consegue diferenciá-la de Pierre Robin deve olhar para a pálpebra e o zigoma: na Pierre Robin, a queixa é a mandíbula pequena com obstrução da via aérea do recém-nascido, sem coloboma.",
+  "correta": "**D: síndrome de Treacher Collins.** As fendas antimongólicas, o coloboma da pálpebra inferior e a hipoplasia do zigoma são a descrição clássica da doença (PMC2986179).",
+  "incorretas": {
+   "A": "**Sem coloboma nem zigoma.** A Pierre Robin é a tríade de micrognatia, glossoptose e obstrução da via aérea (StatPearls, Pierre Robin Syndrome). O caso aqui é de olhos e bochecha, em criança de 3 anos.",
+   "B": "**O problema fica no meio do nariz.** A síndrome de BINDER, ou displasia maxilonasal, é conhecida pelo terço médio da face achatado e nariz curto, sem o coloboma do enunciado.",
+   "C": "**Doença neurocutânea.** A VON RECKLINGHAUSEN é a neurofibromatose tipo 1, com neurofibromas e manchas café com leite. Não produz esse padrão facial simétrico.",
+   "E": "**Displasia óssea com pele e hormônio.** A McCUNE-ALBRIGHT reúne displasia fibrosa, manchas café com leite e alterações endócrinas, sem coloboma nem obliquidade palpebral."
+  },
+  "referencias": [
+   "Treacher Collins syndrome: etiology, pathogenesis and prevention, PMC2986179",
+   "Treacher Collins Syndrome: Genetics, Clinical Features and Management, PMC8470852",
+   "StatPearls (NCBI Bookshelf), Pierre Robin Syndrome (NBK562213)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1818": {
+  "conceito": "Este bebê não respira bem porque a língua caiu para trás, e a língua caiu porque a mandíbula é pequena. É por isso que falamos em **sequência** de PIERRE ROBIN: um único defeito primário dispara o resto. A micrognatia inicia a cascata e leva à glossoptose e, muitas vezes, à fenda palatina, como explica o StatPearls (Pierre Robin Syndrome).\n\nA tríade é micrognatia, glossoptose e obstrução alta da via aérea. A obstrução pode aparecer já nas primeiras horas e ser grave. O tratamento segue uma escada: em cerca de 70% dos casos, colocar a criança em posição prona ou lateral resolve; se a saturação continua baixa, usa-se cânula nasofaríngea; se a obstrução persiste, entram a adesão língua-lábio ou a distração mandibular (StatPearls).\n\n> **Na prova:** recém-nascido, mandíbula pequena, língua caída, estridor: Pierre Robin. Primeiro, posicionar.",
+  "correta": "**A: síndrome de Pierre Robin.** O enunciado traz a tríade inteira: retrognatismo, glossoptose e obstrução das vias aéreas ao nascer (StatPearls, Pierre Robin Syndrome).",
+  "incorretas": {
+   "B": "**Nariz, não via aérea do recém-nascido.** A BINDER é uma displasia maxilonasal e não produz a glossoptose com obstrução ao nascer.",
+   "C": "**Doença neurocutânea.** A neurofibromatose não tem esse quadro neonatal de via aérea.",
+   "D": "**A confusão real.** A TREACHER COLLINS também tem mandíbula pequena e pode obstruir a via aérea, mas vem com coloboma, fendas antimongólicas e zigoma hipoplásico, que o enunciado não cita (PMC2986179).",
+   "E": "**Sem relação.** A McCUNE-ALBRIGHT é displasia fibrosa com alterações endócrinas e de pele."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Pierre Robin Syndrome (NBK562213)",
+   "Treacher Collins syndrome: etiology, pathogenesis and prevention, PMC2986179"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1819": {
+  "conceito": "A mama tuberosa nasce de um anel que aperta. Na base da mama, em especial na parte inferior, forma-se um espessamento fibroso da fáscia superficial. Quando o tecido cresce na puberdade, ele não consegue se expandir para os lados e para baixo: é empurrado pela frente, em direção à aréola, que se distende (PMC9760626).\n\nDaí vem o retrato: base estreita, polo inferior pobre, sulco inframamário alto e aréola aumentada, com tecido herniado por trás dela. A classificação mais usada é a de GROLLEAU, de 1999, em três tipos: hipoplasia no quadrante inferomedial (I), nos dois quadrantes inferiores (II) e nos quatro quadrantes (III) (PMC11564785).\n\nA correção segue a mesma lógica: romper o anel, expandir a base, redistribuir o volume e tratar a aréola. Quanto ao momento, as revisões apontam a dificuldade de escolher a hora certa na adolescente, e o raciocínio comum é esperar o desenvolvimento se completar (PMC11564785).",
+  "correta": "**D: herniação do complexo areolopapilar é muito comum.** É o gabarito que a banca considerou incorreto, mas as revisões descrevem essa herniação como parte da deformidade, em especial nas formas graves (PMC9760626). Veja o alerta.",
+  "alerta": "A herniação do tecido em direção à aréola é uma característica descrita da mama tuberosa (PMC9760626; PMC11564785), o que torna discutível considerar a letra D incorreta. As revisões consultadas não medem a frequência. Gabarito D mantido como resposta da banca.",
+  "incorretas": {
+   "A": "**Afirmação aceitável.** O raciocínio comum é esperar o desenvolvimento se completar, embora as revisões reconheçam que a hora certa na adolescente é difícil de definir (PMC11564785).",
+   "B": "**Coerente com a teoria da fáscia.** A etiologia não está fechada, e a teoria aceita liga a doença a uma alteração da fáscia superficial na região areolar e na base (PMC9760626).",
+   "C": "**É o retrato clássico.** Sulco elevado e polo inferior hipoplásico decorrem do anel que impede a descida da mama (PMC9760626).",
+   "E": "**Correta.** GROLLEAU divide a doença em três tipos pelo número de quadrantes acometidos (PMC11564785)."
+  },
+  "referencias": [
+   "The Different Surgical Strategies for Treating Tuberous Breast Deformity, PMC11564785",
+   "Tuberous Breast Management: A Review, PMC9760626"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1820": {
   "conceito": "A síndrome de POLAND costuma ser descrita em duas partes que surpreendem por estarem juntas: falta um músculo no tórax e há alterações na mão. O elo é vascular, e é isso que torna a alternativa correta tão forte.\n\nO Green atribui a síndrome à **interrupção do fluxo na artéria subclávia no embrião**, e por isso ela também é chamada de sequência de interrupção da artéria subclávia. Daí sai um espectro de hipoplasias do membro superior. A síndrome consiste na falta de um músculo da cintura escapular e em anormalidades da mão, que podem ser mínimas, e não há correlação entre a gravidade de cada componente (7ª ed., cap. 36). O mais comum é a aplasia da cabeça esternocostal do peitoral maior, com braquidactilia dos dedos centrais. O Tachdjian mostra o mesmo raciocínio em uma mulher com POLAND e MÖBIUS (cap. 21, Fig. 21.10).\n\nDo ponto de vista cirúrgico, vale lembrar: o paciente pode chegar à plástica por causa do tórax, mas a mão merece exame também, porque ela pode estar pouco alterada.\n\n> **Na prova:** POLAND é sequência da subclávia. Falta a porção esternocostal do peitoral maior.",
   "correta": "**B: uma teoria é a interrupção temporária do suprimento sanguíneo subclávio/vertebral entre a sexta e a sétima semanas.** A base vascular é a que o Green apresenta (7ª ed., cap. 36). A janela de sexta a sétima semanas é um detalhe da alternativa, que os capítulos consultados não trazem.",
@@ -31102,6 +31167,103 @@
   "referencias": [
    "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 36 (Deformidades da mão e dos dedos)",
    "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 21, Fig. 21.10"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1821": {
+  "conceito": "A classificação de SIMON, de 1973, faz duas perguntas sobre a ginecomastia: quanto a mama cresceu, e sobra pele? Isso importa porque são as duas perguntas que escolhem a cirurgia: sem excesso de pele, a lipoaspiração ou uma pequena excisão podem bastar; com muita pele, é preciso retirá-la (PMC4621393).\n\n| Grau | Aumento | Excesso de pele |\n|---|---|---|\n| 1 | pequeno | não |\n| 2A | moderado | não |\n| 2B | moderado | sim |\n| 3 | acentuado | sim, simula a mama feminina pendente |\n\nBasta olhar para o enunciado: \"aumento acentuado\" com \"grande excesso de pele\". As duas palavras apontam para o último grau, que é o 3. E não existe o grau 4 nesse sistema.",
+  "correta": "**D: grau 3.** É o aumento acentuado com redundância de pele (PMC4621393; PMC13471610).",
+  "incorretas": {
+   "A": "**Aumento pequeno, sem pele.** Não é o caso do Luiz (PMC4621393).",
+   "B": "**Aumento moderado, sem pele.** Falta justamente a pele a mais do enunciado.",
+   "C": "**A distratora mais próxima.** Tem excesso de pele, mas o aumento é moderado. O enunciado fala em aumento acentuado (PMC4621393).",
+   "E": "**Não existe.** O sistema de SIMON termina no grau 3."
+  },
+  "referencias": [
+   "Trends in the Surgical Correction of Gynecomastia, PMC4621393",
+   "Grade III gynecomastia: a review of 82 patients, PMC13471610"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1822": {
+  "conceito": "O BI-RADS é um idioma comum: cada categoria já contém a conduta. A que interessa aqui é a **3, provavelmente benigna**, cuja recomendação é uma nova avaliação em intervalo curto, em geral 6 meses, no lugar da biópsia.\n\nA segurança dessa conduta foi medida. Em 12 séries de ultrassonografia de rastreamento, 8 de 3.918 achados BI-RADS 3 eram malignos no seguimento de 6 meses, ou seja, 0,2% (PMC8445238). No estudo ACRIN 6666, foram 0,8% (PMC4228709). A controvérsia atual é outra: alguns autores acham que o controle pode ser menos frequente em certos grupos (PMC4228709).\n\nEm resumo, a sequência é: 0, incompleto; 1, negativo; 2, benigno; 3, provavelmente benigno, controle curto; 4, suspeito, biópsia.",
+  "correta": "**D: BIRADS 3.** Provavelmente benigno, com controle em curto intervalo, geralmente 6 meses (PMC8445238).",
+  "incorretas": {
+   "A": "**Exame incompleto.** BI-RADS 0 pede avaliação adicional de imagem, e não controle semestral.",
+   "B": "**Exame negativo.** No BI-RADS 1 não há o que acompanhar, e o rastreamento segue o normal.",
+   "C": "**Benigno de certeza.** O BI-RADS 2 também segue o rastreamento de rotina, sem controle precoce.",
+   "E": "**Suspeito.** No BI-RADS 4, a conduta é a biópsia, e esperar 6 meses seria inadequado."
+  },
+  "referencias": [
+   "BI-RADS 3 on Screening Breast Ultrasound, PMC8445238",
+   "Probably Benign Lesions at Screening Breast US (ACRIN 6666), PMC4228709"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1823": {
+  "conceito": "Uma bolinha que começa no furo do brinco e não para de crescer. O queloide é a cicatriz que perdeu o freio e cresce além do ferimento original. O que o separa da cicatriz hipertrófica é justamente isso: a hipertrófica fica nos limites da ferida e muitas vezes melhora, enquanto o queloide invade a pele sadia em volta (PMC12495451).\n\nA histologia conta a mesma história. No queloide, o colágeno fica disposto de forma **desordenada, em redemoinhos**, com fibras grossas de tipo I. Na cicatriz hipertrófica e na normal, as fibras são mais **paralelas** (StatPearls, Hypertrophic Scarring Keloids). Por isso, uma frase que chame o queloide de \"ordenado e paralelo à epiderme\" descreve o tipo errado de cicatriz, e é a resposta de uma questão que pede a incorreta.\n\nA clínica completa: coça e dói, ocorre mais em peles negras e asiáticas, e prefere regiões como tórax, ombro e lóbulo da orelha (PMC3022978).",
+  "correta": "**B: são estruturas colágenas ordenadas e paralelas à epiderme.** É a alternativa incorreta, como pede a questão: o colágeno do queloide é desordenado, em redemoinhos; o padrão paralelo é o da cicatriz hipertrófica e normal (StatPearls, Hypertrophic Scarring Keloids).",
+  "incorretas": {
+   "A": "**Verdadeira.** Prurido e dor são queixas típicas, e não só uma questão estética (PMC3022978).",
+   "C": "**Verdadeira para a banca.** O tórax e o pescoço são locais típicos, o que costuma ser associado à maior densidade de glândulas sebáceas e à tensão da pele (PMC3022978).",
+   "D": "**Verdadeira.** Há maior incidência nas populações africanas e asiáticas (PMC3022978).",
+   "E": "**Verdadeira.** É a definição clínica: cresce além das bordas da ferida (PMC12495451)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Hypertrophic Scarring Keloids (NBK537058)",
+   "Hypertrophic Scarring and Keloids, PMC12495451",
+   "Hypertrophic Scarring and Keloids: Pathomechanisms, PMC3022978"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1824": {
+  "conceito": "A cicatrização precisa de três coisas: oxigênio, matéria-prima e células saudáveis. Pense em cada fator de risco pela falta que causa.\n\nA **desnutrição** tira a matéria-prima, como proteínas e vitaminas. O **tabagismo** reduz a oferta de oxigênio, pela vasoconstrição e pelo monóxido de carbono. A **radioterapia** lesa as células e os vasos locais. A **obesidade** cria um tecido gorduroso pouco vascularizado e tensão na ferida. Esses quatro aparecem nas listas clássicas de fatores que atrapalham a cicatrização.\n\nA **dislipidemia** é o intruso. Ela pode piorar a circulação com o tempo, por meio da aterosclerose, mas não costuma estar nas listas dos fatores diretos, e por isso a banca a usou como exceção. Vale lembrar que uma pergunta com EXCETO recompensa quem procura o item mais fraco, mesmo que ele não seja totalmente inocente.",
+  "correta": "**E: dislipidemia.** É o único item que não aparece entre os fatores diretos habituais. Os outros quatro têm mecanismo claro sobre oxigênio, nutrição ou células (StatPearls, Physiology, Wound Healing).",
+  "alerta": "As fontes abertas consultadas não trazem esta lista de forma literal; a resposta se apoia nos mecanismos e no gabarito da banca. A dislipidemia pode afetar a cicatrização indiretamente, pela doença vascular. Letra E mantida.",
+  "incorretas": {
+   "A": "**Fator clássico.** Sem proteína e sem micronutrientes, a proliferação celular e a síntese de colágeno ficam comprometidas.",
+   "B": "**Fator reconhecido.** O tecido adiposo é pouco vascularizado, e o peso aumenta a tensão e o risco de deiscência.",
+   "C": "**Fator direto.** A radiação lesa fibroblastos e pequenos vasos, e o tecido irradiado cicatriza mal por muito tempo.",
+   "D": "**Fator direto.** O tabaco reduz a perfusão e a oxigenação da ferida, um risco conhecido, por exemplo, em retalhos."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Physiology, Wound Healing (NBK535406)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1826": {
+  "conceito": "Em 1981, MATHES e NAHAI classificaram os músculos pelo modo como recebem sangue, porque isso decide como um músculo pode ser usado como retalho. O Rockwood reproduz a tabela (cap. 19, Tabela 19-1):\n\n| Tipo | Irrigação | Exemplos |\n|---|---|---|\n| I | um pedículo | gastrocnêmio, tensor da fáscia lata |\n| II | dominante e menores | grácil, sóleo |\n| III | dois dominantes | reto abdominal, glúteo máximo |\n| IV | múltiplos segmentares | sartório, tibial anterior |\n| V | dominante e segmentares | grande dorsal, peitoral maior |\n\nA consequência prática: o tipo IV é o pior para rotação, porque não sobrevive com um único pedículo; os tipos I, II, III e V costumam sobreviver ao pedículo dominante (Rockwood, cap. 19).\n\n> **Na prova:** TFL, grácil, glúteo: um, dois, três.",
+  "correta": "**C: tensor da fáscia lata, grácil e glúteo máximo.** Cada um está no seu tipo na Tabela 19-1 do Rockwood (cap. 19).",
+  "incorretas": {
+   "A": "**O primeiro está errado.** O intercostal não é o exemplo de tipo I, que é o tensor da fáscia lata ou o gastrocnêmio. Os outros dois estão certos (Rockwood, cap. 19).",
+   "B": "**Nenhum no lugar.** O sóleo é tipo II, o sartório é IV e o peitoral maior é V (Rockwood, cap. 19).",
+   "D": "**O grácil saiu do tipo II.** Ele não é tipo III, e o tibial anterior é um exemplo de tipo IV (Rockwood, cap. 19).",
+   "E": "**A distratora mais próxima.** Só erra o último: o peitoral maior é tipo V, com pedículo dominante e segmentares."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 19, Tabela 19-1 (Mathes e Nahai)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1835": {
+  "conceito": "Questão de \"uma certa\", que exige revisar a primeira etapa da ferida: a coagulação. O StatPearls confirma que a via intrínseca envolve os fatores XII, XI, IX e VIII; a ativação do fator XII é o primeiro passo, e o fator IX forma um complexo com o VIII para ativar o X (Biochemistry, Clotting Factors). A alternativa cita XI, IX e VIII, omitindo o XII, mas é a única sem erro de conteúdo.\n\nDas erradas, vale fixar três ideias. Os **neutrófilos** chegam primeiro e fazem a limpeza; o protagonista de depois é o macrófago, que o StatPearls chama de célula mais crítica da cicatrização (Wound Assessment). A proliferação vai do dia 3 até cerca de 2 semanas e usa colágeno **tipo III**, trocado por tipo I na remodelação (PMC5817091). E a definição de **ferida crônica** não tem consenso, mas fica em torno de semanas: 6 semanas, 6 a 8 semanas ou 3 meses, conforme a fonte.",
+  "correta": "**C: a via intrínseca da coagulação envolve fatores plasmáticos XI, IX e VIII.** São fatores dessa via, junto com o XII (StatPearls, Biochemistry, Clotting Factors).",
+  "incorretas": {
+   "A": "**Falta uma.** Além da primeira e da segunda intenção, existe a terceira, ou fechamento primário retardado.",
+   "B": "**O prazo está longo.** As definições falam em 6 semanas, 6 a 8 semanas ou, no máximo, 3 meses. Não há consenso, mas 4 meses não é um dos cortes habituais.",
+   "D": "**Célula errada.** Com 3 a 5 dias, a cena já é dos macrófagos. O neutrófilo é o primeiro a chegar (StatPearls, Wound Assessment).",
+   "E": "**Colágeno errado.** O tecido de granulação usa tipo III, depois trocado por tipo I (PMC5817091). Tipo II é o da cartilagem."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Biochemistry, Clotting Factors (NBK507850)",
+   "StatPearls (NCBI Bookshelf), Wound Assessment (NBK482198)",
+   "Role of MicroRNA in Proliferation Phase of Wound Healing, PMC5817091"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31140,6 +31302,53 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1846": {
+  "conceito": "A síndrome de TREACHER COLLINS costuma ser entendida como um defeito de ossos da face, e a banca explora exatamente isso. A descrição habitual inclui mandíbula, maxila e zigoma hipoplásicos, mas também atinge partes moles: coloboma palpebral, orelhas malformadas e fissuras (PMC2986179; StatPearls, Syndromic Sensorineural Hearing Loss).\n\nDois detalhes evitam erros. Primeiro, a mandíbula e o zigoma são **pequenos**, nunca aumentados. Segundo, a herança é autossômica dominante com penetrância variável, e uma parte importante dos casos é esporádica, sem família afetada; uma revisão estima cerca de 60% (PMC8470852). Ou seja, ter herança dominante não significa haver história familiar.\n\nA alternativa correta descreve o resultado disso na boca: maxila estreita e pouco projetada, palato alto e estreito, mandíbula hipoplásica. Com má oclusão dentária e fenda palatina, o quadro é coerente com o que as revisões trazem.",
+  "correta": "**E: a maxila é estreita e pouco projetada, com palato alto e estreito; a mandíbula é hipoplásica.** Combina com a hipoplasia de maxila e mandíbula das revisões, além da má oclusão e da fenda palatina descritas (PMC2986179; StatPearls).",
+  "incorretas": {
+   "A": "**\"Exclusivamente\" derruba.** A própria questão diz que a mandíbula é afetada, e a hipoplasia mandibular é um dos pontos centrais da doença (PMC2986179).",
+   "B": "**As partes moles também sofrem.** Coloboma e orelhas malformadas são partes moles (StatPearls, Syndromic Sensorineural Hearing Loss).",
+   "C": "**Dominante não exige história familiar.** Muitos casos são esporádicos, e a penetrância é variável (PMC8470852).",
+   "D": "**É o oposto.** O zigoma é hipoplásico, e é por isso que a bochecha fica achatada (PMC2986179)."
+  },
+  "referencias": [
+   "Treacher Collins syndrome: etiology, pathogenesis and prevention, PMC2986179",
+   "Treacher Collins Syndrome: Genetics, Clinical Features and Management, PMC8470852",
+   "StatPearls (NCBI Bookshelf), Syndromic Sensorineural Hearing Loss (NBK526088)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1847": {
+  "conceito": "A exposição da tíbia é um problema típico de retalho local, e o sóleo costuma ser uma resposta no terço médio. Para entender como ele pode ser girado, é preciso conhecer o tipo vascular dele.\n\nNa tabela de MATHES e NAHAI, o **sóleo é tipo II**, com um pedículo dominante e pedículos menores, junto com o grácil (Rockwood, cap. 19, Tabela 19-1). Esse desenho explica sua versatilidade: ele pode ser levantado sobre o pedículo dominante proximal e, nas variantes hemisoleares, com base distal em vasos menores, como o Rockwood mostra na Fig. 19-16. Mas os pedículos menores não garantem sozinhos o músculo inteiro, e o retalho de base distal é mais limitado.\n\n> **Na prova:** sóleo e grácil, tipo II. Gastrocnêmio e tensor da fáscia lata, tipo I.",
+  "correta": "**B: tipo 2.** É onde o Rockwood coloca o sóleo: pedículo dominante mais pedículos menores (cap. 19, Tabela 19-1).",
+  "incorretas": {
+   "A": "**É o gastrocnêmio.** Por ser o vizinho e o retalho mais usado na tíbia proximal, ele atrai a confusão. Tem um único pedículo (Rockwood, cap. 19).",
+   "C": "**Dois dominantes.** São exemplos o reto abdominal e o glúteo máximo (Rockwood, cap. 19).",
+   "D": "**Segmentares apenas.** Esses músculos são pouco úteis como retalho, justamente por não serem isolados em um pedículo (Rockwood, cap. 19).",
+   "E": "**Dominante mais segmentares.** É o desenho do grande dorsal e do peitoral maior."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 19, Tabela 19-1 e Fig. 19-16"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1848": {
+  "conceito": "Escolher o exame certo é saber o que cada método enxerga e qual é o seu preço. A questão quer que você percorra os quatro métodos.\n\nA **tomografia** é essencial para a fratura complexa, em especial as que se aproximam de articulações (Greenspan, Radiologia Ortopédica). O preço é a radiação. A **ultrassonografia** não usa radiação e, além disso, dá informações dinâmicas em tempo real, semelhantes às da radioscopia, em qualquer plano (Greenspan). A **ressonância** é a que traz problemas com marca-passo: sua presença pode impedir o exame (Greenspan). E a **radiografia simples** é pobre para partes moles e tardia para a osteomielite, que costuma aparecer por outros métodos primeiro.",
+  "correta": "**B: a tomografia tem por desvantagem a radiação, mas é excelente para fraturas complexas ou mal visualizadas.** É o que o Greenspan destaca (Radiologia Ortopédica, capítulo sobre modalidades de imagem).",
+  "incorretas": {
+   "A": "**Tem meia verdade.** Não usa radiação, certo. Mas a principal vantagem da ultrassonografia é justamente o exame em tempo real (Greenspan).",
+   "C": "**É o oposto.** Marca-passo costuma contraindicar a ressonância (Greenspan). Certos clipes de aneurisma são outra preocupação clássica.",
+   "D": "**Radiografia tarda.** Na osteomielite inicial, ela pode ser normal, e outros métodos, como cintilografia e ressonância, são mais sensíveis (Greenspan).",
+   "E": "**Pouco contraste.** A radiografia não diferencia bem partes moles. Para massas, a ressonância ou a ultrassonografia são preferíveis."
+  },
+  "referencias": [
+   "Greenspan, Radiologia Ortopédica, 6ª ed., capítulos sobre escolha da modalidade, ultrassonografia e tomografia"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1850": {
   "conceito": "TINEL costuma ser ensinado como um sinal de compressão, mas o Green mostra por que ele é tão útil depois de uma lesão: percussão no trajeto do nervo, com choque na área sensitiva, marca o local dos axônios em regeneração (7ª ed., cap. 30, p. 986).\n\nO raciocínio tem três momentos. Um **TINEL forte logo após a lesão** indica ruptura de axônios. Depois do reparo, o sinal que **avança para a periferia e é mais forte** do que na linha de sutura confirma a regeneração. Se a linha de sutura continuar mais forte do que o ponto de crescimento, o reparo tende a falhar (7ª ed., p. 986). Por isso o exame é repetido nas consultas: um sinal que anda é uma boa notícia.\n\nO resto da questão é uma troca de etiquetas entre os testes do membro superior. FROMENT e WARTENBERG são sinais **motores do ulnar**, como o próprio Green lista na neuropatia ulnar (8ª ed., cap. 28, p. 1103 e 1105), e JEANNE os acompanha no exame.\n\n> **Na prova:** TINEL que avança é um bom sinal.",
   "correta": "**A: o propósito do sinal de Tinel é detectar regeneração nervosa.** Depois do reparo, o sinal que avança e é mais forte na periferia do que na sutura confirma a regeneração (Green, 7ª ed., cap. 30, p. 986).",
@@ -31153,6 +31362,24 @@
    "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 30 (Lesão nervosa), p. 986",
    "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 28, p. 1091, 1103 e 1105",
    "Barros Filho e Lech, Exame Físico em Ortopedia, 3ª ed. (2017), cap. 8"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1851": {
+  "conceito": "Toda cicatriz passa por fases que se sobrepõem. O StatPearls descreve quatro: hemostasia, inflamação, proliferação e remodelação, que começa por volta do dia 21 e pode continuar por até 1 ano (Physiology, Wound Healing). Muitas provas, como esta, juntam hemostasia e inflamação e falam em três: inflamatória, proliferativa e de remodelagem. A diferença é só de contagem.\n\nDepois da definição, vem o que a banca mais gosta: separar a cicatriz hipertrófica do queloide. A hipertrófica fica **dentro** das bordas. O queloide **ultrapassa** as bordas e, em geral, coça (PMC12495451). As alternativas erradas simplesmente trocam isso. E as incisões? Quando seguem as linhas naturais de tensão da pele, elas cicatrizam melhor, porque sofrem menos tração.",
+  "correta": "**A: o reparo da ferida é composto por fases inflamatória, proliferativa e de remodelagem.** É a sequência das revisões, com a hemostasia incluída no início (StatPearls, Physiology, Wound Healing).",
+  "alerta": "A alternativa D também tem apoio parcial, pois o queloide acumula colágeno, com fibroblastos ativados que evitam a apoptose (PMC12495451). A banca considerou correta apenas a letra A, que foi mantida.",
+  "incorretas": {
+   "B": "**Definição do queloide.** A hipertrófica fica nos limites da ferida; quem cresce além é o queloide (PMC12495451).",
+   "C": "**Duas trocas.** O queloide coça com frequência e passa das bordas (PMC3022978; PMC12495451).",
+   "D": "**Tem meia verdade.** Há fibroblastos muito ativos e excesso de colágeno no queloide (PMC12495451), mas a alternativa não é a que a banca escolheu; veja o alerta.",
+   "E": "**O contrário.** Incisão paralela às linhas de tensão é a que favorece uma boa cicatriz, por sofrer menos tração."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Physiology, Wound Healing (NBK535406)",
+   "Hypertrophic Scarring and Keloids, PMC12495451",
+   "Hypertrophic Scarring and Keloids: Pathomechanisms, PMC3022978"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31294,6 +31521,24 @@
   },
   "referencias": [
    "Barros Filho e Lech, Exame Físico em Ortopedia, 3ª ed. (2017), cap. 8 (Punho) e cap. 9 (Mão)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1870": {
+  "conceito": "A corrente é o que realmente machuca, e os efeitos sobem em escada com a intensidade. Uma revisão traz os valores estimados para corrente alternada de 60 Hz (Conduction of Electrical Current to and Through the Human Body, PMC2763825):\n\n| Corrente | Efeito |\n|---|---|\n| cerca de 1 mA | quase imperceptível |\n| cerca de 16 mA | máximo que um homem médio consegue segurar e soltar (corrente de \"soltar\") |\n| cerca de 20 mA | paralisia dos músculos respiratórios |\n| cerca de 100 mA | limiar de fibrilação ventricular |\n\nAo redor de 16 a 20 mA, a contração é tão forte que a pessoa não consegue soltar a fonte: é a **tetania muscular esquelética**. Uma revisão lembra que, entre 15 e 150 Hz, cerca de 20 mA pode provocar tetania (PMC8068857). O StatPearls define a corrente de soltar como o máximo que a pessoa tolera e ainda consegue largar a fonte voluntariamente (Electrical Injuries).\n\nSe a corrente passa pelo tórax, a contração sustentada pode parar a respiração. Esse é o motivo de os números serem aproximados, e a fronteira entre tetania e paralisia respiratória é estreita.",
+  "correta": "**E: tetania muscular esquelética.** É a faixa em que a contração passa a impedir que a pessoa solte a fonte (PMC2763825; PMC8068857).",
+  "alerta": "As fontes colocam a paralisia respiratória em cerca de 20 mA, valor no limite da faixa da questão (letra D). A letra E foi mantida como gabarito da banca, por corresponder à tetania descrita nessa faixa.",
+  "incorretas": {
+   "A": "**Precisa de muito mais.** O limiar de fibrilação ventricular fica em torno de 100 mA (PMC2763825).",
+   "B": "**É o começo da escada.** A percepção surge por volta de 1 mA (PMC2763825).",
+   "C": "**Bem mais adiante.** A parada cardíaca decorre de correntes maiores, acima da faixa da questão.",
+   "D": "**A distratora mais próxima.** A paralisia respiratória fica em cerca de 20 mA (PMC2763825), logo no limite da faixa. A banca preferiu a tetania; veja o alerta."
+  },
+  "referencias": [
+   "Conduction of Electrical Current to and Through the Human Body, PMC2763825",
+   "Electrocution Stigmas in Organ Damage, PMC8068857",
+   "StatPearls (NCBI Bookshelf), Electrical Injuries (NBK448087)"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31587,6 +31832,97 @@
   },
   "referencias": [
    "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen; tradução), cap. 57 (A mão queimada), p. 2122 e 2142"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1912": {
+  "conceito": "Logo depois da hemostasia, a ferida chama os primeiros soldados: os **polimorfonucleares**, ou neutrófilos. Eles fazem a fagocitose de restos celulares e bactérias e descontaminam a ferida (StatPearls, Wound Healing Phases). Por isso, seu auge é muito precoce, nas primeiras 24 a 48 horas, como pede a questão.\n\nDepois deles entra o macrófago, célula que o StatPearls considera a mais crítica da cicatrização (Wound Assessment). Da mesma forma, a sequência é fácil de memorizar pelos prazos: proliferação de 3 dias até cerca de 2 semanas (PMC5817091); remodelação a partir de cerca de 21 dias, por até 1 ano (StatPearls, Physiology, Wound Healing).",
+  "correta": "**A: nas primeiras 24-48 horas.** É a janela da fase inflamatória inicial, em que os polimorfonucleares limpam a ferida (StatPearls, Wound Healing Phases).",
+  "alerta": "As fontes abertas consultadas descrevem o papel precoce dos neutrófilos, mas o trecho lido não traz os números 24 a 48 horas; o valor é o da banca e da tradição didática. Letra A mantida.",
+  "incorretas": {
+   "B": "**Já é a troca de turno.** Depois de 72 horas, os macrófagos dominam a cena, e a proliferação está começando (PMC5817091).",
+   "C": "**Proliferação.** No sétimo dia, a ferida está construindo matriz e granulação (PMC5817091).",
+   "D": "**Remodelação.** Aos 30 dias, a ferida já passou do início da remodelação, que começa por volta do dia 21 (StatPearls, Physiology, Wound Healing).",
+   "E": "**Ainda remodelação.** O mesmo raciocínio: a resposta aguda acabou há muito tempo."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Wound Healing Phases (NBK470443)",
+   "StatPearls (NCBI Bookshelf), Physiology, Wound Healing (NBK535406)",
+   "StatPearls (NCBI Bookshelf), Wound Assessment (NBK482198)",
+   "Role of MicroRNA in Proliferation Phase of Wound Healing, PMC5817091"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1913": {
+  "conceito": "O miofibroblasto é um fibroblasto que aprendeu a puxar. Ao microscópio, parece um fibroblasto comum, mas traz fibras de estresse, complexos de adesão e actina de músculo liso (Green, 7ª ed., cap. 4, Dupuytren Disease). Com essa maquinaria, ele se prende à matriz e **aproxima as bordas da ferida**: é a contração.\n\nO próprio Green o chama de célula-chave da doença de DUPUYTREN, e a comparação ajuda a entender: na ferida, essa força é útil e reduz o defeito; quando persiste no lugar errado, vira contratura. O mesmo princípio explica por que o enxerto de espessura total atrasa a contração da ferida, quando aplicado (Green, 8ª ed., cap. 44).\n\nNa proliferação, cada célula tem o seu papel: queratinócitos fazem a epitelização, os novos vasos fazem a neoangiogênese, e os fibroblastos comuns produzem a matriz (PMC5817091).",
+  "correta": "**C: contração da ferida.** É a função que define o miofibroblasto, graças às fibras contráteis (Green, 7ª ed., cap. 4).",
+  "incorretas": {
+   "A": "**Cabe aos queratinócitos.** A epitelização é o crescimento da pele sobre a ferida, com outra célula (StatPearls, Physiology, Epithelialization).",
+   "B": "**Resposta genérica demais.** A continuidade depende da matriz inteira e do epitélio, e não da ação específica do miofibroblasto.",
+   "D": "**É de células endoteliais.** A neoangiogênese forma vasos e não depende da força contrátil (PMC5817091).",
+   "E": "**A confusão mais próxima.** O tecido de granulação inclui fibroblastos e vasos, mas contraí-lo é a tarefa específica da célula perguntada (PMC5817091)."
+  },
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 4 (Doença de Dupuytren)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 44",
+   "StatPearls (NCBI Bookshelf), Physiology, Epithelialization (NBK532977)",
+   "Role of MicroRNA in Proliferation Phase of Wound Healing, PMC5817091"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1924": {
+  "conceito": "LEDDERHOSE é a prima da doença de DUPUYTREN que aparece no pé: nódulos dentro das faixas da fáscia plantar. O StatPearls destaca que a doença é rara, benigna e compartilha a distribuição geográfica da contratura de DUPUYTREN, sendo mais comum em descendentes do norte da Europa (Plantar Fibromatosis). Cerca de 15% das pessoas com DUPUYTREN também a têm (PMC10605618), e o Green cita ambas no mesmo grupo de doenças fibrosas, junto com a de PEYRONIE e o ombro congelado (8ª ed., cap. 4, p. 149; 7ª ed., cap. 4, p. 132).\n\nO perfil do paciente é outro detalhe cobrado: a idade típica fica na quarta e quinta décadas, com taxas maiores acima dos 50 anos e em homens (PMC12706499; PMC13227022). Existe uma forma infantil, mas é rara e tem nome próprio, \"nódulos plantares anteromediais benignos\".\n\nPor que o nódulo plantar dói e atrapalha? Ele fica exatamente onde se pisa. Diferente da mão, costuma dar menos contratura.",
+  "correta": "**A: espessamento e hialinização das fibras de colágeno da fáscia plantar, com nódulos palpáveis e retração.** O diagnóstico depende de identificar nódulos nas faixas da fáscia plantar (StatPearls, Plantar Fibromatosis).",
+  "incorretas": {
+   "B": "**A geografia é outra.** A doença segue a distribuição da DUPUYTREN, mais comum em descendentes do norte da Europa (StatPearls, Plantar Fibromatosis).",
+   "C": "**Idade errada.** O pico é na meia-idade, na quarta e quinta décadas (PMC12706499). Não é uma doença de atletas jovens.",
+   "D": "**Sem associação com essas drogas.** As associações descritas são DUPUYTREN, PEYRONIE, diabetes, epilepsia e álcool (PMC10605618).",
+   "E": "**É a descrição da mão.** Metacarpofalângica fletida por fibrose é DUPUYTREN, que acomete a fáscia palmar (Green, 8ª ed., cap. 4)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Plantar Fibromatosis (NBK557674)",
+   "Ledderhose's Disease: An Up-to-Date Review, PMC10605618",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 4, p. 149",
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 4, p. 132"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1927": {
+  "conceito": "Quando o abdome não serve de doador, o que usar na reconstrução da mama? As revisões colocam o retalho transverso do grácil (TUG) como segunda escolha, para mamas pequenas a médias, nas pacientes sem doador abdominal adequado (PMC7882326; PMC11650608).\n\nEle tem bons argumentos: anatomia previsível, baseada na artéria circunflexa femoral medial, levantamento rápido, baixa morbidade na área doadora, e a gordura da coxa tem textura próxima à da mama, o que torna a moldagem fácil (PMC10660174). Em uma metanálise de 871 pacientes, teve baixa perda total do retalho (PMC11449697).\n\nE o preço? As fraquezas são **volume limitado**, que costuma exigir lipoenxertia ou implante, cicatriz na coxa, risco de linfedema e **pedículo curto**. Esse último ponto é o que a banca transformou em erro: dizer que o pedículo é longo.",
+  "correta": "**D: possui pedículo longo, o que facilita a microanastomose.** É a afirmação incorreta, como pede a questão: as revisões listam o pedículo curto entre as desvantagens do retalho (PMC11650608; PMC7882326).",
+  "incorretas": {
+   "A": "**Verdadeira.** O TUG é usado quando não há doador abdominal adequado (PMC7882326).",
+   "B": "**Coerente com a anatomia.** A face interna da coxa é acessível, e por isso o retalho é prático, embora as revisões lidas não detalhem a posição.",
+   "C": "**Verdadeira.** O tecido é macio e de textura parecida com a da mama (PMC11650608).",
+   "E": "**Verdadeira.** O levantamento rápido e a baixa morbidade favorecem a recuperação (PMC10660174)."
+  },
+  "referencias": [
+   "Alternative flaps in autologous breast reconstruction, PMC7882326",
+   "Updates on Breast Reconstruction, PMC11650608",
+   "The transverse upper gracilis flap: patient satisfaction outcomes, PMC10660174",
+   "Efficacy and safety of flaps in Autologous Breast Reconstruction, PMC11449697"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1928": {
+  "conceito": "Quando se escolhe entre um enxerto fino e um grosso, troca-se sempre uma coisa pela outra. O enxerto de espessura parcial leva parte da derme; o de espessura total, a derme inteira.\n\nO enxerto **parcial** tem duas forças: é mais disponível, porque a área doadora cicatriza sozinha e pode ser usada de novo, e costuma pegar melhor. Numa série de couro cabeludo, a pega média foi de 90% contra 72% do total (PMC8721364). Seu preço é a contração maior e o aspecto pior.\n\nO enxerto **total** contrai menos e, por isso, é preferido onde o movimento importa (PMC12088188). Em compensação, a área doadora não se regenera e precisa ser fechada, o que limita o quanto se pode tirar (StatPearls, Full-Thickness Skin Grafts). O Green acrescenta que, na mão, a pele volar merece atenção especial, inclusive para escolher a espessura (8ª ed., cap. 44).",
+  "correta": "**D: a disponibilidade é maior quando comparados com os de espessura total.** A área doadora se reepiteliza sozinha, ao passo que a do enxerto total não se regenera (StatPearls, Full-Thickness Skin Grafts).",
+  "incorretas": {
+   "A": "**O inverso.** A contração secundária é maior no enxerto fino; é o total que contrai menos (PMC12088188).",
+   "B": "**O inverso também.** A pega costuma ser melhor no parcial, que exige menos do leito (PMC8721364).",
+   "C": "**Esses locais preferem o total.** Na face e na mão, a qualidade e o menor encolhimento pesam mais (PMC12088188).",
+   "E": "**Descreve o enxerto total.** É a doadora do total que se fecha primariamente; a do parcial cicatriza sozinha (StatPearls, Full-Thickness Skin Grafts)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Full-Thickness Skin Grafts (NBK532875)",
+   "Full Thickness Skin Grafting in Pediatric Orthopaedic Surgery, PMC12088188",
+   "Split vs full-thickness skin grafts in scalp reconstruction, PMC8721364",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 44"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
