@@ -122,3 +122,13 @@ ou `search_path` foi alterada. Nenhum dado administrativo foi exposto em endpoin
   questões no total e online agora; os mais quentes aparecem primeiro.
 - **Lista de pessoas a cada 3 minutos** nas telas ao vivo (Agora e Usuários); o resto continua a cada 5. Online segue
   sendo sinal nos últimos 5 minutos, e o botão Atualizar busca na hora.
+
+## Revisão de 02/11/2026, madrugada (cores do site e página Agora mais simples)
+
+- **Cores do site, sem degradê**: o painel usa os tokens do site (`src/estilos/tokens.css`): porcelana, superfície,
+  grafite, ardósia, verdete, ouro, acerto, erro, que já trocam sozinhos no escuro. Botão, item ativo, filtros e abas
+  em verdete, como no site. Gráficos em verdete e ouro.
+- **Sentido das cores de pessoa**: assinante = verdete; viu os planos hoje = ouro; não assinante = ardósia.
+- **Agora, de cima para baixo**: faixa no estilo do herói do site (céu verdete com horizonte em pixel) com os totais;
+  **uma** lista de quem está online, com filtro (todos, assinantes, viram os planos hoje, não assinantes) e um fio de cor
+  em cada linha; **uma** caixa "Fora do site agora" com abas; depois "Hoje".

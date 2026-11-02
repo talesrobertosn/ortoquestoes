@@ -1,205 +1,153 @@
 /* ==========================================================================
-   Painel: cores (revisão de 02/11/2026, pedido do Tales: "tá muito preto e branco, deixa com mais cor").
-   Três cores de pessoa, usadas no painel inteiro com o mesmo sentido:
-     assinante = verde · não assinante que viu os planos (lead) = âmbar · não assinante = azul.
-   Cada área do menu tem a sua cor, que tinge o título, o item ativo, o botão principal e os gráficos da tela.
+   Painel: cores do site (revisão de 02/11/2026, Tales: "seguir o design do site, as cores do site, se inspire na
+   página inicial; o degradê ficou feio"). O painel usa os mesmos tokens do site (src/estilos/tokens.css), que já
+   trocam sozinhos no tema escuro: porcelana, superfície, grafite, ardósia, verdete, ouro, acerto, erro.
+   Sem degradê. Sentido fixo das cores de pessoa:
+     assinante = verdete (a cor da marca) · viu os planos = ouro · não assinante = ardósia.
    A cor nunca é a única pista: todo grupo tem nome, número e selo escrito.
    ========================================================================== */
 .a3 {
-  --a3-lona: #f3f5fa;
-  --cor-assinante: #16a34a; --cor-assinante-veu: #dcfce7; --cor-assinante-texto: #15803d;
-  --cor-lead: #f59e0b;      --cor-lead-veu: #fef3c7;      --cor-lead-texto: #b45309;
-  --cor-gratis: #3b82f6;    --cor-gratis-veu: #dbeafe;    --cor-gratis-texto: #1d4ed8;
-  --cor-vivo: #10b981;
-  --a3-serie-1: #4f46e5;
-  --a3-serie-2: #14b8a6;
-  --a3-serie-3: #f59e0b;
-  --cor-area: #4f46e5; --cor-area-veu: #eef2ff;
-  /* Texto sobre as cores cheias: branco no claro; no escuro as cores são claras, então o texto é escuro (contraste ≥ 4,5:1). */
-  --cor-sobre: #ffffff;
-  --cor-area-forte: #4338ca; --cor-assinante-forte: #15803d; --cor-gratis-forte: #1d4ed8; --cor-lead-forte: #f59e0b;
+  --a3-lona: var(--porcelana);
+  --a3-papel: var(--superficie);
+  --a3-alt: var(--superficie-2);
+  --a3-recuo: var(--superficie-2);
+  --a3-tinta: var(--grafite);
+  --a3-tinta-2: var(--grafite);
+  --a3-cinza: var(--ardosia);
+  --a3-cinza-2: var(--traco-forte);
+  --a3-linha: var(--traco);
+  --a3-linha-2: var(--traco-forte);
+  --a3-acento: var(--verdete);
+  --a3-acento-veu: var(--verdete-veu);
+  --a3-ok: var(--acerto);
+  --a3-ok-veu: var(--acerto-veu);
+  --a3-aviso: var(--aviso);
+  --a3-aviso-veu: var(--aviso-veu);
+  --a3-erro: var(--erro);
+  --a3-erro-veu: var(--erro-veu);
+  --a3-ouro: var(--ouro);
+  --a3-serie-1: var(--verdete);
+  --a3-serie-2: var(--ouro);
+  --a3-serie-3: var(--prata);
+  --a3-sombra: var(--sombra);
+  --a3-r-cartao: var(--raio-cartao, 16px);
+  --a3-r-controle: var(--raio-controle, 10px);
+  /* Pessoa: assinante (verdete), viu os planos (ouro), não assinante (ardósia). */
+  --cor-assinante: var(--verdete); --cor-assinante-veu: var(--verdete-veu); --cor-assinante-texto: var(--verdete);
+  --cor-lead: var(--ouro);         --cor-lead-veu: var(--ouro-veu);         --cor-lead-texto: var(--ouro-texto);
+  --cor-gratis: var(--ardosia);    --cor-gratis-veu: var(--prata-veu);      --cor-gratis-texto: var(--grafite);
+  --cor-sobre: var(--sobre-destaque, #fff);
 }
-:root[data-tema="escuro"] .a3 {
-  --a3-lona: #0b0d12;
-  --cor-assinante: #4ade80; --cor-assinante-veu: #0f2a1a; --cor-assinante-texto: #86efac;
-  --cor-lead: #fbbf24;      --cor-lead-veu: #2b210b;      --cor-lead-texto: #fcd34d;
-  --cor-gratis: #60a5fa;    --cor-gratis-veu: #0f1e3a;    --cor-gratis-texto: #93c5fd;
-  --cor-vivo: #34d399;
-  --a3-serie-1: #818cf8;
-  --a3-serie-2: #2dd4bf;
-  --a3-serie-3: #fbbf24;
-  --cor-area: #818cf8; --cor-area-veu: #1b1d3a;
-  --cor-sobre: #0a0a0a;
-  --cor-area-forte: var(--cor-area); --cor-assinante-forte: var(--cor-assinante); --cor-gratis-forte: var(--cor-gratis); --cor-lead-forte: var(--cor-lead);
-}
-/* Cor de cada área (claro / escuro). */
-.a3 [data-area="comando"], .a3[data-area="comando"] { --cor-area: #10b981; --cor-area-veu: #d1fae5;  --cor-area-forte: #047857; }
-.a3 [data-area="pessoas"], .a3[data-area="pessoas"] { --cor-area: #3b82f6; --cor-area-veu: #dbeafe;  --cor-area-forte: #1d4ed8; }
-.a3 [data-area="receita"], .a3[data-area="receita"] { --cor-area: #0d9488; --cor-area-veu: #ccfbf1;  --cor-area-forte: #0f766e; }
-.a3 [data-area="estudo"], .a3[data-area="estudo"] { --cor-area: #8b5cf6; --cor-area-veu: #ede9fe;  --cor-area-forte: #6d28d9; }
-.a3 [data-area="comunicacao"], .a3[data-area="comunicacao"] { --cor-area: #f97316; --cor-area-veu: #ffedd5;  --cor-area-forte: #c2410c; }
-.a3 [data-area="configuracoes"], .a3[data-area="configuracoes"] { --cor-area: #64748b; --cor-area-veu: #e2e8f0;  --cor-area-forte: #475569; }
-:root[data-tema="escuro"] .a3 [data-area="comando"], :root[data-tema="escuro"] .a3[data-area="comando"] { --cor-area: #34d399; --cor-area-veu: #0c2a20;  --cor-area-forte: var(--cor-area); }
-:root[data-tema="escuro"] .a3 [data-area="pessoas"], :root[data-tema="escuro"] .a3[data-area="pessoas"] { --cor-area: #60a5fa; --cor-area-veu: #0f1e3a;  --cor-area-forte: var(--cor-area); }
-:root[data-tema="escuro"] .a3 [data-area="receita"], :root[data-tema="escuro"] .a3[data-area="receita"] { --cor-area: #2dd4bf; --cor-area-veu: #0b2725;  --cor-area-forte: var(--cor-area); }
-:root[data-tema="escuro"] .a3 [data-area="estudo"], :root[data-tema="escuro"] .a3[data-area="estudo"] { --cor-area: #a78bfa; --cor-area-veu: #221a3d;  --cor-area-forte: var(--cor-area); }
-:root[data-tema="escuro"] .a3 [data-area="comunicacao"], :root[data-tema="escuro"] .a3[data-area="comunicacao"] { --cor-area: #fb923c; --cor-area-veu: #2e1a0c;  --cor-area-forte: var(--cor-area); }
-:root[data-tema="escuro"] .a3 [data-area="configuracoes"], :root[data-tema="escuro"] .a3[data-area="configuracoes"] { --cor-area: #94a3b8; --cor-area-veu: #1c2230;  --cor-area-forte: var(--cor-area); }
+:root[data-tema="escuro"] .a3 { --cor-sobre: #0f1413; }
 
-/* Menu: cada área com o seu ícone colorido; a área aberta ganha a cor. */
-.a3-nav-grupo > div > .a3-nav-area > .a3-icone:first-child { box-sizing: content-box; padding: 5px; border-radius: 9px; background: var(--cor-area-veu); color: var(--cor-area); }
-.a3-nav-grupo > div > .a3-nav-area[aria-current] { color: var(--a3-tinta); }
-.a3-nav-grupo > div > .a3-nav-area[aria-current] > .a3-icone:first-child { background: var(--cor-area-forte); color: var(--cor-sobre); }
-.a3-nav-grupo > div[data-area] .a3-nav-parte[aria-current="page"] { box-shadow: inset 3px 0 0 var(--cor-area); color: var(--a3-tinta); }
-.a3-movel-barra a[aria-current] { color: var(--cor-area); }
-.a3-movel-barra a[aria-current] .a3-icone { color: var(--cor-area); }
-
-/* A tela inteira: título da área, botão principal, abas e faixa de métricas na cor da área. */
-.a3-cabeca .a3-rotulo, .a3-inicio-topo .a3-rotulo { color: var(--cor-area); }
-.a3-botao:not(.a3-botao--contorno):not(.a3-botao--fantasma):not(.a3-botao--suave):not(.a3-botao--perigo):not(:disabled) { background: var(--cor-area-forte); border-color: var(--cor-area-forte); color: var(--cor-sobre); }
-.a3-abas-tela a[aria-current="page"] { color: var(--cor-area); box-shadow: 0 1px 2px rgba(0,0,0,.08), inset 0 -2px 0 var(--cor-area); }
-.a3-segmento [aria-checked="true"], .a3-segmento [aria-pressed="true"] { color: var(--cor-area); }
-.a3-filtro[aria-pressed="true"] { background: var(--cor-area-forte); border-color: var(--cor-area-forte); border-style: solid; color: var(--cor-sobre); }
-.a3-aba-grande[aria-selected="true"]::after { background: var(--cor-area-forte); }
-.a3-aba-grande[aria-selected="true"] .a3-aba-grande__numero { color: var(--cor-area); }
-.a3-abas-locais [aria-selected="true"] { color: var(--cor-area); }
-/* Faixas de métricas: um fio de cor no alto de cada número, em sequência. */
-.a3-faixa-metricas > .a3-metrica::before { content: ""; position: absolute; top: 0; left: 20px; right: 20px; height: 3px; border-radius: 0 0 3px 3px; background: var(--fio, transparent); }
-.a3-faixa-metricas > .a3-metrica:nth-child(5n+1) { --fio: var(--a3-serie-1); }
-.a3-faixa-metricas > .a3-metrica:nth-child(5n+2) { --fio: var(--a3-serie-2); }
-.a3-faixa-metricas > .a3-metrica:nth-child(5n+3) { --fio: var(--cor-gratis); }
-.a3-faixa-metricas > .a3-metrica:nth-child(5n+4) { --fio: var(--cor-lead); }
-.a3-faixa-metricas > .a3-metrica:nth-child(5n+5) { --fio: var(--cor-assinante); }
-/* Sem overflow: hidden no painel: o balão de definição de cada número (.a3-balao) precisa sair por baixo. */
-
-/* ───────── Página inicial ───────── */
-.a3-totais { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
-.a3-total { position: relative; display: grid; gap: 4px; padding: 18px 20px 16px; border-radius: 22px; background: var(--a3-papel); box-shadow: var(--a3-sombra); overflow: hidden; }
-.a3-total::before { content: ""; position: absolute; inset: 0 0 auto; height: 5px; background: var(--c); }
-.a3-total--vivo { --c: var(--cor-vivo); --cv: color-mix(in srgb, var(--cor-vivo) 14%, var(--a3-papel)); --ct: var(--cor-vivo); }
-.a3-total--assinante { --c: var(--cor-assinante); --cv: var(--cor-assinante-veu); --ct: var(--cor-assinante-texto); }
-.a3-total--lead { --c: var(--cor-lead); --cv: var(--cor-lead-veu); --ct: var(--cor-lead-texto); }
-.a3-total--gratis { --c: var(--cor-gratis); --cv: var(--cor-gratis-veu); --ct: var(--cor-gratis-texto); }
-.a3-total { background: linear-gradient(160deg, var(--cv), var(--a3-papel) 70%); }
-.a3-total__rotulo { display: flex; align-items: center; gap: 8px; color: var(--ct); font-size: 12.5px; font-weight: 650; letter-spacing: .02em; text-transform: uppercase; }
-.a3-total__valor { font-size: 42px; font-weight: 700; letter-spacing: -.04em; line-height: 1.05; color: var(--ct); }
-.a3-total__nota { color: var(--a3-cinza); font-size: 12.5px; }
-@media (max-width: 1000px) { .a3-totais { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-total__valor { font-size: 34px; } }
-
-.a3-faixa-secao { display: grid; gap: 12px; }
-.a3-faixa-secao__cabeca { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; padding: 6px 2px 0; border-top: 1px solid var(--a3-linha); padding-top: 18px; }
-.a3-faixa-secao__n { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--cor-area-forte); color: var(--cor-sobre); font-size: 13px; font-weight: 700; align-self: center; }
-.a3-faixa-secao__cabeca h2 { font-size: 20px; font-weight: 700; letter-spacing: -.02em; }
-.a3-faixa-secao__cabeca p { color: var(--a3-cinza); font-size: 13px; }
-
-/* Grupos de quem está online: assinante verde, lead âmbar, não assinante azul. */
-.a3-online { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
-@media (max-width: 1180px) { .a3-online { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important; } .a3-online__grupo--gratis { grid-column: 1 / -1; } }
-@media (max-width: 760px) { .a3-online { grid-template-columns: minmax(0, 1fr) !important; } }
-.a3-online__grupo { --cf: var(--cor-gratis-forte); --c: var(--cor-gratis); --cv: var(--cor-gratis-veu); --ct: var(--cor-gratis-texto); border: 1.5px solid color-mix(in srgb, var(--c) 40%, var(--a3-linha)) !important; background: linear-gradient(180deg, var(--cv), var(--a3-papel) 160px) !important; }
-.a3-online__grupo--assinante { --cf: var(--cor-assinante-forte); --c: var(--cor-assinante); --cv: var(--cor-assinante-veu); --ct: var(--cor-assinante-texto); }
-.a3-online__grupo--lead { --cf: var(--cor-lead-forte); --c: var(--cor-lead); --cv: var(--cor-lead-veu); --ct: var(--cor-lead-texto); }
-.a3-online__cabeca h3 { font-size: 16px; font-weight: 700; color: var(--ct); }
-.a3-online__cabeca small { color: var(--a3-cinza); font-size: 12px; }
-.a3-online__cabeca b { color: var(--ct) !important; }
-.a3-online__selo { background: var(--c) !important; box-shadow: 0 0 0 4px color-mix(in srgb, var(--c) 22%, transparent) !important; }
-.a3-online__grupo .a3-avatar { background: var(--cf) !important; color: var(--cor-sobre) !important; }
-.a3-online__lista li { display: flex; align-items: flex-start; gap: 2px; }
-.a3-online__lista .a3-online__pessoa { flex: 1; min-width: 0; }
-.a3-online__lista li:not(:last-child) { border-bottom: 1px solid color-mix(in srgb, var(--c) 16%, transparent); }
-.a3-online__meta { color: var(--a3-cinza); font-size: 12px; }
-.a3-online__carta { flex: none; display: grid; place-items: center; width: 34px; height: 34px; margin-top: 8px; border: 0; border-radius: 10px; background: none; color: var(--ct); cursor: pointer; }
-.a3-online__carta:hover { background: var(--cv); }
-.a3-tag--lead { background: var(--cor-lead); color: #1f1300; }
-.a3-tag--assinante { background: var(--cor-assinante-forte) !important; color: var(--cor-sobre); }
-.a3-tag--suave { background: var(--cor-lead-veu); color: var(--cor-lead-texto); }
-
-/* Blocos de "Não estão online". */
-.a3-bloco { --cf: var(--cor-gratis-forte); --c: var(--cor-gratis); --cv: var(--cor-gratis-veu); --ct: var(--cor-gratis-texto); overflow: hidden; border-top: 5px solid var(--c); }
-.a3-bloco--assinante { --cf: var(--cor-assinante-forte); --c: var(--cor-assinante); --cv: var(--cor-assinante-veu); --ct: var(--cor-assinante-texto); }
-.a3-bloco--lead { --cf: var(--cor-lead-forte); --c: var(--cor-lead); --cv: var(--cor-lead-veu); --ct: var(--cor-lead-texto); }
-.a3-bloco__cabeca { display: grid; gap: 4px; padding: 16px 20px 10px; background: linear-gradient(180deg, var(--cv), transparent); }
-.a3-bloco__cabeca h3 { font-size: 15px; font-weight: 600; }
-.a3-bloco__cabeca h3 b { color: var(--ct); font-size: 24px; margin-right: 4px; }
-.a3-bloco__cabeca p { color: var(--a3-cinza); font-size: 12.5px; }
-.a3-bloco .a3-avatar { background: var(--cv); color: var(--ct); }
-
-/* Pessoas no resto do painel: o avatar de quem assina fica verde. */
-.a3-avatar:has(+ * .a3-tag--assinante) { background: var(--cor-assinante); color: var(--cor-sobre); }
-
-/* Gráficos e composições usam a paleta (indigo, turquesa, âmbar) em vez de preto e cinza. */
-.a3-chave--2 { background: var(--a3-serie-2) !important; }
-.a3-rank li i::before { background: var(--cor-area-forte) !important; }
-.a3-vigencia__trilho i:not(.perto):not(.fim) { background: var(--cor-assinante); }
-.a3-progresso i { background: var(--cor-area-forte); }
-.a3-calendario__edicao.s-no-ar, .a3-calendario__edicao.s-inscricoes { background: var(--cor-area-forte); }
-.a3-editor__titulo span, .a3-faixa-secao__n { background: var(--cor-area-forte); }
-.a3-campanhas__lista button[aria-current="true"], .a3-passos li.atual { background: var(--cor-area-forte); }
-.a3-passos li.atual span { color: var(--cor-area); }
-.a3-extrato__valor { color: var(--cor-assinante-texto); }
+/* Botão principal, item ativo, filtros e abas: verdete, como no site. */
+.a3-botao:not(.a3-botao--contorno):not(.a3-botao--fantasma):not(.a3-botao--suave):not(.a3-botao--perigo):not(:disabled) { background: var(--verdete); border-color: var(--verdete); color: var(--cor-sobre); }
+.a3-botao:not(.a3-botao--contorno):not(.a3-botao--fantasma):not(.a3-botao--suave):not(.a3-botao--perigo):not(:disabled):hover { background: var(--verdete-tinta); }
+.a3-filtro[aria-pressed="true"] { background: var(--verdete); border-color: var(--verdete); border-style: solid; color: var(--cor-sobre); }
+.a3-abas-tela a[aria-current="page"] { color: var(--verdete); }
+.a3-aba-grande[aria-selected="true"]::after { background: var(--verdete); }
+.a3-aba-grande[aria-selected="true"] .a3-aba-grande__numero { color: var(--verdete); }
+.a3-abas-locais [aria-selected="true"] { color: var(--verdete); }
+.a3-cabeca .a3-rotulo { color: var(--verdete); }
+/* Menu lateral: ícones em ardósia; a área e o item abertos em verdete, com o véu do site. */
+.a3-nav-grupo .a3-nav-area[aria-current] { background: var(--verdete-veu); color: var(--verdete); }
+.a3-nav-grupo .a3-nav-parte[aria-current="page"] { background: var(--verdete-veu); color: var(--verdete); box-shadow: none; font-weight: 600; }
+.a3-movel-barra a[aria-current], .a3-movel-barra a[aria-current] .a3-icone { color: var(--verdete); }
+.a3-movel-partes a[aria-current="page"] { background: var(--verdete); color: var(--cor-sobre); }
+/* Gráficos: verdete e ouro. */
+.a3-g-area { fill: color-mix(in srgb, var(--verdete) 12%, transparent) !important; }
+.a3-g-linha:not(.a3-g-linha--b):not(.a3-g-linha--acento) { stroke: var(--verdete) !important; }
+.a3-g-ponto { stroke: var(--verdete) !important; }
+.a3-chave--linha { border-top-color: var(--verdete) !important; }
+.a3-funil__trilho span:not(.perda) { background: var(--verdete) !important; }
+.a3-rank li i::before { background: var(--verdete) !important; }
+.a3-mini path.a3-mini__linha { stroke: var(--verdete) !important; }
+.a3-mini path.a3-mini__area { fill: color-mix(in srgb, var(--verdete) 12%, transparent) !important; }
+.a3-progresso i { background: var(--verdete); }
+.a3-editor__titulo span, .a3-campanhas__lista button[aria-current="true"], .a3-passos li.atual, .a3-calendario__edicao.s-no-ar, .a3-calendario__edicao.s-inscricoes { background: var(--verdete); color: var(--cor-sobre); }
+.a3-passos li.atual span { color: var(--verdete); background: var(--cor-sobre); }
+.a3-vigencia__trilho i:not(.perto):not(.fim) { background: var(--verdete); }
+.a3-extrato__valor { color: var(--acerto-texto, var(--acerto)); }
 .a3-extrato__linha.devolvida .a3-extrato__valor { color: var(--a3-cinza); }
-.a3-g-area { fill: color-mix(in srgb, var(--a3-serie-1) 14%, transparent) !important; }
-.a3-g-linha:not(.a3-g-linha--b):not(.a3-g-linha--acento) { stroke: var(--a3-serie-1) !important; }
-.a3-g-ponto { stroke: var(--a3-serie-1) !important; }
-.a3-chave--linha { border-top-color: var(--a3-serie-1) !important; }
-.a3-funil__trilho span:not(.perda) { background: linear-gradient(90deg, var(--a3-serie-1), var(--a3-serie-2)) !important; }
-.a3-mini path.a3-mini__linha { stroke: var(--cor-area) !important; }
-.a3-mini path.a3-mini__area { fill: color-mix(in srgb, var(--cor-area) 14%, transparent) !important; }
 
-.a3-online__lista .a3-online__carta { display: grid !important; grid-template-columns: none !important; width: 34px !important; padding: 0 !important; }
+/* ───────── Agora: faixa de abertura no estilo do herói do site ───────── */
+.a3-heroi { position: relative; display: grid; gap: 18px; padding: 24px 24px 40px; border-radius: var(--raio-cartao, 16px); background: var(--heroi); color: var(--sobre-heroi, #fff); }
+.a3-heroi__topo { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px 24px; flex-wrap: wrap; }
+.a3-heroi__topo .a3-rotulo { color: var(--pixel-ouro, #f4cf7c); }
+.a3-heroi__topo h1 { color: var(--sobre-heroi, #fff); }
+.a3-heroi__topo p { max-width: 460px; color: var(--sobre-heroi-2, rgba(255,255,255,.8)); font-size: 13px; }
+.a3-heroi__numeros { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.a3-heroi__numero { display: grid; gap: 2px; padding: 12px 14px; border: 1px solid var(--heroi-traco, rgba(255,255,255,.2)); border-radius: 12px; background: var(--heroi-vidro, rgba(255,255,255,.1)); }
+.a3-heroi__numero span { font-size: 12px; font-weight: 600; color: var(--sobre-heroi-2, rgba(255,255,255,.8)); display: flex; align-items: center; gap: 6px; }
+.a3-heroi__numero b { font-family: var(--fonte-marca, inherit); font-size: 32px; font-weight: 700; letter-spacing: -.03em; line-height: 1.1; color: var(--sobre-heroi, #fff); }
+.a3-heroi__numero small { font-size: 11.5px; color: var(--sobre-heroi-2, rgba(255,255,255,.8)); }
+.a3-heroi__numero i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex: none; }
+.a3-heroi__numero--assinante i { background: #7fd6c9; }
+.a3-heroi__numero--lead i, .a3-heroi__numero--lead b { color: var(--pixel-ouro, #f4cf7c); }
+.a3-heroi__numero--lead i { background: var(--pixel-ouro, #f4cf7c); }
+.a3-heroi__numero--gratis i { background: #c9d3d1; }
+.a3-heroi__numero--vivo i { background: #7ef0b8; box-shadow: 0 0 0 3px rgba(126, 240, 184, .25); }
+@media (max-width: 1100px) { .a3-heroi__numeros { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .a3-heroi { padding: 18px 16px 36px; } .a3-heroi__numeros { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-heroi__numero:first-child { grid-column: 1 / -1; } .a3-heroi__numero b { font-size: 26px; } }
 
-/* ───────── Questões de hoje e do total, limite grátis e temperatura (02/11/2026) ───────── */
-.a3-totais { grid-template-columns: repeat(5, minmax(0, 1fr)); }
-@media (max-width: 1240px) { .a3-totais { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-@media (max-width: 760px) { .a3-totais { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-total:first-child { grid-column: 1 / -1; } }
-.a3-total--limite { --c: #e11d48; --cv: #ffe4e6; --ct: #be123c; }
-:root[data-tema="escuro"] .a3-total--limite { --c: #fb7185; --cv: #2e1018; --ct: #fda4af; }
+/* Cabeçalho das seções da página (Online agora, Fora do site agora, Hoje). */
+.a3-secao-cabeca { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; padding: 16px 20px 12px; border-bottom: 1px solid var(--a3-linha); }
+.a3-secao-cabeca h2 { font-family: var(--fonte-marca, inherit); font-size: 18px; font-weight: 700; letter-spacing: -.01em; }
+.a3-secao-cabeca p { color: var(--a3-cinza); font-size: 13px; }
 
-.a3-online__lista .a3-online__pessoa { grid-template-columns: 34px minmax(0, 1fr) auto !important; }
-.a3-lista-curta li > button:first-child { grid-template-columns: 30px minmax(0, 1fr) auto !important; }
-/* Dois números lado a lado: hoje (na cor do grupo) e total. */
-.a3-qq { display: inline-flex; align-self: start; gap: 4px; }
-.a3-qq > span { display: grid; justify-items: center; min-width: 46px; padding: 5px 7px 4px; border-radius: 11px; line-height: 1.05; }
-.a3-qq b { font-size: 17px; font-weight: 750; letter-spacing: -.02em; }
-.a3-qq small { font-size: 10px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; opacity: .8; }
-.a3-qq__hoje { background: var(--cf, var(--cor-gratis-forte)); color: var(--cor-sobre); }
-.a3-qq__hoje.zero { background: var(--a3-recuo); color: var(--a3-cinza); }
-.a3-qq__total { background: var(--a3-papel); color: var(--a3-tinta); box-shadow: inset 0 0 0 1px var(--a3-linha); }
-.a3-online__grupo--lead .a3-qq__hoje:not(.zero) { color: #1f1300; }
-.a3-bloco .a3-qq__hoje:not(.zero) { background: var(--cf, var(--c)); }
+/* Lista única de pessoas: um fio de cor à esquerda diz o grupo; o selo escreve. */
+.a3-pessoas-lista { list-style: none; margin: 0; padding: 0; }
+.a3-pessoas-lista > li { --c: var(--cor-gratis); display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 20px 12px 17px; border-bottom: 1px solid var(--a3-linha); border-left: 3px solid var(--c); }
+.a3-pessoas-lista > li:last-child { border-bottom: 0; }
+.a3-pessoas-lista > li.assinante { --c: var(--cor-assinante); }
+.a3-pessoas-lista > li.lead { --c: var(--cor-lead); background: color-mix(in srgb, var(--ouro-veu) 55%, transparent); }
+.a3-pessoa-linha { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 12px; align-items: start; min-width: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.a3-pessoa-linha:focus-visible { outline: 2px solid var(--foco, var(--verdete)); outline-offset: 3px; border-radius: 8px; }
+.a3-pessoa-linha .a3-avatar { width: 36px; height: 36px; background: var(--cor-gratis-veu); color: var(--cor-gratis-texto); }
+li.assinante .a3-pessoa-linha .a3-avatar { background: var(--verdete); color: var(--cor-sobre); }
+li.lead .a3-pessoa-linha .a3-avatar { background: var(--ouro-veu); color: var(--ouro-texto); box-shadow: inset 0 0 0 1.5px var(--ouro); }
+.a3-pessoa-linha__texto { display: grid; gap: 3px; min-width: 0; }
+.a3-pessoa-linha__nome { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-weight: 600; }
+.a3-pessoa-linha__faz { font-size: 13px; color: var(--a3-tinta); overflow-wrap: anywhere; }
+.a3-pessoa-linha__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12px; color: var(--a3-cinza); }
+.a3-pessoa-linha__acoes { display: flex; align-items: center; gap: 10px; }
+@media (max-width: 640px) {
+  .a3-pessoas-lista > li { grid-template-columns: minmax(0, 1fr); padding: 12px 16px 12px 13px; }
+  .a3-pessoa-linha__acoes { justify-content: space-between; padding-left: 48px; }
+}
+/* Selos de pessoa. */
+.a3-tag { display: inline-flex; align-items: center; margin: 0; padding: 1px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 600; line-height: 1.6; white-space: nowrap; }
+.a3-tag--assinante { background: var(--verdete); color: var(--cor-sobre); }
+.a3-tag--lead { background: var(--ouro-veu); color: var(--ouro-texto); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ouro) 45%, transparent); }
+.a3-tag--suave { background: var(--prata-veu); color: var(--ardosia); }
+.a3-tag--vivo { background: var(--acerto-veu); color: var(--acerto-texto, var(--acerto)); }
+
+/* Questões de hoje e do total, lado a lado. */
+.a3-qq { display: inline-flex; gap: 6px; }
+.a3-qq > span { display: grid; justify-items: center; min-width: 52px; padding: 4px 8px; border: 1px solid var(--a3-linha); border-radius: 10px; background: var(--a3-papel); line-height: 1.1; }
+.a3-qq b { font-family: var(--fonte-marca, inherit); font-size: 18px; font-weight: 700; color: var(--a3-tinta); }
+.a3-qq small { font-size: 10.5px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--a3-cinza); }
+.a3-qq__hoje:not(.zero) { border-color: color-mix(in srgb, var(--c, var(--verdete)) 45%, var(--a3-linha)); background: color-mix(in srgb, var(--c, var(--verdete)) 10%, var(--a3-papel)); }
+.a3-qq__hoje:not(.zero) b { color: var(--c, var(--verdete)); }
+li.lead .a3-qq__hoje:not(.zero) b { color: var(--ouro-texto); }
+.a3-qq__hoje.zero b { color: var(--a3-cinza); }
+.a3-pilula { display: inline-grid; place-items: center; min-width: 34px; padding: 1px 8px; border-radius: 999px; background: var(--superficie-2); color: var(--ardosia); font-weight: 700; font-variant-numeric: tabular-nums; }
+.a3-pilula--gratis { background: var(--prata-veu); color: var(--grafite); box-shadow: inset 0 0 0 1px var(--traco-forte); }
+.a3-pilula--assinante { background: var(--verdete-veu); color: var(--verdete); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--verdete) 35%, transparent); }
+
 /* Limite grátis do dia. */
-.a3-limite { display: grid; gap: 3px; margin: 2px 0; }
-.a3-limite__trilho { display: block; height: 6px; border-radius: 6px; background: color-mix(in srgb, var(--a3-tinta) 8%, transparent); overflow: hidden; }
-.a3-limite__trilho i { display: block; height: 100%; border-radius: inherit; background: var(--cor-gratis); }
-.a3-limite small { font-size: 11.5px; color: var(--a3-cinza); }
-.a3-limite.perto .a3-limite__trilho i { background: var(--cor-lead); }
-.a3-limite.bateu .a3-limite__trilho i { background: #e11d48; }
-.a3-limite.bateu small { color: #be123c; font-weight: 650; }
-:root[data-tema="escuro"] .a3-limite.bateu small { color: #fda4af; }
-/* Temperatura do não assinante: frio (azul) → fervendo (vermelho). */
-.a3-temp { display: inline-flex; align-items: center; gap: 4px; padding: 0 8px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: .02em; line-height: 1.7; }
-.a3-temp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-.a3-temp--frio { background: #e0f2fe; color: #0369a1; }
-.a3-temp--morno { background: #fef9c3; color: #a16207; }
-.a3-temp--quente { background: #ffedd5; color: #c2410c; }
-.a3-temp--fervendo { background: #ffe4e6; color: #be123c; box-shadow: 0 0 0 2px color-mix(in srgb, #e11d48 25%, transparent); animation: a3-ferve 1.8s ease-in-out infinite; }
-:root[data-tema="escuro"] .a3-temp--frio { background: #0c2a3d; color: #7dd3fc; }
-:root[data-tema="escuro"] .a3-temp--morno { background: #2b2508; color: #fde047; }
-:root[data-tema="escuro"] .a3-temp--quente { background: #2e1a0c; color: #fdba74; }
-:root[data-tema="escuro"] .a3-temp--fervendo { background: #2e1018; color: #fda4af; }
-@keyframes a3-ferve { 50% { box-shadow: 0 0 0 5px color-mix(in srgb, #e11d48 0%, transparent); } }
-@media (prefers-reduced-motion: reduce) { .a3-temp--fervendo { animation: none; } }
-.a3-pilula { display: inline-grid; place-items: center; min-width: 34px; padding: 2px 8px; border-radius: 999px; background: var(--a3-recuo); color: var(--a3-cinza); font-weight: 700; font-variant-numeric: tabular-nums; }
-.a3-pilula--gratis { background: var(--cor-gratis-forte); color: var(--cor-sobre); }
-.a3-pilula--assinante { background: var(--cor-assinante-forte); color: var(--cor-sobre); }
-/* Linha de pessoa online: nome e contadores em cima; o que faz, limite e temperatura embaixo, na largura toda. */
-.a3-online__lista .a3-online__pessoa { grid-template-columns: 34px minmax(0, 1fr) auto !important; row-gap: 3px !important; align-items: center !important; }
-.a3-online__pessoa .a3-online__texto { display: contents; }
-.a3-online__pessoa > .a3-avatar { grid-row: 1 / span 4; align-self: start; }
-.a3-online__pessoa .a3-online__nome { grid-column: 2; grid-row: 1; }
-.a3-online__pessoa > .a3-qq { grid-column: 3; grid-row: 1; }
-.a3-online__pessoa .a3-online__faz, .a3-online__pessoa .a3-limite, .a3-online__pessoa .a3-online__meta { grid-column: 2 / span 2; }
-.a3-online__pessoa .a3-limite { max-width: 260px; }
+.a3-limite { display: grid; grid-template-columns: minmax(80px, 160px) auto; align-items: center; gap: 8px; }
+.a3-limite__trilho { display: block; height: 6px; border-radius: 6px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); overflow: hidden; }
+.a3-limite__trilho i { display: block; height: 100%; border-radius: inherit; background: var(--verdete); }
+.a3-limite small { font-size: 12px; color: var(--a3-cinza); }
+.a3-limite.perto .a3-limite__trilho i { background: var(--ouro); }
+.a3-limite.bateu .a3-limite__trilho i { background: var(--erro); }
+.a3-limite.bateu small { color: var(--erro-texto, var(--erro)); font-weight: 600; }
 
-/* Âmbar é claro nos dois temas: texto escuro sempre. */
-.a3-online__grupo--lead .a3-avatar, .a3-online__grupo--lead .a3-qq__hoje:not(.zero), .a3-bloco--lead .a3-qq__hoje:not(.zero) { color: #1f1300 !important; }
+/* Temperatura do não assinante, nas cores semânticas do site. */
+.a3-temp { display: inline-flex; align-items: center; gap: 5px; padding: 0 8px; border-radius: 999px; font-size: 11.5px; font-weight: 700; line-height: 1.7; }
+.a3-temp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.a3-temp--frio { background: var(--prata-veu); color: var(--ardosia); }
+.a3-temp--morno { background: var(--verdete-veu); color: var(--verdete); }
+.a3-temp--quente { background: var(--ouro-veu); color: var(--ouro-texto); }
+.a3-temp--fervendo { background: var(--erro-veu); color: var(--erro-texto, var(--erro)); }
