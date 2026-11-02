@@ -366,14 +366,16 @@ function AbaAssinatura({ idUsuario, email, aoCarta }: { idUsuario: string; email
 }
 
 function AbaAcoes({ u, detalhe, cortesiaVale, recarregar }: { u: LinhaUsuario; detalhe: Detalhe; cortesiaVale: boolean; recarregar: () => Promise<void> }) {
+  const painel = usarPainel()
   const [ocupado, definirOcupado] = useState(false)
   const [dias, definirDias] = useState('90')
   const [motivo, definirMotivo] = useState('')
   const nome = nomeDe(u)
+  // Dar ou tirar cortesia muda a classificação nas listas do painel: recarrega tudo, não só a ficha.
   async function acao(rotulo: string, fazer: () => Promise<unknown>, sucesso: string) {
     if (ocupado) return
     definirOcupado(true)
-    try { await fazer(); avisoRapido(sucesso); await recarregar() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
+    try { await fazer(); avisoRapido(sucesso); await recarregar(); if (rotulo === 'Cortesia') void painel.atualizar() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
   }
   return <div className="a3-pilha">
     <div className="a3-acao-cartao">

@@ -3137,8 +3137,9 @@ var diasDesde = (iso, hoje) => (hoje.getTime() - new Date(iso).getTime()) / 864e
 var familia = (modelo) => (modelo ?? "").split(":")[0];
 var saiu = (e) => (e.status ?? "enviado") !== "falhou";
 var contaNaCadencia = (e) => saiu(e) && !TIPOS_TRANSACIONAIS.includes(e.tipo ?? "") && !TIPOS_TRANSACIONAIS.includes(familia(e.modelo));
+var TIPOS_PERIODICOS = ["relatorio"];
 function cadenciaBloqueia(anteriores = [], hoje = /* @__PURE__ */ new Date(), tipo) {
-  if (tipo && TIPOS_TRANSACIONAIS.includes(tipo)) return null;
+  if (tipo && (TIPOS_TRANSACIONAIS.includes(tipo) || TIPOS_PERIODICOS.includes(tipo))) return null;
   const validos = anteriores.filter(contaNaCadencia).filter((e) => Number.isFinite(new Date(e.em).getTime()));
   const ultimo = validos.map((e) => diasDesde(e.em, hoje)).filter((d) => d >= 0).sort((a, b) => a - b)[0];
   if (ultimo !== void 0 && ultimo * 24 < CADENCIA.horas) {

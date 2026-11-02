@@ -96,7 +96,7 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const lidosPagamento = usarLidos('pagamento')
   // Cortesias valendo (parte 37): no painel contam como assinantes, com o selo "Cortesia" (Tales, 02/11/2026).
   // Sem a parte colada, a consulta falha e ninguém vira cortesia (o painel segue como antes).
-  const cortesiasQ = usarRpc<Array<{ id_usuario: string }>>(conta, 'listar_cortesias_admin', {}, { ativo: COM_USUARIOS.includes(parte) || semContadores })
+  const cortesiasQ = usarRpc<Array<{ id_usuario: string }>>(conta, 'listar_cortesias_admin', {}, { ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: CINCO_MIN })
   const cortesias = useMemo(() => new Set(Array.isArray(cortesiasQ.dados) ? cortesiasQ.dados.map(c => c.id_usuario) : []), [cortesiasQ.dados])
 
   // "Online" é refeito a cada 10 s pelo último sinal, sem esperar o servidor.
@@ -121,8 +121,8 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
     : `As cobranças gravadas não carregaram (código ${codigoDaFalha(cobrancasQ.erro)}). Os valores abaixo saem do preço dos planos e aparecem como estimados.`
 
   const { recarregar: r1 } = assinaturasQ, { recarregar: r2 } = eventosQ, { recarregar: r3 } = resumoQ, { recarregar: r4 } = usuariosQ
-  const { recarregar: r5 } = contadoresQ, { recarregar: r6 } = cobrancasQ, { recarregar: r7 } = sinaisQ
-  const atualizar = useCallback(async () => { await Promise.all([r1(), r2(), r3(), r4(), r5(), r6(), r7()]) }, [r1, r2, r3, r4, r5, r6, r7])
+  const { recarregar: r5 } = contadoresQ, { recarregar: r6 } = cobrancasQ, { recarregar: r7 } = sinaisQ, { recarregar: r8 } = cortesiasQ
+  const atualizar = useCallback(async () => { await Promise.all([r1(), r2(), r3(), r4(), r5(), r6(), r7(), r8()]) }, [r1, r2, r3, r4, r5, r6, r7, r8])
   const falha = resumoQ.erro ?? usuariosQ.erro
 
   const valor: DadosPainel = {
