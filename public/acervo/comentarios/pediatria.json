@@ -241,18 +241,20 @@
   "geradoEm": "2026-10-29"
  },
  "pediatria-0014": {
-  "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita **mais comum do cotovelo**. A cabeça do rádio está fora da sua articulação com o capítulo desde o nascimento, geralmente em direção **posterior** (às vezes posterolateral ou anterior).\n\n**As características.**\n- Na maioria dos casos é **bilateral**.\n- Frequentemente se associa a **outras manifestações**: síndromes e anomalias, como a síndrome **unha-patela**, a síndrome de **Larsen**, a de **Klippel-Feil**, a sinostose radioulnar, a **artrogripose** e várias displasias esqueléticas.\n- **Não há história de trauma**.\n- É frequentemente **assintomática** na infância e descoberta por acaso ou por uma limitação discreta. Na adolescência, pode surgir **dor**, estalido ou uma proeminência palpável.\n\n**Como diferenciar da luxação traumática (Monteggia não diagnosticada).** A distinção é importante, porque a luxação traumática crônica pode ser reconstruída, e a congênita não.\n\n| Achado | Congênita | Traumática (crônica) |\n|---|---|---|\n| Lado | Frequentemente **bilateral** | **Unilateral** |\n| Cabeça do rádio | **Convexa** (abaulada), sem a concavidade normal; colo longo e fino | Côncava, de forma normal |\n| Capítulo | **Hipoplásico** | Normal |\n| Ulna | Pode ser curva | Ulna com sinais da fratura antiga, ou curva |\n| Associações | Síndromes e outras anomalias | Nenhuma; história de trauma |\n\n**O tratamento.**\n- **Observação**: na maioria, a função é boa.\n- Na adolescência ou na vida adulta, se houver **dor** ou limitação por uma cabeça proeminente: **ressecção da cabeça do rádio**, feita **após o fim do crescimento** (para não causar migração do rádio e desvio do punho).\n- A **redução** cirúrgica não costuma funcionar, porque as superfícies articulares são malformadas.",
-  "correta": "**Correta: A (bilateral e associada a outras manifestações).** A luxação congênita da cabeça do rádio é, na maioria dos casos, **bilateral** e associada a outras anomalias ou síndromes, como a unha-patela, a de Larsen e a de Klippel-Feil.",
+  "conceito": "Aqui a pergunta é de distribuição: um lado ou os dois, e se a cabeça luxada vem sozinha ou acompanhada.\n\n**A lateralidade.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29, p. 1248 diz que a luxação congênita é **habitualmente bilateral** (e posterior). O Campbell's Operative Orthopaedics, 15ª ed., cap. 33 (p. 1183) lembra que a bilateralidade já foi usada como critério diagnóstico, mas que casos unilaterais existem. A regra, portanto, é o bilateral.\n\n**As associações.** O Campbell descreve a doença como familiar, com herança pelo lado paterno, e lista síndromes em que ela aparece: **LARSEN, unha-patela, exostoses múltiplas e acondroplasia**, entre outras. O raciocínio é o mesmo de toda anomalia do membro superior: o membro se forma junto com outros sistemas, e a criança com uma malformação merece exame do resto. O gabarito oficial considera que, na maioria dos casos, há outras manifestações associadas; os livros listam as síndromes possíveis, mas não dão essa proporção.\n\n**O que fecha o diagnóstico.** Massa indolor, perda da pronossupinação, cabeça arredondada e sem concavidade, capítulo pequeno e rádio longo, sem trauma (C, p. 1183).\n\nA doença está na seção \"Para onde vai e como é a cabeça\" do resumo.",
+  "correta": "**A) bilateral e associada a outras manifestações.** A bilateralidade é a regra no Tachdjian, e o Campbell liga a doença a várias síndromes.",
   "incorretas": {
-   "B": "A associação com outras manifestações está certa, mas a luxação congênita é, em geral, **bilateral**. A unilateralidade sugere luxação **traumática**.",
-   "C": "A bilateralidade está certa, mas a luxação congênita se associa **frequentemente** a outras anomalias e síndromes.",
-   "D": "A luxação **unilateral e isolada** sugere uma **Monteggia não diagnosticada** (traumática), e não a forma congênita."
+   "B": "**Unilateral e associada** acerta as associações, mas a forma habitual é bilateral.",
+   "C": "**Bilateral e sem associações** acerta o lado, mas o gabarito considera a doença acompanhada de outras manifestações, como LARSEN e unha-patela.",
+   "D": "**Unilateral e sem associações** erra os dois dados; a forma unilateral isolada lembra mais a luxação traumática."
   },
   "referencias": [
-   "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29, p. 1248",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1183",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "O Tachdjian's Pediatric Orthopaedics, 6ª ed., sustenta a bilateralidade; nenhum dos livros conferidos afirma associação com outras manifestações \"na maioria dos casos\": o Campbell's Operative Orthopaedics, 15ª ed., só lista síndromes possíveis. O gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0015": {
@@ -288,19 +290,19 @@
   "conferido": false
  },
  "pediatria-0017": {
-  "conceito": "**Uma doença rara com regra de lateralidade.** A pseudartrose congênita da clavícula é uma falha de união entre os dois centros de ossificação primários da clavícula (medial e lateral), que normalmente se fundem por volta da sétima semana de vida intrauterina. O resultado é uma massa indolor no **terço médio**, percebida ao nascer ou nos primeiros meses, com mobilidade entre os fragmentos e sem história de trauma.\n\n**Por que é quase sempre à direita.** A teoria mais aceita é a da **compressão pela artéria subclávia**. Do lado direito, a subclávia fica mais alta e mais próxima da face posterior da clavícula em formação, e sua pulsação impediria a fusão dos dois centros. Reforçam a teoria:\n- os casos do **lado esquerdo** ocorrem quase só em pacientes com **dextrocardia** ou anomalias do arco aórtico, quando a anatomia vascular se inverte;\n- costelas cervicais e primeira costela alta, que elevam a subclávia, aumentam a frequência;\n- os casos bilaterais são raros.\n\n**Perfil epidemiológico.**\n\n| Aspecto | Dado |\n|---|---|\n| Lado | **Direito** (esquerdo só com dextrocardia) |\n| Sexo | **Feminino** mais acometido |\n| Local | Terço médio |\n| Neurofibromatose | **Sem relação**, ao contrário da pseudartrose congênita da tíbia |\n\n**Diagnóstico diferencial.**\n- **Fratura obstétrica**: dolorosa, com pseudoparalisia do membro, e forma calo exuberante em 2 a 3 semanas. A pseudartrose congênita é indolor e não forma calo.\n- **Disostose cleidocraniana**: ausência parcial ou total das clavículas, geralmente bilateral e com alterações do crânio (fontanelas abertas) e dentárias.\n\n**Tratamento.** Muitos são assintomáticos e só observados. Se há dor, deformidade estética importante ou sintomas de compressão, faz-se ressecção do tecido fibroso, enxerto ósseo e fixação, de preferência entre 3 e 6 anos, com altas taxas de consolidação.",
-  "correta": "**Correta: A (feminino e à direita).** A pseudartrose congênita da clavícula predomina no **sexo feminino** e ocorre quase sempre à **direita**, atribuída à posição mais alta da artéria subclávia desse lado, cuja pulsação impediria a fusão dos centros de ossificação.",
+  "conceito": "Uma saliência firme e indolor no meio da clavícula de um lactente, sem história de fratura, é a apresentação típica. A questão quer o paciente típico.\n\n**O retrato da doença.** Descontinuidade no **terço médio** da clavícula, presente ao nascer, em **mulheres** e do **lado direito** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 344); o Campbell's Operative Orthopaedics, 15ª ed., cap. 33 reforça que é quase sempre à direita e bilateral em cerca de 10% (p. 1181).\n\n**O lado tem explicação mecânica.** Do lado direito, a subclávia corre mais alta e comprime a clavícula em formação contra a primeira costela; na dextrocardia, com tudo espelhado, a pseudartrose aparece à esquerda. Por isso o lado esquerdo isolado deve fazer pensar em outra causa.\n\n**Como evolui.** No lactente, só o caroço; na criança, assimetria com mobilidade no foco; no adolescente, dor ao esforço e ombro caído. A radiografia mostra pontas lisas, afiladas ou alargadas, sem calo (T, p. 344). A consolidação espontânea não ocorre; o Campbell obtém os melhores resultados com ressecção, enxerto ilíaco e placa, com idade ideal do enxerto entre 3 e 5 anos (p. 1182 e 1183).\n\n**Diferencial a lembrar.** O Campbell manda separar a pseudartrose congênita da disostose cleidocraniana (p. 1181).\n\nO tema está nas seções \"Quem tem e por quê\" e \"Como aparece e como se trata\" do resumo.",
+  "correta": "**A) feminino e à direita.** É o perfil descrito pelo Tachdjian; o Campbell acrescenta que o lado direito é quase invariável.",
   "incorretas": {
-   "B": "O sexo está certo, mas o **lado esquerdo** só é acometido em situações especiais, como dextrocardia.",
-   "C": "O lado está certo, mas o predomínio é **feminino**.",
-   "D": "Erra o sexo e o lado: o perfil típico é feminino e direito."
+   "B": "**Feminino e à esquerda** troca o lado; a esquerda é exceção, ligada à dextrocardia.",
+   "C": "**Masculino e à direita** troca o sexo; o predomínio é feminino.",
+   "D": "**Masculino e à esquerda** contraria o sexo e o lado do perfil clássico."
   },
   "referencias": [
-   "Congenital Clavicular Pseudoarthrosis. https://pmc.ncbi.nlm.nih.gov/articles/PMC7672733/",
-   "Surgical Technique for Management of Congenital Pseudarthrosis of the Clavicle. https://pmc.ncbi.nlm.nih.gov/articles/PMC11411332/",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 344",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1181 a 1183",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0018": {
@@ -411,18 +413,19 @@
   "conferido": false
  },
  "pediatria-0025": {
-  "conceito": "**A luxação congênita do joelho.** É rara. O recém-nascido nasce com o joelho em **hiperextensão** (recurvato), às vezes com o pé encostando na face. O espectro vai de uma simples hiperextensão até a **luxação anterior** completa da tíbia sobre o fêmur.\n\n**A classificação em graus.**\n\n| Grau | Situação |\n|---|---|\n| 1 | **Hiperextensão** (recurvato) simples; flexão passiva possível |\n| 2 | **Subluxação** anterior da tíbia |\n| 3 | **Luxação** completa: tíbia à frente do fêmur, sem contato articular |\n\n**O que mantém o joelho em hiperextensão.**\n- O **quadríceps** está **encurtado e fibrótico**, às vezes aderido ao fêmur. É a principal estrutura que impede a flexão.\n- A **cápsula anterior** está contraída.\n- Os **isquiotibiais** se **deslocam para a frente** do eixo de rotação do joelho, passando a funcionar como **extensores**, o que piora a deformidade.\n- O **LCA** pode ser hipoplásico ou ausente.\n\n**As causas.** Posição intrauterina (apresentação pélvica com as pernas estendidas, oligoâmnio), **frouxidão ligamentar** e síndromes (**Larsen**, artrogripose, mielomeningocele).\n\n**As associações: examine o quadril e os pés.**\n- **Displasia do desenvolvimento do quadril**: muito frequente, em boa parte dos casos.\n- **Pé torto** congênito ou pé calcaneovalgo.\n- Luxação do cotovelo, na síndrome de Larsen.\n\n**O tratamento.** Começa logo após o nascimento.\n1. **Manipulação e gessos seriados** em flexão progressiva, ou suspensório de Pavlik nos graus leves. Os graus 1 e 2 costumam responder.\n2. Se a flexão não ultrapassar cerca de **30 a 90°** em algumas semanas, ou no grau 3: **quadricepsplastia** (alongamento em V-Y do quadríceps) com liberação capsular anterior, idealmente nos primeiros meses de vida.\n3. **A ordem importa**: o **joelho é tratado antes do quadril**. O suspensório de Pavlik para a DDQ exige um joelho que flexione, porque os isquiotibiais tensos em extensão impedem a flexão do quadril.\n\nO prognóstico é bom nos graus leves tratados cedo. É pior nas formas sindrômicas, como a artrogripose e a síndrome de Larsen.",
-  "correta": "**Correta: D (hiperextensão, com fibrose do músculo quadríceps femoral).** Na luxação congênita do joelho, a articulação fica em **hiperextensão**. O **quadríceps está encurtado e fibrótico** e é a principal estrutura que impede a flexão, ao lado da cápsula anterior contraída e dos isquiotibiais deslocados para a frente.",
+  "conceito": "Poucas anomalias assustam tanto quanto o joelho \"ao contrário\": o recém-nascido com o pé perto da boca ou do ombro e os côndilos femorais palpáveis atrás, na coxa distal (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18, p. 630). A posição é de **hiperextensão**, e o músculo culpado é o da frente.\n\n**Os três graus** (T, p. 630; Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1078). Grau 1, hiperextensão que flexiona com alongamento suave do quadríceps; grau 2, subluxação, que não passa do neutro; grau 3, luxação verdadeira, irredutível, em que a tíbia anteriorizada desliza para o lado ao forçar a flexão.\n\n**O quadríceps.** A luxação verdadeira está **sempre associada a fibrose e encurtamento significativos do quadríceps**, que alguns autores consideram a causa principal (T, p. 630). O Campbell diz que a cápsula anterior e o quadríceps estão sempre contraídos e acrescenta um detalhe de mecânica: na luxação grave, os **isquiotibiais escorregam para a frente** do centro de rotação e passam a funcionar como extensores (p. 1078 e 1080). Eles não estão fibróticos nem frouxos; estão fora do lugar.\n\n**Tratamento.** Manipulação suave e gesso desde cedo; sem resposta, cirurgia entre 6 meses e 1 ano, com preferência dos autores do Tachdjian pelo encurtamento femoral à quadricepsplastia em V-Y (p. 632 e 633).\n\nO joelho está na seção \"Hiperextensão e luxação congênita do joelho\" do resumo.",
+  "correta": "**D) hiperextensão, com fibrose do músculo quadríceps femoral.** O quadríceps fibrótico e curto mantém o joelho estendido além do neutro.",
   "incorretas": {
-   "A": "O joelho fica em **hiperextensão**, e não em hiperflexão. Os isquiotibiais se deslocam para a frente, mas não são a estrutura fibrótica.",
-   "B": "A hiperextensão está certa, mas a estrutura que bloqueia a flexão é o **quadríceps fibrótico**. A frouxidão dos isquiotibiais não explica a deformidade.",
-   "C": "Erra a posição e o músculo: o joelho fica em **hiperextensão**, e o quadríceps está **encurtado e fibrótico**, e não frouxo."
+   "A": "**Hiperflexão com isquiotibiais fibróticos** inverte a doença: o joelho está estendido, e os isquiotibiais apenas se deslocam para a frente.",
+   "B": "**Hiperextensão com isquiotibiais frouxos** acerta a posição, mas o problema muscular descrito é a fibrose do quadríceps.",
+   "C": "**Hiperflexão com quadríceps frouxo** é o oposto do achado: quadríceps curto e fibrótico, joelho em hiperextensão."
   },
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Congenital Knee Dislocation. https://posna.org/physician-education/study-guide/congenital-knee-dislocation",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18, p. 630 a 633",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1078 e 1080",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0026": {
@@ -744,34 +747,36 @@
   "geradoEm": "2026-10-29"
  },
  "pediatria-0046": {
-  "conceito": "**A pseudoartrose congênita da tíbia (PCT).** É uma doença rara em que um segmento da tíbia, geralmente na **junção do terço médio com o distal**, é displásico e fraco. A tíbia se encurva e, cedo ou tarde, **fratura e não consolida**. A **neurofibromatose tipo 1** está presente em cerca de **metade ou mais** dos casos. Por outro lado, só uma pequena parcela dos pacientes com NF1 tem PCT.\n\n**O tecido doente.** Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação. A ressecção completa desse tecido é parte fundamental da cirurgia.\n\n**O encurvamento da tíbia na criança: a direção diz o diagnóstico.**\n\n| Direção | Diagnóstico | Prognóstico |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento **fisiológico** congênito, com pé calcaneovalgo | **Bom**: corrige espontaneamente; deixa **discrepância** |\n| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |\n\n**Como lembrar.** **A**nterolateral é **a** ruim (a pseudoartrose). Posteromedial é a \"boa\", que só deixa a perna mais curta. Anteromedial acompanha a ausência da fíbula, com covinha cutânea sobre a tíbia.\n\n**Tratamento.**\n- **Antes da fratura:** proteger a tíbia com uma **órtese** (tipo concha, AFO/KAFO) para evitar a fratura. **Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.\n- **Depois da fratura:** a cirurgia é desafiadora. Ela inclui:\n  - **ressecção** do tecido hamartomatoso;\n  - estabilização com **haste intramedular** (de Williams, por exemplo) ou fixador circular de **Ilizarov**;\n  - **enxerto** ósseo autólogo; o enxerto vascularizado de fíbula é uma opção;\n  - a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.\n- A recidiva de fratura é comum, e a haste costuma ser mantida até a maturidade.\n- Após várias falhas, a **amputação de Syme** com prótese é uma opção funcional legítima.\n\n**Os tipos de encurvamento da tíbia.** A direção do arqueamento é a chave diagnóstica:\n| Direção | Diagnóstico | Evolução |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** (NF1) | Grave: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento fisiológico congênito | Benigno: corrige espontaneamente, mas deixa discrepância |\n| **Anteromedial** | Deficiência longitudinal da fíbula (hemimelia fibular) | Associada a encurtamento e pé em equinovalgo |",
-  "correta": "**Correta: A (anterolateral).** O arqueamento **anterolateral** da tíbia é o característico da pseudoartrose congênita e deve alertar para o risco de fratura e para a neurofibromatose tipo 1.",
+  "conceito": "A tíbia congênita encurvada tem três padrões, e o ápice da curva diz se o caso é benigno ou se vai fraturar. A pseudartrose congênita mora no padrão de pior prognóstico.\n\n**Os três encurvamentos** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18, p. 664 e 665): **anterolateral**, ligado à displasia e à pseudartrose; **posteromedial**, benigno, por posição intrauterina; e anterior ou anteromedial, com deficiência da fíbula. O Campbell's Operative Orthopaedics, 15ª ed., cap. 31 resume: o ápice anterior se associa à neurofibromatose e preocupa; o posterior melhora com o crescimento (p. 1071).\n\n**Por que o Tachdjian prefere \"displasia da tíbia\".** A maioria das pseudartroses não existe ao nascer: a doença está lá, e a fratura vem depois (p. 665). A classificação de CRAWFORD vai do tipo I, encurvamento com esclerose medular que pode nunca fraturar, ao IV, pseudartrose franca com pontas afiladas (p. 666).\n\n**O contraste.** O encurvamento posteromedial vem com o pé em calcaneovalgo, regride nos primeiros meses e deixa só discrepância de comprimento; a osteotomia nele consolida normalmente. No anterolateral, a osteotomia é arriscada porque pode criar a própria pseudartrose.\n\n**Tratamento.** Ressecar o hamartoma periosteal, fixar com haste intramedular e enxertar osso autógeno; se tudo falhar, SYME ou BOYD (T, p. 666 a 677).\n\nA regra está na seção \"A regra da direção\" do resumo.",
+  "correta": "**A) anterolateral.** É o encurvamento da displasia da tíbia, o que fratura e evolui para pseudartrose.",
   "incorretas": {
-   "B": "O arqueamento **anteromedial** está associado à **deficiência longitudinal da fíbula** (hemimelia fibular).",
-   "C": "O arqueamento **posterolateral** não é um padrão clássico de nenhuma dessas entidades.",
-   "D": "O arqueamento **posteromedial** é o encurvamento **benigno**, que corrige espontaneamente com o crescimento, mas deixa discrepância de comprimento."
+   "B": "**Anteromedial** é o encurvamento anterior ligado à deficiência da fíbula, outro dos três tipos.",
+   "C": "**Posterolateral** não figura entre os três encurvamentos congênitos descritos.",
+   "D": "**Posteromedial** é o benigno, do calcaneovalgo, que regride e deixa só discrepância."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de pseudoartrose congênita da tíbia.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de deformidades da perna."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18, p. 664 a 677",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1071",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0047": {
-  "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita **mais comum do cotovelo**. A cabeça do rádio está fora da sua articulação com o capítulo desde o nascimento, geralmente em direção **posterior** (às vezes posterolateral ou anterior).\n\n**As características.**\n- Na maioria dos casos é **bilateral**.\n- Frequentemente se associa a **outras manifestações**: síndromes e anomalias, como a síndrome **unha-patela**, a síndrome de **Larsen**, a de **Klippel-Feil**, a sinostose radioulnar, a **artrogripose** e várias displasias esqueléticas.\n- **Não há história de trauma**.\n- É frequentemente **assintomática** na infância e descoberta por acaso ou por uma limitação discreta. Na adolescência, pode surgir **dor**, estalido ou uma proeminência palpável.\n\n**Como diferenciar da luxação traumática (Monteggia não diagnosticada).** A distinção é importante, porque a luxação traumática crônica pode ser reconstruída, e a congênita não.\n\n| Achado | Congênita | Traumática (crônica) |\n|---|---|---|\n| Lado | Frequentemente **bilateral** | **Unilateral** |\n| Cabeça do rádio | **Convexa** (abaulada), sem a concavidade normal; colo longo e fino | Côncava, de forma normal |\n| Capítulo | **Hipoplásico** | Normal |\n| Ulna | Pode ser curva | Ulna com sinais da fratura antiga, ou curva |\n| Associações | Síndromes e outras anomalias | Nenhuma; história de trauma |\n\n**O tratamento.**\n- **Observação**: na maioria, a função é boa.\n- Na adolescência ou na vida adulta, se houver **dor** ou limitação por uma cabeça proeminente: **ressecção da cabeça do rádio**, feita **após o fim do crescimento** (para não causar migração do rádio e desvio do punho).\n- A **redução** cirúrgica não costuma funcionar, porque as superfícies articulares são malformadas.",
-  "correta": "**Correta: C (posterior e posterolateral).** Na luxação congênita da cabeça do rádio, os desvios mais comuns são o **posterior** e o **posterolateral**. A luxação anterior isolada e unilateral sugere uma lesão de Monteggia não diagnosticada.",
+  "conceito": "O que esta questão quer é o quadrante: para que lado a cabeça do rádio congênita costuma sair.\n\n**O que os livros dizem.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29, p. 1248 afirma que as luxações congênitas da cabeça do rádio são **habitualmente bilaterais e posteriores** e trata as anteriores descritas como provavelmente traumáticas antigas não diagnosticadas. O Campbell's Operative Orthopaedics, 15ª ed., cap. 33 (p. 1183) concorda que a cabeça vai **frequentemente para posterior**, às vezes para anterior. Nenhum dos dois detalha o componente lateral ou medial.\n\n**Por que a anterior desperta suspeita.** A luxação anterior isolada é o que sobra de uma lesão de MONTEGGIA não reconhecida; por isso o Tachdjian discute a luxação congênita justamente no diferencial dessa fratura. A forma da cabeça ajuda: na congênita ela é arredondada, sem a concavidade articular, com rádio longo e capítulo pequeno ou achatado.\n\n**O par que a banca montou.** As alternativas casam a direção principal com uma variante oblíqua. Só a dupla posterior e posterolateral fica do lado posterior que os livros sustentam e foi o gabarito oficial.\n\n**O que não fazer.** A cabeça luxada congênita não deve ser reduzida, nem fechada nem aberta (C, p. 1183).\n\nA direção está na seção \"Para onde vai e como é a cabeça\" do resumo.",
+  "correta": "**C) posterior e posterolateral.** A direção posterior é a que os dois livros apontam como habitual; o par posterolateral é o do gabarito.",
   "incorretas": {
-   "A": "Os desvios **anterior** e anterolateral são menos comuns na forma congênita e sugerem uma luxação traumática (Monteggia).",
-   "B": "Os desvios **anterior** e anteromedial não são os mais frequentes na luxação congênita.",
-   "D": "O desvio posterior está certo, mas o segundo mais comum é o **posterolateral**, e não o posteromedial."
+   "A": "**Anterior e anterolateral** põe a cabeça no lado que os livros associam à luxação traumática antiga.",
+   "B": "**Anterior e anteromedial** mantém a cabeça na frente do cotovelo, direção que o Tachdjian considera provavelmente traumática.",
+   "D": "**Posterior e posteromedial** acerta a direção principal, mas o par do gabarito oficial é o posterolateral."
   },
   "referencias": [
-   "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
-   "Congenital radial head dislocation: narrative review. https://pubmed.ncbi.nlm.nih.gov/42611687/",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29, p. 1248",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1183",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "Os livros conferidos sustentam a direção posterior, mas não trazem o desvio posterolateral como par da posterior; o gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0048": {
@@ -858,34 +863,36 @@
   "conferido": false
  },
  "pediatria-0053": {
-  "conceito": "**A pseudoartrose congênita da tíbia (PCT).** É uma doença rara em que um segmento da tíbia, geralmente na **junção do terço médio com o distal**, é displásico e fraco. A tíbia se encurva e, cedo ou tarde, **fratura e não consolida**. A **neurofibromatose tipo 1** está presente em cerca de **metade ou mais** dos casos. Por outro lado, só uma pequena parcela dos pacientes com NF1 tem PCT.\n\n**O tecido doente.** Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação. A ressecção completa desse tecido é parte fundamental da cirurgia.\n\n**O encurvamento da tíbia na criança: a direção diz o diagnóstico.**\n\n| Direção | Diagnóstico | Prognóstico |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento **fisiológico** congênito, com pé calcaneovalgo | **Bom**: corrige espontaneamente; deixa **discrepância** |\n| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |\n\n**Como lembrar.** **A**nterolateral é **a** ruim (a pseudoartrose). Posteromedial é a \"boa\", que só deixa a perna mais curta. Anteromedial acompanha a ausência da fíbula, com covinha cutânea sobre a tíbia.\n\n**Tratamento.**\n- **Antes da fratura:** proteger a tíbia com uma **órtese** (tipo concha, AFO/KAFO) para evitar a fratura. **Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.\n- **Depois da fratura:** a cirurgia é desafiadora. Ela inclui:\n  - **ressecção** do tecido hamartomatoso;\n  - estabilização com **haste intramedular** (de Williams, por exemplo) ou fixador circular de **Ilizarov**;\n  - **enxerto** ósseo autólogo; o enxerto vascularizado de fíbula é uma opção;\n  - a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.\n- A recidiva de fratura é comum, e a haste costuma ser mantida até a maturidade.\n- Após várias falhas, a **amputação de Syme** com prótese é uma opção funcional legítima.\n\n**A histologia da pseudoartrose congênita da tíbia.** O achado central é um **periósteo espessado**, com um tecido **fibroso** denso e celular, semelhante a uma **fibromatose** (um hamartoma fibroso). Esse tecido envolve e **estrangula** o osso no foco e tem baixa capacidade osteogênica. Não se trata de um **neurofibroma** típico, mesmo nos pacientes com NF1. Os fibroblastos do tecido doente, porém, têm alterações da via do gene NF1. Por isso, a cirurgia exige a **ressecção ampla do periósteo e do tecido fibroso**, além de enxerto e fixação estável.",
-  "correta": "**Correta: B (no periósteo e é composta por tecido fibroso).** Na pseudoartrose congênita da tíbia, a alteração está no **periósteo espessado**, ocupado por um **tecido fibroso** denso (hamartoma fibroso semelhante à fibromatose), que estrangula o osso e impede a consolidação.",
+  "conceito": "Se a pseudartrose congênita da tíbia é tão ligada à neurofibromatose, seria natural esperar neurofibroma no foco. Não é o que se encontra, e é isso que a questão cobra.\n\n**A histologia** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18, p. 665). Quase todos os investigadores encontram apenas **tecido fibroso espessado** no local, com pouca vascularização, e não neurofibroma. A lesão fibrosa constritiva, presente universalmente, sugere que a patologia primária está nas **estruturas periosteais** em torno da tíbia, e não no osso. O Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (p. 1072) descreve o mesmo **tecido fibroso hamartomatoso** com pouco ingresso vascular.\n\n**Por que isso explica a doença.** Um manguito fibroso pouco vascularizado em volta do osso estrangula a consolidação: a fratura acontece e o periósteo, que deveria fazer o calo, é justamente o tecido doente. Daí a dificuldade de consolidar e a tendência à refratura.\n\n**Como isso guia a cirurgia.** O tratamento resseca a pseudartrose **e o hamartoma periosteal**, encurta, fixa com haste intramedular mantida por longo tempo e enxerta osso autógeno (T, p. 666 a 669).\n\nA histologia está na seção \"Pseudartrose congênita da tíbia\" do resumo.",
+  "correta": "**B) no periósteo e é composta por tecido fibroso.** Um hamartoma fibroso, espessado e pouco vascularizado, envolve a tíbia a partir do periósteo.",
   "incorretas": {
-   "A": "A alteração está no periósteo, mas o tecido é **fibroso** (hamartoma fibroso), e não um neurofibroma típico, mesmo nos pacientes com NF1.",
-   "C": "O tecido é fibroso, mas a sede da alteração é o **periósteo** espessado ao redor do foco, e não a medular.",
-   "D": "Erra o local e o tecido: a alteração está no **periósteo** e é composta por **tecido fibroso**."
+   "A": "**Neurofibroma no periósteo** acerta o local, mas o tecido encontrado é fibroso, não neural, mesmo nos pacientes com NF1.",
+   "C": "**Tecido fibroso na medular** acerta o tecido; o livro, porém, põe a patologia primária nas estruturas periosteais, não no osso.",
+   "D": "**Neurofibroma na medular** erra o tecido e o local."
   },
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Congenital Pseudarthrosis of the Tibia. https://posna.org/physician-education/study-guide/congenital-pseudarthrosis-of-the-tibia-%28cpt%29",
-   "Pediatric Lower Extremity Disorders – CPT. https://posna.org/blogs/resident-review/december-2017/pediatric-lower-extremity-disorders",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18, p. 665 a 669",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1072",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0054": {
-  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, a anomalia congênita mais comum da cintura escapular. Na **embriologia**, a escápula se forma na altura de **C4 a C5** e **desce** até o nível de T2 a T7 entre a 9ª e a 12ª semana. Na deformidade de Sprengel, essa **descida falha**.\n\n**As características da escápula.**\n- **Pequena** (hipoplásica) e com forma alterada: mais larga que alta.\n- **Elevada** e **rodada**: o ângulo inferior fica **medial** e o glenoide aponta para baixo (rotação para baixo).\n- **Barra omovertebral** em cerca de um terço dos casos: uma ponte fibrosa, cartilaginosa ou óssea que liga o ângulo superomedial da escápula aos processos espinhosos ou lâminas de C4 a C7.\n- Os músculos periescapulares são **hipoplásicos**.\n\n**A clínica.** O ombro fica mais alto, com o pescoço aparentemente curto. A **abdução** fica **limitada**, porque a escápula não consegue rodar no tórax (o ritmo escapulotorácico está bloqueado); a abdução fica restrita à glenoumeral, em torno de 90° a 120°.\n\n**As associações.** **Klippel-Feil** (fusão de vértebras cervicais), escoliose congênita, costelas anômalas, espinha bífida e anomalias renais.\n\n**A classificação de Cavendish (estética).**\n| Grau | Aspecto |\n|---|---|\n| 1 | Muito leve: ombros nivelados; deformidade invisível vestido |\n| 2 e 3 | Leve a moderada: elevação de 2 a 5 cm, visível vestido |\n| 4 | Grave: ângulo superior perto do occipital |\n\n**O tratamento.** Formas leves: observação e fisioterapia. Cirurgia de preferência entre **3 e 8 anos** (Woodward: transposição da origem do trapézio; Green: liberação e abaixamento), com **ressecção da barra** omovertebral. O risco principal é a **lesão do plexo braquial** ao abaixar a escápula, por isso associa-se a osteotomia da clavícula nas correções maiores.\n\n**A ressecção da barra omovertebral.** A barra (fibrosa, cartilaginosa ou óssea) prende a escápula à coluna cervical e é um dos principais obstáculos ao abaixamento. Deve ser ressecada de modo **extraperiosteal**, incluindo o periósteo, porque o periósteo deixado pode **formar osso novo** e reconstituir a barra. A cirurgia é feita **depois dos 3 anos** (em geral entre 3 e 8 anos): antes, as estruturas são pequenas e o risco anestésico e técnico é maior; depois de 8 anos, o risco de **lesão do plexo braquial** ao abaixar a escápula aumenta, e os resultados pioram. Ressecam-se também a borda superomedial da escápula (que é proeminente) e, nas correções maiores, osteotomiza-se a clavícula para proteger o plexo.",
-  "correta": "**Correta: C (extraperiosteal e depois dos 3 anos de idade).** A barra omovertebral é ressecada com o periósteo, para evitar que ele forme osso novo e a reconstitua, e a cirurgia é feita depois dos 3 anos, idealmente até os 8.",
+  "conceito": "A questão pergunta dois detalhes técnicos da ressecção do omovertebral: o plano de dissecção e a idade.\n\n**O plano.** Na técnica de WOODWARD descrita pelo Campbell's Operative Orthopaedics, 15ª ed., cap. 33, o omovertebral é excisado **por via extraperiosteal** (p. 1175 a 1177). A ressecção **subperiosteal** aparece no MEARS, como liberação muscular junto da osteotomia oblíqua do corpo da escápula, e não como forma de tirar o omovertebral (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 344).\n\n**A idade.** O Campbell recomenda tentar abaixar a escápula **por volta dos 3 anos**, porque a operação fica mais difícil com o crescimento e o risco de plexopatia braquial sobe (p. 1174). O Tachdjian diz que a cirurgia funciona melhor **antes dos 8 anos**, sem fixar idade mínima (p. 343). Entre os dois, a janela usual começa por volta dos 3 anos.\n\n**O que vem junto.** Em criança maior ou com deformidade grave, a clavícula é osteotomizada ou morcelada para proteger o plexo (C, p. 1177).\n\nA cirurgia está na seção \"A cirurgia: GREEN, WOODWARD, MEARS e a clavícula\" do resumo.",
+  "correta": "**C) extraperiosteal e depois dos 3 anos de idade.** O omovertebral sai com o periósteo, e a cirurgia é feita a partir de cerca de 3 anos.",
   "incorretas": {
-   "A": "A ressecção **subperiosteal** deixa o periósteo, que pode **regenerar** a barra.",
-   "B": "Subperiosteal arrisca a recidiva, e **antes dos 3 anos** as estruturas são pequenas e a cirurgia é tecnicamente mais difícil.",
-   "D": "A ressecção extraperiosteal está certa, mas a cirurgia costuma ser feita **depois** dos 3 anos."
+   "A": "**Subperiosteal depois dos 3 anos** acerta a idade, mas o plano subperiosteal é o da dissecção do MEARS, não o da excisão do omovertebral.",
+   "B": "**Subperiosteal antes dos 3 anos** erra o plano e antecipa demais a cirurgia.",
+   "D": "**Extraperiosteal antes dos 3 anos** acerta o plano, mas os livros situam a cirurgia por volta dos 3 anos e até os 8."
   },
   "referencias": [
-   "Surgical Treatment of Sprengel’s Deformity: systematic review. https://pmc.ncbi.nlm.nih.gov/articles/PMC8700527/",
-   "Surgical management of Sprengel deformity. https://upload.orthobullets.com/journalclub/free_pdf/22382290_sprengel.pdf"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1174 a 1177",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 343 e 344",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "O Campbell's Operative Orthopaedics, 15ª ed., descreve a excisão extraperiosteal do omovertebral e a cirurgia ideal por volta dos 3 anos; o Tachdjian's Pediatric Orthopaedics, 6ª ed., põe o limite antes dos 8 anos e não fixa idade mínima. Nenhum dos dois traz o \"depois dos 3 anos\" como regra explícita.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0055": {
@@ -967,33 +974,37 @@
   "conferido": false
  },
  "pediatria-0060": {
-  "conceito": "**A sinostose radioulnar congênita.** É a **união** entre o rádio e a ulna, quase sempre na parte **proximal** do antebraço, por falha da separação dos dois ossos durante o desenvolvimento embrionário (por volta da **7ª semana**, quando o rádio e a ulna, inicialmente unidos, se dividem). A ponte pode ser **óssea** ou fibrosa. Com o rádio preso à ulna, o antebraço fica **fixo**, sem pronossupinação, geralmente em **pronação**.\n\n**As características.**\n- **Bilateral** em cerca de **60%** dos casos.\n- Na maioria das vezes **isolada**, sem outras malformações.\n- Às vezes associada a síndromes, sobretudo as que alteram os **cromossomos sexuais** (síndrome de Klinefelter, XXXY e outras aneuploidias), Apert, artrogripose, e a outras anomalias do membro (luxação da cabeça do rádio, hipoplasia do polegar).\n- Herança autossômica dominante em algumas famílias.\n\n**A classificação de Cleary e Omer.**\n\n| Tipo | Achado |\n|---|---|\n| I | Sinostose fibrosa, cabeça do rádio no lugar |\n| II | Sinostose óssea, cabeça do rádio no lugar |\n| III | Sinostose óssea com a cabeça do rádio luxada para posterior (hipoplásica) |\n| IV | Sinostose óssea curta com a cabeça do rádio luxada para anterior |\n\n**Quando é percebida.** Muitas vezes **tardiamente**, entre 3 e 6 anos, porque a criança compensa a falta de rotação do antebraço com movimentos do **ombro** (abdução e rotação) e do **punho** (rotação mediocárpica). Os pais notam que ela pega objetos com a palma para baixo ou tem dificuldade para receber algo com a mão aberta.\n\n**Tratamento.**\n- Pronação **leve** (menos de 30 a 60°) e bom funcionamento: **observação**.\n- Pronação **acentuada** (acima de 60°), sobretudo bilateral, com prejuízo funcional: **osteotomia derrotativa** através da sinostose (ou do rádio e da ulna), levando o antebraço para uma posição mais funcional (leve pronação no lado dominante, neutro ou leve supinação no outro). A ressecção da ponte para recuperar a rotação **não funciona**, porque a sinostose se refaz.\n- Complicações da osteotomia: síndrome compartimental e lesão do nervo interósseo posterior, se a correção for muito grande de uma vez.",
-  "correta": "**Correta: A (isolada e bilateral).** A sinostose radioulnar congênita é, na maioria dos casos, uma alteração **isolada** e é **bilateral** em cerca de 60% dos pacientes.",
+  "conceito": "A questão pede o padrão habitual da sinostose radioulnar congênita em dois eixos: lateralidade e associação com outras malformações.\n\n**Bilateralidade: dado firme.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (p. 347) dá **80% de casos bilaterais**, e o Campbell's Operative Orthopaedics, 15ª ed., cap. 33 diz que a doença é mais frequentemente bilateral que unilateral, com predisposição familiar pelo lado paterno (p. 1184.e1).\n\n**Associações: o livro diz duas coisas.** Por surgir cedo, quando todos os sistemas se formam, a sinostose aparece com APERT, CARPENTER, artrogripose, disostose mandibulofacial, KLINEFELTER e POLAND; o Tachdjian afirma que **cerca de um terço** tem outras anomalias (cardíacas, torácicas, geniturinárias, gastrointestinais e do sistema nervoso), sem padrão comum, e no mesmo trecho a descreve como **anomalia isolada em um terço** (p. 347). Se só um terço tem associações, a maioria é isolada; é a leitura que sustenta o gabarito.\n\n**Clínica.** Meninos 3:2; a procura costuma ser entre 3 e 6 anos, porque o carpo compensa a falta de rotação; o ombro também compensa, sobretudo com o cotovelo estendido (T, p. 347; C, p. 1184.e1).\n\nA epidemiologia está na seção \"Quem tem\" do resumo.",
+  "correta": "**A) Isolada e bilateral.** É bilateral em 80%, e só cerca de um terço dos pacientes tem outras anomalias.",
   "incorretas": {
-   "B": "A forma **isolada** está certa, mas a bilateralidade é mais frequente que a unilateralidade.",
-   "C": "É bilateral com frequência, mas na maioria das vezes **não** se associa a outras malformações.",
-   "D": "Erra os dois aspectos: geralmente é isolada e bilateral."
+   "B": "**Isolada e unilateral** erra a lateralidade: a forma bilateral domina, com 80%.",
+   "C": "**Associada e bilateral** acerta o lado, mas as malformações associadas aparecem em cerca de um terço, não na maioria.",
+   "D": "**Associada e unilateral** erra os dois dados do padrão habitual."
   },
   "referencias": [
-   "Congenital Radioulnar Synostosis Review. https://pmc.ncbi.nlm.nih.gov/articles/PMC11593211/",
-   "Cleary JE, Omer GE Jr. Congenital proximal radio-ulnar synostosis. Natural history and functional assessment. J Bone Joint Surg Am. 1985;67(4):539-545."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 347",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1184.e1",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12, p. 347), diz ao mesmo tempo que um terço dos pacientes tem outras anomalias e que a sinostose é isolada em um terço; a palavra \"isolada\" do gabarito não é sustentada como regra, e a bilateralidade (80%) é.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0061": {
-  "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita mais comum do cotovelo. A cabeça do rádio se desenvolve fora da articulação e, sem o molde do capítulo, cresce **pequena e convexa** (cupuliforme), com o **colo alongado**, enquanto o **capítulo fica hipoplásico**. Frequentemente é **bilateral** e associada a outras anomalias (sinostose radioulnar, síndrome unha-patela, Ehlers-Danlos, Larsen).\n\n**A direção: quase sempre posterior.** A cabeça do rádio está **posterior** ou posterolateral na grande maioria dos casos congênitos. Isso ajuda a diferenciar da **Monteggia negligenciada** (luxação traumática não diagnosticada), que costuma ser **anterior** e vem com a ulna arqueada.\n\n**Que movimento fica limitado.** O bloqueio depende de onde a cabeça está:\n\n| Posição da cabeça | O que acontece | Movimento limitado |\n|---|---|---|\n| **Posterior** | No fim da **extensão**, a cabeça bate atrás do úmero (na fossa olecraniana) | **Extensão** |\n| Anterior | No fim da **flexão**, a cabeça bate na frente do úmero (na fossa coronoide) | **Flexão** |\n\nAlém disso, a **pronossupinação** pode estar discretamente limitada, porque a cabeça deformada gira mal.\n\n**Quadro clínico.** Muitas crianças são **assintomáticas**; percebe-se uma proeminência posterolateral do cotovelo e uma perda leve da extensão. A dor costuma aparecer na adolescência ou na vida adulta.\n\n**Tratamento.** Observação. A redução cirúrgica da forma congênita não funciona, porque a cabeça deformada não se adapta ao capítulo hipoplásico. Se houver dor ou bloqueio importante após o fim do crescimento, faz-se a **ressecção da cabeça do rádio**.",
-  "correta": "**Correta: D (posterior, com limitação da extensão).** A luxação congênita da cabeça do rádio é geralmente **posterior**, e a cabeça bate atrás do úmero no fim da extensão, **limitando a extensão** do cotovelo.",
+  "conceito": "Uma criança com cotovelo que nunca girou bem, sem trauma, e uma saliência óssea palpável: é o quadro da luxação congênita da cabeça do rádio, que o Campbell's Operative Orthopaedics, 15ª ed., cap. 33 (p. 1183) chama de anomalia congênita mais comum do cotovelo.\n\n**A direção.** Habitualmente **posterior** e bilateral (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29, p. 1248); o Campbell acrescenta que às vezes é anterior, e o Tachdjian considera as anteriores provavelmente traumáticas antigas.\n\n**A limitação.** O sinal que o Campbell descreve é a **perda da pronossupinação**, ao lado da massa indolor e da forma anormal da cabeça. A banca, nesta questão, pediu a limitação em flexão ou extensão e deu como gabarito a extensão; esse dado não aparece nos livros conferidos.\n\n**Como reconhecer na radiografia.** Rádio longo em relação ao capítulo, cabeça arredondada sem concavidade, capítulo pequeno ou achatado e ulna arqueada (C, p. 1183; T, p. 1248). Esses sinais de adaptação de longa data separam a forma congênita da traumática.\n\n**Conduta.** A maioria não precisa de tratamento; a cabeça não deve ser reduzida, e a excisão fica para depois do fim do crescimento se houver dor, sabendo que a mobilidade pode não melhorar (C, p. 1183).\n\nA doença está nas seções \"Para onde vai e como é a cabeça\" e \"O que fazer\" do resumo.",
+  "correta": "**D) posterior, com limitação da extensão.** A direção posterior é a dos livros; a limitação da extensão é o dado do gabarito oficial.",
   "incorretas": {
-   "A": "A luxação congênita raramente é **anterior**; e, quando anterior, limita a **flexão**, não por ser a forma típica.",
-   "B": "A direção **posterior** está certa, mas o movimento limitado é a **extensão**, e não a flexão.",
-   "C": "A **extensão** fica limitada nas luxações posteriores; a luxação **anterior** limitaria a flexão."
+   "A": "**Anterior com limitação da flexão** põe a cabeça do lado que os livros associam à luxação traumática antiga.",
+   "B": "**Posterior com limitação da flexão** acerta a direção, mas o gabarito oficial aponta a extensão como o movimento limitado.",
+   "C": "**Anterior com limitação da extensão** erra a direção habitual, que é posterior."
   },
   "referencias": [
-   "Congenital deformities of the upper limbs: Part II. https://pmc.ncbi.nlm.nih.gov/articles/PMC6565893/",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1183",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29, p. 1248",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "Os livros conferidos sustentam a direção posterior, mas não trazem a limitação da extensão: o Campbell's Operative Orthopaedics, 15ª ed. (cap. 33, p. 1183), cita a perda da pronossupinação. O gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0062": {
@@ -1812,18 +1823,19 @@
   "conferido": false
  },
  "pediatria-0110": {
-  "conceito": "**A pseudoartrose congênita da tíbia (PCT).** É uma doença rara em que um segmento da tíbia, geralmente na **junção do terço médio com o distal**, é displásico e fraco. A tíbia se encurva e, cedo ou tarde, **fratura e não consolida**. A **neurofibromatose tipo 1** está presente em cerca de **metade ou mais** dos casos. Por outro lado, só uma pequena parcela dos pacientes com NF1 tem PCT.\n\n**O tecido doente.** Ao redor do foco há um **periósteo espessado** e um **hamartoma fibroso** que estrangula o osso e impede a consolidação. A ressecção completa desse tecido é parte fundamental da cirurgia.\n\n**O encurvamento da tíbia na criança: a direção diz o diagnóstico.**\n\n| Direção | Diagnóstico | Prognóstico |\n|---|---|---|\n| **Anterolateral** | **Pseudoartrose congênita** da tíbia (NF1) | **Ruim**: tende a fraturar e não consolidar |\n| **Posteromedial** | Encurvamento **fisiológico** congênito, com pé calcaneovalgo | **Bom**: corrige espontaneamente; deixa **discrepância** |\n| **Anteromedial** | **Hemimelia fibular** (deficiência da fíbula) | Discrepância importante; deformidade do pé e tornozelo |\n\n**Como lembrar.** **A**nterolateral é **a** ruim (a pseudoartrose). Posteromedial é a \"boa\", que só deixa a perna mais curta. Anteromedial acompanha a ausência da fíbula, com covinha cutânea sobre a tíbia.\n\n**Tratamento.**\n- **Antes da fratura:** proteger a tíbia com uma **órtese** (tipo concha, AFO/KAFO) para evitar a fratura. **Não** se faz osteotomia corretiva para endireitar, porque ela vira pseudoartrose.\n- **Depois da fratura:** a cirurgia é desafiadora. Ela inclui:\n  - **ressecção** do tecido hamartomatoso;\n  - estabilização com **haste intramedular** (de Williams, por exemplo) ou fixador circular de **Ilizarov**;\n  - **enxerto** ósseo autólogo; o enxerto vascularizado de fíbula é uma opção;\n  - a técnica de **cross-union** (união entre tíbia e fíbula) tem mostrado bons resultados.\n- A recidiva de fratura é comum, e a haste costuma ser mantida até a maturidade.\n- Após várias falhas, a **amputação de Syme** com prótese é uma opção funcional legítima.",
-  "correta": "**Correta: A (anterolateral).** Na pseudoartrose congênita da tíbia, associada à neurofibromatose tipo 1, o encurvamento é **anterolateral**. Ele precede a fratura e a pseudoartrose, de mau prognóstico.",
+  "conceito": "Uma criança com manchas café com leite e uma perna arqueada para a frente e para fora: a combinação deve acender o alerta de displasia da tíbia antes de qualquer fratura.\n\n**A ligação com a NF1.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18 (p. 665) dá a incidência da deformidade, de 1 em 140.000 a 190.000, e mostra os dois lados da associação: **5,7% dos pacientes com NF1** têm a deformidade, e **até 55%** dos casos têm neurofibromatose. O Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (p. 1072) fala em 50% a 90% com NF. A displasia fibrosa aparece em até 15%.\n\n**A direção.** O encurvamento da displasia é **anterolateral** (T, p. 664 e 665), e o Campbell lembra que o ápice anterior é o que se associa à neurofibromatose e preocupa (p. 1071). É quase sempre unilateral (T, p. 666).\n\n**O que esperar.** Fratura, pseudartrose que quase nunca consolida sozinha, refratura e valgo do tornozelo; a consolidação com cirurgia fica entre 31% e 56% no Campbell (p. 1073). A fíbula pode ter sua própria pseudartrose, no quarto distal, também quase só na NF1 (T, p. 679 e 680).\n\n**Na prática.** Não se osteotomiza a tíbia anterolateral para \"endireitar\": a osteotomia pode criar a própria pseudartrose, ao contrário do encurvamento posteromedial.\n\nA comparação está na seção \"A regra da direção\" do resumo.",
+  "correta": "**A) anterolateral.** Na NF1, a displasia da tíbia curva para a frente e para fora e evolui para pseudartrose.",
   "incorretas": {
-   "B": "O encurvamento **anteromedial** é associado à **hemimelia fibular** (deficiência longitudinal da fíbula), e não à neurofibromatose.",
-   "C": "O encurvamento **posterolateral** não é um padrão clássico de nenhuma dessas condições.",
-   "D": "O encurvamento **posteromedial** é o encurvamento **fisiológico** congênito, com pé calcaneovalgo. Ele corrige espontaneamente e deixa como sequela a **discrepância** de comprimento, sem pseudoartrose."
+   "B": "**Anteromedial** é o encurvamento anterior com deficiência da fíbula, sem a ligação com a NF1.",
+   "C": "**Posterolateral** não é um dos três padrões congênitos da tíbia.",
+   "D": "**Posteromedial** é o benigno, de posição intrauterina, com calcaneovalgo e sem neurofibromatose."
   },
   "referencias": [
-   "https://posna.org/physician-education/study-guide/congenital-pseudarthrosis-of-the-tibia-%28cpt%29",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18, p. 664 a 680",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1071 a 1073",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0111": {
@@ -1913,33 +1925,35 @@
   "conferido": false
  },
  "pediatria-0116": {
-  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, que não desce da posição cervical para a torácica durante o desenvolvimento embrionário (entre a 9ª e a 12ª semana). O problema está na **escápula**, e não na articulação do ombro.\n\n**Como é a escápula.**\n- **Pequena (hipoplásica)**, mais larga que alta.\n- **Alta**, com o ângulo superior perto da base do pescoço.\n- **Rodada**, com o ângulo inferior apontando para medial (rotação para baixo).\n- Presa à coluna cervical em cerca de um terço dos casos por um **osso omovertebral** (ou faixa fibrosa ou cartilaginosa).\n\n**Por que o movimento do ombro fica limitado.** A elevação do braço depende de duas articulações trabalhando juntas: a **glenoumeral** e a **escapulotorácica**, num **ritmo escapuloumeral** de cerca de **2:1** (para cada 3° de elevação, cerca de 2° vêm da glenoumeral e 1° da rotação da escápula sobre o tórax). Na deformidade de Sprengel:\n- a **articulação glenoumeral é normal**: a cabeça do úmero e a glenoide funcionam bem, e o movimento glenoumeral está preservado;\n- o que falta é a **rotação da escápula** sobre o tórax, porque ela é pequena, alta e muitas vezes presa à coluna.\n\nO resultado é a limitação da **abdução e da flexão** do ombro (frequentemente em torno de 90 a 120°), com o movimento glenoumeral **normal** e a escápula **hipoplásica**.\n\n**Associações.** Síndrome de **Klippel-Feil**, escoliose congênita, anomalias de costelas, espinha bífida, hipoplasia da clavícula, anomalias renais.\n\n**A classificação de Cavendish** (estética, de 1 a 4) e o grau de limitação orientam a indicação cirúrgica, geralmente entre **3 e 8 anos**: ressecção do osso omovertebral e da porção supraespinal da escápula e abaixamento da escápula (técnicas de **Woodward** ou **Green**), com osteotomia da clavícula nas crianças maiores para proteger o plexo braquial.",
-  "correta": "**Correta: C (normal com escápula hipoplásica).** Na deformidade de Sprengel, a articulação glenoumeral funciona normalmente; a escápula é que é **hipoplásica**, alta, rodada e às vezes presa à coluna, o que limita a rotação escapulotorácica e a elevação do braço.",
+  "conceito": "O SPRENGEL engana porque o ombro parece travado, mas a articulação que falha não é a glenoumeral. A questão junta dois dados que o examinador precisa separar: a mobilidade da articulação verdadeira e a forma da escápula.\n\n**O que é a deformidade.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (p. 343) define o SPRENGEL como parada da migração caudal da escápula entre a 9ª e a 12ª semana, com parada também do desenvolvimento do osso, do músculo e da cartilagem que a acompanham. A escápula não é só alta: o Campbell's Operative Orthopaedics, 15ª ed., cap. 33 (p. 1174 e 1175) a descreve como **hipoplásica e malformada**, e em parte dos pacientes presa à coluna cervical pelo osso omovertebral.\n\n**A dissociação do exame.** O movimento **glenoumeral é normal**; o **escapulotorácico é muito restrito** (T, p. 343). A cabeça do úmero gira bem dentro da glenoide; o que não gira é a escápula sobre o tórax. Por isso o paciente perde a elevação acima da horizontal sem que a articulação do ombro propriamente dita esteja doente.\n\n**Por que a escápula é menor.** A parada embriológica atinge o osso inteiro, e o polo inferior hipoplásico fica rodado medialmente, com a glenoide voltada para baixo.\n\nO tema está na seção \"O que é e por que limita o ombro\" do resumo.",
+  "correta": "**C) normal com escápula hipoplásica.** A glenoumeral conserva a mobilidade; a escápula, além de alta, é pequena e malformada.",
   "incorretas": {
-   "A": "O movimento glenoumeral é normal, mas a **escápula não é normal**: é pequena, alta e rodada.",
-   "B": "O movimento **glenoumeral** é preservado; a limitação está na escapulotorácica, e a escápula é hipoplásica.",
-   "D": "A escápula é hipoplásica, mas o movimento **glenoumeral** é normal; a perda de elevação vem da escápula."
+   "A": "**Escápula normal** ignora a hipoplasia: a parada da descida também parou o crescimento do osso.",
+   "B": "**Glenoumeral diminuído com escápula normal** erra os dois dados: o que diminui é o escapulotorácico, e a escápula é hipoplásica.",
+   "D": "**Glenoumeral diminuído** acerta a escápula, mas põe o bloqueio na articulação errada; a glenoumeral está preservada."
   },
   "referencias": [
-   "https://posna.org/physician-education/study-guide/sprengel-s-deformity",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 343",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1174 e 1175",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0117": {
-  "conceito": "**A sindactilia.** É a falha da **separação** dos dedos, por falta da **apoptose** das membranas interdigitais entre a 6ª e a 8ª semana de gestação. É a malformação congênita da mão **mais comum** (com a polidactilia), mais frequente no **3º espaço** (entre os dedos médio e anular), bilateral em cerca de metade dos casos e mais comum em meninos.\n\n**A classificação.**\n| Tipo | Descrição |\n|---|---|\n| **Simples** | Só partes moles (pele) |\n| **Complexa** | União **óssea** (geralmente das falanges distais) |\n| **Completa** | Até a ponta do dedo |\n| **Incompleta** | Não chega à ponta |\n| **Complicada** | Associada a ossos anômalos e síndromes (Apert, Poland) |\n\n**Quando operar: a regra dos dedos de comprimentos diferentes.** O momento depende de **quais dedos** estão unidos:\n- **Dedos de comprimentos diferentes** (os **dedos de borda**: polegar com indicador, anular com mínimo, isto é, o **IV e V** espaço): devem ser separados **precocemente**, entre **6 e 12 meses**. O dedo maior cresce mais que o menor, mas está preso a ele: o dedo maior se **curva** para o lado do menor, criando **deformidade angular** e rotacional (e, no polegar, compromete a pinça).\n- **Dedos de comprimento semelhante** (o 3º espaço, médio com anular): a cirurgia pode esperar até cerca de **18 meses** a 2 anos, quando a mão é maior e a técnica, mais fácil, reduzindo a recidiva (a migração da comissura, \"web creep\").\n\n**A técnica.** Retalhos em zigue-zague, reconstrução da **comissura** com retalho dorsal e, em geral, **enxerto de pele** total. Opera-se **um lado** de cada dedo de cada vez, para não comprometer a circulação.",
-  "correta": "**Correta: D (IV e V para evitar deformidade angular).** Na sindactilia dos dedos de comprimento diferente (como o anular com o mínimo), o dedo maior fica preso ao menor e se curva com o crescimento; por isso a separação é feita precocemente.",
+  "conceito": "Dedos de comprimentos diferentes, presos um ao outro, crescem juntos de forma desigual: o maior é puxado pelo menor, entorta e roda. Essa é toda a lógica da idade da cirurgia na sindactilia.\n\n**A regra dos dedos de borda.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 85 (p. 3667 e 3668) recomenda separar mais cedo, entre **6 e 12 meses**, os **dedos de borda**, polegar-indicador e **anelar-mínimo**, porque o crescimento diferencial causa **deformidade angular**. Os dedos centrais, de comprimento parecido, esperam até **12 a 18 meses**, quando a mão maior permite retalhos mais precisos e há menos migração distal da comissura. O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 concorda: no segundo semestre do primeiro ano operam-se a sindactilia de borda e as complexas com ossos transversos; a médio-anelar espera (p. 308 e 369).\n\n**O espaço mais comum espera.** A sindactilia médio-anelar é de longe a mais frequente, e é a que menos tem pressa (T, p. 368 e 369).\n\n**A outra metade da pegadinha.** A pressa não visa evitar recorrência. A complicação mais comum da cirurgia é a migração distal da comissura, e operar cedo não a reduz; esperar até 12 a 18 meses nos centrais é justamente para diminuí-la.\n\nA idade está na seção \"Quando operar: a regra dos dedos de borda\" do resumo.",
+  "correta": "**D) IV e V para evitar deformidade angular.** Anelar e mínimo têm comprimentos diferentes; unidos, o crescimento desigual entorta o maior.",
   "incorretas": {
-   "A": "A sindactilia entre **III e IV** (médio e anular), de dedos de comprimento semelhante, pode esperar; operar cedo aumenta o risco de recidiva.",
-   "B": "Entre III e IV, os dedos têm comprimento semelhante e não criam deformidade angular importante; a cirurgia pode esperar.",
-   "C": "O espaço IV e V está certo, mas o motivo da cirurgia precoce é evitar a **deformidade angular**; a recidiva, ao contrário, é maior quando se opera muito cedo."
+   "A": "**III e IV para evitar recorrência** erra o espaço e o motivo: médio-anelar espera até 12 a 18 meses.",
+   "B": "**III e IV para evitar deformidade angular** acerta o motivo, mas médio e anelar têm comprimentos parecidos e não têm pressa.",
+   "C": "**IV e V para evitar recorrência** acerta o espaço, mas o motivo é a deformidade angular; operar cedo não reduz a migração da comissura."
   },
   "referencias": [
-   "https://posna.org/blogs/resident-review/september-2017/simple-and-complex-syndactyly",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 80"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 85, p. 3667 e 3668",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 308, 368 e 369",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0118": {
@@ -2335,18 +2349,18 @@
   "conferido": false
  },
  "pediatria-0148": {
-  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, a anomalia congênita mais comum da cintura escapular. Na **embriologia**, a escápula se forma na altura de **C4 a C5** e **desce** até o nível de T2 a T7 entre a 9ª e a 12ª semana. Na deformidade de Sprengel, essa **descida falha**.\n\n**As características da escápula.**\n- **Pequena** (hipoplásica) e com forma alterada: mais larga que alta.\n- **Elevada** e **rodada**: o ângulo inferior fica **medial** e o glenoide aponta para baixo (rotação para baixo).\n- **Barra omovertebral** em cerca de um terço dos casos: uma ponte fibrosa, cartilaginosa ou óssea que liga o ângulo superomedial da escápula aos processos espinhosos ou lâminas de C4 a C7.\n- Os músculos periescapulares são **hipoplásicos**.\n\n**A clínica.** O ombro fica mais alto, com o pescoço aparentemente curto. A **abdução** fica **limitada**, porque a escápula não consegue rodar no tórax (o ritmo escapulotorácico está bloqueado); a abdução fica restrita à glenoumeral, em torno de 90° a 120°.\n\n**As associações.** **Klippel-Feil** (fusão de vértebras cervicais), escoliose congênita, costelas anômalas, espinha bífida e anomalias renais.\n\n**A classificação de Cavendish (estética).**\n| Grau | Aspecto |\n|---|---|\n| 1 | Muito leve: ombros nivelados; deformidade invisível vestido |\n| 2 e 3 | Leve a moderada: elevação de 2 a 5 cm, visível vestido |\n| 4 | Grave: ângulo superior perto do occipital |\n\n**O tratamento.** Formas leves: observação e fisioterapia. Cirurgia de preferência entre **3 e 8 anos** (Woodward: transposição da origem do trapézio; Green: liberação e abaixamento), com **ressecção da barra** omovertebral. O risco principal é a **lesão do plexo braquial** ao abaixar a escápula, por isso associa-se a osteotomia da clavícula nas correções maiores.\n\n**Por que a abdução é o primeiro movimento perdido.** A abdução completa do ombro depende do **ritmo escapuloumeral**: para cada 2° de movimento da glenoumeral, a escápula roda cerca de 1° no tórax. Na deformidade de Sprengel, a escápula está **elevada, rodada e presa** (pela barra omovertebral ou pelos músculos fibrosos), e não consegue rodar; a abdução fica restrita à parte glenoumeral. As rotações e a flexão anterior são menos afetadas.",
-  "correta": "**Correta: A (abdução).** A escápula elevada e presa não roda no tórax, e a abdução, que depende do ritmo escapuloumeral, é o primeiro movimento limitado.",
+  "conceito": "Para saber qual movimento sofre primeiro, basta perguntar qual deles mais depende da escápula se mover sobre o tórax.\n\n**O mecanismo.** No SPRENGEL, a articulação glenoumeral funciona normalmente e o deslizamento escapulotorácico é muito restrito (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 343). Rotação interna, rotação externa e boa parte da elevação anterior acontecem dentro da glenoumeral, com a cabeça do úmero girando na glenoide. A **abdução** é diferente: o arco completo exige que a escápula gire para cima, no ritmo de cerca de 2 graus glenoumerais para 1 escapulotorácico, e esse giro está bloqueado.\n\n**O agravante anatômico.** A escápula hipoplásica tem o polo inferior rodado medialmente e a glenoide voltada para baixo (T, p. 343). O ombro já parte de uma glenoide \"olhando para o chão\", e a abdução esbarra cedo. Some-se a isso a fraqueza dos músculos escapulares, ausentes ou hipoplásicos em parte dos casos.\n\n**O dado do livro e o raciocínio.** O Tachdjian nomeia a abdução como o movimento limitado; a ideia de \"primeiro\" acometido sai daí, porque as outras direções dependem pouco da escápula. A ressecção do omovertebral e as técnicas que abaixam a escápula visam justamente devolver esse giro.\n\nO raciocínio está na seção \"O que é e por que limita o ombro\" do resumo.",
+  "correta": "**A) abdução.** É o movimento que mais depende da rotação da escápula sobre o tórax, justamente a parte que o SPRENGEL trava.",
   "incorretas": {
-   "B": "A **rotação interna** depende sobretudo da glenoumeral e é pouco afetada.",
-   "C": "A **rotação externa** também depende da glenoumeral e é preservada na maior parte dos casos.",
-   "D": "A **elevação anterior** fica limitada nos graus altos, mas a abdução é o movimento acometido primeiro e mais tipicamente."
+   "B": "**Rotação interna** ocorre na glenoumeral, que está normal no SPRENGEL.",
+   "C": "**Rotação externa** é giro da cabeça umeral na glenoide e não depende da escápula descer ou girar.",
+   "D": "**Elevação anterior** usa mais a glenoumeral; a restrição clássica do livro é a abdução."
   },
   "referencias": [
-   "https://posna.org/physician-education/study-guide/sprengel-s-deformity",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de afecções do ombro."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 343",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0149": {
@@ -2587,18 +2601,19 @@
   "conferido": false
  },
  "pediatria-0162": {
-  "conceito": "**O metatarso aduto (varo).** É a **deformidade do pé mais comum** no recém-nascido, em cerca de 1 a 2 em cada 1.000 nascidos vivos (até mais em algumas séries). O **antepé** está **aduzido** (desviado para medial) em relação ao retropé, que é **normal ou em leve valgo**, sem equino. Atribuído à **posição intrauterina** (\"pé apertado\" no útero).\n\n**Como reconhecer.**\n- **Borda lateral convexa** (em forma de feijão), borda medial côncava, às vezes com uma **prega** medial profunda.\n- Espaço maior entre o hálux e o segundo dedo.\n- **Bissetriz do calcanhar** (Bleck) projetada lateralmente ao segundo e terceiro dedos.\n- Retropé **normal** e dorsiflexão do tornozelo **livre** (diferencia do pé torto).\n\n**A associação com a displasia do quadril.** Como é uma deformidade de \"aperto\" intrauterino, o metatarso aduto pode estar associado a **displasia do desenvolvimento do quadril** (em algumas séries, até cerca de 10%) e a torcicolo congênito. Por isso, os quadris devem ser examinados com atenção. Ele não \"sempre ocorre isoladamente\".\n\n**A flexibilidade decide o tratamento.**\n\n| Tipo | Teste | Conduta |\n|---|---|---|\n| **Flexível** | O antepé corrige além da linha média, ativa ou passivamente | **Observação**; a grande maioria resolve sozinha |\n| Parcialmente flexível | Corrige até a linha média | Alongamentos orientados aos pais; órtese (sapato de abdução, Bebax) |\n| **Rígido** | Não corrige até a linha média, prega medial profunda | **Gessos seriados** (idealmente antes de 6 a 8 meses), depois órtese |\n\n**O prognóstico é muito bom.** Cerca de **85 a 90%** se corrigem espontaneamente ou com tratamento conservador. A cirurgia (liberação capsular, osteotomias da base dos metatarsos ou do cuneiforme medial e do cuboide) é **rara** e fica para deformidades rígidas e persistentes em crianças maiores. Uma deformidade residual **leve**, sem repercussão funcional, é relativamente comum.\n\n**Diagnóstico diferencial.** Pé torto congênito (equino e varo do retropé, rígido) e **skewfoot** (pé em Z: antepé aduzido com retropé em valgo importante e médio-pé abduzido), que responde mal e pode piorar com gessos mal feitos.",
-  "correta": "**Correta: A (é uma anomalia comum do pé).** O metatarso aduto é a deformidade do pé mais comum no recém-nascido, atribuída à posição intrauterina, e geralmente evolui bem com observação ou tratamento conservador.",
+  "conceito": "O pé em forma de feijão do recém-nascido é uma das consultas mais frequentes do ortopedista pediátrico, e a questão testa se o candidato sabe dimensionar a doença.\n\n**O quadro.** O antepé desvia medialmente em relação ao retropé: planta em feijão, borda lateral convexa, base do quinto metatarso proeminente, espaço maior entre o hálux e o segundo dedo e leve valgo do calcanhar (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19, p. 691 e 692).\n\n**É comum.** Cerca de **1% dos recém-nascidos** (WIDHE) ou 1 em 1000 (WYNNE-DAVIES), com risco de 1 em 20 para um irmão. O Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (p. 1044) também a chama de anomalia comum.\n\n**Não vem sempre sozinho.** Associa-se a torcicolo e a instabilidade do quadril (até 1 em 25 no Tachdjian; DDQ em 1% a 5% no Campbell), e por isso alguns defendem triagem do quadril.\n\n**Responde bem.** A forma que corrige ativamente não precisa de tratamento; a que só corrige passivamente pode receber alongamento ou gesso curto antes dos 6 meses; a rígida pede gesso seriado precoce e, se falhar, liberação do abdutor do hálux; acima de 3 anos, osteotomias (T, p. 692 a 694). RUSHFORTH, acompanhando não tratados, encontrou deformidade moderada assintomática em 10% e residual com rigidez em 4%.\n\nA doença está na seção \"Metatarso aduto\" do resumo.",
+  "correta": "**A) é uma anomalia muito comum do pé.** Afeta cerca de 1% dos recém-nascidos e é tratada como deformidade postural frequente.",
   "incorretas": {
-   "B": "O metatarso aduto **responde muito bem** ao tratamento conservador: cerca de 85 a 90% corrigem com observação, alongamentos, órteses ou gessos.",
-   "C": "**Não** ocorre sempre isoladamente: pode se associar à displasia do quadril e ao torcicolo congênito, deformidades de aperto intrauterino.",
-   "D": "A deformidade residual **leve** é mais frequente que 1%, embora raramente cause problemas funcionais."
+   "B": "**Não responde ao conservador** contraria os livros: a maioria corrige sozinha ou com alongamento e gesso.",
+   "C": "**Sempre isolado** esquece a associação com torcicolo e com instabilidade do quadril.",
+   "D": "**1% com deformidade residual** subestima a série de RUSHFORTH: 10% com deformidade moderada e 4% com rigidez."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
-   "Bleck EE. Metatarsus adductus: classification and relationship to outcomes of treatment. J Pediatr Orthop. 1983;3(1):2-9."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19, p. 691 a 694",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1044",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0163": {
@@ -2943,33 +2958,36 @@
   "conferido": false
  },
  "pediatria-0189": {
-  "conceito": "**O que é o sobrecrescimento ósseo no coto.** É a complicação **mais comum** da **amputação transdiafisária** (através da diáfise) em crianças, em cerca de 10 a 30% dos casos. A ponta do osso amputado continua formando osso por **crescimento aposicional** (pelo periósteo), fica **pontiaguda** como uma espícula e cresce mais rápido que as partes moles que a cobrem. Ela perfura a pele, forma **bursas**, dor, úlceras e impede o uso da prótese.\n\n**Não depende da fise.** O sobrecrescimento não é causado pela fise que restou (que cresce para longe do coto), e sim pela formação de osso na extremidade cortada. Por isso **não ocorre** nas **desarticulações**, em que a cartilagem articular cobre a extremidade.\n\n**Os ossos mais acometidos, em ordem.**\n\n| Osso | Frequência |\n|---|---|\n| **Úmero** | **O mais comum** |\n| **Fíbula** | Segundo |\n| Tíbia | Terceiro |\n| Fêmur | Menos comum |\n| Rádio e ulna | Menos comuns |\n\n**Prevenção e tratamento.**\n- **Preferir a desarticulação** à amputação transdiafisária na criança, sempre que possível (por exemplo, desarticulação do joelho em vez da amputação transfemoral): evita o sobrecrescimento e preserva a fise distal do segmento, mantendo o comprimento do coto com o crescimento.\n- **Revisão cirúrgica** com ressecção da ponta óssea: frequentemente necessária mais de uma vez até a maturidade.\n- **Técnicas de capeamento**: cobrir a extremidade óssea com um enxerto osteocondral (por exemplo, de uma parte amputada, como a cabeça de um metatarso ou a fíbula proximal) ou com materiais sintéticos, criando uma \"tampa\" cartilaginosa que reduz a recidiva.\n\n**Outras particularidades da amputação na criança.** As crianças toleram bem as próteses, os neuromas dolorosos e a dor fantasma são menos frequentes que no adulto, e o coto precisa de revisões e trocas de prótese ao longo do crescimento.",
-  "correta": "**Correta: D (úmero e fíbula).** O sobrecrescimento ósseo após amputação transdiafisária na criança é mais comum no **úmero**, seguido da **fíbula**, depois da tíbia e do fêmur.",
+  "conceito": "Na criança amputada, a ponta do osso cortado continua formando osso, perfura a pele do coto e obriga a revisões. A banca quer os dois ossos campeões.\n\n**A ordem** (Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1099). O sobrecrescimento terminal foi relatado com mais frequência no **úmero**, seguido da **fíbula**, da tíbia e do fêmur. O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21 confirma que ele é **muito comum depois da amputação transumeral** e exige várias revisões (p. 914).\n\n**De onde vem o osso novo.** Da **aposição periosteal na extremidade distal**, e não do crescimento da fise proximal. Por isso a **epifisiodese não previne** o problema e é contraindicada (C, p. 1099; Campbell's Operative Orthopaedics, 15ª ed., cap. 16, p. 684). É mais comum após amputação traumática, e 27% das crianças amputadas precisam de revisão (C16, p. 681 e 684).\n\n**Como evitar.** Preferir a **desarticulação** à amputação transóssea quando possível, porque preserva a fise e não sobrecresce; cobrir a ponta com uma **capa biológica** de cartilagem; ou fazer a ponte tibiofibular de ERTL. Instalado o problema, resseca-se o excesso, sabendo que pode voltar (T, p. 912 a 915).\n\nO tema está na seção \"Sobrecrescimento ósseo do coto na criança\" do resumo.",
+  "correta": "**D) úmero e na fíbula.** São o primeiro e o segundo da lista do Campbell, à frente da tíbia e do fêmur.",
   "incorretas": {
-   "A": "O **rádio** é pouco acometido; a tíbia aparece em terceiro lugar, depois do úmero e da fíbula.",
-   "B": "A **fíbula** está entre as mais acometidas, mas o **rádio** não; o mais comum é o úmero.",
-   "C": "O **úmero** é o mais comum, mas o segundo é a **fíbula**, e não a tíbia."
+   "A": "**Rádio e tíbia** deixa de fora os dois mais frequentes; o rádio nem aparece na lista.",
+   "B": "**Rádio e fíbula** acerta a fíbula, mas troca o úmero, o primeiro da lista, pelo rádio.",
+   "C": "**Úmero e tíbia** acerta o primeiro; o segundo mais frequente é a fíbula, e a tíbia vem depois."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 14",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1099",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 16, p. 681 e 684",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 912 a 915",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0190": {
-  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, a anomalia congênita mais comum da cintura escapular. Durante a vida embrionária, a escápula se forma na região **cervical**, por volta da 5ª semana, e **desce** até sua posição torácica entre a 9ª e a 12ª semana. Na deformidade de Sprengel, essa descida **falha**.\n\n**Os achados.**\n- Escápula **alta, pequena e rodada**: o ângulo inferior aponta para medial e o ângulo superomedial fica alto e curvo para a frente.\n- Limitação da **abdução** do ombro, porque a escápula não roda.\n- Em cerca de **um terço** dos casos, há o **osso omovertebral**: uma barra óssea, cartilaginosa ou fibrosa, que liga o ângulo superomedial da escápula aos processos espinhosos ou às lâminas das vértebras cervicais inferiores.\n- **Associações**: síndrome de **Klippel-Feil**, escoliose congênita, anomalias de costelas e renais.\n\n**A classificação de Cavendish (estética).**\n\n| Grau | Gravidade | Aparência |\n|---|---|---|\n| **1** | **Muito leve** | Ombros nivelados; **sem deformidade visível com a criança vestida** |\n| 2 | Leve | Ombros quase nivelados; deformidade **visível vestido**, como um volume na base do pescoço |\n| 3 | Moderada | Ombro elevado de **2 a 5 cm**; deformidade facilmente visível |\n| 4 | Grave | Ombro muito elevado; ângulo superior da escápula perto do **occipital** |\n\nNão existe grau 0: a escala começa no grau 1.\n\n**A classificação radiográfica de Rigault.** Usa a altura do ângulo superomedial da escápula em relação à coluna: abaixo de T4 (grau I), entre T2 e T4 (grau II) e acima de T2 (grau III).\n\n**O tratamento.**\n- Graus **1 e 2** de Cavendish: geralmente **observação**, pois a função costuma ser boa.\n- Graus **3 e 4**, com limitação funcional ou deformidade estética importante: **cirurgia**, idealmente entre **3 e 8 anos**.\n  - **Woodward**: desinserção dos músculos da linha média e reinserção mais baixa.\n  - **Green**: liberação dos músculos na escápula, com descida e rotação.\n  - Em ambas, faz-se a **ressecção do osso omovertebral** e da porção superomedial da escápula.\n- Para proteger o **plexo braquial** ao abaixar a escápula, muitos associam a **osteotomia da clavícula**.\n\n**As técnicas de Woodward e de Green em detalhe.**\n- **Woodward**: os músculos que prendem a escápula à **coluna** (trapézio e romboides) têm a sua **origem** (nos processos espinhosos) **desinserida** da linha média. A escápula é **abaixada** e rodada até a posição correta, e as origens musculares são **reinseridas mais distalmente** (mais para baixo) nos processos espinhosos. O osso omovertebral e a porção superomedial da escápula são ressecados.\n- **Green**: os músculos são liberados da **escápula** (as inserções), a escápula é abaixada, e os músculos são reinseridos nela na nova posição.",
-  "correta": "**Correta: A (origem da musculatura paraescapular para distal).** Na técnica de Woodward para a deformidade de Sprengel, as **origens** do trapézio e dos romboides nos processos espinhosos são desinseridas, a escápula é abaixada, e as origens são **reinseridas mais distalmente** na linha média.",
+  "conceito": "Toda técnica para o SPRENGEL tem dois objetivos: **abaixar a escápula** e **soltar as conexões anormais** entre ela e a coluna ou o tórax (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 344). O que distingue uma técnica da outra é o lado em que o músculo é solto, e é isso que a banca cobra no WOODWARD.\n\n**O WOODWARD.** O cirurgião desinsere a **origem** do trapézio, do levantador e dos romboides nos **processos espinhosos** e a **reinsere mais distalmente**, mais abaixo na coluna. A escápula desce carregada pela lâmina muscular. Na mesma via resseca-se o omovertebral (por via extraperiosteal), a fossa supraespinal ou o ângulo superomedial (T, p. 344; Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1175 a 1177). É a técnica preferida dos autores do Campbell, que pedem a espinha da escápula no mesmo nível da contralateral.\n\n**Para não confundir com as outras.** O GREEN solta os músculos na **borda medial da escápula** (as inserções), por via extraperiosteal, abaixa e reinsere, com tração e gesso por 3 semanas. O MEARS faz osteotomia oblíqua do corpo da escápula com ressecção subperiosteal e libera a cabeça longa do tríceps.\n\n**A proteção do plexo.** A paralisia do plexo braquial é a complicação mais grave (0% a 12,5%), e acima de 8 anos acrescenta-se a osteotomia da clavícula (C, p. 1174 e 1177).\n\nAs técnicas estão na seção \"A cirurgia: GREEN, WOODWARD, MEARS e a clavícula\" do resumo.",
+  "correta": "**A) origem da musculatura paraescapular para distal.** O WOODWARD desloca as origens nos processos espinhosos para baixo, e a escápula desce junto.",
   "incorretas": {
-   "B": "A desinserção das **inserções** musculares (na escápula) caracteriza a técnica de **Green**, e não a de Woodward.",
-   "C": "As origens são transferidas para **distal**, e não para proximal, para levar a escápula para baixo.",
-   "D": "A técnica de Woodward mexe nas **origens**, e não nas inserções, e o sentido é **distal**."
+   "B": "**Inserção para distal** descreve a lógica do GREEN, que solta os músculos na borda medial da escápula, não nos processos espinhosos.",
+   "C": "**Origem para proximal** subiria a escápula, o contrário do objetivo de abaixá-la.",
+   "D": "**Inserção para proximal** erra o ponto solto e a direção: elevaria uma escápula que já está alta."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
-   "Woodward JW. Congenital elevation of the scapula: correction by release and transplantation of muscle origins. J Bone Joint Surg Am. 1961;43:219-228."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 344",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1174 a 1177",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0191": {
@@ -3160,19 +3178,21 @@
   "conferido": false
  },
  "pediatria-0203": {
-  "conceito": "O **broto do membro** surge na 4ª semana, do mesoderma da placa lateral coberto por ectoderma. Três **centros de sinalização** organizam os três eixos do membro:\n\n**crista ectodérmica apical** (na ponta do broto): controla o eixo **proximal-distal**, pelo **fator de crescimento fibroblástico** (**FGF**). Se ela falha, o membro para de crescer naquele nível, e surgem as **deficiências transversas**;\n\n**zona de atividade polarizante** (na borda pós-axial): controla o eixo **radioulnar** (anteroposterior), pela proteína **sonic hedgehog** (Shh). O excesso ou a duplicação dá **polidactilia** e a mão em espelho;\n\n**ectoderma dorsal**: controla o eixo **dorsoventral**, pelo **Wnt7a**, que ativa o **Lmx-1b** no mesoderma dorsal. A falha dá unhas palmares e a síndrome unha-patela.\n\n**Como lembrar**: FGF faz o membro **crescer em comprimento**; Shh decide **qual dedo é qual**; Wnt7a e Lmx-1b decidem o que é **dorso** e o que é **palma**.\n\n**A sequência embriológica.** O broto do membro superior aparece por volta do **26º ao 27º dia** e o inferior cerca de dois dias depois. A diferenciação segue o sentido **proximal para distal**: primeiro o ombro e o braço, depois o antebraço e por fim a mão, cujos raios se separam pela **apoptose** das membranas interdigitais entre a 6ª e a 8ª semana. Ao fim da **8ª semana**, o membro está formado; por isso as malformações congênitas surgem nesse intervalo.\n\n**A relação com a classificação das malformações (OMT).** A classificação de Oberg, Manske e Tonkin organiza as malformações da mão pelo **eixo** que falhou:\n| Eixo e centro | Exemplos |\n|---|---|\n| **Proximal-distal** (crista ectodérmica apical, FGF) | Deficiências transversas, braquissindactilia |\n| **Radioulnar** (zona de atividade polarizante, Shh) | Polidactilia, mão em espelho, deficiências radiais e ulnares |\n| **Dorsoventral** (ectoderma dorsal, Wnt7a e Lmx-1b) | Síndrome unha-patela, unhas palmares |",
-  "correta": "**Correta: E (o fator de crescimento fibroblástico).** A crista ectodérmica apical secreta FGF (sobretudo FGF8), que mantém a proliferação do mesoderma subjacente e comanda o crescimento do membro no eixo proximal-distal.",
+  "conceito": "Três centros de sinalização constroem o membro, e cada um tem a sua molécula. A pergunta é sobre o primeiro deles, a **crista ectodérmica apical (AER)**, o espessamento do ectoderma na borda livre do broto.\n\n**O que a AER faz.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (p. 300) a chama de centro de comando móvel do eixo **proximodistal**: é ela que leva o membro do ombro até a ponta dos dedos. Logo abaixo fica a zona de progresso, mesoderma que prolifera e é mantido imaturo pelos FGF.\n\n**A cascata que a mantém.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21 (p. 873) descreve a sequência Tbx5, Fgf10, Wnt3 e, por fim, a secreção de **Fgf8**, chamado de elemento sinalizador chave da crista. O Campbell's Operative Orthopaedics, 15ª ed., cap. 85 (p. 3627) confirma: a AER é mediada por uma família de **fatores de crescimento fibroblástico, mais comumente o FGF8**.\n\n**Os vizinhos que confundem.** A zona de atividade polarizante (ZPA), na borda ulnar, usa o **sonic hedgehog** e organiza o eixo radioulnar; o ectoderma dorsal usa o WNT7a, que induz o **LMX1**, e organiza dorso e palma. Trocar os pares é exatamente a armadilha da banca.\n\nOs três eixos estão na seção \"Os três eixos\" do resumo.",
+  "correta": "**E) o fator de crescimento fibroblástico.** O FGF, sobretudo o FGF8, estabelece e mantém a AER e o crescimento proximodistal.",
   "incorretas": {
-   "A": "O Lmx-1 participa do eixo dorsoventral, ativado pelo Wnt7a do ectoderma dorsal.",
-   "B": "\"Fator de transcrição\" é genérico e não nomeia a molécula da crista ectodérmica apical.",
-   "C": "A sonic hedgehog é o sinal da zona de atividade polarizante, que organiza o eixo radioulnar.",
-   "D": "\"Proteína de transcrição sonic\" não existe; é um distrator."
+   "A": "**Lmx-1** pertence ao eixo dorsoventral: é induzido pelo WNT7a do ectoderma dorsal, e sua perda se liga à síndrome unha-patela.",
+   "B": "**\"O fator de transcrição\"** é genérico demais; a cascata tem fatores de transcrição, mas o sinal que mantém a crista é o FGF secretado.",
+   "C": "**Sonic hedgehog** é a molécula da ZPA, que define o eixo anteroposterior (radioulnar); sua perda tira estruturas ulnares.",
+   "D": "**\"Proteína de transcrição sonic\"** deforma o nome do sonic hedgehog, que de qualquer forma é da ZPA e não da AER."
   },
   "referencias": [
-   "Oberg KC, Feenstra JM, Manske PR, Tonkin MA. Developmental biology and classification of congenital anomalies of the hand and upper extremity. J Hand Surg Am. 2010;35(12):2066-76.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de embriologia e malformações dos membros."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 300",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 873 e 874",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 85, p. 3627",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0204": {
@@ -3418,18 +3438,19 @@
   "conferido": false
  },
  "pediatria-0243": {
-  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, a anomalia congênita mais comum da cintura escapular. Na **embriologia**, a escápula se forma na altura de **C4 a C5** e **desce** até o nível de T2 a T7 entre a 9ª e a 12ª semana. Na deformidade de Sprengel, essa **descida falha**.\n\n**As características da escápula.**\n- **Pequena** (hipoplásica) e com forma alterada: mais larga que alta.\n- **Elevada** e **rodada**: o ângulo inferior fica **medial** e o glenoide aponta para baixo (rotação para baixo).\n- **Barra omovertebral** em cerca de um terço dos casos: uma ponte fibrosa, cartilaginosa ou óssea que liga o ângulo superomedial da escápula aos processos espinhosos ou lâminas de C4 a C7.\n- Os músculos periescapulares são **hipoplásicos**.\n\n**A clínica.** O ombro fica mais alto, com o pescoço aparentemente curto. A **abdução** fica **limitada**, porque a escápula não consegue rodar no tórax (o ritmo escapulotorácico está bloqueado); a abdução fica restrita à glenoumeral, em torno de 90° a 120°.\n\n**As associações.** **Klippel-Feil** (fusão de vértebras cervicais), escoliose congênita, costelas anômalas, espinha bífida e anomalias renais.\n\n**A classificação de Cavendish (estética).**\n| Grau | Aspecto |\n|---|---|\n| 1 | Muito leve: ombros nivelados; deformidade invisível vestido |\n| 2 e 3 | Leve a moderada: elevação de 2 a 5 cm, visível vestido |\n| 4 | Grave: ângulo superior perto do occipital |\n\n**O tratamento.** Formas leves: observação e fisioterapia. Cirurgia de preferência entre **3 e 8 anos** (Woodward: transposição da origem do trapézio; Green: liberação e abaixamento), com **ressecção da barra** omovertebral. O risco principal é a **lesão do plexo braquial** ao abaixar a escápula, por isso associa-se a osteotomia da clavícula nas correções maiores.",
-  "correta": "**Correta: C (limitada e a escápula hipoplásica).** A escápula pequena, elevada e rodada, por vezes presa à coluna pela barra omovertebral, não roda no tórax, e a abdução do ombro fica limitada.",
+  "conceito": "Aqui a banca troca a pergunta: em vez da glenoumeral, quer saber do movimento global de abdução. E a resposta é o contrário da questão irmã: a abdução está **limitada**.\n\n**Três razões para a abdução falhar** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 343):\n1. a escápula fixa, pela própria anatomia e pelo omovertebral, quebra o ritmo de 2:1 entre glenoumeral e escapulotorácico;\n2. o polo inferior da escápula **hipoplásica** está rodado medialmente, e a glenoide aponta para baixo, como se o ombro já começasse em adução;\n3. os músculos escapulares fracos ou ausentes não têm força para completar o arco.\n\n**O que é hipo e o que é hiper.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 33 (p. 1174 e 1175) descreve a escápula como hipoplásica e malformada; o volume na base do pescoço é o ângulo superior alto e, quando existe, o omovertebral, não excesso de osso. O Campbell's Operative Orthopaedics, 15ª ed., cap. 33 lembra ainda que o SPRENGEL é a anomalia congênita mais comum da cintura escapular (p. 1174).\n\n**Gravidade e conduta.** O escore de CAVENDISH gradua a deformidade de 1 a 4, e a cirurgia é defendida nos graus 3 e 4 (T, p. 343 e 344).\n\nA limitação está explicada na seção \"O que é e por que limita o ombro\" do resumo.",
+  "correta": "**C) limitada e a escápula hipoplásica.** A abdução depende da rotação da escápula sobre o tórax, que está travada, e a escápula é pequena e malformada.",
   "incorretas": {
-   "A": "A escápula é hipoplásica, mas a **abdução** fica limitada, porque o movimento escapulotorácico está bloqueado.",
-   "B": "A abdução fica **limitada**, e a escápula é **pequena** (hipoplásica), e não hiperplásica.",
-   "D": "A abdução está limitada, mas a escápula é **hipoplásica**, e não hiperplásica."
+   "A": "**Abdução normal** esquece que acima de 90° o braço precisa da escápula girando; com ela presa, o arco para.",
+   "B": "**Normal e hiperplásica** erra os dois termos: a abdução está limitada e o osso é hipoplásico.",
+   "D": "**Limitada e hiperplásica** acerta o movimento, mas a escápula do SPRENGEL é menor, não maior."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de afecções do ombro.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do membro superior."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 343 e 344",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1174 e 1175",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0244": {
@@ -3755,32 +3776,36 @@
   "conferido": false
  },
  "pediatria-0279": {
-  "conceito": "A **pseudartrose congênita da clavícula** é uma falha de união entre os dois centros de ossificação da clavícula, no **terço médio**. Aparece ao nascer ou logo depois como uma saliência indolor e móvel.\n\n**O perfil**:\n\n**lado**: quase sempre o **direito**; o esquerdo aparece praticamente só quando há **dextrocardia** ou situs inversus;\n\n**sexo**: mais comum no **feminino**;\n\n**bilateral**: raro;\n\n**neurofibromatose**: **sem relação**, ao contrário da pseudartrose congênita da tíbia.\n\n**A explicação mais aceita**: a **artéria subclávia direita** passa mais alta e mais perto da clavícula; sua pulsação impediria a união dos dois centros. Por isso o lado acompanha a posição do coração.\n\n**Os diferenciais**:\n\n**fratura obstétrica**: dói, a criança não mexe o braço (pseudoparalisia) e forma calo em 2 a 3 semanas;\n\n**disostose cleidocraniana**: falha na parte lateral da clavícula, em geral bilateral, com fontanelas abertas.\n\n**O tratamento**: sem dor, observar. Com dor ou deformidade incômoda, em geral entre 3 e 6 anos: ressecção do foco, enxerto ósseo e fixação, com alta taxa de consolidação.\n\n**Como diferenciar na prática.**\n| Condição | Achados |\n|---|---|\n| **Pseudartrose congênita** | Saliência **indolor** e móvel no terço médio, presente desde o nascimento, **sem calo**; lado **direito** |\n| Fratura obstétrica | **Dor**, pseudoparalisia, crepitação; calo palpável em 7 a 14 dias |\n| Disostose cleidocraniana | Defeito geralmente **bilateral**, na parte **lateral**; fontanelas abertas, dentes supranumerários |\n\nA radiografia da pseudartrose congênita mostra as duas extremidades **arredondadas**, alargadas e escleróticas, sem calo, o que a distingue da fratura (bordas agudas e calo em formação).",
-  "correta": "**Correta: A (feminino, no lado direito).** A pseudartrose congênita da clavícula ocorre quase sempre à direita, pela relação com a artéria subclávia direita, e é mais comum no sexo feminino.",
+  "conceito": "A pseudartrose congênita da clavícula é rara, mas tem um perfil tão fixo que a prova a cobra quase só pelo sexo e pelo lado. Entender a hipótese da artéria subclávia faz o lado deixar de ser decoreba.\n\n**Quem tem.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 (p. 344) define a doença como descontinuidade do **terço médio** presente ao nascer, típica de **meninas** e do **lado direito**, bilateral em 10%, às vezes com costelas cervicais. O Campbell's Operative Orthopaedics, 15ª ed., cap. 33 (p. 1181) diz que ela ocorre **quase invariavelmente à direita**.\n\n**Por que à direita.** A artéria **subclávia direita passa mais alta** que a esquerda, num espaço estreito entre o terço médio da clavícula e a primeira costela, e comprimiria a clavícula fetal. A prova a favor vem do espelho: os raros casos à esquerda aparecem em crianças com **dextrocardia**. Costelas cervicais estreitam ainda mais o espaço. Outras hipóteses são a posição occipitoanterior esquerda e a falha de fusão dos dois centros de ossificação, que combina com as capas de cartilagem hialina nas duas pontas.\n\n**O que a distingue.** É entidade separada da disostose cleidocraniana, da neurofibromatose e da fratura neonatal; não consolida espontaneamente, e a cirurgia é feita por estética ou dor (C, p. 1181 a 1183).\n\nO perfil está na seção \"Quem tem e por quê\" do resumo.",
+  "correta": "**A) feminino, no lado direito.** O Tachdjian descreve o predomínio em meninas, e os dois livros, o lado direito pela subclávia mais alta.",
   "incorretas": {
-   "B": "O lado direito está certo, mas predomina no sexo feminino.",
-   "C": "O sexo está certo, mas o lado típico é o direito; o esquerdo sugere dextrocardia.",
-   "D": "Erra os dois pontos: predomina no sexo feminino e no lado direito."
+   "B": "**Masculino à direita** acerta o lado, mas a doença é típica de meninas.",
+   "C": "**Feminino à esquerda** acerta o sexo; a esquerda só aparece com dextrocardia, quando a anatomia está espelhada.",
+   "D": "**Masculino à esquerda** inverte os dois dados do perfil clássico."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 12"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 344",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1181 a 1183",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0280": {
-  "conceito": "**A luxação congênita da cabeça do rádio.** É a anomalia congênita **mais comum do cotovelo**, embora rara. Pode ser **isolada** ou associada a síndromes (unha-patela, Klippel-Feil, Ehlers-Danlos, artrogripose, sinostose radioulnar). É **bilateral** em boa parte dos casos e costuma ser descoberta tarde, na idade escolar, porque a função é quase normal.\n\n**A direção do desvio.**\n| Direção | Frequência |\n|---|---|\n| **Posterior** (ou posterolateral) | A **mais comum** (cerca de 65%) |\n| Anterior | Menos comum: deve-se suspeitar de Monteggia antiga |\n| Lateral | Rara |\n\n**Os sinais que indicam a causa congênita (e não trauma antigo).**\n- **Cabeça do rádio pequena** e **em cúpula** (convexa, e não côncava), porque nunca articulou com o capítulo;\n- **capítulo hipoplásico** e achatado;\n- **rádio longo** em relação à ulna, com a ulna **retificada** (sem a curvatura do Monteggia);\n- **bilateralidade** e associação com síndromes;\n- ausência de história de trauma.\n\n**A diferença com a lesão de Monteggia antiga.** Na Monteggia não diagnosticada, a cabeça costuma estar **anterior**, a ulna tem **arqueamento** ou consolidação viciosa, e a cabeça do rádio inicialmente tem forma normal (côncava). Esse diagnóstico diferencial é importante, porque a Monteggia antiga pode ser reconstruída, e a congênita **não deve** ser reduzida.\n\n**O quadro e o tratamento.** Limitação discreta da extensão (na posterior) ou da flexão (na anterior), e da rotação; dor e saliência palpável na adolescência. O tratamento é **observação**. A tentativa de redução falha. Na dor ou limitação importante, após a maturidade, faz-se a **ressecção da cabeça do rádio**.",
-  "correta": "**Correta: D (posterior, e a cabeça do rádio geralmente é de tamanho menor que o normal).** A luxação congênita é mais comum para posterior, e a cabeça do rádio é pequena e em cúpula, porque nunca se moldou contra o capítulo.",
+  "conceito": "A luxação congênita da cabeça do rádio é a anomalia congênita mais comum do cotovelo, embora rara, e aparece como massa indolor com perda da pronossupinação, sem história de trauma (Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1183). A questão pede dois dados: a direção e o tamanho da cabeça.\n\n**A direção.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29, p. 1248, ao discutir o diferencial da fratura de MONTEGGIA, afirma que as luxações congênitas são **habitualmente bilaterais e posteriores**; as anteriores descritas provavelmente são luxações traumáticas antigas não diagnosticadas. O Campbell diz que a cabeça vai **frequentemente para posterior, às vezes para anterior**.\n\n**O tamanho, onde os livros divergem.** O Campbell descreve a cabeça **arredondada, sem a depressão para o capítulo e geralmente menor que o normal**, com diáfise longa, capítulo pequeno e ulna arqueada. O Tachdjian descreve a cabeça **aumentada e elíptica**, com capítulo achatado. O gabarito seguiu o Campbell.\n\n**O que une as duas descrições.** A cabeça que nunca articulou com o capítulo não desenvolve a concavidade, e o capítulo sem estímulo fica pequeno: é isso que separa o congênito do traumático na radiografia.\n\n**Conduta.** Não se reduz; se houver dor na vida adulta, resseca-se a cabeça depois do fim do crescimento (C, p. 1183).\n\nA comparação está na seção \"Para onde vai e como é a cabeça\" do resumo.",
+  "correta": "**D) posterior, e a cabeça do rádio geralmente é de tamanho menor que o normal.** Posterior pelos dois livros; menor pela descrição do Campbell's Operative Orthopaedics, 15ª ed.",
   "incorretas": {
-   "A": "O desvio **anterior** é menos comum e deve levantar a suspeita de **Monteggia antiga**, em que a cabeça tem tamanho normal.",
-   "B": "A cabeça é menor que o normal, mas o desvio mais comum é **posterior**, e não anterior.",
-   "C": "O desvio posterior está correto, mas a cabeça é **pequena e em cúpula**, e não de tamanho normal."
+   "A": "**Anterior com cabeça normal** erra a direção e ignora a forma anômala de uma cabeça que nunca se articulou.",
+   "B": "**Anterior com cabeça menor** acerta o tamanho do Campbell, mas a direção anterior sugere luxação traumática antiga.",
+   "C": "**Posterior com cabeça normal** acerta a direção; a cabeça congênita, porém, é arredondada e sem concavidade, menor no Campbell e aumentada no Tachdjian, nunca normal."
   },
   "referencias": [
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do cotovelo e do antebraço.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de afecções congênitas do membro superior."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1183",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29, p. 1248",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "Sobre o tamanho da cabeça, os livros divergem: o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 29, p. 1248), descreve a cabeça aumentada e elíptica; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 33, p. 1183), geralmente menor que o normal. O gabarito segue o Campbell.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0281": {
@@ -4172,18 +4197,20 @@
   "conferido": false
  },
  "pediatria-0316": {
-  "conceito": "**A mão torta radial (deficiência longitudinal radial).** É a falha de formação do lado **pré-axial** (radial) do membro superior: o rádio é hipoplásico ou ausente, a mão desvia para o lado radial e o **polegar** costuma ser hipoplásico ou ausente. É **bilateral** em cerca de metade dos casos.\n\n**As síndromes associadas (é preciso investigar).**\n| Síndrome | Problema associado |\n|---|---|\n| **Holt-Oram** | Cardiopatia (comunicação interatrial) |\n| **TAR** (trombocitopenia com ausência do rádio) | Plaquetas baixas; o polegar está **presente** |\n| **Anemia de Fanconi** | Falência medular (diagnóstico pelo teste de quebra cromossômica) |\n| **VACTERL** | Vértebras, ânus, coração, traqueia, esôfago, rim, membros |\n\n**A classificação de Bayne e Klug (1987).**\n| Tipo | Rádio |\n|---|---|\n| **I** | Rádio **distal curto**: fise distal presente, mas de crescimento atrasado |\n| **II** | Rádio **hipoplásico** em miniatura: as duas fises presentes, mas com crescimento deficiente |\n| **III** | **Ausência parcial**: geralmente falta a parte **distal** (com a fise distal); o rádio residual é **fino e curto** |\n| **IV** | **Ausência total** do rádio: o tipo mais comum |\n\nJames e colaboradores acrescentaram o **tipo N** (polegar alterado com rádio e carpo normais) e o **tipo 0** (alteração do carpo com rádio normal).\n\n**Por que a ausência da fise importa.** O crescimento longitudinal do rádio vem sobretudo da **fise distal**. Sem ela (tipo III), o resíduo de rádio não acompanha a ulna, e a mão perde o apoio no lado radial, desviando cada vez mais.\n\n**O tratamento.** Alongamentos e órteses desde o nascimento; **centralização** ou **radialização** do carpo sobre a ulna (às vezes após distração de partes moles com fixador), entre 6 e 12 meses; e **policização** do indicador quando o polegar é ausente ou instável. O tratamento só é feito se o **cotovelo flete** o suficiente para a mão chegar à boca; um cotovelo rígido em extensão contraindica a centralização.",
-  "correta": "**Correta: C (III).** No tipo III de Bayne e Klug, há ausência parcial do rádio, em geral da parte distal com a fise; o rádio residual é fino, curto e sem fise de crescimento distal.",
+  "conceito": "A deficiência longitudinal radial é a falta de parte ou de todo o raio radial: rádio, escafoide, trapézio, polegar e partes moles correspondentes (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 339). A classificação gradua quanto do rádio sobra, e a pista desta questão é a **fise**.\n\n**BAYNE e KLUG, no Campbell** (Campbell's Operative Orthopaedics, 15ª ed., cap. 85, p. 3631):\n- **tipo I**: rádio distal curto, fise distal presente, de aparecimento tardio;\n- **tipo II**: rádio hipoplásico, em miniatura, com as fises ainda presentes e tardias;\n- **tipo III**: ausência parcial, mais comum no terço distal;\n- **tipo IV**: ausência total, o tipo mais comum.\n\n**A classificação modificada do Tachdjian** (Tabela 12.6, p. 341) define o tipo 3 justamente pela **fise distal ausente**, com hipoplasia proximal variável. Um rádio mais fino e curto que perdeu a fise já passou do tipo II, em que a fise ainda existe.\n\n**A fonte da dúvida.** A Fig. 12.73 do Tachdjian (p. 340) chama de tipo II o rádio \"menor e mais fino, sem fise\". Por isso a questão divide candidatos; o gabarito III se apoia na tabela modificada e no Campbell.\n\n**Por que importa.** Nos tipos com falta de rádio há uma anlage fibrosa radial que funciona como corda, e a centralização costuma ser feita entre 3 e 6 meses (T, p. 339; C, p. 3633).\n\nA classificação está na seção \"A classificação que cai\" do resumo.",
+  "correta": "**C) III.** Sem fise distal, o rádio já não é o tipo II, que conserva as fises; a ausência da fise define o tipo 3 da classificação modificada.",
   "incorretas": {
-   "A": "No tipo **I**, o rádio distal é curto, mas a **fise distal está presente**, com crescimento apenas atrasado.",
-   "B": "No tipo **II**, o rádio é hipoplásico em miniatura, mas **as duas fises estão presentes**.",
-   "D": "No tipo **IV**, o rádio está **totalmente ausente**; não há rádio residual."
+   "A": "**Tipo I** é o rádio só um pouco mais curto, com fise distal presente.",
+   "B": "**Tipo II** é o rádio em miniatura, mas na BAYNE e KLUG ainda tem as fises, apenas tardias.",
+   "D": "**Tipo IV** é a ausência total do rádio, o tipo mais comum; aqui ainda existe um rádio fino e curto."
   },
   "referencias": [
-   "Bayne LG, Klug MS. Long-term review of the surgical treatment of radial deficiencies. J Hand Surg Am. 1987;12(2):169-79.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de malformações congênitas do membro superior."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 85, p. 3631 a 3635",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 339 a 341",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "Na Fig. 12.73 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 340), \"rádio menor e mais fino, sem fise\" é o tipo II; o gabarito III é sustentado pela Tabela 12.6 do mesmo livro (fise distal ausente = tipo 3) e pelo Campbell's Operative Orthopaedics, 15ª ed., em que o tipo II conserva as fises.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0317": {
@@ -4279,18 +4306,19 @@
   "conferido": false
  },
  "pediatria-0323": {
-  "conceito": "**A deficiência femoral congênita.** Também chamada de **deficiência femoral focal proximal** (PFFD, no espectro mais grave) ou **fêmur curto congênito** (nas formas leves). É uma falha do desenvolvimento do fêmur, sobretudo da sua parte **proximal**, que vai desde um fêmur discretamente curto até a quase ausência do osso.\n\n**As características.**\n- Fêmur **curto** (do encurtamento leve a menos da metade do lado normal), com coxa vara, retroversão e pseudartrose subtrocantérica nas formas graves;\n- **acetábulo displásico** ou ausente;\n- coxa curta, em flexão, abdução e rotação externa, com o pé na altura do joelho oposto nos casos graves;\n- **joelho instável**, com ausência dos cruzados.\n\n**As associações.** A deficiência femoral congênita se associa à **hemimelia fibular** em **50% a 80%** dos casos: as duas fazem parte do mesmo espectro das **deficiências pós-axiais** do membro inferior. O pé costuma ter equinovalgo, ausência de raios laterais e coalizão tarsal.\n\n**A classificação.**\n| Classificação | Base |\n|---|---|\n| **Aitken** (A a D) | Presença da cabeça femoral e do acetábulo, e a conexão entre a cabeça e a diáfise |\n| **Paley** (1 a 4) | Orienta a reconstrução: tipo 1 (fêmur intacto, com ossificação normal ou retardada) até tipo 4 (fêmur distal ausente) |\n| Gillespie e Torode | Fêmur curto alongável versus ausência proximal grave |\n\n**O tratamento.** Depende da discrepância prevista e da estabilidade do quadril e do joelho. Nas formas leves e moderadas: **reconstrução** do quadril (superquadril de Paley) e do joelho seguida de **alongamentos** sucessivos. Nas formas graves: **prótese** com ou sem amputação de Syme, **rotacionoplastia de Van Nes** (o tornozelo rodado 180° funciona como joelho na prótese) ou fusão do joelho com amputação.",
-  "correta": "**Correta: D (hemimelia fibular).** A deficiência femoral congênita se associa à hemimelia fibular em 50% a 80% dos casos; ambas fazem parte do espectro das deficiências pós-axiais do membro inferior.",
+  "conceito": "O enunciado chama de \"doença congênita femoral\" a deficiência femoral focal proximal (DFFP) e pergunta a associação mais frequente. A resposta está um andar abaixo: a fíbula.\n\n**O dado do livro.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21 (p. 886) aponta a **hemimelia fibular ipsilateral em cerca de 45%** dos casos, com tíbia curta e pé em equinovalgo. O Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (p. 1092) coloca a hemimelia fibular e a **ausência dos ligamentos cruzados** como as associações mais comuns, numa doença com incidência de 1 em 50.000.\n\n**Por que a criança \"soma\" encurtamentos.** O fêmur curto, com quadril fletido e abduzido, se junta a uma perna também curta e a um pé desviado; a discrepância final é a soma dos dois segmentos, e o joelho, sem cruzados, fica instável. É esse conjunto que faz o tratamento da DFFP ser planejado como o de um membro inteiro, não de um osso.\n\n**Como o fêmur é graduado.** AITKEN: A com cabeça e acetábulo, unindo em varo; B com cabeça, sem continuidade óssea com a diáfise; C sem cabeça e com acetábulo ruim; D fêmur muito curto, sem cabeça nem tufo (T, p. 884; C, p. 1093).\n\nA associação está na seção \"Deficiência femoral focal proximal (DFFP)\" do resumo.",
+  "correta": "**D) hemimelia fibular.** Acompanha a DFFP em cerca de 45%, do mesmo lado.",
   "incorretas": {
-   "A": "A **pseudartrose congênita da tíbia** está associada à neurofibromatose tipo 1, e não à deficiência femoral.",
-   "B": "A **hemimelia tibial** é uma deficiência **pré-axial**, rara, e não é a associação típica da deficiência femoral.",
-   "C": "A **polidactilia** pode acompanhar a hemimelia tibial, mas não é a associação típica da deficiência femoral."
+   "A": "**Pseudartrose congênita da tíbia** pertence ao encurvamento anterolateral ligado à NF1, não à DFFP.",
+   "B": "**Hemimelia tibial** não é a associação descrita; o osso da perna que costuma faltar junto é a fíbula.",
+   "C": "**Polidactilia** resulta do excesso de sonic hedgehog na ZPA e não figura entre as associações da DFFP."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de deficiências congênitas dos membros.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de deficiências dos membros."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 884 a 886",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1092 e 1093",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0326": {
@@ -4348,18 +4376,19 @@
   }
  },
  "pediatria-0328": {
-  "conceito": "**A deficiência femoral congênita.** Também chamada de **deficiência femoral focal proximal** (PFFD, no espectro mais grave) ou **fêmur curto congênito** (nas formas leves). É uma falha do desenvolvimento do fêmur, sobretudo da sua parte **proximal**, que vai desde um fêmur discretamente curto até a quase ausência do osso.\n\n**As características.**\n- Fêmur **curto** (do encurtamento leve a menos da metade do lado normal), com coxa vara, retroversão e pseudartrose subtrocantérica nas formas graves;\n- **acetábulo displásico** ou ausente;\n- coxa curta, em flexão, abdução e rotação externa, com o pé na altura do joelho oposto nos casos graves;\n- **joelho instável**, com ausência dos cruzados.\n\n**As associações.** A deficiência femoral congênita se associa à **hemimelia fibular** em **50% a 80%** dos casos: as duas fazem parte do mesmo espectro das **deficiências pós-axiais** do membro inferior. O pé costuma ter equinovalgo, ausência de raios laterais e coalizão tarsal.\n\n**A classificação.**\n| Classificação | Base |\n|---|---|\n| **Aitken** (A a D) | Presença da cabeça femoral e do acetábulo, e a conexão entre a cabeça e a diáfise |\n| **Paley** (1 a 4) | Orienta a reconstrução: tipo 1 (fêmur intacto, com ossificação normal ou retardada) até tipo 4 (fêmur distal ausente) |\n| Gillespie e Torode | Fêmur curto alongável versus ausência proximal grave |\n\n**O tratamento.** Depende da discrepância prevista e da estabilidade do quadril e do joelho. Nas formas leves e moderadas: **reconstrução** do quadril (superquadril de Paley) e do joelho seguida de **alongamentos** sucessivos. Nas formas graves: **prótese** com ou sem amputação de Syme, **rotacionoplastia de Van Nes** (o tornozelo rodado 180° funciona como joelho na prótese) ou fusão do joelho com amputação.\n\n**Os músculos do quadril na deficiência femoral.** Com o fêmur curto e o quadril instável, o membro assume a postura de **flexão, abdução e rotação externa**. Os músculos dependem de um fêmur com comprimento e de um trocânter bem posicionado para ter **braço de alavanca**:\n- os **abdutores** (glúteos médio e mínimo) trabalham **encurtados** e sem alavanca: **marcha de Trendelenburg**;\n- os **extensores** (glúteo máximo e isquiotibiais) também ficam encurtados e em desvantagem: o quadril tende a ficar **fletido**;\n- os **flexores**, ao contrário, predominam e mantêm a contratura em flexão.\n\nA reconstrução do quadril (superquadril de Paley) inclui liberações e transferências musculares justamente para devolver o equilíbrio e a função aos abdutores e extensores antes dos alongamentos.",
-  "correta": "**Correta: D (abdutores e extensores do quadril).** Com o fêmur curto e o quadril instável, os abdutores e os extensores trabalham encurtados e sem braço de alavanca, enquanto os flexores predominam e mantêm o quadril fletido.",
+  "conceito": "O bebê com deficiência femoral focal proximal (DFFP) tem uma postura tão típica que dá para deduzir a resposta olhando a coxa: curta, **fletida, abduzida e rodada externamente**.\n\n**De onde vem a postura.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21 (p. 885) explica que os **abdutores e extensores do quadril estão presentes, mas encurtados**, e não funcionam direito por causa da anatomia anormal do fêmur proximal. Sem um colo e uma diáfise contínuos servindo de alavanca, o glúteo médio não estabiliza a pelve e o glúteo máximo não estende o quadril; a coxa fica pendurada em flexão e abdução. O joelho, levado para perto da virilha, vira um segmento intercalar instável, com contratura em flexão, e o pé chega à altura do joelho contralateral.\n\n**O que acompanha.** A hemimelia fibular ipsilateral aparece em cerca de 45%, com tíbia curta e pé em equinovalgo (p. 886); o Campbell's Operative Orthopaedics, 15ª ed., cap. 31 cita também a ausência dos cruzados e uma incidência de 1 em 50.000 (p. 1092).\n\n**A classificação de AITKEN** vai do tipo A, com cabeça e acetábulo e união em varo, ao D, fêmur muito curto sem cabeça (T, p. 884).\n\nA clínica está na seção \"Deficiência femoral focal proximal (DFFP)\" do resumo.",
+  "correta": "**D) Abdutores e extensores do quadril.** Existem, mas encurtados e sem alavanca óssea, e por isso a coxa fica fletida e abduzida.",
   "incorretas": {
-   "A": "Adutores e flexores não são os insuficientes; os flexores até predominam, deixando o quadril fletido.",
-   "B": "Os abdutores estão certos, mas os flexores predominam; os insuficientes são os extensores.",
-   "C": "Os extensores estão certos, mas os adutores não são o grupo comprometido; são os abdutores."
+   "A": "**Adutores e flexores** não são os grupos que o livro descreve como encurtados e sem função; a coxa fletida mostra que os flexores atuam sem oposição.",
+   "B": "**Abdutores e flexores** acerta os abdutores, mas a falha do outro lado é de extensão, que deixa o quadril em flexão.",
+   "C": "**Adutores e extensores** acerta os extensores; o grupo lateral comprometido é o dos abdutores, e a coxa fica abduzida."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de deficiências congênitas dos membros.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de deficiências dos membros."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 884 a 886",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1092 e 1093",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0329": {
@@ -4626,19 +4655,19 @@
   "conferido": false
  },
  "pediatria-0347": {
-  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, a anomalia congênita mais comum da cintura escapular. Durante a vida embrionária, a escápula se forma na região **cervical**, por volta da 5ª semana, e **desce** até sua posição torácica entre a 9ª e a 12ª semana. Na deformidade de Sprengel, essa descida **falha**.\n\n**Os achados.**\n- Escápula **alta, pequena e rodada**: o ângulo inferior aponta para medial e o ângulo superomedial fica alto e curvo para a frente.\n- Limitação da **abdução** do ombro, porque a escápula não roda.\n- Em cerca de **um terço** dos casos, há o **osso omovertebral**: uma barra óssea, cartilaginosa ou fibrosa, que liga o ângulo superomedial da escápula aos processos espinhosos ou às lâminas das vértebras cervicais inferiores.\n- **Associações**: síndrome de **Klippel-Feil**, escoliose congênita, anomalias de costelas e renais.\n\n**A classificação de Cavendish (estética).**\n\n| Grau | Gravidade | Aparência |\n|---|---|---|\n| **1** | **Muito leve** | Ombros nivelados; **sem deformidade visível com a criança vestida** |\n| 2 | Leve | Ombros quase nivelados; deformidade **visível vestido**, como um volume na base do pescoço |\n| 3 | Moderada | Ombro elevado de **2 a 5 cm**; deformidade facilmente visível |\n| 4 | Grave | Ombro muito elevado; ângulo superior da escápula perto do **occipital** |\n\nNão existe grau 0: a escala começa no grau 1.\n\n**A classificação radiográfica de Rigault.** Usa a altura do ângulo superomedial da escápula em relação à coluna: abaixo de T4 (grau I), entre T2 e T4 (grau II) e acima de T2 (grau III).\n\n**O tratamento.**\n- Graus **1 e 2** de Cavendish: geralmente **observação**, pois a função costuma ser boa.\n- Graus **3 e 4**, com limitação funcional ou deformidade estética importante: **cirurgia**, idealmente entre **3 e 8 anos**.\n  - **Woodward**: desinserção dos músculos da linha média e reinserção mais baixa.\n  - **Green**: liberação dos músculos na escápula, com descida e rotação.\n  - Em ambas, faz-se a **ressecção do osso omovertebral** e da porção superomedial da escápula.\n- Para proteger o **plexo braquial** ao abaixar a escápula, muitos associam a **osteotomia da clavícula**.",
-  "correta": "**Correta: B (1).** No escore de Cavendish para a deformidade de Sprengel, o **grau 1** (muito leve) corresponde aos ombros nivelados e à **ausência de deformidade visível com o paciente vestido**.",
+  "conceito": "O escore de CAVENDISH é uma régua clínica: olha-se a criança e pergunta-se quanto o ombro sobe e se a deformidade aparece por cima da roupa.\n\n**Os quatro graus** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, Tabela 12.7, p. 344; Campbell's Operative Orthopaedics, 15ª ed., cap. 33, Tabela 33.1, p. 1175):\n- **grau 1, muito leve**: ombros nivelados, deformidade **invisível com a criança vestida**;\n- **grau 2, leve**: ombros nivelados ou quase, deformidade **visível vestida**, como um nódulo na prega do pescoço;\n- **grau 3, moderado**: ombro elevado **2 a 5 cm**, deformidade claramente visível;\n- **grau 4, grave**: ombro elevado **mais de 5 cm**, ângulo superior da escápula perto do occipital, às vezes com pescoço alado.\n\n**Para que serve.** O escore gradua a gravidade e mede o resultado depois da cirurgia. A operação é defendida nos graus 3 e 4; nos casos com pouca limitação e pouca deformidade, basta ressecar o ângulo superomedial e o omovertebral (T, p. 343). O Campbell acrescenta a classificação radiográfica de RIGAULT, pela altura do ângulo superomedial em relação às vértebras.\n\n**A chave da questão.** \"Não se vê vestido\" é o que separa o grau 1 do 2; a escala começa no 1.\n\nO escore está na seção \"Classificações: CAVENDISH (clínica) e RIGAULT (radiográfica)\" do resumo.",
+  "correta": "**B) 1.** Grau 1 é o muito leve: ombros nivelados e deformidade que não aparece com a criança vestida.",
   "incorretas": {
-   "A": "A classificação de Cavendish **não tem grau 0**. Ela começa no grau 1, o mais leve.",
-   "C": "No **grau 2**, os ombros estão quase nivelados, mas a deformidade é **visível com o paciente vestido**, como um volume na base do pescoço.",
-   "D": "No **grau 3**, o ombro está elevado de 2 a 5 cm e a deformidade é facilmente visível."
+   "A": "**Grau 0** não existe no escore de CAVENDISH, que começa no grau 1.",
+   "C": "**Grau 2** já é visível com a criança vestida, em geral como um volume na prega do pescoço.",
+   "D": "**Grau 3** tem ombro elevado de 2 a 5 cm, deformidade evidente, longe de ficar escondida pela roupa."
   },
   "referencias": [
-   "Surgical Treatment of Sprengel's Deformity: A Systematic Review and Meta-Analysis. PMCID: PMC8700527.",
-   "Cavendish ME. Congenital elevation of the scapula. J Bone Joint Surg Br. 1972.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, Tabela 12.7, p. 343 e 344",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, Tabela 33.1, p. 1175",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0348": {
@@ -4800,33 +4829,35 @@
   "conferido": false
  },
  "pediatria-0358": {
-  "conceito": "**A luxação congênita do joelho.** É rara. O recém-nascido nasce com o joelho em **hiperextensão** (recurvato), às vezes com o pé encostando na face. O espectro vai de uma simples hiperextensão até a **luxação anterior** completa da tíbia sobre o fêmur.\n\n**A classificação em graus.**\n\n| Grau | Situação |\n|---|---|\n| 1 | **Hiperextensão** (recurvato) simples; flexão passiva possível |\n| 2 | **Subluxação** anterior da tíbia |\n| 3 | **Luxação** completa: tíbia à frente do fêmur, sem contato articular |\n\n**O que mantém o joelho em hiperextensão.**\n- O **quadríceps** está **encurtado e fibrótico**, às vezes aderido ao fêmur. É a principal estrutura que impede a flexão.\n- A **cápsula anterior** está contraída.\n- Os **isquiotibiais** se **deslocam para a frente** do eixo de rotação do joelho, passando a funcionar como **extensores**, o que piora a deformidade.\n- O **LCA** pode ser hipoplásico ou ausente.\n\n**As causas.** Posição intrauterina (apresentação pélvica com as pernas estendidas, oligoâmnio), **frouxidão ligamentar** e síndromes (**Larsen**, artrogripose, mielomeningocele).\n\n**As associações: examine o quadril e os pés.**\n- **Displasia do desenvolvimento do quadril**: muito frequente, em boa parte dos casos.\n- **Pé torto** congênito ou pé calcaneovalgo.\n- Luxação do cotovelo, na síndrome de Larsen.\n\n**O tratamento.** Começa logo após o nascimento.\n1. **Manipulação e gessos seriados** em flexão progressiva, ou suspensório de Pavlik nos graus leves. Os graus 1 e 2 costumam responder.\n2. Se a flexão não ultrapassar cerca de **30 a 90°** em algumas semanas, ou no grau 3: **quadricepsplastia** (alongamento em V-Y do quadríceps) com liberação capsular anterior, idealmente nos primeiros meses de vida.\n3. **A ordem importa**: o **joelho é tratado antes do quadril**. O suspensório de Pavlik para a DDQ exige um joelho que flexione, porque os isquiotibiais tensos em extensão impedem a flexão do quadril.\n\nO prognóstico é bom nos graus leves tratados cedo. É pior nas formas sindrômicas, como a artrogripose e a síndrome de Larsen.",
-  "correta": "**Correta: C (quadril e pé torto congênito).** A luxação congênita do joelho está frequentemente associada à **displasia ou luxação do quadril** e ao **pé torto congênito** (deformidades de \"aperto\" intrauterino e de frouxidão ligamentar). Por isso, o quadril e os pés devem ser examinados em todo recém-nascido com o joelho em hiperextensão.",
+  "conceito": "O bebê com joelho luxado de nascença quase nunca tem só o joelho errado. A prova cobra as duas companhias mais frequentes, ambas no mesmo membro.\n\n**Os números** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18, p. 630). A **luxação ipsilateral do quadril** aparece em cerca de **70%**, e o **pé torto** em cerca de **50%**. A luxação **bilateral** do joelho é quase sempre sindrômica: LARSEN, BEALS, EHLERS-DANLOS. A flexão do quadril no útero, com joelho estendido, deve fazer suspeitar do quadril luxado.\n\n**Por que isso muda o plano.** Com quadril e joelho luxados juntos, o Campbell's Operative Orthopaedics, 15ª ed., cap. 31 aconselha corrigir **o joelho primeiro** (p. 1080): o quadril só pode ser reduzido e mantido em flexão quando o joelho deixa de estar travado em hiperextensão. Por isso o quadril é examinado em todo joelho congênito.\n\n**O que a patela tem a ver.** Nada, na lista do livro: o quadríceps fibrótico e encurtado é o achado constante, mas a associação descrita é com o quadril, não com luxação da patela.\n\nAs associações estão na seção \"Hiperextensão e luxação congênita do joelho\" do resumo.",
+  "correta": "**C) quadril e pé torto congênito.** O quadril ipsilateral está luxado em cerca de 70% e o pé torto aparece em cerca de 50%.",
   "incorretas": {
-   "A": "A luxação do quadril está certa, mas a deformidade do pé mais associada é o **pé torto**, e não o tálus vertical (que se associa mais a síndromes e à artrogripose).",
-   "B": "A **luxação da patela** não é a associação típica da luxação congênita do joelho, e o pé mais associado é o pé torto.",
-   "D": "O pé torto está certo, mas a associação mais importante é com o **quadril**, e não com a patela."
+   "A": "**Quadril e talo vertical** acerta o quadril, mas o pé descrito na associação é o pé torto.",
+   "B": "**Patela e talo vertical** erra as duas associações citadas pelo Tachdjian.",
+   "D": "**Patela e pé torto** acerta o pé, mas a outra luxação frequente é a do quadril."
   },
   "referencias": [
-   "Ellsworth B, Dawkins B, Hidalgo Perea S, Green D. Management of Congenital Dislocation of the Knee: Current Concept Review. JPOSNA. 2021;3(3). DOI: 10.55275/JPOSNA-2021-272.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 18, p. 630 a 633",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1080",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0359": {
-  "conceito": "Macrodactilia é o crescimento excessivo de um ou mais dedos, envolvendo proporções variáveis de osso, gordura, pele, nervos e outros tecidos. Não é simplesmente um dedo edemaciado: trata-se de uma alteração de desenvolvimento que pode aumentar comprimento e largura e mudar alinhamento e mobilidade. Alguns casos integram o espectro de crescimento relacionado a mutações somáticas ativadoras de PIK3CA, presentes em mosaico, isto é, apenas em parte das células.\n\nO padrão pode ser estático, crescendo aproximadamente em proporção ao restante do membro, ou progressivo, aumentando de forma desproporcional. O tecido fibrogorduroso está aumentado, e o esqueleto do raio também pode crescer excessivamente. A frase da alternativa D descreve essa associação; não demonstra que toda a fisiopatologia se resuma a gordura empurrando o osso.\n\nA função pode ser prejudicada por rigidez, deformidade, dificuldade de preensão ou de calçar. Planejamento considera crescimento, alinhamento, sensibilidade e necessidades do paciente. Redução de partes moles, procedimentos ósseos e outras estratégias são individualizados, e recidiva/crescimento persistente podem exigir novas intervenções. O gabarito oficial resolve o erro antigo de cadastro: D, e não a afirmação de diminuição de tecido fibrogorduroso.",
-  "correta": "O osso pode aumentar em comprimento e largura em associação com crescimento excessivo fibrogorduroso, a descrição correta do gabarito. A interpretação deve reconhecer envolvimento de vários tecidos e mecanismos de crescimento, sem reduzir todo caso a uma única causa. Essa alternativa substitui a resposta C que estava cadastrada incorretamente.",
+  "conceito": "Macrodactilia é o dedo gigante: não só a pele e a gordura crescem demais, mas o próprio esqueleto do dedo. A questão quer saber o que de fato aumenta e por quê isso não é problema só de aparência.\n\n**O que é.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 85 (p. 3694 e 3695) a define como anomalia rara, **0,9%** das anomalias da mão, com **aumento fibrogorduroso** do dedo; o **indicador** é o mais acometido, é **geralmente unilateral**, e os nervos do território são caracteristicamente aumentados. A forma estática cresce na proporção da mão; a progressiva cresce rápido na primeira infância e costuma desviar.\n\n**O osso também cresce.** No pé, o Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (p. 780 e 781) descreve hiperplasia das partes moles **e dos ossos**, com radiografia mostrando **aumento do comprimento e da largura** dos ossos acometidos, e metatarso envolvido em mais da metade.\n\n**A classificação de FLATT** (C, Tabela 85.17, p. 3695). Tipo I, lipofibromatose, a mais comum; II, neurofibromatose, muitas vezes bilateral; III, hiperostose digital, muito rara; IV, hemi-hipertrofia.\n\n**Não é estética.** O dedo perde movimento, comprime nervos (túnel do carpo) e faz úlceras tróficas; não há método não cirúrgico eficaz (C, p. 3695).\n\nO tema está na seção \"Macrodactilia\" do resumo.",
+  "correta": "**D) o osso é aumentado em comprimento e largura devido ao excessivo crescimento de tecido fibrogorduroso.** Partes moles fibrogordurosas e ossos crescem juntos, em comprimento e largura.",
   "incorretas": {
-   "A": "Macrodactilia pode acometer mão ou pé e pode ocorrer bilateralmente, mas a frase afirma um predomínio bilateral nos pés que não caracteriza universalmente a entidade. Muitos casos são unilaterais e envolvem raios específicos. A distribuição varia e deve ser descrita no paciente, sem inferir um padrão obrigatório.",
-   "B": "O tratamento tem objetivos funcionais além dos estéticos. Um dedo muito grande pode tornar a preensão difícil, restringir movimento ou impedir calçar adequadamente. Aspecto visual também importa, mas dizer que a função não é afetada ignora consequências mecânicas e neurológicas do crescimento excessivo.",
-   "C": "O achado é aumento de tecido fibrogorduroso, não diminuição. A opção também atribui a condição a osteoclastos, células de reabsorção, sem fundamento para essa explicação causal. Ela contradiz o padrão de crescimento ósseo e de partes moles documentado nas séries e estudos moleculares."
+   "A": "**Pé e bilateral** contraria a descrição do Campbell: a macrodactilia é geralmente unilateral, e o indicador da mão é o local mais citado.",
+   "B": "**Tratamento só estético** ignora a rigidez, a compressão nervosa e as úlceras que o dedo gigante produz.",
+   "C": "**Diminuição do tecido fibrogorduroso** inverte a doença, que é justamente o excesso desse tecido; não há base para os osteoclastos."
   },
   "referencias": [
-   "Somatic gain-of-function mutations in PIK3CA in patients with macrodactyly. https://pmc.ncbi.nlm.nih.gov/articles/PMC3542862/",
-   "Congenital macrodactyly: a clinical study. https://pubmed.ncbi.nlm.nih.gov/16184993/"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 85, p. 3694 e 3695",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19, p. 780 e 781",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-07",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0360": {
@@ -6159,18 +6190,20 @@
   "conferido": false
  },
  "pediatria-0446": {
-  "conceito": "**A sinostose radioulnar congênita.** É a **fusão** entre o rádio e a ulna, quase sempre **proximal**, que bloqueia a pronossupinação. Resulta da falha da **separação** (segmentação) do rádio e da ulna no período embrionário, quando o antebraço ainda está em uma posição de **pronação**. O antebraço fica **fixo em pronação** (em geral entre neutro e 60° de pronação; às vezes mais). É **bilateral** em cerca de 60% dos casos e pode se associar a síndromes (como alterações dos cromossomos sexuais, Apert, artrogripose).\n\n**A embriologia.** O rádio e a ulna começam como um **molde cartilaginoso único** no broto do membro. Ao mesmo tempo que eles se separam (por volta da 7ª semana), o membro superior **roda** (o membro superior roda **lateralmente**, levando o polegar para fora). Se a separação falha **antes** dessa rotação, o antebraço fica preso na posição fetal, em **pronação**.\n\n**A classificação de Cleary e Omer.**\n| Tipo | Descrição |\n|---|---|\n| I | Sinostose **fibrosa**, cabeça do rádio reduzida |\n| II | Sinostose **óssea**, cabeça do rádio reduzida |\n| III | Sinostose óssea com cabeça do rádio **luxada posteriormente** (hipoplásica) |\n| IV | Sinostose curta com cabeça do rádio luxada **anteriormente** |\n\n**O quadro.** Muitas vezes é percebida tarde (idade escolar), porque o ombro e o punho **compensam** a falta de rotação. A dificuldade aparece em atividades que exigem **supinação** (receber troco, levar comida à boca, segurar objetos com a palma para cima).\n\n**O tratamento.** A ressecção da ponte óssea **falha** (refusão). Se a pronação fixa é grande e atrapalha a função (geralmente mais de 60°), faz-se a **osteotomia derrotativa** através da sinostose, posicionando o antebraço em posição funcional: em geral **neutra** a leve pronação no lado dominante, e leve supinação no outro, nos casos bilaterais. Cuidado com a síndrome compartimental e a lesão neurovascular nas correções grandes.",
-  "correta": "**Correta: D (lateral do membro, originando deformidade em pronação do antebraço fetal).** A falha da separação entre rádio e ulna antes da rotação lateral do membro deixa o antebraço fixo na posição fetal, em pronação.",
+  "conceito": "A pergunta vai à embriologia: em que momento do desenvolvimento a falha de separação fixa o antebraço, e em qual postura.\n\n**A rotação dos membros.** Na **7ª semana**, os membros giram: o superior **90° lateralmente**, levando o polegar para fora, e o inferior **90° medialmente**, levando o hálux para dentro (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 873 e 874).\n\n**A falha.** Cerca de 5 semanas após a concepção, rádio e ulna ainda dividem um pericôndrio comum no cotovelo em formação. Os ossos se separam num momento em que o **antebraço fetal está em pronação**; se a cavitação falha, a ponte óssea congela essa posição (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 347). A sequência é: a separação falha antes da rotação lateral do membro superior, e o antebraço fica preso na pronação fetal.\n\n**Consequência clínica.** É por isso que praticamente todas as sinostoses ficam em pronação. A cirurgia, quando indicada (pronação acima de 60° com queixa funcional), é a osteotomia derrotativa; ressecar a ponte não devolve a rotação (Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1184.e1).\n\n**A armadilha.** A rotação medial é a do membro inferior; para o superior, a rotação é lateral.\n\nA rotação está nas seções \"Os segmentos e a rotação\" e \"Por que sempre em pronação\" do resumo.",
+  "correta": "**D) Lateral do membro, originando deformidade em pronação do antebraço fetal.** A fusão ocorre antes da rotação lateral de 90° do membro superior e congela a pronação fetal.",
   "incorretas": {
-   "A": "A deformidade em pronação está certa, mas a rotação do membro superior no desenvolvimento é **lateral**.",
-   "B": "A rotação é lateral, e o antebraço fica em **pronação**, e não em supinação.",
-   "C": "A rotação lateral está certa, mas o antebraço fica fixo em **pronação**."
+   "A": "**Rotação medial com pronação** acerta a postura, mas a rotação medial de 90° é a do membro inferior.",
+   "B": "**Rotação medial com supinação** erra a rotação e a postura fixa.",
+   "C": "**Rotação lateral com supinação** acerta a rotação, mas o antebraço fetal estava pronado quando a separação falhou."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de afecções congênitas do membro superior.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo do cotovelo e do antebraço."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 873 e 874",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 347",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1184.e1",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0447": {
@@ -6257,18 +6290,20 @@
   "conferido": false
  },
  "pediatria-0453": {
-  "conceito": "**A imagem.** O desenho mostra a **cabeça femoral presente**, alojada num **acetábulo** razoável, e um **fêmur curto**, cuja extremidade proximal é **afilada**. Entre a cabeça e a diáfise **não há conexão óssea**: existe um espaço (que, no paciente, é ocupado por cartilagem ou tecido fibroso). Esse é o tipo **B** de Aitken.\n\n**A deficiência femoral focal proximal (DFFP).** Faz parte do espectro das **deficiências longitudinais congênitas do fêmur**, que vai do fêmur curto congênito, com quadril normal, até a quase ausência do fêmur proximal. Geralmente é **unilateral**.\n\n**Como a criança se apresenta.**\n- Coxa **muito curta e volumosa**.\n- Quadril em **flexão, abdução e rotação externa**.\n- Pé geralmente na altura do joelho contralateral.\n\n**Associações frequentes.** **Hemimelia fibular** em cerca de metade dos casos, **deficiência do LCA** e pé com raios ausentes.\n\n**A classificação de Aitken.** Separa os tipos pela presença da **cabeça femoral**, pelo **acetábulo** e pela existência de uma **conexão óssea** entre a cabeça e a diáfise na maturidade.\n\n| Tipo | Cabeça e acetábulo | Conexão cabeça-diáfise |\n|---|---|---|\n| **A** | Cabeça presente; acetábulo **normal** | Defeito subtrocantérico que **ossifica**, deixando coxa vara |\n| **B** | Cabeça presente; acetábulo adequado ou levemente displásico | **Não ossifica**: **pseudoartrose** persistente no colo |\n| **C** | Cabeça **ausente** ou só um ossículo; acetábulo muito displásico | Sem articulação útil |\n| **D** | Cabeça e acetábulo **ausentes**; fêmur muito curto | Sem articulação |\n\n**Como raciocinar.** Nos tipos A e B **existe** uma cabeça dentro de um acetábulo, e por isso existe um quadril potencial. A diferença está no que acontece entre a cabeça e a diáfise. No **A**, a falha cartilaginosa acaba ossificando, e sobra uma coxa vara grave. No **B**, a falha persiste como **pseudoartrose** do colo. Nos tipos C e D, **não há** quadril para reconstruir.\n\n**Implicações no tratamento.**\n- Nos tipos **A e B**, pode-se pensar em estabilizar o quadril e, em casos selecionados, em alongamento.\n- Nos tipos **C e D**, com o membro muito curto, a regra é a **adaptação protética**. Ela pode ser associada à **artrodese do joelho** com amputação de Syme, ou à **rotacionplastia de Van Nes**, em que o tornozelo girado 180° passa a funcionar como joelho.\n- O **cálculo da discrepância final** dos membros orienta se o caso é de alongamento ou de prótese.",
-  "correta": "**Correta: B (B).** A imagem mostra a cabeça femoral presente num acetábulo adequado e um fêmur curto **sem conexão óssea** com a cabeça. É o tipo **B** de Aitken, em que persiste uma pseudoartrose no colo na maturidade.",
+  "conceito": "A classificação de AITKEN da deficiência femoral focal proximal responde a três perguntas, em ordem: existe cabeça femoral? o acetábulo é bom? e, na maturidade, a cabeça se liga ao fêmur por osso?\n\n**A imagem.** Desenho do quadril em vista frontal. À direita, a **cabeça femoral** aparece encaixada num **acetábulo bem formado** na pelve. À esquerda e abaixo, a **diáfise femoral curta** termina em cima numa extremidade arredondada, como um tufo. Entre essa ponta da diáfise e a cabeça não há osso: só o contorno tracejado de uma ligação não ossificada. Abaixo, a linha do joelho e o início da tíbia.\n\n**O AITKEN** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 884; Campbell's Operative Orthopaedics, 15ª ed., cap. 31, Tabela 31.4, p. 1093):\n- **A**: cabeça presente, acetábulo bom; o defeito ossifica e une com varo subtrocantérico;\n- **B**: cabeça presente (pode não estar ossificada ao nascer), acetábulo bom, **sem continuidade óssea entre cabeça e diáfise** na maturidade, com tufo no fêmur proximal;\n- **C**: cabeça ausente, acetábulo displásico ou ausente, tufo ossificado separado;\n- **D**: sem cabeça e sem acetábulo, fêmur muito curto, sem tufo.\n\n**Lendo o desenho.** Cabeça e acetábulo presentes eliminam C e D; a falta de ponte óssea entre cabeça e diáfise afasta o A, que une em varo. Fica o B.\n\nA classificação está na seção \"Deficiência femoral focal proximal (DFFP)\" do resumo.",
+  "correta": "**B) B.** Cabeça femoral e acetábulo presentes, sem ligação óssea entre a cabeça e a diáfise curta.",
   "incorretas": {
-   "A": "No tipo **A**, a cabeça e o acetábulo são normais e o defeito subtrocantérico **ossifica**, unindo a cabeça à diáfise com coxa vara. Na imagem, não há essa ponte óssea.",
-   "C": "No tipo **C**, a cabeça femoral está **ausente** ou é apenas um ossículo, e o acetábulo é muito displásico. Na imagem, a cabeça está presente no acetábulo.",
-   "D": "No tipo **D**, a cabeça e o acetábulo estão **ausentes** e o fêmur é muito curto. Na imagem, existem cabeça e acetábulo."
+   "A": "**Tipo A** tem cabeça e acetábulo, como o desenho, mas o defeito ossifica e une a cabeça à diáfise em varo.",
+   "C": "**Tipo C** não tem cabeça femoral e o acetábulo é displásico; no desenho a cabeça está no acetábulo.",
+   "D": "**Tipo D** é o fêmur muito curto, sem cabeça, sem acetábulo e sem tufo, longe da imagem."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 884",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, Tabela 31.4, p. 1093",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "A resposta depende da leitura da figura; o texto conferido do Tachdjian's Pediatric Orthopaedics, 6ª ed., e do Campbell's Operative Orthopaedics, 15ª ed., sustenta a definição do tipo B (cabeça e acetábulo presentes, sem ligação óssea com a diáfise), mas não a imagem em si.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0454": {
@@ -6503,18 +6538,20 @@
   "conferido": false
  },
  "pediatria-0473": {
-  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**. Durante a vida embrionária, a escápula se forma na região cervical (no nível de C4 a C6) e **desce** para a sua posição torácica (entre T2 e T7) entre a 9ª e a 12ª semana. Na deformidade de Sprengel, essa descida é incompleta: a escápula fica **alta, pequena, mais larga que alta e rodada**, com o ângulo inferior apontando para medial.\n\n**O osso omovertebral.** É uma **ponte** entre o ângulo superomedial da escápula e os processos espinhosos, as lâminas ou os processos transversos da coluna cervical (geralmente C4 a C7). Pode ser óssea, cartilaginosa ou fibrosa. Está presente em cerca de **um terço** dos pacientes (25 a 50% nas séries). Quando existe, prende a escápula e piora muito a limitação de movimento.\n\n**Quadro clínico.**\n- Assimetria do pescoço e dos ombros, com o ombro acometido mais alto.\n- Limitação principalmente da **abdução e da flexão** do ombro, porque a escápula não roda sobre o tórax.\n- Geralmente unilateral, mais à esquerda.\n\n**Associações frequentes.** Síndrome de **Klippel-Feil**, escoliose congênita, anomalias de costelas, espinha bífida, hipoplasia de clavícula e anomalias renais.\n\n**A classificação de Cavendish (estética).** Grau 1 (muito leve, ombros no mesmo nível) a grau 4 (escápula muito alta, com o ângulo superior perto do occipital).\n\n**Tratamento.** Formas leves: observação e fisioterapia. Formas moderadas ou graves com limitação funcional ou deformidade estética importante: cirurgia entre **3 e 8 anos**, com ressecção do osso omovertebral e da parte supraespinal da escápula, e abaixamento da escápula (técnicas de **Woodward** ou de **Green**). O risco principal é a **lesão do plexo braquial** pela tração no abaixamento; muitos cirurgiões associam osteotomia da clavícula para protegê-lo.",
-  "correta": "**Correta: C (1/3).** O osso omovertebral, ponte entre a escápula e a coluna cervical, está presente em cerca de **um terço** dos pacientes com deformidade de Sprengel.",
+  "conceito": "O osso omovertebral é a ponte anômala que prende o ângulo superior da escápula à coluna cervical, e a prova quer a sua frequência. É um número em que os livros não concordam, e vale saber de onde vem cada um.\n\n**O que é o osso.** Uma placa romboide de cartilagem e osso, dentro de uma bainha fascial, que vai do ângulo superior da escápula ao processo espinhoso, à lâmina ou ao processo transverso das vértebras cervicais baixas (Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1174). Ele contribui para fixar a escápula e, portanto, para a perda da abdução.\n\n**Os números.** O texto do Campbell's Operative Orthopaedics, 15ª ed., cap. 33 diz que o omovertebral está presente em **cerca de um terço** dos pacientes (p. 1174). O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12 dá uma faixa larga, de **16% a 55%** (p. 343), e a tabela de CAVENDISH reproduzida no Campbell anota cerca de 50% (Tabela 33.1, p. 1175). A resposta da banca segue o texto do Campbell.\n\n**Por que importa na cirurgia.** No WOODWARD, o omovertebral é ressecado por via extraperiosteal, e nos casos leves basta ressecá-lo junto com o ângulo superomedial (C, p. 1175 a 1177; T, p. 343).\n\nO omovertebral está na seção \"O que é e por que limita o ombro\" do resumo.",
+  "correta": "**C) 1/3.** É a frequência que o texto do Campbell's Operative Orthopaedics, 15ª ed., atribui ao osso omovertebral.",
   "incorretas": {
-   "A": "Não está presente em **todos**: a maioria dos pacientes tem a escápula elevada sem ponte óssea com a coluna.",
-   "B": "**Metade** superestima a frequência citada classicamente, embora algumas séries cheguem perto desse valor.",
-   "D": "**Um sexto** subestima a frequência do osso omovertebral."
+   "A": "**Todos** transformaria o omovertebral em critério diagnóstico; ele falta na maioria dos pacientes pelas três fontes.",
+   "B": "**Metade** corresponde à anotação da tabela de CAVENDISH e ao teto da faixa do Tachdjian, mas o texto do Campbell fala em um terço.",
+   "D": "**Um sexto** fica no limite inferior da faixa do Tachdjian (16%), não é a frequência usual citada."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
-   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1174 e Tabela 33.1, p. 1175",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 343",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "A frequência do osso omovertebral varia entre as fontes: o Tachdjian's Pediatric Orthopaedics, 6ª ed., dá 16% a 55%, e a tabela de CAVENDISH do Campbell's Operative Orthopaedics, 15ª ed., cerca de 50%. O \"um terço\" do gabarito está no texto do Campbell, cap. 33, p. 1174.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0474": {
@@ -6852,33 +6889,34 @@
   "conferido": false
  },
  "pediatria-0494": {
-  "conceito": "**A sinostose radioulnar congênita.** É a **fusão** do rádio com a ulna, geralmente **proximal**, por falha da separação dos dois ossos durante a vida embrionária (eles começam como um molde cartilaginoso comum). É **bilateral** em cerca de 60% dos casos e pode se associar a síndromes, como as aneuploidias do cromossomo X.\n\n**O quadro clínico.** O antebraço fica **travado em pronação**, sem rotação, com graus variáveis (de neutro a mais de 60° de pronação). A flexão e a extensão do cotovelo costumam ser **normais**. Muitas crianças compensam bem com o ombro e o punho e o diagnóstico é tardio, quando os pais notam que a criança pega objetos com a palma para baixo ou não consegue receber troco na mão.\n\n**Quando operar.** A sinostose **não pode ser desfeita** com bons resultados: a ressecção da ponte óssea quase sempre recidiva. A cirurgia é uma **osteotomia derrotatória**, que muda a posição fixa do antebraço para uma posição mais **funcional**. Ela é indicada quando a **pronação fixa é acentuada** (geralmente acima de 60°) e causa limitação funcional.\n\n**A posição-alvo.**\n- **Unilateral**: perto do **neutro** ou em leve pronação (cerca de 10 a 20°).\n- **Bilateral**: o lado **dominante** em leve pronação, para escrever e digitar; o outro mais próximo do neutro, para atividades da vida diária. As recomendações variam entre os autores.\n\n**As complicações da derrotação.**\n\n| Complicação | Mecanismo |\n|---|---|\n| **Síndrome compartimental** | Edema após a rotação aguda num compartimento apertado |\n| **Comprometimento vascular** | Torção e estiramento das artérias radial e ulnar |\n| **Paresia nervosa** (interósseo posterior, radial, ulnar) | Estiramento pela rotação |\n| Perda da correção, pseudoartrose | Menos frequentes |\n\n**Como reduzi-las.** Limitar a **magnitude** da rotação aguda e corrigir grandes deformidades **gradualmente** ou em dois tempos. Fazer a osteotomia no local da sinostose ou na diáfise do rádio e da ulna, com encurtamento se necessário. Considerar a **fasciotomia** profilática e monitorar de perto o pós-operatório.\n\n**A questão do \"mais frequente\".** A síndrome compartimental e o comprometimento vascular são as complicações **clássicas e mais temidas** da rotação aguda, e por isso a alternativa D é a provável resposta. Algumas revisões mais recentes, porém, relatam a paresia nervosa com frequência semelhante ou maior. Por isso, esta questão é discutível.",
-  "correta": "**Correta: C (pronação e no terço proximal).** Na sinostose radioulnar congênita, o antebraço fica fixo em **pronação**, e a fusão entre o rádio e a ulna ocorre com mais frequência no **terço proximal**, perto do cotovelo.",
+  "conceito": "A sinostose radioulnar congênita tem endereço e postura fixos, e a embriologia explica os dois.\n\n**Por que proximal.** Cerca de **5 semanas** após a concepção, o cotovelo se forma de três condensações cartilaginosas (úmero, rádio e ulna) que dividem um pericôndrio comum. A cavitação deveria separá-las; se falha, a ossificação endocondral produz uma ponte entre rádio e ulna justamente onde estavam juntos, na **extremidade proximal** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 347). A radiografia mostra a coalescência proximal; a sinostose extensa até o antebraço distal é ocasional e, na experiência dos autores, ligada à HOLT-ORAM (p. 348). O Campbell's Operative Orthopaedics, 15ª ed., cap. 33 confirma o envolvimento das extremidades proximais (p. 1184.e1).\n\n**Por que em pronação.** Os ossos se separam num momento em que o **antebraço fetal está em pronação**; a fusão congela essa posição antes que o membro complete a rotação lateral da 7ª semana. Praticamente todas ficam **fixas em pronação** (T, p. 347).\n\n**Os números.** Bilateral em 80%, meninos 3:2, diagnóstico entre 3 e 6 anos porque o carpo compensa; 40% com menos de 30° de pronação e 40% com mais de 60° (T, p. 347).\n\nA embriologia está na seção \"Por que sempre em pronação\" do resumo.",
+  "correta": "**C) pronação e no terço proximal.** A ponte nasce onde rádio e ulna dividiam o pericôndrio, no cotovelo, e congela o antebraço fetal pronado.",
   "incorretas": {
-   "A": "A pronação está certa, mas a sinostose congênita é tipicamente **proximal**. As sinostoses distais são raras.",
-   "B": "O antebraço fica em **pronação**, e não em supinação, e a sinostose é proximal.",
-   "D": "A sinostose é proximal, mas o antebraço fica fixo em **pronação**."
+   "A": "**Pronação no terço distal** acerta a postura, mas a fusão distal extensa é ocasional, lembrando HOLT-ORAM.",
+   "B": "**Supinação no terço distal** erra os dois dados: posição e local.",
+   "D": "**Supinação no terço proximal** acerta o local, mas a sinostose congela a pronação fetal, não a supinação."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 347 e 348",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1184.e1",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0495": {
-  "conceito": "**Como o membro é construído.** O membro surge como um **broto** na parede lateral do embrião, por volta da quarta semana (o superior um pouco antes do inferior). Ele cresce no sentido **proximal para distal**, comandado pela **crista ectodérmica apical** na ponta do broto. Os segmentos se formam um depois do outro, do mais próximo do tronco ao mais distante.\n\n**Os segmentos do membro (nomenclatura embriológica).**\n\n| Segmento | Membro superior | Membro inferior |\n|---|---|---|\n| **Zonoesqueleto** (cinturas) | Escápula e clavícula | Pelve (ilíaco, ísquio, púbis) |\n| **Estilopódio** | **Úmero** | Fêmur |\n| **Zeugopódio** | **Rádio e ulna** | Tíbia e fíbula |\n| **Autopódio** | Mão (carpo, metacarpos, falanges) | Pé |\n\n**As articulações ficam entre os segmentos.**\n- **Ombro** (e quadril): entre o zonoesqueleto e o estilopódio.\n- **Cotovelo** (e joelho): entre o **estilopódio** (úmero) e o **zeugopódio** (rádio e ulna).\n- **Punho** (e tornozelo): entre o zeugopódio e o autopódio.\n\n**Por que isso importa: as deficiências congênitas.** Os mesmos nomes descrevem as malformações.\n- **Focomelia**: ausência dos segmentos intermediários (estilopódio e zeugopódio), com a mão ou o pé ligado diretamente ao tronco. É o exemplo clássico da **talidomida**.\n- **Deficiências longitudinais**: acometem um lado do eixo, como a deficiência radial (pré-axial), a hemimelia fibular e a DFFP.\n- **Deficiências transversas**: ausência de tudo distal a um ponto, como uma \"amputação congênita\".\n\n**Os eixos de sinalização.** O crescimento proximal-distal depende da crista ectodérmica apical. O eixo anteroposterior (do polegar ao dedo mínimo) depende da **zona de atividade polarizante**, via **Sonic hedgehog**. O eixo dorsoventral depende da via **Wnt7a**.",
-  "correta": "**Correta: B (stylopodium e zeugopodium).** O cotovelo se forma entre o **estilopódio** (úmero) e o **zeugopódio** (rádio e ulna), assim como o joelho se forma entre o fêmur e a tíbia com a fíbula.",
+  "conceito": "A questão pede o vocabulário embriológico dos segmentos do membro, que parece grego mas tem uma lógica simples: conta-se o número de ossos de cada andar.\n\n**Os quatro segmentos** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 873). O membro tem uma **raiz**, o **zonoskeleton** (a cintura escapular ou pélvica); um **segmento proximal com um osso**, o **stylopodium**; um **segmento médio com dois ossos**, o **zeugopodium**; e uma **parte distal com muitos ossos**, o **autopodium**. No membro superior, isso dá: cintura escapular, úmero, rádio com ulna e mão.\n\n**Onde ficam as articulações.** Cada articulação é a fronteira entre dois andares vizinhos. O ombro une zonoskeleton e stylopodium; o **cotovelo une o úmero (stylopodium) ao rádio e à ulna (zeugopodium)**; o punho une zeugopodium e autopodium.\n\n**Por que o broto cresce nessa ordem.** A crista ectodérmica apical, mantida pelos fatores de crescimento fibroblástico (sobretudo o FGF8), distaliza o membro, e o ácido retinoico o proximaliza; os dois sinais delimitam braço, antebraço e mão (p. 873). Com 6 semanas surgem as placas da mão, na 7ª semana o membro superior gira 90° lateralmente e na 8ª semana todos os segmentos estão completos (p. 873 e 874).\n\nOs segmentos estão na seção \"Os segmentos e a rotação\" do resumo.",
+  "correta": "**B) stylopodium e zeugopodium.** O úmero é o segmento de um osso (stylopodium); rádio e ulna formam o de dois ossos (zeugopodium); entre eles está o cotovelo.",
   "incorretas": {
-   "A": "Entre o **zonoesqueleto** (cintura escapular) e o **estilopódio** (úmero) forma-se o **ombro**, e não o cotovelo.",
-   "C": "Entre o **zeugopódio** (rádio e ulna) e o **autopódio** (mão) forma-se o **punho**.",
-   "D": "O **zonoesqueleto** e o **autopódio** não são segmentos vizinhos: entre eles estão o estilopódio e o zeugopódio. Sua ligação direta corresponde à **focomelia**, e não a uma articulação normal."
+   "A": "**Zonoskeleton e stylopodium** é a fronteira entre a cintura escapular e o úmero: o ombro.",
+   "C": "**Zeugopodium e autopodium** separam o antebraço da mão: é o punho.",
+   "D": "**Zonoskeleton e autopodium** não são vizinhos; entre a cintura e a mão estão o braço e o antebraço inteiros."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
-   "Moore KL, Persaud TVN, Torchia MG. The Developing Human: Clinically Oriented Embryology. Elsevier."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 873 e 874",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0496": {
@@ -6962,18 +7000,19 @@
   "conferido": false
  },
  "pediatria-0501": {
-  "conceito": "**A deformidade de Sprengel.** É a **elevação congênita da escápula**, que não desce da posição cervical para a torácica durante o desenvolvimento embrionário. A escápula fica **alta, pequena e rodada**, e em cerca de um terço dos casos há um **osso omovertebral** ligando-a à coluna cervical. A limitação principal é da **abdução** e da flexão do ombro.\n\n**Quando operar.** Nas formas moderadas a graves (Cavendish 3 e 4), com limitação funcional ou deformidade estética importante. A idade ideal para a cirurgia é entre **3 e 8 anos**.\n\n**As técnicas.**\n- **Woodward**: desinserção da origem do trapézio e dos romboides nos processos espinhosos, ressecção do osso omovertebral e da porção supraespinal da escápula, **abaixamento** da escápula e reinserção mais distal dos músculos.\n- **Green**: desinserção dos músculos da escápula, ressecção do omovertebral e da parte supraespinal, abaixamento e fixação da escápula em posição mais baixa.\n\n**O risco do abaixamento: o plexo braquial.** Ao puxar a escápula para baixo, a **clavícula** também desce e pode **comprimir o plexo braquial** contra a **primeira costela**. Esse risco aumenta com a **idade**, porque nas crianças maiores as estruturas são menos complacentes e o abaixamento necessário é maior.\n\n**A osteotomia da clavícula.** Para proteger o plexo, faz-se uma **osteotomia** (ou morcelização) de cerca de **2 cm** do **terço médio da clavícula**, que permite que ela se acomode sem comprimir o plexo. Ela é indicada preferencialmente nas crianças **mais velhas**, a partir de cerca de **8 anos**, em que o risco de lesão do plexo é maior. Nas crianças pequenas, a clavícula é mais flexível e a osteotomia geralmente não é necessária.\n\n**Outras complicações da cirurgia.** Cicatriz alargada, escápula alada, recidiva parcial da elevação, perda de abdução.",
-  "correta": "**Correta: D (8 anos).** A osteotomia de cerca de 2 cm do terço médio da clavícula, que protege o plexo braquial durante o abaixamento da escápula, é indicada preferencialmente a partir dos **8 anos**, quando as estruturas são menos complacentes e o risco de lesão do plexo é maior.",
+  "conceito": "Abaixar a escápula alta empurra a clavícula contra a primeira costela, e o plexo braquial fica espremido entre as duas. É por isso que a clavícula entra na cirurgia do SPRENGEL, e a pergunta é a idade em que ela passa a ser osteotomizada de rotina.\n\n**A complicação que se quer evitar.** A **paralisia do plexo braquial** é a complicação mais grave da correção, com taxas de 0% a 12,5% (Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1174 e 1175). O risco cresce com a idade e com o tamanho da descida.\n\n**A regra do Campbell** (p. 1177). **Acima de 8 anos**, faz-se uma **osteotomia de 2 cm no terço médio da clavícula** antes da ressecção escapular, para descomprimir o plexo e a primeira costela. Em crianças menores com deformidade grave, basta uma ressecção de 1 cm. Quando há risco de compressão neurovascular, a alternativa é a morcelação: dividir o osso a 2 cm de cada ponta, picar e devolver ao tubo periosteal. A neuromonitorização acompanha o procedimento.\n\n**O Tachdjian concorda no princípio.** Ele reserva a osteotomia da clavícula para deformidade grave e crianças maiores, justamente para evitar lesão do plexo (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 344), e lembra que os melhores resultados da cirurgia são antes dos 8 anos (p. 343).\n\nA clavícula está na seção \"A cirurgia: GREEN, WOODWARD, MEARS e a clavícula\" do resumo.",
+  "correta": "**D) 8 anos.** A partir dessa idade o Campbell indica a osteotomia de 2 cm no terço médio da clavícula para proteger o plexo.",
   "incorretas": {
-   "A": "Aos **2 anos**, a cirurgia raramente é feita e a clavícula é flexível; a osteotomia não é necessária.",
-   "B": "Aos **4 anos**, idade boa para a cirurgia, a clavícula ainda se acomoda bem, sem necessidade de osteotomia.",
-   "C": "Aos **6 anos**, o risco ainda é relativamente baixo; a indicação preferencial da osteotomia fica para crianças mais velhas."
+   "A": "**2 anos** é antes mesmo da idade ideal da cirurgia, por volta dos 3 anos; nessa faixa a clavícula raramente precisa ser cortada.",
+   "B": "**4 anos** cai no grupo dos menores, em que só a deformidade grave pede uma ressecção menor, de 1 cm.",
+   "C": "**6 anos** ainda está abaixo do corte do Campbell; a osteotomia de 2 cm de rotina começa acima dos 8."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
-   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 33, p. 1174 a 1177",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 343 e 344",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0502": {
@@ -10540,18 +10579,20 @@
   }
  },
  "pediatria-0653": {
-  "conceito": "**O sobrecrescimento ósseo do coto.** Na criança, a amputação **transdiafisária** (através da diáfise) tem uma complicação própria, o **sobrecrescimento ósseo** (overgrowth). A ponta do osso cortado continua formando osso novo por **aposição**, a partir do periósteo e do endósteo, e fica fina e pontiaguda. Com o tempo, ela tensiona e pode **furar a pele**, com dor, formação de bursa, úlcera e dificuldade para usar a prótese.\n\n**Não vem da fise.** O problema não é o crescimento longitudinal pela placa fisária. É a formação de osso na **extremidade cortada**. Por isso, ele **não ocorre nas desarticulações**, em que nenhum osso é cortado e a cartilagem articular cobre a extremidade.\n\n**A frequência por osso.**\n\n| Ordem | Osso |\n|---|---|\n| 1º | **Úmero** (o mais comum) |\n| 2º | Fíbula |\n| 3º | Tíbia |\n| 4º | Fêmur |\n\nO rádio e a ulna são acometidos com menos frequência.\n\n**Quem tem mais risco.** O risco é maior na **amputação adquirida** (traumática) do que na congênita e na criança **mais nova**, com mais crescimento pela frente. Ele diminui com a maturidade esquelética. Muitas crianças precisam de **mais de uma revisão** do coto ao longo do crescimento.\n\n**Como prevenir e tratar.**\n- **Preferir a desarticulação** à amputação transdiafisária quando ela for funcionalmente aceitável, como no joelho em vez da coxa. A desarticulação também preserva a fise distal do coto, que segue crescendo.\n- **Revisão do coto**: ressecar a ponta óssea pontiaguda. A recidiva é comum.\n- **Capeamento**: cobrir a extremidade com um **enxerto osteocondral**, de uma parte amputada ou de um doador como a crista ilíaca ou a cabeça de um metatarso. A \"tampa\" de cartilagem reduz a recidiva.\n\n**Outras particularidades da amputação na criança.** As crianças se adaptam bem às próteses. Os neuromas dolorosos e a dor fantasma são menos frequentes que no adulto. A prótese precisa ser trocada várias vezes por causa do crescimento.",
-  "correta": "**Correta: A (no úmero).** Na amputação transdiafisária da criança, o sobrecrescimento ósseo do coto é mais frequente no **úmero**, seguido da fíbula, da tíbia e do fêmur.",
+  "conceito": "Um menino que perdeu o braço num acidente volta meses depois com a pele do coto fina e dolorosa sobre uma ponta óssea que cresceu. O cenário é o do sobrecrescimento terminal, e o osso mais citado é um só.\n\n**Por que o trauma importa.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 16 (p. 681 e 684) diz que o sobrecrescimento é mais comum depois de amputação **traumática** do que das amputações feitas por outras razões, e que 27% das crianças amputadas acabam precisando de revisão.\n\n**O osso** (Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1099). O **úmero** lidera, seguido da fíbula, da tíbia e do fêmur. O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21 (p. 914) reforça que o sobrecrescimento periosteal é muito comum após a amputação **transumeral**.\n\n**O mecanismo explica a conduta.** O osso novo nasce do periósteo na ponta do coto, por aposição, e não da fise; logo a epifisiodese não resolve. A solução é ressecar o excesso, aceitando recidiva em alguns anos, ou prevenir com desarticulação ou capa biológica de cartilagem sobre a ponta (T, p. 912 a 915).\n\n**Para fixar a ordem.** Úmero no membro superior e fíbula no inferior abrem a lista; o fêmur, o maior osso, fecha.\n\nO tema está na seção \"Sobrecrescimento ósseo do coto na criança\" do resumo.",
+  "correta": "**A) no úmero.** É o osso com o sobrecrescimento terminal mais relatado, sobretudo após amputação transumeral.",
   "incorretas": {
-   "B": "O **rádio** é pouco acometido pelo sobrecrescimento ósseo, comparado ao úmero e aos ossos da perna.",
-   "C": "O **fêmur** é dos menos acometidos entre os ossos longos. O úmero lidera a lista.",
-   "D": "A **tíbia** é acometida, mas aparece depois do úmero e da fíbula."
+   "B": "**Rádio** não aparece na lista dos ossos mais acometidos pelo sobrecrescimento terminal.",
+   "C": "**Fêmur** é o último da sequência úmero, fíbula, tíbia e fêmur.",
+   "D": "**Tíbia** vem em terceiro, atrás do úmero e da fíbula."
   },
   "referencias": [
-   "Canale S. T. Campbell's operative orthopaedics. St. Louis: Mosby. 10th ed., p. 551 (referência indicada na prova TARO 2011, questão 68)",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 16, p. 681 e 684",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 31, p. 1099",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 912 a 915",
+   "Resumo OrtoQuestões: Outras doenças congênitas (versão 1)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0654": {

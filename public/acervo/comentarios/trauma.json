@@ -10781,14 +10781,19 @@
   "conferido": false
  },
  "trauma-0451": {
+  "conceito": "A pergunta aplica a mecânica da haste a um caso: a fratura multifragmentar da diáfise do úmero que desce em direção à metáfise distal. É preciso decifrar o código e depois imaginar quanto de haste fica preso em cada fragmento.\n\n**O código.** Pelo AO Principles of Fracture Management, 3ª ed. (2017) (cap. 1.4, pp. 40 a 44), 1 é o úmero, 2 a diáfise e C a multifragmentar sem contato entre os principais; **C3 é a segmentar fragmentada**. Sem contato cortical, quem carrega toda a carga é a haste com seus parafusos de bloqueio.\n\n**Onde fica a fixação de cada lado.** Se a cominuição se estende para a diáfise distal, o fragmento proximal é longo e envolve muitos centímetros de haste, enquanto o distal é curto, com pouco osso para a haste se apoiar. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 1, p. 26 aprox.) descreve exatamente essa situação na fratura distal tratada com haste: o segmento distal fica com fixação curta e o proximal funciona como uma **alavanca longa**, e as **grandes concentrações de tensão aparecem nos parafusos de bloqueio distais**. A questão chama essa distribuição de área de trabalho longa no proximal e curta no distal.\n\n**Por que os parafusos distais.** Com bloqueio estático, a carga passa direto aos parafusos (AO, cap. 3.3.1, p. 231). O AO (pp. 237 e 238) acrescenta que os parafusos distais são o elo mais fraco da montagem, que há folga entre parafuso e haste e que, por isso, se recomendam pelo menos dois distais; a resistência à fadiga cresce com o diâmetro deles.\n\nO bloqueio e o estresse distal estão na seção \"Do KÜNTSCHER ao bloqueio\" do resumo.",
+  "correta": "**D) longa no segmento proximal e curta no distal, com aumento de stress nos parafusos de bloqueio distal.** O fragmento distal curto faz o proximal virar alavanca longa, e a tensão se concentra no bloqueio distal.",
   "incorretas": {
-   "A": "A área de trabalho é longa no proximal, e o estresse maior fica nos parafusos distais.",
-   "B": "O estresse nos parafusos distais está certo, mas a área de trabalho é longa no proximal.",
-   "C": "A área de trabalho está certa, mas o estresse maior fica nos parafusos distais."
+   "A": "**Curta no proximal, estresse proximal** inverte a geometria: a cominuição desce para a diáfise distal, então é o fragmento distal que fica curto.",
+   "B": "**Curta no proximal, estresse distal** acerta onde a tensão cai, mas descreve o comprimento ao contrário; o segmento curto é o distal.",
+   "C": "**Longa no proximal, estresse proximal** acerta a geometria e erra a carga: o segmento proximal longo é a alavanca, e quem sofre a concentração de tensão são os parafusos distais."
   },
-  "conceito": "A **área de trabalho** (working length) de uma haste é o trecho entre os pontos onde ela está presa ao osso, de cada lado da fratura. Quanto maior a área de trabalho de um lado, mais esse lado é flexível; quanto menor, mais as forças se concentram nos parafusos daquele lado.\n\n**A fratura AO 12C3**: fratura **complexa** (multifragmentária, irregular) da diáfise do úmero. Quando ela se estende para a **diáfise distal**, sobra pouco osso íntegro abaixo da fratura.\n\n**O que acontece com a haste**:\n\n**no segmento proximal**: há muito osso entre a entrada da haste e a fratura; a área de trabalho é **longa**;\n\n**no segmento distal**: o fragmento distal é **curto**, e a haste fica presa em pouco osso, perto dos parafusos de bloqueio; a área de trabalho é **curta**.\n\n**A consequência**: a carga se concentra no fragmento curto, e os **parafusos de bloqueio distais** sofrem **mais estresse**, com risco de soltura e quebra. A haste também controla mal o alinhamento do fragmento distal curto.\n\n**A alternativa**: nas fraturas que descem muito no úmero distal, a **placa** (por via posterior ou anterolateral) costuma dar fixação mais segura.\n\n**Na prova**: a haste produz área de trabalho **longa no proximal e curta no distal**, com aumento de estresse nos **parafusos de bloqueio distais**.",
-  "correta": "O fragmento distal curto prende a haste em pouco osso, e os parafusos de bloqueio distais recebem a carga.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1, p. 26 aprox.",
+   "AO Principles of Fracture Management, 3ª ed. (2017), cap. 1.4, pp. 40 a 44; cap. 3.3.1, pp. 231, 237 e 238",
+   "Resumo OrtoQuestões: Princípios de osteossíntese"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0452": {
@@ -21622,17 +21627,18 @@
   "conferido": false
  },
  "trauma-1027": {
+  "conceito": "A mesma rotação femoral pode ser descrita contra três referências diferentes, e o número muda conforme a referência. A questão pede a relação com o **eixo transepicondilar**, a linha que une os dois epicôndilos.\n\n**As três formas de dizer a mesma coisa** (Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 411, 432, Fig. 8.17):\n- em relação aos **côndilos posteriores**: **3° de rotação externa**;\n- em relação ao **eixo AP de WHITESIDE** (do fundo da tróclea ao topo do intercôndilo): **perpendicular**;\n- em relação ao **eixo epicondilar**: **paralela**.\n\nNo fêmur médio essas três dão o mesmo corte. O 3° externo é medido a partir dos côndilos posteriores porque a linha deles já está levemente rodada para dentro em relação ao epicondilar.\n\n**Por que o epicondilar importa.** Os epicôndilos são a origem dos colaterais; um corte paralelo a eles mantém os colaterais com tensão igual em flexão. O problema é achá-los: o livro diz que o epicondilar é difícil de localizar de forma reprodutível, mas na **revisão** costuma ser o único marco que sobra, porque os côndilos já foram cortados (p. 412 e 467).\n\n**A pegadinha.** \"3 graus de rotação externa\" é a resposta certa para outra pergunta, a dos côndilos posteriores.\n\nA tabela das referências está na seção \"A rotação do componente femoral\" do resumo.",
+  "correta": "**A) paralela.** O componente femoral é rodado de modo que o corte posterior fique paralelo ao transepicondilar, o que equivale a 3° externos aos côndilos posteriores.",
   "incorretas": {
-   "B": "**Relação da linha de Whiteside.** É a linha anteroposterior de Whiteside que fica perpendicular ao eixo transepicondilar.",
-   "C": "**Rotação interna prejudica.** Componente femoral em rotação interna causa mau trajeto patelar e instabilidade em flexão.",
-   "D": "**Referência errada.** Os 3 graus de rotação externa são em relação ao eixo condilar posterior, e não ao transepicondilar."
+   "B": "**Perpendicular** é a relação com o eixo AP de WHITESIDE, não com o epicondilar.",
+   "C": "**3 graus de rotação interna** em relação ao epicondilar rodaria o componente para dentro, com inclinação lateral da patela.",
+   "D": "**3 graus de rotação externa** é a medida contra a linha dos côndilos posteriores; contra o epicondilar, que já está rodado para fora, somaria rotação demais."
   },
-  "conceito": "**Por que a rotação do componente femoral importa.** Na **artroplastia total do joelho**, a rotação do componente **femoral** define o **espaço em flexão** (retangular ou trapezoidal), a **tensão** dos ligamentos colaterais em flexão e o **trajeto da patela**. Um componente em **rotação interna** é a causa mais comum de **mau trajeto patelar**, dor anterior, instabilidade em flexão e rigidez.\n\n**As referências.** Há quatro referências principais. O **eixo transepicondilar** (do epicôndilo lateral ao sulco do epicôndilo medial) é a referência **anatômica** mais aceita para a rotação: o componente femoral deve ficar **paralelo** a ele. O **eixo condilar posterior** (tangente aos côndilos posteriores) está, em média, cerca de **3 graus em rotação interna** em relação ao transepicondilar; por isso, quando se usa a referência posterior, o componente é colocado em **3 graus de rotação externa** em relação a ela, para ficar paralelo ao transepicondilar. A **linha de Whiteside** (eixo anteroposterior, do fundo da tróclea ao centro da incisura) fica **perpendicular** ao transepicondilar. E a técnica do **espaço balanceado** (gap balancing) roda o componente até que o espaço em flexão fique retangular com os ligamentos tensos, após o corte tibial.\n\n**As armadilhas.** No joelho **valgo**, o côndilo lateral posterior é **hipoplásico**, e a referência condilar posterior subestima a rotação necessária (é preciso mais rotação externa). A erosão e os osteófitos distorcem as referências. Por isso, usar mais de uma referência e conferir a coerência entre elas.\n\n**O componente tibial.** Sua rotação também importa: referência no **terço medial da tuberosidade tibial** (ou alinhamento com o componente femoral na amplitude). Rotação interna tibial também prejudica o trajeto patelar.\n\n**Na prova:** o componente femoral deve ficar **paralelo ao eixo transepicondilar**; 3 graus de rotação externa são em relação ao **eixo condilar posterior**; perpendicular à linha de Whiteside.",
-  "correta": "**Paralela.** Tomando o eixo transepicondilar como referência, o componente femoral é colocado paralelo a ele.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 7"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 411, 412, 432 e 467",
+   "Resumo OrtoQuestões: Artroplastia total do joelho"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1028": {
@@ -22510,17 +22516,18 @@
   }
  },
  "trauma-1065": {
+  "conceito": "O que decide o tratamento da prótese infectada é o **tempo** de infecção, porque é o tempo que dá ao germe a chance de organizar o **biofilme** sobre o implante (Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 452).\n\n**Janela curta: dá para salvar a prótese.** O desbridamento com retenção do implante só serve à infecção **pós-operatória precoce, com menos de 4 semanas**, ou à **hematogênica aguda**, desde que a prótese esteja **bem fixa** (p. 452). Na infecção crônica tardia foi universalmente malsucedido. Para aumentar o sucesso, o livro pede infectologista, **6 semanas de antibiótico IV**, culturas de controle em 2 semanas e **troca do polietileno** (p. 454).\n\n**Janela longa: trocar tudo.** Na crônica, o padrão é a revisão em **dois tempos**: retirar, desbridar, espaçador com antibiótico (3,6 g de tobramicina e 3 g de vancomicina por 40 g), 6 semanas de IV e reimplante, com 89% a 100% de sucesso (p. 455). A revisão em um tempo, em torno de 89%, exige ferida tornada quase estéril.\n\nA conduta está na seção \"Infecção periprotética: tratamento\" do resumo.",
+  "correta": "**B) limpeza da articulação com troca do polietileno.** Na infecção aguda com prótese fixa, retém-se o implante, com desbridamento e troca do inserto (p. 452 e 454).",
   "incorretas": {
-   "A": "**Limpeza isolada é incompleta.** Sem retirar o polietileno, superfícies de difícil acesso ficam menos bem desbridadas e o componente modular potencialmente colonizado permanece.",
-   "C": "**Revisão em um tempo pertence a outra seleção de casos.** Pode ser considerada quando a retenção não é apropriada, mas não é a resposta inicial esperada para infecção aguda com prótese estável.",
-   "D": "**Revisão em dois tempos é mais extensa.** Ganha espaço na infecção crônica, diante de componentes soltos ou após falha de estratégias de retenção."
+   "A": "**Limpeza sem troca do polietileno** fica aquém do que o Campbell recomenda: entre as medidas que aumentam o sucesso da retenção está a troca do inserto (p. 454).",
+   "C": "**Revisão em um tempo** sacrifica uma prótese fixa que, na janela aguda, ainda pode ser salva.",
+   "D": "**Revisão em dois tempos** é o padrão da infecção crônica, quando a retenção já não funciona."
   },
-  "conceito": "**Infecção aguda com prótese estável.** Se os sintomas começaram há pouco tempo, os componentes estão firmes e há condições de fazer desbridamento amplo, considera-se preservar os implantes fixos. O procedimento reúne abertura da articulação, coleta de amostras, remoção de tecido infectado, irrigação, troca do componente modular de polietileno e antibióticos direcionados. É a estratégia conhecida como desbridamento com retenção do implante.\n\n**Por que trocar o polietileno.** Sua retirada expõe áreas antes inacessíveis, melhora a limpeza das superfícies posteriores e remove um componente potencialmente colonizado por biofilme. Limpeza simples sem essa troca é menos completa. Se a prótese estiver solta, houver fístula ou a infecção for crônica, a indicação muda e pode exigir revisão. Assim, a palavra **aguda** na pergunta pressupõe também avaliação da estabilidade e do tempo de sintomas.",
-  "correta": "**B: limpeza com troca do polietileno.** Em infecção aguda selecionada, faz-se desbridamento amplo, troca do componente modular e tratamento antimicrobiano, preservando os componentes bem fixados.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 7"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 452, 454 e 455",
+   "Resumo OrtoQuestões: Artroplastia total do joelho"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1066": {
@@ -22743,17 +22750,18 @@
   }
  },
  "trauma-1076": {
+  "conceito": "A pergunta é sobre o que a rotação femoral controla, e a resposta está numa frase do Campbell: a rotação do componente femoral afeta o **espaço de flexão** e o **trilhamento patelar** (Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 411).\n\n**Por que flexão e não extensão.** Com o joelho estendido, a tíbia encosta na superfície distal do fêmur, que é formada pelo corte distal; girar o componente em torno do eixo do fêmur quase não muda essa superfície. Com o joelho a 90°, quem encosta na tíbia são os **côndilos posteriores**, e é o corte posterior que define a rotação. Rodar para dentro ou para fora tira mais de um côndilo posterior que do outro e deixa o espaço de flexão trapezoidal. A rotação externa excessiva abre a flexão medial e pode dar instabilidade em flexão (p. 432).\n\n**Por que trilhamento e não ângulo Q.** O componente femoral carrega a **tróclea**. Rodá-lo para dentro desloca o sulco troclear para medial, e a patela, puxada pelo quadríceps, passa a correr lateral ou inclinada (p. 432 e 443). O ângulo Q é medido entre o eixo do fêmur e a linha do centro da patela à tuberosidade (p. 413); quem o aumenta é sobretudo a **rotação interna do componente tibial**, que leva a tuberosidade para lateral (p. 443).\n\nA seção \"A rotação do componente femoral\" do resumo traz essa ideia.",
+  "correta": "**C) espaço de flexão e tracking patelar.** A rotação define o corte posterior, que forma o espaço de flexão, e a posição da tróclea, por onde a patela corre.",
   "incorretas": {
-   "A": "**O espaço de flexão está correto.** O segundo objetivo relevante é o rastreamento patelar, não ajustar diretamente o ângulo Q.",
-   "B": "**Nenhum dos dois é o par pedido.** Rotação do componente não é determinada primariamente pelo espaço de extensão nem por uma correção isolada do ângulo Q.",
-   "D": "**O tracking patelar está correto.** O espaço mais diretamente alterado pela rotação femoral é o de flexão, não o de extensão."
+   "A": "**Ângulo Q** depende sobretudo da posição da tuberosidade, que a rotação do componente tibial altera; a rotação femoral age na tróclea.",
+   "B": "**Espaço de extensão e ângulo Q** erra as duas metades: a extensão vem do corte distal, e o Q é assunto da tuberosidade.",
+   "D": "**Espaço de extensão** é formado pelo corte femoral distal, que a rotação do componente não modifica."
   },
-  "conceito": "**Dois efeitos da mesma rotação.** Na artroplastia total do joelho, a rotação do componente femoral modifica a forma do espaço quando o joelho está fletido. Uma posição inadequada pode deixá-lo assimétrico e alterar a tensão ligamentar. Ela também posiciona a tróclea protética em relação à patela; rotação interna excessiva, por exemplo, favorece mau rastreamento patelar, dor anterior e instabilidade.\n\n**O que não deve ser confundido.** O espaço de extensão depende sobretudo da espessura e orientação das ressecções distais e da liberação dos tecidos. O ângulo Q descreve o vetor do aparelho extensor, mas não é o segundo parâmetro pedido para definir a rotação femoral na alternativa correta. O cirurgião combina referências anatômicas e equilíbrio dos espaços, pois nenhuma medida isolada resolve todos os joelhos.",
-  "correta": "**C: espaço de flexão e tracking patelar.** A rotação femoral influencia a simetria do espaço fletido e o trajeto da patela sobre a tróclea protética.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 7"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 411, 413, 432 e 443",
+   "Resumo OrtoQuestões: Artroplastia total do joelho"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1077": {
@@ -22843,17 +22851,19 @@
   }
  },
  "trauma-1081": {
+  "conceito": "No valgo fixo, o lado lateral está encurtado e o medial está esticado. A via escolhida precisa expor bem o lado que vai ser liberado e permitir fechá-lo depois de alongado.\n\n**A via de KEBLISH modificada.** O capítulo 1 descreve, para o **valgo fixo**, uma artrotomia **parapatelar lateral** feita 3 a 7 cm lateral à patela, com **snip do quadríceps** e **Z-plastia coronal do complexo retinacular lateral** (Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso ao joelho), p. 31 e 32). O retináculo é dividido em duas camadas desencontradas; quando o joelho é corrigido, elas deslizam uma sobre a outra e são fechadas \"expandidas\", cobrindo o espaço lateral que ficou maior. O acesso anterolateral clássico é menos satisfatório, porque a patela se desloca mal para medial.\n\n**E o capítulo 8.** Os autores do capítulo de artroplastia fazem o valgo pelo parapatelar medial, com liberações laterais em sequência: trato iliotibial, canto posterolateral, poplíteo, cápsula posterior e gastrocnêmio lateral (Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 438). As duas condutas coexistem; o nome do acesso lateral para o valgo é o de KEBLISH.\n\n**Os nomes trocados.** Pie-crusting é técnica de alongar partes moles com múltiplas incisões paralelas à linha articular (p. 436), não uma via. WHITESIDE dá nome ao eixo anteroposterior de rotação femoral (p. 411) e à osteotomia da tuberosidade na revisão (p. 463 e 464).\n\nA via está na seção \"Acessos\" do resumo.",
+  "correta": "**B) KEBLISH.** A artrotomia parapatelar lateral com snip do quadríceps e Z-plastia do retináculo lateral é a via descrita no Campbell para o valgo fixo.",
   "incorretas": {
-   "A": "**Müller não nomeia a via lateral clássica solicitada.** O nome ligado ao acesso parapatelar lateral para valgo fixo é Keblish.",
-   "C": "**Whiteside se relaciona ao balanceamento lateral.** A alternativa não identifica a via de acesso perguntada.",
-   "D": "**Pie-crusting é uma técnica de liberação.** Pode complementar o balanceamento ligamentar, mas não constitui a via cirúrgica de Keblish."
+   "A": "**MULLER** não é o nome de via que o Campbell descreve para o valgo irredutível; o acesso lateral citado é o de KEBLISH.",
+   "C": "**WHITESIDE** nomeia o eixo AP usado para rodar o componente femoral e a osteotomia da tuberosidade na revisão, não um acesso para valgo.",
+   "D": "**Pie-crusting** é um gesto de liberação (incisões paralelas à linha articular no trato iliotibial ou no LCL), feito depois de abrir a articulação; não é via de acesso."
   },
-  "conceito": "**O problema do valgo fixo.** Na artroplastia total de um joelho com valgo grave, estruturas laterais e posterolaterais podem estar encurtadas, enquanto o aparelho extensor tende a tracionar a patela lateralmente. A via parapatelar lateral de Keblish expõe diretamente esse lado e incorpora a liberação retinacular lateral necessária ao balanceamento em muitos desses casos.\n\n**Via de acesso não é manobra de liberação.** Whiteside descreve estratégias para balancear os tecidos laterais; pie-crusting consiste em liberações graduais por pequenas perfurações. Elas podem ser utilizadas no tratamento do valgo, mas não dão nome à via parapatelar lateral perguntada. O acesso medial convencional também pode ser usado em alguns joelhos valgos; a banca solicita o acesso clássico para a deformidade grave e irredutível.",
-  "correta": "**B: Keblish.** Sua via parapatelar lateral facilita a exposição e o balanceamento das estruturas contraídas no joelho valgo fixo.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 7"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso ao joelho), p. 31 e 32",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 411, 436 e 438",
+   "Resumo OrtoQuestões: Artroplastia total do joelho"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1082": {
