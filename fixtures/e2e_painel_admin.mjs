@@ -27,7 +27,7 @@ await mkdir(capturas, { recursive: true })
 const { erros, contexto, abrir, fechar } = await iniciar()
 // Telas do menu (e as abas, pelo endereço) com o título que aparecem.
 const PARTES = {
-  '': 'Agora', 'aba=usuarios': 'Usuários', 'aba=crescimento': 'Aquisição', 'aba=crescimento&sub=retencao': 'Retenção', 'aba=crescimento&sub=perfis': 'Perfis e origem',
+  '': 'Agora', 'aba=usuarios': 'Usuários', 'aba=crescimento': 'Aquisição e funil', 'aba=retencao': 'Retenção e ritmo', 'aba=perfis': 'Perfis e origem',
   'aba=conteudo': 'Relatos e avaliações', 'aba=questoes': 'Editar questões', 'aba=simulados': 'Simulados', 'aba=opinioes': 'Opiniões dos flashcards',
   'aba=financeiro': 'Ganhos', 'aba=financeiro&sub=previsao': 'Previsão', 'aba=assinaturas': 'Assinaturas', 'aba=cobrancas': 'Pagamentos', 'aba=pagamentos': 'Avisos de pagamento',
   'aba=lembretes': 'Lembretes', 'aba=cartas': 'Cartas pessoais', 'aba=envios': 'Relatórios e histórico', 'aba=todas': 'Todas as cartas',
@@ -45,7 +45,7 @@ try {
   assert.equal(await pc.p.locator('.a3-casca').count(), 1)
   assert.equal(await pc.p.locator('header.cabecalho, footer.rodape').count(), 0, 'o painel abre sem a casca do site')
   const areas = await pc.p.locator('.a3-nav-area').allInnerTexts()
-  for (const area of ['Agora', 'Pessoas', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes']) assert.ok(areas.join(' | ').includes(area), `área ${area} na barra: ${areas.join(' | ')}`)
+  for (const area of ['Agora', 'Pessoas', 'Crescimento', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes']) assert.ok(areas.join(' | ').includes(area), `área ${area} na barra: ${areas.join(' | ')}`)
   assert.match(await pc.p.locator('body').innerText(), /Atualizado às \d{2}:\d{2}/)
   ok('casca com as seis áreas de antes e sem cabeçalho do site')
 
@@ -82,7 +82,7 @@ try {
   ok(`${Object.keys(PARTES).length} telas e abas abrem com o título certo e sem erro`)
 
   // ---------- 3. Endereços antigos ----------
-  const legado = { hoje: 'Agora', geral: 'Agora', agora: 'Agora', receita: 'Ganhos', previsao: 'Previsão', retencao: 'Retenção', operacoes: 'Lembretes', configuracoes: 'Acesso e pagamentos', aviso: 'Aviso no topo do site', relatos: 'Relatos e avaliações', avaliacoes: 'Relatos e avaliações', avisos: 'Avisos de pagamento', mensal: 'Relatórios e histórico' }
+  const legado = { hoje: 'Agora', geral: 'Agora', agora: 'Agora', receita: 'Ganhos', previsao: 'Previsão', retencao: 'Retenção e ritmo', operacoes: 'Lembretes', configuracoes: 'Acesso e pagamentos', aviso: 'Aviso no topo do site', relatos: 'Relatos e avaliações', avaliacoes: 'Relatos e avaliações', avisos: 'Avisos de pagamento', mensal: 'Relatórios e histórico' }
   for (const [aba, rotulo] of Object.entries(legado)) {
     await abrir(pc.p, `?aba=${aba}`)
     assert.equal(await titulo(pc.p), rotulo, `?aba=${aba}`)
@@ -168,7 +168,7 @@ try {
 
   // ---------- 9. Celular ----------
   const cel = await contexto(390, 844, true)
-  for (const parte of ['', '?aba=crescimento&sub=perfis', '?aba=usuarios', '?aba=financeiro', '?aba=conteudo', '?aba=lembretes', '?aba=cobrancas']) {
+  for (const parte of ['', '?aba=perfis', '?aba=usuarios', '?aba=financeiro', '?aba=conteudo', '?aba=lembretes', '?aba=cobrancas']) {
     await abrir(cel.p, parte)
     const largura = await cel.p.evaluate(() => document.documentElement.scrollWidth)
     assert.ok(largura <= 390, `${parte || 'comando'} sem rolagem de lado no celular (${largura})`)

@@ -132,3 +132,13 @@ ou `search_path` foi alterada. Nenhum dado administrativo foi exposto em endpoin
 - **Agora, de cima para baixo**: faixa no estilo do herói do site (céu verdete com horizonte em pixel) com os totais;
   **uma** lista de quem está online, com filtro (todos, assinantes, viram os planos hoje, não assinantes) e um fio de cor
   em cada linha; **uma** caixa "Fora do site agora" com abas; depois "Hoje".
+
+## Revisão de 02/11/2026: Crescimento com área própria e Linha do dia enxuta
+
+- Crescimento saiu de dentro de Pessoas e virou área própria no menu, com três itens:
+  Aquisição e funil, Retenção e ritmo, Perfis e origem. Os links antigos continuam abrindo.
+- Barra do celular com 7 áreas; "Financeiro" aparece como "Finanças" e os rótulos encolhem
+  abaixo de 380 px para caber em 320 px.
+- Linha do dia: deixou de ter uma linha por pessoa que estudou (repetia a lista "Estudaram hoje").
+  Agora mostra uma linha somada (pessoas e questões, com "ver quem") e só cadastros e dinheiro,
+  6 por vez, com "Ver mais" e "Recolher". Ela usa os dados já carregados, sem consulta extra.

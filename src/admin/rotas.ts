@@ -8,7 +8,7 @@
  */
 import type { NomeIconeAdmin } from './ui/Icone'
 
-export type Area = 'comando' | 'pessoas' | 'estudo' | 'receita' | 'comunicacao' | 'configuracoes'
+export type Area = 'comando' | 'pessoas' | 'crescimento' | 'estudo' | 'receita' | 'comunicacao' | 'configuracoes'
 export type Parte =
   | 'comando' | 'agora' | 'pendencias'
   | 'usuarios' | 'crescimento' | 'retencao' | 'perfis'
@@ -37,9 +37,14 @@ export const AREAS: DefArea[] = [
   ] },
   { id: 'pessoas', rotulo: 'Pessoas', curto: 'Pessoas', icone: 'pessoas', partes: [
     { id: 'usuarios', rotulo: 'Usuários', pergunta: 'Encontrar uma pessoa ou um grupo, entender o que fazem e agir por eles.' },
-    { id: 'crescimento', rotulo: 'Crescimento', pergunta: 'Quantos chegam, quantos ficam e quem são.' },
   ] },
-  { id: 'receita', rotulo: 'Financeiro', curto: 'Financeiro', icone: 'receita', partes: [
+  // Crescimento ganhou área própria (Tales, 02/11/2026: "tem muita coisa importante e muito escondido").
+  { id: 'crescimento', rotulo: 'Crescimento', curto: 'Crescer', icone: 'grafico', partes: [
+    { id: 'crescimento', rotulo: 'Aquisição e funil', pergunta: 'Quantos chegam, quantos começam a estudar e onde o funil perde gente.' },
+    { id: 'retencao', rotulo: 'Retenção e ritmo', pergunta: 'Quem volta depois da primeira semana e em que dias e horários o site vive.' },
+    { id: 'perfis', rotulo: 'Perfis e origem', pergunta: 'Quem estuda aqui (etapa, prova, estado, serviço) e de onde vêm os cadastros.' },
+  ] },
+  { id: 'receita', rotulo: 'Financeiro', curto: 'Finanças', icone: 'receita', partes: [
     { id: 'financeiro', rotulo: 'Ganhos', pergunta: 'Quanto entrou, quanto deve entrar e de onde vem.' },
     { id: 'assinaturas', rotulo: 'Assinaturas', pergunta: 'Quem tem acesso pago, por qual plano e meio, e até quando.' },
     { id: 'cobrancas', rotulo: 'Pagamentos', pergunta: 'Cada pagamento recebido, estimado ou reembolsado, dia a dia.' },
@@ -65,11 +70,6 @@ export const AREAS: DefArea[] = [
 
 /** Abas dentro de uma tela: a primeira é a padrão. O nome e a pergunta de cada aba ficam aqui. */
 const ABAS_DE: Partial<Record<Parte, DefParte[]>> = {
-  crescimento: [
-    { id: 'crescimento', rotulo: 'Aquisição', pergunta: 'Quantos chegam, quantos começam a estudar e onde o funil perde gente.' },
-    { id: 'retencao', rotulo: 'Retenção', pergunta: 'Quem volta depois da primeira semana e em que dias e horários o site vive.' },
-    { id: 'perfis', rotulo: 'Perfis e origem', pergunta: 'Quem estuda aqui (etapa, prova, estado, serviço) e de onde vêm os cadastros.' },
-  ],
   financeiro: [
     { id: 'financeiro', rotulo: 'Ganhos', pergunta: 'Quanto entrou de fato, como se compõe e como se compara.' },
     { id: 'previsao', rotulo: 'Previsão', pergunta: 'O que deve entrar, com as hipóteses à vista; nunca somado ao que já entrou.' },
@@ -99,7 +99,7 @@ export const partePadrao = (area: Area): Parte => defArea(area).partes[0].id
  */
 const LEGADO: Record<string, Parte> = {
   geral: 'comando', hoje: 'comando', agora: 'comando', pendencias: 'comando',
-  retencao: 'crescimento', perfis: 'crescimento', previsao: 'financeiro', aviso: 'ajustes',
+  previsao: 'financeiro', aviso: 'ajustes',
   configuracoes: 'ajustes', avisos: 'pagamentos', receita: 'financeiro', pessoas: 'usuarios',
   avaliacoes: 'conteudo', relatos: 'conteudo',
   operacoes: 'lembretes', emails: 'lembretes', comunicacao: 'lembretes',
@@ -108,7 +108,7 @@ const LEGADO: Record<string, Parte> = {
 
 export const PERIODOS: Periodo[] = [7, 30, 90]
 export const PERIODO_PADRAO: Periodo = 30
-const COM_PERIODO = new Set<Parte>(['comando', 'crescimento', 'financeiro'])
+const COM_PERIODO = new Set<Parte>(['comando', 'crescimento', 'retencao', 'financeiro'])
 const FILTROS: FiltroPessoas[] = ['todos', 'online', 'hoje', 'ativos', 'novos', 'novos_parados', 'assinantes', 'parados', 'planos']
 const VISTAS: VistaTriagem[] = ['suspeitas', 'faceis', 'temas', 'relatos', 'avaliacoes']
 /** Só ids de questão no endereço: nada de e-mail, espaço ou texto livre. */
@@ -127,7 +127,10 @@ export function lerUrl(consulta: URLSearchParams): EstadoUrl {
   const vistaLegada = bruta === 'avaliacoes' || bruta === 'relatos' ? bruta : null
   const id = consulta.get('id')
   const periodo = Number(consulta.get('periodo')) as Periodo
-  const parte: Parte = PARTES.has(bruta as Parte) ? bruta as Parte : LEGADO[bruta] ?? 'comando'
+  let parte: Parte = PARTES.has(bruta as Parte) ? bruta as Parte : LEGADO[bruta] ?? 'comando'
+  // Crescimento já foi tela com abas (?aba=crescimento&sub=retencao); essas abas hoje são itens próprios do menu.
+  const subAntiga = consulta.get('sub')
+  if (parte === 'crescimento' && (subAntiga === 'retencao' || subAntiga === 'perfis')) parte = subAntiga
   // A aba vem de ?sub=… ou do endereço antigo que apontava direto para ela (?aba=previsao, retencao, aviso…).
   const abas = abasDe(parte).map(a => a.id)
   const sub = [consulta.get('sub'), bruta].find(x => abas.includes(x as Parte)) as Parte | undefined
