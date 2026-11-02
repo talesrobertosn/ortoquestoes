@@ -229,7 +229,7 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     if (enviados + falhas >= limite || Date.now() - inicio > ORCAMENTO_LOTE_MS) break
     vistos++
     if (!await podeReceber(id, 'relatorio')) { recusados++; continue }
-    // Cadência: quem recebeu e-mail há menos de 48 h (ou 3 em 14 dias) fica para o próximo lote.
+    // Relatórios não esperam a cadência (TIPOS_PERIODICOS em _shared/cartas.ts); a chamada fica para o caso de a regra mudar.
     const anteriores = await anterioresDe(id).catch(() => [] as EnvioAnterior[])
     if (cadenciaBloqueia(anteriores, new Date(), 'relatorio')) { adiados++; continue }
     const reserva = await registrar({ id_usuario: id, tipo: 'relatorio', referencia: mes, status: 'enviando' })

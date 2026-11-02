@@ -8,7 +8,9 @@ import { meioDe, vigente, type AssinaturaBase, type Cobranca } from './receita'
  */
 
 export const PLANOS: Record<string, string> = { mensal: 'Mensal', semestral: 'Semestral', anual: 'Anual' }
-export const rotuloPlano = (id: string | null | undefined) => (id ? PLANOS[id] ?? id : '—')
+/** Cortesia (amigos, preceptores, parceiros): no painel conta como assinante, mas nunca paga nem vira possível pagador. */
+export const PLANO_CORTESIA = 'cortesia'
+export const rotuloPlano = (id: string | null | undefined) => (id === 'cortesia' ? 'Cortesia' : id ? PLANOS[id] ?? id : '—')
 
 export const MEIOS: Record<'pix' | 'cartao', string> = { pix: 'Pix', cartao: 'Cartão' }
 export const rotuloMeio = (meio: string | null | undefined) => (meio === 'pix' || meio === 'cartao' ? MEIOS[meio] : '—')

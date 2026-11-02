@@ -119,7 +119,7 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }), [u, porTema, atividade, extra, situacao, ano, provas.join(','), fcCartas, planos?.vezes])
   const historicoReserva = useMemo<EnvioHistorico[]>(() => (detalhe?.emails ?? []).map(e => ({ tipo: e.tipo, marco: e.marco, assunto: e.assunto, status: e.status, em: e.em, origem: e.tipo === 'marco' || e.tipo === 'relatorio' ? 'automatico' : e.tipo === 'lembrete' ? 'lote' : 'manual' })), [detalhe])
-  const plano = u.plano_vigente ? `Assinante ${PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}` : cortesiaVale ? 'Cortesia' : 'Plano grátis'
+  const plano = u.plano_vigente && u.plano_vigente !== 'cortesia' ? `Assinante ${PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}` : cortesiaVale || u.plano_vigente === 'cortesia' ? 'Cortesia' : 'Plano grátis'
 
   const topo = <span className="a3-avatar a3-avatar--grande">{iniciais(u.nome ?? u.email)}{u.online && <i className="a3-ponto a3-ponto--vivo" />}</span>
   const subtitulo = <div style={{ display: 'grid', gap: 8 }}>
@@ -366,14 +366,16 @@ function AbaAssinatura({ idUsuario, email, aoCarta }: { idUsuario: string; email
 }
 
 function AbaAcoes({ u, detalhe, cortesiaVale, recarregar }: { u: LinhaUsuario; detalhe: Detalhe; cortesiaVale: boolean; recarregar: () => Promise<void> }) {
+  const painel = usarPainel()
   const [ocupado, definirOcupado] = useState(false)
   const [dias, definirDias] = useState('90')
   const [motivo, definirMotivo] = useState('')
   const nome = nomeDe(u)
+  // Dar ou tirar cortesia muda a classificação nas listas do painel: recarrega tudo, não só a ficha.
   async function acao(rotulo: string, fazer: () => Promise<unknown>, sucesso: string) {
     if (ocupado) return
     definirOcupado(true)
-    try { await fazer(); avisoRapido(sucesso); await recarregar() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
+    try { await fazer(); avisoRapido(sucesso); await recarregar(); if (rotulo === 'Cortesia') void painel.atualizar() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
   }
   return <div className="a3-pilha">
     <div className="a3-acao-cartao">

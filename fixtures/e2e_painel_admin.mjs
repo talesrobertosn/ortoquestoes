@@ -53,7 +53,7 @@ try {
   const primeiro = await pc.p.locator('.a3-conteudo section').first().getAttribute('aria-label')
   assert.equal(primeiro, 'Resumo de agora e de hoje', 'a página abre com a faixa de totais')
   const totais = (await pc.p.locator('.a3-heroi').innerText()).replace(/\s+/g, ' ')
-  for (const t of [/Online 4/i, /Assinantes 1 de 4/i, /Não assinantes 3/i, /Assinantes hoje \d+ de 4 entraram/i, /Viram os planos 1/i, /Estudaram \d+/i, /Cadastros \d+/i, /Recebido R\$/i]) assert.match(totais, t)
+  for (const t of [/Online 4/i, /Assinantes 1 de 5/i, /Não assinantes 3/i, /Assinantes hoje \d+ de 5 entraram/i, /Viram os planos 1/i, /Estudaram \d+/i, /Cadastros \d+/i, /Recebido R\$/i]) assert.match(totais, t)
   const lista = pc.p.locator('section[aria-label="Pessoas"]')
   assert.ok(await lista.locator('li.assinante').getByText('Diego Alves').count(), 'assinante marcado como assinante')
   assert.ok(await lista.locator('li.lead').getByText('Bruno Costa').count(), 'quem viu os planos hoje marcado em ouro')
@@ -74,6 +74,14 @@ try {
   assert.equal(await lista.locator('li').count(), await lista.locator('li.assinante').count(), 'Assinantes hoje só tem assinantes')
   await lista.getByRole('tab', { name: /Assinantes que não entraram/ }).click()
   assert.match(await lista.locator('h2').innerText(), /Assinantes que não entraram hoje/)
+  // Cortesia (Karina): conta como assinante, com o selo Cortesia, e não aparece entre os possíveis pagadores.
+  await pc.p.locator('.a3-heroi').getByRole('button', { name: /Assinantes hoje/ }).click()
+  if (!await lista.getByText('Karina Melo').count()) await lista.getByRole('tab', { name: /Assinantes que não entraram/ }).click()
+  assert.match(await lista.locator('li.assinante').filter({ hasText: 'Karina Melo' }).innerText(), /Cortesia/)
+  for (const aba of [/Viram os planos em 30 dias/, /Viram os planos hoje/]) {
+    await lista.getByRole('tab', { name: aba }).click()
+    assert.equal(await lista.getByText('Karina Melo').count(), 0, 'cortesia nunca é possível pagador')
+  }
   await pc.p.locator('.a3-heroi').getByRole('button', { name: /^Online/ }).click()
   ok('página inicial: números de agora e de hoje clicáveis, uma lista de pessoas com abas, três marcas e questões de hoje e total')
 

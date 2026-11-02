@@ -24,6 +24,7 @@ try {
   assert.equal(m.STATUS_FORMATOS, m.STATUS_ASSINATURA)
   assert.deepEqual(Object.values(m.PLANOS), ['Mensal', 'Semestral', 'Anual'])
   assert.equal(m.rotuloPlano('anual'), 'Anual')
+  assert.equal(m.rotuloPlano('cortesia'), 'Cortesia', 'cortesia tem nome próprio, fora da lista de planos pagos')
   assert.equal(m.rotuloMeio('pix'), 'Pix')
   assert.equal(m.rotuloMeio('cartao'), 'Cartão')
   assert.equal(m.STATUS_ASSINATURA.vencida, 'Expirada')

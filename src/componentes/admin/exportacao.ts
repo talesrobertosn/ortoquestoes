@@ -146,7 +146,7 @@ function pessoas(dados: DadosPainel, id: ReturnType<typeof identificador>, agora
   const linhas = ordem.map(u => {
     const s = sinais.get(u.id_usuario)
     const a = ultimaAssinatura.get(u.id_usuario)
-    const plano = u.plano_vigente ? `Assinante ${rotuloPlano(u.plano_vigente)}` : a ? `${rotuloPlano(a.plano)} · ${situacaoAssinatura(a, agora).rotulo}` : 'Grátis (nunca assinou)'
+    const plano = u.plano_vigente === 'cortesia' ? 'Cortesia (acesso de presente)' : u.plano_vigente ? `Assinante ${rotuloPlano(u.plano_vigente)}` : a ? `${rotuloPlano(a.plano)} · ${situacaoAssinatura(a, agora).rotulo}` : 'Grátis (nunca assinou)'
     return [
       id.nome(u.id_usuario), ...(id.semEmail ? [] : [u.email ?? '']), dataBR(u.criado_em),
       u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', u.servico ?? '', u.uf ?? '',
@@ -385,7 +385,7 @@ export function montarExportacao(dados: DadosPainel, op: OpcoesExportacao, agora
     '- Valores brutos: não descontam a taxa do processador de pagamento e não substituem o extrato oficial.',
     '- A data de uma resposta é a do aparelho de quem respondeu; "ativos" do resumo contam pela sincronização. Pequenas diferenças entre as duas contagens são normais.',
     '- Flashcards por dia não ficam guardados por pessoa: "usaram flashcards hoje" vem do último uso de cada um e não tem comparação com ontem.',
-    '- Contas de cortesia não aparecem numa lista própria (só na ficha de cada pessoa).',
+    '- Contas de cortesia (acesso de presente) aparecem como "Cortesia" no plano e contam como assinantes no painel, mas nunca como possíveis pagadores.',
     '- Contas de teste do dono ficam fora dos números e aparecem marcadas nas listas.',
     '- A previsão supõe que ninguém cancele o cartão e que a fração indicada de quem pagou Pix compre de novo.',
   ], '')
