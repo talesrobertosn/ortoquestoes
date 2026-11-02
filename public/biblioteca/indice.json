@@ -2,6 +2,128 @@
  "geradoEm": "2026-11-02",
  "capitulos": [
   {
+   "id": "ao-principios-osteossintese",
+   "versao": 1,
+   "titulo": "Princípios de osteossíntese",
+   "especialidade": "conceitos-basicos",
+   "livro": "AO Principles of Fracture Management",
+   "edicao": "3ª edição (2017)",
+   "capitulo": "Capítulo 1.2 · Biology and biomechanics in bone healing (com os capítulos 1.3, 1.4, 2.2, 3.2.1, 3.2.2, 3.2.3, 3.3.1, 3.3.2, 3.3.3, 3.3.4 e 5.3)",
+   "resumo": "A primeira decisão é o modo de consolidação; strain de PERREN (Δl/l; osso 2%, cartilagem 15%, granulação 100%): transversa tem strain maior e pede estabilidade absoluta, C3 tem o menor; parafuso de tração converte torque em compressão (2.500 N) e precisa de placa de neutralização contra flexão e rotação; DCP 25 graus longitudinais e 7 transversais; placa pré-curvada com parafusos perto do traço primeiro; banda de tensão na face convexa; placa bloqueada preserva o periósteo; fresar aumenta o fluxo periosteal (sem fresar, pseudartrose 4,5 vezes no fêmur); bloqueio estático controla rotação e encurtamento; ductilidade e rigidez; fosfato de cálcio osteocondutor; infecção precoce por S. aureus e Gram-negativos, biofilme, osteólise em 10 a 21 dias.",
+   "acesso": "gratis",
+   "minutos": 39,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-primeira-decisao-que-consolidacao-se-quer",
+     "titulo": "A primeira decisão: que consolidação se quer",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-biologia-da-consolidacao-direta-e-indireta",
+     "titulo": "A biologia da consolidação: direta e indireta",
+     "radar": "confirmado"
+    },
+    {
+     "id": "strain-de-perren",
+     "titulo": "Strain de PERREN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-materiais-rigidez-resistencia-ductilidade-e-f",
+     "titulo": "Os materiais: rigidez, resistência, ductilidade e fadiga",
+     "radar": "confirmado"
+    },
+    {
+     "id": "parafusos-anatomia-e-parafuso-de-tracao",
+     "titulo": "Parafusos: anatomia e parafuso de tração",
+     "radar": "confirmado"
+    },
+    {
+     "id": "placas-seis-funcoes-compressao-e-protecao",
+     "titulo": "Placas: seis funções, compressão e proteção",
+     "radar": "confirmado"
+    },
+    {
+     "id": "banda-de-tensao",
+     "titulo": "Banda de tensão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "placa-em-ponte-e-placa-bloqueada",
+     "titulo": "Placa em ponte e placa bloqueada",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hastes-intramedulares",
+     "titulo": "Hastes intramedulares",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fixador-externo",
+     "titulo": "Fixador externo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "substitutos-osseos-e-fosfato-de-calcio",
+     "titulo": "Substitutos ósseos e fosfato de cálcio",
+     "radar": "confirmado"
+    },
+    {
+     "id": "infeccao-apos-osteossintese",
+     "titulo": "Infecção após osteossíntese",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "conceitos-basicos-0235",
+    "conceitos-basicos-0224",
+    "conceitos-basicos-0237",
+    "conceitos-basicos-0001",
+    "conceitos-basicos-0070",
+    "conceitos-basicos-0091",
+    "conceitos-basicos-0280",
+    "conceitos-basicos-0273",
+    "conceitos-basicos-0143",
+    "conceitos-basicos-0175",
+    "conceitos-basicos-0206",
+    "conceitos-basicos-0034",
+    "conceitos-basicos-0056",
+    "conceitos-basicos-0290",
+    "conceitos-basicos-0410",
+    "conceitos-basicos-0057",
+    "conceitos-basicos-0144",
+    "conceitos-basicos-0017",
+    "conceitos-basicos-0003",
+    "conceitos-basicos-0253",
+    "conceitos-basicos-0027",
+    "conceitos-basicos-0081",
+    "conceitos-basicos-0120",
+    "conceitos-basicos-0031",
+    "conceitos-basicos-0018",
+    "trauma-0451",
+    "conceitos-basicos-0016",
+    "conceitos-basicos-0142",
+    "conceitos-basicos-0184",
+    "conceitos-basicos-0093",
+    "conceitos-basicos-0171",
+    "conceitos-basicos-0289"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Princípios de osteossíntese"
+   ]
+  },
+  {
    "id": "callaghan-anatomia-acessos",
    "versao": 1,
    "titulo": "Anatomia cirúrgica do quadril e acessos da artroplastia total",
@@ -2134,6 +2256,159 @@
    ]
   },
   {
+   "id": "campbell15-artroplastia-joelho",
+   "versao": 1,
+   "titulo": "Artroplastia total do joelho",
+   "especialidade": "joelho",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026)",
+   "capitulo": "Capítulo 8 · Arthroplasty of the Knee",
+   "resumo": "Contraindicações absolutas (sepse, foco remoto, mecanismo extensor deficiente, recurvato por fraqueza, artrodese indolor); fêmur distal em 5 a 7° de valgo e tíbia perpendicular ao eixo mecânico; rotação femoral externa de 3° em relação aos côndilos posteriores, paralela ao epicondilar e perpendicular ao eixo AP de WHITESIDE, com erro em rotação interna no valgo de côndilo lateral hipoplásico; abertura de 1 a 2 mm; liberações do valgo (trato iliotibial, canto posterolateral, poplíteo, LCL); valgo com flexo e paralisia fibular; incisão mais lateral; ramo infrapatelar do safeno; CCK com poste maior; RAND e AORI; MSIS (fístula e duas culturas); retenção com troca do polietileno só na infecção aguda, S. aureus contraindicação relativa; fratura de patela tipo I conservadora e tipo III com retirada do componente; RORABECK.",
+   "acesso": "gratis",
+   "minutos": 34,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "indicacoes-e-contraindicacoes",
+     "titulo": "Indicações e contraindicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pre-operatorio-e-medicacoes",
+     "titulo": "Pré-operatório e medicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "desenho-dos-implantes-cr-ps-cck-e-dobradica",
+     "titulo": "Desenho dos implantes: CR, PS, CCK e dobradiça",
+     "radar": "confirmado"
+    },
+    {
+     "id": "unicompartimental-osteotomia-e-patelofemoral",
+     "titulo": "Unicompartimental, osteotomia e patelofemoral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "acessos",
+     "titulo": "Acessos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "alinhamento-eixos-e-cortes",
+     "titulo": "Alinhamento: eixos e cortes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-rotacao-do-componente-femoral",
+     "titulo": "A rotação do componente femoral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "espacos-e-balanco-de-partes-moles",
+     "titulo": "Espaços e balanço de partes moles",
+     "radar": "confirmado"
+    },
+    {
+     "id": "defeitos-osseos",
+     "titulo": "Defeitos ósseos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "patela-recapear-ou-nao-e-o-trilhamento",
+     "titulo": "Patela: recapear ou não, e o trilhamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "situacoes-especiais",
+     "titulo": "Situações especiais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "infeccao-periprotetica-diagnostico",
+     "titulo": "Infecção periprotética: diagnóstico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "infeccao-periprotetica-tratamento",
+     "titulo": "Infecção periprotética: tratamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes-patelofemorais-e-do-mecanismo-exten",
+     "titulo": "Complicações patelofemorais e do mecanismo extensor",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes-neurovasculares",
+     "titulo": "Complicações neurovasculares",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fraturas-periproteticas",
+     "titulo": "Fraturas periprotéticas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "revisao-da-atj",
+     "titulo": "Revisão da ATJ",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tromboembolismo-sangue-e-dor",
+     "titulo": "Tromboembolismo, sangue e dor",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "joelho-0036",
+    "joelho-0039",
+    "joelho-0272",
+    "conceitos-basicos-0278",
+    "joelho-0167",
+    "joelho-0020",
+    "joelho-0244",
+    "joelho-0168",
+    "joelho-0248",
+    "trauma-1081",
+    "joelho-0082",
+    "joelho-0035",
+    "trauma-1027",
+    "trauma-1076",
+    "joelho-0245",
+    "joelho-0224",
+    "joelho-0126",
+    "joelho-0287",
+    "joelho-0251",
+    "joelho-0281",
+    "joelho-0303",
+    "joelho-0302",
+    "joelho-0217",
+    "joelho-0078",
+    "joelho-0191",
+    "trauma-1065",
+    "conceitos-basicos-0200",
+    "joelho-0322",
+    "joelho-0239",
+    "joelho-0183",
+    "joelho-0292",
+    "joelho-0090",
+    "joelho-0323"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Artroplastia total do joelho"
+   ]
+  },
+  {
    "id": "campbell15-espondilolistese",
    "versao": 1,
    "titulo": "Espondilólise e espondilolistese",
@@ -2256,6 +2531,134 @@
    "treino": [],
    "subtemas": [
     "Espondilólise e espondilolistese"
+   ]
+  },
+  {
+   "id": "campbell15-halux-valgo",
+   "versao": 1,
+   "titulo": "Hálux valgo",
+   "especialidade": "pe-tornozelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19)",
+   "capitulo": "Capítulo 87 · Disorders of the Hallux",
+   "resumo": "Limites normais (IMA 8 a 9°, HVA 15 a 20°, DMAA até 10 a 15°); acima de 30 a 35° o hálux prona e o abdutor migra para plantar; sesamoide fibular no primeiro espaço; congruente x incongruente; algoritmo (CHEVRON até IMA 15° e HVA 40°, abaixo de 50 anos, 1 mm de translação = 1° de IMA; proximal com HVA > 35° e IMA > 10°; SCARF 11 a 18° e 20 a 40°, com troughing; LAPIDUS no primeiro raio instável; artrodese MTF com IMA > 20° e HVA > 45°); AKIN para o interfalângico e DMAA alto; MITCHELL e chevron-AKIN; homem com início precoce; juvenil com DMAA alto e congruência; recidiva como complicação principal; hálux varo por excesso de ressecção, sesamoidectomia fibular e IMA zerado; hálux rígido (COUGHLIN e SHURNAS, queilectomia, artrodese em 25 a 30° em relação ao metatarso).",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-anatomia-patologica-como-o-primeiro-raio-desab",
+     "titulo": "A anatomia patológica: como o primeiro raio desaba",
+     "radar": "confirmado"
+    },
+    {
+     "id": "por-que-acontece-e-em-quem",
+     "titulo": "Por que acontece e em quem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-clinico-olhar-o-pe-inteiro",
+     "titulo": "O exame clínico: olhar o pé inteiro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiografia-e-os-angulos",
+     "titulo": "A radiografia e os ângulos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "congruencia-e-o-algoritmo-de-escolha",
+     "titulo": "Congruência e o algoritmo de escolha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "partes-moles-e-resseccao-mcbride-e-keller",
+     "titulo": "Partes moles e ressecção: McBRIDE e KELLER",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-osteotomia-de-akin",
+     "titulo": "A osteotomia de AKIN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-osteotomias-distais-mitchell-e-chevron",
+     "titulo": "As osteotomias distais: MITCHELL e CHEVRON",
+     "radar": "confirmado"
+    },
+    {
+     "id": "osteotomias-proximais-e-diafisarias-crescente-lu",
+     "titulo": "Osteotomias proximais e diafisárias: crescente, LUDLOFF e SCARF",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lapidus-a-artrodese-da-primeira-metatarsocuneifo",
+     "titulo": "LAPIDUS: a artrodese da primeira metatarsocuneiforme",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrodese-metatarsofalangica-no-halux-valgo",
+     "titulo": "Artrodese metatarsofalângica no hálux valgo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "situacoes-especiais-e-o-halux-valgo-juvenil",
+     "titulo": "Situações especiais e o hálux valgo juvenil",
+     "radar": "clinico"
+    },
+    {
+     "id": "complicacoes",
+     "titulo": "Complicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "halux-rigido-o-vizinho-de-capitulo",
+     "titulo": "Hálux rígido: o vizinho de capítulo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pe-tornozelo-0276",
+    "pe-tornozelo-0090",
+    "pe-tornozelo-0128",
+    "pe-tornozelo-0358",
+    "pe-tornozelo-0059",
+    "pe-tornozelo-0074",
+    "pe-tornozelo-0316",
+    "pe-tornozelo-0153",
+    "pe-tornozelo-0055",
+    "pe-tornozelo-0056",
+    "pe-tornozelo-0053",
+    "pe-tornozelo-0325",
+    "pe-tornozelo-0009",
+    "pe-tornozelo-0330",
+    "pe-tornozelo-0301",
+    "pe-tornozelo-0284",
+    "pe-tornozelo-0268",
+    "pe-tornozelo-0338",
+    "pe-tornozelo-0173",
+    "pe-tornozelo-0178",
+    "pe-tornozelo-0218",
+    "pe-tornozelo-0057",
+    "pe-tornozelo-0058",
+    "pe-tornozelo-0205",
+    "pe-tornozelo-0047",
+    "pe-tornozelo-0071",
+    "pe-tornozelo-0040",
+    "pe-tornozelo-0293"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Hálux valgo"
    ]
   },
   {
@@ -11906,6 +12309,131 @@
    ]
   },
   {
+   "id": "tachdjian6-displasias-sindromes",
+   "versao": 1,
+   "titulo": "Displasias esqueléticas e síndromes",
+   "especialidade": "pediatria",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed.",
+   "capitulo": "Capítulo 36 · Skeletal Dysplasias; Capítulo 37 · Orthopaedic-Related Syndromes",
+   "resumo": "Acondroplasia (FGFR3, AD, 90% espontânea, falha endocondral, epífises poupadas, estenose do forame magno e lombar, cifose toracolombar tratada com órtese); MED (atraso da marcha, epífises simétricas, patela dupla) e SED (tronco curto, odontoide); McKUSICK (cabelo fino, imunodeficiência, Finlândia); MPS (HURLER e MORQUIO as mais comuns; retardo em HURLER, HUNTER e SANFILIPPO; MORQUIO AR, queratan sulfato, inteligência normal, frouxidão, platispondilia e odontoide hipoplásico; IV-B beta-galactosidase; MAROTEAUX-LAMY 4-sulfatase); DOWN (instabilidade C1-C2 em cerca de 10% a 15%, epifisiólise com hipotireoidismo); NF1 periférica com pseudartrose da tíbia; café com leite em McCUNE-ALBRIGHT e JAFFE-CAMPANACCI; Proteus com hemi-hipertrofia; KLIPPEL-TRÉNAUNAY com sindactilia e tromboflebite; KLIPPEL-FEIL; DUCHENNE (extensores do quadril, GOWERS, MERYON) e facioescapuloumeral com deltoide preservado.",
+   "acesso": "gratis",
+   "minutos": 33,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "como-pensar-uma-displasia-forma-heranca-e-genes",
+     "titulo": "Como pensar uma displasia: forma, herança e genes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "acondroplasia",
+     "titulo": "Acondroplasia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hipocondroplasia-tanatoforica-e-pseudoacondropla",
+     "titulo": "Hipocondroplasia, tanatofórica e pseudoacondroplasia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "displasias-epifisarias-espondiloepifisaria-e-epi",
+     "titulo": "Displasias epifisárias: espondiloepifisária e epifisária múltipla",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diastrofica-kniest-condrodisplasia-punctata-e-o-",
+     "titulo": "Diastrófica, KNIEST, condrodisplasia punctata e o polegar do caroneiro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "condrodisplasias-metafisarias-e-a-forma-de-mckus",
+     "titulo": "Condrodisplasias metafisárias e a forma de McKUSICK",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mucopolissacaridoses-o-mapa-das-enzimas",
+     "titulo": "Mucopolissacaridoses: o mapa das enzimas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "morquio",
+     "titulo": "MORQUIO",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sindrome-de-down",
+     "titulo": "Síndrome de DOWN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "neurofibromatose",
+     "titulo": "Neurofibromatose",
+     "radar": "confirmado"
+    },
+    {
+     "id": "manchas-crescimento-excessivo-e-malformacoes-vas",
+     "titulo": "Manchas, crescimento excessivo e malformações vasculares",
+     "radar": "confirmado"
+    },
+    {
+     "id": "marfan-larsen-e-klippel-feil",
+     "titulo": "MARFAN, LARSEN e KLIPPEL-FEIL",
+     "radar": "confirmado"
+    },
+    {
+     "id": "distrofias-musculares-e-o-contraste-com-a-neurop",
+     "titulo": "Distrofias musculares e o contraste com a neuropatia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0503",
+    "pediatria-0337",
+    "pediatria-0353",
+    "pediatria-1067",
+    "pediatria-0504",
+    "pediatria-0051",
+    "pediatria-0428",
+    "pediatria-1071",
+    "tumores-0172",
+    "pediatria-0118",
+    "pediatria-0155",
+    "pediatria-0335",
+    "pediatria-0365",
+    "pediatria-0765",
+    "pediatria-0808",
+    "pediatria-0373",
+    "pediatria-0760",
+    "pediatria-0835",
+    "pediatria-0062",
+    "pediatria-0289",
+    "pediatria-0330",
+    "pediatria-0505",
+    "pediatria-0442",
+    "pediatria-0374",
+    "pediatria-0090",
+    "pediatria-0019",
+    "pediatria-0050",
+    "pediatria-0445",
+    "mao-0548",
+    "pediatria-0507"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Displasias esqueléticas e síndromes"
+   ]
+  },
+  {
    "id": "tachdjian6-escoliose-idiopatica",
    "versao": 1,
    "titulo": "Escoliose idiopática",
@@ -12194,6 +12722,150 @@
    ],
    "subtemas": [
     "Osteomielite aguda"
+   ]
+  },
+  {
+   "id": "tachdjian6-outras-congenitas",
+   "versao": 1,
+   "titulo": "Outras doenças congênitas",
+   "especialidade": "pediatria",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (2026)",
+   "capitulo": "Capítulo 12 · Disorders of the Upper Extremity (com os capítulos 16, 18, 19 e 21)",
+   "resumo": "AER mediada por FGF (FGF8), ZPA por SHH, cotovelo entre stylopodium e zeugopodium; SPRENGEL com escápula hipoplásica, glenoumeral normal e abdução limitada, omovertebral em cerca de um terço, CAVENDISH, WOODWARD reinserindo as origens mais abaixo e osteotomia da clavícula acima de 8 anos; clavícula direita, terço médio, meninas; cabeça do rádio posterior, bilateral e menor; sinostose proximal, em pronação, bilateral, observação na posição neutra; BAYNE e KLUG; sindactilia de borda cedo pela deformidade angular; macrodactilia fibrogordurosa; coxa vara sem predileção de sexo ou raça; DFFP com abdutores e extensores encurtados e hemimelia fibular; joelho em hiperextensão com quadríceps fibrótico, quadril luxado e pé torto; tíbia anterolateral com NF1 e periósteo fibroso, posteromedial com calcaneovalgo; metatarso aduto comum; sobrecrescimento no úmero e na fíbula.",
+   "acesso": "gratis",
+   "minutos": 34,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "embriologia-do-membro-o-broto-os-tres-eixos-e-a-",
+     "titulo": "Embriologia do membro: o broto, os três eixos e a rotação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-busca-das-anomalias-associadas",
+     "titulo": "A busca das anomalias associadas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "deformidade-de-sprengel-a-escapula-que-nao-desce",
+     "titulo": "Deformidade de SPRENGEL: a escápula que não desceu",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pseudartrose-congenita-da-clavicula",
+     "titulo": "Pseudartrose congênita da clavícula",
+     "radar": "confirmado"
+    },
+    {
+     "id": "luxacao-congenita-da-cabeca-do-radio",
+     "titulo": "Luxação congênita da cabeça do rádio",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sinostose-radioulnar-congenita",
+     "titulo": "Sinostose radioulnar congênita",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mao-torta-radial-deficiencia-longitudinal-radial",
+     "titulo": "Mão torta radial (deficiência longitudinal radial)",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sindactilia",
+     "titulo": "Sindactilia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "macrodactilia",
+     "titulo": "Macrodactilia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coxa-vara-do-desenvolvimento",
+     "titulo": "Coxa vara do desenvolvimento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "deficiencia-femoral-focal-proximal-dffp",
+     "titulo": "Deficiência femoral focal proximal (DFFP)",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hiperextensao-e-luxacao-congenita-do-joelho",
+     "titulo": "Hiperextensão e luxação congênita do joelho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-encurvamentos-da-tibia-e-a-pseudartrose-conge",
+     "titulo": "Os encurvamentos da tíbia e a pseudartrose congênita",
+     "radar": "confirmado"
+    },
+    {
+     "id": "metatarso-aduto",
+     "titulo": "Metatarso aduto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sobrecrescimento-osseo-do-coto-na-crianca",
+     "titulo": "Sobrecrescimento ósseo do coto na criança",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0495",
+    "pediatria-0203",
+    "coluna-0204",
+    "pediatria-0116",
+    "pediatria-0243",
+    "pediatria-0148",
+    "pediatria-0473",
+    "pediatria-0347",
+    "pediatria-0190",
+    "pediatria-0054",
+    "pediatria-0501",
+    "pediatria-0279",
+    "pediatria-0017",
+    "pediatria-0002",
+    "pediatria-0091",
+    "pediatria-0280",
+    "pediatria-0047",
+    "pediatria-0061",
+    "pediatria-0014",
+    "pediatria-0494",
+    "pediatria-0060",
+    "mao-0307",
+    "pediatria-0446",
+    "pediatria-0316",
+    "pediatria-0117",
+    "pediatria-0359",
+    "pediatria-0201",
+    "pediatria-0328",
+    "pediatria-0323",
+    "pediatria-0453",
+    "pediatria-0025",
+    "pediatria-0358",
+    "pediatria-0046",
+    "pediatria-0110",
+    "pediatria-0053",
+    "pediatria-0423",
+    "pediatria-0162",
+    "pediatria-0189",
+    "pediatria-0653"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Outras doenças congênitas"
    ]
   },
   {
