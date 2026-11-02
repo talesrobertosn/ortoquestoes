@@ -482,18 +482,19 @@
   "conferido": false
  },
  "trauma-0017": {
+  "conceito": "O enunciado pede um sinal radiográfico no perfil do cotovelo, o duplo crescente (ou duplo arco), e a pergunta real é qual fragmento desenha dois arcos sobrepostos. Dois arcos só aparecem se o fragmento levar duas superfícies curvas: a do capítulo e a da tróclea.\n\n**O que o livro descreve** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1577 a 1578). Na classificação de BRYAN e MORREY, o tipo I (HAHN-STEINTHAL) leva o capítulo com boa parte do osso subcondral, e McKEE acrescentou o tipo IV: o tipo I com extensão medial que inclui a metade lateral da tróclea. O capítulo é a face lateral do segmento articular e a tróclea é a porção medial, de modo que um fragmento que pega os dois tem duas curvas contíguas no perfil. RING mostrou que a fratura aparentemente isolada do capítulo na radiografia pode ser complexa na tomografia, por isso o perfil e a TC com reconstrução 3D importam (PDF 1569 a 1570 e 1579).\n\n**Raciocínio da questão.** Isolada do capítulo daria um arco só; isolada da tróclea é raríssima (o livro a chama ainda mais rara que a do capítulo); o epicôndilo medial é extra-articular e nem faz parte do segmento que desenha curvas no perfil. Sobra a fratura do capítulo com extensão para a tróclea, o tipo IV de McKEE, que é o gabarito.\n\nO tipo IV está na seção \"Capítulo e tróclea: as classificações das fraturas de cisalhamento\" do resumo.",
+  "correta": "**D) do capítulo com extensão para tróclea.** É o fragmento que carrega as duas superfícies curvas, a do capítulo e a da tróclea lateral, e por isso desenha dois arcos no perfil. Corresponde ao tipo IV de McKEE.",
   "incorretas": {
-   "A": "A fratura isolada da tróclea é rara e não forma o duplo arco.",
-   "B": "O capítulo isolado forma um único arco no perfil.",
-   "C": "A fratura do epicôndilo medial não produz o sinal."
+   "A": "**Isolada da tróclea** é a fratura articular mais rara do úmero distal; o fragmento teria uma única curva, a da polia, e não explica dois arcos.",
+   "B": "**Isolada do capítulo** projeta só o arco do capítulo no perfil; o fragmento é o tipo I de HAHN-STEINTHAL, de um único contorno.",
+   "C": "**Do epicôndilo medial** é fratura do polo não articular da coluna medial; o epicôndilo não tem cartilagem articular e não gera arcos de superfície."
   },
-  "conceito": "As **fraturas do capítulo** ocorrem no **plano coronal**: o fragmento sobe e fica anterior ao úmero na radiografia em perfil. A classificação de **Bryan e Morrey** (modificada por McKee):\n\n**tipo I, Hahn-Steinthal**: grande parte óssea do capítulo;\n\n**tipo II, Kocher-Lorenz**: lasca osteocondral fina;\n\n**tipo III**: cominutiva;\n\n**tipo IV, McKee**: o capítulo **com extensão para a tróclea**.\n\n**O sinal do duplo crescente** (ou duplo arco): no perfil do cotovelo, aparecem **dois arcos** subcondrais sobrepostos no mesmo fragmento. Um é o **capítulo**, e o outro é a **crista lateral da tróclea**. Ele mostra que o traço avança para a tróclea: tipo IV de McKee.\n\n**Dubberley** separa os tipos 1 a 3 pela extensão e acrescenta A (sem cominução posterior) e B (com cominução posterior).\n\n**A conduta**: **TC** sempre, para planejar. Tratamento com **redução aberta e fixação** com parafusos sem cabeça (de anterior para posterior ou de posterior para anterior); **artroplastia** no idoso com cominução.\n\n**Na prova**: o sinal do duplo crescente indica fratura do **capítulo com extensão para a tróclea**.",
-  "correta": "O segundo arco é a crista lateral da tróclea no mesmo fragmento do capítulo: tipo IV de McKee.",
   "referencias": [
-   "https://pubmed.ncbi.nlm.nih.gov/8550679/",
-   "https://pubmed.ncbi.nlm.nih.gov/35789821/"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1569 a 1570 e 1577 a 1579",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "O sinal do duplo crescente ou duplo arco não é citado no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39) nem no Campbell's Operative Orthopaedics, 15ª ed.; a associação com a fratura do capítulo que se estende à tróclea (tipo IV de McKEE, PDF 1577 a 1578) é inferência coerente com a descrição dos fragmentos, e o gabarito oficial (D) foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0018": {
@@ -2294,18 +2295,20 @@
   }
  },
  "trauma-0075": {
+  "conceito": "O cenário reúne três coisas que empurram a decisão: fratura articular completa e cominutiva (AO C3), osso osteoporótico e paciente idoso. A pergunta é qual conduta dá o melhor resultado, e as alternativas misturam a escolha entre fixar e substituir com a escolha entre dois desenhos de placa.\n\n**O que o livro diz sobre fixar ou substituir** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39, PDF 1617 e 1625). A RAFI é o padrão-ouro, mas no idoso osteopênico com cominuição e fragmentação articular a fixação rígida pode não permitir movimento precoce, e a imobilização prolongada leva a mau resultado; então a artroplastia total é opção confiável. O único ensaio randomizado (McKEE) mostrou MEPS melhor na artroplastia aos 2 anos, com DASH igual; BAIK, acima de 65 anos, achou RAFI melhor, e LOPIZ achou 60% de reoperação da artroplastia aos 72 meses. O Campbell resume que a artroplastia teve melhor resultado funcional que a RAFI em 2 anos (Campbell's Operative Orthopaedics, 15ª ed., cap. 62, p. 2794).\n\n**Ortogonais ou paralelas.** O Rockwood afirma que não há superioridade clínica entre as duas montagens (PDF 1606 a 1614); a ortogonal (90-90) foi popularizada pela AO e o Campbell a descreve como o padrão, com a paralela, de 180 graus, mais rígida em carga axial (cap. 62, p. 2797). Já o saco de ossos fica para o idoso de baixa demanda e clinicamente inapto.\n\nAs opções estão nas seções \"Técnica de fixação: placas paralelas e ortogonais\" e \"Artroplastia total do cotovelo e hemiartroplastia no idoso\" do resumo.",
+  "correta": "**D) RAFI com placas bloqueadas ortogonais.** É o gabarito oficial: a montagem 90-90 popularizada pela AO, com placas bloqueadas para o osso osteopênico; ver o alerta sobre o que os livros sustentam.",
   "incorretas": {
-   "A": "O ensaio de McKee mostrou melhor função com a artroplastia nas fraturas C3 irreconstruíveis do idoso, mas a banca não aceitou.",
-   "B": "As placas paralelas têm resultados clínicos semelhantes às ortogonais.",
-   "C": "O tratamento conservador fica para quem não tem condições cirúrgicas."
+   "A": "**Artroplastia total do cotovelo** é a conduta que o ensaio de McKEE e o Campbell apoiam no idoso osteopênico cominutivo, mas os resultados são contraditórios a longo prazo (reoperação alta em LOPIZ) e o gabarito oficial a descarta; ver o alerta.",
+   "B": "**RAFI com placas bloqueadas paralelas** é biomecanicamente a mais rígida em carga axial, mas o livro não vê diferença clínica entre paralela e ortogonal, e o gabarito escolheu a outra montagem.",
+   "C": "**Tratamento conservador (saco de ossos)** serve ao idoso de baixa demanda com comorbidades e, no estudo de DESLOGES, deu bom resultado em 68%; não é a conduta de melhor resultado clínico."
   },
-  "conceito": "A **fratura AO-C3 do úmero distal** no **idoso com osteoporose** junta dois problemas: **cominução articular** e **osso frágil**. Conseguir uma fixação estável é difícil.\n\n**As opções**:\n\n**redução aberta e fixação interna** (RAFI) com **duas placas bloqueadas**: a primeira escolha quando dá para conseguir uma fixação estável;\n\n**artroplastia total do cotovelo**: o ensaio de McKee (2009) mostrou **melhor função** que a RAFI nas fraturas C3 do idoso com osso muito frágil;\n\n**tratamento conservador** (\"saco de ossos\"): só em quem não tem condições cirúrgicas.\n\n**As placas**:\n\n**ortogonais** (medial e posterolateral, a 90°);\n\n**paralelas** (medial e lateral): mais rígidas em alguns estudos biomecânicos;\n\nos **resultados clínicos** das duas montagens são **semelhantes**.\n\n**Os princípios de O'Driscoll**: parafusos **longos**, o maior número possível no fragmento **distal**, **interdigitados** entre as placas, que formam um arco.\n\n**Na prova**: a banca considerou a **RAFI com placas bloqueadas ortogonais**.",
-  "correta": "A banca considerou que a RAFI com placas bloqueadas ortogonais dá o melhor resultado nessa fratura.",
-  "alerta": "O ensaio de McKee e colaboradores (2009) mostrou melhor função com artroplastia total do cotovelo que com RAFI nas fraturas C3 do idoso com osso muito frágil. A RAFI segue como primeira escolha quando a fixação estável é possível, e placas paralelas e ortogonais têm resultados clínicos semelhantes. A banca indicou placas ortogonais.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 38"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1606 a 1614, 1617 e 1625",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 62 (Fractures of the Shoulder, Arm, and Forearm), p. 2794 e 2797",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
   ],
-  "geradoEm": "2026-10-04",
+  "alerta": "O gabarito oficial é a RAFI com placas bloqueadas ortogonais (D). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39, PDF 1625) relata o ensaio de McKEE com MEPS melhor na artroplastia total e o Campbell (cap. 62, p. 2794) diz que a artroplastia teve melhor resultado funcional que a RAFI aos 2 anos; o Rockwood também diz que não há diferença clínica entre placas paralelas e ortogonais (PDF 1614). Pelos livros, a resposta mais sustentada seria a artroplastia total (A). O gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0076": {
@@ -3145,14 +3148,20 @@
   "conferido": false
  },
  "trauma-0103": {
+  "conceito": "O capítulo é o fragmento articular da coluna lateral, coberto de cartilagem na frente e embaixo, com irrigação vinda da arcada lateral. A pergunta pede a complicação mais frequente depois da fratura dele, e as quatro alternativas são complicações reais que o livro lista; o que falta é um ranking.\n\n**O que as fontes dizem** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39, PDF 1566 a 1567 e 1617). Para o úmero distal em geral, o Rockwood lista consolidação viciosa, pseudartrose, contratura, necrose avascular, ossificação heterotópica, falha de fixação e implante proeminente. O Campbell, no Box 62.6, lista rigidez (sobretudo se imobilizado por mais de 2 a 3 semanas), neuropatia ulnar, artrose, osteonecrose, implante sintomático e problemas de ferida (Campbell's Operative Orthopaedics, 15ª ed., cap. 62, p. 2799). A fixação do capítulo dá resultados previsivelmente bons nas fraturas simples e piora com a complexidade e a cominuição posterior; a série da via anterior consolidou sem osteonecrose (PDF 1602 e 1617).\n\n**O raciocínio.** Num cotovelo, que é uma articulação muito intolerante à imobilização e à cicatriz capsular, a perda de movimento é a sequela mais universal. Pseudartrose do capítulo é incomum porque o osso subcondral esponjoso consolida; a consolidação viciosa é rara quando o fragmento é fixado.\n\nEsta discussão está na seção \"Capítulo e tróclea: tratamento e complicações\" do resumo.",
+  "correta": "**D) diminuição da mobilidade articular.** A rigidez do cotovelo é a complicação mais lembrada nas fraturas articulares do úmero distal e, nesta questão, o gabarito oficial.",
   "incorretas": {
-   "A": "A pseudartrose do capítulo é rara.",
-   "B": "A necrose avascular é temida, mas pouco frequente.",
-   "C": "A consolidação viciosa é menos comum que a rigidez."
+   "A": "**Pseudartrose** é típica do nível supracondiliano, e raramente intra-articular; o bloco do capítulo, esponjoso, consolida bem.",
+   "B": "**Necrose avascular** é o risco próprio do fragmento solto, que perde a irrigação, mas é descrita como complicação possível e não como a mais frequente; a série da via anterior não teve osteonecrose.",
+   "C": "**Consolidação viciosa** é complicação citada para o úmero distal em geral, mas a fixação anatômica do capítulo a evita; não lidera a lista."
   },
-  "conceito": "As **fraturas do capítulo** são intra-articulares e ocorrem no **plano coronal**: o fragmento sobe e fica à frente do úmero. A classificação de **Bryan e Morrey** (modificada por McKee) separa: I grande fragmento ósseo (Hahn-Steinthal); II lasca osteocondral (Kocher-Lorenz); III cominutiva; IV com extensão para a tróclea (sinal do duplo crescente).\n\n**O tratamento**: **TC** para planejar e **redução aberta com fixação** (parafusos sem cabeça de anterior para posterior, ou de posterior para anterior); artroplastia no idoso com cominução.\n\n**A complicação mais frequente**: a **diminuição da mobilidade** do cotovelo. A fratura articular, a cirurgia e a imobilização levam à **rigidez**, sobretudo à perda de extensão. A **mobilização precoce**, possível com fixação estável, é a melhor prevenção.\n\n**As outras complicações**: a **necrose avascular** do fragmento é temida, mas pouco frequente; a **pseudartrose** é rara; a **consolidação viciosa** é menos comum que a rigidez. Também podem ocorrer ossificação heterotópica e artrose.\n\n**Na prova**: a complicação mais frequente após a fratura do capítulo é a **diminuição da mobilidade articular**.",
-  "correta": "A rigidez do cotovelo, sobretudo a perda de extensão, é a complicação mais comum; a mobilização precoce a reduz.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1566 a 1567, 1602 e 1617",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 62 (Fractures of the Shoulder, Arm, and Forearm), Box 62.6, p. 2799",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
+  ],
+  "alerta": "Nem o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39, PDF 1566 a 1567 e 1617) nem o Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, Box 62.6, p. 2799) dizem qual complicação é a mais frequente após a fratura do capítulo; os dois citam rigidez e osteonecrose entre as complicações. O gabarito oficial (D) foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0104": {
@@ -3290,29 +3299,34 @@
   }
  },
  "trauma-0108": {
+  "conceito": "O nervo mais lesionado costuma ser aquele que passa mais perto do osso e do implante. No úmero distal do adulto, esse nervo corre colado à coluna medial, atrás do epicôndilo, dentro do túnel cubital: o ulnar.\n\n**O que o livro diz** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39, PDF 1569, 1581 e 1638). O nervo ulnar é o mais comumente acometido nas fraturas do úmero distal, na própria fratura, na cirurgia e no pós-operatório. GOFTON encontrou neuropatia ulnar incompleta em 26% dos pacientes já na chegada; o nervo perfura o septo intermuscular medial no terço médio do braço, passa sob a arcada de STRUTHERS (em 70%, cerca de 8 cm proximais ao epicôndilo medial) e entra no túnel entre o epicôndilo medial, o olécrano e o ligamento de OSBORNE. Depois da cirurgia a neuropatia ulnar é a complicação neurológica mais comum, e o prognóstico é bom, mas nem sempre há retorno ao normal.\n\n**Distratores clássicos.** O radial é o nervo da diáfise do úmero (fratura de HOLSTEIN-LEWIS); o interósseo anterior, ramo do mediano, é o da supracondiliana em extensão na criança; o interósseo posterior é ramo do radial que corre junto da cabeça do rádio e do vão lateral, e não o primeiro risco do úmero distal.\n\nO assunto está na seção \"Nervo ulnar: o nervo do úmero distal\" do resumo.",
+  "correta": "**A) Ulnar.** É o nervo mais acometido nas fraturas do úmero distal, pela proximidade da coluna medial e do túnel cubital.",
   "incorretas": {
-   "B": "O radial é o mais lesado na fratura da diáfise do úmero.",
-   "C": "O interósseo anterior é típico da supracondiliana da criança.",
-   "D": "O interósseo posterior é lesado nas fraturas da cabeça do rádio e na Monteggia."
+   "B": "**Radial** é o nervo da fratura da diáfise do úmero (espiral, junto de HOLSTEIN-LEWIS); no úmero distal ele só entra em risco com placas laterais longas.",
+   "C": "**Interósseo anterior** é um ramo do mediano, lembrado na supracondiliana em extensão da criança; no adulto o mediano é protegido pelo braquial.",
+   "D": "**Interósseo posterior** é um ramo profundo do radial e corre junto à cabeça do rádio e ao supinador, longe do foco da fratura do úmero distal."
   },
-  "conceito": "O **nervo ulnar** passa **atrás do epicôndilo medial**, no túnel cubital, encostado no osso. Na **fratura do terço distal do úmero** do adulto, ele é o nervo **mais acometido**: pelo trauma, pela manipulação e pela cirurgia.\n\n**Os nervos por região**:\n\n**úmero distal do adulto**: **ulnar**;\n\n**diáfise do úmero**: **radial**, no sulco espiral (fratura de Holstein-Lewis no terço distal);\n\n**supracondiliana da criança**: **interósseo anterior** (ramo do mediano), na extensão;\n\n**cabeça do rádio** e **Monteggia**: **interósseo posterior**.\n\n**A conduta na cirurgia**: **identificar e proteger** o ulnar em toda redução aberta do úmero distal; muitos cirurgiões o **transpõem** para a frente no fim, para não ficar sobre a placa medial. A via é **posterior**, com osteotomia do olécrano ou paratricipital.\n\n**Na prova**: na fratura do terço distal do úmero no adulto, o nervo mais acometido é o **ulnar**.",
-  "correta": "O ulnar fica encostado no epicôndilo medial e é lesado pela fratura e pela cirurgia do úmero distal.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1569, 1581 e 1638",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 62 (Fractures of the Shoulder, Arm, and Forearm), Box 62.6, p. 2799",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0109": {
-  "conceito": "**A lógica da classificação AO/OTA.** Cada osso recebe um número e cada segmento outro. O úmero é **1**, e o segmento distal é **3**: o úmero distal é, portanto, **13**. As fraturas de cada segmento articular são divididas em três tipos:\n- **A, extra-articular**: o traço não atinge a superfície articular;\n- **B, articular parcial**: parte da superfície articular continua presa à diáfise;\n- **C, articular completa**: toda a superfície articular está separada da diáfise.\n\n**O tipo B no úmero distal.**\n\n| Grupo | Plano do traço | Exemplo |\n|---|---|---|\n| B1 | Sagital, lateral | Fratura do côndilo lateral |\n| B2 | Sagital, medial | Fratura do côndilo medial |\n| **B3** | **Frontal (coronal)** | **Capítulo**, tróclea ou ambos |\n\n**Por que o capítulo é B3.** A fratura do capítulo ocorre por carga axial transmitida pela cabeça do rádio, com o cotovelo em semiflexão, que cisalha o capítulo no **plano coronal**. O fragmento articular desloca-se para a frente e para cima, para a fossa radial, e o restante do úmero (incluindo os epicôndilos) permanece ligado à diáfise. Como a lesão é articular, mas parcial, e o traço é frontal, ela cai no grupo **13-B3**.\n\n**Classificações próprias do capítulo.**\n- **Bryan e Morrey**: tipo I (Hahn-Steinthal, fragmento grande com osso subcondral), tipo II (Kocher-Lorenz, lâmina fina de cartilagem), tipo III (cominutiva) e tipo IV (McKee, estende-se à tróclea).\n- **Dubberley**: considera a extensão para a tróclea e a cominuição posterior.\n\n**Sinal radiográfico.** No perfil, o fragmento aparece anterior ao úmero e o **sinal do duplo arco** (a curva do osso subcondral do capítulo e da tróclea lateral) indica extensão para a tróclea.\n\n**Tratamento.** Fragmentos desviados: redução aberta e fixação com parafusos sem cabeça, de anterior para posterior ou de posterior para anterior. Fragmentos muito pequenos ou cominutivos podem ser excisados.",
-  "correta": "**Correta: D (B3).** A fratura do capítulo é articular parcial (tipo B) com traço no **plano frontal (coronal)**, o que a classifica como **13-B3** na AO/OTA.",
+  "conceito": "A AO dá ao úmero distal o código 13 e a letra diz se a fratura é fora da articulação, em parte dela ou em toda ela. O capítulo é um segmento articular lateral, e a pergunta é onde a AO o coloca nessa lógica.\n\n**A divisão** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1570 a 1577). O tipo A é extra-articular (epicôndilos ou metáfise, cerca de um quarto das fraturas). O tipo B é parcial articular: há continuidade entre a diáfise e parte do segmento articular. Dentro dele, B1 é a coluna lateral e B2 a coluna medial (juntas cerca de 15%), e B3 reúne as fraturas de cisalhamento do capítulo, da tróclea ou de ambos, subdivididas em capitelares (B3.1), trocleares (B3.2) e combinadas (B3.3). O tipo C é articular completa, sem continuidade entre a articulação e a diáfise.\n\n**O raciocínio.** A fratura do capítulo é um plano sagital ou coronal que solta só a superfície articular lateral, o que é exatamente o cisalhamento de B3. Quem confunde o capítulo com B1 está pensando em localização lateral; B1 é a coluna lateral inteira, um traço vertical que sai da metáfise e entra na articulação, e não o cisalhamento isolado do capítulo.\n\nA tabela de divisões está na seção \"Classificação AO 13 e as outras classificações das colunas\" do resumo.",
+  "correta": "**D) B3.** Cisalhamento do capítulo, da tróclea ou de ambos é o grupo B3 da AO 13, subdividido em capitelar, troclear e combinado.",
   "incorretas": {
-   "A": "**A1** é extra-articular, a avulsão apofisária dos epicôndilos. A fratura do capítulo é intra-articular.",
-   "B": "**B1** é a fratura articular parcial em **plano sagital lateral**, a do côndilo lateral, que leva o epicôndilo lateral junto.",
-   "C": "**B2** é a fratura articular parcial em **plano sagital medial**, a do côndilo medial."
+   "A": "**A1** pertence ao tipo extra-articular (epicôndilos e metáfise), em que a articulação não é atingida; a fratura do capítulo é articular.",
+   "B": "**B1** é a fratura da coluna lateral, um traço vertical que separa a coluna do restante, e não o cisalhamento do capítulo.",
+   "C": "**B2** é a fratura da coluna medial, que vai ao epicôndilo medial e à tróclea medial, longe do capítulo."
   },
   "referencias": [
-   "Meinberg EG, Agel J, Roberts CS, Karam MD, Kellam JF. Fracture and Dislocation Classification Compendium-2018. J Orthop Trauma. 2018;32 Suppl 1:S1-S170.",
-   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas do úmero distal"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1570 a 1577 e 1611 a 1613",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0110": {
@@ -4662,18 +4676,18 @@
   }
  },
  "trauma-0154": {
-  "conceito": "**As fraturas do capítulo.** Ocorrem no plano **coronal**, por **cisalhamento**: com o cotovelo em semiflexão, a cabeça do rádio bate no capítulo e o empurra para cima e para a frente, para a fossa radial. São fraturas articulares parciais (AO 13-B3), mais comuns em mulheres.\n\n**A classificação de Bryan e Morrey, com a modificação de McKee.**\n\n| Tipo | Nome | Descrição |\n|---|---|---|\n| I | **Hahn-Steinthal** | Grande fragmento do capítulo, com bastante osso subcondral |\n| II | **Kocher-Lorenz** | Lasca **osteocondral fina**, com pouco osso (mais cartilagem) |\n| III | (Broberg e Morrey) | **Cominutiva** |\n| **IV** | **McKee** | Fragmento do capítulo que se **estende para a tróclea**, envolvendo a maior parte dela |\n\n**O sinal do duplo arco.** No **perfil** do cotovelo, o tipo IV mostra o **sinal do duplo arco**: duas linhas curvas de osso subcondral, uma do capítulo e outra da porção lateral da tróclea, que sobem juntas para a fossa radial. Esse sinal indica que a fratura não é só do capítulo.\n\n**A tomografia** é essencial para avaliar a extensão para a tróclea, a cominuição posterior e as lesões associadas (cabeça do rádio, ligamento colateral lateral), e para planejar a fixação. A classificação de **Dubberley** detalha esses aspectos.\n\n**Tratamento.**\n- Fragmentos com osso suficiente (tipos I e IV): **redução aberta e fixação** com **parafusos sem cabeça** (de anterior para posterior, enterrados na cartilagem) ou parafusos de posterior para anterior, e placas posterolaterais quando há cominuição.\n- Fragmentos finos ou cominutivos impossíveis de fixar: **excisão**, se pequenos.\n- Idosos com cominuição grave: **artroplastia** total ou hemiartroplastia distal do úmero.\n- Mobilização precoce para evitar rigidez, a complicação mais comum.",
-  "correta": "**Correta: D (tipo IV).** Na classificação de Bryan e Morrey modificada por McKee, a fratura do capítulo que se estende para a **maior parte da tróclea** é o tipo IV, identificada pelo sinal do duplo arco no perfil.",
+  "conceito": "A frase da questão descreve o fragmento: cisalhamento do capítulo, mas levando junto a maior parte da tróclea. Na sequência de HAHN-STEINTHAL a McKEE, o tipo é escolhido pelo que o fragmento carrega, e este carrega mais que o capítulo.\n\n**A sequência** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1577 a 1578). HAHN, em 1853, e STEINTHAL, em 1898, descreveram o tipo I: superfície articular do capítulo com boa porção de osso subcondral, o fragmento grande que aceita parafuso. O tipo II, de KOCHER e LORENZ, é raro e leva só a cartilagem com uma fina casca óssea, quase osteocondral. BRYAN e MORREY acrescentaram o tipo III, cominutivo. McKEE, por fim, acrescentou o tipo IV: o tipo I com extensão medial que inclui a metade lateral da tróclea. A classificação AO, para a mesma lesão, chama de B3 (capitelar, troclear ou combinada).\n\n**Por que o IV existe.** Muitas fraturas que parecem do capítulo carregam um pedaço da tróclea, e isso muda a exposição (a via lateral pode não bastar) e a fixação. RING descreveu o espectro: o padrão I, capítulo mais parte lateral da tróclea, é o antigo tipo IV (PDF 1577 a 1579).\n\nO quadro dos quatro tipos está na seção \"Capítulo e tróclea: as classificações das fraturas de cisalhamento\" do resumo.",
+  "correta": "**D) IV.** Capítulo mais a maior parte (metade lateral) da tróclea é o tipo I com extensão medial, acrescentado por McKEE.",
   "incorretas": {
-   "A": "O **tipo I** (Hahn-Steinthal) é um grande fragmento do capítulo com osso subcondral, sem extensão significativa para a tróclea.",
-   "B": "O **tipo II** (Kocher-Lorenz) é uma lasca osteocondral fina, com pouco osso.",
-   "C": "O **tipo III** é a fratura **cominutiva** do capítulo."
+   "A": "**Tipo I** é o capítulo com o osso subcondral, sem comprometer a tróclea; descreve o fragmento de HAHN e STEINTHAL.",
+   "B": "**Tipo II** é a casca osteocondral fina de KOCHER e LORENZ, rara; nada na descrição sugere fragmento só cartilaginoso.",
+   "C": "**Tipo III** é a fratura cominutiva do capítulo, acrescentada por BRYAN e MORREY; o enunciado fala de um fragmento que se estende à tróclea, não de cominuição."
   },
   "referencias": [
-   "McKee MD, Jupiter JB, Bamberger HB. Coronal shear fractures of the distal end of the humerus. J Bone Joint Surg Am. 1996;78(1):49-54.",
-   "Rockwood and Green's Fractures in Adults, 9ª edição, capítulo de fraturas do úmero distal"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1577 a 1579",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0155": {
@@ -6135,14 +6149,19 @@
   "conferido": false
  },
  "trauma-0211": {
+  "conceito": "A via de BRYAN-MORREY é conhecida como poupadora do tríceps, nome que confunde: ela solta o tendão, mas o solta inteiro, junto com o periósteo da ulna e o ancôneo. O que a questão cobra é para que se usa esse retalho.\n\n**O que o livro diz** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39, PDF 1622). O tríceps é desinserido em continuidade com o periósteo ulnar e o ancôneo, de medial para lateral, como uma manga refletida, e exige reparo transósseo na volta. A grande vantagem é a melhor visão da ulna proximal, que é o que o componente ulnar da prótese precisa; por isso é a via usada na artroplastia total do cotovelo. Os autores, por preferência, evitam desinserir o tríceps e usam a paraolecraniana lateral para a artroplastia direta; a divisão do tríceps quando tentam uma RAFI completa com a artroplastia como saída (PDF 1622). O Campbell inclui a divisão e a reflexão do tríceps entre as vias para RAFI ou substituição total (Campbell's Operative Orthopaedics, 15ª ed., cap. 62, p. 2794 a 2796).\n\n**Situações que se confundem.** Fratura coronal anterior do capítulo pede abordagem lateral ou anterior limitada; osteotomia prévia do olécrano e lesão prévia do tríceps são situações em que o tríceps já está aberto ou lesado e se escolhem outros recursos, como a língua de VAN GORDER.\n\nEstá na seção \"Vias de acesso e olecranotomia\" do resumo.",
+  "correta": "**B) substituição artroplástica total do cotovelo.** A reflexão do tríceps de BRYAN-MORREY dá a melhor exposição da ulna proximal para o componente ulnar.",
   "incorretas": {
-   "A": "A fratura coronal do capítulo é abordada pela via lateral.",
-   "C": "A osteotomia prévia do olécrano não define a indicação dessa via.",
-   "D": "A lesão prévia do tríceps contraindica soltá-lo do olécrano."
+   "A": "**Fixação de fratura coronal anterior do capítulo** pede via lateral (KOCHER) ou anterior limitada, que mostram a frente do capítulo; a via posterior refletida não é o caminho.",
+   "C": "**Presença de osteotomia prévia do olécrano** não é indicação: com o olécrano já osteotomizado e consolidado, a reflexão não acrescenta o que a via oferece.",
+   "D": "**Presença de lesão prévia do tríceps braquial** pede a língua de VAN GORDER ou a divisão do tríceps, que aproveitam a laceração; BRYAN-MORREY não nasceu para isso."
   },
-  "conceito": "As **vias posteriores** do cotovelo diferem na forma de lidar com o **tríceps** e o **olécrano**:\n\n**osteotomia do olécrano**: a melhor exposição da superfície articular; para fraturas articulares complexas do úmero distal (C3);\n\n**paratricipital** (Alonso-Llames): trabalha dos dois lados do tríceps sem soltá-lo; para fraturas extra-articulares e articulares simples;\n\n**Bryan-Morrey**: o tríceps é **refletido** de medial para lateral, em continuidade com o ancôneo, soltando-o do olécrano;\n\n**TRAP** (tríceps refletido com o ancôneo como retalho) e **divisão do tríceps**.\n\n**A indicação da Bryan-Morrey**: a **artroplastia total do cotovelo**. Ela expõe bem o úmero distal e a **ulna proximal** sem cortar o olécrano, que precisa ficar **íntegro** para apoiar o componente ulnar.\n\n**Os outros cenários**: a fratura coronal do capítulo é abordada pela via **lateral** (Kocher ou Kaplan); um tríceps já lesado **contraindica** soltá-lo.\n\n**Na prova**: a via de Bryan-Morrey é indicada na **artroplastia total do cotovelo**.",
-  "correta": "A reflexão do tríceps expõe o úmero distal e a ulna sem osteotomia, preservando o olécrano para o componente ulnar.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1594, 1599 e 1622",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 62 (Fractures of the Shoulder, Arm, and Forearm), p. 2794 a 2796",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0212": {
@@ -10196,17 +10215,18 @@
   }
  },
  "trauma-0430": {
+  "conceito": "Fratura exposta do úmero distal tem um padrão de feridas que costuma enganar quem pensa na supracondiliana da criança. Em vez de a ponta proximal furar a frente do cotovelo, no adulto a ferida fica atrás.\n\n**O que o livro diz** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39, PDF 1569 e 1634). Cerca de 7% das fraturas do úmero distal são expostas, e as comuns são puntiformes, grau I, de dentro para fora, localizadas na face posterior ou posterolateral do cotovelo e associadas à laceração do tríceps: a ponta do fragmento diafisário perfura o tríceps e a pele posterior. Isso tem consequência cirúrgica: com o tríceps lacerado, preferem-se a língua de VAN GORDER ou a divisão do tríceps, para não lesar o extensor uma segunda vez com a osteotomia, e grandes fragmentos articulares, mesmo expostos, são preservados. Na série de McKEE com 26 fraturas expostas, a infecção foi de 11% e o retardo de consolidação, de 15%.\n\nEstá na seção \"Fratura exposta, pseudartrose e as outras complicações\" do resumo.",
+  "correta": "**D) posterior.** A ferida, em geral puntiforme, fica atrás ou posterolateral e se associa à laceração do tríceps.",
   "incorretas": {
-   "A": "A face lateral é coberta pelos extensores que nascem no epicôndilo lateral.",
-   "B": "A face medial é coberta pelos flexores que nascem no epicôndilo medial.",
-   "C": "A face anterior é protegida pelo braquial e pelo bíceps."
+   "A": "**Lateral** aparece como a região posterolateral, mas o enunciado pede a região mais frequente, que é a posterior no conjunto.",
+   "B": "**Medial** é a face do ulnar e do ligamento colateral medial; o livro não a descreve como sede comum da exposição.",
+   "C": "**Anterior** lembra a supracondiliana da criança, em que o fragmento proximal ameaça braquial e vasos; no adulto o mediano e o feixe vascular ficam protegidos pelo braquial."
   },
-  "conceito": "Na fratura **exposta** do úmero **distal**, a ferida aparece onde a **cobertura de partes moles é menor**.\n\n**A face posterior**: atrás do úmero distal estão apenas o **tendão do tríceps**, a gordura e a pele, sobre o **olécrano** e a fossa do olécrano. É a face mais **fina**.\n\n**O mecanismo**: queda sobre o **cotovelo fletido** ou trauma de alta energia; o fragmento proximal, pontiagudo, é empurrado para **trás** e perfura a pele posterior.\n\n**As outras faces**:\n\n**anterior**: protegida pelo **braquial** e pelo **bíceps**, além do feixe neurovascular (artéria braquial, nervo mediano);\n\n**medial e lateral**: cobertas pelos músculos que nascem nos epicôndilos (flexores e extensores do antebraço).\n\n**A conduta**: antibiótico precoce, desbridamento, fixação (às vezes fixador externo temporário) e cobertura; o **nervo ulnar** deve ser identificado e protegido.\n\n**Na prova**: a exposição do úmero distal ocorre mais na região **posterior**.",
-  "correta": "Atrás do úmero distal só há o tríceps e a pele, e o fragmento proximal é empurrado para trás.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.23"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1569 e 1634",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0431": {
@@ -12504,14 +12524,19 @@
   "conferido": false
  },
  "trauma-0649": {
+  "conceito": "A questão cruza o sexo com o padrão de idade, e a armadilha é aplicar às parciais articulares a distribuição das fraturas do úmero distal em geral. O Rockwood trata os dois grupos em parágrafos separados e com números diferentes.\n\n**Fraturas do úmero distal em geral** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1567). Distribuição bimodal: um pico entre 12 e 19 anos, em homens de alta energia, e outro aos 80 anos ou mais, em mulheres; no idoso, mais de 60% por queda da própria altura.\n\n**Parciais articulares (capítulo e tróclea)** (PDF 1568). Incidência de 1,5 por 100.000, com marcada predominância feminina e mecanismo de cisalhamento coronal; o capítulo é vulnerável porque seu centro de rotação é mais anterior em relação à diáfise. Nas mulheres a distribuição é bimodal, com picos abaixo de 19 e acima de 80 anos, e a maior prevalência acima dos 60 anos é atribuída ao maior ângulo de carregamento e à osteoporose. Nos homens é unimodal, com pico abaixo de 19 anos, por alta energia. Lesões associadas de ligamentos e da cabeça do rádio ocorrem em até 20%.\n\nA tabela comparativa está na seção \"Epidemiologia e mecanismo de trauma\" do resumo.",
+  "correta": "**C) Distribuição bimodal em homens e mulheres.** É o gabarito oficial da prova; ver o alerta sobre a divergência com o texto do Rockwood.",
   "incorretas": {
-   "A": "A distribuição não é unimodal; há dois picos de idade.",
-   "B": "As mulheres também têm distribuição bimodal, com pico idoso acentuado.",
-   "D": "Os homens também têm distribuição bimodal, com pico jovem acentuado."
+   "A": "**Unimodal em homens e mulheres** apaga a distribuição bimodal descrita nas mulheres, com picos abaixo de 19 e acima de 80 anos.",
+   "B": "**Bimodal em homens e unimodal em mulheres** troca os sexos: o texto dá a distribuição unimodal ao homem e a bimodal à mulher.",
+   "D": "**Bimodal em mulheres e unimodal em homens** é a redação que o texto do Rockwood sustenta literalmente; o gabarito oficial desta prova, porém, não a adota (ver o alerta)."
   },
-  "conceito": "As **fraturas articulares parciais** do **úmero distal** (AO 13-B: côndilo lateral, côndilo medial e fraturas do capítulo e da tróclea no plano coronal) seguem uma distribuição **bimodal** nos **dois sexos**:\n\n**primeiro pico**: **adultos jovens**, por trauma de **alta energia** (quedas, acidentes de trânsito, esporte);\n\n**segundo pico**: **idosos**, por trauma de **baixa energia** em osso osteoporótico, como a queda da própria altura sobre o cotovelo ou a mão.\n\n**Nas mulheres**: o pico idoso é **mais acentuado**, pela osteoporose pós-menopausa; as fraturas do **capítulo**, por exemplo, são mais comuns em mulheres idosas.\n\n**Nos homens**: o pico jovem é mais acentuado, pelo trauma de alta energia.\n\n**A implicação no tratamento**: no jovem, **redução anatômica** e fixação com parafusos sem cabeça ou placas; no idoso com cominução e osso frágil, considerar a **artroplastia** (hemiartroplastia distal do úmero ou total do cotovelo).\n\n**Na prova**: as fraturas articulares parciais do úmero distal têm **distribuição bimodal em homens e mulheres**.",
-  "correta": "Os dois sexos têm um pico jovem, por alta energia, e um pico idoso, por fragilidade.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1567 a 1568",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
+  ],
+  "alerta": "O gabarito oficial é a alternativa C (bimodal em homens e mulheres). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39, PDF 1568) diz textualmente que, nas parciais articulares, a distribuição é bimodal nas mulheres e unimodal nos homens, o que corresponde à alternativa D. O gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0661": {
@@ -13172,14 +13197,19 @@
   "conferido": false
  },
  "trauma-0682": {
+  "conceito": "A figura mostra o cotovelo em AP com uma seta de carga axial descendo pelo úmero, e a pergunta é como essa força se reparte entre a face ulnar e a radial. A resposta é um número de biomecânica, que o Campbell dá para o cotovelo estendido.\n\n**A imagem.** Desenho do úmero distal e do antebraço visto de frente, com uma **seta grande descendo pela diáfise do úmero**, indicando a carga axial. Abaixo da articulação, o rádio e a ulna aparecem com faixas fibrosas esboçadas entre eles, que sugerem a transmissão da força pelo antebraço. Não há valores escritos: a divisão em porcentagens é conhecimento a trazer.\n\n**O dado** (Campbell's Operative Orthopaedics, 15ª ed., cap. 15 (Reconstructive Procedures of the Elbow), p. 645). Com o cotovelo estendido e carga axial, cerca de 40% da carga passa pela articulação ulnoumeral e cerca de 60% pela radiocapitelar. A face radial, o capítulo, recebe a maior parte da força em extensão, e isso ajuda a entender por que o capítulo e a cabeça do rádio sofrem na queda com o braço estendido sobre a mão espalmada (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39, PDF 1568: o capítulo tem o centro de rotação anterior e se fratura por cisalhamento).\n\nA divisão de carga está na seção \"Carga: quem recebe mais peso\" do resumo.",
+  "correta": "**B) 40% e 60%.** A face ulnar (ulnoumeral) recebe cerca de 40% e a radial (radiocapitelar), cerca de 60%.",
   "incorretas": {
-   "A": "**Proporção exagerada.** A umerorradial carrega mais, mas não 80%; e a ulnar não fica com apenas 20%.",
-   "C": "**Invertido.** A face radial transmite mais carga que a ulnar.",
-   "D": "**Invertido e exagerado.** A maior parte da carga passa pelo lado radial."
+   "A": "**20% e 80%** exagera a concentração na face radial; a ulnoumeral não é tão poupada, e recebe cerca de 40%.",
+   "C": "**60% e 40%** inverte o par: seria achar que a ulna, por ser a articulação em dobradiça, leva mais peso, quando a radiocapitelar leva mais.",
+   "D": "**80% e 20%** inverte e ainda exagera, pondo quase toda a carga na face ulnar."
   },
-  "conceito": "**Como a carga atravessa o cotovelo.** A força que sobe do antebraço, ao empurrar ou apoiar a mão, passa ao úmero por duas articulações. A **umerorradial** (capítulo e cabeça do rádio) transmite cerca de **60%** da carga axial, e a **umeroulnar** (tróclea e incisura troclear), cerca de **40%**. A proporção varia com a posição: em **extensão** e **pronação**, a carga radiocapitelar é maior.\n\n**Por que o rádio carrega mais.** No punho, a maior parte da carga passa pelo **rádio** (cerca de 80%), e a **membrana interóssea** transfere parte dela para a ulna ao longo do antebraço. No cotovelo, ainda chega mais carga pelo rádio. Isso explica por que a **cabeça do rádio** fratura tanto nas quedas com a mão espalmada.\n\n**A cabeça do rádio como estabilizador.** Além de transmitir carga, a cabeça do rádio é o **estabilizador secundário** contra o **valgo** (o primário é o feixe anterior do colateral medial) e contra a translação posterolateral. E é o **batente proximal** que impede a migração do rádio para cima quando a membrana interóssea está lesada. Por isso, **ressecar** a cabeça do rádio sem substituí-la é arriscado quando há lesão ligamentar (tríade terrível, Essex-Lopresti): o cotovelo fica instável em valgo e o rádio migra proximalmente, causando dor no punho (impacto ulnocarpal).\n\n**O que isso muda no tratamento.** Nas fraturas cominutivas da cabeça do rádio com instabilidade, a opção é **fixar** ou **substituir** por **prótese**, restaurando o batente. A prótese deve ter a **altura** correta: uma cabeça alta demais (overstuffing) sobrecarrega o capítulo e desgasta a cartilagem, causa dor e perda de flexão.\n\n**Na prova:** carga axial no cotovelo: **umerorradial 60%**, **umeroulnar 40%**; a cabeça do rádio é estabilizador secundário contra o valgo e batente contra a migração proximal do rádio.",
-  "correta": "**40% e 60%.** A face ulnar (umeroulnar) transmite cerca de 40% da carga axial e a face radial (umerorradial), cerca de 60%.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 15 (Reconstructive Procedures of the Elbow), p. 645",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1568",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0683": {
@@ -17810,14 +17840,19 @@
   "conferido": false
  },
  "trauma-0878": {
+  "conceito": "A questão acrescenta o mecanismo, a flexão, para uma lesão em que, na criança, o mecanismo muda tudo. Na supracondiliana pediátrica em extensão o interósseo anterior e o mediano são os nervos clássicos; no adulto o raciocínio muda, porque o que decide é a anatomia do osso e do nervo que o acompanha.\n\n**O que o livro diz** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39, PDF 1569 e 1638). O nervo ulnar é o mais acometido nas fraturas do úmero distal, antes, durante e depois da cirurgia. Ele corre pelo septo intermuscular medial e depois pelo túnel cubital, atrás do epicôndilo medial, e fica exposto na fratura e na cirurgia. GOFTON achou 26% de neuropatia ulnar já na apresentação.\n\nO livro não separa os nervos por mecanismo em flexão ou extensão no adulto; o que sustenta o ulnar é o texto geral de que ele é o mais afetado.\n\nO assunto está na seção \"Nervo ulnar: o nervo do úmero distal\" do resumo.",
+  "correta": "**A) ulnar.** É o nervo mais acometido nas fraturas do úmero distal, qualquer que seja o mecanismo descrito pelas fontes.",
   "incorretas": {
-   "B": "O radial é mais lesado nas fraturas da diáfise e nos desvios posteromediais da extensão.",
-   "C": "O mediano é mais ameaçado no mecanismo em extensão.",
-   "D": "O cutâneo lateral do antebraço não é o nervo típico dessa fratura."
+   "B": "**Radial** é o nervo da diáfise e da transição meio-distal; no úmero distal fica em risco por placas laterais longas, não pela fratura.",
+   "C": "**Mediano** é o nervo da supracondiliana em extensão da criança; no adulto é protegido pelo braquial anterior.",
+   "D": "**Cutâneo lateral do antebraço** é um ramo sensitivo do musculocutâneo e as fontes não o citam entre os nervos acometidos nas fraturas do úmero distal."
   },
-  "conceito": "A **fratura supracondiliana do úmero do adulto** pode ocorrer por **extensão** (mais comum) ou por **flexão**. Cada mecanismo ameaça um nervo diferente.\n\n**No mecanismo em flexão**: a queda é sobre o **cotovelo fletido**, e o fragmento distal desloca para a **frente**. O fragmento proximal fica para trás e para baixo, perto da face **posteromedial**, onde corre o **nervo ulnar**, atrás do epicôndilo medial. O ulnar é o nervo **mais lesado**.\n\n**No mecanismo em extensão**: o fragmento distal vai para **trás**, e o proximal, pontiagudo, avança para a **frente**, ameaçando a **artéria braquial**, o **mediano** (e seu ramo interósseo anterior) e, se o desvio for posterolateral, o mediano; posteromedial, o radial.\n\n**Na cirurgia do úmero distal do adulto**: o **ulnar** é sempre identificado e protegido, e muitas vezes transposto para a frente.\n\n**Na prova**: na supracondiliana em flexão, o nervo mais lesado é o **ulnar**.",
-  "correta": "No mecanismo em flexão, o fragmento proximal fica perto da face posteromedial, onde passa o nervo ulnar.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1569, 1581 e 1638",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
+  ],
+  "alerta": "O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39, PDF 1638) não separa a fratura do adulto por mecanismo em flexão ou extensão; afirma apenas que o ulnar é o nervo mais acometido nas fraturas do úmero distal, o que sustenta o gabarito oficial (A).",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0879": {
@@ -18526,14 +18561,19 @@
   }
  },
  "trauma-0903": {
+  "conceito": "Restaurar as colunas é o que permite que o segmento articular volte a ser um arco atirantado, e a questão cobra os dois ângulos na ordem em que vêm no enunciado: lateral primeiro, medial depois. Quem lê a pergunta pela metade inverte os números.\n\n**Os números** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1579). A diáfise distal é triangular com ápice anterior e se bifurca em duas colunas. A coluna medial diverge cerca de 45 graus do eixo da diáfise no plano coronal e termina no epicôndilo medial, não articular; a coluna lateral diverge cerca de 20 graus e termina no capítulo. No plano sagital a coluna lateral curva-se anteriormente, de 35 a 40 graus com a diáfise, e esse é o outro par de números que costuma aparecer como distrator.\n\n**Por que a restauração importa.** A tróclea é a viga que une os dois pilares; se a divergência não é reproduzida, o bloco articular não encaixa na diáfise nem alinha com a ulna. Por isso a fixação exige placas em cada coluna, com muitos parafusos longos engatando fragmentos do lado oposto (Campbell's Operative Orthopaedics, 15ª ed., cap. 62, p. 2797 a 2798).\n\nOs ângulos estão na seção \"Anatomia das colunas: o úmero distal como um arco atirantado\" do resumo.",
+  "correta": "**A) 20° e 45°.** Lateral cerca de 20 graus e medial cerca de 45 graus, no plano coronal, como o enunciado pede.",
   "incorretas": {
-   "B": "Os valores estão invertidos entre as colunas.",
-   "C": "15° e 35° não correspondem às angulações descritas.",
-   "D": "35° e 15° estão trocados e abaixo dos valores descritos."
+   "B": "**45° e 20°** são os números certos na ordem trocada: o 45 pertence à coluna medial, que termina no epicôndilo.",
+   "C": "**15° e 35°** não são valores descritos para as colunas; o 35 lembra a curva sagital da coluna lateral, que é de 35 a 40 graus.",
+   "D": "**35° e 15°** mistura a curva sagital da coluna lateral com um número que o livro não dá para o plano coronal."
   },
-  "conceito": "O **úmero distal** tem a forma de um **triângulo**: duas **colunas** (lateral e medial) que se abrem a partir da diáfise e sustentam a superfície articular, unidas embaixo pela **tróclea**, que funciona como um tirante.\n\n**A angulação das colunas no plano coronal**, em relação ao eixo da diáfise:\n\n**coluna lateral**: cerca de **20°**; termina no **capítulo**, que fica à frente;\n\n**coluna medial**: cerca de **45°**; termina no **epicôndilo medial**, mais aberta para o lado.\n\n**Por que isso importa na cirurgia**: na redução de uma fratura articular completa (AO C), a restauração das **duas colunas** com seus ângulos devolve a **largura** e a orientação da tróclea. Uma coluna mal reduzida estreita ou inclina a tróclea e trava o cotovelo.\n\n**A fixação**: duas placas (ortogonais ou paralelas), com o maior número possível de parafusos **longos** no fragmento distal, interdigitados.\n\n**No plano sagital**: a superfície articular fica **anteriorizada** cerca de 30 a 40° em relação à diáfise; a perda dessa angulação reduz a flexão.\n\n**Na prova**: as colunas lateral e medial formam com a diáfise, respectivamente, **20° e 45°**.",
-  "correta": "A coluna lateral se abre cerca de 20° e a medial cerca de 45° em relação ao eixo da diáfise.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1579",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 62 (Fractures of the Shoulder, Arm, and Forearm), p. 2797 a 2798",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0904": {
@@ -20156,14 +20196,19 @@
   }
  },
  "trauma-0968": {
+  "conceito": "Onde uma fratura do úmero distal não consolida depende de que osso a placa precisa segurar. O bloco articular é esponjoso e bem irrigado; logo acima dele, o nível supracondiliano é estreito, cortical e submetido aos maiores momentos de flexão.\n\n**O que o livro diz** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39, PDF 1634 e 1637). A pseudartrose ocorre em cerca de 6% (0 a 25%) com duas placas, é supracondiliana, raramente intra-articular, e está ligada a fixação inadequada. Os fatores de risco são o tipo baixo, cominuição e osteopenia. A revisão usa olecranotomia, fixação bicolunar rígida, enxerto autólogo, capsulectomia e neurólise do ulnar, com consolidação acima de 90%; sem como fixar, recorre-se à artroplastia. O Campbell concorda: a fixação inicial ruim é a principal causa da pseudartrose supracondiliana, e a que se estende à tróclea vai pior; a artroplastia vinculada tem melhor resultado acima de 65 anos, com restrição de levantar 0,9 kg repetidamente ou 4,5 kg de uma vez (Campbell's Operative Orthopaedics, 15ª ed., cap. 64, p. 2933).\n\nEstá na seção \"Fratura exposta, pseudartrose e as outras complicações\" do resumo.",
+  "correta": "**D) supracondilar.** É o nível estreito e cortical, onde a fixação inadequada resulta em pseudartrose.",
   "incorretas": {
-   "A": "A região condilar tem osso esponjoso e consolida bem se fixada.",
-   "B": "A região articular costuma consolidar; o risco é a rigidez.",
-   "C": "A região infracondilar não é a localização típica."
+   "A": "**Condilar** refere-se aos côndilos esponjosos, que consolidam bem; não é a localização típica.",
+   "B": "**Articular** é rara: o livro diz que a pseudartrose raramente é intra-articular, pela irrigação e pelo osso esponjoso do bloco.",
+   "C": "**Infracondilar** não é um nível descrito pelas fontes; o que falha é o nível supracondiliano, acima do bloco articular."
   },
-  "conceito": "A **pseudartrose do úmero distal** no adulto ocorre mais na região **supracondiliana**.\n\n**Por quê**:\n\n**pouca área de contato**: logo acima dos côndilos, as colunas são **finas**, e entre elas fica a **fossa do olécrano**, onde o osso é muito delgado;\n\n**grandes braços de alavanca**: o antebraço funciona como uma alavanca longa sobre o foco;\n\n**fixação difícil**: os fragmentos distais são pequenos e a fixação inadequada, com parafusos curtos e placas fracas, falha;\n\n**osso osteoporótico** nos idosos e cominução metafisária.\n\n**As outras regiões**: as fraturas **articulares** (condilares) costumam consolidar se fixadas, porque o osso esponjoso consolida bem; o risco nelas é a **rigidez** e a artrose.\n\n**O tratamento da pseudartrose**: **revisão** com duas placas bloqueadas, compressão e **enxerto**, além da liberação da rigidez associada; no idoso com osso muito pobre, **artroplastia total do cotovelo**.\n\n**Na prova**: a pseudartrose do úmero distal no adulto é tipicamente **supracondilar**.",
-  "correta": "As colunas finas acima dos côndilos e a fossa do olécrano oferecem pouco contato, e a pseudartrose é supracondilar.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1634 e 1637",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion), p. 2933",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0969": {
@@ -20663,17 +20708,19 @@
   }
  },
  "trauma-0987": {
+  "conceito": "A palavra decisiva do enunciado é cominutiva grave, multifragmentar. Na família de classificações do capítulo, só um tipo é definido pela cominuição, e ele não leva o nome de quem a questão cita na alternativa.\n\n**O que o livro diz** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1577). A classificação original separa o tipo I (HAHN-STEINTHAL, fragmento grande com osso subcondral) do tipo II (KOCHER-LORENZ, casca osteocondral fina). BRYAN e MORREY modificaram o esquema e acrescentaram o tipo III, a fratura cominutiva do capítulo. McKEE acrescentou o IV, extensão medial à metade lateral da tróclea. Cominuição importa na prática: com cominuição posterior ao capítulo (RING III, DUBBERLEY B) a fixação pede desimpactação, enxerto e placa posterolateral, e o resultado piora com a complexidade (PDF 1611 e 1617).\n\n**Sobre o nome.** A questão escreve o tipo III como BROBERG-MORREY e o tipo I como HANS-STEINTHAL; o livro atribui o III a BRYAN e MORREY e o I a HAHN e STEINTHAL. Os nomes divergem, mas o número do tipo, que é o que a questão pede, é inequívoco: cominutivo é o III.\n\nO quadro dos tipos está na seção \"Capítulo e tróclea: as classificações das fraturas de cisalhamento\" do resumo.",
+  "correta": "**C) III (BROBERG-MORREY).** O tipo III é o cominutivo; no texto do Rockwood o autor da modificação é BRYAN e MORREY.",
   "incorretas": {
-   "A": "**Fragmento único grande.** O tipo I (Hahn-Steinthal) é um bloco osteocondral com bom osso subcondral.",
-   "B": "**Casca fina.** O tipo II (Kocher-Lorenz) é um fragmento fino, quase só cartilagem.",
-   "D": "**Extensão à tróclea.** O tipo IV de McKee é o fragmento coronal que alcança a tróclea."
+   "A": "**I (HANS-STEINTHAL)** é o fragmento único e grande do capítulo, com bastante osso subcondral, que aceita parafusos; é o oposto da multifragmentação.",
+   "B": "**II (KOCHER-LORENZ)** é a lesão osteocondral rara, de cartilagem com casca óssea fina; é difícil de fixar, mas não é multifragmentar.",
+   "D": "**IV (Modificação de MCKEE)** é o tipo I com extensão à metade lateral da tróclea; define-se pela extensão medial, não pela cominuição."
   },
-  "conceito": "**As fraturas do capítulo.** São fraturas de **cisalhamento coronal** do úmero distal, pela cabeça do rádio batendo no capítulo. Aparecem melhor no **perfil** (fragmento anterior e proximal, sinal do duplo arco) e na **tomografia**.\n\n**A classificação de Bryan e Morrey, com McKee.** **Tipo I** (**Hahn-Steinthal**): fragmento **grande** com bom osso subcondral. **Tipo II** (**Kocher-Lorenz**): fragmento **fino**, em casca, quase só **cartilagem**. **Tipo III** (**Broberg-Morrey**): fratura **cominutiva** grave, **multifragmentar**, com impacção. **Tipo IV** (**McKee**): o fragmento coronal se estende à **tróclea**, com o duplo arco. A cominuição é o que diferencia o III do II.\n\n**O tratamento do tipo III.** É o mais difícil. Se os fragmentos forem grandes o suficiente, **redução aberta** e **fixação** com parafusos sem cabeça, fios e, às vezes, placa posterolateral, pela via lateral estendida. Se a cominuição impedir a fixação, em pacientes jovens pode-se **excisar** fragmentos pequenos e manter o cotovelo estável; em **idosos**, a **artroplastia** (hemiartroplastia distal do úmero ou prótese total do cotovelo) é uma opção. **Mobilização precoce** é essencial, porque a **rigidez** é a complicação mais comum.\n\n**Por que a tomografia é obrigatória.** A radiografia subestima a cominuição e a extensão à tróclea. A classificação de **Dubberley**, baseada na tomografia, considera a extensão à tróclea e a **cominuição posterior** do côndilo lateral, com implicações para a via e a fixação.\n\n**Na prova:** Bryan e Morrey **III** (**Broberg-Morrey**) = capítulo **cominutivo**, multifragmentar; I Hahn-Steinthal, II Kocher-Lorenz, IV McKee (tróclea).",
-  "correta": "**III (Broberg-Morrey).** A fratura cominutiva grave e multifragmentar do capítulo corresponde ao tipo III.",
   "referencias": [
-   "Hebert, Lech, Ortopedia e Traumatologia: Princípios e Práticas, 6ª edição, Cap. 110"
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures), PDF 1577 e 1611",
+   "Resumo OrtoQuestões: Fratura do úmero distal no adulto"
   ],
-  "geradoEm": "2026-09-30",
+  "alerta": "O nome BROBERG-MORREY para o tipo III não aparece no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39, PDF 1577), que atribui o tipo III cominutivo a BRYAN e MORREY; o número do tipo coincide com o gabarito oficial (C), que foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0988": {
