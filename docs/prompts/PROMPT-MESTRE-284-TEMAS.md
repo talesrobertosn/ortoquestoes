@@ -242,6 +242,11 @@ Se caiu, a próxima PR é a de revisão daquilo, antes de seguir a fila. Se acho
 | Questão marcada como anulada e com gabarito nos dados (ex.: `mao-0167`, `mao-0173`) | O `aplicar_comentarios.py` recusa; deixe o comentário antigo e registre para decisão do Tales |
 | Capítulo grande para ler sem pesar o contexto | Delegue a leitura a um agente com briefing fechado (arquivo de fatos com página no fim de cada linha) e escreva o resumo a partir do arquivo |
 | Ferramenta que falta para um passo repetido | Crie o script em `scripts/`, com docstring e uso, e documente aqui |
+| Ampliar um resumo deixa comentários com `baseResumo` em "revalidar" e o `npm test` falha | Confira se o `trechosSha256` dos blocos citados continua idêntico; se sim, troque só a string do `sha256` do capítulo no JSON (sem reformatar o arquivo) e registre em `docs/comentarios-resumos/reconciliacoes/` (ex.: 265). Se o trecho mudou, reescreva o comentário |
+| Questão de amostra da página inicial (`scripts/gerar_amostras_inicio.py`) recebe comentário novo | Amostra não pode ter `alerta` nem `provavel` e precisa de conceito com 1.500 caracteres ou mais: leve a ressalva para o texto do conceito |
+| `provavel` do comentário diferente do `gabaritoBibliografia` da questão (o `npm run validar` recusa) | Não aplique o comentário novo dessa questão; mantenha o anterior, alinhado à bibliografia, e anote a divergência para revisão |
+| Questão dissertativa (sem letra) | O conversor de lotes recusa; mantenha o comentário existente |
+| Tema "Outros temas de..." (miscelânea) | Quase todas as questões já pertencem a temas com resumo; deixe para o fim e decida pela ligação aos resumos específicos |
 
 ## 13. Estado (atualize a cada PR)
 
