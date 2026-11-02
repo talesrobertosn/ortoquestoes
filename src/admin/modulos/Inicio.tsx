@@ -3,7 +3,7 @@ import { carregarIndiceBiblioteca } from '../../biblioteca/conteudo'
 import { quadroDoDia } from '../../componentes/admin/agora'
 import { diaSP } from '../../componentes/admin/estudoHoje'
 import { registrarTitulosResumos } from '../../componentes/admin/formatos'
-import { rotuloPlano } from '../../componentes/admin/rotulos'
+import { PLANO_CORTESIA, rotuloPlano } from '../../componentes/admin/rotulos'
 import { viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
 import { usarRpc } from '../../componentes/admin/usarRpc'
 import { usarFunil, usarSerie } from '../dados/consultas'
@@ -129,7 +129,7 @@ export default function Inicio() {
       viram30: pessoas.filter(u => !u.plano_vigente && viuPlanos(sinal(u)) && !viuHoje(sinal(u), hoje)).sort(porPlanos),
     }
     return {
-      hoje, tipoDe, listas, totalAssinantes: assinantes.length,
+      hoje, tipoDe, listas, totalAssinantes: assinantes.length, cortesias: assinantes.filter(u => u.plano_vigente === PLANO_CORTESIA).length,
       conta: { assinante: online.filter(u => tipoDe(u) === 'assinante').length, lead: online.filter(u => tipoDe(u) === 'lead').length, gratis: online.filter(u => tipoDe(u) === 'gratis').length },
     }
   }, [p.usuarios, p.sinais, limite, quadro.estudaram])
@@ -179,7 +179,7 @@ export default function Inicio() {
         <div className="a3-heroi__grupo">
           <h2 className="a3-heroi__grupo-titulo">Hoje</h2>
           <div className="a3-heroi__numeros a3-heroi__numeros--hoje">
-            <Numero cor="assinante" rotulo="Assinantes hoje" valor={n('assinantes')} nota={`de ${g.totalAssinantes} entraram`} ativo={ativo('assinantes')} aoClicar={() => abrir('assinantes')} />
+            <Numero cor="assinante" rotulo="Assinantes hoje" valor={n('assinantes')} nota={`de ${g.totalAssinantes} entraram${g.cortesias ? ` · ${g.cortesias} ${g.cortesias === 1 ? 'cortesia' : 'cortesias'}` : ''}`} ativo={ativo('assinantes')} aoClicar={() => abrir('assinantes')} />
             <Numero cor="lead" rotulo="Viram os planos" valor={semSinais ? null : n('viram')} nota={semSinais ? 'sinal indisponível' : 'não assinantes'} ativo={ativo('viram')} aoClicar={() => abrir('viram')} />
             {limite ? <Numero cor="gratis" rotulo="Bateram o limite" valor={n('limite')} nota={`de ${limite} grátis`} ativo={ativo('limite')} aoClicar={() => abrir('limite')} />
               : <Numero cor="gratis" rotulo="Assinantes ausentes" valor={n('ausentes')} nota="não entraram hoje" ativo={ativo('ausentes')} aoClicar={() => abrir('ausentes')} />}
@@ -244,6 +244,8 @@ function Filtro({ ativo, aoClicar, contagem, children }: { ativo: boolean; aoCli
   return <button type="button" className="a3-chip" aria-pressed={ativo} onClick={aoClicar}>{children}<span>{inteiro(contagem)}</span></button>
 }
 
+/** "Assinante · Anual" ou só "Cortesia" (quem tem acesso de presente, sem pagar). */
+const rotuloAssinante = (plano: string | null) => plano === PLANO_CORTESIA ? 'Cortesia' : `Assinante · ${rotuloPlano(plano)}`
 const ROTULO_TIPO: Record<Tipo, string> = { assinante: 'Assinante', lead: 'Viu os planos hoje', gratis: 'Não assinante' }
 
 function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; hoje: string; limite: number | null }) {
@@ -255,7 +257,7 @@ function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; h
       <span className="a3-avatar">{iniciais(u.nome ?? u.email)}<i className="a3-ponto a3-ponto--vivo" /></span>
       <span className="a3-pessoa-linha__texto">
         <span className="a3-pessoa-linha__nome">{nomeDe(u)}
-          {tipo === 'assinante' ? <b className="a3-tag a3-tag--assinante">Assinante · {rotuloPlano(u.plano_vigente)}</b>
+          {tipo === 'assinante' ? <b className="a3-tag a3-tag--assinante">{rotuloAssinante(u.plano_vigente)}</b>
             : tipo === 'lead' ? <b className="a3-tag a3-tag--lead">Viu os planos às {horario(s?.planos_ultima)}</b>
             : <b className="a3-tag a3-tag--suave">Não assinante</b>}
           {tipo !== 'assinante' && <Temperatura t={temperatura(u, s, hoje, limite)} />}
@@ -288,7 +290,7 @@ function LinhaFora({ u, tipo }: { u: LinhaUsuario; tipo: Tipo }) {
     <button type="button" className="a3-pessoa-linha" onClick={() => nav.abrirPessoa(u.id_usuario)}>
       <span className="a3-avatar">{iniciais(u.nome ?? u.email)}</span>
       <span className="a3-pessoa-linha__texto">
-        <span className="a3-pessoa-linha__nome">{nomeDe(u)}<b className={`a3-tag a3-tag--${tipo === 'assinante' ? 'assinante' : tipo === 'lead' ? 'lead' : 'suave'}`}>{tipo === 'assinante' ? `Assinante · ${rotuloPlano(u.plano_vigente)}` : ROTULO_TIPO[tipo]}</b></span>
+        <span className="a3-pessoa-linha__nome">{nomeDe(u)}<b className={`a3-tag a3-tag--${tipo === 'assinante' ? 'assinante' : tipo === 'lead' ? 'lead' : 'suave'}`}>{tipo === 'assinante' ? rotuloAssinante(u.plano_vigente) : ROTULO_TIPO[tipo]}</b></span>
         <span className="a3-pessoa-linha__meta">
           <span>{sinal ? `última vez ${haQuanto(sinal)}` : 'nunca entrou'}</span>
           {viuPlanos(s) && <span>viu os planos {tipo === 'lead' ? `às ${horario(s?.planos_ultima)}` : haQuanto(s?.planos_ultima)} · {s?.planos_vezes ?? 0} {s?.planos_vezes === 1 ? 'vez' : 'vezes'} em 30 dias</span>}

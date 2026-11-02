@@ -192,3 +192,13 @@ Base: `docs/admin/DIAGNOSTICO-UX-2026-11-02.md`. Só tela; nada muda no banco ne
   direita. A fonte dos gráficos (nome da consulta) foi para "Ver dados". E-mails: Lembretes, Cartas pessoais,
   Enviados e Modelos (a busca acha pelos nomes antigos); rótulos internos ("parte 31", "sem SQL") saíram.
   Financeiro › Resumo tem as abas Recebido e Previsão.
+
+## Revisão de 02/11/2026: cortesias contam como assinantes (parte 37)
+
+Pedido do Tales: os amigos com cortesia usam o site quase todo dia e nunca vão pagar; no painel têm de aparecer como
+assinantes, diferenciados, e nunca como possíveis pagadores.
+
+- `listar_cortesias_admin()` (parte 37, só leitura) devolve quem tem cortesia valendo. O painel marca essas contas com
+  o plano "cortesia" quando não têm plano pago: contam em Assinantes (online, hoje, os que não entraram) com o selo
+  "Cortesia", e saem de "viram os planos", temperatura, limite grátis e cartas de convite. A Ficha mostra "Cortesia".
+- Perfis e origem continuam contando como assinante só quem paga. Sem a parte colada, nada muda.

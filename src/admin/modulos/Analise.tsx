@@ -209,7 +209,7 @@ function agrupar(lista: LinhaUsuario[], chave: (u: LinhaUsuario) => string[]): G
     g.contas++; if (u.respondidas_7d > 0) g.ativos7d++; if (u.respondidas > 0) g.comRespostas++
     g.respondidas += Number(u.respondidas); g.acertos += Number(u.acertos); g.erros += Number(u.erros)
     if (u.acertos_primeira != null) { g.acertos_primeira = (g.acertos_primeira ?? 0) + Number(u.acertos_primeira); g.erros_primeira = (g.erros_primeira ?? 0) + Number(u.erros_primeira ?? 0) }
-    if (u.plano_vigente) g.assinantes++
+    if (u.plano_vigente && u.plano_vigente !== 'cortesia') g.assinantes++
     if (agora - new Date(u.criado_em).getTime() < 30 * DIA_MS) g.novos30++
     mapa.set(rotulo, g)
   }

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
-import { PLANOS, acertoAposRevisao, acertoReal, baixarCsv, data as dataAntiga, rotuloPagina, somarAcertos } from '../../componentes/admin/formatos'
+import { acertoAposRevisao, acertoReal, baixarCsv, data as dataAntiga, rotuloPagina, somarAcertos } from '../../componentes/admin/formatos'
+import { rotuloPlano } from '../../componentes/admin/rotulos'
 import { servicoConhecido } from '../../componentes/admin/servicosConhecidos'
 import { PLANOS_RECENTE_DIAS, textoPlanos, viuPlanos } from '../../componentes/admin/sinais'
 import { usarPainel } from '../dados/painel'
@@ -45,7 +46,7 @@ export default function Explorador() {
           <span className="a3-sub">{u.email ?? 'conta sem e-mail'}</span>
           <span style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
             {u.administrador && <Selo solido>Admin</Selo>}
-            {u.plano_vigente && <Selo tom="ok">{PLANOS[u.plano_vigente] ?? u.plano_vigente}</Selo>}
+            {u.plano_vigente && <Selo tom="ok">{rotuloPlano(u.plano_vigente)}</Selo>}
             {s && viuPlanos(s) && !u.plano_vigente && <Selo tom={viuPlanos(s, PLANOS_RECENTE_DIAS) ? 'aviso' : undefined}>{textoPlanos(s)}</Selo>}
           </span>
         </span>
@@ -67,7 +68,7 @@ export default function Explorador() {
   ]
   const exportar = () => baixarCsv(`ortoquestoes-pessoas-${filtro}-${new Date().toISOString().slice(0, 10)}.csv`,
     ['Nome', 'E-mail', 'Etapa', 'Provas de interesse', 'Serviço', 'Outros locais de trabalho', 'Viu os planos (30 dias)', 'Flashcards únicos', 'UF', 'Conta criada', 'Questões', 'Hoje', 'Acerto real, 1ª tentativa (%)', 'Acerto após revisão (%)', 'Na semana', 'Última atividade', 'Plano'],
-    visiveis.map(u => { const s = p.sinais.get(u.id_usuario); return [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, s?.locais_trabalho ?? '', s?.planos_vezes || '', s?.flashcards_unicos || '', u.uf, dataAntiga(u.criado_em), u.respondidas, u.respondidas_hoje ?? '', acertoReal(u), acertoAposRevisao(u), u.respondidas_7d, u.ultima_atividade ? dataAntiga(u.ultima_atividade) : '', u.plano_vigente ? PLANOS[u.plano_vigente] : ''] }))
+    visiveis.map(u => { const s = p.sinais.get(u.id_usuario); return [u.nome, u.email, u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', (u.provas ?? '').split(',').filter(Boolean).map(rotuloProva).join(', '), u.servico, s?.locais_trabalho ?? '', s?.planos_vezes || '', s?.flashcards_unicos || '', u.uf, dataAntiga(u.criado_em), u.respondidas, u.respondidas_hoje ?? '', acertoReal(u), acertoAposRevisao(u), u.respondidas_7d, u.ultima_atividade ? dataAntiga(u.ultima_atividade) : '', u.plano_vigente ? rotuloPlano(u.plano_vigente) : ''] }))
 
   return <div className="a3-pilha a3-pilha--larga">
     <Cabeca area="Pessoas" titulo={parte.rotulo} pergunta={parte.pergunta}
