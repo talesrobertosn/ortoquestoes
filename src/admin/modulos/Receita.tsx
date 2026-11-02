@@ -3,13 +3,13 @@ import { HORIZONTES, MINIMO_PARA_OBSERVADA, calcularFinanceiro, curto, taxaPixSu
 import { baixarCsv, porcentagem } from '../../componentes/admin/formatos'
 import { calcularGanhos, fechamentoDoMes } from '../../componentes/admin/ganhos'
 import { NOME_MES, aReceberNoPix, cobrancas as cobrancasDe, mesAMes, pagaSemCobranca, precoDe, type Mes } from '../../componentes/admin/receita'
-import { rotuloMeio, rotuloPlano, rotuloTipoCobranca, situacaoAssinatura } from '../../componentes/admin/rotulos'
+import { rotuloMeio, rotuloPlano, rotuloTipoCobranca } from '../../componentes/admin/rotulos'
 import { receitaDoPeriodo } from '../dados/metricas'
 import { usarPainel, type LinhaAssinatura } from '../dados/painel'
 import { usarNav } from '../nav'
-import { PERIODOS, defParte } from '../rotas'
+import { PERIODOS, defAba } from '../rotas'
 import { Icone } from '../ui/Icone'
-import { data, diaDaSerie, haQuanto, inteiro, pct, reais } from '../ui/formato'
+import { data, diaDaSerie, inteiro, pct, reais } from '../ui/formato'
 import { Composicao, Legenda, Quadro, SerieTempo } from '../ui/graficos'
 import { Cabeca, Carregando, Estado, Faixa, Metrica, Painel, Segmento, SeloQualidade, VariacaoTexto } from '../ui/kit'
 import { Tabela } from '../ui/tabela'
@@ -21,7 +21,7 @@ export default function Receita() {
   const p = usarPainel()
   if (!p.reais) return <Carregando linhas={8} />
   if (p.cobrancasCarregando) return <Carregando linhas={8} texto="Carregando as cobranças…" />
-  return estado.parte === 'previsao' ? <Previsao assinaturas={p.reais} /> : <Visao assinaturas={p.reais} />
+  return estado.sub === 'previsao' ? <Previsao assinaturas={p.reais} /> : <Visao assinaturas={p.reais} />
 }
 
 const plural = (n: number, um: string, varios: string) => `${inteiro(n)} ${n === 1 ? um : varios}`
@@ -48,19 +48,18 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
   const semCobranca = useMemo(() => assinaturas.filter(pagaSemCobranca), [assinaturas])
   const atual = meses[meses.length - 1], anterior = meses[meses.length - 2]
   const mesAtual = soMes(d.chaveMes), mesAnterior = soMes(d.chaveMesPassado)
-  const parte = defParte('financeiro')
-  const nomeDe = (id: string) => { const n = nomes.get(id); return n?.nome || n?.email || 'Pessoa sem nome' }
+  const parte = defAba('financeiro')
   const exportar = () => baixarCsv(`ortoquestoes-cobrancas-${new Date().toISOString().slice(0, 10)}.csv`, ['Data', 'Pessoa', 'E-mail', 'Plano', 'Valor bruto', 'Meio', 'Tipo', 'Origem', 'Pagamento no Mercado Pago'],
-    todas.map(c => [c.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' }), nomes.get(c.id_usuario)?.nome ?? '', nomes.get(c.id_usuario)?.email ?? '', rotuloPlano(c.plano), c.valor.toFixed(2).replace('.', ','), rotuloMeio(c.meio), rotuloTipoCobranca(c), c.estimada ? 'reconstruída (renovação antiga ou paga sem cobrança gravada)' : 'cobrança gravada', c.id_pagamento ?? '']))
+    todas.map(c => [c.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' }), nomes.get(c.id_usuario)?.nome ?? '', nomes.get(c.id_usuario)?.email ?? '', rotuloPlano(c.plano), c.valor.toFixed(2).replace('.', ','), rotuloMeio(c.meio), rotuloTipoCobranca(c), c.estimada ? 'estimada (renovação antiga ou paga sem cobrança gravada)' : 'cobrança gravada', c.id_pagamento ?? '']))
   const novasAgora = (atual?.novasCartao ?? 0) + (atual?.novasPix ?? 0), novasAntes = (anterior?.novasCartao ?? 0) + (anterior?.novasPix ?? 0)
   const usuarios = p.resumo?.usuarios ?? p.usuarios?.length ?? null
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Receita" titulo={parte.rotulo} pergunta={`${parte.pergunta} Valores brutos, em dias e meses de São Paulo; o extrato oficial é o do Mercado Pago.${p.testes ? ` ${plural(p.testes, 'assinatura de teste do dono fica', 'assinaturas de teste do dono ficam')} de fora.` : ''}`}
+    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Valores brutos, em dias e meses de São Paulo; o extrato oficial é o do Mercado Pago.${p.testes ? ` ${plural(p.testes, 'assinatura de teste do dono fica', 'assinaturas de teste do dono ficam')} de fora.` : ''}`}
       acoes={<><Segmento rotulo="Período" valor={periodo} aoMudar={x => nav.ajustar({ periodo: x })} opcoes={PERIODOS.map(x => [x, `${x} dias`] as [typeof x, string])} />
         <button type="button" className="a3-botao a3-botao--contorno" onClick={exportar}><Icone nome="baixar" tamanho={15} />CSV das cobranças</button></>} />
     {p.avisoCobrancas && <Faixa tom="aviso" titulo="Cobranças gravadas indisponíveis">{p.avisoCobrancas}</Faixa>}
     {semCobranca.length > 0 && <Faixa tom="aviso" titulo={plural(semCobranca.length, 'assinatura paga sem a cobrança gravada', 'assinaturas pagas sem a cobrança gravada')}>
-      Entram como reconstruídas, pelo preço do plano. Vale conferir no Mercado Pago e reprocessar o aviso: {semCobranca.slice(0, 4).map(a => `${a.nome || a.usuario} (${rotuloPlano(a.plano)}, desde ${data(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao)})`).join('; ')}{semCobranca.length > 4 ? '…' : ''}
+      Entram como estimadas, pelo preço do plano. Vale conferir no Mercado Pago e reprocessar o aviso: {semCobranca.slice(0, 4).map(a => `${a.nome || a.usuario} (${rotuloPlano(a.plano)}, desde ${data(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao)})`).join('; ')}{semCobranca.length > 4 ? '…' : ''}
     </Faixa>}
 
     <section className="a3-painel" aria-label="Quanto entrou por período">
@@ -74,18 +73,18 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
       </div>
     </section>
 
-    <Quadro titulo={`Receita por dia · últimos ${periodo} dias`} descricao="Confirmado (cobrança gravada) em preto; reconstruído (renovação antiga do cartão ou paga sem registro) hachurado. Os dois nunca viram um número só."
+    <Quadro titulo={`Receita por dia · últimos ${periodo} dias`} descricao="Confirmado (cobrança gravada) em preto; estimado (renovação antiga do cartão ou paga sem registro) hachurado. Os dois nunca viram um número só."
       fonte="cobrancas_admin + listar_assinaturas_admin · contas de teste fora" qualidade="derivado"
-      legenda={<Legenda itens={[{ nome: 'Confirmado', chave: 'serie1' }, { nome: 'Reconstruído', chave: 'hachura' }]} />}
-      tabela={{ cabecalho: ['Dia', 'Confirmado', 'Reconstruído'], linhas: r.porDia.filter(x => x.confirmada || x.reconstruida).map(x => [diaDaSerie(x.dia, true), reais(x.confirmada), reais(x.reconstruida)]) }}
+      legenda={<Legenda itens={[{ nome: 'Confirmado', chave: 'serie1' }, { nome: 'Estimado', chave: 'hachura' }]} />}
+      tabela={{ cabecalho: ['Dia', 'Confirmado', 'Estimado'], linhas: r.porDia.filter(x => x.confirmada || x.reconstruida).map(x => [diaDaSerie(x.dia, true), reais(x.confirmada), reais(x.reconstruida)]) }}
       estado={r.porDia.every(x => !x.confirmada && !x.reconstruida) ? <Estado compacto titulo={`Nenhuma cobrança nos últimos ${periodo} dias`} texto="É zero de verdade, não falta de dado." /> : undefined}>
       <div className="a3-grade a3-grade--12" style={{ alignItems: 'start' }}>
-        <div style={{ gridColumn: 'span 8' }}><SerieTempo descricao={`Receita por dia, confirmada e reconstruída, nos últimos ${periodo} dias`} formato={reais}
+        <div style={{ gridColumn: 'span 8' }}><SerieTempo descricao={`Receita por dia, confirmada e estimada, nos últimos ${periodo} dias`} formato={reais}
           rotulos={r.porDia.map(x => ({ longo: diaDaSerie(x.dia, true), curto: diaDaSerie(x.dia) }))}
-          series={[{ nome: 'Confirmado', tipo: 'barra', valores: r.porDia.map(x => x.confirmada) }, { nome: 'Reconstruído', tipo: 'barra', estilo: 'hachura', valores: r.porDia.map(x => x.reconstruida) }]} /></div>
+          series={[{ nome: 'Confirmado', tipo: 'barra', valores: r.porDia.map(x => x.confirmada) }, { nome: 'Estimado', tipo: 'barra', estilo: 'hachura', valores: r.porDia.map(x => x.reconstruida) }]} /></div>
         <dl className="a3-pares" style={{ gridColumn: 'span 4' }}>
           <div><dt>Confirmado</dt><dd>{reais(r.confirmada.atual)} <VariacaoTexto v={r.confirmada} formato={reais} curto /></dd></div>
-          <div><dt>Reconstruído (à parte)</dt><dd>{reais(r.reconstruida)}</dd></div>
+          <div><dt>Estimado (à parte)</dt><dd>{reais(r.reconstruida)}</dd></div>
           <div><dt>Primeiras assinaturas</dt><dd>{r.novas.atual} <VariacaoTexto v={r.novas} curto /></dd></div>
           <div><dt>Renovações</dt><dd>{r.renovacoes}</dd></div>
           <div><dt>Pix · cartão</dt><dd>{reais(r.porMeio.pix)} · {reais(r.porMeio.cartao)}</dd></div>
@@ -95,7 +94,7 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
 
     <div className="a3-grade a3-grade--12">
       <div style={{ gridColumn: 'span 8' }}>
-        <Quadro titulo="Receita por mês" descricao="Últimos 12 meses, cartão e Pix empilhados" fonte="receita.ts › cobrancas (confirmado + reconstruído)" qualidade="derivado"
+        <Quadro titulo="Receita por mês" descricao="Últimos 12 meses, cartão e Pix empilhados" fonte="receita.ts › cobrancas (confirmado + estimado)" qualidade="derivado"
           legenda={<Legenda itens={[{ nome: 'Cartão', chave: 'serie1' }, { nome: 'Pix', chave: 'serie2' }]} />}
           tabela={{ cabecalho: ['Mês', 'Cartão', 'Pix', 'Total'], linhas: d.serie.map(x => [x.rotulo, reais(x.partes[0]), reais(x.partes[1]), reais(x.partes[0] + x.partes[1])]) }}>
           <SerieTempo descricao="Receita por mês nos últimos 12 meses" formato={reais} altura={220} rotulos={d.serie.map(x => ({ longo: x.rotulo, curto: x.rotuloCurto }))}
@@ -150,28 +149,19 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
       </Painel>
     </div>
 
-    <MesAMes meses={meses} />
-
-    <div className="a3-grade a3-grade--2">
-      <Painel titulo="Últimas cobranças" justo acoes={<a className="a3-botao a3-botao--fantasma a3-botao--pequeno" href={nav.link('cobrancas')} onClick={e => { e.preventDefault(); nav.ir('cobrancas') }}>Todas <Icone nome="seta" tamanho={14} /></a>}>
-        <Tabela rotulo="Últimas cobranças" compacta porPagina={6} linhas={[...todas].reverse().slice(0, 6)} chave={c => `${c.id_usuario}-${c.em.getTime()}`} aoAbrir={c => nav.abrirPessoa(c.id_usuario, 'assinatura')} colunas={[
-          { id: 'q', titulo: 'Quem', celula: c => <span style={{ display: 'grid' }}><span className="a3-nome">{nomeDe(c.id_usuario)}</span><span className="a3-sub">{data(c.em)} · {rotuloPlano(c.plano)} · {rotuloMeio(c.meio)}</span></span> },
-          { id: 'v', titulo: 'Valor', numero: true, celula: c => <>{reais(c.valor)}{c.estimada && <span className="a3-sub">reconstruída</span>}</>, rotuloCelular: 'Valor' },
-        ]} vazio={<div style={{ padding: 20 }}><Estado compacto titulo="Nenhuma cobrança ainda" /></div>} />
-      </Painel>
-      <Painel titulo="Ações sensíveis" descricao="Tudo o que mexe em dinheiro ou acesso pede confirmação onde acontece; nada aqui muda preço, plano ou regra de pagamento.">
-        <ul className="a3-atalhos-lista">
-          <li><a href={nav.link('pagamentos')} onClick={e => { e.preventDefault(); nav.ir('pagamentos') }}><span>Reprocessar aviso do Mercado Pago<small>{p.errosPagamento ? `${plural(p.errosPagamento, 'aviso precisa', 'avisos precisam')} de atenção` : 'nenhum aviso com problema agora'}</small></span><Icone nome="direita" tamanho={15} /></a></li>
-          <li><a href={nav.link('usuarios')} onClick={e => { e.preventDefault(); nav.ir('usuarios') }}><span>Conceder ou remover cortesia<small>na ficha da pessoa, aba Ações</small></span><Icone nome="direita" tamanho={15} /></a></li>
-          <li><a href="https://www.mercadopago.com.br/activities" target="_blank" rel="noopener noreferrer"><span>Reembolsar ou cancelar no Mercado Pago<small>o reembolso é feito lá; o aviso volta para cá sozinho</small></span><Icone nome="externo" tamanho={15} /></a></li>
-          <li><a href={nav.link('assinaturas')} onClick={e => { e.preventDefault(); nav.ir('assinaturas') }}><span>Assinaturas recentes<small>{[...assinaturas].sort((a, b) => (b.criada_em ?? '').localeCompare(a.criada_em ?? '')).slice(0, 2).map(a => `${a.nome ?? a.usuario} (${situacaoAssinatura(a).rotulo.toLowerCase()}, ${haQuanto(a.criada_em ?? a.ultima_atualizacao)})`).join(' · ') || 'nenhuma ainda'}</small></span><Icone nome="direita" tamanho={15} /></a></li>
-        </ul>
-      </Painel>
+    <div className="a3-atalhos-finance">
+      <a href={nav.link('cobrancas')} onClick={e => { e.preventDefault(); nav.ir('cobrancas') }}><Icone nome="receita" tamanho={16} /><span>Ver cada pagamento<small>{todas.length} cobranças, dia a dia</small></span><Icone nome="direita" tamanho={15} /></a>
+      <a href={nav.link('assinaturas')} onClick={e => { e.preventDefault(); nav.ir('assinaturas') }}><Icone nome="pessoas" tamanho={16} /><span>Ver os assinantes<small>quem paga e até quando</small></span><Icone nome="direita" tamanho={15} /></a>
+      <a href={nav.link('pagamentos')} onClick={e => { e.preventDefault(); nav.ir('pagamentos') }}><Icone nome="alerta" tamanho={16} /><span>Avisos de pagamento<small>{p.errosPagamento ? `${plural(p.errosPagamento, 'aviso precisa', 'avisos precisam')} de atenção` : 'nenhum com problema'}</small></span><Icone nome="direita" tamanho={15} /></a>
     </div>
+    <details className="a3-painel a3-metodo">
+      <summary>Mês a mês (tabela completa, com churn e CSV)</summary>
+      <MesAMes meses={meses} />
+    </details>
     <details className="a3-painel a3-metodo">
       <summary>Como estes números são calculados</summary>
       <div className="a3-texto">
-        <p>{p.cobrancas ? 'Confirmado: cobranças gravadas no banco (Pix pelo valor pago, cartão pelo valor contratado). O banco guarda só a última cobrança de cada cartão; as renovações anteriores são reconstruídas a cada período do plano. Reembolsos descontados.' : 'Sem as cobranças gravadas, tudo sai do preço dos planos e aparece como reconstruído.'} Cartão renova sozinho; Pix é compra avulsa. Valores brutos, sem a taxa do Mercado Pago.</p>
+        <p>{p.cobrancas ? 'Confirmado: cobranças gravadas no banco (Pix pelo valor pago, cartão pelo valor contratado). O banco guarda só a última cobrança de cada cartão; as renovações anteriores são estimadas a cada período do plano. Reembolsos descontados.' : 'Sem as cobranças gravadas, tudo sai do preço dos planos e aparece como estimado.'} Cartão renova sozinho; Pix é compra avulsa. Valores brutos, sem a taxa do Mercado Pago.</p>
         <p>Nova, renovação ou volta é decidido pela pessoa: a primeira compra paga é a nova; pagar de novo com o acesso valendo (ou até 30 dias depois do fim) é renovação; depois disso é "voltou a assinar".</p>
         <p>Receita recorrente por mês = soma dos cartões que renovam sozinhos, cada um dividido pelos meses do plano. A receita do mês é comparada com o mês passado até o mesmo dia.</p>
       </div>
@@ -218,10 +208,10 @@ function Previsao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
     const pontos = pix[doze].porMes.map(([k, v], i) => { const c = cartao.get(k) ?? { valor: 0, quantidade: 0 }; return { k, longo: `${NOME_MES(k)} · ${c.quantidade} no cartão, ~${Math.round(v.quantidade)} no Pix`, curto: i === 0 || k.endsWith('-01') ? `${curto(k)} ${k.slice(2, 4)}` : curto(k), cartao: c.valor, pix: v.valor } })
     return { pix, pontos, pessoas: pix[doze].pessoas, fechamento: fechamentoDoMes(d.esteMes, d.chaveMes, d.aReceber[doze].porMes, pix[doze].porMes) }
   }, [assinaturas, taxa, d.aReceber, d.esteMes, d.chaveMes])
-  const parte = defParte('previsao')
+  const parte = defAba('previsao')
   const f = prev.fechamento
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Receita" titulo={parte.rotulo} pergunta={parte.pergunta} />
+    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={parte.pergunta} />
     <section className="a3-painel a3-previsao-topo">
       <div className="a3-metrica a3-metrica--grande">
         <span className="a3-rotulo">Previsão de fechamento de {soMes(d.chaveMes)}</span>

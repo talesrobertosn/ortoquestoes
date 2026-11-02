@@ -248,7 +248,7 @@ export default function Editor() {
   const temaAtual = indice?.temas.find(t => t.slug === tema)
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Estudo e conteúdo" titulo={parte.rotulo} pergunta={`${parte.pergunta} A edição vale na hora no site, por cima do acervo, e pode ser desfeita.`} />
+    <Cabeca area="Conteúdo" titulo={parte.rotulo} pergunta={`${parte.pergunta} A edição vale na hora no site, por cima do acervo, e pode ser desfeita.`} />
     <div className="a3-editor">
       <aside className="a3-editor__lado" aria-label="Escolher questão">
         <form className="a3-painel a3-editor__abrir" onSubmit={e => { e.preventDefault(); void abrirPorNumero() }}>

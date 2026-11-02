@@ -95,7 +95,7 @@ export default function Assinaturas() {
   const dica = GRUPOS.find(g => g[0] === grupo)![2]
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Receita" titulo={parte.rotulo} pergunta={`${parte.pergunta} Cartão renova sozinho; Pix é pago uma vez e termina no fim do período.`}
+    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Cartão renova sozinho; Pix é pago uma vez e termina no fim do período.`}
       acoes={<button type="button" className="a3-botao a3-botao--contorno" onClick={exportar} disabled={!visiveis.length}><Icone nome="baixar" tamanho={15} />CSV deste recorte</button>} />
 
     <div className="a3-abas-grandes" role="tablist" aria-label="Situação das assinaturas">

@@ -6,7 +6,7 @@ import { href, navegar } from '../util/rotas'
 import { ProvedorPainel, usarPainel } from './dados/painel'
 import { nomeDe } from './dados/pessoas'
 import { ContextoNav, type AbaFicha, type Nav } from './nav'
-import { AREAS, areaDe, defArea, defParte, lerUrl, partePadrao, urlAntiga, urlDe, type Area, type EstadoUrl, type Parte } from './rotas'
+import { AREAS, abasDe, areaDe, defArea, defParte, lerUrl, partePadrao, urlAntiga, urlDe, type Area, type EstadoUrl, type Parte } from './rotas'
 import { Icone } from './ui/Icone'
 import { haQuanto, horario } from './ui/formato'
 import { Carregando, Estado } from './ui/kit'
@@ -14,8 +14,7 @@ import { HospedeAvisos, HospedeConfirmar, Paleta, type ItemPaleta } from './ui/s
 import './admin.css'
 import './modulos.css'
 
-const Comando = lazy(() => import('./modulos/Comando'))
-const Agora = lazy(() => import('./modulos/Agora'))
+const Inicio = lazy(() => import('./modulos/Inicio'))
 const Explorador = lazy(() => import('./modulos/Explorador'))
 const Analise = lazy(() => import('./modulos/Analise'))
 const Receita = lazy(() => import('./modulos/Receita'))
@@ -35,10 +34,9 @@ const Exportar = lazy(() => import('./modulos/Exportar'))
 const AvisoTopo = lazy(() => import('./modulos/AvisoTopo'))
 const Ficha = lazy(() => import('./modulos/Ficha'))
 
-function Modulo({ parte }: { parte: Parte }) {
+function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
   switch (parte) {
-    case 'comando': case 'pendencias': return <Comando />
-    case 'agora': return <Agora />
+    case 'comando': case 'pendencias': case 'agora': return <Inicio />
     case 'usuarios': return <Explorador />
     case 'crescimento': case 'retencao': case 'perfis': return <Analise />
     case 'financeiro': case 'previsao': return <Receita />
@@ -53,8 +51,7 @@ function Modulo({ parte }: { parte: Parte }) {
     case 'cartas': return <Cartas />
     case 'envios': return <Envios />
     case 'todas': return <Catalogo />
-    case 'ajustes': return <Ajustes />
-    case 'aviso': return <AvisoTopo />
+    case 'ajustes': case 'aviso': return sub === 'aviso' ? <AvisoTopo /> : <Ajustes />
     case 'exportar': return <Exportar />
   }
 }
@@ -117,7 +114,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
   }, [])
 
   const contagem: Partial<Record<Parte, { n: number; tom?: 'alerta' | 'vivo' }>> = {
-    agora: p.online ? { n: p.online, tom: 'vivo' } : undefined,
+    comando: p.online ? { n: p.online, tom: 'vivo' } : undefined,
     usuarios: p.totalContas ? { n: p.totalContas } : undefined,
     pagamentos: p.errosPagamento ? { n: p.errosPagamento, tom: 'alerta' } : undefined,
     conteudo: p.pendenciasConteudo ? { n: p.pendenciasConteudo, tom: 'alerta' } : undefined,
@@ -149,6 +146,14 @@ function Casca({ estado }: { estado: EstadoUrl }) {
     {AREAS.map(a => {
       const aberta = abertas.has(a.id)
       const atual = a.id === area
+      // Área de uma parte só (Agora): link direto, sem submenu repetindo o nome.
+      if (a.partes.length === 1) {
+        const c = contagem[a.partes[0].id]
+        return <div key={a.id}><a className="a3-nav-area" href={nav.link(a.partes[0].id)} aria-current={atual ? 'page' : undefined} onClick={clique(a.partes[0].id)}>
+          <Icone nome={a.icone} /><span className="a3-nav-area__nome">{a.rotulo}</span>
+          {c && <b className={'a3-cont' + (c.tom === 'vivo' ? ' a3-cont--vivo' : c.tom === 'alerta' ? ' a3-cont--alerta' : '')}>{c.n.toLocaleString('pt-BR')}<span className="a3-so-leitor"> online</span></b>}
+        </a></div>
+      }
       return <div key={a.id}>
         <button type="button" className="a3-nav-area" aria-current={atual ? 'true' : undefined} aria-expanded={aberta}
           onClick={() => { if (!atual) nav.ir(destinoDa(a.id)); definirAbertas(s => { const n = new Set(s); if (atual && aberta) n.delete(a.id); else n.add(a.id); return n }) }}>
@@ -169,7 +174,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
   const conteudo: ReactNode = p.erroAcesso && !p.assinaturas
     ? <Estado tipo="erro" icone="trava" titulo={/negado/i.test(p.erroAcesso) ? 'Acesso negado' : 'O painel não carregou'} texto={p.erroAcesso} acao={<button type="button" className="a3-botao a3-botao--contorno" onClick={() => void p.atualizar()}>Tentar de novo</button>} />
     : !p.assinaturas ? <Carregando linhas={6} texto="Verificando o acesso e carregando o painel…" />
-    : <Suspense fallback={<Carregando linhas={6} />}><Modulo parte={estado.parte} /></Suspense>
+    : <Suspense fallback={<Carregando linhas={6} />}><Modulo parte={estado.parte} sub={estado.sub} /></Suspense>
 
   return <ContextoNav.Provider value={nav}>
     <div className="a3">
@@ -206,7 +211,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
           <header className={'a3-topo' + (rolou ? ' a3-topo--rolou' : '')}>
             <nav className="a3-migalhas" aria-label="Você está em">
               <a href={nav.link('comando')} onClick={clique('comando')}>Painel</a><Icone nome="direita" tamanho={13} />
-              <a href={nav.link(partePadrao(area))} onClick={clique(partePadrao(area))}>{defArea(area).rotulo}</a><Icone nome="direita" tamanho={13} />
+              {defArea(area).partes.length > 1 && <><a href={nav.link(partePadrao(area))} onClick={clique(partePadrao(area))}>{defArea(area).rotulo}</a><Icone nome="direita" tamanho={13} /></>}
               <span aria-current="page">{parte.rotulo}</span>
             </nav>
             <div className="a3-topo__acoes">
@@ -218,6 +223,10 @@ function Casca({ estado }: { estado: EstadoUrl }) {
 
           <main className="a3-conteudo" id="a3-conteudo" tabIndex={-1}>
             {p.erroAcesso && p.assinaturas && <div style={{ marginTop: 12 }}><Estado tipo="erro" compacto titulo="A última atualização falhou" texto={`${p.erroAcesso} Os dados abaixo são da atualização anterior.`} /></div>}
+            {abasDe(estado.parte).length > 0 && p.assinaturas && <nav className="a3-abas-tela" aria-label={`Abas de ${parte.rotulo}`}>
+              {abasDe(estado.parte).map(x => <a key={x.id} href={href(urlDe({ ...estado, sub: x.id }))} aria-current={x.id === estado.sub ? 'page' : undefined}
+                onClick={e => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; e.preventDefault(); nav.ajustar({ sub: x.id }) }}>{x.rotulo}</a>)}
+            </nav>}
             {conteudo}
           </main>
         </div>

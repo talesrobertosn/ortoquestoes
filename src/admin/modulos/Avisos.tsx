@@ -47,7 +47,7 @@ export default function Avisos() {
   }
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Receita" titulo={parte.rotulo} pergunta={`${parte.pergunta} Últimos ${inteiro(eventos.length)} avisos. "Ignorado" é normal: são avisos que não mudam nada.`} />
+    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Últimos ${inteiro(eventos.length)} avisos. "Ignorado" é normal: são avisos que não mudam nada.`} />
     {naoVistos.length > 0 && <Faixa tom="erro" titulo={`${naoVistos.length} ${naoVistos.length === 1 ? 'aviso precisa' : 'avisos precisam'} de atenção`}
       acao={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => marcar(naoVistos.map(e => String(e.id)))}><Icone nome="certo" tamanho={14} />Marcar todos como vistos</button>}>
       Abra cada um, confira no Mercado Pago e reprocesse se o pagamento existir. Marcar como visto só tira o alerta; não muda nada na assinatura.

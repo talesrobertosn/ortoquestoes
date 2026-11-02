@@ -61,7 +61,7 @@ export default function Exportar() {
   const falhas = Object.values(estados).filter(e => e === 'falhou').length
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Configurações" titulo={parte.rotulo} pergunta="Um documento com pessoas, atividade, crescimento, assinaturas, pagamentos, previsões e o resumo do painel, pronto para uma análise: Markdown com tabelas, JSON e as pessoas em CSV." />
+    <Cabeca area="Ajustes" titulo={parte.rotulo} pergunta="Um documento com pessoas, atividade, crescimento, assinaturas, pagamentos, previsões e o resumo do painel, pronto para uma análise: Markdown com tabelas, JSON e as pessoas em CSV." />
     <Faixa tom="aviso" titulo="O arquivo contém dados pessoais">De quem usa o site. Guarde com cuidado, não publique e apague quando terminar. Nada sai do seu navegador: o arquivo é montado aqui.</Faixa>
     <div className="a3-grade a3-grade--2" style={{ alignItems: 'start' }}>
       <Painel titulo="1. Privacidade" descricao="Escolha antes de gerar; dá para mudar depois sem consultar de novo.">

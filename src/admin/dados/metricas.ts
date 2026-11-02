@@ -12,14 +12,14 @@ import { cobrancas as cobrancasDe, meioDe, vigentesPorPessoa, type AssinaturaBas
  * Estado de qualidade de um número.
  * confirmado: registro persistido com fonte verificável (evento, cobrança gravada).
  * derivado: calculado de registros observados por fórmula explícita.
- * estimado: reconstruído por falta de registro histórico (renovação antiga do cartão, Pix sem valor gravado).
+ * estimado: estimado por falta de registro histórico (renovação antiga do cartão, Pix sem valor gravado).
  * previsao: futuro, com hipótese; nunca soma ao recebido.
  * incompleto: veio, mas cobre só parte do período ou da base (hoje em andamento, lista truncada).
  * indisponivel: a consulta falhou, falta permissão ou o dado é parcial; nunca vira zero.
  */
 export type Qualidade = 'confirmado' | 'derivado' | 'estimado' | 'previsao' | 'incompleto' | 'indisponivel'
 export const ROTULO_QUALIDADE: Record<Qualidade, string> = {
-  confirmado: 'Confirmado', derivado: 'Derivado', estimado: 'Reconstruído', previsao: 'Previsão', incompleto: 'Incompleto', indisponivel: 'Indisponível',
+  confirmado: 'Confirmado', derivado: 'Derivado', estimado: 'Estimado', previsao: 'Previsão', incompleto: 'Incompleto', indisponivel: 'Indisponível',
 }
 
 export type Unidade = 'pessoas' | 'eventos' | 'contas' | 'brl' | 'pct'
@@ -76,9 +76,9 @@ export const METRICAS = {
     latencia: 'Até o webhook do Mercado Pago chegar', comparavel: 'Sim, com os N dias anteriores', bom: 'sobe',
   },
   receitaReconstruida: {
-    nome: 'Receita reconstruída', pergunta: 'Quanto do período é inferido, por falta de registro?', unidade: 'brl',
+    nome: 'Receita estimada', pergunta: 'Quanto do período é inferido, por falta de registro?', unidade: 'brl',
     numerador: 'Renovações antigas do cartão e pagamentos sem cobrança gravada, pelo preço do plano', janela: FUSO,
-    fonte: 'receita.ts › cobrancas (estimada = true)', qualidade: 'estimado', testes: 'Excluídas', deduplicacao: 'Por cobrança reconstruída',
+    fonte: 'receita.ts › cobrancas (estimada = true)', qualidade: 'estimado', testes: 'Excluídas', deduplicacao: 'Por cobrança estimada',
     latencia: '—', comparavel: 'Só como ordem de grandeza; o extrato oficial é o do Mercado Pago', bom: 'sobe',
   },
   assinantes: {
@@ -170,7 +170,7 @@ export interface ReceitaPeriodo {
   renovacoes: number
   porMeio: { pix: number; cartao: number }
   porPlano: Array<{ plano: string; valor: number; quantidade: number }>
-  /** Um ponto por dia do período: confirmado e reconstruído separados (nunca somados num número só). */
+  /** Um ponto por dia do período: confirmado e estimado separados (nunca somados num número só). */
   porDia: Array<{ dia: string; confirmada: number; reconstruida: number }>
 }
 
@@ -184,7 +184,7 @@ export function janelas(dias: number, agora = Date.now()) {
 }
 
 /**
- * Receita do período separada por qualidade: confirmada (cobrança gravada) e reconstruída (inferida),
+ * Receita do período separada por qualidade: confirmada (cobrança gravada) e estimada (inferida),
  * a partir das mesmas cobranças que Receita › Resultados usa. Contas de teste já devem vir de fora.
  */
 export function receitaDoPeriodo(assinaturas: AssinaturaBase[], reais: CobrancaReal[] | null, dias: number, agora = Date.now()): ReceitaPeriodo {

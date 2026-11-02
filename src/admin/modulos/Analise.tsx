@@ -9,7 +9,7 @@ import { serieLimpa, usarFunil, usarRetencao, usarSerie } from '../dados/consult
 import { usarPainel } from '../dados/painel'
 import type { LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
-import { PERIODOS, defParte } from '../rotas'
+import { PERIODOS, defAba } from '../rotas'
 import { Icone } from '../ui/Icone'
 import { diaDaSerie, inteiro, pct } from '../ui/formato'
 import { Funil, Legenda, MapaCalor, Quadro, Ranking, SerieTempo } from '../ui/graficos'
@@ -19,7 +19,7 @@ import { Tabela } from '../ui/tabela'
 /** Pessoas › Aquisição e ativação, Retenção e ritmo, Perfis e origem. */
 export default function Analise() {
   const { estado } = usarNav()
-  return estado.parte === 'retencao' ? <Retencao /> : estado.parte === 'perfis' ? <Perfis /> : <Aquisicao />
+  return estado.sub === 'retencao' ? <Retencao /> : estado.sub === 'perfis' ? <Perfis /> : <Aquisicao />
 }
 
 /* ───────────── Datas de São Paulo ───────────── */
@@ -68,7 +68,7 @@ function Aquisicao() {
     for (const c of cobrancasDe(p.reais)) if (c.tipo === 'nova' && !primeira.has(c.id_usuario)) primeira.set(c.id_usuario, c.em)
     return { cadastros: porPeriodos(p.usuariosReais.map(u => new Date(u.criado_em)).filter(d => Number.isFinite(d.getTime()))), assinantes: porPeriodos([...primeira.values()]) }
   }, [p.usuariosReais, p.reais])
-  const parte = defParte('crescimento')
+  const parte = defAba('crescimento')
   const rotulos = (cortes?.atual ?? []).map(d => ({ longo: diaDaSerie(d.dia, true), curto: diaDaSerie(d.dia) }))
   const cad = ritmo?.cadastros[agrupar], ass = ritmo?.assinantes[agrupar]
   const esteCad = cad?.[cad.length - 1]?.n ?? 0, esteAss = ass?.[ass.length - 1]?.n ?? 0
@@ -132,7 +132,7 @@ function Retencao() {
   const p = usarPainel()
   const q = usarRetencao()
   const [base, definirBase] = useState<'cadastros' | 'assinantes'>('cadastros')
-  const parte = defParte('retencao')
+  const parte = defAba('retencao')
   const coortes = Array.isArray(q.dados) ? q.dados.map(c => ({ semana: String(c.semana).slice(0, 10), cadastros: Number(c.cadastros), e1: Number(c.estudaram_1a_semana), v2: Number(c.voltaram_2a_semana) })) : null
   const ritmo = useMemo(() => {
     if (!p.usuariosReais || !p.reais) return null
@@ -215,7 +215,7 @@ interface ResumoIndicacoes { codigos: number; convidados: number; confirmados: n
 function Perfis() {
   const p = usarPainel()
   const [criterio, definirCriterio] = useState<'contas' | 'ativos'>('contas')
-  const parte = defParte('perfis')
+  const parte = defAba('perfis')
   const usuarios = p.usuariosReais
   const d = useMemo(() => {
     if (!usuarios) return null

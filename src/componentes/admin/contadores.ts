@@ -19,20 +19,15 @@ export interface Contadores {
 interface LinhaContadores { usuarios: number | string; online_agora: number | string; relatos_abertos: number | string; avaliacoes_para_ler: number | string }
 interface AvaliacaoBase { id_questao: string; util: boolean; observacao: string | null; atualizado_em: string; usuario: string | null }
 
-/** No plano B as listas são maiores: renova com menos frequência. */
-let semRpcLeve = false
-
 async function buscarContadores(sinal: AbortSignal): Promise<Contadores> {
   try {
     const [linha] = await chamarRpc<LinhaContadores[]>('contadores_admin', {}, { sinal })
-    semRpcLeve = false
     if (!linha) return { usuarios: null, online: null, conteudo: null, derivado: false }
     return { usuarios: Number(linha.usuarios), online: Number(linha.online_agora), conteudo: Number(linha.relatos_abertos) + Number(linha.avaliacoes_para_ler), derivado: false }
   } catch (falha) {
     if (!rpcInexistente(falha)) throw falha
   }
   // Plano B enquanto a parte 22 não for colada no Supabase.
-  semRpcLeve = true
   const [relatos, avaliacoes, lidos] = await Promise.all([
     chamarRpc<Array<{ status: string }>>('listar_relatos_admin', {}, { sinal }).catch(() => null),
     chamarRpc<AvaliacaoBase[]>('listar_avaliacoes_comentario_admin', {}, { sinal }).catch(() => null),
@@ -46,5 +41,6 @@ async function buscarContadores(sinal: AbortSignal): Promise<Contadores> {
 
 /** Contadores do painel, renovados a cada minuto (5 no plano B) com a aba do navegador visível. */
 export function usarContadoresAdmin(conta: string | null | undefined) {
-  return usarConsulta<Contadores>(conta ? `${conta}:contadores_admin` : null, buscarContadores, { atualizarCada: semRpcLeve ? 300_000 : 60_000 })
+  return usarConsulta<Contadores>(conta ? `${conta}:contadores_admin` : null, buscarContadores, // A cada 5 minutos (pedido do Tales, 02/11/2026): de minuto em minuto pesava no Supabase.
+    { atualizarCada: 300_000, validadeMs: 300_000 })
 }

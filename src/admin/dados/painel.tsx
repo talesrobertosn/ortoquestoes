@@ -108,8 +108,8 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
 
   const cobrancasCarregando = cobrancasQ.dados === undefined && !cobrancasQ.erro
   const avisoCobrancas = !cobrancasQ.erro ? null : funcaoAusente(cobrancasQ.erro)
-    ? `As cobranças gravadas no banco ainda não estão disponíveis (falta colar no Supabase a ${PARTE_COBRANCAS}). Os valores abaixo saem do preço dos planos e aparecem como reconstruídos.`
-    : `As cobranças gravadas não carregaram (código ${codigoDaFalha(cobrancasQ.erro)}). Os valores abaixo saem do preço dos planos e aparecem como reconstruídos.`
+    ? `As cobranças gravadas no banco ainda não estão disponíveis (falta colar no Supabase a ${PARTE_COBRANCAS}). Os valores abaixo saem do preço dos planos e aparecem como estimados.`
+    : `As cobranças gravadas não carregaram (código ${codigoDaFalha(cobrancasQ.erro)}). Os valores abaixo saem do preço dos planos e aparecem como estimados.`
 
   const { recarregar: r1 } = assinaturasQ, { recarregar: r2 } = eventosQ, { recarregar: r3 } = resumoQ, { recarregar: r4 } = usuariosQ
   const { recarregar: r5 } = contadoresQ, { recarregar: r6 } = cobrancasQ, { recarregar: r7 } = sinaisQ

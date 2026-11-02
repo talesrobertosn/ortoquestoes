@@ -66,7 +66,7 @@ export const CINCO_MIN = 300_000
  * Consulta com cache. `chave` null deixa a consulta parada (seção que ainda não precisa
  * dos dados). O `buscador` recebe o sinal de cancelamento.
  */
-export function usarConsulta<T>(chave: string | null, buscador: Buscador<T>, { atualizarCada, validadeMs = 15_000 }: OpcoesConsulta = {}): Consulta<T> {
+export function usarConsulta<T>(chave: string | null, buscador: Buscador<T>, { atualizarCada, validadeMs = CINCO_MIN }: OpcoesConsulta = {}): Consulta<T> {
   const ref = useRef(buscador)
   ref.current = buscador
   const [, redesenhar] = useReducer((n: number) => n + 1, 0)

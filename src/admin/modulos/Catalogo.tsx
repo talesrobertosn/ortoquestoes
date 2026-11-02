@@ -31,7 +31,7 @@ export default function Catalogo() {
   const am = atual ? amostras[atual.id] : null
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Comunicação" titulo={parte.rotulo} pergunta={`${modelos.length} modelos (${Object.keys(TIPOS).length} tipos, a carta de estudo aberta nas 9 faixas) e ${totalVersoes} versões escritas à mão. Nada sai daqui: é para ler, conferir o tom e sortear versões.`}
+    <Cabeca area="E-mails" titulo={parte.rotulo} pergunta={`${modelos.length} modelos (${Object.keys(TIPOS).length} tipos, a carta de estudo aberta nas 9 faixas) e ${totalVersoes} versões escritas à mão. Nada sai daqui: é para ler, conferir o tom e sortear versões.`}
       acoes={<a className="a3-botao a3-botao--contorno" href={PLANO_REPO} target="_blank" rel="noreferrer"><Icone nome="externo" tamanho={15} />Plano dos e-mails</a>} />
     <div className="a3-catalogo">
       <section className="a3-painel a3-catalogo__lista" aria-label="Modelos">

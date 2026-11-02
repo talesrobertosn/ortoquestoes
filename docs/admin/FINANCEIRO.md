@@ -56,7 +56,7 @@ Situação da assinatura (`situacaoAssinatura`, mesmas regras de acesso de `rece
 | Cortesia | Acesso liberado pelo administrador, sem pagamento; só aparece na ficha (não há consulta que liste as cortesias) |
 
 Antes, "Ativa" aparecia como "Em dia" e a lista mostrava o status cru do banco (um Pix pago e já
-encerrado aparecia "Em dia"). Pagamentos: **Paga**, **Estimada** (renovação antiga reconstruída
+encerrado aparecia "Em dia"). Pagamentos: **Paga**, **Estimada** (renovação antiga estimada
 ou paga sem o registro), **Reembolsada**. Tipo: **Compra no Pix**, **Assinatura nova**,
 **Renovação automática**.
 

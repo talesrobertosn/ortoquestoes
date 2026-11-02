@@ -27,7 +27,7 @@ node fixtures/testar_admin_metricas.mjs --gerar
 | --- | --- |
 | Confirmado | Registro gravado com fonte verificável (evento, cobrança gravada). |
 | Derivado | Calculado de registros observados por uma fórmula explícita. |
-| Reconstruído | Inferido por falta de registro histórico (renovação antiga do cartão, assinatura paga sem a cobrança gravada). Aparece hachurado nos gráficos e nunca vira um número só com o confirmado. |
+| Estimado | Inferido por falta de registro histórico (renovação antiga do cartão, assinatura paga sem a cobrança gravada). Aparece hachurado nos gráficos e nunca vira um número só com o confirmado. |
 | Previsão | Futuro, com hipótese declarada (cartão se ninguém cancelar; Pix com a taxa de recompra escolhida). |
 | Incompleto | Veio, mas cobre só parte do período ou da base. |
 | Indisponível | A consulta falhou, falta permissão ou o dado é parcial. |
@@ -36,7 +36,7 @@ node fixtures/testar_admin_metricas.mjs --gerar
 
 - **Cobranças** saem de `cobrancas_admin` (gravadas) mais `listar_assinaturas_admin`, pela função
   `cobrancas()` de `src/componentes/admin/receita.ts`. Pix entra pelo valor pago; cartão, pelo valor contratado.
-  O banco guarda só a última cobrança de cada cartão: as renovações anteriores são reconstruídas a cada período do plano.
+  O banco guarda só a última cobrança de cada cartão: as renovações anteriores são estimadas a cada período do plano.
   Reembolsos são descontados e aparecem riscados em Cobranças.
 - **Nova, renovação ou volta** é decidido por pessoa: a primeira compra paga é a nova; pagar de novo com o acesso
   valendo (ou até 30 dias depois do fim) é renovação; depois disso, "voltou a assinar".
@@ -143,7 +143,7 @@ node fixtures/testar_admin_metricas.mjs --gerar
 | Comparação | Sim, com os N dias anteriores |
 | Subir é | bom |
 
-### Receita reconstruída `receitaReconstruida`
+### Receita estimada `receitaReconstruida`
 
 | Campo | Definição |
 | --- | --- |
@@ -152,9 +152,9 @@ node fixtures/testar_admin_metricas.mjs --gerar
 | Numerador | Renovações antigas do cartão e pagamentos sem cobrança gravada, pelo preço do plano |
 | Janela e fuso | Dias do relógio de São Paulo (America/Sao_Paulo); o dia do evento, não o do processamento. |
 | Fonte (RPC) | receita.ts › cobrancas (estimada = true) |
-| Qualidade | Reconstruído |
+| Qualidade | Estimado |
 | Contas de teste | Excluídas |
-| Deduplicação | Por cobrança reconstruída |
+| Deduplicação | Por cobrança estimada |
 | Atraso | — |
 | Comparação | Só como ordem de grandeza; o extrato oficial é o do Mercado Pago |
 | Subir é | bom |

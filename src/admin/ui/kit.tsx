@@ -23,7 +23,9 @@ export function Painel({ titulo, descricao, acoes, pe, children, justo = false, 
 
 /* ───────────── Dados ───────────── */
 
-export function SeloQualidade({ q }: { q: Qualidade }) {
+export function SeloQualidade({ q, sempre = false }: { q: Qualidade; sempre?: boolean }) {
+  // Confirmado e derivado são o normal: sem selo, para não poluir (revisão de 02/11/2026). Só aparece o que pede cuidado.
+  if (!sempre && (q === 'confirmado' || q === 'derivado')) return null
   return <span className={`a3-qualidade a3-qualidade--${q}`}><i aria-hidden="true" />{ROTULO_QUALIDADE[q]}</span>
 }
 
