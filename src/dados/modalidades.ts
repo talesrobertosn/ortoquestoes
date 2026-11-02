@@ -51,7 +51,7 @@ export const MODALIDADES: Modalidade[] = [
     id: 'mao-ingresso', nome: 'Ingresso em Cirurgia da Mão', curto: 'Ingresso na Mão', grupo: 'mao', area: 'mao',
     descricao: 'Provas de seleção para a residência e os programas de Cirurgia da Mão.',
     origem: 'questões oficiais das provas de seleção em Cirurgia da Mão no acervo (USP, ENARE, UFG, PUC-SP, INTO e outras)',
-    entra: (q, prova) => q.ar === 'mao' && q.sim !== 1 && !ehTitulo(prova),
+    entra: (q, prova) => (q.ar === 'mao' || (q.ar === 'enare' && !!q.aa?.includes('mao'))) && q.sim !== 1 && !ehTitulo(prova),
   },
   {
     id: 'mao-titulo', nome: 'Título de Cirurgia da Mão: SBCM e SIMÃO', curto: 'Título da Mão', grupo: 'mao', area: 'mao',

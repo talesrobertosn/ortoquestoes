@@ -75,6 +75,23 @@ Copiar para cada prova nova (ex.: `## SIMÃO 2024`):
 |---|---|---|---|---|---|---|---|
 | 1 | | | | | | | a fazer |
 
+## ENARE: filtro e comentários (Tales, 02/11/2026)
+
+**Regra nova:** o ENARE é uma prova só, geral, que dá acesso a R4 como coluna e mão. Todas as questões dele ficam em
+`area: "r4-enare"`; o caderno de Cirurgia da Mão e as questões de tema mão do R4 também levam
+`areasAdicionais: ["cirurgia-mao"]`. No treino há uma categoria e uma pílula "ENARE". A partir de agora, todo comentário
+cita o livro lido.
+
+**Lote 01 aplicado** (`lotes/enare/enare_01.py`): mao-1894, 1896 a 1901 e 1904 (2025); mao-1852, 1853, 1863 a 1869 e 1886 (2023).
+Alertas nas divergências: 1853 (Wang e Yao tratam a ausência de extensor em hipodesenvolvimento), 1863 (Green: paroníquia
+é a mais comum da mão; gabarito de 2023 é o preliminar), 1865 (ordem completa dos dedos não está no Green), além de 1894, 1896 e 1897.
+
+**Falta com livro local:** pediatria-1057 a 1077 (Tachdjian); trauma-1725, 1727, 1728, 1732, 1736 (Rockwood); mao-1811 a 1814, 1820,
+1823, 1824, 1835, 1842, 1843, 1847, 1848, 1850 e 1851 (2022), 1884 e 1870 (2023), 1924 e 1927 (2025), que ainda precisam de leitura.
+
+**Falta sem livro local:** a cirurgia plástica geral (mama, face, rinoplastia, orelha, queimadura sistêmica, melanoma e pele).
+Não há livro de plástica na biblioteca; pedir ao Tales. As 56 já comentadas antes (mediana de 1.343 caracteres no conceito) entram depois.
+
 ## Retomada atual (25/10/2026)
 
 **SBCM 2023 fechada** no modelo de miniaula (docs/prompts/comentarios-miniaula.md): 99 publicadas (mao-2189 a mao-2277 e

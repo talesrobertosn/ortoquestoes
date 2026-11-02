@@ -13,7 +13,7 @@ try {
   const indice = JSON.parse(await readFile('public/acervo/indice.json', 'utf8'))
   const filtros = (areas, provas = []) => ({ ...m.FILTROS_VAZIOS, areas, provas })
   const ids = (areas, provas = []) => m.filtrar(indice, filtros(areas, provas)).map(q => q.id)
-  const duais = indice.questoes.filter(q => q.aa?.includes('mao'))
+  const duais = indice.questoes.filter(q => q.aa?.includes('mao') && q.sim === 1)
   assert.ok(duais.length > 0, 'faltam simulados de dupla presença')
   const base = ids(['base']), mao = ids(['mao']), ambos = ids(['base', 'mao'])
   for (const q of duais) {
@@ -30,6 +30,16 @@ try {
     assert.ok(!ids(['enare']).includes(q.id), 'presença adicional vazou para R4')
   }
   assert.equal(new Set(ambos).size, ambos.length, 'IDs duplicados ao combinar categorias')
+  // O ENARE é uma prova só: tudo na categoria dele, e o que interessa à mão também em Cirurgia da mão.
+  const enare = ids(['enare'])
+  const nomesEnare = indice.provas.filter(p => p.startsWith('ENARE'))
+  assert.ok(nomesEnare.length >= 2, 'faltam os cadernos do ENARE')
+  for (const q of indice.questoes.filter(q => q.p !== null && nomesEnare.includes(indice.provas[q.p]) && !q.dup && q.an !== 1)) {
+    assert.ok(enare.includes(q.id), `${q.id} fora da categoria ENARE`)
+    if (indice.provas[q.p] === 'ENARE Cirurgia da Mão') assert.ok(mao.includes(q.id), `${q.id} saiu de Cirurgia da mão`)
+    assert.ok(!base.includes(q.id), `${q.id} vazou para a ortopedia`)
+  }
+  assert.equal(new Set(ids(['enare', 'mao'])).size, ids(['enare', 'mao']).length, 'ENARE duplicado ao combinar com mão')
   assert.equal(m.contar(indice, filtros(['mao'])).total, mao.length)
   const exclusivoMao = indice.questoes.find(q => q.ar === 'mao' && !q.dup && q.an !== 1)
   assert.ok(exclusivoMao && mao.includes(exclusivoMao.id) && !base.includes(exclusivoMao.id), 'prova oficial de mão migrou para base')

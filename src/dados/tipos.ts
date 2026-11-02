@@ -102,9 +102,9 @@ export interface ComentarioIA {
 
 export interface Questao {
   id: string
-  /** "cirurgia-mao" nas provas de cirurgia da mão; ausente nas de ortopedia */
-  area?: 'cirurgia-mao'
-  /** Simulado de ortopedia também disponível no treino desta especialidade. */
+  /** "cirurgia-mao" nas provas de cirurgia da mão; "r4-enare" em todo o ENARE; ausente nas de ortopedia */
+  area?: 'cirurgia-mao' | 'r4-enare'
+  /** Simulado de ortopedia ou questão do ENARE também disponível no treino desta especialidade. */
   areasAdicionais?: Array<'cirurgia-mao'>
   /**
    * Dissertativa: sem alternativas. A pessoa escreve a resposta, vê a resposta
@@ -246,7 +246,7 @@ export const SITUACOES_TURMA: Situacao[] = ['turmaErra', 'turmaAcertaVoceErrou']
  */
 export type Area = 'base' | 'enare' | 'coluna' | 'quadril' | 'mao'
 export const AREAS_TREINO: Area[] = ['base', 'enare', 'coluna', 'quadril', 'mao']
-export const ROTULO_AREA: Record<Area, string> = { base: 'Ortopedia (TEOT e TARO)', enare: 'R4 ENARE', coluna: 'R4 Coluna', quadril: 'Fellowship Quadril', mao: 'Cirurgia da mão' }
+export const ROTULO_AREA: Record<Area, string> = { base: 'Ortopedia (TEOT e TARO)', enare: 'ENARE', coluna: 'R4 Coluna', quadril: 'Fellowship Quadril', mao: 'Cirurgia da mão' }
 
 export interface Filtros {
   /** categorias incluídas no treino */
