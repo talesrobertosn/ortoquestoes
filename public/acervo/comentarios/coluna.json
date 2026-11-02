@@ -3739,16 +3739,20 @@
   "conferido": false
  },
  "coluna-0290": {
+  "conceito": "Corrigir uma cifose rígida exige escolher a osteotomia certa, e essa escolha depende de saber onde está o problema estrutural. O enunciado descreve a **classificação de Rajasekaran** (J Bone Joint Surg, 2018), que junta quatro dados: a deficiência das colunas, a flexibilidade dos espaços discais, a magnitude da curva e o tipo de osteotomia. Aqui, \"coluna\" é a anterior (corpo e disco) ou a posterior (arco, facetas e ligamentos).\n\n| Tipo | Colunas | O que diferencia |\n|---|---|---|\n| I A | nenhuma deficiente | discos móveis, flexíveis |\n| I B | nenhuma deficiente | discos fundidos, imóveis |\n| II A | só a **anterior** deficiente | |\n| II B | só a **posterior** deficiente | |\n| III | as duas deficientes | A até 60 graus; B acima de 60 graus; C colapso em flambagem |\n\nA lógica de gravar é em degraus: o algarismo conta quantas colunas falharam, e a letra do tipo II diz qual delas, na ordem anterior e depois posterior.\n\nA tabela conversa com a cirurgia. A osteotomia de Ponte encurta só a coluna posterior e ganha de 5 a 10 graus por nível, cada milímetro ressecado valendo cerca de um grau; por isso precisa de disco que ainda se mova (Campbell 14, cap. 44, p. 2050; Campbell 12, cap. 44). No estudo original, os tipos I e II foram tratados com Ponte, subtração pedicular ou osteotomia disco-óssea, e a maior parte dos tipos III A e III B precisou de vertebrectomia.",
+  "correta": "**D: II B.** Uma coluna só está deficiente, e é a posterior: esse é exatamente o II B de Rajasekaran.",
   "incorretas": {
-   "A": "O tipo I corresponde às cifoses sem deficiência estrutural relevante, geralmente mais flexíveis.",
-   "B": "O I B também pertence ao grupo sem deficiência estrutural predominante das colunas.",
-   "C": "O II A descreve a deficiência da coluna anterior, e não da posterior.",
-   "E": "O tipo III corresponde à deficiência das duas colunas, a situação que exige as osteotomias mais extensas."
+   "A": "**Sem deficiência nenhuma.** O I A tem as duas colunas íntegras e os discos móveis, o cenário mais favorável, em que a curva ainda cede pelos discos.",
+   "B": "**Colunas íntegras, discos fundidos.** O I B também não tem deficiência; o que muda em relação ao I A é a rigidez dos espaços discais. A rigidez é o que confunde: curva dura não quer dizer coluna deficiente.",
+   "C": "**A coluna errada.** O II A é a deficiência isolada da coluna anterior. É a distratora mais próxima, porque só a letra separa as duas situações.",
+   "E": "**Duas colunas, não uma.** O tipo III reúne deficiência anterior e posterior e é subdividido pela magnitude da curva e pelo colapso. Foi nele que a vertebrectomia predominou."
   },
-  "conceito": "Corrigir uma cifose rígida exige escolher a osteotomia certa, e essa escolha depende de saber onde está o problema estrutural da coluna. Por isso surgiram classificações que olham para as **colunas da vértebra**: a coluna **anterior** (corpo vertebral e disco) e a **posterior** (arco, facetas e ligamentos de trás). A classificação cobrada na questão combina esse dado com a **flexibilidade** dos discos, a **magnitude** da curva e a necessidade de osteotomia.\n\nPela lógica adotada no gabarito, o tipo I agrupa as cifoses sem deficiência estrutural importante, mais flexíveis. O tipo II separa a deficiência de uma coluna só: **II A** quando o problema está na coluna **anterior** e **II B** quando está na coluna **posterior**. O tipo III é a deficiência das duas.\n\nNa prática, isso conversa com as osteotomias. Quando os discos ainda se movem, osteotomias que retiram só elementos posteriores, como a de **Smith-Petersen** ou a de **Ponte**, fecham a parte de trás usando o disco como dobradiça e ganham cerca de 10 graus por nível. Quando a curva é rígida, entra a **osteotomia de subtração pedicular**, que remove uma cunha das três colunas e corrige em torno de 30 a 40 graus num nível só. Nas deformidades mais graves e angulares, a **ressecção de coluna vertebral** (VCR) remove um segmento inteiro, com maior correção e maior risco neurológico.\n\nComo as definições de cada subtipo dessa classificação variam entre as referências, vale ler o alerta e conferir a tabela do material usado na preparação.",
-  "correta": "II B. Na lógica do gabarito, a cifose com deficiência isolada da coluna posterior é classificada como II B.",
-  "alerta": "A definição exata de cada subtipo (I A, I B, II A, II B, III) dessa classificação de cifose baseada nas colunas pode variar um pouco conforme a referência consultada, mantivemos aqui a lógica mais consistente com o gabarito oficial (deficiência posterior isolada = II B), mas vale conferir a tabela específica do material que você está usando para a prova.",
-  "geradoEm": "2026-10-02",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 44 (Scoliosis and Kyphosis), p. 2050",
+   "Campbell, Cirurgia Ortopédica, 12ª ed., cap. 44",
+   "Classificação de Rajasekaran para a cifose, J Bone Joint Surg, 2018, e estudos de validação (fontes abertas conferidas)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0291": {

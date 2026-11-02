@@ -3087,15 +3087,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0218": {
+  "conceito": "**Como se faz a incidência de Stryker.** Paciente em **decúbito dorsal**, com a **mão** do lado examinado sobre o **topo da cabeça** e o **cotovelo** apontando para o teto. O raio central é dirigido ao **processo coracoide**, com inclinação **cefálica de cerca de 10 graus**. A posição roda a cabeça do úmero e projeta sua face **posterolateral** em perfil.\n\n**Para que ela serve.** Campbell a lista entre as incidências de consultório do ombro instável, ao lado da West Point (cap. 47, p. 2444), e a indicação clássica é mostrar a **lesão de Hill-Sachs**. Mas o Rockwood dá a chave desta questão: quando a luxação acromioclavicular vem com distância coracoclavicular normal, suspeita-se de fratura do coracoide, e a Stryker põe o **coracoide em perfil**, sendo a melhor incidência para avaliar essa lesão (cap. 32).\n\n**As outras incidências do ombro instável.** **West Point**: decúbito ventral, raio a 25 graus em duas direções, mostra o **rebordo anteroinferior da glenoide** (Bankart ósseo). **Bernageau**: perfil da glenoide para medir a perda óssea anterior. **Garth** (apical oblíqua): glenoide anteroinferior e Hill-Sachs. **Axilar**: relação da cabeça com a glenoide, indispensável para não perder a luxação **posterior**. **Perfil de escápula (Y)**: posição da cabeça em relação à glenoide. **Outlet de Neer**: morfologia do **acrômio** (Bigliani I plano, II curvo, III em gancho).\n\n**Hoje.** A tomografia com reconstrução 3D, com subtração da cabeça, substituiu essas incidências para medir perda óssea da glenoide e calcular o **track** glenoidal (engajamento do Hill-Sachs). Mas as incidências continuam cobradas.",
+  "correta": "**B: visualizar o coracoide.** Na Stryker, ele fica em perfil, e por isso é a melhor incidência para sua fratura (Rockwood, cap. 32). O entalhe de Hill-Sachs, sua outra indicação famosa, não está entre as opções.",
   "incorretas": {
-   "A": "**Outra incidência.** O tubérculo menor é visto de perfil no AP em rotação interna e na axilar, e não é o objetivo da Stryker.",
-   "C": "**Região não estudada.** O rebordo posterossuperior da glenoide não é o alvo da Stryker, que mostra a cabeça posterolateral e o coracoide.",
-   "D": "**É o papel da West Point.** O rebordo anteroinferior é estudado pela West Point, pela Bernageau e pela Garth.",
-   "E": "**É o papel do outlet.** O acrômio e sua forma são estudados na incidência de saída do supraespinal (outlet de Neer)."
+   "A": "**Fica em outra projeção.** O tubérculo menor aparece no AP em rotação interna e na axilar.",
+   "C": "**Região não estudada.** A Stryker foi feita para a cabeça posterolateral e o coracoide, e a borda posterossuperior da glenoide não é seu alvo.",
+   "D": "**A distratora do ombro instável.** Rebordo anteroinferior é papel da West Point. Como as duas aparecem juntas nas indicações de luxação, é fácil trocar.",
+   "E": "**Pertence ao outlet.** A forma do acrômio é estudada na incidência de saída do supraespinal."
   },
-  "conceito": "**Como se faz a incidência de Stryker.** Paciente em **decúbito dorsal**, com a **mão** do lado examinado sobre o **topo da cabeça** e o **cotovelo** apontando para o teto. O raio central é dirigido ao **processo coracoide**, com inclinação **cefálica de cerca de 10 graus**. A posição roda a cabeça do úmero e projeta sua face **posterolateral** em perfil.\n\n**Para que ela serve.** A indicação clássica é mostrar a **lesão de Hill-Sachs**, o entalhe (notch) que dá nome à incidência. Como o raio é centrado no coracoide e a projeção o afasta da sobreposição da escápula e da cabeça, ela também é a incidência que mostra o **coracoide** livre, útil para avaliar fraturas da base do coracoide e, no planejamento do Latarjet, o seu tamanho.\n\n**As outras incidências do ombro instável.** **West Point**: decúbito ventral, raio a 25 graus em duas direções, mostra o **rebordo anteroinferior da glenoide** (Bankart ósseo). **Bernageau**: perfil da glenoide para medir a perda óssea anterior. **Garth** (apical oblíqua): glenoide anteroinferior e Hill-Sachs. **Axilar**: relação da cabeça com a glenoide, indispensável para não perder a luxação **posterior**. **Perfil de escápula (Y)**: posição da cabeça em relação à glenoide. **Outlet de Neer**: morfologia do **acrômio** (Bigliani I plano, II curvo, III em gancho).\n\n**Hoje.** A tomografia com reconstrução 3D, com subtração da cabeça, substituiu essas incidências para medir perda óssea da glenoide e calcular o **track** glenoidal (engajamento do Hill-Sachs). Mas as incidências continuam cobradas.\n\n**Na prova:** **Stryker** mostra o **Hill-Sachs** e o **coracoide**; West Point e Bernageau, a glenoide anteroinferior; outlet, o acrômio.",
-  "correta": "**Visualizar o coracoide.** Centrada no coracoide com 10 graus cefálicos, a Stryker o projeta livre de sobreposições; a sua indicação mais famosa é o Hill-Sachs, que não está entre as opções.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 47 (Recurrent Dislocations), p. 2444",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 32 (Acromioclavicular and Sternoclavicular Joint Injuries)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0230": {
