@@ -89,7 +89,11 @@ Alertas nas divergências: 1853 (Wang e Yao tratam a ausência de extensor em hi
 **Lotes 02 a 04 aplicados** (`lotes/enare/enare_02.py` a `enare_04.py`): 15 de pediatria, 4 de trauma e 8 de mão (mao-1811, 1812, 1813, 1820, 1842, 1843, 1850, 1884).
 Alertas: pediatria-1061, 1063, 1066, 1067, 1068, 1069, 1075, 1076; trauma-1727, 1728, 1736; mao-1813, 1820, 1843.
 
-**Sem fonte nos livros locais, pedir livro:** pediatria-1057 (limites de angulação do antebraço aos 5 anos), pediatria-1074 (classificação de GOLDBERG),
+**Lotes 05 a 09 aplicados em 02/11/2026** (`lotes/enare/enare_05.py` a `enare_09.py`): com eles, todas as questões do caderno ENARE Cirurgia da Mão têm comentário.
+Sem livro de plástica na biblioteca, a parte de plástica usa fontes abertas conferidas (StatPearls, PMC, PubMed), identificadas nas referências; quando chegar um livro de plástica, trocar a fonte. Fatos não confirmados ficaram no `alerta`.
+Para revisar com prioridade quando houver livro: pediatria-1074 (GOLDBERG), trauma-1732 (PECORELLI e DELLA TORRE), mao-1921 (Código de Ética), mao-1926, mao-1888, mao-1892, mao-1881, mao-1911, mao-1931.
+
+**Registro anterior, sem fonte nos livros locais:** pediatria-1057 (limites de angulação do antebraço aos 5 anos), pediatria-1074 (classificação de GOLDBERG),
 trauma-1732 (método de PECORELLI e DELLA TORRE). Faltam conferir nos livros: mao-1814, 1823, 1824, 1835, 1847, 1848, 1851, 1870, 1912, 1913, 1924, 1927 e 1928.
 O Green 7ª ed. (2017, em inglês) entrou na pasta em 02/11/2026, apelido `green7` em `scripts/livros.py`; não traz plástica geral.
 

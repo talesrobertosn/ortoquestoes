@@ -31089,6 +31089,41 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1814": {
+  "conceito": "A pergunta parece grande, mas é um teste de anatomia e de atenção. O plexo braquial vem dos ramos ventrais de C5 a T1, e os **troncos** são formados por essas raízes: C5 e C6 formam o superior, C7 segue como médio, e C8 com T1 formam o inferior. O Netter usa o \"tronco superior\" como referência para o nervo supraescapular, de C5 e C6 (Netter's Concise Orthopaedic Anatomy, cap. 3), e o Green descreve o mesmo tronco nas lesões do plexo (8ª ed., cap. 34).\n\nEssa organização explica muitos déficits: a lesão alta, em C5 e C6, atinge a abdução do ombro e a flexão do cotovelo, e é por isso que a paralisia obstétrica de ERB tem esse desenho.",
+  "correta": "**B: as raízes C5 e C6 formam o tronco superior do plexo braquial.** É a anatomia básica (Netter's Concise, cap. 3; Green, 8ª ed., cap. 34).",
+  "incorretas": {
+   "A": "**Raízes erradas.** O plexo vem de C5 a T1, e não de C4 a C6.",
+   "C": "**Nível errado.** O bloqueio interescalênico age em raízes altas, e tradicionalmente poupa as mais baixas, C8 e T1. Por isso, não cobre bem a mão.",
+   "D": "**Fora de contexto.** A frase não diz de que lesão fala, e não há como aceitá-la como uma afirmação geral.",
+   "E": "**O inverso.** A fluoroscopia é justamente o exame que mostra, em movimento, a estabilidade da fratura-luxação da interfalângica proximal."
+  },
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 3",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 34"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1815": {
+  "conceito": "A face tem uma camada superficial contínua, e quem a conhece opera com mais segurança. Essa lâmina é o SMAS, que, no pescoço, continua com o platisma e a fáscia cervical superficial; na têmpora, com a fáscia temporal superficial; e, no couro cabeludo, com a gálea. É exatamente o que a alternativa correta diz, e os anatomistas ainda discutem como nomear cada parte (PMC11027987).\n\nO nervo facial é o motivo de tanto cuidado. Ao sair da parótida, os ramos correm **profundamente** ao SMAS (StatPearls, SMAS Fascia), dentro da fáscia profunda ou logo abaixo dela, conforme o autor (PMC12193931). O ramo frontal é o que fica mais exposto acima do arco zigomático, cruzando entre a fáscia temporal superficial e a profunda (PMC3732099). Os ramos só ficam superficiais perto dos músculos que inervam, o que dá aos músculos da mímica sua inervação pela face profunda.",
+  "correta": "**A: a camada superficial da face e do pescoço é formada por fáscia cervical superficial, fáscia superficial da face, fáscia temporal superficial e gálea.** É a lâmina contínua que inclui o SMAS (StatPearls, SMAS Fascia; PMC11027987).",
+  "incorretas": {
+   "B": "**O inverso.** Depois da parótida, os ramos correm profundamente ao SMAS (StatPearls, SMAS Fascia).",
+   "C": "**O ponto clássico de risco está acima.** O ramo frontal cruza acima do arco zigomático (PMC3732099). A frase fala em abaixo dele, sem dizer de que ramo se trata.",
+   "D": "**O \"exceto\" derruba.** Os ligamentos seguram os tecidos justamente contra a gravidade, e sua frouxidão explica a ptose da idade (PMC3657075).",
+   "E": "**Nervo inventado.** O ramo temporal do facial é motor e vai para o músculo frontal. As cartilagens nasais têm outra inervação."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Anatomy, Skin, SMAS Fascia (NBK519014)",
+   "Does the SMAS Exist as an Anatomical Entity, PMC11027987",
+   "Current Trends in Facelift and Necklift, PMC12193931",
+   "Review of Facial Nerve Anatomy: Trauma to the Temporal Region, PMC3732099",
+   "Retaining Ligaments of the Face, PMC3657075"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1816": {
   "conceito": "Em 1901, LE FORT percebeu que o terço médio da face tende a quebrar por linhas previsíveis de fraqueza. Os padrões envolvem as lâminas pterigoides do esfenoide e são divididos por orientação: horizontal, piramidal e transverso (StatPearls, Le Fort Fractures).\n\nDá para gravar pelo que se solta:\n\n| Nível | Desenho | O que fica solto |\n|---|---|---|\n| I | horizontal, acima dos ápices dentários (fratura de GUÉRIN) | o palato e os dentes superiores |\n| II | piramidal: base nos dentes, ápice nos ossos nasais | maxila e nariz |\n| III | transverso | toda a face em relação ao crânio (disjunção craniofacial) |\n\nA ordem ajuda no tratamento: quanto mais alto o nível, mais pilares a refazer. Os rebordos orbitais entram quando a linha sobe até a órbita, o que não acontece no nível I. E a proximidade com a órbita explica por que a cegueira é uma preocupação das fraturas altas, e não do nível I, cujo traço fica abaixo dela.",
   "correta": "**B: as fraturas de Le Fort nível 2 são a fratura piramidal da maxila.** É a descrição do StatPearls: base nos dentes maxilares e ápice nos ossos nasais (Le Fort Fractures).",
@@ -31236,6 +31271,24 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1825": {
+  "conceito": "O texto longo do enunciado esconde uma pergunta simples: qual corpúsculo faz o quê? Os quatro clássicos são mecanorreceptores, e o StatPearls os separa em dois grupos pelo tempo de adaptação:\n\n| Receptor | Adaptação | Sente |\n|---|---|---|\n| MERKEL | lenta | tato fino, em áreas de alta acuidade, como a ponta dos dedos |\n| RUFFINI | lenta | estiramento da pele e posição dos dedos |\n| MEISSNER | rápida | tato leve e vibração de baixa frequência, de 20 a 50 Hz |\n| PACINI | rápida | vibração de alta frequência, de 60 a 400 Hz, e pressão profunda |\n\nOs corpúsculos de **KRAUSE** ficam fora dessa tabela: nos livros didáticos, são tradicionalmente ligados ao frio, e é o que a banca pede. O Green usa essa mesma família na mão, ao lembrar que a pele da palma é rica em mecanorreceptores, um motivo para preferir enxertos próprios para a região (8ª ed., cap. 44, p. 1702).",
+  "correta": "**A: Krause - Frio.** É a associação clássica dos textos didáticos, e as outras alternativas trocam claramente os mecanorreceptores (StatPearls, Physiology, Mechanoreceptors).",
+  "alerta": "As fontes abertas consultadas cobrem os quatro mecanorreceptores, mas não o corpúsculo de KRAUSE; a ligação com o frio é a tradição didática, e a banca a adotou. Letra A mantida.",
+  "incorretas": {
+   "B": "**A atribuição é mais a vibração e a pressão.** O corpúsculo de PACINI responde à vibração de alta frequência (StatPearls, Physiology, Mechanoreceptors).",
+   "C": "**Mais estiramento.** O RUFFINI detecta o estiramento da pele e a posição dos dedos (StatPearls, Physiology, Mechanoreceptors).",
+   "D": "**Tato, não calor.** O disco de MERKEL é um receptor de tato fino (StatPearls, Physiology, Mechanoreceptors).",
+   "E": "**Tato, não frio.** O MEISSNER é um receptor de adaptação rápida (StatPearls, Neuroanatomy, Touch Receptor)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Physiology, Mechanoreceptors (NBK541068)",
+   "StatPearls (NCBI Bookshelf), Neuroanatomy, Touch Receptor (NBK547731)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 44, p. 1702"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1826": {
   "conceito": "Em 1981, MATHES e NAHAI classificaram os músculos pelo modo como recebem sangue, porque isso decide como um músculo pode ser usado como retalho. O Rockwood reproduz a tabela (cap. 19, Tabela 19-1):\n\n| Tipo | Irrigação | Exemplos |\n|---|---|---|\n| I | um pedículo | gastrocnêmio, tensor da fáscia lata |\n| II | dominante e menores | grácil, sóleo |\n| III | dois dominantes | reto abdominal, glúteo máximo |\n| IV | múltiplos segmentares | sartório, tibial anterior |\n| V | dominante e segmentares | grande dorsal, peitoral maior |\n\nA consequência prática: o tipo IV é o pior para rotação, porque não sobrevive com um único pedículo; os tipos I, II, III e V costumam sobreviver ao pedículo dominante (Rockwood, cap. 19).\n\n> **Na prova:** TFL, grácil, glúteo: um, dois, três.",
   "correta": "**C: tensor da fáscia lata, grácil e glúteo máximo.** Cada um está no seu tipo na Tabela 19-1 do Rockwood (cap. 19).",
@@ -31247,6 +31300,142 @@
   },
   "referencias": [
    "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 19, Tabela 19-1 (Mathes e Nahai)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1827": {
+  "conceito": "A pele de quem tem essa doença lembra uma rede ou um mármore arroxeado. Na **cútis marmorata telangiectásica congênita**, esse desenho está presente desde o nascimento e persiste mesmo em temperatura normal, ao contrário da cútis marmorata fisiológica do recém-nascido, que desaparece ao aquecer.\n\nNuma revisão da literatura, a região mais acometida foi o membro inferior (196 de 324 casos localizados), e a condição costuma trazer atrofia e ulceração (PMC6894123). Não é uma doença que costuma piorar. Séries antigas relatam melhora espontânea com a idade (PubMed 1302325). Apesar de rara, com menos de 500 casos descritos (PMC12385243), ela costuma ter boa evolução, e a atenção recai sobre alterações associadas, como a assimetria do membro (PMC7568139).",
+  "correta": "**B: manifesta-se como uma marmorização cutânea congênita mesmo em temperaturas normais, mais proeminente em baixas temperaturas ou com choro.** É a descrição clássica da doença (PMC6894123).",
+  "incorretas": {
+   "A": "**Sem base nas fontes.** As revisões não destacam predomínio feminino como marca da doença.",
+   "C": "**O contrário.** Séries relatam melhora espontânea com a idade (PubMed 1302325).",
+   "D": "**Lugar trocado.** O membro inferior é o local mais acometido (PMC6894123).",
+   "E": "**Exagero.** Pode haver alterações associadas, mas essa hipoplasia arterial não é uma associação habitual da doença (PMC6894123)."
+  },
+  "referencias": [
+   "Cutis marmorata telangiectatica congenita: a literature review, PMC6894123",
+   "CMTC: Case Series and Literature Review, PMC12385243",
+   "CMTC. Apropos of 4 new cases, PubMed 1302325",
+   "CMTC Associated with Hemiatrophy, PMC7568139"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1828": {
+  "conceito": "As síndromes vasculares se separam com duas perguntas: qual o fluxo, e o que mais vem junto? Aqui, o enunciado dá tudo: malformação **venosa, linfática e capilar, de baixo fluxo**, em um membro inferior.\n\nÉ o retrato da **KLIPPEL-TRENAUNAY**. A classificação da ISSVA a define como malformações capilares e venosas com crescimento excessivo do membro, com ou sem componente linfático (PMC10453504). O diagnóstico é principalmente clínico, e o exagero do membro costuma ser mais de partes moles do que de osso: numa série de 17 pacientes, houve aumento de comprimento em 80%, sem um verdadeiro crescimento ósseo (PubMed 29233587). O par que é preciso diferenciar é a **PARKES WEBER**, de alto fluxo, com fístulas arteriovenosas e pior prognóstico (PMC5944310).",
+  "correta": "**D: síndrome de Klippel-Trenaunay.** Malformação capilar, venosa e linfática, de baixo fluxo, em um membro (PMC10453504).",
+  "incorretas": {
+   "A": "**Tronco e gordura.** CLOVES envolve crescimento lipomatoso congênito, malformações vasculares, nevos epidérmicos e alterações esqueléticas (Tachdjian, cap. 12).",
+   "B": "**Alto fluxo.** A PARKES WEBER tem fístulas arteriovenosas, o que derruba a ideia de baixo fluxo (PMC5944310).",
+   "C": "**Com encondromas.** A MAFFUCCI combina hemangiomas e encondromas múltiplos (Green, 7ª ed., cap. 36).",
+   "E": "**Doença hemorrágica sistêmica.** A OSLER-WEBER-RENDU é a telangiectasia hemorrágica hereditária, com sangramentos e malformações em órgãos."
+  },
+  "referencias": [
+   "Klippel-Trenaunay Syndrome, Segmental/Focal Overgrowth Malformations, PMC10453504",
+   "Capillary-venous-lymphatic malformations without overgrowth, PubMed 29233587",
+   "Klippel-Trenaunay and Parkes-Weber syndromes, PMC5944310",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 36"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1829": {
+  "conceito": "O rinofima é um nariz que cresceu por excesso de glândulas sebáceas e tecido conjuntivo, com aspecto bulboso. O StatPearls o considera o estágio final e mais grave da rosácea, principalmente em homens brancos depois dos 50 anos (Rhinophyma).\n\nO ponto que a banca testa é o tratamento. Medicamentos podem ajudar nas fases iniciais, mas a forma avançada é um problema de **volume** de tecido, e o tratamento definitivo é físico: o StatPearls fala em métodos excisionais, ablativos ou com laser. Outras fontes chamam a cirurgia de padrão-ouro nos casos avançados, com excisão por planos, eletrocautério ou laser de CO₂ (PMC8543596; PMC11697134). Antibiótico e retinoide não fazem esse volume desaparecer. Por isso a frase E é a incorreta.",
+  "correta": "**E: em sua forma severa, o tratamento de eleição é clínico, com antibiótico e retinoide.** É a afirmação incorreta: na forma severa, o tratamento é cirúrgico (StatPearls, Rhinophyma; PMC8543596).",
+  "incorretas": {
+   "A": "**Verdadeira.** O predomínio é masculino (StatPearls, Rhinophyma).",
+   "B": "**Aceitável.** A doença evolui ao longo de anos, e o StatPearls fala em pacientes acima dos 50, depois de um início anterior.",
+   "C": "**Hipótese aceita.** É uma das teorias sobre a rosácea e sua fibrose, coerente com o quadro inflamatório crônico.",
+   "D": "**Verdadeira.** É o estágio mais grave da rosácea (StatPearls, Rhinophyma)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Rhinophyma (NBK544373)",
+   "A Systematic Review of Surgical Techniques for Severe Rhinophyma, PMC8543596",
+   "CO2 Laser Treatment for Rhinophyma, PMC11697134"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1830": {
+  "conceito": "BRESLOW teve uma ideia simples e poderosa: medir, com micrômetro, a distância da superfície do tumor até a célula mais profunda. Essa espessura é o principal fator prognóstico do melanoma localizado. O StatPearls lembra que o estadiamento T depende da espessura e da ulceração, e coloca o **T4 acima de 4 mm**, dividido em T4a, sem ulceração, e T4b, com ulceração (Malignant Melanoma).\n\nA escala é, portanto, uma sequência em espessura: até 1 mm, de 1 a 2 mm, de 2 a 4 mm e mais de 4 mm. A banca chama isso de Breslow 1 a 4, e a resposta é o último degrau. O Green usa o mesmo princípio para melanomas na mão (8ª ed., cap. 58).",
+  "correta": "**D: 4.** Acima de 4 mm é o degrau mais espesso, equivalente ao T4 (StatPearls, Malignant Melanoma).",
+  "incorretas": {
+   "A": "**Fino.** Fica até cerca de 1 mm, o melanoma de melhor prognóstico.",
+   "B": "**Intermediário.** De 1 a 2 mm, cerca de T2.",
+   "C": "**Espesso, mas ainda não o último.** De 2 a 4 mm, equivalente a T3.",
+   "E": "**Não existe.** Os estágios de espessura terminam acima de 4 mm."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Malignant Melanoma (NBK470409)",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 58"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1831": {
+  "conceito": "TANZER organizou os defeitos da orelha por uma razão prática: cada grupo pede um plano de reconstrução. A classificação usa o desenvolvimento embrionário e começa pela falta total da orelha.\n\n| Tipo | Descrição |\n|---|---|\n| I | anotia |\n| IIA | hipoplasia total, **com** atresia do conduto auditivo |\n| IIB | hipoplasia total, **sem** atresia do conduto auditivo |\n| III | hipoplasia do terço médio |\n| IV | hipoplasia do terço superior |\n| V | orelha proeminente |\n\nA diferença entre IIA e IIB é só o conduto (PMC12575449; PMC5889429). O enunciado diz \"sem atresia\", e por isso é IIB.",
+  "correta": "**C: 2B.** Hipoplasia total sem atresia do conduto auditivo externo (PMC12575449).",
+  "incorretas": {
+   "A": "**É a anotia.** A orelha não existe, e não está apenas pequena.",
+   "B": "**A mais próxima.** O tipo IIA tem a mesma hipoplasia, mas com atresia do conduto (PMC12575449).",
+   "D": "**Só o terço médio.** A hipoplasia não é total nesse tipo.",
+   "E": "**Só o terço superior.** Também não é total."
+  },
+  "referencias": [
+   "Innovative Approaches in Microtia Treatment, PMC12575449",
+   "Arterial Supply to the Auricle in Unilateral Microtia, PMC5889429"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1832": {
+  "conceito": "REGNAULT tornou a ptose fácil de medir: basta olhar onde a papila está em relação ao sulco. No **grau I**, ela está no nível do sulco; no **grau II**, abaixo do sulco, mas não no ponto mais baixo da mama; no **grau III**, abaixo do sulco e no contorno inferior, como o ponto mais pendente. A **pseudoptose** é a exceção: a papila fica no sulco ou acima, com a glândula caindo abaixo (StatPearls, Breast Ptosis).\n\nA alternativa correta é a descrição literal do grau III. Note como as outras trocam os graus ou inventam: não há grau IV nessa escala, e a pseudoptose é descrita ao contrário.",
+  "correta": "**C: ptose grau III: papila abaixo do nível do sulco, no contorno inferior do parênquima e do sutiã de pele.** É o grau mais grave (StatPearls, Breast Ptosis).",
+  "incorretas": {
+   "A": "**Descreve o grau II.** Abaixo do sulco e acima do ponto mais baixo não é grau I (StatPearls, Breast Ptosis).",
+   "B": "**Descreve o grau I.** Papila no nível do sulco (StatPearls, Breast Ptosis).",
+   "D": "**Descreve ao contrário.** Na pseudoptose, é a glândula inferior que cai abaixo do sulco, e não o polo superior (StatPearls, Breast Ptosis).",
+   "E": "**Não existe.** A classificação de REGNAULT tem três graus e a pseudoptose."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Breast Ptosis (NBK567792)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1833": {
+  "conceito": "A papila sobrevive a mamoplastias porque a circulação da mama é redundante. Ela é abastecida, principalmente, por três fontes: ramos perfurantes da **torácica interna**, medialmente; a **torácica lateral**, lateralmente; e os **intercostais**, além de outros ramos menores. Elas se comunicam no plexo subdérmico. É isso que permite escolher pedículos diferentes, como o inferior ou o superior, e manter a papila viva, como mostram os estudos dos pedículos em mamoplastia (PMC4236363).\n\nNervos seguem outra lógica: o clássico é o ramo cutâneo lateral do **4º** intercostal, em geral. As alternativas sobre 3º e 5º intercostais trocam esse número.",
+  "correta": "**A: ramos perfurantes da torácica interna, da torácica lateral e ramos intercostais irrigam o plexo subdérmico da papila.** É a base da circulação usada nos pedículos (PMC4236363).",
+  "alerta": "As fontes abertas consultadas tratam dos pedículos, mas não detalham a inervação nem a histologia da aréola. As outras alternativas foram analisadas pelo conhecimento anatômico clássico. Letra A mantida.",
+  "incorretas": {
+   "B": "**Número errado.** A inervação clássica vem do 4º nervo intercostal, em seu ramo cutâneo lateral.",
+   "C": "**O pedículo é a circulação dele próprio.** Os pedículos em mamoplastia dependem do que chega à papila, inclusive do plexo, e não só do parênquima (PMC4236363).",
+   "D": "**Mesmo erro de número.** O ramo lateral é o do 4º intercostal, e não o do 3º.",
+   "E": "**Epitélio errado.** A aréola é pele, com epitélio estratificado queratinizado, e não um epitélio cuboide único."
+  },
+  "referencias": [
+   "Mastopexy and Reduction Mammoplasty Pedicles and Skin Resection Patterns, PMC4236363"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1834": {
+  "conceito": "Escolher a incisão de uma prótese de mama é um equilíbrio entre a cicatriz e o que ela atravessa. A via **periareolar** deixa a cicatriz na transição de cores, mas passa pelo tecido mamário e seus ductos, onde há bactérias que os antissépticos não alcançam. Um estudo encontrou 9,5% de contratura capsular com ela, contra 0,59% na via inframamária, e ligou isso à contaminação da loja com material intraductal (PubMed 22523100). Uma metanálise confirmou taxa maior em comparação com a inframamária (PubMed 28916908), embora nem todos os estudos concordem (PMC10090333).\n\nAlém disso, a via periareolar pode alterar a sensibilidade e deixa a cicatriz visível na aréola. É exatamente a lista da alternativa correta. Quanto à infecção do implante, a bactéria que mais se encontra na cápsula é o **S. epidermidis** (PMC12031949), e fatores como implante liso, plano subglandular e via periareolar aumentam a contratura (PMC10632565).",
+  "correta": "**B: a incisão periareolar tem como desvantagens a transecção dos ductos, o aumento do risco de alterações de sensibilidade e a cicatriz visível.** Ela atravessa o parênquima, e os ductos colonizados contaminam a loja (PubMed 22523100).",
+  "incorretas": {
+   "A": "**Parece certa, mas é geral demais.** Nem toda incisão fica em uma dobra, e a marcação depende da dobra planejada, que pode ser nova.",
+   "C": "**O inverso.** O implante liso é apontado entre os fatores que aumentam a contratura (PMC10632565).",
+   "D": "**Meia verdade.** A bactéria da pele e do implante citada é o S. epidermidis (PMC12031949), e a frase generaliza demais o S. aureus como o mais encontrado.",
+   "E": "**Classe errada.** Na escala de BAKER, a classe II é palpável sem ser visível; a visível é a III."
+  },
+  "referencias": [
+   "Effect of incision choice on outcomes in primary breast augmentation, PubMed 22523100",
+   "Capsular Contracture Rate: Meta-Analysis, PubMed 28916908",
+   "Incision and Capsular Contracture Risk, PMC10090333",
+   "Advances in Etiology and Prevention of Capsular Contracture, PMC12031949",
+   "Implant-based breast surgery and capsular formation, PMC10632565"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31264,6 +31453,107 @@
    "StatPearls (NCBI Bookshelf), Biochemistry, Clotting Factors (NBK507850)",
    "StatPearls (NCBI Bookshelf), Wound Assessment (NBK482198)",
    "Role of MicroRNA in Proliferation Phase of Wound Healing, PMC5817091"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1836": {
+  "conceito": "Antes de operar a pálpebra, é preciso medir. A **MRD** (MRD1) é a distância entre o reflexo da luz na córnea e a margem da pálpebra superior, e o StatPearls dá o normal: de 4 a 5 mm (Blepharoptosis). Ela é a forma objetiva de reconhecer a ptose, e um valor mais baixo indica uma pálpebra mais caída.\n\nA outra medida é a **função do elevador**, que se mede pela excursão da pálpebra do olhar para baixo ao olhar para cima, com a sobrancelha fixa. O valor normal é de 12 mm ou mais (PMC5168917). Ela decide a cirurgia: o limite clássico para escolher a ressecção do elevador é de 4 mm ou mais, e, abaixo disso, entra a suspensão frontal.\n\nO StatPearls alerta também para a pseudoptose, por excesso de pele ou queda da sobrancelha, que não se corrige operando o elevador.",
+  "correta": "**A: a distância do reflexo para a margem, da córnea à pálpebra superior, varia de 3 a 5 mm e é importante para o diagnóstico de ptose.** É o método usado, com normal próximo a 4 a 5 mm (StatPearls, Blepharoptosis).",
+  "alerta": "O StatPearls dá como normal de 4 a 5 mm, e a alternativa cita de 3 a 5 mm. A diferença é pequena e não muda o raciocínio. Letra A mantida.",
+  "incorretas": {
+   "B": "**O inverso.** Quanto menor a MRD, mais grave a ptose (StatPearls, Blepharoptosis).",
+   "C": "**Número baixo.** A função normal do elevador é de 12 mm ou mais (PMC5168917).",
+   "D": "**Sinal do inverso.** Um sulco alto e profundo, com pálpebra caída, sugere o desprendimento do elevador, e não sua hiperatividade.",
+   "E": "**Definição invertida.** Na triquíase, os cílios voltam-se para dentro, em direção ao olho, o que traz desconforto importante."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Blepharoptosis (NBK539828)",
+   "Margin-reflex distance in congenital blepharoptosis, PMC5168917"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1837": {
+  "conceito": "Lipoenxertia é considerada segura, e por isso a complicação mais grave surpreende: a gordura injetada na face pode entrar em uma artéria e seguir pelo caminho errado. Um caso e revisão a chama de rara, mas devastadora: há relatos de infarto cerebral e perda súbita da visão (PMC8688397). Numa revisão sistemática, os casos mais sérios concentraram-se na testa e na região temporal (PMC10803033). O fluxo retrógrado da gordura para as artérias é o mecanismo mais aceito (PMC10784353), e a mortalidade é alta (PMC10436317).\n\nAs complicações comuns são outras: inchaço, irregularidades, reabsorção e correção insuficiente ou em excesso, e deformidade na área doadora (StatPearls, Autologous Fat Grafting for Facial Rejuvenation).",
+  "correta": "**C: a complicação potencial mais grave é a embolização intravascular, o que, felizmente, é extremamente raro.** É a descrição das revisões (PMC8688397; PMC10803033).",
+  "incorretas": {
+   "A": "**Não resolve pele sobrando.** Volume não trata flacidez e excesso de pele.",
+   "B": "**O oposto do que o enunciado sugere.** O tecido adiposo é abundante e de fácil obtenção, o que é justamente seu atrativo.",
+   "D": "**Exagero.** As revisões apontam infecção como evento incomum, e não extremamente comum (PMC10803033).",
+   "E": "**Gordura enxertada é gordura viva.** Ela tende a acompanhar o peso, e por isso a mudança ponderal costuma alterar o resultado."
+  },
+  "referencias": [
+   "Catastrophic Embolism Following Cosmetic Injection of Autologous Fat, PMC8688397",
+   "Complications Associated with Facial Autologous Fat Grafting, PMC10803033",
+   "Arterial Embolism After Facial Fat Grafting, PMC10784353",
+   "Fatal cerebral fat embolism, PMC10436317",
+   "StatPearls (NCBI Bookshelf), Autologous Fat Grafting for Facial Rejuvenation (NBK557860)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1838": {
+  "conceito": "Rinoplastia exige saber de onde vem o sangue. A **artéria facial** sobe em direção ao canto do olho e, no caminho, solta a labial superior, antes de continuar até a artéria angular. O Netter's Clinical Anatomy mostra a importância disso nos sangramentos nasais: a epistaxe costuma vir de um ramo septal da labial superior, proveniente da facial, na área de KIESSELBACH (cap. 8, p. 500). A alternativa correta descreve exatamente esse trajeto.\n\nO restante é um teste de precisão. A sensibilidade do nariz vem do **trigêmeo**, e não do facial. A pirâmide óssea tem também os processos frontais da maxila. A concha que mais pesa na resistência do ar é a **inferior**, e não a média. E o músculo nasal é um dos músculos do nariz, ao lado do prócero e do depressor do septo.",
+  "correta": "**D: a artéria facial tem um trajeto superior para se conectar com a artéria angular; ao longo do caminho, inferior ao nariz, dá origem à labial superior.** É o trajeto descrito no Netter's Clinical Anatomy (cap. 8, p. 500).",
+  "incorretas": {
+   "A": "**Nervo errado.** Os nervos sensitivos do nariz são ramos do trigêmeo. O facial é motor para a musculatura da mímica.",
+   "B": "**\"Apenas\" derruba.** A pirâmide também tem os processos frontais da maxila.",
+   "C": "**Concha errada.** A que mais pesa na resistência e costuma ser reduzida é a inferior.",
+   "E": "**Definição trocada.** A frase inverte o que é externo e intrínseco. Esses músculos são os da mímica do nariz."
+  },
+  "referencias": [
+   "Netter's Clinical Anatomy, 4ª ed. (2019), cap. 8 (Cabeça e pescoço), p. 500"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1839": {
+  "conceito": "Por que a face da criança quebra menos? Porque ela é feita para absorver impacto. Os ossos têm mais cartilagem elástica e tendem a comprimir, em vez de fraturar (PubMed 33085403). Ao mesmo tempo, os **seios paranasais ainda não estão pneumatizados**, o que deixa o osso menos \"oco\", e a proporção maior do crânio em relação à face protege o terço médio. A partir dos 12 anos, os seios maxilares se completam, os ossos ficam mais finos e as cartilagens se ossificam, e o padrão muda: as fraturas do assoalho da órbita passam a ser mais frequentes (PubMed 33085403).\n\nPor isso, a resposta da banca é a menor pneumatização dos seios. Todas as outras alternativas invertem o sentido: a criança tem mais gordura, mais flexibilidade e suturas mais complacentes.",
+  "correta": "**B: diminuição da pneumatização dos seios.** Os seios ainda em desenvolvimento deixam a face mais sólida, e o padrão de fratura muda quando se completam (PubMed 33085403).",
+  "incorretas": {
+   "A": "**O inverso.** A criança pequena tem mais gordura facial, um acolchoamento natural.",
+   "C": "**O inverso.** A criança tem maior flexibilidade, com osso e cartilagem elásticos (PubMed 33085403).",
+   "D": "**O inverso.** As suturas da criança são mais complacentes.",
+   "E": "**Sem sentido.** A supervisão é um fator protetor, sobretudo em crianças pequenas."
+  },
+  "referencias": [
+   "Pediatric Facial Fractures, PubMed 33085403"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1840": {
+  "conceito": "O pectus excavatum é um tórax em funil: o esterno afunda, e não se projeta. O StatPearls lembra que ele afeta quatro vezes mais os meninos e surge cedo na infância (Pectus Excavatum). A causa exata é discutida: crescimento exagerado das cartilagens costais, alteração do colágeno e tração anormal do diafragma são explicações propostas (PMC9986778).\n\nA alternativa correta traz a embriologia: a parede corporal começa a se organizar na quarta semana, com as camadas do mesoderma. É um conceito básico de desenvolvimento, e as outras afirmações são facilmente desmentidas: o predomínio é masculino, e a protrusão é o pectus carinatum. A técnica de NUSS é feita em crianças, antes dos 18 anos (PMC8624072), e as camuflagens são opções válidas em casos selecionados.",
+  "correta": "**C: está relacionado ao desenvolvimento da parede corporal, que se inicia na quarta semana.** É a alternativa sem erro; as demais contrariam fatos claros sobre a doença (StatPearls, Pectus Excavatum).",
+  "alerta": "As fontes abertas consultadas tratam das causas prováveis, mas não trazem a frase embriológica da alternativa. Ela foi aceita por eliminação e como gabarito da banca. Letra C mantida.",
+  "incorretas": {
+   "A": "**O inverso.** A relação é de quatro meninos para cada menina (StatPearls, Pectus Excavatum).",
+   "B": "**Descreve o carinatum.** No excavatum, o tórax afunda.",
+   "D": "**Tarde demais.** A correção minimamente invasiva é feita em crianças e adolescentes (PMC8624072).",
+   "E": "**Injusto.** A camuflagem é uma opção real, em casos selecionados, e não uma escolha de segunda categoria com grandes complicações."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Pectus Excavatum (NBK430918)",
+   "The management of pectus excavatum in pediatric patients, PMC9986778",
+   "Modified Nuss Procedure in Pediatric Patients, PMC8624072"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1841": {
+  "conceito": "Duas úlceras da perna, duas histórias diferentes. A **venosa** nasce da hipertensão venosa crônica e, em 95% dos casos, fica na região das perneiras, em torno dos maléolos (PMC1363917; StatPearls, Venous Leg Ulcer). É a mais comum: em uma série de 354 úlceras, foram 75% (PMC11402266).\n\nA **arterial** resulta de isquemia por insuficiência arterial, e por isso fica no fim da linha: dedos, pé e tornozelo. A aterosclerose é a causa mais comum, e o paciente relata claudicação ou dor em repouso (PMC1363917). Quando a perna tem pouco sangue, ela dói ao andar, e essa pista separa as duas. Lembre também que cerca de 20% das úlceras venosas têm doença arterial associada, e por isso se mede o índice tornozelo-braquial (StatPearls, Venous Leg Ulcer).",
+  "correta": "**B: as úlceras arteriais têm como causa mais comum a aterosclerose.** É o mecanismo da insuficiência arterial crônica nas extremidades (PMC1363917).",
+  "incorretas": {
+   "A": "**Duas trocas.** A venosa costuma ficar na região medial, em torno do maléolo, e dói menos do que a arterial (PMC1363917).",
+   "C": "**É arterial.** A claudicação vem da isquemia ao esforço (PMC1363917).",
+   "D": "**O oposto.** A úlcera de pressão é uma lesão isquêmica, causada pela compressão do tecido contra o osso.",
+   "E": "**Lugar errado.** As arteriais ficam na parte distal: dedos, pé e tornozelo (PMC1363917)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Venous Leg Ulcer (NBK567802)",
+   "Venous and arterial leg ulcers, PMC1363917",
+   "Review of Mixed Arterial Venous Leg Ulcers, PMC11402266"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31298,6 +31588,39 @@
   "referencias": [
    "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 13 (Instabilidades do punho), p. 436 e 460",
    "Barros Filho e Lech, Exame Físico em Ortopedia, 3ª ed. (2017), cap. 8 (Punho)"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1844": {
+  "conceito": "O carcinoma basocelular (CBC) é o câncer de pele que cresce devagar e quase não dá metástase, mas destrói o que está em volta, se for deixado sem tratamento. O StatPearls o descreve como pápula rosada ou da cor da pele, **perolada**, com ulceração ou vasos telangiectásicos (Basal Cell Carcinoma). Essa é a imagem da alternativa correta.\n\nOnde e em quem ocorre é o resto da história. Ele surge em pele danificada pelo sol, especialmente na **cabeça e no pescoço** (PMC4445438), e o fator é a exposição solar. É por isso que é menos comum em peles mais pigmentadas. As demais alternativas invertem esses fatos: dizem que ele é rápido, metastático ou mais frequente nos membros.",
+  "correta": "**C: a lesão mais característica é a \"perolada\": papulosa, translúcida e brilhante.** É a descrição do StatPearls (Basal Cell Carcinoma).",
+  "incorretas": {
+   "A": "**O inverso.** A pigmentação protege da radiação ultravioleta, e o tumor é mais comum em peles claras expostas ao sol (PMC4445438).",
+   "B": "**O inverso.** Cresce lentamente, com metástases raras (StatPearls, Basal Cell Carcinoma).",
+   "D": "**Local errado.** O local preferencial é cabeça e pescoço (PMC4445438).",
+   "E": "**O fator de risco é o sol.** Como a radiação solar é a causa central, a proteção continua fazendo sentido (PMC4445438)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Basal Cell Carcinoma (NBK482439)",
+   "Basal Cell Carcinoma: Pathogenesis, Epidemiology, PMC4445438"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1845": {
+  "conceito": "A zetaplastia é uma troca engenhosa: dois retalhos triangulares giram e transformam largura em comprimento, o que libera uma brida. O ganho depende do ângulo, e os números são da tabela clássica de FURNAS e FISCHER (Z-Plasty Made Simple, PMC3123994):\n\n| Ângulo | Ganho teórico |\n|---|---|\n| 30 graus | cerca de 25% |\n| 45 graus | cerca de 50% |\n| 60 graus | 75% |\n| 75 graus | 100% |\n| 90 graus | cerca de 120% |\n\nA pergunta pede um ganho de 100%, logo o ângulo é de **75 graus**. Na prática, porém, dois alertas: os ganhos reais são menores do que os teóricos, de 55% a 84% do calculado, e ângulos muito abertos criam mais tensão no fechamento, podendo necrosar a ponta do retalho (PMC12088082). Por isso, os 60 graus são os mais usados, e a sequela axilar pode pedir várias zetaplastias em série. O Green usa os 60 graus, por exemplo, no pterígio (7ª ed., p. 1388).",
+  "correta": "**D: 75 graus.** É o ângulo que dá 100% de ganho teórico de comprimento (PMC3123994).",
+  "incorretas": {
+   "A": "**Pouco.** Quarenta graus dariam bem menos da metade do necessário, próximo de 40%.",
+   "B": "**Cerca de 50%.** A metade do ganho desejado (PMC3123994).",
+   "C": "**A mais usada, mas insuficiente.** Com 60 graus, o ganho é de 75% (PMC3123994).",
+   "E": "**Passa do alvo e é arriscado.** Noventa graus dariam mais do que o pedido, com tensão e risco de necrose na ponta (PMC12088082)."
+  },
+  "referencias": [
+   "Z-Plasty Made Simple, PMC3123994",
+   "Z-plasties for the Pediatric Orthopaedic Surgeon, PMC12088082",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 36, p. 1388"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31345,6 +31668,24 @@
   },
   "referencias": [
    "Greenspan, Radiologia Ortopédica, 6ª ed., capítulos sobre escolha da modalidade, ultrassonografia e tomografia"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1849": {
+  "conceito": "A mamoplastia em T invertido retira pele em duas direções. O ramo vertical reduz a largura, e o horizontal, no sulco, reduz **a distância entre a aréola e o sulco inframamário**. É uma das suas vantagens, que a banca escolheu pedir. O preço é a carga de cicatriz (StatPearls, Mastopexy).\n\nOs estudos com pedículo inferior mostram outro lado da mesma cicatriz: o problema mais frequente é justamente a junção do T. Em uma série de 371 pacientes, as complicações gerais foram de 11% (PubMed 8983544), e em outra a ferida superficial na junção foi a mais comum, com 23% (PMC6157945). Como é a parte mais tensa e com pior circulação, a deiscência ali é esperada. A necrose da papila foi rara nesses trabalhos, e, por isso, a alternativa E está invertida.",
+  "correta": "**C: uma das vantagens do T invertido é a redução da pele entre a base da aréola e o sulco inframamário.** É a função do ramo horizontal da incisão (StatPearls, Mastopexy).",
+  "alerta": "As fontes abertas consultadas descrevem o padrão em T e suas complicações, sem a frase literal da alternativa C. As alternativas A e B, sobre hormônios, não foram verificadas nelas. Letra C mantida.",
+  "incorretas": {
+   "A": "**Hormônio errado na lógica clássica.** A explicação habitual da hipertrofia envolve mais o estrogênio e a sensibilidade do tecido.",
+   "B": "**Exagero.** Grande parte das mulheres com hipertrofia não tem um nível de estrogênio aumentado no sangue, e o problema costuma ser de resposta local.",
+   "D": "**O oposto do objetivo.** A cicatriz transversal deve evitar a linha média e os limites visíveis, justamente para não aparecer.",
+   "E": "**O inverso.** O problema na junção do T é uma das complicações mais comuns (PMC6157945)."
+  },
+  "referencias": [
+   "StatPearls (NCBI Bookshelf), Mastopexy (NBK610682)",
+   "Inferior pedicle: complications in 371 patients, PubMed 8983544",
+   "Inferior Pedicle Reduction Mammaplasty for Significant Macromastia, PMC6157945"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
@@ -31996,6 +32337,22 @@
   "geradoEm": "2026-11-02",
   "conferido": false
  },
+ "mao-1888": {
+  "conceito": "Para organizar tumores benignos da pele, pergunte de onde vem a célula. A questão pede quatro origens, na ordem: **epitelial, apêndices cutâneos, crista neural e mesenquimal**.\n\nVeja como a alternativa correta se encaixa. O **milium** é um pequeno cisto de queratina, de origem epitelial. O **pilomatrixoma** nasce da matriz do folículo piloso, logo um apêndice. O **neuroma** é tecido nervoso, ligado à crista neural. E o **dermatofibroma** é do tecido fibroso da derme, mesenquimal.\n\nAs alternativas erradas costumam ter um item fora de lugar. A pista mais fácil é a palavra \"lipossarcoma\" na A, que nem é benigno, e \"ceratose actínica\" na C, que é uma lesão pré-maligna.",
+  "correta": "**B: milium, pilomatrixoma, neuroma, dermatofibroma.** Cada item corresponde, nessa ordem, à origem pedida. É um raciocínio de classificação histogenética.",
+  "alerta": "As fontes abertas não foram consultadas especificamente para esta classificação, e o comentário segue o raciocínio histogenético clássico. Letra B mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**O lipossarcoma é maligno.** A pergunta é sobre tumores benignos.",
+   "C": "**A ceratose actínica é pré-maligna.** Também não é um tumor benigno clássico da lista pedida.",
+   "D": "**O primeiro item está errado.** O siringoma vem de ductos sudoríparos, um apêndice, e não do epitélio de superfície.",
+   "E": "**O primeiro item também.** O nevo sebáceo é um hamartoma de apêndices, e não um tumor epitelial de superfície."
+  },
+  "referencias": [
+   "Conceito básico de dermatopatologia, sem fonte específica lida nesta revisão"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "mao-1889": {
   "conceito": "Em uma queimadura grande, o líquido não some: ele sai dos vasos para os tecidos, porque a permeabilidade capilar aumenta. Isso explica o edema e a hipovolemia ao mesmo tempo. Uma revisão descreve a perda de líquido para o tecido queimado e uma segunda fase, mais gradual, de 12 a 24 horas depois da lesão (PMC5214064).\n\nOutras fontes confirmam a janela: a hipovolemia intravascular e a hemoconcentração decorrem de edema maciço nas primeiras 12 a 24 horas (PMC3671671). Em queimaduras menores, o pico pode vir antes; o StatPearls cita de 8 a 12 horas (Parkland Formula). Por isso, o enunciado diz \"em grandes lesões\". A consequência prática é a reposição: o paciente precisa de mais volume exatamente nesse intervalo, e daí a fórmula dar metade do volume nas primeiras 8 horas.",
   "correta": "**C: 12-24 horas.** É a janela de edema máximo citada nas revisões para as grandes queimaduras (PMC5214064; PMC3671671).",
@@ -32045,6 +32402,22 @@
    "Early enteral nutrition management: a Delphi study, PMC12784516",
    "Enteral Nutrition During Burn Surgery, PMC8945782",
    "Supplemental Nutrition Support in Pediatric Burns, PMC11958579"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "mao-1892": {
+  "conceito": "O planejamento de uma rinoplastia se apoia em pontos com nomes próprios, e basta saber o que cada um marca:\n\n- **Tríquio:** o ponto de implantação do cabelo na linha média da testa.\n- **Násio:** a parte mais funda da raiz do nariz, entre os olhos.\n- **Pró-nasal:** o ponto mais proeminente da ponta nasal.\n- **Pogônio:** o ponto mais proeminente do queixo.\n\nAgora as alternativas ficam simples. O násio é a depressão, e não o ponto de maior convexidade. O pogônio é do queixo, e não do lábio inferior. E o tríquio está na linha média, e não na pupilar. A largura ideal das asas nasais, em geral, corresponde à distância entre os cantos internos dos olhos, e não a uma fração dos zigomáticos.",
+  "correta": "**D: o pró-nasal é o ponto mais proeminente da ponta nasal.** É a definição do ponto.",
+  "alerta": "As fontes abertas consultadas sobre rinoplastia não detalharam esses pontos de antropometria, e o comentário segue a definição clássica. Letra D mantida.",
+  "incorretas": {
+   "A": "**É o contrário.** O násio é a depressão na raiz do nariz, e não o ponto de maior convexidade.",
+   "B": "**Referência errada.** A largura alar costuma ser comparada à distância entre os cantos mediais, e não ao zigoma.",
+   "C": "**Estrutura errada.** O pogônio pertence ao queixo.",
+   "E": "**Só a linha errada.** O tríquio fica na linha média, e não na linha pupilar."
+  },
+  "referencias": [
+   "Conceito básico de antropometria facial; ver StatPearls (NCBI Bookshelf), Rhinoplasty (NBK558970), para o contexto da cirurgia"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false
