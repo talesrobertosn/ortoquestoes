@@ -11,8 +11,8 @@ import { usarPainel } from '../dados/painel'
 import { nomeDe, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
 import { Icone } from '../ui/Icone'
-import { haQuanto, horario, iniciais, inteiro, reais } from '../ui/formato'
-import { Carregando, Estado, Painel } from '../ui/kit'
+import { combina, haQuanto, horario, iniciais, inteiro, normalizar, reais } from '../ui/formato'
+import { Busca, Carregando, Estado, Painel } from '../ui/kit'
 import { Faz, LinhaDoDia, Listas, NumeroDia } from './dia'
 import { LinhaFila, useIrDestino, usarFila } from './fila'
 
@@ -38,12 +38,15 @@ export function temperatura(u: LinhaUsuario, s: SinalUsuario | undefined, hoje: 
   return { pontos, nivel, rotulo: { fervendo: 'Fervendo', quente: 'Quente', morno: 'Morno', frio: 'Frio' }[nivel] } as const
 }
 
-/** Questões de hoje e do total, sempre lado a lado e em destaque. */
+/** Os números de cada pessoa, como no painel antigo: número em cima, rótulo embaixo. Hoje e total em destaque. */
 function Questoes({ u }: { u: LinhaUsuario }) {
   const hoje = u.respondidas_hoje ?? 0
-  return <span className="a3-qq" aria-label={`${hoje} questões hoje, ${u.respondidas} no total`}>
-    <span className={'a3-qq__hoje' + (hoje ? '' : ' zero')}><b className="num">{inteiro(hoje)}</b><small>hoje</small></span>
-    <span className="a3-qq__total"><b className="num">{inteiro(u.respondidas)}</b><small>total</small></span>
+  const feitas = u.acertos + u.erros
+  return <span className="a3-numeros-pessoa" aria-label={`${hoje} questões hoje, ${u.respondidas} no total`}>
+    <span className={'destaque' + (hoje ? '' : ' zero')}><b className="num">{inteiro(hoje)}</b><small>hoje</small></span>
+    <span className="destaque"><b className="num">{inteiro(u.respondidas)}</b><small>no total</small></span>
+    <span><b className="num">{inteiro(u.respondidas_7d)}</b><small>na semana</small></span>
+    <span><b className="num">{feitas ? `${Math.round((100 * u.acertos) / feitas)}%` : '—'}</b><small>acerto</small></span>
   </span>
 }
 
@@ -88,6 +91,7 @@ export default function Inicio() {
   const irDestino = useIrDestino()
   const [filtro, definirFiltro] = useState<Filtro>('todos')
   const [foraEscolhida, definirFora] = useState<Fora | null>(null)
+  const [busca, definirBusca] = useState('')
   const [, recontar] = useState(0)
   useEffect(() => { carregarIndiceBiblioteca().then(i => { registrarTitulosResumos(i.capitulos); recontar(k => k + 1) }).catch(() => undefined) }, [])
   const sinaisLista = Array.isArray(p.sinaisQ.dados) ? p.sinaisQ.dados : null
@@ -127,7 +131,8 @@ export default function Inicio() {
   const semSinais = !p.sinaisQ.dados
   // A caixa "Fora do site" abre na primeira aba que tem gente.
   const fora: Fora = foraEscolhida ?? (g ? (['saiu', 'viram', 'ausentes'] as Fora[]).find(f => g.fora[f].length) ?? 'saiu' : 'saiu')
-  const visiveis = g ? g.online.filter(u => filtro === 'todos' || g.tipoDe(u) === filtro) : []
+  const termo = normalizar(busca.trim())
+  const visiveis = g ? g.online.filter(u => (filtro === 'todos' || g.tipoDe(u) === filtro) && combina([u.nome, u.email], termo)) : []
 
   return <div className="a3-pilha a3-pilha--larga">
     <section className="a3-heroi" aria-label="Resumo de agora">
@@ -148,22 +153,30 @@ export default function Inicio() {
       </div>}
     </section>
 
+    <nav className="a3-saltos" aria-label="Ir para">
+      {([['a3-online', 'Online agora'], ['a3-fora', 'Fora do site'], ['a3-hoje', 'Números do dia'], ['a3-acao', 'Pede ação'], ['a3-linha', 'Linha do dia'], ['a3-listas', 'Estudaram, entraram, dinheiro…']] as const)
+        .map(([id, r]) => <a key={id} href={`#${id}`} onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>{r}</a>)}
+    </nav>
+
     {!g ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="A lista de quem está online não carregou" texto={p.erroDados} /> : <Carregando linhas={5} texto="Vendo quem está online…" />}</div> : <>
-      <section className="a3-painel" aria-label="Online agora">
+      <section className="a3-painel a3-ancora" id="a3-online" aria-label="Online agora">
         <div className="a3-secao-cabeca">
-          <div><h2>Online agora</h2><p>Quem viu os planos hoje vem primeiro. Toque no nome para abrir a ficha.</p></div>
-          <div className="a3-acoes-linha" role="group" aria-label="Filtrar quem está online">
+          <div><h2><i className="a3-ponto a3-ponto--vivo" aria-hidden="true" /> Online agora <span className="a3-bolha">{g.online.length}</span></h2><p>Nos últimos 5 minutos. Quem viu os planos hoje vem primeiro.</p></div>
+        </div>
+        <div className="a3-filtros">
+          <div className="a3-chips" role="group" aria-label="Filtrar quem está online">
             <Filtro ativo={filtro === 'todos'} aoClicar={() => definirFiltro('todos')} contagem={g.online.length}>Todos</Filtro>
             <Filtro ativo={filtro === 'assinante'} aoClicar={() => definirFiltro('assinante')} contagem={g.conta.assinante}>Assinantes</Filtro>
             <Filtro ativo={filtro === 'lead'} aoClicar={() => definirFiltro('lead')} contagem={g.conta.lead}>Viram os planos hoje</Filtro>
             <Filtro ativo={filtro === 'gratis'} aoClicar={() => definirFiltro('gratis')} contagem={g.conta.gratis}>Não assinantes</Filtro>
           </div>
+          <Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar por nome" />
         </div>
         {!visiveis.length ? <div style={{ padding: 20 }}><Estado compacto icone="pessoas" titulo={g.online.length ? 'Ninguém neste filtro agora' : 'Ninguém online agora'} /></div> :
           <ul className="a3-pessoas-lista">{visiveis.map(u => <LinhaOnline key={u.id_usuario} u={u} tipo={g.tipoDe(u)} hoje={g.hoje} limite={limite} />)}</ul>}
       </section>
 
-      <section className="a3-painel" aria-label="Fora do site agora">
+      <section className="a3-painel a3-ancora" id="a3-fora" aria-label="Fora do site agora">
         <div className="a3-secao-cabeca"><div><h2>Fora do site agora</h2><p>Quem vale acompanhar mesmo sem estar online.</p></div></div>
         <div className="a3-abas-locais" role="tablist" aria-label="Quem está fora do site">
           {([['saiu', 'Viram os planos hoje e saíram', g.fora.saiu.length], ['viram', 'Viram os planos em 30 dias', g.fora.viram.length], ['ausentes', 'Assinantes que não entraram hoje', g.fora.ausentes.length]] as Array<[Fora, string, number]>)
@@ -177,7 +190,7 @@ export default function Inicio() {
       </section>
     </>}
 
-    <section className="a3-painel" aria-label="Hoje">
+    <section className="a3-painel a3-ancora" id="a3-hoje" aria-label="Hoje">
       <div className="a3-secao-cabeca"><div><h2>Hoje</h2><p>O dia em números. Hoje ainda está em andamento; "ontem" é o dia inteiro.</p></div></div>
       <div className="a3-faixa-metricas" style={{ '--colunas': 5 } as React.CSSProperties}>
         <NumeroDia rotulo="Entraram hoje" numero={nm.entraram} nota="estudando ou não" />
@@ -188,15 +201,15 @@ export default function Inicio() {
       </div>
     </section>
     <div className="a3-grade a3-grade--12" style={{ alignItems: 'start' }}>
-      <div style={{ gridColumn: 'span 5' }}>
+      <div style={{ gridColumn: 'span 5' }} id="a3-acao" className="a3-ancora">
         <Painel justo titulo={fila.length ? 'Pede ação' : 'Nada pedindo ação'} descricao={fila.length ? 'Do mais grave ao menos grave' : 'Sem falha de pagamento, relato aberto ou fonte fora do ar.'}>
           {fila.length ? <ol className="a3-fila">{fila.map(i => <LinhaFila key={i.id} item={i} aoAgir={irDestino} />)}</ol>
             : <div style={{ padding: '0 20px 20px' }}><Estado compacto icone="certo" titulo="Tudo em dia" /></div>}
         </Painel>
       </div>
-      <div style={{ gridColumn: 'span 7' }}><LinhaDoDia quadro={quadro} /></div>
+      <div style={{ gridColumn: 'span 7' }} id="a3-linha" className="a3-ancora"><LinhaDoDia quadro={quadro} /></div>
     </div>
-    <Listas quadro={quadro} />
+    <div id="a3-listas" className="a3-ancora"><Listas quadro={quadro} /></div>
   </div>
 }
 
@@ -209,7 +222,7 @@ function Numero({ cor, rotulo, valor, nota }: { cor: 'vivo' | Tipo; rotulo: stri
 }
 
 function Filtro({ ativo, aoClicar, contagem, children }: { ativo: boolean; aoClicar: () => void; contagem: number; children: ReactNode }) {
-  return <button type="button" className="a3-filtro" aria-pressed={ativo} onClick={aoClicar}>{children}<small>{inteiro(contagem)}</small></button>
+  return <button type="button" className="a3-chip" aria-pressed={ativo} onClick={aoClicar}>{children}<span>{inteiro(contagem)}</span></button>
 }
 
 const ROTULO_TIPO: Record<Tipo, string> = { assinante: 'Assinante', lead: 'Viu os planos hoje', gratis: 'Não assinante' }
@@ -239,7 +252,10 @@ function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; h
     </button>
     <span className="a3-pessoa-linha__acoes">
       <Questoes u={u} />
-      {tipo !== 'assinante' && <button type="button" className="a3-botao a3-botao--fantasma a3-botao--icone a3-botao--pequeno" onClick={() => nav.abrirPessoa(u.id_usuario, 'carta')} aria-label={`Escrever para ${nomeDe(u)}`} title="Escrever uma carta"><Icone nome="carta" tamanho={16} /></button>}
+      <span className="a3-pessoa-linha__links">
+        <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario)}><Icone nome="usuario" tamanho={15} />Ver ficha</button>
+        <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario, 'carta')}><Icone nome="carta" tamanho={15} />Enviar carta</button>
+      </span>
     </span>
   </li>
 }
@@ -262,7 +278,10 @@ function LinhaFora({ u, tipo }: { u: LinhaUsuario; tipo: Tipo }) {
     </button>
     <span className="a3-pessoa-linha__acoes">
       <Questoes u={u} />
-      {tipo !== 'assinante' && <button type="button" className="a3-botao a3-botao--fantasma a3-botao--icone a3-botao--pequeno" onClick={() => nav.abrirPessoa(u.id_usuario, 'carta')} aria-label={`Escrever para ${nomeDe(u)}`} title="Escrever uma carta"><Icone nome="carta" tamanho={16} /></button>}
+      <span className="a3-pessoa-linha__links">
+        <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario)}><Icone nome="usuario" tamanho={15} />Ver ficha</button>
+        <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario, 'carta')}><Icone nome="carta" tamanho={15} />Enviar carta</button>
+      </span>
     </span>
   </li>
 }

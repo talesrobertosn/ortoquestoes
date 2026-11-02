@@ -151,3 +151,52 @@ li.lead .a3-qq__hoje:not(.zero) b { color: var(--ouro-texto); }
 .a3-temp--morno { background: var(--verdete-veu); color: var(--verdete); }
 .a3-temp--quente { background: var(--ouro-veu); color: var(--ouro-texto); }
 .a3-temp--fervendo { background: var(--erro-veu); color: var(--erro-texto, var(--erro)); }
+
+/* ───────── Mistura com o painel antigo (02/11/2026): saltos, chips, números empilhados, ações escritas ───────── */
+/* Botões no jeito do site: cantos de 10 px, altura confortável, texto forte. */
+.a3-botao { min-height: 40px; border-radius: var(--raio-controle, 10px); font-weight: 650; }
+.a3-botao--pequeno { min-height: 34px; }
+.a3-botao--contorno { background: var(--superficie); border-color: var(--traco-forte); color: var(--grafite); }
+.a3-botao--contorno:hover { border-color: var(--verdete); color: var(--verdete); }
+.a3-botao--fantasma { color: var(--verdete); }
+/* Menu lateral como no antigo: itens maiores; a área aberta cheia em verdete. */
+.a3-nav-area { min-height: 44px; font-size: 15px; font-weight: 600; border-radius: 12px; }
+.a3-nav-grupo .a3-nav-area[aria-current] { background: var(--verdete); color: var(--cor-sobre); }
+.a3-nav-grupo .a3-nav-area[aria-current] .a3-icone { color: var(--cor-sobre); }
+.a3-nav-grupo .a3-nav-area[aria-current] .a3-cont { background: var(--cor-sobre); color: var(--verdete); }
+.a3-nav-parte { min-height: 36px; font-size: 14px; }
+/* Saltos para as partes da página (como as abas do topo do Agora antigo). */
+.a3-saltos { position: sticky; top: 8px; z-index: 6; display: flex; gap: 4px; flex-wrap: wrap; padding: 6px; border: 1px solid var(--traco); border-radius: 14px; background: color-mix(in srgb, var(--superficie) 94%, transparent); backdrop-filter: blur(8px); box-shadow: var(--sombra); }
+.a3-saltos a { padding: 8px 14px; border-radius: 10px; color: var(--ardosia); font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.a3-saltos a:hover { background: var(--verdete-veu); color: var(--verdete); }
+.a3-ancora { scroll-margin-top: 76px; }
+@media (max-width: 760px) { .a3-saltos { top: 0; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; border-radius: 12px; } }
+/* Chips de filtro com contagem, como no antigo. */
+.a3-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.a3-chip { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 0 8px 0 16px; border: 1px solid var(--traco-forte); border-radius: 999px; background: var(--superficie); color: var(--grafite); font: inherit; font-size: 14.5px; font-weight: 600; cursor: pointer; }
+.a3-chip span { display: inline-grid; place-items: center; min-width: 24px; height: 24px; padding: 0 6px; border-radius: 999px; background: var(--superficie-2); color: var(--ardosia); font-size: 12.5px; font-weight: 700; }
+.a3-chip:hover { border-color: var(--verdete); }
+.a3-chip[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); color: var(--verdete); box-shadow: inset 0 0 0 1px var(--verdete); }
+.a3-chip[aria-pressed="true"] span { background: var(--verdete); color: var(--cor-sobre); }
+.a3-chip:focus-visible { outline: 2px solid var(--foco, var(--verdete)); outline-offset: 2px; }
+.a3-secao-cabeca h2 { display: flex; align-items: center; gap: 8px; }
+.a3-bolha { display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 8px; border-radius: 999px; background: var(--verdete); color: var(--cor-sobre); font-size: 13px; font-weight: 700; }
+/* Linha da pessoa: números empilhados (como no antigo) e ações escritas. */
+.a3-pessoa-linha__acoes { display: grid; justify-items: end; gap: 8px; }
+.a3-numeros-pessoa { display: grid; grid-template-columns: repeat(4, minmax(56px, auto)); gap: 4px 14px; text-align: center; }
+.a3-numeros-pessoa > span { display: grid; gap: 1px; }
+.a3-numeros-pessoa b { font-family: var(--fonte-dados, monospace); font-size: 16px; font-weight: 700; color: var(--grafite); }
+.a3-numeros-pessoa .destaque b { font-size: 20px; color: var(--c, var(--verdete)); }
+li.lead .a3-numeros-pessoa .destaque b { color: var(--ouro-texto); }
+li.gratis .a3-numeros-pessoa .destaque b { color: var(--grafite); }
+.a3-numeros-pessoa .destaque.zero b { color: var(--ardosia); }
+.a3-numeros-pessoa small { font-size: 11px; font-weight: 600; color: var(--ardosia); white-space: nowrap; }
+.a3-pessoa-linha__links { display: flex; gap: 16px; }
+.a3-link-acao { display: inline-flex; align-items: center; gap: 6px; padding: 4px 0; border: 0; background: none; color: var(--verdete); font: inherit; font-size: 14px; font-weight: 650; cursor: pointer; }
+.a3-link-acao:hover { text-decoration: underline; text-underline-offset: 3px; }
+.a3-link-acao:focus-visible { outline: 2px solid var(--foco, var(--verdete)); outline-offset: 2px; border-radius: 6px; }
+.a3-pessoas-lista > li { padding-top: 14px; padding-bottom: 14px; }
+@media (max-width: 640px) {
+  .a3-pessoa-linha__acoes { justify-items: start; padding-left: 48px !important; }
+  .a3-numeros-pessoa { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px 8px; width: 100%; }
+}
