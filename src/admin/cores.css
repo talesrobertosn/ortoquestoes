@@ -1,0 +1,144 @@
+/* ==========================================================================
+   Painel: cores (revisão de 02/11/2026, pedido do Tales: "tá muito preto e branco, deixa com mais cor").
+   Três cores de pessoa, usadas no painel inteiro com o mesmo sentido:
+     assinante = verde · não assinante que viu os planos (lead) = âmbar · não assinante = azul.
+   Cada área do menu tem a sua cor, que tinge o título, o item ativo, o botão principal e os gráficos da tela.
+   A cor nunca é a única pista: todo grupo tem nome, número e selo escrito.
+   ========================================================================== */
+.a3 {
+  --a3-lona: #f3f5fa;
+  --cor-assinante: #16a34a; --cor-assinante-veu: #dcfce7; --cor-assinante-texto: #15803d;
+  --cor-lead: #f59e0b;      --cor-lead-veu: #fef3c7;      --cor-lead-texto: #b45309;
+  --cor-gratis: #3b82f6;    --cor-gratis-veu: #dbeafe;    --cor-gratis-texto: #1d4ed8;
+  --cor-vivo: #10b981;
+  --a3-serie-1: #4f46e5;
+  --a3-serie-2: #14b8a6;
+  --a3-serie-3: #f59e0b;
+  --cor-area: #4f46e5; --cor-area-veu: #eef2ff;
+}
+:root[data-tema="escuro"] .a3 {
+  --a3-lona: #0b0d12;
+  --cor-assinante: #4ade80; --cor-assinante-veu: #0f2a1a; --cor-assinante-texto: #86efac;
+  --cor-lead: #fbbf24;      --cor-lead-veu: #2b210b;      --cor-lead-texto: #fcd34d;
+  --cor-gratis: #60a5fa;    --cor-gratis-veu: #0f1e3a;    --cor-gratis-texto: #93c5fd;
+  --cor-vivo: #34d399;
+  --a3-serie-1: #818cf8;
+  --a3-serie-2: #2dd4bf;
+  --a3-serie-3: #fbbf24;
+  --cor-area: #818cf8; --cor-area-veu: #1b1d3a;
+}
+/* Cor de cada área (claro / escuro). */
+.a3 [data-area="comando"], .a3[data-area="comando"] { --cor-area: #10b981; --cor-area-veu: #d1fae5; }
+.a3 [data-area="pessoas"], .a3[data-area="pessoas"] { --cor-area: #3b82f6; --cor-area-veu: #dbeafe; }
+.a3 [data-area="receita"], .a3[data-area="receita"] { --cor-area: #0d9488; --cor-area-veu: #ccfbf1; }
+.a3 [data-area="estudo"], .a3[data-area="estudo"] { --cor-area: #8b5cf6; --cor-area-veu: #ede9fe; }
+.a3 [data-area="comunicacao"], .a3[data-area="comunicacao"] { --cor-area: #f97316; --cor-area-veu: #ffedd5; }
+.a3 [data-area="configuracoes"], .a3[data-area="configuracoes"] { --cor-area: #64748b; --cor-area-veu: #e2e8f0; }
+:root[data-tema="escuro"] .a3 [data-area="comando"], :root[data-tema="escuro"] .a3[data-area="comando"] { --cor-area: #34d399; --cor-area-veu: #0c2a20; }
+:root[data-tema="escuro"] .a3 [data-area="pessoas"], :root[data-tema="escuro"] .a3[data-area="pessoas"] { --cor-area: #60a5fa; --cor-area-veu: #0f1e3a; }
+:root[data-tema="escuro"] .a3 [data-area="receita"], :root[data-tema="escuro"] .a3[data-area="receita"] { --cor-area: #2dd4bf; --cor-area-veu: #0b2725; }
+:root[data-tema="escuro"] .a3 [data-area="estudo"], :root[data-tema="escuro"] .a3[data-area="estudo"] { --cor-area: #a78bfa; --cor-area-veu: #221a3d; }
+:root[data-tema="escuro"] .a3 [data-area="comunicacao"], :root[data-tema="escuro"] .a3[data-area="comunicacao"] { --cor-area: #fb923c; --cor-area-veu: #2e1a0c; }
+:root[data-tema="escuro"] .a3 [data-area="configuracoes"], :root[data-tema="escuro"] .a3[data-area="configuracoes"] { --cor-area: #94a3b8; --cor-area-veu: #1c2230; }
+
+/* Menu: cada área com o seu ícone colorido; a área aberta ganha a cor. */
+.a3-nav-grupo > div > .a3-nav-area > .a3-icone:first-child { box-sizing: content-box; padding: 5px; border-radius: 9px; background: var(--cor-area-veu); color: var(--cor-area); }
+.a3-nav-grupo > div > .a3-nav-area[aria-current] { color: var(--a3-tinta); }
+.a3-nav-grupo > div > .a3-nav-area[aria-current] > .a3-icone:first-child { background: var(--cor-area); color: #fff; }
+.a3-nav-grupo > div[data-area] .a3-nav-parte[aria-current="page"] { box-shadow: inset 3px 0 0 var(--cor-area); color: var(--a3-tinta); }
+.a3-movel-barra a[aria-current] { color: var(--cor-area); }
+.a3-movel-barra a[aria-current] .a3-icone { color: var(--cor-area); }
+
+/* A tela inteira: título da área, botão principal, abas e faixa de métricas na cor da área. */
+.a3-cabeca .a3-rotulo, .a3-inicio-topo .a3-rotulo { color: var(--cor-area); }
+.a3-botao:not(.a3-botao--contorno):not(.a3-botao--fantasma):not(.a3-botao--suave):not(.a3-botao--perigo):not(:disabled) { background: var(--cor-area); border-color: var(--cor-area); color: #fff; }
+.a3-abas-tela a[aria-current="page"] { color: var(--cor-area); box-shadow: 0 1px 2px rgba(0,0,0,.08), inset 0 -2px 0 var(--cor-area); }
+.a3-segmento [aria-checked="true"], .a3-segmento [aria-pressed="true"] { color: var(--cor-area); }
+.a3-filtro[aria-pressed="true"] { background: var(--cor-area); border-color: var(--cor-area); border-style: solid; color: #fff; }
+.a3-aba-grande[aria-selected="true"]::after { background: var(--cor-area); }
+.a3-aba-grande[aria-selected="true"] .a3-aba-grande__numero { color: var(--cor-area); }
+.a3-abas-locais [aria-selected="true"] { color: var(--cor-area); }
+/* Faixas de métricas: um fio de cor no alto de cada número, em sequência. */
+.a3-faixa-metricas > .a3-metrica { border-top: 3px solid transparent; }
+.a3-faixa-metricas > .a3-metrica:nth-child(5n+1) { border-top-color: var(--a3-serie-1); }
+.a3-faixa-metricas > .a3-metrica:nth-child(5n+2) { border-top-color: var(--a3-serie-2); }
+.a3-faixa-metricas > .a3-metrica:nth-child(5n+3) { border-top-color: var(--cor-gratis); }
+.a3-faixa-metricas > .a3-metrica:nth-child(5n+4) { border-top-color: var(--cor-lead); }
+.a3-faixa-metricas > .a3-metrica:nth-child(5n+5) { border-top-color: var(--cor-assinante); }
+.a3-painel:has(> .a3-faixa-metricas) { overflow: hidden; }
+
+/* ───────── Página inicial ───────── */
+.a3-totais { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.a3-total { position: relative; display: grid; gap: 4px; padding: 18px 20px 16px; border-radius: 22px; background: var(--a3-papel); box-shadow: var(--a3-sombra); overflow: hidden; }
+.a3-total::before { content: ""; position: absolute; inset: 0 0 auto; height: 5px; background: var(--c); }
+.a3-total--vivo { --c: var(--cor-vivo); --cv: color-mix(in srgb, var(--cor-vivo) 14%, var(--a3-papel)); --ct: var(--cor-vivo); }
+.a3-total--assinante { --c: var(--cor-assinante); --cv: var(--cor-assinante-veu); --ct: var(--cor-assinante-texto); }
+.a3-total--lead { --c: var(--cor-lead); --cv: var(--cor-lead-veu); --ct: var(--cor-lead-texto); }
+.a3-total--gratis { --c: var(--cor-gratis); --cv: var(--cor-gratis-veu); --ct: var(--cor-gratis-texto); }
+.a3-total { background: linear-gradient(160deg, var(--cv), var(--a3-papel) 70%); }
+.a3-total__rotulo { display: flex; align-items: center; gap: 8px; color: var(--ct); font-size: 12.5px; font-weight: 650; letter-spacing: .02em; text-transform: uppercase; }
+.a3-total__valor { font-size: 42px; font-weight: 700; letter-spacing: -.04em; line-height: 1.05; color: var(--ct); }
+.a3-total__nota { color: var(--a3-cinza); font-size: 12.5px; }
+@media (max-width: 1000px) { .a3-totais { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-total__valor { font-size: 34px; } }
+
+.a3-faixa-secao { display: grid; gap: 12px; }
+.a3-faixa-secao__cabeca { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; padding: 6px 2px 0; border-top: 1px solid var(--a3-linha); padding-top: 18px; }
+.a3-faixa-secao__n { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--cor-area); color: #fff; font-size: 13px; font-weight: 700; align-self: center; }
+.a3-faixa-secao__cabeca h2 { font-size: 20px; font-weight: 700; letter-spacing: -.02em; }
+.a3-faixa-secao__cabeca p { color: var(--a3-cinza); font-size: 13px; }
+
+/* Grupos de quem está online: assinante verde, lead âmbar, não assinante azul. */
+.a3-online { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+@media (max-width: 1180px) { .a3-online { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important; } .a3-online__grupo--gratis { grid-column: 1 / -1; } }
+@media (max-width: 760px) { .a3-online { grid-template-columns: minmax(0, 1fr) !important; } }
+.a3-online__grupo { --c: var(--cor-gratis); --cv: var(--cor-gratis-veu); --ct: var(--cor-gratis-texto); border: 1.5px solid color-mix(in srgb, var(--c) 40%, var(--a3-linha)) !important; background: linear-gradient(180deg, var(--cv), var(--a3-papel) 160px) !important; }
+.a3-online__grupo--assinante { --c: var(--cor-assinante); --cv: var(--cor-assinante-veu); --ct: var(--cor-assinante-texto); }
+.a3-online__grupo--lead { --c: var(--cor-lead); --cv: var(--cor-lead-veu); --ct: var(--cor-lead-texto); }
+.a3-online__cabeca h3 { font-size: 16px; font-weight: 700; color: var(--ct); }
+.a3-online__cabeca small { color: var(--a3-cinza); font-size: 12px; }
+.a3-online__cabeca b { color: var(--ct) !important; }
+.a3-online__selo { background: var(--c) !important; box-shadow: 0 0 0 4px color-mix(in srgb, var(--c) 22%, transparent) !important; }
+.a3-online__grupo .a3-avatar { background: var(--c) !important; color: #fff !important; }
+.a3-online__lista li { display: flex; align-items: flex-start; gap: 2px; }
+.a3-online__lista .a3-online__pessoa { flex: 1; min-width: 0; }
+.a3-online__lista li:not(:last-child) { border-bottom: 1px solid color-mix(in srgb, var(--c) 16%, transparent); }
+.a3-online__meta { color: var(--a3-cinza); font-size: 12px; }
+.a3-online__carta { flex: none; display: grid; place-items: center; width: 34px; height: 34px; margin-top: 8px; border: 0; border-radius: 10px; background: none; color: var(--ct); cursor: pointer; }
+.a3-online__carta:hover { background: var(--cv); }
+.a3-tag--lead { background: var(--cor-lead); color: #1f1300; }
+.a3-tag--assinante { background: var(--cor-assinante) !important; color: #fff; }
+.a3-tag--suave { background: var(--cor-lead-veu); color: var(--cor-lead-texto); }
+
+/* Blocos de "Não estão online". */
+.a3-bloco { --c: var(--cor-gratis); --cv: var(--cor-gratis-veu); --ct: var(--cor-gratis-texto); overflow: hidden; border-top: 5px solid var(--c); }
+.a3-bloco--assinante { --c: var(--cor-assinante); --cv: var(--cor-assinante-veu); --ct: var(--cor-assinante-texto); }
+.a3-bloco--lead { --c: var(--cor-lead); --cv: var(--cor-lead-veu); --ct: var(--cor-lead-texto); }
+.a3-bloco__cabeca { display: grid; gap: 4px; padding: 16px 20px 10px; background: linear-gradient(180deg, var(--cv), transparent); }
+.a3-bloco__cabeca h3 { font-size: 15px; font-weight: 600; }
+.a3-bloco__cabeca h3 b { color: var(--ct); font-size: 24px; margin-right: 4px; }
+.a3-bloco__cabeca p { color: var(--a3-cinza); font-size: 12.5px; }
+.a3-bloco .a3-avatar { background: var(--cv); color: var(--ct); }
+
+/* Pessoas no resto do painel: o avatar de quem assina fica verde. */
+.a3-avatar:has(+ * .a3-tag--assinante) { background: var(--cor-assinante); color: #fff; }
+
+/* Gráficos e composições usam a paleta (indigo, turquesa, âmbar) em vez de preto e cinza. */
+.a3-chave--2 { background: var(--a3-serie-2) !important; }
+.a3-rank li i::before { background: var(--cor-area) !important; }
+.a3-vigencia__trilho i:not(.perto):not(.fim) { background: var(--cor-assinante); }
+.a3-progresso i { background: var(--cor-area); }
+.a3-calendario__edicao.s-no-ar, .a3-calendario__edicao.s-inscricoes { background: var(--cor-area); }
+.a3-editor__titulo span, .a3-faixa-secao__n { background: var(--cor-area); }
+.a3-campanhas__lista button[aria-current="true"], .a3-passos li.atual { background: var(--cor-area); }
+.a3-passos li.atual span { color: var(--cor-area); }
+.a3-extrato__valor { color: var(--cor-assinante-texto); }
+.a3-extrato__linha.devolvida .a3-extrato__valor { color: var(--a3-cinza); }
+.a3-g-area { fill: color-mix(in srgb, var(--a3-serie-1) 14%, transparent) !important; }
+.a3-g-linha:not(.a3-g-linha--b):not(.a3-g-linha--acento) { stroke: var(--a3-serie-1) !important; }
+.a3-g-ponto { stroke: var(--a3-serie-1) !important; }
+.a3-chave--linha { border-top-color: var(--a3-serie-1) !important; }
+.a3-funil__trilho span:not(.perda) { background: linear-gradient(90deg, var(--a3-serie-1), var(--a3-serie-2)) !important; }
+.a3-mini path.a3-mini__linha { stroke: var(--cor-area) !important; }
+.a3-mini path.a3-mini__area { fill: color-mix(in srgb, var(--cor-area) 14%, transparent) !important; }
+
+.a3-online__lista .a3-online__carta { display: grid !important; grid-template-columns: none !important; width: 34px !important; padding: 0 !important; }

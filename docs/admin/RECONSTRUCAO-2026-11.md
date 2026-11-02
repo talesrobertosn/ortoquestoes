@@ -103,3 +103,16 @@ ou `search_path` foi alterada. Nenhum dado administrativo foi exposto em endpoin
   reaproveita o que foi lido nos últimos 5 minutos (antes, 15 segundos). Para ver na hora, o botão Atualizar.
 - **Financeiro mais simples**: "Reconstruído" voltou a ser "Estimado"; Ganhos sem os blocos repetidos (últimas cobranças,
   ações) e com o mês a mês recolhido; selos "Confirmado" e "Derivado" só aparecem onde explicam algo.
+
+## Revisão de 02/11/2026, noite (online organizado e mais cor)
+
+- **Agora em três faixas numeradas**: 1. Online agora; 2. Não estão online; 3. Hoje.
+- **Totais coloridos no topo**: online agora, assinantes online (de quantos assinantes), não assinantes online e
+  não assinantes que viram os planos hoje.
+- **Online em três grupos com cor**: assinantes (verde), não assinantes que viram os planos **hoje** (âmbar, com a
+  hora) e os demais não assinantes (azul, com o que fazem, questões, idade da conta e atalho para carta).
+- **Não estão online**: assinantes que não entraram hoje; não assinantes que viram os planos hoje e saíram;
+  não assinantes que viram os planos nos últimos 30 dias.
+- **Cor no painel inteiro** (`src/admin/cores.css`): cada área com a sua cor (Agora verde, Pessoas azul,
+  Financeiro turquesa, Conteúdo violeta, E-mails laranja, Ajustes ardósia), que tinge o menu, o título, o botão
+  principal, as abas e os filtros; gráficos em índigo, turquesa e âmbar; claro e escuro.

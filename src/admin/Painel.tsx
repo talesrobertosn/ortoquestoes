@@ -13,6 +13,7 @@ import { Carregando, Estado } from './ui/kit'
 import { HospedeAvisos, HospedeConfirmar, Paleta, type ItemPaleta } from './ui/sobreposicoes'
 import './admin.css'
 import './modulos.css'
+import './cores.css'
 
 const Inicio = lazy(() => import('./modulos/Inicio'))
 const Explorador = lazy(() => import('./modulos/Explorador'))
@@ -149,12 +150,12 @@ function Casca({ estado }: { estado: EstadoUrl }) {
       // Área de uma parte só (Agora): link direto, sem submenu repetindo o nome.
       if (a.partes.length === 1) {
         const c = contagem[a.partes[0].id]
-        return <div key={a.id}><a className="a3-nav-area" href={nav.link(a.partes[0].id)} aria-current={atual ? 'page' : undefined} onClick={clique(a.partes[0].id)}>
+        return <div key={a.id} data-area={a.id}><a className="a3-nav-area" href={nav.link(a.partes[0].id)} aria-current={atual ? 'page' : undefined} onClick={clique(a.partes[0].id)}>
           <Icone nome={a.icone} /><span className="a3-nav-area__nome">{a.rotulo}</span>
           {c && <b className={'a3-cont' + (c.tom === 'vivo' ? ' a3-cont--vivo' : c.tom === 'alerta' ? ' a3-cont--alerta' : '')}>{c.n.toLocaleString('pt-BR')}<span className="a3-so-leitor"> online</span></b>}
         </a></div>
       }
-      return <div key={a.id}>
+      return <div key={a.id} data-area={a.id}>
         <button type="button" className="a3-nav-area" aria-current={atual ? 'true' : undefined} aria-expanded={aberta}
           onClick={() => { if (!atual) nav.ir(destinoDa(a.id)); definirAbertas(s => { const n = new Set(s); if (atual && aberta) n.delete(a.id); else n.add(a.id); return n }) }}>
           <Icone nome={a.icone} /><span className="a3-nav-area__nome">{a.rotulo}</span>
@@ -177,7 +178,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
     : <Suspense fallback={<Carregando linhas={6} />}><Modulo parte={estado.parte} sub={estado.sub} /></Suspense>
 
   return <ContextoNav.Provider value={nav}>
-    <div className="a3">
+    <div className="a3" data-area={area}>
       <div className="a3-casca">
         <aside className="a3-lateral" aria-label="Navegação do painel">
           <a className="a3-marca" href={nav.link('comando')} onClick={clique('comando')}>
@@ -233,7 +234,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
       </div>
 
       <nav className="a3-movel-barra" aria-label="Áreas do painel">
-        {AREAS.map(a => <a key={a.id} href={nav.link(destinoDa(a.id))} aria-current={a.id === area ? 'true' : undefined} onClick={clique(destinoDa(a.id))}>
+        {AREAS.map(a => <a key={a.id} data-area={a.id} href={nav.link(destinoDa(a.id))} aria-current={a.id === area ? 'true' : undefined} onClick={clique(destinoDa(a.id))}>
           <Icone nome={a.icone} tamanho={20} />{a.curto}{alertaDa(a.id) && <i className="a3-ponto-alerta" aria-label="tem pendências" />}
         </a>)}
       </nav>
