@@ -1,15 +1,20 @@
 {
  "tumores-0001": {
-  "conceito": "**Doença de Ollier** é a encondromatose múltipla: encondromas em vários ossos, sobretudo nos tubulares de mãos e pés e nas metáfises dos ossos longos. **Não é hereditária**: vem de uma mutação **pós-zigótica em mosaico**, em IDH1 ou IDH2, e só a linhagem de células mutadas forma encondromas, o que explica a distribuição **assimétrica e predominantemente unilateral**. As consequências são deformidades angulares pelas fises acometidas, **discrepância de membros** por encurtamento do lado afetado e risco de **condrossarcoma** de 25 a 30% ao longo da vida.\n\n**Não confundir** com a síndrome de **Maffucci**, que soma encondromas e **hemangiomas**, também esporádica e com malignização ainda maior, inclusive gliomas e adenocarcinomas, nem com as **exostoses múltiplas**, de osteocondromas, herança **autossômica dominante** (EXT1 e EXT2) e malignização de 1 a 5%.\n\n**Na prova:** Ollier é **não hereditária e unilateral**.",
-  "correta": "**Não hereditário e de predominância unilateral.** O mosaicismo pós-zigótico deixa encondromas só na linhagem mutada, com assimetria.",
+  "conceito": "A doença de OLLIER é a **encondromatose múltipla**: muitos tumores de cartilagem hialina espalhados pelos ossos tubulares e chatos. Para responder \"hereditária ou não, unilateral ou bilateral\", vale entender o mecanismo descrito no Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928: há uma **falha da ossificação endocondral** normal, e ilhas de cartilagem da placa de crescimento deixam de ser substituídas por osso e ficam presas na metáfise e na diáfise.\n\n**O que a ortopedia sabe sobre a herança.** O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos)) descreve o OLLIER como um defeito **não hereditário**, sem tendência familiar, e de distribuição **predominantemente unilateral**: o paciente pode ter o hemicorpo inteiro comprometido, e o outro lado poupado. O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1028 aprox., lembra que OLLIER descreveu, em 1889, os encondromas múltiplos tipicamente unilaterais (a \"discondroplasia\") e confirma que o distúrbio não é hereditário. O capítulo da mão do Campbell e o SIZÍNIO (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores da mão)) fazem a mesma leitura: vários encondromas na mesma mão, de um lado só.\n\n**O contraste que a banca explora.** A exostose múltipla hereditária (osteocondromas) é a doença cartilaginosa múltipla que **herda** de forma autossômica dominante, com EXT1 ou EXT2, e costuma ser simétrica. Quem associa \"múltiplo\" a \"familiar\" e \"bilateral\" erra aqui. No OLLIER vale a regra oposta: esporádico e de um lado.\n\nO quadro comparativo está na seção \"OLLIER e MAFFUCCI\" do resumo.",
+  "correta": "**D) não hereditário e predominância unilateral.** É encondromatose por falha da ossificação endocondral, sem tendência familiar e com distribuição predominantemente de um lado do corpo.",
   "incorretas": {
-   "A": "**Duplamente errada.** A doença não é hereditária nem bilateral simétrica.",
-   "B": "**Herança errada.** A lateralidade está certa, mas a doença é esporádica.",
-   "C": "**Lateralidade errada.** Acerta a ausência de herança, mas o mosaicismo torna a distribuição assimétrica."
+   "A": "**Hereditário e bilateral** é o perfil da exostose múltipla hereditária, que é autossômica dominante e costuma ser simétrica; não é o do OLLIER.",
+   "B": "**Hereditário e unilateral** acerta o lado e erra a herança: o SIZÍNIO HEBERT e o Tachdjian são claros de que o OLLIER não é hereditário nem familiar.",
+   "C": "**Não hereditário e bilateral** acerta a herança e erra a lateralidade, porque o OLLIER tende a se concentrar de um lado do corpo, às vezes em todo o hemicorpo."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1028 aprox.",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos)",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0002": {
   "conceito": "**A descrição clássica.** A condromatose sinovial é uma **metaplasia condroide da sinovial**: nódulos cartilaginosos se formam, se soltam como corpos livres, calcificam e ossificam. Acomete sobretudo o **joelho**, em mais da metade dos casos, seguido de quadril, cotovelo e ombro, em **adultos** de 30 a 50 anos, com dor, derrame, crepitação e bloqueio. As fases de Milgram descrevem a evolução: sinovial ativa sem corpos livres, fase de transição com corpos livres e sinovial quiescente com corpos livres.\n\n**O tratamento** é a retirada dos corpos livres com **sinovectomia** nas fases ativas, aberta ou artroscópica; a recidiva é possível, e a malignização para condrossarcoma é rara. O rearranjo FN1-ACVR2A sugere natureza neoplásica, e a OMS inclui a lesão entre os tumores condrogênicos, mas em prova a resposta clássica continua sendo metaplasia.\n\n**Na prova:** condromatose sinovial é **metaplasia no joelho do adulto**.",
@@ -308,18 +313,21 @@
   "conferido": false
  },
  "tumores-0025": {
-  "conceito": "**As encondromatoses múltiplas.** O **encondroma** é um tumor benigno de **cartilagem hialina** dentro do osso, geralmente **solitário** e nas **falanges** da mão. Quando há **múltiplos** encondromas, fala-se em encondromatose. As duas formas principais estão ligadas a mutações **somáticas** (em mosaico) nos genes **IDH1** e **IDH2**, e não são hereditárias.\n\n| Característica | Doença de Ollier | Síndrome de Maffucci |\n|---|---|---|\n| Lesões ósseas | **Encondromas múltiplos**, muitas vezes de predomínio **unilateral** | Encondromas múltiplos |\n| Lesões de partes moles | Nenhuma | **Hemangiomas** de partes moles (com flebólitos visíveis na radiografia) |\n| Deformidades | Encurtamento, encurvamento, discrepância de membros | Semelhantes |\n| Transformação maligna | Alta (cerca de 25 a 40% ao longo da vida) | **Ainda maior** (pode passar de 50%); também outros tumores malignos |\n\n**A síndrome de Maffucci.** Combina os **encondromas múltiplos** com **hemangiomas** de partes moles (malformações vasculares, que aparecem como nódulos azulados e **flebólitos** calcificados na radiografia). Tem **alta taxa de degeneração sarcomatosa**, principalmente para **condrossarcoma**, e também risco de outros tumores malignos (gliomas, tumores do ovário, do pâncreas e outros). O seguimento deve ser feito por toda a vida.\n\n**A doença de Ollier.** Os encondromas múltiplos, frequentemente com predomínio de **um lado do corpo**, causam deformidades e **discrepâncias** de membros durante o crescimento. A transformação maligna para condrossarcoma também é frequente.\n\n**Os sinais de alerta para transformação maligna.**\n- **Dor** nova, sem fratura.\n- **Aumento** de volume após o fim do crescimento.\n- **Destruição cortical**, massa de partes moles, reabsorção da matriz calcificada.\n- Em pacientes com encondromatose, qualquer mudança deve ser investigada com ressonância e biópsia.\n\n**O tratamento.** As deformidades e discrepâncias são tratadas com osteotomias, alongamentos e epifisiodeses. Os condrossarcomas são tratados com **ressecção** com margens (resistentes à quimioterapia e à radioterapia).",
-  "correta": "**Correta: B (hemangiomas e apresenta alta taxa de degeneração sarcomatosa).** A síndrome de Maffucci associa a encondromatose múltipla a **hemangiomas** de partes moles e tem **alta taxa** de degeneração sarcomatosa, sobretudo para condrossarcoma, além de risco de outros tumores malignos.",
+  "conceito": "Duas palavras da pergunta decidem tudo: o que se associa à encondromatose na síndrome de MAFFUCCI, e se o risco de degeneração sarcomatosa é baixo ou alto. O Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928, define a síndrome como encondromatose com **hemangiomas das partes moles sobrejacentes**, e a tabela 27.2 (p. 931) traz o mesmo comentário para OLLIER e MAFFUCCI: **transformação maligna comum**.\n\n**O gradiente de risco.** No Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975, o OLLIER tem cerca de 25% de malignidade, sobretudo condrossarcoma, até os 40 anos, e o MAFFUCCI **pode ser ainda maior**. O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors) diz \"semelhante ou maior\" e cita a expectativa de degeneração de quase 100% relatada por SCHWARTZ. Nenhum desses números combina com \"baixa taxa\".\n\n**Mais do que hemangioma.** O SIZÍNIO HEBERT descreve hemangiomas cavernosos, congênitos e não hereditários, com maior associação a gliomas intracranianos; o Tachdjian lembra flebólitos na radiografia das partes moles e recomenda vigilância de cérebro e abdome. Em nenhuma dessas fontes aparece hipoplasia renal.\n\n**Como escolher.** Primeiro, descarte a metade do enunciado que fala de rim, que não existe na síndrome. Depois, entre \"baixa\" e \"alta\" taxa de degeneração, lembre que a doença cartilaginosa múltipla é a grande fábrica de condrossarcoma secundário.\n\nA síndrome está na seção \"A síndrome de MAFFUCCI\" do resumo.",
+  "correta": "**B) hemangiomas e apresenta alta taxa de degeneração sarcomatosa.** Encondromatose com hemangiomas de partes moles, com transformação maligna comum, igual ou maior que a do OLLIER.",
   "incorretas": {
-   "A": "A associação com hemangiomas está certa, mas a taxa de degeneração sarcomatosa na síndrome de Maffucci é **alta**, e não baixa.",
-   "C": "A síndrome de Maffucci se associa a **hemangiomas**, e não à hipoplasia renal. E a degeneração sarcomatosa é alta.",
-   "D": "A degeneração sarcomatosa é alta, mas a associação é com **hemangiomas**, e não com hipoplasia renal."
+   "A": "**Hemangiomas com baixa taxa de degeneração** acerta o primeiro termo e erra o segundo: o Campbell chama a transformação de comum, e o Tachdjian a dá como semelhante ou maior que a do OLLIER.",
+   "C": "**Hipoplasia renal com baixa taxa** erra os dois termos; não há comprometimento renal na definição, e o risco de malignização não é baixo.",
+   "D": "**Hipoplasia renal com alta taxa** acerta o risco e inventa a lesão associada: o que acompanha a encondromatose é o hemangioma, não o rim."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
-   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928 e 931 (tabela 27.2)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1028 aprox.",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos)",
+   "Resumo OrtoQuestões: Condrossarcoma"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0026": {
@@ -579,16 +587,21 @@
   "conferido": false
  },
  "tumores-0043": {
-  "conceito": "**De onde ele nasce.** O osteocondroma, ou exostose osteocartilaginosa, é o tumor ósseo benigno mais comum e se origina de **pequenos nódulos de cartilagem da placa de crescimento** que se desprendem da fise e passam a crescer para fora do eixo do osso, por **ossificação endocondral**, como a própria fise. Essa origem explica a **continuidade da cortical e da medular** com o osso hospedeiro, que define a lesão e dispensa biópsia; o crescimento só enquanto a criança cresce, parando quando a fise fecha; e a direção **para longe da articulação**, porque a fise vai deixando a lesão para trás na metáfise. A **capa cartilaginosa** é a parte viva, onde pode surgir o condrossarcoma secundário.\n\n**Sinais de alarme** para malignização são crescimento ou dor nova após a maturidade esquelética e capa cartilaginosa espessa no adulto, acima de cerca de 1,5 a 2 cm na ressonância. O risco é baixo na lesão solitária, menos de 1%, e maior na exostose múltipla hereditária, autossômica dominante, pelos genes EXT1 e EXT2.\n\n**Na prova:** a origem do osteocondroma é **fisária**, a partir de nódulos cartilaginosos deslocados.",
-  "correta": "**De pequenos nódulos cartilaginosos.** Tecido da placa de crescimento que escapa lateralmente e continua crescendo, com continuidade cortical e medular.",
+  "conceito": "O Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 930 e 931, define os osteocondromas como tumores ósseos benignos comuns que **provavelmente são malformações do desenvolvimento, e não neoplasias verdadeiras**, e diz que se originam **no periósteo como pequenos nódulos cartilaginosos**. A lesão final é uma massa óssea, muitas vezes pediculada, formada por ossificação endocondral progressiva de uma capa cartilaginosa em crescimento, que se comporta como uma pequena placa de crescimento: cresce com o paciente e para na maturidade.\n\n**O debate sobre a origem.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1019 aprox., mostra que várias teorias disputaram o assunto: VIRCHOW propôs um fragmento de fise que gira 90 graus, KEITH, um defeito do anel pericondral, e MÜLLER, ninhos de cartilagem da camada câmbio do periósteo. A visão atual é de crescimento mal direcionado de parte da fise. O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos)) reforça que a exostose tem a sua própria placa de crescimento.\n\n**Por que a questão é traiçoeira.** Três alternativas descrevem aspectos verdadeiros da lesão: a capa é de cartilagem hialina, o osteocondroma é uma malformação e há alteração do crescimento. Mas a pergunta é pela **origem**, e a frase do Campbell que responde a ela fala em pequenos nódulos cartilaginosos no periósteo.\n\n**Cuidado ao raciocinar por exclusão.** Se você sabe que o osteocondroma é malformação, pode se sentir seguro com a segunda opção. Releia o verbo: o enunciado pede de onde nasce, e não o que é.\n\nA origem está na seção \"A natureza do osteocondroma\" do resumo.",
+  "correta": "**C) de pequenos nódulos cartilaginosos.** É a descrição do Campbell (cap. 27): a lesão nasce no periósteo a partir de pequenos nódulos cartilaginosos.",
   "incorretas": {
-   "A": "**A cartilagem hialina é a capa, não a origem.** A lesão tem capa de cartilagem hialina, mas o ponto de partida é o tecido da fise deslocado.",
-   "B": "**Não é malformação.** O osso da lesão é normal, formado por ossificação endocondral regular, só que crescendo na direção errada.",
-   "D": "**Vago demais.** Toda lesão fisária altera o crescimento, mas a alternativa não diz de onde a lesão nasce."
+   "A": "**Cartilagem hialina** é o tecido da capa do osteocondroma, e não a origem da lesão; descreve a composição, e não de onde ela brota.",
+   "B": "**Uma má formação óssea** é a natureza provável da lesão, segundo o Campbell, mas a pergunta é pela origem; a malformação é o que ela é, e não o ponto de partida descrito.",
+   "D": "**Uma alteração do crescimento ósseo** é consequência da lesão (metáfises largas, arqueamento) e parte da teoria fisária, mas não é a descrição de origem usada pelo livro."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 930 e 931",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1019 aprox.",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos)",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0044": {
   "conceito": "**O perfil que a prova cobra.** O cisto ósseo simples, ou unicameral, é uma **cavidade única cheia de líquido seroso claro**, centrada na **metáfise**, junto da fise, em geral em posição **central** no osso. Há **predomínio masculino**, de cerca de 2 a 3 para 1, nas **duas primeiras décadas**, com pico entre 5 e 15 anos. A sede é o **úmero proximal**, em cerca de metade dos casos, seguido do **fêmur proximal**; no adulto aparecem sítios atípicos, como calcâneo e ilíaco. Costuma ser assintomático até a **fratura patológica**, forma de apresentação da maioria, e o **sinal do fragmento caído**, um pedaço de cortical afundado dentro da cavidade, é quase patognomônico e confirma o conteúdo líquido.\n\n**Ativo ou latente.** O cisto ativo encosta na fise e recidiva mais; o latente já foi afastado para a diáfise pelo crescimento. A fratura em geral consolida com tratamento conservador, e o cisto pode regredir; se persistir, usam-se infiltração com corticoide ou medula óssea, descompressão com haste flexível e, nos refratários, curetagem com enxerto.\n\n**Na prova:** cisto ósseo simples é de **meninos entre 5 e 15 anos, no úmero proximal**, com fratura patológica e fragmento caído.",
@@ -717,16 +730,21 @@
   "formato": "corrido"
  },
  "tumores-0054": {
-  "conceito": "**A idade separa os sarcomas ósseos.** Osteossarcoma e Ewing são da segunda década, e o **condrossarcoma primário** tem pico entre **40 e 60 anos**, com casos até a sétima e oitava décadas. É o segundo sarcoma ósseo primário mais comum e o mais frequente no adulto de meia-idade. Prefere o **esqueleto axial e as raízes dos membros**: pelve, fêmur proximal, úmero proximal, costelas e escápula. Na imagem, tem matriz condroide com calcificações em **anéis e arcos** ou em pipoca, **festonamento endosteal profundo** (mais de dois terços da cortical), espessamento cortical e, nos graus altos, massa de partes moles; a **dor** na lesão ajuda a separá-lo do encondroma.\n\n**O que define a conduta.** O condrossarcoma convencional **não responde a quimioterapia nem a radioterapia** convencionais, e o tratamento é cirúrgico, com margem ampla; o prognóstico depende do grau histológico e da margem. As exceções são o **mesenquimal**, que responde melhor ao tratamento sistêmico, e o **desdiferenciado**, de prognóstico péssimo.\n\n**Na prova:** lesão cartilaginosa dolorosa na pelve ou no fêmur proximal de um adulto de 50 anos é **condrossarcoma** até prova em contrário.",
-  "correta": "**Entre 40 e 60 anos.** É o pico de incidência do condrossarcoma primário, o que o separa do osteossarcoma e do Ewing.",
+  "conceito": "A pergunta quer a idade em que o condrossarcoma **primário**, aquele que nasce em osso antes normal, aparece com mais frequência. O Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975, abre a seção com a resposta: pico entre **40 e 60 anos**. A faixa é larga, mas o tumor é sobretudo do adulto de meia-idade; o SIZÍNIO HEBERT dá 30 a 60 anos e frisa que é muito raro antes dos 20, e o Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors), p. 1071, diz que quase nunca ocorre em criança.\n\n**Por que existe outro número na mesma página.** O Campbell separa o **secundário**, que nasce sobre uma lesão cartilaginosa benigna presente desde a infância (encondromas múltiplos, exostose múltipla), e dá a ele pico mais cedo, **25 a 45 anos**. A explicação é cronológica: a lesão de base já estava lá, e a transformação maligna acontece cedo na vida adulta. O primário precisa surgir do zero, e por isso se concentra mais tarde.\n\n**Como pensar na prova.** Se o enunciado diz \"primário\", pense em 40 a 60; se diz \"secundário\", desça para 25 a 45. Ter os dois números na cabeça protege da faixa de 20 a 40 anos, que fica entre os dois picos e atrai quem os mistura, e da faixa de 60 a 80 anos, que lembra metástase e mieloma, e não condrossarcoma.\n\nA faixa etária está na seção \"Quem tem condrossarcoma, em que idade e onde\" do resumo.",
+  "correta": "**C) 40 e 60 anos.** É o pico do condrossarcoma primário no Campbell (cap. 29, p. 975); o secundário tem pico mais cedo, de 25 a 45 anos.",
   "incorretas": {
-   "A": "**Raro abaixo de 20 anos.** Nessa faixa dominam osteossarcoma e Ewing; condrossarcoma no jovem costuma ser secundário a osteocondromas ou encondromatose.",
-   "B": "**Começa a aparecer, mas não é o pico.** Há casos entre 20 e 40 anos, mas a maior incidência vem depois.",
-   "D": "**Existe, mas já declina.** Acima dos 60 ganham peso metástases, mieloma e sarcomas secundários, sobre Paget ou após radiação."
+   "A": "**Zero a 20 anos** erra por muito: o condrossarcoma é raro no adolescente e quase nunca ocorre em criança, segundo o Tachdjian.",
+   "B": "**20 a 40 anos** fica entre os dois picos: encosta no do secundário (25 a 45) sem coincidir com o do primário, e é a escolha de quem mistura os dois.",
+   "D": "**60 a 80 anos** parece razoável para um tumor de adulto, mas o pico está uma década e meia antes; a faixa lembra mais metástase e mieloma."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors), p. 1071",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0055": {
   "conceito": "**Um tumor que se esconde.** O cordoma sacrococcígeo cresce devagar e costuma ficar **grande antes do diagnóstico**, em parte porque a **radiografia simples é um exame ruim para o sacro**: o **gás intestinal** projetado sobre o osso, somado às fezes na ampola retal, apaga o detalhe ósseo, e o sacro, curvo e inclinado, é mal representado numa incidência única. Uma lesão lítica extensa pode passar despercebida no AP.\n\n**O que fazer.** Diante de dor sacrococcígea persistente em adulto de meia-idade ou idoso, radiografia normal não afasta nada. O exame é a **ressonância**, que mostra massa lobulada com **sinal muito alto em T2** e a extensão pré-sacral, muitas vezes maior que a óssea, e o exame físico obrigatório é o **toque retal**, que palpa a massa em boa parte dos casos. O cordoma deriva de restos da notocorda, por isso fica na linha média; é lítico e destrutivo, com calcificações amorfas em parte dos casos, e o tratamento é essencialmente cirúrgico, com margem ampla.\n\n**Na prova:** o obstáculo à radiografia do sacro é o **gás e o conteúdo intestinal** sobrepostos; na suspeita, ressonância e toque retal.",
@@ -1058,16 +1076,21 @@
   "conferido": false
  },
  "tumores-0079": {
-  "conceito": "**O que é.** A síndrome de Maffucci é a associação de **encondromas múltiplos com hemangiomas** de partes moles, nódulos azulados e compressíveis na pele e no subcutâneo, que na radiografia podem mostrar **flebólitos**, calcificações arredondadas que denunciam a lesão vascular. É parente da doença de Ollier: mesma base, uma mutação pós-zigótica em mosaico de IDH1 ou IDH2, sem herança e com acometimento assimétrico. O que a torna mais grave é o risco de **transformação sarcomatosa** ainda maior, que inclui condrossarcoma, angiossarcoma, glioma, tumores de ovário e neoplasias de pâncreas e vias biliares, exigindo seguimento por toda a vida.\n\n**Não trocar os pares.** Maffucci é encondroma com **hemangioma**; Mazabraud é displasia fibrosa com **mixomas** intramusculares; e a exostose múltipla hereditária é de osteocondromas, pelos genes EXT1 e EXT2.\n\n**Na prova:** Maffucci é **encondroma com hemangioma**; mixoma vai com displasia fibrosa, em Mazabraud.",
-  "correta": "**Encondromas e hemangiomas.** É a definição da síndrome, e os flebólitos na radiografia denunciam o componente vascular.",
+  "conceito": "A doença de MAFFUCCI é uma combinação de dois tecidos: um de **cartilagem** e um de **vasos**. O Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928, descreve a encondromatose múltipla (OLLIER) e diz que, quando há **hemangiomas das partes moles** sobrejacentes, o quadro é a síndrome de MAFFUCCI. O capítulo da mão do mesmo livro (Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3581 e 3582) faz a distinção que a prova usa: só encondromas múltiplos no OLLIER; hemangiomas visíveis em mãos e pernas no MAFFUCCI.\n\n**Como o enunciado engana.** Ele oferece quatro pares montados a partir de dois pares de termos. O primeiro termo pode ser **encondroma** ou **osteocondroma**: a doença é de encondromas, lesões centrais da medular por falha da ossificação endocondral, e não de exostoses de superfície, que pertencem à exostose múltipla hereditária. O segundo termo pode ser **hemangioma** ou **mixoma**: o mixoma intramuscular pertence a outra síndrome, a de MAZABRAUD, que une displasia fibrosa poliostótica e mixomas.\n\n**Um detalhe para fixar.** Os hemangiomas costumam ser cavernosos e calcificam como flebólitos, visíveis na radiografia das partes moles (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors)). A lesão vascular não é incidental: é o que dá nome à síndrome e a separa do OLLIER.\n\nA definição está na seção \"A síndrome de MAFFUCCI\" do resumo.",
+  "correta": "**C) encondromas e hemangiomas.** Encondromatose múltipla com hemangiomas das partes moles sobrejacentes é a definição de MAFFUCCI no Campbell (cap. 27, p. 928).",
   "incorretas": {
-   "A": "**Troca o par.** Encondromas com mixomas não descrevem nenhuma síndrome; os mixomas pertencem a Mazabraud, com displasia fibrosa.",
-   "B": "**Outra doença.** Osteocondromas múltiplos são a exostose múltipla hereditária, e mixoma não entra no quadro.",
-   "D": "**Erra a lesão óssea.** O hemangioma está certo, mas a lesão óssea de Maffucci é o encondroma."
+   "A": "**Encondromas e mixomas** acerta a cartilagem e troca o vaso por mixoma, tumor de tecido mixoide que se associa à displasia fibrosa na síndrome de MAZABRAUD.",
+   "B": "**Osteocondromas e mixomas** erra os dois termos: osteocondromas são as exostoses de superfície, e o mixoma é de outra síndrome.",
+   "D": "**Osteocondromas e hemangiomas** acerta o hemangioma e troca o tumor ósseo; osteocondromas múltiplos formam a exostose múltipla hereditária, não a encondromatose."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3581 e 3582",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors)",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0080": {
   "conceito": "**A assinatura do infarto ósseo.** É a necrose de um segmento de osso **medular**, de localização **metafisária** ou metadiafisária, com **borda serpiginosa calcificada na periferia**, em contorno de mapa ou de fumaça, e **centro** com densidade de gordura ou de osso normal. A borda é a interface entre osso morto e vivo, onde acontece a reação reparadora. As sedes são o fêmur distal, a tíbia proximal e o úmero proximal, e as causas são as mesmas da osteonecrose epifisária: corticoide, álcool, doença falciforme, doença descompressiva, lúpus, pancreatite e doença de Gaucher.\n\n**O diferencial que importa** é o **condrossarcoma de baixo grau**, ou o encondroma, na mesma região. Nele a calcificação é **central**, em anéis e arcos ou em pipoca, com festonamento endosteal, e a lesão pode crescer e doer; o infarto tem calcificação periférica, é estável e assintomático. A ressonância confirma, com linha dupla em T2 na borda e centro com sinal de gordura preservado.\n\n**Na prova:** infarto ósseo tem **calcificação na periferia**; tumor cartilaginoso tem calcificação no centro.",
@@ -1249,16 +1272,22 @@
   "conferido": false
  },
  "tumores-0094": {
-  "conceito": "**O tumor ósseo mais comum da mão** é o encondroma, com sede preferencial na **falange proximal**, seguida do metacarpo e da falange média. Nasce de restos de cartilagem fisária retidos na metáfise e aparece como lesão central, lítica, bem delimitada, com afinamento e insuflação da cortical e às vezes calcificações puntiformes. Costuma ser assintomático, e a apresentação mais comum é a **fratura patológica** após trauma banal. A conduta é deixar a fratura consolidar primeiro e, se a lesão persistir e for grande, fazer curetagem com enxerto.\n\n**Mão é diferente do esqueleto axial.** Na mão, o encondroma raramente maligniza, e insuflação e afinamento cortical são comuns e benignos; em fêmur, úmero e pelve, dor sem fratura, festonamento endosteal profundo e destruição cortical apontam para condrossarcoma. Lesão lítica na falange distal é pouco típica de encondroma e lembra cisto epidermoide de inclusão, tumor glômico e, no adulto, metástase.\n\n**Na prova:** encondroma da mão é na **falange proximal** e costuma se apresentar com fratura patológica.",
-  "correta": "**Falange proximal.** É a sede mais frequente do encondroma na mão, seguida do metacarpo e da falange média.",
+  "conceito": "O encondroma é o tumor benigno de cartilagem hialina que mais aparece nos ossos pequenos de mãos e pés, e a mão concentra quase metade dos casos (o Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors) fala em cerca de 50%, sobretudo nas falanges). A questão pede o osso exato.\n\n**Onde ele mora.** O capítulo da mão do Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3580 e 3581) diz que o local mais comum é a **metáfise proximal da falange proximal**, em posição excêntrica e expansiva. O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores da mão)) dá a sequência: falange proximal em primeiro lugar, depois a média e os metacarpais, com o carpo raramente acometido. O Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928, completa que as falanges da mão são o local mais comum do condroma em geral.\n\n**O que isso significa na clínica.** O encondroma da mão costuma ser assintomático, descoberto por acaso ou por uma fratura patológica com trauma mínimo, porque a cortical fina cede. Nessa região até a erosão e a expansão cortical consideráveis são compatíveis com tumor benigno, ao contrário do que se espera na pelve. O Campbell recomenda deixar a fratura consolidar antes de excisar, e o SIZÍNIO lembra que a fratura não cura o condroma, porque o hematoma não ocupa a cartilagem como ocupa a cavidade de um cisto.\n\n**Para o gabarito.** O metacarpo é sede possível, mas vem atrás das falanges; o rádio distal não é local típico; a falange distal é rara. O osso certo é a falange proximal.\n\nO encondroma da mão está na seção \"O encondroma: o diferencial de todos os dias\" do resumo.",
+  "correta": "**D) falange proximal.** É o osso mais acometido pelo encondroma da mão, sobretudo na metáfise proximal, segundo o Campbell e o SIZÍNIO HEBERT.",
   "incorretas": {
-   "A": "**Segundo lugar.** O metacarpo é sede frequente, mas fica atrás da falange proximal.",
-   "B": "**Nem é mão.** O rádio distal não faz parte da mão nem é sede preferencial do encondroma.",
-   "C": "**Pouco frequente.** Lesão lítica na falange distal levanta outras hipóteses, como cisto epidermoide de inclusão."
+   "A": "**Metacarpo** é sede frequente, mas fica atrás das falanges na ordem descrita pelo SIZÍNIO HEBERT.",
+   "B": "**Rádio distal** não é local típico do encondroma; as fontes situam o tumor nos ossos pequenos da mão, e o carpo é raramente acometido.",
+   "C": "**Falange distal** é pouco comum: a lesão prefere a falange proximal, depois a média, seguindo a ordem do SIZÍNIO HEBERT."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3580 e 3581",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1026 e 1027 aprox.",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores da mão)",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0095": {
   "conceito": "A coluna é o lugar do esqueleto onde as metástases mais aparecem, mas elas não se distribuem igualmente ao longo dela. A questão pergunta qual região é acometida com mais frequência. O Campbell dá um número exato, e entender por que ajuda a lembrar outros fatos cobrados sobre a coluna.\n\n**Os números da coluna no Campbell.** As metástases são as lesões malignas mais comuns do osso, 40 vezes mais frequentes que todos os tumores primários juntos, e acometem a coluna em 50% a 85% dos pacientes; **a coluna é o local mais comum de metástase esquelética**. A disseminação favorece a **região torácica (70%)**, seguida da **lombar (20%)**, da cervical e do sacro. **O corpo vertebral é o local mais comum**, seguido do pedículo e dos elementos posteriores. Noventa por cento dos tumores são extradurais, 5% intradurais e 1% intramedulares. Mama, pulmão e próstata são os que mais metastatizam para a coluna, seguidos de tireoide, rim e trato gastrointestinal (cap. 42, p. 1945).\n\n**Por que a torácica.** A região torácica é a mais longa da coluna, com 12 vértebras, contra 5 lombares e 7 cervicais; tem, portanto, mais osso e mais medula para receber as células tumorais. Ela também está perto dos órgãos que mais metastatizam, a mama e o pulmão, e drena para as veias intercostais e o sistema ázigo, que se comunicam diretamente com o plexo venoso vertebral de BATSON (Campbell, cap. 37, p. 1647).\n\n**Por que a torácica é a mais perigosa.** O Campbell mostra que os sinais neurológicos aparecem em 5% a 20% dos pacientes com metástase na coluna, mas **chegam a 37% nas metástases torácicas**, provavelmente porque **há menos espaço para a medula nesse nível**, ao contrário da compressão de raízes na coluna lombar (cap. 42, p. 1945). Com déficit e paraparesia, só 25% a 35% recuperam a força perdida; paciente paraplégico ou com perda completa do controle esfincteriano há mais de 12 horas dificilmente recupera.\n\n**Os sintomas.** A queixa principal é a dor, progressiva e contínua, que não melhora com o repouso nem à noite, embora 36% das metástases da coluna não deem sintoma. História de câncer, por mais antiga, obriga a procurar metástase (p. 1945).\n\n**O tratamento.** A radioterapia estereotáxica mudou o manejo. Pacientes com déficit importante se beneficiam de dexametasona em dose de ataque; com compressão medular e déficit, os operados andaram mais que os tratados só com radioterapia; e como o tumor fica sobretudo no corpo vertebral, a descompressão anterior é a mais útil, enquanto a laminectomia tem pouco valor (p. 1945 a 1948).\n\n**A imagem na coluna.** O Campbell avisa que a imagem muitas vezes é inconclusiva: as radiografias simples da coluna não definem a maioria dos casos. O melhor exame de rastreio do esqueleto é a cintilografia, que identifica a maioria das lesões maiores que 2 mm, com 5% de falso-negativos, sobretudo no mieloma e nos tumores de mama, nasofaringe, pulmão e rim. A tomografia ajuda a separar a fratura osteoporótica da metastática: a osteoporótica não destrói a cortical, acomete o corpo de forma homogênea e não tem massa de partes moles. A **ressonância é o exame de escolha**, com a lesão hipointensa em T1 e realce ao contraste, e a sequência STIR é a mais sensível. A mielografia raramente é necessária e pode precipitar piora neurológica em 16% a 24% dos pacientes (cap. 42, p. 1945 e 1946).\n\n| Região | Frequência das metástases (Campbell, cap. 42, p. 1945) |\n|---|---|\n| TORÁCICA | 70% |\n| Lombar | 20% |\n| Cervical | menos |\n| Sacro | menos |\n\n**O que a banca quis testar.** A distribuição das metástases ao longo da coluna.\n\n> **Na prova:** coluna = TORÁCICA (70%), depois lombar (20%); na torácica, mais déficit neurológico (37%), porque a medula tem menos espaço.",
@@ -1289,16 +1318,21 @@
   "formato": "corrido"
  },
  "tumores-0097": {
-  "conceito": "**A afirmação verdadeira.** O condrossarcoma é o **tumor maligno primário mais comum da mão**. Surpreende, porque na mão o encondroma benigno é muito mais frequente que qualquer maligno, mas entre os malignos primários o condrossarcoma lidera, muitas vezes sobre encondroma prévio, sobretudo na doença de Ollier. O sinal de alerta é o encondroma da mão que **dói sem fratura**, cresce ou destrói a cortical.\n\n**As outras afirmações.** O condrossarcoma de **células claras** é variante de **baixo grau** e bom prognóstico, epifisária, que lembra o tumor de células gigantes e prefere o fêmur proximal. A doença de **Ollier** é a encondromatose sem hemangiomas, que definem a síndrome de Maffucci. E o condrossarcoma **convencional** não responde a quimioterapia nem a radioterapia; o tratamento é cirúrgico, com margem ampla. As exceções sistêmicas são o mesenquimal, que responde melhor à quimioterapia, e o desdiferenciado, de alto grau e prognóstico ruim.\n\n**Na prova:** o condrossarcoma convencional é **só cirurgia**, e é o maligno primário mais comum da mão.",
-  "correta": "**É o tumor maligno primário ósseo mais comum na mão.** Costuma surgir sobre encondroma prévio, e a dor sem fratura é o sinal de alerta.",
+  "conceito": "Esta questão reúne quatro afirmações sobre o condrossarcoma, e três delas trocam um dado verdadeiro de outra doença. A correta é a que o Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975, e o Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3587 aprox., repetem: o condrossarcoma é **raro na mão**, mas é **o tumor maligno primário de osso mais comum nessa localização**. O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores da mão)) lista, entre os malignos primitivos mais comuns da mão, nessa ordem, condrossarcoma, sarcoma osteogênico, EWING e fibrossarcoma.\n\n**Os erros das outras.** O subtipo de **células claras** é de **baixo grau**, com forte tendência a nascer na epífise do fêmur proximal (Campbell, p. 977 e 978); quem é de alto grau é o mesenquimal. O **hemangioma de partes moles** caracteriza a síndrome de MAFFUCCI, e o OLLIER tem só encondromas. E a **quimioterapia** não tem papel no condrossarcoma convencional, usada com frequência no desdiferenciado e no mesenquimal (p. 978).\n\n**Por que a mão confunde.** Ali o encondroma é tão comum que o condrossarcoma é raro. O Campbell dá os números (1,5% a 10% dos condrossarcomas ocorrem em mão e pé, com a mão em 70%) e as pistas de alarme: lesão dolorosa ou recidiva depois de curetagem de encondroma.\n\n**Raciocínio.** Em questão de várias afirmações, teste cada uma contra o fato isolado que você domina. Aqui, grau, síndrome e quimioterapia derrubam três de uma vez.\n\nA mão está na seção \"A mão: raro, mas o primeiro da lista\" do resumo.",
+  "correta": "**B) é o tumor maligno primário ósseo mais comum na mão.** O Campbell afirma que, apesar de raro ali, é o primeiro entre os malignos primários do osso na mão.",
   "incorretas": {
-   "A": "**Células claras é baixo grau.** Os de alto grau são o desdiferenciado e o mesenquimal.",
-   "C": "**Hemangioma é Maffucci.** A doença de Ollier é a encondromatose sem hemangiomas.",
-   "D": "**Quimiorresistente.** O condrossarcoma convencional não responde à quimioterapia; o tratamento é cirúrgico."
+   "A": "**O subtipo de células claras é maligno de alto grau** troca o grau: o de células claras é de baixo grau, com tendência epifisária; o alto grau é o do subtipo mesenquimal.",
+   "C": "**A doença de OLLIER apresenta hemangioma em partes moles** descreve o MAFFUCCI; o OLLIER é só de encondromas múltiplos.",
+   "D": "**A quimioterapia adjuvante está indicada no tipo convencional** contraria o Campbell: no convencional ela não tem papel, e o tratamento é a margem cirúrgica."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975, 977, 978",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3587 aprox.",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores da mão)",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0098": {
   "conceito": "**Osteoma osteoide na coluna causa escoliose.** Na vértebra, a lesão fica quase sempre nos **elementos posteriores**, e a dor gera espasmo muscular assimétrico que inclina a coluna, com a lesão na **concavidade** da curva. É uma escoliose que não é idiopática: instala-se rápido, é **dolorosa** e rígida, sem rotação vertebral proporcional, e, tratada cedo, antes de se estruturar, costuma regredir.\n\n**O perfil do osteoma osteoide** é de **dor noturna** que melhora muito com anti-inflamatório, pela produção de prostaglandinas, com pico na segunda e terceira décadas e predomínio masculino, e sedes preferenciais no **fêmur proximal** e na **tíbia**, com a coluna depois. O nicho radiolucente de menos de 1,5 cm aparece melhor na tomografia, e, se o anti-inflamatório não resolve, o tratamento é a **ablação por radiofrequência guiada por tomografia**; na coluna, a proximidade de estruturas nervosas pode exigir ressecção cirúrgica.\n\n**Na prova:** escoliose **dolorosa** no adolescente, **pense em osteoma osteoide** ou osteoblastoma no arco posterior, na concavidade.",
@@ -2153,19 +2187,21 @@
   "formato": "corrido"
  },
  "tumores-0195": {
-  "conceito": "**O que é Maffucci.** É a **encondromatose múltipla**, a mesma base da doença de Ollier, somada a **hemangiomas** de partes moles, nódulos azulados e compressíveis na pele e no subcutâneo, que na radiografia mostram **flebólitos**. Vem de uma mutação pós-zigótica em mosaico de IDH1 ou IDH2, não hereditária e com acometimento assimétrico. O que a torna grave é o risco de **transformação sarcomatosa**, maior que na doença de Ollier e não restrito ao condrossarcoma: inclui angiossarcoma, glioma e tumores de ovário, pâncreas e vias biliares, o que exige seguimento vitalício, não só do esqueleto.\n\n**Não confundir** com a síndrome de Mazabraud, displasia fibrosa com mixomas, nem com a de McCune-Albright, displasia fibrosa poliostótica com manchas e endocrinopatia.\n\n**Na prova:** os hemangiomas múltiplos de Maffucci se associam à **encondromatose múltipla**.",
-  "correta": "**Encondromatose múltipla.** Maffucci é encondromatose com hemangiomas de partes moles.",
+  "conceito": "Aqui a pergunta é lida ao contrário: dado o hemangioma de partes moles da síndrome de MAFFUCCI, a que doença de base ele se liga? A resposta está no nome da própria síndrome: a **encondromatose múltipla**. O Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928, afirma que a encondromatose que se associa a hemangiomas das partes moles sobrejacentes recebe o nome de MAFFUCCI, e o capítulo da mão (Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3581 e 3582) separa: no OLLIER, só encondromas; no MAFFUCCI, hemangiomas visíveis em mãos e pernas.\n\n**O que ficou de fora.** O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos)) descreve a síndrome como congênita, não hereditária, com hemangiomas cavernosos uni ou bilaterais e maior associação com gliomas intracranianos. Não há, em nenhuma das fontes, ligação do hemangioma com neurofibromatose, com displasia fibrosa poliostótica ou com osteocondromatose.\n\n**As armadilhas.** A displasia fibrosa poliostótica tem sua própria síndrome com tecido de partes moles, a de MAZABRAUD, mas o tumor ali é o mixoma intramuscular, e não o hemangioma. A osteocondromatose múltipla é a exostose múltipla hereditária, autossômica dominante, com EXT1 ou EXT2. A neurofibromatose é doença à parte, sem papel na definição.\n\n**Por que isso importa clinicamente.** Reconhecer a síndrome muda a vigilância: risco de condrossarcoma igual ou maior que o do OLLIER e atenção a cérebro e abdome.\n\nA associação está na seção \"A síndrome de MAFFUCCI\" do resumo.",
+  "correta": "**B) encondromatose múltipla.** O hemangioma de partes moles é o que distingue o MAFFUCCI da encondromatose múltipla simples do OLLIER.",
   "incorretas": {
-   "A": "**Outra doença.** A neurofibromatose tem neurofibromas e manchas café-com-leite.",
-   "C": "**Outros pares.** A displasia fibrosa poliostótica se associa a mixomas, em Mazabraud, ou a manchas e endocrinopatia, em McCune-Albright.",
-   "D": "**É a exostose múltipla.** Doença dos genes EXT1 e EXT2, sem componente vascular."
+   "A": "**Neurofibromatose** é doença à parte, sem relação com cartilagem; não define nem acompanha o quadro de hemangiomas e encondromas.",
+   "C": "**Displasia fibrosa poliostótica** se liga a tecido mole pelo mixoma intramuscular da síndrome de MAZABRAUD, e não pelo hemangioma.",
+   "D": "**Osteocondromatose múltipla** é a exostose múltipla hereditária, de herança autossômica dominante, e não se associa a hemangiomas de partes moles."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), Cap. 25"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3581 e 3582",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos)",
+   "Resumo OrtoQuestões: Condrossarcoma"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0196": {
   "conceito": "**O que Huvos mede** é a resposta histológica do osteossarcoma à **quimioterapia pré-operatória**. A avaliação é feita na peça ressecada, mas julga o tratamento que veio antes da cirurgia. O **grau I** tem menos de 50% de necrose; o **II**, de 50 a 90%; o **III**, mais de 90%, com focos de tumor viável; e o **IV**, 100% de necrose, sem tumor viável. A fronteira é de 90%: **graus III e IV** definem o **bom respondedor**, e I e II, o mau respondedor. É o melhor preditor isolado de sobrevida no osteossarcoma localizado.\n\n**Por que quimioterapia antes.** Trata a doença micrometastática desde o início, reduz e delimita o tumor, facilitando a preservação do membro, dá tempo para fabricar a endoprótese sob medida e permite **medir** a resposta, informação que nenhuma outra abordagem fornece.\n\n**Na prova:** Huvos avalia a quimioterapia **pré-operatória**, e o bom respondedor é grau III ou IV, com mais de 90% de necrose.",
@@ -2264,19 +2300,22 @@
   "formato": "corrido"
  },
  "tumores-0205": {
-  "conceito": "**Nem todo encondroma de Ollier tem o mesmo risco.** O risco de condrossarcoma ao longo da vida é alto, mas não se distribui por igual: as lesões de **mãos e pés**, as mais numerosas, quase nunca malignizam, e quem maligniza são as do **esqueleto central**, a **pelve** e a **cintura escapular** (escápula e úmero proximal), além do fêmur proximal e das costelas.\n\n**Uma regra que vale para toda lesão cartilaginosa.** Na mão, a lesão condroide é quase sempre benigna, mesmo insuflada e com cortical fina; na pelve ou na cintura escapular, é suspeita mesmo com aparência tranquila. No seguimento, são sinais de transformação a dor sem fratura, o crescimento de lesão estável, o festonamento endosteal profundo, a destruição cortical, a massa de partes moles e o tamanho grande, que pedem ressonância e biópsia planejada por quem fará o tratamento.\n\n**Na prova:** condrossarcoma secundário na doença de Ollier é mais na **pelve e na cintura escapular**.",
-  "correta": "**Pelve e cintura escapular.** São as regiões centrais onde os encondromas de Ollier mais malignizam.",
+  "conceito": "A pergunta quer saber onde o condrossarcoma secundário aparece com mais frequência nos pacientes com doença de OLLIER, e a resposta oficial é **pelve e cintura escapular**. A ideia central é que a transformação maligna mora no esqueleto axial e na raiz dos membros, e não nas mãos, onde as lesões do OLLIER são mais numerosas.\n\nO que os livros sustentam: o Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1027 aprox., diz que encondromas de pelve, escápula, esterno, vértebras e porções proximais dos ossos longos têm maior transformação no adulto. Para a exostose múltipla (p. 1025 aprox.), o Tachdjian é explícito: a frequência relativa de condrossarcoma é maior nos osteocondromas da pelve e da cintura escapular, com pelve e escápula como locais mais comuns num inquérito recente.\n\nO Tachdjian alerta ainda que, no OLLIER, a lâmina pode ser hipercelular, com núcleos de aspecto ameaçador, imitando o baixo grau; na mão a mesma atipia provavelmente é benigna, e na pelve ou em ossos grandes a suspeita aumenta. O sinal clínico de alarme é crescimento de uma lesão depois da maturidade, com dor, e a conduta é biópsia. A vigilância deve ser indefinida (Campbell, cap. 27, p. 930).\n\n**Como não errar.** As alternativas com coluna ou com fêmur proximal misturam a localização do primário (pelve, fêmur proximal, úmero proximal) com a do secundário. Fixe a regra: pelve e cintura escapular.\n\nEsse ponto está na seção \"Onde o OLLIER se transforma\" do resumo.",
+  "correta": "**D) pelve e cintura escapular.** É a região em que o Tachdjian situa a maior transformação das lesões cartilaginosas, com pelve e escápula à frente.",
   "incorretas": {
-   "A": "**Coluna não é território típico.** O fêmur proximal é sede de risco, mas a coluna não é típica da encondromatose.",
-   "B": "**Metade certa.** A cintura escapular está certa; a coluna não.",
-   "C": "**Metade certa.** Pelve e fêmur proximal são de risco, mas o par mais citado combina pelve e cintura escapular."
+   "A": "**Coluna e fêmur proximal** soma um local de pouco peso nessas doenças (a coluna responde por menos de 10% dos condrossarcomas) com um que pertence ao perfil do primário.",
+   "B": "**Coluna e cintura escapular** acerta a cintura escapular e erra a coluna, que é local raro do condrossarcoma e não aparece entre os preferenciais do secundário.",
+   "C": "**Pelve e fêmur proximal** acerta a pelve, mas o segundo local é o do perfil do condrossarcoma primário; no secundário, o Tachdjian cita a escápula."
   },
+  "alerta": "Os livros conferidos não trazem a localização preferencial do condrossarcoma secundário especificamente no OLLIER. O gabarito oficial (pelve e cintura escapular) é sustentado pelo Tachdjian para a exostose múltipla (pelve e escápula) e, de modo geral, pela maior transformação de encondromas de pelve e escápula no adulto.",
   "referencias": [
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 13"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1025 e 1027 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 930",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975",
+   "Resumo OrtoQuestões: Condrossarcoma"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0206": {
   "conceito": "**Mesmo endereço, mesma imagem.** A displasia osteofibrosa, de Campanacci, e o **adamantinoma** ocupam a cortical anterior da diáfise da tíbia e produzem a mesma imagem: lesão lítica multiloculada, intracortical, em bolhas de sabão, com esclerose e arqueamento anterior. A diferença está na histologia: a displasia osteofibrosa, benigna, tem trabéculas com revestimento de osteoblastos (rimming), e o adamantinoma, maligno de baixo grau, tem **ninhos epiteliais** em estroma fibroso, positivos para citoqueratina. Existe ainda a forma intermediária, a displasia osteofibrosa tipo adamantinoma.\n\n**Duas consequências.** A biópsia precisa ser representativa, porque os ninhos epiteliais podem ser escassos, e as condutas divergem: na displasia osteofibrosa, observação ou curetagem, já que tende a estabilizar após a puberdade; no adamantinoma, ressecção ampla, porque recidiva se tratado como benigno e pode dar metástase pulmonar tardia. A idade ajuda: displasia na primeira década, adamantinoma em adultos jovens.\n\n**Na prova:** o diferencial da displasia osteofibrosa é o **adamantinoma**.",
@@ -2294,18 +2333,20 @@
   "formato": "corrido"
  },
  "tumores-0207": {
-  "conceito": "**Os tumores ósseos da mão.** A grande maioria é **benigna**. O mais comum, de longe, é o **encondroma**, que acomete sobretudo as **falanges proximais** e os metacarpos. Os tumores **malignos primários** da mão são **raros**.\n\n**O tumor maligno primário mais comum da mão: o condrossarcoma.**\n- Geralmente de **baixo grau**.\n- Acomete adultos, mais nas falanges proximais e nos metacarpos.\n- Pode surgir **de novo** ou a partir de um **encondroma** (transformação maligna), sobretudo nas **encondromatoses múltiplas**: **doença de Ollier** e **síndrome de Maffucci** (com hemangiomas).\n- Sinais de alerta num encondroma: **dor** sem fratura, lesão **grande** (mais de 5 cm), **destruição cortical**, massa de partes moles e crescimento no adulto.\n\n**Os tumores malignos que acometem a mão.**\n\n| Tumor | Comentário |\n|---|---|\n| **Condrossarcoma** | O **maligno primário mais comum** da mão |\n| Osteossarcoma | Raro na mão |\n| Sarcoma de Ewing | Raro na mão; em crianças e jovens |\n| Fibrossarcoma | Raro |\n| **Metástases** | No conjunto, comparáveis em número; o **pulmão** é o primário mais comum (metástases acrais) |\n\n**Encondroma x condrossarcoma.** A diferenciação é difícil, até na histologia, porque ambos são tumores de cartilagem. Na mão, os encondromas podem ter células com atipia sem serem malignos. Por isso, a decisão considera a **clínica** e a **imagem** em conjunto.\n\n**O tratamento.**\n- **Encondroma**: observação (assintomático) ou **curetagem e enxerto** (com dor ou fratura patológica, após a consolidação).\n- **Condrossarcoma** de baixo grau: curetagem ampliada com adjuvantes ou **ressecção** com margem; nos tumores agressivos, **amputação** do dedo ou do raio. O condrossarcoma é **resistente** à quimioterapia e à radioterapia: a cirurgia é o tratamento.",
-  "correta": "**Correta: C (condrossarcoma).** O **condrossarcoma** é o tumor ósseo maligno primário mais comum da mão, geralmente de baixo grau, podendo surgir de novo ou a partir de um encondroma, sobretudo nas encondromatoses (Ollier, Maffucci).",
+  "conceito": "Entre as quatro neoplasias oferecidas, três são sarcomas famosos do osso e uma delas é rara na mão. A que lidera a lista nessa localização é o **condrossarcoma**. O Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975, diz que o tumor raramente ocorre na mão, mas, quando ocorre, é o maligno primário de osso mais comum ali; o Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão) (p. 3587 aprox.) repete e acrescenta que o osteossarcoma foi relatado raramente nessa região.\n\n**Os números.** Mão e pé reúnem de 1,5% a 10% de todos os condrossarcomas, e a mão responde por 70% contra 30% do pé. A apresentação pode imitar artrose, com dor e edema, ou ser uma fratura patológica. O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores da mão)) o localiza na falange proximal de adultos e lista, na ordem, condrossarcoma, osteossarcoma, EWING e fibrossarcoma.\n\n**Por que ninguém acerta de primeira.** Pensamos que o sarcoma ósseo mais comum no esqueleto inteiro seja também o da mão, e escolhemos osteossarcoma. Mas a distribuição muda com o osso: no esqueleto pequeno e periférico, a cartilagem domina.\n\n**Na conduta.** O alto grau na mão pede ressecção em bloco, como a ressecção do raio (recidiva de 7%, contra 38% após curetagem, sem alterar a sobrevida), e o baixo grau admite técnicas que poupam o dedo. A suspeita nasce da lesão cartilaginosa dolorosa ou da recidiva após curetagem de um encondroma.\n\nO assunto está na seção \"A mão: raro, mas o primeiro da lista\" do resumo.",
+  "correta": "**C) condrossarcoma.** É o maligno primário de osso mais comum na mão, apesar de raro ali, no Campbell (cap. 29 e cap. 83) e no SIZÍNIO HEBERT (cap. 7).",
   "incorretas": {
-   "A": "O **fibrossarcoma** ósseo é **raro** na mão.",
-   "B": "O **osteossarcoma** é o maligno primário mais comum do esqueleto em geral, mas é **raro** na mão.",
-   "D": "O **sarcoma de Ewing** é raro na mão e acomete sobretudo crianças e jovens."
+   "A": "**Fibrossarcoma** aparece no fim da lista do SIZÍNIO HEBERT para a mão, atrás do condrossarcoma, do osteossarcoma e do sarcoma de EWING.",
+   "B": "**Osteossarcoma** é o sarcoma ósseo mais lembrado no esqueleto em geral, mas o Campbell registra que foi raramente relatado na mão.",
+   "D": "**Sarcoma de EWING** vem em terceiro lugar na lista do SIZÍNIO HEBERT para a mão, depois do condrossarcoma e do osteossarcoma."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 27",
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3587 aprox.",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores da mão)",
+   "Resumo OrtoQuestões: Condrossarcoma"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0208": {
@@ -2476,16 +2517,21 @@
   "formato": "corrido"
  },
  "tumores-0245": {
-  "conceito": "**Onde o condrossarcoma fratura.** A fratura patológica no condrossarcoma se concentra no **fêmur proximal**, onde três fatores se somam. A **topografia**: o condrossarcoma prefere o esqueleto central e as raízes dos membros, ou seja, pelve, fêmur proximal, úmero proximal e costelas. A **carga**: entre essas sedes, o fêmur proximal é o que suporta várias vezes o peso do corpo a cada passo, e a região peritrocantérica concentra as maiores forças do esqueleto. A **biologia**: o tumor cresce devagar e produz **festonamento endosteal profundo**, corroendo a cortical por dentro durante meses sem sintoma.\n\n**Consequências clínicas.** Dor de repouso ou ao apoiar numa lesão condroide do fêmur proximal deve fazer pensar em **fratura iminente**. Como o condrossarcoma **não responde** a quimioterapia nem a radioterapia, a única arma é a ressecção com margem ampla, e a fratura espalha hematoma tumoral e compromete essa margem.\n\n**Na prova:** fratura patológica por condrossarcoma é mais no **fêmur proximal**; a pelve é a sede mais comum do tumor, mas fratura menos.",
-  "correta": "**O fêmur proximal.** É sede frequente do tumor e a de maior carga mecânica.",
+  "conceito": "Esta questão mistura dois conceitos próximos: onde o condrossarcoma nasce e onde ele fratura. O Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975, diz que a maioria dos condrossarcomas está em localização proximal, **pelve, fêmur proximal e úmero proximal**. O mesmo capítulo (p. 976) trata a **dor sem fratura patológica** como pista para separar o encondroma do condrossarcoma de baixo grau, e o capítulo da mão (Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão)) lembra que a fratura patológica pode ser a forma de apresentação.\n\n**O que o livro não diz.** Nenhum dos livros conferidos traz estatística de fratura patológica por sítio no condrossarcoma. O gabarito oficial (fêmur proximal) é coerente com a lista do Campbell, em que o fêmur proximal é um dos três locais comuns e o único que suporta carga direta do corpo.\n\n**A pegadinha.** O anel pélvico é a sede mais comum do tumor, mas o enunciado pergunta pela fratura, e não pela sede do tumor. O osso que fratura é o que carrega peso e se enfraquece com a lesão lítica, como o colo e a região trocantérica do fêmur. A coluna lombar e o úmero proximal estão longe de ser a escolha mais coerente.\n\n**Como usar na prova.** O livro não dá a frequência de fratura por sítio; o gabarito acompanha o fêmur proximal, que o Campbell põe entre os locais mais comuns do tumor.\n\nA localização está na seção \"Fratura patológica\" do resumo.",
+  "correta": "**C) O fêmur proximal.** Está entre os três locais mais comuns do condrossarcoma, e o gabarito é coerente com o Campbell, que porém não traz a frequência por sítio.",
   "incorretas": {
-   "A": "**Sede do tumor, não da fratura.** A pelve é a sede mais comum do condrossarcoma, mas fratura com menos frequência.",
-   "B": "**Sede atípica.** A coluna lombar não é sede típica do condrossarcoma.",
-   "D": "**Sem carga axial.** O úmero proximal é sede frequente, mas não suporta o peso do corpo."
+   "A": "**O anel pélvico** é a sede mais comum do tumor, mas a questão pede o local da fratura patológica, e o anel recebe carga de forma distribuída pelas articulações sacroilíacas.",
+   "B": "**A coluna lombar** tem papel pequeno: o Campbell diz que a coluna responde por menos de 10% dos condrossarcomas, com predileção pelo sacro.",
+   "D": "**O úmero proximal** é local comum do tumor, mas, por ser osso sem carga, fica atrás do fêmur na lógica do gabarito."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "alerta": "Os livros conferidos (Campbell, Tachdjian e SIZÍNIO HEBERT) não trazem a frequência de fratura patológica por sítio no condrossarcoma. O gabarito oficial (fêmur proximal) é coerente com o Campbell, que lista o fêmur proximal entre os locais mais comuns do tumor, mas não é afirmado textualmente.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975 e 976",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3587 e 3588 aprox.",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0246": {
   "conceito": "**A tríade de Hand-Schüller-Christian** define a forma **crônica multifocal** da histiocitose de células de Langerhans: **lesões ósseas múltiplas**, sobretudo no **crânio**, com aspecto de mapa geográfico; **exoftalmia**, pela infiltração da órbita; e **diabetes insípido**, pela infiltração da haste hipofisária com perda do hormônio antidiurético. Aparece tipicamente em crianças entre 2 e 5 anos.\n\n**O espectro da histiocitose.** O **granuloma eosinofílico** é a forma localizada, restrita ao osso, a mais comum e benigna, que na coluna produz a vértebra plana. **Hand-Schüller-Christian** é a forma crônica multifocal. **Letterer-Siwe** é a forma aguda disseminada do lactente, com febre, citopenia, lesões de pele, fígado e baço, a mais grave. As outras síndromes da questão não têm relação: Gardner reúne polipose adenomatosa, osteomas, cistos epidermoides e desmoides, e Jaffe-Campanacci reúne fibromas não ossificantes múltiplos e manchas café-com-leite.\n\n**Na prova:** crânio, exoftalmia e diabetes insípido é **Hand-Schüller-Christian**.",
@@ -2868,16 +2914,20 @@
   "formato": "corrido"
  },
  "tumores-0280": {
-  "conceito": "**As duas encondromatoses.** A doença de **Ollier** é a encondromatose múltipla isolada, com transformação em condrossarcoma numa parcela importante dos pacientes, algo como um quarto a um terço nas séries clássicas. A síndrome de **Maffucci** soma à encondromatose os **hemangiomas** de partes moles, e o risco é **ainda maior**, com algumas séries descrevendo risco muito alto ao longo da vida. Maffucci acrescenta ainda o **angiossarcoma**, a partir das lesões vasculares, e neoplasias viscerais como glioma e tumores de ovário, pâncreas e vias biliares. As duas vêm da mesma mutação pós-zigótica em mosaico de IDH1 ou IDH2, não hereditária e de acometimento assimétrico.\n\n**Para contraste.** Na exostose múltipla hereditária (EXT1 e EXT2), o risco é bem menor, na faixa de poucos por cento. A doença de Campanacci é a displasia osteofibrosa da tíbia, benigna e sem relação com condrossarcoma; seu diferencial é o adamantinoma.\n\n**Na prova:** maior risco de condrossarcoma secundário: **Maffucci**, depois Ollier, depois exostose múltipla.",
-  "correta": "**Doença de Maffucci.** Tem o maior risco de condrossarcoma secundário.",
+  "conceito": "A pergunta é de **risco por paciente**: em qual doença o condrossarcoma secundário é mais prevalente? O Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975, dá os números. A doença de OLLIER tem cerca de 25% de malignidade, sobretudo condrossarcoma, até os 40 anos, e a síndrome de MAFFUCCI tem incidência que **pode ser ainda maior**. Na exostose múltipla hereditária o risco ao longo da vida é de cerca de 5%, e no osteocondroma solitário, cerca de 1% (p. 976).\n\n**A leitura do Tachdjian.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1028 aprox., diz que o MAFFUCCI tem risco semelhante ou maior que o do OLLIER e cita SCHWARTZ, com expectativa de degeneração maligna de quase 100%. A ordem prática que a questão pede é MAFFUCCI maior ou igual a OLLIER, e ambos acima da exostose múltipla.\n\n**Por que a exostose múltipla atrai.** O Campbell escreve que os secundários ocorrem com mais frequência no contexto de encondromas múltiplos e de exostoses múltiplas. A frase fala da origem dos casos, e não do risco de cada paciente: a exostose múltipla é bem mais comum que o MAFFUCCI, que é raro, e por isso contribui com muitos casos mesmo com risco individual menor.\n\n**As alternativas fora do páreo.** CAMPANACCI é o nome que o Tachdjian dá à displasia osteofibrosa da tíbia e da fíbula, sem relação com tumor cartilaginoso, e o condroblastoma só aparece entre as associações raras.\n\nA comparação está na seção \"Qual doença tem o secundário mais frequente\" do resumo.",
+  "correta": "**B) doença de MAFFUCCI.** Tem o maior risco individual de condrossarcoma secundário, igual ou superior ao do OLLIER (cerca de 25% até os 40 anos).",
   "incorretas": {
-   "A": "**Alto, mas menor.** Ollier tem risco relevante, mas abaixo de Maffucci.",
-   "C": "**Sem relação.** Campanacci é a displasia osteofibrosa da tíbia.",
-   "D": "**Risco baixo.** Na exostose múltipla, a transformação fica em poucos por cento."
+   "A": "**Doença de OLLIER** tem risco alto, cerca de 25% até os 40 anos, mas o Campbell diz que no MAFFUCCI ele pode ser ainda maior.",
+   "C": "**Doença de CAMPANACCI** é o nome dado à displasia osteofibrosa da tíbia e da fíbula, lesão fibrosa sem matriz cartilaginosa e sem papel como precursor do condrossarcoma.",
+   "D": "**Exostose múltipla hereditária** responde por muitos casos por ser comum, mas o risco individual é de cerca de 5%, bem abaixo dos números do OLLIER e do MAFFUCCI."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975 e 976",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1028 aprox.",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0281": {
   "conceito": "**A técnica de Scaglietti** é a **injeção intralesional de corticosteroide**, o acetato de metilprednisolona, no cisto ósseo simples, descrita nos anos 1970. É feita por via percutânea, guiada por radioscopia, com duas agulhas: aspira-se **líquido seroso claro**, que já confirma o diagnóstico, faz-se uma cistografia para ver se a cavidade é única, lava-se e injeta-se o corticoide. É simples e de baixa morbidade, mas frequentemente precisa ser **repetida** duas ou três vezes, e a cura completa não é a regra em todos os casos.\n\n**Alternativas atuais.** Injeção de medula óssea autóloga ou de substitutos ósseos, e descompressão contínua com hastes elásticas intramedulares, que ainda protegem contra nova fratura. A curetagem com enxerto fica para os refratários, e a ressecção em bloco não tem lugar numa lesão benigna que pode até regredir.\n\n**Na prova:** Scaglietti é **corticoide intralesional** no cisto ósseo simples.",
@@ -3013,16 +3063,21 @@
   "formato": "corrido"
  },
  "tumores-0291": {
-  "conceito": "**Pense no mais provável.** Condrossarcoma de alto grau na **infância** é raríssimo, porque o condrossarcoma é doença do adulto. Diante de tumor com matriz condroide numa criança, a primeira hipótese é o **osteossarcoma condroblástico**, uma das três variantes do osteossarcoma convencional, ao lado da osteoblástica e da fibroblástica, cuja matriz predominantemente cartilaginosa faz lembrar condrossarcoma à primeira vista.\n\n**O que resolve** é procurar **osteoide produzido pelas células tumorais**: qualquer quantidade define osteossarcoma. O contexto ajuda: adolescente, lesão metafisária do fêmur distal ou da tíbia proximal, padrão permeativo, reação periosteal agressiva e massa de partes moles. A distinção muda tudo: o osteossarcoma recebe quimioterapia antes e depois da cirurgia, enquanto o condrossarcoma é resistente a quimioterapia e radioterapia e depende só da cirurgia com margem ampla.\n\n**Na prova:** matriz condroide agressiva em criança é **osteossarcoma condroblástico** até prova em contrário.",
-  "correta": "**Osteossarcoma condroblástico.** Tem matriz cartilaginosa, mas produz osteoide tumoral.",
+  "conceito": "Uma criança com tumor cartilaginoso de alto grau levanta uma suspeita antes de tudo: não é condrossarcoma. O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors), p. 1072, é direto: o condrossarcoma é doença do adulto, raro no adolescente e quase nunca na criança, e o condrossarcoma de alto grau na criança é quase sempre um **osteossarcoma condroblástico**, que fica claro quando se examina a peça inteira.\n\n**O critério que decide.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 976, dá a regra para separar os dois: o condrossarcoma convencional tem células malignas com abundante matriz cartilaginosa, e, se houver **osteoide maligno, mesmo em pequena quantidade**, o diagnóstico passa a ser osteossarcoma condroblástico. O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)) diz o mesmo de outra forma: o condrossarcoma forma cartilagem, mas não osso.\n\n**A consequência para o tratamento.** O Tachdjian recomenda que esse tumor receba quimioterapia como osteossarcoma, ao contrário do condrossarcoma verdadeiro, que não responde. Por isso a lâmina de um adolescente rotulada como condrossarcoma deve levantar a dúvida: errar o diagnóstico é deixar de dar quimioterapia a quem precisa.\n\n**Por que as demais caem.** Condroblastoma maligno não é entidade descrita nessas fontes, e fibrossarcoma congênito e rabdomiossarcoma não fabricam matriz cartilaginosa com osteoide.\n\nO raciocínio está na seção \"O condrossarcoma de alto grau da criança\" do resumo.",
+  "correta": "**A) osteossarcoma condroblástico.** Em criança, o alto grau com cartilagem quase sempre é esse tumor, identificado pelo osteoide maligno na peça inteira, e tratado com quimioterapia.",
   "incorretas": {
-   "B": "**Não é entidade atual.** O condroblastoma é benigno, ainda que rara metástase pulmonar possa ocorrer.",
-   "C": "**Partes moles.** O fibrossarcoma infantil (ETV6-NTRK3) não tem matriz condroide.",
-   "D": "**Partes moles.** O rabdomiossarcoma tem diferenciação muscular, sem matriz condroide."
+   "B": "**Condroblastoma maligno** não é diagnóstico descrito nos livros conferidos; o condroblastoma é tumor benigno epifisário, de 10 a 25 anos.",
+   "C": "**Fibrossarcoma congênito** não está entre os tumores de matriz cartilaginosa que os livros descrevem no diferencial do condrossarcoma.",
+   "D": "**Rabdomiossarcoma** é sarcoma de partes moles de origem muscular, e não fabrica matriz de cartilagem; não é o diferencial de uma lesão óssea cartilaginosa."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors), p. 1072",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 976",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0292": {
   "conceito": "Esta questão pergunta a direção da incisão da biópsia e se o dreno deve ser usado. O gabarito é **longitudinal e preferencialmente sem dreno**. O Campbell é explícito sobre a incisão e trata o dreno como opcional, com uma condição: se for usado, sai em linha com a incisão.\n\n**A técnica da biópsia no Campbell** (cap. 24, p. 896 a 898). A biópsia é **planejada com o mesmo cuidado que a cirurgia definitiva**, depois de completa a avaliação. **Agulha ou aberta, o trajeto é contaminado e sai em bloco com o tumor**; quem biopsia precisa conhecer as incisões da preservação e os retalhos das amputações. Os passos:\n\n- **Garrote**: o membro pode ser **elevado** antes de insuflar, **mas não exsanguinado por compressão**, para não \"espremer\" células para a circulação.\n- **Incisão longitudinal**; **as transversas devem ser evitadas**, porque são muito difíceis ou impossíveis de ressecar com a peça (Fig. 24.7C).\n- **Atravessar um único compartimento muscular**, e não um plano intermuscular; evitar os feixes neurovasculares.\n- Amostrar a **extensão de partes moles**, onde está o tumor mais viável, e não só a pseudocápsula; **congelação** para garantir tecido diagnóstico.\n- **Furo no osso redondo ou oval**, para diminuir a concentração de tensão e evitar fratura (Fig. 24.8).\n- **Tampar o furo com metilmetacrilato** para limitar o hematoma, **com o mínimo necessário**, porque o excesso empurra o tumor ao longo do osso.\n- **Soltar o garrote e fazer hemostasia meticulosa**, porque o hematoma seria contaminado.\n- **O dreno, se usado, sai em linha com a incisão**, para ser ressecado em bloco (Fig. 24.7G).\n- **Fechar em camadas, firme, sem pontos de retenção largos.**\n\n**Por que evitar o dreno quando possível.** O dreno cria um segundo trajeto pela pele e pelos tecidos, e esse trajeto, banhado no hematoma da biópsia, também fica contaminado e precisa sair em bloco com o tumor. Por isso o Campbell manda, **se o dreno for usado**, que ele saia **em linha com a incisão, perto dela**, para entrar na mesma elipse de ressecção (p. 897 e 898; Fig. 24.7G mostra o erro do dreno fora da linha). A melhor maneira de não precisar dele é a que o livro ensina: soltar o garrote, fazer hemostasia meticulosa e tampar o furo ósseo com um pouco de metilmetacrilato para limitar o hematoma.\n\n**Os erros da Figura 24.7 do Campbell** (p. 897), que resumem o que não fazer: biópsia que deixou um defeito irregular no osso e levou a **fratura patológica**; **incisão transversa**; trajeto de agulha contaminando o **tendão patelar**; trajeto colocado **posteriormente**, que seria muito difícil de ressecar em bloco se fosse sarcoma; **vários trajetos** contaminando o tendão do quadríceps; **dreno fora da linha da incisão**. Cada erro aumenta o volume de tecido que terá de sair com o tumor, e alguns podem custar o membro: no estudo de MANKIN, 4,5% das amputações foram desnecessárias.\n\n**Por que a biópsia é tão cobrada: MANKIN.** Em 1982, MANKIN relatou, nas biópsias de sarcomas, **18,2% de erros diagnósticos maiores, 10,3% de amostras não representativas ou ruins e 17,3% de complicações da ferida**; o tratamento mudou em 18,2%, com **amputações desnecessárias em 4,5%**. As complicações foram **três a cinco vezes mais frequentes** quando a biópsia foi feita na instituição de origem, e não por um membro da Musculoskeletal Tumor Society; dez anos depois, o estudo repetido deu números praticamente iguais. A recomendação: **encaminhar o paciente antes da biópsia à instituição do tratamento definitivo** (Campbell, cap. 24, p. 896).\n\n**Os tipos de biópsia** (Campbell, cap. 24, p. 898, Tabela 24.4). A **punção aspirativa por agulha fina** é barata e tem poucas complicações; **pode ter 90% de acurácia para dizer se é maligno**, mas menos para o tipo, porque só vê células; serve quando o diagnóstico é quase conhecido (metástase, infecção, linfonodo). A **agulha grossa (core)** preserva a arquitetura, com acurácia de **84% a 98%** nas séries ambulatoriais (numa série de 252: 97% para maligno ou não; 81% para o diagnóstico e o grau). **A biópsia aberta é o padrão-ouro**: mais complicações, mas menos erro de amostragem e mais tecido. **O definitivo só pode ser feito no mesmo ato se a congelação confirmar o diagnóstico clínico e radiográfico** (curetagem do TCG, fixação profilática da metástase); **qualquer célula atípica sugestiva de sarcoma adia o definitivo** para o laudo final. A **ressecção primária** (biópsia excisional) vale para: **massa subcutânea menor que 3 cm** pouco suspeita; lesão profunda ou grande **só se a RM for diagnóstica de benignidade, como o lipoma**; **lesões ósseas benignas de radiografia característica, como o osteoma osteoide e o osteocondroma**; e **lesão dolorosa num osso dispensável (fíbula proximal, ulna distal)**, contida na cortical, que seria ressecada de qualquer forma (Fig. 24.9).\n\n**O que a banca quis testar.** Se o candidato sabe que a incisão é longitudinal e que o dreno é evitado, ou, se usado, sai em linha com a incisão.\n\n> **Na prova:** biópsia = LONGITUDINAL; dreno de preferência NÃO; se usar, EM LINHA e perto da incisão.",
@@ -3102,20 +3157,20 @@
   "conferido": false
  },
  "tumores-0297": {
-  "conceito": "**O que as imagens mostram.** A radiografia tem massa na região do púbis e do ramo isquiopúbico direitos com **calcificações em anéis e arcos**, a marca da matriz condroide. A ressonância coronal em T1 mostra massa volumosa, lobulada e bem delimitada, deslocando estruturas pélvicas, e a axial em T2 mostra lesão **muito hiperintensa e lobulada**, com septos, o sinal da cartilagem hialina, rica em água. A histologia tem condrócitos atípicos em lacunas dentro de matriz hialina.\n\n**Tudo converge para o condrossarcoma.** Um homem de 78 anos, crescimento lento e progressivo, topografia pélvica, que é a sede mais comum, matriz condroide na radiografia, T2 lobulado na ressonância e cartilagem na lâmina. Como o condrossarcoma não responde a quimioterapia nem a radioterapia, o tratamento é a **ressecção com margem ampla**; o grau histológico, de I a III, guia o prognóstico, e o condrossarcoma pélvico é operado mesmo quando de baixo grau.\n\n**Na prova:** idoso, pelve, anéis e arcos e T2 lobulado brilhante é **condrossarcoma**.",
-  "correta": "**Condrossarcoma.** Idade, pelve, matriz condroide e T2 lobulado convergem.",
+  "conceito": "O quadro é de um idoso de 78 anos com massa grande e lenta na região inguinal. A localização engana: a massa parece de partes moles, mas os exames mostram o osso de origem. A combinação de idade avançada, raiz do membro, evolução arrastada e matriz calcificada é o retrato do condrossarcoma convencional, e o Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 977 (figura 29.8), ilustra a mesma cena: homem de 78 anos com grande tumor do **púbis**, extensão para partes moles e **calcificação puntiforme**.\n\n**A imagem.** Quatro painéis. No **A**, a radiografia da bacia mostra, na região do púbis e do ramo à direita, uma área de calcificação granular e irregular no osso. No **B**, a RM coronal em T1 evidencia, junto ao púbis direito, uma grande massa oval de partes moles com sinal heterogêneo e focos escuros de calcificação. No **C**, o corte axial com supressão de gordura mostra uma massa lobulada de sinal muito alto, característico de matriz cartilaginosa rica em água. O **D**, a lâmina, mostra lóbulos de cartilagem hialina com condrócitos atípicos em lacunas.\n\n**Por que isso fecha o diagnóstico.** O tumor fabrica **cartilagem**: calcifica em pontos e anéis, é hiperintenso em T2, tem células em lacunas e cresce devagar por anos. Pelve é local clássico (Campbell, p. 975). A massa de partes moles indica malignidade, porque o encondroma benigno nunca a tem (cap. 27, p. 928).\n\n**Contra as outras.** Lipossarcoma não calcifica assim e não nasce do osso; o osteossarcoma produz osteoide, e a lâmina é de cartilagem; a ossificação heterotópica tem calcificação periférica madura e não é massa progressiva de 78 anos.\n\nO caso está na seção \"O caso típico: idoso com massa pélvica de crescimento lento\" do resumo.",
+  "correta": "**C) Condrossarcoma.** Massa grande e lenta no púbis de um idoso, com calcificação puntiforme, sinal alto em T2 e cartilagem na lâmina, como a figura 29.8 do Campbell.",
   "incorretas": {
-   "A": "**Sem gordura.** O lipossarcoma é de partes moles, com gordura ou lipoblastos, não matriz condroide calcificada.",
-   "B": "**Idade e matriz.** O osteossarcoma é raro nessa idade, exceto o secundário, e exige osteoide maligno.",
-   "D": "**Maturação zonal.** A ossificação heterotópica tem osso maduro na periferia e história de trauma ou lesão neurológica."
+   "A": "**Lipossarcoma** seria tumor de partes moles gordurosas, sem matriz calcificada nascendo do osso; a imagem mostra o osso comprometido e a lâmina é de cartilagem.",
+   "B": "**Osteossarcoma** é raro aos 78 anos e fabrica osteoide; a lâmina mostra cartilagem hialina, e a presença de osteoide, mesmo pouca, é o que mudaria o nome.",
+   "D": "**Ossificação heterotópica** gera osso maduro em partes moles, geralmente após trauma ou cirurgia, e não uma massa progressiva com cartilagem atípica na histologia."
   },
   "referencias": [
-   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
-   "Douis H, Saifuddin A. Imaging of cartilaginous bone tumours. Skeletal Radiol. 2013;42:611-626."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975 e 977 (figura 29.8)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 928",
+   "Resumo OrtoQuestões: Condrossarcoma"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0298": {
   "conceito": "**O que as imagens mostram.** As radiografias do fêmur proximal têm múltiplas áreas **líticas** no colo, nos trocânteres e na diáfise, **sem esclerose** nem reação periosteal. A tomografia mostra lesões líticas em **saca-bocado** na cabeça, no colo e na região trocantérica, com adelgaçamento endosteal.\n\n**A pista decisiva** é ter lesões líticas visíveis na radiografia e na tomografia com **cintilografia normal**, a dissociação clássica do **mieloma**: o plasmócito ativa osteoclastos e inibe osteoblastos, e sem neoformação óssea o radiofármaco não se fixa. O resto do quadro fecha o diagnóstico: 61 anos, dor óssea crônica, **anemia** e **VHS elevada**, próprios de uma discrasia plasmocitária. Completa-se com eletroforese e imunofixação, cadeias leves livres, cálcio e creatinina (os critérios CRAB), e o estadiamento se faz com tomografia de baixa dose de corpo inteiro, ressonância ou PET-CT, nunca com cintilografia.\n\n**Na prova:** lesões líticas múltiplas, anemia, VHS alta e **cintilografia normal** é mieloma.",
@@ -3291,19 +3346,21 @@
   "formato": "corrido"
  },
  "tumores-0311": {
-  "conceito": "**A deformidade de Bessel-Hagen** é a do antebraço na **osteocondromatose múltipla**. Os osteocondromas da ulna distal freiam seu crescimento, e a **ulna fica hipoplásica**; o rádio continua crescendo e se **encurva**, com inclinação da superfície articular, translocação ulnar do carpo e, em parte dos casos, luxação da cabeça do rádio. O resultado é desvio do punho e limitação da prono-supinação, uma das principais indicações cirúrgicas da doença, tratada com ressecção das lesões, hemiepifisiodese radial, alongamento ulnar ou osteotomia.\n\n**Para não confundir.** A deformidade de **Madelung** também deixa o punho torto, mas vem da parada da fise distal do rádio, do lado ulnar e palmar, não de exostoses na ulna. **Ollier** é a encondromatose, de lesões intramedulares. **Sauvé-Kapandji** é uma cirurgia da radioulnar distal, e não uma deformidade.\n\n**Na prova:** ulna curta e rádio encurvado na exostose múltipla é **Bessel-Hagen**.",
-  "correta": "**Bessel-Hagen.** É a deformidade do antebraço da osteocondromatose múltipla.",
+  "conceito": "O desenho do antebraço descrito é o da exostose múltipla hereditária: **ulna hipoplásica** e **rádio encurvado**. O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos)) dá a esse conjunto o nome de **deformidade de BESSEL-HAGEN**: ulna de extremidade distal afilada, rádio arqueado, cabeça do rádio luxada posterolateralmente em grau variável e desvio ulnar do punho. O antebraço está envolvido em cerca de 85% dos pacientes.\n\n**O mecanismo.** O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1023 aprox., explica que a extremidade distal da ulna costuma ser mais atingida que a do rádio, a ulna fica curta e o rádio se arqueia para acompanhá-la; a luxação da cabeça do rádio associa-se à variância ulnar negativa. É uma doença de tubulação anormal das metáfises, com a base genética em EXT1 ou EXT2, de herança autossômica dominante (Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 931).\n\n**Os epônimos errados.** OLLIER é o nome da encondromatose, doença de lesões centrais e não de exostoses. MADELUNG e SAUVÉ-KAPANDJI não aparecem nos livros conferidos ligados à exostose múltipla.\n\n**Para fixar.** Dois nomes em duas doenças múltiplas: OLLIER para encondromas, BESSEL-HAGEN para o antebraço dos osteocondromas. A transformação maligna, rara nesse grupo, tem a ver com a pelve e a cintura escapular.\n\nO antebraço está na seção \"A exostose múltipla hereditária e o antebraço\" do resumo.",
+  "correta": "**C) BESSEL-HAGEN.** É o epônimo do antebraço da exostose múltipla hereditária, com ulna hipoplásica, rádio encurvado e desvio ulnar do punho.",
   "incorretas": {
-   "A": "**Outra doença.** Ollier é encondromatose, de lesões intramedulares.",
-   "B": "**Fise do rádio.** Madelung vem da parada da fise distal do rádio, não de exostoses na ulna.",
-   "D": "**É cirurgia.** Sauvé-Kapandji é técnica para a articulação radioulnar distal."
+   "A": "**OLLIER** designa a encondromatose múltipla, doença de lesões centrais da medular; o enunciado fala de osteocondromatose.",
+   "B": "**MADELUNG** lembra a deformidade do punho, mas não é o nome dado nos livros conferidos ao antebraço da exostose múltipla.",
+   "D": "**SAUVÉ-KAPANDJI** não aparece nos livros conferidos como deformidade da exostose múltipla."
   },
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 3.4"
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1023 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Benign Bone Tumors), p. 931",
+   "Resumo OrtoQuestões: Condrossarcoma"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0312": {
   "conceito": "**Os critérios atuais (IMWG)** para mieloma exigem plasmocitose clonal na medula de **10% ou mais**, ou plasmocitoma comprovado por biópsia, **mais** pelo menos um evento definidor. Os eventos clássicos formam o **CRAB**: **hipercalcemia**, insuficiência renal, anemia e lesões ósseas líticas. Somam-se três biomarcadores que definem mieloma mesmo sem CRAB: plasmocitose medular de 60% ou mais, relação de cadeias leves livres envolvida sobre não envolvida de 100 ou mais e mais de uma lesão focal na ressonância.\n\n**O que é real, mas não é critério.** Infecções recorrentes, pela hipogamaglobulinemia funcional; sintomas neurológicos, por compressão medular, radiculopatia ou neuropatia amiloide; e perda de peso, sintoma constitucional inespecífico. Nos critérios antigos de Durie-Salmon, os maiores eram plasmocitoma na biópsia, plasmocitose medular alta e pico monoclonal; entre as opções desta questão, o que tem valor diagnóstico formal é a hipercalcemia.\n\n**Na prova:** entre as opções, o critério é a **hipercalcemia**, o C do CRAB.",
@@ -3321,21 +3378,20 @@
   "formato": "corrido"
  },
  "tumores-0313": {
-  "conceito": "**O que as imagens mostram.** A radiografia e a tomografia têm massa com **calcificações condroides** no púbis e no ísquio direitos; a ressonância mostra lesão volumosa, lobulada e muito brilhante em T2, de cartilagem; a peça é a ressecção em bloco; e a radiografia pós-operatória mostra a falta do **arco anterior** direito, com os ramos púbico e isquiático removidos e o **acetábulo preservado**.\n\n**A classificação das ressecções pélvicas** de Enneking e Dunham tem o **tipo I**, ilíaco, o **tipo II**, periacetabular, o **tipo III**, **púbis e ísquio**, e o tipo IV, acrescentado depois, com extensão ao sacro; as combinações se descrevem pela soma, como I+II ou II+III. A ressecção tipo III costuma dispensar reconstrução, porque o anel posterior e o acetábulo sustentam a carga; as que retiram o acetábulo exigem reconstrução ou aceitam um quadril instável. No condrossarcoma, a margem ampla é a única arma.\n\n**Na prova:** ressecção de **púbis e ísquio é tipo III**; acetábulo é II; ilíaco é I.",
-  "correta": "**III.** Foram retirados púbis e ísquio, com o acetábulo preservado.",
+  "conceito": "O painel mostra um condrossarcoma pélvico em paciente de 79 anos e pergunta que ressecção foi feita. A numeração do Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors) (p. 903 a 905) é simples: tipo **I** é a ilíaca, tipo **II** é a periacetabular, tipo **III** é a obturatória, ou seja, **púbis e ísquio**, e tipo **IV** é a sacral. Combinações somam os números, e o sufixo H indica que a cabeça femoral sai junto.\n\n**A imagem.** Radiografia da bacia, RM coronal e axial e TC mostram, no lado direito, uma grande massa lobulada junto ao púbis e ao ramo isquiopúbico, com calcificações densas em pontos e arcos na TC e sinal muito alto nas sequências líquidas. A foto operatória mostra o tumor exposto com margem de partes moles, e a radiografia final da bacia (F) mostra a região do púbis e do ísquio ressecada, mantidos o acetábulo e o anel posterior.\n\n**Por que tipo III.** A massa sai do púbis (o caso clássico do Campbell, cap. 29, p. 977, é o mesmo: homem de 78 anos com tumor do púbis). Se a ressecção retira púbis e ísquio, é a obturatória. E esse tipo é o de reconstrução mais simples: o púbis não suporta carga, e as articulações sacroilíacas mantêm a estabilidade.\n\n**Erro comum.** Chamar a ressecção do púbis de tipo II, que é a que envolve o acetábulo e exige artrodese, aloenxerto-prótese ou prótese em sela.\n\nA classificação está na seção \"Ressecções pélvicas\" do resumo.",
+  "correta": "**C) III.** O tipo III é a ressecção obturatória (púbis e ísquio), que não exige reconstrução porque o púbis não suporta carga.",
   "incorretas": {
-   "A": "**Ilíaco.** O tipo I remove a asa ilíaca, não o arco anterior.",
-   "B": "**Acetábulo.** O tipo II é periacetabular, e o acetábulo está preservado na imagem.",
-   "D": "**Sacro.** O tipo IV envolve o sacro."
+   "A": "**Tipo I** é a ressecção do osso ilíaco; não exige reconstrução, e a lesão da imagem é púbica.",
+   "B": "**Tipo II** é a periacetabular, que sacrifica a articulação do quadril e pede artrodese iliofemoral ou isquiofemoral, aloenxerto-prótese ou prótese em sela.",
+   "D": "**Tipo IV** é a ressecção sacral, localização que não corresponde ao tumor do púbis da figura."
   },
   "referencias": [
-   "Enneking WF, Dunham WK. Resection and reconstruction for primary neoplasms involving the innominate bone. J Bone Joint Surg Am. 1978;60:731-746.",
-   "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999.",
-   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 26"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), p. 903 a 905",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 977",
+   "Resumo OrtoQuestões: Condrossarcoma"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0314": {
   "conceito": "**O que é.** A hiperfosfatasia idiopática, também chamada **Paget juvenil**, é uma displasia óssea **autossômica recessiva** por perda de função do gene TNFRSF11B, que codifica a **osteoprotegerina**. A osteoprotegerina é o receptor-isca que sequestra o **RANKL** e freia os osteoclastos; sem ela, o RANKL age sem oposição, e o remodelamento fica **acelerado e desorganizado**, o mesmo mecanismo da **doença de Paget**.\n\n**O quadro.** Fosfatase alcalina muito elevada, ossos longos alargados, encurvados e frágeis, com fraturas de repetição, crânio alargado, surdez, dor óssea e baixa estatura. Difere do Paget do adulto por começar na primeira infância e ter distribuição generalizada. O tratamento com **bisfosfonatos** repõe, farmacologicamente, o freio osteoclástico que a genética retirou.\n\n**Na prova:** hiperfosfatasia idiopática é o **Paget juvenil**, por falta de osteoprotegerina.",
@@ -3437,19 +3493,21 @@
   "conferido": false
  },
  "tumores-0320": {
-  "conceito": "**O problema do condrossarcoma é local.** Depois da ressecção, a complicação mais frequente é a **recidiva local**. O condrossarcoma não responde a quimioterapia nem a radioterapia convencionais, e a única arma é a margem cirúrgica; qualquer contaminação, margem estreita ou tumor residual volta a crescer. O risco é maior na **pelve** e no esqueleto axial, onde a margem ampla é mais difícil, e após curetagem de lesões que se revelam de grau maior do que se pensava. A recidiva também pode vir com grau mais alto que o tumor original.\n\n**E as metástases?** A **pulmonar** acontece sobretudo nos tumores de alto grau e no condrossarcoma desdiferenciado, mas é menos frequente que a recidiva no conjunto. Metástase hepática é rara, e a metástase saltatória, a skip, é característica do osteossarcoma.\n\n**Na prova:** a complicação mais comum após ressecar um condrossarcoma é a **recidiva local**.",
-  "correta": "**Recidiva local.** Sem resposta a quimio e radioterapia, tudo depende da margem.",
+  "conceito": "A pergunta é pelo que mais acontece depois que o cirurgião retira o condrossarcoma, e a resposta é a **recidiva local**. O Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 978, explica que a cartilagem é relativamente avascular, as células sobrevivem facilmente ao transplante e a recidiva local após contaminação intraoperatória é alta. O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)) diz que as células se implantam nas partes moles e recidivam com frequência, porque se nutrem por embebição.\n\n**Os números.** Mesmo depois de ressecção ampla, a recidiva local fica abaixo de 10% e se trata com nova ressecção ampla ou amputação. Na mão, com curetagem, chega a 38%, contra 7% com ressecção em bloco. Uma parte significativa das recidivas tem grau histológico maior que o do tumor original.\n\n**E a metástase?** Metástases pulmonares existem e podem surgir anos ou décadas depois, e devem ser ressecadas quando possível, mas a pergunta é pela complicação mais frequente, que é a local. Metástase hepática e saltatória não aparecem na história natural descrita nas fontes.\n\n**Consequências práticas.** A biologia explica por que se prefere a ressecção ampla, por que em osso dispensável pode-se ressecar sem biópsia prévia e por que a quimioterapia e a radioterapia não resolvem. O seguimento é longo, com imagem do local e do tórax.\n\nA recidiva está na seção \"Por que recidiva: a cartilagem avascular\" do resumo.",
+  "correta": "**A) recidiva local.** É o fracasso típico do tumor, por causa da cartilagem avascular, cujas células sobrevivem e se implantam no campo operatório.",
   "incorretas": {
-   "B": "**Rara.** Metástase hepática é incomum no condrossarcoma.",
-   "C": "**Do osteossarcoma.** A metástase saltatória é característica do osteossarcoma.",
-   "D": "**Menos frequente.** A metástase pulmonar ocorre nos de alto grau, mas menos que a recidiva."
+   "B": "**Metástase hepática** não faz parte da história natural descrita nas fontes; a metástase do condrossarcoma é pulmonar.",
+   "C": "**Metástase saltatória** não está entre as complicações que os livros descrevem depois da ressecção do condrossarcoma.",
+   "D": "**Metástase pulmonar** é o principal sítio à distância e pode aparecer décadas depois, mas é menos frequente que a recidiva local."
   },
   "referencias": [
-   "Canale & Beaty: Campbell’s Operative Orthopaedics, 10th Ed., p. 835 (referência indicada na prova TARO 2013, questão 26)"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 978 e 979",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (tumores da mão), p. 3587 e 3588 aprox.",
+   "Resumo OrtoQuestões: Condrossarcoma"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0321": {
   "conceito": "**A célula de Langerhans.** O granuloma eosinofílico, forma localizada da histiocitose de células de Langerhans, tem como marca a proliferação dessas células: histiócitos de núcleo claro, **reniforme** ou em grão de café, com fenda, e citoplasma com os **grânulos de Birbeck**, estruturas em raquete vistas à microscopia eletrônica, próximas ao núcleo. Na imuno-histoquímica são positivas para **CD1a**, **langerina (CD207)** e S100. Em volta, muitos **eosinófilos**, que dão nome à lesão, e células gigantes ocasionais.\n\n**O que não caracteriza.** A atividade mitótica é baixa; as células gigantes podem existir, mas não definem a lesão; e o infiltrado é de eosinófilos, não de neutrófilos. Clinicamente, é lesão lítica em saca-bocado de criança, no crânio, nas costelas, na coluna (vértebra plana) e nos ossos longos, muitas vezes com regressão espontânea.\n\n**Na prova:** granuloma eosinofílico tem **grânulos de Birbeck** perto do núcleo, com CD1a e langerina.",
@@ -3575,19 +3633,21 @@
   "conferido": false
  },
  "tumores-0329": {
-  "conceito": "**Condrossarcoma secundário e as doenças predisponentes.** O condrossarcoma secundário nasce de uma lesão cartilaginosa benigna preexistente: um **encondroma** (condrossarcoma central secundário) ou a capa cartilaginosa de um **osteocondroma** (condrossarcoma periférico secundário). O risco de transformação varia muito conforme a doença de base.\n\n**Risco de transformação maligna.**\n\n| Condição | Risco aproximado |\n|---|---|\n| Osteocondroma solitário | Menos de 1% |\n| Osteocondromatose múltipla hereditária | Cerca de 1% a 5% (alguns relatam mais) |\n| Encondroma solitário | Muito baixo |\n| Doença de Ollier (encondromatose múltipla) | Alto, em torno de 25% a 40% ou mais |\n| **Síndrome de Maffucci** (encondromatose com hemangiomas) | **O mais alto**, além de risco de tumores viscerais |\n\n**Ollier e Maffucci.** Ambas têm múltiplos encondromas, frequentemente com mutações em **IDH1 ou IDH2**. Na Maffucci, somam-se **hemangiomas** de partes moles (com flebólitos visíveis na radiografia). A literatura clássica, e a referência adotada, atribui à **Maffucci o maior risco** de condrossarcoma; séries multicêntricas (Verdegaal e colaboradores) mostram risco alto e semelhante nas duas, com Maffucci também sujeita a neoplasias não ósseas (glioma, tumores de ovário, pâncreas).\n\n**Sinais de transformação.**\n- Dor sem fratura em lesão antes indolor.\n- Crescimento após a maturidade esquelética.\n- Capa cartilaginosa do osteocondroma **maior que 2 cm** (adulto) na ressonância.\n- Em encondromas: erosão endosteal profunda, ruptura cortical, massa de partes moles.\n\n**Seguimento.** Pacientes com encondromatose múltipla e osteocondromatose devem ser orientados e acompanhados, com investigação de qualquer lesão dolorosa ou em crescimento.\n\n> Condrossarcoma secundário: risco alto nas encondromatoses, maior na síndrome de Maffucci.",
-  "correta": "**B: na síndrome de MAFFUCCI (resposta pela bibliografia).** A encondromatose múltipla com hemangiomas é classicamente a condição com maior risco de condrossarcoma secundário, além de predispor a neoplasias viscerais.",
+  "conceito": "O enunciado é curto: em qual doença a incidência de condrossarcoma secundário é maior? A resposta que as fontes sustentam é a **síndrome de MAFFUCCI**. No Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975, o OLLIER tem cerca de 25% de malignidade até os 40 anos, e o MAFFUCCI tem incidência que pode ser ainda maior. O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1028 aprox., diz que o risco é semelhante ou maior e traz a expectativa de quase 100% relatada por SCHWARTZ.\n\n**A escala de riscos.** Para o paciente individual, a ordem é MAFFUCCI maior ou igual a OLLIER, depois exostose múltipla (cerca de 5% ao longo da vida), depois osteocondroma solitário (cerca de 1%). O condroblastoma só aparece no Campbell como associação rara, de modo que não compete.\n\n**Por que a osteocondromatose múltipla seduz.** O Campbell diz que os secundários ocorrem mais no contexto de encondromas múltiplos e exostoses múltiplas, e a exostose é muito mais prevalente. Mas a questão pergunta incidência de secundário dentro da doença, e esse risco é do paciente, não do total de casos do consultório.\n\n**Como ler essa pergunta.** \"Mais frequente\" pode significar contagem absoluta ou risco por paciente. As bancas de ortopedia costumam querer o risco, e a bibliografia citada pela própria questão (Campbell) aponta o MAFFUCCI.\n\nA comparação está na seção \"Qual doença tem o secundário mais frequente\" do resumo.",
+  "correta": "**B) na síndrome de MAFFUCCI.** É a doença com maior risco de condrossarcoma secundário, igual ou acima do OLLIER (cerca de 25% até os 40 anos).",
   "incorretas": {
-   "A": "**A doença de Ollier** tem risco alto de transformação, mas a referência atribui o maior risco à síndrome de Maffucci; séries recentes mostram riscos próximos nas duas.",
-   "C": "**A osteocondromatose múltipla** tem risco bem menor (em torno de 1% a 5%) que as encondromatoses.",
-   "D": "**O condroblastoma** é tumor benigno epifisário; a transformação em condrossarcoma é excepcional."
+   "A": "**Na doença de OLLIER** tem risco alto, mas o Campbell diz que no MAFFUCCI a incidência pode ser ainda maior.",
+   "C": "**Na osteocondromatose múltipla** gera muitos casos pela prevalência, porém o risco individual é de cerca de 5%, bem menor que o das encondromatoses.",
+   "D": "**No condroblastoma** é associação rara citada pelo Campbell, sem peso comparável ao das doenças cartilaginosas múltiplas."
   },
-  "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 830-834.",
-   "Verdegaal SH, Bovée JV, Pansuriya TC, et al. Incidence, predictive factors, and prognosis of chondrosarcoma in patients with Ollier disease and Maffucci syndrome: an international multicenter study of 161 patients. Oncologist. 2011;16(12):1771-1779."
-  ],
   "provavel": "B",
-  "geradoEm": "2026-10-05",
+  "alerta": "Esta questão está sem gabarito oficial no acervo; o provável (B) coincide com o gabarito indicado pela bibliografia e é o que o Campbell (cap. 29, p. 975) e o Tachdjian (cap. 25) sustentam: o risco no MAFFUCCI é igual ou maior que no OLLIER.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 975 e 976",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Benign Musculoskeletal Tumors), p. 1028 aprox.",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0330": {
@@ -3639,19 +3699,22 @@
   "conferido": false
  },
  "tumores-0333": {
-  "conceito": "**Condrossarcoma e o padrão de calcificação da matriz.** O condrossarcoma é o tumor maligno que produz matriz cartilaginosa. É o segundo sarcoma ósseo primário mais comum em adultos, atingindo sobretudo pelve, fêmur proximal, úmero proximal e costelas, entre os 40 e 70 anos.\n\n**Por que a cartilagem calcifica em anéis.** O tecido cartilaginoso tumoral cresce em **lóbulos**. A calcificação ocorre na periferia desses lóbulos, desenhando na radiografia **anéis e arcos** (rings and arcs), além de pontos e flocos. Esse aspecto é a assinatura radiográfica de matriz condroide, presente também no encondroma.\n\n**Grau histológico e imagem.**\n\n| Grau | Diferenciação | Imagem |\n|---|---|---|\n| Baixo (1) | Bem diferenciado, lobular | Calcificação abundante em anéis e arcos, festonamento endosteal |\n| Intermediário (2) | Moderado | Menos calcificação, áreas líticas |\n| Alto (3) e desdiferenciado | Pouco diferenciado | Calcificação escassa e amorfa, destruição cortical, massa de partes moles |\n\n**Atenção ao enunciado.** \"Baixo grau de diferenciação\" pode ser lido como \"pouco diferenciado\" (alto grau). A resposta sustentada pela bibliografia, porém, trata do tumor de **baixo grau** (bem diferenciado), em que o padrão anelar é típico; nos tumores pouco diferenciados a calcificação se torna amorfa e escassa.\n\n**Sinais de malignidade em lesão cartilaginosa.** Festonamento endosteal maior que dois terços da cortical, espessamento cortical, reação periosteal, massa de partes moles, dor sem fratura e lesão maior que 5 cm em osso longo sugerem condrossarcoma e não encondroma.\n\n**Tratamento.** Ressecção com margens amplas; o tumor é resistente a quimioterapia e radioterapia convencionais (exceto o mesenquimal e o desdiferenciado, que recebem quimioterapia).\n\n> Anéis e arcos indicam matriz cartilaginosa bem diferenciada.",
-  "correta": "**A: anelar (resposta pela bibliografia).** No condrossarcoma de baixo grau, a calcificação desenha anéis e arcos ao redor dos lóbulos de cartilagem, padrão característico de matriz condroide bem diferenciada.",
+  "conceito": "A pergunta é sobre a calcificação, o sinal radiográfico mais característico do tumor cartilaginoso. O condrossarcoma produz matriz de cartilagem, e a matriz calcifica de maneiras reconhecíveis. O Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 976, descreve lesão medular com calcificação irregular, puntiforme, em pipoca ou em vírgula; o SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)) descreve calcificações puntiformes, em arcos ou em **anéis**. A bibliografia da própria questão indica o padrão anelar.\n\n**Por que o anel.** Cada lóbulo de cartilagem calcifica na periferia, e o contorno do lóbulo aparece como um arco ou um anel. Quanto mais matriz o tumor conserva, o que ocorre nos graus baixos, mais organizado esse padrão se mantém. Alto grau e subtipo desdiferenciado acrescentam áreas líticas agressivas.\n\n**O limite da questão.** Os livros não separam padrões de calcificação por grau, e o enunciado, ao falar em \"baixo grau de diferenciação\", é ambíguo. O que sustenta a resposta é o padrão da matriz cartilaginosa, e não uma regra por grau.\n\n**As alternativas.** Amorfo descreve perda de organização; sombreado e salpicado não são descrições de matriz cartilaginosa nesses livros. O salpicado lembra o puntiforme, mas a bibliografia da questão fixa o anelar.\n\nO padrão está na seção \"O padrão de calcificação e o grau\" do resumo.",
+  "correta": "**A) anelar.** É o padrão de calcificação da matriz cartilaginosa em arcos e anéis, que a bibliografia da questão indica.",
   "incorretas": {
-   "B": "**Sombreado** não descreve matriz condroide. A matriz osteoide do osteossarcoma tende a ser algodonosa, em nuvem, e a do tecido fibroso, em vidro fosco.",
-   "C": "**Amorfo** é o padrão dos tumores pouco diferenciados (alto grau), nos quais a calcificação é escassa e irregular. É a alternativa que atrai quem lê \"baixo grau de diferenciação\" como alto grau.",
-   "D": "**Salpicado** (pontilhado) também aparece em lesões cartilaginosas, sobretudo no encondroma, mas a referência adotada destaca o padrão anelar como típico do tumor bem diferenciado."
+   "B": "**Sombreado** não descreve matriz cartilaginosa nos livros conferidos; é termo vago, sem referência radiográfica.",
+   "C": "**Amorfo** descreve a perda de organização da matriz, e não o padrão em lóbulos do tumor cartilaginoso de baixo grau.",
+   "D": "**Salpicado** aproxima-se do puntiforme que o Campbell descreve, mas o padrão que a bibliografia da questão fixa é o anelar."
   },
-  "referencias": [
-   "Tratado de Ortopedia - SBOT. Roca. 2007. p. 599",
-   "Murphey MD, Walker EA, Wilson AJ, Kransdorf MJ, Temple HT, Gannon FH. From the archives of the AFIP: imaging of primary chondrosarcoma: radiologic-pathologic correlation. Radiographics. 2003;23(5):1245-1278."
-  ],
   "provavel": "A",
-  "geradoEm": "2026-10-05",
+  "alerta": "Esta questão está sem gabarito oficial no acervo; o provável (A) segue o gabarito indicado pela bibliografia. Os livros conferidos não separam o padrão de calcificação por grau: o SIZÍNIO HEBERT cita calcificações puntiformes, em arcos ou anéis, e o Campbell, puntiformes, em pipoca ou em vírgula. O enunciado (\"baixo grau de diferenciação\") é ambíguo.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 976",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors), p. 1072",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0334": {
@@ -3931,17 +3994,20 @@
   "conferido": false
  },
  "tumores-0353": {
+  "conceito": "A frase para julgar é: \"a característica avascular do tecido cartilaginoso favorece a recidiva local\". É uma afirmação certa. O Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 978, diz que, como a cartilagem é **relativamente avascular**, as células tumorais **sobrevivem facilmente ao transplante**, e a recidiva local depois de contaminação do campo operatório é alta. O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)) completa com o mecanismo: as células se implantam nas partes moles e causam recidiva local frequente, porque a cartilagem se nutre por **embebição**.\n\n**A leitura.** Pode parecer contraintuitivo, porque tumores vascularizados costumam sangrar e disseminar. Aqui o raciocínio é o oposto: um tecido que não depende de vasos é capaz de viver solto, sem rede vascular, em qualquer leito de partes moles em que caia durante a cirurgia.\n\n**O que se faz com isso.** Ressecção com margem ampla e sem violar o tumor; em osso dispensável, ressecção primária sem biópsia (o Campbell mostra a fíbula proximal de um paciente de 50 anos ressecada sem contaminar o nervo fibular comum); e cuidado para não romper a capa de um osteocondroma malignizado. Após margem ampla, a recidiva é menor que 10%.\n\n**A armadilha.** Achar que avascular significa tumor pouco agressivo localmente. Ele é lento e pouco quimiossensível, mas a recidiva por implantação é a sua marca.\n\nA explicação está na seção \"Por que recidiva: a cartilagem avascular\" do resumo.",
+  "correta": "**A) Certo.** O Campbell e o SIZÍNIO HEBERT associam a avascularidade da cartilagem à sobrevivência das células implantadas e à recidiva local.",
   "incorretas": {
-   "B": "**Errado seria ignorar a limitação terapêutica da cartilagem tumoral.** Ainda assim, uma ressecção com margens apropriadas pode controlar a doença; avascularidade não torna a recidiva inevitável."
+   "B": "**Errado** negaria a relação entre biologia e recidiva; as duas fontes afirmam que a cartilagem avascular, nutrida por embebição, permite que as células sobrevivam no campo e recidivem."
   },
-  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. A resposta provável \"Certo\" acompanha a explicação clássica sobre baixa vascularização da matriz cartilaginosa e dificuldade de terapias adjuvantes. A literatura clínica, porém, aponta grau, localização e qualidade das margens cirúrgicas como determinantes mais diretos da recidiva local; não está demonstrado que a avascularidade isoladamente a determine.",
-  "conceito": "**A doença e a matriz.** O condrossarcoma é uma neoplasia maligna produtora de matriz cartilaginosa. A cartilagem tem vascularização limitada, e muitos condrossarcomas convencionais respondem pouco à quimioterapia e à radioterapia convencionais. Por isso, o controle local depende principalmente da cirurgia adequada ao grau e ao sítio da lesão.\n\n**O que realmente prevê recidiva.** Células tumorais que permanecem após uma ressecção de margem insuficiente podem originar novo crescimento. Estudos clínicos associam recidiva especialmente a margens, grau histológico e localização, como a pelve. A avascularidade é uma explicação biológica tradicional para limitações terapêuticas, mas não substitui esses fatores medidos no paciente.\n\n**A decisão cirúrgica.** Lesões cartilaginosas de baixo grau em locais selecionados podem admitir abordagem intralesional criteriosa; tumores de maior grau ou com extensão desfavorável exigem ressecção oncológica apropriada. Biópsia e estadiamento devem ser planejados pela equipe que tratará a lesão, evitando contaminação de planos que precisariam ser preservados.",
-  "correta": "**Certo no raciocínio clássico, com ressalva.** A matriz cartilaginosa pouco vascularizada ajuda a entender a baixa eficácia de terapias sistêmicas em muitos casos, mas a recidiva após cirurgia se relaciona mais diretamente às margens e ao comportamento do tumor.",
-  "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 835."
-  ],
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "alerta": "Esta questão está sem gabarito oficial no acervo; o provável (A, Certo) coincide com o gabarito indicado pela bibliografia e é sustentado pelo Campbell (cap. 29, p. 978) e pelo SIZÍNIO HEBERT (cap. 30).",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 978",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), p. 877 aprox. e 878",
+   "Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)",
+   "Resumo OrtoQuestões: Condrossarcoma"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0354": {
