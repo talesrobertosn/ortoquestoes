@@ -58,6 +58,12 @@ try {
   assert.equal(m.proximaData({ id_usuario: 'x', plano: 'anual', status: 'falha_pagamento', meio: 'cartao', criada_em: dia(-30), fim_periodo: dia(-30) }, agora).rotulo, 'Tentou assinar em')
   assert.equal(s({ status: 'falha_pagamento', meio: 'cartao', ultima_cobranca_em: dia(-40) }).rotulo, 'Renovação recusada')
   assert.equal(s({ status: 'falha_pagamento', meio: 'cartao', ultima_cobranca_em: dia(-40) }).tom, 'ruim')
+  // Motivo da recusa em português (parte 36): conhecido, desconhecido e ausente.
+  assert.equal(m.motivoRecusa('cc_rejected_insufficient_amount').texto, 'Saldo ou limite insuficiente')
+  assert.match(m.motivoRecusa('cc_rejected_call_for_authorize').dica, /banco/)
+  assert.equal(m.motivoRecusa('cc_novo_codigo').texto, 'Recusado (cc_novo_codigo)')
+  assert.match(m.motivoRecusa(null).texto, /não registrado/)
+  assert.match(s({ status: 'falha_pagamento', meio: 'cartao', ultima_cobranca_em: dia(-40), motivo_falha: 'cc_rejected_high_risk' }).detalhe, /antifraude/)
 
   // Tipos de cobrança.
   assert.equal(m.rotuloTipoCobranca({ meio: 'pix', tipo: 'nova' }), 'Assinatura nova')

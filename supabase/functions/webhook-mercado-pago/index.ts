@@ -130,15 +130,37 @@ async function sincronizarPreapproval(idRecurso: string) {
   return statusMercadoPago
 }
 
+/**
+ * Anotações para o painel (parte 36, 02/11/2026), sempre à parte da cobrança: um PATCH separado que
+ * nunca lança erro. Sem as colunas novas no banco, o PATCH falha e o webhook segue igual a antes.
+ */
+async function anotarDono(idEvento: string, idUsuario: string | null) {
+  if (!idUsuario) return
+  await banco(`eventos_pagamento?provedor=eq.mercado_pago&id_evento=eq.${encodeURIComponent(idEvento)}&id_usuario=is.null`, {
+    method: 'PATCH', body: JSON.stringify({ id_usuario: idUsuario }),
+  }).catch(() => undefined)
+}
+/** Recusa grava o motivo do Mercado Pago (status_detail); cobrança aprovada limpa o motivo. */
+async function anotarMotivo(idAssinatura: string, status: string, detalhe: string | undefined) {
+  const corpo = status === 'rejected'
+    ? { motivo_falha: /^[a-z0-9_]{1,80}$/.test(detalhe ?? '') ? detalhe : 'sem_motivo', falha_em: new Date().toISOString() }
+    : status === 'approved' ? { motivo_falha: null, falha_em: null } : null
+  if (!corpo) return
+  await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idAssinatura)}`, { method: 'PATCH', body: JSON.stringify(corpo) }).catch(() => undefined)
+}
+
 async function aplicarCobranca(idAssinatura: string, pagamento: PagamentoMercadoPago, idEvento: string) {
   const atual = await assinaturaPorExterno(idAssinatura)
   if (!atual) throw new Error('assinatura_nao_encontrada')
+  // De quem é o aviso: anotado à parte e antes de tudo, para o painel ligar o aviso à pessoa mesmo se o resto falhar.
+  await anotarDono(idEvento, atual.id_usuario)
   const alteracao = alteracaoDaCobranca(String(pagamento.status ?? ''), pagamento, atual.status)
   if (!alteracao) return marcarEvento(idEvento, 'ignorado')
   const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idAssinatura)}`, {
     method: 'PATCH', body: JSON.stringify(alteracao),
   })
   if (!resposta.ok) throw new Error('atualizacao_cobranca_falhou')
+  await anotarMotivo(idAssinatura, String(pagamento.status ?? ''), pagamento.status_detail)
   await marcarEvento(idEvento, 'processado')
   await cartaDaCobranca(String(pagamento.status ?? ''), pagamento, atual).catch(() => undefined)
 }

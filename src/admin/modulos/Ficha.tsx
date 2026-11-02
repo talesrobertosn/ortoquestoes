@@ -5,7 +5,7 @@ import { chamarRpc } from '../../servicos/supabase'
 import { PLANOS, STATUS_EVENTO, TIPOS_EVENTO, acertoAposRevisao, acertoPorTentativa, acertoReal, nomeErro, porcentagem, rotuloOrigem, rotuloPagina } from '../../componentes/admin/formatos'
 import { perfilDaFicha, type EnvioHistorico } from '../../componentes/admin/modelosEmail'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, linkDoEvento, linkMercadoPago, reprocessarEvento, type EventoPagamento } from '../../componentes/admin/pagamentos'
-import { STATUS_PIX, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../../componentes/admin/rotulos'
+import { STATUS_PIX, motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../../componentes/admin/rotulos'
 import { PLANOS_RECENTE_DIAS, diasDesde } from '../../componentes/admin/sinais'
 import { CINCO_MIN, rpcInexistente, usarRpc } from '../../componentes/admin/usarRpc'
 import { usarPainel } from '../dados/painel'
@@ -47,7 +47,8 @@ interface FichaExtra {
 }
 interface AssinaturaDoUsuario {
   assinaturas: Array<{ id: string; plano: string; status: string; meio: 'pix' | 'cartao'; id_externo: string | null; inicio_periodo: string | null; fim_periodo: string | null; cancelar_ao_fim: boolean; cancelada_em: string | null
-    ultima_cobranca_id: string | null; ultima_cobranca_em: string | null; criada_em: string; atualizada_em: string; valor: number | null }>
+    ultima_cobranca_id: string | null; ultima_cobranca_em: string | null; criada_em: string; atualizada_em: string; valor: number | null
+    motivo_falha?: string | null; falha_em?: string | null }>
   pix: Array<{ id: string; plano: string; valor: number; status: string; pagamento_id: string | null; expira_em: string; criada_em: string; atualizada_em: string }>
   eventos: EventoPagamento[]
   conta_teste: boolean
@@ -317,17 +318,19 @@ function AbaAssinatura({ idUsuario, email, aoCarta }: { idUsuario: string; email
           {s.chave === 'recusado_ao_assinar' ? <dl className="a3-pares">
             <div><dt>Tentou assinar em</dt><dd>{dataHora(a.criada_em)}</dd></div>
             <div><dt>Cobrado</dt><dd>nada</dd></div>
+            <div><dt>Motivo da recusa</dt><dd>{motivoRecusa(a.motivo_falha).texto}</dd></div>
           </dl> : <dl className="a3-pares">
             <div><dt>Criada em</dt><dd>{data(a.criada_em)}</dd></div>
             <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em ? dataHora(a.ultima_cobranca_em) : '—'}</dd></div>
             <div><dt>{prox.rotulo}</dt><dd>{data(prox.valor)}</dd></div>
             {a.cancelada_em && <div><dt>Desligou a renovação em</dt><dd>{data(a.cancelada_em)}</dd></div>}
+            {a.status === 'falha_pagamento' && <div><dt>Motivo da recusa</dt><dd>{motivoRecusa(a.motivo_falha).texto}</dd></div>}
           </dl>}
           {s.detalhe && <span className="a3-mudo a3-pequeno">{s.detalhe}</span>}
           {(s.chave === 'recusado_ao_assinar' || s.chave === 'falha_pagamento') && <Faixa tom={s.chave === 'falha_pagamento' ? 'erro' : 'aviso'} titulo={s.chave === 'falha_pagamento' ? 'O que fazer' : 'Uma venda que quase fechou'}
             acao={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={aoCarta}><Icone nome="carta" tamanho={14} />Escrever uma carta</button>}>
             {s.chave === 'falha_pagamento' ? 'Avise com gentileza que o cartão não passou na renovação e ofereça trocar o cartão ou pagar no Pix.' : 'A pessoa quis assinar. Uma carta curta oferecendo o Pix ou outro cartão costuma resolver.'}
-            {' '}O motivo exato da recusa só aparece no Mercado Pago.
+            {' '}{a.motivo_falha ? `O que costuma resolver: ${motivoRecusa(a.motivo_falha).dica.toLowerCase()}` : 'O motivo exato aparece no Mercado Pago.'}
           </Faixa>}
           <details className="a3-detalhes-tecnicos"><summary>Detalhes técnicos</summary>
             <span className="a3-mudo a3-pequeno" style={{ fontFamily: 'var(--a3-mono)' }}>{a.meio === 'cartao' ? `assinatura ${a.id_externo ?? '—'}` : `pedido ${a.id_externo?.slice(4) ?? '—'}`}{a.ultima_cobranca_id ? ` · pagamento ${a.ultima_cobranca_id}` : ''} · atualizada {dataHora(a.atualizada_em)}</span>

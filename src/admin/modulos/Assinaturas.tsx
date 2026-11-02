@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react'
 import { contaDeTeste } from '../../componentes/admin/contasTeste'
 import { baixarCsv } from '../../componentes/admin/formatos'
 import { meioDe, precoDe, vigente } from '../../componentes/admin/receita'
-import { proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura, type Tom } from '../../componentes/admin/rotulos'
+import { motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura, type Tom } from '../../componentes/admin/rotulos'
 import { usarPainel, type LinhaAssinatura } from '../dados/painel'
 import { usarNav } from '../nav'
 import { defParte, type GrupoAssinatura } from '../rotas'
@@ -80,7 +80,7 @@ export default function Assinaturas() {
         </span>
       </span>
     </span> },
-    { id: 'situacao', titulo: 'Situação', rotuloCelular: 'Situação', ordem: a => situacaoAssinatura(a).rotulo, celula: a => { const s = situacaoAssinatura(a); return <span title={s.detalhe}><Selo tom={TOM[s.tom]}>{s.rotulo}</Selo></span> } },
+    { id: 'situacao', titulo: 'Situação', rotuloCelular: 'Situação', ordem: a => situacaoAssinatura(a).rotulo, celula: a => { const s = situacaoAssinatura(a); return <span title={s.detalhe} style={{ display: 'grid', gap: 3, justifyItems: 'start' }}><Selo tom={TOM[s.tom]}>{s.rotulo}</Selo>{a.status === 'falha_pagamento' && <span className="a3-sub">{motivoRecusa(a.motivo_falha).texto}</span>}</span> } },
     { id: 'plano', titulo: 'Plano', rotuloCelular: 'Plano', ordem: a => precoDe(a.plano)?.total ?? 0, celula: a => <span>{rotuloPlano(a.plano)} · {rotuloMeio(meioDe(a))}<span className="a3-sub">{precoDe(a.plano) ? reais(precoDe(a.plano)!.total) : '—'}{meioDe(a) === 'cartao' ? (a.cancelar_ao_fim ? ' · não renova' : ' · renova sozinho') : ' · compra avulsa'}</span></span> },
     { id: 'vigencia', titulo: 'Período pago', soLargo: true, ordem: a => a.fim_periodo ?? '', celula: a => <Vigencia a={a} /> },
     { id: 'desde', titulo: 'Desde', numero: true, rotuloCelular: 'Desde', ordem: a => inicioDe(a), celula: a => <span>{data(inicioDe(a))}<span className="a3-sub">{haQuanto(inicioDe(a))}</span></span> },

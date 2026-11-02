@@ -51,7 +51,7 @@ const assinaturas = [
   assinatura(7, 'mensal', 'cartao', 'cancelada', 15, { cancelar_ao_fim: true, cancelada_em: iso(agora - 30 * MIN) }),
   // Cartão recusado: ao assinar (nunca pagou) e na renovação (já tinha pago antes).
   assinatura(4, 'anual', 'cartao', 'falha_pagamento', 2, { ultima_cobranca_em: null }),
-  assinatura(8, 'mensal', 'cartao', 'falha_pagamento', 40, { ultima_cobranca_em: iso(agora - 35 * DIA), ultima_atualizacao: iso(agora - 5 * DIA) }),
+  assinatura(8, 'mensal', 'cartao', 'falha_pagamento', 40, { ultima_cobranca_em: iso(agora - 35 * DIA), ultima_atualizacao: iso(agora - 5 * DIA), motivo_falha: 'cc_rejected_insufficient_amount', falha_em: iso(agora - 5 * DIA) }),
 ]
 const precos = { mensal: 39.9, semestral: 199, anual: 349 }
 const cobrancasReais = assinaturas.filter(a => a.status !== 'pendente' && a.ultima_cobranca_em).map(a => ({ id_usuario: a.id_usuario, plano: a.plano, meio: a.meio, valor: precos[a.plano], em: a.ultima_cobranca_em, id_pagamento: String(1e9 + Math.floor(Math.random() * 1e6)), situacao: 'paga', usuario: a.usuario, nome: a.nome }))
@@ -69,7 +69,7 @@ export const rpcs = {
   listar_assinaturas_admin: () => assinaturas,
   assinatura_usuario_admin: ({ p_usuario }) => ({
     assinaturas: assinaturas.filter(a => a.id_usuario === p_usuario).map((a, i) => ({ id: `as-${i}`, plano: a.plano, status: a.status, meio: a.meio, id_externo: 'abc123', inicio_periodo: a.inicio_periodo, fim_periodo: a.fim_periodo,
-      cancelar_ao_fim: a.cancelar_ao_fim, cancelada_em: a.cancelada_em ?? null, ultima_cobranca_id: a.ultima_cobranca_em ? '999' : null, ultima_cobranca_em: a.ultima_cobranca_em, criada_em: a.criada_em, atualizada_em: a.ultima_atualizacao, valor: precos[a.plano] })),
+      cancelar_ao_fim: a.cancelar_ao_fim, cancelada_em: a.cancelada_em ?? null, ultima_cobranca_id: a.ultima_cobranca_em ? '999' : null, ultima_cobranca_em: a.ultima_cobranca_em, criada_em: a.criada_em, atualizada_em: a.ultima_atualizacao, valor: precos[a.plano], motivo_falha: a.motivo_falha ?? null, falha_em: a.falha_em ?? null })),
     pix: [], eventos: [], conta_teste: false,
   }),
   listar_eventos_pagamento_admin: () => eventos,
