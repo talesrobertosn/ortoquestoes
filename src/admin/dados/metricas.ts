@@ -12,14 +12,14 @@ import { cobrancas as cobrancasDe, meioDe, vigentesPorPessoa, type AssinaturaBas
  * Estado de qualidade de um número.
  * confirmado: registro persistido com fonte verificável (evento, cobrança gravada).
  * derivado: calculado de registros observados por fórmula explícita.
- * estimado: reconstruído por falta de registro histórico (renovação antiga do cartão, Pix sem valor gravado).
+ * estimado: estimado por falta de registro histórico (renovação antiga do cartão, Pix sem valor gravado).
  * previsao: futuro, com hipótese; nunca soma ao recebido.
  * incompleto: veio, mas cobre só parte do período ou da base (hoje em andamento, lista truncada).
  * indisponivel: a consulta falhou, falta permissão ou o dado é parcial; nunca vira zero.
  */
 export type Qualidade = 'confirmado' | 'derivado' | 'estimado' | 'previsao' | 'incompleto' | 'indisponivel'
 export const ROTULO_QUALIDADE: Record<Qualidade, string> = {
-  confirmado: 'Confirmado', derivado: 'Derivado', estimado: 'Reconstruído', previsao: 'Previsão', incompleto: 'Incompleto', indisponivel: 'Indisponível',
+  confirmado: 'Confirmado', derivado: 'Derivado', estimado: 'Estimado', previsao: 'Previsão', incompleto: 'Incompleto', indisponivel: 'Indisponível',
 }
 
 export type Unidade = 'pessoas' | 'eventos' | 'contas' | 'brl' | 'pct'
@@ -76,9 +76,9 @@ export const METRICAS = {
     latencia: 'Até o webhook do Mercado Pago chegar', comparavel: 'Sim, com os N dias anteriores', bom: 'sobe',
   },
   receitaReconstruida: {
-    nome: 'Receita reconstruída', pergunta: 'Quanto do período é inferido, por falta de registro?', unidade: 'brl',
+    nome: 'Receita estimada', pergunta: 'Quanto do período é inferido, por falta de registro?', unidade: 'brl',
     numerador: 'Renovações antigas do cartão e pagamentos sem cobrança gravada, pelo preço do plano', janela: FUSO,
-    fonte: 'receita.ts › cobrancas (estimada = true)', qualidade: 'estimado', testes: 'Excluídas', deduplicacao: 'Por cobrança reconstruída',
+    fonte: 'receita.ts › cobrancas (estimada = true)', qualidade: 'estimado', testes: 'Excluídas', deduplicacao: 'Por cobrança estimada',
     latencia: '—', comparavel: 'Só como ordem de grandeza; o extrato oficial é o do Mercado Pago', bom: 'sobe',
   },
   assinantes: {
@@ -170,7 +170,7 @@ export interface ReceitaPeriodo {
   renovacoes: number
   porMeio: { pix: number; cartao: number }
   porPlano: Array<{ plano: string; valor: number; quantidade: number }>
-  /** Um ponto por dia do período: confirmado e reconstruído separados (nunca somados num número só). */
+  /** Um ponto por dia do período: confirmado e estimado separados (nunca somados num número só). */
   porDia: Array<{ dia: string; confirmada: number; reconstruida: number }>
 }
 
@@ -184,7 +184,7 @@ export function janelas(dias: number, agora = Date.now()) {
 }
 
 /**
- * Receita do período separada por qualidade: confirmada (cobrança gravada) e reconstruída (inferida),
+ * Receita do período separada por qualidade: confirmada (cobrança gravada) e estimada (inferida),
  * a partir das mesmas cobranças que Receita › Resultados usa. Contas de teste já devem vir de fora.
  */
 export function receitaDoPeriodo(assinaturas: AssinaturaBase[], reais: CobrancaReal[] | null, dias: number, agora = Date.now()): ReceitaPeriodo {
@@ -240,9 +240,14 @@ export interface ItemAtencao {
   contagem: number
   /** ISO do evento mais recente ligado ao item (null quando a fonte não diz). */
   ultimoEm: string | null
-  destino: { aba: string; filtro?: string; vista?: string }
+  destino: { aba: string; filtro?: string; vista?: string; grupo?: string }
   acao: string
+  /** Chaves que "Resolvido" marca nos lidos de pagamento (só itens de pagamento). */
+  resolver?: string[]
 }
+
+/** Chave de "Resolvido" de uma assinatura recusada: muda se a assinatura mudar, e aí o alerta volta. */
+export const chaveFalha = (a: { id_usuario: string; ultima_atualizacao?: string | null; criada_em?: string | null }) => `falha:${a.id_usuario}:${a.ultima_atualizacao ?? a.criada_em ?? ''}`
 
 export interface EntradaAtencao {
   eventos: Array<{ id: number; status_processamento: string; recebido_em: string }> | null
@@ -271,11 +276,16 @@ export function filaDeAtencao(e: EntradaAtencao): ItemAtencao[] {
   }
   if (e.eventos) {
     const falhas = e.eventos.filter(ev => ev.status_processamento === 'erro' && !e.lidosPagamento.has(String(ev.id)))
-    if (falhas.length) itens.push({ id: 'processador', severidade: 'critica', grupo: 'tecnico', titulo: pl(falhas.length, 'aviso do processador com falha', 'avisos do processador com falha'), causa: 'O Mercado Pago avisou uma mudança que o site não conseguiu aplicar; a assinatura da pessoa pode estar errada.', contagem: falhas.length, ultimoEm: maisRecente(falhas.map(f => f.recebido_em)), destino: { aba: 'pagamentos' }, acao: 'Ver e reprocessar' })
+    if (falhas.length) itens.push({ id: 'processador', severidade: 'critica', grupo: 'tecnico', titulo: pl(falhas.length, 'aviso do Mercado Pago com falha', 'avisos do Mercado Pago com falha'), causa: 'O Mercado Pago avisou uma mudança que o site não conseguiu aplicar; a assinatura da pessoa pode estar errada.', contagem: falhas.length, ultimoEm: maisRecente(falhas.map(f => f.recebido_em)), destino: { aba: 'pagamentos' }, acao: 'Ver e reprocessar', resolver: falhas.map(f => String(f.id)) })
   }
   if (e.assinaturas) {
-    const falha = e.assinaturas.filter(a => a.status === 'falha_pagamento')
-    if (falha.length) itens.push({ id: 'falha-pagamento', severidade: 'alta', grupo: 'receita', titulo: pl(falha.length, 'assinatura com falha no pagamento', 'assinaturas com falha no pagamento'), causa: 'A cobrança do cartão foi recusada; a pessoa pode perder o acesso.', contagem: falha.length, ultimoEm: maisRecente(falha.map(a => a.ultima_atualizacao)), destino: { aba: 'assinaturas' }, acao: 'Abrir as assinaturas' })
+    // Recusa na renovação (já pagou antes) é urgente; recusa ao assinar é uma venda que não fechou: oportunidade por 14 dias.
+    // Qualquer uma sai da fila quando o administrador marca "Resolvido" (chave guardada nos lidos de pagamento).
+    const abertas = e.assinaturas.filter(a => a.status === 'falha_pagamento' && !e.lidosPagamento.has(chaveFalha(a)))
+    const renovacao = abertas.filter(a => a.ultima_cobranca_em)
+    const aoAssinar = abertas.filter(a => !a.ultima_cobranca_em && agora - new Date(a.ultima_atualizacao ?? a.criada_em ?? 0).getTime() < 14 * 86_400_000)
+    if (renovacao.length) itens.push({ id: 'falha-pagamento', severidade: 'alta', grupo: 'receita', titulo: pl(renovacao.length, 'renovação recusada no cartão', 'renovações recusadas no cartão'), causa: 'O cartão de quem já assinava foi recusado; a pessoa pode perder o acesso.', contagem: renovacao.length, ultimoEm: maisRecente(renovacao.map(a => a.ultima_atualizacao)), destino: { aba: 'assinaturas', grupo: 'falha_pagamento' }, acao: 'Ver quem são', resolver: renovacao.map(chaveFalha) })
+    if (aoAssinar.length) itens.push({ id: 'recusado-ao-assinar', severidade: 'oportunidade', grupo: 'receita', titulo: pl(aoAssinar.length, 'tentou assinar e o cartão não passou', 'tentaram assinar e o cartão não passou'), causa: 'Quiseram pagar e o cartão foi recusado; nada foi cobrado. Vale uma carta oferecendo outro cartão ou o Pix.', contagem: aoAssinar.length, ultimoEm: maisRecente(aoAssinar.map(a => a.ultima_atualizacao ?? a.criada_em)), destino: { aba: 'assinaturas', grupo: 'falha_pagamento' }, acao: 'Ver quem são', resolver: aoAssinar.map(chaveFalha) })
     const tresDias = 3 * 86_400_000
     const vigentes = vigentesPorPessoa(e.assinaturas, agora)
     const pixVencendo = vigentes.filter(a => meioDe(a) === 'pix' && a.fim_periodo && new Date(a.fim_periodo).getTime() - agora <= tresDias && new Date(a.fim_periodo).getTime() > agora)

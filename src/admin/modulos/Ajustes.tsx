@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { atualizarPremium } from '../../conta/premium'
 import { chamarRpc } from '../../servicos/supabase'
 import { erroDoPainel } from '../../componentes/admin/formatos'
-import { defParte } from '../rotas'
+import { defAba } from '../rotas'
 import { Icone } from '../ui/Icone'
 import { dataHora } from '../ui/formato'
 import { Cabeca, Carregando, Estado, Faixa, Interruptor, Painel, Selo } from '../ui/kit'
@@ -15,7 +15,7 @@ interface ConfigComercial { paywall_ativo: boolean; limite_diario_gratis: number
  * então cada mudança mostra o antes e o depois e pede confirmação; nada é salvo sozinho.
  */
 export default function Ajustes() {
-  const parte = defParte('ajustes')
+  const parte = defAba('ajustes')
   const [comercial, definirComercial] = useState<ConfigComercial | null>(null)
   const [rascunho, definirRascunho] = useState<ConfigComercial | null>(null)
   const [exclusivos, definirExclusivos] = useState<boolean | null>(null)
@@ -56,13 +56,13 @@ export default function Ajustes() {
   }
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Configurações" titulo={parte.rotulo} pergunta={`${parte.pergunta} Tudo aqui vale na hora para todo mundo.`} />
+    <Cabeca area="Ajustes" titulo={parte.rotulo} pergunta={`${parte.pergunta} Tudo aqui vale na hora para todo mundo.`} />
     {erro && <Faixa tom="erro" titulo="A configuração comercial não carregou">{erro}</Faixa>}
     <div className="a3-grade a3-grade--2" style={{ alignItems: 'start' }}>
       <Painel titulo="Limite gratuito e pagamentos" descricao={comercial ? `Última mudança em ${dataHora(comercial.atualizado_em)}.` : undefined}>
         {!rascunho ? (erro ? <Estado compacto tipo="erro" titulo="Indisponível" /> : <Carregando linhas={3} />) : <div className="a3-pilha">
           <div className="a3-chave-estado">
-            <Interruptor marcado={rascunho.paywall_ativo} aoMudar={v => definirRascunho({ ...rascunho, paywall_ativo: v })} titulo="Limite diário gratuito" descricao="Desligado, todo mundo responde sem limite (fase gratuita)." />
+            <Interruptor marcado={rascunho.paywall_ativo} aoMudar={v => definirRascunho({ ...rascunho, paywall_ativo: v })} titulo="Limite diário gratuito" descricao={rascunho.paywall_ativo ? `Ligado: quem não assina responde até ${rascunho.limite_diario_gratis ?? 20} questões a cada 24 h. Desligado, todo mundo responde sem limite.` : 'Desligado: todo mundo responde sem limite (fase gratuita). Ligado, quem não assina tem um limite por dia.'} />
             <Selo tom={comercial!.paywall_ativo ? 'ok' : undefined} contorno={!comercial!.paywall_ativo}>{comercial!.paywall_ativo ? 'ligado agora' : 'desligado agora'}</Selo>
           </div>
           <label className="a3-campo" style={{ maxWidth: 240 }}><span>Questões grátis a cada 24 h</span>
@@ -81,7 +81,7 @@ export default function Ajustes() {
       <Painel titulo="Recursos do plano pago" descricao="Como a turma respondeu, Simulado Nacional, cronograma, temas que mais caem, liga da residência e relatório mensal.">
         {erroPremium ? <Faixa tom="erro">{erroPremium}</Faixa> : exclusivos === null ? <Carregando linhas={2} /> : <div className="a3-pilha">
           <div className="a3-chave-estado">
-            <Interruptor marcado={exclusivos} aoMudar={v => void trocarExclusivos(v)} titulo="Só para assinantes" descricao="Desligado, libera tudo para todas as contas (promoção). O relatório mensal continua só para quem tem plano, cortesia ou é administrador." />
+            <Interruptor marcado={exclusivos} aoMudar={v => void trocarExclusivos(v)} titulo="Só para assinantes" descricao={exclusivos ? 'Ligado: os recursos pagos ficam só para quem assina. Desligado, libera tudo para todas as contas (promoção).' : 'Desligado: tudo liberado para todas as contas (promoção). Ligado, os recursos pagos voltam a ser só de quem assina.'} />
             <Selo tom={exclusivos ? undefined : 'aviso'} contorno={exclusivos}>{exclusivos ? 'exclusivos' : 'liberados para todos'}</Selo>
           </div>
           <p className="a3-mudo a3-pequeno">Esta chave salva na hora em que você confirma.</p>

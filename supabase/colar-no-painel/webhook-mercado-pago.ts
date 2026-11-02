@@ -285,9 +285,22 @@ async function sincronizarPreapproval(idRecurso) {
   }
   return statusMercadoPago;
 }
+async function anotarDono(idEvento, idUsuario) {
+  if (!idUsuario) return;
+  await banco(`eventos_pagamento?provedor=eq.mercado_pago&id_evento=eq.${encodeURIComponent(idEvento)}&id_usuario=is.null`, {
+    method: "PATCH",
+    body: JSON.stringify({ id_usuario: idUsuario })
+  }).catch(() => void 0);
+}
+async function anotarMotivo(idAssinatura, status, detalhe) {
+  const corpo = status === "rejected" ? { motivo_falha: /^[a-z0-9_]{1,80}$/.test(detalhe ?? "") ? detalhe : "sem_motivo", falha_em: (/* @__PURE__ */ new Date()).toISOString() } : status === "approved" ? { motivo_falha: null, falha_em: null } : null;
+  if (!corpo) return;
+  await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idAssinatura)}`, { method: "PATCH", body: JSON.stringify(corpo) }).catch(() => void 0);
+}
 async function aplicarCobranca(idAssinatura, pagamento, idEvento) {
   const atual = await assinaturaPorExterno(idAssinatura);
   if (!atual) throw new Error("assinatura_nao_encontrada");
+  await anotarDono(idEvento, atual.id_usuario);
   const alteracao = alteracaoDaCobranca(String(pagamento.status ?? ""), pagamento, atual.status);
   if (!alteracao) return marcarEvento(idEvento, "ignorado");
   const resposta = await banco(`assinaturas?id_externo=eq.${encodeURIComponent(idAssinatura)}`, {
@@ -295,6 +308,7 @@ async function aplicarCobranca(idAssinatura, pagamento, idEvento) {
     body: JSON.stringify(alteracao)
   });
   if (!resposta.ok) throw new Error("atualizacao_cobranca_falhou");
+  await anotarMotivo(idAssinatura, String(pagamento.status ?? ""), pagamento.status_detail);
   await marcarEvento(idEvento, "processado");
   await cartaDaCobranca(String(pagamento.status ?? ""), pagamento, atual).catch(() => void 0);
 }

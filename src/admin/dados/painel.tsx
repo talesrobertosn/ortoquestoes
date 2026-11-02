@@ -4,6 +4,7 @@ import { usarContadoresAdmin } from '../../componentes/admin/contadores'
 import { contaDeTeste } from '../../componentes/admin/contasTeste'
 import { erroDoPainel } from '../../componentes/admin/formatos'
 import { usarLidos } from '../../componentes/admin/lidos'
+import { PLANO_CORTESIA } from '../../componentes/admin/rotulos'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, type EventoPagamento } from '../../componentes/admin/pagamentos'
 import { indexarSinais, type SinalUsuario } from '../../componentes/admin/sinais'
 import { CINCO_MIN, usarRpc, type Consulta } from '../../componentes/admin/usarRpc'
@@ -33,6 +34,8 @@ const MIGRACAO = '202609290100_painel_admin.sql'
 /** Partes que mostram a lista de pessoas (ou abrem fichas a partir dela). */
 const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'crescimento', 'retencao', 'perfis', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
 const COM_COBRANCAS: Parte[] = ['comando', 'agora', 'financeiro', 'previsao', 'cobrancas']
+/** Intervalo da lista de pessoas nas telas ao vivo. */
+const TRES_MIN = 180_000
 const AO_VIVO: Parte[] = ['comando', 'agora', 'usuarios']
 
 export interface DadosPainel {
@@ -84,16 +87,22 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const contadoresQ = usarContadoresAdmin(conta)
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
-    ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined, prazoMs: 20_000,
+    // A linha das pessoas (quem está online, questões de hoje) se atualiza a cada 3 minutos (Tales, 02/11/2026);
+    // o resto, a cada 5. "Online" continua sendo sinal nos últimos 5 minutos. O botão Atualizar busca na hora.
+    ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: AO_VIVO.includes(parte) ? TRES_MIN : undefined, validadeMs: TRES_MIN, prazoMs: 20_000,
   })
   const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: COM_COBRANCAS.includes(parte) })
   const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const lidosPagamento = usarLidos('pagamento')
+  // Cortesias valendo (parte 37): no painel contam como assinantes, com o selo "Cortesia" (Tales, 02/11/2026).
+  // Sem a parte colada, a consulta falha e ninguém vira cortesia (o painel segue como antes).
+  const cortesiasQ = usarRpc<Array<{ id_usuario: string }>>(conta, 'listar_cortesias_admin', {}, { ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: CINCO_MIN })
+  const cortesias = useMemo(() => new Set(Array.isArray(cortesiasQ.dados) ? cortesiasQ.dados.map(c => c.id_usuario) : []), [cortesiasQ.dados])
 
   // "Online" é refeito a cada 10 s pelo último sinal, sem esperar o servidor.
   const [tique, definirTique] = useState(() => Date.now())
   useEffect(() => { const t = window.setInterval(() => definirTique(Date.now()), 10_000); return () => window.clearInterval(t) }, [])
-  const usuarios = useMemo(() => usuariosQ.dados?.map(u => ({ ...u, online: estaOnline(u, Math.max(tique, usuariosQ.atualizadoEm ?? 0)) })) ?? null, [usuariosQ.dados, usuariosQ.atualizadoEm, tique])
+  const usuarios = useMemo(() => usuariosQ.dados?.map(u => ({ ...u, plano_vigente: u.plano_vigente ?? (cortesias.has(u.id_usuario) ? PLANO_CORTESIA : null), online: estaOnline(u, Math.max(tique, usuariosQ.atualizadoEm ?? 0)) })) ?? null, [usuariosQ.dados, usuariosQ.atualizadoEm, tique, cortesias])
   const usuariosReais = useMemo(() => usuarios?.filter(u => !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
   const assinaturas = assinaturasQ.dados ?? null
   const reais = useMemo(() => assinaturas?.filter(a => !contaDeTeste(a)) ?? null, [assinaturas])
@@ -108,12 +117,12 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
 
   const cobrancasCarregando = cobrancasQ.dados === undefined && !cobrancasQ.erro
   const avisoCobrancas = !cobrancasQ.erro ? null : funcaoAusente(cobrancasQ.erro)
-    ? `As cobranças gravadas no banco ainda não estão disponíveis (falta colar no Supabase a ${PARTE_COBRANCAS}). Os valores abaixo saem do preço dos planos e aparecem como reconstruídos.`
-    : `As cobranças gravadas não carregaram (código ${codigoDaFalha(cobrancasQ.erro)}). Os valores abaixo saem do preço dos planos e aparecem como reconstruídos.`
+    ? `As cobranças gravadas no banco ainda não estão disponíveis (falta colar no Supabase a ${PARTE_COBRANCAS}). Os valores abaixo saem do preço dos planos e aparecem como estimados.`
+    : `As cobranças gravadas não carregaram (código ${codigoDaFalha(cobrancasQ.erro)}). Os valores abaixo saem do preço dos planos e aparecem como estimados.`
 
   const { recarregar: r1 } = assinaturasQ, { recarregar: r2 } = eventosQ, { recarregar: r3 } = resumoQ, { recarregar: r4 } = usuariosQ
-  const { recarregar: r5 } = contadoresQ, { recarregar: r6 } = cobrancasQ, { recarregar: r7 } = sinaisQ
-  const atualizar = useCallback(async () => { await Promise.all([r1(), r2(), r3(), r4(), r5(), r6(), r7()]) }, [r1, r2, r3, r4, r5, r6, r7])
+  const { recarregar: r5 } = contadoresQ, { recarregar: r6 } = cobrancasQ, { recarregar: r7 } = sinaisQ, { recarregar: r8 } = cortesiasQ
+  const atualizar = useCallback(async () => { await Promise.all([r1(), r2(), r3(), r4(), r5(), r6(), r7(), r8()]) }, [r1, r2, r3, r4, r5, r6, r7, r8])
   const falha = resumoQ.erro ?? usuariosQ.erro
 
   const valor: DadosPainel = {

@@ -101,14 +101,14 @@ export function HospedeConfirmar() {
 
 /* ───────────── Avisos rápidos (resultado de operação) ───────────── */
 
-interface AvisoRapido { id: number; texto: ReactNode; tom: 'ok' | 'erro' | 'info' }
+interface AvisoRapido { id: number; texto: ReactNode; tom: 'ok' | 'erro' | 'info'; acao?: { rotulo: string; aoClicar: () => void } }
 let avisos: AvisoRapido[] = []
 const ouvintesAvisos = new Set<() => void>()
 let seq = 0
 /** Resultado de uma operação: sucesso some em 5 s; erro fica até fechar (nunca escondido). */
-export function avisoRapido(texto: ReactNode, tom: AvisoRapido['tom'] = 'ok') {
+export function avisoRapido(texto: ReactNode, tom: AvisoRapido['tom'] = 'ok', acao?: AvisoRapido['acao']) {
   const id = ++seq
-  avisos = [...avisos.slice(-3), { id, texto, tom }]
+  avisos = [...avisos.slice(-3), { id, texto, tom, acao }]
   ouvintesAvisos.forEach(o => o())
   if (tom !== 'erro') window.setTimeout(() => { avisos = avisos.filter(a => a.id !== id); ouvintesAvisos.forEach(o => o()) }, 5000)
 }
@@ -119,6 +119,7 @@ export function HospedeAvisos() {
     {lista.map(a => <div key={a.id} className={`a3-aviso-rapido a3-aviso-rapido--${a.tom}`}>
       <Icone nome={a.tom === 'erro' ? 'alerta' : a.tom === 'ok' ? 'certo' : 'info'} />
       <div style={{ flex: 1 }}>{a.texto}</div>
+      {a.acao && <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => { a.acao!.aoClicar(); avisos = avisos.filter(x => x.id !== a.id); ouvintesAvisos.forEach(o => o()) }}>{a.acao.rotulo}</button>}
       <button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno a3-botao--icone" aria-label="Fechar aviso"
         onClick={() => { avisos = avisos.filter(x => x.id !== a.id); ouvintesAvisos.forEach(o => o()) }}><Icone nome="fechar" tamanho={14} /></button>
     </div>)}

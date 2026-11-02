@@ -25,9 +25,12 @@ export function Quadro({ titulo, descricao, acoes, legenda, fonte, qualidade, ta
       {estado ?? children}
     </div>
     <footer className="a3-quadro__pe">
-      <span style={{ display: 'inline-flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>{qualidade && <SeloQualidade q={qualidade} />}<span>Fonte: {fonte}</span></span>
+      {/* A fonte (nome da consulta no banco) é bastidor: fica dentro de "Ver dados", não na primeira leitura. */}
+      <span style={{ display: 'inline-flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>{qualidade && <SeloQualidade q={qualidade} />}</span>
+      {(!tabela || !tabela.linhas.length || estado) && <details className="a3-quadro__dados"><summary>De onde vem</summary><p className="a3-mudo a3-pequeno" style={{ margin: '6px 0 0' }}>Fonte: {fonte}</p></details>}
       {tabela && tabela.linhas.length > 0 && !estado && <details className="a3-quadro__dados">
         <summary>Ver dados</summary>
+        <p className="a3-mudo a3-pequeno" style={{ margin: '6px 0' }}>Fonte: {fonte}</p>
         <div className="a3-tabela-caixa"><table className="a3-tabela a3-tabela--compacta">
           <thead><tr>{tabela.cabecalho.map((c, i) => <th key={c} scope="col" className={i ? 'num' : ''}>{c}</th>)}</tr></thead>
           <tbody>{tabela.linhas.map((l, i) => <tr key={i}>{l.map((c, k) => k === 0 ? <th key={k} scope="row" style={{ position: 'static', background: 'none', height: 'auto', fontWeight: 500, color: 'var(--a3-tinta)' }}>{c}</th> : <td key={k} className="num">{c}</td>)}</tr>)}</tbody>

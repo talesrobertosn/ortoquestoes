@@ -1915,43 +1915,54 @@
   "conferido": false
  },
  "tumores-0170": {
-  "conceito": "**O laboratório do mieloma.** O mieloma é uma proliferação **clonal** de plasmócitos que produz uma imunoglobulina **monoclonal**, a proteína M. A eletroforese de proteínas séricas mostra um **pico monoclonal**, em geral na região gama, e na urina aparecem **cadeias leves livres monoclonais**, kappa ou lambda: as **proteínas de Bence-Jones**. Elas são nefrotóxicas, precipitam nos túbulos e causam o rim do mieloma; no mieloma de cadeias leves, a eletroforese sérica pode ser **normal**, porque as cadeias são filtradas para a urina. Por isso a investigação inclui eletroforese e imunofixação da urina de 24 horas e dosagem de cadeias leves livres no soro.\n\n**O resto do quadro** cabe no **CRAB**: hipercalcemia, insuficiência renal, anemia e lesões ósseas. Pico policlonal indica inflamação, infecção ou doença autoimune, e não mieloma.\n\n**Na prova:** mieloma é **pico monoclonal e Bence-Jones na urina**; nunca policlonal, nunca hipocalcemia.",
-  "correta": "**Presença de proteínas anormais na urina, de Bence-Jones.** São as cadeias leves livres monoclonais, marca laboratorial do mieloma.",
+  "conceito": "O mieloma é o câncer primário mais comum do osso. Como o Campbell lembra, seu pico é na quinta a sétima década (cap. 27, p. 1024). Ao contrário dos tumores ósseos em geral, ele chega acompanhado de problemas sistêmicos: fraqueza, emagrecimento, anemia, trombocitopenia, neuropatia, **hipercalcemia** e **insuficiência renal**, frequentemente já no diagnóstico (p. 1025). Os ossos preferidos são a coluna, as costelas e a pelve, e a fratura patológica é relativamente comum.\n\n**Para entender os exames, comece pela célula.** O plasmócito é uma fábrica de anticorpos. No mieloma, um único clone de plasmócitos se multiplica e produz grande quantidade do mesmo anticorpo, ou de parte dele. Daí vêm três achados:\n\n- Na eletroforese do soro, um **pico monoclonal**, estreito, porque todas as moléculas são iguais.\n- Na urina, as cadeias leves livres, que passam pelo rim: a **proteína de BENCE-JONES**. É a alternativa correta, e essas cadeias também lesam o túbulo renal, o que explica a insuficiência.\n- No sangue, **cálcio alto**, porque o osso é destruído sem a formação correspondente.\n\nAs alternativas erradas invertem esses achados. Note o detalhe do \"policlonal\": esse padrão, largo, é o da inflamação crônica, em que muitos clones trabalham juntos.\n\n> **Na prova:** mieloma é monoclonal, com BENCE-JONES na urina e cálcio alto.",
+  "correta": "**E: presença de proteínas anormais na urina (proteína de Bence-Jones).** São as cadeias leves produzidas em excesso pelo clone de plasmócitos, e ajudam a explicar a insuficiência renal citada pelo Campbell (cap. 27, p. 1025).",
   "incorretas": {
-   "A": "**Inespecífico.** Pode haver hiperglobulinemia, mas o que caracteriza o mieloma é a proteína monoclonal.",
-   "B": "**É monoclonal.** Pico policlonal indica inflamação, infecção ou doença autoimune crônica.",
-   "C": "**É hipercalcemia.** A reabsorção osteoclástica eleva o cálcio.",
-   "D": "**São anormais.** As proteínas do mieloma são monoclonais, produzidas por um único clone."
+   "A": "**Termo impreciso.** Pode haver aumento de uma imunoglobulina, mas o achado que define a doença é o componente monoclonal, e a alternativa E é mais específica.",
+   "B": "**A palavra errada.** O pico do mieloma é **monoclonal**. O policlonal aponta para uma inflamação crônica.",
+   "C": "**O inverso.** O Campbell cita a **hipercalcemia** entre os problemas do diagnóstico (cap. 27, p. 1025), pela destruição óssea.",
+   "D": "**Contradiz a doença.** O mieloma é definido justamente pela proteína anormal produzida pelo clone."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 27, p. 1024 e 1025",
+   "Greenspan, Radiologia Ortopédica, 6ª ed., capítulo sobre mieloma",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 24 (General Principles of Tumors), p. 891, Quadro 24.3"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0171": {
-  "conceito": "**Onde o cordoma fica.** Deriva de restos da notocorda, na **linha média**: **sacro e cóccix** concentram cerca de metade dos casos, a base do crânio, no clivus, cerca de um terço, e a coluna móvel, preferindo a cervical, o restante. É tumor **maligno de baixo grau**, de crescimento lento, com predomínio **masculino**, da quinta à sétima décadas. Apresenta-se com dor sacrococcígea ou lombar baixa inespecífica por meses ou anos; parestesias e disfunção esfincteriana são **tardias**. A massa cresce para **anterior**, no espaço pré-sacral, invisível à inspeção e palpável ao **toque retal**.\n\n**Histologia e tratamento.** Mostra células fisalíferas em matriz mixoide, positivas para brachyury. O tratamento é a ressecção em bloco com margem ampla, da qual o prognóstico depende, com radioterapia de partículas se a margem for comprometida; a quimioterapia convencional não funciona.\n\n**Na prova:** cordoma é **sacrococcígeo**, maligno de baixo grau, masculino, com massa pré-sacral.",
-  "correta": "**A maior parte se encontra localizada no sacro e no cóccix.** Cerca de metade dos cordomas fica na região sacrococcígea.",
+  "conceito": "**Onde o cordoma fica.** Deriva de restos da notocorda: mais de 50% surgem na **região sacrococcígea**, mais de 30% na **base do crânio**, e o restante se distribui pela coluna. É a neoplasia maligna primária mais comum do sacro (Campbell, cap. 27, p. 1021). É tumor **maligno de baixo grau**, de crescimento lento, com predomínio **masculino**, da quinta à sétima décadas. Apresenta-se com dor sacrococcígea ou lombar baixa inespecífica por meses ou anos; parestesias e disfunção esfincteriana são **tardias**. A massa cresce para **anterior**, no espaço pré-sacral, invisível à inspeção e palpável ao **toque retal**.\n\n**Histologia e tratamento.** Mostra células fisalíferas em matriz mixoide, positivas para brachyury. O tratamento é a ressecção em bloco com margem ampla, da qual o prognóstico depende, com radioterapia de partículas se a margem for comprometida; a quimioterapia convencional não funciona.\n\n**Na prova:** cordoma é **sacrococcígeo**, maligno de baixo grau, masculino, com massa pré-sacral.",
+  "correta": "**C: a maior parte se encontra localizada no sacro/cóccix.** É o dado do Campbell: mais da metade na região sacrococcígea.",
   "incorretas": {
-   "A": "**Erra duas vezes.** O cordoma é maligno, e de baixo grau.",
-   "B": "**Predomínio masculino.** O cordoma é mais comum em homens.",
-   "D": "**São tardias.** O sintoma precoce é a dor inespecífica.",
-   "E": "**Cresce para anterior.** A massa ocupa o espaço pré-sacral, por isso o toque retal é importante."
+   "A": "**Termos que brigam.** Tumor benigno de alto grau é contradição. O cordoma é maligno, de crescimento lento.",
+   "B": "**Sexo errado.** O predomínio é masculino.",
+   "D": "**Tardias.** A queixa mais comum nos sacrococcígeos é a lombalgia baixa; sintomas neurológicos e esfincterianos vêm depois.",
+   "E": "**O crescimento é para a frente.** A massa ocupa o espaço pré-sacral, e por isso o toque retal é tão importante."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 27 (Malignant Tumors of Bone), p. 1021"
+  ],
+  "formato": "corrido",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0172": {
-  "conceito": "**Os dois tipos de Morquio**, a MPS IV, são autossômicos recessivos. O **tipo A** é a deficiência de **N-acetilgalactosamina-6-sulfatase** (GALNS), com acúmulo de queratan sulfato e condroitin-6-sulfato, a forma clássica e mais grave. O **tipo B** é a deficiência de **beta-galactosidase**, com acúmulo de queratan sulfato, a forma mais branda. As enzimas das outras alternativas são as do **Sanfilippo**, MPS III: heparan N-sulfatase no III-A, alfa-glucosaminida acetiltransferase no III-C e N-acetilglucosamina-6-sulfatase no III-D.\n\n**O fenótipo ortopédico** inclui nanismo de tronco curto, **platispondilia** com bico anterior central, **hipoplasia do odontoide** com instabilidade atlantoaxial, a complicação mais temida, que pede radiografias dinâmicas e muitas vezes artrodese occipitocervical, geno valgo grave, displasia do quadril, tórax em quilha e frouxidão ligamentar difusa. O que separa Morquio das outras mucopolissacaridoses é a **inteligência preservada**.\n\n**Na prova:** Morquio B é **beta-galactosidase**; Morquio A é GALNS.",
-  "correta": "**Beta-galactosidase.** É a enzima deficiente no Morquio tipo B.",
+  "conceito": "**Os dois tipos de Morquio**, a MPS IV, são autossômicos recessivos. O **tipo A** é a deficiência de **N-acetilgalactosamina-6-sulfatase** (GALNS), a forma clássica e mais grave. O **tipo B** é a deficiência de **beta-galactosidase**: manifesta-se mais tarde, com queratan sulfato também na urina, disostose múltipla, nanismo, anomalias do odontoide e opacidade da córnea (Tachdjian, cap. 36, p. 1831; Lovell e Winter, cap. 8, p. 254). As enzimas das outras alternativas são as do **Sanfilippo**, MPS III: heparan N-sulfatase no III-A, alfa-glucosaminida acetiltransferase no III-C e N-acetilglucosamina-6-sulfatase no III-D.\n\n**O fenótipo ortopédico** inclui nanismo de tronco curto, **platispondilia** com bico anterior central, **hipoplasia do odontoide** com instabilidade atlantoaxial, a complicação mais temida, que pede radiografias dinâmicas e muitas vezes artrodese occipitocervical, geno valgo grave, displasia do quadril, tórax em quilha e frouxidão ligamentar difusa. O que separa Morquio das outras mucopolissacaridoses é a **inteligência preservada**.\n\n**Na prova:** Morquio B é **beta-galactosidase**; Morquio A é GALNS.",
+  "correta": "**D: beta-galactosidase.** É a enzima do Morquio B no Tachdjian, e a pergunta é só essa associação.",
   "incorretas": {
-   "A": "**É o Morquio A.** A N-acetilgalactosamina-6-sulfatase é a enzima deficiente no tipo A.",
-   "B": "**É o Sanfilippo C.** A alfa-glucosaminida acetiltransferase é deficiente na MPS III-C.",
-   "C": "**É o Sanfilippo A.** A heparan N-sulfatase é deficiente na MPS III-A.",
-   "E": "**É o Sanfilippo D.** A N-acetilglucosamina-6-sulfatase é deficiente na MPS III-D."
+   "A": "**Morquio A.** É a armadilha mais próxima: a mesma síndrome, com a enzima do outro tipo.",
+   "B": "**Sanfilippo.** A acetiltransferase é do grupo da MPS III.",
+   "C": "**Sanfilippo também.** A heparan N-sulfatase é a sulfamidase da MPS III A.",
+   "E": "**Sanfilippo de novo.** A glucosamina-6-sulfatase é da MPS III D, e o nome parecido com o da opção A é a armadilha."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 36 (Skeletal Dysplasias), p. 1831",
+   "Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 8, p. 254"
+  ],
+  "formato": "corrido",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0173": {
   "conceito": "A questão do ENARE 2023 traz a família de um paciente com tumor ósseo perguntando para que serve a PET-CT, e pede a informação que **não** deve ser dada. Quatro alternativas descrevem usos que o Campbell atribui à PET; a quinta, definir o tipo histológico, é papel da biópsia.\n\n**A PET no Campbell.** A PET registra a distribuição de radioisótopos ligados a moléculas biologicamente ativas e dá uma visão tridimensional e quantitativa de processos fisiológicos e bioquímicos. A **FDG** é um análogo da glicose que **fica retido nas células malignas em proporção à taxa de glicólise**. O livro diz que a PET **vem se mostrando útil no estadiamento, no planejamento da biópsia, na avaliação da resposta à quimioterapia e no direcionamento do tratamento seguinte**, e que, junto com a TC e a RM, ajuda no **seguimento depois do tratamento, diferenciando células tumorais viáveis de alterações pós-operatórias**; os resultados iniciais são animadores, mas os estudos publicados ainda são poucos (cap. 24, p. 891 e 892).\n\n**Por que ela não dá a histologia.** A PET mede atividade metabólica: um tumor maligno capta muito, mas uma infecção, uma lesão benigna ativa ou o tecido de cicatrização também captam. Ela localiza, estadia e acompanha; o nome do tumor vem do patologista, com tecido. É por isso que o Campbell insiste em completar a avaliação e só então biopsiar, com a técnica certa (p. 892 e 896).\n\n| Alternativa | O que o Campbell diz da PET |\n|---|---|\n| Diferenciar benigno de maligno | a FDG se acumula nas células malignas pela glicólise |\n| Pesquisar metástases | útil no estadiamento |\n| Definir o tipo histológico | **não é papel dela; é da biópsia** |\n| Monitorar a resposta | útil na resposta à quimioterapia |\n| Detectar recidiva | separa tumor viável de alteração pós-operatória |\n\n**Os outros exames, no Campbell** (cap. 24, p. 891 e 892). A **TC** é a melhor para ossificação, calcificação e cortical, para achar o **nicho do osteoma osteoide**, e **a TC do tórax é o exame mais eficaz para as metástases pulmonares**. A **cintilografia** mostra a atividade e as lesões múltiplas, mas **é falsamente negativa no mieloma e em alguns carcinomas renais**; uma cintilografia normal tranquiliza, mas lesões benignas ativas também captam. A **PET com FDG**, análogo da glicose retido nas células malignas, vem se mostrando útil **no estadiamento, no planejamento da biópsia, na avaliação da resposta à quimioterapia e no seguimento**, separando tumor viável de alterações pós-operatórias, com estudos ainda limitados. A **RM é o exame de escolha para o tamanho, a extensão e as relações anatômicas**; dá o diagnóstico específico no lipoma, no hemangioma, no hematoma e na SVNP, mas na maioria das neoplasias é inespecífica; **qualquer neoplasia de partes moles profunda à fáscia ou maior que 5 cm é provavelmente um sarcoma**. A angiografia serve para a **embolização** do carcinoma renal e do cisto ósseo aneurismático.\n\n**Os tipos de biópsia** (Campbell, cap. 24, p. 898, Tabela 24.4). A **punção aspirativa por agulha fina** é barata e tem poucas complicações; **pode ter 90% de acurácia para dizer se é maligno**, mas menos para o tipo, porque só vê células; serve quando o diagnóstico é quase conhecido (metástase, infecção, linfonodo). A **agulha grossa (core)** preserva a arquitetura, com acurácia de **84% a 98%** nas séries ambulatoriais (numa série de 252: 97% para maligno ou não; 81% para o diagnóstico e o grau). **A biópsia aberta é o padrão-ouro**: mais complicações, mas menos erro de amostragem e mais tecido. **O definitivo só pode ser feito no mesmo ato se a congelação confirmar o diagnóstico clínico e radiográfico** (curetagem do TCG, fixação profilática da metástase); **qualquer célula atípica sugestiva de sarcoma adia o definitivo** para o laudo final. A **ressecção primária** (biópsia excisional) vale para: **massa subcutânea menor que 3 cm** pouco suspeita; lesão profunda ou grande **só se a RM for diagnóstica de benignidade, como o lipoma**; **lesões ósseas benignas de radiografia característica, como o osteoma osteoide e o osteocondroma**; e **lesão dolorosa num osso dispensável (fíbula proximal, ulna distal)**, contida na cortical, que seria ressecada de qualquer forma (Fig. 24.9).\n\n**O que a banca quis testar.** Se o candidato sabe o que a PET faz e o que só a biópsia faz.\n\n> **Na prova:** PET-FDG = estadiamento, planejamento da biópsia, resposta à quimioterapia, recidiva; NÃO define a histologia.",
@@ -3342,44 +3353,55 @@
   "formato": "corrido"
  },
  "tumores-0315": {
-  "conceito": "**Poucas lesões vivem na epífise.** A localização dentro do osso é um dos melhores filtros diagnósticos, e a epífise tem uma lista curta. Com a **fise fechada**, no adulto jovem, a principal é o **tumor de células gigantes**, lítico, excêntrico, sem esclerose marginal e chegando ao osso subcondral. Com a **fise aberta**, é o condroblastoma, com halo esclerótico. Completam a lista a infecção, o geodo das artropatias e, raramente, o condrossarcoma de células claras.\n\n**As outras opções são diafisárias.** O sarcoma de Ewing prefere a diáfise e a metadiáfise, com padrão permeativo e casca de cebola; o linfoma ósseo primário do adulto também é diafisário; o adamantinoma fica na cortical anterior da diáfise da tíbia; e a histiocitose é diafisária ou metafisária, e na coluna faz a vértebra plana.\n\n**Na prova:** lesão epifisária no adulto é **tumor de células gigantes**; na criança, condroblastoma.",
-  "correta": "**Tumor de células gigantes.** É a principal lesão epifisária depois do fechamento da fise.",
+  "conceito": "**Poucas lesões vivem na epífise.** A localização dentro do osso é um dos melhores filtros diagnósticos, e o Campbell traz um quadro inteiro para isso: lesões epifisárias são **condroblastoma** (10 a 25 anos), **tumor de células gigantes** (20 a 40 anos) e, raramente, **condrossarcoma de células claras** (cap. 24, p. 890 e 891). No esqueleto maduro, a lesão epifisária provavelmente é um tumor de células gigantes; no imaturo, condroblastoma.\n\n**As outras opções estão no quadro seguinte, o das diafisárias**: sarcoma de Ewing, linfoma do adulto, adamantinoma (considerar na tíbia) e histiocitose. A questão foi construída copiando esse quadro.\n\n**Na prova:** lesão epifisária no adulto é **tumor de células gigantes**; na criança, condroblastoma.",
+  "correta": "**E: tumor de células gigantes.** É o único das opções que aparece no quadro de lesões epifisárias do Campbell.",
   "incorretas": {
-   "A": "**Diafisária ou metafisária.** A histiocitose não é epifisária.",
-   "B": "**Diafisário.** O Ewing prefere a diáfise e a metadiáfise.",
-   "C": "**Diafisário.** O linfoma ósseo primário prefere a diáfise.",
-   "D": "**Diafisário.** O adamantinoma fica na cortical anterior da diáfise da tíbia."
+   "A": "**Quadro das diafisárias.** O Campbell lista a histiocitose entre 5 e 30 anos, na diáfise.",
+   "B": "**Clássico da diáfise.** O Ewing, de 5 a 25 anos, abre a lista diafisária, com padrão permeativo.",
+   "C": "**Mesmo quadro.** O linfoma do adulto também é diafisário.",
+   "D": "**A própria opção entrega.** O Campbell diz \"considere na tíbia\", na lista diafisária."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 24 (General Principles of Tumors), p. 890 e 891, Quadros 24.1 e 24.2",
+   "Greenspan, Radiologia Ortopédica, 6ª ed., capítulo de avaliação de tumores ósseos"
+  ],
+  "formato": "corrido",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0316": {
-  "conceito": "**O estadiamento AJCC para sarcomas ósseos** do esqueleto apendicular usa três letras. O **T**: T1 até **8 cm**, T2 acima de 8 cm e T3 para lesões descontínuas no mesmo osso, as skip. O **G**: baixo ou alto grau. O **M**: M1a para pulmão e M1b para outros sítios. Os estágios ficam assim: IA e IB para baixo grau T1 e T2; **IIA** para alto grau T1; **IIB** para alto grau T2; III para T3; e IVA e IVB para metástase pulmonar ou em outros sítios. O Ewing é tratado como alto grau por definição.\n\n**Aplicando ao caso.** Alto grau, menos de 6 cm, portanto T1, sem skip e sem metástase: pelo sistema atual, o enquadramento seria **IIA**. A banca deu **IIB**, como explica o alerta. Para a prova desta banca vale o gabarito; para o raciocínio vale a regra: IIA e IIB se separam pelo tamanho de 8 cm, e \"intracompartimental\" é linguagem de Enneking, não do AJCC.\n\n**Na prova:** no AJCC, **8 cm separa T1 de T2**; skip é III; metástase é IV.",
-  "correta": "**II B.** É o gabarito oficial da banca, embora os critérios do AJCC apontem para II A.",
+  "conceito": "**O estadiamento AJCC para sarcomas ósseos** do esqueleto apendicular é uma alternativa ao sistema de Enneking usada por muitos oncologistas ortopédicos (Campbell, cap. 24, p. 894) e usa três letras. O **T**: T1 até **8 cm**, T2 acima de 8 cm e T3 para lesões descontínuas no mesmo osso, as skip. O **G**: baixo ou alto grau. O **M**: M1a para pulmão e M1b para outros sítios. Os estágios ficam assim: IA e IB para baixo grau T1 e T2; **IIA** para alto grau T1; **IIB** para alto grau T2; III para T3; e IVA e IVB para metástase pulmonar ou em outros sítios. O Ewing é tratado como alto grau por definição.\n\n**Aplicando ao caso.** Alto grau, menos de 6 cm, portanto T1, sem skip e sem metástase: pelo sistema atual, o enquadramento seria **IIA**. A banca deu **IIB**, como explica o alerta. Para a prova desta banca vale o gabarito; para o raciocínio vale a regra: IIA e IIB se separam pelo tamanho de 8 cm, e \"intracompartimental\" é linguagem de Enneking, não do AJCC.\n\n**Na prova:** no AJCC, **8 cm separa T1 de T2**; skip é III; metástase é IV.",
+  "correta": "**B: II B.** É o gabarito oficial, embora os critérios do AJCC apontem para II A; veja o alerta.",
   "incorretas": {
-   "A": "**O enquadramento pelos critérios.** Alto grau e até 8 cm é IIA no AJCC, mas não foi o gabarito da banca.",
-   "C": "**Exige skip.** O estágio III é reservado às lesões descontínuas no mesmo osso.",
-   "D": "**Não existe.** O AJCC para osso não subdivide o estágio III.",
-   "E": "**Não existe.** Metástase a distância é estágio IV, A para pulmão e B para outros sítios."
+   "A": "**O enquadramento pelos critérios.** Alto grau e até 8 cm é II A. A banca não a marcou, e por isso a questão merece ressalva.",
+   "C": "**Exige lesão salteada.** O estágio III é reservado às lesões descontínuas no mesmo osso.",
+   "D": "**Não existe.** O sistema para osso não subdivide o estágio III.",
+   "E": "**Também não existe.** Metástase a distância é estágio IV."
   },
-  "alerta": "Vale uma ressalva sobre este item: pela descrição do enunciado (lesão intracompartimental, menor que 6 cm (portanto abaixo do corte de 8 cm) e sem metástases), a combinação clássica de critérios do estadiamento AJCC para sarcomas ósseos (grau alto + T1 intracompartimental) aponta para o estágio II A, e não II B (que classicamente corresponde a tumores extracompartimentais ou maiores que 8 cm). Mantemos aqui o gabarito oficial da banca (II B), mas registramos essa aparente divergência para quem for revisar o tema com atenção ao critério de tamanho/compartimento.",
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 24 (General Principles of Tumors), p. 894"
+  ],
+  "alerta": "Pelo enunciado (alto grau, menor que 6 cm, sem metástases), o AJCC aponta para II A, e não II B, que corresponde a tumores maiores que 8 cm. O termo intracompartimental é de Enneking, em que Ewing intracompartimental seria II A. Nos livros locais, o Campbell detalha o AJCC só para partes moles; os cortes ósseos vêm do comentário anterior. O gabarito oficial (B) foi mantido.",
+  "formato": "corrido",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0317": {
-  "conceito": "**Osteossarcoma secundário** é o que surge sobre uma lesão óssea **pré-existente**, em pacientes mais velhos, e a associação mais clássica é a **doença de Paget**. A degeneração sarcomatosa é rara em termos absolutos, em torno de 1% dos pacientes, mais comum na doença poliostótica e de longa data, e aparece na pelve, no fêmur, no úmero e no crânio. O sinal de alarme é exatamente o do enunciado: **dor nova, ou que muda de padrão**, num osso pagético, como a dor antiga no ilíaco que piorou nos últimos meses.\n\n**Prognóstico e outras causas.** O prognóstico é muito ruim, pior que o do osteossarcoma primário, pela idade, pela sede axial e pela pouca resposta à quimioterapia. A outra grande causa de sarcoma secundário é a **radiação** prévia; infarto ósseo e osteomielite crônica são causas mais raras e costumam originar outros tumores.\n\n**Na prova:** idoso com Paget e dor nova faz pensar em **osteossarcoma secundário**.",
-  "correta": "**A doença de Paget.** É a lesão pré-existente mais associada ao osteossarcoma secundário.",
+  "conceito": "**Osteossarcoma secundário** é o que surge sobre uma lesão óssea **pré-existente**. É raro em jovens, mas responde por quase metade dos osteossarcomas acima dos 50 anos, e os fatores mais comuns são a **doença de Paget** e a **radiação** prévia. A incidência no Paget é de cerca de 1%, podendo chegar a 5 a 10% nos casos avançados (Campbell, cap. 27, p. 1011). O sinal de alarme é exatamente o do enunciado: **dor nova, ou que muda de padrão**, num osso pagético, como a dor antiga no ilíaco que piorou nos últimos meses.\n\n**Outras causas.** Displasia fibrosa, infartos ósseos, osteocondromas, osteomielite crônica, melorreostose e osteogênese imperfeita também aparecem em relatos, mas são extremamente raros, e não se estabeleceu relação causal (Campbell, cap. 27, p. 1011).\n\n**Na prova:** idoso com Paget e dor nova faz pensar em **osteossarcoma secundário**.",
+  "correta": "**C: a doença de Paget.** É o primeiro nome do Campbell, e o enunciado ainda dá o cenário: idoso, osso ilíaco, dor antiga que mudou.",
   "incorretas": {
-   "A": "**Raro.** O infarto ósseo origina mais sarcoma pleomórfico indiferenciado que osteossarcoma.",
-   "B": "**Condrossarcoma.** O osteocondroma maligniza para condrossarcoma, não para osteossarcoma.",
-   "D": "**Não maligniza.** O osteoma osteoide é benigno.",
-   "E": "**Carcinoma.** A osteomielite crônica origina mais carcinoma espinocelular no trajeto fistuloso, a úlcera de Marjolin."
+   "A": "**Aparece, mas é exceção.** O Campbell cita infartos ósseos entre as associações extremamente raras.",
+   "B": "**Mais para condrossarcoma.** O osteocondroma consta da mesma lista de raras, e sua malignização típica é outra.",
+   "D": "**Lesão benigna sem esse caminho.** O osteoma osteoide não consta entre as causas de osteossarcoma secundário.",
+   "E": "**Rara, e costuma dar outro tumor.** A osteomielite crônica está na lista das raridades; sua degeneração clássica é em carcinoma espinocelular no trajeto fistuloso."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 27 (Malignant Tumors of Bone), p. 1009 e 1011",
+   "Greenspan, Radiologia Ortopédica, 6ª ed., capítulo sobre osteossarcoma"
+  ],
+  "formato": "corrido",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0318": {
   "conceito": "O TARO 2024 mostra a radiografia do ombro de um rapaz de 15 anos com dor: a seta aponta uma lesão lítica, bem delimitada, com borda esclerótica fina, **na epífise** da cabeça umeral, logo acima da fise. A combinação de idade e local resolve: lesão epifisária no esqueleto imaturo é condroblastoma até prova em contrário.\n\n**A radiografia vem primeiro.** Toda suspeita de neoplasia começa com **radiografias em dois planos**, que dão mais informação sobre as lesões ósseas que qualquer outro exame; **muitas vezes a idade e a radiografia bastam para o diagnóstico**. Começa-se pelo local (Quadros 24.1 a 24.4): **epífise no esqueleto maduro = tumor de células gigantes; no imaturo = condroblastoma** (o diferencial epifisário inclui o condrossarcoma de células claras); diáfise = EWING, linfoma, displasia fibrosa, adamantinoma, histiocitose, osteomielite; coluna acima de 40 anos = metástase, mieloma, hemangioma, cordoma no sacro; **corpo vertebral no jovem = histiocitose**; elementos posteriores = osteoma osteoide, osteoblastoma, cisto ósseo aneurismático. **As lesões de baixa atividade são bem delimitadas, com halo de osso reativo; as agressivas têm zona de transição mal definida**; a destruição franca da cortical sugere malignidade; a reação periosteal (CODMAN, \"casca de cebola\", \"raios de sol\") em geral indica malignidade, mas aparece na infecção e na histiocitose (cap. 24, p. 890 e 891).\n\n**O condroblastoma no capítulo 26.** Aparece entre os 10 e os 25 anos; numa criança, **uma lesão epifisária bem circunscrita que cruza a fise aberta é muito sugestiva de condroblastoma**, embora possa ser infecção; no adulto, o diferencial epifisário inclui o tumor de células gigantes e o condrossarcoma de células claras. **Ao contrário do condroblastoma, o tumor de células gigantes em geral não tem halo esclerótico nem calcificação dentro da lesão** e pode ter componente de partes moles. A RM costuma mostrar muito edema em volta. Microscopicamente, lâminas de condroblastos, calcificação em \"tela de galinheiro\", células gigantes abundantes e cisto ósseo aneurismático secundário em 20%; o condroblastoma em geral é estágio 2 de ENNEKING (cap. 26, p. 988 e 995).\n\n**Lendo as alternativas.** O **osteossarcoma** é metafisário e agressivo, com destruição e reação periosteal. O **osteoma osteoide** é um nicho pequeno, cortical, com esclerose densa em volta, e não uma lesão epifisária. O **tumor de células gigantes** é epifisário, mas do esqueleto maduro, entre 20 e 40 anos.\n\n**ENNEKING para as lesões benignas** (Campbell, cap. 24, p. 893 e 894, Tabela 24.1). Os estágios benignos usam **números arábicos**, e os malignos, romanos.\n\n| Estágio | O que é | Imagem | Tratamento | Exemplo |\n|---|---|---|---|---|\n| **1 latente** | intracapsular, assintomático, achado incidental | margem nítida, **halo espesso de osso reativo**, sem expansão | **não precisa tratar**; costuma regredir | fibroma não ossificante (Fig. 24.2) |\n| **2 ativo** | intracapsular, **cresce**, sintomas ou **fratura patológica** | margem nítida, pode **expandir e afinar a cortical**, halo fino | **curetagem estendida** | **cisto ósseo aneurismático** da fíbula proximal (Fig. 24.3) |\n| **3 agressivo** | **extracapsular**, não respeita barreiras | rompe o osso reativo e às vezes a cortical; massa de partes moles na RM | curetagem estendida, ressecção marginal ou ampla; **recidiva comum** | **tumor de células gigantes** do fêmur distal (Fig. 24.4) |\n\n**Metástases podem estar presentes em 1% a 5% dos pacientes com lesões do estágio 3, como o tumor de células gigantes** (p. 893). Muitas provas escrevem B1, B2 e B3 (B de benigno) para os mesmos estágios.\n\n**Os outros exames, no Campbell** (cap. 24, p. 891 e 892). A **TC** é a melhor para ossificação, calcificação e cortical, para achar o **nicho do osteoma osteoide**, e **a TC do tórax é o exame mais eficaz para as metástases pulmonares**. A **cintilografia** mostra a atividade e as lesões múltiplas, mas **é falsamente negativa no mieloma e em alguns carcinomas renais**; uma cintilografia normal tranquiliza, mas lesões benignas ativas também captam. A **PET com FDG**, análogo da glicose retido nas células malignas, vem se mostrando útil **no estadiamento, no planejamento da biópsia, na avaliação da resposta à quimioterapia e no seguimento**, separando tumor viável de alterações pós-operatórias, com estudos ainda limitados. A **RM é o exame de escolha para o tamanho, a extensão e as relações anatômicas**; dá o diagnóstico específico no lipoma, no hemangioma, no hematoma e na SVNP, mas na maioria das neoplasias é inespecífica; **qualquer neoplasia de partes moles profunda à fáscia ou maior que 5 cm é provavelmente um sarcoma**. A angiografia serve para a **embolização** do carcinoma renal e do cisto ósseo aneurismático.\n\n**O que a banca quis testar.** Se o candidato usa a idade e o local: epífise + esqueleto imaturo = condroblastoma.\n\n> **Na prova:** epífise IMATURA (10 a 25 anos) = CONDROBLASTOMA (halo esclerótico, calcificação); epífise MADURA (20 a 40) = TCG (sem halo, sem calcificação).",
@@ -4449,90 +4471,97 @@
   "conferido": false
  },
  "tumores-0388": {
+  "conceito": "A pergunta é uma lista de nomes, e dá para resolvê-la pensando no comportamento de cada um. Só um deles é uma neoplasia maligna.\n\nA **doença de KAPOSI**, ou sarcoma de KAPOSI, é um tumor vascular maligno ligado ao herpesvírus humano 8, e o Campbell a cita entre as malignidades oportunistas associadas à AIDS (cap. 20, p. 806). A pele e as mucosas são os lugares típicos, com lesões violáceas, e é esse aspecto que a banca quer lembrar com a palavra \"tumoração\".\n\nAs outras têm comportamento benigno. O **tumor de glomo** é a lesão pequena e muito dolorosa sob a unha, e sua excisão geralmente é curativa (Green, 8ª ed., cap. 60, p. 2253). A **sinovite vilonodular pigmentada** é uma proliferação sinovial que pode ser localmente agressiva e recidivar, mas não é um câncer no sentido habitual. O **rabdomioma** é a versão benigna do tumor de músculo estriado; não confunda com o rabdomiossarcoma, em que a palavra \"sarcoma\" é a pista. O **hemangioma esclerosante** é um nome antigo de uma lesão fibro-histiocitária benigna da pele.\n\n> **Na prova:** olhe o sufixo. \"-oma\" costuma ser benigno, \"sarcoma\" é maligno, e KAPOSI é sarcoma, mesmo sem a palavra na alternativa.",
+  "correta": "**D: doença de Kaposi.** É neoplasia maligna vascular, entre as malignidades associadas à AIDS (Campbell, cap. 20, p. 806).",
   "incorretas": {
-   "A": "**O tumor glômico habitual é benigno.** Costuma formar pequeno nódulo muito doloroso, frequentemente subungueal. Existe variante maligna rara, mas ela não é o tumor glômico comum nomeado na alternativa.",
-   "B": "**Hemangioma esclerosante não é o sarcoma maligno buscado.** O termo designa, no contexto da prova, uma lesão vascular de comportamento benigno; vascularização ou endurecimento não equivalem a malignidade.",
-   "C": "**Sinovite vilonodular pigmentada pode crescer e recidivar localmente, mas não é a resposta maligna típica.** Seu comportamento exige atenção clínica, porém agressividade local não deve ser confundida automaticamente com sarcoma de partes moles.",
-   "E": "**Rabdomioma é neoplasia benigna de músculo.** O sufixo e a origem muscular não bastam para inferir malignidade; o correspondente maligno é o rabdomiossarcoma, que não aparece nas opções."
+   "A": "**Benigno e dolorido.** O tumor de glomo é uma lesão subungueal, e a excisão geralmente é curativa (Green, 8ª ed., cap. 60, p. 2253).",
+   "B": "**Lesão benigna.** O termo descreve uma lesão fibro-histiocitária da pele, sem comportamento de sarcoma.",
+   "C": "**A distratora forte.** Pode invadir e recidivar muito, o que dá uma impressão de malignidade, mas não é um sarcoma.",
+   "E": "**Só parece.** O rabdomioma é benigno, e o que dá medo é o nome parecido com rabdomiossarcoma."
   },
   "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 20, p. 806",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 60, p. 2253",
    "National Cancer Institute. Kaposi Sarcoma Treatment (PDQ). https://www.cancer.gov/types/soft-tissue-sarcoma/patient/kaposi-treatment-pdq",
    "NIH. Human Herpesvirus-8 Disease: Adult and Adolescent Opportunistic Infections Guidelines. https://clinicalinfo.hiv.gov/en/guidelines/hiv-clinical-guidelines-adult-and-adolescent-opportunistic-infections/human-herpesvirus"
   ],
-  "conceito": "A questão pede identificar qual nome, entre as lesões de partes moles, corresponde a uma **neoplasia maligna**. A **doença ou sarcoma de Kaposi** é uma proliferação neoplásica vascular associada ao herpesvírus humano 8 (HHV-8). Pode se manifestar por lesões cutâneas ou mucosas, mas também atingir linfonodos e órgãos internos. O risco e a evolução variam com o estado imune; associá-la exclusivamente a HIV seria incorreto, pois existem outras formas clínicas.\n\nOs distratores têm comportamento habitual diferente. O tumor glômico comum é uma pequena neoplasia dolorosa, em geral benigna; variantes malignas são raras, não a entidade típica nomeada sem qualificativo. Rabdomioma é tumor benigno de diferenciação muscular. Hemangioma esclerosante, no sentido empregado pela banca, é uma lesão vascular benigna. A sinovite vilonodular pigmentada, atualmente frequentemente situada no espectro dos tumores tenossinoviais de células gigantes, pode ser **localmente agressiva** e recidivar, mas não é o exemplo clássico de sarcoma maligno sistêmico entre as opções.\n\nÉ importante separar **agressividade local** de **malignidade**. Uma lesão que invade ou recidiva pode demandar tratamento complexo sem ter o comportamento metastático esperado de uma neoplasia maligna. Do mesmo modo, uma lesão vascular não se torna maligna apenas porque cresce ou sangra. A letra D é escolhida pelo diagnóstico específico, não por alguma característica clínica ou de imagem fornecida no enunciado.",
-  "correta": "**D: doença de Kaposi.** Trata-se de neoplasia maligna vascular associada ao HHV-8. Entre os nomes listados, é o que representa de forma direta uma tumoração maligna de tecidos moles.",
-  "geradoEm": "2026-10-25",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0389": {
+  "conceito": "O adamantinoma é tão raro, menos de 1% das malignidades primárias do osso, que basta lembrar dele quando a lesão está no lugar certo. O Campbell resume (cap. 27, p. 1022): idade de distribuição ampla, com a maioria dos pacientes na **segunda ou terceira década**, e uma \"curiosa predileção\" pela **tíbia, em cerca de 85%**, às vezes com a fíbula do mesmo lado.\n\n**De onde vem?** Provavelmente de ninhos aberrantes de células **epiteliais**, o que explicaria a preferência por um osso subcutâneo, como a face anterior da tíbia (p. 1022). Esse detalhe é útil: um osso subcutâneo permite que o paciente perceba a massa, que muitas vezes é palpável.\n\n**Como se apresenta?** A dor é o sintoma mais comum. Como o crescimento é lento, ela pode existir por anos antes da consulta, e cerca de 20% dos pacientes têm fratura patológica. A radiografia é sugestiva: múltiplas lesões radiolucentes bem delimitadas na diáfise da tíbia (p. 1022). Por isso, o Campbell o lista no diagnóstico diferencial de lesões diafisárias com um lembrete: \"considere na tíbia\" (cap. 24, Box 24.2).\n\n**O tratamento** é cirúrgico, com ressecção ampla. O tumor responde mal a tratamentos adjuvantes, e a questão explora isso ao propor o contrário.",
+  "correta": "**C: ocorre com maior frequência na tíbia.** Em cerca de 85% dos casos, como mostra o Campbell (cap. 27, p. 1022).",
   "incorretas": {
-   "A": "**A distribuição pode ser ampla, mas a maioria não é diagnosticada na quinta ou sexta décadas.** As séries e referências descrevem concentração em jovens, sobretudo da segunda à quarta décadas.",
-   "B": "**“Ninhos de células osteoides” não descrevem a histologia característica.** O adamantinoma tem componente epitelial em meio a tecido osteofibroso; a histogênese exata não torna correta a origem afirmada.",
-   "D": "**A localização cortical anterior pode produzir aumento de volume perceptível.** O tumor cresce lentamente, mas muitas pessoas procuram atendimento por nódulo ou deformidade na face anterior da perna.",
-   "E": "**Quimioterapia e radioterapia isoladas não são o tratamento curativo padrão.** O controle local depende de ressecção cirúrgica oncológica apropriada, planejada após avaliação especializada."
+   "A": "**Idade errada.** A distribuição é ampla, mas a maioria está na segunda ou terceira década, e não na quinta ou sexta (Campbell, cap. 27, p. 1022).",
+   "B": "**Célula errada.** A teoria fala em ninhos de células **epiteliais**, e não osteoides (Campbell, cap. 27, p. 1022).",
+   "D": "**O oposto.** Como a lesão fica em osso subcutâneo, uma massa palpável pode estar presente (Campbell, cap. 27, p. 1022).",
+   "E": "**A ressecção é o tratamento.** Omitir a cirurgia seria errar o princípio. Radioterapia e quimioterapia não substituem a ressecção com margem."
   },
   "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 24, Box 24.2; cap. 27, p. 1022",
    "National Cancer Institute. Adamantinoma. https://www.cancer.gov/pediatric-adult-rare-tumor/rare-tumors/rare-bone-tumors/adamantinoma",
    "American Academy of Orthopaedic Surgeons. Osteofibrous Dysplasia and Adamantinoma. https://www.orthoinfo.org/diseases--conditions/osteofibrous-dysplasia-and-adamantinoma",
    "Orphanet. Adamantinoma. https://www.orpha.net/en/disease/detail/55881"
   ],
-  "conceito": "O **adamantinoma** é um tumor ósseo primário raro, de baixo grau de malignidade, cujo padrão anatômico clássico é a **cortical anterior da tíbia**, especialmente sua diáfise. Em uma questão de localização, essa predileção é mais específica que tentar adivinhar pelo nome do tumor. A fíbula pode participar de lesões na perna, mas a tíbia é, de longe, o osso mais frequente.\n\nSeu crescimento geralmente é lento. O paciente pode notar **aumento de volume na face anterior da perna**, dor ou deformidade; portanto uma lesão cortical superficial não é necessariamente impalpável. Embora a faixa etária seja ampla, muitos diagnósticos ocorrem em adultos jovens, não predominantemente na quinta ou sexta décadas. Histologicamente há **células epiteliais em estroma osteofibroso**. A origem exata não é resolvida pela simples hipótese de “ninhos de células osteoides”, e essa descrição não caracteriza o tumor.\n\nO tratamento exige planejamento oncológico da biópsia e, nos casos indicados, **ressecção cirúrgica adequada**. Radioterapia e quimioterapia isoladas não substituem a remoção do adamantinoma localizado. Como pode haver recorrência ou metástase tardia, o seguimento importa mesmo quando a evolução inicial é indolente.\n\nO contraste com a displasia osteofibrosa da tíbia ajuda a lembrar o sítio compartilhado, mas não autoriza tratar as duas entidades como idênticas: o adamantinoma clássico é maligno e contém componente epitelial neoplásico.",
-  "correta": "**C: ocorre com maior frequência na tíbia.** A predileção pela região cortical anterior da diáfise tibial é a associação anatômica clássica do adamantinoma.",
-  "geradoEm": "2026-10-25",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0390": {
-  "incorretas": {
-   "A": "**Condroblastoma é classificado como tumor benigno, embora possa ser localmente agressivo.** A necessidade de cirurgia ou a possibilidade de recorrência não o transforma, por regra, em tumor cartilaginoso maligno.",
-   "B": "**A localização clássica é epifisária ou apofisária, não diafisária.** Essa relação com a extremidade óssea próxima da articulação é uma das pistas mais úteis do diagnóstico.",
-   "C": "**A patela pode ser acometida, embora raramente.** Há relatos de condroblastoma patelar; uma alternativa que afirma impossibilidade absoluta é incompatível com esses casos.",
-   "E": "**A faixa de 20 a 30 anos não é a descrição mais típica do pico adolescente cobrado pela banca, mas não é impossível.** Há sobreposição com adultos jovens e médias próximas dos 20 anos em algumas séries; por isso D é mais precisa que uma exclusão etária rígida."
-  },
+  "conceito": "Tumor em um adolescente, dentro da epífise. O Campbell dá a regra que simplifica tudo: uma lesão epifisária em paciente esqueleticamente **maduro** provavelmente é um tumor de células gigantes; em paciente **imaturo**, um **condroblastoma** (cap. 24).\n\nO retrato é este, segundo o Campbell (cap. 26, p. 988): é uma neoplasia rara, que ocorre tipicamente entre **10 e 25 anos**, com predomínio masculino de 2 para 1, e representa cerca de 1% dos tumores primários do osso. Prefere epífises ou apófises de ossos longos, como o fêmur distal, o úmero proximal e a tíbia proximal. Como está perto da articulação, a dor pode imitar uma sinovite crônica, e a lesão é bem delimitada na radiografia.\n\n**Benigno, mas não inocente.** O Campbell abre o capítulo com um aviso: essas lesões vão do benigno ao francamente maligno, e, embora o tratamento intralesional, como a curetagem, costume resolver, condroblastomas e tumores de células gigantes podem desenvolver **metástases pulmonares**, em casos raros até fatais (cap. 26, p. 986). Essa agressividade local explica por que a banca os classifica como B2 ou B3 na escala de lesões benignas: ativos ou agressivos, em vez de latentes.",
+  "correta": "**D: classificado como B2 ou B3.** Ou seja, benigno ativo ou agressivo, o que combina com a tendência à recidiva local e com a rara metástase pulmonar (Campbell, cap. 26, p. 986).",
   "alerta": "O gabarito oficial D é sustentado pela classificação biológica de lesões benignas: condroblastomas podem ser B2 (ativos) ou B3 (agressivos). A alternativa E, “costuma ocorrer entre os 20 e 30 anos”, é menos adequada ao pico clássico na adolescência, mas há séries com média de 19 a 23 anos e casos nessa faixa. Não se deve ensinar que condroblastoma seja impossível dos 20 aos 30 anos.",
+  "incorretas": {
+   "A": "**É benigno.** Pode ser agressivo, e até dar metástase pulmonar em casos raros, mas é classificado entre os benignos (Campbell, cap. 26, p. 986).",
+   "B": "**Local errado.** O tumor prefere epífises e apófises (Campbell, cap. 26, p. 988). Diafisário é outro diagnóstico diferencial, como o Ewing.",
+   "C": "**Aparece, sim.** A patela se comporta como uma epífise, e há relatos de condroblastoma nela, como mostram as referências desta questão.",
+   "E": "**Um pouco alta.** O Campbell dá de 10 a 25 anos (cap. 26, p. 988). A idade da alternativa pega só o fim dessa faixa, e o tumor é típico de quem ainda tem a fise aberta."
+  },
   "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 24; cap. 26, p. 986 e 988",
    "Results from Clinical and Radiological Follow-up after Surgical Treatment of Chondroblastoma. Revista Brasileira de Ortopedia, 2012. https://pmc.ncbi.nlm.nih.gov/articles/PMC4799312/",
    "American Academy of Orthopaedic Surgeons. Chondroblastoma. https://www.orthoinfo.org/diseases--conditions/chondroblastoma",
    "Chondroblastoma of the Patella Presenting as Knee Pain in an Adolescent. PubMed. https://pubmed.ncbi.nlm.nih.gov/7773657/"
   ],
-  "conceito": "O **condroblastoma** é uma neoplasia óssea cartilaginosa **benigna**, mas capaz de crescimento local ativo ou agressivo. Surge preferencialmente nas **epífises ou apófises** de ossos longos, perto da superfície articular. A apresentação típica é dor progressiva em adolescente ou adulto jovem; radiografias costumam mostrar lesão lítica relativamente bem delimitada na extremidade do osso. O comportamento local explica por que “benigno” não significa “não precisa de tratamento”.\n\nNa classificação biológica de Enneking para tumores benignos, **B1** é latente, **B2** é ativo e **B3** é agressivo. Séries de condroblastoma descrevem lesões em B2 e B3; uma publicação brasileira, por exemplo, encontrou ambos os estágios em sua casuística. Essa é a base da alternativa D. Trata-se de **estadiamento benigno**, diferente das categorias I, II e III usadas para sarcomas malignos.\n\nAs demais opções trocam elementos do padrão típico por afirmações absolutas. Diáfise não é a sede usual, porque a predileção é epifisária. A patela é uma localização rara, mas **existem casos publicados**, logo “não acomete” é falso. Quanto à idade, o pico costuma estar na segunda década e no começo da terceira; casos entre 20 e 30 anos são possíveis, de modo que a alternativa E não deve ser descartada como biologicamente impossível, apenas não é a formulação classificatória inequívoca que a banca escolheu.",
-  "correta": "**D: classificado como B2 ou B3.** O condroblastoma é benigno, mas pode apresentar comportamento local ativo ou agressivo no sistema de Enneking; séries clínicas documentam ambos os estágios.",
-  "geradoEm": "2026-10-25",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0391": {
-  "incorretas": {
-   "A": "**Não há predomínio feminino na apresentação convencional.** As séries costumam mostrar discreto predomínio masculino; a distribuição varia conforme idade e subtipo, mas a afirmação geral da alternativa inverte a tendência.",
-   "B": "**O principal pico é na adolescência, não especificamente dos 5 aos 10 anos.** A doença acompanha períodos de crescimento rápido, com outro pico mais tardio associado a condições predisponentes.",
-   "D": "**O local clássico é metafisário e próximo ao joelho, especialmente fêmur distal e tíbia proximal.** A “epífise proximal do fêmur” indicada não representa a maior incidência habitual.",
-   "E": "**A frase compara categorias diferentes de modo ambíguo.** Mieloma é neoplasia medular hematológica, não sarcoma; se ele é excluído, o osteossarcoma é frequentemente chamado de sarcoma ósseo primário mais comum. Por isso a opção não é uma contraposição limpa à letra C."
-  },
+  "conceito": "O osteossarcoma é definido por uma única coisa: células malignas que produzem osteoide. O Campbell o abre assim (cap. 27, p. 1009). Ele é o tumor primário maligno **não hematológico** mais comum do osso, com incidência de 1 a 3 por milhão por ano. Essa expressão é importante: o mieloma é mais frequente, mas é uma doença hematológica.\n\n**A idade conta uma história em dois picos.** O osteossarcoma primário de alto grau é mais comum na **segunda década**. O parosteal fica na terceira e quarta décadas. E os **secundários**, que surgem em **doença de PAGET** ou depois de radioterapia, aparecem em pessoas mais velhas (p. 1009). É a alternativa correta, e é a que explica o segundo pico clássico: uma dor nova em um osso com PAGET, em um idoso, nunca é apenas PAGET.\n\n**O sexo.** Há leve predomínio masculino, com exceção do parosteal, mais comum em mulheres (p. 1009).\n\n**Onde?** Na metáfise de ossos longos, em especial ao redor do joelho, e não na epífise proximal do fêmur. A explicação é o crescimento: as metáfises mais ativas são as mais acometidas.",
+  "correta": "**C: pode se desenvolver secundariamente em doença de Paget.** O Campbell cita os osteossarcomas secundários, em PAGET ou depois de radioterapia, em pessoas mais velhas (cap. 27, p. 1009).",
   "alerta": "O gabarito oficial C é inequívoco: osteossarcoma pode surgir sobre doença de Paget. A alternativa E usa redação confusa ao comparar “sarcoma primário do osso” com mieloma, que é neoplasia hematológica da medula, não sarcoma. O osteossarcoma é frequentemente descrito como o sarcoma ósseo primário mais comum quando tumores hematológicos são excluídos; se E pretendia essa formulação, ela se aproxima de uma afirmação verdadeira. A letra oficial deve ser preservada, sem tratar E como erro simples de epidemiologia.",
+  "incorretas": {
+   "A": "**O oposto.** Há leve predomínio masculino; só a forma parosteal é mais comum em mulheres (Campbell, cap. 27, p. 1009).",
+   "B": "**Idade baixa.** O pico é na segunda década, ou seja, na adolescência (Campbell, cap. 27, p. 1009).",
+   "D": "**Local errado.** A preferência é pela metáfise em torno do joelho, e não pela epífise proximal do fêmur.",
+   "E": "**Palavra enganosa.** Ele é o mais comum entre os não hematológicos (Campbell, cap. 27, p. 1009). O mieloma nem é sarcoma, como explica o alerta."
+  },
   "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 27, p. 1009",
    "Merck Manual Professional Edition. Primary Malignant Bone Tumors. https://www.merckmanuals.com/professional/oncology/tumors-of-bones-and-joints/primary-malignant-bone-tumors",
    "UK Guidelines for the Management of Bone Sarcomas. Sarcoma, 2010. https://pmc.ncbi.nlm.nih.gov/articles/PMC3022187/",
    "National Cancer Institute. Primary Bone Cancer. https://www.cancer.gov/types/bone/bone-fact-sheet"
   ],
-  "conceito": "O **osteossarcoma** é um sarcoma ósseo maligno caracterizado pela produção de **osteoide tumoral**. A apresentação convencional tem pico na adolescência, discreto predomínio masculino e predileção por **metáfises de ossos longos**, especialmente ao redor do joelho: fêmur distal e tíbia proximal. Por isso trocar a metáfise distal do fêmur pela epífise proximal do mesmo osso altera o padrão anatômico esperado.\n\nExiste também um grupo de **osteossarcomas secundários**, mais frequente em pacientes idosos. A transformação maligna de osso afetado pela **doença de Paget** é uma associação clássica; radioterapia prévia é outro fator reconhecido. A questão pede apenas se pode acontecer, e a alternativa C responde sem exigir que a associação seja comum em todos os pacientes com Paget.\n\nA comparação de frequência exige denominações precisas. **Mieloma múltiplo** é câncer de células plasmáticas da medula óssea, não sarcoma. Em textos que o contam entre as neoplasias malignas primárias encontradas no osso, pode superar o osteossarcoma; em textos que discutem especificamente **sarcomas ósseos**, o osteossarcoma é frequentemente apontado como o mais comum. A redação da opção E mistura essas categorias e não oferece uma hierarquia epidemiológica clara. O fato comprovado e suficiente para resolver a questão é a possibilidade de osteossarcoma associado a Paget.",
-  "correta": "**C: pode se desenvolver secundariamente na doença de Paget.** Trata-se de associação reconhecida, sobretudo no pico etário mais tardio do osteossarcoma, distinta da forma convencional da adolescência.",
-  "geradoEm": "2026-10-25",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0392": {
-  "incorretas": {
-   "B": "**Cólon pode originar acrometástases, mas fígado e cérebro não formam com ele a lista mais representativa oferecida.** Tumor primário cerebral metastatizando para ossos da mão é excepcional, e a opção omite pulmão.",
-   "C": "**Cólon e estômago podem raramente aparecer em relatos, mas a associação com adrenal não supera a lista com pulmão, mama e rim.** A alternativa deixa de fora as origens mais recorrentes nas séries de mão.",
-   "D": "**Mama é fonte relevante, mas adrenal não completa a resposta.** A opção contém só duas origens e omite pulmão e rim, que aparecem de modo consistente nas revisões de acrometástases.",
-   "E": "**Mama e cólon são possibilidades reais, porém o par é incompleto diante das opções.** A letra A inclui pulmão e rim, fontes importantes para a mão, enquanto E não as contempla."
-  },
+  "conceito": "Dor nova em um osso de quem já tem câncer: é metástase até prova em contrário. O Campbell é enfático: o carcinoma metastático é a malignidade mais comum tratada pelo ortopedista, e de 50% a 80% dos pacientes com carcinoma têm metástase óssea na hora da morte. Ele pede que o cirurgião não adote uma atitude fatalista, porque o tratamento melhora dor, função e independência (cap. 27, p. 1028).\n\n**Dois detalhes do enunciado decidem a questão.**\n\nPrimeiro, a lesão é **osteolítica**. A radiografia pode ser lítica, blástica ou mista. O Campbell ensina: mama e próstata tipicamente produzem lesões blásticas, rim e tireoide costumam ser puramente líticas, e pulmão pode ter aspecto misto (p. 1028).\n\nSegundo, ela está na **mão**. E aqui está a pista mais valiosa: se a lesão é **distal ao cotovelo ou ao joelho, o pulmão é o tumor primário mais provável** (p. 1028). As metástases em osso da mão são chamadas de acrometástases e são raras. O Green registra o mesmo: tumor primário de pulmão é a metástase mais comum na mão, em geral com lesões acrais (7ª ed., cap. 2, p. 58).\n\nPor isso, a alternativa correta reúne os tumores mais lembrados: mama, rim, tireoide e pulmão. Ela vale como lista dos que causam metástase óssea, e não só em osso da mão.",
+  "correta": "**A: mama, rim, tireoide e pulmão.** Reúne os primários que o Campbell cita, com rim e tireoide puramente líticos, e pulmão como o mais provável distal ao cotovelo (cap. 27, p. 1028; Green, 7ª ed., cap. 2, p. 58).",
   "alerta": "O enunciado chama os ossos da mão de “terceiro e quarto metatarso”; na mão são **metacarpos**. Além disso, a letra A é o único agrupamento oferecido que reúne pulmão, mama e rim, fontes frequentes de acrometástases, mas **tireoide é rara** e não deve ser apresentada como igualmente comum. Séries diferem na ordem e podem incluir colorretal entre as origens mais frequentes. Preserva-se o gabarito A com essas ressalvas.",
+  "incorretas": {
+   "B": "**Fígado e cérebro são destinos.** Eles recebem metástases, mas não são os primários clássicos que vão ao osso.",
+   "C": "**Não é a lista clássica.** O Campbell destaca outros primários para lesões líticas e para lesões distais (cap. 27, p. 1028).",
+   "D": "**Incompleta.** Mama é certo, mas a adrenal não está nessa lista e faltam rim, tireoide e pulmão.",
+   "E": "**Só uma.** Mama entra; cólon é mais raro nesse contexto."
+  },
   "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 27, p. 1028",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 2, p. 58",
    "Kerin R. The hand in metastatic disease. Journal of Hand Surgery, 1987;12:77-83. https://pubmed.ncbi.nlm.nih.gov/3543107/",
    "Acrometastasis: a literature review. European Review for Medical and Pharmacological Sciences, 2015. https://pubmed.ncbi.nlm.nih.gov/26241547/",
    "Acrometastasis: The Tip of the Iceberg of Metastatic Disease from Thyroid Cancer. Case Reports in Oncological Medicine, 2023. https://pmc.ncbi.nlm.nih.gov/articles/PMC10447663/"
   ],
-  "conceito": "Uma paciente com câncer conhecido passa a ter **dor focal e lesão lítica na mão**. Metástase distal é rara, mas deve entrar no diagnóstico diferencial ao lado de lesões primárias, infecção e outras causas de destruição óssea. O termo **acrometástase** costuma designar disseminação para segmentos distais dos membros. Na mão, as **falanges distais** aparecem com frequência nas séries; os **metacarpos** também podem ser afetados.\n\nO detalhe anatômico merece correção antes da epidemiologia: **metatarso pertence ao pé; metacarpo, à mão**. A frase do enunciado provavelmente pretende dizer terceiro e quarto metacarpos. Não há imagem anexada para confirmar quais ossos foram radiografados, então o comentário não deve fingir reconhecer o local exato além do texto fornecido.\n\nEntre os tumores primários que mais aparecem nas revisões de metástases da mão, **pulmão** lidera e **mama e rim** são fontes importantes. A ordem exata varia conforme a série e seus critérios; revisões mais recentes também destacam colorretal. Câncer de **tireoide** pode produzir metástase lítica na mão, mas é uma origem **rara**. A opção A é a melhor entre as disponíveis porque concentra três fontes reconhecidamente frequentes e acrescenta uma fonte possível. Não se deve memorizar os quatro nomes como se tivessem igual incidência.\n\nA biópsia indicada no enunciado pode confirmar a natureza da lesão quando o resultado mudará a conduta; em contexto oncológico, seu trajeto e a abordagem local devem ser planejados. A interpretação definitiva depende de correlacionar histologia, câncer primário e objetivos de cuidado da paciente, sem concluir metástase apenas por uma radiografia lítica.",
-  "correta": "**A: mama, rim, tireoide e pulmão, conforme o gabarito oficial.** Pulmão, mama e rim são origens bem reconhecidas de acrometástases; tireoide também pode disseminar para a mão, porém é rara. A lista é a melhor entre as opções, não uma classificação de frequência igual para os quatro órgãos.",
-  "geradoEm": "2026-10-25",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0393": {

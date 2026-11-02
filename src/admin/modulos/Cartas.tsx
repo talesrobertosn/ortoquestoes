@@ -113,7 +113,7 @@ export default function Cartas() {
   }
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Comunicação" titulo={parte.rotulo} pergunta="Cartas do Tales em lote: cada pessoa recebe um texto escrito para ela, só texto, sem logo, assinado “Um abraço, Tales, do Orto Questões”."
+    <Cabeca area="E-mails" titulo={parte.rotulo} pergunta="Cartas do Tales em lote: cada pessoa recebe um texto escrito para ela, só texto, sem logo, assinado “Um abraço, Tales, do Orto Questões”."
       acoes={<a className="a3-botao a3-botao--contorno" href={nav.link('lembretes')} onClick={e => { e.preventDefault(); nav.ir('lembretes') }}><Icone nome="enviar" tamanho={15} />Campanhas prontas</a>} />
     <div className="a3-abas-grandes a3-abas-grandes--4" role="tablist" aria-label="Grupos">
       {SEGMENTOS.map(s => <button key={s.id} type="button" role="tab" aria-selected={segmento === s.id} className="a3-aba-grande" onClick={() => trocarSegmento(s.id)}>

@@ -15,6 +15,8 @@ export interface PagamentoMercadoPago {
   live_mode?: boolean
   point_of_interaction?: { transaction_data?: { ticket_url?: string } }
   status?: string
+  /** Motivo da situação (na recusa: cc_rejected_insufficient_amount, cc_rejected_call_for_authorize…). */
+  status_detail?: string
   date_approved?: string | null
   preapproval_id?: string
   subscription_id?: string

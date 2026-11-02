@@ -39,7 +39,7 @@ export default function Envios() {
   const semana = enviados?.filter(e => Date.now() - Date.parse(e.enviado_em) < 7 * 86_400_000) ?? []
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Comunicação" titulo={parte.rotulo} pergunta={parte.pergunta} />
+    <Cabeca area="E-mails" titulo={parte.rotulo} pergunta={parte.pergunta} />
     {erro && <Faixa tom="erro" titulo="Os e-mails não carregaram">{erro}</Faixa>}
     {enviados && <section className="a3-painel"><div className="a3-faixa-metricas" style={{ '--colunas': 4 } as React.CSSProperties}>
       <Metrica rotulo="Enviados em 7 dias" valor={inteiro(semana.filter(e => e.status === 'enviado').length)} qualidade="confirmado" nota={`dos últimos ${enviados.length} registros`} />

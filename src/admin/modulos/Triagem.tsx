@@ -83,7 +83,7 @@ export default function Triagem() {
   const contagem: Partial<Record<VistaTriagem, number | null>> = { relatos: abertos, avaliacoes: naoLidas, suspeitas: stats ? suspeitas.length : null, faceis: stats ? faceis.length : null }
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Estudo e conteúdo" titulo={parte.rotulo} pergunta={parte.pergunta} />
+    <Cabeca area="Conteúdo" titulo={parte.rotulo} pergunta={parte.pergunta} />
     <div className="a3-abas-grandes a3-abas-grandes--5" role="tablist" aria-label="Filas da triagem">
       {VISTAS.map(([v, r]) => <button key={v} type="button" role="tab" aria-selected={vista === v} className="a3-aba-grande" onClick={() => nav.ajustar({ vista: v })}>
         <span className="a3-aba-grande__numero">{v === 'temas' ? <Icone nome="grafico" tamanho={22} /> : contagem[v] ?? '—'}</span>

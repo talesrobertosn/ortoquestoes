@@ -8,7 +8,9 @@ import { meioDe, vigente, type AssinaturaBase, type Cobranca } from './receita'
  */
 
 export const PLANOS: Record<string, string> = { mensal: 'Mensal', semestral: 'Semestral', anual: 'Anual' }
-export const rotuloPlano = (id: string | null | undefined) => (id ? PLANOS[id] ?? id : '—')
+/** Cortesia (amigos, preceptores, parceiros): no painel conta como assinante, mas nunca paga nem vira possível pagador. */
+export const PLANO_CORTESIA = 'cortesia'
+export const rotuloPlano = (id: string | null | undefined) => (id === 'cortesia' ? 'Cortesia' : id ? PLANOS[id] ?? id : '—')
 
 export const MEIOS: Record<'pix' | 'cartao', string> = { pix: 'Pix', cartao: 'Cartão' }
 export const rotuloMeio = (meio: string | null | undefined) => (meio === 'pix' || meio === 'cartao' ? MEIOS[meio] : '—')
@@ -24,7 +26,7 @@ export const CORTESIA = 'Cortesia'
 export type Tom = 'ok' | 'aviso' | 'ruim' | 'neutro'
 export type ChaveSituacao =
   | 'ativa' | 'cancelada_com_acesso' | 'cancelada' | 'expirada' | 'aguardando_renovacao'
-  | 'pendente' | 'falha_pagamento' | 'reembolsada' | 'pausada' | 'outra'
+  | 'pendente' | 'falha_pagamento' | 'recusado_ao_assinar' | 'reembolsada' | 'pausada' | 'outra'
 export interface Situacao {
   chave: ChaveSituacao
   /** Nome curto, para o selo: "Ativa", "Renovação desligada", "Encerrada". */
@@ -71,7 +73,10 @@ export function situacaoAssinatura(a: AssinaturaBase, agora = Date.now()): Situa
   switch (a.status) {
     case 'reembolsada': return { chave: 'reembolsada', rotulo: 'Reembolsada', tom: 'ruim', detalhe: 'Pagamento devolvido; o acesso pago foi encerrado.' }
     case 'pendente': return { chave: 'pendente', rotulo: 'Pendente', tom: 'aviso', detalhe: 'Aguardando o primeiro pagamento.' }
-    case 'falha_pagamento': return { chave: 'falha_pagamento', rotulo: 'Falha no pagamento', tom: 'ruim', detalhe: 'A cobrança não foi confirmada. Veja Financeiro › Avisos de pagamento.' }
+    // Sem nenhuma cobrança paga, a recusa foi na hora de assinar: a pessoa nunca teve acesso pago (revisão de 02/11/2026).
+    case 'falha_pagamento': return a.ultima_cobranca_em
+      ? { chave: 'falha_pagamento', rotulo: 'Renovação recusada', tom: 'ruim', detalhe: `O cartão foi recusado na renovação e a pessoa pode ficar sem acesso.${a.motivo_falha ? ` Motivo: ${motivoRecusa(a.motivo_falha).texto.toLowerCase()}.` : ''}` }
+      : { chave: 'recusado_ao_assinar', rotulo: 'Cartão recusado ao assinar', tom: 'aviso', detalhe: `Tentou assinar e o cartão não passou. Nada foi cobrado e a pessoa nunca teve acesso pago.${a.motivo_falha ? ` Motivo: ${motivoRecusa(a.motivo_falha).texto.toLowerCase()}.` : ''}` }
     case 'pausada': return { chave: 'pausada', rotulo: 'Pausada', tom: 'neutro', detalhe: 'Pausada no Mercado Pago: não cobra nem libera acesso.' }
     case 'vencida': return { chave: 'expirada', rotulo: 'Expirada', tom: 'neutro', detalhe: acabou ? `O acesso terminou em ${ate}.` : 'O acesso terminou.' }
     case 'cancelada':
@@ -94,6 +99,7 @@ export function proximaData(a: AssinaturaBase & { proxima_cobranca?: string | nu
   const s = situacaoAssinatura(a, agora)
   if (s.chave === 'ativa' && meioDe(a) === 'cartao') return { rotulo: 'Próxima cobrança', valor: a.proxima_cobranca ?? a.fim_periodo ?? null }
   if (s.chave === 'pendente') return { rotulo: 'Acesso até', valor: null }
+  if (s.chave === 'recusado_ao_assinar') return { rotulo: 'Tentou assinar em', valor: a.criada_em ?? a.inicio_periodo ?? null }
   if (s.chave === 'reembolsada') return { rotulo: 'Reembolsada em', valor: a.fim_periodo ?? a.cancelada_em ?? null }
   if (s.chave === 'ativa' || s.chave === 'cancelada_com_acesso') return { rotulo: 'Acesso até', valor: a.fim_periodo ?? null }
   const acabou = !!a.fim_periodo && new Date(a.fim_periodo).getTime() <= agora
@@ -135,4 +141,37 @@ export function compararMeses(atual: number, anterior: number) {
   const delta = atual - anterior
   const pct = anterior ? Math.round((delta / anterior) * 100) : null
   return { delta, pct, sentido: delta > 0 ? 'sobe' as const : delta < 0 ? 'desce' as const : 'igual' as const }
+}
+
+/**
+ * Motivo da recusa do cartão em português (status_detail do Mercado Pago), com o que costuma resolver.
+ * Gravado pelo webhook desde a parte 36 (02/11/2026); recusas anteriores ficam sem motivo.
+ */
+const MOTIVOS: Record<string, [string, string]> = {
+  cc_rejected_insufficient_amount: ['Saldo ou limite insuficiente', 'Tentar outro cartão ou o Pix.'],
+  cc_rejected_bad_filled_security_code: ['Código de segurança (CVV) digitado errado', 'Digitar o cartão de novo com calma.'],
+  cc_rejected_bad_filled_date: ['Data de validade digitada errada', 'Digitar o cartão de novo com calma.'],
+  cc_rejected_bad_filled_card_number: ['Número do cartão digitado errado', 'Digitar o cartão de novo com calma.'],
+  cc_rejected_bad_filled_other: ['Algum dado do cartão digitado errado', 'Digitar o cartão de novo com calma.'],
+  cc_rejected_call_for_authorize: ['O banco pediu para a pessoa autorizar a compra', 'Ligar para o banco (ou aprovar no app) e tentar de novo.'],
+  cc_rejected_card_disabled: ['Cartão bloqueado ou ainda não ativado', 'Ativar o cartão no banco ou usar outro.'],
+  cc_rejected_card_error: ['O cartão não respondeu', 'Tentar de novo em alguns minutos ou usar outro cartão.'],
+  cc_rejected_duplicated_payment: ['Pagamento repetido (já havia um igual)', 'Conferir se a primeira compra passou.'],
+  cc_rejected_high_risk: ['Recusado pelo antifraude do Mercado Pago', 'Usar o Pix ou outro cartão.'],
+  cc_rejected_max_attempts: ['Tentativas demais com o mesmo cartão', 'Esperar um dia ou usar outro cartão.'],
+  cc_rejected_blacklist: ['Cartão impedido pelo Mercado Pago', 'Usar o Pix ou outro cartão.'],
+  cc_rejected_other_reason: ['O banco recusou sem dizer o motivo', 'Falar com o banco ou usar outro cartão.'],
+  cc_rejected_card_type_not_allowed: ['Tipo de cartão não aceito', 'Usar outro cartão de crédito.'],
+  cc_amount_rate_limit_exceeded: ['Passou do limite desse meio de pagamento', 'Usar o Pix ou outro cartão.'],
+  cc_rejected_3ds_challenge: ['Faltou a verificação de segurança do banco', 'Tentar de novo e confirmar no app do banco.'],
+  cc_rejected_3ds_mandatory: ['Faltou a verificação de segurança do banco', 'Tentar de novo e confirmar no app do banco.'],
+  rejected_by_bank: ['O banco recusou', 'Falar com o banco ou usar outro cartão.'],
+  rejected_by_regulations: ['Recusado por regra do banco ou do país', 'Usar o Pix.'],
+  rejected_insufficient_data: ['Faltaram dados da pessoa no pagamento', 'Tentar de novo preenchendo tudo.'],
+  sem_motivo: ['O Mercado Pago não informou o motivo', 'Ver o pagamento no Mercado Pago.'],
+}
+export function motivoRecusa(codigo: string | null | undefined): { texto: string; dica: string; codigo: string | null } {
+  if (!codigo) return { texto: 'Motivo não registrado (recusa anterior a 02/11/2026)', dica: 'O motivo exato aparece no Mercado Pago.', codigo: null }
+  const m = MOTIVOS[codigo]
+  return m ? { texto: m[0], dica: m[1], codigo } : { texto: `Recusado (${codigo})`, dica: 'Ver o pagamento no Mercado Pago.', codigo }
 }

@@ -350,8 +350,16 @@ const contaNaCadencia = (e: EnvioAnterior) => saiu(e) && !TIPOS_TRANSACIONAIS.in
  * Tipos transacionais (Pix termina hoje, pagamento aprovado, obrigado pelo tempo)
  * nunca são bloqueados: são resposta a algo que a pessoa fez.
  */
+/**
+ * Relatórios de estudo (mensal e quinzenal) não esperam a cadência (Tales, 02/11/2026: "não tá indo"): a pessoa
+ * escolheu recebê-los, saem uma vez por período (a trava do banco impede repetir) e quem estuda todo dia
+ * quase sempre recebeu outro e-mail nas últimas 48 h, o que adiava o relatório para sempre. Eles continuam
+ * contando na cadência das outras cartas.
+ */
+export const TIPOS_PERIODICOS: readonly string[] = ['relatorio']
+
 export function cadenciaBloqueia(anteriores: readonly EnvioAnterior[] = [], hoje = new Date(), tipo?: TipoCarta | string | null): string | null {
-  if (tipo && TIPOS_TRANSACIONAIS.includes(tipo)) return null
+  if (tipo && (TIPOS_TRANSACIONAIS.includes(tipo) || TIPOS_PERIODICOS.includes(tipo))) return null
   const validos = anteriores.filter(contaNaCadencia).filter((e) => Number.isFinite(new Date(e.em).getTime()))
   const ultimo = validos.map((e) => diasDesde(e.em, hoje)).filter((d) => d >= 0).sort((a, b) => a - b)[0]
   if (ultimo !== undefined && ultimo * 24 < CADENCIA.horas) {

@@ -40,7 +40,7 @@ As respostas e as páginas do Green apontadas pela correção estão em [dicas/]
 2022, 2023 e 2025 (ids em [docs/importacoes/cirurgia-mao-outubro-2026.md](../importacoes/cirurgia-mao-outubro-2026.md)).
 Comentar no padrão, com o Green, depois das provas da SBCM e do SIMÃO (texto oficial, sem reescrever).
 
-Faltam: SIMÃO 2025 e as provas da SBCM de 2021 e 2025 (se existirem). O SIMÃO 2026 já está publicado.
+Faltam: SIMÃO 2025 e as provas da SBCM de 2021 e 2025 (se existirem; a da SBCM 2025 não está na biblioteca, ver a seção "SBCM 2025: arquivo sem questões"). O SIMÃO 2026 já está publicado.
 
 **SIMÃO 2026: refazer os comentários (pedido do Tales, 20/10/2026).** As 100 questões (mao-1719 a mao-1810;
 ombro-cotovelo-0645 a 0652) estão publicadas, mas com comentário no padrão antigo (mediana de cerca de 3.000
@@ -75,6 +75,53 @@ Copiar para cada prova nova (ex.: `## SIMÃO 2024`):
 |---|---|---|---|---|---|---|---|
 | 1 | | | | | | | a fazer |
 
+## SBCM 2025: arquivo sem questões (02/11/2026)
+
+**Situação: não iniciada, falta a prova.** Nenhuma questão publicada e nenhum lote criado.
+
+`provas/MÃO EXPERT - SBCM 2025.pdf` (e a cópia `(1)`, idêntica) tem 6 páginas de slides e é o **cronograma de estudos** do curso Mão Expert para
+a prova de dezembro de 2024 a março de 2025: calendário de aulas, treinos de questões e simulados, sem enunciado, alternativa ou gabarito.
+Conferido pelo texto extraído e pelas páginas renderizadas; as imagens do PDF são só logotipo e ícones. O nome do arquivo levou ao engano.
+
+Procurado sem achar a prova: nome de arquivo na biblioteca, na Área de Trabalho, em Downloads, Documentos e OneDrive; texto indexado em `.oq/texto`
+(nenhuma menção a uma prova SBCM 2025). As outras cópias em `Desktop/Apagar` têm o mesmo MD5. `TEMAS DE PROVA ORAL atualizado.pdf` lista 2025 entre os
+anos, mas traz só temas da prova oral, que não servem para espelhar questões.
+
+**Para retomar:** quando o Tales mandar o caderno da prova, salvar em `provas/` e seguir a fase 0 do [PROTOCOLO](PROTOCOLO.md), com `PROVA = "SBCM"`,
+`ANO = 2025`, slug `sbcm-2025` e os ids sequenciais livres naquele momento. O cronograma não muda nada nesse fluxo.
+
+## ENARE: filtro e comentários (Tales, 02/11/2026)
+
+**Regra nova:** o ENARE é uma prova só, geral, que dá acesso a R4 como coluna e mão. Todas as questões dele ficam em
+`area: "r4-enare"`; o caderno de Cirurgia da Mão e as questões de tema mão do R4 também levam
+`areasAdicionais: ["cirurgia-mao"]`. No treino há uma categoria e uma pílula "ENARE". A partir de agora, todo comentário
+cita o livro lido.
+
+**Lote 01 aplicado** (`lotes/enare/enare_01.py`): mao-1894, 1896 a 1901 e 1904 (2025); mao-1852, 1853, 1863 a 1869 e 1886 (2023).
+Alertas nas divergências: 1853 (Wang e Yao tratam a ausência de extensor em hipodesenvolvimento), 1863 (Green: paroníquia
+é a mais comum da mão; gabarito de 2023 é o preliminar), 1865 (ordem completa dos dedos não está no Green), além de 1894, 1896 e 1897.
+
+**Lotes 02 a 04 aplicados** (`lotes/enare/enare_02.py` a `enare_04.py`): 15 de pediatria, 4 de trauma e 8 de mão (mao-1811, 1812, 1813, 1820, 1842, 1843, 1850, 1884).
+Alertas: pediatria-1061, 1063, 1066, 1067, 1068, 1069, 1075, 1076; trauma-1727, 1728, 1736; mao-1813, 1820, 1843.
+
+**Lotes 05 a 09 aplicados em 02/11/2026** (`lotes/enare/enare_05.py` a `enare_09.py`): com eles, todas as questões do caderno ENARE Cirurgia da Mão têm comentário.
+Sem livro de plástica na biblioteca, a parte de plástica usa fontes abertas conferidas (StatPearls, PMC, PubMed), identificadas nas referências; quando chegar um livro de plástica, trocar a fonte. Fatos não confirmados ficaram no `alerta`.
+Para revisar com prioridade quando houver livro: pediatria-1074 (GOLDBERG), trauma-1732 (PECORELLI e DELLA TORRE), mao-1888, mao-1881, mao-1911, mao-1931.
+**Refação em miniaula (Tales, 02/11/2026: "não faça uns comentários bosta"):** `lotes/enare/mini_NN.py`, com leitura das páginas, capítulo e página no texto e cada alternativa com motivo próprio. Feitos: quadril-0713, 0710, 0711, 0714; ombro-cotovelo-0653 a 0657; trauma-1733; mao-1909, 1907, 1908, 1906, 1916, 1889, 1875 e 1874; quadril-0709 e 0712; trauma-1721, 1722, 1724, 1726, 1734, 1723, 1735; pediatria-1059, 1064, 1072, 1078, 1082; joelho-0379, 0381; tumores-0388 a 0392. coluna-0558 a 0561, 0563; pé-tornozelo-0424. R4 Ortopedia: ombro-cotovelo-0534, 0538, 0541; pediatria-0503, 0856, 0864, 0866; tumores-0170; trauma-0483, 0484, 1016; coluna-0293, 0358, 0365; mao-0258; pé-tornozelo-0375 (`mini_06.py` e `mini_07.py`). Próximos: joelho-0380, 0382; coluna-0562; pé-tornozelo-0423 (fonte só em artigo); o restante do R4 Ortopedia pela lista dos sem capítulo no texto; depois pele e cicatrização (mao-1878, 1890, 1912, 1891, 1887, 1876, 1841, 1845, 1862, 1911).
+
+**ENARE R4 Ortopedia aplicado em 02/11/2026** (`lotes/enare-r4/r4_01.py` a `r4_06.py`): os 89 comentários antigos sem referência foram relidos nos livros locais e agora têm o campo preenchido, com capítulo e página quando a página impressa foi vista. O Campbell 12 em português entrou em `scripts/livros.py` (`c12v1` a `c12v4`), e boa parte das questões de 2023 e 2024 repete frases dele e do Campbell 14.
+Possíveis erros de gabarito, mantidos com `alerta`: mao-0579 (a B é a frase do Campbell; elevação de 2 minutos, e não 5), pe-tornozelo-0311 (Campbell excisa o hálux medial), pediatria-0510 (a A é a frase do Tachdjian), quadril-0226 (a B é a posição do Campbell), quadril-0228 (a E é a frase do Campbell; abdutores 2,5 vezes o peso), trauma-1005 (a C é a frase do Campbell; côndilos trocados na D).
+Enunciado ou gabarito discutível, também com `alerta`: mao-0263, 0269, 0276, 0277, 0582; pe-tornozelo-0154, 0156; osteometabolicas-0036; quadril-0230; trauma-0486, 1000, 1003; tumores-0316.
+Sem fonte nos livros locais, com fonte aberta ou com o dado apenas mantido, indicado no `alerta`: conceitos-basicos-0124, 0269, 0274 (o epônimo Alexander não foi confirmado); joelho-0124; pe-tornozelo-0309; trauma-0476, 0480, 1006, 1007, 1009, 1012, 1016.
+Fila seguinte: as 56 antigas do caderno da mão têm referência, mas são mais curtas.
+
+**Registro anterior, sem fonte nos livros locais:** pediatria-1057 (limites de angulação do antebraço aos 5 anos), pediatria-1074 (classificação de GOLDBERG),
+trauma-1732 (método de PECORELLI e DELLA TORRE). Faltam conferir nos livros: mao-1814, 1823, 1824, 1835, 1847, 1848, 1851, 1870, 1912, 1913, 1924, 1927 e 1928.
+O Green 7ª ed. (2017, em inglês) entrou na pasta em 02/11/2026, apelido `green7` em `scripts/livros.py`; não traz plástica geral.
+
+**Falta sem livro local:** a cirurgia plástica geral (mama, face, rinoplastia, orelha, queimadura sistêmica, melanoma e pele).
+Não há livro de plástica na biblioteca; pedir ao Tales. As 56 já comentadas antes (mediana de 1.343 caracteres no conceito) entram depois.
+
 ## Retomada atual (25/10/2026)
 
 **SBCM 2023 fechada** no modelo de miniaula (docs/prompts/comentarios-miniaula.md): 99 publicadas (mao-2189 a mao-2277 e
@@ -91,7 +138,7 @@ da correção). Tabelas e figuras do Green: `pdftoppm -r 90 -f FOLHA` e ler a im
 
 **Próximo:** comentar o ENARE de pré-requisito em Cirurgia da Mão (2021/22, 2022/23 e 2024/25; 119 questões sem comentário,
 ids em docs/importacoes/cirurgia-mao-outubro-2026.md), depois SIMÃO 2022, 2024 e 2021, e por fim passar para miniaula
-o SIMÃO 2026. Também há `provas/MÃO EXPERT - SBCM 2025.pdf` na biblioteca: a SBCM 2025 existe e entra na fila.
+o SIMÃO 2026. (Corrigido em 02/11/2026: `provas/MÃO EXPERT - SBCM 2025.pdf` é um cronograma de estudos, não a prova; ver a seção "SBCM 2025: arquivo sem questões".)
 
 ## Piloto de miniaula, 22/10/2026
 

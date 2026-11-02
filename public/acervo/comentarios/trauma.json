@@ -10918,75 +10918,100 @@
   "conferido": false
  },
  "trauma-0476": {
+  "conceito": "**Uma fratura que muda a vida.** A fratura do **fêmur proximal** no idoso (colo e transtrocantérica) é um marcador de fragilidade e um divisor de águas. Mesmo com cirurgia bem feita e reabilitação, o prognóstico funcional é **reservado**. O Rockwood registra maior mortalidade em um ano em homens acima dos 80 anos do que em mulheres e, num trabalho sobre fraturas sem desvio, 19% de óbitos em um ano (cap. 53).\n\n**Quantos voltam ao que eram.** A literatura mostra que apenas cerca de **um terço** dos idosos recupera completamente o nível funcional prévio (marcha, independência nas atividades diárias e capacidade de viver sozinho). Muitos passam a precisar de **andador** ou de ajuda, e uma parte significativa perde a independência e precisa de cuidador ou instituição. Esse dado deve ser discutido com a **família** logo no início, para alinhar expectativas e planejar a alta.\n\n**O que melhora o resultado.** **Cirurgia em até 24 a 48 horas**, com o paciente otimizado clinicamente, sem esperar demais por exames. **Carga total** imediata após a fixação ou artroplastia. **Mobilização precoce**, prevenção de **delirium**, controle da dor com bloqueios regionais, nutrição, prevenção de tromboembolismo e úlceras de pressão. **Cuidado ortogeriátrico** compartilhado com o geriatra reduz mortalidade e complicações.\n\n**Prevenir a próxima fratura.** Toda fratura de fragilidade exige **investigação e tratamento da osteoporose** (densitometria, vitamina D, cálcio e medicação, como bisfosfonato, denosumabe ou anabólicos) e **prevenção de quedas**. Os programas de **Fracture Liaison Service** fazem isso de forma sistemática.\n\n",
+  "correta": "**C: apenas um terço dos idosos que sofrem lesões desse tipo recupera sua condição funcional prévia.** É a estimativa do gabarito, e o recado para a família é o que vale: a fratura costuma marcar perda de independência.",
   "incorretas": {
-   "A": "**Subestima.** Um quarto é pouco; a proporção habitualmente citada é de cerca de um terço.",
-   "B": "**Superestima.** Metade é mais do que se observa na literatura para recuperação completa.",
-   "D": "**Superestima.** Dois terços voltariam ao nível prévio, o que não corresponde aos dados.",
-   "E": "**Muito otimista.** A maioria não recupera o nível funcional prévio após essa fratura."
+   "A": "**Pessimista demais.** Um quarto fica abaixo do que o gabarito adota.",
+   "B": "**Mais otimista que o gabarito.** Em séries de fratura sem desvio ou com implante moderno, mais gente volta a andar como antes, e é daí que vem a tentação.",
+   "D": "**A inversão que confunde.** Dois terços é o grupo que *não* volta, segundo a estimativa adotada; a opção troca o sentido da frase.",
+   "E": "**Conversa perigosa.** Prometer que a maioria se recupera atrapalha o planejamento da alta. Na fratura sem desvio os resultados são melhores, e o Rockwood mostra isso, mas o enunciado fala de todo o grupo."
   },
-  "conceito": "**Uma fratura que muda a vida.** A fratura do **fêmur proximal** no idoso (colo e transtrocantérica) é um marcador de fragilidade e um divisor de águas. Mesmo com cirurgia bem feita e reabilitação, o prognóstico funcional é **reservado**. A mortalidade em **um ano** fica em torno de **20 a 30%**, maior em homens, em pacientes com demência e múltiplas comorbidades, e em quem demora a ser operado.\n\n**Quantos voltam ao que eram.** A literatura mostra que apenas cerca de **um terço** dos idosos recupera completamente o nível funcional prévio (marcha, independência nas atividades diárias e capacidade de viver sozinho). Muitos passam a precisar de **andador** ou de ajuda, e uma parte significativa perde a independência e precisa de cuidador ou instituição. Esse dado deve ser discutido com a **família** logo no início, para alinhar expectativas e planejar a alta.\n\n**O que melhora o resultado.** **Cirurgia em até 24 a 48 horas**, com o paciente otimizado clinicamente, sem esperar demais por exames. **Carga total** imediata após a fixação ou artroplastia. **Mobilização precoce**, prevenção de **delirium**, controle da dor com bloqueios regionais, nutrição, prevenção de tromboembolismo e úlceras de pressão. **Cuidado ortogeriátrico** compartilhado com o geriatra reduz mortalidade e complicações.\n\n**Prevenir a próxima fratura.** Toda fratura de fragilidade exige **investigação e tratamento da osteoporose** (densitometria, vitamina D, cálcio e medicação, como bisfosfonato, denosumabe ou anabólicos) e **prevenção de quedas**. Os programas de **Fracture Liaison Service** fazem isso de forma sistemática.\n\n**Na prova:** só cerca de **um terço** dos idosos com fratura do fêmur proximal recupera o nível funcional prévio; mortalidade em um ano de **20 a 30%**.",
-  "correta": "**Um terço.** Apenas cerca de um terço dos idosos volta ao nível funcional anterior, o que deve ser explicado à família desde o início.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 53 (Femoral Neck Fractures)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 55 (Fractures and Dislocations of the Hip), p. 2932"
+  ],
+  "alerta": "A proporção de um terço é a do gabarito; não a encontrei nos livros locais, que variam conforme o tipo de fratura e o implante (no Campbell, p. 2932, 58% voltam ao estado prévio em um ano em uma série com haste, e no Rockwood a maioria das fraturas sem desvio volta ao nível anterior). O gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0477": {
+  "conceito": "A técnica de **Zaidemberg** (grafada Zeidenberg no enunciado) trata a **pseudartrose do escafoide** com **enxerto ósseo vascularizado** retirado do **lado dorsal do rádio distal**. O Green a considera muito útil para a pseudartrose do escafoide, com a ressalva de um pedículo relativamente curto (cap. 16, p. 704).\n\n**O pedículo**: a **artéria suprarretinacular intercompartimental 1,2** (1,2 ICSRA), que corre na face dorsal do rádio, entre o primeiro e o segundo compartimentos extensores, sobre o retináculo. O enxerto é levantado com essa artéria e rodado até o escafoide.\n\n**A via**: **dorsal** (ou dorsorradial), que dá acesso direto ao **polo proximal**.\n\n**As indicações**: pseudartrose do escafoide com **necrose do polo proximal** ou falha de enxerto não vascularizado, sem grande deformidade em corcunda.\n\n**Para não confundir**:\n\n**Matti-Russe**: enxerto **não vascularizado**, por via volar;\n\n**pronador quadrado** (Kuhlmann, Mathoulin): enxerto vascularizado do rádio **volar**, pela artéria do carpo volar;\n\n**côndilo femoral medial**: enxerto livre vascularizado, para polos proximais muito necróticos ou com colapso.",
+  "correta": "**A: enxerto ósseo vascularizado retirado do lado dorsal do rádio.** É a técnica pediculada na artéria suprarretinacular 1,2, levantada do dorso do rádio distal até o escafoide.",
   "incorretas": {
-   "B": "O enxerto vascularizado do rádio volar é o do pronador quadrado, outra técnica.",
-   "C": "O enxerto não é retirado do estiloide, mas da face dorsal do rádio.",
-   "D": "A tuberosidade do escafoide não é a área doadora.",
-   "E": "O hamato não é a área doadora dessa técnica."
+   "B": "**Rádio certo, face errada.** O enxerto vascularizado volar existe, mas é o que vem com o pronador quadrado, uma técnica diferente.",
+   "C": "**Perto, mas não é o doador.** O pedículo corre perto da estiloide, entre o primeiro e o segundo compartimentos, e o enxerto vem da face dorsal.",
+   "D": "**O próprio osso doente.** A tuberosidade do escafoide faz parte do problema; não seria doadora de enxerto vascularizado.",
+   "E": "**Outro osso do carpo.** O hamato não é usado nessa técnica."
   },
-  "conceito": "A técnica de **Zaidemberg** trata a **pseudartrose do escafoide** com **enxerto ósseo vascularizado** retirado do **lado dorsal do rádio distal**.\n\n**O pedículo**: a **artéria suprarretinacular intercompartimental 1,2** (1,2 ICSRA), que corre na face dorsal do rádio, entre o primeiro e o segundo compartimentos extensores, sobre o retináculo. O enxerto é levantado com essa artéria e rodado até o escafoide.\n\n**A via**: **dorsal** (ou dorsorradial), que dá acesso direto ao **polo proximal**.\n\n**As indicações**: pseudartrose do escafoide com **necrose do polo proximal** ou falha de enxerto não vascularizado, sem grande deformidade em corcunda.\n\n**As outras opções**:\n\n**Matti-Russe**: enxerto **não vascularizado**, por via volar;\n\n**pronador quadrado** (Kuhlmann, Mathoulin): enxerto vascularizado do rádio **volar**, pela artéria do carpo volar;\n\n**côndilo femoral medial**: enxerto livre vascularizado, para polos proximais muito necróticos ou com colapso.\n\n**Na prova**: a técnica de Zaidemberg usa **enxerto vascularizado retirado do lado dorsal do rádio**.",
-  "correta": "Zaidemberg usa enxerto do rádio dorsal, nutrido pela artéria suprarretinacular 1,2, levado ao escafoide.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 16 (Fratura dos ossos do carpo), p. 704"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0478": {
+  "conceito": "**A coluna lateral do pé.** O **cuboide** fica entre o **calcâneo** e as bases do **quarto e quinto metatarsos**, e forma a **coluna lateral** do pé. Suas fraturas isoladas são raras. A mais conhecida é a **fratura em quebra-nozes** (nutcracker), descrita por Hermel e Gershon-Cohen.\n\n**O mecanismo.** **Abdução forçada** do antepé com o pé em flexão plantar, como numa queda de cavalo com o pé preso no estribo ou numa torção. O antepé é empurrado para fora e o cuboide é **esmagado** entre o calcâneo e as bases dos metatarsos laterais, como uma noz no quebra-nozes. A coluna lateral **encurta** por impacção.\n\n**As lesões associadas.** O mesmo movimento de abdução **traciona** a coluna medial. O Rockwood descreve a força indireta causando avulsão, como na lesão em quebra-nozes, com o valgo do mediopé arrancando o **tibial posterior** do navicular medial (cap. 68). Por isso o cuboide em quebra-nozes se associa à **fratura por avulsão da tuberosidade do navicular**. O Campbell acrescenta a associação com lesões de **Lisfranc** e mediotársicas (cap. 89, p. 4460). Uma fratura do cuboide é um **marcador** de lesão do mediopé até prova em contrário.\n\n**O tratamento.** A maioria desvia pouco e vai bem com gesso sem carga por 4 semanas, depois com carga por mais 4. Quando há desvio grave com **encurtamento da coluna lateral**, considera-se a redução aberta com fixação, às vezes com fixador externo (Campbell, cap. 89, p. 4460). As lesões associadas (Lisfranc, navicular) são tratadas em conjunto.\n\n**Na prova:** cuboide em **quebra-nozes** = **abdução** do antepé; associa-se a **avulsão da tuberosidade do navicular** e lesão do **tibial posterior**; procure Lisfranc.",
+  "correta": "**A: fratura da tuberosidade do navicular e lesão do tendão tibial posterior.** A abdução que esmaga o cuboide do lado de fora puxa o lado de dentro, onde o tibial posterior arranca sua inserção.",
   "incorretas": {
-   "B": "**Tendão errado.** O tibial anterior se insere no cuneiforme medial e na base do primeiro metatarso, e não na tuberosidade do navicular.",
-   "C": "**Local errado.** A avulsão associada é da tuberosidade do navicular, e não do colo.",
-   "D": "**Associação não clássica.** A lesão típica associada é do navicular e do tibial posterior.",
-   "E": "**Sem relação.** Os sesamoides ficam sob a cabeça do primeiro metatarso, longe do mecanismo."
+   "B": "**Tendão trocado.** O tibial anterior se insere no cuneiforme medial e na base do primeiro metatarso, e não na tuberosidade do navicular.",
+   "C": "**Local trocado.** A avulsão é da tuberosidade, e não do colo. A tração age onde o tendão se prende.",
+   "D": "**Não é o par clássico.** Cuneiforme e tibial anterior não são as lesões descritas nesse mecanismo.",
+   "E": "**Longe do mecanismo.** Os sesamoides ficam sob a cabeça do primeiro metatarso, sem relação com a abdução do mediopé."
   },
-  "conceito": "**A coluna lateral do pé.** O **cuboide** fica entre o **calcâneo** e as bases do **quarto e quinto metatarsos**, e forma a **coluna lateral** do pé. Suas fraturas isoladas são raras. A mais conhecida é a **fratura em quebra-nozes** (nutcracker), descrita por Hermel e Gershon-Cohen.\n\n**O mecanismo.** **Abdução forçada** do antepé com o pé em flexão plantar, como numa queda de cavalo com o pé preso no estribo ou numa torção. O antepé é empurrado para fora e o cuboide é **esmagado** entre o calcâneo e as bases dos metatarsos laterais, como uma noz no quebra-nozes. A coluna lateral **encurta** por impacção.\n\n**As lesões associadas.** O mesmo movimento de abdução **traciona** a coluna medial. Por isso o cuboide em quebra-nozes se associa à **fratura por avulsão da tuberosidade do navicular**, onde se insere o **tendão tibial posterior**, que pode ser **lesado** junto. Também deve-se procurar a **lesão de Lisfranc** (tarsometatarsal) e fraturas das bases dos metatarsos. Uma fratura do cuboide é um **marcador** de lesão do mediopé até prova em contrário.\n\n**O tratamento.** Fraturas **sem encurtamento** vão bem com bota e carga protegida. Quando há **encurtamento da coluna lateral** ou degrau na articulação calcaneocuboide, a coluna deve ser **restaurada em comprimento**, com redução aberta, enxerto e placa, às vezes com fixador externo ou placa-ponte provisória, para evitar **pé plano abduto** doloroso e artrose. As lesões associadas (Lisfranc, navicular) são tratadas em conjunto.\n\n**Na prova:** cuboide em **quebra-nozes** = **abdução** do antepé; associa-se a **avulsão da tuberosidade do navicular** e lesão do **tibial posterior**; procure Lisfranc.",
-  "correta": "**Fratura da tuberosidade do navicular e lesão do tibial posterior.** A abdução que esmaga o cuboide traciona a coluna medial e arranca a tuberosidade do navicular, onde se insere o tibial posterior.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 89 (Fractures and Dislocations of the Foot), p. 4460",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 68 (Fractures and Dislocations of the Midfoot and Forefoot)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0479": {
+  "conceito": "**A classificação de Fernandez.** Organiza as fraturas do **rádio distal** pelo **mecanismo de trauma** (Campbell 14, cap. 57, p. 3101, Tabela 57.12), o que ajuda a entender a lesão e a escolher o tratamento, e inclui as lesões de partes moles associadas. São cinco tipos.\n\n**Os tipos.** **Tipo I**: **flexão** (bending), fraturas **extra-articulares** metafisárias em que uma cortical falha por tração e a outra por compressão; inclui **Colles** (desvio dorsal) e **Smith** (desvio volar). **Tipo II**: **cisalhamento**, fraturas articulares parciais, como **Barton** dorsal e volar e a do **estiloide radial**. **Tipo III**: **compressão**, com impacção da superfície articular, como a **die-punch**. **Tipo IV**: **avulsão ligamentar**, fraturas por tração de ligamentos, como a avulsão do **estiloide radial** e do **estiloide ulnar**, geralmente associadas a **fratura-luxação radiocarpal**. **Tipo V**: **combinadas**, de **alta energia**, com vários mecanismos juntos e cominuição.\n\n**Por que o tipo IV importa.** A fratura é **pequena**, mas o que ela sinaliza é **grande**: uma **luxação radiocarpal**. Dumontier e colegas descrevem essas variantes, de alta energia, com componentes ósseos e de partes moles; sem reparo meticuloso, os estabilizadores falham, e o carpo pode transladar (Green, cap. 15, p. 636). O tratamento envolve reinserir os ligamentos, fixar os fragmentos de avulsão e, às vezes, fixar provisoriamente o carpo.\n\n**Como o mecanismo orienta a fixação.** Flexão: placa volar ou fios. Cisalhamento: placa de **suporte** (buttress) do lado do fragmento. Compressão: **elevação** do fragmento e enxerto. Avulsão: reinserção e fixação do ligamento. Combinadas: fixação por **colunas** (radial, intermédia e ulnar), fixadores ou placas-ponte.\n\n**Na prova:** Fernandez **I** flexão, **II** cisalhamento, **III** compressão, **IV** **avulsão ligamentar** (fratura-luxação radiocarpal), **V** combinada.",
+  "correta": "**A: avulsão ligamentar associada.** O tipo IV é a fratura por tração dos ligamentos, e o fragmento pequeno é o aviso de uma lesão radiocarpal maior.",
   "incorretas": {
-   "B": "**É o tipo I.** A fratura por flexão (Colles, Smith) corresponde ao tipo I.",
-   "C": "**É o tipo III.** A compressão da superfície articular, como a die-punch, é o tipo III.",
-   "D": "**É o tipo II.** O cisalhamento, como nas fraturas de Barton e do estiloide, é o tipo II.",
-   "E": "**É o tipo V.** As fraturas combinadas de alta energia formam o tipo V."
+   "B": "**Tipo I.** A extensão com compressão, flexão ou angulação, é o mecanismo das fraturas extra-articulares como Colles e Smith.",
+   "C": "**Tipo III.** A compressão articular é o die-punch.",
+   "D": "**Tipo II.** O cisalhamento produz Barton e fratura da estiloide radial.",
+   "E": "**Tipo V.** Complexas ou combinadas são as de alta energia, com vários mecanismos."
   },
-  "conceito": "**A classificação de Fernandez.** Organiza as fraturas do **rádio distal** pelo **mecanismo de trauma**, o que ajuda a entender a lesão e a escolher o tratamento, e inclui as lesões de partes moles associadas. São cinco tipos.\n\n**Os tipos.** **Tipo I**: **flexão** (bending), fraturas **extra-articulares** metafisárias em que uma cortical falha por tração e a outra por compressão; inclui **Colles** (desvio dorsal) e **Smith** (desvio volar). **Tipo II**: **cisalhamento**, fraturas articulares parciais, como **Barton** dorsal e volar e a do **estiloide radial**. **Tipo III**: **compressão**, com impacção da superfície articular, como a **die-punch**. **Tipo IV**: **avulsão ligamentar**, fraturas por tração de ligamentos, como a avulsão do **estiloide radial** e do **estiloide ulnar**, geralmente associadas a **fratura-luxação radiocarpal**. **Tipo V**: **combinadas**, de **alta energia**, com vários mecanismos juntos e cominuição.\n\n**Por que o tipo IV importa.** A fratura é **pequena**, mas o que ela sinaliza é **grande**: uma **luxação radiocarpal**, com lesão dos ligamentos radiocarpais e instabilidade do carpo. Tratar só o fragmento sem reconhecer a instabilidade leva a **translocação ulnar** do carpo e mau resultado. O tratamento envolve reinserir os ligamentos, fixar os fragmentos de avulsão e, às vezes, fixar provisoriamente o carpo.\n\n**Como o mecanismo orienta a fixação.** Flexão: placa volar ou fios. Cisalhamento: placa de **suporte** (buttress) do lado do fragmento. Compressão: **elevação** do fragmento e enxerto. Avulsão: reinserção e fixação do ligamento. Combinadas: fixação por **colunas** (radial, intermédia e ulnar), fixadores ou placas-ponte.\n\n**Na prova:** Fernandez **I** flexão, **II** cisalhamento, **III** compressão, **IV** **avulsão ligamentar** (fratura-luxação radiocarpal), **V** combinada.",
-  "correta": "**Avulsão ligamentar associada.** O tipo IV é a fratura por tração de ligamentos, como a avulsão dos estiloides, que sinaliza fratura-luxação radiocarpal.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 57 (Fractures of the Shoulder, Arm, and Forearm), p. 3101, Tabela 57.12",
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 15 (Fratura do rádio distal), p. 636"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0480": {
+  "conceito": "As **fraturas por estresse das costelas** são típicas dos **remadores** (remo e canoagem): na remada, os músculos que se inserem nas costelas, como o **serrátil anterior** e o oblíquo externo, puxam repetidamente em direções opostas.\n\n**Onde ocorrem**: nas costelas **médias**. Numa revisão, cerca de 86% dos casos com local conhecido em remadores ficaram entre a quarta e a oitava costela, sobretudo na região anterolateral e lateral, onde o serrátil anterior se insere.\n\n**O quadro**: dor na parede lateral do tórax, na **linha axilar média**, que piora à palpação, à respiração profunda e na remada.\n\n**O diagnóstico**: radiografia muitas vezes normal; a **cintilografia** mostra a lesão de estresse cedo, de 1 a 2 semanas depois do início (Rockwood, cap. 24), e a **RM** também ajuda.\n\n**O tratamento**: repouso relativo da atividade e correção da técnica de remada.",
+  "correta": "**C: da quinta à oitava costela.** A faixa cabe no território do serrátil anterior, e a dor na linha axilar média do enunciado aponta para lá.",
   "incorretas": {
-   "A": "As primeiras costelas fraturam em arremessadores e levantadores de peso.",
-   "B": "Da terceira à quinta fica acima da região típica dos remadores.",
-   "D": "As costelas inferiores fraturam mais em esportes de rotação, como o golfe.",
-   "E": "As costelas flutuantes não são o local típico em remadores."
+   "A": "**Alta demais.** O serrátil puxa as costelas médias; as primeiras ficam fora da região típica dos remadores.",
+   "B": "**Sobe além do ponto.** Parte da faixa se sobrepõe à região acometida, mas ela não cobre o centro do problema.",
+   "D": "**Baixa demais para o caso.** As últimas costelas têm menor participação, embora a nona possa aparecer em relatos.",
+   "E": "**Local atípico.** As costelas flutuantes não são onde a remada concentra a tração."
   },
-  "conceito": "As **fraturas por estresse das costelas** são típicas dos **remadores** (remo e canoagem): na remada, os músculos que se inserem nas costelas, como o **serrátil anterior** e o oblíquo externo, puxam repetidamente em direções opostas.\n\n**Onde ocorrem**: nas costelas **médias**, da **quinta à oitava** (às vezes a partir da quarta), na região **anterolateral e axilar**, onde o serrátil anterior se insere.\n\n**O quadro**: dor na parede lateral do tórax, na **linha axilar média**, que piora à palpação, à respiração profunda e na remada.\n\n**O diagnóstico**: radiografia muitas vezes normal; a **cintilografia** ou a **RM** confirmam.\n\n**As outras fraturas por estresse de costela**:\n\n**primeira costela**: em arremessadores e levantadores de peso, pela tração do escaleno;\n\n**costelas inferiores** (nona a décima segunda): em jogadores de golfe e outros esportes de rotação.\n\n**O tratamento**: repouso relativo da atividade por 4 a 6 semanas e correção da técnica de remada.\n\n**Na prova**: a fratura por estresse costal do canoísta ocorre geralmente **da quinta à oitava costela**.",
-  "correta": "O serrátil anterior, que se insere nas costelas médias, as traciona na remada, levando à fratura da quinta à oitava.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 24 (Stress Fractures)",
+   "Rib stress fractures among rowers, revisão (PubMed 21985212); Stress fractures of the ribs in elite competitive rowers (PubMed 17661027)"
+  ],
+  "alerta": "A faixa de costelas em canoístas não aparece nos livros locais. As revisões abertas em remadores situam a maioria dos casos entre a quarta e a oitava costela, o que combina com o gabarito, mas não é a mesma faixa exata.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0481": {
+  "conceito": "**O que é a SIRS.** A **síndrome da resposta inflamatória sistêmica** é a reação generalizada a uma agressão, infecciosa ou não. No politrauma, a lesão tecidual libera mediadores (IL-6, TNF, IL-1) e a resposta se manifesta por alterações de temperatura, frequência cardíaca, respiração e leucócitos. É diagnosticada com **dois ou mais** critérios.\n\n**Os quatro critérios** (consenso de 1992). **Temperatura** acima de **38°C** ou abaixo de **36°C**. **Frequência cardíaca** acima de **90 bpm**. **Frequência respiratória** acima de **20 incursões por minuto** ou **PaCO2 abaixo de 32 mmHg** (a hiperventilação). **Leucócitos** acima de **12.000**, abaixo de **4.000** ou mais de **10% de formas jovens** (bastões). As questões costumam trocar os limites (39°C, 120 bpm, 40 por minuto, 8.000), então vale decorar os números certos.\n\n**Por que o ortopedista precisa saber.** A SIRS intensa no politrauma marca o paciente de **risco**. O Rockwood lembra que a própria fixação da fratura, em paciente mal ressuscitado e conforme a perda sanguínea, pode desencadear a SIRS (cap. 14). Cirurgias longas e sangrantes nesse momento funcionam como um **segundo golpe**. Esse é o racional do **controle de danos ortopédico**: fixador externo rápido e fixação definitiva mais tarde, quando o paciente estiver estável (lactato normal, sem coagulopatia, sem necessidade de vasopressor).\n\n**Na prova:** SIRS = **2 ou mais**: T acima de **38** ou abaixo de **36**; FC acima de **90**; FR acima de **20** ou **PaCO2 abaixo de 32**; leucócitos acima de **12 mil**, abaixo de **4 mil** ou mais de 10% de bastões.",
+  "correta": "**D: PaCO2 abaixo de 32 mmHg.** É o critério respiratório alternativo à frequência acima de 20, e o único número da lista sem alteração.",
   "incorretas": {
-   "A": "**Limites errados.** Os valores corretos são acima de 38°C ou abaixo de 36°C.",
-   "B": "**Limite errado.** O critério é frequência cardíaca acima de 90 bpm.",
-   "C": "**Limite errado.** O critério é frequência respiratória acima de 20 por minuto.",
-   "E": "**Limite errado.** O critério é leucócitos acima de 12.000, abaixo de 4.000 ou mais de 10% de formas jovens."
+   "A": "**Limites deslocados.** Os cortes são 38 e 36 graus. Com 39 e 34, muita gente com SIRS ficaria de fora.",
+   "B": "**Corte alto demais.** A frequência cardíaca do critério é acima de 90.",
+   "C": "**O dobro do corte.** A frequência respiratória é acima de 20.",
+   "E": "**Número inventado.** Leucócitos entram acima de 12 mil, abaixo de 4 mil ou com mais de 10% de formas jovens. Oito mil está dentro do normal."
   },
-  "conceito": "**O que é a SIRS.** A **síndrome da resposta inflamatória sistêmica** é a reação generalizada a uma agressão, infecciosa ou não. No politrauma, a lesão tecidual libera mediadores (IL-6, TNF, IL-1) e a resposta se manifesta por alterações de temperatura, frequência cardíaca, respiração e leucócitos. É diagnosticada com **dois ou mais** critérios.\n\n**Os quatro critérios.** **Temperatura** acima de **38°C** ou abaixo de **36°C**. **Frequência cardíaca** acima de **90 bpm**. **Frequência respiratória** acima de **20 incursões por minuto** ou **PaCO2 abaixo de 32 mmHg** (a hiperventilação). **Leucócitos** acima de **12.000**, abaixo de **4.000** ou mais de **10% de formas jovens** (bastões). As questões costumam trocar os limites (39°C, 120 bpm, 40 por minuto, 8.000), então vale decorar os números certos.\n\n**Por que o ortopedista precisa saber.** A SIRS intensa no politrauma marca o paciente de **risco**. Cirurgias longas e sangrantes nesse momento funcionam como um **segundo golpe** e podem desencadear **SDRA** e **falência de múltiplos órgãos**. Esse é o racional do **controle de danos ortopédico**: fixador externo rápido e fixação definitiva mais tarde, quando o paciente estiver estável (lactato normal, sem coagulopatia, sem necessidade de vasopressor).\n\n**Os sinais de ressuscitação adequada.** **Lactato abaixo de 4 mmol/L** (idealmente normalizado), **pH** acima de 7,25, **excesso de bases** melhor que menos 5,5, diurese adequada e estabilidade hemodinâmica sem drogas. O conceito de **Early Appropriate Care** usa esses parâmetros para indicar a fixação definitiva precoce, em até 36 horas.\n\n**Na prova:** SIRS = **2 ou mais**: T acima de **38** ou abaixo de **36**; FC acima de **90**; FR acima de **20** ou **PaCO2 abaixo de 32**; leucócitos acima de **12 mil**, abaixo de **4 mil** ou mais de 10% de bastões.",
-  "correta": "**PaCO2 abaixo de 32 mmHg.** É um dos critérios da SIRS, alternativo à frequência respiratória acima de 20, refletindo a hiperventilação.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 14 (Management of the Multiply Injured Patient)",
+   "Bone RC et al., Definitions for sepsis and organ failure, Chest, 1992 (PubMed 1303622)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0482": {
@@ -11044,113 +11069,68 @@
   }
  },
  "trauma-0483": {
-  "conceito": "Na classificação de Herbert, a letra **C** descreve retardo de consolidação. Ela informa o estado de evolução da fratura, e não simplesmente o local do traço ou a viabilidade do polo proximal.\n\nO resumo separa as fraturas agudas estáveis do grupo A, as agudas instáveis do B, o retardo C e a pseudartrose D. Na forma C, descreve persistência do traço, alargamento e alterações como cistos; na D, distingue a pseudartrose fibrosa da esclerótica.\n\nUma localização proximal aumenta a preocupação com a biologia da união, mas não basta para classificar uma lesão como retardo. Da mesma forma, investigar necrose é uma pergunta de viabilidade que não substitui o critério temporal e de evolução da consolidação. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de Herbert/Fisher e pseudartrose.",
-  "correta": "Correta: E (retardo de consolidação). É a definição expressa do tipo C. A classificação distingue atraso de união, pseudartrose e localização anatômica, evitando usá-los como sinônimos.",
+  "conceito": "A classificação de HERBERT e FISHER olha o escafoide por uma pergunta que importa ao cirurgião: é preciso fixar? O Green resume a ideia central: fraturas estáveis, como as incompletas ou as do tubérculo, são do **tipo A** e podem ser imobilizadas, com alta expectativa de consolidação. Todas as outras foram consideradas potencialmente instáveis, com fixação rígida, um ponto ainda controverso (7ª ed., cap. 16, p. 593).\n\nA sequência completa conta a história natural da fratura. Dá para pensar em letras em ordem de gravidade: **A**, aguda estável; **B**, aguda instável; **C**, **retardo de consolidação**; **D**, pseudoartrose, fibrosa ou esclerótica. O tipo C é o momento em que a fratura ainda não consolidou no tempo esperado, mas ainda não formou uma pseudoartrose definitiva.\n\n**Vale saber a limitação.** O Green cita que DESAI e colaboradores não conseguiram prever a consolidação no tratamento fechado nem com a classificação de RUSSE nem com a de HERBERT (p. 593). O autor do capítulo prefere uma classificação mais próxima dos casos reais. Por isso, a prova cobra o nome, mas a decisão clínica depende também de outros dados: mais de 1 mm de desvio, ângulo intraescafoide acima de 35 graus, perda óssea e fratura do polo proximal são sinais de instabilidade (p. 593).",
+  "correta": "**E: retardo de consolidação.** É o tipo C da classificação de HERBERT, depois das agudas A e B, e antes da pseudoartrose D (resumo \"Fraturas e luxações do carpo\"; Green, 7ª ed., cap. 16, p. 593).",
+  "alerta": "O Green descreve a lógica de estabilidade da classificação de HERBERT e FISHER e detalha o tipo A, mas o trecho lido não lista os demais tipos; a correspondência C com retardo de consolidação vem do resumo citado. Letra E mantida.",
   "incorretas": {
-   "A": "A pseudartrose fibrosa corresponde a D1 no resumo. Ela pertence ao grupo D de não união, e não ao C de retardo; a alternativa troca a categoria de evolução da consolidação.",
-   "B": "Necrose avascular é um problema de viabilidade do fragmento. A fonte discute sua avaliação separadamente, inclusive pelo sangramento intraoperatório, mas não define C como necrose.",
-   "C": "Fratura do polo proximal é B3 na descrição das fraturas agudas. A localização pode influenciar o risco de não união, mas não equivale ao diagnóstico de retardo C.",
-   "D": "Polo distal informa onde ocorreu a fratura, sem demonstrar atraso de consolidação. O tipo C exige considerar a evolução da união, e não apenas nomear uma extremidade do osso."
+   "A": "**É o passo seguinte.** A pseudoartrose fibrosa entra no tipo D, já com a consolidação falha.",
+   "B": "**Complicação, não tipo C.** A necrose avascular ameaça principalmente o polo proximal, mas não é esse tipo.",
+   "C": "**É uma fratura aguda.** O polo proximal é um sinal de instabilidade (Green, 7ª ed., cap. 16, p. 593), e pertence às agudas instáveis, e não ao tipo C.",
+   "D": "**Também aguda.** O polo distal é o tipo menos comum, com cerca de 10% (Green, 7ª ed., cap. 16, p. 591), e a própria alternativa descreve localização, e não tempo."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 16, p. 591 e 593",
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: classificação de Herbert e Fisher; Escafoide: consolidação viciosa e pseudartrose."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: classificação de Herbert e Fisher",
-      "Escafoide: consolidação viciosa e pseudartrose"
-     ],
-     "blocos": [
-      "escafoide-classificacao-de-herbert-e-fisher-15c87e8c",
-      "escafoide-classificacao-de-herbert-e-fisher-d0ae7a5a",
-      "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039"
-     ],
-     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
-     "trechosSha256": "537ec8e56072b3b570e32609b97854fcfea4c8a16843392be4b0891fa6b20ebf"
-    }
-   ],
-   "questaoSha256": "c128a44c5baa2b9c7de3e6def657e093c94f7b107c62d4c1f3ec6eb38f521e87",
-   "comentarioSha256": "bf60aa1b7c965b94d49ca742a38c24cba1fefc3fa4f905910f262826f68c4dac"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "trauma-0484": {
-  "conceito": "O escafoide fratura mais frequentemente na **cintura**, que corresponde à sua região média. No mecanismo habitual de carga com o punho em dorsiflexão máxima e desvio radial, o polo proximal fica contido e a força dobra o osso; a cintura recebe o maior momento de flexão e tem menos trabéculas.\n\nLocalização frequente e prognóstico não são a mesma pergunta. O polo proximal tem particular dificuldade de irrigação e consolidação, mas isso não o torna o local mais comum. Fraturas do tubérculo e do polo distal também têm mecanismos e condutas próprios.\n\nA classificação por localização se organiza em polo proximal, cintura e polo distal. Radial e ulnar são direções do punho e não substituem a identificação da região média que a fonte aponta como predominante. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de mecanismo e classificação do escafoide.",
-  "correta": "Correta: E (meio do osso). Corresponde à cintura, local de maior frequência descrito. O mecanismo de flexão do escafoide e a arquitetura local fornecem a explicação, além da simples memorização do nome.",
+  "conceito": "Um jovem cai com a mão estendida e sente dor na tabaqueira anatômica. Por que a fratura aparece sempre no mesmo lugar? O Green responde com os números e o mecanismo (7ª ed., cap. 16, p. 591):\n\n| Local | Frequência |\n|---|---|\n| Cintura | 70% |\n| Polo proximal | 20% |\n| Polo distal | 10% |\n\n**A razão está em um ligamento.** O escafoide é um osso longo, em forma de amendoim, que une as duas fileiras do carpo. O ligamento radioescafocapitato cruza a face palmar da cintura e funciona como um **fulcro**: em extensão, o osso se dobra sobre ele e quebra ali (p. 591). A própria dor na tabaqueira é um sinal que vale sobretudo para as fraturas de cintura, como diz o Green.\n\n**Por que o local importa?** Por causa da circulação. O sangue chega principalmente de distal para proximal, e por isso quanto mais proximal a fratura, maior o risco de pseudoartrose e de necrose. A fratura da cintura costuma ir bem, com o tratamento certo. A do polo proximal é tratada com mais cuidado, e o Green a coloca entre os critérios de instabilidade (p. 593).\n\nNa prova, \"meio do osso\" é a maneira leiga de dizer cintura, e a banca aposta que você procure a palavra técnica.",
+  "correta": "**E: meio do osso.** É a cintura, com cerca de 70% das fraturas, onde o ligamento radioescafocapitato funciona como fulcro (Green, 7ª ed., cap. 16, p. 591).",
   "incorretas": {
-   "A": "O polo proximal importa pelo risco biológico, já que depende de fluxo intraósseo retrógrado. Maior dificuldade de cura não significa maior incidência: a fonte situa a predominância na cintura.",
-   "B": "A porção distal inclui padrões como fraturas do tubérculo por compressão ou avulsão. Elas existem e têm particularidades, mas não ocupam o lugar da cintura como localização mais comum na descrição consultada.",
-   "C": "Radial nomeia uma direção lateral e aparece no desvio do punho que participa do mecanismo. Não é uma forma de substituir cintura ou região média na classificação longitudinal da fratura.",
-   "D": "Ulnar também é uma direção do punho, não a região longitudinal que a questão procura. Confundir o sentido do desvio com o local do traço deixa de identificar a cintura, explicitamente descrita como mais comum."
+   "A": "**É a segunda.** O polo proximal responde por cerca de 20%, e é o de pior prognóstico (Green, 7ª ed., cap. 16, p. 591).",
+   "B": "**É a menos comum.** O polo distal responde por cerca de 10% (Green, 7ª ed., cap. 16, p. 591).",
+   "C": "**Descreve o lado do osso.** O termo não é uma região de fratura usual, e o escafoide é descrito por seus polos e pela cintura.",
+   "D": "**Mesmo problema.** A face ulnar se articula com o semilunar e o capitato, sem ser a localização descrita para a fratura."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 16, p. 591 e 593",
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Escafoide: classificação de Herbert e Fisher."
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: anatomia, irrigação e mecanismo",
-      "Escafoide: classificação de Herbert e Fisher"
-     ],
-     "blocos": [
-      "escafoide-anatomia-irrigacao-e-mecanismo-ca12c5a0",
-      "escafoide-anatomia-irrigacao-e-mecanismo-02f7a0bf",
-      "escafoide-classificacao-de-herbert-e-fisher-62750cf0",
-      "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
-      "escafoide-anatomia-irrigacao-e-mecanismo-004adf59"
-     ],
-     "sha256": "cd22b84b06c8f7d2ce87c965be22edd1f54626649e388aec013ac3af07bf5ce0",
-     "trechosSha256": "2e11b52ea072f5f68eff5aea6424cd347bb523e13a091074b0aa2afbe0fbc052"
-    }
-   ],
-   "questaoSha256": "f7f3472b488bc15e8d2be43c1b48f884296898dd92984202dcc0e91150c6c6a7",
-   "comentarioSha256": "aadf0d33ed63a27ea4f5929dc43f8d907ff21b558a967a46f4478eb04d9f72c8"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "trauma-0485": {
+  "conceito": "**Os três tipos de fechamento.** **Primeira intenção** (per primam): as bordas são **aproximadas** logo após a limpeza, com sutura, grampos ou adesivo; a cicatriz é mínima e rápida, com pouco tecido de granulação. **Segunda intenção**: a ferida fica **aberta** e fecha sozinha por **granulação**, **contração** (miofibroblastos) e **epitelização** a partir das bordas; é lenta e deixa cicatriz maior, mas é segura em feridas contaminadas ou com perda de tecido. **Terceira intenção**, ou **fechamento primário tardio**: a ferida fica aberta por alguns dias (3 a 7), limpa-se de novo e, se estiver sem infecção, é **suturada** depois.\n\n**Por que isso importa nas fraturas expostas.** O Manual AO lembra que os defeitos maiores continuaram por muito tempo a ser deixados abertos, para cicatrizar por segunda intenção (cap. 4.2). O dogma antigo era **nunca fechar** uma fratura exposta primariamente. Hoje, em feridas de **baixa contaminação**, com desbridamento completo, sem tecido desvitalizado e sem tensão, o **fechamento primário** (primeira intenção) é aceitável e reduz infecções hospitalares. Em feridas contaminadas (agrícolas, esgoto), Gustilo III, com tecido duvidoso, prefere-se deixar aberta, com **terapia por pressão negativa** e **novo desbridamento** em 24 a 72 horas, com **fechamento tardio** ou **cobertura** com retalho, idealmente em até **7 dias**.\n\n**Não confundir com o osso.** \"Consolidação **primária**\" é um termo do **osso**: a consolidação direta, sem calo, que ocorre com **estabilidade absoluta** e contato entre os fragmentos (placa de compressão). A **secundária** forma calo, com estabilidade relativa (haste, gesso). Por isso, para a ferida suturada, o termo técnico da banca é **primeira intenção**.\n\n**Na prova:** ferida limpa e **suturada logo** = **primeira intenção**; deixada aberta = **segunda**; aberta e suturada dias depois = **terceira** (fechamento primário tardio).",
+  "correta": "**C: cicatrização por primeira intenção.** Limpar e aproximar as bordas com pontos logo em seguida é a definição. O termo é sobre o fechamento da ferida, e não sobre o tamanho dela.",
   "incorretas": {
-   "A": "**Termo impreciso.** \"Primária\" é usado de forma coloquial, mas o termo técnico para a ferida suturada é primeira intenção; no osso, \"primária\" é a consolidação sem calo.",
-   "B": "**Termo impreciso.** \"Secundária\" também é termo do osso (consolidação com calo); para a ferida aberta, fala-se em segunda intenção.",
-   "D": "**Ferida aberta.** Na segunda intenção a ferida fica aberta e fecha por granulação e contração.",
-   "E": "**Sutura tardia.** Na terceira intenção a ferida fica aberta alguns dias e só depois é suturada."
+   "A": "**Quase, mas é outro vocabulário.** \"Primária\" é coloquial, e em ortopedia evoca a consolidação óssea sem calo. Muitos usariam como sinônimo; a banca pediu o termo técnico da ferida.",
+   "B": "**Mesmo raciocínio.** \"Secundária\" é o termo do osso que consolida com calo; a ferida aberta é por segunda intenção.",
+   "D": "**Ferida aberta.** Na segunda intenção, a ferida fecha sozinha por granulação e contração, como nas feridas deixadas abertas (Rockwood, cap. 15).",
+   "E": "**Sutura tardia.** Na terceira intenção, a ferida fica aberta alguns dias e só depois é fechada, o chamado fechamento primário tardio."
   },
-  "conceito": "**Os três tipos de fechamento.** **Primeira intenção** (per primam): as bordas são **aproximadas** logo após a limpeza, com sutura, grampos ou adesivo; a cicatriz é mínima e rápida, com pouco tecido de granulação. **Segunda intenção**: a ferida fica **aberta** e fecha sozinha por **granulação**, **contração** (miofibroblastos) e **epitelização** a partir das bordas; é lenta e deixa cicatriz maior, mas é segura em feridas contaminadas ou com perda de tecido. **Terceira intenção**, ou **fechamento primário tardio**: a ferida fica aberta por alguns dias (3 a 7), limpa-se de novo e, se estiver sem infecção, é **suturada** depois.\n\n**Por que isso importa nas fraturas expostas.** O dogma antigo era **nunca fechar** uma fratura exposta primariamente. Hoje, em feridas de **baixa contaminação**, com desbridamento completo, sem tecido desvitalizado e sem tensão, o **fechamento primário** (primeira intenção) é aceitável e reduz infecções hospitalares. Em feridas contaminadas (agrícolas, esgoto), Gustilo III, com tecido duvidoso, prefere-se deixar aberta, com **terapia por pressão negativa** e **novo desbridamento** em 24 a 72 horas, com **fechamento tardio** ou **cobertura** com retalho, idealmente em até **7 dias**.\n\n**As fases da cicatrização.** **Hemostasia** e **inflamação** (primeiros dias: plaquetas, neutrófilos, macrófagos), **proliferação** (fibroblastos, colágeno tipo III, angiogênese, granulação, epitelização) e **remodelação** (meses: troca por colágeno tipo I, ganho de resistência, que chega a cerca de 80% da pele normal).\n\n**Não confundir com o osso.** \"Consolidação **primária**\" é um termo do **osso**: a consolidação direta, sem calo, que ocorre com **estabilidade absoluta** e contato entre os fragmentos (placa de compressão). A **secundária** forma calo, com estabilidade relativa (haste, gesso). Por isso, para a ferida suturada, o termo técnico da banca é **primeira intenção**.\n\n**Na prova:** ferida limpa e **suturada logo** = **primeira intenção**; deixada aberta = **segunda**; aberta e suturada dias depois = **terceira** (fechamento primário tardio).",
-  "correta": "**Cicatrização por primeira intenção.** A sutura das bordas logo após a limpeza aproxima diretamente a ferida, o que define a cicatrização por primeira intenção.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Manual AO de Princípios do Tratamento de Fraturas, 2ª ed., cap. 4.2 (Fraturas expostas)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 15 (Gunshot and Wartime Injuries)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0486": {
+  "conceito": "O **escafoide** é o osso do carpo **mais fraturado**: responde por 60% a 70% de todas as fraturas do carpo (Green, cap. 16, p. 677), sobretudo por **queda** com o punho em hiperextensão e desvio radial.\n\n**O quadro típico da fratura do escafoide**: dor e inchaço na **tabaqueira anatômica** e no tubérculo do escafoide, dor à compressão axial do polegar; a **extensão ativa dos dedos** fica preservada.\n\n**O quadro do enunciado**: um objeto pesado caindo sobre o **dorso da mão**, com deformidade e **incapacidade de estender os dedos**. Esse quadro sugere lesão por **esmagamento**, com fraturas dos **metacarpos** ou lesão dos **tendões extensores**, e não o padrão clássico do escafoide.\n\nO gabarito fica com o escafoide pela frequência; a clínica aponta para outro lugar, como explica o alerta.\n\n**Os outros ossos**: **trapézio**, **pisiforme**, **capitato** e **trapezoide** fraturam com menos frequência; o capitato e o trapezoide em geral junto a lesões de alta energia.",
+  "correta": "**A: osso escafoide.** É o gabarito oficial, sustentado só por ser o osso do carpo mais fraturado. O quadro clínico descrito não combina com ele; veja o alerta.",
   "incorretas": {
-   "B": "A fratura do trapézio é menos frequente.",
-   "C": "A fratura do pisiforme é rara, em geral por queda sobre a eminência hipotenar.",
-   "D": "A fratura do capitato é rara e aparece em lesões de alta energia.",
-   "E": "A fratura do trapezoide é a mais rara do carpo."
+   "B": "**Menos frequente.** A fratura do trapézio costuma vir com dor na base do polegar, e não com impossibilidade de estender os dedos.",
+   "C": "**Rara.** O pisiforme fratura por queda sobre a eminência hipotenar, na face palmar, longe do trauma dorsal.",
+   "D": "**Rara, de alta energia.** O capitato costuma fraturar associado a lesões maiores do carpo.",
+   "E": "**A mais rara.** O trapezoide é pouco exposto, encaixado entre os vizinhos."
   },
-  "conceito": "O **escafoide** é o osso do carpo **mais fraturado** (cerca de 70% das fraturas do carpo), sobretudo por **queda** com o punho em hiperextensão e desvio radial.\n\n**O quadro típico da fratura do escafoide**: dor e inchaço na **tabaqueira anatômica** e no tubérculo do escafoide, dor à compressão axial do polegar; a **extensão ativa dos dedos** fica preservada.\n\n**O quadro do enunciado**: um objeto pesado caindo sobre o **dorso da mão**, com deformidade e **incapacidade de estender os dedos**. Esse quadro sugere lesão por **esmagamento**, com fraturas dos **metacarpos** ou lesão dos **tendões extensores**, e não o padrão clássico do escafoide.\n\n**O gabarito**: a banca indicou o **escafoide**, o osso do carpo mais frequentemente fraturado.\n\n**Os outros ossos**: **trapézio**, **pisiforme**, **capitato** e **trapezoide** fraturam com menos frequência; o capitato e o trapezoide em geral junto a lesões de alta energia.\n\n**Na prova**: a banca indicou o **osso escafoide**.",
-  "correta": "A banca considerou o escafoide, o osso do carpo mais frequentemente fraturado.",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 16 (Fratura dos ossos do carpo), p. 677"
+  ],
   "alerta": "O quadro clínico descrito no enunciado não corresponde a uma fratura do escafoide: deformidade dorsal e INCAPACIDADE DE ESTENDER OS DEDOS após esmagamento no dorso da mão apontam para lesão dos tendões extensores ou fratura dos metacarpos. A fratura do escafoide preserva a extensão ativa dos dedos e se manifesta por dor na tabaqueira anatômica e no tubérculo. A resposta do gabarito se sustenta apenas pela frequência do escafoide entre as fraturas do carpo; o enunciado merece conferência.",
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-0530": {
@@ -20958,16 +20938,19 @@
   }
  },
  "trauma-1000": {
+  "conceito": "**Os meniscos.** São fibrocartilagens em forma de **C** (o **medial**, mais aberto e em forma de meia-lua, maior atrás) e de **O** (o **lateral**, mais circular e mais móvel). Distribuem a carga, aumentam a **área de contato** entre fêmur e tíbia, absorvem impacto, contribuem para a **estabilidade** e a propriocepção. A **vascularização** vem da periferia (zona vermelha, o terço externo), e a zona branca, interna, não cicatriza bem.\n\n**As estruturas acessórias.** O corno posterior do menisco lateral costuma ter ancoragem ao fêmur pelos ligamentos de Wrisberg e de Humphry (Campbell, cap. 45, p. 2213). Esses **ligamentos meniscofemorais** vão até o **côndilo femoral medial**, junto ao LCP. O de **Humphry** passa **anterior** ao LCP; o de **Wrisberg**, **posterior** a ele. Estão presentes em boa parte dos joelhos e podem simular uma lesão ou um LCP duplo na ressonância. O **ligamento transverso** (intermeniscal) liga os **cornos anteriores** dos dois meniscos. O **corno posterior do medial** é **maior** (mais largo) que o anterior e é firmemente preso à tíbia.\n\n**A função biomecânica.** A meniscectomia medial diminui a área de contato em **50 a 70%** e aumenta o estresse de contato em 100%; a lateral diminui em **40 a 50%**, mas aumenta o estresse em 200 a 300% (Campbell, cap. 45, p. 2212). O **corno posterior do menisco medial** é um estabilizador **secundário** importante contra a **translação anterior** da tíbia no joelho **sem LCA**; por isso, joelhos com LCA roto desenvolvem lesões do medial com o tempo, e a reconstrução do LCA protege o menisco. O **menisco lateral** contribui para o controle **rotacional** (pivot shift).\n\n**Na prática.** Preservar o menisco sempre que possível: **sutura** das lesões periféricas, verticais e das raízes, e **meniscectomia parcial** mínima nas lesões irreparáveis. Lesões da **raiz** posterior do medial equivalem funcionalmente a uma meniscectomia total e devem ser reparadas quando possível.\n\n**Na prova:** Humphry **anterior** ao LCP, Wrisberg **posterior**; transverso liga os cornos **anteriores**; corno posterior do **medial** é estabilizador secundário sem LCA.",
+  "correta": "**B: o ligamento de Humphry passa anteriormente ao ligamento cruzado posterior.** É o ligamento meniscofemoral anterior; o de Wrisberg passa por trás. Uma frase simples e sem exceção.",
   "incorretas": {
-   "A": "**Afirmação sem sentido.** O corno que é maior no menisco medial é o posterior, e a frase compara o corno anterior com ele mesmo.",
-   "C": "**Liga os cornos anteriores.** O ligamento transverso une os cornos anteriores dos meniscos medial e lateral.",
-   "D": "**Valor impreciso.** A meniscectomia total reduz muito a área de contato, com valores de 50 a 70% no medial; a banca não aceitou a afirmação.",
-   "E": "**O papel principal é do medial.** Sem LCA, o estabilizador secundário contra a translação anterior é o corno posterior do menisco medial; o lateral atua mais no controle rotacional."
+   "A": "**Frase sem sentido.** Compara o corno anterior com ele mesmo. O maior no menisco medial é o posterior.",
+   "C": "**Cornos errados.** O ligamento transverso une os cornos anteriores, e não o posterior do medial.",
+   "D": "**A mais próxima da verdade.** O Campbell dá de 50 a 70% para a medial e de 40 a 50% para a lateral, de modo que 50% é um número defensável. Veja o alerta.",
+   "E": "**Papel do outro menisco.** O estabilizador secundário sem LCA, contra a translação anterior, é o corno posterior do medial; o lateral atua mais no controle rotacional."
   },
-  "alerta": "A alternativa D também tem base na literatura (a meniscectomia reduz a área de contato em cerca de 50 a 70% no compartimento medial), e o papel do menisco lateral no controle rotacional do joelho sem LCA também é descrito. O gabarito (B) foi mantido por ser a afirmação anatômica inequívoca.",
-  "conceito": "**Os meniscos.** São fibrocartilagens em forma de **C** (o **medial**, mais aberto e em forma de meia-lua, maior atrás) e de **O** (o **lateral**, mais circular e mais móvel). Distribuem a carga, aumentam a **área de contato** entre fêmur e tíbia, absorvem impacto, contribuem para a **estabilidade** e a propriocepção. A **vascularização** vem da periferia (zona vermelha, o terço externo), e a zona branca, interna, não cicatriza bem.\n\n**As estruturas acessórias.** Os **ligamentos meniscofemorais** vão do **corno posterior do menisco lateral** ao **côndilo femoral medial**, junto ao LCP. O de **Humphry** passa **anterior** ao LCP; o de **Wrisberg**, **posterior** a ele. Estão presentes em boa parte dos joelhos e podem simular uma lesão ou um LCP duplo na ressonância. O **ligamento transverso** (intermeniscal) liga os **cornos anteriores** dos dois meniscos. O **corno posterior do medial** é **maior** (mais largo) que o anterior e é firmemente preso à tíbia.\n\n**A função biomecânica.** A **meniscectomia total** reduz muito a área de contato (em torno de 50 a 70% no medial) e aumenta a pressão de contato, levando a **artrose**. O **corno posterior do menisco medial** é um estabilizador **secundário** importante contra a **translação anterior** da tíbia no joelho **sem LCA**; por isso, joelhos com LCA roto desenvolvem lesões do medial com o tempo, e a reconstrução do LCA protege o menisco. O **menisco lateral** contribui para o controle **rotacional** (pivot shift).\n\n**Na prática.** Preservar o menisco sempre que possível: **sutura** das lesões periféricas, verticais e das raízes, e **meniscectomia parcial** mínima nas lesões irreparáveis. Lesões da **raiz** posterior do medial equivalem funcionalmente a uma meniscectomia total e devem ser reparadas quando possível.\n\n**Na prova:** Humphry **anterior** ao LCP, Wrisberg **posterior**; transverso liga os cornos **anteriores**; corno posterior do **medial** é estabilizador secundário sem LCA.",
-  "correta": "**O ligamento de Humphry passa anteriormente ao LCP.** É o ligamento meniscofemoral anterior, que vai do corno posterior do menisco lateral ao côndilo femoral medial, à frente do LCP; o de Wrisberg passa por trás.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 45 (Knee Injuries), p. 2212 e 2213"
+  ],
+  "alerta": "A alternativa D tem base no Campbell (cap. 45, p. 2212), que dá redução de 50 a 70% da área de contato na meniscectomia medial e de 40 a 50% na lateral. O gabarito (B) foi mantido por ser a afirmação anatômica inequívoca.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1001": {
@@ -21075,15 +21058,20 @@
   }
  },
  "trauma-1003": {
+  "conceito": "**O ângulo Q.** É formado pela linha da **espinha ilíaca anterossuperior** ao **centro da patela** (o vetor do **quadríceps**) e pela linha do centro da patela à **tuberosidade anterior da tíbia** (o **tendão patelar**). Representa a força que puxa a patela para **lateral**, e nas mulheres o valor normal é de 15 graus, com 5 para mais ou para menos (Campbell 12, p. 2249).\n\n**O que aumenta o ângulo Q.** O Campbell lista geno valgo, anteversão femoral aumentada, torção tibial externa, tuberosidade da tíbia lateralizada e retináculo lateral tenso; a rotação interna do fêmur sobre a tíbia fixa também o aumenta de modo dinâmico (Campbell 12, cap. 47, p. 2249; Campbell 14, cap. 47, p. 2426). A combinação de anteversão femoral com torção tibial externa é o **mau alinhamento miserável** (miserable malalignment), com patelas \"olhando uma para a outra\" (strabismic patellae), dor anterior e instabilidade patelar.\n\n**O que diminui.** **Retroversão femoral**, rotação externa do fêmur distal, **torção tibial interna** e joelho varo levam a tuberosidade para medial em relação à patela, diminuindo o ângulo Q.\n\n**Os limites da medida.** O ângulo Q é medido com o joelho **estendido** (ou fletido a 30 graus) e varia com a posição e a contração muscular; uma patela já **subluxada** lateralmente dá um ângulo Q falsamente **baixo**. Por isso, hoje se usa mais a **distância TT-TG** (tuberosidade tibial ao sulco troclear) na tomografia ou ressonância, com valores acima de 20 mm considerados patológicos, e a **torção femoral e tibial** medida em tomografia.\n\n**Na prova:** **anteversão femoral** + rotação interna do fêmur distal + **torção tibial externa** = **aumento** do ângulo Q (mau alinhamento miserável).",
+  "correta": "**A: a anteversão do colo do fêmur com a rotação interna distal do fêmur, em combinação com a torção tibial externa, acarreta aumento do ângulo Q.** São os fatores que o Campbell lista, somados no chamado mau alinhamento miserável.",
   "incorretas": {
-   "B": "**Efeito invertido.** Essa combinação aumenta, e não diminui, o ângulo Q.",
-   "C": "**Combinação contraditória.** Retroversão com rotação interna distal do fêmur não é o padrão coerente, e a torção tibial interna diminui o ângulo.",
-   "D": "**Efeito invertido.** Retroversão, rotação externa distal do fêmur e torção tibial interna diminuem o ângulo Q.",
-   "E": "**Correta na direção, mas não é o gabarito.** Essa combinação reduz o ângulo Q, mas a banca considerou certa a afirmação sobre o aumento, na alternativa A."
+   "B": "**Efeito invertido.** Mesma combinação da correta, com a conclusão oposta.",
+   "C": "**Combinação incoerente.** Retroversão anda com rotação externa do fêmur distal, e não interna, de modo que a premissa já não se sustenta.",
+   "D": "**Efeito invertido.** Retroversão, rotação externa distal e torção tibial interna levam a tuberosidade para medial e reduzem o ângulo.",
+   "E": "**O raciocínio aqui também é coerente.** Essa combinação tende a diminuir o ângulo Q, e é por isso que a alternativa merece o alerta abaixo. Os livros locais listam só os fatores que aumentam."
   },
-  "conceito": "**O ângulo Q.** É formado pela linha da **espinha ilíaca anterossuperior** ao **centro da patela** (o vetor do **quadríceps**) e pela linha do centro da patela à **tuberosidade anterior da tíbia** (o **tendão patelar**). Representa a força que puxa a patela para **lateral**. Valores normais: cerca de **14 graus** em homens e **17 graus** em mulheres (pelve mais larga); acima de 20 graus é considerado aumentado.\n\n**O que aumenta o ângulo Q.** Tudo que leva o **joelho para medial** e a **tuberosidade para lateral**. **Anteversão femoral** aumentada, com **rotação interna** do fêmur distal (a patela vira para dentro). **Torção tibial externa**, que leva a tuberosidade para fora. **Joelho valgo**. **Pé pronado**. A combinação de anteversão femoral com torção tibial externa é o **mau alinhamento miserável** (miserable malalignment), com patelas \"olhando uma para a outra\" (strabismic patellae), dor anterior e instabilidade patelar.\n\n**O que diminui.** **Retroversão femoral**, rotação externa do fêmur distal, **torção tibial interna** e joelho varo levam a tuberosidade para medial em relação à patela, diminuindo o ângulo Q.\n\n**Os limites da medida.** O ângulo Q é medido com o joelho **estendido** (ou fletido a 30 graus) e varia com a posição e a contração muscular; uma patela já **subluxada** lateralmente dá um ângulo Q falsamente **baixo**. Por isso, hoje se usa mais a **distância TT-TG** (tuberosidade tibial ao sulco troclear) na tomografia ou ressonância, com valores acima de 20 mm considerados patológicos, e a **torção femoral e tibial** medida em tomografia.\n\n**Na prova:** **anteversão femoral** + rotação interna do fêmur distal + **torção tibial externa** = **aumento** do ângulo Q (mau alinhamento miserável).",
-  "correta": "**Anteversão femoral com rotação interna distal e torção tibial externa aumentam o ângulo Q.** A patela vai para medial e a tuberosidade para lateral, abrindo o ângulo entre o quadríceps e o tendão patelar.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 47 (Recurrent Dislocations), p. 2426",
+   "Campbell, Cirurgia Ortopédica, 12ª ed., cap. 47, p. 2249"
+  ],
+  "alerta": "A alternativa E também parece correta pelo raciocínio geométrico: retroversão, rotação externa distal do fêmur e torção tibial interna tendem a diminuir o ângulo Q. Os livros locais só descrevem o que aumenta o ângulo, então isso não foi confirmado literalmente. O gabarito oficial (A) foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1004": {
@@ -21130,65 +21118,85 @@
   }
  },
  "trauma-1005": {
+  "conceito": "Esta questão inteira sai de dois parágrafos do Campbell sobre a cinemática do joelho (cap. 7, p. 413 e 414), e por isso vale ler as alternativas com o texto ao lado.\n\n**O que Dennis descreveu.** O eixo de flexão varia de modo **helicoidal** no joelho normal. Durante a flexão, o côndilo femoral **medial** translada em média **2 mm** para trás sobre a tíbia, e o **lateral**, **21 mm**. Depois da ressecção do LCA, o eixo fica mais variável: 5 mm no medial e 17 mm no lateral (Campbell 12, cap. 7). É o padrão de pivô: o lado medial quase fica parado, e o lateral roda em volta dele.\n\n**O que esse pivô explica.** Como o côndilo lateral recua muito mais, a tíbia roda internamente em relação ao fêmur durante a flexão. Na extensão terminal acontece o movimento inverso, o travamento, com a tíbia rodando para fora.\n\n**Quanto de flexão se usa no dia a dia.** Nos estudos cinemáticos citados pelo Campbell, a marcha normal exigiu **67 graus** de flexão na fase de balanço, **83 graus** para subir escada, 90 graus para descer e 93 graus para levantar da cadeira.\n\nCom esse pano de fundo, a dica é simples: em cada número, pergunte de qual côndilo é. Os dois valores de Dennis são o alvo das trocas da questão.",
+  "correta": "**D: Dennis e colaboradores descreveram um modelo helicoidal para a variação do eixo de flexão, com uma média de 21 mm de translação posterior do côndilo femoral medial em relação à tíbia.** É a chave oficial, mas o número pertence ao côndilo lateral. Veja o alerta antes de usar esta questão como parâmetro.",
   "incorretas": {
-   "A": "**Inverte a rotação da flexão.** A rotação externa da tíbia é associada à extensão terminal; na flexão inicial, o joelho destrava com rotação interna tibial relativa.",
-   "B": "**Inverte a rotação da extensão.** O mecanismo de travamento envolve rotação externa da tíbia em relação ao fêmur, não interna.",
-   "C": "**Os valores são plausíveis e amplamente citados.** Cerca de 67 graus no balanço e 83 graus para subir escadas correspondem a referências clássicas de arco funcional; esta alternativa não pode ser descartada com segurança na redação atual.",
-   "E": "**Troca o côndilo do menor deslocamento.** O valor próximo de 2 mm foi relatado para o côndilo medial; o lateral recuou cerca de 21 mm na flexão com carga dos joelhos normais estudados."
+   "A": "**Direção invertida.** O pivô explica a rotação *interna* da tíbia durante a flexão, porque o côndilo lateral recua mais. A rotação externa fica para a extensão terminal.",
+   "B": "**O inverso da A.** Na extensão, a tíbia roda externamente, no mecanismo de travamento. Os dois erros formam um par.",
+   "C": "**Esta é a frase do livro.** O Campbell escreve que a marcha normal exigiu 67 graus de flexão na fase de balanço e 83 graus para subir escada. A banca não a marcou como correta, e este é o principal ponto da divergência.",
+   "E": "**Côndilo trocado.** Os 2 mm são do medial, e o lateral recua 21. A frase da D tem o espelho deste mesmo erro."
   },
-  "alerta": "O gabarito cadastrado é D, mas o estudo original de Dennis e colaboradores (J Biomech. 2005;38:241-253, doi:10.1016/j.jbiomech.2004.02.042) relata, em joelhos normais durante a flexão com carga, translação posterior média de 21,07 mm do côndilo LATERAL e 1,94 mm do MEDIAL. A alternativa D troca os côndilos. A alternativa C também reproduz valores funcionais amplamente citados, cerca de 67 graus na fase de balanço e 83 graus para subir escadas. Mantemos o gabarito informado, mas a questão não apresenta resposta única confiável como está redigida.",
-  "conceito": "**Três planos, movimento acoplado.** O joelho combina flexão e extensão no plano sagital, rotação axial no transverso e pequenos movimentos em varo e valgo no frontal. Durante a flexão com carga, os côndilos femorais não rolam para trás de modo idêntico: o lateral recua mais, enquanto o medial se desloca pouco. Esse padrão costuma ser descrito como pivô medial, mas varia com tarefa, carga e integridade ligamentar.\n\n**Os números de Dennis precisam estar do lado certo.** No estudo fluoroscópico de joelhos normais, a translação posterior média foi de cerca de 21 mm no côndilo lateral e 2 mm no medial. Após deficiência do ligamento cruzado anterior, o deslocamento medial aumentou. A análise do eixo helicoidal descreve a mudança do eixo instantâneo do movimento, mas não autoriza inverter os valores dos dois côndilos.\n\n**Rotação e arco funcional.** Na extensão terminal, a tíbia roda externamente em relação ao fêmur no mecanismo de travamento; na flexão inicial, ocorre o movimento inverso para destravar. Valores clássicos de arco funcional citam aproximadamente 67 graus de flexão no balanço da marcha e 83 graus para subir escadas, embora a necessidade real varie com a pessoa e a tarefa. Assim, a direção da rotação e o lado do maior recuo condilar são mais úteis que decorar um número solto.",
-  "correta": "**D é a chave registrada, mas contém inversão.** O valor próximo de 21 mm aparece no estudo de Dennis para o côndilo lateral, não para o medial. Consulte o alerta antes de usar esta questão como parâmetro de desempenho.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 7 (Arthroplasty of the Knee), p. 413 e 414",
+   "Campbell, Cirurgia Ortopédica, 12ª ed., cap. 7",
+   "Dennis DA et al., J Biomech, 2005;38:241 (doi:10.1016/j.jbiomech.2004.02.042)"
+  ],
+  "alerta": "Possível erro de gabarito. O Campbell (14ª ed., cap. 7, p. 413) dá 2 mm para o côndilo medial e 21 mm para o lateral, o contrário da alternativa D, e traz com as mesmas palavras a alternativa C (67 e 83 graus, p. 414). Pelo livro, a C é a correta. O gabarito oficial (D) foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1006": {
+  "conceito": "**A osteonecrose espontânea do joelho.** Chamada de **SONK** (spontaneous osteonecrosis of the knee), acomete tipicamente **mulheres acima de 55 a 60 anos**, no **côndilo femoral medial**, na área de carga. Começa com **dor súbita**, intensa, localizada, piora à noite e com a carga. Hoje se entende que muitas são **fraturas por insuficiência subcondral** em osso osteoporótico, frequentemente associadas a **lesão da raiz posterior do menisco medial** (que sobrecarrega o côndilo), e não uma necrose primária.\n\n**A classificação de Koshino, modificada por Aglietti.** Koshino descreveu quatro estágios: radiografia normal; sombra oval radiotransparente; colapso subcondral com placas calcificadas e halos escleróticos; e osteoartrite secundária. Aglietti acrescentou um degrau precoce, o que empurra os seguintes: **estágio 1**, normal; **estágio 2**, **achatamento** da área de carga do côndilo; **estágio 3**, a **lesão típica**, radiotransparente; **estágio 4**, lesão com **halo esclerótico** e **colapso** do osso subcondral, visível como **placa calcificada**; **estágio 5**, alterações **degenerativas** secundárias.\n\n**O tratamento.** Nas fases iniciais, retira-se a carga e controla-se a dor. Com colapso e artrose, entram **osteotomia** tibial alta nos mais jovens e **artroplastia** nos mais velhos.\n\n**Na prova:** Koshino (Aglietti): **4** = **colapso** subcondral com **placa calcificada**; 3 = radiotransparência com halo; 5 = artrose.",
+  "correta": "**D: estágio 4.** O enunciado reúne radiotransparência, halo esclerótico e colapso com placa calcificada, a marca do penúltimo estágio da escala modificada.",
   "incorretas": {
-   "A": "**Radiografia normal.** O estágio 1 só aparece na ressonância ou na cintilografia.",
-   "B": "**Achatamento.** O estágio 2 é o achatamento da área de carga, sem a lesão com halo.",
-   "C": "**Sem colapso.** O estágio 3 tem a radiotransparência com halo, mas ainda sem a placa subcondral colapsada.",
-   "E": "**Artrose.** O estágio 5 tem alterações degenerativas secundárias, com estreitamento e osteófitos."
+   "A": "**Radiografia normal.** No estágio 1, nada aparece no exame simples, e o caso já descreve lesão visível.",
+   "B": "**Só achatamento.** O estágio 2 é o aplainamento do côndilo, ainda sem lesão com halo.",
+   "C": "**A distratora de quem lembra da escala original.** Na classificação de Koshino, o colapso com placa é o estágio 3. A pergunta fala da modificação de Aglietti, e nela esse achado caiu para o 4. Sem colapso, seria o 3.",
+   "E": "**Falta a artrose.** O estágio 5 tem degeneração secundária, e o caso não fala em estreitamento nem osteófitos."
   },
-  "conceito": "**A osteonecrose espontânea do joelho.** Chamada de **SONK** (spontaneous osteonecrosis of the knee), acomete tipicamente **mulheres acima de 55 a 60 anos**, no **côndilo femoral medial**, na área de carga. Começa com **dor súbita**, intensa, localizada, piora à noite e com a carga. Hoje se entende que muitas são **fraturas por insuficiência subcondral** em osso osteoporótico, frequentemente associadas a **lesão da raiz posterior do menisco medial** (que sobrecarrega o côndilo), e não uma necrose primária.\n\n**A classificação de Koshino, modificada por Aglietti.** **Estágio 1**: radiografia **normal**, alteração só na ressonância ou cintilografia. **Estágio 2**: **achatamento** da área de carga do côndilo. **Estágio 3**: área **radiotransparente** com **halo esclerótico** ao redor. **Estágio 4**: **colapso** do osso subcondral, visível como uma **placa calcificada** (a lâmina subcondral destacada). **Estágio 5**: alterações **degenerativas** secundárias (artrose), com estreitamento e osteófitos.\n\n**O tamanho da lesão importa.** Lesões **pequenas** (menos de cerca de 3,5 a 5 cm², ou menos de 40% da largura do côndilo) tendem a evoluir bem com tratamento conservador; lesões **grandes** evoluem para colapso e artrose.\n\n**O tratamento.** Fases iniciais: **retirar a carga** (muletas), analgesia, bisfosfonatos em alguns protocolos, e reparo da **raiz meniscal** quando presente. Lesões com colapso e artrose: **osteotomia** tibial alta (desviar a carga) em pacientes mais jovens, **artroplastia unicompartimental** ou **total** nos mais velhos. A **artroscopia** com meniscectomia pode piorar o quadro (osteonecrose pós-artroscopia).\n\n**Na prova:** Koshino (Aglietti): **4** = **colapso** subcondral com **placa calcificada**; 3 = radiotransparência com halo; 5 = artrose.",
-  "correta": "**Estágio 4.** O colapso do osso subcondral, visível como uma placa calcificada, com halo esclerótico, corresponde ao estágio 4.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Revisão de osteonecrose espontânea do joelho, J Clin Med, 2022 (PMC9737125)"
+  ],
+  "alerta": "A classificação de Koshino modificada por Aglietti não está nos livros locais. O original de Koshino foi conferido em revisão aberta; a escala de Aglietti, em resumos que cortam a descrição antes dos estágios 4 e 5. O gabarito é compatível com essa leitura, mas o detalhe do estágio merece conferência no original.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1007": {
-  "conceito": "**Como o Ganga Hospital Open Injury Score é somado.** O escore avalia três componentes, cada um de 1 a 5 pontos: **cobertura** (pele), **esqueleto** e **unidades musculotendíneas e nervos**. A esses se somam **2 pontos** por cada comorbidade ou fator agravante, como idade acima de 65 anos, diabetes, doença cardiorrespiratória, politrauma, hipotensão, contaminação grosseira e tempo acima de 12 horas até o desbridamento.\n\n**Somando o caso.** A **perda de pele sobre o foco** de fratura vale **4** em cobertura. A **fratura multifragmentar sem perda óssea** vale **3** em esqueleto. A **lesão parcial de uma unidade musculotendínea** vale **1**. A paciente não tem comorbidades nem instabilidade e foi operada em menos de 12 horas, mas tem **67 anos**, o que acrescenta **2**. Total: 4 + 3 + 1 + 2 = **10**.\n\n**Na prova:** some pele, osso e músculo e acrescente 2 por fator agravante; idade acima de 65 conta.",
-  "correta": "**10 pontos.** Cobertura 4, esqueleto 3, musculotendíneo 1 e mais 2 pela idade acima de 65 anos.",
+  "conceito": "**Como o Ganga Hospital Open Injury Score é somado.** O Rockwood descreve: de 1 a 5 pontos para cada um de três componentes, **tecidos de cobertura** (pele e fáscia), **tecidos funcionais** (unidades musculotendíneas e nervos) e **estruturas esqueléticas**, mais **2 pontos** para cada uma de sete condições associadas (cap. 18), entre elas idade acima de 65 anos. A partir de 17, o escore aponta para amputação; até 14, recomenda-se o salvamento; 15 e 16 são zona cinzenta.\n\n**Somando o caso.** A **perda de pele sobre o foco** de fratura vale **4** em cobertura. A **fratura multifragmentar sem perda óssea** vale **3** em esqueleto. A **lesão parcial de uma unidade musculotendínea** vale **1**. A paciente não tem comorbidades nem instabilidade e foi operada em menos de 12 horas, mas tem **67 anos**, o que acrescenta **2**. Total: 4 + 3 + 1 + 2 = **10**.\n\n**Na prova:** some pele, osso e músculo e acrescente 2 por fator agravante; idade acima de 65 conta.",
+  "correta": "**D: 10.** Cobertura 4, esqueleto 3, musculotendíneo 1 e mais 2 pela idade acima de 65. O enunciado parece dizer que a paciente é saudável, mas esconde os 67 anos.",
   "incorretas": {
-   "A": "**Deixa quase tudo de fora.** Só a cobertura já vale 4 pontos neste caso.",
-   "B": "**Soma incompleta.** Faltam os pontos do esqueleto ou o acréscimo pela idade.",
-   "C": "**Esquece a idade.** Sem os 2 pontos por idade acima de 65, a soma daria 8.",
-   "E": "**Superestima o músculo.** A lesão parcial de uma unidade musculotendínea vale 1, e não 3."
+   "A": "**Só a cobertura.** A perda de pele sobre o foco, sozinha, já vale 4.",
+   "B": "**Soma incompleta.** Faltam pontos do esqueleto ou o acréscimo por idade.",
+   "C": "**A resposta de quem não viu a idade.** Quatro mais três mais um dão oito. A pegadinha está nos 67 anos.",
+   "E": "**Superestima o músculo.** A lesão parcial de uma unidade vale 1, e não 3."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 18 (Principles of Mangled Extremity Management)"
+  ],
+  "alerta": "O Rockwood confirma a estrutura do escore (três componentes de 1 a 5 e 2 pontos por condição associada), mas não traz a tabela item a item; os valores 4, 3 e 1 foram mantidos do comentário anterior e fecham com o gabarito.",
+  "formato": "corrido",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "trauma-1008": {
+  "conceito": "**A síndrome compartimental crônica de esforço.** É diferente da aguda: a pressão sobe **durante o exercício**, que pode aumentar o volume muscular em 20% num compartimento pouco complacente, e volta ao normal com o **repouso**. Acomete sobretudo **corredores de longa distância** e recrutas militares (Campbell, cap. 48, p. 2479). O quadro é **dor** em aperto, queimação ou cãibra na perna, que surge sempre após um certo tempo ou distância de corrida, obriga a parar e **melhora em minutos** de repouso, às vezes com parestesia (no dorso do pé, pelo fibular profundo ou superficial) e fraqueza transitória. É frequentemente **bilateral**. O compartimento **anterior** é o mais envolvido, seguido do **lateral**.\n\n**O diagnóstico.** Pela **medida da pressão** antes e depois do exercício. Os critérios de **Pedowitz**: pressão em repouso de **15 mmHg** ou mais, **30 mmHg** ou mais **1 minuto** após o exercício, ou **20 mmHg** ou mais **5 minutos** após. O exame físico em repouso costuma ser normal. É preciso excluir fratura por estresse, periostite (síndrome do estresse tibial medial), aprisionamento da artéria poplítea e compressões nervosas.\n\n**O tratamento.** Primeiro, **modificação do treino**, mudança da técnica de corrida (pisada no antepé), fisioterapia e, em alguns centros, **toxina botulínica**. Na falha, **fasciotomia** dos compartimentos envolvidos (aberta, por miniincisões ou endoscópica), com bons resultados na maioria.\n\n**As complicações da cirurgia.** O Campbell escreve que a fasciotomia pode não ter sucesso, com recidiva dos sintomas, a ponto de alguns autores defenderem a fasciectomia parcial nos casos recidivados. As outras complicações que ele cita são dormência, equimose, infecção de pele, fraqueza e comprometimento vascular (cap. 48, p. 2486).\n\n**Na prova:** complicação mais frequente da fasciotomia na síndrome compartimental **crônica de esforço** = **recidiva**; o nervo em risco é o **fibular superficial**.",
+  "correta": "**C: recidiva da SCCE.** Se a liberação ficou incompleta, ou se a fáscia se refez, o problema volta. É por isso que o Campbell fala em fasciectomia parcial nos recidivados.",
   "incorretas": {
-   "A": "**Pouco frequente.** A infecção é rara após a fasciotomia eletiva.",
-   "B": "**Pouco frequente.** O hematoma ocorre, mas menos que a recidiva.",
-   "D": "**Menos frequente.** O fibular superficial pode ser lesado na fasciotomia lateral, mas com menor frequência que a recidiva.",
-   "E": "**Nervo inexistente com esse nome.** O compartimento anterior contém o fibular profundo; não há \"nervo tibial anterior\" como estrutura em risco típica."
+   "A": "**Pouco frequente.** A infecção existe, em geral superficial, numa cirurgia eletiva pequena.",
+   "B": "**Ocorre, mas não lidera.** A equimose é comum; hematoma importante é menos.",
+   "D": "**Risco real.** O fibular superficial atravessa a fáscia na região lateral, e por isso a dormência aparece na lista. Mas não supera a recidiva.",
+   "E": "**Nome que não existe.** O compartimento anterior contém o fibular profundo, e não há nervo \"tibial anterior\"."
   },
-  "conceito": "**A síndrome compartimental crônica de esforço.** É diferente da aguda: a pressão sobe **durante o exercício** e volta ao normal com o **repouso**. Acomete **atletas** jovens, sobretudo **corredores**, e militares. O quadro é **dor** em aperto, queimação ou cãibra na perna, que surge sempre após um certo tempo ou distância de corrida, obriga a parar e **melhora em minutos** de repouso, às vezes com parestesia (no dorso do pé, pelo fibular profundo ou superficial) e fraqueza transitória. É frequentemente **bilateral**. O compartimento **anterior** é o mais envolvido, seguido do **lateral**.\n\n**O diagnóstico.** Pela **medida da pressão** antes e depois do exercício. Os critérios de **Pedowitz**: pressão em repouso de **15 mmHg** ou mais, **30 mmHg** ou mais **1 minuto** após o exercício, ou **20 mmHg** ou mais **5 minutos** após. O exame físico em repouso costuma ser normal. É preciso excluir fratura por estresse, periostite (síndrome do estresse tibial medial), aprisionamento da artéria poplítea e compressões nervosas.\n\n**O tratamento.** Primeiro, **modificação do treino**, mudança da técnica de corrida (pisada no antepé), fisioterapia e, em alguns centros, **toxina botulínica**. Na falha, **fasciotomia** dos compartimentos envolvidos (aberta, por miniincisões ou endoscópica), com bons resultados na maioria.\n\n**As complicações da cirurgia.** A mais **frequente** é a **recidiva** dos sintomas, por fasciotomia **incompleta**, **fibrose** e reformação da fáscia, ou compartimento **não reconhecido** (especialmente o posterior profundo). As taxas de recidiva chegam a cerca de 10 a 20% em algumas séries, e são maiores nos compartimentos posteriores. Outras complicações: lesão do **nervo fibular superficial** (na fasciotomia lateral, onde ele perfura a fáscia), hematoma, infecção e seroma, todas menos frequentes.\n\n**Na prova:** complicação mais frequente da fasciotomia na síndrome compartimental **crônica de esforço** = **recidiva**; o nervo em risco é o **fibular superficial**.",
-  "correta": "**Recidiva da SCCE.** A liberação incompleta, a fibrose e a reformação da fáscia ou compartimentos não tratados fazem da recidiva a complicação mais comum.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 48 (Traumatic Disorders), p. 2479 e 2486"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1009": {
+  "conceito": "**A inflamação após o trauma articular.** Um trauma do joelho (fratura intra-articular, lesão ligamentar, contusão da cartilagem) desencadeia uma resposta **inflamatória** no líquido sinovial e na cartilagem. As citocinas **pró-inflamatórias** estimulam condrócitos e sinoviócitos a produzir **metaloproteinases** (MMP-1, MMP-3, MMP-13) e **agrecanases** (ADAMTS), que degradam o colágeno tipo II e o agrecano da matriz. É o início da **artrose pós-traumática**, que pode aparecer anos depois mesmo com tratamento adequado.\n\n**A cronologia das citocinas.** A questão considera a **interleucina-1 beta** (IL-1β) a citocina produzida em **maior nível** no **primeiro dia** após o trauma articular. Ela é o principal gatilho da cascata **catabólica** da cartilagem. O **TNF-alfa** também sobe cedo. A **IL-6** aumenta um pouco depois e se mantém; é o marcador sistêmico de gravidade no politrauma. A **IL-10** é **anti-inflamatória**. A **IL-12** está ligada à imunidade celular. As **quimiocinas** (como CCL-22) recrutam células inflamatórias.\n\n**Por que isso interessa.** O Rockwood descreve como o estresse mecânico em volta do defeito agrava o dano: induz apoptose de condrócitos e ativa cronicamente a imunidade inata, liberando fragmentos de matriz na articulação (cap. 2). A janela logo após o trauma é vista como uma oportunidade de **intervenção**, com terapias anti-IL-1 ainda em estudo.\n\n**Na clínica.** A artrose pós-traumática responde por uma parte importante das artroses do joelho e do tornozelo em jovens. Restaurar a **congruência** articular, a **estabilidade** (ligamentos, meniscos) e o **alinhamento** reduz o risco, mas não elimina o dano biológico inicial.\n\n**Na prova:** citocina em **maior nível no primeiro dia** após o trauma articular = **IL-1 beta**; IL-6 é o marcador de gravidade sistêmica no politrauma.",
+  "correta": "**D: interleucina 1 beta.** É o gatilho clássico da cascata que leva à degradação da matriz, e a banca a põe no topo do primeiro dia.",
   "incorretas": {
-   "A": "**Mais tardia no joelho.** A IL-6 sobe um pouco depois e é o marcador sistêmico de gravidade no politrauma.",
-   "B": "**Anti-inflamatória.** A IL-10 reflete a resposta compensatória, e não o pico inicial.",
-   "C": "**Outro papel.** A IL-12 está ligada à imunidade celular, e não ao pico inicial no trauma articular.",
-   "E": "**Recrutamento celular.** As quimiocinas atraem células, mas não são a citocina de maior nível no primeiro dia."
+   "A": "**A mais tentadora.** A IL-6 também sobe no trauma e é conhecida como marcador sistêmico no politrauma. A banca a considera menos elevada no primeiro dia.",
+   "B": "**Anti-inflamatória.** A IL-10 faz parte da resposta compensatória, e não do pico inicial.",
+   "C": "**Outro papel.** A IL-12 está ligada à imunidade celular.",
+   "E": "**Recruta células.** As quimiocinas atraem células inflamatórias; não são o pico de citocina aqui."
   },
-  "conceito": "**A inflamação após o trauma articular.** Um trauma do joelho (fratura intra-articular, lesão ligamentar, contusão da cartilagem) desencadeia uma resposta **inflamatória** no líquido sinovial e na cartilagem. As citocinas **pró-inflamatórias** estimulam condrócitos e sinoviócitos a produzir **metaloproteinases** (MMP-1, MMP-3, MMP-13) e **agrecanases** (ADAMTS), que degradam o colágeno tipo II e o agrecano da matriz. É o início da **artrose pós-traumática**, que pode aparecer anos depois mesmo com tratamento adequado.\n\n**A cronologia das citocinas.** A **interleucina-1 beta** (IL-1β) é a citocina liberada **mais precocemente** e em **maior nível** no **primeiro dia** após o trauma articular. Ela é o principal gatilho da cascata **catabólica** da cartilagem. O **TNF-alfa** também sobe cedo. A **IL-6** aumenta um pouco depois e se mantém; é o marcador sistêmico de gravidade no politrauma. A **IL-10** é **anti-inflamatória**. A **IL-12** está ligada à imunidade celular. As **quimiocinas** (como CCL-22) recrutam células inflamatórias.\n\n**Por que isso interessa.** A janela logo após o trauma é vista como uma oportunidade de **intervenção** para reduzir a artrose pós-traumática: antagonistas do receptor da IL-1 (como a anakinra intra-articular), aspiração da hemartrose, e outras terapias estão em estudo. O **sangue** intra-articular também é tóxico para a cartilagem.\n\n**Na clínica.** A artrose pós-traumática responde por uma parte importante das artroses do joelho e do tornozelo em jovens. Restaurar a **congruência** articular, a **estabilidade** (ligamentos, meniscos) e o **alinhamento** reduz o risco, mas não elimina o dano biológico inicial.\n\n**Na prova:** citocina em **maior nível no primeiro dia** após o trauma articular = **IL-1 beta**; IL-6 é o marcador de gravidade sistêmica no politrauma.",
-  "correta": "**Interleucina 1 beta.** É a citocina liberada mais precocemente e em maior nível no primeiro dia, disparando a cascata catabólica da cartilagem.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 2 (Bone, Cartilage, and Tendon Healing)"
+  ],
+  "alerta": "Os livros locais descrevem a resposta inflamatória e o dano à cartilagem depois do trauma, mas não a cronologia das citocinas nem a frase de que a IL-1 beta lidera no primeiro dia. O gabarito oficial foi mantido sem essa confirmação.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1010": {
@@ -21235,39 +21243,52 @@
   }
  },
  "trauma-1011": {
+  "conceito": "**A fratura por estresse do colo do fêmur no adolescente.** É rara, mas grave, em atletas jovens (corrida, futebol). A dor pode ser referida no **joelho**, e o Rockwood infantil registra dor no quadril ou no joelho, às vezes só nos extremos do movimento, sobretudo na rotação interna (cap. 24). Todo adolescente com dor no joelho e **claudicação** precisa ter o **quadril examinado**.\n\n**Os dois tipos de Devas**, como descreve o Campbell (cap. 36, p. 1560). O tipo **transverso** (de tensão), na parte superior do colo, pode desviar e causar morbidade grave; recomenda-se **fixação interna** com parafuso ou pino. O tipo de **compressão**, na parte inferior do colo, **raramente desvia**, embora já tenha ocorrido leve deformidade em **varo** em jovens; pode ser tratado **sem carga** e com limitação da atividade. Mas mesmo assim pode progredir para fratura completa se a criança continuar ativa.\n\n**As complicações.** Uma fratura que desvia no jovem é desastrosa: **necrose avascular**, **pseudartrose** e **coxa vara** (a consolidação em varo é a deformidade típica, e não a coxa valga). Por isso o diagnóstico precoce e a proteção adequada são fundamentais.\n\n**Na prova:** estresse do colo: **compressão** (inferomedial) = muletas sem apoio, pode ir para **varo**; **tensão** (superolateral) = alto risco de desvio, **fixar**.",
+  "correta": "**E: fraturas por compressão geralmente podem ser tratadas com um período de marcha sem apoio, utilizando duas muletas.** É o que o Campbell recomenda para o tipo inferior, com a ressalva de limitar a atividade da criança.",
   "incorretas": {
-   "A": "**Deformidade errada.** A complicação típica das fraturas do colo que desviam ou colapsam é a coxa vara, e não a valga.",
-   "B": "**Descreve o tipo de tensão.** A reação e a ruptura da cortical superior são do tipo de tensão, e não do de compressão.",
-   "C": "**O contrário.** As fraturas do lado de tensão têm alto risco de desvio e geralmente exigem fixação.",
-   "D": "**Direção errada.** O tipo de compressão raramente desvia, mas quando colapsa vai para varo, e não valgo."
+   "A": "**Deformidade errada.** A deformidade descrita é em varo. Coxa valga não é o desfecho das fraturas de tensão não tratadas.",
+   "B": "**Descreve o outro tipo.** Formação reativa com ruptura da cortical superior é a imagem do lado de tensão.",
+   "C": "**É o contrário.** O tipo de tensão é justamente o que tem risco alto de desvio e pede fixação.",
+   "D": "**Só a direção está errada.** O tipo de compressão raramente desvia, mas a deformidade é em varo. É a distratora mais próxima."
   },
-  "conceito": "**A fratura por estresse do colo do fêmur no adolescente.** É rara, mas grave, em atletas jovens (corrida, futebol). A dor pode ser referida no **joelho** (pelo nervo obturatório), o que atrasa o diagnóstico: todo adolescente com dor no joelho e **claudicação** precisa ter o **quadril examinado**. A **ressonância** faz o diagnóstico precoce.\n\n**Os dois tipos (Devas, Fullerton e Snowdy).** **Compressão**: na cortical **inferomedial** do colo, aparece como **esclerose** ou **reação endosteal** e depois uma linha na borda inferior; o traço é fechado pela carga. **Raramente desvia** por completo, mas pode **colapsar em varo**. Geralmente é tratado com **retirada de carga** (duas muletas, marcha sem apoio) até a dor e a imagem melhorarem. **Tensão** (distração): na cortical **superolateral**, aparece como uma linha de fratura ou **ruptura** da cortical superior; a carga **abre** o traço, e o risco de **desvio completo** é **alto**. Exige **fixação** cirúrgica (parafusos) mesmo sem desvio.\n\n**As complicações.** Uma fratura que desvia no jovem é desastrosa: **necrose avascular**, **pseudartrose** e **coxa vara** (a consolidação em varo é a deformidade típica, e não a coxa valga). Por isso o diagnóstico precoce e a proteção adequada são fundamentais.\n\n**Como analisar as alternativas.** A coxa **vara**, e não a valga, é a complicação típica. A formação óssea reativa com **ruptura** da cortical **superior** descreve o tipo de **tensão**, e não o de compressão. As fraturas de **tensão** têm **alto** risco de desvio. O tipo de compressão pode colapsar em **varo**, e não em valgo. O tipo de compressão **pode** ser tratado com **marcha sem apoio**, com duas muletas.\n\n**Na prova:** estresse do colo: **compressão** (inferomedial) = muletas sem apoio, pode ir para **varo**; **tensão** (superolateral) = alto risco de desvio, **fixar**.",
-  "correta": "**As fraturas por compressão geralmente podem ser tratadas com marcha sem apoio, com duas muletas.** O traço na cortical inferomedial é fechado pela carga e raramente desvia, e a retirada da carga permite a consolidação.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 36 (Fractures and Dislocations in Children), p. 1560",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 24",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 30, p. 1306"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1012": {
+  "conceito": "**A lógica do código AO/OTA.** Cada fratura é descrita por números e letras. O primeiro número é o **osso**: **1** úmero, 2 rádio e ulna, 3 fêmur, 4 tíbia. O segundo é o **segmento**: **1** proximal, 2 diáfise, **3** distal. Depois vem o **tipo**: **A** extra-articular, **B** articular parcial, **C** articular completa. Em seguida o **grupo** e o **subgrupo**.\n\n**O úmero distal (13).** **13A**: **extra-articular**. **13A1**: **avulsão** (epicôndilo medial ou lateral). **13A2**: fratura **metafisária simples**; subgrupos pelo traço: **A2.1 espiral**, A2.2 oblíqua, A2.3 transversa. **13A3**: metafisária em **cunha** ou **multifragmentar**. **13B**: **articular parcial** (B1 sagital lateral, capítulo e coluna lateral; B2 sagital medial; B3 **coronal**, como as fraturas do capítulo e da tróclea). **13C**: **articular completa** (C1 articular simples e metafisária simples, C2 articular simples e metafisária multifragmentar, C3 articular multifragmentar).\n\n**Aplicando.** Fratura **extra-articular** (A), **metafisária simples** (A2), em **espiral** (.1): **13A2.1**.\n\n**O tratamento.** Essas fraturas costumam ser fixadas com **placas**, pela via **posterior**, paratricipital ou dividindo o tríceps, opções citadas no Rockwood (cap. 39).\n\n**Na prova:** úmero distal **extra-articular**, **simples**, em **espiral** = **13A2.1**.",
+  "correta": "**A: 13 A 2.1.** Úmero (1), distal (3), extra-articular (A), metafisária simples (2), espiral (.1). É só ler o código da esquerda para a direita.",
   "incorretas": {
-   "B": "**Multifragmentar.** O A3 é a fratura metafisária em cunha ou multifragmentar.",
-   "C": "**Articular parcial.** O grupo B já envolve a superfície articular.",
-   "D": "**Articular parcial coronal ou medial.** O B2 e o B3 são fraturas articulares parciais.",
-   "E": "**Articular completa.** O tipo C separa toda a superfície articular da diáfise."
+   "B": "**Traço errado.** O grupo A3 é o metafisário em cunha ou multifragmentar, e o enunciado diz traço simples.",
+   "C": "**Entra na articulação.** O tipo B é articular parcial, e o caso é extra-articular.",
+   "D": "**Mesma razão.** Qualquer B envolve parte da superfície articular.",
+   "E": "**Articular completa.** O tipo C separa toda a superfície da diáfise."
   },
-  "conceito": "**A lógica do código AO/OTA.** Cada fratura é descrita por números e letras. O primeiro número é o **osso**: **1** úmero, 2 rádio e ulna, 3 fêmur, 4 tíbia. O segundo é o **segmento**: **1** proximal, 2 diáfise, **3** distal. Depois vem o **tipo**: **A** extra-articular, **B** articular parcial, **C** articular completa. Em seguida o **grupo** e o **subgrupo**.\n\n**O úmero distal (13).** **13A**: **extra-articular**. **13A1**: **avulsão** (epicôndilo medial ou lateral). **13A2**: fratura **metafisária simples**; subgrupos pelo traço: **A2.1 espiral**, A2.2 oblíqua, A2.3 transversa. **13A3**: metafisária em **cunha** ou **multifragmentar**. **13B**: **articular parcial** (B1 sagital lateral, capítulo e coluna lateral; B2 sagital medial; B3 **coronal**, como as fraturas do capítulo e da tróclea). **13C**: **articular completa** (C1 articular simples e metafisária simples, C2 articular simples e metafisária multifragmentar, C3 articular multifragmentar).\n\n**Aplicando.** Fratura **extra-articular** (A), **metafisária simples** (A2), em **espiral** (.1): **13A2.1**.\n\n**O tratamento.** As fraturas extra-articulares do úmero distal (supracondilianas do adulto) geralmente são tratadas com **fixação** por **placas** (duas placas, uma em cada coluna, ou uma placa lateral extra-articular posterior em fraturas mais proximais), pela via **posterior** (paratricipital ou dividindo o tríceps), protegendo o **ulnar** e o **radial**. Fraturas distais da diáfise podem ser tratadas com órtese em casos selecionados.\n\n**Na prova:** úmero distal **extra-articular**, **simples**, em **espiral** = **13A2.1**.",
-  "correta": "**13 A 2.1.** Úmero (1), distal (3), extra-articular (A), metafisária simples (2), espiral (.1).",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 39 (Distal Humerus Fractures)"
+  ],
+  "alerta": "O subgrupo 13A2.1 vem do compêndio AO/OTA; nos livros locais não encontrei a tabela com esse detalhe. A lógica do código foi mantida do comentário anterior e bate com o enunciado.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1013": {
+  "conceito": "**O código AO/OTA da ulna proximal.** Na versão de **2018**, rádio e ulna são codificados separadamente: **2R** rádio e **2U** ulna. **2U1** é a ulna **proximal**, a região do **olécrano** e do **coronoide**. **A**: extra-articular. **B**: articular **parcial**, que inclui as fraturas do **olécrano** e do coronoide isoladas. **C**: articular completa (olécrano e coronoide juntos). O **B1** corresponde à fratura do **olécrano** **simples**, e os qualificadores descrevem detalhes do traço e do desvio.\n\n**A fratura simples do olécrano.** É uma fratura **transversa** ou pouco oblíqua, desviada, sem cominuição e com o cotovelo **estável** (Mayo **IIA**). O Rockwood escreve que as simples, sem cominuição nem instabilidade, podem ser tratadas com banda de tensão, placa ou haste intramedular, e que as cominutivas ou instáveis pedem placa (cap. 40). O mecanismo típico é a queda sobre o cotovelo fletido, com contração do tríceps.\n\n**O tratamento: banda de tensão.** Dois **fios de Kirschner** paralelos atravessam o foco (intramedulares ou saindo pela cortical anterior), e uma **cerclagem em oito** passa por um túnel na ulna distal ao foco e pela ponta do olécrano, sob o tríceps. Na flexão, a tração do tríceps é **convertida em compressão** na superfície articular, e a fratura é mobilizada precocemente. É barata, simples e eficaz para esse padrão.\n\n**Quando usar placa.** Fraturas **cominutivas** (Mayo IIB) e fraturas-luxações (Mayo III): **placa** pré-moldada para a **ulna proximal**, geralmente com **estabilidade relativa** (ponte) nas cominuições e absoluta nas simples. Placas para o terço médio ou distal da ulna não servem para o olécrano.\n\n**Na prova:** fratura **simples** do olécrano (2U1B1, Mayo IIA) = **banda de tensão** com dois fios e cerclagem; cominutiva = placa.",
+  "correta": "**A: banda de tensão com dois fios de Kirschner e cerclagem.** Num olécrano simples, a banda converte a tração do tríceps em compressão articular, com implante barato e mobilização precoce.",
   "incorretas": {
-   "B": "**Placa errada.** A placa do terço médio da ulna não se adapta ao olécrano.",
-   "C": "**Placa errada.** A placa da extremidade distal da ulna é para o punho.",
-   "D": "**Para cominutivas.** A placa da ulna proximal com estabilidade relativa é indicada nas fraturas cominutivas.",
-   "E": "**Possível, mas não a mais indicada.** A placa com estabilidade absoluta funciona, mas a banda de tensão é o padrão para a fratura simples."
+   "B": "**Placa para outro segmento.** A placa do terço médio não se molda ao olécrano.",
+   "C": "**Do outro lado do osso.** A placa da ulna distal é para o punho.",
+   "D": "**Certa para outra fratura.** Com estabilidade relativa, a placa proximal cabe nas cominutivas, e o B1 simples não é o caso.",
+   "E": "**A mais próxima.** O Rockwood aceita placa nas fraturas simples. A banca considerou que a banda de tensão segue como padrão para esse padrão de traço."
   },
-  "conceito": "**O código AO/OTA da ulna proximal.** Na versão de **2018**, rádio e ulna são codificados separadamente: **2R** rádio e **2U** ulna. **2U1** é a ulna **proximal**, a região do **olécrano** e do **coronoide**. **A**: extra-articular. **B**: articular **parcial**, que inclui as fraturas do **olécrano** e do coronoide isoladas. **C**: articular completa (olécrano e coronoide juntos). O **B1** corresponde à fratura do **olécrano** **simples**, e os qualificadores descrevem detalhes do traço e do desvio.\n\n**A fratura simples do olécrano.** É uma fratura **transversa** ou pouco oblíqua, desviada, sem cominuição e com o cotovelo **estável** (Mayo **IIA**). O mecanismo típico é a queda sobre o cotovelo fletido, com contração do tríceps.\n\n**O tratamento: banda de tensão.** Dois **fios de Kirschner** paralelos atravessam o foco (intramedulares ou saindo pela cortical anterior), e uma **cerclagem em oito** passa por um túnel na ulna distal ao foco e pela ponta do olécrano, sob o tríceps. Na flexão, a tração do tríceps é **convertida em compressão** na superfície articular, e a fratura é mobilizada precocemente. É barata, simples e eficaz para esse padrão.\n\n**Quando usar placa.** Fraturas **cominutivas** (Mayo IIB), **oblíquas** que terminam distal ao ponto médio da incisura troclear, fraturas-luxações (Mayo III) e osso muito osteoporótico: **placa** pré-moldada bloqueada para a **ulna proximal**, geralmente com **estabilidade relativa** (ponte) nas cominuições e absoluta nas simples. Placas para o terço médio ou distal da ulna não servem para o olécrano.\n\n**Na prova:** fratura **simples** do olécrano (2U1B1, Mayo IIA) = **banda de tensão** com dois fios e cerclagem; cominutiva = placa.",
-  "correta": "**Banda de tensão com dois fios de Kirschner e cerclagem.** Na fratura simples do olécrano, a banda de tensão converte a tração do tríceps em compressão articular e permite mobilização precoce.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40 (Elbow Dislocations and Terrible Triad Injuries)",
+   "Manual AO de Princípios do Tratamento de Fraturas, 2ª ed., cap. 6.3.1 (Olécrano, cabeça radial e lesões complexas)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1014": {
@@ -21361,27 +21382,35 @@
   }
  },
  "trauma-1016": {
+  "conceito": "Uma mulher idosa com prótese total do joelho, depois de uma queda. O problema é a junção entre o implante rígido e o osso osteoporótico, onde a tensão se concentra. Para decidir a fixação, a pergunta é: onde o traço começa em relação ao componente femoral?\n\nÉ isso que SU e colaboradores classificaram, segundo o Rockwood, de acordo com a localização em relação à **borda proximal do componente femoral** (cap. 59, Fig. 59-20):\n\n| Tipo | Traço |\n|---|---|\n| I | proximal ao componente |\n| II | origina-se na extremidade proximal do componente e sobe |\n| III | estende-se distalmente à borda proximal do componente |\n\n**Por que isso muda a conduta?** Porque decide quanta \"pega\" sobra no fragmento distal. No tipo I, há osso de sobra para quase qualquer método. No tipo II, a haste retrógrada ou a placa precisam ser bem escolhidas e dependem do tipo de componente. No tipo III, há pouco osso distal, e a prótese de revisão pode entrar em discussão. O próprio Rockwood registra que existe mais de um esquema, e que a posição em relação à prótese é um fator com potencial de ditar o tratamento (cap. 59).\n\nO enunciado diz que o traço \"se inicia no nível da porção proximal\" do componente, o que corresponde ao tipo II.",
+  "correta": "**B: II.** O traço se origina na extremidade proximal do componente femoral e sobe, o que define o tipo II de SU (Rockwood, cap. 59, Fig. 59-20).",
+  "alerta": "A classificação de Su não foi localizada nos livros locais, onde o capítulo do Rockwood trata do tema geral. A definição dos três tipos foi mantida do comentário anterior e bate com o enunciado, mas não foi conferida no original.",
   "incorretas": {
-   "A": "**Acima da prótese.** O tipo I fica inteiramente proximal ao componente femoral.",
-   "C": "**Mais distal.** No tipo III parte da fratura fica abaixo da borda proximal do componente.",
-   "D": "**Não existe.** A classificação de Su tem três tipos.",
-   "E": "**Não existe.** Não há subtipo IV B na classificação de Su."
+   "A": "**Totalmente acima.** O tipo I fica proximal ao componente, sem tocar nele (Rockwood, cap. 59, Fig. 59-20).",
+   "C": "**Avança para baixo.** O tipo III se estende distalmente à borda proximal do componente (Rockwood, cap. 59, Fig. 59-20).",
+   "D": "**Outra classificação.** Tipos com letras, como IV A, não fazem parte das três categorias de SU. Lembram os sistemas de fratura periprotética de quadril.",
+   "E": "**Mesmo erro.** Não existe tipo IV nessa classificação (Rockwood, cap. 59, Fig. 59-20)."
   },
-  "conceito": "**As fraturas periprotéticas acima da prótese do joelho.** Ocorrem em idosos osteoporóticos com **artroplastia total do joelho**, geralmente após quedas. Fatores de risco: osteoporose, artrite reumatoide, corticoide, **entalhe** (notching) da cortical anterior do fêmur na cirurgia, instabilidade e soltura do implante. A pergunta central é: **o componente femoral está estável?** E onde fica o traço em relação a ele?\n\n**A classificação de Su.** Baseia-se na relação do traço com o **componente femoral**. **Tipo I**: fratura **proximal** ao componente femoral (acima da borda proximal da prótese). **Tipo II**: fratura que **começa no nível da borda proximal** do componente e se estende **proximalmente**. **Tipo III**: qualquer parte da fratura fica **distal** à borda proximal do componente (a fratura é baixa, dentro da área do implante). Essa classificação ajuda a escolher o implante: os tipos I e II deixam osso suficiente para **haste retrógrada** (se a prótese tiver caixa aberta) ou **placa bloqueada**; no tipo III, o fragmento distal é pequeno, e a **placa** bloqueada distal ou a **revisão** são preferidas.\n\n**A classificação de Lewis e Rorabeck.** Considera **desvio** e **estabilidade** do implante: **I** sem desvio, prótese estável; **II** desviada, prótese estável; **III** prótese **solta** ou instável, com qualquer fratura. O tipo III exige **revisão** da artroplastia, muitas vezes com implantes de revisão ou megaprótese.\n\n**O tratamento.** Com prótese estável: **placa bloqueada** lateral (às vezes com placa medial ou combinação **haste e placa** para carga imediata), ou **haste retrógrada** quando a caixa do componente permite. Com prótese solta ou fragmento distal muito pequeno em idosos: **revisão** com substituição do fêmur distal. Objetivo: **mobilização e carga precoces**.\n\n**Na prova:** Su **II** = fratura que **começa na borda proximal** do componente femoral e sobe; I acima dele; III desce para dentro da área do componente.",
-  "correta": "**II.** O traço que começa no nível da borda proximal do componente femoral e se estende proximalmente corresponde ao tipo II de Su.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 59, Fig. 59-20",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 59 (Lower Extremity Periprosthetic Fractures)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1017": {
+  "conceito": "**Fixação precoce ou controle de danos.** No politraumatizado com fraturas de ossos longos, há duas estratégias. A **fixação definitiva precoce** (Early Total Care), em até 24 a 36 horas, reduz complicações pulmonares e facilita os cuidados no paciente **estável**. O **controle de danos ortopédico** (Damage Control Orthopaedics) usa **fixadores externos** rápidos e adia a fixação definitiva nos pacientes **instáveis** ou **limítrofes** (borderline), evitando o **segundo golpe** de uma cirurgia longa e sangrante no pico da resposta inflamatória.\n\n**Como decidir.** A avaliação passa pela fisiologia: **choque**, **coagulação**, **temperatura** e **lesão de partes moles** e de órgãos, porque hipotermia, coagulopatia e lesões graves de tórax e crânio influenciam o tipo e o momento da fixação (Rockwood, cap. 14). O conceito mais valorizado é a **resposta à reanimação**: o que decide é a **tendência** do **lactato** e do **déficit de base**. O Rockwood define o **Early Appropriate Care** como fixação definitiva em até 36 horas, salvo quando a acidose não melhora até pH de 7,25 ou mais, excesso de bases de pelo menos menos 5,5 mmol/L ou lactato abaixo de 4,0 mmol/L (cap. 14). Se esses parâmetros estão **piorando**, o paciente não está pronto, e o controle de danos fica indicado.\n\n**O paciente da questão.** Fraturas de fêmur e tíbia, lesão de víscera maciça (sangramento) e múltiplas fraturas de costelas (contusão pulmonar, risco de SDRA): um paciente de **alto risco**. A **piora** do lactato e do déficit de base mostra que a reanimação não está vencendo o choque, o que respalda o controle de danos.\n\n**Os distratores.** Um lactato de **1,0** é normal. Uma pressão sistólica de 110 não indica choque. Hipotermia relevante é abaixo de **35** graus, e não 36,5. O problema no politrauma é a **coagulopatia** (hipocoagulabilidade), e não a hipercoagulabilidade.\n\n**Na prova:** o que respalda o **controle de danos** é a **piora do lactato e do déficit de base** apesar da reanimação.",
+  "correta": "**B: tendência de piora do lactato e do déficit de base.** Mostra que o choque não está respondendo à reanimação. Valor isolado informa pouco; a direção da curva é o que decide.",
   "incorretas": {
-   "A": "**Valor normal.** Um lactato acima de 1,0 não indica hipoperfusão; o limiar relevante é bem maior, e a tendência importa mais.",
-   "C": "**Não é choque.** Uma pressão sistólica de 110 mmHg não justifica, sozinha, o controle de danos.",
-   "D": "**Limite errado.** A hipotermia que pesa na decisão é abaixo de 35 graus.",
-   "E": "**Direção errada.** O que preocupa no politrauma é a coagulopatia com hipocoagulabilidade, e não a hipercoagulabilidade."
+   "A": "**Corte baixo demais.** Lactato logo acima de 1,0 não indica hipoperfusão. O número que importa fica em torno de 4,0.",
+   "C": "**Não é choque.** Pressão sistólica de 110 mmHg, sozinha, não justifica adiar a fixação.",
+   "D": "**Limite alto demais.** Uma temperatura de 36,4 graus não é o tipo de hipotermia que pesa. A preocupação é com valores bem mais baixos.",
+   "E": "**Direção errada.** O que preocupa é a coagulopatia com hipocoagulabilidade, e não o excesso de coagulação."
   },
-  "conceito": "**Fixação precoce ou controle de danos.** No politraumatizado com fraturas de ossos longos, há duas estratégias. A **fixação definitiva precoce** (Early Total Care), em até 24 a 36 horas, reduz complicações pulmonares e facilita os cuidados no paciente **estável**. O **controle de danos ortopédico** (Damage Control Orthopaedics) usa **fixadores externos** rápidos e adia a fixação definitiva nos pacientes **instáveis** ou **limítrofes** (borderline), evitando o **segundo golpe** de uma cirurgia longa e sangrante no pico da resposta inflamatória.\n\n**Como decidir.** Pape e colaboradores classificam os pacientes em **estáveis**, **limítrofes**, **instáveis** e **in extremis**, usando a fisiologia: **choque** (pressão, necessidade de transfusão e de vasopressores), **coagulação** (plaquetas, fatores, tromboelastografia com **hipocoagulabilidade**), **temperatura** (hipotermia abaixo de 35 graus), e **lesão de partes moles** e de órgãos (tórax, abdome, crânio). O conceito mais valorizado é a **resposta à reanimação**: o que decide é a **tendência** do **lactato** e do **déficit de base**. Se estão **melhorando** e normalizando (lactato abaixo de 4 mmol/L, pH acima de 7,25, excesso de bases melhor que menos 5,5), o paciente pode ir para fixação definitiva (**Early Appropriate Care**). Se estão **piorando** apesar da reanimação, o paciente não está pronto, e o controle de danos é indicado.\n\n**O paciente da questão.** Fraturas de fêmur e tíbia, lesão de víscera maciça (sangramento) e múltiplas fraturas de costelas (contusão pulmonar, risco de SDRA): um paciente de **alto risco**. A **piora** do lactato e do déficit de base mostra que a reanimação não está vencendo o choque, o que respalda o controle de danos.\n\n**Os distratores.** Um lactato de **1,0** é normal. Uma pressão sistólica de 110 não indica choque. Hipotermia relevante é abaixo de **35** graus, e não 36,5. O problema no politrauma é a **coagulopatia** (hipocoagulabilidade), e não a hipercoagulabilidade.\n\n**Na prova:** o que respalda o **controle de danos** é a **piora do lactato e do déficit de base** apesar da reanimação.",
-  "correta": "**Tendência de piora do lactato e do déficit de base.** Mostra que o choque não está respondendo à reanimação, e o paciente não suportaria uma fixação definitiva longa.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 14 (Management of the Multiply Injured Patient)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1018": {
@@ -44403,87 +44432,134 @@
   }
  },
  "trauma-1721": {
-  "incorretas": {
-   "B": "**Mistura três regiões.** Os lumbricais são centrais, os interósseos palmares ficam junto aos metacarpais e o adutor do polegar possui espaço próprio nessa divisão. A associação não descreve um compartimento único.",
-   "C": "**Os interósseos não são o conteúdo pedido do plano tendíneo central.** Os palmares e dorsais ocupam os intervalos metacarpais; os lumbricais acompanham os flexores no centro da palma.",
-   "D": "**Reúne estruturas profundas, mas omite o plano central.** Interósseos palmares e dorsais e adutor do polegar são grupos relevantes na avaliação do esmagamento, porém separados do conjunto de lumbricais e tendões flexores perguntado.",
-   "E": "**Acerta os dois conjuntos de tendões, mas troca lumbricais por interósseos palmares.** A origem dos lumbricais nos tendões profundos ajuda a localizar por que eles pertencem à resposta."
-  },
+  "conceito": "A mão esmagada é o caso em que um intrínseco pode sofrer em silêncio. O Green lista os compartimentos da mão na mesma tabela do antebraço (7ª ed., cap. 51, Tabela 51.4, p. 1768): **tenar, hipotenar, adutor do polegar, interósseos dorsais (4) e interósseos volares (3)**. Os dedos não são um compartimento verdadeiro, mas têm um epimísio grosso que pode precisar de descompressão.\n\nAgora repare no que a questão pergunta: o compartimento **central palmar**. Ele não está nessa lista de compartimentos musculares porque, em boa parte, é o local de passagem dos tendões. Entre a eminência tenar e a hipotenar, na palma, correm os tendões do flexor superficial e do profundo, e os lumbricais nascem justamente do profundo. Por isso, as três estruturas andam juntas. Os interósseos e o adutor, mais profundos, formam compartimentos próprios.\n\n**Como reconhecer a síndrome?** Na mão, a pista é a dor ao esticar os intrínsecos: metacarpofalângicas estendidas e interfalângicas fletidas, a mesma posição do teste de BUNNELL (Green, 7ª ed., cap. 10). Para a descompressão, o Green diz que o dorso do antebraço e os compartimentos da mão pedem incisões separadas (cap. 51, p. 1769). Um esquecimento comum é confiar na incisão palmar e não abrir os interósseos pelo dorso.",
+  "correta": "**A: lumbricais, tendões flexores superficiais e tendões flexores profundos dos dedos.** São as estruturas que ocupam a palma, entre as eminências. Os lumbricais nascem do flexor profundo, e os interósseos e o adutor têm compartimentos próprios (Green, 7ª ed., cap. 51, Tabela 51.4, p. 1768).",
   "alerta": "O gabarito oficial é A. A nomenclatura dos compartimentos da mão não é uniforme entre as fontes: algumas agrupam músculos intrínsecos de modo diferente. Nesta questão, \"central palmar\" designa o plano dos tendões flexores e lumbricais, enquanto interósseos e adutor do polegar são tratados como compartimentos separados.",
+  "incorretas": {
+   "B": "**Só o lumbrical está certo.** Interósseos palmares e adutor do polegar têm compartimentos próprios na tabela do Green (cap. 51, p. 1768).",
+   "C": "**Mistura de planos.** Os interósseos palmares e dorsais ficam entre os metacarpos, em compartimentos separados, e só os lumbricais estão na região central (Green, cap. 51, p. 1768).",
+   "D": "**Lista de compartimentos, mas não do central.** Os três existem na tabela do Green, cada um como compartimento próprio (cap. 51, p. 1768), o que torna a alternativa enganosa. Eles não formam o compartimento perguntado.",
+   "E": "**Quase.** Os flexores estão certos, mas os interósseos palmares ficam em compartimento próprio. Para fechar a resposta, a estrutura que anda com os tendões é o lumbrical."
+  },
   "referencias": [
-   "Mayo Clinic, Orthopedic Emergencies, corte transversal da mão (2023): https://ce.mayo.edu/sites/default/files/media/2023-10/23_Wilke_Orthopedic_Emergencies_CA.pdf",
-   "AO Surgery Reference, Compartment syndrome in the hand: https://surgeryreference.aofoundation.org/orthopedic-trauma/adult-trauma/further-reading/compartment-syndrome-hand"
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 51, Tabela 51.4, p. 1768 e 1769; cap. 10"
   ],
-  "conceito": "**No esmagamento da mão, a pressão pode subir em espaços anatômicos distintos.** A palma central abriga o trajeto dos tendões flexores superficial e profundo dos dedos e os lumbricais, pequenos músculos que nascem dos tendões do flexor profundo e seguem para o aparelho extensor. Em planos separados ficam os interósseos entre os metacarpais e o adutor do polegar, mais radial e profundo.\n\nEssa distinção não é apenas um exercício de nomes: uma incisão que libera um espaço pode não descomprimir os demais. Dor desproporcional, tensão local e dor ao alongar passivamente a musculatura exigem avaliação urgente; a presença de pulso não exclui síndrome compartimental. No caso, a pergunta pede reconhecer quais estruturas compartilham o plano central palmar adotado pela banca, sem inferir que o restante da mão está protegido.",
-  "correta": "**A: lumbricais e tendões flexores superficial e profundo.** Os lumbricais se relacionam diretamente aos tendões do flexor profundo no centro da palma, e ambos os conjuntos de tendões atravessam esse plano. É o agrupamento que corresponde ao compartimento central empregado na questão.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1722": {
+  "conceito": "O paciente instável não aguenta uma cirurgia longa. Essa é a ideia central. O Rockwood lembra que, passado um limiar, pode surgir uma inflamação sistêmica grave: doentes muito traumatizados, com hemorragia maciça, podem entrar em SIRS, associada à falência múltipla de órgãos e à morte, e a fixação da fratura contribui para essa segunda resposta em quem está mal reanimado (cap. 14). Daí nasceu a expressão **controle de danos em ortopedia**: a fixação externa do fêmur, com pouco tempo cirúrgico e pouco sangramento (cap. 14).\n\nCom isso, dá para separar o que não pode esperar do que pode:\n\n| Na urgência | Depois da melhora fisiológica |\n|---|---|\n| Revascularização: membro sem sangue tem relógio | Placa ou haste definitiva |\n| Fasciotomia: compartimento apertado também tem relógio | Fixação ventral da coluna, cirurgia longa |\n| Fixação externa: estabiliza, com pouca agressão | Reconstruções |\n\nVale uma ressalva do próprio Rockwood: a experiência de grandes centros mostra que muitos pacientes com fratura do fêmur podem ser reanimados na chegada e receber a fixação definitiva cedo. Ou seja, o que manda é a fisiologia, e não só o tipo de fratura. Mas o enunciado diz \"instável\", e isso resolve a questão.",
+  "correta": "**C: revascularizações, fixação externa de ossos longos e fasciotomias.** São procedimentos rápidos, que salvam a vida ou o membro, sem o segundo golpe de uma cirurgia longa (Rockwood, cap. 14).",
   "incorretas": {
-   "A": "**A fixação definitiva é o ponto inadequado.** Revascularização e fasciotomia podem ser urgentes, mas uma osteossíntese longa eleva a carga fisiológica num paciente hemodinamicamente instável.",
-   "B": "**Inclui duas etapas geralmente postergadas.** Fixação definitiva de osso longo e abordagem ventral vertebral extensa não compõem o pacote inicial de controle de danos para o choque, embora possam ser indicadas após estabilização.",
-   "D": "**Fasciotomia e fixação externa são plausíveis, mas a fixação ventral vertebral não é a resposta inicial habitual.** Lesão medular ou instabilidade espinal exige proteção e avaliação especializada, sem converter automaticamente uma reconstrução ventral longa em cirurgia imediata durante choque.",
-   "E": "**Troca prioridades de controle de danos por duas cirurgias definitivas.** O fixador externo é temporário; reconstrução ventral e osteossíntese definitiva aguardam condições clínicas mais seguras, salvo necessidade excepcional individualizada."
+   "A": "**A fixação definitiva derruba.** Haste ou placa aumentam o tempo cirúrgico e o sangramento, e o Rockwood mostra o risco disso no doente mal reanimado (cap. 14). As outras duas estão certas.",
+   "B": "**Dois itens demorados.** Fixação definitiva e fixação ventral da coluna são grandes cirurgias. Não cabem no doente que está instável.",
+   "D": "**A coluna derruba.** A fixação externa e a fasciotomia estão certas, mas a via ventral da coluna é um procedimento longo, para depois da reanimação.",
+   "E": "**Só uma certa.** Apenas a fixação externa pertence ao controle de danos. As outras duas são justamente o que se adia."
   },
   "referencias": [
-   "Orthopaedic traumatology: fundamental principles and current controversies for the acute care surgeon (2018): https://pmc.ncbi.nlm.nih.gov/articles/PMC5887772/",
-   "Roles of Trauma CT and CTA in Salvaging the Threatened or Mangled Extremity (2022): https://pmc.ncbi.nlm.nih.gov/articles/PMC8906352/"
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 14 (Politrauma), seção sobre SIRS e controle de danos ortopédico",
+   "Orthopaedic traumatology: principles and controversies for the acute care surgeon, PMC5887772"
   ],
-  "conceito": "**No politrauma instável, a primeira operação deve salvar a vida e o membro sem acrescentar uma agressão cirúrgica longa.** O controle de danos ortopédico estabiliza temporariamente fraturas de ossos longos, com frequência por fixador externo. Se há isquemia de extremidade, a reperfusão não pode esperar a osteossíntese definitiva; quando há síndrome compartimental, a fasciotomia precisa ser feita prontamente. A sequência exata entre estabilização e reparo vascular depende da lesão, do tempo de isquemia e da possibilidade de usar um desvio vascular temporário.\n\nPlacas ou hastes definitivas e reconstrução ventral de fratura vertebral podem ser necessárias depois, mas geralmente são adiadas até a ressuscitação e a melhora fisiológica. O objetivo é limitar tempo operatório, sangramento e o chamado segundo impacto inflamatório em quem já está em choque.",
-  "correta": "**C: revascularização, fixação externa e fasciotomia.** São intervenções que podem ser urgentes em um paciente instável: restauram fluxo, estabilizam rapidamente o osso e aliviam pressão muscular ameaçadora. A indicação concreta de cada uma depende das lesões presentes; a alternativa não afirma que todo politraumatizado precisa das três.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1723": {
-  "incorretas": {
-   "A": "**Milch** é empregado nas fraturas do côndilo lateral do úmero, considerando a relação do traço com a tróclea. Não classifica o cisalhamento articular isolado do capítulo descrito aqui.",
-   "B": "**Mason** organiza as fraturas da cabeça do rádio, no lado oposto da articulação radiocapitelar. A queda pode produzir lesões em ambas as superfícies, mas a questão localiza a fratura no úmero.",
-   "C": "**Riseborough e Radin** se aplica às fraturas intercondilianas do úmero distal, cujo traço separa as colunas e envolve a região troclear. Não é o epônimo do pequeno fragmento de cisalhamento capitellar.",
-   "E": "**Salter-Harris** descreve o trajeto de uma fratura em relação à fise. Aos 15 anos uma lesão fisária ainda pode ser relevante dependendo da maturidade esquelética, mas o enunciado não descreve acometimento da placa de crescimento; identifica uma fratura do capítulo."
-  },
+  "conceito": "Fratura do capítulo umeral em adolescente: um pedaço da frente do cotovelo sai, em um plano coronal, e pode ser difícil de ver na radiografia em AP. O problema é o bloqueio: o fragmento sobe para a fossa radial e impede a flexão.\n\nO Rockwood conta a história dos nomes (cap. 39). A fratura **HAHN-STEINTHAL**, ou tipo I convencional, tem a superfície articular do capítulo com o osso subcondral, ou seja, um fragmento grosso. A **KOCHER-LORENZ**, ou tipo II, é rara e tem a superfície articular com uma **fina camada** de osso. BRYAN e MORREY modificaram o esquema e acrescentaram o tipo III, cominutivo. Portanto, o nome da banca não é um sistema inteiro, mas um dos padrões da classificação, como explica o alerta.\n\n**E as outras?** Todas são nomes reais de classificações do cotovelo e arredores, cada uma para uma lesão diferente. Essa é a pegadinha: quem lembra só de \"cotovelo\" não distingue. Vale aprender o par nome e osso, porque o tratamento varia: o fragmento grosso, em geral, é fixado; o muito fino, sem osso que segure um parafuso, costuma ser retirado.",
+  "correta": "**D: Kocher e Lorenz.** É o nome dado ao padrão de fratura do capítulo com fina camada de osso subcondral, tipo II no sistema convencional (Rockwood, cap. 39).",
   "alerta": "O gabarito oficial é D, mas a redação chama Kocher-Lorenz de “método de classificação”. Kocher-Lorenz designa um padrão de fratura do capítulo (tipo II de Bryan-Morrey), não o nome do sistema completo. Sem imagem ou descrição do fragmento, também não é possível atribuir esse tipo específico à fratura do paciente.",
+  "incorretas": {
+   "A": "**Côndilo, não capítulo.** MILCH classifica as fraturas do côndilo lateral na criança, conforme o traço em relação à tróclea.",
+   "B": "**Cabeça do rádio.** MASON é o nome da classificação dessa fratura, na outra metade da articulação.",
+   "C": "**Intercondilar.** RISEBOROUGH e RADIN classificam as fraturas em T ou em Y do úmero distal.",
+   "E": "**Só em fise.** SALTER-HARRIS descreve o caminho do traço pela cartilagem de crescimento e não diz nada sobre esse fragmento do capítulo."
+  },
   "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 39",
    "Coronal Shear Fractures of the Distal Humerus: A Review of Diagnosis, Treatment, and Outcomes. Journal of Shoulder and Elbow Surgery International, 2021. Seção Classification. https://pmc.ncbi.nlm.nih.gov/articles/PMC8461205/",
    "Management and outcomes of capitellum fractures in adolescents: A case series and review of the literature. Journal of Orthopaedic Surgery and Research, 2025. Seção Classification. https://pmc.ncbi.nlm.nih.gov/articles/PMC12051655/"
   ],
-  "conceito": "O capítulo é a superfície articular lateral do úmero distal que recebe a cabeça do rádio. Uma queda sobre a mão pode transmitir força axial pelo rádio e cisalhar a superfície anterior do capítulo. O tamanho do fragmento importa: um bloco com osso subcondral permite estratégias de fixação diferentes das de uma lâmina predominantemente cartilaginosa. A radiografia lateral sugere o plano do cisalhamento; a tomografia ajuda quando é preciso delimitar a extensão à tróclea e a cominuição.\n\nNa classificação **Bryan-Morrey**, o tipo I, chamado Hahn-Steinthal, é um fragmento osteocondral maior; o tipo II, chamado **Kocher-Lorenz**, é uma lâmina articular com pouca ou nenhuma porção de osso subcondral; o tipo III é cominuto. A modificação de McKee acrescenta o tipo IV quando o traço se prolonga medialmente para a tróclea. Assim, Kocher-Lorenz é um epônimo de **padrão dentro de uma classificação**, não uma classificação autônoma. O caso informa apenas “fratura do capítulo”, sem caracterizar o fragmento. Isso permite escolher o epônimo relacionado à estrutura entre as opções, mas não diagnosticar um tipo II nesse adolescente.\n\nOutro cuidado é separar capítulo umeral de côndilo lateral: ambos ficam no úmero distal, porém seus esquemas classificatórios descrevem lesões anatômicas diferentes.",
-  "correta": "**D: Kocher e Lorenz.** É o único epônimo apresentado que se refere a uma fratura do capítulo umeral. Mais precisamente, corresponde ao tipo II da classificação de Bryan-Morrey, com fragmento predominantemente cartilaginoso. O enunciado não fornece imagem ou morfologia suficiente para afirmar que este paciente tem justamente esse tipo.",
-  "geradoEm": "2026-11-01",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1724": {
-  "incorretas": {
-   "B": "**Troca o componente energético por \"distúrbios emocionais\".** Saúde mental pode influenciar alimentação e treinamento, mas não substitui baixa disponibilidade energética ou comportamento alimentar alterado como componente da tríade.",
-   "C": "**Não reúne nenhum dos três componentes clássicos.** Polimenorreia significa ciclos frequentes, não a disfunção por supressão hormonal típica da tríade, e aumento muscular não é o marcador ósseo.",
-   "D": "**Acerta o eixo dietético, mas erra os outros dois.** Ciclos frequentes e ganho de musculatura não equivalem à amenorreia ou à baixa massa óssea da formulação histórica.",
-   "E": "**Acerta alimentação e amenorreia, mas não o terceiro componente.** O risco relevante é perda de saúde óssea e fratura por estresse, não aumento da musculatura."
-  },
+  "conceito": "Uma adolescente que se machuca toda hora, com suspeita de fratura por estresse. O que perguntar? Quanto ela come e como está a menstruação. É isso que a **tríade da mulher atleta** liga: a energia que falta, o hormônio que cai e o osso que perde.\n\nO raciocínio vai em cadeia. A atleta treina mais do que repõe pela alimentação. Com pouca energia disponível, o eixo hormonal se altera, e os ciclos ficam irregulares ou param. Sem estrogênio, o osso perde a sua proteção, e a densidade cai. A fratura por estresse é a consequência visível. A formulação clássica de prova é **distúrbio alimentar, amenorreia e osteoporose**.\n\nHoje, porém, o quadro é visto como um espectro. O American College of Sports Medicine e as revisões atuais falam em baixa disponibilidade energética, com ou sem transtorno alimentar, em disfunção menstrual e em baixa densidade óssea (PMC8702454). Assim, a menina não precisa de amenorreia completa nem de osteoporose estabelecida para merecer atenção. Em quem tem 14 anos, isso é ainda mais grave, porque a adolescência é o período de ganho de massa óssea, e a perda pode não ser recuperada depois.",
+  "correta": "**A: distúrbios dietéticos, amenorreia e osteoporose.** É a formulação clássica, que liga a baixa energia, a disfunção menstrual e o osso (ACSM; PMC8702454).",
   "alerta": "O gabarito oficial A expressa a formulação histórica da tríade. A definição atual descreve um espectro de baixa disponibilidade energética, com ou sem transtorno alimentar, disfunção menstrual e baixa densidade mineral óssea; não exige amenorreia completa nem osteoporose estabelecida, especialmente em adolescente.",
+  "incorretas": {
+   "B": "**A mais próxima.** Acerta dois itens, mas \"distúrbios emocionais\" não é o primeiro elemento da tríade. O problema está na ingestão de energia, mesmo que haja um componente emocional.",
+   "C": "**Três erros.** A polimenorreia é o oposto da falta de ciclos, e o aumento da musculatura não define o quadro.",
+   "D": "**Acerta só a dieta.** A menstruação diminui, e não aumenta. E o terceiro item é o osso, e não o músculo.",
+   "E": "**Acerta dois e erra o último.** Ganho de massa muscular não entra na tríade. O elemento que fecha é a perda óssea, que explica a fratura por estresse."
+  },
   "referencias": [
-   "American College of Sports Medicine, The Female Athlete Triad: https://www.acsm.org/docs/default-source/files-for-resource-library/the-female-athlete-triad.pdf",
-   "The Female Athlete Triad: Review of Current Literature (2021): https://pmc.ncbi.nlm.nih.gov/articles/PMC8702454/"
+   "American College of Sports Medicine, The Female Athlete Triad",
+   "The Female Athlete Triad: Review of Current Literature, PMC8702454"
   ],
-  "conceito": "**Uma atleta pode treinar mais energia do que consegue repor pela alimentação.** A baixa disponibilidade energética altera o eixo hormonal e pode causar ciclos menstruais irregulares ou ausência de menstruação. Ao mesmo tempo, compromete a formação e manutenção óssea, elevando o risco de lesão por estresse. Essa ligação entre nutrição, menstruação e osso é o centro da tríade da mulher atleta.\n\nA fórmula clássica de prova era distúrbio alimentar, amenorreia e osteoporose. Na prática atual, o espectro começa antes desses extremos: pode haver restrição alimentar sem transtorno formal, oligomenorreia sem amenorreia e densidade óssea reduzida sem osteoporose. Em uma menina de 14 anos com lesões repetidas, reconhecer precocemente esse processo é mais útil do que esperar todos os três diagnósticos avançados.",
-  "correta": "**A: distúrbios dietéticos, amenorreia e osteoporose.** É a tríade clássica que a questão pede. O mecanismo comum é o déficit energético, que se associa à disfunção menstrual e ao prejuízo da saúde óssea; o alerta delimita a terminologia moderna.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "trauma-1725": {
+  "conceito": "Mesmo com tudo bem feito, alguns politraumatizados morrem nas primeiras horas. Em que eles diferem dos outros? O Rockwood organiza a resposta na distribuição **trimodal** da mortalidade, com a ressalva de que os limites de tempo variam entre autores (cap. 14, Causes of Mortality):\n\n| Momento | Quando | Causas típicas |\n|---|---|---|\n| Imediata | na cena ou no transporte | perda da via aérea, grande lesão encefálica, lesão medular alta, ruptura de grande vaso |\n| Precoce | em horas | lesão encefálica potencialmente salvável por descompressão, hemotórax ou pneumotórax, lesão de órgão sólido, sangramento de fraturas |\n| Tardia | dias a semanas | infecção e disfunção de múltiplos órgãos |\n\nA lógica é a que torna a questão fácil. A morte precoce é a causa que **poderia ter sido tratada rapidamente**: hematoma epidural se drena, tórax se drena, sangramento se controla. A imediata é a que nem chega a tempo. E a sepse precisa de dias para se instalar. O Rockwood acrescenta que a morte precoce vem caindo, mas a maioria das mortes por trauma ainda ocorre nas primeiras 24 horas (cap. 14).\n\n> **Na prova:** sepse fora de qualquer alternativa de morte precoce. Tronco cerebral e medula alta são mortes imediatas.",
+  "correta": "**D: hematomas epidurais, perda de sangue por múltiplas lesões de extremidades, hemopneumotórax.** Os três estão na faixa precoce do Rockwood: lesão encefálica potencialmente salvável, sangramento de fraturas e lesão intratorácica (cap. 14, Causes of Mortality).",
+  "incorretas": {
+   "A": "**A sepse derruba.** É causa de morte tardia, junto com a disfunção de múltiplos órgãos, dias a semanas depois (Rockwood, cap. 14). A lesão do tronco, por sua vez, costuma pertencer à faixa imediata.",
+   "B": "**Mesmo erro.** Sepse e tronco cerebral em uma lista só de morte precoce. Só o sangramento das extremidades está na faixa certa (Rockwood, cap. 14).",
+   "C": "**A distratora mais próxima.** Hematoma epidural e sangramento estão certos, mas a lesão medular alta é citada entre as causas imediatas, na cena ou no transporte (Rockwood, cap. 14).",
+   "E": "**Dois de três.** Sangramento e hemopneumotórax são precoces, mas o trauma raquimedular alto, de novo, é uma morte imediata (Rockwood, cap. 14)."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 14, seção Causes of Mortality"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1726": {
-  "incorretas": {
-   "A": "**O abdutor longo do polegar é dorsal profundo.** Pronador quadrado e flexor do carpo são volares, mas basta esse abdutor posterior para invalidar o trio.",
-   "B": "**Contém dois elementos de fora do plano volar.** O abdutor longo do polegar é dorsal e o braquiorradial integra o grupo lateral móvel, embora o pronador quadrado seja volar.",
-   "D": "**Flexor do carpo não torna volares os demais.** O abdutor longo do polegar ocupa o compartimento dorsal profundo; o braquiorradial, o lateral móvel.",
-   "E": "**Acerta o flexor profundo dos dedos e o flexor do carpo, mas inclui abdutor dorsal.** A alternativa C troca esse abdutor pelo pronador quadrado, que efetivamente está no volar profundo."
-  },
+  "conceito": "Um esmagamento do antebraço pede fasciotomia, e quem vai descomprimir precisa saber o que há em cada compartimento. O Green traz a tabela em uma página só, que vale guardar (7ª ed., cap. 51, Tabela 51.4, p. 1768):\n\n| Compartimento | Conteúdo |\n|---|---|\n| Volar superficial | flexor radial do carpo, palmar longo, pronador redondo, flexor ulnar do carpo, flexor superficial dos dedos |\n| Volar profundo | flexor profundo dos dedos, flexor longo do polegar, pronador quadrado, nervo e artéria interósseos anteriores |\n| Mobile wad | braquiorradial, extensores radiais longo e curto do carpo |\n| Dorsal | extensor dos dedos, extensor ulnar do carpo, extensor longo do polegar, abdutor longo do polegar e outros |\n\nCom ela, a questão fica fácil: **tudo o que flete e prona é volar**. A resposta precisa ter o pronador quadrado e o flexor profundo juntos, os dois no plano profundo, com um flexor do carpo do plano superficial. O nome \"flexor longo do carpo\" não existe na nomenclatura usual, como diz o alerta.\n\n**Por que o plano profundo importa?** Ele é o primeiro a sofrer. O flexor profundo e o flexor longo do polegar ficam junto ao osso, e a isquemia deles é o que produz a contratura de VOLKMANN. Por isso, a fasciotomia volar precisa abrir também a fáscia do plano profundo, com incisão que pode ir do braço até o túnel do carpo, e o dorso e a mão exigem incisões separadas (Green, 7ª ed., cap. 51, p. 1769).",
+  "correta": "**C: pronador quadrado, flexor longo do carpo, flexor profundo dos dedos.** Todos ficam no compartimento volar, e o pronador quadrado e o flexor profundo estão no plano profundo (Green, 7ª ed., cap. 51, Tabela 51.4, p. 1768). Veja o alerta sobre o nome do flexor do carpo.",
   "alerta": "O enunciado usa \"flexor longo do carpo\", nome que não corresponde à nomenclatura anatômica usual. O gabarito oficial C é preservado porque pronador quadrado e flexor profundo dos dedos são volares e a terceira estrutura é descrita como flexora do carpo. A identificação exata desse músculo exigiria correção da redação original.",
+  "incorretas": {
+   "A": "**O abdutor longo do polegar é dorsal.** Ele está na lista do compartimento dorsal, com os extensores (Green, 7ª ed., cap. 51, Tabela 51.4, p. 1768). Os outros dois itens estão certos, e é isso que torna a alternativa perigosa.",
+   "B": "**Só o pronador quadrado é volar.** O abdutor longo é dorsal, e o braquiorradial pertence ao mobile wad, lateral (Green, cap. 51, p. 1768).",
+   "D": "**Só um volar.** O flexor do carpo é volar, mas os outros dois estão fora: dorsal e mobile wad, respectivamente (Green, cap. 51, p. 1768).",
+   "E": "**Dois volares e um intruso.** O abdutor longo do polegar é o intruso. Ele parece fazer parte por agir no polegar, mas abre o polegar a partir do dorso do antebraço (Green, cap. 51, p. 1768)."
+  },
   "referencias": [
-   "Forearm Compartment Syndrome (2013): https://pmc.ncbi.nlm.nih.gov/articles/PMC4005420/",
-   "Anatomy of forearm compartments by high-resolution ultrasound (2021): https://pmc.ncbi.nlm.nih.gov/articles/PMC8630951/"
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 51 (Síndrome compartimental e contratura isquêmica de Volkmann), Tabela 51.4, p. 1768 e 1769"
   ],
-  "conceito": "**O antebraço se organiza em plano volar flexor-pronador, plano dorsal extensor-supinador e grupo lateral móvel.** No volar superficial estão, entre outros, flexores radial e ulnar do carpo e flexor superficial dos dedos; no profundo, pronador quadrado, flexor profundo dos dedos e flexor longo do polegar. O abdutor longo do polegar, apesar de levar \"longo\" no nome, fica no plano dorsal profundo. O braquiorradial pertence ao grupo lateral móvel.\n\nUma síndrome compartimental após esmagamento exige procurar dor intensa e progressiva, tensão e dor ao alongamento passivo, sem esperar perda de pulso. Para responder à anatomia, localize os músculos por sua posição fascial, não apenas pelo movimento que o nome sugere.",
-  "correta": "**C: pronador quadrado, flexor do carpo e flexor profundo dos dedos.** Os dois músculos precisamente nomeados pertencem ao volar profundo; músculos flexores do carpo pertencem ao volar superficial. A expressão imprecisa da alternativa está registrada no alerta.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "trauma-1727": {
+  "conceito": "O tratamento padrão da fratura diafisária do fêmur no adulto jovem é a haste intramedular. Por isso, a pergunta correta é: quando a haste não serve? O Rockwood lista as indicações de placa (cap. 57, Indications and Contraindications):\n\n- canal medular extremamente estreito;\n- fratura em torno de uma consolidação viciosa antiga;\n- traço que se estende para a região pertrocantérica ou metafisária;\n- lesão vascular associada que exige reparo;\n- fratura ipsilateral de colo e diáfise;\n- fratura junto de implantes prévios, inclusive periprotética;\n- pseudoartrose da diáfise.\n\nConvém lembrar o preço: a placa não divide carga como a haste. A posição excêntrica faz da carga imediata um risco muito maior de falha (cap. 57). Daí a lógica geral: placa só onde a haste não entra ou onde já se abriu a coxa por outro motivo. Uma coxa aberta para o reparo vascular, ou para descomprimir um compartimento, cria a oportunidade de fixar diretamente.\n\n> **Na prova:** canal estreito é o gatilho clássico da placa.",
+  "correta": "**C: síndrome compartimental e canal medular estreito.** O canal estreito está na lista do Rockwood (cap. 57). A síndrome compartimental não está listada com esse nome; entra por analogia com as situações em que a coxa já está aberta, como no reparo vascular. Veja o alerta.",
+  "alerta": "O Rockwood lista canal medular extremamente estreito e lesão vascular com reparo, mas não cita a síndrome compartimental nominalmente. A letra C foi mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Meio certa.** O canal estreito vale, mas o joelho flutuante não aparece entre as indicações de placa do Rockwood (cap. 57). É a distratora mais forte, por causa do primeiro item.",
+   "B": "**Um canal infectado é outro problema.** A infecção pede controle dela antes da fixação definitiva, e não um implante grande. No politraumatizado instável, a lógica é de controle de danos, não de uma abertura maior.",
+   "D": "**A obesidade não é indicação.** Ela não consta da lista do Rockwood (cap. 57), e uma incisão grande em obeso aumenta os problemas de ferida.",
+   "E": "**Nenhum dos dois está na lista.** Nem a obesidade nem o politrauma aparecem como indicação de placa (Rockwood, cap. 57)."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 57 (Fraturas da diáfise do fêmur), Plate Fixation: Indications and Contraindications"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "trauma-1728": {
+  "conceito": "Perna esmagada, vaso lesado, paciente politraumatizado: salvar ou amputar? O Rockwood parte de uma frase simples, \"vida antes do membro\", e diz que a amputação costuma ser a única opção diante de lesão vascular irreparável ou isquemia quente prolongada, de mais de 6 horas no membro inferior (cap. 18, Survivability). Também lista a amputação imediata no membro que é fonte de hemorragia com risco de morte, ou como controle de danos no politraumatizado instável, no membro avascular com mais de 6 horas de isquemia quente e nos esmagamentos extensos (cap. 16).\n\n**De onde vem a lista da questão.** Ela lembra os critérios clássicos de LANGE, que consideravam a ruptura completa do nervo tibial uma indicação absoluta de amputação no adulto (Rockwood, cap. 18). Esse critério envelheceu: com o estudo LEAP, o peso da sensibilidade plantar passou a ser questionado, e o próprio Rockwood discute a origem dessa crença (cap. 18). Ou seja, a prova cobra uma regra que a prática já relativizou.\n\n**O detalhe do EXCETO.** Sepse incontrolável é um cenário de tempo diferente: não é uma decisão imediata de admissão, porque leva dias para aparecer. A amputação pode ser necessária nela, mas para preservar a vida numa fase posterior (Campbell, cap. 14, p. 680).",
+  "correta": "**D: sepse incontrolável.** Ela é a exceção da lista por não ser um critério da decisão imediata: sepse se instala depois. O Campbell lembra que a amputação pode salvar a vida em infecção incontrolável (cap. 14, p. 680), mas essa é outra indicação, mais tardia.",
+  "alerta": "A sepse incontrolável também justifica amputação para preservar a vida (Campbell, cap. 14, p. 680); o que a separa da lista é ser tardia, e não imediata. A ruptura do nervo tibial foi critério clássico de LANGE, hoje relativizado (Rockwood, cap. 18). Gabarito D mantido.",
+  "incorretas": {
+   "A": "**Critério clássico.** LANGE considerava a ruptura completa do nervo tibial uma indicação absoluta no adulto (Rockwood, cap. 18). Na prática atual, é discutida, mas para a banca faz parte da lista.",
+   "B": "**Está no livro.** Mais de 6 horas de isquemia quente é um dos gatilhos, e os esmagamentos extensos reforçam a decisão (Rockwood, cap. 16 e 18).",
+   "C": "**Faz sentido pela lógica de reconstrução.** Sem condições de refazer a parte muscular, a tentativa de salvamento só adia a perda. Esses casos entram na lista dos esmagamentos extensos (Rockwood, cap. 16).",
+   "E": "**Vida antes do membro.** O Rockwood indica amputar quando o membro faz parte do controle de danos no politraumatizado instável (cap. 16)."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 16 e cap. 18 (Survivability)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 14 (Princípios gerais das amputações), p. 680 e 681"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1729": {
@@ -44619,75 +44695,88 @@
    "comentarioSha256": "506a922332938a16257695e1be89c06f48d41fa022ee425b91c4ab1086d45bd9"
   }
  },
- "trauma-1733": {
+ "trauma-1732": {
+  "conceito": "Na fratura do acetábulo, a pergunta prática é: o teto que carrega o peso continua inteiro e congruente? Se continua, pode haver espaço para o tratamento sem cirurgia. O Rockwood diz que, quando o teto superior está comprometido, a maior parte dos autores recomenda a cirurgia se o desvio passa de 2 mm, e cita as medidas de **arco do teto**, de MATTA, para decidir se a fratura atingiu a cúpula de carga (cap. 51, seção Roof Arc).\n\nA banca, no entanto, cita um nome da tradição brasileira: o método de PECORELLI e DELLA TORRE, uma coxometria para avaliar a congruência. É o tipo de questão cujo conteúdo vem de bibliografia nacional, e não dos textos internacionais. As demais alternativas têm outras associações: TILE e LETOURNEL são nomes de classificações e abordagens de pelve e acetábulo, sem ser esse método; JOUDET é conhecido no quadril do adulto por outra medida; e ALLEN está em outras classificações.",
+  "correta": "**D: método de Pecorelli e Della Torre.** É o nome dado pela banca à coxometria de congruência. Veja o alerta sobre a fonte.",
+  "alerta": "O método de PECORELLI e DELLA TORRE não foi encontrado nos livros locais nem nas fontes abertas consultadas. O Rockwood descreve a mesma finalidade pelo arco do teto, de MATTA. O comentário preserva o gabarito da banca e deve ser revisto quando houver fonte, provavelmente de bibliografia brasileira.",
   "incorretas": {
-   "B": "**O limite clássico é acima de 90 batimentos por minuto.** Uma frequência acima de 80 pode continuar abaixo desse corte e não basta para o critério.",
-   "C": "**O limite respiratório é acima de 20 incursões por minuto.** Acima de 15 não define taquipneia pelo esquema de SIRS.",
-   "D": "**O corte de leucocitose é acima de 12.000 por microlitro.** Contagem acima de 10.000 pode permanecer fora do critério; também contam leucopenia abaixo de 4.000 ou desvio à esquerda importante.",
-   "E": "**O corte para formas jovens é maior que 10%.** Mais de 5% não alcança o valor estabelecido para esse componente do esquema clássico."
+   "A": "**Outra medida do quadril.** O nome de JOUDET não aparece no Rockwood nesse contexto.",
+   "B": "**A confusão natural.** LETOURNEL é o nome da classificação do acetábulo, e não o método de coxometria da pergunta.",
+   "C": "**Nome da pelve.** TILE é lembrado pela classificação das fraturas do anel pélvico.",
+   "E": "**Sem relação.** ALLEN não está ligado à coxometria do acetábulo."
   },
   "referencias": [
-   "StatPearls, Systemic Inflammatory Response Syndrome: https://www.ncbi.nlm.nih.gov/books/NBK547669/",
-   "The Third International Consensus Definitions for Sepsis and Septic Shock (Sepsis-3): https://pmc.ncbi.nlm.nih.gov/articles/PMC4968574/"
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 51 (fraturas do acetábulo), seção Roof Arc"
   ],
-  "conceito": "**SIRS descreve uma resposta inflamatória sistêmica, não necessariamente uma infecção.** O critério clássico exige pelo menos dois achados entre temperatura acima de 38 ou abaixo de 36 graus Celsius, frequência cardíaca acima de 90 por minuto, frequência respiratória acima de 20 por minuto ou PaCO2 abaixo de 32 mmHg, e leucócitos acima de 12.000, abaixo de 4.000 por microlitro ou mais de 10% de formas jovens.\n\nApós trauma, inflamação estéril pode preencher esses critérios. Eles não equivalem, por si, a sepse: a definição contemporânea de sepse exige infecção com disfunção orgânica. A questão pede reconhecer um parâmetro compatível com o esquema de SIRS, não diagnosticar a síndrome por um dado isolado.",
-  "correta": "**A: temperatura abaixo de 36 graus.** Hipotermia é um dos limites clássicos de SIRS. Para preencher a síndrome pelo critério histórico, ainda seria necessário outro parâmetro alterado.",
-  "geradoEm": "2026-10-29",
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "trauma-1733": {
+  "conceito": "A síndrome de resposta inflamatória sistêmica (SIRS) é a reação do corpo inteiro a uma agressão, que pode ser infecção, trauma ou queimadura. Para o ortopedista, ela não é um detalhe de terapia intensiva. O Rockwood lembra que o doente gravemente traumatizado, com hemorragia maciça, pode entrar em SIRS, um estado associado à falência de múltiplos órgãos e à morte, e que a própria fixação da fratura pode contribuir para essa resposta em quem está mal reanimado (cap. 14). É a base do raciocínio de controle de danos: operar demais, na hora errada, é um segundo golpe.\n\n**O diagnóstico é uma lista.** O StatPearls diz que a SIRS exige pelo menos dois critérios alterados (Systemic Inflammatory Response Syndrome). Os valores são:\n\n| Parâmetro | Critério |\n|---|---|\n| Temperatura | abaixo de 36 °C ou acima de 38 °C |\n| Frequência cardíaca | acima de 90 por minuto |\n| Frequência respiratória | acima de 20 por minuto |\n| Leucócitos | abaixo de 4.000 ou acima de 12.000 por µL, ou mais de 10% de formas jovens |\n\nA banca aposta nos números muito próximos. Olhe a tabela contra as alternativas: todas trazem um valor abaixo do corte, exceto uma. Atenção à temperatura: ela pode estar baixa ou alta. O doente de SIRS nem sempre tem febre, e a hipotermia é um critério, além de um mau sinal no politraumatizado.\n\n**Situação atual.** Essa lista saiu da definição de sepse desde o consenso Sepsis-3, mas continua sendo cobrada e útil em outros contextos (PMC8618061).",
+  "correta": "**A: temperatura corporal abaixo de 36 graus.** É um critério válido, já que a SIRS inclui temperatura menor que 36 °C ou maior que 38 °C (StatPearls, Systemic Inflammatory Response Syndrome).",
+  "incorretas": {
+   "B": "**O corte é maior.** O critério é frequência cardíaca acima de 90, e 80 é um valor normal (StatPearls).",
+   "C": "**O corte é maior.** O critério é frequência respiratória acima de 20. Quinze é normal (StatPearls).",
+   "D": "**O corte é maior.** O critério é acima de 12.000 leucócitos. Entre 10.000 e 12.000, o valor ainda não preenche o critério (StatPearls).",
+   "E": "**O corte é maior.** O critério é mais de 10% de neutrófilos jovens. A banca colocou a metade do valor (StatPearls)."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 14",
+   "StatPearls (NCBI Bookshelf), Systemic Inflammatory Response Syndrome (NBK547669)",
+   "Limited Utility of SIRS Criteria, PMC8618061"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1734": {
-  "conceito": "**O oponente do polegar pertence ao compartimento tenar.** O resumo descreve esse espaço com três músculos: abdutor curto, flexor curto e oponente do polegar. A presença da palavra “polegar” no nome de uma estrutura não basta para colocá-la no tenar.\n\nA mão tem dez compartimentos nessa divisão: tenar, hipotenar, adutor do polegar, quatro interósseos dorsais e três interósseos palmares. O adutor do polegar merece destaque porque possui compartimento próprio, embora também atue sobre o polegar. Os interósseos tampouco fazem parte do tenar.\n\nUma síndrome tenar ameaça a função dos músculos que ocupam esse espaço. Contudo, no esmagamento, a investigação não deve parar em uma região apenas porque o enunciado a destacou: os demais espaços podem estar envolvidos e precisam de avaliação apropriada. A divisão anatômica orienta o exame e a descompressão.\n\n**Leia “Braço, antebraço e mão”, na Biblioteca.** Compare os três músculos tenares com o adutor em compartimento separado e com os grupos interósseos.",
-  "correta": "**A: músculo oponente do polegar.** Está explicitamente listado junto com abdutor curto e flexor curto no compartimento tenar. Sua localização explica por que pode ter a função comprometida quando esse espaço sofre elevação patológica de pressão.\n\nA resposta depende de pertencer ao compartimento, não apenas de mover o polegar.",
+  "conceito": "Uma mão com síndrome compartimental no tenar: o que deixa de funcionar? A pergunta é anatômica, e dá para resolvê-la com um truque: os três músculos do tenar movem o polegar para longe da palma, em direção à pinça.\n\nO Green lista os compartimentos da mão em sua Tabela 51.4 (7ª ed., cap. 51, p. 1768): tenar, hipotenar, **adutor do polegar**, interósseos dorsais e interósseos volares. O detalhe decisivo é este: o adutor do polegar tem **compartimento próprio**, separado do tenar. Essa separação faz sentido porque ele tem outra inervação, pelo ulnar, e fica em um plano profundo, enquanto o tenar é dominado pelo ramo recorrente do mediano.\n\nDentro do tenar estão o **abdutor curto**, o **flexor curto** e o **oponente do polegar**. Perder o oponente é perder a pinça de precisão, que é a função mais valiosa da mão. É por isso que o polegar que não opõe é a grande sequela da lesão baixa do mediano, e o Green dedica boa parte do capítulo de transferências a recuperá-la (8ª ed., cap. 31). Na síndrome compartimental, a fibrose desse compartimento ainda deixa o polegar aduzido e retraído.",
+  "correta": "**A: músculo oponente do polegar.** Fica no compartimento tenar, que o Green separa do adutor do polegar e dos interósseos (7ª ed., cap. 51, Tabela 51.4, p. 1768).",
   "incorretas": {
-   "B": "**O adutor do polegar tem compartimento próprio.** É a principal confusão entre as opções porque também está relacionado ao polegar. O resumo o conta separadamente do tenar, de modo que não integra o trio pedido.",
-   "C": "**Um tendão flexor profundo dos dedos não é um dos três músculos tenares.** A opção troca uma estrutura tendínea dos flexores por um músculo intrínseco do grupo descrito. A lista tenar é abdutor curto, flexor curto e oponente do polegar.",
-   "D": "**Lumbricais não integram a composição tenar apresentada.** Ser uma musculatura da mão não significa pertencer a esse compartimento específico. Para esta localização, a fonte nomeia o trio ligado ao polegar, sem incluir lumbricais.",
-   "E": "**Os interósseos dorsais são contados como quatro compartimentos separados do tenar.** A opção aponta um grupo real da mão, mas em outro espaço. Essa separação importa porque avaliar ou liberar o tenar não equivale automaticamente a tratar os interósseos."
+   "B": "**A pegadinha principal.** Parece do tenar por agir no polegar, mas tem compartimento próprio na tabela do Green (cap. 51, p. 1768), além de inervação ulnar.",
+   "C": "**É um tendão da palma.** O flexor profundo passa pelo centro da palma, em seu trajeto, sem pertencer ao tenar.",
+   "D": "**Plano central.** Os lumbricais nascem do flexor profundo e ficam no centro da palma, junto dos tendões.",
+   "E": "**Entre os metacarpos.** Os interósseos dorsais formam quatro compartimentos próprios (Green, cap. 51, p. 1768), e sua descompressão é feita pelo dorso."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Os compartimentos de cada região."
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 51, Tabela 51.4, p. 1768",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 31"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Os compartimentos de cada região"
-     ],
-     "blocos": [
-      "os-compartimentos-de-cada-regiao-231bd2af"
-     ],
-     "sha256": "d181d3a39c3caed63a62419600c8807d8a42fb83ed5046cec0dda9a6d0e59b50",
-     "trechosSha256": "507556fb009db962a03999728088429c0b2a3408fc74fdef4831892a24f49aa5"
-    }
-   ],
-   "questaoSha256": "add7381365d20e1879b7e3852d52d12470173e05f77a3e6f7e0b350aff7e8022",
-   "comentarioSha256": "33ba369aaf521f2ae3096500ec3b6230dd6c6170edea4cc40e06e30b8ac52a0a"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "trauma-1735": {
-  "incorretas": {
-   "A": "**Luxação anterior em 80%.** Inverte o sentido mais relacionado à perda do anteparo coronoide. Além disso, transfere indevidamente o percentual composto do estudo para uma direção específica de luxação.",
-   "B": "**Luxação lateral em 80%.** O número não foi calculado para luxações laterais no estudo citado. A classificação mede o tamanho da coronoide, não define uma direção lateral de deslocamento.",
-   "C": "**Luxação posterior em 40%.** Acerta a direção biomecanicamente preocupante, mas introduz um percentual sem apoio no dado clássico. O estudo registrou 80% de lesão associada de qualquer uma das duas categorias no tipo III.",
-   "D": "**Luxação anterior em 40%.** Combina uma direção que não traduz o mecanismo típico com um percentual não derivado da série original. O achado que merece busca ativa é instabilidade e lesão associada, não essa estimativa."
-  },
+  "conceito": "O coronoide é o batente da frente do cotovelo: ele impede que a ulna escorregue para trás. Quando quebra, o cotovelo perde esse apoio, e por isso as fraturas grandes combinam tanto com luxação posterior.\n\nO Rockwood descreve a classificação de REGAN e MORREY pela **altura** do fragmento no plano coronal (cap. 40): **tipo I**, a ponta, antes considerada avulsão, e hoje entendida como resultado de uma subluxação ou luxação; **tipo II**, menos de 50% da altura; **tipo III**, mais de 50%. Ela ainda se modifica com a letra A, para a fratura isolada, ou B, se há luxação associada.\n\n**Por que o tipo III é tão instável?** Porque se perde a base do coronoide, onde se inserem o braquial e o feixe anterior do colateral medial. Sem o batente nem esses estabilizadores, a ulna tende a sair para trás. O número da banca, 80%, vem do estudo original, e o alerta explica um cuidado importante sobre o que ele quer dizer.\n\nO Rockwood acrescenta que O'DRISCOLL propôs um sistema mais completo, que considera o tamanho e também a localização do fragmento (cap. 40). Isso importa porque nem toda lesão importante é só uma questão de altura: a faceta anteromedial, por exemplo, tem um mecanismo próprio.",
+  "correta": "**E: pode ocorrer luxação posterior do cotovelo em 80% dos casos.** É a direção esperada, já que o coronoide bloqueia o deslizamento posterior. O número vem do trabalho original, com a ressalva do alerta (Rockwood, cap. 40).",
   "alerta": "O gabarito oficial é E, mas o número de 80% no estudo original de Regan e Morrey corresponde à presença de luxação concomitante OU outra fratura associada nos casos tipo III, não especificamente à luxação posterior. A direção posterior é clinicamente plausível, porém a porcentagem específica afirmada na alternativa não foi demonstrada por essa fonte.",
+  "incorretas": {
+   "A": "**Direção errada.** Sem o batente anterior, a ulna escapa para trás, e não para a frente.",
+   "B": "**Direção errada.** Luxação lateral pura não é o padrão associado a essa fratura.",
+   "C": "**Direção certa, número baixo.** O número da banca é de 80%, a partir do estudo original.",
+   "D": "**Dois erros.** Nem a direção nem o número."
+  },
   "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40",
    "Regan W, Morrey BF. Fractures of the coronoid process of the ulna. Journal of Bone and Joint Surgery American, 1989;71(9):1348-1354. PMID: 2793888. https://pubmed.ncbi.nlm.nih.gov/2793888/",
    "Classifications in Brief: Regan-Morrey Classification of Coronoid Fractures. Clinical Orthopaedics and Related Research, 2019. https://pmc.ncbi.nlm.nih.gov/articles/PMC6437590/"
   ],
-  "conceito": "O processo coronoide é a projeção anterior da ulna que forma parte da incisura troclear. Ele funciona como anteparo ósseo contra o deslocamento posterior da ulna em relação ao úmero; cápsula e ligamentos completam a estabilidade. Por isso, uma fratura grande da coronoide deve levar à procura de luxação, fratura da cabeça do rádio e lesões ligamentares, mesmo que o cotovelo já tenha sido reduzido quando a radiografia é feita.\n\nA classificação **Regan-Morrey** usa o tamanho do fragmento visto na radiografia lateral: tipo I é a ponta; tipo II abrange até metade da altura; tipo III envolve mais da metade. O tamanho é uma pista de gravidade, não uma descrição completa do padrão de instabilidade. No estudo original de 35 pacientes, luxação **ou fratura associada** foi observada em 14% no tipo I, 56% no tipo II e 80% no tipo III. O estudo não afirma que 80% dos tipo III tiveram especificamente luxação posterior. Essa distinção entre desfecho composto e evento isolado é o ponto crítico desta questão.\n\nNa prática, a avaliação de um tipo III considera a congruência após redução, o restante da ulna proximal, a cabeça do rádio e a estabilidade ao movimento. A fratura extensa não deve ser tratada como mero achado radiográfico, pois perda do anteparo anterior e dano ligamentar podem permitir subluxação recorrente e rigidez posterior.",
-  "correta": "**E: luxação posterior em 80%, segundo a letra oficial.** A direção posterior é coerente com a função estabilizadora da coronoide e, entre as opções, é a associação que a banca pretendeu cobrar. Contudo, o 80% publicado por Regan e Morrey é de luxação **ou outra fratura associada**, sem discriminar uma taxa de luxação posterior. A resposta deve ser estudada com essa ressalva, não como estatística validada para a direção da luxação.",
-  "geradoEm": "2026-11-01",
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "trauma-1736": {
+  "conceito": "A pergunta usa a palavra \"absoluto\" e, com isso, leva a um ponto da história da ortopedia. LANGE e colaboradores propuseram critérios para a fratura exposta da tíbia com lesão vascular, e **a ruptura completa do nervo tibial no adulto** era considerada indicação absoluta de amputação (Rockwood, cap. 18). O raciocínio: um pé sem sensibilidade plantar ulcera e não serve de apoio.\n\n**O outro critério clássico** é o esmagamento com isquemia quente prolongada. O número importa: o Rockwood fala em **mais de 6 horas** para o membro inferior (cap. 18), e a alternativa E traz 3 horas. É o que a desqualifica, embora o raciocínio seja bom.\n\n**O que mudou.** O estudo LEAP colocou isso em questão. Mais de um terço dos ortopedistas ouvidos dizia usar a sensibilidade plantar para decidir, e o Rockwood mostra que a base dessa crença é difícil de rastrear (cap. 18). O Campbell é ainda mais enxuto: a única indicação absoluta de amputação primária é a lesão vascular irreparável em um membro isquêmico (cap. 14, p. 681).\n\n> **Na prova:** o critério absoluto clássico é o nervo tibial. Na prática, a decisão é bem mais complexa.",
+  "correta": "**B: lesão do nervo tibial posterior.** É o critério absoluto de LANGE, que considerava a ruptura completa desse nervo no adulto indicação de amputação (Rockwood, cap. 18).",
+  "alerta": "O critério é histórico. O Rockwood discute como o LEAP questionou o peso da sensibilidade plantar, e o Campbell afirma que a única indicação absoluta de amputação primária é a lesão vascular irreparável em membro isquêmico (cap. 14, p. 681). Gabarito B mantido.",
+  "incorretas": {
+   "A": "**Pesa, mas não decide sozinho.** O politrauma é relevante quando o paciente está instável e o membro entra no controle de danos (Rockwood, cap. 16). Por si só, não define amputação.",
+   "C": "**Entra na conversa, não é critério absoluto.** A idade influencia o prognóstico e a escolha, mas sozinha não indica amputar.",
+   "D": "**Um fator de risco.** O choque pesa nos escores de gravidade do membro, como parte de uma soma, e não como critério absoluto (Rockwood, cap. 16).",
+   "E": "**O número derruba.** Três horas de isquemia quente é pouco. O limite do Rockwood é de mais de 6 horas no membro inferior (cap. 16 e 18)."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 16 e cap. 18 (Survivability)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 14 (Princípios gerais das amputações), p. 680 e 681"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  }
 }

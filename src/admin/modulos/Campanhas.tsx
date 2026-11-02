@@ -58,6 +58,7 @@ export default function Campanhas() {
   const [quinzenal, definirQuinzenal] = useState<{ pendentes: number; enviados: number; falharam: number } | string | null>(null)
   const [previa, definirPrevia] = useState<{ html: string; para: string | null } | string | null>(null)
   const [execucao, definirExecucao] = useState<Execucao>(null)
+  const [tudo, definirTudo] = useState<{ estado: 'enviando'; etapa: string; feitos: number } | { estado: 'feito'; texto: string; linhas: string[] } | null>(null)
 
   const carregar = useCallback(async () => {
     try { definirResumo(await chamarRpc<Resumo[]>('resumo_lembretes_admin', {})); definirErro('') } catch (f) { definirErro(erroDoPainel(f, MIGRACAO)) }
@@ -109,15 +110,65 @@ export default function Campanhas() {
     } finally { avisarEmailsEnviados() }
   }
 
-  if (erro) return <div className="a3-pilha a3-pilha--larga"><Cabeca area="Comunicação" titulo={parte.rotulo} pergunta={parte.pergunta} /><Estado tipo="erro" titulo="As campanhas não carregaram" texto={erro} /></div>
+  /** Ordem do "Enviar tudo": o que vence primeiro, depois ativação e retorno, e o resumo por último. */
+  const ORDEM_TUDO: Campanha[] = ['renovacao_pix_hoje', 'renovacao_pix', 'nunca', 'tres_dias', 'sete_dias']
+  const pendentesQuinzenal = typeof quinzenal === 'object' && quinzenal ? Number(quinzenal.pendentes) : 0
+  const filaTudo = [
+    ...ORDEM_TUDO.filter(id => pessoasDe(id) > 0).map(id => ({ id: id as Escolha, titulo: CAMPANHAS.find(x => x.id === id)!.titulo, n: pessoasDe(id) })),
+    ...(pendentesQuinzenal > 0 ? [{ id: 'quinzenal' as Escolha, titulo: `Resumo de ${nomeQuinzena(ref)}`, n: pendentesQuinzenal }] : []),
+  ]
+  const totalTudo = filaTudo.reduce((t, x) => t + x.n, 0)
+
+  /**
+   * Um botão para mandar tudo o que está pendente, campanha por campanha, em lotes. O servidor continua
+   * pulando quem desligou os e-mails, quem recebeu outro e-mail há menos de 48 h (ou 3 em 14 dias) e quem
+   * já recebeu esta campanha; quem entra em duas campanhas recebe só a primeira.
+   */
+  async function enviarTudo() {
+    if (!totalTudo || tudo?.estado === 'enviando') return
+    if (!(await confirmar({ titulo: `Enviar tudo o que está pendente (até ${totalTudo} e-mails)?`, sim: 'Enviar tudo', texto: <>
+      <ul className="a3-lista-nomes">{filaTudo.map(x => <li key={x.id}>{x.titulo}: {x.n} {x.n === 1 ? 'pessoa' : 'pessoas'}</li>)}</ul>
+      <span>Sai uma campanha de cada vez, em lotes pequenos. Ninguém recebe dois e-mails seguidos: quem desligou os e-mails, quem recebeu outro há menos de 48 horas ou quem está em duas campanhas fica de fora automaticamente.</span>
+    </> }))) return
+    const feitos: string[] = []
+    let somaTotal = 0
+    for (const [i, x] of filaTudo.entries()) {
+      definirTudo({ estado: 'enviando', etapa: `${x.titulo} (${i + 1} de ${filaTudo.length})`, feitos: somaTotal })
+      try {
+        const soma = await enviarEmLotes(
+          limite => chamarFuncao<RespostaLote>('enviar-email', x.id === 'quinzenal' ? { acao: 'relatorios_quinzenais', quinzena: ref, limite } : { acao: 'lembretes', campanha: x.id, limite }, { prazoMs: PRAZO_LOTE_MS }),
+          n => definirTudo({ estado: 'enviando', etapa: `${x.titulo} (${i + 1} de ${filaTudo.length})`, feitos: somaTotal + n }))
+        somaTotal += soma.enviados
+        feitos.push(`${x.titulo}: ${textoLote(soma)}`)
+      } catch (f) {
+        feitos.push(`${x.titulo}: parou (${String(f).replace(/^Error: /, '')}); o servidor pode ter mandado parte. Clique de novo para continuar de onde parou`)
+      }
+      avisarEmailsEnviados()
+    }
+    definirTudo({ estado: 'feito', texto: `${somaTotal} ${somaTotal === 1 ? 'e-mail enviado' : 'e-mails enviados'} no total.`, linhas: feitos })
+  }
+
+  if (erro) return <div className="a3-pilha a3-pilha--larga"><Cabeca area="E-mails" titulo={parte.rotulo} pergunta={parte.pergunta} /><Estado tipo="erro" titulo="As campanhas não carregaram" texto={erro} /></div>
   const r = c ? resumo?.find(x => x.campanha === c.id) : null
   const aguardando = Array.isArray(lista) ? lista.filter(p => !p.liberado).length : 0
   const passo = execucao ? 4 : previa && typeof previa === 'object' ? 3 : 2
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Comunicação" titulo={parte.rotulo} pergunta={parte.pergunta}
+    <Cabeca area="E-mails" titulo={parte.rotulo} pergunta={parte.pergunta}
       acoes={<a className="a3-botao a3-botao--contorno" href={nav.link('cartas')} onClick={e => { e.preventDefault(); nav.ir('cartas') }}><Icone nome="carta" tamanho={15} />Carta pessoal por grupo</a>} />
-    <Faixa titulo="Contra o spam, vale para tudo">Ninguém recebe dois lembretes em menos de 2 dias (só "Pix: termina hoje" passa, por ser o último aviso); o servidor segura quem recebeu qualquer e-mail nas últimas 48 horas ou 3 em 14 dias; e cada lembrete sai uma vez por ausência. "Primeira missão" e a carta "Criou e não começou" falam com as mesmas pessoas, assim como "Retomar a jornada" e "Sumiu": use um ou outro.</Faixa>
+    <section className="a3-painel a3-enviar-tudo" aria-label="Enviar tudo">
+      <div className="a3-enviar-tudo__texto">
+        <h2 className="a3-titulo-2">{totalTudo ? `${totalTudo} ${totalTudo === 1 ? 'e-mail pendente' : 'e-mails pendentes'}` : resumo ? 'Nada pendente agora' : 'Contando o que está pendente…'}</h2>
+        <p className="a3-mudo">{filaTudo.length ? filaTudo.map(x => `${x.titulo} ${x.n}`).join(' · ') : 'Todas as campanhas e o resumo quinzenal estão em dia.'}</p>
+      </div>
+      <button type="button" className="a3-botao a3-botao--grande" disabled={!totalTudo || tudo?.estado === 'enviando' || execucao?.estado === 'enviando'} onClick={() => void enviarTudo()}>
+        <Icone nome="enviar" tamanho={17} />{tudo?.estado === 'enviando' ? `Enviando… ${tudo.feitos}` : 'Enviar tudo'}</button>
+      {tudo?.estado === 'enviando' && <p className="a3-enviar-tudo__etapa" role="status">Agora: {tudo.etapa}. Pode deixar a tela aberta; cada lote leva até um minuto.</p>}
+      {tudo?.estado === 'feito' && <div className="a3-enviar-tudo__fim"><Faixa tom="ok" titulo={tudo.texto}><ul className="a3-lista-nomes">{tudo.linhas.map(l => <li key={l}>{l}</li>)}</ul></Faixa></div>}
+      <details className="a3-detalhes-tecnicos a3-enviar-tudo__regras"><summary>Quem nunca recebe (regras contra o spam)</summary>
+        <p className="a3-mudo a3-pequeno">Quem desligou os e-mails não recebe. Ninguém recebe dois lembretes em menos de 2 dias (só "Pix: termina hoje" passa, por ser o último aviso); o servidor segura quem recebeu qualquer e-mail nas últimas 48 horas ou 3 em 14 dias; e cada lembrete sai uma vez por ausência. "Primeira missão" e a carta "Criou e não começou" falam com as mesmas pessoas, assim como "Retomar a jornada" e "Sumiu": use um ou outro.</p>
+      </details>
+    </section>
 
     <div className="a3-campanhas">
       <nav className="a3-painel a3-campanhas__lista" aria-label="Campanhas">

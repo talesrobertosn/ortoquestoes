@@ -47,6 +47,12 @@ export default function Exportar() {
         definirEstados(e => ({ ...e, [secao]: 'falhou' }))
       }
     }))
+    // Cortesias (parte 37): a conta sem plano pago e com cortesia valendo sai como "Cortesia", igual ao painel.
+    try {
+      const cortesias = new Set((await chamarRpc<Array<{ id_usuario: string }>>('listar_cortesias_admin', {}, { prazoMs: 30_000 })).map(c => c.id_usuario))
+      const lista = (dados as unknown as { usuarios?: Array<{ id_usuario: string; plano_vigente: string | null }> }).usuarios
+      if (Array.isArray(lista)) for (const u of lista) if (!u.plano_vigente && cortesias.has(u.id_usuario)) u.plano_vigente = 'cortesia'
+    } catch { /* sem a parte 37: segue sem marcar cortesias */ }
     dadosRef.current = dados
     definirResultado(montarExportacao(dados, opcoes))
     definirOcupado(false)
@@ -61,7 +67,7 @@ export default function Exportar() {
   const falhas = Object.values(estados).filter(e => e === 'falhou').length
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Configurações" titulo={parte.rotulo} pergunta="Um documento com pessoas, atividade, crescimento, assinaturas, pagamentos, previsões e o resumo do painel, pronto para uma análise: Markdown com tabelas, JSON e as pessoas em CSV." />
+    <Cabeca area="Ajustes" titulo={parte.rotulo} pergunta="Um documento com pessoas, atividade, crescimento, assinaturas, pagamentos, previsões e o resumo do painel, pronto para uma análise: Markdown com tabelas, JSON e as pessoas em CSV." />
     <Faixa tom="aviso" titulo="O arquivo contém dados pessoais">De quem usa o site. Guarde com cuidado, não publique e apague quando terminar. Nada sai do seu navegador: o arquivo é montado aqui.</Faixa>
     <div className="a3-grade a3-grade--2" style={{ alignItems: 'start' }}>
       <Painel titulo="1. Privacidade" descricao="Escolha antes de gerar; dá para mudar depois sem consultar de novo.">

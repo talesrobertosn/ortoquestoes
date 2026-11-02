@@ -3739,16 +3739,20 @@
   "conferido": false
  },
  "coluna-0290": {
+  "conceito": "Corrigir uma cifose rígida exige escolher a osteotomia certa, e essa escolha depende de saber onde está o problema estrutural. O enunciado descreve a **classificação de Rajasekaran** (J Bone Joint Surg, 2018), que junta quatro dados: a deficiência das colunas, a flexibilidade dos espaços discais, a magnitude da curva e o tipo de osteotomia. Aqui, \"coluna\" é a anterior (corpo e disco) ou a posterior (arco, facetas e ligamentos).\n\n| Tipo | Colunas | O que diferencia |\n|---|---|---|\n| I A | nenhuma deficiente | discos móveis, flexíveis |\n| I B | nenhuma deficiente | discos fundidos, imóveis |\n| II A | só a **anterior** deficiente | |\n| II B | só a **posterior** deficiente | |\n| III | as duas deficientes | A até 60 graus; B acima de 60 graus; C colapso em flambagem |\n\nA lógica de gravar é em degraus: o algarismo conta quantas colunas falharam, e a letra do tipo II diz qual delas, na ordem anterior e depois posterior.\n\nA tabela conversa com a cirurgia. A osteotomia de Ponte encurta só a coluna posterior e ganha de 5 a 10 graus por nível, cada milímetro ressecado valendo cerca de um grau; por isso precisa de disco que ainda se mova (Campbell 14, cap. 44, p. 2050; Campbell 12, cap. 44). No estudo original, os tipos I e II foram tratados com Ponte, subtração pedicular ou osteotomia disco-óssea, e a maior parte dos tipos III A e III B precisou de vertebrectomia.",
+  "correta": "**D: II B.** Uma coluna só está deficiente, e é a posterior: esse é exatamente o II B de Rajasekaran.",
   "incorretas": {
-   "A": "O tipo I corresponde às cifoses sem deficiência estrutural relevante, geralmente mais flexíveis.",
-   "B": "O I B também pertence ao grupo sem deficiência estrutural predominante das colunas.",
-   "C": "O II A descreve a deficiência da coluna anterior, e não da posterior.",
-   "E": "O tipo III corresponde à deficiência das duas colunas, a situação que exige as osteotomias mais extensas."
+   "A": "**Sem deficiência nenhuma.** O I A tem as duas colunas íntegras e os discos móveis, o cenário mais favorável, em que a curva ainda cede pelos discos.",
+   "B": "**Colunas íntegras, discos fundidos.** O I B também não tem deficiência; o que muda em relação ao I A é a rigidez dos espaços discais. A rigidez é o que confunde: curva dura não quer dizer coluna deficiente.",
+   "C": "**A coluna errada.** O II A é a deficiência isolada da coluna anterior. É a distratora mais próxima, porque só a letra separa as duas situações.",
+   "E": "**Duas colunas, não uma.** O tipo III reúne deficiência anterior e posterior e é subdividido pela magnitude da curva e pelo colapso. Foi nele que a vertebrectomia predominou."
   },
-  "conceito": "Corrigir uma cifose rígida exige escolher a osteotomia certa, e essa escolha depende de saber onde está o problema estrutural da coluna. Por isso surgiram classificações que olham para as **colunas da vértebra**: a coluna **anterior** (corpo vertebral e disco) e a **posterior** (arco, facetas e ligamentos de trás). A classificação cobrada na questão combina esse dado com a **flexibilidade** dos discos, a **magnitude** da curva e a necessidade de osteotomia.\n\nPela lógica adotada no gabarito, o tipo I agrupa as cifoses sem deficiência estrutural importante, mais flexíveis. O tipo II separa a deficiência de uma coluna só: **II A** quando o problema está na coluna **anterior** e **II B** quando está na coluna **posterior**. O tipo III é a deficiência das duas.\n\nNa prática, isso conversa com as osteotomias. Quando os discos ainda se movem, osteotomias que retiram só elementos posteriores, como a de **Smith-Petersen** ou a de **Ponte**, fecham a parte de trás usando o disco como dobradiça e ganham cerca de 10 graus por nível. Quando a curva é rígida, entra a **osteotomia de subtração pedicular**, que remove uma cunha das três colunas e corrige em torno de 30 a 40 graus num nível só. Nas deformidades mais graves e angulares, a **ressecção de coluna vertebral** (VCR) remove um segmento inteiro, com maior correção e maior risco neurológico.\n\nComo as definições de cada subtipo dessa classificação variam entre as referências, vale ler o alerta e conferir a tabela do material usado na preparação.",
-  "correta": "II B. Na lógica do gabarito, a cifose com deficiência isolada da coluna posterior é classificada como II B.",
-  "alerta": "A definição exata de cada subtipo (I A, I B, II A, II B, III) dessa classificação de cifose baseada nas colunas pode variar um pouco conforme a referência consultada, mantivemos aqui a lógica mais consistente com o gabarito oficial (deficiência posterior isolada = II B), mas vale conferir a tabela específica do material que você está usando para a prova.",
-  "geradoEm": "2026-10-02",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 44 (Scoliosis and Kyphosis), p. 2050",
+   "Campbell, Cirurgia Ortopédica, 12ª ed., cap. 44",
+   "Classificação de Rajasekaran para a cifose, J Bone Joint Surg, 2018, e estudos de validação (fontes abertas conferidas)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0291": {
@@ -3785,20 +3789,21 @@
   "conferido": false
  },
  "coluna-0293": {
-  "conceito": "A questão cobra o vocabulário da escoliose, e cada alternativa errada tem uma única palavra ou número trocado. É o tipo de item que se resolve com a definição exata na cabeça.\n\n**As definições do Box 9.1.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 133), traz o glossário:\n- **curva torácica**: ápice entre **T2 e T11**;\n- **curva lombar**: ápice entre **L1 e L4**; toracolombar, ápice em T12, L1 ou no disco T12-L1; lombossacra, L5 ou abaixo; cervicotorácica, C7 ou T1;\n- **curva dupla**: duas curvas laterais no **mesmo** segmento da coluna;\n- **dupla maior**: duas curvas estruturais, geralmente de tamanho e rotação **semelhantes**;\n- **dupla torácica**: uma torácica superior estrutural, uma torácica inferior maior e mais deformante e uma lombar relativamente não estrutural.\n\n**Como a banca montou as armadilhas.** Encurtou os intervalos de ápice (T5 a T7 no lugar de T2 a T11; L2 a L3 no lugar de L1 a L4), trocou \"mesmo segmento\" por \"segmentos diferentes\" e \"semelhantes\" por \"diferentes\". Só a dupla torácica foi copiada sem alteração.\n\n**Uma ligação com a LENKE.** A dupla torácica do Box 9.1 corresponde ao tipo 2 de LENKE: torácica proximal estrutural, torácica principal maior, lombar não estrutural (Tachdjian, Tabela 9.3, p. 152).\n\nO glossário está na seção \"Definição, terminologia e classificação por idade\" do resumo.",
-  "correta": "**E) curva torácica dupla: torácica superior estrutural, torácica inferior maior e mais deformante, lombar relativamente não estrutural.** É a definição literal do Box 9.1.",
+  "conceito": "A nomenclatura da escoliose parece um detalhe, até o dia em que o relatório diz \"dupla maior\" e a conduta muda. O Tachdjian traz um glossário no início do capítulo (cap. 9, p. 138), que vale ler como uma régua: **toda curva é nomeada pelo seu ápice**, a vértebra mais desviada, e por seu caráter estrutural.\n\n| Termo | Definição do Tachdjian |\n|---|---|\n| Curva cervicotorácica | ápice em C7 ou T1 |\n| Curva torácica | ápice entre T2 e T11 |\n| Curva toracolombar | ápice em T12, L1 ou no espaço T12-L1 |\n| Curva lombar | ápice entre L1 e L4 |\n| Curva lombossacral | ápice em L5 ou abaixo |\n\nVêm então as combinações. **Curva dupla:** duas curvas laterais no **mesmo** segmento da coluna. **Curva dupla maior:** duas curvas estruturais, em geral de tamanho e rotação **semelhantes**. **Curva torácica dupla:** uma curva torácica superior estrutural, uma torácica inferior maior e mais deformante, e uma curva lombar relativamente não estrutural (p. 138).\n\nEsta última é a definição literal da alternativa correta. E repare como as outras foram \"quase copiadas\": a banca muda uma palavra só, e é por isso que essas alternativas enganam. Quem lê apenas o início da frase erra. Na prática, saber qual curva é estrutural decide o que entra na artrodese, para não incluir o que corrigiria sozinho.",
+  "correta": "**E: curva torácica dupla: curva torácica superior estrutural, uma torácica inferior maior e mais deformante e uma lombar relativamente não estrutural.** É a definição do glossário do Tachdjian (cap. 9, p. 138).",
   "incorretas": {
-   "A": "**Torácica com ápice entre T5 e T7** encurta demais o intervalo; o ápice torácico vai de T2 a T11.",
-   "B": "**Lombar com ápice entre L2 e L3** deixa de fora L1 e L4; o intervalo do livro vai de L1 a L4.",
-   "C": "**Curva dupla em segmentos diferentes** inverte a definição, que exige duas curvas laterais no mesmo segmento.",
-   "D": "**Dupla maior com tamanhos e rotações diferentes** troca a palavra-chave: as duas curvas estruturais são geralmente semelhantes."
+   "A": "**Faixa estreita demais.** A curva torácica tem o ápice entre T2 e T11, e não só entre T5 e T7 (Tachdjian, cap. 9, p. 138).",
+   "B": "**Mesmo erro.** A curva lombar tem o ápice entre L1 e L4 (Tachdjian, cap. 9, p. 138).",
+   "C": "**Uma palavra errada.** As duas curvas da curva dupla estão no **mesmo** segmento, e não em segmentos diferentes (Tachdjian, cap. 9, p. 138).",
+   "D": "**Outra palavra errada.** Na dupla maior, as curvas têm tamanho e rotação **semelhantes**, e não diferentes (Tachdjian, cap. 9, p. 138)."
   },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9 (Escoliose), p. 138",
    "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), p. 133, Box 9.1, e p. 152",
    "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1524",
    "Resumo OrtoQuestões: Escoliose idiopática"
   ],
-  "geradoEm": "2026-11-01",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0294": {
@@ -5134,19 +5139,20 @@
   }
  },
  "coluna-0358": {
-  "conceito": "**Radiculopatia S1: o quadro típico.** A raiz S1 é comprimida principalmente por hérnias paramedianas no disco L5-S1 (raiz descendente) ou por estenose do recesso lateral nesse nível.\n\n**Exame da raiz S1.**\n\n| Componente | Achado |\n|---|---|\n| Motor | **Tríceps sural** (flexão plantar), fibulares (eversão), glúteo máximo |\n| Sensitivo | Face posterior da panturrilha, **planta**, borda lateral do pé, quinto dedo |\n| Reflexo | **Aquileu** diminuído ou abolido |\n| Testes | Lasègue positivo; dificuldade para andar na ponta dos pés |\n\n**Comparação com outras raízes.**\n- **L4**: quadríceps, tibial anterior, face medial da perna, reflexo patelar.\n- **L5**: extensor longo do hálux, dorsiflexão, dorso do pé e hálux, sem reflexo confiável.\n- **L2 e L3**: flexão do quadril, adução, face anterior da coxa.\n\n**Atenção ao diabetes.** A neuropatia diabética também pode reduzir o reflexo aquileu (geralmente bilateral e simétrico) e causar parestesia plantar \"em bota\". No caso, a fraqueza do tríceps sural com dor lombar intensa sugere compressão radicular, mas a neuropatia deve entrar no diferencial e pode ser esclarecida pela eletroneuromiografia.\n\n> Fraqueza do tríceps sural, parestesia plantar e aquileu diminuído: raiz S1.",
-  "correta": "**E: S1.** A fraqueza do tríceps sural (flexão plantar), a parestesia na região plantar e a diminuição do reflexo aquileu formam a tríade da radiculopatia S1. O diabetes pode contribuir para a alteração do reflexo, mas o conjunto motor, sensitivo e reflexo aponta para S1.",
+  "conceito": "Um paciente diabético com dor lombar, tríceps sural fraco, parestesia na planta do pé e reflexo aquileu diminuído. Três achados, uma raiz. O Netter's Concise organiza isso em sua tabela de exame (cap. 2, p. 51):\n\n| Raiz | Reflexo | Sensibilidade | Motor |\n|---|---|---|---|\n| L4 | patelar | face medial da perna e tornozelo | tibial anterior |\n| L5 | nenhum | dorso do pé e 1º espaço | extensor longo do hálux |\n| S1 | **aquileu** | **planta e face lateral do pé** | **gastrocnêmio** |\n\nTudo aponta para **S1**. Para quem quer testar a força na beira do leito, basta pedir para ficar na ponta do pé várias vezes em um só apoio: o lado fraco cansa logo.\n\n**E a armadilha do enunciado?** Ele conta que o paciente é diabético de propósito. A neuropatia diabética também diminui o reflexo aquileu e causa parestesia plantar, em geral nos dois lados e progressiva. O que muda o raciocínio é a **dor lombar intensa** e a **fraqueza importante do tríceps sural**, que sugerem uma compressão localizada, mais do que uma neuropatia em bota. Isso vale também para quem espera uma hérnia L5-S1, uma das mais frequentes: quando há esses sinais, examine os dois lados e peça imagem.",
+  "correta": "**E: S1.** Tríceps sural, planta do pé e reflexo aquileu são os marcadores dessa raiz (Netter's Concise, cap. 2, p. 51).",
   "incorretas": {
-   "A": "**L3** afeta a flexão do quadril e a extensão do joelho, com alteração sensitiva na face anterior da coxa e no joelho. Não causa fraqueza do tríceps sural.",
-   "B": "**L2** afeta a flexão do quadril e a adução, com sensibilidade na face anterior e medial da coxa proximal. Não tem relação com o aquileu.",
-   "C": "**L4** afeta o quadríceps e o tibial anterior, com sensibilidade na face medial da perna e diminuição do reflexo patelar, não do aquileu.",
-   "D": "**L5** afeta a extensão do hálux e a dorsiflexão, com sensibilidade no dorso do pé. Não altera o reflexo aquileu nem a flexão plantar de forma significativa."
+   "A": "**Alta demais.** L3 corresponde à região anterior e medial da coxa (Netter's Concise, cap. 2, p. 51).",
+   "B": "**Ainda mais alta.** L2 não explicaria o reflexo nem o tríceps sural.",
+   "C": "**O reflexo é outro.** L4 é a raiz do reflexo patelar e da face medial da perna (Netter's Concise, cap. 2, p. 51).",
+   "D": "**A confusão comum.** L5 afeta o dorso do pé e o extensor do hálux, e não tem reflexo próprio (Netter's Concise, cap. 2, p. 51). O reflexo aquileu diminuído separa as duas."
   },
   "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 2, p. 51",
    "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
    "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Hérnia discal lombar."
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0359": {
@@ -5301,19 +5307,20 @@
   }
  },
  "coluna-0365": {
-  "conceito": "**Classificação de Meyerding da espondilolistese.** Mede a translação anterior da vértebra superior sobre a inferior, em porcentagem do comprimento da placa terminal da vértebra de baixo, na radiografia em perfil em pé.\n\n**Como medir.** Divide-se a placa superior da vértebra inferior em quatro partes iguais e observa-se onde fica a borda posterior da vértebra que escorregou.\n\n| Grau | Deslizamento |\n|---|---|\n| I | Até 25% |\n| II | 25% a 50% |\n| III | 50% a 75% |\n| IV | 75% a 100% |\n| V (espondiloptose) | Acima de 100%: a vértebra caiu à frente da inferior |\n\n**Baixo grau e alto grau.** Graus I e II são de baixo grau; graus III a V, de alto grau. A distinção muda o tratamento: alto grau em paciente imaturo, sobretudo sintomático, costuma ser cirúrgico.\n\n**Outras medidas.** O ângulo de escorregamento (cifose lombossacral) e os parâmetros pélvicos (incidência pélvica, inclinação sacral) complementam a avaliação do risco de progressão.\n\n**O caso.** Grau III corresponde a deslizamento entre 50% e 75%; entre as alternativas, o valor compatível é 60%. Vale notar que, no adolescente, o deslizamento é muito mais comum em L5-S1; em L4-L5, deve-se considerar outras causas.\n\n> Meyerding III: deslizamento de 50% a 75%.",
-  "correta": "**C: 60%.** O grau III de Meyerding corresponde a um deslizamento entre 50% e 75% do comprimento da placa terminal da vértebra inferior. O valor de 60% está nessa faixa e caracteriza espondilolistese de alto grau.",
+  "conceito": "Um adolescente esportista com dor lombar que melhora em repouso: pense em espondilólise e espondilolistese. A pergunta é sobre a régua usada para medir quanto a vértebra escorregou.\n\nMEYERDING dividiu o corpo vertebral de baixo em quatro partes e usou o deslizamento em porcentagem:\n\n| Grau | Deslizamento |\n|---|---|\n| I | até 25% |\n| II | de 25% a 50% |\n| III | de 50% a 75% |\n| IV | mais de 75% |\n\nO **grau III**, portanto, fica entre 50% e 75%, e a única opção dentro dessa faixa é **60%**. O Tachdjian usa o mesmo corte, 50%, para separar as formas de baixo grau das de alto grau: Meyerding de 0 a 2, com menos de 50%, e Meyerding 3 ou mais, com 50% ou mais (cap. 11, p. 270 e 271). Essa linha tem peso clínico, porque o grupo de alto grau é onde o tratamento cirúrgico é mais discutido, e onde o equilíbrio da pelve e da coluna passa a orientar a conduta.\n\n**Um detalhe do enunciado.** A questão fala em L4-L5, mas a espondilolistese no adolescente é mais comum em L5-S1. A régua de MEYERDING é a mesma para qualquer nível, e por isso a pergunta se resolve do mesmo jeito.",
+  "correta": "**C: 60%.** Está entre 50% e 75%, a faixa do grau III de MEYERDING, de acordo com o corte de 50% para o alto grau do Tachdjian (cap. 11, p. 270 e 271).",
   "incorretas": {
-   "A": "**20%** corresponde ao grau I (até 25%), espondilolistese de baixo grau.",
-   "B": "**40%** corresponde ao grau II (25% a 50%), ainda considerado de baixo grau.",
-   "D": "**80%** corresponde ao grau IV (75% a 100%).",
-   "E": "**99%** está no grau IV, no limite da espondiloptose (grau V, acima de 100%)."
+   "A": "**Grau I.** Até 25% é o primeiro degrau.",
+   "B": "**Grau II.** Até 50% ainda é baixo grau, abaixo do corte do Tachdjian (cap. 11, p. 270).",
+   "D": "**Grau IV.** Acima de 75%, já é o degrau seguinte.",
+   "E": "**Grau IV, quase uma espondiloptose.** O nível fica além do pedido, muito perto de a vértebra perder todo o contato."
   },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 11, p. 270 e 271",
    "Meyerding HW. Spondylolisthesis. Surg Gynecol Obstet. 1932;54:371-377.",
    "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Espondilólise e espondilolistese."
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0366": {
@@ -9672,65 +9679,71 @@
   }
  },
  "coluna-0558": {
-  "incorretas": {
-   "A": "**O áxis é o pivô, não a vértebra descrita como deslocada.** A alteração característica é a rotação ou subluxação do atlas sobre o áxis. Dizer apenas “luxação do axis” troca a peça móvel da articulação e perde a descrição anatômica que define a síndrome.",
-   "C": "**O atlas pode deslocar-se após trauma, mas então falta o elemento que define Grisel.** O contexto típico é inflamatório ou pós-operatório, sem lesão traumática cervical. A mesma articulação pode ser afetada em acidentes, com investigação de estabilidade e lesões associadas, mas isso não recebe automaticamente esse epônimo.",
-   "D": "**Reúne as duas trocas indevidas.** Além de chamar o áxis de estrutura deslocada, introduz trauma. A síndrome se refere à relação rotatória C1-C2 alterada sem acidente antecedente.",
-   "E": "**Atlanto-occipital é a articulação entre crânio e C1.** Grisel envolve C1-C2, abaixo dela. Confundir esses níveis é relevante: a instabilidade entre crânio e atlas pertence a outro padrão de lesão e exige avaliação própria."
-  },
+  "conceito": "Uma criança acorda com o pescoço torto dias depois de uma infecção de garganta, e qualquer tentativa de endireitar dói muito. Quem conhece o mecanismo já pensa em GRISEL. O Tachdjian coloca a síndrome no diagnóstico diferencial do torcicolo adquirido, como \"torcicolo inflamatório\": **deslocamento rotatório atlantoaxial (síndrome de GRISEL)** (cap. 8, p. 92).\n\n**Como uma garganta infectada desloca a coluna?** A explicação é vascular. O Tachdjian conta que deve haver inflamação dos tecidos vizinhos por uma conexão direta entre o plexo venoso em torno do odontoide e as veias faringovertebrais da parte posterossuperior da faringe. Esse caminho permite que bactérias cheguem à parte alta da coluna, e a hiperemia inflamatória afrouxa os ligamentos (cap. 8, p. 109). Com isso, o atlas roda sobre o áxis, sem trauma nenhum.\n\n**Quem se move?** É o **atlas**, C1, que roda sobre C2. Daí a resposta da banca, \"luxação não traumática do atlas\". A tomografia dinâmica ajuda: com a cabeça virada ao máximo para os dois lados, a perda da rotação normal de C1 sobre C2 confirma o diagnóstico. McGUIRE dividiu os achados em estágios: normal, limitação (menos de 15 graus de diferença entre C1 e C2) e fixo, quando C1 não cruza a linha média de C2 (Campbell, cap. 43, p. 1988).\n\nA maioria das formas leves se resolve sozinha (Tachdjian, p. 109), mas o quadro fixo é raro e pede tratamento.",
+  "correta": "**B: luxação não traumática do atlas.** É o atlas que roda sobre o áxis depois de um processo inflamatório da faringe, sem trauma (Tachdjian, cap. 8, p. 92 e 109).",
   "alerta": "A banca usa “luxação não traumática do atlas” para designar a síndrome de Grisel. O termo mais preciso na literatura é subluxação rotatória atlantoaxial não traumática: C1 (atlas) roda em relação a C2 (áxis), e nem todo caso é uma luxação completa.",
+  "incorretas": {
+   "A": "**Vértebra errada.** O áxis é a base sobre a qual o atlas gira. A condição \"não traumática\" está certa, mas não é o áxis que se desloca (Tachdjian, cap. 8, p. 109).",
+   "C": "**Vértebra certa, causa errada.** O trauma também pode causar deslocamento rotatório (Tachdjian, cap. 8, p. 109), mas GRISEL é, por definição, o inflamatório.",
+   "D": "**Dois erros.** Nem a vértebra nem o mecanismo correspondem à síndrome.",
+   "E": "**Outro nível.** A subluxação de GRISEL é entre C1 e C2, e não entre o occipital e o atlas."
+  },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 8 (Doenças do pescoço), p. 92 e 109",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 43, p. 1988",
    "Nontraumatic Atlantoaxial Rotatory Subluxation: Grisel Syndrome. Global Spine Journal, 2014. https://pmc.ncbi.nlm.nih.gov/articles/PMC4111947/"
   ],
-  "conceito": "Uma criança acorda com o pescoço doloroso e a cabeça presa em rotação poucos dias depois de uma faringite ou de uma cirurgia de amígdalas. Não houve queda. Essa combinação sugere a síndrome de Grisel: uma **subluxação rotatória de C1 sobre C2 sem trauma**. O atlas, primeira vértebra cervical, sustenta o crânio; o áxis, segunda vértebra, fornece o pivô sobre o qual o atlas gira. É a relação entre as duas vértebras que se perde, não uma lesão isolada de um osso.\n\nA inflamação da região faríngea pode acompanhar frouxidão dos tecidos que estabilizam C1-C2. Na criança, a anatomia articular e a maior laxidade facilitam esse deslocamento. O resultado é torcicolo doloroso, com rotação fixa e dificuldade de voltar a cabeça à posição neutra. A tomografia pode mostrar a rotação anormal do atlas em relação ao áxis; a avaliação clínica e da estabilidade determina a conduta. A literatura descreve tratamento inicial com controle do processo infeccioso ou inflamatório quando presente, analgesia, redução e imobilização conforme o caso, reservando cirurgia para situações selecionadas, como irredução ou recorrência.\n\nA palavra decisiva é **não traumática**. Uma luxação rotatória C1-C2 após acidente é outra situação clínica, ainda que envolva a mesma articulação. E a formulação “luxação do atlas” da alternativa deve ser lida como o atlas deslocado relativamente ao áxis, não como uma luxação atlanto-occipital.",
-  "correta": "**B: luxação não traumática do atlas.** É a forma abreviada usada pela banca para a alteração de C1 em relação a C2 na síndrome de Grisel. O nome anatômico mais exato é subluxação rotatória atlantoaxial não traumática, frequentemente reconhecida pelo torcicolo após infecção de vias aéreas superiores ou procedimento otorrinolaringológico.",
-  "geradoEm": "2026-10-24",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0559": {
+  "conceito": "Examinar uma raiz cervical é sempre fazer três perguntas: onde dói ou formiga, o que enfraquece e que reflexo muda. O Netter's Concise reúne isso em uma tabela (cap. 2, p. 50):\n\n| Raiz | Motor | Reflexo | Sensibilidade |\n|---|---|---|---|\n| C5 | deltoide | bicipital | face lateral do ombro e braço |\n| C6 | bíceps, extensores do punho | braquiorradial | polegar |\n| C7 | tríceps | tricipital | dedo médio |\n| C8 | flexores dos dedos | nenhum | anular e mínimo |\n| T1 | intrínsecos | nenhum | face ulnar do antebraço |\n\nA alternativa correta é a linha da C5: **face lateral do braço, deltoide e bicipital**.\n\n**Por que isso importa em um homem de 72 anos?** Porque a idade torna frequentes as doenças degenerativas, e a queixa de ombro de um paciente com C5 pode ser confundida com lesão do manguito. A diferença está no exame: o deltoide fraco, a alteração de sensibilidade e o reflexo diminuído apontam para a raiz.\n\nHá um detalhe que confunde: o bíceps recebe C5 e C6. Por isso, o reflexo bicipital aparece na linha de C5, enquanto a força do bíceps muitas vezes é testada com C6. Mas note que o enunciado fala de sensibilidade, e as alternativas misturam os outros itens para testar a tabela inteira.",
+  "correta": "**A: face lateral do braço, deltoide, bicipital.** É a combinação de sensibilidade, força e reflexo da raiz C5 (Netter's Concise, cap. 2, p. 50).",
   "incorretas": {
-   "B": "**O território sensitivo e o reflexo podem caber em C5, mas a extensão do punho desloca a resposta para C6.** Esse movimento é um marcador motor mais típico da raiz vizinha. Misturar uma peça de C6 a duas de C5 torna o conjunto menos coerente que o da alternativa A.",
-   "C": "**Esta opção reúne sinais mais típicos de C6.** Alteração nos dedos radiais e fraqueza dos extensores do punho afastam-se da distribuição principal de C5; o braquiorradial também é reflexo usado para C6. Ela seria plausível diante de comprometimento da raiz vizinha, não para o nível descrito.",
-   "D": "**O deltoide é compatível com C5, mas os outros dois elementos apontam para C6.** Polegar e indicador não substituem a face lateral do braço como território clássico de C5, e o reflexo braquiorradial não é a melhor escolha para essa raiz.",
-   "E": "**Acerta músculo e reflexo, mas erra o território sensitivo.** Deltoide e reflexo bicipital favorecem C5; a sensibilidade dos primeiros dedos é mais relacionada a C6. A questão pede a combinação inteira, não dois de três achados."
+   "B": "**A raiz vizinha.** Sensibilidade e reflexo cabem em C5, mas os extensores do punho são da C6 (Netter's Concise, cap. 2, p. 50).",
+   "C": "**É a linha de C6.** Polegar, extensores do punho e braquiorradial são a raiz seguinte (Netter's Concise, cap. 2, p. 50).",
+   "D": "**Mistura C6 e C5.** Primeiro e segundo dedos e braquiorradial são da C6, e o deltoide é da C5.",
+   "E": "**Só a sensibilidade sai errada.** Deltoide e bicipital estão certos, mas os primeiros dedos são território da C6."
   },
   "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 2 (Coluna), p. 50",
    "Cervical radiculopathy. Current Reviews in Musculoskeletal Medicine, 2016. Tabela de distribuições sensitivas, motoras e reflexas. https://pmc.ncbi.nlm.nih.gov/articles/PMC4958381/",
    "A clinical review of hand manifestations of cervical myelopathy, cervical radiculopathy, radial, ulnar, and median nerve neuropathies. Journal of Spine Surgery, 2024. Tabela 3. https://pmc.ncbi.nlm.nih.gov/articles/PMC10982913/"
   ],
-  "conceito": "No homem com compressão da raiz **C5**, o exame deve procurar um conjunto coerente de achados, não apenas dor no pescoço. Uma raiz leva fibras sensitivas para uma faixa de pele, fibras motoras para vários músculos e participa de reflexos. Para C5, a combinação clássica é **face lateral do braço, deltoide e reflexo bicipital**. A fraqueza do deltoide aparece sobretudo na abdução do ombro; a redução do reflexo bicipital mostra comprometimento do arco reflexo ao qual C5 contribui.\n\nVale separar território da raiz e território de um nervo periférico. O deltoide recebe fibras pelo nervo axilar, mas uma lesão de C5 pode afetar também outros músculos abastecidos por essa raiz. Assim, a associação de alteração sensitiva lateral do braço, fraqueza de abdução e reflexo diminuído aponta para um nível cervical; dor isolada no ombro ou fraqueza isolada do deltoide não bastam para localizar a lesão.\n\nA alternativa vizinha costuma misturar **C5 e C6**. C6 se associa mais à extensão do punho, à sensibilidade radial do antebraço e do polegar, e ao reflexo braquiorradial. O bíceps e seu reflexo têm contribuição de C5 e C6, portanto o exame real apresenta sobreposição e variação. Ainda assim, entre os conjuntos oferecidos, apenas a alternativa A mantém os três componentes no padrão clássico de C5. Uma imagem que mostra compressão não substitui a correlação clínica, especialmente quando o exame é discordante.",
-  "correta": "**A: face lateral do braço, deltoide e reflexo bicipital.** Os três achados formam a tríade topográfica clássica de C5 na ordem solicitada: sensibilidade, motricidade e reflexo. O deltoide ajuda a testar a abdução do ombro; o reflexo bicipital pode estar reduzido, embora também receba contribuição de C6.",
-  "geradoEm": "2026-10-24",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0560": {
+  "conceito": "Olhe uma criança com pescoço curto, cabelo baixo atrás e pouco movimento: é a imagem da síndrome de KLIPPEL-FEIL. O Tachdjian explica a raiz do problema: falha na segmentação da coluna cervical. Essas fusões podem acometer a junção craniocervical, a coluna subaxial, ou as duas, e tipicamente produzem **pescoço curto e alado, com implantação baixa do cabelo**. Uma inclinação da cabeça e a perda de movimento completam a tríade clínica (cap. 8, p. 95).\n\nUma observação honesta do próprio Tachdjian: na prática, o termo é usado para qualquer falha de segmentação cervical, e algumas séries mostram a tríade completa em apenas metade dos pacientes (p. 95). Ou seja, faltar um sinal não exclui a doença.\n\n**O que importa de verdade não é o pescoço.** A criança com KLIPPEL-FEIL precisa ser avaliada por inteiro, em especial o rim e o coração. Além disso, os segmentos móveis que sobram trabalham mais e podem ficar instáveis, o que traz um risco neurológico com o passar dos anos. A tabela de sinais neurológicos do mesmo capítulo inclui déficit motor e sensorial por estenose com mielopatia, ataxia por lesão cerebelar e vertigem por compressão da artéria vertebral (cap. 8, Box 8.2).",
+  "correta": "**E: implantação baixa do cabelo, pescoço curto, fusão cervical.** O Tachdjian descreve exatamente essa combinação, nascida da falha de segmentação (cap. 8, p. 95).",
   "incorretas": {
-   "A": "**A fusão está certa, mas “pescoço alongado” inverte o fenótipo clássico.** O encurtamento aparente resulta dos segmentos cervicais unidos e da menor altura ou mobilidade regional. Ter uma característica definidora correta não salva uma combinação que contradiz a apresentação perguntada.",
-   "B": "**Erra tanto o comprimento do pescoço como a lesão principal.** Hemivértebra descreve formação parcial de uma vértebra, enquanto Klippel-Feil é definida pela fusão congênita de vértebras cervicais. Pescoço alongado também não integra a tríade clássica.",
-   "C": "**A fusão e o pescoço curto fazem sentido, mas a linha de cabelo está invertida.** Na descrição clássica, a implantação posterior é baixa, não alta. Esse sinal pode faltar em pessoas com a síndrome, porém a pergunta solicita precisamente a caracterização clássica.",
-   "D": "**Compartilha apenas o pescoço curto com o padrão pedido.** Implantação alta se opõe à descrição clássica, e hemivértebra não equivale à fusão congênita entre segmentos cervicais que define a síndrome."
+   "A": "**Pescoço errado.** A fusão encurta o pescoço, e não o alonga (Tachdjian, cap. 8, p. 95).",
+   "B": "**Dois erros.** O pescoço é curto, e o defeito central é a fusão, e não a hemivértebra.",
+   "C": "**Só o cabelo está errado.** A implantação é baixa. O resto da alternativa está certo, e é isso que a torna perigosa (Tachdjian, cap. 8, p. 95).",
+   "D": "**Dois erros.** Cabelo alto e hemivértebra não descrevem a tríade."
   },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 8 (Doenças do pescoço), p. 95, Box 8.2",
    "Klippel-Feil syndrome. MedlinePlus Genetics, National Library of Medicine. https://medlineplus.gov/genetics/condition/klippel-feil-syndrome/"
   ],
-  "conceito": "Ao examinar alguém com **pescoço curto e implantação posterior baixa dos cabelos**, a alteração óssea a procurar é uma **fusão congênita de duas ou mais vértebras cervicais**. Essa é a definição da síndrome de Klippel-Feil: segmentos que deveriam se separar durante o desenvolvimento permanecem unidos. A fusão pode diminuir a mobilidade do pescoço e fazer a linha dos cabelos parecer mais baixa, mas não é preciso que todos os sinais externos estejam presentes para existir a condição.\n\nA tríade clínica clássica é pescoço curto, linha posterior do cabelo baixa e limitação da mobilidade cervical. A banca substitui o terceiro sinal pela alteração anatômica que define a síndrome, a fusão. Isso ajuda a diferenciar uma aparência de pescoço curto por outras causas de uma malformação de segmentação vertebral. A fonte da National Library of Medicine ressalta que menos da metade dos indivíduos afetados exibe toda a tríade: ela é uma pista, não um requisito diagnóstico absoluto.\n\nUma hemivértebra é uma vértebra formada apenas em parte e tende a produzir assimetria ou deformidade angular; não é sinônimo da fusão congênita entre vértebras. Na avaliação clínica, a atenção não deve parar no aspecto do pescoço: segmentos cervicais adjacentes podem ter alterações de mobilidade ou estabilidade, e podem coexistir outras anomalias, inclusive auditivas, renais ou cardíacas. Essas associações não mudam a resposta da questão, mas explicam por que o diagnóstico merece avaliação mais ampla.",
-  "correta": "**E: implantação baixa do cabelo, pescoço curto e fusão cervical.** Reúne os dois sinais externos clássicos e a fusão congênita que define Klippel-Feil. A limitação de movimento completa a tríade clínica tradicional; a alternativa usa a causa anatômica no lugar desse sinal funcional.",
-  "geradoEm": "2026-10-24",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0561": {
+  "conceito": "Paciente com lesão medular: sente que a água do banho é quente ou fria? Essa simples pergunta testa um único caminho, o **trato espinotalâmico lateral**. O Rockwood o descreve assim: é uma via ascendente na parte anterolateral da medula, que leva as sensações de **dor e temperatura** (cap. 48). Ele é organizado de forma somatotópica, com as fibras dos níveis altos na parte anteromedial e as dos baixos na posterolateral.\n\n**O detalhe que vale pontos.** As fibras de dor e temperatura cruzam a linha média no nível em que entram na medula (Rockwood, cap. 48). Isso explica duas síndromes clássicas. Na de **BROWN-SÉQUARD**, a hemissecção da medula tira a força do mesmo lado e a dor e temperatura do lado oposto. Na **síndrome anterior**, ficam comprometidos o espinotalâmico e o corticoespinal, com as colunas posteriores poupadas (Netter's Concise, cap. 2, p. 42). Na síndrome posterior, é o contrário.\n\nEsse é o resumo que todo mundo precisa: **colunas posteriores** carregam a posição e a vibração; o **corticoespinal** leva o movimento; os **espinocerebelares**, a posição inconsciente, para o cerebelo; o **espinotalâmico lateral**, a dor e a temperatura; e o ventral, o tato grosseiro.",
+  "correta": "**D: trato espinotalâmico lateral.** É a via ascendente que leva dor e temperatura (Rockwood, cap. 48).",
   "incorretas": {
-   "A": "**Grácil e cuneiforme pertencem às colunas posteriores.** Transportam vibração, posição articular e tato discriminativo; não são a via principal da dor e da temperatura pedidas. Essa diferença explica por que lesões de colunas posteriores e do sistema anterolateral podem produzir perdas sensitivas distintas.",
-   "B": "**Corticospinal é motor e descendente.** Seus feixes conduzem comandos para movimentos voluntários, em vez de levar ao encéfalo a sensação provocada por um estímulo doloroso ou térmico. O nome “espinal” por si só não indica uma via sensitiva.",
-   "C": "**Espinocerebelar leva propriocepção ao cerebelo.** Informa posição e movimento para coordenação, sem ser a via principal da percepção consciente de dor ou temperatura. Uma alteração dessa via se relaciona mais a incoordenação do que à perda isolada dessas modalidades.",
-   "E": "**O espinotalâmico ventral é a alternativa vizinha que confunde.** Na divisão didática clássica, sua porção anterior carrega tato grosseiro e pressão, enquanto a lateral é destacada para dor e temperatura. Ambas integram o sistema anterolateral, mas a questão exige a subdivisão específica."
+   "A": "**Colunas posteriores.** Os fascículos grácil e cuneiforme levam propriocepção e vibração. É a parte poupada na síndrome anterior (Netter's Concise, cap. 2, p. 42).",
+   "B": "**São motores.** Os corticoespinais descem, levando o movimento voluntário.",
+   "C": "**Cerebelo, sem consciência.** Os espinocerebelares levam a informação de posição ao cerebelo, sem a sensação de dor.",
+   "E": "**A distratora mais próxima.** O ventral pertence à mesma família, mas costuma ser associado ao tato grosseiro, e não à dor e à temperatura."
   },
   "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48",
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 2, p. 42",
    "Functional Anatomy of the Spinal Tracts Based on Evolutionary Perspectives. Neurospine, 2023. Seção Spinothalamic tract. https://pmc.ncbi.nlm.nih.gov/articles/PMC10567534/"
   ],
-  "conceito": "Imagine que a ponta de um objeto quente encoste no braço. Para reconhecer **dor e temperatura**, a informação entra na medula pela raiz sensitiva, faz conexão no corno posterior e cruza para o lado oposto em segmentos próximos da entrada. A partir daí, sobe pelo sistema anterolateral até o tálamo e o córtex. Na divisão clássica ensinada nesta questão, o componente responsável por dor e temperatura é o **trato espinotalâmico lateral**.\n\nO adjetivo “lateral” distingue essa via da porção **anterior ou ventral** do trato espinotalâmico, associada sobretudo ao tato grosseiro e à pressão. Ambas são vias sensitivas ascendentes e vizinhas, mas não devem ser tratadas como sinônimos ao responder qual delas conduz a modalidade pedida.\n\nOs fascículos grácil e cuneiforme também sobem pela medula, porém levam principalmente vibração, propriocepção consciente e tato discriminativo. Já os tratos espinocerebelares enviam informação proprioceptiva ao cerebelo para ajuste do movimento, sem produzir a percepção consciente de dor. Os tratos corticospinais fazem o percurso funcional oposto: são vias descendentes de comando motor. Essa separação entre modalidade sensitiva e direção do fluxo permite resolver a questão sem decorar apenas nomes.\n\nComo as fibras de dor e temperatura cruzam cedo na medula, uma lesão unilateral do trato espinotalâmico lateral tende a afetar essas modalidades no lado oposto abaixo da lesão. É uma consequência clínica do trajeto, não um novo critério para escolher a letra.",
-  "correta": "**D: trato espinotalâmico lateral.** É a via ascendente classicamente associada a dor e temperatura. Após entrar na medula, as fibras fazem conexão e cruzam para o lado oposto antes de subir no sistema anterolateral.",
-  "geradoEm": "2026-10-24",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0562": {
@@ -9751,20 +9764,21 @@
   "conferido": false
  },
  "coluna-0563": {
-  "incorretas": {
-   "A": "**Impactação atlantoaxial pode ocorrer, mas não é o padrão mais esperado.** O assentamento cranial envolve migração vertical na junção craniocervical e é uma complicação reconhecida da artrite reumatoide. A alternativa perde para D pelo critério de frequência pedido, não por ser biologicamente impossível.",
-   "B": "**Fusão vertebral não é a apresentação cervical típica adquirida da artrite reumatoide.** A doença pode levar a destruição e instabilidade articular; fusão congênita de vértebras cervicais remete, por exemplo, a Klippel-Feil. Uma artrodese pode ser tratamento de instabilidade selecionada, mas isso não é a alteração espontânea mais esperada no enunciado.",
-   "C": "**Hérnia L1-L2 desloca a pergunta para um disco lombar.** A artrite reumatoide pode coexistir com doença degenerativa da coluna, porém sua manifestação cervical característica nesta comparação decorre de sinovite e instabilidade na região C1-C2, não de uma hérnia focal lombar.",
-   "E": "**Estenose lombar não identifica o padrão cervical clássico da doença.** Pode ocorrer por outras causas ou coexistir com artrite reumatoide, mas não supera a instabilidade atlantoaxial como resposta epidemiológica e anatômica para a questão."
-  },
+  "conceito": "Uma mulher com artrite reumatoide vai ser operada e precisa de intubação. Por que o anestesista pede uma radiografia do pescoço? Porque a instabilidade ali pode matar. O Campbell não deixa dúvida: **a instabilidade cervical é a manifestação mais grave e potencialmente letal da doença** (cap. 38, p. 1709). A doença é duas vezes mais comum em mulheres jovens, com diagnóstico típico entre 30 e 50 anos.\n\n**O mecanismo.** A artrite reumatoide é uma doença da sinóvia. A proliferação linfoide leva à destruição da cartilagem, a erosões e ao enfraquecimento de ligamentos e tendões. Na coluna, isso mais o pano podem comprimir a medula. Como a articulação C1-C2 é sinovial, e seu principal estabilizador é o ligamento transverso, ela é a primeira a sofrer.\n\n**Os três tipos de instabilidade**, segundo o Campbell (p. 1709):\n\n| Tipo | Frequência |\n|---|---|\n| Instabilidade atlantoaxial | a mais comum, de 19% a 70% |\n| Impressão basilar ou impactação atlantoaxial | 38% |\n| Subluxação subaxial | 7% a 29% |\n\nA boa notícia é que todas têm ficado menos frequentes com os tratamentos atuais (p. 1709). Ainda assim, cerca de 61% dos pacientes que iam para artroplastia tinham instabilidade cervical (p. 1709), e por isso a avaliação não pode ser esquecida. A cirurgia tem mortalidade de 5% a 10% e alta taxa de complicações na ferida (p. 1712).",
+  "correta": "**D: instabilidade C1-C2.** É o padrão mais comum, em 19% a 70% dos pacientes, segundo o Campbell (cap. 38, p. 1709).",
   "alerta": "A alternativa A não é impossível na artrite reumatoide: a doença também pode causar ascensão ou impactação vertical do áxis (cranial settling). A alternativa D é a melhor resposta para “mais esperada” porque a instabilidade ou subluxação atlantoaxial C1-C2 é o padrão cervical mais frequente, não porque A jamais ocorra.",
+  "incorretas": {
+   "A": "**Existe, mas é menos comum.** A impactação atlantoaxial aparece em 38% (Campbell, cap. 38, p. 1709). É a distratora honesta, como explica o alerta.",
+   "B": "**Lembra outra doença.** A fusão vertebral progressiva é típica da espondilite anquilosante, e não da artrite reumatoide, que destrói.",
+   "C": "**Sem relação.** A hérnia alta na lombar é um problema mecânico que não faz parte dessa doença sinovial.",
+   "E": "**Doença degenerativa.** A estenose lombar é comum com a idade, mas a artrite reumatoide tem predileção pela coluna cervical."
+  },
   "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 38, p. 1709 e 1712",
    "Cervical spine involvement in rheumatoid arthritis over time: results from a meta-analysis. Arthritis Research & Therapy, 2015. https://pmc.ncbi.nlm.nih.gov/articles/PMC4449959/",
    "Cervical spine manifestations of rheumatoid arthritis: a review. PubMed PMID 33037539, 2020. https://pubmed.ncbi.nlm.nih.gov/33037539/"
   ],
-  "conceito": "Numa paciente com artrite reumatoide, a dor nas pequenas articulações das mãos não é a única preocupação articular. A junção entre atlas (C1) e áxis (C2) tem articulações sinoviais e ligamentos que permitem grande mobilidade, mas também precisam manter o processo odontoide bem contido. A **sinovite inflamatória**, o tecido proliferativo chamado pannus e a lesão dos estabilizadores podem permitir deslocamento entre C1 e C2. Por isso, a **instabilidade atlantoaxial** é o padrão cervical clássico e o mais frequente entre as alterações listadas.\n\nA consequência potencial não é apenas dor cervical. Se a relação C1-C2 se altera e o espaço para as estruturas neurais diminui, podem surgir sinais de compressão medular; sintomas e imagens precisam ser interpretados juntos. A literatura também reconhece **assentamento cranial** ou migração vertical e subluxações abaixo de C2. A doença, portanto, não se resume a uma única deformidade, embora uma delas seja a resposta mais provável para esta pergunta.\n\nUma meta-análise de estudos sobre acometimento cervical encontrou a subluxação atlantoaxial como a forma mais comum, aproximadamente duas vezes mais frequente que assentamento vertical ou subluxação subaxial nas populações examinadas. Esse dado explica a escolha de C1-C2 sem converter uma tendência populacional em diagnóstico automático de toda paciente com artrite reumatoide. Para um caso individual, exame neurológico, duração e atividade da doença e avaliação por imagem importam.",
-  "correta": "**D: instabilidade C1-C2.** A inflamação sinovial e a lesão dos tecidos que estabilizam a articulação atlantoaxial favorecem subluxação entre atlas e áxis. Entre os padrões cervicais da artrite reumatoide, é o mais frequente na meta-análise citada.",
-  "geradoEm": "2026-10-24",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "coluna-0564": {

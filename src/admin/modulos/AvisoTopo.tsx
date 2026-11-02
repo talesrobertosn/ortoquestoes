@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { chamarRpc } from '../../servicos/supabase'
 import { erroDoPainel } from '../../componentes/admin/formatos'
-import { defParte } from '../rotas'
+import { defAba } from '../rotas'
 import { Icone } from '../ui/Icone'
 import { dataHora } from '../ui/formato'
 import { Cabeca, Carregando, Estado, Faixa, Painel, Segmento, Situacao } from '../ui/kit'
@@ -23,7 +23,7 @@ function Faixinha({ texto, link, rotulo, tom }: { texto: string; link: string | 
 
 /** Configurações › Aviso no topo do site: o que está no ar, a prévia enquanto escreve e a publicação. */
 export default function AvisoTopo() {
-  const parte = defParte('aviso')
+  const parte = defAba('aviso')
   const [avisos, definirAvisos] = useState<Aviso[] | null>(null)
   const [erro, definirErro] = useState('')
   const [novo, definirNovo] = useState({ texto: '', link: '', rotulo: '', tom: 'destaque' as Aviso['tom'], dias: '7' })
@@ -51,7 +51,7 @@ export default function AvisoTopo() {
   }
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Configurações" titulo={parte.rotulo} pergunta={`${parte.pergunta} Quem fecha não vê mais aquele aviso; um novo substitui o anterior.`} />
+    <Cabeca area="Ajustes" titulo={parte.rotulo} pergunta={`${parte.pergunta} Quem fecha não vê mais aquele aviso; um novo substitui o anterior.`} />
     {erro && <Faixa tom="erro" titulo="Os avisos não carregaram">{erro}</Faixa>}
     <Painel titulo="No ar agora" acoes={ativo && <button type="button" className="a3-botao a3-botao--perigo a3-botao--pequeno" onClick={() => void encerrar()}>Tirar do ar</button>}>
       {!avisos ? (erro ? <Estado compacto tipo="erro" titulo="Indisponível" /> : <Carregando linhas={2} />) : ativo ? <div className="a3-pilha">

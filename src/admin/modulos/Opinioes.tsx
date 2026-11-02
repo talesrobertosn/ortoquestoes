@@ -41,7 +41,7 @@ export default function Opinioes() {
   const somNao = linhas.filter(o => o.som_celular === 'nao').length
   const fmt = (v: number | null) => v === null ? '—' : v.toFixed(1).replace('.', ',')
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Estudo e conteúdo" titulo={parte.rotulo} pergunta={`${parte.pergunta} Mais recentes primeiro.`} />
+    <Cabeca area="Conteúdo" titulo={parte.rotulo} pergunta={`${parte.pergunta} Mais recentes primeiro.`} />
     <section className="a3-painel"><div className="a3-faixa-metricas" style={{ '--colunas': 4 } as React.CSSProperties}>
       <Metrica rotulo="Opiniões" valor={inteiro(linhas.length)} qualidade="confirmado" nota={`${linhas.filter(o => o.status === 'aberta').length} em aberto`} />
       <Metrica rotulo="Facilidade (1 a 5)" valor={fmt(media(linhas.map(o => o.facil_estudar)))} qualidade="derivado" nota="média de quem deu nota" />

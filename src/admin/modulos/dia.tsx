@@ -1,25 +1,22 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
-import { carregarIndiceBiblioteca } from '../../biblioteca/conteudo'
+import { useMemo, useState, type ReactNode } from 'react'
 import { quadroDoDia, type FeitoHoje, type MovimentoDinheiro, type Numero } from '../../componentes/admin/agora'
 import { diaSP } from '../../componentes/admin/estudoHoje'
-import { acertoAposRevisao, acertoReal, pedacosAtividade, registrarTitulosResumos, rotuloOrigem, tituloResumo } from '../../componentes/admin/formatos'
+import { acertoAposRevisao, acertoReal, pedacosAtividade, rotuloOrigem, tituloResumo } from '../../componentes/admin/formatos'
 import { rotuloMeio, rotuloPlano } from '../../componentes/admin/rotulos'
-import { viuPlanos } from '../../componentes/admin/sinais'
-import { usarFunil, usarSerie } from '../dados/consultas'
 import { usarPainel } from '../dados/painel'
 import { nomeDe, novoParado, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
-import { defParte } from '../rotas'
 import { Icone } from '../ui/Icone'
-import { combina, dataCurta, haQuanto, horario, iniciais, inteiro, normalizar, reais } from '../ui/formato'
-import { Busca, Cabeca, Carregando, Estado, Painel, Segmento, Selo, SeloQualidade, Situacao } from '../ui/kit'
+import { combina, haQuanto, horario, iniciais, inteiro, normalizar, reais } from '../ui/formato'
+import { Busca, Carregando, Estado, Painel, SeloQualidade, Situacao } from '../ui/kit'
 import { Tabela, type Coluna } from '../ui/tabela'
 
-type FiltroVivo = 'todos' | 'assinantes' | 'nao' | 'planos'
 type Lista = 'estudaram' | 'entraram' | 'novos' | 'semana' | 'dinheiro' | 'biblioteca'
 
+/** Peças do dia usadas na página inicial (Agora): números, linha do dia e listas. */
+
 /** O que a pessoa está fazendo, por extenso: página, área, questão e quanto leu. */
-function Faz({ u }: { u: Pick<LinhaUsuario, 'pagina' | 'questao'> }) {
+export function Faz({ u }: { u: Pick<LinhaUsuario, 'pagina' | 'questao'> }) {
   if (!u.pagina) return <span className="a3-mudo">página ainda não registrada</span>
   const f = pedacosAtividade(u)
   return <span>{f.nome}{f.area && <span className="a3-mudo"> · {f.area}</span>}{f.questao && <> · <a href={`#/questao/${f.questao}`} target="_blank" rel="noopener noreferrer" className="a3-link">{f.questao}</a></>}{f.extra && <span className="a3-mudo"> · {f.extra}</span>}</span>
@@ -32,44 +29,7 @@ function Pessoa({ u, detalhe }: { u: LinhaUsuario; detalhe?: ReactNode }) {
   </span>
 }
 
-/** Comando › Atividade agora: o dia inteiro, com nomes, em uma tela. */
-export default function Agora() {
-  const p = usarPainel()
-  const nav = usarNav()
-  const serieQ = usarSerie(7, true)
-  const { funil } = usarFunil()
-  const [, recontar] = useState(0)
-  useEffect(() => { carregarIndiceBiblioteca().then(i => { registrarTitulosResumos(i.capitulos); recontar(k => k + 1) }).catch(() => undefined) }, [])
-  const sinaisLista = Array.isArray(p.sinaisQ.dados) ? p.sinaisQ.dados : null
-  const quadro = useMemo(() => quadroDoDia({ usuarios: p.usuarios, sinais: sinaisLista, serie: Array.isArray(serieQ.dados) ? serieQ.dados : null, resumo: p.resumo, funil, assinaturas: p.reais, cobrancas: p.cobrancas }),
-    [p.usuarios, sinaisLista, serieQ.dados, p.resumo, funil, p.reais, p.cobrancas])
-  const nm = quadro.numeros
-  const parte = defParte('agora')
-
-  return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Comando" titulo={parte.rotulo} pergunta={`${parte.pergunta} Hoje é ${dataCurta(Date.now())}, no relógio de São Paulo; "ontem" é o dia inteiro de ${quadro.ontem.split('-').reverse().slice(0, 2).join('/')}.`} />
-
-    <section className="a3-painel" aria-label="Números do dia">
-      <div className="a3-faixa-metricas" style={{ '--colunas': 6 } as React.CSSProperties}>
-        <NumeroDia rotulo="Online agora" valor={p.online} vivo nota="sinal nos últimos 5 min" />
-        <NumeroDia rotulo="Entraram hoje" numero={nm.entraram} nota="estudando ou não" />
-        <NumeroDia rotulo="Estudaram hoje" numero={nm.estudaram} nota="questões, flashcards ou resumo" aoClicar={() => nav.ir('usuarios', { filtro: 'hoje' })} />
-        <NumeroDia rotulo="Questões hoje" numero={nm.questoes} />
-        <NumeroDia rotulo="Cadastros hoje" numero={nm.cadastros} nota={nm.cadastros7d !== null ? `${inteiro(nm.cadastros7d)} em 7 dias` : undefined} aoClicar={() => nav.ir('usuarios', { filtro: 'novos' })} />
-        <NumeroDia rotulo="Recebido hoje" numero={nm.valorPago} formato={reais} nota={nm.valorPago.hoje === null ? (p.avisoCobrancas ? 'cobranças indisponíveis' : undefined) : `${inteiro(nm.pagaram.hoje)} ${nm.pagaram.hoje === 1 ? 'pagamento' : 'pagamentos'}`} aoClicar={() => nav.ir('cobrancas')} />
-      </div>
-    </section>
-
-    <div className="a3-grade a3-grade--12">
-      <div style={{ gridColumn: 'span 7' }}><LinhaDoDia quadro={quadro} /></div>
-      <div style={{ gridColumn: 'span 5' }}><Monitor /></div>
-    </div>
-
-    <Listas quadro={quadro} />
-  </div>
-}
-
-function NumeroDia({ rotulo, numero, valor, formato = inteiro, nota, vivo, aoClicar }: { rotulo: string; numero?: Numero; valor?: number | null; formato?: (n: number) => string; nota?: string; vivo?: boolean; aoClicar?: () => void }) {
+export function NumeroDia({ rotulo, numero, valor, formato = inteiro, nota, vivo, aoClicar }: { rotulo: string; numero?: Numero; valor?: number | null; formato?: (n: number) => string; nota?: string; vivo?: boolean; aoClicar?: () => void }) {
   const hoje = valor !== undefined ? valor : numero?.hoje ?? null
   const ontem = numero?.ontem ?? null
   return <div className="a3-metrica">
@@ -87,15 +47,14 @@ function NumeroDia({ rotulo, numero, valor, formato = inteiro, nota, vivo, aoCli
 
 interface Evento { em: string; tipo: 'cadastro' | 'estudo' | 'pagou' | 'nova' | 'renovou' | 'cancelou' | 'pix'; id: string; nome: string; texto: ReactNode }
 
-function LinhaDoDia({ quadro }: { quadro: ReturnType<typeof quadroDoDia<LinhaUsuario>> }) {
+export function LinhaDoDia({ quadro }: { quadro: ReturnType<typeof quadroDoDia<LinhaUsuario>> }) {
   const p = usarPainel()
   const nav = usarNav()
-  const [limite, definirLimite] = useState(14)
+  const [limite, definirLimite] = useState(6)
   const eventos = useMemo(() => {
     const lista: Evento[] = []
     const hoje = quadro.hoje
     for (const u of p.usuarios ?? []) if (diaSP(u.criado_em) === hoje) lista.push({ em: u.criado_em, tipo: 'cadastro', id: u.id_usuario, nome: nomeDe(u), texto: <>criou a conta{u.origem ? <span className="a3-mudo"> · veio de {rotuloOrigem(u.origem)}</span> : ''}</> })
-    for (const f of quadro.estudaram) if (f.em) lista.push({ em: f.em, tipo: 'estudo', id: f.pessoa.id_usuario, nome: nomeDe(f.pessoa), texto: textoEstudo(f) })
     const mov = (m: MovimentoDinheiro, tipo: Evento['tipo'], verbo: string) => m.em && lista.push({ em: m.em, tipo, id: m.id_usuario, nome: m.nome ?? m.email ?? 'Sem nome', texto: <>{verbo} <span className="a3-mudo">· {rotuloPlano(m.plano)} · {rotuloMeio(m.meio)}{m.valor !== null ? ` · ${reais(m.valor)}` : ''}</span></> })
     quadro.novasAssinaturas.forEach(m => mov(m, 'nova', 'assinou pela primeira vez'))
     quadro.renovacoes.forEach(m => mov(m, 'renovou', 'renovou'))
@@ -105,60 +64,28 @@ function LinhaDoDia({ quadro }: { quadro: ReturnType<typeof quadroDoDia<LinhaUsu
     return lista.sort((a, b) => b.em.localeCompare(a.em))
   }, [p.usuarios, quadro])
   const marca: Record<Evento['tipo'], string> = { cadastro: 'tinta', estudo: '', pagou: 'ok', nova: 'ok', renovou: 'ok', cancelou: 'erro', pix: '' }
-  return <Painel titulo="Linha do dia" descricao="Tudo o que aconteceu hoje, do mais recente ao mais antigo: cadastros, estudo e dinheiro." justo={false}>
-    {!p.usuarios ? <Carregando linhas={6} /> : !eventos.length ? <Estado compacto icone="relogio" titulo="Nada aconteceu hoje ainda" texto="A linha se preenche sozinha a cada atualização." /> : <>
+  const estudo = useMemo(() => ({ pessoas: quadro.estudaram.length, questoes: quadro.estudaram.reduce((t, f) => t + (f.questoes ?? 0), 0) }), [quadro])
+  const resumoEstudo = estudo.pessoas > 0 && <p className="a3-tempo__resumo">
+    <b>{inteiro(estudo.pessoas)}</b> {estudo.pessoas === 1 ? 'pessoa estudou' : 'pessoas estudaram'} hoje{estudo.questoes > 0 && <>, <b>{inteiro(estudo.questoes)}</b> {estudo.questoes === 1 ? 'questão' : 'questões'}</>}
+    {' '}<a href="#a3-listas" className="a3-link" onClick={e => { e.preventDefault(); document.getElementById('a3-listas')?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>ver quem</a>
+  </p>
+  return <Painel titulo="Linha do dia" descricao="Cadastros e dinheiro de hoje, do mais recente ao mais antigo. O estudo aparece somado." justo={false}>
+    {!p.usuarios ? <Carregando linhas={4} /> : !eventos.length ? <>{resumoEstudo}<Estado compacto icone="relogio" titulo="Nenhum cadastro ou pagamento hoje" texto="A linha se preenche sozinha a cada atualização." /></> : <>
+      {resumoEstudo}
       <ol className="a3-tempo">{eventos.slice(0, limite).map((e, i) => <li key={`${e.id}-${e.tipo}-${i}`}>
         <time dateTime={e.em}>{horario(e.em)}</time>
         <span className="a3-tempo__marca"><i className={marca[e.tipo]} /></span>
         <div className="a3-tempo__texto"><button type="button" className="a3-link" style={{ textDecoration: 'none', fontWeight: 600 }} onClick={() => nav.abrirPessoa(e.id)}>{e.nome}</button> {e.texto}</div>
       </li>)}</ol>
-      {eventos.length > limite && <button type="button" className="a3-botao a3-botao--suave a3-botao--pequeno" onClick={() => definirLimite(l => l + 20)}>Mais {Math.min(20, eventos.length - limite)} de {eventos.length - limite}</button>}
+      {eventos.length > limite && <button type="button" className="a3-botao a3-botao--suave a3-botao--pequeno" onClick={() => definirLimite(l => l + 20)}>Ver mais {Math.min(20, eventos.length - limite)} de {eventos.length - limite}</button>}
+      {limite > 6 && <button type="button" className="a3-botao a3-botao--suave a3-botao--pequeno" style={{ marginLeft: 8 }} onClick={() => definirLimite(6)}>Recolher</button>}
     </>}
-  </Painel>
-}
-
-function textoEstudo(f: FeitoHoje<LinhaUsuario>): ReactNode {
-  const partes: string[] = []
-  if (f.questoes > 0) partes.push(`${f.questoes} ${f.questoes === 1 ? 'questão' : 'questões'}${f.tentativas > f.questoes ? ` (${f.tentativas} tentativas)` : ''}`)
-  if (f.flashcards) partes.push('flashcards')
-  if (f.resumo) partes.push(`leu “${tituloResumo(f.resumo.capitulo)}”${f.resumo.extra ? ` (${f.resumo.extra})` : ''}`)
-  return <>estudou hoje <span className="a3-mudo">· {partes.join(' · ') || 'respondeu (o total ainda não sincronizou)'}</span></>
-}
-
-/* ───────────── Monitor de quem está online ───────────── */
-
-function Monitor() {
-  const p = usarPainel()
-  const nav = usarNav()
-  const [filtro, definirFiltro] = useState<FiltroVivo>('todos')
-  const [busca, definirBusca] = useState('')
-  const online = (p.usuarios ?? []).filter(u => u.online)
-  const t = normalizar(busca.trim())
-  const passa = (u: LinhaUsuario) => filtro === 'todos' || (filtro === 'assinantes' && !!u.plano_vigente) || (filtro === 'nao' && !u.plano_vigente && !u.administrador) || (filtro === 'planos' && viuPlanos(p.sinais.get(u.id_usuario)))
-  const lista = online.filter(u => passa(u) && combina([u.nome, u.email], t)).sort((a, b) => (b.pagina_em ?? '').localeCompare(a.pagina_em ?? ''))
-  return <Painel titulo={<><i className="a3-ponto a3-ponto--vivo" style={{ marginRight: 8 }} aria-hidden="true" />{online.length} online agora</>} descricao="Quem mudou de página há menos tempo vem primeiro. Toque para abrir a ficha." justo>
-    <div style={{ display: 'grid', gap: 10, padding: '0 20px 12px' }}>
-      <Segmento rotulo="Filtrar quem está online" valor={filtro} aoMudar={definirFiltro} opcoes={[['todos', 'Todos'], ['assinantes', 'Assinantes'], ['nao', 'Não assinantes'], ['planos', 'Viram os planos']]} />
-      {online.length > 6 && <Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar por nome" />}
-    </div>
-    {!p.usuarios ? <div style={{ padding: '0 20px 20px' }}><Carregando /></div> : !lista.length ? <div style={{ padding: '0 20px 20px' }}><Estado compacto icone="pessoas" titulo={online.length ? 'Ninguém neste filtro' : 'Ninguém online agora'} /></div> :
-      <ul className="a3-monitor">{lista.map(u => {
-        const s = p.sinais.get(u.id_usuario)
-        return <li key={u.id_usuario}><button type="button" onClick={() => nav.abrirPessoa(u.id_usuario)}>
-          <span className="a3-avatar">{iniciais(u.nome ?? u.email)}<i className="a3-ponto a3-ponto--vivo" /></span>
-          <span className="a3-monitor__texto">
-            <span className="a3-monitor__nome">{nomeDe(u)}{u.plano_vigente && <Selo>Assinante</Selo>}{viuPlanos(s) && !u.plano_vigente && <Selo tom="aviso">Viu os planos</Selo>}</span>
-            <span className="a3-monitor__faz"><Faz u={u} /></span>
-            <span className="a3-mudo a3-pequeno">{u.pagina_em ? `nesta página ${haQuanto(u.pagina_em)}` : ''}{u.respondidas_hoje ? ` · ${u.respondidas_hoje} questões hoje` : ''}{u.aparelho ? ` · ${u.aparelho}` : ''}</span>
-          </span>
-        </button></li>
-      })}</ul>}
   </Painel>
 }
 
 /* ───────────── Listas do dia ───────────── */
 
-function Listas({ quadro }: { quadro: ReturnType<typeof quadroDoDia<LinhaUsuario>> }) {
+export function Listas({ quadro }: { quadro: ReturnType<typeof quadroDoDia<LinhaUsuario>> }) {
   const p = usarPainel()
   const nav = usarNav()
   const [lista, definirLista] = useState<Lista>('estudaram')

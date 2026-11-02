@@ -3087,15 +3087,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0218": {
+  "conceito": "**Como se faz a incidência de Stryker.** Paciente em **decúbito dorsal**, com a **mão** do lado examinado sobre o **topo da cabeça** e o **cotovelo** apontando para o teto. O raio central é dirigido ao **processo coracoide**, com inclinação **cefálica de cerca de 10 graus**. A posição roda a cabeça do úmero e projeta sua face **posterolateral** em perfil.\n\n**Para que ela serve.** Campbell a lista entre as incidências de consultório do ombro instável, ao lado da West Point (cap. 47, p. 2444), e a indicação clássica é mostrar a **lesão de Hill-Sachs**. Mas o Rockwood dá a chave desta questão: quando a luxação acromioclavicular vem com distância coracoclavicular normal, suspeita-se de fratura do coracoide, e a Stryker põe o **coracoide em perfil**, sendo a melhor incidência para avaliar essa lesão (cap. 32).\n\n**As outras incidências do ombro instável.** **West Point**: decúbito ventral, raio a 25 graus em duas direções, mostra o **rebordo anteroinferior da glenoide** (Bankart ósseo). **Bernageau**: perfil da glenoide para medir a perda óssea anterior. **Garth** (apical oblíqua): glenoide anteroinferior e Hill-Sachs. **Axilar**: relação da cabeça com a glenoide, indispensável para não perder a luxação **posterior**. **Perfil de escápula (Y)**: posição da cabeça em relação à glenoide. **Outlet de Neer**: morfologia do **acrômio** (Bigliani I plano, II curvo, III em gancho).\n\n**Hoje.** A tomografia com reconstrução 3D, com subtração da cabeça, substituiu essas incidências para medir perda óssea da glenoide e calcular o **track** glenoidal (engajamento do Hill-Sachs). Mas as incidências continuam cobradas.",
+  "correta": "**B: visualizar o coracoide.** Na Stryker, ele fica em perfil, e por isso é a melhor incidência para sua fratura (Rockwood, cap. 32). O entalhe de Hill-Sachs, sua outra indicação famosa, não está entre as opções.",
   "incorretas": {
-   "A": "**Outra incidência.** O tubérculo menor é visto de perfil no AP em rotação interna e na axilar, e não é o objetivo da Stryker.",
-   "C": "**Região não estudada.** O rebordo posterossuperior da glenoide não é o alvo da Stryker, que mostra a cabeça posterolateral e o coracoide.",
-   "D": "**É o papel da West Point.** O rebordo anteroinferior é estudado pela West Point, pela Bernageau e pela Garth.",
-   "E": "**É o papel do outlet.** O acrômio e sua forma são estudados na incidência de saída do supraespinal (outlet de Neer)."
+   "A": "**Fica em outra projeção.** O tubérculo menor aparece no AP em rotação interna e na axilar.",
+   "C": "**Região não estudada.** A Stryker foi feita para a cabeça posterolateral e o coracoide, e a borda posterossuperior da glenoide não é seu alvo.",
+   "D": "**A distratora do ombro instável.** Rebordo anteroinferior é papel da West Point. Como as duas aparecem juntas nas indicações de luxação, é fácil trocar.",
+   "E": "**Pertence ao outlet.** A forma do acrômio é estudada na incidência de saída do supraespinal."
   },
-  "conceito": "**Como se faz a incidência de Stryker.** Paciente em **decúbito dorsal**, com a **mão** do lado examinado sobre o **topo da cabeça** e o **cotovelo** apontando para o teto. O raio central é dirigido ao **processo coracoide**, com inclinação **cefálica de cerca de 10 graus**. A posição roda a cabeça do úmero e projeta sua face **posterolateral** em perfil.\n\n**Para que ela serve.** A indicação clássica é mostrar a **lesão de Hill-Sachs**, o entalhe (notch) que dá nome à incidência. Como o raio é centrado no coracoide e a projeção o afasta da sobreposição da escápula e da cabeça, ela também é a incidência que mostra o **coracoide** livre, útil para avaliar fraturas da base do coracoide e, no planejamento do Latarjet, o seu tamanho.\n\n**As outras incidências do ombro instável.** **West Point**: decúbito ventral, raio a 25 graus em duas direções, mostra o **rebordo anteroinferior da glenoide** (Bankart ósseo). **Bernageau**: perfil da glenoide para medir a perda óssea anterior. **Garth** (apical oblíqua): glenoide anteroinferior e Hill-Sachs. **Axilar**: relação da cabeça com a glenoide, indispensável para não perder a luxação **posterior**. **Perfil de escápula (Y)**: posição da cabeça em relação à glenoide. **Outlet de Neer**: morfologia do **acrômio** (Bigliani I plano, II curvo, III em gancho).\n\n**Hoje.** A tomografia com reconstrução 3D, com subtração da cabeça, substituiu essas incidências para medir perda óssea da glenoide e calcular o **track** glenoidal (engajamento do Hill-Sachs). Mas as incidências continuam cobradas.\n\n**Na prova:** **Stryker** mostra o **Hill-Sachs** e o **coracoide**; West Point e Bernageau, a glenoide anteroinferior; outlet, o acrômio.",
-  "correta": "**Visualizar o coracoide.** Centrada no coracoide com 10 graus cefálicos, a Stryker o projeta livre de sobreposições; a sua indicação mais famosa é o Hill-Sachs, que não está entre as opções.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 47 (Recurrent Dislocations), p. 2444",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 32 (Acromioclavicular and Sternoclavicular Joint Injuries)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0230": {
@@ -6601,34 +6605,36 @@
  },
  "ombro-cotovelo-0472": {
   "incorretas": {
-   "A": "**Anterolateral não é o sítio clássico.** Na luxação posterior, o defeito fica mais medial na face anterior.",
-   "C": "**Posterolateral descreve a Hill-Sachs clássica.** Ela acompanha a luxação anterior, não a posterior.",
-   "D": "**Posteromedial inverte a face atingida.** A borda posterior da glenoide imprime a face anteromedial da cabeça."
+   "A": "**Anterolateral troca o lado medial do defeito.** Embora a face anterior participe da impactação, a localização clássica da lesão é anteromedial, não anterolateral.",
+   "C": "**Posterolateral é a Hill-Sachs clássica.** Esse defeito acompanha a luxação anterior do ombro e pode ser confundido com a versão reversa se a direção da luxação não for considerada.",
+   "D": "**Posteromedial coloca a lesão na face errada da cabeça.** Na luxação posterior, quem encontra a borda posterior da glenoide é a superfície anteromedial da cabeça umeral."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "referencias": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7718575/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7718575/",
+   "https://www.mdpi.com/2077-0383/13/7/2085"
   ],
-  "conceito": "**Na luxação posterior, a marca fica na frente da cabeça umeral.** Ao deslocar-se para trás, a cabeça impacta sua face anteromedial contra a borda posterior da glenoide. Esse defeito é a lesão de McLaughlin, também chamada de Hill-Sachs reversa. Vale contrastá-la com a luxação anterior, que produz a lesão de Hill-Sachs na face posterolateral da cabeça.",
-  "correta": "**B, porção anteromedial (resposta provável).** É o local da impactação característica da luxação posterior.",
+  "conceito": "**A lesão de McLaughlin é a impactação anteromedial da cabeça umeral na luxação posterior do ombro.** Quando a cabeça se desloca para trás, sua superfície anterior e medial encontra a borda posterior da glenoide. A depressão óssea resultante também recebe o nome de Hill-Sachs reversa. Portanto, para localizar o defeito, é preciso identificar primeiro a direção da luxação e depois a face da cabeça que bate na glenoide, não a direção para a qual a cabeça se deslocou.\n\nO contraste que resolve as alternativas é a Hill-Sachs habitual da luxação anterior: nesse caso, a impactação ocorre na região posterolateral da cabeça umeral, contra a borda anterior da glenoide. Os nomes parecidos não indicam a mesma topografia. Uma luxação posterior pode passar despercebida em radiografia anteroposterior isolada; quando há suspeita clínica, incidência axilar ou imagem seccional ajuda a caracterizar o alinhamento e o defeito ósseo. Essa observação reforça o mecanismo, mas a questão pede somente a localização.",
+  "correta": "**B, porção anteromedial (resposta provável).** É a área comprimida contra a borda posterior da glenoide na luxação posterior, formando a lesão de McLaughlin ou Hill-Sachs reversa.",
+  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "provavel": "B",
-  "geradoEm": "2026-10-17",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0473": {
   "incorretas": {
-   "A": "**O complexo colateral lateral inicia a sequência.** Portanto, o colateral radial não é a última estrutura lesada.",
-   "B": "**A cápsula é acometida antes da ruptura medial completa.** A cápsula posterior não encerra a progressão.",
-   "C": "**A banda posterior cede antes da anterior.** É justamente a persistência da banda anterior que distingue a etapa medial anterior à ruptura completa."
+   "A": "**O colateral radial pertence ao complexo lateral.** Nesse modelo, o comprometimento lateral abre a sequência de instabilidade e antecede a lesão medial avançada. O componente ulnar lateral é especialmente importante para a instabilidade rotatória posterolateral.",
+   "B": "**A cápsula posterior é acometida antes da banda anterior medial.** A propagação capsular integra o estágio intermediário, de modo que sua lesão não encerra o círculo de Horii.",
+   "C": "**A banda posterior medial pode romper no estágio 3A.** Nessa fase, a banda anterior ainda pode servir de pivô; por isso a posterior não é a última das duas bandas mediais listadas."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "referencias": [
-   "https://www.actaorthopaedica.be/assets/415/10675934.pdf"
+   "https://www.actaorthopaedica.be/assets/415/10675934.pdf",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5444606/"
   ],
-  "conceito": "**O círculo de Horii progride de lateral para medial.** Na instabilidade rotatória posterolateral, rompe-se primeiro o complexo colateral lateral, particularmente o ligamento colateral ulnar lateral. A lesão avança pela cápsula e alcança o complexo colateral medial. A banda anterior do colateral medial pode permanecer íntegra mesmo quando o cotovelo já luxou: ela é o último elemento do padrão sequencial clássico a se romper.",
-  "correta": "**D, banda anterior do ligamento colateral medial (resposta provável).** Sua ruptura caracteriza o comprometimento medial mais avançado no círculo de Horii.",
+  "conceito": "**No círculo de Horii, a lesão ligamentar progride de lateral para medial.** O estágio inicial compromete o complexo colateral lateral, sobretudo seu componente ulnar lateral, e permite subluxação rotatória posterolateral. Com maior energia, a lesão se propaga pela cápsula anterior e posterior e alcança o lado medial. No estágio 3A, até a banda posterior do ligamento colateral medial pode estar rompida, mas sua banda anterior ainda funciona como ponto de rotação. A ruptura dessa banda caracteriza o estágio 3B, com perda mais ampla da estabilidade em varo, valgo e rotação.\n\nAssim, entre as quatro estruturas listadas, a banda anterior medial é a última na sequência **clássica descrita para esse mecanismo**. Isso não significa que toda luxação real siga obrigatoriamente a mesma ordem: estudos de imagem e outros modelos de trauma descrevem lesões que começam medialmente. A resposta provável se apoia no modelo de instabilidade rotatória posterolateral pressuposto pelo enunciado, não em uma regra universal para qualquer luxação do cotovelo.",
+  "correta": "**D, banda anterior do ligamento colateral medial (resposta provável).** Ela pode permanecer íntegra mesmo após a luxação do estágio 3A; sua ruptura marca a progressão ao estágio 3B do círculo de Horii.",
+  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho.",
   "provavel": "D",
-  "geradoEm": "2026-10-17",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0474": {
@@ -7835,18 +7841,20 @@
   "conferido": false
  },
  "ombro-cotovelo-0534": {
+  "conceito": "Um pedreiro de 40 anos, que sente dor do lado de fora do cotovelo ao segurar firme. Não é preciso jogar tênis para ter \"cotovelo de tenista\". A doença é uma sobrecarga da origem dos extensores do punho.\n\nO Green descreve a patologia: a **epicondilite lateral** provavelmente é multifatorial, com microtraumas repetidos em quem é suscetível, e envolve a inserção do **extensor radial curto do carpo** no epicôndilo lateral. O extensor comum dos dedos participa em cerca de um terço dos casos (7ª ed., cap. 25, p. 863). Daí se entende o exame: como o extensor radial curto estende o punho, a dor aparece na **extensão resistida do punho**, com o antebraço pronado e o cotovelo estendido (p. 864). O teste da cadeira, levantar uma cadeira com o antebraço pronado e o punho fletido, segue a mesma lógica (p. 864).\n\n**Por que dói ao apertar um objeto?** Porque, ao segurar firme, os extensores do punho precisam estabilizar a mão, e assim a origem doente trabalha o tempo todo. É o que torna esse paciente diferente de outras causas de dor.\n\n**Um diagnóstico a lembrar.** O Green alerta para a sobreposição com a síndrome do túnel radial, cuja dor fica mais distal e no trajeto do nervo (p. 864). Se o tratamento da epicondilite não funciona, é a hora de repensar.",
+  "correta": "**A: epicondilite tipo \"tennis elbow\".** Dor lateral, piora ao segurar e extensão resistida do punho dolorosa são o retrato da doença (Green, 7ª ed., cap. 25, p. 863 e 864).",
   "incorretas": {
-   "B": "**Bursite olecraniana.** Costuma produzir aumento de volume e dor na face posterior do cotovelo, não dor lateral provocada pelo trabalho dos extensores.",
-   "C": "**Síndrome do túnel do carpo.** Predominam parestesias e sintomas na mão no território do mediano, sem explicar esse teste doloroso no cotovelo.",
-   "D": "**Tenossinovite de De Quervain.** A dor se concentra no lado radial do punho, na região do primeiro compartimento extensor.",
-   "E": "**Epicondilite medial, ou cotovelo do golfista.** A dor seria no epicôndilo medial e tenderia a aparecer com flexão do punho ou pronação resistidas."
+   "B": "**Lugar errado.** A bursite olecraniana é uma bolsa inchada na ponta posterior do cotovelo, sem relação com a extensão do punho.",
+   "C": "**Outra região.** O túnel do carpo dá formigamento nos dedos radiais, à noite, e não dor lateral no cotovelo.",
+   "D": "**No punho.** O DE QUERVAIN dói no estiloide radial, com o polegar e o desvio ulnar (Green, 8ª ed., cap. 56, p. 2109).",
+   "E": "**O lado oposto.** A epicondilite do golfista dói no epicôndilo medial, na origem dos flexores, e piora com a flexão resistida do punho."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 25, p. 863 e 864",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 56, p. 2109",
    "https://orthoinfo.aaos.org/en/diseases--conditions/tennis-elbow-lateral-epicondylitis/"
   ],
-  "conceito": "**O teste localiza a origem da dor.** Segurar um objeto com força exige que os extensores do punho estabilizem a mão. Se a origem desses tendões no epicôndilo lateral está dolorosa, a preensão e a extensão resistida do punho reproduzem os sintomas. Esse é o padrão da epicondilalgia lateral, também chamada de cotovelo do tenista, mesmo em quem nunca jogou tênis. O tendão do extensor radial curto do carpo é frequentemente envolvido. Dor medial sugeriria outra origem tendínea; dor sobre o olécrano, uma bursite posterior.",
-  "correta": "**A, epicondilite lateral.** A combinação de dor lateral no cotovelo ao agarrar e levantar objetos com dor provocada pela extensão resistida do punho aponta para a origem dos extensores no epicôndilo lateral.",
-  "geradoEm": "2026-10-18",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0535": {
@@ -7961,19 +7969,22 @@
   "conferido": false
  },
  "ombro-cotovelo-0538": {
+  "conceito": "Uma criança com artrogripose tem o cotovelo preso em extensão e não consegue levar a mão à boca. A pergunta é: de onde tirar força para dobrar esse cotovelo, se o bíceps e o braquial não funcionam? A resposta de STEINDLER foi engenhosa: usar os músculos que nascem logo acima, no epicôndilo medial, e mudar o ponto de partida deles.\n\n**O mecanismo.** O grupo flexor-pronador nasce no epicôndilo medial, muito perto do eixo do cotovelo, e por isso quase não tem braço de alavanca para fleti-lo. Ao subir a origem para a face **anterior do úmero**, o músculo passa a cruzar o cotovelo pela frente, longe do eixo. A mesma contração que antes movia o punho e o antebraço agora também dobra o cotovelo. O Tachdjian define: transferência da origem flexor-pronadora para a face anterior do úmero para fletir o cotovelo (cap. 12, p. 351). O Green a inclui também nas reconstruções do plexo braquial, como STEINDLER modificado (7ª ed., p. 1195 e 1418).\n\n**Um aviso importante, que a banca não cobra.** O Tachdjian é duro nesse ponto: a cirurgia só funciona se o paciente consegue isolar o músculo antes da operação e estabilizar o punho com os extensores radiais. Na artrogripose, costuma resultar apenas em mais flexão do punho, porque a criança não consegue estender o punho ao mesmo tempo, e o livro conclui que **esse procedimento não deve ser feito** nesses pacientes (cap. 12, p. 351). Ou seja, a resposta da prova é o nome, mas a indicação merece cuidado.",
+  "correta": "**E: Steindler.** É a transferência da origem do grupo flexor-pronador para a face anterior do úmero, com o objetivo de fletir o cotovelo (Tachdjian, cap. 12, p. 351).",
+  "alerta": "O nome da técnica é o gabarito, mas o Tachdjian desaconselha essa cirurgia na artrogripose, porque costuma piorar a flexão do punho (cap. 12, p. 351). A letra E foi mantida como resposta da banca.",
   "incorretas": {
-   "A": "**Machintoch.** Não é a denominação da transferência proximal da massa flexopronadora descrita no enunciado.",
-   "B": "**Chandler.** Não corresponde a essa flexoplastia.",
-   "C": "**Bado.** O nome é associado à classificação das fraturas-luxações de Monteggia, não a essa transferência muscular.",
-   "D": "**Richmond.** Não designa a técnica de reposicionamento da origem flexopronadora apresentada."
+   "A": "**Epônimo de outra região.** MacINTOSH é lembrado no joelho, pelo pivot e por reconstruções extra-articulares do ligamento cruzado anterior, e não pelo cotovelo.",
+   "B": "**Sem relação com a transferência.** O nome não corresponde a uma técnica de flexão do cotovelo nos livros consultados.",
+   "C": "**É do antebraço, mas é fratura.** BADO classificou as lesões de MONTEGGIA, e não uma cirurgia de transferência.",
+   "D": "**Sem relação com a transferência.** O nome também não aparece entre as cirurgias para fletir o cotovelo nos capítulos consultados."
   },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12, p. 351",
+   "Green's Operative Hand Surgery, 7ª ed. (2017), p. 1195 e 1418",
    "https://pubmed.ncbi.nlm.nih.gov/31738738/",
    "https://pmc.ncbi.nlm.nih.gov/articles/PMC1939841/"
   ],
-  "conceito": "**Steindler transforma flexopronadores em flexores do cotovelo.** Na flexoplastia, a origem comum da massa flexopronadora é deslocada proximalmente do epicôndilo medial para a face anterior do úmero. O novo ponto de fixação aumenta seu braço de alavanca para flexão do cotovelo. A técnica depende de flexopronadores funcionantes e de amplitude passiva suficiente; transferir músculos para um cotovelo rigidamente bloqueado não produziria flexão útil. Pode haver flexão simultânea do punho e dos dedos durante o esforço, pois os mesmos músculos participam desses movimentos. O enunciado destaca o pronador redondo, mas o procedimento clássico transfere a origem da massa flexopronadora, não apenas um tendão isolado.",
-  "correta": "**E, cirurgia de Steindler.** A pista decisiva é levar a origem flexopronadora do epicôndilo medial à face anterior do úmero para recuperar a flexão ativa.",
-  "geradoEm": "2026-10-18",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0539": {
@@ -8040,18 +8051,19 @@
   "conferido": false
  },
  "ombro-cotovelo-0541": {
+  "conceito": "Fundir um cotovelo é uma decisão muito difícil, porque ele não tem uma posição que sirva para tudo. Pense nas duas tarefas que a mão precisa cumprir: chegar à **boca** e chegar à **região do períneo**, para a higiene. A primeira pede o cotovelo bem fletido. A segunda, quase estendido.\n\nCom um cotovelo só, escolhe-se o meio-termo. Com os dois, dá para dividir as tarefas, e é isso que o Campbell recomenda: a artrodese bilateral raramente é indicada, por causa da limitação funcional, mas, se for preciso, **um cotovelo deve ficar em 110 a 120 graus de flexão, para o paciente alcançar a boca, e o outro em 45 a 65 graus, para ajudar na higiene pessoal**. Essas posições podem ser adaptadas à ocupação do paciente (cap. 13, p. 665).\n\n**E por que tão raramente?** Além da função, a cirurgia é difícil. O Campbell lembra que a artrodese do cotovelo é trabalhosa pela anatomia óssea particular e pelo longo braço de alavanca do membro abaixo dele, que sobrecarrega a fixação, e exige um bom estoque ósseo (cap. 13, p. 665). Na prática, ela acaba sendo uma cirurgia de salvamento, em geral depois de infecção ou de falha de artroplastia.",
+  "correta": "**D: um entre 110 a 120 graus de flexão e o outro entre 45 e 65 graus.** É a recomendação do Campbell: um para a boca, o outro para a higiene (cap. 13, p. 665).",
   "incorretas": {
-   "A": "**Ambos entre 70 e 90 graus.** Repetir ângulos intermediários reduz a complementaridade entre levar a mão à boca e alcançar regiões mais distantes.",
-   "B": "**60 a 80 e 45 a 65 graus.** Falta um cotovelo com flexão acentuada para alimentação.",
-   "C": "**90 a 100 e 45 a 65 graus.** Aproxima-se da ideia, mas a faixa de maior flexão fica aquém dos 110 a 120 graus da recomendação cobrada.",
-   "E": "**110 a 120 e 70 a 90 graus.** Inclui a posição para alimentação, porém não a faixa mais aberta de 45 a 65 graus destinada ao alcance e à higiene."
+   "A": "**Serve a um cotovelo só.** A posição intermediária é a escolha quando só um é fundido. Com os dois iguais, o paciente perderia os extremos: a boca e o períneo.",
+   "B": "**Nem chega à boca.** Um cotovelo a 60 a 80 graus não leva a mão ao rosto, e é por isso que o primeiro cotovelo precisa de 110 a 120 graus (Campbell, cap. 13, p. 665).",
+   "C": "**Quase.** Acerta o cotovelo mais estendido, mas fica curto no fletido. Com 90 a 100 graus, chegar à boca ainda é difícil.",
+   "E": "**Acerta um e erra o outro.** O primeiro está certo, mas o segundo, a 70 a 90 graus, não alcança a região do períneo (Campbell, cap. 13, p. 665)."
   },
   "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 13 (Operações de salvamento do ombro e do cotovelo), p. 665",
    "https://clinicalpub.com/salvage-operations-for-the-shoulder-and-elbow/"
   ],
-  "conceito": "**Dois cotovelos fundidos no mesmo ângulo perdem funções diferentes.** A artrodese bilateral é excepcional e compromete a autonomia. Quando inevitável, a recomendação clássica coloca um lado em flexão maior, cerca de 110 a 120 graus, para levar a mão à boca, e o outro em 45 a 65 graus, para ampliar o alcance e permitir higiene pessoal. São posições de referência, não receita universal: dominância, mobilidade do ombro e do punho, ocupação e tarefas prioritárias devem ser avaliadas, idealmente simulando os ângulos antes da cirurgia.",
-  "correta": "**D, 110 a 120 graus de um lado e 45 a 65 graus do outro.** A combinação oferece funções complementares de alimentação e alcance para higiene, conforme a recomendação clássica para artrodese bilateral.",
-  "geradoEm": "2026-10-19",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0542": {
@@ -10527,82 +10539,79 @@
   "geradoEm": "2026-10-28"
  },
  "ombro-cotovelo-0653": {
+  "conceito": "Dobrar o cotovelo parece uma tarefa do bíceps, porque é ele que aparece no espelho. Mas o músculo que trabalha em toda flexão, em qualquer posição do antebraço, é o **braquial**, escondido embaixo. Por isso os livros didáticos o chamam de flexor primário.\n\n**A explicação está nas inserções.** O Netter's Concise mostra que o braquial nasce na parte distal e anterior do úmero e se insere na **tuberosidade da ulna**, enquanto o bíceps vai à tuberosidade do rádio (cap. 4, p. 128). A ulna não roda. Assim, a flexão pelo braquial é igual com o antebraço em pronação ou em supinação. O bíceps, ao contrário, depende de onde está o rádio, e também tem de supinar.\n\n**A inervação tem um detalhe.** Pela mesma tabela do Netter, o braquial recebe o musculocutâneo na parte medial e o radial na lateral (p. 128), o que serve à cirurgia: a via anterior do úmero divide o músculo entre os dois territórios. A resposta da banca fica com o nervo principal, o musculocutâneo.\n\n**A raiz.** C5 e C6 são as raízes do tronco superior do plexo. Uma paciente com lesão alta do plexo tem dificuldade para fletir o cotovelo exatamente por isso, e a reconstrução dessa flexão é uma das prioridades nas lesões do plexo (Green, 8ª ed., cap. 34).",
+  "correta": "**A: braquial, nervo musculocutâneo, C5-C6.** O braquial se insere na ulna e flete o cotovelo em qualquer posição do antebraço, e sua inervação principal é o musculocutâneo (Netter's Concise, cap. 4, p. 128).",
   "incorretas": {
-   "B": "**Acerta o músculo, mas troca o nervo principal.** A inervação predominante do braquial é musculocutânea, não radial C6-C7. Uma contribuição radial lateral variável não torna a alternativa correta.",
-   "C": "**O bíceps participa, mas não é o flexor primário pedido.** Além disso, a combinação radicular usual para o musculocutâneo nessa função é C5-C6, não C6-C7.",
-   "D": "**O bíceps não é inervado pelo radial.** Seu nervo motor é o musculocutâneo, com fibras principalmente de C5-C6.",
-   "E": "**O braquiorradial recebe o nervo radial.** É flexor auxiliar do cotovelo, não o braquial que constitui a resposta pedida."
+   "B": "**Parte da verdade, em nervo e raiz.** O radial realmente manda ramos à parte lateral do braquial (Netter's Concise, cap. 4, p. 128), mas o nervo principal é o musculocutâneo, e a raiz clássica não é C6-C7.",
+   "C": "**O flexor que aparece.** O bíceps flete e supina, e é muito forte, mas depende da posição do rádio (Netter's Concise, cap. 4, p. 128). Por isso não é o flexor \"primário\" dos livros. A raiz C6-C7 também está errada.",
+   "D": "**Dois erros.** O bíceps não é o primário, e seu nervo é o musculocutâneo, e não o radial.",
+   "E": "**Nervo trocado.** O braquiorradial é inervado pelo radial, e não pelo musculocutâneo. É um flexor acessório, mais ativo com o antebraço em posição neutra."
   },
   "referencias": [
-   "StatPearls, Anatomy, Shoulder and Upper Limb, Musculocutaneous Nerve: https://www.ncbi.nlm.nih.gov/books/NBK534199/",
-   "StatPearls, Anatomy, Shoulder and Upper Limb, Brachialis Muscle: https://www.ncbi.nlm.nih.gov/books/NBK551630/"
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 4 (braço), p. 128",
+   "Green's Operative Hand Surgery, 8ª ed., cap. 34"
   ],
-  "conceito": "**O braquial é o flexor principal do cotovelo em qualquer posição do antebraço.** Ele se origina na face anterior do úmero e se insere na ulna, de modo que sua ação não muda de direção quando o rádio prona ou supina. Sua inervação predominante é pelo nervo musculocutâneo, com fibras principalmente de C5 e C6; pode haver pequena contribuição radial para a porção lateral.\n\nO bíceps também flexiona o cotovelo, sobretudo com o antebraço supinado, mas sua ação distintiva é a supinação potente. O braquiorradial auxilia a flexão, especialmente com o antebraço em posição neutra, e recebe o nervo radial. Por isso, a pergunta exige acertar simultaneamente músculo, nervo e raízes.",
-  "correta": "**A: braquial, musculocutâneo, C5-C6.** É a associação clássica para o flexor primário do cotovelo.",
-  "geradoEm": "2026-10-26",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0654": {
+  "conceito": "A escápula é a base de onde o braço trabalha. Se ela está fora do lugar, o braço trabalha torto, como um guindaste sobre um chão que balança. O Campbell define **discinesia escapular** como uma alteração da posição ou do movimento normal da escápula durante os movimentos combinados do ombro, e diz que ela pode aparecer depois de sobrecarga e de lesões de repetição (parte XIII, p. 2440). Uma das formas tem até nome próprio: a escápula SICK, com mau posicionamento, proeminência da borda medial inferior, dor no coracoide e discinesia (p. 2440).\n\n**Como organizar as causas?** Pense nos componentes que seguram e movem a escápula:\n\n- **Nervo:** o torácico longo paralisa o serrátil anterior, e o Campbell descreve a escápula alada que resulta (cap. sobre lesões nervosas, seção Long Thoracic Nerve).\n- **Músculo:** fadiga, fraqueza ou desequilíbrio entre os estabilizadores.\n- **Osso e suporte:** a clavícula funciona como escora. Encurtada ou angulada depois de fratura, ela muda a posição da escápula, e a articulação acromioclavicular instável ou artrósica faz o mesmo.\n- **Postura:** a coluna torácica. Aqui mora o ponto da questão. O Campbell cita que a **cifose** pode influenciar o problema, por restringir a extensão da coluna torácica e levar à discinesia (cap. 46, p. 2377).\n\nOu seja, o que se associa é o aumento da cifose. A coluna torácica normal já é cifótica, e por isso a expressão \"lordose torácica excessiva\" nem descreve a postura que causa o problema. É essa troca que a banca explorou.",
+  "correta": "**C: postura de lordose torácica excessiva.** É a exceção. A postura ligada à discinesia é a cifose torácica, que limita a extensão da coluna e altera a escápula (Campbell, 14ª ed., cap. 46).",
   "incorretas": {
-   "A": "**O nervo torácico longo comanda o serrátil anterior.** Sua lesão pode causar escápula alada e perturbar a rotação superior durante a elevação do braço.",
-   "B": "**A articulação acromioclavicular integra a conexão da escápula ao esqueleto axial.** Dor, instabilidade ou artrose podem modificar sua cinemática.",
-   "D": "**A clavícula funciona como suporte da escápula.** Encurtamento ou deformidade angular após fratura altera sua posição e a mecânica escapulotorácica.",
-   "E": "**Músculos periescapulares coordenam a escápula.** Fraqueza ou ativação alterada de serrátil e trapézio, por exemplo, podem produzir discinesia."
+   "A": "**Causa clássica.** Sem o serrátil anterior, a escápula descola do tórax, a chamada escápula alada (Campbell, seção Long Thoracic Nerve).",
+   "B": "**Faz sentido pela mecânica.** A articulação acromioclavicular é a ligação entre a escápula e a clavícula. Se ela está instável ou dolorosa, a escápula perde o controle do movimento.",
+   "D": "**A escora mudou de comprimento.** A clavícula mantém a distância da escápula em relação ao tórax. Encurtada ou angulada, ela faz a escápula mudar de posição.",
+   "E": "**O mecanismo mais direto.** O Campbell descreve a discinesia depois de sobrecarga e lesões repetidas, em que a fadiga dos estabilizadores tem papel central (parte XIII, p. 2440)."
   },
   "referencias": [
-   "Clinical implications of scapular dyskinesis in shoulder injury: the 2013 consensus statement: https://bjsm.bmj.com/content/47/14/877",
-   "Scapular dyskinesis: the surgeon's perspective: https://pmc.ncbi.nlm.nih.gov/articles/PMC4935127/"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 46, p. 2377; parte XIII, p. 2440; seção Long Thoracic Nerve"
   ],
-  "conceito": "**A escápula depende de músculos, nervos e da clavícula para acompanhar o braço.** Lesão do nervo torácico longo prejudica o serrátil anterior; disfunção muscular altera o controle da rotação e da inclinação escapular. A articulação acromioclavicular e uma clavícula encurtada ou angulada também mudam o apoio ósseo da escápula.\n\nNa postura, a associação descrita é com aumento da **cifose torácica**, frequentemente acompanhado de cabeça anteriorizada e protração escapular. A questão oferece, no lugar disso, \"lordose torácica excessiva\". Esse não é o padrão postural clássico a reconhecer como causa da discinesia.",
-  "correta": "**C: lordose torácica excessiva.** Como a pergunta pede a exceção, essa é a opção que troca a alteração torácica habitualmente associada à discinesia, a cifose aumentada, por lordose.",
-  "geradoEm": "2026-10-26",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0655": {
+  "conceito": "Quando se pergunta qual é o supinador \"primário\", muita gente responde pelo nome: o músculo supinador. A pegadinha está aí. O Netter's Concise lista o bíceps assim: origem na tuberosidade supraglenoidal (cabeça longa) e no coracoide (cabeça curta), inserção na **tuberosidade do rádio**, nervo **musculocutâneo**, ação \"supinar e fletir o antebraço\" (cap. 4, p. 128).\n\n**Por que o bíceps é tão forte nessa função?** A resposta está na inserção. O tendão enrola-se em torno do rádio e prende-se à tuberosidade, que fica na face medial e posterior do osso em pronação. Quando o músculo contrai, desenrola o rádio como quem puxa uma corda enrolada num pião. Com o cotovelo dobrado a 90 graus, esse braço de alavanca é máximo, e por isso apertamos um parafuso com o cotovelo fletido. O Netter usa a mesma ideia na semiologia: a supinação resistida com o cotovelo a 90 graus é o teste que provoca dor no bíceps (cap. 3, p. 93).\n\n**E o músculo supinador?** Ele existe, e trabalha quando o movimento é leve, sem carga, com o cotovelo estendido. Mas é inervado pelo ramo profundo do **radial**, o que torna as alternativas com ele e o musculocutâneo erradas de saída.\n\n**A raiz.** O bíceps é um músculo C5 e C6, e é por isso que o reflexo bicipital testa C5 (Netter's Concise, cap. 2, p. 50). A ligação vale para o paciente com lesão do tronco superior, que perde justamente a supinação forte e a flexão do cotovelo.",
+  "correta": "**B: bíceps, nervo musculocutâneo, C5-C6.** O Netter traz o bíceps como músculo que supina e flete o antebraço, inervado pelo musculocutâneo (cap. 4, p. 128).",
   "incorretas": {
-   "A": "**O bíceps não recebe o nervo radial.** Sua inervação motora é musculocutânea; o radial atua no músculo supinador.",
-   "C": "**O supinador não recebe o musculocutâneo.** É inervado pelo ramo profundo do radial, que segue como interósseo posterior.",
-   "D": "**Acerta o nervo do supinador, mas a dupla não é a exigida pelo gabarito.** A prova busca o bíceps como supinador potente e musculocutâneo C5-C6; além disso, C7-C8 não descreve de modo adequado sua inervação clássica.",
-   "E": "**Braquiorradial é sobretudo flexor do cotovelo.** Pode levar o antebraço à posição neutra, mas não substitui o bíceps como potente supinador; a raiz C7 isolada também não é a combinação pedida."
+   "A": "**Músculo certo, nervo errado.** O bíceps fica no compartimento anterior do braço, inervado pelo musculocutâneo. O radial cuida do compartimento posterior (Netter's Concise, cap. 4, p. 128).",
+   "C": "**Invertida.** O supinador, músculo do antebraço, é inervado pelo ramo profundo do radial, e não pelo musculocutâneo.",
+   "D": "**A pegadinha pelo nome.** O músculo supinador é real, e o nervo radial é o dele. Mas ele não é o supinador primário em força, e a raiz citada também não é a principal. É por isso que a banca escreveu \"primária\".",
+   "E": "**Outra função.** O braquiorradial é inervado pelo radial e flete o cotovelo, sobretudo com o antebraço em posição neutra. Ele leva o antebraço até o meio do caminho, sem ser um supinador primário."
   },
   "referencias": [
-   "StatPearls, Anatomy, Shoulder and Upper Limb, Proximal Radio-Ulnar Joint: https://www.ncbi.nlm.nih.gov/books/NBK551614/",
-   "StatPearls, Anatomy, Shoulder and Upper Limb, Biceps Muscle: https://www.ncbi.nlm.nih.gov/books/NBK519538/"
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 2, p. 50; cap. 3, p. 93; cap. 4 (braço), p. 128"
   ],
-  "conceito": "**Supinação é a rotação do rádio ao redor da ulna que volta a palma para cima.** O bíceps braquial é supinador potente, especialmente com o cotovelo flexionado, porque seu tendão se fixa na tuberosidade do rádio. Recebe o nervo musculocutâneo, com raízes C5-C6. O músculo supinador também realiza o movimento, mas recebe o ramo profundo do radial ou nervo interósseo posterior, não o musculocutâneo.\n\nA pergunta chama a manobra de \"supinação do cotovelo\", embora o movimento ocorra nas articulações radioulnares. Para escolher, confira primeiro a ação e depois a dupla nervo-raiz.",
-  "correta": "**B: bíceps, musculocutâneo, C5-C6.** É a única associação íntegra entre supinação forte do antebraço e sua inervação habitual.",
-  "geradoEm": "2026-10-26",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0656": {
+  "conceito": "Na posição de cadeira de praia, o paciente fica sentado, e o cérebro fica acima do coração. Com o paciente anestesiado, essa diferença de altura é o que pode dar errado, e é isso que a banca quer que o cirurgião explique ao paciente.\n\nO Campbell conta os dois lados da escolha (parte XIV, Arthroscopy, p. 2664). As **vantagens** são uma orientação mais anatômica, facilidade para manipular o braço com um posicionador, **menor risco de neuropraxia por tração** e facilidade para converter para cirurgia aberta. O **problema** está na perfusão cerebral: foram relatados casos de **acidente vascular e morte** depois de episódios de hipotensão.\n\n**O perigo é numérico.** A pressão medida no braço é mais baixa do que no cérebro, e, se houver doença da carótida, a diferença pode ser ainda maior. A pressão medida na panturrilha pode estar facilmente 40 mmHg acima da pressão de perfusão cerebral real. Por isso o Campbell recomenda medir a pressão no braço oposto ou usar monitores de perfusão cerebral sempre que possível (p. 2664).\n\n**E é para assustar?** Não. Ele também registra estudos recentes mostrando segurança nessa posição, sem déficits cognitivos. O ponto é combinar com a anestesia e evitar quedas de pressão, especialmente em quem já tem doença vascular.\n\n> **Na prova:** cadeira de praia, cérebro. Decúbito lateral, plexo por tração.",
+  "correta": "**D: risco de hipotensão com consequente isquemia cerebral.** O Campbell relata acidente vascular e morte depois de episódios de hipotensão nessa posição, e recomenda monitorar a pressão de forma adequada (parte XIV, p. 2664).",
   "incorretas": {
-   "A": "**Tração do membro pode lesar o plexo em algumas montagens artroscópicas.** É lembrada principalmente na posição em decúbito lateral com tração, não o risco distintivo da cadeira de praia cobrado aqui.",
-   "B": "**Compressões periféricas são riscos gerais de posicionamento.** Não identificam a preocupação hemodinâmica e cerebral própria da cabeça elevada.",
-   "C": "**Conversão para cirurgia aberta não é o risco principal apontado pela posição.** A cadeira de praia pode até facilitar alguns acessos abertos; a preocupação específica é manter perfusão cerebral adequada.",
-   "E": "**A posição não elimina o risco anestésico.** Pode ocorrer hipotensão ou bradicardia, com queda da perfusão cerebral."
+   "A": "**É o risco da outra posição.** A tração do membro é típica do decúbito lateral. A cadeira de praia traz justamente menos risco de neuropraxia por tração (Campbell, parte XIV, p. 2664).",
+   "B": "**Pode acontecer, mas não é o risco característico.** Qualquer posicionamento exige cuidado com pontos de pressão, porém essa não é a orientação específica que distingue essa posição.",
+   "C": "**É o contrário.** A facilidade de converter para cirurgia aberta, sem mudar o decúbito, é uma das vantagens da posição (Campbell, parte XIV, p. 2664).",
+   "E": "**Afirmação falsa e perigosa.** O risco principal da posição é justamente ligado à anestesia e à pressão arterial (Campbell, parte XIV, p. 2664). Nenhuma posição é \"sem risco\"."
   },
   "referencias": [
-   "Anesthesia Patient Safety Foundation, Beach Chair Position May Decrease Cerebral Perfusion: https://www.apsf.org/article/beach-chair-position-may-decrease-cerebral-perfusion/",
-   "Basics of Shoulder Arthroscopy Part I: Beach-Chair Patient Positioning and Operating Room Setup (2024): https://doi.org/10.1016/j.eats.2024.103082"
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), parte XIV (Arthroscopy), p. 2664"
   ],
-  "conceito": "**Na cadeira de praia, a pressão medida no braço pode ser maior que a pressão no nível do cérebro.** A elevação da cabeça cria um gradiente hidrostático. Se a anestesia e a posição reduzirem a pressão arterial, a perfusão cerebral pode cair; episódios de hipotensão ou bradicardia tornam esse risco mais importante. Isquemia neurológica grave é rara, mas constitui complicação relevante para o planejamento e o consentimento.\n\nA equipe deve considerar a altura do manguito em relação ao cérebro e evitar hipotensão excessiva. Isso não significa que outras complicações de posicionamento sejam impossíveis; a pergunta destaca o risco característico da posição semissentada.",
-  "correta": "**D: hipotensão com possível isquemia cerebral.** A perfusão cerebral pode diminuir na posição de cadeira de praia, sobretudo se a pressão arterial cair durante a anestesia.",
-  "geradoEm": "2026-10-26",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0657": {
+  "conceito": "O nome é uma imagem. Pense em uma cancela de fazenda, presa por uma mola que a fecha sozinha. O braço do paciente é essa cancela: o examinador a abre, levando o antebraço para fora, e solta. Se o paciente não consegue segurá-lo, ele volta em direção à barriga.\n\nO livro de Barros Filho e Lech descreve a manobra, que chama de **teste da rotação externa não mantida** (cap. 6, p. 144). O membro é posicionado como no teste do infraespinal, e o examinador roda o braço externamente. Essa posição deve ser sustentada ativamente pela força do **infraespinal e do redondo menor**. Se o paciente não sustenta a rotação externa máxima, o braço roda sozinho para dentro, \"como se fosse a porta de uma cancela que se fecha\", indicando **ruptura maciça do manguito rotador superoposterior**, com supraespinal e infraespinal envolvidos.\n\n**Por que a banca responde infraespinal, e não redondo menor?** Porque o infraespinal é o principal rotador externo, e é a lesão dele que define o sinal. No mesmo capítulo, o teste da queda do braço (drop arm) segue a mesma lógica, e os autores o relacionam principalmente ao infraespinal (p. 144).\n\n**O que diferencia de um teste de força?** O paciente fraco com dor consegue, com esforço, resistir um pouco. Na cancela, a lesão é tão grande que falta o motor. Por isso, o sinal costuma aparecer nas rupturas extensas, e não nas pequenas.",
+  "correta": "**B: infraespinal.** É o principal músculo que sustenta a rotação externa. Quando o braço volta como uma cancela, há lesão do manguito superoposterior, que envolve o infraespinal (Barros Filho e Lech, cap. 6, p. 144).",
   "incorretas": {
-   "A": "**O supraespinal participa da abdução inicial.** Pode coexistir lesão em roturas posterossuperiores, mas não é o músculo principal indicado por esse teste.",
-   "C": "**O subescapular é rotador interno.** Sua avaliação usa manobras como lift-off, belly-press e bear-hug, não a manutenção da rotação externa.",
-   "D": "**O redondo menor também roda externamente o ombro.** Ainda assim, o teste clássico da cancela aponta principalmente para o infraespinal; o sinal da corneta explora melhor a função do redondo menor.",
-   "E": "**O redondo maior não integra o manguito rotador.** Atua em adução e rotação interna, portanto não explica o atraso de rotação externa investigado."
+   "A": "**Participa da lesão maciça, mas não é a função testada.** A ruptura costuma envolver o supraespinal (cap. 6, p. 144), que tem como função principal a elevação, e não a rotação externa.",
+   "C": "**O oposto.** O subescapular é rotador interno, avaliado por outro teste, o de GERBER ou \"lift off\", com o dorso da mão nas costas (cap. 6, p. 144).",
+   "D": "**O parceiro.** O redondo menor também ajuda a sustentar a rotação externa (cap. 6, p. 144), e é a distratora honesta. A banca escolhe o principal motor e a estrutura que a lesão maciça envolve.",
+   "E": "**Nem é do manguito.** O redondo maior é rotador interno e adutor do ombro, fora do grupo dos quatro músculos do manguito."
   },
   "referencias": [
-   "Tests for diagnosing subacromial impingement syndrome and rotator cuff disease: https://pmc.ncbi.nlm.nih.gov/articles/PMC4935057/"
+   "Barros Filho e Lech, Exame Físico em Ortopedia, 3ª ed. (2017), cap. 6 (Ombro), p. 144"
   ],
-  "conceito": "**O teste da cancela investiga a capacidade de manter a rotação externa do ombro.** O examinador posiciona passivamente o braço em rotação externa com o cotovelo flexionado e pede que o paciente sustente a posição ao soltar o apoio. Quando o braço retorna involuntariamente para rotação interna, há uma defasagem de rotação externa, ou sinal de queda, sugestiva de insuficiência do manguito posterossuperior.\n\nO principal músculo associado é o infraespinal. O supraespinal atua sobretudo na abdução, o subescapular na rotação interna e o redondo menor também contribui para rotação externa, mas é examinado de forma mais direcionada pelo sinal da corneta. O teste não localiza uma ruptura isolada com certeza absoluta.",
-  "correta": "**B: infraespinal.** A incapacidade de sustentar a rotação externa passivamente obtida é o achado clássico do teste da cancela ou sinal de atraso da rotação externa.",
-  "geradoEm": "2026-10-26",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "ombro-cotovelo-0658": {

@@ -5,7 +5,7 @@ import { chamarRpc } from '../../servicos/supabase'
 import { PLANOS, STATUS_EVENTO, TIPOS_EVENTO, acertoAposRevisao, acertoPorTentativa, acertoReal, nomeErro, porcentagem, rotuloOrigem, rotuloPagina } from '../../componentes/admin/formatos'
 import { perfilDaFicha, type EnvioHistorico } from '../../componentes/admin/modelosEmail'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, linkDoEvento, linkMercadoPago, reprocessarEvento, type EventoPagamento } from '../../componentes/admin/pagamentos'
-import { STATUS_PIX, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../../componentes/admin/rotulos'
+import { STATUS_PIX, motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../../componentes/admin/rotulos'
 import { PLANOS_RECENTE_DIAS, diasDesde } from '../../componentes/admin/sinais'
 import { CINCO_MIN, rpcInexistente, usarRpc } from '../../componentes/admin/usarRpc'
 import { usarPainel } from '../dados/painel'
@@ -47,7 +47,8 @@ interface FichaExtra {
 }
 interface AssinaturaDoUsuario {
   assinaturas: Array<{ id: string; plano: string; status: string; meio: 'pix' | 'cartao'; id_externo: string | null; inicio_periodo: string | null; fim_periodo: string | null; cancelar_ao_fim: boolean; cancelada_em: string | null
-    ultima_cobranca_id: string | null; ultima_cobranca_em: string | null; criada_em: string; atualizada_em: string; valor: number | null }>
+    ultima_cobranca_id: string | null; ultima_cobranca_em: string | null; criada_em: string; atualizada_em: string; valor: number | null
+    motivo_falha?: string | null; falha_em?: string | null }>
   pix: Array<{ id: string; plano: string; valor: number; status: string; pagamento_id: string | null; expira_em: string; criada_em: string; atualizada_em: string }>
   eventos: EventoPagamento[]
   conta_teste: boolean
@@ -118,7 +119,7 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }), [u, porTema, atividade, extra, situacao, ano, provas.join(','), fcCartas, planos?.vezes])
   const historicoReserva = useMemo<EnvioHistorico[]>(() => (detalhe?.emails ?? []).map(e => ({ tipo: e.tipo, marco: e.marco, assunto: e.assunto, status: e.status, em: e.em, origem: e.tipo === 'marco' || e.tipo === 'relatorio' ? 'automatico' : e.tipo === 'lembrete' ? 'lote' : 'manual' })), [detalhe])
-  const plano = u.plano_vigente ? `Assinante ${PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}` : cortesiaVale ? 'Cortesia' : 'Plano grátis'
+  const plano = u.plano_vigente && u.plano_vigente !== 'cortesia' ? `Assinante ${PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}` : cortesiaVale || u.plano_vigente === 'cortesia' ? 'Cortesia' : 'Plano grátis'
 
   const topo = <span className="a3-avatar a3-avatar--grande">{iniciais(u.nome ?? u.email)}{u.online && <i className="a3-ponto a3-ponto--vivo" />}</span>
   const subtitulo = <div style={{ display: 'grid', gap: 8 }}>
@@ -143,7 +144,7 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
         acao={aba !== 'carta' ? <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirAba('carta')}>Escrever uma carta</button> : undefined}>
         Última vez {planos?.ultima ? `${haQuanto(planos.ultima)}, às ${horario(planos.ultima)}` : ''}.{(planos?.condicoes_vezes ?? 0) > 0 ? ` Também abriu as Condições da Assinatura (${planos!.condicoes_vezes}×), o passo antes do checkout.` : ''} Ainda não assina.
       </Faixa>}
-      {aba === 'assinatura' ? <AbaAssinatura idUsuario={u.id_usuario} email={u.email} />
+      {aba === 'assinatura' ? <AbaAssinatura idUsuario={u.id_usuario} email={u.email} aoCarta={() => definirAba('carta')} />
         : !detalhe ? (detalheQ.erro ? <Estado tipo="erro" titulo="A ficha não abriu" texto="Confira se a migração 202609290200_painel_admin_2.sql foi aplicada." /> : <Carregando linhas={8} texto="Carregando a ficha…" />)
           : aba === 'resumo' ? <AbaResumo u={u} detalhe={detalhe} atividade={atividade} extra={extra} semExtra={semExtra} porTema={porTema}
             perfil={{ situacao, ano, servico, locais, provas, cidadeUf }} semAtividade={!atividade && !!atividadeQ.erro} />
@@ -282,14 +283,14 @@ function AbaAtividade({ u, detalhe, atividade, extra, semAtividade }: { u: Linha
   </>
 }
 
-function AbaAssinatura({ idUsuario, email }: { idUsuario: string; email: string | null }) {
+function AbaAssinatura({ idUsuario, email, aoCarta }: { idUsuario: string; email: string | null; aoCarta: () => void }) {
   const [dados, definirDados] = useState<AssinaturaDoUsuario | null>(null)
   const [erro, definirErro] = useState<{ texto: string; ausente: boolean } | null>(null)
   const [reprocessando, definirReprocessando] = useState<number | null>(null)
   const ler = useCallback(() => chamarRpc<AssinaturaDoUsuario>('assinatura_usuario_admin', { p_usuario: idUsuario }), [idUsuario])
   const carregar = useCallback(async () => {
     try { definirDados(await ler()); definirErro(null) }
-    catch (f) { definirErro(funcaoAusente(f) ? { ausente: true, texto: `Cole no Supabase a ${PARTE_COBRANCAS} para ver a assinatura aqui. Enquanto isso, use Receita › Assinaturas e Cobranças.` } : { ausente: false, texto: `Não foi possível carregar a assinatura (código ${codigoDaFalha(f)}).` }) }
+    catch (f) { definirErro(funcaoAusente(f) ? { ausente: true, texto: `Cole no Supabase a ${PARTE_COBRANCAS} para ver a assinatura aqui. Enquanto isso, use Financeiro › Assinantes e Extrato.` } : { ausente: false, texto: `Não foi possível carregar a assinatura (código ${codigoDaFalha(f)}).` }) }
   }, [ler])
   useEffect(() => { void carregar() }, [carregar])
   async function reprocessar(e: EventoPagamento) {
@@ -314,14 +315,26 @@ function AbaAssinatura({ idUsuario, email }: { idUsuario: string; email: string 
             <span><b>{rotuloPlano(a.plano)}</b> <span className="a3-mudo">· {rotuloMeio(a.meio)}{a.valor !== null ? ` · ${reais(Number(a.valor))} ${a.meio === 'pix' ? 'pagos' : 'contratados'}` : ''}</span></span>
             <Situacao tom={s.tom === 'ruim' ? 'erro' : s.tom === 'aviso' ? 'aviso' : s.tom === 'ok' ? 'ok' : 'neutro'}>{s.rotulo}</Situacao>
           </div>
-          <dl className="a3-pares">
+          {s.chave === 'recusado_ao_assinar' ? <dl className="a3-pares">
+            <div><dt>Tentou assinar em</dt><dd>{dataHora(a.criada_em)}</dd></div>
+            <div><dt>Cobrado</dt><dd>nada</dd></div>
+            <div><dt>Motivo da recusa</dt><dd>{motivoRecusa(a.motivo_falha).texto}</dd></div>
+          </dl> : <dl className="a3-pares">
             <div><dt>Criada em</dt><dd>{data(a.criada_em)}</dd></div>
             <div><dt>Última cobrança paga</dt><dd>{a.ultima_cobranca_em ? dataHora(a.ultima_cobranca_em) : '—'}</dd></div>
             <div><dt>{prox.rotulo}</dt><dd>{data(prox.valor)}</dd></div>
             {a.cancelada_em && <div><dt>Desligou a renovação em</dt><dd>{data(a.cancelada_em)}</dd></div>}
-          </dl>
+            {a.status === 'falha_pagamento' && <div><dt>Motivo da recusa</dt><dd>{motivoRecusa(a.motivo_falha).texto}</dd></div>}
+          </dl>}
           {s.detalhe && <span className="a3-mudo a3-pequeno">{s.detalhe}</span>}
-          <span className="a3-mudo a3-pequeno" style={{ fontFamily: 'var(--a3-mono)' }}>{a.meio === 'cartao' ? `assinatura ${a.id_externo ?? '—'}` : `pedido ${a.id_externo?.slice(4) ?? '—'}`}{a.ultima_cobranca_id ? ` · pagamento ${a.ultima_cobranca_id}` : ''} · atualizada {dataHora(a.atualizada_em)}</span>
+          {(s.chave === 'recusado_ao_assinar' || s.chave === 'falha_pagamento') && <Faixa tom={s.chave === 'falha_pagamento' ? 'erro' : 'aviso'} titulo={s.chave === 'falha_pagamento' ? 'O que fazer' : 'Uma venda que quase fechou'}
+            acao={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={aoCarta}><Icone nome="carta" tamanho={14} />Escrever uma carta</button>}>
+            {s.chave === 'falha_pagamento' ? 'Avise com gentileza que o cartão não passou na renovação e ofereça trocar o cartão ou pagar no Pix.' : 'A pessoa quis assinar. Uma carta curta oferecendo o Pix ou outro cartão costuma resolver.'}
+            {' '}{a.motivo_falha ? `O que costuma resolver: ${motivoRecusa(a.motivo_falha).dica.toLowerCase()}` : 'O motivo exato aparece no Mercado Pago.'}
+          </Faixa>}
+          <details className="a3-detalhes-tecnicos"><summary>Detalhes técnicos</summary>
+            <span className="a3-mudo a3-pequeno" style={{ fontFamily: 'var(--a3-mono)' }}>{a.meio === 'cartao' ? `assinatura ${a.id_externo ?? '—'}` : `pedido ${a.id_externo?.slice(4) ?? '—'}`}{a.ultima_cobranca_id ? ` · pagamento ${a.ultima_cobranca_id}` : ''} · atualizada {dataHora(a.atualizada_em)}</span>
+          </details>
           {linkMercadoPago(a.ultima_cobranca_id) && <a className="a3-link" href={linkMercadoPago(a.ultima_cobranca_id)!} target="_blank" rel="noopener noreferrer">Ver o último pagamento no Mercado Pago <Icone nome="externo" tamanho={13} /></a>}
         </div>
       })}</div>}
@@ -333,7 +346,7 @@ function AbaAssinatura({ idUsuario, email }: { idUsuario: string; email: string 
         <Situacao tom={x.status === 'approved' ? 'ok' : ['refunded', 'charged_back', 'rejected'].includes(x.status) ? 'erro' : 'neutro'}>{STATUS_PIX[x.status] ?? x.status}</Situacao>
       </li>)}</ul>
     </Bloco>}
-    <Bloco titulo={`Avisos do Mercado Pago · ${eventos.length}`} extra="cobranças mensais do cartão nem sempre se ligam à pessoa; estão em Avisos do processador">
+    <Bloco titulo={`Avisos do Mercado Pago · ${eventos.length}`} extra="as cobranças mensais do cartão nem sempre se ligam à pessoa; todas estão em Financeiro › Avisos do Mercado Pago">
       {!eventos.length ? <p className="a3-mudo">Nenhum aviso ligado a esta pessoa.</p> : <ul className="a3-movimentos">{eventos.map(e => {
         const comErro = e.status_processamento === 'erro'
         return <li key={e.id} style={{ alignItems: 'flex-start' }}>
@@ -353,14 +366,16 @@ function AbaAssinatura({ idUsuario, email }: { idUsuario: string; email: string 
 }
 
 function AbaAcoes({ u, detalhe, cortesiaVale, recarregar }: { u: LinhaUsuario; detalhe: Detalhe; cortesiaVale: boolean; recarregar: () => Promise<void> }) {
+  const painel = usarPainel()
   const [ocupado, definirOcupado] = useState(false)
   const [dias, definirDias] = useState('90')
   const [motivo, definirMotivo] = useState('')
   const nome = nomeDe(u)
+  // Dar ou tirar cortesia muda a classificação nas listas do painel: recarrega tudo, não só a ficha.
   async function acao(rotulo: string, fazer: () => Promise<unknown>, sucesso: string) {
     if (ocupado) return
     definirOcupado(true)
-    try { await fazer(); avisoRapido(sucesso); await recarregar() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
+    try { await fazer(); avisoRapido(sucesso); await recarregar(); if (rotulo === 'Cortesia') void painel.atualizar() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
   }
   return <div className="a3-pilha">
     <div className="a3-acao-cartao">
