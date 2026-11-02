@@ -91,7 +91,8 @@ Alertas: pediatria-1061, 1063, 1066, 1067, 1068, 1069, 1075, 1076; trauma-1727, 
 
 **Lotes 05 a 09 aplicados em 02/11/2026** (`lotes/enare/enare_05.py` a `enare_09.py`): com eles, todas as questões do caderno ENARE Cirurgia da Mão têm comentário.
 Sem livro de plástica na biblioteca, a parte de plástica usa fontes abertas conferidas (StatPearls, PMC, PubMed), identificadas nas referências; quando chegar um livro de plástica, trocar a fonte. Fatos não confirmados ficaram no `alerta`.
-Para revisar com prioridade quando houver livro: pediatria-1074 (GOLDBERG), trauma-1732 (PECORELLI e DELLA TORRE), mao-1921 (Código de Ética), mao-1926, mao-1888, mao-1892, mao-1881, mao-1911, mao-1931.
+Para revisar com prioridade quando houver livro: pediatria-1074 (GOLDBERG), trauma-1732 (PECORELLI e DELLA TORRE), mao-1888, mao-1881, mao-1911, mao-1931.
+Fila seguinte: 89 comentários antigos do ENARE R4 Ortopedia (2023 a 2025) estão sem o campo de referências; as 56 antigas do caderno da mão têm referência, mas são mais curtas.
 
 **Registro anterior, sem fonte nos livros locais:** pediatria-1057 (limites de angulação do antebraço aos 5 anos), pediatria-1074 (classificação de GOLDBERG),
 trauma-1732 (método de PECORELLI e DELLA TORRE). Faltam conferir nos livros: mao-1814, 1823, 1824, 1835, 1847, 1848, 1851, 1870, 1912, 1913, 1924, 1927 e 1928.
