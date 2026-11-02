@@ -306,6 +306,9 @@ export function App() {
     // Na página inicial, o crachá fica no nível do progresso (Inicio.tsx), para o cenário abrir a página.
     && (primeiroFundo ?? '') !== ''
 
+  // Painel do administrador 3.0 (01/11/2026): casca própria em tela inteira, sem o cabeçalho, os avisos e o rodapé do site.
+  if (primeiroFundo === 'admin' && !sobreposto) return <ErroDePagina caminho={rota.caminho}><Suspense fallback={<EsperaPixel />}>{pagina}</Suspense></ErroDePagina>
+
   return (
     <div className={`pagina pagina--${densidade}`} style={{ fontSize: `${fonte}%` }}>
       <a className="pular-para-conteudo" href="#conteudo-principal">
