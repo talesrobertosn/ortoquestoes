@@ -36,11 +36,14 @@ import '../estilos/paginas/Treinar.css'
 // pelo Tales em 21/10/2026) fica para as questões cuja prova de origem não foi confirmada.
 // CET-PR: prova da Comissão de Ensino e Treinamento da Regional Paraná.
 const ORDEM_PROVAS = ['TEOT', 'TARO', 'Ortopedia', 'CET-PR']
+// O ENARE é uma prova só, geral, que dá acesso a R4 como coluna e mão (Tales, 02/11/2026):
+// os cadernos de cada edição viram uma pílula. O ano separa as edições.
+const CADERNOS_DO_ENARE = ['ENARE R4 Ortopedia', 'ENARE Cirurgia da Mão']
 
 // Ortopedia é o padrão do site; cirurgia da mão só entra quando a pessoa escolhe.
 const DESCRICAO_AREA: Record<Area, string> = {
   base: 'TEOT, TARO e afins',
-  enare: 'Ano adicional em ortopedia',
+  enare: 'Prova geral que dá acesso a R4 como coluna e mão',
   coluna: 'R4 de coluna e todas as questões de coluna do site',
   quadril: 'Fellowship e todas as questões de quadril do site',
   mao: 'Especialidade à parte, inclui cirurgia plástica',
@@ -77,7 +80,7 @@ const SITUACAO_CURTA: Record<Situacao, string> = {
   turmaErra: 'a turma erra',
   turmaAcertaVoceErrou: 'turma acerta, errei',
 }
-const AREA_CURTA: Record<Area, string> = { base: 'Ortopedia', enare: 'R4 ENARE', coluna: 'R4 Coluna', quadril: 'Quadril', mao: 'Mão' }
+const AREA_CURTA: Record<Area, string> = { base: 'Ortopedia', enare: 'ENARE', coluna: 'R4 Coluna', quadril: 'Quadril', mao: 'Mão' }
 
 /** Filtro guardado com nome; a consulta da URL (o endereço do filtro) é a chave. */
 interface FiltroSalvo { id: string; nome: string; consulta: string }
@@ -184,6 +187,12 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
     for (const prova of ORDEM_PROVAS) if (provasNoAcervo.includes(prova)) grupos.push({ rotulo: prova, provas: [prova] })
     for (const prova of provasNoAcervo) {
       if (ORDEM_PROVAS.includes(prova)) continue
+      if (CADERNOS_DO_ENARE.includes(prova)) {
+        const enare = grupos.find((g) => g.rotulo === 'ENARE')
+        if (enare) enare.provas.push(prova)
+        else grupos.push({ rotulo: 'ENARE', provas: [prova] })
+        continue
+      }
       grupos.push({ rotulo: prova, provas: [prova] })
     }
     return grupos
@@ -202,6 +211,11 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
   const provasDoFoco = useMemo(() => {
     if (!indice || !porArea) return null
     return new Set(filtrar(indice, { ...FILTROS_VAZIOS, areas: filtros.areas, incluirAnuladas: true }).map((q) => q.p).filter((p): p is number => p !== null).map((p) => indice.provas[p]))
+  }, [indice, porArea, filtros.areas])
+  // O mesmo para os anos: uma pílula de ano sem nenhuma questão da prova escolhida só levaria a zero.
+  const anosDoFoco = useMemo(() => {
+    if (!indice || !porArea) return null
+    return new Set(filtrar(indice, { ...FILTROS_VAZIOS, areas: filtros.areas, incluirAnuladas: true }).map((q) => q.a))
   }, [indice, porArea, filtros.areas])
 
   /** Uma prova por vez, ou todas: os OrtoQuestões Simulados da prova escolhida já vêm misturados. */
@@ -757,7 +771,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                       if (!marcado && provasDoFoco && !grupo.provas.some((p) => provasDoFoco.has(p))) return null
                       return (
                         <button key={grupo.rotulo} type="button" className="tr-pilula" aria-pressed={marcado}
-                          title={grupo.rotulo === 'Ortopedia' ? 'Questões de ortopedia com a prova de origem não confirmada' : grupo.rotulo === 'SIMÃO' ? 'OrtoQuestões Simulados no padrão do SIMÃO, o simulado do exame de título de especialista em cirurgia da mão' : undefined}
+                          title={grupo.rotulo === 'Ortopedia' ? 'Questões de ortopedia com a prova de origem não confirmada' : grupo.rotulo === 'SIMÃO' ? 'OrtoQuestões Simulados no padrão do SIMÃO, o simulado do exame de título de especialista em cirurgia da mão' : grupo.rotulo === 'ENARE' ? 'Prova geral que dá acesso a R4 como coluna e mão' : undefined}
                           onClick={() => atualizar({ provas: marcado ? filtros.provas.filter((x) => !grupo.provas.includes(x)) : [...filtros.provas, ...grupo.provas.filter((p) => !filtros.provas.includes(p))] })}>
                           {grupo.rotulo}
                           <span className="numerico">{quantidade}</span>
@@ -771,7 +785,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
                 <div className="tr-grupo">
                   <span className="tr-grupo__rotulo">Ano</span>
                   <div className="tr-pilulas">
-                    {[...(indice?.anos ?? [])].sort((a, b) => b - a).map((ano) => (
+                    {[...(indice?.anos ?? [])].filter((ano) => !anosDoFoco || anosDoFoco.has(ano) || filtros.anos.includes(ano)).sort((a, b) => b - a).map((ano) => (
                       <button key={ano} type="button" className="tr-pilula" aria-pressed={filtros.anos.includes(ano)}
                         onClick={() => atualizar({ anos: filtros.anos.includes(ano) ? filtros.anos.filter((x) => x !== ano) : [...filtros.anos, ano] })}>
                         {ano}

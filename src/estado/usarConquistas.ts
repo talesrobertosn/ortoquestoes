@@ -25,7 +25,7 @@ function gruposDoIndice(indice: Indice | null): Map<string, GrupoProva[]> | unde
     if (prova === 'TARO') grupos.push('taro')
     if (prova.startsWith('TECOC')) grupos.push('tecoc')
     if (prova === 'Fellowship Quadril') grupos.push('quadril')
-    if (q.ar === 'mao') grupos.push('mao')
+    if (q.ar === 'mao' || (q.ar === 'enare' && q.aa?.includes('mao'))) grupos.push('mao')
     if (q.ar === 'coluna') grupos.push('coluna')
     if (q.ar === 'enare') grupos.push('enare')
     if (grupos.length) mapa.set(q.id, grupos)
