@@ -199,7 +199,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
           {/* Celular: topo de contexto e trilho com as partes da área. */}
           <header className="a3-movel-topo">
             <img src={recurso('marca/simbolo.svg')} alt="" width={26} height={26} style={{ borderRadius: 7 }} />
-            <div className="a3-movel-topo__titulo"><small>{defArea(area).rotulo}</small><b>{parte.rotulo}</b></div>
+            <div className="a3-movel-topo__titulo"><small>{defArea(area).partes.length > 1 ? defArea(area).rotulo : 'Painel'}</small><b>{parte.rotulo}</b></div>
             <button type="button" className="a3-botao a3-botao--fantasma a3-botao--icone" onClick={() => definirPaleta(true)} aria-label="Buscar no painel"><Icone nome="busca" /></button>
             <button type="button" className="a3-botao a3-botao--fantasma a3-botao--icone" onClick={() => void p.atualizar()} aria-label="Atualizar os dados" aria-busy={p.atualizando} disabled={p.atualizando}><Icone nome="atualizar" /></button>
           </header>
