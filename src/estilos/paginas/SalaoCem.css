@@ -29,9 +29,10 @@
   gap: var(--e-4) var(--e-5); aspect-ratio: 16 / 9; min-height: 0; padding: clamp(1.25rem, 2.4vw, 2.25rem);
 }
 .cem-heroi:focus { outline: none; }
-/* Véu escuro só do lado do texto (como na página inicial): a arte continua viva à direita. */
-.cem-heroi__cena::before {
-  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+/* Véu escuro só do lado do texto (como na página inicial): a arte continua viva à direita. Fica dentro do palco, entre
+   a arte e a fala dos bichos (z 2 < 3): fora dele, o véu cobria o balão e a frase saía apagada no chão escuro. */
+.cem-heroi__palco::after {
+  content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
   background: linear-gradient(90deg, rgba(8, 10, 14, 0.62) 0%, rgba(8, 10, 14, 0.32) 32%, transparent 52%),
     linear-gradient(180deg, rgba(8, 10, 14, 0.45) 0%, transparent 22%, transparent 84%, #0c0f12 100%);
 }
@@ -377,7 +378,6 @@
   /* No celular: a cena mostra o recorte do pódio (x 196..476 da arte) e as placas e a jornada vêm embaixo, no chão escuro. */
   .cem-heroi { margin-inline: calc(-1 * var(--e-2)); border-radius: 16px; grid-template-rows: auto auto auto auto; }
   .cem-heroi__cena { display: contents; }
-  .cem-heroi__cena::before { display: none; }
   .cem-heroi__palco { position: relative; inset: auto; z-index: 0; grid-row: 1; grid-column: 1; aspect-ratio: 280 / 270; container-type: inline-size; }
   .cem-heroi__mundo { width: 171.43cqw; left: -70cqw; top: 0; }
   /* O balão da coruja (pousada no alto) desce para baixo do título, que fica por cima da cena no celular. */
