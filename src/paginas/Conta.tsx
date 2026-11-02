@@ -47,7 +47,7 @@ import { guardarVitrine, lembrarNome, nomeLembrado, sortearVitrine } from '../co
 import { CenaPortal } from '../componentes/acesso/CenaPortal'
 import { CorujaDoPainel } from '../componentes/acesso/CorujaDoPainel'
 import { QuestaoAcesso } from '../componentes/acesso/QuestaoAcesso'
-import { JornadaAcesso } from '../componentes/acesso/JornadaAcesso'
+import { JornadaAcesso, ProvasAcesso, VitrineAcesso } from '../componentes/acesso/JornadaAcesso'
 import '../estilos/paginas/Portal.css'
 
 const ROTULOS_STATUS = {
@@ -505,16 +505,16 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const mascarar = (e: string) => { const [u, d] = e.split('@'); return d ? `${u.slice(0, 1)}•••@${d}` : e }
     const mostrarAtalho = modo === 'entrar' && !recuperacao && !perfilDepois && !!lembrado && email.trim().toLowerCase() !== lembrado.toLowerCase()
     return <div className="ac acx">
-      {/* O plano de abertura (01/11/2026): o salão de leitura do castelo é o fundo do primeiro bloco, com o título à
-          esquerda, o esqueleto anfitrião junto ao atril e o painel de entrar inteiro à direita, com a coruja na borda.
-          Depois, a ficha com a questão (e o gato) ao lado das provas, e a jornada (no celular: cena, título, painel,
-          ficha, provas e jornada). */}
+      {/* O plano de abertura (01/11/2026; mural desde 02/11/2026): o salão de leitura do castelo no alto, com o título à
+          esquerda, o esqueleto anfitrião junto ao atril e o painel de entrar à direita, com a coruja na borda. Embaixo do
+          título, pregadas na parede, a ficha com a questão (e o gato), a vitrine e a jornada; embaixo do painel, as
+          provas (no celular: cena, título, painel, ficha, provas, vitrine e jornada). */}
       <CenaPortal texto={<>
           <p className="pc-selo">{seloVitrine}</p>
           <h1 id="ac-titulo" key={tituloVitrine}>{tituloVitrine}</h1>
           <p className="pc-lide">{v.lide}</p>
           <p className="pc-gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
-      </>}>
+      </>} esquerda={<><div className="acx-ficha"><QuestaoAcesso /></div><VitrineAcesso /><JornadaAcesso /></>} direita={<ProvasAcesso />}>
         <section className="ac-cartao pa" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
           <CorujaDoPainel />
           {perfilDepois ? <>
@@ -593,9 +593,6 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           </>}
         </section>
       </CenaPortal>
-      {/* A ficha com uma questão real para responder (outra a cada F5 ou no botão), o que a conta guarda e as provas. */}
-      <div className="acx-ficha"><QuestaoAcesso /></div>
-      <JornadaAcesso />
       {pendente && <ModalConfirmarEmail
         email={pendente}
         aoFechar={() => { definirPendente(null); definirMensagem(`Falta confirmar o e-mail ${pendente}. Abra o link que enviamos para liberar a conta.`) }}

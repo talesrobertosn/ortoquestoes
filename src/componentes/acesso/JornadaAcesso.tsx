@@ -4,7 +4,7 @@ import { Medalha } from '../Medalha'
 import { Icone, type NomeIcone } from '../Icone'
 
 /*
- * O que a conta guarda, na tela de entrar (01/11/2026): três capítulos da jornada (o que você estuda, o que fica
+ * O que a conta guarda, na tela de entrar (01/11/2026; desde 02/11/2026 em três peças do mural: jornada, vitrine e provas): três capítulos da jornada (o que você estuda, o que fica
  * registrado, como você evolui), a vitrine com emblemas reais do catálogo (toque ou foco mostra o nome e como
  * conquistar, sem depender de passar o mouse) e a faixa das provas que existem no acervo, agrupadas por tipo.
  * Só promete o que existe: o cronograma, que é do plano, aparece com o selo dele.
@@ -34,50 +34,57 @@ const PROVAS: { grupo: string; provas: string[] }[] = [
   { grupo: 'Subespecialidades', provas: ['ENARE Cirurgia da Mão', 'Título de cirurgia da mão (SBCM)', 'SIMÃO (simulado do título)', 'TECOC/SBCOC Ombro e Cotovelo', 'TEPOP', 'R4 Coluna SES-DF', 'R4 Coluna Joinville', 'Fellowship Quadril'] },
 ]
 
+/** Os três capítulos da jornada, cada um num cartão pregado um pouco torto, na faixa embaixo do mural. */
 export function JornadaAcesso() {
+  return <section className="pj" aria-labelledby="pj-titulo">
+    <header className="pj-cabeca">
+      <p className="pj-selo">Sua jornada</p>
+      <h2 id="pj-titulo">A conta guarda o caminho, não só a senha</h2>
+    </header>
+    <ol className="pj-capitulos">
+      {CAPITULOS.map((c, i) => (
+        <li key={c.titulo} className="pj-capitulo">
+          <span className="pj-capitulo__numero" aria-hidden="true">{i + 1}</span>
+          <h3>{c.titulo}</h3>
+          <p>{c.texto}</p>
+          <ul>{c.itens.map((item) => <li key={item.texto}><Icone nome={item.icone} tamanho={16} /><span>{item.texto}{item.plano && <small className="pj-plano">no plano</small>}</span></li>)}</ul>
+        </li>
+      ))}
+    </ol>
+  </section>
+}
+
+/** A vitrine: os emblemas numa prateleira; o escolhido mostra o nome e o que é preciso fazer. */
+export function VitrineAcesso() {
   const emblemas = VITRINE.map((id) => EMBLEMAS.find((e) => e.id === id)).filter((e) => e && !e.secreta) as (typeof EMBLEMAS)[number][]
   const [aberto, definirAberto] = useState(emblemas[0]?.id ?? '')
   const atual = emblemas.find((e) => e.id === aberto)
-  return <>
-    <section className="pj" aria-labelledby="pj-titulo">
-      <header className="pj-cabeca">
-        <p className="pj-selo">Sua jornada</p>
-        <h2 id="pj-titulo">A conta guarda o caminho, não só a senha</h2>
-      </header>
-      <ol className="pj-capitulos">
-        {CAPITULOS.map((c, i) => (
-          <li key={c.titulo} className="pj-capitulo">
-            <span className="pj-capitulo__numero" aria-hidden="true">{i + 1}</span>
-            <h3>{c.titulo}</h3>
-            <p>{c.texto}</p>
-            <ul>{c.itens.map((item) => <li key={item.texto}><Icone nome={item.icone} tamanho={16} /><span>{item.texto}{item.plano && <small className="pj-plano">no plano</small>}</span></li>)}</ul>
-          </li>
-        ))}
-      </ol>
-      {/* A vitrine: os emblemas numa prateleira; o escolhido mostra o nome e o que é preciso fazer. */}
-      <div className="pj-vitrine">
-        <div className="pj-vitrine__prateleira" role="group" aria-label="Alguns emblemas para conquistar">
-          {emblemas.map((e) => (
-            <button key={e.id} type="button" className="pj-emblema" aria-pressed={aberto === e.id} aria-label={`${e.rotulo}: ${e.descricao}`}
-              onClick={() => definirAberto(e.id)} onFocus={() => definirAberto(e.id)} onMouseEnter={() => definirAberto(e.id)}>
-              <Medalha conquista={e} tamanho={48} />
-            </button>
-          ))}
+  return <section className="pv" aria-labelledby="pv-titulo">
+    <h2 id="pv-titulo" className="pv-titulo">Emblemas para conquistar</h2>
+    <div className="pj-vitrine__prateleira" role="group" aria-label="Alguns emblemas para conquistar">
+      {emblemas.map((e) => (
+        <button key={e.id} type="button" className="pj-emblema" aria-pressed={aberto === e.id} aria-label={`${e.rotulo}: ${e.descricao}`}
+          onClick={() => definirAberto(e.id)} onFocus={() => definirAberto(e.id)} onMouseEnter={() => definirAberto(e.id)}>
+          <Medalha conquista={e} tamanho={40} />
+        </button>
+      ))}
+    </div>
+    {atual && <p className="pj-vitrine__legenda" aria-live="polite"><strong>{atual.rotulo}</strong> {atual.descricao}</p>}
+  </section>
+}
+
+/** As provas do acervo, num cartão embaixo do painel de entrar. */
+export function ProvasAcesso() {
+  return <section className="pp" aria-labelledby="pp-titulo">
+    <h2 id="pp-titulo" className="pp-titulo">As provas do acervo</h2>
+    <div className="pp-grupos">
+      {PROVAS.map((g) => (
+        <div key={g.grupo} className="pp-grupo">
+          <h3>{g.grupo}</h3>
+          <ul>{g.provas.map((p) => <li key={p}>{p}</li>)}</ul>
         </div>
-        {atual && <p className="pj-vitrine__legenda" aria-live="polite"><strong>{atual.rotulo}</strong> {atual.descricao}</p>}
-      </div>
-    </section>
-    <section className="pp" aria-labelledby="pp-titulo">
-      <h2 id="pp-titulo" className="pp-titulo">As provas do acervo</h2>
-      <div className="pp-grupos">
-        {PROVAS.map((g) => (
-          <div key={g.grupo} className="pp-grupo">
-            <h3>{g.grupo}</h3>
-            <ul>{g.provas.map((p) => <li key={p}>{p}</li>)}</ul>
-          </div>
-        ))}
-      </div>
-      <p className="pp-nota">Além dos OrtoQuestões Simulados, feitos por engenharia reversa das bancas.</p>
-    </section>
-  </>
+      ))}
+    </div>
+    <p className="pp-nota">Além dos OrtoQuestões Simulados, feitos por engenharia reversa das bancas.</p>
+  </section>
 }
