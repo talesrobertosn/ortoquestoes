@@ -306,17 +306,19 @@
   "conferido": false
  },
  "pediatria-0018": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**A classificação do pilar lateral de Herring.** É feita na radiografia em AP, na **fase de fragmentação**. A epífise é dividida em três pilares: **lateral** (15% a 30% da largura), **central** (cerca de 50%) e **medial** (20% a 35%). Gradua-se a **altura do pilar lateral** em comparação com o lado normal:\n\n| Grupo | Pilar lateral |\n|---|---|\n| **A** | **Sem perda** de altura |\n| **B** | Mantém **mais de 50%** da altura (perda menor que 50%) |\n| **B/C** (borda) | Cerca de 50%, estreito (2 a 3 mm) ou pouco ossificado |\n| **C** | Mantém **menos de 50%** da altura (**colapso** maior que 50%) |\n\n**Por que o pilar lateral.** O pilar lateral **protege** a parte central da epífise da compressão pelo rebordo acetabular. Se ele colapsa, a cabeça se achata e **extrusa** lateralmente, e o acetábulo deixa de moldá-la.\n\n**O valor prognóstico.** É a classificação com **maior valor prognóstico** e melhor concordância entre observadores. Combinada com a **idade de início**, orienta o tratamento (estudo multicêntrico de Herring, 2004):\n- **Grupo A**: bom prognóstico em qualquer idade; observação.\n- **Grupo B e B/C com início após 8 anos**: a cirurgia de contenção (osteotomia femoral varizante ou de Salter) melhora o resultado.\n- **Grupo B com início antes de 8 anos**: bom resultado sem cirurgia.\n- **Grupo C**: mau prognóstico com ou sem cirurgia.\n\n**Os sinais de cabeça em risco** (Catterall) e a **extrusão** lateral somam informação prognóstica. O desfecho final é medido pela classificação de **Stulberg**.",
-  "correta": "**Correta: D (anteroposterior, na fase de fragmentação).** A classificação do pilar lateral de Herring é feita na radiografia em AP, na fase de fragmentação, comparando a altura do pilar lateral com o lado normal.",
+  "conceito": "A classificação de HERRING só faz sentido se você souber olhar a cabeça no momento certo e na incidência certa, e a questão testa exatamente isso: em qual radiografia e em qual fase.\n\n**O raciocínio mecânico.** Na fragmentação a cabeça se divide em pilares medial, central e lateral. Enquanto o pilar lateral está íntegro, ele sustenta a carga e protege o segmento central avascular; quando a necrose o toma, essa proteção some e a cabeça desaba (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 554 e 557). Como o que se mede é a altura do pilar lateral em relação à cabeça, a imagem necessária é a **anteroposterior**, que mostra a borda lateral da epífise em perfil. O Campbell's Operative Orthopaedics, 15ª ed. (p. 1187 e 1188) confirma: AP da pelve, no início da fragmentação, cerca de 6 meses depois do início dos sintomas.\n\n**A fase importa.** O próprio livro mostra um quadril que passou de B para B/C e para C em oito meses: classificar cedo demais subclassifica a gravidade. Por isso se recomenda aplicar no meio da fragmentação. Em contrapartida, a vantagem do método é a simplicidade: basta uma radiografia AP, com confiabilidade entre observadores maior que a de CATTERALL.\n\n**Perfil e necrose.** O perfil de rã é a incidência onde se enxerga o sinal do crescente e a fragmentação leve só anterior, mas não é nela que se mede o pilar lateral. E a fase de necrose, anterior à reabsorção, ainda não mostra o colapso que o grupo precisa descrever.\n\nO pilar lateral e as regras de aplicação estão na seção \"O pilar lateral de HERRING\" do resumo.",
+  "correta": "**D) anteroposterior, na fase de fragmentação.** A altura do pilar lateral se mede na AP, quando a reabsorção já separou os pilares.",
   "incorretas": {
-   "A": "O pilar lateral é avaliado no **AP**, e a classificação é feita na **fragmentação**, e não na necrose.",
-   "B": "A fase de fragmentação está certa, mas a incidência é o **AP**, onde se vê o pilar lateral.",
-   "C": "O AP está certo, mas na fase de **necrose** o pilar ainda não colapsou; a classificação é feita na fragmentação."
+   "A": "**De perfil, na fase de necrose** erra a incidência e a fase: na necrose a cabeça ainda não se dividiu em pilares, e o perfil não mostra a borda lateral.",
+   "B": "**De perfil, na fase de fragmentação** acerta a fase, mas o perfil é o que mostra a fragmentação anterior leve; o pilar lateral é medido na incidência frontal.",
+   "C": "**Anteroposterior, na fase de necrose** acerta a incidência e erra o momento; classificar antes da fragmentação subestima o grupo, como no quadril que subiu de B para C em oito meses."
   },
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 554 a 557",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), p. 1187 e 1188",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0019": {
@@ -617,18 +619,20 @@
   "conferido": false
  },
  "pediatria-0038": {
-  "conceito": "**A doença de Legg-Calvé-Perthes e a classificação de Catterall.** Perthes é a necrose avascular idiopática da cabeça femoral em crescimento, típica de meninos entre **4 e 8 anos**. Catterall (1971) classificou a doença pela **extensão do acometimento** da epífise, vista nas radiografias em AP e perfil durante a fase de fragmentação:\n\n| Grupo | Extensão do acometimento | Achados |\n|---|---|---|\n| **I** | Apenas a parte **anterior** da epífise | Sem sequestro nem colapso; metáfise preservada |\n| **II** | Até **metade** anterior | Sequestro central, com colunas medial e lateral preservadas |\n| **III** | Cerca de **três quartos** | Só uma pequena parte posterior preservada; sequestro grande e alterações metafisárias |\n| **IV** | **Toda** a cabeça | Colapso total, achatamento e alterações metafisárias difusas |\n\n**Os sinais de \"cabeça em risco\".** Catterall descreveu ainda sinais de mau prognóstico: **sinal de Gage** (rarefação em V na parte lateral da epífise), **calcificação lateral** à epífise, **subluxação lateral**, **horizontalização da fise** e **alterações metafisárias** difusas.\n\n**As fases da doença (Waldenström).** Inicial (esclerose e epífise menor), **fragmentação** (a epífise se divide em pedaços com áreas radiotransparentes), **reossificação** (osso novo preenche a epífise) e residual (forma final). Para responder a pergunta é preciso juntar as duas informações: **quanto** da cabeça está acometido e **em que fase** está.\n\n**A limitação.** A classificação de Catterall tem **baixa concordância** entre observadores e só pode ser aplicada após a fragmentação. Por isso, hoje se usa mais a de **Herring** (pilar lateral), que tem maior valor prognóstico.\n\n**A imagem.** A radiografia mostra a epífise **inteira** acometida, achatada e dividida em fragmentos com áreas radiotransparentes, sem osso novo homogêneo: grupo **IV**, fase de **fragmentação**.",
-  "correta": "**Correta: C (IV com fragmentação).** A imagem mostra o acometimento de toda a epífise (grupo IV de Catterall), com a cabeça fragmentada em pedaços, sem sinais de reossificação.",
+  "conceito": "Duas informações têm de bater ao mesmo tempo: quanta epífise está comprometida (grupo de CATTERALL) e em que momento da história natural a radiografia foi feita (fragmentação ou reossificação).\n\n**A imagem.** Radiografia de um quadril em incidência de perfil, recortada sobre a cabeça e o colo. A epífise aparece achatada e irregular, com densidades heterogêneas e áreas de falha, sem o contorno esférico liso, e o colo parece alargado. Não há osso novo homogêneo e bem formado cobrindo a cabeça, o que a deixa na fase de reabsorção, e o acometimento ocupa praticamente toda a epífise. É a imagem que o gabarito oficial (IV com fragmentação) pede, e a conferência da figura com o gabarito fecha com ele.\n\n**O grupo.** Em Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease) (p. 554), CATTERALL III é a situação em que a maior parte da epífise está sequestrada, mas ainda restam partes sãs medial e lateral; no **IV**, **a epífise inteira** está acometida. Como a classificação foi criada em radiografias da fase de fragmentação, a imagem típica do grupo IV é justamente a cabeça toda fragmentada.\n\n**A fase.** Fragmentação é a reabsorção do osso necrótico: lucências, pilares demarcados, achatamento e alargamento. Reossificação é osso novo na periferia, que avança para o centro, e a região anterocentral é a última a se refazer. Uma cabeça ainda cheia de áreas lucentes e irregular não está reossificada.\n\nO grupo e os sinais de cabeça em risco estão na seção \"Classificações de gravidade: CATTERALL e a cabeça em risco\" do resumo.",
+  "correta": "**C) IV com fragmentação.** Epífise toda acometida e ainda em reabsorção, com lucências e irregularidade, sem osso novo organizado.",
   "incorretas": {
-   "A": "No grupo **III**, uma pequena parte posterior da epífise está preservada; na imagem, a cabeça inteira está acometida.",
-   "B": "Além de a extensão ser de grupo IV, não há o osso novo homogêneo que caracteriza a **reossificação**.",
-   "D": "A extensão é de grupo IV, mas a fase é de **fragmentação**: a epífise está dividida, sem preenchimento por osso novo."
+   "A": "**III com fragmentação** acerta a fase, mas o grupo III deixa partes sãs medial e lateral; aqui o comprometimento ocupa a epífise inteira.",
+   "B": "**III com reossificação** erra o grupo e a fase: a cabeça não mostra osso novo recobrindo a periferia, e o grupo III poupa as bordas.",
+   "D": "**IV com reossificação** acerta o grupo e erra a fase: na reossificação há osso novo na periferia progredindo para o centro, e a cabeça da figura ainda está em reabsorção."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doença de Legg-Calvé-Perthes.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de doença de Legg-Calvé-Perthes."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 544 e 554",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), eTabela 34.1, p. 1186.e1",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "A imagem é um recorte pequeno de perfil e a fase foi lida de modo geral (lucências e irregularidade, sem osso novo organizado). O gabarito oficial (IV com fragmentação) foi mantido, em concordância com o que o resumo diz sobre a imagem típica do grupo IV.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0039": {
@@ -847,18 +851,19 @@
   "conferido": false
  },
  "pediatria-0052": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a **necrose avascular idiopática** da epífise femoral proximal na criança. A causa da isquemia é desconhecida; as hipóteses incluem episódios repetidos de interrupção vascular, trombofilias (deficiência de proteína C e S, fator V de Leiden), exposição ao fumo passivo, baixo nível socioeconômico e atraso da idade óssea.\n\n**A epidemiologia que a banca cobra.**\n\n| Aspecto | Dado |\n|---|---|\n| **Sexo** | **Masculino**, cerca de 4 a 5 meninos para cada menina |\n| Idade | Geralmente **4 a 8 anos** (faixa de 2 a 12) |\n| **Lado** | **Unilateral** em 85 a 90% |\n| Bilateral | 10 a 15%, **assimétrico** e em fases diferentes |\n| Estatura | Crianças baixas, com **idade óssea atrasada** |\n\n**O detalhe do bilateral.** Quando o Perthes é bilateral, os dois quadris costumam estar em **fases diferentes** (um em fragmentação, outro em reossificação, por exemplo). Se os dois lados estiverem **simétricos e na mesma fase**, deve-se pensar em outra doença: **displasia epifisária múltipla**, displasia espondiloepifisária ou **hipotireoidismo**.\n\n**Por que o prognóstico é pior nas meninas.** Embora menos comum, o Perthes nas meninas tende a ter **pior prognóstico**, porque elas amadurecem mais cedo: têm menos tempo de crescimento restante para a remodelação da cabeça na mesma idade cronológica.\n\n**Quadro clínico.** Claudicação, às vezes indolor, ou dor no quadril, na coxa ou no **joelho** (dor referida pelo nervo obturador), com limitação da **abdução** e da **rotação interna**. A primeira radiografia pode ser normal; a ressonância detecta a necrose precocemente.\n\n**Tratamento.** O objetivo é manter a cabeça **contida** no acetábulo e com boa mobilidade enquanto ela se remodela. Crianças pequenas (menos de 6 anos) costumam evoluir bem com fisioterapia e manutenção da abdução; em crianças maiores, especialmente acima de 8 anos com pilar lateral B ou B/C, as **osteotomias de contenção** (femoral varizante ou de Salter) melhoram o resultado.",
-  "correta": "**Correta: D (masculino e unilateral).** A doença de Legg-Calvé-Perthes é cerca de 4 a 5 vezes mais comum em meninos e é unilateral em 85 a 90% dos casos.",
+  "conceito": "Duas perguntas numa: quem adoece mais e de que lado. A resposta vem da epidemiologia descrita nos livros, sem exceção a decorar.\n\n**Sexo.** A doença é predominantemente de meninos. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 14, p. 527) dá razões de 3,3:1 na Noruega, 5:1 em Massachusetts e 5,2:1 na Colúmbia Britânica, e resume como \"4:1 ou 5:1\". O Campbell's Operative Orthopaedics, 15ª ed. (p. 1186) diz três vezes mais em meninos. Meninas adoecem, mas menos, e quando adoecem a doença tende a ser mais grave.\n\n**Lateralidade.** O quadril comprometido é um só na grande maioria: o acometimento bilateral aparece em **10% a 13%** (Box 14.1 fala em 10% a 12%). Quando ocorre, os quadris adoecem em fases diferentes, com pelo menos um ano de intervalo, e o conjunto tende a ser mais grave (48% STULBERG IV ou V, segundo o Campbell, p. 1187).\n\n**O perfil clássico.** Menino de 4 a 8 anos, magro, ativo, com claudicação e dor referida ao joelho, uma única cabeça acometida. Quem escolhe \"bilateral\" porque a doença pode ser bilateral esquece que isso é a exceção.\n\nA epidemiologia completa está na seção \"Epidemiologia: menino, pequeno, de 4 a 8 anos\" do resumo.",
+  "correta": "**D) masculino e unilateral.** Razão de 4:1 a 5:1 para meninos, e apenas 10% a 13% de casos bilaterais.",
   "incorretas": {
-   "A": "Erra o sexo e a lateralidade: a doença predomina em meninos e é unilateral na grande maioria.",
-   "B": "A forma **unilateral** está certa, mas o predomínio é **masculino**.",
-   "C": "O sexo **masculino** está certo, mas a forma bilateral ocorre em apenas 10 a 15% dos casos."
+   "A": "**Feminino e bilateral** erra os dois eixos: as meninas são minoria e a bilateralidade é a exceção.",
+   "B": "**Feminino e unilateral** acerta a lateralidade e troca o sexo; as séries trazem de três a cinco meninos para cada menina.",
+   "C": "**Masculino e bilateral** acerta o sexo, mas só uma minoria, de 10% a 13%, acomete os dois quadris, e em tempos diferentes."
   },
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 527 e 540",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), p. 1186 e 1187",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0053": {
@@ -1143,18 +1148,18 @@
   "conferido": false
  },
  "pediatria-0069": {
-  "conceito": "**As fases de Waldenström e o risco de cada uma.** A doença de Legg-Calvé-Perthes é uma necrose avascular da epífise femoral que passa por fases radiográficas previsíveis. Saber o que acontece em cada fase explica quando a cabeça corre risco de se deformar.\n\n| Fase | O que acontece | Risco para a forma da cabeça |\n|---|---|---|\n| Inicial (necrose) | Cabeça **densa** e um pouco menor, alargamento do espaço articular medial, **fratura subcondral** (sinal do crescente) | A cabeça ainda **mantém a forma** |\n| **Fragmentação** | O osso morto é **reabsorvido** e substituído por tecido fibrovascular; a epífise se divide em fragmentos e fica **mole** | **Máximo**: a cabeça **achata**, **colapsa** e **extrui** (sobe e sai para lateral) |\n| Reossificação | Osso novo preenche a epífise a partir da periferia | A cabeça endurece; a forma vai se definindo |\n| Residual | Remodelação até a maturidade | A forma final está estabelecida |\n\n**Por que na fragmentação.** É a fase em que a epífise está **biologicamente plástica**: o osso morto foi removido e o novo ainda não se formou. Nesse momento, a cabeça é como argila: sob a carga do corpo e a pressão da borda lateral do acetábulo, ela **achata** e tende a **subluxar para lateral**. A porção lateral, sem a cobertura do acetábulo, pode crescer para fora (extrusão) e formar a deformidade em **dobradiça** (hinge abduction), em que a cabeça bate na borda do acetábulo durante a abdução.\n\n**A lógica da contenção.** O tratamento busca manter a cabeça **contida** dentro do acetábulo **durante a fragmentação**, para que ela se remodele usando o acetábulo como molde e saia **esférica**. A contenção pode ser:\n- **não cirúrgica**: manter a mobilidade (sobretudo a abdução) com fisioterapia; órteses de abdução (pouco usadas hoje);\n- **cirúrgica**: **osteotomia varizante do fêmur** ou **osteotomia de Salter** (ou ambas), indicadas principalmente em crianças **acima de 8 anos** com pilar lateral B ou B/C.\n\n**Quando operar.** A cirurgia de contenção tem melhor efeito **no início** da fase de fragmentação; depois que a cabeça já se deformou e reossificou, a contenção não funciona, e restam as cirurgias de salvamento (osteotomia valgizante para a dobradiça, osteotomia de Chiari ou de prateleira).",
-  "correta": "**Correta: B (fragmentação).** Na fase de fragmentação, o osso necrótico é reabsorvido e a epífise fica mole e plástica: é quando a cabeça femoral **achata, colapsa e subluxa** para lateral, e por isso é a fase em que a contenção é mais importante.",
+  "conceito": "Dentro da história natural, cada fase tem um evento mecânico e um evento biológico. Subluxação e achatamento pertencem à fase em que a cabeça é mais fraca.\n\n**Por que a cabeça cede aí.** O osso necrótico acumula microdanos sem células para repará-los e tem mais cálcio, portanto é mais quebradiço (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 537 e 538). Quando a revascularização começa, os osteoclastos chegam antes dos osteoblastos e a reabsorção enfraquece ainda mais a epífise. Resultado, na **fragmentação**: lucências, pilares demarcados, alargamento da cabeça, extrusão lateral e quebra da linha de SHENTON, que é a subluxação. O livro afirma que a maior parte do achatamento ocorre nessa fase (p. 544).\n\n**O que fica de fora.** Na necrose, a cabeça é menor e mais densa, com crescente em cerca de um terço dos casos, e o achatamento é leve. Na reossificação, o osso novo cresce da periferia para o centro, e a maioria das cabeças melhora a esfericidade. Na fase residual, a densidade já não muda; só a forma continua remodelando até a maturidade.\n\n**Consequência prática.** Como a deformidade se instala na fragmentação, é nela que se pensa em contenção, evitando corrida e salto para poupar a cabeça fraca.\n\nAs fases e seus achados estão na seção \"As fases de WALDENSTRÖM\" do resumo.",
+  "correta": "**B) fragmentação.** Reabsorção do osso necrótico com cabeça mecanicamente fraca: achatamento, extrusão lateral e quebra da linha de SHENTON.",
   "incorretas": {
-   "A": "Na fase de **necrose**, a cabeça fica densa, mas ainda **mantém a forma**.",
-   "C": "Na **reossificação**, osso novo se forma e a cabeça endurece; a deformidade que se vê já foi produzida na fragmentação.",
-   "D": "Na fase **residual**, a forma final já está estabelecida; não é quando ocorrem o achatamento e a subluxação."
+   "A": "**Necrose** é a fase da cabeça menor, densa e com o crescente; o achatamento aí é leve, e a subluxação franca ainda não se instalou.",
+   "C": "**Reossificação** é a fase do osso novo vindo da periferia, em que a maioria das cabeças melhora a esfericidade; a deformidade principal já aconteceu antes.",
+   "D": "**Residual** é a fase de cura, com densidade estável; a forma ainda remodela até a maturidade, mas o achatamento e a subluxação não nascem aí."
   },
   "referencias": [
-   "Pediatric Orthopaedic Society of North America (POSNA). Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease",
-   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part II: Prospective multicenter study of the effect of treatment on outcome. J Bone Joint Surg Am. 2004;86(10):2121-2134."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 537, 538, 540 e 544",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0070": {
@@ -1716,19 +1721,18 @@
   "conferido": false
  },
  "pediatria-0103": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a **necrose avascular idiopática** da epífise femoral proximal na criança. É mais comum em meninos de **4 a 8 anos**, geralmente baixos e com idade óssea atrasada. A doença segue os **estágios de Waldenström**:\n1. **Necrose** (inicial): epífise densa e menor.\n2. **Fragmentação**: o osso morto é reabsorvido e a epífise se fragmenta.\n3. **Reossificação**: osso novo preenche a epífise.\n4. **Remodelação** (residual): forma final da cabeça.\n\n**A classificação do pilar lateral de Herring.** É feita no **estágio de fragmentação**, no **AP** da bacia. A epífise é dividida em três **pilares**: lateral, central e medial. O **pilar lateral** corresponde aos **15 a 30% laterais** da epífise. A classificação compara a **altura** do pilar lateral doente com a do pilar lateral normal.\n\n| Grupo | Altura do pilar lateral | Prognóstico |\n|---|---|---|\n| **A** | **Sem perda** de altura | Bom |\n| **B** | Mantém **mais de 50%** da altura | Bom abaixo de cerca de 8 anos; pior acima |\n| **B/C** (fronteira) | Cerca de **50%**, ou pilar estreito (2 a 3 mm) ou mal ossificado | Intermediário |\n| **C** | Mantém **menos de 50%** da altura (perde mais da metade) | **Ruim** em qualquer idade |\n\n**Por que o pilar lateral importa.** O pilar lateral é a parte da epífise que **sustenta a carga** e mantém a cabeça dentro do acetábulo. Se ele colapsa, a cabeça **extrui** lateralmente, achata e perde a esfericidade. O resultado é uma cabeça deformada e incongruente, que leva à artrose.\n\n**A idade é o outro grande fator.** Quanto mais nova a criança, maior o potencial de remodelação. Os principais fatores prognósticos são:\n- **Idade de início**: abaixo de 6 anos, prognóstico melhor.\n- **Grupo do pilar lateral**.\n- Os **sinais de cabeça em risco** de Catterall: Gage, calcificação lateral, subluxação, horizontalização da fise, cisto metafisário.\n\n**O tratamento (estudo multicêntrico de Herring).**\n- Nas crianças **acima de 8 anos** (idade cronológica) nos grupos **B e B/C**, a **cirurgia de contenção** (osteotomia femoral varizante ou osteotomia de Salter) deu resultados melhores que o tratamento não cirúrgico.\n- Nos menores de 8 anos e no grupo A, o resultado foi bom sem cirurgia.\n- No grupo **C**, o resultado foi ruim com ou sem cirurgia.\n\n**O desfecho final é avaliado pela classificação de Stulberg**, que considera a esfericidade e a congruência da cabeça na maturidade.\n\n**O exame físico no Perthes.** A criança manca, muitas vezes sem dor ou com dor referida na coxa e no **joelho**. A sinovite e o espasmo muscular limitam sobretudo dois movimentos:\n- A **abdução**, pelo espasmo dos **adutores** e, mais tarde, pela cabeça aumentada e deformada que bate na borda do acetábulo (abdução em dobradiça, ou \"hinge abduction\").\n- A **rotação interna**, pela sinovite e pela deformidade da cabeça.\n\nA perda progressiva da **abdução** é um sinal de mau prognóstico, porque indica cabeça extrusa. Recuperar a abdução é o primeiro passo do tratamento, com fisioterapia, gesso de Petrie ou tenotomia dos adutores.",
-  "correta": "**Correta: C (abdução e rotação interna).** Na doença de Legg-Calvé-Perthes, a limitação do movimento do quadril é predominantemente da **abdução** e da **rotação interna**. A causa é a sinovite com espasmo dos adutores e, depois, a deformidade da cabeça, que pode chegar à abdução em dobradiça.",
+  "conceito": "O exame físico do quadril com PERTHES fala a linguagem da cápsula inflamada e da cabeça alargada: os movimentos que perdem primeiro são os que pressionam a cabeça contra o acetábulo.\n\n**O achado.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 14, Box 14.1 e p. 541 e 542) descreve **perda de abdução e de rotação interna**, com flexão e extensão menos afetadas. A abdução deve ser testada com o quadril em extensão e a pelve estabilizada, para não ser confundida com a abertura fácil do quadril fletido. O teste do rolamento (logroll) também é positivo, e a marcha antálgica pode vir com Trendelenburg e atrofia de glúteos, quadríceps e isquiotibiais.\n\n**O contexto.** Há sinovite na fase inicial e cabeça alargada na fragmentação, e o livro registra que os casos graves evoluem com contratura. Nos casos graves, a contratura se organiza em **adução e flexão**, e o quadril passa a rodar externamente ao fletir, justamente a posição em que fica \"escondido\".\n\n**O erro clássico.** Inverter o par e marcar adução e rotação externa, que descrevem a posição de repouso dos casos graves, não o que a criança perde na amplitude.\n\nO exame físico está na seção \"Sinais\", dentro de \"O quadro clínico\", no resumo.",
+  "correta": "**C) abdução e rotação interna.** São os movimentos limitados; flexão e extensão são menos afetadas.",
   "incorretas": {
-   "A": "A **rotação interna** está limitada, mas a **adução** costuma estar preservada. O espasmo dos adutores limita justamente a abdução.",
-   "B": "A **adução** e a **rotação externa** são, em geral, os movimentos **preservados** no Perthes.",
-   "D": "A abdução está limitada, mas a **rotação externa** é preservada. A rotação perdida é a interna."
+   "A": "**Adução e rotação interna** acerta a rotação e erra o plano: o que falta é abdução, e a adução costuma estar contraturada nos casos graves.",
+   "B": "**Adução e rotação externa** descreve a posição de repouso dos quadris graves, com contratura em adução e rotação externa ao fletir, e não o que se perde.",
+   "D": "**Abdução e rotação externa** acerta a abdução e erra a rotação; é a rotação interna que se perde, e a externa aparece até obrigatória na flexão."
   },
   "referencias": [
-   "https://posna.org/physician-education/study-guide/legg-calve-perthes-disease",
-   "https://pubmed.ncbi.nlm.nih.gov/15466719/",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Box 14.1 e p. 540 a 542",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0104": {
@@ -1912,18 +1916,19 @@
   "conferido": false
  },
  "pediatria-0115": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**A classificação do pilar lateral de Herring.** É feita na radiografia em AP, na **fase de fragmentação**. A epífise é dividida em três pilares: **lateral** (15% a 30% da largura), **central** (cerca de 50%) e **medial** (20% a 35%). Gradua-se a **altura do pilar lateral** em comparação com o lado normal:\n\n| Grupo | Pilar lateral |\n|---|---|\n| **A** | **Sem perda** de altura |\n| **B** | Mantém **mais de 50%** da altura (perda menor que 50%) |\n| **B/C** (borda) | Cerca de 50%, estreito (2 a 3 mm) ou pouco ossificado |\n| **C** | Mantém **menos de 50%** da altura (**colapso** maior que 50%) |\n\n**Por que o pilar lateral.** O pilar lateral **protege** a parte central da epífise da compressão pelo rebordo acetabular. Se ele colapsa, a cabeça se achata e **extrusa** lateralmente, e o acetábulo deixa de moldá-la.\n\n**O valor prognóstico.** É a classificação com **maior valor prognóstico** e melhor concordância entre observadores. Combinada com a **idade de início**, orienta o tratamento (estudo multicêntrico de Herring, 2004):\n- **Grupo A**: bom prognóstico em qualquer idade; observação.\n- **Grupo B e B/C com início após 8 anos**: a cirurgia de contenção (osteotomia femoral varizante ou de Salter) melhora o resultado.\n- **Grupo B com início antes de 8 anos**: bom resultado sem cirurgia.\n- **Grupo C**: mau prognóstico com ou sem cirurgia.\n\n**Os sinais de cabeça em risco** (Catterall) e a **extrusão** lateral somam informação prognóstica. O desfecho final é medido pela classificação de **Stulberg**.\n\n**O princípio da contenção.** O objetivo do tratamento do Perthes é preservar uma cabeça femoral **esférica** e **congruente**, para evitar a artrose. Durante a fragmentação, a cabeça amolecida pode se deformar. Se ela ficar **contida** no fundo do acetábulo, o acetábulo funciona como um **molde**, e a cabeça se refaz esférica na reossificação. Se ela **extrusar** lateralmente, a borda do acetábulo a deforma (achatamento, coxa magna, \"dobradiça\" em abdução).\n\n**Os meios de contenção.**\n| Método | Como contém |\n|---|---|\n| Manter a **mobilidade** (fisioterapia, gesso de Petrie em abdução) | Recupera a abdução e mantém a cabeça dentro |\n| **Osteotomia femoral varizante** | Direciona a cabeça para o fundo do acetábulo |\n| **Osteotomia de Salter** (inominada) | Redireciona o acetábulo para cobrir a cabeça |\n| Shelf (prateleira) e osteotomias combinadas | Aumentam a cobertura lateral |\n\n**Quem se beneficia.** Crianças com início **após 6 a 8 anos** e Herring **B** ou **B/C**; abaixo de 6 anos, a maioria evolui bem só com observação e manutenção da mobilidade; no Herring **C**, o prognóstico é ruim com qualquer tratamento.",
-  "correta": "**Correta: D (contenção da cabeça femoral no fundo do acetábulo).** O tratamento do Perthes busca manter a cabeça contida no acetábulo durante a fragmentação, para que ela se remodele esférica e congruente.",
+  "conceito": "Todo o arsenal de tratamento do PERTHES responde a uma pergunta: como deixar a cabeça frágil dentro do molde certo enquanto ela se refaz.\n\n**A ideia.** O Campbell's Operative Orthopaedics, 15ª ed. (p. 1188) afirma que o objetivo primário é manter ou obter a **contenção da cabeça femoral dentro do acetábulo**, para que ela se refaça de forma concêntrica, pelo que SALTER chamou de plasticidade biológica. No Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 563), HARRISON e MENON compararam a cabeça contida a uma geleia derramada num molde, que sai com a forma do molde. SALTER, em 1966, mostrou em porcos que a cabeça ficava redonda com flexão e abdução sob carga.\n\n**Meios, não fins.** Gesso de PETRIE, órtese em A, osteotomia femoral em varo, osteotomia inominada de SALTER e shelf servem para contenção; nenhum é o objetivo em si. O livro também admite os limites do conceito, já que só 63% da cabeça toca o acetábulo de cada vez e os ganhos são modestos.\n\n**Quando o objetivo muda.** Na fase residual, com a cabeça já deformada, o tratamento passa a ser reconstrutivo.\n\nA ideia da contenção está na seção \"Tratamento: o princípio da contenção\" do resumo.",
+  "correta": "**D) contenção da cabeça femoral no fundo do acetábulo.** É o objetivo primário: o acetábulo serve de molde para a remodelação.",
   "incorretas": {
-   "A": "A **dismetria** residual costuma ser pequena e não é o objetivo principal do tratamento.",
-   "B": "A **descompressão** da cabeça não é o princípio do tratamento do Perthes (é uma técnica da necrose do adulto).",
-   "C": "A correção do **ângulo cervicodiafisário** não é o objetivo; a osteotomia varizante é usada para **conter** a cabeça."
+   "A": "**Correção da dismetria residual** é problema de sequela, ligado à lesão da fise e ao fechamento precoce, e não o alvo de quem trata a doença ativa.",
+   "B": "**Descompressão da cabeça femoral** é técnica de necrose avascular do adulto; para PERTHES, os livros só falam de perfurações epifisárias e descompressão nos maiores de 11 anos, em situação imprevisível.",
+   "C": "**Correção do ângulo cervicodiafisário** descreve o efeito da osteotomia em varo, que é um dos meios de obter a contenção, e não a finalidade do tratamento."
   },
   "referencias": [
-   "https://posna.org/physician-education/study-guide/legg-calve-perthes-disease",
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 32"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 563",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), p. 1188",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0116": {
@@ -2132,18 +2137,20 @@
   "conferido": false
  },
  "pediatria-0135": {
-  "conceito": "Na **doença de Legg-Calvé-Perthes**, a necrose da cabeça femoral passa por fases (de Waldenström): inicial, **fragmentação**, reossificação e residual. O prognóstico depende de **quanto a cabeça deforma** até o fim.\n\n**O perfil típico**: meninos (4 a 5 para 1), entre 4 e 8 anos, quase sempre unilateral, com baixa estatura e idade óssea atrasada.\n\n**Os fatores de mau prognóstico** na lista clássica:\n\n**idade de início mais alta** (acima de 8 anos), o fator mais forte: sobra menos tempo para a cabeça remodelar;\n\n**sexo feminino**: as meninas amadurecem antes e têm menos tempo de remodelação;\n\n**doença de duração prolongada**;\n\n**baixa estatura** e **hipotrofia** do membro;\n\n**extensão do acometimento** (Catterall III e IV, Herring C) e os **sinais de cabeça em risco** (Gage, calcificação lateral, subluxação, fise horizontal, cisto metafisário).\n\n**O que pesa hoje**: idade de início, classificação do **pilar lateral de Herring** na fragmentação e extrusão da cabeça. No fim, a classificação de **Stulberg** (congruência e esfericidade) prevê a artrose.\n\n**Os fatores prognósticos em tabela.**\n| Fator | Efeito no prognóstico |\n|---|---|\n| **Idade de início** acima de 8 anos (o mais forte) | Pior |\n| Idade de início abaixo de 6 anos | **Melhor** |\n| **Sexo feminino** | Pior (maturação mais precoce) |\n| Duração prolongada da doença | Pior |\n| Herring C, Catterall III e IV, cabeça em risco | Pior |\n| Extrusão lateral e perda da mobilidade (abdução) | Pior |\n\n**Por que a idade é o fator mais forte.** O que salva a cabeça femoral é o **remodelamento**: quanto mais crescimento resta depois da fase de reossificação, mais tempo o acetábulo tem para moldar a cabeça de volta a uma forma esférica. A criança que adoece antes dos 6 anos tem anos de crescimento pela frente; a que adoece depois dos 8, não. As meninas, que amadurecem antes, perdem parte desse tempo, e por isso o sexo feminino aparece como fator de pior prognóstico.",
-  "correta": "**Correta: A (baixa estatura, duração prolongada da doença, gênero feminino e hipotrofia).** É a única alternativa que não inclui a idade de início baixa, que é fator de bom prognóstico.",
+  "conceito": "A questão pede uma combinação de fatores de mau prognóstico, e o que os livros trazem é um conjunto diferente do que o gabarito lista. Vale separar o que é sustentado do que não é.\n\n**O que os livros dizem.** A idade de início é o fator mais consistente do curso, e é a **idade mais alta** que piora: antes de 6 anos o quadro é leve, a partir de 9 é mais grave, e acima de 12 é o pior (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 543). A duração conta: quanto mais longa a doença, pior (o grupo A de HERRING curou em 37 meses, e o C em 67). A extensão do acometimento também pesa, e as formas finais da cabeça e a congruência predizem o quadril adulto (p. 579).\n\n**O que não é sustentado.** Idade de início baixa é protetora, não fator de mau prognóstico, pois dá tempo para remodelar. O sexo feminino não aparece como fator pior em nenhum dos dois livros; o Campbell's Operative Orthopaedics, 15ª ed. (p. 1187) diz que meninos e meninas com o mesmo pilar têm resultados semelhantes. Baixa estatura e hipotrofia são características da criança predisposta ou do exame, e não aparecem como fatores prognósticos.\n\n**Como resolver na prova.** A duração prolongada é o único elemento sustentado e aparece na opção do gabarito. As demais combinações trazem a idade baixa, que é o erro mais visível; mantenha o gabarito oficial e saiba o que os livros realmente dizem.\n\nOs fatores estão na seção \"Prognóstico\" do resumo.",
+  "correta": "**A) Baixa estatura, duração prolongada da doença e gênero feminino e hipotrofia.** É o gabarito oficial; entre os elementos, só a duração prolongada é sustentada pelos livros.",
   "incorretas": {
-   "B": "Duração longa e sexo feminino pioram, mas a idade de início baixa é fator de bom prognóstico.",
-   "C": "Sexo feminino e baixa estatura pioram, mas a idade de início baixa melhora o prognóstico.",
-   "D": "Baixa estatura e duração longa pioram, mas a idade de início baixa é fator favorável."
+   "B": "**Duração prolongada, gênero feminino e idade de início mais baixa** inclui a idade baixa, que protege, pois dá tempo para remodelar.",
+   "C": "**Gênero feminino, idade de início mais baixa e baixa estatura** reúne três itens sem apoio nos livros e deixa de fora a duração da doença, que é o que pesa.",
+   "D": "**Idade de início mais baixa, baixa estatura e duração prolongada da doença** coloca a idade baixa como fator ruim, quando o livro diz o contrário: quanto mais nova a criança, melhor."
   },
   "referencias": [
-   "https://pubmed.ncbi.nlm.nih.gov/15466719/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 528, 529, 543 e 579",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), p. 1187",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "alerta": "A redação usa fatores prognósticos históricos e inclui o termo hipotrofia de forma pouco específica. Na prática contemporânea, idade de início, classificação de Herring, extrusão e deformidade da cabeça têm sustentação mais robusta que alguns elementos da alternativa.",
-  "geradoEm": "2026-10-05",
+  "alerta": "Gabarito oficial mantido. Dos itens da alternativa A, só a duração prolongada é sustentada: nenhum dos dois livros dá sexo feminino, baixa estatura ou hipotrofia como fator de mau prognóstico (estatura é traço da criança predisposta, e o Campbell diz que meninos e meninas com o mesmo pilar evoluem igual).",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0136": {
@@ -2285,18 +2292,19 @@
   "conferido": false
  },
  "pediatria-0145": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**A classificação do pilar lateral de Herring.** É feita na radiografia em AP, na **fase de fragmentação**. A epífise é dividida em três pilares: **lateral** (15% a 30% da largura), **central** (cerca de 50%) e **medial** (20% a 35%). Gradua-se a **altura do pilar lateral** em comparação com o lado normal:\n\n| Grupo | Pilar lateral |\n|---|---|\n| **A** | **Sem perda** de altura |\n| **B** | Mantém **mais de 50%** da altura (perda menor que 50%) |\n| **B/C** (borda) | Cerca de 50%, estreito (2 a 3 mm) ou pouco ossificado |\n| **C** | Mantém **menos de 50%** da altura (**colapso** maior que 50%) |\n\n**Por que o pilar lateral.** O pilar lateral **protege** a parte central da epífise da compressão pelo rebordo acetabular. Se ele colapsa, a cabeça se achata e **extrusa** lateralmente, e o acetábulo deixa de moldá-la.\n\n**O valor prognóstico.** É a classificação com **maior valor prognóstico** e melhor concordância entre observadores. Combinada com a **idade de início**, orienta o tratamento (estudo multicêntrico de Herring, 2004):\n- **Grupo A**: bom prognóstico em qualquer idade; observação.\n- **Grupo B e B/C com início após 8 anos**: a cirurgia de contenção (osteotomia femoral varizante ou de Salter) melhora o resultado.\n- **Grupo B com início antes de 8 anos**: bom resultado sem cirurgia.\n- **Grupo C**: mau prognóstico com ou sem cirurgia.\n\n**Os sinais de cabeça em risco** (Catterall) e a **extrusão** lateral somam informação prognóstica. O desfecho final é medido pela classificação de **Stulberg**.",
-  "correta": "**Correta: C (grupo C, com mais de 50% de colapso do pilar lateral).** No grupo C de Herring, o pilar lateral perde mais da metade da altura original; é o grupo de pior prognóstico.",
+  "conceito": "A questão exige saber de cor o que cada letra de HERRING quer dizer. O segredo é que o grupo é definido pela altura do pilar lateral em relação ao que ela seria normalmente, e que a letra C é a única que cruza o limite de 50%.\n\n**As letras** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Tabela 14.3, p. 555 a 557; Campbell's Operative Orthopaedics, 15ª ed., Tabela 34.3, p. 1188). **A**: pilar lateral sem alteração de densidade e sem perda de altura. **B**: altura mantida em 50% ou mais (perda de até 50%), em geral com o colapso do centro já presente. **B/C**, acrescentada em 2004: pilar fino, de 2 a 3 mm, com altura acima de 50%, ou altura exatamente em 50%. **C**: altura menor que 50%, com pouca separação do pilar central e pilar lateral mais baixo que o central.\n\n**Por que o corte importa.** O pilar lateral íntegro protege a cabeça; quando mais da metade colapsa, a proteção se perde e o resultado é ruim em todos, independentemente da idade e do tratamento. A cicatrização acompanha: A em 37 meses, B em 50 e C em 67.\n\n**Armadilha.** Não existe grupo D, e quem o procura confunde a classificação com a de STULBERG.\n\nAs definições completas estão na tabela da seção \"O pilar lateral de HERRING\" do resumo.",
+  "correta": "**C) C, apresenta mais de 50% de colapso do pilar lateral.** É o grupo que perde mais da metade da altura, com mau resultado em todas as idades.",
   "incorretas": {
-   "A": "No grupo **A** não há **nenhuma** perda de altura do pilar lateral.",
-   "B": "No grupo **B** o pilar mantém **mais de 50%** da altura; ou seja, a perda é **menor** que 50%, e não maior.",
-   "D": "Não existe grupo **D** na classificação de Herring, e ela avalia apenas o pilar **lateral**."
+   "A": "**A, perda de altura de menos de 50%** atribui ao grupo A uma perda que ele não tem: o A não muda a altura nem a densidade do pilar lateral.",
+   "B": "**B, perda de mais de 50%** inverte o limite: o grupo B mantém 50% ou mais da altura, e a perda além da metade é o grupo C.",
+   "D": "**D, perda dos pilares lateral e medial** descreve um grupo que a classificação de HERRING não tem; as letras vão de A a C, com o intermediário B/C."
   },
   "referencias": [
-   "https://pubmed.ncbi.nlm.nih.gov/1552014/",
-   "https://pubmed.ncbi.nlm.nih.gov/23604650/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Tabela 14.3, p. 554 a 557",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), Tabela 34.3, p. 1188",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0146": {
@@ -3011,18 +3019,19 @@
   "conferido": false
  },
  "pediatria-0192": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**Quando suspeitar que não é Perthes.** O Perthes bilateral ocorre em 10% a 15%, mas é **assimétrico** e **não simultâneo**: os dois lados estão em fases diferentes. Acometimento **bilateral e simétrico**, ou em crianças muito pequenas, sugere outro diagnóstico:\n| Diagnóstico | Pista |\n|---|---|\n| **Displasia de Meyer** | Abaixo de **4 anos**, **assintomática** ou pouco sintomática; epífises **granulares** bilaterais |\n| Displasia epifisária múltipla | Simétrica; outras epífises (joelhos, tornozelos) acometidas; baixa estatura |\n| Displasia espondiloepifisária | Coluna acometida (platispondilia); baixa estatura |\n| **Hipotireoidismo** | Epífises fragmentadas, idade óssea muito atrasada |\n| Anemia falciforme, Gaucher, corticoide | Necrose secundária, com história sugestiva |\n\n**A displasia de Meyer (displasia epifisária femoral).** É uma alteração do **desenvolvimento** da ossificação da cabeça femoral, e não uma necrose. Aparece em crianças **pequenas** (geralmente de **2 a 4 anos**), mais em meninos, e em cerca de metade dos casos é **bilateral**. O núcleo de ossificação aparece **tarde** e com aspecto **granular** (múltiplos pequenos núcleos), sem a sequência de necrose e fragmentação do Perthes. A criança costuma ser **assintomática** (achado de exame) ou ter claudicação leve. A evolução é **benigna**: o núcleo coalesce e a cabeça fica normal ou quase normal, sem necessidade de tratamento. Distingui-la do Perthes evita tratamentos desnecessários.",
-  "correta": "**Correta: B (a displasia de Meyer).** A displasia de Meyer é uma alteração benigna da ossificação da cabeça femoral em crianças pequenas, muitas vezes bilateral, que imita o Perthes e evolui para cabeça normal sem tratamento.",
+  "conceito": "Quando uma criança pequena aparece com os dois quadris alterados, o raciocínio é de idade e de padrão: a mesma epífise pode estar atrasada e irregular sem que haja a necrose de PERTHES.\n\n**A displasia de MEYER.** Descrita por MEYER em 1964, é ossificação **atrasada e irregular** da epífise femoral, com várias áreas granulares, **sem deformação** ao longo do tempo e geralmente assintomática (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 540 e 548). Pode ser uni ou bilateral e ossifica aos poucos, sem passar pelas fases de densidade aumentada, fragmentação e cura. Os autores a veem como variante leve de PERTHES em idade menor. O Campbell's Operative Orthopaedics, 15ª ed. (p. 1186) acrescenta que é mais comum em **meninos com menos de 4 anos** e mais provavelmente bilateral, com núcleos atrasados ou menores e epífise rachada; faltam a condensação, a fratura subcondral, a fragmentação e a subluxação.\n\n**Por que os outros não entram.** O diferencial do PERTHES bilateral em idade maior é a displasia epifisária múltipla (simultânea, simétrica, sem metáfise). Artrogripose, síndrome unha-patela e raquitismo hipofosfatêmico não são descritos como imitadores da necrose epifisária proximal do fêmur.\n\nO diferencial está na seção \"Diagnóstico diferencial e displasia de MEYER\" do resumo.",
+  "correta": "**B) a displasia de MEYER.** Criança menor de 4 anos, frequentemente bilateral, com ossificação irregular sem fragmentação nem deformação.",
   "incorretas": {
-   "A": "A **artrogripose** causa contraturas congênitas e luxações, e não alterações da epífise que imitem o Perthes.",
-   "C": "A **síndrome unha-patela** (alteração do LMX1B) cursa com unhas displásicas, patela ausente e cornos ilíacos, e não com imagem de Perthes.",
-   "D": "O **raquitismo hipofosfatêmico** altera as **fises** (alargamento e irregularidade metafisária) e causa deformidades em varo, e não fragmentação epifisária."
+   "A": "**A artrogripose** é rigidez articular congênita múltipla e os livros não a apresentam como diagnóstico diferencial da necrose epifisária do fêmur.",
+   "C": "**A síndrome unha-patela** é doença das unhas e da patela, e o capítulo de PERTHES não a lista entre os diferenciais da epífise femoral.",
+   "D": "**O raquitismo hipofosfatêmico** é alteração metabólica de fises alargadas e não imita a ossificação irregular da epífise; o capítulo traz, entre os diferenciais, outras displasias e causas de necrose."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doença de Legg-Calvé-Perthes.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de doença de Legg-Calvé-Perthes."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 540, 543 e 548",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), p. 1186",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0193": {
@@ -3220,19 +3229,21 @@
   "conferido": false
  },
  "pediatria-0205": {
-  "conceito": "**A discrepância de comprimento dos membros na criança.** Um membro pode ficar diferente do outro por **encurtamento** (o membro acometido cresce menos) ou por **hipercrescimento** (cresce mais). A causa costuma estar na **fise**: o que a lesa ou a desliga encurta; o que aumenta o fluxo sanguíneo para ela estimula o crescimento.\n\n**As causas pelo mecanismo.**\n| Mecanismo | Exemplos |\n|---|---|\n| **Encurtamento** (congênito) | Hemimelia fibular, deficiência femoral, hemiatrofia, pé torto |\n| **Encurtamento** (adquirido) | Lesão fisária (fratura, infecção, tumor), **Perthes**, DDQ com necrose, epifisiólise, paralisia (pólio, paralisia cerebral), radiação |\n| **Hipercrescimento** | **Klippel-Trénaunay**, **hemangiomas** e malformações vasculares, **Beckwith-Wiedemann**, Proteus, neurofibromatose, fratura diafisária do fêmur, **inflamação** e infecção **metafisária** crônica (hiperemia), artrite idiopática juvenil |\n\n**O Perthes e o encurtamento.** Na doença de Legg-Calvé-Perthes, a necrose e o colapso da epífise **achatam** a cabeça femoral (coxa plana), e a lesão da fise pode encurtar o **colo** (coxa breva), com o trocânter alto. O membro fica mais curto, em geral de **1 a 2 cm**; a discrepância raramente precisa de tratamento.\n\n**Por que as outras causas alongam.** O **aumento do fluxo sanguíneo** para a fise estimula o crescimento:\n- nas **malformações vasculares** (Klippel-Trénaunay, hemangiomas), o membro tem mais vasos e cresce mais;\n- no **abscesso de Brodie metafisário** e nas infecções crônicas, a hiperemia inflamatória perto da fise estimula o crescimento, desde que a fise não seja destruída;\n- na **síndrome de Beckwith-Wiedemann** (macroglossia, onfalocele, hemi-hipertrofia), há **hemi-hipertrofia**, com risco de tumor de Wilms e hepatoblastoma (exige rastreamento com ultrassonografia abdominal).\n\n**A avaliação.** Escanometria (ou telerradiografia) e idade óssea; a previsão da discrepância final pelo método de Moseley, de Paley (multiplicador) ou de Green-Anderson orienta a epifisiodese ou o alongamento.",
-  "correta": "**Correta: D (doença de Legg-Calvé-Perthes).** A necrose e o colapso da epífise, com possível lesão da fise, achatam a cabeça e encurtam o colo, deixando o membro mais curto.",
+  "conceito": "A pergunta vira uma lista de causas de encurtamento, e a única entre as cinco que lesa a fise ou a altura do fêmur proximal é PERTHES. As outras quatro tendem a alongar ou não encurtam por esse mecanismo.\n\n**O mecanismo em PERTHES.** O encurtamento não é achado inicial: LEGG descreveu encurtamento mínimo ou ausente no começo da doença (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 527). Ele surge depois, pela soma do achatamento da cabeça e da **lesão da fise proximal**, que pode fechar cedo, encurtar o colo e deixar o trocânter alto (p. 548). O Campbell's Operative Orthopaedics, 15ª ed. (p. 1189) lembra que a osteotomia inominada alonga um membro \"possivelmente encurtado pelo processo avascular\", enquanto a osteotomia em varo encurta mais.\n\n**As outras opções.** KLIPPEL-TRÉNAUNAY, BECKWITH-WIEDEMANN, abscesso de BRODIE e hemangioma não são tratados nos livros do tema como causas de encurtamento; o que os dois livros sustentam é o mecanismo do PERTHES, de lesão da fise e achatamento da cabeça. As outras quatro ficam, portanto, sem apoio nas fontes desta questão.\n\nPERTHES como causa de encurtamento está na seção \"Encurtamento: quando entra na história\" do resumo.",
+  "correta": "**D) Doença de Legg-Perthes-Calvé.** A lesão da fise e o achatamento da cabeça encurtam o membro como sequela.",
   "incorretas": {
-   "A": "A síndrome de **Klippel-Trénaunay** (malformação capilar, venosa e linfática) causa **hipercrescimento** do membro acometido.",
-   "B": "A síndrome de **Beckwith-Wiedemann** cursa com **hemi-hipertrofia**: o membro cresce mais.",
-   "C": "O **abscesso de Brodie metafisário** gera hiperemia perto da fise e tende a **estimular** o crescimento, se não destruir a fise.",
-   "E": "O **hemangioma** aumenta o fluxo sanguíneo do membro e causa **hipercrescimento**."
+   "A": "**KLIPPEL-TRÉNAUNAY** não é descrita nos livros do tema como causa de encurtamento; falta apoio nas fontes.",
+   "B": "**Síndrome de BECKWITH-WIEDEMANN** não aparece nos livros do tema como causa de encurtamento.",
+   "C": "**Abscesso de BRODIE metafisário** não é descrito pelos livros do tema como causa de encurtamento; o encurtamento do capítulo é o da lesão fisária do PERTHES.",
+   "E": "**Hemangioma** não é listado pelos livros do tema como causa de encurtamento."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de discrepância de comprimento dos membros.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de discrepância de comprimento dos membros."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 527 e 548",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), p. 1189",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "Os dois livros do tema só sustentam o PERTHES (lesão da fise e sequela). Para as demais opções, eles não trazem o dado; a refutação acima diz isso. Gabarito oficial mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0206": {
@@ -3911,18 +3922,20 @@
   "conferido": false
  },
  "pediatria-0287": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**As fases da doença e a histologia.** A evolução da doença segue uma sequência previsível, que tem correspondência clínica, radiográfica e histológica:\n| Fase | Achados |\n|---|---|\n| **Necrose** (inicial) | Morte das células ósseas: **lacunas vazias** (ausência de osteócitos) ou osteócitos com **núcleo picnótico**; medula necrótica. Na radiografia: epífise menor, mais **densa** (esclerose), alargamento do espaço articular |\n| **Fragmentação** | Revascularização com **reabsorção** do osso morto por osteoclastos: a epífise se divide em fragmentos; colapso; sinal do crescente (fratura subcondral) |\n| **Reossificação** (reparação) | Osso novo preenche a epífise, de forma organizada |\n| **Residual** (sequela) | Forma final da cabeça, que pode ser esférica ou achatada (Stulberg) |\n\n**A necrose em detalhe.** Os osteócitos ficam em pequenas cavidades da matriz óssea (lacunas). Quando o suprimento sanguíneo é interrompido, eles morrem: primeiro o **núcleo se condensa** (picnose), depois a célula desaparece e a lacuna fica **vazia**. A matriz óssea, porém, não muda de forma imediatamente; por isso a radiografia demora para mostrar alterações, e a epífise parece mais **densa** (o osso morto não é reabsorvido e o osso vivo ao redor fica osteopênico). A cartilagem articular continua viva, nutrida pelo líquido sinovial, e até **espessa**.\n\n**A ressonância** mostra a necrose antes da radiografia, e a **cintilografia** mostra a falta de captação na epífise.\n\n**A ordem das fases (Waldenström)** ajuda a resolver questões: necrose (inicial), fragmentação, reossificação e residual.\n\n**A ressonância no Perthes.** Detecta a doença **antes** da radiografia, na fase inicial: a epífise mostra **baixo sinal** em T1 (medula necrótica), com perda do sinal normal de gordura, às vezes com sinal heterogêneo e **achatamento**; há **derrame articular** e sinovite. Com contraste (perfusão), mostra as áreas **sem fluxo**, o que ajuda a estimar a extensão e o prognóstico precoce.\n\n**A imagem.** O corte coronal mostra o quadril **direito** com a epífise femoral de sinal alterado (escura, sem o sinal de gordura normal) e achatada, com derrame, enquanto o lado esquerdo tem epífise de sinal normal. Somado ao quadro (menina de 8 anos com dor e claudicação há dois meses), é compatível com **Legg-Calvé-Perthes**.\n\n**Os diferenciais da alternativa.**\n| Diagnóstico | Por que não |\n|---|---|\n| Displasia epifisária múltipla | **Bilateral e simétrica**, com outras epífises acometidas e baixa estatura |\n| Epifisiólise | Adolescente; deslizamento na fise, sem necrose da epífise |\n| Osteomielite | Febre, marcadores elevados, edema na **metáfise** e partes moles |",
-  "correta": "**Correta: A (Legg-Calvé-Perthes).** A ressonância mostra a epífise femoral direita com sinal alterado e achatada, unilateral, em uma criança de 8 anos com dor e claudicação há dois meses: quadro compatível com Perthes.",
+  "conceito": "Menina de 8 anos, dor e claudicação do quadril direito há dois meses e uma imagem de ressonância: o quadro pede PERTHES, e a imagem é para ser lida contra as alternativas.\n\n**A imagem.** Ressonância coronal da pelve com os dois quadris. Do lado direito da paciente (esquerdo da figura), a cabeça femoral é pequena, de contorno irregular e sinal heterogêneo, bem diferente do quadril contralateral, que mantém a epífise arredondada com sinal mais uniforme; há ainda alteração junto à cartilagem e ao colo. É um quadril unilateral com epífise alterada e metáfise envolvida, o padrão de necrose da epífise.\n\n**A idade e o sexo.** A doença é menos frequente em meninas, mas uma menina de 8 anos está dentro da faixa típica (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 527, de 4 a 8 anos, com ocorrência de 18 meses a 14 anos). A evolução de dois meses, com piora recente, fecha com a fase em que a cabeça enfraquece.\n\n**Os outros diagnósticos.** A displasia epifisária múltipla é bilateral, simultânea e simétrica, com baixa estatura. Epifisiólise e osteomielite entram no diferencial da menina de 8 anos que o resumo discute, e é a imagem, com a epífise densa e irregular e a metáfise envolvida, que favorece PERTHES.\n\nO quadro está na seção \"A menina de 8 anos\" do resumo.",
+  "correta": "**A) LEGG-CALVÉ-PERTHES.** Epífise pequena e irregular em um só quadril, em criança de 8 anos com claudicação e dor de curso arrastado.",
   "incorretas": {
-   "B": "A **displasia epifisária múltipla** acomete as epífises de forma **bilateral e simétrica**, com outras articulações envolvidas.",
-   "C": "A **epifisiólise** é do adolescente e mostra deslizamento através da fise, e não necrose da epífise.",
-   "D": "A **osteomielite** cursa com febre e marcadores elevados, e acomete a **metáfise**, com edema de medula e partes moles."
+   "B": "**Displasia epifisária múltipla** é simétrica e simultânea, sem alteração metafisária, em criança baixa; a imagem mostra um quadril doente e o outro preservado.",
+   "C": "**Epifisiólise femoral proximal** é o escorregamento da epífise sobre o colo; a figura mostra a própria epífise pequena e irregular, e não um deslocamento dela sobre o colo.",
+   "D": "**Osteomielite de fêmur proximal** é infecção; o enunciado não traz sinais infecciosos e a evolução de dois meses com claudicação e epífise alterada favorece necrose."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doença de Legg-Calvé-Perthes.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de doença de Legg-Calvé-Perthes."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 527 e 561 a 563",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), p. 1186 e 1187",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "A figura é de baixa resolução e a leitura é a do padrão geral (cabeça direita pequena e irregular, esquerda preservada). A epifisiólise e a osteomielite são excluídas pelo contexto clínico, não por critérios que os livros detalhem para a comparação. Gabarito oficial mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0288": {
@@ -3972,18 +3985,18 @@
   "conferido": false
  },
  "pediatria-0291": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**As fases da doença e a histologia.** A evolução da doença segue uma sequência previsível, que tem correspondência clínica, radiográfica e histológica:\n| Fase | Achados |\n|---|---|\n| **Necrose** (inicial) | Morte das células ósseas: **lacunas vazias** (ausência de osteócitos) ou osteócitos com **núcleo picnótico**; medula necrótica. Na radiografia: epífise menor, mais **densa** (esclerose), alargamento do espaço articular |\n| **Fragmentação** | Revascularização com **reabsorção** do osso morto por osteoclastos: a epífise se divide em fragmentos; colapso; sinal do crescente (fratura subcondral) |\n| **Reossificação** (reparação) | Osso novo preenche a epífise, de forma organizada |\n| **Residual** (sequela) | Forma final da cabeça, que pode ser esférica ou achatada (Stulberg) |\n\n**A necrose em detalhe.** Os osteócitos ficam em pequenas cavidades da matriz óssea (lacunas). Quando o suprimento sanguíneo é interrompido, eles morrem: primeiro o **núcleo se condensa** (picnose), depois a célula desaparece e a lacuna fica **vazia**. A matriz óssea, porém, não muda de forma imediatamente; por isso a radiografia demora para mostrar alterações, e a epífise parece mais **densa** (o osso morto não é reabsorvido e o osso vivo ao redor fica osteopênico). A cartilagem articular continua viva, nutrida pelo líquido sinovial, e até **espessa**.\n\n**A ressonância** mostra a necrose antes da radiografia, e a **cintilografia** mostra a falta de captação na epífise.\n\n**A ordem das fases (Waldenström)** ajuda a resolver questões: necrose (inicial), fragmentação, reossificação e residual.\n\n**O sinal do crescente.** É uma **linha radiotransparente** em forma de meia-lua logo abaixo da superfície da cabeça femoral. Representa a **fratura subcondral** do osso necrótico (descrita por **Caffey**). Aparece no fim da **fase inicial** (necrose), antes da fragmentação, e é mais visível no **perfil** (Lauenstein). É a base da classificação de **Salter-Thompson**, que prevê cedo a extensão da doença: no grupo **A**, a fratura atinge **menos da metade** da cabeça; no grupo **B**, **mais da metade**.",
-  "correta": "**Correta: A (necrose).** O sinal do crescente é a fratura subcondral do osso necrótico, que aparece na fase inicial, de necrose, antes da fragmentação.",
+  "conceito": "O sinal do crescente é o nome popular de uma linha de fratura subcondral, e saber a que fase ele pertence resolve a questão e ajuda na classificação de SALTER e THOMPSON.\n\n**O que é.** O osso necrótico logo abaixo da cartilagem articular perde a sustentação e se fratura: forma-se uma linha radiotransparente curva, paralela à superfície, o **sinal de WALDENSTRÖM** ou do crescente (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 542 e 544). Aparece em cerca de um terço dos casos (30%), com melhor visibilidade no **perfil de rã**.\n\n**Em que fase.** Na Tabela 14.1 ela está na fase inicial, de densidade aumentada, também chamada de **necrose**: núcleo menor, mais denso, crescente, achatamento leve e lucências metafisárias. A fragmentação só começa quando surgem as lucências de reabsorção e as fissuras verticais do núcleo.\n\n**A armadilha.** Fratura lembra fragmentos, e a tentação é marcar fragmentação. Mas o crescente é fratura do osso morto sob a cartilagem, e a fragmentação é a reabsorção desse osso pelos osteoclastos. A reossificação e a remodelação vêm depois, com osso novo.\n\nO sinal está na seção \"As fases de WALDENSTRÖM\" do resumo.",
+  "correta": "**A) necrose.** O crescente é a fratura subcondral do osso morto, achado da fase inicial de densidade aumentada.",
   "incorretas": {
-   "B": "Na fragmentação a epífise já colapsou e se dividiu em fragmentos; é a fase da classificação de Herring.",
-   "C": "Na reossificação aparece osso novo; a fratura subcondral é um evento anterior.",
-   "D": "A remodelação é a fase residual, avaliada por Stulberg na maturidade."
+   "B": "**Fragmentação** é a fase da reabsorção do osso necrótico, com lucências e pilares; o crescente já ficou para trás.",
+   "C": "**Reossificação** é a fase do osso novo da periferia para o centro, e a linha de fratura subcondral não é o achado dela.",
+   "D": "**Remodelação** é a fase tardia, em que a forma segue mudando até a maturidade, sem relação com o sinal precoce do crescente."
   },
   "referencias": [
-   "Legg-Calve-Perthes Disease. StatPearls. NCBI Bookshelf NBK513230.",
-   "Legg-Calvé-Perthes disease: classifications and prognostic factors. PMCID: PMC5505718."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Tabela 14.1, p. 540, 542 e 544",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0292": {
@@ -4301,18 +4314,19 @@
   "conferido": false
  },
  "pediatria-0322": {
-  "conceito": "**A doença de Legg-Calvé-Perthes e a classificação de Catterall.** Perthes é a necrose avascular idiopática da cabeça femoral em crescimento, típica de meninos entre **4 e 8 anos**. Catterall (1971) classificou a doença pela **extensão do acometimento** da epífise, vista nas radiografias em AP e perfil durante a fase de fragmentação:\n\n| Grupo | Extensão do acometimento | Achados |\n|---|---|---|\n| **I** | Apenas a parte **anterior** da epífise | Sem sequestro nem colapso; metáfise preservada |\n| **II** | Até **metade** anterior | Sequestro central, com colunas medial e lateral preservadas |\n| **III** | Cerca de **três quartos** | Só uma pequena parte posterior preservada; sequestro grande e alterações metafisárias |\n| **IV** | **Toda** a cabeça | Colapso total, achatamento e alterações metafisárias difusas |\n\n**Os sinais de \"cabeça em risco\".** Catterall descreveu ainda sinais de mau prognóstico: **sinal de Gage** (rarefação em V na parte lateral da epífise), **calcificação lateral** à epífise, **subluxação lateral**, **horizontalização da fise** e **alterações metafisárias** difusas.\n\n**As fases da doença (Waldenström).** Inicial (esclerose e epífise menor), **fragmentação** (a epífise se divide em pedaços com áreas radiotransparentes), **reossificação** (osso novo preenche a epífise) e residual (forma final). Para responder a pergunta é preciso juntar as duas informações: **quanto** da cabeça está acometido e **em que fase** está.\n\n**A limitação.** A classificação de Catterall tem **baixa concordância** entre observadores e só pode ser aplicada após a fragmentação. Por isso, hoje se usa mais a de **Herring** (pilar lateral), que tem maior valor prognóstico.\n\n**As classificações pelo momento da doença.**\n| Classificação | Quando é usada | O que mede |\n|---|---|---|\n| **Salter-Thompson** | Fase inicial | Extensão da **fratura subcondral** (sinal do crescente): menos (A) ou mais (B) da metade da cabeça |\n| **Catterall** e **Herring** | Fase de fragmentação | Extensão do acometimento (Catterall) ou altura do **pilar lateral** (Herring, grupos A, B, B/C e C) |\n| **Stulberg** | **Desfecho**, na maturidade | **Forma** da cabeça e **congruência** com o acetábulo |\n\n**A classificação de Stulberg.** Avalia o quadril **no fim do crescimento** e prediz o risco de **artrose** no adulto:\n- **I e II**: cabeça **esférica** (congruência esférica), com bom prognóstico;\n- **III e IV**: cabeça **não esférica** (ovoide ou achatada), mas congruente com o acetábulo, que se moldou a ela (**congruência asférica**): artrose na meia-idade;\n- **V**: cabeça achatada em um acetábulo normal (**incongruência asférica**): artrose precoce.\n\nA **idade de início** é o principal fator prognóstico: crianças com menos de **6 anos** têm melhor evolução.",
-  "correta": "**Correta: D (Stulberg).** A classificação de Stulberg avalia a forma da cabeça femoral e sua congruência com o acetábulo na maturidade esquelética; é a classificação do desfecho e prediz o risco de artrose.",
+  "conceito": "Existem duas famílias de classificação em PERTHES, e a banca gosta de trocar uma pela outra. Quem classifica o resultado na maturidade é uma só, e as três restantes servem para a fase ativa.\n\n**Gravidade, durante a doença.** CATTERALL (quanta epífise), SALTER-THOMPSON (extensão da fratura subcondral) e HERRING (altura do pilar lateral na fragmentação) tentam prever o curso para decidir a conduta (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 554).\n\n**Resultado, na maturidade.** Duas classificações descrevem o quadril curado: MOSE, com círculos concêntricos (até 1 mm de desvio é bom, até 2 mm regular, mais de 2 mm mau), e **STULBERG**, em cinco classes pela forma da cabeça e pelo encaixe no acetábulo (p. 557). Como a cabeça muda durante todo o crescimento, usa-se no esqueleto maduro. Sua força está na relação com a artrose: I e II sem artrose, III com 58%, IV com 75% e V com 78% em cerca de 40 anos (p. 560).\n\n**Memória.** STULBERG olha para o fim, HERRING olha para o meio, CATTERALL e SALTER-THOMPSON olham para o começo e o meio.\n\nAs duas famílias estão nas seções \"Classificações de gravidade\" e \"Classificações de resultado: STULBERG e MOSE\" do resumo.",
+  "correta": "**D) STULBERG.** Aplicada na maturidade esquelética, relaciona a forma final da cabeça com o risco de artrose.",
   "incorretas": {
-   "A": "A de **Catterall** gradua a extensão do acometimento da epífise durante a fase de fragmentação, e não o desfecho.",
-   "B": "A de **Herring** (pilar lateral) é feita na fase de fragmentação e é a de **maior valor prognóstico**, mas não descreve o desfecho.",
-   "C": "A de **Salter-Thompson** mede a fratura subcondral (sinal do crescente) na **fase inicial**."
+   "A": "**CATTERALL** é de gravidade, feita durante a fragmentação pela extensão da epífise acometida; não descreve o desfecho.",
+   "B": "**HERRING** classifica o pilar lateral no meio da fragmentação, na radiografia AP; é uma classificação de gravidade.",
+   "C": "**SALTER-THOMPSON** mede a extensão da fratura subcondral, achado da fase inicial; serve para prever a extensão da necrose, não o desfecho."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doença de Legg-Calvé-Perthes.",
-   "Stulberg SD, Cooperman DR, Wallensten R. The natural history of Legg-Calvé-Perthes disease. J Bone Joint Surg Am. 1981;63(7):1095-108."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 554 e 557 a 560",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), Tabela 34.2, p. 1187",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0323": {
@@ -4435,19 +4449,19 @@
   "conferido": false
  },
  "pediatria-0331": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a **necrose avascular idiopática** da epífise femoral proximal na criança. É mais comum em meninos de **4 a 8 anos**, geralmente baixos e com idade óssea atrasada. A doença segue os **estágios de Waldenström**:\n1. **Necrose** (inicial): epífise densa e menor.\n2. **Fragmentação**: o osso morto é reabsorvido e a epífise se fragmenta.\n3. **Reossificação**: osso novo preenche a epífise.\n4. **Remodelação** (residual): forma final da cabeça.\n\n**A classificação do pilar lateral de Herring.** É feita no **estágio de fragmentação**, no **AP** da bacia. A epífise é dividida em três **pilares**: lateral, central e medial. O **pilar lateral** corresponde aos **15 a 30% laterais** da epífise. A classificação compara a **altura** do pilar lateral doente com a do pilar lateral normal.\n\n| Grupo | Altura do pilar lateral | Prognóstico |\n|---|---|---|\n| **A** | **Sem perda** de altura | Bom |\n| **B** | Mantém **mais de 50%** da altura | Bom abaixo de cerca de 8 anos; pior acima |\n| **B/C** (fronteira) | Cerca de **50%**, ou pilar estreito (2 a 3 mm) ou mal ossificado | Intermediário |\n| **C** | Mantém **menos de 50%** da altura (perde mais da metade) | **Ruim** em qualquer idade |\n\n**Por que o pilar lateral importa.** O pilar lateral é a parte da epífise que **sustenta a carga** e mantém a cabeça dentro do acetábulo. Se ele colapsa, a cabeça **extrui** lateralmente, achata e perde a esfericidade. O resultado é uma cabeça deformada e incongruente, que leva à artrose.\n\n**A idade é o outro grande fator.** Quanto mais nova a criança, maior o potencial de remodelação. Os principais fatores prognósticos são:\n- **Idade de início**: abaixo de 6 anos, prognóstico melhor.\n- **Grupo do pilar lateral**.\n- Os **sinais de cabeça em risco** de Catterall: Gage, calcificação lateral, subluxação, horizontalização da fise, cisto metafisário.\n\n**O tratamento (estudo multicêntrico de Herring).**\n- Nas crianças **acima de 8 anos** (idade cronológica) nos grupos **B e B/C**, a **cirurgia de contenção** (osteotomia femoral varizante ou osteotomia de Salter) deu resultados melhores que o tratamento não cirúrgico.\n- Nos menores de 8 anos e no grupo A, o resultado foi bom sem cirurgia.\n- No grupo **C**, o resultado foi ruim com ou sem cirurgia.\n\n**O desfecho final é avaliado pela classificação de Stulberg**, que considera a esfericidade e a congruência da cabeça na maturidade.",
-  "correta": "**Correta: D (C).** Na classificação do pilar lateral de Herring, o grupo **C** é aquele em que o pilar lateral perde **mais de 50%** da altura, ou seja, mantém menos da metade. Tem prognóstico ruim em qualquer idade.",
+  "conceito": "Aqui o enunciado já entrega o critério (mais de 50% de perda do pilar lateral) e pede o grupo. Para não errar, convém ver o que cada grupo promete em termos de prognóstico.\n\n**O que o corte de 50% significa.** O pilar lateral é o escudo da cabeça avascular: enquanto mantém altura, divide a carga com o centro. No grupo **C**, a altura é menor que 50%, com pouca separação do pilar central e o lateral mais baixo que o central (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Tabela 14.3, p. 555 a 557). Nesse ponto a proteção acabou: o Campbell's Operative Orthopaedics, 15ª ed. (p. 1188) diz que o C tem os piores resultados, com cabeça quase sempre asférica, seja qual for a idade ou o tratamento.\n\n**Os vizinhos.** O **B** guarda 50% ou mais da altura. O **B/C**, criado em 2004, é o limítrofe: pilar estreito, de 2 a 3 mm, com altura acima de 50%, ou exatamente em 50%. O **A** não perde altura nem densidade.\n\n**Efeito prático.** Para o grupo C, o livro registra que a cirurgia não trouxe benefício comprovado em crianças acima de 8 anos, e o objetivo vira evitar o STULBERG IV (T14, p. 571 a 573).\n\nAs regras estão na seção \"O pilar lateral de HERRING\" do resumo.",
+  "correta": "**D) C.** Altura do pilar lateral menor que 50%, o grupo de pior prognóstico.",
   "incorretas": {
-   "A": "No grupo **A**, o pilar lateral **não perde altura**. Tem bom prognóstico.",
-   "B": "No grupo **B**, o pilar lateral mantém **mais de 50%** da altura, ou seja, perde menos da metade.",
-   "C": "O grupo **B/C** é a fronteira: pilar com cerca de 50% da altura, estreito (2 a 3 mm) ou mal ossificado. A perda de **mais** da metade é o grupo C."
+   "A": "**A** é o pilar lateral sem alteração de densidade nem perda de altura, com resultado uniformemente bom.",
+   "B": "**B** mantém 50% ou mais da altura do pilar; a perda além da metade já é grupo C.",
+   "C": "**B/C** é o grupo de transição, com pilar fino ou altura exatamente em 50%, e não a perda de mais de metade."
   },
   "referencias": [
-   "Herring JA, Neustadt JB, Williams JJ, Early JS, Browne RH. The lateral pillar classification of Legg-Calvé-Perthes disease. J Pediatr Orthop. 1992;12:143-150. PMID: 1552014.",
-   "Classifications in Brief: The Herring Lateral Pillar Classification for Legg-Calvé-Perthes Disease. PMCID: PMC3676599.",
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Tabela 14.3, p. 554 a 557 e 571 a 573",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), Tabela 34.3, p. 1188",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0332": {
@@ -4828,18 +4842,19 @@
   "conferido": false
  },
  "pediatria-0357": {
-  "conceito": "**A doença de Legg-Calvé-Perthes e a classificação de Catterall.** Perthes é a necrose avascular idiopática da cabeça femoral em crescimento, típica de meninos entre **4 e 8 anos**. Catterall (1971) classificou a doença pela **extensão do acometimento** da epífise, vista nas radiografias em AP e perfil durante a fase de fragmentação:\n\n| Grupo | Extensão do acometimento | Achados |\n|---|---|---|\n| **I** | Apenas a parte **anterior** da epífise | Sem sequestro nem colapso; metáfise preservada |\n| **II** | Até **metade** anterior | Sequestro central, com colunas medial e lateral preservadas |\n| **III** | Cerca de **três quartos** | Só uma pequena parte posterior preservada; sequestro grande e alterações metafisárias |\n| **IV** | **Toda** a cabeça | Colapso total, achatamento e alterações metafisárias difusas |\n\n**Os sinais de \"cabeça em risco\".** Catterall descreveu ainda sinais de mau prognóstico: **sinal de Gage** (rarefação em V na parte lateral da epífise), **calcificação lateral** à epífise, **subluxação lateral**, **horizontalização da fise** e **alterações metafisárias** difusas.\n\n**As fases da doença (Waldenström).** Inicial (esclerose e epífise menor), **fragmentação** (a epífise se divide em pedaços com áreas radiotransparentes), **reossificação** (osso novo preenche a epífise) e residual (forma final). Para responder a pergunta é preciso juntar as duas informações: **quanto** da cabeça está acometido e **em que fase** está.\n\n**A limitação.** A classificação de Catterall tem **baixa concordância** entre observadores e só pode ser aplicada após a fragmentação. Por isso, hoje se usa mais a de **Herring** (pilar lateral), que tem maior valor prognóstico.\n\n**A classificação de Stulberg em detalhe.** Avalia, na **maturidade**, a forma da cabeça e a congruência com o acetábulo, usando círculos concêntricos (gabarito de Mose):\n| Classe | Descrição |\n|---|---|\n| **I** | Cabeça **normal** e esférica |\n| **II** | Cabeça **esférica** (encaixa no mesmo círculo em AP e perfil), mas com **coxa magna**, colo curto ou acetábulo vertical: **congruência esférica** |\n| **III** | Cabeça **ovoide** ou em cogumelo (não esférica, mas sem achatamento), com acetábulo adaptado: **congruência não esférica** |\n| **IV** | Cabeça **achatada**, com mais de **1 cm** de achatamento na área de carga, e **acetábulo também achatado**: **congruência não esférica** |\n| **V** | Cabeça **achatada** com colo e acetábulo **normais**: **incongruência não esférica** |\n\n**O prognóstico.** Classes I e II: artrose **rara** na vida adulta. Classes III e IV: artrose **na meia-idade** (a partir dos 40 a 50 anos). Classe V: artrose **precoce**, antes dos 50 anos, por incongruência entre a cabeça achatada e o acetábulo redondo.\n\n**A versão modificada (Herring e colaboradores).** Usa critérios mais simples, com três grupos (I e II: esférica; III: ovoide; IV e V: achatada), para melhorar a concordância entre observadores.",
-  "correta": "**Correta: C (IV, com congruência não esférica, achatamento da cabeça maior que 1 cm nas áreas de carga e acetábulo achatado).** Na classe IV, a cabeça e o acetábulo se achatam juntos, mantendo a congruência, mas não a esfericidade.",
+  "conceito": "STULBERG parece fácil até o momento de ler as alternativas, porque elas misturam congruência, esfericidade e medidas de 2 mm e 1 cm. A maneira segura é guardar uma ideia para cada classe.\n\n**Cada classe** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Tabela 14.4, p. 557 a 560). **I**: cabeça normal. **II**: esférica, dentro de 2 mm do círculo em AP e perfil de rã; pode ter coxa magna, colo curto ou acetábulo íngreme. **III**: ovoide ou elíptica, fora do círculo por mais de 2 mm, com o acetábulo acompanhando. **IV**: cabeça achatada, com mais de 1 cm de achatamento na área de carga, e **acetábulo também achatado**. **V**: cabeça colapsada em acetábulo que **não mudou**.\n\n**Congruência.** III e IV têm congruência asférica (cabeça feia, acetábulo moldado a ela); V tem incongruência asférica, como na necrose do adulto, e por isso a artrose dolorosa vem antes dos 50 anos. Na IV, a cabeça vira um cilindro, e o quadril roda externamente ao fletir.\n\n**Como a questão joga.** Cada alternativa troca um elemento: a II com a perda de esfericidade que é da III; a III com o acetábulo no lugar da cabeça; a V com cabeça esférica no lugar de colapsada.\n\nA tabela da classificação está na seção \"STULBERG\" do resumo.",
+  "correta": "**C) IV tem congruência não esférica com achatamento da cabeça maior que 1 cm nas áreas de carga, acetábulo achatado.** Congruência asférica: cabeça e acetábulo achatados juntos.",
   "incorretas": {
-   "A": "Na classe **II**, a cabeça permanece **esférica** (dentro de 2 mm do círculo); a alteração é coxa magna, colo curto ou acetábulo vertical.",
-   "B": "A classe **III** é de congruência **não esférica**, com cabeça ovoide; \"incongruência esférica\" não descreve nenhuma classe.",
-   "D": "Na classe **V**, a cabeça é **achatada** e o acetábulo é **normal** (esférico), o que gera incongruência; a descrição está invertida."
+   "A": "**II com perda da esfericidade acima de 2 mm** troca a classe: a II é esférica, dentro de 2 mm; fugir do círculo além disso é o tipo III.",
+   "B": "**III com incongruência e perda de esfericidade do acetábulo** erra a congruência e o alvo: a III é congruente, com cabeça elíptica, e o acetábulo apenas acompanha.",
+   "D": "**V com cabeça esférica e acetábulo achatado** inverte a classe: a V tem cabeça colapsada em acetábulo que não mudou, e é incongruente."
   },
   "referencias": [
-   "Stulberg SD, Cooperman DR, Wallensten R. The natural history of Legg-Calvé-Perthes disease. J Bone Joint Surg Am. 1981.",
-   "Legg-Calve-Perthes disease. Part I: Classification of radiographs with use of the modified lateral pillar and Stulberg classifications. PMID: 15466719."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Tabela 14.4, p. 557 a 560 e 579",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), Tabela 34.2, p. 1187",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0358": {
@@ -5669,18 +5684,18 @@
   "conferido": false
  },
  "pediatria-0414": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**As fases da doença e a histologia.** A evolução da doença segue uma sequência previsível, que tem correspondência clínica, radiográfica e histológica:\n| Fase | Achados |\n|---|---|\n| **Necrose** (inicial) | Morte das células ósseas: **lacunas vazias** (ausência de osteócitos) ou osteócitos com **núcleo picnótico**; medula necrótica. Na radiografia: epífise menor, mais **densa** (esclerose), alargamento do espaço articular |\n| **Fragmentação** | Revascularização com **reabsorção** do osso morto por osteoclastos: a epífise se divide em fragmentos; colapso; sinal do crescente (fratura subcondral) |\n| **Reossificação** (reparação) | Osso novo preenche a epífise, de forma organizada |\n| **Residual** (sequela) | Forma final da cabeça, que pode ser esférica ou achatada (Stulberg) |\n\n**A necrose em detalhe.** Os osteócitos ficam em pequenas cavidades da matriz óssea (lacunas). Quando o suprimento sanguíneo é interrompido, eles morrem: primeiro o **núcleo se condensa** (picnose), depois a célula desaparece e a lacuna fica **vazia**. A matriz óssea, porém, não muda de forma imediatamente; por isso a radiografia demora para mostrar alterações, e a epífise parece mais **densa** (o osso morto não é reabsorvido e o osso vivo ao redor fica osteopênico). A cartilagem articular continua viva, nutrida pelo líquido sinovial, e até **espessa**.\n\n**A ressonância** mostra a necrose antes da radiografia, e a **cintilografia** mostra a falta de captação na epífise.\n\n**A ordem das fases (Waldenström)** ajuda a resolver questões: necrose (inicial), fragmentação, reossificação e residual.",
-  "correta": "**Correta: B (necrose).** A ausência de osteócitos (lacunas vazias) e os núcleos picnóticos são a marca histológica da morte celular na fase inicial de necrose, antes da revascularização.",
+  "conceito": "A pergunta descreve o que se vê ao microscópio, e a descrição é a de um osso morto, de modo que a fase só pode ser a de necrose.\n\n**O que o livro mostra.** Na fase de densidade aumentada, a fase inicial ou de necrose, as trabéculas têm **osteócitos com núcleo ausente ou picnótico**, a medula está necrótica e os espaços se enchem de fragmentos de osso morto pulverizado (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 535 a 537, Box 14.3). A cartilagem articular fica espessada, porque suas camadas superficial e média seguem vivas, nutridas pelo líquido sinovial, enquanto a camada profunda, sobre o osso morto, morre. Pode já haver fratura subcondral.\n\n**Por que não fragmentação.** A fragmentação é a fase do **reparo**: tecido de granulação vascular invade a medula, vasos crescem na cartilagem e osteoclastos reabsorvem o osso necrótico. Quem vê essa cena histológica encontra células vivas, e não só osteócitos mortos. Na reossificação aparece osso novo sobre as trabéculas velhas.\n\n**Regra de bolso.** Osteócito sem núcleo ou com núcleo picnótico é morte celular; granulação e osteoclastos são reparo.\n\nA histologia por fase está na seção \"O que acontece dentro da cabeça\" do resumo.",
+  "correta": "**B) necrose.** Osteócitos ausentes ou picnóticos mostram osso morto, o achado da fase inicial.",
   "incorretas": {
-   "A": "Na **fragmentação** já há **revascularização**, com osteoclastos reabsorvendo o osso morto e fibrose; a marca não é só a morte celular.",
-   "C": "Na **sequela** (fase residual), o osso está remodelado e vivo; o que define a fase é a forma final da cabeça.",
-   "D": "Na **remodelação** (reossificação), predomina a formação de osso **novo**, com osteócitos viáveis."
+   "A": "**Fragmentação** traz granulação vascular, vasos na cartilagem e osteoclastos reabsorvendo o osso; é reparo, e não a cena de células mortas.",
+   "C": "**Sequela** é a fase residual, de osso entrelaçado e lamelar com arquitetura que volta ao normal; o livro não a descreve com osteócitos picnóticos.",
+   "D": "**Remodelação** é a fase tardia de cura, com osso novo e forma que continua evoluindo; a morte celular já passou."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doença de Legg-Calvé-Perthes.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de doença de Legg-Calvé-Perthes."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Box 14.3, p. 535 a 537",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0415": {
@@ -5882,18 +5897,19 @@
   "conferido": false
  },
  "pediatria-0426": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**Os sinais de \"cabeça em risco\".** Catterall descreveu sinais radiográficos que indicam **pior prognóstico**:\n| Sinal | O que indica |\n|---|---|\n| **Sinal de Gage** | Rarefação em V na parte lateral da epífise e metáfise |\n| **Calcificação lateral** à epífise | Extrusão da cabeça, coberta pela cartilagem que ossifica fora do acetábulo |\n| **Subluxação lateral** | A cabeça sai da contenção acetabular |\n| **Horizontalização da fise** | Crescimento alterado e deformidade |\n| **Alterações metafisárias** difusas (cistos) | Lesão que se estende à **fise** |\n\n**Os cistos metafisários.** São áreas **radiotransparentes** na metáfise do colo, logo abaixo da fise. Podem representar extensão da cartilagem fisária para a metáfise, tecido fibroso ou gordura, e áreas de isquemia. A sua presença sugere que a doença **atingiu a fise**, o que traz risco de **distúrbio do crescimento fisário**:\n- **parada do crescimento** central, com **colo curto** (coxa breva) e **trocânter alto** (hipercrescimento relativo do trocânter);\n- crescimento **assimétrico**, com deformidade da cabeça e do colo;\n- **discrepância** de comprimento dos membros.\n\n**As consequências.** O trocânter alto encurta a alavanca dos abdutores e causa **marcha de Trendelenburg**; o colo curto e a cabeça achatada favorecem o **impacto** femoroacetabular. Na fase residual, essas deformidades podem ser tratadas com epifisiodese do trocânter (se houver crescimento), avanço do trocânter ou osteotomias.\n\n**A classificação do desfecho (Stulberg)** avalia a forma da cabeça e a congruência na maturidade, e a idade de início abaixo de 6 anos continua sendo o principal fator de bom prognóstico.",
-  "correta": "**Correta: D (distúrbio potencial do crescimento fisário).** Os cistos metafisários indicam que a doença se estende à fise, com risco de parada do crescimento, colo curto e trocânter alto.",
+  "conceito": "Cisto metafisário em PERTHES é um nome enganoso, e a resposta fica fácil quando se sabe o que a ressonância revelou: aquilo não é cisto.\n\n**O que é.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 14, p. 540 e 547) descreve quatro padrões histológicos: excesso de medula gordurosa, lesões líticas com borda esclerótica, fise larga com **colunas de cartilagem não ossificada descendo para a metáfise** e extensão da fise pelo colo. Os estudos de RM mostraram que as lucências são **cartilagem fisária** que invade a metáfise, e que a maioria dos \"cistos\" está, na verdade, na fise ou na epífise, parecendo metafisária por projeção.\n\n**O que significa.** O achado fala da **fise**, e não da forma da cabeça. No modelo suíno, as alterações metafisárias se associaram a distúrbio importante do crescimento do fêmur proximal. Em PERTHES, quadris com essas alterações têm o dobro de chance de mau resultado, e o fechamento precoce da fise é frequente (ponte óssea na RM em 63%).\n\n**Por que não a deformidade da epífise.** A forma da cabeça é avaliada por achatamento, coxa magna e pilares; o cisto aponta o crescimento. O Campbell's Operative Orthopaedics, 15ª ed. (p. 1186.e1) acrescenta o cisto metafisário como quinto sinal de cabeça em risco.\n\nOs \"cistos\" estão na seção \"Outros achados de imagem\" do resumo.",
+  "correta": "**D) distúrbio potencial do crescimento fisário.** A lucência é cartilagem da fise estendida para a metáfise.",
   "incorretas": {
-   "A": "A **subluxação lateral** é um sinal próprio de cabeça em risco, visto pela extrusão da cabeça, e não pelos cistos metafisários.",
-   "B": "A **deformidade da epífise** é avaliada pela forma da cabeça (Stulberg), e não sugerida pelos cistos metafisários.",
-   "C": "A **calcificação lateral** à epífise é outro sinal de cabeça em risco, ligado à extrusão, e não aos cistos."
+   "A": "**Subluxação lateral da cabeça** é um sinal de cabeça em risco que se vê pelo deslocamento lateral da cabeça, e não pelas lucências da metáfise.",
+   "B": "**Deformidade da epífise femoral** é lida pelo achatamento e pelos pilares; os cistos metafisários falam da fise, não da forma da epífise.",
+   "C": "**Ossificação lateral da epífise alargada** corresponde à calcificação lateral, outro sinal de cabeça em risco, que não tem relação com a lucência metafisária."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de doença de Legg-Calvé-Perthes.",
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de doença de Legg-Calvé-Perthes."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 540 e 547",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), eTabela 34.1, p. 1186.e1",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0427": {
@@ -7154,19 +7170,20 @@
   "conferido": false
  },
  "pediatria-0509": {
-  "conceito": "**Avaliando o resultado final do Perthes.** A doença de Legg-Calvé-Perthes passa pelos estágios de necrose, fragmentação, reossificação e remodelação. Ao final, a cabeça femoral pode ficar **esférica** ou **deformada**. A forma final da cabeça e a sua **congruência** com o acetábulo determinam o risco de **artrose** no adulto.\n\n**A classificação de Stulberg.** É aplicada **na maturidade esquelética**. Herring e colaboradores a padronizaram usando **círculos concêntricos** (de Mose), com uma tolerância de **2 mm**, para decidir se a cabeça é esférica.\n\n| Classe | Forma da cabeça | Congruência e prognóstico |\n|---|---|---|\n| **I** | **Normal**, esférica | Congruência esférica; prognóstico excelente |\n| **II** | **Esférica** (dentro de 2 mm do círculo), mas com **coxa magna**, colo curto ou acetábulo inclinado | Congruência esférica; bom prognóstico |\n| **III** | **Não esférica**: **ovoide ou elíptica**, desviando **mais de 2 mm** do círculo | Congruência asférica; artrose moderada no adulto |\n| **IV** | **Achatada**: área plana de **1 cm ou mais** na superfície de carga, com acetábulo também achatado | Congruência asférica; artrose moderada |\n| **V** | **Achatada**, com acetábulo **normal** | **Incongruência** asférica; artrose **precoce** e grave |\n\n**Como raciocinar.**\n- Classes I e II: a cabeça é **esférica**, e o quadril vai bem por toda a vida.\n- Classes III e IV: a cabeça **não é esférica**, mas o acetábulo se adaptou a ela (**congruência asférica**). A artrose aparece na vida adulta, geralmente após os 40 a 50 anos.\n- Classe V: cabeça achatada num acetábulo redondo (**incongruência**). A artrose aparece **cedo**.\n\n**O caso da questão.** A cabeça **elíptica** que se afasta **mais de 2 mm** do círculo é a **classe III**: não é mais esférica, mas ainda não tem a área plana de 1 cm que define a classe IV.\n\n**Os fatores que levam a um bom resultado.** Início **antes dos 6 anos**, pilar lateral **A ou B** de Herring, poucos sinais de cabeça em risco e boa amplitude de movimento, sobretudo a abdução.",
-  "correta": "**Correta: C (III).** Na classificação de Stulberg modificada por Herring, a cabeça femoral **elíptica** (ovoide) que se desvia **mais de 2 mm** do círculo é da **classe III**. Ela não é esférica, mas não tem a área plana de 1 cm ou mais que define a classe IV.",
+  "conceito": "A descrição do enunciado traz uma medida, 2 mm, e uma forma, a cabeça elíptica. Essas duas pistas bastam para escolher a classe sem decorar tudo.\n\n**A régua de HERRING.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 14, p. 560) conta que HERRING tornou a classificação de STULBERG mais reprodutível com um **compasso**: dentro de 2 mm do círculo nas duas incidências é classe II; fora de 2 mm é classe III; achatamento de 1 cm ou mais na área de carga é classe IV. A cabeça **elíptica ou ovoide**, que foge do círculo mais de 2 mm, é a classe **III**, com acetábulo acompanhando (congruência asférica).\n\n**O prognóstico.** A classe III tem artrose em 58% em cerca de 40 anos; o Campbell's Operative Orthopaedics, 15ª ed. (Tabela 34.2, p. 1187) a descreve como ovoide, em cogumelo ou em guarda-chuva, mas não plana, com artrose leve a moderada no adulto.\n\n**Por que não as vizinhas.** Quem erra costuma subir para IV porque a cabeça \"parece achatada\". Mas a IV exige a medida de 1 cm e o acetábulo também achatado; a elíptica ainda não chegou a isso.\n\nA classificação está na seção \"STULBERG\" do resumo.",
+  "correta": "**C) III.** Cabeça elíptica ou ovoide, mais de 2 mm fora do círculo, acetábulo acompanhando.",
   "incorretas": {
-   "A": "A classe **I** é o quadril **normal**, com cabeça esférica.",
-   "B": "A classe **II** tem cabeça **esférica**, dentro de 2 mm do círculo, mas com coxa magna, colo curto ou acetábulo inclinado.",
-   "D": "A classe **IV** tem uma **área plana de 1 cm ou mais** na superfície de carga, com acetábulo também achatado.",
-   "E": "A classe **V** tem cabeça **achatada** num acetábulo **normal** (incongruência), com artrose precoce."
+   "A": "**I** é o quadril normal, sem desvio do círculo; a cabeça do enunciado está deformada.",
+   "B": "**II** é a cabeça esférica, dentro de 2 mm do círculo, mesmo com coxa magna ou colo curto; aqui o desvio passa de 2 mm.",
+   "D": "**IV** exige achatamento de 1 cm ou mais na área de carga e acetábulo também achatado; uma cabeça elíptica ainda não chegou lá.",
+   "E": "**V** é a cabeça colapsada em acetábulo que não mudou, incongruente, com artrose grave antes dos 50 anos; não é o caso de uma elipse."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring)",
-   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part I: Classification of radiographs with use of the modified lateral pillar and Stulberg classifications. J Bone Joint Surg Am. 2004;86(10):2103-2120."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Tabela 14.4, p. 557 a 560",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), Tabela 34.2, p. 1187",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0510": {
@@ -11397,17 +11414,19 @@
   }
  },
  "pediatria-0683": {
-  "conceito": "**A doença de Legg-Calvé-Perthes.** É a necrose avascular **idiopática** da epífise femoral proximal em crescimento. Acomete crianças de **4 a 8 anos**, **meninos** (4 a 5 para cada menina), com idade óssea atrasada; é bilateral em cerca de 10% a 15%, mas nunca simultânea nem simétrica. A causa exata é desconhecida; trombofilias, tabagismo passivo e baixo nível socioeconômico estão associados.\n\n**As fases da doença e a histologia.** A evolução da doença segue uma sequência previsível, que tem correspondência clínica, radiográfica e histológica:\n| Fase | Achados |\n|---|---|\n| **Necrose** (inicial) | Morte das células ósseas: **lacunas vazias** (ausência de osteócitos) ou osteócitos com **núcleo picnótico**; medula necrótica. Na radiografia: epífise menor, mais **densa** (esclerose), alargamento do espaço articular |\n| **Fragmentação** | Revascularização com **reabsorção** do osso morto por osteoclastos: a epífise se divide em fragmentos; colapso; sinal do crescente (fratura subcondral) |\n| **Reossificação** (reparação) | Osso novo preenche a epífise, de forma organizada |\n| **Residual** (sequela) | Forma final da cabeça, que pode ser esférica ou achatada (Stulberg) |\n\n**A necrose em detalhe.** Os osteócitos ficam em pequenas cavidades da matriz óssea (lacunas). Quando o suprimento sanguíneo é interrompido, eles morrem: primeiro o **núcleo se condensa** (picnose), depois a célula desaparece e a lacuna fica **vazia**. A matriz óssea, porém, não muda de forma imediatamente; por isso a radiografia demora para mostrar alterações, e a epífise parece mais **densa** (o osso morto não é reabsorvido e o osso vivo ao redor fica osteopênico). A cartilagem articular continua viva, nutrida pelo líquido sinovial, e até **espessa**.\n\n**A ressonância** mostra a necrose antes da radiografia, e a **cintilografia** mostra a falta de captação na epífise.\n\n**A ordem das fases (Waldenström)** ajuda a resolver questões: necrose (inicial), fragmentação, reossificação e residual.\n\n**A fratura subcondral (sinal do crescente).** É uma linha radiotransparente sob a superfície da cabeça, mais visível no perfil, que aparece no fim da fase de necrose. Salter e Thompson mostraram que a **extensão** da fratura subcondral corresponde à **extensão da necrose** e prevê precocemente o tamanho final do acometimento:\n- **grupo A**: fratura em **menos da metade** da cabeça (equivale a Catterall I e II), melhor prognóstico;\n- **grupo B**: fratura em **mais da metade** da cabeça (Catterall III e IV), pior prognóstico.\n\nA vantagem é ser uma classificação **precoce** (antes da fragmentação); a limitação é que a fratura subcondral só é vista em uma parte dos pacientes e por pouco tempo.",
-  "correta": "**Correta: A (extensão da necrose).** A extensão da fratura subcondral (sinal do crescente) corresponde à extensão da necrose e é a base da classificação precoce de Salter-Thompson.",
+  "conceito": "A fratura subcondral é o achado que SALTER e THOMPSON transformaram em classificação, e a ideia por trás dela é simples de enunciar: onde há fratura, há osso morto.\n\n**O raciocínio.** A linha de fratura corre sobre o osso necrótico, logo abaixo da cartilagem articular. Então o **comprimento da fratura desenha a extensão da necrose** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 554). O sistema tem dois grupos, avaliados nas incidências AP e perfil: **A**, fratura em menos da metade da cabeça; **B**, em mais da metade. No Campbell's Operative Orthopaedics, 15ª ed. (p. 1186.e1), a fratura é descrita no domo superolateral e o tipo A tem bons resultados, enquanto o B tem resultados regulares ou maus.\n\n**A vantagem e o limite.** A vantagem é o tempo: a extensão da fratura é vista em média 8,1 meses antes dos sinais de CATTERALL, quando a fase ainda é precoce. O limite é que a fratura só aparece em cerca de 30% dos pacientes.\n\n**Armadilha.** O achado mede extensão. Ele não decide sozinho a cirurgia, não prevê artrose e não é sinônimo de subluxação, que se vê pela quebra da linha de SHENTON na fragmentação.\n\nA classificação está na seção \"SALTER-THOMPSON: a fratura subcondral\" do resumo.",
+  "correta": "**A) extensão da necrose.** A fratura corre sobre o osso morto; seu comprimento mostra quanto da cabeça está necrótico.",
   "incorretas": {
-   "B": "A evolução para **artrose** é prevista pela forma final da cabeça (Stulberg), e não pela fratura subcondral.",
-   "C": "A indicação de cirurgia depende da idade, do pilar lateral (Herring) e da extrusão, e não só da fratura subcondral.",
-   "D": "A **subluxação** da cabeça é avaliada pela extrusão lateral, outro sinal de cabeça em risco."
+   "B": "**Evolução para artrose** é predita pela forma final da cabeça e pela congruência, vistas por STULBERG; a fratura da fase inicial não mede isso.",
+   "C": "**Necessidade de cirurgia** não decorre do achado isolado; SALTER e THOMPSON o usam para estimar extensão, e a conduta depende também de idade, fase e contenção.",
+   "D": "**Subluxação da cabeça do fêmur** aparece na fragmentação, com extrusão lateral e quebra da linha de SHENTON, e não pela linha de fratura subcondral."
   },
   "referencias": [
-   "Lovell and Winter’s Pediatric Orthopaedics, 5th Ed., p. 1051 (referência indicada na prova TARO 2013, questão 71)"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 542 e 554",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), p. 1186.e1, eTabela 34.2",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0684": {
@@ -13105,19 +13124,20 @@
   }
  },
  "pediatria-0739": {
-  "conceito": "**Prognóstico na doença de Legg-Calvé-Perthes.** O Perthes é a necrose idiopática do núcleo de ossificação da cabeça femoral na criança. O osso necrótico é reabsorvido e substituído; durante esse processo, a cabeça fica mole e pode se deformar. O resultado a longo prazo, isto é, se haverá **artrose** na vida adulta, depende de **como a cabeça termina**.\n\n**Preditores precoces x resultado final.**\n\n| Momento | Fator | O que indica |\n|---|---|---|\n| Início | **Idade** (abaixo de 6 anos, melhor; acima de 8, pior) | Tempo de remodelação disponível |\n| Fragmentação | **Pilar lateral de Herring** (A, B, B/C, C), Catterall (extensão) | Risco de colapso e deformidade |\n| Fragmentação | Sinais de \"cabeça em risco\" (Catterall): sinal de Gage, calcificação lateral, subluxação lateral, horizontalização da fise, cistos metafisários | Tendência à extrusão |\n| **Maturidade** | **Forma final da cabeça e congruência (Stulberg)** | **Risco real de artrose** |\n\n**A classificação de Stulberg.** Stulberg, Cooperman e Wallensten acompanharam pacientes por décadas e relacionaram a forma final à artrose:\n- **I e II**: cabeça **esférica** (congruência esférica): praticamente sem artrose.\n- **III e IV**: cabeça **ovoide ou achatada** com acetábulo adaptado (congruência asférica): artrose leve a moderada na meia-idade.\n- **V**: cabeça achatada com acetábulo normal (incongruência asférica): artrose precoce.\n\n**A lógica da questão.** Idade, extensão e sinais radiográficos são **preditores** de como a cabeça vai ficar. O **fator que de fato determina** o mau resultado é a **deformidade residual** (incongruência) da cabeça femoral. Por isso, o tratamento busca **contenção** durante a fase vulnerável, para que a cabeça remodele esférica.\n\n> No Perthes, o pior prognóstico é a deformidade residual da cabeça (Stulberg); idade e extensão são preditores dessa deformidade.",
-  "correta": "**A: deformidade residual da cabeça femoral (resposta pela bibliografia).** A forma final e a congruência da cabeça (Stulberg) determinam a evolução para artrose; cabeças achatadas e incongruentes têm o pior prognóstico.",
+  "conceito": "Questão sem gabarito oficial em que duas ideias disputam o primeiro lugar: a idade de início e a forma final da cabeça. Os livros respondem a duas perguntas diferentes, e saber qual pergunta a prova fez resolve a escolha.\n\n**O que prediz o quadril do adulto.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 14, p. 579) diz que os preditores mais importantes do resultado em longo prazo são a **forma da cabeça curada e sua congruência** com o acetábulo. Daí a meta de todo tratamento: evitar a deformidade. A STULBERG sobe de risco de artrose conforme a cabeça se afasta da esfera (III 58%, IV 75%, V 78% em cerca de 40 anos).\n\n**O que governa o curso da doença.** A idade de início é o fator mais consistentemente relatado (p. 543). Essa distinção explica por que a questão fala em fator de \"pior prognóstico\" no sentido de resultado: a deformidade residual é o que o livro aponta como mais importante.\n\n**As outras alternativas.** A extensão do envolvimento epifisário pesa (CATTERALL III e IV, pilar C), mas é preditor de gravidade. A horizontalização da placa epifisária é um dos sinais de cabeça em risco de CATTERALL, com peso menor.\n\nO raciocínio está na seção \"Prognóstico\" do resumo.",
+  "provavel": "A",
+  "correta": "**A) deformidade residual da cabeça femoral.** É o preditor mais importante do resultado em longo prazo, segundo o livro.",
   "incorretas": {
-   "B": "**A horizontalização da fise** é um dos sinais de \"cabeça em risco\" de Catterall, preditor de deformidade, mas não o fator determinante final.",
-   "C": "**A idade de início** é importante preditor (acima de 8 anos é pior), mas atua por meio do potencial de remodelação; o que define o resultado é a forma final da cabeça.",
-   "D": "**A extensão do envolvimento epifisário** (Catterall, pilar lateral) prediz o risco de deformidade, mas é a deformidade residual que determina a artrose."
+   "B": "**Horizontalização da placa epifisária** é um dos quatro sinais de cabeça em risco de CATTERALL, mas o livro não o destaca como o fator de pior prognóstico.",
+   "C": "**Idade de início da doença** é o fator mais consistente do curso, mas não o preditor mais importante do resultado tardio, que é a forma da cabeça curada.",
+   "D": "**Extensão do envolvimento epifisário** pesa no prognóstico (CATTERALL III e IV, pilar C), porém o livro coloca a forma final da cabeça acima dela para o resultado em longo prazo."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 6ª ed., p. 1056-1061.",
-   "Stulberg SD, Cooperman DR, Wallensten R. The natural history of Legg-Calvé-Perthes disease. J Bone Joint Surg Am. 1981;63(7):1095-1108."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 543, 554, 560 e 579",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "provavel": "A",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 579), sustenta a alternativa A: a forma da cabeça curada e a congruência são os preditores mais importantes do resultado em longo prazo. A idade (alternativa C) é o fator mais consistente do curso (p. 543), o que explica a divergência entre as respostas possíveis. A resposta provável acompanha o gabarito indicado pela bibliografia.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0740": {
@@ -13611,20 +13631,20 @@
   "conferido": false
  },
  "pediatria-0759": {
-  "conceito": "**Doença de Legg-Calvé-Perthes e o significado da fragmentação.** O Perthes é a **necrose avascular idiopática do núcleo de ossificação da cabeça femoral** na criança (pico entre 4 e 8 anos, predomínio masculino). A doença é autolimitada: o osso morre, é reabsorvido e substituído, e o resultado depende da forma final da cabeça.\n\n**Estágios de Waldenström.**\n\n| Estágio | O que acontece | Radiografia |\n|---|---|---|\n| Inicial (necrose) | Morte óssea, parada de crescimento do núcleo | Núcleo menor e mais denso, alargamento do espaço articular, fratura subcondral (sinal do crescente) |\n| **Fragmentação** | **Revascularização e reabsorção do osso necrótico** | Núcleo fragmentado, com áreas radiotransparentes e densas |\n| Reossificação | Formação de osso novo | Reaparecimento do osso trabecular a partir da periferia |\n| Residual (remodelação) | Remodelação até a maturidade | Forma final da cabeça (esférica, ovoide ou achatada) |\n\n**Por que a cabeça \"se fragmenta\".** Na fase de fragmentação, vasos novos penetram o osso morto. Os osteoclastos **reabsorvem o osso necrótico** (áreas radiotransparentes), enquanto osso novo é depositado sobre as trabéculas mortas (áreas densas). A cabeça fica mecanicamente fraca e é nessa fase que pode **deformar e extruir** sob carga.\n\n**Implicações.** As classificações prognósticas (pilar lateral de Herring e Catterall) são aplicadas na fase de fragmentação. O tratamento visa **contenção** da cabeça no acetábulo durante esse período vulnerável, para que ela se remodele esférica. A idade de início (acima de 8 anos tem pior prognóstico) e o pilar lateral são os principais preditores.\n\n> Fragmentação no Perthes é a reabsorção do osso necrótico durante a revascularização.",
-  "correta": "**A: reabsorção de osso necrótico (resposta pela bibliografia).** Na fase de fragmentação, a revascularização traz osteoclastos que reabsorvem o osso morto, criando áreas radiotransparentes entremeadas com áreas densas de osso novo depositado.",
+  "conceito": "Dar nome à fase não basta: a prova quer saber o que o aspecto de fragmentação significa por dentro, e a resposta é biológica, não mecânica.\n\n**O que se vê e o que é.** Na radiografia, a cabeça se rompe em segmentos separados por áreas lucentes. Essas lucências representam a **reabsorção do osso necrótico**, por isso a fase também se chama reabsorção (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 544). Histologicamente, tecido de granulação vascular invade a medula e osteoclastos removem o osso morto; o livro corrige o termo antigo de substituição rastejante, falando em desacoplamento, com reabsorção predominando e formação atrasada.\n\n**Consequência mecânica.** Como a reabsorção vem antes do osso novo, a epífise fica no ponto mais fraco, e a maior parte do achatamento ocorre nesse momento. A fase termina quando surge osso novo na periferia.\n\n**Os distratores.** Remodelação é o que vem depois da reossificação e durante o crescimento. Microfraturas subcondrais pertencem ao crescente da fase inicial. Cistos metafisários são lucências da fise estendida para a metáfise, outro achado.\n\nA fase está na seção \"As fases de WALDENSTRÖM\" do resumo.",
+  "provavel": "A",
+  "correta": "**A) reabsorção de osso necrótico.** As lucências da fragmentação são o osso morto sendo reabsorvido pelos osteoclastos.",
   "incorretas": {
-   "B": "**A remodelação da cabeça femoral** corresponde ao estágio residual, depois da reossificação, até a maturidade esquelética.",
-   "C": "**As microfraturas subcondrais** ocorrem na fase inicial e aparecem como o sinal do crescente; precedem a fragmentação.",
-   "D": "**Os cistos metafisários** são achados associados (indicam pior prognóstico na classificação de Catterall), mas não explicam o aspecto de fragmentação da epífise."
+   "B": "**Remodelação da cabeça femoral** é a fase tardia, depois da reossificação, e não o aspecto lucente e fragmentado.",
+   "C": "**Microfraturas subcondrais** correspondem ao sinal do crescente da fase inicial, não à fragmentação.",
+   "D": "**Presença de cistos metafisários** é achado distinto, de cartilagem da fise na metáfise, que aparece na fase inicial e regride na fragmentação."
   },
   "referencias": [
-   "Tachdjian M.O. Pediatric orthopaedics. Philadelphia: Saunders. 2ª ed., p. 946.",
-   "Kim HK. Legg-Calvé-Perthes disease. J Am Acad Orthop Surg. 2010;18(11):676-686."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 537, 538 e 544",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "alerta": "Não localizamos o gabarito oficial desta prova, por isso esta questão não conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia.",
-  "provavel": "A",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 544), diz que a fragmentação ou reabsorção é a reabsorção do osso necrótico, o que sustenta a alternativa A.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0760": {
@@ -14319,17 +14339,18 @@
   "conferido": false
  },
  "pediatria-0796": {
-  "conceito": "**O que determina o futuro do quadril no Perthes.** A doença de Legg-Calvé-Perthes é uma **necrose avascular** da epífise femoral na criança. A cabeça necrosada passa pelas fases de necrose, fragmentação, reossificação e remodelação. O resultado final depende de a cabeça permanecer **esférica e contida** no acetábulo durante esse processo. Vários fatores influenciam isso.\n\n**1. A idade no início.** É o fator prognóstico **mais importante** e mais consistente.\n- **Antes de 6 anos**: a maioria evolui bem, porque há muito tempo de crescimento para remodelar a cabeça e o acetábulo.\n- **Acima de 8 anos**: prognóstico pior, com mais deformidade residual; é nessa faixa que a cirurgia de contenção mostra benefício.\n\n**2. O grau de acometimento da epífise.** Quanto mais da epífise está necrosada e quanto mais ela colapsa, pior o resultado.\n- **Catterall**: grupos I a IV pela porção da epífise envolvida.\n- **Herring (pilar lateral)**: altura do pilar lateral na fase de fragmentação (A, B, B/C e C). É a classificação prognóstica mais usada hoje.\n\n**3. A perda de contenção e os sinais de \"cabeça em risco\".** Sinais de Catterall: sinal de **Gage** (radiotransparência em V na borda lateral), calcificação lateral à epífise, **subluxação lateral**, horizontalização da fise e cistos metafisários. A **extrusão** da cabeça para fora do acetábulo piora o prognóstico.\n\n**4. O fechamento prematuro da fise.** A necrose pode lesar a fise proximal do fêmur, causando **parada de crescimento** do colo. O resultado:\n- **colo curto e largo** (coxa magna, coxa breva);\n- **supercrescimento relativo do trocânter maior**, com marcha de Trendelenburg;\n- cabeça mais achatada e incongruente.\nEsses efeitos pioram o resultado funcional.\n\n**5. A mobilidade do quadril.** A perda persistente de **abdução** indica deformidade e incongruência e é um sinal de alerta.\n\n**O resultado final é medido pela classificação de Stulberg** na maturidade, conforme a esfericidade da cabeça e a congruência com o acetábulo: classes I e II têm bom prognóstico de longo prazo; IV e V evoluem para artrose precoce.",
-  "correta": "**Resposta provável: Certo.** A **idade no início**, o **grau de acometimento da epífise** e o **fechamento prematuro da fise** são fatores relacionados ao prognóstico na doença de Perthes, ao lado da perda de contenção e da mobilidade.",
+  "conceito": "Item de certo ou errado em que a afirmação lista três fatores prognósticos de uma vez. Para decidir, cada um precisa ter apoio, e os livros dão apoio aos três.\n\n**Idade de início.** É o fator mais consistentemente relatado: quanto mais nova a criança, melhor; antes de 6 anos é leve, entre 6 e 9 moderado, a partir de 9 mais grave, e acima de 12 pior (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 543).\n\n**Fechamento prematuro da fise.** O livro registra o fechamento precoce da fise e a cabeça em cogumelo como mau prognóstico (p. 580); a lesão fisária costuma deixar colo curto e trocânter alto (p. 548).\n\n**Grau de acometimento da epífise.** Quanto maior o envolvimento, pior: CATTERALL III e IV e o pilar lateral C de HERRING são os grupos de pior resultado (p. 543 e 554 a 557).\n\n**Armadilha.** O erro seria suspeitar de um item por ser menos famoso, como o fechamento da fise, ou achar que a idade piora quando é baixa. A frase não diz isso: ela só lista fatores relacionados ao prognóstico, e os três estão.\n\nOs fatores estão na seção \"Prognóstico\" do resumo.",
+  "provavel": "A",
+  "correta": "**A) Certo.** Idade de início, fechamento precoce da fise e extensão do acometimento epifisário estão todos ligados ao prognóstico.",
   "incorretas": {
-   "B": "**Errado** negaria fatores consagrados. A idade é o principal fator prognóstico, a extensão da necrose define as classificações de Catterall e Herring, e o fechamento fisário altera o crescimento do colo e o resultado final."
+   "B": "**Errado** exigiria que um dos três não tivesse relação com o prognóstico, e os livros apoiam a idade, o fechamento da fise e a extensão do acometimento."
   },
   "referencias": [
-   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 4ª edição, p. 968.",
-   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part II: Prospective multicenter study of the effect of treatment on outcome. J Bone Joint Surg Am. 2004;86(10):2121-2134."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), p. 543, 548, 554 a 557 e 580",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "provavel": "A",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 543 e 580), sustenta Certo para os três fatores; a resposta provável acompanha a bibliografia.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0797": {
@@ -15657,19 +15678,19 @@
   "conferido": false
  },
  "pediatria-0854": {
-  "conceito": "**Fases da doença de Legg-Calvé-Perthes (Waldenström).** A doença é uma osteonecrose da epífise femoral proximal que evolui ao longo de 2 a 4 anos.\n\n| Fase | Patologia | Radiografia |\n|---|---|---|\n| **Inicial (necrose)** | Interrupção da irrigação; **osso morto**: lacunas **sem osteócitos** ou com osteócitos de **núcleo picnótico**; a cartilagem articular continua crescendo (nutrida pelo líquido sinovial) | Epífise menor e mais densa, alargamento do espaço articular medial, sinal do crescente |\n| Fragmentação | Revascularização e reabsorção do osso necrótico por osteoclastos; colapso | Epífise fragmentada, áreas líticas e densas |\n| Reossificação | Osso novo substitui o necrótico | Ossificação progressiva |\n| Residual (remodelação) | Remodelação até a maturidade | Forma final da cabeça (Stulberg) |\n\n**Por que a epífise parece densa.** O osso morto não é reabsorvido no início, e pode haver deposição de osso novo sobre as trabéculas mortas e microfraturas com compactação. Além disso, o osso vizinho vivo sofre osteopenia por desuso, aumentando o contraste.\n\n**Sinovite.** Pode estar presente clinicamente (derrame e dor) no início, mas não é uma fase de Waldenström; a sinovite transitória é um diagnóstico diferencial.\n\n**Importância das fases.** A fase de fragmentação é quando a cabeça está mais \"moldável\" e mais vulnerável à deformação; as cirurgias de contenção têm maior efeito antes ou no início dessa fase.\n\n> Osteócitos ausentes ou picnóticos: fase de necrose (inicial) do Perthes.",
-  "correta": "**A: necrose.** A ausência de osteócitos nas lacunas, ou a presença de osteócitos com núcleo picnótico, caracteriza o osso morto da fase inicial (necrose) da doença de Legg-Calvé-Perthes. Nessa fase, a radiografia mostra uma epífise menor e densa.",
+  "conceito": "Uma questão de residência sobre as fases, com sinovite entre as opções. A leitura é histológica, e a pista decisiva é que os osteócitos estão mortos.\n\n**A cena.** Na fase **inicial**, também chamada de **densidade aumentada** ou de necrose, o osso morto mostra osteócitos com núcleo ausente ou picnótico, medula necrótica, fragmentos de osso pulverizado e cartilagem espessada (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Box 14.3, p. 535 a 537). A radiografia traz cabeça menor e mais densa, com o crescente em cerca de um terço.\n\n**O ponto sobre a sinovite.** Sinovite existe na fase inicial, junto do espaço articular medial maior e da hipertrofia da cartilagem e do ligamento redondo (p. 544), mas ela é um achado da articulação, não uma das fases de WALDENSTRÖM. As fases são necrose, fragmentação, reossificação e residual.\n\n**Fases seguintes.** Na fragmentação vem a granulação e a reabsorção; na reossificação, osso novo entrelaçado; na residual, osso entrelaçado e lamelar, com a forma ainda mudando até a maturidade.\n\n**Para a abordagem.** Quanto mais cedo a fase, mais a cabeça ainda pode ser protegida, e é na fragmentação que se decide a contenção.\n\nA histologia está na seção \"O que acontece dentro da cabeça\" do resumo.",
+  "correta": "**A) necrose;** Osteócitos ausentes ou com núcleo picnótico são o retrato do osso morto na fase inicial.",
   "incorretas": {
-   "B": "**Sinovite** pode ocorrer no início, com derrame e dor, mas não é uma fase histológica da classificação de Waldenström e não se caracteriza pela morte dos osteócitos.",
-   "C": "**Na fragmentação**, predominam a revascularização e a reabsorção do osso necrótico por osteoclastos, com colapso; o achado típico é a atividade de reabsorção, não apenas osso morto.",
-   "D": "**Na reossificação**, há formação de osso novo e vivo, substituindo o necrótico.",
-   "E": "**Na fase residual**, a cabeça já está remodelada e com osso vivo; não há osteócitos necróticos predominantes."
+   "B": "**Sinovite** não é fase na classificação de WALDENSTRÖM; é um achado da fase inicial, e não descreve os osteócitos.",
+   "C": "**Fragmentação** mostra granulação vascular e osteoclastos reabsorvendo osso, ou seja, reparo, e não só osteócitos mortos.",
+   "D": "**Reossificação** tem osso novo entrelaçado sobre as trabéculas antigas, sem o retrato de osteócitos picnóticos.",
+   "E": "**Residual** é a fase curada, com osso entrelaçado e lamelar e arquitetura que volta ao normal."
   },
   "referencias": [
-   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Doença de Legg-Calvé-Perthes.",
-   "Herring JA, Kim HT, Browne R. Legg-Calve-Perthes disease. Part I: classification of radiographs with use of the modified lateral pillar and Stulberg classifications. J Bone Joint Surg Am. 2004;86(10):2103-2120."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Box 14.3, p. 535 a 537 e 544",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0855": {
@@ -17219,19 +17240,22 @@
   "alerta": "Divergência interna: material assinala C; tabela e características clínicas sustentam A. Gabarito oficial mantido vazio."
  },
  "pediatria-0938": {
-  "conceito": "Perthes é uma osteonecrose da epífise femoral em crescimento. Após necrose e fragmentação, ocorre reossificação; a forma final depende de extensão da lesão, contenção, mobilidade e potencial de remodelação. Crianças mais novas dispõem de mais crescimento para recuperar a forma, enquanto início mais tardio tende a piorar o prognóstico.\n\nEntre as alternativas, idade é o fator prognóstico mais estabelecido. Isso não significa que seja o único ou sempre superior à gravidade radiográfica. A classificação do pilar lateral, especialmente combinada com idade, tem grande importância. Estatura, peso e sexo podem associar-se a características populacionais, mas não substituem idade e extensão da lesão na decisão de tratamento.",
-  "correta": "A idade ao início é um determinante importante do potencial de remodelação. Crianças pequenas costumam ter prognóstico melhor que crianças mais velhas com lesão semelhante. É a melhor opção listada, mas deve ser integrada à gravidade e à contenção da cabeça.",
+  "conceito": "Entre quatro fatores, só um é consistentemente apontado pelos livros como o que governa o curso da doença: a idade de início.\n\n**O que os livros dizem.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 14, Box 14.5, p. 543) afirma que a idade é o fator mais consistentemente relatado: quanto mais nova a criança, melhor. Início antes de 6 anos costuma ser leve, entre 6 e 9 moderado, a partir de 9 mais grave, e depois de 12 é o pior. A razão é o tempo que sobra para remodelar a cabeça antes do fim do crescimento. O Campbell's Operative Orthopaedics, 15ª ed. (p. 1187) concorda ao dizer que o grupo B de HERRING vai bem antes de 9 anos e pior depois.\n\n**Os outros três.** Estatura é característica da criança predisposta (baixa, com atraso de idade óssea), não fator prognóstico. Obesidade aparece como achado de estágios mais tardios em uma parte dos pacientes hoje, sem papel prognóstico nos livros. O sexo: o Campbell diz que meninos e meninas com o mesmo pilar têm resultados semelhantes.\n\n**Cuidado.** O preditor mais importante do quadril adulto é outro, a forma final da cabeça curada; mas, entre as alternativas, idade é a que os livros sustentam.\n\nO raciocínio está na seção \"Prognóstico\" do resumo.",
+  "provavel": "A",
+  "correta": "**A) Idade.** É o fator mais consistentemente relatado: quanto mais nova a criança, melhor o prognóstico.",
   "incorretas": {
-   "B": "Estatura baixa pode aparecer em estudos de características dos pacientes, porém não é o parâmetro prognóstico principal dentre os apresentados. A medida não informa diretamente a extensão da necrose nem a forma final. Não deve substituir idade ao início e classificação radiográfica.",
-   "C": "Obesidade pode afetar carga, mobilidade e dificuldades de tratamento, mas não é a resposta clássica para esse conjunto de opções. O prognóstico estrutural depende fortemente de idade e gravidade da epífise. Peso isolado não define a expectativa de esfericidade final.",
-   "D": "O sexo pode relacionar-se a diferenças de maturidade esquelética e distribuição da doença, mas é menos discriminante que a idade nessa pergunta. Uma criança não deve receber previsão apenas pelo gênero. A combinação de idade, extensão e mobilidade fornece uma avaliação mais útil."
+   "B": "**Estatura** descreve a criança predisposta, com atraso da idade óssea, e não aparece como fator prognóstico.",
+   "C": "**Obesidade** é referida em parte dos pacientes de hoje, associada a estágio mais tardio, mas os livros não a dão como o melhor fator prognóstico.",
+   "D": "**Gênero** não é fator independente nos livros: com o mesmo grupo de pilar lateral, meninos e meninas evoluem de modo semelhante."
   },
   "referencias": [
-   "POSNA. Legg-Calve-Perthes Disease. https://posna.org/physician-education/study-guide/legg-calve-perthes-disease"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 14 (Legg-Calvé-Perthes Disease), Box 14.5, p. 541 e 543",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (Osteochondrosis or Epiphysitis and Other Miscellaneous Affections), p. 1187 e 1188",
+   "Resumo OrtoQuestões: Doença de Legg-Calvé-Perthes"
   ],
-  "geradoEm": "2026-10-07",
-  "conferido": false,
-  "provavel": "A"
+  "alerta": "Questão sem gabarito oficial. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 543), sustenta a idade como o fator mais consistente do curso, alternativa A. A resposta provável acompanha esse dado.",
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "pediatria-0939": {
   "conceito": "Duas palavras, dois tecidos: o enunciado quer saber como estão os músculos e como estão os ligamentos. Os dois mudam em sentidos opostos, e é isso que a questão testa.\n\n**Os músculos: menores e rígidos.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. descreve músculo **inelástico** e unidades musculotendíneas **sempre encurtadas** (p. 711), e, ao separar o pé torto verdadeiro do postural, aponta a **atrofia** e a rigidez como marcas do verdadeiro (p. 712). Os estudos de biópsia acharam desproporção de tipos de fibra, com atrofia do tipo I nos fibulares e no tríceps (p. 708). A perna do pé torto é mais fina, e o pé do lado afetado é meio a um número de calçado menor (Campbell's Operative Orthopaedics, 15ª ed., p. 1049).\n\n**Os ligamentos: grossos e fibrosos.** O mesmo trecho do Tachdjian fala em **espessamento e contratura das bainhas tendíneas e dos ligamentos**, com fibrose da fáscia plantar, do ligamento mola, do tibionavicular e do nó de HENRY (p. 711). A fibrose retrátil, com mais colágeno e fibroblastos, é o que mantém a deformidade.\n\n**Resumo em uma linha.** Músculo hipotrófico e encurtado; ligamento espessado e retraído.\n\nAs partes moles estão na seção \"Partes moles: o que segura a deformidade\" do resumo.",
