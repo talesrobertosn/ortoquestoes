@@ -240,9 +240,14 @@ export interface ItemAtencao {
   contagem: number
   /** ISO do evento mais recente ligado ao item (null quando a fonte não diz). */
   ultimoEm: string | null
-  destino: { aba: string; filtro?: string; vista?: string }
+  destino: { aba: string; filtro?: string; vista?: string; grupo?: string }
   acao: string
+  /** Chaves que "Resolvido" marca nos lidos de pagamento (só itens de pagamento). */
+  resolver?: string[]
 }
+
+/** Chave de "Resolvido" de uma assinatura recusada: muda se a assinatura mudar, e aí o alerta volta. */
+export const chaveFalha = (a: { id_usuario: string; ultima_atualizacao?: string | null; criada_em?: string | null }) => `falha:${a.id_usuario}:${a.ultima_atualizacao ?? a.criada_em ?? ''}`
 
 export interface EntradaAtencao {
   eventos: Array<{ id: number; status_processamento: string; recebido_em: string }> | null
@@ -271,11 +276,16 @@ export function filaDeAtencao(e: EntradaAtencao): ItemAtencao[] {
   }
   if (e.eventos) {
     const falhas = e.eventos.filter(ev => ev.status_processamento === 'erro' && !e.lidosPagamento.has(String(ev.id)))
-    if (falhas.length) itens.push({ id: 'processador', severidade: 'critica', grupo: 'tecnico', titulo: pl(falhas.length, 'aviso do processador com falha', 'avisos do processador com falha'), causa: 'O Mercado Pago avisou uma mudança que o site não conseguiu aplicar; a assinatura da pessoa pode estar errada.', contagem: falhas.length, ultimoEm: maisRecente(falhas.map(f => f.recebido_em)), destino: { aba: 'pagamentos' }, acao: 'Ver e reprocessar' })
+    if (falhas.length) itens.push({ id: 'processador', severidade: 'critica', grupo: 'tecnico', titulo: pl(falhas.length, 'aviso do Mercado Pago com falha', 'avisos do Mercado Pago com falha'), causa: 'O Mercado Pago avisou uma mudança que o site não conseguiu aplicar; a assinatura da pessoa pode estar errada.', contagem: falhas.length, ultimoEm: maisRecente(falhas.map(f => f.recebido_em)), destino: { aba: 'pagamentos' }, acao: 'Ver e reprocessar', resolver: falhas.map(f => String(f.id)) })
   }
   if (e.assinaturas) {
-    const falha = e.assinaturas.filter(a => a.status === 'falha_pagamento')
-    if (falha.length) itens.push({ id: 'falha-pagamento', severidade: 'alta', grupo: 'receita', titulo: pl(falha.length, 'assinatura com falha no pagamento', 'assinaturas com falha no pagamento'), causa: 'A cobrança do cartão foi recusada; a pessoa pode perder o acesso.', contagem: falha.length, ultimoEm: maisRecente(falha.map(a => a.ultima_atualizacao)), destino: { aba: 'assinaturas' }, acao: 'Abrir as assinaturas' })
+    // Recusa na renovação (já pagou antes) é urgente; recusa ao assinar é uma venda que não fechou: oportunidade por 14 dias.
+    // Qualquer uma sai da fila quando o administrador marca "Resolvido" (chave guardada nos lidos de pagamento).
+    const abertas = e.assinaturas.filter(a => a.status === 'falha_pagamento' && !e.lidosPagamento.has(chaveFalha(a)))
+    const renovacao = abertas.filter(a => a.ultima_cobranca_em)
+    const aoAssinar = abertas.filter(a => !a.ultima_cobranca_em && agora - new Date(a.ultima_atualizacao ?? a.criada_em ?? 0).getTime() < 14 * 86_400_000)
+    if (renovacao.length) itens.push({ id: 'falha-pagamento', severidade: 'alta', grupo: 'receita', titulo: pl(renovacao.length, 'renovação recusada no cartão', 'renovações recusadas no cartão'), causa: 'O cartão de quem já assinava foi recusado; a pessoa pode perder o acesso.', contagem: renovacao.length, ultimoEm: maisRecente(renovacao.map(a => a.ultima_atualizacao)), destino: { aba: 'assinaturas', grupo: 'falha_pagamento' }, acao: 'Ver quem são', resolver: renovacao.map(chaveFalha) })
+    if (aoAssinar.length) itens.push({ id: 'recusado-ao-assinar', severidade: 'oportunidade', grupo: 'receita', titulo: pl(aoAssinar.length, 'tentou assinar e o cartão não passou', 'tentaram assinar e o cartão não passou'), causa: 'Quiseram pagar e o cartão foi recusado; nada foi cobrado. Vale uma carta oferecendo outro cartão ou o Pix.', contagem: aoAssinar.length, ultimoEm: maisRecente(aoAssinar.map(a => a.ultima_atualizacao ?? a.criada_em)), destino: { aba: 'assinaturas', grupo: 'falha_pagamento' }, acao: 'Ver quem são', resolver: aoAssinar.map(chaveFalha) })
     const tresDias = 3 * 86_400_000
     const vigentes = vigentesPorPessoa(e.assinaturas, agora)
     const pixVencendo = vigentes.filter(a => meioDe(a) === 'pix' && a.fim_periodo && new Date(a.fim_periodo).getTime() - agora <= tresDias && new Date(a.fim_periodo).getTime() > agora)

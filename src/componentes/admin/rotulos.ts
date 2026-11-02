@@ -24,7 +24,7 @@ export const CORTESIA = 'Cortesia'
 export type Tom = 'ok' | 'aviso' | 'ruim' | 'neutro'
 export type ChaveSituacao =
   | 'ativa' | 'cancelada_com_acesso' | 'cancelada' | 'expirada' | 'aguardando_renovacao'
-  | 'pendente' | 'falha_pagamento' | 'reembolsada' | 'pausada' | 'outra'
+  | 'pendente' | 'falha_pagamento' | 'recusado_ao_assinar' | 'reembolsada' | 'pausada' | 'outra'
 export interface Situacao {
   chave: ChaveSituacao
   /** Nome curto, para o selo: "Ativa", "Renovação desligada", "Encerrada". */
@@ -71,7 +71,10 @@ export function situacaoAssinatura(a: AssinaturaBase, agora = Date.now()): Situa
   switch (a.status) {
     case 'reembolsada': return { chave: 'reembolsada', rotulo: 'Reembolsada', tom: 'ruim', detalhe: 'Pagamento devolvido; o acesso pago foi encerrado.' }
     case 'pendente': return { chave: 'pendente', rotulo: 'Pendente', tom: 'aviso', detalhe: 'Aguardando o primeiro pagamento.' }
-    case 'falha_pagamento': return { chave: 'falha_pagamento', rotulo: 'Falha no pagamento', tom: 'ruim', detalhe: 'A cobrança não foi confirmada. Veja Financeiro › Avisos de pagamento.' }
+    // Sem nenhuma cobrança paga, a recusa foi na hora de assinar: a pessoa nunca teve acesso pago (revisão de 02/11/2026).
+    case 'falha_pagamento': return a.ultima_cobranca_em
+      ? { chave: 'falha_pagamento', rotulo: 'Renovação recusada', tom: 'ruim', detalhe: 'O cartão foi recusado na renovação e a pessoa pode ficar sem acesso.' }
+      : { chave: 'recusado_ao_assinar', rotulo: 'Cartão recusado ao assinar', tom: 'aviso', detalhe: 'Tentou assinar e o cartão não passou. Nada foi cobrado e a pessoa nunca teve acesso pago.' }
     case 'pausada': return { chave: 'pausada', rotulo: 'Pausada', tom: 'neutro', detalhe: 'Pausada no Mercado Pago: não cobra nem libera acesso.' }
     case 'vencida': return { chave: 'expirada', rotulo: 'Expirada', tom: 'neutro', detalhe: acabou ? `O acesso terminou em ${ate}.` : 'O acesso terminou.' }
     case 'cancelada':
@@ -94,6 +97,7 @@ export function proximaData(a: AssinaturaBase & { proxima_cobranca?: string | nu
   const s = situacaoAssinatura(a, agora)
   if (s.chave === 'ativa' && meioDe(a) === 'cartao') return { rotulo: 'Próxima cobrança', valor: a.proxima_cobranca ?? a.fim_periodo ?? null }
   if (s.chave === 'pendente') return { rotulo: 'Acesso até', valor: null }
+  if (s.chave === 'recusado_ao_assinar') return { rotulo: 'Tentou assinar em', valor: a.criada_em ?? a.inicio_periodo ?? null }
   if (s.chave === 'reembolsada') return { rotulo: 'Reembolsada em', valor: a.fim_periodo ?? a.cancelada_em ?? null }
   if (s.chave === 'ativa' || s.chave === 'cancelada_com_acesso') return { rotulo: 'Acesso até', valor: a.fim_periodo ?? null }
   const acabou = !!a.fim_periodo && new Date(a.fim_periodo).getTime() <= agora

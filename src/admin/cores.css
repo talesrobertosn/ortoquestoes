@@ -259,3 +259,6 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 }
 #a3-pessoas .a3-chip span { min-width: 20px; height: 20px; font-size: 11.5px; }
 @media (max-width: 360px) { .a3-heroi__numero span { font-size: 10px !important; } .a3-heroi__numero b { font-size: 20px !important; } button.a3-heroi__numero { padding: 8px 8px; } }
+.a3-fila__botoes { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.a3-detalhes-tecnicos summary { cursor: pointer; font-size: 12.5px; color: var(--ardosia); } .a3-detalhes-tecnicos[open] summary { margin-bottom: 4px; }
+@media (max-width: 560px) { .a3-fila__item .a3-fila__botoes { grid-column: 2; justify-content: flex-start; } .a3-fila__item .a3-fila__botoes .a3-botao { grid-column: auto; } }

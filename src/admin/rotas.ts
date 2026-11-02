@@ -23,7 +23,7 @@ export type FiltroPessoas = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | '
 export type VistaTriagem = 'suspeitas' | 'faceis' | 'temas' | 'relatos' | 'avaliacoes'
 export type Periodo = 7 | 30 | 90
 
-export interface DefParte { id: Parte; rotulo: string; pergunta: string }
+export interface DefParte { id: Parte; rotulo: string; pergunta: string; /** Nome antigo, para a busca ainda achar (revisão de 02/11/2026). */ antes?: string }
 export interface DefArea { id: Area; rotulo: string; curto: string; icone: NomeIconeAdmin; partes: DefParte[] }
 
 /**
@@ -45,10 +45,10 @@ export const AREAS: DefArea[] = [
     { id: 'perfis', rotulo: 'Perfis e origem', pergunta: 'Quem estuda aqui (etapa, prova, estado, serviço) e de onde vêm os cadastros.' },
   ] },
   { id: 'receita', rotulo: 'Financeiro', curto: 'Finanças', icone: 'receita', partes: [
-    { id: 'financeiro', rotulo: 'Ganhos', pergunta: 'Quanto entrou, quanto deve entrar e de onde vem.' },
-    { id: 'assinaturas', rotulo: 'Assinaturas', pergunta: 'Quem tem acesso pago, por qual plano e meio, e até quando.' },
-    { id: 'cobrancas', rotulo: 'Pagamentos', pergunta: 'Cada pagamento recebido, estimado ou reembolsado, dia a dia.' },
-    { id: 'pagamentos', rotulo: 'Avisos de pagamento', pergunta: 'Algum aviso do Mercado Pago falhou e precisa ser reprocessado?' },
+    { id: 'financeiro', rotulo: 'Resumo', pergunta: 'Quanto entrou, quanto deve entrar e de onde vem.', antes: 'Ganhos receita' },
+    { id: 'assinaturas', antes: 'Assinaturas', rotulo: 'Assinantes', pergunta: 'Quem tem acesso pago, por qual plano e meio, e até quando.' },
+    { id: 'cobrancas', rotulo: 'Extrato', pergunta: 'Cada pagamento recebido, estimado ou reembolsado, dia a dia.', antes: 'Pagamentos cobranças' },
+    { id: 'pagamentos', rotulo: 'Avisos do Mercado Pago', pergunta: 'As mensagens automáticas que o Mercado Pago manda ao site. Só as que falharam pedem você.', antes: 'Avisos de pagamento processador' },
   ] },
   { id: 'estudo', rotulo: 'Conteúdo', curto: 'Conteúdo', icone: 'estudo', partes: [
     { id: 'conteudo', rotulo: 'Relatos e avaliações', pergunta: 'Que questão ou relato precisa de revisão agora?' },
@@ -71,7 +71,7 @@ export const AREAS: DefArea[] = [
 /** Abas dentro de uma tela: a primeira é a padrão. O nome e a pergunta de cada aba ficam aqui. */
 const ABAS_DE: Partial<Record<Parte, DefParte[]>> = {
   financeiro: [
-    { id: 'financeiro', rotulo: 'Ganhos', pergunta: 'Quanto entrou de fato, como se compõe e como se compara.' },
+    { id: 'financeiro', rotulo: 'Resumo', pergunta: 'Quanto entrou de fato, como se compõe e como se compara.' },
     { id: 'previsao', rotulo: 'Previsão', pergunta: 'O que deve entrar, com as hipóteses à vista; nunca somado ao que já entrou.' },
   ],
   ajustes: [
@@ -109,6 +109,8 @@ const LEGADO: Record<string, Parte> = {
 export const PERIODOS: Periodo[] = [7, 30, 90]
 export const PERIODO_PADRAO: Periodo = 30
 const COM_PERIODO = new Set<Parte>(['comando', 'crescimento', 'retencao', 'financeiro'])
+export type GrupoAssinatura = 'vigentes' | 'pendente' | 'falha_pagamento' | 'encerradas' | 'todas'
+const GRUPOS: GrupoAssinatura[] = ['vigentes', 'pendente', 'falha_pagamento', 'encerradas', 'todas']
 const FILTROS: FiltroPessoas[] = ['todos', 'online', 'hoje', 'ativos', 'novos', 'novos_parados', 'assinantes', 'parados', 'planos']
 const VISTAS: VistaTriagem[] = ['suspeitas', 'faceis', 'temas', 'relatos', 'avaliacoes']
 /** Só ids de questão no endereço: nada de e-mail, espaço ou texto livre. */
@@ -118,7 +120,7 @@ const ID_QUESTAO = /^[A-Za-z0-9][A-Za-z0-9_.-]*$/
  * O estado navegável mora no endereço: F5 e links abrem no mesmo lugar e Voltar passa pelas partes.
  * Nada pessoal (nome, e-mail, busca digitada) vai para o endereço.
  */
-export interface EstadoUrl { parte: Parte; filtro: FiltroPessoas; vista: VistaTriagem; id: string | null; periodo: Periodo; /** Aba dentro da tela (Crescimento, Financeiro, Ajustes); vai no endereço como `sub`. */ sub: Parte }
+export interface EstadoUrl { parte: Parte; filtro: FiltroPessoas; vista: VistaTriagem; id: string | null; periodo: Periodo; /** Aba dentro da tela (Crescimento, Financeiro, Ajustes); vai no endereço como `sub`. */ sub: Parte; /** Grupo da lista de assinantes (?grupo=falha_pagamento…). */ grupo: GrupoAssinatura }
 
 export function lerUrl(consulta: URLSearchParams): EstadoUrl {
   const bruta = consulta.get('aba') ?? ''
@@ -137,6 +139,7 @@ export function lerUrl(consulta: URLSearchParams): EstadoUrl {
   return {
     parte, sub: sub ?? abas[0] ?? parte,
     filtro: FILTROS.includes(filtro) ? filtro : 'todos',
+    grupo: GRUPOS.includes(consulta.get('grupo') as GrupoAssinatura) ? consulta.get('grupo') as GrupoAssinatura : 'vigentes',
     vista: vistaLegada ?? (VISTAS.includes(vista) ? vista : 'suspeitas'),
     id: id && id.length <= 80 && ID_QUESTAO.test(id) ? id : null,
     periodo: PERIODOS.includes(periodo) ? periodo : PERIODO_PADRAO,
@@ -144,12 +147,13 @@ export function lerUrl(consulta: URLSearchParams): EstadoUrl {
 }
 
 /** Só o que vale para a parte entra no endereço, e só quando foge do padrão. */
-export function urlDe({ parte, filtro, vista, id, periodo, sub }: EstadoUrl): string {
+export function urlDe({ parte, filtro, vista, id, periodo, sub, grupo }: EstadoUrl): string {
   const c = new URLSearchParams()
   if (parte !== 'comando') c.set('aba', parte)
   if (parte === 'usuarios' && filtro !== 'todos') c.set('filtro', filtro)
   if (parte === 'conteudo' && vista !== 'suspeitas') c.set('vista', vista)
   if (parte === 'questoes' && id) c.set('id', id)
+  if (parte === 'assinaturas' && grupo && grupo !== 'vigentes') c.set('grupo', grupo)
   const abas = abasDe(parte)
   if (abas.length && sub !== abas[0].id && abas.some(a => a.id === sub)) c.set('sub', sub)
   if (COM_PERIODO.has(parte) && periodo !== PERIODO_PADRAO) c.set('periodo', String(periodo))

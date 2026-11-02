@@ -49,9 +49,12 @@ const assinaturas = [
   assinatura(6, 'mensal', 'cartao', 'ativa', 20), assinatura(10, 'semestral', 'pix', 'ativa', 160), assinatura(9, 'mensal', 'cartao', 'cancelada', 50, { cancelar_ao_fim: true, cancelada_em: iso(agora - 10 * DIA) }),
   assinatura(2, 'mensal', 'pix', 'pendente', 1),
   assinatura(7, 'mensal', 'cartao', 'cancelada', 15, { cancelar_ao_fim: true, cancelada_em: iso(agora - 30 * MIN) }),
+  // Cartão recusado: ao assinar (nunca pagou) e na renovação (já tinha pago antes).
+  assinatura(4, 'anual', 'cartao', 'falha_pagamento', 2, { ultima_cobranca_em: null }),
+  assinatura(8, 'mensal', 'cartao', 'falha_pagamento', 40, { ultima_cobranca_em: iso(agora - 35 * DIA), ultima_atualizacao: iso(agora - 5 * DIA) }),
 ]
 const precos = { mensal: 39.9, semestral: 199, anual: 349 }
-const cobrancasReais = assinaturas.filter(a => a.status !== 'pendente').map(a => ({ id_usuario: a.id_usuario, plano: a.plano, meio: a.meio, valor: precos[a.plano], em: a.ultima_cobranca_em, id_pagamento: String(1e9 + Math.floor(Math.random() * 1e6)), situacao: 'paga', usuario: a.usuario, nome: a.nome }))
+const cobrancasReais = assinaturas.filter(a => a.status !== 'pendente' && a.ultima_cobranca_em).map(a => ({ id_usuario: a.id_usuario, plano: a.plano, meio: a.meio, valor: precos[a.plano], em: a.ultima_cobranca_em, id_pagamento: String(1e9 + Math.floor(Math.random() * 1e6)), situacao: 'paga', usuario: a.usuario, nome: a.nome }))
 const eventos = [
   { id: 1, id_evento: 'ev-1', tipo: 'payment', id_recurso: '123', status_processamento: 'erro', erro: 'pagamento_nao_encontrado', recebido_em: iso(agora - 2 * HORA), processado_em: iso(agora - 2 * HORA), id_usuario: u(5).id_usuario, nome: u(5).nome, usuario: u(5).email },
   { id: 2, id_evento: 'ev-2', tipo: 'subscription_preapproval', id_recurso: '456', status_processamento: 'processado', erro: null, recebido_em: iso(agora - 5 * HORA), processado_em: iso(agora - 5 * HORA) },
@@ -64,6 +67,11 @@ export const rpcs = {
   obter_estado_conta: () => [{ status_assinatura: 'ativa', cancelar_ao_fim: false, fim_periodo: null }],
   sinal_aparelho: () => [{ ativo: true, outro_aparelho: null }],
   listar_assinaturas_admin: () => assinaturas,
+  assinatura_usuario_admin: ({ p_usuario }) => ({
+    assinaturas: assinaturas.filter(a => a.id_usuario === p_usuario).map((a, i) => ({ id: `as-${i}`, plano: a.plano, status: a.status, meio: a.meio, id_externo: 'abc123', inicio_periodo: a.inicio_periodo, fim_periodo: a.fim_periodo,
+      cancelar_ao_fim: a.cancelar_ao_fim, cancelada_em: a.cancelada_em ?? null, ultima_cobranca_id: a.ultima_cobranca_em ? '999' : null, ultima_cobranca_em: a.ultima_cobranca_em, criada_em: a.criada_em, atualizada_em: a.ultima_atualizacao, valor: precos[a.plano] })),
+    pix: [], eventos: [], conta_teste: false,
+  }),
   listar_eventos_pagamento_admin: () => eventos,
   resumo_admin: () => [{ online_agora: 4, usuarios: usuarios.length, novos_7d: 3, ativos_hoje: 7, ativos_7d: 9, ativos_30d: 12, respondidas_hoje: 170, respondidas_7d: 838, assinantes_vigentes: 5 }],
   contadores_admin: () => [{ usuarios: usuarios.length, online_agora: 4, relatos_abertos: 2, avaliacoes_para_ler: 1 }],

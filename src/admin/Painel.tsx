@@ -92,7 +92,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
   useEffect(() => { const f = () => definirRolou(window.scrollY > 4); f(); window.addEventListener('scroll', f, { passive: true }); return () => window.removeEventListener('scroll', f) }, [])
 
   const nav: Nav = useMemo(() => {
-    const montar = (parteNova: Parte, extra?: Partial<Omit<EstadoUrl, 'parte'>>) => urlDe({ ...estado, filtro: 'todos', ...(parteNova === estado.parte ? {} : { id: parteNova === 'questoes' ? estado.id : null }), ...extra, parte: parteNova })
+    const montar = (parteNova: Parte, extra?: Partial<Omit<EstadoUrl, 'parte'>>) => urlDe({ ...estado, filtro: 'todos', grupo: 'vigentes', ...(parteNova === estado.parte ? {} : { id: parteNova === 'questoes' ? estado.id : null }), ...extra, parte: parteNova })
     return {
       estado,
       ir: (parteNova, extra) => { const outra = parteNova !== estado.parte; navegar(montar(parteNova, extra), !outra); if (outra) window.scrollTo({ top: 0 }) },
@@ -125,7 +125,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
   const clique = (destino: Parte) => (e: MouseEvent) => { if (e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return; e.preventDefault(); nav.ir(destino) }
 
   const itensPaleta: ItemPaleta[] = useMemo(() => [
-    ...AREAS.flatMap(a => a.partes.map(x => ({ id: `parte-${x.id}`, grupo: 'Ir para', titulo: x.rotulo, detalhe: a.rotulo, icone: a.icone, palavras: x.pergunta, executar: () => nav.ir(x.id) }))),
+    ...AREAS.flatMap(a => a.partes.map(x => ({ id: `parte-${x.id}`, grupo: 'Ir para', titulo: x.rotulo, detalhe: a.rotulo, icone: a.icone, palavras: `${x.pergunta} ${x.antes ?? ''}`, executar: () => nav.ir(x.id) }))),
     { id: 'acao-atualizar', grupo: 'Ações', titulo: 'Atualizar os dados do painel', icone: 'atualizar' as const, executar: () => void p.atualizar() },
     { id: 'acao-tema', grupo: 'Ações', titulo: 'Trocar entre claro e escuro', icone: 'lua' as const, executar: alternar },
     { id: 'acao-online', grupo: 'Ações', titulo: 'Ver quem está online', icone: 'pessoas' as const, executar: () => nav.ir('usuarios', { filtro: 'online' }) },

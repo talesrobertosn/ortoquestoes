@@ -87,7 +87,7 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
           <div><dt>Estimado (à parte)</dt><dd>{reais(r.reconstruida)}</dd></div>
           <div><dt>Primeiras assinaturas</dt><dd>{r.novas.atual} <VariacaoTexto v={r.novas} curto /></dd></div>
           <div><dt>Renovações</dt><dd>{r.renovacoes}</dd></div>
-          <div><dt>Pix · cartão</dt><dd>{reais(r.porMeio.pix)} · {reais(r.porMeio.cartao)}</dd></div>
+          <div><dt>Cartão · Pix</dt><dd>{reais(r.porMeio.cartao)} · {reais(r.porMeio.pix)}</dd></div>
         </dl>
       </div>
     </Quadro>
@@ -152,7 +152,7 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
     <div className="a3-atalhos-finance">
       <a href={nav.link('cobrancas')} onClick={e => { e.preventDefault(); nav.ir('cobrancas') }}><Icone nome="receita" tamanho={16} /><span>Ver cada pagamento<small>{todas.length} cobranças, dia a dia</small></span><Icone nome="direita" tamanho={15} /></a>
       <a href={nav.link('assinaturas')} onClick={e => { e.preventDefault(); nav.ir('assinaturas') }}><Icone nome="pessoas" tamanho={16} /><span>Ver os assinantes<small>quem paga e até quando</small></span><Icone nome="direita" tamanho={15} /></a>
-      <a href={nav.link('pagamentos')} onClick={e => { e.preventDefault(); nav.ir('pagamentos') }}><Icone nome="alerta" tamanho={16} /><span>Avisos de pagamento<small>{p.errosPagamento ? `${plural(p.errosPagamento, 'aviso precisa', 'avisos precisam')} de atenção` : 'nenhum com problema'}</small></span><Icone nome="direita" tamanho={15} /></a>
+      <a href={nav.link('pagamentos')} onClick={e => { e.preventDefault(); nav.ir('pagamentos') }}><Icone nome="alerta" tamanho={16} /><span>Avisos do Mercado Pago<small>{p.errosPagamento ? `${plural(p.errosPagamento, 'aviso precisa', 'avisos precisam')} de atenção` : 'nenhum com problema'}</small></span><Icone nome="direita" tamanho={15} /></a>
     </div>
     <details className="a3-painel a3-metodo">
       <summary>Mês a mês (tabela completa, com churn e CSV)</summary>

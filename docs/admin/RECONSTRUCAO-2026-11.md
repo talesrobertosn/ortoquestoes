@@ -155,3 +155,20 @@ Pedido do Tales: "faz esses botões serem clicáveis, mostrar fácil assinantes 
   Online agora, Assinantes hoje, Viram os planos hoje, Bateram o limite, Estudaram hoje, Cadastros hoje, Assinantes
   que não entraram, Viram os planos em 30 dias.
 - A barra do celular deixou de repetir "Agora / Agora" (mostra "Painel" em cima).
+
+## Revisão de 02/11/2026 (fase 1 do diagnóstico): falhas de pagamento e Financeiro com nomes claros
+
+Base: `docs/admin/DIAGNOSTICO-UX-2026-11-02.md`. Só tela; nada muda no banco nem no pagamento.
+
+- "Falha no pagamento" virou dois casos: **Cartão recusado ao assinar** (sem nenhuma cobrança paga; nada foi cobrado, a
+  pessoa nunca teve acesso) e **Renovação recusada** (já tinha pago; pode perder o acesso). O primeiro é oportunidade
+  na fila por 14 dias; o segundo continua alta.
+- **Resolvido** em todo alerta de pagamento (fila "Pede ação", lista de assinantes, avisos do Mercado Pago), guardado no
+  servidor nos lidos de pagamento (chave `falha:<pessoa>:<atualização>`), com Desfazer. Se a assinatura muda, o alerta volta.
+- A fila leva direto ao grupo certo (`?aba=assinaturas&grupo=falha_pagamento`).
+- Ficha › Assinatura: recusa ao assinar mostra "Tentou assinar em" e "Cobrado: nada", com um convite para escrever
+  uma carta; códigos técnicos recolhidos em "Detalhes técnicos".
+- Financeiro: Resumo, Assinantes, Extrato e Avisos do Mercado Pago (a busca ainda acha pelos nomes antigos). Avisos com
+  dois filtros úteis ("Precisam de você", "Tudo certo") e o título sem repetir.
+- Erros de texto: "Confirmado Confirmado" no Extrato, "Pix · cartão" invertido no Resumo, e os textos dos interruptores
+  de Ajustes que descreviam o estado oposto.

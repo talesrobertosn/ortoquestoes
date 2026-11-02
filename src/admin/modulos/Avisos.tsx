@@ -10,7 +10,7 @@ import { combina, dataHora, haQuanto, inteiro, normalizar } from '../ui/formato'
 import { Busca, Cabeca, Carregando, Estado, Faixa, Filtro, Situacao } from '../ui/kit'
 import { avisoRapido, confirmar } from '../ui/sobreposicoes'
 
-type Status = 'erro' | 'todos' | 'processado' | 'ignorado' | 'recebido'
+type Status = 'erro' | 'certo' | 'todos'
 const TOM: Record<string, 'ok' | 'aviso' | 'erro' | 'neutro'> = { processado: 'ok', ignorado: 'neutro', recebido: 'aviso', erro: 'erro' }
 
 /**
@@ -28,7 +28,7 @@ export default function Avisos() {
   const [reprocessando, definirReprocessando] = useState<number | null>(null)
   const parte = defParte('pagamentos')
   const termo = normalizar(busca.trim())
-  const visiveis = useMemo(() => (eventos ?? []).filter(e => (status === 'todos' || e.status_processamento === status) && combina([e.id_evento, e.tipo, TIPOS_EVENTO[e.tipo ?? ''], e.id_recurso, e.erro, nomeErro(e.erro), e.nome, e.usuario], termo)), [eventos, status, termo])
+  const visiveis = useMemo(() => (eventos ?? []).filter(e => (status === 'todos' || (status === 'certo' ? ['processado', 'ignorado'].includes(e.status_processamento) : e.status_processamento === 'erro' && !lidos.has(String(e.id)))) && combina([e.id_evento, e.tipo, TIPOS_EVENTO[e.tipo ?? ''], e.id_recurso, e.erro, nomeErro(e.erro), e.nome, e.usuario], termo)), [eventos, status, termo])
   if (!eventos) return p.eventosQ.erro ? <Estado tipo="erro" titulo="Os avisos não carregaram" texto={p.erroDados} /> : <Carregando linhas={6} texto="Carregando os avisos…" />
 
   const naoVistos = eventos.filter(e => e.status_processamento === 'erro' && !lidos.has(String(e.id)))
@@ -49,8 +49,8 @@ export default function Avisos() {
   return <div className="a3-pilha a3-pilha--larga">
     <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Últimos ${inteiro(eventos.length)} avisos. "Ignorado" é normal: são avisos que não mudam nada.`} />
     {naoVistos.length > 0 && <Faixa tom="erro" titulo={`${naoVistos.length} ${naoVistos.length === 1 ? 'aviso precisa' : 'avisos precisam'} de atenção`}
-      acao={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => marcar(naoVistos.map(e => String(e.id)))}><Icone nome="certo" tamanho={14} />Marcar todos como vistos</button>}>
-      Abra cada um, confira no Mercado Pago e reprocesse se o pagamento existir. Marcar como visto só tira o alerta; não muda nada na assinatura.
+      acao={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => marcar(naoVistos.map(e => String(e.id)))}><Icone nome="certo" tamanho={14} />Marcar todos como resolvidos</button>}>
+      Abra cada um, confira no Mercado Pago e reprocesse se o pagamento existir. "Resolvido" só tira o alerta (vale no celular e no computador); não muda nada na assinatura.
     </Faixa>}
     {!comDono && eventos.length > 0 && <Faixa>Para ver de quem é cada aviso e abrir a ficha da pessoa, cole no Supabase a {PARTE_COBRANCAS}.</Faixa>}
 
@@ -58,7 +58,9 @@ export default function Avisos() {
       <div className="a3-caixa-entrada__lista">
         <div className="a3-filtros"><Busca valor={busca} aoMudar={definirBusca} rotulo={comDono ? 'Buscar pessoa, tipo, número ou erro' : 'Buscar tipo, número ou erro'} /></div>
         <div className="a3-filtros" style={{ paddingTop: 0 }} role="group" aria-label="Situação do aviso">
-          {(['erro', 'todos', 'processado', 'ignorado', 'recebido'] as const).map(s => <Filtro key={s} ativo={status === s} aoClicar={() => definirStatus(s)} contagem={s === 'todos' ? eventos.length : eventos.filter(e => e.status_processamento === s).length}>{s === 'todos' ? 'Todos' : s === 'ignorado' ? 'Ignorados' : STATUS_EVENTO[s]}</Filtro>)}
+          <Filtro ativo={status === 'erro'} aoClicar={() => definirStatus('erro')} contagem={eventos.filter(e => e.status_processamento === 'erro' && !lidos.has(String(e.id))).length}>Precisam de você</Filtro>
+          <Filtro ativo={status === 'certo'} aoClicar={() => definirStatus('certo')} contagem={eventos.filter(e => ['processado', 'ignorado'].includes(e.status_processamento)).length}>Tudo certo</Filtro>
+          <Filtro ativo={status === 'todos'} aoClicar={() => definirStatus('todos')} contagem={eventos.length}>Todos</Filtro>
         </div>
         {visiveis.length === 0 ? <div style={{ padding: 20 }}><Estado icone={status === 'erro' ? 'certo' : undefined} titulo={status === 'erro' ? 'Nenhum aviso com problema' : 'Nenhum aviso neste filtro'} texto={status === 'erro' ? 'O Mercado Pago e o site estão de acordo.' : undefined} /></div> :
           <ul className="a3-fila-avisos">{visiveis.map(e => {
@@ -66,8 +68,8 @@ export default function Avisos() {
             return <li key={e.id}><button type="button" className="a3-fila-avisos__item" aria-current={atual?.id === e.id ? 'true' : undefined} onClick={() => abrir(e.id)}>
               <span className={'a3-ponto' + (erro && !visto ? ' a3-ponto--erro' : '')} aria-hidden="true" />
               <span className="a3-fila-avisos__texto">
-                <span className="a3-nome">{e.nome ?? e.usuario ?? TIPOS_EVENTO[e.tipo ?? ''] ?? 'Aviso do Mercado Pago'}</span>
-                <span className="a3-sub">{erro && e.erro ? nomeErro(e.erro) : TIPOS_EVENTO[e.tipo ?? ''] ?? e.tipo ?? '—'}</span>
+                <span className="a3-nome">{TIPOS_EVENTO[e.tipo ?? ''] ?? 'Aviso do Mercado Pago'}</span>
+                <span className="a3-sub">{[e.nome ?? e.usuario ?? 'pessoa não identificada', erro && e.erro ? nomeErro(e.erro) : null].filter(Boolean).join(' · ')}</span>
               </span>
               <span className="a3-fila-avisos__quando">{haQuanto(e.recebido_em)}</span>
             </button></li>
@@ -88,7 +90,7 @@ function Detalhe({ e, visto, comDono, reprocessando, aoReprocessar, aoVisto, aoF
   const link = linkDoEvento(e)
   return <div className="a3-pilha">
     <div style={{ display: 'grid', gap: 6 }}>
-      <Situacao tom={erro && visto ? 'neutro' : TOM[e.status_processamento] ?? 'neutro'}>{erro && visto ? 'Visto' : STATUS_EVENTO[e.status_processamento] ?? e.status_processamento}</Situacao>
+      <Situacao tom={erro && visto ? 'neutro' : TOM[e.status_processamento] ?? 'neutro'}>{erro && visto ? 'Resolvido' : STATUS_EVENTO[e.status_processamento] ?? e.status_processamento}</Situacao>
       <h3 className="a3-titulo-2">{TIPOS_EVENTO[e.tipo ?? ''] ?? 'Aviso do Mercado Pago'}</h3>
       <p className="a3-mudo">Recebido em {dataHora(e.recebido_em)}{e.processado_em ? ` · processado em ${dataHora(e.processado_em)}` : ' · ainda na fila'}</p>
     </div>
@@ -96,11 +98,11 @@ function Detalhe({ e, visto, comDono, reprocessando, aoReprocessar, aoVisto, aoF
     <dl className="a3-pares">
       {comDono && <div><dt>Pessoa</dt><dd>{e.id_usuario ? <>{e.nome ?? e.usuario}{e.nome && e.usuario && <span className="a3-mudo" style={{ display: 'block', fontWeight: 400 }}>{e.usuario}</span>}</> : <span className="a3-mudo" style={{ fontWeight: 400 }}>não deu para ligar a uma pessoa</span>}</dd></div>}
       <div><dt>Número no Mercado Pago</dt><dd className="num">{e.id_recurso ?? '—'}</dd></div>
-      <div><dt>Códigos técnicos</dt><dd className="a3-codigo">evento {e.id_evento} · tipo {e.tipo ?? '—'}{e.erro ? ` · erro ${e.erro}` : ''}</dd></div>
     </dl>
+    <details className="a3-detalhes-tecnicos"><summary>Detalhes técnicos</summary><span className="a3-codigo">evento {e.id_evento} · tipo {e.tipo ?? '—'}{e.erro ? ` · erro ${e.erro}` : ''}</span></details>
     <div className="a3-acoes-linha">
       {erro && <button type="button" className="a3-botao" disabled={reprocessando !== null} aria-busy={reprocessando === e.id} onClick={aoReprocessar}><Icone nome="atualizar" tamanho={15} />{reprocessando === e.id ? 'Reprocessando… aguardando o resultado' : 'Reprocessar'}</button>}
-      {erro && <button type="button" className="a3-botao a3-botao--contorno" onClick={() => aoVisto(!visto)}><Icone nome={visto ? 'olho' : 'certo'} tamanho={15} />{visto ? 'Marcar como não visto' : 'Marcar como visto'}</button>}
+      {erro && <button type="button" className="a3-botao a3-botao--contorno" onClick={() => aoVisto(!visto)}><Icone nome={visto ? 'olho' : 'certo'} tamanho={15} />{visto ? 'Reabrir' : 'Marcar resolvido'}</button>}
       {e.id_usuario && <button type="button" className="a3-botao a3-botao--contorno" onClick={aoFicha}><Icone nome="usuario" tamanho={15} />Ficha e assinatura</button>}
       {link && <a className="a3-botao a3-botao--fantasma" href={link} target="_blank" rel="noopener noreferrer"><Icone nome="externo" tamanho={15} />Abrir no Mercado Pago</a>}
     </div>

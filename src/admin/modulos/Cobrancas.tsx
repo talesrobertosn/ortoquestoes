@@ -94,8 +94,8 @@ export default function Cobrancas() {
         <span className="a3-metrica__linha">{inteiro(totais.quantidade)} {totais.quantidade === 1 ? 'cobrança' : 'cobranças'}{meio !== 'todos' ? ` · só ${rotuloMeio(meio)}` : ''}</span>
       </div>
       <dl className="a3-pares">
-        <div><dt><SeloQualidade q="confirmado" sempre /> Confirmado</dt><dd>{reais(totais.confirmado)}</dd></div>
-        <div><dt><SeloQualidade q="estimado" sempre /> Estimado</dt><dd>{reais(totais.estimado)} <span className="a3-mudo">· {totais.estimadas}</span></dd></div>
+        <div><dt><SeloQualidade q="confirmado" sempre /></dt><dd>{reais(totais.confirmado)}</dd></div>
+        <div><dt><SeloQualidade q="estimado" sempre /></dt><dd>{reais(totais.estimado)} <span className="a3-mudo">· {totais.estimadas}</span></dd></div>
         <div><dt>Cartão · Pix</dt><dd>{reais(totais.cartao)} · {reais(totais.pix)} {totais.bruto ? <span className="a3-mudo">({pct(Math.round((totais.pix / totais.bruto) * 100))} Pix)</span> : null}</dd></div>
         <div><dt>Devolvido (fora do total)</dt><dd style={{ color: totais.devolvido ? 'var(--a3-erro)' : undefined }}>{reais(totais.devolvido)} <span className="a3-mudo">· {totais.devolvidas}</span></dd></div>
       </dl>
