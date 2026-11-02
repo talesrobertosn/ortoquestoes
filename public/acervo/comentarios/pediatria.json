@@ -22577,6 +22577,22 @@
    "comentarioSha256": "49792ad5fef7fe331102a80f01b1573d836d300b54411a8c98159654ee26ad12"
   }
  },
+ "pediatria-1057": {
+  "conceito": "Em criança pequena, a fratura do antebraço tem um grande aliado: o osso remodela. O Rockwood & Wilkins lembra que a angulação residual é muito mais bem tolerada nas crianças mais novas, pelo maior potencial de remodelação (cap. 10, Indications). Quanto mais perto da fise e mais no plano de movimento da articulação, melhor a correção. Por isso, o limite aceito é maior no perfil do que no PA.\n\nOs números, porém, não são unânimes. Uma revisão sistemática aponta a falta de dados para sustentar os limites na diáfise (Acceptable angulation criteria in pediatric midshaft forearm fractures). No rádio distal, são aceitos de 25 a 35 graus sagitais antes dos 5 anos (Rockwood & Wilkins, cap. 9, Tabela 9-1). Um estudo de 106 crianças tolerou até 30 graus de inclinação posterior antes dos 8 anos. Essas referências ficam muito perto da resposta da banca, de 20 graus no PA e 30 no perfil.\n\nCuidado para não generalizar para os mais velhos: as mesmas fontes caem para 10 a 15 graus na faixa de 9 a 13 anos.",
+  "correta": "**D: 20º e 30º.** São valores coerentes com a alta capacidade de remodelação nessa idade, e o limite no perfil é maior, como no rádio distal (Rockwood & Wilkins, cap. 9, Tabela 9-1).",
+  "alerta": "Os limites variam conforme o local da fratura e a fonte, e uma revisão sistemática aponta poucos dados para a diáfise. Os livros locais não trazem exatamente os valores 20 e 30 graus para ossos do antebraço aos 5 anos. Letra D mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Rígido demais.** Cinco e 10 graus exigiriam reduzir fraturas que remodelariam sozinhas em uma criança de 5 anos.",
+   "B": "**Fica no limite do adolescente.** Valores por volta de 10 a 20 graus aparecem em faixas de idade maiores.",
+   "C": "**A próxima.** Acerta o perfil, mas é restritiva demais no PA, para a idade.",
+   "E": "**Generoso demais.** Quarenta graus estão além do que é aceito nos dados consultados, mesmo no rádio distal, cujo limite vai a cerca de 35 graus (Rockwood & Wilkins, cap. 9)."
+  },
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 9 (Tabela 9-1) e cap. 10"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "pediatria-1058": {
   "conceito": "Na coxa vara do desenvolvimento, o problema nasce de um defeito na ossificação da parte medial do colo: a fise fica cada vez mais vertical, e o peso do corpo vira força de cisalhamento (Tachdjian, cap. 16, p. 618 a 620). Tudo o que se faz na cirurgia deriva dessa imagem. Para curar, é preciso **deitar a fise**, trocando cisalhamento por compressão.\n\nÉ exatamente a ideia de PAUWELS, o autor das análises de força no quadril reproduzidas pelo capítulo (Fig. 16.5). A osteotomia em Y dele é um procedimento **valgizante no fêmur proximal**. O Tachdjian cita a série tratada com a técnica: se o ângulo de HILGENREINER-epifisário cai para menos de 40 graus, o resultado é mais seguro (cap. 16, p. 622).\n\nRepare no que as outras alternativas têm em comum: operam em outro lugar. Três delas mexem na pelve, para cobrir a cabeça femoral. Numa doença do colo, elas não corrigem o eixo.\n\n> **Na prova:** coxa vara se corrige no fêmur proximal, em valgo. PAUWELS (em Y) é o nome clássico.",
   "correta": "**D: osteotomia de Pauwels.** É a osteotomia valgizante em Y do fêmur proximal, citada pelo Tachdjian justamente na coxa vara (cap. 16, p. 619 e 622). Ela horizontaliza a fise e reduz o cisalhamento.",
@@ -22827,6 +22843,22 @@
   },
   "referencias": [
    "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 32 (Mielomeningocele), p. 1531 e 1532"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "pediatria-1074": {
+  "conceito": "A artrogripose não é um diagnóstico único, e sim um sinal: múltiplas contraturas congênitas, com causas muito variadas. GOLDBERG, autor do livro The Dysmorphic Child, ajudou a organizar esse grupo para o ortopedista (citado no Tachdjian, cap. 8, referência 71), separando quadros como a amioplasia, as artrogriposes distais e as síndromes com sinostoses.\n\nPara resolver a questão, basta procurar o nome que combina com \"sinostose\". NIEVERGELT é o nome ligado a uma displasia mesomélica, com sinostoses em membros, e PEARLMAN a um quadro com sinostoses do carpo e do tarso. A OMT, classificação citada pelo Tachdjian, inclui a síndrome de \"sinostoses múltiplas\" entre as síndromes do membro superior (cap. 12, p. 336, Box 12.3).\n\nAs demais alternativas vão por outros caminhos: a amioplasia é a forma clássica, sem sinostose; a aracnodactilia fala de dedos longos; FREEMAN-SHELDON tem um rosto típico (Tachdjian, cap. 12, Fig. 12.9), e MÖBIUS é uma sequência com paralisia de nervos cranianos.",
+  "correta": "**D: síndrome de Nievergelt-Pearlman.** É o único nome ligado a sinostoses, e por isso é a resposta pela eliminação. Veja o alerta sobre a fonte.",
+  "alerta": "A classificação de GOLDBERG não foi encontrada nos livros locais nem nas fontes abertas consultadas; ela só aparece como referência (Tachdjian, cap. 8). O comentário segue o raciocínio de eliminação e o gabarito da banca, e deve ser revisto quando houver essa fonte.",
+  "incorretas": {
+   "A": "**A forma clássica.** A amioplasia é a artrogripose mais típica, com contraturas simétricas, sem ser uma síndrome de sinostoses.",
+   "B": "**Dedos longos.** A aracnodactilia é o nome descritivo de um grupo diferente, que evoca a hipermobilidade, e não a sinostose.",
+   "C": "**Artrogripose distal.** A FREEMAN-SHELDON tem uma face típica (Tachdjian, cap. 12, Fig. 12.9) e contraturas distais.",
+   "E": "**Nervos cranianos.** A sequência de MÖBIUS é lembrada pela paralisia facial, e o Tachdjian a cita entre as síndromes com alterações de membro (cap. 12, p. 336)."
+  },
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 8, referência 71; cap. 12, p. 336, Box 12.3, e Fig. 12.9"
   ],
   "geradoEm": "2026-11-02",
   "conferido": false

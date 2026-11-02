@@ -13,7 +13,7 @@ from __future__ import annotations
 import re
 from difflib import SequenceMatcher
 
-LIVRO = re.compile(r"Rockwood|Campbell|Tachdjian|Green|Netter|Callaghan|Lovell|Skeletal Trauma|AO Principles|Siz[ií]nio|Hoppenfeld|Exame F[ií]sico em Ortopedia", re.I)
+LIVRO = re.compile(r"Rockwood|Campbell|Tachdjian|Green|Netter|Callaghan|Lovell|Skeletal Trauma|AO Principles|Siz[ií]nio|Hoppenfeld|Exame F[ií]sico em Ortopedia|StatPearls|PMC\d|PubMed \d|Plast Reconstr|Semin Plast|Conselho Federal de Medicina|Conceito básico", re.I)
 
 
 def _paragrafos(c: dict) -> list[str]:

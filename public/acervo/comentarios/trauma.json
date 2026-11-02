@@ -44667,6 +44667,22 @@
    "comentarioSha256": "506a922332938a16257695e1be89c06f48d41fa022ee425b91c4ab1086d45bd9"
   }
  },
+ "trauma-1732": {
+  "conceito": "Na fratura do acetábulo, a pergunta prática é: o teto que carrega o peso continua inteiro e congruente? Se continua, pode haver espaço para o tratamento sem cirurgia. O Rockwood diz que, quando o teto superior está comprometido, a maior parte dos autores recomenda a cirurgia se o desvio passa de 2 mm, e cita as medidas de **arco do teto**, de MATTA, para decidir se a fratura atingiu a cúpula de carga (cap. 51, seção Roof Arc).\n\nA banca, no entanto, cita um nome da tradição brasileira: o método de PECORELLI e DELLA TORRE, uma coxometria para avaliar a congruência. É o tipo de questão cujo conteúdo vem de bibliografia nacional, e não dos textos internacionais. As demais alternativas têm outras associações: TILE e LETOURNEL são nomes de classificações e abordagens de pelve e acetábulo, sem ser esse método; JOUDET é conhecido no quadril do adulto por outra medida; e ALLEN está em outras classificações.",
+  "correta": "**D: método de Pecorelli e Della Torre.** É o nome dado pela banca à coxometria de congruência. Veja o alerta sobre a fonte.",
+  "alerta": "O método de PECORELLI e DELLA TORRE não foi encontrado nos livros locais nem nas fontes abertas consultadas. O Rockwood descreve a mesma finalidade pelo arco do teto, de MATTA. O comentário preserva o gabarito da banca e deve ser revisto quando houver fonte, provavelmente de bibliografia brasileira.",
+  "incorretas": {
+   "A": "**Outra medida do quadril.** O nome de JOUDET não aparece no Rockwood nesse contexto.",
+   "B": "**A confusão natural.** LETOURNEL é o nome da classificação do acetábulo, e não o método de coxometria da pergunta.",
+   "C": "**Nome da pelve.** TILE é lembrado pela classificação das fraturas do anel pélvico.",
+   "E": "**Sem relação.** ALLEN não está ligado à coxometria do acetábulo."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 51 (fraturas do acetábulo), seção Roof Arc"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "trauma-1733": {
   "incorretas": {
    "B": "**O limite clássico é acima de 90 batimentos por minuto.** Uma frequência acima de 80 pode continuar abaixo desse corte e não basta para o critério.",
