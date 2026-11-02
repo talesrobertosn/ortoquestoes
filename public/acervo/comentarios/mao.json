@@ -11,14 +11,20 @@
   "conferido": false
  },
  "mao-0002": {
+  "conceito": "Um reparo de flexor tem duas camadas com papéis diferentes, e a questão quer o peso da segunda. A **sutura central**, ou nuclear, passa por dentro do tendão e cruza o corte; a **epitendínea** corre na superfície, em volta da linha de reparo.\n\n**De onde vem a força do núcleo.** O Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III) (p. 188) resume em três fatores: **material**, **calibre** e **número de fios que cruzam o reparo**. Fio 3-0 é **52%** mais forte que 4-0, e 4-0 é **66%** mais forte que 5-0 (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3145). As técnicas de dois fios (KESSLER, KESSLER modificado, TAJIMA) perdem para as multifilamentares, e o ideal de STRICKLAND pede gap mínimo e força para o movimento precoce.\n\n**E a epitendínea?** Ela nasceu para **alisar** a junção, para o tendão deslizar sem enganchar na bainha. DIAO mostrou que ela também **aumenta a força**, mas o Green insiste que continua sendo **complemento** do núcleo, sem dar número. Quem dá o número é o Campbell (p. 3147): a epitendínea contínua **suporta 50% da carga de falha**, reforça o núcleo, resiste ao gap e reduz o volume do reparo, o que diminui o gatilho. Duas variações reforçam o recado: fazer o **epitendão primeiro** deixou o reparo **22%** mais forte que o KESSLER modificado, e o **ponto cruzado** 6-0 ficou **117%** mais forte que o KESSLER modificado com epitendínea comum.\n\n**Como ler o número da prova.** Se a epitendínea carrega metade da carga que rompe o reparo, retirá-la tira metade da resistência; acrescentá-la a um núcleo é o que a banca chamou de \"aumentar em 50%\". A ordem de grandeza é a mesma; a frase é que mudou.\n\nA sutura e os números estão na seção \"A sutura: material, calibre e configuração\" do resumo.",
+  "correta": "**B) 50%.** É o número do Campbell para a epitendínea contínua, que suporta metade da carga de falha do reparo e por isso é muito mais que um acabamento.",
   "incorretas": {
-   "A": "Vinte por cento subestima a contribuição da epitendínea contínua bem feita, que chega a cerca de 50%.",
-   "C": "Setenta por cento superestima o ganho; a faixa descrita para a epitendínea vai até cerca de 50%, conforme a técnica.",
-   "D": "Noventa por cento seria quase dobrar a resistência só com a sutura de superfície, o que não é sustentado; a central carrega a maior parte da carga."
+   "A": "**20%** fica perto do ganho de fazer o epitendão primeiro (22% sobre o KESSLER modificado), que é outra comparação, e não o peso da epitendínea contínua.",
+   "C": "**70%** não aparece em nenhuma medida da epitendínea; é o porcentual das lacerações parciais que, em cães, evoluíram igual reparadas ou não.",
+   "D": "**90%** daria à camada de superfície quase toda a carga, contra a regra do Green de que ela é complemento e o núcleo é a base do reparo."
   },
-  "conceito": "Quando um **tendão flexor** dos dedos é cortado, o reparo precisa ser forte o bastante para permitir **movimentar o dedo cedo**. A mobilização precoce evita **aderências**, o tendão grudar nos tecidos em volta e deixar o dedo rígido. A sutura tem duas partes:\n\n**Sutura central (nuclear)**: é passada **dentro** do tendão, cruzando o local do corte. Ela suporta a **maior parte da carga**. Sua resistência é proporcional ao **número de fios** que cruzam o foco: reparos com 4 a 6 fios permitem movimento ativo precoce.\n\n**Sutura epitendínea**: é uma sutura **contínua** e fina feita **ao redor** da borda do tendão, na superfície. Tem duas funções:\n\n**regularizar** a superfície, para que o tendão deslize suavemente dentro da sua bainha, sem pontas que enganchem;\n\n**aumentar a resistência** do reparo em cerca de **50%**, porque também ajuda a resistir à separação das pontas.\n\n**O que mais deixa o reparo forte**: fio mais calibroso, pegas de cerca de 1 cm a partir do corte, pontos bloqueantes e uma epitendínea bem feita (técnicas cruzadas são ainda mais fortes que a contínua simples).\n\n**Um cuidado importante**: o reparo **enfraquece** entre a primeira e a terceira semana, quando as pontas do tendão amolecem antes de começar a cicatrizar. É a fase de maior risco de ruptura.\n\n**Na prova**: a sutura epitendínea contínua aumenta a resistência do reparo do flexor em cerca de 50%.",
-  "correta": "A epitendínea contínua regulariza a superfície do reparo e aumenta sua resistência em cerca de 50%, ajudando a permitir a mobilização precoce.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3145 a 3147",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 188",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "alerta": "O Campbell's Operative Orthopaedics, 15ª ed. (p. 3147), diz que a epitendínea contínua suporta 50% da carga de falha; a frase literal \"aumenta a resistência em 50%\" não aparece nos livros lidos, e o Green não dá número. O gabarito oficial foi preservado.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0003": {
@@ -353,15 +359,20 @@
   "conferido": false
  },
  "mao-0022": {
+  "conceito": "O tendão reparado dentro da bainha pode cicatrizar por dois caminhos, e o que o cirurgião faz com a bainha empurra para um ou para o outro.\n\n**Os dois mecanismos** (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3143). O **intrínseco** usa fibroblastos do **próprio tendão**; foi LUNDBORG quem validou o reparo intrassinovial **sem aderências**. O **extrínseco** traz fibroblastos **periféricos**, da bainha e dos tecidos vizinhos, e parece ser o **dominante na formação de cicatriz e aderências**. O detalhe que decide a questão vem logo depois: lesão do tendão sozinha não basta para grudar; o que produz aderência extensa é **lesão do tendão + lesão da bainha + imobilização**.\n\n**Por que a bainha fechada pesa.** A bainha é o trilho por onde o tendão desliza, e a polia é a parte rígida desse trilho. Um reparo é mais volumoso que o tendão normal; apertado sob uma polia fechada sobre ele, perde a excursão, e um tendão que não desliza é colonizado pela cicatriz de fora. Por isso o Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III) (p. 194) trata o fechamento da bainha como **opcional**, só quando não prejudica o deslizamento, e aceita abrir a **A4** (\"venting\"; LIEBER, TANG; p. 190). O Campbell vai além: no reparo agudo da zona II, parte da **A2**, ou toda ela, pode ser incisada se o resto da bainha estiver íntegro (p. 3156).\n\n**O antídoto é a excursão.** Mover o tendão passivamente **1,6 mm** já evita aderências relevantes em cães, DURAN calculou **3 a 5 mm**, e a tensão cíclica estimula a resposta intrínseca (Green, p. 189 e 195; Campbell, p. 3143). A aderência é a **complicação mais comum** do reparo.\n\nA cicatrização e a bainha estão nas seções \"O reparo e a cicatrização\" e \"A biologia da cicatrização e a reabilitação\" do resumo.",
+  "correta": "**A) a formação de aderências.** Polia fechada sobre o reparo aperta o trilho, tira a excursão e deixa o tendão à mercê da cicatriz extrínseca, a que forma aderências.",
   "incorretas": {
-   "B": "A cicatrização intrínseca é favorecida pelo oposto: reparo fino, bainha folgada e mobilização precoce.",
-   "C": "Cicatrização extrínseca e aderência são, na prática, o mesmo fenômeno; a banca aceitou apenas a formulação da alternativa A.",
-   "D": "A proliferação de fibroblastos vindos da periferia é o processo por trás da aderência; a banca preferiu a formulação do resultado final."
+   "B": "**O mecanismo intrínseco** é favorecido pelo oposto: tendão que desliza e recebe tensão cíclica, sem a bainha apertada sobre ele.",
+   "C": "**O mecanismo extrínseco** é o caminho pelo qual a aderência se forma, mas a banca pediu o resultado clínico do fechamento, e não o processo celular; a letra aceita foi a da aderência.",
+   "D": "**Proliferação de fibroblastos periféricos** descreve a célula do mecanismo extrínseco; é o meio, e a pergunta quer o efeito que o fechamento da polia favorece."
   },
-  "conceito": "Depois de reparado, um tendão flexor pode cicatrizar por **duas vias**:\n\n**cicatrização intrínseca**: as próprias células do tendão (tenócitos) e do epitendão (a camada que o reveste) produzem o colágeno da cicatriz. Elas são nutridas pelo **líquido sinovial** dentro da bainha. É a cicatrização ideal: o tendão se reconstitui por dentro e continua **deslizando** livremente;\n\n**cicatrização extrínseca**: células que vêm **de fora**, do tecido ao redor do tendão e da bainha, invadem o local do reparo. O tecido cicatricial resultante **gruda** o tendão às estruturas vizinhas. Essas pontes são as **aderências**, que impedem o deslizamento e deixam o dedo rígido.\n\n**O que favorece cada via**:\n\na via **intrínseca** é favorecida por reparo fino e delicado, **mobilização precoce**, bainha que não aperta o tendão e boa nutrição;\n\na via **extrínseca** (aderência) é favorecida por reparo volumoso, manipulação traumática, **imobilização**, perda de irrigação e **fechar a polia apertada sobre o reparo**.\n\n**As polias**: são faixas que seguram os flexores junto ao osso. As mais importantes são **A2 e A4**: perdê-las faz o tendão se afastar do osso como a corda de um arco. Por isso não se retiram, mas muitos cirurgiões **abrem parcialmente** a polia (ventilação) em vez de fechá-la apertada sobre o reparo, que fica mais grosso.\n\n**Na prova**: fechar a polia sobre o reparo favorece a formação de aderências.",
-  "correta": "É o gabarito oficial: fechar a polia apertada sobre um reparo volumoso aumenta o atrito e estimula a resposta do tecido ao redor, cujo resultado é a aderência.",
-  "alerta": "A alternativa dada como certa (\"formação de aderências\") e uma das dadas como erradas (\"mecanismo extrínseco de cicatrização\") descrevem o mesmo fenômeno com nomes diferentes: aderência é o resultado da cicatrização extrínseca. A distinção que a banca faz não se sustenta.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3143 e 3156",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 189, 190 e 194",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "alerta": "Nenhum dos livros lidos afirma, com essas palavras, que o fechamento das polias favorece aderências. O Campbell's Operative Orthopaedics, 15ª ed. (p. 3143), liga as aderências extensas à lesão da bainha com imobilização, e o Green's Operative Hand Surgery, 7ª ed. (p. 194), só fecha a bainha quando isso não prejudica o deslizamento. O gabarito oficial foi preservado.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0023": {
@@ -772,14 +783,19 @@
   "conferido": false
  },
  "mao-0051": {
+  "conceito": "A nutrição do flexor dentro do dedo não é uniforme, e a questão pede o ponto fraco do **superficial**. A resposta está num único parágrafo do Campbell, e a distração mais forte é a polia que vale para o **profundo**.\n\n**Como o tendão se alimenta.** O Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III) (p. 186) descreve **nutrição dupla** na zona 2: **perfusão** (vínculos, inserções ósseas, vasos da bainha e vasos longitudinais da palma) e **difusão sinovial**. Os vínculos chegam pela face **dorsal**; por isso a face **palmar** dos tendões nas zonas 1 e 2 é relativamente **avascular**. O Green para aí e não localiza a isquemia sob polia alguma.\n\n**O Campbell localiza** (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3143):\n- **FDS**: uma área isquêmica, **sob a polia A2**, na falange proximal;\n- **FDP**: duas, **sob a A2** e **sob a A4**.\n\nA lógica é mecânica. A A2, que nasce do terço proximal da falange proximal e mede **18 a 20 mm**, e a A4, na falange média, são as polias longas e rígidas que apertam o tendão contra o osso. O superficial termina na falange média, antes da A4, de modo que só a A2 o cobre por um trecho longo; o profundo segue até a falange distal e passa pelas duas.\n\n**Uma consequência prática.** A irrigação é **segmentar**, cada segmento depende de um vínculo dorsal, e suturas intratendíneas pioram a microcirculação; por isso a tradição põe o núcleo na **metade volar** (Campbell, p. 3146 a 3148).\n\nA isquemia está na seção \"A bainha, as polias e a irrigação em detalhe\" do resumo.",
+  "correta": "**B) A2.** O Campbell põe a única área isquêmica do superficial sob a A2, na falange proximal.",
   "incorretas": {
-   "A": "A polia A1 fica na metacarpofalângica e é a liberada no dedo em gatilho; não é a zona isquêmica descrita.",
-   "C": "A polia A3 é fina, sobre a interfalângica proximal, e não corresponde à zona isquêmica do flexor superficial.",
-   "D": "A zona isquêmica sob a A4 é a do flexor profundo, e não a do superficial."
+   "A": "**A1** fica sobre a MF, nasce da placa volar e é polia articular e flexível; não cobre o trecho isquêmico descrito.",
+   "C": "**A3** nasce da placa volar da IFP, é curta e articular; o Campbell não descreve isquemia sob ela.",
+   "D": "**A4** é a segunda zona isquêmica do **profundo**, na falange média; o superficial já se inseriu antes de chegar a ela."
   },
-  "conceito": "Os **tendões flexores** dos dedos correm dentro de uma bainha e recebem nutrição de **duas fontes**:\n\n**vascular**: pequenos vasos chegam ao tendão pelas **vínculas** (faixas que ligam o tendão ao osso), entrando pela face **dorsal** (de trás) do tendão;\n\n**difusão sinovial**: o **líquido sinovial** dentro da bainha banha o tendão e leva nutrientes por difusão, como uma esponja.\n\n**As zonas avasculares**: em certos trechos, o tendão quase não recebe vasos e depende só da difusão. Esses trechos ficam justamente **sob as polias**, onde o tendão é comprimido contra o osso:\n\nno **flexor superficial**: sob a **polia A2**, na falange proximal;\n\nno **flexor profundo**: sob a **polia A4**, na falange média.\n\nA face **volar** do tendão, a que encosta na polia, é a mais pobre em vasos.\n\n**As polias**: são faixas fibrosas que seguram os tendões junto ao osso. As anulares vão de A1 a A5. As mais importantes são **A2 e A4**: sem elas, o tendão se afasta do osso ao dobrar o dedo, como a corda de um arco. A **A1**, na metacarpofalângica, é a que se corta no tratamento do dedo em gatilho.\n\n**Consequências práticas**:\n\nas suturas do tendão devem ser feitas preferencialmente no **lado dorsal**, onde ficam os vasos;\n\na **mobilização precoce** melhora a difusão do líquido sinovial e a nutrição do tendão.\n\n**Na prova**: a zona isquêmica do flexor superficial fica sob a polia A2; a do profundo, sob a A4.",
-  "correta": "No flexor superficial, a zona pobre em vasos fica sob a polia A2, onde o tendão é comprimido e depende da difusão sinovial.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3143 e 3146 a 3148",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 186",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0052": {
@@ -1927,14 +1943,21 @@
   "conferido": false
  },
  "mao-0124": {
+  "conceito": "O teste de BUNNELL-LITTLER separa duas causas de uma IFP que não dobra: a articulação presa ou um músculo intrínseco encurtado. Para entendê-lo basta saber por onde o lumbrical passa.\n\n**O trajeto que explica tudo.** Os lumbricais nascem dos tendões do **flexor profundo** e entram na **banda lateral radial**, passando por palmar ao ligamento metacarpal transverso profundo. Como correm **palmar ao eixo da MF** e depois **dorsal ao eixo da IFP**, eles **fletem a MF e estendem a IFP** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão), p. 208). Os interósseos, todos do ulnar, completam o aparelho intrínseco.\n\n**O raciocínio do teste.** Um músculo que cruza duas articulações em sentidos opostos fica mais esticado quando as duas se movem contra a sua ação ao mesmo tempo: MF **estendida** e IFP **fletida**. Se o intrínseco está encurtado, a IFP dobra pouco com a MF estendida e dobra bem quando a MF é fletida, porque fletir a MF afrouxa o músculo. Se a culpa fosse da própria IFP (cápsula, sinovite, colaterais), a limitação seria a mesma em qualquer posição da MF. É essa diferença conforme a MF que torna o teste positivo para **contratura intrínseca**.\n\n**Onde isso encosta nos flexores.** O mesmo lumbrical é o personagem do **lumbrical plus**: com enxerto frouxo, o FDP passa a puxar o lumbrical, e as IF se estendem paradoxalmente ao tentar fletir; o teste de PARKES mostra passivo completo e extensão das IF na preensão forte (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3178). Na zona III, por isso, não se suturam os lumbricais (p. 3160).\n\nO lumbrical está na seção \"Quadriga, lumbrical plus e as complicações do enxerto\" do resumo dos flexores e na seção dos músculos da mão do resumo de anatomia da mão.",
+  "correta": "**C) contratura da musculatura intrínseca.** O intrínseco flete a MF e estende a IFP; encurtado, ele limita a flexão da IFP com a MF estendida e libera quando a MF é fletida, e é isso que o teste mostra.",
   "incorretas": {
-   "A": "A ruptura de um tendão tira o movimento ativo, mas não limita o movimento passivo testado.",
-   "B": "A sinovite da interfalângica é um obstáculo da própria articulação e limita nas duas posições da MF, sem o padrão do teste.",
-   "D": "A subluxação da metacarpofalângica é típica da mão reumatoide, mas não é o que o teste de Bunnell-Littler procura."
+   "A": "**Ruptura tendinosa** tira a força ativa de um movimento, mas não cria a limitação passiva que muda conforme a posição da MF.",
+   "B": "**Sinovite interfalângica** é problema da própria articulação; limita a IFP igual com a MF estendida ou fletida, o oposto do padrão do teste.",
+   "D": "**Subluxação da metacarpofalângica** é alteração da MF, e o teste usa a MF apenas como alavanca para tensionar ou afrouxar o intrínseco."
   },
-  "conceito": "O **teste de Bunnell-Littler** serve para descobrir se a rigidez da **interfalângica proximal** (IFP) é causada pelos **músculos intrínsecos** da mão (lumbricais e interósseos) ou pela própria articulação.\n\n**A anatomia que explica o teste**: os intrínsecos passam **na frente** da metacarpofalângica (MF) e **atrás** das interfalângicas. Por isso eles **dobram a MF** e **estendem as interfalângicas**. Eles são **biarticulares**: seu grau de tensão depende da posição das duas articulações.\n\n**Como é feito**:\n\ncom a MF **estendida**, o examinador tenta dobrar passivamente a IFP;\n\ndepois, com a MF **dobrada**, repete a manobra.\n\n**A interpretação**:\n\nse a IFP **não dobra** com a MF estendida, mas **dobra** com a MF fletida: os intrínsecos estão **contraídos** (encurtados). Com a MF estendida eles ficam esticados e seguram as interfalângicas em extensão; com a MF dobrada, relaxam. **Teste positivo**;\n\nse a IFP não dobra **em nenhuma posição**: o problema é da **cápsula** da própria articulação.\n\n**A regra geral**: se a limitação **muda** com a posição da articulação vizinha, o freio é um músculo que cruza as duas. Se não muda, o freio é articular.\n\n**Causas de contratura intrínseca**: artrite reumatoide, inchaço após trauma, isquemia dos músculos da mão e espasticidade.\n\n**Na prova**: o teste de Bunnell-Littler é positivo na contratura da musculatura intrínseca.",
-  "correta": "Com a MF estendida, os intrínsecos encurtados impedem a flexão passiva da IFP; com a MF fletida, eles relaxam e a IFP dobra.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão), p. 208",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3160 e 3178",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço (versão 2)",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "alerta": "Os livros lidos para este tema (Green's Operative Hand Surgery, 7ª ed., cap. 6; Campbell's Operative Orthopaedics, 15ª ed., cap. 71) não descrevem o teste de BUNNELL-LITTLER; o comentário deduz o teste da ação do lumbrical descrita no Netter Atlas de Anatomia Ortopédica, 2ª ed. O gabarito oficial foi preservado.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0125": {
@@ -2060,14 +2083,19 @@
   "conferido": false
  },
  "mao-0135": {
+  "conceito": "O que limita a sutura direta tardia não é o tendão, é o **músculo**: cortado, ele encurta, e depois de algumas semanas os cotos já não se encontram sem tensão. A zona V tem uma vantagem sobre o dedo que explica o prazo.\n\n**A régua do Campbell** (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3154). Reparo **primário** nas primeiras **12 horas**; **primário retardado** de **24 horas a cerca de 10 dias**; **secundário** após **10 a 14 dias**; **secundário tardio** após cerca de **4 semanas**. Atraso de 2 a 3 dias com ferida limpa não traz complicação, mas atraso prolongado permite retração inaceitável, \"sobretudo nas zonas III, IV e V\"; quem adia deve prender os cotos aos tecidos vizinhos.\n\n**A regra das zonas proximais** (Campbell, p. 3166, Fig. 71.39). Nas zonas III, IV e V, isto é, palma, túnel do carpo e antebraço distal, a sutura direta ainda é possível **3 ou 4 semanas** após a lesão, porque **fletir o punho vence a retração**. Passadas **4 ou 5 semanas**, o músculo contrai e às vezes é preciso um **enxerto curto segmentar**, o \"minienxerto\". O Green fala em gap de **2 a 5 cm** que exige enxerto interposto nas zonas 3 a 5 tardias (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 219).\n\n**Comparando com o dedo.** Na zona II, depois de 1 mês, passar o tendão pela bainha e pelas polias é extremamente difícil, e a escolha passa a ser enxerto em um ou dois tempos (Campbell, p. 3164). Na zona V não há bainha; o limite é só o encurtamento muscular.\n\nOs prazos estão na seção \"O momento do reparo\" do resumo.",
+  "correta": "**A) 4 semanas.** O Campbell aceita sutura direta nas zonas III a V até 3 ou 4 semanas; depois disso o músculo encurta e entra o minienxerto.",
   "incorretas": {
-   "B": "Com 5 semanas a contratura miostática já impede a aproximação na maioria dos casos.",
-   "C": "Em 6 semanas o músculo já está encurtado, e a reconstrução com enxerto passa a ser necessária.",
-   "D": "Em 7 semanas a reconstrução, e não o reparo direto, é a regra."
+   "B": "**5 semanas** já está na faixa de 4 ou 5 semanas em que o Campbell avisa que pode ser preciso enxerto segmentar.",
+   "C": "**6 semanas** é o prazo em que o Green acha o reparo primário improvável em geral; é limite de impossibilidade, e não de preferência.",
+   "D": "**7 semanas** passa de todos os prazos de sutura direta dos dois livros; a essa altura o caminho é enxerto ou transferência."
   },
-  "conceito": "Quando um tendão flexor é cortado, o **músculo** ao qual ele pertence se contrai e **puxa a ponta** do tendão para longe. Com o passar das semanas, o músculo sofre **contratura miostática**: ele se adapta à nova posição, **encurta** e perde a elasticidade. Depois de um certo tempo, as duas pontas não se aproximam mais sem uma tensão excessiva.\n\n**As zonas dos flexores** (classificação de Verdan):\n\n**I**: além da inserção do flexor superficial, onde só passa o profundo;\n\n**II**: dentro da bainha dos dedos, onde passam os dois flexores juntos, a chamada \"terra de ninguém\";\n\n**III**: na palma;\n\n**IV**: dentro do túnel do carpo;\n\n**V**: no **punho** e no **antebraço distal**.\n\n**O prazo na zona V**: o reparo direto (sutura das pontas) geralmente ainda é possível **até cerca de 4 semanas**. Depois disso, a contratura do músculo impede a aproximação, e é preciso:\n\num **enxerto** de tendão entre as pontas;\n\numa **transferência** de outro tendão;\n\nou suturar o tendão a um tendão vizinho que funcione (sutura látero-lateral).\n\n**Uma lesão típica da zona V**: o corte de vários tendões, nervos e artérias de uma vez no punho (às vezes chamado de \"punho em espaguete\"). Nesses casos, o resultado final depende principalmente da recuperação dos **nervos** mediano e ulnar, mais do que dos tendões.\n\n**Na prova**: a ruptura de flexores na zona V pode ser reparada sem enxerto até cerca de 4 semanas.",
-  "correta": "Até cerca de 4 semanas as pontas ainda se aproximam sem tensão excessiva; depois, a contratura do músculo exige enxerto ou transferência.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3154, 3164 e 3166",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 195 e 219",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0136": {
@@ -2366,17 +2394,19 @@
   "conferido": false
  },
  "mao-0152": {
+  "conceito": "A zona 1 tem um único tendão em jogo e uma única medida que decide a técnica: 1 cm.\n\n**Por que só o profundo.** Pelas zonas de KLEINERT e VERDAN, a zona 1 começa **distal à inserção do FDS** e vai até a do FDP; uma laceração ali, por definição, lesa **só o FDP** (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 185 e 186). Qualquer opção que fale do superficial na zona 1 já está fora.\n\n**Duas leituras da mesma regra.**\n- O **Green** (p. 187 e 191) mede o **coto distal**: com pelo menos **1 cm**, faz-se **tenorrafia**; com menos de 1 cm, avança-se o FDP e **reinsere-se no osso** (âncoras ou pull-out com botão).\n- O **Campbell** (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3156) mede a **distância**: o FDP pode ser suturado ao coto distal ou avançado e inserido na falange quando ela é de **1 cm ou menos**, e esse centímetro inclui o tendão excisado, o enrugamento e o trecho inserido no osso.\n\nA frase da prova (\"intervalo entre os cotos menor ou igual a 1 cm\") segue a leitura do Campbell.\n\n**Por que não passar de 1 cm.** Os FDP compartilham a origem muscular. Encurtar um deles mais de 1 cm faz o dedo chegar à palma antes dos vizinhos e trava a excursão comum: é o **efeito quadriga**, do latim quadri (quatro) e jungere (atrelar), o carro romano de quatro cavalos lado a lado (Green, p. 187). Avançar demais também deixa o dedo mais fletido que os outros e quebra a cascata.\n\nA regra está na seção \"A zona 1 e a avulsão do profundo em detalhe\" do resumo.",
+  "correta": "**A) flexor profundo for menor ou igual a 1 cm de comprimento.** Na zona 1 só há o profundo, e até 1 cm o Campbell aceita sutura direta ou avanço sem risco de quadriga.",
   "incorretas": {
-   "B": "Um intervalo de 2 cm ou mais exigiria um avanço que causa o efeito quadriga, e não deve ser fechado por sutura direta.",
-   "C": "O tendão está errado: na zona I o flexor superficial já se inseriu, e só o flexor profundo está em jogo.",
-   "D": "Erra os dois: o tendão é o profundo, e a regra é o intervalo de até 1 cm, e não de 2 cm ou mais."
+   "B": "**Profundo com 2 cm ou mais** exigiria encurtar o tendão além do limite e produziria o efeito quadriga nos dedos vizinhos.",
+   "C": "**Superficial até 1 cm** usa o número certo no tendão errado: o FDS já se inseriu na falange média, proximal à zona 1.",
+   "D": "**Superficial com 2 cm ou mais** erra o tendão e o limite ao mesmo tempo."
   },
-  "conceito": "A **zona I** dos flexores fica **além da inserção do flexor superficial** (na falange média), ou seja, ali só passa o **flexor profundo dos dedos** (FPD), que vai até a falange distal. Lesões nessa zona são reparadas suturando o tendão ou **reinserindo-o** na falange distal.\n\n**O limite de avanço de 1 cm**: se o coto do FPD estiver um pouco curto, pode-se puxá-lo para alcançar a falange. Mas esse **avanço** não deve passar de **cerca de 1 cm**.\n\n**Por que esse limite existe, o efeito quadriga**: os FPD do dedo médio, do anelar e do mínimo compartilham um **ventre muscular comum**. Eles funcionam como as rédeas de uma carroça puxada por quatro cavalos (quadriga): se uma rédea fica mais curta, as outras também não conseguem ser puxadas até o fim. Se um FPD é avançado demais, ele fica **curto**: ao fechar a mão, esse dedo chega ao fim do seu curso antes dos outros e **impede que os dedos vizinhos dobrem completamente**. O paciente perde força e não consegue fechar a mão.\n\n**O oposto, o dedo lumbrical plus**: quando o FPD fica **longo demais** (por exemplo, com um enxerto frouxo), ao tentar dobrar o dedo, o tendão puxa o lumbrical, e a interfalângica proximal **estende** de forma paradoxal.\n\n**Na prova**: na zona I, a sutura direta é feita quando o intervalo entre os cotos do flexor profundo é de até 1 cm.",
-  "correta": "Avançar o flexor profundo até cerca de 1 cm é tolerado; acima disso surge o efeito quadriga, e os dedos vizinhos não conseguem fechar.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 66"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3156",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 185 a 187 e 191",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0153": {
@@ -2482,14 +2512,20 @@
   ]
  },
  "mao-0160": {
-  "conceito": "### Reconstrução tardia do flexor na zona II\n| Condição do dedo | Estratégia |\n|---|---|\n| ==polias permeáveis== (A2 e A4), bainha utilizável, articulações ==móveis passivamente==, pele boa | ==enxerto em um tempo== |\n| bainha cicatrizada, polias perdidas, rigidez, pele ruim | ==dois tempos==: haste de silicone (Hunter) + reconstrução de polias; enxerto após 3 meses |\n| articulação destruída, dedo pouco útil | artrodese, tenodese ou amputação |\n\n### Classificação de Boyes (candidatos a enxerto)\n| Grau | Situação | Prognóstico |\n|---|---|---|\n| 1 | boa: cicatriz mínima, articulações móveis | melhor |\n| 2 | cicatriz | |\n| 3 | lesão articular | |\n| 4 | lesão nervosa | |\n| 5 | múltiplas lesões | pior |\n\n### Doadores de enxerto\n- **Palmar longo** (ausente em cerca de 15%), plantar, extensor longo dos dedos do pé.\n\n### Pré-requisito comum\n- Mobilidade passiva completa das articulações (reabilitação antes).\n\n> **Na prova:** enxerto primário indicado com ==polias permeáveis==.",
-  "correta": "**Polias permeáveis.**\n- Com A2 e A4 preservadas e bainha utilizável, o enxerto tem por onde deslizar.\n- Articulações móveis e pele boa completam os requisitos.",
+  "conceito": "Na zona II tardia o tendão já não pode ser simplesmente costurado; a decisão é entre um enxerto em **um tempo** e uma reconstrução em **dois tempos**. O que separa as duas é o estado do trilho.\n\n**Quando o reparo direto deixa de valer.** Lacerações negligenciadas por **3 a 6 semanas** já mostram degeneração do tendão e cicatriz na bainha (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 202). O Campbell acrescenta que, depois de **1 mês**, passar o flexor pela bainha e pelas polias é extremamente difícil: sem cicatriz extensa, **enxerto em um tempo**; com bainha e polias destruídas, contraturas e lesão nervosa, **dois tempos** (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3164).\n\n**A escada do Green** (p. 199, Fig. 6.19): ruptura precoce, novo reparo; reparo aderido, terapia e depois tenólise; **túnel bom**, enxerto primário palma-ponta; aderências extensas no túnel, dois tempos com espaçador de silicone.\n\n**Os requisitos do enxerto em um tempo.** O dedo precisa ser **BOYES 1** (cicatriz mínima, articulações móveis, sem alterações tróficas) e ter **movimento passivo completo**. O Campbell lista pele maleável, edema resolvido, ao menos um nervo digital íntegro e **A2 e A4 íntegras**, senão reconstruídas em estágio separado (p. 3169). Sem essas polias, o enxerto faz corda de arco.\n\n**Por que \"permeabilidade das polias\".** É a forma da banca de dizer que o canal fibro-ósseo está aberto e utilizável, com as polias essenciais presentes. Tudo o que estraga o trilho ou o dedo empurra para os dois tempos de HUNTER, em que o bastão de silicone forma uma pseudobainha antes do enxerto.\n\nA escada está na seção \"A reconstrução: escada, enxerto em um tempo e doadores\" do resumo.",
+  "correta": "**B) permeabilidade das polias.** Túnel fibro-ósseo aberto, com A2 e A4 presentes, é a condição que permite o enxerto primário; o resto da lista leva aos dois tempos.",
   "incorretas": {
-   "A": "**Contraindicação.**\n- O enxerto não move articulação rígida.",
-   "C": "**Indica dois tempos.**\n- Bainha lesada pede haste de silicone antes do enxerto.",
-   "D": "**Não define a técnica.**\n- A lesão nervosa piora o prognóstico, mas não decide um ou dois tempos."
+   "A": "**Rigidez articular** tira o passivo completo e o grau 1 de BOYES; o dedo rígido vai para os dois tempos, com correção das contraturas no primeiro.",
+   "C": "**Lesão da bainha do tendão** destrói o trilho que o enxerto vai usar; com bainha e polias perdidas, o Campbell indica dois tempos.",
+   "D": "**Lesão nervosa concomitante** é o grau 4 de BOYES e piora o prognóstico; o Campbell exige ao menos um nervo digital íntegro para o enxerto em um tempo."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 199 e 202, Tabela 6.2",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3164 e 3169",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "alerta": "Nenhum dos livros traz a expressão \"permeabilidade das polias\". O Green's Operative Hand Surgery, 7ª ed. (p. 199), fala em palma e túnel fibro-ósseo satisfatórios, e o Campbell's Operative Orthopaedics, 15ª ed. (p. 3169), exige A2 e A4 íntegras. O gabarito oficial foi preservado.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0161": {
@@ -2504,14 +2540,19 @@
   "conferido": false
  },
  "mao-0162": {
+  "conceito": "O enunciado repete o do TARO 2016, mas troca a última opção por uma polia **cruciforme**. Isso muda o raciocínio: além de saber qual polia anular esconde a isquemia, é preciso entender por que uma cruciforme nunca seria a resposta.\n\n**Dois tipos de polia** (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 186). A bainha retinacular, do colo do metacarpo à falange distal, condensa-se em **cinco polias anulares**, grossas e rígidas, que mantêm o tendão junto ao osso, e **três cruciformes**, finas, flexíveis e colapsáveis, que se dobram como sanfona para o dedo fletir. Cada polia tem três camadas: a interna secreta **ácido hialurônico**, a média resiste à translação palmar e a externa nutre a polia.\n\n**Onde falta sangue.** A face **palmar** do tendão, longe dos vínculos dorsais, é a menos irrigada, e o trecho mais pobre é o que fica comprimido por uma polia anular longa. O Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY) (p. 3143) diz qual: no **FDS**, uma zona **sob a A2**; no **FDP**, duas, sob a A2 e a A4.\n\n**O papel das cruciformes no reparo.** Justamente por serem finas e não sustentarem o trilho, as cruciformes são o lugar das **janelas** de acesso: C1 a C3, em L ou em Z (Campbell, p. 3158). Abrir uma cruciforme não ameaça a função; perder **duas anulares contíguas** causa contratura em flexão da IFP, e sem A2 e A4 aparece a corda de arco (Green, p. 221).\n\nA anatomia está nas seções \"Anatomia: sangue e trilho\" e \"A bainha, as polias e a irrigação em detalhe\" do resumo.",
+  "correta": "**B) A2.** É a polia anular longa da falange proximal, sob a qual o Campbell localiza a área isquêmica do flexor superficial.",
   "incorretas": {
-   "A": "A polia A1 é a liberada no dedo em gatilho e não corresponde à zona isquêmica do flexor superficial.",
-   "C": "A polia A3 é fina, sobre a interfalângica proximal, e não é a zona isquêmica descrita.",
-   "D": "A C1 é uma polia cruciforme, que permite a bainha dobrar e não comprime o tendão contra o osso."
+   "A": "**A1** é a polia da MF, ligada à placa volar; é curta e não corresponde ao trecho isquêmico do superficial.",
+   "C": "**A3**, sobre a IFP, é outra polia articular curta, sem isquemia descrita sob ela.",
+   "D": "**C1** é cruciforme: fina, colapsável e usada como janela de reparo, não aperta o tendão contra o osso e não cria isquemia."
   },
-  "conceito": "Os **tendões flexores** dos dedos recebem nutrição de **duas formas**:\n\n**vasos sanguíneos**, que chegam pelas **vínculas** (pequenas faixas que ligam o tendão ao osso) e entram pela face **dorsal** do tendão;\n\n**difusão do líquido sinovial**: o líquido dentro da bainha banha o tendão e leva nutrientes, como uma esponja que se embebe.\n\n**As zonas pobres em vasos**: em alguns trechos, o tendão quase não recebe sangue e depende só da difusão. Essas zonas ficam **sob as polias**, onde o tendão é apertado contra o osso:\n\nno **flexor superficial**: sob a **polia A2**, na falange proximal;\n\nno **flexor profundo**: sob a **polia A4**, na falange média.\n\nA face **volar** do tendão, a que encosta na polia, é a mais pobre em vasos.\n\n**As polias**: as **anulares** (A1 a A5) são faixas firmes que seguram o tendão junto ao osso; as **cruciformes** (C1 a C3) são finas e permitem que a bainha dobre quando o dedo flete, sem apertar o tendão.\n\n**Implicações práticas**:\n\nas suturas devem ser feitas preferencialmente no lado **dorsal** do tendão, onde ficam os vasos;\n\na **mobilização precoce** melhora a circulação do líquido sinovial e a nutrição do tendão.\n\n**Na prova**: a área isquêmica do flexor superficial fica sob a polia A2.",
-  "correta": "No flexor superficial, a zona pobre em vasos fica sob a polia A2, onde o tendão é comprimido contra o osso e depende da difusão sinovial.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3143 e 3158",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 186 e 221",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0163": {
@@ -2787,17 +2828,21 @@
   "conferido": false
  },
  "mao-0183": {
-  "conceito": "### Técnicas para botoeira crônica\n| Técnica | Princípio |\n|---|---|\n| ==Aiache== | ==bandas laterais mobilizadas para dorsal e suturadas entre si na linha média== sobre a IFP |\n| Snow | retalho do extensor rebatido distalmente para cobrir a falha da banda central |\n| Matev | bandas laterais cortadas em comprimentos diferentes: uma reconstrói a banda central, a outra o extensor terminal |\n| Littler / Eaton (Fowler) | **tenotomia do extensor terminal** (distal ao ligamento triangular): corrige a hiperextensão da IFD |\n| Curtis | liberação sequencial em etapas |\n| enxerto (palmar longo) | reconstrução da banda central |\n\n### Pré-requisito\n- **IFP passivamente móvel** (reabilitação e órteses seriadas antes).\n\n### Botoeira aguda\n- Conservador: IFP em extensão, IFD livre por 6 semanas.\n\n> **Na prova:** bandas laterais unidas no dorso da IFP = ==Aiache==.",
-  "correta": "**Aiache.**\n- As bandas laterais são levadas ao dorso e suturadas na linha média.\n- Reconstrói a extensão sem enxerto.",
+  "conceito": "A questão está no tema dos flexores, mas é do aparelho **extensor**: pede o nome de uma técnica para a botoeira crônica a partir do desenho.\n\n**A anatomia da botoeira** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão), cap. 6). Sobre a falange proximal, o extensor se divide em **feixe central**, que estende a IFP na base da falange média, e **feixes laterais**, que se juntam às bandas dos intrínsecos e formam a porção terminal, na base da falange distal. O **ligamento triangular**, no dorso da falange média, impede que as bandas escorreguem para palmar. Na **botoeira**, o feixe central e o triangular rompem: as bandas laterais caem para **palmar** do eixo da IFP, deixam de estendê-la e passam a fletir a IFP e hiperestender a IFD.\n\n**A imagem.** Três desenhos do dorso de um dedo. No primeiro, sobre a IFP, vê-se a falha no meio do aparelho extensor, com as duas bandas laterais afastadas para os lados. No segundo, as bandas laterais foram trazidas para o **dorso** e **suturadas entre si na linha média**, sobre a IFP (os pontos aparecem no centro). No terceiro, o resultado: as bandas unidas no dorso, de volta acima do eixo da articulação, refazendo a função do feixe central.\n\n**O raciocínio.** Se a deformidade nasce de bandas que migraram para palmar, a correção desenhada as devolve ao dorso e as une, para que voltem a estender a IFP. É o princípio que a prova atribuiu a AIACHE.\n\nO aparelho extensor está na seção do aparelho extensor do resumo de anatomia da mão.",
+  "correta": "**C) AIACHE.** A figura mostra as bandas laterais mobilizadas para o dorso e suturadas entre si sobre a IFP, a técnica que a banca atribui a AIACHE.",
   "incorretas": {
-   "A": "**Retalho do extensor.**\n- Snow rebate um retalho do tendão extensor.",
-   "B": "**Cortes escalonados.**\n- Matev alonga e encurta as bandas de forma diferente.",
-   "D": "**Tenotomia distal.**\n- Littler dá nome à tenotomia do extensor terminal e ao SORL."
+   "A": "**SNOW** é outro nome de reconstrução do extensor que não corresponde ao desenho, no qual nenhum retalho do tendão é rebatido; só as bandas laterais são aproximadas.",
+   "B": "**MATEV** não corresponde à figura, em que as duas bandas são suturadas uma à outra e nenhuma é cortada em comprimentos diferentes.",
+   "D": "**LITTLER** aparece no Green ligado ao arco de flexão do dedo com FDS íntegro, e não ao desenho de bandas laterais unidas no dorso da IFP."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 66"
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão), cap. 6 (Aparelho intrínseco)",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), Fig. 6.34",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço (versão 2)",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
   ],
-  "geradoEm": "2026-09-24",
+  "alerta": "Os livros lidos (Green's Operative Hand Surgery, 7ª ed., cap. 6; Campbell's Operative Orthopaedics, 15ª ed., cap. 71, parte dos flexores; Netter Atlas de Anatomia Ortopédica, 2ª ed.) não descrevem as técnicas de AIACHE, SNOW e MATEV para a botoeira. O comentário se apoia na anatomia do aparelho extensor e no que a figura mostra; o gabarito oficial foi preservado.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0184": {
@@ -2869,15 +2914,22 @@
   "conferido": false
  },
  "mao-0229": {
+  "conceito": "O flexor longo do polegar se comporta de um jeito próprio quando é cortado, e a diferença começa na anatomia.\n\n**Um tendão sem freio.** O FPL nasce do **terço médio do rádio** e da membrana interóssea, é inervado pelo interósseo anterior e tem ventre próprio (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 185). Ao contrário dos flexores dos dedos, **não tem vínculo** (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3166): pode ser avançado sem perder irrigação, mas também nada segura o coto quando ele é cortado.\n\n**As zonas do polegar** (Campbell, p. 3164, Fig. 71.38): I, a IF e a inserção; **II, a bainha fibro-óssea até logo proximal à cabeça do metacarpo e à MF**; III, o metacarpo sob a **musculatura tenar**; IV, o túnel do carpo; V, o antebraço distal.\n\n**Para onde o coto vai.** O Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III) (p. 190) diz que, na laceração intrassinovial, o coto proximal retrai com frequência **profundamente à musculatura tenar**; se passou da borda distal dela, é buscado por incisão no **túnel do carpo ou no antebraço distal**. O Campbell (p. 3165) descreve uma retração mais longa, **até perto do punho**, com busca entre a **artéria radial e o flexor radial do carpo**. A banca seguiu o Green.\n\n**O que fazer com ele.** Na zona II evita-se o reparo **oposto à MF**, onde o tendão adere à polia; na zona I, divisão a até **1 cm** da inserção permite sutura ou avanço ao osso. No polegar, a polia essencial é a **oblíqua** (Green, p. 218).\n\nO FPL está na seção \"A zona 2, as zonas proximais e o polegar\" do resumo.",
+  "correta": "**C) da região tenar.** Sem vínculo para segurá-lo, o coto proximal do FPL cortado na zona 2 recua para baixo da musculatura tenar, como descreve o Green.",
   "incorretas": {
-   "A": "A interfalângica fica distal à lesão na zona 2; é onde fica o coto distal, e não o proximal.",
-   "B": "O coto passa por baixo da polia oblíqua e retrai além dela, para a região tenar.",
-   "D": "O espaço de Parona fica no antebraço distal, mais proximal do que a retração habitual numa lesão da zona 2.",
-   "E": "Retrair além do túnel do carpo é mais do que o habitual numa lesão da zona 2."
+   "A": "**Interfalângica** fica distal à lesão da zona 2; é a região do coto distal e da inserção, não do coto que retrai.",
+   "B": "**Polia oblíqua** é a polia essencial do polegar, na falange proximal; o coto cortado não para sob ela, recua além dela.",
+   "D": "**Espaço de PARONA** fica no punho, entre os flexores e o pronador quadrado; é proximal demais para a retração habitual, e o Campbell busca o coto mais alto pela via entre a artéria radial e o flexor radial do carpo, não nesse espaço.",
+   "E": "**Proximal ao túnel do carpo** é o lugar de busca quando o coto já ultrapassou a borda da musculatura tenar, e não a posição frequente."
   },
-  "conceito": "O **flexor longo do polegar** (FLP) é o tendão que dobra a ponta do polegar. Ele tem características que o tornam diferente dos flexores dos outros dedos:\n\né um tendão **único**, com **ventre muscular independente**, sem ligação com os outros flexores;\n\n**não tem as vínculas** que, nos outros dedos, seguram o tendão junto ao osso e limitam a retração.\n\n**A consequência**: quando o FLP é cortado, o coto proximal é puxado pelo músculo e **retrai rápido e muito**, sem nada que o segure no caminho.\n\n**As zonas dos flexores do polegar**:\n\n**T1**: além da interfalângica;\n\n**T2**: da polia A1 (na metacarpofalângica) até a interfalângica, incluindo a **polia oblíqua**, a mais importante do polegar;\n\n**T3**: a **eminência tenar**;\n\n**T4**: o túnel do carpo;\n\n**T5**: o antebraço.\n\n**Onde encontrar o coto proximal numa lesão na zona T2**: ele costuma estar retraído até a **região tenar** ou além. Por isso, a exploração cirúrgica muitas vezes precisa ser ampliada para a palma.\n\n**Um cuidado**: ao fazer incisões na eminência tenar, é preciso proteger o **ramo motor do nervo mediano**, que inerva os músculos tenares.\n\n**Na prova**: na lesão do flexor longo do polegar na zona 2, o coto proximal frequentemente está na região tenar.",
-  "correta": "Sem vínculas para segurá-lo, o flexor longo do polegar retrai até a região tenar ou além, e a exploração precisa se estender à palma.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 185, 190 e 218",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3164 a 3166",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço (versão 2)",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "alerta": "As fontes divergem: o Green's Operative Hand Surgery, 7ª ed. (p. 190), põe o coto do FPL profundamente à musculatura tenar; o Campbell's Operative Orthopaedics, 15ª ed. (p. 3165), descreve retração até perto do punho, na zona III. O gabarito oficial (região tenar) segue o Green.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0230": {
@@ -4352,18 +4404,22 @@
   "conferido": false
  },
  "mao-0342": {
-  "conceito": "**A imagem.** É um corte transversal do **punho** no nível do **túnel do carpo**. A seta aponta um tendão **isolado**, situado no lado **radial** do túnel, na camada **profunda**, junto aos ossos do carpo: o **flexor longo do polegar**.\n\n**O conteúdo do túnel do carpo.** O túnel é limitado pelos ossos do carpo (assoalho e paredes) e pelo **ligamento transverso do carpo** (teto). Por ele passam **dez estruturas**:\n- **4 tendões do flexor superficial dos dedos**: em posição **superficial**, organizados em duas camadas (os do médio e do anular por cima; os do indicador e do mínimo por baixo).\n- **4 tendões do flexor profundo dos dedos**: na camada **profunda**, lado a lado, junto ao assoalho.\n- **1 tendão do flexor longo do polegar**: **profundo** e **radial**, isolado na sua própria bainha (a bainha radial).\n- **O nervo mediano**: **superficial**, logo abaixo do ligamento transverso, no lado radial.\n\n**O que não passa pelo túnel.**\n- O **flexor radial do carpo**: corre num **túnel próprio**, no sulco do trapézio, separado do túnel do carpo por um septo.\n- O **palmar longo**: passa **por cima** do ligamento transverso.\n- O **nervo e a artéria ulnares**: passam pelo **canal de Guyon**, ulnar e superficial ao túnel.\n\n**As bainhas sinoviais.** Os tendões dos flexores dos dedos ficam numa bainha comum (**bainha ulnar**), que continua até a ponta do **dedo mínimo**. O flexor longo do polegar tem a **bainha radial**, que continua até a ponta do **polegar**. Por isso, uma infecção do polegar ou do mínimo pode se espalhar para o punho e passar de uma bainha para a outra (**infecção em ferradura**), pelo espaço de Parona.\n\n**A importância clínica.**\n- Na **síndrome do túnel do carpo**, o nervo mediano é comprimido no túnel. A liberação corta o ligamento transverso.\n- Na **ruptura de Mannerfelt-Norman** (artrite reumatoide), o tendão do flexor longo do polegar se rompe por atrito sobre um osteófito do escafoide.",
-  "correta": "**Correta: B (longo do polegar).** No corte transversal do túnel do carpo, a seta aponta o tendão isolado, **profundo e radial**, que é o **flexor longo do polegar**. Ele corre na bainha radial, separado dos flexores dos dedos.",
+  "conceito": "Num corte do punho, achar o flexor longo do polegar é questão de saber em que andar e de que lado cada tendão passa no túnel do carpo.\n\n**A imagem.** Ilustração do NETTER: mão vista pela palma, com o polegar à direita e um corte transversal do punho na base. No centro do corte, os ossos do carpo formam o assoalho; acima deles, dentro do túnel, os tendões flexores aparecem como círculos brancos agrupados. A seta amarela desce sobre a parte do túnel voltada para o lado do **polegar**, num tendão **isolado**, na camada **profunda**, encostado nos ossos, separado do bloco dos tendões dos dedos.\n\n**A arrumação constante** (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 185). Os nove flexores entram no túnel sempre na mesma ordem:\n- mais superficiais, o **FDS do médio e do anular**;\n- logo abaixo, o **FDS do indicador e do mínimo**;\n- na camada mais profunda, **os quatro FDP e o FPL**, lado a lado.\n\nO FPL fica no extremo **radial** dessa camada profunda. O túnel tem nove tendões e o mediano (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão)), e o Campbell lembra que o **mediano** é a estrutura mais palmar, logo sob o teto, com os nove tendões dorsais a ele (Campbell's Operative Orthopaedics, 15ª ed., cap. 82 (Síndromes compressivas), p. 3542 a 3544).\n\n**De onde vem cada um.** O FPL nasce do terço médio do rádio e é inervado pelo **interósseo anterior**, que também inerva o FDP do indicador e do médio; o FDP do anular e do mínimo é do ulnar (Green, p. 185). No punho, o FPL tem bainha própria, a bolsa radial.\n\nA arrumação está na seção \"Os músculos flexores extrínsecos e o túnel do carpo\" do resumo.",
+  "correta": "**B) longo do polegar.** Tendão isolado, no plano profundo e no lado radial do túnel, junto aos ossos: é a posição do FPL.",
   "incorretas": {
-   "A": "O **flexor radial do carpo** não passa pelo túnel do carpo: corre num **túnel próprio**, no sulco do trapézio, mais radial e separado por um septo.",
-   "C": "O **flexor profundo do indicador** fica na camada profunda do túnel, ao lado dos outros flexores profundos, mais ulnar que o flexor longo do polegar.",
-   "D": "O **flexor profundo do quinto dedo** fica no lado **ulnar** da camada profunda do túnel, oposto à posição indicada."
+   "A": "**Radial do carpo** não passa dentro do túnel do carpo; corre por fora, no lado radial, e não estaria entre os tendões dos dedos.",
+   "C": "**Profundo do indicador** está na mesma camada profunda, mas dentro do bloco dos quatro FDP, ao lado do FPL e não isolado na borda radial.",
+   "D": "**Profundo do quinto dedo** fica no extremo oposto da camada profunda, do lado ulnar, longe de onde a seta aponta."
   },
   "referencias": [
-   "Netter, Atlas de Anatomia Humana, 7ª edição, Cap. 7",
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 185",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3160 e 3161.e1",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82 (Síndromes compressivas), p. 3542 a 3544",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço (versão 2)",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0343": {
@@ -4713,14 +4769,19 @@
   "conferido": false
  },
  "mao-0402": {
-  "conceito": "### Técnicas de sutura tendínea\n| Técnica | Desenho | Uso |\n|---|---|---|\n| ==Bunnell== | ==X cruzados sucessivos== em cada coto | resistente, mas **estrangula a irrigação**; hoje em extensores e transferências |\n| Kessler modificado (Pennington) | alças em ângulo reto com pegas bloqueantes, 2 fios | clássico dos flexores |\n| Strickland, cruciate (Adelaide), Tang, MGH | 4 a 6 fios cruzando o foco | permitem movimento ativo precoce |\n| ==Pulvertaft== | ==entrelaçamento== de um tendão através do outro | transferências (calibres diferentes) |\n| Mason-Allen | horizontal + vertical | manguito rotador (tendão-osso) |\n| Krackow | pegas bloqueantes laterais em série | tendões grossos, ligamentos |\n\n### Princípios de um bom reparo\n- Número de fios cruzando o foco, pegas de cerca de 1 cm, bloqueio, epitendínea contínua, preservar a vascularização dorsal.\n\n### Outras técnicas\n| Técnica | Desenho |\n|---|---|\n| Tajima | Kessler com alça separada em cada coto, nó ao fim |\n| Tsuge | alça de fio duplo intratendínea |\n\n> **Na prova:** X cruzados sucessivos = ==Bunnell==",
-  "correta": "**Bunnell.**\n- X cruzados sucessivos em cada coto.\n- Resistente, mas estrangula a irrigação intratendínea.\n- Hoje em extensores e transferências.",
+  "conceito": "Questão de reconhecer o desenho. A figura é pequena e borrada, mas o padrão do fio é inconfundível quando se sabe o que procurar.\n\n**A imagem.** Um tendão desenhado na horizontal, cortado no meio (a marca em V em cima indica a linha do reparo). Em cada coto, o fio entra e sai do tendão várias vezes em **zigue-zague cruzado**, formando uma sequência de **X** de um lado e do outro, até se encontrar no foco. Não há alças em ângulo reto nem nós laterais isolados: é uma sutura de passagens cruzadas sucessivas dentro do tendão.\n\n**O que o livro diz desse desenho.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY) reúne o catálogo das suturas nas Fig. 71.4 a 71.10 (p. 3146 a 3148) e descreve o **BUNNELL cruzado** na Fig. 71.21. O mesmo capítulo lembra o preço desse padrão: as **suturas cruzadas intratendíneas** (BUNNELL, modificação de KLEINERT) **prejudicam a circulação** dentro do tendão, cuja irrigação é segmentar e chega pelos vínculos dorsais; foi por isso que se passou a recomendar o núcleo na **metade volar** e técnicas que agarram menos tecido.\n\n**Onde ficam as outras.** O Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III) (p. 188) classifica as técnicas pelo número de fios: as de **dois fios** são KESSLER, KESSLER modificado e TAJIMA; as **multifilamentares**, STRICKLAND, cruzada, BECKER, SAVAGE e WINTERS, mais fortes e mais resistentes ao gap. No estudo de ZOBITZ, KESSLER, TSUGE e outras não diferiram na força para gap de 1,5 mm (Campbell, p. 3145).\n\nAs técnicas estão na seção \"A sutura: material, calibre e configuração\" do resumo.",
+  "correta": "**B) BUNNELL.** Passagens cruzadas sucessivas dentro de cada coto, em X: é o desenho do BUNNELL cruzado, o mesmo que o Campbell aponta por prejudicar a circulação intratendínea.",
   "incorretas": {
-   "A": "**Retangular.**\n- Alça separada em cada coto.",
-   "C": "**Alças em ângulo reto.**\n- Nó dentro do foco.",
-   "D": "**Alça dupla.**\n- Ancoragem intratendínea."
+   "A": "**TAJIMA** é técnica de dois fios do grupo do KESSLER, com alças de agarre em cada coto e não com a série de cruzamentos da figura.",
+   "C": "**KESSLER** é a sutura central clássica de dois fios, com alças que agarram o tendão; não faz o zigue-zague cruzado mostrado.",
+   "D": "**TSUGE** aparece no estudo de ZOBITZ como outra sutura central de força semelhante à do KESSLER; o desenho da figura não é o dela."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3145 a 3148, Fig. 71.4 a 71.10 e 71.21",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 188",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0403": {
@@ -5152,17 +5213,21 @@
   "conferido": false
  },
  "mao-0435": {
-  "conceito": "### Deformidade em botoeira\n- Ruptura da **banda central** (zona III).\n- As **bandas laterais** migram para **volar** do eixo da IFP:\n  - deixam de estender a IFP (que cai em **flexão**);\n  - passam a **hiperestender a IFD**.\n- O ligamento retinacular oblíquo encurta e fixa a deformidade.\n\n### Tratamento conservador\n- Órtese com ==IFP em extensão== por cerca de 6 semanas (dia e noite), depois uso noturno.\n- ==IFD livre==, com **flexão ativa** repetida: puxa as bandas laterais de volta para dorsal e alonga o retinacular oblíquo.\n\n### Diagnóstico precoce\n- **Teste de Elson:** IFP fletida a 90° sobre a borda da mesa; extensão ativa da IFP contra resistência. Se a IFD fica **rígida em extensão**, a banda central está rompida.\n- A deformidade típica pode surgir só 10 a 14 dias após o trauma.\n\n### Cirurgia\n- Lesões abertas, avulsão com fragmento grande e deslocado, falha do conservador: reparo ou reconstrução da banda central.\n\n### Botoeira crônica: reconstrução\n| Técnica | Princípio |\n|---|---|\n| ==Aiache== | ==hemifitas das duas bandas laterais== unidas na linha média sobre a IFP |\n| Littler | bandas laterais liberadas e suturadas sobre a IFP (preservando o retinacular oblíquo) |\n| Snow | retalho do tendão extensor rebatido distalmente |\n| Matev | alonga uma banda e usa a outra para a banda central |\n| Fowler (tenotomia distal) | secção do tendão terminal para corrigir a hiperextensão da IFD |\n\n- Pré-requisito: ==IFP com extensão passiva completa== (órtese seriada antes).\n\n### Martelo crônico\n| Técnica | O que faz |\n|---|---|\n| ==Fowler== | ==tenotomia da banda central== proximal à IFP: força do extensor passa à IFD |\n| reconstrução do retinacular oblíquo (Littler, Thompson) | enxerto em espiral |\n| encurtamento do terminal (tenodermodese) | |\n| artrodese da IFD | salvamento |\n\n- Fowler corrige também o ==pescoço de cisne== secundário.\n- Cortar demais produz botoeira.\n\n> **Na prova:** tenotomia da banda central no martelo crônico = ==Fowler==",
-  "correta": "**Fowler.**\n- Solta a banda central e transfere a força à IFD.\n- Corrige também o pescoço de cisne secundário.\n- Excesso de corte gera botoeira.",
+  "conceito": "Outra questão de extensor guardada entre as de flexores. O dedo em martelo crônico tem a IFD caída porque a porção terminal do extensor perdeu a ação; a tenotomia do feixe central é uma forma indireta de devolver essa ação.\n\n**Como o extensor se divide** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão), cap. 6). Sobre a falange proximal, o extensor dá o **feixe central**, que se insere na base dorsal da falange média e estende a IFP, e os **feixes laterais**, que se unem às bandas dos intrínsecos e formam a **porção terminal**, na base da falange distal, que estende a IFD. O **retinacular oblíquo** estende a IFD quando a IFP está estendida.\n\n**A imagem.** Dois desenhos do dedo em perfil. No de cima, a IFD está caída em flexão (o martelo) e uma seta preta aponta o **feixe central** sobre o dorso da IFP, no ponto da secção; as setas vermelhas mostram a tração dos tendões vindos do antebraço e dos intrínsecos. No de baixo, depois do corte, uma seta horizontal mostra o aparelho extensor **deslizando para proximal**, e uma seta vertical na ponta mostra a **IFD estendida**.\n\n**O mecanismo.** Cortado o feixe central proximal à sua inserção, a força do extensor que se gastava na IFP passa a se concentrar nos feixes laterais e na porção terminal; o aparelho recua um pouco e a tensão que faltava na IFD volta. É o que a seta para cima representa.\n\nO aparelho extensor está na seção do aparelho extensor do resumo de anatomia da mão.",
+  "correta": "**C) FOWLER.** A tenotomia do feixe central no martelo crônico, mostrada na figura do Campbell's Operative Orthopaedics, 14ª ed., citada na questão, é a que a banca atribui a FOWLER.",
   "incorretas": {
-   "A": "**Reconstrói a banda central.**\n- O oposto de seccioná-la.",
-   "B": "**Outra tenotomia.**\n- Tendão terminal, na botoeira crônica.",
-   "D": "**Outra técnica.**\n- Não é a tenotomia da banda central."
+   "A": "**AICHE** lembra AIACHE, nome que o próprio TARO usa para uma técnica de botoeira em que as bandas laterais são unidas no dorso, e não para a tenotomia do martelo.",
+   "B": "**LITTLER** está no Green ligado ao arco de flexão com FDS íntegro, e não à secção do feixe central do extensor.",
+   "D": "**BROOKS-GRANER** não descreve o procedimento da figura; o desenho mostra só a secção do feixe central sobre a IFP, sem outro gesto."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 66"
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão), cap. 6 (Aparelho intrínseco)",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), Fig. 6.34",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço (versão 2)",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
   ],
-  "geradoEm": "2026-09-24",
+  "alerta": "Os livros lidos para este tema (Green's Operative Hand Surgery, 7ª ed., cap. 6; Campbell's Operative Orthopaedics, 15ª ed., cap. 71, parte dos flexores) não descrevem a tenotomia de FOWLER. A figura vem do Campbell's Operative Orthopaedics, 14ª ed., citado na própria questão; o comentário explica o mecanismo pela anatomia do Netter Atlas de Anatomia Ortopédica, 2ª ed. O gabarito oficial foi preservado.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0436": {
@@ -6669,14 +6734,19 @@
   "conferido": false
  },
  "mao-0541": {
-  "conceito": "### Reparo dos tendões flexores\n| Componente | Papel |\n|---|---|\n| sutura **central (nuclear)** | suporta a maior parte da carga; resistência proporcional ao **número de fios** que cruzam o foco (2, 4, 6) |\n| ==sutura epitendínea contínua== | regulariza a superfície (desliza na bainha) e ==aumenta a resistência em cerca de 50%== |\n\n### O que torna o reparo mais forte\n- Mais fios cruzando o foco (4 a 6 fios permitem movimento ativo precoce).\n- Fio mais calibroso (3-0 ou 4-0), pegas de cerca de **1 cm** a partir do corte.\n- Pegas **bloqueantes** (locking) e sutura dorsal (mais forte).\n- Epitendínea bem feita (cruzada ou bloqueada é mais forte que a simples contínua).\n\n### Por que importa\n- Reparo forte permite **mobilização precoce**, que evita aderências.\n- O reparo enfraquece nas primeiras 1 a 3 semanas (amolecimento) antes de ganhar força.\n\n### Suturas epitendíneas\n| Técnica | Característica |\n|---|---|\n| simples contínua | mais fraca |\n| ==cross-stitch (Silfverskiöld)== | ==cruzes sucessivas==, a mais resistente, superfície lisa |\n| interlocking horizontal | resistente |\n\n- Passagens a 3 a 5 mm do reparo, espaçadas 1,5 a 2 mm.\n\n### Centrais (não periféricas)\n- Lee (4 fios), Tsuge, Kessler, Strickland, cruciate.\n\n> **Na prova:** cruzes epitendíneas sucessivas = ==cross-stitch==",
-  "correta": "**Cross-stitch.**\n- Epitendínea de Silfverskiöld em cruzes.\n- Mais resistente das periféricas, superfície lisa.",
+  "conceito": "A figura não mostra uma sutura central; mostra a **camada de superfície**, a epitendínea, numa versão mais forte que a corrida simples.\n\n**A imagem.** Um tendão na horizontal, com o corte no meio. Um único fio corre só na periferia, entrando e saindo **cruzado** de um lado e do outro do foco, formando uma rede de linhas oblíquas. Duas medidas estão marcadas: cada passagem pega cerca de **3 a 5 mm** de tendão a partir do corte, e as passagens ficam espaçadas de **1,5 a 2 mm**. É o **ponto cruzado** (\"cross-stitch\").\n\n**O que o livro mostra.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY) (p. 3146 e 3147, Fig. 71.8) desenha duas versões: começando no lado distante com sobreposição de cerca de **50%** a cada agarre, o que forma uma trama, ou começando no lado próximo sem sobreposição. O dado de força é o que a prova gosta: o cross-stitch de poliéster trançado **6-0** ficou **117%** mais forte que o KESSLER modificado com epitendínea convencional.\n\n**Por que reforçar a superfície.** A epitendínea contínua suporta **50%** da carga de falha, reduz o volume e resiste ao gap; pontos periféricos a **2 mm** do reparo são mais fortes que a **1 mm** (Campbell, p. 3147 e 3148). O Green resume que ela nasceu para alisar, aumenta a força, mas continua sendo **complemento** do núcleo (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 188), e usa polipropileno 6-0 contínuo começando num canto volar (p. 194).\n\nA epitendínea está na seção \"A sutura: material, calibre e configuração\" do resumo.",
+  "correta": "**A) Cross-stitch.** Fio só na periferia, em passagens cruzadas a 3 a 5 mm do corte e espaçadas de 1,5 a 2 mm: é a epitendínea em ponto cruzado da Fig. 71.8 do Campbell.",
   "incorretas": {
-   "B": "**Central.**\n- Quatro fios cruzando o foco.",
-   "C": "**Manguito.**\n- Tendão-osso.",
-   "D": "**Central.**\n- Alça dupla intratendínea."
+   "B": "**4 fios de LEE** é uma sutura central, que atravessa o foco por dentro do tendão; a figura mostra fio só na superfície.",
+   "C": "**MASON-ALLEN** não está no catálogo de suturas de flexores do capítulo; a figura é uma epitendínea de tendão flexor, sem relação com esse nome.",
+   "D": "**TSUGE modificada** é núcleo, citado pelo Campbell entre os reparos fortes para movimento ativo; não é uma camada periférica cruzada."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3145 a 3148, Fig. 71.8",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 188 e 194",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0542": {
@@ -6865,14 +6935,19 @@
   "conferido": false
  },
  "mao-0554": {
-  "conceito": "### Nutrição dos tendões flexores\n| Fonte | Via |\n|---|---|\n| vascular | vínculas (curtas e longas), entram pela face **dorsal** |\n| difusão | líquido sinovial dentro da bainha |\n\n### Zonas avasculares\n| Tendão | Zona isquêmica |\n|---|---|\n| ==flexor superficial== | ==sob a polia A2== |\n| flexor profundo | sob a polia **A4** |\n\n- Nessas zonas, o tendão depende quase só da difusão.\n- A face **volar** do tendão (em contato com a polia) é a mais pobre em vasos.\n\n### Polias\n| Polia | Local | Importância |\n|---|---|---|\n| A1 | MF | seccionada no dedo em gatilho |\n| ==A2== | falange proximal | ==essencial== (evita corda de arco) |\n| A3 | IFP | fina |\n| A4 | falange média | ==essencial== |\n| A5 | IFD | fina |\n\n### Implicações\n- Suturas no **lado dorsal** do tendão preservam a irrigação.\n- Mobilização precoce melhora a difusão sinovial.\n\n> **Na prova:** zona isquêmica do flexor superficial = ==polia A2==.",
-  "correta": "**Sob a A2.**\n- No flexor superficial, a zona pobre em vasos fica sob a A2.\n- No profundo, sob a A4.",
+  "conceito": "Terceira versão do mesmo enunciado no acervo, aqui vale olhar a questão pelo lado do cirurgião: saber onde o tendão é pobre em sangue muda como se passa o fio e quanto da polia se pode abrir.\n\n**O suprimento.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY) (p. 3143 e 3144) descreve nutrição pelo **líquido sinovial**, por vasos longitudinais do paratendão, por vasos intraósseos na inserção e pela **circulação vincular**, alimentada por quatro ramos transversos comunicantes das artérias digitais. O Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III) (p. 186) detalha os vínculos: os **curtos** são mesentérios triangulares junto às inserções; o **longo do superficial** nasce do assoalho da bainha na falange proximal; o **longo do profundo** nasce do superficial, na IFP. Todos chegam pela face **dorsal**.\n\n**A zona crítica.** O Campbell aponta que o superficial tem **uma** área isquêmica, **sob a A2**; o profundo, **duas**, sob a A2 e a A4. São as duas polias que BARTON, DOYLE e BLYTHE e HUNTER mandam preservar.\n\n**O que muda na mão do cirurgião.**\n- Como cada segmento depende de um vínculo dorsal e o ponto intratendíneo piora a microcirculação, o núcleo vai na **metade volar**, mesmo sabendo que o dorsal é **58%** mais forte (Campbell, p. 3147 e 3156).\n- O tendão é pego pelo **endotendão**, no corte; cada lesão da superfície vira uma aderência (Green, p. 192 e 224).\n- A A2 isquêmica e a A2 indispensável são a mesma polia, e mesmo assim o Campbell aceita incisar parte dela no reparo agudo se o resto da bainha estiver bom.\n\nA irrigação está na seção \"A bainha, as polias e a irrigação em detalhe\" do resumo.",
+  "correta": "**B) A2.** Sob a A2, na falange proximal, fica a única zona isquêmica do superficial descrita pelo Campbell.",
   "incorretas": {
-   "A": "**Polia sacrificável.**\n- A A1 é liberada no dedo em gatilho; não é a zona isquêmica.",
-   "C": "**Polia fina.**\n- A A3 não é a descrita.",
-   "D": "**Cruciforme.**\n- A C1 permite que a bainha dobre; não comprime o tendão contra o osso."
+   "A": "**A1** é a primeira polia, na MF; o tendão ali ainda está proximal ao trecho mal irrigado.",
+   "C": "**A3** é uma polia articular sobre a IFP, perto da origem do vínculo longo do profundo, e não é a zona isquêmica do superficial.",
+   "D": "**C1** é cruciforme, fina e colapsável; é onde se abre a janela de reparo, e não onde o tendão fica sem sangue."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3143, 3144, 3147 e 3156",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 186, 192 e 224",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0555": {
@@ -6939,14 +7014,20 @@
   "conferido": false
  },
  "mao-0560": {
-  "conceito": "### Reconstrução tardia do flexor na zona II\n| Condição do dedo | Estratégia |\n|---|---|\n| ==polias permeáveis== (A2 e A4), bainha utilizável, articulações ==móveis passivamente==, pele boa | ==enxerto em um tempo== |\n| bainha cicatrizada, polias perdidas, rigidez, pele ruim | ==dois tempos==: haste de silicone (Hunter) + reconstrução de polias; enxerto após 3 meses |\n| articulação destruída, dedo pouco útil | artrodese, tenodese ou amputação |\n\n### Classificação de Boyes (candidatos a enxerto)\n| Grau | Situação | Prognóstico |\n|---|---|---|\n| 1 | boa: cicatriz mínima, articulações móveis | melhor |\n| 2 | cicatriz | |\n| 3 | lesão articular | |\n| 4 | lesão nervosa | |\n| 5 | múltiplas lesões | pior |\n\n### Doadores de enxerto\n- **Palmar longo** (ausente em cerca de 15%), plantar, extensor longo dos dedos do pé.\n\n### Pré-requisito comum\n- Mobilidade passiva completa das articulações (reabilitação antes).\n\n> **Na prova:** enxerto primário indicado com ==polias permeáveis==.",
-  "correta": "**Polias permeáveis.**\n- Com A2 e A4 preservadas e bainha utilizável, o enxerto tem por onde deslizar.\n- Articulações móveis e pele boa completam os requisitos.",
+  "conceito": "A mesma questão do TARO 2014 aparece de novo no acervo. Desta vez, vale montar a resposta pelo avesso: por que cada problema listado nas outras opções obriga a reconstruir em etapas.\n\n**O enxerto primário precisa de um dedo pronto.** O Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III) (p. 202) pede, antes de qualquer reconstrução, partes moles curadas e móveis, articulações sem contratura e **passivo completo**, o grau 1 de BOYES. A tabela de BOYES gradua o dano: 1 bom; 2 cicatriz; 3 lesão articular; 4 lesão nervosa; 5 múltiplos danos. Só o grau 1 vai direto ao enxerto.\n\n**E de um túnel pronto.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY) (p. 3169) exige **A2 e A4 íntegras**; senão, elas são reconstruídas em estágio separado. A razão é mecânica: sem as polias, o tendão se afasta do osso, perde braço de alavanca e faz **corda de arco**; perder duas anulares contíguas gera contratura em flexão da IFP (Green, p. 221).\n\n**O que fazer quando falta algo.** É o cenário do método de HUNTER: no **1º tempo**, exploração, correção das contraturas, **reconstrução das polias** (BUNNELL com voltas em torno da falange, LISTER com o retináculo extensor, KAREV na placa volar) e o bastão de silicone com Dacron; no **2º tempo**, depois de **pelo menos 6 semanas** pelo Green ou cerca de **8 semanas a 3 meses** pelo Campbell (p. 3174), o enxerto passa pela pseudobainha.\n\n**A ordem dos doadores** é a mesma nos dois tempos: palmar longo primeiro, plantar quando se precisa de enxerto longo.\n\nOs dois tempos estão na seção \"Dois tempos, polias reconstruídas e o polegar\" do resumo.",
+  "correta": "**B) permeabilidade das polias.** Com o trilho fibro-ósseo aberto e as polias essenciais presentes, o enxerto entra em um tempo; sem isso, a reconstrução é em etapas.",
   "incorretas": {
-   "A": "**Contraindicação.**\n- O enxerto não move articulação rígida.",
-   "C": "**Indica dois tempos.**\n- Bainha lesada pede haste de silicone antes do enxerto.",
-   "D": "**Não define a técnica.**\n- A lesão nervosa piora o prognóstico, mas não decide um ou dois tempos."
+   "A": "**Rigidez articular** coloca o dedo fora do grau 1 de BOYES; antes de enxertar, é preciso devolver o passivo, e isso acontece no primeiro tempo.",
+   "C": "**Lesão da bainha** significa túnel cicatrizado ou destruído, o cenário que pede o bastão de silicone para formar uma pseudobainha.",
+   "D": "**Lesão nervosa concomitante** corresponde ao grau 4 de BOYES, com alterações tróficas, e afasta o dedo do enxerto primário."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 202, 213 e 221 a 223",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3169 e 3174",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
+  ],
+  "alerta": "A expressão \"permeabilidade das polias\" não aparece nos livros lidos; o Campbell's Operative Orthopaedics, 15ª ed. (p. 3169), pede A2 e A4 íntegras para o enxerto, e o Green's Operative Hand Surgery, 7ª ed. (p. 199), túnel fibro-ósseo satisfatório. O gabarito oficial foi preservado.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0561": {
@@ -7596,68 +7677,23 @@
   "conferido": false
  },
  "mao-0598": {
-  "conceito": "**O sentido do ápice na falange média depende da posição do traço em relação ao flexor superficial.** O flexor superficial insere-se nas bordas laterais do terço médio da falange média. A banda central do extensor se insere na base dorsal; o tendão terminal atua distalmente. Ao fraturar o osso, essas inserções passam a tracionar fragmentos diferentes.\n\nSe o traço é **distal à inserção do superficial**, esse tendão permanece ligado ao fragmento proximal e o flete, enquanto o aparelho extensor distal estende o outro fragmento. A angulação resultante tem **ápice volar**. Se o traço é proximal à inserção do superficial, o tendão fica ligado ao fragmento distal e o flete, enquanto a banda central estende o proximal: o ápice se torna **dorsal**.\n\n“Ápice” indica para onde aponta o vértice da deformidade, não simplesmente o lado para onde um fragmento se move. A comparação entre os dois padrões evita aplicar uma regra única para toda fratura da falange média. O flexor profundo não substitui o superficial nesse raciocínio, pois sua inserção óssea é na falange distal.\n\n**Leia “Falange média: tudo depende do flexor superficial”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na Biblioteca.",
-  "correta": "O traço deve estar **distal à inserção do flexor superficial**. Assim, o superficial flete o fragmento proximal, enquanto o aparelho extensor atua no distal, produzindo o vértice volar da angulação. A posição relativa ao tendão determina quais forças ficam de cada lado da fratura. A resposta está sustentada pela bibliografia; não é apresentada como gabarito oficial inexistente.",
+  "conceito": "Fratura da falange média é um problema de **forças**: quem desvia os fragmentos são os tendões que se inserem nela, e o flexor superficial é o divisor de águas.\n\n**As inserções** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 45 (Fraturas e luxações da mão)). O **flexor superficial** se insere nas bordas laterais do **terço médio** da falange média, longe da base. O Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III) (p. 186) mostra de onde vem essa inserção: as duas fitas do FDS giram 180 graus em torno do profundo, reúnem-se no quiasma de CAMPER e se inserem nos **três quintos médios** da face volar da falange média. A **banda central** do extensor se insere na base dorsal; o **tendão terminal** puxa a falange distal.\n\n**Os dois cenários.**\n- **Traço distal ao superficial** (colo e diáfise distal): o FDS fica preso ao fragmento **proximal** e o flete, enquanto o terminal estende o distal. O vértice aponta para a palma: **ápice volar**.\n- **Traço proximal ao superficial** (base): o FDS fica preso ao fragmento **distal** e o flete, enquanto a banda central estende o proximal: **ápice dorsal**.\n\n**Leitura do termo.** Ápice é para onde aponta o vértice da angulação; ápice volar e fragmento distal desviado para dorsal são a mesma deformidade. O TARO já cobrou o tema por vários lados: o colo com ápice volar, a base com ápice dorsal e, aqui, onde fica o traço que dá ápice volar.\n\nAs forças estão na seção da falange média do resumo de fraturas da mão.",
+  "correta": "**B) distal à inserção do flexor superficial do dedo.** O superficial flete o fragmento proximal e o terminal estende o distal: o vértice aponta para volar.",
   "incorretas": {
-   "A": "A deformidade não é igual em qualquer ponto da falange média. Quando o traço muda de lado em relação à inserção do superficial, muda também o fragmento que recebe sua força de flexão. Por isso o padrão distal produz ápice volar e o proximal produz ápice dorsal. Ignorar a localização do traço elimina o mecanismo que a pergunta pretende avaliar.",
-   "C": "Um traço exatamente na inserção não corresponde à relação anatômica clássica usada para explicar o ápice volar. É preciso que a inserção do superficial fique no fragmento proximal, o que ocorre quando a fratura é distal a ela. Se o traço atravessa a área de inserção, a descrição isolada não garante a distribuição de forças proposta. A opção substitui “distal” por uma localização que não demonstra o mecanismo.",
-   "D": "Quando o traço é proximal à inserção, o superficial permanece preso ao fragmento **distal** e o flete. A banda central, na base dorsal, estende o fragmento proximal. Essa combinação produz **ápice dorsal**, oposto ao solicitado. A alternativa seria a resposta se o enunciado perguntasse pelo padrão proximal à inserção ou por ápice dorsal."
+   "A": "**Qualquer posição** ignora que o sentido do ápice se inverte conforme o traço fica de um lado ou do outro da inserção do superficial.",
+   "C": "**Sobre a inserção** não dá a deformidade típica de nenhum dos dois lados; o desvio clássico depende de o tendão ficar preso a um só fragmento.",
+   "D": "**Proximal à inserção** é o traço da base, em que o superficial flete o distal e a banda central estende o proximal: ápice dorsal."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Desvios das falanges e a falange proximal."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 45 (Fraturas e luxações da mão)",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 186, Fig. 6.3",
+   "Resumo OrtoQuestões: Fraturas e luxações da mão (versão 1)",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
   ],
-  "conferido": false,
   "provavel": "B",
-  "geradoEm": "2026-10-20",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-45-fraturas-mao",
-     "titulo": "Fraturas e luxações da mão",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
-     "secoes": [
-      "Desvios das falanges e a falange proximal"
-     ],
-     "blocos": [
-      "desvios-das-falanges-e-a-falange-proximal-dc5c51af",
-      "desvios-das-falanges-e-a-falange-proximal-09ae409e",
-      "desvios-das-falanges-e-a-falange-proximal-b6035935",
-      "desvios-das-falanges-e-a-falange-proximal-9109692a",
-      "desvios-das-falanges-e-a-falange-proximal-ffaf82d9",
-      "desvios-das-falanges-e-a-falange-proximal-8dfcc97a",
-      "desvios-das-falanges-e-a-falange-proximal-f10317d5",
-      "desvios-das-falanges-e-a-falange-proximal-107cc32b",
-      "desvios-das-falanges-e-a-falange-proximal-4dab0e05",
-      "desvios-das-falanges-e-a-falange-proximal-2590cdc9",
-      "desvios-das-falanges-e-a-falange-proximal-64aa80d4",
-      "desvios-das-falanges-e-a-falange-proximal-9423fcd9",
-      "desvios-das-falanges-e-a-falange-proximal-ca34308b",
-      "desvios-das-falanges-e-a-falange-proximal-1db07921",
-      "desvios-das-falanges-e-a-falange-proximal-b8f69131",
-      "desvios-das-falanges-e-a-falange-proximal-a0c00d7d",
-      "desvios-das-falanges-e-a-falange-proximal-37a2ae5d",
-      "desvios-das-falanges-e-a-falange-proximal-7eb7899f",
-      "desvios-das-falanges-e-a-falange-proximal-617152de",
-      "desvios-das-falanges-e-a-falange-proximal-c26f0603",
-      "desvios-das-falanges-e-a-falange-proximal-18ab4b31",
-      "desvios-das-falanges-e-a-falange-proximal-66f88dd5",
-      "desvios-das-falanges-e-a-falange-proximal-1c3bb556",
-      "desvios-das-falanges-e-a-falange-proximal-5cbb3ed5",
-      "desvios-das-falanges-e-a-falange-proximal-5913fd66",
-      "desvios-das-falanges-e-a-falange-proximal-8b6fefa2",
-      "desvios-das-falanges-e-a-falange-proximal-f219b7b2"
-     ],
-     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
-     "trechosSha256": "8b6cc281cdbd1a3973709d310a1eae3f5b0eb2ec49e23767a2a404793a6034ae"
-    }
-   ],
-   "questaoSha256": "774e58cdff0c8f33898dea6f582ca0cf9c6a31bab9396b2554f647a4b14fc890",
-   "comentarioSha256": "0be034574e8b7e200bb6d47741d1e7cd3e694bb04e5bf7885661525f1c84443b"
-  }
+  "alerta": "Questão sem gabarito oficial no acervo. A letra provável (distal à inserção do flexor superficial) é a que o Rockwood and Green's Fractures in Adults, 10ª ed., cap. 45, sustenta, conforme o resumo de fraturas da mão.",
+  "geradoEm": "2026-11-01",
+  "conferido": false
  },
  "mao-0599": {
   "conceito": "**Fratura oculta do escafoide.** O escafoide é o osso do carpo que mais fratura (queda com o punho em extensão e desvio radial). Muitas fraturas, sobretudo as sem desvio da cintura, **não aparecem** nas radiografias iniciais, mesmo com incidências específicas (PA com desvio ulnar, oblíquas). Cerca de 15% a 20% das fraturas iniciais são ocultas.\n\n**Por que importa.** A vascularização do escafoide é **retrógrada** (entra pela porção distal, dorsal), deixando o polo proximal vulnerável. Fratura não diagnosticada e não imobilizada tem alto risco de **pseudartrose**, necrose do polo proximal e, a longo prazo, colapso carpal (SNAC).\n\n**Conduta diante da suspeita clínica** (dor na tabaqueira anatômica, dor no tubérculo do escafoide, dor à compressão axial do polegar) com radiografia normal: imobilizar e investigar.\n\n**Exames para a fratura oculta.**\n\n| Exame | Comentário |\n|---|---|\n| Radiografia repetida em 10 a 14 dias | Reabsorção no traço torna a fratura visível; baixa sensibilidade |\n| Cintilografia óssea | Muito sensível, pouco específica; precisa de 48 a 72 horas |\n| Tomografia | Ótima para a anatomia da fratura e o desvio; menos sensível para traços sem desvio e não vê edema |\n| **Ressonância magnética** | **Sensibilidade e especificidade próximas de 100%** já nos primeiros dias; mostra edema ósseo, fratura e lesões associadas |\n| Ultrassonografia | Dependente do operador, pouco usada |\n\nRevisões sistemáticas (Mallee e colaboradores, Cochrane) confirmam a ressonância como o exame mais acurado para excluir ou confirmar a fratura oculta. Ela também evita imobilizações desnecessárias, que ocorrem na maioria dos pacientes com suspeita.\n\n> Fratura oculta do escafoide: ressonância é o padrão-ouro.",
@@ -7855,19 +7891,21 @@
   }
  },
  "mao-0607": {
-  "conceito": "**Suturas tendíneas e a união de tendões de calibres diferentes.** Os tendões flexores são reparados de duas maneiras: **término-terminal**, quando os cotos têm calibre semelhante (lesão aguda), e por **entrelaçamento**, quando se unem tendões de diâmetros diferentes (enxertos e transferências).\n\n**Sutura de Pulvertaft.** O tendão mais fino é passado através de fendas sucessivas feitas no tendão mais grosso, em planos perpendiculares (geralmente três passagens), e fixado com pontos em cada passagem; a ponta do tendão grosso pode ser moldada em \"boca de peixe\" para cobrir a junção. Vantagens:\n- **Grande resistência**, maior que a das suturas término-terminais, permitindo mobilização precoce.\n- Acomoda diferenças de calibre, pois o tendão fino é envolvido pelo grosso.\n- Permite ajustar a tensão antes da fixação definitiva.\n\nA desvantagem é o volume da junção, que não deve ficar dentro da bainha digital (polias); por isso é usada no antebraço, na palma ou no punho, como na junção proximal de enxertos tendíneos (descrita por Pulvertaft) e nas transferências.\n\n**Técnicas término-terminais.**\n\n| Técnica | Característica |\n|---|---|\n| Bunnell | Sutura em cruz (zigue-zague), histórica, com fio de aço removível |\n| Kessler e Tajima | Ponto de preensão em quadrado; Tajima usa dois fios, um em cada coto |\n| Strickland, Cruciate e outras de múltiplos fios | Mais passadas pelo foco, mais resistência para mobilização ativa |\n\n**Princípio moderno do reparo primário.** A resistência depende sobretudo do **número de fios que cruzam o foco** (4 a 6), complementado por sutura epitendínea contínua, permitindo protocolos de mobilização precoce.\n\n> Tendões de calibres diferentes: entrelaçamento de Pulvertaft.",
-  "correta": "**C: PULVERTAFT (resposta pela bibliografia).** O entrelaçamento de Pulvertaft passa o tendão fino através do grosso em várias fendas, compensando a diferença de calibre com grande resistência. É a técnica padrão em enxertos e transferências tendíneas.",
+  "conceito": "Unir dois tendões do mesmo calibre e unir um tendão fino a um grosso são problemas diferentes. No segundo caso, as suturas término-terminais não servem; é preciso entrelaçar.\n\n**A trama de PULVERTAFT.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY) (p. 3150, Fig. 71.15) a apresenta como a técnica para suturar um tendão de **pequeno diâmetro a um de grande diâmetro**: o tendão fino atravessa fendas sucessivas no grosso, cuja ponta se fecha em **\"boca de peixe\"** sobre a junção.\n\n**Por que o Green a prefere.** No Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III) (p. 208), ela é a junção proximal preferida nas zonas 3 a 5 e em enxertos e transferências, por três motivos: é **mais forte que as término-terminais**, permite **ajustar a tensão** já no primeiro passe, e a força cresce com o número de tramas; GABUZDA recomendou **4 ou 5**, e o autor usa **pelo menos duas**. No enxerto em um tempo, o motor preferido é o FDP proximal do próprio dedo, unido em PULVERTAFT logo distal à origem do lumbrical (p. 210 e 211), e a tensão é conferida pela **cascata** dos dedos.\n\n**O que as outras opções são.** Núcleos para cotos de calibre parecido (BUNNELL, as técnicas de dois fios como TAJIMA) e um protocolo de reabilitação (KLEINERT), que não é sutura.\n\nA junção está na seção \"A sutura: material, calibre e configuração\" do resumo.",
+  "correta": "**C) PULVERTAFT.** O entrelaçamento em boca de peixe é a técnica do Campbell para unir tendão fino a tendão grosso, mais forte que as término-terminais e com ajuste fino da tensão.",
   "incorretas": {
-   "A": "**Bunnell** descreveu a sutura em cruz término-terminal, para cotos de calibre semelhante; é técnica histórica, hoje pouco usada por lesar a vascularização e deslizar mal.",
-   "B": "**Kleinert** é conhecido sobretudo pelo protocolo de reabilitação com flexão passiva por elástico e extensão ativa após reparo primário, e por sua variante de sutura término-terminal; não é técnica para calibres diferentes.",
-   "D": "**Tajima** é uma sutura de preensão término-terminal (modificação de Kessler, com um fio em cada coto e nós no foco), indicada para reparo primário de cotos de mesmo calibre."
+   "A": "**BUNNELL** é sutura cruzada término-terminal, para cotos de mesmo calibre, e ainda prejudica a circulação intratendínea.",
+   "B": "**KLEINERT** dá nome ao protocolo de reabilitação com extensão ativa e flexão passiva por elástico preso à unha; não é técnica de sutura.",
+   "D": "**TAJIMA** é núcleo de dois fios do grupo do KESSLER, para unir cotos do mesmo tendão, e perde em força para as multifilamentares."
   },
   "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª ed., p. 3432.",
-   "Pulvertaft RG. Tendon grafts for flexor tendon injuries in the fingers and thumb; a study of technique and results. J Bone Joint Surg Br. 1956;38-B(1):175-194."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3150, Fig. 71.15, e p. 3161 a 3163",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 188 e 208 a 211",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
   ],
   "provavel": "C",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial no acervo. A letra provável (PULVERTAFT) é a que o Campbell's Operative Orthopaedics, 15ª ed. (p. 3150), sustenta para unir tendões de diâmetros diferentes.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0608": {
@@ -8479,17 +8517,22 @@
   "conferido": false
  },
  "mao-0634": {
-  "conceito": "**O túnel do carpo.** É um canal **inextensível**: o assoalho e as paredes são os ossos do carpo, e o teto é o **retináculo dos flexores** (ligamento transverso do carpo), que vai do escafoide e trapézio (lado radial) ao pisiforme e hâmulo do hamato (lado ulnar). Dentro dele passam **dez estruturas**: o **nervo mediano** e **nove tendões**.\n\n**A disposição em planos, de palmar para dorsal.**\n\n| Plano | Estruturas |\n|---|---|\n| Mais superficial | **Nervo mediano**, logo abaixo do retináculo, no lado radial |\n| Superficial | **Flexores superficiais dos dedos**: médio e anular por cima, indicador e mínimo por baixo |\n| **Profundo** | **Flexores profundos dos dedos** (quatro, lado a lado) e **flexor longo do polegar**, no lado radial |\n\n**O flexor longo do polegar e os profundos.** O tendão do **flexor longo do polegar** corre no lado **radial** do túnel, no **mesmo plano profundo** dos quatro tendões do flexor profundo dos dedos, apoiado no assoalho do canal. Ele tem bainha sinovial própria, a **bursa radial**; os tendões superficiais e profundos dos dedos são envoltos pela **bursa ulnar**.\n\n**O que fica fora do túnel.**\n- O **flexor radial do carpo** passa num túnel próprio, no sulco do trapézio.\n- O **palmar longo** passa por cima do retináculo.\n- O **nervo e a artéria ulnares** passam pelo canal de Guyon, superficial e ulnar.\n\n**Por que importa.**\n- Na **liberação do túnel do carpo**, o retináculo é seccionado pelo lado **ulnar** do mediano, para proteger o **ramo motor recorrente** (tenar), que sai geralmente do lado radial.\n- Na **tenossinovite** dos flexores (artrite reumatoide, infecção), o aumento de volume dentro do canal fechado comprime o mediano.\n- Na infecção, a comunicação entre as bursas radial e ulnar no espaço de Parona produz a infecção em ferradura.",
-  "correta": "**Resposta provável: Certo.** No corte transversal do punho, os quatro tendões do flexor profundo dos dedos e o tendão do **flexor longo do polegar** ocupam o **mesmo plano profundo** do túnel do carpo, apoiados no assoalho, com o flexor longo do polegar no lado radial.",
+  "conceito": "Afirmação do tipo certo ou errado sobre o andar dos tendões no túnel do carpo. A pergunta é se os profundos dos dedos e o flexor longo do polegar dividem o mesmo plano.\n\n**A ordem dos nove tendões** (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 185). Os flexores entram no túnel numa relação constante: os **FDS do médio e do anular** por cima de todos; logo abaixo, os **FDS do indicador e do mínimo**; e, na **camada mais profunda**, os **quatro FDP e o FPL**, lado a lado. O Campbell repete a regra dos superficiais na técnica da zona IV (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3161.e1). Logo, a afirmação está certa: FDP e FPL estão no mesmo plano, o mais profundo, com o FPL no extremo radial.\n\n**Por que os superficiais ficam em dois andares.** A divisão começa ainda no antebraço: no meio dele, os tendões do FDS do médio e do anular já são superficiais e os do indicador e do mínimo, profundos (Green, p. 185).\n\n**Uma consequência clínica.** Na zona IV os FDP ainda **não estão bem separados**, com interdigitações frequentes; na zona V não formam unidades individuais. Como os FDP do anular e do mínimo se intercomunicam, o dedo ainda flexiona com os seus tendões cortados no punho, e o exame engana (Campbell, p. 3144 e 3160). Já os FDS são distintos e mais fáceis de casar.\n\n**O teto e o mediano.** O ligamento carpal transverso fecha o túnel, que é mais estreito no hâmulo do hamato (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão)); sob ele, o mediano é a estrutura mais palmar, e os nove tendões ficam dorsais (Campbell's Operative Orthopaedics, 15ª ed., cap. 82 (Síndromes compressivas), p. 3542 a 3544).\n\nA camada profunda está na seção \"Os músculos flexores extrínsecos e o túnel do carpo\" do resumo.",
+  "correta": "**A) Certo.** O Green põe os quatro flexores profundos e o flexor longo do polegar juntos na camada mais profunda do túnel do carpo.",
   "incorretas": {
-   "B": "**Errado** colocaria o flexor longo do polegar num plano diferente. Na anatomia do túnel, ele está ao lado dos flexores profundos, no plano profundo, e não junto aos superficiais."
+   "B": "**Errado** exigiria um FPL em plano próprio, mais superficial que os profundos; no túnel ele divide com eles o andar de baixo."
   },
   "referencias": [
-   "Pardini A.Traumatismos da mão. Rio de Janeiro: Medsi. 2ª edição, p. 35.",
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 185",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3144, 3160 e 3161.e1",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82 (Síndromes compressivas), p. 3542 a 3544",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço (versão 2)",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
   ],
   "provavel": "A",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial no acervo. A letra provável (Certo) é a que o Green's Operative Hand Surgery, 7ª ed. (p. 185), sustenta: os quatro FDP e o FPL formam a camada mais profunda do túnel do carpo.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0635": {
@@ -8581,17 +8624,20 @@
   "conferido": false
  },
  "mao-0641": {
-  "conceito": "**A tenossinovite flexora piogênica.** É uma infecção dentro da **bainha sinovial** dos tendões flexores, geralmente por inoculação direta (ferimento puntiforme na face volar do dedo, mordedura) e, menos frequentemente, por via hematogênica (gonococo). O germe mais comum é o *Staphylococcus aureus*. A bainha é um **espaço fechado**: o pus aumenta a pressão, compromete a irrigação do tendão (que depende das vínculas e do líquido sinovial) e pode levar a necrose, aderências e perda definitiva do movimento.\n\n**Os quatro sinais de Kanavel.**\n1. **Dedo mantido em leve flexão**: a posição de **semiflexão** é a de maior volume da bainha e alivia a pressão.\n2. **Edema fusiforme** de todo o dedo, simétrico.\n3. **Dor à palpação ao longo da bainha flexora**.\n4. **Dor intensa à extensão passiva** do dedo: o sinal mais sensível e precoce, porque a extensão estira a bainha distendida.\n\n**O erro da afirmação.** O dedo **não** fica em extensão: ele fica em **semiflexão**, e a tentativa de estendê-lo causa dor intensa. A dor à palpação da bainha está correta.\n\n**As comunicações das bainhas.** A bainha do polegar se continua com a **bursa radial**, e a do dedo mínimo com a **bursa ulnar**; as duas podem se comunicar pelo espaço de Parona, no antebraço distal, causando a **infecção em ferradura** (do polegar ao mínimo).\n\n**Tratamento.**\n- Casos muito precoces (menos de 24 a 48 horas, sem todos os sinais): antibiótico venoso, imobilização e elevação, com reavaliação frequente.\n- Casos estabelecidos ou sem melhora: **drenagem cirúrgica** urgente com **irrigação da bainha**, por cateter (incisões proximal na palma e distal no dedo) ou abertura ampla, seguida de antibiótico e mobilização precoce.",
-  "correta": "**Resposta provável: Errado.** Na tenossinovite infecciosa, a dor à palpação da bainha está presente, mas o dedo fica em **semiflexão**, e não em extensão; a **extensão passiva** é justamente o movimento que provoca dor intensa (sinais de Kanavel).",
+  "conceito": "Afirmação sobre o exame da infecção dentro da bainha dos flexores. Ela mistura um achado verdadeiro (dor à palpação da bainha) com uma posição do dedo que não é a dessa infecção.\n\n**O espaço que infecciona.** Nos dedos, os flexores correm dentro da **bainha digital fibro-óssea**, que vai do colo do metacarpo à falange distal (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 186). No polegar, a bainha do FLP continua como **bolsa radial**; a do mínimo comunica-se com a **bolsa ulnar**; as duas se encontram no **espaço de PARONA**, no punho, entre os flexores e o pronador quadrado, que é o caminho do **abscesso em ferradura** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão), cap. 6, p. 214). Por isso uma infecção da bainha do polegar ou do mínimo pode atravessar a palma.\n\n**Por que a infecção é grave.** O tendão dentro da bainha vive da **difusão sinovial** e dos vínculos, com a face palmar pouco irrigada (Green, p. 186). A **tenossinovite séptica**, recente ou antiga, é contraindicação da reconstrução em dois tempos de HUNTER (Green, p. 217), porque destrói o trilho e deixa aderências.\n\n**A posição do dedo.** O dedo com a bainha cheia de pus não fica estendido: estender o dedo estira a bainha distendida e dói. Na descrição clássica da tenossinovite infecciosa, o dedo é mantido **semifletido**, com dor à palpação ao longo da bainha. A dor à palpação está certa; os dedos em extensão tornam a frase errada.\n\nA bainha e os vínculos estão na seção \"A bainha, as polias e a irrigação em detalhe\" do resumo.",
+  "correta": "**B) Errado.** A dor à palpação da bainha faz parte do quadro, mas o dedo infectado fica semifletido, e não em extensão.",
   "incorretas": {
-   "A": "**Certo** contrariaria o primeiro sinal de Kanavel. A bainha distendida pelo pus obriga o dedo a ficar em leve flexão, a posição de maior volume e menor dor."
+   "A": "**Certo** aceitaria os dedos em extensão; na bainha infectada, estender o dedo estira a bainha distendida, e o dedo fica semifletido."
   },
   "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 8ª edição, p. 3745.",
-   "Green's Operative Hand Surgery, 8ª edição (Wolfe, Pederson, Kozin, Cohen)"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 186 e 217",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço) e cap. 6 (Mão), cap. 6, p. 214",
+   "Resumo OrtoQuestões: Anatomia da mão, do punho e do antebraço (versão 2)",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
   ],
   "provavel": "B",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial no acervo. A letra provável (Errado) segue a referência bibliográfica da própria questão (Campbell's Operative Orthopaedics, 8ª ed., p. 3745). Os livros lidos para este tema (Green's Operative Hand Surgery, 7ª ed., cap. 6; Campbell's Operative Orthopaedics, 15ª ed., cap. 71) não descrevem os sinais clínicos da tenossinovite infecciosa; só citam a tenossinovite séptica como contraindicação da reconstrução em dois tempos.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0642": {
@@ -8734,16 +8780,19 @@
   "conferido": false
  },
  "mao-0650": {
+  "conceito": "Afirmação de certo ou errado sobre o que fazer com o flexor profundo arrancado que não dá mais para reinserir. A tenodese é uma das saídas, e a condição da prova é exatamente a do livro.\n\n**O arrancamento.** O FDP mais avulsionado em atletas é o do **anular**, sobretudo em homens de 20 a 30 anos (Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3163). Na classificação de LEDDY e PACKER, o **tipo I** recua até a palma e perde a irrigação vincular, e o Campbell recomenda reinserir se for detectado em **7 a 10 dias**; depois o coto enruga e amolece (p. 3164).\n\n**Visto tarde, sem reinserção possível.** As opções são três:\n- **enxerto pelo FDS íntegro**, só para jovens motivados (o Campbell fala em **10 a 21 anos**, músicos ou técnicos), sobretudo no indicador e no médio; o resultado é imprevisível e **nunca** se sacrifica um FDS íntegro para passá-lo (Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 211 a 214);\n- **tenodese** da IFD;\n- **artrodese** da IFD.\n\nA maioria dos pacientes com FDS funcionante se adapta bem e pode nem precisar de tratamento; com IFD instável ou pegada fraca, tenodese ou artrodese (Green, p. 211).\n\n**Quando a tenodese é a escolha** (Campbell, p. 3179, Fig. 71.54 e 71.55): FDP lesado, **enxerto impossível**, e ponta do dedo mais útil **parcialmente fletida e estável**, em geral no indicador. Exige coto distal do FDP longo o bastante para ancorar proximal à IFD; a IFD fica a **30 graus**, com fio de KIRSCHNER oblíquo e pull-out na falange média.\n\nA tenodese está na seção \"A zona 1 e a avulsão do profundo em detalhe\" do resumo.",
+  "correta": "**A) Certo.** O Campbell indica a tenodese da IFD justamente quando o enxerto é impossível e a ponta do dedo serve melhor fletida e estável.",
   "incorretas": {
-   "B": "**Errado seria considerar o enxerto a única saída para uma lesão não reparável.** Tenodese ou artrodese podem atender melhor a um dedo rígido ou a uma reconstrução inviável."
+   "B": "**Errado** obrigaria a enxertar todo FDP crônico ou proibiria a tenodese; o livro faz o contrário e a reserva para quando o enxerto não é possível."
   },
-  "conceito": "**Arrancamento do flexor profundo é o dedo em camisa.** A extensão forçada de uma interfalângica distal durante flexão ativa pode avulsionar o flexor digital profundo da base da falange distal. O dedo perde a flexão ativa isolada da interfalângica distal. A radiografia procura fragmento ósseo; o grau de retração e o tempo desde a lesão influenciam a possibilidade de reinserção primária.\n\n**O salvamento depende de objetivo e mobilidade.** Em lesão crônica não reparável, enxerto tendíneo é uma alternativa se a articulação ainda tem boa mobilidade passiva e há condições para reabilitação. Se reconstrução não é viável ou desejável, a tenodese do segmento distal do tendão à bainha pode estabilizar a articulação e evitar um dedo flácido, mas não devolve flexão ativa normal da interfalângica distal. Artrodese é outra possibilidade quando há rigidez ou dor, com perda deliberada de movimento.",
-  "correta": "**Certo: a tenodese pode ser opção de salvamento quando o enxerto não é possível.** Sua meta é estabilidade funcional, não restauração completa da flexão ativa distal.",
   "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 8ª edição, p. 3274."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71 (Lesões dos tendões flexores e extensores, Austin B. MURPHY), p. 3163, 3164 e 3179, Fig. 71.54 e 71.55",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 6 (Lesão do tendão flexor, John Gray SEILER III), p. 211 a 214",
+   "Resumo OrtoQuestões: Lesões dos tendões flexores (versão 2)"
   ],
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "alerta": "Questão sem gabarito oficial no acervo. A letra provável (Certo) é a que o Campbell's Operative Orthopaedics, 15ª ed. (p. 3179), sustenta.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-0651": {
@@ -19913,20 +19962,21 @@
   "conferido": false
  },
  "mao-1238": {
-  "alerta": "O quadro descrito (parestesias noturnas no polegar, indicador e médio, Tinel no punho e Phalen positivos) é a apresentação clássica da síndrome do túnel do carpo (alternativa B). O gabarito oficial registrado (D, tendinite do flexor radial do carpo) não é compatível com o quadro e pode decorrer de erro na chave de respostas. O gabarito oficial foi mantido no sistema, mas o raciocínio clínico aponta para a alternativa B.",
-  "conceito": "**Síndrome do túnel do carpo.** É a neuropatia compressiva mais comum, causada pela compressão do nervo mediano sob o ligamento transverso do carpo.\n\n**Quadro clínico típico.**\n- **Parestesias** (formigamento, dormência) no **polegar, indicador, dedo médio** e metade radial do anular.\n- **Piora noturna**, que acorda o paciente; alívio ao sacudir as mãos (sinal do chacoalhar).\n- Piora com atividades que mantêm o punho fletido ou estendido (dirigir, segurar o celular, digitar).\n- Nos casos avançados: fraqueza para abdução e oposição do polegar e atrofia tenar.\n\n**Testes provocativos.**\n- **Tinel no punho**: percussão sobre o mediano reproduz as parestesias.\n- **Phalen**: flexão máxima dos punhos por 60 segundos reproduz os sintomas.\n- **Durkan**: compressão direta sobre o túnel do carpo.\n\n**Fatores de risco.** Sexo feminino, 40 a 60 anos, gravidez, hipotireoidismo, diabetes, obesidade, artrite reumatoide e atividades com flexão repetida do punho.\n\n**Diagnóstico diferencial.**\n\n| Condição | Quadro |\n|---|---|\n| De Quervain | Dor na estiloide radial, Finkelstein positivo, sem parestesias |\n| Tendinite do flexor radial do carpo | Dor volar radial do punho, piora com flexão resistida, sem parestesias |\n| Radiculopatia C6 | Dor cervical, parestesia no polegar, alteração de reflexos |\n| Dupuytren | Nódulos e cordas palmares, sem dor ou parestesias |\n\n> Parestesias noturnas no território do mediano com Tinel e Phalen positivos: síndrome do túnel do carpo.",
-  "correta": "**D: Tendinite do flexor radial do carpo (gabarito oficial).** O gabarito registrado aponta essa alternativa, mas a tendinite do flexor radial do carpo causa dor volar radial no punho, sem parestesias no território do mediano nem Tinel e Phalen positivos. O quadro descrito é o da síndrome do túnel do carpo (alternativa B), conforme explicado na ressalva acima.",
+  "conceito": "Caso clínico de neuropatia do mediano no punho, com um gabarito oficial que não combina com o quadro. Vale aprender o diagnóstico pelo livro e conhecer a letra que a banca registrou.\n\n**O túnel e o nervo** (Campbell's Operative Orthopaedics, 15ª ed., cap. 82 (Síndromes compressivas), p. 3542 a 3544). O túnel do carpo tem paredes rígidas: assoalho no arco dorsal do carpo, hâmulo do hamato e pisiforme de um lado, tubérculo do escafoide e crista do trapézio do outro, e o retináculo dos flexores como teto. Dentro dele, o **mediano é a estrutura mais palmar**, com os nove flexores dorsais a ele. Volume vira pressão, e acima de **20 a 30 mmHg** o fluxo epineural para.\n\n**Quem adoece.** É a neuropatia compressiva **mais diagnosticada** do membro superior, com pico entre **30 e 60 anos** e **duas vezes mais comum em mulheres**. A dormência fica no território do mediano (polegar, indicador e médio), os sintomas noturnos são típicos, e a pele tenar é **poupada**, porque o ramo cutâneo palmar sai cerca de **5 cm** acima do punho e não passa sob o ligamento (Green's Operative Hand Surgery, 7ª ed., cap. 28 (Neuropatias de compressão), p. 924 e 930 a 936).\n\n**Os testes.** O PHALEN usa a flexão do punho e é positivo com dormência em até **60 segundos**; o TINEL percute o nervo. O PHALEN é o mais sensível dos clássicos e o TINEL, o mais específico, mas o **DURKAN**, compressão por 30 segundos, supera os dois. No CTS-6, dormência no mediano, sintomas noturnos, PHALEN e TINEL somam pontos para o diagnóstico (Campbell, p. 3542 a 3544).\n\nUma secretária de 40 anos com tudo isso tem, pelo livro, síndrome do túnel do carpo. A banca registrou outra letra (veja o alerta).\n\nO túnel do carpo está na seção \"Túnel do carpo: diagnóstico em números\" do resumo de neuropatias de compressão.",
+  "correta": "**D) tendinite do flexor radial do carpo.** É a letra do gabarito oficial, mantida no acervo; os livros, porém, não a sustentam: o flexor radial do carpo passa fora do túnel e sua tendinite não explica dormência no território do mediano, piora noturna, TINEL e PHALEN.",
   "incorretas": {
-   "A": "**A tenossinovite de De Quervain** acomete o primeiro compartimento extensor (abdutor longo e extensor curto do polegar), com dor na estiloide radial e teste de Finkelstein positivo. Não causa parestesias noturnas nos três primeiros dedos.",
-   "B": "**A síndrome do túnel do carpo** é o diagnóstico que corresponde ao quadro: parestesias noturnas no polegar, indicador e médio, Tinel no punho e Phalen positivos. É a resposta clinicamente correta, embora não seja a registrada como gabarito.",
-   "C": "**A artrite reumatoide** pode causar túnel do carpo secundário (por sinovite dos flexores), mas o quadro descrito não menciona sinovite poliarticular, rigidez matinal ou deformidades.",
-   "E": "**A doença de Dupuytren** causa nódulos e cordas na fáscia palmar, com contratura em flexão dos dedos, geralmente sem dor ou parestesias."
+   "A": "**Tenossinovite de DE QUERVAIN** acomete o primeiro compartimento extensor, no dorso radial do punho, e não dá dormência no polegar, indicador e médio nem PHALEN positivo.",
+   "B": "**Síndrome do túnel do carpo** é o diagnóstico que o quadro e os livros sustentam: mulher entre 30 e 60 anos, dormência noturna no território do mediano, TINEL e PHALEN positivos. A banca, no entanto, não registrou esta letra.",
+   "C": "**Artrite reumatoide** é doença inflamatória de várias articulações, e o caso não traz sinovite, deformidade nem outra articulação acometida; a queixa é toda do território de um nervo.",
+   "E": "**Doença de DUPUYTREN** forma cordas na fáscia palmar e contratura dos dedos, sem dormência noturna nem testes provocativos do mediano."
   },
   "referencias": [
-   "Padua L, Coraci D, Erra C, et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. Lancet Neurol. 2016;15(12):1273-1284.",
-   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Neuropatias compressivas."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82 (Síndromes compressivas), p. 3542 a 3544",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28 (Neuropatias de compressão), p. 924 e 930 a 936",
+   "Resumo OrtoQuestões: Neuropatias de compressão no membro superior (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "O gabarito oficial registrado no acervo é D (tendinite do flexor radial do carpo), mas o quadro descrito é o da síndrome do túnel do carpo (B), como sustentam o Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, p. 3542 a 3544), e o Green's Operative Hand Surgery, 7ª ed. (cap. 28). O gabarito oficial foi preservado; confira se houve erro na chave da banca ou na transcrição.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-1239": {
@@ -20129,16 +20179,16 @@
   "conferido": false
  },
  "mao-1253": {
-  "conceito": "**Raízes cervicais: sensibilidade, motricidade e reflexos.** As raízes cervicais saem **acima** da vértebra de mesmo número. Por isso, o disco C5-C6 comprime a raiz **C6**, e o disco C6-C7, a raiz **C7**.\n\n| Raiz (disco) | Sensibilidade | Motor | Reflexo |\n|---|---|---|---|\n| C5 (C4-C5) | Face lateral do braço | Deltoide, bíceps | Bicipital |\n| C6 (C5-C6) | Face lateral do antebraço, polegar e indicador | Extensores do punho, bíceps | Estilorradial (braquiorradial) |\n| C7 (C6-C7) | Dedo médio | Tríceps, flexores do punho, extensores dos dedos | Tricipital |\n| C8 (C7-T1) | Dedos anular e mínimo, borda ulnar | Flexores dos dedos | Nenhum confiável |\n| T1 (T1-T2) | Face medial do braço | Interósseos | Nenhum confiável |\n\n**Para memorizar.**\n- C6: faça um \"6\" com o polegar e o indicador.\n- C7: o dedo médio está no meio da mão, como a raiz C7 está no meio do plexo.\n\n**Aplicação.** Radiculopatia C6 (hérnia em C5-C6) e C7 (hérnia em C6-C7) são as mais frequentes, porque correspondem aos segmentos mais móveis.\n\n> C6: polegar, extensores do punho, reflexo estilorradial. C7: dedo médio, tríceps, flexores do punho, reflexo tricipital.",
-  "correta": "**B: Errado.** O item descreve a raiz **C7**, não a C6. A raiz C6, que sai no nível C5-C6, tem como área sensitiva o polegar e o indicador (face lateral do antebraço), como motor os extensores do punho (e participa do bíceps) e como reflexo o estilorradial. O dedo médio, o tríceps, os flexores do punho e o reflexo tricipital pertencem a C7, comprimida pelo disco C6-C7.",
+  "conceito": "Item de certo ou errado que embaralha três raízes: dá à C6 a sensibilidade, o músculo e o reflexo que pertencem à C7.\n\n**Qual raiz o disco pega.** Na coluna cervical, a raiz sai **acima** do pedículo de mesmo número; por isso o disco **C5-C6 pega a raiz de C6**, a de número maior (Campbell's Operative Orthopaedics, 14ª ed., cap. 38 (Doenças degenerativas da coluna cervical), p. 1691 e 1692, Boxes 38.2 a 38.6). Até aí o enunciado acerta.\n\n**O mapa das raízes** (Campbell, Boxes 38.2 a 38.6):\n- **C5**: face lateral do braço; deltoide; bicipital, variável.\n- **C6**: face lateral do **antebraço**, **polegar e indicador**; **bíceps** e **extensores radiais** longo e curto do carpo; reflexos **bicipital** e **braquiorradial**.\n- **C7**: **dedo médio**, variável pela sobreposição; **tríceps** e **flexor radial do carpo**; reflexo **tricipital**.\n- **C8**: anular e mínimo; interósseos; sem reflexo.\n\n**Onde o item erra.** Dedo médio, tríceps, flexores do punho e reflexo tricipital formam o retrato da **C7**, a raiz do disco C6-C7. A C6 é a do polegar, do bíceps, dos extensores do punho e do reflexo braquiorradial. Três trocas numa frase só bastam para o item ser errado.\n\nAs raízes estão na seção da hérnia cervical do resumo de hérnia de disco.",
+  "correta": "**B) Errado.** A raiz de C6 é a do polegar e do indicador, do bíceps e dos extensores radiais do carpo, com reflexos bicipital e braquiorradial; dedo médio, tríceps, flexores do punho e reflexo tricipital são da C7.",
   "incorretas": {
-   "A": "**Marcar certo é deslocar a raiz em um nível.** A confusão é comum porque o disco C5-C6 parece ter a ver com C5 ou C7. Lembre-se de que, na coluna cervical, a raiz sai acima da vértebra de mesmo número, e por isso o disco C5-C6 comprime a raiz C6."
+   "A": "**Certo** aceitaria para a C6 o dedo médio, o tríceps e o reflexo tricipital, que o Campbell atribui à raiz de C7."
   },
   "referencias": [
-   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
-   "American Spinal Injury Association. International Standards for Neurological Classification of Spinal Cord Injury. Revisão de 2019."
+   "Campbell's Operative Orthopaedics, 14ª ed., cap. 38 (Doenças degenerativas da coluna cervical), p. 1691 e 1692, Boxes 38.2 a 38.6",
+   "Resumo OrtoQuestões: Hérnia de disco lombar, torácica e cervical (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "mao-1254": {

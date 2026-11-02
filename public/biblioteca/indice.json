@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-01",
+ "geradoEm": "2026-11-02",
  "capitulos": [
   {
    "id": "callaghan-anatomia-acessos",
@@ -5968,15 +5968,15 @@
   },
   {
    "id": "rockwood10-54-transtrocanterica",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fratura transtrocantérica",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
-   "edicao": "10ª edição (2025)",
+   "edicao": "10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), caps. 59 e 60",
    "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
    "resumo": "Parede lateral, AO 31A, DHS ou haste, redução sem varo e a ponta-ápice: o que decide o sucesso da fixação e como as provas cobram.",
    "acesso": "gratis",
-   "minutos": 20,
+   "minutos": 33,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -6027,6 +6027,46 @@
      "id": "algoritmo-dos-autores",
      "titulo": "Algoritmo dos autores",
      "radar": "confirmado"
+    },
+    {
+     "id": "as-classificacoes-pelos-dois-livros",
+     "titulo": "As classificações pelos dois livros",
+     "radar": "fundamento"
+    },
+    {
+     "id": "traco-reverso-e-parede-lateral-em-numeros",
+     "titulo": "Traço reverso e parede lateral em números",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dhs-ou-haste-o-que-os-estudos-mostram",
+     "titulo": "DHS ou haste: o que os estudos mostram",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-tecnica-segundo-o-campbell",
+     "titulo": "A técnica segundo o Campbell",
+     "radar": "confirmado"
+    },
+    {
+     "id": "detalhes-do-dhs-e-da-haste-no-rockwood",
+     "titulo": "Detalhes do DHS e da haste no Rockwood",
+     "radar": "fundamento"
+    },
+    {
+     "id": "complicacoes-o-que-faltava",
+     "titulo": "Complicações: o que faltava",
+     "radar": "fundamento"
+    },
+    {
+     "id": "depois-da-fratura-fragilidade-e-prevencao",
+     "titulo": "Depois da fratura: fragilidade e prevenção",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -6045,7 +6085,10 @@
     "trauma-1001",
     "trauma-1174",
     "trauma-0279",
-    "trauma-0961"
+    "trauma-0961",
+    "trauma-1141",
+    "trauma-1154",
+    "trauma-0870"
    ],
    "treino": [
     "trauma-1574",
@@ -6238,15 +6281,15 @@
   },
   {
    "id": "rockwood10-58-femur-distal",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fratura do fêmur distal",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
-   "edicao": "10ª edição (2025)",
+   "edicao": "10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), caps. 59 e 8",
    "capitulo": "Capítulo 58 · Distal Femur Fractures",
    "resumo": "Forças deformantes, lesões associadas, AO 33 e HOFFA, a anatomia do trapézio, placa bloqueada e haste retrógrada, periprotética acima da prótese do joelho e a rigidez.",
    "acesso": "gratis",
-   "minutos": 28,
+   "minutos": 36,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -6312,6 +6355,31 @@
      "id": "pos-operatorio-e-complicacoes",
      "titulo": "Pós-operatório e complicações",
      "radar": "confirmado"
+    },
+    {
+     "id": "o-olhar-do-campbell-indicacao-e-implantes",
+     "titulo": "O olhar do Campbell: indicação e implantes",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "haste-anterograda-retrograda-e-a-serie-do-campbe",
+     "titulo": "Haste: anterógrada, retrógrada e a série do Campbell",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "tecnica-da-placa-bloqueada-e-as-falhas-pelo-camp",
+     "titulo": "Técnica da placa bloqueada e as falhas, pelo Campbell",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-condilo-isolado-e-a-hoffa-medial-pelo-campbell",
+     "titulo": "O côndilo isolado e a HOFFA medial, pelo Campbell",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "periprotetica-entalhe-rorabeck-e-as-limitacoes-d",
+     "titulo": "Periprotética: entalhe, RORABECK e as limitações da haste",
+     "radar": "oportunidade"
     },
     {
      "id": "resumo-final",
@@ -7253,15 +7321,15 @@
   },
   {
    "id": "rockwood10-66-talus",
-   "versao": 1,
-   "titulo": "Fraturas e luxações do tálus",
+   "versao": 2,
+   "titulo": "Fraturas do tálus e do calcâneo",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
-   "edicao": "10ª edição (2025)",
-   "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
-   "resumo": "Vascularização, HAWKINS e VALLIER, incidências de CANALE e BRODEN, redução urgente do corpo luxado, placa lateral contra o varo, processos lateral e posterior, sinal de HAWKINS e a luxação subtalar.",
+   "edicao": "10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), cap. 93",
+   "capitulo": "Capítulos 66 e 67 · Fractures and Dislocations of the Talus; Calcaneus Fractures",
+   "resumo": "Calcâneo de ESSEX-LOPRESTI e SANDERS, BÖHLER e GISSANE, seio do tarso e as feridas; no tálus, vascularização, HAWKINS e VALLIER, incidências de CANALE e BRODEN, redução urgente do corpo luxado, placa lateral contra o varo, processos lateral e posterior, sinal de HAWKINS e a luxação subtalar.",
    "acesso": "gratis",
-   "minutos": 27,
+   "minutos": 47,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7327,6 +7395,51 @@
      "id": "controversias-e-o-que-falta-saber",
      "titulo": "Controvérsias e o que falta saber",
      "radar": "fundamento"
+    },
+    {
+     "id": "calcaneo-anatomia-e-mecanismo",
+     "titulo": "Calcâneo: anatomia e mecanismo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "imagem-do-calcaneo",
+     "titulo": "Imagem do calcâneo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "classificacao-essex-lopresti-e-sanders",
+     "titulo": "Classificação: ESSEX-LOPRESTI e SANDERS",
+     "radar": "confirmado"
+    },
+    {
+     "id": "partes-moles-lingua-bolhas-compartimento-e-expos",
+     "titulo": "Partes moles: língua, bolhas, compartimento e exposição",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fraturas-extra-articulares-tuberosidade-sustenta",
+     "titulo": "Fraturas extra-articulares: tuberosidade, sustentáculo e processo anterior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-tempo-e-vias-de-acesso",
+     "titulo": "Tratamento: tempo e vias de acesso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes-e-resultados-do-calcaneo",
+     "titulo": "Complicações e resultados do calcâneo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "talus-o-que-o-campbell-acrescenta",
+     "titulo": "Tálus: o que o Campbell acrescenta",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -7350,7 +7463,21 @@
     "trauma-0118",
     "trauma-0562",
     "pe-tornozelo-0063",
-    "pe-tornozelo-0022"
+    "pe-tornozelo-0022",
+    "trauma-0897",
+    "trauma-0857",
+    "trauma-0571",
+    "trauma-0695",
+    "trauma-0102",
+    "trauma-0676",
+    "trauma-0324",
+    "trauma-0539",
+    "trauma-0138",
+    "trauma-0799",
+    "trauma-1087",
+    "trauma-0302",
+    "trauma-0301",
+    "trauma-0169"
    ],
    "treino": [
     "pe-tornozelo-0422",
@@ -7445,15 +7572,15 @@
   },
   {
    "id": "rockwoodcriancas10-02-consolidacao-fise",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Consolidação, fise e remodelação na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
-   "edicao": "10ª edição (2025)",
+   "edicao": "10ª edição (2025); Tachdjian's Pediatric Orthopaedics, 6ª edição, caps. 1, 20, 21 e 30",
    "capitulo": "Capítulo 2 · Fracture Repair in Children",
    "resumo": "Zonas da fise, RANVIER (crescimento periférico) e LACROIX (estabilidade); SALTER-HARRIS I a V e PETERSON I e VI; vasos epifisários e camada germinativa, epífise tipo A e B; III e IV com redução anatômica, I e II de risco no fêmur distal e na tíbia proximal, 90% tração e 10% translação; linhas de HARRIS ou PARK, ponte e distúrbio sem parada; periósteo roto na tensão e as quatro tarefas; remodelação perto da fise e no plano do movimento (rádio distal 1 grau por mês, cúbito varo e rotação não); consolidação primária e secundária; KOLODNY, TRUETA e RHINELANDER.",
    "acesso": "gratis",
-   "minutos": 13,
+   "minutos": 33,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7501,6 +7628,46 @@
      "radar": "oportunidade"
     },
     {
+     "id": "do-broto-do-membro-ao-osso-as-duas-ossificacoes",
+     "titulo": "Do broto do membro ao osso: as duas ossificações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-anatomia-que-muda-com-a-idade",
+     "titulo": "A anatomia que muda com a idade",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quanto-cada-fise-cresce",
+     "titulo": "Quanto cada fise cresce",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ritmo-do-crescimento-e-quanto-ainda-falta",
+     "titulo": "Ritmo do crescimento e quanto ainda falta",
+     "radar": "confirmado"
+    },
+    {
+     "id": "centros-de-ossificacao-do-ombro-e-do-cotovelo",
+     "titulo": "Centros de ossificação do ombro e do cotovelo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "centros-de-ossificacao-do-quadril-do-joelho-e-do",
+     "titulo": "Centros de ossificação do quadril, do joelho e do pé",
+     "radar": "confirmado"
+    },
+    {
+     "id": "marcos-motores-e-a-radiografia",
+     "titulo": "Marcos motores e a radiografia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hipercrescimento-fratura-e-coto-de-amputacao",
+     "titulo": "Hipercrescimento: fratura e coto de amputação",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -7527,7 +7694,27 @@
     "pediatria-0594",
     "pediatria-0591",
     "pediatria-0720",
-    "pediatria-0830"
+    "pediatria-0830",
+    "pediatria-0057",
+    "pediatria-0663",
+    "pediatria-0111",
+    "pediatria-0614",
+    "pediatria-0766",
+    "pediatria-0174",
+    "pediatria-0064",
+    "pediatria-0332",
+    "pediatria-0682",
+    "pediatria-0378",
+    "pediatria-0648",
+    "pediatria-0839",
+    "pediatria-0571",
+    "pediatria-0275",
+    "pediatria-0613",
+    "pediatria-0386",
+    "pediatria-0286",
+    "pediatria-0284",
+    "pediatria-0784",
+    "pediatria-0813"
    ],
    "treino": [
     "pediatria-1391",
@@ -7715,7 +7902,7 @@
   },
   {
    "id": "rockwoodcriancas10-07-patologicas-maus-tratos",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fraturas patológicas e maus-tratos na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -7723,7 +7910,7 @@
    "capitulo": "Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries",
    "resumo": "Cisto ósseo simples e aneurismático, fibroma não ossificante, displasia fibrosa, osteogênese imperfeita, escorbuto e fraturas nas doenças neuromusculares; nos maus-tratos, KLEINMAN (metafisária clássica, costela posterior, escápula, processo espinhoso, esterno), inventário esquelético abaixo de 2 anos repetido em 2 semanas, equimoses, queimaduras, fêmur e conduta.",
    "acesso": "gratis",
-   "minutos": 6,
+   "minutos": 29,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7761,6 +7948,56 @@
      "radar": "oportunidade"
     },
     {
+     "id": "maus-tratos-em-numeros-definicao-familias-e-cria",
+     "titulo": "Maus-tratos em números: definição, famílias e crianças em risco",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-historia-que-nao-fecha-e-o-exame-da-cabeca-aos",
+     "titulo": "A história que não fecha e o exame da cabeça aos pés",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-osso-conta-o-mecanismo-pierce-king-e-os-ossos-",
+     "titulo": "O osso conta o mecanismo: PIERCE, KING e os ossos longos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "locais-incomuns-escapula-acromio-maos-e-pes",
+     "titulo": "Locais incomuns: escápula, acrômio, mãos e pés",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lesao-metafisaria-classica-por-dentro",
+     "titulo": "Lesão metafisária clássica por dentro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "costelas-e-coluna-o-torax-apertado-e-a-crianca-s",
+     "titulo": "Costelas e coluna: o tórax apertado e a criança sacudida",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "inventario-esqueletico-datacao-e-exames-de-labor",
+     "titulo": "Inventário esquelético, datação e exames de laboratório",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-que-imita-maus-tratos-e-o-que-nao-exclui",
+     "titulo": "O que imita maus-tratos e o que não exclui",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "internar-notificar-e-depor",
+     "titulo": "Internar, notificar e depor",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fraturas-patologicas-os-detalhes-que-decidem-a-c",
+     "titulo": "Fraturas patológicas: os detalhes que decidem a conduta",
+     "radar": "oportunidade"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -7780,7 +8017,10 @@
     "pediatria-0422",
     "pediatria-0478",
     "pediatria-0146",
-    "pediatria-0327"
+    "pediatria-0327",
+    "pediatria-0881",
+    "pediatria-0959",
+    "pediatria-0361"
    ],
    "treino": [
     "pediatria-1196",
@@ -11098,7 +11338,7 @@
   },
   {
    "id": "tachdjian6-deficiencias-membros",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Deficiências dos membros na criança",
    "especialidade": "pediatria",
    "livro": "Tachdjian's Pediatric Orthopaedics",
@@ -11106,7 +11346,7 @@
    "capitulo": "Capítulo 21 · Limb Deficiencies",
    "resumo": "Terminologia (transversal e longitudinal, terminal e intercalar, ISO/ISPO); deficiência femoral focal proximal (AITKEN A a D, GILLESPIE A a C, PALEY 1, 2a e 2b, quadril em flexão, abdução e rotação externa, hemimelia fibular e cruzados ausentes, anomalias cardíacas, alongamento abaixo de 20 cm); hemimelia fibular (a mais comum, valgo, côndilo lateral e LCA, equinovalgo, coalizão e raios laterais, ACHTERMAN e KALAMCHI, BIRCH e o pé funcional, SYME com 25 cm ou mais); hemimelia tibial (JONES 1a a 4, sem quadríceps e patela, desarticulação do joelho, sinostose); bandas de STREETER.",
    "acesso": "gratis",
-   "minutos": 8,
+   "minutos": 31,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -11139,6 +11379,51 @@
      "radar": "fundamento"
     },
     {
+     "id": "como-o-membro-se-forma-e-onde-ele-falha",
+     "titulo": "Como o membro se forma e onde ele falha",
+     "radar": "fundamento"
+    },
+    {
+     "id": "sindromes-que-mudam-a-conduta",
+     "titulo": "Síndromes que mudam a conduta",
+     "radar": "fundamento"
+    },
+    {
+     "id": "dffp-as-outras-classificacoes-e-a-radiografia-do",
+     "titulo": "DFFP: as outras classificações e a radiografia do AITKEN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dffp-do-exame-ao-plano-cirurgico",
+     "titulo": "DFFP: do exame ao plano cirúrgico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "alongamento-do-femur-curto-congenito",
+     "titulo": "Alongamento do fêmur curto congênito",
+     "radar": "fundamento"
+    },
+    {
+     "id": "hemimelia-fibular-birch-raios-e-a-idade-da-amput",
+     "titulo": "Hemimelia fibular: BIRCH, raios e a idade da amputação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hemimelia-tibial-alem-do-jones",
+     "titulo": "Hemimelia tibial: além do JONES",
+     "radar": "confirmado"
+    },
+    {
+     "id": "deficiencias-do-membro-superior",
+     "titulo": "Deficiências do membro superior",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "amputacoes-na-crianca-congenitas-e-adquiridas",
+     "titulo": "Amputações na criança: congênitas e adquiridas",
+     "radar": "fundamento"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -11156,7 +11441,11 @@
     "pediatria-0429",
     "pediatria-0009",
     "pediatria-0154",
-    "pediatria-0013"
+    "pediatria-0013",
+    "pediatria-0453",
+    "pediatria-0344",
+    "pediatria-0345",
+    "pediatria-0346"
    ],
    "treino": [
     "pediatria-1417",

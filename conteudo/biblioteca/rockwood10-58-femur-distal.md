@@ -1,14 +1,14 @@
 ---
 id: rockwood10-58-femur-distal
-versao: 1
+versao: 2
 titulo: Fratura do fêmur distal
 especialidade: trauma
 acesso: gratis
 livro: Rockwood and Green's Fractures in Adults
-edicao: 10ª edição (2025)
+edicao: 10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), caps. 59 e 8
 capitulo: Capítulo 58 · Distal Femur Fractures
 autores: Cory A. Collinge e Lydia G. Roward
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (femur_questao_e_resumos.pdf, páginas 41 a 64)
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (femur_questao_e_resumos.pdf, páginas 41 a 64) Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed.
 subtemas: Fratura do fêmur distal
 resumo: Forças deformantes, lesões associadas, AO 33 e HOFFA, a anatomia do trapézio, placa bloqueada e haste retrógrada, periprotética acima da prótese do joelho e a rigidez.
 ---
@@ -287,6 +287,107 @@ Desvio acima de **5 a 10 graus** altera a mecânica do joelho e a marcha: varo s
 - **Implante:** o "ombro" do DCS e a placa saliente irritam o trato iliotibial; parafusos longos irritam o lado medial (AP rodado). A retirada do material, quando indicada (dor local no jovem com fratura consolidada), deve esperar **18 a 24 meses**, porque a remodelação é lenta; depois, muletas por 4 a 6 semanas e esporte só após 3 a 6 meses. No idoso assintomático e no jovem sem sintomas, a retirada de rotina não se justifica.
 - **Artrose pós-traumática:** a incidência real é desconhecida; a incongruência articular é a principal causa. Unicompartimental pode receber osteotomia; bi ou tricompartimental incapacitante, artroplastia.
 
+# O olhar do Campbell: indicação e implantes {radar=oportunidade}
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 59), trata o fêmur distal de forma mais curta e mais técnica que o Rockwood and Green, mas acrescenta números e regras de escolha do implante que o capítulo 58 não traz. A abertura é a mesma: supracondilianas e intercondilianas são **instáveis e cominutas**, com distribuição **bimodal** (idoso ou jovem politraumatizado), e a proximidade do joelho torna difícil recuperar o movimento; malconsolidação, pseudartrose e infecção são relativamente altas em muitas séries (p. 2626).
+
+**Classificação.** O Campbell usa a de MÜLLER, ampliada na AO/OTA, e lembra um detalhe de definição: entram **todas as fraturas dentro da largura transepicondiliana** do joelho. O tipo A só pega a diáfise distal; a B1 é sagital do côndilo lateral, a B2 sagital do medial e a **B3 coronal**; o tipo C reúne as fraturas **em T e em Y**, com a C2 definida como diáfise cominuta e **dois fragmentos articulares principais** (p. 2626).
+
+**Indicação.** Nos anos 1960, tração e gesso funcional davam resultado melhor que a cirurgia, porque faltavam implantes; com os implantes AO, a cirurgia passou à frente. Hoje o Campbell recomenda **operar todas as fraturas do fêmur distal no paciente adequado, exceto as simples sem desvio**, e insiste na mobilização precoce do joelho (p. 2626).
+
+!tabela Implantes de ângulo fixo e suas exigências (Campbell's Operative Orthopaedics, 15ª ed., cap. 59, p. 2627 a 2628)
+| Implante | Exigência ou limite | Observação |
+| --- | --- | --- |
+| Lâmina de 95 graus | acerto em **três planos** ao mesmo tempo | inserida errada, o fêmur desalinha |
+| DCS | no mínimo **4 cm** de osso condilar íntegro acima do intercôndilo | livre no plano de flexão e extensão; retira muito osso e dificulta a revisão |
+| Placa condilar de suporte | usada quando sobram **menos de 3 a 4 cm** de côndilo ou há muita cominução articular | sem bloqueio, angula em **varo** pela interface parafuso-placa |
+| Placa condilar bloqueada | escolha atual dos autores para a maioria das A e C que pedem placa | dispensa enxerto de rotina em algumas expostas |
+!fim
+
+Os resultados do DCS foram parecidos com os da lâmina: **87% excelentes ou satisfatórios**, pseudartrose de 0% a 5,7%, infecção de 0% a 5,3%, consolidação viciosa de 5,3% a 11% e enxerto em cerca de um terço; os maus resultados se concentraram no **idoso osteopênico com cominução articular**, e o Campbell considera o implante possivelmente inadequado na osteoporose (p. 2628). Na placa de suporte, cominução medial, perda segmentar ou traço transcondiliano muito baixo deixam o fragmento cair em **varo**; o bloqueio dos parafusos veio para impedir isso, e a regra tradicional é que **instabilidade medial depois da placa lateral pede placa medial** (p. 2628).
+
+# Haste: anterógrada, retrógrada e a série do Campbell {radar=oportunidade}
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 59), resume a haste como implante que **compartilha a carga**, mais "biológico", que preserva partes moles e pede menos enxerto; a desvantagem é ser **menos rígida que a placa** nos testes biomecânicos (p. 2628).
+
+Dois fatos conversam com as questões de deformidade. Na **haste anterógrada** com o paciente em decúbito dorsal, o **gastrocnêmio** puxa o segmento distal e produz **angulação posterior**; pinos de Steinmann medial e lateral à patela servem de alavanca para corrigir. E a haste anterógrada de modelo fendido falhou em **15%** das fraturas do terço distal. Por isso a **retrógrada pelo intercôndilo** é preferível à anterógrada na maioria das situações, inclusive com fratura do quadril ipsilateral, que recebe outro implante (p. 2628). O Campbell também diz que, na supracondiliana, mesmo fraturas com **componente articular simples** muitas vezes podem levar haste, e que a configuração dos parafusos distais decide (p. 2634).
+
+!tabela Série do Campbell com haste anterógrada bloqueada (cap. 59, p. 2628.e1)
+| Dado | Resultado |
+| --- | --- |
+| Fraturas | 57 (A2, A3, C1, C2 e C3), **44% expostas** |
+| Consolidação | todas; enxerto em 3,5% |
+| Consolidação viciosa | 7% |
+| Infecção | 2 (3,5%), ambas IIIB |
+| Falha da haste | 1 (1,7%), sem reoperação |
+| Arco de movimento | média de 115 graus |
+| Maus resultados | as três **C3**: uma infecção e duas por **traço coronal não reconhecido** |
+!fim
+
+A última linha repete, por outro caminho, a lição do Rockwood and Green: a fratura coronal que passa despercebida estraga a fixação.
+
+# Técnica da placa bloqueada e as falhas, pelo Campbell {radar=oportunidade}
+
+A técnica 59.24 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 59), coincide com o Rockwood and Green nos pontos centrais e acrescenta alguns detalhes de execução (p. 2632 a 2633):
+
+- **coxim sob o quadril** para manter o fêmur em rotação neutra e radiografia rodada do outro lado como referência;
+- o fio-guia de **2,5 mm paralelo à linha articular femorotibial** "define" a posição coronal da placa; fio não paralelo cria **varo ou valgo**; cuidado com o **côndilo lateral hipoplásico**;
+- no perfil, a parte distal da placa **paralela à cortical posterior**;
+- comprimento e rotação são fixados **antes** do fio proximal;
+- placa afastada da diáfise (offset): usá-la como **fixador interno-externo**, com bloqueados, porque **a redução importa mais que o contato placa-osso**; puxar a placa ao osso com parafuso não bloqueado induz varo ou valgo;
+- **no mínimo 8 corticais** proximais; no furo mais proximal, bloqueado unicortical ou não bloqueado bicortical, para não concentrar tensão; construtos longos e sem bloqueio colado à cominução.
+
+O pós-operatório do Campbell é mais conservador na carga: movimento passivo precoce, ênfase na **extensão passiva** contra a contratura e **sem carga por 10 a 12 semanas** (p. 2633). O LISS é descrito como fixador interno-externo de **titânio**, com módulo de elasticidade diferente, que exige a redução antes do implante (p. 2633).
+
+!tabela Fatores de pseudartrose e falha (Campbell, box 59.6, p. 2632)
+| Desfecho | Fatores |
+| --- | --- |
+| Pseudartrose | obesidade, fratura exposta, infecção, implante de **aço** |
+| Infecção profunda e retardo | diabetes, fratura exposta |
+| Falha do implante | fratura exposta, tabagismo, obesidade, **placa mais curta** |
+!fim
+
+O Campbell acrescenta que o **contato da cortical posterior** se correlaciona fortemente com a consolidação primária e que o bloqueio dinâmico ou de **cortical distante** aumenta o micromovimento lateral e o calo (p. 2632). A lista combina com os fatores do Rockwood and Green; a diferença é que o Campbell separa cada fator pelo desfecho que ele prevê.
+
+**Quando a RAFI da intercondiliana se justifica.** O Campbell exige quatro condições: superfície articular **restaurável anatomicamente**, fixação que **dispense imobilização externa**, rigidez que permita **movimento ativo precoce** e **pele e partes moles** em condições (p. 2630). Para expor a articulação, prefere a parte distal da via **swashbuckler** (STARR) ou uma parapatelar lateral: a fáscia do quadríceps é rebatida para lateral até o trato iliotibial, a patela vai para medial, os ventres do quadríceps são poupados e a cicatriz não atrapalha uma futura artroplastia (p. 2631).
+
+**Dupla placa.** Nas fraturas muito baixas com cominução articular e metafisária extensa, a placa lateral pode não bastar; a medial entra por **incisão separada**, pela via **subvasto (SOUTHERN)** ao longo do canal adutor. A artéria femoral superficial não precisa ser dissecada, porque vai para trás com o sartório; protegem-se a **genicular descendente** e o **safeno**, e o colateral medial fica preso ao côndilo. A placa medial leva pelo menos **4 corticais** proximais; enxerto autólogo nas fechadas e espaçador de cimento com antibiótico nas expostas (p. 2633 a 2634).
+
+**Fixador externo.** Fica para as expostas mais graves, pelo risco de infecção no pino e rigidez, e facilita a TC. Se o fixador transarticular está há **mais de 14 dias** ou os pinos preocupam, e o paciente ainda não pode ser fixado, o Campbell sugere um período de **tração esquelética** para "descansar" os pinos (p. 2628).
+
+# O côndilo isolado e a HOFFA medial, pelo Campbell {radar=oportunidade}
+
+Para o Campbell's Operative Orthopaedics, 15ª ed. (cap. 59), a fratura unicondiliana (tipo B) é **menos frequente** que a supra e a intercondiliana, e em **cerca de um terço** há lesão do mesmo membro. A investigação pede AP, perfil e **incidência do túnel**, além da TC, para achar lesões do joelho e a fratura coronal posterior (B3, HOFFA). A sem desvio pode ser tratada sem cirurgia, com vigilância da perda de redução; a desviada é operada, porque o tratamento conservador deixa desalinhamento, artrose, rigidez e instabilidade (p. 2629).
+
+A **HOFFA do côndilo medial** merece atenção: parece **inofensiva na radiografia**, mas pode incapacitar, e a sem desvio desvia com frequência se tratada de forma conservadora. O fragmento é cerca da **metade posterior do côndilo**, quase todo coberto de cartilagem, com poucas inserções e possivelmente **sem irrigação**; mal reduzido, leva a irregularidade articular e **osteonecrose**. Ele **não se retira**, porque é parte importante da superfície com o joelho a 90 graus (p. 2630).
+
+!tabela Fixação do côndilo isolado (Campbell, cap. 59, p. 2629 a 2630)
+| Situação | Fixação | Detalhes |
+| --- | --- | --- |
+| Côndilo medial sagital | dois parafusos esponjosos (3,5 a 6,5 mm) perpendiculares ao traço | ponta na cortical lateral; arruela no osso osteoporótico; preferência dos autores: parafusos de 3,5 mm com pequena placa de suporte |
+| Osso osteoporótico | placa de suporte | evita o deslocamento **cefálico** do côndilo |
+| HOFFA medial | dois parafusos de 3,5 ou 4,5 mm, ou sem cabeça, de **anterior para posterior** | embutidos, mediais à patelofemoral, sem furar a cartilagem posterior; vias anteromedial e posteromedial (HENDERSON) |
+| Pós-operatório | sem carga no início | carga parcial em **8 a 10 semanas**, total por volta de **12 semanas** |
+!fim
+
+O sentido dos parafusos na HOFFA é o mesmo nos dois livros; o Campbell só detalha as vias e a posição medial à patelofemoral.
+
+# Periprotética: entalhe, RORABECK e as limitações da haste {radar=oportunidade}
+
+O capítulo de artroplastia do joelho do Campbell's Operative Orthopaedics, 15ª ed. (cap. 8), completa o que o Rockwood and Green resume. Sobre o **entalhe da cortical anterior**, os dados divergem: um estudo biomecânico com revisão da literatura associou **30,5%** das periprotéticas supracondilianas a fêmur entalhado e mostrou menor carga de falha em flexão e torção; uma série de **1.089** artroplastias, com 30% de entalhe, teve só duas fraturas, **ambas sem entalhe** (p. 460). O Rockwood and Green lista o entalhe como fator de risco; o Campbell mostra que a associação é discutida.
+
+!tabela Classificação de RORABECK (Campbell, cap. 8, p. 461 aprox.)
+| Tipo | Fratura | Prótese |
+| --- | --- | --- |
+| I | sem desvio | estável |
+| II | desviada | estável |
+| III | com ou sem desvio | **instável** |
+!fim
+
+A lógica é a mesma do capítulo 58: prótese estável, fixação; **componente solto ou traço até a superfície de fixação, revisão com haste longa** até a diáfise. Na experiência do Campbell com **haste supracondiliana**, 11 de 13 fraturas (**85%**) consolidaram em média em 16 semanas; mas alguns modelos (**caixa intercondiliana fechada**, intercôndilo estreito, componente com haste) não deixam passar a haste, e então se abre a caixa com broca ou se usa a haste anterógrada. A placa bloqueada por redução indireta também teve bons resultados. Idade avançada prediz **mortalidade alta em 1 ano**, e no idoso com osso cominuto ou osteoporótico considera-se a **prótese de substituição do fêmur distal** (p. 460 a 461).
+
 # Resumo final {radar=fundamento}
 
 Com biologia e fixação melhores, os resultados chegam a bons ou excelentes em cerca de **80%**. Continuam em aberto o implante ideal, a perda óssea, a lesão do aparelho extensor e a rigidez. Para a prova, guarde a sequência do raciocínio: os músculos dão encurtamento, varo e ápice posterior; o que vem junto é incomum (LCA, poplítea) ou anterior (ferida); a TC acha a HOFFA; o tipo AO escolhe o implante (B sem haste); a placa lateral pede fio distal paralelo à articulação e parafusos medidos contra o trapézio; a haste entra à frente da linha de BLUMENSAAT; e o joelho tem de se mexer cedo.
+
+> **Na prova, o que a versão 2 acrescenta:** pelo Campbell, opera-se toda fratura do fêmur distal exceto a simples sem desvio; o DCS exige 4 cm de côndilo íntegro e, com menos de 3 a 4 cm, entra a placa de suporte, que sem bloqueio cai em varo; na haste anterógrada o gastrocnêmio dá angulação posterior e a retrógrada é preferível; o fio-guia da placa vai paralelo à linha articular, com 8 corticais proximais e sem carga por 10 a 12 semanas; aço, placa curta, obesidade, exposta e tabagismo pesam na falha; a unicondiliana tem lesão ipsilateral em um terço e pede incidência do túnel e TC; a HOFFA medial é a metade posterior do côndilo, quase toda cartilagem, não se retira e se fixa de anterior para posterior com parafusos embutidos; RORABECK separa a periprotética por desvio e estabilidade da prótese (III instável vai para revisão).

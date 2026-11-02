@@ -1,14 +1,14 @@
 ---
 id: tachdjian6-deficiencias-membros
-versao: 1
+versao: 2
 titulo: Deficiências dos membros na criança
 especialidade: pediatria
 acesso: gratis
 livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021)
 capitulo: Capítulo 21 · Limb Deficiencies
-autores: John A. Herring (editor), com o capítulo 29 do Campbell's Operative Orthopaedics, 14ª ed. (2021), de Derek M. Kelly
-fonte: Livros conferidos localmente em 30/10/2026: Tachdjian, cap. 21, e Campbell 2021, cap. 29 (Congenital Anomalies of the Lower Extremity, p. 1137 a 1144). Páginas citadas só quando impressas na página do livro.
+autores: John A. Herring (editor), com o capítulo 29 do Campbell's Operative Orthopaedics, 14ª ed. (2021), de Derek M. Kelly, e o capítulo 31 da 15ª ed. (2026)
+fonte: Livros conferidos localmente em 30/10/2026: Tachdjian, cap. 21, e Campbell 2021, cap. 29 (Congenital Anomalies of the Lower Extremity, p. 1137 a 1144). Páginas citadas só quando impressas na página do livro. Ampliado em 01/11/2026 com o Tachdjian, cap. 21 relido, e o Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (p. 1082 a 1100).
 subtemas: Deficiências longitudinais dos membros
 resumo: Terminologia (transversal e longitudinal, terminal e intercalar, ISO/ISPO); deficiência femoral focal proximal (AITKEN A a D, GILLESPIE A a C, PALEY 1, 2a e 2b, quadril em flexão, abdução e rotação externa, hemimelia fibular e cruzados ausentes, anomalias cardíacas, alongamento abaixo de 20 cm); hemimelia fibular (a mais comum, valgo, côndilo lateral e LCA, equinovalgo, coalizão e raios laterais, ACHTERMAN e KALAMCHI, BIRCH e o pé funcional, SYME com 25 cm ou mais); hemimelia tibial (JONES 1a a 4, sem quadríceps e patela, desarticulação do joelho, sinostose); bandas de STREETER.
 ---
@@ -119,8 +119,259 @@ Faixas de âmnio que apertam o membro: dificultam a drenagem venosa (edema), dei
 conceito: Anel de constrição, sobretudo nos dedos, com sindactilia fenestrada, edema e amputação; raramente um membro só.
 !fim
 
+# Como o membro se forma e onde ele falha {radar=fundamento}
+
+Para entender por que existem deficiências transversais, longitudinais, pré-axiais e pós-axiais, vale voltar ao embrião. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21), conta que os **brotos dos membros aparecem no fim da 4ª semana** e crescem de proximal para distal, sob o comando de três centros organizadores (p. 873).
+
+!tabela Os três eixos do broto do membro (Tachdjian, cap. 21, p. 873 e 874)
+| Eixo | Centro | Molécula-chave | Se falhar |
+| --- | --- | --- | --- |
+| Proximodistal (ombro para dedos) | crista ectodérmica apical (AER) | **Fgf8** | perda total: tetra-amelia; parcial: **deficiência transversal** |
+| Anteroposterior (dedo 1 ao 5) | zona de atividade polarizante (ZPA) | **SHH** (sonic hedgehog) | perda de SHH: **deficiência ulnar**; excesso: **polidactilia** |
+| Dorsoventral (dorso para palma) | ectoderma dorsal | **Wnt7a** | perda de Lmx1b: síndrome unha-patela |
+!fim
+
+O mesmo raciocínio explica os quadros "por segmento": quando falha o Shox2, a displasia é rizomélica; quando falha o Shox, mesomélica; quando falham os dois, aparece a **focomelia**. A perda de FGF numa área que não depende de SHH tira as estruturas radiais, e é assim que o livro explica a **deficiência radial** (p. 874).
+
+**O relógio.** Às 6 semanas as extremidades já são placas de mão e pé com raios digitais. Na 7ª semana o membro superior **gira 90° para lateral** (o polegar vai para fora) e o inferior **gira 90° para medial** (o hálux vai para dentro). Na 8ª semana todos os segmentos estão completos, e às 12 semanas todos os ossos longos têm centro de ossificação (p. 873 e 874). O período sensível tem pico na **5ª e 6ª semanas**: as grandes deficiências do membro superior nascem por volta do **28º dia**, as do inferior no **31º**, e as distais nos dias 35 e 37 (p. 880, aprox.).
+
+**Malformação não é deformação.** A malformação é um erro na formação, que só pode ocorrer nesse período inicial. A deformação é uma força externa sobre uma estrutura já formada e pode surgir em qualquer fase da gestação; a **banda amniótica** é o exemplo clássico de deformação, e o livro estima que a síndrome ocorra por volta da 6ª semana (p. 880 e 881).
+**Causa e recorrência.** Na maioria das deficiências a causa é desconhecida e o padrão é esporádico. A recorrência da mesma anomalia em irmãos fica em **1% a 3%**, pouco acima da população geral. A **talidomida** é o único medicamento ligado a um grande número de deficiências; há um relato de hemimelia fibular com deficiência femoral após tentativa de aborto com misoprostol (p. 880, aprox.).
+
+**A nomenclatura internacional.** O sistema ISO/ISPO (1991) chama tudo de transversal ou longitudinal, porque seus autores entendem que **não existem deficiências intercalares verdadeiras**, apenas graus de deficiência longitudinal. A precisão anatômica é ótima, mas os nomes ficaram tão longos que o uso clínico não pegou (p. 876 e 877). No FRANTZ e O'RAHILLY, o termo paraxial é o antigo longitudinal. No glossário, **pré-axial** é o lado do rádio e da tíbia, **pós-axial** o da ulna e da fíbula, e **hemimelia** é a ausência de um dos ossos pareados (Box 21.2, p. 878).
+
+# Síndromes que mudam a conduta {radar=fundamento}
+
+Antes de pensar no osso, o Tachdjian (cap. 21) pede que se examinem **sistema craniofacial, coração, aparelho digestivo, aparelho geniturinário, pele e sistema nervoso** de toda criança com deficiência de membro, com hemograma, urina, radiografias, audição, visão e crescimento acompanhados até ficar claro que a deficiência é isolada (p. 882). As deficiências do **membro superior** têm mais anomalias associadas, e os defeitos do **úmero** são os que mais predizem outras anomalias (p. 881).
+
+!tabela Síndromes com deficiência de membro (Tachdjian, cap. 21, p. 881 a 883, Box 21.4)
+| Síndrome | Herança | Membro | O que pesquisar |
+| --- | --- | --- | --- |
+| Trombocitopenia com rádio ausente (TAR) | autossômica recessiva | rádio ausente, em geral bilateral, polegar presente ou deformado | **plaquetopenia** no recém-nascido (sangramento intraventricular), cardiopatia |
+| FANCONI | autossômica recessiva | polegar e rádio hipoplásicos | **pancitopenia** entre 5 e 10 anos, leucemia; teste com diepoxibutano (DEB) |
+| HOLT-ORAM | autossômica dominante, gene **TBX5** | polegar, rádio, úmero, clavícula | **cardiopatia**: comunicação interatrial e interventricular, FALLOT |
+| VACTERL | esporádica, mais comum em filho de **mãe diabética** | displasia radial | vértebras, ânus, fístula traqueoesofágica, rins, coração |
+| Hipoplasia femoral com fácies incomum | autossômica dominante | de fêmur hipoplásico a ausência de fêmur e fíbula | nariz curto, filtro longo, micrognatia, fenda palatina |
+| POLAND | esporádica | mão pequena, simbraquidactilia | ausência da cabeça esternocostal do peitoral maior; lado esquerdo: **10% de dextrocardia** |
+!fim
+
+**A hipótese vascular.** POLAND, MÖBIUS, KLIPPEL-FEIL, a anomalia de SPRENGEL e as deficiências transversais terminais compartilhariam uma causa: a interrupção do fluxo da **artéria subclávia** ou de seus ramos entre a 5ª e a 8ª semanas. Quanto mais cedo a interrupção, mais grave o defeito (p. 882 e 883).
+
+**A hemimelia tibial é exceção.** Entre as deficiências do membro inferior, é uma das poucas com padrão hereditário frequente (p. 882), e a tíbia ausente com polidactilia, autossômica dominante, também traz cardiopatia (Box 21.4).
+
+**A família e a criança.** A criança com deficiência congênita **não sente perda** e não precisa de período de adaptação; o grau da deficiência não se associa a depressão, ansiedade ou problemas de comportamento na infância, embora possa afetar a autoestima do adolescente (p. 883). O livro recomenda que a família conheça outras crianças já tratadas antes de decidir entre alongar e amputar, e lembra o estudo do Texas Scottish Rite Hospital: **metade** dos pacientes alongados teve piora do estado mental, muitas vezes com depressão, e em cerca de **20%** o resultado foi comprometido por um fator psicológico (p. 879, aprox.). Um menino com amelia dos dois membros superiores e DFFP à direita, que usa o pé como mão, é o exemplo do livro de quem **nunca deve receber cirurgia ablativa** (Fig. 21.11, p. 884).
+
+# DFFP: as outras classificações e a radiografia do AITKEN {radar=confirmado}
+
+O AITKEN continua sendo a classificação mais usada e a que a prova mais cobra. A pergunta que o separa em dois pares é simples: **existe cabeça femoral no acetábulo?** Se existe (A e B), a segunda pergunta é se a cabeça vai se unir à diáfise; se não existe (C e D), a pergunta é se há um tufo ósseo na ponta do fêmur.
+
+**Lendo a imagem.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21), detalha o que se vê. No tipo **B**, o segmento femoral é mais curto que no A, há muitas vezes um **tufo** na ponta proximal do fêmur e o **acetábulo é bem formado**; ao nascer, a parte de cima do fêmur pode não estar ossificada, mas a cabeça aparece com o crescimento, e a ponta proximal da diáfise costuma ficar **acima do acetábulo**. O traço definidor é que, na maturidade, **não há continuidade óssea entre a diáfise e a cabeça** (p. 884). No tipo C também há tufo, mas a cabeça falta e o acetábulo é pobre ou ausente; quando não há acetábulo, vê-se no lugar a parede lateral plana da pelve. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31), acrescenta que no tipo D o **forame obturador** fica alargado e a pelve, quadrada nos casos bilaterais (Tabela 31.4, p. 1092).
+
+Uma armadilha da radiografia do recém-nascido: no tipo A também não se vê o colo no início, porque ele é cartilaginoso; com a idade ele ossifica, muitas vezes passando por uma pseudartrose que pode consolidar, deixando **coxa vara grave** (Campbell, p. 1093). Por isso a classificação de AITKEN é, por definição, um retrato da **maturidade esquelética**.
+
+!tabela Outras classificações da deficiência femoral (Tachdjian, cap. 21, p. 884 e 885; Campbell, cap. 31, p. 1093)
+| Classificação | Estrutura | Ponto que a prova pode pedir |
+| --- | --- | --- |
+| HAMANISHI | 6 grupos e 10 subgrupos | Ia = fêmur curto sem defeito; V = ausência total; espectro contínuo; coxa vara congênita isolada fica fora |
+| PAPPAS | 9 classes | I = ausência do fêmur proximal; IX = hipoplasia leve; II = AITKEN D; III = AITKEN B |
+| KALAMCHI | 5 grupos | I fêmur curto com quadril íntegro; II com coxa vara; IIIA defeito do colo que ossifica; IIIB pseudartrose persistente; IV quadril ausente; V fêmur ausente |
+| GILLESPIE e TORODE | 2 grupos | I hipoplasia reconstruível; II DFFP verdadeira, cirurgia só para facilitar a prótese |
+| GILLESPIE | A, B, C | A alonga; B amputação ou rotacionoplastia; C prótese, sem artrodese do joelho |
+| PALEY | 1, 2a, 2b, 3 | 1 fêmur curto congênito; 2a pseudartrose móvel; 2b cabeça imóvel ou luxada |
+!fim
+
+O HAMANISHI tem uma mensagem conceitual que ajuda a raciocinar: a deficiência femoral é um **espectro contínuo** de resposta a uma agressão, e não um grupo de doenças distintas. A gravidade depende de quanto o crescimento foi inibido (Tachdjian, p. 885). O GILLESPIE do Tachdjian dá um detalhe útil para o grupo B: com os quadris fletidos, o fêmur afetado tem **metade ou menos** do comprimento do outro (p. 885).
+
+!questoes central=pediatria-0453
+conceito: No AITKEN B há cabeça femoral e acetábulo bem formado, muitas vezes um tufo proximal, mas na maturidade a cabeça não se une à diáfise: a pseudartrose do colo persiste.
+como: O TEOT 2023 mostrou uma radiografia de DFFP para classificar pelo AITKEN; uma prova de Ortopedia perguntou o tipo com pseudartrose do colo.
+armadilha: Marcar A porque há cabeça e acetábulo (no A a pseudartrose consolida, em varo) ou C porque há tufo (no C falta a cabeça).
+!fim
+
+# DFFP: do exame ao plano cirúrgico {radar=confirmado}
+
+**O exame.** A criança tem a coxa extremamente curta, o **quadril fletido e abduzido**, o membro em **rotação externa**, o joelho muitas vezes com contratura em flexão e o pé na altura do joelho oposto (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 885). As contraturas do quadril e do joelho fazem o membro parecer mais curto do que é; a discrepância real se mede melhor com a criança **sentada**. Os abdutores e os extensores do quadril existem, mas estão encurtados e não funcionam bem por causa da anatomia do fêmur proximal. Cerca de **45%** têm hemimelia fibular ipsilateral, e o diagnóstico pode ser feito no pré-natal por ultrassom (p. 886).
+
+**A marcha.** A maioria anda na idade esperada. Com encurtamento grande, a criança apoia o **joelho do lado normal** e o pé do lado curto; com o fêmur curto congênito, anda com o quadril e o joelho normais fletidos e o lado curto em equino (p. 888). Depois de amputação ou rotacionoplastia, o principal problema da marcha é a **instabilidade do quadril**, com a claudicação dos abdutores que piora com a idade (p. 892).
+
+**A conta.** Mede-se a discrepância atual, calcula-se a porcentagem e, supondo que ela se mantenha, multiplica-se pelo comprimento médio do fêmur adulto (ou usa-se o multiplicador de PALEY, o GREEN e ANDERSON ou a reta de MOSELEY). A **primeira decisão** é se a criança vai andar com o pé no chão ou com prótese (p. 888).
+
+!tabela Plano cirúrgico pela estabilidade do quadril (Tachdjian, Box 21.5, p. 888; Campbell, cap. 31, p. 1094)
+| Quadril | Comprimento previsto do membro | Opções |
+| --- | --- | --- |
+| Estável | **mais de 50%** do outro | alongamento, se discrepância abaixo de 17 a 20 cm e até três procedimentos |
+| Estável | **menos de 50%** | artrodese do joelho com SYME, ou artrodese com rotacionoplastia (quem valoriza o pé rodado) |
+| Instável | qualquer | fusão do fêmur à pelve (STEEL ou BROWN) com SYME ou rotacionoplastia |
+!fim
+
+**Artrodese do joelho e SYME.** O joelho na virilha é um segmento intercalar instável: com a carga, ele empurra a prótese para cima e para a frente, e a criança cambaleia para a frente e para o lado. A artrodese cria uma alavanca única, alinha o membro sob o acetábulo, reduz a contratura em flexão do quadril e transforma o membro numa **amputação acima do joelho funcional**, com apoio distal (Tachdjian, p. 888 e 889). Detalhes que caem: a fusão espera a ossificação dos côndilos e da tíbia proximal, por volta de **4 a 5 anos** (ou amputação antes de andar e fusão aos 3 a 4 anos); a **patela é excisada** porque, mantida, dá dor patelofemoral; e o fim do coto deve ficar pelo menos **5 cm acima do joelho oposto** na maturidade, o que se consegue ressecando a epífise femoral distal na artrodese (p. 877 e 889). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31), usa haste intramedular da tíbia saindo pela planta do pé, retirada com cerca de 6 semanas, e epifisiodese para nivelar o joelho protético com o normal (técnica de KING, p. 1096 e 1097).
+
+**SYME ou BOYD.** Aqui os livros divergem. O Tachdjian diz que a migração do coxim é raramente um problema depois do SYME, e por isso o **BOYD em geral é desnecessário** (p. 889). O Campbell mostra prós e contras: o BOYD dá mais comprimento e evita o deslocamento posterior do coxim, que ocorre em muitos SYME, mas deve ser usado com cautela em crianças muito pequenas, porque o calcâneo retido pode migrar para trás; ele também sugere seccionar o tendão calcâneo de forma profilática nas amputações congênitas (p. 1091 e 1099).
+
+**Rotacionoplastia.** BORGGREVE descreveu em 1930, num joelho destruído por tuberculose; VAN NES aplicou em 1950 à deficiência femoral, girando o pé **180°** para que o tornozelo comande o joelho protético. O gastrossóleo vira o extensor do "joelho", e o tornozelo dá propriocepção (Tachdjian, p. 890). Comparada ao SYME, dá melhor função protética, menor custo de oxigênio e maior velocidade de marcha. O defeito é a **derrotação** com o crescimento, que o Campbell estima em até **50%** dos pacientes; ele cita marcha cerca de 10% mais eficiente que o SYME, benefício recentemente questionado (p. 1097.e1).
+
+!tabela Rotacionoplastias e fusões ao quadril (Tachdjian, p. 890 a 893; Campbell, p. 1095 a 1098)
+| Técnica | O que faz | Detalhe |
+| --- | --- | --- |
+| VAN NES | artrodese do joelho e rotação de 180° | derrotação frequente com o crescimento |
+| GILLESPIE e TORODE | cerca de 120° de rotação no joelho e o resto por osteotomia da tíbia | |
+| KRAJBICH | toda a rotação pelo joelho; músculos reinseridos em linha reta | fise femoral distal removida para não alongar demais |
+| BROWN | fêmur rodado 180° e fundido à pelve | gastrocnêmio vira flexor do quadril e extensor do joelho; sem derrotação |
+| STEEL | fusão iliofemoral em flexão (Campbell: 90°, com osteotomia de CHIARI) | o joelho vira quadril; resultados muitas vezes decepcionantes |
+!fim
+
+Os livros divergem no tornozelo exigido para a rotacionoplastia: o Tachdjian pede arco de pelo menos **60°** (p. 890); o Campbell, de pelo menos **90°**, e lembra que muitos pacientes com DFFP têm hemimelia fibular e tornozelo ruim (p. 1096). A rotação é feita em **rotação externa**, para não estirar o nervo fibular (Fig. 31.95, p. 1098).
+
+**A pseudartrose do colo.** A necessidade de operar o defeito proximal é controversa: PALEY recomenda osteossíntese precoce; outros só operam quando há **deformidade progressiva, em geral em varo**, que é indicação definida (Tachdjian, p. 891). O Campbell sugere esperar a ossificação da cabeça e da metáfise, com enxerto se preciso, e lembra que melhorar a radiografia não prova melhora da função (p. 1094).
+
+**Bilateral e prótese em equino.** Na DFFP bilateral o problema é a **baixa estatura** com marcha anserina; a amputação é **contraindicada**, e a conduta é usar próteses de extensão (Tachdjian, p. 889). O Campbell acrescenta que essas crianças andam bem sem prótese e que a fusão do joelho geralmente não se indica, porque o joelho trabalha junto com a pseudartrose do quadril (p. 1093 e 1094). Na criança pequena com DFFP unilateral, a **prótese em equino** permite andar na idade normal enquanto a família amadurece a decisão (Tachdjian, p. 889).
+
+!questoes central=pediatria-0344
+conceito: Na deficiência congênita do fêmur, o quadril fica fletido e abduzido e o membro em rotação externa, com o joelho fletido e o pé na altura do joelho oposto.
+como: O TEPOP 2024 pediu a aparência clínica típica da deficiência congênita do fêmur.
+armadilha: Trocar abdução por adução ou rotação externa por interna, que é a postura da luxação do quadril.
+!fim
+
+# Alongamento do fêmur curto congênito {radar=fundamento}
+
+Na maioria dos fêmures curtos congênitos e em parte das DFFPs, a discrepância final prevista fica **abaixo de 20 cm**, o fêmur mede de **40% a 60%** ou mais do outro e o pé chega ao meio da tíbia oposta: é o grupo A de GILLESPIE ou o grupo I de GILLESPIE e TORODE, em que o alongamento costuma ser o ideal (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 893). Alguns precisam de um só alongamento com epifisiodese do outro lado; outros, de dois ou mais, às vezes também da tíbia.
+
+**O quadril vem antes.** O quadril tem de estar praticamente normal antes do alongamento, porque a força muscular do alongamento luxa um quadril displásico. Displasia acetabular anterolateral pede osteotomia de **SALTER**; insuficiência posterior, de **DEGA**. O fêmur proximal, muitas vezes em varo e retrovertido, é corrigido para um ângulo cervicodiafisário de cerca de **135°**, **nunca em valgo**, que também predispõe à luxação; a osteotomia deve estar consolidada e o material retirado antes de alongar. A banda iliotibial costuma estar contraída e é liberada (p. 895).
+
+!tabela Regras do alongamento femoral congênito (Tachdjian, p. 893 a 895; Campbell, cap. 31, p. 1094 e 1095)
+| Tema | Regra |
+| --- | --- |
+| Indicação | membro previsto com 50% ou mais do outro, discrepância abaixo de 17 a 20 cm, até três procedimentos |
+| Máximo por osso (Campbell) | **10 a 12 cm**; com encurtamento do outro lado, 17 a 20 cm no total |
+| Fixador (PRICE e NOONAN) | monolateral se abaixo de 17 cm, quadril e joelho estáveis e LCP íntegro |
+| Etapas | ganho de **15% a 20%** por etapa; Campbell: aos 4 a 5 anos, 8 a 9 anos e na adolescência |
+| Osteotomia | distal ao meio da diáfise, onde consolida melhor |
+| Joelho | extensão com tala pelo menos 12 horas por dia; subluxação se trata antes de continuar |
+| BOWEN (KALAMCHI IIIA) | risco de luxação se coxa vara mais arco da diáfise abaixo de 115° e índice acetabular acima de 25°: corrigir para 120° e abaixo de 25° |
+!fim
+
+PRICE e NOONAN desaconselham alongar fêmur e tíbia ao mesmo tempo e o alongamento em dois níveis, porque músculos e nervos respondem melhor à distração lenta; o fixador deve ficar paralelo ao eixo mecânico para evitar translação (Tachdjian, p. 895). O Campbell lembra que o alongamento só se considera com o **fêmur íntegro**, quadril estável e pé plantígrado estável, e que nas DFFPs com quadril instável ele não se indica, porque exigiria alongamento extremo (p. 1094).
+# Hemimelia fibular: BIRCH, raios e a idade da amputação {radar=confirmado}
+
+O resumo já mostrou que a hemimelia fibular atinge o membro inteiro. Os números ajudam a fixar. No Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21), **15%** de todos os pacientes têm deficiência femoral associada, mas KRUGER e TALBOTT encontraram fêmur curto em **todos** os pacientes com pé de cinco raios e em metade dos que tinham menos raios (p. 894). Na série de BIRCH (104 pacientes), 85% tinham fêmur curto, e **o comprimento da fíbula não se correlacionou com a gravidade**: mais da metade dos que não tinham fíbula alguma tinha membro salvável (p. 897).
+
+**O pé decide.** A chance de salvar o membro caiu com o número de raios: **95%** com cinco raios, **81%** com quatro, **49%** com três e só 1 em 9 com menos de três. Daí a definição de **pé funcional**: plantígrado, ou que possa ficar plantígrado, com **três raios ou mais** (p. 897).
+
+!tabela BIRCH: classificação funcional e tratamento (Tachdjian, Tabela 21.5, p. 899; Campbell, Tabela 31.3, p. 1090)
+| Tipo | Característica | Tratamento previsto |
+| --- | --- | --- |
+| 1A | pé preservável, desigualdade abaixo de 6% (Campbell: 0% a 5%) | nada, órtese ou epifisiodese |
+| 1B | 6% a 10% | epifisiodese, com ou sem alongamento |
+| 1C | 11% a 30% | um ou dois alongamentos (Campbell: ou amputação) |
+| 1D | acima de 30% | mais de dois alongamentos ou amputação |
+| 2A | pé não preservável, **membro superior funcional** | **amputação precoce** |
+| 2B | pé não preservável, **membro superior não funcional** | **considerar salvamento** |
+!fim
+
+A lógica do tipo 2B é a mesma do resto do capítulo: quando o membro superior não funciona, o pé vira mão, e **não se amputa o pé** (Tachdjian, p. 897 e 920). O Campbell repete: nos pés com menos de três raios ou em equinovalgo rígido a amputação precoce é a regra, mas, se os membros superiores estiverem muito afetados, salvar o pé ajuda a função global (p. 1090). Nos casos bilaterais, o membro mais longo é considerado o "normal" para o cálculo da porcentagem.
+
+!tabela ACHTERMAN e KALAMCHI com as discrepâncias (Tachdjian, p. 896; Campbell, p. 1089)
+| Tipo | Fíbula | Discrepância da tíbia | Discrepância total na maturidade |
+| --- | --- | --- | --- |
+| IA | curta, epífise proximal abaixo da fise tibial | 6% | 12% |
+| IB | 30% a 50% ausentes, sem apoio no tornozelo | 17% | 18% |
+| II | ausente | 25% | 19% |
+!fim
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31), acrescenta que o **tornozelo em bola e soquete** aparece na maioria dos tipos IA, e que a angulação da tíbia é mais frequente no tipo II (p. 1089). COVENTRY e JOHNSON usam I para ausência parcial, II para completa e III para bilateral ou com outras anomalias (Tachdjian, p. 896).
+
+**O tornozelo.** Quando existe, o maléolo lateral fica **proximal** na pinça; a superfície articular distal da tíbia olha para trás e para lateral, e a epífise em cunha, mais estreita do lado lateral, soma ao valgo. A face superior plana do tálus e do calcâneo fundidos articula com a tíbia em valgo e equino (Tachdjian, p. 894 e 895). CHOI graduou a cunha da epífise: leve, moderada ou grave, com retardo de crescimento e deformidade do pé proporcionais (Campbell, p. 1090). Para o valgo do tornozelo na criança maior, a osteotomia supramaleolar em varo de **WILTSE** corrige a translação que a cunha de fechamento simples deixaria, evitando o maléolo medial proeminente (p. 1090).
+
+**A amputação.** Hoje há consenso de que a **desarticulação do tornozelo**, de BADGLEY (início dos anos 1940), é o melhor tratamento das formas graves. O momento ideal é quando a criança começa a **puxar para ficar de pé, aos 9 a 10 meses**: ela anda com a prótese por volta de **1 ano** e corre e pratica esportes normalmente. Arco leve da tíbia é bem tolerado; se for acentuado, a osteotomia é feita na mesma cirurgia (Tachdjian, p. 899). Os estudos favorecem a amputação: McCARTHY viu melhores escores, menos dor e menos complicações, com custo de **um quarto** do alongamento; NAUDIE teve 2 de 10 alongados amputados depois; CHOI obteve 88% de resultados satisfatórios com amputação e 55% com o alongamento de WAGNER (p. 897). O Campbell cita uma metanálise de 169 pacientes com mais satisfação, menos complicações e menos cirurgias após a amputação (p. 1090).
+
+**Alongar nos graves?** O Tachdjian aceita tentar quando a discrepância ao nascer é **menor que 5 cm** e o pé não tem deformidade importante; acima de 5 cm ao nascer, com previsão de mais de **30%** de discrepância relativa ou pé deformado, concorda com KRUGER e BIRCH que a amputação com prótese é o mais adequado (p. 900).
+
+**Joelho.** O valgo progressivo aparece qualquer que seja o tratamento. Com **15° ou mais** e pelo menos **2 cm** de crescimento restante, faz-se epifisiodese medial da tíbia proximal ou do fêmur distal; depois da maturidade, osteotomia (Tachdjian, p. 899). A reconstrução do LCA é controversa: há boa função a longo prazo sem ela, mas pode ser considerada no atleta (Campbell, p. 1091).
+
+**Bilateral.** Quase não há diferença entre os lados; o problema é a desproporção entre pernas e tronco, um "nanismo" pelas tíbias curtas. Se as tíbias forem muito curtas e os pés malformados, indica-se a desarticulação dos dois tornozelos; o alongamento bilateral também pode ser considerado (Tachdjian, p. 900).
+
+!questoes central=pediatria-0345
+conceito: Pela BIRCH, pé não preservável com membro superior funcional (2A) leva à amputação precoce; com membro superior não funcional (2B), considera-se salvar o pé, que fará papel de mão.
+como: O TEPOP 2024 afirmou que membros superiores não funcionais contraindicam a amputação em casos bilaterais de deficiência longitudinal da fíbula.
+armadilha: Decidir só pelo comprimento da fíbula ou pela discrepância e esquecer de examinar os membros superiores.
+!fim
+
+# Hemimelia tibial: além do JONES {radar=confirmado}
+
+**Genética.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31), estima que a hemimelia tibial seja **bilateral em 30%** dos pacientes e lista síndromes em que ela entra: WERNER (polidactilia com polegar trifalângico), diplopodia, mão e pé fendidos, micromelia com braquicefalia e o complexo de GOLLOP e WOLFGANG (fêmur bífido e ectrodactilia) (p. 1082). O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21), explica o mecanismo dos casos sindrômicos: mutações que afetam o **GLI3**, repressor do SHH, deixam a atividade do SHH sem freio na parte posterior do broto (p. 900).
+
+**O exame que dá o prognóstico.** A perna é curta, a cabeça da fíbula é palpável quando subiu, o pé fica em **equinovaro grave** com retropé rígido e o joelho fica fletido. Avaliar o **mecanismo extensor** é o passo com maior valor prognóstico para reconstruir o joelho (Campbell, p. 1083). Na criança maior, o anlage cartilaginoso da tíbia proximal pode ser palpado mesmo sem aparecer na radiografia, e ultrassom e ressonância ajudam (Tachdjian, p. 901). Na anatomia, a artéria tibial anterior falta, o arco plantar é incompleto, o tálus e o calcâneo costumam estar fundidos e o nervo fibular superficial pode terminar no tornozelo (Campbell, p. 1085).
+
+**Por que o 1a não tem quadríceps.** No JONES 1a a tíbia falta toda e o núcleo do fêmur distal é pequeno; a criança tem **isquiotibiais, mas não quadríceps**, a **patela costuma faltar** e o pé fica em varo fixo, quase sem movimento. No 1b e no 2, em que a tíbia proximal existe, quadríceps e isquiotibiais funcionam e o joelho se move (Tachdjian, p. 901 e 902). O 1b é o 1a que engana: a radiografia não mostra tíbia, mas o fêmur distal tem tamanho normal, e o anlage cartilaginoso ossifica com o tempo, virando um tipo 2 (Campbell, p. 1083 e 1084).
+
+**Ajustes ao JONES.** CLINTON e BIRCH revisaram 125 membros em 37 anos, **não encontraram nenhum tipo 3 verdadeiro** e propuseram um tipo 5, de encurtamento global da tíbia em relação à fíbula (Campbell, p. 1084). WEBER criou sete tipos, com subtipos a (com anlage cartilaginoso) e b (sem); quanto maior o número, pior: o VIIb corresponde ao JONES 1a (**56%** dos casos), o VIIa ao 1b (6%) e o IIIa e IIIb ao JONES 2 (15%) (Tachdjian, p. 901).
+
+!tabela Tratamento por tipo de JONES (Tachdjian, p. 902 e 903; Campbell, p. 1086)
+| Tipo | Conduta | Por quê |
+| --- | --- | --- |
+| 1a | **desarticulação do joelho** e prótese acima do joelho | sem complexo quadríceps e tendão patelar; evita o supercrescimento da amputação transfemoral |
+| 1b e 2 | **sinostose da fíbula à tíbia proximal** e SYME | o joelho funciona; a fíbula sob a tíbia remodela em osso semelhante à tíbia |
+| 2 com contratura grave em flexão | desarticulação do joelho (alguns autores) | o joelho não serviria à prótese |
+| 3 | SYME ou CHOPART; às vezes sinostose | raríssimo; funcionam como amputados abaixo do joelho |
+| 4 | SYME modificada na idade de andar; ou sinostose tibiofibular distal com epifisiodese da fíbula distal | sem superfície articular da tíbia distal |
+!fim
+
+**A centralização da fíbula fracassa.** A tentativa original de pôr a fíbula sob o fêmur no tipo 1a, o procedimento de BROWN, mostrou perda progressiva de função, rigidez, instabilidade e dor. LODER revisou 55 pacientes, e **53** acabaram desarticulados; para ele, a técnica falha uniformemente no 1a e não deve ser tentada (Tachdjian, p. 903). Depois da desarticulação, a marcha teve velocidade de 81% do normal, ciclo 131% mais longo e gasto energético normal, com corrida pior (p. 903).
+
+**Sinostose: quando e como.** Os livros divergem no momento. O Tachdjian prefere esperar que a tíbia proximal ossifique, porque o anlage cartilaginoso não funde bem, e ressecar a fíbula proximal saliente, que atrapalha a prótese (p. 903). O Campbell diz que a estabilidade pode ser obtida mesmo com a tíbia ainda cartilaginosa, prefere a união **fim a fim** e lembra que, sem a transferência, a fíbula fica curva e hipertrofiada (p. 1086). O pé, se for retirado, sai num segundo tempo; mantê-lo no primeiro ajuda a fixar o gesso. Quando a família recusa a amputação, a fíbula distal pode ser implantada no tálus em equino extremo para ganhar comprimento (p. 1086).
+
+!questoes central=pediatria-0346
+conceito: O JONES 1a é a ausência completa da tíbia com fêmur distal pequeno: falta o quadríceps e a patela, ou seja, falta o mecanismo extensor, e o tratamento é a desarticulação do joelho.
+como: O TEPOP 2024 pediu o tipo de JONES mais associado à ausência do mecanismo extensor do joelho.
+armadilha: Escolher o 1b, que também não mostra tíbia na radiografia, mas tem quadríceps funcionante e fêmur distal normal.
+!fim
+
+# Deficiências do membro superior {radar=oportunidade}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21), trata o membro superior pela função: a criança com deficiência congênita usa o que tem com uma eficiência que surpreende, e toda cirurgia precisa prometer ganho real de função.
+
+**Transversais e simbraquidactilia.** A maioria das deficiências transversais tem causa desconhecida; a sequência de ruptura da subclávia é uma hipótese. A presença de tecidos de origem ectodérmica no coto (pele, unhas, tufos das falanges distais, os "nubbins") sugere falha de proliferação do mesoderma (p. 905). A simbraquidactilia tem quatro formas: **dedos curtos**, a mais associada a POLAND; **mão fendida central**; **monodáctila**, em que o **polegar é sempre preservado**; e **peromélica**. Nubbins sob controle voluntário ou grandes o bastante para reconstrução não se retiram. Os dedos podem ser alongados com falanges do pé não vascularizadas, com periósteo e ligamentos, ou com transferência microcirúrgica de dedo do pé (p. 905 e 906).
+
+**Bandas.** A sindactilia fenestrada é a marca. A liberação é de urgência quando há necrose iminente ou síndrome compartimental; nos demais, é eletiva, com Z-plastia, depois dos **6 meses**, e pode ser circunferencial numa só cirurgia, preservando os vasos (p. 907). A transferência de dedo do pé é especialmente indicada quando a banda amputou o polegar, porque tudo que fica acima da banda é normal (p. 907).
+
+!tabela Deficiências longitudinais do membro superior (Tachdjian, cap. 21, p. 907 a 910)
+| Deficiência | Tipos | Pontos-chave |
+| --- | --- | --- |
+| Radial (pré-axial) | I rádio distal curto; II rádio pequeno com as duas fises (incomum); III rádio proximal pequeno; **IV ausência completa, a mais comum** | buscar TAR, VACTERL, HOLT-ORAM, FANCONI; centralização; polegar flutuante ou ausente: policização |
+| Ulnar (pós-axial), BAYNE | I hipoplasia; II aplasia parcial; III aplasia total; IV sinostose radioumeral | anlage fibrocartilaginoso; ressecar se desvio acima de 30°; cotovelo define a função |
+!fim
+
+**Rádio.** Centralizar o carpo sobre a ulna enrijece o punho e melhora a alavanca, mas não se faz se o **cotovelo estiver rígido em extensão**, porque a mão deixaria de alcançar a boca. Realinhar custa movimento, e preservar o movimento mantém a deformidade. A recidiva é **inversamente proporcional à rigidez do punho**; como último recurso, artrodese ulnocarpal. Há risco de lesão da fise distal da ulna (p. 908 e 909). A criança que não usa o indicador na posição original não vai usá-lo policizado, e nenhuma prótese substitui o polegar (p. 909).
+
+**Ulna.** O rádio se arqueia com o ápice radial e a mão desvia para a ulna, puxada, segundo parte dos autores, pelo anlage fibrocartilaginoso. Gesso precoce não funciona. As síndromes incluem CORNELIA DE LANGE, ulnar-mamária e fêmur-fíbula-ulna; a cardiopatia é menos comum que na deficiência radial (p. 909 e 910).
+
+**Prótese.** A criança com ausência abaixo do cotovelo faz preensão com o **cotovelo** e tem pouca necessidade de prótese. A rejeição das próteses mioelétricas vai de **0% a 50%**. O controle mioelétrico com dois eletrodos se ensina a partir de cerca de **3 anos** (alguns centros, de 12 a 20 meses), e o gancho de cabo por volta de **24 meses**. O livro não indica mais a prótese passiva precoce; atende pedidos específicos, como andar de bicicleta ou tocar tuba (p. 921). Paradoxalmente, quem tem deficiência bilateral é quem **menos usa prótese**, porque ela cobre a pele sensível; sem os dois membros superiores, a criança usa os pés para escrever e comer (p. 918).
+
+# Amputações na criança: congênitas e adquiridas {radar=fundamento}
+
+**Causas.** O trauma é a principal causa de amputação adquirida na criança; os **cortadores de grama**, sobretudo os de montar, respondem por **42%** das amputações abaixo dos 10 anos, com pico em meninos de até 5 anos, em geral quando a criança cai do cortador dirigido por um parente. Os tumores malignos são a segunda causa (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21, p. 910 a 913).
+**Reimplante e salvamento.** Isquemia quente acima de **4 horas** num membro e de **10 horas** num dedo aumenta a falha do reimplante; o segmento vai em gaze úmida com soro, em saco plástico, sobre gelo (nunca gelo seco). Um **MESS abaixo de 7** prediz salvamento; **7 ou mais**, amputação (p. 912).
+
+!tabela Regras do coto em crescimento (Tachdjian, p. 912 a 917; Campbell, cap. 31, p. 1099)
+| Regra | Motivo |
+| --- | --- |
+| Preservar fises; **80% do crescimento do fêmur** vem da fise distal | perder a fise distal deixa um fêmur muito curto |
+| Preferir **desarticulação** a amputação metafisária ou transdiafisária | a desarticulação não faz supercrescimento |
+| Supercrescimento: **úmero, fíbula, tíbia e fêmur**, nessa ordem | aposição periosteal na ponta, não crescimento da fise; epifisiodese não previne |
+| Capa biológica (cartilagem do segmento amputado, fíbula proximal) | FEDORAK: nenhum supercrescimento da tíbia em 7,2 anos |
+| Transtibial com pelo menos 6 cm na maturidade | encaixe da prótese; a fise proximal faz o coto curto crescer |
+| Desarticulação do joelho: epifisiodese femoral distal deixando o fêmur 5 a 6 cm mais curto | espaço para o joelho protético; 3 cm bastam para um joelho policêntrico |
+!fim
+
+**Joelho vale mais que o supercrescimento.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31), é direto: a desarticulação do joelho evitaria o supercrescimento, mas é muito mais importante **preservar o joelho** para uma prótese abaixo do joelho, e até cotos tibiais curtos devem ser mantidos, porque a fise proximal da tíbia faz o coto crescer (p. 1099). Na criança maior, coto curto pode ser alongado com ILIZAROV (Tachdjian, p. 916). Nos amputados transtibiais, a luxação recidivante da patela aparece em **até um terço**, ligada ao valgo e à patela alta (p. 916).
+
+**Dor fantasma e energia.** A dor fantasma **não ocorre** nas ausências congênitas e é incomum nas crianças pequenas amputadas; nas maiores, raramente incapacita e responde a estimulação, fisioterapia ou amitriptilina (Tachdjian, p. 917). O amputado abaixo do joelho gasta cerca de **60%** mais energia ao andar, e o acima do joelho, cerca de **100%** (p. 922).
+**Quando protetizar.** A criança com deficiência do membro inferior recebe a prótese quando tenta ficar de pé, entre **9 e 16 meses**; o joelho articulado entra por volta de **3 a 4 anos**. A prótese é trocada a cada 12 a 24 meses, com revisões a cada 3 a 6 meses (p. 920 e 921).
+
 # Fechamento {radar=fundamento}
 
 Em todas essas doenças, a primeira conta é a da **discrepância na maturidade**, porque a porcentagem de encurtamento tende a se manter. A segunda é o que sobrou para reconstruir: o quadril na DFFP, o pé na hemimelia fibular, a tíbia proximal na hemimelia tibial. Com essas duas contas, as classificações deixam de ser listas e viram decisões.
 
 > **Na prova:** **alongar** quando a discrepância é moderada e há quadril, joelho e pé para trabalhar (GILLESPIE A, BIRCH até 8 cm); **amputar** e protetizar quando não há (BIRCH 25 cm ou mais, JONES 1a).
+
+> **Na prova, o que a versão 2 acrescenta:** Fgf8 comanda o eixo proximodistal e o SHH o anteroposterior (falta de SHH dá deficiência ulnar); AITKEN B tem tufo, cabeça e acetábulo, mas pseudartrose persistente na maturidade, PAPPAS III equivale ao AITKEN B e o II ao D; na DFFP com quadril estável, mais de 50% de comprimento alonga (até 17 a 20 cm) e menos de 50% vai para artrodese do joelho com SYME ou rotacionoplastia, quadril instável pede STEEL ou BROWN, e a bilateral não se amputa; a rotacionoplastia exige tornozelo com 60° (Tachdjian) ou 90° (Campbell) e derrota em até 50%; BIRCH 2A amputa cedo e 2B (membro superior não funcional) salva o pé, a amputação ideal é aos 9 a 10 meses e o valgo do joelho de 15° se trata com epifisiodese medial; JONES 1a não tem quadríceps nem patela e vai para desarticulação do joelho, o BROWN fracassa (53 de 55), 1b e 2 fazem sinostose tibiofibular com SYME; supercrescimento do coto é periosteal, mais no úmero, e a dor fantasma não existe na deficiência congênita.

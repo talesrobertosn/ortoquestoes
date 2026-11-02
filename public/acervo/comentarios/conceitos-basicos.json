@@ -174,14 +174,18 @@
   "conferido": false
  },
  "conceitos-basicos-0013": {
+  "conceito": "A pergunta descreve uma lesão óssea e quer o tipo anatômico de CIERNY e MADER. A palavra que decide é **estabilidade**: a placa atravessou o córtex, mas o osso continua aguentando carga.\n\n**Os quatro tipos anatômicos** (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 811, Fig. 23.7). O **I, medular**, é a doença endosteal, com o nicho dentro do canal. O **II, superficial**, é a cortical de fora infectada por um defeito de cobertura de partes moles. O **III, localizado**, já pega **toda a espessura da cortical**, com um sequestro que pode ser ressecado **sem comprometer a estabilidade**. O **IV, difuso**, soma os anteriores com **instabilidade mecânica**, antes ou depois do desbridamento, e ocupa a circunferência inteira.\n\n**Aplicando ao caso.** Os parafusos da placa furam a cortical de lado a lado: a infecção deixa de ser só superficial. Mas o enunciado afirma que não há instabilidade axial, e é exatamente essa ausência que separa o III do IV. O tipo anatômico ainda se combina com o hospedeiro (A normal, B comprometido, C proibitivo) para formar um dos **12 estágios**, que orientam se o tratamento será simples ou complexo, curativo ou paliativo.\n\nA tabela de CIERNY e MADER está na seção \"A crônica do adulto e o estadiamento de CIERNY e MADER\" do resumo.",
+  "correta": "**B) III.** Lesão de toda a espessura cortical que pode ser desbridada sem perder a estabilidade é a osteomielite localizada, tipo III.",
   "incorretas": {
-   "A": "O tipo II é superficial e não atravessa toda a espessura da cortical.",
-   "C": "O tipo IV é difuso, e a retirada do osso doente deixa o osso instável, o que não é o caso descrito.",
-   "D": "A classificação vai de I a IV. Não existe tipo V."
+   "A": "**II** é a superficial: só a face externa da cortical, por falta de cobertura. Os furos da placa já atravessam o córtex inteiro.",
+   "C": "**IV** exige instabilidade mecânica, antes ou depois do desbridamento; o enunciado nega justamente isso.",
+   "D": "**V** não existe nos tipos anatômicos, que vão de I a IV; o que vem depois do número é a letra do hospedeiro."
   },
-  "conceito": "A classificação de **Cierny-Mader** é usada para a **osteomielite** do adulto e tem duas partes: o tipo anatômico (onde está a infecção no osso) e a classe do paciente (como está a saúde dele).\n\n**Tipos anatômicos:**\n\n**I, medular**: a infecção fica dentro do canal do osso, como em torno de uma haste intramedular infectada.\n\n**II, superficial**: a infecção atinge só a superfície externa da cortical, geralmente a partir de uma ferida que expõe o osso.\n\n**III, localizada**: a infecção atravessa **toda a espessura** da cortical numa área delimitada, mas depois de retirar o osso doente, o osso **continua estável** e aguenta carga. É o caso típico de uma infecção ao redor de uma placa e seus parafusos.\n\n**IV, difusa**: a infecção toma o osso de forma extensa, em volta toda, e a limpeza cirúrgica deixa o osso **instável**, exigindo reconstrução.\n\n**Classe do paciente:**\n**A**: paciente saudável.\n**B**: paciente comprometido, por doenças sistêmicas (como diabetes), por problemas locais (como pele ruim ou má circulação na perna) ou pelos dois.\n**C**: paciente em que o tratamento seria pior que a própria doença.\n\nA combinação (por exemplo, IIIB) orienta o quão agressivo será o tratamento. Não existe tipo V.",
-  "correta": "Tipo III. A infecção atravessa a cortical numa área localizada, mas o osso continua estável depois da limpeza.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 810 e 811",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0014": {
@@ -474,17 +478,19 @@
   "conferido": false
  },
  "conceitos-basicos-0035": {
+  "conceito": "Número puro de epidemiologia: quanto da osteomielite piogênica acontece na coluna. A resposta vem do capítulo de coluna do Campbell, porque o capítulo pediátrico fala de outro recorte.\n\n**O dado do adulto** (Campbell's Operative Orthopaedics, 15ª ed., cap. 49, p. 1945). A osteomielite vertebral e a discite piogênicas somam **3% a 5% de todas as osteomielites piogênicas**. A distribuição é bimodal, com um pico pequeno na infância e outro maior a partir dos **50 anos**; a incidência subiu de 2,5 para 6,5 por 100.000, com mais homens. A coluna **lombar** responde por metade dos casos, a torácica por 30% e a cervical por 15%; em 20% há mais de um nível. Cerca de um quarto tem déficit neurológico, e a mortalidade em 1 ano chega a 15% a 20%.\n\n**O cuidado com a criança.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 990), dá **1% a 2%** para a osteomielite vertebral infantil e 2% na lista de localizações. Como nenhuma alternativa traz esse número e a questão fala de osteomielites piogênicas em geral, vale a cifra do Campbell.\n\nOs números da coluna estão na seção \"A coluna: da discite infantil à espondilodiscite do adulto\" do resumo.",
+  "correta": "**A) 3 a 5%.** É a fração das osteomielites piogênicas que acomete as vértebras, segundo o Campbell.",
   "incorretas": {
-   "B": "8 a 10% superestima a frequência da osteomielite vertebral.",
-   "C": "15 a 18% está bem acima do que é relatado.",
-   "D": "20 a 22% faria a coluna quase tão frequente quanto os ossos longos, o que não corresponde à realidade."
+   "B": "**8 a 10%** fica perto do que a pelve ou o calcâneo representam na criança, não a coluna.",
+   "C": "**15 a 18%** se aproxima da fatia que a coluna cervical tem dentro das próprias infecções vertebrais, não do total de osteomielites.",
+   "D": "**20 a 22%** é a ordem de grandeza da tíbia na osteomielite infantil (22%); a coluna fica muito abaixo."
   },
-  "conceito": "A **osteomielite** é a infecção do osso. Quando ela é causada por bactérias que formam pus (piogênicas), pode atingir vários ossos, e a maioria dos casos envolve os ossos longos dos membros. A infecção das **vértebras** responde por uma parte pequena do total, cerca de **3 a 5%** das osteomielites piogênicas.\n\nApesar de ser pouco frequente no conjunto, a osteomielite vertebral é a forma mais comum de osteomielite que chega pelo sangue no adulto. E o grande problema dela é o **atraso no diagnóstico**. A dor nas costas é arrastada e confundida com dor mecânica comum, a febre aparece só em parte dos pacientes, e o tempo entre o início dos sintomas e o diagnóstico costuma ser de semanas a meses.\n\nAlguns pontos ajudam a reconhecê-la. O germe mais comum é o *Staphylococcus aureus*. Os grupos de risco são pessoas com diabetes, idosos, usuários de drogas injetáveis, pacientes em hemodiálise e quem teve infecção no sangue ou endocardite recente. Os exames de inflamação no sangue (VHS e PCR) costumam estar elevados. A **ressonância** é o melhor exame de imagem, e as hemoculturas podem identificar o germe; se forem negativas, faz-se biópsia guiada.\n\nUma característica útil: a infecção bacteriana comum destrói o **disco** entre as vértebras logo cedo (por isso se chama espondilodiscite), diferente da tuberculose, que tende a poupar o disco por mais tempo.",
-  "correta": "3 a 5%. A infecção das vértebras é uma parcela pequena do total de osteomielites piogênicas, embora seja a forma hematogênica mais comum no adulto.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 42"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infecções e tumores da coluna), p. 1945",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 990",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0036": {
@@ -522,14 +528,19 @@
   "conferido": false
  },
  "conceitos-basicos-0039": {
+  "conceito": "Por que a bactéria escolhe a metáfise? A banca quer a parte celular da explicação: falta, ali, quem faça a fagocitose.\n\n**A anatomia vascular.** As arteríolas terminais da artéria nutrícia chegam junto à fise, fazem uma alça fechada e desembocam em sinusoides venosos mais largos. TRUETA mostrou que isso gera **fluxo lento e turbulento**, onde a bactéria de uma bacteremia transitória (otite, faringite, escovação dentária) se deposita (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 963). Há ainda **falhas no endotélio** desses vasos em crescimento, que deixam o germe sair para o espaço extravascular.\n\n**A defesa local.** No modelo de MORRISSY, coelhos com lesão fisária e bacteremia, as bactérias se instalaram na **esponjosa primária**, uma região **relativamente acelular**, e a **falta de atividade fagocitária** ali permitiria a proliferação (p. 964). As células fagocíticas do osso são os macrófagos e monócitos, que no foco já instalado fagocitam e liberam prostaglandinas e citocinas. A metáfise é, portanto, um local de sangue lento e pouca vigilância fagocitária.\n\nA fisiopatologia está na seção \"Vias de entrada, idade dos vasos e a artrite séptica vizinha\" do resumo.",
+  "correta": "**B) macrófagos.** A esponjosa primária é pobre em atividade fagocitária, e os fagócitos do osso são os macrófagos.",
   "incorretas": {
-   "A": "Os linfócitos não são a primeira linha de defesa contra bactérias que se depositam no osso.",
-   "C": "Os osteoblastos formam osso e não têm papel de defesa contra a infecção.",
-   "D": "Os osteoclastos reabsorvem osso e participam da destruição na infecção, mas não da defesa."
+   "A": "**Linfócitos** fazem a resposta imune específica; a explicação do livro é a falta de fagocitose, não de imunidade adaptativa.",
+   "C": "**Osteoblastos** formam osso. O S. aureus chega até a sobreviver dentro deles, o que mostra que não são células de defesa.",
+   "D": "**Osteoclastos** reabsorvem osso e participam da destruição estimulada pelas prostaglandinas no foco, não do controle da bactéria."
   },
-  "conceito": "Na criança, a **osteomielite hematogênica aguda** (infecção do osso que chega pelo sangue) começa quase sempre na **metáfise**, a parte larga do osso perto da placa de crescimento. Dois fatores explicam essa preferência.\n\n**O fluxo de sangue é lento.** As artérias da metáfise sobem até perto da placa de crescimento, fazem uma curva fechada, como um grampo de cabelo, e desembocam em vasos largos (sinusoides). Ao passar de um vaso fino para um largo, o sangue desacelera e fica turbulento. É o lugar ideal para uma bactéria que está circulando no sangue se depositar.\n\n**Há poucas células de defesa.** Nesses sinusoides da metáfise, existem poucos **macrófagos**, as células que \"engolem\" e destroem micro-organismos. Sem eles, as bactérias que se depositam não são eliminadas e conseguem se multiplicar.\n\nFluxo lento e poucas células de defesa formam a combinação ideal para a infecção. Pequenos traumas locais, com hematoma, e bacteremias passageiras (bactérias no sangue, por exemplo depois de uma infecção de pele ou garganta) completam o cenário.\n\nSe a infecção avança, forma-se pus sob pressão, que rompe a cortical e descola o periósteo. O osso que perde o sangue morre e vira um **sequestro**, e o periósteo descolado forma osso novo por fora, o **invólucro**.",
-  "correta": "Macrófagos. Os sinusoides da metáfise têm poucas dessas células de defesa, e as bactérias depositadas pelo fluxo lento não são eliminadas.",
-  "geradoEm": "2026-10-03",
+  "alerta": "O Tachdjian descreve a esponjosa primária como relativamente acelular e com falta de atividade fagocitária, mas não usa a palavra macrófago para essa escassez; é um apoio indireto, e o gabarito oficial foi preservado.",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 963 e 964",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0040": {
@@ -592,15 +603,19 @@
   "conferido": false
  },
  "conceitos-basicos-0045": {
+  "conceito": "O polimetilmetacrilato endurece por uma reação **exotérmica**. Qualquer antibiótico misturado ao pó passa por esse calor, e só os que sobrevivem a ele continuam ativos quando o cimento vira pérola ou espaçador.\n\n**O que o Campbell exige** (Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 797). O PMMA com antibióticos **termoestáveis**, como **tobramicina, vancomicina e gentamicina**, é o padrão-ouro desde os anos 1970; o livro diz textualmente que a termoestabilidade é exigida. A concentração fica alta num raio de **2 a 3 cm** em torno de cada pérola, e o cimento deve sair em até **4 semanas**.\n\n**Como funciona a eluição** (cap. 23, p. 814). A concentração local fica muito acima da CIM com nível sérico baixo, levada pelo **hematoma**; por isso exige fechamento primário e dispensa drenos de sucção, que diluem. Aminoglicosídeos são os mais usados; a vancomicina elui menos. O nível bactericida dura **2 a 4 semanas**; depois, o cimento vira corpo estranho para bactérias formadoras de glicocálice. Os autores somam 2 a 4 g de vancomicina, com ou sem 1,2 g de tobramicina, a cada pacote de 40 g.\n\nO antibiótico local está na seção \"Espaço morto, antibiótico local e a infecção com implante\" do resumo.",
+  "correta": "**C) termoestável.** O antibiótico precisa resistir ao calor da polimerização do cimento; tobramicina, gentamicina e vancomicina cumprem esse requisito.",
   "incorretas": {
-   "A": "Um antibiótico termolábil seria destruído pelo calor da polimerização.",
-   "B": "Um antibiótico lipossolúvel ficaria preso no cimento e não seria liberado para os tecidos.",
-   "D": "A hidrossolubilidade também é um requisito real, porque permite a liberação do antibiótico. Foi considerada incorreta apenas por seguir o gabarito oficial."
+   "A": "**Termolábil** seria inativado pela cura exotérmica antes de sair do cimento.",
+   "B": "**Lipossolúvel** não é o critério que o livro cita; a liberação depende do hematoma aquoso ao redor da pérola.",
+   "D": "**Hidrossolúvel** ajuda a eluição, mas não é a exigência que o Campbell destaca para o PMMA: sem resistência ao calor, o antibiótico nem chega a ser liberado ativo."
   },
-  "conceito": "No tratamento de infecções ósseas, especialmente depois de uma osteossíntese, um recurso é misturar **antibiótico ao cimento ósseo** (polimetilmetacrilato, o mesmo usado para fixar próteses). O cimento funciona como um reservatório que vai liberando o antibiótico no local, em concentrações muito maiores do que as alcançadas pelo antibiótico na veia.\n\nPara isso funcionar, o antibiótico precisa ter algumas características:\n\n**Ser termoestável.** Quando o cimento endurece (polimeriza), a reação libera calor e a temperatura passa de 80 graus. Um antibiótico que se destrói com o calor (termolábil) seria inativado. Essa é a resposta do gabarito.\n\n**Ser hidrossolúvel.** Para sair do cimento e chegar aos tecidos (eluir), o antibiótico precisa se dissolver no líquido do corpo. Um antibiótico que só se dissolve em gordura ficaria preso no cimento.\n\n**Estar em pó.** Antibiótico líquido enfraquece o cimento.\n\nTer espectro adequado contra os germes prováveis e baixo risco de alergia.\n\nOs mais usados na prática são a **vancomicina**, a **gentamicina** e a **tobramicina**, muitas vezes combinados. O cimento com antibiótico pode ser usado como espaçador numa prótese infectada, como pérolas num colar dentro do osso ou na técnica de **Masquelet**, em que o cimento ocupa uma falha óssea e induz uma membrana que depois recebe enxerto.\n\nA hidrossolubilidade também é um requisito real, e por isso a questão tem um aviso.",
-  "correta": "Termoestável. A polimerização do cimento libera muito calor, e o antibiótico precisa resistir a ele sem perder a ação.",
-  "alerta": "A hidrossolubilidade, alternativa D, também é requisito do antibiótico misturado ao cimento, é justamente ela que permite a eluição da droga para o tecido ao redor. Um antibiótico lipossolúvel ficaria preso no polímero e não seria liberado. As duas alternativas, portanto, descrevem exigências reais; o gabarito escolheu apenas uma delas. Se você marcou D, o erro não foi seu.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22 (Princípios gerais da infecção), p. 797",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 814",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0046": {
@@ -699,14 +714,18 @@
   "conferido": false
  },
  "conceitos-basicos-0054": {
+  "conceito": "A coluna recebe sangue por dois caminhos possíveis para a bactéria: as artérias segmentares e o plexo venoso. A questão quer saber qual deles leva a maioria das infecções.\n\n**A regra** (Campbell's Operative Orthopaedics, 15ª ed., cap. 49, p. 1938 e 1945). A disseminação é **hematogênica, mais comumente arterial que venosa**. A via venosa existe e tem nome: o **plexo de BATSON**, sem válvulas, que traz germes dos sistemas geniturinário e gastrointestinal. Mas é a minoria.\n\n**Por que a artéria vence.** As arteríolas terminais da **placa terminal** do corpo vertebral formam uma região vascular, de alto volume e fluxo lento, a mesma lógica da metáfise da criança. A bactéria pousa ali e depois avança para o disco, o espaço epidural ou os tecidos paravertebrais; o **ligamento longitudinal anterior** funciona como conduto, sobretudo na tuberculose.\n\n**O foco de origem** ajuda a lembrar: S. aureus da pele e de cateteres; Pseudomonas no usuário de drogas; enterococos e estreptococos a partir da **endocardite**. Todas essas portas jogam bactérias no sangue arterial.\n\nA via vertebral está na seção \"A coluna: da discite infantil à espondilodiscite do adulto\" do resumo.",
+  "correta": "**A) hematogênica arterial.** É a via mais comum da infecção vertebral, que começa nas arteríolas terminais da placa terminal.",
   "incorretas": {
-   "B": "A via venosa, pelo plexo de Batson, explica alguns casos, mas hoje é considerada secundária.",
-   "C": "A disseminação por contiguidade a partir de órgãos abdominais é rara.",
-   "D": "A infecção após procedimentos na coluna é uma causa reconhecida, mas responde por uma minoria dos casos."
+   "B": "**Hematogênica venosa** é o plexo de BATSON, a partir dos tratos geniturinário e gastrointestinal; existe, mas é menos comum que a arterial.",
+   "C": "**Contiguidade de órgãos abdominais** é mecanismo exógeno e eventual, não a via principal.",
+   "D": "**Procedimentos percutâneos** inoculam diretamente, mas são causa minoritária diante da semeadura pelo sangue."
   },
-  "conceito": "A infecção das vértebras (osteomielite vertebral, ou espondilodiscite) chega à coluna na maioria das vezes **pelo sangue arterial**, a partir de uma infecção em outro lugar do corpo: urinária, de pele, endocardite, cateteres ou uso de drogas injetáveis.\n\nO caminho é este: as **artérias segmentares** irrigam a parte da frente do corpo vertebral, perto da placa terminal (a superfície que encosta no disco). Ali, a rede de vasos é terminal e o fluxo é lento, o lugar ideal para uma bactéria que está circulando no sangue se instalar. A partir dali, a infecção atinge o **disco**, que no adulto não tem vasos e não consegue se defender, e passa para a vértebra vizinha. Por isso a infecção típica pega duas vértebras e o disco entre elas.\n\nOutras vias existem, mas são menos frequentes:\n\nO **plexo venoso de Batson**, uma rede de veias sem válvulas ao redor da coluna, ligada às veias da pelve. Já se pensou que fosse a via principal, especialmente para infecções urinárias, mas hoje é considerada secundária.\n\nA **inoculação direta**, depois de cirurgias, punções ou infiltrações na coluna. É uma causa reconhecida, mas minoritária.\n\nA **contiguidade**, a partir de uma infecção vizinha, como um abscesso abdominal. É rara.\n\nNa criança, o disco ainda tem vasos, e a infecção pode começar diretamente nele (discite).",
-  "correta": "Hematogênica arterial. As bactérias chegam pelas artérias segmentares e se instalam perto da placa terminal, onde o fluxo é lento.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infecções e tumores da coluna), p. 1938 e 1945",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0055": {
@@ -809,26 +828,38 @@
   }
  },
  "conceitos-basicos-0058": {
+  "conceito": "A infecção que aparece logo depois de uma osteossíntese é feita por germes agressivos, que chegam no ato cirúrgico ou pela ferida e produzem sinais em poucos dias. A questão pede essa dupla de agentes.\n\n**O que os livros de osteomielite sustentam.** O **S. aureus** é a causa mais comum de infecção musculoesquelética em todas as idades (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 955), e no pós-traumático **predominam os estafilococos** (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 812). O S. aureus tem antígenos que aderem ao colágeno tipo 1 e um **glicocálice** que aumenta a aderência a implantes metálicos e o protege do antibiótico (Tachdjian, p. 964). Os **bacilos gram-negativos** aparecem no hospedeiro comprometido, na fratura exposta grave e no adulto com semeadura hematogênica (Campbell, p. 807).\n\n**O raciocínio do gabarito.** Germes de alta virulência dão a infecção precoce: S. aureus e gram-negativos. O estafilococo **coagulase-negativo** e os estreptococos de baixa virulência são lembrados nas infecções que se manifestam mais tarde.\n\nA infecção com implante está na seção \"Espaço morto, antibiótico local e a infecção com implante\" do resumo.",
+  "correta": "**B) aureus e bacilos gram negativos.** São os germes virulentos que produzem a infecção nas primeiras semanas após a fixação.",
   "incorretas": {
-   "A": "O *S. aureus* está certo, mas os estreptococos não são os germes típicos da infecção precoce pós-osteossíntese.",
-   "C": "Os estafilococos coagulase-negativos, de baixa virulência, são típicos da infecção tardia.",
-   "D": "Os gram-negativos aparecem na infecção precoce, mas o estafilococo coagulase-negativo é típico da tardia."
+   "A": "**Aureus com Streptococcus** acerta o primeiro germe, mas o estreptococo não é o parceiro típico da infecção precoce do implante.",
+   "C": "**Coagulase-negativo com Streptococcus** junta germes de baixa virulência, mais associados à infecção que demora a se manifestar.",
+   "D": "**Coagulase-negativo com gram-negativos** troca o S. aureus, o principal agente, por um germe de evolução indolente."
   },
-  "conceito": "Quando uma osteossíntese (placa, haste, parafusos) infecciona, o **tempo** entre a cirurgia e o início da infecção ajuda a prever o germe e a escolher o tratamento. A classificação de **Willenegger e Roth** divide em:\n\n**Precoce**: até 2 semanas após a cirurgia.\n\n**Retardada**: entre 3 e 10 semanas.\n\n**Tardia**: depois de 10 semanas.\n\nNa infecção **precoce**, a contaminação acontece durante a cirurgia ou pela ferida, e os germes são **virulentos**, capazes de causar infecção rapidamente. Os mais comuns são o *Staphylococcus aureus* e os **bacilos gram-negativos** (bactérias como *Pseudomonas*, *Enterobacter* e *E. coli*, frequentes em fraturas expostas e em ambiente hospitalar).\n\nNas infecções **tardias**, predominam germes de **baixa virulência**, que demoram para dar sintomas, como os estafilococos coagulase-negativos (por exemplo, *Staphylococcus epidermidis*, da pele) e o *Cutibacterium acnes*.\n\nO tempo também muda o tratamento. Na infecção precoce, o **biofilme** (a camada protetora que as bactérias formam sobre o metal) ainda está imaturo. Por isso, se o implante estiver firme, pode-se fazer limpeza cirúrgica e antibiótico mantendo o implante até a fratura consolidar. Na infecção tardia, o biofilme está maduro, e geralmente é preciso retirar o implante.",
-  "correta": "Aureus e bacilos gram-negativos. Na infecção precoce, predominam germes virulentos, que contaminam durante a cirurgia ou pela ferida.",
-  "geradoEm": "2026-10-03",
+  "alerta": "Os capítulos de osteomielite do Tachdjian e do Campbell não classificam a infecção pós-osteossíntese em precoce, retardada e tardia nem atribuem à forma precoce o S. aureus com bacilos gram-negativos; o comentário usa o que os livros dizem sobre estafilococos e gram-negativos, e o gabarito oficial foi preservado.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 807 e 812",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 955 e 964",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0059": {
+  "conceito": "Certos grupos de pacientes têm um germe marcador, e a prova gosta desses pares. O usuário de drogas intravenosas é um deles.\n\n**A tabela do Campbell** (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, Tabela 23.1, p. 807) lista as bactérias comuns da osteomielite hematogênica com a situação de cada uma: **S. aureus** em 50% de todos os pacientes, **MRSA** em 25%, gram-negativos no hospedeiro comprometido e no lactente de UTI, **Pseudomonas nos usuários de drogas intravenosas**, **Salmonella na doença falciforme**, estreptococo do grupo B no lactente, **Haemophilus** de 6 meses a 4 anos e **Kingella** abaixo dos 4 anos. No capítulo de coluna (cap. 49, p. 1945), o livro repete que os usuários de drogas têm mais **P. aeruginosa** na infecção vertebral.\n\n**Onde mais a Pseudomonas aparece.** No ferimento puntiforme plantar, o prego através do tênis, ela é o patógeno mais comum de osteomielite e osteocondrite, com predileção por cartilagem (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 994).\n\nOs agentes por situação estão na seção \"Os agentes\" e na tabela de coluna do adulto do resumo.",
+  "correta": "**C) pseudomonas.** É o germe que o Campbell associa ao usuário de drogas intravenosas, na osteomielite dos ossos longos e na vertebral.",
   "incorretas": {
-   "A": "A *Salmonella* é o germe associado à anemia falciforme.",
-   "B": "O *Haemophilus influenzae* é associado a crianças não vacinadas.",
-   "D": "O *S. aureus* é o germe mais comum nas osteomielites em geral e frequente também nesse grupo, mas não é o que caracteriza o usuário de drogas injetáveis."
+   "A": "**Salmonella** é o par da doença falciforme, com lesão diafisária.",
+   "B": "**Haemophilus** é germe da criança de 6 meses a 4 anos não vacinada.",
+   "D": "**Staphylococcus** continua sendo o mais frequente na população geral; a banca pediu o agente característico do grupo, que é a Pseudomonas."
   },
-  "conceito": "Alguns germes têm associação característica com certos grupos de pacientes, e as provas gostam de cobrar essas duplas:\n\n***Salmonella***: pacientes com **anemia falciforme**.\n\n***Pseudomonas aeruginosa***: **usuários de drogas injetáveis** e feridas perfurantes do pé através do tênis (o clássico prego que atravessa a sola).\n\n***Haemophilus influenzae***: crianças não vacinadas.\n\n***Kingella kingae***: crianças pequenas, de cerca de 6 meses a 4 anos.\n\n***Pasteurella***: mordida de cão ou gato.\n\n***Eikenella***: mordida humana.\n\nNo usuário de drogas injetáveis, a *Pseudomonas* tem preferência pelo esqueleto do **tronco**: articulação esternoclavicular, sacroilíaca, sínfise púbica e coluna.\n\nMas há uma ressalva importante: mesmo nesse grupo, o *Staphylococcus aureus* continua sendo, em números absolutos, um dos germes mais frequentes. A *Pseudomonas* é o germe que **caracteriza** o usuário de drogas injetáveis, e é essa associação que a banca quer. Por isso a questão tem um aviso.",
-  "alerta": "O gabarito oficial é Pseudomonas, que é a associação característica do usuário de drogas injetáveis cobrada em prova. Muitas séries, porém, mostram o Staphylococcus aureus como germe mais frequente também nesse grupo, de modo que a alternativa D tem respaldo na literatura.",
-  "correta": "Pseudomonas, segundo o gabarito. É o germe que caracteriza a osteomielite do usuário de drogas injetáveis, com preferência pelo esqueleto do tronco.",
-  "geradoEm": "2026-10-03",
+  "alerta": "O S. aureus segue como causa mais comum de infecção óssea em quase todos os grupos; o gabarito segue a Tabela 23.1 do Campbell, que liga a Pseudomonas ao usuário de drogas intravenosas. O Tachdjian não trata desse grupo.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), Tabela 23.1, p. 807",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infecções e tumores da coluna), p. 1945",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 994",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0060": {
@@ -972,14 +1003,19 @@
   "conferido": false
  },
  "conceitos-basicos-0072": {
+  "conceito": "Na espondilodiscite do adulto, a pergunta é onde a bactéria pousa primeiro. Não é no disco: o núcleo pulposo do adulto é **avascular** e não recebe sangue para semear (Campbell's Operative Orthopaedics, 15ª ed., cap. 49, p. 1938).\n\n**A placa terminal como metáfise da coluna.** A infecção arterial **começa na placa terminal** do corpo vertebral, uma região vascular, de alto volume, com **fluxo lento nas arteríolas terminais** (p. 1945). É o mesmo princípio da metáfise do osso longo na criança. Dali ela invade o disco vizinho, que é destruído secundariamente, e pode seguir para o espaço epidural e os tecidos paravertebrais.\n\n**O contraste com a criança.** Até os 7 anos, vasos ainda cruzam a placa terminal e chegam ao disco e ao ânulo (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 990 e 991). Por isso a criança pequena pode ter discite isolada, coisa que no adulto não se explica pela anatomia.\n\n**Na imagem**, a RM do adulto mostra T1 com sinal diminuído no corpo e no disco e T2 com sinal aumentado nos dois (Campbell, p. 1941).\n\nO ponto de partida está na seção \"A coluna: da discite infantil à espondilodiscite do adulto\" do resumo.",
+  "correta": "**A) na placa terminal.** As arteríolas terminais de fluxo lento da placa terminal são o primeiro foco da espondilodiscite hematogênica do adulto.",
   "incorretas": {
-   "B": "A faceta articular pode ser infectada, mas não é o ponto de início típico da espondilodiscite hematogênica.",
-   "C": "A infecção começa no corpo vertebral, mas o ponto preciso é a região logo abaixo da placa terminal.",
-   "D": "O disco do adulto não tem vasos e é atingido depois, por contiguidade."
+   "B": "**Faceta articular** pode ser atingida, mas não tem a circulação terminal que retém a bactéria; não é o início.",
+   "C": "**Corpo vertebral** é vago: a infecção nasce numa parte precisa dele, a placa terminal, e não no centro do corpo.",
+   "D": "**Disco intervertebral** é avascular no adulto e só se infecta por contiguidade; o disco como início é raciocínio da criança pequena."
   },
-  "conceito": "A **espondilodiscite piogênica** é a infecção bacteriana que atinge as vértebras e o disco entre elas. No adulto, ela costuma chegar pelo sangue (via hematogênica), e o ponto onde começa tem uma explicação anatômica.\n\nO disco intervertebral do adulto **não tem vasos**. Por isso, a bactéria que circula no sangue não tem como chegar diretamente a ele. As artérias que irrigam a vértebra terminam em pequenas arteríolas na região da **placa terminal**, a camada de osso logo abaixo da superfície que encosta no disco. Ali o fluxo é lento, e é ali que a bactéria se deposita e a infecção começa.\n\nA partir desse ponto, a infecção avança: invade o **disco** por contiguidade e chega à placa terminal da **vértebra vizinha**. Por isso, a imagem típica mostra duas placas terminais destruídas com o disco no meio.\n\nNa criança, o disco ainda tem vasos, e a infecção pode começar nele (discite).\n\nUm contraste útil é a **tuberculose** da coluna: nela, o disco costuma ser poupado no início, e a infecção se espalha por baixo do ligamento que corre na frente das vértebras, atingindo várias vértebras.",
-  "correta": "Na placa terminal. É onde terminam as arteríolas e o fluxo é lento, e a bactéria se instala antes de invadir o disco.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infecções e tumores da coluna), p. 1938, 1941 e 1945",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 990 e 991",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0073": {
@@ -1020,17 +1056,19 @@
   "conferido": false
  },
  "conceitos-basicos-0076": {
+  "conceito": "O sequestro é osso morto. Para entender por que ele se forma, siga o pus.\n\n**O caminho da infecção** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 970, Fig. 23.21). Na criança, a cortical metafisária é fina e o **periósteo é frouxamente aderido**. Sem tratamento, a infecção irrompe no espaço subperiosteal e **descola o periósteo** ao redor da diáfise. Com a medular comprimida pelo abscesso e a face externa sem periósteo, a cortical perde as duas fontes de sangue e **necrosa**: é o sequestro. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 806 e 807), descreve o mesmo ciclo: a pressão intramedular sobe, a cortical fica isquêmica e o pus sai pelos canais de VOLKMANN para formar o abscesso subperiosteal.\n\n**O que vem depois.** O sequestro e o tecido de granulação abrigam bactérias porque nem anticorpos nem antibióticos penetram. O periósteo descolado, ainda vivo, forma osso novo ao redor: o **invólucro**, que leva 2 a 8 meses e pode gerar fístulas. Por isso a cirurgia da tíbia descola o periósteo o mínimo possível.\n\nO sequestro está na seção \"A crônica na criança: sequestro, invólucro e JONES\" do resumo.",
+  "correta": "**B) elevação periosteal e necrose óssea.** O pus descola o periósteo, a cortical perde a irrigação e necrosa, formando o sequestro.",
   "incorretas": {
-   "A": "O acometimento da epífise e a infecção da articulação podem acontecer, mas não explicam a formação do sequestro.",
-   "C": "A neoformação óssea forma o invólucro, e a fístula é o caminho de drenagem. São consequências, não a causa do sequestro.",
-   "D": "As células inflamatórias e a imunidade do paciente influenciam a evolução, mas o sequestro resulta da perda de sangue pelo descolamento do periósteo."
+   "A": "**Acometimento epifisário e pioartrite** é o que acontece quando a infecção cruza a fise ou vaza da metáfise intra-articular; não produz o sequestro diafisário.",
+   "C": "**Neoformação óssea e fístula** são as respostas ao sequestro: o invólucro e o trajeto de drenagem vêm depois, não antes.",
+   "D": "**Células inflamatórias e imunodeficiência** modulam a gravidade, mas o sequestro nasce da isquemia mecânica da cortical."
   },
-  "conceito": "Na **osteomielite**, o **sequestro** é um pedaço de osso morto que fica solto dentro da área infectada. Ele se forma por um processo primeiro mecânico, depois biológico:\n\nO **pus** se acumula sob pressão dentro do canal do osso e dos pequenos canais da cortical.\n\nA pressão empurra o pus através da cortical, e ele se acumula por fora, **descolando o periósteo** (a membrana que reveste o osso).\n\nO terço de fora da cortical recebe sangue justamente do periósteo. Com o periósteo descolado, essa parte perde o sangue. Somando a isso a trombose dos vasos de dentro do canal, causada pela infecção, um segmento de osso fica sem sangue de nenhum lado e **morre** (necrose). Esse osso morto é o sequestro.\n\nOutros elementos completam o quadro da osteomielite crônica. O periósteo descolado continua vivo e forma osso novo ao redor do sequestro: é o **invólucro**. Esse invólucro tem orifícios por onde o pus escapa, as **cloacas**. E o caminho do pus até a pele forma uma **fístula**.\n\nA consequência prática é que o sequestro, por não ter sangue, não recebe o antibiótico. O tratamento exige retirá-lo cirurgicamente (**sequestrectomia**), de preferência quando o invólucro já é forte o bastante para dar estabilidade ao osso.",
-  "correta": "Elevação periosteal e necrose óssea. O pus descola o periósteo, o osso perde o sangue e morre, formando o sequestro.",
   "referencias": [
-   "Lovell and Winter's Pediatric Orthopaedics, 7ª edição (Weinstein, Flynn), Cap. 12"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 970 e 973",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 806 e 807",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0077": {
@@ -1048,17 +1086,19 @@
   "conferido": false
  },
  "conceitos-basicos-0078": {
+  "conceito": "A RM lê água. O corpo vertebral infectado fica cheio de edema e exsudato inflamatório no lugar da medula gordurosa, e cada sequência mostra isso de um jeito.\n\n**T1** é a sequência da gordura: a medula normal do adulto é clara. Quando o edema a substitui, o corpo **escurece** (hipossinal). **T2** realça líquido: o mesmo edema fica **claro** (hipersinal). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 49, p. 1941), descreve na coluna do adulto o **T1 com sinal diminuído** no corpo vertebral e no disco, sem distinguir a margem entre eles, e o **T2 com sinal aumentado** no disco e muito aumentado no corpo.\n\n**O mesmo padrão nos ossos longos.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 952), dá o hipossinal medular em T1 com hipersinal em STIR e T2; o gadolínio forma realce em anel no abscesso. A RM tem sensibilidade de 96% e especificidade de 93% na osteomielite vertebral da criança.\n\nA imagem está na seção \"Imagem: da radiografia à RM\" e na parte do adulto da seção \"A coluna: da discite infantil à espondilodiscite do adulto\" do resumo.",
+  "correta": "**B) hiposinal em T1 e hipersinal em T2.** O edema medular escurece o corpo vertebral em T1 e o clareia em T2.",
   "incorretas": {
-   "A": "**Hipossinal nas duas sequências sugere tecido pobre em água móvel, não o edema típico.** Esclerose óssea e fibrose podem escurecer tanto em T1 quanto em T2, por exemplo na alteração degenerativa Modic tipo III. Um foco infeccioso crônico também pode conter áreas esclerosas, mas esse par não descreve o padrão medular inflamatório ativo solicitado.",
-   "C": "**T1 alto aponta primeiro para gordura ou outros componentes que encurtam T1.** A substituição gordurosa das placas terminais, chamada Modic tipo II, é um contexto em que o corpo pode brilhar em T1. T2 baixo acrescenta a ideia de tecido mais compacto ou esclerótico; não representa a troca da gordura por edema que caracteriza a resposta inicial à infecção.",
-   "D": "**Sinal alto em T1 e T2 pode ocorrer em lesões ricas em gordura, como muitos hemangiomas vertebrais.** Esses achados precisam ser lidos com sua morfologia própria. Na osteomielite, a perda da gordura normal torna o T1 tipicamente baixo; portanto, T1 alto contraria o mecanismo central que a questão pretende avaliar, mesmo que T2 alto apareça em ambos os cenários."
+   "A": "**Hipossinal nas duas** descreve tecido pobre em água, como esclerose densa; o corpo infectado está encharcado e brilha em T2.",
+   "C": "**Hipersinal em T1 com hipossinal em T2** é o inverso do edema e lembra medula gordurosa, não infecção.",
+   "D": "**Hipersinal nas duas** acerta o T2, mas a medula infectada perde a gordura e fica escura em T1."
   },
-  "conceito": "**O que muda no osso infectado.** Na espondilodiscite hematogênica do adulto, a infecção costuma alcançar a região vascularizada junto à placa terminal vertebral e pode se estender ao disco e à vértebra vizinha. A medula óssea normal contém gordura. Quando células inflamatórias e líquido a substituem, a região perde o sinal alto habitual em T1. Em sequências sensíveis à água, como T2 e STIR, o edema tende a produzir sinal alto. Por isso, entre os pares oferecidos, hipossinal em T1 com hipersinal em T2 é o padrão clássico da fase ativa.\n\n**O padrão isolado não fecha o diagnóstico.** É preciso procurar alteração do disco, indefinição ou erosão das placas terminais, realce após contraste e extensão para partes moles ou espaço epidural. Tumor e alterações degenerativas também podem reduzir o sinal em T1. Em estudo de 41 níveis com osteomielite vertebral, 39 apresentaram hipossinal do corpo em T1, mas apenas 22 dos 39 avaliáveis mostraram hipersinal do corpo em T2. Assim, a alternativa B ensina o padrão esperado, não uma regra sem exceções; um T2 que não esteja francamente alto não exclui infecção.\n\n**Como diferenciar os outros sinais.** Esclerose e fibrose têm pouca água livre e podem ser escuras em T1 e T2. Substituição gordurosa degenerativa costuma ser clara em T1. O disco e as placas terminais ajudam mais que uma combinação de sinais do corpo vertebral tomada sozinha. Quando a suspeita clínica é significativa, hemoculturas e, conforme o caso, amostragem microbiológica orientam o tratamento; a imagem localiza e caracteriza o processo, mas não identifica automaticamente o agente.",
-  "correta": "**Hipossinal em T1 e hipersinal em T2.** O edema inflamatório substitui a gordura medular, reduzindo T1 e, tipicamente, elevando T2. É a melhor combinação entre as opções para osteomielite vertebral ativa, embora o sinal em T2 do corpo possa variar; correlação com disco, placas terminais, contraste e clínica evita tratar um padrão de prova como critério absoluto.",
   "referencias": [
-   "Dagirmanjian A et al. MR imaging of vertebral osteomyelitis revisited. AJR, 1996. https://pubmed.ncbi.nlm.nih.gov/8956593/"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infecções e tumores da coluna), p. 1941",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 952",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
   ],
-  "geradoEm": "2026-10-10",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0079": {
@@ -1316,17 +1356,20 @@
   "conferido": false
  },
  "conceitos-basicos-0115": {
+  "conceito": "Duas informações em cada alternativa: a doença de base e a região do osso. A Salmonella acerta as duas só numa combinação.\n\n**A doença de base.** O doente falciforme se infecta mais por três razões que o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 994 e 995), enumera: **asplenia funcional**, **infartos teciduais frequentes** e **opsonização deficiente** de antígenos polissacarídeos. A Salmonella entra pela parede intestinal através de microinfartos e, nessa população, **supera o S. aureus na razão de 2,2:1**. A doença falciforme é uma hemoglobinopatia, e é esse o termo que a questão usa.\n\n**A região.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, Tabela 23.1, p. 807), anota na linha da Salmonella: doença falciforme, **diafisária**. É a exceção que a prova cobra, porque a osteomielite hematogênica comum da criança começa na metáfise, nas alças arteriolares junto à fise.\n\n**Na prática**, a crise vaso-oclusiva é cerca de 50 vezes mais provável que a infecção; trata-se primeiro como crise e, sem melhora em 24 a 48 horas, aspira-se e cobre-se S. aureus e Salmonella.\n\nA falciforme está na seção \"Formas especiais: CRMO, GARRÉ, falciforme, pé e pelve\" do resumo.",
+  "correta": "**C) hemoglobinopatias, com comprometimento predominantemente diafisário.** A doença falciforme é a base, e o Campbell chama a osteomielite por Salmonella de diafisária.",
   "incorretas": {
-   "A": "No diabetes, a osteomielite costuma vir de feridas do pé, por contiguidade, com vários germes. Não é a associação da *Salmonella*.",
-   "B": "O diabetes não é a doença associada à osteomielite por *Salmonella*.",
-   "D": "A associação com hemoglobinopatias está certa, mas nelas a infecção predomina na diáfise, e não na metáfise."
+   "A": "**Diabetes com diáfise** acerta a região, mas o diabetes não é a doença que os livros ligam à Salmonella.",
+   "B": "**Diabetes com metáfise** erra a doença e a região ao mesmo tempo.",
+   "D": "**Hemoglobinopatia com metáfise** acerta a doença, mas aplica a localização da osteomielite hematogênica comum; na Salmonella do falciforme, o Campbell marca a diáfise."
   },
-  "conceito": "A bactéria ***Salmonella*** é a associação clássica de osteomielite em pacientes com **hemoglobinopatias**, especialmente a **anemia falciforme**. Três fatores explicam essa ligação:\n\nOs pacientes com anemia falciforme têm **infartos ósseos** repetidos: as hemácias deformadas entopem pequenos vasos, e áreas de osso morrem. Esse osso desvitalizado é um bom lugar para a bactéria se instalar.\n\nO baço desses pacientes deixa de funcionar ao longo da vida (asplenia funcional), e o corpo fica mais vulnerável a certas bactérias.\n\nPequenos infartos no intestino facilitam a passagem de bactérias intestinais, como a *Salmonella*, para o sangue.\n\nA localização também é diferente. A osteomielite comum, que chega pelo sangue, começa na **metáfise**. Na anemia falciforme, ela acomete preferencialmente a **diáfise** dos ossos longos, onde ocorreram os infartos, e pode atingir vários ossos ao mesmo tempo.\n\nO grande desafio é diferenciar a infecção de uma **crise de dor por infarto ósseo** (crise vaso-oclusiva), muito mais comum. Febre que persiste, dor localizada que não melhora e PCR muito alta sugerem infecção. O ultrassom pode mostrar pus embaixo do periósteo, e a punção com cultura esclarece.\n\nO *Staphylococcus aureus* também é frequente nesses pacientes, então o antibiótico inicial deve cobrir os dois.",
-  "correta": "Hemoglobinopatias, com comprometimento predominantemente diafisário. Os infartos ósseos da anemia falciforme acontecem na diáfise, onde a *Salmonella* se instala.",
+  "alerta": "A localização diafisária só aparece na Tabela 23.1 do Campbell; o Tachdjian trata da Salmonella na falciforme sem falar da região do osso.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 21"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), Tabela 23.1, p. 807",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 994 a 996",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0116": {
@@ -1711,14 +1754,18 @@
   "conferido": false
  },
  "conceitos-basicos-0146": {
-  "conceito": "### O germe indica a porta de entrada\n| Germe | Foco provável |\n|---|---|\n| **S. aureus** (o mais comum) | pele, cateter, foco a distância |\n| ==Enterococcus, Streptococcus viridans / grupo D (bovis)== | ==endocardite== |\n| Gram-negativos (E. coli, Proteus) | **trato urinário** (idosos, manipulação urológica) |\n| **Pseudomonas** | usuário de **drogas injetáveis** |\n| **Salmonella** | **anemia falciforme** |\n| Anaeróbios | foco **odontológico** ou abdominal |\n| **M. tuberculosis** | Pott (toracolombar; poupa o disco no início) |\n| **Brucella** | contato com animais, leite não pasteurizado (lombar baixa) |\n\n### Na prática\n- **Enterococo ou estreptococo** na hemocultura ou na biópsia: pedir **ecocardiograma**, preferencialmente **transesofágico**. A endocardite exige tratamento próprio, com risco de recidiva se não for tratada.\n- **S. bovis / gallolyticus:** investigar também **câncer colorretal** (colonoscopia).\n\n> **Na prova:** enterococo ou estreptococo na coluna = pensar em ==endocardite==.",
-  "correta": "**Endocardite.**",
+  "conceito": "O germe isolado na vértebra conta de onde veio a bacteremia. Enterococos e estreptococos apontam para o coração.\n\n**O dado** (Campbell's Operative Orthopaedics, 15ª ed., cap. 49, p. 1945). O S. aureus é o agente mais comum da osteomielite vertebral piogênica do adulto, e os gram-negativos são frequentes; nos usuários de drogas, predomina a **Pseudomonas**; **enterococos e estreptococos associam-se à endocardite** como foco primário. A ligação é prática: diante de uma espondilodiscite por esses germes, procura-se a valva cardíaca infectada, que mantém a bacteremia e muda o tratamento.\n\n**A via.** A semeadura é hematogênica e **mais arterial que venosa**; a endocardite lança êmbolos sépticos no sangue arterial, que chegam às arteríolas terminais da placa terminal. O plexo de BATSON, venoso, traz germes dos tratos geniturinário e gastrointestinal, e é a via menos comum.\n\n**Como guardar.** Pseudomonas, usuário de drogas; Salmonella, falciforme; enterococo e estreptococo, endocardite.\n\nA coluna do adulto está na seção \"A coluna: da discite infantil à espondilodiscite do adulto\" do resumo.",
+  "correta": "**B) à endocardite.** O Campbell associa a osteomielite vertebral por Enterococcus e Streptococcus a um foco primário endocárdico.",
   "incorretas": {
-   "A": "**Pneumonia.**\n- Pneumococo, estafilococo.",
-   "C": "**Cavidade oral.**\n- Anaeróbios; mas a associação clássica desses germes na coluna é a endocardite.",
-   "D": "**Trato urinário.**\n- Gram-negativos (E. coli)."
+   "A": "**Pneumonia** não é o foco que o livro liga a esses germes na coluna.",
+   "C": "**Cavidade oral** é porta de bacteremias transitórias, mas o Campbell associa esses dois germes na coluna à valva cardíaca.",
+   "D": "**Trato urinário** remete ao plexo venoso de BATSON e aos gram-negativos, não a enterococos e estreptococos como a questão pede."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infecções e tumores da coluna), p. 1938 e 1945",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0147": {
@@ -1795,17 +1842,20 @@
   "conferido": false
  },
  "conceitos-basicos-0152": {
+  "conceito": "O abscesso de BRODIE é a forma **localizada** da osteomielite subaguda: uma cavidade de pus ou granulação contida por uma parede de osso esclerótico, sem a disseminação da forma aguda. A questão pede idade e local típicos.\n\n**O perfil no Campbell's Operative Orthopaedics, 15ª ed.** (cap. 23, p. 809 e 810). É mais frequente nos **ossos longos do membro inferior de adultos jovens**. Antes do fechamento da fise, fica na **metáfise**; no adulto, na região **metáfiso-epifisária**. Dá dor intermitente e longa, com dor à palpação. A radiografia mostra **lesão lítica com orla de osso esclerótico**, embora o aspecto varie e a RM ajude porque o quadro se confunde com tumor. Os germes são de **baixa virulência**: S. aureus em 50%, cultura negativa em 20%. O tratamento costuma ser **biópsia aberta com curetagem**.\n\n**O olhar do Tachdjian's Pediatric Orthopaedics, 6ª ed.** (cap. 23, p. 968 a 970). Ele não dá idade nem osso para o BRODIE; trata-o como o tipo **IB de ROBERTS** (metafisário com margem esclerótica) e o tipo **A de JONES**. A figura do Campbell, aliás, mostra um BRODIE numa criança de 3 anos: acontece na infância, mas não é o mais frequente.\n\nO BRODIE está na seção \"Subaguda e abscesso de BRODIE, além da classificação\" do resumo.",
+  "correta": "**D) adultos jovens, nos ossos longos.** O Campbell descreve o abscesso de BRODIE como mais frequente nos ossos longos do membro inferior de adultos jovens.",
   "incorretas": {
-   "A": "O abscesso de Brodie não é típico das vértebras.",
-   "B": "Os ossos longos estão certos, e ele pode ocorrer em crianças, mas a faixa considerada pela banca é a do adulto jovem.",
-   "C": "A faixa etária está certa, mas o abscesso de Brodie acomete os ossos longos, e não as vértebras."
+   "A": "**Crianças, nas vértebras** junta a faixa errada com um local que, na subaguda, corresponde ao ROBERTS VI, não ao BRODIE.",
+   "B": "**Crianças, nos ossos longos** acerta o osso, e o BRODIE pode aparecer na infância, mas o Campbell põe o pico no adulto jovem.",
+   "C": "**Adultos jovens, nas vértebras** acerta a idade e erra o local: o BRODIE é dos ossos longos."
   },
-  "conceito": "O **abscesso de Brodie** é uma forma **localizada** de osteomielite subaguda, uma infecção do osso de evolução arrastada. Em vez de se espalhar, a infecção fica contida numa cavidade dentro do osso, cercada por tecido inflamatório e por um **halo de osso esclerótico** (mais denso), que o corpo forma para isolar o foco.\n\nNa radiografia, aparece como uma área escura (lítica), arredondada, bem delimitada, com contorno branco ao redor. O paciente costuma ter **dor local** que dura meses, muitas vezes pior à noite, mas **sem febre** e com exames de sangue frequentemente normais. Por isso, é facilmente confundido com tumores.\n\nA localização preferida são os **ossos longos**, especialmente a **metáfise da tíbia**, perto do joelho ou do tornozelo. Acontece da adolescência ao **adulto jovem**, mais em homens, embora também possa aparecer em crianças. A banca considera a faixa do adulto jovem.\n\nOs principais diagnósticos diferenciais são o **osteoma osteoide** (um tumor benigno pequeno, cuja dor melhora muito com anti-inflamatório), o granuloma eosinofílico e, quando a lesão fica na epífise, o condroblastoma.\n\nO tratamento costuma ser a **curetagem** da cavidade, com envio do material para cultura e patologia, seguida de antibiótico dirigido ao germe encontrado.",
-  "correta": "Adultos jovens, nos ossos longos. O abscesso de Brodie predomina na metáfise dos ossos longos, principalmente a tíbia, nessa faixa etária.",
+  "alerta": "A faixa etária e o local mais frequentes vêm só do Campbell; o Tachdjian não os informa.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 21"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 809 e 810",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 968 a 970",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0166": {
@@ -1883,17 +1933,21 @@
   "conferido": false
  },
  "conceitos-basicos-0171": {
+  "conceito": "A radiografia é cega para a osteólise inicial. Ela só mostra destruição quando já se perdeu muito mineral, e isso leva tempo; a questão cobra os dois números.\n\n**Os números** (Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 792, Fig. 22.5). A destruição óssea só fica visível **após 10 a 21 dias** de infecção e com perda de **30% a 50% da matriz óssea**. O percentual é o mesmo no Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 946), que dá um prazo um pouco mais curto, **10 a 14 dias**; o capítulo 23 do Campbell fala em 10 a 12 dias para reação periosteal ou destruição.\n\n**O que aparece antes.** A primeira manifestação radiográfica é o **edema de partes moles profundas**. Por isso a radiografia inicial serve sobretudo para **excluir** tumor e fratura, e uma radiografia normal na primeira semana não afasta infecção. Com implante, a RM sofre com o artefato do metal, e a TC é melhor para a cortical e os sequestros.\n\nA radiografia está na seção \"Imagem: da radiografia à RM\" do resumo.",
+  "correta": "**C) entre 10 e 21 dias de pós-operatório e com 30 a 50% de perda óssea.** É a regra do Campbell, cap. 22, para a radiografia mostrar destruição óssea na infecção.",
   "incorretas": {
-   "A": "A perda de 30 a 50% está certa, mas entre 2 e 7 dias é cedo demais para a osteólise aparecer.",
-   "B": "Erra os dois: é cedo demais, e a perda necessária é de 30 a 50%.",
-   "D": "O prazo está certo, mas a perda necessária para a alteração aparecer é de 30 a 50%, e não de 55 a 70%."
+   "A": "**2 a 7 dias com 30 a 50%** acerta a perda, mas nessa fase a radiografia mostra no máximo edema de partes moles.",
+   "B": "**2 a 7 dias com 55 a 70%** erra o prazo e exagera o percentual necessário.",
+   "D": "**10 a 21 dias com 55 a 70%** acerta o prazo, mas a destruição já aparece com 30% a 50% de perda."
   },
-  "conceito": "Quando uma osteossíntese infecciona, o osso ao redor da placa e dos parafusos começa a ser destruído (**osteólise**). Mas a radiografia demora para mostrar isso, e entender o porquê é importante.\n\nO osso só muda de aspecto na radiografia quando já perdeu uma parte grande do seu mineral naquele ponto, cerca de **30 a 50%**. E essa perda leva tempo para acontecer: costuma ficar visível entre **10 e 21 dias** depois do início do processo.\n\nAs consequências práticas:\n\nUma radiografia **normal nas primeiras semanas não afasta** infecção.\n\nQuando a radiografia mostra áreas escuras ao redor dos parafusos, afrouxamento do material ou reação do periósteo, o processo já está acontecendo há semanas.\n\nPor isso, o diagnóstico precoce depende de outros sinais:\n\nA **clínica**: dor que não melhora como esperado, secreção pela ferida, vermelhidão, febre.\n\nA **PCR**: depois de uma cirurgia, ela sobe e depois cai. Se não cai como esperado, ou volta a subir, é sinal de alerta.\n\nExames de imagem mais sensíveis, como a ressonância (com técnicas para reduzir a interferência do metal) e a medicina nuclear.\n\nE, principalmente, a **cultura** de tecido profundo colhido na cirurgia.",
-  "correta": "Entre 10 e 21 dias de pós-operatório e com 30 a 50% de perda óssea. A radiografia só mostra a osteólise depois de uma perda mineral considerável, o que leva algumas semanas.",
+  "alerta": "Os livros dão 10 a 21 dias e 30% a 50% como regra geral da infecção óssea, não especificamente da infecção com material de osteossíntese; o gabarito oficial foi preservado.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 28"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22 (Princípios gerais da infecção), p. 792",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 807",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 946",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0172": {
@@ -1969,14 +2023,18 @@
   "conferido": false
  },
  "conceitos-basicos-0177": {
-  "conceito": "### A grande imitadora\nA osteomielite **subaguda** imita tumor na criança:\n- Dor de semanas a meses, muitas vezes **sem febre**.\n- Leucócitos frequentemente normais.\n- Culturas negativas em boa parte dos casos.\n\n### A classificação de Roberts\nCada tipo radiográfico tem seu **sósia tumoral**:\n- **IA:** lucência metafisária em saca-bocado, lembra **granuloma eosinofílico**.\n- **IB:** lucência metafisária com halo esclerótico: o **abscesso de Brodie**.\n- **II:** lesão metafisária com **erosão cortical**, lembra osteossarcoma.\n- **III:** lesão **cortical diafisária** com reação periosteal densa, lembra **osteoma osteoide**.\n- ==IV==: lesão **diafisária** com reação periosteal **em casca de cebola**: o retrato do **sarcoma de Ewing**.\n- **V:** epifisária.\n- **VI:** vertebral.\n\n### A lição prática\nLesão agressiva em criança: infecção e tumor competem. A **biópsia** manda material ao **patologista e ao microbiologista**, nunca a um só.\n\n> **Na prova:** Roberts que imita Ewing é o ==tipo IV== (diáfise, casca de cebola).",
-  "correta": "**IV.**\n- Lesão diafisária com reação periosteal em casca de cebola, o retrato do Ewing.",
+  "conceito": "A osteomielite subaguda é a grande imitadora: dor leve por semanas, exames pouco alterados e uma radiografia que sugere tumor em metade dos casos (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 968). A classificação de ROBERTS, expansão da de GLEDHILL, organiza cada aspecto com o tumor que ele lembra.\n\n**Os seis tipos** (p. 969). **IA**, metafisário em saca-bocado: granuloma eosinofílico. **IB**, metafisário com margem esclerótica: abscesso de BRODIE. **II**, metafisário que erode a cortical: osteossarcoma. **III**, lucência localizada na cortical da diáfise com reação periosteal: osteoma osteoide. **IV**, **diafisário com reação periosteal em casca de cebola**: **sarcoma de EWING**. **V**, epifisário: condroblastoma. **VI**, corpo vertebral: granuloma eosinofílico e tuberculose.\n\n**Por que a confusão importa.** O livro alerta para a armadilha de tratar um EWING com lavagem e desbridamento; uma biópsia por trocarte de 11 G feita ao aspirar achou 1 EWING em 30 osteomielites presumidas (p. 946). Diante da casca de cebola diafisária, a biópsia com cultura e histologia é obrigatória.\n\nA classificação está na seção \"A osteomielite subaguda\" do resumo.",
+  "correta": "**D) IV.** A lesão diafisária com reação periosteal em casca de cebola imita o sarcoma de EWING.",
   "incorretas": {
-   "A": "**Abscesso de Brodie.**\n- O IB é a lucência metafisária com halo esclerótico.",
-   "B": "**Metafisária com erosão cortical.**\n- O tipo II lembra mais osteossarcoma.",
-   "C": "**Imita osteoma osteoide.**\n- O tipo III é cortical diafisário com reação periosteal densa."
+   "A": "**IB** é a lucência metafisária com halo esclerótico, o abscesso de BRODIE clássico.",
+   "B": "**II** erode a cortical metafisária e lembra o osteossarcoma.",
+   "C": "**III** é diafisário, mas cortical e localizado, e imita o osteoma osteoide; é a armadilha mais comum."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 946, 968 e 969",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0178": {
@@ -2094,14 +2152,21 @@
   "conferido": false
  },
  "conceitos-basicos-0190": {
+  "conceito": "Esta versão do par Salmonella e falciforme troca \"hemoglobinopatias\" pelo nome da doença. O raciocínio continua com dois cortes: quem adoece e onde.\n\n**Quem adoece.** No falciforme, a Salmonella não é só possível: é **mais frequente que o S. aureus, na razão de 2,2:1** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 995). A incidência anual de osteomielite é de 0,2% a 5% dos falciformes com dor ou crise. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 22, p. 797), também cita a Salmonella na osteomielite neonatal.\n\n**Onde.** A linha da Salmonella na Tabela 23.1 do Campbell (cap. 23, p. 807) diz \"doença falciforme (diafisária)\".\n\n**O diagnóstico difícil.** Infarto e infecção doem igual. Pesam a favor da infecção: febre acima de 38,2 °C, coleção subperiosteal **maior que 10 mm** ao ultrassom e, na RM com gadolínio, **realce medular irregular e geográfico** com defeito cortical; o infarto dá **realce em orla fina e linear**. A cintilografia sequencial com medula normal e osso anormal indica osteomielite. O empírico deve cobrir S. aureus e Salmonella, e a ceftriaxona é a escolha da tabela de antibióticos do Tachdjian.\n\nEsse diagnóstico diferencial está na seção \"Formas especiais: CRMO, GARRÉ, falciforme, pé e pelve\" do resumo.",
+  "correta": "**C) Doença falciforme e acomete predominantemente a região diafisária.** É o par que o Tachdjian (frequência) e o Campbell (localização) sustentam.",
   "incorretas": {
-   "A": "No diabetes, a osteomielite costuma vir de feridas do pé, e não está associada à *Salmonella*.",
-   "B": "O diabetes não é a doença associada à osteomielite por *Salmonella*.",
-   "D": "A doença falciforme está certa, mas nela a infecção predomina na diáfise, e não na metáfise."
+   "A": "**Diabetes na diáfise** põe a doença errada: os livros não ligam o diabetes à Salmonella.",
+   "B": "**Diabetes na metáfise** soma os dois erros, doença e localização.",
+   "D": "**Falciforme na metáfise** acerta o paciente e erra a região: a metáfise é o sítio da osteomielite hematogênica comum da criança."
   },
-  "conceito": "A osteomielite por ***Salmonella*** é a associação clássica dos pacientes com **doença falciforme**, uma doença genética em que as hemácias se deformam e entopem pequenos vasos. Três fatores explicam essa associação:\n\n**Infartos ósseos**: as hemácias deformadas entopem os vasos do osso, e pequenas áreas de osso morrem. O osso desvitalizado é um bom lugar para as bactérias se instalarem.\n\n**O baço deixa de funcionar** ao longo da vida desses pacientes (asplenia funcional), e o corpo fica mais vulnerável a certas bactérias.\n\n**Pequenos infartos no intestino** facilitam a passagem de bactérias intestinais, como a *Salmonella*, para o sangue.\n\nA localização também é diferente. A osteomielite comum começa na **metáfise**. Na doença falciforme, ela acomete principalmente a **diáfise**, onde ocorreram os infartos, e pode atingir vários ossos ao mesmo tempo.\n\nO desafio clínico é diferenciar a infecção de uma **crise de dor por infarto ósseo**, que é muito mais comum. Febre que persiste, dor localizada que não melhora e PCR muito alta sugerem infecção. O ultrassom pode mostrar pus sob o periósteo, e a punção com cultura confirma.\n\nO *Staphylococcus aureus* também é comum nesses pacientes, então o antibiótico inicial deve cobrir os dois germes.",
-  "correta": "Doença falciforme e acomete predominantemente a região diafisária. Os infartos ósseos da doença falciforme acontecem na diáfise, onde a *Salmonella* se instala.",
-  "geradoEm": "2026-10-03",
+  "alerta": "A palavra diafisária só está na Tabela 23.1 do Campbell; o Tachdjian dá a frequência na falciforme sem a localização.",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 994 a 996",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), Tabela 23.1, p. 807",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22 (Princípios gerais da infecção), p. 797",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0191": {
@@ -2131,25 +2196,36 @@
   "conferido": false
  },
  "conceitos-basicos-0193": {
+  "conceito": "Entre 3 e 12 anos, o primeiro lugar não tem disputa; a banca quer o vice.\n\n**Os números do Tachdjian's Pediatric Orthopaedics, 6ª ed.** (cap. 23, p. 966). Na infância, de 3 a 12 anos, o **S. aureus responde por 80% a 90%** dos casos, e o **Streptococcus pyogenes**, o estreptococo beta-hemolítico do grupo A (GABHS), **é o segundo**, com cerca de **10%** dos casos de cultura positiva. A Tabela 23.2 resume a faixa como \"S. aureus, GABHS\", com oxacilina ou cefazolina de empírico.\n\n**O comportamento do GABHS.** Pode vir depois da **varicela** e tem uma forma disseminada grave, tipo choque tóxico, com edema difuso ao longo das fáscias e sem abscesso definido; os casos com disfunção de múltiplos órgãos tiveram mediana de 8 anos (p. 956 e 957).\n\n**Os outros germes mudam de faixa.** Pneumococo, Kingella, meningococo e Haemophilus (não vacinado) são da criança de 2 meses a 3 anos; a idade média do pneumococo é de 17 meses. Pseudomonas é do prego no pé.\n\nOs agentes por idade estão na tabela da seção \"O antibiótico na OHA\" do resumo.",
+  "correta": "**A) Streptococcus pyogenes.** Depois do S. aureus, o GABHS é o segundo agente entre 3 e 12 anos, com cerca de 10% dos casos.",
   "incorretas": {
-   "B": "A *Pseudomonas* está ligada a situações especiais, como ferimento do pé através do tênis e uso de drogas injetáveis.",
-   "C": "O *Streptococcus pneumoniae* pode causar osteomielite, mas não é o segundo agente mais comum nessa idade.",
-   "D": "O *Haemophilus influenzae* era importante em crianças menores e caiu muito com a vacinação."
+   "B": "**Pseudomonas aeruginosa** é do ferimento puntiforme plantar e do usuário de drogas, não da osteomielite hematogênica do escolar.",
+   "C": "**Streptococcus pneumoniae** concentra-se entre 3 e 24 meses, com idade média de 17 meses, e responde por cerca de 4% das infecções do lactente.",
+   "D": "**Haemophilus influenzae** é germe da criança pequena não vacinada, de 6 meses a 4 anos."
   },
-  "conceito": "Na **osteomielite hematogênica aguda** da criança, o germe **mais comum** em todas as idades é o ***Staphylococcus aureus***. O que muda com a idade é o **segundo lugar**:\n\n**Recém-nascido**: estreptococo do grupo B e bactérias gram-negativas.\n\n**De 6 meses a 4 anos**: antigamente era o *Haemophilus influenzae* tipo b; com a vacinação, ele praticamente desapareceu, e hoje a *Kingella kingae* ocupa esse papel.\n\n**De 3 a 12 anos**: o ***Streptococcus pyogenes*** (estreptococo do grupo A), muitas vezes depois de catapora (varicela) ou de infecções de pele e garganta.\n\n**Adolescente com vida sexual ativa**: a *Neisseria gonorrhoeae*, mais como causa de artrite.\n\nExistem também associações especiais, ligadas a situações específicas, e não à idade:\n\n**Doença falciforme**: *Salmonella*.\n\n**Prego que atravessa o tênis** e **uso de drogas injetáveis**: *Pseudomonas aeruginosa*.\n\nSaber essas associações ajuda a escolher o antibiótico inicial, antes do resultado da cultura.",
-  "correta": "*Streptococcus pyogenes*. Nessa faixa etária, é o segundo agente mais comum, atrás do *S. aureus*, muitas vezes depois de varicela ou infecções de pele e garganta.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 956, 957 e 966, Tabela 23.2",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0194": {
+  "conceito": "A questão separa dois níveis de certeza na infecção ligada à osteossíntese: o achado que **sugere** e o que **confirma**. A lógica é que sinais clínicos e exames indiretos levantam a suspeita, e a demonstração do germe no tecido profundo fecha o diagnóstico.\n\n**O que os livros dizem sobre diagnóstico.** Para o Campbell's Operative Orthopaedics, 15ª ed. (cap. 22, p. 790), **nenhum exame isolado define a infecção**; leucograma é pouco confiável, e VHS e PCR sobem também com fratura. Na osteomielite crônica do adulto (cap. 23, p. 810 a 812), o **exame de escolha é a biópsia óssea** para histologia e microbiologia, manda-se **osso e partes moles** para cultura, e nenhuma imagem confirma ou exclui. A fístula, quando presente, se estuda com fistulografia e pode ser cultivada (técnica de MOUSA no Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 972).\n\n**Aplicando.** A drenagem de secreção pela ferida é um sinal de alerta inespecífico: pode ser seroma, hematoma ou infecção. O isolamento do germe em amostra de **tecido profundo**, colhida na cirurgia, é a prova.\n\nA infecção com implante está na seção \"Espaço morto, antibiótico local e a infecção com implante\" do resumo.",
+  "correta": "**D) drenagem de secreção; isolamento histopatológico de bactéria em amostra de tecido profundo.** A drenagem só sugere; o germe no tecido profundo confirma.",
   "incorretas": {
-   "A": "A deiscência que se comunica com o implante é confirmatória, e a osteólise na radiografia é apenas sugestiva. A ordem está invertida.",
-   "B": "Também inverte: a fístula comunicando com o implante confirma, e os marcadores inflamatórios só sugerem.",
-   "C": "A secreção purulenta já é um critério confirmatório, e não sugestivo."
+   "A": "**Deiscência em contato com o implante seguida de osteólise** põe como confirmatório um achado de imagem, e nenhuma imagem confirma infecção óssea.",
+   "B": "**Fístula com o implante seguida de marcadores inflamatórios** deixa os marcadores como prova, mas VHS e PCR sobem também com a fratura e não definem a infecção.",
+   "C": "**Secreção purulenta seguida do isolamento em tecido profundo** acerta o confirmatório, mas pus franco já é mais que suspeita na lógica do gabarito; o sugestivo é a drenagem inespecífica."
   },
-  "conceito": "Para diagnosticar a **infecção relacionada a fratura** (por exemplo, numa osteossíntese), um consenso internacional dividiu os achados em **confirmatórios** e **sugestivos**.\n\n**Critérios confirmatórios** (um só já fecha o diagnóstico):\n\n**Fístula** ou abertura da ferida que se comunica com o osso ou com o implante.\n\nSaída de **pus** pela ferida (drenagem purulenta).\n\nIdentificação do micro-organismo em **tecido profundo**, seja ao microscópio (**histopatologia**), seja em duas ou mais culturas com o mesmo germe.\n\n**Critérios sugestivos** (levantam a suspeita e pedem investigação):\n\nSinais locais: dor, vermelhidão, calor, inchaço, febre.\n\n**Drenagem** de secreção nova ou persistente, que **não seja** pus.\n\nExames de sangue de inflamação elevados.\n\nAlterações na radiografia: osteólise ao redor do implante, afrouxamento, sequestro, fratura que não consolida.\n\nDerrame articular novo.\n\nA diferença importa na prática. Um critério confirmatório autoriza tratar como infecção. Os sugestivos pedem investigação, principalmente com culturas de tecido profundo colhidas na cirurgia.",
-  "correta": "Drenagem de secreção; isolamento histopatológico de bactéria em amostra de tecido profundo. A drenagem não purulenta é sugestiva, e a bactéria no tecido profundo confirma.",
-  "geradoEm": "2026-10-03",
+  "alerta": "Os capítulos lidos não trazem o consenso de critérios sugestivos e confirmatórios da infecção relacionada à fratura; o comentário usa o que os livros dizem sobre exames e biópsia, e o gabarito oficial foi preservado. Questão sem ano no acervo.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22 (Princípios gerais da infecção), p. 790",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 810 a 812",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 972",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0195": {
@@ -2342,25 +2418,36 @@
   "conferido": false
  },
  "conceitos-basicos-0207": {
+  "conceito": "O Haemophilus influenzae tipo b tem uma janela de idade bem marcada, ligada à imunidade. O recém-nascido ainda está protegido pelos anticorpos da mãe; a criança maior já fez os próprios. Entre uma coisa e outra fica a faixa vulnerável.\n\n**O número** (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, Tabela 23.1, p. 807): Haemophilus influenzae, **6 meses a 4 anos**. A Kingella kingae, que ocupa hoje boa parte desse espaço, aparece abaixo dos 4 anos com prevalência crescente.\n\n**O que o Tachdjian's Pediatric Orthopaedics, 6ª ed., acrescenta** (cap. 23, p. 965 e 966). Na criança de 3 a 36 meses, a perda da imunidade materna e a exposição em creche abrem caminho a S. aureus, Kingella, pneumococo, estreptococos, meningococo e **Hib apenas nos não vacinados**. Por isso o empírico do não vacinado soma cefotaxima ou cefuroxima. O Haemophilus também tem mais propensão a artrite séptica do que a osteomielite (p. 975).\n\nOs agentes por idade estão na seção \"Os agentes\" do resumo.",
+  "correta": "**B) 6 meses e 4 anos.** É a faixa que o Campbell dá ao Haemophilus influenzae na osteomielite hematogênica.",
   "incorretas": {
-   "A": "Antes dos 6 meses, os anticorpos da mãe ainda protegem. Nessa fase predominam outros germes, como o estreptococo do grupo B.",
-   "C": "Depois dos 4 anos, a criança já tem imunidade própria contra o *Haemophilus*.",
-   "D": "Entre 8 e 12 anos, a imunidade própria está ainda mais estabelecida."
+   "A": "**Do nascimento a 6 meses** é o período dos anticorpos maternos; no neonato, os germes esperados são S. aureus, estreptococo do grupo B e enterobactérias.",
+   "C": "**4 a 8 anos** já passou da janela; nessa idade predomina o S. aureus, seguido do GABHS.",
+   "D": "**8 a 12 anos** é o segundo pico de osteomielite, dominado pelo S. aureus."
   },
-  "conceito": "O ***Haemophilus influenzae*** tipo b (Hib) já foi uma causa importante de osteomielite e artrite séptica em crianças, numa faixa de idade bem definida: de **6 meses a 4 anos**.\n\nA explicação está na imunidade:\n\n**Antes dos 6 meses**, o bebê ainda está protegido pelos **anticorpos da mãe**, recebidos durante a gestação.\n\n**Depois dos 4 anos**, a criança já desenvolveu sua própria imunidade contra a cápsula da bactéria.\n\nEntre essas duas fases fica uma \"janela\" de vulnerabilidade.\n\nA **vacina conjugada contra o Hib** fechou essa janela. Nos países com boa cobertura vacinal, como o Brasil, essa bactéria praticamente deixou de causar infecções ósseas e articulares.\n\nQuem ocupou esse lugar foi a ***Kingella kingae***, que acomete a mesma faixa de idade. Ela costuma causar quadros mais leves e é difícil de crescer na cultura comum; colocar o material em frasco de hemocultura e usar PCR (exame que detecta o material genético) ajuda a identificá-la.\n\nNuma criança **não vacinada**, o *Haemophilus* ainda deve ser lembrado ao escolher o antibiótico inicial.",
-  "correta": "Entre 6 meses e 4 anos. É a janela entre o fim da proteção pelos anticorpos da mãe e o desenvolvimento da imunidade própria.",
-  "geradoEm": "2026-10-03",
+  "alerta": "A faixa de 6 meses a 4 anos está na Tabela 23.1 do Campbell; o Tachdjian só diz que o Hib aparece nos não vacinados entre 2 e 36 meses.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), Tabela 23.1, p. 807",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 965, 966 e 975",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0208": {
+  "conceito": "Cada tipo anatômico de CIERNY e MADER tem um nome, e a pergunta dá o nome para cobrar o número: **localizada**.\n\n**A sequência** (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 811). I **medular**, II **superficial**, III **localizada**, IV **difusa**. A figura 23.7 desenha a progressão: o I fica no nicho endosteal, o II na face externa, o III atravessa toda a espessura de um segmento da cortical, e o IV toma a circunferência inteira, com instabilidade antes ou depois do desbridamento.\n\n**Por que o III se chama localizado.** O sequestro cortical está delimitado e pode ser **ressecado sem comprometer a estabilidade**. O osso continua de pé depois da limpeza, o que muda todo o planejamento.\n\n**O hospedeiro completa o estágio.** A normal, B comprometido por fatores locais ou sistêmicos, C quando o tratamento seria pior que a doença. Um tipo III em hospedeiro A é o estágio IIIA. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 965), lembra que a classificação, de 1984, tem aplicação limitada na criança, quase sempre hospedeiro normal com doença localizada.\n\nA tabela está na seção \"A crônica do adulto e o estadiamento de CIERNY e MADER\" do resumo.",
+  "correta": "**C) III.** A osteomielite localizada de CIERNY e MADER é o tipo III, com sequestro ressecável sem perda da estabilidade.",
   "incorretas": {
-   "A": "O tipo I é o medular, com a infecção dentro do canal.",
-   "B": "O tipo II é o superficial, limitado à superfície de fora da cortical.",
-   "D": "O tipo IV é o difuso, em que a retirada do osso doente deixa o osso instável."
+   "A": "**I** é a medular, com a infecção restrita ao canal e ao endósteo.",
+   "B": "**II** é a superficial, limitada à face externa da cortical por um defeito de cobertura.",
+   "D": "**IV** é a difusa, em que o osso fica instável antes ou depois do desbridamento."
   },
-  "conceito": "A classificação de **Cierny e Mader** é a mais usada para a **osteomielite** do adulto. Ela tem duas partes: o **tipo anatômico** (onde está a infecção no osso) e a **classe do paciente** (como está a saúde dele).\n\nOs tipos anatômicos:\n\n**Tipo I, medular**: a infecção fica dentro do canal do osso, por exemplo ao redor de uma haste intramedular infectada.\n\n**Tipo II, superficial**: a infecção atinge só a superfície de fora da cortical, geralmente a partir de uma ferida que deixou o osso exposto.\n\n**Tipo III, localizado**: a infecção atravessa **toda a espessura** da cortical numa área delimitada, formando um sequestro (pedaço de osso morto). Depois de retirar esse osso doente, o osso **continua estável** e aguenta carga.\n\n**Tipo IV, difuso**: a infecção toma o osso de forma extensa. A retirada do osso doente deixa o osso **instável**, e é preciso reconstruí-lo.\n\nA classe do paciente: **A** é o paciente saudável; **B** é o paciente com algum comprometimento, local (como má circulação ou pele ruim), sistêmico (como diabetes) ou ambos; **C** é o paciente em que o tratamento seria pior que a própria doença.\n\nA combinação das duas partes (por exemplo, IIIB) orienta o quão agressivo será o tratamento.",
-  "correta": "III. A osteomielite localizada atravessa toda a cortical numa área delimitada, mas o osso continua estável depois da limpeza.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 810 e 811, Fig. 23.7",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 965",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0209": {
@@ -2425,14 +2512,20 @@
   "conferido": false
  },
  "conceitos-basicos-0225": {
+  "conceito": "Discite isolada, sem osteomielite, num adulto: parece contradição, porque o disco do adulto não tem vasos. A questão quer saber por qual via a bactéria chegou, e a resposta segue a regra geral da coluna.\n\n**O disco do adulto.** O núcleo pulposo é vascularizado na criança e **avascular no adulto** (Campbell's Operative Orthopaedics, 15ª ed., cap. 49, p. 1938). Na criança, até os 7 anos, vasos cruzam a placa terminal e alcançam o disco e o ânulo, o que explica a discite pura da criança pequena (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 990 e 991). No adulto, o germe chega à vizinhança pelas arteríolas terminais da placa terminal, região de fluxo lento, e o disco adoece a partir dali.\n\n**A via.** O Campbell resume: disseminação hematogênica **mais comumente arterial que venosa**. O plexo venoso de BATSON, a partir dos tratos geniturinário e gastrointestinal, é a alternativa menos frequente. Trauma penetrante e procedimentos são inoculação direta, eventual.\n\nA via da coluna está na seção \"A coluna: da discite infantil à espondilodiscite do adulto\" do resumo.",
+  "correta": "**B) hematogênica arterial.** Também no adulto com discite, a bactéria chega pelo sangue arterial, que é a via mais comum da infecção da coluna.",
   "incorretas": {
-   "A": "A via linfática não é reconhecida como forma de infecção do disco.",
-   "C": "A via venosa, pelo plexo de Batson, é considerada secundária.",
-   "D": "A infecção por trauma penetrante é rara."
+   "A": "**Linfática** não figura entre as vias de entrada descritas: hematogênica, contiguidade e inoculação direta.",
+   "C": "**Hematogênica venosa** é o plexo de BATSON, reconhecido, porém menos comum que a arterial.",
+   "D": "**Trauma penetrante** é inoculação direta, possível, mas minoritária frente à semeadura sanguínea."
   },
-  "conceito": "A infecção da coluna no adulto chega, na maioria das vezes, **pelo sangue arterial**, a partir de uma infecção em outro lugar do corpo, como uma infecção urinária, de pele, uma endocardite ou um cateter.\n\nAs artérias que irrigam as vértebras terminam em pequenas arteríolas perto da **placa terminal**, a superfície do osso que encosta no disco. Ali o fluxo é lento, e é onde a bactéria se instala.\n\nNo adulto, o disco **não tem vasos**. Por isso, a infecção que chega pelo sangue costuma começar no osso, perto da placa terminal, e só depois atingir o disco, formando uma **espondilodiscite** (infecção do disco e das vértebras vizinhas).\n\nA **discite isolada** (infecção só do disco, sem osteomielite) é incomum no adulto. Quando acontece, muitas vezes é causada por procedimentos na coluna, como cirurgias de hérnia de disco, discografias e infiltrações. Mas, quando é de origem hematogênica, a via continua sendo a **arterial**.\n\nNa criança é diferente: o disco ainda tem vasos, e a infecção pode começar diretamente nele.\n\nAs outras vias são menos importantes: a via venosa, pelo plexo de Batson (uma rede de veias ao redor da coluna), é considerada secundária; a via linfática não é reconhecida; e a infecção por trauma penetrante é rara.",
-  "correta": "Hematogênica arterial. A bactéria chega pelas artérias que terminam perto da placa terminal, onde o fluxo é lento.",
-  "geradoEm": "2026-10-03",
+  "alerta": "O Campbell não traz um trecho específico sobre a discite sem osteomielite no adulto; o comentário aplica a regra geral de que a disseminação vertebral é mais arterial que venosa, e o gabarito oficial foi preservado.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infecções e tumores da coluna), p. 1938 e 1945",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 990 e 991",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0226": {
@@ -2451,14 +2544,19 @@
   "conferido": false
  },
  "conceitos-basicos-0227": {
+  "conceito": "No tipo I de CIERNY e MADER, a infecção mora **dentro do canal**: é a doença endosteal, com o nicho no endósteo (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 811). No fêmur operado com haste, é o padrão típico, porque o canal inteiro foi instrumentado. O desbridamento tem de alcançar esse lugar.\n\n**Como se limpa o canal** (p. 815). Na infecção com haste, o Campbell retira a haste, **fresa e irriga o canal**, de preferência com o fresador-irrigador-aspirador (RIA), insere uma **haste de cimento com antibiótico** e dá antibiótico intravenoso. Curada a infecção, entra a haste definitiva e, se preciso, enxerto. A fresagem raspa o endósteo doente ao longo de todo o canal, coisa que nenhuma janela localizada faria.\n\n**O que os outros tipos pedem.** O III, localizado, se trata com sequestrectomia e curetagem por janela cortical, até o **sinal da páprica** (Técnica 23.2, p. 813). O IV, difuso e instável, exige ressecção ampla com estabilização, muitas vezes fixador externo e reconstrução do defeito (MASQUELET, ILIZAROV).\n\nO desbridamento por tipo está na seção \"A crônica do adulto e o estadiamento de CIERNY e MADER\" do resumo, e a haste de cimento em \"Espaço morto, antibiótico local e a infecção com implante\".",
+  "correta": "**B) fresagem do canal medular.** No tipo I a infecção é intramedular, e a fresagem com irrigação limpa o endósteo em toda a extensão.",
   "incorretas": {
-   "A": "A sequestrectomia cortical é o tratamento do tipo III, localizado.",
-   "C": "Curetar o trajeto da fístula trata só a drenagem e não alcança o foco dentro do canal.",
-   "D": "A ressecção segmentar é o tratamento do tipo IV, difuso."
+   "A": "**Sequestrectomia cortical** trata o sequestro da cortical do tipo III, não o nicho endosteal.",
+   "C": "**Curetagem do trato fistuloso** remove só o trajeto e deixa o foco intramedular intocado.",
+   "D": "**Ressecção segmentar** é para o tipo IV, com instabilidade, e sacrificaria osso sem necessidade no tipo I."
   },
-  "conceito": "A classificação de **Cierny e Mader** não serve só para descrever a osteomielite: ela orienta **onde e como operar**.\n\nNo **tipo I, medular**, a infecção vive **dentro do canal** do osso. É o padrão típico do fêmur infectado depois de uma **haste intramedular**: as bactérias formam um biofilme sobre a haste e sobre a parede de dentro do canal.\n\nO tratamento é **retirar o implante** e **fresar o canal**, ou seja, passar brocas progressivas por dentro do osso para raspar a camada infectada da parede interna, junto com irrigação abundante. Existem recursos que ajudam, como um aparelho que fresa, irriga e aspira ao mesmo tempo (RIA), uma pequena janela no osso para drenar o canal e hastes revestidas de cimento com antibiótico, que ficam no canal liberando o remédio.\n\nOs outros tipos pedem tratamentos diferentes:\n\n**Tipo II**, superficial: limpeza da superfície de fora do osso e cobertura com partes moles.\n\n**Tipo III**, localizado: retirada do pedaço de osso morto (**sequestrectomia**).\n\n**Tipo IV**, difuso: **ressecção do segmento** de osso doente e reconstrução.\n\nApenas curetar a fístula, o trajeto que leva a secreção até a pele, não alcança o foco da infecção, que está dentro do canal.",
-  "correta": "Fresagem do canal medular. No tipo I, a infecção está dentro do canal, e a fresagem raspa a parede interna contaminada.",
-  "geradoEm": "2026-10-03",
+  "alerta": "O Campbell descreve fresagem e irrigação do canal na troca por haste de cimento com antibiótico (cap. 23, p. 815), mas não liga explicitamente o tipo I à fresagem; o gabarito oficial foi preservado.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 811, 813 e 815",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0228": {
@@ -2665,29 +2763,37 @@
   "conferido": false
  },
  "conceitos-basicos-0248": {
-  "conceito": "**O biofilme.** É uma comunidade de bactérias **aderidas a uma superfície** (um implante, um osso necrótico) e envolvidas por uma **matriz** que elas mesmas produzem. Nessa forma, as bactérias se comportam de modo muito diferente das bactérias \"livres\" (planctônicas): crescem devagar, trocam sinais entre si e ficam **protegidas** das defesas do hospedeiro e dos antibióticos.\n\n**As etapas da formação do biofilme.**\n1. **Condicionamento**: logo após a implantação, a superfície do implante é coberta por **proteínas do hospedeiro** (**fibronectina**, **fibrinogênio**, fibrina, colágeno). Essa camada serve de ponto de ancoragem.\n2. **Adesão**: as bactérias se prendem à superfície, primeiro de forma **reversível** e depois **irreversível**, por meio de adesinas que reconhecem essas proteínas.\n3. **Acúmulo e proliferação**: as bactérias se multiplicam e começam a produzir a matriz.\n4. **Maturação**: forma-se uma estrutura tridimensional, com canais de água, envolvida pela **matriz extracelular**, composta principalmente de **exopolissacarídeos** (o \"slime\" ou glicocálice), além de proteínas e DNA extracelular. A comunicação entre as bactérias (**quorum sensing**) coordena esse processo.\n5. **Dispersão**: grupos de bactérias se soltam e colonizam outras áreas, causando novas crises de infecção.\n\n**Por que o biofilme é tão difícil de tratar.**\n- A **matriz** dificulta a entrada dos antibióticos e das células de defesa.\n- As bactérias do biofilme crescem **devagar** e muitas ficam **dormentes** (células persistentes), e os antibióticos que agem em bactérias em multiplicação funcionam mal.\n- A concentração de antibiótico necessária para matar as bactérias no biofilme pode ser **centenas a milhares de vezes** maior.\n\n**As consequências para o ortopedista.**\n- As infecções **precoces** (primeiras semanas), com biofilme **imaturo**, podem ser tratadas com **desbridamento**, troca dos componentes móveis e **manutenção do implante** estável, com antibiótico.\n- As infecções **tardias**, com biofilme **maduro**, geralmente exigem a **retirada** do implante (troca em um ou dois tempos).\n- Os antibióticos com ação no biofilme (como a **rifampicina** nas infecções estafilocócicas) são associados ao tratamento.\n- Os germes mais comuns: ***Staphylococcus aureus*** e os **estafilococos coagulase-negativos** (*S. epidermidis*), grandes produtores de biofilme.",
-  "correta": "**Correta: D (matriz exopolissacarídea).** A maturação do biofilme está relacionada à deposição da **matriz extracelular**, composta principalmente de **exopolissacarídeos** (o slime ou glicocálice), produzida pelas próprias bactérias. Ela protege as bactérias dos antibióticos e das defesas do hospedeiro.",
+  "conceito": "O biofilme é a forma de vida das bactérias presas a uma superfície, como o implante ou o osso morto, envolvidas por uma matriz que elas mesmas produzem. A questão pergunta qual depósito marca o amadurecimento desse envoltório.\n\n**O que os livros chamam de glicocálice.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 964), descreve no S. aureus um **glicocálice** que aumenta a aderência a outras bactérias e a **implantes metálicos** e protege contra o antibiótico. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 814), lembra que as pérolas de PMMA esgotadas, depois de 2 a 4 semanas, viram corpo estranho colonizável por **bactérias formadoras de glicocálice**. O glicocálice bacteriano é esse envoltório de polissacarídeos secretado pela própria bactéria; quando ele engrossa e organiza a comunidade, o biofilme amadurece.\n\n**As proteínas do hospedeiro** entram antes, na fase de adesão: elas cobrem a superfície do implante e servem de ponte para a bactéria aderir, como o S. aureus faz com o colágeno tipo 1 do osso.\n\nO biofilme está na seção \"Espaço morto, antibiótico local e a infecção com implante\" do resumo.",
+  "correta": "**D) Matriz exopolissacarídea.** É o envoltório secretado pelas bactérias, o glicocálice dos livros, que define o biofilme maduro.",
   "incorretas": {
-   "A": "A **fibronectina** é uma proteína do **hospedeiro** que reveste o implante na fase de **condicionamento** e facilita a **adesão** inicial, e não a maturação.",
-   "B": "O **fibrinogênio** também participa do **condicionamento** da superfície e da **adesão** bacteriana, e não da maturação do biofilme.",
-   "C": "Os **proteoglicanos** são componentes da matriz dos tecidos do hospedeiro (como a cartilagem), e não o principal componente da matriz do biofilme."
+   "A": "**Fibronectina** é proteína do hospedeiro que reveste o implante e favorece a adesão inicial, não a maturação.",
+   "B": "**Fibrinogênio** igualmente cobre a superfície logo após a cirurgia e participa da adesão, antes de o biofilme se organizar.",
+   "C": "**Proteoglicano** é componente da matriz do tecido conjuntivo e da cartilagem, não o produto bacteriano que amadurece o biofilme."
   },
+  "alerta": "Os livros lidos descrevem o glicocálice que prende o S. aureus ao implante, mas não usam o termo matriz exopolissacarídea nem descrevem as etapas do biofilme; a equivalência entre os dois termos e o papel das proteínas do hospedeiro na adesão são interpretação do comentário. O gabarito oficial foi preservado.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
-   "Zimmerli W, Trampuz A, Ochsner PE. Prosthetic-joint infections. N Engl J Med. 2004;351(16):1645-1654."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 964",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 814",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0249": {
+  "conceito": "A osteomielite hematogênica aguda é a infecção óssea mais comum e é doença da criança. A questão quer o desenho da distribuição etária, que tem **dois picos**.\n\n**O dado** (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 806). A distribuição é **bimodal**: crianças **menores de 2 anos** e crianças **entre 8 e 12 anos**.\n\n**Por que o primeiro pico pesa.** Abaixo dos 2 anos (18 meses no Tachdjian), vasos cruzam a fise e a infecção metafisária invade a epífise e a articulação; a maioria das osteomielites com artrite séptica concomitante está nessa faixa, com o quadril à frente, e as sequelas são encurtamento e deformidade angular (Campbell, p. 807). Depois dos 2 anos, a fise vira barreira, e a cortical metafisária, mais grossa, põe a diáfise em maior risco.\n\n**O segundo pico** é o do escolar, em que o S. aureus domina com 80% a 90% dos casos e o GABHS é o segundo (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 966).\n\nA epidemiologia está na seção \"Epidemiologia, clínica e diagnóstico diferencial\" do resumo.",
+  "correta": "**C) Bimodal, abaixo de 2 anos e entre 8 e 12 anos.** São os dois picos que o Campbell dá para a osteomielite hematogênica aguda.",
   "incorretas": {
-   "A": "A distribuição não é unimodal; há dois picos.",
-   "B": "Também não é unimodal: além do pico abaixo dos 2 anos, há outro entre 8 e 12 anos.",
-   "D": "A distribuição é bimodal, mas o segundo pico fica entre 8 e 12 anos, e não entre 12 e 14."
+   "A": "**Unimodal entre 8 e 12 anos** guarda só o segundo pico e esquece o lactente.",
+   "B": "**Unimodal abaixo de 2 anos** guarda só o primeiro pico e perde o escolar.",
+   "D": "**Bimodal com 12 a 14 anos** acerta o formato, mas desloca o segundo pico para a adolescência."
   },
-  "conceito": "A **osteomielite hematogênica aguda** (infecção do osso que chega pelo sangue) na criança tem uma distribuição **bimodal**: dois picos de frequência em idades diferentes.\n\n**Primeiro pico, abaixo dos 2 anos.** Nessa fase, há vasos que atravessam a placa de crescimento e ligam a metáfise à epífise, e o sistema de defesa ainda é imaturo. É também a fase de maior risco de a infecção chegar à articulação (artrite séptica) e de danificar a placa de crescimento e a epífise.\n\n**Segundo pico, entre 8 e 12 anos.** É a época do **estirão de crescimento**: a metáfise está muito ativa e muito irrigada, e a criança se movimenta mais, com mais pequenos traumas.\n\nOutras características: é mais comum em **meninos** e acomete as metáfises dos ossos que crescem mais rápido, como o **fêmur distal** e a **tíbia proximal** (ao redor do joelho) e o úmero proximal.\n\nNo adulto, o perfil é diferente: a osteomielite hematogênica aparece mais na coluna, e as outras formas vêm de infecções vizinhas (como o pé diabético) ou de traumas e cirurgias.",
-  "correta": "Bimodal, abaixo de 2 anos e entre 8 e 12 anos. O primeiro pico se deve aos vasos que atravessam a fise e à imunidade imatura; o segundo, ao estirão de crescimento.",
-  "geradoEm": "2026-10-03",
+  "alerta": "A distribuição bimodal com essas faixas está só no Campbell (cap. 23, p. 806); o Tachdjian não a descreve. Questão sem ano no acervo.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 806 e 807",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 966",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0250": {
@@ -2702,18 +2808,20 @@
   "conferido": false
  },
  "conceitos-basicos-0251": {
-  "conceito": "**Tuberculose osteoarticular do cotovelo.** A tuberculose esquelética resulta de disseminação **hematogênica** do Mycobacterium tuberculosis a partir de um foco (geralmente pulmonar, às vezes silencioso). Acomete principalmente a coluna (mal de Pott, cerca de metade dos casos), depois quadril e joelho; o cotovelo é menos comum, mas é a articulação do membro superior mais afetada em algumas séries.\n\n**Onde começa no cotovelo.** A infecção costuma iniciar-se no **osso**, em regiões metafisárias e epifisárias bem vascularizadas e ricas em medula, e daí invadir a articulação. No cotovelo, o foco mais frequente é a **ulna proximal** (o **olécrano**), seguida pelo úmero distal (Tuli).\n\n**Apresentação.**\n- **Monoartrite insidiosa**, com dor leve e evolução de meses.\n- Sintomas constitucionais (febre baixa, sudorese noturna, perda de peso), nem sempre presentes.\n- Aumento de volume (aspecto \"fusiforme\"), **atrofia** muscular do braço e antebraço.\n- **Perda progressiva da extensão**, com o cotovelo acomodado em flexão.\n- Fístula ou abscesso frio, sobretudo posteriores, nas formas avançadas.\n\n**A tríade radiográfica de Phemister.**\n1. **Osteoporose justa-articular**.\n2. **Erosões ósseas periféricas** (marginais).\n3. **Preservação relativa do espaço articular** por longo tempo (diferente da artrite piogênica, que destrói a cartilagem rapidamente).\n\n**Diagnóstico.** Biópsia sinovial ou óssea com histologia (granuloma caseoso), cultura, PCR para micobactéria. Watts e Lifeso revisaram o diagnóstico e o tratamento.\n\n**Tratamento.** Esquema antituberculoso prolongado (rifampicina, isoniazida, pirazinamida, etambutol, por 9 a 12 meses ou mais), mobilização ativa; cirurgia (desbridamento, sinovectomia) para doença refratária ou abscessos.\n\n> Tuberculose do cotovelo: começa na ulna proximal (olécrano); tríade de Phemister na radiografia.",
-  "correta": "**D: Região proximal da ulna.** No cotovelo, a tuberculose instala-se com mais frequência na ulna proximal, especialmente no olécrano, e a partir dali invade a articulação.",
+  "conceito": "A tuberculose osteoarticular do cotovelo é pouco frequente, mas tem lugar preferido, e a resposta não segue a intuição das fraturas.\n\n**O dado** (Campbell's Operative Orthopaedics, 15ª ed., cap. 25, p. 853 e 854). O cotovelo é a articulação **mais acometida do membro superior**, mas reúne só **5%** dos pacientes com tuberculose óssea. O **segmento proximal da ulna, o olécrano**, é o local mais tipicamente afetado. A evolução é de degeneração articular progressiva com **contratura em flexão**.\n\n**Como a tuberculose se comporta no osso** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 959). Atinge epífise ou metáfise, e a **fise pouco detém a disseminação**, ao contrário da osteomielite piogênica. A lesão é cística, quase toda lítica, de margens obscuras, com **pouca reação periosteal e sem margem esclerótica**; no osso curto da mão, dá a spina ventosa. Biopsia-se o osso, não só a sinóvia; a curetagem é necessária, e o esquema dura 12 meses: quatro drogas por 2 meses e depois isoniazida e rifampicina por 10.\n\nA tuberculose está na seção \"Tuberculose e sífilis: as específicas\" do resumo.",
+  "correta": "**D) Região proximal da ulna.** O olécrano é o sítio mais típico da tuberculose óssea do cotovelo.",
   "incorretas": {
-   "A": "**O côndilo lateral do úmero** pode ser acometido, mas é menos frequente que a ulna proximal.",
-   "B": "**O côndilo medial do úmero** é sítio menos comum.",
-   "C": "**O rádio proximal** é raramente o foco inicial da tuberculose do cotovelo."
+   "A": "**Côndilo lateral do úmero** fica do lado umeral da articulação; o livro aponta o lado ulnar, o olécrano, como foco típico.",
+   "B": "**Côndilo medial do úmero** não é apontado pelo livro como sítio típico.",
+   "C": "**Rádio proximal** é uma metáfise intra-articular importante na osteomielite piogênica, mas a tuberculose do cotovelo prefere a ulna."
   },
+  "alerta": "O dado está no capítulo de tuberculose do cotovelo do Campbell (cap. 25), fora dos capítulos de osteomielite. Questão sem ano no acervo.",
   "referencias": [
-   "Tuli SM. Tuberculosis of the skeletal system: bones, joints, spine and bursal sheaths. 4th ed. New Delhi: Jaypee Brothers; 2010.",
-   "Watts HG, Lifeso RM. Tuberculosis of bones and joints. J Bone Joint Surg Am. 1996;78(2):288-298."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 25 (Tuberculose do cotovelo), p. 853 e 854",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 959",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0252": {
@@ -2812,18 +2920,20 @@
   "conferido": false
  },
  "conceitos-basicos-0259": {
-  "conceito": "**Infecção pós-osteossíntese: o tempo indica o germe.** A infecção relacionada à fixação de fraturas é classificada pelo **tempo** entre a cirurgia e o início dos sintomas (Willenegger e Roth), o que orienta tanto o germe provável quanto a conduta.\n\n| Tipo | Tempo | Germes típicos | Biofilme |\n|---|---|---|---|\n| **Precoce** | Até 2 semanas | **Staphylococcus aureus** e **bacilos gram-negativos** (germes virulentos) | Imaturo |\n| Tardia (retardada) | 3 a 10 semanas | S. aureus, coagulase-negativos | Em amadurecimento |\n| Crônica (tardia) | Mais de 10 semanas | **Coagulase-negativos**, Cutibacterium acnes (germes pouco virulentos) | Maduro |\n\n**Por que precoce é S. aureus e gram-negativos.** Infecções que surgem nas primeiras semanas resultam de contaminação no trauma (fraturas expostas) ou na cirurgia por germes **virulentos**, capazes de causar sinais inflamatórios rápidos (febre, secreção, deiscência). Em fraturas expostas, sobretudo graves, contaminadas por terra e água, os **gram-negativos** são frequentes. Germes pouco virulentos, como os **coagulase-negativos**, produzem quadros insidiosos que aparecem meses depois.\n\n**Conduta, conforme Trampuz e Zimmerli.**\n- **Precoce, implante estável, fratura não consolidada**: desbridamento cirúrgico, lavagem, troca de componentes móveis e **manutenção do implante**, com antibiótico prolongado (com rifampicina para estafilococo, que age sobre o biofilme), até a consolidação.\n- **Crônica**: biofilme maduro; geralmente remoção do implante após a consolidação ou troca da fixação, com desbridamento.\n\nO consenso internacional de infecção relacionada à fratura (FRI) define critérios confirmatórios (fístula, pus, germes em culturas profundas, histologia) e sugestivos.\n\n> Infecção precoce após osteossíntese: S. aureus e gram-negativos; tardia: coagulase-negativos.",
-  "correta": "**B: aureus e BGN.** Nas infecções precoces, os germes são virulentos e vêm da contaminação no trauma ou na cirurgia: Staphylococcus aureus e bacilos gram-negativos.",
+  "conceito": "Infecção que se manifesta logo depois da fixação significa germe agressivo. Os agentes de baixa virulência demoram a dar sinais; os virulentos, não.\n\n**Quem é virulento, pelos livros.** O S. aureus lidera as infecções musculoesqueléticas em todas as idades e tem fatores de virulência bem descritos: adesão ao colágeno tipo 1, endotoxinas que suprimem a resposta local e o **glicocálice** que o prende a implantes e o protege do antibiótico (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 955 e 964). O CA-MRSA soma os genes pvl e fnbB, ligados a doença local mais grave. Os **bacilos gram-negativos (BGN)** aparecem no hospedeiro comprometido e nas lesões graves de partes moles; GUSTILO tipo III e dano muscular grave estão entre os fatores de risco de infecção complicada e polimicrobiana (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 807 e 811).\n\n**A sigla.** BGN é bacilo gram-negativo. O coagulase-negativo, como o S. epidermidis, entra na subaguda e nas infecções indolentes (Campbell, p. 809).\n\nA infecção com implante está na seção \"Espaço morto, antibiótico local e a infecção com implante\" do resumo.",
+  "correta": "**B) aureus e BGN.** S. aureus e bacilos gram-negativos, germes virulentos, são os agentes da infecção precoce pós-osteossíntese.",
   "incorretas": {
-   "A": "**S. aureus e Streptococcus** é combinação possível, mas os estreptococos são menos frequentes que os gram-negativos nas infecções precoces pós-osteossíntese.",
-   "C": "**Coagulase-negativo e Streptococcus**: os coagulase-negativos são germes de baixa virulência, típicos das infecções tardias.",
-   "D": "**Coagulase-negativo e BGN**: os gram-negativos estão corretos, mas os coagulase-negativos são característicos das infecções tardias e crônicas."
+   "A": "**Aureus e Streptococcus sp** mantém o principal agente, mas o estreptococo não é o parceiro clássico na infecção precoce do implante.",
+   "C": "**Coagulase negativo e Streptococcus sp** reúne germes de baixa virulência, de evolução lenta.",
+   "D": "**Coagulase negativo e BGN** acerta os gram-negativos e troca o S. aureus por um germe indolente."
   },
+  "alerta": "Os capítulos de osteomielite não classificam a infecção pós-osteossíntese pelo tempo nem nomeiam os agentes da forma precoce; o comentário se apoia no que os livros dizem sobre a virulência do S. aureus e o papel dos gram-negativos, e o gabarito oficial foi preservado.",
   "referencias": [
-   "Trampuz A, Zimmerli W. Diagnosis and treatment of infections associated with fracture-fixation devices. Injury. 2006;37 Suppl 2:S59-S66.",
-   "Metsemakers WJ, Morgenstern M, McNally MA, et al. Fracture-related infection: a consensus on definition from an international expert group. Injury. 2018;49(3):505-510."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 955 e 964",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 807, 809 e 811",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0260": {
@@ -2974,15 +3084,20 @@
   "conferido": false
  },
  "conceitos-basicos-0271": {
+  "conceito": "O caso é típico: criança de 3 anos, trauma pequeno dias antes, dor na tíbia proximal, febre laboratorial e radiografia normal. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 945 e 946), lembra que mais de 1/3 das crianças relatam trauma prévio no local e que a radiografia só muda após 10 a 14 dias. A questão, do ENARE, pede a afirmação correta sobre a fisiopatologia e usa os cortes do Campbell.\n\n**Os vasos transfisários.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 807, Fig. 23.2), diz que **em menores de 2 anos** alguns vasos cruzam a fise e permitem a infecção da **epífise** e da articulação vizinha, com mais lesão fisária, encurtamento e deformidade angular. A maioria das osteomielites com artrite séptica concomitante ocorre nessa faixa, com o **quadril** como articulação mais afetada. O Tachdjian põe o limite em cerca de **18 meses**: TARO e TEOT costumam usar 18 meses; esta questão usou 2 anos.\n\n**Depois dos 2 anos**, a fise vira barreira e a cortical metafisária mais grossa expõe a diáfise. No adulto, a hematogênica de osso longo é rara, porque faltam as falhas endoteliais dos vasos metafisários em crescimento.\n\nO assunto está na seção \"Vias de entrada, idade dos vasos e a artrite séptica vizinha\" do resumo.",
+  "correta": "**C) em crianças menores de 2 anos, alguns vasos sanguíneos cruzam a fise e podem permitir a difusão da infecção para a epífise.** É a frase do Campbell sobre os vasos transfisários.",
   "incorretas": {
-   "A": "Depois do fechamento das fises, a osteomielite hematogênica fica menos comum, e não mais.",
-   "B": "A infecção envolve a metáfise, mas a evolução na criança é rápida, e não lenta.",
-   "D": "A distribuição é bimodal, mas os picos descritos são abaixo de 2 anos e entre 8 e 12 anos, e não as faixas citadas.",
-   "E": "A difusão para a articulação depende da idade, mas no bebê a articulação mais acometida é o quadril, e não o joelho."
+   "A": "**Mais comum após o fechamento das fises** inverte a epidemiologia: a osteomielite hematogênica é da criança, e no adulto é rara e fica para os corpos vertebrais do hospedeiro comprometido.",
+   "B": "**Metáfise com crescimento lento** acerta a localização, mas a forma aguda tem início súbito, com a criança chegando poucos dias após o começo dos sintomas; evolução arrastada é a subaguda.",
+   "D": "**Bimodal com menores de 4 e 10 a 12 anos** acerta o formato e erra as faixas: o Campbell dá menores de 2 anos e 8 a 12 anos.",
+   "E": "**Joelho como a mais afetada no jovem** contraria o Campbell, que aponta o quadril na faixa abaixo de 2 anos; o joelho lidera (31%) só na série geral do Tachdjian, sem recorte de idade."
   },
-  "conceito": "O caso descreve uma criança de 3 anos com dor na parte de cima da perna, calor local, dificuldade para mexer o joelho, leucócitos elevados e VHS e PCR altos alguns dias depois de um trauma, com radiografia normal. É o quadro típico de **osteomielite hematogênica aguda**. A radiografia normal é esperada: ela só mostra alterações no osso depois de 10 a 14 dias.\n\nA afirmação correta é sobre a anatomia do osso jovem. Em crianças **menores de cerca de 2 anos**, existem **vasos que atravessam a placa de crescimento** (vasos transfisários), ligando a metáfise à epífise. Por esses vasos, a infecção que começou na metáfise pode chegar à **epífise** e à articulação. Depois dessa idade, os vasos desaparecem e a placa de crescimento passa a funcionar como barreira.\n\nCorrigindo as outras afirmações:\n\nDepois que as placas de crescimento se fecham, a osteomielite hematogênica fica **menos** comum, e não mais.\n\nNa criança, ela acomete a metáfise dos ossos longos, mas a evolução é **rápida**, e não lenta.\n\nA distribuição por idade é descrita como bimodal, com picos **abaixo de 2 anos** e entre **8 e 12 anos**, e não nas faixas citadas na alternativa D.\n\nQuando a infecção passa para a articulação no bebê, a mais acometida é o **quadril**, cuja metáfise fica dentro da cápsula. As metáfises do joelho ficam fora dela.",
-  "correta": "Em crianças menores de 2 anos, alguns vasos sanguíneos cruzam a fise e podem permitir a difusão da infecção para a epífise.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23 (Osteomielite), p. 806 e 807",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 945, 946, 963, 964 e 975",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0272": {
@@ -3146,36 +3261,38 @@
   "conferido": false
  },
  "conceitos-basicos-0284": {
+  "conceito": "VHS e PCR medem inflamação por caminhos diferentes, e é essa diferença que define qual sobe antes, qual cai antes e qual percebe melhor a infecção.\n\n**A VHS** depende sobretudo do **fibrinogênio** e varia com o número, o tamanho e a forma das hemácias (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 954). Sobe **gradualmente**, tem pico em **3 a 5 dias**, pode continuar subindo com a criança melhorando e normaliza cerca de **3 semanas** após o início do tratamento (Campbell's Operative Orthopaedics, 15ª ed., cap. 22, p. 790). Também sobe com fratura e outras doenças.\n\n**A PCR** é proteína hepática estimulada pela IL-6. Sobe **1000 vezes em 6 horas**, tem pico em 36 a 50 horas, meia-vida de 24 horas e normaliza em cerca de **7 dias** com tratamento eficaz. O Tachdjian a chama de **exame mais sensível e confiável** para inflamação aguda e mudanças de gravidade.\n\n**A conclusão.** Comparada à PCR, a VHS é **menos sensível**, mais lenta para subir e mais lenta para cair. O seu maior valor é na decisão de **suspender o antibiótico**, quando o resto já normalizou.\n\nA comparação está na tabela \"VHS x PCR\" da seção \"Laboratório: hemograma, VHS, PCR e culturas\" do resumo.",
+  "correta": "**B) é menos sensível.** A PCR é o marcador mais sensível da inflamação aguda; a VHS sobe devagar e depende de fatores alheios à infecção.",
   "incorretas": {
-   "A": "**Mais específica.** O VHS é inespecífico: anemia, idade e outras doenças inflamatórias alteram o resultado. A PCR também não é específica para osteomielite, então nenhum dos dois identifica sozinho uma infecção óssea.",
-   "C": "**Não normaliza primeiro.** Com tratamento eficaz, a PCR geralmente cai e retorna ao normal antes do VHS. Um VHS ainda elevado, isoladamente, não prova falha terapêutica se o paciente está melhorando.",
-   "D": "**Não é o marcador mais precoce.** A PCR se altera rapidamente na resposta de fase aguda. O VHS pode se elevar em período semelhante, mas permanece alterado por mais tempo; esta alternativa confunde início com persistência."
+   "A": "**Mais específica** não se sustenta: a VHS muda com as hemácias e sobe com fratura e outras doenças.",
+   "C": "**Normaliza antes** é o contrário: a PCR volta ao normal em cerca de 7 dias, a VHS em cerca de 3 semanas.",
+   "D": "**Eleva antes** inverte a cinética: a PCR sobe em 6 horas, a VHS sobe gradualmente, com pico em 3 a 5 dias."
   },
-  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. B é a resposta provável registrada, mas a afirmação de que o VHS é sempre menos sensível que a PCR depende do momento da coleta, do ponto de corte e da população. A diferença mais consistente e útil entre os exames é a normalização mais rápida da PCR durante a melhora clínica.",
-  "conceito": "**Dois marcadores, relógios diferentes.** A proteína C reativa, ou PCR, é uma proteína de fase aguda produzida pelo fígado em resposta à inflamação. O VHS mede a velocidade de sedimentação das hemácias e depende, entre outros fatores, da concentração de fibrinogênio. Nenhum dos dois identifica o agente da osteomielite ou confirma sozinho a infecção óssea.\n\nNa osteomielite hematogênica aguda, ambos podem se elevar. A PCR é útil para acompanhar a resposta nas primeiras semanas porque costuma cair relativamente rápido quando antibióticos e controle do foco funcionam. O VHS persiste elevado por mais tempo e pode levar cerca de três a quatro semanas para normalizar mesmo em casos pediátricos sem complicações. A diretriz PIDS/IDSA ressalta que a PCR também tem desempenho diagnóstico variável, de modo que um resultado normal não afasta a doença se a suspeita clínica for forte.\n\n**Sensibilidade não é uma propriedade fixa do exame.** Ela muda conforme o estágio da infecção e o valor escolhido para chamar o teste de positivo. Por isso, a comparação categórica exigida pela alternativa B deve ser lida como convenção da fonte antiga da questão. Na prática, história, exame físico, hemoculturas e, quando necessário, ressonância ou amostra microbiológica definem a investigação; a tendência seriada do marcador só ganha sentido junto com a evolução clínica.",
-  "correta": "**Menos sensível é a comparação esperada pela resposta provável.** O dado mais sólido para distinguir VHS e PCR, porém, é que a PCR costuma normalizar antes. Não se deve transformar a sensibilidade relativa em regra universal.",
-  "referencias": [
-   "PIDS/IDSA Guideline on Diagnosis and Management of Acute Hematogenous Osteomyelitis in Pediatrics. https://www.idsociety.org/practice-guideline/bone-and-joint-infections---osteomyelitis/",
-   "Serum C-Reactive Protein, Erythrocyte Sedimentation Rate, and White Blood Cell Count in Acute Hematogenous Osteomyelitis of Children. https://publications.aap.org/pediatrics/article/93/1/59/59255/Serum-C-Reactive-Protein-Erythrocyte-Sedimentation"
-  ],
   "provavel": "B",
-  "geradoEm": "2026-10-04",
+  "alerta": "Questão sem gabarito oficial no acervo. A letra provável segue o Tachdjian, que chama a PCR de exame mais sensível, e a cinética dos dois marcadores no Tachdjian e no Campbell, cap. 22.",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 954",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22 (Princípios gerais da infecção), p. 790",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0285": {
+  "conceito": "A PCR não é produzida no osso infectado: é o **fígado** que a fabrica, em resposta a um mensageiro que sai do foco. A questão quer esse mensageiro.\n\n**A cadeia** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 964). No osso infectado, macrófagos e monócitos fagocitam a bactéria e liberam prostaglandinas e citocinas; a PGE chega a ficar 30 vezes maior que no osso normal. Entre as citocinas, a **interleucina-6** é o **principal estimulador hepático das proteínas de fase aguda**, inclusive a PCR.\n\n**O que a PCR faz** (p. 954). Foi nomeada pela reação com o polissacarídeo C do pneumococo; age como **opsonina** e ativa a **via clássica do complemento**. Sobe 1000 vezes em 6 horas, com pico em 36 a 50 horas e meia-vida de 24 horas, e por isso acompanha de perto a resposta ao tratamento. Uma PCR no 3º dia maior que 1,5 vez a da admissão indicou 6,5 vezes mais chance de infecção óssea e articular combinada.\n\nA PCR está na seção \"Laboratório: hemograma, VHS, PCR e culturas\" do resumo.",
+  "correta": "**A) interleucina-6.** É a citocina que mais estimula a síntese hepática da PCR, segundo o Tachdjian.",
   "incorretas": {
-   "B": "**Proteína quimiotática de monócitos.** A MCP-1, também chamada CCL2, recruta monócitos para tecidos inflamados. Quimiotaxia celular não é o sinal hepático principal pedido para induzir a PCR.",
-   "C": "**Interferon-gama.** Participa sobretudo da resposta celular e da ativação de macrófagos. Pode influenciar a inflamação, mas não é o principal indutor da síntese de PCR pelos hepatócitos nesta comparação.",
-   "D": "**Fator de necrose tumoral.** O TNF-alfa atua cedo na cascata inflamatória e pode contribuir indiretamente para a resposta sistêmica. A indução hepática direta da PCR é mais associada à IL-6."
+   "B": "**Proteína monocitária quimiotática** atrai monócitos para o foco; o livro não a aponta como estímulo da síntese hepática.",
+   "C": "**Interferon-gama** não é citado pelo livro como indutor das proteínas de fase aguda.",
+   "D": "**Fator de necrose tumoral** participa da inflamação, mas o Tachdjian atribui o estímulo principal da PCR à IL-6."
   },
-  "conceito": "**Da infecção ao exame de sangue.** Na osteomielite aguda, células imunes reconhecem o microrganismo e liberam mediadores inflamatórios. A interleucina-6 chega ao fígado e estimula hepatócitos a sintetizar proteínas de fase aguda, entre elas a proteína C reativa. Assim, a PCR elevada reflete a resposta sistêmica do hospedeiro, não a presença direta de bactérias no sangue.\n\n**Por que a IL-6 é a melhor opção.** Em experimentos com hepatócitos humanos, ela induziu a produção de RNA mensageiro e de proteína C reativa. Outros mediadores, como IL-1 e fator de necrose tumoral, podem participar da rede inflamatória e amplificar respostas, mas a IL-6 é o principal sinal entre as alternativas para a síntese hepática da PCR. Não confunda esse caminho com a quimiotaxia de monócitos ou com a ativação imune mediada por interferon-gama.\n\n**Aplicação clínica.** A PCR costuma variar mais rapidamente que o VHS quando a inflamação melhora, motivo para acompanhar sua tendência após o tratamento. Ela continua inespecífica: cirurgia recente, outros focos infecciosos e doenças inflamatórias também podem elevá-la. Uma PCR isolada não substitui avaliação clínica, cultura e busca de abscesso quando houver suspeita de controle inadequado do foco.",
-  "correta": "**Interleucina-6.** É o estímulo principal, entre os listados, para o hepatócito produzir proteína C reativa durante a resposta de fase aguda.",
-  "referencias": [
-   "Acute-phase response of human hepatocytes: regulation of acute-phase protein synthesis by interleukin-6. https://pubmed.ncbi.nlm.nih.gov/1699862/",
-   "Interleukin-6 is the major regulator of acute phase protein synthesis in adult human hepatocytes. https://www.sciencedirect.com/science/article/pii/0014579389804764"
-  ],
   "provavel": "A",
-  "geradoEm": "2026-10-04",
+  "alerta": "Questão sem gabarito oficial no acervo. A letra provável segue o Tachdjian, que nomeia a IL-6 como principal estimulador hepático da PCR; os livros não discutem o papel das outras citocinas listadas.",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 954 e 964",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0286": {
@@ -3270,16 +3387,19 @@
   "conferido": false
  },
  "conceitos-basicos-0292": {
+  "conceito": "A afirmação diz que, no neonato e na criança falciforme, a VHS não serve como indicador confiável de infecção. Os livros concordam.\n\n**A frase do Campbell's Operative Orthopaedics, 15ª ed.** (cap. 22, p. 790): a VHS **não é confiável em neonatos, em pacientes com anemia falciforme, em usuários de corticoide e quando os sintomas têm menos de 48 horas**.\n\n**O porquê, pelo Tachdjian's Pediatric Orthopaedics, 6ª ed.** (cap. 23, p. 954). A VHS mede a velocidade com que as hemácias caem no plasma; depende do fibrinogênio, mas também do **número, do tamanho e da forma das hemácias**. Na doença falciforme, as hemácias deformadas e a anemia alteram a sedimentação independentemente da infecção. No neonato, a resposta inflamatória é pobre: na forma neonatal que surge em casa, febre e irritabilidade em geral faltam, e os exames podem ser equívocos, o que leva a aspirar osso e articulação com liberalidade (p. 965).\n\n**O que usar no lugar.** A PCR, mais sensível e rápida, e principalmente a aspiração com cultura; no falciforme, a crise vaso-oclusiva é 50 vezes mais provável que infecção, e só a falta de melhora em 24 a 48 horas leva a aspirar.\n\nA VHS está na seção \"Laboratório: hemograma, VHS, PCR e culturas\" do resumo.",
+  "correta": "**A) Certo.** O Campbell lista o neonato e o falciforme entre as situações em que a VHS não é confiável.",
   "incorretas": {
-   "B": "**O VHS não funciona como teste definitivo nesses grupos.** Ele pode contribuir quando claramente elevado ou acompanhado em série, mas a negativa seria inadequada se sugerisse que um resultado normal afasta a infecção."
+   "B": "**Errado** contrariaria o Campbell, que exclui exatamente esses dois grupos do uso confiável da VHS, e o Tachdjian, que liga a VHS ao formato e ao número das hemácias."
   },
-  "conceito": "**VHS é um marcador indireto.** A velocidade de hemossedimentação depende de proteínas inflamatórias, mas também das características das hemácias. Ela sobe lentamente, pode permanecer elevada após melhora clínica e não identifica, sozinha, infecção óssea. Na suspeita de osteomielite, deve ser interpretada com exame clínico, proteína C reativa, hemoculturas e imagem quando indicada.\n\n**No neonato, o exame pode enganar.** Infecções osteoarticulares nessa idade podem ter apresentação pouco típica e resposta laboratorial variável. Um VHS normal não encerra a investigação se há pseudoparalisia, dor à mobilização, edema ou sinais sistêmicos. A proteína C reativa costuma responder mais cedo, mas também não substitui avaliação e coleta microbiológica.\n\n**A anemia falciforme acrescenta outra armadilha.** A forma anormal das hemácias altera a sedimentação; além disso, uma crise vaso-oclusiva pode causar dor óssea e modificar marcadores inflamatórios. O VHS isolado é pouco específico para separar crise de osteomielite. Entretanto, estudos mostram que ele pode subir em infecções importantes, portanto \"não confiável\" não quer dizer \"sempre inútil\". A decisão combina evolução, exame, culturas e, quando necessário, ressonância.",
-  "correta": "**Certo, como alerta contra o uso isolado.** Em neonatos e na doença falciforme, um VHS isolado não confirma nem exclui osteomielite com segurança; seus resultados precisam do contexto clínico.",
-  "referencias": [
-   "Atualização em conhecimentos ortopédicos. Ortopedia pediátrica. AAOS/SBOT. p. 393."
-  ],
   "provavel": "A",
-  "geradoEm": "2026-09-30",
+  "alerta": "Questão sem gabarito oficial no acervo. A letra provável segue a frase do Campbell, cap. 22, p. 790, sobre a VHS não confiável no neonato e no falciforme.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 22 (Princípios gerais da infecção), p. 790",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23 (Infecções do sistema musculoesquelético), p. 954, 965 e 996",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "conceitos-basicos-0293": {

@@ -169,14 +169,20 @@
   "conferido": false
  },
  "pe-tornozelo-0017": {
+  "conceito": "A pergunta junta duas informações numa só alternativa: de qual artéria vem o sangue da diáfise da tíbia íntegra e qual dos dois sistemas manda mais. Errar uma das metades derruba a resposta.\n\n**Os dois sistemas** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 63 (diáfise da tíbia), pág. PDF 3178 e 3179). A tíbia adulta tem irrigação **medular** e **periosteal**. O sistema medular é alimentado pela **artéria nutrícia principal**, ramo da **artéria tibial posterior**, que entra no osso no **terço proximal** (o forame nutrício aparece na face posterior da tíbia, logo abaixo da linha do sóleo, na prancha do Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho)). Ele responde por **91,4%** da irrigação cortical nos estudos recentes. O periósteo recebe ramos das partes moles vizinhas e oxigena apenas os **25% a 30% externos** da cortical.\n\n**O que acontece na fratura.** O trauma descola o periósteo; a cortical externa sobrevive pelo **fluxo centrífugo** que vem de dentro, do sistema medular. Se o canal é destruído, o periosteal é estimulado e o fluxo das anastomoses se inverte. É por isso que o Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso) (p. 22) pede, na via anterolateral da tíbia, o mínimo de descolamento do periósteo: depois da fratura ele vira a reserva.\n\n**Onde entra a tibial anterior.** Ela irriga o compartimento anterior e, junto com a posterior, a metáfise distal (Rockwood, cap. 64), mas não dá a nutrícia da diáfise.\n\nA irrigação da diáfise está na seção \"A tíbia, a fíbula e a irrigação da diáfise\" do resumo.",
+  "correta": "**C) posterior, com predomínio da vascularização medular.** A nutrícia é ramo da tibial posterior, entra no terço proximal e o sistema medular responde por cerca de 91% do fluxo cortical no osso íntegro.",
   "incorretas": {
-   "A": "O predomínio medular está certo, mas a artéria nutrícia vem da tibial posterior, e não da anterior.",
-   "B": "Erra os dois: a artéria nutrícia vem da tibial posterior, e no osso íntegro predomina o sistema medular.",
-   "D": "A tibial posterior está certa, mas no osso íntegro predomina o sistema medular. O periosteal assume depois da fratura."
+   "A": "**Tibial anterior com predomínio medular** acerta o sistema dominante, mas a artéria nutrícia que alimenta o canal é ramo da tibial posterior.",
+   "B": "**Tibial anterior com predomínio periosteal** erra as duas metades: a artéria e o sistema, que no osso íntegro cuida só da camada externa da cortical.",
+   "D": "**Tibial posterior com predomínio periosteal** acerta a artéria, mas inverte o peso: o periósteo responde por 25% a 30% externos da cortical e ganha importância só quando o canal é lesado."
   },
-  "conceito": "A diáfise da tíbia recebe sangue de três sistemas:\n\n**Endosteal (ou medular)**: vem da **artéria nutrícia**, um ramo da **artéria tibial posterior**. Ela entra no osso pela parte de trás e de fora, no terço de cima da tíbia, logo abaixo de uma crista chamada linha do sóleo, e desce pelo canal. Irriga os **dois terços de dentro** da cortical, num fluxo de dentro para fora. No osso **íntegro**, é o sistema **predominante**.\n\n**Periosteal**: vem dos vasos que chegam ao periósteo pelas inserções dos músculos. Irriga o **terço de fora** da cortical.\n\n**Metafisário**: irriga as pontas do osso.\n\nQuando a tíbia **fratura**, a artéria nutrícia é rompida, principalmente nas fraturas segmentares e nas do terço de baixo. Os fragmentos passam a depender do **periósteo** e dos músculos ao redor.\n\nIsso tem consequências práticas:\n\nDescolar demais o periósteo para colocar uma placa prejudica a consolidação. Por isso se preferem técnicas que preservam as partes moles, com pequenas incisões.\n\nA haste fresada lesa o sistema medular, mas ele se regenera em semanas.\n\nA face da frente e de dentro da tíbia fica logo abaixo da pele, sem músculos por cima, e seu periósteo é mais vulnerável.",
-  "correta": "Posterior, com predomínio da vascularização medular. A artéria nutrícia vem da tibial posterior, e no osso íntegro o sistema medular predomina.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 63 (diáfise da tíbia), pág. PDF 3178 e 3179",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso), p. 22",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0018": {
@@ -230,7 +236,7 @@
      "blocos": [
       "luxacao-subtalar-5fa0c87f"
      ],
-     "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+     "sha256": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e",
      "trechosSha256": "dfd794b098b6d671d07cea31590547bae424cef30f66751c3b8470a742928b99"
     }
    ],
@@ -358,17 +364,18 @@
   "conferido": false
  },
  "pe-tornozelo-0028": {
+  "conceito": "O segundo dedo do pé é o eixo de referência dos interósseos, e isso muda o desenho muscular dele em relação aos vizinhos. A questão quer saber quantos interósseos se prendem ali.\n\n**A regra do eixo** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 565). No pé, a linha de referência para abdução e adução passa pelo **2º dedo** (na mão, pelo médio). Os **interósseos dorsais**, quatro, bipeniformes e maiores, nascem dos corpos de metatarsais vizinhos e **abduzem**: afastam os dedos do eixo. Os **plantares**, três, unipeniformes, nascem da face medial do 3º, 4º e 5º metatarsais e **aduzem**: trazem os dedos III a V em direção ao eixo. O mnemônico é **PAD/DAB** (Plantares ADuzem, Dorsais ABduzem). Todos são inervados pelo **plantar lateral**.\n\n**A consequência para o 2º dedo.** Como ele é o eixo, não há para onde aduzi-lo: **nenhum plantar** se insere nele. E como pode ser afastado para os dois lados, recebe **dois dorsais**: o 1º, na face medial da falange proximal, e o 2º, na face lateral. O 3º e o 4º dorsais vão às faces laterais do 3º e do 4º dedos.\n\n**Por que isso importa na deformidade.** Os interósseos fletem a metatarsofalângica e estendem a interfalângica. Sem plantares, o 2º dedo depende de dois dorsais para esse equilíbrio, e é o dedo que mais deforma.\n\nOs interósseos estão na seção \"Os músculos intrínsecos e os compartimentos do pé\" do resumo.",
+  "correta": "**D) dois músculos interósseos dorsais e nenhum músculo interósseo plantar.** O 2º dedo é o eixo: recebe um dorsal de cada lado e nenhum plantar, porque os plantares vão do 3º ao 5º dedos.",
   "incorretas": {
-   "A": "Um dorsal e um plantar é a configuração do terceiro e do quarto dedos.",
-   "B": "Nenhum dedo do pé tem dois interósseos plantares.",
-   "C": "Inverte a situação do segundo dedo, que tem dois dorsais e nenhum plantar."
+   "A": "**Um dorsal e um plantar** é o padrão do 3º e do 4º dedos, que recebem um dorsal lateral e um plantar medial.",
+   "B": "**Dois dorsais e dois plantares** não existe em nenhum dedo; os plantares são só três, um para cada dedo do 3º ao 5º.",
+   "C": "**Nenhum dorsal e dois plantares** inverte a lógica: o eixo não pode ser aduzido, e os plantares nunca chegam ao 2º dedo."
   },
-  "conceito": "Os **músculos interósseos** ficam entre os metatarsos e movem os dedos de lado. A referência para esses movimentos no pé é o **segundo dedo**, que funciona como eixo:\n\nOs **interósseos dorsais** (quatro) **abduzem**, ou seja, afastam os dedos do eixo.\n\nOs **interósseos plantares** (três) **aduzem**, ou seja, aproximam os dedos do eixo.\n\nUm mnemônico ajuda: dorsais abduzem, plantares aduzem.\n\nComo o segundo dedo é o próprio eixo, ele pode ser \"afastado\" para os dois lados. Por isso, recebe **dois interósseos dorsais**, um de cada lado, e **nenhum interósseo plantar**. O terceiro e o quarto dedos têm um dorsal e um plantar. O quinto tem um plantar e, no lugar do dorsal, o músculo abdutor do quinto dedo.\n\nIsso tem importância clínica. Sem interósseo plantar, o segundo dedo tem uma estabilização mais frágil por baixo. Somam-se outros fatores: o segundo metatarso costuma ser o mais longo e receber mais carga, e o hálux valgo empurra o segundo dedo e lhe tira apoio. Com o tempo, a placa plantar (a estrutura fibrosa embaixo da articulação) cede, e o segundo dedo se desvia para cima e para dentro, podendo cruzar por cima do dedão.\n\nNa mão, a lógica é a mesma, mas o eixo é o **terceiro dedo**, que tem dois interósseos dorsais e nenhum palmar.",
-  "correta": "Dois músculos interósseos dorsais e nenhum interósseo plantar. Como o segundo dedo é o eixo do pé, ele tem dois dorsais e nenhum plantar.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 83"
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 565",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0029": {
@@ -614,14 +621,19 @@
   "conferido": false
  },
  "pe-tornozelo-0051": {
-  "conceito": "### Ligamento deltoide\n| Camada | Componentes | Papel |\n|---|---|---|\n| **Superficial** (cruza tornozelo e subtalar) | tibionavicular, **tibioespringue** (tibiomola), tibiocalcâneo, tibiotalar posterior superficial | resiste à **eversão** do retropé |\n| **Profunda** (só o tornozelo) | tibiotalar anterior; ==tibiotalar posterior profundo== | resiste à **translação lateral** e à **rotação externa** do tálus |\n\n- **O mais forte e espesso:** o ==tibiotalar posterior profundo==.\n\n### Por que importa nas fraturas maleolares\n- **Weber B / SER isolada** com deltoide **íntegro**: **estável**, tratamento conservador.\n- **Deltoide roto** (SER IV equivalente): **instável**, cirurgia.\n- **Avaliação:**\n  - **radiografia com estresse** em rotação externa ou **com carga**;\n  - **espaço claro medial** acima de ~4 a 5 mm, ou maior que o espaço superior, sugere lesão.\n  - Equimose e dor medial isoladas são **pouco confiáveis**.\n\n### Na fixação\n- Reduzida a fíbula, o deltoide raramente precisa de **reparo**.\n- Reparar se houver **interposição** que impede a redução ou **instabilidade** residual.\n\n> **Na prova:** componente mais forte do deltoide = ==tibiotalar posterior (profundo)==.",
-  "correta": "**Tibiotalar posterior (porção profunda).**",
+  "conceito": "O deltoide é um leque com camada superficial e camada profunda, e a pergunta é qual feixe é o mais forte de todo o complexo. Os livros contam as partes de jeitos diferentes, mas convergem na resposta.\n\n**No Netter** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 539). Quatro partes nascem do maléolo medial. Do **colículo anterior** sai o deltoide **superficial**, que resiste à eversão: o **tibiotalar anterior** (fraco, pode causar impacto), o **tibionavicular** (à tuberosidade do navicular, segura a cabeça do tálus) e o **tibiocalcâneo** (ao sustentáculo, o mais forte **da camada superficial**). Do **colículo posterior** sai o deltoide **profundo**, o **tibiotalar posterior**, quase horizontal, que resiste à rotação lateral e à migração lateral do tálus: o livro o chama de **parte mais forte do ligamento colateral medial**.\n\n**No Campbell** (Campbell's Operative Orthopaedics, 15ª ed., cap. 94 (lesões esportivas do tornozelo), p. 4135). Cinco componentes: os profundos (tibiotalar profundo anterior e posterior), intra-articulares e extrassinoviais, e os superficiais (tibionavicular, tibiocalcâneo e tibiotalar posterior superficial). O **tibiotalar profundo posterior é o mais forte de todo o complexo**, e a porção profunda é a maior restrição à translação lateral do tálus.\n\n**A armadilha.** O tibiocalcâneo é \"o mais forte\", mas só entre os superficiais. Quem lê pela metade marca ele.\n\nO deltoide está na seção \"Os ligamentos: sindesmose, laterais, deltoide e subtalar\" do resumo.",
+  "correta": "**D) tibiotalar posterior.** É o feixe profundo, do colículo posterior ao corpo do tálus, o mais forte do complexo no Netter e no Campbell 15.",
   "incorretas": {
-   "A": "**Tibionavicular.**\n- Superficial e delgado.",
-   "B": "**Tibiocalcâneo.**\n- Superficial; resiste à eversão, não à translação do tálus.",
-   "C": "**Tibiotalar anterior.**\n- Profundo, mas menos robusto que o posterior."
+   "A": "**Tibionavicular** é superficial e segura a migração medial da cabeça do tálus; na falência do tibial posterior, é a faixa do deltoide que mais sofre.",
+   "B": "**Tibiocalcâneo** é o mais forte só da camada superficial, ao sustentáculo, e resiste ao valgo; perde para o profundo.",
+   "C": "**Tibiotalar anterior** é descrito pelo Netter como fraco, capaz até de causar impacto anteromedial."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 539",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 94 (lesões esportivas do tornozelo), p. 4135",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0052": {
@@ -897,14 +909,21 @@
   "conferido": false
  },
  "pe-tornozelo-0073": {
-  "conceito": "### A imagem\nVista **lateral** do pé e do tornozelo. A seta entra no **seio do tarso**, o túnel cônico entre o tálus e o calcâneo, e aponta a banda ligamentar **profunda e central**, que une os dois ossos: o ==ligamento talocalcâneo interósseo==.\n\n### Ligamentos do seio e do canal do tarso\n| Ligamento | Posição | Função |\n|---|---|---|\n| ==Talocalcâneo interósseo== | **medial / profundo**, no **canal** do tarso | principal estabilizador da **subtalar** (limita a eversão) |\n| **Cervical** | **lateral**, no **seio** do tarso, do colo do tálus ao calcâneo | limita a **inversão**; forte |\n| Raízes do **retináculo extensor inferior** | seio do tarso | estabilizadores secundários |\n\n### Os outros\n- **Bifurcado:** processo anterior do calcâneo até o navicular e o cuboide (anterior).\n- **Mola** (calcaneonavicular plantar): **plantar e medial**; sustenta a cabeça do tálus.\n- **Talocalcâneo lateral:** fino, **superficial**, junto ao LCF.\n\n### Relevância clínica\n- **Instabilidade subtalar** e **síndrome do seio do tarso**.\n- A **artrorrise** é colocada nesse espaço.\n\n> **Na prova:** ligamento profundo no seio do tarso = ==talocalcâneo interósseo==.",
-  "correta": "**Talocalcâneo interósseo.**",
+  "conceito": "A prancha mostra o pé pelo lado lateral, com os ligamentos em azul, e a seta mergulha no **seio do tarso**, a cavidade entre o colo do tálus e o calcâneo, à frente do maléolo lateral.\n\n**A imagem.** O maléolo lateral fica em cima, os tendões fibulares descem atrás dele e passam sob o calcâneo em direção ao 5º metatarsal. À frente do maléolo há um espaço escavado entre tálus e calcâneo; dentro dele, um feixe grosso, curto e quase vertical une os dois ossos. É para ele que a seta aponta.\n\n**O que há no seio do tarso** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 542). A subtalar tem estabilizadores intrínsecos ali dentro: o **talocalcaneano interósseo**, forte, cuja lesão pode levar a instabilidade crônica, e o **cervical**, secundário e menos resistente. O canal do tarso, entre os sulcos do tálus e do calcâneo, contém a artéria do canal e o ligamento interósseo e se abre lateralmente no seio (Campbell's Operative Orthopaedics, 15ª ed., cap. 93 (fraturas do pé), p. 4086 e 4087, aprox.). O Rockwood (cap. 66) lembra que a face lateral do colo do tálus dá origem ao interósseo. No Campbell's Operative Orthopaedics, 15ª ed., cap. 94 (lesões esportivas do tornozelo) (p. 4136), interósseo, cervical e capsular anterior são os **intrínsecos primários** da subtalar, e seccionar o interósseo junto com o talofibular anterior muda muito o movimento subtalar.\n\n**Os vizinhos que confundem.** O **bifurcado** fica mais à frente, sobre a calcaneocubóidea e a talonavicular. O **talocalcaneano lateral** é um espessamento capsular mais posterior, sob o calcaneofibular. O **mola** é plantar e medial, invisível nessa vista.\n\nO seio do tarso está na seção \"O tálus e a subtalar\" do resumo.",
+  "correta": "**D) talocalcaneano interósseo.** É o feixe grosso dentro do seio do tarso, entre o colo do tálus e o calcâneo, principal estabilizador intrínseco da subtalar.",
   "incorretas": {
-   "A": "**Bifurcado.**\n- Mais **anterior** (calcâneo, navicular e cuboide).",
-   "B": "**Mola (spring).**\n- **Plantar e medial**.",
-   "C": "**Talocalcâneo lateral.**\n- Superficial e lateral."
+   "A": "**Bifurcado** nasce do processo anterior do calcâneo e se divide em Y para o cuboide e o navicular, à frente do seio do tarso.",
+   "B": "**Mola** (calcaneonavicular plantar) vai do sustentáculo ao navicular sob a cabeça do tálus, no lado medial e plantar.",
+   "C": "**Talocalcaneano lateral** sai da ponta do processo lateral do tálus, mais atrás e profundo ao calcaneofibular, com sustentação mínima."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 542",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 94 (lesões esportivas do tornozelo), p. 4136",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 93 (fraturas do pé), p. 4086 e 4087",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 66 (tálus)",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0074": {
@@ -1165,7 +1184,7 @@
       "anatomia-e-vascularizacao-d570e842",
       "anatomia-e-vascularizacao-c3eb2101"
      ],
-     "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+     "sha256": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e",
      "trechosSha256": "181ae7508aa1783792d980974d5a6604cba0379398a54ffadbc36e1a593907e2"
     }
    ],
@@ -1256,14 +1275,18 @@
   "conferido": false
  },
  "pe-tornozelo-0104": {
-  "conceito": "### A imagem\nVista **posterior** da perna, sem os músculos superficiais (gastrocnêmio e sóleo). Aparecem o compartimento **posterior profundo** e o feixe **tibial posterior** no centro. A seta aponta o ventre muscular do lado **medial** (tibial), ao lado do feixe: o ==flexor longo dos dedos==.\n\n### Compartimento posterior profundo\n| Músculo | Posição | Origem |\n|---|---|---|\n| ==Flexor longo dos dedos== | **medial** | face posterior da **tíbia** |\n| Tibial posterior | **central / profundo**, entre os dois | membrana interóssea, tíbia e fíbula |\n| Flexor longo do hálux | **lateral** | face posterior da **fíbula** |\n\n### Cruzamentos\n- **Na perna distal:** o tendão do **tibial posterior** cruza por baixo do FLD e fica **mais medial / anterior** no maléolo (\"**Tom, Dick and very nervous Harry**\"):\n  1. **T**ibial posterior;\n  2. **D**igitorum (FLD);\n  3. artéria (**A**), veia (**V**) e nervo (**N**) tibiais;\n  4. **H**allucis (FLH).\n- **Na planta:** o FLD cruza o FLH no **nó de Henry**.\n\n### Relevância\n- **Transferência do FLD** na disfunção do tibial posterior (estágio II).\n- **Túnel do tarso:** o FLD passa sob o retináculo dos flexores.\n\n> **Na prova:** músculo profundo **medial**, na face da tíbia = ==flexor longo dos dedos==.",
-  "correta": "**Flexor longo dos dedos.**",
+  "conceito": "Na vista posterior da perna sem o tríceps sural aparece o compartimento posterior profundo, e a pergunta se resolve sabendo de que osso nasce cada um dos três músculos longos.\n\n**A imagem.** A perna é vista por trás, com o gastrocnêmio e o sóleo retirados. No centro descem o nervo tibial e os vasos tibiais posteriores. A seta aponta um ventre alongado no lado da **tíbia** (medial), ao lado do feixe.\n\n**A regra das origens** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 492). O **flexor longo dos dedos** nasce da face posterior da **tíbia**, por isso fica medial. O **flexor longo do hálux** nasce da face posterior da **fíbula**, por isso fica lateral, mesmo indo para o hálux, que é medial. O **tibial posterior** nasce da tíbia, da fíbula e da membrana interóssea e fica no meio, no plano mais profundo, coberto pelos dois. O quarto músculo do compartimento, o **poplíteo**, fica em cima, atrás do joelho.\n\n**O destino do flexor longo dos dedos.** O tendão passa atrás do maléolo medial imediatamente anterior à artéria tibial posterior, entre o tibial posterior e o feixe, e termina nas falanges distais dos quatro dedos laterais. Na planta, cruza o flexor longo do hálux no nó de HENRY.\n\n**E o fibular longo.** Pertence ao compartimento lateral e nem aparece numa vista posterior profunda.\n\nO compartimento posterior profundo está nas seções \"Os compartimentos da perna\" e \"Os compartimentos da perna em detalhe\" do resumo.",
+  "correta": "**D) flexor longo dos dedos.** É o músculo profundo que nasce da face posterior da tíbia, no lado medial do compartimento, junto ao feixe tibial.",
   "incorretas": {
-   "A": "**Fibular longo.**\n- Compartimento **lateral**.",
-   "B": "**Tibial posterior.**\n- Central e mais profundo, coberto pelos flexores.",
-   "C": "**Flexor longo do hálux.**\n- Posição **lateral**, junto à fíbula."
+   "A": "**Fibular longo** é do compartimento lateral, preso à face lateral da fíbula proximal, e não está na face posterior.",
+   "B": "**Tibial posterior** fica no plano mais profundo, sobre a membrana interóssea, entre os dois flexores longos e coberto por eles.",
+   "C": "**Flexor longo do hálux** nasce da fíbula e ocupa o lado lateral do compartimento, o oposto ao da seta."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 492",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0105": {
@@ -1418,38 +1441,51 @@
   "conferido": false
  },
  "pe-tornozelo-0117": {
-  "conceito": "### A imagem\nVista **medial** do pé. A seta aponta a **prateleira óssea** que se projeta da face medial do calcâneo, logo abaixo do tálus: o ==sustentáculo do tálus==.\n\n### Sustentáculo do tálus\n- **Suporta** o **colo do tálus** e contém a **faceta média** da subtalar, sede da **coalizão talocalcânea**.\n- **Inserções:**\n  - parte do **deltoide** (tibiocalcâneo);\n  - ligamento **mola** (calcaneonavicular plantar).\n- **Face inferior:** **sulco do FLH**, que passa por baixo dele.\n- **Em cima:** o tendão do **FLD** passa por cima (superficial).\n\n### Relevância nas fraturas do calcâneo\n- **Fragmento constante:** o sustentáculo costuma ficar **preso ao tálus** pelos ligamentos. É a **âncora** da redução, a referência para onde se fixa a faceta posterior (**parafusos \"para o sustentáculo\"**).\n- **Fratura isolada do sustentáculo:** rara; pode lesar o **FLH**.\n\n### Os outros\n- **Sulco do calcâneo:** forma o **seio / canal do tarso**, na face **superior**.\n- **Faceta articular posterior:** face **superior**.\n- **Tuberosidade:** **posterior**.\n\n> **Na prova:** prateleira medial do calcâneo = ==sustentáculo do tálus==.",
-  "correta": "**Sustentáculo do tálus.**",
+  "conceito": "A peça é o esqueleto do pé visto pelo lado medial, e a seta, vinda de baixo, aponta uma prateleira óssea que se projeta do calcâneo para dentro, logo abaixo do tálus.\n\n**A imagem.** Os dedos ficam à esquerda e o calcanhar à direita. Em cima, em azul, a cartilagem da tróclea do tálus. Sob o tálus, a borda medial do calcâneo forma uma saliência horizontal que sustenta o osso de cima: é o ponto da seta.\n\n**O sustentáculo do tálus** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 525 e 526). É uma projeção **medial** do calcâneo que carrega a **faceta talar média**. Na face inferior dele corre o sulco do **tendão do flexor longo do hálux**, que usa o sustentáculo como polia, e daí o tendão segue para a planta. Do sustentáculo também partem o **ligamento mola** (calcaneonavicular plantar), que vai ao navicular e sustenta a cabeça do tálus, e a faixa **tibiocalcânea** do deltoide superficial.\n\n**As facetas.** O calcâneo tem três: **posterior**, a maior e a mais envolvida nas fraturas; **média**, no sustentáculo; e **anterior**. A posterior fica em cima, atrás, e não forma uma prateleira medial. O **sulco do calcâneo** fica na face superior, entre as facetas, e com o sulco do tálus forma o canal do tarso.\n\nA osteologia do calcâneo está na seção \"Os ossos do tornozelo e do pé\" do resumo.",
+  "correta": "**B) o sustentáculo do tálus.** É a prateleira medial do calcâneo que leva a faceta média e serve de polia ao flexor longo do hálux.",
   "incorretas": {
-   "A": "**Sulco do calcâneo.**\n- Face **superior**; forma o seio do tarso.",
-   "C": "**Faceta talar posterior.**\n- Face **superior** do calcâneo.",
-   "D": "**Tuberosidade lateral.**\n- Face lateral e posterior."
+   "A": "**Sulco do calcâneo** fica na face superior, entre as facetas, formando com o sulco do tálus o canal do tarso; não é uma projeção medial.",
+   "C": "**Face articular talar posterior** é a maior faceta, em cima e atrás no calcâneo, coberta pelo corpo do tálus.",
+   "D": "**Tuberosidade lateral** está no calcanhar, na parte posterior e plantar do osso, longe da região apontada."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 525 e 526",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0118": {
-  "conceito": "### A imagem\nVista **plantar** do pé, na camada profunda, com a seta na região do **1º raio** (sob o hálux): o ==flexor curto do hálux== (FCH), com o tendão do **flexor longo do hálux** correndo entre as suas duas cabeças.\n\n### Flexor curto do hálux\n- **Origem:** face plantar do ==cuboide e do cuneiforme lateral==, com expansões do **tendão do tibial posterior**.\n- **Inserção:** **duas cabeças** na base da falange proximal do hálux, cada uma contendo um **sesamoide**:\n  - **medial**, junto do **abdutor**;\n  - **lateral**, junto do **adutor**.\n- **Função:** flexão da **MTF** do hálux.\n- **Inervação:** **plantar medial**.\n\n### Camadas da planta\n| Camada | Músculos |\n|---|---|\n| 1ª (superficial) | abdutor do hálux, **flexor curto dos dedos**, abdutor do 5º |\n| 2ª | **quadrado plantar**, **lumbricais**; tendões FLD e FLH |\n| 3ª | ==flexor curto do hálux==, **adutor do hálux**, flexor curto do 5º |\n| 4ª | **interósseos**; tendões do fibular longo e do tibial posterior |\n\n> **Na prova:** FCH nasce no ==cuboide e no cuneiforme lateral==.",
-  "correta": "**Cuboide e cuneiforme lateral.**",
+  "conceito": "A planta do pé foi dissecada até a terceira camada, e a seta marca um ventre curto junto ao 1º metatarsal, sob o tendão do flexor longo do hálux. É o **flexor curto do hálux**, e a pergunta é de onde ele nasce.\n\n**A imagem.** O hálux fica à direita. Os tendões longos (flexor longo dos dedos e do hálux) estão à mostra até as falanges, e a seta aponta o lado medial do antepé, onde um ventre carnoso acompanha o 1º metatarsal até a base do hálux.\n\n**As camadas** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 560). A planta se organiza em 3, 2, 3, 2: na 1ª, abdutor do hálux, flexor curto dos dedos e abdutor do dedo mínimo; na 2ª, quadrado plantar e lumbricais, com os tendões longos; na 3ª, **flexor curto do hálux**, adutor do hálux e flexor curto do dedo mínimo; na 4ª, os interósseos.\n\n**O flexor curto do hálux** (pág. PDF 564). Nasce na face plantar do **cuboide** e do **cuneiforme lateral**, divide-se em duas cabeças e chega à falange proximal do hálux passando pelos **sesamoides**, que ficam dentro dos seus tendões. É inervado pelo **plantar medial** e flete a metatarsofalângica do hálux. A origem lateral surpreende: o músculo do hálux começa no lado de fora do mediopé e cruza obliquamente para dentro.\n\n**A pegadinha das alternativas.** Navicular e cuneiforme intermédio parecem razoáveis porque estão perto do 1º raio, mas não dão origem a ele.\n\nA planta está na seção \"Os músculos intrínsecos e os compartimentos do pé\" do resumo.",
+  "correta": "**C) cuboide e do cuneiforme lateral.** O flexor curto do hálux nasce na face plantar desses dois ossos e termina, pelos sesamoides, na falange proximal do hálux.",
   "incorretas": {
-   "A": "**Navicular e cuneiforme lateral.**\n- O navicular não é origem do FCH.",
-   "B": "**Navicular e cuneiforme intermédio.**\n- Os dois ossos estão errados.",
-   "D": "**Cuboide e cuneiforme intermédio.**\n- O cuneiforme é o **lateral**."
+   "A": "**Navicular e cuneiforme lateral** acerta só o cuneiforme lateral; o navicular recebe o tibial posterior, não dá origem ao flexor curto.",
+   "B": "**Navicular e cuneiforme intermédio** erra os dois ossos: a origem é lateral, no cuboide e no cuneiforme lateral.",
+   "D": "**Cuboide e cuneiforme intermédio** acerta o cuboide, mas o segundo osso é o cuneiforme lateral; o intermédio é o menor e recebe a base do 2º metatarsal."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 560 e 564",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0119": {
-  "conceito": "**A artéria fibular.** Nasce da **tibial posterior**, poucos centímetros abaixo da borda inferior do poplíteo, e desce junto à **face medial da fíbula**, envolvida pelo flexor longo do hálux e pelo tibial posterior, no compartimento posterior profundo. Perto do tornozelo, dá um **ramo perfurante** que atravessa a membrana interóssea para a face anterior e termina em ramos calcâneos laterais. É a artéria que acompanha a fíbula nas vias de acesso posterolaterais e nos retalhos fibulares.\n\n**Para não confundir.** A **tibial anterior** corre sobre a membrana interóssea no compartimento anterior, com o nervo fibular profundo. A **interóssea anterior** é uma artéria do **antebraço**. E a safena lembra sobretudo as **veias** safenas, que são superficiais.\n\n**Na prova:** artéria profunda que acompanha a fíbula, vinda da tibial posterior, é a **fibular**.",
-  "correta": "**Fibular.** Ramo da tibial posterior que desce junto à fíbula, no compartimento posterior profundo.",
+  "conceito": "A questão fala numa estrutura assinalada, mas, mesmo sem a figura, a lista de alternativas aponta para a artéria profunda que acompanha a fíbula no compartimento posterior profundo.\n\n**A origem e o trajeto** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 497 e 498). A poplítea se divide perto do músculo poplíteo nas **tibiais anterior e posterior**. A **artéria fibular** é **ramo da tibial posterior** e desce entre o **tibial posterior e o flexor longo dos dedos**, junto à fíbula. Irriga os músculos do **compartimento lateral**, que não tem artéria própria, e termina em ramos maleolares laterais e calcâneos.\n\n**Perto do tornozelo** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 574). Dá um **ramo perfurante** que atravessa a membrana interóssea até a frente do tornozelo, une-se à maleolar anterior lateral, forma ou contribui para a **artéria do seio do tarso** e irriga diretamente a parte posterior do tálus. Também dá um ramo comunicante. Por isso entra na irrigação do tálus junto com a artéria do canal do tarso, que vem da tibial posterior.\n\n**As outras artérias da perna.** A **tibial anterior** corre sobre a membrana interóssea com o nervo fibular profundo, no compartimento anterior, e continua como dorsal do pé. Safena é nome de veia e de nervo (a veia safena magna passa à frente do maléolo medial com o nervo safeno), não de artéria da perna. A interóssea anterior não é ramo das artérias da perna descritas no Netter.\n\nA artéria fibular está na seção \"As artérias e a irrigação do tálus\" do resumo.",
+  "correta": "**A) fibular.** Ramo da tibial posterior que desce junto à fíbula no compartimento posterior profundo e irriga o compartimento lateral.",
   "incorretas": {
-   "B": "**Nome de veia superficial.** As safenas são veias do tecido subcutâneo, não a artéria profunda junto à fíbula.",
-   "C": "**Outro compartimento.** A tibial anterior corre sobre a membrana interóssea, no compartimento anterior.",
-   "D": "**Artéria do antebraço.** A interóssea anterior é ramo da interóssea comum, no antebraço."
+   "B": "**Safena** nomeia a veia safena magna e o nervo safeno, que passam juntos à frente do maléolo medial; não há artéria safena entre os ramos da poplítea.",
+   "C": "**Tibial anterior** é a artéria do compartimento anterior, sobre a membrana interóssea com o fibular profundo; não acompanha a fíbula por trás.",
+   "D": "**Interóssea anterior** não aparece entre os ramos da poplítea e das tibiais; a perna tem as tibiais anterior e posterior e a fibular."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 497 e 498",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 574",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "alerta": "O enunciado se refere a uma estrutura assinalada, mas a figura não está no acervo; o comentário explica a artéria pelo texto do livro, e o gabarito oficial (A) foi mantido.",
+  "geradoEm": "2026-11-01",
+  "conferido": false
  },
  "pe-tornozelo-0120": {
   "conceito": "O compartimento assinalado é o lateral, o menor da perna, colado à fíbula. Ele tem só dois músculos e um nervo.\n\n**A tabela do Netter** (cap. 9):\n- **Anterior:** tibial anterior, extensor longo do hálux, extensor longo dos dedos e fibular terceiro, com a **artéria tibial anterior** e o **nervo fibular profundo**.\n- **Lateral:** **fibular longo** e **fibular curto**, com o **nervo fibular superficial**.\n- **Posterior superficial:** gastrocnêmio, sóleo e plantar.\n- **Posterior profundo:** tibial posterior, flexores longos e poplíteo, com o nervo tibial e as artérias tibial posterior e fibular.\n\n**A fasciotomia.** A incisão **anterolateral**, centrada no septo entre os compartimentos anterior e lateral, abre os dois de uma vez.\n\n**Como não errar.** O nervo do compartimento lateral é o **superficial**; o **profundo** é do anterior. Não existe \"nervo tibial anterior\": tibial anterior é a artéria (e o músculo).\n\n**O que a banca quis testar.** O conteúdo do compartimento lateral. O resumo Anatomia da perna, do tornozelo e do pé traz a tabela.",
@@ -1467,18 +1503,21 @@
   "conferido": false
  },
  "pe-tornozelo-0121": {
-  "conceito": "**A imagem.** Vista **medial** do tornozelo. Atrás do **maléolo medial** passam vários tendões. A seta aponta o tendão do **meio** do grupo, logo atrás do tibial posterior: o **flexor longo dos dedos**.\n\n**Os tendões atrás do maléolo medial.** De anterior para posterior, o conteúdo do **túnel do tarso** segue o mnemônico **\"Tom, Dick And Very Nervous Harry\"**:\n1. **T**ibial posterior: o mais **anterior**, colado ao maléolo medial.\n2. Flexor longo dos **D**edos.\n3. **A**rtéria tibial posterior.\n4. **V**eias tibiais posteriores.\n5. **N**ervo tibial.\n6. Flexor longo do **H**álux: o mais **posterior**, num sulco próprio do tálus, entre os tubérculos medial e lateral.\n\n**Os três tendões e as suas funções.**\n\n| Tendão | Inserção | Função |\n|---|---|---|\n| **Tibial posterior** | **Tuberosidade do navicular** e expansões plantares | Inversão; principal **sustentador do arco** medial |\n| **Flexor longo dos dedos** | Base das falanges distais do **2º ao 5º** dedos | Flexão dos dedos menores; ajuda o arco |\n| **Flexor longo do hálux** | Base da falange distal do **hálux** | Flexão do hálux; impulsão na marcha |\n\n**A importância clínica.**\n- **Disfunção do tibial posterior**: a principal causa do **pé plano adquirido** do adulto. Nos estágios flexíveis, o tendão do **flexor longo dos dedos** é **transferido** para o navicular para substituir o tibial posterior.\n- **Tendinite do flexor longo do hálux**: em **bailarinos** (posição de ponta), com dor posteromedial e o \"hálux em gatilho\".\n- O **nó de Henry**, na planta do pé, é o ponto onde o flexor longo dos dedos cruza **superficialmente** o flexor longo do hálux. É um ponto de referência nas transferências.\n\n**O \"flexor superficial dos dedos\"** é um músculo do **antebraço** e da mão. No pé, o equivalente é o **flexor curto dos dedos**, um músculo intrínseco da planta.",
-  "correta": "**Correta: C (flexor longo dos dedos).** Atrás do maléolo medial, a seta aponta o tendão do meio, logo posterior ao tibial posterior: o **flexor longo dos dedos**. A ordem, de anterior para posterior, é tibial posterior, flexor longo dos dedos, vasos e nervo tibiais e flexor longo do hálux.",
+  "conceito": "Atrás do maléolo medial passam três tendões e um feixe numa ordem fixa, e a seta, na ilustração do tornozelo medial, aponta o do meio entre os tendões.\n\n**A imagem.** Tornozelo visto pelo lado medial, com o calcanhar à direita e o tendão do calcâneo atrás. Contornando o maléolo descem os tendões flexores em direção à planta; a seta pega o segundo deles a partir do maléolo, entre o mais anterior, colado ao osso, e o mais posterior.\n\n**A ordem** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 (tornozelo), pág. PDF 3290). De anterior para posterior: **tibial posterior**, **flexor longo dos dedos**, **artéria e veias tibiais posteriores**, **nervo tibial** e **flexor longo do hálux** (\"Tom, Dick and very nervous Harry\"). O sulco maleolar posterior da tíbia aloja os dois primeiros (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 524). O Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho) (pág. PDF 492) acrescenta que o tendão do flexor longo dos dedos fica **imediatamente anterior à artéria tibial posterior**: é ele que separa o tibial posterior do feixe.\n\n**O túnel do tarso.** Esse corredor tem teto no retináculo dos flexores, que manda septos entre os três tendões (Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4025, aprox.). O flexor longo do hálux, o mais posterior, passa entre os tubérculos do processo posterior do tálus e sob o sustentáculo.\n\n**Um nome que não existe no pé.** Flexor superficial dos dedos é músculo do antebraço; no pé, o correspondente curto é o flexor curto dos dedos, da 1ª camada plantar.\n\nO corredor está nas seções \"O corredor atrás do maléolo medial\" e \"O corredor do tornozelo e a frente da mortalha\" do resumo.",
+  "correta": "**C) flexor longo dos dedos.** É o segundo tendão atrás do maléolo medial, entre o tibial posterior e a artéria tibial posterior.",
   "incorretas": {
-   "A": "O **tibial posterior** é o tendão mais **anterior**, colado ao maléolo medial.",
-   "B": "O **flexor longo do hálux** é o mais **posterior**, num sulco próprio no tálus, atrás do feixe neurovascular.",
-   "D": "O **flexor superficial dos dedos** é um músculo do **antebraço**. No pé, não existe com esse nome."
+   "A": "**Tibial posterior** é o mais anterior do corredor, colado ao sulco do maléolo, à frente do tendão apontado.",
+   "B": "**Flexor longo do hálux** é o mais posterior, atrás do nervo tibial, passando entre os tubérculos do tálus e sob o sustentáculo.",
+   "D": "**Flexor superficial dos dedos** pertence ao antebraço; não há músculo com esse nome na perna nem no pé."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
-   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 (tornozelo), pág. PDF 3290",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 492",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 524",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4025",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0122": {
@@ -1498,14 +1537,19 @@
   "conferido": false
  },
  "pe-tornozelo-0123": {
-  "conceito": "### A imagem\nVista **plantar** do pé com a camada superficial rebatida. As setas apontam o músculo **proximal e central**, junto aos tendões do flexor longo dos dedos: um músculo da musculatura **flexora** dos dedos.\n- **Quadrado plantar**, que se insere no FLD;\n- ou o **flexor curto dos dedos**, conforme a leitura da figura.\n\nNos dois casos, a ação é a ==flexão dos dedos==.\n\n### Músculos flexores dos dedos menores na planta\n| Músculo | Camada | Origem / inserção | Ação |\n|---|---|---|---|\n| **Flexor curto dos dedos** | 1ª | tuberosidade **medial** do calcâneo até as **falanges médias** (perfurado pelo FLD) | flexão das **IFP** |\n| **Quadrado plantar** | 2ª | calcâneo até o **tendão do FLD** | **corrige a tração oblíqua** do FLD; auxilia a **flexão** dos dedos |\n| Lumbricais | 2ª | tendões do FLD até o capuz extensor | fletem a MTF e **estendem as IF** |\n\n### Os distratores\n- **Adução do hálux:** **adutor do hálux** (3ª camada).\n- **Abdução do 5º:** **abdutor do 5º dedo** (1ª camada, lateral).\n- **Extensão das IF:** **lumbricais / interósseos** e extensores.\n\n> **Na prova:** músculo assinalado = ação de ==flexão dos dedos==.",
-  "correta": "**Flexão dos dedos.**",
+  "conceito": "As duas setas apontam as duas cabeças de um músculo que nasce no calcâneo e termina não em osso, mas num tendão: o **quadrado plantar**. A ação dele só faz sentido entendendo onde se prende.\n\n**A imagem.** Planta do pé com a 1ª camada retirada. Os tendões do flexor longo dos dedos se abrem em leque para os quatro dedos laterais. Junto ao calcanhar, duas setas, uma de cada lado, apontam um músculo quadrangular, com uma porção medial e outra lateral, que avança até a borda do tendão longo.\n\n**O quadrado plantar** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 563). Nasce das regiões medial e lateral da face plantar do calcâneo (daí as **duas cabeças**) e se insere na **borda lateral do tendão do flexor longo dos dedos**. É inervado pelo **plantar lateral** e está na 2ª camada, com os lumbricais. O tendão longo entra na planta vindo de trás do maléolo medial, portanto puxa obliquamente; o quadrado plantar corrige esse vetor e **ajuda o flexor longo a fletir os dedos**.\n\n**O compartimento.** Pelo Netter e pelo Rockwood (cap. 17), o quadrado plantar ocupa o **compartimento calcâneo** (central profundo), que se comunica com o posterior profundo da perna.\n\n**As outras ações, músculo por músculo.** Adução do hálux é do adutor do hálux, na 3ª camada; abdução do 5º dedo, do abdutor do dedo mínimo, na 1ª; extensão das interfalângicas, dos lumbricais e interósseos pela expansão extensora.\n\nA planta está na seção \"Os músculos intrínsecos e os compartimentos do pé\" do resumo.",
+  "correta": "**B) flexão dos dedos.** O quadrado plantar se insere no tendão do flexor longo dos dedos, alinha a tração dele e o ajuda a fletir os dedos.",
   "incorretas": {
-   "A": "**Adução do hálux.**\n- Ação do **adutor do hálux**.",
-   "C": "**Abdução do 5º dedo.**\n- Ação do **abdutor do 5º dedo**.",
-   "D": "**Extensão das IF.**\n- Lumbricais e extensores."
+   "A": "**Adução do hálux** é do adutor do hálux, de cabeças oblíqua e transversa, que vai ao sesamoide lateral na 3ª camada.",
+   "C": "**Abdução do quinto dedo** é do abdutor do dedo mínimo, da 1ª camada, que vai da tuberosidade à base da falange proximal do 5º.",
+   "D": "**Extensão das interfalângicas** cabe aos lumbricais e interósseos, que fletem a metatarsofalângica e estendem as interfalângicas pela expansão extensora."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 560 a 564",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0124": {
@@ -1596,17 +1640,18 @@
   "conferido": false
  },
  "pe-tornozelo-0133": {
-  "conceito": "**A imagem.** Vista medial do pé e do tornozelo com três traçados de incisão (A, B e C) ao redor do **maléolo medial**. A linha **C** desce em curva sobre a região do maléolo medial e do retropé, e corresponde, pelo gabarito, ao acesso de **Colonna e Ralston**.\n\n**As vias mediais do tornozelo.** A bibliografia de técnica cirúrgica (Campbell) descreve três acessos mediais clássicos, que diferem no traçado em torno do maléolo medial e no que expõem:\n- **Koenig e Schaefer**;\n- **Broomhead**;\n- **Colonna e Ralston**.\n\nNa figura, as linhas A, B e C representam esses traçados, e a linha **C** é o de **Colonna e Ralston**.\n\n**O que se encontra no lado medial.** Atrás do maléolo medial passam, de anterior para posterior, as estruturas do **túnel do tarso**: tendão do **tibial posterior**, do **flexor longo dos dedos**, a **artéria e veia tibiais posteriores**, o **nervo tibial** e o tendão do **flexor longo do hálux** (mnemônico: \"Tom, Dick And Very Nervous Harry\"). À frente do maléolo correm a **veia safena magna** e o **nervo safeno**. Qualquer acesso medial precisa identificar e proteger esses elementos.\n\n**Usos dos acessos mediais.** Fixação de fraturas do maléolo medial e do pilão tibial, osteotomia do maléolo medial para expor lesões osteocondrais posteromediais do tálus, liberação do túnel do tarso, tratamento de lesões do tibial posterior e artrodeses.\n\n**O acesso de Kocher.** É um acesso **lateral** curvilíneo ao tornozelo e ao retropé, que contorna o maléolo **lateral** para expor a articulação talocrural lateral e a subtalar, com cuidado com o nervo sural e os tendões fibulares. Não é um acesso medial.",
-  "correta": "**Correta: D (Colonna e Ralston).** Entre os três acessos mediais clássicos ao tornozelo representados na figura, a linha **C**, que desce em curva sobre o maléolo medial, corresponde ao acesso de Colonna e Ralston.",
+  "conceito": "O desenho mostra o pé pelo lado medial com três incisões traçadas em verde, A, B e C, todas para chegar ao maléolo posterior ou à face medial do tornozelo. A questão cobra o nome de cada traçado.\n\n**A imagem.** Maléolo medial no centro da figura. A linha **A** corre baixa e para a frente, em direção ao mediopé. A **B** desce vertical por trás, entre a tíbia e o tendão do calcâneo. A **C** desce em curva por cima do maléolo, contornando-o e seguindo para o calcanhar.\n\n**Os três epônimos** (Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso), Fig. 1.28, p. 21 e 22). Na figura do Campbell 15: **A = KOENIG e SCHAEFER**, **B = BROOMHEAD**, **C = COLONNA e RALSTON**.\n- **BROOMHEAD** é uma incisão medial curva **a meio caminho entre a borda posterior da tíbia e a borda medial do tendão do calcâneo**, que se curva abaixo do maléolo; os tendões mediais e o feixe são afastados para trás.\n- **COLONNA e RALSTON**, modificação do BROOMHEAD, começa cerca de **10 cm acima e 2,5 cm atrás** do maléolo medial, curva para a frente e para baixo **pelo centro do maléolo** e segue 4 cm em direção ao calcanhar. Abre-se o retináculo dos flexores; o flexor longo do hálux e o feixe vão para posterior e lateral, o tibial posterior e o flexor longo dos dedos para medial e anterior, e o **deltoide é preservado**. Expõe a fratura tibial posterior.\n\n**KOCHER** não está entre as vias mediais do tornozelo da figura.\n\nAs vias mediais estão na seção \"As vias de acesso e os portais\" do resumo.",
+  "correta": "**D) COLONNA e RALSTON.** A linha C, que desce curva pelo centro do maléolo medial até o calcanhar, é a via de COLONNA e RALSTON na Fig. 1.28 do Campbell 15.",
   "incorretas": {
-   "A": "O acesso de **Kocher** é **lateral**, contornando o maléolo lateral; não pertence ao grupo das vias mediais da figura.",
-   "B": "O acesso de **Broomhead** é outro dos acessos mediais, representado por um traçado diferente na figura.",
-   "C": "O acesso de **Koenig e Schaefer** é outro dos acessos mediais clássicos, com traçado diferente da linha C."
+   "A": "**KOCHER** não figura entre as incisões mediais do maléolo posterior desenhadas no Campbell 15.",
+   "B": "**BROOMHEAD** é a linha B, posterior, a meio caminho entre a tíbia e o tendão do calcâneo, que a de COLONNA e RALSTON modificou.",
+   "C": "**KOENIG e SCHAEFER** é a linha A da mesma figura, a mais baixa e anterior."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), capítulo de vias de acesso"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso), Fig. 1.28, p. 21 e 22",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0134": {
@@ -1875,25 +1920,36 @@
   "conferido": false
  },
  "pe-tornozelo-0185": {
-  "conceito": "### A imagem\nVista **lateral** da perna. A seta aponta o ventre muscular **posterior aos fibulares** e **profundo / abaixo do gastrocnêmio lateral**, visível lateralmente na metade da perna: o ==sóleo==.\n\n### Sóleo\n- **Origem:**\n  - **cabeça e terço proximal da fíbula** (posterior);\n  - **linha do sóleo** da tíbia;\n  - **arco tendíneo** entre os dois.\n- **Inserção:** junta-se ao gastrocnêmio no **tendão calcâneo**.\n- **Tipo:** **monoarticular** (só o tornozelo).\n- **Função:** **flexão plantar**; controla o avanço da tíbia no apoio (**2º rocker**).\n- **Fibras:** predominantemente **tipo I** (postural).\n- **Inervação:** **tibial**.\n\n### Clínica\n- **Arco do sóleo:** o feixe tibial posterior passa sob ele (compressão rara).\n- **Silfverskiöld:** contratura do sóleo **não** melhora com a flexão do joelho.\n- **\"Bomba\" do sóleo:** retorno venoso, com as **veias soleares** como sítio comum de **TVP**.\n\n### Os distratores\n- **Poplíteo:** pequeno, **profundo**, na fossa poplítea.\n- **Fibulares:** compartimento **lateral**, anteriores ao sóleo.\n\n> **Na prova:** músculo posterior visível lateralmente, abaixo do gastrocnêmio = ==sóleo==.",
-  "correta": "**Sóleo.**",
+  "conceito": "Na vista lateral da perna, entre os fibulares na frente e o gastrocnêmio atrás, aparece uma faixa de músculo largo e achatado. É a borda lateral do **sóleo**, e a seta aponta exatamente para ela.\n\n**A imagem.** Perna direita de perfil, joelho em cima e pé embaixo. Na frente, os extensores; no meio, os ventres dos fibulares descendo pela fíbula; atrás, o gastrocnêmio. A seta pega um ventre que surge por baixo da cabeça lateral do gastrocnêmio e desce até o tendão do calcâneo.\n\n**O sóleo** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 491). Nasce da **região posterior da cabeça da fíbula** e da **linha do sóleo** na tíbia e se une ao gastrocnêmio no **tendão do calcâneo**. É do compartimento **posterior superficial**, inervado pelo tibial (nervo para o sóleo). Por nascer abaixo do joelho, o sóleo trabalha melhor com o **joelho fletido**, e o gastrocnêmio, com o joelho estendido (Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3846). No tendão, as fibras do sóleo terminam mediais e as do gastrocnêmio laterais, porque o tendão roda 90°.\n\n**Os vizinhos de perfil.** O **fibular longo** nasce da parte proximal lateral da fíbula, à frente da seta. O **fibular curto** tem o ventre mais distal de todos e fica anterior ao longo atrás do maléolo. O **poplíteo** está atrás do joelho, profundo, e não aparece nessa vista no meio da perna.\n\nOs músculos da perna estão na seção \"Os compartimentos da perna em detalhe\" do resumo.",
+  "correta": "**A) solear.** É o ventre largo que aparece sob a cabeça lateral do gastrocnêmio na vista lateral e desce ao tendão do calcâneo.",
   "incorretas": {
-   "B": "**Poplíteo.**\n- Pequeno e **profundo**, atrás do joelho.",
-   "C": "**Fibular curto.**\n- Origem **distal** da fíbula; compartimento lateral.",
-   "D": "**Fibular longo.**\n- Compartimento **lateral**, anterior ao sóleo."
+   "B": "**Poplíteo** fica atrás do joelho, profundo, do côndilo lateral do fêmur à tíbia proximal; não ocupa o meio da perna.",
+   "C": "**Fibular curto** tem o ventre mais distal, junto à fíbula, à frente da região apontada.",
+   "D": "**Fibular longo** nasce da fíbula proximal lateral e ocupa o compartimento lateral, à frente do sóleo."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 491",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3846",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0186": {
-  "conceito": "### O nervo indicado\nNa vista **anterolateral** da perna (a patela aparece no alto), a seta aponta um nervo que desce entre os **fibulares** e o **extensor longo dos dedos**: o ==nervo fibular superficial==.\n\n### Trajeto do fibular comum e ramos\n- O **fibular comum** contorna o **colo da fíbula** (ponto vulnerável a compressão, gesso, fratura, lesão do canto posterolateral).\n- Divide-se em:\n  - **Fibular superficial:** desce no **compartimento lateral**, inerva **fibular longo e curto**; perfura a fáscia no terço distal (~10 a 12 cm acima do maléolo lateral, valor aproximado) e dá a sensibilidade do **dorso do pé**.\n  - **Fibular profundo:** vai ao compartimento **anterior**, junto à artéria tibial anterior; sensibilidade do **1º espaço interdigital**.\n\n### Relevância cirúrgica\nRisco em portais e acessos **anterolaterais** da perna distal e do tornozelo (portal anterolateral da artroscopia do tornozelo).\n\n> **Na prova:** nervo no **compartimento lateral** da perna = ==fibular superficial==.",
-  "correta": "**Nervo fibular superficial.**\n- Desce no compartimento lateral, entre os fibulares e o extensor longo dos dedos.",
+  "conceito": "A dissecção abre a perna logo abaixo do joelho, com os músculos afastados por ganchos, e mostra dois nervos que nasceram do fibular comum seguindo caminhos diferentes. A seta aponta o mais lateral.\n\n**A imagem.** Joelho em cima, com a patela e os vasos geniculados. Abaixo, ganchos afastam os músculos anteriores e laterais. No meio desce o feixe da artéria tibial anterior com o seu nervo; à esquerda da figura, separado, um nervo mais superficial segue entre os músculos laterais, emitindo ramos: é o alvo da seta.\n\n**O fibular comum e os dois ramos** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 495 e 496). O fibular comum contorna o **colo da fíbula** e se divide. O **fibular profundo** entra no compartimento **anterior**, com a artéria tibial anterior sobre a membrana interóssea, e inerva os extensores. O **fibular superficial** desce no compartimento **lateral**, inerva o **fibular longo e o curto** e, no terço distal, atravessa a fáscia para o dorso do pé, onde é só sensitivo. O trajeto varia: pode correr só no lateral, só no anterior ou nos dois (Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4032).\n\n**Por que o cirurgião se importa.** O Netter diz que ele cruza para a frente **12 cm acima do maléolo lateral**; o Campbell, cerca de **10 cm da ponta da fíbula**, com variação de 3 a 18 cm. É o nervo lesado na via lateral do tornozelo e no portal anterolateral.\n\n**Os outros nomes.** O tibial é posterior; o ramo infrapatelar do safeno é medial e subcutâneo, no joelho.\n\nO fibular superficial está na seção \"Os nervos da perna e do pé\" do resumo.",
+  "correta": "**C) nervo fibular superficial.** É o ramo do fibular comum que desce no compartimento lateral, separado do feixe tibial anterior.",
   "incorretas": {
-   "A": "**Nervo tibial.**\n- Corre na região **posterior**, profundo ao sóleo, junto aos vasos tibiais posteriores.\n- Não aparece na face anterolateral.",
-   "B": "**Nervo genicular inferior.**\n- Ramo articular fino junto à interlinha, não um tronco que desce pela perna.",
-   "D": "**Ramo infrapatelar do safeno.**\n- Cruza a face **anteromedial**, abaixo da patela; lesado em incisões medianas e na retirada dos flexores."
+   "A": "**Nervo tibial** desce atrás, entre as cabeças do gastrocnêmio e no compartimento posterior profundo, fora dessa dissecção anterolateral.",
+   "B": "**Nervo genicular inferior** é ramo articular do joelho; não desce pela perna entre os músculos laterais.",
+   "D": "**Ramo infrapatelar do safeno** é medial, subcutâneo, na região infrapatelar, em risco nos acessos anteromedial e mediano do joelho."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 495 e 496",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4032",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso), p. 16",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0187": {
@@ -1927,36 +1983,49 @@
   "conferido": false
  },
  "pe-tornozelo-0189": {
-  "conceito": "### A imagem\nVista **lateral** do tornozelo e do pé. A seta aponta, logo **abaixo** do tálus e **anterior ao ligamento calcaneofibular** e aos fibulares, um ligamento curto e superficial na face lateral da subtalar: o ==ligamento talocalcâneo lateral==.\n\n### Talocalcâneo lateral\n- **Trajeto:** do **processo lateral do tálus** ao calcâneo.\n- **Posição:** **superficial**, paralelo e profundo ao LCF (às vezes fundido a ele).\n- **Função:** estabilizador **acessório** da **subtalar** lateral.\n\n### Ligamentos laterais: mapa rápido\n| Ligamento | Local |\n|---|---|\n| Talofibular anterior | fíbula até o **colo do tálus** |\n| Calcaneofibular | ponta da fíbula até o **calcâneo** (sob os fibulares) |\n| Talofibular posterior | fíbula até o tubérculo **posterolateral** do tálus |\n| ==Talocalcâneo lateral== | processo **lateral** do tálus até o calcâneo |\n| Cervical / interósseo | **seio / canal do tarso** (profundos) |\n| Bifurcado | processo **anterior** do calcâneo até o navicular e o cuboide |\n\n> **Na prova:** ligamento superficial lateral entre o tálus e o calcâneo = ==talocalcâneo lateral==.",
-  "correta": "**Talocalcâneo lateral.**",
+  "conceito": "A mesma prancha lateral dos ligamentos do pé aparece em várias provas com a seta em lugares diferentes. Aqui ela aponta, de baixo para cima, um feixe pequeno entre o tálus e o calcâneo, atrás do seio do tarso e logo à frente dos tendões fibulares.\n\n**A imagem.** Tornozelo de perfil lateral: fíbula em cima, tendões fibulares contornando o maléolo e descendo sobre o calcâneo. A seta amarela fica sob o corpo do tálus, junto ao processo lateral, num feixe curto e fino que une o tálus ao calcâneo, encoberto em parte pelos fibulares e pelo calcaneofibular.\n\n**O talocalcaneano lateral** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 542). É um **espessamento capsular** da subtalar, **profundo ao calcaneofibular**, com **sustentação mínima**. O Rockwood and Green's Fractures in Adults, 10ª ed., cap. 66 (tálus) (pág. PDF 3362) precisa a origem: nasce da **ponta do processo lateral do tálus**, a cunha da face inferolateral do corpo que articula com a fíbula e com a faceta posterior do calcâneo; o talofibular posterior fica posteroinferior a ele.\n\n**Como separar dos vizinhos.** O **interósseo** é grosso e fica **dentro** do seio do tarso, mais à frente. O **bifurcado** está ainda mais anterior, no mediopé. O **deltoide** é medial e nem aparece na vista lateral. A pista é a posição: atrás e embaixo, perto dos fibulares, é o lateral; dentro da escavação, o interósseo.\n\nOs ligamentos da subtalar estão nas seções \"O tálus e a subtalar\" e \"Os ligamentos: sindesmose, laterais, deltoide e subtalar\" do resumo.",
+  "correta": "**C) talocalcaneano lateral.** É o espessamento capsular curto que sai da ponta do processo lateral do tálus para o calcâneo, profundo ao calcaneofibular.",
   "incorretas": {
-   "A": "**Deltoide.**\n- Face **medial**.",
-   "B": "**Bifurcado.**\n- Mais **anterior** (calcâneo, navicular e cuboide).",
-   "D": "**Talocalcâneo interósseo.**\n- **Profundo**, no canal do tarso."
+   "A": "**Deltoide** é o complexo medial, do maléolo medial ao tálus, navicular e sustentáculo; não aparece numa vista lateral.",
+   "B": "**Bifurcado** sai do processo anterior do calcâneo para o cuboide e o navicular, bem à frente do ponto da seta.",
+   "D": "**Talocalcaneano interósseo** ocupa o interior do seio do tarso, mais anterior, e é grosso; o feixe apontado é fino e posterior."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 542",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 66 (tálus), pág. PDF 3362",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0190": {
-  "conceito": "### O músculo poplíteo\nMúsculo **pequeno, profundo e oblíquo** no assoalho da fossa poplítea, na parte **proximal** da face posterior da perna.\n- **Origem:** tendão no **côndilo femoral lateral**, anterior e distal ao LCL, intra-articular e **extrassinovial**, passando pelo **hiato poplíteo** do menisco lateral.\n- **Inserção:** face posterior da tíbia, **acima da linha do sóleo**.\n- **Inervação:** nervo **tibial**.\n\n### Funções\n- **\"Destrava\" o joelho:** roda internamente a tíbia no início da flexão, desfazendo o **screw-home**.\n- Estabilizador do **canto posterolateral**, com o **ligamento popliteofibular**, contra a rotação externa e o varo.\n\n### Na figura\nVista posterior com os gastrocnêmios intactos; a seta aponta a região profunda e proximal, entre as cabeças do gastrocnêmio, onde está o ==poplíteo==.\n\n> **Na prova:** músculo profundo e oblíquo, acima da linha do sóleo = ==poplíteo==.",
-  "correta": "**Poplíteo.**\n- Profundo e oblíquo, do côndilo lateral à tíbia posterior, acima da linha do sóleo.",
+  "conceito": "Na vista posterior da perna, quase tudo é gastrocnêmio. A seta, porém, aponta acima dele, no assoalho da fossa poplítea, para um músculo curto e oblíquo que vai do lado lateral do joelho à tíbia: o **poplíteo**.\n\n**A imagem.** Perna vista por trás, com o gastrocnêmio inteiro e o tendão do calcâneo descendo ao calcanhar. Em cima, entre as cabeças do gastrocnêmio, passam os vasos poplíteos e o nervo tibial. A seta aponta, no alto e à esquerda, um ventre que cruza obliquamente por trás do joelho, profundo aos vasos.\n\n**O poplíteo** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 492). Nasce no **côndilo lateral do fêmur**, anterior e distal ao colateral fibular, com **origem intra-articular**, e se insere na **parte proximal posterior da tíbia**. Faz a **rotação medial** da tíbia que destrava o joelho e é **restritor primário da rotação lateral**. Pertence ao compartimento **posterior profundo**, inervado pelo tibial (nervo para o poplíteo). A poplítea se divide nas tibiais justamente perto dele.\n\n**Os outros da lista.** O **sóleo** fica abaixo, sob o gastrocnêmio, e nasce na linha do sóleo, que fica logo abaixo da inserção do poplíteo. O **semitendíneo** e o **semimembranáceo** são isquiotibiais, músculos da coxa que terminam na face medial do joelho.\n\nO poplíteo está na seção \"Os compartimentos da perna em detalhe\" do resumo.",
+  "correta": "**B) poplíteo.** É o músculo oblíquo do assoalho da fossa poplítea, do côndilo lateral do fêmur à tíbia proximal posterior.",
   "incorretas": {
-   "A": "**Sóleo.**\n- Mais **distal** e largo, profundo ao gastrocnêmio; origina-se na **linha do sóleo** e na fíbula, abaixo do poplíteo.",
-   "C": "**Semitendíneo.**\n- Isquiotibial da **coxa**; só o tendão passa medialmente ao joelho, rumo à pata de ganso.",
-   "D": "**Semimembranáceo.**\n- Isquiotibial da **coxa**; insere-se na tíbia posteromedial, sem ventre na perna."
+   "A": "**Solear** fica mais abaixo, sob o gastrocnêmio, nascendo da linha do sóleo e da cabeça da fíbula.",
+   "C": "**Semitendíneo** é isquiotibial da coxa e chega ao joelho pelo lado medial, sem cruzar o assoalho da fossa.",
+   "D": "**Semimembranáceo** é outro isquiotibial da coxa, posteromedial, e não ocupa o assoalho da fossa poplítea."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 492 e 497",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0191": {
-  "conceito": "### A imagem\nVista **posterior** da tíbia e da fíbula com as **áreas de origem** muscular marcadas. A seta aponta a faixa alongada na face **posterior da tíbia**, **abaixo da linha do sóleo** e **medial** à área do tibial posterior: a origem do ==flexor longo dos dedos==.\n\n### Origens na face posterior da perna\n| Músculo | Origem |\n|---|---|\n| **Poplíteo** | côndilo femoral lateral; insere-se **acima da linha do sóleo** (área triangular) |\n| **Sóleo** | **linha do sóleo** da tíbia + cabeça / terço proximal da fíbula |\n| ==Flexor longo dos dedos== | ==face posterior da tíbia, medial, abaixo da linha do sóleo== |\n| **Tibial posterior** | **membrana interóssea** + faces adjacentes da tíbia e da fíbula (**central**) |\n| **Flexor longo do hálux** | **fíbula** posterior (2/3 distais) + membrana |\n\n### Mnemônico de posição\n**Tíbia** = FLD (medial); **meio** = tibial posterior; **fíbula** = FLH (lateral).\n\n> **Na prova:** origem na tíbia posterior, medial, abaixo da linha do sóleo = ==flexor longo dos dedos==.",
-  "correta": "**Flexor longo dos dedos.**",
+  "conceito": "A peça é a tíbia e a fíbula vistas por trás, com as áreas de origem pintadas de vermelho e as de inserção de azul. A seta aponta uma faixa vermelha estreita na face posterior da **tíbia**, abaixo da linha do sóleo.\n\n**A imagem.** Perna direita por trás: fíbula à direita da figura, tíbia à esquerda. No alto da tíbia, uma área azul (inserção) e, abaixo dela, a linha oblíqua do sóleo. Seguindo para baixo, três faixas vermelhas: uma na tíbia, onde está a seta; uma larga no meio, sobre a membrana e os dois ossos; e outra na fíbula.\n\n**A leitura pelos ossos** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 492). O **flexor longo dos dedos** nasce da região posterior da **tíbia**: faixa medial. O **tibial posterior** nasce da tíbia, da fíbula e da **membrana interóssea**: faixa central, a maior. O **flexor longo do hálux** nasce da região posterior da **fíbula**: faixa lateral. O **poplíteo** não nasce ali; ele se **insere** na parte proximal posterior da tíbia, acima da linha do sóleo, por isso a área dele aparece em azul. O **sóleo** nasce na própria **linha do sóleo** e na cabeça da fíbula (pág. PDF 491), acima das três faixas.\n\n**Uma conferência rápida.** Na prancha da tíbia posterior, o Netter marca a linha do sóleo, o forame nutrício e o sulco do tibial posterior e do flexor longo dos dedos atrás do maléolo (pág. PDF 443).\n\nAs origens estão nas seções \"Os compartimentos da perna\" e \"Os compartimentos da perna em detalhe\" do resumo.",
+  "correta": "**D) flexor longo dos dedos.** É o músculo que nasce da face posterior da tíbia, abaixo da linha do sóleo, na faixa medial apontada.",
   "incorretas": {
-   "A": "**Sóleo.**\n- Na **linha do sóleo** e na fíbula proximal (área mais alta e ampla).",
-   "B": "**Poplíteo.**\n- Origem no **fêmur**; insere-se acima da linha do sóleo.",
-   "C": "**Tibial posterior.**\n- **Membrana interóssea** (central)."
+   "A": "**Solear** nasce da linha do sóleo e da cabeça da fíbula, acima da faixa apontada.",
+   "B": "**Poplíteo** se insere na tíbia proximal posterior, acima da linha do sóleo; ali a área é de inserção, não de origem.",
+   "C": "**Tibial posterior** nasce da faixa central, sobre a membrana interóssea e os dois ossos, e não da faixa estreita só da tíbia."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 443, 491 e 492",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0197": {
@@ -2056,37 +2125,52 @@
   "conferido": false
  },
  "pe-tornozelo-0206": {
-  "conceito": "### O caso\n- **Paciente:** homem de 54 anos, **maratonista**.\n- **Quadro:** dor posterior no calcâneo esquerdo com **hiperemia** e **aumento de volume**; **contratura do tríceps**; sem resposta a AINE.\n- **Imagem:**\n  - as **fotos** mostram proeminência **posterior / posterolateral** do calcanhar, avermelhada;\n  - as **radiografias em perfil** comparam os dois lados.\n- **Gabarito:** ==tendinopatia insercional crônica + ressecção cirúrgica do esporão e da bursa==.\n\n### Tendinopatia insercional do Aquiles\n- **Perfil:** 40 a 60 anos, **sobrepeso**, corredores.\n- **Achados:**\n  - **esporão / calcificação** intratendínea na inserção;\n  - **bursite retrocalcânea**;\n  - com ou sem **Haglund**.\n- **Contratura** do gastrocnêmio aumenta a carga na inserção.\n\n### Tratamento\n- **1ª linha (em geral por 3 a 6 meses):**\n  - **elevação do calcanhar**;\n  - calçado sem contraforte;\n  - **excêntrico sem dorsiflexão** abaixo do neutro;\n  - alongamento;\n  - **ondas de choque**.\n- **Cirurgia** na **falha**:\n  - ressecção do **esporão**, do **Haglund** e da **bursa**;\n  - debridamento do tendão degenerado;\n  - **reinserção** com âncoras;\n  - com ou sem **FLH** e **recessão do gastrocnêmio**.\n- **Evitar corticoide** peritendíneo, pelo risco de **ruptura**.\n\n> **Na prova:** gabarito = ==tendinopatia insercional crônica; ressecção do esporão e da bursa== (ver o alerta).",
-  "correta": "**Tendinopatia insercional crônica do calcâneo; ressecção cirúrgica do esporão e da bursa** (gabarito).",
+  "conceito": "O caso é de dor na inserção do tendão do calcâneo num corredor de meia-idade, com contratura do tríceps sural e falha do tratamento com anti-inflamatório. A banca separa a tendinopatia insercional da síndrome de HAGLUND e pergunta a conduta.\n\n**A imagem** (do Campbell's Operative Orthopaedics, 14ª ed.). Em A, o calcanhar esquerdo de perfil, com uma saliência na parte posterior. Em B, a vista posterior mostra um abaulamento arredondado e avermelhado sobre a inserção do tendão. Em C e D, radiografias em perfil dos dois pés, esquerdo e direito, para comparação do contorno posterior do calcâneo.\n\n**A anatomia da inserção** (Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3846). O tendão do calcâneo é o maior e mais forte do tornozelo, formado pelo gastrocnêmio e pelo sóleo, e **roda 90°** antes de se fixar na tuberosidade. Recebe sangue pelo paratendão, por ramos musculares e por **vasos intraósseos na inserção**. A **contratura** do gastrocnêmio e do sóleo aumenta a tração justamente nesse ponto, e a região da inserção é onde se formam o esporão e a bursite.\n\n**O raciocínio do gabarito.** O quadro é de doença da **própria inserção** (tendinopatia insercional crônica), com esporão e bursa inflamada, refratária ao tratamento clínico. A conduta aceita pela banca é a **ressecção cirúrgica do esporão e da bursa**. A infiltração com corticoide ou com plasma rico em plaquetas na região do tendão não trata o esporão nem a bursa, e prolongar o conservador por seis meses ignora a falha já documentada.\n\nA anatomia do tendão do calcâneo está na seção \"O tendão do calcâneo e a fáscia plantar\" do resumo.",
+  "correta": "**C) tendinopatia insercional crônica do calcâneo; ressecção cirúrgica do esporão e da bursa.** Dor na inserção, com esporão, bursa inflamada e contratura do tríceps, refratária ao tratamento clínico.",
   "incorretas": {
-   "A": "**Haglund; corticoide.**\n- A infiltração junto ao Aquiles tem risco de **ruptura**.",
-   "B": "**Haglund; PRP.**\n- O PRP é adjuvante estudado, sem evidência para ser a conduta indicada aqui.",
-   "D": "**Tendinopatia insercional; conservador por 6 meses.**\n- É a **primeira linha habitual**.\n- O gabarito escolheu a cirurgia pela refratariedade e pelo esporão estabelecido (ver o alerta)."
+   "A": "**HAGLUND com corticoide** erra o diagnóstico, que é da própria inserção, e propõe infiltrar perto de um tendão doente.",
+   "B": "**HAGLUND com plasma rico em plaquetas** mantém o diagnóstico errado e não resolve o esporão nem a bursa.",
+   "D": "**Tendinopatia insercional com seis meses de conservador** acerta o diagnóstico, mas a banca considera indicada a cirurgia diante do quadro refratário."
   },
-  "alerta": "Gabarito discutível: com 15 dias de sintomas e sem tratamento estruturado, a primeira linha habitual na tendinopatia insercional é conservadora (elevação do calcanhar, excêntrico adaptado, ondas de choque) por 3 a 6 meses, o que corresponde à alternativa D. O gabarito oficial escolheu a cirurgia (C).",
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3846",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "alerta": "Os capítulos lidos do Campbell 15 descrevem a anatomia e a irrigação do tendão do calcâneo, mas não a diferenciação com a síndrome de HAGLUND nem a indicação cirúrgica da tendinopatia insercional; o gabarito oficial (C) foi mantido.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0207": {
-  "conceito": "### A imagem\nAcesso **dorsomedial** / medial à 1ª MTF, na cirurgia do hálux valgo. A seta aponta o **nervo** que cruza o campo no **dorso medial** do hálux: o **nervo cutâneo dorsal medial do hálux**, ramo sensitivo do ==fibular superficial==.\n\n### Por que importa\n- É o nervo **mais lesado** na cirurgia do hálux valgo, por tração, esmagamento ou secção.\n- **Consequências:**\n  - dormência;\n  - disestesia;\n  - **neuroma** doloroso;\n  - causa frequente de **insatisfação**, mesmo com boa correção óssea.\n- **Prevenção:** identificar e proteger na incisão **medial / dorsomedial**; fechar a cápsula sem prendê-lo.\n\n### Sensibilidade do hálux\n| Região | Nervo |\n|---|---|\n| **Dorsomedial** | ==fibular superficial== (cutâneo dorsal medial) |\n| **1º espaço dorsal** (lado lateral do hálux) | **fibular profundo** |\n| **Plantar medial** | **plantar medial** (digital próprio) |\n| Borda medial do pé (até a MTF) | **safeno** (variável) |\n\n### Os distratores\n- **Adutor e abdutor do hálux:** são **músculos** (plantar lateral e plantar medial, respectivamente), não nervos.\n- **Fibular profundo:** inerva o **1º espaço**, não o dorso medial do hálux.\n\n> **Na prova:** ramo sensitivo dorsomedial do hálux = ==fibular superficial==.",
-  "correta": "**Fibular superficial.**",
+  "conceito": "A figura do Campbell mostra uma incisão medial no hálux, sobre a 1ª metatarsofalângica, como nas cirurgias do hálux valgo. Dentro da ferida, a seta aponta um fio amarelo que corre no subcutâneo do dorso medial: um nervo sensitivo que precisa ser poupado.\n\n**A imagem.** Pé visto pelo lado medial, com o hálux à esquerda. Uma incisão longitudinal expõe a cápsula da metatarsofalângica; acima dela, um nervo vindo do dorso do pé desce ao longo da borda medial do hálux, e a seta o marca.\n\n**Quem dá a sensibilidade do hálux medial** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 572). O **fibular superficial** atravessa a fáscia no terço distal da perna e se divide em dois cutâneos dorsais: o **intermédio**, para o dorso, e o **medial**, que inerva a **região medial do hálux**. No pé ele não tem função motora. O dorso tem, ao todo, **três** cutâneos: dois do fibular superficial e um do sural (cutâneo dorsal lateral).\n\n**Por que não o fibular profundo.** O ramo sensitivo do fibular profundo é o **medial**, que inerva só o **1º espaço interdigital dorsal** (pág. PDF 571 e 572). Ele fica no espaço entre o hálux e o 2º dedo, e não na borda medial do hálux.\n\n**Nomes de músculo.** Adutor e abdutor do hálux são músculos, inervados pelos plantares lateral e medial; não dão nome a nervos sensitivos.\n\nOs nervos do dorso estão na seção \"Os nervos da perna e do pé\" do resumo.",
+  "correta": "**D) fibular superficial.** O nervo da borda medial do hálux é o cutâneo dorsal medial, ramo do fibular superficial.",
   "incorretas": {
-   "A": "**\"Adutor do hálux\".**\n- É um músculo (plantar lateral), não um nervo.",
-   "B": "**Fibular profundo.**\n- Inerva o **1º espaço** dorsal, não o dorsomedial.",
-   "C": "**\"Abdutor do hálux\".**\n- É um músculo (plantar medial), não um nervo."
+   "A": "**Adutor do hálux** é músculo da 3ª camada plantar, inervado pelo plantar lateral; não há nervo sensitivo com esse nome.",
+   "B": "**Fibular profundo** tem ramo sensitivo apenas para o 1º espaço interdigital dorsal, entre o hálux e o 2º dedo.",
+   "C": "**Abdutor do hálux** é músculo da 1ª camada, inervado pelo plantar medial, e não um nervo do dorso."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 571 e 572",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4032",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0208": {
-  "conceito": "### A imagem\nVista **anterolateral** do tornozelo e do pé, com os retináculos extensores. A seta aponta o **ventre muscular** no **dorso lateral** do pé, sob os tendões do ELD: o ==extensor curto dos dedos==.\n\n### Extensor curto dos dedos (pedioso)\n- **Origem:** face **superolateral do calcâneo** / seio do tarso.\n- **Inserção:** tendões para os dedos **mediais**; a porção do hálux é o **extensor curto do hálux**.\n- **Inervação:** **fibular profundo**.\n- **É o único músculo do dorso do pé.**\n\n### Aplicações\n- **Interposição** na ressecção da coalizão **calcaneonavicular**.\n- **Atrofia:** sinal de lesão do **fibular profundo** / L5.\n- **Confunde-se com edema** ou tumor.\n- **Referência** no acesso ao seio do tarso (rebatido distalmente).\n\n### Os distratores\n- **Lumbricais:** **plantares**, dos tendões do FLD.\n- **\"Quadrado dorsal\":** não existe; o que existe é o **quadrado plantar**.\n- **Interósseos dorsais:** entre os metatarsos, **profundos**.\n\n> **Na prova:** ventre carnoso no dorso lateral do pé = ==extensor curto dos dedos==.",
-  "correta": "**Extensor curto dos dedos.**",
+  "conceito": "No dorso do pé, só existe um ventre muscular visível, e ele fica sobre o seio do tarso, por baixo dos tendões longos dos extensores. A seta aponta esse ventre avermelhado no desenho do Campbell.\n\n**A imagem.** Tornozelo e pé vistos de frente e um pouco de lado. Os retináculos dos extensores cruzam o tornozelo em faixas. À frente do maléolo lateral, sob os tendões do extensor longo dos dedos que se abrem para os dedos, aparece um ventre carnoso baixo, que se dirige obliquamente para os dedos: é o ponto da seta.\n\n**O extensor curto dos dedos** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 558, 571 e 572). Nasce na **face dorsal do calcâneo**, junto ao seio do tarso, com o extensor curto do hálux ao lado, e envia tendões aos dedos. É inervado pelo **ramo lateral (motor) do fibular profundo**, que segue com a artéria tarsal lateral. Ele é **desinserido ou dividido** na incisão anterolateral do tornozelo e de CHOPART (Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso), p. 14 e 15) e, na luxação subtalar **medial**, pode bloquear a redução fechada (Netter, pág. PDF 542). A atrofia dele é rara na síndrome do túnel do tarso anterior (Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4029, aprox.).\n\n**Os outros nomes.** Os **lumbricais** estão na planta, na 2ª camada, presos aos tendões do flexor longo dos dedos. Os **interósseos dorsais** ficam entre os metatarsais, profundos, e não sobre o seio do tarso. \"Quadrado dorsal\" não existe: o quadrado é o plantar.\n\nO dorso do pé está na seção \"Os músculos intrínsecos e os compartimentos do pé\" do resumo.",
+  "correta": "**D) extensor curto dos dedos.** Único ventre do dorso do pé, nasce na face dorsal do calcâneo sobre o seio do tarso e é inervado pelo fibular profundo.",
   "incorretas": {
-   "A": "**Lumbrical.**\n- **Plantar**, nos tendões do FLD.",
-   "B": "**\"Quadrado dorsal\".**\n- Não existe (há o quadrado **plantar**).",
-   "C": "**Interósseo dorsal.**\n- Profundo, entre os metatarsos."
+   "A": "**Lumbrical** é músculo da planta, na 2ª camada, nascido dos tendões do flexor longo dos dedos.",
+   "B": "**Quadrado dorsal** não existe; o músculo quadrado do pé é o quadrado plantar, na planta.",
+   "C": "**Interósseo dorsal** fica entre os corpos dos metatarsais, profundo aos tendões, longe do seio do tarso."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 542, 558, 571 e 572",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso), p. 14 e 15",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4029",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0209": {
@@ -2285,14 +2369,20 @@
   "conferido": false
  },
  "pe-tornozelo-0230": {
-  "conceito": "### O nervo indicado\nNa vista **anterior** da perna, com os músculos anteriores afastados, a seta aponta o nervo que desce **junto à artéria tibial anterior**, sobre a membrana interóssea: o ==fibular profundo==.\n\n### Trajeto\n1. O **fibular comum** contorna o colo da fíbula e divide-se.\n2. O **fibular profundo** perfura o septo intermuscular anterior e o extensor longo dos dedos.\n3. Desce com a **artéria tibial anterior**, entre o tibial anterior e os extensores longos.\n4. No tornozelo, passa sob o retináculo extensor, entre o EHL e o EDL, e segue para o dorso do pé, junto à **artéria dorsal do pé**.\n\n### Função\n- **Motora:** compartimento **anterior** (tibial anterior, EHL, EDL, fibular terceiro) e extensor curto dos dedos no pé.\n- **Sensitiva:** apenas o ==1º espaço interdigital== dorsal.\n- **Lesão:** pé caído com sensibilidade quase toda preservada.\n\n> **Na prova:** nervo que acompanha a artéria tibial anterior = ==fibular profundo==.",
-  "correta": "**Fibular profundo.**\n- Desce com a artéria tibial anterior no compartimento anterior.",
+  "conceito": "A dissecção abre o compartimento anterior da perna afastando os músculos com ganchos, e no fundo dele, sobre a membrana interóssea, corre o feixe tibial anterior. A seta aponta o nervo que acompanha a artéria.\n\n**A imagem.** Perna vista de frente, joelho em cima e dorso do pé embaixo. Ganchos abrem o espaço entre o tibial anterior e os extensores. No fundo descem juntos uma artéria vermelha e um nervo amarelo, que seguem até o dorso do pé; a seta pega o nervo no terço proximal, logo abaixo do joelho.\n\n**O fibular profundo** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 495 e 496). Depois que o fibular comum contorna o colo da fíbula, o profundo entra no compartimento **anterior** e desce **com a artéria tibial anterior**, posterior ao tibial anterior, **sobre a membrana interóssea**. Inerva o tibial anterior, o extensor longo do hálux, o extensor longo dos dedos e o fibular terceiro; não tem área sensitiva na perna. No pé, passa sob o retináculo inferior dos extensores e se divide em ramo lateral (motor, para os extensores curtos) e medial (sensitivo, do 1º espaço) (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 571 e 572).\n\n**A síndrome do compartimento anterior.** Pelo Rockwood (cap. 17), dá dormência no 1º espaço e fraqueza da extensão do tornozelo e dos dedos: é o território desse nervo.\n\n**Os outros.** O **tibial** corre atrás; o **fibular comum** só existe até o colo da fíbula; o **fibular superficial** desce no compartimento lateral, longe da artéria.\n\nO fibular profundo está na seção \"Os nervos da perna e do pé\" do resumo.",
+  "correta": "**C) fibular profundo.** É o nervo que desce com a artéria tibial anterior sobre a membrana interóssea, no compartimento anterior.",
   "incorretas": {
-   "A": "**Tibial.**\n- Corre na face **posterior** da perna, com os vasos tibiais posteriores.",
-   "B": "**Fibular comum.**\n- Tronco **proximal**, ao redor do colo da fíbula, antes de se dividir.",
-   "D": "**Fibular superficial.**\n- Desce no compartimento **lateral**, entre os fibulares e o EDL, sem acompanhar a artéria tibial anterior."
+   "A": "**Tibial** desce no compartimento posterior, com os vasos tibiais posteriores, e não aparece na dissecção anterior.",
+   "B": "**Fibular comum** termina ao contornar o colo da fíbula, onde se divide; não desce pela perna.",
+   "D": "**Fibular superficial** corre no compartimento lateral, entre os fibulares, sem acompanhar a artéria tibial anterior."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 495 e 496",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 571 e 572",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0231": {
@@ -2307,18 +2397,19 @@
   "conferido": false
  },
  "pe-tornozelo-0232": {
-  "conceito": "**A imagem.** Vista **lateral** da perna direita. A seta aponta o ventre muscular **superficial** na face lateral da metade **proximal** da perna, logo abaixo da cabeça da fíbula, entre o compartimento anterior e o posterior: é o **fibular longo**.\n\n**O compartimento lateral da perna** contém os dois fibulares e o **nervo fibular superficial**.\n\n| Aspecto | Fibular longo | Fibular curto |\n|---|---|---|\n| Origem | **Cabeça** e dois terços **proximais** da face lateral da fíbula | Dois terços **distais** da fíbula, profundo ao longo |\n| Posição no maléolo | **Posterior** ao curto | Junto ao osso, **anterior** ao longo |\n| Trajeto no pé | Passa pelo sulco do **cuboide** e cruza a planta | Segue lateralmente |\n| Inserção | Base do **1º metatarso** e cuneiforme medial | **Base do 5º metatarso** (tuberosidade) |\n| Ação principal | Eversão e **flexão plantar do 1º raio** | **Eversão** (o mais forte) |\n\n**O fibular terceiro** não é do compartimento lateral: é uma porção do extensor longo dos dedos, no compartimento **anterior**, inserido na base do 5º metatarso (dorsal), e falta em parte das pessoas. **Não existe \"fibular profundo\"** como músculo; o **nervo fibular profundo** é o nervo do compartimento anterior.\n\n**Aplicações clínicas.**\n- O **fibular longo** abaixa o 1º metatarso; no pé cavo, o fibular longo forte com tibial anterior fraco aumenta a flexão plantar do 1º raio. A **transferência do fibular longo para o curto** é parte da correção do pé cavo-varo.\n- O **fibular curto** sofre ruptura longitudinal no maléolo lateral, sobretudo com instabilidade lateral crônica.\n- A avulsão da base do 5º metatarso (fratura da zona 1) é atribuída à tração do fibular curto e da faixa lateral da fáscia plantar.\n- O **os peroneum**, sesamoide no tendão do fibular longo junto ao cuboide, pode fraturar e causar dor lateral.",
-  "correta": "**Correta: B (longo).** A seta aponta o ventre superficial da face lateral, na metade proximal da perna, logo abaixo da cabeça da fíbula, onde se origina o **fibular longo**.",
+  "conceito": "De perfil, o compartimento lateral da perna tem dois músculos, um em cima do outro. A seta, no terço proximal, aponta o mais alto e mais superficial: o **fibular longo**.\n\n**A imagem.** Perna de perfil lateral, joelho em cima. A seta fica logo abaixo da cabeça da fíbula, num ventre que desce pela face lateral da perna à frente do sóleo e atrás dos extensores.\n\n**Os dois fibulares** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 490). O **fibular longo** nasce da **parte proximal lateral da fíbula**, passa atrás do maléolo lateral, entra no **sulco do cuboide** e cruza a planta até o **cuneiforme medial e a base do 1º metatarsal**; faz flexão plantar do 1º raio e testa S1. O **fibular curto** nasce da **parte distal** da fíbula, tem o **ventre mais distal** da perna e se insere na **base do 5º metatarsal**, onde causa a fratura-avulsão; é o eversor. Ambos são inervados pelo fibular superficial.\n\n**Atrás do maléolo** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 64). O curto fica **anterior** ao longo, colado ao osso, e ambos passam sob o retináculo fibular superior.\n\n**O fibular terceiro** é outro compartimento: o **anterior**, inervado pelo fibular profundo, nasce da fíbula distal e vai ao 5º metatarsal, muitas vezes unido ao extensor longo dos dedos. **Fibular profundo** é nome de nervo, não de músculo.\n\nOs fibulares estão nas seções \"Os compartimentos da perna\" e \"As inserções e os nervos superficiais\" do resumo.",
+  "correta": "**B) Longo.** O ventre proximal do compartimento lateral, logo abaixo da cabeça da fíbula, é o fibular longo.",
   "incorretas": {
-   "A": "O **fibular curto** origina-se nos dois terços **distais** da fíbula e fica **profundo** ao longo, sem ventre visível na metade proximal da face lateral.",
-   "C": "O **fibular terceiro** pertence ao compartimento **anterior**, junto ao extensor longo dos dedos, no terço distal da perna.",
-   "D": "Não existe músculo **fibular profundo**; o termo designa o **nervo** fibular profundo, do compartimento anterior."
+   "A": "**Curto** tem o ventre distal, no terço inferior da perna, e não junto à cabeça da fíbula.",
+   "C": "**Terceiro** pertence ao compartimento anterior e fica no terço distal, unido ao extensor longo dos dedos.",
+   "D": "**Profundo** é o nervo do compartimento anterior; não existe músculo fibular profundo."
   },
   "referencias": [
-   "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica, 8ª edição. Guanabara Koogan.",
-   "Coughlin MJ, Saltzman CL, Anderson RB. Mann's Surgery of the Foot and Ankle, 9ª edição"
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 489 e 490",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 64",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0233": {
@@ -2389,15 +2480,19 @@
   "conferido": false
  },
  "pe-tornozelo-0236": {
-  "conceito": "### A imagem\nVista **posterior** do tornozelo, com o **tendão calcâneo** no centro e o feixe tibial posterior (vermelho e amarelo) ao lado.\n- **Seta 1:** estrutura junto ao feixe, na face medial.\n- **Seta 2:** tendão fino junto à borda **medial** do Aquiles.\n\nSegundo o gabarito: ==seta 1 = flexor longo (comum) dos dedos; seta 2 = flexor longo do hálux==.\n\n### Estruturas posteriores e mediais no tornozelo distal\n| Estrutura | Onde fica |\n|---|---|\n| **Tibial posterior** | o mais **anterior**, colado ao maléolo |\n| **FLD** | logo atrás do tibial posterior |\n| Feixe tibial posterior | entre o FLD e o FLH |\n| **FLH** | o mais **posterior** e **lateral** do grupo; ventre baixo; perto do Aquiles |\n| **Plantar delgado** | tendão **fino** que desce ao longo da borda **medial** do Aquiles e se insere no calcâneo (ausente em ~7% a 20%) |\n\n### Plantar delgado\n- **Enxerto** de tendão.\n- Pode **mimetizar** um Aquiles íntegro numa ruptura.\n- É citado na **tendinopatia** medial do Aquiles.\n\n> **Na prova:** gabarito = ==FLD (1) e FLH (2)== (ver o alerta).",
-  "correta": "**Tendão do flexor comum (longo) dos dedos e tendão do flexor longo do hálux** (gabarito).",
+  "conceito": "Vista por trás, a região do tornozelo mostra o tendão do calcâneo no centro e, de cada lado, os grupos que contornam os maléolos. As setas 1 e 2 estão no lado medial e marcam dois tendões flexores separados pelo feixe tibial posterior.\n\n**A imagem.** Perna e calcanhar por trás. O tendão do calcâneo, largo, desce ao centro do calcâneo. À esquerda da figura, lado medial, descem a artéria e as veias tibiais posteriores. A seta **1** aponta um tendão logo à frente desse feixe, mais perto do maléolo medial. A seta **2** aponta um tendão mais profundo e próximo da linha média, atrás do feixe, encostado à borda do tendão do calcâneo.\n\n**A ordem atrás do maléolo medial** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 (tornozelo), pág. PDF 3290). De anterior para posterior: tibial posterior, **flexor longo dos dedos**, artéria e veias tibiais posteriores, nervo tibial e **flexor longo do hálux**. O tendão imediatamente anterior à artéria é o flexor longo dos dedos (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 492); o que fica atrás do nervo, o mais posterior e mais próximo da linha média, é o flexor longo do hálux, que nasce da fíbula e cruza para o lado medial passando entre os tubérculos do tálus.\n\n**A pegadinha do plantar delgado.** O plantar tem um tendão longo e fino que desce junto ao tendão do calcâneo até o calcâneo (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 491) e pode ser confundido com a seta 2; mas ele é superficial, do compartimento posterior superficial, e não passa no corredor do maléolo. O tibial posterior, o mais anterior, fica escondido contra o maléolo.\n\nO corredor está na seção \"O corredor atrás do maléolo medial\" do resumo.",
+  "correta": "**A) Tendão do flexor comum dos dedos e tendão do flexor longo do hálux.** O primeiro fica à frente da artéria tibial posterior; o segundo, atrás do nervo tibial, é o mais posterior do corredor.",
   "incorretas": {
-   "B": "**Plantar delgado e FLH.**\n- O plantar corre na borda medial do Aquiles.\n- O gabarito não o considerou na seta 1 (ver o alerta).",
-   "C": "**FLH e tibial posterior.**\n- A ordem não corresponde: o tibial posterior é o mais **anterior**.",
-   "D": "**Plantar delgado e tibial posterior.**\n- Não corresponde às posições indicadas."
+   "B": "**Plantar delgado e flexor longo do hálux** acerta a seta 2, mas o plantar é superficial, junto ao tendão do calcâneo, e não fica à frente do feixe.",
+   "C": "**Flexor longo do hálux e tibial posterior** inverte a ordem: o hálux é o mais posterior, e o tibial posterior, o mais anterior.",
+   "D": "**Plantar delgado e tibial posterior** erra os dois: nenhum deles ocupa as posições junto ao feixe tibial posterior."
   },
-  "alerta": "Na figura, a seta 2 aponta um tendão fino junto à borda medial do tendão calcâneo, posição em que corre o plantar delgado. O gabarito oficial considera setas 1 e 2 como flexor longo dos dedos e flexor longo do hálux; a identificação pela imagem é discutível.",
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 (tornozelo), pág. PDF 3290",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 491 e 492",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0237": {
@@ -2673,15 +2768,21 @@
   "conferido": false
  },
  "pe-tornozelo-0257": {
+  "conceito": "A fascite plantar é a causa clássica de dor no calcanhar do adulto, e a questão pede a característica que acompanha a dor na face medial da tuberosidade. O gabarito oficial escolhe uma associação que os livros lidos não descrevem, por isso vale entender o quadro inteiro.\n\n**O quadro** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 586). A dor fica na **face plantar medial do calcâneo**, é **matinal** (pior nos primeiros passos ao levantar), predomina em **mulheres (2:1)** e em **obesos**. A aponeurose plantar sustenta o arco longitudinal e é a estrutura inflamada (pág. PDF 546).\n\n**O mecanismo** (Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3872 e 3873, aprox.). O achado mais comum é a dor localizada na **face inferomedial da tuberosidade**. O **molinete** explica a piora: a dorsiflexão dos dedos encurta a fáscia, eleva o arco e tensiona a origem dela no calcâneo. Perto dessa origem passam o **ramo calcâneo medial** do nervo tibial e o **nervo de BAXTER** (1º ramo do plantar lateral), cuja compressão responde por **1% a 2%** da dor no calcanhar (Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4031, aprox.).\n\n**O que o gabarito quer.** A ligação entre fascite e dor na cabeça medial do gastrocnêmio passa pelo tríceps sural encurtado, que aumenta a tensão sobre a fáscia; a banca considerou essa associação a característica correta.\n\n**As distratoras.** A dor não é tardia nem noturna: é de **início ao primeiro passo** e alivia após alguns passos. Dor na borda lateral do pé aponta outro diagnóstico, como o território do sural.\n\nA fascite está na seção \"O tendão do calcâneo e a fáscia plantar\" do resumo.",
+  "correta": "**D) associada à dor na cabeça medial do músculo gastrocnêmio.** É a associação escolhida pela banca, ligada ao encurtamento do tríceps sural que tensiona a fáscia.",
   "incorretas": {
-   "A": "A dor da fascite não tem início tardio. O traço típico é a dor intensa nos primeiros passos depois do repouso.",
-   "B": "É o contrário: a dor piora ao levantar de manhã. Dor noturna é sinal de alerta para outras doenças.",
-   "C": "Dor na borda lateral do pé não faz parte da fascite e leva a pensar em outros diagnósticos."
+   "A": "**De início tardio** contraria o padrão: a dor da fascite surge logo nos primeiros passos.",
+   "B": "**Noturna, que melhora ao amanhecer** inverte o horário: a fascite é pior justamente pela manhã, ao levantar.",
+   "C": "**Dor na borda lateral do pé** não pertence à fascite, que dói na face inferomedial da tuberosidade."
   },
-  "conceito": "A **fascite plantar** é a causa mais comum de dor embaixo do calcanhar no adulto. A dor fica na **face medial da tuberosidade do calcâneo**, onde nasce a fáscia plantar, e tem um padrão típico: é **pior nos primeiros passos da manhã** ou depois de ficar sentado um tempo, melhora quando a pessoa \"aquece\" o pé andando alguns minutos e volta a piorar depois de muito tempo em pé.\n\nO achado mais associado a ela é o **encurtamento da panturrilha**, principalmente do músculo **gastrocnêmio**. A lógica é a seguinte:\n\n1. com o gastrocnêmio curto, o tornozelo não consegue levantar o pé (fazer dorsiflexão) o suficiente durante a marcha;\n2. o pé compensa \"cedendo\" no mediopé, que se achata a cada passo;\n3. esse achatamento estica a fáscia plantar repetidamente, sobrecarregando a sua origem no calcâneo.\n\nPor isso, a questão associa a fascite à **dor na cabeça medial do gastrocnêmio**, um sinal desse músculo tenso e encurtado.\n\nNa prática, isso significa duas coisas. Primeiro, todo paciente com fascite deve ser examinado com o **teste de Silfverskiöld**, que mostra se o encurtamento é só do gastrocnêmio. Segundo, o **alongamento** da panturrilha é um dos pilares do tratamento. Nos casos que não melhoram, pode-se alongar cirurgicamente o gastrocnêmio.\n\nSinais que **não** combinam com fascite e devem fazer pensar em outras doenças:\n\n**dor noturna**: tumor, infecção ou dor de origem nervosa;\n\n**dor na borda lateral do pé**: problemas no 5º metatarso, nos tendões fibulares ou na compressão de um ramo nervoso.",
-  "alerta": "A associação entre fascite plantar e encurtamento do gastrocnêmio é bem estabelecida. A dor na cabeça medial do gastrocnêmio, como sinal associado, é menos descrita nas referências usuais. O gabarito oficial foi mantido.",
-  "correta": "Associada à dor na cabeça medial do músculo gastrocnêmio. O gastrocnêmio encurtado sobrecarrega a fáscia, e a questão aponta essa dor como achado associado.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 546 e 586",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3872 e 3873",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4031",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "alerta": "Nenhum dos livros lidos (Netter 2 e Campbell 15) associa a fascite plantar à dor na cabeça medial do gastrocnêmio; o gabarito oficial (D) foi mantido.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0264": {
@@ -2878,18 +2979,19 @@
   "conferido": false
  },
  "pe-tornozelo-0281": {
-  "conceito": "**A imagem.** Vista **medial** do tornozelo e do pé, com o **retináculo dos flexores** e o **túnel do tarso**. O **nervo tibial** desce atrás do maléolo medial e, sob o retináculo, divide-se em dois ramos terminais:\n- **seta 1**: o ramo que segue mais **anterior** e superior, ao longo da borda medial do pé: o **nervo plantar medial**;\n- **seta 2**: o ramo que segue mais **posterior** e inferior, em direção à planta lateral: o **nervo plantar lateral**.\n\n**O túnel do tarso.** É o canal osteofibroso atrás do **maléolo medial**, coberto pelo **retináculo dos flexores** (ligamento lacinado). O conteúdo, de anterior para posterior, é lembrado pelo mnemônico **\"Tom, Dick And Very Nervous Harry\"**:\n- **T**ibial posterior (tendão);\n- flexor longo dos **D**edos (tendão);\n- **A**rtéria tibial posterior;\n- **V**eias tibiais posteriores;\n- **N**ervo tibial;\n- flexor longo do **H**álux (tendão).\n\n**Os ramos do nervo tibial no pé.**\n\n| Ramo | Território |\n|---|---|\n| **Plantar medial** | Sensibilidade da planta **medial** e dos 3 dedos e meio mediais; músculos: abdutor do hálux, flexor curto dos dedos, flexor curto do hálux, 1º lumbrical (o \"mediano do pé\") |\n| **Plantar lateral** | Sensibilidade da planta **lateral** e de 1 dedo e meio laterais; a maioria dos músculos intrínsecos (o \"ulnar do pé\") |\n| Calcâneo medial | Sensibilidade do **calcanhar** (sai antes ou dentro do túnel) |\n| Primeiro ramo do plantar lateral (nervo de Baxter) | Abdutor do dedo mínimo; comprimido na fascite plantar crônica |\n\n**A síndrome do túnel do tarso.** É a **compressão do nervo tibial** ou dos seus ramos no túnel. Causas: gânglios, varizes, tenossinovite, fraturas, pé plano valgo, lipomas. Quadro: **dor em queimação** e **parestesia** na **planta** do pé, que pioram ao ficar em pé e à noite, com **sinal de Tinel** atrás do maléolo medial. O calcanhar pode ser poupado se o ramo calcâneo sair antes do túnel.\n\n**O nervo safeno.** É um ramo **sensitivo** do femoral, que corre **à frente** do maléolo medial, com a veia safena magna, e não entra no túnel do tarso. Dá a sensibilidade da face medial da perna e do pé (até a base do hálux).",
-  "correta": "**Correta: C (plantar medial e plantar lateral).** No túnel do tarso, o nervo tibial divide-se nos seus ramos terminais. A seta 1 aponta o ramo mais **anterior**, o **nervo plantar medial**, e a seta 2 o ramo mais **posterior**, o **nervo plantar lateral**.",
+  "conceito": "O nervo tibial chega ao pé pelo túnel do tarso e se divide em dois plantares que entram na planta por caminhos diferentes. As setas 1 e 2 apontam esses dois ramos logo depois da divisão.\n\n**A imagem.** Pé visto pelo lado medial, calcanhar à direita. Atrás do maléolo medial descem os tendões flexores (em azul, nas bainhas) e o feixe tibial posterior sob o retináculo dos flexores. Abaixo do maléolo, o nervo se divide: a seta **1** aponta o ramo que segue mais para a frente e para cima, acompanhando a borda medial do pé em direção ao hálux; a seta **2** aponta o ramo que mergulha mais para trás e para baixo, em direção ao centro e à borda lateral da planta.\n\n**A divisão** (Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4025, aprox.). O tibial dá três terminais, em geral dentro do túnel, logo proximal à borda superior do abdutor do hálux: o **calcâneo medial** (o primeiro, para a pele do calcanhar), o **plantar medial** e o **plantar lateral**.\n\n**Os territórios** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 570). O **plantar medial** segue pelo lado medial na 2ª camada, com a artéria plantar medial entre o abdutor do hálux e o flexor curto dos dedos; inerva abdutor do hálux, flexor curto dos dedos, flexor curto do hálux e lumbrical medial e dá a sensibilidade da parte medial da planta. O **plantar lateral** cruza para fora entre o quadrado plantar e o flexor curto dos dedos, solta o nervo de BAXTER e inerva o resto dos intrínsecos.\n\n**O safeno** passa **anterior** ao maléolo medial, com a veia safena magna, e fica fora do túnel.\n\nOs plantares estão na seção \"Os nervos da perna e do pé\" do resumo.",
+  "correta": "**C) Plantar medial e plantar lateral.** O ramo 1 segue pela borda medial em direção ao hálux; o ramo 2 mergulha para a planta lateral.",
   "incorretas": {
-   "A": "O **safeno** corre **à frente** do maléolo medial e não é um dos ramos do nervo tibial no túnel do tarso. A seta 1 é o plantar medial.",
-   "B": "O plantar medial está certo, mas a seta 2 é o **plantar lateral**. O safeno não passa no túnel do tarso.",
-   "D": "A ordem está invertida: o ramo **anterior** (seta 1) é o plantar **medial**, e o **posterior** (seta 2) é o plantar **lateral**."
+   "A": "**Plantar lateral e safeno** erra os dois: o ramo anterior é o medial, e o safeno corre à frente do maléolo, fora do túnel.",
+   "B": "**Plantar medial e safeno** acerta a seta 1, mas o safeno não nasce do tibial nem passa atrás do maléolo.",
+   "D": "**Plantar lateral e plantar medial** troca a ordem: o ramo que segue pela borda medial é o plantar medial."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
-   "Netter FH. Atlas de Anatomia Humana. 7ª edição. Elsevier; 2019."
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 570 e 574",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4025",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0282": {
@@ -3094,14 +3196,19 @@
   "conferido": false
  },
  "pe-tornozelo-0297": {
+  "conceito": "No reparo do tendão do calcâneo, a dissecção começa pela face posterior, a que fica sob a pele. A questão pergunta onde estão os vasos que alimentam o tendão e que, por isso, não devem ser descolados.\n\n**De onde vem o sangue** (Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3846). O tendão do calcâneo recebe irrigação de três fontes: o **paratendão**, que chega pela **face profunda**; os ramos musculares proximais, na junção miotendínea; e os vasos intraósseos, na inserção. Entre essas fontes sobra uma **zona de relativa avascularidade de 2 a 6 cm acima da inserção**, onde a ruptura costuma acontecer.\n\n**O mesotendão anterior** (Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (tendão do calcâneo), p. 2253). O Campbell especifica que a principal irrigação vem do **mesotendão**, e a mais rica pelo **mesentério anterior**, a lâmina que liga a face anterior (profunda) do tendão às partes moles do espaço à frente dele. Essa irrigação **diminui com a idade**, o que ajuda a explicar a ruptura no adulto de meia-idade. A angiografia mostra a mesma zona hipovascular de 2 a 6 cm.\n\n**A consequência cirúrgica** (Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3851, aprox.). Não se descola em excesso a face profunda do tendão durante o reparo, para não tirar o pouco sangue que resta no coto.\n\n**A armadilha.** A face posterior é a que o cirurgião vê primeiro e tende a imaginar como a mais importante, mas é subcutânea e pobre em vasos. As faces medial e lateral também não concentram o mesotendão.\n\nA irrigação está na seção \"O tendão do calcâneo e a fáscia plantar\" do resumo.",
+  "correta": "**C) anterior.** O mesotendão que irriga o tendão do calcâneo chega pela face anterior, profunda, e deve ser preservado no reparo.",
   "incorretas": {
-   "A": "A face medial é por onde costuma ser feita a incisão, porque se afasta do nervo sural, mas não é por ela que entram os vasos do mesotendão.",
-   "B": "Na face lateral passam o nervo sural e a veia safena parva, que devem ser protegidos, mas ela não é a entrada dos vasos do mesotendão.",
-   "D": "A face posterior fica logo abaixo da pele fina e é a que menos contribui para a irrigação do tendão."
+   "A": "**Medial** é borda do tendão, onde terminam as fibras do sóleo; não é a face por onde entra o mesotendão.",
+   "B": "**Lateral** é a borda onde terminam as fibras do gastrocnêmio, sem concentrar os vasos do mesotendão.",
+   "D": "**Posterior** é a face subcutânea, abordada primeiro na cirurgia, mas pobre em vasos."
   },
-  "conceito": "O **tendão de Aquiles** (tendão calcâneo) não tem uma bainha sinovial verdadeira, como os tendões que fazem curvas atrás dos maléolos. Ele é envolvido por uma camada fina de tecido chamada **paratendão**, que permite o deslizamento e leva o sangue até ele.\n\nO sangue chega ao tendão principalmente por meio do **mesotendão**, uma lâmina de tecido com **múltiplos pequenos vasos** que liga o paratendão ao tendão e entra pela sua face **anterior**, a face profunda, voltada para o tornozelo. Há também contribuições menores nas extremidades: perto do músculo, em cima, e perto da inserção no calcâneo, embaixo.\n\nEntre cerca de **2 e 6 cm acima da inserção** fica a região com **menos vasos**. É ali que o tendão mais degenera e onde ocorre a maioria das rupturas.\n\n**O que isso muda na cirurgia de reparo:**\n\na **face anterior** e o paratendão devem ser **preservados**. Dissecar essa face tiraria o sangue justamente da região que precisa cicatrizar;\n\na incisão costuma ser **posteromedial**, porque assim evita o **nervo sural**, que corre pela face **lateral** junto com a veia safena parva;\n\na pele atrás do tornozelo é **fina** e cicatriza mal, por isso o cirurgião evita descolar retalhos e fecha o paratendão com cuidado. Problemas de ferida são uma complicação frequente dessa cirurgia.\n\n**Resumo das faces do tendão**: anterior, os vasos do mesotendão; posterior, pele fina; lateral, nervo sural e veia safena parva; medial, a via de acesso mais segura.\n\n**Na prova**: os vasos do mesotendão entram pela face anterior do tendão de Aquiles.",
-  "correta": "Anterior. É pela face anterior, a mais profunda, que o mesotendão leva os vasos ao tendão, e ela deve ser poupada no reparo.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (tendão do calcâneo), p. 2253",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3846 e 3851",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0298": {
@@ -3166,14 +3273,21 @@
   "conferido": false
  },
  "pe-tornozelo-0303": {
-  "conceito": "### Tendões ao redor do tendão calcâneo\n- Numa secção logo acima do calcâneo, cada lado do tendão calcâneo tem um vizinho característico.\n- **Medial e profundo:** o ==flexor longo do hálux==, o tendão mais posterior do compartimento profundo, ainda com fibras musculares baixas (\"ventre baixo\").\n- **Lateral:** os fibulares, atrás do maléolo lateral; o ==fibular curto== fica mais anterior e junto ao osso, o fibular longo por fora dele.\n\n### Ordem atrás do maléolo medial (de anterior para posterior)\n- **T**ibial posterior, fle**x**or longo dos **d**edos, **A**rtéria e **N**ervo tibial, flexor longo do **H**álux.\n- Mnemônico: \"**T**om, **D**ick **AN**d **H**arry\".\n\n### Por que o FLH é importante\n- Passa entre os tubérculos posteriores do tálus: tendinopatia e impacto posterior (bailarinos).\n- É o doador preferido nas lesões crônicas do tendão calcâneo, justamente por estar ao lado dele.\n\n> **Na prova:** ao lado do tendão calcâneo = ==FLH medialmente e fibular curto lateralmente==.",
-  "correta": "**São os vizinhos imediatos do tendão calcâneo.**\n- Medialmente, junto ao feixe tibial posterior, corre o flexor longo do hálux, o mais posterior dos tendões profundos.\n- Lateralmente, contornando o maléolo lateral, está o fibular curto, mais anterior e profundo que o fibular longo.",
+  "conceito": "A peça mostra o retropé por trás, com o tendão do calcâneo retirado em parte, e duas setas, uma de cada lado, apontam um tendão do corredor medial e um do corredor lateral. A questão cruza os dois lados numa só resposta.\n\n**A imagem.** Por trás, o tendão do calcâneo desce largo ao centro. No lado medial (à esquerda da figura), junto aos vasos tibiais posteriores, a seta **1** aponta um tendão encostado à borda do tendão do calcâneo, o mais posterior do grupo medial. No lado lateral (à direita), a seta **2** aponta um tendão que desce colado à face posterior do maléolo lateral.\n\n**O lado medial** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 (tornozelo), pág. PDF 3290). Atrás do maléolo medial, de anterior para posterior: tibial posterior, flexor longo dos dedos, vasos, nervo tibial e **flexor longo do hálux**. O hálux é o mais posterior, o mais próximo da linha média e o único lateral ao feixe numa vista de trás; nasce da fíbula e passa entre os tubérculos do processo posterior do tálus (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 527).\n\n**O lado lateral** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 64). Atrás da fíbula, o **fibular curto fica anterior ao longo**, encostado ao osso; os dois são presos pelo retináculo fibular superior. O curto tem o ventre muscular mais distal da perna (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 490), por isso ainda há carne nele na altura do maléolo, e termina na base do 5º metatarsal.\n\n**O tibial posterior** não seria apontado ali: é o mais anterior do lado medial, escondido contra o maléolo.\n\nO corredor está na seção \"O corredor atrás do maléolo medial\" do resumo.",
+  "correta": "**C) flexor longo do hálux e fibular curto.** O primeiro é o tendão mais posterior do corredor medial; o segundo desce colado à fíbula, à frente do longo.",
   "incorretas": {
-   "A": "**O tibial posterior fica mais anterior.**\n- Ele corre colado ao maléolo medial, na frente do flexor longo dos dedos.\n- Não é a estrutura medial junto ao tendão calcâneo apontada pela seta 1.",
-   "B": "**Erra as duas setas.**\n- O tibial posterior é anterior e medial demais para a seta 1.\n- O fibular longo fica por fora do fibular curto nesse nível, não na posição da seta 2.",
-   "D": "**Acerta a seta 1, erra a seta 2.**\n- O flexor longo do hálux está correto.\n- Mas nesse nível o fibular longo é mais superficial e posterior; o tendão junto ao osso é o fibular curto."
+   "A": "**Tibial posterior e fibular curto** acerta o lado lateral, mas o tibial posterior é o mais anterior do lado medial, escondido contra o maléolo.",
+   "B": "**Tibial posterior e fibular longo** erra os dois lados: o tendão medial apontado é o mais posterior, e o lateral é o que encosta no osso.",
+   "D": "**Flexor longo do hálux e fibular longo** acerta o lado medial, mas o longo fica atrás do curto, mais afastado da fíbula."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 (tornozelo), pág. PDF 3290",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 64",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 490",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 527",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
+  ],
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0304": {
@@ -3341,31 +3455,36 @@
   "conferido": false
  },
  "pe-tornozelo-0317": {
-  "conceito": "### Nervos cutâneos do dorso do pé\n| Nervo | Território |\n|---|---|\n| ==fibular superficial== | quase todo o dorso; seu ramo **cutâneo dorsal medial** chega à face dorsomedial do hálux |\n| fibular profundo | só o **1º espaço interdigital** (entre hálux e 2º dedo) |\n| sural | borda lateral do pé e 5º dedo |\n| safeno | borda medial do mediopé |\n\n### O nervo em risco na cirurgia do hálux\n- O **nervo cutâneo dorsomedial do hálux**, ramo terminal do fibular superficial, cruza o acesso dorsomedial da 1ª MTF.\n- Lesão ou tração geram **neuroma doloroso** e dormência, uma das queixas mais comuns após cirurgia de hálux valgo.\n- Deve ser identificado e afastado na dissecção.\n\n### Os distratores\n- Nervos do **adutor** e do **abdutor do hálux** são ramos motores dos nervos plantares, na planta do pé.\n\n> **Na prova:** ramo sensitivo no dorso medial do hálux = ==fibular superficial==.",
-  "correta": "**É o nervo cutâneo dorsomedial do hálux.**\n- Ramo terminal do fibular superficial, cruza o campo do acesso dorsomedial da 1ª MTF.\n- Precisa ser protegido para evitar neuroma e dormência no dorso do hálux.",
+  "conceito": "Uma incisão medial no hálux expõe a cápsula da 1ª metatarsofalângica, e no subcutâneo, logo acima, corre um nervo fino vindo do dorso do pé. O desenho é do Campbell, e o cuidado com esse nervo é o que a questão quer lembrar.\n\n**A imagem.** Antepé visto pelo lado medial. A ferida, longitudinal, fica sobre a cabeça do 1º metatarsal; a seta, de baixo, aponta um ramo amarelo que cruza o campo cirúrgico pela borda dorsomedial do hálux.\n\n**De onde vem esse nervo.** O Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo) (pág. PDF 572) descreve o **fibular superficial** furando a fáscia no terço distal da perna e virando dois cutâneos dorsais. O **intermédio** vai ao dorso. O **medial** chega à **região medial do hálux**: é ele que aparece na incisão. O Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos) (p. 4032) acrescenta que a passagem do fibular superficial pela fáscia é local de compressão e que o trajeto na perna é variável.\n\n**Por que o 1º espaço não confunde.** O fibular profundo só dá sensibilidade ao **1º espaço interdigital dorsal**, pelo ramo medial que passa sob o retináculo inferior dos extensores; a borda medial do hálux fica fora do território dele. No exame, o 1º espaço testa L5.\n\n**O que fazer com ele.** Como ramo puramente sensitivo do dorso, a lesão dá dormência e pode formar neuroma doloroso na cicatriz; por isso a dissecção do subcutâneo nessa incisão é cuidadosa.\n\nOs cutâneos do dorso estão na seção \"As inserções e os nervos superficiais\" do resumo.",
+  "correta": "**D) fibular superficial.** O nervo da incisão medial do hálux é o cutâneo dorsal medial, ramo sensitivo do fibular superficial.",
   "incorretas": {
-   "A": "**Ramo motor da planta.**\n- O nervo do adutor do hálux vem do plantar lateral e é motor.\n- Não aparece no subcutâneo dorsal.",
-   "B": "**Território pequeno.**\n- O fibular profundo, no pé, dá sensibilidade só ao 1º espaço interdigital.\n- Corre junto à artéria dorsal do pé, mais profundo, sob o retináculo.",
-   "C": "**Também é motor e plantar.**\n- O nervo do abdutor do hálux vem do plantar medial.\n- Não é estrutura cutânea do dorso."
+   "A": "**Adutor do hálux** nomeia um músculo plantar inervado pelo plantar lateral, e não um nervo do dorso.",
+   "B": "**Fibular profundo** é sensitivo só do 1º espaço interdigital dorsal, entre o hálux e o 2º dedo.",
+   "C": "**Abdutor do hálux** é músculo da 1ª camada plantar, inervado pelo plantar medial; não existe nervo sensitivo com esse nome."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 82"
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 554 e 572",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4032",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0318": {
-  "conceito": "### Extensor curto dos dedos\n- Único músculo intrínseco do **dorso** do pé (junto com o extensor curto do hálux, sua porção medial).\n- Origem: face dorsolateral do **calcâneo**, junto ao seio do tarso.\n- Ventre visível e palpável na face dorsolateral do pé, **profundo aos tendões do extensor longo**.\n- Tendões para o 2º ao 4º dedo, unindo-se aos extensores longos.\n- Inervação: nervo **fibular profundo**.\n\n### Por que ele cai em prova\n- Seu ventre é interposto após a **ressecção da coalizão calcaneonavicular**, para evitar recidiva da barra.\n- Referência na via de acesso ao seio do tarso (fraturas do calcâneo e do tálus).\n- Atrofia do ventre é sinal de lesão do fibular profundo.\n\n### Os distratores\n| Músculo | Onde fica |\n|---|---|\n| lumbricais | **planta** do pé, nos tendões do flexor longo |\n| interósseos dorsais | entre os metatarsos, profundos |\n| \"quadrado dorsal\" | não existe (há o quadrado **plantar**) |\n\n> **Na prova:** ventre muscular no dorsolateral do pé = ==extensor curto dos dedos==.",
-  "correta": "**É o músculo intrínseco do dorso.**\n- Origina-se na face dorsolateral do calcâneo e fica sob os tendões extensores longos.\n- O ventre forma uma saliência no dorsolateral do pé, exatamente onde está a estrutura apontada.",
+  "conceito": "Quem palpa o dorso do pé à frente do maléolo lateral sente um volume mole que contrai quando os dedos estendem. Esse volume é o **extensor curto dos dedos**, e a seta do desenho aponta exatamente ali.\n\n**A imagem.** Tornozelo e dorso do pé em vista anterolateral, com as faixas dos retináculos dos extensores cruzando a articulação. Abaixo delas, sobre o seio do tarso, aparece um ventre avermelhado, baixo e oblíquo, por baixo dos tendões longos que vão aos dedos.\n\n**Origem, nervo e função** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 558 e 572). Nasce na **face dorsal do calcâneo** e, junto com o extensor curto do hálux, estende os dedos. O nervo é o **ramo lateral do fibular profundo**, motor, que acompanha a artéria tarsal lateral; a mesma artéria irriga o músculo (pág. PDF 577).\n\n**Onde ele aparece na prática.**\n- Na incisão anterolateral do tornozelo e de CHOPART, é **dividido ou desinserido** para expor as articulações (Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso), p. 14 e 15); na via dupla do colo do tálus, é **refletido** (p. 13).\n- Na luxação **subtalar medial**, pode ficar interposto e **bloquear a redução fechada** (Netter, pág. PDF 542).\n- Na compressão do fibular profundo sob o retináculo inferior, a atrofia dele é rara (Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4029, aprox.).\n\n**Os falsos.** Lumbrical e interósseo dorsal não ficam sobre o seio do tarso: o primeiro é plantar, o segundo fica entre os metatarsais. \"Quadrado dorsal\" não existe.\n\nO músculo está na seção \"Os músculos intrínsecos e os compartimentos do pé\" do resumo.",
+  "correta": "**D) extensor curto dos dedos.** É o ventre baixo do dorso, sobre o seio do tarso, nascido no calcâneo e inervado pelo ramo lateral do fibular profundo.",
   "incorretas": {
-   "A": "**Ficam na planta.**\n- Os lumbricais se originam nos tendões do flexor longo dos dedos, na planta.\n- Não aparecem no dorso.",
-   "B": "**Não existe.**\n- Não há músculo \"quadrado dorsal\" no pé.\n- O quadrado plantar fica na planta, inserido no tendão do flexor longo.",
-   "C": "**Posição diferente.**\n- Os interósseos dorsais ficam entre os metatarsos, mais distais e profundos.\n- A estrutura apontada está proximal, junto ao seio do tarso."
+   "A": "**Lumbrical** nasce dos tendões do flexor longo dos dedos, na planta, e não aparece no dorso.",
+   "B": "**Quadrado dorsal** é nome inventado; o quadrado do pé é o plantar, na 2ª camada.",
+   "C": "**Interósseo dorsal** ocupa os espaços entre os metatarsais, mais distal e profundo que o ventre apontado."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 1"
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 542, 558, 572 e 577",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (vias de acesso), p. 13 a 15",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4029",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
-  "geradoEm": "2026-09-24",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0319": {
@@ -3721,19 +3840,21 @@
   "conferido": false
  },
  "pe-tornozelo-0337": {
-  "conceito": "**Instabilidade lateral crônica do tornozelo: anatômico x não anatômico.** Após entorse em inversão, cerca de 10% a 20% dos pacientes evoluem com **instabilidade crônica**: falseios repetidos, insegurança em terreno irregular e dor. A lesão envolve o **ligamento talofibular anterior** (o primeiro e mais lesado) e, em casos mais graves, o **calcaneofibular**. Quando a reabilitação (propriocepção, fibulares) falha, indica-se cirurgia.\n\n**Dois grupos de técnicas.**\n\n| Grupo | Exemplos | Princípio |\n|---|---|---|\n| **Anatômicas** | Broström, Broström-Gould, reconstrução anatômica com enxerto | Reparar ou reconstruir os próprios ligamentos, na sua posição |\n| **Não anatômicas (tenodeses)** | Watson-Jones, Evans, Chrisman-Snook | Usar o fibular curto (parte ou todo), passado por túneis na fíbula e no tálus ou calcâneo |\n\n**Por que as tenodeses limitam movimento.** O tendão passa por trajetos que **não reproduzem a orientação** dos ligamentos originais e cruzam tanto a articulação do tornozelo quanto a **subtalar**. O resultado é um tornozelo estável, mas **rígido**: restringe a **inversão** (e a mobilidade subtalar) e, pelo trajeto que cruza o tornozelo, tende a limitar a **dorsiflexão**. Além disso, sacrificam o fibular curto, um estabilizador dinâmico importante. Krips e colaboradores mostraram melhores resultados funcionais e menos rigidez e artrose com a reconstrução anatômica.\n\n**Atualidade.** O **Broström-Gould** (reparo do talofibular anterior e do calcaneofibular, reforçado pelo retináculo extensor inferior) é o padrão. Enxertos anatômicos ficam para tecido ruim, hiperfrouxidão, pacientes pesados ou revisões. Tenodeses foram praticamente abandonadas.\n\n> Tenodeses não anatômicas estabilizam, mas enrijecem, limitando inversão e dorsiflexão; preferir reparo anatômico (Broström-Gould).",
-  "correta": "**B: inversão e a dorsiflexão (resposta pela bibliografia).** Os trajetos não anatômicos do fibular curto cruzam o tornozelo e a subtalar, restringindo a inversão e tendendo a limitar a dorsiflexão, o que dá rigidez ao tornozelo.",
+  "conceito": "Na instabilidade lateral crônica, as técnicas se dividem em anatômicas, que reparam ou reconstroem os próprios ligamentos, e não anatômicas, as tenodeses que passam um tendão por túneis ósseos. A pergunta é que movimento as tenodeses tendem a roubar.\n\n**Os ligamentos que se quer substituir** (Campbell's Operative Orthopaedics, 15ª ed., cap. 94 (lesões esportivas do tornozelo), p. 4135 e 4136). O **talofibular anterior** é o mais fraco e o mais lesado; segura a translação anterior do tálus. O **calcaneofibular** é extracapsular, profundo aos fibulares, e resiste à inversão; cruza duas articulações, o tornozelo e a **subtalar**. O Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo) (pág. PDF 542) o chama de sustentação primária da subtalar.\n\n**O efeito da tenodese.** Um enxerto que não reproduz o trajeto desses ligamentos e cruza a subtalar estabiliza à custa de movimento. O Campbell lembra que a subtalar pesa no resultado: seccionar o interósseo junto com o talofibular anterior muda muito o movimento subtalar; o WATSON-JONES pode deixar instabilidade subtalar; e a modificação de CHRISMAN e SNOOK foi feita para estabilizar o lado lateral e a subtalar ao mesmo tempo. Daí a **inversão**, que é o movimento da subtalar contido pelo calcaneofibular, ser o primeiro movimento limitado.\n\n**O segundo movimento.** A resposta mais aceita para essa questão é a **dorsiflexão**, pelo trajeto do enxerto à frente do eixo do tornozelo; esse ponto não está nos livros lidos.\n\nOs ligamentos laterais e a subtalar estão na seção \"Os ligamentos: sindesmose, laterais, deltoide e subtalar\" do resumo.",
+  "correta": "**B) inversão e a dorsiflexão.** A tenodese cruza a subtalar e limita a inversão; a dorsiflexão é o segundo movimento mais citado como perdido.",
   "incorretas": {
-   "A": "**Inversão e flexão plantar**: a inversão é limitada, mas a referência aponta a dorsiflexão como o outro movimento restringido.",
-   "C": "**Eversão e flexão plantar**: as tenodeses laterais são justamente antiinversão; não limitam a eversão de forma importante.",
-   "D": "**Eversão e dorsiflexão**: a dorsiflexão pode ser limitada, mas a eversão não é o movimento restringido por uma tenodese lateral."
+   "A": "**Inversão e flexão plantar** acerta a inversão, mas a flexão plantar não é o movimento mais associado à rigidez das tenodeses.",
+   "C": "**Eversão e flexão plantar** troca o lado: o enxerto lateral contém a inversão, não a eversão.",
+   "D": "**Eversão e dorsiflexão** erra o movimento subtalar; o enxerto lateral, como o calcaneofibular, contém a inversão."
   },
   "referencias": [
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 10ª ed., p. 1402.",
-   "Krips R, van Dijk CN, Halasi T, et al. Anatomical reconstruction versus tenodesis for the treatment of chronic anterolateral instability of the ankle joint: a 2- to 10-year follow-up, multicenter study. Knee Surg Sports Traumatol Arthrosc. 2000;8(3):173-179."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 94 (lesões esportivas do tornozelo), p. 4135, 4136 e 4140",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 542",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
   "provavel": "B",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial no banco. O Campbell 15 não afirma quais movimentos os procedimentos não anatômicos limitam; só cita a possível instabilidade subtalar do WATSON-JONES e a modificação de CHRISMAN e SNOOK. A letra B (inversão e dorsiflexão) é a provável, pelo papel da subtalar e pela leitura corrente da questão.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0338": {
@@ -3801,19 +3922,21 @@
   "conferido": false
  },
  "pe-tornozelo-0342": {
-  "conceito": "**Pé cavo varo e o desequilíbrio muscular.** O pé cavo varo é a deformidade com arco longitudinal alto, antepé pronado (primeiro raio em flexão plantar) e retropé em varo. Em boa parte dos casos é **neurológico**, e a causa mais comum é a **doença de Charcot-Marie-Tooth** (neuropatia sensitivo-motora hereditária). Diante de um cavo, a regra é investigar a causa.\n\n**O desequilíbrio que cria a deformidade.** A neuropatia é dependente do comprimento: os músculos mais distais e inervados pelo fibular comum enfraquecem primeiro.\n\n| Músculo fraco | Antagonista forte | Consequência |\n|---|---|---|\n| **Tibial anterior** | Fibular longo | Primeiro raio em flexão plantar (antepé pronado) |\n| Fibular curto | Tibial posterior | Retropé e antepé em varo e adução |\n| Intrínsecos do pé | Extensores e flexores longos | Dedos em garra |\n\n**Sequência.** O fibular longo, sem a oposição do tibial anterior fraco, abaixa o primeiro metatarsal. O pé apoia no primeiro raio, e o retropé vai para varo para que o pé consiga apoiar na borda lateral (mecanismo de tripé). O tibial posterior, sem a oposição do fibular curto, acentua o varo. A garra dos dedos e do hálux surge pelo recrutamento dos extensores longos para auxiliar a dorsiflexão fraca.\n\n**Teste de Coleman.** Com um bloco sob a borda lateral do pé, deixando o primeiro raio pender, se o retropé corrige, o varo é **flexível e dirigido pelo antepé**, tratado com correção do antepé (osteotomia do primeiro metatarsal, fasciotomia plantar e transferências). Retropé rígido exige osteotomia do calcâneo.\n\n**Transferências típicas.** Fibular longo para fibular curto (reduz a flexão plantar do primeiro raio e reforça a eversão) e tibial posterior para o dorso do pé (reforça a dorsiflexão).\n\n> No cavo varo de Charcot-Marie-Tooth, falham o tibial anterior e o fibular curto; fibular longo e tibial posterior permanecem fortes.",
-  "correta": "**C: tibial anterior (resposta pela bibliografia).** A fraqueza do tibial anterior deixa o fibular longo sem oposição, flexionando plantarmente o primeiro raio e iniciando a deformidade cava; junto com a do fibular curto, é a fraqueza característica do cavo varo neurológico.",
+  "conceito": "O pé cavo varo nasce de uma briga de forças: dois pares de músculos antagonistas, em cada par um fraco e um forte. A questão quer o músculo que perde a briga principal.\n\n**O desequilíbrio clássico** (Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4039). Na doença de CHARCOT-MARIE-TOOTH, a causa a ser excluída diante de um cavo, o padrão é:\n- **tibial anterior fraco** contra o **fibular longo preservado**: o fibular longo, sem oposição, abaixa o **1º metatarsal** (flexão plantar do 1º raio), e o antepé passa a empurrar o retropé para o varo;\n- **fibular curto fraco** contra o **tibial posterior quase normal**: o tibial posterior inverte o mediopé e leva o retropé para o **varo**.\n\n**No Netter** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 588 e 589). O cavo é explicado por desequilíbrio no pé imaturo entre o tibial anterior e o fibular longo: **tibial anterior fraco**, **fibular longo e tibial posterior fortes**, com a ordem de excluir doença neuromuscular.\n\n**A correção nasce do mesmo raciocínio** (Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4047, aprox.). Leva-se o **fibular longo para o curto**, tirando a força que abaixa o 1º metatarsal e reforçando o eversor fraco, e o **tibial posterior para o dorso**, transformando o inversor dominante em dorsiflexor.\n\n**Por que não os outros.** O fibular longo e o tibial posterior são os **fortes** da deformidade. O extensor longo do hálux costuma ser recrutado para ajudar a dorsiflexão fraca, e não é o fraco principal.\n\nO pé cavo está na seção \"A marcha e o pé cavo\" do resumo.",
+  "correta": "**C) tibial anterior.** No cavo varo, o tibial anterior enfraquece e perde para o fibular longo, que abaixa o 1º metatarsal.",
   "incorretas": {
-   "A": "**O fibular longo** costuma permanecer relativamente forte e é justamente o motor que abaixa o primeiro raio; transferi-lo para o fibular curto é parte do tratamento.",
-   "B": "**O extensor longo do hálux** em geral é recrutado para compensar a dorsiflexão fraca, o que produz a garra do hálux; ele não é o músculo cuja fraqueza define a deformidade.",
-   "D": "**O tibial posterior** permanece forte e, sem o fibular curto, acentua o varo e a adução; pode ser transferido para o dorso como motor de dorsiflexão."
+   "A": "**Fibular longo** está preservado e é justamente a força que abaixa o 1º metatarsal.",
+   "B": "**Extensor longo do hálux** não é o fraco do desequilíbrio; costuma ser recrutado para compensar a dorsiflexão.",
+   "D": "**Tibial posterior** fica quase normal e vence o fibular curto fraco, levando ao varo."
   },
   "referencias": [
-   "Morrissy R.T, Weinstein S.L. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott/Manole. 5 ª ed., vol. 2, p. 1308.",
-   "Holmes JR, Hansen ST Jr. Foot and ankle manifestations of Charcot-Marie-Tooth disease. Foot Ankle. 1993;14(8):476-486."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (distúrbios neurogênicos), p. 4039 e 4047",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 588 e 589",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
   "provavel": "C",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial no banco. Pelo Campbell 15 (cap. 92) e pelo Netter, o músculo fraco no cavo varo é o tibial anterior; a letra C é a provável.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0343": {
@@ -4003,17 +4126,18 @@
   }
  },
  "pe-tornozelo-0351": {
-  "conceito": "**Contração excêntrica: músculo ativo que se alonga.** Na marcha, boa parte do trabalho muscular não é gerar movimento, mas **frear** movimentos produzidos pela gravidade e pela inércia. O músculo se contrai enquanto suas fibras se alongam, absorvendo energia como um amortecedor.\n\n**O primeiro rolamento (heel rocker).** Na marcha normal, o contato inicial é feito com o **calcâneo**. O vetor de reação do solo passa atrás do eixo do tornozelo e tende a plantarflexionar o pé, baixando o antepé de forma brusca. Os **dorsiflexores** (tibial anterior, extensor longo do hálux e extensor longo dos dedos) se ativam e se alongam ao mesmo tempo, controlando a descida do antepé até o apoio plantar completo. Esse é o trabalho **excêntrico** na **resposta à carga**, início da fase de apoio.\n\n**O mesmo músculo ao longo do ciclo.**\n\n| Fase | Ação do tibial anterior | Tipo de contração |\n|---|---|---|\n| Contato inicial e resposta à carga | Freia a plantiflexão, baixa o antepé suavemente | **Excêntrica** |\n| Apoio médio e terminal | Praticamente silencioso | Nenhuma |\n| Balanço | Dorsiflexiona para o pé não arrastar no chão | Concêntrica, depois isométrica |\n\n**Correlação clínica: a marcha escarvante.** Na paralisia do nervo fibular, o tibial anterior não funciona.\n- No **contato inicial**, o antepé bate no chão logo após o calcanhar (**pé batido**, *foot slap*), porque falta o freio excêntrico.\n- No **balanço**, o pé cai, e o paciente compensa elevando muito o joelho e o quadril para não tropeçar (**marcha escarvante**).\n\n**Contraste com o tríceps sural.** No apoio médio, quando a tíbia avança sobre o pé fixo (segundo rolamento), é o sóleo que trabalha de forma excêntrica para controlar esse avanço. Cada grupo freia um rolamento diferente.",
-  "correta": "**Correta: Certo.** No início do apoio, logo após o contato do calcâneo, o tibial anterior se contrai enquanto se alonga, controlando a plantiflexão passiva e a descida do antepé. É uma contração excêntrica típica da resposta à carga.",
+  "conceito": "Uma contração excêntrica é aquela em que o músculo trabalha enquanto se alonga, freando um movimento produzido pelo peso. No início do apoio, é isso que o tibial anterior faz com o antepé.\n\n**A batida do calcanhar** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 556). O contato inicial é feito com o calcanhar, e o pé tende a cair em **flexão plantar** até apoiar a planta. O **tibial anterior** se contrai **excentricamente**, controlando essa descida. Ao mesmo tempo, a subtalar começa a eversão, permitindo a rotação medial da tíbia.\n\n**As fases seguintes** (pág. PDF 556 e 557). No **pé plano**, é o **gastrocnêmio** que contrai excentricamente para limitar a dorsiflexão, e a pronação deixa a transversa do tarso paralela e flexível. No **médio apoio**, o tornozelo está neutro e o pé começa a enrijecer. Na **saída do calcanhar**, o tibial posterior inicia a inversão subtalar, a transversa fica rígida e o gastrocnêmio passa a contrair **concentricamente**. Na **saída dos dedos**, o molinete encurta a fáscia e transforma o pé em alavanca rígida.\n\n**O ciclo.** O apoio ocupa **62%** (duplo apoio inicial 12%, apoio simples 38%, duplo apoio terminal 12%) e o balanço, **38%**.\n\n**O teste clínico do raciocínio.** Sem o tibial anterior, o antepé bate no chão logo depois do calcanhar, porque falta o freio excêntrico.\n\nA marcha está na seção \"A marcha e o pé cavo\" do resumo.",
+  "correta": "**A) Certo.** Na batida do calcanhar, o tibial anterior se contrai excentricamente para controlar a flexão plantar do tornozelo.",
   "incorretas": {
-   "B": "**Errado** ignoraria a função de amortecimento do tibial anterior. Sua ausência, na paralisia do nervo fibular, produz exatamente o pé batido no início do apoio, o que demonstra a ação excêntrica nessa fase."
+   "B": "**Errado** contraria o Netter: no início do apoio, o tibial anterior trabalha alongando, como freio da flexão plantar, e isso é contração excêntrica."
   },
   "referencias": [
-   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function, 2ª edição. SLACK, 2010.",
-   "Tachdjian MO. Pediatric orthopaedics. Philadelphia: Saunders. 1ª edição, p. 6."
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 556 e 557",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
   "provavel": "A",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial no banco. O Netter descreve a contração excêntrica do tibial anterior na batida do calcanhar; a letra A (Certo) é a provável.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0352": {
@@ -4180,17 +4304,20 @@
   "conferido": false
  },
  "pe-tornozelo-0362": {
-  "conceito": "**Os três rolamentos do apoio.** A fase de apoio da marcha é descrita como uma sequência de três pivôs, e em cada um um grupo muscular trabalha de forma excêntrica para controlar o movimento produzido pelo peso do corpo.\n\n| Rolamento | Pivô | Músculo que freia |\n|---|---|---|\n| Primeiro (calcanhar) | Calcâneo, do contato à planta no solo | Dorsiflexores (tibial anterior), excêntricos |\n| **Segundo (tornozelo)** | **Tíbia avançando sobre o pé fixo** | **Sóleo e gastrocnêmio, excêntricos** |\n| Terceiro (antepé) | Cabeças dos metatarsos, calcanhar se elevando | Tríceps sural sustenta o calcanhar elevado |\n\n**O apoio médio.** Depois que o pé todo toca o solo, o corpo continua avançando, e a tíbia roda anteriormente sobre o tornozelo. A dorsiflexão do tornozelo aumenta progressivamente, de cerca de 0° para 10°. Se nada controlasse esse movimento, a tíbia cairia para a frente e o joelho dobraria. O **sóleo**, que liga a tíbia ao calcâneo sem cruzar o joelho, se contrai **enquanto se alonga**, desacelerando a dorsiflexão: é uma **contração excêntrica**.\n\n**Efeito no joelho.** Ao segurar a tíbia, o sóleo faz o vetor de reação do solo passar à frente do joelho, ajudando a estendê-lo sem esforço do quadríceps. É o **acoplamento flexão plantar e extensão do joelho**.\n\n**No apoio terminal**, a atividade do tríceps sural atinge o pico e o calcanhar se eleva. A potência para a propulsão vem em boa parte da energia elástica armazenada no tendão calcâneo durante o alongamento anterior.\n\n**Correlação clínica.**\n- **Fraqueza do tríceps** (alongamento excessivo do tendão calcâneo, poliomielite): a tíbia avança sem controle e surge a **marcha agachada** (crouch), com joelho fletido e calcâneo excessivo.\n- **Equino espástico**: o tríceps não se alonga, a tíbia não avança e o joelho é empurrado para trás (recurvato).",
-  "correta": "**Correta: Certo.** No apoio médio, a tíbia avança sobre o pé fixo e a dorsiflexão do tornozelo aumenta. O sóleo se contrai enquanto se alonga, freando esse avanço, o que caracteriza a contração excêntrica.",
+  "conceito": "Depois que a planta toca o chão, o corpo continua avançando e a tíbia roda para a frente sobre o pé fixo: o tornozelo vai entrando em dorsiflexão. Alguém precisa frear esse movimento, e a questão atribui o freio ao sóleo.\n\n**O que o Netter descreve** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 556). Na fase de **pé plano**, o **gastrocnêmio** contrai **excentricamente** para limitar a flexão dorsal. No **médio apoio**, o tornozelo está **neutro** e o pé começa a ficar rígido. Na **saída do calcanhar**, o gastrocnêmio passa a contrair **concentricamente**. O livro não nomeia o sóleo na marcha.\n\n**Por que o sóleo participa** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 491; Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3846). O sóleo nasce da cabeça da fíbula e da linha do sóleo na tíbia e se une ao gastrocnêmio no **tendão do calcâneo**: os dois formam o tríceps sural e dividem o mesmo braço de alavanca no calcâneo. Como não cruza o joelho, o sóleo liga a tíbia diretamente ao calcâneo, e é o mais eficaz dos dois com o joelho fletido. Freando a dorsiflexão, ele segura a tíbia que tende a cair para a frente.\n\n**Excêntrico ou concêntrico.** Durante o freio, o músculo se alonga enquanto trabalha: é excêntrico. A ação concêntrica do tríceps vem depois, na saída do calcanhar.\n\nA marcha está na seção \"A marcha e o pé cavo\" do resumo.",
+  "correta": "**A) Certo.** O sóleo, parte do tríceps sural, contrai excentricamente para frear a dorsiflexão enquanto a tíbia avança sobre o pé apoiado.",
   "incorretas": {
-   "B": "**Errado** contrariaria a cinesiologia clássica da marcha. A falha dessa ação excêntrica, por fraqueza do tríceps sural, produz justamente o avanço descontrolado da tíbia e a marcha agachada."
+   "B": "**Errado** se apoia no fato de o Netter citar só o gastrocnêmio; o sóleo compartilha o tendão do calcâneo e a mesma função de freio."
   },
   "referencias": [
-   "Perry J, Burnfield JM. Gait Analysis: Normal and Pathological Function, 2ª edição. SLACK, 2010.",
-   "Hebert Sizínio et al. Ortopedia e traumatologia: princípios e prática. Porto Alegre: Artmed. 3ª edição, p. 41."
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10 (Pé e tornozelo), pág. PDF 556 e 557",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna e joelho), pág. PDF 491",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 88 (tendões e fáscia), p. 3846",
+   "Resumo OrtoQuestões: Anatomia da perna, do tornozelo e do pé (versão 2)"
   ],
   "provavel": "A",
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial no banco. O Netter atribui a contração excêntrica que limita a dorsiflexão ao gastrocnêmio, na fase de pé plano, e não cita o sóleo na marcha; a letra A (Certo) é a provável pela função comum do tríceps sural, mas o livro não a confirma diretamente.",
+  "geradoEm": "2026-11-01",
   "conferido": false
  },
  "pe-tornozelo-0363": {
@@ -5158,7 +5285,7 @@
       "anatomia-e-vascularizacao-b8a242e2",
       "anatomia-e-vascularizacao-d570e842"
      ],
-     "sha256": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+     "sha256": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e",
      "trechosSha256": "1be0b7686fe3421bb9df9a2dcce9387141ff2de1088424c54008f77f00b0ffd6"
     }
    ],

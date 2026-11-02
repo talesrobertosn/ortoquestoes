@@ -32,7 +32,7 @@ A osteomielite da criança se entende por três mapas: **onde a bactéria pousa*
 conceito: Abaixo de 18 meses os vasos cruzam a fise; nas metáfises intra-articulares, a osteomielite rompe para a articulação em qualquer idade.
 como: O TARO 2010, 2015 e 2020 e o TEOT 2025 perguntaram a associação com pioartrite e a idade da osteonecrose; o TARO 2017 e 2022, a fisiopatologia metafisária e o sequestro; a SBOT-SP, a distribuição por idade.
 armadilha: Pôr o úmero distal ou o fêmur distal entre as metáfises intra-articulares.
-alerta: O trecho lido não detalha a escassez de macrófagos na metáfise (`conceitos-basicos-0039`), a fisiopatologia do sequestro (`conceitos-basicos-0076`) nem a distribuição bimodal por idade (`conceitos-basicos-0249`); os gabaritos oficiais foram preservados.
+alerta: O Tachdjian's Pediatric Orthopaedics, 6ª ed., só sugere de forma indireta a escassez de macrófagos na metáfise (esponjosa primária relativamente acelular, `conceitos-basicos-0039`), e a distribuição bimodal por idade (`conceitos-basicos-0249`) está só no Campbell's Operative Orthopaedics, 15ª ed.; a fisiopatologia do sequestro (`conceitos-basicos-0076`) foi confirmada no Tachdjian, p. 970, Fig. 23.21. Os gabaritos oficiais foram preservados.
 !fim
 
 # Os agentes {radar=confirmado}
@@ -48,7 +48,7 @@ alerta: O trecho lido não detalha a escassez de macrófagos na metáfise (`conc
 conceito: Prego no tênis = Pseudomonas; calcâneo hematogênico = S. aureus; Kingella na criança pequena.
 como: O TARO 2022 perguntou o agente do calcâneo após ferimento puntiforme; o TARO 2012, a idade do Haemophilus; o TEPOP 2024, o segundo agente entre 3 e 12 anos; o TARO 2014, o agente no usuário de drogas; o TARO 2023 e o TEOT 2025, a Salmonella.
 armadilha: Responder S. aureus no ferimento puntiforme do pé.
-alerta: O trecho lido não confirma a faixa etária do Haemophilus (`conceitos-basicos-0207`), o segundo agente entre 3 e 12 anos (`conceitos-basicos-0193`), o agente no usuário de drogas (`conceitos-basicos-0059`) nem a localização diafisária da Salmonella (`conceitos-basicos-0115`, `conceitos-basicos-0190`); os gabaritos oficiais foram preservados.
+alerta: Na versão 2, o segundo agente entre 3 e 12 anos (`conceitos-basicos-0193`, estreptococo do grupo A, cerca de 10%) foi confirmado no Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 966; a faixa etária do Haemophilus (`conceitos-basicos-0207`), a Pseudomonas no usuário de drogas (`conceitos-basicos-0059`) e a localização diafisária da Salmonella (`conceitos-basicos-0115`, `conceitos-basicos-0190`) aparecem só na Tabela 23.1 do Campbell's Operative Orthopaedics, 15ª ed.; os gabaritos oficiais foram preservados.
 !fim
 
 # A osteomielite subaguda {radar=confirmado}
