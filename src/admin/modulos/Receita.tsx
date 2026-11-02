@@ -73,7 +73,7 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
       </div>
     </section>
 
-    <Quadro titulo={`Receita por dia · últimos ${periodo} dias`} descricao="Confirmado (cobrança gravada) em preto; estimado (renovação antiga do cartão ou paga sem registro) hachurado. Os dois nunca viram um número só."
+    <Quadro titulo={`Receita por dia · últimos ${periodo} dias`} descricao="Confirmado (cobrança gravada) em verde; estimado (renovação antiga do cartão ou paga sem registro) hachurado. Os dois nunca viram um número só."
       fonte="cobrancas_admin + listar_assinaturas_admin · contas de teste fora" qualidade="derivado"
       legenda={<Legenda itens={[{ nome: 'Confirmado', chave: 'serie1' }, { nome: 'Estimado', chave: 'hachura' }]} />}
       tabela={{ cabecalho: ['Dia', 'Confirmado', 'Estimado'], linhas: r.porDia.filter(x => x.confirmada || x.reconstruida).map(x => [diaDaSerie(x.dia, true), reais(x.confirmada), reais(x.reconstruida)]) }}
