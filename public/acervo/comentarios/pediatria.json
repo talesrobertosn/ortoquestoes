@@ -7090,16 +7090,20 @@
   "conferido": false
  },
  "pediatria-0510": {
+  "conceito": "Esta questão sai quase toda de um parágrafo do Tachdjian (cap. 21, p. 880), e comparar com o texto é o melhor jeito de estudá-la.\n\nO livro diz que, **em 7 semanas de vida embrionária, a formação de todas as partes dos membros superiores e inferiores está essencialmente completa**. A maioria das deficiências acontece no início da morfogênese, com rápida proliferação e diferenciação, e esse período sensível tem o pico na quinta e na sexta semanas depois da fecundação. Daí a cronologia que a banca aproveitou:\n\n| Quando | O que acontece |\n|---|---|\n| 28 dias | deficiências graves dos membros superiores |\n| 31 dias | deficiências graves dos membros inferiores |\n| 35 dias | anomalias distais dos membros superiores |\n| 37 dias | anomalias distais dos membros inferiores |\n\nA lógica é craniocaudal e proximal-distal: o superior vem antes do inferior, e o proximal antes do distal. O broto do membro superior aparece 26 dias depois da fecundação, e o do inferior, cerca de dois dias mais tarde (Lovell e Winter, cap. 1). Por isso uma deficiência do membro inferior no 26º dia é difícil de sustentar, já que o broto ainda nem surgiu.\n\nO dia conta a partir da fecundação; datas assim são aproximações, e não fronteiras biológicas exatas.",
+  "correta": "**B: deficiências graves dos membros inferiores ocorrem no 26º dia.** É o gabarito oficial, mas o Tachdjian dá 31 dias para esse evento, e o broto inferior surge depois do 26º dia. Veja o alerta.",
   "incorretas": {
-   "A": "**Uma data não define todas as deformidades distais.** O pé e seus raios se diferenciam depois do surgimento do broto inferior; atribuir todo defeito distal ao 37º dia é específico demais.",
-   "C": "**O membro superior já está em formação no 31º dia.** Eventos nessa época podem afetá-lo, mas a gravidade e o segmento atingido não se deduzem apenas desse número, sem o mecanismo da lesão.",
-   "D": "**Cinco semanas é cedo demais para conclusão.** O membro inferior aparece depois do superior, e pé e dedos continuam a se organizar nas semanas seguintes.",
-   "E": "**O membro superior também não está completo em cinco semanas.** A placa da mão e os dedos ainda passam por etapas importantes de diferenciação após esse marco."
+   "A": "**Esta é a frase do livro.** O Tachdjian diz que as deformidades distais dos membros inferiores acontecem no 37º dia. A banca não a marcou como correta, e por isso é o principal ponto da divergência.",
+   "C": "**Dias trocados.** No Tachdjian, 31 dias são dos membros inferiores; os superiores ficam em 28.",
+   "D": "**Cinco semanas é cedo.** O texto dá 7 semanas para a formação completa, e na quinta o período sensível está no auge.",
+   "E": "**O mesmo número trocado.** A formação também termina em 7 semanas no membro superior, embora ele comece antes."
   },
-  "alerta": "O gabarito informado é B, mas a cronologia publicada para desenvolvimento humano situa o aparecimento do broto do membro superior por volta do 26º dia após a fecundação e o do membro inferior por volta do 28º dia. Isso torna duvidosa a afirmação de que uma deficiência grave do membro inferior já se estabeleça no 26º dia. O intervalo de suscetibilidade varia conforme a estrutura e a forma de contar a idade; sem a fonte usada pela banca, mantemos a chave e registramos a divergência.",
-  "conceito": "**A sequência é craniocaudal.** Os brotos dos membros superiores surgem primeiro, em torno do 26º dia após a fecundação, e os inferiores aparecem poucos dias depois, aproximadamente no 28º. A crista ectodérmica apical sustenta o crescimento do membro; alterações muito precoces podem comprometer segmentos extensos, enquanto eventos posteriores tendem a atingir estruturas que ainda estão se diferenciando.\n\n**Proximal e distal não se formam de uma vez.** Braço e coxa tornam-se reconhecíveis antes de mão e pé. Placas de mão e pé aparecem por volta da sexta semana, seguidas da diferenciação dos raios digitais e da separação dos dedos. Portanto, cinco semanas não bastam para dizer que todas as partes de qualquer membro estejam essencialmente completas.\n\n**A idade precisa ser nomeada.** Dia após fecundação, idade embrionária e idade gestacional contada da última menstruação não são equivalentes. Mesmo com um calendário definido, datas isoladas são aproximações, não fronteiras biológicas abruptas. Na interpretação de uma deficiência, importa combinar momento do insulto, eixo do desenvolvimento afetado e padrão anatômico observado.",
-  "correta": "**B é a alternativa marcada pela banca, sob contestação.** Uma falha muito precoce pode causar deficiência extensa, mas o 26º dia para membro inferior precede o aparecimento do broto inferior descrito em referências embriológicas.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 21 (Limb Deficiencies), p. 880",
+   "Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 1 e cap. 22"
+  ],
+  "alerta": "Possível erro de gabarito. O Tachdjian (cap. 21, p. 880) situa as deficiências graves dos membros inferiores em 31 dias e as deformidades distais dos membros inferiores no 37º dia, exatamente o que diz a alternativa A. Lovell e Winter situam o broto inferior depois do 26º dia, o que contraria a alternativa B. O gabarito oficial (B) foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0511": {

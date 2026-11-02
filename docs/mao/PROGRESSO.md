@@ -92,7 +92,11 @@ Alertas: pediatria-1061, 1063, 1066, 1067, 1068, 1069, 1075, 1076; trauma-1727, 
 **Lotes 05 a 09 aplicados em 02/11/2026** (`lotes/enare/enare_05.py` a `enare_09.py`): com eles, todas as questões do caderno ENARE Cirurgia da Mão têm comentário.
 Sem livro de plástica na biblioteca, a parte de plástica usa fontes abertas conferidas (StatPearls, PMC, PubMed), identificadas nas referências; quando chegar um livro de plástica, trocar a fonte. Fatos não confirmados ficaram no `alerta`.
 Para revisar com prioridade quando houver livro: pediatria-1074 (GOLDBERG), trauma-1732 (PECORELLI e DELLA TORRE), mao-1888, mao-1881, mao-1911, mao-1931.
-Fila seguinte: 89 comentários antigos do ENARE R4 Ortopedia (2023 a 2025) estão sem o campo de referências; as 56 antigas do caderno da mão têm referência, mas são mais curtas.
+**ENARE R4 Ortopedia aplicado em 02/11/2026** (`lotes/enare-r4/r4_01.py` a `r4_06.py`): os 89 comentários antigos sem referência foram relidos nos livros locais e agora têm o campo preenchido, com capítulo e página quando a página impressa foi vista. O Campbell 12 em português entrou em `scripts/livros.py` (`c12v1` a `c12v4`), e boa parte das questões de 2023 e 2024 repete frases dele e do Campbell 14.
+Possíveis erros de gabarito, mantidos com `alerta`: mao-0579 (a B é a frase do Campbell; elevação de 2 minutos, e não 5), pe-tornozelo-0311 (Campbell excisa o hálux medial), pediatria-0510 (a A é a frase do Tachdjian), quadril-0226 (a B é a posição do Campbell), quadril-0228 (a E é a frase do Campbell; abdutores 2,5 vezes o peso), trauma-1005 (a C é a frase do Campbell; côndilos trocados na D).
+Enunciado ou gabarito discutível, também com `alerta`: mao-0263, 0269, 0276, 0277, 0582; pe-tornozelo-0154, 0156; osteometabolicas-0036; quadril-0230; trauma-0486, 1000, 1003; tumores-0316.
+Sem fonte nos livros locais, com fonte aberta ou com o dado apenas mantido, indicado no `alerta`: conceitos-basicos-0124, 0269, 0274 (o epônimo Alexander não foi confirmado); joelho-0124; pe-tornozelo-0309; trauma-0476, 0480, 1006, 1007, 1009, 1012, 1016.
+Fila seguinte: as 56 antigas do caderno da mão têm referência, mas são mais curtas.
 
 **Registro anterior, sem fonte nos livros locais:** pediatria-1057 (limites de angulação do antebraço aos 5 anos), pediatria-1074 (classificação de GOLDBERG),
 trauma-1732 (método de PECORELLI e DELLA TORRE). Faltam conferir nos livros: mao-1814, 1823, 1824, 1835, 1847, 1848, 1851, 1870, 1912, 1913, 1924, 1927 e 1928.

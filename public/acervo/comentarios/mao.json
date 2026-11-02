@@ -3399,161 +3399,206 @@
   "conferido": false
  },
  "mao-0257": {
+  "conceito": "Um **nervo periférico** tem camadas, como um cabo com vários fios:\n\n**axônio**: a fibra nervosa, revestida por **mielina**;\n\n**endoneuro**: a capa que envolve cada axônio, formando um \"tubo\";\n\n**perineuro**: a capa que reúne vários axônios num **fascículo**;\n\n**epineuro**: a capa externa de todo o nervo.\n\n**A classificação de Sunderland** gradua a lesão pela camada mais profunda atingida:\n\n**grau I**: só a mielina; é um **bloqueio de condução** (a neuropraxia de Seddon). Recupera completamente;\n\n**grau II**: o **axônio** se rompe, mas o **endoneuro** fica inteiro. O tubo endoneural guia o axônio de volta ao destino certo, e a recuperação é completa;\n\n**grau III**: o axônio **e o endoneuro** se rompem, mas o **perineuro** fica preservado (Green, cap. 30, p. 1153). O fascículo continua inteiro, mas, sem o tubo de cada axônio, as fibras podem crescer para o lugar errado. A recuperação é **parcial e imprevisível**;\n\n**grau IV**: o perineuro também se rompe; só o epineuro fica inteiro. Forma-se um neuroma em continuidade;\n\n**grau V**: o nervo é cortado por completo (a neurotmese de Seddon).\n\nOs graus II, III e IV correspondem, todos, à **axonotmese** de Seddon, em níveis diferentes de gravidade, e é nessa palavra que a questão aposta: três opções dizem axonotmese.",
+  "correta": "**D: axonotmese com lesão endoneural e preservação do perineuro.** É o grau III do Green: a ruptura é interna ao tronco, o endoneuro cede, e o perineuro ainda segura o fascículo.",
   "incorretas": {
-   "A": "A neuropraxia corresponde ao grau I, um bloqueio de condução sem degeneração do axônio.",
-   "B": "A neurotmese corresponde ao grau V, com secção completa, inclusive do epineuro.",
-   "C": "A lesão do endoneuro e do perineuro, com o epineuro preservado, corresponde ao grau IV.",
-   "E": "Uma lesão que preserva o endoneuro corresponde ao grau I ou II, e não ao III."
+   "A": "**Grau I.** A neuropraxia é um bloqueio temporário de condução, sem ruptura do axônio, com recuperação excelente.",
+   "B": "**Grau V.** Na neurotmese, todas as camadas de tecido conjuntivo se rompem. É a lesão em que o nervo precisa de reparo.",
+   "C": "**Um degrau acima.** Endoneuro e perineuro rompidos com epineuro inteiro é o grau IV, o único em que a continuidade depende só da camada externa.",
+   "E": "**Grau II em outras palavras.** Quando o endoneuro é preservado, o tubo continua guiando o axônio até o alvo, e a recuperação é a melhor entre as axonotmeses."
   },
-  "conceito": "Um **nervo periférico** tem camadas, como um cabo com vários fios:\n\n**axônio**: a fibra nervosa, revestida por **mielina**;\n\n**endoneuro**: a capa que envolve cada axônio, formando um \"tubo\";\n\n**perineuro**: a capa que reúne vários axônios num **fascículo**;\n\n**epineuro**: a capa externa de todo o nervo.\n\n**A classificação de Sunderland** gradua a lesão pela camada mais profunda atingida:\n\n**grau I**: só a mielina; é um **bloqueio de condução** (a neuropraxia de Seddon). Recupera completamente;\n\n**grau II**: o **axônio** se rompe, mas o **endoneuro** fica inteiro. O tubo endoneural guia o axônio de volta ao destino certo, e a recuperação é completa;\n\n**grau III**: o axônio **e o endoneuro** se rompem, mas o **perineuro** fica preservado. O fascículo continua inteiro, mas, sem o tubo de cada axônio, as fibras podem crescer para o lugar errado. A recuperação é **parcial e imprevisível**;\n\n**grau IV**: o perineuro também se rompe; só o epineuro fica inteiro. Forma-se um neuroma em continuidade;\n\n**grau V**: o nervo é cortado por completo (a neurotmese de Seddon).\n\nOs graus II, III e IV correspondem, todos, à **axonotmese** de Seddon, em níveis diferentes de gravidade.\n\n**Na prova**: o grau III de Sunderland é a axonotmese com lesão do endoneuro e perineuro preservado.",
-  "correta": "No grau III, o axônio e o endoneuro se rompem, mas o perineuro preservado mantém o fascículo, e a recuperação é parcial e imprevisível.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 30 (Reparo de nervos), p. 1151 a 1153"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0258": {
+  "conceito": "O **carpo** é formado por **oito ossos**, organizados em **duas fileiras**:\n\n**fileira proximal** (mais perto do antebraço), de radial para ulnar: **escafoide**, **semilunar** e **piramidal**. O **pisiforme** fica sobre o piramidal, mas é um osso **sesamoide** (um osso dentro de um tendão, o do flexor ulnar do carpo), e por isso costuma ser contado à parte;\n\n**fileira distal** (mais perto dos dedos), de radial para ulnar: **trapézio**, **trapezoide**, **capitato** e **hamato**.\n\n**Um mnemônico popular**: \"**E**le **S**empre **P**ede **P**ão, **T**orrada, **T**rigo, **C**afé e **H**ortelã\": escafoide, semilunar, piramidal, pisiforme, trapézio, trapezoide, capitato e hamato.\n\n**A fileira proximal é especial**: é o **segmento intercalado** entre o rádio distal, com a fibrocartilagem triangular, e a fileira distal (Netter's Concise, p. 142). Ela se move conduzida pelas fileiras vizinhas e pelos ligamentos. Por isso, quando seus ligamentos se rompem, surgem as instabilidades do carpo (como o DISI e o VISI).\n\n**O escafoide** faz a **ponte** entre as duas fileiras, funcionando como um elo mecânico; isso explica por que ele fratura com tanta frequência.",
+  "correta": "**D: escafoide, semilunar e piramidal.** São os três da fileira proximal, de radial para ulnar, com o pisiforme contado à parte, por ser sesamoide.",
   "incorretas": {
-   "A": "Trapézio, trapezoide, capitato e hamato formam a fileira distal.",
-   "B": "A alternativa mistura as fileiras: trapézio e trapezoide são distais, e semilunar e piramidal são proximais.",
-   "C": "Só o escafoide é da fileira proximal; o trapézio e o trapezoide são distais.",
-   "E": "O hamato é da fileira distal, e falta o piramidal."
+   "A": "**É a outra fileira, inteira.** Trapézio, trapezoide, capitato e hamato formam a distal, a que se liga aos metacarpais.",
+   "B": "**Metade de cada.** Trapézio e trapezoide são distais; semilunar e piramidal, proximais. A mistura engana porque são quatro ossos, o mesmo número da fileira.",
+   "C": "**Só acerta o primeiro.** O escafoide é proximal, mas trapézio e trapezoide estão à frente dele. É a sequência da coluna radial, e não uma fileira transversal.",
+   "E": "**Troca o último.** O hamato é o ulnar da fileira distal, e o piramidal é quem ocupa essa posição na proximal."
   },
-  "conceito": "O **carpo** é formado por **oito ossos**, organizados em **duas fileiras**:\n\n**fileira proximal** (mais perto do antebraço), de radial para ulnar: **escafoide**, **semilunar** e **piramidal**. O **pisiforme** fica sobre o piramidal, mas é um osso **sesamoide** (um osso dentro de um tendão, o do flexor ulnar do carpo), e por isso costuma ser contado à parte;\n\n**fileira distal** (mais perto dos dedos), de radial para ulnar: **trapézio**, **trapezoide**, **capitato** e **hamato**.\n\n**Um mnemônico popular**: \"**E**le **S**empre **P**ede **P**ão, **T**orrada, **T**rigo, **C**afé e **H**ortelã\": escafoide, semilunar, piramidal, pisiforme, trapézio, trapezoide, capitato e hamato.\n\n**A fileira proximal é especial**: nenhum tendão se insere nela. Ela se move de forma passiva, empurrada pelas fileiras vizinhas e guiada pelos ligamentos. É o chamado **segmento intercalado**. Por isso, quando seus ligamentos se rompem, surgem as instabilidades do carpo (como o DISI e o VISI).\n\n**O escafoide** faz a **ponte** entre as duas fileiras, funcionando como um elo mecânico; isso explica por que ele fratura com tanta frequência.\n\n**Na prova**: a fileira proximal do carpo é formada por escafoide, semilunar e piramidal.",
-  "correta": "A fileira proximal do carpo é formada por escafoide, semilunar e piramidal, com o pisiforme contado à parte como sesamoide.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 5 (Forearm), p. 142",
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 13 (Instabilidade do carpo), p. 489 e 493"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0259": {
+  "conceito": "A **luxação radiocárpica** é a saída do **carpo inteiro** de cima do **rádio**: todo o bloco do carpo se desloca, geralmente para dorsal e para ulnar. É rara e acontece em traumas de **alta energia**, com ruptura dos fortes ligamentos que prendem o carpo ao rádio. Muitas vezes vem acompanhada de uma fratura na borda do rádio.\n\n**A classificação de Dumontier** separa dois tipos, e a diferença muda o tratamento:\n\n**tipo I**: luxação **pura**, sem fratura associada do rádio distal (Green, cap. 13, p. 554). Os ligamentos rompidos precisam ser **reparados**, ou o carpo volta a transladar (Green, cap. 15, p. 636);\n\n**tipo II**: luxação com **fratura-avulsão da estiloide radial**, fragmento que traz a origem dos ligamentos palmares radioescafoide e radioescafocapitato. Ao **fixar o fragmento** no lugar, esses ligamentos voltam junto.\n\n**Por que a distinção importa**: no tipo I, se o cirurgião tratar a lesão como uma simples fratura e não reparar os ligamentos, o carpo pode continuar escorregando para o lado ulnar (**translocação ulnar do carpo**), com mau resultado.\n\n**Complicações**: translocação ulnar, artrose e rigidez.\n\n**Os outros nomes da questão**:\n\n**Universal**: classificação das **fraturas** do rádio distal;\n\n**Kapandji**: técnica de fixação com fios dentro do foco da fratura do rádio distal;\n\n**Allis**: manobra de redução da luxação do **quadril**;\n\n**Cotton**: fratura e teste do **tornozelo**.",
+  "correta": "**B: Dumontier.** É a classificação de dois tipos citada no Green (cap. 13, p. 554) e no Rockwood (cap. 44). Ela separa o que se resolve reparando ligamento do que se resolve fixando osso.",
   "incorretas": {
-   "A": "A classificação Universal é usada para fraturas do rádio distal, e não para a luxação radiocárpica.",
-   "C": "Kapandji dá nome a uma técnica de fixação intrafocal com fios, e não a uma classificação dessa luxação.",
-   "D": "Allis é uma manobra de redução da luxação do quadril.",
-   "E": "Cotton dá nome a uma fratura e a um teste do tornozelo."
+   "A": "**Fratura, não luxação.** A Universal é uma classificação de fraturas do rádio distal, e o tema até é vizinho.",
+   "C": "**É técnica.** Kapandji nomeia os fios intrafocais para o rádio distal, e não um sistema de classificação.",
+   "D": "**Manobra do quadril.** Allis é a redução da luxação do quadril, de outra articulação e outra conduta.",
+   "E": "**Tornozelo.** Cotton remete à fratura trimaleolar e ao teste de instabilidade da sindesmose."
   },
-  "conceito": "A **luxação radiocárpica** é a saída do **carpo inteiro** de cima do **rádio**: todo o bloco do carpo se desloca, geralmente para dorsal e para ulnar. É rara e acontece em traumas de **alta energia**, com ruptura dos fortes ligamentos que prendem o carpo ao rádio. Muitas vezes vem acompanhada de uma fratura na borda do rádio.\n\n**A classificação de Dumontier** separa dois tipos, e a diferença muda o tratamento:\n\n**tipo I**: luxação **puramente ligamentar**, sem fragmento ósseo ou com um fragmento mínimo da estiloide radial. Os ligamentos rompidos precisam ser **reparados** (principalmente os radiocárpicos volares), às vezes com fixação temporária;\n\n**tipo II**: luxação com um **fragmento grande da estiloide radial** (mais de um terço da fossa do escafoide). Os ligamentos importantes ficaram presos a esse fragmento. Ao **fixar o fragmento** no lugar, a estabilidade é restaurada.\n\n**Por que a distinção importa**: no tipo I, se o cirurgião tratar a lesão como uma simples fratura e não reparar os ligamentos, o carpo pode continuar escorregando para o lado ulnar (**translocação ulnar do carpo**), com mau resultado.\n\n**Complicações**: translocação ulnar, artrose e rigidez.\n\n**Os outros nomes da questão**:\n\n**Universal**: classificação das **fraturas** do rádio distal;\n\n**Kapandji**: técnica de fixação com fios dentro do foco da fratura do rádio distal;\n\n**Allis**: manobra de redução da luxação do **quadril**;\n\n**Cotton**: fratura e teste do **tornozelo**.\n\n**Na prova**: a luxação radiocárpica é classificada por Dumontier.",
-  "correta": "A classificação de Dumontier separa a luxação radiocárpica puramente ligamentar (tipo I) da com fragmento grande da estiloide (tipo II), definindo reparar ligamento ou fixar osso.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 13 (Instabilidade do carpo), p. 554; cap. 15 (Fratura do rádio distal), p. 636",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 44 (Carpal Fractures and Dislocations)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0260": {
+  "conceito": "Imagine o cirurgião olhando o nervo na ferida: por fora ele parece contínuo, e a tentação é fechar sem tocar. A questão pergunta justamente o que há por baixo dessa aparência. O grau de Sunderland é definido pela camada mais profunda que se rompeu, indo de dentro para fora: axônio, **endoneuro** (o tubo de cada axônio), **perineuro** (a capa do fascículo) e **epineuro** (a capa externa).\n\nNo grau I, há só bloqueio de condução, sem ruptura. No grau II rompe-se o axônio, com endoneuro preservado. No III, axônio e endoneuro, com perineuro íntegro. No **IV**, a ruptura intraneural é completa: com a perda da forte camada perineural, o epineuro externo é o único tecido conjuntivo que ainda mantém a continuidade (Green, cap. 30, p. 1153). No grau V, todas as camadas se rompem, e é a neurotmese de Seddon.\n\nEssa é a diferença que muda a conduta. Por dentro do epineuro, os axônios crescem sem guia e formam um neuroma em continuidade, de modo que esperar não resolve, e costuma ser preciso ressecar o trecho e reconstruir o nervo. O sinal de Tinel ajuda no acompanhamento: quando progride, é evidência tranquilizadora de regeneração, mas não definitiva, e um Tinel forte que persiste no local do reparo preocupa (Green, cap. 30, p. 1182).",
+  "correta": "**D: grupo IV.** Endoneuro e perineuro rompidos com epineuro íntegro é a definição do grau IV, ainda chamado de axonotmese na correspondência com Seddon, embora seja a mais grave delas.",
   "incorretas": {
-   "A": "O grau I é a neuropraxia, sem lesão do axônio.",
-   "B": "No grau II só o axônio se rompe, com o endoneuro íntegro e recuperação completa.",
-   "C": "No grau III o perineuro está íntegro; a lesão descrita inclui o perineuro.",
-   "E": "O grau V é a secção completa, com lesão também do epineuro, que aqui está preservado."
+   "A": "**Nem há axônio roto.** O grupo I é a neuropraxia. Falar em axonotmese no enunciado já elimina essa opção.",
+   "B": "**O endoneuro ainda está inteiro.** No grupo II, o axônio rompe, mas segue seu tubo original até o destino.",
+   "C": "**O perineuro ainda segura.** No grupo III, o fascículo continua fechado. A diferença para o caso é exatamente essa camada.",
+   "E": "**Aqui o epineuro também se foi.** No grupo V, não há continuidade nenhuma, e o enunciado diz que o epineuro foi preservado."
   },
-  "conceito": "A **classificação de Sunderland** gradua as lesões de nervo periférico pela camada mais profunda que foi rompida. Lembrando as camadas, de dentro para fora:\n\n**axônio**: a fibra nervosa;\n\n**endoneuro**: o tubo que envolve cada axônio;\n\n**perineuro**: a capa que reúne os axônios em **fascículos**;\n\n**epineuro**: a capa externa de todo o nervo.\n\n**Os graus**:\n\n**I**: só bloqueio de condução, sem romper o axônio (neuropraxia);\n\n**II**: rompe o axônio, mas o endoneuro está íntegro: recuperação completa;\n\n**III**: rompem axônio e endoneuro, com o perineuro preservado: recuperação parcial;\n\n**IV**: rompem **axônio, endoneuro e perineuro**; só o **epineuro** está íntegro. Por fora, o nervo parece contínuo, mas por dentro os axônios crescem em desordem e formam um **neuroma em continuidade**, que bloqueia a regeneração. O tratamento é **ressecar o neuroma e colocar um enxerto** de nervo;\n\n**V**: o nervo é cortado por completo, inclusive o epineuro (neurotmese).\n\n**Um sinal útil**: o **Tinel** (choque ao percutir o nervo) **avança** ao longo do nervo nos graus II e III, mostrando que ele está regenerando, e fica **parado** no grau IV, preso no neuroma.\n\n**Na prova**: a lesão com rompimento do endoneuro e do perineuro e preservação do epineuro é o grau IV de Sunderland.",
-  "correta": "No grau IV só o epineuro permanece íntegro; forma-se um neuroma em continuidade, tratado com ressecção e enxerto.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 30 (Reparo de nervos), p. 1151 a 1153 e 1182"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0261": {
+  "conceito": "O caso descreve uma jovem que **acordou** com dormência e formigamento no **anelar e no mínimo**, com perda de sensibilidade nessa região e **fraqueza para afastar e aproximar o dedo mínimo**.\n\n**Por que é o nervo ulnar**:\n\n**sensibilidade**: o ulnar leva a sensibilidade do **dedo mínimo** e da **metade ulnar do anelar**, além da borda ulnar da mão;\n\n**força**: a abdução e a adução do mínimo dependem dos músculos **interósseos** e dos músculos da **eminência hipotenar**, todos inervados pelo **ulnar**.\n\n**Por que ela acordou assim**: durante o sono, é comum ficar com o **cotovelo muito dobrado** por horas. A flexão do cotovelo aumenta a pressão dentro do túnel cubital e compromete o nervo ulnar (Green, cap. 26, p. 1087); um estudo citado pelo Green mediu queda de 55% na área do túnel com a flexão (p. 1105).\n\n**Como localizar o ponto de compressão**: se o **dorso** do lado ulnar da mão também estiver dormente, a compressão está no **cotovelo**, porque o ramo dorsal do ulnar sai antes do punho. Se o dorso estiver normal, a compressão está no **punho** (canal de Guyon).\n\n**Os outros nervos**:\n\n**radial**: inerva os extensores do punho e dos dedos; sua lesão causa punho caído e dormência no dorso do lado do polegar;\n\n**mediano**: leva a sensibilidade do polegar até a metade do anelar, do lado radial;\n\n**axilar**: inerva o deltoide, no ombro;\n\n**musculocutâneo**: inerva os flexores do braço e a sensibilidade do antebraço lateral, sem chegar à mão.",
+  "correta": "**A: nervo ulnar.** Duas pistas independentes apontam para o mesmo nervo: a sensibilidade do quarto e do quinto dedos e a força dos músculos que movem o dedo mínimo.",
   "incorretas": {
-   "B": "A lesão do radial causa punho caído e dormência no dorso do lado radial, e não no anelar e no mínimo.",
-   "C": "O mediano leva a sensibilidade do polegar até a metade radial do anelar, e não do mínimo.",
-   "D": "O axilar inerva o deltoide, no ombro, sem relação com a mão.",
-   "E": "O musculocutâneo inerva o braço e a sensibilidade do antebraço, sem chegar à mão."
+   "B": "**Lado errado da mão.** O radial cuida da extensão do punho e dos dedos. Uma lesão daria mão caída, com dormência no dorso radial, e o caso não fala nisso.",
+   "C": "**A confusão mais comum.** O mediano também acorda o paciente à noite, no túnel do carpo, mas seu território vai do polegar à metade radial do anelar, sem o mínimo.",
+   "D": "**Fica no ombro.** O axilar inerva o deltoide e a pele lateral do ombro; não alcança a mão.",
+   "E": "**Para no antebraço.** O musculocutâneo flete o cotovelo e termina como cutâneo lateral do antebraço."
   },
-  "conceito": "O caso descreve uma jovem que **acordou** com dormência e formigamento no **anelar e no mínimo**, com perda de sensibilidade nessa região e **fraqueza para afastar e aproximar o dedo mínimo**.\n\n**Por que é o nervo ulnar**:\n\n**sensibilidade**: o ulnar leva a sensibilidade do **dedo mínimo** e da **metade ulnar do anelar**, além da borda ulnar da mão;\n\n**força**: a abdução e a adução do mínimo dependem dos músculos **interósseos** e dos músculos da **eminência hipotenar**, todos inervados pelo **ulnar**.\n\n**Por que ela acordou assim**: durante o sono, é comum ficar com o **cotovelo muito dobrado** por horas. Nessa posição, o nervo ulnar é **esticado** e **comprimido** no túnel cubital, atrás do cotovelo. Ao acordar, aparecem os sintomas.\n\n**Como localizar o ponto de compressão**: se o **dorso** do lado ulnar da mão também estiver dormente, a compressão está no **cotovelo**, porque o ramo dorsal do ulnar sai antes do punho. Se o dorso estiver normal, a compressão está no **punho** (canal de Guyon).\n\n**Os outros nervos**:\n\n**radial**: inerva os extensores do punho e dos dedos; sua lesão causa punho caído e dormência no dorso do lado do polegar;\n\n**mediano**: leva a sensibilidade do polegar até a metade do anelar, do lado radial;\n\n**axilar**: inerva o deltoide, no ombro;\n\n**musculocutâneo**: inerva os flexores do braço e a sensibilidade do antebraço lateral, sem chegar à mão.\n\n**Na prova**: dormência no 4º e 5º dedos com fraqueza para abduzir e aduzir o mínimo indica o nervo ulnar.",
-  "correta": "A sensibilidade do anelar e do mínimo e os músculos que abduzem e aduzem o mínimo são do nervo ulnar; acordar com o sintoma sugere compressão com o cotovelo dobrado.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 26 (Neuropatias compressivas), p. 1087 e 1105"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0262": {
+  "conceito": "O caso é clássico da **doença de Dupuytren**: um **homem** de 55 anos, com perda **progressiva** da capacidade de **estender** os dedos, e uma **faixa fibrosa palpável** que vai da palma até os dedos.\n\n**O que é a doença de Dupuytren**: uma doença da **fáscia palmar**, a camada fibrosa abaixo da pele da palma. Ela progride por estágios: primeiro os **nódulos**, ricos em colágeno tipo III e fibroblastos, depois as **cordas**, que encurtam e puxam os dedos para dentro da palma (Campbell 14, cap. 75, p. 3833). A causa ainda é desconhecida (p. 3832), e o Green descreve a contração dos miofibroblastos como motor do cordão (cap. 4, p. 150).\n\n**Como reconhecer**:\n\n**corda palpável** da palma em direção aos dedos;\n\n**pele aderida** à corda, às vezes com pequenas covinhas;\n\nperda **progressiva da extensão**, com a flexão normal;\n\ngeralmente **sem dor**;\n\nmais comum em **homens** acima dos 40 a 50 anos, no anelar e no mínimo;\n\no **teste da mesa de Hueston**: a mão não consegue ficar espalmada sobre a mesa.\n\n**Os diagnósticos diferenciais**:\n\n**dedo em gatilho**: o dedo **trava e estala**, com um nódulo doloroso na base do dedo; é um quadro dinâmico, e não uma contratura fixa com corda;\n\n**tenossinovite de De Quervain**: dor no lado radial do punho, sobre o primeiro compartimento extensor, sem corda;\n\n**artrose da interfalângica proximal**: limitação e dor na articulação, com nódulos (de Bouchard), sem faixa na palma;\n\n**túnel do carpo**: formigamento noturno nos primeiros dedos, sem contratura.",
+  "correta": "**E: doença de Dupuytren.** Corda palpável da palma ao dedo com perda progressiva da extensão é uma imagem que quase nenhum outro diagnóstico reproduz.",
   "incorretas": {
-   "A": "A tenossinovite de De Quervain causa dor no lado radial do punho, sem corda palmar nem contratura dos dedos.",
-   "B": "O dedo em gatilho é um quadro dinâmico, com travamento e estalido, e não uma faixa fibrosa com contratura progressiva.",
-   "C": "A artrose da interfalângica proximal limita a própria articulação e não forma faixa na palma.",
-   "D": "O túnel do carpo causa formigamento nos primeiros dedos, sem contratura nem corda."
+   "A": "**Outra região.** De Quervain dói na estiloide radial, no primeiro compartimento extensor, sem corda e sem dedo preso.",
+   "B": "**Dinâmico, e não fixo.** O dedo em gatilho trava e estala, e o nódulo fica na polia A1. O espessamento é focal e o dedo costuma estender depois de vencer o ressalto.",
+   "C": "**O problema fica dentro da articulação.** A artrose da IFP limita o movimento com dor e nódulos locais, sem faixa subindo pela palma.",
+   "D": "**Queixa sensitiva.** O túnel do carpo dá parestesia noturna nos primeiros dedos. Só tardiamente há atrofia tenar, e nunca contratura em corda."
   },
-  "conceito": "O caso é clássico da **doença de Dupuytren**: um **homem** de 55 anos, com perda **progressiva** da capacidade de **estender** os dedos, e uma **faixa fibrosa palpável** que vai da palma até os dedos.\n\n**O que é a doença de Dupuytren**: uma doença da **fáscia palmar**, a camada fibrosa abaixo da pele da palma. Células que se contraem (miofibroblastos) formam **nódulos** e depois **cordas**, que encurtam e puxam os dedos para dentro da palma.\n\n**Como reconhecer**:\n\n**corda palpável** da palma em direção aos dedos;\n\n**pele aderida** à corda, às vezes com pequenas covinhas;\n\nperda **progressiva da extensão**, com a flexão normal;\n\ngeralmente **sem dor**;\n\nmais comum em **homens** acima dos 40 a 50 anos, no anelar e no mínimo;\n\no **teste da mesa de Hueston**: a mão não consegue ficar espalmada sobre a mesa.\n\n**Os diagnósticos diferenciais**:\n\n**dedo em gatilho**: o dedo **trava e estala**, com um nódulo doloroso na base do dedo; é um quadro dinâmico, e não uma contratura fixa com corda;\n\n**tenossinovite de De Quervain**: dor no lado radial do punho, sobre o primeiro compartimento extensor, sem corda;\n\n**artrose da interfalângica proximal**: limitação e dor na articulação, com nódulos (de Bouchard), sem faixa na palma;\n\n**túnel do carpo**: formigamento noturno nos primeiros dedos, sem contratura.\n\n**Na prova**: corda fibrosa da palma aos dedos, com perda progressiva da extensão num homem de meia-idade, é doença de Dupuytren.",
-  "correta": "A corda fibrosa palpável da palma aos dedos, com perda progressiva da extensão num homem de meia-idade, é o quadro típico da doença de Dupuytren.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 75 (Dupuytren Contracture), p. 3832 e 3833",
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 4 (Doença de Dupuytren), p. 150 e 162"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0263": {
+  "conceito": "A **doença de Dupuytren** começa, muitas vezes, com um **nódulo** na palma, geralmente perto do **anelar**, e pode evoluir para **cordas** que puxam os dedos em flexão.\n\n**As opções de tratamento**, conforme a fase:\n\n**nódulo sem contratura**: **observação**; se o nódulo dói, pode-se fazer **infiltração de corticoide**;\n\n**corda bem definida**: **aponeurotomia com agulha** (romper a corda com a ponta de uma agulha) ou **colagenase** (enzima injetada que degrada a corda), cujos ensaios mostraram liberação rápida da contratura (Campbell 14, cap. 75, p. 3836);\n\n**contratura importante ou falha dos métodos menores**: **fasciectomia**, a cirurgia de **retirada do tecido fibroso** doente. O Green diz com todas as letras que ela é atualmente o tratamento mais comum, e também que traz risco maior de complicações permanentes do que operações de complexidade semelhante (cap. 4, p. 148 e 164);\n\n**recidiva ou doença agressiva**: dermofasciectomia, retirando também a pele e cobrindo com enxerto.\n\n**Sobre esta questão**: o caso descreve um nódulo, sem citar contratura. Para um nódulo isolado, a conduta inicial costuma ser observar ou infiltrar. Mas o gabarito oficial responde pelo **tratamento mais comum** da doença, que é a **cirurgia de liberação** (fasciectomia).\n\n**O que não ajuda**: repouso e imobilização não mudam a evolução e, se feitos com o dedo dobrado, favorecem a contratura; fortalecimento muscular não tem papel, porque o problema é a fáscia encurtada, e não a fraqueza.",
+  "correta": "**E: cirurgia de liberação do tecido fibroso.** A pergunta é \"o tratamento mais comum\", e a resposta é a frase do Green: a fasciectomia. O que incomoda é que o caso descreve um nódulo, e o alerta explica por quê.",
   "incorretas": {
-   "A": "Repouso e imobilização não mudam a evolução da doença, e imobilizar com o dedo fletido favorece a contratura.",
-   "B": "A infiltração de corticoide alivia o nódulo doloroso no início, mas não é o tratamento mais comum da doença.",
-   "C": "A fisioterapia de fortalecimento não tem papel, porque o problema é a fáscia encurtada, e não a fraqueza muscular.",
-   "D": "A colagenase é uma alternativa real para cordas bem definidas em casos selecionados, mas é menos comum que a cirurgia."
+   "A": "**Não muda a história da doença.** O problema é uma fáscia que encurta, e nem repouso nem imobilização revertem esse processo.",
+   "B": "**Tem lugar no nódulo, mas não é o mais comum.** Injetar corticoide no nódulo é método descrito, e seria a escolha natural para o caso apresentado. Como a pergunta é pelo tratamento mais comum da doença, ela perde para a cirurgia.",
+   "C": "**Trata a coisa errada.** O músculo não está fraco; quem limita é a corda. Fortalecer não devolve a extensão.",
+   "D": "**Real, mas segunda escolha nesta pergunta.** A colagenase é uma opção minimamente invasiva para corda definida. Um nódulo sem corda não é seu alvo, e ela não é o tratamento mais frequente."
   },
-  "conceito": "A **doença de Dupuytren** começa, muitas vezes, com um **nódulo** na palma, geralmente perto do **anelar**, e pode evoluir para **cordas** que puxam os dedos em flexão.\n\n**As opções de tratamento**, conforme a fase:\n\n**nódulo sem contratura**: **observação**; se o nódulo dói, pode-se fazer **infiltração de corticoide**;\n\n**corda bem definida**, especialmente na metacarpofalângica: **aponeurotomia com agulha** (romper a corda com a ponta de uma agulha) ou **colagenase** (uma enzima injetada que dissolve a corda), conforme a disponibilidade;\n\n**contratura importante**: **fasciectomia**, a cirurgia de **retirada do tecido fibroso** doente. É o tratamento **mais realizado** da doença como um todo;\n\n**recidiva ou doença agressiva**: dermofasciectomia, retirando também a pele e cobrindo com enxerto.\n\n**Quando operar** (indicações clássicas): contratura da metacarpofalângica maior que 30°, qualquer contratura da interfalângica proximal, ou teste da mesa de Hueston positivo.\n\n**Sobre esta questão**: o caso descreve um nódulo, sem citar contratura. Para um nódulo isolado, a conduta inicial costuma ser observar ou infiltrar. Mas o gabarito oficial responde pelo **tratamento mais comum** da doença, que é a **cirurgia de liberação** (fasciectomia).\n\n**O que não ajuda**: repouso e imobilização não mudam a evolução e, se feitos com o dedo dobrado, favorecem a contratura; fortalecimento muscular não tem papel, porque o problema é a fáscia encurtada, e não a fraqueza.\n\n**Na prova**: o gabarito considera a cirurgia de liberação do tecido fibroso (fasciectomia) o tratamento mais comum da doença de Dupuytren.",
-  "correta": "É o gabarito oficial: a fasciectomia, cirurgia de liberação do tecido fibroso, é o tratamento mais realizado na doença de Dupuytren como um todo.",
-  "alerta": "O enunciado descreve um nódulo palmar sem contratura, e nódulo isolado não costuma ser indicação cirúrgica: a conduta inicial é observação ou infiltração de corticoide se doloroso. O gabarito oficial responde pelo tratamento mais realizado da doença como um todo, a fasciectomia.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 4 (Doença de Dupuytren), p. 148, 162 e 164",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 75 (Dupuytren Contracture), p. 3836"
+  ],
+  "alerta": "O enunciado descreve um nódulo palmar sem contratura, e nódulo isolado não costuma ser indicação cirúrgica. O gabarito fica sustentado pela frase do Green sobre o tratamento mais comum da doença como um todo, e não pela conduta para este caso.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0264": {
+  "conceito": "O caso é típico da **tenossinovite de De Quervain**: uma **mulher de 35 anos**, que **teve bebê recentemente**, com **dor e inchaço no lado radial do punho**, piorando ao fazer pinça e torção, e dor ao apertar os tendões extensores do polegar.\n\n**O que é a tenossinovite de De Quervain**: é a inflamação e o espessamento da bainha dos tendões do **primeiro compartimento extensor** do punho, por onde passam o **abdutor longo do polegar** e o **extensor curto do polegar**. O túnel fica estreito, e os tendões passam a atritar a cada movimento do polegar.\n\n**Quem tem**:\n\nadultos de **30 a 50 anos**, faixa do Campbell (cap. 76), que também lembra a dor radial do punho em mulheres em idade fértil;\n\nna **gravidez e no pós-parto**, períodos descritos no Green (cap. 56, p. 2109), em que pesa o movimento repetido de levantar e segurar o bebê com o polegar aberto;\n\ntrabalhos e atividades com uso repetitivo do polegar e do punho.\n\n**O teste de Finkelstein**: o paciente fecha a mão com o polegar dentro e o punho é desviado para o lado ulnar. Isso estica os tendões dentro do túnel estreito e provoca dor intensa no lado radial do punho.\n\n**Os diagnósticos diferenciais**:\n\n**túnel do carpo**: formigamento nos primeiros dedos, principalmente à noite, e não dor localizada no lado radial do punho;\n\n**tendinite do bíceps** e **impacto do ombro**: dor no ombro;\n\n**epicondilite lateral**: dor no cotovelo.",
+  "correta": "**D: tenossinovite de De Quervain.** Puerpério, dor radial do punho piorada pela pinça e dor sobre os tendões do polegar: o caso só falta dizer o nome.",
   "incorretas": {
-   "A": "O túnel do carpo causa formigamento nos primeiros dedos, sobretudo à noite, e não dor localizada no lado radial do punho.",
-   "B": "A tendinite do bíceps causa dor no ombro, na região do sulco do bíceps.",
-   "C": "A epicondilite lateral causa dor no cotovelo, sobre o epicôndilo lateral.",
-   "E": "A síndrome do impacto causa dor no ombro ao elevar o braço."
+   "A": "**Queixa sensitiva e noturna.** O túnel do carpo também é frequente na gravidez, e é isso que o torna tentador. Mas ele dá formigamento nos dedos radiais, e não dor localizada sobre os tendões.",
+   "B": "**Longe demais.** A tendinite do bíceps dói na frente do ombro. Nada no caso sobe além do punho.",
+   "C": "**Mesma família, outro lugar.** O cotovelo de tenista é uma tendinopatia dos extensores no epicôndilo lateral.",
+   "E": "**Ombro de novo.** O impacto dói ao elevar o braço, sem relação com pinça ou torção do punho."
   },
-  "conceito": "O caso é típico da **tenossinovite de De Quervain**: uma **mulher de 35 anos**, que **teve bebê recentemente**, com **dor e inchaço no lado radial do punho**, piorando ao fazer pinça e torção, e dor ao apertar os tendões extensores do polegar.\n\n**O que é a tenossinovite de De Quervain**: é a inflamação e o espessamento da bainha dos tendões do **primeiro compartimento extensor** do punho, por onde passam o **abdutor longo do polegar** e o **extensor curto do polegar**. O túnel fica estreito, e os tendões passam a atritar a cada movimento do polegar.\n\n**Quem tem**:\n\nmulheres de **30 a 50 anos**;\n\nno **pós-parto**: os hormônios e, principalmente, o movimento repetido de levantar e segurar o bebê com o polegar aberto. É chamada às vezes de \"punho da mãe de bebê\";\n\ntrabalhos e atividades com uso repetitivo do polegar e do punho.\n\n**O teste de Finkelstein**: o paciente fecha a mão com o polegar dentro e o punho é desviado para o lado ulnar. Isso estica os tendões dentro do túnel estreito e provoca dor intensa no lado radial do punho.\n\n**Os diagnósticos diferenciais**:\n\n**túnel do carpo**: formigamento nos primeiros dedos, principalmente à noite, e não dor localizada no lado radial do punho;\n\n**tendinite do bíceps** e **impacto do ombro**: dor no ombro;\n\n**epicondilite lateral**: dor no cotovelo.\n\n**Na prova**: puérpera com dor no lado radial do punho, piorando com pinça e torção, tem tenossinovite de De Quervain.",
-  "correta": "Uma puérpera com dor sobre os tendões do primeiro compartimento extensor, piorando com pinça e torção, tem o quadro típico de De Quervain, confirmado pelo teste de Finkelstein.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 56 (Tendinopatias), p. 2109 e 2110",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 76 (Stenosing Tenosynovitis of the Wrist and Hand)"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0265": {
+  "conceito": "O caso descreve um **pintor** com dor no lado do polegar do punho, piorando com desvio ulnar e extensão, e dor sobre os tendões do **abdutor longo** e do **extensor curto do polegar**. É uma **tenossinovite de De Quervain**, causada aqui pelo uso repetitivo da pistola de pintura.\n\n**O tratamento escalonado**:\n\n**primeiro passo**: **infiltração de corticoide** dentro da bainha do primeiro compartimento, muitas vezes associada a uma órtese que imobiliza o polegar e o punho. Campbell inclui o conservador antes da liberação (cap. 76), e o gabarito elege a infiltração como a medida inicial;\n\n**se houver melhora parcial**: uma segunda infiltração;\n\n**se falhar**: **liberação cirúrgica** do compartimento.\n\n**Por que a infiltração às vezes falha**: um **septo** entre o abdutor longo e o extensor curto foi visto em 40% dos punhos de cadáver (Green, cap. 56, p. 2109), e os estudos mostram incidência alta desses subcompartimentos nos casos de De Quervain. Se o corticoide fica só de um lado, o outro continua inflamado. Na injeção bem-feita, o líquido preenche a bainha do primeiro compartimento (p. 2110).\n\n**Um cuidado na cirurgia**: os **ramos superficiais do nervo radial** cruzaram diretamente sob a incisão em todos os espécimes de um estudo anatômico (Green, cap. 56, p. 2111). Lesá-los pode causar um **neuroma** doloroso.\n\n**As outras opções**:\n\n**repouso e imobilização** sozinhos ajudam, mas resolvem menos que a infiltração;\n\n**fortalecimento** não tem papel na fase dolorosa, porque o problema é o atrito num túnel estreito;\n\n**anti-inflamatórios** aliviam os sintomas, mas não mudam o estreitamento.",
+  "correta": "**C: injeção de corticosteroides no local da dor.** Age onde está o problema, a bainha estreitada, com técnica de consultório e sem o risco da incisão.",
   "incorretas": {
-   "A": "A cirurgia fica reservada para a falha do tratamento conservador, e tem risco de lesar o ramo sensitivo do radial.",
-   "B": "Repouso e imobilização são adjuvantes, mas resolvem menos que a infiltração quando usados sozinhos.",
-   "D": "O fortalecimento não tem papel na fase dolorosa, em que o problema é o atrito num túnel estreito.",
-   "E": "Os anti-inflamatórios dão alívio sintomático, mas não mudam a estenose do compartimento."
+   "A": "**Fica para depois.** A liberação é reservada à falha do conservador, e a proximidade dos ramos do radial explica por que não é o primeiro passo.",
+   "B": "**A distratora séria.** Repouso e imobilização fazem parte do tratamento conservador, e muitos serviços começam por aí. O gabarito prefere a infiltração, que trata diretamente a bainha.",
+   "D": "**Hora errada.** Fortalecer com o túnel inflamado aumenta o atrito. A questão é o espaço, e não a força.",
+   "E": "**Só alivia.** O anti-inflamatório oral é coadjuvante e não muda a estenose do compartimento."
   },
-  "conceito": "O caso descreve um **pintor** com dor no lado do polegar do punho, piorando com desvio ulnar e extensão, e dor sobre os tendões do **abdutor longo** e do **extensor curto do polegar**. É uma **tenossinovite de De Quervain**, causada aqui pelo uso repetitivo da pistola de pintura.\n\n**O tratamento escalonado**:\n\n**primeiro passo**: **infiltração de corticoide** dentro da bainha do primeiro compartimento, muitas vezes associada a uma órtese que imobiliza o polegar e o punho. É a medida isolada com **melhor taxa de resolução**, superior à órtese sozinha. Resolve a maioria dos casos com uma ou duas aplicações;\n\n**se houver melhora parcial**: uma segunda infiltração;\n\n**se falhar**: **liberação cirúrgica** do compartimento.\n\n**Por que a infiltração às vezes falha**: muitos pacientes com De Quervain têm um **septo** (uma parede) dividindo o compartimento em dois, com o extensor curto num túnel separado. Se o corticoide for injetado só num dos lados, o outro continua inflamado. Na cirurgia, é preciso procurar e abrir esse septo.\n\n**Um cuidado na cirurgia**: o **ramo superficial do nervo radial** passa logo sobre o compartimento. Lesá-lo pode causar um **neuroma** doloroso, às vezes pior que a doença original.\n\n**As outras opções**:\n\n**repouso e imobilização** sozinhos ajudam, mas resolvem menos que a infiltração;\n\n**fortalecimento** não tem papel na fase dolorosa, porque o problema é o atrito num túnel estreito;\n\n**anti-inflamatórios** aliviam os sintomas, mas não mudam o estreitamento.\n\n**Na prova**: o tratamento inicial recomendado para a tenossinovite de De Quervain é a infiltração de corticoide.",
-  "correta": "A infiltração de corticoide na bainha do primeiro compartimento é a medida isolada com maior taxa de resolução, superior à órtese isolada.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 56 (Tendinopatias), p. 2109 a 2111",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 76 (Stenosing Tenosynovitis of the Wrist and Hand), p. 3852"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0266": {
+  "conceito": "O membro superior se forma no embrião a partir de um **broto**, que surge por volta da 4ª semana. Ele é feito de dois tecidos:\n\no **mesoderma da placa lateral**, por dentro;\n\no **ectoderma**, por fora, que formará a pele.\n\n**Como se formam os ossos dos dedos**:\n\n1. células do mesoderma se juntam e formam **condensações mesenquimais**, aglomerados com o formato do futuro osso;\n\n2. essas condensações viram um **molde de cartilagem**;\n\n3. a cartilagem é substituída por osso, num processo chamado **ossificação endocondral**.\n\n**A origem de cada tecido do membro**:\n\n**osso, cartilagem e tendão**: das células do **mesoderma da placa lateral**, que se condensam (Green, cap. 35, p. 1363);\n\n**elementos musculares, nervosos e vasculares**: do **mesoderma somático**, cujas células migram para dentro do broto, na descrição do Green;\n\n**células de Schwann** e melanócitos: da **crista neural**.\n\n**Os centros que organizam o crescimento**: a crista ectodérmica apical (comprimento), a zona de atividade polarizada (eixo radioulnar, pelo Sonic hedgehog) e o ectoderma dorsal (dorso e palma).\n\n**As outras estruturas da questão**:\n\n**arcos aórticos**: formam as grandes artérias do pescoço e do tórax;\n\n**placa neural**: forma o sistema nervoso central.",
+  "correta": "**E: condensações mesenquimais.** Os ossos do membro não vêm prontos de um centro distante: células do mesoderma se juntam no próprio broto e desenham o molde de cartilagem que depois ossifica.",
   "incorretas": {
-   "A": "Os arcos aórticos formam as artérias do pescoço e do tórax, e não os ossos da mão.",
-   "B": "Os somitos dão origem aos músculos do membro, cujas células migram para o broto, e não aos ossos.",
-   "C": "A crista neural forma os nervos periféricos, as células de Schwann e os melanócitos, e não os ossos dos dedos.",
-   "D": "A placa neural forma o sistema nervoso central, sem relação com o esqueleto do membro."
+   "A": "**Sistema circulatório.** Os arcos aórticos formam grandes artérias, sem relação com o esqueleto da mão.",
+   "B": "**A distratora de embriologia.** Os somitos dão origem ao esqueleto axial e às células que migram para formar o músculo do membro, e não aos ossos dos dedos.",
+   "C": "**Nervos e pigmento.** A crista neural dá células de Schwann e melanócitos, e não o osso do membro.",
+   "D": "**Sistema nervoso central.** A placa neural vira o tubo neural, sem participar do broto do membro."
   },
-  "conceito": "O membro superior se forma no embrião a partir de um **broto**, que surge por volta da 4ª semana. Ele é feito de dois tecidos:\n\no **mesoderma da placa lateral**, por dentro;\n\no **ectoderma**, por fora, que formará a pele.\n\n**Como se formam os ossos dos dedos**:\n\n1. células do mesoderma se juntam e formam **condensações mesenquimais**, aglomerados com o formato do futuro osso;\n\n2. essas condensações viram um **molde de cartilagem**;\n\n3. a cartilagem é substituída por osso, num processo chamado **ossificação endocondral**.\n\n**A origem de cada tecido do membro**:\n\n**ossos, cartilagens, tendões e ligamentos**: das **condensações mesenquimais**, a partir do mesoderma da placa lateral;\n\n**músculos**: dos **somitos** (blocos de tecido ao lado da coluna em formação), cujas células migram para dentro do broto;\n\n**nervos periféricos**, células de Schwann e melanócitos: da **crista neural**;\n\n**vasos**: de células formadoras de vasos do próprio local.\n\n**Os centros que organizam o crescimento**: a crista ectodérmica apical (comprimento), a zona de atividade polarizada (eixo radioulnar, pelo Sonic hedgehog) e o ectoderma dorsal (dorso e palma).\n\n**As outras estruturas da questão**:\n\n**arcos aórticos**: formam as grandes artérias do pescoço e do tórax;\n\n**placa neural**: forma o sistema nervoso central.\n\n**Na prova**: os ossos dos dedos se originam das condensações mesenquimais, do mesoderma da placa lateral.",
-  "correta": "As condensações mesenquimais do mesoderma da placa lateral formam o molde de cartilagem que, por ossificação endocondral, dá origem aos ossos dos dedos.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 35 (Embriologia do membro superior), p. 1363"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0267": {
+  "conceito": "No embrião, a mão começa como uma **placa** achatada, parecida com um remo. Entre a 6ª e a 8ª semanas, aparecem nela os **raios** (ou **cristas**) **digitais**: faixas mais densas, no lugar onde ficarão os dedos, unidas por um tecido entre elas.\n\n**Como os dedos se separam**: os dedos começam palmados, e o tecido entre eles precisa sofrer **apoptose e necrose interdigital**, sob controle de sinais como as proteínas morfogenéticas ósseas (BMP). A falha dessa apoptose resulta em sindactilia (Green, cap. 35, p. 1363). É como esculpir os dedos retirando o material entre eles.\n\n**A sindactilia**: se essa apoptose falha, as cristas digitais **não se separam**, e os dedos ficam unidos. É uma das malformações congênitas mais comuns da mão.\n\n**Os tipos**: **simples** (só partes moles) ou **complexa** (com osso na fusão, mais frequentemente entre os tufos distais; Green, cap. 36, p. 1374); **completa** (até a ponta) ou incompleta; **complicada** (com ossos anormais, como na síndrome de Apert).\n\n**As outras estruturas da questão**: as **condensações mesenquimais** formam o esqueleto dos dedos, mas o que falha na sindactilia é a **separação** dos raios já formados; os **somitos** formam os músculos; a **placa neural** forma o sistema nervoso central; a **crista neural** forma os nervos periféricos e os melanócitos.",
+  "correta": "**E: cristas digitais.** São elas que precisam se individualizar. Quando a apoptose do tecido entre elas falha, os dedos ficam juntos: é a própria definição da sindactilia.",
   "incorretas": {
-   "A": "As condensações mesenquimais formam o esqueleto dos dedos, mas o que falha na sindactilia é a separação dos raios já formados.",
-   "B": "Os somitos dão origem à musculatura, e não formam nem separam os dedos.",
-   "C": "A placa neural forma o sistema nervoso central, sem relação com a separação dos dedos.",
-   "D": "A crista neural forma os nervos periféricos e os melanócitos, e não os raios dos dedos."
+   "A": "**Certa na questão anterior, errada aqui.** As condensações formam os ossos dos dedos, e a banca pede o que deveria se separar. Na sindactilia simples, o esqueleto está normal.",
+   "B": "**Sem papel na separação.** Os somitos participam da origem da musculatura e não esculpem os dedos.",
+   "C": "**Outro sistema.** A placa neural forma o sistema nervoso central.",
+   "D": "**Não forma raio digital.** A crista neural contribui com células nervosas e pigmentares, sem definir a forma da mão."
   },
-  "conceito": "No embrião, a mão começa como uma **placa** achatada, parecida com um remo. Entre a 6ª e a 8ª semanas, aparecem nela os **raios** (ou **cristas**) **digitais**: faixas mais densas, no lugar onde ficarão os dedos, unidas por um tecido entre elas.\n\n**Como os dedos se separam**: não é por crescimento dos dedos. O **tecido entre os raios morre** de forma programada, num processo chamado **apoptose interdigital**, controlado por sinais químicos (como a via BMP). É como esculpir os dedos retirando o material entre eles. A separação avança da ponta para a base e do lado do polegar para o lado do mínimo.\n\n**A sindactilia**: se essa apoptose falha, as cristas digitais **não se separam**, e os dedos ficam unidos. É uma das malformações congênitas mais comuns da mão.\n\n**Alguns dados**:\n\nocorre em cerca de 1 em cada 2.000 a 2.500 nascimentos;\n\no **3º espaço** (entre médio e anelar) é o mais acometido; o 1º espaço (polegar e indicador) é o menos;\n\né bilateral em cerca de metade dos casos.\n\n**Os tipos**: **simples** (só pele) ou **complexa** (com fusão óssea); **completa** (até a ponta) ou incompleta; **complicada** (com ossos anormais, como na síndrome de Apert).\n\n**As outras estruturas da questão**: as **condensações mesenquimais** formam o esqueleto dos dedos, mas o que falha na sindactilia é a **separação** dos raios já formados; os **somitos** formam os músculos; a **placa neural** forma o sistema nervoso central; a **crista neural** forma os nervos periféricos e os melanócitos.\n\n**Na prova**: a sindactilia resulta da falha de separação das cristas (raios) digitais.",
-  "correta": "As cristas digitais deveriam ser separadas pela apoptose do tecido entre elas; quando isso falha, surge a sindactilia.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 35 (Embriologia do membro superior), p. 1363; cap. 36 (Deformidades da mão e dos dedos), p. 1374"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0268": {
+  "conceito": "As lesões de tração de alta energia, como as de veículos e motocicletas, tendem a ser mais graves (Green, cap. 34, p. 1308). O motociclista cai e bate o ombro no chão enquanto a cabeça é jogada para o outro lado. Esse movimento **afasta a cabeça do ombro** e estica as raízes de cima do **plexo braquial** (C5 e C6), que são as mais expostas a essa tração.\n\n**A lesão do plexo braquial superior** (paralisia de Erb, C5 e C6):\n\n**perda da abdução do ombro**: o deltoide (nervo axilar) e o supraespinal (nervo supraescapular) ficam paralisados. Ao tentar abrir o braço, o paciente usa a escápula, e o movimento fica alterado;\n\n**perda da flexão do cotovelo**: o bíceps e o braquial (nervo musculocutâneo) ficam paralisados;\n\n**perda da supinação**: o bíceps é um importante supinador;\n\n**perda de sensibilidade na face lateral do braço**: área do nervo cutâneo lateral superior do braço, ramo do axilar (C5).\n\nO braço fica caído, rodado para dentro e com o cotovelo estendido, na posição de \"gorjeta de garçom\".\n\n**Os outros padrões**:\n\n**lesão do plexo inferior** (Klumpke, C8 e T1): é um padrão raro, afeta a **mão**, com garra e perda dos músculos intrínsecos, e pode vir com síndrome de Horner;\n\n**lesão de um nervo periférico isolado**: o ulnar afeta a mão do lado do mínimo; o mediano, a pinça e os dedos radiais; o radial, a extensão do punho e dos dedos. Nenhum deles explica, sozinho, a paralisia do ombro e do cotovelo juntos.\n\n**Um cuidado**: procurar sinais de lesão pré-ganglionar, como a síndrome de Horner (miose, ptose, anidrose), ligada à cadeia simpática na raiz T1 (Green, cap. 34, p. 1307).",
+  "correta": "**D: lesão do plexo braquial superior.** Abdução do ombro, flexão do cotovelo, supinação e sensibilidade lateral do braço têm um ponto em comum: C5 e C6. É o único local que explica tudo.",
   "incorretas": {
-   "A": "O nervo ulnar afeta a mão do lado do mínimo, sem paralisar o ombro ou o cotovelo.",
-   "B": "O nervo mediano afeta a pinça e os dedos radiais, sem comprometer o ombro.",
-   "C": "O nervo radial causa punho caído e não explica a perda da flexão do cotovelo e da abdução do ombro.",
-   "E": "A lesão do plexo inferior (C8 e T1) afeta a mão, com garra e borda ulnar, o oposto do quadro descrito."
+   "A": "**Só a mão.** A lesão do ulnar compromete os intrínsecos e o lado ulnar da mão, sem tocar ombro e cotovelo.",
+   "B": "**Tampouco alcança o ombro.** O mediano responde por pinça e flexores do lado radial.",
+   "C": "**A mais fácil de confundir.** O radial é um nervo de trauma de braço, mas sua lesão dá punho caído e poupa bíceps e deltoide.",
+   "E": "**O espelho do caso.** O plexo inferior atinge a mão, com ombro e cotovelo preservados."
   },
-  "conceito": "No acidente de moto, o motociclista cai e bate o ombro no chão enquanto a cabeça é jogada para o outro lado. Esse movimento **afasta a cabeça do ombro** e estica as raízes de cima do **plexo braquial** (C5 e C6), que são as mais expostas a essa tração.\n\n**A lesão do plexo braquial superior** (paralisia de Erb, C5 e C6):\n\n**perda da abdução do ombro**: o deltoide (nervo axilar) e o supraespinal (nervo supraescapular) ficam paralisados. Ao tentar abrir o braço, o paciente usa a escápula, e o movimento fica alterado;\n\n**perda da flexão do cotovelo**: o bíceps e o braquial (nervo musculocutâneo) ficam paralisados;\n\n**perda da supinação**: o bíceps é um importante supinador;\n\n**perda de sensibilidade na face lateral do braço**: área do nervo cutâneo lateral superior do braço, ramo do axilar (C5).\n\nO braço fica caído, rodado para dentro e com o cotovelo estendido, na posição de \"gorjeta de garçom\".\n\n**Os outros padrões**:\n\n**lesão do plexo inferior** (Klumpke, C8 e T1): afeta a **mão**, com garra e perda dos músculos intrínsecos, e pode vir com síndrome de Horner;\n\n**lesão de um nervo periférico isolado**: o ulnar afeta a mão do lado do mínimo; o mediano, a pinça e os dedos radiais; o radial, a extensão do punho e dos dedos. Nenhum deles explica, sozinho, a paralisia do ombro e do cotovelo juntos.\n\n**Um cuidado**: procurar sinais de que as raízes foram arrancadas da medula (avulsão), como escápula alada, hemidiafragma elevado e síndrome de Horner.\n\n**Na prova**: paralisia da abdução do ombro e da flexão do cotovelo, com perda de sensibilidade lateral no braço após acidente de moto, indica lesão do plexo braquial superior.",
-  "correta": "Abdução do ombro, flexão do cotovelo, supinação e sensibilidade lateral do braço dependem de C5 e C6, o tronco superior, lesado pela tração na queda de moto.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 34 (Lesão traumática do plexo braquial), p. 1307, 1308 e 1316"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0269": {
+  "conceito": "O punho é estabilizado por vários **ligamentos**, e é importante saber exatamente **quais ossos cada um une**.\n\n**Os ligamentos extrínsecos** (que vão do rádio ou da ulna até o carpo):\n\n**radioescafocapitato** (RSC): na face palmar, sai do **rádio**, passa pelo escafoide e vai até o **capitato**. Junto com o radioescafoide (RS), é o que **liga o rádio ao escafoide**; os dois têm origem na estiloide radial (Green, cap. 13, p. 489 e 554);\n\n**radiossemilunar longo**: do rádio ao semilunar;\n\n**radiocárpico dorsal**: do rádio ao semilunar e ao piramidal, pelo dorso.\n\n**Os ligamentos intrínsecos** (que unem ossos do carpo entre si):\n\n**escafossemilunar**: une o **escafoide ao semilunar**. A parte dorsal é a mais forte. Sua ruptura causa a dissociação escafossemilunar, com afastamento entre os dois ossos na radiografia e o padrão de instabilidade DISI;\n\n**lunopiramidal**: une o semilunar ao piramidal.\n\n**Sobre esta questão**: o gabarito oficial é o ligamento **escafossemilunar**. Mas, anatomicamente, ele **não** liga o rádio ao escafoide: liga o escafoide ao semilunar. A estrutura que conecta o rádio ao escafoide é o **radioescafocapitato**, que não aparece entre as alternativas. Vale guardar a anatomia correta.\n\n**Os outros itens**: o colateral ulnar do punho fica no lado ulnar; o tendão do bíceps se insere no rádio perto do cotovelo; o cruzado anterior é do joelho.",
+  "correta": "**D: ligamento escafolunar.** É o gabarito oficial, e entre as opções é o único ligamento que chega ao escafoide. Só que ele une escafoide e semilunar, e não rádio e escafoide, como explica o alerta.",
   "incorretas": {
-   "A": "O ligamento colateral ulnar do punho fica no lado ulnar, entre a estiloide da ulna e o piramidal, e não liga o rádio ao escafoide.",
-   "B": "O tendão do bíceps se insere na tuberosidade do rádio, perto do cotovelo, longe do escafoide.",
-   "C": "O ligamento cruzado anterior é uma estrutura do joelho.",
-   "E": "\"Ligamento palmar\" é um termo genérico, que não nomeia uma estrutura específica."
+   "A": "**Fica do lado oposto.** O colateral ulnar do punho está na borda ulnar, longe da ponte rádio-escafoide.",
+   "B": "**Fica no cotovelo.** O bíceps se insere na tuberosidade do rádio, sem relação com o carpo.",
+   "C": "**Outra articulação.** O cruzado anterior é do joelho, opção para eliminar sem pensar.",
+   "E": "**A opção que mais incomoda.** Os ligamentos que de fato vão do rádio ao escafoide são palmares, e o enunciado talvez até aceitasse essa ideia. Mas \"ligamento palmar\" é um termo genérico, que não nomeia estrutura, e a banca não o considerou."
   },
-  "conceito": "O punho é estabilizado por vários **ligamentos**, e é importante saber exatamente **quais ossos cada um une**.\n\n**Os ligamentos extrínsecos** (que vão do rádio ou da ulna até o carpo):\n\n**radioescafocapitato**: na face palmar, sai do **rádio**, passa pela **cintura do escafoide** (abraçando-a como uma tipoia) e vai até o **capitato**. É ele que **liga o rádio ao escafoide** e serve de eixo para o escafoide girar;\n\n**radiossemilunar longo**: do rádio ao semilunar;\n\n**radiocárpico dorsal**: do rádio ao semilunar e ao piramidal, pelo dorso.\n\n**Os ligamentos intrínsecos** (que unem ossos do carpo entre si):\n\n**escafossemilunar**: une o **escafoide ao semilunar**. A parte dorsal é a mais forte. Sua ruptura causa a dissociação escafossemilunar, com afastamento entre os dois ossos na radiografia e o padrão de instabilidade DISI;\n\n**lunopiramidal**: une o semilunar ao piramidal.\n\n**Sobre esta questão**: o gabarito oficial é o ligamento **escafossemilunar**. Mas, anatomicamente, ele **não** liga o rádio ao escafoide: liga o escafoide ao semilunar. A estrutura que conecta o rádio ao escafoide é o **radioescafocapitato**, que não aparece entre as alternativas. Vale guardar a anatomia correta.\n\n**Os outros itens**: o colateral ulnar do punho fica no lado ulnar; o tendão do bíceps se insere no rádio perto do cotovelo; o cruzado anterior é do joelho.\n\n**Na prova**: o gabarito marca o escafossemilunar, mas a ligação entre rádio e escafoide é feita pelo radioescafocapitato.",
-  "correta": "É o gabarito oficial; anatomicamente, o escafossemilunar une escafoide e semilunar, e quem liga o rádio ao escafoide é o radioescafocapitato.",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 13 (Instabilidade do carpo), p. 489 e 554"
+  ],
   "alerta": "O gabarito afirma que o ligamento escafossemilunar liga o rádio ao escafoide. Ele liga o escafoide ao semilunar. Quem sai do rádio e abraça o escafoide é o radioescafocapitato, e nenhuma alternativa o nomeia. Guarde a anatomia, não a letra.",
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0270": {
@@ -3617,100 +3662,125 @@
   }
  },
  "mao-0271": {
+  "conceito": "O **dorso da mão** tem uma pele **fina, elástica e móvel**, que desliza sobre os tendões extensores a cada movimento dos dedos. Quando essa pele é perdida num trauma, a cobertura precisa ter as mesmas qualidades: **fina, flexível e deslizante**.\n\n**Como escolher a cobertura**:\n\nse o **paratendão** (a camada fina e vascularizada sobre o tendão) está preservado: um **enxerto de pele** pode pegar. É com ele intacto que o Green descreve a dissecção de retalhos no dorso, com a área doadora coberta por enxerto (cap. 44, p. 1716);\n\nse há **tendão sem paratendão** ou **osso exposto**: o enxerto não pega, e é preciso um **retalho** (tecido levado com sua própria circulação).\n\n**O retalho fasciocutâneo** é o mais apropriado para o dorso da mão:\n\né formado por **pele e fáscia**, sem músculo; o Green chama de fasciocutâneos os retalhos axiais cujos vasos passam primeiro pela fáscia (cap. 44, p. 1712);\n\npor isso é **fino** e **desliza** bem sobre os tendões;\n\nexemplos: o retalho da **artéria interóssea posterior** e o retalho **antebraquial radial** (chinês), ambos girados do antebraço com fluxo invertido; para defeitos grandes, retalhos livres, como o da face lateral da coxa.\n\n**As outras opções da questão**:\n\n**retalho axial**: é uma classificação pela **circulação** (tem uma artéria definida no eixo), e não pela composição. Um retalho fasciocutâneo pode ser axial;\n\n**retalho miocutâneo**: inclui músculo, é **volumoso** e serve para preencher cavidades, não para cobrir o dorso fino;\n\n**retalho osteomuscular**: inclui osso, para reconstruir falhas ósseas;\n\n**\"retalho proporcional\"** não é uma categoria reconhecida.",
+  "correta": "**C: retalho fasciocutâneo.** Sem músculo, fica fino e permite que os extensores deslizem por baixo, que é justamente a exigência do dorso da mão.",
   "incorretas": {
-   "A": "\"Axial\" descreve o tipo de circulação do retalho, e não sua composição; um retalho fasciocutâneo pode ser axial.",
-   "B": "\"Retalho proporcional\" não é uma categoria reconhecida de retalho.",
-   "D": "O retalho miocutâneo inclui músculo e é volumoso demais para o dorso da mão, servindo melhor para preencher cavidades.",
-   "E": "O retalho osteomuscular é usado para reconstruir falhas ósseas, o que não é o problema aqui."
+   "A": "**Responde a outra pergunta.** Axial descreve de onde vem o sangue, uma artéria conhecida no eixo; não diz o que o retalho contém. Um fasciocutâneo pode ser axial, e é isso que torna a opção imperfeita, e não absurda.",
+   "B": "**Não é uma categoria.** Retalho proporcional não existe como tipo reconhecido.",
+   "D": "**Volume demais.** O músculo ajuda a preencher cavidades e a combater infecção, mas no dorso cria um bloco que atrapalha o deslizamento e o calçar de luvas.",
+   "E": "**Resolve outro problema.** Só faz sentido com falha óssea associada, e o enunciado fala apenas de pele."
   },
-  "conceito": "O **dorso da mão** tem uma pele **fina, elástica e móvel**, que desliza sobre os tendões extensores a cada movimento dos dedos. Quando essa pele é perdida num trauma, a cobertura precisa ter as mesmas qualidades: **fina, flexível e deslizante**.\n\n**Como escolher a cobertura**:\n\nse o **paratendão** (a camada fina e vascularizada sobre o tendão) está preservado: um **enxerto de pele** pode pegar;\n\nse há **tendão sem paratendão** ou **osso exposto**: o enxerto não pega, e é preciso um **retalho** (tecido levado com sua própria circulação).\n\n**O retalho fasciocutâneo** é o mais apropriado para o dorso da mão:\n\né formado por **pele e fáscia**, sem músculo;\n\npor isso é **fino** e **desliza** bem sobre os tendões;\n\nexemplos: o retalho da **artéria interóssea posterior** e o retalho **antebraquial radial** (chinês), ambos girados do antebraço com fluxo invertido; para defeitos grandes, retalhos livres, como o da face lateral da coxa.\n\n**As outras opções da questão**:\n\n**retalho axial**: é uma classificação pela **circulação** (tem uma artéria definida no eixo), e não pela composição. Um retalho fasciocutâneo pode ser axial;\n\n**retalho miocutâneo**: inclui músculo, é **volumoso** e serve para preencher cavidades, não para cobrir o dorso fino;\n\n**retalho osteomuscular**: inclui osso, para reconstruir falhas ósseas;\n\n**\"retalho proporcional\"** não é uma categoria reconhecida.\n\n**Na prova**: para perda de pele no dorso da mão, o retalho mais apropriado é o fasciocutâneo.",
-  "correta": "O retalho fasciocutâneo, com pele e fáscia sem músculo, é fino e deslizante, e cobre bem tendões expostos no dorso da mão.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 44 (Cobertura não microcirúrgica do membro superior), p. 1712 e 1716"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0272": {
+  "conceito": "O **cisto sinovial** (ou **gânglio**) é uma bolsa cheia de um líquido espesso e gelatinoso (mucina), ligada a uma **articulação** ou à **bainha de um tendão** por um pequeno canal (o pedículo). O pedículo funciona como uma válvula: o líquido entra no cisto, mas tem dificuldade de voltar. É o **tumor de partes moles mais comum da mão**, e é **benigno**.\n\n**Os locais e a frequência**:\n\n**dorso do punho**: **60% a 70%** dos casos, o protótipo dos gânglios da mão, em geral diretamente sobre o **ligamento escafolunar** (Green, cap. 59, p. 2197). Às vezes é tão pequeno que não se vê (cisto oculto), mas causa dor;\n\n**face palmar (volar) do punho**: 18% a 20%, o segundo mais comum, sobre a borda distal do rádio ou o tubérculo do escafoide (Green, cap. 59, p. 2201), junto à **artéria radial**, o que exige cuidado na cirurgia;\n\n**bainha dos flexores**: cerca de 10%, como um caroço firme e pequeno na base do dedo, junto às polias;\n\n**cisto mucoso**: no dorso da ponta do dedo, ligado à **artrose** da interfalângica distal; pode deformar a unha;\n\n**intraósseo**: dentro de um osso do carpo, raro.\n\n**O tratamento**:\n\n**observação**: até metade desaparece sozinha;\n\n**aspiração** com agulha: recidiva muito;\n\n**retirada cirúrgica** junto com o pedículo e um pedaço da cápsula: menor recidiva.",
+  "correta": "**A: na parte dorsal.** É o número do Green: 60% a 70% dos gânglios da mão e do punho estão no dorso do punho, e a questão só simplificou o nome.",
   "incorretas": {
-   "B": "O cisto volar do punho é o segundo mais comum, mas bem menos frequente que o dorsal.",
-   "C": "Os cistos dos dedos, da bainha flexora e mucosos, são frequentes, mas menos que o dorsal do punho.",
-   "D": "O cisto dentro dos ossos do punho, intraósseo, é raro.",
-   "E": "O cotovelo não faz parte da mão, e cistos nessa articulação são incomuns."
+   "B": "**A segunda colocação, se tanto.** O gânglio volar do punho fica em 18% a 20%, e a palma em si tem os da bainha flexora, ainda menos frequentes.",
+   "C": "**Existem, mas são minoria.** Os cistos de bainha e os mucosos da interfalângica distal são comuns na prática, sem chegar perto do dorsal.",
+   "D": "**Raridade.** O gânglio intraósseo é achado de exceção, geralmente na investigação de punho doloroso.",
+   "E": "**Nem é mão.** A pergunta é sobre cistos da mão, e o cotovelo fica fora da conta."
   },
-  "conceito": "O **cisto sinovial** (ou **gânglio**) é uma bolsa cheia de um líquido espesso e gelatinoso (mucina), ligada a uma **articulação** ou à **bainha de um tendão** por um pequeno canal (o pedículo). O pedículo funciona como uma válvula: o líquido entra no cisto, mas tem dificuldade de voltar. É o **tumor de partes moles mais comum da mão**, e é **benigno**.\n\n**Os locais e a frequência**:\n\n**dorso do punho**: cerca de **60% a 70%** dos casos, o **mais comum**. Nasce do **ligamento escafossemilunar**. Às vezes é tão pequeno que não se vê (cisto oculto), mas causa dor;\n\n**face palmar (volar) do punho**: cerca de 18% a 20%. Nasce da articulação radiocárpica ou da base do polegar, e fica junto à **artéria radial**, o que exige cuidado na cirurgia;\n\n**bainha dos flexores**: cerca de 10%, como um caroço firme e pequeno na base do dedo, junto às polias;\n\n**cisto mucoso**: no dorso da ponta do dedo, ligado à **artrose** da interfalângica distal; pode deformar a unha;\n\n**intraósseo**: dentro de um osso do carpo, raro.\n\n**O tratamento**:\n\n**observação**: até metade desaparece sozinha;\n\n**aspiração** com agulha: recidiva muito;\n\n**retirada cirúrgica** junto com o pedículo e um pedaço da cápsula: menor recidiva.\n\n**Na prova**: a localização mais comum dos cistos sinoviais da mão é o dorso do punho.",
-  "correta": "O cisto dorsal do punho, que nasce do ligamento escafossemilunar, responde por cerca de 60% a 70% dos cistos sinoviais da mão.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 59 (Tumores ósseos e de partes moles), p. 2197 e 2201"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0273": {
+  "conceito": "A **doença de Dupuytren** é uma **fibromatose**: uma proliferação anormal de **tecido fibroso** na **fáscia palmar** (ou aponeurose palmar), a camada fibrosa logo abaixo da pele da palma, e nas suas extensões para os dedos.\n\n**O que acontece**: células chamadas **miofibroblastos** (fibroblastos que se contraem como músculo; o Green as coloca no centro da contração do cordão, cap. 4, p. 150) se multiplicam e produzem colágeno. As faixas normais da fáscia viram **nódulos** e depois **cordas** grossas, que **encurtam** e puxam os dedos para dentro da palma.\n\n**O que adoece e o que não adoece**:\n\na **fáscia palmar e digital**: é onde está a doença, com fibrose e contração;\n\nos **tendões flexores**: estão **normais**. Por isso o paciente consegue **fechar** a mão normalmente; o problema é que ele **não consegue abrir**;\n\nas **articulações**: não são a origem; podem endurecer **depois**, por ficarem muito tempo dobradas;\n\nos **nervos digitais**: não são lesados pela doença, mas podem ser **deslocados** por uma corda (a corda espiral), ficando no caminho do bisturi na cirurgia.\n\n**O perfil típico**: homens caucasianos idosos com história familiar; o início é raro na infância e incomum antes dos 40 anos (Green, cap. 4, p. 148).\n\n**As outras alternativas** descrevem outras doenças: inflamação das articulações (artrites), acúmulo de líquido sinovial (sinovite ou cisto), lesão de nervos e fraturas.",
+  "correta": "**C: fibrose do tecido conjuntivo da palma da mão.** A doença mora na fáscia palmar, e tudo o que se vê depois, nódulo, corda e dedo preso, nasce dessa fibrose.",
   "incorretas": {
-   "A": "A doença não é uma artrite; a rigidez das articulações, quando aparece, é secundária à flexão mantida.",
-   "B": "Não há acúmulo de líquido sinovial; isso caracterizaria uma sinovite ou um cisto.",
-   "D": "Os nervos digitais não são lesados pela doença; eles podem ser deslocados pela corda espiral.",
-   "E": "A doença de Dupuytren é de partes moles, sem relação com fraturas."
+   "A": "**Não é artrite.** A articulação é vítima tardia: endurece porque ficou dobrada, sem inflamação crônica como causa.",
+   "B": "**Não há sinovite.** Acúmulo de líquido sinovial sugere cisto ou tenossinovite, e a corda é sólida.",
+   "D": "**O nervo é deslocado, e não lesado.** A corda espiral empurra o nervo digital para o caminho do bisturi. É um perigo cirúrgico, e não uma característica da doença.",
+   "E": "**Sem relação.** Não há componente ósseo; fratura recorrente de metacarpal aponta para outra coisa."
   },
-  "conceito": "A **doença de Dupuytren** é uma **fibromatose**: uma proliferação anormal de **tecido fibroso** na **fáscia palmar** (ou aponeurose palmar), a camada fibrosa logo abaixo da pele da palma, e nas suas extensões para os dedos.\n\n**O que acontece**: células chamadas **miofibroblastos** (fibroblastos que se contraem como músculo) se multiplicam e produzem colágeno. As faixas normais da fáscia viram **nódulos** e depois **cordas** grossas, que **encurtam** e puxam os dedos para dentro da palma.\n\n**O que adoece e o que não adoece**:\n\na **fáscia palmar e digital**: é onde está a doença, com fibrose e contração;\n\nos **tendões flexores**: estão **normais**. Por isso o paciente consegue **fechar** a mão normalmente; o problema é que ele **não consegue abrir**;\n\nas **articulações**: não são a origem; podem endurecer **depois**, por ficarem muito tempo dobradas;\n\nos **nervos digitais**: não são lesados pela doença, mas podem ser **deslocados** por uma corda (a corda espiral), ficando no caminho do bisturi na cirurgia.\n\n**O perfil típico**: homens, acima dos 40 a 50 anos, de ascendência do norte da Europa, com o anelar e o mínimo mais acometidos.\n\n**As outras alternativas** descrevem outras doenças: inflamação das articulações (artrites), acúmulo de líquido sinovial (sinovite ou cisto), lesão de nervos e fraturas.\n\n**Na prova**: a principal característica anatômica da doença de Dupuytren é a fibrose do tecido conjuntivo da palma, a fáscia palmar.",
-  "correta": "A doença é uma fibromatose da fáscia palmar e de suas extensões digitais, cujas faixas normais viram cordas que contraem e dobram os dedos.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 4 (Doença de Dupuytren), p. 148 e 150"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0274": {
+  "conceito": "Se você precisasse desenhar o paciente típico de Dupuytren, seria um homem mais velho, branco e com familiares que têm a mesma mão. O Green resume exatamente assim: a doença é mais prevalente em homens caucasianos idosos com história familiar. O início clínico é raro na infância e incomum antes dos 40 anos, e a razão entre homens e mulheres diminui com a idade, porque a doença alcança as mulheres mais tarde (cap. 4, p. 148).\n\nA ascendência pesa muito: descendência caucasiana aumenta o risco, e o Green trata a hereditariedade como parte central da doença. Já os famosos fatores associados, como alcoolismo, tabagismo, trabalho braçal, diabetes e trauma local, são no máximo fatores de risco menores (p. 148), um ponto que vale guardar porque muitos textos antigos os colocam em destaque.\n\nFugir desse perfil também é informação. Quem começa cedo, ou tem doença difusa, levanta a ideia de **diátese de Dupuytren**, termo de Hueston (p. 149 e 162), com tendência a evoluir mal e recidivar. E um dedo dobrado numa criança faz pensar em camptodactilia, e não em Dupuytren.",
+  "correta": "**B: homens idosos.** É o resumo do perfil do Green: masculino, mais velho, com história familiar.",
   "incorretas": {
-   "A": "Mulheres jovens são o oposto do perfil: as mulheres adoecem menos e mais tarde.",
-   "C": "A doença praticamente não existe em crianças; um dedo dobrado na criança sugere camptodactilia.",
-   "D": "Adultos jovens não são o grupo típico; o início precoce indica a diátese, uma forma mais agressiva.",
-   "E": "A distribuição não é igual: sexo, idade e ascendência pesam muito no risco."
+   "A": "**O oposto em dois pontos.** Mulheres adoecem menos e mais tarde, e a juventude quase exclui o diagnóstico.",
+   "C": "**Rara na infância.** O Green faz essa ressalva, e o dedo fletido da criança costuma ter outra explicação.",
+   "D": "**Só acerta o sexo.** Início antes dos 40 é incomum e, quando ocorre, sugere uma doença mais agressiva.",
+   "E": "**Nada aqui é igual.** Idade, sexo, ascendência e família alteram o risco de maneira marcante."
   },
-  "conceito": "A **doença de Dupuytren** tem um perfil epidemiológico muito característico, cobrado com frequência.\n\n**Quem tem**:\n\n**sexo**: predomina muito nos **homens**, com cerca de **10 homens para cada mulher** nas séries clássicas;\n\n**idade**: a frequência **aumenta com a idade**, sendo comum a partir dos 50 a 60 anos;\n\n**ascendência**: muito mais comum em pessoas de origem do **norte da Europa**; rara em asiáticos e africanos;\n\n**família**: tende a ocorrer em famílias, com herança genética;\n\n**lateralidade**: muitas vezes nas duas mãos, mas de forma **assimétrica**.\n\n**Por isso, o grupo mais acometido é o de homens idosos.**\n\n**Quando o paciente foge desse perfil**:\n\n**início antes dos 50 anos**: sinal de **diátese de Dupuytren**, uma forma mais **agressiva**, com maior chance de recidiva após o tratamento;\n\n**mulheres**: adoecem menos, começam mais tarde e a doença evolui mais devagar;\n\n**criança com dedo dobrado**: não é Dupuytren; pensa-se em **camptodactilia** (contratura congênita da interfalângica proximal) ou artrogripose.\n\n**Fatores associados**: diabetes, álcool, tabagismo, epilepsia e trabalho com vibração.\n\n**Na prova**: a doença de Dupuytren é mais comum em homens idosos, especialmente de ascendência norte-europeia.",
-  "correta": "O predomínio masculino chega a cerca de 10 para 1, e a frequência sobe com a idade, sendo comum após os 50 a 60 anos.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 4 (Doença de Dupuytren), p. 148, 149 e 162"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0275": {
+  "conceito": "Um **enxerto de pele** é um pedaço de pele retirado de um lugar e colocado em outro, **sem** sua própria circulação: ele sobrevive se \"alimentando\" do leito onde é colocado, até criar novos vasos. Há dois tipos principais:\n\n**enxerto de espessura parcial** (*split-thickness*): leva a epiderme e só **parte da derme**. É retirado com um aparelho (dermátomo), geralmente da coxa, e a área doadora cicatriza sozinha. Pega com mais facilidade e pode ser expandido em malha para cobrir grandes áreas. Por outro lado, **contrai muito** durante a cicatrização e fica com cor e textura piores;\n\n**enxerto de espessura total** (*full-thickness*): leva a epiderme e **toda a derme**. É retirado de áreas como a virilha ou a região acima da clavícula, e a área doadora é fechada com pontos. Exige um leito bem vascularizado e só cobre áreas pequenas, mas **contrai bem menos** e tem **cor e textura** mais próximas da pele normal.\n\n**A troca que decide**: o Green lembra que os enxertos de espessura total contraem menos que os parciais e têm melhor sensibilidade, mas não pegam tão prontamente (cap. 44, p. 1704). É por isso que a retração tardia, a que causa deformidade, pesa a favor do enxerto total, como na liberação da primeira comissura (p. 1710).\n\n**Por isso**, para **minimizar cicatrizes e retrações**, o enxerto de espessura **total** é o mais indicado.\n\n**Sobre as queimaduras**: a de segundo grau superficial cicatriza sozinha em 2 a 3 semanas, sem enxerto; a de segundo grau profundo e a de terceiro grau são retiradas e enxertadas.",
+  "correta": "**B: enxerto de espessura total.** O enunciado pede \"minimizar as cicatrizes\", e esse é o critério do enxerto total: contrai menos que o parcial (Green, cap. 44, p. 1704). O preço é exigir leito melhor e cobrir áreas menores.",
   "incorretas": {
-   "A": "O enxerto de espessura parcial é o padrão para cobrir grandes áreas em queimados, mas contrai mais e tem resultado estético pior.",
-   "C": "A pele de doador cadavérico é um curativo biológico temporário, que acaba rejeitado, e não uma cobertura definitiva.",
-   "D": "A matriz dérmica é um substituto da derme que precisa de um enxerto de pele por cima depois.",
-   "E": "O enxerto composto, com mais de um tecido, é usado em reconstruções pequenas, como a asa do nariz ou a ponta do dedo, e não no antebraço."
+   "A": "**Pega melhor, mas contrai mais.** É o burro de carga das áreas grandes, inclusive nos queimados. Se a pergunta fosse sobre cobrir área extensa, seria essa a resposta.",
+   "C": "**Curativo biológico.** A pele de cadáver protege temporariamente, até a rejeição, e não é cobertura definitiva.",
+   "D": "**Prepara o leito.** A matriz dérmica substitui a derme, mas depois precisa de pele por cima, então não responde sozinha.",
+   "E": "**Usado para defeitos pequenos.** O composto leva mais de um tecido e serve a pequenas reconstruções, e não a uma área de antebraço."
   },
-  "conceito": "Um **enxerto de pele** é um pedaço de pele retirado de um lugar e colocado em outro, **sem** sua própria circulação: ele sobrevive se \"alimentando\" do leito onde é colocado, até criar novos vasos. Há dois tipos principais:\n\n**enxerto de espessura parcial** (*split-thickness*): leva a epiderme e só **parte da derme**. É retirado com um aparelho (dermátomo), geralmente da coxa, e a área doadora cicatriza sozinha. Pega com mais facilidade e pode ser expandido em malha para cobrir grandes áreas. Por outro lado, **contrai muito** durante a cicatrização e fica com cor e textura piores;\n\n**enxerto de espessura total** (*full-thickness*): leva a epiderme e **toda a derme**. É retirado de áreas como a virilha ou a região acima da clavícula, e a área doadora é fechada com pontos. Exige um leito bem vascularizado e só cobre áreas pequenas, mas **contrai bem menos** e tem **cor e textura** mais próximas da pele normal.\n\n**Os dois tipos de contração**:\n\n**primária**: logo após a retirada, por causa das fibras elásticas; é **maior no enxerto total**;\n\n**secundária**: tardia, durante a cicatrização; é **maior no enxerto parcial**. É essa a que importa, porque causa as retrações e deformidades.\n\n**Por isso**, para **minimizar cicatrizes e retrações**, o enxerto de espessura **total** é o mais indicado.\n\n**Sobre as queimaduras**: a de segundo grau superficial cicatriza sozinha em 2 a 3 semanas, sem enxerto; a de segundo grau profundo e a de terceiro grau são retiradas e enxertadas.\n\n**Na prova**: o enxerto de espessura total é o que melhor minimiza cicatrizes e retrações.",
-  "correta": "O enxerto de espessura total leva toda a derme, contrai bem menos e tem cor e textura mais próximas da pele vizinha.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 44 (Cobertura não microcirúrgica do membro superior), p. 1704 e 1710"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0276": {
+  "conceito": "A **zetaplastia** é uma técnica cirúrgica para tratar **cicatrizes retraídas**: aquelas que encurtam a pele e puxam a região, limitando o movimento.\n\n**Como funciona**:\n\na cicatriz vira o traço central de um **Z**;\n\ndos dois lados, cortam-se dois **triângulos** de pele vizinha;\n\nos triângulos são **trocados de lugar**.\n\n**O resultado**:\n\na pele **ganha comprimento** na direção da cicatriz; os lados do Z têm o mesmo comprimento, e os ângulos variam conforme a necessidade e a topografia (Green, cap. 44, p. 1714);\n\na cicatriz **muda de direção**, deixando de formar uma linha reta que puxa;\n\nisso corrige a **contratura** e melhora tanto a **função** (o movimento volta) quanto a **estética**.\n\n**Um ponto essencial**: a zetaplastia **não repõe tecido perdido**. Ela apenas **redistribui** a pele que já existe na região. Quando há **perda de substância** (falta de pele), são necessários enxertos ou retalhos.\n\n**Na mão**: é muito usada para abrir a **primeira comissura** (o espaço entre polegar e indicador) quando ela está fechada por cicatriz, e em cicatrizes retráteis dos dedos. Para a comissura, existem variações com quatro ou cinco retalhos.\n\n**Sobre esta questão**: o enunciado fala em perda de tecido, o que a zetaplastia não resolve. O uso clássico da técnica é corrigir contraturas. O gabarito oficial considera como objetivo principal **melhorar a estética e a funcionalidade** da mão.",
+  "correta": "**E: melhorar a estética e a funcionalidade da mão.** É o gabarito oficial e a mais ampla das opções: ao alongar e redirecionar a cicatriz, a zetaplastia melhora o movimento e a aparência, embora não reponha tecido.",
   "incorretas": {
-   "A": "Corrigir contratura é o uso clássico da zetaplastia, mas o enunciado descreve perda de tecido, e a banca aceitou a alternativa mais ampla.",
-   "B": "A zetaplastia é um procedimento de pele e não restaura a função de tendões.",
-   "C": "A zetaplastia não reinerva a região; a pele transposta leva apenas a sensibilidade que já tinha.",
-   "D": "A zetaplastia não tem efeito anti-inflamatório."
+   "A": "**A resposta tecnicamente mais precisa.** Corrigir contratura é o uso clássico da técnica, como na primeira comissura, e por isso esta alternativa confunde. A banca preferiu a formulação mais ampla; veja o alerta.",
+   "B": "**Fica na pele.** A zetaplastia não repara nem desliza tendão; apenas reorganiza a cobertura.",
+   "C": "**Não reinerva.** O retalho leva a sensibilidade que já tinha, sem restaurar a da região perdida.",
+   "D": "**Não trata inflamação.** É uma manobra geométrica de pele."
   },
-  "conceito": "A **zetaplastia** é uma técnica cirúrgica para tratar **cicatrizes retraídas**: aquelas que encurtam a pele e puxam a região, limitando o movimento.\n\n**Como funciona**:\n\na cicatriz vira o traço central de um **Z**;\n\ndos dois lados, cortam-se dois **triângulos** de pele vizinha;\n\nos triângulos são **trocados de lugar**.\n\n**O resultado**:\n\na pele **ganha comprimento** na direção da cicatriz (cerca de 50% com ângulos de 45° e 75% com 60°);\n\na cicatriz **muda de direção**, deixando de formar uma linha reta que puxa;\n\nisso corrige a **contratura** e melhora tanto a **função** (o movimento volta) quanto a **estética**.\n\n**Um ponto essencial**: a zetaplastia **não repõe tecido perdido**. Ela apenas **redistribui** a pele que já existe na região. Quando há **perda de substância** (falta de pele), são necessários enxertos ou retalhos.\n\n**Na mão**: é muito usada para abrir a **primeira comissura** (o espaço entre polegar e indicador) quando ela está fechada por cicatriz, e em cicatrizes retráteis dos dedos. Para a comissura, existem variações com quatro ou cinco retalhos.\n\n**Sobre esta questão**: o enunciado fala em perda de tecido, o que a zetaplastia não resolve. O uso clássico da técnica é corrigir contraturas. O gabarito oficial considera como objetivo principal **melhorar a estética e a funcionalidade** da mão.\n\n**Na prova**: o gabarito considera que o objetivo da zetaplastia é melhorar a estética e a funcionalidade da mão.",
-  "correta": "É o gabarito oficial: ao alongar e redirecionar a cicatriz, a zetaplastia melhora a função e a estética, embora não reponha tecido perdido.",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 44 (Cobertura não microcirúrgica do membro superior), p. 1714"
+  ],
   "alerta": "O enunciado descreve perda de tecido e pergunta o objetivo de uma zetaplastia, que não repõe tecido, ela redistribui o que existe. A alternativa mais precisa sobre a técnica (corrigir contratura) não corresponde ao caso apresentado.",
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0277": {
+  "conceito": "Para cobrir ou reorganizar a pele, o cirurgião tem várias opções, que diferem na **origem do tecido** e na forma como ele recebe sangue:\n\n**enxerto**: pele retirada de outro lugar **sem** circulação própria; sobrevive com os vasos do leito;\n\n**retalho local**: tecido da **vizinhança**, que é deslocado mas continua **preso** à sua base, mantendo a circulação; o Green divide os locais em transposição, avanço e rotação (cap. 44, p. 1714). A **zetaplastia** é um retalho local de **transposição**: dois triângulos de pele vizinha trocam de lugar sem perder a ligação com a base;\n\n**retalho regional**: tecido de uma região próxima, girado sobre um pedículo vascular (como o retalho da artéria interóssea posterior, do antebraço para a mão);\n\n**retalho livre**: tecido retirado de longe, com seus vasos cortados e religados aos vasos da área receptora por **microcirurgia** (anastomose).\n\n**As vantagens do retalho local**:\n\nnão precisa de área doadora distante;\n\nnão precisa de microcirurgia;\n\na pele tem **cor e textura idênticas** às da região.\n\n**O limite da zetaplastia**: como apenas troca de lugar a pele que já existe, ela **não repõe tecido perdido**. É ideal para alongar cicatrizes retraídas. Numa perda de substância verdadeira, é preciso enxerto ou retalho que traga pele nova.",
+  "correta": "**B: utilização de retalho local.** Os dois triângulos são pele da vizinhança, que troca de lugar sem perder a base. É por isso que não há doador à distância nem microcirurgia.",
   "incorretas": {
-   "A": "A zetaplastia é uma técnica de pele e não envolve enxerto ósseo.",
-   "C": "A matriz dérmica é um substituto cutâneo, sem relação com a transposição de retalhos.",
-   "D": "O retalho livre é o oposto: exige anastomose microcirúrgica e tecido de outra região.",
-   "E": "Células-tronco não fazem parte da técnica de zetaplastia."
+   "A": "**Nada de osso.** A zetaplastia atua só na pele, e o enxerto ósseo pertence a outro problema.",
+   "C": "**Substituto, não retalho.** A matriz dérmica é colocada sobre o leito e não tem pedículo.",
+   "D": "**O contrário.** O retalho livre corta os vasos e os reconecta à distância por microcirurgia; a zetaplastia nem sai do lugar.",
+   "E": "**Não faz parte da técnica.** Nenhuma terapia celular entra na zetaplastia."
   },
-  "conceito": "Para cobrir ou reorganizar a pele, o cirurgião tem várias opções, que diferem na **origem do tecido** e na forma como ele recebe sangue:\n\n**enxerto**: pele retirada de outro lugar **sem** circulação própria; sobrevive com os vasos do leito;\n\n**retalho local**: tecido da **vizinhança**, que é deslocado mas continua **preso** à sua base, mantendo a circulação. A **zetaplastia** é um retalho local de **transposição**: dois triângulos de pele vizinha trocam de lugar sem perder a ligação com a base;\n\n**retalho regional**: tecido de uma região próxima, girado sobre um pedículo vascular (como o retalho da artéria interóssea posterior, do antebraço para a mão);\n\n**retalho livre**: tecido retirado de longe, com seus vasos cortados e religados aos vasos da área receptora por **microcirurgia** (anastomose).\n\n**As vantagens do retalho local**:\n\nnão precisa de área doadora distante;\n\nnão precisa de microcirurgia;\n\na pele tem **cor e textura idênticas** às da região.\n\n**O limite da zetaplastia**: como apenas troca de lugar a pele que já existe, ela **não repõe tecido perdido**. É ideal para alongar cicatrizes retraídas. Numa perda de substância verdadeira, é preciso enxerto ou retalho que traga pele nova.\n\n**Na prova**: a principal característica técnica da zetaplastia é usar um retalho local.",
-  "correta": "Na zetaplastia, dois triângulos de pele vizinha são transpostos mantendo sua base, ou seja, é um retalho local, sem anastomose e sem área doadora distante.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 44 (Cobertura não microcirúrgica do membro superior), p. 1714"
+  ],
+  "alerta": "O enunciado fala em perda de substância, mas a zetaplastia só redistribui a pele existente e, numa perda verdadeira, não basta. A resposta sobre a técnica (retalho local) continua válida; o cenário descrito é o ponto impreciso.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0278": {
+  "conceito": "O caso descreve um paciente com **dificuldade para segurar objetos pequenos** e fazer tarefas de precisão, com **atrofia da eminência tenar** (a \"almofada\" muscular na base do polegar) e dificuldade para mover o polegar.\n\n**Os músculos da eminência tenar e seus nervos**:\n\n**abdutor curto do polegar**: afasta o polegar da palma, para a frente. Inervado pelo **nervo mediano** (pelo ramo motor recorrente). É o primeiro a atrofiar;\n\n**oponente do polegar**: faz o polegar girar e encostar na ponta dos outros dedos (oposição). Inervado pelo **mediano**;\n\n**flexor curto do polegar**: tem inervação dupla, com a parte superficial pelo mediano e a profunda pelo ulnar;\n\no **adutor do polegar**, que não faz parte da eminência tenar, é inervado pelo ulnar.\n\n**Por que é o nervo mediano**: a atrofia tenar com perda da oposição e da destreza fina aponta para o **mediano**. A causa mais comum é a **síndrome do túnel do carpo** em fase **avançada**:\n\nno início: formigamento à noite, que melhora ao sacudir a mão;\n\ndepois: formigamento constante e perda de destreza;\n\nna fase avançada: **atrofia tenar** e perda fixa de sensibilidade.\n\n**Importante**: a atrofia é um sinal **tardio**. Nos casos graves com atrofia tenar, o Green cita a oponentoplastia, com a transferência do palmar longo (Camitz), para melhorar a abdução (cap. 26, p. 1099). Vale reconhecer antes de chegar a esse ponto. O ramo motor também varia: costuma sair distal ao retináculo, em padrão extraligamentar (p. 1095).\n\n**As outras estruturas da questão**: o ligamento anular do carpo (retináculo dos flexores) é o teto do túnel, ou seja, quem **comprime**, e não a estrutura lesada; os tendões citados movem o punho e não fazem a oposição.",
+  "correta": "**D: nervo mediano.** A eminência tenar é território dele: abdutor curto, oponente e parte do flexor curto do polegar. Atrofia ali com perda de destreza aponta para o mediano.",
   "incorretas": {
-   "A": "O flexor ulnar do carpo flete e desvia o punho para ulnar, sem relação com a musculatura tenar.",
-   "B": "O ligamento do carpo é o teto do túnel, ou seja, a estrutura que comprime, e não a estrutura lesada.",
-   "C": "O extensor radial longo do carpo estende o punho e é inervado pelo radial, sem papel na oposição do polegar.",
-   "E": "O flexor radial do carpo flete o punho, passa num compartimento à parte e não participa da oposição."
+   "A": "**Do outro lado do punho.** O flexor ulnar do carpo flete e desvia o punho para ulnar, sem qualquer relação com a eminência tenar.",
+   "B": "**A pegadinha da questão.** O ligamento é o teto do túnel e pode ser o causador da compressão, mas a estrutura comprometida, a que explica a atrofia, é o nervo.",
+   "C": "**Extensor do punho.** O extensor radial longo é inervado pelo radial e não participa da oposição.",
+   "E": "**Só flete o punho.** O flexor radial do carpo passa em túnel próprio e não move o polegar."
   },
-  "conceito": "O caso descreve um paciente com **dificuldade para segurar objetos pequenos** e fazer tarefas de precisão, com **atrofia da eminência tenar** (a \"almofada\" muscular na base do polegar) e dificuldade para mover o polegar.\n\n**Os músculos da eminência tenar e seus nervos**:\n\n**abdutor curto do polegar**: afasta o polegar da palma, para a frente. Inervado pelo **nervo mediano** (pelo ramo motor recorrente). É o primeiro a atrofiar;\n\n**oponente do polegar**: faz o polegar girar e encostar na ponta dos outros dedos (oposição). Inervado pelo **mediano**;\n\n**flexor curto do polegar**: tem inervação dupla, com a parte superficial pelo mediano e a profunda pelo ulnar;\n\no **adutor do polegar**, que não faz parte da eminência tenar, é inervado pelo ulnar.\n\n**Por que é o nervo mediano**: a atrofia tenar com perda da oposição e da destreza fina aponta para o **mediano**. A causa mais comum é a **síndrome do túnel do carpo** em fase **avançada**:\n\nno início: formigamento à noite, que melhora ao sacudir a mão;\n\ndepois: formigamento constante e perda de destreza;\n\nna fase avançada: **atrofia tenar** e perda fixa de sensibilidade.\n\n**Importante**: a atrofia é um sinal **tardio**. Não se deve esperar por ela para operar, porque, depois que ela se instala, a recuperação muscular costuma ser incompleta.\n\n**As outras estruturas da questão**: o ligamento anular do carpo (retináculo dos flexores) é o teto do túnel, ou seja, quem **comprime**, e não a estrutura lesada; os tendões citados movem o punho e não fazem a oposição.\n\n**Na prova**: atrofia tenar com perda de destreza do polegar indica comprometimento do nervo mediano.",
-  "correta": "O mediano inerva o abdutor curto, o oponente e parte do flexor curto do polegar; a atrofia tenar indica compressão crônica, geralmente no túnel do carpo.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 26 (Neuropatias compressivas), p. 1095 e 1099"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0292": {
@@ -7335,51 +7405,70 @@
   "conferido": false
  },
  "mao-0579": {
+  "conceito": "Boa parte desta questão sai do mesmo trecho do capítulo inicial do Campbell (cap. 1, p. 3 e 4), e por isso vale ler como o livro conta a sequência do torniquete.\n\n**Onde e como colocar.** O manguito vai no braço ou na coxa, sobre algumas camadas lisas de algodão; mais de duas camadas já reduzem de forma significativa a pressão transmitida.\n\n**Como esvaziar.** O livro diz que a extremidade é **elevada por 2 minutos**, ou o sangue é expelido por uma bandagem de borracha ou elástica, enrolada a partir da ponta dos dedos. Na infecção ou no tumor, evita-se a bandagem para não espalhar o problema.\n\n**Como inflar.** **Rápido**, para que as veias superficiais não se encham antes de o fluxo arterial ser ocluído. Inflar lentamente faz exatamente o contrário do que se quer: fecha as veias com as artérias ainda abertas.\n\n**Quanto tempo.** Não existe regra absoluta. Num adulto saudável com menos de 50 anos, o Campbell prefere até 2 horas. Passado esse limite no membro inferior, considera melhor terminar o quanto antes do que desinflar por 10 minutos e reinflar, porque **40 minutos são necessários para os tecidos voltarem ao normal**; assim, a antiga pausa de 10 minutos parece insuficiente.\n\n**O que pode dar errado.** A síndrome pós-torniquete, descrita por Bunnell, é uma reação comum à isquemia prolongada, com edema, palidez, rigidez articular, fraqueza e dormência.",
+  "correta": "**D: para o esvaziamento sanguíneo, a extremidade a ser operada deve ser elevada por no mínimo cinco minutos, ou o sangue ser esvaziado por uma bandagem de borracha.** É o gabarito oficial e descreve os dois métodos corretos; o tempo de elevação é que difere do livro, que fala em 2 minutos. Veja o alerta.",
   "incorretas": {
-   "A": "O local mais eficaz é o braço, com um osso só e pressão mais uniforme.",
-   "B": "A questão considera falsa a afirmação de que os tecidos levam 40 minutos para voltar ao normal.",
-   "C": "A insuflação deve ser rápida; lenta, ela fecha as veias antes das artérias e enche o campo de sangue.",
-   "E": "O intervalo de reperfusão de 10 minutos não é o aceito pela questão, e as recomendações variam entre as fontes."
+   "A": "**Local errado.** O Campbell coloca o manguito no braço ou na coxa. No antebraço, os dois ossos dificultam a oclusão.",
+   "B": "**Esta é a frase do livro.** O Campbell afirma que são necessários 40 minutos para os tecidos voltarem ao normal depois do uso prolongado do torniquete. A banca não a marcou como correta, e por isso a questão merece o alerta abaixo.",
+   "C": "**Exatamente ao contrário.** O torniquete deve ser inflado rapidamente, justamente para evitar o enchimento das veias superficiais antes da oclusão arterial. A banca copiou o motivo e inverteu a conduta.",
+   "E": "**A prática que o livro abandonou.** O Campbell chama a pausa de 10 minutos de inadequada, porque os tecidos precisam de 40. Com o limite de 2 horas atingido, a recomendação é terminar a cirurgia o mais rápido possível, ao menos no membro inferior."
   },
-  "conceito": "O **torniquete pneumático** deixa o campo sem sangue, mas tem regras para ser seguro.\n\n**Onde colocar**: no **braço**. Com um osso só, a pressão se distribui por igual e há mais músculo protegendo os nervos. No antebraço, os dois ossos e a membrana interóssea dificultam a oclusão.\n\n**Como esvaziar o membro antes**: **elevar o membro por cerca de 5 minutos** ou enrolar uma **faixa de borracha** (Esmarch) de distal para proximal. Na **infecção** ou no **tumor**, usa-se só a elevação, para não espalhar bactérias ou células.\n\n**Como insuflar**: **rápido**. A insuflação lenta fecha as veias antes das artérias: o sangue continua entrando e não sai, e o campo enche de sangue venoso.\n\n**Pressão e tempo**: cerca de **250 mmHg** no membro superior do adulto (ou cerca de 100 mmHg acima da sistólica), por até cerca de **2 horas**. Se a cirurgia passar disso, **desinsufla-se** para reperfusão antes de insuflar de novo; o intervalo recomendado varia entre as fontes.\n\n**As complicações**: paralisia do torniquete (compressão nervosa), síndrome pós-torniquete (edema, rigidez e fraqueza) e queimadura química sob o manguito.\n\n**Na prova**: esvaziamento = **elevação por cerca de 5 minutos** ou **faixa de borracha**.",
-  "correta": "Antes de insuflar, o membro é esvaziado elevando-o por cerca de 5 minutos ou com uma faixa de borracha.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 1 (Surgical Techniques), p. 3 e 4",
+   "Campbell, Cirurgia Ortopédica, 12ª ed., cap. 1"
+  ],
+  "alerta": "Possível erro de gabarito. O Campbell (14ª e 12ª ed., cap. 1) diz que a extremidade é elevada por 2 minutos, e não por no mínimo cinco, e afirma textualmente o que está na alternativa B, 40 minutos para os tecidos voltarem ao normal. Pelo livro, a B é a mais fiel. O gabarito oficial (D) foi mantido.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0580": {
+  "conceito": "Na **paralisia obstétrica do plexo braquial**, a classificação de **Narakas** separa os grupos pelas raízes acometidas:\n\n**grupo 1**: **C5 e C6** (Erb clássico), o mais comum, com 46% dos casos e o melhor prognóstico;\n\n**grupo 2**: **C5, C6 e C7**, 30% dos casos, com prognóstico pior;\n\n**grupo 3**: **lesão total do plexo**, com membro flácido, 20% dos casos;\n\n**grupo 4**: **plexopatia global com síndrome de Horner**, a forma mais grave, que indica lesão da cadeia simpática e provável avulsão (Campbell 14, cap. 34, p. 1444).\n\n**A síndrome de Horner** (ptose, miose, anidrose) vem da lesão da cadeia simpática, ligada à raiz **T1** (Green, cap. 40, p. 1563).\n\n**A lesão alta (C5 e C6)** enfraquece os **abdutores e rotadores externos** do ombro, os **flexores do cotovelo** e os extensores do punho (Tachdjian, cap. 12, p. 404). O tríceps (C7) funciona sem oposição, e o cotovelo fica **estendido**. Os rotadores internos, sem oposição, deixam o braço em rotação interna: a postura em **gorjeta de garçom**.\n\n**Os marcos de acompanhamento**: bíceps contra a gravidade até os 3 meses (Gilbert e Tassin) e o teste do biscoito aos 9 meses.",
+  "correta": "**D: segundo a classificação de Narakas, no grupo 3 encontram-se as lesões de todo o plexo braquial.** É a lesão total com membro flácido. O que separa o grupo 3 do 4 é a síndrome de Horner.",
   "incorretas": {
-   "A": "C5 e C6 formam o grupo 1; o grupo 2 inclui C7.",
-   "B": "A síndrome de Horner vem das fibras simpáticas de C8 e T1, não de C4, C6 e C7.",
-   "C": "Na lesão de C5 e C6, os fracos são os flexores do cotovelo; o tríceps funciona e o cotovelo fica estendido.",
-   "E": "Na lesão alta, os fracos são os abdutores e os rotadores laterais; os rotadores internos ficam sem oposição."
+   "A": "**Um grupo adiante.** C5 e C6 são o grupo 1; o 2 acrescenta C7. O erro é de numeração, e por isso a frase parece certa à primeira leitura.",
+   "B": "**Raízes erradas.** A síndrome de Horner aponta para a cadeia simpática ligada a T1, e não para C4, C6 e C7.",
+   "C": "**Os flexores é que fraquejam.** Em C5 e C6, quem perde força é o flexor do cotovelo. O tríceps, de C7, continua agindo, e o cotovelo fica estendido.",
+   "E": "**Uma palavra troca o sentido.** A lesão alta enfraquece os rotadores *externos*, e não os internos. Sem oposição, os internos deixam o braço na postura em gorjeta de garçom."
   },
-  "conceito": "Na **paralisia obstétrica do plexo braquial**, a classificação de **Narakas** separa os grupos pelas raízes acometidas:\n\n**grupo 1**: **C5 e C6** (Erb clássico); o melhor prognóstico;\n\n**grupo 2**: **C5, C6 e C7**; Erb com punho e dedos caídos;\n\n**grupo 3**: **todo o plexo** (C5 a T1), **sem Horner**;\n\n**grupo 4**: **todo o plexo com Horner**; o pior prognóstico, sugere avulsão.\n\n**A síndrome de Horner** (ptose, miose, anidrose) vem da lesão das fibras simpáticas que saem com **C8 e T1**, sobretudo T1.\n\n**A lesão alta (C5 e C6)** enfraquece o deltoide, o supraespinal e o infraespinal (**abdutores e rotadores laterais** do ombro) e os **flexores do cotovelo** (bíceps, braquial). O tríceps (C7) funciona sem oposição, e o cotovelo fica **estendido**. Os rotadores internos, sem oposição, deixam o braço em rotação interna: a postura em **gorjeta de garçom**.\n\n**Os marcos de acompanhamento**: bíceps contra a gravidade até os 3 meses (Gilbert e Tassin) e o teste do biscoito aos 9 meses.\n\n**Na prova**: Narakas 3 = **todo o plexo, sem Horner**.",
-  "correta": "O grupo 3 de Narakas é a lesão de todo o plexo sem síndrome de Horner; com Horner, é o grupo 4.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 34 (Paralytic Disorders), p. 1444",
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 40 (Paralisia obstétrica), p. 1562 e 1563",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 12, p. 404"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0581": {
+  "conceito": "A alternativa correta é quase uma cópia do Campbell, que descreve em um único parágrafo o que acontece depois de um nervo ser seccionado (cap. 62, p. 3278). Vale montar a linha do tempo, porque as outras opções só mudam os números dela.\n\n| Quando | O que acontece |\n|---|---|\n| imediatamente | toda a função motora **distal** à lesão é abolida; os músculos ficam paralisados e atônicos |\n| 8 a 14 dias | surgem as primeiras mudanças significativas na eletromiografia, com fibrilações transitórias à inserção da agulha |\n| **2 a 4 semanas** | **fibrilações espontâneas** e início da alteração atrófica nas fibras |\n| cerca de 2 meses | a massa muscular cai rapidamente para 50 a 70% |\n| depois | a atrofia desacelera, e o tecido conjuntivo aumenta; estriações e placas motoras persistem por mais de 12 meses |\n\nPor que a fibrilação demora? O coto distal precisa degenerar (degeneração walleriana) antes de o músculo perder a influência do nervo. Quando isso acontece, as fibras começam a descarregar sozinhas, e é esse sinal que a agulha capta. Por isso a eletromiografia feita logo depois do trauma pode enganar.\n\nNo caso da questão, a lesão fica no terço médio do antebraço. Os ramos que saem acima dela já foram embora, e seus músculos continuam funcionando; só o que depende do nervo daí para baixo perde a função.",
+  "correta": "**B: fibrilações espontâneas podem se tornar evidentes após um período de 2 a 4 semanas.** É a frase do Campbell, e coincide com o início da alteração atrófica nas fibras.",
   "incorretas": {
-   "A": "A função proximal à lesão fica preservada; o que se perde é a distal.",
-   "C": "A atrofia começa já nas primeiras semanas, não só depois de 10 a 12 semanas.",
-   "D": "As alterações da eletromiografia aparecem um pouco antes, entre 2 e 4 semanas.",
-   "E": "Uma perda de 50 a 70% da massa muscular leva meses, não apenas o primeiro mês."
+   "A": "**Proximal é poupado.** O livro diz que a função distal ao nível da secção é abolida. Os músculos com ramos acima da lesão continuam funcionando.",
+   "C": "**Bem antes disso.** A alteração atrófica começa junto com as fibrilações, em 2 a 4 semanas, e não em 10 a 12.",
+   "D": "**Mudanças mais precoces.** A eletromiografia já mostra alterações significativas em 8 a 14 dias. As 3 a 5 semanas ficam tarde demais.",
+   "E": "**O número certo no prazo errado.** A perda de 50 a 70% é real, mas ocorre em cerca de 2 meses, e não no fim do primeiro."
   },
-  "conceito": "Depois da **secção completa de um nervo**, o segmento distal passa pela **degeneração walleriana**. O músculo perde o comando e, com o tempo, aparecem os sinais na eletromiografia e a atrofia.\n\n**A sequência no tempo**:\n\n**logo após a lesão**: o coto distal ainda conduz por alguns dias, e a eletromiografia pode parecer normal;\n\n**7 a 10 dias**: cai a amplitude das respostas motoras e sensitivas;\n\n**2 a 4 semanas**: surgem as **fibrilações** e as **ondas positivas**, descargas espontâneas das fibras musculares desnervadas; são o sinal mais precoce de desnervação;\n\n**primeiras semanas a meses**: a atrofia muscular começa cedo, mas progride ao longo de meses;\n\n**3 a 4 meses em diante**: aparecem os potenciais de reinervação, se houver regeneração.\n\n**Distal × proximal**: numa lesão no antebraço, os músculos inervados **acima** da lesão continuam funcionando; o que está **abaixo** perde a função.\n\n**Na prova**: fibrilações espontâneas aparecem em **2 a 4 semanas** após a lesão.",
-  "correta": "As fibrilações espontâneas aparecem depois que a degeneração walleriana chega ao músculo, entre 2 e 4 semanas.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 62 (Peripheral Nerve Injuries), p. 3278"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0582": {
+  "conceito": "A **fratura da base dorsal da falange distal** é o **dedo em martelo ósseo**: o tendão extensor terminal leva junto um fragmento da base da falange. O que decide a conduta não é só o tamanho do fragmento, mas a **estabilidade da articulação**: se a falange distal **subluxar para volar**, a articulação fica incongruente e a artrose vem.\n\n**A conduta**:\n\n**fragmento pequeno, sem subluxação**: órtese com a interfalangiana distal em **extensão**, sem hiperextensão, que pode estimular a subluxação volar (Green, cap. 5, p. 193);\n\n**fragmento grande, com subluxação volar**: **cirurgia**. O Green trata as fraturas agudas do martelo com subluxação volar por **pino de bloqueio de extensão** (cap. 5, p. 194), uma redução fechada: um fio no dorso da falange média segura o fragmento no lugar, e outro fixa a articulação;\n\n**fragmento cominuto ou irredutível**: redução aberta, com o risco de necrose da pele dorsal e de fragmentar o osso pequeno.\n\n**Por que se evita a redução aberta**: o tratamento cirúrgico se associa a infecção, deformidade da unha, polpa dolorosa e perda de redução, e há quem recomende órtese para todas as fraturas em martelo, mesmo com subluxação (Campbell 14, cap. 67, p. 3546).",
+  "correta": "**B: caso o cisalhamento compreenda mais de 25% da superfície articular, o paciente deve ser submetido a tratamento cirúrgico, de preferência redução fechada e fixação com fio de Kirschner.** É o gabarito oficial: fragmento grande é o que ameaça a congruência, e a via fechada evita a pele dorsal frágil.",
   "incorretas": {
-   "A": "Abaixo de 15%, sem subluxação, o tratamento é conservador com órtese.",
-   "C": "O ponto de corte clássico é cerca de 25%, não 35%.",
-   "D": "Entre 15 e 25% a conduta é individualizada, e o método preferido não é a redução aberta com parafusos.",
-   "E": "Placa e parafusos não são o método preferido nesse fragmento pequeno; a preferência é a fixação fechada com fio."
+   "A": "**Fragmento pequeno não pede cirurgia.** Abaixo de 15%, sem subluxação, o tratamento é a órtese.",
+   "C": "**Mesma técnica, corte mais alto.** O Campbell fala em mais de um terço com subluxação, o que aproxima esta opção do livro, mas para a redução aberta. Com o corte da questão em 25%, esta opção fica sobrando; veja o alerta.",
+   "D": "**Aberta sem necessidade.** Entre 15 e 25%, com articulação congruente, a tendência é conservadora, e parafuso de minifragmento num fragmento fino arrisca quebrá-lo.",
+   "E": "**Implante grande para osso pequeno.** Placa e parafusos na base dorsal da falange distal têm pouco espaço e pele frágil por cima."
   },
-  "conceito": "A **fratura da base dorsal da falange distal** é o **dedo em martelo ósseo**: o tendão extensor terminal leva junto um fragmento da base da falange. O que decide a conduta não é só o tamanho do fragmento, mas a **estabilidade da articulação**: se a falange distal **subluxar para volar**, a articulação fica incongruente e a artrose vem.\n\n**A conduta**:\n\n**fragmento pequeno, sem subluxação**: órtese com a interfalangiana distal em **extensão** (não hiperextensão) por 6 a 8 semanas, sem tirar;\n\n**fragmento acima de 25 a 30% da superfície articular**, com subluxação volar ou risco dela: **cirurgia**, de preferência por **redução fechada com fio de Kirschner**, pela técnica de **bloqueio de extensão (Ishiguro)**: um fio no dorso da falange média segura o fragmento no lugar, e outro fixa a articulação;\n\n**fragmento cominuto ou irredutível**: redução aberta, com o risco de necrose da pele dorsal e de fragmentar o osso pequeno.\n\n**Por que se evita a redução aberta**: o fragmento é pequeno e frágil, a pele dorsal é fina, e placas e parafusos têm alta taxa de complicação nessa região.\n\n**Na prova**: martelo ósseo com **mais de 25%** da superfície = cirurgia, de preferência **redução fechada e fio de Kirschner**.",
-  "correta": "Acima de 25% da superfície articular cresce o risco de subluxação volar, e a técnica preferida é a redução fechada com fio de Kirschner (bloqueio de extensão).",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Green's Operative Hand Surgery, 8ª ed. (Wolfe, Pederson, Kozin, Cohen), cap. 5 (Tendões extensores), p. 193 e 194",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 67 (Fractures, Dislocations, and Ligamentous Injuries), p. 3546",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 45 (Hand Fractures and Dislocations)"
+  ],
+  "alerta": "O corte de 25% com redução fechada é o do gabarito. O Campbell (14ª ed., p. 3546) cita mais de um terço da superfície com subluxação, com redução aberta, e chama o tema de controverso; o Green valoriza a subluxação volar, e não um percentual. O que decide de verdade é a congruência da articulação.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0583": {
@@ -7417,15 +7506,18 @@
   "conferido": false
  },
  "mao-0585": {
+  "conceito": "A **via de Henry** é o acesso anterior ao rádio, e a alternativa certa repete a técnica do Campbell (cap. 1, p. 132): antebraço em supinação, incisão de 15 a 20 cm sobre o intervalo entre o **braquiorradial** e o **flexor radial do carpo**. Esse intervalo, como disse Kocher, fica na fronteira entre estruturas inervadas por nervos diferentes: o radial de um lado, o mediano do outro.\n\n**No rádio distal** (fratura com desvio volar, placa volar):\n\n**posição**: antebraço em **supinação**;\n\n**incisão**: sobre o intervalo entre o **braquiorradial** e o **flexor radial do carpo** (ou pela bainha do próprio flexor radial do carpo);\n\n**os afastamentos**: o **flexor radial do carpo** vai para **medial** (ulnar), protegendo o mediano; a **artéria radial** fica do lado **lateral** (radial);\n\n**o plano profundo**: afasta-se o **flexor longo do polegar** e desinsere-se o **pronador quadrado** pela **borda radial** do rádio, rebatendo os dois para **medial**; aí aparece a face volar do rádio para a placa.\n\n**As estruturas de risco**:\n\n**ramo sensitivo do nervo radial**: corre **sob o braquiorradial**, onde o Campbell manda identificá-lo e protegê-lo;\n\n**artéria radial**: lateral ao flexor radial do carpo, com ramos que precisam ser ligados;\n\n**nervo interósseo posterior** (na parte proximal da via): protegido mantendo o antebraço em **supinação** antes de soltar o supinador;\n\n**ramo cutâneo palmar do mediano**: perto da borda ulnar do flexor radial do carpo, no punho.\n\n**A via dorsal** é outra: a de **Thompson**, entre o extensor radial curto do carpo e o extensor comum dos dedos.",
+  "correta": "**D: com o antebraço em supinação, uma incisão de cerca de 15 cm deve ser realizada sobre o intervalo existente entre os músculos braquiorradial e flexor radial do carpo.** É o primeiro passo da técnica do Campbell, com o plano entre o território do radial e o do mediano.",
   "incorretas": {
-   "A": "O ramo sensitivo do radial corre sob o braquiorradial, não sob o flexor radial do carpo.",
-   "B": "O flexor radial do carpo é retraído para medial, protegendo o mediano; a artéria radial fica lateral, e os dois não vão juntos para o mesmo lado.",
-   "C": "O flexor longo do polegar e o pronador quadrado são elevados a partir da borda radial do rádio e rebatidos para medial.",
-   "E": "Com o antebraço pronado e pela borda do extensor comum dos dedos, a via é dorsal (Thompson), não a de Henry."
+   "A": "**Músculo errado.** O Campbell situa o ramo sensitivo sob o braquiorradial. Procurá-lo sob o flexor radial do carpo é procurá-lo do outro lado do intervalo.",
+   "B": "**Direção invertida.** O flexor radial do carpo é mobilizado e afastado para medial. A frase inverte o lado, o que levaria o tendão contra a dissecção.",
+   "C": "**Lado e borda trocados.** O flexor longo do polegar e o pronador quadrado são soltos pela borda radial e rebatidos para medial, deixando a face volar à mostra.",
+   "E": "**É outra via.** Antebraço pronado e extensor comum dos dedos descrevem o acesso dorsal, o de Thompson. Uma fratura com desvio volar é tratada pela frente."
   },
-  "conceito": "A **via de Henry** é o acesso anterior ao rádio. Ela usa um **plano internervoso**: de um lado o **braquiorradial** (nervo radial), do outro o **pronador redondo** e o **flexor radial do carpo** (nervo mediano).\n\n**No rádio distal** (fratura com desvio volar, placa volar):\n\n**posição**: antebraço em **supinação**;\n\n**incisão**: sobre o intervalo entre o **braquiorradial** e o **flexor radial do carpo** (ou pela bainha do próprio flexor radial do carpo);\n\n**os afastamentos**: o **flexor radial do carpo** vai para **medial** (ulnar), protegendo o mediano; a **artéria radial** fica do lado **lateral** (radial);\n\n**o plano profundo**: afasta-se o **flexor longo do polegar** e desinsere-se o **pronador quadrado** pela **borda radial** do rádio, rebatendo os dois para **medial**; aí aparece a face volar do rádio para a placa.\n\n**As estruturas de risco**:\n\n**ramo superficial do nervo radial**: corre **sob o braquiorradial**;\n\n**artéria radial**: lateral ao flexor radial do carpo, com ramos que precisam ser ligados;\n\n**nervo interósseo posterior** (na parte proximal da via): protegido mantendo o antebraço em **supinação** antes de soltar o supinador;\n\n**ramo cutâneo palmar do mediano**: perto da borda ulnar do flexor radial do carpo, no punho.\n\n**A via dorsal** é outra: a de **Thompson**, entre o extensor radial curto do carpo e o extensor comum dos dedos.\n\n**Na prova**: Henry no rádio distal = **supinação** e intervalo **braquiorradial e flexor radial do carpo**.",
-  "correta": "Com o antebraço supinado, a incisão segue o intervalo entre o braquiorradial e o flexor radial do carpo, plano entre o território do radial e o do mediano.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 1 (Surgical Techniques), Técnica 1.119, p. 132 e 133"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0586": {
