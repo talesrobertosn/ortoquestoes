@@ -4589,19 +4589,20 @@
   "conferido": false
  },
  "pe-tornozelo-0375": {
-  "conceito": "**Classificação de Wagner das úlceras do pé diabético.** Classifica a profundidade da lesão e a presença de infecção ou gangrena. É simples e muito usada, embora não avalie bem a isquemia e a infecção isoladamente.\n\n| Grau | Descrição |\n|---|---|\n| 0 | Pé de risco, sem úlcera (deformidades, calosidades) |\n| 1 | Úlcera superficial, sem infecção |\n| 2 | Úlcera profunda, atingindo tendão, cápsula ou osso, sem abscesso ou osteomielite |\n| **3** | **Úlcera profunda com abscesso, osteomielite ou artrite séptica** |\n| 4 | Gangrena localizada (dedos, antepé) |\n| 5 | Gangrena extensa de todo o pé |\n\n**Outras classificações.** A da **Universidade do Texas** combina profundidade (0 a 3) com estágios de infecção e isquemia (A a D), com melhor valor prognóstico. A **WIfI** (ferida, isquemia e infecção) é usada pela cirurgia vascular.\n\n**Tratamento conforme o grau.**\n- Graus 1 e 2: desbridamento, alívio de carga (gesso de contato total), curativos e controle glicêmico.\n- **Grau 3**: drenagem do abscesso, desbridamento do osso infectado, antibiótico guiado por cultura óssea.\n- Graus 4 e 5: avaliação vascular, revascularização quando possível e amputações.\n\n**Fatores fundamentais.** Neuropatia (perda da sensibilidade protetora), deformidades, isquemia e infecção. O teste do monofilamento e a avaliação dos pulsos são essenciais.\n\n> Wagner 3: úlcera profunda com abscesso ou osteomielite.",
-  "correta": "**C: III.** Na classificação de Wagner, o grau 3 corresponde à úlcera profunda com abscesso, osteomielite ou artrite séptica. Exige drenagem, desbridamento do osso infectado e antibioticoterapia guiada por cultura.",
+  "conceito": "No pé diabético, o problema nasce em dois lugares: o paciente não sente, e o sangue não chega bem. Por isso, antes de classificar a úlcera, o Campbell faz o teste com o monofilamento de 5,07 de SEMMES-WEINSTEIN (cap. 86, p. 4317). A partir daí, olha-se a ferida com a escala mais usada, descrita por MEGGITT e ampliada por WAGNER (p. 4317, Tabela 86.1):\n\n| Grau | Descrição |\n|---|---|\n| 0 | pele em risco |\n| I | úlcera superficial |\n| II | tendão e estruturas profundas expostas |\n| III | úlcera profunda com **abscesso ou osteomielite** |\n| IV | gangrena parcial |\n| V | gangrena extensa |\n\nVeja a lógica: os três primeiros graus falam de profundidade. O III acrescenta a **infecção profunda**. O IV e o V falam de morte de tecido. O enunciado junta exatamente \"profundas, abscesso e osteomielite\", ou seja, grau III.\n\n**E por que importa?** Porque a classificação orienta o tratamento, como diz o Campbell (p. 4317). O III já costuma pedir desbridamento cirúrgico, com retirada do osso infectado, e os graus IV e V exigem amputação local ou maior, conforme a extensão da infecção. Além disso, o autor usa outra escala para a isquemia, a de BRODSKY, em que os graus mais altos pedem avaliação vascular (cap. 86). Afinal, não adianta desbridar um pé que não recebe sangue.",
+  "correta": "**C: III.** Úlcera profunda com abscesso ou osteomielite é a definição desse grau na Tabela 86.1 do Campbell (cap. 86, p. 4317).",
   "incorretas": {
-   "A": "**O grau I** é a úlcera superficial, sem atingir estruturas profundas e sem infecção.",
-   "B": "**O grau II** é a úlcera profunda que atinge tendão, cápsula ou osso, mas sem abscesso ou osteomielite.",
-   "D": "**O grau IV** é a gangrena localizada, como de dedos ou do antepé.",
-   "E": "**O grau V** é a gangrena extensa, de todo o pé, geralmente com indicação de amputação maior."
+   "A": "**Superficial.** O grau I é a úlcera sem atingir estruturas profundas (Campbell, cap. 86, p. 4317).",
+   "B": "**A mais próxima.** O grau II expõe tendão e estruturas profundas, mas ainda sem abscesso nem osteomielite (Campbell, cap. 86, p. 4317).",
+   "D": "**Já há gangrena.** O grau IV é a gangrena parcial (Campbell, cap. 86, p. 4317).",
+   "E": "**Gangrena extensa.** É o último grau, com amputação de maior porte (Campbell, cap. 86, p. 4317)."
   },
   "referencias": [
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 86 (Pé diabético), p. 4317, Tabela 86.1",
    "Wagner FW Jr. The dysvascular foot: a system for diagnosis and treatment. Foot Ankle. 1981;2(2):64-122.",
    "Coughlin MJ, Saltzman CL, Anderson RB, eds. Mann's Surgery of the Foot and Ankle. Elsevier. Pé diabético."
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pe-tornozelo-0376": {

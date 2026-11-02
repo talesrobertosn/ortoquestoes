@@ -6977,19 +6977,20 @@
   "conferido": false
  },
  "pediatria-0503": {
-  "conceito": "**A herança das doenças ortopédicas mais cobradas.** Saber o padrão de herança orienta o **aconselhamento genético** da família e o diagnóstico diferencial.\n| Doença | Herança | Gene |\n|---|---|---|\n| **Acondroplasia** | **Autossômica dominante** (80% mutações novas) | **FGFR3** |\n| **Osteogênese imperfeita** (tipos clássicos I a IV) | **Dominante** (a maioria) | COL1A1, COL1A2 |\n| **Neurofibromatose tipo 1** | **Dominante** (metade mutações novas) | NF1 |\n| **Displasia espondiloepifisária** congênita | **Dominante** | COL2A1 |\n| **Morquio** (MPS IV) | **Recessiva** | GALNS (IVA), GLB1 (IVB) |\n| Outras MPS (Hurler, Sanfilippo, Maroteaux-Lamy) | Recessiva | Enzimas lisossômicas |\n| **Hunter** (MPS II) | **Ligada ao X** | IDS |\n| **Duchenne** | Ligada ao X recessiva | Distrofina |\n| Atrofia muscular espinhal | Recessiva | SMN1 |\n\n**A regra prática.** As **doenças de depósito** (mucopolissacaridoses, Gaucher) e as **deficiências enzimáticas** são, em geral, **recessivas**: basta uma cópia normal do gene para produzir enzima suficiente. As doenças de **proteínas estruturais** (colágeno, receptores, como FGFR3 e o colágeno tipo I) são, em geral, **dominantes**: uma cópia anormal já desorganiza a estrutura (efeito dominante negativo).\n\n**A síndrome de Morquio.** Deficiência de uma enzima que degrada o queratan sulfato e o condroitin sulfato. Inteligência normal, nanismo de **tronco curto**, **genu valgo**, peito carinado, frouxidão articular e, o mais importante, **hipoplasia do odontoide** com instabilidade C1-C2.",
-  "correta": "**Correta: B (doença de Morquio).** A síndrome de Morquio (MPS IV) é uma doença de depósito lisossômico de herança autossômica recessiva; as demais alternativas são, em geral, autossômicas dominantes.",
+  "conceito": "A pergunta parece memória, mas há uma regra prática que resolve quase toda a lista: nas doenças de **depósito**, em que falta uma enzima, a herança costuma ser **recessiva**, porque uma cópia boa do gene já produz enzima suficiente. Já nas doenças de **estrutura ou de sinalização**, em que uma proteína anormal atrapalha, costuma ser **dominante**.\n\nA **doença de MORQUIO** é a mucopolissacaridose tipo IV, por falta de N-acetilgalactosamina-6-sulfato sulfatase. O Tachdjian a registra como autossômica recessiva, com queratan sulfato na urina, surgindo entre 2 e 4 anos, baixa estatura importante e córnea opaca (cap. 36, p. 1824, Tabela 36.5). Para o ortopedista, a armadilha é a hipoplasia do odontoide com instabilidade C1-C2, que exige radiografias a cada 1 ou 2 anos (cap. 8, p. 128).\n\nOs outros seguem a segunda regra. A **acondroplasia** é autossômica dominante, com penetrância completa, e 90% dos casos são mutações novas, com alterações no gene FGFR (cap. 36, p. 1751). É isso que explica por que os pais costumam ter estatura normal. A **neurofibromatose tipo 1** e a maior parte das **osteogêneses imperfeitas** também são dominantes, e a **displasia espondiloepifisária** clássica também costuma seguir esse padrão.",
+  "correta": "**B: doença de Morquio.** É uma doença de depósito, com herança autossômica recessiva, segundo a Tabela 36.5 do Tachdjian (cap. 36, p. 1824).",
   "incorretas": {
-   "A": "A **acondroplasia** é autossômica **dominante** (FGFR3), com 80% de mutações novas.",
-   "C": "A **osteogênese imperfeita** clássica é, na maioria, **dominante** (colágeno tipo I); existem formas recessivas raras.",
-   "D": "A **neurofibromatose tipo 1** é autossômica **dominante**.",
-   "E": "A **displasia espondiloepifisária** congênita é autossômica **dominante** (COL2A1); a forma tardia é ligada ao X."
+   "A": "**Dominante.** A herança é dominante com penetrância completa, e 90% são mutações novas (Tachdjian, cap. 36, p. 1751).",
+   "C": "**Dominante na maioria.** A maioria das formas clássicas é dominante, por defeito no colágeno tipo I. Há formas raras recessivas, mas a banca pede o padrão mais típico.",
+   "D": "**Dominante.** A neurofibromatose tipo 1 tem herança dominante, com cerca da metade dos casos por mutação nova.",
+   "E": "**Em geral dominante.** A forma congênita clássica é dominante, por alteração do colágeno tipo II."
   },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 8, p. 128; cap. 36, p. 1751 e 1824, Tabela 36.5",
    "Tachdjian's Pediatric Orthopaedics, 6ª edição (Herring), capítulo de displasias esqueléticas.",
    "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), capítulo de displasias esqueléticas."
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0504": {
@@ -15727,21 +15728,21 @@
   "conferido": false
  },
  "pediatria-0864": {
-  "conceito": "Cinco afirmações sobre a anatomia patológica, quatro delas com uma palavra trocada. O método é conferir a direção de cada osso contra a regra geral do pé torto: tudo gira **medial e plantar** ao redor de um tálus deformado.\n\n**O que os livros descrevem.** No Tachdjian's Pediatric Orthopaedics, 6ª ed., o colo do tálus é curto e desviado **medial e plantar** (p. 709); o navicular está sempre **medial e plantar** na cabeça do tálus e o cuboide desviado **medialmente** no calcâneo (p. 710); o calcâneo, rodado medialmente no plano horizontal, contribui para o aduto do mediopé (p. 711). O Campbell's Operative Orthopaedics, 15ª ed. acrescenta a talonavicular em **inversão extrema** (p. 1049).\n\n**E o antepé?** O quarto componente é o **cavo**, que PONSETI enfatizou. O antepé está desalinhado do retropé, com o primeiro raio abaixado; por isso o primeiro gesso **supina o antepé e eleva o primeiro metatarso** (Tachdjian p. 715; Campbell p. 1051). A alternativa oficial descreve exatamente esse primeiro raio em flexão plantar em relação aos laterais.\n\nOs ossos estão nas seções \"A anatomia patológica: o tálus\" e \"A anatomia patológica: o bloco que gira ao redor do tálus\" do resumo.",
-  "correta": "**D) o primeiro e o segundo metatarsais encontram-se angulados plantarmente em relação ao quinto.** É a descrição do cavo: o raio medial abaixado em relação ao lateral, que o PONSETI corrige elevando o primeiro metatarso.",
+  "conceito": "Para entender o pé torto, é preciso sair da pele e olhar os ossos. O Tachdjian faz esse percurso (cap. 19, p. 709). A primeira deformidade fica no próprio **tálus**: o colo aponta para medial, a partir de um corpo pequeno e mal encaixado no tornozelo, e o ângulo entre colo e corpo está diminuído, com o eixo do colo chegando perto de 90 graus.\n\nA partir daí, tudo o que está em volta acompanha. O **navicular** fica no lado medial da cabeça do tálus, deformada, o que se vê bem na ressonância. O **cuboide** se desloca para medial em relação ao calcâneo. E o **calcâneo** roda para plantar e para medial, em torno do tálus. A soma é o retropé em varo, e tudo fica em equino. O autor destaca que as partes moles, ligamentos, cápsulas e tendões, mantêm esse mau alinhamento (p. 709).\n\n**E o antepé?** Aqui está a resposta da banca. O primeiro e o segundo metatarsais apontam para baixo em relação ao quinto, o que produz o **cavo**. É por isso que o PONSETI eleva o primeiro metatarso e supina o antepé já na primeira sessão (p. 715). Ou seja, entender essa angulação plantar é entender o começo do tratamento.\n\nRepare como todas as alternativas erradas usam a mesma estratégia: pegam uma estrutura real e colocam a direção oposta. Lembre-se da palavra **medial**: no pé torto, tudo se move nessa direção.",
+  "correta": "**D: o primeiro e o segundo metatarsais encontram-se angulados plantarmente em relação ao quinto.** É o que forma o cavo, e o PONSETI corrige esse ponto primeiro, elevando o primeiro metatarso (Tachdjian, cap. 19, p. 715).",
   "incorretas": {
-   "A": "**Cuboide deslocado lateralmente** inverte a direção: ele está desviado medialmente na extremidade anterior do calcâneo.",
-   "B": "**Calcâneo voltado lateralmente no plano horizontal** contraria a rotação medial do calcâneo, que gira para dentro sob o tálus e alimenta o aduto do mediopé.",
-   "C": "**Navicular em extrema eversão** acerta a medialização e erra o movimento: a talonavicular está em inversão extrema.",
-   "E": "**Colo do tálus desviado plantar e lateral** erra o lado: o colo curto aponta medial e plantar."
+   "A": "**Direção oposta.** O cuboide se desloca para **medial** em relação ao calcâneo (Tachdjian, cap. 19, p. 709).",
+   "B": "**Direção oposta.** O calcâneo roda para plantar e medial, ficando em varo (Tachdjian, cap. 19, p. 709).",
+   "C": "**Dois acertos e um erro.** O navicular está medializado e articula-se com a parte medial do tálus, mas a posição é de inversão, e não de eversão (Tachdjian, cap. 19, p. 709).",
+   "E": "**Quase.** O colo do tálus é deformado, com o eixo para medial e plantar, e não lateral, como afirma a alternativa (Tachdjian, cap. 19, p. 709)."
   },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 19, p. 709 e 715",
    "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (Disorders of the Foot, Congenital Talipes Equinovarus), p. 709 a 711 e 715",
    "Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (Congenital Anomalies of the Lower Extremity, Congenital Clubfoot), p. 1049 e 1051",
    "Resumo OrtoQuestões: Pé torto congênito"
   ],
-  "alerta": "Os livros confirmam o primeiro raio abaixado no cavo, corrigido pela supinação do antepé com elevação do primeiro metatarso (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 715; Campbell's Operative Orthopaedics, 15ª ed., p. 1051), mas não citam o segundo metatarso nominalmente. Gabarito oficial mantido.",
-  "geradoEm": "2026-11-01",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0865": {
@@ -15761,20 +15762,21 @@
   "conferido": false
  },
  "pediatria-0866": {
-  "conceito": "O caso tem muitos detalhes, e cada um encaixa num descritor. A criança de 7 anos **anda com dispositivo** dentro de casa e em superfícies planas externas, **sobe escada com corrimão**, **impulsiona a cadeira manual** e precisa de ajuda em longas distâncias. É o **nível III**.\n\n**A frase que decide.** Dispositivo manual de mobilidade é a marca do III. Pelo Campbell's Operative Orthopaedics, 15ª ed., entre 6 e 12 anos o nível III anda com dispositivo manual na maioria dos ambientes internos; pode subir escada segurando o corrimão, com supervisão; usa cadeira de rodas em longas distâncias e **pode se autopropelir em distâncias curtas** (p. 1233). O Tachdjian's Pediatric Orthopaedics, 6ª ed. resume: GMFCS 3 usa andador ou muletas e pode usar cadeira para distâncias maiores (p. 1422).\n\n**Os dois vizinhos.** Abaixo, o nível II também sobe escada com corrimão, e é aí que muita gente erra; mas o II anda **sem** dispositivo manual. Acima, o nível IV pode tocar a cadeira, mas não é deambulador funcional: só dá passos curtos em casa com ajuda e é transportado na comunidade. A criança do caso anda de verdade, com o dispositivo, também fora de casa.\n\n**O que a classificação muda.** No GMFCS 3, a cirurgia para manter a marcha costuma funcionar (Tachdjian p. 1433); e o quadril precisa de vigilância, com 41% de instabilidade nesse nível (p. 1463).\n\nOs descritores estão na seção \"GMFCS: a classificação que a prova mais cobra\" do resumo, na tabela de frases-chave.",
-  "correta": "**C) III.** Anda com dispositivo de assistência, sobe escada com corrimão e autopropele a cadeira manual, que usa em distâncias longas.",
+  "conceito": "O GMFCS é uma forma de descrever o que a criança faz no dia a dia, sem se perder no tipo de lesão cerebral. O Tachdjian o coloca como a escala mais usada para descrever a função antes e depois de uma intervenção, em cinco níveis (cap. 31, p. 1422).\n\nA melhor maneira de usar a escala é com uma pergunta por nível: ela anda sozinha? Acompanha os colegas? Precisa de andador? Empurra a própria cadeira?\n\n- **Nível 1:** anda sem auxílio em todas as superfícies e acompanha os colegas.\n- **Nível 2:** anda plenamente, pode usar órtese, mas não acompanha totalmente os colegas.\n- **Nível 3:** usa andador ou muletas, e pode usar cadeira de rodas em distâncias longas.\n- **Nível 4:** não anda, mas consegue impulsionar a própria cadeira.\n- **Nível 5:** não consegue se transferir, impulsionar a cadeira nem sustentar o tronco.\n\nO enunciado descreve o nível 3 quase palavra por palavra: caminha com dispositivos de assistência em ambientes internos e em superfícies planas, sobe escada com corrimão e usa cadeira de rodas manual, com ajuda em distâncias longas.\n\n**Para que serve na mão?** A questão aparece em \"mão da criança\" porque a função motora da criança orienta os objetivos da cirurgia do membro superior. Quem depende de um andador usa as mãos para andar, e isso muda o que se espera de qualquer procedimento.",
+  "correta": "**C: III.** Usa dispositivos de assistência para andar e pode precisar de cadeira de rodas nas distâncias longas (Tachdjian, cap. 31, p. 1422).",
   "incorretas": {
-   "A": "**I** anda sem dispositivo, sobe escada sem corrimão, corre e pula.",
-   "B": "**II** sobe escada com corrimão, mas anda sem andador ou muletas; o dispositivo de assistência leva ao III.",
-   "D": "**IV** não é deambulador funcional: dá só passos curtos em casa com ajuda e é transportado na comunidade.",
-   "E": "**V** não sustenta cabeça e tronco e é transportado em todos os ambientes."
+   "A": "**Sem auxílio.** O nível I anda em todas as superfícies, sem dispositivos (Tachdjian, cap. 31, p. 1422).",
+   "B": "**Sem andador.** O nível II anda plenamente, podendo usar órtese, mas sem depender de andador ou muleta (Tachdjian, cap. 31, p. 1422).",
+   "D": "**Não anda.** O nível IV depende da cadeira para se deslocar, e a criança do enunciado caminha (Tachdjian, cap. 31, p. 1422).",
+   "E": "**O mais grave.** O nível V nem sustenta o tronco nem impulsiona a cadeira (Tachdjian, cap. 31, p. 1422)."
   },
   "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 31, p. 1422",
    "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 31 (Disorders of the Brain), p. 1422, 1433 e 1463",
    "Campbell's Operative Orthopaedics, 15ª ed., cap. 35 (Cerebral Palsy), p. 1233",
    "Resumo OrtoQuestões: Paralisia cerebral"
   ],
-  "geradoEm": "2026-11-01",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "pediatria-0867": {
