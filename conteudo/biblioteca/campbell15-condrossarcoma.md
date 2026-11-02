@@ -6,7 +6,7 @@ especialidade: tumores
 acesso: gratis
 livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição
-capitulo: Capítulo 29 · Malignant Tumors of Bone
+capitulo: Capítulo 27 · Tumores cartilaginosos (com o condrossarcoma do capítulo 29)
 autores: Patrick C. TOY e Robert K. HECK Jr.
 fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone, seção Chondrosarcoma inteira, p. 975 a 979), cap. 27 (Benign Bone Tumors, condroma e osteocondroma, p. 928 a 932), cap. 26 (General Principles of Tumors: diagnóstico por imagem, estadiamento, biópsia, margens, curetagem e ressecções pélvicas, p. 869 a 884 e 903 a 905), cap. 19 (amputações do quadril e da pelve, p. 720), cap. 49 (tumores da coluna, p. 1965 aprox.) e cap. 83 (tumores da mão, p. 3580 a 3590); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (osteocondroma, exostose múltipla, encondroma, OLLIER e MAFFUCCI, p. 1019 a 1029) e cap. 26 (condrossarcoma, p. 1071 a 1073); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos: condroma, OLLIER, osteocondroma, exostose múltipla), cap. 30 (tumores ósseos malignos: condrossarcoma e classificação da OMS) e cap. 7 (tumores da mão), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
 subtemas: Condrossarcoma
