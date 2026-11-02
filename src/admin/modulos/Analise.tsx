@@ -9,7 +9,7 @@ import { serieLimpa, usarFunil, usarRetencao, usarSerie } from '../dados/consult
 import { usarPainel } from '../dados/painel'
 import type { LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
-import { PERIODOS, defAba } from '../rotas'
+import { PERIODOS, defParte } from '../rotas'
 import { Icone } from '../ui/Icone'
 import { diaDaSerie, inteiro, pct } from '../ui/formato'
 import { Funil, Legenda, MapaCalor, Quadro, Ranking, SerieTempo } from '../ui/graficos'
@@ -19,7 +19,7 @@ import { Tabela } from '../ui/tabela'
 /** Pessoas › Aquisição e ativação, Retenção e ritmo, Perfis e origem. */
 export default function Analise() {
   const { estado } = usarNav()
-  return estado.sub === 'retencao' ? <Retencao /> : estado.sub === 'perfis' ? <Perfis /> : <Aquisicao />
+  return estado.parte === 'retencao' ? <Retencao /> : estado.parte === 'perfis' ? <Perfis /> : <Aquisicao />
 }
 
 /* ───────────── Datas de São Paulo ───────────── */
@@ -68,12 +68,12 @@ function Aquisicao() {
     for (const c of cobrancasDe(p.reais)) if (c.tipo === 'nova' && !primeira.has(c.id_usuario)) primeira.set(c.id_usuario, c.em)
     return { cadastros: porPeriodos(p.usuariosReais.map(u => new Date(u.criado_em)).filter(d => Number.isFinite(d.getTime()))), assinantes: porPeriodos([...primeira.values()]) }
   }, [p.usuariosReais, p.reais])
-  const parte = defAba('crescimento')
+  const parte = defParte('crescimento')
   const rotulos = (cortes?.atual ?? []).map(d => ({ longo: diaDaSerie(d.dia, true), curto: diaDaSerie(d.dia) }))
   const cad = ritmo?.cadastros[agrupar], ass = ritmo?.assinantes[agrupar]
   const esteCad = cad?.[cad.length - 1]?.n ?? 0, esteAss = ass?.[ass.length - 1]?.n ?? 0
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Pessoas" titulo={parte.rotulo} pergunta={parte.pergunta}
+    <Cabeca area="Crescimento" titulo={parte.rotulo} pergunta={parte.pergunta}
       acoes={<Segmento rotulo="Período" valor={periodo} aoMudar={d => nav.ajustar({ periodo: d })} opcoes={PERIODOS.map(d => [d, `${d} dias`] as [typeof d, string])} />} />
     <section className="a3-painel" aria-label="Aquisição no período">
       <div className="a3-faixa-metricas" style={{ '--colunas': 4 } as React.CSSProperties}>
@@ -132,7 +132,7 @@ function Retencao() {
   const p = usarPainel()
   const q = usarRetencao()
   const [base, definirBase] = useState<'cadastros' | 'assinantes'>('cadastros')
-  const parte = defAba('retencao')
+  const parte = defParte('retencao')
   const coortes = Array.isArray(q.dados) ? q.dados.map(c => ({ semana: String(c.semana).slice(0, 10), cadastros: Number(c.cadastros), e1: Number(c.estudaram_1a_semana), v2: Number(c.voltaram_2a_semana) })) : null
   const ritmo = useMemo(() => {
     if (!p.usuariosReais || !p.reais) return null
@@ -152,7 +152,7 @@ function Retencao() {
     return { contas: u.length, questoes: u.filter(x => x.respondidas > 0).length, flashcards: u.filter(x => (s.get(x.id_usuario)?.flashcards_unicos ?? 0) > 0).length, resumos: u.filter(x => (x.pagina ?? '').startsWith('/resumos')).length, semana: u.filter(x => x.respondidas_7d > 0).length, planos: u.filter(x => !!s.get(x.id_usuario)?.planos_ultima).length, temSinais: s.size > 0 }
   }, [p.usuariosReais, p.sinais])
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Pessoas" titulo={parte.rotulo} pergunta={parte.pergunta} />
+    <Cabeca area="Crescimento" titulo={parte.rotulo} pergunta={parte.pergunta} />
     <div className="a3-grade a3-grade--12">
       <div style={{ gridColumn: 'span 7' }}>
         <Quadro titulo="Coortes semanais" descricao="Cada linha é uma semana de cadastro. A porcentagem é sempre sobre os cadastros daquela semana (o denominador da linha)." fonte="retencao_admin" qualidade="derivado"
@@ -215,7 +215,7 @@ interface ResumoIndicacoes { codigos: number; convidados: number; confirmados: n
 function Perfis() {
   const p = usarPainel()
   const [criterio, definirCriterio] = useState<'contas' | 'ativos'>('contas')
-  const parte = defAba('perfis')
+  const parte = defParte('perfis')
   const usuarios = p.usuariosReais
   const d = useMemo(() => {
     if (!usuarios) return null
@@ -242,7 +242,7 @@ function Perfis() {
   const residentes = d?.etapas.filter(e => ['R1', 'R2', 'R3', 'Residente (ano não informado)'].includes(e.rotulo)).reduce((s, e) => s + e.contas, 0) ?? 0
   const topo = d ? [...d.provas].sort((a, b) => b.contas - a.contas)[0] : null
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Pessoas" titulo={parte.rotulo} pergunta={parte.pergunta}
+    <Cabeca area="Crescimento" titulo={parte.rotulo} pergunta={parte.pergunta}
       acoes={<Segmento rotulo="Quem entra na conta" valor={criterio} aoMudar={definirCriterio} opcoes={[['contas', 'Todas as contas'], ['ativos', 'Ativas na semana']]} />} />
     {!d ? <Carregando linhas={8} /> : <>
       {!d.temMigracao && <Faixa tom="aviso">Para ver ano da residência e provas de interesse, rode a migração 202610060100_perfil_estudo_admin.sql.</Faixa>}

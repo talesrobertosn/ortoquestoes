@@ -50,12 +50,11 @@ interface Evento { em: string; tipo: 'cadastro' | 'estudo' | 'pagou' | 'nova' | 
 export function LinhaDoDia({ quadro }: { quadro: ReturnType<typeof quadroDoDia<LinhaUsuario>> }) {
   const p = usarPainel()
   const nav = usarNav()
-  const [limite, definirLimite] = useState(14)
+  const [limite, definirLimite] = useState(6)
   const eventos = useMemo(() => {
     const lista: Evento[] = []
     const hoje = quadro.hoje
     for (const u of p.usuarios ?? []) if (diaSP(u.criado_em) === hoje) lista.push({ em: u.criado_em, tipo: 'cadastro', id: u.id_usuario, nome: nomeDe(u), texto: <>criou a conta{u.origem ? <span className="a3-mudo"> · veio de {rotuloOrigem(u.origem)}</span> : ''}</> })
-    for (const f of quadro.estudaram) if (f.em) lista.push({ em: f.em, tipo: 'estudo', id: f.pessoa.id_usuario, nome: nomeDe(f.pessoa), texto: textoEstudo(f) })
     const mov = (m: MovimentoDinheiro, tipo: Evento['tipo'], verbo: string) => m.em && lista.push({ em: m.em, tipo, id: m.id_usuario, nome: m.nome ?? m.email ?? 'Sem nome', texto: <>{verbo} <span className="a3-mudo">· {rotuloPlano(m.plano)} · {rotuloMeio(m.meio)}{m.valor !== null ? ` · ${reais(m.valor)}` : ''}</span></> })
     quadro.novasAssinaturas.forEach(m => mov(m, 'nova', 'assinou pela primeira vez'))
     quadro.renovacoes.forEach(m => mov(m, 'renovou', 'renovou'))
@@ -65,24 +64,23 @@ export function LinhaDoDia({ quadro }: { quadro: ReturnType<typeof quadroDoDia<L
     return lista.sort((a, b) => b.em.localeCompare(a.em))
   }, [p.usuarios, quadro])
   const marca: Record<Evento['tipo'], string> = { cadastro: 'tinta', estudo: '', pagou: 'ok', nova: 'ok', renovou: 'ok', cancelou: 'erro', pix: '' }
-  return <Painel titulo="Linha do dia" descricao="Tudo o que aconteceu hoje, do mais recente ao mais antigo: cadastros, estudo e dinheiro." justo={false}>
-    {!p.usuarios ? <Carregando linhas={6} /> : !eventos.length ? <Estado compacto icone="relogio" titulo="Nada aconteceu hoje ainda" texto="A linha se preenche sozinha a cada atualização." /> : <>
+  const estudo = useMemo(() => ({ pessoas: quadro.estudaram.length, questoes: quadro.estudaram.reduce((t, f) => t + (f.questoes ?? 0), 0) }), [quadro])
+  const resumoEstudo = estudo.pessoas > 0 && <p className="a3-tempo__resumo">
+    <b>{inteiro(estudo.pessoas)}</b> {estudo.pessoas === 1 ? 'pessoa estudou' : 'pessoas estudaram'} hoje{estudo.questoes > 0 && <>, <b>{inteiro(estudo.questoes)}</b> {estudo.questoes === 1 ? 'questão' : 'questões'}</>}
+    {' '}<a href="#a3-listas" className="a3-link">ver quem</a>
+  </p>
+  return <Painel titulo="Linha do dia" descricao="Cadastros e dinheiro de hoje, do mais recente ao mais antigo. O estudo aparece somado." justo={false}>
+    {!p.usuarios ? <Carregando linhas={4} /> : !eventos.length ? <>{resumoEstudo}<Estado compacto icone="relogio" titulo="Nenhum cadastro ou pagamento hoje" texto="A linha se preenche sozinha a cada atualização." /></> : <>
+      {resumoEstudo}
       <ol className="a3-tempo">{eventos.slice(0, limite).map((e, i) => <li key={`${e.id}-${e.tipo}-${i}`}>
         <time dateTime={e.em}>{horario(e.em)}</time>
         <span className="a3-tempo__marca"><i className={marca[e.tipo]} /></span>
         <div className="a3-tempo__texto"><button type="button" className="a3-link" style={{ textDecoration: 'none', fontWeight: 600 }} onClick={() => nav.abrirPessoa(e.id)}>{e.nome}</button> {e.texto}</div>
       </li>)}</ol>
-      {eventos.length > limite && <button type="button" className="a3-botao a3-botao--suave a3-botao--pequeno" onClick={() => definirLimite(l => l + 20)}>Mais {Math.min(20, eventos.length - limite)} de {eventos.length - limite}</button>}
+      {eventos.length > limite && <button type="button" className="a3-botao a3-botao--suave a3-botao--pequeno" onClick={() => definirLimite(l => l + 20)}>Ver mais {Math.min(20, eventos.length - limite)} de {eventos.length - limite}</button>}
+      {limite > 6 && <button type="button" className="a3-botao a3-botao--suave a3-botao--pequeno" style={{ marginLeft: 8 }} onClick={() => definirLimite(6)}>Recolher</button>}
     </>}
   </Painel>
-}
-
-function textoEstudo(f: FeitoHoje<LinhaUsuario>): ReactNode {
-  const partes: string[] = []
-  if (f.questoes > 0) partes.push(`${f.questoes} ${f.questoes === 1 ? 'questão' : 'questões'}${f.tentativas > f.questoes ? ` (${f.tentativas} tentativas)` : ''}`)
-  if (f.flashcards) partes.push('flashcards')
-  if (f.resumo) partes.push(`leu “${tituloResumo(f.resumo.capitulo)}”${f.resumo.extra ? ` (${f.resumo.extra})` : ''}`)
-  return <>estudou hoje <span className="a3-mudo">· {partes.join(' · ') || 'respondeu (o total ainda não sincronizou)'}</span></>
 }
 
 /* ───────────── Listas do dia ───────────── */

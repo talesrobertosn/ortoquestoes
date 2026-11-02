@@ -200,3 +200,11 @@ li.gratis .a3-numeros-pessoa .destaque b { color: var(--grafite); }
   .a3-pessoa-linha__acoes { justify-items: start; padding-left: 48px !important; }
   .a3-numeros-pessoa { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px 8px; width: 100%; }
 }
+/* Sete áreas no celular (Crescimento ganhou área própria em 02/11/2026). */
+.a3-movel-barra { grid-template-columns: repeat(7, minmax(0, 1fr)) !important; }
+.a3-movel-barra a { font-size: 10.5px; min-width: 0; }
+@media (max-width: 380px) { .a3-movel-barra a { font-size: 9.5px; letter-spacing: -0.2px; padding-inline: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } }
+
+/* Linha do dia enxuta: o estudo vira uma linha somada no topo. */
+.a3-tempo__resumo { margin: 0 0 12px; padding: 10px 12px; border-radius: 10px; background: color-mix(in srgb, var(--verdete) 8%, transparent); color: var(--grafite); font-size: 14px; }
+.a3-tempo__resumo b { color: var(--verdete); }

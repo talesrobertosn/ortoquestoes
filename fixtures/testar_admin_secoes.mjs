@@ -22,19 +22,20 @@ try {
 
   // Painel 3.0, revisão de 02/11/2026: seis áreas com os nomes do painel anterior e 17 itens no menu;
   // o que era parecido virou aba dentro da mesma tela (Crescimento, Financeiro › Ganhos, Ajustes).
-  assert.deepEqual(m.AREAS.map(a => a.rotulo), ['Agora', 'Pessoas', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
+  assert.deepEqual(m.AREAS.map(a => a.rotulo), ['Agora', 'Pessoas', 'Crescimento', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
   const partes = m.AREAS.flatMap(a => a.partes.map(p => p.id))
   assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas áreas')
-  assert.equal(partes.length, 17)
+  assert.equal(partes.length, 19)
   // Nenhuma parte do painel antigo some.
   for (const parte of ['usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'todas', 'ajustes'])
     assert.ok(partes.includes(parte), parte)
   assert.deepEqual(m.defArea('receita').partes.map(p => p.rotulo), ['Ganhos', 'Assinaturas', 'Pagamentos', 'Avisos de pagamento'])
-  assert.deepEqual(m.abasDe('crescimento').map(a => a.id), ['crescimento', 'retencao', 'perfis'])
+  assert.deepEqual(m.abasDe('crescimento'), [], 'Crescimento é área própria, sem abas escondidas')
+  assert.deepEqual(m.defArea('crescimento').partes.map(p => p.id), ['crescimento', 'retencao', 'perfis'])
   assert.deepEqual(m.abasDe('financeiro').map(a => a.id), ['financeiro', 'previsao'])
   assert.deepEqual(m.abasDe('ajustes').map(a => a.id), ['ajustes', 'aviso'])
-  assert.equal(m.defParte('crescimento').rotulo, 'Crescimento', 'o menu mostra o nome da tela')
-  assert.equal(m.defAba('crescimento').rotulo, 'Aquisição', 'a aba mostra o nome da aba')
+  assert.equal(m.defParte('crescimento').rotulo, 'Aquisição e funil')
+  assert.equal(m.areaDe('retencao'), 'crescimento')
   assert.equal(m.defAba('previsao').rotulo, 'Previsão')
   assert.equal(m.areaDe('pagamentos'), 'receita')
   assert.equal(m.areaDe('questoes'), 'estudo')
@@ -43,7 +44,7 @@ try {
   // Endereços antigos → tela nova (favoritos e e-mails de alerta continuam abrindo).
   const mapa = {
     '': 'comando', 'aba=geral': 'comando', 'aba=hoje': 'comando', 'aba=agora': 'comando', 'aba=pendencias': 'comando', 'aba=usuarios': 'usuarios', 'aba=conteudo': 'conteudo',
-    'aba=questoes': 'questoes', 'aba=opinioes': 'opinioes', 'aba=crescimento': 'crescimento', 'aba=retencao': 'crescimento', 'aba=perfis': 'crescimento',
+    'aba=questoes': 'questoes', 'aba=opinioes': 'opinioes', 'aba=crescimento': 'crescimento', 'aba=retencao': 'retencao', 'aba=perfis': 'perfis',
     'aba=financeiro': 'financeiro', 'aba=previsao': 'financeiro', 'aba=assinaturas': 'assinaturas', 'aba=pagamentos': 'pagamentos', 'aba=cobrancas': 'cobrancas',
     'aba=avisos': 'pagamentos', 'aba=configuracoes': 'ajustes', 'aba=aviso': 'ajustes', 'aba=avaliacoes': 'conteudo', 'aba=relatos': 'conteudo',
     'aba=receita': 'financeiro', 'aba=pessoas': 'usuarios', 'aba=operacoes': 'lembretes', 'aba=emails': 'lembretes', 'aba=cartas': 'cartas',
@@ -53,7 +54,7 @@ try {
   // O endereço antigo de uma aba abre a aba certa.
   assert.equal(ler('aba=previsao').sub, 'previsao')
   assert.equal(ida('aba=previsao'), '/admin?aba=financeiro&sub=previsao')
-  assert.equal(ida('aba=retencao'), '/admin?aba=crescimento&sub=retencao')
+  assert.equal(ida('aba=retencao'), '/admin?aba=retencao')
   assert.equal(ida('aba=aviso'), '/admin?aba=ajustes&sub=aviso')
   assert.equal(ida('aba=financeiro&sub=financeiro'), '/admin?aba=financeiro', 'a primeira aba não vai no endereço')
   assert.equal(ida('aba=usuarios&sub=previsao'), '/admin?aba=usuarios', 'aba de outra tela é ignorada')
@@ -68,7 +69,7 @@ try {
   assert.equal(ida('aba=geral'), '/admin')
   for (const antigo of ['aba=geral', 'aba=hoje', 'aba=agora', 'aba=configuracoes', 'aba=avaliacoes', 'aba=receita', 'aba=previsao', 'aba=xyz']) assert.ok(m.urlAntiga(new URLSearchParams(antigo)), antigo)
   for (const atual of ['', 'aba=usuarios&filtro=novos', 'aba=lembretes', 'aba=todas', 'aba=ajustes', 'aba=simulados', 'aba=cartas', 'aba=conteudo&vista=relatos', 'aba=financeiro&sub=previsao']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
-  assert.deepEqual(m.AREAS.map(a => m.partePadrao(a.id)), ['comando', 'usuarios', 'financeiro', 'conteudo', 'lembretes', 'ajustes'])
+  assert.deepEqual(m.AREAS.map(a => m.partePadrao(a.id)), ['comando', 'usuarios', 'crescimento', 'financeiro', 'conteudo', 'lembretes', 'ajustes'])
 
   // ---------- Financeiro › Ganhos ----------
   // 17/10/2026 15h em Brasília (18h UTC).
@@ -202,7 +203,7 @@ try {
     assert.ok(cat.combinaBusca(modelos.find(x => x.tipo === 'voltou'), null, 'DIAS fora'), 'busca sem acento e sem caixa')
   }
 
-  console.log('Painel 3.0: 6 áreas e 17 itens com abas, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
+  console.log('Painel 3.0: 7 áreas e 19 itens, Crescimento com área própria, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }
