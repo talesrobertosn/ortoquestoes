@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-01",
+ "geradoEm": "2026-11-02",
  "capitulos": [
   {
    "id": "callaghan-anatomia-acessos",
@@ -7321,15 +7321,15 @@
   },
   {
    "id": "rockwood10-66-talus",
-   "versao": 1,
-   "titulo": "Fraturas e luxações do tálus",
+   "versao": 2,
+   "titulo": "Fraturas do tálus e do calcâneo",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
-   "edicao": "10ª edição (2025)",
-   "capitulo": "Capítulo 66 · Fractures and Dislocations of the Talus",
-   "resumo": "Vascularização, HAWKINS e VALLIER, incidências de CANALE e BRODEN, redução urgente do corpo luxado, placa lateral contra o varo, processos lateral e posterior, sinal de HAWKINS e a luxação subtalar.",
+   "edicao": "10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), cap. 93",
+   "capitulo": "Capítulos 66 e 67 · Fractures and Dislocations of the Talus; Calcaneus Fractures",
+   "resumo": "Calcâneo de ESSEX-LOPRESTI e SANDERS, BÖHLER e GISSANE, seio do tarso e as feridas; no tálus, vascularização, HAWKINS e VALLIER, incidências de CANALE e BRODEN, redução urgente do corpo luxado, placa lateral contra o varo, processos lateral e posterior, sinal de HAWKINS e a luxação subtalar.",
    "acesso": "gratis",
-   "minutos": 27,
+   "minutos": 47,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7395,6 +7395,51 @@
      "id": "controversias-e-o-que-falta-saber",
      "titulo": "Controvérsias e o que falta saber",
      "radar": "fundamento"
+    },
+    {
+     "id": "calcaneo-anatomia-e-mecanismo",
+     "titulo": "Calcâneo: anatomia e mecanismo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "imagem-do-calcaneo",
+     "titulo": "Imagem do calcâneo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "classificacao-essex-lopresti-e-sanders",
+     "titulo": "Classificação: ESSEX-LOPRESTI e SANDERS",
+     "radar": "confirmado"
+    },
+    {
+     "id": "partes-moles-lingua-bolhas-compartimento-e-expos",
+     "titulo": "Partes moles: língua, bolhas, compartimento e exposição",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fraturas-extra-articulares-tuberosidade-sustenta",
+     "titulo": "Fraturas extra-articulares: tuberosidade, sustentáculo e processo anterior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-tempo-e-vias-de-acesso",
+     "titulo": "Tratamento: tempo e vias de acesso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes-e-resultados-do-calcaneo",
+     "titulo": "Complicações e resultados do calcâneo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "talus-o-que-o-campbell-acrescenta",
+     "titulo": "Tálus: o que o Campbell acrescenta",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
     }
    ],
    "questoes": [
@@ -7418,7 +7463,21 @@
     "trauma-0118",
     "trauma-0562",
     "pe-tornozelo-0063",
-    "pe-tornozelo-0022"
+    "pe-tornozelo-0022",
+    "trauma-0897",
+    "trauma-0857",
+    "trauma-0571",
+    "trauma-0695",
+    "trauma-0102",
+    "trauma-0676",
+    "trauma-0324",
+    "trauma-0539",
+    "trauma-0138",
+    "trauma-0799",
+    "trauma-1087",
+    "trauma-0302",
+    "trauma-0301",
+    "trauma-0169"
    ],
    "treino": [
     "pe-tornozelo-0422",
