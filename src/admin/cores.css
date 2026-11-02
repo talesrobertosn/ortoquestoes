@@ -142,3 +142,56 @@
 .a3-mini path.a3-mini__area { fill: color-mix(in srgb, var(--cor-area) 14%, transparent) !important; }
 
 .a3-online__lista .a3-online__carta { display: grid !important; grid-template-columns: none !important; width: 34px !important; padding: 0 !important; }
+
+/* ───────── Questões de hoje e do total, limite grátis e temperatura (02/11/2026) ───────── */
+.a3-totais { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+@media (max-width: 1240px) { .a3-totais { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 760px) { .a3-totais { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-total:first-child { grid-column: 1 / -1; } }
+.a3-total--limite { --c: #e11d48; --cv: #ffe4e6; --ct: #be123c; }
+:root[data-tema="escuro"] .a3-total--limite { --c: #fb7185; --cv: #2e1018; --ct: #fda4af; }
+
+.a3-online__lista .a3-online__pessoa { grid-template-columns: 34px minmax(0, 1fr) auto !important; }
+.a3-lista-curta li > button:first-child { grid-template-columns: 30px minmax(0, 1fr) auto !important; }
+/* Dois números lado a lado: hoje (na cor do grupo) e total. */
+.a3-qq { display: inline-flex; align-self: start; gap: 4px; }
+.a3-qq > span { display: grid; justify-items: center; min-width: 46px; padding: 5px 7px 4px; border-radius: 11px; line-height: 1.05; }
+.a3-qq b { font-size: 17px; font-weight: 750; letter-spacing: -.02em; }
+.a3-qq small { font-size: 10px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; opacity: .8; }
+.a3-qq__hoje { background: var(--c, var(--cor-gratis)); color: #fff; }
+.a3-qq__hoje.zero { background: var(--a3-recuo); color: var(--a3-cinza); }
+.a3-qq__total { background: var(--a3-papel); color: var(--a3-tinta); box-shadow: inset 0 0 0 1px var(--a3-linha); }
+.a3-online__grupo--lead .a3-qq__hoje:not(.zero) { color: #1f1300; }
+.a3-bloco .a3-qq__hoje:not(.zero) { background: var(--c); }
+/* Limite grátis do dia. */
+.a3-limite { display: grid; gap: 3px; margin: 2px 0; }
+.a3-limite__trilho { display: block; height: 6px; border-radius: 6px; background: color-mix(in srgb, var(--a3-tinta) 8%, transparent); overflow: hidden; }
+.a3-limite__trilho i { display: block; height: 100%; border-radius: inherit; background: var(--cor-gratis); }
+.a3-limite small { font-size: 11.5px; color: var(--a3-cinza); }
+.a3-limite.perto .a3-limite__trilho i { background: var(--cor-lead); }
+.a3-limite.bateu .a3-limite__trilho i { background: #e11d48; }
+.a3-limite.bateu small { color: #be123c; font-weight: 650; }
+:root[data-tema="escuro"] .a3-limite.bateu small { color: #fda4af; }
+/* Temperatura do não assinante: frio (azul) → fervendo (vermelho). */
+.a3-temp { display: inline-flex; align-items: center; gap: 4px; padding: 0 8px; border-radius: 999px; font-size: 11px; font-weight: 700; letter-spacing: .02em; line-height: 1.7; }
+.a3-temp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.a3-temp--frio { background: #e0f2fe; color: #0369a1; }
+.a3-temp--morno { background: #fef9c3; color: #a16207; }
+.a3-temp--quente { background: #ffedd5; color: #c2410c; }
+.a3-temp--fervendo { background: #ffe4e6; color: #be123c; box-shadow: 0 0 0 2px color-mix(in srgb, #e11d48 25%, transparent); animation: a3-ferve 1.8s ease-in-out infinite; }
+:root[data-tema="escuro"] .a3-temp--frio { background: #0c2a3d; color: #7dd3fc; }
+:root[data-tema="escuro"] .a3-temp--morno { background: #2b2508; color: #fde047; }
+:root[data-tema="escuro"] .a3-temp--quente { background: #2e1a0c; color: #fdba74; }
+:root[data-tema="escuro"] .a3-temp--fervendo { background: #2e1018; color: #fda4af; }
+@keyframes a3-ferve { 50% { box-shadow: 0 0 0 5px color-mix(in srgb, #e11d48 0%, transparent); } }
+@media (prefers-reduced-motion: reduce) { .a3-temp--fervendo { animation: none; } }
+.a3-pilula { display: inline-grid; place-items: center; min-width: 34px; padding: 2px 8px; border-radius: 999px; background: var(--a3-recuo); color: var(--a3-cinza); font-weight: 700; font-variant-numeric: tabular-nums; }
+.a3-pilula--gratis { background: var(--cor-gratis); color: #fff; }
+.a3-pilula--assinante { background: var(--cor-assinante); color: #fff; }
+/* Linha de pessoa online: nome e contadores em cima; o que faz, limite e temperatura embaixo, na largura toda. */
+.a3-online__lista .a3-online__pessoa { grid-template-columns: 34px minmax(0, 1fr) auto !important; row-gap: 3px !important; align-items: center !important; }
+.a3-online__pessoa .a3-online__texto { display: contents; }
+.a3-online__pessoa > .a3-avatar { grid-row: 1 / span 4; align-self: start; }
+.a3-online__pessoa .a3-online__nome { grid-column: 2; grid-row: 1; }
+.a3-online__pessoa > .a3-qq { grid-column: 3; grid-row: 1; }
+.a3-online__pessoa .a3-online__faz, .a3-online__pessoa .a3-limite, .a3-online__pessoa .a3-online__meta { grid-column: 2 / span 2; }
+.a3-online__pessoa .a3-limite { max-width: 260px; }

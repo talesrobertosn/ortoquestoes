@@ -116,3 +116,9 @@ ou `search_path` foi alterada. Nenhum dado administrativo foi exposto em endpoin
 - **Cor no painel inteiro** (`src/admin/cores.css`): cada área com a sua cor (Agora verde, Pessoas azul,
   Financeiro turquesa, Conteúdo violeta, E-mails laranja, Ajustes ardósia), que tinge o menu, o título, o botão
   principal, as abas e os filtros; gráficos em índigo, turquesa e âmbar; claro e escuro.
+- **Questões de hoje e do total** lado a lado, em destaque, em cada pessoa (online e fora) e na tabela de Usuários.
+- **Limite grátis do dia** (quando o limite está ligado): barra em cada não assinante e o total "Bateram o limite grátis".
+- **Temperatura do não assinante** (Frio, Morno, Quente, Fervendo): viu os planos hoje ou na semana, bateu o limite,
+  questões no total e online agora; os mais quentes aparecem primeiro.
+- **Lista de pessoas a cada 3 minutos** nas telas ao vivo (Agora e Usuários); o resto continua a cada 5. Online segue
+  sendo sinal nos últimos 5 minutos, e o botão Atualizar busca na hora.

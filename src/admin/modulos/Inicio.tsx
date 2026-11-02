@@ -5,6 +5,7 @@ import { diaSP } from '../../componentes/admin/estudoHoje'
 import { registrarTitulosResumos } from '../../componentes/admin/formatos'
 import { rotuloPlano } from '../../componentes/admin/rotulos'
 import { viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
+import { usarRpc } from '../../componentes/admin/usarRpc'
 import { usarFunil, usarSerie } from '../dados/consultas'
 import { usarPainel } from '../dados/painel'
 import { nomeDe, type LinhaUsuario } from '../dados/pessoas'
@@ -19,6 +20,48 @@ import { LinhaFila, useIrDestino, usarFila } from './fila'
 const ultimoSinal = (u: LinhaUsuario) => [u.visto_em, u.ultima_atividade, u.ultimo_login].filter(Boolean).sort().slice(-1)[0] ?? null
 const viuHoje = (s: SinalUsuario | undefined, hoje: string) => !!s?.planos_ultima && diaSP(s.planos_ultima) === hoje
 type Tipo = 'assinante' | 'lead' | 'gratis'
+
+/**
+ * Temperatura de um não assinante (02/11/2026): soma sinais de interesse em comprar, para saber em quem focar.
+ * Viu os planos hoje (+2) ou na semana (+1); bateu o limite grátis hoje (+2); muitas questões no total (+1 a partir
+ * de 50, +1 a partir de 200); online agora (+1). Frio 0–1 · Morno 2 · Quente 3–4 · Fervendo 5+.
+ */
+export function temperatura(u: LinhaUsuario, s: SinalUsuario | undefined, hoje: string, limite: number | null) {
+  let pontos = 0
+  if (viuHoje(s, hoje)) pontos += 2
+  else if (viuPlanos(s, 7)) pontos += 1
+  if (limite !== null && limite > 0 && (u.respondidas_hoje ?? 0) >= limite) pontos += 2
+  if (u.respondidas >= 50) pontos += 1
+  if (u.respondidas >= 200) pontos += 1
+  if (u.online) pontos += 1
+  const nivel = pontos >= 5 ? 'fervendo' : pontos >= 3 ? 'quente' : pontos === 2 ? 'morno' : 'frio'
+  return { pontos, nivel, rotulo: { fervendo: 'Fervendo', quente: 'Quente', morno: 'Morno', frio: 'Frio' }[nivel] } as const
+}
+
+/** Questões de hoje e do total, sempre lado a lado e em destaque. */
+function Questoes({ u }: { u: LinhaUsuario }) {
+  const hoje = u.respondidas_hoje ?? 0
+  return <span className="a3-qq" aria-label={`${hoje} questões hoje, ${u.respondidas} no total`}>
+    <span className={'a3-qq__hoje' + (hoje ? '' : ' zero')}><b className="num">{inteiro(hoje)}</b><small>hoje</small></span>
+    <span className="a3-qq__total"><b className="num">{inteiro(u.respondidas)}</b><small>total</small></span>
+  </span>
+}
+
+/** Quanto do limite grátis do dia a pessoa já usou (só com o limite ligado). */
+function Limite({ u, limite }: { u: LinhaUsuario; limite: number | null }) {
+  if (limite === null || limite <= 0) return null
+  const hoje = u.respondidas_hoje ?? 0
+  const pct = Math.min(1, hoje / limite)
+  const bateu = hoje >= limite
+  return <span className={'a3-limite' + (bateu ? ' bateu' : pct >= .7 ? ' perto' : '')}>
+    <span className="a3-limite__trilho" aria-hidden="true"><i style={{ width: `${pct * 100}%` }} /></span>
+    <small>{bateu ? `bateu o limite grátis (${limite})` : `${hoje} de ${limite} grátis hoje`}</small>
+  </span>
+}
+
+function Temperatura({ t }: { t: ReturnType<typeof temperatura> }) {
+  return <b className={`a3-temp a3-temp--${t.nivel}`} title="Viu os planos, bateu o limite, questões no total e online agora">{t.rotulo}</b>
+}
 
 /**
  * Página inicial do painel (revisões de 02/11/2026, pedidos do Tales). Três faixas bem separadas:
@@ -41,6 +84,9 @@ export default function Inicio() {
   const quadro = useMemo(() => quadroDoDia({ usuarios: p.usuarios, sinais: sinaisLista, serie: Array.isArray(serieQ.dados) ? serieQ.dados : null, resumo: p.resumo, funil, assinaturas: p.reais, cobrancas: p.cobrancas }),
     [p.usuarios, sinaisLista, serieQ.dados, p.resumo, funil, p.reais, p.cobrancas])
   const nm = quadro.numeros
+  const configQ = usarRpc<Array<{ paywall_ativo: boolean; limite_diario_gratis: number }>>(p.conta, 'obter_config_comercial_admin')
+  const cfg = Array.isArray(configQ.dados) ? configQ.dados[0] : undefined
+  const limite = cfg?.paywall_ativo ? Number(cfg.limite_diario_gratis) : null
 
   const g = useMemo(() => {
     if (!p.usuarios) return null
@@ -58,13 +104,15 @@ export default function Inicio() {
       online: {
         assinante: online.filter(u => u.plano_vigente).sort(porRecente),
         lead: online.filter(u => !u.plano_vigente && viuHoje(sinal(u), hoje)).sort(porRecente),
-        gratis: online.filter(u => !u.plano_vigente && !viuHoje(sinal(u), hoje)).sort(porRecente),
+        gratis: online.filter(u => !u.plano_vigente && !viuHoje(sinal(u), hoje)).sort((a, b) => temperatura(b, sinal(b), hoje, limite).pontos - temperatura(a, sinal(a), hoje, limite).pontos || porRecente(a, b)),
       },
-      totalOnline: online.length, totalAssinantes: assinantes.length, ausentes, leadsHoje,
+      totalOnline: online.length, totalAssinantes: assinantes.length, ausentes, leadsHoje, hoje,
+      bateram: limite ? pessoas.filter(u => !u.plano_vigente && (u.respondidas_hoje ?? 0) >= limite) : null,
+      questoesGratisHoje: pessoas.filter(u => !u.plano_vigente).reduce((s, u) => s + (u.respondidas_hoje ?? 0), 0),
       leadsForaHoje: leadsHoje.filter(u => !u.online).sort(porPlanos),
       viram30Fora: viram30.filter(u => !u.online && !viuHoje(sinal(u), hoje)).sort(porPlanos),
     }
-  }, [p.usuarios, p.sinais])
+  }, [p.usuarios, p.sinais, limite])
   const semSinais = !p.sinaisQ.dados
 
   return <div className="a3-pilha a3-pilha--larga">
@@ -73,7 +121,7 @@ export default function Inicio() {
         <span className="a3-rotulo">{new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long', timeZone: 'America/Sao_Paulo' })}</span>
         <h1 className="a3-titulo-1">Agora</h1>
       </div>
-      <p className="a3-mudo a3-pequeno">Online = sinal do aparelho nos últimos 5 minutos. Atualiza a cada 5 minutos; para ver na hora, use Atualizar.</p>
+      <p className="a3-mudo a3-pequeno">Online = sinal do aparelho nos últimos 5 minutos. A lista de pessoas se atualiza a cada 3 minutos (o resto, a cada 5); para ver na hora, use Atualizar.</p>
     </header>
 
     {!g ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="A lista de quem está online não carregou" texto={p.erroDados} /> : <Carregando linhas={5} texto="Vendo quem está online…" />}</div> : <>
@@ -82,13 +130,15 @@ export default function Inicio() {
         <Total cor="assinante" rotulo="Assinantes online" valor={g.online.assinante.length} nota={`de ${g.totalAssinantes} assinantes`} />
         <Total cor="gratis" rotulo="Não assinantes online" valor={g.online.gratis.length + g.online.lead.length} nota={`${g.online.lead.length} ${g.online.lead.length === 1 ? 'viu' : 'viram'} os planos hoje`} />
         <Total cor="lead" rotulo="Viram os planos hoje" valor={semSinais ? null : g.leadsHoje.length} nota={semSinais ? 'sinal indisponível (parte 25)' : `não assinantes · ${g.leadsHoje.filter(u => u.online).length} online agora`} />
+        <Total cor="limite" rotulo={limite ? 'Bateram o limite grátis' : 'Questões grátis hoje'} valor={g.bateram ? g.bateram.length : g.questoesGratisHoje}
+          nota={limite ? `limite de ${limite} por dia · ${inteiro(g.questoesGratisHoje)} questões de não assinantes hoje` : 'feitas por não assinantes · limite diário desligado'} />
       </section>
 
       <Faixa numero={1} titulo="Online agora" texto="Toque numa pessoa para abrir a ficha; o envelope abre a carta.">
         <div className="a3-online">
-          <Grupo tipo="assinante" titulo="Assinantes" lista={g.online.assinante} vazio="Nenhum assinante online agora." />
-          <Grupo tipo="lead" titulo="Viram os planos hoje" subtitulo="não assinantes · os mais quentes" lista={g.online.lead} vazio={semSinais ? 'Sinal de planos indisponível.' : 'Nenhum não assinante online viu os planos hoje.'} />
-          <Grupo tipo="gratis" titulo="Não assinantes" lista={g.online.gratis} vazio="Nenhum não assinante online agora." />
+          <Grupo limite={limite} hoje={g.hoje} tipo="assinante" titulo="Assinantes" lista={g.online.assinante} vazio="Nenhum assinante online agora." />
+          <Grupo limite={limite} hoje={g.hoje} tipo="lead" titulo="Viram os planos hoje" subtitulo="não assinantes · os mais quentes" lista={g.online.lead} vazio={semSinais ? 'Sinal de planos indisponível.' : 'Nenhum não assinante online viu os planos hoje.'} />
+          <Grupo limite={limite} hoje={g.hoje} tipo="gratis" titulo="Não assinantes" lista={g.online.gratis} vazio="Nenhum não assinante online agora." />
         </div>
       </Faixa>
 
@@ -104,13 +154,13 @@ export default function Inicio() {
           <Bloco cor="lead" titulo={<><b className="num">{g.leadsForaHoje.length}</b> viram os planos hoje e saíram</>} descricao="Não assinantes; boa hora para uma carta.">
             <ListaPessoas lista={g.leadsForaHoje} vazio={semSinais ? 'Sinal de planos indisponível.' : 'Ninguém viu os planos hoje e saiu.'} acao={u => nav.abrirPessoa(u.id_usuario, 'carta')} detalhe={u => {
               const s = p.sinais.get(u.id_usuario)
-              return <>às {horario(s?.planos_ultima)} · {s?.planos_vezes ?? 0} {s?.planos_vezes === 1 ? 'vez' : 'vezes'} em 30 dias · {inteiro(u.respondidas)} questões</>
+              return <>às {horario(s?.planos_ultima)} · {s?.planos_vezes ?? 0} {s?.planos_vezes === 1 ? 'vez' : 'vezes'} em 30 dias</>
             }} />
           </Bloco>
           <Bloco cor="gratis" titulo={<><b className="num">{g.viram30Fora.length}</b> viram os planos nos últimos 30 dias</>} descricao="Não assinantes, fora agora, sem contar os de hoje.">
             <ListaPessoas lista={g.viram30Fora} vazio="Ninguém nos últimos 30 dias." acao={u => nav.abrirPessoa(u.id_usuario, 'carta')} detalhe={u => {
               const s = p.sinais.get(u.id_usuario)
-              return <>última {haQuanto(s?.planos_ultima)} · {s?.planos_vezes ?? 0} {s?.planos_vezes === 1 ? 'vez' : 'vezes'} · {inteiro(u.respondidas)} questões</>
+              return <>última {haQuanto(s?.planos_ultima)} · {s?.planos_vezes ?? 0} {s?.planos_vezes === 1 ? 'vez' : 'vezes'}</>
             }} />
           </Bloco>
         </div>
@@ -150,7 +200,7 @@ function Faixa({ numero, titulo, texto, children }: { numero: number; titulo: st
   </section>
 }
 
-function Total({ cor, rotulo, valor, nota }: { cor: 'vivo' | Tipo; rotulo: string; valor: number | null; nota: string }) {
+function Total({ cor, rotulo, valor, nota }: { cor: 'vivo' | 'limite' | Tipo; rotulo: string; valor: number | null; nota: string }) {
   return <div className={`a3-total a3-total--${cor}`}>
     <span className="a3-total__rotulo">{cor === 'vivo' && <i className="a3-ponto a3-ponto--vivo" aria-hidden="true" />}{rotulo}</span>
     <b className="a3-total__valor num">{valor === null ? '—' : inteiro(valor)}</b>
@@ -158,7 +208,7 @@ function Total({ cor, rotulo, valor, nota }: { cor: 'vivo' | Tipo; rotulo: strin
   </div>
 }
 
-function Grupo({ tipo, titulo, subtitulo, lista, vazio }: { tipo: Tipo; titulo: string; subtitulo?: string; lista: LinhaUsuario[]; vazio: string }) {
+function Grupo({ tipo, titulo, subtitulo, lista, vazio, limite, hoje }: { tipo: Tipo; titulo: string; subtitulo?: string; lista: LinhaUsuario[]; vazio: string; limite: number | null; hoje: string }) {
   const p = usarPainel()
   const nav = usarNav()
   const [todos, definirTodos] = useState(false)
@@ -180,12 +230,13 @@ function Grupo({ tipo, titulo, subtitulo, lista, vazio }: { tipo: Tipo; titulo: 
             {tipo === 'gratis' && viuPlanos(s) && <b className="a3-tag a3-tag--suave">viu os planos {haQuanto(s?.planos_ultima)}</b>}
           </span>
           <span className="a3-online__faz"><Faz u={u} /></span>
+          {tipo !== 'assinante' && <Limite u={u} limite={limite} />}
           <span className="a3-online__meta">
-            {u.respondidas_hoje ? `${u.respondidas_hoje} hoje · ` : ''}{inteiro(u.respondidas)} no total
-            {tipo !== 'assinante' && ` · conta ${haQuanto(u.criado_em)}`}
-            {u.aparelho ? ` · ${u.aparelho}` : ''}
+            {tipo !== 'assinante' && <><Temperatura t={temperatura(u, s, hoje, limite)} /> · conta {haQuanto(u.criado_em)}</>}
+            {u.aparelho ? `${tipo !== 'assinante' ? ' · ' : ''}${u.aparelho}` : ''}
           </span>
         </span>
+        <Questoes u={u} />
       </button>{tipo !== 'assinante' && <button type="button" className="a3-online__carta" onClick={() => nav.abrirPessoa(u.id_usuario, 'carta')} aria-label={`Escrever para ${nomeDe(u)}`}><Icone nome="carta" tamanho={15} /></button>}</li>
     })}</ul>}
     {lista.length > 8 && <button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno" onClick={() => definirTodos(!todos)}>{todos ? 'Mostrar menos' : `Ver todos os ${lista.length}`}</button>}
@@ -209,6 +260,7 @@ function ListaPessoas({ lista, vazio, detalhe, acao }: { lista: LinhaUsuario[]; 
       <button type="button" onClick={() => nav.abrirPessoa(u.id_usuario)}>
         <span className="a3-avatar">{iniciais(u.nome ?? u.email)}</span>
         <span style={{ minWidth: 0, display: 'grid' }}><span className="a3-nome">{nomeDe(u)}</span><span className="a3-sub">{detalhe(u)}</span></span>
+        <Questoes u={u} />
       </button>
       {acao && <button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno" onClick={() => acao(u)} aria-label={`Escrever para ${nomeDe(u)}`}><Icone nome="carta" tamanho={14} /></button>}
     </li>)}</ul>

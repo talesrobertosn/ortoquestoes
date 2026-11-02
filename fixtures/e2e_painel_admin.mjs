@@ -63,6 +63,10 @@ try {
   assert.equal(new Set(cores).size, 3, `três cores diferentes: ${cores.join(' | ')}`)
   const totais = await pc.p.locator('.a3-totais').innerText()
   for (const t of [/ONLINE AGORA\s+4/i, /ASSINANTES ONLINE\s+1/i, /NÃO ASSINANTES ONLINE\s+3/i, /VIRAM OS PLANOS HOJE\s+1/i]) assert.match(totais, t)
+  // Questões de hoje e do total, lado a lado, em cada pessoa online.
+  const diego = await assinante.locator('.a3-qq').first().innerText()
+  assert.match(diego.replace(/\s+/g, ' '), /52 hoje 860 total/i, `questões de hoje e total: ${diego}`)
+  assert.ok(await gratis.locator('.a3-temp').count(), 'não assinante com temperatura')
   const textoInicio = await pc.p.locator('.a3-conteudo').innerText()
   assert.match(textoInicio, /Não estão online/)
   assert.match(textoInicio, /assinantes não entraram hoje/)
