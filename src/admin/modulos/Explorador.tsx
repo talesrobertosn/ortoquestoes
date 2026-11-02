@@ -56,9 +56,9 @@ export default function Explorador() {
       <span className="a3-sub">{[u.servico, [u.cidade, u.uf].filter(Boolean).join('/')].filter(Boolean).join(' · ') || (u.provas ? u.provas.split(',').map(rotuloProva).join(', ') : '')}</span>
     </span> },
     { id: 'agora', titulo: 'Onde está', soLargo: true, celula: u => u.pagina ? <span style={{ display: 'grid' }}><span>{rotuloPagina(u.pagina)}</span><span className="a3-sub">{u.online ? 'agora' : haQuanto(u.pagina_em)}</span></span> : <span className="fraco">sem registro</span> },
-    { id: 'hoje', titulo: 'Hoje', numero: true, rotuloCelular: 'Hoje', celula: u => u.respondidas_hoje ? <b>{inteiro(u.respondidas_hoje)}</b> : <span className="fraco">0</span>, ordem: u => u.respondidas_hoje ?? 0 },
+    { id: 'hoje', titulo: 'Hoje', numero: true, rotuloCelular: 'Hoje', celula: u => <span className={'a3-pilula' + (u.respondidas_hoje ? (u.plano_vigente ? ' a3-pilula--assinante' : ' a3-pilula--gratis') : '')}>{inteiro(u.respondidas_hoje ?? 0)}</span>, ordem: u => u.respondidas_hoje ?? 0 },
     { id: 'semana', titulo: 'Semana', numero: true, rotuloCelular: 'Semana', celula: u => inteiro(u.respondidas_7d), ordem: u => u.respondidas_7d },
-    { id: 'total', titulo: 'Total', numero: true, rotuloCelular: 'Total', celula: u => inteiro(u.respondidas), ordem: u => u.respondidas },
+    { id: 'total', titulo: 'Total', numero: true, rotuloCelular: 'Total', celula: u => <b className="num" style={{ fontSize: 15 }}>{inteiro(u.respondidas)}</b>, ordem: u => u.respondidas },
     { id: 'acerto', titulo: 'Acerto real', numero: true, rotuloCelular: 'Acerto', celula: u => { const a = acertoDe(u); return a === null ? '—' : <span title={u.acertos + u.erros < MINIMO_PARA_ACERTO ? 'poucas respostas' : undefined} className={u.acertos + u.erros < MINIMO_PARA_ACERTO ? 'fraco' : undefined}>{a}%</span> },
       ordem: u => u.acertos + u.erros >= MINIMO_PARA_ACERTO ? acertoDe(u) ?? -1 : -1 },
     { id: 'visto', titulo: 'Último sinal', numero: true, rotuloCelular: 'Visto', celula: u => u.online ? <span style={{ color: 'var(--a3-ok)', fontWeight: 500 }}>agora</span> : haQuanto(u.visto_em ?? u.ultima_atividade), ordem: u => u.online ? '9' : (u.visto_em ?? u.ultima_atividade ?? '') },

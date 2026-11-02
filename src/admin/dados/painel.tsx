@@ -33,6 +33,8 @@ const MIGRACAO = '202609290100_painel_admin.sql'
 /** Partes que mostram a lista de pessoas (ou abrem fichas a partir dela). */
 const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'crescimento', 'retencao', 'perfis', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
 const COM_COBRANCAS: Parte[] = ['comando', 'agora', 'financeiro', 'previsao', 'cobrancas']
+/** Intervalo da lista de pessoas nas telas ao vivo. */
+const TRES_MIN = 180_000
 const AO_VIVO: Parte[] = ['comando', 'agora', 'usuarios']
 
 export interface DadosPainel {
@@ -84,7 +86,9 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const contadoresQ = usarContadoresAdmin(conta)
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
-    ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined, prazoMs: 20_000,
+    // A linha das pessoas (quem está online, questões de hoje) se atualiza a cada 3 minutos (Tales, 02/11/2026);
+    // o resto, a cada 5. "Online" continua sendo sinal nos últimos 5 minutos. O botão Atualizar busca na hora.
+    ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: AO_VIVO.includes(parte) ? TRES_MIN : undefined, validadeMs: TRES_MIN, prazoMs: 20_000,
   })
   const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: COM_COBRANCAS.includes(parte) })
   const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })

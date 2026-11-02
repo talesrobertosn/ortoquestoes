@@ -33,6 +33,9 @@ export const usuarios = nomes.map((nome, i) => {
   }
 })
 const u = (i) => usuarios[i]
+// Tempo desde a meia-noite em São Paulo (UTC-3, sem horário de verão): "viu os planos hoje" cai sempre no dia de hoje,
+// mesmo quando o teste roda logo depois da meia-noite.
+const desdeMeiaNoiteSP = ((agora - 3 * HORA) % DIA + DIA) % DIA
 const assinatura = (i, plano, meio, status, inicioDias, extra = {}) => {
   const meses = plano === 'anual' ? 12 : plano === 'semestral' ? 6 : 1
   return {
@@ -68,7 +71,7 @@ export const rpcs = {
   cobrancas_admin: () => cobrancasReais,
   serie_diaria_admin: (a) => serie.slice(-(a.p_dias ?? 30)),
   sinais_usuarios_admin: () => [
-    { id_usuario: u(1).id_usuario, planos_vezes: 3, planos_ultima: iso(agora - 2 * HORA), condicoes_ultima: null, flashcards_unicos: 0, flashcards_7d: 0, flashcards_ultima: null, cripta_andar: null, locais_trabalho: null },
+    { id_usuario: u(1).id_usuario, planos_vezes: 3, planos_ultima: iso(agora - Math.min(2 * HORA, desdeMeiaNoiteSP / 2)), condicoes_ultima: null, flashcards_unicos: 0, flashcards_7d: 0, flashcards_ultima: null, cripta_andar: null, locais_trabalho: null },
     { id_usuario: u(2).id_usuario, planos_vezes: 0, planos_ultima: null, condicoes_ultima: null, flashcards_unicos: 40, flashcards_7d: 25, flashcards_ultima: iso(agora - 10 * MIN), cripta_andar: 7, locais_trabalho: null },
   ],
   funil_admin: () => [{ cadastrados: 14, confirmaram: 12, responderam: 11, passaram_50: 8, passaram_500: 3, assinaram: 5 }],
