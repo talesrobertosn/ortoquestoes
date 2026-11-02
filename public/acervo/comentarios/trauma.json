@@ -44469,6 +44469,21 @@
   "geradoEm": "2026-10-29",
   "conferido": false
  },
+ "trauma-1725": {
+  "conceito": "Mesmo com tudo bem feito, alguns politraumatizados morrem nas primeiras horas. Em que eles diferem dos outros? O Rockwood organiza a resposta na distribuição **trimodal** da mortalidade, com a ressalva de que os limites de tempo variam entre autores (cap. 14, Causes of Mortality):\n\n| Momento | Quando | Causas típicas |\n|---|---|---|\n| Imediata | na cena ou no transporte | perda da via aérea, grande lesão encefálica, lesão medular alta, ruptura de grande vaso |\n| Precoce | em horas | lesão encefálica potencialmente salvável por descompressão, hemotórax ou pneumotórax, lesão de órgão sólido, sangramento de fraturas |\n| Tardia | dias a semanas | infecção e disfunção de múltiplos órgãos |\n\nA lógica é a que torna a questão fácil. A morte precoce é a causa que **poderia ter sido tratada rapidamente**: hematoma epidural se drena, tórax se drena, sangramento se controla. A imediata é a que nem chega a tempo. E a sepse precisa de dias para se instalar. O Rockwood acrescenta que a morte precoce vem caindo, mas a maioria das mortes por trauma ainda ocorre nas primeiras 24 horas (cap. 14).\n\n> **Na prova:** sepse fora de qualquer alternativa de morte precoce. Tronco cerebral e medula alta são mortes imediatas.",
+  "correta": "**D: hematomas epidurais, perda de sangue por múltiplas lesões de extremidades, hemopneumotórax.** Os três estão na faixa precoce do Rockwood: lesão encefálica potencialmente salvável, sangramento de fraturas e lesão intratorácica (cap. 14, Causes of Mortality).",
+  "incorretas": {
+   "A": "**A sepse derruba.** É causa de morte tardia, junto com a disfunção de múltiplos órgãos, dias a semanas depois (Rockwood, cap. 14). A lesão do tronco, por sua vez, costuma pertencer à faixa imediata.",
+   "B": "**Mesmo erro.** Sepse e tronco cerebral em uma lista só de morte precoce. Só o sangramento das extremidades está na faixa certa (Rockwood, cap. 14).",
+   "C": "**A distratora mais próxima.** Hematoma epidural e sangramento estão certos, mas a lesão medular alta é citada entre as causas imediatas, na cena ou no transporte (Rockwood, cap. 14).",
+   "E": "**Dois de três.** Sangramento e hemopneumotórax são precoces, mas o trauma raquimedular alto, de novo, é uma morte imediata (Rockwood, cap. 14)."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 14, seção Causes of Mortality"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
  "trauma-1726": {
   "incorretas": {
    "A": "**O abdutor longo do polegar é dorsal profundo.** Pronador quadrado e flexor do carpo são volares, mas basta esse abdutor posterior para invalidar o trio.",
@@ -44484,6 +44499,39 @@
   "conceito": "**O antebraço se organiza em plano volar flexor-pronador, plano dorsal extensor-supinador e grupo lateral móvel.** No volar superficial estão, entre outros, flexores radial e ulnar do carpo e flexor superficial dos dedos; no profundo, pronador quadrado, flexor profundo dos dedos e flexor longo do polegar. O abdutor longo do polegar, apesar de levar \"longo\" no nome, fica no plano dorsal profundo. O braquiorradial pertence ao grupo lateral móvel.\n\nUma síndrome compartimental após esmagamento exige procurar dor intensa e progressiva, tensão e dor ao alongamento passivo, sem esperar perda de pulso. Para responder à anatomia, localize os músculos por sua posição fascial, não apenas pelo movimento que o nome sugere.",
   "correta": "**C: pronador quadrado, flexor do carpo e flexor profundo dos dedos.** Os dois músculos precisamente nomeados pertencem ao volar profundo; músculos flexores do carpo pertencem ao volar superficial. A expressão imprecisa da alternativa está registrada no alerta.",
   "geradoEm": "2026-10-29",
+  "conferido": false
+ },
+ "trauma-1727": {
+  "conceito": "O tratamento padrão da fratura diafisária do fêmur no adulto jovem é a haste intramedular. Por isso, a pergunta correta é: quando a haste não serve? O Rockwood lista as indicações de placa (cap. 57, Indications and Contraindications):\n\n- canal medular extremamente estreito;\n- fratura em torno de uma consolidação viciosa antiga;\n- traço que se estende para a região pertrocantérica ou metafisária;\n- lesão vascular associada que exige reparo;\n- fratura ipsilateral de colo e diáfise;\n- fratura junto de implantes prévios, inclusive periprotética;\n- pseudoartrose da diáfise.\n\nConvém lembrar o preço: a placa não divide carga como a haste. A posição excêntrica faz da carga imediata um risco muito maior de falha (cap. 57). Daí a lógica geral: placa só onde a haste não entra ou onde já se abriu a coxa por outro motivo. Uma coxa aberta para o reparo vascular, ou para descomprimir um compartimento, cria a oportunidade de fixar diretamente.\n\n> **Na prova:** canal estreito é o gatilho clássico da placa.",
+  "correta": "**C: síndrome compartimental e canal medular estreito.** O canal estreito está na lista do Rockwood (cap. 57). A síndrome compartimental não está listada com esse nome; entra por analogia com as situações em que a coxa já está aberta, como no reparo vascular. Veja o alerta.",
+  "alerta": "O Rockwood lista canal medular extremamente estreito e lesão vascular com reparo, mas não cita a síndrome compartimental nominalmente. A letra C foi mantida como gabarito da banca.",
+  "incorretas": {
+   "A": "**Meio certa.** O canal estreito vale, mas o joelho flutuante não aparece entre as indicações de placa do Rockwood (cap. 57). É a distratora mais forte, por causa do primeiro item.",
+   "B": "**Um canal infectado é outro problema.** A infecção pede controle dela antes da fixação definitiva, e não um implante grande. No politraumatizado instável, a lógica é de controle de danos, não de uma abertura maior.",
+   "D": "**A obesidade não é indicação.** Ela não consta da lista do Rockwood (cap. 57), e uma incisão grande em obeso aumenta os problemas de ferida.",
+   "E": "**Nenhum dos dois está na lista.** Nem a obesidade nem o politrauma aparecem como indicação de placa (Rockwood, cap. 57)."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 57 (Fraturas da diáfise do fêmur), Plate Fixation: Indications and Contraindications"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
+ },
+ "trauma-1728": {
+  "conceito": "Perna esmagada, vaso lesado, paciente politraumatizado: salvar ou amputar? O Rockwood parte de uma frase simples, \"vida antes do membro\", e diz que a amputação costuma ser a única opção diante de lesão vascular irreparável ou isquemia quente prolongada, de mais de 6 horas no membro inferior (cap. 18, Survivability). Também lista a amputação imediata no membro que é fonte de hemorragia com risco de morte, ou como controle de danos no politraumatizado instável, no membro avascular com mais de 6 horas de isquemia quente e nos esmagamentos extensos (cap. 16).\n\n**De onde vem a lista da questão.** Ela lembra os critérios clássicos de LANGE, que consideravam a ruptura completa do nervo tibial uma indicação absoluta de amputação no adulto (Rockwood, cap. 18). Esse critério envelheceu: com o estudo LEAP, o peso da sensibilidade plantar passou a ser questionado, e o próprio Rockwood discute a origem dessa crença (cap. 18). Ou seja, a prova cobra uma regra que a prática já relativizou.\n\n**O detalhe do EXCETO.** Sepse incontrolável é um cenário de tempo diferente: não é uma decisão imediata de admissão, porque leva dias para aparecer. A amputação pode ser necessária nela, mas para preservar a vida numa fase posterior (Campbell, cap. 14, p. 680).",
+  "correta": "**D: sepse incontrolável.** Ela é a exceção da lista por não ser um critério da decisão imediata: sepse se instala depois. O Campbell lembra que a amputação pode salvar a vida em infecção incontrolável (cap. 14, p. 680), mas essa é outra indicação, mais tardia.",
+  "alerta": "A sepse incontrolável também justifica amputação para preservar a vida (Campbell, cap. 14, p. 680); o que a separa da lista é ser tardia, e não imediata. A ruptura do nervo tibial foi critério clássico de LANGE, hoje relativizado (Rockwood, cap. 18). Gabarito D mantido.",
+  "incorretas": {
+   "A": "**Critério clássico.** LANGE considerava a ruptura completa do nervo tibial uma indicação absoluta no adulto (Rockwood, cap. 18). Na prática atual, é discutida, mas para a banca faz parte da lista.",
+   "B": "**Está no livro.** Mais de 6 horas de isquemia quente é um dos gatilhos, e os esmagamentos extensos reforçam a decisão (Rockwood, cap. 16 e 18).",
+   "C": "**Faz sentido pela lógica de reconstrução.** Sem condições de refazer a parte muscular, a tentativa de salvamento só adia a perda. Esses casos entram na lista dos esmagamentos extensos (Rockwood, cap. 16).",
+   "E": "**Vida antes do membro.** O Rockwood indica amputar quando o membro faz parte do controle de danos no politraumatizado instável (cap. 16)."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 16 e cap. 18 (Survivability)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 14 (Princípios gerais das amputações), p. 680 e 681"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "trauma-1729": {
@@ -44688,6 +44736,23 @@
   "conceito": "O processo coronoide é a projeção anterior da ulna que forma parte da incisura troclear. Ele funciona como anteparo ósseo contra o deslocamento posterior da ulna em relação ao úmero; cápsula e ligamentos completam a estabilidade. Por isso, uma fratura grande da coronoide deve levar à procura de luxação, fratura da cabeça do rádio e lesões ligamentares, mesmo que o cotovelo já tenha sido reduzido quando a radiografia é feita.\n\nA classificação **Regan-Morrey** usa o tamanho do fragmento visto na radiografia lateral: tipo I é a ponta; tipo II abrange até metade da altura; tipo III envolve mais da metade. O tamanho é uma pista de gravidade, não uma descrição completa do padrão de instabilidade. No estudo original de 35 pacientes, luxação **ou fratura associada** foi observada em 14% no tipo I, 56% no tipo II e 80% no tipo III. O estudo não afirma que 80% dos tipo III tiveram especificamente luxação posterior. Essa distinção entre desfecho composto e evento isolado é o ponto crítico desta questão.\n\nNa prática, a avaliação de um tipo III considera a congruência após redução, o restante da ulna proximal, a cabeça do rádio e a estabilidade ao movimento. A fratura extensa não deve ser tratada como mero achado radiográfico, pois perda do anteparo anterior e dano ligamentar podem permitir subluxação recorrente e rigidez posterior.",
   "correta": "**E: luxação posterior em 80%, segundo a letra oficial.** A direção posterior é coerente com a função estabilizadora da coronoide e, entre as opções, é a associação que a banca pretendeu cobrar. Contudo, o 80% publicado por Regan e Morrey é de luxação **ou outra fratura associada**, sem discriminar uma taxa de luxação posterior. A resposta deve ser estudada com essa ressalva, não como estatística validada para a direção da luxação.",
   "geradoEm": "2026-11-01",
+  "conferido": false
+ },
+ "trauma-1736": {
+  "conceito": "A pergunta usa a palavra \"absoluto\" e, com isso, leva a um ponto da história da ortopedia. LANGE e colaboradores propuseram critérios para a fratura exposta da tíbia com lesão vascular, e **a ruptura completa do nervo tibial no adulto** era considerada indicação absoluta de amputação (Rockwood, cap. 18). O raciocínio: um pé sem sensibilidade plantar ulcera e não serve de apoio.\n\n**O outro critério clássico** é o esmagamento com isquemia quente prolongada. O número importa: o Rockwood fala em **mais de 6 horas** para o membro inferior (cap. 18), e a alternativa E traz 3 horas. É o que a desqualifica, embora o raciocínio seja bom.\n\n**O que mudou.** O estudo LEAP colocou isso em questão. Mais de um terço dos ortopedistas ouvidos dizia usar a sensibilidade plantar para decidir, e o Rockwood mostra que a base dessa crença é difícil de rastrear (cap. 18). O Campbell é ainda mais enxuto: a única indicação absoluta de amputação primária é a lesão vascular irreparável em um membro isquêmico (cap. 14, p. 681).\n\n> **Na prova:** o critério absoluto clássico é o nervo tibial. Na prática, a decisão é bem mais complexa.",
+  "correta": "**B: lesão do nervo tibial posterior.** É o critério absoluto de LANGE, que considerava a ruptura completa desse nervo no adulto indicação de amputação (Rockwood, cap. 18).",
+  "alerta": "O critério é histórico. O Rockwood discute como o LEAP questionou o peso da sensibilidade plantar, e o Campbell afirma que a única indicação absoluta de amputação primária é a lesão vascular irreparável em membro isquêmico (cap. 14, p. 681). Gabarito B mantido.",
+  "incorretas": {
+   "A": "**Pesa, mas não decide sozinho.** O politrauma é relevante quando o paciente está instável e o membro entra no controle de danos (Rockwood, cap. 16). Por si só, não define amputação.",
+   "C": "**Entra na conversa, não é critério absoluto.** A idade influencia o prognóstico e a escolha, mas sozinha não indica amputar.",
+   "D": "**Um fator de risco.** O choque pesa nos escores de gravidade do membro, como parte de uma soma, e não como critério absoluto (Rockwood, cap. 16).",
+   "E": "**O número derruba.** Três horas de isquemia quente é pouco. O limite do Rockwood é de mais de 6 horas no membro inferior (cap. 16 e 18)."
+  },
+  "referencias": [
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 16 e cap. 18 (Survivability)",
+   "Campbell's Operative Orthopaedics, 14ª ed. (2021), cap. 14 (Princípios gerais das amputações), p. 680 e 681"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  }
 }
