@@ -699,14 +699,20 @@
   "conferido": false
  },
  "mao-0044": {
+  "conceito": "O teste de FROMENT pergunta quem segura a pinça lateral quando o músculo que deveria segurá-la falha. Na pinça de um papel entre o polegar e o indicador, o trabalho é do **adutor do polegar** e do **primeiro interósseo dorsal**, os dois inervados pelo ulnar. Se eles estão fracos, o paciente não desiste do gesto: recruta o **flexor longo do polegar**, que é do mediano (ramo interósseo anterior), e a interfalângica do polegar flete.\n\nO Green's Operative Hand Surgery, 7ª ed. (cap. 31, p. 1046), descreve a flexão acentuada da interfalângica ao pinçar folhas como sinal de paralisia do adutor e do primeiro interósseo dorsal, com a pinça substituída pelo flexor longo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 73, p. 3256), dá a técnica: papel apertado entre a interfalângica do polegar e a base da falange proximal do indicador, enquanto o examinador puxa.\n\nPor isso, quando a pergunta é \"quais músculos o teste avalia\", o par certo é o músculo que falta (adutor) e o que aparece no lugar dele (flexor longo). A regra de memória é curta: falta o adutor, entra o flexor longo.\n\nO sinal está na seção \"Os sinais do ulnar: FROMENT, DUCHENNE, WARTENBERG e PITRES-TESTUT\" do resumo.",
+  "correta": "**A) adutor e flexor longo.** É o par que define o teste: o adutor do polegar é o músculo testado e o flexor longo do polegar é o que o substitui, fletindo a interfalângica.",
   "incorretas": {
-   "B": "O abdutor curto é um músculo tenar do mediano e não participa da pinça lateral nem compensa a perda do adutor.",
-   "C": "Oponente e flexor curto participam da oposição, e não são os músculos avaliados no Froment.",
-   "D": "Oponente e abdutor curto são avaliados nos testes de oposição e abdução, que exploram o nervo mediano."
+   "B": "**adutor e abdutor curto** acerta o adutor, mas o abdutor curto é do mediano e abduz o polegar em palmar; ele não participa da pinça lateral nem aparece como substituto no papel.",
+   "C": "**oponente e flexor curto** são músculos tenares (o oponente é do mediano, o flexor curto tem dupla inervação) e fazem oponência e flexão da MF; o teste do papel não depende deles.",
+   "D": "**oponente e abdutor curto** reúne dois músculos do mediano, que o túnel do carpo enfraquece (abdução palmar e oponência); é o raciocínio do exame do mediano, não o do FROMENT, que é um teste do ulnar."
   },
-  "conceito": "O **teste de Froment** avalia a **paralisia do nervo ulnar** pela forma como o paciente segura uma folha de papel entre o polegar e a lateral do indicador.\n\n**Quem faz essa pinça normalmente**: o músculo **adutor do polegar**, que puxa o polegar contra o indicador. Ele é inervado pelo **nervo ulnar**.\n\n**O que acontece na paralisia do ulnar**: o adutor fica fraco. Quando o examinador tenta puxar o papel, o paciente compensa usando o **flexor longo do polegar**, inervado pelo **nervo mediano**, que está normal. Esse músculo dobra a ponta do polegar, e aparece uma **flexão da interfalângica** do polegar. Esse é o **sinal de Froment** positivo.\n\n**Os músculos do polegar e seus nervos**:\n\n**adutor do polegar**: ulnar;\n\n**abdutor curto** e **oponente**: mediano;\n\n**flexor curto**: duplo, com a parte superficial pelo mediano e a profunda pelo ulnar.\n\n**Outros sinais da paralisia do ulnar**:\n\n**Jeanne**: hiperextensão da metacarpofalângica do polegar na pinça;\n\n**Wartenberg**: o dedo mínimo fica afastado, sem conseguir encostar no anelar;\n\n**Duchenne**: garra do anelar e do mínimo;\n\natrofia do primeiro interósseo dorsal, entre o polegar e o indicador.\n\n**Na prova**: no teste de Froment, o adutor do polegar está fraco e o flexor longo do polegar compensa, dobrando a interfalângica.",
-  "correta": "Sem o adutor do polegar, inervado pelo ulnar, o paciente usa o flexor longo do polegar, inervado pelo mediano, e a interfalângica dobra: é o sinal de Froment.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, pp. 1046-1047",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73, pp. 3254-3256",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão, testes especiais), pp. 204-205",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0045": {
@@ -2397,17 +2403,20 @@
   "conferido": false
  },
  "mao-0151": {
+  "conceito": "A pergunta tem duas metades: com qual músculo o paciente prende o papel e por que ele precisa dele. A segunda metade é quem decide, porque três das alternativas trocam um dos dois lados.\n\nNa pinça lateral, o polegar é pressionado contra a lateral do indicador pelo **adutor do polegar** (com o primeiro interósseo dorsal). Quando o ulnar falha, essa força some. O paciente ainda quer segurar a folha e passa a usar o único músculo do polegar que sobra para apertar: o **flexor longo do polegar**, que flete a interfalângica. O Green's Operative Hand Surgery, 7ª ed. (cap. 31, p. 1046), registra exatamente isso: flexão acentuada da interfalângica ao pinçar, pela paralisia do adutor e do primeiro interósseo dorsal, com o flexor longo fazendo a substituição. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 73, p. 3256), diz que o adutor fraco recruta o flexor do polegar.\n\nA ordem lógica, portanto, é: causa (ausência do adutor), manobra compensatória (flexor longo) e sinal visível (IF fletida). O Netter Atlas de Anatomia Ortopédica, 2ª ed. (p. 205), concorda: flexão da interfalângica indica paralisia do adutor e/ou do ulnar.\n\nVeja a seção sobre os sinais do ulnar no resumo.",
+  "correta": "**B) flexor longo do polegar, pela ausência da função do músculo adutor do polegar.** O flexor longo é o recrutado, e o motivo é a falta do adutor.",
   "incorretas": {
-   "A": "O primeiro interósseo dorsal também é inervado pelo ulnar e está fraco na mesma lesão, por isso não consegue compensar.",
-   "C": "Os papéis estão invertidos: quem falta é o adutor, e o flexor curto tem inervação dupla.",
-   "D": "Está invertido: o flexor longo do polegar é o músculo preservado que substitui o adutor ausente."
+   "A": "**primeiro interósseo** é de fato um dos músculos que faltam (o primeiro interósseo dorsal), mas ele é o que está paralisado, não o que o paciente usa para prender o papel.",
+   "C": "**adutor do polegar, pela ausência do flexor curto** põe o músculo paralisado no papel de quem segura e inventa uma falta que não é a do teste; o flexor curto não é o ponto do FROMENT.",
+   "D": "**adutor do polegar, pela ausência do flexor longo** inverte a relação inteira: o adutor é o que falta, e o flexor longo é o que entra em ação; se faltasse o flexor longo, o sinal seria outro (perda da flexão da IF, como na síndrome do interósseo anterior)."
   },
-  "conceito": "O **teste de Froment** avalia a **paralisia do nervo ulnar** pela forma como o paciente segura uma folha de papel entre o polegar e a lateral do indicador, enquanto o examinador tenta puxá-la.\n\n**Quem faz essa pinça normalmente**: o **adutor do polegar**, inervado pelo **nervo ulnar**. Ele aperta o polegar contra o indicador com o polegar estendido.\n\n**O que acontece na paralisia do ulnar**: o adutor fica fraco. Para não perder o papel, o paciente usa outro músculo: o **flexor longo do polegar**, inervado pelo **nervo mediano**, que está normal. Esse músculo segura o papel **dobrando a ponta do polegar** (flexão da interfalângica). Essa flexão compensatória é o **sinal de Froment positivo**.\n\n**A inervação dos músculos do polegar**:\n\n**adutor do polegar**: ulnar;\n\n**primeiro interósseo dorsal**: ulnar;\n\n**abdutor curto** e **oponente**: mediano;\n\n**flexor curto**: duplo, mediano e ulnar;\n\n**flexor longo do polegar**: mediano (interósseo anterior).\n\n**Outros sinais do ulnar**: **Jeanne** (hiperextensão da metacarpofalângica do polegar na pinça), **Wartenberg** (mínimo afastado), garra do anelar e do mínimo e atrofia do primeiro interósseo dorsal.\n\n**Na prova**: no Froment positivo, o paciente prende o papel com o flexor longo do polegar, pela falta de função do adutor do polegar.",
-  "correta": "Sem o adutor do polegar, inervado pelo ulnar, o paciente usa o flexor longo do polegar, inervado pelo mediano, e dobra a interfalângica para prender o papel.",
   "referencias": [
-   "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 9"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, pp. 1046-1047",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73, pp. 3254-3256",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão, testes especiais), pp. 204-205",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0152": {
@@ -2903,19 +2912,23 @@
   "conferido": false
  },
  "mao-0227": {
+  "conceito": "A pergunta junta quatro nomes de testes e dois cenários de deformidade da IFP, e a dificuldade é que a resposta oficial depende de um nome que os livros lidos não descrevem.\n\nO que os livros dão é o raciocínio de cada teste. O **ELSON** é feito com a IFP fletida a 90 graus sobre a borda da mesa e avalia a bandeleta central do extensor, na botoeira (Green's Operative Hand Surgery, 7ª ed., cap. 5, pp. 155-156); não tem relação com a doença de DUPUYTREN. O **ZANCOLLI** é a capsulodese da MF, um procedimento de tratamento da garra, e não um teste de flexão ativa (Campbell's Operative Orthopaedics, 15ª ed., cap. 76). O Green (cap. 10, p. 339) atribui a SMITH a figura do teste de tensão dos intrínsecos, o que, no exame do dedo rígido, tem a ver com a flexão da IFP conforme a posição da MF.\n\nNa mão reumatoide, o Campbell (cap. 78, p. 3450) mede a rigidez intrínseca pelo teste de BUNNELL, e não por um teste de SMITH. A resposta oficial, o teste de SMITH na DUPUYTREN, vem de fonte que os livros lidos não reproduzem.\n\nO exame do dedo rígido está na seção \"Tendões flexores e a tensão intrínseca: o teste de BUNNELL-LITTLER\" do resumo.",
+  "correta": "**A) SMITH na deformidade de dupuytren.** É a resposta oficial; o Green só atribui a SMITH a figura do teste de tensão dos intrínsecos, e não descreve um teste de SMITH na doença de DUPUYTREN.",
   "incorretas": {
-   "B": "O teste de Elson avalia a banda central, na botoeira, e não a doença de Dupuytren.",
-   "C": "O teste de Smith está associado à doença de Dupuytren, e não à mão reumatoide.",
-   "D": "O teste de Elson avalia a banda central da botoeira, e não a mão reumatoide em geral.",
-   "E": "A manobra de Zancolli avalia a garra por paralisia dos intrínsecos, e não é um teste de flexão ativa da IFP."
+   "B": "**ELSON na deformidade de dupuytren** troca o contexto: o ELSON é o teste da ruptura aguda da bandeleta central, com a IFP a 90 graus, e não um exame da deformidade da doença de DUPUYTREN.",
+   "C": "**SMITH na deformidade da mão reumatoide** liga o teste ao cenário em que o Campbell usa outro teste: na mão reumatoide, a rigidez intrínseca é medida com o BUNNELL.",
+   "D": "**ELSON na deformidade da mão reumatoide** esbarra no mesmo ponto: o ELSON mostra a bandeleta central lesada (botoeira), e a mão reumatoide tem tanto botoeira quanto pescoço de cisne, mas o teste da flexão ativa citado não é o ELSON.",
+   "E": "**ZANCOLLI na deformidade em garra na hanseníase** cita um procedimento, a capsulodese da MF, e não um teste; é uma conduta para a garra, e a manobra de exame da garra é o BOUVIER."
   },
-  "conceito": "Na **interfalângica proximal** (IFP), vários testes ajudam a descobrir a causa de uma deformidade. Cada teste tem sua doença e seu objetivo:\n\n**teste de flexão ativa de Smith**: usado na **doença de Dupuytren**. Observa-se se a contratura da IFP muda com a flexão ativa do dedo. Isso ajuda a separar uma limitação **articular fixa** (a cápsula e a placa volar já encurtaram) de uma deformidade causada **só pela corda**. É importante para planejar a cirurgia: se a articulação está presa, pode ser preciso liberá-la além de retirar a corda;\n\n**teste de Elson**: usado na **botoeira**. Com a IFP dobrada a 90° na borda da mesa, o paciente tenta estendê-la contra resistência. Se a interfalângica distal fica rígida em extensão, a banda central está rompida;\n\n**teste de Bouvier** (manobra de Zancolli): usado na **garra** por paralisia dos intrínsecos, como na hanseníase. Bloqueando a hiperextensão da metacarpofalângica, verifica-se se as interfalângicas conseguem estender; se conseguem, a garra é corrigível;\n\n**Bunnell-Littler**: avalia a retração dos músculos intrínsecos;\n\n**Haines-Zancolli**: avalia o ligamento retinacular oblíquo.\n\n**Na prova**: o teste de flexão ativa da IFP de Smith é usado na deformidade de Dupuytren.",
-  "correta": "O teste de flexão ativa de Smith avalia a deformidade da IFP na doença de Dupuytren, separando a limitação articular fixa da causada pela corda.",
+  "alerta": "Os livros lidos não descrevem um teste de SMITH na doença de DUPUYTREN: o Green's Operative Hand Surgery, 7ª ed. (cap. 10, p. 339), só atribui a SMITH a figura do teste de tensão intrínseca, e o teste de ELSON é descrito para a bandeleta central. O gabarito oficial foi mantido sem conferência possível.",
   "referencias": [
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8th ed. Elsevier; 2022. Dupuytren disease and extensor tendon examination.",
-   "Hueston JT. Dupuytren's Contracture. Churchill Livingstone; 1985."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 5, pp. 155-156",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 10, pp. 339-340",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 78, p. 3450",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 76, pp. 3388 e 3394",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0228": {
@@ -3833,14 +3846,20 @@
   "conferido": false
  },
  "mao-0296": {
+  "conceito": "A descrição da questão traz o dado que identifica o teste: compressão sobre o nervo mediano na região do carpo, mantida por 30 segundos. Só um dos testes do túnel do carpo trabalha desse jeito.\n\nOs testes de provocação aumentam a compressão ou a tensão sobre o nervo e são positivos quando reproduzem os sintomas no território do mediano (Green's Operative Hand Surgery, 7ª ed., cap. 28, p. 924). Cada um escolhe uma forma de provocar. O **DURKAN** é a compressão direta do mediano no túnel, com os polegares ou com um bulbo e manômetro, e é positivo se surge parestesia em até 30 segundos (Campbell's Operative Orthopaedics, 15ª ed., cap. 82, pp. 3542 e 3544). O **PHALEN** usa a flexão dos punhos por 60 segundos, e o **TINEL** usa a percussão leve do nervo, de proximal para distal.\n\nO Netter Atlas de Anatomia Ortopédica, 2ª ed. (p. 160), descreve o DURKAN como pressão manual sobre o mediano no túnel do carpo e o chama de teste mais sensível para a síndrome. Já o monofilamento é outra categoria: mede limiar sensitivo.\n\nOs testes são comparados na seção \"O túnel do carpo: os testes provocativos\" do resumo.",
+  "correta": "**B) Durkan.** É a compressão direta do mediano no túnel por cerca de 30 segundos, positiva se reproduz a parestesia.",
   "incorretas": {
-   "A": "O Tinel é uma percussão sobre o nervo, e não uma compressão sustentada.",
-   "C": "O Phalen é a flexão do punho por 60 segundos, sem compressão direta do examinador.",
-   "D": "O monofilamento de Semmes-Weinstein mede o limiar de sensibilidade; não é teste provocativo."
+   "A": "**Tinel** é a percussão sobre o nervo, e não uma compressão sustentada; o sinal é o choque irradiado para os dedos, e o teste é o mais específico e menos sensível dos clássicos.",
+   "C": "**Phalen** provoca pela posição: punhos fletidos, cotovelos na mesa, por até 60 segundos, sem pressão manual sobre o nervo.",
+   "D": "**Semmes-Weinstein monofilaments** examina o limiar de pressão da polpa com filamentos de náilon; é um teste sensitivo, e não uma compressão do nervo no carpo."
   },
-  "conceito": "Na **síndrome do túnel do carpo**, os **testes provocativos** aumentam a pressão sobre o nervo mediano para reproduzir os sintomas (formigamento no polegar, indicador, médio e metade do anelar).\n\n**Os testes clássicos**:\n\n**Durkan** (teste de compressão do carpo): o examinador aperta com o polegar **diretamente sobre o túnel do carpo por 30 segundos**. É o que tem **melhor sensibilidade e especificidade** entre os testes clássicos;\n\n**Phalen**: o paciente mantém o **punho fletido por 60 segundos**, o que aumenta a pressão dentro do túnel, sem que o examinador toque no nervo;\n\n**Tinel**: **percussão** leve sobre o nervo, que provoca choque irradiado para os dedos; é o menos sensível.\n\n**Outros achados**: piora noturna, alívio ao sacudir a mão (sinal da sacudida), hipoestesia que **poupa a eminência tenar** (o ramo cutâneo palmar sai antes do túnel) e, nos casos avançados, atrofia tenar.\n\n**Testes que não provocam**: o **monofilamento de Semmes-Weinstein** mede o limiar de sensibilidade à pressão (quantifica a perda, altera cedo); a **discriminação de dois pontos** altera só nos casos avançados. A **eletroneuromiografia** confirma e gradua a compressão.\n\n**Na prova**: compressão direta sobre o mediano por 30 segundos = **teste de Durkan**.",
-  "correta": "O teste de Durkan é a compressão direta do polegar do examinador sobre o túnel do carpo por 30 segundos.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço e punho, testes especiais), p. 160",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82, pp. 3542-3546",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0297": {
@@ -4104,17 +4123,19 @@
   "geradoEm": "2026-10-29"
  },
  "mao-0310": {
+  "conceito": "O impacto ulnocarpal é a doença de uma ulna \"longa\" ou de um punho sob carga: a cabeça da ulna bate no disco da fibrocartilagem triangular e nos ossos vizinhos (semilunar e piramidal). O teste, portanto, tem de carregar exatamente essa região.\n\nO Campbell's Operative Orthopaedics, 15ª ed. (cap. 74, p. 3316), define o **teste do impacto ulnar** como **hiperextensão e desvio ulnar** do punho **com compressão axial**. Cada elemento tem sua razão: o desvio ulnar leva o carpo para baixo da ulna e fecha o espaço ulnocarpal, a extensão encaixa a cabeça ulnar contra o disco, e a carga axial reproduz a dor. O Green's Operative Hand Surgery, 7ª ed. (cap. 14, p. 484), traz variações do teste de estresse ulnocarpal, com o antebraço vertical sobre a mesa, carga axial e o punho levado do desvio radial ao ulnar durante a prono-supinação; o resultado reproduz os sintomas das rupturas do disco e da degeneração ulnocarpal.\n\nAs alternativas com flexão ou com desvio radial erram justamente porque abrem o espaço ulnocarpal em vez de fechá-lo.\n\nO teste está na seção \"O punho ulnar: impacto ulnocarpal, fibrocartilagem triangular e a tecla de piano\" do resumo.",
+  "correta": "**C) hiperextensão e desvio ulnar.** É a definição do Campbell para o teste do impacto ulnar: hiperextensão do punho, desvio ulnar e compressão axial.",
   "incorretas": {
-   "A": "A flexão abre o espaço entre carpo e ulna e não reproduz o impacto.",
-   "B": "Nem a flexão nem o desvio radial aproximam o carpo da ulna.",
-   "D": "O desvio radial afasta o carpo da ulna e alivia, em vez de provocar o impacto."
+   "A": "**hiperflexão e desvio ulnar** acerta o desvio ulnar, mas a hiperflexão tira a cabeça da ulna da posição de impacto; o teste pede hiperextensão.",
+   "B": "**hiperflexão e desvio radial** erra os dois componentes: nem a flexão nem o desvio radial levam a cabeça da ulna contra o disco e o carpo ulnar.",
+   "D": "**hiperextensão e desvio radial** acerta a extensão, mas o desvio radial afasta o carpo da ulna e alivia o contato; no teste de impacto, o desvio é ulnar."
   },
-  "conceito": "A **síndrome do impacto ulnocarpal** é a sobrecarga entre a **cabeça da ulna** e o lado ulnar do carpo (**semilunar e piramidal**), com o **complexo da fibrocartilagem triangular** (CFCT) espremido no meio.\n\n**Quem tem**: pacientes com **variância ulnar positiva**, isto é, ulna mais longa que o rádio. Pode ser constitucional ou adquirida, como depois de uma fratura do rádio distal que consolidou encurtada.\n\n**O teste de impacto ulnocarpal** aproxima o carpo da ulna:\n\no **desvio ulnar** empurra o carpo contra a cabeça da ulna;\n\na **hiperextensão** fecha ainda mais o espaço;\n\na **compressão axial** acrescenta carga.\n\nO teste é positivo quando reproduz a **dor no lado ulnar** do punho. Movimentar o antebraço em pronação e supinação com essa carga aumenta a sensibilidade.\n\n**Exames**: radiografia de frente com o **punho cerrado em pronação**, que aumenta a variância e mostra melhor o problema. A ressonância mostra **edema na face ulnar do semilunar** e lesão degenerativa do CFCT.\n\n**Tratamento**: órtese e evitar desvio ulnar com carga. Se falhar, **osteotomia de encurtamento da ulna**, ou ressecção parcial da cabeça da ulna (*wafer*) quando a variância é pequena.\n\n**Na prova**: impacto ulnocarpal = compressão axial com **hiperextensão e desvio ulnar**.",
-  "correta": "O desvio ulnar leva o carpo contra a ulna, a hiperextensão fecha o espaço e a carga axial reproduz a dor.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 69"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 74, pp. 3316, 3343 e 3346",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 14, p. 484",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0311": {
@@ -4474,18 +4495,20 @@
   "conferido": false
  },
  "mao-0340": {
+  "conceito": "A questão cobra uma associação de nome com nervo, e o caminho seguro é pela anatomia do que cada nervo deixa de fazer.\n\nO nervo **interósseo anterior** é ramo do mediano e é motor puro: inerva o **flexor longo do polegar**, o **flexor profundo do indicador** (e às vezes do médio) e o **pronador quadrado**. O Green's Operative Hand Surgery, 7ª ed. (cap. 28, p. 937), descreve a síndrome pela fraqueza desses músculos, com dificuldade para escrever e pinçar e sem perda sensitiva, já que o nervo não inerva pele. Sem o flexor longo e o profundo do indicador, o paciente perde a flexão da IF do polegar e da IFD do indicador, e a pinça de ponta vira pinça de polpa. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (p. 204), anota que a fraqueza da flexão da IFD do indicador indica lesão do FPD ou do nervo interósseo anterior.\n\nPor exclusão: o ulnar dá garra e FROMENT (DUCHENNE e companhia), o radial e o interósseo posterior são extensores. Nenhum deles tira a flexão do polegar e do indicador.\n\nA síndrome está na seção \"O mediano proximal e o interósseo anterior\" do resumo.",
+  "correta": "**C) interósseo anterior.** O quadro é de perda do flexor longo do polegar e do profundo do indicador, sem alteração sensitiva.",
   "incorretas": {
-   "A": "A paralisia do ulnar causa garra do 4º e 5º dedos, e não a mão da bênção.",
-   "B": "A paralisia do radial causa punho caído, com perda de sensibilidade no dorso radial da mão.",
-   "D": "A paralisia do interósseo posterior causa queda dos dedos na metacarpofalângica, com o punho estendendo em desvio radial."
+   "A": "**ulnar** produz garra do anular e do mínimo, FROMENT e atrofia hipotenar; a garra ulnar é o sinal de DUCHENNE e não se confunde com a perda de flexão do polegar e do indicador.",
+   "B": "**radial** é o nervo dos extensores do punho, da MF e do polegar; sua paralisia deixa a mão caída, e não a perda da flexão da IF do polegar e da IFD do indicador.",
+   "D": "**interósseo posterior** é o ramo motor puro do radial para os extensores profundos do antebraço; atingi-lo tira extensão, enquanto o quadro em questão tira flexão."
   },
-  "conceito": "A **mão da bênção** aparece quando o paciente **tenta fechar a mão**: o anelar e o mínimo fletem, mas o **indicador e o médio ficam estendidos**, como num gesto de bênção. Isso acontece porque os flexores desses dois dedos (o **flexor superficial** e a parte radial do **flexor profundo**) são inervados pelo **mediano**.\n\n**O sinal clássico é da lesão alta do mediano**, acima do cotovelo, que paralisa os dois flexores.\n\n**O interósseo anterior** é um ramo **motor puro** do mediano, que sai logo abaixo do pronador redondo e inerva o **flexor longo do polegar**, a parte do **flexor profundo do indicador e do médio** e o **pronador quadrado**. Na síndrome do interósseo anterior:\n\no flexor superficial está **preservado** (seu ramo sai antes), por isso a mão da bênção é incompleta;\n\no sinal próprio é o de **Kiloh-Nevin**: ao tentar fazer um \"ok\", o paciente faz uma pinça com as **polpas achatadas**, porque não flete as interfalângicas do polegar e do indicador;\n\n**não há alteração de sensibilidade**.\n\n**Por que o gabarito escolhe o interósseo anterior**: é a **única alternativa do território do mediano** (veja o alerta).\n\n**Os outros nervos**: o **ulnar** dá a **garra** do 4º e 5º dedos; o **radial** dá o **punho caído**; o **interósseo posterior** dá a **queda dos dedos** na metacarpofalângica, com o punho ainda estendendo em desvio radial.\n\n**Na prova**: mão da bênção = território do **mediano**; entre as alternativas, o **interósseo anterior**.",
-  "correta": "A mão da bênção vem da paralisia dos flexores do indicador e do médio, território do mediano; o interósseo anterior é o único ramo do mediano entre as opções (veja o alerta).",
-  "alerta": "Mão da bênção clássica é o sinal da lesão alta do nervo mediano (flexores superficial e profundo do indicador e médio paralisados). O interósseo anterior poupa o flexor superficial e tem como sinal próprio o de Kiloh-Nevin. O gabarito escolhe o interósseo anterior por ser a única alternativa do território do mediano.",
+  "alerta": "Os livros lidos não descrevem o sinal da benção pelo nome; o Green descreve a síndrome do interósseo anterior (perda do flexor longo do polegar e do flexor profundo do indicador), que é a base da resposta oficial. O gabarito oficial foi mantido, sem conferência possível do nome.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 7.2"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão, testes especiais), pp. 204-205",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0341": {
@@ -4810,14 +4833,21 @@
   "geradoEm": "2026-10-29"
  },
  "mao-0396": {
+  "conceito": "Quando a pergunta é \"o teste mais preciso\" para a síndrome do túnel do carpo, o jeito de resolver é comparar números, e os livros os dão.\n\nO Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, tabela 82.2, p. 3544), traz a sensibilidade e a especificidade dos provocativos: PHALEN 0,75 e 0,47; TINEL 0,60 e 0,67; DURKAN 0,87 e 0,90. O texto do capítulo (p. 3542) resume que o DURKAN, a compressão direta do mediano por 30 segundos, foi mais específico (90%) e mais sensível (87%) que o TINEL e o PHALEN. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (p. 160), chama o DURKAN de \"teste mais sensível para a síndrome do túnel do carpo\".\n\nA palavra \"inicial\" na pergunta poderia puxar para o monofilamento, porque o limiar sensitivo se altera cedo na compressão crônica (Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922 e 928). Mas, entre as opções, o teste que reúne os melhores valores de sensibilidade e especificidade nos livros é o DURKAN.\n\nA comparação está na seção \"O túnel do carpo: os testes provocativos\" do resumo.",
+  "correta": "**A) de Durkan.** Sensibilidade de 0,87 e especificidade de 0,90 no Campbell, superando o PHALEN e o TINEL.",
   "incorretas": {
-   "B": "O Phalen é útil, mas tem acurácia um pouco menor que a do Durkan.",
-   "C": "O Tinel tem sensibilidade baixa e pode ser negativo na fase inicial.",
-   "D": "O Semmes-Weinstein mede o limiar de sensibilidade; altera cedo, mas não é o teste de melhor acurácia."
+   "B": "**de Phalen** é o mais sensível entre os provocativos clássicos, mas com sensibilidade de 0,75 e especificidade de apenas 0,47, fica atrás do DURKAN nos dois quesitos.",
+   "C": "**de Tinel** tem a maior especificidade entre os dois clássicos e a menor sensibilidade (0,60 e 0,67); fica atrás do DURKAN nos dois quesitos.",
+   "D": "**monofilamenter de Semmes-Weinstein** mede o limiar de pressão, que se altera cedo, e é sensível (0,83 no Campbell), mas os livros não lhe dão especificidade comparável aos 0,90 do DURKAN."
   },
-  "conceito": "Na **síndrome do túnel do carpo**, os **testes provocativos** aumentam a pressão sobre o nervo mediano para reproduzir o formigamento no polegar, indicador, médio e metade do anelar.\n\n**Os testes e o que valem**:\n\n**Durkan** (compressão do carpo): o examinador aperta com o polegar **diretamente sobre o túnel por 30 segundos**. Tem a **maior sensibilidade e especificidade** entre os testes clínicos, por reproduzir exatamente o mecanismo da doença;\n\n**Phalen**: **flexão do punho por 60 segundos**; útil, mas um pouco inferior ao Durkan;\n\n**Tinel**: **percussão** sobre o nervo; é o de **menor sensibilidade** e pode não provocar nada na fase inicial.\n\n**O monofilamento de Semmes-Weinstein** é diferente: **não provoca** sintomas, mas **mede o limiar** de sensibilidade à pressão. É dos primeiros exames a se alterar na compressão, porém não é o de melhor acurácia diagnóstica entre os testes clínicos. A **discriminação de dois pontos** só altera nos casos avançados.\n\n**Outros elementos**: piora noturna, alívio ao sacudir a mão, perda de sensibilidade que **poupa a eminência tenar**. A **eletroneuromiografia** confirma e gradua; o ultrassom mostra o nervo engrossado.\n\n**Na prova**: teste clínico mais preciso no túnel do carpo inicial = **Durkan**.",
-  "correta": "O teste de Durkan, a compressão direta sobre o túnel por 30 segundos, tem a melhor sensibilidade e especificidade entre os testes clínicos.",
-  "geradoEm": "2026-10-03",
+  "alerta": "O Green's Operative Hand Surgery, 7ª ed., diz que os testes de limiar (vibração e monofilamentos) quantificam as alterações precoces, o que poderia fazer a palavra \"inicial\" parecer apontar para o monofilamento; mas o Campbell e o Netter sustentam o DURKAN como o mais sensível e específico. O gabarito oficial foi mantido.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82, pp. 3542-3546",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço e punho, testes especiais), p. 160",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0397": {
@@ -5016,14 +5046,20 @@
   "conferido": false
  },
  "mao-0413": {
+  "conceito": "O retalho antebraquial radial, conhecido como \"retalho chinês\", leva a pele do antebraço pendurada na artéria radial. Retirá-lo significa sacrificar a radial, e a mão passa a depender só da ulnar.\n\nPor isso a pergunta do cirurgião, antes de operar, é se a mão sobrevive só com a ulnar. É o que o teste de **ALLEN** responde: comprimem-se a radial e a ulnar, solta-se uma e observa-se o retorno da cor da mão (Green's Operative Hand Surgery, 7ª ed., cap. 60, p. 2037). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 70, p. 3131), diz que o ALLEN pré-operatório é necessário para avaliar o fluxo da ulnar; se ele for duvidoso, a arteriografia esclarece. O Green (cap. 43, p. 1522) acrescenta que é crítico confirmar, com ALLEN e Doppler, que a ulnar e o arco estão íntegros.\n\nA armadilha clássica é pôr FOUCHER no lugar: o Campbell atribui a ele a técnica geral do retalho, o que não é um teste clínico.\n\nVeja a seção \"O teste de ALLEN e a circulação da mão\" do resumo.",
+  "correta": "**A) Allen.** O teste mostra se a ulnar e o arco suprem a mão sem a radial, condição para colher o retalho radial.",
   "incorretas": {
-   "B": "Littler descreveu o retalho em ilha neurovascular, e não um teste de perfusão.",
-   "C": "Foucher descreveu o retalho kite da 1ª artéria metacarpal dorsal, e não um teste de perfusão.",
-   "D": "O sinal de Benedict, a mão da bênção, é neurológico e não avalia a circulação."
+   "B": "**Littler** lembra a liberação intrínseca distal de LITTLER (Campbell, cap. 79) e o teste de BUNNELL-LITTLER dos intrínsecos; nenhum dos dois tem a ver com a circulação da mão.",
+   "C": "**Foucher** é o nome ligado à técnica do retalho no Campbell, e não a um teste clínico de circulação; é o distrator de quem confunde o autor da técnica com o exame prévio.",
+   "D": "**Benedict** não aparece nos livros lidos como teste de avaliação vascular da mão; a avaliação do suprimento radial e ulnar é feita pelo ALLEN."
   },
-  "conceito": "O **retalho chinês** (retalho antebraquial radial) é um retalho **fasciocutâneo** da face volar do antebraço, nutrido pela **artéria radial**. Pode ser usado em ilha, com fluxo **reverso** para cobrir a mão e o punho, ou como retalho **livre** microcirúrgico.\n\n**O ponto crítico**: para levantar o retalho, a **artéria radial é sacrificada**. Depois disso, a mão fica dependendo só da **artéria ulnar** e dos arcos palmares.\n\n**Por isso o teste de Allen é obrigatório antes**:\n\ncomprimir as artérias radial e ulnar no punho;\n\nabrir e fechar a mão até ela empalidecer;\n\nsoltar **só a ulnar** e ver se a mão fica rosada em **menos de 5 a 7 segundos**.\n\nSe a ulnar sozinha **não reperfunde** a mão a tempo, o retalho está **contraindicado**. Na dúvida, complementa-se com Doppler ou angiotomografia.\n\n**Desvantagens do retalho chinês**: o sacrifício de uma artéria principal e a **área doadora visível** no antebraço, geralmente fechada com enxerto de pele.\n\n**Os outros nomes**: **Littler** descreveu o retalho em ilha neurovascular e a reconstrução do ligamento retinacular oblíquo; **Foucher** descreveu o retalho *kite* (da 1ª artéria metacarpal dorsal) para o polegar; **Benedict** dá nome à **mão da bênção**, um sinal neurológico.\n\n**Na prova**: antes do retalho chinês = **teste de Allen**.",
-  "correta": "O retalho chinês leva a artéria radial, e o teste de Allen confirma que a ulnar sozinha consegue irrigar a mão.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 60, pp. 2036-2038",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 70, p. 3131",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 43, p. 1522",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0414": {
@@ -5097,14 +5133,19 @@
   "conferido": false
  },
  "mao-0419": {
-  "conceito": "### Teste de Bunnell-Littler (Finochietto)\n- Intrínsecos fletem a MF e estendem as IF: cruzam as duas articulações.\n\n| Posição da MF | Flexão passiva da IFP | Interpretação |\n|---|---|---|\n| ==estendida== | ==limitada== | tensão nos intrínsecos |\n| ==fletida== | ==melhora== | ==contratura intrínseca== |\n| estendida e fletida | igualmente limitada | ==contratura capsular (articular)== |\n\n### Testes análogos\n| Teste | Estrutura |\n|---|---|\n| ligamento retinacular oblíquo (Haines-Zancolli) | flexão da IFD limitada com IFP estendida |\n| extrínsecos (extensor) | flexão da IFP limitada com MF fletida |\n\n### Causas de contratura intrínseca\n- Síndrome compartimental da mão, esmagamento, AR, espasticidade, isquemia.\n\n### Ligamento retinacular oblíquo (Landsmeer)\n- Da bainha flexora na falange proximal ao tendão terminal.\n- ==Volar== ao eixo da IFP e ==dorsal== ao da IFD: acopla as duas.\n- Retraído na botoeira crônica; frouxo no pescoço de cisne.\n\n### Haines-Zancolli\n- IFP estendida: flexão passiva da IFD limitada.\n- IFP fletida: IFD flete. = retinacular oblíquo retraído.\n\n> **Na prova:** manobra IFP estendida × IFD fletida = ==ligamento retinacular oblíquo==",
-  "correta": "**Retinacular oblíquo.**\n- Teste de Haines-Zancolli.\n- IFD não flete com IFP estendida e flete com IFP fletida.\n- Mesma lógica do Bunnell-Littler.",
+  "conceito": "A figura mostra uma manobra feita com as duas mãos do examinador sobre um dedo, e a pergunta pede a estrutura cujo tônus ela testa. A resposta se constrói pela anatomia, porque o teste, segundo o gabarito, é o do ligamento retinacular oblíquo.\n\n**A imagem.** Fotografia em preto e branco, com legenda de um livro de exame físico em ortopedia (BARROS FILHO e LECH, 3ª ed.), de duas mãos: uma segura e posiciona um dedo, e a ponta do dedo do paciente é pressionada pela ponta de um dedo da outra mão.\n\nO **ligamento retinacular oblíquo** de LANDSMEER nasce da bainha flexora na face volar da IFP e se insere dorsalmente no tendão terminal; fica tenso com a extensão da IFP e estende a IFD junto (Green's Operative Hand Surgery, 7ª ed., cap. 5, p. 156). Em outras palavras, liga as duas interfalângicas: quando a IFP estende, a IFD segue. A presença do ligamento é discutida (UEBA o achou em 38 de 40 dedos, e diz que responde por até 30% da resistência passiva à flexão da IFD, mais forte com a IFP a 30 graus).\n\nA anatomia está na seção \"O aparelho extensor: ELSON, BOYES e o ligamento retinacular oblíquo\" do resumo.",
+  "correta": "**C) Do ligamento retinacular oblíquo.** O teste da imagem avalia o tônus do ligamento que liga a extensão da IFP à da IFD.",
   "incorretas": {
-   "A": "**Bandas laterais.**\n- Não se testam por essa manobra.",
-   "B": "**Banda central.**\n- Teste de Elson.",
-   "D": "**Retinacular transverso.**\n- Mantém as bandas laterais centradas."
+   "A": "**Da aleta lateral** (banda lateral) não é o alvo da manobra figurada; a retração das bandas laterais aparece no BOYES, que é um teste da botoeira crônica, com a IFP em extensão.",
+   "B": "**Da aleta central** (bandeleta central) é testada pelo ELSON, com a IFP a 90 graus sobre a borda da mesa e extensão contra resistência; a posição e o objetivo são outros.",
+   "D": "**Do ligamento retinacular transverso** não é discutido nos livros lidos como alvo de teste de tônus; o ligamento ligado à resistência passiva da IFD, no Green, é o oblíquo."
   },
-  "geradoEm": "2026-09-24",
+  "alerta": "O teste de tônus do ligamento retinacular oblíquo (HAINES-ZANCOLLI) não é descrito pelo nome nos livros lidos; o Green's Operative Hand Surgery, 7ª ed. (cap. 5, p. 156), descreve a anatomia e a função do ligamento, mas não a manobra. O gabarito oficial foi mantido.",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 5, pp. 155-156",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0420": {
@@ -5826,19 +5867,19 @@
   "geradoEm": "2026-10-10"
  },
  "mao-0466": {
-  "conceito": "**Paroníquia é inflamação das pregas ao redor da unha.** A forma aguda costuma surgir após ruptura da barreira cutânea, com dor, eritema e, às vezes, abscesso. Na forma crônica, a exposição repetida à umidade e a irritantes compromete a cutícula, perpetuando inflamação e favorecendo colonização por microrganismos.\n\n| Forma | Mecanismo frequente | Consequência para o manejo |\n| :--- | :--- | :--- |\n| Aguda | Infecção após trauma local, frequentemente bacteriana | Avaliar coleção e necessidade de drenagem |\n| Crônica | Dermatite inflamatória com perda da barreira e colonização secundária | Corrigir exposição e inflamação; tratamento antimicrobiano depende do contexto |\n\nA associação clássica citada em textos é **bactérias gram-negativas e Candida**, correspondente a B. Isso não significa que Candida seja obrigatoriamente a causa primária de toda paroníquia crônica. Ela pode colonizar uma prega já inflamada; tratar apenas o fungo e manter contato contínuo com água ou irritantes pode deixar o problema inalterado.\n\nA perda da cutícula permite que a prega proximal deixe de vedar o espaço ungueal. Episódios repetidos podem alterar a superfície da unha por comprometimento da matriz, sem que isso represente uma micose invasiva da lâmina.\n\nA prevenção da exposição, proteção apropriada das mãos e controle da inflamação são centrais. Um quadro persistente em um único dedo, com massa, ulceração ou comportamento atípico, merece investigação de outras causas. A questão cobra uma associação microbiológica tradicional; o cuidado clínico precisa reconhecer o componente inflamatório e evitar prescrever antifúngico para qualquer prega avermelhada.",
-  "correta": "Gram-negativos e Candida compõem a associação escolhida pela banca. Candida pode atuar como colonizador ou agente associado num leito já inflamado; a presença do fungo não autoriza explicar toda paroníquia crônica como uma infecção fúngica primária.",
+  "conceito": "Paroníquia crônica não é uma paroníquia aguda que demora a curar. É uma doença de outro tipo, e a flora dela explica a conduta.\n\n**Quem a desenvolve.** Pessoas que passam muito tempo com as mãos na água, como donas de casa, lavadores e cozinheiros. A exposição repetida deixa o eponíquio (a dobra ungueal) espessado e proeminente, e a barreira da pele fica fragilizada. As culturas do Campbell's Operative Orthopaedics, 15ª ed. (cap. 84, p. 3608) trazem S. pyogenes, S. epidermidis, Candida albicans, bactérias gram-negativas colônicas ou uma mistura delas. O par pedido na lacuna é, portanto, gram-negativas e Candida.\n\n**A consequência para o tratamento.** Como melhora com antifúngico oral (terbinafina, itraconazol) e corticoide ou tacrolimo tópico, o livro a considera sobretudo uma dermatite de exposição colonizada. Evitar o irritante é o primeiro passo; se isso e o tratamento tópico falharem, indica-se a marsupialização eponiquial, descrita por BEDNAR e LANE com a técnica de KEYSER e EATON.\n\n**Contraste com a aguda.** A paroníquia aguda é bacteriana (25% anaeróbios, 25% aeróbios e 50% mistos em três séries) e o panarício herpético, causado pelo herpes simplex, não se opera.\n\nO quadro está na seção \"A mão: paroníquia, mordeduras e gangrena gasosa\" do resumo.",
+  "correta": "**B) gram-negativas … Cândida.** São os agentes que o Campbell lista, ao lado dos estafilococos, na paroníquia crônica do trabalhador com as mãos na água.",
   "incorretas": {
-   "A": "Aspergillus não é o fungo característico apontado nessa associação. Bactérias gram-positivas, especialmente estafilococos, são mais lembradas na paroníquia aguda, embora a flora varie conforme o quadro.",
-   "C": "HPV é um vírus associado a verrugas, inclusive periungueais, e não um fungo responsável pela associação clássica da paroníquia crônica. Uma verruga pode deformar a região ungueal, mas é uma lesão diferente da prega inflamada por perda da barreira e exposição repetida a irritantes. Compartilhar a localização não significa compartilhar a causa.",
-   "D": "Candida é uma associação pertinente, mas a opção troca o grupo bacteriano cobrado por gram-positivos. Isso não torna gram-positivos impossíveis no local; apenas não corresponde ao par clássico apresentado pelo gabarito."
+   "A": "**Gram-positivas … Aspergillus** acerta o fungo errado: o fungo da paroníquia crônica é a Candida albicans, não o Aspergillus.",
+   "C": "**Gram-negativas … HPV** traz um vírus, e a paroníquia crônica é tipicamente bacteriana e fúngica; o vírus de interesse na mão é o herpes simplex do panarício herpético.",
+   "D": "**Gram-positivas … Cândida** acerta o fungo, mas o grupo bacteriano está errado: as gram-positivas lembram a paroníquia aguda estafilocócica, enquanto a crônica traz gram-negativas colônicas."
   },
   "referencias": [
-   "Acute and Chronic Paronychia Revisited: A Narrative Review. https://pubmed.ncbi.nlm.nih.gov/35655642/"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 84, p. 3608",
+   "Resumo OrtoQuestões: Artrite séptica, tuberculose e outras infecções osteoarticulares"
   ],
-  "conferido": false,
-  "alerta": "A prova usa a associação clássica gram-negativos/Candida. A paroníquia crônica é frequentemente uma dermatite por irritantes com colonização secundária, e não uma infecção primária obrigatória.",
-  "geradoEm": "2026-10-10"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "mao-0467": {
   "conceito": "**Degeneração Walleriana ocorre no segmento distal de um axônio separado do corpo celular.** O axônio depende de transporte e manutenção vindos do soma. Quando a continuidade é interrompida, o trecho distal perde esse suporte e se desintegra, junto com a mielina que o envolve.\n\nO processo inclui alteração da membrana axonal, fragmentação do axônio e quebra do citoesqueleto. Células de Schwann e macrófagos participam da remoção dos detritos. No sistema nervoso periférico, as células de Schwann também organizam um ambiente que pode orientar os brotos regenerativos, caso o trajeto e as condições locais sejam favoráveis.\n\n| Fenômeno | Localização e significado |\n| :--- | :--- |\n| Degeneração Walleriana | Distal à interrupção axonal |\n| Alterações retrógradas | Coto proximal e corpo celular; resposta à lesão |\n| Fibrose local | Cicatrização e deposição de matriz, que podem dificultar regeneração |\n| Regeneração axonal | Crescimento a partir do segmento proximal sobrevivente |\n\nA resposta correta pelo mecanismo descrito é **C**, pois reúne localização distal e desintegração axonal. O gabarito fornecido marca **A**, que troca a localização para proximal. A letra oficial foi preservada, mas a afirmação proximal não deve ser aprendida como degeneração Walleriana.\n\nEssa distinção também esclarece a eletroneuromiografia. Logo após a lesão, o segmento distal ainda pode responder ao estímulo por algum tempo. A ausência inicial de sinais completos de denervação não prova continuidade nervosa. Os achados mudam conforme o processo distal avança, a distância até o músculo e a gravidade da lesão.\n\nDeposição de matriz e proliferação de fibroblastos podem ocorrer na resposta reparativa, mas não substituem a definição do processo axonal. Não se deve escolher uma alternativa apenas por ela reunir palavras associadas a lesão de nervo.",
@@ -6814,14 +6855,20 @@
   "conferido": false
  },
  "mao-0539": {
-  "conceito": "### Interósseos\n| Grupo | Número | Posição | Ação | Nervo |\n|---|---|---|---|---|\n| ==dorsais== | ==4, bipenados== (duas cabeças) | espaços intermetacarpais, visíveis no dorso | ==abdução== (DAB) | ulnar profundo |\n| palmares | 3, unipenados | face volar dos metacarpos | adução (PAD) | ulnar profundo |\n\n- Todos flexionam a MF e estendem as IF (com os lumbricais).\n- Eixo de referência: ==dedo médio==.\n\n### 1º interósseo dorsal\n- O maior; relevo da comissura do polegar no dorso.\n- ==Atrofia precoce== na lesão do ulnar (vale no dorso da comissura).\n- Teste: abdução resistida do indicador.\n\n### Vizinhos\n| Músculo | Plano |\n|---|---|\n| adutor do polegar | volar, profundo, em leque do 3º metacarpo |\n| abdutor curto do polegar | tenar, volar |\n| abdutor longo do polegar | tendão no 1º compartimento |\n\n### Teste de Egawa\n- Mão espalmada na mesa: desviar o ==dedo médio== para um lado e para o outro.\n- Só os ==interósseos dorsais== fazem isso (o médio tem dorsais dos dois lados).\n- Positivo antes da atrofia visível.\n\n> **Na prova:** Egawa = ==interósseos dorsais==",
-  "correta": "**Egawa e dorsais.**\n- O médio tem interósseos dorsais dos dois lados.\n- Incapacidade de desviá-lo denuncia perda ulnar.",
+  "conceito": "A fotografia mostra o teste e a pergunta pede dois dados: o nome e o grupo de interósseos avaliado. O segundo dado se deduz do próprio movimento, mesmo que o nome dependa de memória.\n\n**A imagem.** Três dedos (indicador, médio e anular) pousados sobre uma superfície verde, afastados entre si. Duas setas azuis, uma para cada lado do dedo médio, indicam que ele é movido lateralmente, para a esquerda e para a direita, com a mão apoiada na mesa. É a manobra do médio de um lado a outro.\n\nMover um dedo para os lados com a mão espalmada é abdução, e abdução de dedo é função dos **interósseos dorsais**; os palmares aduzem. Como o médio vai nos dois sentidos, trabalham o segundo e o terceiro interósseos dorsais, que é o que o Green's Operative Hand Surgery, 7ª ed. (cap. 31, p. 1046), atribui à manobra de PITRES-TESTUT, útil para perdas leves.\n\nAlerta de nomenclatura: o nome EGAWA da prova não aparece nos livros lidos; eles chamam a mesma manobra de PITRES-TESTUT.\n\nVeja a seção \"Os sinais do ulnar\" do resumo.",
+  "correta": "**A) Egawa e dorsais.** A manobra do médio sobre a mesa avalia os interósseos dorsais (segundo e terceiro), que abduzem o dedo para os dois lados.",
   "incorretas": {
-   "B": "**Palmares aduzem.**\n- O médio não tem interósseo palmar.",
-   "C": "**Duchenne é a garra.**\n- Achado, não manobra.",
-   "D": "**Duplamente errada.**\n- Teste e grupo."
+   "B": "**Egawa e volares** acerta o nome mas erra o grupo: os interósseos volares (palmares) aduzem, e o movimento mostrado na figura é de afastamento lateral do médio.",
+   "C": "**Duchenne e dorsais** acerta o grupo, mas o sinal de DUCHENNE é a garra do anular e do mínimo (MF hiperestendida, IF fletidas), uma postura de repouso e não um movimento lateral do médio.",
+   "D": "**Duchenne e volares** erra os dois dados: o nome é o da garra ulnar, e os músculos que movem o médio na mesa são os dorsais."
   },
-  "geradoEm": "2026-09-24",
+  "alerta": "O sinal de EGAWA não é descrito pelo nome nos livros lidos (Green's Operative Hand Surgery, 7ª ed.; Netter Atlas de Anatomia Ortopédica, 2ª ed.; Campbell's Operative Orthopaedics, 15ª ed.); a manobra equivalente é o PITRES-TESTUT, que testa o segundo e o terceiro interósseos dorsais, o que sustenta \"dorsais\". O gabarito oficial foi mantido.",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, pp. 1046-1047",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73, pp. 3254-3256",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0540": {
@@ -7358,18 +7405,20 @@
   "conferido": false
  },
  "mao-0576": {
+  "conceito": "A pergunta é uma associação de cor e graduação do kit de monofilamentos, e o que os livros dão é a lógica do teste, não a paleta.\n\nNo método de SEMMES-WEINSTEIN, filamentos de náilon de diâmetro crescente, em escala logarítmica, são encostados na pele até dobrarem; o menor que o paciente percebe é o **limiar**. O Green's Operative Hand Surgery, 7ª ed. (cap. 28, p. 928), explica que cada tamanho recebe uma graduação: sensibilidade normal, toque leve diminuído ou **sensibilidade protetora diminuída**. Quanto mais grosso o filamento necessário, pior o limiar. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, p. 3544), dá o valor numérico: normal até 2,83, e acima disso há comprometimento do mediano.\n\nO teste é útil porque o limiar altera cedo na compressão crônica, antes dos dois pontos (Green, pp. 922 e 927). Mas o que a questão cobra, a cor correspondente à perda da sensibilidade protetora, é convenção do kit e não está nos livros lidos.\n\nO método está na seção \"Sensibilidade: o que cada teste mede\" do resumo.",
+  "correta": "**D) amarela.** É a cor dada pela resposta oficial para a perda da sensibilidade protetora; os livros lidos não trazem a cor, apenas a graduação.",
   "incorretas": {
-   "A": "O verde é o filamento mais fino e indica sensibilidade normal.",
-   "B": "O violeta indica sensibilidade protetora diminuída, um degrau antes da perda.",
-   "C": "O branco não faz parte das escalas usuais de Semmes-Weinstein."
+   "A": "**verde** não é a cor indicada pelo gabarito oficial para a perda da sensibilidade protetora; nos livros lidos não há cor associada a nenhuma graduação.",
+   "B": "**violeta** não é a cor do gabarito; nas fontes o que existe é a graduação em três níveis (normal, toque leve diminuído, sensibilidade protetora diminuída), sem paleta.",
+   "C": "**branca** não é a escolhida pela resposta oficial; sem cor nas fontes, a eliminação depende do gabarito e não de um dado do livro."
   },
-  "conceito": "O **teste de Semmes-Weinstein** usa **monofilamentos** de náilon de espessuras diferentes. Cada um dobra ao atingir uma força conhecida. É um teste de **limiar**: descobre o filamento mais fino que a pessoa ainda sente. Por isso altera **cedo** nas compressões nervosas, antes da discriminação de dois pontos, que mede densidade de inervação e só cai quando há perda axonal.\n\n**A escala de cinco filamentos usada na reabilitação da mão**:\n\n**verde (2,83)**: sensibilidade **normal**;\n\n**azul (3,61)**: **tato leve diminuído**;\n\n**violeta (4,31)**: **sensibilidade protetora diminuída**;\n\n**vermelho (4,56 a 6,65)**: **perda da sensibilidade protetora**; a pessoa não sente o suficiente para se proteger de ferimentos e queimaduras.\n\nNo estesiômetro de seis cores usado no Brasil, a sequência é verde, azul, violeta, **vermelho**, laranja e magenta; na mão, a perda da protetora também é o **vermelho**, e o laranja corresponde ao pé.\n\n**A questão**: o gabarito oficial é o **amarelo**, uma cor que não aparece nessas escalas. O conceito cobrado (a fronteira da sensibilidade protetora) está certo, mas a cor que corresponde a ela é o vermelho.\n\n**Na prova**: perda da sensibilidade protetora = filamento **vermelho** nas escalas conhecidas; o gabarito oficial marcou **amarelo**.",
-  "correta": "O gabarito oficial é o amarelo, mas nas escalas de Semmes-Weinstein conhecidas a perda da sensibilidade protetora corresponde ao filamento vermelho.",
-  "alerta": "Nas escalas de monofilamentos de Semmes-Weinstein, a perda da sensibilidade protetora corresponde ao filamento vermelho, não ao amarelo. No kit de cinco cores usado na reabilitação da mão a sequência é verde (normal), azul (tato leve diminuído), violeta (sensibilidade protetora diminuída) e vermelho (perda da sensibilidade protetora). No estesiômetro de seis cores adotado no Brasil a sequência é verde 0,05 g, azul 0,2 g, violeta 2 g, vermelho 4 g, laranja 10 g e magenta 300 g; na mão, a perda da protetora também é o vermelho, e o laranja corresponde ao pé. O amarelo não aparece em nenhuma das duas escalas, por isso o gabarito é difícil de sustentar.",
+  "alerta": "Nenhum dos livros lidos dá a cor de cada monofilamento: o Green's Operative Hand Surgery, 7ª ed., só diz que cada tamanho tem uma graduação (normal, toque leve diminuído, sensibilidade protetora diminuída), e o Campbell's Operative Orthopaedics, 15ª ed., dá o valor normal até 2,83. A resposta oficial (amarela) não pode ser conferida por eles e foi mantida.",
   "referencias": [
-   "Leite, Faloppa, Propedêutica Ortopédica e Traumatológica, 1ª edição, Cap. 9"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82, pp. 3542-3546",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0577": {
@@ -9058,19 +9107,21 @@
   "conferido": false
  },
  "mao-0656": {
+  "conceito": "A pergunta pede duas qualidades ao mesmo tempo, sensibilidade e especificidade, e a armadilha é escolher o teste mais famoso em vez do que tem os dois números mais altos.\n\nA tabela 82.2 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, p. 3544), dá, para os provocativos: PHALEN, sensibilidade 0,75 e especificidade 0,47; TINEL, 0,60 e 0,67; DURKAN, 0,87 e 0,90. O DURKAN lidera nos dois. O texto da p. 3542 confirma: mais específico (90%) e mais sensível (87%) que o TINEL e o PHALEN, e acrescenta o que os alunos decoram, que entre os clássicos o PHALEN é o mais sensível e o TINEL o mais específico, o que quer dizer que cada um ganha em um quesito e perde no outro. O Semmes-Weinstein aparece com sensibilidade de 0,83, sem valor de especificidade nos dados do livro.\n\nEsse tipo de pergunta também usa a frase \"o mais sensível e específico\" como isca para o PHALEN, que não é.\n\nA comparação está na seção \"O túnel do carpo: os testes provocativos\" do resumo.",
+  "correta": "**C) DURKAN.** Sensibilidade de 0,87 e especificidade de 0,90 no Campbell, as maiores entre os testes listados.",
   "incorretas": {
-   "A": "**Tinel é percussão, não compressão sustentada.** Pode ajudar quando positivo, mas um resultado negativo não exclui a síndrome.",
-   "B": "**Phalen provoca sintomas com flexão do punho.** Também tem utilidade clínica e em algumas sínteses alcança sensibilidade semelhante ou superior à de Durkan; por isso há ressalva no alerta.",
-   "D": "**Semmes-Weinstein avalia limiar de sensibilidade.** É útil para documentar déficit sensitivo, mas mede algo diferente das manobras provocativas e não resolve sozinho o diagnóstico."
+   "A": "**TINEL** é o mais específico e o menos sensível dos clássicos; 0,60 e 0,67 deixam o teste atrás do DURKAN em ambos.",
+   "B": "**PHALEN** é o mais sensível entre os clássicos, mas só com 0,75 e com especificidade de 0,47, a menor do grupo; é a alternativa que a banca usa quando quer o falso \"mais sensível e específico\".",
+   "D": "**SEMMES-WEINSTEIN** tem sensibilidade de 0,83 e se destaca por detectar alterações precoces, mas o livro não lhe atribui a especificidade do DURKAN."
   },
-  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. A resposta indicada abaixo é a sustentada pela bibliografia tradicional. Estudos e metanálises posteriores mostram sensibilidade e especificidade variáveis entre Durkan, Phalen, Tinel e monofilamentos; não há um teste isolado universalmente superior em ambas as medidas. Preserve-se C como resposta provável no contexto da questão, sem transformar a comparação em regra clínica absoluta.",
-  "conceito": "**O teste de Durkan comprime diretamente o túnel.** Aplica-se pressão sobre o nervo mediano na face volar do punho, procurando reproduzir parestesia nos dedos do território mediano. Phalen provoca sintomas com flexão sustentada do punho; Tinel procura parestesia à percussão sobre o trajeto do nervo; monofilamentos de Semmes-Weinstein medem limiar sensitivo cutâneo, não são uma manobra provocativa equivalente.\n\n**Desempenho de teste depende do estudo.** O tempo de provocação, a gravidade da neuropatia, o padrão de referência e a população examinada modificam sensibilidade e especificidade. Em materiais tradicionais, a compressão de Durkan costuma ser apresentada como teste provocativo de bom rendimento e é a resposta esperada aqui. Na prática, nenhum resultado isolado confirma ou exclui síndrome do túnel do carpo: história de sintomas noturnos, distribuição sensitiva e exame neurológico devem ser integrados, com estudos complementares quando indicados.",
-  "correta": "**C, Durkan, é a resposta provável no contexto didático da questão.** A compressão direta pode reproduzir sintomas medianos, mas sua superioridade simultânea em sensibilidade e especificidade não é universal.",
-  "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. vol. 4, 11 ªed, p. 4288."
-  ],
+  "alerta": "Questão sem gabarito oficial no banco; a bibliografia da prova indica a alternativa C, que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, p. 3544), sustenta: o DURKAN é o mais sensível (0,87) e específico (0,90). A letra C é a provável.",
   "provavel": "C",
-  "geradoEm": "2026-10-01",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82, pp. 3542-3546",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço e punho, testes especiais), p. 160",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0657": {
@@ -14175,18 +14226,20 @@
   "conferido": false
  },
  "mao-0931": {
-  "conceito": "**O que é a instabilidade semilunopiramidal?** O ligamento semilunopiramidal une o semilunar ao piramidal; sua parte palmar é a mais forte. Normalmente, o piramidal puxa o semilunar em extensão, equilibrando a tendência de flexão que o escafoide impõe. Quando esse ligamento se rompe, junto com estabilizadores secundários como o radiocarpal dorsal e os ligamentos ulnocárpicos, o semilunar acompanha o escafoide em flexão, gerando a deformidade **VISI** (instabilidade do segmento intercalado em flexão). As lesões podem ser traumáticas, por queda sobre o punho em desvio radial e extensão, ou degenerativas, associadas ao impacto ulnocárpico.\n\n**Quadro clínico.** Dor no lado ulnar do punho, ressalto ou estalido ao desviar o punho, fraqueza na preensão e sensibilidade sobre o intervalo semilunopiramidal.\n\n**Testes do lado ulnar e do carpo.**\n\n| Teste | Como é feito e o que avalia |\n|---|---|\n| Reagan (ballottement) | Estabiliza-se o semilunar entre polegar e indicador e desloca-se o piramidal em direção dorsal e palmar; dor ou mobilidade aumentada indica instabilidade semilunopiramidal |\n| Kleinman (shear) | Pressão do pisiforme para dorsal contra o semilunar estabilizado; também cisalha o intervalo semilunopiramidal |\n| Watson (scaphoid shift) | Pressão no tubérculo do escafoide enquanto o punho vai de desvio ulnar para radial; avalia o escafossemilunar |\n| Lichtman (midcarpal shift) | Pressão palmar com carga axial e desvio ulnar; avalia instabilidade mediocárpica |\n| Bunnell-Finochietto | Avalia retração dos intrínsecos, não o carpo |\n\n**Imagem e tratamento.** Na radiografia, a linha de Gilula pode estar interrompida entre semilunar e piramidal, e a VISI aparece com o semilunar fletido. A artroscopia é o padrão para graduar a lesão. Lesões parciais são tratadas com imobilização e desbridamento; lesões completas com reparo ou reconstrução ligamentar, ou artrodese semilunopiramidal, e o encurtamento da ulna ajuda quando há variância positiva.\n\n> Reagan: ballottement do piramidal contra o semilunar estabilizado, para a instabilidade semilunopiramidal. Watson é para o escafossemilunar.",
-  "correta": "**B: teste de Reagan.** Descrito por Reagan, Linscheid e Dobyns em 1984, também chamado de teste de ballottement semilunopiramidal. O examinador estabiliza o semilunar com uma mão e, com a outra, desloca o piramidal e o pisiforme dorsal e palmarmente, produzindo um cisalhamento entre os dois ossos. Dor, crepitação ou mobilidade aumentada em relação ao lado oposto indicam lesão do ligamento semilunopiramidal. O teste de Kleinman é uma variante que aplica o mesmo princípio.",
+  "conceito": "O semilunar e o piramidal formam a articulação que fecha o lado ulnar da fileira proximal, e a dissociação entre eles dá o padrão VISI. O teste da pergunta provoca, por cisalhamento, justamente esse par.\n\nO Green's Operative Hand Surgery, 7ª ed. (cap. 13, p. 451), chama de **achado patognomônico** o **balotamento de REAGAN**: o examinador estabiliza firmemente o semilunar entre o polegar e o indicador de uma mão e, com a outra, desloca o piramidal e o pisiforme para dorsal e para palmar. Dor, crepitação e deslocamento anormal são o positivo. O shear test de KLEINMAN é a variante com uma mão (carga dorsal no pisiforme). O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 5), liga o REAGAN ao VISI, por ruptura semilunopiramidal, e o WATSON ao DISI, por ruptura escafossemilunar. O Green avisa que o teste tem sensibilidade razoável e especificidade pobre.\n\nA prova escreve \"Reagan\"; os livros usam REAGAN e REGAN, e o nome é o mesmo.\n\nOs testes de instabilidade estão na seção \"Instabilidades do carpo: WATSON, REAGAN e o sinal de TERRY THOMAS\" do resumo.",
+  "correta": "**B) Teste Reagan.** É o balotamento do semilunar contra o piramidal e o pisiforme, patognomônico da lesão semilunopiramidal.",
   "incorretas": {
-   "A": "**O pivot-shift é um teste do joelho e, no membro superior, do cotovelo.** No joelho avalia a insuficiência do cruzado anterior. No cotovelo, o teste de pivot-shift lateral de O'Driscoll avalia a instabilidade rotatória posterolateral, por lesão do ligamento colateral ulnar lateral. No punho, existe um teste parecido para a mediocárpica, o de Lichtman, mas não é o que avalia o semilunopiramidal.",
-   "C": "**O teste de Bunnell-Finochietto avalia a retração dos músculos intrínsecos.** Com a metacarpofalângica estendida, os intrínsecos ficam tensos e a flexão passiva da interfalângica proximal diminui; com a MF fletida, a flexão melhora. Essa diferença indica intrínsecos encurtados, como na artrite reumatoide ou após trauma. Não tem relação com o carpo.",
-   "D": "**O teste de Watson avalia o escafossemilunar, não o semilunopiramidal.** O examinador pressiona o tubérculo do escafoide enquanto move o punho de desvio ulnar para radial; se o ligamento escafossemilunar estiver lesado, o polo proximal do escafoide sobe e bate na borda dorsal do rádio, causando dor e às vezes um estalo. É do lado radial do carpo."
+   "A": "**Pivot-shift** é um teste do joelho (ligamento cruzado anterior); não aparece entre os testes do carpo.",
+   "C": "**Teste Bunnel-Finochietto** lembra o BUNNELL, que mede a tensão dos intrínsecos pela flexão da IFP com a MF estendida; nada tem de cisalhamento entre ossos do carpo.",
+   "D": "**Teste Watson** examina o outro par: a instabilidade do escafoide, pela pressão no polo distal enquanto se leva o punho do desvio ulnar ao radial, com \"clunk\" ao soltar; é o teste da dissociação escafossemilunar."
   },
   "referencias": [
-   "Reagan DS, Linscheid RL, Dobyns JH. Lunotriquetral sprains. J Hand Surg Am. 1984;9(4):502-514.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de instabilidade do carpo."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 13, pp. 436 e 451",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço e punho, testes especiais), p. 160",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 74, pp. 3316, 3343 e 3346",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0932": {
@@ -14302,19 +14355,19 @@
   "conferido": false
  },
  "mao-0939": {
-  "conceito": "**Por que o nervo ulnar tem tantos sinais com epônimos?** O ulnar inerva a maior parte da musculatura intrínseca da mão. Sua lesão afeta a pinça, a coordenação dos dedos e o equilíbrio entre flexores e extensores. Cada sinal descreve uma consequência específica, e reconhecê-los ajuda a localizar o nível da lesão e a avaliar a gravidade.\n\n**Os sinais do ulnar.**\n\n| Sinal | O que se observa | Mecanismo |\n|---|---|---|\n| Wartenberg | Dedo mínimo abduzido, sem conseguir aduzi-lo contra o anular | Paralisia do terceiro interósseo palmar; o extensor do mínimo, que se insere do lado ulnar, puxa o dedo em abdução |\n| Froment | Flexão da interfalângica do polegar ao segurar um papel entre polegar e indicador | Paralisia do adutor do polegar, compensada pelo flexor longo do polegar (mediano) |\n| Jeanne | Hiperextensão da metacarpofalângica do polegar na pinça | Mesma causa, com instabilidade da MF |\n| Pollock | Incapacidade de fletir a interfalângica distal do anular e do mínimo | Paralisia do flexor profundo desses dedos, em lesões altas do ulnar |\n| Masse | Achatamento da borda ulnar e do arco metacarpal da palma | Paralisia dos hipotenares |\n| Duchenne (garra) | Hiperextensão da MF e flexão das interfalângicas do anular e do mínimo | Perda dos lumbricais e interósseos ulnares |\n\n**O paradoxo ulnar.** A garra é mais acentuada em lesões baixas, no punho, do que em lesões altas, no cotovelo. Na lesão alta, o flexor profundo dos dedos ulnares também está paralisado, e sem ele as interfalângicas não fletem tanto. Assim, uma garra que piora durante a recuperação de uma lesão alta pode ser sinal de reinervação do flexor profundo.\n\n**O sinal de Wartenberg em detalhe.** Os interósseos palmares aduzem os dedos em direção ao médio. O terceiro interósseo palmar é o adutor do mínimo. O extensor do dedo mínimo e o extensor comum se inserem com uma tendência ulnar, e o abdutor do mínimo, também ulnar, pode estar parcialmente preservado em lesões parciais. Sem o adutor, o mínimo fica afastado, e o paciente reclama que o dedo se prende ao colocar a mão no bolso.\n\n> Mínimo abduzido que não encosta no anular: Wartenberg. Polegar que flete na pinça: Froment.",
-  "correta": "**D: sinal de Wartenberg.** É a incapacidade de aduzir o dedo mínimo estendido em direção ao anular, que fica permanentemente afastado. Resulta da paralisia do terceiro interósseo palmar, o adutor do mínimo, somada à tração ulnar do extensor do dedo mínimo, que não encontra oposição. É um dos sinais mais precoces da neuropatia ulnar e pode aparecer antes da garra. Na transferência tendínea, pode-se corrigi-lo redirecionando parte do extensor do mínimo para o lado radial.",
+  "conceito": "Dos sinais epônimos do ulnar, este é o do dedo mínimo que não obedece. A mão espalmada, o paciente tenta juntar o mínimo estendido ao anular e não consegue: o dedo fica abduzido, afastado.\n\nO mecanismo é de equilíbrio entre forças. O **terceiro interósseo palmar** aduz o mínimo; o **extensor do dedo mínimo** o abduz. Se o interósseo (ulnar) falha, nada se opõe ao extensor e o dedo se afasta. O Green's Operative Hand Surgery, 7ª ed. (cap. 31, pp. 1046-1047), descreve o sinal de WARTENBERG como a incapacidade de aduzir o mínimo estendido contra o anular.\n\nDois cuidados. Primeiro, o nome é o mesmo da síndrome de WARTENBERG, a neurite do ramo sensitivo do radial (Green, cap. 28, p. 948), que nada tem a ver com o ulnar: aqui é o sinal motor. Segundo, a garra do anular e do mínimo tem outro nome (DUCHENNE) e outro mecanismo (MF em hiperextensão e IF fletidas).\n\nO sinal faz parte do conjunto da seção \"Os sinais do ulnar\" do resumo.",
+  "correta": "**D) sinal de Watenberg.** É a incapacidade de aduzir o mínimo estendido contra o anular, por falha do terceiro interósseo palmar (grafado \"Watenberg\" na prova; o nome correto é WARTENBERG).",
   "incorretas": {
-   "A": "**O sinal de Pollock é a fraqueza da flexão da interfalângica distal do anular e do mínimo.** Ocorre em lesões altas do ulnar, acima da inervação do flexor profundo desses dedos, no antebraço proximal. Ajuda a diferenciar lesão no cotovelo de lesão no punho. Não envolve adução do mínimo.",
-   "B": "**O sinal de Masse é o achatamento do arco metacarpal da palma.** A paralisia dos músculos hipotenares, em especial do oponente do mínimo, faz o quinto metacarpo perder a flexão e a rotação que formam a concavidade da palma. O resultado é uma mão mais plana do lado ulnar, com dificuldade para envolver objetos. Não descreve a adução do mínimo.",
-   "C": "**“Sinal de Bunnell” costuma se referir ao teste de retração dos intrínsecos, não à neuropatia ulnar.** No teste de Bunnell-Finochietto, a flexão passiva da interfalângica proximal é menor com a metacarpofalângica estendida do que com ela fletida, indicando intrínsecos encurtados. É útil na artrite reumatoide e após traumas, mas não descreve a perda de adução do mínimo."
+   "A": "**sinal de Pollock** não consta nos livros lidos para este resumo; os sinais do ulnar descritos no Green são FROMENT, DUCHENNE, WARTENBERG, JEANNE e PITRES-TESTUT.",
+   "B": "**sinal de Masse** não é descrito nas fontes do tema como sinal do dedo mínimo; o nome que os livros dão à incapacidade de aduzir o mínimo é outro.",
+   "C": "**sinal de Bunnel** remete ao teste de BUNNELL, que avalia a tensão dos intrínsecos pela flexão passiva da IFP com a MF estendida (Green, cap. 10, p. 339); ele não mede a adução do mínimo."
   },
   "referencias": [
-   "Wartenberg R. A sign of ulnar palsy. JAMA. 1939;112(17):1688.",
-   "Goldman SB, Brininger TL, Schrader JW, Koceja DM. A review of clinical tests and signs for the assessment of ulnar neuropathy. J Hand Ther. 2009;22(3):209-220.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de neuropatia ulnar."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, pp. 1046-1047",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0940": {
@@ -14448,19 +14501,20 @@
   "conferido": false
  },
  "mao-0948": {
-  "conceito": "**O que é a tenossinovite de De Quervain?** É a inflamação e o espessamento da bainha do **primeiro compartimento extensor**, no processo estiloide do rádio, por onde passam o **abdutor longo do polegar** e o **extensor curto do polegar**. O espessamento do retináculo estreita o túnel e os tendões passam a deslizar com atrito. É mais comum em mulheres, sobretudo no pós-parto e em quem carrega bebês no colo, e em atividades com desvio ulnar do punho e uso repetido do polegar.\n\n**Os testes.**\n\n| Teste | Como é feito |\n|---|---|\n| Finkelstein (original) | O examinador segura o polegar do paciente e desvia o punho para o lado ulnar; dor intensa no estiloide radial é positiva |\n| Eichhoff | O paciente fecha o polegar dentro da mão e desvia o punho para ulnar; é o mais usado e muitas vezes chamado erroneamente de Finkelstein; tem mais falsos positivos |\n| Teste de hiperflexão e abdução resistida | Reproduz a dor com movimentos do polegar contra resistência |\n\n**Anatomia que importa no tratamento.** Muitas pessoas têm um **septo** dividindo o primeiro compartimento em dois túneis, um para o extensor curto e outro para o abdutor longo. Além disso, o abdutor longo frequentemente tem várias bandeletas. Na cirurgia, se o septo não for aberto, os sintomas persistem; a falha em liberar o subcompartimento do extensor curto é a principal causa de insucesso. Outro cuidado é o **ramo superficial do nervo radial**, que cruza a região e pode formar um neuroma doloroso se for lesado.\n\n**Tratamento.** Órtese que imobiliza o punho e o polegar, anti-inflamatórios e infiltração de corticoide no compartimento, que resolve a maioria dos casos. Na falha, liberação cirúrgica do retináculo do primeiro compartimento pelo lado dorsal, para evitar subluxação volar dos tendões.\n\n**Diagnósticos diferenciais.** Rizartrose (dor na base do polegar, teste do grind positivo), síndrome da intersecção (dor 4 a 8 cm acima do punho, onde o primeiro compartimento cruza o segundo), neurite do ramo superficial do radial (síndrome de Wartenberg) e fratura do escafoide.\n\n> Finkelstein positivo: tenossinovite de De Quervain, primeiro compartimento extensor (abdutor longo e extensor curto do polegar).",
-  "correta": "**B: tenossinovite do primeiro compartimento extensor.** O teste de Finkelstein estira os tendões do abdutor longo e do extensor curto do polegar ao desviar o punho para o lado ulnar com o polegar seguro, reproduzindo a dor quando há inflamação no primeiro compartimento. É o teste clássico da tenossinovite de De Quervain. Na prática, muitos usam a manobra de Eichhoff (polegar fechado dentro da mão), que é mais sensível, mas gera mais falsos positivos, porque estira os tendões mesmo em pessoas normais.",
+  "conceito": "O teste de FINKELSTEIN tem um alvo anatômico claro: tensionar os dois tendões que passam no primeiro compartimento extensor, o **abdutor longo** e o **extensor curto do polegar**, sobre o estiloide radial.\n\nA técnica ensinada, e descrita pelo Netter Atlas de Anatomia Ortopédica, 2ª ed. (p. 160), é flexionar o polegar em direção à palma e desviar o punho no sentido ulnar; a dor sobre o primeiro compartimento indica a tenossinovite de DE QUERVAIN. No Green's Operative Hand Surgery, 7ª ed. (cap. 56, p. 1916), o FINKELSTEIN é feito segurando o polegar do paciente e abduzindo rapidamente a mão para o lado ulnar, com dor excruciante no estiloide; a versão com o polegar fechado na palma e o punho forçado em desvio ulnar é o EICHHOFF. Os dois estiram os mesmos tendões. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 81, p. 3535), chama o FINKELSTEIN de sinal objetivo mais patognomônico da doença, mas não diagnóstico isolado.\n\nA tenossinovite predomina em mulheres, com pico no pós-parto e na lactação, e a síndrome da intersecção, mais proximal, fica no segundo compartimento.\n\nO teste está na seção \"O punho radial: FINKELSTEIN e a tenossinovite de DE QUERVAIN\" do resumo.",
+  "correta": "**B) tenossinovite do primeiro compartimento extensor.** É a doença de DE QUERVAIN, que o teste reproduz ao estirar o abdutor longo e o extensor curto do polegar.",
   "incorretas": {
-   "A": "**A tenossinovite da polia A1 do polegar é o polegar em gatilho.** Ela envolve o flexor longo do polegar, na face palmar, junto à metacarpofalângica. Causa estalido, travamento e dor na base do polegar ao fletir, e o nódulo é palpável na prega palmar. O Finkelstein não testa essa estrutura.",
-   "C": "**O sexto compartimento contém o extensor ulnar do carpo, do lado ulnar do punho.** Sua tenossinovite causa dor no dorso ulnar, piorada pela extensão e desvio ulnar contra resistência, e pode haver subluxação do tendão em supinação. O teste de sinergia do extensor ulnar do carpo é usado nesse caso. Fica do lado oposto do punho em relação ao De Quervain.",
-   "D": "**O extensor radial curto do carpo fica no segundo compartimento.** A inflamação na região onde o primeiro compartimento cruza o segundo, alguns centímetros acima do punho, é a síndrome da intersecção, com dor, edema e crepitação no dorso do antebraço distal. Pode ser confundida com De Quervain, mas a dor é mais proximal e o Finkelstein não é o teste característico."
+   "A": "**tenossinovite da polia A1 do polegar** é o dedo em gatilho, da face palmar da MF, com estalo no tendão flexor; o FINKELSTEIN age no estiloide radial, no lado dorsal.",
+   "C": "**tenossinovite do sexto compartimento extensor** corresponde ao extensor ulnar do carpo, no lado ulnar do punho; o teste carrega o lado radial.",
+   "D": "**tenossinovite do extensor radial curto do carpo** liga-se ao segundo compartimento, mais proximal, onde fica a síndrome da intersecção; o FINKELSTEIN não é o teste dela."
   },
   "referencias": [
-   "Finkelstein H. Stenosing tendovaginitis at the radial styloid process. J Bone Joint Surg. 1930;12(3):509-540.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de tendinopatias da mão e do punho.",
-   "Ilyas AM, Ast M, Schaffer AA, Thoder J. De Quervain tenosynovitis of the wrist. J Am Acad Orthop Surg. 2007;15(12):757-764."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 56, p. 1916",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço e punho, testes especiais), p. 160",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 81, pp. 3535-3536",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0949": {
@@ -14512,19 +14566,18 @@
   "conferido": false
  },
  "mao-0952": {
-  "conceito": "**O que é a garra ulnar?** É a postura do anular e do mínimo com a **metacarpofalângica (MF) em hiperextensão** e as **interfalângicas em flexão**. Recebe o nome de sinal de Duchenne, que estudou a fisiologia dos músculos da mão no século XIX.\n\n**Por que a garra se forma?** O equilíbrio dos dedos depende dos músculos intrínsecos. Os lumbricais e interósseos passam volarmente ao eixo da MF, fletindo-a, e dorsalmente ao eixo das interfalângicas, estendendo-as. Na lesão do ulnar, os interósseos e o terceiro e quarto lumbricais ficam paralisados. Sem eles:\n- O extensor comum dos dedos atua sozinho sobre a MF e a hiperestende.\n- Com a MF hiperestendida, o extensor perde força sobre as interfalângicas, e os flexores extrínsecos, sem oposição, fletem as interfalângicas.\n\nO indicador e o médio geralmente não fazem garra porque seus lumbricais são inervados pelo mediano.\n\n**O paradoxo ulnar.** A garra é mais intensa nas lesões baixas, no punho, do que nas altas, no cotovelo. Na lesão alta, o flexor profundo do anular e do mínimo também está paralisado, e as interfalângicas fletem menos. Assim, durante a recuperação de uma lesão alta, a garra pode piorar quando o flexor profundo se reinerva antes dos intrínsecos.\n\n**Teste de Bouvier.** Com a MF passivamente fletida, se o paciente consegue estender as interfalângicas usando o extensor comum, a garra é simples (o aparelho extensor está íntegro); isso orienta a escolha de procedimentos que apenas impedem a hiperextensão da MF, como capsulodese ou tenodese, em vez de transferências dinâmicas.\n\n**Os sinais da lesão do ulnar.**\n\n| Sinal | Achado |\n|---|---|\n| Duchenne | Garra do anular e do mínimo |\n| Wartenberg | Mínimo abduzido, sem adução |\n| Froment | Flexão da interfalângica do polegar na pinça |\n| Masse | Achatamento do arco metacarpal (hipotenares) |\n| Pollock | Fraqueza do flexor profundo do anular e do mínimo |\n\n> Garra do anular e do mínimo: sinal de Duchenne, por perda dos intrínsecos ulnares.",
-  "correta": "**C: sinal de Duchenne.** É a garra do anular e do mínimo na lesão do nervo ulnar: metacarpofalângicas hiperestendidas e interfalângicas fletidas, porque os intrínsecos ulnares paralisados deixam de fletir a MF e de estender as interfalângicas. O indicador e o médio são poupados porque seus lumbricais recebem o mediano. A garra é mais marcada nas lesões baixas, o chamado paradoxo ulnar, e seu tratamento passa por bloquear a hiperextensão da MF, com capsulodese, tenodese ou transferências tendíneas.",
+  "conceito": "Aqui o enunciado descreve a imagem clínica e pede o nome: o quarto e o quinto dedos em garra nas lesões do ulnar. Garra, em mão, quer dizer MF em hiperextensão e IF em flexão, e no ulnar ela se concentra no anular e no mínimo.\n\nA explicação mecânica é a falta dos **interósseos** e dos **lumbricais 3 e 4**, músculos que fletem a MF e estendem as IF. Sem eles, o extensor comum gasta sua excursão hiperestendendo a MF e os flexores extrínsecos fecham as IF. O Green's Operative Hand Surgery, 7ª ed. (cap. 31, pp. 1046-1047), nomeia o achado de sinal de DUCHENNE e anota que a garra é mais evidente no uso. Na hanseníase, o mesmo cap. 31 conta garra dos quatro dedos em 63%.\n\nVale separar o sinal da manobra: a garra é DUCHENNE; a manobra que mostra se o extensor está íntegro, bloqueando a hiperextensão da MF, é a BOUVIER.\n\nO sinal está na seção \"Os sinais do ulnar\" do resumo, e a manobra, na seção \"A garra: BOUVIER, o canal de GUYON e a classificação de MCGOWAN\".",
+  "correta": "**C) sinal de Duchenne.** É o nome da garra do anular e do mínimo (MF hiperestendida e IF fletidas) por paralisia dos interósseos e dos lumbricais ulnares.",
   "incorretas": {
-   "A": "**O sinal de Bunnell se refere à retração dos intrínsecos, a situação contrária.** No teste de Bunnell-Finochietto, a flexão passiva da interfalângica proximal é menor com a MF estendida, mostrando intrínsecos encurtados. Isso ocorre na artrite reumatoide, após traumas e em contraturas isquêmicas da mão. Na lesão do ulnar, os intrínsecos estão paralisados, não retraídos.",
-   "B": "**O sinal de Masse é o achatamento do arco metacarpal pela paralisia dos hipotenares.** A borda ulnar da palma fica plana porque o oponente do mínimo deixa de fletir e rodar o quinto metacarpo. É um sinal do ulnar, mas não descreve a garra.",
-   "D": "**O sinal de Wartenberg é a abdução persistente do mínimo.** O terceiro interósseo palmar, que aduz o mínimo, fica paralisado, e o extensor do mínimo o puxa para o lado ulnar. Também é um sinal precoce de lesão do ulnar, mas não corresponde à garra."
+   "A": "**sinal de Bunnel** é um teste de tensão intrínseca (a IFP flete menos com a MF estendida), ou seja, uma rigidez dos intrínsecos, e não a garra por paralisia deles.",
+   "B": "**sinal de Masse** não é descrito nos livros lidos como nome da garra ulnar; o Green chama essa postura de DUCHENNE.",
+   "D": "**sinal de Wartenberg** é o mínimo abduzido que não aduz contra o anular; comparte a mesma raiz (falta do interósseo), mas é outro achado, de adução e não de postura em garra."
   },
   "referencias": [
-   "Duchenne GB. Physiologie des mouvements. Paris: Baillière; 1867.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulos de neuropatia ulnar e transferências tendíneas para paralisia do ulnar.",
-   "Goldman SB, Brininger TL, Schrader JW, Koceja DM. A review of clinical tests and signs for the assessment of ulnar neuropathy. J Hand Ther. 2009;22(3):209-220."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, pp. 1046-1047",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0953": {
@@ -14639,20 +14692,20 @@
   "conferido": false
  },
  "mao-0960": {
-  "conceito": "**Como o nervo sofre na síndrome do túnel do carpo.** O túnel do carpo é um espaço fixo, limitado pelos ossos do carpo e pelo ligamento transverso do carpo, por onde passam nove tendões flexores e o nervo mediano. O aumento da pressão dentro dele, por espessamento da sinóvia, edema ou posição do punho, reduz o fluxo nos vasos do nervo. Primeiro há isquemia e alterações reversíveis, depois desmielinização e, nos casos graves, perda axonal.\n\n**A posição do punho importa muito.** A pressão no túnel é baixa com o punho em posição neutra e aumenta muito tanto em **flexão** quanto em **extensão**. Por isso os sintomas pioram à noite, quando o punho fica dobrado, e as órteses noturnas mantêm o punho neutro.\n\n**Testes clínicos.**\n\n| Teste | Como é feito | Observação |\n|---|---|---|\n| Durkan (compressão do carpo) | Pressão com os polegares sobre o túnel, com o punho em neutro, por até 30 segundos | Um dos mais sensíveis |\n| Phalen | Flexão máxima do punho por 60 segundos | Aumenta a pressão no túnel |\n| Tinel | Percussão sobre o nervo no punho | Sensibilidade moderada e variável; especificidade relativamente maior |\n| Semmes-Weinstein | Monofilamentos de diferentes espessuras | Teste de limiar; detecta compressão inicial |\n| Discriminação de dois pontos | Teste de densidade de inervação | Altera tardiamente, quando já há perda axonal |\n\n**Testes de limiar versus testes de densidade.** Os **testes de limiar**, como os monofilamentos de Semmes-Weinstein e a vibração, medem a capacidade de cada fibra nervosa responder a um estímulo. Eles se alteram cedo, porque a compressão reduz a função das fibras antes de destruí-las. Os **testes de densidade**, como a discriminação de dois pontos, dependem do número de fibras funcionando e só se alteram quando há perda axonal. Gelberman e colaboradores mostraram que os testes de limiar são mais adequados para detectar a compressão nervosa inicial.\n\n**Eletroneuromiografia.** Confirma e gradua a compressão e ajuda a excluir outras causas, mas pode ser normal em casos leves. O diagnóstico continua sendo principalmente clínico.\n\n> Compressão inicial: testes de limiar, como Semmes-Weinstein. Dois pontos só altera tarde. A pressão no túnel sobe em flexão e em extensão.",
-  "correta": "**B: os testes com monofilamentos de Semmes-Weinstein são acurados no diagnóstico precoce.** Os monofilamentos medem o limiar de percepção da pressão, que se altera cedo na compressão, quando as fibras ainda existem mas funcionam mal. Por isso são úteis para detectar a síndrome em fases iniciais e para acompanhar a evolução. A discriminação de dois pontos, ao contrário, só se altera quando já houve perda de fibras. Essa diferença, demonstrada por Gelberman e colaboradores em 1983, é a base do uso dos testes de limiar nas neuropatias compressivas.",
+  "conceito": "A questão é de assertivas sobre o diagnóstico do túnel do carpo, e cada alternativa erra de um jeito diferente. Vale analisar em bloco.\n\nO que é verdadeiro: o Green's Operative Hand Surgery, 7ª ed. (cap. 28, pp. 922 e 928), explica que a compressão crônica altera cedo o **limiar** de percepção e só tarde a densidade de inervação; por isso os monofilamentos de SEMMES-WEINSTEIN, que medem o limiar, quantificam as alterações precoces. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, p. 3544), dá sensibilidade de 0,83 para valores acima de 2,83.\n\nO que é falso: o DURKAN é compressão direta do nervo por 30 segundos, sem flexão do punho (a flexão é o PHALEN); o TINEL é o **mais específico e o menos sensível** (0,67 e 0,60), o contrário do que a assertiva diz; e a pressão dentro do túnel **sobe** na extensão do punho e na flexão, e é mínima na posição neutra (Green, p. 932), razão pela qual a órtese noturna é feita em neutro.\n\nA discussão está nas seções \"Sensibilidade: o que cada teste mede\" e \"O túnel do carpo: os testes provocativos\" do resumo.",
+  "correta": "**B) os testes com monofilamentos de Semmes-Weinstein são acurados no diagnóstico precoce.** O limiar de pressão se altera cedo na compressão, e o teste o quantifica.",
   "incorretas": {
-   "A": "**O teste de Durkan é feito com o punho em posição neutra, sem flexão dorsal.** O examinador pressiona diretamente o túnel do carpo com os polegares por até 30 segundos, e o teste é positivo se surgirem dormência ou formigamento no território do mediano. A ideia é aumentar a pressão sobre o nervo sem depender da posição do punho, o que o diferencia do Phalen.",
-   "C": "**A afirmação inverte o perfil do teste de Tinel.** Nos estudos, o Tinel tem sensibilidade moderada e muito variável, com especificidade relativamente maior. Ou seja, quando positivo, ajuda a confirmar, mas um Tinel negativo não exclui a síndrome. Muitos pacientes com túnel do carpo confirmado não têm Tinel positivo.",
-   "D": "**A pressão no canal do carpo aumenta muito na extensão do punho.** Gelberman mediu as pressões e mostrou que, em pacientes com síndrome do túnel do carpo, a pressão já é maior em repouso e sobe muito tanto em flexão quanto em extensão. É por isso que se usa órtese em posição neutra, que minimiza a pressão."
+   "A": "**no teste de Durkan faz compressão do nervo e flexão dorsal do punho** mistura as manobras: o DURKAN é a pressão direta do mediano no túnel, e a flexão do punho pertence ao PHALEN.",
+   "C": "**o teste de percussão de Tinel tem pouca especificidade e mais sensibilidade** inverte os números: no Campbell o TINEL tem 0,60 de sensibilidade e 0,67 de especificidade, sendo o mais específico e o menos sensível dos clássicos.",
+   "D": "**a pressão dentro do canal cárpico pouco altera na extensão do punho** é falsa: a pressão no canal aumenta com a extensão (e com a flexão), e é por isso que existe o PHALEN invertido."
   },
+  "alerta": "O Green descreve a pressão provocativa proximal ao túnel com o punho em flexão, em extensão ou em neutro; a assertiva de que o DURKAN se faz com \"flexão dorsal\" não é como o Campbell o define (compressão direta por 30 s). A alternativa oficial sobre monofilamentos é coerente com o Green, que trata os limiares como testes das alterações precoces. O gabarito oficial foi mantido.",
   "referencias": [
-   "Gelberman RH, Szabo RM, Williamson RV, Dimick MP. Sensibility testing in peripheral-nerve compression syndromes: an experimental study in humans. J Bone Joint Surg Am. 1983;65(5):632-638.",
-   "Gelberman RH, Hergenroeder PT, Hargens AR, Lundborg GN, Akeson WH. The carpal tunnel syndrome: a study of carpal canal pressures. J Bone Joint Surg Am. 1981;63(3):380-383.",
-   "Durkan JA. A new diagnostic test for carpal tunnel syndrome. J Bone Joint Surg Am. 1991;73(4):535-538.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de neuropatias compressivas do mediano."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82, pp. 3542-3546",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0961": {
@@ -14763,18 +14816,20 @@
   "conferido": false
  },
  "mao-0967": {
-  "conceito": "**A irrigação da mão.** A mão recebe sangue de duas artérias: a **radial**, que forma principalmente o arco palmar profundo, e a **ulnar**, que forma principalmente o arco palmar superficial. Os dois arcos se comunicam, e na maioria das pessoas uma artéria sozinha consegue manter toda a mão irrigada. Mas isso não é universal: em parte das pessoas os arcos são incompletos, e a oclusão de uma artéria pode causar isquemia.\n\n**O teste de Allen (1929).**\n1. O paciente fecha a mão com força algumas vezes, para esvaziar o sangue da palma.\n2. O examinador comprime as artérias radial e ulnar no punho.\n3. O paciente abre a mão, que fica pálida.\n4. O examinador libera uma das artérias, por exemplo a ulnar, e observa o tempo para a mão voltar à cor normal.\n5. Repete-se liberando a outra artéria.\n\nSe a cor volta em poucos segundos (habitualmente até 5 a 7), a artéria liberada é pérvia e o arco é capaz de irrigar a mão. Demora ou ausência de retorno indica oclusão ou arco incompleto.\n\n**Quando é usado.**\n- Antes de **puncionar ou canular a artéria radial**, como em gasometria e monitorização arterial.\n- Antes de **retirar a artéria radial** para retalho antebraquial ou enxerto de revascularização miocárdica.\n- Na suspeita de oclusões, como na síndrome do martelo hipotenar (trombose da ulnar), no tromboangeíte obliterante e em lesões traumáticas.\n- **Allen digital:** a mesma lógica aplicada às artérias digitais de um dedo.\n\nO teste é subjetivo, e muitos complementam com Doppler ou oximetria de pulso.\n\n**Não confundir com a manobra de Allen da síndrome do desfiladeiro.** Existe uma manobra provocativa homônima para o desfiladeiro torácico (braço abduzido e em rotação externa, com rotação da cabeça para o lado oposto, observando o pulso). O teste de Allen da mão, de 1929, é o que avalia as artérias radial e ulnar.\n\n> Teste de Allen: compressão das duas artérias e liberação de uma de cada vez, para avaliar a perviedade da radial e da ulnar e a eficácia dos arcos.",
-  "correta": "**C: averiguar a patência da artéria radial e ulnar.** Descrito por Edgar Allen em 1929, o teste avalia se cada uma das artérias do punho está pérvia e se o arco palmar consegue irrigar a mão a partir dela. É feito antes de procedimentos que podem ocluir a artéria radial, como cateterismo, punção ou retirada para retalho ou enxerto, e na investigação de oclusões, como a síndrome do martelo hipotenar. Retorno da cor em poucos segundos indica artéria pérvia e circulação colateral suficiente.",
+  "conceito": "A pergunta é por aplicação, e a resposta se deduz do que o teste faz com as mãos do examinador: ele ocupa as duas artérias do punho e as libera uma de cada vez.\n\nO Green's Operative Hand Surgery, 7ª ed. (cap. 60, p. 2037), descreve: exsanguina-se a mão, comprimem-se a radial e a ulnar e solta-se uma delas. Se a palma continua pálida depois de soltar a ulnar, não há fluxo por ela; se a mão inteira enche rápido ao soltar a radial, a radial é patente e o arco é completo. O próprio Green resume o teste como a descrição de fluxo ou não fluxo por uma artéria específica. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 75, figs. 75.1 e 75.2), mostra a técnica passo a passo, e o Netter Atlas de Anatomia Ortopédica, 2ª ed. (p. 160), interpreta: retorno da cor demorado ou ausente sugere comprometimento da artéria liberada.\n\nO teste responde à **patência** das artérias radial e ulnar. Não mede capilares, nem veias, nem o desfiladeiro. E mostra se o arco é completo, mas não qual deles domina.\n\nVeja a seção \"O teste de ALLEN e a circulação da mão\" do resumo.",
+  "correta": "**C) Averiguar a patência da artéria radial e ulnar.** O ALLEN mostra se cada artéria, sozinha, perfunde a mão pelo arco.",
   "incorretas": {
-   "A": "**O teste de Allen da mão não é usado para diagnosticar a síndrome do desfiladeiro torácico.** Existe uma manobra com o mesmo nome descrita para o desfiladeiro, com o braço abduzido e rotação da cabeça, mas é diferente. Os testes mais usados para o desfiladeiro são os de Roos, Adson, Wright e o costoclavicular. A banca usa o nome para confundir.",
-   "B": "**A perfusão capilar é avaliada pelo tempo de enchimento capilar, não pelo teste de Allen.** No enchimento capilar, pressiona-se a polpa ou o leito ungueal e observa-se o retorno da cor, normalmente em até 2 segundos. É útil para avaliar a perfusão de um dedo, por exemplo após reimplante, mas não diz qual artéria está pérvia.",
-   "D": "**A competência das válvulas venosas é testada por outras manobras, como as de Trendelenburg e Perthes, no membro inferior.** Elas avaliam varizes e insuficiência venosa, e não têm relação com a circulação arterial da mão."
+   "A": "**No diagnóstico da síndrome do desfiladeiro torácico** pede testes de posição do membro e compressão proximal, que não são o ALLEN; o teste é de artérias no punho.",
+   "B": "**Avaliar permeabilidade capilar** descreve o enchimento capilar (menor que 2 segundos no Netter), um dado distal e inespecífico; o ALLEN separa o fluxo de cada artéria.",
+   "D": "**Testar a competência valvar nas veias** é um teste do sistema venoso, e o ALLEN é um teste do sistema arterial."
   },
   "referencias": [
-   "Allen EV. Thromboangiitis obliterans: methods of diagnosis of chronic occlusive arterial lesions distal to the wrist with illustrative cases. Am J Med Sci. 1929;178:237-244.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de doenças vasculares da mão."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 60, pp. 2036-2038",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 75 (figs. 75.1 e 75.2)",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 5 (Antebraço e punho, testes especiais), p. 160",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-0968": {
@@ -15535,19 +15590,20 @@
   "conferido": false
  },
  "mao-1008": {
-  "alerta": "O sinal da bênção (mão de bênção) é descrito classicamente na lesão alta do nervo mediano, acima da saída do interósseo anterior e dos ramos do flexor superficial: ao tentar fechar a mão, o indicador e o médio permanecem estendidos. Na neuropatia isolada do interósseo anterior, o flexor superficial continua funcionando e o achado típico é a perda da pinça em O. Nenhuma alternativa cita a lesão alta do mediano; a banca considerou o interósseo anterior, que inerva parte dos músculos envolvidos. O gabarito foi mantido.",
-  "conceito": "**O que é o sinal da bênção?** Quando o paciente tenta fechar a mão, o polegar, o indicador e parcialmente o médio não fletem, enquanto o anular e o mínimo fletem normalmente. A mão fica na posição em que um sacerdote dá a bênção. O sinal aparece quando os flexores do lado radial dos dedos estão paralisados e os do lado ulnar funcionam.\n\n**Quem inerva os flexores dos dedos.**\n\n| Músculo | Nervo |\n|---|---|\n| Flexor superficial dos dedos (todos) | Mediano, logo abaixo do cotovelo |\n| Flexor profundo do indicador e do médio | Interósseo anterior (mediano) |\n| Flexor profundo do anular e do mínimo | Ulnar |\n| Flexor longo do polegar | Interósseo anterior (mediano) |\n\n**Onde a lesão precisa estar.** Para o indicador e o médio ficarem totalmente estendidos ao fechar a mão, é preciso perder tanto o flexor superficial quanto o flexor profundo desses dedos. Isso acontece numa **lesão alta do mediano**, no cotovelo ou acima, antes da saída dos ramos para o flexor superficial e do interósseo anterior. O anular e o mínimo fletem porque seu flexor profundo é ulnar.\n\n**E no interósseo anterior?** Na lesão isolada do interósseo anterior, o flexor superficial está preservado e flete a interfalângica proximal. O que se perde é a flexão da interfalângica distal do indicador e da interfalângica do polegar. O sinal típico é a **pinça em O** que vira um triângulo, com as pontas estendidas. Uma forma parcial da postura de bênção pode aparecer, mas não é o achado clássico.\n\n**Confusão frequente.** Em alguns textos, a garra ulnar, especialmente quando o paciente tenta estender os dedos, também é chamada de mão de bênção ou mão de pregador, porque o anular e o mínimo ficam fletidos. Por isso, é importante descrever o que se vê: na lesão alta do mediano, ao **fechar** a mão, o indicador e o médio não fletem.\n\n> Sinal da bênção ao fechar a mão: lesão alta do mediano. Interósseo anterior isolado: perda da pinça em O.",
-  "correta": "**B: neuropatia do nervo interósseo anterior.** É a resposta da banca, que associou o sinal à paralisia do flexor profundo do indicador e do médio e do flexor longo do polegar, músculos inervados pelo interósseo anterior. A descrição clássica do sinal, porém, é da lesão alta do mediano, em que também o flexor superficial está paralisado e o indicador e o médio permanecem completamente estendidos ao fechar a mão. Na prova, diante dessas opções, a mais próxima é o interósseo anterior; no consultório, lembre-se de que o achado típico dele é a perda da pinça em O.",
+  "conceito": "Quando a banca fala em sinal de benção (benediction), o raciocínio é por perda de função: qual nervo, se lesado, deixa a mão pedindo para fechar sem conseguir fletir polegar e indicador?\n\nA resposta oficial é o **interósseo anterior**. Esse ramo do mediano supre o flexor longo do polegar, o flexor profundo do indicador (às vezes o do médio) e o pronador quadrado (Green's Operative Hand Surgery, 7ª ed., cap. 28, p. 937). Perdendo-os, a IF do polegar e a IFD do indicador não fletem; a pinça de ponta (o gesto do círculo) vira pinça de polpa, com as falanges distais estendidas. Como o interósseo anterior não tem território cutâneo, a síndrome é só motora, e esse é um dado de memória para eliminar alternativas que prometem dormência.\n\nComparando as opções: o ulnar no cotovelo dá garra e atrofia hipotenar; o interósseo posterior é do radial e estende; e a musculatura curta do polegar (tenar) é afetada na compressão do mediano no túnel, com abdução palmar e oponência perdidas, não a flexão da IF.\n\nA discussão está na seção \"O mediano proximal e o interósseo anterior\" do resumo.",
+  "correta": "**B) neuropatia do nervo interósseo anterior.** A perda do flexor longo do polegar e do profundo do indicador, sem déficit sensitivo, é a síndrome do interósseo anterior.",
   "incorretas": {
-   "A": "**A neuropatia do interósseo posterior causa perda da extensão dos dedos e do polegar, não da flexão.** O paciente não consegue estender os dedos na metacarpofalângica, e o punho estende com desvio radial. É o oposto do sinal da bênção.",
-   "C": "**A neuropatia do ulnar no canal cubital afeta o lado ulnar da mão.** Causa garra do anular e do mínimo, fraqueza do flexor profundo desses dedos em lesões altas e perda dos intrínsecos. Ao fechar a mão, o indicador e o médio fletem normalmente. Em alguns textos, a postura da garra ulnar é chamada de mão de pregador, mas o mecanismo e a postura são diferentes.",
-   "D": "**A paralisia da musculatura curta do polegar afeta a oposição e a pinça, não a flexão dos dedos.** A perda da musculatura tenar, por lesão do mediano no punho, leva à atrofia tenar e ao polegar alinhado com a palma. O indicador e o médio fletem normalmente ao fechar a mão."
+   "A": "**neuropatia do nervo interósseo posterior** compromete os extensores profundos (ramo do radial), e o paciente perde extensão dos dedos e do polegar, não flexão.",
+   "C": "**neuropatia do ulnar no canal cubital** traz hipotrofia hipotenar, garra e FROMENT, com sinais dos interósseos; é o quadro do DUCHENNE e não o da perda dos flexores do polegar e do indicador.",
+   "D": "**paralisia da musculatura curta do polegar** é o que o túnel do carpo faz na fase avançada (abdutor curto e oponente, com atrofia tenar), um defeito de abdução palmar e oponência e não de flexão da IF."
   },
+  "alerta": "Os livros lidos não descrevem o sinal da benção pelo nome; o Green descreve a síndrome do interósseo anterior (FLP e FPD do indicador), que sustenta a resposta oficial. O gabarito oficial foi mantido.",
   "referencias": [
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulos de neuropatias compressivas do mediano e lesões de nervos periféricos.",
-   "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. Lesões do nervo mediano."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão, testes especiais), pp. 204-205",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1009": {
@@ -15582,18 +15638,19 @@
   "conferido": false
  },
  "mao-1011": {
-  "conceito": "**Por que a garra se forma.** Os intrínsecos (interósseos e lumbricais) passam volarmente ao eixo da metacarpofalângica (MF), fletindo-a, e se unem ao aparelho extensor, estendendo as interfalângicas. Quando estão paralisados, como na lesão do ulnar, o extensor comum atua sozinho na MF e a hiperestende. Com a MF hiperestendida, a força do extensor se esgota antes de chegar às interfalângicas, que ficam fletidas pelos flexores. Essa é a garra.\n\n**A manobra de Bouvier.** O examinador bloqueia passivamente a hiperextensão da MF, mantendo-a em leve flexão, e pede ao paciente que estenda os dedos.\n- **Positiva:** com a MF bloqueada, o paciente consegue estender ativamente as interfalângicas. Isso mostra que a garra é causada apenas pela **paralisia dos intrínsecos** e que o aparelho extensor central está íntegro e capaz de estender as interfalângicas quando a MF não hiperestende.\n- **Negativa:** mesmo com a MF bloqueada, as interfalângicas não estendem. Indica que o aparelho extensor está alongado ou há contraturas, e a correção exige procedimentos dinâmicos que estendam ativamente as interfalângicas.\n\n**Consequência no tratamento da garra.**\n\n| Bouvier | Tipo de procedimento |\n|---|---|\n| Positivo (garra simples) | Procedimentos que só impedem a hiperextensão da MF: capsulodese volar (Zancolli), tenodese, polia de tendão |\n| Negativo (garra complexa) | Transferências dinâmicas que agem nas bandas laterais, como a do flexor superficial (Stiles-Bunnell, Zancolli laço) |\n\n**Outros sinais da lesão do ulnar.** Pollock (fraqueza do flexor profundo do anular e do mínimo), Masse (achatamento do arco metacarpal), Wartenberg (mínimo abduzido), Froment (flexão da interfalângica do polegar na pinça) e atrofia do primeiro interósseo dorsal.\n\n> Bouvier positivo: paralisia intrínseca com aparelho extensor íntegro. Basta impedir a hiperextensão da MF.",
-  "correta": "**B: paralisia da musculatura intrínseca da mão.** A manobra de Bouvier é usada na garra: bloqueando a hiperextensão da metacarpofalângica, o paciente consegue estender ativamente as interfalângicas. Isso confirma que a garra resulta apenas da perda dos intrínsecos e que o mecanismo extensor central funciona. A importância prática é escolher a cirurgia: com Bouvier positivo, basta impedir a hiperextensão da MF com capsulodese ou tenodese; com Bouvier negativo, são necessárias transferências dinâmicas.",
+  "conceito": "A manobra de BOUVIER não mede força de um músculo isolado: ela responde se o que sobrou da mão consegue estender os dedos quando a hiperextensão da MF é impedida. Nasce da garra e serve para decidir o que fazer com ela.\n\nNa garra por paralisia intrínseca, o extensor comum gasta toda a excursão hiperestendendo a MF, porque nenhum intrínseco a flete e deixa o tendão agir nas interfalângicas. O examinador bloqueia a MF, assumindo o papel do intrínseco, e pede extensão. Se a pessoa estende IFP e IFD, o aparelho extensor (bandeleta central e bandas laterais) está íntegro e o problema é **só a paralisia dos intrínsecos** (Green's Operative Hand Surgery, 7ª ed., cap. 31, p. 1046; Campbell's Operative Orthopaedics, 15ª ed., cap. 76, p. 3405).\n\nQuem mostra a perda dos intrínsecos, portanto, é a garra; o BOUVIER é o passo seguinte. Positivo significa extensor competente, e os procedimentos sobre a MF (capsulodese de ZANCOLLI, tenodese) podem bastar. Negativo pede transferência dinâmica.\n\nA manobra está na seção \"A garra: BOUVIER, o canal de GUYON e a classificação de MCGOWAN\" do resumo.",
+  "correta": "**B) paralisia da musculatura intrínseca.** A manobra de BOUVIER positiva (as IF estendem com a MF bloqueada) confirma que o quadro é de paralisia intrínseca, com o aparelho extensor preservado.",
   "incorretas": {
-   "A": "**A paralisia dos flexores profundos do anular e do mínimo corresponde ao sinal de Pollock.** Ocorre em lesões altas do ulnar, no cotovelo, e é testada pedindo a flexão da interfalângica distal desses dedos. A manobra de Bouvier não avalia os flexores.",
-   "C": "**A atrofia do primeiro interósseo dorsal é um sinal visual da lesão do ulnar.** Aparece como um afundamento no dorso, entre o polegar e o indicador. É um achado útil, mas não é o que a manobra de Bouvier avalia.",
-   "D": "**O aplainamento do arco palmar com paralisia do oponente do quinto dedo é o sinal de Masse.** Resulta da perda dos hipotenares. Não tem relação com a manobra de Bouvier, que se concentra na extensão das interfalângicas."
+   "A": "**paralisia dos flexores profundos do quarto e quinto dedos** é um problema de flexão das interfalângicas distais; o BOUVIER examina a extensão das IF com a MF bloqueada, e os livros lidos não o ligam aos flexores profundos.",
+   "C": "**atrofia do primeiro interósseo dorsal** é um achado de inspeção do ulnar (o músculo cobra no FROMENT); não é o que a manobra de BOUVIER mede.",
+   "D": "**aplainamento do arco palmar e paralisia do oponente do quinto dedo** descreve outra coisa, que os livros lidos não associam à manobra; o BOUVIER é sobre a competência do extensor depois do bloqueio da MF."
   },
   "referencias": [
-   "Zancolli EA. Claw-hand caused by paralysis of the intrinsic muscles: a simple surgical procedure for its correction. J Bone Joint Surg Am. 1957;39-A(5):1076-1080.",
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de transferências tendíneas para paralisia do ulnar."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, pp. 1046-1047",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 76, pp. 3388 e 3394",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1012": {
@@ -15936,62 +15993,21 @@
   "conferido": false
  },
  "mao-1029": {
-  "conceito": "**O estresse radial com a MCF em flexão investiga a integridade do colateral ulnar próprio.** Esse componente fica tenso em flexão; o colateral acessório e a placa volar contribuem mais para a estabilidade em extensão. Por isso a MCF deve estar em cerca de 30° a 40° de flexão para uma avaliação que não seja mascarada por esses outros estabilizadores.\n\nO teste compara com o polegar oposto e avalia abertura e **ponto final**. Rupturas parciais conservam ponto final firme; nas completas, ele pode estar ausente. O resumo do Rockwood & Green, 10ª edição, capítulo 45, considera significativa uma diferença de 15° e informa que os autores operam diante de ausência de ponto final firme com desvio maior que 20°.\n\nUm teste “positivo” não é qualquer dor à manobra: ela pode existir em lesão leve sem instabilidade. Também não prova sozinho uma Stener, que depende de aponeurose do adutor interposta. O resultado precisa ser interpretado com a comparação contralateral e a gravidade da frouxidão.\n\n**Leia “Exame e graus”**, na seção do LCU do polegar do resumo da Biblioteca, para relacionar posição de teste e indicação de reparo.",
-  "correta": "O estresse radial com a MCF em cerca de **30° de flexão** coloca o colateral próprio sob tensão. A frouxidão excessiva e a ausência de ponto final firme favorecem ruptura completa e sustentam discutir cirurgia. O ângulo do exame é apenas parte da decisão: dor isolada não equivale a indicação operatória. A opção B corresponde à posição apropriada do teste descrito.",
+  "conceito": "A lesão do ligamento colateral ulnar da MF do polegar é a lesão do esquiador, por desvio radial forçado, e a decisão de operar depende de saber se ela é completa. O exame responde, e a posição em que se testa muda o resultado.\n\nO colateral próprio fica tenso em flexão. Em extensão, quem estabiliza o lado ulnar é a **placa volar** (com o colateral acessório). Por isso, um polegar estável em extensão pode ter o colateral próprio roto, e o exame em flexão é muito mais relevante para a lesão completa (Green's Operative Hand Surgery, 7ª ed., cap. 8, p. 302). O Green cita como critérios mais usados 30 graus de abertura do lado ulnar ao estresse radial, em extensão e em 40 graus de flexão, ou 15 graus a mais que o lado oposto, e prefere avaliar a ausência de ponto final. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (p. 205), simplifica: estresse em valgo em extensão e em 30 graus de flexão, e lassidão em 30 graus indica lesão do colateral ulnar.\n\nA completa pode ter a lesão de STENER, em que a aponeurose do adutor se interpõe, e por isso é cirúrgica. Recomenda-se radiografia antes do estresse (Campbell, cap. 72).\n\nO polegar está na seção \"O polegar: o colateral ulnar da metacarpofalângica\" do resumo.",
+  "correta": "**B) Teste de estresse radial com 30 graus de flexão.** A lassidão nessa posição indica lesão do colateral ulnar próprio, o que pode ser completa e exigir cirurgia.",
   "incorretas": {
-   "A": "O exame em extensão pode fornecer informações complementares, mas também recebe estabilização da placa volar e do colateral acessório. Isso pode mascarar uma ruptura do colateral próprio. A questão procura o teste enfatizado para a indicação de reparo desse componente. A flexão a cerca de 30° é a posição que melhor o isola no resumo.",
-   "C": "Um teste em extensão voltado à placa volar avalia uma função e um estabilizador diferentes do colateral ulnar próprio em flexão. Não substitui a investigação da frouxidão ao desvio radial. A decisão de operar uma ruptura completa do LCU depende de sua estabilidade e do ponto final, não apenas da placa volar. A alternativa muda o alvo anatômico.",
-   "D": "A pinça depende da estabilidade do polegar e pode estar dolorosa ou enfraquecida após a lesão. Entretanto, esse achado funcional não isola o colateral próprio nem mede a frouxidão radial da MCF. Outras causas de dor também podem prejudicar a pinça. O estresse específico em flexão fornece a informação ligamentar procurada, interpretada junto ao restante da avaliação."
+   "A": "**Teste de estresse radial com articulação estendida** é o que o Netter usa para o colateral acessório e a placa palmar; em extensão, a placa volar mascara a lesão do colateral próprio.",
+   "C": "**Teste de estresse em extensão para placa volar** testa a estrutura que dá estabilidade em extensão; positivo, fala da placa e do colateral acessório, e não é o teste que indica a lesão completa do colateral próprio.",
+   "D": "**Teste da pinça digital** não é um teste de estabilidade ligamentar da MF do polegar; a pinça avalia função da mão, e o ligamento se examina com estresse em valgo."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Polegar: ligamento colateral ulnar e lesão de Stener."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 8, p. 302",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão, testes especiais), pp. 204-205",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 72, pp. 3207-3208",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-20",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-45-fraturas-mao",
-     "titulo": "Fraturas e luxações da mão",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 45 · Hand Fractures and Dislocations",
-     "secoes": [
-      "Polegar: ligamento colateral ulnar e lesão de Stener"
-     ],
-     "blocos": [
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-27f604bb",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5356f486",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2d8339bd",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-cabffca0",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-4b3ffcdc",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5f78443d",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-1314e55b",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-832a9091",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a7438c8a",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-67834fd7",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b6d734ef",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-b59b411e",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-35d29663",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-88f690c3",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-5df8a43d",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-3148b36a",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2ce476d2",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-38215abf",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-0ed67778",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-2399114a",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-7f24994b",
-      "polegar-ligamento-colateral-ulnar-e-lesao-de-ste-a499beb6"
-     ],
-     "sha256": "3d2c053703fb78d828c8f8ce0e551bc69168e53bcae9466745a43fc57a752231",
-     "trechosSha256": "7af9b97b59278fb535067a53bd73c4c7724216f7ea467acc61ee307ddfce7a8e"
-    }
-   ],
-   "questaoSha256": "09699c4fe5f7b7da9ee87308d1d55aa938587a459876209e38a31517368b7c4c",
-   "comentarioSha256": "335d4e775c0d58722a3c76b8ba9af0cee1c0d9d739c0d5951cf077412aaf473f"
-  }
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "mao-1030": {
   "conceito": "**Na luxação dorsal complexa da MCF do indicador, o bloqueio principal é a placa volar interposta.** A hiperextensão rompe a placa volar em sua região proximal, junto ao colo do metacarpo. Na forma simples, a falange ainda conserva contato com o dorso da cabeça e a redução pode ser obtida sem cirurgia. Na complexa, a cabeça atravessa os tecidos volares e a placa fica entre ela e a falange.\n\nKaplan descreveu um laço de estruturas que apertam o colo: lumbrical de um lado, flexor do outro, ligamento natatório distal e transverso superficial proximal. Essas estruturas participam da deformidade, mas o obstáculo intra-articular característico é a **placa volar**. Um sesamoide visível no espaço articular reforça a suspeita de interposição.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, alerta para evitar tração e hiperextensão na redução, que podem converter um padrão simples em complexo. Quando a redução aberta é necessária, a via dorsal permite abordar a placa com menor exposição dos feixes digitais; a via volar exige atenção a esses feixes e pode incluir liberação da A1.\n\n**Leia “Luxação metacarpofalângica: simples, complexa e o laço de Kaplan”**, no resumo da Biblioteca, para distinguir os componentes do laço da estrutura interposta.",
@@ -19194,19 +19210,22 @@
   "conferido": false
  },
  "mao-1190": {
-  "provavel": "D",
-  "conceito": "**Esta prova (PUC-SP 2023) não tem gabarito oficial confiável no acervo; a resposta indicada é a que a bibliografia sustenta.**\n\n**O teste de Bunnell (Bunnell-Littler, ou teste da tensão intrínseca) avalia se os músculos intrínsecos (interósseos e lumbricais) estão contraturados.**\n\n### O raciocínio\n\nOs intrínsecos passam **volares** ao eixo da MF e **dorsais** ao eixo da IFP (pelas bandas laterais). Por isso:\n- com a **MF em extensão**, os intrínsecos ficam **alongados** (esticados);\n- se estiverem **curtos (contraturados)**, essa tensão puxa as bandas laterais e **impede a flexão passiva da IFP**;\n- ao fletir a MF, os intrínsecos relaxam e a IFP volta a fletir.\n\n**Teste positivo:** **menos flexão passiva da IFP com a MF estendida** do que com a MF fletida.\n\n### Diferencial no mesmo exame\n\n| Achado | Interpretação |\n|---|---|\n| IFP flete menos com a MF em extensão | **Contratura dos intrínsecos** (Bunnell positivo) |\n| IFP flete menos com a MF em flexão | **Contratura dos extrínsecos extensores** (aderência do extensor no dorso da mão) |\n| IFP rígida em qualquer posição da MF | **Contratura articular** (cápsula, placa volar, colaterais) |\n\n### Onde a contratura intrínseca aparece\n\nArtrite reumatoide (contribui para o pescoço de cisne e o desvio ulnar), após síndrome compartimental da mão, trauma por esmagamento, edema prolongado, espasticidade (paralisia cerebral, AVC). Tratamento: alongamento, órteses; cirurgicamente, **liberação intrínseca** (ressecção oblíqua das fibras laterais do capuz, técnica de Littler).",
-  "correta": "**Há menos flexão da IFP quando a MF é mantida em extensão.** É o achado positivo do teste de Bunnell, indicando contratura dos músculos intrínsecos.",
+  "conceito": "O teste de BUNNELL responde a uma pergunta de comprimento muscular: os interósseos e os lumbricais passam volares ao eixo da MF e dorsais ao das IF, de modo que seu comprimento depende das duas articulações ao mesmo tempo.\n\nCom a MF **estendida**, esses músculos ficam estirados sobre a articulação; com a MF **fletida**, relaxam. O Green's Operative Hand Surgery, 7ª ed. (cap. 10, p. 339), descreve o teste como o exame do efeito da posição da MF sobre a flexão da IFP: ele é **positivo quando a IFP flete menos com a MF estendida do que com a MF fletida**, e o achado indica rigidez (tensão) dos intrínsecos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 78, p. 3450), usa o mesmo teste para graduar o intrínseco plus da mão reumatoide, e o Netter Atlas de Anatomia Ortopédica, 2ª ed. (p. 205), resume: MF estendida, IFP fletida passivamente; flexão difícil ou impossível significa intrínsecos rígidos.\n\nA conta é de elástico: esticar o músculo na MF (extensão) tira a folga necessária para fletir a IFP, e relaxá-lo (flexão da MF) devolve a flexão.\n\nO teste está na seção \"Tendões flexores e a tensão intrínseca: o teste de BUNNELL-LITTLER\" do resumo.",
+  "correta": "**D) há menos flexão da IFP quando a MF é mantida em extensão.** É o achado positivo definido no Green: intrínsecos estirados pela MF estendida limitam a flexão da IFP.",
   "incorretas": {
-   "A": "Mais flexão da IFP com a MF em extensão é o oposto do que acontece na contratura intrínseca.",
-   "B": "Menos flexão da IFP com a MF em flexão sugere contratura dos extensores extrínsecos, não dos intrínsecos.",
-   "C": "O teste avalia a flexão passiva da IFP, não a extensão."
+   "A": "**há mais flexão da IFP quando a MF é mantida em extensão** inverte o sentido: com a MF estendida os intrínsecos ficam estirados e a flexão da IFP diminui, e não aumenta.",
+   "B": "**há menos flexão da IFP quando a MF é mantida em flexão** põe o déficit na posição de relaxamento dos intrínsecos; nela, a flexão da IFP melhora, e é essa melhora que confirma que a limitação vem dos intrínsecos.",
+   "C": "**há mais extensão da IFP quando a MF é mantida em extensão** muda o movimento medido: o teste avalia a flexão passiva da IFP, e não a extensão."
   },
+  "alerta": "Questão sem gabarito oficial no banco. O Green's Operative Hand Surgery, 7ª ed. (cap. 10, p. 339), sustenta que o teste de BUNNELL é positivo quando há menos flexão da IFP com a MF em extensão do que com a MF em flexão; a letra D é a provável.",
+  "provavel": "D",
   "referencias": [
-   "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de exame físico da mão.",
-   "Littler JW. The finger extensor mechanism. Surg Clin North Am. 1967;47(2):415-32."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 10, pp. 339-340",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 78, p. 3450",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão, testes especiais), pp. 204-205",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1192": {
@@ -20135,64 +20154,67 @@
   "conferido": false
  },
  "mao-1241": {
-  "conceito": "**Déficit motor na síndrome do túnel do carpo.** O nervo mediano, ao passar pelo túnel do carpo, emite o **ramo motor recorrente (tenar)**, que inerva os músculos tenares laterais (\"LOAF\" com os lumbricais):\n- **Abdutor curto do polegar**: abdução palmar do polegar (afastar o polegar da palma, perpendicular a ela).\n- **Oponente do polegar**: oposição (levar a polpa do polegar às polpas dos outros dedos).\n- **Flexor curto do polegar** (cabeça superficial).\n- **Lumbricais do indicador e do médio** (pelo mediano digital).\n\n**Músculos que NÃO dependem do mediano no túnel.**\n- **Adutor do polegar**: nervo ulnar.\n- **Extensores do polegar** (longo e curto) e abdutor longo: nervo radial (interósseo posterior).\n- **Flexor longo do polegar**: nervo interósseo anterior (ramo do mediano no antebraço, acima do túnel).\n\n**Evolução da síndrome.** Parestesias noturnas, depois diurnas; nas formas graves, perda de sensibilidade, **fraqueza da abdução e da oposição**, quedas de objetos e **atrofia tenar**.\n\n**Teste do abdutor curto.** O paciente eleva o polegar perpendicularmente à palma contra resistência; a fraqueza e a palpação de um ventre muscular hipotrófico confirmam o comprometimento motor.\n\n| Movimento do polegar | Nervo |\n|---|---|\n| Abdução palmar e oposição | Mediano (ramo recorrente) |\n| Adução | Ulnar |\n| Extensão | Radial |\n| Flexão da interfalângica | Interósseo anterior |\n\n> Túnel do carpo avançado: fraqueza da abdução e da oposição do polegar.",
-  "correta": "**C: Abdução e oponência do polegar.** Na síndrome do túnel do carpo avançada, a compressão do ramo motor recorrente do mediano enfraquece o abdutor curto e o oponente do polegar. O paciente perde força para afastar o polegar da palma e para fazer a oposição, o que explica a queda de objetos.",
+  "conceito": "O caso fecha o diagnóstico: pedreiro de 52 anos, parestesias noturnas que viraram diurnas, queda de objetos há seis meses e DURKAN positivo. É síndrome do túnel do carpo avançada, e a pergunta passa para o exame motor.\n\nA evolução descrita segue o Green's Operative Hand Surgery, 7ª ed. (cap. 28, p. 930): parestesias noturnas nos três dedos radiais, quase patognomônicas, e, na fase avançada, fraqueza e atrofia do **abdutor curto do polegar** e do **oponente**. Esses músculos são da musculatura tenar inervada pelo mediano distal ao túnel. O resultado funcional é a perda da **abdução palmar** e da **oponência**, que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 73, p. 3255), manda examinar levando a ponta do polegar à polpa do anular ou do mínimo e palpando o ventre do abdutor curto.\n\nQuem derruba as outras alternativas é a divisão de nervos: extensão do polegar é do radial (extensor longo e curto), adução é do ulnar (adutor do polegar) e a flexão da IF é do flexor longo, do interósseo anterior.\n\nA conduta está na seção \"Do exame à conduta no túnel do carpo\" do resumo.",
+  "correta": "**C) Abdução e oponência do polegar.** Abdutor curto e oponente, músculos tenares do mediano distal, caem na fase avançada do túnel do carpo.",
   "incorretas": {
-   "A": "**Extensão e adução do polegar** dependem dos nervos radial (extensores) e ulnar (adutor do polegar). Não são afetadas na síndrome do túnel do carpo.",
-   "B": "**Flexão e adução do polegar**: a flexão da interfalângica depende do flexor longo do polegar (interósseo anterior, acima do túnel) e a adução, do nervo ulnar. Nenhum dos dois é afetado pela compressão no túnel.",
-   "D": "**Extensão e oponência** mistura um movimento do nervo radial (extensão) com um do mediano (oponência). Apenas a oponência é afetada."
+   "A": "**Extensão e adução do polegar** reúne uma função do radial (extensão) e uma do ulnar (adução); nenhuma depende do mediano no túnel.",
+   "B": "**Flexão e adução do polegar** mistura o flexor longo, que é do ramo interósseo anterior do mediano e fica proximal ao túnel, com o adutor, que é ulnar; o túnel do carpo não os alcança.",
+   "D": "**Extensão e oponência do polegar** acerta a oponência, mas a extensão é função do radial; juntar as duas dá um quadro que não existe no túnel do carpo."
   },
   "referencias": [
-   "Padua L, Coraci D, Erra C, et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. Lancet Neurol. 2016;15(12):1273-1284.",
-   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Neuropatias compressivas."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73, pp. 3254-3256",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1242": {
-  "conceito": "**Atrofia tenar na síndrome do túnel do carpo.** A eminência tenar é formada pelos músculos abdutor curto, oponente e flexor curto do polegar, inervados pelo ramo motor recorrente do nervo mediano. Na compressão crônica e grave do mediano no túnel do carpo, ocorre **denervação** desses músculos, que perdem volume.\n\n**Como reconhecer.**\n- Achatamento ou depressão da eminência tenar, mais visível na região lateral (abdutor curto).\n- Comparação com a mão oposta.\n- Fraqueza da abdução palmar e da oposição do polegar.\n\n**Significado.** A atrofia tenar indica doença **avançada**, com perda axonal. Mesmo após a descompressão cirúrgica, a recuperação da força e do volume muscular é incompleta e lenta, especialmente em pacientes mais velhos. Por isso, é uma indicação de cirurgia sem demora.\n\n**Diagnóstico diferencial da atrofia da mão.**\n\n| Região atrofiada | Causa provável |\n|---|---|\n| Tenar | Túnel do carpo, radiculopatia C8-T1 (atrofia tenar lateral), esclerose lateral amiotrófica |\n| Hipotenar e interósseos | Compressão do nervo ulnar (túnel cubital, canal de Guyon) |\n| Primeiro interósseo dorsal | Nervo ulnar |\n| Global | Lesão do plexo inferior, doença do neurônio motor |\n\n**Na imagem.** As mãos mostram achatamento da eminência tenar à direita em comparação com a esquerda.\n\n> Síndrome do túnel do carpo avançada: hipotrofia da eminência tenar.",
-  "correta": "**B: A hipotrofia da região tenar.** A compressão crônica do nervo mediano no túnel do carpo denerva os músculos tenares (abdutor curto, oponente e flexor curto do polegar), que atrofiam. A imagem mostra o achatamento da eminência tenar, sinal de doença avançada e de indicação cirúrgica.",
+  "conceito": "A figura faz o trabalho de inspeção do caso do pedreiro com parestesias e DURKAN positivo, e a pergunta é o achado que ela mostra: o que o túnel do carpo avançado faz com a forma da mão.\n\n**A imagem.** Duas fotografias de um paciente sentado, com as duas palmas voltadas para cima sobre a mesa. À esquerda, uma visão de conjunto das mãos; à direita, uma aproximação mostrando as palmas abertas, com os polegares afastados. Na base do polegar, onde deveria haver o abaulamento da eminência tenar, a palma parece achatada, com pouco volume muscular.\n\nO abdutor curto e o oponente são os músculos que dão relevo à base do polegar e são inervados pelo mediano distal ao túnel. Na fase avançada da compressão há fraqueza e atrofia deles (Green's Operative Hand Surgery, 7ª ed., cap. 28, p. 930). O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 6, inspeção), dá a regra: atrofia tenar indica compressão do mediano (STC), e atrofia hipotenar, compressão do ulnar.\n\nO quadro está na seção \"Do exame à conduta no túnel do carpo\" do resumo.",
+  "correta": "**B) A hipotrofia da região tenar.** É o achado da compressão avançada do mediano no túnel, por perda do abdutor curto e do oponente.",
   "incorretas": {
-   "A": "**A hipotrofia hipotenar** é característica da compressão do nervo ulnar (túnel cubital ou canal de Guyon), não do mediano. O paciente tem quadro e teste de Durkan compatíveis com túnel do carpo.",
-   "C": "**Hipertrofia hipotenar** não é achado de neuropatia compressiva. Mesmo em trabalhadores braçais, a assimetria esperada na síndrome do túnel do carpo é a perda de volume tenar.",
-   "D": "**Hipertrofia tenar** seria o oposto do esperado. A denervação causa atrofia, não aumento de volume."
+   "A": "**A hipotrofia da região hipotenar** é a marca da compressão do ulnar (canal de GUYON ou túnel cubital), e a figura chama a atenção para a base do polegar, não para o lado ulnar.",
+   "C": "**A hipertrofia da região hipotenar** não é achado de nenhuma compressão nervosa do enunciado; a doença é de perda de volume, e não de ganho.",
+   "D": "**A hipertrofia da região tenar** inverte o sentido do achado: na compressão do mediano o volume tenar diminui, e na imagem a base do polegar parece achatada."
   },
   "referencias": [
-   "Padua L, Coraci D, Erra C, et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. Lancet Neurol. 2016;15(12):1273-1284.",
-   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Neuropatias compressivas."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 6 (Mão, testes especiais), pp. 204-205",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1243": {
-  "alerta": "O epônimo \"sinal de Bunnell\" é usado de forma variável na literatura (também designa o teste de tensão dos intrínsecos de Bunnell-Littler). Nesta questão, a banca o empregou no sentido do sinal do \"O\" (pinça em O entre polegar e indicador), relacionado à síndrome do nervo interósseo anterior. O gabarito oficial (A) foi mantido.",
-  "conceito": "**Sinal do O e a síndrome do nervo interósseo anterior.** O nervo interósseo anterior (NIA) é um ramo **motor** do nervo mediano que nasce logo abaixo do cotovelo e inerva:\n- **Flexor longo do polegar**: flexão da interfalângica do polegar.\n- **Flexor profundo dos dedos do indicador** (e frequentemente do médio): flexão da interfalângica distal.\n- **Pronador quadrado**: pronação com o cotovelo fletido.\n\n**O sinal.** Pede-se ao paciente que faça um \"O\" com a ponta do polegar e do indicador (pinça de ponta). Na lesão do NIA, as interfalângicas do polegar e do indicador **não fletem**: elas ficam em extensão e a pinça fica achatada, com as polpas em contato (formato de \"D\" ou de lágrima, não de \"O\"). Esse achado é conhecido como **sinal do O** (ou sinal de Kiloh-Nevin, e em alguns textos chamado de sinal de Bunnell).\n\n**Síndrome do NIA.** Fraqueza dessas flexões, **sem alteração sensitiva** (o NIA é puramente motor). Causas: compressão por bandas fibrosas, neurite braquial (Parsonage-Turner), trauma (fratura supracondiliana em crianças).\n\n**Interpretação na questão.** Se o paciente faz o \"O\" normalmente (sinal ausente), a função do NIA está preservada, o que afasta a síndrome do nervo interósseo anterior. No paciente, os sintomas sensitivos e o teste de Durkan apontam para compressão no túnel do carpo.\n\n| Síndrome | Sensibilidade | Motor |\n|---|---|---|\n| Túnel do carpo | Alterada (polegar, indicador, médio) | Tenar |\n| Interósseo anterior | Normal | Flexor longo do polegar, flexor profundo do indicador, pronador quadrado |\n\n> Sinal do O normal: afasta a síndrome do nervo interósseo anterior.",
-  "correta": "**A: Não se trata da síndrome do nervo interósseo anterior.** O sinal descrito avalia a pinça de ponta entre polegar e indicador, que depende do flexor longo do polegar e do flexor profundo do indicador, inervados pelo nervo interósseo anterior. Se o sinal está ausente, essa função está preservada, afastando a síndrome do NIA. O quadro do paciente é de síndrome do túnel do carpo.",
+  "conceito": "Esta questão pede uma dedução em dois passos sobre um sinal cujo nome os livros não trazem, e é bom saber o que se consegue sustentar e o que não.\n\nO caso é de um pedreiro com parestesias noturnas que viraram diurnas, fraqueza e DURKAN positivo: túnel do carpo avançado (Green's Operative Hand Surgery, 7ª ed., cap. 28, p. 930). Em seguida, a questão pergunta o que significa um sinal ausente, no contexto do mediano, para o diagnóstico diferencial. O interósseo anterior é um ramo motor puro do mediano, na altura do antebraço, e sua síndrome tira o flexor longo do polegar e o profundo do indicador, sem sintoma sensitivo (Green, p. 937). Como o paciente tem dormência na mão e a mão fraca, a pergunta é se existe um segundo problema proximal. Pelo gabarito oficial, o sinal ausente afasta a síndrome do interósseo anterior.\n\nO raciocínio clínico útil: antes de concluir túnel do carpo, deve-se garantir que o flexor longo do polegar e o profundo do indicador funcionam, porque o mediano pode estar comprimido acima do punho.\n\nVeja a seção \"O mediano proximal e o interósseo anterior\" do resumo.",
+  "correta": "**A) Não se trata da síndrome do nervo interósseo anterior.** É a resposta oficial: a ausência do sinal afasta o comprometimento do ramo motor do mediano no antebraço.",
   "incorretas": {
-   "B": "**A síndrome do nervo interósseo posterior** (ramo do radial) causa fraqueza da extensão dos dedos e do polegar, com a extensão do punho preservada com desvio radial. Não é avaliada pela pinça em O.",
-   "C": "**A síndrome do túnel cubital** (nervo ulnar no cotovelo) é avaliada pelos sinais de Froment, Wartenberg, Tinel no túnel cubital e flexão do cotovelo. A pinça em O não testa o nervo ulnar.",
-   "D": "**A síndrome do canal de Guyon** (nervo ulnar no punho) causa alterações sensitivas no quarto e quinto dedos e fraqueza dos intrínsecos ulnares. Também não é avaliada pela pinça em O."
+   "B": "**Não se trata da síndrome do nervo interósseo posterior** fala de outro nervo: o interósseo posterior é ramo do radial e não faz parte do raciocínio do mediano do caso.",
+   "C": "**Não se trata da síndrome do túnel cubital** refere-se ao ulnar no cotovelo; o caso tem parestesia e fraqueza no território do mediano, e o sinal em pauta é o do ramo do mediano.",
+   "D": "**Não se trata da síndrome do canal de Guyon** põe em jogo o ulnar, no nível do punho (Green, p. 938); o quadro do pedreiro é de mediano e a pergunta sobre o sinal remete ao interósseo anterior."
   },
+  "alerta": "O \"sinal de BUNNEL\" do enunciado não é definido com esse nome nos livros lidos (o teste de BUNNELL descrito no Green avalia a tensão intrínseca). A resposta oficial (não se trata da síndrome do interósseo anterior) foi mantida sem conferência possível.",
   "referencias": [
-   "Kiloh LG, Nevin S. Isolated neuritis of the anterior interosseous nerve. Br Med J. 1952;1(4763):850-851.",
-   "Wolfe SW, Pederson WC, Kozin SH, Cohen MS, eds. Green's Operative Hand Surgery. Elsevier. Neuropatias compressivas."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1244": {
-  "conceito": "**Confirmação diagnóstica da síndrome do túnel do carpo.** O diagnóstico é essencialmente clínico (parestesias no território do mediano, piora noturna, testes de Phalen, Tinel e Durkan), mas exames complementares são úteis, sobretudo antes da cirurgia e em casos atípicos.\n\n**Eletroneuromiografia (ENMG).** É o **exame de referência** para confirmar a síndrome.\n- **Estudo de condução nervosa**: mostra aumento da latência distal motora e sensitiva do mediano e redução da velocidade de condução no segmento do punho, comparando com o nervo ulnar ou radial.\n- **Eletromiografia de agulha**: no abdutor curto do polegar, mostra sinais de denervação (fibrilações, ondas positivas) e de reinervação em casos graves.\n- **Gradua a gravidade** (leve, moderada, grave), o que tem valor prognóstico.\n- **Exclui diagnósticos diferenciais**: radiculopatia C6 e C7, compressão proximal do mediano (pronador), polineuropatia (diabetes), doença do neurônio motor.\n\n**Outros exames.**\n- **Ultrassonografia**: aumento da área de secção transversa do mediano na entrada do túnel (acima de cerca de 10 a 12 mm²); útil e barata, sem desconforto.\n- **Ressonância**: reservada a casos com suspeita de lesão expansiva (cisto, tumor, tenossinovite).\n- **Potenciais evocados**: avaliam vias centrais, não a compressão periférica do mediano.\n\n**Diretriz da AAOS.** Reconhece a eletrodiagnose como exame útil para confirmar o diagnóstico, especialmente antes da cirurgia.\n\n> Para confirmar túnel do carpo: eletroneuromiografia.",
-  "correta": "**C: Eletroneuromiografia dos membros superiores.** É o exame de referência para confirmar a síndrome do túnel do carpo: demonstra o retardo de condução do mediano no punho, gradua a gravidade e afasta diagnósticos diferenciais como radiculopatia cervical e polineuropatia. No paciente com sinais de denervação (fraqueza e atrofia tenar), também documenta a lesão axonal.",
+  "conceito": "A última pergunta do caso do pedreiro é de conduta diagnóstica: com a suspeita clínica firme (parestesias noturnas, DURKAN positivo, atrofia tenar), qual exame confirma?\n\n**A imagem.** É a mesma fotografia do caso: duas palmas voltadas para cima, com a base do polegar de aspecto achatado, compatível com a atrofia tenar da compressão avançada do mediano.\n\nO diagnóstico do túnel do carpo é clínico, e o exame que o confirma e o estadia é o eletrodiagnóstico, isto é, a **eletroneuromiografia** (Green's Operative Hand Surgery, 7ª ed., cap. 28, p. 930). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, p. 3542), define as latências anormais: motora distal acima de 4,5 ms e sensitiva acima de 3,5 ms, com sensibilidade de cerca de 90%, especificidade de 60% e falso-negativos em 10%. A eletromiografia mostra fibrilação quando há compressão motora avançada. O Green faz uma ressalva: o estudo só avalia fibras mielinizadas grossas.\n\nA ressonância magnética não é útil (Campbell, p. 3545); o exame de imagem que aparece nesse livro é a ultrassonografia, com área acima de 10 mm² no pisiforme.\n\nVeja a seção \"Do exame à conduta no túnel do carpo\" do resumo.",
+  "correta": "**C) Eletroneuromiografia dos membros superiores.** É o exame confirmatório e de estadiamento da compressão do mediano.",
   "incorretas": {
-   "A": "**A ressonância do punho** mostra o túnel e o nervo, mas não avalia a função do nervo. É reservada à suspeita de lesões expansivas.",
-   "B": "**O potencial evocado somatossensitivo** avalia as vias sensitivas até o córtex e é usado em doenças da medula e do encéfalo, não para a compressão periférica do mediano.",
-   "D": "**O potencial evocado motor** avalia as vias motoras centrais (por estimulação cortical) e é usado, por exemplo, na monitorização da medula. Não confirma uma neuropatia compressiva periférica. (O texto adicional na alternativa é resquício da diagramação da prova.)"
+   "A": "**Ressonância magnética do punho direito** não é útil na síndrome do túnel do carpo segundo o Campbell; a imagem que ele cita para esse fim é a ultrassonografia.",
+   "B": "**Potencial Evocado Somatossensitivo** não é descrito nos livros lidos como exame de confirmação do túnel do carpo; o teste confirmatório citado é o eletrodiagnóstico (condução nervosa e eletromiografia).",
+   "D": "**Potencial Evocado Motor** não consta nos livros lidos como exame de confirmação; a avaliação motora pelo eletrodiagnóstico é feita pela latência motora distal e pela eletromiografia."
   },
   "referencias": [
-   "Graham B, Peljovich AE, Afra R, et al. The American Academy of Orthopaedic Surgeons evidence-based clinical practice guideline on: management of carpal tunnel syndrome. J Bone Joint Surg Am. 2016;98(20):1750-1754.",
-   "Padua L, Coraci D, Erra C, et al. Carpal tunnel syndrome: clinical features, diagnosis, and management. Lancet Neurol. 2016;15(12):1273-1284."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82, pp. 3542-3546",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1245": {
@@ -20340,16 +20362,17 @@
   "conferido": false
  },
  "mao-1256": {
-  "conceito": "**Testes clínicos na síndrome do túnel do carpo.** A compressão do nervo mediano no túnel do carpo causa parestesias nos três primeiros dedos e metade radial do quarto, piora noturna e, em casos avançados, hipotrofia tenar. Vários testes provocativos ajudam no diagnóstico.\n\n| Teste | Como se faz | Acurácia aproximada |\n|---|---|---|\n| Phalen | Flexão máxima dos punhos por 60 segundos | Sensibilidade e especificidade moderadas (em torno de 70%) |\n| Tinel no carpo | Percussão sobre o mediano no punho | Sensibilidade menor, especificidade moderada |\n| Durkan (compressão do carpo) | Compressão direta sobre o túnel por 30 segundos | Sensibilidade e especificidade mais altas em vários estudos |\n| Diagrama de mão de Katz | Paciente desenha os sintomas | Útil como triagem |\n\n**Valores variam muito entre estudos.** As revisões sistemáticas mostram que nenhum teste isolado é ideal. O teste de compressão de Durkan costuma aparecer com sensibilidade maior que o Phalen. A combinação de história típica, sintomas noturnos e testes positivos aumenta muito a probabilidade.\n\n**Exame complementar.** A eletroneuromiografia confirma o diagnóstico, quantifica a gravidade e afasta outras compressões (radiculopatia C6 e C7, compressão proximal do mediano). A ultrassonografia mostra aumento da área de secção do nervo.\n\n> O Phalen é útil, mas não é o teste mais sensível e específico; o teste de compressão tende a superá-lo.",
-  "correta": "**B: Errado.** O teste de Phalen é um dos mais conhecidos, mas não é o mais sensível e específico para a síndrome do túnel do carpo. Seus valores são moderados, em torno de 70% nas revisões, e o teste de compressão do carpo de Durkan mostra sensibilidade maior em vários estudos. O diagnóstico depende da combinação de quadro clínico e testes, com confirmação pela eletroneuromiografia quando necessário.",
+  "conceito": "A questão é um julgamento de certo ou errado sobre uma frase decorada, e a frase é a favorita das bancas: o PHALEN seria o mais sensível e o mais específico. É falsa, e dá para ver por quê com os números do Campbell.\n\nNo Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, tabela 82.2, p. 3544), o PHALEN (cotovelos na mesa, antebraços verticais, punhos fletidos por até 60 segundos) tem sensibilidade de 0,75 e especificidade de 0,47. A especificidade é a menor entre os provocativos: flexão sustentada do punho provoca parestesia em muita gente que não tem a doença. O TINEL tem 0,60 e 0,67, e o DURKAN, 0,87 e 0,90. O texto do capítulo (p. 3542) fecha: entre os clássicos, o PHALEN é o mais sensível, e o TINEL o mais específico e o menos sensível; o DURKAN supera os dois.\n\nA frase verdadeira, então, seria \"o PHALEN é o mais sensível entre os clássicos\", e não \"o mais sensível e específico\". O Green's Operative Hand Surgery, 7ª ed. (cap. 28, p. 924), lembra que o PHALEN foi descrito em 1966 e usa a flexão do punho como provocação.\n\nA comparação está na seção \"O túnel do carpo: os testes provocativos\" do resumo.",
+  "correta": "**B) Errado.** O PHALEN é o mais sensível entre os clássicos, mas sua especificidade é a menor (0,47); o DURKAN supera o PHALEN nos dois quesitos.",
   "incorretas": {
-   "A": "**Marcar certo é confundir popularidade com acurácia.** O Phalen é o teste mais lembrado e ensinado, mas os estudos de acurácia não o colocam acima dos demais. A eletroneuromiografia, não um teste clínico, é a referência objetiva."
+   "A": "**Certo** aceitaria o PHALEN como o melhor em sensibilidade e especificidade juntas, o que os valores do Campbell desmentem: 0,75 e 0,47 contra 0,87 e 0,90 do DURKAN."
   },
   "referencias": [
-   "Durkan JA. A new diagnostic test for carpal tunnel syndrome. J Bone Joint Surg Am. 1991;73(4):535-538.",
-   "MacDermid JC, Wessel J. Clinical diagnosis of carpal tunnel syndrome: a systematic review. J Hand Ther. 2004;17(2):309-319."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 82, pp. 3542-3546",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1257": {
@@ -22111,17 +22134,18 @@
   "conferido": false
  },
  "mao-1363": {
-  "conceito": "**O scratch collapse test procura uma queda transitória da resistência à rotação externa do ombro após estímulo cutâneo.** Primeiro se compara a resistência de base; depois se estimula a região suspeita e se repete o teste. O colapso momentâneo é o achado descrito, não uma fraqueza fixa que já existia antes.\n\nO teste foi proposto como auxílio na localização de compressões nervosas. Sua interpretação exige padronização, pois força do examinador, atenção do paciente e expectativa podem alterar o resultado. Não é uma prova isolada de lesão neural nem determina cirurgia sozinho.\n\nUma revisão sistemática encontrou grande heterogeneidade de sensibilidade, especificidade e concordância entre examinadores. Isso limita extrapolar resultados de um serviço para qualquer cenário. Testes provocativos devem integrar distribuição de sintomas, exame motor e sensitivo e exames complementares quando indicados.\n\nA questão pergunta qual movimento perde resistência. A resposta é rotação externa. Saber executar o gesto e reconhecer suas limitações é mais útil que assumir que qualquer “colapso” do braço confirme uma compressão.",
-  "correta": "A resistência à rotação externa apresenta queda transitória no teste positivo. Deve ser diferenciada de fraqueza persistente ou esforço inconsistente. A utilidade diagnóstica é complementar e depende de contexto e padronização.",
+  "conceito": "O scratch collapse test mede uma coisa curiosa: a força do ombro, em vez de uma força da mão, como marcador de um nervo comprimido. É um teste de apoio, útil quando os sintomas são difusos e a eletroneuromiografia veio normal.\n\nA técnica, descrita no Green's Operative Hand Surgery, 7ª ed. (cap. 28, p. 927): o paciente com os braços em rotação neutra e os cotovelos a 90 graus resiste ao examinador em **rotação externa isométrica** dos ombros. O examinador então arranha a pele sobre o ponto suspeito de compressão e repete a força. Se a rotação externa falha, o braço desaba em direção ao abdome: é o \"colapso\", e o teste é positivo. O Green atribui ao teste bons valores preditivos positivo e negativo no túnel do carpo e no túnel cubital.\n\nA pegadinha é pensar no movimento da própria mão ou do local do arranhão. O que se testa é um movimento remoto, sempre o mesmo, a rotação externa, justamente por ser um gesto padronizado e simples de comparar antes e depois do estímulo.\n\nO teste está na seção \"Sensibilidade: o que cada teste mede\" do resumo.",
+  "correta": "**C) Rotação externa.** A perda da força da rotação externa isométrica do ombro, depois de arranhar a pele sobre a compressão, é o positivo.",
   "incorretas": {
-   "A": "Abdução é elevação lateral do braço e não o movimento de resistência usado no teste clássico descrito. Uma fraqueza nessa direção exige interpretação própria e pode envolver deltoide, supraespinal ou outras causas.",
-   "B": "Adução aproxima o braço do tronco e não é o gesto central do scratch collapse test. O teste compara a resistência à rotação externa antes e depois do estímulo.",
-   "D": "Rotação interna é a direção oposta à resistência avaliada no gesto clássico. A troca do movimento muda o teste e impede interpretar o resultado como a manobra descrita."
+   "A": "**Abdução** não é o movimento do teste; o Green descreve a resistência em rotação externa com os cotovelos a 90 graus e os braços junto ao corpo.",
+   "B": "**Adução** não entra na técnica; o colapso observado é a rotação externa que cede e leva o braço de encontro ao abdome.",
+   "D": "**Rotação interna** é o movimento oposto ao testado; o braço desaba para dentro, mas o movimento que perde a força é a rotação externa."
   },
   "referencias": [
-   "Updates to the Physiologic Mechanism, Anatomical Sites, and Diagnostic Utility of the Scratch Collapse Test: A Systematic Review. https://pubmed.ncbi.nlm.nih.gov/39036590/"
+   "Green's Operative Hand Surgery, 7ª ed., cap. 28, pp. 922-948",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-10T19:49:06+00:00",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1364": {
@@ -24041,17 +24065,19 @@
   "alerta": "Divergência médica: o gabarito retificado enviado marca D (amputação). O caso descreve dedo perfundido e sensível, com lâmina lacerada e fratura distal; reparo primário do leito ungueal, alternativa B, é a conduta compatível. Não há indicação de amputação demonstrada no enunciado."
  },
  "mao-1485": {
-  "conceito": "**Pitres-Testut avalia função interóssea, incluindo a abdução do anelar.** O terceiro interósseo dorsal insere-se no lado radial da base da falange proximal do anelar e participa de seu afastamento do eixo do terceiro dedo. É o músculo indicado entre as opções.\n\nInterósseos dorsais abduzem e palmares aduzem em direção ao eixo da mão. A numeração dorsal começa pelo músculo entre primeiro e segundo metacarpos; os dois seguintes se relacionam ao médio e ao anelar conforme suas inserções.\n\nO ulnar profundo fornece comando motor predominante desses músculos. Fraqueza pode dificultar posicionamento digital e preensão, mas o sinal precisa ser integrado a outros testes, sensibilidade e contexto. Não diagnostica sozinho o nível da lesão.\n\nAdutor do polegar é avaliado em testes de pinça, como Froment, que observam compensação pelo flexor longo. Confundir todos os testes ulnares com adutor ignora que o mesmo nervo controla músculos e tarefas diferentes.",
-  "correta": "O terceiro dorsal participa da abdução do anelar e é a resposta pedida. Seu teste contribui para avaliar função ulnar intrínseca. O resultado deve ser integrado ao restante do exame, sem localizar uma neuropatia por um sinal isolado.",
+  "conceito": "O PITRES-TESTUT é o teste mais fino para a perda leve dos interósseos dorsais, e a questão quer saber quais deles ele examina.\n\nO paciente apoia a mão espalmada na mesa, com os dedos abduzidos, e tenta mover o **dedo médio de um lado para o outro**. O médio é o único dedo que tem um interósseo dorsal de cada lado: o **segundo interósseo dorsal** o leva para o lado radial, e o **terceiro**, para o lado ulnar. Por isso o movimento lateral do médio testa o segundo e o terceiro interósseos dorsais (Green's Operative Hand Surgery, 7ª ed., cap. 31, p. 1046). Feito com rapidez, revela perdas sutis. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 73, p. 3255), usa a manobra e avisa que os flexores e extensores longos podem confundir a leitura.\n\nO interósseo palmar não entra aqui: aduz. O primeiro interósseo dorsal e o adutor do polegar são cobrados no FROMENT. Cruzar os dedos, outra manobra de memória, examina o primeiro palmar e o segundo dorsal.\n\nOs sinais estão reunidos na seção \"Os sinais do ulnar\" do resumo.",
+  "correta": "**D) terceiro interósseo dorsal.** Com o segundo, ele move o médio lateralmente na mesa, que é o que o PITRES-TESTUT examina.",
   "incorretas": {
-   "A": "Adutor do polegar tem papel na pinça e no teste de Froment. Não é o músculo apontado no sinal de Pitres-Testut nesta questão. Compartilhar inervação ulnar não torna os testes equivalentes.",
-   "B": "Interósseos palmares produzem adução. A função solicitada relaciona-se ao afastamento do anelar, portanto exige um dorsal. Origem, inserção e direção do movimento ajudam a diferenciar.",
-   "C": "O primeiro dorsal atua principalmente no indicador e é facilmente palpável na primeira comissura. Não é o terceiro dorsal do anelar. A numeração deve ser ligada ao dedo e à inserção, não apenas à palavra “dorsal”."
+   "A": "**adutor do polegar** pertence ao FROMENT, que usa a pinça do papel; não participa do movimento lateral do médio.",
+   "B": "**primeiro interósseo palmar** aduz o indicador e é cobrado, junto com o segundo dorsal, ao cruzar os dedos; no PITRES-TESTUT os músculos são os dorsais do médio.",
+   "C": "**primeiro interósseo dorsal** abduz o indicador e entra no FROMENT (com o adutor); o médio, no PITRES-TESTUT, depende do segundo e do terceiro dorsais."
   },
   "referencias": [
-   "Netter, Atlas de Anatomia Ortopédica, 2ª edição, capítulo Mão: Músculos e Tendões."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 31, pp. 1046-1047",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 73, pp. 3254-3256",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "geradoEm": "2026-10-10T20:28:53+00:00",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "mao-1486": {
