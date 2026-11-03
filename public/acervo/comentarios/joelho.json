@@ -133,15 +133,20 @@
   "conferido": false
  },
  "joelho-0012": {
+  "conceito": "O menisco é o amortecedor que espalha a carga do fêmur sobre o platô. Tirar o menisco inteiro é tirar o espalhador, e a questão pede o tamanho do estrago em cada lado do joelho.\n\n**Os números do livro** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1997). Na meniscectomia medial, a área de contato cai de 50 a 70% e o estresse de contato sobe cerca de **100%**. Na lateral, a área cai de 40 a 50%, mas o estresse sobe **200 a 300%**. O mesmo princípio, a mesma carga dividida por menos área, rende dobro no medial e o dobro ou o triplo disso no lateral.\n\n**Por que o lateral paga mais.** O platô lateral é **convexo**, e o menisco lateral é o que cria a congruência entre ele e o côndilo. Sem o menisco, o côndilo apoia quase num ponto. No medial, o platô é côncavo e a cartilagem exposta ainda se encaixa no côndilo, de modo que parte da carga continua bem distribuída. Pelo capítulo 56 (p. 2345), o lateral carrega cerca de 70% da carga do seu compartimento, e o medial, cerca de 50%, o que ajuda a entender o tamanho do impacto.\n\n**Nota de redação.** A questão fala em força de contato; o livro trata de **estresse** (força por área). Para a prova, as duas palavras apontam para o mesmo par de números: 100% no medial e 200% no lateral, faixa de 200 a 300%.\n\nA tabela inteira, com o raciocínio para não decorar, está na seção \"Função e o preço da meniscectomia\" do resumo.",
+  "correta": "**C) 100% e 200%.** Medial por volta de 100% e lateral de 200 a 300% de aumento, com o platô lateral convexo explicando o maior preço no lado externo.",
   "incorretas": {
-   "A": "**Subestima os aumentos ensinados.** Esses números poderiam aparecer em outro ensaio ou condição de carga, mas não correspondem à aproximação adotada aqui.",
-   "B": "**Além de menores, invertem a relação.** O compartimento lateral tende a sofrer maior aumento de pressão após meniscectomia total.",
-   "D": "**Inverte os lados.** A comparação clássica coloca o aumento maior no compartimento lateral, não no medial."
+   "A": "**50% e 100%** reduz os dois números pela metade. O livro não traz um aumento de apenas 50% no medial; os valores são 100% e 200 a 300%.",
+   "B": "**100% e 50%** tem o medial certo, mas põe o lateral abaixo dele, quando o lateral é o compartimento que mais sofre, com 200 a 300%.",
+   "D": "**200% e 100%** inverte os lados: dá ao medial o aumento maior. A convexidade do platô lateral é justamente o que faz o lateral piorar mais, e não o contrário."
   },
-  "alerta": "Os valores de 100% e 200% são uma aproximação didática para o aumento da pressão de contato após meniscectomia total, não um par universal de medidas. O enunciado fala em \"força de contato\", mas os estudos biomecânicos geralmente relatam pressão ou tensão de contato; a força axial aplicada ao joelho não precisa duplicar ou triplicar quando o menisco é removido. Os resultados também variam com flexão, carga e modelo experimental.",
-  "conceito": "**O menisco distribui, não cria, carga.** O menisco aumenta a área de contato entre fêmur e tíbia e transforma parte da compressão axial em tensão circunferencial nas fibras periféricas. Sem ele, uma área menor recebe a carga articular e o pico de pressão sobe. O compartimento lateral depende especialmente dessa função por sua geometria menos congruente; por isso a meniscectomia lateral tende a ser biomecanicamente mais prejudicial.\n\n**Os números da banca.** A comparação tradicional ensinada nesta questão é aumento aproximado de 100% da pressão no compartimento medial e 200% no lateral depois da retirada total dos respectivos meniscos. Eles não são constantes fisiológicas. Estudos cadavéricos e modelos mecânicos encontram variações relevantes conforme posição do joelho, método de medição e extensão da ressecção.\n\n**Consequência prática.** Sempre que a lesão permitir, preservar ou reparar o menisco mantém área de contato e ajuda a proteger a cartilagem. Uma lesão de raiz ou radial completa pode abolir a transmissão circunferencial de carga e se aproximar funcionalmente da meniscectomia, mesmo sem remoção de tecido.",
-  "correta": "**Cerca de 100% medial e 200% lateral, no esquema da banca.** O aumento maior no lado lateral reflete sua maior dependência do menisco para distribuir a carga.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1997",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 56 (Arthroscopy of the Lower Extremity), p. 2345",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "alerta": "A questão fala em força de contato, mas o Campbell 15 descreve o aumento do estresse de contato (100% no medial e 200 a 300% no lateral); a letra C é a que concorda com os números do livro.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0013": {
@@ -740,14 +745,20 @@
   "conferido": false
  },
  "joelho-0049": {
+  "conceito": "A questão traz uma ressonância do joelho em corte, com o menisco como uma cunha escura entre fêmur e tíbia, mas a resposta não depende de nenhum detalhe da imagem: ela pergunta onde e quanto o menisco recebe sangue.\n\n**A imagem.** Imagem de ressonância magnética do joelho, em baixa resolução, com o côndilo femoral arredondado acima e o platô tibial abaixo. Entre os dois aparece o menisco, em baixo sinal, em forma de cunha com a base voltada para a periferia. A figura mostra a forma, mas não a irrigação, que é um dado do texto.\n\n**Vascularização** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1995 e 1996). O menisco é avascular, exceto na periferia, irrigada pelas **artérias geniculares lateral e medial, superiores e inferiores**, por um plexo capilar perimeniscal. Por microinjeção, os vasos penetram **10 a 30% da largura do menisco medial** e **10 a 25% do lateral**. O lateral tem ainda uma falha vascular posterolateral, onde passa o tendão poplíteo.\n\n**Aplicação.** Quem tem mais vaso tem mais potencial de cicatrização, e por isso o medial penetra mais que o lateral e a periferia vermelha é onde o reparo funciona.\n\nO resumo trata disso na seção \"Vascularização e zonas de cicatrização\".",
+  "correta": "**B) medial de até 30% proveniente da genicular inferior.** Medial e até 30% batem com o livro; as geniculares são superiores e inferiores, e o livro não separa a inferior.",
   "incorretas": {
-   "A": "**Quarenta por cento excede a faixa anatômica clássica do lateral.** O menisco lateral costuma ter cerca de 10% a 25% de sua largura periférica vascularizada.",
-   "C": "**A artéria inferior lateral contribui, mas o percentual está alto para o lateral.** O limite tradicional de cerca de 30% é citado para o medial.",
-   "D": "**Quarenta por cento também excede a estimativa clássica do medial.** Há participação de ramos geniculares superiores e inferiores, mas o número elimina esta alternativa."
+   "A": "**lateral de até 40%, genicular superior** erra o lado e o percentual: o lateral recebe 10 a 25%, e nenhum menisco chega a 40% na medição do livro.",
+   "C": "**lateral de até 30%, genicular inferior** dá ao lateral a penetração que pertence ao medial; o lateral fica em 10 a 25%, com uma falha onde passa o poplíteo.",
+   "D": "**medial de até 40%, genicular superior** acerta o menisco, mas o percentual de 40% não aparece no livro, que fala em 10 a 30% para o medial."
   },
-  "conceito": "**Vasos só entram pela borda.** No adulto, ramos das artérias geniculares formam um plexo capilar junto à cápsula e penetram a periferia meniscal. Estudos anatômicos descrevem vascularização de aproximadamente 10% a 30% da largura periférica do menisco medial e 10% a 25% do lateral. A artéria genicular inferior medial é uma das contribuições relevantes ao menisco medial, mas ele não depende exclusivamente desse único ramo.\n\n**Da zona vermelha à branca.** A borda junto à cápsula é a zona vermelha-vermelha, com melhor potencial de cicatrização; a transição é vermelha-branca; a porção central é branca-branca e recebe nutrição sobretudo por difusão do líquido sinovial. O hiato poplíteo interrompe a fixação capsular lateral e modifica a distribuição vascular naquela região. Essa anatomia favorece a sutura de uma ruptura periférica adequada, embora padrão da lesão, estabilidade e idade também importem.\n\n**O que a ressonância mostra e não mostra.** A imagem coronal representa o menisco como estrutura escura entre fêmur e tíbia e permite reconhecer sua borda periférica. Ela não mostra diretamente os pequenos vasos nem prova qual genicular fornece sangue. Os percentuais e a artéria da resposta vêm da anatomia, não de um sinal visível na figura.",
-  "correta": "**Medial, até cerca de 30%, com contribuição genicular inferior.** É a combinação que melhor expressa a maior penetração vascular periférica adotada pela banca.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1995 a 1996",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2028",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "alerta": "O Campbell 15 atribui a irrigação às geniculares superiores e inferiores, sem destacar a inferior; o gabarito oficial (medial, até 30%, genicular inferior) coincide com o livro no menisco e na porcentagem.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0050": {
@@ -1075,14 +1086,18 @@
   "conferido": false
  },
  "joelho-0070": {
+  "conceito": "A questão cruza duas medidas que se comportam de modo oposto: a área de contato que sobra e o estresse que sobe. Ler a pergunta como duas perguntas separadas, uma sobre área e outra sobre estresse, desmancha a armadilha.\n\n**Área de contato** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1997). Após meniscectomia, o medial perde de 50 a 70% da área; o lateral perde de 40 a 50%. Quem perde **menos** área é o lateral, e a justificativa é que o menisco medial cobre uma parcela maior do platô côncavo, enquanto o lateral, mais circular, cobre até dois terços do platô e deixa uma região central exposta.\n\n**Estresse de contato.** No medial sobe cerca de 100%; no lateral, de 200 a 300%. O **platô lateral é convexo**: sem menisco, o côndilo se apoia num ponto pequeno, e a mesma carga cai sobre menos tecido. Aqui nasce a pegadinha: perder menos área não significa suportar melhor, porque o que decide o estresse é a congruência da superfície, e a do lado lateral só existe quando o menisco está presente.\n\n**Clínica.** O livro registra pior resultado nas meniscectomias laterais do que nas mediais, e dá mais um motivo para reparar o lateral sempre que possível.\n\nOs números e o raciocínio estão na seção \"Função e o preço da meniscectomia\" do resumo.",
+  "correta": "**C) Na meniscectomia lateral há menor diminuição da área de contato, mas com maior aumento do stress de contato.** O lateral perde 40 a 50% da área, contra 50 a 70% no medial, mas o estresse sobe 200 a 300%, contra 100%.",
   "incorretas": {
-   "A": "**A maior perda de área foi descrita no lado medial.** O lado lateral se destaca pelo maior aumento das pressões após a meniscectomia, não pelos dois efeitos simultaneamente.",
-   "B": "**A relação entre os dois efeitos foi invertida.** A descrição clássica combina maior redução de área no compartimento medial com maior elevação da pressão no lateral.",
-   "D": "**O aumento de pressão lateral não é menor.** Uma perda proporcionalmente menor de área não torna a meniscectomia lateral menos agressiva para a cartilagem."
+   "A": "**Maior diminuição da área e maior aumento do estresse** acerta o estresse e erra a área: é o medial que perde mais área (50 a 70%).",
+   "B": "**Maior diminuição da área, mas menor aumento do estresse** erra as duas metades; o lateral perde menos área e sofre mais estresse, que é o oposto do que a frase afirma.",
+   "D": "**Menor diminuição da área e menor aumento do estresse** acerta a área e erra o estresse. A área menos afetada não protege o lateral, porque o platô convexo é que faz a carga se concentrar."
   },
-  "conceito": "**Por que o menisco importa.** Os meniscos ampliam a superfície de contato femorotibial e distribuem a carga. O lateral é mais móvel e especialmente importante para compensar a menor congruência óssea desse compartimento. Retirá-lo pode elevar bastante a pressão focal sobre a cartilagem, mesmo quando a redução percentual da área medida é menor que no compartimento medial.\n\n**Área e pressão não são sinônimos.** Em experimentos clássicos de meniscectomia total, a perda de área de contato foi descrita como maior no lado medial, enquanto o aumento das pressões de contato foi maior no lateral. Isso não deve ser interpretado como uma regra aritmética universal: distribuição de carga, geometria articular, posição do joelho e método de medição também influenciam o pico de pressão.\n\n**Consequência clínica.** A meniscectomia, sobretudo lateral, favorece degeneração da cartilagem. Por isso, preservar tecido meniscal, reparar lesões passíveis de sutura e tratar lesões de raiz quando indicado são objetivos centrais da cirurgia contemporânea.",
-  "correta": "**Menor perda de área, mas maior aumento da pressão lateral.** Essa é a comparação biomecânica clássica cobrada pela questão.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1997",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0071": {
@@ -1185,14 +1200,18 @@
   "conferido": false
  },
  "joelho-0079": {
+  "conceito": "Dois dados decidem a questão: qual menisco é pego pela rotação interna do fêmur e que tipo de rasgo o mecanismo produz. O raciocínio parte de quem é preso e de quem é solto no joelho.\n\n**Quem é preso.** O menisco medial é bem menos móvel que o lateral: sua periferia inteira está presa à cápsula medial e, pelo coronário, à tíbia (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1996). Com o joelho fletido, o fêmur gira sobre a tíbia; as inserções do menisco seguem a tíbia, e a porção intermediária segue o fêmur. O menisco é, então, distorcido, e por isso o medial é o mais lesado na rotação.\n\n**Como rasga** (p. 1998). A rotação interna vigorosa do fêmur sobre a tíbia fletida empurra o medial **para trás e para o centro**. Se a fixação periférica posterior cede, o corno posterior fica preso entre os côndilos e **rasga no sentido longitudinal** quando o joelho estende de repente. Se a lesão passa à frente do ligamento colateral medial, o fragmento interno vai ao intercôndilo e forma uma alça de balde.\n\n**Os contrastes.** A ruptura **radial** é mais comum no lateral, na junção entre os terços anterior e médio, e o lateral, mais móvel, escapa melhor desse mecanismo; o **tipo mais comum** de ruptura, no geral, é o longitudinal e o **local mais comum** é o corno posterior.\n\nEstá na seção \"Mecanismo de lesão e epidemiologia\" do resumo.",
+  "correta": "**D) medial de forma longitudinal.** Rotação interna do fêmur em flexão empurra o corno posterior do medial para trás e o extensão súbita o rasga no sentido longitudinal.",
   "incorretas": {
-   "A": "**Menisco lateral e ruptura radial não correspondem ao padrão clássico.** Rupturas radiais laterais podem aparecer, por exemplo, em traumas associados ao LCA, mas não são a combinação esperada aqui.",
-   "B": "**O menisco é o esperado, porém o traço não.** Lesões radiais do menisco medial existem, inclusive próximas da raiz posterior, mas o mecanismo perguntado aponta para ruptura longitudinal.",
-   "C": "**O traço longitudinal é plausível, mas o menisco lateral não é o predominante nesse mecanismo.** Sua maior mobilidade tende a reduzir o aprisionamento comparado ao medial."
+   "A": "**lateral de forma radial** junta duas características que o mecanismo não produz: o lateral é móvel e escapa, e o corte radial é típico dele por outras causas, como cistos e degeneração.",
+   "B": "**medial de forma radial** acerta o lado e erra a forma; a rotação com o joelho fletido que vai à extensão rasga o corno posterior entre fibras circunferenciais, ou seja, longitudinalmente.",
+   "C": "**lateral de forma longitudinal** acerta a forma e erra o lado: o lateral segue o côndilo pelo poplíteo e pelos meniscofemorais e é bem menos lesado nesse movimento."
   },
-  "conceito": "**Rotação relativa é o detalhe do enunciado.** Se o fêmur gira internamente sobre a tíbia fixa, a tíbia está girando externamente em relação ao fêmur. Em um joelho fletido e apoiado, a torção associada à compressão pode prender o corno posterior do menisco medial entre as superfícies articulares.\n\n**Por que o medial é vulnerável.** O menisco medial é menos móvel que o lateral devido às conexões capsulares e ao ligamento colateral medial profundo. Seu corno posterior não escapa tão facilmente da compressão e do cisalhamento. O padrão clássico descrito nessa situação é a ruptura longitudinal, paralela às fibras circunferenciais; se extensa e deslocada, pode formar uma alça de balde.\n\n**Não confunda os traços.** Uma ruptura radial cruza as fibras circunferenciais e prejudica a transmissão das cargas, mas não é o padrão pedido pelo mecanismo clássico desta questão. O mecanismo real de uma lesão individual só pode ser correlacionado com exame e imagem, não deduzido com certeza de uma única direção de rotação.",
-  "correta": "**Corno posterior do menisco medial, em traço longitudinal.** A menor mobilidade medial favorece seu aprisionamento no movimento rotacional descrito.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1996 e 1998",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0080": {
@@ -1903,14 +1922,19 @@
   "conferido": false
  },
  "joelho-0128": {
+  "conceito": "A questão cobra a numeração de O'CONNOR, que existe nas provas, mas que o livro de referência não numera. O que vale conhecer é a lógica da classificação: ela agrupa as rupturas pela forma e não pela gravidade.\n\n**A classificação** (Campbell's Operative Orthopaedics, 15ª ed., cap. 56, p. 2336 a 2338, Box 56.1). O'CONNOR divide as lesões em grupos pela aparência artroscópica: as **longitudinais** (alça de balde, periféricas das zonas I a III, rampa), as **horizontais**, as **oblíquas e radiais** e, por último, as **variações**, que reúnem as lesões em flap, as complexas e as **degenerativas**. As degenerativas aparecem em idosos, e as complexas surgem de mecânica alterada por muito tempo.\n\n**Onde cai a degenerativa.** Por ser o último grupo, em prova ele é o de número mais alto, e a numeração da prova o chama de **tipo V**. O livro, porém, apresenta os quatro grupos sem algarismos romanos e inclui as degenerativas no grupo das variações.\n\n**Para a prova.** Memorize a ordem: longitudinais, horizontais, oblíquas e radiais, variações. Degenerativa fica no fim.\n\nVeja a seção \"Classificação e tipos de lesão\" do resumo.",
+  "correta": "**A) V.** Na ordem da classificação, as lesões degenerativas ocupam o último grupo, o das variações.",
   "incorretas": {
-   "B": "**Tipo IV não é o rótulo degenerativo pedido.** A morfologia e a qualidade do tecido precisam ser descritas, mas o número cobrado para degeneração é V.",
-   "C": "**Tipo III representa outra categoria morfológica nessa sequência.** Não corresponde ao padrão degenerativo identificado pela questão.",
-   "D": "**Tipo II também não é a categoria degenerativa.** Evite escolher o número pela idade do paciente sem reconhecer a convenção específica da classificação."
+   "B": "**IV** é o numeral do penúltimo lugar da sequência; o grupo das variações, em que estão as degenerativas, é o último.",
+   "C": "**III** cairia no meio da lista, onde estão as oblíquas e radiais, formas que são traumáticas e não degenerativas.",
+   "D": "**II** corresponde ao grupo das lesões horizontais, que na ordem do livro vêm logo depois das longitudinais."
   },
-  "conceito": "**O tipo V é o degenerativo na classificação cobrada.** A classificação de O'Connor organiza lesões meniscais por morfologia, e a banca associa o padrão degenerativo ao tipo V. O rótulo numérico é útil para a questão, mas o raciocínio clínico exige descrever também localização, extensão, padrão do traço, qualidade do tecido e estabilidade do fragmento.\n\n**Como reconhecer a degeneração.** Em pessoas de meia-idade ou mais velhas, o menisco pode apresentar tecido desgastado e ruptura complexa ou horizontal sem um trauma único importante. É comum coexistir osteoartrose, que também pode explicar a dor. Uma alteração meniscal na ressonância não prova, por si só, que ela seja a fonte dos sintomas.\n\n**Tratamento não é sinônimo de meniscectomia.** Sem bloqueio verdadeiro por fragmento deslocado, o manejo inicial costuma priorizar exercícios terapêuticos e controle da artrose associada. Cirurgia é ponderada em situações selecionadas, como bloqueio mecânico persistente ou falha de tratamento conservador bem conduzido, sempre buscando preservar o máximo de menisco possível.",
-  "correta": "**Tipo V.** É o código atribuído à lesão meniscal degenerativa na classificação de O'Connor adotada pela banca.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 56 (Arthroscopy of the Lower Extremity), p. 2336 a 2338",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "alerta": "O Campbell 15 apresenta a classificação de O'CONNOR em quatro grupos sem numerá-los e põe as degenerativas no último grupo (variações); o tipo V do gabarito vem da numeração original e não está no livro.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0129": {
@@ -1970,14 +1994,19 @@
   "conferido": false
  },
  "joelho-0134": {
+  "conceito": "A pergunta é epidemiológica e vem do Tachdjian, e não do Campbell: o menisco da criança não tem a mesma estatística do menisco do adulto, e o ponto decisivo é conhecer a lista inteira para escolher dentro das alternativas oferecidas.\n\n**Os números pediátricos** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40, p. 2028). Nas lesões meniscais da criança e do adolescente: **complexa 25%**, **discoide 25%**, **longitudinal 13%**, **alça de balde 10%**, **horizontal 10%**, **radial 7%** e **oblíqua 3%**. As radiais e as oblíquas são menos frequentes do que no adulto.\n\n**Como escolher.** Das quatro opções da questão, a longitudinal (13%) supera a alça de balde (10%), a radial (7%) e a oblíqua (3%). A alça de balde é uma forma de lesão longitudinal extensa, mas isolada vem abaixo da longitudinal em número. A radial, que no adulto é típica do lateral, é rara na criança.\n\n**Contexto.** Na criança, o menisco tem mais vascularização e capacidade de cicatrização, o que empurra a indicação para o reparo, inclusive em lesões que num adulto se ressecariam. A ressonância tem acurácia de cerca de 80%, superestimando o medial e subestimando o lateral.\n\nEstá na seção \"Classificação e tipos de lesão\" do resumo, no trecho sobre a criança.",
+  "correta": "**B) Longitudinal.** É o padrão clássico mais frequente na criança entre as opções oferecidas, com 13% no Tachdjian.",
   "incorretas": {
-   "A": "**Ruptura radial não é o padrão mais frequente cobrado.** Ela atravessa as fibras circunferenciais e pode comprometer muito a função mesmo quando pequena.",
-   "C": "**Alça de balde é uma ruptura longitudinal deslocada.** Pode causar bloqueio mecânico, mas não substitui o padrão longitudinal como categoria básica da resposta.",
-   "D": "**Traço oblíquo pode formar um retalho instável.** Não é a morfologia mais habitual indicada para essa faixa etária."
+   "A": "**radial** responde por 7% das lesões pediátricas e é menos comum na criança do que no adulto.",
+   "C": "**alça de balde** vem com 10%, abaixo da longitudinal; é uma variante extensa e deslocada da longitudinal, que isolada pesa menos no total.",
+   "D": "**oblíqua** é o tipo mais raro da lista pediátrica, com apenas 3%."
   },
-  "conceito": "**O padrão do jovem é predominantemente traumático.** Em crianças e adolescentes, o menisco costuma ter tecido preservado e a ruptura típica é longitudinal, paralela às fibras circunferenciais. Lesões periféricas podem ter boa capacidade de cicatrização pelo suprimento vascular, especialmente quando tratadas cedo e com estabilidade ligamentar adequada.\n\n**Uma alça de balde não é categoria independente de origem.** Ela resulta de uma lesão longitudinal extensa cujo fragmento central se desloca para a incisura e pode bloquear a extensão. Portanto, a presença dessa forma grave não muda qual é o padrão básico mais frequente perguntado. Lesões radiais e oblíquas existem, mas não são a resposta epidemiológica clássica nessa faixa etária.\n\n**Preservar o menisco importa ainda mais no jovem.** Quando a localização, o tecido e o padrão permitem, o reparo é preferido à retirada, pois a meniscectomia eleva a pressão de contato e favorece artrose precoce. No menisco discoide lateral, especialmente relevante na infância, o tratamento pode envolver regularização com preservação de borda e sutura de instabilidades.",
-  "correta": "**Lesão longitudinal.** É o padrão de ruptura meniscal mais associado ao trauma em crianças e adolescentes nesta classificação.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2028",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "alerta": "O Tachdjian 6ª ed. põe complexa e discoide (25% cada) à frente da longitudinal (13%); o gabarito (longitudinal) é o mais frequente entre as alternativas oferecidas.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0135": {
@@ -2843,25 +2872,34 @@
   "conferido": false
  },
  "joelho-0189": {
-  "conceito": "### Padrões de lesão meniscal\nA figura mostra uma ruptura que vai **da borda livre (interna) em direção à periferia**, **perpendicular às fibras circunferenciais**: lesão ==radial==.\n\n| Tipo | Plano | Consequência |\n|---|---|---|\n| **Radial** | perpendicular às fibras circunferenciais | se chega à periferia (ou à raiz), perde-se o **hoop stress**: equivale à meniscectomia |\n| **Longitudinal (vertical)** | paralela às fibras | na zona **vermelha**, ótima para sutura; pode virar **alça de balde** |\n| **Horizontal** | divide o menisco em lâminas superior e inferior | típica **degenerativa**; associa-se a **cisto meniscal** |\n| **Flap / oblíqua, complexa** | combinações | |\n| **Rampa** | junção meniscocapsular do corno posterior medial | associada ao LCA |\n\n### Tratamento da radial\n- **Completas:** **suturar** sempre que possível (técnicas \"em cruz\" ou transtibiais), para restaurar o hoop stress.\n- **Parciais** pequenas na zona avascular: regularização.\n\n> **Na prova:** ruptura perpendicular às fibras, da borda livre para a periferia = ==radial==.",
-  "correta": "**Radial.**\n- Corte perpendicular às fibras circunferenciais, da borda livre para a periferia.",
+  "conceito": "A figura é um desenho esquemático do menisco, e a resposta vem da direção do corte em relação à borda e às fibras. Diante de uma imagem de rasgo, a primeira pergunta é: o corte corre ao longo do aro ou o atravessa?\n\n**A imagem.** Desenho em cinza de um menisco em forma de C, visto de cima. Há um corte limpo que sai da borda interna, a côncava e livre, e vai direto para a periferia, atravessando a largura do menisco de um lado ao outro e separando o corno em duas metades. Nenhuma parte do tecido está deslocada para o intercôndilo.\n\n**Como ler.** Esse padrão é **perpendicular** ao eixo do menisco, ou seja, atravessa as fibras circunferenciais: é a lesão **radial** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1999 e 2000, Tabela 50.2). Ela é mais comum no lateral, na junção dos terços anterior e médio, e, se chega à cápsula, perde a tensão em aro e equivale a uma meniscectomia.\n\n**Distinções.** A longitudinal corre paralela ao eixo, entre as fibras; a horizontal é paralela ao platô e divide o menisco em duas lâminas; a rampa fica na junção meniscocapsular posterior do medial e, no desenho, nada disso aparece.\n\nEstá na seção \"Classificação e tipos de lesão\" do resumo.",
+  "correta": "**A) Radial.** O corte vai da borda livre à periferia e atravessa as fibras circunferenciais, que é a definição de ruptura radial.",
   "incorretas": {
-   "B": "**Em rampa.**\n- Na **junção meniscocapsular** periférica do corno posterior medial, não atravessando o menisco.",
-   "C": "**Horizontal.**\n- Plano axial, separando lâminas superior e inferior.",
-   "D": "**Longitudinal.**\n- **Paralela** às fibras circunferenciais."
+   "B": "**em rampa** exigiria uma separação junto à cápsula, na região posterior do medial; o desenho mostra um corte transversal ao longo da largura, e não um descolamento na periferia.",
+   "C": "**horizontal** seria uma clivagem paralela ao platô, dividindo o menisco em lâminas superior e inferior; na figura o corte é no plano do próprio menisco, perpendicular ao seu eixo.",
+   "D": "**longitudinal** correria paralela ao eixo, ao longo do aro, e poderia formar uma alça de balde; na figura o corte atravessa o menisco em vez de acompanhá-lo."
   },
-  "geradoEm": "2026-09-23",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1999 a 2000",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 56 (Arthroscopy of the Lower Extremity), p. 2336 a 2338",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0190": {
+  "conceito": "Quem examina um joelho e acha um nódulo firme na interlinha lateral precisa pensar em cisto meniscal, e o sinal de PISANI é o que o confirma ao exame. A pergunta quer a entidade, e a descrição do sinal dá a resposta.\n\n**O cisto** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2008 e 2009). Incidência de cerca de 1,5%, com o lateral de 3 a 10 vezes mais afetado. Ao exame, é uma massa firme, multiloculada e gelatinosa, palpável logo **anterior e proximal à cabeça da fíbula** e anterior ao ligamento colateral lateral. É mais proeminente em extensão e **some na flexão**: esse é o sinal de PISANI. Costuma doer com a atividade, e a RM define o diagnóstico.\n\n**Como nasce.** Por influxo de líquido sinovial por microrrupturas, de modo que todo cisto tem patologia meniscal, em geral uma ruptura horizontal, na periferia do terço médio do lateral. O tratamento é a meniscectomia parcial artroscópica com descompressão do cisto.\n\n**Diferenças.** O cisto de BAKER é posterior, na fossa poplítea; o discoide estala na flexo-extensão; o retináculo lateral não gera massa que desaparece na flexão.\n\nVeja a seção \"Cisto meniscal\" do resumo.",
+  "correta": "**A) Cisto meniscal.** Massa lateral, anterior ao colateral, que aparece em extensão e some em flexão: é o sinal de PISANI.",
   "incorretas": {
-   "B": "O cisto de Baker fica na fossa poplítea posteromedial. Seu sinal característico é o de Foucher: fica tenso em extensão e amolece em flexão.",
-   "C": "O menisco discoide se manifesta na criança com estalido (ressalto) e limitação da extensão, e não com uma massa na interlinha que some ao fletir.",
-   "D": "A tensão excessiva do retináculo lateral é avaliada pelo teste de inclinação passiva da patela, em que não se consegue elevar a borda lateral da patela."
+   "B": "**cisto de BAKER** é posterior, medial na fossa poplítea; o livro avisa que os cistos meniscais posteriores grandes podem ser confundidos com ele, mas o sinal de PISANI descreve a massa lateral anterior.",
+   "C": "**lesão em menisco discoide** se manifesta por estalido na flexo-extensão (tipo WRISBERG) e alargamento do espaço lateral na radiografia, sem massa que desapareça na flexão.",
+   "D": "**tensão excessiva do retináculo lateral** é um achado da articulação femoropatelar e não produz um nódulo que oscile com a flexão; o livro não o associa ao sinal."
   },
-  "conceito": "O cisto meniscal é uma coleção de líquido sinovial que se forma ao lado do menisco, na linha da articulação, quase sempre por causa de uma **lesão horizontal** do menisco (uma lesão que separa o menisco em uma lâmina de cima e uma de baixo, como um livro aberto). Essa lesão funciona como uma **válvula**: a cada movimento, o líquido da articulação é empurrado para dentro da fenda e sai pela periferia do menisco, mas não volta. Com o tempo, forma-se um cisto do lado de fora da articulação. É mais comum no **menisco lateral**.\n\nO **sinal de Pisani** ajuda a reconhecer esse cisto no exame. Com o joelho **estendido**, o cisto aparece como uma massa palpável e às vezes visível na interlinha articular. Quando o joelho é **dobrado**, a partir de cerca de 45 graus, a massa **diminui ou desaparece**, porque o cisto é empurrado para dentro, para baixo do ligamento colateral e da cápsula.\n\nIsso também orienta o tratamento. Se o cirurgião retirar só o cisto, ele volta, porque a válvula continua lá. É preciso tratar a **lesão do menisco** (regularizar ou suturar) e descomprimir o cisto, por artroscopia ou por uma pequena incisão.\n\nO **cisto de Baker** é outra coisa: fica atrás do joelho, na fossa poplítea, do lado medial, entre o gastrocnêmio medial e o semimembranáceo. Ele fica mais tenso com o joelho estendido e amolece com a flexão, o que se chama sinal de Foucher. O menisco discoide e o retináculo lateral tenso têm sinais próprios, sem relação com o de Pisani.",
-  "correta": "Cisto meniscal. O sinal de Pisani é a massa na interlinha articular que fica evidente com o joelho estendido e desaparece ou diminui com a flexão.",
-  "geradoEm": "2026-10-02",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2008 a 2009",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0191": {
@@ -3092,14 +3130,18 @@
   "conferido": false
  },
  "joelho-0207": {
+  "conceito": "O menisco suporta bem a compressão porque transforma essa compressão em outro tipo de força. A pergunta é de microestrutura e a resposta sai da orientação das fibras.\n\n**Como é construído** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1994 e 1995). O tecido é um colágeno denso, entrelaçado de forma firme, num padrão que lhe dá grande **elasticidade e capacidade de resistir à compressão**. A orientação principal das fibras é **circunferencial**, ancorada nas raízes anterior e posterior; há ainda fibras radiais e perfurantes.\n\n**O mecanismo do aro.** Quando o fêmur comprime o menisco triangular, ele tende a ser expulso para fora. As fibras circunferenciais, como os aros metálicos de um barril, geram **tensão circunferencial** que segura essa expulsão e a transmite à tíbia pelas raízes. É assim que o menisco absorve choque.\n\n**O ponto fraco.** O colágeno só resiste bem à tração ao longo da própria fibra. Quando a força é **perpendicular** à fibra, como no cisalhamento, a resistência cai para **menos de 10%**. Por isso um único corte radial até a cápsula equivale, em função, a uma meniscectomia, e por isso o menisco rasga mais facilmente em rotação sob carga do que em compressão pura.\n\nO mecanismo completo está na seção \"Microestrutura: colágeno e tensão em aro\" do resumo.",
+  "correta": "**C) compressão.** A compressão é convertida em tensão circunferencial pelas fibras dispostas em aro, e é esse arranjo que o menisco explora para absorver choque.",
   "incorretas": {
-   "A": "A flexão não é o tipo de carga para o qual a estrutura do menisco é especializada.",
-   "B": "A rotação com o joelho carregado é justamente um dos mecanismos que lesam o menisco, e não a carga que ele melhor suporta.",
-   "D": "O cisalhamento também é mecanismo de lesão do menisco, e não a força que ele tolera melhor."
+   "A": "**flexão** não é a força que o livro associa à resistência do menisco; ele é um tecido em aro que trabalha em compressão e tensão, sem descrição de resistência à flexão.",
+   "B": "**rotação** é, ao contrário, o movimento que rasga o menisco: o medial, preso entre côndilos e inserções, se distorce e rompe na rotação do joelho fletido.",
+   "D": "**cisalhamento** é a força perpendicular às fibras circunferenciais, em que a resistência cai a menos de 10%. É o ponto fraco, e não o forte, do menisco."
   },
-  "conceito": "O menisco tem um trabalho difícil: ficar entre o fêmur arredondado e a tíbia quase plana e transformar um contato pequeno, numa área estreita, em um contato largo, que espalha a carga pela cartilagem. Para isso, ele foi construído de um jeito engenhoso.\n\nA maior parte das fibras de colágeno do menisco corre em **círculo**, acompanhando a forma de meia-lua, e as pontas desse anel estão firmemente presas à tíbia pelas **raízes** anterior e posterior. Quando o peso do corpo desce, o fêmur aperta o menisco, que, por ter forma de cunha, tende a ser espremido para fora da articulação. As fibras circulares resistem a esse escape, ficando tensas como os aros de metal que seguram as tábuas de um barril. Essa tensão em anel tem nome em inglês, **hoop stress**. O resultado é que a **compressão** vertical é transformada em tensão ao longo do anel, e o menisco aguenta muito bem esse tipo de carga.\n\nÉ por isso que algumas lesões são tão graves para o joelho. Uma lesão **radial** completa ou uma lesão da **raiz** corta o anel, e o menisco deixa de segurar a carga: o efeito na pressão sobre a cartilagem é parecido com o de retirar o menisco inteiro. Os meniscos transmitem uma parte grande da carga do joelho, e o lateral carrega proporcionalmente mais do seu compartimento que o medial, o que explica por que a retirada do menisco lateral leva mais rápido à artrose.\n\nO que o menisco tolera mal são as forças de **cisalhamento** e de **rotação** com o joelho carregado: o giro com o pé plantado no chão, que é o mecanismo de boa parte das lesões meniscais.",
-  "correta": "Compressão. As fibras circunferenciais, presas às raízes, convertem a carga compressiva em tensão ao longo do anel, permitindo ao menisco distribuir o peso por uma área maior.",
-  "geradoEm": "2026-10-02",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1994 a 1995",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0208": {
@@ -3958,14 +4000,18 @@
   "conferido": false
  },
  "joelho-0258": {
+  "conceito": "Aqui a pergunta é a mesma de outras questões de biomecânica, mas escrita em forma de lista de pares. O método para não errar é guardar duas ideias: qual lado é o mais castigado e por quê.\n\n**O que o livro diz** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1997). Após a meniscectomia total, o estresse de contato aumenta **cerca de 100% no medial** e **200 a 300% no lateral**. A área de contato cai 50 a 70% no medial e 40 a 50% no lateral; o lateral perde menos área, mas o estresse dele explode porque o platô é **convexo** e o menisco é o que o torna congruente com o côndilo.\n\n**Raciocínio em duas linhas.** Tensão em aro: o menisco converte compressão axial em tensão circunferencial, e sem ele a carga cai direto na cartilagem. No lateral, a cartilagem não tem encaixe próprio para compensar; no medial, ainda tem. Resultado: o lateral é o compartimento menos tolerante à meniscectomia, e o livro registra que as parciais laterais têm resultado pior que as mediais.\n\n**Para a prova.** Quando as alternativas trazem pares de números, procure o par em que o lateral é maior que o medial e em que o lateral chega a 200 a 300%. Os pares com 50% são resíduo de uma memória que o livro não sustenta.\n\nA tabela está na seção \"Função e o preço da meniscectomia\" do resumo.",
+  "correta": "**A) aumenta 100% medial e 200 a 300% lateral.** É o par exato do Campbell 15: o platô lateral convexo, sem o menisco, concentra a carga e triplica o estresse.",
   "incorretas": {
-   "B": "Os valores de 50% e 50 a 100% subestimam o aumento de pressão nos dois compartimentos.",
-   "C": "Os valores estão invertidos. O maior aumento acontece no compartimento lateral, não no medial.",
-   "D": "Além de subestimar os números, coloca o medial como o mais afetado, o que inverte a relação real."
+   "B": "**50% medial e 50 a 100% lateral** subestima os dois lados: os números do livro são o dobro no medial e até o triplo no lateral.",
+   "C": "**200 a 300% medial e 100% lateral** troca os compartimentos. O medial tem cartilagem congruente que ainda reparte a carga, e por isso ganha menos.",
+   "D": "**50 a 100% medial e 50% lateral** repete o erro de subestimar a perda e, além disso, deixa o lateral como o lado mais poupado, o contrário do que o livro descreve."
   },
-  "conceito": "Os meniscos são duas cunhas de fibrocartilagem entre o fêmur e a tíbia. Sua função mais importante é **distribuir a carga**. O fêmur tem côndilos arredondados e a tíbia tem um platô quase plano; sem menisco, os dois ossos se tocariam numa área pequena. O menisco preenche esse espaço e aumenta a área de contato. Quando o peso desce, as fibras circulares do menisco se esticam como um aro de barril (o chamado *hoop stress*), e a força se espalha.\n\nQuando o menisco é retirado por inteiro, a **meniscectomia total**, a área de contato cai e a pressão no ponto de contato sobe muito. Os valores clássicos cobrados em prova são um aumento de cerca de **100% no compartimento medial** e de **200 a 300% no lateral**.\n\nO lado lateral sofre mais por dois motivos. Primeiro, a anatomia: o platô lateral é **convexo**, e o côndilo femoral lateral também é curvo; sem menisco, eles se encostam quase num ponto. O platô medial é levemente côncavo e \"abraça\" melhor o côndilo. Segundo, o menisco lateral carrega uma parte maior da carga do seu compartimento do que o medial carrega do dele.\n\nA consequência prática é que a meniscectomia lateral leva à **artrose mais rápido**, e preservar o menisco lateral é prioridade. Por isso a tendência atual é **suturar** sempre que possível, especialmente em jovens. Lesões que rompem o aro, como as radiais completas e as de raiz, equivalem a uma meniscectomia total do ponto de vista mecânico e também devem ser reparadas.",
-  "correta": "Aumenta 100% no medial e 200 a 300% no lateral. O compartimento lateral sofre mais porque suas superfícies são convexas e dependem mais do menisco para distribuir a carga.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1997",
+   "Resumo OrtoQuestões: Lesões meniscais"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0259": {
@@ -4283,17 +4329,18 @@
   "conferido": false
  },
  "joelho-0275": {
+  "conceito": "Cicatrizar exige sangue, e a pergunta é, no fundo, onde o menisco tem vaso. A resposta fica na borda externa, e não no meio nem no corno posterior, que são regiões com pouca ou nenhuma irrigação.\n\n**Onde está o sangue** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1995 e 1996). Os vasos vêm das geniculares e formam um plexo capilar na periferia, que penetra de 10 a 30% do medial e de 10 a 25% do lateral. A reflexão sinovial vascular tem 1 a 3 mm. O centro e a borda livre são avasculares.\n\n**As zonas de ARNOCZKY e WARREN.** Zona 1, vermelho-vermelho, dentro da área vascular; zona 2, vermelho-branco, na transição; zona 3, branco-branco, avascular. Nas zonas 1 e 2, o coágulo de fibrina e os vasos do plexo produzem um tecido cicatricial fibrovascular; na 3, a cicatrização é imprevisível.\n\n**Resultado prático.** A **junção capsulomeniscal** é a região de melhor potencial de cicatrização, e é por isso que a lesão periférica, longitudinal e aguda é a indicação ideal de reparo, com 90% de cicatrização quando feita junto da reconstrução do LCA. Já o corno posterior é o local mais comum de ruptura, mas isso não lhe dá irrigação melhor.\n\nVeja a seção \"Vascularização e zonas de cicatrização\" do resumo.",
+  "correta": "**D) a junção capsulomeniscal.** É a região vascular, onde o plexo perimeniscal entra no tecido; a zona vermelho-vermelho tem o melhor potencial de cicatrização.",
   "incorretas": {
-   "A": "A área central é a zona branco-branco, sem vasos, com cicatrização pobre.",
-   "B": "O corno médio é uma divisão de frente para trás. Ele tem uma periferia vascularizada e um centro avascular, então o nome não define o potencial de cicatrização.",
-   "C": "Assim como o corno médio, o corno posterior é uma divisão de frente para trás. A cicatrização depende da distância até a cápsula, não da região."
+   "A": "**a área central** é a zona branco-branco, sem vasos; qualquer ruptura ali tem cicatrização imprevisível e costuma terminar em ressecção.",
+   "B": "**o corno médio** é uma localização, e não uma zona de irrigação; a cicatrização depende da distância da periferia, e não de ser o corpo ou o corno do menisco.",
+   "C": "**o corno posterior** é o local mais comum de ruptura, mas isso não significa melhor vascularização; só a porção periférica dele cicatriza bem."
   },
-  "conceito": "O menisco tem pouca circulação, e é isso que define se uma lesão pode cicatrizar. Os vasos chegam só pela borda de fora, a partir de um plexo de artérias na cápsula articular. Apenas a parte mais **periférica** do menisco é irrigada; a parte de dentro, a borda livre voltada para o centro do joelho, não recebe vasos e depende do líquido articular para se nutrir.\n\nPor isso o menisco é dividido em três zonas, nomeadas pela cor que teriam de cada lado da lesão:\n\n**Vermelho-vermelho**, a zona periférica, na **junção do menisco com a cápsula**. Os dois lados da lesão têm sangue. É onde a cicatrização é melhor e onde a sutura tem mais sucesso.\n\n**Vermelho-branco**, a zona de transição. Um lado tem vascularização e o outro não. A cicatrização é possível, mas menos previsível.\n\n**Branco-branco**, a zona central, sem vasos. A cicatrização é pobre, e lesões ali costumam ser tratadas com ressecção da parte lesada.\n\nOs nomes \"corno anterior\", \"corpo\" e \"corno posterior\" dividem o menisco no sentido da frente para trás. Essa divisão não define a irrigação: cada uma dessas partes tem uma periferia vascularizada e um centro avascular.",
-  "correta": "A junção capsulomeniscal. É a zona vermelho-vermelho, a única com vasos nos dois lados da lesão, e por isso a de melhor cicatrização.",
   "referencias": [
-   "Jupiter J:. Skeletal Trauma, 3th Ed., p. 2063 (referência indicada na prova TARO 2013, questão 67)"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1995 a 1997",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
-  "geradoEm": "2026-10-03",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0276": {
@@ -4548,20 +4595,20 @@
   "conferido": false
  },
  "joelho-0289": {
+  "conceito": "Das três famílias de fibras do menisco, só uma carrega a função mecânica principal. A pergunta quer saber qual, e o raciocínio parte de como o menisco recebe a carga.\n\n**O desenho das fibras** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1994 e 1995). O livro descreve colágeno denso, com orientação principal **circunferencial**, acompanhado de fibras radiais e de fibras perfurantes. O arranjo determina os padrões de ruptura: o corte longitudinal corre entre fibras circunferenciais e o radial as atravessa.\n\n**Por que as circunferenciais mandam na compressão.** Sob carga axial, o menisco é empurrado para fora do platô. As fibras circunferenciais, ancoradas pelas raízes na tíbia, produzem **tensão em aro** que contém esse empurrão e converte a compressão em tensão ao longo da fibra, a direção em que o colágeno é forte. As radiais e as perfurantes costuram o tecido e evitam que as camadas se separem, mas não fazem esse trabalho de absorção de choque.\n\n**Consequência cirúrgica.** Romper as circunferenciais por completo, como na ruptura radial total ou na lesão de raiz, desfaz o aro e equivale a perder o menisco.\n\nO que o livro dá como lógica está na seção \"Microestrutura: colágeno e tensão em aro\" do resumo.",
+  "correta": "**B) circunferenciais** (resposta provável pela bibliografia). São a orientação principal das fibras e formam o aro que resiste à compressão.",
   "incorretas": {
-   "A": "**Fibras radiais são amarras do sistema.** Elas atravessam os feixes circunferenciais e ajudam a impedir separação longitudinal, mas não formam o arco contínuo que recebe a maior parte da tensão circunferencial. Uma ruptura radial é grave justamente porque corta as fibras da opção B.",
-   "C": "**“Perfurantes” não designa o principal arranjo portador de carga do menisco.** O termo pode lembrar fibras de fixação em outros tecidos, mas, aqui, o mecanismo essencial depende de feixes contínuos ao longo do menisco e de sua ancoragem pelas raízes. A opção não descreve essa arquitetura funcional.",
-   "D": "**Fibras oblíquas podem compor a malha e contribuir para resistir a cisalhamento.** Essa orientação não substitui o trajeto circunferencial responsável por conter a extrusão sob compressão axial. A distinção é a direção da tração produzida pela carga, não a simples existência de colágeno em diferentes sentidos."
+   "A": "**radiais** cruzam as circunferenciais e funcionam como amarra interna; o livro não lhes atribui a resistência à compressão, e o corte radial é o que destrói o aro.",
+   "C": "**perfurantes** são fibras de ligação entre camadas, em menor quantidade; o livro as cita como parte do arranjo, sem papel principal na compressão.",
+   "D": "**oblíquas** não são um grupo de fibras descrito pelo Campbell 15 na microestrutura do menisco, que fala em circunferenciais, radiais e perfurantes."
   },
-  "alerta": "Não há gabarito oficial divulgado. B é a resposta provável pela bibliografia e não conta no desempenho. A contribuição das fibras circunferenciais é indireta: elas resistem à tração criada quando a carga compressiva tenta extruir o menisco; não são fibras que trabalhem predominantemente em compressão direta.",
   "referencias": [
-   "The Basic Science of Human Knee Menisci: Structure, Composition, and Function. Sports Health. 2012. https://pmc.ncbi.nlm.nih.gov/articles/PMC3435920/",
-   "Review of Meniscus Anatomy and Biomechanics. Curr Rev Musculoskelet Med. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9463428/"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1994 a 1995",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
-  "conceito": "**Uma cunha sob carga tende a escapar.** Cada menisco é uma fibrocartilagem entre fêmur e tíbia. Sua forma amplia a área de contato e distribui a força axial. Quando o fêmur o comprime, uma componente da força empurra o tecido para a periferia. As raízes anterior e posterior prendem as extremidades do menisco à tíbia; sem essa ancoragem, o tecido extrui e perde eficiência na transmissão da carga.\n\n**O arco de colágeno segura essa tendência.** Na camada profunda predominam feixes de colágeno tipo I orientados circunferencialmente. A tentativa de extrusão os coloca sob tração ao longo do arco, a chamada tensão circunferencial ou hoop stress. Essa conversão de compressão axial em tração explica por que as fibras circunferenciais são as mais importantes para a resistência funcional do menisco à carga compressiva, embora a fibra individual não suporte a compressão como um pilar.\n\n**As fibras que cruzam o arco também importam.** Feixes radiais de amarração conectam fibras circunferenciais e ajudam a evitar fendas longitudinais; fibras superficiais formam uma malha que lida com cisalhamento. Uma ruptura radial completa atravessa o arco principal e prejudica o hoop stress, assim como uma lesão da raiz que desancora o menisco. Por isso preservar raiz, periferia e fibras circulares é decisivo para manter distribuição de carga após reparo ou meniscectomia parcial.",
-  "correta": "**Provável B: fibras circunferenciais.** Elas resistem à tração periférica produzida pela compressão e transmitem a carga pelo arco ancorado nas raízes. É esse mecanismo, e não uma ação de “esponja” das fibras, que sustenta a resposta.",
   "provavel": "B",
-  "geradoEm": "2026-10-16",
+  "alerta": "Questão sem gabarito oficial no acervo. A resposta provável (B) segue a bibliografia: o Campbell 15 descreve a orientação principal circunferencial e a tensão em aro como responsáveis por resistir à compressão.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0290": {
@@ -4722,38 +4769,38 @@
   "conferido": false
  },
  "joelho-0296": {
+  "conceito": "A pergunta parece de osso, mas é de menisco: o que protege o osso subcondral do joelho de picos de carga é o menisco, e o procedimento que tira essa proteção é a resposta.\n\n**O raciocínio** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1997). Sem menisco, a área de contato cai de 40 a 70% e o estresse sobe de 100 a 300%. Nas rupturas radiais completas e nas lesões de raiz, que o livro equipara à meniscectomia, o aumento da força de contato produz **lesões de medula óssea no fêmur e na tíbia** e alterações associadas à **osteonecrose espontânea do joelho**. No capítulo 56 (Box 56.5), o roteiro de investigação da raiz inclui avaliar edema ósseo e fraturas por insuficiência no compartimento do lado afetado.\n\n**Por que não as outras.** A osteotomia muda o alinhamento e a distribuição de carga de modo planejado; a sinovectomia retira o revestimento, sem alterar a mecânica de carga; a condrectomia, no sentido de tratamento da cartilagem, não está entre as causas descritas no livro.\n\n**Cuidado de redação.** O livro não usa a frase exata sobre fratura por insuficiência após meniscectomia, e a resposta provável é inferida desse mecanismo.\n\nO raciocínio está na seção \"Função e o preço da meniscectomia\" do resumo.",
+  "correta": "**B) meniscectomia** (resposta provável pela bibliografia). A perda do menisco concentra a carga no osso subcondral e leva a lesões de medula óssea e à osteonecrose espontânea.",
   "incorretas": {
-   "A": "**Osteotomia costuma ser usada para redistribuir carga.** Uma osteotomia bem indicada pode transferir apoio para longe de um compartimento sobrecarregado. Como qualquer cirurgia, pode ter complicações próprias; isso não a torna a intervenção classicamente ligada à perda da função meniscal perguntada aqui.",
-   "C": "**Condrectomia remove cartilagem, mas não reproduz a perda do aro meniscal.** Lesões condrais e procedimentos sobre a cartilagem podem coexistir com dano subcondral e não devem ser ignorados. Ainda assim, entre as alternativas, a meniscectomia fornece o vínculo biomecânico mais reconhecido com concentração de carga e fratura por insuficiência.",
-   "D": "**Sinovectomia trata tecido sinovial.** Sua finalidade é remover sinóvia doente, por exemplo em alguns quadros inflamatórios, não alterar diretamente a área de contato meniscal. Se surgir fratura subcondral depois dela, seria necessário investigar outros fatores, em vez de atribuí-la à retirada da sinóvia por mecanismo de carga."
+   "A": "**osteotomia** é um procedimento que redistribui a carga por correção do alinhamento; o livro não a descreve como causa de fratura por insuficiência subcondral.",
+   "C": "**condrectomia** não é associada pelo livro à fratura por insuficiência; ele liga essa complicação à perda da função meniscal, e não ao tratamento da cartilagem.",
+   "D": "**sinovectomia** remove o revestimento sinovial e não altera a área de contato nem a transmissão de carga; o livro não a cita nesse contexto."
   },
-  "alerta": "Não há gabarito oficial publicado. B é a resposta provável pela bibliografia e não conta no desempenho. A associação pós-meniscectomia não prova que a cirurgia causou cada fratura: lesão meniscal ou fratura incipiente já pode existir antes do procedimento, e fatores ósseos e de alinhamento também influenciam.",
   "referencias": [
-   "Yamamoto T, Bullough PG. Spontaneous osteonecrosis of the knee: the result of subchondral insufficiency fracture. J Bone Joint Surg Am. 2000;82(6):858-866.",
-   "Subchondral fracture following arthroscopic knee surgery: a series of eight cases. J Bone Joint Surg Am. 2008. PMID: 18451392. https://pubmed.ncbi.nlm.nih.gov/18451392/",
-   "Subchondral insufficiency fracture of the knee: review of current concepts and radiological differential diagnoses. Jpn J Radiol. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9068663/"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1997",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 56 (Arthroscopy of the Lower Extremity), p. 2353",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
-  "conceito": "**Fratura por insuficiência significa osso que cede sob carga habitual.** A lesão começa abaixo da cartilagem, na superfície de apoio do côndilo ou do planalto. Dor súbita ou progressiva durante a marcha pode preceder alterações visíveis na radiografia. Na ressonância, a linha subcondral de baixo sinal associada a edema medular ajuda a reconhecer o quadro e a distingui-lo de outras causas de dor. Muitos casos antes chamados “osteonecrose espontânea” são hoje entendidos como fratura subcondral inicial, às vezes com necrose secundária.\n\n**O menisco protege o osso ao espalhar a carga.** Sua forma e suas fibras circunferenciais convertem compressão em tração ao longo do arco, ancorado nas raízes. Quando uma parte substancial é removida, ou quando a raiz posterior se rompe e o menisco extrui, a área efetiva de contato diminui e a pressão no osso subcondral cresce. Em um osso já vulnerável, isso oferece uma explicação biomecânica para a fratura observada após meniscectomia.\n\n**“Depois” não é automaticamente “por causa”.** Idade, qualidade óssea, varo, cartilagem degenerada e a própria lesão meniscal podem contribuir. Uma fratura muito inicial pode ter passado despercebida antes da cirurgia. A correlação temporal exige revisar imagens pré-operatórias quando disponíveis e investigar dor persistente ou piora inesperada após artroscopia. Identificar cedo uma lesão sem colapso permite adaptar carga e tratamento; lesão extensa ou colapsada muda as opções cirúrgicas.",
-  "correta": "**Provável B: meniscectomia.** Entre os procedimentos listados, é o que mais diretamente reduz a capacidade meniscal de distribuir pressão e se associa a fratura subcondral por insuficiência no compartimento tratado. A relação é plausível e documentada, mas não exclusiva nem inevitável.",
   "provavel": "B",
-  "geradoEm": "2026-10-16",
+  "alerta": "Questão sem gabarito oficial no acervo. A resposta provável (B) segue a bibliografia: o Campbell 15 liga a sobrecarga de lesões radiais e de raiz (equivalentes à meniscectomia) a lesões de medula óssea, osteonecrose espontânea e fraturas por insuficiência, mas não usa a frase exata da questão.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0297": {
+  "conceito": "No joelho agudo, o examinador faz a gaveta anterior a 90 graus e se surpreende ao ver o LCA roto parecer estável. A questão pergunta quem faz esse freio inesperado, e a resposta está no próprio nome do efeito: um calço de porta.\n\n**O que trava** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2016). Com o joelho a 90 graus, o **corno posterior dos meniscos**, preso à tíbia, encosta no côndilo femoral convexo e funciona como um **trava de porta** (doorstop), dificultando a translação anterior da tíbia. O livro ilustra com o menisco medial, que é o mais preso à cápsula e à tíbia. Em extensão, a superfície do fêmur é plana e o efeito desaparece.\n\n**Por que importa.** Por isso o **LACHMAN**, a 15 a 20 graus, é o teste preferido no joelho agudo: ele opera longe da posição em que o calço trabalha. Dois dados que acompanham: a gaveta mede-se na rotação neutra, externa de 15 e interna de 30 graus; uma diferença de 6 a 8 mm em relação ao outro lado indica LCA roto.\n\n**Distratores.** O poplíteo prende o menisco lateral e o arqueado, mas não dá esse efeito. O coto do LCA, por definição, não restringe a gaveta. O corno anterior do lateral não é o que o livro descreve.\n\nO efeito está na seção \"O menisco no exame do LCA: o efeito trava de porta\" do resumo.",
+  "correta": "**B) corno posterior dos meniscos** (resposta provável pela bibliografia). A 90 graus ele encosta no côndilo convexo e freia a anteriorização da tíbia.",
   "incorretas": {
-   "A": "**O poplíteo tem outra função principal.** Seu tendão participa da estabilidade posterolateral e do controle da rotação tibial. Uma lesão nessa região pode alterar testes rotacionais, mas não é o tecido meniscal que se encaixa entre as superfícies articulares para gerar a “trava de porta” descrita.",
-   "C": "**O corno anterior lateral está no extremo oposto do menisco.** Ele pode ter lesões próprias, mas o calço referido na gaveta flexionada envolve a região posterior que se engaja sob o côndilo durante o avanço da tíbia. Escolher “lateral” sem observar “anterior” troca o local funcional da estrutura.",
-   "D": "**Um coto do LCA pode ocupar a incisura e causar bloqueio mecânico em outro contexto.** Isso não é o mesmo que a resistência meniscal à translação anterior durante a gaveta. O coto rompido também não deve ser interpretado como substituto funcional confiável do ligamento íntegro."
+   "A": "**tendão do poplíteo** atravessa a periferia posterolateral e prende o menisco lateral, mas o livro não lhe atribui o efeito de calço na gaveta.",
+   "C": "**corno anterior do menisco lateral** fica na frente do platô e não é o ponto em que o côndilo se apoia na flexão; o livro descreve o corno posterior.",
+   "D": "**coto do ligamento cruzado anterior** não freia a translação; é justamente a ruptura do LCA que torna a gaveta positiva, e o freio vem do menisco."
   },
-  "alerta": "Não há gabarito oficial disponível. B é a resposta provável pela bibliografia e não conta no desempenho. A fonte clínica consultada descreve o efeito de “trava de porta” como mais frequentemente produzido pelo menisco lateral; o comentário anterior afirmava predomínio do medial, o que não deve ser ensinado como fato estabelecido.",
   "referencias": [
-   "Clinical examination of the knee: know your tools for diagnosis of knee injuries. Joints. 2011. https://pmc.ncbi.nlm.nih.gov/articles/PMC3213012/",
-   "Torg JS, Conrad W, Kalen V. Clinical diagnosis of anterior cruciate ligament instability in the athlete. Am J Sports Med. 1976;4(2):84-93."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2014 a 2016",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
-  "conceito": "**A gaveta anterior pergunta se a tíbia avança demais.** O ligamento cruzado anterior é o principal freio a essa translação. Na gaveta, o joelho fica flexionado aproximadamente a 90° e o examinador puxa a tíbia para frente. Um ponto final aparentemente firme não elimina lesão do LCA, sobretudo num joelho recém-traumatizado, doloroso e com derrame.\n\n**O menisco pode virar um calço.** Durante a tentativa de avanço da tíbia, um corno posterior pode se engajar sob o côndilo femoral e produzir resistência mecânica semelhante à trava atrás de uma porta. O mecanismo pode mascarar a frouxidão ligamentar. Uma revisão do exame clínico relata esse fenômeno mais frequentemente com o menisco lateral; o essencial para resolver a questão é reconhecer os cornos posteriores, em vez de memorizar que seria obrigatoriamente o medial.\n\n**Há outros motivos para gaveta falsamente negativa.** A contração defensiva dos isquiotibiais puxa a tíbia para trás e se opõe ao exame; dor e hemartrose dificultam atingir 90° de flexão. O teste de Lachman, realizado com menor flexão, costuma ser mais útil para pesquisar LCA na fase aguda, mas também depende de técnica, relaxamento e comparação contralateral. Exame físico, história e imagem devem ser integrados quando a suspeita persiste.",
-  "correta": "**Provável B: cornos posteriores dos meniscos.** A porção posterior pode se interpor como um calço durante a gaveta em flexão e esconder translação anterior anormal. O sinal é um mecanismo de falso negativo, não uma prova de integridade do LCA.",
   "provavel": "B",
-  "geradoEm": "2026-10-17",
+  "alerta": "Questão sem gabarito oficial no acervo. A resposta provável (B) segue a bibliografia: o Campbell 15 atribui o efeito trava de porta ao corno posterior dos meniscos, com a figura mostrando o medial.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0298": {
@@ -4772,16 +4819,19 @@
   "conferido": false
  },
  "joelho-0299": {
+  "conceito": "O item é uma generalização, e generalização sobre menisco discoide só se sustenta se valer para os três tipos. Na classificação de WATANABE, um deles quebra a regra.\n\n**Os tipos** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2010 e 2011; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40, p. 2013 a 2016). O **completo** e o **incompleto** são os mais comuns, têm a inserção tibial posterior e costumam ser assintomáticos; quando se rompem, passam a dar os sintomas de uma lesão comum. O tipo **WRISBERG** não tem a inserção meniscotibial posterior, exceto o ligamento de WRISBERG, e é puxado para o intercôndilo na extensão: estala na flexo-extensão (a chamada snapping knee syndrome) em pacientes mais jovens, **sem trauma e sem ruptura**.\n\n**Clínica.** Estalido indolor em crianças maiores de 4 anos, abaulamento da interlinha lateral, às vezes bloqueio com instabilidade periférica. A radiografia mostra espaço lateral alargado, côndilo quadrado, platô em cálice e fíbula alta, e a RM confirma.\n\n**Conduta.** O discoide intacto e assintomático não é operado; o roto sofre saucerização, com borda de 6 a 8 mm no Campbell e 5 a 7 mm no Tachdjian.\n\nO resumo trata disso na seção \"Menisco discoide e a classificação de WATANABE\".",
+  "correta": "**B) Errado** (resposta provável pela bibliografia). Nos tipos completo e incompleto a ruptura precede os sintomas, mas o tipo WRISBERG estala sem ruptura, o que derruba a afirmação geral.",
   "incorretas": {
-   "A": "**Certo valeria para alguns pacientes, não para todos.** Uma ruptura de menisco discoide pode provocar dor e sintomas mecânicos, mas não explica obrigatoriamente todo ressalto nessa anomalia."
+   "A": "**Certo** vale para os tipos completo e incompleto, assintomáticos até o rompimento; como a frase se aplica ao discoide lateral em geral, o tipo WRISBERG, que estala antes e sem ruptura, a contradiz."
   },
-  "conceito": "**Anomalia de forma e fixação.** O menisco discoide lateral cobre área maior do planalto tibial e pode ser completo ou incompleto. Na classificação tradicional, a variante de Wrisberg tem fixação posterior deficiente, o que permite hipermobilidade. Muitos meniscos discoides permanecem assintomáticos e são descobertos incidentalmente.\n\n**Por que há ressalto.** O menisco móvel pode deslocar-se durante flexão e extensão e produzir estalido ou ressalto mesmo sem uma ruptura verdadeira. Dor, bloqueio, derrame ou perda de extensão podem surgir por instabilidade, lesão associada ou degeneração. A ruptura é frequente e pode piorar sintomas, mas não é condição obrigatória para que eles apareçam.\n\n**Tratamento.** Um menisco discoide assintomático não precisa de cirurgia apenas pela forma. Quando sintomático, busca-se preservar tecido: regularização para recuperar contorno funcional e reparo de lesões ou fixação periférica instável, conforme avaliação artroscópica. Meniscectomia total aumenta o risco de degeneração futura.",
-  "correta": "**Errado: o sintoma não exige ruptura.** A hipermobilidade do menisco discoide, especialmente na variante de Wrisberg, pode causar ressalto antes de qualquer rasgo.",
   "referencias": [
-   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole. 4ª edição, p. 324."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2010 a 2011",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2013 a 2016",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "alerta": "Questão sem gabarito oficial no acervo. A resposta provável (B) segue a bibliografia, mas há nuance: para os tipos completo e incompleto, o Campbell 15 sustenta que os sintomas vêm com o desarranjo; o tipo WRISBERG estala sem ruptura nem trauma.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0300": {
@@ -5139,19 +5189,20 @@
   "conferido": false
  },
  "joelho-0319": {
-  "conceito": "**Lesão em alça de balde do menisco medial.** É uma ruptura longitudinal extensa em que o fragmento central se desloca para a região intercondilar, causando **bloqueio** do joelho (geralmente em flexão). Frequente em jovens e associada a lesão do LCA.\n\n**Na ressonância.** Sinal do **duplo LCP** (o fragmento luxado fica paralelo e abaixo do LCP), menisco \"fantasma\" ou encurtado no corpo e fragmento no intercôndilo.\n\n**Por que reparar.** Em pacientes jovens, a remoção do fragmento equivale a uma meniscectomia subtotal, com alto risco de artrose precoce. Lesões em alça de balde geralmente são longitudinais e periféricas (zona vermelha-vermelha ou vermelha-branca), favoráveis ao reparo.\n\n**Técnicas conforme a localização.**\n\n| Localização | Técnica mais adequada | Motivo |\n|---|---|---|\n| **Corno anterior** | **De fora para dentro (outside-in)** | Acesso fácil por agulhas de fora; dispositivos all-inside têm dificuldade |\n| **Corpo (terço médio)** | **De dentro para fora (inside-out)** | Padrão-ouro, suturas verticais múltiplas |\n| **Corno posterior** | **Tudo dentro (all-inside)** | Evita incisão posterior e reduz o risco neurovascular |\n\n**Etapas.** Redução do fragmento luxado, preparo das bordas (raspagem para estimular sangramento), suturas preferencialmente verticais, tratamento simultâneo do LCA quando lesado (melhora a cicatrização).\n\n> Alça de balde no jovem: reduzir e suturar (outside-in anterior, inside-out médio, all-inside posterior).",
-  "correta": "**C: Sutura meniscal out-in terço anterior, inside-out médio e allinside posterior.** Em um paciente de 22 anos com alça de balde luxada, o objetivo é preservar o menisco. Cada técnica é usada onde funciona melhor: de fora para dentro no corno anterior, de dentro para fora no terço médio e tudo dentro no corno posterior.",
+  "conceito": "Um jovem de 22 anos, entorse no futebol, alça de balde medial completa e luxada: é o caso clássico em que o menisco precisa ser salvo, e a questão pede a combinação de técnicas por terço, que o livro organiza pela acessibilidade.\n\n**A conduta** (Campbell's Operative Orthopaedics, 15ª ed., cap. 56, p. 2345 e 2346, e cap. 50, p. 2004 a 2007). A meniscectomia, parcial ou total, é reservada ao tecido irreparável; em jovem, a alça de balde aguda com tecido bom deve ser **reparada**. Cicatrizam melhor lesões agudas, longitudinais e periféricas, e a reconstrução do LCA adiciona fatores de crescimento. O reparo isolado de alça de balde chega a 83% com inside-out e 81% com all-inside.\n\n**Quem entra em cada terço.** O livro sugere **outside-in** para a lesão **anterior**, onde o acesso de dentro para fora é difícil, e **all-inside ou inside-out** para a região **posterior**; no corpo, o inside-out é a técnica clássica. Para uma alça de balde, a estratégia é um ponto horizontal estabilizador no meio, perto do canto posteromedial, depois os pontos posteriores com cânula ou dispositivo e a porção anterior de fora para dentro. O inside-out medial usa incisão posteromedial de 5 a 7 cm, com retrator protegendo os vasos poplíteos.\n\n**Observação.** All-inside e inside-out têm resultados semelhantes; a letra certa é a que respeita a regra de anatomia: anterior fora para dentro, posterior com all-inside.\n\nEstá na seção \"Técnicas de sutura: inside-out, outside-in, all-inside\" do resumo.",
+  "correta": "**C) sutura meniscal out-in terço anterior, inside-out médio e all-inside posterior.** Cada técnica fica no terço em que o acesso é natural, e o menisco do jovem é preservado.",
   "incorretas": {
-   "A": "**Meniscectomia parcial** de uma alça de balde extensa removeria grande parte do menisco, com alto risco de artrose em um jovem. É reservada a lesões irreparáveis.",
-   "B": "**Meniscectomia total** está praticamente abandonada pelo risco de artrose precoce (alterações de Fairbank). Não se justifica em lesão reparável.",
-   "D": "**All-inside no terço anterior e out-in no posterior** inverte as indicações. Os dispositivos all-inside têm dificuldade no corno anterior, e a técnica out-in no corno posterior é difícil e arriscada para as estruturas neurovasculares.",
-   "E": "**Inside-out no terço anterior e out-in no médio** troca as técnicas: o corno anterior é melhor abordado de fora para dentro, e o terço médio, de dentro para fora."
+   "A": "**meniscectomia parcial** remove tecido que, numa alça de balde aguda de jovem, é reparável; o livro reserva a ressecção às lesões irreparáveis e prioriza a preservação.",
+   "B": "**meniscectomia total** é a pior opção para um jovem atleta: remover o menisco inteiro aumenta o contato e a degeneração é proporcional ao tecido retirado.",
+   "D": "**all-inside anterior, inside-out médio e out-in posterior** inverte os extremos: o out-in é indicado para o corno anterior, e o posterior fica com all-inside ou inside-out.",
+   "E": "**inside-out anterior, out-in médio e all-inside posterior** troca as duas primeiras técnicas; o inside-out é padrão clássico para o terço médio, e o out-in serve ao anterior."
   },
   "referencias": [
-   "Scott WN, ed. Insall & Scott Surgery of the Knee. Elsevier. Reparo meniscal.",
-   "Azar FM, Beaty JH, eds. Campbell's Operative Orthopaedics. Elsevier. Lesões do joelho: reparo meniscal."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 56 (Arthroscopy of the Lower Extremity), p. 2339, 2345 e 2346",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2004 a 2007",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0320": {
@@ -5294,16 +5345,16 @@
   "conferido": false
  },
  "joelho-0329": {
+  "conceito": "O item afirma duas coisas ao mesmo tempo: que as três manobras são testes de rotação (verdade) e que dispensam a palpação da interlinha (falso). Basta uma metade errada para o item cair, e o livro mostra qual.\n\n**Como cada manobra é feita** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2001 e 2002). No **McMURRAY**, com o paciente supino, flexiona-se o joelho ao máximo, **palpa-se a margem posteromedial** da interlinha, faz-se a rotação externa e estende-se devagar para testar o medial; para o lateral, rodar internamente e palpar a margem posterolateral. O clique entre a flexão completa e 90 graus sugere ruptura periférica posterior. No **APLEY**, em prono, comprime-se com rotação e procura-se o estalido ou a dor na interlinha. O **THESSALY** é feito em apoio monopodal, a 5 e 20 graus, com rotação do corpo três vezes, e tem acurácia de 94% no medial.\n\n**Lição.** O achado mais importante do exame é a **dor localizada na interlinha**, posteromedial ou posterolateral, porque o menisco não tem nervo, exceto na periferia. A palpação faz parte do McMURRAY.\n\n**Números.** McMURRAY tem sensibilidade e especificidade de 70 e 71%; APLEY, 60 e 70%; dor na interlinha, 63 e 77%. Combinar sinais melhora a precisão.\n\nVeja a seção \"Testes meniscais: McMURRAY, APLEY, agachamento e THESSALY\" do resumo.",
+  "correta": "**B) Errado.** São testes de rotação, mas o McMURRAY é feito palpando a margem posterior da interlinha, e a dor na interlinha é o achado mais importante do exame.",
   "incorretas": {
-   "A": "**“Certo” seria atraente se o item terminasse em “rotação do joelho”.** Essa parte resume o movimento provocativo dos testes. O erro é transformar em regra a dispensa de palpação da interlinha, que participa da execução e interpretação clássicas do McMurray."
+   "A": "**Certo** aceitaria a frase inteira; a primeira metade é verdadeira, mas a segunda, que dispensa a palpação, contradiz a técnica descrita no livro para o McMURRAY."
   },
   "referencias": [
-   "Clinical examination of the knee: know your tools for diagnosis of knee injuries. Joints. 2011. https://pmc.ncbi.nlm.nih.gov/articles/PMC3213012/",
-   "Diagnostic accuracy of the Thessaly test, standardised clinical history and other clinical examination tests for meniscal tears. NIHR. https://www.ncbi.nlm.nih.gov/books/NBK310283/"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2001 a 2002",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
-  "conceito": "**A interlinha é o endereço, a rotação é a provocação.** Depois de uma entorse com derrame e bloqueios, a lesão meniscal entra no diferencial. Palpar a interlinha tibiofemoral procura dor localizada; girar a tíbia sob carga ou compressão tenta reproduzir o conflito do fragmento lesado. São informações complementares. Dor inespecífica durante uma manobra não equivale, por si, a localizar uma ruptura no menisco medial.\n\n**McMurray combina movimento e sensação tátil.** Com a paciente em decúbito, o examinador flexiona o joelho e o estende enquanto aplica rotação tibial e tensão em varo ou valgo conforme o lado. Na descrição clássica, uma mão palpa a interlinha para perceber estalido e localizar dor. Para o menisco medial, costuma-se usar rotação externa da tíbia; para o lateral, interna. Algumas variantes valorizam um estalido audível, mas isso não sustenta afirmar que a palpação da interlinha é dispensável em todas as três manobras.\n\n**Apley e Thessaly usam rotações em posições diferentes.** Apley comprime a tíbia contra o fêmur com joelho flexionado e paciente em prono; depois a tração pode ajudar a comparar dor meniscal com dor capsuloligamentar. Thessaly põe o paciente em apoio sobre a perna examinada, com leve flexão, e pede rotação do corpo; dor ou travamento na interlinha são sinais relevantes. Nenhum teste isolado fecha o diagnóstico. Bloqueio mecânico verdadeiro, derrame, exame e imagem precisam ser integrados.",
-  "correta": "**Errado.** Embora as três manobras usem rotação, o McMurray clássico inclui palpação da interlinha para reconhecer e localizar o estalido ou a dor. A segunda metade da afirmação é abrangente demais.",
-  "geradoEm": "2026-10-17",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0330": {
@@ -5334,42 +5385,45 @@
   "conferido": false
  },
  "joelho-0332": {
+  "conceito": "O item traz um julgamento de valor, padrão-ouro, e a primeira dúvida é de quem é a frase. Na literatura, o rótulo vem da cirurgia pediátrica e esportiva, e o resumo mostra exatamente onde ele aparece.\n\n**Quem chama de padrão-ouro** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40, p. 2028). O livro pediátrico descreve a sutura vertical de dentro para fora (inside-to-out) como padrão-ouro do reparo meniscal, com o all-inside oferecendo resistência semelhante. É ela que sustenta o certo do item.\n\n**O que diz o Campbell** (Campbell's Operative Orthopaedics, 15ª ed., cap. 56, p. 2345 e 2346). O inside-out é a técnica clássica, exige incisão para expor a cápsula e colocar retratores, e é indicada para o corno posterior, o terço médio, a alça deslocada, as capsulares periféricas e os aloenxertos (Box 56.3). O livro admite que all-inside e inside-out têm resultados semelhantes e reconhece que a maioria dos reparos usa hoje fixadores.\n\n**No caso.** O atleta de 33 anos, com bloqueios e testes positivos, é candidato a reparo se a lesão for periférica e reparável, e então a fixação do terço médio e posterior fica bem servida pelo inside-out.\n\nVeja a seção \"Técnicas de sutura: inside-out, outside-in, all-inside\" do resumo.",
+  "correta": "**A) Certo.** O inside-out vertical é o padrão-ouro descrito pelo Tachdjian e a técnica clássica do Campbell para os terços médio e posterior.",
   "incorretas": {
-   "B": "**“Errado” poderia refletir o fato de hoje existirem alternativas competitivas.** Isso não invalida a afirmação da prova sobre a referência histórica do dentro para fora para terços médio e posterior. Seria errado, sim, afirmar que ela é obrigatória para toda lesão ou sempre superior à técnica tudo dentro."
+   "B": "**Errado** seria correto se o item atribuísse o padrão-ouro ao all-inside ou ao outside-in; o livro reserva o outside-in para o terço anterior e trata o all-inside como alternativa de resultado semelhante."
   },
   "referencias": [
-   "Inside-Out Approach to Meniscus Repair: Still the Gold Standard? Arthrosc Tech. 2022. https://pmc.ncbi.nlm.nih.gov/articles/PMC9276857/",
-   "Inside-Out Meniscal Repair: Medial and Lateral Approach. Arthrosc Tech. 2016. https://pmc.ncbi.nlm.nih.gov/articles/PMC4886039/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2028",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 56 (Arthroscopy of the Lower Extremity), p. 2345 a 2346",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
-  "conceito": "**Suturar preserva uma estrutura que distribui carga.** O menisco transforma parte da compressão em tensão circunferencial, melhora congruência e protege cartilagem. Se uma lesão é reparável, manter tecido funcional costuma ser preferível à remoção ampla. Local do traço, vascularização periférica, padrão e qualidade tecidual orientam tanto a indicação de reparo quanto a escolha da técnica.\n\n**Dentro para fora descreve o caminho da agulha.** A sutura é passada pela artroscopia através do menisco e da cápsula; uma incisão acessória permite recuperar e amarrar os fios fora da articulação. A técnica oferece muitos pontos, inclusive verticais, com fixação reprodutível no corpo e no corno posterior. Por sua longa experiência clínica, é chamada de padrão-ouro histórico para comparação de outras técnicas. A passagem posterior exige acesso e proteção cuidadosa de nervos e vasos.\n\n**As alternativas não são inferiores em todo cenário.** De fora para dentro costuma facilitar lesões do corno anterior. Dispositivos tudo dentro podem simplificar o trabalho no corno posterior e reduzir a necessidade de incisões acessórias, mas têm custo e riscos próprios relacionados ao implante. Técnicas mistas também são possíveis. O termo “padrão-ouro” neste item expressa robustez e versatilidade do dentro para fora, não exclusividade nem superioridade universal sobre os dispositivos atuais.",
-  "correta": "**Certo, no sentido histórico e técnico cobrado pela banca.** A sutura de dentro para fora permite fixação sólida e repetível das lesões do corpo e da região posterior do menisco. A escolha concreta continua dependente da anatomia da lesão e da segurança da passagem das agulhas.",
-  "geradoEm": "2026-10-17",
+  "alerta": "O Campbell 15 diz que all-inside e inside-out têm resultados semelhantes e que a maioria dos reparos usa fixadores; quem chama o inside-out vertical de padrão-ouro é o Tachdjian, o que sustenta o gabarito.",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0333": {
+  "conceito": "A frase põe uma contraindicação relativa onde o livro põe, na verdade, a indicação preferida. Antes de julgar, vale lembrar para que o all-inside foi inventado.\n\n**O que o livro diz** (Campbell's Operative Orthopaedics, 15ª ed., cap. 56, p. 2345 a 2346 e 2354). O all-inside usa fixadores com nós pré-amarrados, colocados a 2 a 4 mm da periferia, com **menos lesão condral** e **menos morbidade** do que o inside-out. É a técnica para o **corno posterior** (Box 56.3, em que os fixadores aparecem para o corno posterior, borda maior que 2 a 3 mm, lesões verticais e longitudinais). Na prática, repara-se primeiro os pontos posteriores, e o livro usa os fixadores na maioria dos reparos. No Box 56.4, o corpo fica para o all-inside.\n\n**Limites reais.** Os inconvenientes citados são o dano causado pelo implante, a dificuldade de colocar pontos verticais e o custo; também há o cuidado com a trajetória dos dispositivos, pelos vasos poplíteos, ao suturar posteriormente.\n\n**Portanto.** A dificuldade de alcançar o corno posterior é justamente a dificuldade que o all-inside resolve, e não uma contraindicação.\n\nEstá na seção \"Técnicas de sutura: inside-out, outside-in, all-inside\" do resumo.",
+  "correta": "**B) Errado.** O all-inside é a técnica pensada para o corno posterior, que é de difícil acesso; as desvantagens do livro são o implante, o ponto vertical difícil e o custo.",
   "incorretas": {
-   "A": "**“Certo” faria sentido se a lesão estivesse em posição inacessível ao dispositivo específico ou se o tecido não pudesse ser reparado.** A frase, porém, atribui essa limitação genericamente ao corno posterior, uma indicação habitual do tudo dentro."
+   "A": "**Certo** aceitaria a premissa de que o corno posterior não é acessível ao all-inside; o livro diz o contrário, indicando fixadores para o corno posterior e o all-inside como técnica de escolha nessa região."
   },
   "referencias": [
-   "Inside-Out Approach to Meniscus Repair: Still the Gold Standard? https://pmc.ncbi.nlm.nih.gov/articles/PMC9276857/",
-   "All-Inside Meniscal Repair. https://pmc.ncbi.nlm.nih.gov/articles/PMC3445172/"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 56 (Arthroscopy of the Lower Extremity), p. 2345 a 2346 e 2354",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
-  "conceito": "**O acesso muda conforme o segmento do menisco.** O corno anterior costuma ser abordado com facilidade por agulhas de fora para dentro. Corpo e regiões posteriores admitem suturas de dentro para fora, mas essa técnica exige recuperar fios por uma incisão acessória e proteger estruturas posteriores. Dispositivos tudo dentro foram desenvolvidos justamente para implantar a sutura a partir dos portais artroscópicos, sem amarrar fios por uma incisão posterior.\n\n**Posterior não significa inacessível ao tudo dentro.** No corno posterior, o instrumento pode ser orientado até o menisco e fixar seus pontos sem uma exposição posterior ampla. Trata-se de uma aplicação frequente, não de contraindicação relativa baseada no simples local da lesão. Isso não quer dizer que toda lesão posterior seja suturável: padrão do traço, tecido, vascularização e estabilidade após redução permanecem decisivos.\n\n**A praticidade não elimina cuidados de segurança.** Profundidade excessiva da agulha ou da âncora pode ameaçar estruturas neurovasculares atrás do joelho; o trajeto, o lado operado e as instruções do dispositivo importam. Implantes podem causar irritação ou falhar, e seu custo costuma ser maior. Em lesões extensas, a equipe pode combinar tudo dentro na porção mais posterior com dentro para fora no corpo. O objetivo é uma fixação estável que preserve tecido funcional, não escolher um instrumento apenas pelo nome.",
-  "correta": "**Errado.** O corno posterior é uma região em que a técnica tudo dentro é amplamente usada. A dificuldade de alcance mencionada no item não constitui contraindicação relativa por si só.",
-  "geradoEm": "2026-10-17",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0334": {
-  "conceito": "**Por que preservar o menisco.** Os meniscos transmitem cerca de 50% da carga no compartimento medial e até 70% no lateral com o joelho em extensão, aumentam a congruência articular, contribuem para a estabilidade (sobretudo o corno posterior medial em joelhos sem LCA) e participam da lubrificação e da nutrição da cartilagem.\n\n**O que acontece após a meniscectomia total.** Em 1948, Fairbank descreveu as alterações radiográficas que se seguem à retirada do menisco: formação de crista na borda do côndilo, achatamento do côndilo femoral e estreitamento do espaço articular. A pressão de contato na cartilagem aumenta muito, e a **artrose precoce** é frequente, especialmente no compartimento lateral.\n\n**Hierarquia atual do tratamento.**\n1. **Tratamento não cirúrgico** em lesões degenerativas e lesões estáveis pequenas.\n2. **Reparo meniscal** sempre que possível (lesões longitudinais periféricas, em zona vascular, em pacientes jovens).\n3. **Meniscectomia parcial**, retirando apenas o tecido instável e preservando a borda periférica.\n4. **Meniscectomia total** só quando o menisco está irreparavelmente destruído.\n\n**Lesões da raiz e alça de balde.** Recebem atenção especial: a lesão da raiz equivale funcionalmente a uma meniscectomia total, e as alças de balde em jovens costumam ser reparadas.\n\n**Opções após perda meniscal.** Transplante de menisco em pacientes jovens sintomáticos com joelho estável e alinhado; osteotomias para descarga.\n\n> Menisco é para ser preservado: reparar sempre que possível, retirar o mínimo necessário.",
-  "correta": "**A: Certo.** A meniscectomia total foi abandonada como tratamento de rotina, sobretudo em jovens e atletas, porque leva a sobrecarga da cartilagem e artrose precoce. Hoje, a prioridade é o reparo; quando não é possível, faz-se meniscectomia parcial, retirando somente a porção instável. A retirada completa só se justifica quando o menisco está destruído de forma irreparável.",
+  "conceito": "O item é uma síntese de duas ideias que o livro defende com firmeza: a meniscectomia total deixou de ser tratamento de escolha no atleta jovem, e só se justifica remover tudo quando não há o que reparar.\n\n**Por que não retirar tudo** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2004). Retirar um terço do menisco aumenta o contato em até 350%, e a degeneração é **proporcional à quantidade removida**, pior depois da ressecção total. A remoção completa só se justifica quando o menisco é irreparável; a borda periférica deve ser preservada, a meniscectomia total evitada em atletas jovens e o reparo priorizado.\n\n**Os números.** Na parcial medial, 88% mantêm o espaço articular, com estreitamento menor que 2 mm em 12 anos, e 88 a 95% de resultado bom ou excelente. Preditores ruins: meniscectomia total ou da borda, lateral, degenerativa, lesão condral. No reparo, 80,8% não progridem para artrose em 8,8 anos, contra 40% após meniscectomia.\n\n**Aplicação.** O lutador de 33 anos, com bloqueios, é candidato a avaliar a reparabilidade antes de qualquer ressecção.\n\nEstá na seção \"Meniscectomia: quanto tirar\" do resumo.",
+  "correta": "**A) Certo.** O Campbell 15 diz que a ressecção completa só se justifica no menisco irreparável, com preservação da borda e prioridade ao reparo, sobretudo em atletas jovens.",
   "incorretas": {
-   "B": "**Marcar errado seria defender a meniscectomia total como opção habitual, conceito antigo.** Antes dos trabalhos de Fairbank e da artroscopia, o menisco era visto como estrutura dispensável. As evidências de artrose após a meniscectomia total mudaram completamente essa visão."
+   "B": "**Errado** negaria uma recomendação que o livro faz com todas as letras; a degeneração aumenta com a quantidade de menisco retirado e é maior após a ressecção total."
   },
   "referencias": [
-   "Fairbank TJ. Knee joint changes after meniscectomy. J Bone Joint Surg Br. 1948;30B(4):664-670.",
-   "Scott WN, ed. Insall & Scott Surgery of the Knee. Elsevier. Lesões meniscais."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2004 a 2007",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 56 (Arthroscopy of the Lower Extremity), p. 2345",
+   "Resumo OrtoQuestões: Lesões meniscais"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "joelho-0335": {
