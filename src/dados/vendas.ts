@@ -47,7 +47,7 @@ export function seloPlano(p: Plano): string | null {
 }
 
 /** A linha extra do cartão em destaque: a garantia, que tira o medo de começar. */
-export const LEMBRETE_DESTAQUE = 'Mudou de ideia? Até 7 dias depois de cada cobrança, o reembolso é um botão em Minha conta.'
+export const LEMBRETE_DESTAQUE = 'Mudou de ideia? Em até 7 dias, você pede o reembolso com um só clique.'
 
 
 /* ------------------------------------------------------------------------- */
