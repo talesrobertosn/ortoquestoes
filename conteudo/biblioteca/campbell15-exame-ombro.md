@@ -6,7 +6,7 @@ especialidade: ombro-cotovelo
 acesso: gratis
 livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Netter Atlas de Anatomia Ortopédica, 2ª edição
-capitulo: Capítulo 51 · Shoulder and Elbow Injuries, com os capítulos 52 · Recurrent Dislocations, 53 · Traumatic Disorders, 57 · Arthroscopy of the Upper Extremity e 14 · Open Reconstructive Procedures of the Shoulder
+capitulo: Capítulo 52 · Recurrent Dislocations (testes de instabilidade), com os capítulos 51 · Shoulder and Elbow Injuries, 53 · Traumatic Disorders, 57 · Arthroscopy of the Upper Extremity e 14 · Open Reconstructive Procedures of the Shoulder
 autores: Frederick M. Azar, Thomas W. (Quin) Throckmorton, and Joseph D. Lamplot (cap. 51); Joseph D. Lamplot and Tyler J. Brolin (cap. 52)
 fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (anatomia, apresentação e exame, p. 2144 a 2156; tipos e estágios do impacto, p. 2157.e1 a 2158; tratamento, p. 2160 e 2164), cap. 52 (BEIGHTON, p. 2195 aprox.; história, exame e radiografias da instabilidade do ombro, p. 2206 a 2213, com a Tabela 52.5), cap. 53 (instabilidade do bíceps, p. 2295), cap. 57 (lábio e SNYDER, p. 2429 a 2430; indicações de estabilização, p. 2441 aprox.; subescapular, p. 2477; acromioclavicular, p. 2480 aprox.) e cap. 14 (transferências e escápula alada, p. 632 a 638); Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 3 (ligamentos glenoumerais, p. 82 aprox.; exame físico, p. 89 a 94 aprox.). As páginas citadas são as impressas.
 subtemas: Exame físico do ombro
