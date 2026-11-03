@@ -2,7 +2,7 @@ import { Icone } from '../Icone'
 import { recurso } from '../../config'
 import { href } from '../../util/rotas'
 import { linkConta } from '../../conta/passagem'
-import { PRECO_DE_ABERTURA, real } from '../../dados/planos'
+import { real } from '../../dados/planos'
 import { LEMBRETE_DESTAQUE, PLANOS_PIPOCA, cobranca, descontoPct, economia, porMes, seloPlano, semMoeda, type Plano } from '../../dados/vendas'
 import { IconePix, IconeCartao } from './IconesPagamento'
 
@@ -58,7 +58,7 @@ export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoE
             <p className="vd-plano__chamada">{p.id === 'mensal' && <PizzaPixel />}{p.chamada}</p>
             <p className="vd-plano__mes" aria-label={`${real(porMes(p))} por mês`}><small>R$</small><strong>{semMoeda(porMes(p))}</strong><small>/mês</small></p>
             {/* O selo vai dentro do total: os cartões alinham as linhas por subgrid e precisam do mesmo número de filhos. */}
-            <p className="vd-plano__total">{cobranca(p)}{/* Onde a chamada some (celular e tablet), a pizza vem na versão curta, numa linha, junto ao preço. */}{p.id === 'mensal' && <span className="vd-plano__pizza-curta"><PizzaPixel />Custa menos que uma pizza por mês</span>}{p.id !== 'mensal' && (planosAntigos.includes(p.id) ? <span className="vd-plano__abertura">Seu preço de sempre</span> : PRECO_DE_ABERTURA && <span className="vd-plano__abertura">Preço de abertura</span>)}</p>
+            <p className="vd-plano__total">{cobranca(p)}{/* Onde a chamada some (celular e tablet), a pizza vem na versão curta, numa linha, junto ao preço. */}{p.id === 'mensal' && <span className="vd-plano__pizza-curta"><PizzaPixel />Custa menos que uma pizza por mês</span>}{p.id !== 'mensal' && planosAntigos.includes(p.id) && <span className="vd-plano__abertura">Seu preço de sempre</span>}</p>
             <p className="vd-plano__ganho">
               {desconto > 0
                 ? <><span className="vd-plano__desconto">-{desconto}%</span> economia de {real(economia(p))}</>
