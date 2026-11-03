@@ -252,7 +252,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 890 | CRIAR dois temas: exame físico do pé e tornozelo (Campbell's Operative Orthopaedics, 15ª ed., cap. 86 e outros; HEBERT; Tachdjian) e tendão calcâneo (HEBERT, 5ª ed., caps. 21.2 e 21.1; Campbell 15, caps. 53 e 88), mais 23 miniaulas: mieloma (14) e artrose do tornozelo (9). |
 | 891 | CRIAR dois temas: amputações e próteses (Campbell's Operative Orthopaedics, 15ª ed., caps. 16 a 18 e 20; Tachdjian; HEBERT; Rockwood and Green) e dor peritrocantérica e tendinopatias (The Adult Hip, cap. 43 e outros; Campbell 15; HEBERT), mais 6 miniaulas do exame físico do pé. |
 | 892 | CRIAR gonartrose e osteotomias (HEBERT, 5ª ed., cap. 16; Campbell's Operative Orthopaedics, 15ª ed., caps. 10, 8, 50 e 52), mais 36 miniaulas: amputações (14), tendão calcâneo (11) e dor peritrocantérica (11). |
-| (este PR) | Osteoporose v2 (tratamento ligado ao resumo do Rockwood and Green, cap. 4, com 16 questões novas) e CRIAR fibrocartilagem triangular e punho ulnar (Green's Operative Hand Surgery, 7ª ed., cap. 14 e outros; Campbell 15, cap. 74; Rockwood and Green), mais 14 miniaulas da gonartrose. |
+| 893 | Osteoporose v2 (tratamento ligado ao resumo do Rockwood and Green, cap. 4, com 16 questões novas) e CRIAR fibrocartilagem triangular e punho ulnar (Green's Operative Hand Surgery, 7ª ed., cap. 14 e outros; Campbell 15, cap. 74; Rockwood and Green), mais 14 miniaulas da gonartrose. |
+| (este PR) | CRIAR raquitismo e osteomalácia (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6; Tachdjian, cap. 38; Rockwood and Green; HEBERT), mais 40 miniaulas: fibrocartilagem triangular (29), osteoporose (6) e raquitismo (5). Alerta da `osteometabolicas-0091` alinhado à bibliografia da banca. |
 
 ## Próximo
 
