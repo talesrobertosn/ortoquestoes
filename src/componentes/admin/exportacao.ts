@@ -2,12 +2,12 @@ import { real } from '../../dados/planos'
 import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import type { LinhaUsuario } from '../../admin/dados/pessoas'
 import type { EventoPagamento } from './pagamentos'
-import { contaDeTeste } from './contasTeste'
+import { contaDeTeste, foraDosNumeros } from './contasTeste'
 import { acertoAposRevisao, acertoReal, porcentagem } from './formatos'
 import { HORIZONTES, calcularFinanceiro, taxaPixSugerida } from './financeiro'
 import { estudoDeHoje, diaSP, type DiaSerie } from './estudoHoje'
 import { NOME_MES, aReceberNoPix, cobrancas, cobrancasReembolsadas, meioDe, mesAMes, type AssinaturaBase, type CobrancaReal } from './receita'
-import { STATUS_EVENTO, TIPOS_EVENTO, SITUACAO_COBRANCA, proximaData, rotuloMeio, rotuloPlano, rotuloTipoCobranca, situacaoAssinatura } from './rotulos'
+import { CORTESIA_ADMIN, STATUS_EVENTO, TIPOS_EVENTO, SITUACAO_COBRANCA, proximaData, rotuloMeio, rotuloPlano, rotuloTipoCobranca, situacaoAssinatura } from './rotulos'
 import { categoriaPessoa, ROTULOS_CATEGORIA, type SinalUsuario } from './sinais'
 
 /**
@@ -146,7 +146,7 @@ function pessoas(dados: DadosPainel, id: ReturnType<typeof identificador>, agora
   const linhas = ordem.map(u => {
     const s = sinais.get(u.id_usuario)
     const a = ultimaAssinatura.get(u.id_usuario)
-    const plano = u.plano_vigente === 'cortesia' ? 'Cortesia (acesso de presente)' : u.plano_vigente ? `Assinante ${rotuloPlano(u.plano_vigente)}` : a ? `${rotuloPlano(a.plano)} · ${situacaoAssinatura(a, agora).rotulo}` : 'Grátis (nunca assinou)'
+    const plano = u.administrador ? CORTESIA_ADMIN : u.plano_vigente === 'cortesia' ? 'Cortesia (acesso de presente)' : u.plano_vigente ? `Assinante ${rotuloPlano(u.plano_vigente)}` : a ? `${rotuloPlano(a.plano)} · ${situacaoAssinatura(a, agora).rotulo}` : 'Grátis (nunca assinou)'
     return [
       id.nome(u.id_usuario), ...(id.semEmail ? [] : [u.email ?? '']), dataBR(u.criado_em),
       u.situacao ? rotuloEtapa(u.situacao, u.ano_residencia) : '', u.servico ?? '', u.uf ?? '',
@@ -155,7 +155,7 @@ function pessoas(dados: DadosPainel, id: ReturnType<typeof identificador>, agora
       u.ultima_atividade ? dataBR(u.ultima_atividade) : '', u.respondidas, u.respondidas_7d, u.respondidas_hoje ?? '',
       acertoReal(u) ?? '', acertoAposRevisao(u) ?? '',
       s?.flashcards_unicos ?? '', s?.flashcards_7d ?? '', s?.planos_vezes || '', s?.planos_ultima ? dataBR(s.planos_ultima) : '',
-      contaDeTeste({ nome: u.nome, usuario: u.email }) ? 'sim' : '',
+      u.administrador ? 'admin' : contaDeTeste({ nome: u.nome, usuario: u.email }) ? 'sim' : '',
     ]
   })
   return { cabecalho, linhas }
@@ -170,8 +170,8 @@ export function montarExportacao(dados: DadosPainel, op: OpcoesExportacao, agora
   const falhou = (s: SecaoExportacao) => dados.falhas[s] ? `_Esta seção não veio: ${dados.falhas[s]}_` : null
 
   // Contas de teste do dono ficam fora dos números (como no painel); continuam marcadas nas listas.
-  const usuariosReais = (dados.usuarios ?? []).filter(u => !contaDeTeste({ nome: u.nome, usuario: u.email }))
-  const assinaturasReais = (dados.assinaturas ?? []).filter(a => !contaDeTeste(a))
+  const usuariosReais = (dados.usuarios ?? []).filter(u => !u.administrador && !contaDeTeste({ nome: u.nome, usuario: u.email }))
+  const assinaturasReais = (dados.assinaturas ?? []).filter(a => !foraDosNumeros(a))
   const testes = (dados.assinaturas?.length ?? 0) - assinaturasReais.length
 
   md.push('# Orto Questões · dados do painel do administrador', '')

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { contaDeTeste } from '../../componentes/admin/contasTeste'
 import { baixarCsv } from '../../componentes/admin/formatos'
 import { linkMercadoPago } from '../../componentes/admin/pagamentos'
 import { MES, cobrancas as cobrancasDe, cobrancasReembolsadas, somarMesChave } from '../../componentes/admin/receita'
@@ -24,11 +25,14 @@ interface Linha {
   chave: string; em: Date; id_usuario: string; nome: string; email: string | null
   plano: string; meio: 'pix' | 'cartao'; tipo: string; valor: number; situacao: SituacaoCobranca
   id_pagamento: string | null; reembolsadaEm: Date | null
+  /** Compra de administrador ou conta de teste do dono: aparece com o selo, mas fica fora dos totais. */
+  marca: 'admin' | 'teste' | null
 }
 
 /**
  * Receita › Cobranças: o dinheiro que entrou, como um extrato agrupado por dia. Mesmas contas da Visão financeira
  * (receita.ts), então os totais batem. Reembolsadas aparecem riscadas e não somam; estimadas ficam marcadas.
+ * Compras de administrador (selo "Admin") e de teste do dono (selo "Teste") aparecem no extrato, fora dos totais.
  */
 export default function Cobrancas() {
   const p = usarPainel()
@@ -39,14 +43,16 @@ export default function Cobrancas() {
   const [busca, definirBusca] = useState('')
   const [limite, definirLimite] = useState(POR_VEZ)
   useEffect(() => { definirLimite(POR_VEZ) }, [periodo, meio, situacao, busca])
-  const assinaturas = p.reais
+  const assinaturas = p.assinaturas
   const parte = defParte('cobrancas')
 
   const linhas = useMemo((): Linha[] => {
     if (!assinaturas) return []
     const nomes = new Map<string, { nome: string | null; email: string | null }>()
     for (const a of assinaturas) { const x = nomes.get(a.id_usuario); if (!x || (!x.nome && a.nome)) nomes.set(a.id_usuario, { nome: a.nome ?? x?.nome ?? null, email: a.usuario ?? x?.email ?? null }) }
-    const pessoa = (id: string) => { const n = nomes.get(id); return { nome: n?.nome || n?.email || 'Pessoa sem nome', email: n?.email ?? null } }
+    const marcas = new Map<string, Linha['marca']>()
+    for (const a of assinaturas) if (a.administrador) marcas.set(a.id_usuario, 'admin'); else if (contaDeTeste(a) && !marcas.has(a.id_usuario)) marcas.set(a.id_usuario, 'teste')
+    const pessoa = (id: string) => { const n = nomes.get(id); return { nome: n?.nome || n?.email || 'Pessoa sem nome', email: n?.email ?? null, marca: marcas.get(id) ?? null } }
     const pagas = cobrancasDe(assinaturas, p.cobrancas).map((c, i): Linha => ({ chave: `p${i}`, em: c.em, id_usuario: c.id_usuario, ...pessoa(c.id_usuario), plano: c.plano, meio: c.meio, tipo: rotuloTipoCobranca(c), valor: c.valor, situacao: c.estimada ? 'estimada' : 'paga', id_pagamento: c.id_pagamento ?? null, reembolsadaEm: null }))
     const devolvidas = cobrancasReembolsadas(assinaturas, p.cobrancas).map((c, i): Linha => ({ chave: `r${i}`, em: c.em, id_usuario: c.id_usuario, ...pessoa(c.id_usuario), plano: c.plano, meio: c.meio, tipo: rotuloTipoCobranca(c), valor: c.valor, situacao: 'reembolsada', id_pagamento: c.id_pagamento ?? null, reembolsadaEm: c.reembolsadaEm }))
     return [...pagas, ...devolvidas].sort((x, y) => y.em.getTime() - x.em.getTime())
@@ -60,8 +66,9 @@ export default function Cobrancas() {
   const termo = normalizar(busca.trim())
   const visiveis = useMemo(() => doMeio.filter(l => (situacao === 'todas' || l.situacao === situacao) && combina([l.nome, l.email, rotuloPlano(l.plano), l.id_pagamento], termo)), [doMeio, situacao, termo])
   const totais = useMemo(() => {
-    const entram = doMeio.filter(l => l.situacao !== 'reembolsada'), soma = (x: Linha[]) => x.reduce((s, l) => s + l.valor, 0)
-    const devolvidas = doMeio.filter(l => l.situacao === 'reembolsada')
+    const contam = doMeio.filter(l => !l.marca)
+    const entram = contam.filter(l => l.situacao !== 'reembolsada'), soma = (x: Linha[]) => x.reduce((s, l) => s + l.valor, 0)
+    const devolvidas = contam.filter(l => l.situacao === 'reembolsada')
     return { bruto: soma(entram), quantidade: entram.length, confirmado: soma(entram.filter(l => l.situacao === 'paga')), estimado: soma(entram.filter(l => l.situacao === 'estimada')), estimadas: entram.filter(l => l.situacao === 'estimada').length,
       cartao: soma(entram.filter(l => l.meio === 'cartao')), pix: soma(entram.filter(l => l.meio === 'pix')), devolvido: soma(devolvidas), devolvidas: devolvidas.length }
   }, [doMeio])
@@ -69,20 +76,21 @@ export default function Cobrancas() {
     const grupos: Array<{ dia: string; data: Date; linhas: Linha[]; soma: number }> = []
     for (const l of visiveis.slice(0, limite)) {
       const k = diaChave(l.em), ultimo = grupos[grupos.length - 1]
-      if (ultimo?.dia === k) { ultimo.linhas.push(l); if (l.situacao !== 'reembolsada') ultimo.soma += l.valor }
-      else grupos.push({ dia: k, data: l.em, linhas: [l], soma: l.situacao !== 'reembolsada' ? l.valor : 0 })
+      const vale = l.situacao !== 'reembolsada' && !l.marca ? l.valor : 0
+      if (ultimo?.dia === k) { ultimo.linhas.push(l); ultimo.soma += vale }
+      else grupos.push({ dia: k, data: l.em, linhas: [l], soma: vale })
     }
     return grupos
   }, [visiveis, limite])
 
   if (!assinaturas || p.cobrancasCarregando) return <Carregando linhas={8} texto="Carregando as cobranças…" />
   const exportar = () => baixarCsv(`ortoquestoes-cobrancas-lista-${new Date().toISOString().slice(0, 10)}.csv`,
-    ['Data', 'Hora', 'Pessoa', 'E-mail', 'Plano', 'Meio', 'Tipo', 'Valor bruto', 'Situação', 'Reembolsada em', 'Pagamento no Mercado Pago'],
-    visiveis.map(l => [dataBr(l.em), hora(l.em), l.nome, l.email, rotuloPlano(l.plano), rotuloMeio(l.meio), l.tipo, l.valor.toFixed(2).replace('.', ','), SITUACAO_COBRANCA[l.situacao], l.reembolsadaEm ? dataBr(l.reembolsadaEm) : '', l.id_pagamento ?? '']))
+    ['Data', 'Hora', 'Pessoa', 'E-mail', 'Plano', 'Meio', 'Tipo', 'Valor bruto', 'Situação', 'Reembolsada em', 'Pagamento no Mercado Pago', 'Fora dos totais'],
+    visiveis.map(l => [dataBr(l.em), hora(l.em), l.nome, l.email, rotuloPlano(l.plano), rotuloMeio(l.meio), l.tipo, l.valor.toFixed(2).replace('.', ','), SITUACAO_COBRANCA[l.situacao], l.reembolsadaEm ? dataBr(l.reembolsadaEm) : '', l.id_pagamento ?? '', l.marca === 'admin' ? 'admin' : l.marca === 'teste' ? 'teste' : '']))
   const contagem = (s: FiltroSituacao) => doMeio.filter(l => s === 'todas' || l.situacao === s).length
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Valores brutos; taxa e líquido estão no extrato do Mercado Pago (o banco não guarda a taxa).${p.testes ? ' Contas de teste do dono ficam de fora.' : ''}`}
+    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Valores brutos; taxa e líquido estão no extrato do Mercado Pago (o banco não guarda a taxa).${p.testes ? ' Compras de administrador e de teste aparecem com o selo e ficam fora dos totais.' : ''}`}
       acoes={<><Segmento rotulo="Período" valor={periodo} aoMudar={definirPeriodo} opcoes={PERIODOS} />
         <button type="button" className="a3-botao a3-botao--contorno" onClick={exportar} disabled={!visiveis.length}><Icone nome="baixar" tamanho={15} />CSV</button></>} />
     {p.avisoCobrancas && <Faixa tom="aviso" titulo="Cobranças gravadas indisponíveis">{p.avisoCobrancas}</Faixa>}
@@ -120,7 +128,7 @@ export default function Cobrancas() {
                 <span className="a3-nome">{l.nome}</span>
                 <span className="a3-sub">{rotuloPlano(l.plano)} · {l.tipo}{l.email && l.email !== l.nome ? ` · ${l.email}` : ''}</span>
               </button>
-              <span className="a3-extrato__selos"><Selo contorno>{rotuloMeio(l.meio)}</Selo>{l.situacao === 'estimada' && <Selo>Estimada</Selo>}{l.situacao === 'reembolsada' && <Selo tom="erro">Reembolsada{l.reembolsadaEm ? ` em ${dataBr(l.reembolsadaEm)}` : ''}</Selo>}</span>
+              <span className="a3-extrato__selos">{l.marca === 'admin' ? <Selo solido>Admin</Selo> : l.marca === 'teste' && <Selo tom="aviso">Teste</Selo>}<Selo contorno>{rotuloMeio(l.meio)}</Selo>{l.situacao === 'estimada' && <Selo>Estimada</Selo>}{l.situacao === 'reembolsada' && <Selo tom="erro">Reembolsada{l.reembolsadaEm ? ` em ${dataBr(l.reembolsadaEm)}` : ''}</Selo>}</span>
               <span className="a3-extrato__valor num">{l.situacao === 'reembolsada' ? '−' : '+'}{reais(l.valor)}</span>
               {link ? <a className="a3-botao a3-botao--fantasma a3-botao--icone a3-botao--pequeno" href={link} target="_blank" rel="noopener noreferrer" aria-label={`Abrir o pagamento de ${l.nome} no Mercado Pago`} title="Abrir no Mercado Pago"><Icone nome="externo" tamanho={15} /></a> : <span className="a3-extrato__vazio" />}
             </li>

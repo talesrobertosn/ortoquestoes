@@ -1,7 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react'
 import { usarConta } from '../../conta/ContextoConta'
 import { usarContadoresAdmin } from '../../componentes/admin/contadores'
-import { contaDeTeste } from '../../componentes/admin/contasTeste'
+import { contaDeTeste, foraDosNumeros } from '../../componentes/admin/contasTeste'
 import { erroDoPainel } from '../../componentes/admin/formatos'
 import { usarLidos } from '../../componentes/admin/lidos'
 import { PLANO_CORTESIA } from '../../componentes/admin/rotulos'
@@ -28,6 +28,8 @@ export interface LinhaAssinatura extends AssinaturaBase {
   cancelar_ao_fim?: boolean
   cancelada_em?: string | null
   meio?: string | null
+  /** Compra feita numa conta de administrador (parte 40): aparece com o selo "Admin" e fica fora dos números. */
+  administrador?: boolean | null
 }
 
 const MIGRACAO = '202609290100_painel_admin.sql'
@@ -49,7 +51,7 @@ export interface DadosPainel {
   sinaisQ: Consulta<SinalUsuario[]>
   /** Todas as assinaturas (inclusive as de teste, para a lista completa). */
   assinaturas: LinhaAssinatura[] | null
-  /** Sem as contas de teste do dono: é o que entra em qualquer número. */
+  /** Sem as contas de teste do dono nem as compras de administrador: é o que entra em qualquer número. */
   reais: LinhaAssinatura[] | null
   testes: number
   usuarios: LinhaUsuario[] | null
@@ -95,20 +97,23 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const lidosPagamento = usarLidos('pagamento')
   // Cortesias valendo (parte 37): no painel contam como assinantes, com o selo "Cortesia" (Tales, 02/11/2026).
-  // Sem a parte colada, a consulta falha e ninguém vira cortesia (o painel segue como antes).
-  const cortesiasQ = usarRpc<Array<{ id_usuario: string }>>(conta, 'listar_cortesias_admin', {}, { ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: CINCO_MIN })
+  // Sem a parte colada, a consulta falha e ninguém vira cortesia (o painel segue como antes). Com a parte 40 a lista
+  // traz também os administradores (tipo 'administrador'), que não contam como assinantes.
+  const cortesiasQ = usarRpc<Array<{ id_usuario: string; tipo?: string | null }>>(conta, 'listar_cortesias_admin', {}, { ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: CINCO_MIN })
   // Uso do Supabase: a mesma consulta da fila (Agora) e da tela Ajustes › Uso do Supabase; aqui só para o botão
   // Atualizar buscar de novo também. Parada nas outras telas.
   const usoSupabaseQ = usarRpc<unknown>(conta, 'uso_supabase_admin', {}, { ativo: parte === 'comando' || parte === 'supabase', validadeMs: 30 * 60_000 })
-  const cortesias = useMemo(() => new Set(Array.isArray(cortesiasQ.dados) ? cortesiasQ.dados.map(c => c.id_usuario) : []), [cortesiasQ.dados])
+  const cortesias = useMemo(() => new Set(Array.isArray(cortesiasQ.dados) ? cortesiasQ.dados.filter(c => c.tipo !== 'administrador').map(c => c.id_usuario) : []), [cortesiasQ.dados])
 
   // "Online" é refeito a cada 10 s pelo último sinal, sem esperar o servidor.
   const [tique, definirTique] = useState(() => Date.now())
   useEffect(() => { const t = window.setInterval(() => definirTique(Date.now()), 10_000); return () => window.clearInterval(t) }, [])
-  const usuarios = useMemo(() => usuariosQ.dados?.map(u => ({ ...u, plano_vigente: u.plano_vigente ?? (cortesias.has(u.id_usuario) ? PLANO_CORTESIA : null), online: estaOnline(u, Math.max(tique, usuariosQ.atualizadoEm ?? 0)) })) ?? null, [usuariosQ.dados, usuariosQ.atualizadoEm, tique, cortesias])
-  const usuariosReais = useMemo(() => usuarios?.filter(u => !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
+  // Administrador aparece em tudo, mas como não assinante, com o acesso "Cortesia de administrador" (Tales, 03/11/2026):
+  // uma compra de teste na conta dele não o faz contar como assinante.
+  const usuarios = useMemo(() => usuariosQ.dados?.map(u => ({ ...u, plano_vigente: u.administrador ? null : u.plano_vigente ?? (cortesias.has(u.id_usuario) ? PLANO_CORTESIA : null), online: estaOnline(u, Math.max(tique, usuariosQ.atualizadoEm ?? 0)) })) ?? null, [usuariosQ.dados, usuariosQ.atualizadoEm, tique, cortesias])
+  const usuariosReais = useMemo(() => usuarios?.filter(u => !u.administrador && !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
   const assinaturas = assinaturasQ.dados ?? null
-  const reais = useMemo(() => assinaturas?.filter(a => !contaDeTeste(a)) ?? null, [assinaturas])
+  const reais = useMemo(() => assinaturas?.filter(a => !foraDosNumeros(a)) ?? null, [assinaturas])
   const sinais = useMemo(() => indexarSinais(Array.isArray(sinaisQ.dados) ? sinaisQ.dados : []), [sinaisQ.dados])
   const eventos = eventosQ.dados ?? null
 

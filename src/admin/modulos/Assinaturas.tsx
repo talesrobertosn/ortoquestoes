@@ -76,7 +76,7 @@ export default function Assinaturas() {
         {a.nome && <span className="a3-sub">{a.usuario}</span>}
         <span style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
           {(ordemNaPessoa.get(a) ?? 0) > 0 && <Selo contorno>Renovação</Selo>}
-          {contaDeTeste(a) && <Selo tom="aviso">Teste</Selo>}
+          {a.administrador ? <Selo solido>Admin</Selo> : contaDeTeste(a) && <Selo tom="aviso">Teste</Selo>}
         </span>
       </span>
     </span> },
@@ -93,7 +93,7 @@ export default function Assinaturas() {
   ]
   const exportar = () => baixarCsv(`ortoquestoes-assinaturas-${new Date().toISOString().slice(0, 10)}.csv`,
     ['Nome', 'E-mail', 'Plano', 'Meio', 'Situação', 'Assinante desde', 'Última cobrança paga', 'Data', 'Qual data', 'Cancela ao fim', 'Teste'],
-    visiveis.map(a => { const x = proximaData(a); return [a.nome, a.usuario, rotuloPlano(a.plano), rotuloMeio(meioDe(a)), situacaoAssinatura(a).rotulo, data(inicioDe(a)), a.ultima_cobranca_em ? data(a.ultima_cobranca_em) : '', x.valor ? data(x.valor) : '', x.rotulo, a.cancelar_ao_fim ? 'sim' : 'não', contaDeTeste(a) ? 'sim' : ''] }))
+    visiveis.map(a => { const x = proximaData(a); return [a.nome, a.usuario, rotuloPlano(a.plano), rotuloMeio(meioDe(a)), situacaoAssinatura(a).rotulo, data(inicioDe(a)), a.ultima_cobranca_em ? data(a.ultima_cobranca_em) : '', x.valor ? data(x.valor) : '', x.rotulo, a.cancelar_ao_fim ? 'sim' : 'não', a.administrador ? 'admin' : contaDeTeste(a) ? 'sim' : ''] }))
   const filtrosAtivos = [
     ...(plano !== 'todos' ? [{ id: 'p', rotulo: rotuloPlano(plano), remover: () => definirPlano('todos') }] : []),
     ...(meio !== 'todos' ? [{ id: 'm', rotulo: rotuloMeio(meio), remover: () => definirMeio('todos') }] : []),
@@ -123,7 +123,7 @@ export default function Assinaturas() {
           <select value={recorte} onChange={e => definirRecorte(e.target.value as Recorte)}>{RECORTES.map(([v, r]) => <option key={v} value={v}>{r}</option>)}</select></label>
       </div>
       <FiltrosAtivos itens={filtrosAtivos} aoLimpar={() => { definirPlano('todos'); definirMeio('todos'); definirRecorte('tudo'); definirBusca('') }} />
-      <p className="a3-mudo a3-pequeno" style={{ padding: '0 20px 12px' }} role="status">{dica} Mostrando {inteiro(visiveis.length)} de {inteiro(linhas.length)}.{p.testes ? ' As de teste do dono aparecem com o selo "Teste" e ficam fora dos números.' : ''}</p>
+      <p className="a3-mudo a3-pequeno" style={{ padding: '0 20px 12px' }} role="status">{dica} Mostrando {inteiro(visiveis.length)} de {inteiro(linhas.length)}.{p.testes ? ' As compras de administrador (selo "Admin") e as de teste do dono (selo "Teste") aparecem aqui e ficam fora dos números.' : ''}</p>
       <Tabela key={grupo} rotulo="Assinaturas" linhas={visiveis} colunas={colunas} chave={a => `${a.id_usuario}:${a.ultima_atualizacao}:${inicioDe(a)}`} porPagina={50}
         ordemInicial={{ coluna: 'desde', sentido: 'desc' }} aoAbrir={a => nav.abrirPessoa(a.id_usuario, 'assinatura')}
         vazio={<div style={{ padding: 20 }}><Estado icone="receita" titulo="Nenhuma assinatura neste recorte" texto={filtrosAtivos.length ? 'Tire um filtro para ver mais.' : undefined} /></div>} />

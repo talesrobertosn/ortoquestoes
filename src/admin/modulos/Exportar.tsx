@@ -48,10 +48,12 @@ export default function Exportar() {
       }
     }))
     // Cortesias (parte 37): a conta sem plano pago e com cortesia valendo sai como "Cortesia", igual ao painel.
+    // Administrador sai como não assinante ("Cortesia de administrador"), mesmo com uma compra de teste valendo.
+    const lista = (dados as unknown as { usuarios?: Array<{ id_usuario: string; plano_vigente: string | null; administrador?: boolean }> }).usuarios
+    if (Array.isArray(lista)) for (const u of lista) if (u.administrador) u.plano_vigente = null
     try {
-      const cortesias = new Set((await chamarRpc<Array<{ id_usuario: string }>>('listar_cortesias_admin', {}, { prazoMs: 30_000 })).map(c => c.id_usuario))
-      const lista = (dados as unknown as { usuarios?: Array<{ id_usuario: string; plano_vigente: string | null }> }).usuarios
-      if (Array.isArray(lista)) for (const u of lista) if (!u.plano_vigente && cortesias.has(u.id_usuario)) u.plano_vigente = 'cortesia'
+      const cortesias = new Set((await chamarRpc<Array<{ id_usuario: string; tipo?: string | null }>>('listar_cortesias_admin', {}, { prazoMs: 30_000 })).filter(c => c.tipo !== 'administrador').map(c => c.id_usuario))
+      if (Array.isArray(lista)) for (const u of lista) if (!u.plano_vigente && !u.administrador && cortesias.has(u.id_usuario)) u.plano_vigente = 'cortesia'
     } catch { /* sem a parte 37: segue sem marcar cortesias */ }
     dadosRef.current = dados
     definirResultado(montarExportacao(dados, opcoes))
