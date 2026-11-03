@@ -6680,18 +6680,18 @@
  },
  "ombro-cotovelo-0475": {
   "incorretas": {
-   "B": "**Supinação não é o mecanismo clássico de Evans.** O modelo proposto para o tipo I envolve pronação forçada.",
-   "C": "**Extensão é um mecanismo alternativo descrito.** Embora possa produzir lesão semelhante, não é a resposta clássica esperada entre estas opções.",
-   "D": "**Flexão não identifica o tipo I.** A pista central é a luxação anterior da cabeça radial associada à ulna fraturada."
+   "B": "**Supinação não é o mecanismo tradicional do tipo I.** Ela não explica a resposta bibliográfica esperada para a luxação anterior da cabeça radial nesse padrão.",
+   "C": "**Extensão pode participar de outra via de produção do tipo I.** Há descrições de hiperextensão, mas a questão pede o mecanismo predominante clássico, para o qual a bibliografia aponta a hiperpronação. Por isso a alternativa não é absolutamente impossível, apenas menos adequada ao que foi cobrado.",
+   "D": "**Flexão isolada não define o mecanismo clássico.** A classificação de Bado I se reconhece pela direção anterior da luxação radial associada à lesão ulnar; entre as opções de mecanismo, a referência tradicional é a hiperpronação."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho. A hiperpronação é o mecanismo clássico cobrado, mas não é o único mecanismo descrito para o tipo I.",
   "referencias": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC4266382/"
+   "https://www.rch.org.au/clinicalguide/guideline_index/fractures/monteggia_fracturedislocations_emergency_department_setting/"
   ],
-  "conceito": "**Bado I descreve a direção da luxação, não um mecanismo exclusivo.** Nesse padrão de Monteggia, a cabeça radial luxa para a frente em associação à fratura da ulna. A hiperpronação do antebraço é o mecanismo indireto clássico de Evans e explica a opção esperada. Também há descrições de hiperextensão e de trauma direto sobre a ulna; por isso, a palavra \"predominantemente\" não deve ser lida como se só existisse uma forma de produzir a lesão.",
-  "correta": "**A, pronação (resposta provável).** A hiperpronação é o mecanismo clássico associado à luxação anterior da cabeça radial no tipo I.",
+  "conceito": "**Bado I classifica a direção da luxação da cabeça radial, não um mecanismo único de trauma.** Na lesão de Monteggia, a fratura da ulna associa-se à perda do alinhamento radiocapitelar; no tipo I, a cabeça radial desloca-se anteriormente. O mecanismo indireto tradicionalmente ensinado para esse padrão é a queda com o antebraço em hiperpronação. A força de rotação pode fraturar a ulna e favorecer a luxação anterior, motivo pelo qual a pronação é a resposta provável entre as opções.\n\nA ressalva é importante: hiperextensão e impacto direto também podem produzir lesões do tipo I. Assim, a alternativa de extensão não deve ser tratada como fisicamente impossível; ela apenas não expressa o mecanismo clássico que a pergunta parece cobrar. Na avaliação de uma fratura ulnar, a lição prática é examinar a articulação do cotovelo: a linha traçada pelo eixo do rádio deve apontar para o capítulo nas incidências adequadas. Isso evita perder a luxação da cabeça radial, independentemente de qual movimento causou o trauma.",
+  "correta": "**A, pronação (resposta provável).** Hiperpronação é o mecanismo indireto clássico associado ao padrão de Monteggia com luxação anterior da cabeça radial.",
+  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho. A hiperpronação é o mecanismo clássico cobrado, mas não é o único mecanismo descrito para o tipo I.",
   "provavel": "A",
-  "geradoEm": "2026-10-17",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "ombro-cotovelo-0476": {
@@ -6870,19 +6870,19 @@
  },
  "ombro-cotovelo-0483": {
   "incorretas": {
-   "A": "**Limitação de movimento não decide sozinha.** Pode acompanhar sinovite ou lesão estável e precisa ser interpretada com imagem e sintomas.",
-   "B": "**Instabilidade em valgo é questão ligamentar.** Pode contribuir para a sobrecarga lateral, mas não é, por si, a indicação de operar a lesão osteocondral.",
-   "C": "**Hipertrofia da cabeça radial é achado associado.** Não demonstra instabilidade do fragmento como um corpo livre demonstra."
+   "A": "**Limitação da amplitude é um sintoma, não uma indicação isolada tão específica.** Pode decorrer de dor, sinovite, contratura ou lesão instável; sua causa e a imagem da superfície articular precisam ser avaliadas. Restrição importante também pode influenciar a decisão operatória, mas a alternativa D oferece evidência mais direta.",
+   "B": "**Instabilidade em valgo aponta para o mecanismo de sobrecarga ou para lesão ligamentar associada.** Ela não demonstra, por si só, que o fragmento osteocondral do capítulo se soltou nem é a principal indicação cirúrgica perguntada.",
+   "C": "**Hipertrofia da cabeça radial é um achado associado, não prova de fragmento instável.** A decisão de operar a osteocondrite depende sobretudo da estabilidade da lesão, dos sintomas e da resposta ao tratamento, não desse achado isolado."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho. Corpo livre é uma indicação clara entre as opções, mas lesão instável ou falha do tratamento conservador também podem justificar cirurgia.",
   "referencias": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10901169/",
-   "https://pubmed.ncbi.nlm.nih.gov/38635768/"
+   "https://posna.org/physician-education/study-guide/osteochondritis-dissecans-elbow",
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC10901169/"
   ],
-  "conceito": "**Na osteocondrite dissecante do capítulo, a decisão depende da estabilidade.** Uma lesão estável em adolescente pode cicatrizar com interrupção da atividade que sobrecarrega o cotovelo. Quando o fragmento se solta, o corpo livre provoca travamento e mostra que a superfície osteocondral já perdeu estabilidade; repouso não remove esse fragmento. Por isso, sua presença é a indicação cirúrgica mais nítida entre as alternativas. O procedimento pode incluir retirada do corpo livre e tratamento do defeito, conforme tamanho e viabilidade do fragmento.",
-  "correta": "**D, presença de corpo livre (resposta provável).** É sinal de fragmento destacado e pode produzir sintomas mecânicos.",
+  "conceito": "**A estabilidade do fragmento orienta o tratamento da osteocondrite dissecante do capítulo.** Em uma lesão estável, com cobertura cartilaginosa preservada e paciente ainda imaturo, interromper a atividade de sobrecarga e acompanhar a cicatrização pode ser apropriado. Um corpo livre intra-articular indica que houve separação de material osteocondral; ele pode causar ressalto ou bloqueio mecânico e não será eliminado apenas com repouso. Entre as alternativas apresentadas, sua presença é o sinal mais direto de que se deve considerar tratamento cirúrgico.\n\nA operação não se resume obrigatoriamente à retirada do corpo livre. É preciso avaliar também o defeito no capítulo e o tamanho e a viabilidade do fragmento para escolher entre desbridamento, estimulação medular, fixação ou reconstrução osteocondral. Outras circunstâncias podem justificar cirurgia, como lesão instável ou falha do tratamento conservador; por isso a resposta provável não significa que o corpo livre seja a única indicação possível. Limitação de movimento pode integrar o quadro, mas isoladamente não informa a estabilidade da superfície articular tão claramente quanto um fragmento destacado.",
+  "correta": "**D, presença de corpo livre (resposta provável).** Ela demonstra separação do fragmento osteocondral e pode produzir sintomas mecânicos, justificando avaliação cirúrgica da articulação e do defeito de origem.",
+  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho. Corpo livre é uma indicação clara entre as opções, mas lesão instável ou falha do tratamento conservador também podem justificar cirurgia.",
   "provavel": "D",
-  "geradoEm": "2026-10-18",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "ombro-cotovelo-0484": {
