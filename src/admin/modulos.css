@@ -481,3 +481,13 @@
 @media (max-width: 899px) { .us-duas { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 480px) { .us-lista li { grid-template-columns: minmax(0, 1fr) auto; } .us-lista__barra { grid-column: 1 / -1; grid-row: 2; } }
 @media (prefers-reduced-motion: reduce) { .us-medidor__trilho i { transition: none; } }
+
+/* Ficha: quem é a pessoa, logo abaixo do nome (etapa · serviço · cidade · aparelho). */
+.a3-ficha-quem { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 0; color: var(--a3-tinta); font-size: 14px; font-weight: 500; line-height: 1.4; }
+.a3-ficha-quem > span + span::before { content: "·"; margin: 0 7px; color: var(--a3-tinta-2); opacity: .6; font-weight: 400; }
+/* No celular, um dado por linha: sem ponto solto no começo da linha quando o hospital quebra. */
+@media (max-width: 720px) {
+  .a3-ficha-quem { display: grid; gap: 1px; }
+  .a3-ficha-quem > span + span::before { content: none; }
+  .a3-ficha-quem > span:first-child { font-weight: 650; }
+}

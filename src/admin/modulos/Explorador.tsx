@@ -3,7 +3,7 @@ import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { acertoAposRevisao, acertoReal, baixarCsv, data as dataAntiga, rotuloPagina, somarAcertos } from '../../componentes/admin/formatos'
 import { rotuloPlano } from '../../componentes/admin/rotulos'
 import { servicoConhecido } from '../../componentes/admin/servicosConhecidos'
-import { PLANOS_RECENTE_DIAS, textoPlanos, viuPlanos } from '../../componentes/admin/sinais'
+import { planosEmDestaque, textoPlanos, viuPlanos } from '../../componentes/admin/sinais'
 import { usarPainel } from '../dados/painel'
 import { DICA_FILTRO, MINIMO_PARA_ACERTO, ROTULO_FILTRO, acertoDe, nomeDe, passaFiltro, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
@@ -47,7 +47,7 @@ export default function Explorador() {
           <span style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
             {u.administrador && <Selo solido>Admin</Selo>}
             {u.plano_vigente && <Selo tom="ok">{rotuloPlano(u.plano_vigente)}</Selo>}
-            {s && viuPlanos(s) && !u.plano_vigente && !u.administrador && <Selo tom={viuPlanos(s, PLANOS_RECENTE_DIAS) ? 'aviso' : undefined}>{textoPlanos(s)}</Selo>}
+            {s && viuPlanos(s) && !u.plano_vigente && !u.administrador && <Selo tom={planosEmDestaque(s.planos_ultima) ? 'aviso' : undefined}>{textoPlanos(s)}</Selo>}
           </span>
         </span>
       </span>
