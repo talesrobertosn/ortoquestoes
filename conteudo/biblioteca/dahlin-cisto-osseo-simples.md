@@ -354,7 +354,7 @@ O Tachdjian é menos otimista que o Campbell. Depois de SCAGLIETTI, os relatos c
 conceito: O método de SCAGLIETTI é a punção do cisto com injeção intralesional de acetato de metilprednisolona, com resultados favoráveis em 90% no trabalho original; os livros posteriores relatam 40% a 80% (Tachdjian) e mais de 90% (Campbell 15).
 como: O TARO 2011 perguntou em que consiste o método de SCAGLIETTI; o ENARE R4 2025 repetiu a pergunta num adulto jovem com cisto unicameral do úmero proximal, oferecendo curetagem com cimento, ressecção em bloco, injeção de metilprednisolona, curetagem com enxerto e radioterapia.
 armadilha: Escolher curetagem com enxerto, que era o tratamento anterior a SCAGLIETTI e hoje é reservado às falhas.
-alerta: A `tumores-0361` descreve lesão "meta-epifisária" num adulto jovem. O Tachdjian (p. 1003) diz que o acometimento da epífise é raro e corresponde a forma agressiva do cisto ativo, e (p. 1005) pede evitar o supertratamento no esqueleto maduro; a questão, porém, pergunta só o método de SCAGLIETTI, e o gabarito (injeção de metilprednisolona) é o que os livros sustentam.
+alerta: O gabarito oficial da `tumores-0361` (ENARE R4 2025) é a ressecção em bloco com enxertia, mas o método de SCAGLIETTI é a injeção de metilprednisolona no cisto (Dahlin, p. 342; Tachdjian, p. 1006), e o Tachdjian põe a ressecção em bloco entre os tratamentos antigos, hoje quase abandonados. O site mantém o gabarito oficial e registra a divergência. O enunciado ainda descreve lesão "meta-epifisária" num adulto jovem, forma rara e agressiva do cisto ativo (Tachdjian, p. 1003).
 !fim
 
 # Tratamento: medula óssea, descompressão, hastes e curetagem {radar=fundamento}
