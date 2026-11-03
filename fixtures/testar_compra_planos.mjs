@@ -89,7 +89,14 @@ try {
       const cartao = topo.locator('.vd-plano', { has: pagina.getByRole('heading', { name: nome, exact: true }) })
       assert.ok((await cartao.innerText()).includes(preco), `${nome} sem o preço por mês ${preco}`)
     }
-    assert.ok((await topo.locator('.vd-plano--destaque').innerText()).includes('Melhor custo-benefício'.toUpperCase()) || (await topo.locator('.vd-plano--destaque').innerText()).includes('Melhor custo-benefício'), 'Anual sem o selo')
+    // Destaque no mensal (03/11/2026): selo, botão dourado e primeiro da fila; o anual sem selo.
+    const destaque = topo.locator('.vd-plano--destaque')
+    assert.equal(await destaque.count(), 1)
+    assert.ok(await destaque.evaluate((e) => e.classList.contains('vd-plano--mensal')), 'O destaque não é o mensal')
+    assert.match(await destaque.innerText(), /comece por aqui/i, 'Mensal sem o selo')
+    assert.ok(await destaque.locator('.vd-botao-destaque').count() === 1, 'Mensal sem o botão dourado')
+    assert.equal(await topo.locator('.vd-plano--anual .vd-plano__selo').count(), 0, 'O anual ainda tem selo')
+    assert.ok((await topo.locator('.vd-plano--anual').innerText()).includes('-25%'), 'O anual perdeu o desconto')
     assert.ok((await pagina.locator('.vd-heroi').innerText()).includes('7 dias de garantia'), 'Garantia fora do topo')
     // Nenhum total de questões: nem o da contagem das provas, nem o do acervo.
     const texto = await pagina.locator('main, body').first().innerText()
@@ -223,6 +230,12 @@ try {
     const [total, janela] = await pagina.evaluate(() => [document.documentElement.scrollWidth, innerWidth])
     assert.ok(total <= janela, `Rolagem lateral em ${largura}x${altura}: ${total} > ${janela}`)
     assert.equal(await pagina.locator('.vd-anima').count(), 0, 'Animação ligada com movimento reduzido')
+    if (largura === 390) {
+      // No celular, o mensal vem primeiro, inteiro; semestral e anual logo abaixo, lado a lado.
+      const caixa = (id) => pagina.locator(`.vd-heroi .vd-plano--${id}`).boundingBox()
+      const [m, s, a] = [await caixa('mensal'), await caixa('semestral'), await caixa('anual')]
+      assert.ok(m.y < s.y && Math.abs(s.y - a.y) < 2 && s.x < a.x && m.width > s.width * 1.8, 'Ordem dos planos no celular')
+    }
     await contexto.close()
   }
   console.log('Compra pela página de planos: ok (visitante, Pix com QR, Pix confirmado, Pix sem QR, cartão, volta com plano, preço antigo, celular)')

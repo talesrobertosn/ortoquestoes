@@ -3,16 +3,16 @@ import { recurso } from '../../config'
 import { href } from '../../util/rotas'
 import { linkConta } from '../../conta/passagem'
 import { PRECO_DE_ABERTURA, real } from '../../dados/planos'
-import { PLANOS_PIPOCA, centavos, cobranca, degrauAnual, descontoPct, economia, porDia, porMes, seloPlano, semMoeda, type Plano } from '../../dados/vendas'
+import { LEMBRETE_DESTAQUE, PLANOS_PIPOCA, centavos, cobranca, descontoPct, economia, porDia, porMes, seloPlano, semMoeda, type Plano } from '../../dados/vendas'
 import { IconePix, IconeCartao } from './IconesPagamento'
 
 const TAMANHO: Record<string, string> = { mensal: '1 mês', semestral: '6 meses', anual: '12 meses' }
 
 /**
- * Os três planos lado a lado, como os tamanhos de pipoca do cinema: o mensal
- * ancora o preço, o semestral fica no meio e o anual, maior, salta aos olhos.
- * No celular, o anual vem primeiro, inteiro, e os outros dois logo abaixo, lado
- * a lado, para comparar sem rolar de lado. No computador, as linhas dos três
+ * Os três planos lado a lado. Desde 03/11/2026 o mensal é o destaque (Tales): vem à
+ * esquerda, maior, com o selo, o baú e o botão dourado, e o semestral e o anual ficam
+ * ao lado, com o desconto certo à mostra. No celular, o mensal vem primeiro, inteiro,
+ * e os outros dois logo abaixo, lado a lado, para comparar sem rolar de lado. No computador, as linhas dos três
  * cartões se alinham (subgrid): nome, preço, total, economia e botão na mesma altura.
  */
 export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoEscolher, planos = PLANOS_PIPOCA, planosAntigos = [] }: {
@@ -27,8 +27,6 @@ export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoE
   /** Os planos em que a pessoa mantém o preço de antes do reajuste (selo "Seu preço de sempre"). */
   planosAntigos?: readonly string[]
 }) {
-  const [, semestral, anual] = planos
-  const degrau = degrauAnual(semestral, anual)
   return (
     <div className={`vd-planos vd-planos--${local}`} role="list" aria-label="Planos de assinatura">
       {planos.map((p) => {
@@ -54,7 +52,7 @@ export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoE
                 : <span className="vd-plano__neutro">Sem fidelidade · cancele quando quiser</span>}
             </p>
             <p className="vd-plano__dia"><Icone nome="relogio" tamanho={14} /> {centavos(porDia(p))} por dia</p>
-            {p.destaque ? <p className="vd-plano__degrau">{degrau.texto}</p> : <span className="vd-plano__vazio" aria-hidden="true" />}
+            {p.destaque ? <p className="vd-plano__lembrete">{LEMBRETE_DESTAQUE}</p> : <span className="vd-plano__vazio" aria-hidden="true" />}
             {!conta && pagamentos
               ? <a className={classe} href={href(linkConta('criar', `/assinatura?plano=${p.id}`))} {...dados}>Assinar o {p.nome.toLowerCase()}</a>
               : <button className={classe} type="button" disabled={semCompra} onClick={() => aoEscolher(p)} {...dados}>{rotulo(p)}</button>}
