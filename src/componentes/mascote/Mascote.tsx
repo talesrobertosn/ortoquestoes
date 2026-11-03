@@ -3,6 +3,7 @@ import { ler, gravar } from '../../estado/armazenamento'
 import { COMPORTAMENTOS, entraNoSorteio, fantasiaDoMes, type Fantasia, type IdComportamento } from './comportamentos'
 import { SPRITE_ESQUELETO, folhaEsqueleto } from './sprites'
 import { urlCss } from '../../config'
+import { mapasDeLuz } from './luz'
 import { FALAS, FALAS_GERAIS, FALAS_HALLOWEEN } from './falas'
 import './Mascote.css'
 
@@ -28,8 +29,12 @@ function sorteio(fantasia: Fantasia): IdComportamento[] {
   return COMPORTAMENTOS.filter((c) => entraNoSorteio(c) && c.halloween === (fantasia === 'halloween')).map((c) => c.id)
 }
 
-export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, interativo = true, className = '', style }: {
+export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, falas, interativo = true, decorativo = false, className = '', style }: {
   comportamento?: IdComportamento
+  /** Falas só desta aparição (ex.: a pausa na fogueira da página inicial), no lugar das do comportamento. */
+  falas?: readonly string[]
+  /** true: enfeite de uma cena (fora do teclado e do leitor de tela); o clique com o mouse continua. */
+  decorativo?: boolean
   /** Reação curta (31/10/2026): toca uma vez este comportamento e volta ao de antes (ex.: comemorar a meta do dia). */
   reacao?: IdComportamento | null
   fantasia?: Fantasia; falar?: boolean
@@ -50,7 +55,7 @@ export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, i
 
   const novaFala = (id: IdComportamento) => {
     const sorte = Math.random()
-    const pool = fantasia === 'halloween' && sorte < 0.25 ? FALAS_HALLOWEEN : sorte < 0.65 ? FALAS[id] : FALAS_GERAIS
+    const pool = falas?.length ? falas : fantasia === 'halloween' && sorte < 0.25 ? FALAS_HALLOWEEN : sorte < 0.65 ? FALAS[id] : FALAS_GERAIS
     const f = sortear(pool, ultimaFala.current)
     ultimaFala.current = f
     definirFala(f)
@@ -69,6 +74,9 @@ export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, i
     return () => { window.clearTimeout(mostrar); window.clearTimeout(esconder); window.clearInterval(ciclo) }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [atual, falar])
+
+  // Quem usa pode calar o mascote no meio (o diretor de cena da página inicial): a fala aberta fecha na hora.
+  useEffect(() => { if (!falar) definirFala(null) }, [falar])
 
   const clicar = () => {
     const agora = Date.now()
@@ -94,14 +102,14 @@ export function Mascote({ comportamento, reacao, fantasia: fixa, falar = true, i
   const folha = folhaEsqueleto(mostrado)
   const desenho = (
     <span className="mascote__sprite" aria-hidden="true" style={{
-      '--sprite': urlCss(folha.src.slice(1)), '--linha': folha.linha, '--linhas': folha.linhas,
+      '--sprite': urlCss(folha.src.slice(1)), '--linha': folha.linha, '--linhas': folha.linhas, ...mapasDeLuz(folha.src),
       '--quadros': SPRITE_ESQUELETO.quadrosPorLinha, '--dur': reagindo ? '1.2s' : atual === 'dormir' ? '2.6s' : atual === 'malabares' || atual === 'acenar' ? '1.1s' : '1.5s',
     } as CSSProperties} />
   )
   return (
-    <span className={`mascote mascote--${mostrado}${reagindo ? ' mascote--reagindo' : ''} ${className}`} style={style}>
+    <span className={`mascote mascote--${mostrado}${reagindo ? ' mascote--reagindo' : ''} ${className}`} style={style} aria-hidden={decorativo || undefined}>
       {interativo
-        ? <button type="button" className="mascote__corpo" onClick={clicar} aria-label={`O esqueleto mascote está ${nome}. Toque para ele fazer outra coisa.`}>{desenho}</button>
+        ? <button type="button" className="mascote__corpo" onClick={clicar} tabIndex={decorativo ? -1 : undefined} aria-label={`O esqueleto mascote está ${nome}. Toque para ele fazer outra coisa.`}>{desenho}</button>
         : <span className="mascote__corpo">{desenho}</span>}
       {fala && <span className="mascote__balao" role="status">{fala}</span>}
     </span>

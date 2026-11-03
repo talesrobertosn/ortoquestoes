@@ -1,0 +1,34 @@
+{
+  "id": "pe-tornozelo-0301",
+  "origem": "TARO 2026",
+  "prova": "TARO",
+  "simulado": false,
+  "tema": "Pé e tornozelo",
+  "temaSlug": "pe-tornozelo",
+  "subtema": "Hálux valgo",
+  "enunciado": "O procedimento de CHEVRON distal para correção do hálux valgo é recomendado para os pacientes com ângulo intermetatarsal",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "maior que 15° e idade maior que 50 anos.",
+      "porque": "Os dois critérios estão errados: um AIM acima de 15° exige deslizamento maior do que a técnica suporta, e a idade acima de 50 anos aumenta o risco de colapso."
+    },
+    {
+      "letra": "B",
+      "texto": "maior que 15° e idade menor que 50 anos.",
+      "porque": "A idade está certa, mas com AIM acima de 15° falta contato ósseo depois do deslizamento. Nesses casos, indica-se uma osteotomia diafisária ou proximal."
+    },
+    {
+      "letra": "C",
+      "texto": "menor que 15° e idade maior que 50 anos.",
+      "porque": "O ângulo está certo, mas acima dos 50 anos a qualidade óssea pesa contra a técnica, e muitos preferem osteotomias com maior superfície de contato."
+    },
+    {
+      "letra": "D",
+      "texto": "menor que 15° e idade menor que 50 anos.",
+      "porque": "A correção necessária cabe no deslizamento seguro da cabeça, e o osso de boa qualidade consolida o pequeno contato da osteotomia."
+    }
+  ],
+  "gabarito": "D"
+}

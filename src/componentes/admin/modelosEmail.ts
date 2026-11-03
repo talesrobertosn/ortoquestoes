@@ -11,7 +11,7 @@ import { LIMITES_HABILITADOS } from '../../config'
 import {
   TIPOS, perfilDosDados, primeiroNome, type DadosCartaBanco, type EnvioHistorico, type PerfilCarta,
 } from '../../../supabase/functions/_shared/cartas.ts'
-import type { LinhaUsuario } from './AdminUsuarios'
+import type { LinhaUsuario } from '../../admin/dados/pessoas'
 
 export * from '../../../supabase/functions/_shared/cartas.ts'
 

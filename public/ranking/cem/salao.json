@@ -1,0 +1,62 @@
+{
+  "base": [
+    480,
+    270
+  ],
+  "escala": 3,
+  "pedestais": {
+    "1": {
+      "cx": 318,
+      "topo": 170
+    },
+    "2": {
+      "cx": 246,
+      "topo": 186
+    },
+    "3": {
+      "cx": 390,
+      "topo": 192
+    }
+  },
+  "tochas": [
+    {
+      "x": 199,
+      "y": 107
+    },
+    {
+      "x": 418,
+      "y": 107
+    },
+    {
+      "x": 94,
+      "y": 98
+    }
+  ],
+  "estandartes": [
+    {
+      "x": 318,
+      "y": 34,
+      "lugar": 1
+    },
+    {
+      "x": 246,
+      "y": 44,
+      "lugar": 2
+    },
+    {
+      "x": 390,
+      "y": 44,
+      "lugar": 3
+    }
+  ],
+  "texto": {
+    "x0": 0,
+    "x1": 190
+  },
+  "recorte_celular": {
+    "x0": 196,
+    "x1": 476
+  },
+  "luz_blend": "screen",
+  "notas": "Salão dos Campeões aberto para a mata (scripts/cenarios/salao_cem.py). Pedestais: cx e topo = onde os pés do cavaleiro pisam (px da arte). Tochas: x, y = a base da chama (o alto do bocal pintado); a terceira (na pilastra da esquerda) fica sob o vidro da missão e é opcional. Estandartes: x = centro, y = haste; o do 1º lugar fica na frente do vitral, em contraluz. salao-luz.webp vai por cima dos cavaleiros com mix-blend-mode: screen; salao-frente.webp (hera) por cima de tudo."
+}

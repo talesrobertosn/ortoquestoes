@@ -21,10 +21,10 @@ try {
   for (const [plano, valor] of Object.entries(novos)) assert.match(precos, new RegExp(`${plano}: \\{ meses: \\d+, centavos: ${valor} \\}`), `precos.ts: ${plano} novo`)
   for (const [plano, valor] of Object.entries(antigos)) assert.match(precos, new RegExp(`${plano}: ${valor}\\b`), `precos.ts: ${plano} antigo`)
 
-  const sql = await readFile('supabase/migrations/202611070000_reajuste_escada.sql', 'utf8')
+  const sql = await readFile('supabase/migrations/202611030200_reajuste_escada.sql', 'utf8')
   assert.ok(sql.includes(`valor_centavos = ${novos.mensal}`))
   for (const plano of ['semestral', 'anual']) assert.ok(sql.includes(`valor_centavos in (${antigos[plano]}, ${novos[plano]})`), `SQL: ${plano}`)
-  const colar = await readFile('supabase/colar-no-painel/sql-202611070000-parte36-reajuste-escada.sql', 'utf8')
+  const colar = await readFile('supabase/colar-no-painel/sql-202611030200-parte39-reajuste-escada.sql', 'utf8')
   assert.ok(colar.includes(sql), 'A cópia para o painel difere da migração')
 
   // Nenhuma função cobra um valor escrito à mão: todas passam por precos.ts.

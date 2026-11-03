@@ -95,6 +95,10 @@ for m, q in QS:
             erros.append(f"{rot}: itálico com asterisco simples em '{t[:40]}'")
         if "==" in t:
             erros.append(f"{rot}: marca-texto em '{t[:40]}'")
+    for letra, t in q["inc"].items():
+        # As letras são embaralhadas na tela: "**X** também..." pode aparecer em primeiro e perde o sentido.
+        if re.match(r"\*\*[^*]+\*\* também\b", t):
+            erros.append(f"{rot}: análise da {letra} começa com 'também'; escreva o motivo próprio")
     if re.search(r"\b(EXCETO|INCORRETA|assinale)\b", q["enun"], re.I):
         erros.append(f"{rot}: enunciado negativo ou com 'assinale' (a banca não usa)")
     if re.search(r"_{3,}|\.\.\.|…", q["enun"]):
@@ -107,6 +111,13 @@ for m, q in QS:
         erros.append(f"{rot}: conceito ou análise de alternativa vazio")
     if q.get("img") and not (PASTA / "img" / f"{q['img'][0]}.png").exists():
         erros.append(f"{rot}: figura {q['img'][0]}.png não encontrada")
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from checar_simulados import checar  # noqa: E402  portão de estilo (FLUXO-MESTRE.md, seção 6)
+
+_e, _a = checar([(f"[{m.__name__} p{q.get('pag')}] {q['enun'][:50]}", q) for m, q in QS])
+erros += _e
+avisos += _a
 
 repetidos = [i for i, n in Counter(q["id"] for _, q in QS if q.get("id")).items() if n > 1]
 if repetidos:

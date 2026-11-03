@@ -20,7 +20,7 @@ MIGRACAO_ADMIN = (RAIZ / "supabase/migrations/202609231450_admin_assinaturas.sql
 MIGRACAO_ADMIN_EVENTOS = (RAIZ / "supabase/migrations/202609261540_admin_eventos.sql").read_text()
 # O painel foi dividido em abas: a página e os componentes em componentes/admin.
 PAGINA_ADMIN = (RAIZ / "src/paginas/AdminAssinaturas.tsx").read_text() + "".join(
-    arquivo.read_text() for arquivo in sorted((RAIZ / "src/componentes/admin").glob("*.ts*")))
+    arquivo.read_text() for arquivo in sorted([*(RAIZ / "src/componentes/admin").glob("*.ts*"), *(RAIZ / "src/admin").rglob("*.ts*")]))
 PAINEL_ADMIN = (RAIZ / "supabase/migrations/202609290100_painel_admin.sql").read_text()
 PAGINA_ASSINATURA = (RAIZ / "src/paginas/Assinatura.tsx").read_text()
 TERMOS = (RAIZ / "src/paginas/Termos.tsx").read_text()
@@ -255,7 +255,12 @@ for trecho in (
 ):
     assert trecho in RANKING_RPG, f"Ranking com movimento incompleto: {trecho}"
 assert "usuario_id uuid" not in RANKING_RPG.split("create function public.obter_ranking_com_movimento", 1)[1].split("language plpgsql", 1)[0]
-assert "linha.posicao <= 50" in PAGINA_RANKING, "A linha própria fora do top 50 não pode entrar na lista"
+# Salão dos Cem (31/10/2026): a lista ficou em componentes/cem/. A linha própria fora do top só aparece à parte.
+CLASSIFICACAO = (RAIZ / "src/componentes/cem/Classificacao.tsx").read_text()
+REGRAS_CEM = (RAIZ / "src/componentes/cem/regras.ts").read_text()
+assert "export const TOP_LISTA = 50" in REGRAS_CEM and "export const TOP_MAXIMO = 100" in REGRAS_CEM
+assert "l.posicao <= TOP_LISTA" in CLASSIFICACAO and "l.posicao > TOP_LISTA && l.posicao <= TOP_MAXIMO" in CLASSIFICACAO, "A linha própria fora do top 50 não pode entrar na lista"
+assert "eu.posicao > TOP_MAXIMO ? eu : null" in CLASSIFICACAO, "Quem está fora do top 100 aparece separado, no fim"
 # As avaliações dos comentários só chegam ao painel de quem é administrador.
 for trecho in (
     "security definer",

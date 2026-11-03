@@ -80,6 +80,16 @@ try {
   const fim = m.calcularCronograma({ areas: [soUma], diasSemana: [], ritmo: 20, criadoEm: t0 }, cartas, m.ler('flashcards:registros', {}), t0 + 6000)
   assert.equal(fim.novosRestantes, 0); assert.equal(fim.previsao, null)
 
+  // O prazo dos botões de autoavaliação acompanha o degrau da escada (antes era sempre "3 dias" e "10 dias").
+  assert.equal(m.prazoDaAvaliacao(undefined, 'errei', t0), 'volta hoje')
+  assert.equal(m.prazoDaAvaliacao(undefined, 'hesitei', t0), 'volta em 3 dias')
+  assert.equal(m.prazoDaAvaliacao(undefined, 'sabia', t0), 'volta em 10 dias')
+  const umAcerto = { c: true, q: t0, sequencia: 1, confianca: 'seguro', proximaRevisao: t0 + 10 * DIA }
+  assert.equal(m.prazoDaAvaliacao(umAcerto, 'sabia', t0), 'volta em 30 dias')
+  assert.equal(m.prazoDaAvaliacao(umAcerto, 'hesitei', t0), 'volta em 7 dias')
+  assert.equal(m.prazoDaAvaliacao({ ...umAcerto, sequencia: 4 }, 'sabia', t0), 'sai da fila: dominado')
+  assert.equal(m.prazoDaAvaliacao({ c: false, q: t0, sequencia: 0 }, 'sabia', t0), 'volta em 10 dias')
+
   console.log('aprendizagem dos flashcards: ok')
 } finally {
   await rm(pasta, { recursive: true, force: true })

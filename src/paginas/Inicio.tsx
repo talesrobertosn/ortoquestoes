@@ -43,6 +43,7 @@ import { EXIGIR_CONTA_PARA_QUESTOES } from '../config'
 import { planoRevisao } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import { META_STREAK_DIARIA, calcularStreak } from '../estado/streak'
+import { primeiroNome } from '../util/primeiroNome'
 import { FUSO_DIA, chaveDia } from '../estado/limiteDiario'
 import { proximaFraseInicio } from '../dados/frasesInicio'
 import '../estilos/paginas/Inicio.css'
@@ -60,16 +61,6 @@ const CompletarPerfil = lazy(() => import('../componentes/CompletarPerfil'))
  *   a meta do cronograma, a revisão de hoje ou um treino rápido), o progresso
  *   e a sequência ao lado, atalhos, "quase lá" e o resto mais abaixo.
  */
-
-/**
- * Primeiro nome, como os e-mails (primeiroNome em supabase/functions/_shared/cartas.ts):
- * vazio quando o cadastro não traz um nome que dê para chamar a pessoa.
- */
-function primeiroNome(nome?: string | null): string {
-  const primeiro = (nome ?? '').trim().split(/\s+/)[0] ?? ''
-  if (!primeiro || /[@\d_]/.test(primeiro) || primeiro.length < 2 || primeiro.length > 20) return ''
-  return primeiro.charAt(0).toLocaleUpperCase('pt-BR') + primeiro.slice(1).toLocaleLowerCase('pt-BR')
-}
 
 /** Tato dos e-mails (docs/emails/TOM.md): abaixo de 10 questões não se mostra o número. */
 const MINIMO_PARA_NUMERO = 10

@@ -40,3 +40,5 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | coluna-0049 | Choque medular termina em 24 a 48 horas, bulbocavernoso (TEOT 2022) | posts/2026-10-23-box-isquemia (stories) |
 | coluna-0281 | Longo do pescoço afastado na via anterior C6-C7, cadeia simpática (TARO 2026) | posts/2026-10-27-mecanica-longo-do-pescoco (stories) |
 | trauma-0764 | Fratura do colo do tálus, Hawkins III: subtalar e tibiotalar (TEOT 2025) | posts/2026-10-31-casa-assombrada-talus (stories) |
+| pediatria-0525 | Fratura fisária do úmero distal no lactente, que imita luxação (TARO 2025) | posts/2026-11-01-grupo-cotovelo-lactente (feed) |
+| ombro-cotovelo-0454 | Lesão traumática do subescapular: não leva a mão às costas, reparo cirúrgico (TARO 2024) | posts/2026-11-01-grupo-cotovelo-lactente (stories) |

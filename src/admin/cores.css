@@ -1,0 +1,285 @@
+/* ==========================================================================
+   Painel: cores do site (revisão de 02/11/2026, Tales: "seguir o design do site, as cores do site, se inspire na
+   página inicial; o degradê ficou feio"). O painel usa os mesmos tokens do site (src/estilos/tokens.css), que já
+   trocam sozinhos no tema escuro: porcelana, superfície, grafite, ardósia, verdete, ouro, acerto, erro.
+   Sem degradê. Sentido fixo das cores de pessoa:
+     assinante = verdete (a cor da marca) · viu os planos = ouro · não assinante = ardósia.
+   A cor nunca é a única pista: todo grupo tem nome, número e selo escrito.
+   ========================================================================== */
+.a3 {
+  --a3-lona: var(--porcelana);
+  --a3-papel: var(--superficie);
+  --a3-alt: var(--superficie-2);
+  --a3-recuo: var(--superficie-2);
+  --a3-tinta: var(--grafite);
+  --a3-tinta-2: var(--grafite);
+  --a3-cinza: var(--ardosia);
+  --a3-cinza-2: var(--traco-forte);
+  --a3-linha: var(--traco);
+  --a3-linha-2: var(--traco-forte);
+  --a3-acento: var(--verdete);
+  --a3-acento-veu: var(--verdete-veu);
+  --a3-ok: var(--acerto);
+  --a3-ok-veu: var(--acerto-veu);
+  --a3-aviso: var(--aviso);
+  --a3-aviso-veu: var(--aviso-veu);
+  --a3-erro: var(--erro);
+  --a3-erro-veu: var(--erro-veu);
+  --a3-ouro: var(--ouro);
+  --a3-serie-1: var(--verdete);
+  --a3-serie-2: var(--ouro);
+  --a3-serie-3: var(--prata);
+  --a3-sombra: var(--sombra);
+  --a3-r-cartao: var(--raio-cartao, 16px);
+  --a3-r-controle: var(--raio-controle, 10px);
+  /* Pessoa: assinante (verdete), viu os planos (ouro), não assinante (ardósia). */
+  --cor-assinante: var(--verdete); --cor-assinante-veu: var(--verdete-veu); --cor-assinante-texto: var(--verdete);
+  --cor-lead: var(--ouro);         --cor-lead-veu: var(--ouro-veu);         --cor-lead-texto: var(--ouro-texto);
+  --cor-gratis: var(--ardosia);    --cor-gratis-veu: var(--prata-veu);      --cor-gratis-texto: var(--grafite);
+  --cor-sobre: var(--sobre-destaque, #fff);
+}
+:root[data-tema="escuro"] .a3 { --cor-sobre: #0f1413; }
+
+/* Botão principal, item ativo, filtros e abas: verdete, como no site. */
+.a3-botao:not(.a3-botao--contorno):not(.a3-botao--fantasma):not(.a3-botao--suave):not(.a3-botao--perigo):not(:disabled) { background: var(--verdete); border-color: var(--verdete); color: var(--cor-sobre); }
+.a3-botao:not(.a3-botao--contorno):not(.a3-botao--fantasma):not(.a3-botao--suave):not(.a3-botao--perigo):not(:disabled):hover { background: var(--verdete-tinta); }
+.a3-filtro[aria-pressed="true"] { background: var(--verdete); border-color: var(--verdete); border-style: solid; color: var(--cor-sobre); }
+.a3-abas-tela a[aria-current="page"] { color: var(--verdete); }
+.a3-aba-grande[aria-selected="true"]::after { background: var(--verdete); }
+.a3-aba-grande[aria-selected="true"] .a3-aba-grande__numero { color: var(--verdete); }
+.a3-abas-locais [aria-selected="true"] { color: var(--verdete); }
+.a3-cabeca .a3-rotulo { color: var(--verdete); }
+/* Menu lateral: ícones em ardósia; a área e o item abertos em verdete, com o véu do site. */
+.a3-nav-grupo .a3-nav-area[aria-current] { background: var(--verdete-veu); color: var(--verdete); }
+.a3-nav-grupo .a3-nav-parte[aria-current="page"] { background: var(--verdete-veu); color: var(--verdete); box-shadow: none; font-weight: 600; }
+.a3-movel-barra a[aria-current], .a3-movel-barra a[aria-current] .a3-icone { color: var(--verdete); }
+.a3-movel-partes a[aria-current="page"] { background: var(--verdete); color: var(--cor-sobre); }
+/* Gráficos: verdete e ouro. */
+.a3-g-area { fill: color-mix(in srgb, var(--verdete) 12%, transparent) !important; }
+.a3-g-linha:not(.a3-g-linha--b):not(.a3-g-linha--acento) { stroke: var(--verdete) !important; }
+.a3-g-ponto { stroke: var(--verdete) !important; }
+.a3-chave--linha { border-top-color: var(--verdete) !important; }
+.a3-funil__trilho span:not(.perda) { background: var(--verdete) !important; }
+.a3-rank li i::before { background: var(--verdete) !important; }
+.a3-mini path.a3-mini__linha { stroke: var(--verdete) !important; }
+.a3-mini path.a3-mini__area { fill: color-mix(in srgb, var(--verdete) 12%, transparent) !important; }
+.a3-progresso i { background: var(--verdete); }
+.a3-editor__titulo span, .a3-campanhas__lista button[aria-current="true"], .a3-passos li.atual, .a3-calendario__edicao.s-no-ar, .a3-calendario__edicao.s-inscricoes { background: var(--verdete); color: var(--cor-sobre); }
+.a3-passos li.atual span { color: var(--verdete); background: var(--cor-sobre); }
+.a3-vigencia__trilho i:not(.perto):not(.fim) { background: var(--verdete); }
+.a3-extrato__valor { color: var(--acerto-texto, var(--acerto)); }
+.a3-extrato__linha.devolvida .a3-extrato__valor { color: var(--a3-cinza); }
+
+/* ───────── Agora: faixa de abertura no estilo do herói do site ───────── */
+.a3-heroi { position: relative; display: grid; gap: 18px; padding: 24px 24px 40px; border-radius: var(--raio-cartao, 16px); background: var(--heroi); color: var(--sobre-heroi, #fff); }
+.a3-heroi__topo { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px 24px; flex-wrap: wrap; }
+.a3-heroi__topo .a3-rotulo { color: var(--pixel-ouro, #f4cf7c); }
+.a3-heroi__topo h1 { color: var(--sobre-heroi, #fff); }
+.a3-heroi__topo p { max-width: 460px; color: var(--sobre-heroi-2, rgba(255,255,255,.8)); font-size: 13px; }
+.a3-heroi__numeros { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 10px; }
+.a3-heroi__numero { display: grid; gap: 2px; padding: 12px 14px; border: 1px solid var(--heroi-traco, rgba(255,255,255,.2)); border-radius: 12px; background: var(--heroi-vidro, rgba(255,255,255,.1)); }
+.a3-heroi__numero span { font-size: 12px; font-weight: 600; color: var(--sobre-heroi-2, rgba(255,255,255,.8)); display: flex; align-items: center; gap: 6px; }
+.a3-heroi__numero b { font-family: var(--fonte-marca, inherit); font-size: 32px; font-weight: 700; letter-spacing: -.03em; line-height: 1.1; color: var(--sobre-heroi, #fff); }
+.a3-heroi__numero small { font-size: 11.5px; color: var(--sobre-heroi-2, rgba(255,255,255,.8)); }
+.a3-heroi__numero i { width: 8px; height: 8px; border-radius: 50%; background: currentColor; flex: none; }
+.a3-heroi__numero--assinante i { background: #7fd6c9; }
+.a3-heroi__numero--lead i, .a3-heroi__numero--lead b { color: var(--pixel-ouro, #f4cf7c); }
+.a3-heroi__numero--lead i { background: var(--pixel-ouro, #f4cf7c); }
+.a3-heroi__numero--gratis i { background: #c9d3d1; }
+.a3-heroi__numero--vivo i { background: #7ef0b8; box-shadow: 0 0 0 3px rgba(126, 240, 184, .25); }
+@media (max-width: 1100px) { .a3-heroi__numeros { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .a3-heroi { padding: 18px 16px 36px; } .a3-heroi__numeros { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-heroi__numero:first-child { grid-column: 1 / -1; } .a3-heroi__numero b { font-size: 26px; } }
+
+/* Cabeçalho das seções da página (Online agora, Fora do site agora, Hoje). */
+.a3-secao-cabeca { display: flex; align-items: flex-end; justify-content: space-between; gap: 8px 16px; flex-wrap: wrap; padding: 16px 20px 12px; border-bottom: 1px solid var(--a3-linha); }
+.a3-secao-cabeca h2 { font-family: var(--fonte-marca, inherit); font-size: 18px; font-weight: 700; letter-spacing: -.01em; }
+.a3-secao-cabeca p { color: var(--a3-cinza); font-size: 13px; }
+
+/* Lista única de pessoas: um fio de cor à esquerda diz o grupo; o selo escreve. */
+.a3-pessoas-lista { list-style: none; margin: 0; padding: 0; }
+.a3-pessoas-lista > li { --c: var(--cor-gratis); display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 20px 12px 17px; border-bottom: 1px solid var(--a3-linha); border-left: 3px solid var(--c); }
+.a3-pessoas-lista > li:last-child { border-bottom: 0; }
+.a3-pessoas-lista > li.assinante { --c: var(--cor-assinante); }
+.a3-pessoas-lista > li.lead { --c: var(--cor-lead); background: color-mix(in srgb, var(--ouro-veu) 55%, transparent); }
+.a3-pessoa-linha { display: grid; grid-template-columns: 36px minmax(0, 1fr); gap: 12px; align-items: start; min-width: 0; padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.a3-pessoa-linha:focus-visible { outline: 2px solid var(--foco, var(--verdete)); outline-offset: 3px; border-radius: 8px; }
+.a3-pessoa-linha .a3-avatar { width: 36px; height: 36px; background: var(--cor-gratis-veu); color: var(--cor-gratis-texto); }
+li.assinante .a3-pessoa-linha .a3-avatar { background: var(--verdete); color: var(--cor-sobre); }
+li.lead .a3-pessoa-linha .a3-avatar { background: var(--ouro-veu); color: var(--ouro-texto); box-shadow: inset 0 0 0 1.5px var(--ouro); }
+.a3-pessoa-linha__texto { display: grid; gap: 3px; min-width: 0; }
+.a3-pessoa-linha__nome { display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-weight: 600; }
+.a3-pessoa-linha__faz { font-size: 13px; color: var(--a3-tinta); overflow-wrap: anywhere; }
+.a3-pessoa-linha__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; font-size: 12px; color: var(--a3-cinza); }
+.a3-pessoa-linha__acoes { display: flex; align-items: center; gap: 10px; }
+@media (max-width: 640px) {
+  .a3-pessoas-lista > li { grid-template-columns: minmax(0, 1fr); padding: 12px 16px 12px 13px; }
+  .a3-pessoa-linha__acoes { justify-content: space-between; padding-left: 48px; }
+}
+/* Selos de pessoa. */
+.a3-tag { display: inline-flex; align-items: center; margin: 0; padding: 1px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 600; line-height: 1.6; white-space: nowrap; }
+.a3-tag--assinante { background: var(--verdete); color: var(--cor-sobre); }
+.a3-tag--lead { background: var(--ouro-veu); color: var(--ouro-texto); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--ouro) 45%, transparent); }
+.a3-tag--suave { background: var(--prata-veu); color: var(--ardosia); }
+.a3-tag--vivo { background: var(--acerto-veu); color: var(--acerto-texto, var(--acerto)); }
+
+/* Questões de hoje e do total, lado a lado. */
+.a3-qq { display: inline-flex; gap: 6px; }
+.a3-qq > span { display: grid; justify-items: center; min-width: 52px; padding: 4px 8px; border: 1px solid var(--a3-linha); border-radius: 10px; background: var(--a3-papel); line-height: 1.1; }
+.a3-qq b { font-family: var(--fonte-marca, inherit); font-size: 18px; font-weight: 700; color: var(--a3-tinta); }
+.a3-qq small { font-size: 10.5px; font-weight: 600; letter-spacing: .03em; text-transform: uppercase; color: var(--a3-cinza); }
+.a3-qq__hoje:not(.zero) { border-color: color-mix(in srgb, var(--c, var(--verdete)) 45%, var(--a3-linha)); background: color-mix(in srgb, var(--c, var(--verdete)) 10%, var(--a3-papel)); }
+.a3-qq__hoje:not(.zero) b { color: var(--c, var(--verdete)); }
+li.lead .a3-qq__hoje:not(.zero) b { color: var(--ouro-texto); }
+.a3-qq__hoje.zero b { color: var(--a3-cinza); }
+.a3-pilula { display: inline-grid; place-items: center; min-width: 34px; padding: 1px 8px; border-radius: 999px; background: var(--superficie-2); color: var(--ardosia); font-weight: 700; font-variant-numeric: tabular-nums; }
+.a3-pilula--gratis { background: var(--prata-veu); color: var(--grafite); box-shadow: inset 0 0 0 1px var(--traco-forte); }
+.a3-pilula--assinante { background: var(--verdete-veu); color: var(--verdete); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--verdete) 35%, transparent); }
+
+/* Limite grátis do dia. */
+.a3-limite { display: grid; grid-template-columns: minmax(80px, 160px) auto; align-items: center; gap: 8px; }
+.a3-limite__trilho { display: block; height: 6px; border-radius: 6px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); overflow: hidden; }
+.a3-limite__trilho i { display: block; height: 100%; border-radius: inherit; background: var(--verdete); }
+.a3-limite small { font-size: 12px; color: var(--a3-cinza); }
+.a3-limite.perto .a3-limite__trilho i { background: var(--ouro); }
+.a3-limite.bateu .a3-limite__trilho i { background: var(--erro); }
+.a3-limite.bateu small { color: var(--erro-texto, var(--erro)); font-weight: 600; }
+
+/* Temperatura do não assinante, nas cores semânticas do site. */
+.a3-temp { display: inline-flex; align-items: center; gap: 5px; padding: 0 8px; border-radius: 999px; font-size: 11.5px; font-weight: 700; line-height: 1.7; }
+.a3-temp::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.a3-temp--frio { background: var(--prata-veu); color: var(--ardosia); }
+.a3-temp--morno { background: var(--verdete-veu); color: var(--verdete); }
+.a3-temp--quente { background: var(--ouro-veu); color: var(--ouro-texto); }
+.a3-temp--fervendo { background: var(--erro-veu); color: var(--erro-texto, var(--erro)); }
+
+/* ───────── Mistura com o painel antigo (02/11/2026): saltos, chips, números empilhados, ações escritas ───────── */
+/* Botões no jeito do site: cantos de 10 px, altura confortável, texto forte. */
+.a3-botao { min-height: 40px; border-radius: var(--raio-controle, 10px); font-weight: 650; }
+.a3-botao--pequeno { min-height: 34px; }
+.a3-botao--contorno { background: var(--superficie); border-color: var(--traco-forte); color: var(--grafite); }
+.a3-botao--contorno:hover { border-color: var(--verdete); color: var(--verdete); }
+.a3-botao--fantasma { color: var(--verdete); }
+/* Menu lateral como no antigo: itens maiores; a área aberta cheia em verdete. */
+.a3-nav-area { min-height: 44px; font-size: 15px; font-weight: 600; border-radius: 12px; }
+.a3-nav-grupo .a3-nav-area[aria-current] { background: var(--verdete); color: var(--cor-sobre); }
+.a3-nav-grupo .a3-nav-area[aria-current] .a3-icone { color: var(--cor-sobre); }
+.a3-nav-grupo .a3-nav-area[aria-current] .a3-cont { background: var(--cor-sobre); color: var(--verdete); }
+.a3-nav-parte { min-height: 36px; font-size: 14px; }
+/* Saltos para as partes da página (como as abas do topo do Agora antigo). */
+.a3-saltos { position: sticky; top: 8px; z-index: 6; display: flex; gap: 4px; flex-wrap: wrap; padding: 6px; border: 1px solid var(--traco); border-radius: 14px; background: color-mix(in srgb, var(--superficie) 94%, transparent); backdrop-filter: blur(8px); box-shadow: var(--sombra); }
+.a3-saltos a { padding: 8px 14px; border-radius: 10px; color: var(--ardosia); font-size: 14px; font-weight: 600; text-decoration: none; white-space: nowrap; }
+.a3-saltos a:hover { background: var(--verdete-veu); color: var(--verdete); }
+.a3-ancora { scroll-margin-top: 76px; }
+@media (max-width: 760px) { .a3-saltos { top: 0; flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; border-radius: 12px; } }
+/* Chips de filtro com contagem, como no antigo. */
+.a3-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.a3-chip { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 0 8px 0 16px; border: 1px solid var(--traco-forte); border-radius: 999px; background: var(--superficie); color: var(--grafite); font: inherit; font-size: 14.5px; font-weight: 600; cursor: pointer; }
+.a3-chip span { display: inline-grid; place-items: center; min-width: 24px; height: 24px; padding: 0 6px; border-radius: 999px; background: var(--superficie-2); color: var(--ardosia); font-size: 12.5px; font-weight: 700; }
+.a3-chip:hover { border-color: var(--verdete); }
+.a3-chip[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); color: var(--verdete); box-shadow: inset 0 0 0 1px var(--verdete); }
+.a3-chip[aria-pressed="true"] span { background: var(--verdete); color: var(--cor-sobre); }
+.a3-chip:focus-visible { outline: 2px solid var(--foco, var(--verdete)); outline-offset: 2px; }
+.a3-secao-cabeca h2 { display: flex; align-items: center; gap: 8px; }
+.a3-bolha { display: inline-grid; place-items: center; min-width: 26px; height: 26px; padding: 0 8px; border-radius: 999px; background: var(--verdete); color: var(--cor-sobre); font-size: 13px; font-weight: 700; }
+/* Linha da pessoa: números empilhados (como no antigo) e ações escritas. */
+.a3-pessoa-linha__acoes { display: grid; justify-items: end; gap: 8px; }
+.a3-numeros-pessoa { display: grid; grid-template-columns: repeat(4, minmax(56px, auto)); gap: 4px 14px; text-align: center; }
+.a3-numeros-pessoa > span { display: grid; gap: 1px; }
+.a3-numeros-pessoa b { font-family: var(--fonte-dados, monospace); font-size: 16px; font-weight: 700; color: var(--grafite); }
+.a3-numeros-pessoa .destaque b { font-size: 20px; color: var(--c, var(--verdete)); }
+li.lead .a3-numeros-pessoa .destaque b { color: var(--ouro-texto); }
+li.gratis .a3-numeros-pessoa .destaque b { color: var(--grafite); }
+.a3-numeros-pessoa .destaque.zero b { color: var(--ardosia); }
+.a3-numeros-pessoa small { font-size: 11px; font-weight: 600; color: var(--ardosia); white-space: nowrap; }
+.a3-pessoa-linha__links { display: flex; gap: 16px; }
+.a3-link-acao { display: inline-flex; align-items: center; gap: 6px; padding: 4px 0; border: 0; background: none; color: var(--verdete); font: inherit; font-size: 14px; font-weight: 650; cursor: pointer; }
+.a3-link-acao:hover { text-decoration: underline; text-underline-offset: 3px; }
+.a3-link-acao:focus-visible { outline: 2px solid var(--foco, var(--verdete)); outline-offset: 2px; border-radius: 6px; }
+.a3-pessoas-lista > li { padding-top: 14px; padding-bottom: 14px; }
+@media (max-width: 640px) {
+  .a3-pessoa-linha__acoes { justify-items: start; padding-left: 48px !important; }
+  .a3-numeros-pessoa { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 4px 8px; width: 100%; }
+}
+/* Sete áreas no celular (Crescimento ganhou área própria em 02/11/2026). */
+.a3-movel-barra { grid-template-columns: repeat(7, minmax(0, 1fr)) !important; }
+.a3-movel-barra a { font-size: 10.5px; min-width: 0; }
+@media (max-width: 380px) { .a3-movel-barra a { font-size: 9.5px; letter-spacing: -0.2px; padding-inline: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; } }
+
+/* Linha do dia enxuta: o estudo vira uma linha somada no topo. */
+.a3-tempo__resumo { margin: 0 0 12px; padding: 10px 12px; border-radius: 10px; background: color-mix(in srgb, var(--verdete) 8%, transparent); color: var(--grafite); font-size: 14px; }
+.a3-tempo__resumo b { color: var(--verdete); }
+
+/* ───────── Agora (02/11/2026): números clicáveis e uma lista de pessoas com abas ───────── */
+.a3-heroi { gap: 14px; padding-bottom: 36px; }
+.a3-heroi__topo { align-items: baseline; }
+.a3-heroi__frase { margin: 0; max-width: none !important; font-size: 15px !important; font-weight: 600; color: var(--sobre-heroi, #fff) !important; }
+.a3-heroi__grupo { display: grid; gap: 8px; }
+.a3-heroi__grupo-titulo { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--sobre-heroi-2, rgba(255,255,255,.8)); }
+.a3-heroi__numeros--3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
+.a3-heroi__numeros--hoje { grid-template-columns: repeat(6, minmax(0, 1fr)) !important; }
+button.a3-heroi__numero { position: relative; font: inherit; text-align: left; color: inherit; cursor: pointer; min-width: 0;
+  transition: background .15s ease, border-color .15s ease, transform .15s ease; }
+button.a3-heroi__numero::after { content: "›"; position: absolute; top: 8px; right: 12px; font-size: 18px; line-height: 1; color: var(--sobre-heroi-2, rgba(255,255,255,.7)); }
+button.a3-heroi__numero:hover { background: rgba(255,255,255,.17); border-color: rgba(255,255,255,.4); transform: translateY(-1px); }
+button.a3-heroi__numero:focus-visible { outline: 2px solid var(--pixel-ouro, #f4cf7c); outline-offset: 2px; }
+button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22); border-color: var(--pixel-ouro, #f4cf7c); box-shadow: inset 0 0 0 1px var(--pixel-ouro, #f4cf7c); }
+.a3-heroi__numero--claro i { background: rgba(255,255,255,.75); }
+.a3-heroi__numero span, .a3-heroi__numero small { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; padding-right: 10px; }
+@media (max-width: 1100px) { .a3-heroi__numeros--hoje { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; } }
+@media (max-width: 640px) {
+  .a3-heroi { padding: 16px 14px 32px; gap: 12px; }
+  .a3-heroi__frase { font-size: 14px !important; }
+  .a3-heroi__numeros { gap: 8px !important; }
+  .a3-heroi__numero:first-child { grid-column: auto !important; }
+  button.a3-heroi__numero { padding: 9px 10px; }
+  button.a3-heroi__numero::after { top: 6px; right: 8px; font-size: 15px; }
+  .a3-heroi__numero span { font-size: 11px !important; gap: 5px !important; }
+  .a3-heroi__numero b { font-size: 22px !important; }
+  .a3-heroi__numero small { font-size: 10.5px !important; }
+}
+
+/* As abas da lista de pessoas quebram linha em vez de sumir à direita. */
+.a3-abas-locais--rolam { flex-wrap: wrap; gap: 6px; padding: 14px 20px 12px; overflow: visible; }
+.a3-abas-locais--rolam button { height: 34px; padding: 0 12px; border: 1px solid var(--a3-linha); border-radius: 999px; background: var(--superficie, #fff); font-size: 13px; }
+.a3-abas-locais--rolam button::after { display: none; }
+.a3-abas-locais--rolam button[aria-selected="true"] { background: var(--verdete); border-color: var(--verdete); color: var(--cor-sobre, #fff) !important; }
+.a3-abas-locais--rolam button[aria-selected="true"] .a3-cont { background: rgba(255,255,255,.22); color: inherit; }
+.a3-abas-locais--rolam button.vivo:not([aria-selected="true"])::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--acerto, #2e9b6a); }
+@media (max-width: 640px) { .a3-abas-locais--rolam { padding: 12px 14px 10px; } .a3-abas-locais--rolam button { height: 32px; font-size: 12.5px; padding: 0 10px; } }
+/* Filtro de quem está online: chips pequenos, do tamanho das abas acima. */
+#a3-pessoas .a3-chip { min-height: 32px; height: 32px; padding: 0 12px; font-size: 13px; font-weight: 500; }
+#a3-pessoas .a3-chips { gap: 6px; }
+.a3-heroi__numero--dinheiro b { font-size: 26px !important; }
+@media (max-width: 640px) {
+  button.a3-heroi__numero::after { display: none; }
+  .a3-heroi__numero span { white-space: normal !important; overflow: visible !important; padding-right: 0 !important; line-height: 1.2; align-items: flex-start !important; min-height: 2.4em; }
+  .a3-heroi__numero span i { margin-top: 3px; }
+  .a3-heroi__numero--dinheiro b { font-size: 17px !important; line-height: 1.6 !important; }
+  #a3-pessoas .a3-chip { min-height: 30px; height: 30px; padding: 0 10px; font-size: 12.5px; }
+}
+#a3-pessoas .a3-chip span { min-width: 20px; height: 20px; font-size: 11.5px; }
+@media (max-width: 360px) { .a3-heroi__numero span { font-size: 10px !important; } .a3-heroi__numero b { font-size: 20px !important; } button.a3-heroi__numero { padding: 8px 8px; } }
+.a3-fila__botoes { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.a3-detalhes-tecnicos summary { cursor: pointer; font-size: 12.5px; color: var(--ardosia); } .a3-detalhes-tecnicos[open] summary { margin-bottom: 4px; }
+@media (max-width: 560px) { .a3-fila__item .a3-fila__botoes { grid-column: 2; justify-content: flex-start; } .a3-fila__item .a3-fila__botoes .a3-botao { grid-column: auto; } }
+
+/* E-mails › Lembretes: um botão para mandar tudo o que está pendente. */
+.a3-enviar-tudo { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 10px 20px; padding: 20px; border-left: 4px solid var(--verdete); }
+.a3-enviar-tudo__texto h2 { margin: 0; }
+.a3-enviar-tudo__texto p { margin: 4px 0 0; }
+.a3-enviar-tudo__etapa, .a3-enviar-tudo__fim, .a3-enviar-tudo__regras { grid-column: 1 / -1; margin: 0; }
+.a3-botao--grande { min-height: 48px; padding: 0 22px; font-size: 15.5px; }
+@media (max-width: 640px) { .a3-enviar-tudo { grid-template-columns: 1fr; padding: 16px; } .a3-enviar-tudo .a3-botao--grande { width: 100%; justify-content: center; } }
+
+/* ───────── Fase 3 (02/11/2026): menos andares no celular ───────── */
+@media (max-width: 640px) {
+  /* A barra de cima já diz a área e a tela: o título grande não se repete (continua para leitores de tela). */
+  .a3-cabeca .a3-cabeca__texto > .a3-rotulo { display: none; }
+  .a3-cabeca .a3-cabeca__texto > h1.a3-titulo-1 { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .a3-cabeca .a3-cabeca__texto > p { margin-top: 0; font-size: 14px; }
+  /* As abas do topo mostram que continuam à direita. */
+  .a3-movel-partes { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); padding-right: 40px; }
+  /* Filtros de lista: compactos, dois por linha, borda contínua. */
+  .a3-filtros label.a3-filtro { border-style: solid; font-size: 12.5px; padding: 0 10px; }
+}
+.a3-filtros label.a3-filtro { border-style: solid; }

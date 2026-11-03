@@ -7,7 +7,6 @@ export function PrateleiraVazia() {
   useEffect(() => { acharSegredo('cap404') }, [])
   return (
     <div className="sl-404" aria-hidden="true">
-      <span className="sl-404__teia" />
       <span className="sl-404__etiqueta">Cap. 404 · ainda não escrito</span>
       <span className="sl-404__tabua" />
     </div>

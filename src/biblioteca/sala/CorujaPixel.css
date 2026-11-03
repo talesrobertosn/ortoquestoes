@@ -1,13 +1,15 @@
-/* A coruja bibliotecária (sprite de 48 x 56, 6 quadros por linha): usada na Biblioteca e no menu. */
-.coruja-pixel { display: block; image-rendering: pixelated;
-  background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / 600% calc(var(--linhas) * 100%) no-repeat;
-  animation: coruja-quadros 1.6s steps(6) infinite; }
-.coruja-pixel--repouso { animation-duration: 2.8s; }
-.coruja-pixel--lendo { animation-duration: 3.2s; }
+/* A coruja bibliotecária (44 x 32 por quadro, 5 quadros por linha): Biblioteca, menu e onde mais ela visitar.
+   O tamanho padrão é 2x (88 x 64); quem usa troca --coruja-escala. */
+.coruja-pixel { --coruja-escala: 2; display: block; width: calc(44px * var(--coruja-escala)); height: calc(32px * var(--coruja-escala)); image-rendering: pixelated;
+  background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / 500% calc(var(--linhas) * 100%) no-repeat;
+  animation: coruja-quadros 1.5s steps(5) infinite; }
+.coruja-pixel--parada { animation-duration: 2.6s; }
+.coruja-pixel--lendo { animation-duration: 3s; }
 .coruja-pixel--olhando { animation-duration: 2.4s; }
+.coruja-pixel--dormindo { animation-duration: 3.2s; }
+.coruja-pixel--andando { animation-duration: 1s; }
 .coruja-pixel--voando { animation-duration: 0.6s; }
-.coruja-pixel--uma-vez { animation: coruja-uma-vez 0.9s steps(6, jump-none) 1 forwards; }
-.coruja-pixel--girando { animation-duration: 1.4s; }
-@keyframes coruja-quadros { to { background-position-x: 120%; } }
+.coruja-pixel--uma-vez { animation: coruja-uma-vez 0.8s steps(5, jump-none) 1 forwards; }
+@keyframes coruja-quadros { to { background-position-x: 125%; } }
 @keyframes coruja-uma-vez { from { background-position-x: 0; } to { background-position-x: 100%; } }
 @media (prefers-reduced-motion: reduce) { .coruja-pixel { animation: none; } }

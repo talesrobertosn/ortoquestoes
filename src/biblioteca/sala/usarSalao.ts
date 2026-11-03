@@ -1,3 +1,4 @@
+import { CONCEITOS_CORUJA, proximaFala } from '../../componentes/mascote/falasBichos'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { DATAS_PROVA } from '../../estado/conquistas'
 import type { ResumoCapitulo } from '../tipos'
@@ -6,6 +7,7 @@ import {
 } from '../salao/segredos'
 import { ligarSom, somLigado, tocar } from './sons'
 import { semMovimento } from './comum'
+import { lerCenario } from '../../estado/aparencia'
 
 /** Hora do dia da cena: a pintura da janela muda (manhã, tarde, noite). */
 export type Periodo = 'manha' | 'tarde' | 'noite'
@@ -53,6 +55,7 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
   const [periodoEscolhido, definirPeriodo] = useState<Periodo | null>(null)
   const [cranio, definirCranio] = useState<number | null>(null)
   const [raroAceso, definirRaroAceso] = useState(false)
+  const conceitos = useRef(0)
   const toquesCoruja = useRef<number[]>([])
   const toquesPlaca = useRef<number[]>([])
   const toquesJanela = useRef(0)
@@ -82,7 +85,17 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
   const ehMadrugada = madrugada(agora)
   const estacao = epoca(agora)
   const faltam = diasAteProva(agora, DATAS_PROVA)
-  const periodo = periodoEscolhido ?? periodoDaHora(agora.getHours())
+  // No tema escuro, a Biblioteca acompanha: a luz é a da noite (01/11/2026), a não ser que a pessoa escolha outra na janela.
+  const [temaEscuro, definirTemaEscuro] = useState(() => typeof document !== 'undefined' && document.documentElement.dataset.tema === 'escuro')
+  useEffect(() => {
+    const raiz = document.documentElement
+    const olhar = new MutationObserver(() => definirTemaEscuro(raiz.dataset.tema === 'escuro'))
+    olhar.observe(raiz, { attributes: true, attributeFilter: ['data-tema'] })
+    return () => olhar.disconnect()
+  }, [])
+  // A escolha de cenário da Conta (manhã, tarde ou noite fixas) vale aqui também; só no "pela hora" o tema escuro pede a noite.
+  const cenarioDaConta = lerCenario()
+  const periodo = periodoEscolhido ?? (cenarioDaConta !== 'horario' ? cenarioDaConta : temaEscuro ? 'noite' : periodoDaHora(agora.getHours()))
   useEffect(() => { if (ehMadrugada) achar('madrugada', 'Plantão? Os resumos mais curtos estão na mesa.') }, [ehMadrugada]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => { if (estacao) achar('sazonal', estacao === 'halloween' ? 'Abóboras no salão até o fim de outubro.' : 'Pisca-pisca no salão em dezembro.') }, [estacao]) // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -158,8 +171,13 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
         achar('coruja', 'Corujas giram a cabeça até 270 graus. Não tente isso no seu pescoço.')
         return
       }
-      dica.current = (dica.current + 1) % DICAS.length
-      definirCoruja({ estado: 'reagindo', fala: DICAS[dica.current], tour: true })
+      // A coruja é a sábia (01/11/2026): os toques explicam um conceito que cai na prova; a cada quatro, uma dica da
+      // Biblioteca (com o convite para o tour).
+      conceitos.current++
+      if (conceitos.current % 4 === 1) {
+        dica.current = (dica.current + 1) % DICAS.length
+        definirCoruja({ estado: 'reagindo', fala: DICAS[dica.current], tour: true })
+      } else definirCoruja({ estado: 'reagindo', fala: proximaFala('coruja', CONCEITOS_CORUJA), tour: false })
       depois(() => definirCoruja((c) => (c.estado === 'reagindo' ? { ...c, estado: 'repouso' } : c)), 900)
     },
     calarCoruja: () => definirCoruja((c) => ({ ...c, fala: null })),
@@ -181,7 +199,8 @@ export function usarSalao(capitulos: ResumoCapitulo[], busca: string, abrirFicha
       definirRelogioGira(true)
       depois(() => definirRelogioGira(false), 1200)
       const curto = curtos[0]
-      achar('relogio', `São ${agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}. Dá tempo de ler "${curto?.titulo}" em ~${curto?.minutos} min.`)
+      const hora = agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })
+      achar('relogio', curto ? `São ${hora}. Dá tempo de ler "${curto.titulo}" em ~${curto.minutos} min.` : `São ${hora}. Bom momento para um resumo curto.`)
     },
     tocarJanela: () => {
       toquesJanela.current++

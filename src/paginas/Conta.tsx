@@ -4,7 +4,7 @@ import { haQuanto } from '../componentes/IndicadorSincronia'
 import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis, retornoConta, supabase } from '../conta/supabase'
 import { avisoConta, definirAvisoConta } from '../conta/retornoAuth'
-import { descreverAparelho, lembrarEmail, ultimoEmail } from '../conta/aparelho'
+import { descreverAparelho, esquecerEmail, lembrarEmail, ultimoEmail } from '../conta/aparelho'
 import { usarAdministrador } from '../conta/administrador'
 import { gravarPreferenciaConquistas, lerPreferenciaConquistas } from '../conta/emailsMarco'
 import { usarPremium } from '../conta/premium'
@@ -39,12 +39,16 @@ import { CampoServico, SERVICO_VARIOS } from '../componentes/CampoServico'
 import { CamposEtapa } from '../componentes/CamposEtapa'
 import { OpcaoServicoRanking } from '../componentes/ServicoRanking'
 import { AvisoFlutuante, InterruptorLocal, InterruptorSalvo, type AvisoConta, type TipoAviso } from '../componentes/conta/PecasConta'
-import { IconePixel } from '../componentes/IconePixel'
 import '../estilos/paginas/Conta.css'
 import '../estilos/paginas/Acesso.css'
-import { fraseGratis, recurso } from '../config'
+import '../estilos/componentes/Cristal.css'
+import { fraseGratis } from '../config'
 import { guardarVitrine, lembrarNome, nomeLembrado, sortearVitrine } from '../conta/vitrineAcesso'
-import { Mascote } from '../componentes/mascote/Mascote'
+import { CenaPortal } from '../componentes/acesso/CenaPortal'
+import { CorujaDoPainel } from '../componentes/acesso/CorujaDoPainel'
+import { QuestaoAcesso } from '../componentes/acesso/QuestaoAcesso'
+import { JornadaAcesso, ProvasAcesso, VitrineAcesso } from '../componentes/acesso/JornadaAcesso'
+import '../estilos/paginas/Portal.css'
 
 const ROTULOS_STATUS = {
   sincronizando: 'Sincronizando seu progresso…', salvo: 'Progresso sincronizado', offline: 'Sem conexão. As alterações serão enviadas quando você voltar à internet.',
@@ -106,6 +110,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   const [modo, definirModo] = useState<'entrar' | 'criar' | 'recuperar'>(
     modoInicial === 'criar' || modoInicial === 'recuperar' ? modoInicial : 'entrar',
   )
+  useEffect(() => { if (modoInicial === 'criar' || modoInicial === 'recuperar' || modoInicial === 'entrar') definirModo(modoInicial) }, [modoInicial])
   // A vitrine muda a cada visita e ao trocar entre entrar e criar conta (ver conta/vitrineAcesso.ts).
   const modoVitrine = modo === 'criar' ? 'criar' : 'entrar'
   const [vitrine] = useState(() => ({ entrar: sortearVitrine('entrar'), criar: sortearVitrine('criar') }))
@@ -114,7 +119,10 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
   // para entrar, para o cadastro e para a volta do Google. Ver conta/passagem.ts.
   const voltar = rotaVoltar(consulta?.get('voltar'))
   // "Esqueceu a senha?" no pop-up de entrar traz o e-mail que já foi digitado lá.
-  const [email, definirEmail] = useState(() => emailTrazido() || ultimoEmail()), [senha, definirSenha] = useState('')
+  // O e-mail de quem entrou por último neste aparelho não vem mais preenchido (aparelho compartilhado): vira o atalho
+  // "Continuar como…", com o e-mail mascarado e a opção "Não sou eu".
+  const [email, definirEmail] = useState(() => emailTrazido()), [senha, definirSenha] = useState('')
+  const [lembrado, definirLembrado] = useState(ultimoEmail)
   useEffect(() => esquecerEmailTrazido(), [])
   const [confirmacao, definirConfirmacao] = useState(''), [verSenha, definirVerSenha] = useState(false)
   const [novaSenha, definirNovaSenha] = useState(''), [confirmacaoNovaSenha, definirConfirmacaoNovaSenha] = useState('')
@@ -490,111 +498,101 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     const v = vitrine[modoVitrine]
     // Quem já entrou neste aparelho (e ainda tem o próprio e-mail no campo) é cumprimentado pelo nome.
     const nomeVolta = modo === 'entrar' && !recuperacao && !perfilDepois ? nomeLembrado(email) : ''
-    const tituloVitrine = nomeVolta ? `Que bom te ver de novo, ${nomeVolta}.` : v.titulo
+    const tituloVitrine = nomeVolta ? `Sua jornada continua, ${nomeVolta}.` : v.titulo
     const seloVitrine = perfilDepois ? 'Conta criada' : recuperacao || modo === 'recuperar' ? 'Recuperar acesso' : modo === 'criar' ? 'Conta gratuita' : 'Continuar'
-    return <div className="ac">
-      {/* Topo: céu e cidade da temporada pixel, frase sorteada a cada visita e o mascote de jaleco em pé na cidade (com coluna própria, nunca sobre o texto). */}
-      <section className="ac-vitrine" aria-labelledby="ac-titulo">
-        <div className="ac-vitrine__texto">
-          <p className="tr-heroi__selo">{seloVitrine}</p>
+    // Quem confirmou que é a pessoa que entrou por último ("Continuar como…") é cumprimentado pelo nome.
+    const nomeAtalho = nomeLembrado(lembrado)
+    const mascarar = (e: string) => { const [u, d] = e.split('@'); return d ? `${u.slice(0, 1)}•••@${d}` : e }
+    const mostrarAtalho = modo === 'entrar' && !recuperacao && !perfilDepois && !!lembrado && email.trim().toLowerCase() !== lembrado.toLowerCase()
+    return <div className="ac acx">
+      {/* O plano de abertura (01/11/2026; mural desde 02/11/2026): o salão de leitura do castelo no alto, com o título à
+          esquerda, o esqueleto anfitrião junto ao atril e o painel de entrar à direita, com a coruja na borda. Embaixo do
+          título, pregadas na parede, a ficha com a questão (e o gato), a vitrine e a jornada; embaixo do painel, as
+          provas (no celular: cena, título, painel, ficha, provas, vitrine e jornada). */}
+      <CenaPortal texto={<>
+          <p className="pc-selo">{seloVitrine}</p>
           <h1 id="ac-titulo" key={tituloVitrine}>{tituloVitrine}</h1>
-          <p className="ac-vitrine__lide">{v.lide}</p>
-          <ul className="ac-provas" aria-label="Provas no acervo">{['TEOT', 'TARO', 'ENARE R4', 'TECOC', 'SBOT-SP'].map((p) => <li key={p}>{p}</li>)}</ul>
-          <p className="ac-vitrine__gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar de onde parou.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
-        </div>
-        {/* O mascote de jaleco recebe o estudante (31/10/2026): acena de vez em quando e fala ao toque. */}
-        <div className="ac-vitrine__mascote"><Mascote className="ac-mascote" comportamento="acesso_jaleco" fantasia="nenhuma" falar={false} /></div>
-      </section>
-      <section className="ac-cartao" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
-        {perfilDepois ? <>
+          <p className="pc-lide">{v.lide}</p>
+          <p className="pc-gratis">{nomeVolta ? 'Seu progresso ficou guardado na conta. É só entrar para continuar.' : <>Comece grátis, sem cartão de crédito. {fraseGratis('rodape')}</>}</p>
+      </>} esquerda={<><div className="acx-ficha"><QuestaoAcesso /></div><VitrineAcesso /><JornadaAcesso /></>} direita={<ProvasAcesso />}>
+        <section className="ac-cartao pa" aria-label={perfilDepois ? 'Completar perfil' : titulo}>
+          <CorujaDoPainel />
+          {perfilDepois ? <>
+            <header className="ac-cabeca">
+              <p className="ac-passo"><span className="px-numero" aria-hidden="true">2</span><span>Passo 2 de 2 · opcional</span></p>
+              <h2>Conte um pouco sobre você</h2>
+              <p>Com isso, o site sugere as provas certas e o ranking mostra seu nome. Dá para pular e completar depois em Minha conta.</p>
+            </header>
+            <p className="aviso-formulario aviso-formulario--sucesso" role="status"><Icone nome="certo" tamanho={18} /> <span>{perfilDepois.comSessao ? 'Conta criada.' : <>Conta criada. Enviamos um link de confirmação para <strong>{perfilDepois.email}</strong>: abra-o para entrar. O que você preencher aqui entra na conta quando ela for confirmada.</>}</span></p>
+            <form className="empilha ac-form" onSubmit={(e) => { e.preventDefault(); void concluirPerfil(false) }} noValidate>
+              <div className="linha-campos linha-campos--2"><label className="campo" data-campo="nome"><span className="campo__rotulo">Nome</span><input className="entrada" autoComplete="given-name" value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo" data-campo="sobrenome"><span className="campo__rotulo">Sobrenome</span><input className="entrada" autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
+              <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} erros={errosCadastro} />
+              <CampoServico situacao={situacao} valor={servico} aoMudar={definirServico} locais={locais} aoMudarLocais={definirLocais} uf={uf} />
+              <label className="campo" data-campo="nascimento"><span className="campo__rotulo">Data de nascimento</span><input className={'entrada' + inv('nascimento')} type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} />{erroDe('nascimento')}</label>
+              <div className="linha-campos linha-campos--2"><label className="campo" data-campo="cidade"><span className="campo__rotulo">Cidade</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label><label className="campo" data-campo="uf"><span className="campo__rotulo">UF</span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select></label></div>
+              <label className="campo" data-campo="whatsapp"><span className="campo__rotulo">WhatsApp com DDD</span><input className={'entrada' + inv('whatsapp')} type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" />{erroDe('whatsapp')}</label>
+              <p className="meta">Seu contato nunca aparece para outros usuários.</p>
+              {erroForm && <div key={erroForm.n} className="aviso-formulario aviso-formulario--erro aviso-formulario--destaque" role="alert"><Icone nome="alerta" tamanho={20} /><span>{erroForm.texto}</span></div>}
+              <div className="ac-acoes-perfil">
+                <button className="botao botao--principal ac-enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : 'Salvar e continuar'}</button>
+                <button type="button" className="botao botao--fantasma" disabled={ocupado} onClick={() => void concluirPerfil(true)}>Pular por agora</button>
+              </div>
+            </form>
+          </> : <>
+          {!recuperacao && modo !== 'recuperar' && <div className="ac-abas seletor" role="tablist" aria-label="Entrar ou criar conta">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="ac-aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}
           <header className="ac-cabeca">
-            <p className="ac-passo"><span className="px-numero" aria-hidden="true">2</span><span>Passo 2 de 2 · opcional</span></p>
-            <h2>Conte um pouco sobre você</h2>
-            <p>Com isso, o site sugere as provas certas e o ranking mostra seu nome. Dá para pular e completar depois em Minha conta.</p>
+            {modo === 'recuperar' && !recuperacao && <button type="button" className="ac-voltar" onClick={() => trocarModo('entrar')}><Icone nome="esquerda" tamanho={16} /> Voltar para entrar</button>}
+            <h2>{titulo}</h2>
+            <p>{subtitulo}</p>
           </header>
-          <p className="aviso-formulario aviso-formulario--sucesso" role="status"><Icone nome="certo" tamanho={18} /> <span>{perfilDepois.comSessao ? 'Conta criada.' : <>Conta criada. Enviamos um link de confirmação para <strong>{perfilDepois.email}</strong>: abra-o para entrar. O que você preencher aqui entra na conta quando ela for confirmada.</>}</span></p>
-          <form className="empilha ac-form" onSubmit={(e) => { e.preventDefault(); void concluirPerfil(false) }} noValidate>
-            <div className="linha-campos linha-campos--2"><label className="campo" data-campo="nome"><span className="campo__rotulo">Nome</span><input className="entrada" autoComplete="given-name" value={nome} onChange={e => definirNome(e.target.value)} placeholder="Como podemos chamar você?" /></label><label className="campo" data-campo="sobrenome"><span className="campo__rotulo">Sobrenome</span><input className="entrada" autoComplete="family-name" value={sobrenome} onChange={e => definirSobrenome(e.target.value)} /></label></div>
-            <CamposEtapa situacao={situacao} ano={anoResidencia} provas={provas} aoMudarSituacao={definirSituacao} aoMudarAno={definirAnoResidencia} aoMudarProvas={definirProvas} erros={errosCadastro} />
-            <CampoServico situacao={situacao} valor={servico} aoMudar={definirServico} locais={locais} aoMudarLocais={definirLocais} uf={uf} />
-            <label className="campo" data-campo="nascimento"><span className="campo__rotulo">Data de nascimento</span><input className={'entrada' + inv('nascimento')} type="date" value={nascimento} onChange={e => definirNascimento(e.target.value)} />{erroDe('nascimento')}</label>
-            <div className="linha-campos linha-campos--2"><label className="campo" data-campo="cidade"><span className="campo__rotulo">Cidade</span><input className="entrada" autoComplete="address-level2" value={cidade} onChange={e => definirCidade(e.target.value)} /></label><label className="campo" data-campo="uf"><span className="campo__rotulo">UF</span><select className="entrada" value={uf} onChange={e => definirUf(e.target.value)}><option value="">Selecione</option>{UFS.map(sigla => <option key={sigla}>{sigla}</option>)}</select></label></div>
-            <label className="campo" data-campo="whatsapp"><span className="campo__rotulo">WhatsApp com DDD</span><input className={'entrada' + inv('whatsapp')} type="tel" autoComplete="tel" value={whatsapp} onChange={e => definirWhatsapp(e.target.value)} placeholder="(00) 00000-0000" />{erroDe('whatsapp')}</label>
-            <p className="meta">Seu contato nunca aparece para outros usuários.</p>
-            {erroForm && <div key={erroForm.n} className="aviso-formulario aviso-formulario--erro aviso-formulario--destaque" role="alert"><Icone nome="alerta" tamanho={20} /><span>{erroForm.texto}</span></div>}
-            <div className="ac-acoes-perfil">
-              <button className="botao botao--principal ac-enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : 'Salvar e continuar'}</button>
-              <button type="button" className="botao botao--fantasma" disabled={ocupado} onClick={() => void concluirPerfil(true)}>Pular por agora</button>
-            </div>
+          {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
+          {mostrarAtalho && <div className="pa-atalho">
+            <button type="button" className="pa-atalho__entrar" onClick={() => { definirEmail(lembrado); setTimeout(() => document.querySelector<HTMLInputElement>('#acesso-senha')?.focus(), 30) }}>
+              <span className="pa-atalho__avatar" aria-hidden="true">{(nomeAtalho || lembrado).slice(0, 1).toUpperCase()}</span>
+              <span><strong>Continuar como {nomeAtalho || 'a última conta'}</strong><small>{mascarar(lembrado)}</small></span>
+            </button>
+            <button type="button" className="pa-atalho__esquecer" onClick={() => { esquecerEmail(); definirLembrado('') }}>Não sou eu</button>
+          </div>}
+          {!recuperacao && modo !== 'recuperar' && <BotaoGoogle />}
+          <form className="empilha ac-form" onSubmit={enviar} noValidate>
+            {!recuperacao && <label className="campo" data-campo="email"><span className="campo__rotulo">E-mail {obrig}</span><span className="ac-entrada"><Icone nome="correio" tamanho={17} /><input id="acesso-email" className={'entrada' + (erroForm?.codigo === 'ja_cadastrado' ? ' entrada--invalida' : inv('email'))} type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></span>{erroDe('email')}</label>}
+            {(recuperacao || modo !== 'recuperar') && <div className="campo" data-campo="senha">
+              <span className="ac-rotulo-senha"><label className="campo__rotulo" htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'} {obrig}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="ac-link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
+              <span className="ac-entrada ac-entrada--senha">
+                <Icone nome="cadeado" tamanho={17} />
+                <input id="acesso-senha" className={'entrada' + (erroForm?.codigo === 'invalid_credentials' ? ' entrada--invalida' : inv('senha'))} aria-invalid={erroForm?.codigo === 'invalid_credentials' || undefined} type={verSenha ? 'text' : 'password'} autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} />
+                <button type="button" className="ac-olho" onClick={() => definirVerSenha(v => !v)} aria-label={verSenha ? 'Ocultar senha' : 'Mostrar senha'} aria-pressed={verSenha}><Icone nome={verSenha ? 'olho-riscado' : 'olho'} tamanho={18} /></button>
+              </span>
+              {pedeConfirmacao && <span className="meta">Mínimo de 8 caracteres.</span>}
+              {erroDe('senha')}
+            </div>}
+            {pedeConfirmacao && <div className="campo" data-campo="confirmacao">
+              <label className="campo__rotulo" htmlFor="acesso-confirmacao">Confirmar senha {obrig}</label>
+              <span className="ac-entrada"><Icone nome="cadeado" tamanho={17} /><input id="acesso-confirmacao" className={`entrada${(confirmacao && !senhasConferem) || errosCadastro.confirmacao ? ' entrada--invalida' : ''}`} type={verSenha ? 'text' : 'password'} autoComplete="new-password" required value={confirmacao} onChange={e => definirConfirmacao(e.target.value)} aria-describedby="acesso-confere" /></span>
+              {confirmacao && <span id="acesso-confere" className={`ac-confere ${senhasConferem ? 'ac-confere--ok' : 'ac-confere--nao'}`} role="status"><Icone nome={senhasConferem ? 'certo' : 'errado'} tamanho={14} />{senhasConferem ? 'As senhas coincidem' : 'As senhas ainda não coincidem'}</span>}
+            </div>}
+            {!recuperacao && modo === 'criar' && <div className="ac-aceites">
+              <label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o Orto Questões</label>
+              <label className={'campo campo--checkbox' + (errosCadastro.termos ? ' campo--checkbox-invalido' : '')} data-campo="termos"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> <span>Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> do Orto Questões. O cadastro é gratuito; assinaturas são opcionais e têm condições próprias antes da compra.</span></label>
+              {erroDe('termos')}
+            </div>}
+            {erroForm && <div key={erroForm.n} className="aviso-formulario aviso-formulario--erro aviso-formulario--destaque" role="alert">
+              <Icone nome="alerta" tamanho={20} />
+              <span>{erroForm.texto}{erroForm.codigo === 'invalid_credentials' && ' Se você criou a conta pelo Google, use o botão do Google acima.'}</span>
+              {erroForm.campo && <span className="aviso-formulario__acoes"><button type="button" onClick={() => irParaCampo(erroForm.campo!)}>Ir para o campo que falta</button></span>}
+              {(erroForm.codigo === 'invalid_credentials' || erroForm.codigo === 'ja_cadastrado') && <span className="aviso-formulario__acoes">
+                {erroForm.codigo === 'ja_cadastrado' && <button type="button" onClick={() => trocarModo('entrar')}>Entrar com este e-mail</button>}
+                <button type="button" onClick={() => trocarModo('recuperar')}>Criar uma senha nova</button>
+              </span>}
+            </div>}
+            <button className="botao botao--principal ac-enviar acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}{!ocupado && <span className="ac-enviar__seta" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>}</button>
           </form>
-        </> : <>
-        {!recuperacao && modo !== 'recuperar' && <div className="ac-abas" role="tablist" aria-label="Entrar ou criar conta">{(['entrar', 'criar'] as const).map(m => <button type="button" role="tab" aria-selected={modo === m} className="ac-aba" onClick={() => trocarModo(m)} key={m}>{m === 'entrar' ? 'Entrar' : 'Criar conta'}</button>)}</div>}
-        <header className="ac-cabeca">
-          {modo === 'recuperar' && !recuperacao && <button type="button" className="ac-voltar" onClick={() => trocarModo('entrar')}><Icone nome="esquerda" tamanho={16} /> Voltar para entrar</button>}
-          <h2>{titulo}</h2>
-          <p>{subtitulo}</p>
-        </header>
-        {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}
-        {!recuperacao && modo !== 'recuperar' && <BotaoGoogle />}
-        <form className="empilha ac-form" onSubmit={enviar} noValidate>
-          {!recuperacao && <label className="campo" data-campo="email"><span className="campo__rotulo">E-mail {obrig}</span><span className="ac-entrada"><Icone nome="correio" tamanho={17} /><input id="acesso-email" className={'entrada' + (erroForm?.codigo === 'ja_cadastrado' ? ' entrada--invalida' : inv('email'))} type="email" autoComplete="email" required value={email} onChange={e => definirEmail(e.target.value)} placeholder="voce@email.com" /></span>{erroDe('email')}</label>}
-          {(recuperacao || modo !== 'recuperar') && <div className="campo" data-campo="senha">
-            <span className="ac-rotulo-senha"><label className="campo__rotulo" htmlFor="acesso-senha">{recuperacao ? 'Nova senha' : 'Senha'} {obrig}</label>{modo === 'entrar' && !recuperacao && <button type="button" className="ac-link" onClick={() => trocarModo('recuperar')}>Esqueceu a senha?</button>}</span>
-            <span className="ac-entrada ac-entrada--senha">
-              <Icone nome="cadeado" tamanho={17} />
-              <input id="acesso-senha" className={'entrada' + (erroForm?.codigo === 'invalid_credentials' ? ' entrada--invalida' : inv('senha'))} aria-invalid={erroForm?.codigo === 'invalid_credentials' || undefined} type={verSenha ? 'text' : 'password'} autoComplete={modo === 'entrar' && !recuperacao ? 'current-password' : 'new-password'} minLength={modo === 'entrar' && !recuperacao ? undefined : 8} required value={senha} onChange={e => definirSenha(e.target.value)} />
-              <button type="button" className="ac-olho" onClick={() => definirVerSenha(v => !v)} aria-label={verSenha ? 'Ocultar senha' : 'Mostrar senha'} aria-pressed={verSenha}><Icone nome={verSenha ? 'olho-riscado' : 'olho'} tamanho={18} /></button>
-            </span>
-            {pedeConfirmacao && <span className="meta">Mínimo de 8 caracteres.</span>}
-            {erroDe('senha')}
-          </div>}
-          {pedeConfirmacao && <div className="campo" data-campo="confirmacao">
-            <label className="campo__rotulo" htmlFor="acesso-confirmacao">Confirmar senha {obrig}</label>
-            <span className="ac-entrada"><Icone nome="cadeado" tamanho={17} /><input id="acesso-confirmacao" className={`entrada${(confirmacao && !senhasConferem) || errosCadastro.confirmacao ? ' entrada--invalida' : ''}`} type={verSenha ? 'text' : 'password'} autoComplete="new-password" required value={confirmacao} onChange={e => definirConfirmacao(e.target.value)} aria-describedby="acesso-confere" /></span>
-            {confirmacao && <span id="acesso-confere" className={`ac-confere ${senhasConferem ? 'ac-confere--ok' : 'ac-confere--nao'}`} role="status"><Icone nome={senhasConferem ? 'certo' : 'errado'} tamanho={14} />{senhasConferem ? 'As senhas coincidem' : 'As senhas ainda não coincidem'}</span>}
-          </div>}
-          {!recuperacao && modo === 'criar' && <div className="ac-aceites">
-            <label className="campo campo--checkbox"><input type="checkbox" checked={receberNovidades} onChange={e => definirReceberNovidades(e.target.checked)} /> Quero receber novidades sobre o Orto Questões</label>
-            <label className={'campo campo--checkbox' + (errosCadastro.termos ? ' campo--checkbox-invalido' : '')} data-campo="termos"><input type="checkbox" required checked={aceitouTermos} onChange={e => definirAceitouTermos(e.target.checked)} /> <span>Li e concordo com os <a href={href('/termos')} target="_blank" rel="noopener noreferrer">Termos de Uso</a> do Orto Questões. O cadastro é gratuito; assinaturas são opcionais e têm condições próprias antes da compra.</span></label>
-            {erroDe('termos')}
-          </div>}
-          {erroForm && <div key={erroForm.n} className="aviso-formulario aviso-formulario--erro aviso-formulario--destaque" role="alert">
-            <Icone nome="alerta" tamanho={20} />
-            <span>{erroForm.texto}{erroForm.codigo === 'invalid_credentials' && ' Se você criou a conta pelo Google, use o botão do Google acima.'}</span>
-            {erroForm.campo && <span className="aviso-formulario__acoes"><button type="button" onClick={() => irParaCampo(erroForm.campo!)}>Ir para o campo que falta</button></span>}
-            {(erroForm.codigo === 'invalid_credentials' || erroForm.codigo === 'ja_cadastrado') && <span className="aviso-formulario__acoes">
-              {erroForm.codigo === 'ja_cadastrado' && <button type="button" onClick={() => trocarModo('entrar')}>Entrar com este e-mail</button>}
-              <button type="button" onClick={() => trocarModo('recuperar')}>Criar uma senha nova</button>
-            </span>}
-          </div>}
-          <button className="botao botao--principal ac-enviar acesso__enviar" disabled={ocupado}>{ocupado ? 'Aguarde…' : recuperacao ? 'Salvar nova senha' : modo === 'criar' ? 'Criar conta gratuita' : modo === 'recuperar' ? 'Enviar link de recuperação' : 'Entrar'}{!ocupado && <span className="ac-enviar__seta" aria-hidden="true"><Icone nome="direita" tamanho={18} /></span>}</button>
-        </form>
-        {modo === 'entrar' && !recuperacao && <p className="ac-alternativa">Não recebeu a confirmação? <button type="button" className="ac-link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
-        {!recuperacao && modo === 'criar' && <p className="ac-nota">Seus dados de perfil não ficam visíveis a outros usuários, com uma exceção: depois de 5 questões respondidas, você entra no ranking, visível a quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome). Você pode sair do ranking quando quiser.</p>}
-        <p className="ac-seguranca"><Icone nome="certo" tamanho={14} /> Autenticação segura pelo Supabase. O Orto Questões não guarda sua senha.</p>
-        </>}
-      </section>
-      {/* Uma questão real sorteada (gabarito oficial), como ela aparece no site, e o que a conta guarda. No celular vem depois do formulário. */}
-      <section className="ac-mostra" aria-label="Como é estudar no Orto Questões">
-        <figure className="ac-folha" key={v.amostra.enunciado} aria-label="Exemplo de questão comentada">
-          <p className="ac-folha__prova"><span>{v.amostra.prova}</span><span className="ac-folha__caiu"><Icone nome="alvo" tamanho={13} /> Já caiu</span></p>
-          <p className="ac-folha__enunciado">{v.amostra.enunciado}</p>
-          <ol className="ac-folha__alternativas">{v.ordem.map((i, n) => i === 0
-            ? <li key="c" className="ac-folha__certa"><b aria-hidden="true">{'ABC'[n]}</b><span>{v.amostra.certa}</span><Icone nome="certo" tamanho={16} /></li>
-            : <li key={i}><b aria-hidden="true">{'ABC'[n]}</b><span>{v.amostra.erradas[i - 1]}</span></li>)}</ol>
-          <figcaption><Icone nome="livro" tamanho={14} /> Comentário com o porquê de cada alternativa, inclusive a certa.</figcaption>
-        </figure>
-        <div className="ac-guarda">
-          <h2>O que a conta guarda</h2>
-          <ul className="ac-beneficios">
-            <li><Icone nome="grafico" tamanho={18} /><span>Desempenho por tema e por prova</span></li>
-            <li><Icone nome="calendario" tamanho={18} /><span>Revisão espaçada montada para você</span></li>
-            <li><Icone nome="raio" tamanho={18} /><span>Sequência de dias, ranking e emblemas</span></li>
-          </ul>
-          <div className="ac-emblemas" aria-hidden="true">{v.emblemas.map((e) => <img key={e} src={recurso(`emblemas/${e}.png`)} alt="" width={44} height={44} loading="lazy" />)}</div>
-          <p className="ac-nota">Entre de qualquer aparelho e continue de onde parou.</p>
-        </div>
-      </section>
+          {modo === 'entrar' && !recuperacao && <p className="ac-alternativa">Não recebeu a confirmação? <button type="button" className="ac-link" onClick={() => { void reenviar() }} disabled={ocupado || !email.trim()}>Reenviar e-mail</button></p>}
+          {!recuperacao && modo === 'criar' && <p className="ac-nota">Seus dados de perfil não ficam visíveis a outros usuários, com uma exceção: depois de 5 questões respondidas, você entra no ranking, visível a quem tem conta, com o apelido que escolher (ou seu nome e a inicial do sobrenome). Você pode sair do ranking quando quiser.</p>}
+          <p className="ac-seguranca"><Icone nome="certo" tamanho={14} /> Autenticação segura pelo Supabase. O Orto Questões não guarda sua senha.</p>
+          </>}
+        </section>
+      </CenaPortal>
       {pendente && <ModalConfirmarEmail
         email={pendente}
         aoFechar={() => { definirPendente(null); definirMensagem(`Falta confirmar o e-mail ${pendente}. Abra o link que enviamos para liberar a conta.`) }}
@@ -628,6 +626,11 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
     } catch { avisar('Não foi possível sair. Confira sua conexão e tente novamente.', 'erro') } finally { definirOcupado(false) }
   }
   const linkSecao = (id: SecaoConta) => href(`/conta?secao=${id}`)
+  /** A próxima ação do topo: o que pede atenção primeiro (sincronização, termos, perfil), senão o caminho de estudo. */
+  const proxima = status.estado === 'erro' || status.estado === 'conflito' || status.rejeitados.length > 0 ? { rotulo: 'Ver sincronização', destino: linkSecao('aparelhos') }
+    : !termosEmDia ? { rotulo: 'Ler os termos novos', destino: linkSecao('termos') }
+    : !etapa ? { rotulo: 'Completar o perfil', destino: linkSecao('perfil') }
+    : { rotulo: 'Continuar estudando', destino: href('/treinar'), comecar: true }
   /** Selo pequeno ao lado de cada seção na lista (o que pede atenção ou o estado atual). */
   const seloSecao = (id: SecaoConta) => {
     if (id === 'assinatura') return <span className={'ct-nav__selo' + (assinante ? ' ct-nav__selo--ouro' : '')}>{assinante ? 'Assinante' : 'Gratuito'}</span>
@@ -654,28 +657,39 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
           <p className="ct-heroi__rotulo">Minha conta</p>
           <h1 id="ct-nome">{nomeCompleto || 'Sua conta'}</h1>
           <p className="ct-heroi__email">{sessao.user.email}</p>
-          <ul className="ct-selos" aria-label="Resumo da conta">
-            <li><a className={'ct-selo' + (assinante ? ' ct-selo--ouro' : '')} href={linkSecao('assinatura')}><Icone nome={assinante ? 'coroa' : 'medalha'} tamanho={13} />{selo}</a></li>
-            {etapa && <li><a className="ct-selo" href={linkSecao('perfil')}><Icone nome="usuario" tamanho={13} />{etapa}</a></li>}
-            <li><a className="ct-selo ct-selo--sync" href={linkSecao('aparelhos')}><span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" /><span aria-live="polite">{textoSync}</span></a></li>
-          </ul>
         </div>
       </div>
+      {/* A próxima ação (atlas unificado, 01/11/2026): uma só, a mais útil agora, no lugar do botão de sincronizar. */}
       <div className="ct-heroi__acoes">
-        <button className={'botao ct-sync' + (status.estado === 'sincronizando' ? ' ct-sync--girando' : '')} type="button" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={16} /> {status.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar'}</button>
+        {/* Cristal só para começar a estudar; o que pede atenção é verdete (decisão de 01/11/2026). */}
+        <a className={'comecar' in proxima ? 'cristal' : 'botao botao--principal'} href={proxima.destino}>{proxima.rotulo} <Icone nome="direita" tamanho={16} /></a>
         {administrador && <a className="botao" href={href('/admin')}><Icone nome="grafico" tamanho={16} /> Painel do admin</a>}
       </div>
-      {metricas && <dl className="ct-numeros">
-        <a href={href('/dados')}><dt>Questões respondidas</dt><dd>{metricas.respondidas.toLocaleString('pt-BR')}{emblema && <span className="medalha-inline"><Medalha conquista={emblema} tamanho={22} titulo={`Emblema ${emblema.rotulo}`} /></span>}</dd></a>
-        <a href={href('/revisao')}><dt>Revisões programadas</dt><dd>{metricas.pendentes.toLocaleString('pt-BR')}</dd></a>
-        <a href={href('/dados')}><dt>Acerto acumulado</dt><dd>{metricas.acerto === null ? '0%' : `${metricas.acerto}%`}</dd></a>
-      </dl>}
-      <nav className="ct-atalhos" aria-label="Atalhos">
-        <a href={href('/treinar')}><IconePixel nome="treinar" tamanho={32} /><span>Treinar</span></a>
-        <a href={href('/dados')}><IconePixel nome="desempenho" tamanho={32} /><span>Desempenho</span></a>
-        <a href={href('/ranking')}><IconePixel nome="ranking" tamanho={32} /><span>Ranking</span></a>
-        <a href={href(assinante ? '/conta/assinatura' : '/assinatura')}><IconePixel nome="planos" tamanho={32} /><span>{assinante ? 'Assinatura' : 'Planos'}</span></a>
-      </nav>
+      {/* Status da conta em três linhas: plano, sincronização e perfil, cada uma com o que dá para fazer. As métricas
+          e os atalhos repetidos do Menu saíram; fica uma linha com o essencial e o caminho para o desempenho. */}
+      <ul className="ct-status-lista lista-atlas" aria-label="Situação da conta">
+        <li>
+          <span className={'ct-status-lista__icone' + (assinante ? ' ct-status-lista__icone--ouro' : '')}><Icone nome={assinante ? 'coroa' : 'medalha'} tamanho={16} /></span>
+          <span className="ct-status-lista__texto"><small>Plano</small><strong>{selo}</strong></span>
+          <a className="ct-status-lista__acao" href={href(assinante ? '/conta/assinatura' : '/assinatura')}>{assinante ? 'Ver assinatura' : 'Conhecer os planos'}</a>
+        </li>
+        <li>
+          <span className="ct-status-lista__icone"><span className={`ponto-sincronia ponto-sincronia--${status.estado}`} aria-hidden="true" /></span>
+          <span className="ct-status-lista__texto"><small>Sincronização</small><strong aria-live="polite">{textoSync}</strong></span>
+          <button className={'ct-status-lista__acao ct-sync' + (status.estado === 'sincronizando' ? ' ct-sync--girando' : '')} type="button" onClick={sincronizar} disabled={status.estado === 'sincronizando'}><Icone nome="reiniciar" tamanho={15} /> {status.estado === 'sincronizando' ? 'Sincronizando…' : 'Sincronizar'}</button>
+        </li>
+        <li>
+          <span className="ct-status-lista__icone"><Icone nome="usuario" tamanho={16} /></span>
+          <span className="ct-status-lista__texto"><small>Perfil</small><strong>{etapa ?? 'Falta dizer em que fase você está'}</strong></span>
+          <a className="ct-status-lista__acao" href={linkSecao('perfil')}>{etapa ? 'Editar' : 'Completar'}</a>
+        </li>
+      </ul>
+      {metricas && <p className="ct-resumo">
+        <span><b className="numerico">{metricas.respondidas.toLocaleString('pt-BR')}</b> respondidas{emblema && <span className="medalha-inline"><Medalha conquista={emblema} tamanho={20} titulo={`Emblema ${emblema.rotulo}`} /></span>}</span>
+        <span><b className="numerico">{metricas.acerto === null ? '0%' : `${metricas.acerto}%`}</b> de acerto</span>
+        <a href={href('/revisao')}><b className="numerico">{metricas.pendentes.toLocaleString('pt-BR')}</b> revisões programadas</a>
+        <a className="ct-resumo__ver" href={href('/dados')}>Ver desempenho <Icone nome="direita" tamanho={14} /></a>
+      </p>}
     </section>
 
     {mensagem && <p className="aviso-formulario" role="status">{mensagem}</p>}

@@ -19,8 +19,6 @@
 /* Cartão de jogo. */
 .px-cartao,
 .treinar-pagina .tr-etapa,
-.treinar-pagina .tn-bloco,
-.treinar-pagina .tn-salvo,
 .pe .cartao,
 .dp .cartao {
   border: 2px solid var(--px-borda) !important;
@@ -81,10 +79,7 @@
 .tr-sub { display: inline-grid; place-items: center; width: 1.45rem; height: 1.45rem; background: var(--verdete); color: #fff; font-family: var(--fonte-pixel-titulo); font-size: 1.05rem; line-height: 1; align-self: center; }
 .treinar-pagina .tr-foco__opcao { border-radius: 4px; }
 .treinar-pagina .tr-foco__opcao[aria-pressed="true"] { box-shadow: 3px 3px 0 var(--verdete) !important; }
-.treinar-pagina .tr-pilula { border-radius: 4px; }
-.treinar-pagina .tr-pilula[aria-pressed="true"] { box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 55%, #000); }
 .treinar-pagina .tr-incidencia { border-radius: 4px; }
-.treinar-pagina .tr-busca .entrada { border-radius: 4px; }
 
 /* Simulados autorais: placa dourada pontilhada. */
 .treinar-pagina .tr-simulados { border-radius: 6px; border: 2px dashed #c99a3b; background: color-mix(in srgb, var(--px-ouro) 14%, var(--superficie)); box-shadow: 5px 5px 0 rgba(201, 154, 59, 0.25); }

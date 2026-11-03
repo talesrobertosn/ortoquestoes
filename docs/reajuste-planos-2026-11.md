@@ -18,14 +18,14 @@ Quem foi reembolsado volta como novo.
 - Valores do site: `src/dados/planos.ts` (`PLANOS` e `PLANOS_PRECO_ANTIGO`).
 - Valores do servidor: `supabase/functions/_shared/precos.ts` (`PRECOS`, `PRECOS_ANTIGOS`, `centavosPara`).
 - Quem tem o preço antigo: funções `tem_preco_antigo` (servidor) e `meu_preco_antigo` (página) na
-  migração `supabase/migrations/202611070000_reajuste_escada.sql`. O corte fica em `reajuste_precos`.
+  migração `supabase/migrations/202611030200_reajuste_escada.sql`. O corte fica em `reajuste_precos`.
 - A página mostra o preço de cada pessoa (`src/conta/precoAntigo.ts`) e o selo "Seu preço de sempre".
 - Condições da Assinatura na versão `2026-11-03` (cláusula 6.3); os Termos de Uso não mudam de versão.
 - Conferência automática: `node fixtures/testar_reajuste_precos.mjs`.
 
 ## Ordem de publicação (na mesma tarde)
 
-1. **SQL** no SQL Editor: `supabase/colar-no-painel/sql-202611070000-parte36-reajuste-escada.sql`.
+1. **SQL** no SQL Editor: `supabase/colar-no-painel/sql-202611030200-parte39-reajuste-escada.sql`.
    Antes, confira o nome da restrição (o esperado é `pedidos_pix_check`):
    `select conname from pg_constraint where conrelid = 'public.pedidos_pix'::regclass and contype = 'c';`
    O corte é o momento em que o SQL roda.

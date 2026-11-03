@@ -60,7 +60,7 @@
 .ct-heroi {
   display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1.25rem 2rem; align-items: start;
   padding: clamp(1.25rem, 3.5vw, 2rem);
-  border-radius: var(--raio-grande); background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-media);
+  border-radius: var(--raio-cartao); background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-folha);
 }
 .ct-heroi__perfil { display: flex; align-items: center; gap: 1.1rem; min-width: 0; }
 .ct-cracha { flex: none; display: block; margin: -0.5rem 0 -0.75rem; border-radius: 8px; text-decoration: none; -webkit-tap-highlight-color: transparent; }
@@ -70,50 +70,49 @@
 .ct-heroi__rotulo { margin: 0 0 0.15rem; font-size: var(--meta); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--texto-2); }
 .ct-heroi h1 { margin: 0; font-size: clamp(1.5rem, 3.4vw, 2.1rem); line-height: 1.12; overflow-wrap: anywhere; }
 .ct-heroi__email { margin: 0.2rem 0 0; color: var(--texto-2); font-size: var(--corpo-menor); overflow-wrap: anywhere; }
-.ct-selos { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.7rem 0 0; padding: 0; list-style: none; }
-.ct-selo {
-  display: inline-flex; align-items: center; gap: 0.4rem; min-height: 30px; padding: 0.2rem 0.7rem; border-radius: 999px;
-  background: var(--superficie-2); border: var(--borda); color: var(--texto-2); font-size: var(--meta); font-weight: 650; text-decoration: none;
-  transition: border-color var(--duracao-rapida) ease, color var(--duracao-rapida) ease;
-}
-.ct-selo:hover { border-color: var(--verdete); color: var(--verdete); }
-.ct-selo--ouro { background: var(--ouro-veu); border-color: color-mix(in srgb, var(--ouro) 55%, transparent); color: var(--ouro-texto); }
-.ct-selo--ouro:hover { border-color: var(--ouro); color: var(--ouro-texto); }
-.ct-heroi__acoes { grid-column: 2; grid-row: 1; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: flex-end; }
+.ct-heroi__acoes { grid-column: 2; grid-row: 1; display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: flex-end; align-self: center; }
 .ct-heroi__acoes .botao { border-radius: var(--raio-controle); }
+.ct-heroi__acoes .botao--principal { min-height: 48px; padding: 0 1.25rem; font-size: var(--corpo); }
+.ct-heroi__acoes .cristal { min-height: 48px; padding: 0 1.4rem; }
+
+/* Situação da conta (atlas unificado, 01/11/2026): plano, sincronização e perfil numa lista plana com linhas, cada
+   linha com o rótulo, o estado e a ação dela. Ouro só no plano de quem assina. */
+.ct-status-lista { grid-column: 1 / -1; border-top: var(--borda); }
+.ct-status-lista > li { display: grid; grid-template-columns: 2.25rem minmax(0, 1fr) auto; align-items: center; gap: var(--e-3); min-height: 60px; padding: var(--e-2) 0; }
+.ct-status-lista > li:last-child { border-bottom: var(--borda); }
+.ct-status-lista__icone { display: inline-grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: var(--raio-controle); background: var(--verdete-veu); color: var(--verdete); }
+.ct-status-lista__icone--ouro { background: var(--ouro-veu); color: var(--ouro-texto); }
+.ct-status-lista__texto { display: grid; gap: 1px; min-width: 0; }
+.ct-status-lista__texto small { color: var(--texto-2); font-size: var(--meta); font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.ct-status-lista__texto strong { font-weight: 650; line-height: 1.35; overflow-wrap: anywhere; }
+.ct-status-lista__acao {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; min-height: 44px; padding: 0 var(--e-4); border: var(--borda); border-radius: var(--raio-controle);
+  background: var(--superficie); color: var(--verdete); font: inherit; font-size: var(--corpo-menor); font-weight: 700; text-decoration: none; white-space: nowrap; cursor: pointer;
+  transition: border-color var(--duracao-rapida) ease, background-color var(--duracao-rapida) ease;
+}
+.ct-status-lista__acao:hover:not(:disabled) { border-color: var(--verdete); background: var(--verdete-veu); color: var(--verdete-tinta); }
+.ct-status-lista__acao:disabled { color: var(--texto-2); cursor: default; }
 .ct-sync--girando svg { animation: ct-girar 0.9s linear infinite; }
 @keyframes ct-girar { to { transform: rotate(360deg); } }
 
-.ct-numeros { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; margin: 0; }
-.ct-numeros a {
-  display: block; padding: 0.8rem 1rem; border-radius: var(--raio-cartao); background: var(--superficie-2); border: var(--borda);
-  color: var(--texto); text-decoration: none; transition: border-color var(--duracao-rapida) ease, transform var(--duracao-rapida) ease;
-}
-.ct-numeros a:hover { border-color: var(--verdete); color: var(--texto); transform: translateY(-1px); }
-.ct-numeros dt { font-size: var(--meta); color: var(--texto-2); }
-.ct-numeros dd { display: flex; align-items: center; margin: 0.15rem 0 0; font-size: 1.45rem; font-weight: 800; font-variant-numeric: tabular-nums; }
-
-.ct-atalhos { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.6rem; }
-.ct-atalhos a {
-  display: flex; align-items: center; gap: 0.6rem; min-height: 52px; padding: 0.5rem 0.8rem; border-radius: var(--raio-cartao);
-  border: var(--borda); background: var(--superficie); color: var(--texto); font-weight: 700; font-size: var(--corpo-menor); text-decoration: none;
-  transition: border-color var(--duracao-rapida) ease, background-color var(--duracao-rapida) ease, transform var(--duracao-rapida) ease;
-}
-.ct-atalhos a:hover { border-color: var(--verdete); background: var(--verdete-veu); color: var(--texto); transform: translateY(-1px); }
-.ct-atalhos img { image-rendering: pixelated; flex: none; }
+/* O essencial do estudo numa linha; o resto está no Desempenho. */
+.ct-resumo { grid-column: 1 / -1; display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-2) var(--e-5); margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); }
+.ct-resumo > * { display: inline-flex; align-items: center; gap: 0.35rem; }
+.ct-resumo b { color: var(--texto); font-size: var(--corpo); }
+.ct-resumo a { color: var(--texto-2); text-decoration: none; }
+.ct-resumo a:hover { color: var(--verdete); }
+.ct-resumo .ct-resumo__ver { margin-left: auto; min-height: 44px; color: var(--verdete); font-weight: 700; }
 
 @media (max-width: 46rem) {
   .ct-heroi { grid-template-columns: minmax(0, 1fr); gap: 1rem; }
-  .ct-heroi__acoes { grid-column: 1; grid-row: auto; justify-content: flex-start; }
-  .ct-heroi__acoes .botao { flex: 1 1 auto; }
+  .ct-heroi__acoes { grid-column: 1; grid-row: auto; justify-content: stretch; }
+  .ct-heroi__acoes .botao, .ct-heroi__acoes .cristal { flex: 1 1 auto; }
   .ct-cracha .cracha { --u: 2.5px; }
   .ct-heroi__perfil { gap: 0.85rem; }
-  .ct-numeros { gap: 0.4rem; }
-  .ct-numeros a { padding: 0.65rem 0.7rem; }
-  .ct-numeros dt { font-size: 0.7rem; }
-  .ct-numeros dd { font-size: 1.2rem; }
-  .ct-atalhos { gap: 0.4rem; }
-  .ct-atalhos a { flex-direction: column; justify-content: center; gap: 0.25rem; padding: 0.55rem 0.2rem; font-size: 0.74rem; text-align: center; }
+  .ct-status-lista > li { grid-template-columns: 2.25rem minmax(0, 1fr); row-gap: var(--e-2); }
+  .ct-status-lista__acao { grid-column: 2; justify-self: start; min-height: 40px; }
+  .ct-resumo { gap: var(--e-1) var(--e-4); }
+  .ct-resumo .ct-resumo__ver { margin-left: 0; }
 }
 
 /* ---------- Cartões e peças comuns ---------- */
@@ -249,9 +248,9 @@
     border-radius: var(--raio-grande); background: var(--superficie); border: var(--borda); box-shadow: var(--sombra-media);
   }
   .ct-nav a > svg:last-child { display: none; }
-  .ct-nav a[aria-current="page"] { background: var(--verdete); color: var(--sobre-destaque); }
-  .ct-nav a[aria-current="page"] .ct-nav__texto small { color: color-mix(in srgb, var(--sobre-destaque) 78%, transparent); }
-  .ct-nav a[aria-current="page"] .ct-nav__icone { background: color-mix(in srgb, var(--sobre-destaque) 18%, transparent); color: var(--sobre-destaque); }
+  /* A seção aberta: a seleção de Treinar (véu e filete verdete); o verdete cheio fica só para a próxima ação do topo. */
+  .ct-nav a[aria-current="page"] { background: var(--verdete-veu); color: var(--texto); box-shadow: inset 3px 0 0 var(--verdete); }
+  .ct-nav a[aria-current="page"] .ct-nav__icone { background: var(--superficie); color: var(--verdete); }
   .ct-nav__sair { margin-top: 0.25rem; border-top: var(--borda); border-radius: 0 0 var(--raio-cartao) var(--raio-cartao); padding-top: 0.75rem; }
   .ct-painel { max-width: 54rem; }
 }
@@ -306,6 +305,5 @@
 @media (prefers-reduced-motion: reduce) {
   .ct-painel, .ct-toast { animation: none; }
   .ct-sync--girando svg, .ct-carregando::before { animation: none; }
-  .ct-numeros a, .ct-atalhos a, .ct-selo, .ct-nav a, .ct-links a, .ct-seg button, .ct-nav__icone { transition: none; }
-  .ct-numeros a:hover, .ct-atalhos a:hover { transform: none; }
+  .ct-nav a, .ct-links a, .ct-seg button, .ct-nav__icone { transition: none; }
 }

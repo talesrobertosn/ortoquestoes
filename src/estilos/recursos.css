@@ -315,6 +315,13 @@
   transform: translateY(-5px) scale(1.06);
 }
 @keyframes pixel-flutua { 0%, 100% { translate: 0 0; } 50% { translate: 0 -3px; } }
+/* As cenas pintadas (o salão da Biblioteca, os topos das páginas, as pinturas por hora do dia) não são objetos: não
+   flutuam nem pulam com o mouse (Tales, 01/11/2026: "quando passa o mouse em cima da arte ela fica mexendo muito").
+   Vem depois e tem a mesma especificidade zero, então ganha das regras acima; a animação própria de cada tela continua. */
+:where(picture img, img[src*="pixel/paginas/"], img[src*="pixel/biblioteca/salao"], img[src*="-manha"], img[src*="-tarde"], img[src*="-noite"]),
+:where(a, button, label, .cartao, .atalho):hover :where(picture img, img[src*="pixel/paginas/"], img[src*="pixel/biblioteca/salao"], img[src*="-manha"], img[src*="-tarde"], img[src*="-noite"]) {
+  animation: none; transform: none;
+}
 @media (prefers-reduced-motion: reduce) {
   :where(img[src*="pixel/"], img[src*="emblemas/"], img[src*="ranking/mensageiro"], img[src*="ranking/carta"], img[src*="ranking/tachinha"]) { animation: none; transition: none; }
 }

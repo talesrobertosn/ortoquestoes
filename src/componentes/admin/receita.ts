@@ -24,6 +24,9 @@ export interface AssinaturaBase {
   cancelar_ao_fim?: boolean
   cancelada_em?: string | null
   ultima_atualizacao?: string | null
+  /** Motivo da última recusa do cartão (status_detail do Mercado Pago, parte 36) e quando foi. */
+  motivo_falha?: string | null
+  falha_em?: string | null
   /** 'pix' ou 'cartao' (migração 202610060100 em diante). */
   meio?: string | null
   /** E-mail e nome, quando a lista vem do painel (para conferir uma a uma). */

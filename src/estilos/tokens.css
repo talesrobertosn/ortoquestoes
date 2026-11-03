@@ -151,6 +151,34 @@
   --marca-osso-opacidade: 0.55;
   --marca-certa: #f4cf7c;
 
+  /* Atlas unificado (01/11/2026): as peças comuns das páginas (base.css, seção "Atlas"). Papel claro para ler,
+     verdete para agir, grafite para compreender, ouro para celebrar. */
+  --titulo-pagina: clamp(2rem, 1.5rem + 1.8vw, 2.75rem);
+  --sombra-folha: var(--sombra-media);
+  --anel-foco: 0 0 0 3px color-mix(in srgb, var(--verdete) 28%, transparent);
+  --verdete-noite: #0b3a35;
+
+  /* A paleta-mãe do site: o mundo da página inicial (InicioJornada.css), igual nos dois temas (Tales, 01/11/2026:
+     "as paletas precisam seguir a página inicial"). Painel escuro quente com tinta marfim e selo dourado; o botão de
+     botão de começar (classe .cristal) é o dourado do Ranking desde 01/11/2026 ("o botão amarelo como está na página
+     do ranking faz mais sentido"); o resto é a página clara com verdete. Use estes nomes, não hex soltos. */
+  --mundo-raio: 20px;
+  --mundo-chao: #0b100e;
+  --mundo-chao-2: #0d1311;
+  --mundo-tinta: #fffaf0;
+  --mundo-tinta-2: #e4d8bd;
+  --mundo-ouro: #f0c46a;
+  --mundo-vidro: rgba(9, 13, 14, 0.74);
+  --mundo-filete: rgba(255, 236, 200, 0.14);
+  --mundo-painel: radial-gradient(40% 120% at 50% 0%, rgba(255, 170, 70, 0.1), transparent 70%), linear-gradient(180deg, var(--mundo-chao), var(--mundo-chao-2));
+  --cristal: linear-gradient(180deg, #f6d488 0%, #f0c46a 55%, #e6b552 100%);
+  --cristal-tinta: #1b1208;
+  --cristal-icone: rgba(27, 18, 8, 0.12);
+  --cristal-sombra: inset 0 1px 0 rgba(255, 248, 225, 0.6), inset 0 -2px 0 rgba(122, 87, 16, 0.3), 0 8px 20px -10px rgba(201, 149, 47, 0.7);
+  --cristal-sombra-forte: inset 0 1px 0 rgba(255, 248, 225, 0.7), inset 0 -2px 0 rgba(122, 87, 16, 0.3), 0 12px 26px -10px rgba(201, 149, 47, 0.9);
+  /* O Menu: o mesmo painel da inicial, num verde-noite mais suave que o quase preto (Tales, 01/11/2026). */
+  --mundo-painel-suave: radial-gradient(60% 140% at 50% 0%, rgba(255, 200, 110, 0.1), transparent 70%), linear-gradient(180deg, #17423c, #10332e);
+
   color-scheme: light;
 }
 
@@ -176,6 +204,8 @@
   --sobre-destaque: #0f1413;
   --sombra: none;
   --sombra-media: 0 0 0 1px var(--traco);
+  /* A folha já tem borda; no escuro a sombra-anel dobraria o traço. */
+  --sombra-folha: none;
 
   --acerto-texto: #6fd3a0;
   --erro-texto: #f0958c;

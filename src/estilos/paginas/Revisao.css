@@ -137,61 +137,27 @@
 .rvx-nivel-3 { background: var(--rvx-n3); }
 .rvx-nivel-4 { background: var(--rvx-n4); }
 
-/* ---------- herói ---------- */
-.rvx-heroi {
-  position: relative; overflow: hidden; isolation: isolate;
-  display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: clamp(1.25rem, 3vw, 2.5rem); align-items: center;
-  padding: clamp(1.4rem, 4vw, 2.6rem) clamp(1.2rem, 4vw, 2.6rem) clamp(2.2rem, 5vw, 3.2rem);
-  border-radius: var(--raio-grande); background: var(--heroi); color: var(--sobre-heroi); box-shadow: var(--sombra-media);
-}
-.rvx-heroi::before { content: ""; position: absolute; right: -6rem; top: -9rem; width: 24rem; height: 24rem; border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.14), transparent 65%); z-index: -1; }
-.rvx-heroi--zerado::before { background: radial-gradient(circle, rgba(255, 214, 102, 0.32), transparent 65%); }
-.rvx-heroi__data { display: inline-flex; align-items: center; gap: 0.4rem; margin: 0 0 0.8rem; padding: 0.28rem 0.7rem; border-radius: 999px;
-  background: var(--heroi-vidro); border: 1px solid var(--heroi-traco); color: var(--sobre-heroi-2); font-size: var(--meta); font-weight: 600; }
-.rvx-heroi__titulo { margin: 0 0 0.5rem; color: var(--sobre-heroi); font-size: clamp(1.7rem, 4.4vw, 2.6rem); line-height: 1.1; letter-spacing: -0.02em; }
-.rvx-heroi__titulo .numerico { font-size: 1.45em; font-variant-numeric: tabular-nums; }
-.rvx-heroi__tempo { color: var(--sobre-heroi-2); font-weight: 600; font-size: 0.62em; letter-spacing: 0; white-space: nowrap; }
-.rvx-heroi__texto { max-width: 56ch; margin: 0 0 1.3rem; color: var(--sobre-heroi-2); }
-.rvx-heroi__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
-.rvx-heroi .botao.rvx-comecar {
-  display: inline-flex; align-items: center; gap: 0.85rem; min-height: 64px; padding: 0.7rem 1.6rem 0.7rem 1.25rem; border-radius: 16px;
-  background: var(--sobre-heroi); color: #0b3a35; border-color: transparent; text-align: left; text-decoration: none;
-  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.22), 0 12px 28px rgba(0, 0, 0, 0.22); transition: transform 0.12s ease, box-shadow 0.12s ease;
-}
-:root[data-tema="escuro"] .rvx-heroi .botao.rvx-comecar { color: #0d2623; }
-.rvx-heroi .botao.rvx-comecar:hover { transform: translateY(-2px); box-shadow: 0 8px 0 rgba(0, 0, 0, 0.22), 0 16px 32px rgba(0, 0, 0, 0.26); }
-.rvx-heroi .botao.rvx-comecar:active { transform: translateY(3px); box-shadow: 0 3px 0 rgba(0, 0, 0, 0.22); }
-.rvx-comecar > span { display: grid; line-height: 1.2; }
-.rvx-comecar strong { font-size: 1.15rem; }
-.rvx-comecar small { font-size: var(--meta); font-weight: 600; opacity: 0.75; }
-.rvx-heroi .botao.rvx-curta { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 48px; background: var(--heroi-vidro); color: var(--sobre-heroi);
-  border: 1px solid var(--heroi-traco); text-decoration: none; }
-.rvx-heroi .botao.rvx-curta:hover { background: rgba(255, 255, 255, 0.16); }
-.rvx-curta small { opacity: 0.75; }
-.rvx-heroi__lado { display: grid; justify-items: center; gap: 0.9rem; }
-.rvx-anel { width: 128px; height: 128px; }
-.rvx-anel__trilha { fill: none; stroke: rgba(255, 255, 255, 0.16); stroke-width: 9; }
-.rvx-anel__feito { fill: none; stroke: #8ee6bd; stroke-width: 9; stroke-linecap: round; transition: stroke-dasharray 0.6s ease; }
+/* ---------- topo: a estufa da vila ----------
+   A cena, o título e a bancada vêm de componentes/vila/TopoVila.tsx; aqui só o que é da Revisão. */
+.rvx-heroi__titulo .numerico { font-size: 1.3em; font-variant-numeric: tabular-nums; }
+.rvx-heroi__tempo { color: var(--vl-tinta-2); font-weight: 650; font-size: 0.55em; letter-spacing: 0; white-space: nowrap; }
+.rvx-placa-hoje dd { grid-template-columns: auto minmax(0, 1fr); align-items: center; column-gap: var(--e-3); }
+.rvx-anel { width: 76px; height: 76px; }
+.rvx-anel__trilha { fill: none; stroke: rgba(255, 236, 200, 0.16); stroke-width: 10; }
+.rvx-anel__feito { fill: none; stroke: var(--mundo-ouro); stroke-width: 10; stroke-linecap: round; transition: stroke-dasharray 0.6s ease; }
 .rvx-heroi--zerado .rvx-anel__feito { stroke: #ffd666; }
-.rvx-anel__numero { fill: var(--sobre-heroi); font: 800 26px var(--fonte-texto); font-variant-numeric: tabular-nums; }
-.rvx-anel__rotulo { fill: var(--sobre-heroi-2); font: 600 11px var(--fonte-texto); }
-.rvx-chama { display: flex; align-items: center; gap: 0.55rem; padding: 0.55rem 0.85rem; border-radius: 14px; background: var(--heroi-vidro);
-  border: 1px solid var(--heroi-traco); max-width: 15rem; }
-.rvx-chama > svg { flex: none; color: #ffb347; filter: drop-shadow(0 0 6px rgba(255, 160, 60, 0.6)); }
-.rvx-chama span { display: grid; line-height: 1.25; font-size: var(--corpo-menor); font-weight: 600; }
-.rvx-chama b { font-size: 1.2rem; }
-.rvx-chama small { color: var(--sobre-heroi-2); font-weight: 500; font-size: var(--meta); }
-.rvx-chama--apagada > svg { color: var(--sobre-heroi-2); filter: none; }
+.rvx-anel__numero { fill: var(--vl-tinta); font: 800 28px var(--fonte-texto); font-variant-numeric: tabular-nums; }
+.rvx-anel__rotulo { fill: var(--vl-tinta-2); font: 650 12px var(--fonte-texto); }
+.rvx-chama .vl-placa__valor { color: #ffb347; text-shadow: 0 0 14px rgba(255, 150, 50, 0.45), 0 3px 0 rgba(0, 0, 0, 0.5); }
+.rvx-chama dt svg { color: #ffb347; }
+.rvx-chama--apagada .vl-placa__valor, .rvx-chama--apagada dt svg { color: var(--vl-tinta-2); text-shadow: 0 3px 0 rgba(0, 0, 0, 0.5); }
 .rvx-recompensa { display: flex; align-items: center; gap: 1rem; }
 .rvx-recompensa__arte { flex: none; image-rendering: pixelated; filter: drop-shadow(0 0 14px rgba(255, 214, 102, 0.55)); animation: rvx-flutua 2.8s ease-in-out infinite; }
 @keyframes rvx-flutua { 50% { transform: translateY(-5px); } }
-@media (max-width: 46rem) {
-  .rvx-heroi { grid-template-columns: 1fr; }
-  .rvx-heroi__lado { grid-template-columns: auto minmax(0, 1fr); justify-items: start; align-items: center; }
-  .rvx-anel { width: 96px; height: 96px; }
-  .rvx-heroi .botao.rvx-comecar { width: 100%; justify-content: flex-start; }
-  .rvx-recompensa__arte { width: 64px; height: 64px; }
+@media (max-width: 40rem) {
+  .rvx-placa-hoje dd { grid-template-columns: minmax(0, 1fr); justify-items: start; }
+  .rvx-anel { width: 58px; height: 58px; }
+  .rvx-recompensa__arte { width: 56px; height: 56px; }
 }
 
 /* ---------- plano de resgate ---------- */
@@ -270,7 +236,7 @@
 .rvx-progresso > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, var(--verdete), var(--acerto)); }
 .rvx-progresso em { position: absolute; right: 0; top: 0.65rem; font-style: normal; font-size: var(--meta); color: var(--texto-2); }
 .rvx-conquistas__nota { margin: 1rem 0 0; font-size: var(--corpo-menor); }
-@media (prefers-reduced-motion: reduce) { .rvx-recompensa__arte { animation: none; } .rvx-heroi .botao.rvx-comecar { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .rvx-recompensa__arte { animation: none; } }
 .rvx-conquista__arte { flex: none; display: inline-flex; padding: 0.25rem; border-radius: 12px; background: var(--superficie); }
 .rvx-conquista__arte--alvo img, .rvx-conquista__arte--alvo svg { filter: saturate(0.55); opacity: 0.85; }
 

@@ -1,0 +1,32 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><title>Botão principal: cristal ou verdete</title>
+<link rel="stylesheet" href="../../../../src/estilos/tokens.css">
+<link rel="stylesheet" href="../../../../src/estilos/base.css">
+<link rel="stylesheet" href="../../../../src/estilos/componentes/Cristal.css">
+<style>
+body{margin:0;padding:40px;background:var(--porcelana);font-family:var(--fonte-texto);color:var(--texto);width:1280px}
+h1{font-family:var(--fonte-marca);font-size:32px;margin:0 0 6px;letter-spacing:-.03em}
+p.l{margin:0 0 28px;color:var(--texto-2);max-width:70ch}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.op{padding:24px}
+.op h2{margin:0 0 4px;font-family:var(--fonte-marca);font-size:22px}
+.op .t{margin:0 0 18px;color:var(--texto-2);font-size:15px}
+.mundo{padding:22px;border-radius:var(--mundo-raio);background:var(--mundo-painel);color:var(--mundo-tinta);display:grid;gap:12px}
+.mundo small{color:var(--mundo-ouro);font-weight:800;letter-spacing:.12em;font-size:12px}
+.mundo .botao,.mundo .cristal{width:100%;justify-content:flex-start}
+.papel{margin-top:16px;padding:18px;display:grid;gap:10px}
+.papel b{font-family:var(--fonte-marca)}
+.selo{display:inline-block;margin-top:14px;padding:4px 10px;border-radius:999px;font-size:13px;font-weight:700}
+.esc{background:var(--verdete-veu);color:var(--verdete)}
+</style>
+<h1>Botão principal: cristal ou verdete</h1>
+<p class="l">Treinar e Menu (aprovados em 01/11) usam o cristal azul da página inicial para começar. A direção do atlas pede verdete em todo botão principal. Decisão de 01/11: cristal só para começar a estudar; verdete nas outras ações principais.</p>
+<div class="g">
+ <section class="op folha"><h2>A. Cristal só para começar (escolhida)</h2><p class="t">Iniciar sessão, estudar flashcards, ação do dia, revisar agora. O resto: verdete.</p>
+  <div class="mundo"><small>COMEÇAR AGORA</small><button class="cristal">Sessão rápida de 10</button></div>
+  <div class="papel folha"><b>Desempenho · O que fazer agora</b><a class="botao botao--principal" href="#">Montar uma sessão</a></div>
+  <span class="selo esc">Mantém o que foi aprovado; o cristal continua especial</span></section>
+ <section class="op folha"><h2>B. Verdete em tudo</h2><p class="t">Inclusive Treinar e Menu: uma só cor de ação no site inteiro.</p>
+  <div class="mundo"><small>COMEÇAR AGORA</small><button class="botao botao--principal" style="min-height:52px;background:#1d8a7e;border-color:#1d8a7e">Sessão rápida de 10</button></div>
+  <div class="papel folha"><b>Desempenho · O que fazer agora</b><a class="botao botao--principal" href="#">Montar uma sessão</a></div>
+  <span class="selo" style="background:var(--superficie-2);color:var(--texto-2)">Mais uniforme; perde o eco da página inicial</span></section>
+</div></html>

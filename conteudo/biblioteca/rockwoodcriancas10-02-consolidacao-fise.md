@@ -1,14 +1,14 @@
 ---
 id: rockwoodcriancas10-02-consolidacao-fise
-versao: 1
+versao: 2
 titulo: Consolidação, fise e remodelação na criança
 especialidade: pediatria
 acesso: gratis
 livro: Rockwood and Wilkins' Fractures in Children
-edicao: 10ª edição (2025)
+edicao: 10ª edição (2025); Tachdjian's Pediatric Orthopaedics, 6ª edição, caps. 1, 20, 21 e 30
 capitulo: Capítulo 2 · Fracture Repair in Children
 autores: Courtney E. Baker e Jonathan G. Schoenecker
-fonte: Livro conferido localmente em 29/10/2026, capítulo 2. O PDF não traz numeração impressa; as referências citam capítulo, seção e figura.
+fonte: Livro conferido localmente em 29/10/2026, capítulo 2. O PDF não traz numeração impressa; as referências citam capítulo, seção e figura. Ampliado em 01/11/2026 com o Tachdjian's Pediatric Orthopaedics, 6ª ed., e outros capítulos do Rockwood and Wilkins'.
 subtemas: Lesões fisárias; Ossificação e crescimento
 resumo: Zonas da fise, RANVIER (crescimento periférico) e LACROIX (estabilidade); SALTER-HARRIS I a V e PETERSON I e VI; vasos epifisários e camada germinativa, epífise tipo A e B; III e IV com redução anatômica, I e II de risco no fêmur distal e na tíbia proximal, 90% tração e 10% translação; linhas de HARRIS ou PARK, ponte e distúrbio sem parada; periósteo roto na tensão e as quatro tarefas; remodelação perto da fise e no plano do movimento (rádio distal 1 grau por mês, cúbito varo e rotação não); consolidação primária e secundária; KOLODNY, TRUETA e RHINELANDER.
 ---
@@ -185,6 +185,220 @@ como: Questões de projeção; nenhuma questão oficial do conjunto analisado co
 armadilha: Buscar estabilidade absoluta num foco cominutivo e sem sangue.
 !fim
 
+# Do broto do membro ao osso: as duas ossificações {radar=confirmado}
+
+Toda a fise que o resto deste resumo descreve nasce de um processo só: a cartilagem chega antes e o osso a substitui. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21, p. 874) dá o calendário embrionário. Na **6ª semana** as pontas dos brotos se achatam em placas da mão e do pé; na **7ª semana** os membros giram, o superior **90 graus para lateral** (o polegar vai para fora) e o inferior **90 graus para medial** (o hálux vai para dentro); na **8ª semana** os membros estão na posição final, com todos os segmentos e dedos formados, e **a ossificação começa**. Na **12ª semana** há centros de ossificação em **todos os ossos longos**. No capítulo do fêmur (cap. 30, p. 1316), o mesmo livro conta que o fêmur aparece na 4ª semana como condensação de mesênquima e que, **na 8ª semana, a ossificação endocondral já começou**, com o centro primário na diáfise.
+
+**Endocondral e intramembranosa.** O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 2, pág. PDF 78 e 79), define os dois caminhos. Na **intramembranosa**, os **pericitos viram osteoblastos diretamente** e depositam matriz dentro de um tecido conjuntivo que já existe. Na **endocondral**, que aparece onde há **deformação ou hipóxia**, forma-se primeiro um **molde de cartilagem**, depois substituído por osso, num processo que começa pela própria intramembranosa. O Tachdjian (cap. 20, p. 814) chama de ossificação endocondral o ciclo completo da fise: crescimento longitudinal pela placa cartilaginosa e ossificação do precursor cartilaginoso logo abaixo dela.
+
+!tabela Os dois caminhos de formação óssea (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 2; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 20)
+| Caminho | Como acontece | Onde aparece |
+| --- | --- | --- |
+| intramembranosa | pericito vira osteoblasto e deposita matriz direto | consolidação primária; periferia do calo da secundária; crescimento em largura da diáfise pelo periósteo |
+| endocondral | molde de cartilagem invadido por vasos e trocado por osso | fise (crescimento longitudinal); centro do calo da consolidação secundária |
+!fim
+
+**A última camada da fise.** A banca gosta de perguntar o que acontece no fim da coluna de condrócitos. O Rockwood and Wilkins (cap. 2, pág. PDF 72) descreve, depois da zona hipertrófica (aumento celular e produção de matriz) e da de **calcificação provisória** (calcificação máxima), a **zona de ossificação**, já na metáfise e vascularizada, onde os condrócitos **sofrem apoptose ou se transdiferenciam em osteoblastos** e formam a **esponjosa primária**. A metáfise remodela essa esponjosa primária em **secundária** com osteoclastos e osteoblastos, e por isso tem renovação óssea intensa (pág. PDF 74).
+
+**Controle hormonal.** O Tachdjian (cap. 20, p. 814) cita o **hormônio do crescimento** como o principal regulador central: a deficiência dá baixa estatura proporcionada, o excesso no esqueleto imaturo dá gigantismo, e a ação se faz por **fatores de crescimento semelhantes à insulina** produzidos no fígado e nos próprios condrócitos da fise. Os **fatores de crescimento de fibroblastos** são mitogênicos para os condrócitos, e um defeito no **receptor 3 do FGF** causa a **acondroplasia**.
+
+!questoes central=pediatria-0057 relacionadas=pediatria-0663
+conceito: A ossificação dos ossos longos começa por volta da 8ª semana (fêmur com ossificação endocondral já na 8ª semana) e na 12ª há centros em todos; na base da fise os condrócitos sofrem apoptose ou viram osteoblastos e formam a esponjosa primária.
+como: O TARO 2017 perguntou em que semanas de gestação o fêmur e a tíbia começam a ossificar (7ª e 8ª); o TARO 2012, o que caracteriza a camada de calcificação provisória (produção de matriz, hipertrofia, matriz de ossificação e apoptose).
+armadilha: Confundir o aparecimento dos centros primários (embrionário) com o dos secundários das epífises, que em boa parte surgem depois do nascimento.
+alerta: O Tachdjian põe o início da ossificação na 8ª semana e não cita a 7ª nem a tíbia isoladamente (`pediatria-0057`). No TARO 2012 (`pediatria-0663`), o gabarito juntou na calcificação provisória fenômenos que o Rockwood and Wilkins distribui pela hipertrófica (hipertrofia e matriz) e pela zona de ossificação (apoptose).
+!fim
+
+# A anatomia que muda com a idade {radar=fundamento}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 20, p. 812 e 813), divide as epífises em dois tipos. As **de pressão** são articulares e respondem pela **maior parte do crescimento longitudinal**. As **de tração** não são articulares e servem de origem ou inserção muscular: os **trocânteres**, as **tuberosidades do úmero proximal**, os **epicôndilos** do úmero distal e o **tubérculo da tíbia**. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 2, pág. PDF 76 e 77), chama essas últimas de apófises: fibrocartilagem que cresce sob tração.
+
+**Fises complexas.** A ponta superior do fêmur começa como um bloco único (trocânter maior, colo e cabeça); surgem os centros da cabeça e do trocânter, a fise se organiza de forma contínua ao longo do colo e, por fim, se separa em **fise capital** e **fise trocantérica**. O mesmo vale para o úmero proximal e distal e para a cartilagem trirradiada (Tachdjian, cap. 20, p. 813). Nos ossos tubulares curtos, a fise fica **proximal** nas falanges, no **1º metacarpal** e no **1º metatarsal**, e **distal** nos outros metacarpais e metatarsais.
+
+**Ao nascer.** Quase toda epífise é cartilaginosa (condroepífise), **exceto o fêmur distal e às vezes a tíbia proximal** (Rockwood and Wilkins, cap. 2, pág. PDF 66 e 67). Com o amadurecimento dos centros, a ponta do osso fica mais rígida e o padrão de fratura muda com a idade. O **pericôndrio** aumenta a epífise de forma centrífuga e continua no periósteo; na maturidade aparece a **tidemark** entre a cartilagem articular e a cartilagem epifisária calcificada. Na legenda da Fig. 2-1, a **placa epifisária**, colada às células germinativas, sustenta a fise e **impede que os vasos epifisários toquem as germinativas**, e o anel de **LA CROIX** abriga células-tronco perivasculares que migram para a fise.
+
+**Metáfise e diáfise.** A metáfise tem cortical fina, porosa e fenestrada, com haversianos secundários e terciários só no fim da maturação. A única inserção muscular direta relevante na metáfise é a dos **adutores no fêmur distal medial**; ali e perto da linha áspera, a radiografia normal costuma ser lida como reação patológica (pág. PDF 75 e 76). A diáfise vem do osso remodelado da metáfise; com o crescimento os sistemas haversianos ficam mais complexos e a porosidade cai. A **tíbia** pode perder vascularização com a maturidade, o que pesa na consolidação e no risco de pseudartrose.
+
+!tabela Como o osso cresce em cada direção (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 20)
+| Direção | Mecanismo | Quem mostrou |
+| --- | --- | --- |
+| comprimento | fise nas pontas; o meio da diáfise não se alonga | HALES (1731), marcas na diáfise de pintinhos que não se afastaram |
+| largura da diáfise | aposição periosteal, não crescimento intersticial | DUHAMEL, com garança na ração |
+| forma | aposição acompanhada de reabsorção | HUNTER; FLOURENS (reabsorção em quase todo o osso) |
+| largura da fise | ranhura de RANVIER | Tachdjian, cap. 20; Rockwood and Wilkins, cap. 2 |
+!fim
+
+**Carga e crescimento.** Em 1862, HUETER e VOLKMANN notaram que a **compressão retarda** o crescimento e a **tensão o acelera** (princípio de HUETER-VOLKMANN). WOLFF discordou, achando que as duas estimulavam. HAAS mostrou que alças de arame em volta do fêmur distal de cães e pinos através da fise freiam o crescimento; GELBKE viu que o freio só começa quando a pressão se instala na fise, que ele é reversível ao cortar o arame, e concluiu que a tensão **não aumenta** o crescimento endocondral (Tachdjian, cap. 20, p. 813 e 814). É a base biológica dos grampos e das placas de guia de crescimento descritos na seção do distúrbio de crescimento.
+
+# Quanto cada fise cresce {radar=confirmado}
+
+Os dois livros trazem a mesma figura, adaptada de VON LANZ e WACHSMUTH: o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 2, Fig. 2-2), e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 1, Figs. 1.10 e 1.11, p. 19). A regra para guardar é que, **no membro superior, a fise longe do cotovelo manda** e, **no membro inferior, a fise perto do joelho manda**.
+
+!tabela Contribuição de cada fise ao comprimento do osso (Rockwood and Wilkins, Fig. 2-2; Tachdjian, Figs. 1.10 e 1.11)
+| Osso | Proximal | Distal |
+| --- | --- | --- |
+| úmero | 80% | 20% |
+| rádio | 25% | 75% |
+| ulna | 80% (como impresso) | 20% (como impresso) |
+| fêmur | 30% | 70% |
+| tíbia | 55% | 45% |
+| fíbula | 60% | 40% |
+!fim
+
+**Úmero.** O capítulo do úmero proximal do Rockwood and Wilkins (cap. 19, pág. PDF 1838 e 1839) refina: a fise proximal dá **80%** do comprimento, mas **75% antes dos 2 anos** e **até 90% depois dos 11 anos**; fecha entre **14 e 17 anos nas meninas** e **16 e 18 nos meninos**. É **extracapsular**, o que a expõe ao trauma, e as fraturas passam pela hipertrófica e pela calcificação provisória, por isso os tipos I e II remodelam muito. No outro extremo, o úmero distal é só **20%**: aos 5 anos, cerca de **2 mm** em um ano (cap. 14, pág. PDF 1386). Esse número explica por que o **cúbito varo** que aparece nos primeiros meses depois da supracondiliana é **consolidação viciosa**, e não assimetria de crescimento.
+
+**Rádio e ulna.** O rádio distal cresce cerca de **10 mm por ano**, contra cerca de **2 mm por ano** da apófise do olécrano, argumento do Rockwood and Wilkins (cap. 10, pág. PDF 829) contra atravessar a fise do rádio distal com a haste. Os dois livros imprimem a ulna com **80% proximal e 20% distal**; quem for responder sobre o antebraço deve saber que a figura traz esses números, embora o padrão do rádio seja o inverso.
+
+**Membro inferior.** O fêmur distal é a **fise que mais cresce** do membro inferior. O Tachdjian (cap. 20, p. 815 aprox.) cita ANDERSON, GREEN e MESSNER, que, pelas linhas de parada em radiografias seriadas de 206 crianças, acharam **71%** do crescimento do fêmur na ponta distal e **57%** do da tíbia na proximal; os gráficos de crescimento restante usam **70% e 56%**. Juntando os dois, a região do joelho responde pela maior parte do comprimento do membro, e é por isso que a epifisiodese para discrepância se faz no fêmur distal e na tíbia proximal.
+
+!questoes central=pediatria-0111 relacionadas=pediatria-0614,pediatria-0766
+conceito: Úmero 80% proximal e 20% distal; rádio 75% distal; fêmur 70% distal (ANDERSON: 71%); tíbia 55% proximal (ANDERSON: 57%); a fise do fêmur distal é a que mais contribui para o membro inferior.
+como: O TEOT 2021 perguntou a fise responsável pela maior parte do crescimento do membro inferior (fêmur distal); o TARO 2017, as porcentagens do úmero (80% e 20%); o TARO 2008, a contribuição das fises distais do rádio e da ulna para o antebraço.
+armadilha: Inverter o úmero (o crescimento está longe do cotovelo) ou achar que a tíbia distal cresce mais que a proximal.
+alerta: O TARO 2008 (`pediatria-0766`) está sem gabarito oficial; os dois livros imprimem rádio distal 75% e ulna distal 20%, e não somam as duas fises em um número para o antebraço.
+!fim
+
+# Ritmo do crescimento e quanto ainda falta {radar=confirmado}
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 20, p. 815 aprox.), resume o estudo de ANDERSON, GREEN e MESSNER com 100 crianças (51 normais e 49 com poliomielite de um membro, cuja perna sã entrou nos dados). A velocidade de crescimento **cai rápido do nascimento aos 6 anos** e fica **estável dos 6 aos 9**: **5,7 cm por ano** de estatura, **2,0 cm** do fêmur e **1,6 cm** da tíbia. O **estirão** vem depois dos 9 anos, com pico entre **10 e 12 anos nas meninas** e **12 e 14 nos meninos**, seguido de quatro anos de queda até parar. Em geral o crescimento continua por **2 anos depois do estirão**, seja qual for a idade em que ele ocorreu.
+
+**Proporções do corpo.** No capítulo 1 (p. 5), o recém-nascido tem a **cabeça com cerca de um quarto** do comprimento total. A relação entre segmento superior (vértice à sínfise púbica) e inferior (sínfise ao chão) é de cerca de **1,7 ao nascer**, chega a **1,0 por volta dos 10 anos** e depois fica **menor que 1,0**, porque o segmento superior passa a ser mais curto que o inferior. Altura e peso fora do 3º ou acima do 97º percentil, ou uma mudança de faixa, pedem investigação (p. 6). A maturação puberal é graduada por **TANNER** (mamas nas meninas, genitais nos meninos, pelos pubianos em ambos), e a menarca é um marco importante.
+
+!tabela Métodos para estimar o crescimento restante (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 20)
+| Método | Base | O que guardar |
+| --- | --- | --- |
+| ANDERSON, GREEN e MESSNER | gráficos por idade óssea (GREULICH e PYLE), fêmur distal 70% e tíbia proximal 56% | menina de idade óssea 10 anos e 3 meses: mediana de 4,1 cm restantes no fêmur distal, com extremos de 2,2 a 7,2 |
+| WHITE e STUBBINS, modificado por MENELAUS | idade cronológica, ritmo fixo por ano | fêmur distal 3/8 de polegada (cerca de 9,5 mm) e tíbia proximal 1/4 (cerca de 6 mm) por ano; parada aos 16 anos nos meninos e 14 nas meninas (MENELAUS) |
+| MOSELEY (1977) | gráfico em linha reta com nomograma de idade óssea | erro médio de 0,6 cm, contra 0,9 cm do ANDERSON |
+| PALEY | multiplicador por idade e sexo | dispensa medidas seriadas |
+!fim
+
+**MENELAUS em detalhe.** WHITE dizia que o fêmur distal cresce **3/8 de polegada** e a tíbia proximal **1/4 de polegada** por ano, com parada aos **17 anos nos meninos e 16 nas meninas**; MENELAUS manteve o ritmo e antecipou a parada para **16 e 14**. Em 53 epifisiodeses pela técnica de PHEMISTER, **52%** ficaram a até 1/4 de polegada do previsto. Como fêmures longos tendem a crescer menos e os curtos mais, o método simples de MENELAUS acaba tão preciso quanto o de MOSELEY (Tachdjian, cap. 20, p. 818 e 819 aprox.).
+
+**Idade óssea.** ANDERSON usou a mão e o punho de GREULICH e PYLE, mas lembrou que **cotovelo, quadril, joelho e pé** também servem. A idade óssea dá estimativa mais precisa quando a criança está **adiantada ou atrasada 2 anos ou mais**. O próprio atlas tem limite: quatro radiologistas discordaram em mais de 1 ano em **50%** das radiografias e em mais de 2 anos em **10%**, e KASSER e JENKINS não viram ganho do atlas sobre a idade cronológica entre 5 e 10 anos, exceto em meninas com idade óssea adiantada.
+
+!questoes central=pediatria-0174 relacionadas=pediatria-0064,pediatria-0332
+conceito: Pelo método de MENELAUS, o fêmur distal cresce cerca de 3/8 de polegada (perto de 10 mm) e a tíbia proximal 1/4 de polegada (perto de 6 mm) por ano, até os 16 anos nos meninos e 14 nas meninas; o estirão tem pico aos 10 a 12 anos nas meninas e 12 a 14 nos meninos.
+como: O TEOT 2023 perguntou o crescimento anual do fêmur distal e da tíbia proximal pelo método de MENELAUS (9 e 6 mm); o TARO 2015, o crescimento do tronco na puberdade; o TEOT 2025, o que usa o método de SAUVEGRAIN.
+armadilha: Inverter os números (a tíbia proximal cresce menos que o fêmur distal) ou usar 17 e 16 anos, que são os limites originais de WHITE.
+alerta: O Tachdjian traz o ritmo em polegadas, sem citar a idade de nove anos (`pediatria-0174`). Nenhum dos livros compara tronco e membros na puberdade (`pediatria-0064`); o Tachdjian só diz que, depois dos 10 anos, o segmento superior fica mais curto que o inferior. O método de SAUVEGRAIN (`pediatria-0332`) não aparece nos dois livros; o Tachdjian apenas lembra que o cotovelo pode ser usado para a idade óssea.
+!fim
+
+# Centros de ossificação do ombro e do cotovelo {radar=confirmado}
+
+O cotovelo é a articulação em que mais se confunde centro de ossificação com fratura. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 14, pág. PDF 1386), lembra o mnemônico **CRITOE**: **capítulo, rádio (cabeça), epicôndilo interno (medial), tróclea, olécrano e epicôndilo externo (lateral)**; o capítulo surge por volta dos **2 anos** na radiografia, e os demais, em média, a cada 2 anos. No capítulo 13 (pág. PDF 1236), CHENG estudou 1.577 crianças chinesas e achou a **mesma sequência nos dois sexos**, com uma variação de ordem (olécrano antes da tróclea, CRMTOL), e um **atraso de cerca de 2 anos nos meninos** em todos os centros **menos o capítulo**.
+
+!tabela Aparecimento e fusão no membro superior (Rockwood and Wilkins, cap. 2, Figs. 2-3 e 2-4; Tachdjian's Pediatric Orthopaedics, 6ª ed., Figs. 1.6 e 1.7)
+| Centro | Aparece (meninos; meninas) | Funde (meninos; meninas) |
+| --- | --- | --- |
+| cabeça do úmero | nascimento a 3 meses | com as tuberosidades aos 4 a 6 anos; à diáfise 19 a 21; 18 a 20 |
+| tuberosidade maior | 6 meses a 2 anos; 3 meses a 1,5 ano | ver cabeça do úmero |
+| tuberosidade menor | 3 a 5 anos | ver cabeça do úmero |
+| capítulo | 6 meses; 4 meses | com tróclea e epicôndilo lateral na puberdade; à diáfise 17; 14 |
+| cabeça do rádio | 5 anos; 4 anos | 15 a 17; 14 a 15 |
+| epicôndilo medial | 7 anos; 5 anos | 18; 15 |
+| tróclea | 9 anos; 8 anos | com o capítulo |
+| olécrano | 10 anos; 8 anos | 15 a 17; 14 a 15 |
+| epicôndilo lateral | 12 anos; 11 anos | com o capítulo |
+| rádio distal | 1 ano | 19; 17 |
+!fim
+
+**O epicôndilo medial funde por último.** Pouco antes do fim do crescimento, capítulo, epicôndilo lateral e tróclea se juntam num **centro epifisário comum**, que funde à metáfise; o **epicôndilo medial**, extra-articular, fica separado desse centro por osso metafisário e **pode não fundir até o fim da adolescência** (Rockwood and Wilkins, cap. 13, pág. PDF 1232). Nas figuras, ele fecha aos **18 anos nos meninos e 15 nas meninas**, depois do centro comum (17 e 14). A cabeça do rádio e o olécrano fundem mais ou menos junto com o centro comum, entre **14 e 16 anos** (pág. PDF 1234). A cabeça do rádio está presente em metade das meninas aos **3,8 anos** e dos meninos aos **4,5**; o olécrano secundário aparece por volta de **6,8 anos nas meninas e 8,8 nos meninos** e pode ter dois centros, um articular e outro de tração (PETERSON).
+
+**Úmero proximal.** O capítulo 19 do Rockwood and Wilkins (pág. PDF 1838) dá números um pouco diferentes da figura geral: a epífise proximal aparece na radiografia por volta dos **6 meses**, a **tuberosidade maior entre 1 e 3 anos** e a **menor entre 4 e 5 anos**; as tuberosidades se juntam aos **5 a 7 anos** e fundem à cabeça entre **7 e 13 anos**. A figura geral (Fig. 2-3, igual à Fig. 1.6 do Tachdjian) põe a tuberosidade maior entre 6 meses e 2 anos nos meninos e 3 meses e 1,5 ano nas meninas, e a fusão com a cabeça aos 4 a 6 anos. Saber que o centro existe evita chamar de fratura a linha entre ele e a cabeça.
+
+!questoes central=pediatria-0682 relacionadas=pediatria-0378,pediatria-0648,pediatria-0839,pediatria-0571
+conceito: CRITOE: o capítulo aparece primeiro e o epicôndilo lateral por último; o epicôndilo medial, extra-articular e separado do centro comum, é o último a fundir (18 anos nos meninos, 15 nas meninas); a tuberosidade maior aparece entre 1 e 3 anos.
+como: O TARO 2013, o TARO 2019 e o TARO 2008 perguntaram o último centro do cotovelo ou do úmero distal a fundir (epicôndilo medial); a prova da SBCOC, o primeiro a aparecer (capítulo); o TARO 2022, quando aparece a tuberosidade maior (1 a 3 anos).
+armadilha: Confundir a ordem de aparecimento (o lateral é o último a aparecer) com a de fusão (o medial é o último a fundir).
+alerta: O TARO 2008 (`pediatria-0839`) está sem gabarito oficial; pelo livro, a resposta é o epicôndilo medial. Para a tuberosidade maior (`pediatria-0571`), o gabarito bate com o capítulo 19 do Rockwood and Wilkins (1 a 3 anos); a figura geral dos dois livros dá 6 meses a 2 anos nos meninos.
+!fim
+
+# Centros de ossificação do quadril, do joelho e do pé {radar=confirmado}
+
+No membro inferior, dois centros já estão lá ao nascer: o do **fêmur distal (36ª semana fetal)** e o da **tíbia proximal (40ª semana fetal)**, segundo a Fig. 2-3 do Rockwood and Wilkins' Fractures in Children, 10ª ed., e a Fig. 1.8 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 17). O Tachdjian (cap. 30, p. 1316) põe o centro distal do fêmur no **7º mês fetal** e a cabeça do fêmur aos **4 a 5 meses** de vida.
+
+!tabela Aparecimento e fusão no membro inferior (Rockwood and Wilkins, Figs. 2-3 e 2-4; Tachdjian, Figs. 1.8 e 1.9)
+| Centro | Aparece | Funde (meninos; meninas) |
+| --- | --- | --- |
+| cabeça do fêmur | 4 meses | 17 a 18; 16 a 17 |
+| trocânter maior | 3 anos | 16 a 17 |
+| trocânter menor | 12 anos; 11 anos | 16 a 17 |
+| fêmur distal | 36ª semana fetal | 18 a 19; 17 |
+| tíbia proximal | 40ª semana fetal | 18 a 19; 16 a 17 |
+| tuberosidade da tíbia | 7 a 15 anos | 19 |
+| patela | 4 a 5 anos; 3 anos | sem dado |
+| tíbia distal | 6 meses | 17 a 18 |
+| fíbula distal | 1 ano; 9 meses | 17 a 18 |
+| acetábulo (centros secundários) | 10 a 13 anos | ossos da pelve na puberdade |
+!fim
+
+**A pelve.** O ílio, o ísquio e o púbis são três centros primários que se encontram na **cartilagem trirradiada**; ela funde por volta dos **12 a 14 anos** (Rockwood and Wilkins, cap. 23, pág. PDF 2253), mais exatamente **12 anos nas meninas e 14 nos meninos** (pág. PDF 2256). O púbis e o ísquio fundem no ramo inferior aos **6 ou 7 anos**, às vezes com uma área lucente assintomática que não é lesão. O acetábulo se aprofunda por crescimento intersticial da cartilagem, aposicional da periferia e osso periosteal na borda, sempre em resposta a uma cabeça esférica. No fêmur proximal, a fise capital faz o colo crescer e a apófise trocantérica faz o trocânter crescer por aposição; depois dos **8 anos** o crescimento do trocânter maior é sobretudo aposicional (cap. 24 e 25, pág. PDF 2353 e 2454).
+
+**O pé.** O **calcâneo** é o primeiro osso do tarso a ossificar, com centro primário no **3º mês intrauterino**; a apófise posterior aparece aos **6 a 8 anos** e funde aos **14 a 16** (Rockwood and Wilkins, cap. 31, pág. PDF 3146). O **tálus** e o calcâneo em geral já estão ossificados ao nascer, o **cuboide** aparece logo depois, e o **navicular só por volta dos 3 anos** (pág. PDF 3106). A figura do Tachdjian dá o calcâneo às 24 a 36 semanas fetais, o tálus às 26 a 28, o cuboide à 40ª, os cuneiformes entre 3 meses e 2,5 anos e o navicular aos **3 anos nos meninos e 2 nas meninas**: é o **último do tarso**. Por ser cartilaginoso até a adolescência, o pé da criança dissipa energia e a fratura pode não aparecer na radiografia; comparar com o outro lado ajuda.
+
+!questoes central=pediatria-0275 relacionadas=pediatria-0613
+conceito: Fêmur distal (36ª semana) e tíbia proximal (40ª semana) já existem ao nascer; a cabeça do fêmur aparece aos 4 meses; a trirradiada funde aos 12 a 14 anos (12 nas meninas, 14 nos meninos); no tarso, o navicular é o último, por volta dos 3 anos.
+como: O TARO 2024 perguntou o último osso do tarso a ossificar (navicular); o TARO 2017, a idade de fusão da trirradiada (12 a 14 anos).
+armadilha: Pensar que o cuboide ou os cuneiformes ossificam por último; ou que a trirradiada fecha antes dos 10 anos.
+!fim
+
+# Marcos motores e a radiografia {radar=confirmado}
+
+Duas questões recentes do TARO cruzaram o calendário dos centros de ossificação com o do desenvolvimento motor. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 1, p. 6), explica que o desenvolvimento motor grosso segue a maturação do sistema nervoso central em sentido **cefalocaudal**: primeiro o controle da cabeça, depois o das mãos, por último o das pernas.
+
+!tabela Marcos motores grossos (Tachdjian's Pediatric Orthopaedics, 6ª ed., Tabela 1.1, p. 20)
+| Idade | Marco |
+| --- | --- |
+| 2 meses | mantém a cabeça no plano do corpo em prono |
+| 3 meses | levanta a cabeça acima do plano do corpo em prono |
+| 4 meses | em prono, levanta cabeça e tórax apoiado nos antebraços |
+| 6 meses | apoia nas mãos, cabeça sem atraso ao puxar para sentar, rola, senta com apoio |
+| 9 meses | senta sem apoio, engatinha, puxa-se para ficar em pé, fica de pé com as duas mãos apoiadas |
+| 12 meses | anda com apoio de uma mão |
+| 14 meses | fica em pé e anda sem apoio |
+| 2 anos | sobe escada sem apoio, um pé por vez; corre; chuta bola |
+| 3 anos | sobe alternando os pés; pedala triciclo |
+| 4 anos | desce alternando os pés; pula num pé |
+!fim
+
+**O cruzamento.** A **cabeça do fêmur aparece aos 4 meses** (Rockwood and Wilkins' Fractures in Children, 10ª ed., Fig. 2-3), a mesma idade em que a criança, em prono, **levanta a cabeça e o tórax apoiada nos antebraços**. A **epífise distal da tíbia aparece aos 6 meses**, de modo que a criança que acaba de **andar com apoio de uma mão (12 meses)** já tem esse centro, além do fêmur distal e da tíbia proximal, presentes desde o nascimento; a fíbula distal (9 meses nas meninas, 1 ano nos meninos) está no limite, e a patela (3 anos nas meninas) ainda não. No texto, o Tachdjian põe engatinhar entre 7 e 9 meses, andar com ajuda aos 12, andar sem apoio entre 12 e 16 e correr aos 18; a marcha de padrão adulto se forma entre **3 e 5 anos**. A **ambidestria** é normal até 18 a 24 meses; uma preferência manual antes disso pode ser o primeiro sinal de **hemiplegia espástica** (p. 19).
+
+**Por que isso importa.** O Tachdjian (p. 3 e 5) separa quatro falhas do desenvolvimento: **malformação** (defeito da organogênese no 2º mês, como a mielomeningocele, a sindactilia e a deficiência femoral congênita), **deformação** (estresse mecânico, como o metatarso aduto flexível, o calcaneovalgo e o encurvamento fisiológico da tíbia, em geral reversível), **disrupção** (interferência externa, como a banda de constrição) e **displasia** (diferenciação anormal do tecido, como a osteogênese imperfeita e a acondroplasia). A idade define o normal: o geno varo é esperado aos 12 meses e preocupa aos 3 anos.
+
+!questoes central=pediatria-0386 relacionadas=pediatria-0286
+conceito: A cabeça do fêmur ossifica aos 4 meses, quando a criança levanta cabeça e tórax em prono com apoio nos antebraços; a tíbia distal ossifica aos 6 meses, antes de a criança andar com apoio de uma mão (12 meses).
+como: O TARO 2025 perguntou o marco motor recém-adquirido quando a cabeça do fêmur começa a ossificar (sustentar cabeça e tronco em decúbito ventral); o TARO 2024, o centro visível na radiografia de uma menina que acaba de andar com apoio de um braço (epífise distal da tíbia).
+armadilha: Esperar a patela ou o navicular numa criança de 1 ano, ou achar que a cabeça do fêmur só aparece quando a criança anda.
+!fim
+
+# Hipercrescimento: fratura e coto de amputação {radar=confirmado}
+
+O hipercrescimento é o lado oposto da parada fisária. Depois da fratura da diáfise do fêmur, o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 25, pág. PDF 2517), descreve uma aceleração **mais comum entre 2 e 10 anos**, em média de **0,9 cm** (0,4 a 2,5 cm), mais rápida nos **2 primeiros anos** e bem menor no ano seguinte. Por isso, **encurtamento de 2 a 3 cm no gesso** é o máximo aceitável. A idade é o fator mais constante; a relação com o nível (terço proximal ou distal) e com o tipo de traço é controversa. Na fixação, o capítulo registra hipercrescimento acima de 1 cm em **8,2%** dos pré-escolares tratados com **haste elástica de titânio**, taxa maior que nas crianças mais velhas (pág. PDF 2487), e dois adolescentes com mais de 2,5 cm numa série de hastes bloqueadas (pág. PDF 2541). WALLACE e HOFFMAN atribuem **74%** da remodelação do fêmur à fise, e só uma parte menor à aposição no foco (pág. PDF 2518).
+
+**O coto de amputação.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 21, p. 916 aprox.), trata de outro fenômeno: o **hipercrescimento ósseo terminal** depois de amputação **através de osso longo** no esqueleto imaturo. É um fenômeno **biológico local**, na ponta do osso: a contração da ferida puxa o periósteo para dentro do canal e o põe em contato com o endósteo, e as espículas crescem por **formação periosteal, não epifisária**. Forma-se uma bursa dolorosa, e o osso pode atravessar a pele.
+
+!tabela Hipercrescimento do coto de amputação (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 21)
+| Item | O que o livro diz |
+| --- | --- |
+| ossos mais atingidos, em ordem | úmero, fíbula, tíbia, fêmur |
+| mecanismo | periósteo puxado para o canal; aposição periosteal, não fisária |
+| quando não ocorre | desarticulação; por isso é preferida à amputação metafisária ou transdiafisária muito curta |
+| tratamento clássico | ressecção, que sacrifica comprimento e recidiva, às vezes a cada 2 ou 3 anos |
+| prevenção | capa biológica (crista ilíaca tricortical, DAVIDS) melhor que capa sintética; fíbula proximal transferida para a tíbia distal sem hipercrescimento em 50 casos (FEDORAK, 7,2 anos) |
+!fim
+
+Na amputação transtibial, o Tachdjian sugere bloquear o canal com segmentos cobertos de cartilagem, como cabeças de metatarsais do pé amputado, e a fíbula recidivante pode ser tratada com sinostose distal entre fíbula e tíbia (procedimento de ERTL). A capa biológica profilática na amputação inicial é recomendada por alguns autores quando todo o tecido contaminado foi desbridado.
+
+!questoes central=pediatria-0284 relacionadas=pediatria-0784,pediatria-0813
+conceito: O hipercrescimento do coto é aposição periosteal na ponta do osso amputado através da diáfise, mais comum no úmero, depois fíbula, tíbia e fêmur, e não ocorre na desarticulação; o hipercrescimento após fratura do fêmur é de cerca de 0,9 cm, mais comum entre 2 e 10 anos.
+como: O TARO 2024 perguntou o osso com mais hipercrescimento após amputação diafisária em menores de 12 anos (úmero); o TARO 2009, a causa de amputação com mais crescimento aposicional no coto; o TARO 2006 afirmou que a placa no fêmur dá mais hipercrescimento que a fixação intramedular.
+armadilha: Achar que o hipercrescimento do coto vem da fise ou que acontece na desarticulação.
+alerta: O TARO 2009 (`pediatria-0784`) e o TARO 2006 (`pediatria-0813`) estão sem gabarito oficial. O Tachdjian descreve o hipercrescimento na amputação através de osso longo sem comparar causas, e o Rockwood and Wilkins não compara placa com haste quanto ao hipercrescimento.
+!fim
+
 # Fechamento {radar=fundamento}
 
 > **Na prova:** zonas: germinativa, proliferativa, **hipertrófica** (a mais fraca), calcificação, ossificação; **RANVIER** cresce, **LACROIX** segura; SALTER-HARRIS I a V, PETERSON **I** (metafisária, benigna) e **VI** (perda da fise, cortador de grama); fise **avascular**, **epifisários** nutrem a germinativa; tipo A úmero e fêmur proximais, tipo B tíbia e rádio distal; **III e IV** anatômicos (união cruzada); I e II benignos **exceto fêmur distal e tíbia proximal**; **90/10**; HARRIS **convergente** = ponte; sem parada = guia no **convexo**; periósteo roto na **tensão**, ápice aponta para ela; 3B = **anteromedial**, braquial e mediano; remodela **jovem, perto da fise, no plano**; rádio **1 grau/mês**; **cúbito varo e rotação** não; primária = deformação baixa + sangue; RHINELANDER = periósteo primeiro na desviada.
+
+> **Na prova, o que a versão 2 acrescenta:** ossificação começa na 8ª semana e há centros em todos os ossos longos na 12ª; fêmur distal (36ª semana) e tíbia proximal (40ª) já existem ao nascer; úmero 80/20, rádio 75% distal, fêmur 70% distal (ANDERSON 71%), tíbia 55% proximal (57%); MENELAUS: fêmur 3/8 de polegada (cerca de 10 mm) e tíbia 1/4 (cerca de 6 mm) por ano até 16 anos nos meninos e 14 nas meninas; estirão 10 a 12 nas meninas e 12 a 14 nos meninos; CRITOE, capítulo primeiro, epicôndilo medial funde por último (18 e 15); tuberosidade maior 1 a 3 anos; trirradiada 12 a 14; navicular último do tarso (3 anos); cabeça do fêmur 4 meses (prono com antebraços), tíbia distal 6 meses; hipercrescimento do coto periosteal, úmero primeiro, ausente na desarticulação; fêmur fraturado cresce 0,9 cm a mais.

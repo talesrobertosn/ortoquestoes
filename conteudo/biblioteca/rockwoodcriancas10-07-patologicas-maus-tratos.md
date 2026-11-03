@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-07-patologicas-maus-tratos
-versao: 1
+versao: 2
 titulo: Fraturas patológicas e maus-tratos na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries
 autores: Alexandre Arkader e Karim Masrouha
-fonte: Livro conferido localmente em 27/10/2026, capítulo 7. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livro conferido localmente em 27/10/2026, capítulo 7. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela. Ampliado em 01/11/2026 com o cap. 7 relido, o Tachdjian's Pediatric Orthopaedics, 6ª ed., e o Campbell's Operative Orthopaedics, 15ª ed., cap. 38.
 subtemas: Maus-tratos
 resumo: Cisto ósseo simples e aneurismático, fibroma não ossificante, displasia fibrosa, osteogênese imperfeita, escorbuto e fraturas nas doenças neuromusculares; nos maus-tratos, KLEINMAN (metafisária clássica, costela posterior, escápula, processo espinhoso, esterno), inventário esquelético abaixo de 2 anos repetido em 2 semanas, equimoses, queimaduras, fêmur e conduta.
 ---
@@ -104,6 +104,269 @@ como: Questões de projeção.
 armadilha: Dar alta sem notificar por falta de certeza.
 !fim
 
+# Maus-tratos em números: definição, famílias e crianças em risco {radar=oportunidade}
+
+O Rockwood and Wilkins' Fractures in Children, 10ª ed., abre a segunda metade do capítulo 7 com uma definição ampla: maus-tratos são **qualquer ato ou omissão** do pai ou cuidador que resulte em morte, dano físico ou emocional sério, abuso ou exploração sexual, ou que crie **risco iminente** de dano sério, em menores de 18 anos. Os quatro tipos são o abuso **físico, sexual e emocional e a negligência**, e a negligência é o mais frequente. O livro lembra que o abuso crônico, repetido ao longo de anos, tem desfecho pior, que o maltrato psicológico é hoje visto como tão danoso quanto os outros e que os nomes modernos são lesão não acidental (NAI), lesão infligida e trauma não acidental (NAT).
+
+Os dados americanos do NCANDS mostram quase **4 milhões de notificações em 2021** (1,2 milhão em 1982) e 9,2 vítimas confirmadas por 1.000 crianças. O risco é maior abaixo de 4 anos, e a taxa mais alta é a do **lactente**. O abuso é a **segunda causa de morte de 1 a 6 meses**, atrás só da síndrome da morte súbita, e a segunda acima de 1 ano, atrás do trauma acidental. Até **11% dos lactentes** levados ao pronto-socorro por evento com aparente risco de vida (hoje chamado de evento breve resolvido e inexplicado) são depois confirmados como vítimas, e a criança que entra no registro estadual de abuso tem mortalidade **3 vezes maior**.
+
+!tabela Preditores parentais de abuso (Tabela 7-4, Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7)
+| Grupo | Preditores |
+| --- | --- |
+| Gerais | **Adulto sem parentesco morando na casa** (50 vezes o risco de morte no primeiro ano por trauma não acidental); pai ou mãe com história de abuso; divórcio dos pais da mãe; mãe separada da própria mãe; álcool ou drogas; depressão materna; creche domiciliar |
+| Mãe | **Menos de 20 anos**; baixa escolaridade; história de abuso sexual; problemas de orientação dos filhos; pai ausente na infância; doença psiquiátrica |
+| Pai | Menos de 20 anos; baixa escolaridade; problemas de orientação dos filhos; doença psiquiátrica |
+!fim
+
+Do lado da criança, o Rockwood and Wilkins cita uma série em que **78% das fraturas** de crianças abusadas ocorreram abaixo de 3 anos e **50% abaixo de 1 ano**; o lactente é o alvo do homicídio infantil, a forma mais grave de abuso. Correm mais risco os **primogênitos, prematuros, enteados, crianças com deficiência** (de 25% a 83% delas foram abusadas nas séries) e **gêmeos**. Os tipos se somam: a criança abusada fisicamente tem 1 chance em 6 de abuso sexual, e a abusada sexualmente, 1 em 7 de abuso físico. Casas em crise (separação, desemprego, morte na família, problemas de moradia ou de dinheiro), uso de drogas e creche mal supervisionada completam o quadro, mas o livro insiste que **qualquer adulto, de qualquer classe social**, pode abusar.
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 27, pág. 1153 a 1154), conta a história: **CAFFEY** descreveu as manifestações ortopédicas em 1946 e **KEMPE**, em 1962, cunhou a "síndrome da criança espancada", que levou às leis de notificação obrigatória nos 50 estados americanos. O Tachdjian estima que **1% a 1,5% das crianças** sejam abusadas por ano (695.000 vítimas em 2010; cerca de 20 por 1.000 abaixo de 1 ano), que o abuso esteja por trás de **até 50% das fraturas no primeiro ano de vida e de um terço das fraturas abaixo de 3 anos**, e que a criança com deficiência tenha **4 a 7 vezes** mais risco. Na série de ZIMMERMAN, 50% de 243 crianças abusadas tinham menos de 1 ano e 78% menos de 3. A criança que cai da janela do terceiro andar levanta a pergunta da **negligência**, que também se notifica.
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, Box 38.1, pág. 1361 aprox.), resume os fatores associados ao NAT numa lista curta: **idade abaixo de 2 anos**, múltiplos problemas médicos na criança, lesões em fases diferentes de consolidação, **fraturas posteriores de costela**, **fratura de osso longo abaixo de 1 ano**, desemprego dos pais, baixa renda e família monoparental.
+
+# A história que não fecha e o exame da cabeça aos pés {radar=confirmado}
+
+Segundo o Rockwood and Wilkins' Fractures in Children, 10ª ed., o ortopedista se envolve no cuidado de **30% a 50%** das crianças abusadas, e o próprio capítulo admite que ortopedistas, sobretudo os mais experientes, nem sempre procuram a causa por trás da fratura. O diagnóstico é multidisciplinar (pediatra, assistente social, equipe de proteção, polícia), mas cabe ao ortopedista dizer se o **mecanismo relatado explica a lesão**.
+
+Na história, três perguntas que os médicos raramente fazem: **o relato é de quem viu ou de quem ouviu dizer**, a **que horas** aconteceu e **quem estava presente**. A **demora em procurar atendimento** é muito sugestiva. O lactente com trauma craniano abusivo tem **alteração neurológica imediata**, com sintomas em poucas horas, de modo que uma história de criança "normal" por dias depois do trauma não fecha. Alguns mecanismos que o capítulo desmonta:
+
+- **Rolar** não é mecanismo plausível para fratura do úmero no lactente que ainda não anda (estudo de elementos finitos).
+- Lactentes caem da cama ou do trocador com frequência, mas **lesão grave ou conjunto de lesões** nessas quedas é extremamente raro.
+- Crianças maiores que "caem do móvel" fraturam em 98%, sobretudo no membro superior, porque são catapultadas brincando, e não por simples queda de pequena altura.
+- Escada: numa série de 363 acidentes, 10 lactentes foram derrubados pelo cuidador (4 com fratura de crânio), 60% dos de 6 meses a 1 ano estavam em andador, e só 4% tiveram fratura de membro e 1% de crânio.
+- Queda de **menos de 1,5 m raramente mata**; a criança que morre depois de uma queda assim relatada exige necropsia especializada.
+
+No exame, **50% dos casos confirmados mostram sinais de abuso anterior**, por isso a busca é da cabeça aos pés, com atenção à pele, ao sistema nervoso, ao abdome e à genitália. O capítulo destaca as **lesões sentinela**: equimose na **orelha**, **hemorragia subconjuntival** e **frênulo da língua rasgado**; lesões sentinela como fratura de costela, trauma abdominal ou hemorragia intracraniana indicam abuso em mais de 20% dos casos. Equimoses acidentais existem em 17% dos lactentes que já se movem, 53% das crianças que começam a andar e na maioria dos escolares, mas em **apenas 1,3% abaixo de 5 meses** (6,4% nos lactentes maiores), e ficam sobre **proeminências ósseas** (queixo, testa, joelhos, canelas).
+
+!tabela Equimoses que sugerem abuso (Tabela 7-5, MAGUIRE, Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7)
+| Padrão | Por que preocupa |
+| --- | --- |
+| Criança sem mobilidade independente; lactente abaixo de 1 ano | Não gera a energia para se machucar sozinha |
+| Longe de proeminências ósseas | A queda acidental marca queixo, testa, joelho e canela |
+| Face, dorso, abdome, braços, nádegas, orelhas, mãos | Regiões protegidas no tombo comum |
+| Várias em grupo ou de forma uniforme | Golpes repetidos com o mesmo objeto |
+| Marca do objeto ou de amarra | Desenho do instrumento ou da corda |
+| Regra geral | **Nunca interpretar a equimose isolada**: somar história, desenvolvimento, exame e exames |
+!fim
+
+**Queimaduras** aparecem em cerca de 20% dos abusados, mais abaixo de 3 anos, e a **escaldadura** é o tipo abusivo mais frequente, por derramamento ou imersão. O derramamento acidental atinge tronco e parte proximal dos membros superiores, em geral pela frente, e o líquido que escorre desenha uma **ponta de flecha**, mais rasa e estreita para baixo, com respingos ao redor. Na imersão acidental a criança estende as pernas para sair e queima os membros inferiores de modo uniforme, com meia ou luva de margens imprecisas e profundidade variável; na **imersão intencional** ela é baixada na água, **flete quadris e joelhos** e **poupa as fossas poplíteas** e a prega glútea (aspecto de "rosquinha"), com profundidade uniforme e **linha d'água nítida**. Segundo e terceiro graus profundos, bem demarcados e circunferenciais devem levantar suspeita, e todo queimado abaixo de 2 anos merece inventário esquelético, porque a queimadura costuma vir com fraturas de costela antigas. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. de mão, PDF 379), acrescenta as **queimaduras de cigarro** e as **queimaduras bilaterais de mãos e pés em meia e luva**. Fotografe tudo **antes do gesso**, sobretudo antes de uma spica.
+
+O capítulo 7 não discute o fundo de olho, mas o capítulo de clavícula do mesmo Rockwood and Wilkins lista, entre as lesões que acompanham a fratura de clavícula por NAT na criança pequena, **sangramento intracraniano, contusão ocular, hemorragia retiniana**, queimaduras e fraturas de costela, tíbia, úmero e fêmur.
+
+!questoes central=pediatria-0881
+conceito: História inconsistente, alteração neurológica e hemorragia retiniana em criança pequena apontam para trauma craniano abusivo; o abusado tem sintoma neurológico imediato e lesões sentinela.
+como: A prova de R4 de Coluna de Joinville (2010) descreveu criança de 3 anos em coma, história inconsistente e hemorragia retiniana; resposta: abuso infantil.
+armadilha: Aceitar "TCE por queda": queda de pequena altura raramente dá lesão com risco de vida.
+alerta: O capítulo 7 do Rockwood and Wilkins não trata da hemorragia retiniana; ela aparece só no capítulo de clavícula (PDF 1953) entre as lesões associadas ao NAT. O gabarito oficial (`pediatria-0881`) foi mantido.
+!fim
+
+# O osso conta o mecanismo: PIERCE, KING e os ossos longos {radar=confirmado}
+
+Depois da pele, as **fraturas são a segunda apresentação mais comum** do abuso, segundo o Rockwood and Wilkins' Fractures in Children, 10ª ed. Quanto mais nova a criança, sobretudo **abaixo de 18 meses**, maior a chance de abuso. O que preocupa é o osso que quebra **em tensão com torção**, e não na compressão fisiológica das quedas da infância. KLEINMAN lembra que até os achados de especificidade moderada ou baixa ficam específicos quando a explicação é inadequada ou inconsistente; o tipo e o local da fratura são só uma peça.
+
+!tabela As perguntas de PIERCE diante de uma fratura de osso longo (Tabela 7-6, Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7)
+| Pergunta | O que ela testa |
+| --- | --- |
+| Qual a biodinâmica e a energia do evento? | Se o ambiente do acidente explica a lesão |
+| Que lesões eram esperadas? | Se o evento gerou a carga para cada lesão vista |
+| A energia passou do limiar ou o osso estava fraco? | Doença óssea, densidade baixa |
+| A morfologia combina com direção, magnitude e velocidade da carga? | Transversa, espiral, toro |
+| O padrão exige carga muito incomum? | Lesão metafisária clássica |
+| A criança, no seu desenvolvimento, gera essa energia sozinha? | Lactente que não anda |
+| É fratura de alta ou de baixa energia? | Cominuta x fissura cortical |
+| Que região e que estrutura do osso falharam? | Fatores estruturais do osso |
+!fim
+
+O padrão diafisário clássico também foi desmontado. A espiral do fêmur, atribuída à torção violenta, **não é o típico**: **71% das fraturas diafisárias dos abusados eram transversas**. A transversa nasce de **flexão violenta ou golpe direto**; a espiral ou oblíqua, de **carga axial com torção**, como na queda. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, pág. 1359 aprox. e 1440), concorda: a espiral do fêmur é rara no abuso e a **transversa é mais preditiva**, e acrescenta que a morfologia informa a direção da força, **não a sua causa**. Quando o atendimento demora, o osso longo não imobilizado forma **calo exuberante**, e podem coexistir fraturas em fases diferentes.
+
+!tabela Distribuição das fraturas nos abusados (Rockwood and Wilkins' Fractures in Children, 10ª ed., e Campbell's Operative Orthopaedics, 15ª ed.)
+| Série | Achado |
+| --- | --- |
+| KING: 429 fraturas em 189 crianças | 50% com fratura única, 17% com mais de 3; cerca de **60% em úmero, fêmur e tíbia**, em números parecidos; depois rádio, crânio, coluna, costelas, ulna e fíbula |
+| Outro estudo clínico | Úmero, fêmur e tíbia parecidos; crânio em 14% |
+| AKBARNIA | **Costelas 2 vezes** mais que qualquer osso longo; depois úmero, fêmur, tíbia; quase 1/3 com crânio |
+| Necropsia de 31 lactentes: 165 fraturas | **Costela 51%**, metafisárias 39%, diáfise 5%, mãos e pés 4%, clavícula 1%, coluna menos de 1% |
+| Campbell (inventário) | 50% uma fratura, 21% duas, 12% três, 17% mais de três; comuns: úmero, tíbia e fêmur |
+!fim
+
+O **fêmur** é o osso em que os livros mais divergem nos números, e a idade decide tudo. No Rockwood and Wilkins, SCHWEND encontrou abuso em **42% dos lactentes que não andam e só 2,6% dos que andam**; BLAKEMORE, em **2% de 1 a 5 anos**; uma série de Alberta achou só 17% abaixo de 1 ano, contra 42% a 93% em oito relatos anteriores. Os fatores de risco são idade abaixo de 12 meses, não andar, mecanismo duvidoso e outras lesões, mas o capítulo aceita o acidente quando o mecanismo relatado combina. O Campbell's Operative Orthopaedics, 15ª ed. (pág. 1440), dá **70% de abuso nas fraturas do fêmur abaixo de 1 ano**. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 30, pág. 1317 a 1318), traz a recomendação da AAOS de **investigar abuso em toda fratura diafisária do fêmur abaixo de 36 meses**, atribui ao abuso **30% das fraturas de 1 a 4 anos** e soma como alertas o primogênito, a lesão cerebral prévia, as **fraturas bilaterais**, a **subtrocantérica ou o bico metafisário distal** e o atraso da família.
+
+!tabela Quanto do fêmur é abuso, segundo cada livro
+| Fonte | Número |
+| --- | --- |
+| Rockwood and Wilkins (SCHWEND) | 42% no que não anda; 2,6% no que anda |
+| Rockwood and Wilkins (BLAKEMORE) | 2% de 1 a 5 anos |
+| Rockwood and Wilkins (Alberta x 8 relatos) | 17% abaixo de 1 ano x 42% a 93% |
+| Campbell's Operative Orthopaedics, 15ª ed. | 70% abaixo de 1 ano |
+| Tachdjian's Pediatric Orthopaedics, 6ª ed. | 30% de 1 a 4 anos; AAOS: investigar abaixo de 36 meses |
+!fim
+
+No **úmero**, o Rockwood and Wilkins dá **18% de provável abuso** nas fraturas diafisárias abaixo de 3 anos, e o Campbell diz que a ideia antiga de associar a diáfise do úmero abaixo de 3 anos ao abuso caiu, porque **a maioria não é**, mas mantém a suspeita em **qualquer fratura de osso longo abaixo de 1 ano**. O Tachdjian (cap. 29, pág. 1216 aprox.) lembra que a **separação transfisária do úmero distal** é mais comum abaixo de 2 anos, resulta de abuso em **até 50%** nessa idade e costuma ser confundida com luxação do cotovelo, porque o úmero distal é quase todo cartilaginoso. Já a **tíbia** raramente é abuso: menos de 5% (pág. 1361) ou até 3% (pág. 1364) no Tachdjian, e o Campbell dispensa inventário de rotina no **toddler com fratura da tíbia** e na **fratura em toro do rádio distal**, lembrando que fratura de membro inferior em criança que já anda raramente é NAT.
+
+!questoes central=pediatria-0959 relacionadas=pediatria-0361
+conceito: Idade e mecanismo decidem: espiral da tíbia aos 3 anos é torção de baixa energia; costelas múltiplas aos 9 meses são compressão anteroposterior por abuso; supracondiliana aos 5 anos é queda comum; fratura dos ossos do antebraço aos 4 meses é provável abuso.
+como: O TEPOP 2024 mostrou quatro radiografias com idades (3 anos, 9 meses, 5 anos e 4 meses) e pediu para correlacionar com o mecanismo (I-C, II-B, III-A, IV-D); a versão sem banca repete a questão.
+armadilha: Julgar pela fratura sem olhar a idade: a mesma diáfise que é acidente na criança que corre é suspeita no lactente que não anda.
+alerta: A versão `pediatria-0361` tem as alternativas mal digitadas no acervo (a chave das correlações entrou dentro da alternativa D); o gabarito oficial foi mantido.
+!fim
+
+# Locais incomuns: escápula, acrômio, mãos e pés {radar=confirmado}
+
+O Rockwood and Wilkins' Fractures in Children, 10ª ed., lista fraturas em **locais incomuns** que resultam de golpes violentos ou de **tração do membro superior** e sugerem abuso na criança pequena: **clavícula distal, escápula, ponta do acrômio, metáfise proximal do úmero e fise distal do úmero**. A escápula está no grupo de alta especificidade de KLEINMAN porque, fora do abuso, exige energia alta. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 29, pág. 1180 aprox.), diz que a fratura da escápula costuma vir de trauma de alta energia (esmagamento em acidente de carro, queda de altura), mas que **nas crianças menores é frequentemente abuso**; o mesmo livro chama a clavícula por abuso de **causa rara** e lembra que a fratura do úmero proximal do lactente pode estar associada ao abuso.
+
+Uma armadilha de imagem: o lactente pode ter um **núcleo de ossificação separado na ponta do acrômio**, que imita fratura. A fratura verdadeira tem **bordas nítidas**, pode ser positiva na cintilografia e evolui com **calo**.
+
+**Mãos e pés** fraturam por acidente na criança maior, mas são suspeitos no lactente. NIMKIN revisou 11 fraturas de mãos e pés em abusados com menos de 10 meses e encontrou sobretudo **fraturas em toro dos metacarpos e falanges proximais** e do **primeiro metatarso**, mais bem vistas nas incidências oblíquas do inventário. Na escala de KLEINMAN, a fratura de dedo tem especificidade moderada.
+
+!questoes relacionadas=pediatria-0160
+conceito: A escápula é de alta especificidade: no adulto exige alta energia, na criança pequena costuma ser abuso; o grupo alto de KLEINMAN inclui ainda metafisária clássica, costela posterior, processo espinhoso e esterno.
+como: O TEOT 2022 repetiu a pergunta da SBOT-SP (escápula segundo KLEINMAN); o TARO 2009, em outra versão, cobrou escápula, esterno ou metafisárias.
+armadilha: Trocar a escápula pela clavícula, que é de baixa especificidade.
+!fim
+
+# Lesão metafisária clássica por dentro {radar=confirmado}
+
+As fraturas metafisárias e epifisárias dos ossos longos são classicamente associadas ao abuso, e o Rockwood and Wilkins' Fractures in Children, 10ª ed., explica o porquê: no lactente e na criança pequena elas surgem quando a criança é **sacudida violentamente pelos membros**, com **tração ou rotação**. Fraturas em toro podem aparecer em vários locais com pouco calo, e lesões repetidas deixam a metáfise irregular.
+
+A **lesão metafisária clássica (CML)**, chamada de fratura **de canto** ou **em alça de balde**, é a fratura quase patognomônica: aparece **quase só no NAT**, mas **não é a mais comum** (15% a 32% nas grandes séries). Na radiografia, o canto fica na borda da parte ossificada da **zona de calcificação provisória**, no **lado metafisário** da fise. O estudo histológico de necropsia de KLEINMAN mostrou que se trata de uma fratura de **espessura total pela esponjosa primária**, logo acima da zona de calcificação provisória. No centro, a camada de metáfise que fica presa à fise é fina; na periferia, a linha se curva para longe da fise e deixa preso um **aro metafisário** espesso. É esse aro que forma tanto o canto quanto a alça: visto de lado, aparece só nas margens (canto, como no fêmur da figura 7-44); visto inclinado, atravessa toda a largura (alça de balde, como na tíbia). Na consolidação, condrócitos hipertróficos invadem a metáfise.
+
+!tabela Lesão metafisária clássica: o que o capítulo afirma (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7)
+| Ponto | Fato |
+| --- | --- |
+| Mecanismo | **Sacudir** ou **tracionar** o membro |
+| Frequência | 15% a 32%; não é a fratura mais comum do abuso |
+| Especificidade | Uma única CML no inventário já é altamente suspeita |
+| Plano | Esponjosa primária, logo acima da zona de calcificação provisória |
+| Imagem | Perfil além do AP, coned às articulações, detecta mais |
+| Datação | Pouco confiável, porque o calo não se forma sempre; calo sugere mais de **10 a 14 dias** |
+| Imitadores | Raquitismo e leucemia (lucência subepifisária); variante de displasia espondilometafisária no rádio, ulna e tíbia distais e no úmero proximal; variantes normais |
+!fim
+
+Os livros divergem quanto ao peso da CML. O Rockwood and Wilkins a mantém quase exclusiva do NAT. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, pág. 1359 aprox.), cita uma revisão recente segundo a qual a fratura de canto, **antes vista como patognomônica, é muito parecida com as fraturas do raquitismo**. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (pág. 1154), observa que as fraturas de canto, embora muito suspeitas, são **menos identificadas que as diafisárias**, e que o achado clássico de múltiplas fraturas em fases diferentes só aparece em **10% a 15%** dos casos documentados.
+
+Dois diagnósticos diferenciais locais merecem lugar. A **avulsão do periósteo** forma osso novo em 2 a 3 semanas e pode ser confundida com **osteomielite**; essa formação atrasa na desnutrição e no raquitismo. E as **variantes metafisárias normais** aparecem na tíbia proximal, fêmur distal, fíbula proximal e rádio e ulna distais: um **bico ósseo medial** no úmero ou na tíbia proximal, em geral **bilateral**, e uma irregularidade cortical medial da tíbia proximal em **4%** dos lactentes, bilateral em 25%.
+
+!questoes relacionadas=pediatria-0478
+conceito: Fratura de canto no tornozelo do lactente é lesão metafisária clássica: aro de metáfise arrancado pela esponjosa primária por tração ou sacudida, altamente específica de maus-tratos.
+como: Questão com imagem (sem banca) mostrou a lesão de canto e ofereceu entorse, Salter-Harris II e linhas de LOOSER; resposta: corner fracture associada a maus-tratos.
+armadilha: Chamar de Salter-Harris II ou de raquitismo uma linha que fica no lado metafisário da zona de calcificação provisória.
+!fim
+
+# Costelas e coluna: o tórax apertado e a criança sacudida {radar=oportunidade}
+
+Fraturas de costela são incomuns nos acidentes da infância, sobretudo quando são **posteriores** e vêm com fraturas de ossos longos. O Rockwood and Wilkins' Fractures in Children, 10ª ed., explica os mecanismos: **apertar o tórax**, golpear por trás ou pisar. KLEINMAN propôs que, ao sacudir o lactente segurado pelo tórax, a **compressão anteroposterior** faz a costela posterior **girar como alavanca sobre o processo transverso**, quebrando o arco posterior junto ao processo transverso e a cabeça da costela junto à vértebra (figura 7-46). Numa série, a fratura da **primeira costela** só apareceu em abuso.
+
+BARSNESS achou **valor preditivo positivo de 95%** para abuso nas fraturas de costela abaixo de 3 anos, e a costela foi a **única manifestação esquelética em 29%**. A fratura posterior é difícil no agudo, porque não tem calo e quase não desvia, e mesmo o calo pode ficar escondido atrás do processo transverso; daí as **incidências oblíquas do tórax** e a **repetição em 2 semanas**. A posterior é o local mais comum, entre **T4 e T9**, mas a fratura pode estar em qualquer ponto do arco, inclusive na **junção costocondral anterior**. Fraturas antigas podem formar **lesões líticas expansivas**, e a reanimação cardíaca de um lactente abusado confunde a origem das fraturas. No óbito suspeito, o inventário detalhado antes da necropsia e a **TC torácica post mortem**, mais sensível que a radiografia, completam a avaliação; incluir o tórax numa TC de abdome feita por suspeita de NAT acrescenta cerca de **3 mSv**.
+
+A **coluna** é infrequente, mas importante. Nas necropsias, as fraturas vertebrais de crianças mortas por abuso tinham **compressão de 25% ou menos**. Numa série de 103 crianças com lesão cervical, só 3 eram por abuso, todas **SCIWORA**. O capítulo descreve fratura dos elementos posteriores tipo enforcado no lactente, **compressão vertebral por bater as nádegas** da criança numa superfície com hiperflexão, fraturas fisárias circunferenciais toracolombares (CARRION) que exigiram redução aberta, fraturas-luxações toracolombares, fraturas de CHANCE e lesões das **sincondroses** (figura 7-48: sincondrose de L3 com anterolistese aos 16 meses).
+
+!tabela Coluna no abuso: o que pedir (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7)
+| Situação | Conduta |
+| --- | --- |
+| Todo inventário | **Perfil de toda a coluna** (cervical, torácica e lombar) |
+| Abaixo de 36 meses com suspeita de trauma craniano abusivo | Imagem da cervical: lesão cervical em até **15%** nessa idade |
+| Suspeita clínica ou radiográfica de lesão vertebral | **RM** |
+| Trauma craniano abusivo que já vai fazer RM | Incluir **toda a coluna** |
+| Lesão cervical em criança | TC ajuda |
+| Qualquer fratura vertebral abusiva | Exame neurológico completo, mesmo sendo rara a lesão neurológica |
+!fim
+
+# Inventário esquelético, datação e exames de laboratório {radar=oportunidade}
+
+O Rockwood and Wilkins' Fractures in Children, 10ª ed., trata o inventário como **extensão do exame físico** abaixo de 2 anos. Ele foi positivo em **10,8%** das crianças com suspeita, sobretudo nas com trauma craniano abusivo, evento com risco de vida e **abaixo de 6 meses**, idade em que o exame físico engana. A técnica importa: o **perfil** soma-se ao AP para achar lesões metafisárias, o perfil de toda a coluna é obrigatório, as **oblíquas bilaterais do tórax** acham as costelas sutis, e o **babygrama não tem lugar**, porque a obliquidade do feixe esconde as fraturas finas. O protocolo do American College of Radiology dá dose efetiva de só **0,2 mSv**.
+
+!tabela Inventário esquelético completo (Tabela 7-9 do Rockwood and Wilkins e Box 38.3 do Campbell's Operative Orthopaedics, 15ª ed.)
+| Região | Rockwood and Wilkins (Tabela 7-9) | Campbell (Box 38.3) |
+| --- | --- | --- |
+| Membros | Úmeros, antebraços, fêmures e pernas em AP; mãos PA; pés AP | AP de todo o esqueleto; mãos e pés em incidências dedicadas |
+| Tórax | AP, perfil e **oblíquas direita e esquerda**, com costelas e coluna torácica e lombar alta | Oblíquas de costelas "também sugeridas" |
+| Coluna | Pelve AP até a lombar média; perfil lombossacro; perfil cervical | Perfil do esqueleto axial (crânio e coluna) |
+| Crânio | Frente e perfil | Perfil |
+| Extras | Repetir em 2 semanas | Oblíquas de mãos e pés; opcionais: perfil de punhos, tornozelos e joelhos e ortogonais de cada fratura |
+!fim
+
+A **repetição em 2 semanas** existe porque as costelas só mostram calo em 10 a 14 dias. KLEINMAN mostrou que ela acha **27% mais fraturas** e ajuda a **datar 20%** das já vistas; quase **10%** das crianças têm inventário inicial normal e achado importante no de 2 semanas. As fraturas duvidosas do primeiro exame devem ser reimageadas. A sensibilidade cai acima de 2 anos e o exame vale pouco acima de 5, quando a criança já aponta onde dói; de 2 a 5 anos, individualizar. Os **irmãos abaixo de 2 anos** da mesma casa têm 11,9% de inventário positivo. O Campbell's Operative Orthopaedics, 15ª ed. (pág. 1359 aprox.), estende a indicação: pela diretriz da AAOS de 2009, inventário **até 3 anos**, sobretudo abaixo de 1 ano, sem história ou com história inconsistente, e destaca que os **filmes de costelas são essenciais**.
+
+Fraturas em fases diferentes sem explicação são forte evidência de abuso, e o ortopedista costuma ser chamado a datá-las. Os dois livros dão janelas diferentes.
+
+!tabela Datação radiográfica da fratura
+| Sinal | Rockwood and Wilkins' Fractures in Children, 10ª ed. | Campbell's Operative Orthopaedics, 15ª ed. |
+| --- | --- | --- |
+| Edema de partes moles | Não datado | 1 a 2 dias |
+| Reação periosteal | **A partir de 4 dias**; presente em pelo menos 50% com 2 semanas | 10 a 35 dias |
+| Calo | Calo na CML sugere mais de 10 a 14 dias | Mole ou duro por volta de 36 dias |
+| Ponte e remodelação | Remodelação com pico em **8 semanas** | Acima de 45 dias |
+| Mais difícil | Fratura já remodelada, só com córtex espessado | |
+!fim
+
+O Rockwood and Wilkins chama a datação de **ciência inexata**: experientes estimam faixas, não dias.
+
+Os exames de laboratório têm alvo. Toda criança abusada faz **hemograma com VHS, função hepática e urina**. Na suspeita de trauma abdominal, **enzimas hepáticas e pancreáticas** e urina; se alteradas, **TC de abdome e pelve com contraste**. Com sangramento ou equimoses, coagulação ampla: TP, TTPa, tempo de trombina, fibrinogênio, **fatores VIII e IX** e antígeno e atividade do fator de von WILLEBRAND; se a equimose é o único achado, hematologista. O prematuro, sob risco de raquitismo e osteopenia, faz **cálcio, fósforo, fosfatase alcalina e 25-OH vitamina D**. Se há suspeita de drogas na família e a criança tem sintomas, **toxicológico**.
+
+# O que imita maus-tratos e o que não exclui {radar=oportunidade}
+
+Para o Rockwood and Wilkins' Fractures in Children, 10ª ed., a consulta mais importante na suspeita é a **equipe de proteção à criança**, em geral liderada por um pediatra especializado em abuso; lesões de outros órgãos chamam neurocirurgia, cirurgia geral, plástica, oftalmologia ou urologia. O capítulo pede equilíbrio: **errar para mais** também fere, porque os pais podem perder a guarda e responder criminalmente.
+
+!tabela Diagnóstico diferencial do trauma não acidental (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7)
+| Condição | Pista que separa |
+| --- | --- |
+| Osteogênese imperfeita | Escleras azuis, dentes anormais, encurvamentos, história familiar |
+| Raquitismo (carencial, por drogas, do prematuro) | Fraturas de insuficiência das costelas no prematuro e no baixo peso; exames de cálcio e vitamina D |
+| Escorbuto | Linha de FRÄNKEL, sinal do canto, anel de WIMBERGER |
+| Leucemia | Osteopenia difusa ou lucência metafisária; febre, palidez, petéquias, adenomegalia, hepatoesplenomegalia, dor óssea |
+| Hipofosfatasia | Osteopenia grave, costelas bilaterais, vértebras comprimidas (figura 7-49, lactente de 2 meses) |
+| Sífilis congênita | Diafisite, metafisite e fraturas em fases diferentes; incidência subindo em mulheres em idade fértil |
+| Periostite fisiológica | Cerca de 6 meses, **bilateral, simétrica, diafisária** (úmero, fêmur, tíbia), sem metáfise |
+| Atresia biliar | Osteopenia e fraturas sem trauma significativo |
+| Deficiência de fator XIII | Sangramento com trauma mínimo e coagulograma padrão normal |
+| Outros | CAFFEY, osteomielite, artrite séptica, neuroblastoma metastático, insensibilidade congênita à dor, osteopetrose, síndrome dos cabelos crespos (kinky hair), prostaglandina, osteoma osteoide |
+!fim
+
+Uma frase merece ficar gravada: **a presença de doença metabólica e de fraturas patológicas não exclui abuso**. O livro conta o caso de uma criança de 2 anos que morreu de leucemia linfoblástica aguda não diagnosticada depois de ter sido tratada como possível vítima, e lembra que a deficiência de fator XIII pode ter testes específicos falsamente normais se colhidos depois de transfusão.
+
+A **osteogênese imperfeita** é o diferencial que mais aparece nos tribunais. Antes do diagnóstico, os pais são tidos como culpados e a criança é afastada temporariamente em **70%** dos casos. Mesmo assim, o Rockwood and Wilkins pondera que **fratura inexplicada é muito mais provavelmente abuso** do que uma doença rara, que a história e o exame identificam a maioria das crianças com OI e que o **teste genético rende pouco sem achados clínicos**; quando há suspeita sem sinais clássicos, sequenciar **COL1A1, COL1A2 e IFITM5** com pesquisa de duplicação e deleção, e não seguir adiante se nada aparecer. O livro lembra ainda que **esclera azul** existe em lactentes normais e na hipofosfatasia, osteopetrose, MARFAN e EHLERS-DANLOS. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (pág. 1154), descreve a série de **33 crianças com OI diagnosticadas como abusadas**: idade média de **7,1 meses** (1 a 23), achados clínicos de OI presentes em 23 das 33, e 70% afastadas da família. O Campbell's Operative Orthopaedics, 15ª ed. (Box 38.2, pág. 1361 aprox.), agrupa o diferencial em doença óssea metabólica e fragilidade óssea: OI, raquitismo e doença renal, osteopenia de desuso e medicamentos como corticoides.
+
+# Internar, notificar e depor {radar=oportunidade}
+
+O Rockwood and Wilkins' Fractures in Children, 10ª ed., é direto: reconhecido o NAT, o **primeiro passo é a internação**, que protege a criança, permite completar a investigação e abre espaço para a avaliação social. A **notificação funciona como teste de triagem**: o falso positivo é muito preferível ao falso negativo, que pode ser fatal. Se a família recusa a internação, pode ser preciso **guarda judicial**, e a criança fica internada até a investigação terminar e haver um destino seguro. Mesmo os médicos, que notificam mais que outros profissionais, deixaram de notificar **27% das lesões tidas como prováveis** de abuso e **76% das possíveis**. A notificação de **boa-fé** dá imunidade civil e criminal, mas não absoluta: exige crença razoável de abuso, para não proteger quem denuncia falsamente para perseguir famílias.
+
+!tabela Quanto custa devolver a criança sem diagnóstico
+| Fonte | Nova lesão | Morte |
+| --- | --- | --- |
+| Rockwood and Wilkins' Fractures in Children, 10ª ed. | **25%** de lesão grave | **5%** |
+| Tachdjian's Pediatric Orthopaedics, 6ª ed. (pág. 1154 e 1218) | **30% a 50%** | **5% a 10%** |
+| Tachdjian's Pediatric Orthopaedics, 6ª ed. (fêmur, pág. 1318) | Cerca de 50% | Até 10% |
+| Campbell's Operative Orthopaedics, 15ª ed. | Diagnóstico perdido na primeira consulta em até **20%** | Taxa alta de novo abuso e de morte |
+!fim
+
+O Tachdjian (pág. 1154 a 1155) dá o lado prático. Médicos relutam em notificar por medo de aborrecer a família; a saída é **explicar sem acusar** o dever legal e ético de notificar, e os pais em geral entendem. O cuidador que fica **indignado ou ameaçador** depois dessa conversa aumenta a suspeita. A nova lesão costuma ser levada a **outro hospital**, e o risco de morte cresce a cada ida ao pronto-socorro. Notificar pode não bastar, e a internação dá tempo para avaliar. Equipes multidisciplinares (pediatras, assistentes sociais, capelães e, quando preciso, ortopedistas), com aulas obrigatórias para os pais, permitem que cerca de **80% das crianças fiquem em casa com segurança**; com esse modelo, GALLENO e OPPENHEIM reduziram a re-lesão de **50% para 9%**. A parte mais esquecida é a **entrevista com a criança**, que, num ambiente calmo e seguro, fala com franqueza. O livro lista o que deve disparar a notificação: história que muda ou não combina, atraso no atendimento, fratura de osso longo abaixo de 1 ano, fraturas em fases diferentes, fratura de canto, costelas, crânio, queimaduras e lesões de partes moles sem explicação.
+
+No tribunal, o Rockwood and Wilkins distingue dois papéis. A **testemunha de fato** depõe só sobre o próprio envolvimento no caso e o prontuário, **não emite opinião** e deve dar respostas breves, sem informação extra. O **perito** é reconhecido pelo juiz como alguém com conhecimento especial e pode opinar, inclusive sobre o risco de novo abuso se a criança voltar para casa. Em ambos, preparo com o advogado da criança, linguagem simples e **profissionalismo** no interrogatório agressivo. A expressão "**certeza médica razoável**", mal entendida pelos médicos, foi definida por CHADWICK como a certeza que o médico precisa ter **para recomendar e executar um tratamento**. A Tabela 7-8 do capítulo fecha o tema com um conselho: escrever os registros **como se fossem lidos no tribunal**.
+
+# Fraturas patológicas: os detalhes que decidem a conduta {radar=oportunidade}
+
+O Rockwood and Wilkins' Fractures in Children, 10ª ed., aprofunda as lesões locais com dados que o resumo anterior não trazia.
+
+**Cisto ósseo simples.** Metafisário ou metadiafisário, nos terços proximais de úmero, fêmur e tíbia; atribuído a obstrução da drenagem do líquido intersticial; predomínio masculino de **2 para 1**. As complicações da fratura incluem consolidação viciosa, parada de crescimento e necrose avascular. Lesões grandes, acima de **50% a 80% da circunferência**, com córtex fino e dor, têm alto risco e podem receber tratamento **profilático**. A técnica percutânea dos autores aspira **líquido cor de palha**, faz cistograma, cureta, **descomprime o canal medular** e preenche com substituto ósseo.
+
+**Cisto ósseo aneurismático.** Incidência de 1,4 por 100.000; a translocação que ativa a USP6 **bloqueia a maturação do osteoblasto**. Metafisário em cerca de 65%; fêmur, tíbia, úmero e **elementos posteriores da coluna** (cerca de 25%); um terço associado a outros tumores benignos ou malignos. Fratura em 11% a 35% das lesões de ossos longos e em menos de 20% das da coluna, mais no úmero e no fêmur. A RM mostra níveis líquidos, sinal baixo em T1 e alto em T2. Alternativas à cirurgia: **embolização seriada** com cianoacrilato, concentrado de medula ou doxiciclina, em várias sessões. Na coluna, o instrumental de **titânio ou cromo-cobalto** deixa menos artefato na RM.
+
+**Defeito fibroso cortical e fibroma não ossificante.** O defeito mede menos de 2 cm; o fibroma é maior e múltiplo em um terço. Fraturam mais acima de 50% do diâmetro, nos estágios iniciais de RITSCHL com dor, no membro inferior e em **meninos de 6 a 14 anos**; a TC acrescenta ruptura cortical e ausência de neocórtex como riscos. O tamanho não se associou a dor nem obriga a curetagem profilática.
+
+**Encondroma, osteocondroma e displasia fibrosa.** O encondroma ocupa falanges, metacarpos, metatarsos, úmero e fêmur, nessa ordem; OLLIER é diagnosticado entre 2 e 10 anos; fraturam mais os pacientes jovens, o **quinto dedo** e a falange distal; ossos tubulares curtos dispensam fixação. O osteocondroma é o **tumor benigno mais comum** da criança e fratura na base do pedículo; pode ser tratado sem cirurgia ou excisado logo, porque o fragmento fica solto nas partes moles. Na displasia fibrosa, a forma monostótica fratura em cerca de 5%; a endocrinopatia pode causar **fosfatúria** com efeito de raquitismo; o calo endosteal é pobre e o periosteal normal; o bisfosfonato serve sobretudo para a dor; a fixação intramedular busca proteger o osso inteiro, junto com a correção da deformidade.
+
+!tabela Doenças da medula, infecção e alongamento (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7)
+| Condição | Dados-chave | Conduta na fratura |
+| --- | --- | --- |
+| GAUCHER | Doença lisossômica mais comum; glicocerebrosidase; autossômica recessiva; tipo I (mais de 90%) não neuropático; ERLENMEYER e osteonecrose; KATZ: fêmur distal, colo, coluna, tíbia proximal | Conservador nos longos; colo estável imobilizado (risco de varo), instável fixado; via aérea infiltrada e coagulação alterada |
+| Anemia falciforme | 1 em 400 afro-americanos; traço em 8% a 10%; hiperplasia medular afina o osso; BOHRER: fratura em 25% dos infartos femorais e 20% dos umerais, transversa diafisária | Conservador; transfundir a 10 g/dL antes de eletiva; hidratar 1,5 a 2 vezes; garrote controverso |
+| Leucemia | Mais de 30% dos cânceres infantis; LLA 80%; pico aos 4 anos; 50% a 75% com sinais musculoesqueléticos; linhas justaepifisárias de 2 a 15 mm; reação periosteal na metáfise femoral distal posterior, colo medial e tíbia | Quimioterapia; tratamento conservador; marcha precoce; TLSO nas vertebrais |
+| Osteomielite | Crônica acima de 1 mês; RM com sensibilidade até 98% e especificidade 100%; fratura mais na negligenciada, crônica, neonatal ou com abscesso subperiosteal grande | Controlar a infecção; sequestrectomia preservando o invólucro; fratura pelo sequestro não é recidiva |
+| Alongamento | WAGNER: mais de 90% de complicações; fratura em 3% a 10% após retirada, sobretudo nas 4 primeiras semanas e acima de 5 cm | Em geral cirúrgica, com fixação e mobilização precoce |
+!fim
+
 # Fechamento {radar=fundamento}
 
 > **Na prova:** **negligência** 60%; **adulto sem parentesco** = 50 vezes o risco de morte; KLEINMAN alta: **metafisária clássica, costela posterior, escápula, processo espinhoso, esterno**; partes moles **81% a 92%**; equimose em quem **não anda**; imersão com **linha d'água** e poplíteas poupadas; inventário **abaixo de 2 anos**, repetir em **2 semanas**; **internar e notificar**; cisto simples = **conservador**; aneurismático **excêntrico e septado**; displasia fibrosa = **haste**; osteogênese imperfeita = **olécrano**; escorbuto = **WIMBERGER**.
+
+> **Na prova, o que a versão 2 acrescenta:** Negligência 60%; adulto sem parentesco = 50 vezes o risco de morte; lesões sentinela (orelha, subconjuntival, frênulo) e equimose abaixo de 5 meses (1,3% acidental); imersão intencional poupa poplíteas; 71% das diafisárias são transversas; fêmur por abuso: SCHWEND 42% no que não anda e 2,6% no que anda, Campbell 70% abaixo de 1 ano, Tachdjian 30% de 1 a 4 anos e AAOS abaixo de 36 meses; CML = esponjosa primária, aro metafisário, 15% a 32%, datação incerta; costela VPP 95% abaixo de 3 anos, alavanca no processo transverso, T4 a T9; necropsia: costela 51%, metafisária 39%; inventário 0,2 mSv, sem babygrama, repetir em 2 semanas (27% mais), irmãos 11,9%; reação periosteal desde 4 dias (Rockwood) ou 10 a 35 dias (Campbell); doença metabólica não exclui abuso; OI tomada por abuso: 70% afastadas; internar, notificar de boa-fé; testemunha de fato não opina, perito opina.

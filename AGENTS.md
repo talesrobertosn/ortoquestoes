@@ -1,5 +1,10 @@
 # Instruções permanentes do OrtoQuestões
 
+Para qualquer arte, cenário, personagem (esqueleto, gato, coruja, cavaleiros), fala dos bichos ou tela do site, leia
+primeiro [docs/design/DIRECAO-ARTISTICA.md](docs/design/DIRECAO-ARTISTICA.md): a direção artística aprovada pelo
+dono (pipeline HD-2D, paleta, personagens, onde cada bicho aparece, o que ele recusou e como verificar antes de
+publicar), junto de [DESIGN.md](DESIGN.md).
+
 Para criar, enriquecer ou revisar comentários, leia primeiro
 [docs/padrao-editorial-comentarios.md](docs/padrao-editorial-comentarios.md) e siga
 integralmente seu padrão de aula independente e análise detalhada de cada alternativa.

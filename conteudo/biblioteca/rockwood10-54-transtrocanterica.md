@@ -1,14 +1,15 @@
 ---
 id: rockwood10-54-transtrocanterica
-versao: 1
+versao: 2
 titulo: Fratura transtrocantérica
 especialidade: trauma
 acesso: gratis
 livro: Rockwood and Green's Fractures in Adults
-edicao: 10ª edição (2025)
+edicao: 10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), caps. 59 e 60
 capitulo: Capítulo 54 · Trochanteric Hip Fractures
 autores: Martin J. Heetveld e Elvira R. Flikweert
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (transtrocanterica.pdf, 49 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (transtrocanterica.pdf, 49 páginas) Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed.
+subtemas: Fratura transtrocantérica
 resumo: Parede lateral, AO 31A, DHS ou haste, redução sem varo e a ponta-ápice: o que decide o sucesso da fixação e como as provas cobram.
 ---
 
@@ -94,7 +95,7 @@ como: A mesma questão apareceu no TARO 2023 (trauma-0417, cadastrada como dupli
 
 # Classificação: AO 31A e a parede lateral {radar=confirmado}
 
-Nomes como pertrocantérica e intertrocantérica têm definições variadas; o capítulo prefere chamar todas de **trocantéricas**. As classificações antigas (Boyd e Griffin, Evans) e os subgrupos da AO são pouco reprodutíveis. Os **três grupos da AO/OTA** (31A1, A2, A3) têm reprodutibilidade aceitável, orientam o tratamento e entraram nas diretrizes da Europa e dos EUA.
+Nomes como pertrocantérica e intertrocantérica têm definições variadas; o capítulo prefere chamar todas de **trocantéricas**. As classificações antigas (BOYD e GRIFFIN, Evans) e os subgrupos da AO são pouco reprodutíveis. Os **três grupos da AO/OTA** (31A1, A2, A3) têm reprodutibilidade aceitável, orientam o tratamento e entraram nas diretrizes da Europa e dos EUA.
 
 - **31A1, simples**: duas partes, traço pelos trocânteres, **parede lateral íntegra**, cortical medial interrompida num só ponto. Relativamente **estável**. Pode ser difícil de distinguir da basocervical (31B2.1).
 - **31A2, multifragmentária**: o traço principal passa pelos trocânteres e a parede lateral está essencialmente íntegra, mas o **trocânter menor se solta** e pode haver fragmentos do trocânter maior: três ou quatro partes. **Instável**. É o tipo **mais frequente**.
@@ -111,7 +112,7 @@ A **parede lateral** é a cortical lateral do fêmur abaixo do trocânter maior,
 
 !questoes central=trauma-0216,trauma-0331,trauma-0749 treino=trauma-1577
 conceito: Parede lateral insuficiente: o fêmur medializa e o offset diminui; a espessura da parede lateral é o maior preditor da fratura dela.
-como: Três provas recentes de TEOT cobraram a parede lateral por ângulos diferentes: a consequência (medialização com diminuição do offset), o maior preditor de fratura da parede durante o DHS (a espessura dela) e como medir essa espessura. A medida usada na questão de 2025 (a partir de um ponto 3 cm abaixo do tubérculo inominado, a 135°, até o traço) vem da literatura citada no comentário da questão, e não deste capítulo.
+como: Três provas recentes de TEOT cobraram a parede lateral por ângulos diferentes: a consequência (medialização com diminuição do offset), o maior preditor de fratura da parede durante o DHS (a espessura dela) e como medir essa espessura. A medida usada na questão de 2025 (a partir de um ponto 3 cm abaixo do tubérculo inominado, a 135°, até o traço) não está neste capítulo do Rockwood and Green; vem do Campbell's Operative Orthopaedics, 15ª ed., cap. 60, explicada na seção "Traço reverso e parede lateral em números".
 armadilha: "Medialização com aumento do offset": o offset diminui quando o fêmur vai para dentro.
 armadilha: Cominuição do calcar ou traço reverso parecem bons preditores, mas a banca quer a espessura da parede.
 !fim
@@ -272,3 +273,183 @@ conceito: Dinamização da haste entre 3 e 6 meses, com a ponta lateral do paraf
 !questoes relacionadas=trauma-1001,trauma-0216 treino=trauma-1568
 conceito: O algoritmo inteiro cabe em três linhas: A1 com DHS, A2 e A3 com haste, e nunca em varo.
 !fim
+
+# As classificações pelos dois livros {radar=fundamento}
+
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54), conta a história em uma linha: **Boyd e Evans** propuseram classificações em **1949**, e **MÜLLER** trouxe a AO em **1990**. Os subgrupos da AO (cada grupo dividido em mais três) não mudam o tratamento e variam demais entre observadores; o que fica são os três grupos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60), detalha a de **BOYD e GRIFFIN**, que ainda aparece em prova como pano de fundo, e chama a AO/OTA de **"provavelmente a mais útil"**, porque permite comparar resultados entre estudos.
+
+!tabela BOYD e GRIFFIN, 1949 (Campbell's Operative Orthopaedics, 15ª ed., cap. 60, pág. 2665 aprox. e 2666)
+| Tipo | O que mostra | Leitura prática |
+| --- | --- | --- |
+| 1 | Traço ao longo da linha intertrocantérica | Duas partes, a mais simples |
+| 2 | Cominutiva, traço principal na linha intertrocantérica com traços secundários; pode haver traço coronal visível no perfil | Equivale à cominuição posteromedial |
+| 3 | Traço que chega ao trocânter menor ou passa abaixo dele | Começa a invadir a região subtrocantérica |
+| 4 | Região trocantérica e diáfise proximal, com traços em pelo menos dois planos | Pede o raciocínio da subtrocantérica |
+!fim
+
+Os dois livros descrevem a AO com palavras um pouco diferentes, e vale juntar as duas leituras. O Campbell define pela cortical medial: **A1** tem traço único que se estende medialmente; **A2** tem cominuição crescente, com o **trocânter menor separado**, e a legenda da figura fala em traços em **dois ou mais níveis da cortical medial**; **A3** tem traço que atravessa a **cortical lateral abaixo da crista do vasto lateral** (obliquidade reversa, transversa ou extensão subtrocantérica). O Rockwood acrescenta detalhes que caem em questão de imagem: a A1 pode estar **desviada ou não**, e o trocânter menor pode ficar preso a qualquer um dos dois fragmentos; a A2 pode ter **um ou dois fragmentos coronais** no trocânter maior, anterior e posterior.
+
+!tabela Os três grupos da AO/OTA vistos pelos dois livros (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54; Campbell's Operative Orthopaedics, 15ª ed., cap. 60)
+| Grupo | Rockwood and Green | Campbell |
+| --- | --- | --- |
+| 31A1 | Duas partes, parede lateral íntegra, cortical medial rompida num ponto; desviada ou não | Não cominutiva, traço único que vai para medial |
+| 31A2 | Parede lateral essencialmente íntegra, trocânter menor solto, um ou dois fragmentos coronais do trocânter maior | Cominuição crescente, fragmento do trocânter menor, dois ou mais níveis da cortical medial |
+| 31A3 | Traço reverso ou horizontal do trocânter menor à cortical lateral; forma em cunha com cominuição de A2 | Obliquidade reversa, transversa ou extensão subtrocantérica; traço pela cortical lateral abaixo da crista do vasto |
+!fim
+
+## A basocervical, vizinha que engana
+
+A basocervical (31B2.1) corre ao longo da linha intertrocantérica e se confunde com a A1. O Rockwood lembra que as duas podem cruzar a inserção da cápsula, sendo ao mesmo tempo intra e extracapsulares, e que o tratamento é parecido, com **taxa um pouco maior de colapso** na basocervical. O Campbell é mais duro: ela é **extracapsular**, rara (estimativas de **1,6%** das fraturas do quadril), frequentemente mal classificada e **mais instável** que a intertrocantérica; **parafusos canulados não são ideais**. Numa série de WATSON, **6 de 11** basocervicais tratadas com haste falharam, 5 por cut-out, apesar de distância ponta-ápice abaixo de 22 mm (média de 17,4 mm), e nenhuma tinha parafuso antirrotacional. A lição: a regra dos 25 mm não protege uma fratura que roda em torno do parafuso.
+
+# Traço reverso e parede lateral em números {radar=confirmado}
+
+O resumo já mostrou por que a parede lateral é o batente da fixação. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60), traz os números que dão peso a essa ideia, e eles explicam por que o DHS virou implante de fratura estável.
+
+!tabela Parede lateral: o que os estudos mediram (Campbell's Operative Orthopaedics, 15ª ed., cap. 60, pág. 2670 aprox. e 2673 aprox.; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, pág. PDF 2702)
+| Achado | Número |
+| --- | --- |
+| Segunda cirurgia em 6 meses quando a parede lateral estava fraturada (A3 ou fratura iatrogênica em A1 e A2) com DHS | 22% |
+| Fraturas da parede lateral que ocorreram durante a cirurgia | 74% |
+| Fratura intraoperatória da parede em A1.1, A1.2, A1.3 e A2.1 | 3% |
+| Fratura intraoperatória da parede em A2.2 e A2.3 | 31% |
+| Espessura da parede que prediz fratura dela | menor que 21 mm (sensibilidade 95%, especificidade 88,2%) |
+| Medialização acima de 50% nas A3: DHS contra haste | 7% contra 1% (média de 10% contra 2%) |
+!fim
+
+Três consequências práticas saem daí. Primeiro, a parede lateral quase sempre se quebra **na mão do cirurgião**: três em cada quatro fraturas dela são intraoperatórias, quando o DHS entra numa A2 mais cominutiva. Segundo, o Campbell recomenda **cautela com o DHS em qualquer fratura mais complexa que A2.1**, e, se a parede se fragmentar durante a cirurgia numa A1, usar **placa de estabilização trocantérica** ou trocar para **haste**; na A1, a cominuição iatrogênica da parede foi o **preditor mais significativo de desvio excessivo**. Terceiro, a fratura da parede também aumenta o **cut-out com haste**, então ela não é problema só da placa. Alguns autores pedem **tomografia pré-operatória** para estudar a parede antes de escolher o DHS.
+
+A medida da espessura, que o resumo atribuiu à literatura do comentário, está no Campbell (figura de PRADEEP): parte de um ponto **3 cm abaixo do tubérculo inominado** do trocânter maior, sobe **angulada a 135°** e termina no **traço de fratura do fragmento distal**, no AP.
+
+O Rockwood mostra o que acontece quando o DHS é usado sem parede: o parafuso entra **direto no foco**, desliza demais e o fêmur medializa (um caso da figura do capítulo chegou a **75%** de medialização, com parafuso de 80 mm e tubo curto). Se todo o curso de deslizamento acaba antes da consolidação, há dois finais: o parafuso mal posicionado **corta a cabeça**; o bem posicionado transfere a falha para baixo e a **placa se solta do fêmur**. A haste resiste melhor porque sua parte proximal se apoia contra o colo superior, embora alguma medialização ainda possa ocorrer. Placas de 95° e placas-lâmina, estáticas, falham muito e o Rockwood diz que **não podem ser recomendadas** nesse traço. A tabela de diretrizes da AAOS reproduzida no Campbell resume: **subtrocantérica ou obliquidade reversa, dispositivo cefalomedular**.
+
+!questoes central=trauma-1141
+conceito: No traço reverso (31A3) falta a parede lateral; o DHS isolado deixa o fêmur medializar e implantes estáticos (placa de 95°, lâmina) falham; a AAOS indica haste cefalomedular.
+como: O TARO 2008 perguntou qual implante é contraindicado na transtrocantérica de traço reverso.
+armadilha: Placa de estabilização trocantérica com DHS: ainda aceitável segundo o Rockwood, embora a haste seja hoje o padrão.
+alerta: O gabarito de `trauma-1141` não está registrado no acervo. Os livros não usam a palavra "contraindicado": o Rockwood diz que placa de 95° e lâmina "não podem ser recomendadas" e que o DHS só é aceitável com placa de estabilização; a AAOS (no Campbell) indica a haste. Confira a alternativa oficial antes de fixar a resposta.
+!fim
+
+## E a osteotomia de SARMIENTO?
+
+Provas antigas cobravam as osteotomias que buscavam estabilidade mecânica antes da era da haste, como a de SARMIENTO. Nenhum dos dois livros atuais descreve essa osteotomia para a fratura transtrocantérica: o Rockwood e o Campbell resolvem a instabilidade pela **escolha do implante** (haste nas instáveis, placa de estabilização quando se usa DHS) e pela **redução em valgo leve**, nunca em varo. Saiba que a questão existe e trate-a como fato histórico.
+
+!questoes relacionadas=trauma-1154
+conceito: As osteotomias de estabilização da transtrocantérica são históricas; os livros atuais tratam a instabilidade com haste cefalomedular e redução sem varo.
+como: O TARO 2009 perguntou com que angulação se faz a osteotomia de SARMIENTO.
+alerta: Nem o Rockwood and Green's Fractures in Adults, 10ª ed., nem o Campbell's Operative Orthopaedics, 15ª ed., descrevem a osteotomia de SARMIENTO, e o gabarito de `trauma-1154` não está registrado no acervo. Não há como sustentar o ângulo por estas fontes.
+!fim
+
+# DHS ou haste: o que os estudos mostram {radar=fundamento}
+
+Os dois livros chegam à mesma regra (DHS na estável, haste na instável), mas por caminhos que valem a leitura, porque a banca gosta de perguntar "qual a vantagem" de cada implante.
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60), lista as **vantagens teóricas da haste**: braço de alavanca menor, **menos sangramento**, **incisões menores** e **menos encurtamento do colo**. E lembra a outra face: a maior metanálise da Cochrane concluiu que o DHS dá **função semelhante**. O DHS continua bom para as estáveis (31A1 e muitas 31A2), sobretudo no paciente com **menor função prévia**, é **mais barato**, e sua técnica é cada vez menos familiar aos cirurgiões recém-formados nos EUA. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54), acrescenta que um registro americano pareado de **17.000** pacientes não encontrou diferença em mortalidade, reoperação ou complicações graves entre os dois, ao lado do registro norueguês que favoreceu a haste nas instáveis.
+
+!tabela Haste contra DHS nos estudos citados (Campbell's Operative Orthopaedics, 15ª ed., cap. 60, pág. 2672 a 2674)
+| Estudo | Resultado |
+| --- | --- |
+| Encurtamento em estáveis com DHS e instáveis com haste | 5,9 mm e 5,3 mm (cirurgiões experientes reconhecem a fratura estável) |
+| Ensaio em 65 anos ou mais | Sem diferença geral; nas instáveis, melhor marcha com haste em 12 meses |
+| Retorno à marcha prévia em 4 meses | 76% com haste femoral proximal contra 54% com DHS |
+| Encurtamento do colo na mesma série | 1,3 mm com haste contra 6,1 mm com DHS |
+| Ensaios somados (400 + 600 pacientes) | Fratura peri-implante de 0,8% em ambos; melhor recuperação de mobilidade com haste em A1 e A2 |
+| 538 fraturas A2 e A3 | Mais medialização com DHS; acima de 50% de medialização, pior dor e mobilidade em 1 ano |
+!fim
+
+O encurtamento não é só estético: na análise de marcha, ele se associou a **menor cadência**, **mais tempo de duplo apoio**, **passo mais curto** e **assimetria do apoio simples**. Quanto de encurtamento passa a ter importância funcional ainda não está definido.
+
+## Hastes com dois parafusos e lâminas
+
+A **InterTAN** usa **dois parafusos proximais integrados** que permitem **compressão linear** durante a cirurgia e, em teoria, mais estabilidade rotacional. Numa metanálise de **3.566 pacientes** contra hastes antigas de parafuso único, teve **menos falha do implante** (risco relativo de 0,37) e **menos reoperação** (0,38), com escore de Harris melhor em 1 ano, sem diferença em encurtamento ou mortalidade. Num ensaio contra o DHS em que todas as A3 receberam placa de apoio trocantérico, a placa **não impediu a medialização excessiva**, que se associou a dor. O Rockwood registra que a fixação proximal pode ser uniaxial, biaxial ou com lâmina, e que a biaxial tem vantagens teóricas (rotação e parafuso inferior garantido) ainda sem confirmação clínica.
+
+A **lâmina helicoidal** merece cuidado: o Campbell diz que a regra da ponta-ápice **pode não valer** para ela, porque houve **migração medial** da lâmina com distâncias **menores que 20 mm**, e que ela teve **mais falha de fixação** que o parafuso convencional (razão de chances de 1,88). Isso não contradiz o Rockwood, que viu resultados clínicos semelhantes entre parafuso e lâmina; mostra que a lâmina falha de outro jeito, para dentro.
+
+!tabela Implantes além do DHS e da haste comum (Campbell's Operative Orthopaedics, 15ª ed., cap. 60; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54)
+| Implante | O que se sabe |
+| --- | --- |
+| Placa de compressão percutânea (GOTTFRIED) | Dois parafusos no colo; menos sangramento em dois ensaios, menos dor e mais carga em 6 semanas; talvez menos fratura da parede lateral e mais estabilidade rotacional |
+| InterTAN | Dois parafusos integrados com compressão linear; menos falha e reoperação que hastes antigas de parafuso único |
+| Lâmina helicoidal | Migração medial com ponta-ápice menor que 20 mm; mais falha de fixação que o parafuso (OR 1,88) |
+| Fixador externo | Dois pinos na cabeça e dois na diáfise, quadro por cerca de 3 meses; pode ser feito com anestesia mais local |
+| Hemiartroplastia nas instáveis | Metanálises conflitantes; talvez menos reoperação e mobilidade mais precoce; mortalidade incerta |
+!fim
+
+## Haste curta ou longa, com ou sem bloqueio
+
+O Campbell aceita **curta ou longa** nas 31A1 e na maioria das 31A2. As longas custam **13 a 19 minutos** a mais, **37 a 39 mL** a mais de sangue e mais transfusão, sem diferença na fratura peri-implante (abaixo de 2% nas duas). O Rockwood cita uma revisão de **1.276** pacientes com refratura de **1,6%** com a curta e **0,95%** com a longa, diferença sem significância, e por isso aconselha a curta. Sobre o bloqueio distal, o próprio Rockwood traz duas frases que parecem brigar: num trecho, a haste curta **sem bloqueio** dá resultado comparável na fratura **estável**; no passo a passo, **toda haste curta deve ser bloqueada**. O Campbell bloqueia longas e curtas, mas admite que o tema é controverso. Para a prova, fique com a regra de técnica: instável sempre bloqueada, curta bloqueada.
+
+# A técnica segundo o Campbell {radar=confirmado}
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60), descreve a cirurgia com detalhes que complementam o passo a passo do Rockwood e que costumam aparecer como alternativa certa.
+
+!tabela DHS e haste no passo a passo do Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 60, técnicas 60.4 e 60.5, pág. 2666 a 2672)
+| Passo | DHS | Haste |
+| --- | --- | --- |
+| Mesa | Tração com poste perineal; perna sã em tesoura ou suporte | Igual, com tronco aduzido e braço do lado operado sobre o tórax |
+| Redução | Tração e rotação interna; quadril em 20° a 30° de flexão; sag posterior corrigido com força anterior no fragmento distal | Igual; radioscopia do lado sadio guardada como molde do ângulo colo-diáfise |
+| Entrada | Incisão a partir da crista do vasto lateral, vasto rebatido do septo intermuscular | Portal trocantérico medial modificado; incisão de 3 cm começando 3 cm acima da ponta do trocânter |
+| Fio na cabeça | Centro-centro, a 5 mm da superfície articular | Centro-centro, a 5 mm do osso subcondral |
+| Detalhes | Fresa tripla 5 mm menor que a medida; macho em osso bom; 180° de giro do parafuso avançam 1,5 mm | Haste de 10 mm e 130°; fresar 1,5 mm acima do diâmetro (2 mm se o arco anterior for acentuado) |
+| Fixação na diáfise | Dois a três parafusos bicorticais, placa de dois a quatro furos | Bloqueio distal conforme o caso |
+| Pós-operatório | Carga conforme tolerado | Carga conforme tolerado |
+!fim
+
+Os **três erros de redução** mais comuns, segundo o Campbell, são o **varo**, o **sag posterior** e a **rotação interna excessiva**, esta última frequente quando o **trocânter maior não está preso ao fragmento distal**. Na fratura de **alta energia**, as manobras fechadas costumam falhar e é preciso redução aberta limitada ou formal pela via de **WATSON-JONES**. Com a haste, o autor critica também a **má redução anterior no perfil**, ligada ao cut-out.
+
+O ângulo da haste segue a lógica do resumo: o Campbell prefere **130°**, porque hastes com ângulo **menor que o colo-diáfise nativo** se associaram a **redução em varo**, e a má redução do ângulo colo-diáfise foi preditora de cut-out. Usa haste de **10 mm** de rotina: haste mais grossa pode perfurar a **cortical anterior**, e o diâmetro não se associou a desfecho clínico. A inserção começa com o guia virado **para a frente**, aproveitando o arco da haste, e gira para lateral no meio do canal.
+
+## O ponto de entrada
+
+O Campbell usa o **portal trocantérico medial modificado**: na face medial do trocânter maior, ao longo da crista trocantérica no AP, e **alinhado com a diáfise no perfil**. Num estudo em cadáver, ele **não lesou o tendão do glúteo médio**, o que talvez signifique menos fraqueza abdutora que o portal trocantérico padrão. O Rockwood descreve o mesmo lugar com outras palavras: logo lateral à face medial do trocânter maior no AP, central a levemente posterior no perfil.
+
+Na comparação entre portal trocantérico e fossa piriforme para a haste anterógrada da diáfise, o capítulo de fraturas do membro inferior do Campbell diz que **não há superioridade funcional** entre eles; os parâmetros intraoperatórios favorecem o **trocantérico**, principalmente por **menos tempo cirúrgico e de radioscopia**.
+
+!questoes relacionadas=trauma-0870
+conceito: O portal trocantérico da haste anterógrada não tem superioridade funcional sobre o piriforme; ganha em tempo cirúrgico e de radioscopia.
+como: O TARO 2011 perguntou qual a vantagem do ponto de entrada trocantérico na haste anterógrada do fêmur.
+alerta: O gabarito de `trauma-0870` é "evitar fratura iatrogênica do fêmur proximal". O Campbell's Operative Orthopaedics, 15ª ed., atribui a vantagem do portal trocantérico a menos tempo cirúrgico e de radioscopia, e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54), não discute o tema. Mantenha o gabarito da banca para essa prova.
+!fim
+
+## Rotação: o erro que não aparece no AP
+
+Independentemente do implante, a **má rotação é frequente**: numa série com tomografia, **40%** (16 de 40) tinham mais de **15°** de diferença, e **14** delas estavam em **rotação interna excessiva**. A redução costuma pedir rotação **neutra ou interna**, mas pode exigir **externa** quando o trocânter maior não está no fragmento distal (o Rockwood diz o mesmo: rotação interna para as proximais, externa limitada para as mais distais, patela para o teto). O idoso compensa a má rotação pior que o jovem com fratura diafisária. Para medir, o método de TORNETTA usa perfis verdadeiros do quadril e do joelho do lado sadio como molde, mas acrescenta cerca de **15 minutos**, o que pesa no paciente mais grave. A retroversão do fêmur proximal é comum na população (até **21%** dos homens brancos), outro motivo para comparar com o lado sadio.
+
+# Detalhes do DHS e da haste no Rockwood {radar=fundamento}
+
+Alguns pormenores do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54), ajudam a entender por que a técnica falha.
+
+O **tubo** da placa do DHS tem geralmente cerca de **38 mm**. Com parafuso de **80 mm ou menos**, o tubo curto devolve curso de deslizamento, mas o parafuso precisa **chegar ao fim do tubo**, senão trava ou se desacopla; o **parafuso de compressão** ajuda a evitar esse desacoplamento. A via **posterior ao vasto lateral** é mais rápida, lesa menos o músculo e dispensa sutura, porque o vasto cai sobre a placa. Um **fio marcador** logo acima do definitivo e uma perfuração de **3,2 mm** na cortical permitem passar o fio final devagar, à mão, até a posição baixa-central. Na haste, a **compressão intraoperatória** deve ser feita **depois de soltar a tração**, para gerar atrito osso com osso.
+
+Entre as hastes com ensaios de tamanho suficiente para mostrar equivalência ao DHS, o capítulo cita **Gamma, Trigen, Targon e a haste trocantérica longa**. A primeira haste cefalomedular amplamente disponível foi a **gama**, nos anos 1980.
+
+# Complicações: o que faltava {radar=fundamento}
+
+!tabela Complicações em detalhe (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, pág. PDF 2728 a 2732)
+| Complicação | Dado novo | Conduta |
+| --- | --- | --- |
+| Infecção profunda | Menos de 1%; PET-FDG pode separar superficial de profunda após 3 semanas | Protocolo local; ultrassom e punção para cultura |
+| Quebra da haste | Menos de 1% nos desenhos recentes; 55% depois de 6 meses; autodinamização precoce é sinal de alerta | Retirar, desbridar a pseudartrose e refixar, ou artroplastia |
+| Fratura no fim da haste | Risco maior, sem significância, com cefalomedular em A2 e A3; sem diferença entre curta e longa em relato recente | Haste mais longa abaixo da curta; placa distal acima do joelho |
+| Pseudartrose com haste | Dinamizar retirando o parafuso distal falha se a ponta lateral do parafuso cefálico estiver dentro da cortical | Medir bem o parafuso na primeira cirurgia |
+| Ferida no obeso | Mais risco de problema de cicatrização | Curativo a vácuo pode isolar a ferida |
+!fim
+
+O pós-operatório também tem uma nuance que o resumo deixou de lado: o limiar de transfusão de **8 g/dL** é seguro com monitorização, mas **dois estudos menores** favoreceram uma política **liberal, com 11 g/dL**, e no grande ensaio de CARSON mais de **20%** do grupo restritivo recebeu sangue sem justificativa documentada. O capítulo conclui que é preciso **julgamento individual**.
+
+# Depois da fratura: fragilidade e prevenção {radar=fundamento}
+
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54), trata a fratura trocantérica como **primeiro sinal de fragilidade**, já existente ou iminente, a partir dos **50 anos**. Cerca de **75%** desses idosos viviam de forma independente antes da queda, e muitos não voltam para a mesma casa. A incidência ajustada por idade parece **estabilizar** nos países desenvolvidos (tratamento da osteoporose, aumento do IMC, mais medicação cardiovascular), mas o número absoluto cresce com o envelhecimento: **12%** a mais nos EUA entre 2010 e 2030 e cerca de **4,5 milhões** de fraturas do quadril por ano no mundo em 2050, contra 1,3 milhão em 1990.
+
+!tabela Fatores associados a maior risco de queda (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54, tabela 54-1)
+| Grupo | Fatores |
+| --- | --- |
+| Do paciente | Idade, doença clínica, alteração mental, AVC prévio, alteração visual, desnutrição |
+| Da mobilidade | Distúrbio de marcha e equilíbrio, desequilíbrio postural, incapacidade física, falta de exercício, dependência de outros |
+| Medicamentos e hábitos | Tranquilizantes, anti-hipertensivos, polifarmácia, álcool |
+!fim
+
+O risco depois da fratura é concentrado: a maior chance de nova fratura está nos **2 anos seguintes**, e cinco preditores (densidade mineral óssea, idade, comorbidades, quedas e fratura central como fratura índice) permitem calcular com razoável precisão o risco iminente. A partir dos 60 anos, a **sobrevida cumulativa em 10 anos** pode cair até **50%** após uma fratura trocantérica. Por isso o capítulo pede que todo paciente passe por um **ambulatório de prevenção de fraturas**, com densitometria, exames de sangue, avaliação de fraturas vertebrais e análise de quedas, e que a internação siga uma **avaliação geriátrica abrangente** por equipe multiprofissional. Para o pequeno grupo em que se opta por não operar, o capítulo lembra que um estudo com idosos frágeis viu mortalidade em 30 dias com o tratamento não cirúrgico e que bloqueios com cateter femoral, ou a fenolização de nervos, permitem cuidar do paciente por dias a semanas sem fixar a fratura. Artrose radiográfica sem queixas não impede a fixação.
+
+# Fechamento {radar=fundamento}
+
+> **Na prova, o que a versão 2 acrescenta:** BOYD e GRIFFIN tem quatro tipos (o 3 chega ao trocânter menor, o 4 tem traços em dois planos); a parede lateral quebra durante a cirurgia em 74% dos casos (31% nas A2.2 e A2.3 contra 3% nas A1 e A2.1), espessura menor que 21 mm (medida 3 cm abaixo do tubérculo inominado, a 135°) prediz a fratura dela, e parede fraturada com DHS leva a 22% de reoperação em 6 meses; DHS só até A2.1, traço reverso pede haste (AAOS), placa de 95° e lâmina não são recomendadas; haste de 130° e 10 mm pelo portal trocantérico medial modificado; lâmina helicoidal migra para medial mesmo com ponta-ápice menor que 20 mm; má rotação acima de 15° em 40%, quase sempre em rotação interna; basocervical é mais instável e falha com haste mesmo com ponta-ápice baixa se não houver parafuso antirrotacional.

@@ -1,0 +1,34 @@
+{
+  "id": "mao-0693",
+  "origem": "FMRP-USP 2026",
+  "prova": "FMRP-USP",
+  "simulado": false,
+  "tema": "Mão e punho",
+  "temaSlug": "mao",
+  "subtema": "Queimaduras",
+  "enunciado": "De acordo com a 11ª edição do ATLS, de 2025, na reposição volêmica do paciente queimado adulto, vítima de queimadura térmica, qual a meta de diurese que deve ser atingida?",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "4,0 ml/kg/ hora.",
+      "porque": "4 mL/kg/h seria um débito excessivo, sinal de reposição exagerada, com risco de síndrome compartimental e edema pulmonar. O número 4 aparece na fórmula de volume da queimadura elétrica (4 mL/kg/% SCQ), não na meta de diurese."
+    },
+    {
+      "letra": "B",
+      "texto": "2,0 ml/kg/ hora.",
+      "porque": "2 mL/kg/h também é excessivo. O número 2 corresponde ao fator da fórmula de volume inicial no adulto com queimadura térmica, não à meta de diurese."
+    },
+    {
+      "letra": "C",
+      "texto": "0,25 ml /kg/ hora.",
+      "porque": "0,25 mL/kg/h indica oligúria, sinal de reposição insuficiente e hipoperfusão renal."
+    },
+    {
+      "letra": "D",
+      "texto": "0,5 ml /kg/ hora.",
+      "porque": "No adulto vítima de queimadura térmica, o ATLS recomenda ajustar a infusão de cristaloide para manter diurese de 0,5 mL/kg/h, cerca de 30 a 50 mL/h."
+    }
+  ],
+  "gabarito": "D"
+}

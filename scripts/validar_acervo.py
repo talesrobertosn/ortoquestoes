@@ -232,8 +232,12 @@ def principal() -> int:
                 erros.append(f"{onde}: área desconhecida: {questao.get('area')!r}")
             if "areasAdicionais" in questao:
                 adicionais = questao["areasAdicionais"]
-                if adicionais != ["cirurgia-mao"] or questao.get("area") or not questao.get("simulado"):
-                    erros.append(f"{onde}: presença adicional só aceita cirurgia-mao em simulado de ortopedia")
+                # O ENARE é uma prova só (geral, dá acesso a R4 como coluna e mão): fica na categoria
+                # própria e também aparece em Cirurgia da mão.
+                do_enare = questao.get("area") == "r4-enare" and str(questao.get("prova", "")).startswith("ENARE")
+                simulado_de_ortopedia = not questao.get("area") and questao.get("simulado")
+                if adicionais != ["cirurgia-mao"] or not (do_enare or simulado_de_ortopedia):
+                    erros.append(f"{onde}: presença adicional só aceita cirurgia-mao em simulado de ortopedia ou no ENARE")
             if questao.get("tipo") == "dissertativa":
                 if alternativas or gabarito:
                     erros.append(f"{onde}: dissertativa não leva alternativas nem gabarito")

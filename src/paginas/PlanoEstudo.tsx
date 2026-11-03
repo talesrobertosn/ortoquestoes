@@ -24,6 +24,8 @@ import { CartaoHoje, fraseAdiantadoHoje, PainelAdiantar, ComoEstouIndo, Depois, 
 import { corDaArea } from '../dados/coresAreas'
 import { CalendarioCronograma } from './CronogramaCalendario'
 import { ConviteFicticio, FaixaFicticio, type MotivoConvite } from './CronogramaFicticio'
+import { CenaTorre } from '../componentes/cronograma/CenaTorre'
+import { VisitaCronograma } from '../componentes/cronograma/VisitaCronograma'
 import { vistaDoCronograma } from '../dados/vistaCronograma'
 import { CONTEXTO_VAZIO, montarSessao } from '../dados/acervo'
 import '../estilos/paginas/CronogramaPainel.css'
@@ -33,6 +35,8 @@ import { Degustacao, SeloAssinante } from '../componentes/Premium'
 import { href, navegar } from '../util/rotas'
 import '../estilos/paginas/PlanoEstudo.css'
 import '../estilos/paginas/Cronograma.css'
+import '../estilos/paginas/CronogramaTorre.css'
+import '../estilos/componentes/Cristal.css'
 import { usarDiaAtual } from '../util/usarDiaAtual'
 import { chaveCivil, chaveDoDia, diaCivil, hojeBR, inicioDaChave, somarDias } from '../util/dia'
 import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
@@ -429,11 +433,12 @@ export function PlanoEstudo() {
     const nome = primeiroNome(sessaoConta?.user.user_metadata?.nome)
     const area = calculo.hoje?.itens.find((i) => !i.mistura) ?? calculo.hoje?.itens[0] ?? null
     return (
-      <div className="empilha-2 pe cp cr cf">
+      <div className="empilha-2 pe cp cr cr--torre cf">
         <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto ficticio={{ nome, aoConvidar: convidar }}
           aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} hub={hub} />
         {convite && <ConviteFicticio motivo={convite} nome={nome} area={area ? { slug: area.slug, nome: area.nome } : null}
           aoTreinar={(slug) => { definirConvite(null); void treinarGratis(slug) }} aoFechar={() => definirConvite(null)} />}
+        <VisitaCronograma />
       </div>
     )
   }
@@ -447,11 +452,13 @@ export function PlanoEstudo() {
   }
 
   return (
-    <div className="empilha-2 pe cp cr">
+    <div className="empilha-2 pe cp cr cr--torre">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
       <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
+      {/* A coruja ou o gato, de vez em quando, sentados num botão (easter egg). */}
+      <VisitaCronograma />
     </div>
   )
 }
@@ -681,13 +688,15 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
   }
 
   return <>
-    {aberto && !ficticio && !tourVisto && !avisoVistoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') && <TourCronograma aoFechar={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }} />}
     {ficticio && <FaixaFicticio nome={ficticio.nome} />}
     {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
 
     {/* O botão do dia também no topo: o calendário vem antes do cartão Hoje e o empurra para baixo. */}
+    {/* A Torre do Tempo (31/10/2026): o cenário pintado do topo. O tour da primeira visita fica curto, logo abaixo
+        do botão do dia, com o "Entendi" e o registro de sempre. */}
     <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} selo={ficticio ? 'Cenário fictício' : undefined} aoAjustar={aberto ? aoAjustar : undefined} acao={naRetaFinalComRoteiro ? null : acaoTopo} nome={nome} recados={recados}
-      rodape={aberto && hub?.semana ? <ResumoSemana {...hub.semana} /> : undefined} />
+      rodape={aberto && hub?.semana ? <ResumoSemana {...hub.semana} /> : undefined} cena={<CenaTorre />}
+      depois={aberto && !ficticio && !tourVisto && !avisoVistoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') ? <TourCronograma compacto aoFechar={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }} /> : undefined} />
 
     {/* Prioridade da página (Tales, 17/10/2026): o calendário grande vem logo abaixo de "Onde você está";
         o detalhe de hoje, a coluna lateral e os recolhidos ficam depois. */}
@@ -699,7 +708,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, a
         <div className="cp-ordem-1">{naRetaFinalComRoteiro && hub
           ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} minutos={minutos} />
           : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} adiantar={painelAdiantar}
-            aviso={folgaHoje && aberto && aoAjustar ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar as folgas?</span><button type="button" className="botao" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoHoje && !(leituras[resumoHoje.id]?.concluidoEm) ? <a className="cp-hoje__resumo" href={href(`/resumos/${resumoHoje.id}`)}><Icone nome="livro" tamanho={16} /><span><strong>Antes das questões, leia o resumo</strong><small>{resumoHoje.titulo} · ~{resumoHoje.minutos} min · o que já caiu, ano a ano</small></span><Icone nome="direita" tamanho={15} /></a> : undefined} />}</div>
+            aviso={folgaHoje && aberto && aoAjustar ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar as folgas?</span><button type="button" className="botao botao--principal" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoHoje && !(leituras[resumoHoje.id]?.concluidoEm) ? <a className="cp-hoje__resumo" href={href(`/resumos/${resumoHoje.id}`)}><Icone nome="livro" tamanho={16} /><span><strong>Antes das questões, leia o resumo</strong><small>{resumoHoje.titulo} · ~{resumoHoje.minutos} min · o que já caiu, ano a ano</small></span><Icone nome="direita" tamanho={15} /></a> : undefined} />}</div>
         {(hub?.mostrarDiagnostico || (hub?.esquecidos.length ?? 0) > 0) && <div className="cp-ordem-2">
           {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
           {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}
@@ -897,8 +906,10 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   const sim = simulacoes?.[intensidade]
 
   return (
-    <div className="empilha-2 pe cr-form">
-      <section className="pe-heroi pe-heroi--convite pe-heroi--form">
+    <div className="empilha-2 pe cr-form cr--torre">
+      <section className="pe-heroi pe-heroi--convite pe-heroi--form pe-heroi--torre">
+        {/* A Torre do Tempo em faixa curta: o relógio à vista, sem gastar uma dobra antes do primeiro campo. */}
+        <CenaTorre />
         <div>
           <p className="tr-heroi__selo">{atual ? 'Ajustar o cronograma' : 'Seu estudo até a prova'}</p>
           <h1 className="pe-heroi__nome">Cronograma</h1>

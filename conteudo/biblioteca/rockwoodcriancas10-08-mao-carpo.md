@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-08-mao-carpo
-versao: 2
+versao: 3
 titulo: Fraturas e luxações da mão e do carpo na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 8 · Fractures and Dislocations of the Hand and Carpal Bones in Children
 autores: Lindley Wall e Andrea S. Bauer
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 8. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura, tabela e algoritmo.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 8. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura, tabela e algoritmo. Complemento do Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38, pp. 1402 a 1405.
 subtemas: Mão da criança
 resumo: Epidemiologia bifásica; ossificação do carpo (capitato primeiro, escafoide no quinto ano, pisiforme por último) e das epífises; zonas da fise; tendões, colaterais e placa volar (fise mais fraca que o ligamento); remodelação (rotação não remodela); exame (tenodese, teste do enrugamento) e imagem (perfil verdadeiro, escafoide e ressonância); falange distal (SEYMOUR, martelo ósseo, jérsei); colo e côndilos das falanges; extra-oitava; polegar do esquiador e STENER; metacarpos (colo, diáfise, base); base do metacarpo do polegar A a D; escafoide, bipartido, capitato, piramidal e hamato; fibrocartilagem triangular; luxações da metacarpofalângica e da interfalângica proximal.
 ---
@@ -341,29 +341,19 @@ Os números do capítulo se espalham por várias seções; juntos, ajudam a resp
 | Consolidação | Estável em 2 semanas; atraso de 7 a 10 dias pode exigir osteoclasia |
 !fim
 
-# Perguntas que a banca faz {radar=fundamento}
+# O que o Campbell 15 acrescenta {radar=fundamento}
 
-- **Qual o primeiro osso do carpo a ossificar?** O capitato, seguido do hamato.
-- **Quando ossifica o escafoide?** No quinto ano, do polo distal para o proximal.
-- **Por que a SALTER-HARRIS III é comum na metacarpofalângica e rara nas interfalângicas?** Porque os colaterais da metacarpofalângica vão de epífise a epífise; os das interfalângicas cruzam a fise e, com a placa volar, a protegem.
-- **O que arranca a SALTER-HARRIS III da base da falange proximal do polegar?** O colateral ulnar (polegar do esquiador).
-- **Onde o metacarpo da criança quebra mais?** No colo, sobretudo no mínimo e no anular.
-- **Qual tipo da base do metacarpo do polegar é o BENNETT da criança?** O D, SALTER-HARRIS III ou IV.
-- **Em que posição do punho quebra o capitato?** Em dorsiflexão (extensão) excessiva.
-- **O que é a fratura de SEYMOUR?** SALTER-HARRIS I ou II exposta da falange distal, com o fragmento fletido pelo flexor profundo e o leito interposto.
-- **O que bloqueia a flexão depois da fratura do colo da falange?** A cabeça rodada em extensão, que apaga a fossa subcondilar.
-- **O que torna complexa a luxação da metacarpofalângica?** A placa volar interposta.
-- **Qual lesão da fibrocartilagem triangular é mais comum no adolescente?** A periférica ulnar (tipo B).
+O Campbell's Operative Orthopaedics, 15ª edição, trata o punho e a mão da criança no capítulo 38 (pp. 1402 a 1405). Ele concorda com o Rockwood and Wilkins' Fractures in Children no essencial e acrescenta números úteis.
 
-# Três casos para fixar {radar=clinico}
+**Carpo e escafoide.** Os ossos do carpo ossificam tarde, de **5 a 6 anos** até **13 a 15 anos**, e por isso as fraturas do carpo são raras e passam despercebidas. As fraturas dos outros ossos do carpo seguem a época de ossificação (piramidal 12 a 13 anos; trapézio e trapezoide 13 a 14; hamato 15). O **escafoide** é o mais fraturado, com pico de **15 a 19 anos**, quando a ossificação termina. Classifica-se pela idade (**condral** abaixo de 8 anos, **osteocondral** de 8 a 11, **ossificado** acima de 12) ou pelo local; na criança, as fraturas do **terço distal** (tuberosidade e polo distal) são as mais comuns, e as avulsões distais consolidam com gesso em cerca de **95%** quando sem desvio. Com suspeita clínica e radiografia normal, imobilizar e repetir em **2 semanas**: até **30%** mostram a fratura no controle; a ressonância é mais sensível que a tomografia. A pseudartrose do polo proximal é rara na criança, vem do atraso no diagnóstico ou da falta de imobilização, e consolida com cirurgia como no adulto em cerca de 95%.
 
-**Caso 1.** Menino de 8 anos prende o dedo na porta; a falange distal está fletida, a unha proximal sobre a prega dorsal e há sangue na base da unha. É uma **SEYMOUR**: fratura fisária **exposta**. Limpar e desbridar, tirar o leito interposto, reduzir, fixar com fio, reparar o leito e dar antibiótico, de preferência no mesmo dia.
+**Metacarpos.** O local mais fraturado é o **colo** (**75%**), em geral no quarto e no quinto dedos, com pico de **13 a 16 anos**, no esporte de contato ou no soco. A redução usa a técnica que o livro atribui a JONES: metacarpofalângica a **90 graus** e força dorsal pela falange proximal, com contrapressão na diáfise. O objetivo mais importante é a **rotação**: todos os dedos fletidos apontam para o tubérculo do escafoide, e menos de **10 graus** de rotação já cruzam os dedos; a rotação não remodela e, se persistir, pede fios percutâneos ou redução aberta. A fratura intra-articular desviada da cabeça do metacarpo, no adolescente, também pode exigir redução aberta.
 
-**Caso 2.** Adolescente de 15 anos dá um soco na parede: fratura do **colo do quinto metacarpo** com 35 graus de ápice dorsal, sem má rotação e sem cabeça palpável na palma. No **mínimo**, até 30 a 40 graus são aceitáveis: imobilização. Se os dedos cruzassem na tenodese, a rotação mandaria reduzir.
+**Metacarpo do polegar.** Ao contrário dos outros, quebra **perto da fise proximal**. O tipo A (entre a fise e a junção dos terços proximal e médio) aceita **20 a 30 graus** de angulação residual conforme a idade; os SALTER-HARRIS II (tipos B e C) vão de gesso a fios conforme a angulação; o **BENNETT da criança** (SALTER-HARRIS III, tipo D) é intra-articular, pode lesar a fise e pede redução e fixação como no adulto. Às vezes o metacarpo do polegar tem fise nas duas pontas, e a radiografia do outro lado esclarece. O gesso em abdução por **3 a 4 semanas** basta na maioria das fraturas da base.
 
-**Caso 3.** Menina de 13 anos cai com a mão espalmada: dor na tabaqueira, no tubérculo e à compressão do polegar, radiografias normais. **Imobilizar** e rever em 2 semanas ou pedir **ressonância**; se houver fratura da cintura sem desvio, gesso por 6 a 8 semanas. Liberar sem imobilizar é o caminho da pseudartrose por atraso.
+**Falanges.** Comuns, sobretudo no esporte; até **dois terços** na **falange proximal**, com pico aos **12 anos**. A SALTER-HARRIS II da base da falange proximal é a mais comum, e a parada de crescimento é incomum. A fratura "extra-oitava" (base da falange proximal do quinto dedo angulada com ápice radial) se reduz com um coxim no quarto espaço como fulcro. Colo e côndilos são instáveis e costumam precisar de cirurgia; fios lisos ou parafusos finos nas intra-articulares desviadas; fios retirados em **3 a 4 semanas**, com movimento ativo, porque o passivo faz a criança travar.
 
-**Caso 4.** Menino de 11 anos joga beisebol e desliza na base com o mínimo esticado; dor na interfalângica proximal, que o pronto-socorro chamou de entorse. O perfil mostra o **sinal da dupla densidade**: é uma fratura **condilar** desviada. Esse é o tipo de fratura que chega tarde, já consolidada viciosamente; a conduta é restaurar a superfície articular e a estabilidade, em geral com redução e fixação.
+**Falange distal e SEYMOUR.** Acontece em crianças mais novas (média de **7,5 anos**). A fratura de **SEYMOUR** é a SALTER-HARRIS I ou II da falange distal com lesão do leito ungueal; passa despercebida e infecta muito quando o antibiótico ou o desbridamento começam depois de **24 horas**. Costuma ser irredutível pela matriz estéril interposta na fise. As fraturas com maior risco de complicação são a SALTER-HARRIS IV (**100%**), a de SEYMOUR (**62%**) e o dedo em martelo (**52%**). A consolidação viciosa do colo da falange com consolidação parcial pode ser corrigida pela técnica percutânea de WATERS, com um fio oblíquo que desfaz o calo e devolve o côndilo ao lugar.
 
 # Revisão rápida {radar=fundamento}
 

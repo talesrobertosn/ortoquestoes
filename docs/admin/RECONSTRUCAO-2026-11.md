@@ -1,0 +1,204 @@
+# Painel administrativo 3.0: reconstrução (01 e 02/11/2026)
+
+Pedido do Tales: refazer **toda** a camada visual e a arquitetura de interação do painel, sem reaproveitar
+a aparência antiga, preservando dados, regras de negócio, autenticação, permissões, Mercado Pago, e-mails,
+simulados e os endereços antigos. A primeira tentativa (PR #801) só trocou a casca e foi desfeita (PR #806);
+esta começa do zero.
+
+## Arquitetura
+
+| Camada | Onde | O que faz |
+| --- | --- | --- |
+| Rotas e IA | `src/admin/rotas.ts` | 6 áreas, 23 partes, endereços antigos, estado no endereço (`aba`, `filtro`, `vista`, `id`, `periodo`) |
+| Casca | `src/admin/Painel.tsx` | Barra lateral, trilha, "Atualizado às", busca global (Ctrl K ou /), celular com faixa de partes e barra de baixo; o site abre o painel sem o cabeçalho e o rodapé dele |
+| Dados | `src/admin/dados/` | Consultas compartilhadas (`painel.tsx`), séries (`consultas.ts`), pessoas (`pessoas.ts`), linguagem de dados (`metricas.ts`) |
+| Sistema de design | `src/admin/admin.css`, `src/admin/ui/` | Tokens `a3-` (monocromo, verdete raro, vermelho só para erro e destrutivo), claro e escuro; kit, gráficos, tabela, gaveta, confirmação, avisos, paleta, ícones próprios |
+| Módulos | `src/admin/modulos/` | Um arquivo por tela, carregado sob demanda (o maior tem 45 kB) |
+| Lógica reaproveitada | `src/componentes/admin/*.ts` | Receita, financeiro, ganhos, pagamentos, rótulos, modelos de e-mail, montagem do simulado, exportação: as contas não mudaram |
+
+Todas as RPCs continuam passando por `exigir_administrador` no banco; nenhuma RPC, política, `SECURITY DEFINER`
+ou `search_path` foi alterada. Nenhum dado administrativo foi exposto em endpoint público.
+
+## Arquitetura da informação
+
+| Área | Partes |
+| --- | --- |
+| Comando | Visão geral (estado do Orto Questões, cena HD-2D, "Pede ação agora"), Atividade agora, Pendências |
+| Pessoas | Explorador, Aquisição e ativação, Retenção e ritmo, Perfis e origem |
+| Estudo e conteúdo | Qualidade do acervo, Editor de questões, Simulados, Opiniões dos flashcards |
+| Receita | Visão financeira, Previsão, Assinaturas, Cobranças, Avisos do processador |
+| Comunicação | Campanhas, Cartas pessoais, Relatórios e envios, Catálogo de cartas |
+| Configurações | Acesso e pagamentos, Aviso no topo do site, Exportação |
+
+## Matriz de paridade (nada do painel antigo ficou de fora)
+
+| Painel antigo | Onde está agora | Mantido | Novo |
+| --- | --- | --- | --- |
+| Agora (torre de controle) | Comando › Atividade agora | números do dia, online com o que cada um vê, estudaram, entraram, recém-cadastrados, mais ativos, dinheiro hoje, biblioteca | linha do dia em ordem do tempo, monitor com segmentos |
+| Pede atenção (dentro de Agora) | Comando › Visão geral e Pendências | todos os alertas | fila única com severidade, causa, contagem, último evento e ação; fonte que falha vira item, nunca zero |
+| Pessoas › Usuários | Pessoas › Explorador | 9 filtros, busca, colunas, CSV do recorte, ficha | filtro no endereço, ordenação por coluna, filtros ativos removíveis, tabela que vira blocos no celular |
+| Ficha do usuário | Gaveta por cima de qualquer tela | resumo, atividade, assinatura com reprocessar, carta, cortesia, ranking, desconectar | abas, foco preso, Esc devolve o foco |
+| Pessoas › Crescimento | Pessoas › Aquisição; Retenção e ritmo; Perfis e origem | série diária, funil, semanas e meses, coortes, adoção, mapa dia e hora, perfis, indicações | comparação com o período anterior, funil com o denominador certo, "Ver dados" em todo gráfico |
+| Financeiro › Ganhos e Resumo do mês | Receita › Visão financeira | hoje, 7 dias, mês contra o mês passado até o mesmo dia, ano, desde o começo, por meio, por plano, MRR, base, renovação, cancelamento, mês a mês com churn e CSV, aviso de paga sem cobrança | confirmado e reconstruído separados (hachura), "Como estes números são calculados" |
+| Financeiro › Previsão | Receita › Previsão | fechamento do mês, horizontes 1, 3, 6 e 12, hipótese do Pix com taxa observada e presets, previsão mês a mês, cartões que renovam | soma do fechamento explicada linha a linha |
+| Financeiro › Assinaturas | Receita › Assinaturas | grupos, plano, meio, período, busca, CSV, selo Teste e Renovação | régua do período pago |
+| Financeiro › Pagamentos | Receita › Cobranças | período, meio, situação, busca, totais, reembolsadas riscadas, link do Mercado Pago, CSV | extrato agrupado por dia |
+| Avisos de pagamento | Receita › Avisos do processador | filtros, vistos, reprocessar com confirmação, link, ficha | fila com detalhe ao lado |
+| Conteúdo (suspeitas, fáceis, temas, relatos, avaliações) | Estudo › Qualidade do acervo | as cinco vistas, relatos com nota, aviso por e-mail, lidas | fila → detalhe → decisão → próximo |
+| Editar questões | Estudo › Editor de questões | todos os campos, imagens, esconder, apagar, desfazer, lista das editadas e fora do site | prévia ao lado enquanto digita, barra de salvar com estado, aviso ao sair sem salvar |
+| Simulados | Estudo › Simulados | montagem, sorteio com semente, cotas, trocas, prévia da página, rascunho, publicar, trava por participantes, datas, despublicar, acompanhar | calendário de 12 meses, revisão ao lado da montagem, edição em abas |
+| Opiniões dos flashcards | Estudo › Opiniões | categorias, notas, som, texto | mural com busca e composição |
+| E-mails › Lembretes e resumo quinzenal | Comunicação › Campanhas | as 5 campanhas e o quinzenal, lista de quem recebe, prévia por pessoa, envio em lotes, travas contra spam | fluxo em etapas (público, prévia, revisão com nomes, resultado) |
+| E-mails › Cartas pessoais | Comunicação › Cartas pessoais | 4 grupos, histórico, marcar e desmarcar, sortear, editar, prévia exata, uma por segundo, parar, relatório | caixa de saída com a carta aberta ao lado |
+| E-mails › Relatório mensal, automáticos, últimos envios | Comunicação › Relatórios e envios | mês, prévia, envio, as duas chaves automáticas, últimos envios com motivo da falha | registro filtrável por tipo e falha |
+| E-mails › Todas as cartas | Comunicação › Catálogo de cartas | 42 modelos, grupos, busca, sortear, ver como chega | diretório com amostra ao lado |
+| Ajustes (recursos pagos, limite, pagamentos) | Configurações › Acesso e pagamentos | as três chaves e o limite, confirmação | estado atual ao lado de cada chave e "o que muda ao salvar" |
+| Ajustes (aviso no topo) | Configurações › Aviso no topo do site | texto, link, cor, duração, tirar do ar | prévia exata no computador e no celular, histórico |
+| Exportar dados do painel | Configurações › Exportação | 10 seções, privacidade, Markdown, JSON, CSV, copiar | página própria em três passos |
+
+## Matriz de substituição visual
+
+| Antes | Depois |
+| --- | --- |
+| Cabeçalho e rodapé do site em volta do painel | Casca própria, sem a do site |
+| Abas em fileira de botões verdes | Barra lateral com áreas que abrem e fecham; no celular, faixa de partes e barra de baixo |
+| Cartões verdes cheios de número | Faixas de métricas com selo de qualidade, variação e balão de definição |
+| Barras verdes sem eixo | Gráficos com eixo, dica no teclado, legenda, fonte e "Ver dados" |
+| Listas de cartões (assinaturas, cobranças, relatos) | Tabela ordenável que vira blocos no celular; extrato por dia; filas com detalhe |
+| `window.confirm` e mensagens verdes para erro | Diálogo de confirmação com o efeito escrito; avisos rápidos (erro fica até fechar) |
+| Janela central para exportar | Página em três passos |
+| Formulário corrido do editor | Blocos numerados, prévia ao lado, barra de salvar |
+| Cores do site (verde e ouro) | Monocromo do Painel 3.0, claro e escuro, verdete só como acento raro |
+
+## Evidência
+
+- `npm test`: passa inteiro, com dois testes do painel: `testar_admin_secoes.mjs` (6 áreas, 23 partes,
+  endereços antigos, estado no endereço, nada pessoal no endereço) e `testar_admin_metricas.mjs`
+  (contas da linguagem de dados e o dicionário `docs/admin/METRICAS.md` igual ao código).
+- `npm run build`: passa; cada tela é um pedaço separado (de 12 a 45 kB).
+- `node fixtures/e2e_painel_admin.mjs`: 10 verificações no navegador, entre elas as 23 partes sem erro,
+  endereços antigos, Voltar, ficha, Ctrl K, confirmação que não chama a RPC ao cancelar, falha que não vira zero,
+  celular sem rolagem de lado e tema escuro.
+- `fixtures/capturar_painel_admin.mjs`: 184 capturas (23 partes × 320, 390, 768 e 1440 px × claro e escuro),
+  sem rolagem de lado depois da correção de Cartas em 320 px.
+- Os dados de exemplo dos testes (`fixtures/painel_admin_falso.mjs`) respondem tudo localmente: nenhum
+  e-mail real, nenhuma cobrança, nenhuma publicação, nenhuma configuração de produção.
+
+## O que ficou de fora de propósito
+
+- Nenhuma mudança no banco: se uma parte nova pedir dado que o banco não tem, ela diz "indisponível".
+- O e2e não entra no `npm test` (precisa de navegador); roda à mão, como antes.
+
+## Revisão de 02/11/2026 (pedido do Tales: "ficou confuso, antes estava melhor")
+
+- **Menu com os nomes de antes**: Agora, Pessoas, Financeiro, Conteúdo, E-mails, Ajustes. De 23 para 17 itens;
+  o que era parecido virou **aba dentro da mesma tela** (`?sub=`): Crescimento (Aquisição, Retenção, Perfis e origem),
+  Financeiro › Ganhos (Ganhos, Previsão) e Ajustes (Acesso e pagamentos, Aviso no topo). Os endereços antigos
+  (`?aba=previsao`, `retencao`, `aviso`, `agora`, `pendencias`) abrem a aba certa.
+- **Página inicial = Agora**: a primeira coisa é quem está online (sinal nos últimos 5 minutos), em dois grupos com cor
+  própria: assinantes (verde) e não assinantes (cinza, com "viu os planos" quando for o caso). Logo abaixo, quantos
+  assinantes não entraram hoje (e quais deles viram os planos) e os não assinantes que viram os planos nos últimos
+  30 dias, com atalho para carta. Depois os números do dia, o que pede ação, a linha do dia e as listas.
+- **Menos leitura no Supabase**: os contadores do menu passaram de 1 em 1 minuto para 5 em 5 minutos, e trocar de tela
+  reaproveita o que foi lido nos últimos 5 minutos (antes, 15 segundos). Para ver na hora, o botão Atualizar.
+- **Financeiro mais simples**: "Reconstruído" voltou a ser "Estimado"; Ganhos sem os blocos repetidos (últimas cobranças,
+  ações) e com o mês a mês recolhido; selos "Confirmado" e "Derivado" só aparecem onde explicam algo.
+
+## Revisão de 02/11/2026, noite (online organizado e mais cor)
+
+- **Agora em três faixas numeradas**: 1. Online agora; 2. Não estão online; 3. Hoje.
+- **Totais coloridos no topo**: online agora, assinantes online (de quantos assinantes), não assinantes online e
+  não assinantes que viram os planos hoje.
+- **Online em três grupos com cor**: assinantes (verde), não assinantes que viram os planos **hoje** (âmbar, com a
+  hora) e os demais não assinantes (azul, com o que fazem, questões, idade da conta e atalho para carta).
+- **Não estão online**: assinantes que não entraram hoje; não assinantes que viram os planos hoje e saíram;
+  não assinantes que viram os planos nos últimos 30 dias.
+- **Cor no painel inteiro** (`src/admin/cores.css`): cada área com a sua cor (Agora verde, Pessoas azul,
+  Financeiro turquesa, Conteúdo violeta, E-mails laranja, Ajustes ardósia), que tinge o menu, o título, o botão
+  principal, as abas e os filtros; gráficos em índigo, turquesa e âmbar; claro e escuro.
+- **Questões de hoje e do total** lado a lado, em destaque, em cada pessoa (online e fora) e na tabela de Usuários.
+- **Limite grátis do dia** (quando o limite está ligado): barra em cada não assinante e o total "Bateram o limite grátis".
+- **Temperatura do não assinante** (Frio, Morno, Quente, Fervendo): viu os planos hoje ou na semana, bateu o limite,
+  questões no total e online agora; os mais quentes aparecem primeiro.
+- **Lista de pessoas a cada 3 minutos** nas telas ao vivo (Agora e Usuários); o resto continua a cada 5. Online segue
+  sendo sinal nos últimos 5 minutos, e o botão Atualizar busca na hora.
+
+## Revisão de 02/11/2026, madrugada (cores do site e página Agora mais simples)
+
+- **Cores do site, sem degradê**: o painel usa os tokens do site (`src/estilos/tokens.css`): porcelana, superfície,
+  grafite, ardósia, verdete, ouro, acerto, erro, que já trocam sozinhos no escuro. Botão, item ativo, filtros e abas
+  em verdete, como no site. Gráficos em verdete e ouro.
+- **Sentido das cores de pessoa**: assinante = verdete; viu os planos hoje = ouro; não assinante = ardósia.
+- **Agora, de cima para baixo**: faixa no estilo do herói do site (céu verdete com horizonte em pixel) com os totais;
+  **uma** lista de quem está online, com filtro (todos, assinantes, viram os planos hoje, não assinantes) e um fio de cor
+  em cada linha; **uma** caixa "Fora do site agora" com abas; depois "Hoje".
+
+## Revisão de 02/11/2026: Crescimento com área própria e Linha do dia enxuta
+
+- Crescimento saiu de dentro de Pessoas e virou área própria no menu, com três itens:
+  Aquisição e funil, Retenção e ritmo, Perfis e origem. Os links antigos continuam abrindo.
+- Barra do celular com 7 áreas; "Financeiro" aparece como "Finanças" e os rótulos encolhem
+  abaixo de 380 px para caber em 320 px.
+- Linha do dia: deixou de ter uma linha por pessoa que estudou (repetia a lista "Estudaram hoje").
+  Agora mostra uma linha somada (pessoas e questões, com "ver quem") e só cadastros e dinheiro,
+  6 por vez, com "Ver mais" e "Recolher". Ela usa os dados já carregados, sem consulta extra.
+
+## Revisão de 02/11/2026 (tarde): Agora com números clicáveis e "tudo de hoje"
+
+Pedido do Tales: "faz esses botões serem clicáveis, mostrar fácil assinantes hoje, mostrar fácil tudo de hoje".
+
+- O topo junta dois grupos de números, todos botões: "Agora no site" (online, assinantes online, não assinantes
+  online) e "Hoje" (assinantes que entraram, viram os planos, bateram o limite, estudaram, cadastros, recebido).
+  Cada um abre a lista certa logo abaixo; "Recebido" abre o extrato.
+- Saiu o texto técnico do topo ("sinal nos últimos 5 min..."); virou uma frase do dia e uma nota no fim da página.
+- "Online agora", "Fora do site" e a faixa "Números do dia" viraram UMA lista de pessoas com abas que quebram linha:
+  Online agora, Assinantes hoje, Viram os planos hoje, Bateram o limite, Estudaram hoje, Cadastros hoje, Assinantes
+  que não entraram, Viram os planos em 30 dias.
+- A barra do celular deixou de repetir "Agora / Agora" (mostra "Painel" em cima).
+
+## Revisão de 02/11/2026 (fase 1 do diagnóstico): falhas de pagamento e Financeiro com nomes claros
+
+Base: `docs/admin/DIAGNOSTICO-UX-2026-11-02.md`. Só tela; nada muda no banco nem no pagamento.
+
+- "Falha no pagamento" virou dois casos: **Cartão recusado ao assinar** (sem nenhuma cobrança paga; nada foi cobrado, a
+  pessoa nunca teve acesso) e **Renovação recusada** (já tinha pago; pode perder o acesso). O primeiro é oportunidade
+  na fila por 14 dias; o segundo continua alta.
+- **Resolvido** em todo alerta de pagamento (fila "Pede ação", lista de assinantes, avisos do Mercado Pago), guardado no
+  servidor nos lidos de pagamento (chave `falha:<pessoa>:<atualização>`), com Desfazer. Se a assinatura muda, o alerta volta.
+- A fila leva direto ao grupo certo (`?aba=assinaturas&grupo=falha_pagamento`).
+- Ficha › Assinatura: recusa ao assinar mostra "Tentou assinar em" e "Cobrado: nada", com um convite para escrever
+  uma carta; códigos técnicos recolhidos em "Detalhes técnicos".
+- Financeiro: Resumo, Assinantes, Extrato e Avisos do Mercado Pago (a busca ainda acha pelos nomes antigos). Avisos com
+  dois filtros úteis ("Precisam de você", "Tudo certo") e o título sem repetir.
+- Erros de texto: "Confirmado Confirmado" no Extrato, "Pix · cartão" invertido no Resumo, e os textos dos interruptores
+  de Ajustes que descreviam o estado oposto.
+
+## Revisão de 02/11/2026 (autonomia total do Tales): e-mails, Crescimento, fase 2 e fase 3
+
+- **E-mails que travavam.** O servidor buscava só o tamanho do lote; quem estava segurado (descadastro ou cadência)
+  voltava sempre no começo da fila e travava o envio dos outros, e o resumo quinzenal (pesado por pessoa) estourava
+  o tempo da tela. Agora a função busca uma janela grande (200 lembretes, 500 relatórios), pula os segurados sem parar
+  e encerra cada chamada em 40 s, dizendo se ainda resta gente. Vale depois de colar `enviar-email` no Supabase.
+- **Enviar tudo** em Lembretes: um botão manda tudo o que está pendente (Pix termina hoje, Pix 3 dias, Primeira
+  missão, Fogueira apagando, Retomar a jornada e o resumo quinzenal), uma campanha de cada vez. As travas do servidor
+  continuam: descadastro, 48 h entre e-mails, 3 em 14 dias, uma vez por ausência.
+- **Crescimento** abre em "Desde sempre" (corta no primeiro dia com cadastro ou estudo); "30 dias" é a segunda opção.
+  Trocar de tela volta ao período padrão de cada tela.
+- **Fase 2 (parte 36).** `assinaturas.motivo_falha/falha_em` e `eventos_pagamento.id_usuario`; o webhook anota à parte
+  (PATCH separado que nunca lança erro) o `status_detail` da recusa e de quem é o aviso. O painel traduz o motivo
+  ("Saldo ou limite insuficiente", "O banco pediu para a pessoa autorizar a compra"…) com o que costuma resolver.
+  Recusas antigas aparecem como "motivo não registrado".
+- **Fase 3.** No celular, a barra de cima é o título (o grande não se repete) e as abas mostram que continuam à
+  direita. A fonte dos gráficos (nome da consulta) foi para "Ver dados". E-mails: Lembretes, Cartas pessoais,
+  Enviados e Modelos (a busca acha pelos nomes antigos); rótulos internos ("parte 31", "sem SQL") saíram.
+  Financeiro › Resumo tem as abas Recebido e Previsão.
+
+## Revisão de 02/11/2026: cortesias contam como assinantes (parte 37)
+
+Pedido do Tales: os amigos com cortesia usam o site quase todo dia e nunca vão pagar; no painel têm de aparecer como
+assinantes, diferenciados, e nunca como possíveis pagadores.
+
+- `listar_cortesias_admin()` (parte 37, só leitura) devolve quem tem cortesia valendo. O painel marca essas contas com
+  o plano "cortesia" quando não têm plano pago: contam em Assinantes (online, hoje, os que não entraram) com o selo
+  "Cortesia", e saem de "viram os planos", temperatura, limite grátis e cartas de convite. A Ficha mostra "Cortesia".
+- Perfis e origem continuam contando como assinante só quem paga. Sem a parte colada, nada muda.

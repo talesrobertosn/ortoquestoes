@@ -7,10 +7,16 @@ pixel art em 480 x 160, camada por camada, montada em 3x com a luz calculada por
 A cena: o interior da cúpula de madeira do observatório, com nervuras, rebites de latão e o trilho dentado em que a
 cúpula gira. A fenda está aberta (a porta de correr empurrada para o lado) e por ela se vê o céu da hora do dia, com
 as montanhas e a vila lá embaixo. A grande luneta de latão, na sua montagem equatorial sobre um pilar de ferro,
-aponta pela fenda. Em volta: o astrolábio esférico (esfera armilar) num pé de madeira, o astrolábio plano na parede,
-mapas celestes e gráficos de pergaminho (barras e curvas desenhadas à tinta, porque é a página das estatísticas),
-uma mesa com papéis, tinteiro, um fêmur de peso de papel e a lamparina; à noite, estrelas e constelações ligadas por
-linhas fracas, uma delas em forma de fêmur, e o Cruzeiro do Sul.
+aponta pela fenda; o tubo tem três segmentos de raios diferentes, anéis de reforço e pátina. Em volta: o astrolábio
+esférico (esfera armilar) num pé de madeira, o astrolábio plano na parede, cartas celestes de pergaminho (órbitas
+pontilhadas e o laço de um planeta, sem barras nem números: a parede sugere observação, nunca os dados da pessoa),
+uma mesa com papéis, tinteiro, um fêmur de peso de papel e a lamparina; no chão, a laje do pilar com o círculo graduado
+de latão. À noite, estrelas, uma constelação em forma de fêmur, um arco em ziguezague e um aglomerado (nada em cruz).
+
+Revisão de 31/10/2026 (página Desempenho no observatório): a cruz do céu virou arco, a rosa dos ventos de 8 pontas
+virou círculo graduado, as barras da parede viraram cartas celestes, a luneta ganhou segmentos e contorno de luz
+(luar frio à noite), o latão recebe metade do feixe (não estoura em amarelo chapado), mais luz quente das chamas e
+o recorte próprio do celular.
 
 A luz:
 - o feixe que entra pela fenda é traçado por pixel (cada ponto da sala "olha" na direção do sol até a fenda), então a
@@ -22,8 +28,9 @@ A luz:
 Composição para a interface: os 42% da esquerda ficam calmos e escuros (o texto vai ali); a fenda, a luneta e a mesa
 ficam do centro para a direita. O chão em x 330–380 fica livre para o mascote (pés em y ≈ 150).
 
-Gera em public/pixel/paginas/: observatorio-{manha,tarde,noite}.webp (1440 x 480) e -960.webp (960 x 320).
-Uso: python3 scripts/gerar_cena_observatorio.py [manha|tarde|noite ...]
+Gera em public/pixel/paginas/: observatorio-{manha,tarde,noite}.webp (1440 x 480), -960.webp (960 x 320) e
+-movel.webp (888 x 480: de x 184 até a borda, a janela do celular).
+Uso: python3 scripts/gerar_cena_observatorio.py [manha|tarde|noite ...]  (precisa de numpy e Pillow)
 """
 from __future__ import annotations
 
@@ -51,6 +58,7 @@ PILAR_X = 300
 LAMPARINA = (455.5, 93.5)  # chama da lamparina da mesa
 VELA = (259.5, 81.5)        # chama da vela na arandela da parede
 VELA_ESQ = (40.5, 84.0)     # vela fraquinha na estante da esquerda
+MOVEL_X0 = 184              # recorte do celular: da esfera armilar à borda direita (296 x 160)
 
 
 # ─────────────────────────────── Pincéis ───────────────────────────────
@@ -157,7 +165,7 @@ class Camada:
                 if abs(d) > r:
                     continue
                 v = d / r  # -1..1 através do tubo
-                k = 1 - abs(v - luz) * 0.9
+                k = 1 - abs(v - luz) * 1.12  # queda mais forte: o tubo ganha volume (lado da sombra fundo)
                 k += (hash01(x, y, 5) - 0.5) * 0.12
                 i = int(np.clip(k * (len(tons) - 0.01), 0, len(tons) - 1))
                 cor = tons[i]
@@ -222,7 +230,7 @@ def tons_idx(tons, k: float):
 
 
 # Paletas (do escuro ao claro). A luz da hora entra depois, na montagem.
-LATAO = ["#2a1a08", "#5a3a12", "#8a5e1e", "#b8862e", "#dcae48", "#f4d27a", "#fff0b8"]
+LATAO = ["#2a1a08", "#5a3a12", "#8a5e1e", "#b4802c", "#d6a242", "#efc66e", "#fff0b8"]  # latão puxado para o âmbar (não limão sob o sol)
 LATAO_ESC = ["#1e1206", "#3a2610", "#5e4018", "#7e5a22"]
 FERRO = ["#121214", "#1e1e24", "#2c2c34", "#3e3e48", "#56565f", "#7c7c86"]
 MADEIRA = ["#1e120a", "#2e1c10", "#422816", "#58361e", "#704628", "#8a5a34", "#a6703f"]
@@ -235,7 +243,7 @@ PEDRA = ("#9a8c84", "#7c706c", "#605654", "#443c3e", "#2e282c")
 PERIODOS = {
     "manha": dict(
         ceu=("#4f8ed6", "#8cc0ea", "#e6f0f0"), amb="#a4aecc", amb_k=0.8, ceu_luz="#bcd4f4", ceu_k=0.7,
-        sol="#ffe6b0", sol_k=1.4, rumo=(-0.62, -1.0), feixe=0.20, lamp=0.0, vela=0.0,
+        sol="#ffd894", sol_k=1.45, rumo=(-0.62, -1.0), feixe=0.24, lamp=0.0, vela=0.3,
         quente="#ffe8c4", fria="#22406a", montanha=("#7a9ccc", "#9ab6d8"), nuvem=("#ffffff", "#c6d8ee")),
     "tarde": dict(
         ceu=("#36326e", "#c8706a", "#ffc47c"), amb="#9a7898", amb_k=0.64, ceu_luz="#ffb07a", ceu_k=0.55,
@@ -243,7 +251,7 @@ PERIODOS = {
         quente="#ffd49a", fria="#36285a", montanha=("#5a4a7a", "#8a5e7a"), nuvem=("#ffd2a0", "#b0708a")),
     "noite": dict(
         ceu=("#030716", "#0a1432", "#182a58"), amb="#34447e", amb_k=0.58, ceu_luz="#5a78d0", ceu_k=0.42,
-        sol="#8eaaff", sol_k=0.8, rumo=(-0.22, -1.0), feixe=0.2, lamp=1.5, vela=1.05,
+        sol="#8eaaff", sol_k=0.72, rumo=(-0.22, -1.0), feixe=0.18, lamp=1.75, vela=1.25,
         quente="#ffcf8a", fria="#0a1432", montanha=("#0c1430", "#141e40"), nuvem=("#28385e", "#141e3a")),
 }
 
@@ -252,7 +260,9 @@ PERIODOS = {
 # Contorno de um fêmur direito: cabeça, colo, trocânteres, diáfise e côndilos.
 ESTRELAS_FEMUR = [(305, 5), (301, 9), (306, 13), (311, 20), (313, 34), (311, 49), (317, 52), (324, 49), (320, 34), (323, 11), (312, 9)]
 LIGACOES_FEMUR = [(i, (i + 1) % 11) for i in range(11)]
-CRUZEIRO = [(250, 36), (252, 54), (244, 45), (258, 44), (254, 48)]
+# Um arco em ziguezague de cinco estrelas (sem desenho de cruz) e um aglomerado pequeno, sem linhas.
+ARCO = [(241, 41), (246, 47), (252, 44), (258, 50), (264, 46)]
+AGLOMERADO = [(330, 22), (332, 21), (331, 24), (334, 23), (333, 25), (335, 21), (329, 25)]
 
 
 def coord_cupula(x, y):
@@ -311,15 +321,16 @@ def pintar_ceu(nome: str, per: dict) -> np.ndarray:
                     xx, yy = int(round(x0 + (x1 - x0) * tt)), int(round(y0 + (y1 - y0) * tt))
                     ceu[yy, xx] = ceu[yy, xx] * (1 - a) + hexa(cor) * a
         ligar(ESTRELAS_FEMUR, LIGACOES_FEMUR, "#6a86d8", 0.42)
-        ligar(CRUZEIRO, [(0, 1), (2, 3)], "#6a86d8", 0.38)
-        for i, (x, y) in enumerate(ESTRELAS_FEMUR + CRUZEIRO[:4]):
-            forte = i in (0, 3, 5, 7, 9, 11, 12, 13, 14)
+        ligar(ARCO, [(0, 1), (1, 2), (2, 3), (3, 4)], "#6a86d8", 0.34)
+        for i, (x, y) in enumerate(ESTRELAS_FEMUR + ARCO):
+            forte = i in (0, 3, 5, 7, 9, 11, 13, 15)
             ceu[y, x] = hexa("#ffffff") * (1.4 if forte else 1.05)
             if forte:
-                for (dx, dy) in ((1, 0), (-1, 0), (0, 1), (0, -1)):
-                    ceu[y + dy, x + dx] = ceu[y + dy, x + dx] * 0.4 + hexa("#c8d8ff") * 0.6
-        x, y = CRUZEIRO[4]
-        ceu[y, x] = hexa("#dce6ff")
+                for (dx, dy) in ((1, 0), (-1, 0)):
+                    ceu[y + dy, x + dx] = ceu[y + dy, x + dx] * 0.45 + hexa("#c8d8ff") * 0.55
+        for i, (x, y) in enumerate(AGLOMERADO):
+            ceu[y, x] = ceu[y, x] * 0.3 + hexa("#dce6ff") * (0.95 if i < 3 else 0.7)
+        ceu += (np.exp(-np.hypot(_XS - 332, _YS - 23) / 4) * 0.12)[:, :, None] * hexa("#a8b8ff")
         # a lua crescente, para onde a luneta aponta
         lx, ly = 250.0, 10.0
         for yy in range(int(ly) - 6, int(ly) + 7):
@@ -572,15 +583,7 @@ def parede() -> Camada:
                 c.p(x, y, LATAO[4])
     c.linha(mx_, my_, mx_ + 5, my_ + 6, FERRO[3])
     c.ret(mx_ + 5, my_ + 5, 2, 3, MADEIRA[5])
-    # Teias de aranha nos cantos altos.
-    for (tx, ty, sx) in ((2, y0 + 2, 1), (W - 3, y0 + 2, -1)):
-        for k in range(5):
-            a_ = k / 4 * math.pi / 2
-            c.linha(tx, ty, tx + sx * math.cos(a_) * 14, ty + math.sin(a_) * 14, "#c8c8d0", 0.25)
-        for rr in (4, 8, 12):
-            for k in range(12):
-                a_ = k / 11 * math.pi / 2
-                c.p(tx + sx * math.cos(a_) * rr, ty + math.sin(a_) * rr, "#c8c8d0", 0.25)
+    # Sem teias nos cantos altos (01/11/2026): eram resíduo de Halloween fora de época.
     # A torre é redonda: a parede escurece nas pontas.
     curva_ = 1 - 0.38 * ((_XS - 300) / 300) ** 2
     c.c[:, :, :3] *= curva_[:, :, None]
@@ -644,27 +647,23 @@ def chao() -> Camada:
         if y == ty1 - 1:
             for x in range(int(xa), int(xb) + 1, 2):
                 c.p(x, ty1, "#d8c8a0", 0.7)
-    # Rosa dos ventos de latão no chão (elipse achatada), em volta do pé da luneta.
-    cx, cy, rx, ry = 300.0, 146.0, 50.0, 9.0
+    # Base do pilar: uma laje redonda de pedra com o círculo graduado de latão (o azimute da luneta), em perspectiva.
+    # Só traços de medida na borda, sem estrela nem desenho no meio.
+    cx, cy, rx, ry = 300.0, 146.0, 30.0, 6.0
     for y in range(int(cy - ry) - 1, H):
         for x in range(int(cx - rx) - 1, int(cx + rx) + 2):
             dx, dy = (x + 0.5 - cx) / rx, (y + 0.5 - cy) / ry
             d = math.hypot(dx, dy)
             ang = math.atan2(dy, dx)
-            if 0.9 < d < 1.0:
+            if d < 0.9:
+                k = 0.42 + (hash01(x, y, 141) - 0.5) * 0.14 - dy * 0.08
+                c.p(x, y, tons_idx(PEDRA[::-1], k))
+            elif d < 1.0:
                 c.p(x, y, LATAO[3] if dy < 0 else LATAO[2])
-            elif 0.82 < d < 0.86:
-                c.p(x, y, LATAO[2], 0.8)
-            elif d < 0.82:
-                # pontas da rosa: 8 raios
-                for kk in range(8):
-                    a0 = kk * math.pi / 4
-                    da = abs((ang - a0 + math.pi) % (2 * math.pi) - math.pi)
-                    larg_p = (0.24 if kk % 2 == 0 else 0.16) * (1 - d / 0.82)
-                    if da < larg_p:
-                        cor = LATAO[4] if (ang - a0) % (2 * math.pi) < math.pi else LATAO[2]
-                        c.p(x, y, cor, 0.9 if kk % 2 == 0 else 0.7)
-                        break
+            elif d < 1.12 and dy > -0.2:
+                c.p(x, y, PEDRA[4])  # espessura da laje
+            if 0.78 < d < 0.9 and int((ang + math.pi) / math.tau * 72) % 3 == 0:
+                c.p(x, y, LATAO[4] if dy < 0 else LATAO[3], 0.85)
     return c
 
 
@@ -924,12 +923,30 @@ def luneta() -> tuple[Camada, Camada]:
     # O tubo de latão: mais largo na objetiva, com o para-orvalho e anéis.
     ex, ey = OCULAR
     ox, oy = OBJETIVA
-    faixas = [(0.02, 0.06, LATAO_ESC), (0.30, 0.335, LATAO_ESC), (0.55, 0.585, LATAO_ESC), (0.80, 0.835, LATAO_ESC)]
-    c.cilindro(ex, ey, ox, oy, 5.0, 6.2, LATAO, luz=-0.35, faixas=faixas)
+    # Três segmentos telescópicos de raios diferentes (o mais fino na ocular), cada um com o anel de reforço na boca.
     vx, vy = ox - ex, oy - ey
     comp = math.hypot(vx, vy)
     ux, uy = vx / comp, vy / comp
     nx, ny = -uy, ux
+    pt_ = lambda t: (ex + vx * t, ey + vy * t)
+    SEGMENTOS = ((0.0, 0.32, 3.6, 3.8), (0.30, 0.62, 4.8, 5.0), (0.60, 0.88, 6.0, 6.2))
+    for (ta, tb, ra, rb) in SEGMENTOS:
+        c.cilindro(*pt_(ta), *pt_(tb), ra, rb, LATAO, luz=-0.35, faixas=[(0.0, 0.07, LATAO_ESC), (0.47, 0.5, LATAO[1:5])])
+    for (t, r) in ((0.32, 4.6), (0.62, 5.9), (0.03, 4.3)):
+        c.cilindro(*pt_(t - 0.018), *pt_(t + 0.018), r, r, LATAO[2:7], luz=-0.4)
+    # Pátina: pontinhos de verdete nas reentrâncias e um risco de brilho curto no lado da luz.
+    for k in range(26):
+        t = 0.05 + 0.8 * hash01(k, 301)
+        lado = -0.9 + 1.8 * hash01(k, 302)
+        r = 3.6 if t < 0.31 else 4.8 if t < 0.61 else 6.0
+        if lado > 0.4:
+            px_, py_ = pt_(t)
+            c.p(px_ + nx * r * lado, py_ + ny * r * lado, "#4e7a62", 0.55)
+    for t in (0.12, 0.44, 0.74):
+        r = 3.6 if t < 0.31 else 4.8 if t < 0.61 else 6.0
+        px_, py_ = pt_(t)
+        for j in range(3):
+            c.p(px_ + ux * j + nx * -r * 0.55, py_ + uy * j + ny * -r * 0.55, "#fff6d0")
     # Para-orvalho (mais escuro, fosco) e o aro da objetiva com o vidro.
     sx0, sy0 = ex + vx * 0.86, ey + vy * 0.86
     c.cilindro(sx0, sy0, ox + ux * 1.5, oy + uy * 1.5, 7.2, 7.4, ["#4a2e12", "#6a461e", "#8a602c", "#a87a3c", "#c8964e", "#e0b468"], luz=-0.3,
@@ -972,39 +989,40 @@ def luneta() -> tuple[Camada, Camada]:
 # ─────────────────────────────── Direita: gráficos, astrolábio e a mesa ───────────────────────────────
 def graficos_parede() -> Camada:
     c = Camada()
-    # Gráfico de barras (acerto por área): eixos, barras hachuradas, aguadas de cor.
+    # Carta das órbitas: elipses concêntricas à tinta, um ponto em cada órbita e o rastro pontilhado de um cometa.
+    # Nada de barras ou números: a parede sugere observação, não os dados da pessoa.
     x0, y0, w, h = 390, 72, 40, 30
     papel(c, x0, y0, w, h, 811)
-    c.linha(x0 + 5, y0 + 4, x0 + 5, y0 + h - 5, TINTA)
-    c.linha(x0 + 5, y0 + h - 5, x0 + w - 3, y0 + h - 5, TINTA)
-    for k in range(4):
-        c.p(x0 + 4, y0 + 6 + k * 5, TINTA)
-    alturas = [12, 17, 9, 20, 14, 18]
-    aguadas = ["#b04a3a", "#3a6aa0", "#b08a2a", "#3a8a5a", "#8a4a8a", "#3a6aa0"]
-    for k, hh in enumerate(alturas):
-        bx = x0 + 8 + k * 5
-        for yy in range(y0 + h - 5 - hh, y0 + h - 5):
-            for xx in (bx, bx + 1, bx + 2):
-                if xx == bx or yy == y0 + h - 5 - hh or xx == bx + 2:
-                    c.p(xx, yy, TINTA)
-                else:
-                    c.p(xx, yy, aguadas[k], 0.75)
-    c.ret(x0 + 7, y0 + 3, 12, 1, TINTA, 0.5)  # título rabiscado
-    c.ret(x0 + 21, y0 + 3, 7, 1, TINTA, 0.35)
-    # Curva de evolução (linha subindo com pontos), num papel menor.
+    ocx, ocy = x0 + 19.5, y0 + 15.5
+    for k, (rx_, ry_) in enumerate(((6, 3.4), (11, 6.2), (16, 9.4))):
+        passos = int(rx_ * 9)
+        for i in range(passos):
+            a_ = i / passos * math.tau
+            if i % 2:
+                continue  # órbitas pontilhadas, finas: carta de observação, não alvo
+            c.p(ocx + math.cos(a_) * rx_, ocy + math.sin(a_) * ry_ - math.cos(a_) * rx_ * 0.12, TINTA, 0.6)
+        a_ = 0.9 + k * 1.7
+        qx, qy = ocx + math.cos(a_) * rx_, ocy + math.sin(a_) * ry_ - math.cos(a_) * rx_ * 0.12
+        c.ret(qx, qy, 2, 2, ("#3a6aa0", "#b04a3a", "#3a8a5a")[k])
+    c.elipse(ocx, ocy, 1.6, 1.6, "#c8902a")
+    for i in range(9):  # o cometa chegando de fora, em arco
+        t = i / 8
+        c.p(x0 + 4 + t * 12, y0 + 4 + t * t * 9, "#9a2a22", 0.35 + 0.5 * t)
+    # Carta do caminho de um planeta: o laço retrógrado entre as estrelas fixas, à tinta vermelha.
     x0, y0, w, h = 436, 70, 36, 25
     papel(c, x0, y0, w, h, 812)
-    c.linha(x0 + 4, y0 + 3, x0 + 4, y0 + h - 4, TINTA)
-    c.linha(x0 + 4, y0 + h - 4, x0 + w - 3, y0 + h - 4, TINTA)
-    pts = [(x0 + 6, y0 + 17), (x0 + 11, y0 + 15), (x0 + 15, y0 + 16), (x0 + 20, y0 + 11), (x0 + 25, y0 + 9), (x0 + 30, y0 + 5)]
-    for i in range(len(pts) - 1):
-        c.linha(*pts[i], *pts[i + 1], "#9a2a22")
-    for p_ in pts:
-        c.p(*p_, TINTA)
-        c.p(p_[0], p_[1] - 1, TINTA, 0.6)
-    for k in range(5):  # grade pontilhada
-        for xx in range(x0 + 6, x0 + w - 3, 2):
-            c.p(xx, y0 + 5 + k * 3, TINTA, 0.18)
+    for i in range(70):
+        t = i / 69
+        px_ = x0 + 4 + t * 28 + 3.2 * math.sin(t * math.tau * 1.0 + 1.2) * math.exp(-((t - 0.5) / 0.18) ** 2)
+        py_ = y0 + 17 - t * 8 - 4.2 * math.cos((t - 0.5) * math.tau * 1.4) * math.exp(-((t - 0.5) / 0.2) ** 2)
+        if i % 3 != 2:
+            c.p(px_, py_, "#9a2a22", 0.85)
+    for (sx, sy) in ((x0 + 7, y0 + 5), (x0 + 15, y0 + 20), (x0 + 24, y0 + 6), (x0 + 30, y0 + 19), (x0 + 11, y0 + 11), (x0 + 28, y0 + 12)):
+        c.p(sx, sy, TINTA)
+        c.p(sx + 1, sy, TINTA, 0.35)
+        c.p(sx, sy + 1, TINTA, 0.35)
+    for xx in range(x0 + 3, x0 + w - 3, 2):  # régua pontilhada da eclíptica
+        c.p(xx, y0 + h - 4, TINTA, 0.3)
     # Astrolábio plano pendurado num prego (entre o gráfico e a luneta, acima do mascote).
     ax_, ay_ = 362, 80
     c.linha(ax_, ay_ - 10, ax_, ay_ - 8, FERRO[3])
@@ -1116,10 +1134,14 @@ def mesa() -> tuple[Camada, Camada, Camada, np.ndarray]:
     o.linha(bx + 10, by, bx + 10, by + 7, "#b8a888")
     o.linha(bx - 1, by + 8, bx + 21, by + 8, "#5a2a1a")
     o.linha(bx - 1, by + 9, bx + 21, by + 9, "#3a1a10")
-    for k, hh in enumerate((3, 5, 2, 4)):
-        o.ret(bx + 2 + k * 2, by + 6 - hh, 1, hh, ("#b04a3a", "#3a6aa0", "#b08a2a", "#3a8a5a")[k])
-    o.linha(bx + 12, by + 5, bx + 15, by + 4, "#9a2a22")
-    o.linha(bx + 15, by + 4, bx + 19, by + 2, "#9a2a22")
+    # anotações de observação: um círculo de mira com pontinhos numa página, linhas de texto ilegível na outra
+    for k in range(16):
+        a_ = k / 16 * math.tau
+        o.p(bx + 5 + math.cos(a_) * 2.6, by + 4 + math.sin(a_) * 2.2, TINTA, 0.55)
+    o.p(bx + 5, by + 4, "#9a2a22")
+    o.p(bx + 3, by + 3, TINTA, 0.6)
+    for j in range(3):
+        o.linha(bx + 12, by + 2 + j * 1.6, bx + 19 - j * 2, by + 2 + j * 1.6, TINTA, 0.3)
     # Pilha de livros no canto.
     for k, (w, cor) in enumerate(((15, "#2e4a5e"), (13, "#6a2a26"), (14, "#4a3a2a"), (11, "#3a5a3a"))):
         yb = 110 - (k + 1) * 3
@@ -1429,6 +1451,10 @@ def montar(nome: str) -> Image.Image:
         mx_ = float((linhas.sum(0) * np.arange(W)).sum() / linhas.sum())
         luz += luz_pontual(mx_, 140, 95, 0.55)[:, :, None] * sol * 0.32
     rec = (0.16 + 0.84 * np.maximum(chao_m, objeto))[:, :, None]  # a parede está atrás do feixe: recebe menos
+    # O latão polido não difunde o feixe inteiro (a luz rasante vira brilho, não cor chapada): o tubo recebe metade,
+    # e o brilho especular entra depois só na aresta do lado da fenda.
+    lun_m = ampliar(np.maximum(L["lun_f"].c[:, :, 3], L["lun_t"].c[:, :, 3])[:, :, None])
+    rec = rec * (1 - 0.55 * lun_m)
     luz += feixe[:, :, None] * sol * 1.35 * rec
     # chamas
     if per["lamp"] > 0:
@@ -1441,7 +1467,7 @@ def montar(nome: str) -> Image.Image:
     if per["vela"] > 0:
         vx, vy = VELA
         luz += luz_de_chama(vx, vy, 62, 0.85, 5)[:, :, None] * hexa("#ff9a48") * 0.9 * per["vela"]
-        luz += luz_de_chama(VELA_ESQ[0], VELA_ESQ[1], 30, 0.9, 7)[:, :, None] * hexa("#ff8a40") * 0.5 * per["vela"]
+        luz += luz_de_chama(VELA_ESQ[0], VELA_ESQ[1], 46, 0.9, 7)[:, :, None] * hexa("#ff8a40") * 0.62 * per["vela"]
     if per["lamp"] > 0:
         perto = luz_pontual(LAMPARINA[0], LAMPARINA[1] + 6, 7, 1.6)[:, :, None]
         luz = luz * (1 - 0.6 * perto) + amb * 0.6 * perto
@@ -1479,6 +1505,15 @@ def montar(nome: str) -> Image.Image:
         img += luz_pontual(lx, ly - 4, 4, 2.4)[:, :, None] * hexa("#ffc880") * 0.3 * per["lamp"]
         # vidro da chaminé aceso por dentro
         img += luz_pontual(lx, 96, 3.2, 2.2)[:, :, None] * hexa("#ffd8a0") * 0.5 * per["lamp"]
+
+    # ── Contorno de luz na luneta: a aresta voltada para a fenda (cima e esquerda) pega o céu. À noite é o luar frio que
+    #    desenha a silhueta do tubo contra a parede; de dia, um fio de brilho do sol no latão.
+    tubo = np.maximum(L["lun_f"].c[:, :, 3], 0) > 0.5
+    aresta = tubo & ~np.roll(np.roll(tubo, 1, 0), 1, 1)
+    aresta &= _YS < 120
+    rim = desfocar(ampliar(aresta.astype(np.float32)[:, :, None]), 0.8)
+    cor_rim = hexa("#a8c4ff") * 0.75 if nome == "noite" else mistura(per["sol"], "#ffffff", 0.3) * 0.35
+    img += rim * cor_rim
 
     # ── Feixe volumétrico e poeira suspensa nele.
     vol = feixe * np.clip((_GYS / ESC - 52) / 22, 0, 1) * (1 - 0.35 * np.clip((_GYS / ESC - 62) / 90, 0, 1))
@@ -1530,10 +1565,13 @@ def main() -> None:
     for nome in pedidas:
         img = montar(nome)
         destino = PASTA / f"observatorio-{nome}.webp"
-        img.save(destino, quality=84, method=6)
+        img.save(destino, quality=88, method=6)
         menor = PASTA / f"observatorio-{nome}-960.webp"
-        img.resize((960, 320), Image.LANCZOS).save(menor, quality=84, method=6)
-        print(destino.name, destino.stat().st_size // 1024, "KB |", menor.name, menor.stat().st_size // 1024, "KB")
+        img.resize((960, 320), Image.LANCZOS).save(menor, quality=88, method=6)
+        # Celular: a mesma sala reenquadrada (sem esticar a de 960), da esfera armilar à lamparina, em 936 x 480.
+        movel = PASTA / f"observatorio-{nome}-movel.webp"
+        img.crop((MOVEL_X0 * ESC, 0, W * ESC, H * ESC)).save(movel, quality=82, method=6)
+        print(destino.name, destino.stat().st_size // 1024, "KB |", menor.name, menor.stat().st_size // 1024, "KB |", movel.name, movel.stat().st_size // 1024, "KB")
 
 
 if __name__ == "__main__":

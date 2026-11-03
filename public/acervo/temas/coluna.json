@@ -21021,7 +21021,10 @@
       "comentario": null,
       "comentariosComunidade": [],
       "referencias": [],
-      "area": "cirurgia-mao",
+      "area": "r4-enare",
+      "areasAdicionais": [
+        "cirurgia-mao"
+      ],
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
@@ -21069,7 +21072,10 @@
       "comentario": null,
       "comentariosComunidade": [],
       "referencias": [],
-      "area": "cirurgia-mao",
+      "area": "r4-enare",
+      "areasAdicionais": [
+        "cirurgia-mao"
+      ],
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
@@ -21117,7 +21123,10 @@
       "comentario": null,
       "comentariosComunidade": [],
       "referencias": [],
-      "area": "cirurgia-mao",
+      "area": "r4-enare",
+      "areasAdicionais": [
+        "cirurgia-mao"
+      ],
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
@@ -21165,7 +21174,10 @@
       "comentario": null,
       "comentariosComunidade": [],
       "referencias": [],
-      "area": "cirurgia-mao",
+      "area": "r4-enare",
+      "areasAdicionais": [
+        "cirurgia-mao"
+      ],
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
@@ -21213,7 +21225,10 @@
       "comentario": null,
       "comentariosComunidade": [],
       "referencias": [],
-      "area": "cirurgia-mao",
+      "area": "r4-enare",
+      "areasAdicionais": [
+        "cirurgia-mao"
+      ],
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
@@ -21261,7 +21276,10 @@
       "comentario": null,
       "comentariosComunidade": [],
       "referencias": [],
-      "area": "cirurgia-mao",
+      "area": "r4-enare",
+      "areasAdicionais": [
+        "cirurgia-mao"
+      ],
       "anulada": false,
       "figuraPendente": false,
       "revisado": false,
@@ -21885,6 +21903,1282 @@
       "origem": {
         "arquivo": "Campbell's Operative Orthopaedics 14th Edition (2021)",
         "pagina": 1743,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0578",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "No mecanismo de pinça da espondilólise de L5, durante a hiperextensão repetida, o arco posterior de L5 é comprimido entre as facetas",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "inferiores de L4 e superiores de S1."
+        },
+        {
+          "letra": "B",
+          "texto": "superiores de L5 e inferiores de L4."
+        },
+        {
+          "letra": "C",
+          "texto": "inferiores de L5 e superiores de S1."
+        },
+        {
+          "letra": "D",
+          "texto": "superiores de L4 e inferiores de L5."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1665,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0579",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na espondilolistese da criança e do adolescente, o aumento do escorregamento ocorre sobretudo entre",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "4 e 8 anos."
+        },
+        {
+          "letra": "B",
+          "texto": "9 e 15 anos."
+        },
+        {
+          "letra": "C",
+          "texto": "16 e 20 anos."
+        },
+        {
+          "letra": "D",
+          "texto": "20 e 30 anos."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1666,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0580",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na espondilólise aguda tratada com órtese, o exame de escolha para documentar a consolidação do defeito é a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "radiografia oblíqua bilateral."
+        },
+        {
+          "letra": "B",
+          "texto": "cintilografia com SPECT."
+        },
+        {
+          "letra": "C",
+          "texto": "tomografia computadorizada."
+        },
+        {
+          "letra": "D",
+          "texto": "ressonância magnética em T2."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1670,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0581",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na classificação da espondilólise pela ressonância magnética, edema ósseo da pars com corticais íntegras corresponde a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "fratura incompleta."
+        },
+        {
+          "letra": "B",
+          "texto": "fratura completa ativa."
+        },
+        {
+          "letra": "C",
+          "texto": "fratura completa sem edema."
+        },
+        {
+          "letra": "D",
+          "texto": "reação de estresse."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1669,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0582",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na espondilolistese grave do adolescente, o encurtamento dos isquiotibiais decorre principalmente da",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "compressão da raiz de L5."
+        },
+        {
+          "letra": "B",
+          "texto": "compressão da raiz de S1."
+        },
+        {
+          "letra": "C",
+          "texto": "retroversão da pelve."
+        },
+        {
+          "letra": "D",
+          "texto": "contratura dos paravertebrais."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": null,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0583",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na espondilolistese da criança, é fator de risco para progressão do escorregamento",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "sexo masculino na adolescência."
+        },
+        {
+          "letra": "B",
+          "texto": "lise unilateral de L5."
+        },
+        {
+          "letra": "C",
+          "texto": "escorregamento abaixo de 30%."
+        },
+        {
+          "letra": "D",
+          "texto": "diagnóstico antes do estirão."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1828,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0584",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "O reparo direto da pars interarticularis tem melhor indicação na espondilólise",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "de L5 com escorregamento de 30%."
+        },
+        {
+          "letra": "B",
+          "texto": "de L4 sem degeneração discal."
+        },
+        {
+          "letra": "C",
+          "texto": "com pars alongada e displásica."
+        },
+        {
+          "letra": "D",
+          "texto": "do adulto com artrose facetária."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1671,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0585",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "No reparo da espondilólise, a técnica de BUCK fixa o defeito da pars com",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "parafuso intralaminar."
+        },
+        {
+          "letra": "B",
+          "texto": "cerclagem do transverso ao espinhoso."
+        },
+        {
+          "letra": "C",
+          "texto": "parafuso pedicular e gancho laminar."
+        },
+        {
+          "letra": "D",
+          "texto": "haste em V sob o espinhoso."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1672,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0586",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Após artrodese in situ na espondilolistese de alto grau, o risco de síndrome da cauda equina é maior com ângulo de escorregamento acima de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "25 graus."
+        },
+        {
+          "letra": "B",
+          "texto": "35 graus."
+        },
+        {
+          "letra": "C",
+          "texto": "45 graus."
+        },
+        {
+          "letra": "D",
+          "texto": "55 graus."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1675,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0587",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na espondiloptose L5-S1, a técnica de GAINES consiste em",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "enxerto de fíbula transsacral."
+        },
+        {
+          "letra": "B",
+          "texto": "artrodese posterolateral in situ."
+        },
+        {
+          "letra": "C",
+          "texto": "redução por tração halofemoral."
+        },
+        {
+          "letra": "D",
+          "texto": "vertebrectomia de L5."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1683,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0588",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na espondilolistese degenerativa L4-L5, a característica anatômica que aumenta o risco de escorregamento é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "processo transverso curto de L5."
+        },
+        {
+          "letra": "B",
+          "texto": "orientação sagital das facetas."
+        },
+        {
+          "letra": "C",
+          "texto": "alongamento da pars de L4."
+        },
+        {
+          "letra": "D",
+          "texto": "orientação coronal das facetas."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1838,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0589",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na espondilolistese ístmica do adulto, processo transverso de L5 com área inferior a 2 cm² favorece a escolha de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "artrodese interssomática."
+        },
+        {
+          "letra": "B",
+          "texto": "artrodese posterolateral."
+        },
+        {
+          "letra": "C",
+          "texto": "reparo direto da pars."
+        },
+        {
+          "letra": "D",
+          "texto": "laminectomia de GILL."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1833,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0590",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na classificação CARDS da espondilolistese degenerativa, o tipo A corresponde a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "cifose segmentar em radiografia."
+        },
+        {
+          "letra": "B",
+          "texto": "colapso discal com osso em osso."
+        },
+        {
+          "letra": "C",
+          "texto": "translação menor que 5 mm."
+        },
+        {
+          "letra": "D",
+          "texto": "translação maior que 5 mm."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1841,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0591",
+      "tema": "Coluna",
+      "subtemas": [
+        "Espondilólise e espondilolistese"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "O defeito da pars interarticularis da espondilólise não é encontrado em",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "ginastas adolescentes."
+        },
+        {
+          "letra": "B",
+          "texto": "crianças de seis anos."
+        },
+        {
+          "letra": "C",
+          "texto": "recém-nascidos."
+        },
+        {
+          "letra": "D",
+          "texto": "adultos inuit."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Campbell's Operative Orthopaedics 15th Edition; Tachdjian's Pediatric Orthopaedics 6th Edition",
+        "pagina": 1665,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0592",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na escoliose idiopática, no ápice da curva, os processos espinhosos rodam em direção à",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "concavidade, e os corpos para a convexidade."
+        },
+        {
+          "letra": "B",
+          "texto": "convexidade, e os corpos para a concavidade."
+        },
+        {
+          "letra": "C",
+          "texto": "concavidade, junto com os corpos vertebrais."
+        },
+        {
+          "letra": "D",
+          "texto": "convexidade, junto com os corpos vertebrais."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 138,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0593",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Em adolescente com escoliose aparentemente idiopática, o padrão de curva que mais sugere siringomielia é a curva",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "torácica direita."
+        },
+        {
+          "letra": "B",
+          "texto": "torácica esquerda."
+        },
+        {
+          "letra": "C",
+          "texto": "lombar esquerda."
+        },
+        {
+          "letra": "D",
+          "texto": "toracolombar direita."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 140,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0594",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na triagem com o escoliômetro de BUNNELL, o limiar habitual de encaminhamento do adolescente não obeso é de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "3 graus."
+        },
+        {
+          "letra": "B",
+          "texto": "5 graus."
+        },
+        {
+          "letra": "C",
+          "texto": "7 graus."
+        },
+        {
+          "letra": "D",
+          "texto": "10 graus."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 137,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0595",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "No sinal de RISSER, a ossificação da apófise ilíaca progride no sentido",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "de medial para lateral."
+        },
+        {
+          "letra": "B",
+          "texto": "de posterior para anterior."
+        },
+        {
+          "letra": "C",
+          "texto": "do centro para as extremidades."
+        },
+        {
+          "letra": "D",
+          "texto": "de lateral para medial."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 133,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0596",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na escoliose idiopática do adolescente com RISSER 0 ou 1, a probabilidade de progressão de uma curva de 20 a 29 graus é de cerca de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "10%."
+        },
+        {
+          "letra": "B",
+          "texto": "22%."
+        },
+        {
+          "letra": "C",
+          "texto": "45%."
+        },
+        {
+          "letra": "D",
+          "texto": "68%."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 135,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0597",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na escoliose idiopática do adolescente com RISSER 0, o tempo mínimo diário recomendado de uso do colete é de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "10 horas."
+        },
+        {
+          "letra": "B",
+          "texto": "14 horas."
+        },
+        {
+          "letra": "C",
+          "texto": "18 horas."
+        },
+        {
+          "letra": "D",
+          "texto": "23 horas."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 148,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0598",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Os coletes noturnos de inclinação máxima, como o de CHARLESTON, são indicados principalmente nas curvas",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "torácicas altas."
+        },
+        {
+          "letra": "B",
+          "texto": "torácicas duplas."
+        },
+        {
+          "letra": "C",
+          "texto": "toracolombares."
+        },
+        {
+          "letra": "D",
+          "texto": "cervicotorácicas."
+        }
+      ],
+      "gabarito": "C",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 149,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0599",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na classificação de LENKE, a curva secundária é considerada estrutural quando, na radiografia em inclinação, mantém COBB de pelo menos",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "20 graus."
+        },
+        {
+          "letra": "B",
+          "texto": "25 graus."
+        },
+        {
+          "letra": "C",
+          "texto": "30 graus."
+        },
+        {
+          "letra": "D",
+          "texto": "35 graus."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 151,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0600",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na escoliose torácica idiopática, o espaço epidural entre o pedículo e a medula é menor no lado",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "côncavo, com menos de 1 mm."
+        },
+        {
+          "letra": "B",
+          "texto": "convexo, com menos de 1 mm."
+        },
+        {
+          "letra": "C",
+          "texto": "côncavo, com 3 a 5 mm."
+        },
+        {
+          "letra": "D",
+          "texto": "convexo, com 3 a 5 mm."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 167,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0601",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Diante de queda dos potenciais evocados motores durante a correção da escoliose, a pressão arterial média deve ser elevada acima de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "70 mmHg."
+        },
+        {
+          "letra": "B",
+          "texto": "80 mmHg."
+        },
+        {
+          "letra": "C",
+          "texto": "90 mmHg."
+        },
+        {
+          "letra": "D",
+          "texto": "100 mmHg."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 162,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0602",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Após artrodese posterior isolada em criança muito imatura, o fenômeno do virabrequim decorre do crescimento",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "dos elementos posteriores fundidos."
+        },
+        {
+          "letra": "B",
+          "texto": "das costelas do lado convexo."
+        },
+        {
+          "letra": "C",
+          "texto": "dos discos intervertebrais apicais."
+        },
+        {
+          "letra": "D",
+          "texto": "anterior dos corpos vertebrais."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 160,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0603",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na escoliose idiopática infantil progressiva, o gesso derrotativo seriado tem melhores resultados quando iniciado antes dos",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "12 meses."
+        },
+        {
+          "letra": "B",
+          "texto": "20 meses."
+        },
+        {
+          "letra": "C",
+          "texto": "36 meses."
+        },
+        {
+          "letra": "D",
+          "texto": "48 meses."
+        }
+      ],
+      "gabarito": "B",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 1526,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0604",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na radiografia panorâmica da escoliose, a coluna é considerada descompensada no plano coronal quando a distância de C7 ao centro da pelve passa de",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "2 cm."
+        },
+        {
+          "letra": "B",
+          "texto": "4 cm."
+        },
+        {
+          "letra": "C",
+          "texto": "6 cm."
+        },
+        {
+          "letra": "D",
+          "texto": "8 cm."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 145,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0605",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "No adolescente imaturo com curva torácica de 30 graus, o achado sagital que contraindica o colete é a",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "hipercifose torácica acentuada."
+        },
+        {
+          "letra": "B",
+          "texto": "lordose lombar acentuada."
+        },
+        {
+          "letra": "C",
+          "texto": "cifose toracolombar leve."
+        },
+        {
+          "letra": "D",
+          "texto": "hipocifose torácica acentuada."
+        }
+      ],
+      "gabarito": "D",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 148,
+        "numeroOriginal": null
+      }
+    },
+    {
+      "id": "coluna-0606",
+      "tema": "Coluna",
+      "subtemas": [
+        "Escoliose idiopática"
+      ],
+      "prova": null,
+      "simulado": true,
+      "ano": null,
+      "dificuldade": null,
+      "enunciado": "Na escoliose idiopática juvenil, o fator prognóstico mais associado à necessidade de artrodese é",
+      "imagens": [],
+      "alternativas": [
+        {
+          "letra": "A",
+          "texto": "o nível da vértebra apical."
+        },
+        {
+          "letra": "B",
+          "texto": "a diferença do ângulo costovertebral."
+        },
+        {
+          "letra": "C",
+          "texto": "o sexo da criança."
+        },
+        {
+          "letra": "D",
+          "texto": "a idade ao diagnóstico."
+        }
+      ],
+      "gabarito": "A",
+      "comentario": null,
+      "comentariosComunidade": [],
+      "referencias": [],
+      "anulada": false,
+      "figuraPendente": false,
+      "revisado": false,
+      "subtemasPendentes": false,
+      "origem": {
+        "arquivo": "Tachdjian's Pediatric Orthopaedics 6th Edition; Campbell's Operative Orthopaedics 15th Edition",
+        "pagina": 176,
         "numeroOriginal": null
       }
     }

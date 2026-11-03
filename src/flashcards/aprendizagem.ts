@@ -72,9 +72,23 @@ export interface EventoEstudo {
 }
 
 /**
+ * O que acontece com o flashcard em cada botão de autoavaliação, calculado com o mesmo agendamento que grava a
+ * resposta: o prazo muda com o degrau da escada (Hesitei: 3, 7, 21, 45 dias; Sabia: 10, 30, 90, 180), e depois do
+ * último degrau o flashcard sai da fila. Antes, os botões diziam sempre "3 dias" e "10 dias" (só o primeiro degrau).
+ */
+export function prazoDaAvaliacao(anterior: RegistroAprendizagem | undefined, avaliacao: 'errei' | 'hesitei' | 'sabia', agora = Date.now()): string {
+  if (avaliacao === 'errei') return 'volta hoje'
+  const r = proximoRegistro(anterior, true, agora, avaliacao === 'hesitei' ? 'duvida' : 'seguro')
+  if (r.proximaRevisao == null) return 'sai da fila: dominado'
+  const dias = Math.round((r.proximaRevisao - agora) / 86400000)
+  return dias <= 1 ? 'volta amanhã' : `volta em ${dias} dias`
+}
+
+/**
  * Registra uma resposta e devolve o registro novo, ou null se a chave já foi vista.
  * Regra do agendamento:
- *   - Estudo com autoavaliação: Errei = chute (volta hoje), Hesitei = dúvida (3 dias), Sabia = certeza (10 dias);
+ *   - Estudo com autoavaliação: Errei = chute (volta hoje), Hesitei = dúvida (3, 7, 21, 45 dias), Sabia = certeza
+ *     (10, 30, 90, 180 dias), conforme o degrau (prazoDaAvaliacao);
  *   - Cripta (resposta objetiva, sem perguntar confiança): acerto = certeza, acerto com pista = dúvida, erro volta hoje.
  */
 export function registrarEstudo(ev: EventoEstudo): RegistroAprendizagem | null {

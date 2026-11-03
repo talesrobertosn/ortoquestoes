@@ -11,7 +11,7 @@ const arquivo = join(pasta, 'p.mjs')
 try {
   await build({
     stdin: {
-      contents: `export * from './src/conta/perfilEstudo'\nexport * from './src/componentes/admin/sinais'\nexport { lerUrl, urlDe } from './src/componentes/admin/secoes'`,
+      contents: `export * from './src/conta/perfilEstudo'\nexport * from './src/componentes/admin/sinais'\nexport { lerUrl, urlDe } from './src/admin/rotas'`,
       resolveDir: process.cwd(), loader: 'ts',
     },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', logLevel: 'error',

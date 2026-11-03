@@ -24,6 +24,7 @@ try {
   assert.equal(m.STATUS_FORMATOS, m.STATUS_ASSINATURA)
   assert.deepEqual(Object.values(m.PLANOS), ['Mensal', 'Semestral', 'Anual'])
   assert.equal(m.rotuloPlano('anual'), 'Anual')
+  assert.equal(m.rotuloPlano('cortesia'), 'Cortesia', 'cortesia tem nome próprio, fora da lista de planos pagos')
   assert.equal(m.rotuloMeio('pix'), 'Pix')
   assert.equal(m.rotuloMeio('cartao'), 'Cartão')
   assert.equal(m.STATUS_ASSINATURA.vencida, 'Expirada')
@@ -45,13 +46,25 @@ try {
   assert.equal(s({ status: 'vencida', meio: 'pix', fim_periodo: dia(-40) }).rotulo, 'Expirada')
   // Cartão com o período vencido e ainda "ativa": esperando a cobrança nova.
   assert.equal(s({ status: 'ativa', meio: 'cartao', fim_periodo: dia(-1) }).chave, 'aguardando_renovacao')
-  for (const [status, rotulo] of [['pendente', 'Pendente'], ['reembolsada', 'Reembolsada'], ['falha_pagamento', 'Falha no pagamento'], ['pausada', 'Pausada']]) assert.equal(s({ status, meio: 'cartao' }).rotulo, rotulo)
+  for (const [status, rotulo] of [['pendente', 'Pendente'], ['reembolsada', 'Reembolsada'], ['pausada', 'Pausada']]) assert.equal(s({ status, meio: 'cartao' }).rotulo, rotulo)
   // A data certa no cartão da assinatura.
   assert.equal(m.proximaData({ id_usuario: 'x', plano: 'mensal', status: 'ativa', meio: 'cartao', fim_periodo: dia(10), proxima_cobranca: dia(10) }, agora).rotulo, 'Próxima cobrança')
   assert.equal(m.proximaData({ id_usuario: 'x', plano: 'mensal', status: 'ativa', meio: 'pix', cancelar_ao_fim: true, fim_periodo: dia(10) }, agora).rotulo, 'Acesso até')
   assert.equal(m.proximaData({ id_usuario: 'x', plano: 'mensal', status: 'vencida', meio: 'pix', fim_periodo: dia(-10) }, agora).rotulo, 'Acesso terminou em')
   // Antes, uma assinatura com falha ou vencida aparecia como "Próxima cobrança".
   assert.notEqual(m.proximaData({ id_usuario: 'x', plano: 'mensal', status: 'falha_pagamento', meio: 'cartao', fim_periodo: dia(-3) }, agora).rotulo, 'Próxima cobrança')
+  // Recusa ao assinar (nunca pagou) × renovação recusada (já pagou antes): nomes, tons e datas diferentes.
+  assert.equal(s({ status: 'falha_pagamento', meio: 'cartao' }).rotulo, 'Cartão recusado ao assinar')
+  assert.equal(s({ status: 'falha_pagamento', meio: 'cartao' }).tom, 'aviso')
+  assert.equal(m.proximaData({ id_usuario: 'x', plano: 'anual', status: 'falha_pagamento', meio: 'cartao', criada_em: dia(-30), fim_periodo: dia(-30) }, agora).rotulo, 'Tentou assinar em')
+  assert.equal(s({ status: 'falha_pagamento', meio: 'cartao', ultima_cobranca_em: dia(-40) }).rotulo, 'Renovação recusada')
+  assert.equal(s({ status: 'falha_pagamento', meio: 'cartao', ultima_cobranca_em: dia(-40) }).tom, 'ruim')
+  // Motivo da recusa em português (parte 36): conhecido, desconhecido e ausente.
+  assert.equal(m.motivoRecusa('cc_rejected_insufficient_amount').texto, 'Saldo ou limite insuficiente')
+  assert.match(m.motivoRecusa('cc_rejected_call_for_authorize').dica, /banco/)
+  assert.equal(m.motivoRecusa('cc_novo_codigo').texto, 'Recusado (cc_novo_codigo)')
+  assert.match(m.motivoRecusa(null).texto, /não registrado/)
+  assert.match(s({ status: 'falha_pagamento', meio: 'cartao', ultima_cobranca_em: dia(-40), motivo_falha: 'cc_rejected_high_risk' }).detalhe, /antifraude/)
 
   // Tipos de cobrança.
   assert.equal(m.rotuloTipoCobranca({ meio: 'pix', tipo: 'nova' }), 'Assinatura nova')

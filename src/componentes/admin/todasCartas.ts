@@ -17,8 +17,8 @@ export const GRUPOS: Array<{ id: GrupoCatalogo; rotulo: string; descricao: strin
   { id: 'convite', rotulo: 'Convites', descricao: 'Para quem não assina: o que o plano faz pela rotina, sem preço.' },
   { id: 'pessoal', rotulo: 'Pessoais', descricao: 'Escritas pelo administrador a partir da ficha, com a espinha nova em volta.' },
   { id: 'automatico', rotulo: 'Automáticos', descricao: 'Saem sozinhas: lembretes, Pix, resumos e marcos.' },
-  { id: 'novo', rotulo: 'Novos (17/10, sem SQL)', descricao: 'Os seis disparados por um acontecimento no site ou no pagamento.' },
-  { id: 'campanha', rotulo: 'Campanhas diárias (parte 31)', descricao: 'O banco escolhe quem recebe (candidatos_<tipo>) e o agendador manda, todo dia às 7h de Brasília, pela ação campanhas_diarias.' },
+  { id: 'novo', rotulo: 'Por acontecimento', descricao: 'Os seis que saem quando algo acontece no site ou no pagamento.' },
+  { id: 'campanha', rotulo: 'Campanhas diárias', descricao: 'O site escolhe quem recebe e manda sozinho, todo dia às 7h de Brasília.' },
 ]
 
 export interface Gatilho { quando: string; paraQuem: string }

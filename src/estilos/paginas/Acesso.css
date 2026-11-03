@@ -1,78 +1,54 @@
-/* Entrar e criar conta (refeita em 18/10/2026), na identidade da temporada pixel do Treinar.
-   Três peças: o topo com o céu e a cidade (frase sorteada e o cavaleiro em pé na cidade), o cartão do
-   formulário e uma folha de prova com uma questão real sorteada. Computador: topo e folha à esquerda,
-   formulário à direita. Celular: topo curto, formulário, e a folha depois dele. */
+/* Entrar e criar conta. Refeita em 18/10/2026; em 01/11/2026 passou para o papel claro do atlas (Tales: "Login mais
+   claro, formulário protagonista no celular, mascote fora dos campos, verde-noite de apoio").
+   Três peças: o cabeçalho claro (o mesmo de Treinar, com a frase sorteada) e o mascote de jaleco num quadrinho
+   verde-noite; a folha do formulário; e uma folha de prova com uma questão real sorteada. Computador: cabeçalho e
+   folha de prova à esquerda, formulário à direita. Celular: cabeçalho curto, formulário, e a folha de prova depois.
+   Peças comuns (.pagina-cabeca, .folha, .seletor, foco dos campos) em base.css, seção "Atlas". */
 
 .ac {
   --ac-mola: cubic-bezier(0.32, 0.72, 0, 1);
-  --ac-gutter: clamp(1.25rem, 3.4vw, 2.25rem);
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(21rem, 0.88fr);
   grid-template-areas: "vitrine cartao" "mostra cartao";
   grid-template-rows: auto 1fr;
-  gap: var(--e-5) var(--e-6);
+  gap: var(--e-6) var(--e-7);
   align-items: start;
   max-width: 72rem;
   margin: 0 auto;
-  padding-bottom: var(--e-6);
+  padding: var(--e-2) 0 var(--e-6);
 }
 
-/* ---------- Topo: céu, cidade e cavaleiro ---------- */
-.ac-vitrine {
-  --ac-pe: calc(var(--ac-gutter) + 1.75rem);
-  grid-area: vitrine;
-  position: relative; isolation: isolate; overflow: hidden;
-  display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: var(--e-4);
-  padding: var(--ac-gutter) var(--ac-gutter) var(--ac-pe);
-  border: 2px solid var(--px-tinta); border-radius: 6px;
-  background: var(--heroi); color: var(--sobre-heroi);
-  box-shadow: 5px 5px 0 var(--px-sombra);
-}
-.ac-vitrine__texto { display: grid; gap: var(--e-3); align-content: start; align-self: start; min-width: 0; }
-.ac-vitrine__texto .tr-heroi__selo { justify-self: start; margin: 0; }
-.ac-vitrine h1 {
-  margin: var(--e-1) 0 0; max-width: 17ch;
-  font-family: var(--fonte-marca); color: var(--sobre-heroi);
-  font-size: clamp(2.1rem, 4.2vw, 3rem); font-weight: 750; line-height: 1.02; letter-spacing: -0.035em;
-  text-wrap: balance;
-}
-.ac-vitrine__lide { margin: 0; max-width: 44ch; color: var(--sobre-heroi-2); line-height: 1.5; text-wrap: pretty; }
-.ac-provas { display: flex; flex-wrap: wrap; gap: 6px; margin: var(--e-1) 0 0; padding: 0; list-style: none; }
+/* ---------- Cabeçalho claro e o mascote no quadrinho verde-noite ---------- */
+.ac-vitrine { grid-area: vitrine; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: var(--e-5); }
+.ac-vitrine__texto { align-self: start; min-width: 0; }
+.ac-vitrine h1 { max-width: 17ch; }
+.ac-provas { display: flex; flex-wrap: wrap; gap: 6px; margin: var(--e-2) 0 0 !important; padding: 0; list-style: none; }
 .ac-provas li {
-  padding: 3px 8px; border-radius: 3px;
-  background: rgba(7, 35, 32, 0.5); box-shadow: inset 0 0 0 1px var(--heroi-traco);
-  color: var(--sobre-heroi); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.02em;
+  padding: 2px 10px; border: var(--borda); border-radius: var(--raio-pill); background: var(--superficie);
+  color: var(--texto-2); font-size: var(--meta); font-weight: 700; letter-spacing: 0.02em;
 }
-.ac-vitrine__gratis { margin: var(--e-2) 0 0; max-width: 46ch; color: var(--sobre-heroi-2); font-size: var(--corpo-menor); line-height: 1.45; }
+.ac-vitrine__gratis { margin-top: var(--e-2) !important; max-width: 46ch; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
 
-/* O cavaleiro tem coluna própria e pisa na linha da cidade: nunca fica sobre o texto. */
-.ac-vitrine__mascote { align-self: end; margin: 0 calc(var(--ac-gutter) * -0.4) calc(var(--ac-pe) * -1 + 6px) 0; line-height: 0; }
+/* O quadrinho: céu da vila em faixas e a linha da cidade (tokens --heroi), o mascote pisando nela. É a única peça
+   escura da página e a única ilustrada; fica ao lado do texto, nunca embaixo dele. */
+.ac-vitrine__mascote {
+  position: relative; display: grid; place-items: end center; width: 11rem; height: 12.5rem; padding: 0 0 var(--e-4);
+  border-radius: var(--raio-cartao); background: var(--heroi); background-size: 160px 21px, auto; line-height: 0;
+}
 .ac .mascote-acesso { display: block; position: relative; right: auto; bottom: auto; }
+.ac-mascote { display: block; width: 120px; filter: drop-shadow(0 4px 0 rgba(7, 35, 32, 0.45)); }
+/* O balão de fala (ao tocar) abre para a esquerda, sobre a página, sem cobrir campo nenhum. */
+.ac-mascote .mascote__balao { left: auto; right: 60%; transform: none; max-width: 14rem; }
+.ac-mascote .mascote__balao::after { left: auto; right: 0.75rem; }
 
-/* ---------- Cartão do formulário ---------- */
-.ac-cartao {
-  grid-area: cartao;
-  position: sticky; top: var(--e-5);
-  display: grid; gap: var(--e-4); align-content: start;
-  padding: clamp(1.25rem, 3vw, 2rem);
-  border: 2px solid var(--px-borda); border-radius: 6px;
-  background: var(--superficie);
-  box-shadow: 5px 5px 0 var(--px-sombra);
-}
+/* ---------- Folha do formulário ---------- */
+.ac-cartao { grid-area: cartao; position: sticky; top: var(--e-5); display: grid; gap: var(--e-4); align-content: start; padding: clamp(1.25rem, 3vw, 2rem); }
 .ac-cartao > * { margin: 0; }
 
-.ac-abas { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; padding: 4px; border-radius: 8px; background: var(--superficie-2); border: var(--borda); }
-.ac-aba {
-  min-height: 44px; border: 0; border-radius: 5px; background: none;
-  color: var(--texto-2); font: inherit; font-weight: 650; cursor: pointer;
-  transition: background-color 0.2s var(--ac-mola), color 0.2s var(--ac-mola), transform 0.2s var(--ac-mola);
-}
-.ac-aba:hover { color: var(--texto); }
-.ac-aba:active { transform: translateY(1px); }
-.ac-aba[aria-selected="true"] { background: var(--verdete); color: var(--sobre-destaque); box-shadow: 2px 2px 0 color-mix(in srgb, var(--verdete) 55%, #000); }
-.ac-aba:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; }
+.ac-abas { display: grid; grid-template-columns: 1fr 1fr; }
+.ac-abas.seletor > button { min-height: 44px; font-size: var(--corpo); }
 
-.ac-cabeca h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.6rem; letter-spacing: -0.025em; line-height: 1.15; }
+.ac-cabeca h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.5rem; letter-spacing: -0.025em; line-height: 1.15; }
 .ac-cabeca p { margin: var(--e-1) 0 0; color: var(--texto-2); text-wrap: pretty; }
 .ac-passo { display: flex; align-items: center; gap: var(--e-2); margin: 0 0 var(--e-3) !important; color: var(--texto) !important; font-size: var(--corpo-menor); font-weight: 700; }
 
@@ -83,147 +59,123 @@
 .ac-voltar { display: inline-flex; align-items: center; gap: var(--e-1); margin-bottom: var(--e-3); }
 .ac-link:hover, .ac-voltar:hover { text-decoration: underline; }
 .ac-link:disabled { color: var(--texto-2); cursor: default; text-decoration: none; }
-.ac-link:focus-visible, .ac-voltar:focus-visible { outline: 2px solid var(--verdete); outline-offset: 3px; border-radius: 2px; }
 
-.ac .botao-google { border-radius: 4px; }
+.ac .botao-google { border-radius: var(--raio-controle); }
 
 .ac-form .campo:not(.campo--checkbox) { display: grid; gap: 0.4rem; margin-bottom: 0; }
 .ac-form .campo { margin-bottom: 0; }
 .ac-form .campo__rotulo { margin: 0; color: var(--texto); font-weight: 650; }
 .ac-rotulo-senha { display: flex; justify-content: space-between; align-items: baseline; gap: var(--e-4); }
 
-/* Campos: ícone à esquerda, cantos retos e foco com sombra em degrau, como os selecionados do Treinar. */
+/* Campos: ícone à esquerda e o foco comum do atlas (borda e anel verdete). */
 .ac-entrada { position: relative; display: block; }
 .ac-entrada > svg { position: absolute; left: 0.9rem; top: 50%; transform: translateY(-50%); color: var(--texto-2); pointer-events: none; transition: color 0.2s var(--ac-mola); }
 .ac-entrada .entrada {
-  width: 100%; min-height: 50px; padding-left: 2.6rem; border-radius: 4px; background: var(--superficie-2);
+  width: 100%; min-height: 50px; padding-left: 2.6rem; border-radius: var(--raio-controle); background: var(--superficie-2);
   font-size: 1rem;
   transition: border-color 0.2s var(--ac-mola), box-shadow 0.2s var(--ac-mola), background-color 0.2s var(--ac-mola);
 }
-.ac-entrada .entrada:focus { outline: 0; background: var(--superficie); border-color: var(--verdete); box-shadow: 3px 3px 0 color-mix(in srgb, var(--verdete) 35%, transparent); }
+.ac-entrada .entrada:focus { background: var(--superficie); }
 .ac-entrada:focus-within > svg { color: var(--verdete); }
 .ac-entrada--senha .entrada { padding-right: 3rem; }
 .ac-olho {
   position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
   display: inline-grid; place-items: center; width: 44px; height: 44px;
-  border: 0; border-radius: 3px; background: none; color: var(--texto-2); cursor: pointer;
+  border: 0; border-radius: calc(var(--raio-controle) - 2px); background: none; color: var(--texto-2); cursor: pointer;
 }
 .ac-olho:hover { background: var(--superficie-2); color: var(--texto); }
-.ac-olho:focus-visible { outline: 2px solid var(--verdete); outline-offset: 0; }
 .ac-confere { display: inline-flex; align-items: center; gap: 0.35rem; font-size: var(--meta); font-weight: 650; }
-.ac-confere--ok { color: var(--acerto); }
-.ac-confere--nao { color: var(--erro); }
+.ac-confere--ok { color: var(--acerto-texto); }
+.ac-confere--nao { color: var(--erro-texto); }
 
-.ac-aceites { display: grid; gap: var(--e-3); padding: var(--e-3) var(--e-4); border: 2px dashed var(--px-borda); border-radius: 6px; font-size: var(--corpo-menor); line-height: 1.5; }
+.ac-aceites { display: grid; gap: var(--e-3); padding: var(--e-3) var(--e-4); border-radius: var(--raio-controle); background: var(--superficie-2); font-size: var(--corpo-menor); line-height: 1.5; }
 .ac-aceites a { color: var(--verdete); text-underline-offset: 3px; }
 
-/* Botão principal: placa cheia com sombra de jogo; a seta mora no próprio quadrinho. */
+/* Botão principal: o verdete do atlas, cheio, com a seta no próprio quadrinho. */
 .ac .botao.ac-enviar {
-  width: 100%; min-height: 54px; margin-top: var(--e-2); gap: var(--e-3);
-  border: 0; border-radius: 4px; background: var(--verdete); color: var(--sobre-destaque);
-  font-size: 1.05rem; font-weight: 700; filter: none;
-  box-shadow: 4px 4px 0 color-mix(in srgb, var(--verdete) 45%, #000);
-  transition: transform 0.2s var(--ac-mola), box-shadow 0.2s var(--ac-mola), background-color 0.2s var(--ac-mola);
+  width: 100%; min-height: 52px; margin-top: var(--e-2); gap: var(--e-3);
+  border-radius: var(--raio-controle); font-size: var(--corpo); font-weight: 700;
+  transition: background-color 0.2s var(--ac-mola), transform 0.2s var(--ac-mola);
 }
-.ac .botao.ac-enviar:hover:not(:disabled) { background: var(--verdete-tinta); transform: translate(-1px, -1px); box-shadow: 5px 5px 0 color-mix(in srgb, var(--verdete) 45%, #000); filter: none; }
-.ac .botao.ac-enviar:active:not(:disabled) { transform: translate(3px, 3px); box-shadow: 1px 1px 0 color-mix(in srgb, var(--verdete) 45%, #000); }
-.ac .botao.ac-enviar:disabled { box-shadow: none; }
-.ac .botao.ac-enviar:focus-visible { outline: 2px solid var(--texto); outline-offset: 3px; }
-.ac-enviar__seta { display: inline-grid; place-items: center; width: 2rem; height: 2rem; border-radius: 3px; background: rgba(255, 255, 255, 0.16); transition: transform 0.25s var(--ac-mola); }
+.ac .botao.ac-enviar:active:not(:disabled) { transform: translateY(1px); }
+.ac .botao.ac-enviar:focus-visible { outline: 2px solid var(--foco); outline-offset: 3px; }
+.ac-enviar__seta { display: inline-grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 6px; background: rgba(255, 255, 255, 0.16); transition: transform 0.25s var(--ac-mola); }
 :root[data-tema="escuro"] .ac-enviar__seta { background: rgba(0, 0, 0, 0.14); }
 .ac .botao.ac-enviar:hover .ac-enviar__seta { transform: translateX(3px); }
 .ac .botao.ac-enviar svg { transform: none; }
 
 .ac-acoes-perfil { display: grid; gap: var(--e-2); }
-.ac-acoes-perfil .botao { width: 100%; min-height: 48px; border-radius: 4px; }
+.ac-acoes-perfil .botao { width: 100%; min-height: 48px; }
 .ac-acoes-perfil .botao.ac-enviar { margin-top: 0; }
 
 .ac-alternativa { color: var(--texto-2); font-size: var(--corpo-menor); text-align: center; }
 .ac-nota { margin: 0; color: var(--texto-2); font-size: var(--meta); line-height: 1.5; }
-.ac-seguranca { display: flex; align-items: flex-start; gap: var(--e-2); padding-top: var(--e-4); border-top: 2px dashed var(--px-borda); color: var(--texto-2); font-size: var(--meta); line-height: 1.45; }
+.ac-seguranca { display: flex; align-items: flex-start; gap: var(--e-2); padding-top: var(--e-4); border-top: var(--borda); color: var(--texto-2); font-size: var(--meta); line-height: 1.45; }
 .ac-seguranca svg { flex: none; margin-top: 0.15rem; color: var(--acerto); }
 
 /* ---------- Folha de prova e o que a conta guarda ---------- */
-.ac-mostra { grid-area: mostra; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--e-5); align-items: start; }
-.ac-folha {
-  margin: 0; display: grid; gap: var(--e-3);
-  padding: var(--e-4) var(--e-4) var(--e-3);
-  border: 2px solid var(--px-borda); border-radius: 6px; background: var(--superficie);
-  box-shadow: 5px 5px 0 var(--px-sombra);
-  rotate: -0.8deg;
-}
+.ac-mostra { grid-area: mostra; display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--e-6); align-items: start; }
+.ac-folha { margin: 0; display: grid; gap: var(--e-3); padding: var(--e-5) var(--e-5) var(--e-4); }
 .ac-folha__prova { display: flex; align-items: center; justify-content: space-between; gap: var(--e-2); margin: 0; }
 .ac-folha__prova > span:first-child { font-family: var(--fonte-pixel-titulo); font-size: 1.45rem; line-height: 1; letter-spacing: 0.02em; color: var(--verdete); font-variant-numeric: tabular-nums; }
-.ac-folha__caiu { display: inline-flex; align-items: center; gap: 0.3rem; padding: 2px 8px; border-radius: 3px; background: var(--ouro-veu); color: var(--ouro-texto); font-size: var(--meta); font-weight: 750; }
+.ac-folha__caiu { display: inline-flex; align-items: center; gap: 0.3rem; padding: 2px 10px; border-radius: var(--raio-pill); background: var(--ouro-veu); color: var(--ouro-texto); font-size: var(--meta); font-weight: 750; }
 .ac-folha__enunciado { margin: 0; font-weight: 650; line-height: 1.45; text-wrap: pretty; }
 .ac-folha__alternativas { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
 .ac-folha__alternativas li {
   display: grid; grid-template-columns: 1.75rem minmax(0, 1fr) auto; align-items: center; gap: var(--e-2);
-  padding: 5px 8px 5px 5px; border: 2px solid var(--traco); border-radius: 4px; font-size: var(--corpo-menor);
+  padding: 6px 10px 6px 6px; border: var(--borda); border-radius: var(--raio-controle); font-size: var(--corpo-menor);
 }
-.ac-folha__alternativas b { display: grid; place-items: center; width: 1.75rem; height: 1.75rem; background: var(--superficie-2); font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.2rem; line-height: 1; }
-.ac-folha__alternativas li.ac-folha__certa { border-color: var(--verdete); background: var(--verdete-veu); font-weight: 700; box-shadow: 3px 3px 0 color-mix(in srgb, var(--verdete) 35%, transparent); }
+.ac-folha__alternativas b { display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border-radius: 6px; background: var(--superficie-2); font-family: var(--fonte-pixel-titulo); font-weight: 400; font-size: 1.2rem; line-height: 1; }
+.ac-folha__alternativas li.ac-folha__certa { border-color: var(--verdete); background: var(--verdete-veu); font-weight: 700; }
 .ac-folha__certa b { background: var(--verdete); color: var(--sobre-destaque); }
 .ac-folha__certa svg { color: var(--acerto); }
-.ac-folha figcaption { display: flex; align-items: flex-start; gap: 0.4rem; padding-top: var(--e-2); border-top: 2px dashed var(--px-borda); color: var(--texto-2); font-size: var(--meta); line-height: 1.4; }
+.ac-folha figcaption { display: flex; align-items: flex-start; gap: 0.4rem; padding-top: var(--e-3); border-top: var(--borda); color: var(--texto-2); font-size: var(--meta); line-height: 1.4; }
 .ac-folha figcaption svg { flex: none; margin-top: 0.1rem; }
 
 .ac-guarda { display: grid; gap: var(--e-3); padding-top: var(--e-2); }
 .ac-guarda h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.2rem; letter-spacing: -0.02em; }
 .ac-beneficios { display: grid; gap: var(--e-3); margin: 0; padding: 0; list-style: none; }
 .ac-beneficios li { display: flex; align-items: center; gap: var(--e-3); font-weight: 600; line-height: 1.3; }
-.ac-beneficios svg { flex: none; box-sizing: content-box; padding: 7px; background: var(--px-ouro); color: var(--px-tinta); box-shadow: 0 0 0 2px var(--px-tinta), 2px 2px 0 2px var(--px-ouro-sombra); margin: 2px 4px 4px 2px; }
+.ac-beneficios svg { flex: none; box-sizing: content-box; padding: 9px; border-radius: var(--raio-controle); background: var(--verdete-veu); color: var(--verdete); }
 .ac-emblemas { display: flex; flex-wrap: wrap; gap: var(--e-2); }
 .ac-emblemas img { image-rendering: pixelated; transition: transform 0.3s var(--ac-mola); }
 .ac-emblemas img:hover { transform: translateY(-3px); }
 
-/* ---------- Entrada em cascata ----------
-   Só transform e opacity; a inclinação da folha usa a propriedade rotate, à parte, para a mesma animação
-   valer no computador e no celular. A frase de apoio e as provas (que somem no celular) entram paradas. */
+/* ---------- Entrada em cascata (só transform e opacity) ---------- */
 @media (prefers-reduced-motion: no-preference) {
-  .ac-vitrine__texto > .tr-heroi__selo, .ac-vitrine h1, .ac-vitrine__gratis, .ac-cartao, .ac-folha, .ac-guarda { animation: ac-sobe 0.7s var(--ac-mola) both; }
-  .ac-vitrine h1 { animation-delay: 70ms; }
-  .ac-cartao { animation-delay: 110ms; }
-  .ac-vitrine__gratis { animation-delay: 160ms; }
+  .ac-vitrine h1, .ac-vitrine__gratis, .ac-cartao, .ac-folha, .ac-guarda { animation: ac-sobe 0.7s var(--ac-mola) both; }
+  .ac-vitrine h1 { animation-delay: 40ms; }
+  .ac-cartao { animation-delay: 90ms; }
+  .ac-vitrine__gratis { animation-delay: 140ms; }
   .ac-folha { animation-delay: 220ms; }
   .ac-guarda { animation-delay: 300ms; }
 }
-@keyframes ac-sobe { from { opacity: 0; transform: translateY(18px); } }
+@keyframes ac-sobe { from { opacity: 0; transform: translateY(14px); } }
 
-/* ---------- Tablet: uma coluna, formulário logo depois do topo ---------- */
+/* ---------- Tablet: uma coluna, formulário logo depois do cabeçalho ---------- */
 @media (max-width: 63.99rem) {
-  .ac { grid-template-columns: minmax(0, 1fr); grid-template-areas: "vitrine" "cartao" "mostra"; grid-template-rows: none; max-width: 42rem; }
+  .ac { grid-template-columns: minmax(0, 1fr); grid-template-areas: "vitrine" "cartao" "mostra"; grid-template-rows: none; max-width: 42rem; gap: var(--e-5); }
   .ac-cartao { position: static; }
 }
 
-/* ---------- Celular: topo curto, o formulário acima da dobra, a folha depois ---------- */
+/* ---------- Celular: o formulário é o protagonista ----------
+   Cabeçalho em duas linhas com o mascote pequeno ao lado do título; a frase longa, as provas e a trilha saem
+   (voltam na folha de prova, logo abaixo do formulário). */
 @media (max-width: 40rem) {
-  .ac { --ac-gutter: 1.1rem; gap: var(--e-4); }
-  .ac-vitrine { --ac-pe: 2.1rem; gap: var(--e-2); }
-  /* A frase ocupa a largura toda; só o texto de baixo divide a linha com o cavaleiro. */
-  .ac-vitrine__texto { display: contents; }
-  .ac-vitrine__texto .tr-heroi__selo, .ac-vitrine h1 { grid-column: 1 / -1; }
-  .ac-vitrine__gratis { grid-column: 1; grid-row: 3; align-self: center; }
-  .ac-vitrine__mascote { grid-column: 2; grid-row: 3; }
-  .ac-vitrine h1 { max-width: none; font-size: 1.6rem; line-height: 1.08; letter-spacing: -0.03em; }
-  .ac-vitrine__lide, .ac-provas { display: none; }
-  .ac-vitrine__gratis { margin: 0; font-size: var(--meta); }
-  .ac-vitrine__mascote { margin-right: -0.5rem; }
-  .ac-cartao { padding: var(--e-4); box-shadow: 4px 4px 0 var(--px-sombra); }
-  .ac-cabeca h2 { font-size: 1.4rem; }
-  .ac-mostra { grid-template-columns: minmax(0, 1fr); }
-  .ac-folha { rotate: none; }
-}
-
-/* O mascote de jaleco (31/10/2026) no lugar do cavaleiro: pisa na linha da cidade, a 1,5x no computador e menor no
-   celular, sempre na coluna dele. O balão de fala (ao tocar) abre para a esquerda, sobre o painel, sem sair dele. */
-.ac-mascote { display: block; width: 144px; filter: drop-shadow(0 4px 0 rgba(7, 35, 32, 0.45)); }
-.ac-vitrine__mascote { margin-bottom: calc(var(--ac-pe) * -1 + 2px); }
-.ac-mascote .mascote__balao { left: auto; right: 60%; transform: none; max-width: 14rem; }
-.ac-mascote .mascote__balao::after { left: auto; right: 0.75rem; }
-@media (max-width: 40rem) {
-  .ac-mascote { width: 84px; }
+  .ac { gap: var(--e-4); padding-top: 0; }
+  .ac-vitrine { grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: var(--e-3); }
+  .ac-vitrine h1 { max-width: none; font-size: 1.55rem; line-height: 1.1; letter-spacing: -0.03em; }
+  .ac-vitrine__lide, .ac-provas, .pagina-cabeca__trilha { display: none; }
+  .ac-vitrine__gratis { margin-top: var(--e-1) !important; font-size: var(--meta); }
+  .ac-vitrine__mascote { width: 5.25rem; height: 6.25rem; padding-bottom: var(--e-2); border-radius: var(--raio-controle); background-size: 120px 16px, auto; }
+  .ac-mascote { width: 64px; }
   .ac-mascote .mascote__balao { max-width: 11rem; font-size: 0.75rem; }
-  /* No celular o formulário vem logo: o selo some e o topo fica mais baixo. */
-  .ac-vitrine__texto .tr-heroi__selo { display: none; }
+  .ac-cartao { padding: var(--e-4); }
+  .ac-cabeca h2 { font-size: 1.3rem; }
+  .ac-mostra { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 22rem) {
+  .ac-vitrine h1 { font-size: 1.35rem; }
+  .ac-vitrine__mascote { width: 4.5rem; height: 5.5rem; }
+  .ac-mascote { width: 54px; }
 }

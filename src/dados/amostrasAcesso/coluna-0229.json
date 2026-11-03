@@ -1,0 +1,34 @@
+{
+  "id": "coluna-0229",
+  "origem": "TEPOP 2024",
+  "prova": "TEPOP",
+  "simulado": false,
+  "tema": "Coluna",
+  "temaSlug": "coluna",
+  "subtema": "Exame neurológico e radiculopatias",
+  "enunciado": "A síndrome de GUILLAIN-BARRÉ é uma doença rara com início agudo caracterizada por paralisia flácida",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "ascendente e arreflexia.",
+      "porque": "A fraqueza começa nas pernas e sobe, e como o problema está nos nervos periféricos, os reflexos desaparecem."
+    },
+    {
+      "letra": "B",
+      "texto": "descendente e arreflexia.",
+      "porque": "Paralisia descendente, começando pelos nervos da cabeça, é o padrão do botulismo, não do Guillain-Barré."
+    },
+    {
+      "letra": "C",
+      "texto": "ascendente e hiperreflexia.",
+      "porque": "A direção está certa, mas reflexos exaltados indicam lesão do neurônio motor superior, como na compressão da medula. No Guillain-Barré eles somem."
+    },
+    {
+      "letra": "D",
+      "texto": "descendente e hiperreflexia.",
+      "porque": "Erra os dois pontos: a paralisia sobe, e os reflexos estão abolidos, não aumentados."
+    }
+  ],
+  "gabarito": "A"
+}

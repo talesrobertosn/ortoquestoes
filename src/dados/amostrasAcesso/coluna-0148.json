@@ -1,0 +1,34 @@
+{
+  "id": "coluna-0148",
+  "origem": "SBOT-SP",
+  "prova": "SBOT-SP",
+  "simulado": false,
+  "tema": "Coluna",
+  "temaSlug": "coluna",
+  "subtema": "Lombalgia",
+  "enunciado": "Qual das situações abaixo é indicação para realização de raio-x em paciente com dor lombar?",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "Idade>40anos",
+      "porque": "O corte de idade é 50 anos. Acima dos 50 cresce a chance de câncer e de fratura osteoporótica; 40 anos, sozinho, não indica radiografia."
+    },
+    {
+      "letra": "B",
+      "texto": "Pratica esportiva de impacto",
+      "porque": "Esporte de impacto não é bandeira vermelha. No adolescente com dor à extensão, ele levanta a suspeita de espondilólise, mas por si só não indica imagem na dor lombar comum."
+    },
+    {
+      "letra": "C",
+      "texto": "Uso de corticosteróides",
+      "porque": "O corticoide crônico enfraquece o osso e reduz a imunidade, aumentando o risco de fratura vertebral por insuficiência e de infecção."
+    },
+    {
+      "letra": "D",
+      "texto": "Consulta pelo mesmo problema <3 meses.",
+      "porque": "O prazo citado é de menos de 30 dias. O retorno precoce pela mesma dor é considerado quando ocorre em menos de um mês; três meses não é o critério usado."
+    }
+  ],
+  "gabarito": "C"
+}

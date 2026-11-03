@@ -19,6 +19,8 @@ import { FLASHCARDS_LIBERADO, recurso } from '../config'
 import { CHAVE_REGISTROS, type RegistroFlashcard } from '../flashcards/progresso'
 import { CalendarioRevisao } from './RevisaoCalendario'
 import { corDaArea } from '../dados/coresAreas'
+import { TopoVila } from '../componentes/vila/TopoVila'
+import { CENA_ESTUFA, DICAS_REVISAO } from '../componentes/vila/cenas'
 import '../estilos/paginas/Revisao.css'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
@@ -177,52 +179,65 @@ export function Revisao() {
         </button>)}
       </div>
     </nav>}
-    <section className={'rvx-heroi' + (zerado ? ' rvx-heroi--zerado' : '')}>
-      <div className="rvx-heroi__principal">
-        <p className="rvx-heroi__data"><Icone nome="calendario" tamanho={15} /> {capitalizar(FORMATO_HOJE.format(hoje))}</p>
-        {hojeTotal ? <>
-          <h1 className="rvx-heroi__titulo"><span className="numerico">{hojeTotal}</span> {nomeArea ? `de ${nomeArea.toLowerCase()} ` : ''}para hoje <span className="rvx-heroi__tempo">· ~{minutosPara(hojeTotal)} min</span></h1>
-          <p className="rvx-heroi__texto">{textoApoio}</p>
-          <div className="rvx-heroi__acoes">
-            <button type="button" className="botao rvx-comecar" onClick={() => iniciarIds(idsHoje)}>
+    <TopoVila cena={CENA_ESTUFA} rotulo="rvx-titulo" dicas={DICAS_REVISAO} className={'rvx-heroi' + (zerado ? ' rvx-heroi--zerado' : '')}
+      cabeca={<>
+        <p className="vl__selo"><Icone nome="calendario" tamanho={13} /> {capitalizar(FORMATO_HOJE.format(hoje))}</p>
+        {hojeTotal
+          ? <h1 id="rvx-titulo" className="rvx-heroi__titulo"><span className="numerico">{hojeTotal}</span> {nomeArea ? `de ${nomeArea.toLowerCase()} ` : ''}para hoje <span className="rvx-heroi__tempo">· ~{minutosPara(hojeTotal)} min</span></h1>
+          : zerado
+            ? <div className="rvx-recompensa">
+              <img className="rvx-recompensa__arte" src={recurso('emblemas/fila-7.png')} alt="" width={88} height={88} draggable={false} />
+              <h1 id="rvx-titulo" className="rvx-heroi__titulo">Revisão de hoje zerada</h1>
+            </div>
+            : <h1 id="rvx-titulo" className="rvx-heroi__titulo">{folgaHoje ? 'Hoje é dia de folga' : nomeArea ? `${nomeArea}: tudo em dia` : 'Tudo em dia por aqui'}</h1>}
+      </>}
+      texto={<>
+        <p>{textoApoio}</p>
+        <div className="vl-acoes">
+          {hojeTotal ? <>
+            <button type="button" className="vl-acao cristal rvx-comecar" onClick={() => iniciarIds(idsHoje)}>
               <Icone nome="raio" tamanho={20} />
               <span><strong>Começar revisão</strong><small>{questoes(hojeTotal)} · ~{minutosPara(hojeTotal)} min</small></span>
             </button>
-            {hojeTotal > curta && <button type="button" className="botao rvx-curta" onClick={() => iniciarIds(idsHoje.slice(0, curta))}>
-              <Icone nome="relogio" tamanho={16} /> Só 5 minutos <small>({curta})</small>
+            {hojeTotal > curta && <button type="button" className="vl-vidro rvx-curta" onClick={() => iniciarIds(idsHoje.slice(0, curta))}>
+              <Icone nome="relogio" tamanho={16} /> Só 5 minutos <small>{curta}</small>
             </button>}
-          </div>
-        </> : zerado ? <>
-          <div className="rvx-recompensa">
-            <img className="rvx-recompensa__arte" src={recurso('emblemas/fila-7.png')} alt="" width={88} height={88} draggable={false} />
-            <div>
-              <h1 className="rvx-heroi__titulo">Revisão de hoje zerada</h1>
-              <p className="rvx-heroi__texto">{textoApoio}</p>
-            </div>
-          </div>
-          <div className="rvx-heroi__acoes">
-            {proximoDia && <button type="button" className="botao rvx-curta" onClick={() => iniciarIds(proximoDia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>
-              <Icone nome="direita" tamanho={16} /> Adiantar {Math.min(REVISOES_CINCO_MINUTOS, proximoDia.ids.length)} de {rotuloDia(proximoDia.inicio)}
+          </> : zerado ? <>
+            {proximoDia && <button type="button" className="vl-acao cristal rvx-comecar" onClick={() => iniciarIds(proximoDia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>
+              <Icone nome="direita" tamanho={20} />
+              <span><strong>Adiantar {Math.min(REVISOES_CINCO_MINUTOS, proximoDia.ids.length)}</strong><small>de {rotuloDia(proximoDia.inicio)}</small></span>
             </button>}
-            <a className="botao rvx-curta" href={href('/treinar')}>Treinar questões novas</a>
-          </div>
-        </> : <>
-          <h1 className="rvx-heroi__titulo">{folgaHoje ? 'Hoje é dia de folga' : nomeArea ? `${nomeArea}: tudo em dia` : 'Tudo em dia por aqui'}</h1>
-          <p className="rvx-heroi__texto">{textoApoio}</p>
-          <div className="rvx-heroi__acoes">
-            <a className="botao rvx-comecar" href={href('/treinar')}><Icone nome="alvo" tamanho={20} /><span><strong>Treinar questões novas</strong><small>As que você errar voltam aqui no dia certo</small></span></a>
-            {proximoDia && <button type="button" className="botao rvx-curta" onClick={() => iniciarIds(proximoDia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>Adiantar {Math.min(REVISOES_CINCO_MINUTOS, proximoDia.ids.length)} de {rotuloDia(proximoDia.inicio)}</button>}
-          </div>
-        </>}
-      </div>
-      <div className="rvx-heroi__lado">
-        {totalDia > 0 && <Anel feitas={feitasHoje} total={totalDia} />}
-        <div className={'rvx-chama' + (sequencia.atual ? '' : ' rvx-chama--apagada')} title={`O dia conta com ${REVISOES_DIA_SEQUENCIA} revisões ou com a fila zerada. Folgas do ritmo não quebram.`}>
-          <Icone nome="fogo" tamanho={20} />
-          <span><b className="numerico">{sequencia.atual}</b> {sequencia.atual === 1 ? 'dia' : 'dias'} revisando{sequencia.atual && !sequencia.hojeConta && !folgaHoje ? <small>Revise hoje para não perder</small> : sequencia.hojeConta ? <small>Hoje já conta</small> : <small>Comece a sua sequência hoje</small>}</span>
+            <a className="vl-vidro rvx-curta" href={href('/treinar')}>Treinar questões novas</a>
+          </> : <>
+            <a className="vl-acao cristal rvx-comecar" href={href('/treinar')}><Icone nome="alvo" tamanho={20} /><span><strong>Treinar questões novas</strong><small>As que você errar voltam aqui no dia certo</small></span></a>
+            {proximoDia && <button type="button" className="vl-vidro rvx-curta" onClick={() => iniciarIds(proximoDia.ids.slice(0, REVISOES_CINCO_MINUTOS))}>Adiantar {Math.min(REVISOES_CINCO_MINUTOS, proximoDia.ids.length)} de {rotuloDia(proximoDia.inicio)}</button>}
+          </>}
         </div>
-      </div>
-    </section>
+      </>}
+      bancada={
+        <dl className="vl-placas">
+          <div className="vl-placa rvx-placa-hoje">
+            <dt><Icone nome="certo" tamanho={13} /> Hoje</dt>
+            <dd>{totalDia > 0
+              ? <><Anel feitas={feitasHoje} total={totalDia} /><span className="vl-placa__apoio">{feitasHoje === totalDia ? 'tudo feito' : `faltam ${totalDia - feitasHoje}`}</span></>
+              : <><span className="vl-placa__valor">0</span><span className="vl-placa__apoio">{folgaHoje ? 'dia de folga no seu ritmo' : 'nada vence hoje'}</span></>}</dd>
+          </div>
+          <div className={'vl-placa rvx-chama' + (sequencia.atual ? '' : ' rvx-chama--apagada')} title={`O dia conta com ${REVISOES_DIA_SEQUENCIA} revisões ou com a fila zerada. Folgas do ritmo não quebram.`}>
+            <dt><Icone nome="fogo" tamanho={13} /> Sequência</dt>
+            <dd>
+              <span className="vl-placa__valor">{sequencia.atual}<small>{sequencia.atual === 1 ? ' dia' : ' dias'}</small></span>
+              <span className="vl-placa__apoio">{sequencia.atual && !sequencia.hojeConta && !folgaHoje ? 'revise hoje para não perder' : sequencia.hojeConta ? 'hoje já conta' : 'comece a sua sequência hoje'}</span>
+            </dd>
+          </div>
+          <div className="vl-placa">
+            <dt><Icone nome="calendario" tamanho={13} /> Pela frente</dt>
+            <dd>
+              <span className="vl-placa__valor">{pendentes.toLocaleString('pt-BR')}</span>
+              <span className="vl-placa__apoio">{proximoDia ? `próximas em ${rotuloDia(proximoDia.inicio)}` : 'no calendário de revisão'}</span>
+            </dd>
+          </div>
+        </dl>
+      } />
 
     {(excedente > 0 || (ritmo.limite === null && vencidasHoje > 30)) && <section className="cartao cartao__corpo rvx-resgate">
       <div className="rvx-resgate__cabeca">

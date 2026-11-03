@@ -25,6 +25,7 @@ export const carregadores = {
   QuestaoDireta: () => import('../paginas/QuestaoDireta'),
   Apoio: () => import('../paginas/Apoio'),
   Favoritas: () => import('../paginas/Favoritas'),
+  Bichos: () => import('../paginas/Bichos'),
   CadernoErros: () => import('../paginas/CadernoErros'),
   Progresso: () => import('../paginas/Progresso'),
   Revisao: () => import('../paginas/Revisao'),
@@ -55,7 +56,7 @@ type Pagina = keyof typeof carregadores
 const PAGINA_DA_ROTA: Record<string, Pagina> = {
   '': 'Inicio', treinar: 'Treinar', sessao: 'Sessao', resumo: 'Resumo', questao: 'QuestaoDireta',
   sobre: 'Apoio', projeto: 'Apoio', contato: 'Apoio', dados: 'Apoio',
-  favoritas: 'Favoritas', erros: 'CadernoErros', progresso: 'Progresso', revisao: 'Revisao',
+  favoritas: 'Favoritas', bichos: 'Bichos', erros: 'CadernoErros', progresso: 'Progresso', revisao: 'Revisao',
   ranking: 'Ranking', conquistas: 'Ranking', termos: 'Termos', 'condicoes-assinatura': 'CondicoesAssinatura',
   assinatura: 'Assinatura', conta: 'Conta', entrar: 'Conta', emails: 'Emails',
   'simulado-nacional': 'SimuladoNacional', cronograma: 'PlanoEstudo', 'plano-de-estudo': 'PlanoEstudo',

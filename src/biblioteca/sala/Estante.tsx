@@ -76,8 +76,17 @@ export function Estante({ obras, achados, cobrados, leituras, premium, salao, re
   // Ficha curta (passar o mouse ou focar com o teclado): presa à lombada, com uma folga para o mouse chegar nela.
   const [pop, definirPop] = useState<{ c: ResumoCapitulo; r: DOMRect; el: HTMLElement } | null>(null)
   const fechar = useRef<number | undefined>(undefined)
-  const mostrar = (c: ResumoCapitulo, el: HTMLElement) => { window.clearTimeout(fechar.current); definirPop({ c, r: el.getBoundingClientRect(), el }) }
-  const esconder = () => { window.clearTimeout(fechar.current); fechar.current = window.setTimeout(() => definirPop(null), 160) }
+  const abrir = useRef<number | undefined>(undefined)
+  // Com o mouse, a ficha só abre quando ele para num livro (Tales, 01/11/2026: atravessar a estante fazia a ficha pular
+  // de livro em livro); de uma ficha aberta para o livro vizinho a troca é curta. Pelo teclado, abre na hora.
+  const mostrar = (c: ResumoCapitulo, el: HTMLElement, peloMouse = false) => {
+    window.clearTimeout(fechar.current); window.clearTimeout(abrir.current)
+    const ja = () => definirPop({ c, r: el.getBoundingClientRect(), el })
+    if (!peloMouse) { ja(); return }
+    abrir.current = window.setTimeout(ja, pop ? 140 : 380)
+  }
+  const esconder = () => { window.clearTimeout(abrir.current); window.clearTimeout(fechar.current); fechar.current = window.setTimeout(() => definirPop(null), 160) }
+  useEffect(() => () => { window.clearTimeout(abrir.current); window.clearTimeout(fechar.current) }, [])
   // A ficha acompanha a lombada quando a página rola (o foco do teclado rola até o livro); some se o livro sai da tela.
   useEffect(() => {
     if (!pop) return
@@ -128,7 +137,7 @@ export function Estante({ obras, achados, cobrados, leituras, premium, salao, re
 function BaiaEstante({ b, vagas, indice, celular, leituras, premium, salao, realce, primeiraBusca, torto, escada, aoMostrar, aoEsconder, aoClicar, ativo, guia }: {
   b: Baia; vagas: number; indice: number; celular: boolean; leituras: Record<string, Leitura | undefined>; premium: boolean; salao: Salao
   realce: string | null; primeiraBusca: string | null; torto: boolean; escada: boolean
-  aoMostrar: (c: ResumoCapitulo, el: HTMLElement) => void; aoEsconder: () => void; aoClicar: (c: ResumoCapitulo) => (e: MouseEvent<HTMLAnchorElement>) => void; ativo: string | null
+  aoMostrar: (c: ResumoCapitulo, el: HTMLElement, peloMouse?: boolean) => void; aoEsconder: () => void; aoClicar: (c: ResumoCapitulo) => (e: MouseEvent<HTMLAnchorElement>) => void; ativo: string | null
   guia: boolean
 }) {
   const completo = b.lidos === b.total
@@ -181,7 +190,7 @@ function Enfeite({ i }: { i: number }) {
 
 function Volume({ c, leitura, fechado, comLivro, alvo, ativo, guia, aoMostrar, aoEsconder, aoClicar }: {
   c: ResumoCapitulo; guia: boolean; leitura?: Leitura; fechado: boolean; comLivro: boolean; alvo: boolean; ativo: boolean
-  aoMostrar: (c: ResumoCapitulo, el: HTMLElement) => void; aoEsconder: () => void; aoClicar: (e: MouseEvent<HTMLAnchorElement>) => void
+  aoMostrar: (c: ResumoCapitulo, el: HTMLElement, peloMouse?: boolean) => void; aoEsconder: () => void; aoClicar: (e: MouseEvent<HTMLAnchorElement>) => void
 }) {
   const estado = estadoLeitura(leitura)
   const r = raridade(c.questoes.length)
@@ -192,7 +201,7 @@ function Volume({ c, leitura, fechado, comLivro, alvo, ativo, guia, aoMostrar, a
     <li className="bb-vol-li">
       <a href={href(`/resumos/${c.id}`)} className={`bb-vol bb-vol--${estado} bb-vol--${r}${alvo ? ' bb-vol--alvo' : ''}${ativo ? ' bb-vol--ativo' : ''}`} style={estilo}
         data-cap={c.id} data-guia={guia ? 'cartao' : undefined} aria-label={rotulo} onClick={aoClicar}
-        onMouseEnter={(e) => temMouse() && aoMostrar(c, e.currentTarget)} onMouseLeave={aoEsconder}
+        onMouseEnter={(e) => temMouse() && aoMostrar(c, e.currentTarget, true)} onMouseLeave={aoEsconder}
         onFocus={(e) => aoMostrar(c, e.currentTarget)} onBlur={aoEsconder}>
         <span className="bb-vol__num" aria-hidden="true">{n === Number.MAX_SAFE_INTEGER ? '·' : n}</span>
         <span className="bb-vol__titulo" aria-hidden="true">{comLivro ? <small>{rotuloLivro(c).split(' · ')[0]}</small> : null}{tituloLombada(c.titulo)}</span>

@@ -40,6 +40,7 @@ const DadosLocais = lazy(() => carregadores.Apoio().then(({ DadosLocais }) => ({
 const NaoEncontrada = lazy(() => carregadores.Apoio().then(({ NaoEncontrada }) => ({ default: NaoEncontrada })))
 const Sobre = lazy(() => carregadores.Apoio().then(({ Sobre }) => ({ default: Sobre })))
 const Favoritas = lazy(() => carregadores.Favoritas().then(({ Favoritas }) => ({ default: Favoritas })))
+const Bichos = lazy(() => carregadores.Bichos().then(({ Bichos }) => ({ default: Bichos })))
 const CadernoErros = lazy(() => carregadores.CadernoErros().then(({ CadernoErros }) => ({ default: CadernoErros })))
 const Progresso = lazy(() => carregadores.Progresso().then(({ Progresso }) => ({ default: Progresso })))
 const Revisao = lazy(() => carregadores.Revisao().then(({ Revisao }) => ({ default: Revisao })))
@@ -56,6 +57,7 @@ const SimuladoNacional = lazy(() => carregadores.SimuladoNacional().then(({ Simu
 const PlanoEstudo = lazy(() => carregadores.PlanoEstudo().then(({ PlanoEstudo }) => ({ default: PlanoEstudo })))
 const TemasQueMaisCaem = lazy(() => carregadores.TemasQueMaisCaem().then(({ TemasQueMaisCaem }) => ({ default: TemasQueMaisCaem })))
 const CronogramaMao = lazy(() => carregadores.CronogramaMao().then(({ CronogramaMao }) => ({ default: CronogramaMao })))
+const PreviaGato = import.meta.env.DEV ? lazy(() => import('./paginas/dev/PreviaGato')) : null
 const Resumos = lazy(() => carregadores.Resumos().then(({ Resumos }) => ({ default: Resumos })))
 const Indicar = lazy(() => carregadores.Indicar().then(({ Indicar }) => ({ default: Indicar })))
 const ConviteRecebido = lazy(() => carregadores.Indicar().then(({ ConviteRecebido }) => ({ default: ConviteRecebido })))
@@ -77,6 +79,7 @@ const TITULOS: Record<string, string> = {
   '/conta/assinatura': 'Dados da assinatura | Orto Questões',
   '/dados': 'Seu desempenho | Orto Questões',
   '/favoritas': 'Suas favoritas | Orto Questões',
+  '/bichos': 'Sala dos bichos | Orto Questões',
   '/erros': 'Caderno de erros | Orto Questões',
   '/progresso': 'Progresso dos comentários | Orto Questões',
   '/revisao': 'Sua revisão | Orto Questões',
@@ -148,6 +151,9 @@ function paginaDaRota(rota: Rota): ReactNode {
     case 'favoritas':
       pagina = <Favoritas />
       break
+    case 'bichos':
+      pagina = <Bichos />
+      break
     case 'erros':
       pagina = <CadernoErros />
       break
@@ -204,6 +210,10 @@ function paginaDaRota(rota: Rota): ReactNode {
     case 'resumos':
       pagina = <Resumos segmentos={rota.segmentos} consulta={rota.consulta} />
       break
+    // Painel de prévia do gato da espera: só em desenvolvimento (fora do pacote publicado).
+    case 'dev':
+      if (PreviaGato) pagina = <Suspense fallback={null}><PreviaGato /></Suspense>
+      break
     case 'indicar':
       pagina = <Indicar />
       break
@@ -228,7 +238,7 @@ function paginaDaRota(rota: Rota): ReactNode {
   // A questão avulsa (#/questao/ID) fica aberta: é para onde as páginas
   // públicas do Google levam; responder pede a conta ali mesmo.
   if (['treinar', 'sessao', 'resumo', 'favoritas', 'erros', 'revisao', 'simulado-nacional'].includes(primeiro ?? '') || ehJogo(rota)) {
-    pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')}>{pagina}</ExigeConta>
+    pagina = <ExigeConta caminho={rota.caminho + (rota.consulta.toString() ? `?${rota.consulta}` : '')} sobre={ehJogo(rota) ? 'flashcards' : 'questoes'}>{pagina}</ExigeConta>
   }
 
   return pagina
@@ -295,6 +305,9 @@ export function App() {
     && !['sessao', 'questao', 'admin', 'conta', 'entrar', 'termos', 'condicoes-assinatura', 'assinatura', 'simulado-nacional', 'emails'].includes(primeiroFundo ?? '')
     // Na página inicial, o crachá fica no nível do progresso (Inicio.tsx), para o cenário abrir a página.
     && (primeiroFundo ?? '') !== ''
+
+  // Painel do administrador 3.0 (01/11/2026): casca própria em tela inteira, sem o cabeçalho, os avisos e o rodapé do site.
+  if (primeiroFundo === 'admin' && !sobreposto) return <ErroDePagina caminho={rota.caminho}><Suspense fallback={<EsperaPixel />}>{pagina}</Suspense></ErroDePagina>
 
   return (
     <div className={`pagina pagina--${densidade}`} style={{ fontSize: `${fonte}%` }}>

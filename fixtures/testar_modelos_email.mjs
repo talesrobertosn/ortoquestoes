@@ -256,6 +256,8 @@ try {
   assert.match(m.cadenciaBloqueia([envio(10)], HOJE), /48 horas/)
   assert.equal(m.cadenciaBloqueia([envio(49)], HOJE), null)
   assert.equal(m.cadenciaBloqueia([envio(10, { status: 'falhou' })], HOJE), null, 'falha não conta')
+  assert.equal(m.cadenciaBloqueia([envio(10), envio(30), envio(60)], HOJE, 'relatorio'), null, 'relatório mensal e quinzenal não esperam a cadência')
+  assert.match(m.cadenciaBloqueia([envio(10, { tipo: 'relatorio', modelo: null })], HOJE, 'pausa'), /48 horas/, 'mas contam para as outras cartas')
   assert.equal(m.cadenciaBloqueia([envio(10, { tipo: 'relato_resolvido', modelo: null })], HOJE), null, 'relato resolvido não conta')
   assert.equal(m.cadenciaBloqueia([envio(10, { modelo: 'pix_hoje' })], HOJE), null, 'Pix termina hoje não conta')
   assert.equal(m.cadenciaBloqueia([envio(10, { modelo: 'pagamento_aprovado' })], HOJE), null, 'recibo não conta')

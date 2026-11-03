@@ -172,3 +172,5 @@ export function esquecerRegistroAparelho() { gravarRegistro(null) }
 const CHAVE_EMAIL = 'oq-ultimo-email'
 export function ultimoEmail(): string { try { return localStorage.getItem(CHAVE_EMAIL) ?? '' } catch { return '' } }
 export function lembrarEmail(email: string) { try { localStorage.setItem(CHAVE_EMAIL, email) } catch { /* sem armazenamento */ } }
+/** "Não sou eu" na tela de entrar: o aparelho esquece o e-mail (e o nome) de quem entrou por último. */
+export function esquecerEmail() { try { localStorage.removeItem(CHAVE_EMAIL); localStorage.removeItem('oq:vitrine-acesso:nome') } catch { /* sem armazenamento */ } }

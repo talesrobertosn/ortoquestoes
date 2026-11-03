@@ -15,6 +15,7 @@ O conversor recusa o lote quando:
     com as próprias palavras, sem blocos copiados (Tales, 31/10/2026);
   - questão de prova real traz o fecho "Por que esta questão foi criada", que é só dos OrtoQuestões Simulados;
   - simulado sem esse fecho (todo simulado explica por que foi criado).
+Também roda checar_comentarios.py (parágrafo quase igual, referências sem livro, aviso sem Campbell 15).
 Avisa, sem recusar, quando todos os comentários do lote têm o mesmo esqueleto ou o mesmo fecho "Na prova".
 
 Uso:
@@ -100,6 +101,11 @@ def main() -> int:
     for par, ids in vistos.items():
         if len(set(ids)) > 1:
             erros.append(f"parágrafo repetido em {sorted(set(ids))}: {par[:70]}...")
+    from checar_comentarios import checar as checar_extra  # FLUXO-MESTRE.md, seção 6
+    _e, _a = checar_extra(mod.COMENTARIOS)
+    erros += _e
+    for x in _a:
+        print("AVISO:", x)
     if len(esqueletos) >= 6:
         if all(e[0] for e in esqueletos):
             print("AVISO: todos os comentários do lote têm 'Na prova'; use só onde houver uma frase de memória que valha.")

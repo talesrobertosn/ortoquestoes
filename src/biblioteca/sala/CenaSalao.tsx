@@ -17,7 +17,7 @@ import type { Periodo, Salao } from './usarSalao'
  */
 const ARTE = { w: 480, h: 180 }
 export const PONTOS = {
-  coruja: { x: 426, y: 32 },
+  coruja: { x: 426, y: 37 },
   gato: { x: 315, y: 150 },
   relogio: { x: 360, y: 40, r: 10 },
   arandelas: [{ x: 240, y: 66 }, { x: 335, y: 66 }, { x: 214, y: 66 }, { x: 357, y: 70 }],
@@ -106,8 +106,8 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
         <span className="bb-palco__veu" aria-hidden="true" />
 
         {/* Poeira no feixe da janela e vaga-lumes à noite (só enfeite, param com "menos movimento"). */}
-        <span className="bb-poeira" aria-hidden="true">{Array.from({ length: 8 }, (_, i) => <i key={i} style={{ '--i': i } as CSSProperties} />)}</span>
-        {s.periodo === 'noite' && <span className="bb-vagalumes" aria-hidden="true">{Array.from({ length: 6 }, (_, i) => <i key={i} style={{ '--i': i } as CSSProperties} />)}</span>}
+        <span className="bb-poeira" aria-hidden="true">{Array.from({ length: 4 }, (_, i) => <i key={i} style={{ '--i': i * 2 } as CSSProperties} />)}</span>
+        {s.periodo === 'noite' && <span className="bb-vagalumes" aria-hidden="true">{Array.from({ length: 3 }, (_, i) => <i key={i} style={{ '--i': i * 2 } as CSSProperties} />)}</span>}
 
         <button type="button" className="bb-obj bb-janela" style={caixa(PONTOS.janela)} onClick={s.acoes.tocarJanela}
           aria-label={`Janela: ${s.periodo === 'manha' ? 'manhã' : s.periodo === 'tarde' ? 'fim de tarde' : 'noite'}. Mudar a luz do salão`} />
@@ -138,12 +138,12 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
             </span>
           </p>}
           <button type="button" className="bb-coruja" onClick={s.acoes.tocarCoruja} aria-label="Coruja bibliotecária: uma dica" data-guia="ajuda">
-            <CorujaPixel estado={s.coruja.estado} style={{ width: 48 * px, height: 56 * px }} />
+            <CorujaPixel estado={s.coruja.estado} style={{ ['--coruja-escala' as string]: px * 1.75 }} />
           </button>
         </div>
         <div className="bb-personagem bb-personagem--gato" style={pos(PONTOS.gato.x, PONTOS.gato.y)}>
           <button type="button" className={`bb-gato bb-gato--${s.gato.estado}`} onClick={s.acoes.tocarGato} aria-label="O gato da biblioteca">
-            <GatoPixel estado={estadoGato(s.gato.estado)} style={{ width: 64 * px, height: 40 * px }} />
+            <GatoPixel estado={estadoGato(s.gato.estado)} style={{ width: 64 * px, height: 48 * px }} />
             {s.gato.estado === 'dormindo' && <span className="bb-gato__zz" aria-hidden="true">z<small>z</small></span>}
           </button>
         </div>

@@ -1,0 +1,1271 @@
+{
+  "data": "2026-11-01",
+  "motivo": "Ampliação para a versão 2 de seis resumos (fêmur distal, transtrocantérica, tálus e calcâneo, ossificação, deficiências, maus-tratos): só foram acrescentadas seções novas e trocados campos do cabeçalho. Os blocos citados por cada comentário foram conferidos pelo trechosSha256, que continua idêntico; por isso só o hash do capítulo foi atualizado. Nenhum comentário ou questão foi alterado.",
+  "itens": [
+    {
+      "id": "joelho-0343",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "anatomia-aplicada-a-fixacao-d4331410"
+      ],
+      "trechosSha256": "853645e7e00da2d2af56d0f8c55bb6ded0fb71f05f09f1dfdc7a7f244a34672c",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "pe-tornozelo-0018",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "luxacao-subtalar-5fa0c87f"
+      ],
+      "trechosSha256": "dfd794b098b6d671d07cea31590547bae424cef30f66751c3b8470a742928b99",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "pe-tornozelo-0096",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-c51227ca",
+        "anatomia-e-vascularizacao-b3cf6f14",
+        "anatomia-e-vascularizacao-db711620",
+        "anatomia-e-vascularizacao-32767012",
+        "anatomia-e-vascularizacao-3df26679",
+        "anatomia-e-vascularizacao-67b0e630",
+        "anatomia-e-vascularizacao-d9802b86",
+        "anatomia-e-vascularizacao-07f26b9a",
+        "anatomia-e-vascularizacao-b8a242e2",
+        "anatomia-e-vascularizacao-a4148267",
+        "anatomia-e-vascularizacao-d6200c81",
+        "anatomia-e-vascularizacao-d570e842",
+        "anatomia-e-vascularizacao-c3eb2101"
+      ],
+      "trechosSha256": "181ae7508aa1783792d980974d5a6604cba0379398a54ffadbc36e1a593907e2",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "pe-tornozelo-0422",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-67b0e630",
+        "anatomia-e-vascularizacao-d9802b86",
+        "anatomia-e-vascularizacao-07f26b9a",
+        "anatomia-e-vascularizacao-b8a242e2",
+        "anatomia-e-vascularizacao-d570e842"
+      ],
+      "trechosSha256": "1be0b7686fe3421bb9df9a2dcce9387141ff2de1088424c54008f77f00b0ffd6",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "pediatria-0010",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "maus-tratos-epidemiologia-e-risco-1fe8e17a",
+        "maus-tratos-epidemiologia-e-risco-2ca5f50d"
+      ],
+      "trechosSha256": "6dfa1a1793cd3c9cc6050c715e21ac76c7d0a5928652975a095c3a806f6f3baa",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0065",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "doencas-sistemicas-b653f198",
+        "doencas-sistemicas-b54badf3"
+      ],
+      "trechosSha256": "aada24b436a8963d06fc1e4b676865b0ff01060b948a92079f8ed58f3e52e5b1",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0097",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-ce072879",
+        "reconhecimento-59a1f669",
+        "reconhecimento-7f6299a9"
+      ],
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0146",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-59a1f669",
+        "reconhecimento-ce072879",
+        "reconhecimento-7f6299a9"
+      ],
+      "trechosSha256": "837cfd45587b61c66b5fbf32392a7d21790e76440d3722ae0ee47a37654ec1c4",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0160",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-ce072879",
+        "reconhecimento-59a1f669",
+        "reconhecimento-7f6299a9"
+      ],
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0173",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-ce072879",
+        "reconhecimento-59a1f669",
+        "reconhecimento-7f6299a9"
+      ],
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0327",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-59a1f669",
+        "reconhecimento-ce072879",
+        "reconhecimento-7f6299a9"
+      ],
+      "trechosSha256": "837cfd45587b61c66b5fbf32392a7d21790e76440d3722ae0ee47a37654ec1c4",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0362",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-ce072879",
+        "reconhecimento-59a1f669",
+        "reconhecimento-7f6299a9"
+      ],
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0366",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "doencas-sistemicas-a08cc9d3",
+        "doencas-sistemicas-b54badf3"
+      ],
+      "trechosSha256": "2e8b8f1ef0521038e1a77d6277bdbefbecaa0a60ee21f70ce8ec6dba8215e940",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0383",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-ce072879",
+        "reconhecimento-59a1f669",
+        "reconhecimento-7f6299a9"
+      ],
+      "trechosSha256": "58be002578b73739fce22870261b75e6a9d05a32ee42b5faaca7553cda4c7760",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0422",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-59a1f669",
+        "reconhecimento-7f6299a9",
+        "reconhecimento-ce072879"
+      ],
+      "trechosSha256": "b608e02034c30b9178852fe718d99294c1b62576b25cec79f88a2e5abf759c8f",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-0478",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-59a1f669",
+        "reconhecimento-ce072879",
+        "reconhecimento-7f6299a9"
+      ],
+      "trechosSha256": "837cfd45587b61c66b5fbf32392a7d21790e76440d3722ae0ee47a37654ec1c4",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-1200",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "doencas-sistemicas-a08cc9d3"
+      ],
+      "trechosSha256": "0186965879f99bfcc877013818402cd00096d8123f4e9fb5c12ae47cf1e84155",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-1204",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "reconhecimento-ce072879",
+        "reconhecimento-59a1f669"
+      ],
+      "trechosSha256": "18b1f7946c2e424781a7fc8150189687acd230bfb629f72ab2a5fa391c9bbe89",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "pediatria-1210",
+      "resumo": "rockwoodcriancas10-07-patologicas-maus-tratos",
+      "blocos": [
+        "inventario-esqueletico-e-conduta-2bcdc846",
+        "inventario-esqueletico-e-conduta-3b98f546",
+        "reconhecimento-a471746c"
+      ],
+      "trechosSha256": "46d5f4d2f0ac5ca577fd8ded1a268e545ff6eda3beede81ae48a8f5f5768c8f6",
+      "sha256Anterior": "3b8374c27bdd3d7cdde0dd02c046e435d29c7db477931d51c6f5386f524b4871",
+      "sha256Atual": "25062b7453a3e4e0121e11568cc6c243ff1c8bb381712da8944c712f89f50212"
+    },
+    {
+      "id": "trauma-0010",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "mecanismo-epidemiologia-e-lesoes-associadas-8a0e536d",
+        "anatomia-e-vascularizacao-b3cf6f14",
+        "mecanismo-epidemiologia-e-lesoes-associadas-a61cbda2"
+      ],
+      "trechosSha256": "7968bbc6013712c349c5b2bb3b57c41d0c418fc1d52098d1bc32b94d116d1030",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0011",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "quem-sofre-e-o-que-esperar-5feda61f"
+      ],
+      "trechosSha256": "e0670e1fd5f1ce14f24aa53032415afcf0b32df3244820018451165cc2aa2cc7",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-0036",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-34b1f1fd",
+        "processos-lateral-e-posterior-17b015ec",
+        "exame-e-imagem-94c5a174",
+        "processos-lateral-e-posterior-9475f77d",
+        "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242"
+      ],
+      "trechosSha256": "01fe881ec81a2ec47cc2b89ba7087106eb93eb09906eaa4cc4a25979c216cc3a",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0048",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "lesoes-associadas-8119d037",
+        "lesoes-associadas-73aee957"
+      ],
+      "trechosSha256": "02db2d5dd839e1daf34cc9924b9c859e25f71c399d9598370cec2e9f8e642981",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-0051",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "exame-e-imagem-a813d17f",
+        "exame-e-imagem-07b8d2b2",
+        "anatomia-e-vascularizacao-3df26679",
+        "outras-complicacoes-e-resultados-bee5e6a6"
+      ],
+      "trechosSha256": "b1ad3538136f9dcab07b45a37db3a787400e4769d1345eee0cc1a7a3265d5a3d",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0067",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "lesoes-associadas-32585c37",
+        "lesoes-associadas-59590dfc",
+        "lesoes-associadas-2d6d0ff1"
+      ],
+      "trechosSha256": "8042f6e200cbbb466745d3ecdb56db6a659947e7c352e2ff1a5cb1a4359d566d",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-0080",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "pos-operatorio-e-necrose-avascular-a6f4febc",
+        "pos-operatorio-e-necrose-avascular-3935fa2b",
+        "pos-operatorio-e-necrose-avascular-54e6d12e"
+      ],
+      "trechosSha256": "10742cf473e7c635db93a68f0b73d53d0741e9c6d26364964b985c571cd50667",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0202",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-34b1f1fd",
+        "processos-lateral-e-posterior-17b015ec",
+        "exame-e-imagem-94c5a174"
+      ],
+      "trechosSha256": "e787cbde2ce42f62e100e4db2a1e874449477950298c95ffc29a0ca31682b1a0",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0216",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+        "anatomia-e-forcas-deformantes-9923fb88",
+        "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+        "classificacao-ao-31a-e-a-parede-lateral-785664da",
+        "escolha-do-implante-627dbbee",
+        "escolha-do-implante-99aab52e"
+      ],
+      "trechosSha256": "a23ad59083126c354fc0eb1a3f19953236ea50b7189747a63004e285ccb2f64e",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-0228",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "quem-sofre-e-o-que-esperar-5feda61f"
+      ],
+      "trechosSha256": "e0670e1fd5f1ce14f24aa53032415afcf0b32df3244820018451165cc2aa2cc7",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-0238",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "exame-e-imagem-a813d17f",
+        "exame-e-imagem-07b8d2b2",
+        "exame-e-imagem-176e1e03"
+      ],
+      "trechosSha256": "2de4c8019b56eeb9c39450a769952b848512504f0e07c97d3a26743b7889a0eb",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0241",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "classificacao-ao-ota-e-hoffa-349ae23d",
+        "classificacao-ao-ota-e-hoffa-072fbbe6",
+        "classificacao-ao-ota-e-hoffa-05befb98",
+        "classificacao-ao-ota-e-hoffa-d58e0ca2",
+        "haste-retrograda-63531bff"
+      ],
+      "trechosSha256": "0b7722da8e621aa9fd09b59db40798369fe7b7df78f0fdd92c4217b55bccfa11",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-0262",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "mecanismo-e-deformidade-05ea9e17",
+        "mecanismo-e-deformidade-5ca6b5cc",
+        "mecanismo-e-deformidade-5663e0fc",
+        "mecanismo-e-deformidade-d9cd796b",
+        "anatomia-aplicada-a-fixacao-69fd8444"
+      ],
+      "trechosSha256": "f89e96d3a7522dafe4a4278425cd91bafd44b31fa69461c49eb7483931aaf0b1",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-0301",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242",
+        "processos-lateral-e-posterior-9475f77d",
+        "exame-e-imagem-01c205b8",
+        "tratamento-da-fratura-do-colo-ef0a1cf8"
+      ],
+      "trechosSha256": "e2ef3105ec058f37640fb5d00c5d6c8ed6cf74dae053cdb45f444f2d5e1fb0cc",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0319",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-3df26679",
+        "exame-e-imagem-a813d17f",
+        "exame-e-imagem-07b8d2b2",
+        "tratamento-da-fratura-do-colo-d7c6aca2",
+        "outras-complicacoes-e-resultados-bee5e6a6"
+      ],
+      "trechosSha256": "76c5964050aa5ff6aa1022928588e6737f287fc85b120ce8d2ee50fab28b3cc8",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0439",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "anatomia-e-forcas-deformantes-81f07f93"
+      ],
+      "trechosSha256": "41b14bda7574815fcb93895807ec2bbff21a3beee9224e3a1bd475af9737cc5b",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-0538",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "processos-lateral-e-posterior-17b015ec",
+        "anatomia-e-vascularizacao-34b1f1fd",
+        "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242",
+        "mecanismo-epidemiologia-e-lesoes-associadas-a149b034",
+        "mecanismo-epidemiologia-e-lesoes-associadas-180e2a08",
+        "exame-e-imagem-94c5a174"
+      ],
+      "trechosSha256": "8ab9c2d3982ed0074dedc97f0cdfd971972972157352e07e44ed391129442804",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0543",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "anatomia-e-forcas-deformantes-9923fb88",
+        "classificacao-ao-31a-e-a-parede-lateral-ea601e05"
+      ],
+      "trechosSha256": "2ecae1ad16f3a4f17563243f148d5a49bbcc3d4729e2a11b63d0224ab4af753a",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-0554",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "pos-operatorio-e-complicacoes-dd6dde3a",
+        "anatomia-aplicada-a-fixacao-6154b66b",
+        "placa-e-parafusos-b2ea7bc8",
+        "placa-e-parafusos-6b5cb8a1"
+      ],
+      "trechosSha256": "08dfb40f7ca31efcd08b7a8fa37086a2ad2e0771be5d8a28cde272353be7504c",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-0562",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-67b0e630",
+        "pos-operatorio-e-necrose-avascular-101e1fdb",
+        "pos-operatorio-e-necrose-avascular-54e6d12e"
+      ],
+      "trechosSha256": "ae292149cbdc520fe595515f4dbce745c214c6712fefbb00e5b56bd7e4613c9c",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0700",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "mecanismo-e-deformidade-05ea9e17",
+        "mecanismo-e-deformidade-5ca6b5cc",
+        "mecanismo-e-deformidade-5663e0fc",
+        "mecanismo-e-deformidade-d9cd796b",
+        "placa-e-parafusos-e66913ec",
+        "pos-operatorio-e-complicacoes-dd6dde3a"
+      ],
+      "trechosSha256": "4b80105d12acdca81b9cc3a9fa4edbb31bebee9c310ffb49170129ab08a84020",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-0764",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "classificacao-0661f9be",
+        "classificacao-8c0949d3",
+        "classificacao-61adeb6a",
+        "exame-e-imagem-176e1e03",
+        "tratamento-da-fratura-do-colo-27729aa9"
+      ],
+      "trechosSha256": "25d9a8026a8195716d4f31ace55c7f7d6a4f4ac0ff8dd52f6808f0b6c376a8d4",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0861",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "tratamento-da-fratura-do-colo-4017e556",
+        "tratamento-da-fratura-do-colo-859eeec1",
+        "tratamento-da-fratura-do-colo-63b1dcfd",
+        "tratamento-da-fratura-do-colo-f5d75f5b",
+        "tratamento-da-fratura-do-colo-53c1a52a"
+      ],
+      "trechosSha256": "f0848f56788e1d1317eb9bfb30a0109a265fd6fbda92de0dbeacb7e89f049839",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0882",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "exame-e-imagem-a813d17f",
+        "exame-e-imagem-07b8d2b2",
+        "exame-e-imagem-176e1e03"
+      ],
+      "trechosSha256": "2de4c8019b56eeb9c39450a769952b848512504f0e07c97d3a26743b7889a0eb",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-0913",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "lesoes-associadas-8119d037",
+        "lesoes-associadas-73aee957",
+        "anatomia-aplicada-a-fixacao-d4331410",
+        "haste-retrograda-b85e44ce"
+      ],
+      "trechosSha256": "ff21bbf8c340c94053781cfb42f2c8407abaea0b2b88394573491847707ddb0c",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-0961",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "complicacoes-41fe2824",
+        "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+        "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+        "tecnica-reducao-e-parafuso-cefalico-b883438a",
+        "tecnica-reducao-e-parafuso-cefalico-68859e9a",
+        "escolha-do-implante-99aab52e"
+      ],
+      "trechosSha256": "b2660217335cea72a639ad62f47ef6a9edb4844ba21dc7c880fe20810d595ef3",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-0986",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "lesoes-associadas-410ccdbe",
+        "lesoes-associadas-a0f6f917",
+        "implantes-combinados-fixador-externo-e-protese-331130c5"
+      ],
+      "trechosSha256": "23c0f6e35efd18fe12deade56cc927ebc28fd46dc6b059f902e38c7639b41b78",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1001",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+        "escolha-do-implante-ff846328",
+        "escolha-do-implante-3f9e3224",
+        "escolha-do-implante-99aab52e",
+        "escolha-do-implante-c9cf141d",
+        "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+        "tecnica-reducao-e-parafuso-cefalico-b17a07fa"
+      ],
+      "trechosSha256": "a94ff94840e790203752334ce2a9d569badb1a28bf0adcabbe6ff5b4c5561507",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1004",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "lesoes-associadas-8119d037",
+        "lesoes-associadas-73aee957",
+        "lesoes-associadas-32585c37",
+        "lesoes-associadas-410ccdbe",
+        "mecanismo-e-deformidade-52db38fb"
+      ],
+      "trechosSha256": "6c24910e28f4bfe726a04e956b1b2f6943fc7f604bc8d0fce8dde2419abc7d48",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1088",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "classificacao-ao-ota-e-hoffa-349ae23d",
+        "classificacao-ao-ota-e-hoffa-072fbbe6",
+        "classificacao-ao-ota-e-hoffa-2e6f5b99",
+        "classificacao-ao-ota-e-hoffa-05befb98",
+        "exame-e-imagem-6dc85d38"
+      ],
+      "trechosSha256": "02ae65ac1e36cc647634051ccede26d1f766939bfe9610d74d4adfd8a5380989",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1174",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "classificacao-ao-31a-e-a-parede-lateral-785664da",
+        "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+        "escolha-do-implante-ff846328",
+        "escolha-do-implante-99aab52e"
+      ],
+      "trechosSha256": "9c51ef6d16edda54fc9e3aa6bcfa37d1420719fda2b2e59085172508710d3965",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1181",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "lesoes-associadas-26b81b8d",
+        "mecanismo-e-deformidade-5663e0fc"
+      ],
+      "trechosSha256": "f4b0b4774d9e76e42cd51b372508ffb66d2acd6b19b20ad263227ebff952b7e4",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1223",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "exame-e-imagem-01c205b8",
+        "mecanismo-epidemiologia-e-lesoes-associadas-80dbb242",
+        "tratamento-da-fratura-do-colo-ef0a1cf8",
+        "tratamento-da-fratura-do-colo-7edccd32",
+        "tratamento-da-fratura-do-colo-d7c6aca2",
+        "outras-complicacoes-e-resultados-bee5e6a6",
+        "outras-complicacoes-e-resultados-6f637759"
+      ],
+      "trechosSha256": "77bddfd09db177e38205ee4697441a0eb32bd5ef855ec29cc635ac73d9052970",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1539",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "tecnica-reducao-e-parafuso-cefalico-b883438a"
+      ],
+      "trechosSha256": "5c5156c16618f7ec31bfb9aad651d20b7397c096625915812b9bfbf90e8525d9",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1568",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+        "classificacao-ao-31a-e-a-parede-lateral-a7ad741b",
+        "classificacao-ao-31a-e-a-parede-lateral-785664da",
+        "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+        "escolha-do-implante-99aab52e",
+        "escolha-do-implante-ff846328",
+        "tecnica-reducao-e-parafuso-cefalico-f076d68d"
+      ],
+      "trechosSha256": "10609cb8f92094799715b91088ae683be7f8051187a4ff163528afb0c54e366d",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1569",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+        "classificacao-ao-31a-e-a-parede-lateral-a7ad741b",
+        "classificacao-ao-31a-e-a-parede-lateral-785664da",
+        "algoritmo-dos-autores-8978dc02",
+        "algoritmo-dos-autores-fd9c2ce2",
+        "algoritmo-dos-autores-13d26ebf"
+      ],
+      "trechosSha256": "dfc713b91ad2d1c90f4be2f9c248104cbeaf92228326072f581a47f2395fda2c",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1571",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "anatomia-e-forcas-deformantes-9923fb88",
+        "classificacao-ao-31a-e-a-parede-lateral-ea601e05"
+      ],
+      "trechosSha256": "2ecae1ad16f3a4f17563243f148d5a49bbcc3d4729e2a11b63d0224ab4af753a",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1572",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "anatomia-e-forcas-deformantes-a884c7c9",
+        "anatomia-e-forcas-deformantes-9923fb88"
+      ],
+      "trechosSha256": "b3b7b93c1323f5cd929faa93d56cae8352d141861b4a9962e8b8efdb15fca223",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1573",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "anatomia-e-forcas-deformantes-2cbfa06e",
+        "anatomia-e-forcas-deformantes-9923fb88"
+      ],
+      "trechosSha256": "f45e4777e7a4ec2bc6e1b111e0d18b7e15f65504f93754293cc9e3d51c093b66",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1574",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "quem-sofre-e-o-que-esperar-5feda61f"
+      ],
+      "trechosSha256": "e0670e1fd5f1ce14f24aa53032415afcf0b32df3244820018451165cc2aa2cc7",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1575",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "diagnostico-7698aafa",
+        "diagnostico-2a41eac2"
+      ],
+      "trechosSha256": "688d414918d2384ac1968900a28fc0a0b5195bc6c8c61242f2a06729b580b287",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1576",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "avaliacao-e-preparo-do-idoso-29f706c5",
+        "avaliacao-e-preparo-do-idoso-eebf137c"
+      ],
+      "trechosSha256": "ef6fd9a4a90546fc8fcdea2480efb9f5f82ee082515b0cce0f5f3c4603814a3a",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1577",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+        "escolha-do-implante-99aab52e",
+        "escolha-do-implante-627dbbee"
+      ],
+      "trechosSha256": "68c540cd2cd9f0bf8107f911f0ef3934386ce79e881105fbad740083e056b558",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1578",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
+        "classificacao-ao-31a-e-a-parede-lateral-785664da",
+        "escolha-do-implante-5f08d4c8",
+        "escolha-do-implante-99aab52e",
+        "complicacoes-41fe2824"
+      ],
+      "trechosSha256": "a2c208a644a80ca3c8eeab32b8b5e9b33f44d193bb196e438b8c723f75edbd22",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1579",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "escolha-do-implante-99aab52e",
+        "classificacao-ao-31a-e-a-parede-lateral-7271b226",
+        "classificacao-ao-31a-e-a-parede-lateral-a7ad741b",
+        "classificacao-ao-31a-e-a-parede-lateral-785664da",
+        "escolha-do-implante-3f9e3224"
+      ],
+      "trechosSha256": "165bfe28a026cd46180d5d1e56eadf35fde0667480251524dec464fe81134012",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1580",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "escolha-do-implante-18036228",
+        "escolha-do-implante-feb15a49",
+        "complicacoes-fa2cbfe8"
+      ],
+      "trechosSha256": "6a5c79de4901f2b488c241115324b85aff124d451b1dd67a1ef74917991b0cf8",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1581",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "tecnica-reducao-e-parafuso-cefalico-ce769725",
+        "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+        "tecnica-reducao-e-parafuso-cefalico-f6d620c0"
+      ],
+      "trechosSha256": "269696512a8c098f991c2f4135b3b5fc35521dd3e634117b1bd13419196cdd5a",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1582",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "tecnica-reducao-e-parafuso-cefalico-dbb2b6a0",
+        "escolha-do-implante-ff846328",
+        "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+        "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+        "tecnica-reducao-e-parafuso-cefalico-8125107d"
+      ],
+      "trechosSha256": "1ac101413571327dce1d3e17abc6c44165376d14cb3f8bc72cf466afc42a98b6",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1583",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+        "tecnica-reducao-e-parafuso-cefalico-b883438a",
+        "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+        "complicacoes-41fe2824",
+        "anatomia-e-forcas-deformantes-81f07f93"
+      ],
+      "trechosSha256": "c644d924c59dccb65ac425589b6b3ee8137d162b5fb7b300fbc0e229edbd3834",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1584",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "tecnica-reducao-e-parafuso-cefalico-b883438a",
+        "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+        "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+        "complicacoes-41fe2824"
+      ],
+      "trechosSha256": "ff0896baec583c09a5ff223119dc88aed364ba57c387fc85ed7a354b61532bec",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1585",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+        "tecnica-reducao-e-parafuso-cefalico-b883438a",
+        "tecnica-reducao-e-parafuso-cefalico-8125107d",
+        "escolha-do-implante-ff846328"
+      ],
+      "trechosSha256": "320f8d18de2c642d5f0c2b2a6311ced5ca0da08061acdf7a67b0428a6d62314a",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1586",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+        "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+        "complicacoes-41fe2824",
+        "complicacoes-c2ff2a41"
+      ],
+      "trechosSha256": "c2a1c7f41760e077242a603de20b6605cdcdbb50321ac7360251ff18cc5a0e0e",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1587",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "complicacoes-c2ff2a41",
+        "complicacoes-41fe2824",
+        "complicacoes-487370e4"
+      ],
+      "trechosSha256": "99e60c4fe1d2a2209f566c20da10c88fd1dd67bf48bd96f5437d696416340a46",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1588",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "complicacoes-fa2cbfe8",
+        "complicacoes-a003183f"
+      ],
+      "trechosSha256": "cec022130b83693e0a07f5ae40b91d0f5ed21a68bd19df69589c8fad828ad051",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1589",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "complicacoes-a003183f",
+        "complicacoes-fa2cbfe8",
+        "complicacoes-487370e4"
+      ],
+      "trechosSha256": "489c01258f53a217bbdb808f334f44b08e4269c85d036665273a110982a8e1be",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1590",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "complicacoes-41fe2824",
+        "complicacoes-c2ff2a41",
+        "complicacoes-a003183f",
+        "tecnica-reducao-e-parafuso-cefalico-f076d68d",
+        "tecnica-reducao-e-parafuso-cefalico-b17a07fa",
+        "tecnica-reducao-e-parafuso-cefalico-b883438a",
+        "complicacoes-fa2cbfe8"
+      ],
+      "trechosSha256": "c26d29b510c6d23bc7e0ebb54bd250f66e00ac0b68e99fa48e12081e0e8f24f7",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1591",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "como-ler-este-capitulo-aab589aa",
+        "anatomia-e-forcas-deformantes-81f07f93",
+        "complicacoes-a003183f",
+        "complicacoes-41fe2824",
+        "tecnica-reducao-e-parafuso-cefalico-8125107d"
+      ],
+      "trechosSha256": "b204d0460245392de610eae438aed0d0f43d826ed76479b45212b04258254ec8",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1592",
+      "resumo": "rockwood10-54-transtrocanterica",
+      "blocos": [
+        "complicacoes-fa2cbfe8",
+        "complicacoes-a003183f",
+        "escolha-do-implante-18036228"
+      ],
+      "trechosSha256": "172fa274f78b207557fc99ddbf0507d3748387792c2113667928acbf84e171cf",
+      "sha256Anterior": "46f0f12900127838c8459ee97bc0ebc97a97bc7544677d92db102979e79d6d59",
+      "sha256Atual": "6b9fc1acf7ed742145d08ad8bd31f514483d5cc46bebf24c7769a73c5ccadb2b"
+    },
+    {
+      "id": "trauma-1607",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "exame-e-imagem-01c205b8",
+        "classificacao-8c0949d3",
+        "classificacao-82bb4004",
+        "tratamento-da-fratura-do-colo-c69f189c"
+      ],
+      "trechosSha256": "96ab0bead5d3a88f5196ffde8408f87b5caaffb98a519f47a702c0cc7c3a66b2",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1608",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "pos-operatorio-e-necrose-avascular-a6f4febc",
+        "pos-operatorio-e-necrose-avascular-3935fa2b",
+        "pos-operatorio-e-necrose-avascular-54e6d12e"
+      ],
+      "trechosSha256": "10742cf473e7c635db93a68f0b73d53d0741e9c6d26364964b985c571cd50667",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1609",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-67b0e630",
+        "anatomia-e-vascularizacao-d570e842",
+        "pos-operatorio-e-necrose-avascular-3935fa2b",
+        "pos-operatorio-e-necrose-avascular-101e1fdb",
+        "exame-e-imagem-176e1e03"
+      ],
+      "trechosSha256": "a5349009a769fb6d5671ec71aefca847188b06e2a855b5d6c535d8fcb27db75f",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1610",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "exame-e-imagem-a813d17f",
+        "exame-e-imagem-07b8d2b2",
+        "anatomia-e-vascularizacao-3df26679",
+        "tratamento-da-fratura-do-colo-d7c6aca2",
+        "outras-complicacoes-e-resultados-bee5e6a6"
+      ],
+      "trechosSha256": "c5f1c824e1029aff499c1602333d50baa37697deae9e941c76f6eb7f0f2725ae",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1611",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "mecanismo-epidemiologia-e-lesoes-associadas-a61cbda2",
+        "mecanismo-epidemiologia-e-lesoes-associadas-08873b34"
+      ],
+      "trechosSha256": "5aa08b4b6e609e2596721f7ee3ae6a645972acaf6f5a01dccbcdfd9ffc3ede04",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1612",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "classificacao-8c0949d3",
+        "classificacao-82bb4004",
+        "tratamento-da-fratura-do-colo-7307c8b1",
+        "tratamento-da-fratura-do-colo-c69f189c"
+      ],
+      "trechosSha256": "162f623d32c8635cc021ecc44f4a8d793825efc153a5b9acef2a2aa5c17ae499",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1613",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-34b1f1fd",
+        "processos-lateral-e-posterior-319972b0",
+        "processos-lateral-e-posterior-ae875000"
+      ],
+      "trechosSha256": "91a839135a6b390af98f2566fda3b832af94d070de2ada018d6bbf3b37debd1f",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1614",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-32767012",
+        "processos-lateral-e-posterior-9475f77d",
+        "processos-lateral-e-posterior-17b015ec"
+      ],
+      "trechosSha256": "e6b7ef134fbd7eade6069c56fe387e754b1c1e8098df1023fbdd7effb5d56d34",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1615",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "anatomia-e-vascularizacao-67b0e630",
+        "anatomia-e-vascularizacao-d9802b86",
+        "anatomia-e-vascularizacao-07f26b9a",
+        "anatomia-e-vascularizacao-b8a242e2",
+        "anatomia-e-vascularizacao-d570e842",
+        "tratamento-da-fratura-do-colo-53c1a52a"
+      ],
+      "trechosSha256": "51cb86b62579230efe4b24ac9228f34a515efe59310286278c057883c7d7ec96",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1616",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "tratamento-da-fratura-do-colo-354a94eb",
+        "tratamento-da-fratura-do-colo-ef0a1cf8",
+        "tratamento-da-fratura-do-colo-0766afcf",
+        "tratamento-da-fratura-do-colo-7edccd32",
+        "tratamento-da-fratura-do-colo-d7c6aca2",
+        "outras-complicacoes-e-resultados-bee5e6a6"
+      ],
+      "trechosSha256": "9b4cc36372bc954705206aea5772395c9ce129a7322215920a561b4bb6c05c0c",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1617",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "luxacao-subtalar-caed047d",
+        "luxacao-subtalar-3e2919ef",
+        "luxacao-subtalar-42494929",
+        "luxacao-subtalar-71ed9e35"
+      ],
+      "trechosSha256": "a469bf0ab84169bab44640345b1f41db8d62fdffef1bd3e23814f7199ee52b0f",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1618",
+      "resumo": "rockwood10-66-talus",
+      "blocos": [
+        "classificacao-61adeb6a",
+        "tratamento-da-fratura-do-colo-27729aa9",
+        "tratamento-da-fratura-do-colo-7307c8b1",
+        "tratamento-da-fratura-do-colo-c69f189c",
+        "tratamento-da-fratura-do-colo-f5d75f5b",
+        "controversias-e-o-que-falta-saber-1dd8fb8f"
+      ],
+      "trechosSha256": "53dc3e0756eb0d1715e84bc03f0e05e9fdfb6ba220f081f83fdce9bbdf39e717",
+      "sha256Anterior": "a7876e3766b16b5e7f8a127199013069566c6d45b291e175bbaf36c9fff03fbc",
+      "sha256Atual": "e89d487b96658b4ce7f49b8f22e6b44433d2cdfa0445faab34f037fee153f43e"
+    },
+    {
+      "id": "trauma-1631",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "mecanismo-e-deformidade-05ea9e17",
+        "mecanismo-e-deformidade-5ca6b5cc",
+        "mecanismo-e-deformidade-5663e0fc",
+        "mecanismo-e-deformidade-d9cd796b",
+        "pos-operatorio-e-complicacoes-dd6dde3a"
+      ],
+      "trechosSha256": "e877938610eaadf2667c942fd2410d5f5bbae510541a39bbadfb756c4db9a857",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1632",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "lesoes-associadas-8119d037",
+        "lesoes-associadas-73aee957"
+      ],
+      "trechosSha256": "02db2d5dd839e1daf34cc9924b9c859e25f71c399d9598370cec2e9f8e642981",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1633",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "lesoes-associadas-32585c37",
+        "anatomia-aplicada-a-fixacao-69fd8444",
+        "lesoes-associadas-59590dfc",
+        "lesoes-associadas-2d6d0ff1"
+      ],
+      "trechosSha256": "dd513f9500765acbe1298ec05368709b97905da58dacfc410e512ea73d9ee024",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1634",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "lesoes-associadas-26b81b8d",
+        "lesoes-associadas-5ea06138",
+        "a-preferencia-dos-autores-e-o-tempo-6f0542c8"
+      ],
+      "trechosSha256": "9c31159b6ea95c768ef7c2868594cb973fcd59b7d96c96af66bb08fde8b8d389",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1635",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "classificacao-ao-ota-e-hoffa-349ae23d",
+        "classificacao-ao-ota-e-hoffa-2e6f5b99",
+        "exame-e-imagem-6dc85d38"
+      ],
+      "trechosSha256": "d348969b4689b976492550fa22adb7a2a6d695818a5281576b9433431172c28b",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1636",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "anatomia-aplicada-a-fixacao-69fd8444",
+        "placa-e-parafusos-4fcfe17f"
+      ],
+      "trechosSha256": "c09016651df1ac1e91f1fa15e1ef7b2ec90c5b8d3f5e29bb4b444700f195eab1",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1637",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "anatomia-aplicada-a-fixacao-36125dab",
+        "placa-e-parafusos-7286f5bc",
+        "pos-operatorio-e-complicacoes-821328f9"
+      ],
+      "trechosSha256": "1df7f05b3efaac5ea7195138ac80b72ad4673be479901ed405b04e47c63018ce",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1638",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "anatomia-aplicada-a-fixacao-6154b66b",
+        "placa-e-parafusos-b2ea7bc8",
+        "placa-e-parafusos-6b5cb8a1",
+        "pos-operatorio-e-complicacoes-dd6dde3a"
+      ],
+      "trechosSha256": "a7ebdbe9394af733e6c802dc1cea7c96b205c0b42422523531ef5b391516e81b",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1640",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "classificacao-ao-ota-e-hoffa-349ae23d",
+        "classificacao-ao-ota-e-hoffa-072fbbe6",
+        "classificacao-ao-ota-e-hoffa-05befb98",
+        "classificacao-ao-ota-e-hoffa-d58e0ca2",
+        "placa-e-parafusos-6468ae16"
+      ],
+      "trechosSha256": "93ed2214bac01855e357ded07de665e2e6861ff30c208156f0c9cd538541ac60",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1641",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "fratura-acima-da-protese-do-joelho-38c79edb",
+        "tratamento-nao-operatorio-a3a5fa84"
+      ],
+      "trechosSha256": "84a314f997abbb6350c6f08ab7663344e0b7fb3e6b8829d0c75bbfc18a7f6b94",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    },
+    {
+      "id": "trauma-1642",
+      "resumo": "rockwood10-58-femur-distal",
+      "blocos": [
+        "pos-operatorio-e-complicacoes-707d6750",
+        "pos-operatorio-e-complicacoes-f864af1b"
+      ],
+      "trechosSha256": "94031cfa78868c5ece7f236c81fd75c7a0df2d12f6140f6ac22c4352eb9ee717",
+      "sha256Anterior": "5dac8a576999739f5ea693ad61094a9afd15b25ee23f0a3616d72f23b43a6309",
+      "sha256Atual": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b"
+    }
+  ]
+}

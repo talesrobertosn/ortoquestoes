@@ -1,0 +1,34 @@
+{
+  "id": "coluna-0219",
+  "origem": "TEOT 2025",
+  "prova": "TEOT",
+  "simulado": false,
+  "tema": "Coluna",
+  "temaSlug": "coluna",
+  "subtema": "Exame neurológico e radiculopatias",
+  "enunciado": "Na propedêutica da coluna vertebral, podemos afirmar que o sinal de HOFFMAN é um reflexo:",
+  "imagem": null,
+  "alternativas": [
+    {
+      "letra": "A",
+      "texto": "Fisiológico e sua ausência sugere compressão medular.",
+      "porque": "O Hoffmann não é fisiológico, e sua ausência não sugere compressão. O sinal de alerta é a presença."
+    },
+    {
+      "letra": "B",
+      "texto": "Fisiológico e sua presença sugere normalidade da medula espinhal.",
+      "porque": "Inverte o significado: a presença do reflexo é que é anormal e sugere sofrimento da medula."
+    },
+    {
+      "letra": "C",
+      "texto": "Patológico e sua presença sugere mielopatia em qualquer nível.",
+      "porque": "Uma compressão no próprio nível do circuito, em C6-C7 ou abaixo, tende a não liberar o reflexo. Por isso \"em qualquer nível\" não serve."
+    },
+    {
+      "letra": "D",
+      "texto": "Patológico e sua presença sugere mielopatia no nível ou acima de C5-C6.",
+      "porque": "O reflexo é liberado quando a compressão está acima do seu circuito, que passa por C8 e T1."
+    }
+  ],
+  "gabarito": "D"
+}

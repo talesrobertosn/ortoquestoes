@@ -1,0 +1,428 @@
+---
+id: campbell15-estenose-lombar
+versao: 1
+titulo: Estenose do canal lombar
+especialidade: coluna
+acesso: gratis
+livro: Campbell's Operative Orthopaedics
+edicao: 15ª edição (2026)
+capitulo: Capítulo 47 · Adult Spinal Deformity (seção Degenerative Scoliosis), com a seção Stenosis of the Thoracic and Lumbar Spine do Capítulo 46 · Degenerative Disorders of the Thoracic and Lumbar Spine
+autores: Chad E. CAMPION (cap. 47); Kirk M. THOMPSON (cap. 46)
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1774 (raízes no recesso lateral), seção Stenosis of the Thoracic and Lumbar Spine (p. 1812 a 1823, Tabelas 46.5 e 46.6, Boxes 46.5 e 46.6, Técnicas 46.15 e 46.16) e seção Degenerative Spondylolisthesis (p. 1823, 1824 e 1838 a 1842); cap. 47, p. 1851, 1852 e 1858 a 1860 (escoliose degenerativa, Box 47.3); Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (estenose do canal vertebral e deformidade do adulto), edição digital sem paginação; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 11 (acondroplasia, p. 267 aprox.). As páginas citadas são as impressas.
+subtemas: Estenose do canal lombar
+resumo: Cascata degenerativa de KIRKALDY-WILLIS com hipertrofia do processo articular superior e do ligamento amarelo; zonas de LEE (entrada = recesso lateral da borda medial do processo articular superior à borda medial do pedículo, média = forame, saída); artrose facetária como causa principal do recesso lateral; congênita usualmente central; L4-L5 mais acometido e raiz L5; central bilateral e não dermatômica, recesso lateral dermatômico; claudicação neurogênica com distância variável, alívio sentado ou fletido, melhor subindo ladeira e pedalando, pior na esteira, contra a vascular de distância fixa e alívio em pé; elevação da perna estendida geralmente normal; saco dural de 100 mm² ou menos; conservador primeiro; descompressão como escolha e fusão se instabilidade, listese, escoliose ou ressecção facetária extensa; na escoliose degenerativa a flexão muitas vezes não alivia.
+---
+
+# Como ler este capítulo {radar=fundamento}
+
+Este resumo trata da estenose do canal lombar do adulto. O texto principal vem da seção de estenose do capítulo 46 do Campbell's Operative Orthopaedics, 15ª ed., escrita por Kirk M. THOMPSON, e da seção de escoliose degenerativa do capítulo 47, de Chad E. CAMPION, completadas pelo capítulo 2.4 do Sizínio HEBERT (Ortopedia e Traumatologia, 5ª ed.) e por um trecho do Tachdjian's Pediatric Orthopaedics, 6ª ed., sobre a acondroplasia. As páginas citadas são as impressas.
+
+A estenose não é uma doença de uma estrutura só. É o retrato final de um segmento móvel inteiro que envelheceu: o disco perde altura, as facetas passam a carregar o que não carregavam, hipertrofiam, e o ligamento amarelo se dobra para dentro do canal. O resultado é um tubo mais estreito para a cauda equina e para as raízes, e um paciente idoso que anda cada vez menos.
+
+A prova cobra esse tema por quatro portas, e elas aparecem em todas as bancas desde o TARO 2006:
+
+- **a anatomia das zonas**: o canal central, o recesso lateral (a zona de entrada de LEE), o forame e a zona de saída, e o que comprime cada uma;
+- **a clínica**: a estenose central dá sintomas **bilaterais e não dermatômicos**, a do recesso lateral dá sintomas **dermatômicos**;
+- **a claudicação neurogênica contra a vascular**: distância variável ou fixa, alívio sentado ou em pé, ladeira, bicicleta, esteira e carrinho de supermercado;
+- **o tratamento**: conservador primeiro, descompressão como escolha, e fusão quando há instabilidade ou deformidade.
+
+Dois temas vizinhos já têm resumo próprio e não são repetidos aqui: a **espondilolistese** (resumo campbell15-espondilolistese, que traz a classificação de WILTSE, a de MEYERDING e o tratamento da listese degenerativa em detalhe) e a **hérnia de disco lombar** (resumo campbell14-hernia-disco). A estenose cervical e a mielopatia ficam no resumo campbell15-cervical-degenerativa. Aqui a listese degenerativa entra só no que toca a estenose.
+
+# A cascata degenerativa: como o canal se fecha {radar=fundamento}
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 46, p. 1812 e 1813), abre a seção dizendo que a estenose degenerativa é **um processo progressivo que envolve todo o segmento móvel**, como descreveu KIRKALDY-WILLIS. Vale seguir a sequência porque cada etapa explica um achado de imagem e um sinal clínico.
+
+**Primeiro, o disco.** A degeneração do disco produz uma **instabilidade relativa** e uma **hipermobilidade das facetas**. O Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 2.4), situa o começo cedo: da terceira à quinta década, alterações do colágeno e dos proteoglicanos desidratam o disco, que perde altura. Com o espaço discal mais baixo, os corpos vertebrais se aproximam, e o forame, que é limitado em cima e embaixo pelos pedículos, encolhe na altura.
+
+**Depois, as facetas.** Com o disco estreito e com ângulos de extensão cada vez maiores, a pressão sobre as facetas aumenta. A resposta é a **hipertrofia facetária, sobretudo do processo articular superior** da vértebra de baixo. Esse detalhe importa: o processo articular superior é justamente o teto do recesso lateral, e é por isso que a artrose facetária é a grande vilã dessa zona. À medida que a articulação se destrói, a hipertrofia pode terminar em **anquilose local**. O Sizínio acrescenta o círculo vicioso: a destruição articular inflama a sinovial, forma exsudato e sinovite capsular, que geram mais instabilidade, que gera mais degeneração e mais hipertrofia.
+
+**Por fim, o ligamento amarelo.** A **calcificação e a hipertrofia do ligamento amarelo** contribuem com frequência. O disco que perde altura deixa o ligamento redundante, e ele se dobra para dentro do canal. O ligamento pode engrossar até o recesso lateral, onde se insere na cápsula facetária, e comprimir a raiz ali (p. 1813). O Sizínio resume a tríade: faceta hipertrofiada, disco degenerado e ligamento amarelo dobrado sobre si mesmo.
+
+**O que explica o sintoma.** O resultado anatômico é um canal menor e elementos neurais comprimidos. O Campbell atribui a claudicação neurogênica intermitente provavelmente à **congestão e à hipertensão venosas** que a compressão produz. Esse mecanismo vascular dentro do canal é o que dá sentido ao comportamento postural da doença: a extensão fecha o canal e o forame, a flexão os abre, e a raiz congestionada precisa de tempo para drenar, o que explica por que o alívio neurogênico demora mais do que o vascular.
+
+**O que não causa.** Trauma leve e atividade ocupacional não parecem afetar de modo significativo o aparecimento da doença, embora possam piorar uma condição preexistente (p. 1813).
+
+**Quem tem.** Pelo Sizínio, a faixa mais acometida vai dos **60 aos 69 anos**; a estenose é causa comum de ciática e lombalgia acima dos 60 e é o **diagnóstico mais comum entre os operados de coluna acima dos 65 anos**. Numa série citada, 47,5% tinham estenose leve a moderada e 19,7%, grave. Há **leve predomínio feminino**, e o nível **L4-L5** é o mais atingido.
+
+!tabela A cascata do segmento móvel (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1812 e 1813; Sizínio HEBERT, 5ª ed., cap. 2.4)
+| Etapa | O que acontece | Consequência no canal |
+|---|---|---|
+| Disco | desidratação, perda de altura, instabilidade relativa | aproximação dos corpos, forame mais baixo, ânulo abaulado |
+| Facetas | hipermobilidade, sobrecarga em extensão, sinovite | hipertrofia do processo articular superior, recesso lateral estreito, anquilose tardia |
+| Ligamento amarelo | redundância, dobra, calcificação, hipertrofia | invade o canal central e o recesso lateral |
+| Veias | congestão e hipertensão venosa | claudicação neurogênica intermitente |
+| Segmento inteiro | instabilidade, às vezes listese | estenose dinâmica, pior em pé |
+!fim
+
+# As zonas do canal: central, recesso lateral, forame e saída {radar=confirmado}
+
+Para falar de estenose com precisão, o Campbell (cap. 46, p. 1813 e 1814) exige terminologia consistente. A Tabela 46.5 divide a estenose pela região da coluna (cervical, torácica, lombar) e, dentro de cada segmento, pela zona. Na lombar, as zonas são **central, recesso lateral, foraminal e extraforaminal** (a "far-out"). A estenose é mais comum na lombar, frequente na cervical e pouco relatada na torácica; pode ser localizada ou difusa, multinível, como na congênita.
+
+**O canal central** é a área entre as facetas, ocupada pela dura e seu conteúdo. Estreita-se por **protrusão discal, ânulo abaulado, osteófitos e ligamento amarelo dobrado ou espessado**. A estenose central sintomática dá **claudicação neurogênica com dor generalizada nas pernas**, e não uma raiz isolada, porque comprime o saco com todas as raízes da cauda equina.
+
+**O canal lateral**, por fora da dura, contém as raízes, e a compressão ali dá **radiculopatia**. LEE dividiu esse canal em três zonas (Fig. 46.32):
+
+**Zona de entrada: o recesso lateral.** É a parte que mais cai. O recesso lateral, também chamado de **"zona de entrada de LEE"**, **começa na borda medial do processo articular superior e vai até a borda medial do pedículo**. É ali que a raiz sai da dura e corre para baixo e para fora, sob a faceta articular superior. Seus limites são o **pedículo por fora**, a **faceta articular superior por trás**, o **complexo ligamentar posterior ao disco e o assoalho do canal na frente**, e o **canal central por dentro**. A **artrose facetária é a causa mais frequente de estenose nessa zona**, junto com os esporões do corpo vertebral e a doença do disco ou do ânulo (p. 1813 e 1814). Na tomografia, a parte mais estreita do recesso fica na **borda superior do pedículo correspondente**; a medida costuma ser de **5 mm ou mais** no normal, e o diagnóstico é confirmado no sintomático quando a altura é de **2 mm ou menos** (p. 1816).
+
+**Zona média: o forame.** A **"zona média de LEE"** é a região foraminal, que fica ventral à pars interarticular. Seus limites são o recesso lateral por dentro, o corpo vertebral posterior e o disco na frente, a **pars e o ligamento intertransverso atrás**, e a borda lateral do pedículo por fora. O forame é, no fundo, o espaço entre o pedículo de cima e o de baixo. O **gânglio da raiz dorsal e a raiz motora ventral ocupam 30% desse espaço**, e é ali que a dura se torna contínua com a raiz como epineuro. Estreitam essa zona a **fratura da pars com fibrocartilagem proliferativa** e a **hérnia lateral**; o ligamento amarelo espessado às vezes entra no forame, associado a um esporão da face inferior da pars, sobretudo quando a **altura foraminal é menor que 15 mm** e a **altura discal posterior é menor que 4 mm** (p. 1814).
+
+**Zona de saída.** Fica lateral à faceta. A raiz pode ser comprimida ali por uma **hérnia muito lateral ("far lateral")**, por **espondilolistese com subluxação** ou por **artrose facetária**. Mais longe ainda está a síndrome "far-out" de WILTSE, em que a raiz L5 é espremida entre um processo transverso de L5 grande e a asa do sacro, sobretudo na espondilolistese; ela se confirma melhor com **tomografia reformatada em cortes coronais** (p. 1816 e 1817).
+
+**Qual raiz sofre.** O Campbell (cap. 46, p. 1774) dá a regra: na lombar, a doença do recesso lateral, seja estenose, seja hérnia posterolateral, pega a **raiz que sai abaixo daquele disco**. Uma lesão em L4-L5 no recesso lateral comprime a **raiz L5**, que está descendo para sair pelo forame de L5-S1. Já a lesão foraminal pega a raiz que sai por aquele forame, ou seja, a de cima (L4 no forame L4-L5).
+
+!tabela As zonas da estenose lombar (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, Tabela 46.5, Figs. 46.32 e 46.33, p. 1813, 1814 e 1816)
+| Zona | Limites | Causas mais comuns | Quadro |
+|---|---|---|---|
+| Central | entre as facetas; contém a dura | disco protruso, ânulo abaulado, osteófito, ligamento amarelo dobrado | claudicação neurogênica, dor difusa e bilateral |
+| Recesso lateral (entrada de LEE) | da borda medial do processo articular superior à borda medial do pedículo; pedículo por fora, faceta superior atrás, disco na frente | artrose facetária (principal), esporão do corpo, disco | radiculopatia dermatômica da raiz que desce (L4-L5 dá L5) |
+| Forame (zona média de LEE) | ventral à pars, entre os pedículos; pars e ligamento intertransverso atrás | fratura da pars com fibrocartilagem, hérnia lateral, amarelo com esporão da pars | radiculopatia da raiz que sai |
+| Saída | lateral à faceta | hérnia far lateral, listese com subluxação, artrose facetária | radiculopatia |
+| Far-out (WILTSE) | entre transverso de L5 e asa do sacro | listese com transverso grande | raiz L5; TC coronal |
+!fim
+
+!tabela Medidas que definem estenose nos livros lidos (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1814 a 1816)
+| Medida | Valor | Observação |
+|---|---|---|
+| Canal central (critério antigo) | 10 mm = estenose absoluta | radiografia ou, melhor, mielografia |
+| Área do saco dural (SCHÖNSTRÖM) | 100 mm² ou menos | correlaciona com estenose sintomática; inclui partes moles |
+| Área do canal ósseo | não diferencia normal de estenótico | mede só osso |
+| Recesso lateral na TC | normal 5 mm ou mais; sintomático 2 mm ou menos | medir na borda superior do pedículo |
+| Forame | altura menor que 15 mm e disco posterior menor que 4 mm | favorecem compressão por amarelo e esporão da pars |
+| Instabilidade nas dinâmicas | translação de 4 mm ou mais, rotação acima de 10 a 15 graus | também disco trapezoidal invertido |
+!fim
+
+O raciocínio que a prova quer é anatômico: quem forma o teto do recesso é o processo articular superior; quem cresce com a artrose é a faceta; portanto a síndrome do recesso lateral é, na maioria das vezes, **hipertrofia facetária**. A hérnia posterolateral também comprime a raiz no recesso, mas é outra doença, com outro resumo; a hipertrofia do amarelo participa, mas não é a causa principal nessa zona; e a espondilolistese é um contexto, não o mecanismo mais frequente.
+
+!questoes central=coluna-0068 relacionadas=coluna-0044
+conceito: O recesso lateral, zona de entrada de LEE, vai da borda medial do processo articular superior à borda medial do pedículo, e sua estenose é causada sobretudo pela hipertrofia facetária; a estenose congênita costuma ser central, PAGET é causa adquirida, e a ciática aparece em 91% dos pacientes.
+como: Uma prova de Ortopedia pediu a afirmação correta sobre a estenose do canal vertebral, com a zona de entrada de LEE referida ao processo articular superior e ao pedículo; o TARO 2014 perguntou a causa mais comum da síndrome do recesso lateral.
+armadilha: Achar que a ciática é rara, que a congênita é foraminal ou que a doença de PAGET é congênita; no recesso lateral, trocar a hipertrofia facetária pelo ligamento amarelo ou pela hérnia posterolateral.
+!fim
+
+# As causas: congênita, adquirida e o resto {radar=fundamento}
+
+O Box 46.5 do Campbell (cap. 46, p. 1814) organiza os tipos de estenose, e a Tabela 46.5 (p. 1813) repete a divisão pela patologia. O desenho é simples: há quem nasça com o canal estreito, e há quem estreite o canal com a idade, com uma cirurgia, com uma fratura ou com uma doença óssea.
+
+!tabela Tipos de estenose espinal (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, Box 46.5 e Tabela 46.5, p. 1813 e 1814)
+| Grupo | Tipos |
+|---|---|
+| Congênita | idiopática; acondroplásica |
+| Adquirida degenerativa | canal central; recesso lateral e forame; espondilolistese degenerativa; escoliose degenerativa |
+| Combinada | congênita mais degenerativa |
+| Iatrogênica | pós-laminectomia; pós-fusão; pós-quimionucleólise |
+| Outras adquiridas | espondilolítica; pós-traumática |
+| Diversas | doença de PAGET; fluorose; DISH (hiperostose esquelética idiopática difusa); estenose lombar hiperostótica; oxalose; pseudogota |
+!fim
+
+**A degenerativa é a mais comum.** O tipo mais comum de estenose é o causado pela **artrose degenerativa da coluna**, incluindo a doença de FORESTIER, que se caracteriza por hiperostose e rigidez da coluna em idosos (p. 1814). Outros processos também estreitam o canal: doença de PAGET, fluorose, cifose, escoliose e fratura com estreitamento. A hipertrofia e a ossificação do ligamento longitudinal posterior, em geral restritas à cervical, e o DISH também dão uma forma adquirida.
+
+Nas formas adquiridas, o processo se localiza sobretudo nas **facetas e no ligamento amarelo**, e as alterações artríticas aparecem na radiografia; com frequência são **simétricas dos dois lados**. O nível **L4-L5 é o mais acometido, seguido de L5-S1 e L3-L4**. A hérnia de disco e a espondilolistese podem piorar o estreitamento. A espondilolistese e a espondilólise **raramente causam estenose no jovem**, mas a combinação de degeneração, idade e listese ou lise em pacientes de **50 anos ou mais** frequentemente produz **estenose do recesso lateral ou foraminal** (p. 1814).
+
+**A congênita é rara e central.** As formas congênitas, como a acondroplasia e a espondilolistese displásica, são **muito menos comuns**. O Campbell é direto: **a estenose congênita costuma ser central** e é evidente nos exames de imagem. A idiopática estreita o **diâmetro anteroposterior** por causa de **pedículos curtos**, e o paciente é normal em todo o resto. Na **acondroplasia**, o canal se estreita nos **dois planos**: no anteroposterior, pelos pedículos curtos, e no lateral, pela **distância interpedicular diminuída**, além das outras características da doença (p. 1814).
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 11, p. 267 aprox.), completa a acondroplasia. Os problemas de coluna mais comuns são a **estenose occipitocervical com malformação de ARNOLD-CHIARI na infância** e a **estenose por pedículos curtos e canal lombar pequeno na adolescência tardia e no adulto**. Cerca de 30% das crianças acondroplásicas têm cifose toracolombar, e um terço delas (10% do total) tem cifose progressiva. E um alerta para quem descomprime: se a estenose for tratada por laminectomia, **há 100% de certeza de que a cifose vai progredir**, sobretudo no esqueleto imaturo. Na pseudoacondroplasia, ao contrário, não há estenose, e por isso não aparecem problemas tardios de claudicação neurogênica.
+
+**PAGET e fluorose.** Ambas podem dar estenose central ou lateral. A doença de PAGET tem uma particularidade que cai: é **uma forma de estenose que responde bem ao tratamento clínico com calcitonina** (p. 1814). PAGET e fluorose entram no grupo metabólico, e não no congênito.
+
+**Iatrogênica.** A estenose pode aparecer depois de laminectomia, de fusão (no segmento vizinho) e da antiga quimionucleólise. A degeneração do segmento adjacente é discutida adiante, com o tratamento.
+
+# Clínica: central contra recesso lateral {radar=confirmado}
+
+O Campbell (cap. 46, p. 1814) traz a frequência dos sintomas na estenose: **dor lombar em 95%**, **ciática em 91%**, **alteração sensitiva nas pernas em 70%**, **fraqueza em 33%** e **alteração urinária em 12%**. Note o número da ciática: quem marca que a ciatalgia é incomum na estenose está errado.
+
+**Estenose central.** Os sintomas costumam ser **bilaterais** e atingem **as nádegas e a parte posterior das coxas, em distribuição não dermatômica**. A explicação é a anatomia: o saco dural comprimido carrega várias raízes ao mesmo tempo, e a congestão venosa não respeita território de uma raiz só. O paciente não aponta um dermátomo; descreve peso, cansaço, dormência difusa nas duas pernas ao andar.
+
+**Estenose do recesso lateral.** Os sintomas costumam ser **dermatômicos**, porque se relacionam com a compressão de um nervo específico. E o comportamento muda: o paciente com estenose do recesso lateral pode ter **mais dor em repouso e à noite**, mas **mais tolerância à marcha** do que o paciente com estenose central (p. 1814 e 1815).
+
+O Sizínio (cap. 2.4) resume do mesmo jeito: na estenose central, **dor lombar irradiada para os dois membros inferiores e claudicação neurogênica**, descrita como sensação de peso ou fraqueza nas pernas ao andar, aliviada sentado com o tronco fletido e em repouso; na estenose do recesso lateral e do forame, **dor lombar e radiculopatia**.
+
+**Que raiz.** Quando há déficit neurológico, ele corresponde à radiculopatia da raiz comprimida, **mais comumente L5**, segundo o Sizínio: cerca de **22% têm algum déficit motor de L5** e **19% a 29% têm algum déficit sensitivo**. O raciocínio anatômico confirma: o nível mais acometido é L4-L5 (Campbell, p. 1814), e a doença do recesso lateral em L4-L5 pega a raiz L5 (p. 1774).
+
+**O que piora e o que alivia.** A extensão fecha o canal e o forame; a flexão os abre. Por isso a estenose central piora **com a caminhada e com a coluna em extensão**, e melhora sentado, inclinado para a frente ou deitado. A combinação que as bancas montam (respeita ou não o dermátomo; piora em flexão ou em extensão) se resolve com dois fatos: central não respeita dermátomo, e piora em extensão.
+
+!tabela Central contra recesso lateral (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1774, 1814 e 1815; Sizínio HEBERT, 5ª ed., cap. 2.4)
+| Aspecto | Estenose central | Estenose do recesso lateral e do forame |
+|---|---|---|
+| Lado | bilateral | geralmente unilateral, na raiz comprimida |
+| Distribuição | nádegas e coxas posteriores, não dermatômica | dermatômica |
+| Síndrome | claudicação neurogênica | radiculopatia |
+| Repouso e noite | alivia | pode doer mais em repouso e à noite |
+| Tolerância à marcha | menor | maior |
+| Postura que piora | extensão, marcha, ortostatismo | extensão |
+| Raiz típica | várias | L5 no recesso de L4-L5 |
+!fim
+
+!questoes central=coluna-0029 relacionadas=coluna-0212,coluna-0255
+conceito: Na estenose central os sintomas são bilaterais, nas nádegas e coxas posteriores, sem respeitar dermátomo, e pioram com a caminhada e a extensão; quando há déficit, a raiz mais acometida é L5, porque L4-L5 é o nível mais estreitado e o recesso de L4-L5 comprime a raiz L5.
+como: O TARO 2016 perguntou se os sintomas da estenose central são bilaterais e se respeitam dermátomo; a SBOT-SP combinou dermátomo com flexão ou extensão; o TARO 2011, a raiz mais envolvida.
+armadilha: Marcar que a estenose central respeita dermátomo (isso é do recesso lateral) ou que piora em flexão; escolher L4 porque o nível é L4-L5.
+!fim
+
+# Claudicação neurogênica contra claudicação vascular {radar=confirmado}
+
+Este é o ponto que mais cai do tema, e o Campbell (cap. 46, p. 1815) o organiza na Tabela 46.6. O idoso que dói nas pernas ao andar pode ter as artérias entupidas ou o canal apertado, e muitas vezes tem os dois. A diferença está no mecanismo: na vascular, o músculo isquêmico pede sangue que não chega, e basta parar para a demanda cair; na neurogênica, a raiz congestionada precisa que o canal se abra, e só a flexão da coluna abre o canal.
+
+**A distância.** Na claudicação vascular, a distância de marcha é **fixa**: a mesma artéria limita o mesmo esforço. Na neurogênica, a distância é **variável**, porque depende da postura em que o paciente anda, do quanto estende a coluna e do quanto está de pé.
+
+**O que alivia.** O vascular alivia **parando em pé**: os sintomas, sentidos tipicamente na **parte alta da panturrilha**, passam depois de um repouso curto, de cerca de **5 minutos**, ainda em pé, **sem precisar sentar ou se curvar**. O neurogênico melhora com **flexão do tronco, inclinando-se ou deitando**, mas pode precisar de **20 minutos** para melhorar. Parar em pé não basta, porque em pé a lordose mantém o canal fechado.
+
+**Subida, bicicleta, esteira e carrinho.** Aqui está a pegadinha preferida das bancas. Subir ladeira ou escada exige inclinar o tronco para a frente, e isso **flete a coluna**. Por isso o paciente com claudicação neurogênica relata **melhor resistência subindo ladeira ou degraus**, enquanto o vascular **piora subindo**, porque o músculo trabalha mais. Pela mesma razão, o neurogênico **tolera a bicicleta melhor do que a esteira**: sentado na bicicleta, a coluna fica fletida; na esteira plana, de pé, ela fica em extensão. **Empurrar um carrinho de supermercado** também flete a coluna e aumenta a resistência: é o **sinal do carrinho de compras positivo**. O vascular piora na bicicleta ergométrica, porque o músculo isquêmico continua trabalhando; o **teste da bicicleta é positivo (doloroso) no vascular e negativo no neurogênico** (p. 1815).
+
+**Pulsos, pele e dor.** No vascular, os pulsos estão **ausentes** e a pele perde os pelos e fica brilhante; no neurogênico, os pulsos estão **presentes** e a pele é normal. A dor vascular é em **cãibra e sobe de distal para proximal**; a neurogênica é **dormência e dolorimento que descem de proximal para distal**, das nádegas para as pernas. A dor lombar é **comum** no neurogênico e só ocasional no vascular, e o movimento da coluna é **limitado** no neurogênico e normal no vascular.
+
+!tabela Claudicação vascular contra neurogênica (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, Tabela 46.6, p. 1815)
+| Avaliação | Vascular | Neurogênica |
+|---|---|---|
+| Distância de marcha | fixa | variável |
+| Fatores que aliviam | ficar em pé (parar) | sentar, curvar-se |
+| Fatores que provocam | andar | andar, ficar em pé |
+| Subir ladeira | doloroso | indolor |
+| Teste da bicicleta | positivo (doloroso) | negativo |
+| Pulsos | ausentes | presentes |
+| Pele | sem pelos, brilhante | normal |
+| Fraqueza | raramente | ocasionalmente |
+| Dor lombar | ocasionalmente | comumente |
+| Movimento da coluna | normal | limitado |
+| Caráter da dor | cãibra, de distal para proximal | dormência, dolorimento, de proximal para distal |
+| Atrofia | (não legível no texto extraído) | ocasional |
+!fim
+
+**O teste de TENHULA.** Quando a história não basta, o Campbell (p. 1817) descreve o teste bicicleta-esteira de TENHULA: o paciente é estressado em pé numa esteira e depois sentado numa bicicleta ergométrica, que permite flexão da coluna. O **início mais precoce dos sintomas na esteira plana** e o **início mais tardio na esteira inclinada** se associaram significativamente à estenose.
+
+**Hérnia contra estenose.** A claudicação neurogênica é a marca da **estenose do canal lombar**, não da hérnia de disco. A hérnia extrusa, a foraminal e a extraforaminal dão radiculopatia de uma raiz, com dor que segue o dermátomo; a obstrução arterial dá claudicação vascular. A palavra "claudicação neurogênica" num enunciado aponta para o canal estreito.
+
+!questoes central=coluna-0006 relacionadas=coluna-0013,coluna-0327,coluna-0440
+conceito: A claudicação neurogênica aparece numa distância variável, alivia sentado ou com o tronco fletido (pode levar 20 minutos), é mais tolerada subindo ladeira, pedalando ou empurrando um carrinho, piora na esteira e tem teste da bicicleta negativo; a vascular tem distância fixa, alivia parando em pé e piora subindo e pedalando.
+como: O TARO 2020 perguntou a distância e a posição de alívio; o TARO 2018, a característica da estenose central (menor desconforto em aclives); o TARO 2008, em que situação a claudicação aparece; a prova de R4 de Coluna de Joinville 2010, a causa da claudicação neurogênica.
+armadilha: Achar que a distância neurogênica é fixa, que alivia em pé, que o teste da bicicleta é positivo ou que a dor vai de distal para proximal; todas essas são da vascular.
+alerta: `coluna-0327` está sem gabarito oficial; pelo Campbell (p. 1815), o paciente tolera melhor subir ladeira, pedalar e empurrar objetos (o carrinho), e a claudicação aparece andando na esteira (alternativa C).
+!fim
+
+# O exame físico {radar=confirmado}
+
+O Campbell (cap. 46, p. 1815) é honesto: **os achados físicos são inconsistentes em todas as formas de estenose**. O exame serve mais para afastar o que não é estenose do que para confirmá-la.
+
+**O que checar.** Os **pulsos distais** precisam ser palpados e estar fortes. A **rotação interna e externa dos quadris em extensão** deve ser completa, simétrica e indolor, porque a artrose do quadril é diferencial e comorbidade frequente. A **elevação da perna estendida e os testes de tensão ciática costumam ser normais**: a estenose comprime a raiz por espaço, e não por tração, então esticar o nervo não reproduz a dor como faz a hérnia. O **exame neurológico costuma ser normal**, mas pode surgir alguma alteração se o paciente andar até o limite da dor e for reexaminado.
+
+**O "stoop test".** É o teste do curvar-se. O paciente anda rápido; à medida que a dor aumenta, ele relata sintomas sensitivos e depois motores. Se continuar andando, assume uma **postura curvada** e os sintomas aliviam; ou, se sentar numa cadeira inclinado para a frente, os sintomas também se resolvem (p. 1815).
+
+O Sizínio (cap. 2.4) descreve o paciente na consulta: **sentado com o tronco fletido para a frente**, levanta da cadeira com dificuldade e **caminha com o tronco fletido**. A **extensão costuma estar diminuída e dolorosa**. O exame neurológico é normal ou pouco alterado; quando há déficit, é da raiz comprimida, **mais comumente L5**. O **teste de elevação da perna é, em geral, negativo**.
+
+**Os diferenciais que o exame pega.** Pelo Sizínio, **hiper-reflexia, clônus, sinal de OPPENHEIM ou BABINSKI** mandam pensar em **mielopatia cervical** por compressão medular, porque a lombar não tem medula para dar sinais de neurônio motor superior. **Parestesia em bota ou em meia** sugere **neuropatia periférica**. E a claudicação vascular deve ser sempre lembrada. O Campbell (cap. 46, p. 1840) lista os mesmos três imitadores no planejamento da listese degenerativa: **claudicação vascular, artrose do quadril e neuropatia periférica**, pedindo ao menos mobilidade e irritabilidade do quadril, pulsos dos pés e propriocepção.
+
+Some esse exame ao quadro da tabela anterior e a resposta das questões aparece: na estenose sintomática, a manobra de elevação do membro inferior é **indolor** e a distância de marcha é **variável**.
+
+!tabela Exame do paciente com estenose (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1815 e 1840; Sizínio HEBERT, 5ª ed., cap. 2.4)
+| Item | Achado esperado | Se alterado, pensar em |
+|---|---|---|
+| Elevação da perna estendida | normal (negativa) | hérnia de disco |
+| Neurológico em repouso | normal ou pouco alterado; se alterado, L5 | reexaminar após marcha |
+| Postura | tronco fletido, extensão dolorosa | |
+| Pulsos distais | fortes | claudicação vascular |
+| Rotações do quadril em extensão | completas e indolores | artrose do quadril |
+| Reflexos | normais ou hipoativos | hiper-reflexia, clônus, BABINSKI: mielopatia cervical |
+| Sensibilidade | dermatômica ou difusa | bota ou meia: neuropatia periférica |
+| Stoop test | curvar-se alivia | |
+!fim
+
+!questoes central=coluna-0334
+conceito: Na estenose lombar sintomática, a elevação do membro inferior estendido costuma ser indolor (testes de tensão ciática normais) e a distância de marcha é variável.
+como: O TARO 2009 combinou a manobra de elevação do membro inferior (dolorosa ou indolor) com a distância de marcha (variável ou invariável).
+armadilha: Transportar para a estenose a elevação da perna dolorosa da hérnia de disco, ou a distância fixa da claudicação vascular.
+alerta: `coluna-0334` está sem gabarito oficial; pelo Campbell (p. 1815, Tabela 46.6) e pelo Sizínio (cap. 2.4), a resposta sustentada é elevação indolor e distância variável (alternativa D).
+!fim
+
+# A imagem {radar=confirmado}
+
+**Radiografia.** A radiografia simples **não confirma a estenose**, mas dá pistas: **pedículos curtos no perfil**, **distância interpedicular curta no AP**, ossificação ligamentar, **forame estreito** e **hipertrofia das facetas** (Campbell, cap. 46, p. 1815).
+
+Quando pedir: as radiografias são importantes na avaliação inicial de quem tem **dor persistente por mais de 6 semanas** ou **sinais de alerta**: trauma recente, câncer, imunossupressão, **idade acima de 50 ou abaixo de 20 anos**, déficit neurológico ou cirurgia prévia (p. 1815). As **dinâmicas em flexão e extensão** identificam instabilidade preexistente antes de uma laminectomia e ajudam a decidir a fusão: **translação de 4 mm ou mais** ou **rotação acima de 10 a 15 graus** indicam instabilidade, e a inversão da geometria trapezoidal do disco, mais largo atrás e mais estreito na frente, também sugere (p. 1816). O Sizínio insiste que as radiografias sejam feitas **em pé**, porque a instabilidade produz **estenose dinâmica**, que piora em pé ou andando, e porque o perfil em pé mostra o equilíbrio espinopélvico.
+
+**Ressonância.** A ressonância identifica tumores e infecções e é um bom exame não invasivo para quem persiste com queixa nos membros inferiores depois da triagem radiográfica. Mas o Campbell faz duas ressalvas: a RM deve ser **confirmatória** em quem tem história consistente de claudicação neurogênica ou radiculopatia, e **não deve ser usada como rastreamento**, por causa da alta taxa de doença assintomática; e as alterações morfológicas se correlacionam só em parte com dor e função (p. 1816). O Sizínio a chama de **exame de escolha** para a claudicação neurogênica e a ciática, com a mesma ressalva.
+
+Como ler a RM:
+- **sagital T2**: bom ponto de partida, dá imagem parecida com o mielograma; mostra a compressão central por disco e ligamento amarelo;
+- **sagital T1**: o melhor para o **forame**; a **ausência da gordura normal em volta da raiz indica estenose foraminal**;
+- **axiais T1 e T2**: mostram o canal central, o lado da compressão, os cistos facetários e o derrame articular;
+- a **hérnia muito lateral** aparece no **axial T1**, que apaga o intervalo de gordura entre o disco e a raiz.
+
+**Mielotomografia.** Apesar da RM, a **mielografia seguida de TC** continua aceita e usada no **planejamento cirúrgico**: tem **acurácia diagnóstica de 91%**, mas expõe a muita radiação, e a TC depois do mielograma detecta **30% mais anormalidades** que o mielograma isolado. Caracteriza melhor o osso, o que ajuda a planejar a descompressão. Não mostra a raiz no forame lateral ao pedículo, porque ali a dura já virou epineuro e o contraste não chega. É mais indicada em **escoliose grave, implantes metálicos, contraindicação à RM** (o marca-passo, por exemplo) e **sintomas sem achado na RM**. Achados anormais aparecem em **24% a 34% de assintomáticos**, como na RM, e por isso a correlação clínica é obrigatória (p. 1816).
+
+**O que mede estenose.** SCHÖNSTRÖM, BOLENDER e SPENGLER compararam a medida anteroposterior do canal na TC com a medida do saco dural no mielograma. **Não houve correlação entre a área transversal do canal ósseo de normais e de estenóticos**; o que se correlacionou com estenose sintomática foi uma **área do saco dural de 100 mm² ou menos**, medida que inclui as partes moles (p. 1816). No começo, só a estenose central era reconhecida, e o estreitamento do canal a **10 mm** era considerado estenose absoluta (p. 1815). E o Campbell lembra, na história natural, que não se achou associação significativa entre os sintomas e o diâmetro anteroposterior do canal (p. 1814). A mensagem é que o tamanho do osso, sozinho, explica mal o sintoma: o que importa é o espaço que sobra para o saco e para as raízes.
+
+**A estenose que some deitado.** Por ser dinâmica, a estenose pode **não aparecer na RM com o paciente deitado** e aparecer nos perfis em pé com flexão e extensão (p. 1816). Na listese degenerativa, **15% das deformidades se reduzem espontaneamente na imagem em decúbito** (p. 1840).
+
+!tabela Exames de imagem na estenose (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1815 a 1817; Sizínio HEBERT, 5ª ed., cap. 2.4)
+| Exame | Para que serve | Limite |
+|---|---|---|
+| Radiografia em pé, AP e perfil | pistas (pedículos curtos, facetas), listese, escoliose; dor acima de 6 semanas ou alerta | não confirma estenose |
+| Dinâmicas flexão e extensão | instabilidade: 4 mm ou mais, rotação acima de 10 a 15 graus | |
+| RM | exame de escolha confirmatório; T1 sagital para o forame | não rastrear; muitos assintomáticos; deitado esconde a estenose dinâmica |
+| Mielo-TC | planejamento; acurácia 91%; escoliose grave, metal, contraindicação à RM | radiação, punção; não vê a raiz lateral ao pedículo |
+| TC reformatada | forame (sagital) e far-out (coronal) | partes moles mal vistas |
+| ENMG | dúvida de neuropatia, diabético | faltam dados de acurácia |
+| Doppler | claudicação vascular | |
+!fim
+
+!questoes central=coluna-0346
+conceito: A área do canal ósseo não diferencia estenóticos de normais; a área do saco dural de 100 mm² ou menos é a que se correlaciona com a estenose sintomática, e os sintomas não se associam significativamente ao diâmetro anteroposterior do canal.
+como: O TARO 2006 afirmou que a estenose sintomática é mais frequente no canal em trevo por ter menor área de secção transversal, para julgar certo ou errado.
+armadilha: Explicar o sintoma pelo tamanho do canal ósseo; o que conta é o espaço que sobra para o saco dural e para as raízes no recesso lateral.
+alerta: `coluna-0346` está sem gabarito oficial, e os livros lidos não tratam do canal em trevo. O Campbell (p. 1814 e 1816) não sustenta a justificativa da afirmação, porque a área do canal ósseo não diferencia normais de estenóticos; pela leitura do livro, a afirmação tende a Errado, mas a resposta não pode ser confirmada no texto.
+!fim
+
+# História natural {radar=fundamento}
+
+A primeira frase do Campbell sobre a evolução (cap. 46, p. 1814) desarma a ansiedade: embora o estreitamento do canal possa dar sintomas, **nem todo paciente com estreitamento desenvolve sintomas**. A doença se instala de modo **insidioso**; às vezes, os sintomas começam de forma aguda depois de um trauma ou de uma atividade pesada.
+
+Os números que o Campbell reúne:
+- cerca de **50% dos tratados sem cirurgia relatam melhora** da dor lombar e da perna depois de **8 a 10 anos**, embora a função depois da descompressão supere a do tratamento conservador em vários estudos;
+- num estudo prospectivo e randomizado de **100 pacientes**, o alívio veio em **3 meses** na maioria, independentemente do tratamento (em alguns, só aos 12 meses); os resultados do grupo não operado pioraram com o tempo, mas aos 4 anos eram excelentes ou regulares em 50%, contra **80% de bons resultados nos operados**;
+- para a maioria, pode-se prever um **curso estável**, com **15% a 50%** melhorando com o tratamento conservador;
+- **a piora dos sintomas apesar de tratamento conservador adequado é indicação de cirurgia**; WEINSTEIN mostrou melhora significativamente maior em todos os desfechos primários nos operados.
+
+O Sizínio (cap. 2.4) traz uma regra fácil de guardar: depois de **2 a 5 anos** de tratamento conservador, **40% melhoram, 40% continuam iguais e 20% pioram**. A piora é lenta e insidiosa, e a **deterioração neurológica rápida é rara**. No estudo SPORT, com 634 pacientes seguidos por dois anos, os operados tiveram resultados melhores, e **nenhum paciente teve deterioração neurológica rápida**.
+
+# Tratamento conservador e infiltração epidural {radar=clinico}
+
+**Conservador primeiro.** Os sintomas da estenose costumam responder bem ao tratamento não operatório: **resultado satisfatório em 69% aos 3 anos**, segundo SIMOTAS (Campbell, cap. 46, p. 1817). Apesar da dor lombar, da radiculopatia ou da claudicação, o conservador funciona na maioria. Os pacientes com dor **radicular** respondem bem; os com **escoliose** tendem a ir pior.
+
+O programa do Campbell:
+- **repouso que não passe de 2 dias**;
+- **anti-inflamatório ou paracetamol**;
+- **programa de estabilização do tronco** e **condicionamento aeróbico**;
+- outros métodos ficam para quem está limitado pela dor, com o objetivo de permitir o exercício;
+- a **tração não tem benefício provado** na coluna lombar do adulto.
+
+O Sizínio (cap. 2.4) acrescenta o **alongamento dos isquiotibiais**, a estabilização da musculatura paravertebral e abdominal e atividade aeróbica progressiva.
+
+**Por que o corticoide epidural funciona.** O raciocínio do Campbell (p. 1818) é este: a compressão mecânica produz lesão estrutural e química da raiz; edema e congestão venosa aumentam a compressão e levam a uma **neurite isquêmica**; podem vazar neurotoxinas, como a **fosfolipase** e o **leucotrieno B**, que aumentam inflamação e edema. O corticoide **reduz a migração de leucócitos, inibe citocinas, estabiliza membranas e diminui o edema**.
+
+**O que a infiltração entrega.** É útil no paciente com radiculopatia ou claudicação que não cede, para permitir a fisioterapia. Dá alívio sintomático significativo, com melhora dos escores de dor aos 3 meses, mas **nenhum estudo documentou eficácia de longo prazo**. A **dimensão do canal não prediz** o sucesso.
+
+**Complicações.** São infrequentes: hipercortisolismo, hematoma epidural, paralisia temporária, hemorragia retiniana, abscesso epidural, meningite química e ar intracraniano. A **punção dural ocorre em 5%**, e, se ocorrer, deve-se evitar a injeção subaracnóidea; a **cefaleia aparece em 1% a 5%**.
+
+**O candidato ideal** é o paciente com sintomas radiculares agudos ou claudicação neurogênica que não respondem a analgésicos e repouso, com prejuízo importante das atividades diárias. Os autores do Campbell usam a infiltração como procedimento **diagnóstico e terapêutico** e preferem a **via transforaminal**, que coloca a medicação mais ventral, no forame e no recesso lateral, e parece prever razoavelmente o resultado cirúrgico no mesmo nível (p. 1818). O Sizínio vai na mesma linha: quem melhora muito com a infiltração é **bom candidato à descompressão**.
+
+# Quando operar e o que esperar {radar=clinico}
+
+**A indicação.** A indicação primária é **dor crescente que resiste ao tratamento conservador** (Campbell, cap. 46, p. 1818). Como a queixa costuma misturar dor lombar e alguma dor na perna, o alívio pode não ser completo: a cirurgia deve dar **bom alívio da dor claudicante na perna**, com **resposta variável da dor lombar**. A maioria das séries relata **64% a 91% de melhora**, e só **42% nos diabéticos**; quase todos ficam com pequenas queixas, ligadas à artrose de base. Os achados neurológicos, quando presentes, melhoram de forma inconsistente. A **reoperação varia de 6% a 23%**.
+
+**O que a estenose lombar não faz.** O Campbell fecha a discussão com uma frase que ajuda o paciente a decidir: **a estenose lombar não causa paralisia, só diminui a capacidade de andar**; por isso o tratamento conservador é justificável **indefinidamente** em quem tem boa função e sintomas controláveis. Adiar a cirurgia para tentar o conservador **não piorou o resultado**, embora um estudo tenha achado resultados menos favoráveis com sintomas por mais de **33 meses**. Já as estenoses **cervical e torácica** se associam a **paralisia indolor**, pela mielopatia, e exigem vigilância mais próxima (p. 1818).
+
+Outros princípios da mesma página:
+- a reversão das consequências neurológicas é **indicação relativa**, salvo quando os sintomas são agudos;
+- **a imagem sozinha nunca é indicação de cirurgia**; a correlação entre imagem e sintomas é a melhor garantia de melhora;
+- lesões localizadas respondem melhor que doença generalizada;
+- GANZ relatou **96% de sucesso** quando os sintomas pré-operatórios eram aliviados por mudança de postura;
+- a decisão é do paciente bem informado que não tolera a vida restrita e já fez um bom conservador.
+
+O Sizínio (cap. 2.4) acrescenta que a estenose é a **principal causa de cirurgia da coluna acima dos 65 anos**, que a indicação é a falha do conservador e a **deterioração neurológica progressiva**, que a taxa de complicações gira em torno de **18%**, e que **não há evidência consistente de que uma técnica seja superior**.
+
+!tabela Prognóstico da cirurgia (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1818 e 1820; Sizínio HEBERT, 5ª ed., cap. 2.4)
+| Melhor resultado | Pior resultado |
+|---|---|
+| hérnia de disco associada | depressão, doença psiquiátrica |
+| estenose de um nível | doença cardiovascular |
+| fraqueza há menos de 6 semanas | IMC alto, obesidade |
+| monorradiculopatia | escoliose |
+| menos de 65 anos | distúrbios que afetam a marcha |
+| predomínio de dor na perna | predomínio de dor lombar, pouca ciática |
+| alívio com mudança de postura (96%) | sexo feminino, litígio, cirurgia prévia, espondilolistese |
+| claudicação e ciática clássicas | confirmação radiográfica duvidosa, diabetes, artrose do quadril |
+!fim
+
+# A descompressão {radar=oportunidade}
+
+**O princípio.** A **descompressão por laminectomia ou fenestração é o tratamento de escolha** da estenose lombar (Campbell, cap. 46, p. 1819, Fig. 46.36). A **laminectomia** pode ser preferível no **idoso com estenose grave e multinível**; a **fenestração**, que são laminotomias bilaterais com facetectomias parciais preservando as estruturas da linha média, é alternativa no **jovem com disco íntegro**, sobretudo por via minimamente invasiva, que lesa menos os estabilizadores dinâmicos. As laminotomias bilaterais tiveram **menos complicações e menos instabilidade** que a laminectomia num estudo.
+
+**Focar o alvo.** Sempre que possível, a fonte da dor deve ser localizada com **bloqueios radiculares seletivos** no pré-operatório, para permitir uma descompressão mais focal. Se só uma raiz precisa de descompressão radical, a fusão costuma ser desnecessária; a **remoção de mais de uma faceta inteira pode exigir fusão instrumentada**. Quando é preciso descomprimir o recesso lateral e o forame do mesmo lado, uma **TLIF** resolve sem risco de instabilidade posterior. A hérnia de disco presente deve ser tratada no mesmo tempo (p. 1819 e 1820).
+
+Na técnica de linha média (Técnica 46.15, p. 1821), a lâmina é retirada até a inserção do ligamento amarelo, o **pedículo serve de guia** para achar a raiz, e a **porção medial da faceta superior**, que forma o teto do recesso, é ressecada; **não se remove mais da metade da pars**; a descompressão vai do **aspecto caudal do pedículo mais proximal ao aspecto cefálico do pedículo mais distal**. **Muitas falhas vêm da descompressão foraminal inadequada**, por isso **sondar o forame é obrigatório**.
+
+**Menos invasiva e microdescompressão.** A descompressão menos invasiva preserva os paravertebrais, os processos espinhosos e os ligamentos supra e interespinhosos; a endoscopia tem resultados iguais aos convencionais, com menos complicações depois de uma curva de aprendizado íngreme. KELLEHER notou que pacientes com **escoliose, sobretudo com listese**, têm taxa de revisão bem maior (p. 1822). A **microdescompressão de MCCULLOCH** serve a quem não tem hérnia nem instabilidade, inclusive a listese degenerativa com risco de piorar, mas **não é recomendada na estenose grave nem na congênita**, que exigem laminectomia completa; por uma abordagem unilateral, descomprime os dois lados. No pós-operatório, o paciente anda no primeiro dia e é vigiado para **hematoma epidural**; trabalhador braçal pode precisar mudar de função (p. 1822).
+
+O Sizínio descreve as opções de não fusão: **laminectomia**, escolha quando não há instabilidade nem dor mecânica, com descompressão dos recessos e forames por **undercutting** e risco frequente de durotomia; **laminotomia**, que preserva os ligamentos e serve à estenose de um nível, sobretudo de recesso lateral ou forame; **endoscopia**; e **espaçadores interespinhosos** (X-Stop, Coflex, DIAM, Aperius), que limitam a extensão e servem à estenose central de um nível, leve a moderada, sem instabilidade, listese ou escoliose, mas têm muitas complicações, pioram o equilíbrio sagital e **não têm evidência consistente**.
+
+**Resultados.** O número de níveis descomprimidos não afetou o resultado. JÖNSSON relatou sucesso em 62% a 67%, com deterioração aos 5 anos e 18% de reoperação; quem tinha canal anteroposterior de **6 mm ou menos** foi melhor. A **instabilidade progressiva após a descompressão não prediz mau resultado**: cerca de **30% desenvolvem anterolistese** depois da descompressão, e é razoável observar antes de indicar fusão (p. 1820 e 1821).
+
+!tabela Técnicas de descompressão (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1819 a 1822; Sizínio HEBERT, 5ª ed., cap. 2.4)
+| Técnica | Para quem | Atenção |
+|---|---|---|
+| Laminectomia | idoso, estenose grave multinível, congênita | preservar facetas; sondar o forame |
+| Fenestração (laminotomias bilaterais) | jovem, disco íntegro, um nível | menos instabilidade que laminectomia |
+| Microdescompressão unilateral bilateral (MCCULLOCH) | sem hérnia ou instabilidade | não serve à estenose grave nem à congênita |
+| Endoscopia | casos selecionados | curva de aprendizado longa |
+| Espaçador interespinhoso | central, um nível, leve a moderada, sem instabilidade | evidência insuficiente |
+| TLIF | recesso lateral e forame do mesmo lado | inclui fusão |
+!fim
+
+# Quando somar a artrodese {radar=oportunidade}
+
+O Campbell (cap. 46, p. 1819 e 1823) lista as situações em que a fusão entra junto com a descompressão:
+- **ressecção óssea excessiva** que compromete a estabilidade: **remoção completa de uma faceta** ou **mais de 50% das duas facetas**;
+- **espondilolistese ístmica ou degenerativa**, **escoliose** ou **cifose**;
+- **estenose num nível já descomprimido** (reestenose) ou hérnia recorrente depois da descompressão;
+- **estenose adjacente a uma fusão prévia**;
+- **cisto sinovial facetário**, achado na imagem ou na cirurgia, porque reflete desarranjo da faceta e se associa a escorregamento pós-operatório; facetas mais **sagitais** aumentam o risco de reoperação.
+
+WHITE e WILTSE viram subluxação depois da descompressão em **66% das listeses degenerativas** e indicaram fusão em três grupos: **menos de 60 anos** com instabilidade pela perda de um processo articular; **menos de 55 anos** com descompressão de linha média por listese degenerativa preservando as facetas; **menos de 50 anos** com listese ístmica. Quando as facetectomias bilaterais completas são necessárias, a fusão lateral fica difícil e o enxerto pode tocar as raízes; aí a fusão **intersomática anterior** é indicada. A **causa mais importante de falha é a descompressão inadequada**, e o osso volta a crescer em **88% depois da laminectomia total** e em todos os que têm listese (p. 1823). O Sizínio concorda: a fusão é para instabilidade e deformidade (escoliose, listese, cifose), reestenose após cirurgia não instrumentada e degeneração de nível adjacente, e a artrodese **instrumentada consolida mais**.
+
+# Espondilolistese degenerativa associada {radar=fundamento}
+
+A listese degenerativa é a principal companheira da estenose, e seu resumo próprio (campbell15-espondilolistese) traz WILTSE, MEYERDING e o tratamento detalhado. Aqui ficam só os fatos que ligam as duas doenças, pelo Campbell (cap. 46, p. 1823, 1824 e 1838 a 1842).
+
+**Quem tem.** É o **tipo mais comum de listese no adulto**, típico de **mulheres acima de 50 anos**, sobretudo afrodescendentes, no nível **L4-L5**, afetado **seis vezes mais** que os outros e está presente em **10% das mulheres acima de 60 anos**, muitas assintomáticas.
+
+**Por que estreita o canal.** A **pars está íntegra**: o arco inteiro vai para a frente com o corpo de L4, e a estenose progride junto com a artrose facetária. Por isso a listese degenerativa dá **estenose central e do recesso lateral mais do que os outros tipos** (p. 1824). A raiz **L5 costuma ser comprimida no recesso lateral de L4-L5**, e a **L4 no forame**, contra o pedículo de L4, por um pseudoabaulamento do ânulo. A queixa típica é **dor axial e claudicação neurogênica**, com menos tolerância para andar e ficar de pé.
+
+**Evolução e tratamento.** O escorregamento progride em cerca de **30% a 34%**, sem efeito clínico claro; quem tem sintomas neurológicos tem pior prognóstico. O conservador evita exercícios em extensão; espera-se **12 semanas** antes de operar, salvo déficit progressivo. Só **10% a 15%** precisam de cirurgia. O SPORT mostrou benefício da **descompressão com fusão** sobre o conservador, e quase **95%** dos operados nos Estados Unidos são fundidos. Na avaliação, as radiografias **em pé** e dinâmicas são obrigatórias: **15% se reduzem na RM deitado**; instabilidade é **4 mm ou 10 graus** a mais que o nível vizinho; derrame facetário acima de **2 mm** sugere instabilidade. Sem fusão, uma meta-análise mostrou **69% de satisfação e 31% de progressão** do escorregamento (p. 1840 a 1842).
+
+!tabela Estenose isolada contra estenose com listese degenerativa (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1819 a 1824 e 1838 a 1842)
+| Aspecto | Estenose sem instabilidade | Estenose com listese degenerativa |
+|---|---|---|
+| Nível típico | L4-L5, depois L5-S1 e L3-L4 | L4-L5 |
+| Paciente | 60 a 69 anos | mulher acima de 50 anos |
+| Cirurgia de escolha | descompressão | descompressão com fusão |
+| Exame-chave | RM | radiografias dinâmicas em pé |
+| Após descompressão isolada | anterolistese em 30%, tolerada | subluxação em 66% (WHITE e WILTSE) |
+!fim
+
+# Escoliose degenerativa: a claudicação que não melhora com a flexão {radar=confirmado}
+
+O capítulo 47 do Campbell, de Chad E. CAMPION (p. 1851 e 1852), separa a escoliose degenerativa da idiopática do adulto. Cerca de **60% dos adultos têm alguma deformidade**, mas só **6% têm sintomas**. A **escoliose degenerativa** aparece **depois dos 40 anos em quem tinha a coluna reta**, atinge a lombar, com **hipolordose, laterolistese e estenose**, afeta homens e mulheres de modo mais parecido (60% a 70% mulheres), está presente em **6% a 30% dos idosos** e pega poucos segmentos (**2 a 5**, contra 7 a 11 na idiopática). A forma "de novo" nasce do disco assimétrico, com ápice em **L2-L3 ou L3-L4**. A progressão relatada vai de **1 a 6 graus por ano**, e a subluxação rotatória piora depois de **descompressão sem fusão**. O objetivo do tratamento é **aliviar a dor lombar e a estenose**, enquanto na idiopática do adulto é controlar a dor e corrigir a deformidade. O Sizínio (cap. 2.4) também a chama de escoliose "de novo", iniciada por volta dos 40 anos, associada a estenose do recesso lateral e foraminal, listese, hérnia, osteoporose, hipolordose ou cifose.
+
+**O sintoma que muda.** Na escoliose degenerativa, a **claudicação neurogênica está presente em 71% a 90%** e costuma ser o motivo da consulta, com a deformidade notada por acaso. E aqui está o fato que cai: esses sintomas **frequentemente não melhoram com a flexão do tronco**; para aliviar, o paciente **apoia o tronco nos braços ou deita**. O Campbell sublinha que isso **contrasta com o paciente habitual com estenose e claudicação neurogênica**, que melhora ao se curvar (p. 1858). Pode haver radiculopatia por hipertrofia facetária, por **estenose foraminal na concavidade** ou por **tração da raiz na convexidade**; o déficit neurológico é raro e a dor lombar é onipresente.
+
+O Box 47.3 resume o exame: movimento em geral preservado; o paciente **evita a hiperextensão**, que reproduz os sintomas da estenose; o neurológico raramente mostra déficits; os **pulsos distais** afastam a claudicação vascular; a **ausência bilateral do aquileu** sugere neuropatia periférica; a retificação lombar indica degeneração.
+
+**O tratamento.** A **descompressão isolada** é opção para estenose sintomática com **cifose mínima, SVA neutro e sem instabilidade nas dinâmicas**. Deve-se evitar desestabilizar, e a **fusão é feita se mais de 50% de qualquer faceta ou uma faceta inteira forem ressecados**. O Campbell define a escoliose degenerativa como a **variante coronal da espondilolistese**. E faz um alerta: **a descompressão isolada é inadequada quando a dor radicular vem da estenose foraminal na concavidade da curva**; aí é preciso corrigir a curva e restaurar a altura do disco, com ou sem dispositivo intersomático, para a **descompressão indireta do forame**. TRANSFELDT achou mais complicações e menos melhora do OSWESTRY com a fusão de toda a curva do que com a descompressão isolada. A fusão não deve terminar no **ápice** de uma curva nem numa cifose (p. 1860). A órtese serve só para os sintomas e não corrige nem impede a progressão (p. 1859).
+
+!tabela Estenose habitual contra estenose na escoliose degenerativa (Campbell's Operative Orthopaedics, 15ª ed., cap. 46, p. 1815, e cap. 47, p. 1851, 1852 e 1858 a 1860)
+| Aspecto | Estenose lombar habitual | Escoliose degenerativa |
+|---|---|---|
+| Claudicação neurogênica | sintoma central | 71% a 90% |
+| Flexão do tronco | alivia | muitas vezes não alivia |
+| Como o paciente se alivia | sentar, curvar-se, carrinho | apoiar o tronco nos braços, deitar |
+| Radiculopatia | recesso lateral, dermatômica | concavidade (forame) ou tração na convexidade |
+| Descompressão isolada | escolha | só sem cifose, SVA neutro e sem instabilidade |
+| Estenose foraminal da concavidade | | exige correção e descompressão indireta |
+!fim
+
+!questoes central=coluna-0156
+conceito: Na escoliose degenerativa do adulto, a claudicação neurogênica (71% a 90%) muitas vezes não melhora com a flexão do tronco, e o paciente se alivia apoiando o tronco nos braços ou deitando, ao contrário da estenose lombar habitual, que melhora com a flexão.
+como: O TEOT 2024 combinou melhora ou não com a flexão na escoliose degenerativa e se isso é igual ou diferente da estenose do canal lombar.
+armadilha: Generalizar o alívio com a flexão para toda claudicação neurogênica; o Campbell destaca a escoliose degenerativa justamente como exceção.
+!fim
+
+# Segmento adjacente e complicações {radar=oportunidade}
+
+A degeneração e a estenose do segmento vizinho a uma fusão, a "síndrome de transição", ocorrem em **35% a 45%** dos fundidos, pela hipermobilidade do nível livre, geralmente **acima** da fusão; a estenose abaixo é menos frequente e, no estudo de LEHMANN, sempre veio junto com a de cima. Pode exigir cirurgia em **30%**. Contribuem a **hipolordose pós-operatória**, a rigidez do segmento fundido e a lesão dos estabilizadores musculares posteriores, como o multífido (Campbell, cap. 46, p. 1820).
+
+Regras práticas: **L4-L5 é o local mais frequente de pseudartrose**; evitar um segundo nível de fusão; a fusão profilática de um disco degenerado não tem apoio; preservar lordose e equilíbrio sagital. As complicações são mais comuns com comorbidades, sobretudo **diabetes**. Para a trombose venosa profunda, a profilaxia fica na **compressão pneumática e na deambulação precoce**, porque o risco de **hematoma epidural** com anticoagulante supera o risco de embolia. A reoperação ocorre em **9% a 23%** (p. 1820).
+
+# Fechamento {radar=fundamento}
+
+A estenose lombar é a doença de um segmento móvel que envelheceu: disco baixo, facetas hipertróficas (sobretudo o processo articular superior) e ligamento amarelo dobrado. A anatomia decide a clínica: o canal central dá claudicação bilateral e não dermatômica; o recesso lateral, a zona de entrada de LEE, dá radiculopatia dermatômica, e quem o fecha é a artrose facetária. A claudicação neurogênica se reconhece pela postura: distância variável, alívio sentado ou curvado, melhor na ladeira, na bicicleta e no carrinho, pior na esteira, com pulsos presentes e elevação da perna normal. O tratamento começa conservador, porque a estenose lombar não paralisa; opera-se quem não tolera a vida restrita, com descompressão, e soma-se a fusão quando há instabilidade, listese, escoliose ou ressecção facetária extensa. Na escoliose degenerativa, a flexão muitas vezes não alivia, e a estenose foraminal da concavidade exige correção da curva.
+
+> **Na prova:** cascata de KIRKALDY-WILLIS com hipertrofia do **processo articular superior** e do **amarelo**; recesso lateral = **zona de entrada de LEE**, da borda medial do **processo articular superior** à borda medial do **pedículo**, fechado sobretudo pela **hipertrofia facetária**; congênita **central** e rara, PAGET adquirida e tratada com **calcitonina**; **L4-L5** e raiz **L5**; ciática em **91%**; central **bilateral e não dermatômica**, pior com **marcha e extensão**; neurogênica com distância **variável**, alívio **sentado ou fletido** (até 20 minutos), **melhor na ladeira, na bicicleta e no carrinho**, pior na **esteira**, teste da bicicleta **negativo**, dor **proximal para distal**; vascular **fixa**, alívio **em pé** em 5 minutos, pulsos ausentes; elevação da perna **indolor**; saco dural de **100 mm²** ou menos; RM confirma, não rastreia; conservador em **69%** aos 3 anos, repouso de no máximo 2 dias; descompressão é a **escolha**, fusão se **faceta inteira ou mais de 50% das duas**, listese, escoliose ou cifose; escoliose degenerativa: claudicação em **71% a 90%** que **não melhora com a flexão**.

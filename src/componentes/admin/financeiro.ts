@@ -1,5 +1,6 @@
 import { PLANOS as PRECOS } from '../../dados/planos'
-import type { PontoEmpilhado } from './AdminGraficos'
+/** Um ponto de série empilhada (mês com cartão e Pix, por exemplo). */
+export interface PontoEmpilhado { rotulo: string; rotuloCurto: string; partes: number[] }
 import {
   MES, NOME_MES, aReceberNoCartao, inicioDoMes, dataCancelamento, meioDe, pagaSemCobranca, precoDe,
   recorrentesNoCartao, renovacaoDoPix, renovaSozinha, somarMesChave, vigentesPorPessoa, type AssinaturaBase, type Cobranca,

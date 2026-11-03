@@ -1,16 +1,16 @@
 ---
 id: rockwood10-66-talus
-versao: 1
-titulo: Fraturas e luxações do tálus
+versao: 2
+titulo: Fraturas do tálus e do calcâneo
 especialidade: trauma
 acesso: gratis
 livro: Rockwood and Green's Fractures in Adults
-edicao: 10ª edição (2025)
-capitulo: Capítulo 66 · Fractures and Dislocations of the Talus
+edicao: 10ª edição (2025); Campbell's Operative Orthopaedics, 15ª edição (2026), cap. 93
+capitulo: Capítulos 66 e 67 · Fractures and Dislocations of the Talus; Calcaneus Fractures
 autores: David W. Sanders e Clayton I. Inculet
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (talus.pdf, 65 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (talus.pdf, 65 páginas) Ampliado em 01/11/2026 com o cap. 67 (calcâneo) do Rockwood and Green e o Campbell's Operative Orthopaedics, 15ª ed.
 subtemas: Fraturas do tálus e do calcâneo
-resumo: Vascularização, HAWKINS e VALLIER, incidências de CANALE e BRODEN, redução urgente do corpo luxado, placa lateral contra o varo, processos lateral e posterior, sinal de HAWKINS e a luxação subtalar.
+resumo: Calcâneo de ESSEX-LOPRESTI e SANDERS, BÖHLER e GISSANE, seio do tarso e as feridas; no tálus, vascularização, HAWKINS e VALLIER, incidências de CANALE e BRODEN, redução urgente do corpo luxado, placa lateral contra o varo, processos lateral e posterior, sinal de HAWKINS e a luxação subtalar.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -311,3 +311,286 @@ como: Não há questão de TEOT ou TARO sobre a luxação subtalar no acervo. O 
 O grande debate é o **momento da cirurgia**. Estudos clássicos defendiam a fixação de emergência do colo para reduzir complicações de partes moles e a necrose; comparações retrospectivas de fixação precoce e tardia não mostraram diferença de resultado, função ou complicações. A conclusão do capítulo: o momento depende da **gravidade da lesão**, não da tentativa de prevenir a necrose. Sem ferida aberta, contaminação, necrose de pele ou comprometimento neurovascular, o colo pode ser reduzido e fixado quando houver os recursos ideais. O que não espera é a **redução do corpo luxado**.
 
 As taxas de necrose e de artrose continuam altas apesar dos avanços, e as opções para a necrose terminal ainda sacrificam articulações. A impressão 3D e os implantes personalizados, como a prótese total do tálus, são promissores, mas sem resultado de longo prazo.
+
+# Calcâneo: anatomia e mecanismo {radar=fundamento}
+
+O calcâneo divide o tema com o tálus nas provas, e a banca gosta de juntar os dois: o tálus é o segundo osso do tarso mais fraturado porque o primeiro é o calcâneo. Segundo o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67), o calcâneo responde por **65% das lesões do tarso**, e **20%** das fraturas aparecem associadas ao álcool. O objetivo de qualquer tratamento é o mesmo: superfície articular anatômica, **altura e largura** restauradas, marcha sem dor e volta ao trabalho.
+
+## As peças que a prova usa
+
+- **Facetas:** três superiores (posterior, média e anterior) com o tálus e uma anterior com o cuboide. A **posterior** é a maior, apoiada num osso denso chamado **talâmico**.
+- **Sustentáculo do tálus:** carrega a faceta média e sustenta o colo do tálus; fica **2,5 cm abaixo da ponta do maléolo medial** e se prende ao tálus pelo ligamento talocalcâneo interósseo e pelo deltoide. Na face inferior, um sulco forma o **túnel fibro-ósseo do flexor longo do hálux**, que o parafuso mal dirigido pode lesar.
+- **Ângulo crítico de GISSANE:** pilar cortical que vai do processo anterior à faceta posterior e recebe o processo lateral do tálus.
+- **Tuberosidade:** o Aquiles se insere nos seus dois terços posterior e inferior; embaixo, o coxim plantar, imóvel, absorve o choque e pode ficar doloroso depois da fratura.
+- **Processo anterior:** extra-articular, é a estrutura periférica que mais quebra; recebe o ligamento bifurcado e parte da origem do extensor curto dos dedos.
+- **Lateral:** os fibulares passam sobre o ligamento calcaneofibular, com a bainha presa ao tubérculo fibular; na explosão da parede lateral, essa inserção e a bainha podem se romper.
+
+## Como o calcâneo quebra
+
+A fratura articular nasce da **carga axial** no calcanhar, transmitida pelo **processo lateral do tálus**, que funciona como cunha (cerca de 50% da carga do pé passa pelo calcâneo). ESSEX-LOPRESTI descreveu um **traço primário** no ângulo de GISSANE, que separa uma parte anterior de uma posterior e se dissipa para medial até o sustentáculo, e um **traço secundário**: se a força vai para trás, sai atrás da faceta e cria a **depressão articular**; se a força é axial, com a contraforça do Aquiles, sai pela tuberosidade e cria a **língua**. CARR mostrou que o traço primário fica mais lateral com o retropé em valgo e mais medial com o retropé em varo.
+
+O detalhe que explica a cirurgia: o **fragmento sustentacular**, chamado **constante**, sobe preso ao tálus pelos ligamentos, enquanto a metade lateral da faceta, sem ligação, fica afundada e rodada dentro do corpo. O resultado é a deformidade típica: **perda de altura, alargamento do calcanhar, tuberosidade em varo e explosão da parede lateral**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93), lembra que o fragmento "constante" pode não ser tão constante, num estudo, em **42%** dos pacientes, e que a espícula medial presa ao sustentáculo é empurrada contra a pele medial.
+
+**Até 50%** têm outra lesão: **10%** fratura da coluna lombar e **25%** outra lesão do membro inferior (planalto, pilão, colo do tálus). Para o Campbell, as articulares são cerca de **75%** das fraturas do calcâneo.
+
+!tabela Números do calcâneo (Rockwood and Green, cap. 67; Campbell, cap. 93)
+| Dado | Valor |
+| --- | --- |
+| Fração das lesões do tarso | 65% |
+| Fraturas articulares | cerca de 75% (Campbell) |
+| Lesão associada | até 50%; coluna lombar 10%; membro inferior 25% |
+| Língua | cerca de 15% das fraturas |
+| Expostas | até 10% |
+| Síndrome compartimental do pé (alta energia) | 10% a 50% |
+!fim
+
+# Imagem do calcâneo {radar=confirmado}
+
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67), pede de saída o **perfil do retropé**, a **axial de HARRIS** e a **BRODEN**, além das radiografias do pé e do tornozelo, e lembra da coluna lombar e do calcanhar oposto. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93), fala em cinco incidências: perfil, axial, AP e oblíqua do pé e BRODEN.
+
+!tabela O que cada incidência mostra no calcâneo
+| Incidência | Técnica | O que mostra |
+| --- | --- | --- |
+| Perfil | do retropé | perda de altura, depressão e rotação da faceta; **BÖHLER** (normal **25 a 40 graus**) cai e **GISSANE** aumenta; separa língua de depressão |
+| Axial de HARRIS | do calcanhar | **perda de altura, aumento da largura, rotação do fragmento sustentacular, angulação da tuberosidade** (varo) |
+| AP e oblíqua do pé | padrão | processo anterior e **calcaneocubóidea** (traço chega a ela em até 48%) |
+| BRODEN | perna em rotação interna (Rockwood: 30 a 40 graus, raio a 40, 30, 20 e 10 graus cranial; Campbell: 40 graus, raio 10 a 15 graus cefálico) | **faceta posterior da subtalar** |
+| TC | corte coronal perpendicular à faceta posterior, fatias de 3 mm | o padrão da faceta, o sustentáculo e a forma da tuberosidade |
+!fim
+
+Dois cuidados com o **BÖHLER**: ele só cai quando a faceta inteira afunda e se separa do sustentáculo; se o traço divide a faceta em metades, aparece um **duplo contorno** e o ângulo pode ficar normal. E a axial de HARRIS costuma doer demais na fase aguda. Para o **processo anterior**, o raio inclinado 20 graus para cima e para trás tira o processo de baixo do colo do tálus.
+
+Na **TC**, o corte **coronal** é o que mais informa sobre a faceta posterior, o sustentáculo e a tuberosidade; o axial mostra a calcaneocubóidea e o sagital, a depressão e a rotação da faceta. A reconstrução 3D não melhorou a avaliação em relação à 2D. O Campbell acrescenta que a TC axial em janela de partes moles mostra a **luxação dos fibulares** e a posição do **flexor longo do hálux**.
+
+!questoes central=trauma-0897
+conceito: A axial de HARRIS mostra a perda de altura, o aumento da largura, a rotação do fragmento sustentacular e a angulação da tuberosidade; BRODEN mostra a faceta posterior; o perfil mede BÖHLER e GISSANE.
+como: Uma prova sem ano descreveu exatamente essas quatro funções e pediu o nome da incidência (HARRIS), com as outras incidências do retropé como distratores.
+armadilha: BRODEN: é a incidência da faceta posterior da subtalar, não da largura e do varo.
+!fim
+
+# Classificação: ESSEX-LOPRESTI e SANDERS {radar=confirmado}
+
+**ESSEX-LOPRESTI** (radiografia) separa a **língua**, em que a faceta continua presa à tuberosidade, da **depressão articular**, em que a faceta se solta. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93), define pelo ponto de saída do traço secundário: atrás da faceta e à frente do Aquiles é depressão; abaixo da inserção do Aquiles é língua. O limite, segundo o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67): a língua "extra-articular" (SANDERS IIC) pode ter componente articular na TC (IIA ou IIB), o que muda a conduta.
+
+**SANDERS** é a mais usada. É uma classificação de **TC** que olha só a **faceta posterior**: o algarismo romano dá o número de fragmentos, e as letras A, B e C marcam onde passam os traços, **de lateral para medial**, usando o tálus como referência. O Rockwood fala nos cortes **coronal e axial** e lembra que, no original, SANDERS usava um corte no nível do sustentáculo; o Campbell diz que o sistema usa o **corte coronal na parte mais larga da faceta posterior**.
+
+!tabela Classificação de SANDERS (Rockwood and Green, cap. 67)
+| Tipo | Faceta posterior | Subtipos e conduta |
+| --- | --- | --- |
+| I | sem desvio, qualquer número de traços | não operatório |
+| II | dois fragmentos (um traço) | IIA, IIB, IIC |
+| III | três fragmentos (dois traços), fragmento central afundado | IIIAB, IIIAC, **IIIBC** |
+| IV | quatro ou mais fragmentos | restaurar a forma e fusão primária |
+!fim
+
+Quanto mais **medial** o traço, mais difícil reduzir pelo lado lateral. A classificação é **prognóstica**: em 108 fraturas seguidas por 10 a 20 anos, o tipo III teve **6,5 vezes mais artrose subtalar avançada** que o II, e a fusão subtalar foi necessária em menos de 20% dos II contra **47,4%** dos III; a presença da **linha C** (IIIAC e IIIBC) previu prognóstico pior. A concordância entre observadores é baixa (kappa 0,22 sem subtipos e 0,18 com eles). O Campbell resume a conduta: tipo I fechado, II e III redução aberta conforme o paciente, IV conservador ou cirúrgico, pensando em técnica minimamente invasiva para refazer a arquitetura ou em artrodese primária.
+
+!questoes central=trauma-0857,trauma-0571 relacionadas=trauma-0695
+conceito: SANDERS é classificação de TC da faceta posterior, lida no corte coronal da parte mais larga da faceta; o número romano dá os fragmentos e as letras A, B, C a posição dos traços de lateral para medial.
+como: O TARO 2011 perguntou o plano da TC em que SANDERS se baseia (coronal); o TEOT 2024 juntou faceta e plano (faceta posterior, corte coronal). Uma prova do CET-PR mostrou uma TC e pediu o grau (IIIBC: três fragmentos, traços nas posições B e C, a mais medial).
+armadilha: Corte axial ou sagital: o sagital mostra depressão e rotação, mas a classificação é lida no coronal.
+armadilha: Faceta média: SANDERS só conta a faceta posterior.
+!fim
+
+# Partes moles: língua, bolhas, compartimento e exposição {radar=confirmado}
+
+No calcâneo, a pele decide o momento e a via da cirurgia. Segundo o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67):
+
+- **Língua com pele tensa:** a língua é cerca de **15%** das fraturas. O traço secundário sai pela tuberosidade, e o tríceps sural puxa o fragmento para cima, **tensionando a pele posterior**. Sem tratamento de emergência, a pele do calcanhar e do tornozelo necrosa, o que aconteceu em **até 21%** das línguas na série de GARDNER. A conduta é a **redução de emergência** do fragmento da tuberosidade. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93), acrescenta os grupos de risco: quem não se feriu em queda, fumantes, desvio maior (mas pode ocorrer com pouco desvio) e chegada tardia.
+- **Bolhas:** surgem em **24 a 48 horas**; as hemorrágicas são mais comuns no calcâneo e deixam mais cicatriz. A incisão espera o **teste do enrugamento** (a pele volta a enrugar), o que leva **7 a 21 dias**.
+- **Síndrome compartimental do pé:** **10% a 50%** nas fraturas de alta energia; o sintoma mais constante é a **dor intensa** desproporcional; a sequela é a **garra dos dedos**. O diagnóstico é clínico, e a fasciotomia do pé continua controversa. O Campbell aponta o **SANDERS IV** como o melhor preditor de síndrome compartimental.
+- **Exposta:** até **10%**; a ferida mais comum é a **transversa medial** (a espícula sustentacular furando a pele por dentro, para o Campbell). Infecção profunda **até 39%** (Campbell); em média 2,8 cirurgias e amputação abaixo do joelho em **5% a 8%** (Rockwood).
+
+!questoes central=trauma-0102
+conceito: Na língua com grande desvio, o tríceps sural puxa a tuberosidade contra a pele posterior, que necrosa em até 21% sem redução de emergência.
+como: O TARO 2017 perguntou a complicação precoce mais frequente da língua com grande desvio (necrose da pele posterior), com síndrome compartimental e lesões nervosas como distratores.
+armadilha: Síndrome compartimental: existe na fratura de alta energia, mas a complicação típica da língua desviada é a pele posterior.
+!fim
+
+# Fraturas extra-articulares: tuberosidade, sustentáculo e processo anterior {radar=confirmado}
+
+## Tuberosidade
+
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67), conta **1% a 3%** das fraturas do calcâneo, por queda de baixa energia com dorsiflexão forçada, em osso osteoporótico (e, nas avulsões, em mulheres idosas com neuropatia). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93), trata as avulsões como fraturas de insuficiência, em osteoporose e diabetes. As duas classificações concordam no tipo que importa: o **tipo II, em bico**.
+
+!tabela Fraturas da tuberosidade do calcâneo
+| Tipo | Rockwood and Green (BEAVIS) | Campbell |
+| --- | --- | --- |
+| I | casca cortical arrancada na inserção do Aquiles | sleeve (casca cortical pequena) |
+| II | **bico (beak)**: fragmento grande, às vezes até a faceta posterior, com **pele posterior em risco** | **bico**: traço oblíquo que sai logo atrás da faceta posterior; **redução e fixação rápidas** |
+| III | não há | infrabursal: avulsão do terço médio da face posterior |
+!fim
+
+As partes moles estão comprometidas em cerca de **20%**, e a necrose de pele vem do atraso no tratamento ou na chegada. Desvio menor que **1 cm** com pele boa: tala em **leve equino** e controle próximo. Língua intra-articular, exposta ou pele em risco: **cirurgia de emergência**. A fixação com parafusos pode falhar pela tração do tríceps e pela cortical plantar fina; reforça-se com cerclagem, âncoras e, se o gastrocnêmio estiver curto, a recessão de STRAYER.
+
+!questoes central=trauma-0676
+conceito: O tipo II (bico) da tuberosidade é o fragmento grande que ameaça a pele posterior e pede redução e fixação rápidas.
+como: O TARO 2024 pediu o tipo de fratura da tuberosidade que exige redução e fixação rápidas pelo risco às partes moles (II).
+armadilha: Tipo I: é só a casca cortical arrancada, sem ameaça à pele.
+!fim
+
+## Sustentáculo do tálus
+
+Para o Campbell, a fratura isolada do sustentáculo é **rara**, passa despercebida na radiografia, pode entrar na articulação apesar de chamada extra-articular e costuma vir com outras fraturas do pé e do tornozelo. O **acesso medial** dá bons resultados; sem cirurgia, a **pseudartrose** deixa o fragmento migrar e pode causar **síndrome do túnel do tarso**. O Rockwood lembra a vizinhança: o **flexor longo do hálux** corre no sulco sob o sustentáculo. O acesso medial do Campbell, usado também junto com o seio do tarso, passa pelo retináculo dos flexores, afasta o feixe tibial posterior para a frente e levanta o abdutor do hálux do calcâneo.
+
+!questoes central=trauma-0324 relacionadas=trauma-0539
+conceito: A fratura do sustentáculo é rara e passa despercebida; o acesso medial dá bons resultados, e a pseudartrose pode deslocar o fragmento contra o túnel do tarso; o flexor longo do hálux corre no sulco sob o sustentáculo.
+como: O TEOT 2023 perguntou quando a via medial isolada está indicada na fratura do calcâneo (acometimento do sustentáculo). Uma prova da SBOT-SP perguntou que estrutura se interpõe e causa pseudartrose do sustentáculo (flexor longo do hálux).
+armadilha: Fragmento do processo anterior ou da tuberosidade: são lesões laterais e posteriores, abordadas por outras vias.
+alerta: Na questão da SBOT-SP (`trauma-0539`), o gabarito foi a interposição do flexor longo do hálux. Nem o capítulo 67 do Rockwood and Green nem o capítulo 93 do Campbell falam em interposição: o Rockwood só diz que o tendão corre no sulco sob o sustentáculo e pode ser lesado por parafuso, e o Campbell diz que a pseudartrose pode causar síndrome do túnel do tarso. A resposta da banca é coerente com a anatomia; guarde-a, sabendo que os livros não a trazem.
+!fim
+
+## Processo anterior
+
+Avulsão pelo ligamento **bifurcado** na inversão (Campbell) ou compressão entre o cuboide e o tálus na dorsiflexão com eversão (Rockwood). É **0,5% a 10%** das fraturas do pé, mais em mulheres de 40 a 55 anos, com dor **3 a 4 cm distal ao maléolo lateral**, e muitas vezes passa por **entorse**. DEGAN e MORREY: tipo I avulsão da ponta sem desvio, II desviada sem a calcaneocubóidea, III desviada com a calcaneocubóidea. A TC confirma. Trata-se sem cirurgia quando envolve **menos de 25% da calcaneocubóidea**; desvio ou mais de 25% pedem fixação (Rockwood); pseudartrose sintomática pode ser fixada ou ressecada.
+
+## Fratura-luxação do calcâneo
+
+Descrita por COURT-BROWN em 1986: o fragmento superolateral fica com o corpo lateral e todo o bloco sobe **para baixo da fíbula**, acima do processo lateral do tálus. Pistas: **tilt do tálus** em varo, **flake** da ponta da fíbula, fibulares luxados e um duplo contorno modificado no perfil. Passa despercebida com facilidade e exige **redução aberta urgente**.
+
+# Tratamento: tempo e vias de acesso {radar=confirmado}
+
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67), indica cirurgia na **faceta posterior desviada** em paciente clinicamente apto, na exposta e na fratura-luxação; trata sem cirurgia as fraturas sem desvio, as extra-articulares com menos de 1 cm, o processo anterior com menos de 25% da calcaneocubóidea e o paciente com doença vascular periférica, diabetes mal controlado, tabagismo pesado ou marcha só domiciliar. Uma metanálise mostrou **fusão subtalar precoce 4,4 vezes maior** no não operado, e o estudo canadense (262 não operados contra 249 pelo lateral estendido), **5,5 vezes mais** fusão subtalar no não operado.
+
+!tabela Vias para a fratura articular do calcâneo
+| Via | Quando | Pontos-chave |
+| --- | --- | --- |
+| Percutânea | logo que o paciente estiver estável, idealmente até 2 semanas | língua extra-articular (ESSEX-LOPRESTI modificada por TORNETTA), pinos de 3,2 mm e parafusos canulados de 6,5 mm |
+| Seio do tarso | 0 a 2 semanas; ideal até 10 dias (Rockwood); janela de 10 a 14 dias (Campbell) | incisão de 2 a 5 cm da ponta do maléolo lateral à base do quarto metatarso; atraso maior que 14 dias aumenta a complicação de ferida |
+| Lateral estendida | 14 a 21 dias, com sinal do enrugamento | retalho de espessura total que leva a **artéria calcânea lateral**; torniquete até 2,5 horas; hoje raramente usada (Campbell) |
+| Medial | associada ao seio do tarso | reduz diretamente o sustentáculo; exige cuidado com o feixe neurovascular |
+!fim
+
+## Lateral estendida: o retalho e a artéria
+
+A pele lateral do calcanhar é irrigada principalmente pela **artéria calcânea lateral**, que corre junto com o **nervo sural**, a meio caminho entre a fíbula e o Aquiles. O ramo vertical da incisão fica logo ao lado do Aquiles, de modo que a dissecção passa atrás e por baixo da artéria e a preserva **dentro do retalho de espessura total**. A faca vai direto ao osso, a esquina é arredondada para evitar a **necrose apical**, o **calcaneofibular é descolado** do calcâneo, e fios de 1,6 mm na fíbula, no colo do tálus e no cuboide afastam o retalho sem tocá-lo ("no-touch"). Os fibulares são subluxados, nunca luxados.
+
+!questoes central=trauma-0138
+conceito: O retalho da via lateral estendida vive da artéria calcânea lateral, que corre com o sural entre a fíbula e o Aquiles; o ramo vertical junto ao Aquiles a mantém no retalho.
+como: O TARO 2015 perguntou a principal fonte vascular do retalho fasciocutâneo da via lateral estendida (artéria calcânea lateral), contra ramos da fibular e da tibial posterior.
+armadilha: Artéria do seio do tarso: irriga o tálus, não a pele lateral do calcanhar.
+!fim
+
+## Seio do tarso: o que se corta e o que se guarda
+
+Pelo seio do tarso, o Rockwood eleva ou divide o extensor curto dos dedos, protege a bainha dos fibulares, limpa o seio e **preserva o ligamento interósseo** (estabilidade a longo prazo). Um pino de Schanz tira a tuberosidade do varo, a faceta é elevada e fixada com um ou dois parafusos de 2,7 ou 3,5 mm de lateral para o **sustentáculo**, e um parafuso de 6,5 mm da tuberosidade sustenta a faceta. Na versão de KOCHER modificada da figura 67-13, os fibulares descem e o **calcaneofibular é identificado e deixado no lugar**, com a faceta vista inteira. O Campbell abre o **retináculo inferior dos fibulares** junto à haste do retináculo inferior dos extensores e lembra que o **sural está sob a incisão em 70%** dos casos. É o mesmo acesso de uma futura artrodese subtalar; na descompressão lateral da consolidação viciosa (BRALY), o Campbell **incisa o calcaneofibular** para expor a parede lateral, sem reconstruí-lo.
+
+!questoes central=trauma-0799
+conceito: Na via do seio do tarso, eleva-se o extensor curto, protegem-se os fibulares e o sural, preserva-se o ligamento interósseo; o calcaneofibular aparece no fundo, entre os fibulares e a faceta posterior.
+como: O TARO 2025 perguntou a estrutura seccionada para melhorar a exposição da subtalar na via do seio do tarso (ligamento calcaneofibular).
+armadilha: Ligamento talocalcâneo interósseo: é o que o Rockwood manda preservar, pela estabilidade da subtalar.
+alerta: No TARO 2025 (`trauma-0799`), o gabarito foi a secção do ligamento calcaneofibular. O capítulo 67 do Rockwood and Green mostra o calcaneofibular identificado e deixado no lugar na via do seio do tarso estendida, e o descola do osso só na via lateral estendida; o Campbell incisa o calcaneofibular na descompressão lateral da consolidação viciosa. Guarde o gabarito, sabendo que o livro de adultos não manda cortá-lo nessa via.
+!fim
+
+## Sem enxerto e com fusão só quando não dá
+
+O autor do Rockwood **nunca enxertou** o defeito sob a faceta e nunca teve colapso; o Campbell também não achou diferença com ou sem enxerto. A **artrodese subtalar primária** fica para a cominução irreconstruível (SANDERS III grave e todos os IV); no ensaio de BUCKLEY, ORIF e ORIF com fusão no IV deram resultado igual, e o Campbell cita consolidação mais rápida com a fusão. Pós-operatório: sem carga por **10 a 12 semanas**. Há curva de aprendizado: **35 casos** no artigo original de SANDERS, **20** em AHN (Campbell).
+
+# Complicações e resultados do calcâneo {radar=confirmado}
+
+!tabela Complicações do calcâneo (Rockwood and Green, cap. 67; Campbell, cap. 93)
+| Complicação | Número | Detalhe |
+| --- | --- | --- |
+| Deiscência da ferida | **até 25%** | a mais comum após a cirurgia; até 4 semanas depois, no **ápice** da incisão |
+| Infecção profunda | 1% a 4% nas fechadas; até 19% nas expostas | osteíte superficial costuma manter o implante até consolidar |
+| Lesão do sural | até 15% | lesão nervosa mais comum, na via lateral |
+| Artrose subtalar radiográfica | perto de 100% | lesão da cartilagem no impacto |
+| Artrose subtalar sintomática | **cerca de 30%** | fusão em 47% dos SANDERS III e 19% dos II; 44 meses em média |
+| Luxação dos fibulares | 28% das fraturas | tratada em só cerca de 10% (Campbell) |
+!fim
+
+## Ferida
+
+A **deiscência** é a complicação mais comum depois da cirurgia: até **25%**, aparece até quatro semanas depois e prefere o **ápice** do L (necrose apical). Fatores de risco: **tabagismo**, diabetes, fratura exposta, IMC alto e fechamento em **camada única**. O Campbell dá números parecidos para o acesso em L: **25%** de complicações de ferida, **21%** reoperados, necrose marginal de **2% a 11%**. A conduta: parar o movimento, antibiótico oral e curativo; vácuo nas maiores e retalho livre se tudo falhar. Osteomielite difusa pede retirada do implante, espaçador com antibiótico e, depois, fusão com enxerto estrutural.
+
+!questoes central=trauma-1087
+conceito: A complicação mais comum após a osteossíntese do calcâneo é a deiscência ou necrose da ferida, até 25%, no ápice da incisão lateral.
+como: O TARO 2013 perguntou a complicação mais frequente após a osteossíntese (necrose da ferida), contra infecção profunda, lesão do sural e artrose.
+armadilha: Lesão do sural: é a complicação nervosa mais comum (até 15%), não a mais comum de todas.
+!fim
+
+## Artrose, consolidação viciosa e dor
+
+Mesmo com redução anatômica, a **artrose subtalar radiográfica** chega perto de **100%**, porque a cartilagem já se lesa no impacto; a **sintomática** fica em cerca de **30%**. A fusão tardia depois de ORIF é **in situ** e vai melhor que a do não operado, que exige corrigir a consolidação viciosa junto (RADNAY). O Campbell lembra que os sintomas melhoram por pelo menos 2 anos, e às vezes até 6.
+
+A **consolidação viciosa** do não operado tem uma lista previsível: artrose subtalar e calcaneocubóidea, **impacto subfibular** pela parede lateral alargada, fibulares presos ou luxados, **perda de altura** com o tálus horizontal e impacto anterior no tornozelo, desalinhamento do retropé e neurite tibial ou sural. STEPHENS e SANDERS classificaram e trataram por tipo.
+
+!tabela Consolidação viciosa do calcâneo (STEPHENS e SANDERS)
+| Tipo | Achado na TC | Tratamento |
+| --- | --- | --- |
+| I | exostose da parede lateral, com ou sem artrose bem lateral | exostectomia e tenólise dos fibulares |
+| II | exostose e artrose subtalar em toda a largura | o anterior e artrodese subtalar in situ |
+| III | exostose, artrose e corpo em varo ou valgo | o anterior e osteotomia do calcâneo |
+!fim
+
+A perda de altura com tálus horizontal pede a **artrodese subtalar com bloco de distração** (CARR, modificando GALLIE), com enxerto tricortical. Outras queixas: dor no coxim plantar (só tem palmilha), exostoses plantares (não operar por incisão plantar) e compressão do **nervo tibial posterior**, mais comum após o tratamento não operatório. O Campbell insiste que o **varo** da tuberosidade é mal tolerado e pede a axial de HARRIS no intraoperatório.
+
+!questoes central=trauma-0302
+conceito: Após a fratura articular do calcâneo, a artrose subtalar radiográfica chega perto de 100%, mas a sintomática fica em cerca de 30%.
+como: Uma prova sem ano pediu a incidência de artrose pós-traumática sintomática (30%), com valores maiores como distratores.
+armadilha: 100%: é a artrose radiográfica, não a sintomática.
+!fim
+
+# Tálus: o que o Campbell acrescenta {radar=confirmado}
+
+## Mecanismo do colo e o maléolo medial
+
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 66), registra a primeira descrição do mecanismo, de ANDERSON: **dorsiflexão do tornozelo com força axial**, a barra do leme batendo no pé do piloto, o "astrágalo do aviador". O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93), acrescenta que a **fratura do maléolo medial** se associa comumente à fratura **desviada** do colo, que a do processo lateral vem com luxação dos fibulares e que a coluna lombar deve ser examinada.
+
+!questoes central=trauma-0301
+conceito: O colo do tálus quebra em dorsiflexão com carga axial; a fratura do maléolo medial acompanha com frequência a fratura desviada do colo.
+como: Uma prova sem ano perguntou o mecanismo da fratura do colo (flexão dorsal). O TARO 2008 repetiu a pergunta da fratura mais associada à do colo (maléolo medial).
+armadilha: Flexão plantar: é o mecanismo do processo posterior, não do colo.
+!fim
+
+## Vascularização com números
+
+O Campbell detalha a irrigação do corpo e dá números que o Rockwood não traz.
+
+!tabela Irrigação do corpo do tálus (Campbell, cap. 93)
+| Artéria | Origem | Área |
+| --- | --- | --- |
+| Do canal do tarso | **tibial posterior**, cerca de 1 cm acima da divisão em plantares | fonte **mais constante** do corpo, com 4 a 6 vasos diretos |
+| Deltoide | ramo da artéria do canal do tarso | **um quarto a metade medial** do corpo |
+| Do seio do tarso | fibular perfurante, dorsal do pé ou anastomose das duas | um oitavo a um quarto lateral |
+| Do tubérculo posterior | tibial posterior (mais comum) ou fibular | processo posterior |
+| Contribuição total | | tibial posterior **47,0%**, tibial anterior 36,2%, fibular 16,9% |
+!fim
+
+Há uma diferença de detalhe entre os livros: o Rockwood descreve o ramo deltoide saindo da própria tibial posterior; o Campbell o faz sair da artéria do canal do tarso. Nos dois, a origem final é a tibial posterior. O Campbell também descreve um ramo direto da tibial posterior para o colo medial, em risco no acesso anteromedial e preservado com a osteotomia do maléolo medial.
+
+!questoes relacionadas=pe-tornozelo-0096
+conceito: A artéria do canal do tarso é ramo da tibial posterior e a fonte mais constante do corpo do tálus; a do seio do tarso vem do lado lateral (fibular perfurante e dorsal do pé).
+como: Uma prova sem ano pediu a afirmativa correta sobre a vascularização do tálus (a artéria do canal do tarso é ramo da tibial posterior).
+armadilha: Artéria do seio do tarso como ramo da tibial posterior: ela vem da fibular perfurante e da dorsal do pé.
+!fim
+
+## HAWKINS em números e o sinal
+
+O Campbell resume os números originais: HAWKINS (1970, 57 fraturas) teve **necrose de 0%** no tipo I, **42%** no II e **91%** no III, com pseudartrose de 11% no III; CANALE e KELLY (71 fraturas, 12,7 anos) acharam **50%** de necrose no II e criaram o tipo IV; COLTART, na guerra, 35% com luxação subtalar e 95% com tornozelo e subtalar. Nas séries modernas, necrose de 20% a 49%, artrose de 36% a 94% e reoperação de 17% a 44%. Sobre o **sinal de HAWKINS** (6 a 8 semanas, exclui a necrose), os livros divergem no adjetivo: o Rockwood o chama de altamente específico de viabilidade; o Campbell, de **sensível mas não específico**. Os dois concordam que a ausência do sinal não garante a necrose. O Campbell pede a RM só depois de **2 a 3 meses**, quando o edema pós-operatório passa.
+
+## Lesão osteocondral do domo: BERNDT e HARTY
+
+Em 1959, BERNDT e HARTY mostraram que a osteocondrite dissecante do tálus é, na verdade, uma **fratura transcondral traumática**. O trauma agudo explica **85%** (98% das laterais e 70% das mediais), segundo o Campbell (cap. 94).
+
+!tabela Lesão osteocondral do tálus (Campbell, cap. 94 e cap. 38)
+| Estágio de BERNDT e HARTY | Achado | Medial | Lateral |
+| --- | --- | --- | --- |
+| I | compressão subcondral | inversão, flexão plantar e rotação lateral da tíbia | inversão e dorsiflexão forte |
+| II | fragmento parcialmente destacado | mais posterior, profunda, em taça | mais anterior, rasa, em bolacha |
+| III | fragmento **completamente destacado, no leito** | costuma ficar no leito; tratamento conservador comparável | opera cedo: alta falha de consolidação |
+| IV | fragmento desviado, solto | cirúrgico | cirúrgico |
+!fim
+
+Metade dessas lesões passa despercebida no pronto-socorro como entorse; derrame persistente, travamento ou falseio 4 a 5 semanas depois pedem investigação. O capítulo pediátrico do Campbell resume a conduta: estágios I e II e o III medial podem ser observados; III lateral e IV, cirurgia.
+
+!questoes central=trauma-0169
+conceito: BERNDT e HARTY: I compressão, II parcialmente destacado, III completamente destacado mas no leito, IV desviado; lesões mediais posteriores e profundas, laterais anteriores e rasas.
+como: O TARO 2014 descreveu o fragmento destacado e posicionado sobre o leito e pediu o estágio (III), com II e IV como distratores.
+armadilha: Estágio II: o fragmento ainda está parcialmente preso; no III já se soltou, mas não saiu do lugar.
+armadilha: Estágio IV: só quando o fragmento sai do leito.
+!fim
+
+# Fechamento {radar=fundamento}
+
+> **Na prova, o que a versão 2 acrescenta:** o calcâneo é 65% das lesões do tarso; ESSEX-LOPRESTI separa língua e depressão; SANDERS conta os fragmentos da faceta posterior no corte coronal da TC, com letras de lateral para medial e pior prognóstico com a linha C; HARRIS mostra largura, altura, varo e sustentáculo; a língua desviada necrosa a pele posterior e pede redução de emergência; o tipo II (bico) da tuberosidade exige fixação rápida; o sustentáculo vai pela via medial; a artéria calcânea lateral nutre o retalho lateral estendido; a deiscência (até 25%) é a complicação cirúrgica mais comum e a artrose subtalar sintomática fica em 30%; no tálus, o maléolo medial acompanha o colo desviado, a artéria do canal do tarso vem da tibial posterior e BERNDT e HARTY III é o fragmento solto no leito.

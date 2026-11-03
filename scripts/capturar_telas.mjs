@@ -1,5 +1,5 @@
 // Capturas de páginas do site para revisão de design (18/10/2026).
-// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--producao] [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--com-plano] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO]
+// Uso: node scripts/capturar_telas.mjs <rota> <prefixo> [--producao] [--sem-conta] [--escuro] [--sistema-escuro] [--com-dados] [--com-plano] [--sem-assinatura] [--admin] [--agora ISO] [--roteiro ARQ.mjs] [--pasta DIR] [--sn CENARIO] [--estreito] [--aviso] [--sem-cracha]
 // --sn: o Simulado Nacional de outubro no Supabase falso (e o relógio do navegador no momento do cenário):
 //   antes (não inscrito) | inscrito | aberto | andamento | entregue (resultado e ranking) | encerrado | ausente (sem a parte 32: 404)
 // Ex.: node scripts/capturar_telas.mjs /desempenho desempenho-antes --pasta /tmp/telas
@@ -33,21 +33,34 @@ function sincronizar(usuario, alteracoes) {
   return [200, saida]
 }
 // Ranking de exemplo: 62 pessoas, a conta de exemplo em #9 (geral) ou #4 (semana).
+// Cenários para os testes do Salão dos Cem (só aqui, nunca em produção): RK_CENARIO=lider | top3 | top10 | top50 |
+// top100 | fora100 | empate | sem-historico | vazio | erro | poucos. RK_LIDER troca o nome do líder (cerimônia).
 const NOMES_RANKING = ['Marina A.', 'Rafael T.', 'Camila S.', 'Pedro H.', 'Luísa M.', 'Gustavo R.', 'Beatriz F.', 'Thiago L.', 'Tales S.', 'Juliana C.', 'Henrique B.', 'Larissa P.', 'Vinícius O.', 'Natália G.', 'Eduardo V.', 'Fernanda K.', 'Rodrigo N.', 'Amanda D.', 'Felipe Q.', 'Isabela W.']
+const RK = process.env.RK_CENARIO || ''
+const VITRINES = [['questoes-1000', 'dias-30', 'questoes-50'], ['questoes-500'], null, ['dias-15', 'questoes-250'], null, null, ['questoes-2000', 'dias-7', 'dias-3']]
+const SERVICOS = ['Hospital das Clínicas', null, null, 'Santa Casa', null, null, null, 'Hospital do Trabalhador', null]
 function rankingExemplo(periodo, comNomes) {
   const semana = periodo === 'semana'
-  const voce = semana ? 4 : 9
-  return Array.from({ length: 62 }, (_, i) => {
+  if (RK === 'vazio') return []
+  const voce = { lider: 1, top3: 3, top10: 9, top50: 37, top100: 74, fora100: 137, poucos: 0 }[RK] ?? (semana ? 4 : 9)
+  const quantos = RK === 'top100' || RK === 'fora100' ? 100 : 62
+  const linhas = Array.from({ length: quantos }, (_, i) => {
     const posicao = i + 1
-    const nome = posicao === voce ? 'Tales S.' : NOMES_RANKING[(i + (semana ? 7 : 0)) % NOMES_RANKING.length].replace('Tales S.', 'Sérgio A.')
-    const total = Math.round((semana ? 612 : 4873) / (1 + i * 0.11) - i * (semana ? 1.3 : 7))
+    let nome = posicao === voce ? 'Tales S.' : NOMES_RANKING[(i + (semana ? 7 : 0)) % NOMES_RANKING.length].replace('Tales S.', 'Sérgio A.')
+    if (posicao === 1 && process.env.RK_LIDER) nome = process.env.RK_LIDER
+    let total = Math.round((semana ? 612 : 4873) / (1 + i * 0.11) - i * (semana ? 1.3 : 7))
+    if (RK === 'empate' && (posicao === 8 || posicao === 9)) total = 2611
     const apelido = comNomes ? nome : nome.split(/\s+/).map((p) => p[0]).join('. ') + '.'
+    const historico = RK !== 'sem-historico'
     return {
-      posicao, apelido, total, total_geral: semana ? total * 7 : total, eh_voce: comNomes && posicao === voce,
-      variacao: [2, 0, -1, 4, 0, 1, 0, -2, 3][i % 9], variacao_semana: [6, 1, 0, 2, 0, 5, 1, 0, 3][i % 9],
-      novo: posicao === 17, referencia_em: '2026-10-17', emblemas: null, sequencia: [12, 3, 0, 41, 7, 0, 21, 2, 9][i % 9], servico: null,
+      posicao, apelido, total: Math.max(5, total), total_geral: semana ? total * 7 : total, eh_voce: comNomes && posicao === voce,
+      variacao: historico ? [2, 0, -1, 4, 0, 1, 0, -2, 3][i % 9] : null, variacao_semana: historico ? [6, 1, 0, 2, 0, 5, 1, 0, 3][i % 9] : null,
+      novo: historico && posicao === 17, referencia_em: historico ? '2026-10-17' : null,
+      emblemas: VITRINES[i % VITRINES.length], sequencia: [12, 3, 0, 41, 7, 0, 21, 2, 9][i % 9], servico: SERVICOS[i % SERVICOS.length],
     }
   })
+  if (RK === 'fora100' && comNomes) linhas.push({ posicao: 137, apelido: 'Tales S.', total: 412, total_geral: 412, eh_voce: true, variacao: 2, variacao_semana: 4, novo: false, referencia_em: '2026-10-17', emblemas: null, sequencia: 4, servico: null })
+  return linhas
 }
 // ---------------- Simulado Nacional falso (--sn) ----------------
 const argsSn = process.argv.slice(2)
@@ -149,12 +162,15 @@ const rpcs = {
   obter_estado_conta: () => [200, [process.env.ESTADO_CONTA ? JSON.parse(process.env.ESTADO_CONTA) : { status_assinatura: SEM_ASSINATURA ? null : 'ativa', cancelar_ao_fim: false, fim_periodo: null }]],
   sinal_aparelho: () => [200, [{ ativo: true, outro_aparelho: null }]],
   autorizar_resposta: () => [200, [{ permitido: true, restantes: SEM_ASSINATURA ? 20 : 999, limite: SEM_ASSINATURA ? 20 : null, premium: !SEM_ASSINATURA }]],
-  obter_ranking_com_movimento: (_u, a) => [200, rankingExemplo(a.periodo, true)],
+  obter_ranking_com_movimento: (_u, a) => RK === 'erro' ? [500, { message: 'falha' }] : [200, rankingExemplo(a.periodo, true)],
   obter_ranking_publico: (_u, a) => [200, rankingExemplo(a.periodo, true)],
   obter_ranking_visitante: (_u, a) => [200, rankingExemplo(a.periodo, false)],
   minha_posicao_ranking: (_u, a) => { const eu = rankingExemplo(a.periodo, true).find((l) => l.eh_voce); return [200, eu ? [{ posicao: eu.posicao, total: eu.total, total_geral: eu.total_geral }] : []] },
   // --com-plano: um cronograma de exemplo (TEOT, criado há 3 semanas), para as capturas do Cronograma.
   obter_plano_estudo: () => [200, process.argv.includes('--com-plano') ? [{ data_prova: '2027-01-10', intensidade: 'firme', folgas: [0], prova: 'TEOT', base_respondidas: 0, criado_em: new Date(Date.now() - 21 * 86400000).toISOString(), incluir_simulados: true, opcoes: {} }] : []],
+  // --sem-cracha (no addInitScript): o "Complete seu perfil" já visto neste login, para a primeira dobra da página.
+  // --aviso: a faixa global do topo aberta (texto do tamanho do aviso real de 01/11/2026), para a primeira dobra.
+  obter_aviso_site: () => [200, process.argv.includes('--aviso') ? [{ id: 9001, texto: 'O Simulado Nacional de novembro abre no dia 21: 100 questões inéditas no estilo do TEOT, com ranking e comentário de todas.', link: '#/simulado-nacional', rotulo_link: 'Ver como funciona', tom: 'destaque' }] : []],
   meus_feitos: () => [200, { conquistas: [], dias: {}, indicados_assinantes: 0, indicados_30_dias: 0, simulado_edicoes: [], simulado_participacoes: [], ranking_semana: [], relatos_resolvidos: 0, comentarios_avaliados: 0, contra_corrente: 0, plano: null }],
 }
 // --admin: a conta de exemplo é administradora; o painel do Simulado Nacional (sn_admin_*) responde com
@@ -219,6 +235,7 @@ async function atender(rota) {
   if (url.pathname.startsWith('/auth/v1/user')) return responder(200, usuarioFalso(usuario ?? CONTA))
   if (url.pathname.startsWith('/auth/v1/')) return responder(200, {})
   const rpc = url.pathname.match(/^\/rest\/v1\/rpc\/([a-z_]+)$/)?.[1]
+  if (rpc === 'obter_aviso_site') return responder(...rpcs.obter_aviso_site())
   if (rpc === 'obter_ranking_visitante') return responder(200, rankingExemplo(JSON.parse(pedido.postData() || '{}').periodo, false))
   if (rpc && rpc.startsWith('sn_') && !(ADMIN && rpcsAdmin[rpc])) {
     if (!SN) return responder(404, { code: 'PGRST202', message: `Could not find the function public.${rpc}` })
@@ -226,11 +243,15 @@ async function atender(rota) {
     const [st, corpo] = snRpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}'))
     return responder(st, corpo)
   }
+  // AVISO_SITE='{"id":7,"texto":"...","link":null,"rotulo_link":null,"tom":"destaque"}': o aviso do topo do site (com ou sem conta).
+  if (rpc === 'obter_aviso_site') return responder(200, process.env.AVISO_SITE ? [JSON.parse(process.env.AVISO_SITE)] : [])
   if (!usuario) return responder(401, { code: '42501', message: 'permission denied' })
   if (ADMIN && rpc && rpcsAdmin[rpc]) { const [s, c] = rpcsAdmin[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc && rpcs[rpc]) { const [s, c] = rpcs[rpc](usuario, JSON.parse(pedido.postData() || '{}')); return responder(s, c) }
   if (rpc) return responder(200, null)
   // ASSINATURAS_CONTA='[{"id_externo":"pix:1","fim_periodo":"..."}]': as assinaturas vigentes lidas pela REST (Pix ou cartão).
+  // RK_CENARIO=excluido: a pessoa saiu do ranking (perfis_publicos.participa_ranking = false).
+  if (url.pathname === '/rest/v1/perfis_publicos' && RK === 'excluido' && pedido.method() === 'GET') return responder(200, { apelido: null, participa_ranking: false, emblemas: [], mostrar_servico: false })
   if (url.pathname === '/rest/v1/assinaturas' && process.env.ASSINATURAS_CONTA) return responder(200, JSON.parse(process.env.ASSINATURAS_CONTA))
   return responder(200, [])
 }
@@ -296,11 +317,13 @@ if (COM_DADOS) {
   favoritosExemplo = [...feitas.filter((_, i) => i % 9 === 0).slice(0, 30), ...ids.filter((id) => !respondidasExemplo[id]).filter((_, i) => i % 97 === 0).slice(0, 7)]
 }
 const ESCONDER = '.aviso-termos, .aviso-cookies, [class*="AvisoTermos"], [class*="aviso-termos"], vite-error-overlay { display: none !important; }'
-for (const [nome, vp, esc] of [['cel', { width: 390, height: 844 }, 2], ['pc', { width: 1440, height: 900 }, 1]]) {
+// --estreito: grava também o celular pequeno (320 px), para conferir o que aperta.
+const TAMANHOS = [['cel', { width: 390, height: 844 }, 2], ...(args.includes('--estreito') ? [['cel320', { width: 320, height: 640 }, 2]] : []), ['pc', { width: 1440, height: 900 }, 1]]
+for (const [nome, vp, esc] of TAMANHOS) {
   const contexto = await navegador.newContext({ viewport: vp, colorScheme: args.includes('--sistema-escuro') ? 'dark' : 'light', deviceScaleFactor: esc, locale: 'pt-BR', timezoneId: 'America/Sao_Paulo', hasTouch: vp.width < 600 })
   await contexto.route(`${SUPABASE}/**`, atender)
   const sessaoAuth = { access_token: `tok-${CONTA}`, refresh_token: 'r', token_type: 'bearer', expires_in: 3600, expires_at: Math.floor(Date.now() / 1000) + 30 * 24 * 3600, user: { ...usuarioFalso(CONTA), user_metadata: { nome: 'Tales', termos_versao: 999 } } }
-  await contexto.addInitScript(([s, t, sem, r, c, f]) => {
+  await contexto.addInitScript(([s, t, sem, r, c, f, cr]) => {
     if (!sem) localStorage.setItem('sb-ortoquestoes-auth', s)
     localStorage.setItem('oq-cookies', JSON.stringify({ escolha: 'recusado', versao: 1 }))
     localStorage.setItem('oq:eventos:ligados:v1', '0')
@@ -308,7 +331,8 @@ for (const [nome, vp, esc] of [['cel', { width: 390, height: 844 }, 2], ['pc', {
     localStorage.setItem('oq-termos-adiado', String(Date.now()))
     if (r && !sem) localStorage.setItem(`ortoquestoes:conta:${c}:respondidas`, r)
     if (f && !sem) localStorage.setItem(`ortoquestoes:conta:${c}:favoritos`, f)
-  }, [JSON.stringify(sessaoAuth), TEMA, SEM_CONTA, respondidasExemplo ? JSON.stringify(respondidasExemplo) : null, CONTA, favoritosExemplo ? JSON.stringify(favoritosExemplo) : null])
+    if (cr) localStorage.setItem(`perfil:cracha-visto:${c}`, JSON.stringify({ login: null, em: Date.now() }))
+  }, [JSON.stringify(sessaoAuth), TEMA, SEM_CONTA, respondidasExemplo ? JSON.stringify(respondidasExemplo) : null, CONTA, favoritosExemplo ? JSON.stringify(favoritosExemplo) : null, args.includes('--sem-cracha')])
   // --agora ISO: fixa o relógio da página (ex.: o aviso do dia 25 no painel).
   const iAgora = args.indexOf('--agora')
   if (iAgora >= 0) await contexto.clock.setFixedTime(new Date(args[iAgora + 1]))
