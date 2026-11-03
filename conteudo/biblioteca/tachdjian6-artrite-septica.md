@@ -379,7 +379,7 @@ KOCHER não é infalível fora de Boston. LUHMANN encontrou só **59%** de artri
 conceito: Pelo modelo de KOCHER, dois preditores dão cerca de 40% de artrite séptica, três dão 93,1% e quatro dão 99,6%, o que deixa menos de 10% para a sinovite transitória.
 como: O TARO 2016 cobrou três vezes a conta: não apoio com leucócitos de 13.000 (40%) e não apoio, leucócitos de 13.000 e VHS de 40 mm sem febre (93%); uma prova de Ortopedia pediu a probabilidade de sinovite transitória com quatro preditores (menos de 10%).
 armadilha: Esquecer que a ausência de febre tira um preditor, ou responder 99% com três fatores; com quatro, a pergunta pode vir invertida (probabilidade de sinovite, e não de artrite).
-alerta: Em `conceitos-basicos-0089` a VHS é exatamente 40 mm; o capítulo 23 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 976), define o preditor como VHS acima de 40 mm/h, o que pela letra daria dois preditores (40%); o capítulo 22 do mesmo livro (p. 941) escreve "pelo menos 40 mm/h", que sustenta os três preditores e o gabarito oficial C (93%).
+alerta: Quando o caso traz VHS de exatamente 40 mm (há versão assim desta questão no banco), o capítulo 23 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 976), define o preditor como VHS acima de 40 mm/h, o que pela letra daria dois preditores (40%); o capítulo 22 do mesmo livro (p. 941) escreve "pelo menos 40 mm/h", que sustenta os três preditores e o gabarito oficial C (93%).
 !fim
 
 ## A sinovite transitória que se deve reconhecer
