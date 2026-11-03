@@ -212,20 +212,7 @@ export const Cenario = memo(function Cenario({ cena: pedido, reduzido, clima: cl
     return criarAmbiente(ambiente.current, extra ? 'treino' : cena, clima)
   }, [cena, extra, reduzido, clima])
 
-  // paralaxe leve com o mouse (só no computador): move um plano só, sem repintar
-  useEffect(() => {
-    if (reduzido || !matchMedia('(pointer: fine)').matches) return
-    let quadro = 0
-    const aoMover = (e: PointerEvent) => {
-      cancelAnimationFrame(quadro)
-      quadro = requestAnimationFrame(() => {
-        raiz.current?.style.setProperty('--px', (e.clientX / window.innerWidth - 0.5).toFixed(3))
-        raiz.current?.style.setProperty('--py', (e.clientY / window.innerHeight - 0.5).toFixed(3))
-      })
-    }
-    window.addEventListener('pointermove', aoMover)
-    return () => { window.removeEventListener('pointermove', aoMover); cancelAnimationFrame(quadro) }
-  }, [reduzido])
+  // Sem paralaxe com o mouse (Tales, 02/11/2026: a arte não se mexe quando o mouse passa por cima).
 
   return (
     <div className={`fc-cena fc-cena--${pedido} fc-cena--clima-${clima}`} ref={raiz} aria-hidden="true"

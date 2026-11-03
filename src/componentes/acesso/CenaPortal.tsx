@@ -1,6 +1,5 @@
 import { useEffect, useState, type CSSProperties, type ReactNode } from 'react'
 import { recurso } from '../../config'
-import { usarTema } from '../../estado/tema'
 import { Mascote } from '../mascote/Mascote'
 import { luzNoBicho, type Luz } from '../mascote/luz'
 import { EVENTO_RESPOSTA_ACESSO } from './QuestaoAcesso'
@@ -23,10 +22,21 @@ export const CHAMAS_PORTAL: { x: number; y: number; r: number }[] = [{ x: 243.5,
  * a janela e as estantes ficam bem mais altas que ele), pés em y = 152, centrado em x = 228. */
 const ESQUELETO = { x: 196, y: 67, w: 64, h: 85 }
 
-/** `texto`: selo, título e frase, no canto calmo; `children`: o painel de entrar, inteiro dentro da cena, à direita. */
-export function CenaPortal({ texto, children }: { texto: ReactNode; children: ReactNode }) {
-  const { tema } = usarTema()
-  const hora = tema === 'escuro' ? 'noite' : 'dia'
+/**
+ * `texto`: selo, título e frase, no canto calmo; `children`: o painel de entrar, à direita. Desde 02/11/2026 (Tales:
+ * "traz esses conteúdos para cima"), a cena é um mural em duas colunas: embaixo do título, pregados na parede, `esquerda`
+ * (a questão e a vitrine); embaixo do painel, `direita` (as provas). No celular as colunas se desfazem e a ordem é
+ * título, painel, questão, provas e vitrine.
+ */
+export function CenaPortal({ texto, children, esquerda, direita }: { texto: ReactNode; children: ReactNode; esquerda?: ReactNode; direita?: ReactNode }) {
+  // A cena acompanha o tema que está na tela (o botão do cabeçalho troca o atributo sem recarregar a página).
+  const temaNaTela = () => (document.documentElement.dataset.tema === 'escuro' ? 'noite' : 'dia')
+  const [hora, definirHora] = useState<'dia' | 'noite'>(temaNaTela)
+  useEffect(() => {
+    const obs = new MutationObserver(() => definirHora(temaNaTela()))
+    obs.observe(document.documentElement, { attributes: true, attributeFilter: ['data-tema'] })
+    return () => obs.disconnect()
+  }, [])
   const [festa, definirFesta] = useState(0)
   useEffect(() => {
     const ouvir = (e: Event) => { if ((e as CustomEvent<{ acertou: boolean }>).detail?.acertou) definirFesta((n) => n + 1) }
@@ -51,8 +61,14 @@ export function CenaPortal({ texto, children }: { texto: ReactNode; children: Re
           <Mascote comportamento="acesso_jaleco" fantasia="nenhuma" falar={false} interativo={false} decorativo reacao={festa ? 'comemora2' : null} key={`festa-${festa}`} />
         </span>
       </div>
-      <div className="pc-texto">{texto}</div>
-      {children}
+      <div className="pc-coluna pc-coluna--esquerda">
+        <div className="pc-texto">{texto}</div>
+        {esquerda}
+      </div>
+      <div className="pc-coluna pc-coluna--direita">
+        {children}
+        {direita}
+      </div>
     </section>
   )
 }
