@@ -5379,6 +5379,126 @@
    ]
   },
   {
+   "id": "campbell15-infeccoes-coluna",
+   "versao": 1,
+   "titulo": "Infecções da coluna",
+   "especialidade": "coluna",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 23, o HEBERT, 5ª ed., cap. 2.1, e o Rockwood and Green's Fractures in Adults, 10ª ed., cap. 49",
+   "capitulo": "Capítulo 49 · Infections and Tumors of the Spine",
+   "resumo": "Osteomielite vertebral é 3% a 5% das osteomielites; espondilodiscite piogênica lombar (50%), torácica (30%) e cervical (15%), 20% multifocal, em homens após os 50 anos; S. aureus é o agente mais comum, Pseudomonas no usuário de droga, enterococo e estreptococo apontam endocardite; semeadura arterial na placa terminal, plexo venoso de BATSON a partir da pelve; dor sem traço patognomônico, febre em metade, PCR é o marcador mais sensível, RM com contraste da coluna inteira é o exame de escolha; hemocultura positiva dispensa biópsia, que é guiada por imagem quando a hemocultura é negativa; antibiótico EV por cerca de 6 semanas resolve 75% a 80%; cirurgia para falha, déficit, instabilidade, sepse ou diagnóstico; abscesso epidural é mais comum na lombar baixa, mais perigoso na cervical, onde se opera sempre e cedo; na criança, Kingella kingae até 4 anos e antibiótico sem biópsia; infecção pós-operatória com desbridamento e implante bem fixo mantido.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quanto-quem-e-onde-a-epidemiologia",
+     "titulo": "Quanto, quem e onde: a epidemiologia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-anatomia-que-explica-a-infeccao-placa-terminal",
+     "titulo": "A anatomia que explica a infecção: placa terminal, arteríolas e plexo de BATSON",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-agentes-e-os-focos-de-origem",
+     "titulo": "Os agentes e os focos de origem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fatores-de-risco",
+     "titulo": "Fatores de risco",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-quadro-clinico-dor-sem-assinatura",
+     "titulo": "O quadro clínico: dor sem assinatura",
+     "radar": "clinico"
+    },
+    {
+     "id": "laboratorio-a-pcr-manda",
+     "titulo": "Laboratório: a PCR manda",
+     "radar": "clinico"
+    },
+    {
+     "id": "imagem-da-radiografia-a-ressonancia",
+     "titulo": "Imagem: da radiografia à ressonância",
+     "radar": "clinico"
+    },
+    {
+     "id": "biopsia-quando-ela-e-necessaria-e-quando-nao-e",
+     "titulo": "Biópsia: quando ela é necessária e quando não é",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-clinico-e-prognostico",
+     "titulo": "Tratamento clínico e prognóstico",
+     "radar": "clinico"
+    },
+    {
+     "id": "indicacoes-cirurgicas-e-o-que-a-cirurgia-faz",
+     "titulo": "Indicações cirúrgicas e o que a cirurgia faz",
+     "radar": "clinico"
+    },
+    {
+     "id": "abscesso-epidural-onde-ele-esta",
+     "titulo": "Abscesso epidural: onde ele está",
+     "radar": "confirmado"
+    },
+    {
+     "id": "abscesso-epidural-tratar-com-antibiotico-ou-oper",
+     "titulo": "Abscesso epidural: tratar com antibiótico ou operar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-crianca-discite-e-espondilodiscite",
+     "titulo": "A criança: discite e espondilodiscite",
+     "radar": "fundamento"
+    },
+    {
+     "id": "infeccao-pos-operatoria",
+     "titulo": "Infecção pós-operatória",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fungos",
+     "titulo": "Fungos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-diferencial-com-a-tuberculose",
+     "titulo": "O diferencial com a tuberculose",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "coluna-0180",
+    "coluna-0072",
+    "coluna-0349",
+    "coluna-0157",
+    "coluna-0236",
+    "coluna-0221",
+    "coluna-0107",
+    "coluna-0324",
+    "coluna-0230",
+    "coluna-0343"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Infecções da coluna"
+   ]
+  },
+  {
    "id": "campbell15-instabilidade-femoropatelar",
    "versao": 1,
    "titulo": "Instabilidade femoropatelar",
@@ -10182,6 +10302,107 @@
    "treino": [],
    "subtemas": [
     "Tendão calcâneo"
+   ]
+  },
+  {
+   "id": "lw-histiocitose",
+   "versao": 1,
+   "titulo": "Histiocitose de células de LANGERHANS",
+   "especialidade": "tumores",
+   "livro": "Lovell and Winter's Pediatric Orthopaedics",
+   "edicao": "7ª edição (2014)",
+   "capitulo": "Capítulo 10 · Diseases of the Hematopoietic System (seção Langerhans Cell Histiocytosis), com o Capítulo 13 · Bone and Soft-Tissue Tumors",
+   "resumo": "Proliferação de células de LANGERHANS (histiócitos dendríticos com núcleo em grão de café, S-100, CD1a e langerina, grânulos de BIRBECK em raquete perto do núcleo) que vai do granuloma eosinofílico solitário (cerca de 80%) ao HAND-SCHÜLLER-CHRISTIAN (lesões múltiplas, exoftalmia e diabetes insípido, tríade completa em só 10%) e ao LETTERER-SIWE (lactente, visceral, o mais grave); criança de 5 a 15 anos, crânio e fêmur à frente, coluna com vértebra plana (causa mais comum, disco preservado), lesão em saca-bocado que na fase inicial imita EWING e osteomielite, peça mole castanho-avermelhada, cintilografia falso-negativa e inventário esquelético, biópsia e depois conduta conservadora (cura espontânea, curetagem, infiltração de corticoide, órtese), quimioterapia na forma multissistêmica.",
+   "acesso": "gratis",
+   "minutos": 37,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "um-espectro-tres-nomes-antigos",
+     "titulo": "Um espectro, três nomes antigos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quem-adoece-idade-sexo-e-frequencia",
+     "titulo": "Quem adoece: idade, sexo e frequência",
+     "radar": "fundamento"
+    },
+    {
+     "id": "onde-a-lesao-aparece-cranio-femur-coluna-e-ossos",
+     "titulo": "Onde a lesão aparece: crânio, fêmur, coluna e ossos planos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-quadro-clinico-e-a-investigacao-inicial",
+     "titulo": "O quadro clínico e a investigação inicial",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-imagem-o-grande-imitador",
+     "titulo": "A imagem: o grande imitador",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-coluna-e-a-vertebra-plana",
+     "titulo": "A coluna e a vértebra plana",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-patologia-da-peca-a-microscopia-eletronica",
+     "titulo": "A patologia: da peça à microscopia eletrônica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-diagnostico-diferencial",
+     "titulo": "O diagnóstico diferencial",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-historia-natural-a-lesao-que-se-apaga-sozinha",
+     "titulo": "A história natural: a lesão que se apaga sozinha",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-tratamento-biopsia-depois-o-minimo-necessario",
+     "titulo": "O tratamento: biópsia, depois o mínimo necessário",
+     "radar": "clinico"
+    },
+    {
+     "id": "prognostico-o-que-pesa-contra",
+     "titulo": "Prognóstico: o que pesa contra",
+     "radar": "fundamento"
+    },
+    {
+     "id": "onde-os-livros-divergem",
+     "titulo": "Onde os livros divergem",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "tumores-0010",
+    "tumores-0246",
+    "tumores-0082",
+    "tumores-0053",
+    "tumores-0045",
+    "tumores-0069",
+    "tumores-0319",
+    "tumores-0059",
+    "tumores-0140",
+    "tumores-0321",
+    "tumores-0106"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Histiocitose de células de Langerhans"
    ]
   },
   {

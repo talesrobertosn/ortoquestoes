@@ -300,9 +300,9 @@ E a tração? O Skeletal Trauma (cap. 11, p. 320) aceita a **tração esqueléti
 
 !questoes central=trauma-1171
 conceito: A tração esquelética é aceitável como estabilização temporária no politraumatizado instável, como ponte para o fixador ou a fixação definitiva; o que se condena é a tração prolongada como tratamento definitivo.
-como: O TARO 2006 afirmou, para julgar certo ou errado, que a tração transesquelética é inaceitável no politraumatizado com fratura proximal da tíbia.
+armadilha: Confundir a tração como ponte temporária, que os livros aceitam, com a tração como tratamento definitivo, que a banca considerou inaceitável.
 armadilha: Generalizar a crítica à tração prolongada e concluir que qualquer tração é inaceitável.
-alerta: A questão `trauma-1171` está sem gabarito oficial no acervo, e nenhum livro conferido trata especificamente da fratura proximal da tíbia; Skeletal Trauma (cap. 11, p. 320), Rockwood (cap. 14) e Campbell (cap. 59) aceitam a tração esquelética como medida temporária, o que sustenta "Errado".
+alerta: A questão `trauma-1171` está sem gabarito oficial no acervo; o gabarito da bibliografia da banca (Skeletal Trauma, 2ª ed., p. 2180) marca Certo, lendo a tração como tratamento definitivo, e o site segue essa resposta. Skeletal Trauma (cap. 11, p. 320), Rockwood (cap. 14) e Campbell (cap. 59) aceitam a tração esquelética como medida temporária, ponte para a fixação.
 !fim
 
 ## O cuidado apropriado precoce (EAC)
