@@ -250,7 +250,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 888 | CRIAR três temas: cisto ósseo simples (Dahlin's Bone Tumors, 6ª ed., cap. 26; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13; Tachdjian; Campbell 15), mieloma múltiplo e plasmocitoma (Dahlin, cap. 16; Campbell 15; Rockwood and Green; HEBERT) e artrose do tornozelo, artrodese e artroplastia (Campbell's Operative Orthopaedics, 15ª ed., caps. 12 e 11; Rockwood and Green; HEBERT). Primeiros resumos com os livros de tumor enviados pelo Tales. |
 | 889 | 52 miniaulas: imagem da coluna (20), imagem do quadril (17), cisto ósseo simples (12) e artrose do cotovelo (3), com comparação entre livros onde o número decide a questão. Alerta da `tumores-0361` corrigido: o gabarito oficial (ressecção em bloco) diverge do método de SCAGLIETTI no Dahlin e no Tachdjian. |
 | 890 | CRIAR dois temas: exame físico do pé e tornozelo (Campbell's Operative Orthopaedics, 15ª ed., cap. 86 e outros; HEBERT; Tachdjian) e tendão calcâneo (HEBERT, 5ª ed., caps. 21.2 e 21.1; Campbell 15, caps. 53 e 88), mais 23 miniaulas: mieloma (14) e artrose do tornozelo (9). |
-| (este PR) | CRIAR dois temas: amputações e próteses (Campbell's Operative Orthopaedics, 15ª ed., caps. 16 a 18 e 20; Tachdjian; HEBERT; Rockwood and Green) e dor peritrocantérica e tendinopatias (The Adult Hip, cap. 43 e outros; Campbell 15; HEBERT), mais 6 miniaulas do exame físico do pé. |
+| 891 | CRIAR dois temas: amputações e próteses (Campbell's Operative Orthopaedics, 15ª ed., caps. 16 a 18 e 20; Tachdjian; HEBERT; Rockwood and Green) e dor peritrocantérica e tendinopatias (The Adult Hip, cap. 43 e outros; Campbell 15; HEBERT), mais 6 miniaulas do exame físico do pé. |
+| (este PR) | CRIAR gonartrose e osteotomias (HEBERT, 5ª ed., cap. 16; Campbell's Operative Orthopaedics, 15ª ed., caps. 10, 8, 50 e 52), mais 36 miniaulas: amputações (14), tendão calcâneo (11) e dor peritrocantérica (11). |
 
 ## Próximo
 
