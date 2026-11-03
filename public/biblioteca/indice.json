@@ -15941,6 +15941,131 @@
    ]
   },
   {
+   "id": "rockwood10-politrauma",
+   "versao": 1,
+   "titulo": "Politrauma e controle de danos",
+   "especialidade": "trauma",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025)",
+   "capitulo": "Capítulo 14 · Management of the Multiply Injured Patient",
+   "resumo": "ABCDE e mortalidade trimodal (precoce: hematoma epidural, hemopneumotórax, sangramento de extremidades); tríade letal (hipotermia, acidose, coagulopatia); SIRS (T > 38 ou < 36, FC > 90, FR > 20 ou PaCO2 < 32, leucócitos > 12.000 ou < 4.000 ou > 10% de jovens) e IL-6 como marcador; primeiro e segundo golpes; ISS (soma dos quadrados de três regiões, até 75) e NISS; estável, borderline, instável e in extremis; lactato como guia (EAC: pH ≥ 7,25, BE ≥ -5,5, lactato < 4 em 36 h); janela do 5º ao 10º dia; PIC ≤ 20 e PPC > 70; pelve: cinta nos trocânteres, tamponamento só com pelve estabilizada, arteriografia pelo extravasamento na TC; MESS ≥ 7.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-e-o-politraumatizado-e-como-medir-a-gravida",
+     "titulo": "Quem é o politraumatizado e como medir a gravidade",
+     "radar": "fundamento"
+    },
+    {
+     "id": "por-que-o-paciente-morre-e-em-que-momento",
+     "titulo": "Por que o paciente morre e em que momento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-atendimento-inicial-atls",
+     "titulo": "O atendimento inicial: ATLS",
+     "radar": "fundamento"
+    },
+    {
+     "id": "choque-os-quatro-tipos-e-as-classes-da-hemorragi",
+     "titulo": "Choque: os quatro tipos e as classes da hemorragia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-triade-letal-e-a-ressuscitacao-de-controle-de-",
+     "titulo": "A tríade letal e a ressuscitação de controle de danos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-resposta-inflamatoria-sirs-cars-e-os-dois-golp",
+     "titulo": "A resposta inflamatória: SIRS, CARS e os dois golpes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "estavel-borderline-instavel-e-in-extremis",
+     "titulo": "Estável, borderline, instável e in extremis",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cuidado-total-precoce-controle-de-danos-e-cuidad",
+     "titulo": "Cuidado total precoce, controle de danos e cuidado apropriado precoce",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-janela-para-a-fixacao-definitiva",
+     "titulo": "A janela para a fixação definitiva",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tce-e-fraturas-a-pressao-que-manda",
+     "titulo": "TCE e fraturas: a pressão que manda",
+     "radar": "confirmado"
+    },
+    {
+     "id": "torax-femur-fresagem-e-embolia-gordurosa",
+     "titulo": "Tórax, fêmur, fresagem e embolia gordurosa",
+     "radar": "fundamento"
+    },
+    {
+     "id": "lesoes-associadas-que-nao-podem-passar",
+     "titulo": "Lesões associadas que não podem passar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-pelve-instavel-no-politrauma",
+     "titulo": "A pelve instável no politrauma",
+     "radar": "clinico"
+    },
+    {
+     "id": "fratura-exposta-e-membro-esmagado-no-politrauma",
+     "titulo": "Fratura exposta e membro esmagado no politrauma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "trauma-1725",
+    "trauma-0214",
+    "trauma-0481",
+    "trauma-1733",
+    "trauma-0317",
+    "trauma-0070",
+    "trauma-1145",
+    "trauma-0758",
+    "trauma-1017",
+    "trauma-1722",
+    "trauma-1171",
+    "trauma-1182",
+    "trauma-0988",
+    "trauma-0948",
+    "trauma-0824",
+    "trauma-0915"
+   ],
+   "treino": [
+    "trauma-1490",
+    "trauma-1524",
+    "trauma-1493",
+    "trauma-1491",
+    "trauma-1502",
+    "trauma-1503",
+    "trauma-1501",
+    "trauma-1514"
+   ],
+   "subtemas": [
+    "Politrauma e controle de danos"
+   ]
+  },
+  {
    "id": "rockwood10-pseudartrose",
    "versao": 1,
    "titulo": "Pseudartrose e retardo de consolidação",
