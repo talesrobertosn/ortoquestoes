@@ -634,3 +634,17 @@
 @keyframes vd-cadeado { 0%, 88% { transform: translateY(0); } 90% { transform: translateY(-3px); } 94% { transform: translateY(0); } 96% { transform: translateY(-1px); } 98%, 100% { transform: translateY(0); } }
 @media (prefers-reduced-motion: reduce) { .vd-abertura__cadeado { animation: none; } }
 .vd-ativo__planos .vd-abertura { margin-bottom: 1rem; }
+
+/* Atalho para o suporte (03/11/2026): logo abaixo da caixa verde dos planos, no canto direito. */
+.vd-suporte {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 0.5rem 0.85rem;
+  /* A página separa as seções com um vão grande (.vd gap): o atalho fica colado na caixa de cima. */
+  margin: calc(0.9rem - clamp(4rem, 9vw, 7rem)) 0 0; color: var(--texto-2); font-size: var(--corpo-menor); text-align: right;
+}
+.vd-suporte__botao { gap: 0.45rem; min-height: 40px; padding: 0.45rem 0.95rem; border: 1px solid var(--traco); background: var(--superficie); color: var(--texto); font-weight: 600; }
+.vd-suporte__botao:hover { border-color: var(--verdete); color: var(--verdete-tinta); }
+.vd-suporte__botao svg { color: var(--verdete); }
+.ck__suporte { margin: 0; font-size: var(--corpo-menor); color: var(--texto-2); }
+@media (max-width: 44rem) {
+  .vd-suporte { margin-top: calc(0.75rem - 3.75rem); justify-content: center; text-align: center; }
+}

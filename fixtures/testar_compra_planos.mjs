@@ -91,6 +91,15 @@ try {
     }
     assert.ok((await topo.locator('.vd-plano--destaque').innerText()).includes('Melhor custo-benefício'.toUpperCase()) || (await topo.locator('.vd-plano--destaque').innerText()).includes('Melhor custo-benefício'), 'Anual sem o selo')
     assert.ok((await pagina.locator('.vd-heroi').innerText()).includes('7 dias de garantia'), 'Garantia fora do topo')
+    // Suporte logo abaixo dos planos, fora da caixa verde, com o assunto da assinatura já escolhido.
+    const suporte = pagina.locator('.vd-suporte--topo').getByRole('link', { name: 'Fale com o suporte' })
+    assert.match(await suporte.getAttribute('href'), /contato\?assunto=assinatura$/, 'Atalho do suporte sem o assunto')
+    assert.equal(await pagina.locator('.vd-heroi .vd-suporte').count(), 0, 'O atalho do suporte deveria ficar fora da caixa verde')
+    assert.equal(await pagina.locator('.vd-suporte--final').count(), 1, 'Atalho do suporte ausente no fim da página')
+    if (process.env.PRINTS) {
+      await suporte.scrollIntoViewIfNeeded(); await pagina.waitForTimeout(1500)
+      await pagina.screenshot({ path: join(process.env.PRINTS, 'suporte-computador.png') })
+    }
     // Nenhum total de questões: nem o da contagem das provas, nem o do acervo.
     const texto = await pagina.locator('main, body').first().innerText()
     const contagem = JSON.parse(await readFile(join(raiz, 'src/dados/incidencia.json'), 'utf8')).base
@@ -223,6 +232,10 @@ try {
     const [total, janela] = await pagina.evaluate(() => [document.documentElement.scrollWidth, innerWidth])
     assert.ok(total <= janela, `Rolagem lateral em ${largura}x${altura}: ${total} > ${janela}`)
     assert.equal(await pagina.locator('.vd-anima').count(), 0, 'Animação ligada com movimento reduzido')
+    if (process.env.PRINTS && largura === 390) {
+      await pagina.locator('.vd-suporte--topo').scrollIntoViewIfNeeded(); await pagina.evaluate(() => scrollBy(0, 200))
+      await pagina.screenshot({ path: join(process.env.PRINTS, 'suporte-celular.png') })
+    }
     await contexto.close()
   }
   console.log('Compra pela página de planos: ok (visitante, Pix com QR, Pix confirmado, Pix sem QR, cartão, volta com plano, preço antigo, celular)')
