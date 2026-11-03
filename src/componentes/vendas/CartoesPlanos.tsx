@@ -3,7 +3,7 @@ import { recurso } from '../../config'
 import { href } from '../../util/rotas'
 import { linkConta } from '../../conta/passagem'
 import { PRECO_DE_ABERTURA, real } from '../../dados/planos'
-import { LEMBRETE_DESTAQUE, PLANOS_PIPOCA, centavos, cobranca, descontoPct, economia, porDia, porMes, seloPlano, semMoeda, type Plano } from '../../dados/vendas'
+import { LEMBRETE_DESTAQUE, PLANOS_PIPOCA, cobranca, descontoPct, economia, porMes, seloPlano, semMoeda, type Plano } from '../../dados/vendas'
 import { IconePix, IconeCartao } from './IconesPagamento'
 
 const TAMANHO: Record<string, string> = { mensal: '1 mês', semestral: '6 meses', anual: '12 meses' }
@@ -64,7 +64,6 @@ export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoE
                 ? <><span className="vd-plano__desconto">-{desconto}%</span> economia de {real(economia(p))}</>
                 : <span className="vd-plano__neutro">Sem fidelidade · cancele quando quiser</span>}
             </p>
-            <p className="vd-plano__dia"><Icone nome="relogio" tamanho={14} /> {centavos(porDia(p))} por dia</p>
             {p.destaque ? <p className="vd-plano__lembrete">{LEMBRETE_DESTAQUE}</p> : <span className="vd-plano__vazio" aria-hidden="true" />}
             {!conta && pagamentos
               ? <a className={classe} href={href(linkConta('criar', `/assinatura?plano=${p.id}`))} {...dados}>Assinar o {p.nome.toLowerCase()}</a>

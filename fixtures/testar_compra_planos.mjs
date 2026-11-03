@@ -97,6 +97,8 @@ try {
     assert.ok(await destaque.locator('.vd-botao-destaque').count() === 1, 'Mensal sem o botão dourado')
     assert.equal(await topo.locator('.vd-plano--anual .vd-plano__selo').count(), 0, 'O anual ainda tem selo')
     assert.ok((await topo.locator('.vd-plano--anual').innerText()).includes('-25%'), 'O anual perdeu o desconto')
+    // Sem o preço por dia nos cartões (Tales, 03/11/2026: não converte); fica o preço por mês e o total do período.
+    assert.doesNotMatch(await topo.innerText(), /R\$\s?[\d,]+ por dia/, 'Preço por dia nos cartões')
     assert.ok((await destaque.innerText()).includes('Prepare-se para o TEOT por menos que uma pizza por mês'), 'Mensal sem a pizza no computador')
     assert.ok((await pagina.locator('.vd-heroi').innerText()).includes('7 dias de garantia'), 'Garantia fora do topo')
     // Nenhum total de questões: nem o da contagem das provas, nem o do acervo.

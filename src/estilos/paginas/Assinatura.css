@@ -121,8 +121,8 @@
 .vd-planos--topo .vd-plano--destaque { animation: vd-chama 3.2s var(--vd-curva) 1.2s 2; }
 /* No computador e no tablet, cada informação na mesma linha dos três cartões. */
 @media (min-width: 44.0001rem) {
-  .vd-planos { grid-template-rows: repeat(9, auto); }
-  .vd-plano { display: grid; grid-row: span 9; grid-template-rows: subgrid; row-gap: 0.4rem; align-content: start; }
+  .vd-planos { grid-template-rows: repeat(8, auto); }
+  .vd-plano { display: grid; grid-row: span 8; grid-template-rows: subgrid; row-gap: 0.4rem; align-content: start; }
 }
 .vd-plano__selo {
   position: absolute; top: 0; left: 1.1rem; transform: translateY(-55%);
@@ -153,7 +153,6 @@
 .vd-plano:not(.vd-plano--destaque) .vd-plano__ganho { color: var(--texto-2); }
 .vd-plano:not(.vd-plano--destaque) .vd-plano__desconto { background: var(--verdete-veu); color: var(--verdete-tinta); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--verdete) 35%, transparent); }
 .vd-plano--destaque .vd-plano__neutro { color: var(--acerto-texto, var(--acerto)); font-weight: 750; }
-.vd-plano__dia { display: flex; align-items: center; gap: 0.35rem; margin: 0; color: var(--texto-2); font-size: var(--meta); }
 .vd-plano__lembrete { margin: 0.15rem 0 0; padding: 0.5rem 0.65rem; border-radius: 4px; background: color-mix(in srgb, var(--vd-ouro) 35%, var(--superficie)); color: var(--ouro-texto); font-size: var(--meta); font-weight: 700; line-height: 1.4; }
 .vd-plano__vazio { display: block; }
 .vd-plano__cta { margin-top: auto; min-height: 48px; font-size: 1rem; text-align: center; }
@@ -458,7 +457,7 @@
   .vd-plano--semestral { order: 0; }
   .vd-plano--anual { order: 1; }
   .vd-plano:not(.vd-plano--destaque) { padding: 0.9rem 0.7rem 0.75rem; gap: 0.3rem; }
-  .vd-plano:not(.vd-plano--destaque) :is(.vd-plano__chamada, .vd-plano__dia, .vd-plano__vazio) { display: none; }
+  .vd-plano:not(.vd-plano--destaque) :is(.vd-plano__chamada, .vd-plano__vazio) { display: none; }
   .vd-plano:not(.vd-plano--destaque) .vd-plano__topo { flex-direction: column; gap: 0; }
   .vd-plano:not(.vd-plano--destaque) .vd-plano__topo h3 { font-size: 1.1rem; }
   .vd-plano:not(.vd-plano--destaque) .vd-plano__mes strong { font-size: 1.75rem; }
