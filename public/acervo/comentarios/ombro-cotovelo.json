@@ -7015,19 +7015,19 @@
  },
  "ombro-cotovelo-0487": {
   "incorretas": {
-   "A": "**Stryker exige elevar o braço.** É usada principalmente para mostrar defeito de Hill-Sachs, não para o cenário de imobilidade descrito.",
-   "C": "**Apical oblíqua pode ajudar no trauma.** Ainda assim, a projeção axial modificada de Velpeau é a resposta específica para distinguir a posição anteroposterior sem mobilizar o braço.",
-   "D": "**A AP verdadeira é um único plano.** Isoladamente, pode deixar passar uma luxação posterior."
+   "A": "**A incidência de Stryker exige posicionamento do membro.** Sua utilidade clássica é evidenciar defeito de Hill-Sachs, não resolver o problema de obter uma visão axial quando não se pode mobilizar o braço.",
+   "C": "**A apical oblíqua pode revelar lesões ósseas da instabilidade.** Não é, entre as opções, a projeção axilar modificada especificamente escolhida para definir a relação cabeça-glenoide sem abdução.",
+   "D": "**A anteroposterior verdadeira não substitui uma projeção ortogonal.** Ela pode sugerir luxação, mas a direção anterior ou posterior pode permanecer incerta, sobretudo na luxação posterior."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho. Outras projeções ortogonais podem ajudar a reconhecer a direção da luxação, mas Velpeau é a incidência axial modificada escolhida quando o braço não pode ser abduzido.",
   "referencias": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC5290079/",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7101033/"
+   "https://orthop.washington.edu/patient-care/articles/shoulder/clinical-presentation-of-glenohumeral-instability.html",
+   "https://bmjopenquality.bmj.com/content/bmjqir/9/1/e000550.full.pdf"
   ],
-  "conceito": "**Para distinguir luxação anterior de posterior, é preciso ver a cabeça em relação à glenoide fora do plano AP.** A incidência axilar comum pede abdução, muitas vezes impossível no ombro traumatizado. A axilar de Velpeau modifica a posição do paciente e obtém essa visão sem tirar o braço da tipoia. Assim, evita confiar apenas na AP, que pode parecer pouco alterada numa luxação posterior. A incidência não substitui avaliação clínica nem tomografia quando há fratura complexa.",
-  "correta": "**B, Velpeau (resposta provável).** Fornece uma projeção axial para definir a direção da luxação sem abduzir o ombro.",
+  "conceito": "**A direção da luxação se define pela posição da cabeça umeral em relação à glenoide em uma projeção ortogonal à anteroposterior.** A incidência axilar convencional fornece essa relação, mas exige abduzir o braço, manobra que pode ser inviável e dolorosa no trauma agudo. A incidência de Velpeau modifica a projeção axilar com posicionamento do tronco, permitindo obter a informação com o membro aduzido ou na tipoia. É por isso que ela responde à condição específica do enunciado: não conseguir mover o ombro.\n\nNa imagem, a cabeça situada à frente da glenoide indica luxação anterior; situada atrás, luxação posterior. A incidência AP isolada pode não definir bem o deslocamento anteroposterior e contribui para perder luxações posteriores. Se a projeção adaptada não for tecnicamente adequada ou houver suspeita de fratura associada complexa, outras imagens, inclusive tomografia, podem ser necessárias. O ponto da questão, porém, é escolher entre as incidências oferecidas aquela que mostra a relação axial sem exigir abdução.",
+  "correta": "**B, incidência de Velpeau (resposta provável).** É uma axilar modificada que permite determinar a direção da luxação mantendo o braço junto ao corpo.",
+  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho. Outras projeções ortogonais podem ajudar a reconhecer a direção da luxação, mas Velpeau é a incidência axial modificada escolhida quando o braço não pode ser abduzido.",
   "provavel": "B",
-  "geradoEm": "2026-10-18",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "ombro-cotovelo-0488": {
@@ -7085,19 +7085,19 @@
  },
  "ombro-cotovelo-0491": {
   "incorretas": {
-   "A": "**Arco inferior a 100 graus também é um critério publicado.** Por isso, esta alternativa não pode ser rejeitada como falsa sem contexto adicional; é a ambiguidade da questão.",
-   "C": "**Dano articular grave muda a operação.** Liberar apenas a cápsula pode não restaurar uma articulação muito destruída.",
-   "D": "**Dois meses não bastam como regra geral.** É preciso considerar tempo, evolução e resposta a um programa conservador adequado."
+   "A": "**Arco inferior a 100 graus não é falso como critério clínico.** Ele fica abaixo da faixa clássica usada em muitas atividades e pode justificar liberação se houver perda funcional persistente. Por isso, a questão é ambígua e não permite descartar esta alternativa sem uma convenção bibliográfica adicional.",
+   "C": "**Acometimento articular grave muda o problema cirúrgico.** Se houver destruição da superfície, a simples liberação capsular pode não recuperar movimento útil ou aliviar sintomas; a estratégia precisa considerar a lesão intra-articular.",
+   "D": "**Falha após apenas dois meses não estabelece indicação automática.** A decisão depende de evolução, causa da rigidez e tentativa conservadora adequada; o prazo isolado não é regra universal."
   },
-  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho. Há ambiguidade: tanto arco menor que 100 graus (A) quanto contratura em flexão maior que 30 graus (B) são critérios publicados de rigidez e podem motivar liberação quando há limitação funcional persistente após tratamento conservador. A questão isolada não permite excluir A com segurança.",
   "referencias": [
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC7301335/",
-   "https://pmc.ncbi.nlm.nih.gov/articles/PMC2787214/"
+   "https://pmc.ncbi.nlm.nih.gov/articles/PMC4896879/",
+   "https://link.springer.com/article/10.1007/s00402-022-04442-0"
   ],
-  "conceito": "**O número sozinho não opera um cotovelo.** A faixa clássica para muitas atividades é de 30 a 130 graus de flexoextensão. Uma contratura que impede extensão além de 30 graus ou um arco total inferior a 100 graus pode tirar o paciente dessa faixa. A liberação é considerada se a perda de movimento limita a função e não melhora com reabilitação e órteses adequadas. Lesão articular grave pode exigir outra estratégia além de simples liberação capsular.",
-  "correta": "**B, contratura em flexão superior a 30 graus (resposta provável, com ressalva).** É um critério reconhecido, mas a alternativa A também descreve rigidez potencialmente cirúrgica; a chave não é inequívoca.",
+  "conceito": "**Rigidez do cotovelo é definida por perda de movimento, mas indicação de liberação depende também da função e da resposta ao tratamento.** A referência funcional clássica é aproximadamente 30 a 130 graus de flexoextensão, um arco de 100 graus; atividades individuais podem exigir mais. Uma contratura em flexão superior a 30 graus impede alcançar o limite de extensão desse intervalo. Também um arco total inferior a 100 graus pode limitar o uso do membro. Portanto, os números das alternativas A e B descrevem, ambos, situações potencialmente relevantes.\n\nA cirurgia costuma ser considerada quando há limitação persistente, sem melhora suficiente após reabilitação e órteses apropriadas, levando em conta a causa da rigidez. Contratura de partes moles, bloqueio ósseo, ossificação heterotópica e comprometimento da superfície articular não são problemas idênticos e podem exigir operações diferentes. Dois meses de tratamento conservador não constituem um prazo universal para indicar liberação, e destruição articular grave não se resolve necessariamente com capsulotomia. A chave provável B é plausível na bibliografia antiga, mas o enunciado não fornece contexto para excluir A com segurança; essa ambiguidade deve permanecer visível.",
+  "correta": "**B, contratura em flexão acima de 30 graus (resposta provável, com ressalva).** A perda de extensão ultrapassa o limite da faixa funcional clássica, mas o arco menor que 100 graus da alternativa A também pode motivar cirurgia conforme a função e a evolução.",
+  "alerta": "Resposta provável pela bibliografia, sem gabarito oficial disponível; esta questão não conta no desempenho. Há ambiguidade: tanto arco menor que 100 graus (A) quanto contratura em flexão maior que 30 graus (B) são critérios publicados de rigidez e podem motivar liberação quando há limitação funcional persistente após tratamento conservador. A questão isolada não permite excluir A com segurança.",
   "provavel": "B",
-  "geradoEm": "2026-10-18",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "ombro-cotovelo-0492": {
