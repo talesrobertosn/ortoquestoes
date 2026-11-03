@@ -62,6 +62,36 @@
 .sp-email .sp-rotulo { margin: 0; }
 .sp-email .entrada { width: 100%; }
 .sp-email small { color: var(--texto-2); font-size: var(--meta); }
+/* Perguntas de um toque (03/11/2026): plano e forma de pagamento, em fichas. */
+.sp-toques { display: flex; flex-wrap: wrap; gap: var(--e-4) var(--e-6); }
+.sp-escolha { display: grid; gap: 0.5rem; }
+.sp-escolha .sp-rotulo { margin: 0; }
+.sp-escolha .sp-rotulo small { color: var(--texto-2); font-weight: 500; }
+.sp-escolha__opcoes { display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.sp-chip {
+  min-height: 40px; padding: 0.4rem 0.9rem; border: 2px solid var(--px-borda); border-radius: 999px;
+  background: var(--superficie-2); color: var(--texto); font: inherit; font-size: var(--corpo-menor); font-weight: 650; cursor: pointer;
+  transition: border-color var(--duracao-rapida, 0.15s) ease-out, background-color var(--duracao-rapida, 0.15s) ease-out;
+}
+.sp-chip:hover:not(:disabled) { border-color: color-mix(in srgb, var(--verdete) 55%, var(--px-borda)); }
+.sp-chip[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); color: var(--verdete-tinta); }
+.sp-chip:focus-visible { outline: 2px solid var(--verdete); outline-offset: 2px; }
+.sp-chip:disabled { opacity: 0.6; cursor: default; }
+.sp-questao { max-width: 16rem; }
+
+/* Mensagem com as dicas ao lado (embaixo, no celular). */
+.sp-escrever { display: grid; grid-template-columns: minmax(0, 1fr) minmax(12rem, 15rem); gap: var(--e-4); align-items: start; }
+.sp-escrever__campo { display: grid; gap: 0.35rem; }
+.sp-escrever__campo .sp-rotulo { margin: 0; }
+.sp-mensagem::placeholder { color: color-mix(in srgb, var(--texto-2) 80%, transparent); font-style: italic; }
+.sp-dicas { margin-top: 1.6rem; padding: 0.8rem 0.9rem; border-radius: 4px; background: var(--superficie-2); box-shadow: inset 0 0 0 2px var(--px-borda); font-size: var(--corpo-menor); }
+.sp-dicas p { margin: 0 0 0.4rem; font-weight: 700; }
+.sp-dicas ul { display: grid; gap: 0.35rem; margin: 0; padding: 0; list-style: none; color: var(--texto-2); }
+.sp-dicas li { display: flex; gap: 0.4rem; align-items: flex-start; line-height: 1.4; }
+.sp-dicas svg { flex: none; margin-top: 0.15rem; color: var(--verdete); }
+.sp-email .sp-email__erro { color: var(--erro); font-weight: 600; }
+.sp-email .entrada[aria-invalid="true"] { border-color: var(--erro); }
+
 .sp-isca { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 
 /* Envio. */
@@ -134,12 +164,14 @@
   .sp-trilha li { flex: 1 1 0; padding-right: 0.5rem; font-size: var(--meta); }
   .sp-motivos { grid-template-columns: minmax(0, 1fr); gap: 0.5rem; }
   .sp-motivo { min-height: 56px; padding: 0.65rem 0.75rem; }
+  .sp-escrever { grid-template-columns: minmax(0, 1fr); }
+  .sp-dicas { margin-top: 0; }
   .sp-envio__linha .botao.sp-botao-ouro { width: 100%; justify-content: center; }
   .sp-sucesso { grid-template-columns: minmax(0, 1fr); }
   .sp-sucesso__acoes .botao, .sp-reserva .linha .botao, .sp-direto .linha .botao { width: 100%; justify-content: center; }
   .sp-cartao__cabeca p { font-size: var(--meta); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .sp-motivo, .botao.sp-botao-ouro { transition: none; }
+  .sp-motivo, .botao.sp-botao-ouro, .sp-chip { transition: none; }
   .sp-motivo:hover:not(:disabled), .botao.sp-botao-ouro:hover:not(:disabled), .botao.sp-botao-ouro:active:not(:disabled) { transform: none; }
 }
