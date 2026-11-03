@@ -1,0 +1,68 @@
+/*
+ * O convite do limite grátis (LimiteRespostas.tsx), redesenhado em 03/11/2026 no jeito da página inicial: a cena
+ * pintada da hora do dia com o vidro escuro e o rótulo dourado, e embaixo a assinatura (o plano que decide o dia, os
+ * recursos do assinante com os ícones pixel da barra de atalhos e o cartão verde-noite com o botão dourado .cristal).
+ * Tokens de tokens.css (--mundo-*). Abre por cima da sessão de questões: nada se mexe. Carregado só com o componente.
+ */
+.jc__caixa.pw { width: min(58rem, 100%); }
+.jc__caixa.pw .jc__fechar { background: rgba(9, 13, 14, 0.6); color: var(--mundo-tinta); box-shadow: inset 0 0 0 1px var(--mundo-filete); }
+
+.pw-conteudo { display: grid; gap: 1.25rem; }
+.pw-conteudo--larga { gap: 0; }
+
+.pw-rotulo { margin: 0; color: var(--mundo-ouro); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.pw-rotulo--claro { color: var(--ouro-texto); }
+
+/* ---------- A cena: acampamento da hora do dia, recado gentil e o relógio ---------- */
+.pw-cena {
+  position: relative; isolation: isolate; overflow: hidden; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 1rem 1.5rem;
+  min-height: 15.5rem; padding: 1.75rem 2rem; color: var(--mundo-tinta);
+  background: linear-gradient(90deg, rgba(9, 13, 14, 0.86), rgba(9, 13, 14, 0.55) 45%, rgba(9, 13, 14, 0.1) 75%, transparent), var(--pw-cena) center 70% / cover no-repeat, var(--mundo-chao);
+  image-rendering: pixelated;
+}
+/* No celular, a cena em cima e o texto embaixo, sobre o chão escurecido. */
+.pw-conteudo:not(.pw-conteudo--larga) .pw-cena {
+  grid-template-columns: minmax(0, 1fr); min-height: 0; gap: 0.85rem; padding: 6.5rem 1rem 1rem; border-radius: var(--mundo-raio);
+  background: linear-gradient(180deg, transparent 15%, rgba(9, 13, 14, 0.7) 50%, rgba(9, 13, 14, 0.92)), var(--pw-cena) center 0 / auto 15rem no-repeat, var(--mundo-chao);
+}
+/* O texto direto sobre a cena, com sombra, como o título da página inicial. */
+.pw-cena__texto-bloco { display: grid; gap: 0.45rem; max-width: 27rem; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); }
+.pw-cena__titulo { margin: 0; color: var(--mundo-tinta); font-family: var(--fonte-marca); font-size: clamp(1.3rem, 2.4vw, 1.65rem); font-weight: 800; line-height: 1.15; letter-spacing: -0.015em; text-wrap: balance; }
+.pw-cena__texto { margin: 0; color: var(--mundo-tinta-2); font-size: var(--corpo-menor); line-height: 1.5; text-wrap: pretty; }
+.pw-cena__texto b { color: var(--mundo-tinta); }
+.pw-cena__relogio { justify-self: end; }
+.pw-conteudo:not(.pw-conteudo--larga) .pw-cena__relogio { justify-self: stretch; }
+
+/* ---------- Embaixo: o plano que decide o dia e o cartão da assinatura ---------- */
+.pw-corpo { display: grid; gap: 1.25rem; }
+.pw-conteudo--larga .pw-corpo { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 2rem; padding: 1.75rem 2rem 2rem; }
+.pw-plano { display: grid; gap: 0.55rem; align-content: start; }
+.pw-plano__titulo { margin: 0; color: var(--texto); font-family: var(--fonte-marca); font-size: clamp(1.25rem, 2.2vw, 1.5rem); font-weight: 800; line-height: 1.2; letter-spacing: -0.015em; text-wrap: balance; }
+.pw-plano__texto { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.55; text-wrap: pretty; }
+/* Lista solta, separada por linhas finas (nada de mosaico de cartões). */
+.pw-vantagens { display: grid; margin: 0.35rem 0 0; padding: 0; list-style: none; }
+.pw-vantagem { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 0.85rem; padding: 0.6rem 0; border-top: 1px solid var(--traco); }
+.pw-vantagem:first-child { border-top: 0; }
+.pw-vantagem__icone img { display: block; width: 40px; height: 40px; image-rendering: pixelated; }
+.pw-vantagem b { display: block; color: var(--texto); font-size: var(--corpo-menor); font-weight: 750; line-height: 1.3; }
+.pw-vantagem small { display: block; margin-top: 0.1rem; color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
+
+.pw-oferta {
+  display: grid; gap: 0.65rem; align-content: start; padding: 1.35rem 1.35rem 1.1rem;
+  border-radius: var(--raio-cartao); color: var(--mundo-tinta); background: var(--mundo-painel-suave); box-shadow: inset 0 0 0 1px var(--mundo-filete), var(--sombra-media, 0 10px 28px rgba(18, 24, 26, 0.08));
+}
+.pw-oferta__preco { display: flex; align-items: baseline; gap: 0.25rem; margin: 0; font-variant-numeric: tabular-nums; }
+.pw-oferta__preco b { color: var(--mundo-tinta); font-family: var(--fonte-marca); font-size: 3rem; font-weight: 800; line-height: 1; letter-spacing: -0.04em; }
+.pw-oferta__preco small { color: var(--mundo-tinta-2); font-size: 1rem; font-weight: 750; }
+.pw-oferta__sub { margin: 0; color: var(--mundo-ouro); font-size: var(--meta); font-weight: 750; }
+.pw-oferta__pizza { display: flex; align-items: center; gap: 0.5rem; margin: 0.1rem 0 0; padding: 0.55rem 0.7rem; border-radius: var(--raio-controle); background: rgba(240, 196, 106, 0.12); color: #f6e3b8; font-size: var(--corpo-menor); font-weight: 650; line-height: 1.4; }
+.pw-oferta__fatia { flex: none; }
+.pw-oferta__cta { width: 100%; margin-top: 0.2rem; }
+.pw-oferta__garantia { display: flex; align-items: flex-start; gap: 0.4rem; margin: 0; color: var(--mundo-tinta-2); font-size: var(--meta); line-height: 1.4; }
+.pw-oferta__garantia svg { flex: none; margin-top: 0.1rem; color: #7fe0cf; }
+.pw-oferta .pw-oferta__planos, .pw-oferta .pw-oferta__planos:visited { display: inline-flex; align-items: center; gap: 0.3rem; justify-self: center; min-height: 44px; color: var(--mundo-ouro); font-size: var(--corpo-menor); font-weight: 750; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: rgba(240, 196, 106, 0.4); }
+.pw-oferta .pw-oferta__planos:hover { text-decoration-color: currentColor; }
+.pw-oferta__depois { justify-self: center; min-height: 44px; margin-top: -0.4rem; padding: 0 1rem; border: 0; background: none; color: var(--mundo-tinta-2); font: inherit; font-size: var(--corpo-menor); text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.pw-oferta__depois:hover { color: var(--mundo-tinta); }
+.pw-oferta__projeto { margin: 0; padding-top: 0.7rem; border-top: 1px solid var(--mundo-filete); color: var(--mundo-tinta-2); font-size: 0.75rem; line-height: 1.45; text-align: center; }
+.pw-oferta :focus-visible, .pw-cena :focus-visible { outline: 3px solid var(--mundo-ouro); outline-offset: 3px; }

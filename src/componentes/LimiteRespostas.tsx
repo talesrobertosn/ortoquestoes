@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, type CSSProperties } from 'react'
 import { usarConta } from '../conta/ContextoConta'
 import { EVENTO_DADOS } from '../estado/armazenamento'
-import { fraseGratis } from '../config'
+import { fraseGratis, recurso } from '../config'
 import { LIMITES_HABILITADOS, conviteLimiteJaVisto, lerBloqueioDiario, limiteGratisConhecido, limparBloqueioDiario, marcarConviteLimiteVisto, type EstadoLimite } from '../estado/limiteDiario'
 import { formatarDuracao } from '../dados/tipos'
 import { chamarRpc } from '../servicos/supabase'
@@ -10,7 +10,11 @@ import { Painel } from './Painel'
 import { JanelaCentral, usarTelaLarga } from './JanelaCentral'
 import { Icone } from './Icone'
 import { usarArmazenado } from '../estado/usarArmazenado'
-import { MENSAL, real } from '../dados/planos'
+import { MENSAL } from '../dados/planos'
+import { usarPeriodo } from '../estado/aparencia'
+import { IconePixel, type NomeIconePixel } from './IconePixel'
+import '../estilos/componentes/Cristal.css'
+import '../estilos/componentes/Paywall.css'
 import { PizzaPixel } from './vendas/PizzaPixel'
 import { registrarAssinante, usarAssinante } from '../conta/plano'
 import { RelogioPixel } from './RelogioPixel'
@@ -155,39 +159,64 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
   )
 }
 
-/** O convite do limite grátis: direto, com o preço e o que o assinante ganha. */
+/**
+ * O convite do limite grátis (redesenho de 03/11/2026, no jeito da página inicial): a cena pintada da hora do dia
+ * com um recado gentil e o relógio, depois a assinatura vendendo tempo (o cronograma decide o dia; a pessoa só
+ * segue) e só os recursos que são mesmo do assinante. Abre por cima da sessão de questões, então nada de mascote
+ * nem animação (a sessão é a área séria do site): a cena é a do acampamento vazio, parada.
+ */
+const VANTAGENS: Array<{ icone: NomeIconePixel; titulo: string; texto: string }> = [
+  { icone: 'revisao', titulo: 'Cronograma até a prova', texto: 'Cada dia já vem pronto, do que mais cai para o resto.' },
+  { icone: 'turma', titulo: 'Como a turma respondeu', texto: 'Quantos por cento marcaram cada alternativa.' },
+  { icone: 'simulado', titulo: 'Simulado Nacional todo mês', texto: 'Sua nota e sua posição entre os residentes.' },
+  { icone: 'desempenho', titulo: 'Temas que mais caem', texto: 'O que a prova mais cobra, área por área.' },
+]
+
 function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = false }: {
   consumidas: number; limite: number | null; sequencia: number; tempo: { faltam: number; libera: Date } | null; aoFechar: () => void; larga?: boolean
 }) {
-  const beneficios: Array<[string, string]> = [
-    ['Questões sem limite', 'Resolva quantas quiser, todo dia, do celular ou do computador.'],
-    ['Cronograma até a prova', 'A meta de cada dia, começando pelo que mais cai.'],
-    ['Simulado Nacional todo mês', 'Sua nota e sua posição entre os residentes.'],
-    ['Temas que mais caem', 'O ranking do que a prova mais cobra.'],
-  ]
+  const periodo = usarPeriodo()
+  const cena = { '--pw-cena': `url("${recurso(`pixel/inicio/cena-${periodo}-960.webp`)}")` } as CSSProperties
   return (
     <div className={'pw-conteudo' + (larga ? ' pw-conteudo--larga' : '')}>
-      <section className="pw-lado">
-        <span className="pw-anel" aria-hidden="true"><b className="numerico">{consumidas}</b>{limite ? <small>de {limite}</small> : null}</span>
-        <p className="pw-lado__selo">Plano gratuito · a cada 24 h</p>
-        <h2 className="pw-lado__titulo">Você fez {asQuestoesGratis(limite)}.</h2>
-        <p className="pw-lado__texto">{sequencia > 0 ? <>São <b>{sequencia} {sequencia === 1 ? 'dia' : 'dias'} seguidos</b> de estudo. </> : null}A cota grátis volta 24 horas depois da primeira questão da rodada. Se quiser continuar agora, é só assinar.</p>
-        {tempo && <RelogioPixel liberaEm={tempo.libera.toISOString()} />}
+      <section className={`pw-cena pw-cena--${periodo}`} style={cena} aria-label="Plano gratuito">
+        <div className="pw-cena__texto-bloco">
+          <p className="pw-rotulo">Plano gratuito · {consumidas}{limite ? ` de ${limite}` : ''} hoje</p>
+          <h2 className="pw-cena__titulo">Você fez {asQuestoesGratis(limite)} de hoje. Que dedicação!</h2>
+          <p className="pw-cena__texto">
+            {sequencia > 1 ? <>São <b>{sequencia} dias seguidos</b> de estudo, que constância bonita! </> : 'Que bom ter você estudando por aqui! '}
+            As grátis voltam em 24 horas. Se quiser seguir agora, a assinatura libera tudo.
+          </p>
+        </div>
+        {tempo && <div className="pw-cena__relogio"><RelogioPixel liberaEm={tempo.libera.toISOString()} compacto={!larga} legivel /></div>}
       </section>
 
-      <section className="pw-oferta" aria-label="Assinatura">
-        <p className="pw-oferta__rotulo">Assine o Orto Questões</p>
-        {/* O mensal na frente, como na página de planos (Tales, 03/11/2026); sem preço por dia. */}
-        <p className="pw-oferta__preco"><b>{real(MENSAL)}</b><span>por mês, sem fidelidade</span></p>
-        <p className="pw-oferta__barato"><PizzaPixel className="pw-oferta__pizza" />Prepare-se para o TEOT por menos que uma pizza por mês.</p>
-        <ul className="pw-oferta__lista">
-          {beneficios.map(([titulo, texto]) => <li key={titulo}><Icone nome="certo" tamanho={18} /><span><b>{titulo}.</b> {texto}</span></li>)}
-        </ul>
-        <a className="botao botao--principal botao--grande pw-oferta__cta" href={href('/assinatura?plano=mensal')}>Assinar o mensal</a>
-        <p className="pw-oferta__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias · também há semestral e anual</p>
-        <p className="pw-oferta__projeto">{fraseGratis('projeto')}</p>
-        <button className="pw-oferta__depois" type="button" onClick={aoFechar}>Espero o relógio zerar</button>
-      </section>
+      <div className="pw-corpo">
+        <section className="pw-plano" aria-labelledby="pw-plano-titulo">
+          <p className="pw-rotulo pw-rotulo--claro">Com a assinatura</p>
+          <h3 id="pw-plano-titulo" className="pw-plano__titulo">Você só abre e segue. O plano cuida do resto.</h3>
+          <p className="pw-plano__texto">Diga a data da prova e quanto tempo tem por dia. O cronograma monta cada dia pelo que mais cai, deixa os plantões mais leves e reserva a reta final. Sem perder tempo decidindo o que estudar: é abrir, fazer e seguir até a véspera.</p>
+          <ul className="pw-vantagens">
+            {VANTAGENS.map((v) => (
+              <li key={v.titulo} className="pw-vantagem">
+                <span className="pw-vantagem__icone" aria-hidden="true"><IconePixel nome={v.icone} tamanho={40} /></span>
+                <span><b>{v.titulo}</b><small>{v.texto}</small></span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="pw-oferta" aria-label="Assinatura mensal">
+          <p className="pw-oferta__preco"><small>R$</small><b>{MENSAL.toLocaleString('pt-BR', { minimumFractionDigits: 2 })}</b><small>/mês</small></p>
+          <p className="pw-oferta__sub">Sem fidelidade · questões sem limite</p>
+          <p className="pw-oferta__pizza"><PizzaPixel className="pw-oferta__fatia" />Prepare-se para o TEOT por menos que uma pizza por mês.</p>
+          <a className="cristal pw-oferta__cta" href={href('/assinatura?plano=mensal')}>Assinar o mensal</a>
+          <p className="pw-oferta__garantia"><Icone nome="certo" tamanho={14} /> Mudou de ideia? Em até 7 dias, o reembolso é um só clique.</p>
+          <a className="pw-oferta__planos" href={href('/assinatura')}>Ver também o semestral e o anual <Icone nome="direita" tamanho={14} /></a>
+          <button className="pw-oferta__depois" type="button" onClick={aoFechar}>Prefiro esperar o relógio</button>
+          <p className="pw-oferta__projeto">{fraseGratis('projeto')}</p>
+        </section>
+      </div>
     </div>
   )
 }
