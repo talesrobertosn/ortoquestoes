@@ -48,8 +48,7 @@ export const PRECO_DE_ABERTURA = true
 
 export const real = (valor: number) => valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 
-/** O plano de menor custo por dia, para comparação: a cobrança é por período. */
+/** O plano de menor custo por mês, para o "a partir de": a cobrança é por período. */
 export const PLANO_MAIS_EM_CONTA = PLANOS.reduce((melhor, plano) => plano.total / plano.meses < melhor.total / melhor.meses ? plano : melhor)
 /** "a partir de R$ 29,90/mês": o menor preço por mês, derivado dos planos (antes digitado em 4 lugares). */
 export const A_PARTIR_DE = real(PLANO_MAIS_EM_CONTA.total / PLANO_MAIS_EM_CONTA.meses)
-export const CUSTO_POR_DIA = Math.ceil((PLANO_MAIS_EM_CONTA.total / (PLANO_MAIS_EM_CONTA.meses * 365 / 12)) * 100) / 100

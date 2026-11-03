@@ -837,7 +837,8 @@
 .pw-oferta__preco { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.5rem; margin: 0; }
 .pw-oferta__preco b { font-size: clamp(2.4rem, 5vw, 3.2rem); line-height: 1; letter-spacing: -0.03em; color: var(--texto); }
 .pw-oferta__preco span { color: var(--texto-2); font-weight: 650; }
-.pw-oferta__barato { margin: 0; padding: 0.55rem 0.8rem; border-radius: var(--raio-controle); background: var(--ouro-veu); color: var(--ouro-texto); font-size: var(--corpo-menor); font-weight: 650; line-height: 1.45; }
+.pw-oferta__barato { display: flex; align-items: center; gap: 0.5rem; margin: 0; padding: 0.55rem 0.8rem; border-radius: var(--raio-controle); background: var(--ouro-veu); color: var(--ouro-texto); font-size: var(--corpo-menor); font-weight: 650; line-height: 1.45; }
+.pw-oferta__pizza { flex: none; }
 .pw-oferta__lista { list-style: none; margin: 0.2rem 0; padding: 0; display: grid; gap: 0.55rem; }
 .pw-oferta__lista li { display: flex; gap: 0.55rem; align-items: flex-start; line-height: 1.45; }
 .pw-oferta__lista svg { flex: none; margin-top: 0.1rem; color: var(--acerto); }

@@ -10,7 +10,8 @@ import { Painel } from './Painel'
 import { JanelaCentral, usarTelaLarga } from './JanelaCentral'
 import { Icone } from './Icone'
 import { usarArmazenado } from '../estado/usarArmazenado'
-import { CUSTO_POR_DIA, PLANO_MAIS_EM_CONTA, real } from '../dados/planos'
+import { MENSAL, real } from '../dados/planos'
+import { PizzaPixel } from './vendas/PizzaPixel'
 import { registrarAssinante, usarAssinante } from '../conta/plano'
 import { RelogioPixel } from './RelogioPixel'
 
@@ -154,8 +155,6 @@ export function PainelLimite({ estado, aberto, aoFechar }: { estado: EstadoLimit
   )
 }
 
-const POR_MES_ANUAL = PLANO_MAIS_EM_CONTA.total / PLANO_MAIS_EM_CONTA.meses
-
 /** O convite do limite grátis: direto, com o preço e o que o assinante ganha. */
 function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = false }: {
   consumidas: number; limite: number | null; sequencia: number; tempo: { faltam: number; libera: Date } | null; aoFechar: () => void; larga?: boolean
@@ -178,13 +177,14 @@ function OfertaLimite({ consumidas, limite, sequencia, tempo, aoFechar, larga = 
 
       <section className="pw-oferta" aria-label="Assinatura">
         <p className="pw-oferta__rotulo">Assine o Orto Questões</p>
-        <p className="pw-oferta__preco"><b>{real(POR_MES_ANUAL)}</b><span>por mês no plano anual</span></p>
-        <p className="pw-oferta__barato">Um dos bancos de questões de ortopedia mais baratos do Brasil: {real(PLANO_MAIS_EM_CONTA.total)} por ano, menos de {real(CUSTO_POR_DIA)} por dia.</p>
+        {/* O mensal na frente, como na página de planos (Tales, 03/11/2026); sem preço por dia. */}
+        <p className="pw-oferta__preco"><b>{real(MENSAL)}</b><span>por mês, sem fidelidade</span></p>
+        <p className="pw-oferta__barato"><PizzaPixel className="pw-oferta__pizza" />Prepare-se para o TEOT por menos que uma pizza por mês.</p>
         <ul className="pw-oferta__lista">
           {beneficios.map(([titulo, texto]) => <li key={titulo}><Icone nome="certo" tamanho={18} /><span><b>{titulo}.</b> {texto}</span></li>)}
         </ul>
-        <a className="botao botao--principal botao--grande pw-oferta__cta" href={href('/assinatura')}>Assinar por {real(POR_MES_ANUAL)}/mês</a>
-        <p className="pw-oferta__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias · cancele quando quiser · também há plano mensal</p>
+        <a className="botao botao--principal botao--grande pw-oferta__cta" href={href('/assinatura?plano=mensal')}>Assinar o mensal</a>
+        <p className="pw-oferta__garantia"><Icone nome="certo" tamanho={14} /> Garantia de 7 dias · também há semestral e anual</p>
         <p className="pw-oferta__projeto">{fraseGratis('projeto')}</p>
         <button className="pw-oferta__depois" type="button" onClick={aoFechar}>Espero o relógio zerar</button>
       </section>
