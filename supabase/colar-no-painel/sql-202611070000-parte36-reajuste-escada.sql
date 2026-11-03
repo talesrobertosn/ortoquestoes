@@ -7,7 +7,7 @@
 -- mantém o preço antigo (R$ 179,90 e R$ 239,90) para sempre, no cartão e no Pix.
 --
 -- O corte é o momento em que este SQL roda: rode-o primeiro, e as funções logo depois, na mesma tarde.
--- Para mudar o corte depois: update public.reajuste_precos set corte = '2026-11-07 15:00-03';
+-- Para mudar o corte depois: update public.reajuste_precos set corte = '2026-11-03 15:00-03';
 begin;
 
 create table if not exists public.reajuste_precos (

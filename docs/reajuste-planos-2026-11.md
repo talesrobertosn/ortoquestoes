@@ -20,7 +20,7 @@ Quem foi reembolsado volta como novo.
 - Quem tem o preço antigo: funções `tem_preco_antigo` (servidor) e `meu_preco_antigo` (página) na
   migração `supabase/migrations/202611070000_reajuste_escada.sql`. O corte fica em `reajuste_precos`.
 - A página mostra o preço de cada pessoa (`src/conta/precoAntigo.ts`) e o selo "Seu preço de sempre".
-- Condições da Assinatura na versão `2026-11-07` (cláusula 6.3); os Termos de Uso não mudam de versão.
+- Condições da Assinatura na versão `2026-11-03` (cláusula 6.3); os Termos de Uso não mudam de versão.
 - Conferência automática: `node fixtures/testar_reajuste_precos.mjs`.
 
 ## Ordem de publicação (na mesma tarde)
@@ -32,17 +32,17 @@ Quem foi reembolsado volta como novo.
 2. **Funções que aceitam os dois preços**: `webhook-mercado-pago` e `gerenciar-plano`.
 3. **Funções que cobram**: `criar-checkout` e `criar-pix`.
    (arquivos em `supabase/colar-no-painel/`, gerados por `npm run funcoes:colar`).
-4. **Site**: juntar o PR. A versão nova das Condições (`2026-11-07`) só funciona com o passo 3 no ar.
+4. **Site**: juntar o PR. A versão nova das Condições (`2026-11-03`) só funciona com o passo 3 no ar.
 5. **Teste em produção**: uma conta nova compra o semestral por Pix (deve sair R$ 209,40) e pede
    o reembolso pela garantia. Uma conta que já assinava abre os planos e vê "Seu preço de sempre".
 
-Se o dia mudar, troque a data `2026-11-07` em `src/conta/termos.ts`, nas listas de versões de
+Se o dia mudar, troque a data `2026-11-03` em `src/conta/termos.ts`, nas listas de versões de
 `criar-checkout` e `criar-pix`, no texto das Condições e dos Termos e em `fixtures/testar_compra_planos.mjs`.
 
 ## Conferências depois
 
 - `select corte from public.reajuste_precos;` mostra o corte. Para ajustar:
-  `update public.reajuste_precos set corte = '2026-11-07 15:00-03';`
+  `update public.reajuste_precos set corte = '2026-11-03 15:00-03';`
 - `select public.tem_preco_antigo('<id do usuário>');` diz se a pessoa paga o preço antigo.
 - O painel do administrador estima a receita futura pelo preço novo; as cobranças já feitas usam o
   valor gravado.

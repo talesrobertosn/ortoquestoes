@@ -18,7 +18,7 @@
 export const VERSAO_TERMOS = '2026-10-16'
 
 /** Versão das condições específicas exibidas antes de abrir o checkout. */
-export const VERSAO_CONDICOES_ASSINATURA = '2026-11-07'
+export const VERSAO_CONDICOES_ASSINATURA = '2026-11-03'
 
 /**
  * O que mudou na versão atual, em linguagem simples. Aparece no aviso de

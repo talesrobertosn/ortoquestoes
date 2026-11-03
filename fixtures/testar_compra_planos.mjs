@@ -16,7 +16,7 @@ import { chromium } from 'playwright'
 const raiz = process.cwd()
 const termos = await readFile(join(raiz, 'src/conta/termos.ts'), 'utf8')
 const VERSAO = termos.match(/VERSAO_CONDICOES_ASSINATURA = '([^']+)'/)[1]
-assert.equal(VERSAO, '2026-11-07', 'A versão vigente das condições mudou: confira as funções antes')
+assert.equal(VERSAO, '2026-11-03', 'A versão vigente das condições mudou: confira as funções antes')
 for (const f of ['criar-pix', 'criar-checkout']) {
   const fonte = await readFile(join(raiz, `supabase/functions/${f}/index.ts`), 'utf8')
   assert.ok(fonte.includes(`'${VERSAO}'`) && fonte.includes("'2026-10-16'") && fonte.includes("'2026-10-01'"), `${f} precisa aceitar ${VERSAO}, 2026-10-16 e 2026-10-01`)
