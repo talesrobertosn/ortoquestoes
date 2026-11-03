@@ -1,6 +1,6 @@
 ---
 id: rockwood10-osteoporose
-versao: 1
+versao: 2
 titulo: Osteoporose: diagnóstico e tratamento
 especialidade: osteometabolicas
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 3, 7 e 48) e o Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed. (cap. 28)
 capitulo: Capítulo 4 · Osteoporosis and Metabolic Bone Disease
 autores: Derek G. Hansen e Stuart H. Ralston
-fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 4 (anatomia, remodelação, osteoporose, investigação, drogas, fratura atípica, osteonecrose da mandíbula, monitorização e falha), com o cap. 49 (fraturas vertebrais osteoporóticas e cimentação), o cap. 53 (fatores de risco da fratura do colo femoral), o cap. 43 (rádio distal como fratura sentinela) e o cap. 24 (vitamina D), sem página impressa no arquivo local; Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 3 (p. 166 e 167, osteoporose transitória na ressonância), cap. 7 (p. 390 e 391, osteoporose transitória idiopática do quadril) e cap. 48 (p. 1916, fratura vertebral osteoporótica); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 28 (Osteoporose na criança e no adulto, sem página impressa no arquivo). As páginas citadas são as impressas.
-subtemas: Osteoporose: diagnóstico
-resumo: Osteoporose é DMO baixa com microarquitetura deteriorada; T-escore ≤ −2,5 na coluna ou no quadril pela DEXA (osteopenia entre −1,0 e −2,5); tipo I pós-menopausa (queda do estrogênio, osteoclastos aumentados, perda trabecular rápida, calciúria aumentada, PTH diminuído) e tipo II senil (osteoclastos diminuídos, perda lenta cortical e trabecular, calciúria normal, PTH aumentado); fatores genéticos (raça branca, escoliose, osteogênese imperfeita, menopausa precoce) e comportamentais (álcool, fumo, sedentarismo, má nutrição); FRAX dá a probabilidade em 10 anos; fratura por fragilidade acima de 50 anos pede DEXA; bisfosfonatos inibem o osteoclasto, denosumabe bloqueia o RANKL, teriparatida (PTH 1-34) é anabólica e romosozumabe neutraliza a esclerostina; fratura atípica e osteonecrose da mandíbula; extravasamento de cimento em até 90% com complicação neurológica em 0,1%; osteoporose transitória do quadril com edema difuso realçado pela supressão de gordura.
+fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 4 (anatomia, remodelação, osteoporose, investigação, drogas, fratura atípica, osteonecrose da mandíbula, monitorização e falha; p. aprox. 87 a 109, inferidas pelo índice remissivo), com o cap. 49 (fraturas vertebrais osteoporóticas e cimentação), o cap. 53 (fatores de risco da fratura do colo femoral), o cap. 43 (rádio distal como fratura sentinela) o cap. 24 (vitamina D) e o cap. 55 (pausa do bisfosfonato), sem página impressa no arquivo local; Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 3 (p. 166 e 167, osteoporose transitória na ressonância), cap. 7 (p. 390 e 391, osteoporose transitória idiopática do quadril) e cap. 48 (p. 1916, fratura vertebral osteoporótica); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 27 (ação renal do PTH) e cap. 28 (Osteoporose na criança e no adulto), sem página impressa no arquivo. As páginas citadas são as impressas.
+subtemas: Osteoporose: diagnóstico; Osteoporose: tratamento
+resumo: Osteoporose é DMO baixa com microarquitetura deteriorada; T-escore ≤ −2,5 na coluna ou no quadril pela DEXA (osteopenia entre −1,0 e −2,5); tipo I pós-menopausa (queda do estrogênio, osteoclastos aumentados, perda trabecular rápida, calciúria aumentada, PTH diminuído) e tipo II senil (osteoclastos diminuídos, perda lenta cortical e trabecular, calciúria normal, PTH aumentado); fatores genéticos (raça branca, escoliose, osteogênese imperfeita, menopausa precoce) e comportamentais (álcool, fumo, sedentarismo, má nutrição); FRAX dá a probabilidade em 10 anos; fratura por fragilidade acima de 50 anos pede DEXA; bisfosfonatos são análogos do pirofosfato que inibem o osteoclasto (nitrogênio aumenta a potência; zoledronato só com TFG acima de 35 mL/min; após fratura de quadril não atrapalha a consolidação e reduz a mortalidade); denosumabe bloqueia o RANKL e tem rebote ao parar; raloxifeno reduz só vertebrais, com trombose venosa; teriparatida (PTH 1-34) é anabólica, por 2 anos, seguida de antirreabsortivo; romosozumabe neutraliza a esclerostina e é proibido após infarto ou AVC; fratura atípica nasce na cortical lateral com espícula medial e, com linha radiolucente, pede haste profilática; extravasamento de cimento em até 90% com complicação neurológica em 0,1%; osteoporose transitória do quadril com edema difuso realçado pela supressão de gordura.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -23,7 +23,7 @@ As bancas cobram quatro blocos: **fisiopatologia comparada** (tipo I e tipo II, 
 
 > **Na prova:** T **≤ −2,5** é osteoporose, **−1,0 a −2,5** osteopenia; tipo I = **estrogênio**, osteoclasto **aumentado**, calciúria **aumentada**, PTH **diminuído**; tipo II = osteoclasto **diminuído**, calciúria **normal**, PTH **aumentado**; bisfosfonato **inibe o osteoclasto**; teriparatida **anabólica**; romosozumabe **neutraliza a esclerostina**; FRAX em **10 anos**.
 
-# O osso que se troca: estrutura, remodelação e sinais {radar=fundamento}
+# O osso que se troca: estrutura, remodelação e sinais {radar=confirmado}
 
 ## Cortical e trabecular
 
@@ -53,6 +53,17 @@ A reabsorção depende do **balanço RANKL contra osteoprotegerina (OPG)**: o RA
 !fim
 
 O PTH aparece nas duas listas, e o Sizínio Hebert, 5ª ed. (cap. 28), resolve o paradoxo: **administrado de forma intermitente e em doses baixas**, ele é potente estimulador da formação osteoblástica.
+
+## O PTH no rim
+
+O PTH defende o cálcio sérico em três frentes. No osso, **estimula a reabsorção osteoclástica** (Rockwood, cap. 4, p. aprox. 87). No rim, **aumenta a reabsorção tubular de cálcio**, mecanismo principal da hipercalcemia do hiperparatireoidismo (p. aprox. 104), e **promove a excreção de fosfato**, além de **aumentar a produção de 1,25(OH)2D** (p. aprox. 103), que por sua vez aumenta a absorção intestinal. O Sizínio Hebert, 5ª ed. (cap. 27), diz o mesmo: no rim o PTH **aumenta a excreção de fósforo e promove a reabsorção de cálcio**. Resultado: cálcio sobe, fósforo cai.
+
+!questoes central=osteometabolicas-0087
+conceito: O PTH estimula a reabsorção osteoclástica, aumenta a reabsorção tubular renal de cálcio e reduz a de fosfato (fosfatúria), além de estimular a 1,25(OH)2D.
+como: O TARO 2006 deu a frase em formato certo ou errado: o PTH estimula os osteoclastos, aumenta a absorção renal do cálcio e diminui a do fosfato.
+armadilha: Achar que o PTH retém fósforo junto com o cálcio; ele retém cálcio e elimina fosfato.
+alerta: Questão sem gabarito em `osteometabolicas-0087`; o Rockwood (cap. 4, p. aprox. 87, 103 e 104) e o Sizínio (cap. 27) sustentam Certo (a "absorção renal" do enunciado é a reabsorção tubular).
+!fim
 
 # Definição, números e pico de massa óssea {radar=fundamento}
 
@@ -123,6 +134,17 @@ armadilha: Atribuir à senil a calciúria aumentada e o osteoclasto acelerado, q
 alerta: Para `osteometabolicas-0048`, a tabela do Sizínio fala em perda lenta por formação deficiente em osso cortical e trabecular; o livro não cita o número de osteoblastos, mas a formação diminuída sustenta a alternativa D do gabarito.
 !fim
 
+## O laboratório da osteoporose primária
+
+A mesma tabela do Sizínio tem uma linha que vira questão por si só: **cálcio sérico normal e fosfatase alcalina normal nos dois tipos**, com a fosfatase subindo só quando há fratura em consolidação. O capítulo reforça que **os exames de laboratório são normais na osteoporose**. Cálcio alterado ou fosfatase alta sem fratura apontam para outra doença (osteomalacia, hiperparatireoidismo, Paget, metástase).
+
+!questoes central=osteometabolicas-0086
+conceito: Na osteoporose primária, pós-menopausa ou senil, o cálcio sérico e a fosfatase alcalina são normais; a fosfatase só sobe na presença de fratura.
+como: O TARO 2009 pediu o comportamento da fosfatase alcalina e do cálcio sérico na osteoporose primária.
+armadilha: Marcar fosfatase aumentada por associar doença óssea a fosfatase alta, padrão de osteomalacia e Paget.
+alerta: Questão sem gabarito em `osteometabolicas-0086`; a Tabela 28.1 do Sizínio sustenta a alternativa B (normal e normal).
+!fim
+
 # Fatores de risco: genéticos, biológicos e comportamentais {radar=confirmado}
 
 ## A lista que a prova copia
@@ -164,7 +186,7 @@ armadilha: Colocar escoliose ou história familiar entre os comportamentais, ou 
 
 O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), manda investigar causa secundária **na maioria dos pacientes**, porque tratar a doença de base faz parte do tratamento. O Sizínio Hebert, 5ª ed. (cap. 28), lista **hiperparatireoidismo, diabetes melito, corticoide, menopausa cirúrgica, tumores da medula óssea e mieloma**, e manda perguntar por **corticoides, anticonvulsivantes, remédios de tireoide, antiácidos e heparina**.
 
-- **Hipogonadismo**, em ambos os sexos (menopausa, doença hipofisária, KLINEFELTER, TURNER): **no crescimento reduz o pico; no adulto acelera a perda com desacoplamento**. A testosterona protege o homem **por aromatização em estrogênio**.
+- **Hipogonadismo**, em ambos os sexos (menopausa, doença hipofisária, KLINEFELTER, TURNER): **no crescimento reduz o pico; no adulto acelera a perda com desacoplamento** entre reabsorção e formação (Rockwood, cap. 4, p. aprox. 90). A testosterona protege o homem **por aromatização em estrogênio**, e o estrogênio é um dos inibidores da reabsorção osteoclástica (p. aprox. 87).
 - **Glicocorticoide:** o fator secundário mais forte, proporcional a **dose e duração**, por **menos absorção intestinal de cálcio, mais perda renal e apoptose de osteoblastos e osteócitos**. O inalatório pouco altera o risco.
 - **Inflamatórias** (artrite reumatoide, espondilite, CROHN, retocolite): imobilidade, citocinas (IL-1, IL-17, TNF), corticoide e má absorção. **Celíaca:** má absorção de cálcio e vitamina D, às vezes com osteomalacia.
 - **Tireotoxicose, excesso de tiroxina e hiperparatireoidismo primário:** remodelação acelerada.
@@ -183,6 +205,17 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), manda investigar 
 !fim
 
 No cap. 49, o mínimo que o ortopedista pede diante da fratura vertebral por fragilidade é **cálcio, 25-hidroxivitamina D, PTH e, no homem, testosterona**.
+
+## O homem com hipogonadismo
+
+O raciocínio segue a cadeia do Rockwood: sem testosterona não há estrogênio por aromatização; sem estrogênio, o freio sobre o osteoclasto se solta; a reabsorção acelera e a formação não acompanha (desacoplamento). Por isso a alternativa correta combina **osteoclasto aumentado com osteoblasto que não acompanha**.
+
+!questoes central=osteometabolicas-0064
+conceito: No homem, a testosterona protege o osso por aromatização em estrogênio; o hipogonadismo do adulto acelera a perda com desacoplamento, mais reabsorção do que formação.
+como: O TARO 2011 pediu o que caracteriza o hipogonadismo masculino quanto às atividades osteoclástica e osteoblástica e à absorção de cálcio.
+armadilha: Escolher aumento das duas atividades, que seria remodelação acoplada, ou redução das duas.
+alerta: O Rockwood (cap. 4, p. aprox. 90) fala em perda aumentada com desacoplamento entre reabsorção e formação, mas não cita redução da atividade osteoblástica nem da absorção de cálcio; o gabarito oficial (B) de `osteometabolicas-0064` é mantido.
+!fim
 
 ## O rim e o colo do fêmur
 
@@ -336,7 +369,7 @@ O número da prova é o do idoso: as recomendações para o osteoporótico mais 
 conceito: Cálcio e vitamina D são adjuvantes de todo regime; a vitamina D é necessária para absorver o cálcio, e a dose do idoso osteoporótico converge em 800 UI/dia (IOM acima de 70 anos e FDA).
 como: Duas provas de Ortopedia perguntaram, com o mesmo enunciado, a dose mínima de vitamina D3 no controle da osteoporose (700 a 800 UI/dia).
 armadilha: Escolher 400 a 600 UI/dia, que são doses da população geral (Reino Unido e IOM até 70 anos).
-alerta: O Rockwood não fala em dose mínima de 700 a 800 UI; traz 400 UI (Reino Unido), 600 UI até 70 anos e 800 UI acima de 70 (IOM) e 800 UI como valor diário da FDA. Gabarito mantido em `osteometabolicas-0026` e `osteometabolicas-0026`.
+alerta: O Rockwood não fala em dose mínima de 700 a 800 UI; traz 400 UI (Reino Unido), 600 UI até 70 anos e 800 UI acima de 70 (IOM) e 800 UI como valor diário da FDA. Gabarito mantido em `osteometabolicas-0026` nas duas provas.
 !fim
 
 # Bisfosfonatos: o freio no osteoclasto {radar=confirmado}
@@ -354,21 +387,58 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4, Tabela 4-3), divid
 | Vitaminas e minerais | Cálcio, vitamina D, metabólitos ativos | Adjuvantes |
 !fim
 
+O erro clássico é o anticorpo: o **denosumabe** (anti-RANKL) é **antirreabsortivo**, e o **romosozumabe** (anti-esclerostina), apesar de também suprimir a reabsorção, está na coluna dos **anabólicos**. Teriparatida também é anabólica.
+
+!questoes central=osteometabolicas-0039
+conceito: Pela Tabela 4-3 do Rockwood, são antirreabsortivos os bisfosfonatos (alendronato, risedronato, ibandronato, zoledronato), o denosumabe, a terapia hormonal e o raloxifeno; teriparatida, abaloparatida e romosozumabe são anabólicos.
+como: O TEOT 2024 pediu o par de medicamentos cuja ação principal é antirreabsortiva (ácido zoledrônico e denosumabe).
+armadilha: Aceitar um par com romosozumabe ou teriparatida só porque o outro nome é bisfosfonato ou denosumabe.
+!fim
+
 ## Como funciona
 
-Os bisfosfonatos são **análogos estáveis do pirofosfato**, com núcleo **fósforo-carbono-fósforo**. **Ligam-se ao cálcio**, vão para o osso e se **incorporam à hidroxiapatita** (afinidade especialmente alta no **zoledronato**), concentrando-se nas **superfícies em remodelação**. Quando aquele osso é reabsorvido, **o osteoclasto recebe a droga em alta concentração e é inibido**. **Nitrogênio na cadeia lateral aumenta muito a potência**. Em uma frase: **antirreabsortivo por inibição do osteoclasto**; não estimula o osteoblasto.
+Os bisfosfonatos são **análogos estáveis do pirofosfato** (inibidor natural da mineralização, e não do colágeno), com núcleo **fósforo-carbono-fósforo**. **Ligam-se ao cálcio**, vão para o osso e se **incorporam à hidroxiapatita** (afinidade especialmente alta no **zoledronato**), concentrando-se nas **superfícies em remodelação**. Quando aquele osso é reabsorvido, **o osteoclasto recebe a droga em alta concentração e é inibido**. **Nitrogênio na cadeia lateral aumenta muito a potência**. Em uma frase: **antirreabsortivo por inibição do osteoclasto**; não estimula o osteoblasto.
+
+!questoes treino=osteometabolicas-0099
+conceito: Bisfosfonatos são análogos estáveis do pirofosfato, com núcleo P-C-P; a potência depende da cadeia lateral, e o nitrogênio nela aumenta muito a potência.
+como: Um OrtoQuestões Simulado pediu de que molécula o bisfosfonato é análogo e o que aumenta sua potência (pirofosfato e nitrogênio).
+armadilha: Trocar pirofosfato por colágeno tipo I ou nitrogênio por cálcio; o cálcio é onde a droga se liga, não o que a potencializa.
+!fim
 
 ## As drogas
 
 - **Alendronato:** o mais usado; com cálcio e vitamina D, reduz **vertebrais cerca de 50%, não vertebrais 17% e quadril 40%**; eficaz no corticoide e no homem. **70 mg por semana**. **Mal absorvido**: **30 minutos antes de comida ou outro remédio, com 100 mL de água, em pé**. Comum: desconforto gastrointestinal alto; esofagite e úlcera em quem toma errado; raros: **osteonecrose da mandíbula e fratura subtrocantérica atípica**.
 - **Zoledronato:** **5 mg por ano** (3 a 5 anos). Após fratura de quadril, **mortalidade −28% e refratura cerca de −35%**. Comum: **reação de fase aguda** gripal de 2 a 3 dias (42%). Hipocalcemia, fibrilação atrial, lesão renal; raros: osteonecrose da mandíbula e uveíte. **TFG acima de 35 mL/min e vitamina D corrigida.**
+
+!questoes treino=osteometabolicas-0100
+conceito: Antes do zoledronato, checar a função renal: só com TFG estimada acima de 35 mL/min, e com a deficiência de vitamina D corrigida para evitar hipocalcemia; na insuficiência renal, o denosumabe é a alternativa.
+como: Um OrtoQuestões Simulado pediu o corte de TFG para infundir o ácido zoledrônico (35 mL/min).
+armadilha: Escolher 30 ou 60 mL/min, números de outras drogas e classificações renais.
+!fim
 - **Risedronato** 35 mg por semana e **ibandronato** mensal oral ou trimestral venoso, menos usados.
 
-O Sizínio acrescenta as **contraindicações: gastrite, esofagite, osteomalacia e deficiência grave de cálcio e vitamina D**, e lembra o **etidronato**, de primeira geração, lançado para a doença de Paget. Ele cita para o zoledronato dose e esquema diferentes dos do Rockwood (proposta antiga); para a prova, vale o Rockwood, **5 mg por ano**.
+O Sizínio acrescenta as **contraindicações: gastrite, esofagite, osteomalacia e deficiência grave de cálcio e vitamina D**, e lembra o **etidronato**, de primeira geração, lançado para a doença de Paget. Ele cita para o zoledronato dose e esquema diferentes dos do Rockwood (proposta antiga); para a prova, vale o Rockwood, **5 mg por ano**. Para o alendronato, o Sizínio dá **5 mg/dia na prevenção e 10 mg/dia no tratamento**, com os **70 mg semanais** mais bem tolerados.
+
+## Por quanto tempo, e o que acontece ao parar
+
+O Sizínio é franco: **não há consenso sobre o tempo de uso** do bisfosfonato. O Rockwood (cap. 4, p. aprox. 93) contrasta as drogas: **ao contrário dos bisfosfonatos**, o efeito do denosumabe sobre a reabsorção é curto. O bisfosfonato fica incorporado à hidroxiapatita e continua agindo depois de suspenso, e é isso que permite a pausa: no cap. 55, uma diretriz manda **reavaliar com DMO após 3 anos** de bisfosfonato em asiáticas mais jovens para decidir a pausa. A ideia de que a massa se mantém só "até um ano", justificando ciclos curtos, não aparece nas fontes.
+
+!questoes central=osteometabolicas-0091
+conceito: O efeito do bisfosfonato persiste depois da suspensão (fica na hidroxiapatita), ao contrário do denosumabe; a pausa é decidida por reavaliação após anos de uso, e não há consenso sobre a duração.
+como: O TARO 2006 afirmou, em certo ou errado, que a massa óssea se mantém por até um ano após suspender o alendronato, o que permitiria terapia cíclica de longo prazo.
+armadilha: Transferir para o alendronato o esquema cíclico e curto ou o rebote do denosumabe.
+alerta: Questão sem gabarito em `osteometabolicas-0091`; nenhuma fonte local traz o prazo de um ano nem a terapia cíclica. O que os livros sustentam (efeito duradouro, pausa reavaliada após 3 a 5 anos, Rockwood caps. 4 e 55) aponta para Errado, com a ressalva de que a resposta é inferida.
+!fim
 
 ## Bisfosfonato e consolidação
 
-O receio de que a droga atrase a consolidação não se confirmou: alendronato até 14 dias após fratura do rádio distal **não mudou consolidação nem função**, e no **HORIZON** o zoledronato após fratura de quadril **não prejudicou a consolidação em nenhum momento de início**. O bisfosfonato **pode ser iniciado ainda no hospital** (Rockwood, cap. 4).
+O receio de que a droga atrase a consolidação não se confirmou: alendronato até 14 dias após fratura do rádio distal **não mudou consolidação nem função**, e no **HORIZON** o zoledronato após fratura de quadril **não prejudicou a consolidação em nenhum momento de início**. O bisfosfonato **pode ser iniciado ainda no hospital** (Rockwood, cap. 4). No HORIZON, o zoledronato foi iniciado até 90 dias após a fixação de fratura do quadril de baixa energia, e a consolidação não mudou com início **antes de 2 semanas, entre 2 e 4, entre 4 e 6 ou depois de 6 semanas** (p. aprox. 94); no mesmo ensaio, as fraturas clínicas caíram de 13,9% para 8,6% e os óbitos de 13,3% para 9,8% (p. aprox. 109).
+
+!questoes treino=osteometabolicas-0105
+conceito: Após fixar a fratura do quadril por baixa energia, o zoledronato iniciado em qualquer momento não prejudicou a consolidação (HORIZON) e reduziu a mortalidade em 28% e a refratura em cerca de 35%.
+como: Um OrtoQuestões Simulado pediu o efeito do zoledronato iniciado nas primeiras semanas sobre consolidação e mortalidade.
+armadilha: Acreditar que suprimir a reabsorção atrasa a consolidação, ideia teórica que os ensaios não confirmaram.
+!fim
 
 !questoes central=osteometabolicas-0004 relacionadas=osteometabolicas-0007
 conceito: Bisfosfonatos são análogos do pirofosfato que se fixam na hidroxiapatita e são ingeridos pelo osteoclasto na reabsorção, inibindo-o; são antirreabsortivos, não estimulam o osteoblasto.
@@ -386,19 +456,37 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), define o denosuma
 - **Efeito curto:** ao parar há **rebote da remodelação**, com **fraturas vertebrais de rebote** em média **11 meses após a última dose**, mediana de **cinco vértebras contíguas**, em **10,3%** de 797 pacientes; menos em quem iniciou bisfosfonato antes de parar.
 - **Regra:** uso **contínuo**; ao suspender, **considerar bisfosfonato**.
 
+!questoes treino=osteometabolicas-0101
+conceito: Denosumabe é anticorpo monoclonal humanizado contra o RANKL; seu efeito é curto e, ao parar, há rebote da remodelação com fraturas vertebrais múltiplas, por isso o uso é contínuo e a saída é com bisfosfonato.
+como: Um OrtoQuestões Simulado pediu o alvo do denosumabe e o que acontece ao suspendê-lo (RANKL e rebote).
+armadilha: Confundir o alvo com a esclerostina (romosozumabe) ou dar ao denosumabe o efeito residual do bisfosfonato.
+!fim
+
 ## Terapia hormonal e raloxifeno
 
 A **terapia hormonal** previne a perda e reduz fraturas **vertebrais, não vertebrais e de quadril**, mas é pouco usada em idosas por **risco cardiovascular, trombose venosa e câncer de mama**; é opção **abaixo de 60 anos** (Rockwood). O Sizínio Hebert, 5ª ed. (cap. 28), é mais entusiasmado: atribui ao estrogênio redução de **40% a 50% no quadril e cerca de 90% nas vertebrais** e o chama de **tratamento fisiológico ideal**. As fontes concordam no mecanismo; o Rockwood pesa mais os riscos.
 
 O **raloxifeno** é um **SERM**: **agonista no osso, antagonista na mama**. **60 mg/dia**, reduz **vertebrais cerca de 30%**, mas **não previne não vertebrais nem quadril**; fogachos, cãibras e **trombose venosa**. O Sizínio o indica na pós-menopausa com DMO baixa **na coluna** e intolerância a bisfosfonato.
 
+!questoes treino=osteometabolicas-0104
+conceito: O raloxifeno, SERM agonista no osso e antagonista na mama, reduz fraturas vertebrais em cerca de 30%, não previne não vertebrais nem quadril e aumenta o risco de trombose venosa.
+como: Um OrtoQuestões Simulado pediu que fraturas o raloxifeno reduz e seu efeito adverso (vertebrais e trombose venosa).
+armadilha: Atribuir ao raloxifeno proteção do quadril ou a osteonecrose da mandíbula, que é dos bisfosfonatos e do denosumabe.
+!fim
+
 # Anabólicos: teriparatida, abaloparatida e romosozumabe {radar=confirmado}
 
 ## Teriparatida
 
-O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), define a teriparatida como o **fragmento 1-34 do PTH**, **20 µg subcutâneo por dia**. Ela **estimula a remodelação com balanço a favor da formação**, aumentando a DMO sobretudo em **locais trabeculares, como a coluna**. Reduziu **vertebrais cerca de 65% e não vertebrais 50%** em 18 meses; foi **superior ao risedronato** na osteoporose grave da coluna e **ao alendronato** na do corticoide. Efeitos: **cefaleia, náusea, cãibras e hipercalcemia leve**. O **osteossarcoma** em animais gerou tarja preta, mas **14 anos de vigilância** em humanos não mostraram aumento. Duração de **2 anos**, depois **antirreabsortivo** para manter o osso novo.
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), define a teriparatida como o **fragmento 1-34 do PTH**, **20 µg subcutâneo por dia**. Ela **estimula a remodelação com balanço a favor da formação**, aumentando a DMO sobretudo em **locais trabeculares, como a coluna**. Reduziu **vertebrais cerca de 65% e não vertebrais 50%** em 18 meses; foi **superior ao risedronato** na osteoporose grave da coluna e **ao alendronato** na do corticoide. Efeitos: **cefaleia, náusea, cãibras e hipercalcemia leve**. O **osteossarcoma** em animais gerou tarja preta, mas **14 anos de vigilância** em humanos não mostraram aumento. A **duração recomendada é de 2 anos**, e então se dá um **antirreabsortivo para não perder o osso recém-formado**; raloxifeno, alendronato e zoledronato mantêm o ganho (p. aprox. 93). O Sizínio acrescenta que o efeito **persiste por até seis meses após a retirada**.
 
 O Sizínio Hebert, 5ª ed. (cap. 28), usa as palavras da prova: o PTH **em dose baixa e intermitente é potente estimulador da formação osteoblástica**, tem **efeito anabólico**, atua no acoplamento e é indicado na **osteoporose grave com fraturas**, com grande efeito na do **corticoide**. Como ele lista **estrógeno, calcitonina e bifosfonados** entre os antirreabsortivos, entre esses e o paratormônio **o único estimulador da formação é o paratormônio**.
+
+!questoes central=osteometabolicas-0041 treino=osteometabolicas-0102
+conceito: A teriparatida, fragmento 1-34 do PTH, é o anabólico que aumenta a formação; o tempo recomendado é de 2 anos (24 meses), seguido de antirreabsortivo para manter o osso novo.
+como: O TARO 2024 pediu a droga que aumenta a formação óssea e seu tempo máximo de uso (teriparatida, 24 meses); um OrtoQuestões Simulado, o fragmento e o que vem depois (1-34 e antirreabsortivo).
+armadilha: Trocar 1-34 por 1-84, emendar um novo ciclo de anabólico, ou confundir com o zoledronato, que é antirreabsortivo de 3 a 5 anos.
+!fim
 
 ## Abaloparatida
 
@@ -406,7 +494,13 @@ O Sizínio Hebert, 5ª ed. (cap. 28), usa as palavras da prova: o PTH **em dose 
 
 ## Romosozumabe
 
-É um **anticorpo monoclonal que neutraliza a esclerostina**, o freio do osteócito sobre a via Wnt; o efeito é duplo: **aumenta a formação e suprime a reabsorção**. **120 mg subcutâneo por mês, por 12 meses**; DMO da coluna **+13%** e do quadril **+8%**; **vertebrais −73%**. No **ARCH**, 12 meses de romosozumabe e depois alendronato foram **superiores a 24 meses de alendronato**; no **FRAME**, o comparador foi o denosumabe. Mais **eventos cardiovasculares** no ARCH (2,5% contra 1,9%) e **tarja preta: não usar após infarto ou AVC**. Não acelera a consolidação de fraturas em humanos.
+É um **anticorpo monoclonal que neutraliza a esclerostina**, o freio do osteócito sobre a via Wnt; o efeito é duplo: **aumenta a formação e suprime a reabsorção**. **120 mg subcutâneo por mês, por 12 meses**; DMO da coluna **+13%** e do quadril **+8%**; **vertebrais −73%**. No **ARCH**, 12 meses de romosozumabe e depois alendronato foram **superiores a 24 meses de alendronato**; no **FRAME**, o comparador foi o denosumabe. Mais **eventos cardiovasculares** no ARCH (2,5% contra 1,9%) e **tarja preta: pode causar infarto, AVC e morte cardiovascular, e não deve ser usado com história de infarto ou AVC** (p. aprox. 94). Em quem já usou alendronato, ganhou mais DMO na coluna e no quadril do que a teriparatida. Não acelera a consolidação de fraturas em humanos.
+
+!questoes treino=osteometabolicas-0103
+conceito: O romosozumabe neutraliza a esclerostina e tem tarja preta cardiovascular: não deve ser usado em quem teve infarto do miocárdio ou AVC.
+como: Um OrtoQuestões Simulado pediu a contraindicação do romosozumabe (infarto ou AVC prévio).
+armadilha: Trazer a contraindicação de outra droga: esofagite (alendronato oral), osteossarcoma (tarja da teriparatida) ou TFG abaixo de 35 (zoledronato).
+!fim
 
 !tabela Anabólicos comparados (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 4)
 | Droga | O que é | Dose | Efeito | Cuidado |
@@ -440,7 +534,21 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), define a fratura 
 
 Há um espectro: **reação atípica**, **fratura de estresse atípica** (linha radiolucente na cortical lateral) e **fratura completa**. Ocorre também com **denosumabe** e até sem bisfosfonato. **Fatores:** duração (**sobretudo após 5 anos**), **etnia asiática**, altura, peso e glicocorticoide. O balanço favorece tratar: em **10.000 mulheres brancas por 3 anos**, **2 fraturas atípicas** contra **149 fraturas de quadril e 541 fraturas clínicas evitadas**.
 
-**Conduta:** suspender o antirreabsortivo e, se preciso, trocar por **anabólico (análogo do PTH)**. Completa: sempre cirúrgica, com **haste intramedular**. Incompleta sem dor: pode ser conservadora com restrição de carga. Com dor: fixação profilática. Com **linha radiolucente**, a cura conservadora é de só **17% a 22%**, contra cerca de **100% com haste profilática**, e o autor fixa mesmo sem dor. **Sempre radiografar o fêmur contralateral.**
+O desenho do critério 2 e 3 decide a questão: a fratura **nasce na cortical lateral**, a tensionada, e, quando completa, deixa uma **espícula medial**; a incompleta fica só na lateral.
+
+!questoes treino=osteometabolicas-0106
+conceito: Pela ASBMR, a fratura femoral atípica se origina na cortical lateral, é predominantemente transversa e, quando completa, tem espícula medial; incompleta, fica só na cortical lateral.
+como: Um OrtoQuestões Simulado pediu a cortical de origem e a espícula da fratura completa (lateral e medial).
+armadilha: Inverter os lados, colocando a origem na medial ou a espícula na lateral.
+!fim
+
+**Conduta:** suspender o antirreabsortivo e, se preciso, trocar por **anabólico (análogo do PTH)**. Completa: sempre cirúrgica, com **haste intramedular**. Incompleta sem dor: pode ser conservadora com restrição de carga. Com dor: fixação profilática. Com **linha radiolucente**, a cura conservadora é de só **17% a 22%**, contra cerca de **100% com haste profilática**, e o autor fixa mesmo sem dor. **Sempre radiografar o fêmur contralateral.** O próprio capítulo ilustra o caso típico: mulher de 64 anos, 2 anos de bisfosfonato, dor mecânica na coxa e fratura de estresse atípica com linha lucente na cortical lateral espessada (Figura 4-4B, p. aprox. 96). Para o autor, com linha radiolucente a conduta é **haste intramedular profilática**, com ou sem dor, e na subtrocantérica de **entrada piriforme**, para evitar o varo.
+
+!questoes treino=osteometabolicas-0107
+conceito: Fratura de estresse atípica com linha radiolucente na cortical lateral: suspender o bisfosfonato e fixar com haste intramedular profilática, porque a cura conservadora é de 17% a 22% e a haste consolida cerca de 100%.
+como: Um OrtoQuestões Simulado mostrou a radiografia de mulher de 64 anos com 2 anos de bisfosfonato e dor mecânica na coxa e pediu a conduta além de suspender a droga.
+armadilha: Escolher restrição de carga, que serve à incompleta sem dor e sem linha, ou teriparatida isolada, que não mudou a consolidação; placa lateral também não é a fixação proposta.
+!fim
 
 ## Osteonecrose da mandíbula
 
@@ -452,7 +560,13 @@ Rara e temida, ocorre com **bisfosfonato e denosumabe**; em um registro sueco, *
 
 O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 49), chama o tratamento da fratura vertebral osteoporótica de um dos temas mais controversos da coluna. O não operatório é **órtese, modificação de atividade, mobilização precoce, fisioterapia e analgesia**, sem evidência conclusiva para nenhum item isolado. A **calcitonina por 4 semanas** ajuda a dor se iniciada até 5 dias da fratura; a **teriparatida** analgesiou melhor que placebo e alendronato; os antiosteoporóticos reduziram nova fratura vertebral em **19%**. Até **30%** dos não operados evoluem com **pseudartrose dolorosa ou cifose progressiva**.
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1916), resume: **repouso relativo e sintomáticos por 4 a 6 semanas, depois mobilização**, com seguimento para cifose e colapso; **tratar a osteoporose**; **cifoplastia** se a dor for intolerável ou o não operatório falhar, **desde que a parede posterior esteja íntegra**. A maioria das fraturas fica em **T12-L2**.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1916), resume: **repouso relativo e sintomáticos por 4 a 6 semanas, depois mobilização**, com seguimento para cifose e colapso; **tratar a osteoporose**; **cifoplastia** se a dor for intolerável ou o não operatório falhar, **desde que a parede posterior esteja íntegra**. A maioria das fraturas fica em **T12-L2**. O gatilho cirúrgico é, portanto, **a dor**: intolerável ou refratária ao não operatório; cifose isolada e a impossibilidade de usar órtese não são indicações, e o **fragmento no canal** (parede posterior rota) é justamente o que contraindica a cifoplastia.
+
+!questoes central=osteometabolicas-0013
+conceito: Na fratura vertebral osteoporótica, a cirurgia (cifoplastia) é indicada quando a dor é intolerável ou o tratamento conservador de 4 a 6 semanas falha, desde que a parede posterior esteja íntegra.
+como: O TARO 2015 pediu a indicação do tratamento cirúrgico da fratura vertebral por osteoporose (dor refratária ao conservador).
+armadilha: Escolher fragmento ósseo intracanal, que tira a cifoplastia da mesa, ou cifose torácica, que se acompanha.
+!fim
 
 ## Vertebroplastia e cifoplastia
 
@@ -538,4 +652,4 @@ A osteoporose é uma balança: o osteoclasto reabsorve, o osteoblasto forma, e a
 
 As drogas seguem a balança: **bisfosfonatos** e **denosumabe** freiam a reabsorção; **teriparatida**, **abaloparatida** e **romosozumabe** estimulam a formação; **cálcio e vitamina D** acompanham todas. O preço de frear demais é a **fratura atípica** e a **osteonecrose da mandíbula**, raras diante das fraturas evitadas.
 
-> **Na prova:** Osteoporose = T **≤ −2,5** na coluna ou quadril (osteopenia **−1,0 a −2,5**); T compara com **jovem**, Z com a **mesma idade**; tipo I = **estrogênio**, osteoclasto **aumentado**, trabecular, calciúria **aumentada**, PTH **diminuído**; tipo II = osteoclasto **diminuído**, perda **lenta** cortical e trabecular, calciúria **normal**, PTH **aumentado**, ainda **mais mulheres**; genéticos = **raça branca, escoliose, osteogênese imperfeita, menopausa precoce, história familiar**; comportamentais = **álcool, fumo, sedentarismo, má nutrição**; DEXA no homem **acima de 50 com fratura** de baixa energia; FRAX = **10 anos**, quadril **3%** e maior **10%**; vitamina D **800 UI** no idoso; bisfosfonato **inibe o osteoclasto**; denosumabe **anti-RANKL**, rebote ao parar; teriparatida **PTH 1-34, anabólica**, 2 anos e depois antirreabsortivo; romosozumabe **neutraliza a esclerostina**; fratura atípica **4 de 5 critérios**, haste; cimento extravasa em **90%**, déficit em **0,1%**; insuficiência renal e osteodistrofia: **colo do fêmur**; osteoporose transitória: edema **difuso**, realçado pela **supressão de gordura**.
+> **Na prova:** Osteoporose = T **≤ −2,5** na coluna ou quadril (osteopenia **−1,0 a −2,5**); T compara com **jovem**, Z com a **mesma idade**; tipo I = **estrogênio**, osteoclasto **aumentado**, trabecular, calciúria **aumentada**, PTH **diminuído**; tipo II = osteoclasto **diminuído**, perda **lenta** cortical e trabecular, calciúria **normal**, PTH **aumentado**, ainda **mais mulheres**; genéticos = **raça branca, escoliose, osteogênese imperfeita, menopausa precoce, história familiar**; comportamentais = **álcool, fumo, sedentarismo, má nutrição**; DEXA no homem **acima de 50 com fratura** de baixa energia; FRAX = **10 anos**, quadril **3%** e maior **10%**; vitamina D **800 UI** no idoso; osteoporose primária com **cálcio e fosfatase normais**; PTH retém **cálcio** e elimina **fosfato** no rim; bisfosfonato é análogo do **pirofosfato**, nitrogênio aumenta a potência, **inibe o osteoclasto**; zoledronato com TFG **acima de 35**, não atrapalha a consolidação e **reduz a mortalidade**; antirreabsortivos = **bisfosfonatos e denosumabe**; denosumabe **anti-RANKL**, rebote ao parar; raloxifeno só **vertebral**, **trombose venosa**; teriparatida **PTH 1-34, anabólica**, **24 meses** e depois antirreabsortivo; romosozumabe **neutraliza a esclerostina**, proibido após **infarto ou AVC**; fratura atípica: cortical **lateral**, espícula **medial**, linha radiolucente = **haste profilática**; fratura vertebral operada por **dor refratária**; cimento extravasa em **90%**, déficit em **0,1%**; insuficiência renal e osteodistrofia: **colo do fêmur**; osteoporose transitória: edema **difuso**, realçado pela **supressão de gordura**.
