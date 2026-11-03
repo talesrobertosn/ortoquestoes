@@ -362,7 +362,6 @@ armadilha: Marcar SYME, cujo corte é 0,5 a 1 cm acima e passa pela cúpula, sem
 conceito: BOYD é a amputação com talectomia, avanço do calcâneo e artrodese calcaneotibial, que dá apoio terminal sem migração do coxim; PIROGOFF roda verticalmente a metade posterior do calcâneo em 90 graus até a tíbia.
 como: O TEOT 2024 e o CET-PR mostraram a imagem de uma amputação do pé e tornozelo e pediram o autor, entre BOYD, SYME, WAGNER, SARMIENTO, CHOPART e PIROGOFF.
 armadilha: Na imagem, o calcâneo horizontal fundido à tíbia é BOYD; o calcâneo cortado em plano vertical e girado é PIROGOFF; sem calcâneo, só coxim, é SYME.
-alerta: As imagens das questões não foram vistas nesta revisão; o reconhecimento segue a descrição das técnicas no Campbell (`conceitos-basicos-0150`, `conceitos-basicos-0176`). Gabaritos oficiais mantidos.
 !fim
 
 # Transtibial: o comprimento que a banca pede {radar=confirmado}
