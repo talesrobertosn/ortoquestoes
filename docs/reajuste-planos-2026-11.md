@@ -8,18 +8,29 @@ Escada de R$ 5 por mês escolhida pelo Tales:
 | Semestral | R$ 34,90 | R$ 209,40 a cada 6 meses | 13% |
 | Anual | R$ 29,90 | R$ 358,80 por ano | 25% |
 
-**Quem já assinava não muda nada.** Tem direito ao preço antigo (semestral R$ 179,90, anual R$ 239,90)
-quem tem uma assinatura, no cartão ou no Pix, criada antes do corte, com pagamento aprovado e sem
-reembolso. Vale para sempre: renovação no cartão, nova compra no Pix e volta depois de cancelar.
-Quem foi reembolsado volta como novo.
+**Quem já assinava não muda nada** (regra do Tales, 03/11/2026):
+
+- Mantém o preço antigo **só do plano que pagava**: quem pagava o semestral segue com R$ 179,90 no
+  semestral; quem pagava o anual, com R$ 239,90 no anual. Os outros planos têm o preço novo. O
+  mensal não mudou.
+- Vale **enquanto continuar renovando** esse plano, no cartão ou no Pix.
+- Se o plano acabar, há **30 dias** para renovar pelo mesmo valor. Depois disso, preço novo, e o
+  antigo não volta.
+- Pagamento reembolsado não conta.
+
+A página de planos mostra o selo "Seu preço de sempre" no plano guardado e um aviso "Os preços
+subiram, o seu não" (com a data limite quando o plano já acabou), acima dos planos e na renovação.
 
 ## Onde está cada parte
 
 - Valores do site: `src/dados/planos.ts` (`PLANOS` e `PLANOS_PRECO_ANTIGO`).
 - Valores do servidor: `supabase/functions/_shared/precos.ts` (`PRECOS`, `PRECOS_ANTIGOS`, `centavosPara`).
-- Quem tem o preço antigo: funções `tem_preco_antigo` (servidor) e `meu_preco_antigo` (página) na
+- Quem tem o preço antigo: funções `preco_antigo_ate` e `tem_preco_antigo` (servidor) e
+  `meus_precos_antigos` (página) na
   migração `supabase/migrations/202611030200_reajuste_escada.sql`. O corte fica em `reajuste_precos`.
-- A página mostra o preço de cada pessoa (`src/conta/precoAntigo.ts`) e o selo "Seu preço de sempre".
+- A página mostra o preço de cada pessoa (`src/conta/precoAntigo.ts`), o selo "Seu preço de sempre"
+  e o aviso `src/componentes/vendas/AvisoPrecoGuardado.tsx`. O prazo de 30 dias está em
+  `DIAS_PARA_RENOVAR` (`src/dados/planos.ts`) e na função `preco_antigo_ate`.
 - Condições da Assinatura na versão `2026-11-03` (cláusula 6.3); os Termos de Uso não mudam de versão.
 - Conferência automática: `node fixtures/testar_reajuste_precos.mjs`.
 
@@ -43,7 +54,8 @@ Se o dia mudar, troque a data `2026-11-03` em `src/conta/termos.ts`, nas listas 
 
 - `select corte from public.reajuste_precos;` mostra o corte. Para ajustar:
   `update public.reajuste_precos set corte = '2026-11-03 15:00-03';`
-- `select public.tem_preco_antigo('<id do usuário>');` diz se a pessoa paga o preço antigo.
+- `select public.preco_antigo_ate('<id do usuário>', 'semestral');` diz até quando a pessoa pode
+  pagar o semestral pelo preço antigo (vazio: não tem).
 - O painel do administrador estima a receita futura pelo preço novo; as cobranças já feitas usam o
   valor gravado.
 

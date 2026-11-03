@@ -14,6 +14,7 @@ import { FLASHCARDS_NA_VENDA, recurso, ROTULO_SIMULADOS, LIMITES_HABILITADOS, fr
 import { MENSAL, real, economiaAnual, PRECO_DE_ABERTURA } from '../dados/planos'
 import { usarPrecoAntigo } from '../conta/precoAntigo'
 import { AvisoAbertura } from '../componentes/vendas/AvisoAbertura'
+import { AvisoPrecoGuardado } from '../componentes/vendas/AvisoPrecoGuardado'
 import { diasAte } from '../dados/ritmos'
 import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia } from '../estado/limiteDiario'
@@ -60,9 +61,10 @@ function proximoTeot(): { dias: number; data: string } | null {
 
 export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
   const { sessao } = usarConta()
-  // Quem já assinava antes do reajuste vê (e paga) o preço antigo.
-  const { precoAntigo, carregado: precoCarregado } = usarPrecoAntigo(sessao)
-  const { mensal: PLANO_MENSAL, semestral: PLANO_SEMESTRAL, anual: PLANO_ANUAL, pipoca: PLANOS_PIPOCA } = planosDaPessoa(precoAntigo)
+  // Quem já assinava antes do reajuste vê (e paga) o preço antigo do plano que pagava.
+  const { guardados: precosGuardados, planosAntigos, carregado: precoCarregado } = usarPrecoAntigo(sessao)
+  const { mensal: PLANO_MENSAL, semestral: PLANO_SEMESTRAL, anual: PLANO_ANUAL, pipoca: PLANOS_PIPOCA } = planosDaPessoa(planosAntigos)
+  const avisoPrecoGuardado = pagamentosHabilitados && precosGuardados.length > 0 && <AvisoPrecoGuardado guardados={precosGuardados} planos={PLANOS_PIPOCA} />
   const ECONOMIA_ANUAL = economiaAnual(PLANO_ANUAL.total)
   const [metricas, definirMetricas] = useState<MetricasConta | null>(null)
   // Até a consulta da conta voltar, vale o que ficou guardado (conta/plano.ts):
@@ -258,8 +260,8 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         </aside>
 
         {mostrarPlanos && <div className="vd-heroi__planos" id="planos">
-          {PRECO_DE_ABERTURA && pagamentosHabilitados && !precoAntigo && <AvisoAbertura />}
-          <CartoesPlanos local="topo" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} precoAntigo={precoAntigo} />
+          {avisoPrecoGuardado || (PRECO_DE_ABERTURA && pagamentosHabilitados && <AvisoAbertura />)}
+          <CartoesPlanos local="topo" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} planosAntigos={planosAntigos} />
           <ul className="vd-confianca" aria-label="Pagamento e garantia">
             <li className="vd-confianca__pix"><IconePix tamanho={16} /> <span><strong>Pix</strong> à vista, liberado assim que cai</span></li>
             <li><IconeCartao tamanho={16} /> <span><strong>Cartão</strong> com renovação que você desliga</span></li>
@@ -302,7 +304,8 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             {metricas && ativa && ehPix && pixHabilitado && Number.isFinite(fimAtual) && <RenovacaoPix fim={fimAtual} aoRenovar={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth', block: 'start' })} />}
           </div>
           {metricas && (renovarPix || !ativa) && <div className="vd-ativo__planos" id="planos">
-            <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} precoAntigo={precoAntigo} />
+            {avisoPrecoGuardado}
+            <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} planosAntigos={planosAntigos} />
           </div>}
         </section>
       )}
@@ -404,7 +407,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             <p>Mensal, semestral ou anual: os três liberam tudo. Pix ou cartão, e 7 dias para desistir com um botão.</p>
           </div>
         </div>
-        <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} precoAntigo={precoAntigo} />
+        <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} planosAntigos={planosAntigos} />
         <p className="vd-final__gratis">Ainda não é a hora? Tudo bem. <a href={href(sessao ? '/treinar' : '/conta?modo=criar')}>{sessao ? 'Continue no gratuito' : 'Comece pelo gratuito'}</a>, as questões e os comentários continuam abertos.</p>
       </section>}
 

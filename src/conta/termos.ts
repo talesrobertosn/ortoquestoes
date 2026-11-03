@@ -37,8 +37,8 @@ export const MUDANCAS_TERMOS: readonly string[] = [
  * continuam na versão de 16/10/2026). Aparece no topo das Condições.
  */
 export const MUDANCAS_CONDICOES: readonly string[] = [
-  'Novos valores para quem ainda não assina: semestral R$ 209,40 (R$ 34,90 por mês) e anual R$ 358,80 (R$ 29,90 por mês). O mensal continua R$ 39,90.',
-  'Quem já tinha um pagamento aprovado antes desta versão mantém o valor de antes (semestral R$ 179,90 e anual R$ 239,90), no cartão e no Pix, inclusive nas renovações. Nada muda para quem já assina.',
+  'Valores dos planos: mensal R$ 39,90, semestral R$ 209,40 (R$ 34,90 por mês) e anual R$ 358,80 (R$ 29,90 por mês).',
+  'Quem já assinava antes desta versão mantém o valor de antes do plano que pagava (semestral R$ 179,90 ou anual R$ 239,90), no cartão e no Pix, enquanto continuar renovando, sem prazo final. Se o plano acabar, há 30 dias para renovar pelo mesmo valor.',
 ]
 
 /** Dados a incluir no cadastro da conta, junto ao restante do perfil. */

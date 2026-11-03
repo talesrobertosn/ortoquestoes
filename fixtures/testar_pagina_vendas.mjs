@@ -31,13 +31,17 @@ try {
   const degrau = m.degrauAnual()
   assert.ok(Math.abs(degrau.diferenca - 149.4) < 0.001 && degrau.mesesAMais === 6)
   assert.equal(brl(degrau.texto), 'Por R$ 149,40 a mais que o semestral, 6 meses a mais de estudo.')
-  // Quem já assinava antes do reajuste continua vendo o preço antigo.
-  const antigo = m.planosDaPessoa(true)
+  // Quem já assinava antes do reajuste continua vendo o preço antigo, só no plano que pagava.
+  const antigo = m.planosDaPessoa(['semestral', 'anual'])
   assert.equal(brl(m.semMoeda(m.porMes(antigo.anual))), '19,99')
   assert.equal(brl(m.semMoeda(m.porMes(antigo.semestral))), '29,98')
   assert.equal(m.descontoPct(antigo.anual), 50)
   assert.equal(brl(m.degrauAnual(antigo.semestral, antigo.anual).texto), 'Por R$ 60,00 a mais que o semestral, 6 meses a mais de estudo.')
-  assert.equal(m.planosDaPessoa(false).anual.total, anual.total)
+  assert.equal(m.planosDaPessoa().anual.total, anual.total)
+  const soSemestral = m.planosDaPessoa(['semestral'])
+  assert.equal(brl(m.semMoeda(m.porMes(soSemestral.semestral))), '29,98')
+  assert.equal(soSemestral.anual.total, anual.total, 'Quem pagava o semestral não leva o anual antigo')
+  assert.equal(m.planosDaPessoa(['mensal']).semestral.total, semestral.total)
   assert.equal(m.seloPlano(anual), 'Melhor custo-benefício')
   assert.equal(m.seloPlano(semestral), null)
 

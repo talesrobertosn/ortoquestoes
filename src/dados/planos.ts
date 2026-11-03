@@ -3,13 +3,16 @@
 // (supabase/functions/_shared/precos.ts): mudar aqui exige mudar lá também.
 //
 // Reajuste (Tales, 31/10/2026): escada de R$ 5 por mês, 39,90 / 34,90 / 29,90. Os totais
-// ficam quebrados de propósito: o número grande do cartão é o valor por mês. Quem já pagou
-// antes do reajuste mantém o preço antigo para sempre (PLANOS_PRECO_ANTIGO).
+// ficam quebrados de propósito: o número grande do cartão é o valor por mês. Quem já pagava
+// antes do reajuste mantém o preço antigo do plano que pagava (PLANOS_PRECO_ANTIGO) enquanto
+// continuar assinando, com DIAS_PARA_RENOVAR dias para renovar depois que o plano acaba (Tales, 03/11/2026).
 export const MENSAL = 39.9
 const SEMESTRAL = 209.4
 const ANUAL = 358.8
 const SEMESTRAL_ANTIGO = 179.9
 const ANUAL_ANTIGO = 239.9
+/** Dias depois do fim do plano em que ainda dá para renovar pelo preço antigo (o mesmo número da função preco_antigo_ate no Supabase). */
+export const DIAS_PARA_RENOVAR = 30
 
 export interface Plano { id: 'mensal' | 'semestral' | 'anual'; nome: string; total: number; meses: number; destaque: boolean; chamada: string }
 
@@ -29,7 +32,7 @@ function montarPlanos(semestral: number, anual: number): readonly [Plano, Plano,
   ]
 }
 export const PLANOS = montarPlanos(SEMESTRAL, ANUAL)
-/** Os preços de quem já assinava antes do reajuste (função meu_preco_antigo no Supabase). */
+/** Os preços de quem já assinava antes do reajuste (função meus_precos_antigos no Supabase). */
 export const PLANOS_PRECO_ANTIGO = montarPlanos(SEMESTRAL_ANTIGO, ANUAL_ANTIGO)
 
 /**

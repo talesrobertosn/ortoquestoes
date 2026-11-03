@@ -626,3 +626,11 @@
   background: #fbf3df; color: #7a5710; font-size: 0.75rem; font-weight: 700; box-shadow: inset 0 0 0 1px #e3c98a;
 }
 :root[data-tema="escuro"] .vd-plano__abertura { background: rgba(244, 207, 124, 0.14); color: #f0c46a; box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.4); }
+
+/* Preço guardado (03/11/2026): o mesmo bilhete, com um cadeado que dá um pulinho de vez em quando. */
+.vd-abertura--guardado { background: #eef6ee; box-shadow: inset 0 0 0 2px #a9cfa4, 4px 4px 0 rgba(4, 24, 21, 0.45); }
+.vd-abertura--guardado .vd-abertura__selo { color: #2f6b34; }
+.vd-abertura__cadeado { flex: none; display: grid; place-items: center; width: 44px; height: 52px; animation: vd-cadeado 5s steps(1) infinite; }
+@keyframes vd-cadeado { 0%, 88% { transform: translateY(0); } 90% { transform: translateY(-3px); } 94% { transform: translateY(0); } 96% { transform: translateY(-1px); } 98%, 100% { transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) { .vd-abertura__cadeado { animation: none; } }
+.vd-ativo__planos .vd-abertura { margin-bottom: 1rem; }

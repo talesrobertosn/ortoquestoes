@@ -44,13 +44,14 @@ var PRECOS = {
 };
 var PRECOS_ANTIGOS = { mensal: 3990, semestral: 17990, anual: 23990 };
 var valoresAceitos = (plano) => [PRECOS[plano].centavos, PRECOS_ANTIGOS[plano]];
-async function temPrecoAntigo(idUsuario) {
-  const resposta = await banco("rpc/tem_preco_antigo", { method: "POST", body: JSON.stringify({ p_usuario: idUsuario }) });
+async function temPrecoAntigo(idUsuario, plano) {
+  if (PRECOS_ANTIGOS[plano] === PRECOS[plano].centavos) return false;
+  const resposta = await banco("rpc/tem_preco_antigo", { method: "POST", body: JSON.stringify({ p_usuario: idUsuario, p_plano: plano }) });
   if (!resposta.ok) throw new Error("consulta_preco_antigo_falhou");
   return await resposta.json() === true;
 }
 async function centavosPara(idUsuario, plano) {
-  return await temPrecoAntigo(idUsuario) ? PRECOS_ANTIGOS[plano] : PRECOS[plano].centavos;
+  return await temPrecoAntigo(idUsuario, plano) ? PRECOS_ANTIGOS[plano] : PRECOS[plano].centavos;
 }
 
 // supabase/functions/_shared/pix.ts

@@ -11,7 +11,7 @@ const pasta = await mkdtemp(join(tmpdir(), 'oq-reajuste-'))
 try {
   const saida = join(pasta, 'planos.mjs')
   await build({ entryPoints: ['src/dados/planos.ts'], outfile: saida, bundle: true, platform: 'node', format: 'esm', logLevel: 'error' })
-  const { PLANOS, PLANOS_PRECO_ANTIGO } = await import(pathToFileURL(saida))
+  const { PLANOS, PLANOS_PRECO_ANTIGO, DIAS_PARA_RENOVAR } = await import(pathToFileURL(saida))
   const centavos = (lista) => Object.fromEntries(lista.map((p) => [p.id, Math.round(p.total * 100)]))
   const novos = centavos(PLANOS), antigos = centavos(PLANOS_PRECO_ANTIGO)
   assert.deepEqual(novos, { mensal: 3990, semestral: 20940, anual: 35880 })
@@ -24,6 +24,11 @@ try {
   const sql = await readFile('supabase/migrations/202611030200_reajuste_escada.sql', 'utf8')
   assert.ok(sql.includes(`valor_centavos = ${novos.mensal}`))
   for (const plano of ['semestral', 'anual']) assert.ok(sql.includes(`valor_centavos in (${antigos[plano]}, ${novos[plano]})`), `SQL: ${plano}`)
+  // Preço antigo só no plano que a pessoa pagava, com o mesmo prazo para renovar no site e no banco.
+  assert.ok(sql.includes('and a.plano = p_plano'), 'SQL: preço antigo sem olhar o plano')
+  assert.ok(sql.includes(`interval '${DIAS_PARA_RENOVAR} days'`), 'SQL: prazo para renovar diferente do site')
+  assert.ok(sql.includes(`in (${antigos.semestral}, ${antigos.anual})`), 'SQL: valores antigos')
+  assert.match(precos, /rpc\/tem_preco_antigo[^\n]*p_plano: plano/, 'precos.ts: consulta sem o plano')
   const colar = await readFile('supabase/colar-no-painel/sql-202611030200-parte39-reajuste-escada.sql', 'utf8')
   assert.ok(colar.includes(sql), 'A cópia para o painel difere da migração')
 

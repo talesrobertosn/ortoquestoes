@@ -15,9 +15,12 @@ import { rotuloEtapa, rotuloProva, lerProvas } from '../conta/perfilEstudo'
 export type { Plano }
 export const [PLANO_MENSAL, PLANO_SEMESTRAL, PLANO_ANUAL] = PLANOS
 
-/** Os três planos com o preço desta pessoa: o antigo para quem já assinava antes do reajuste. */
-export function planosDaPessoa(precoAntigo: boolean) {
-  const [mensal, semestral, anual] = precoAntigo ? PLANOS_PRECO_ANTIGO : PLANOS
+/**
+ * Os três planos com o preço desta pessoa: o antigo só nos planos que ela já pagava antes do
+ * reajuste (Tales, 03/11/2026); os outros com o preço novo.
+ */
+export function planosDaPessoa(planosAntigos: readonly string[] = []) {
+  const [mensal, semestral, anual] = PLANOS.map((p, i) => planosAntigos.includes(p.id) ? PLANOS_PRECO_ANTIGO[i] : p)
   return { mensal, semestral, anual, pipoca: [mensal, semestral, anual] as readonly Plano[] }
 }
 
