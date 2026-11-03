@@ -5,7 +5,7 @@ import { chamarRpc } from '../../servicos/supabase'
 import { PLANOS, STATUS_EVENTO, TIPOS_EVENTO, acertoAposRevisao, acertoPorTentativa, acertoReal, nomeErro, porcentagem, rotuloOrigem, rotuloPagina } from '../../componentes/admin/formatos'
 import { perfilDaFicha, type EnvioHistorico } from '../../componentes/admin/modelosEmail'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, linkDoEvento, linkMercadoPago, reprocessarEvento, type EventoPagamento } from '../../componentes/admin/pagamentos'
-import { STATUS_PIX, motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../../componentes/admin/rotulos'
+import { CORTESIA_ADMIN, STATUS_PIX, motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../../componentes/admin/rotulos'
 import { PLANOS_RECENTE_DIAS, diasDesde } from '../../componentes/admin/sinais'
 import { CINCO_MIN, rpcInexistente, usarRpc } from '../../componentes/admin/usarRpc'
 import { usarPainel } from '../dados/painel'
@@ -119,17 +119,17 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }), [u, porTema, atividade, extra, situacao, ano, provas.join(','), fcCartas, planos?.vezes])
   const historicoReserva = useMemo<EnvioHistorico[]>(() => (detalhe?.emails ?? []).map(e => ({ tipo: e.tipo, marco: e.marco, assunto: e.assunto, status: e.status, em: e.em, origem: e.tipo === 'marco' || e.tipo === 'relatorio' ? 'automatico' : e.tipo === 'lembrete' ? 'lote' : 'manual' })), [detalhe])
-  const plano = u.plano_vigente && u.plano_vigente !== 'cortesia' ? `Assinante ${PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}` : cortesiaVale || u.plano_vigente === 'cortesia' ? 'Cortesia' : 'Plano grátis'
+  const plano = u.administrador ? CORTESIA_ADMIN : u.plano_vigente && u.plano_vigente !== 'cortesia' ? `Assinante ${PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}` : cortesiaVale || u.plano_vigente === 'cortesia' ? 'Cortesia' : 'Plano grátis'
 
   const topo = <span className="a3-avatar a3-avatar--grande">{iniciais(u.nome ?? u.email)}{u.online && <i className="a3-ponto a3-ponto--vivo" />}</span>
   const subtitulo = <div style={{ display: 'grid', gap: 8 }}>
     <span>{u.email ?? 'conta sem e-mail'} · conta criada {haQuanto(u.criado_em)}</span>
     <span style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-      <Selo tom={u.plano_vigente || cortesiaVale ? 'ok' : undefined}>{plano}{cortesiaVale && detalhe?.cortesia?.ate ? ` até ${data(detalhe.cortesia.ate)}` : ''}</Selo>
+      <Selo tom={u.plano_vigente || cortesiaVale || u.administrador ? 'ok' : undefined}>{plano}{cortesiaVale && detalhe?.cortesia?.ate ? ` até ${data(detalhe.cortesia.ate)}` : ''}</Selo>
       {viuPlanos && <Selo tom={planosRecente && !u.plano_vigente ? 'aviso' : undefined}>Viu os planos {diasPlanos === 0 ? 'hoje' : diasPlanos === 1 ? 'ontem' : `há ${diasPlanos} dias`}{planos!.vezes > 1 ? ` · ${planos!.vezes}×` : ''}</Selo>}
       {(planos?.condicoes_vezes ?? 0) > 0 && <Selo tom="aviso">Abriu as condições</Selo>}
       {usaFlashcards && <Selo>Usa flashcards</Selo>}
-      {u.administrador && <Selo solido>Administrador</Selo>}
+      {u.administrador && <Selo solido>Admin</Selo>}
       {detalhe?.oculto_ranking && <Selo contorno>Fora do ranking</Selo>}
       {detalhe?.perfil && !detalhe.perfil.confirmado && <Selo tom="erro">E-mail não confirmado</Selo>}
     </span>

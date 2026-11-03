@@ -22,6 +22,8 @@ export const STATUS_ASSINATURA: Record<string, string> = {
 }
 /** Acesso liberado pelo administrador, sem pagamento (não é uma assinatura). */
 export const CORTESIA = 'Cortesia'
+/** Acesso das contas de administrador (Tales, 03/11/2026): aparecem no painel como não assinantes, com este rótulo. */
+export const CORTESIA_ADMIN = 'Cortesia de administrador'
 
 export type Tom = 'ok' | 'aviso' | 'ruim' | 'neutro'
 export type ChaveSituacao =

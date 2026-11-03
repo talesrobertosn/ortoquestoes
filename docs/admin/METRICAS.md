@@ -137,7 +137,7 @@ node fixtures/testar_admin_metricas.mjs --gerar
 | Janela e fuso | Dias do relógio de São Paulo (America/Sao_Paulo); o dia do evento, não o do processamento. |
 | Fonte (RPC) | cobrancas_admin + listar_assinaturas_admin (receita.ts › cobrancas, estimada = false) |
 | Qualidade | Confirmado |
-| Contas de teste | Excluídas (contasTeste.ts) |
+| Contas de teste | Excluídas (contas de teste e de administrador, contasTeste.ts) |
 | Deduplicação | Por cobrança; reembolsadas fora |
 | Atraso | Até o webhook do Mercado Pago chegar |
 | Comparação | Sim, com os N dias anteriores |

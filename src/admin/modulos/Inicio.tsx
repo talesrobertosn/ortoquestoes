@@ -3,7 +3,7 @@ import { carregarIndiceBiblioteca } from '../../biblioteca/conteudo'
 import { quadroDoDia } from '../../componentes/admin/agora'
 import { diaSP } from '../../componentes/admin/estudoHoje'
 import { registrarTitulosResumos } from '../../componentes/admin/formatos'
-import { PLANO_CORTESIA, rotuloPlano } from '../../componentes/admin/rotulos'
+import { CORTESIA_ADMIN, PLANO_CORTESIA, rotuloPlano } from '../../componentes/admin/rotulos'
 import { viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
 import { usarRpc } from '../../componentes/admin/usarRpc'
 import { usarFunil, usarSerie } from '../dados/consultas'
@@ -12,7 +12,7 @@ import { nomeDe, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
 import { Icone } from '../ui/Icone'
 import { combina, haQuanto, horario, iniciais, inteiro, normalizar, reais } from '../ui/formato'
-import { Busca, Carregando, Estado, Painel } from '../ui/kit'
+import { Busca, Carregando, Estado, Painel, Selo } from '../ui/kit'
 import { Faz, LinhaDoDia, Listas } from './dia'
 import { LinhaFila, useIrDestino, usarFila } from './fila'
 
@@ -107,12 +107,15 @@ export default function Inicio() {
     if (!p.usuarios) return null
     const hoje = diaSP(Date.now())
     const sinal = (u: LinhaUsuario) => p.sinais.get(u.id_usuario)
-    const tipoDe = (u: LinhaUsuario): Tipo => u.plano_vigente ? 'assinante' : viuHoje(sinal(u), hoje) ? 'lead' : 'gratis'
+    // Administrador é sempre "não assinante" (acesso de cortesia, nunca possível pagador), mesmo vendo os planos.
+    const tipoDe = (u: LinhaUsuario): Tipo => u.administrador ? 'gratis' : u.plano_vigente ? 'assinante' : viuHoje(sinal(u), hoje) ? 'lead' : 'gratis'
     const ordemTipo: Record<Tipo, number> = { lead: 0, assinante: 1, gratis: 2 }
+    // Administradores aparecem no que é presença (online, estudaram, cadastros), com o selo "Admin" (Tales, 03/11/2026),
+    // e ficam fora das listas de quem paga ou pode pagar (assinantes, viram os planos, limite, ausentes).
     const pessoas = p.usuarios.filter(u => !u.administrador)
     const recente = (a: LinhaUsuario, b: LinhaUsuario) => (ultimoSinal(b) ?? '').localeCompare(ultimoSinal(a) ?? '')
     const porPlanos = (a: LinhaUsuario, b: LinhaUsuario) => (sinal(b)?.planos_ultima ?? '').localeCompare(sinal(a)?.planos_ultima ?? '')
-    const online = pessoas.filter(u => u.online).sort((a, b) => ordemTipo[tipoDe(a)] - ordemTipo[tipoDe(b)]
+    const online = p.usuarios.filter(u => u.online).sort((a, b) => ordemTipo[tipoDe(a)] - ordemTipo[tipoDe(b)]
       || temperatura(b, sinal(b), hoje, limite).pontos - temperatura(a, sinal(a), hoje, limite).pontos
       || (b.pagina_em ?? b.visto_em ?? '').localeCompare(a.pagina_em ?? a.visto_em ?? ''))
     const assinantes = pessoas.filter(u => u.plano_vigente)
@@ -123,8 +126,8 @@ export default function Inicio() {
       assinantes: assinantes.filter(entrouHoje).sort((a, b) => Number(b.online) - Number(a.online) || porQuestoes(a, b)),
       viram: pessoas.filter(u => !u.plano_vigente && viuHoje(sinal(u), hoje)).sort(porPlanos),
       limite: limite ? pessoas.filter(u => !u.plano_vigente && (u.respondidas_hoje ?? 0) >= limite).sort(porQuestoes) : [],
-      estudaram: quadro.estudaram.map(f => f.pessoa).filter(u => !u.administrador).sort(porQuestoes),
-      cadastros: pessoas.filter(u => diaSP(u.criado_em) === hoje).sort((a, b) => b.criado_em.localeCompare(a.criado_em)),
+      estudaram: quadro.estudaram.map(f => f.pessoa).sort(porQuestoes),
+      cadastros: p.usuarios.filter(u => diaSP(u.criado_em) === hoje).sort((a, b) => b.criado_em.localeCompare(a.criado_em)),
       ausentes: assinantes.filter(u => !entrouHoje(u)).sort(recente),
       viram30: pessoas.filter(u => !u.plano_vigente && viuPlanos(sinal(u)) && !viuHoje(sinal(u), hoje)).sort(porPlanos),
     }
@@ -257,15 +260,16 @@ function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; h
       <span className="a3-avatar">{iniciais(u.nome ?? u.email)}<i className="a3-ponto a3-ponto--vivo" /></span>
       <span className="a3-pessoa-linha__texto">
         <span className="a3-pessoa-linha__nome">{nomeDe(u)}
-          {tipo === 'assinante' ? <b className="a3-tag a3-tag--assinante">{rotuloAssinante(u.plano_vigente)}</b>
+          {u.administrador ? <><b className="a3-tag a3-tag--suave">{CORTESIA_ADMIN}</b><Selo solido>Admin</Selo></>
+            : tipo === 'assinante' ? <b className="a3-tag a3-tag--assinante">{rotuloAssinante(u.plano_vigente)}</b>
             : tipo === 'lead' ? <b className="a3-tag a3-tag--lead">Viu os planos às {horario(s?.planos_ultima)}</b>
             : <b className="a3-tag a3-tag--suave">Não assinante</b>}
-          {tipo !== 'assinante' && <Temperatura t={temperatura(u, s, hoje, limite)} />}
+          {tipo !== 'assinante' && !u.administrador && <Temperatura t={temperatura(u, s, hoje, limite)} />}
         </span>
         <span className="a3-pessoa-linha__faz"><Faz u={u} /></span>
         <span className="a3-pessoa-linha__meta">
-          {tipo !== 'assinante' && <Limite u={u} limite={limite} />}
-          {tipo === 'gratis' && viuPlanos(s) && <span>viu os planos {haQuanto(s?.planos_ultima)}</span>}
+          {tipo !== 'assinante' && !u.administrador && <Limite u={u} limite={limite} />}
+          {tipo === 'gratis' && !u.administrador && viuPlanos(s) && <span>viu os planos {haQuanto(s?.planos_ultima)}</span>}
           {tipo !== 'assinante' && <span>conta {haQuanto(u.criado_em)}</span>}
           {u.aparelho && <span>{u.aparelho}</span>}
         </span>
@@ -275,7 +279,7 @@ function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; h
       <Questoes u={u} />
       <span className="a3-pessoa-linha__links">
         <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario)}><Icone nome="usuario" tamanho={15} />Ver ficha</button>
-        <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario, 'carta')}><Icone nome="carta" tamanho={15} />Enviar carta</button>
+        {!u.administrador && <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario, 'carta')}><Icone nome="carta" tamanho={15} />Enviar carta</button>}
       </span>
     </span>
   </li>
@@ -290,7 +294,8 @@ function LinhaFora({ u, tipo }: { u: LinhaUsuario; tipo: Tipo }) {
     <button type="button" className="a3-pessoa-linha" onClick={() => nav.abrirPessoa(u.id_usuario)}>
       <span className="a3-avatar">{iniciais(u.nome ?? u.email)}</span>
       <span className="a3-pessoa-linha__texto">
-        <span className="a3-pessoa-linha__nome">{nomeDe(u)}<b className={`a3-tag a3-tag--${tipo === 'assinante' ? 'assinante' : tipo === 'lead' ? 'lead' : 'suave'}`}>{tipo === 'assinante' ? rotuloAssinante(u.plano_vigente) : ROTULO_TIPO[tipo]}</b></span>
+        <span className="a3-pessoa-linha__nome">{nomeDe(u)}{u.administrador ? <><b className="a3-tag a3-tag--suave">{CORTESIA_ADMIN}</b><Selo solido>Admin</Selo></>
+          : <b className={`a3-tag a3-tag--${tipo === 'assinante' ? 'assinante' : tipo === 'lead' ? 'lead' : 'suave'}`}>{tipo === 'assinante' ? rotuloAssinante(u.plano_vigente) : ROTULO_TIPO[tipo]}</b>}</span>
         <span className="a3-pessoa-linha__meta">
           <span>{sinal ? `última vez ${haQuanto(sinal)}` : 'nunca entrou'}</span>
           {viuPlanos(s) && <span>viu os planos {tipo === 'lead' ? `às ${horario(s?.planos_ultima)}` : haQuanto(s?.planos_ultima)} · {s?.planos_vezes ?? 0} {s?.planos_vezes === 1 ? 'vez' : 'vezes'} em 30 dias</span>}
@@ -301,7 +306,7 @@ function LinhaFora({ u, tipo }: { u: LinhaUsuario; tipo: Tipo }) {
       <Questoes u={u} />
       <span className="a3-pessoa-linha__links">
         <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario)}><Icone nome="usuario" tamanho={15} />Ver ficha</button>
-        <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario, 'carta')}><Icone nome="carta" tamanho={15} />Enviar carta</button>
+        {!u.administrador && <button type="button" className="a3-link-acao" onClick={() => nav.abrirPessoa(u.id_usuario, 'carta')}><Icone nome="carta" tamanho={15} />Enviar carta</button>}
       </span>
     </span>
   </li>

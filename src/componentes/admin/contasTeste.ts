@@ -17,6 +17,14 @@ function fnv1a(texto: string) {
   return h.toString(16).padStart(8, '0')
 }
 
+/**
+ * Fica fora dos números de negócio (receita, conversão, assinantes): conta de teste do dono ou compra feita numa
+ * conta de administrador (Tales, 03/11/2026). Continua aparecendo nas listas, com o selo "Admin" ou "Teste".
+ */
+export function foraDosNumeros(a: { nome?: string | null; usuario?: string | null; administrador?: boolean | null }) {
+  return !!a.administrador || contaDeTeste(a)
+}
+
 export function contaDeTeste(a: { nome?: string | null; usuario?: string | null }) {
   const nome = normalizar(a.nome ?? '').trim().replace(/\s+/g, ' ')
   const email = (a.usuario ?? '').trim().toLowerCase()

@@ -8,7 +8,7 @@ import { nomeDe, novoParado, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
 import { Icone } from '../ui/Icone'
 import { combina, haQuanto, horario, iniciais, inteiro, normalizar, reais } from '../ui/formato'
-import { Busca, Carregando, Estado, Painel, SeloQualidade, Situacao } from '../ui/kit'
+import { Busca, Carregando, Estado, Painel, Selo, SeloQualidade, Situacao } from '../ui/kit'
 import { Tabela, type Coluna } from '../ui/tabela'
 
 type Lista = 'estudaram' | 'entraram' | 'novos' | 'semana' | 'dinheiro' | 'biblioteca'
@@ -25,7 +25,7 @@ export function Faz({ u }: { u: Pick<LinhaUsuario, 'pagina' | 'questao'> }) {
 function Pessoa({ u, detalhe }: { u: LinhaUsuario; detalhe?: ReactNode }) {
   return <span className="a3-pessoa-cel">
     <span className="a3-avatar">{iniciais(u.nome ?? u.email)}{u.online && <i className="a3-ponto a3-ponto--vivo" />}</span>
-    <span style={{ minWidth: 0 }}><span className="a3-nome">{nomeDe(u)}</span>{detalhe !== undefined ? <span className="a3-sub">{detalhe}</span> : u.email && <span className="a3-sub">{u.email}</span>}</span>
+    <span style={{ minWidth: 0 }}><span className="a3-nome">{nomeDe(u)}{u.administrador && <> <Selo solido>Admin</Selo></>}</span>{detalhe !== undefined ? <span className="a3-sub">{detalhe}</span> : u.email && <span className="a3-sub">{u.email}</span>}</span>
   </span>
 }
 
