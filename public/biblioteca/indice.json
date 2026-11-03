@@ -340,6 +340,136 @@
    ]
   },
   {
+   "id": "callaghan-exame-quadril",
+   "versao": 1,
+   "titulo": "Exame físico do quadril",
+   "especialidade": "quadril",
+   "livro": "The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)",
+   "edicao": "Edição de 2017",
+   "capitulo": "Capítulo 22 · History and Physical Examination",
+   "resumo": "Exame em cinco camadas (osteocondral, capsulolabral, musculotendínea, neurovascular e cadeia cinemática; FREIBERG e PACE são os autores dos testes neurovasculares) na ordem em pé, sentado, supino, lateral e prono; sinal do C = dor intra-articular; TRENDELENBURG (apoio unipodal por 6 segundos, lado normal primeiro, desvio > 2 cm, pelve cai do lado oposto ao glúteo médio insuficiente; força abdutora cerca de 2,5 vezes o peso); rotação interna sentado normal de 20 a 35 graus, a primeira a se perder; THOMAS = contratura em flexão; FABER/PATRICK = quadril versus sacroilíaca; STINCHFIELD = patologia articular; FADIR (flexão, adução e rotação interna) = impacto anterior; DEXRIT = impacto superior e posterior e instabilidade anteroinferior; OBER = trato iliotibial (extensão) e glúteo médio (neutro); piriforme ativo em abdução e rotação externa contra resistência, passivo em adução e rotação interna; CRAIG = anteversão; ELY = reto femoral; LUDLOFF = iliopsoas e trocânter menor.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-cinco-camadas-e-quem-inventou-cada-familia-de",
+     "titulo": "As cinco camadas e quem inventou cada família de testes",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-historia-e-os-questionarios",
+     "titulo": "A história e os questionários",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-ordem-do-exame-e-a-inspecao-em-pe",
+     "titulo": "A ordem do exame e a inspeção em pé",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-marcha",
+     "titulo": "A marcha",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-apoio-unipodal-teste-de-trendelenburg",
+     "titulo": "O apoio unipodal: teste de TRENDELENBURG",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sentado-neurovascular-e-rotacoes",
+     "titulo": "Sentado: neurovascular e rotações",
+     "radar": "clinico"
+    },
+    {
+     "id": "decubito-dorsal-thomas-patrick-stinchfield-e-o-r",
+     "titulo": "Decúbito dorsal: THOMAS, PATRICK, STINCHFIELD e o rolamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "congruencia-femoroacetabular-impacto-e-instabili",
+     "titulo": "Congruência femoroacetabular: impacto e instabilidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "decubito-lateral-trocanter-abdutores-e-ober",
+     "titulo": "Decúbito lateral: trocânter, abdutores e OBER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dor-posterior-extra-articular-piriforme-freiberg",
+     "titulo": "Dor posterior extra-articular: piriforme, FREIBERG e PACE",
+     "radar": "confirmado"
+    },
+    {
+     "id": "decubito-ventral-craig-e-ely",
+     "titulo": "Decúbito ventral: CRAIG e ELY",
+     "radar": "fundamento"
+    },
+    {
+     "id": "iliopsoas-e-reto-femoral-ludloff-e-as-avulsoes",
+     "titulo": "Iliopsoas e reto femoral: LUDLOFF e as avulsões",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ressaltos",
+     "titulo": "Ressaltos",
+     "radar": "clinico"
+    },
+    {
+     "id": "quadril-ou-coluna-a-lombociatalgia-que-nao-fecha",
+     "titulo": "Quadril ou coluna: a lombociatalgia que não fecha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "quadril-0160",
+    "quadril-0218",
+    "quadril-0485",
+    "quadril-0209",
+    "quadril-0069",
+    "quadril-0714",
+    "quadril-0484",
+    "quadril-0643",
+    "quadril-0514",
+    "quadril-0152",
+    "quadril-0173",
+    "quadril-0334",
+    "quadril-0065",
+    "quadril-0046",
+    "quadril-0077",
+    "quadril-0124",
+    "quadril-0005",
+    "quadril-0517",
+    "quadril-0518"
+   ],
+   "treino": [
+    "quadril-0595",
+    "quadril-0596",
+    "quadril-0597",
+    "quadril-0598",
+    "quadril-0599",
+    "quadril-0255",
+    "quadril-0600",
+    "quadril-0603",
+    "quadril-0602",
+    "quadril-0601"
+   ],
+   "subtemas": [
+    "Exame físico do quadril"
+   ]
+  },
+  {
    "id": "callaghan-historia-biomecanica",
    "versao": 1,
    "titulo": "História da cirurgia do quadril, biomecânica e cinemática da artroplastia",
@@ -3206,6 +3336,128 @@
    ]
   },
   {
+   "id": "campbell15-espondiloartrites-artrites",
+   "versao": 1,
+   "titulo": "Espondiloartrites e outras artrites",
+   "especialidade": "osteometabolicas",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021) e o Green's Operative Hand Surgery, 7ª ed. (2017)",
+   "capitulo": "Capítulo 78 · Arthritic Hand",
+   "resumo": "AR é a artrite inflamatória idiopática mais comum, simétrica, de mãos e pés, com 4 de 7 critérios (rigidez matinal, 3 ou mais áreas, mão, simetria, nódulos, FR, erosões) e anti-CCP 98% específico; polegar de NALEBUFF tipo I (botoeira) é o mais comum; artrodese do punho com pino de STEINMANN saindo entre o 2º e o 3º metacarpos; prótese de cotovelo dá os melhores resultados na AR; soronegativas atacam a êntese, predominam em homens e se ligam ao HLA-B27 (88% a 96% na EA, que sobe de caudal para cefálico e poupa disco e ligamento longitudinal anterior); REITER é tríade com oligoartrite assimétrica de homem jovem; acro-osteólise e lápis na xícara são da psoriásica; gota é monoartrite súbita de homem, com cristal de birrefringência negativa; LYME acomete sobretudo o joelho; AIJ exige 6 semanas, oligoarticular em meninas de 2 a 4 anos, joelho, FAN e uveíte, e FR e FAN não diagnosticam.",
+   "acesso": "gratis",
+   "minutos": 32,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-mapa-das-artrites-inflamatorias",
+     "titulo": "O mapa das artrites inflamatórias",
+     "radar": "fundamento"
+    },
+    {
+     "id": "artrite-reumatoide-a-doenca-e-o-diagnostico",
+     "titulo": "Artrite reumatoide: a doença e o diagnóstico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-ar-fora-da-mao-coluna-cervical-quadril-e-cotov",
+     "titulo": "A AR fora da mão: coluna cervical, quadril e cotovelo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-mao-reumatoide-e-o-polegar-de-nalebuff",
+     "titulo": "A mão reumatoide e o polegar de NALEBUFF",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-punho-reumatoide-e-a-artrodese-com-pino",
+     "titulo": "O punho reumatoide e a artrodese com pino",
+     "radar": "confirmado"
+    },
+    {
+     "id": "espondiloartrites-o-que-une-o-grupo",
+     "titulo": "Espondiloartrites: o que une o grupo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "espondilite-anquilosante",
+     "titulo": "Espondilite anquilosante",
+     "radar": "confirmado"
+    },
+    {
+     "id": "reiter-e-artrite-reativa",
+     "titulo": "REITER e artrite reativa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrite-psoriasica-e-a-acro-osteolise",
+     "titulo": "Artrite psoriásica e a acro-osteólise",
+     "radar": "confirmado"
+    },
+    {
+     "id": "gota-e-pseudogota",
+     "titulo": "Gota e pseudogota",
+     "radar": "confirmado"
+    },
+    {
+     "id": "doenca-de-lyme",
+     "titulo": "Doença de LYME",
+     "radar": "confirmado"
+    },
+    {
+     "id": "febre-reumatica-e-artrite-pos-estreptococica",
+     "titulo": "Febre reumática e artrite pós-estreptocócica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrite-idiopatica-juvenil-definicao-e-o-subtipo",
+     "titulo": "Artrite idiopática juvenil: definição e o subtipo oligoarticular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "aij-poliarticular-sistemica-e-a-uveite",
+     "titulo": "AIJ poliarticular, sistêmica e a uveíte",
+     "radar": "confirmado"
+    },
+    {
+     "id": "aij-imagem-tratamento-e-cirurgia",
+     "titulo": "AIJ: imagem, tratamento e cirurgia",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "osteometabolicas-0078",
+    "osteometabolicas-0008",
+    "osteometabolicas-0033",
+    "mao-0142",
+    "mao-0454",
+    "osteometabolicas-0081",
+    "osteometabolicas-0093",
+    "osteometabolicas-0012",
+    "osteometabolicas-0066",
+    "osteometabolicas-0073",
+    "osteometabolicas-0068",
+    "osteometabolicas-0010",
+    "osteometabolicas-0015",
+    "osteometabolicas-0053",
+    "osteometabolicas-0045",
+    "osteometabolicas-0029",
+    "osteometabolicas-0092"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
+   ]
+  },
+  {
    "id": "campbell15-espondilolistese",
    "versao": 1,
    "titulo": "Espondilólise e espondilolistese",
@@ -5023,6 +5275,122 @@
    ]
   },
   {
+   "id": "campbell15-tuberculose-osteoarticular",
+   "versao": 1,
+   "titulo": "Tuberculose osteoarticular",
+   "especialidade": "osteometabolicas",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 23",
+   "capitulo": "Capítulo 25 · Tuberculosis and Other Unusual Infections",
+   "resumo": "Esquelética em 10% a 20% da tuberculose, metade com pulmão acometido; coluna é o sítio ósseo mais comum (espondilite), na porção anterior do corpo vertebral, transição toracolombar ou torácica baixa, com disseminação subligamentar e disco poupado; quadro de sintomas gerais e evolução indolente; periférica em quadril e joelho; no membro superior, cotovelo com olécrano e contratura em flexão; no pé, calcâneo e tálus; RM é a imagem de escolha, biópsia com cultura ou teste molecular confirma; tratamento com esquema de múltiplas drogas, cirurgia para déficit, cifose, instabilidade, abscesso grande ou falha.",
+   "acesso": "gratis",
+   "minutos": 32,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "do-bacilo-ao-osso-quanto-a-tuberculose-acomete-o",
+     "titulo": "Do bacilo ao osso: quanto a tuberculose acomete o esqueleto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "onde-a-coluna-adoece-o-segmento-e-a-porcao-da-ve",
+     "titulo": "Onde a coluna adoece: o segmento e a porção da vértebra",
+     "radar": "confirmado"
+    },
+    {
+     "id": "por-que-o-disco-e-poupado-e-como-a-infeccao-anda",
+     "titulo": "Por que o disco é poupado e como a infecção anda",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-quadro-clinico-do-mal-de-pott",
+     "titulo": "O quadro clínico do mal de POTT",
+     "radar": "confirmado"
+    },
+    {
+     "id": "abscesso-frio-giba-e-paraplegia",
+     "titulo": "Abscesso frio, giba e paraplegia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "diagnostico-laboratorio-imagem-e-biopsia",
+     "titulo": "Diagnóstico: laboratório, imagem e biópsia",
+     "radar": "clinico"
+    },
+    {
+     "id": "diagnostico-diferencial",
+     "titulo": "Diagnóstico diferencial",
+     "radar": "clinico"
+    },
+    {
+     "id": "tratamento-da-tuberculose-da-coluna",
+     "titulo": "Tratamento da tuberculose da coluna",
+     "radar": "clinico"
+    },
+    {
+     "id": "articulacoes-perifericas-o-padrao-geral",
+     "titulo": "Articulações periféricas: o padrão geral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "membro-superior-cotovelo-ombro-e-punho",
+     "titulo": "Membro superior: cotovelo, ombro e punho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quadril-joelho-tornozelo-e-pelve",
+     "titulo": "Quadril, joelho, tornozelo e pelve",
+     "radar": "clinico"
+    },
+    {
+     "id": "pe-ossos-longos-e-spina-ventosa",
+     "titulo": "Pé, ossos longos e spina ventosa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "drogas-e-principios-gerais-do-tratamento",
+     "titulo": "Drogas e princípios gerais do tratamento",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-crianca",
+     "titulo": "A criança",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "osteometabolicas-0049",
+    "osteometabolicas-0040",
+    "osteometabolicas-0071",
+    "osteometabolicas-0001",
+    "osteometabolicas-0032",
+    "osteometabolicas-0006",
+    "coluna-0230",
+    "osteometabolicas-0016",
+    "osteometabolicas-0027",
+    "osteometabolicas-0038",
+    "osteometabolicas-0017",
+    "osteometabolicas-0077",
+    "osteometabolicas-0070",
+    "osteometabolicas-0030",
+    "osteometabolicas-0067",
+    "osteometabolicas-0050"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ]
+  },
+  {
    "id": "campbell15-tumores-partes-moles",
    "versao": 1,
    "titulo": "Tumores benignos de partes moles",
@@ -6174,6 +6542,136 @@
    "treino": [],
    "subtemas": [
     "Retalhos e cobertura cutânea"
+   ]
+  },
+  {
+   "id": "green-rizartrose-artrose-mao",
+   "versao": 1,
+   "titulo": "Rizartrose e artrose da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)",
+   "capitulo": "Capítulo 11 · Treatment of the Osteoarthritic Hand and Thumb",
+   "resumo": "Rizartrose: oblíquo anterior profundo (intracapsular, do tubérculo volar do trapézio à base volar ulnar do metacarpo) falha, metacarpo subluxa para dorsal e a metade volar se desgasta (trapézio 3:1); carga de 12 a 20 vezes na pinça; adução do metacarpo com hiperextensão da MCF; grind; ROBERT; EATON I a IV (2 mm e ETT); osteotomia em extensão e reconstrução de EATON e LITTLER nos I e II; trapeziectomia nos III e IV (BURTON e PELLEGRINI e WEILBY com FRC, THOMPSON com ALP); pseudartrose na osteotomia e na artrodese; dedos: BOUCHARD na IFP, HEBERDEN na IFD, erosiva mais na IFD e mais sintomática na IFP; IFP fundida de 30 a 60 graus, MCF do polegar 20 graus.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-tem-artrose-da-mao-e-onde-ela-aparece",
+     "titulo": "Quem tem artrose da mão e onde ela aparece",
+     "radar": "confirmado"
+    },
+    {
+     "id": "anatomia-e-biomecanica-da-trapeziometacarpal",
+     "titulo": "Anatomia e biomecânica da trapeziometacarpal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-paciente-com-rizartrose-e-o-exame",
+     "titulo": "O paciente com rizartrose e o exame",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-e-a-classificacao-de-eaton",
+     "titulo": "Imagem e a classificação de EATON",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-nao-operatorio",
+     "titulo": "Tratamento não operatório",
+     "radar": "confirmado"
+    },
+    {
+     "id": "estagios-iniciais-osteotomia-e-reconstrucao-liga",
+     "titulo": "Estágios iniciais: osteotomia e reconstrução ligamentar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-trapeziectomia-e-seus-eponimos",
+     "titulo": "A trapeziectomia e seus epônimos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrodese-trapeziometacarpal-implantes-e-complic",
+     "titulo": "Artrodese trapeziometacarpal, implantes e complicações",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-mcf-do-polegar-e-a-artrodese-metacarpofalangic",
+     "titulo": "A MCF do polegar e a artrodese metacarpofalângica",
+     "radar": "clinico"
+    },
+    {
+     "id": "artrodese-das-interfalangicas",
+     "titulo": "Artrodese das interfalângicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artroplastia-das-interfalangicas-e-da-mcf",
+     "titulo": "Artroplastia das interfalângicas e da MCF",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0306",
+    "mao-0495",
+    "mao-0036",
+    "mao-0014",
+    "mao-0048",
+    "mao-0481",
+    "mao-0536",
+    "mao-1513",
+    "mao-0101",
+    "mao-0677",
+    "mao-0950",
+    "mao-0603",
+    "mao-0235",
+    "mao-1071",
+    "mao-0690",
+    "mao-0158",
+    "mao-0595",
+    "mao-1235",
+    "mao-0575",
+    "mao-0082",
+    "mao-0744",
+    "mao-0236",
+    "mao-0826",
+    "mao-0774",
+    "mao-1588",
+    "mao-0639",
+    "mao-1317"
+   ],
+   "treino": [
+    "mao-2122",
+    "mao-2033",
+    "mao-2322",
+    "mao-1963",
+    "mao-1803",
+    "mao-2034",
+    "mao-1964",
+    "mao-1965",
+    "mao-2532",
+    "mao-2324",
+    "mao-2501",
+    "mao-1806",
+    "mao-2323",
+    "mao-1804",
+    "mao-2329",
+    "mao-2205",
+    "mao-2204"
+   ],
+   "subtemas": [
+    "Rizartrose e artrose da mão"
    ]
   },
   {
