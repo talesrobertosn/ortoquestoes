@@ -77,7 +77,7 @@ O Campbell (cap. 51, p. 2185) manda tratar primeiro com **fisioterapia e talas**
 conceito: O Campbell indica liberação quando o arco de flexoextensão fica abaixo de 100 graus depois do tratamento não operatório, sobretudo com contratura em flexão acima de 45 graus.
 como: O TARO 2009 perguntou quando há indicação de liberação cirúrgica, misturando arco inferior a 100 graus, contratura em flexão acima de 30 graus, lesão articular grave e falha após dois meses de conservador.
 armadilha: Achar que 30 graus de contratura bastam (o corte é 45 no Campbell e 40 no Green), que lesão articular grave pede liberação simples (pede artroplastia) ou que dois meses esgotam o conservador (a melhora vai até 4 a 6 meses).
-alerta: Questão sem gabarito oficial no acervo; o Campbell (cap. 51, p. 2185) sustenta a alternativa A (arco de movimento inferior a 100 graus).
+alerta: Questão sem gabarito oficial no acervo; o gabarito da bibliografia da banca (Campbell, 11ª ed.) marca a contratura em flexão acima de 30 graus, resposta que o site segue. O Campbell 15 (cap. 51, p. 2185) usa o arco abaixo de 100 graus e a contratura acima de 45, e o Green usa a perda de 40 graus de extensão.
 !fim
 
 # Causas intrínsecas e extrínsecas {radar=confirmado}
