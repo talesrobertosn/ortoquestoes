@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Os suspeitos de sempre</title>
+<!-- 03/11/2026, pedido do Tales: mistura do Jornal (Diário do Plantão, edição policial) com um quadro de investigação,
+     "um cenário maior". O feed é um painel panorâmico de 7 x 1080 px: o quadro de cortiça corre de ponta a ponta e
+     cada slide é um recorte dele (o barbante vermelho atravessa as emendas e convida a arrastar).
+     Questões reais, mesmas quatro alternativas e mesmo paciente de 15 anos:
+       tumores-0194 (TEOT 2024, coxa, gabarito C, osteoma osteoide)
+       tumores-0318 (TARO 2024, ombro, gabarito B, condroblastoma)
+     Textos de explicação tirados do comentário do site das duas questões. Sem desenho de anatomia: só as radiografias.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-03-suspeitos-de-sempre/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; font-style: italic; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; font-style: italic; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root { --papel: #F2ECDD; --tinta: #1b1a17; --cinza: #5f5a50; --verm: #b3261e; --barbante: #c4231b; --ouro: #F4CF7C; --verde: #14655E; --postit: #FFE58A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; }
+section { position: relative; overflow: hidden; margin-bottom: 40px; width: 1080px; height: 1350px; }
+.panorama { position: relative; overflow: hidden; width: 7560px; height: 1350px; }
+.mural { position: absolute; top: 0; width: 7560px; height: 1350px; font-family: Serif4, serif; color: var(--tinta); }
+
+/* ---------- O quadro de cortiça, com moldura de madeira e a luz da luminária ---------- */
+.cortica { position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 900px 700px at 540px 520px, rgba(255,214,150,.30), transparent 70%),
+    radial-gradient(ellipse 900px 700px at 2700px 600px, rgba(255,214,150,.26), transparent 70%),
+    radial-gradient(ellipse 900px 700px at 4860px 560px, rgba(255,214,150,.30), transparent 70%),
+    radial-gradient(ellipse 900px 700px at 7020px 600px, rgba(255,214,150,.26), transparent 70%),
+    radial-gradient(circle at 3px 3px, rgba(60,30,8,.30) 1.4px, transparent 2px) 0 0 / 9px 11px,
+    radial-gradient(circle at 6px 7px, rgba(255,235,200,.22) 1.2px, transparent 2px) 0 0 / 13px 10px,
+    radial-gradient(circle at 2px 9px, rgba(90,50,15,.25) 2px, transparent 3px) 0 0 / 17px 19px,
+    linear-gradient(180deg, #a87545, #9a6a3d 50%, #8c5e34); }
+.cortica::after { content: ''; position: absolute; inset: 0; box-shadow: inset 0 0 160px rgba(30,12,2,.55); }
+.moldura { position: absolute; left: 0; right: 0; height: 30px; z-index: 1;
+  background: repeating-linear-gradient(90deg, rgba(0,0,0,.08) 0 3px, transparent 3px 41px), linear-gradient(180deg, #6b4423, #4a2c14); box-shadow: 0 6px 14px rgba(0,0,0,.45); }
+.moldura.cima { top: 0; } .moldura.baixo { bottom: 0; box-shadow: 0 -6px 14px rgba(0,0,0,.45); }
+
+/* ---------- Peças pregadas ---------- */
+.peca { position: absolute; z-index: 2; box-shadow: 0 2px 0 rgba(0,0,0,.08), 0 22px 40px rgba(25,10,0,.48), 0 4px 10px rgba(25,10,0,.3); }
+.alfinete { position: absolute; z-index: 5; width: 34px; height: 34px; margin: -17px 0 0 -17px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #ff8d84, #c4231b 55%, #6e0d08); box-shadow: 0 6px 8px rgba(0,0,0,.45), inset 0 -3px 4px rgba(0,0,0,.3); }
+.alfinete.ouro { background: radial-gradient(circle at 35% 30%, #FFF1C6, #F4CF7C 55%, #9b6f1c); }
+.fita { position: absolute; z-index: 4; width: 150px; height: 44px; background: rgba(245,238,214,.78); box-shadow: 0 2px 4px rgba(0,0,0,.18);
+  -webkit-mask: linear-gradient(90deg, transparent 0 3px, #000 3px calc(100% - 3px), transparent calc(100% - 3px)); }
+.etiqueta { position: absolute; z-index: 6; display: flex; align-items: center; gap: 12px; padding: 12px 20px; background: #fbf7ec; font: 700 24px Jakarta; color: var(--tinta);
+  box-shadow: 0 10px 22px rgba(25,10,0,.45); }
+.etiqueta svg { width: 36px; height: 36px; }
+.etiqueta span { color: var(--cinza); font-weight: 700; letter-spacing: .08em; }
+
+/* jornal */
+.jornal { background:
+    radial-gradient(circle at 1px 1px, rgba(0,0,0,.05) 1px, transparent 1.2px) 0 0/5px 5px,
+    radial-gradient(ellipse at 50% 0%, #f7f2e6, transparent 70%), var(--papel); padding: 40px 46px; }
+.titulo-jornal { padding: 10px 0 8px; border-top: 6px double var(--tinta); border-bottom: 2px solid var(--tinta); text-align: center; font: 900 92px/1 Playfair; letter-spacing: -.02em; }
+.data { display: flex; justify-content: space-between; padding: 9px 0; border-bottom: 6px double var(--tinta); font: 700 19px Jakarta; letter-spacing: .08em; text-transform: uppercase; }
+.data b { color: var(--verm); }
+.chapeu { display: inline-block; font: 800 22px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--verm); }
+.manchete { font: 900 70px/1 Playfair; letter-spacing: -.025em; text-wrap: balance; }
+.linha-fina { font: italic 400 30px/1.32 Serif4; color: #3a3730; text-wrap: pretty; }
+.foto { position: relative; background: #000; border: 2px solid var(--tinta); }
+.foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.legenda { margin-top: 8px; font: italic 400 24px/1.3 Serif4; color: var(--cinza); }
+.legenda b { font: 800 19px Jakarta; font-style: normal; letter-spacing: .12em; text-transform: uppercase; color: var(--tinta); }
+.pe-jornal { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; padding-top: 12px; border-top: 2px solid var(--tinta); font: 800 22px Jakarta; letter-spacing: .08em; text-transform: uppercase; color: var(--cinza); }
+.pe-jornal b { color: var(--verm); }
+
+/* fichas dos suspeitos */
+.titulo-recorte { background: var(--tinta); color: #f7f1e3; padding: 18px 30px 16px; }
+.titulo-recorte small { display: block; font: 800 22px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--ouro); }
+.titulo-recorte h2 { margin-top: 4px; font: 900 64px/1 Playfair; letter-spacing: -.02em; }
+.ficha { width: 450px; padding: 46px 28px 26px; background:
+    linear-gradient(transparent 0 112px, #d65b54 112px 114px, transparent 114px),
+    repeating-linear-gradient(transparent 0 37px, rgba(60,110,170,.22) 37px 38px) 0 114px / 100% calc(100% - 114px) no-repeat, #fffdf6; }
+.ficha .num { display: flex; justify-content: space-between; font: 800 19px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--cinza); }
+.ficha h3 { margin-top: 4px; font: 900 42px/1.02 Playfair; letter-spacing: -.015em; }
+.ficha dl { margin-top: 22px; display: grid; gap: 12px; }
+.ficha dt { font: 800 18px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: var(--verm); }
+.ficha dd { font: 500 25px/1.3 Inter; color: #2b2a26; }
+.ficha dd b { font-weight: 800; }
+
+/* polaroides */
+.polaroide { background: #fbfaf5; padding: 22px 22px 86px; }
+.polaroide img { display: block; width: 100%; filter: contrast(1.04); }
+.polaroide figcaption { position: absolute; left: 22px; right: 22px; bottom: 18px; font: 700 40px/1.1 Caveat; color: #2a2a2a; text-align: center; }
+
+/* cartões de questão */
+.cartao { background: #fffdf6; padding: 30px 32px 30px; }
+.cartao .rot { display: flex; justify-content: space-between; align-items: center; padding-bottom: 14px; border-bottom: 3px solid var(--tinta); font: 800 21px Jakarta; letter-spacing: .14em; text-transform: uppercase; }
+.cartao .rot b { color: var(--verm); }
+.cartao .enun { margin-top: 20px; font: 600 33px/1.32 Serif4; text-wrap: pretty; }
+.cedula { display: grid; gap: 12px; margin-top: 24px; }
+.cedula div { display: flex; align-items: center; gap: 16px; font: 600 30px Serif4; }
+.cedula i { flex: none; width: 50px; height: 50px; border: 3px solid var(--tinta); display: grid; place-items: center; font: 800 25px Jakarta; font-style: normal; }
+.cedula div.certa { color: #0f4d47; font-weight: 800; }
+.cedula div.certa i { background: var(--verde); border-color: var(--verde); color: #fff; }
+.cedula div.fora { opacity: .42; }
+
+.postit { position: absolute; z-index: 4; padding: 26px 26px 30px; background: linear-gradient(170deg, #fff2a8, var(--postit) 60%, #f3d468); font: 700 40px/1.12 Caveat; color: #2b2410;
+  box-shadow: 0 16px 26px rgba(25,10,0,.4); }
+.postit b { font-weight: 700; color: var(--verm); }
+
+/* veredito */
+.veredito .manchete { font-size: 58px; }
+.carimbo { position: absolute; z-index: 6; padding: 8px 22px; border: 7px solid var(--verm); color: var(--verm); font: 800 46px Jakarta; letter-spacing: .14em; text-transform: uppercase; transform: rotate(-10deg); opacity: .9; mix-blend-mode: multiply; }
+.resposta { display: flex; align-items: center; gap: 22px; margin-top: 22px; }
+.resposta i { flex: none; width: 96px; height: 96px; display: grid; place-items: center; font: 800 56px Jakarta; font-style: normal; color: #fff; background: var(--verde); }
+.resposta strong { font: 900 54px/1 Playfair; letter-spacing: -.02em; }
+.resposta small { display: block; font: 800 19px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--verm); margin-bottom: 6px; }
+.pistas { display: grid; gap: 16px; margin-top: 26px; }
+.pista { display: grid; grid-template-columns: 50px 1fr; gap: 16px; align-items: start; font: 500 27px/1.34 Inter; color: #2b2a26; }
+.pista b { font-weight: 800; color: var(--tinta); }
+.pista i { font-style: normal; display: grid; place-items: center; width: 50px; height: 50px; border-radius: 50%; font: 800 25px Jakarta; color: #2A1E05; background: radial-gradient(circle at 35% 30%, #FFF1C6, #F4CF7C 55%, #C9962F); box-shadow: 0 3px 6px rgba(0,0,0,.25); }
+.alibis { margin-top: 24px; padding: 18px 22px; border: 3px solid var(--tinta); background: rgba(255,255,255,.4); }
+.alibis h4 { font: 800 20px Jakarta; letter-spacing: .18em; text-transform: uppercase; }
+.alibis p { margin-top: 8px; font: 400 25px/1.34 Serif4; }
+.alibis p b { font-weight: 700; }
+.pino { position: absolute; z-index: 3; width: 50px; height: 50px; margin: -25px 0 0 -25px; border-radius: 50%; display: grid; place-items: center; font: 800 25px Jakarta; color: #2A1E05;
+  background: radial-gradient(circle at 35% 30%, #FFF1C6, #F4CF7C 55%, #C9962F); box-shadow: 0 0 0 4px rgba(255,255,255,.9), 0 6px 14px rgba(0,0,0,.5); }
+
+/* regra do delegado */
+.manual { background: #fbf7ec; padding: 36px 40px; }
+.manual small { font: 800 22px Jakarta; letter-spacing: .2em; text-transform: uppercase; color: var(--verm); }
+.manual h2 { margin-top: 8px; font: 900 62px/1.02 Playfair; letter-spacing: -.02em; text-wrap: balance; }
+.regras { margin-top: 24px; border-top: 3px solid var(--tinta); }
+.regra { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 16px 0; border-bottom: 1.5px solid rgba(0,0,0,.35); font: 500 27px/1.3 Inter; }
+.regra span { color: var(--cinza); }
+.regra b { font-weight: 800; }
+.manual .nota { margin-top: 20px; font: italic 400 27px/1.36 Serif4; color: #3a3730; }
+
+.fecho { position: absolute; z-index: 6; text-align: center; color: #fff8e8; }
+.fecho p { font: 600 30px/1.3 Inter; text-shadow: 0 2px 8px rgba(0,0,0,.6); }
+.fecho strong { display: block; margin-top: 10px; font: 800 52px Jakarta; letter-spacing: -.02em; text-shadow: 0 3px 12px rgba(0,0,0,.6); }
+
+.barbante { position: absolute; left: 0; top: 0; z-index: 4; pointer-events: none; overflow: visible; }
+.barbante path { fill: none; stroke: var(--barbante); stroke-width: 5; stroke-linecap: round; filter: drop-shadow(0 4px 3px rgba(0,0,0,.45)); }
+
+/* ================= STORIES: o mesmo quadro, com a raspadinha na ficha do culpado ================= */
+section.story { height: 1920px; }
+section.story .cortica { background:
+    radial-gradient(ellipse 900px 900px at 540px 760px, rgba(255,214,150,.32), transparent 70%),
+    radial-gradient(circle at 3px 3px, rgba(60,30,8,.30) 1.4px, transparent 2px) 0 0 / 9px 11px,
+    radial-gradient(circle at 6px 7px, rgba(255,235,200,.22) 1.2px, transparent 2px) 0 0 / 13px 10px,
+    radial-gradient(circle at 2px 9px, rgba(90,50,15,.25) 2px, transparent 3px) 0 0 / 17px 19px,
+    linear-gradient(180deg, #a87545, #9a6a3d 50%, #8c5e34); }
+.raspar { position: relative; height: 200px; margin-top: 24px; overflow: hidden; }
+.prata { position: absolute; inset: 0; display: grid; place-items: center; text-align: center;
+  background: repeating-linear-gradient(45deg, rgba(255,255,255,.28) 0 6px, transparent 6px 14px), linear-gradient(135deg, #EEF1F5, #9AA3AE 45%, #DCE0E5 55%, #8B939D); box-shadow: inset 0 0 0 4px rgba(0,0,0,.08); }
+.prata strong { font: 800 42px Jakarta; letter-spacing: -.02em; color: #3f4652; }
+.prata em { display: block; margin-top: 2px; font: 700 40px Caveat; font-style: normal; color: #3f4652; }
+.moeda { position: absolute; right: 26px; bottom: 20px; width: 86px; height: 86px; border-radius: 50%; z-index: 2; transform: rotate(-18deg);
+  background: radial-gradient(circle at 35% 30%, #FFF4C8, #F4CF7C 50%, #B9862A); box-shadow: inset 0 0 0 6px rgba(255,255,255,.35), 0 10px 20px rgba(0,0,0,.3); display: grid; place-items: center; font: 800 32px Jakarta; color: #6B4A10; }
+.premio { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 24px; background: radial-gradient(circle, #FFF6D6, #FFE6A0); }
+.premio i { flex: none; width: 104px; height: 104px; display: grid; place-items: center; font: 800 60px Jakarta; font-style: normal; color: #fff; background: var(--verde); }
+.premio small { display: block; font: 800 21px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--verm); }
+.premio strong { display: block; margin-top: 4px; font: 900 62px/1 Playfair; letter-spacing: -.02em; color: var(--tinta); }
+.lasca { position: absolute; background: repeating-linear-gradient(45deg, rgba(255,255,255,.3) 0 5px, transparent 5px 12px), linear-gradient(135deg, #EEF1F5, #9AA3AE 50%, #CDD3DA); }
+.botao-s { display: inline-block; padding: 26px 64px; border-radius: 99px; font: 800 52px Jakarta; letter-spacing: -.02em; color: #2A1E05; background: linear-gradient(#FFE6A3, #F0BD52); box-shadow: 0 0 0 5px #2a1a08, 0 18px 40px rgba(25,10,0,.45); }
+
+/* ---- Stories (03/11, pedido do Tales: sem raspadinha): saco de provas, fita de cena do crime e laudo da perícia ---- */
+.fita-crime { position: absolute; z-index: 7; left: -200px; width: 1480px; height: 78px; display: flex; align-items: center; overflow: hidden; white-space: nowrap;
+  background: linear-gradient(180deg, #ffe23d, #f2c800); box-shadow: 0 10px 22px rgba(0,0,0,.45); font: 800 34px Jakarta; letter-spacing: .2em; color: #141414; text-transform: uppercase; }
+.fita-crime::before, .fita-crime::after { content: ''; position: absolute; left: 0; right: 0; height: 6px; background: repeating-linear-gradient(90deg, #141414 0 26px, transparent 26px 40px); }
+.fita-crime::before { top: 6px; } .fita-crime::after { bottom: 6px; }
+.fita-crime span { padding-left: 24px; }
+.saco { position: absolute; z-index: 3; padding: 74px 34px 34px; border-radius: 14px;
+  background: linear-gradient(115deg, rgba(255,255,255,.26), rgba(255,255,255,.08) 38%, rgba(255,255,255,.16) 60%, rgba(255,255,255,.05));
+  box-shadow: inset 0 0 0 3px rgba(255,255,255,.45), inset 0 0 40px rgba(255,255,255,.12), 0 30px 60px rgba(25,10,0,.45); }
+.saco::before { content: ''; position: absolute; left: 0; right: 0; top: 26px; height: 18px; background: linear-gradient(180deg, #c4231b 0 5px, transparent 5px 9px, #c4231b 9px 14px, transparent 14px); opacity: .85; }
+.saco .brilho { position: absolute; inset: 0; z-index: 4; border-radius: 14px; pointer-events: none;
+  background: linear-gradient(120deg, transparent 0 8%, rgba(255,255,255,.28) 10%, transparent 16%), linear-gradient(120deg, transparent 0 84%, rgba(255,255,255,.22) 87%, transparent 92%); }
+.saco .polaroide { position: relative; box-shadow: 0 10px 20px rgba(0,0,0,.35); }
+.rotulo-prova { position: relative; z-index: 5; margin-top: 26px; background: #fff; border: 3px solid #c4231b; }
+.rotulo-prova h4 { padding: 10px 20px; background: #c4231b; color: #fff; font: 800 26px Jakarta; letter-spacing: .2em; text-transform: uppercase; display: flex; justify-content: space-between; }
+.rotulo-prova dl { display: grid; grid-template-columns: auto 1fr; gap: 6px 18px; padding: 14px 20px 16px; align-items: baseline; }
+.rotulo-prova dt { font: 800 19px Jakarta; letter-spacing: .14em; text-transform: uppercase; color: #6b6458; }
+.rotulo-prova dd { font: 700 38px/1.05 Caveat; color: #1a2a6c; border-bottom: 2px dotted rgba(0,0,0,.3); }
+.suspeitos { position: absolute; z-index: 5; left: 60px; right: 60px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px 22px; }
+.suspeito { display: flex; align-items: center; gap: 16px; padding: 16px 20px; background: #fffdf6; box-shadow: 0 12px 24px rgba(25,10,0,.4); font: 800 30px/1.12 Jakarta; letter-spacing: -.01em; }
+.suspeito:nth-child(1) { transform: rotate(-1.6deg); } .suspeito:nth-child(2) { transform: rotate(1.2deg); } .suspeito:nth-child(3) { transform: rotate(1deg); } .suspeito:nth-child(4) { transform: rotate(-1.2deg); }
+.suspeito i { flex: none; width: 58px; height: 58px; display: grid; place-items: center; font: 800 30px Jakarta; font-style: normal; color: #fff; background: var(--tinta); }
+.suspeito.certo { box-shadow: inset 0 0 0 5px var(--verde), 0 12px 24px rgba(25,10,0,.4); }
+.suspeito.certo i { background: var(--verde); }
+.suspeito.fora { opacity: .55; }
+.laudo { position: absolute; z-index: 4; background: #fbfaf5; padding: 34px 40px 36px; }
+.laudo .timbre { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 14px; border-bottom: 4px double var(--tinta); }
+.laudo .timbre b { font: 900 40px/1 Playfair; letter-spacing: -.01em; }
+.laudo .timbre span { font: 800 19px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--cinza); }
+.laudo .campo { margin-top: 18px; font: 800 19px Jakarta; letter-spacing: .16em; text-transform: uppercase; color: var(--verm); }
+.laudo .autor { display: flex; align-items: center; gap: 22px; margin-top: 10px; }
+.laudo .autor i { flex: none; width: 104px; height: 104px; display: grid; place-items: center; font: 800 60px Jakarta; font-style: normal; color: #fff; background: var(--verde); }
+.laudo .autor strong { font: 900 66px/1 Playfair; letter-spacing: -.02em; }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<template id="quadro">
+<div class="cortica"></div>
+<div class="moldura cima"></div><div class="moldura baixo"></div>
+
+<!-- Etiquetas de cada slide: marca e contador -->
+<div class="etiqueta" style="left:60px;top:56px;transform:rotate(-1.5deg)"><svg><use href="#sim"/></svg>Orto Questões <span>1/7</span></div>
+<div class="etiqueta" style="left:1140px;top:56px;transform:rotate(1deg)"><svg><use href="#sim"/></svg><span>2/7</span></div>
+<div class="etiqueta" style="left:2220px;top:56px;transform:rotate(-1deg)"><svg><use href="#sim"/></svg><span>3/7</span></div>
+<div class="etiqueta" style="left:3300px;top:56px;transform:rotate(1.2deg)"><svg><use href="#sim"/></svg><span>4/7</span></div>
+<div class="etiqueta" style="left:4380px;top:56px;transform:rotate(-1deg)"><svg><use href="#sim"/></svg><span>5/7</span></div>
+<div class="etiqueta" style="left:5460px;top:56px;transform:rotate(1deg)"><svg><use href="#sim"/></svg><span>6/7</span></div>
+<div class="etiqueta" style="left:6540px;top:56px;transform:rotate(-1.2deg)"><svg><use href="#sim"/></svg><span>7/7</span></div>
+
+<!-- 1. A primeira página do Diário do Plantão -->
+<article class="peca jornal" style="left:70px;top:150px;width:940px;height:1110px;transform:rotate(-1.2deg)">
+  <div class="titulo-jornal">Diário do Plantão</div>
+  <div class="data"><span>Terça, 3 de novembro de 2026</span><b>Edição policial</b><span>Caderno Tumores</span></div>
+  <span class="chapeu" style="margin-top:22px">Caso duplo · TEOT e TARO 2024</span>
+  <h1 class="manchete" style="margin-top:10px">Mesma idade, mesmas alternativas: dois crimes, dois culpados</h1>
+  <p class="linha-fina" style="margin-top:16px">As duas provas perguntaram a mesma coisa sobre um rapaz de 15 anos com dor. Só a radiografia mudou, e a resposta mudou junto.</p>
+  <div style="display:grid;grid-template-columns:200px 1fr;gap:24px;margin-top:22px">
+    <div><figure class="foto" style="height:330px"><img src="../../../../public/imagens/tumores/tumores-0194-1.jpeg" alt=""></figure><p class="legenda"><b>Prova 1</b><br>Coxa, TEOT 2024</p></div>
+    <div><figure class="foto" style="height:330px"><img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt="" style="object-position:40% 50%"></figure><p class="legenda"><b>Prova 2</b><br>Ombro, TARO 2024</p></div>
+  </div>
+  <div class="pe-jornal"><span>Os suspeitos, os casos e o veredito</span><b>Arraste →</b></div>
+</article>
+
+
+<!-- 2. Os suspeitos de sempre -->
+<div class="peca titulo-recorte" style="left:1150px;top:150px;width:940px;transform:rotate(.6deg)"><small>As quatro alternativas das duas provas</small><h2>Os suspeitos de sempre</h2></div>
+<span class="fita" style="left:1985px;top:132px;transform:rotate(8deg)"></span>
+<article class="peca ficha" style="left:1150px;top:345px;height:445px;transform:rotate(-1.4deg)">
+  <p class="num"><span>Ficha 1</span><span>Alternativa A</span></p><h3>Osteossarcoma</h3>
+  <dl><dt>Onde age</dt><dd><b>Metáfise</b></dd><dt>A marca que deixa</dt><dd>Destrói a cortical, forma osso e provoca <b>reação periosteal agressiva</b></dd></dl>
+</article>
+<article class="peca ficha" style="left:1640px;top:350px;height:445px;transform:rotate(1.2deg)">
+  <p class="num"><span>Ficha 2</span><span>Alternativa B</span></p><h3>Condroblastoma</h3>
+  <dl><dt>Onde age</dt><dd><b>Epífise</b> do esqueleto <b>imaturo</b>, dos 10 aos 25 anos</dd><dt>A marca que deixa</dt><dd>Lesão lítica, bem delimitada, com <b>halo esclerótico</b></dd></dl>
+</article>
+<article class="peca ficha" style="left:1150px;top:825px;height:445px;transform:rotate(1deg)">
+  <p class="num"><span>Ficha 3</span><span>Alternativa C</span></p><h3>Osteoma osteoide</h3>
+  <dl><dt>Onde age</dt><dd>Jovem; <b>fêmur proximal</b> e tíbia</dd><dt>A marca que deixa</dt><dd><b>Cortical espessada</b> que esconde um nicho; dor <b>noturna</b> que melhora com anti-inflamatório</dd></dl>
+</article>
+<article class="peca ficha" style="left:1640px;top:830px;height:445px;transform:rotate(-1.1deg)">
+  <p class="num"><span>Ficha 4</span><span>Alternativa D</span></p><h3>Tumor de células gigantes</h3>
+  <dl><dt>Onde age</dt><dd><b>Epífise</b> do esqueleto <b>maduro</b>, dos 20 aos 40 anos</dd><dt>A marca que deixa</dt><dd>Lesão lítica, em geral <b>sem halo</b> esclerótico</dd></dl>
+</article>
+
+
+
+<!-- 3. Caso 1: a coxa (TEOT 2024) -->
+<figure class="peca polaroide" style="left:2230px;top:160px;width:430px;transform:rotate(-2deg)">
+  <img src="../../../../public/imagens/tumores/tumores-0194-1.jpeg" alt="" style="height:760px;object-fit:cover">
+  <figcaption>Caso 1: a coxa</figcaption>
+</figure>
+
+<article class="peca cartao" style="left:2700px;top:200px;width:480px;transform:rotate(1.3deg)">
+  <p class="rot"><span>Caso 1</span><b>TEOT 2024</b></p>
+  <p class="enun">Paciente masculino, 15 anos, com dor na coxa. Com a imagem radiográfica a seguir, a principal hipótese diagnóstica é</p>
+  <div class="cedula"><div><i>A</i>osteossarcoma.</div><div><i>B</i>condroblastoma.</div><div><i>C</i>osteoma osteoide.</div><div><i>D</i>tumor de células gigantes.</div></div>
+</article>
+
+<div class="postit" style="left:2760px;top:1010px;width:360px;transform:rotate(-4deg)">Quem foi?<br>Anote a sua letra e <b>arraste</b>.</div>
+
+<!-- 4. Caso 2: o ombro (TARO 2024) -->
+<figure class="peca polaroide" style="left:3320px;top:160px;width:640px;transform:rotate(1.6deg)">
+  <img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt="">
+  <figcaption>Caso 2: o ombro</figcaption>
+</figure>
+
+<article class="peca cartao" style="left:3330px;top:800px;width:690px;transform:rotate(-1deg)">
+  <p class="rot"><span>Caso 2</span><b>TARO 2024</b></p>
+  <p class="enun" style="font-size:30px">Paciente masculino, 15 anos, com dor no ombro. Imagem de radiografia a seguir. A principal hipótese diagnóstica é</p>
+  <div class="cedula" style="grid-template-columns:1fr 1fr;gap:12px 20px"><div><i>A</i>osteossarcoma.</div><div><i>B</i>condroblastoma.</div><div><i>C</i>osteoma osteoide.</div><div><i>D</i>tumor de células gigantes.</div></div>
+</article>
+
+<div class="postit" style="left:3990px;top:500px;width:290px;transform:rotate(5deg)">Mesmas quatro.<br>Outro <b>culpado?</b></div>
+
+<!-- 5. Veredito do caso 1 -->
+<article class="peca jornal veredito" style="left:4390px;top:150px;width:940px;height:1110px;transform:rotate(.8deg)">
+  <span class="chapeu">Caso 1 resolvido · coxa · TEOT 2024</span>
+  <h2 class="manchete" style="margin-top:8px;max-width:560px">Cortical grossa entrega o autor da dor na coxa</h2>
+  <div style="display:grid;grid-template-columns:250px 1fr;gap:30px;margin-top:20px">
+    <div style="position:relative"><figure class="foto" style="height:560px"><img src="../../../../public/imagens/tumores/tumores-0194-1.jpeg" alt=""></figure>
+      <span class="pino" style="left:0;top:0">1</span><span class="pino" style="left:100%;top:0">2</span></div>
+    <div>
+      <div class="resposta"><i>C</i><div><small>Gabarito</small><strong>Osteoma osteoide</strong></div></div>
+      <div class="pistas">
+        <p class="pista"><i>1</i><span><b>Espessamento cortical fusiforme</b> na face medial do fêmur, logo abaixo do trocanter menor.</span></p>
+        <p class="pista"><i>2</i><span>A esclerose densa <b>esconde o nicho</b>; a tomografia mostra o nicho, com menos de 1,5 cm.</span></p>
+      </div>
+    </div>
+  </div>
+  <p class="pista" style="margin-top:18px"><i>3</i><span>O perfil: jovem, com <b>dor noturna que melhora com anti-inflamatório</b>, porque a lesão produz prostaglandinas.</span></p>
+  <div class="alibis"><h4>Os álibis</h4><p><b>Osteossarcoma:</b> teria lesão metafisária destrutiva e reação periosteal agressiva. <b>Condroblastoma</b> e <b>tumor de células gigantes:</b> são epifisários.</p></div>
+</article>
+
+<div class="carimbo" style="left:4990px;top:250px;transform:rotate(-8deg)">Culpado</div>
+
+<!-- 6. Veredito do caso 2 -->
+<article class="peca jornal veredito" style="left:5470px;top:150px;width:940px;height:1110px;transform:rotate(-.9deg)">
+  <span class="chapeu">Caso 2 resolvido · ombro · TARO 2024</span>
+  <h2 class="manchete" style="margin-top:8px">Na epífise de um rapaz de 15 anos, o culpado é outro</h2>
+  <div style="position:relative;margin-top:20px">
+    <figure class="foto" style="height:330px"><img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt="" style="object-position:40% 45%"></figure>
+    <span class="pino" style="left:0;top:0">1</span><span class="pino" style="left:100%;top:0">2</span>
+  </div>
+  <div class="resposta"><i>B</i><div><small>Gabarito</small><strong>Condroblastoma</strong></div></div>
+  <div class="pistas" style="margin-top:20px">
+    <p class="pista"><i>1</i><span>Lesão <b>lítica, bem delimitada</b>, com borda esclerótica fina.</span></p>
+    <p class="pista"><i>2</i><span>Fica <b>na epífise</b> da cabeça umeral, logo acima da fise.</span></p>
+    <p class="pista"><i>3</i><span>Aos 15 anos o esqueleto é <b>imaturo</b>: epífise no imaturo é condroblastoma até prova em contrário.</span></p>
+  </div>
+  <div class="alibis"><h4>Os álibis</h4><p><b>Tumor de células gigantes:</b> epifisário, mas do esqueleto maduro e em geral sem halo. <b>Osteossarcoma:</b> metafisário e agressivo. <b>Osteoma osteoide:</b> nicho pequeno na esclerose densa.</p></div>
+</article>
+
+<div class="carimbo" style="left:6060px;top:690px;transform:rotate(-7deg)">Culpado</div>
+
+<!-- 7. A regra do delegado -->
+<article class="peca manual" style="left:6560px;top:150px;width:930px;transform:rotate(1deg)">
+  <small>A regra do delegado</small>
+  <h2>Idade e local resolvem quase tudo</h2>
+  <div class="regras">
+    <p class="regra"><span>Epífise, esqueleto imaturo</span><b>Condroblastoma</b></p>
+    <p class="regra"><span>Epífise, esqueleto maduro</span><b>Tumor de células gigantes</b></p>
+    <p class="regra"><span>Diáfise</span><b>Ewing, linfoma, displasia fibrosa, adamantinoma</b></p>
+    <p class="regra"><span>Elementos posteriores da coluna</span><b>Osteoma osteoide, osteoblastoma, cisto ósseo aneurismático</b></p>
+  </div>
+  <p class="nota">Bem delimitada, com halo de osso reativo: baixa atividade. Transição mal definida e cortical destruída: pense em lesão agressiva.</p>
+</article>
+
+<div class="postit" style="left:6640px;top:900px;width:400px;transform:rotate(-3deg)">Caso encerrado.<br><b>Salve</b> para a véspera da prova.</div>
+<div class="fecho" style="left:6560px;width:930px;top:1130px"><p>As provas oficiais, comentadas como aula. Treine grátis.</p><strong>ortoquestoes.com.br</strong></div>
+
+<!-- O barbante: liga a primeira página aos suspeitos, aos dois casos, aos vereditos e à regra -->
+<svg class="barbante" width="7560" height="1350" viewBox="0 0 7560 1350">
+  <path d="M540 150 Q 1080 95 1620 150 M1620 150 Q 2032 95 2445 160 M2445 160 Q 2692 105 2940 200 M2940 200 Q 3290 105 3640 160 M3640 160 Q 4250 95 4860 150 M4860 150 Q 5400 95 5940 150 M5940 150 Q 6482 95 7025 150"/>
+</svg>
+<span class="alfinete" style="left:540px;top:150px"></span><span class="alfinete" style="left:1620px;top:150px"></span><span class="alfinete" style="left:2445px;top:160px"></span><span class="alfinete" style="left:2940px;top:200px"></span><span class="alfinete" style="left:3640px;top:160px"></span><span class="alfinete" style="left:4860px;top:150px"></span><span class="alfinete" style="left:5940px;top:150px"></span><span class="alfinete" style="left:7025px;top:150px"></span><span class="alfinete" style="left:1375px;top:345px"></span><span class="alfinete" style="left:1865px;top:350px"></span><span class="alfinete" style="left:1375px;top:825px"></span><span class="alfinete" style="left:1865px;top:830px"></span><span class="alfinete" style="left:3675px;top:800px"></span>
+</template>
+
+<section id="f1-capa" class="feed"></section>
+<section id="f2-suspeitos" class="feed"></section>
+<section id="f3-caso-coxa" class="feed"></section>
+<section id="f4-caso-ombro" class="feed"></section>
+<section id="f5-veredito-coxa" class="feed"></section>
+<section id="f6-veredito-ombro" class="feed"></section>
+<section id="f7-regra" class="feed"></section>
+
+<!-- ================= STORIES ================= -->
+<section id="s1-prova" class="story">
+  <div class="cortica"></div><div class="moldura cima"></div><div class="moldura baixo"></div>
+  <div class="fita-crime" style="top:120px;transform:rotate(-4deg)"><span>Cena do crime · não ultrapasse · cena do crime · não ultrapasse · cena do crime</span></div>
+  <div class="etiqueta" style="left:64px;top:260px;transform:rotate(-1.5deg)"><svg><use href="#sim"/></svg>Orto Questões <span>Prova nº 1</span></div>
+  <div class="saco" style="left:170px;top:350px;width:740px;transform:rotate(1.2deg)">
+    <figure class="polaroide" style="padding:16px 16px 18px"><img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt=""></figure>
+    <div class="rotulo-prova"><h4><span>Evidência</span><span>TARO 2024</span></h4>
+      <dl><dt>Vítima</dt><dd>Rapaz, 15 anos, dor no ombro</dd><dt>Pergunta</dt><dd>Qual a principal hipótese diagnóstica?</dd></dl></div>
+    <span class="brilho"></span>
+  </div>
+  <span class="alfinete" style="left:540px;top:362px"></span>
+  <p class="etiqueta" style="left:60px;top:1236px;transform:rotate(-1deg);font:800 30px Jakarta">Os suspeitos <span style="font-weight:600">· anote a sua letra</span></p>
+  <div class="suspeitos" style="top:1330px"><div class="suspeito"><i>A</i>osteossarcoma.</div><div class="suspeito"><i>B</i>condroblastoma.</div><div class="suspeito"><i>C</i>osteoma osteoide.</div><div class="suspeito"><i>D</i>tumor de células gigantes.</div></div>
+  <div class="postit" style="left:620px;top:1556px;width:380px;transform:rotate(3deg);font-size:36px;padding:18px 22px 20px">O laudo da perícia sai <b>ao meio-dia</b>.</div>
+</section>
+
+<section id="s2-laudo" class="story">
+  <div class="cortica"></div><div class="moldura cima"></div><div class="moldura baixo"></div>
+  <div class="fita-crime" style="top:120px;transform:rotate(3deg)"><span>Cena do crime · não ultrapasse · cena do crime · não ultrapasse · cena do crime</span></div>
+  <div class="saco" style="left:520px;top:290px;width:470px;padding:60px 22px 22px;transform:rotate(-5deg)">
+    <figure class="polaroide" style="padding:12px 12px 14px"><img src="../../../../public/imagens/tumores/tumores-0318-1.jpeg" alt=""></figure>
+    <span class="brilho"></span>
+  </div>
+  <article class="laudo peca" style="left:70px;top:600px;width:940px;transform:rotate(-.6deg)">
+    <div class="timbre"><b>Laudo da perícia</b><span>Caso do ombro · TARO 2024</span></div>
+    <p class="campo">Autor identificado</p>
+    <div class="autor"><i>B</i><strong>Condroblastoma</strong></div>
+    <div class="pistas" style="margin-top:24px">
+      <p class="pista"><i>1</i><span>Lesão <b>lítica, bem delimitada</b>, com borda esclerótica fina, <b>na epífise</b> da cabeça umeral.</span></p>
+      <p class="pista"><i>2</i><span>Aos 15 anos o esqueleto é <b>imaturo</b>: epífise no imaturo é condroblastoma até prova em contrário.</span></p>
+    </div>
+    <div class="alibis"><h4>Álibi do tumor de células gigantes</h4><p>Também é epifisário, mas do esqueleto <b>maduro</b> (20 a 40 anos) e em geral sem halo esclerótico.</p></div>
+  </article>
+  <span class="alfinete" style="left:540px;top:612px"></span>
+  <div class="carimbo" style="left:600px;top:1300px;transform:rotate(-8deg);font-size:44px">Confirmado</div>
+  <div class="postit" style="left:90px;top:1320px;width:420px;transform:rotate(-3deg);font-size:38px">Às 18h: o <b>caso da coxa</b>. Mesmas quatro alternativas.</div>
+</section>
+
+<section id="s3-coxa" class="story">
+  <div class="cortica"></div><div class="moldura cima"></div><div class="moldura baixo"></div>
+  <div class="fita-crime" style="top:140px;left:-120px;width:620px;transform:rotate(-6deg)"><span>Cena do crime · não ultrapasse</span></div>
+  <div class="fita-crime" style="top:110px;left:640px;width:620px;transform:rotate(7deg)"><span>Não ultrapasse · cena do crime</span></div>
+  <div class="etiqueta" style="left:64px;top:250px;transform:rotate(-1.5deg)"><svg><use href="#sim"/></svg>Orto Questões <span>Edição policial</span></div>
+  <article class="peca jornal" style="left:90px;top:350px;width:900px;transform:rotate(-1deg)">
+    <div class="titulo-jornal" style="font-size:80px">Diário do Plantão</div>
+    <span class="chapeu" style="margin-top:22px">Ainda sem solução</span>
+    <h2 class="manchete" style="margin-top:10px;font-size:64px">O caso da coxa: mesmo rapaz de 15 anos, mesmas quatro alternativas</h2>
+    <p class="linha-fina" style="margin-top:16px">No TEOT 2024 a dor era na coxa, e o culpado é outro. As fichas dos suspeitos, as pistas e o veredito estão no nosso feed.</p>
+  </article>
+  <span class="alfinete" style="left:540px;top:362px"></span>
+  <figure class="peca polaroide" style="left:120px;top:960px;width:280px;padding:16px 16px 70px;transform:rotate(-4deg)">
+    <img src="../../../../public/imagens/tumores/tumores-0194-1.jpeg" alt="" style="height:380px;object-fit:cover">
+    <figcaption style="font-size:36px;bottom:14px">Quem foi?</figcaption>
+  </figure>
+  <span class="alfinete" style="left:260px;top:972px"></span>
+  <div class="postit" style="left:480px;top:1010px;width:480px;transform:rotate(3deg)">Provas oficiais, <b>comentadas</b> como aula. Treine grátis.</div>
+  <div style="position:absolute;left:0;right:0;top:1480px;text-align:center;z-index:6"><span class="botao-s">Treine grátis</span>
+    <p style="margin-top:28px;font:800 46px Jakarta;letter-spacing:-.02em;color:#fff8e8;text-shadow:0 3px 12px rgba(0,0,0,.6)">ortoquestoes.com.br</p></div>
+</section>
+
+<!-- O quadro inteiro, para conferir as emendas (não é publicado) -->
+<div class="panorama" id="panorama"></div>
+
+<script>
+const quadro = document.getElementById('quadro')
+document.querySelectorAll('section.feed').forEach((s, i) => {
+  const m = document.createElement('div'); m.className = 'mural'; m.style.left = (-i * 1080) + 'px'
+  m.appendChild(quadro.content.cloneNode(true)); s.appendChild(m)
+})
+const m = document.createElement('div'); m.className = 'mural'; m.style.left = '0'
+m.appendChild(quadro.content.cloneNode(true)); document.getElementById('panorama').appendChild(m)
+</script>
+</body></html>
