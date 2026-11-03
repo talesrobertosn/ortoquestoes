@@ -92,3 +92,25 @@ export function assuntoSuporte(id: MotivoSuporte, nome: string, questao?: string
   const titulo = exclusao ? 'Pedido de exclusão da conta' : id === 'questao' && questao?.trim() ? `Erro na questão ${questao.trim()}` : motivo(id).titulo
   return `[Suporte] ${titulo}${nome.trim() ? ` · ${nome.trim()}` : ''}`
 }
+
+/** Imagens do suporte (03/11/2026): os mesmos limites de supabase/functions/suporte/carta.ts. */
+export const MAX_IMAGENS = 3
+/** Lado maior depois de reduzir: um print continua legível e o e-mail fica leve. */
+export const LADO_MAXIMO = 1600
+
+/** Medidas depois de reduzir, mantendo a proporção; imagem pequena fica como está. */
+export function medidaReduzida(largura: number, altura: number, maximo = LADO_MAXIMO): { largura: number; altura: number } {
+  const maior = Math.max(largura, altura)
+  if (maior <= maximo || maior <= 0) return { largura, altura }
+  const fator = maximo / maior
+  return { largura: Math.round(largura * fator), altura: Math.round(altura * fator) }
+}
+
+/** O que dizer quando a imagem não entra (ou quando a função recusa). */
+export const AVISOS_IMAGEM: Record<string, string> = {
+  nao_e_imagem: 'Esse arquivo não é uma imagem. Mande um print ou uma foto (PNG ou JPG).',
+  anexos_demais: `Cabem até ${MAX_IMAGENS} imagens. Tire uma para colocar outra.`,
+  nao_abriu: 'Não consegui abrir essa imagem. Tente salvar como PNG ou JPG e anexar de novo.',
+  anexo_grande: 'A imagem ficou grande demais para enviar. Tente um print menor.',
+  anexo_invalido: 'Uma das imagens não pôde ser enviada. Tire-a e tente de novo.',
+}

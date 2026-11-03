@@ -1,6 +1,6 @@
 import { banco, cors, json } from '../_shared/http.ts'
 import { emailConfigurado, enviarEmail } from '../_shared/email.ts'
-import { descreverSituacao, montarCarta, MOTIVOS_SUPORTE } from './carta.ts'
+import { conferirAnexos, descreverSituacao, montarCarta, MOTIVOS_SUPORTE } from './carta.ts'
 
 /**
  * Suporte do site (19/10/2026): a página /contato manda a mensagem por aqui e ela chega
@@ -15,6 +15,8 @@ import { descreverSituacao, montarCarta, MOTIVOS_SUPORTE } from './carta.ts'
  *   nome       opcional
  *   questao    opcional, o id da questão quando veio de "Relatar erro"
  *   campos     opcional: respostas de um toque { Plano, Pagamento, Questão } (03/11/2026)
+ *   imagens    opcional: até 3 imagens [{ nome, tipo, base64 }], já reduzidas pela página; vão como
+ *              anexo do e-mail (03/11/2026). Erros: "anexo_invalido" | "anexos_demais" | "anexo_grande"
  *   contexto   opcional: pagina, navegador, tela, tema, idioma, fuso (o que a página coleta)
  *   site       campo-isca: gente não preenche (fica escondido); robô preenche e é ignorado
  *
@@ -106,6 +108,8 @@ Deno.serve(async (req) => {
     const conta = await contaDoPedido(req)
     const email = (linha(corpo.email, 200) || conta?.email || '').toLowerCase()
     if (!emailValido(email)) return json({ erro: 'email_invalido' }, 400, req)
+    const { anexos, erro: erroAnexo } = conferirAnexos(corpo.imagens)
+    if (erroAnexo) return json({ erro: erroAnexo }, 400, req)
 
     if (!podeEnviar(conta ? `u:${conta.id}` : `ip:${ipDoPedido(req)}`)) return json({ erro: 'muitas_mensagens' }, 429, req)
     if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
@@ -133,10 +137,10 @@ Deno.serve(async (req) => {
       ['Idioma e fuso', [linha(ctx.idioma, 20), linha(ctx.fuso, 60)].filter(Boolean).join(' · ')],
     ].filter(([, v]) => v) as Array<[string, string]>
 
-    const { html, texto: textoEmail } = montarCarta({ motivo, assunto, mensagem, email, nome, campos, situacao, detalhes })
+    const { html, texto: textoEmail } = montarCarta({ motivo, assunto, mensagem, email, nome, campos, situacao, detalhes, imagens: anexos.map((a) => a.filename) })
 
     try {
-      await enviarEmail(PARA(), assunto, html, textoEmail, undefined, email)
+      await enviarEmail(PARA(), assunto, html, textoEmail, undefined, email, anexos)
     } catch (falha) {
       console.error('suporte: envio falhou', String(falha))
       return json({ erro: 'envio_falhou' }, 502, req)

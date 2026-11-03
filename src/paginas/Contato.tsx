@@ -1,4 +1,4 @@
-import { useMemo, useState, type FormEvent } from 'react'
+import { useEffect, useMemo, useRef, useState, type DragEvent, type FormEvent } from 'react'
 import { AcoesDeEmail } from '../componentes/AcoesDeEmail'
 import { primeiroNome } from '../componentes/Cabecalho'
 import { Icone } from '../componentes/Icone'
@@ -6,7 +6,8 @@ import { SITE } from '../config'
 import { usarConta } from '../conta/ContextoConta'
 import { chave as chaveSupabase, url as urlSupabase } from '../conta/supabase'
 import { href } from '../util/rotas'
-import { MEIOS_SUPORTE, MOTIVOS, PLANOS_SUPORTE, TEXTO_EXCLUSAO, assuntoSuporte, camposDoMotivo, motivo as dadosMotivo, motivoInicial, type MotivoSuporte } from '../conta/suporte'
+import { prepararImagem, type ImagemSuporte } from '../conta/imagemSuporte'
+import { AVISOS_IMAGEM, MAX_IMAGENS, MEIOS_SUPORTE, MOTIVOS, PLANOS_SUPORTE, TEXTO_EXCLUSAO, assuntoSuporte, camposDoMotivo, motivo as dadosMotivo, motivoInicial, type MotivoSuporte } from '../conta/suporte'
 import '../estilos/paginas/Contato.css'
 
 /*
@@ -72,6 +73,8 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
   const [isca, definirIsca] = useState('')
   const [estado, definirEstado] = useState<Estado>({ fase: 'editando' })
   const [aviso, definirAviso] = useState('')
+  const [imagens, definirImagens] = useState<ImagemSuporte[]>([])
+  const [avisoImagem, definirAvisoImagem] = useState('')
   const contexto = useMemo(contextoDoAparelho, [])
   // O e-mail da conta pode chegar depois da primeira pintura: preenche se o campo ainda estiver vazio.
   const emailConta = sessao?.user.email ?? ''
@@ -83,6 +86,38 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
   const campos = camposDoMotivo(tipo, { plano, meio, questao })
   const assunto = assuntoSuporte(tipo, nomeCompleto, questao, exclusao && tipo === 'dados')
   const corpoReserva = `${mensagem}\n\n${campos.map(([k, v]) => `${k}: ${v}`).join('\n')}${campos.length ? '\n' : ''}---\nPágina: ${contexto.pagina}\nNavegador: ${contexto.navegador}\nTela: ${contexto.tela}`
+
+  async function anexar(arquivos: File[]) {
+    const lista = arquivos.filter((a) => a.size > 0)
+    if (!lista.length) return
+    definirAvisoImagem('')
+    const vagas = MAX_IMAGENS - imagens.length
+    if (vagas <= 0) { definirAvisoImagem(AVISOS_IMAGEM.anexos_demais); return }
+    if (lista.length > vagas) definirAvisoImagem(AVISOS_IMAGEM.anexos_demais)
+    for (const arquivo of lista.slice(0, vagas)) {
+      try {
+        const imagem = await prepararImagem(arquivo)
+        definirImagens((atuais) => atuais.length < MAX_IMAGENS ? [...atuais, imagem] : atuais)
+      } catch (falha) {
+        definirAvisoImagem(AVISOS_IMAGEM[falha instanceof Error ? falha.message : ''] ?? AVISOS_IMAGEM.nao_abriu)
+      }
+    }
+  }
+
+  // Colar (Ctrl+V ou ⌘V) em qualquer lugar da página anexa a imagem; texto colado segue normal.
+  const anexarRef = useRef(anexar)
+  anexarRef.current = anexar
+  useEffect(() => {
+    if (estado.fase === 'enviado') return
+    const aoColar = (evento: ClipboardEvent) => {
+      const arquivos = [...(evento.clipboardData?.files ?? [])].filter((a) => a.type.startsWith('image/'))
+      if (!arquivos.length) return
+      if (!evento.clipboardData?.types.includes('text/plain')) evento.preventDefault()
+      void anexarRef.current(arquivos)
+    }
+    window.addEventListener('paste', aoColar)
+    return () => window.removeEventListener('paste', aoColar)
+  }, [estado.fase])
 
   function selecionarTipo(novoTipo: MotivoSuporte) {
     if (novoTipo === tipo) return
@@ -102,18 +137,22 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
         motivo: tipo, assunto, mensagem: texto, email: emailFinal.trim(), nome: nomeCompleto,
         questao: tipo === 'questao' && questao.trim() ? questao.trim() : undefined,
         campos: Object.fromEntries(campos), contexto, site: isca,
+        imagens: imagens.map(({ nome, tipo, base64 }) => ({ nome, tipo, base64 })),
       }, sessao?.access_token)
       definirEstado({ fase: 'enviado', para: emailFinal.trim() })
       window.scrollTo({ top: 0, behavior: 'smooth' })
     } catch (falha) {
-      definirEstado({ fase: 'falhou', motivo: falha instanceof Error ? falha.message : '' })
+      const codigo = falha instanceof Error ? falha.message : ''
+      // Imagem recusada: volta para a edição com o aviso, sem cair no caminho de reserva.
+      if (codigo.startsWith('anexo')) { definirEstado({ fase: 'editando' }); definirAvisoImagem(AVISOS_IMAGEM[codigo] ?? AVISOS_IMAGEM.anexo_invalido); return }
+      definirEstado({ fase: 'falhou', motivo: codigo })
     }
   }
 
   function escreverOutra() {
     definirTipo('outro')
     definirMensagem('')
-    definirPlano(''); definirMeio('')
+    definirPlano(''); definirMeio(''); definirImagens([]); definirAvisoImagem('')
     definirEstado({ fase: 'editando' })
   }
 
@@ -188,6 +227,8 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
             </aside>
           </div>
 
+          <AnexarImagens imagens={imagens} aviso={avisoImagem} desligado={enviando} aoAnexar={(arquivos) => void anexar(arquivos)} aoTirar={(id) => { definirImagens((atuais) => atuais.filter((i) => i.id !== id)); definirAvisoImagem('') }} />
+
           <div className="sp-email">
             <label className="sp-rotulo" htmlFor="email-suporte">Para onde mando a resposta?</label>
             <input id="email-suporte" className="entrada" type="email" inputMode="email" autoComplete="email" placeholder="seu@email.com" value={emailFinal} onChange={evento => { definirEmailTocado(true); definirEmail(evento.target.value) }} disabled={enviando} required aria-invalid={emailComErro} aria-describedby="sp-email-ajuda" />
@@ -224,7 +265,7 @@ export function Contato({ consulta }: { consulta: URLSearchParams }) {
           {estado.fase === 'falhou' && (
             <div className="sp-reserva" role="alert">
               <p className="sp-reserva__titulo"><Icone nome="alerta" tamanho={18} /> Não deu para enviar daqui agora.</p>
-              <p>{MOTIVO_FALHA[estado.motivo] ?? 'Sua mensagem continua escrita acima. Mande pelo seu e-mail: um toque copia o texto ou abre o rascunho pronto.'}</p>
+              <p>{MOTIVO_FALHA[estado.motivo] ?? 'Sua mensagem continua escrita acima. Mande pelo seu e-mail: um toque copia o texto ou abre o rascunho pronto.'}{imagens.length > 0 && ' As imagens não vão pelo rascunho: anexe-as no seu e-mail.'}</p>
               <AcoesDeEmail para={SITE.contato} assunto={assunto} corpo={corpoReserva} rotuloCopiar="Copiar mensagem" />
             </div>
           )}
@@ -276,6 +317,48 @@ function Escolha({ rotulo, opcoes, valor, aoEscolher, desligado }: { rotulo: str
           <button type="button" key={opcao} className="sp-chip" aria-pressed={valor === opcao} disabled={desligado} onClick={() => aoEscolher(valor === opcao ? '' : opcao)}>{opcao}</button>
         ))}
       </div>
+    </div>
+  )
+}
+
+/**
+ * Imagens do suporte (03/11/2026): arrastar para o quadrado, colar com Ctrl+V (em qualquer
+ * lugar da página) ou tocar para escolher. Até 3, reduzidas no aparelho antes de enviar.
+ */
+function AnexarImagens({ imagens, aviso, desligado, aoAnexar, aoTirar }: { imagens: readonly ImagemSuporte[]; aviso: string; desligado: boolean; aoAnexar: (arquivos: File[]) => void; aoTirar: (id: string) => void }) {
+  const [arrastando, definirArrastando] = useState(false)
+  const entrada = useRef<HTMLInputElement>(null)
+  const cheio = imagens.length >= MAX_IMAGENS
+  const soltar = (evento: DragEvent) => {
+    evento.preventDefault()
+    definirArrastando(false)
+    if (!desligado) aoAnexar([...evento.dataTransfer.files])
+  }
+  return (
+    <div className="sp-anexos">
+      <span className="sp-rotulo">Imagens <small>(opcional, até {MAX_IMAGENS})</small></span>
+      <div className="sp-anexos__linha">
+        {imagens.map((imagem) => (
+          <figure key={imagem.id} className="sp-anexo">
+            <img src={imagem.previa} alt={`Imagem anexada: ${imagem.nome}`} />
+            <button type="button" className="sp-anexo__tirar" onClick={() => aoTirar(imagem.id)} disabled={desligado} aria-label={`Tirar a imagem ${imagem.nome}`}><Icone nome="fechar" tamanho={14} /></button>
+          </figure>
+        ))}
+        {!cheio && (
+          <button type="button" className={'sp-soltar' + (arrastando ? ' sp-soltar--ativo' : '')} disabled={desligado}
+            onClick={() => entrada.current?.click()}
+            onDragOver={(evento) => { evento.preventDefault(); if (!arrastando) definirArrastando(true) }}
+            onDragLeave={() => definirArrastando(false)} onDrop={soltar}>
+            <Icone nome="imagem" tamanho={24} />
+            <strong>{arrastando ? 'Solte aqui' : 'Anexar imagem'}</strong>
+            <span>Arraste, cole com Ctrl+V ou toque para escolher</span>
+          </button>
+        )}
+      </div>
+      <input ref={entrada} type="file" accept="image/*" multiple hidden onChange={(evento) => { aoAnexar([...(evento.target.files ?? [])]); evento.target.value = '' }} />
+      {aviso
+        ? <small className="sp-anexos__aviso" role="alert">{aviso}</small>
+        : <small>Um print da tela ajuda muito. Não mande foto de cartão, senha ou documento.</small>}
     </div>
   )
 }

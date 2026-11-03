@@ -22,6 +22,38 @@ export interface DadosCarta {
   situacao: string
   /** Detalhes técnicos: conta, página, navegador, tela... */
   detalhes: Array<[string, string]>
+  /** Nomes das imagens anexadas (vão como anexo do e-mail). */
+  imagens?: string[]
+}
+
+/** Limites das imagens do suporte: os mesmos de src/conta/suporte.ts (a página já reduz antes de enviar). */
+export const MAX_IMAGENS = 3
+export const MAX_BYTES_IMAGEM = 2_000_000
+export const MAX_BYTES_TOTAL = 5_000_000
+const TIPOS_IMAGEM: Record<string, string> = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif' }
+
+/**
+ * Confere as imagens que a página mandou ({ nome, tipo, base64 }) e devolve os anexos para o
+ * Resend. Imagem de tipo estranho, base64 inválido ou grande demais é recusada com um código
+ * que a página entende; nunca passa nada além de imagem.
+ */
+export function conferirAnexos(bruto: unknown): { anexos: Array<{ filename: string; content: string }>; erro?: string } {
+  if (bruto === undefined || bruto === null) return { anexos: [] }
+  if (!Array.isArray(bruto)) return { anexos: [], erro: 'anexo_invalido' }
+  if (bruto.length > MAX_IMAGENS) return { anexos: [], erro: 'anexos_demais' }
+  const anexos: Array<{ filename: string; content: string }> = []
+  let total = 0
+  for (const [i, item] of bruto.entries()) {
+    const { nome, tipo, base64 } = (item ?? {}) as Record<string, unknown>
+    const extensao = typeof tipo === 'string' ? TIPOS_IMAGEM[tipo] : undefined
+    if (!extensao || typeof base64 !== 'string' || !/^[A-Za-z0-9+/]+={0,2}$/.test(base64)) return { anexos: [], erro: 'anexo_invalido' }
+    const bytes = Math.floor(base64.length * 3 / 4) - (base64.endsWith('==') ? 2 : base64.endsWith('=') ? 1 : 0)
+    total += bytes
+    if (bytes > MAX_BYTES_IMAGEM || total > MAX_BYTES_TOTAL) return { anexos: [], erro: 'anexo_grande' }
+    const base = (typeof nome === 'string' ? nome : '').replace(/\.[a-z0-9]{1,5}$/i, '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^\w-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 40)
+    anexos.push({ filename: `${base || `imagem-${i + 1}`}.${extensao}`, content: base64 })
+  }
+  return { anexos }
 }
 
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
@@ -29,7 +61,8 @@ const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replac
 export function montarCarta(d: DadosCarta): { html: string; texto: string } {
   const titulo = MOTIVOS_SUPORTE[d.motivo] ?? MOTIVOS_SUPORTE.outro
   const quem = d.nome ? `${d.nome} · ${d.email}` : d.email
-  const fichas: Array<[string, string]> = [...d.campos, ['Conta', d.situacao]]
+  const imagens = d.imagens ?? []
+  const fichas: Array<[string, string]> = [...d.campos, ['Conta', d.situacao], ...(imagens.length ? [['Anexos', imagens.length === 1 ? '1 imagem' : `${imagens.length} imagens`] as [string, string]] : [])]
   const responder = `mailto:${encodeURIComponent(d.email)}?subject=${encodeURIComponent(`Re: ${d.assunto}`)}`
   const primeiroNome = d.nome.trim().split(/\s+/)[0] ?? ''
 
