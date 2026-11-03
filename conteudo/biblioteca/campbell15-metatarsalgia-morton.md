@@ -378,7 +378,7 @@ As opções cirúrgicas formam uma lista que a banca adora transformar em certo 
 conceito: Após falha do conservador no adolescente, a curetagem da cabeça do segundo metatarso com enxerto esponjoso é uma das opções descritas (defendida por TACHDJIAN; SMILLIE eleva o fragmento e enxerta), ao lado da cunha dorsal, do desbridamento com remodelação e da ressecção da cabeça.
 como: O TARO 2006 deu como certo ou errado que, no FREIBERG do adolescente refratário, está indicada a curetagem e enxertia da cabeça do segundo metatarsal.
 armadilha: Achar que a única opção é ressecar a cabeça ou que não se opera adolescente; a cirurgia é evitada só na fase aguda, e as técnicas que preservam a articulação são as preferidas no jovem.
-alerta: `pe-tornozelo-0354` está sem gabarito oficial. O Tachdjian (p. 690) registra que TACHDJIAN defendia curetagem com enxerto esponjoso, e o Campbell lista a elevação com enxerto de SMILLIE, o que sustenta "Certo"; o Campbell prefere o desbridamento com remodelação e a cunha dorsal, e a curetagem é uma indicação possível, não a única.
+alerta: `pe-tornozelo-0354` está sem gabarito oficial; o gabarito da bibliografia da banca marca Errado, e o site segue essa resposta: a curetagem com enxerto é uma opção entre várias, sem evidência de superioridade. O Tachdjian (p. 690) registra que TACHDJIAN defendia a técnica, e o Campbell cita a elevação com enxerto de SMILLIE, o que daria algum apoio a Certo.
 !fim
 
 # Fraturas de estresse e braquimetatarsia {radar=clinico}
