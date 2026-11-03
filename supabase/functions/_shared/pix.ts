@@ -1,11 +1,8 @@
 import { banco } from './http.ts'
 import { consultarPagamento, type PagamentoMercadoPago } from './cobranca-mercado-pago.ts'
+import { PRECOS, valoresAceitos } from './precos.ts'
 
-export const PLANOS_PIX = {
-  mensal: { meses: 1, centavos: 3990 },
-  semestral: { meses: 6, centavos: 17990 },
-  anual: { meses: 12, centavos: 23990 },
-} as const
+export const PLANOS_PIX = PRECOS
 export interface PedidoPix {
   id: string; id_usuario: string; plano: keyof typeof PLANOS_PIX; valor_centavos: number
   meses: number; pagamento_id: string | null; status: string; expira_em: string
@@ -26,7 +23,8 @@ export function validarPagamentoPix(pedido: PedidoPix, pagamento: PagamentoMerca
     || pagamento.live_mode !== (ambiente === 'producao')
     || (pedido.pagamento_id && String(pagamento.id) !== pedido.pagamento_id)) throw new Error('pagamento_pix_divergente')
   const plano = PLANOS_PIX[pedido.plano]
-  if (!plano || plano.centavos !== pedido.valor_centavos || plano.meses !== pedido.meses) throw new Error('pedido_pix_invalido')
+  // Preço novo ou o antigo de quem já assinava (e um Pix gerado antes do reajuste, que vale 24 h).
+  if (!plano || !valoresAceitos(pedido.plano).includes(pedido.valor_centavos) || plano.meses !== pedido.meses) throw new Error('pedido_pix_invalido')
 }
 export async function sincronizarPix(pagamento: PagamentoMercadoPago) {
   const referencia = String(pagamento.external_reference ?? '')

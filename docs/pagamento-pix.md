@@ -1,6 +1,6 @@
 # Pagamento por Pix
 
-Pix é pagamento único do período integral: mensal R$ 39,90, semestral R$ 179,90 e anual R$ 239,90. Não há renovação automática. O preço é definido no servidor e o prazo começa na aprovação confirmada pelo Mercado Pago. Um usuário com período pago vigente não compra outro pelo Pix. Um Pix pendente é recuperado em vez de gerar nova cobrança; outro plano exige aguardar a expiração.
+Pix é pagamento único do período integral: mensal R$ 39,90, semestral R$ 209,40 e anual R$ 358,80. Quem já assinava antes do reajuste de 7/11/2026 mantém semestral R$ 179,90 e anual R$ 239,90 (ver `docs/reajuste-planos-2026-11.md`). Não há renovação automática. O preço é definido no servidor e o prazo começa na aprovação confirmada pelo Mercado Pago. Um usuário com período pago vigente não compra outro pelo Pix. Um Pix pendente é recuperado em vez de gerar nova cobrança; outro plano exige aguardar a expiração.
 
 ## Publicação
 

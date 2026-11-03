@@ -46,7 +46,7 @@ supabase secrets set \
 
 ## Mercado Pago: configuração privada
 
-`criar-checkout` cria uma preapproval sem plano associado. O plano é definido no servidor pelo par validado de valor e periodicidade: mensal (R$ 39,90/1 mês), semestral (R$ 179,90/6 meses) ou anual (R$ 239,90/12 meses), sempre em BRL. No ambiente `teste`, a Function libera checkout somente para uma `contas_teste` ativa. Em produção, a trava privada `MERCADO_PAGO_RESTRITO_CONTAS_TESTE` restringe por padrão à mesma tabela; apenas o valor explícito `false` remove a restrição após validar cobrança, reembolso e os três checkouts públicos. Access Token e segredo de webhook nunca pertencem ao frontend, GitHub Variables, `.env.example` com valor real ou repositório.
+`criar-checkout` cria uma preapproval sem plano associado. O plano é definido no servidor pelo par validado de valor e periodicidade: mensal (R$ 39,90/1 mês), semestral (R$ 209,40/6 meses) ou anual (R$ 358,80/12 meses), sempre em BRL; o webhook também aceita os valores antigos (R$ 179,90 e R$ 239,90) de quem assinou antes do reajuste. Os valores ficam em `supabase/functions/_shared/precos.ts`. No ambiente `teste`, a Function libera checkout somente para uma `contas_teste` ativa. Em produção, a trava privada `MERCADO_PAGO_RESTRITO_CONTAS_TESTE` restringe por padrão à mesma tabela; apenas o valor explícito `false` remove a restrição após validar cobrança, reembolso e os três checkouts públicos. Access Token e segredo de webhook nunca pertencem ao frontend, GitHub Variables, `.env.example` com valor real ou repositório.
 
 Com Access Token de teste, a função só abre checkout para um usuário autenticado que tenha uma linha ativa em `contas_teste` e exige o secret privado `MERCADO_PAGO_PAYER_EMAIL_TESTE` como `payer_email`. Em produção, usa o e-mail autenticado. A preapproval leva o UUID do Supabase em `external_reference`, `back_url` de `APP_ORIGIN`, uma chave de idempotência e `auto_recurring` com `frequency_type=months`, valor e moeda BRL. A função não devolve nem registra o e-mail sandbox e não recebe ou armazena dados de cartão.
 
@@ -69,7 +69,7 @@ Configurar o webhook somente por HTTPS para a função `webhook-mercado-pago`. A
 
 ## Política operacional
 
-- Todos os planos são recorrentes: mensal R$ 39,90; semestral R$ 179,90; anual R$ 239,90.
+- Todos os planos são recorrentes: mensal R$ 39,90; semestral R$ 209,40; anual R$ 358,80. Quem já assinava antes do reajuste de 7/11/2026 mantém semestral R$ 179,90 e anual R$ 239,90 (ver `docs/reajuste-planos-2026-11.md`).
 - Cancelamento é automático. Fora da garantia, interrompe futuras cobranças e preserva acesso até `fim_periodo`.
 - Até sete dias de cada cobrança, `gerenciar-plano` solicita reembolso integral, inclusive de assinatura já cancelada. Só registra `reembolsada` após consulta confirmar o pagamento como `refunded` no Mercado Pago; então encerra o acesso pago imediatamente. Uma recusa do provedor não altera a assinatura e gera apenas códigos sanitizados nos logs.
 - Falha, vencimento e reembolso devolvem a conta ao limite sem apagar dados.
