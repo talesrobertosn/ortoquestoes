@@ -655,7 +655,18 @@
 /* A página separa as seções com um vão grande (.vd gap): o bloco de baixo dos planos fica colado na caixa verde. */
 .vd-depois-planos { display: grid; gap: 1rem; margin-top: calc(1.1rem - clamp(4rem, 9vw, 7rem)); }
 .vd-final + .vd-suporte { margin-top: calc(0.9rem - clamp(4rem, 9vw, 7rem)); }
-.vd-depois-planos .vd-abertura { justify-self: center; width: min(100%, 46rem); }
+.vd-depois-planos .vd-abertura { justify-self: center; width: min(100%, 52rem); }
+/* Inauguração (refeito em 03/11/2026): a promessa em título grande e as regras em três linhas com visto. */
+.vd-abertura--inauguracao { gap: 1.15rem; padding: 1.15rem 1.4rem 1.2rem; }
+.vd-abertura--inauguracao .vd-abertura__cadeado { width: 56px; height: 64px; }
+.vd-abertura--inauguracao h2 { font-size: clamp(1.2rem, 2.4vw, 1.45rem); line-height: 1.2; letter-spacing: -0.02em; }
+.vd-abertura__pontos { display: grid; gap: 0.3rem; margin: 0.45rem 0 0; padding: 0; list-style: none; }
+.vd-abertura__pontos li { display: inline-flex; align-items: flex-start; gap: 0.35rem; font-size: var(--corpo-menor); line-height: 1.4; color: #4a3a20; }
+.vd-abertura__pontos svg { flex: none; margin-top: 0.15rem; color: #2f6b34; }
+@media (max-width: 34rem) {
+  .vd-abertura--inauguracao { padding: 1rem; }
+  .vd-abertura--inauguracao .vd-abertura__cadeado { width: 44px; height: 58px; }
+}
 @media (max-width: 44rem) {
   .vd-depois-planos { margin-top: calc(0.9rem - 3.75rem); }
   .vd-final + .vd-suporte { margin-top: calc(0.75rem - 3.75rem); }
