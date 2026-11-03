@@ -302,17 +302,20 @@
   "conferido": false
  },
  "coluna-0018": {
+  "conceito": "Um paciente com fratura da coluna torácica não mexe as pernas e, quando o examinador sobe com a agulha desde os pés, ele passa a sentir só depois de atravessar a **cicatriz umbilical**. A pergunta é o nível da lesão, e quem o dá não é a radiografia, é o mapa dos dermátomos do tronco.\n\n**Por que no tórax o nível sai da sensibilidade.** Nos membros, cada raiz tem um músculo-chave e, às vezes, um reflexo. No tronco não há nada disso: os músculos intercostais e abdominais não entram na ficha de exame, e não há reflexo profundo útil. O que sobra são as faixas de pele, dispostas como anéis horizontais, uma para cada raiz torácica. Por isso a ficha da ASIA/ISCoS, que o Campbell's Operative Orthopaedics, 15ª ed., descreve no capítulo de trauma (Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873), testa **28 dermátomos de cada lado**, com tato leve e picada de agulha, e oferece marcos fixos para não errar a contagem.\n\n**Os marcos.** Linha mamilar **T4**, processo xifoide **T7**, umbigo **T10**, região inguinal **T12 e L1**, região perianal **S4 e S5**. O Sizínio Hebert, 5ª ed. (cap. 40), traz os mesmos pontos, com o períneo em S2 a S4. A distância entre mamilo, xifoide e umbigo é de três segmentos de cada vez, o que ajuda a reconstruir a sequência na hora da prova.\n\n**Como ler o caso.** A sensibilidade perdida \"a partir da cicatriz umbilical\" significa que o último dermátomo intacto está logo acima e que o umbigo já pertence à zona anestesiada: o nível sensitivo é **T10**. A paraplegia (perda do movimento das pernas) é coerente com uma lesão medular torácica, porque toda a inervação dos membros inferiores sai abaixo dali.\n\n**Um reforço clínico do mesmo marco.** O umbigo como T10 aparece também na hérnia de disco torácica: o Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1781) conta que a dor em faixa mais relatada é justamente a de T10, a que contorna o tórax inferior e chega ao umbigo.\n\n| Marco do tronco | Dermátomo |\n|---|---|\n| Linha mamilar | T4 |\n| Processo xifoide | T7 |\n| Umbigo | T10 |\n| Região inguinal | T12 e L1 |\n\nOs marcos estão na seção \"Tronco: dermátomos torácicos e reflexos superficiais\" do resumo.",
+  "correta": "**C) T10.** O umbigo é o marco do dermátomo T10 na ficha da ASIA/ISCoS (Campbell, cap. 48, p. 1873; Sizínio, cap. 40). Sensibilidade perdida a partir da cicatriz umbilical coloca o nível sensitivo da lesão em T10, e a paraplegia combina com uma lesão medular torácica nessa altura.",
   "incorretas": {
-   "A": "**T4 é a linha dos mamilos.** Uma lesão em T4 tiraria a sensibilidade muito acima do umbigo, desde o peito.",
-   "B": "**T7 fica entre o xifoide e o umbigo.** O nível sensitivo começaria acima da cicatriz umbilical, na parte alta do abdome.",
-   "D": "**T12 fica perto da região inguinal.** Uma lesão em T12 preservaria a sensibilidade do abdome e só a perderia a partir da parte mais baixa, junto da virilha."
+   "A": "**T4** é o dermátomo da linha mamilar (Campbell, cap. 48, p. 1873). Seria a resposta se a anestesia começasse na altura dos mamilos, como numa fratura torácica alta; aqui o limite está seis segmentos abaixo, no umbigo.",
+   "B": "**T7** corresponde ao processo xifoide. Com a lesão em T7, a faixa insensível começaria na ponta do esterno e o paciente já não sentiria o abdome superior; no caso, a pele entre o xifoide e o umbigo está preservada.",
+   "D": "**T12** fica na região inguinal, junto com L1. Uma lesão nesse nível pouparia a sensibilidade de todo o abdome, inclusive do umbigo, e começaria a anestesia na virilha. É o erro de quem confunde o umbigo com a prega inguinal."
   },
-  "conceito": "**O que é um dermátomo.** Cada raiz nervosa da medula recebe a sensibilidade de uma faixa de pele, chamada dermátomo. No tronco, os dermátomos torácicos formam faixas horizontais, como anéis empilhados. Conhecer alguns marcos permite descobrir o nível de uma lesão medular só pelo exame da sensibilidade.\n\n**Os marcos do tronco.** **T4** passa na linha dos mamilos. **T6** passa no apêndice xifoide, a ponta inferior do esterno. **T10** passa na **cicatriz umbilical**. **T12** passa logo acima da região inguinal, e **L1**, na virilha. Um paciente que não sente nada abaixo do umbigo e não move as pernas tem lesão medular no nível neurológico **T10**.\n\n**Nível neurológico e nível da vértebra.** O nível neurológico, pela padronização da ASIA (a associação norte-americana de lesão medular), é o segmento mais baixo da medula com sensibilidade e força normais. Ele não é obrigatoriamente o número da vértebra fraturada. A medula é mais curta do que a coluna e termina na altura de L1-L2; na coluna torácica baixa, o segmento medular fica cerca de dois níveis acima da vértebra de mesmo número. Por isso uma lesão neurológica em T10 costuma corresponder a uma fratura em torno de T8. A pergunta, porém, pede o nível da lesão pela sensibilidade.\n\n**Um sinal que confirma T10: Beevor.** Os músculos abdominais também são inervados em faixas. Na lesão em T10 a parte superior do reto abdominal funciona e a inferior não. Quando o paciente tenta levantar a cabeça deitado, a parte superior puxa e o umbigo sobe. É o sinal de Beevor.\n\n**Na prova:** umbigo é T10; mamilo é T4; xifoide é T6; região inguinal é T12 e L1.",
-  "correta": "**T10.** A cicatriz umbilical é o marco do dermátomo de T10, então a perda de sensibilidade a partir dela indica lesão nesse nível neurológico.",
   "referencias": [
-   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1781",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0019": {
@@ -1053,19 +1056,22 @@
   "conferido": false
  },
  "coluna-0063": {
-  "conceito": "### O que a figura mostra\nEstímulo na face **medial da coxa** com elevação do **testículo** do mesmo lado: é o **reflexo cremastérico**.\n\n### Reflexos superficiais (cutâneos)\n| Reflexo | Segmentos (nas referências mais citadas) |\n|---|---|\n| Abdominal superior | T7 a T10 |\n| Abdominal inferior | T10 a T12 |\n| **Cremastérico** | ==T12-L1== (algumas referências citam L1-L2, via genitofemoral) |\n| Anal (\"wink\") | S2 a S4 |\n| Bulbocavernoso | S2 a S4 |\n| Plantar (Babinski) | trato piramidal (S1 no arco) |\n\n### Valor clínico\n- Os reflexos superficiais **somem** nas lesões de **neurônio motor superior**, ao contrário dos profundos, que se exaltam.\n- **Assimetria do reflexo abdominal** na escoliose \"idiopática\" sugere **siringomielia** e indica **RM**.\n- **Cremastérico ausente** no escroto agudo sugere **torção testicular**.\n\n> **Na prova:** cremastérico = ==T12-L1== pelo gabarito.",
-  "alerta": "A figura mostra o reflexo cremastérico (estímulo na face medial da coxa e elevação do testículo), e não o abdominal. As referências divergem sobre seus segmentos: algumas citam T12-L1 (gabarito D) e outras L1-L2 (alternativa A), pelo nervo genitofemoral.",
-  "correta": "**T12 e L1.**\n- Segmentos atribuídos ao cremastérico pela referência da banca.",
+  "conceito": "**A imagem.** O desenho mostra um homem deitado de costas, com as coxas um pouco afastadas e o escroto à vista. A mão do examinador segura um instrumento de ponta romba e o passa na **face interna (medial) da coxa**, logo abaixo da virilha. É a pesquisa do **reflexo cremastérico**: o estímulo da pele medial da coxa faz o músculo cremaster contrair e **elevar o testículo** do mesmo lado.\n\n**Que tipo de reflexo é esse.** Os reflexos de percussão, como o patelar e o aquileu, são profundos: dependem de um arco curto de fuso muscular, raiz e corno anterior. O cremastérico e o cutâneo abdominal são **superficiais**, disparados por um estímulo na pele e conduzidos por vias que passam pela medula e dependem do **neurônio motor superior**. O Sizínio Hebert, 5ª ed. (cap. 40), diz que os reflexos abdominais e cremastéricos testam esse neurônio e que a sua ausência indica lesão dele; na mielopatia cervical, o mesmo livro descreve os reflexos profundos exaltados e os cutâneos abolidos (cap. 2.1).\n\n**De onde vem o número.** O arco do cremastérico usa a pele da raiz da coxa e o nervo que inerva o cremaster. O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873), e o Sizínio situam a **região inguinal** no dermátomo **T12 e L1**. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 8), dá ao **nervo genitofemoral**, responsável pela parte motora (o cremaster), as raízes **L1 e L2**. É o segmento toracolombar alto, na transição entre o tronco e a coxa, que a banca chamou de T12 e L1.\n\n**Por que importa.** O Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1781) inclui o reflexo cremastérico, ao lado dos abdominais, no exame meticuloso da hérnia torácica, que tem poucos sinais localizadores. Um cremastérico abolido de um lado é mais uma pista de lesão acima do segmento, ao lado de hiper-reflexia e BABINSKI.\n\nOs reflexos superficiais estão na seção \"Tronco: dermátomos torácicos e reflexos superficiais\" do resumo.",
+  "correta": "**D) T12 e L1.** O desenho é o reflexo cremastérico, e T12 e L1 é o segmento da região inguinal na ficha da ASIA (Campbell, cap. 48, p. 1873; Sizínio, cap. 40), a pele que dispara o reflexo. É a resposta que a banca espera para as raízes desse arco toracolombar alto.",
   "incorretas": {
-   "A": "**L1 e L2.**\n- Citado por várias referências para o cremastérico (genitofemoral); ver o alerta.",
-   "B": "**S1 e S2.**\n- Reflexos sacrais: o aquileu é S1; anal e bulbocavernoso são S2 a S4.",
-   "C": "**L1 e S1.**\n- Não forma o arco de nenhum reflexo superficial clássico."
+   "A": "**L1 e L2** são as raízes do nervo genitofemoral no Netter (cap. 8), o nervo motor do cremaster; por isso a opção seduz e não é absurda. Mas a banca ancorou o reflexo no segmento da região inguinal, T12 e L1, e os livros conferidos não trazem uma linha atribuindo o cremastérico a L1 e L2.",
+   "B": "**S1 e S2** pertencem a outro reflexo do mesmo território genital: S1 é a raiz do aquileu, e o bulbocavernoso (contração anal ao estímulo do pênis ou do clitóris) é sacral, S2 a S4 no Sizínio e S2 e S3 no Netter. Nada disso é o que o desenho mostra, que é o estímulo na coxa medial com resposta do testículo.",
+   "C": "**L1 e S1** mistura duas raízes distantes, uma da virilha e outra da borda lateral do pé e do aquileu. Nenhum reflexo da tabela do Campbell, do Netter ou do Sizínio usa essa combinação."
   },
   "referencias": [
-   "DeMyer W. Technique of the Neurologic Examination. Superficial abdominal reflexes.",
-   "Bates' Guide to Physical Examination and History Taking. Neurologic examination."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1781",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 8 (nervo genitofemoral)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-09-23",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0064": {
@@ -1152,17 +1158,21 @@
   }
  },
  "coluna-0066": {
+  "conceito": "Três reflexos de percussão, três raízes: a questão cobra a tabela que sustenta todo o exame neurológico dos membros. Antes dela, vale entender o que um reflexo profundo mede.\n\n**O arco.** Ao percutir um tendão, o examinador estira bruscamente o músculo; o fuso muscular manda o sinal pela raiz sensitiva até o corno anterior da medula, que responde pela raiz motora com uma contração. É um circuito curto, que passa por um ou dois segmentos medulares. O Sizínio Hebert, 5ª ed. (cap. 40), resume a lógica: o reflexo **diminuído ou ausente** indica interrupção do arco, ou seja, lesão da raiz ou do nervo periférico (ou choque medular); o reflexo **exaltado** indica perda da inibição que vem do córtex, lesão do neurônio motor superior. Cada reflexo, portanto, é um teste de uma raiz específica.\n\n**A tabela.** O Sizínio lista os cinco reflexos profundos de maior importância clínica: **bicipital C5, estilorradial (braquiorradial) C6, tricipital C7, patelar L4 e aquileu (calcaneano) S1**. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 50 e 51), traz a mesma lista. O Campbell's Operative Orthopaedics, 15ª ed., chega ao mesmo resultado pelos quadros de radiculopatia: o tricipital cai na compressão de C7 (Box 45.4, p. 1749) e o aquileu reduzido ou ausente é o reflexo de S1 (Box 46.4, p. 1786 e 1787).\n\n**A nuance que não muda a resposta.** Os reflexos são multissegmentares. O Campbell lista o bicipital nos quadros de C5 e de C6 (Boxes 45.2 e 45.3), porque o bíceps recebe as duas raízes. Mas a banca cobra o segmento principal, que é C5.\n\n| Reflexo | Raiz principal |\n|---|---|\n| Bicipital | C5 |\n| Braquiorradial | C6 |\n| Tricipital | C7 |\n| Patelar | L4 |\n| Aquileu | S1 |\n\n**Onde a banca arma a troca.** As alternativas erradas trocam o tricipital por C6 (confusão com o braquiorradial) e o calcaneano por L5 (raiz que, segundo o Campbell, geralmente não altera reflexo nenhum).\n\nA tabela está na seção \"Dermátomos, miótomos e reflexos: a lógica do exame\" do resumo.",
+  "correta": "**D) C5, C7 e S1.** Bicipital C5, tricipital C7 e aquileu S1 é a lista do Sizínio (cap. 40) e do Netter (cap. 2), confirmada pelos quadros do Campbell: tricipital alterado na compressão de C7 (Box 45.4) e aquileu reduzido na de S1 (Box 46.4).",
   "incorretas": {
-   "A": "**Duas raízes erradas.** O tricipital é C7, e não C6 (C6 é o braquiorradial). E o calcaneano é S1; L5 não tem reflexo próprio confiável.",
-   "B": "**O calcaneano está errado.** Bicipital C5 e tricipital C7 estão certos, mas o reflexo calcaneano, ou aquileu, depende de S1, não de L5.",
-   "C": "**O tricipital está errado.** Bicipital C5 e calcaneano S1 estão certos, mas o tricipital é C7. C6 corresponde ao braquiorradial."
+   "A": "**C5, C6 e L5** erra dois de três. C6 é a raiz do braquiorradial, não do tricipital; e L5, segundo o Campbell (Box 46.3, p. 1786), geralmente não tem reflexo alterado, com o tibial posterior como única possibilidade, difícil de obter.",
+   "B": "**C5, C7 e L5** acerta os dois reflexos do braço e erra o do tornozelo. O calcaneano é o aquileu, de S1; L5 é a raiz do extensor longo do hálux e do glúteo médio, sem reflexo de rotina.",
+   "C": "**C5, C6 e S1** acerta o bicipital e o aquileu, mas dá o tricipital a C6. O tríceps é o músculo-chave de C7 (Tabela 48.3 do Campbell), e o reflexo que cai em C6 é o braquiorradial, ao lado do bicipital."
   },
-  "conceito": "**O que é um reflexo profundo.** Quando o examinador bate com o martelo num tendão, o músculo é esticado de repente e se contrai sozinho. Esse circuito passa por um segmento da medula: o nervo leva o estímulo até a medula e volta ao músculo pela raiz correspondente. Por isso cada reflexo testa uma raiz específica, e um reflexo diminuído ajuda a localizar a raiz comprimida.\n\n**Os reflexos e suas raízes.** **Bicipital**: bate-se no tendão do bíceps, na dobra do cotovelo, e o cotovelo flete; raiz **C5**. **Braquiorradial** (ou estilorradial): bate-se no rádio perto do punho; raiz **C6**. **Tricipital**: bate-se no tendão do tríceps, atrás do cotovelo, e ele se estende; raiz **C7**. **Patelar**: abaixo da patela, o joelho se estende; raiz **L4**. **Aquileu**, também chamado **calcaneano**: bate-se no tendão de Aquiles e o pé faz flexão plantar; raiz **S1**.\n\n**Raízes sem reflexo próprio confiável.** **C8 e T1** não têm reflexo de rotina. **L5** também não tem um reflexo confiável: existe o reflexo do tibial posterior, mas ele é inconstante até em pessoas normais. A raiz L5 é avaliada pela força do extensor longo do hálux (o músculo que levanta o dedão) e da abdução do quadril, e pela sensibilidade do dorso do pé.\n\n**Reflexo diminuído e reflexo aumentado.** Na compressão de uma raiz, o reflexo correspondente diminui ou some. Quando a medula está comprimida, os reflexos abaixo do nível ficam aumentados, com clônus, Hoffmann e Babinski: sinais de mielopatia.\n\n**Na prova:** bicipital C5, braquiorradial C6, tricipital C7, patelar L4, aquileu (calcaneano) S1.",
-  "correta": "**C5, C7 e S1.** O bicipital testa a raiz C5, o tricipital a C7 e o calcaneano, que é o aquileu, a S1.",
   "referencias": [
-   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), Boxes 45.2 a 45.4, p. 1748 e 1749",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), Boxes 46.3 e 46.4, p. 1786 e 1787",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 50 e 51)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0067": {
@@ -1401,17 +1411,20 @@
   "conferido": false
  },
  "coluna-0082": {
+  "conceito": "A pergunta não é sobre o LASÈGUE comum, de uma perna só, e sim sobre a elevação das **duas pernas juntas**. A diferença muda a estrutura que se testa, e é nela que a banca arma a armadilha.\n\n**O teste unilateral.** Com o paciente deitado de costas, o examinador eleva uma perna pelo calcanhar, com o joelho estendido. O quadril flete, o ciático é tracionado e, com ele, as raízes L4, L5 e S1; se uma delas está presa contra um fragmento de disco, dói no seu território. O Sizínio Hebert, 5ª ed. (cap. 2.4), dá a faixa: o teste é positivo quando a dor ciática aparece **entre 35 e 70 graus** de elevação, e é positivo em 90% das compressões radiculares. O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1785 e 1786), exige que a dor desça **abaixo do joelho**; dor só lombar ou na coxa posterior não conta como LASÈGUE positivo.\n\n**O que muda com as duas pernas.** Abaixo de 35 graus, o Sizínio não considera o teste positivo; entre 35 e 70, é a raiz que sofre. Quando as duas pernas sobem juntas, a pelve deixa de ter a outra perna como âncora e passa a rodar com elas; acima de cerca de 70 graus, o movimento se transfere para a **coluna lombar**, e a dor que surge nessa faixa aponta as estruturas da própria coluna, articulares, e não a raiz. Essa é a lógica da questão e da resposta oficial.\n\n**O que o Campbell acrescenta ao raciocínio.** Inconsistências entre as posições do exame, como uma elevação limitada deitado e livre sentado, são em geral não orgânicas, entre os sinais de WADDELL (Tabela 46.4). O exame de tensão só ajuda quando é interpretado dentro do quadro inteiro.\n\n| Faixa de elevação | Leitura habitual |\n|---|---|\n| 0 a 35 graus | abaixo da faixa de positividade |\n| 35 a 70 graus | tensão radicular (teste unilateral) |\n| Acima de 70 graus | movimento lombar (teste bilateral) |\n\nOs testes de tensão estão na seção \"Testes de tensão: LASÈGUE, contralateral, sentado e estiramento femoral\" do resumo.",
+  "correta": "**C) mais de 70º.** Na elevação bilateral, a pelve roda junto e, acima de cerca de 70 graus, o movimento passa à coluna lombar; a dor nessa faixa aponta a própria coluna, não a raiz. A faixa de 35 a 70 graus pertence ao teste unilateral, que traciona a raiz (Sizínio, cap. 2.4).",
   "incorretas": {
-   "A": "**Dor no início aponta para a sacroilíaca.** Nos primeiros graus o movimento é da pelve girando sobre as articulações sacroilíacas, e a coluna lombar ainda não foi solicitada.",
-   "B": "**Ainda é a fase sacroilíaca.** Até cerca de 70 graus a pelve continua girando sobre as sacroilíacas; a coluna lombar só entra depois.",
-   "D": "**Dor em todo o arco não localiza.** Dor desde o início e em toda a amplitude não permite separar as duas origens e pode sugerir componente não mecânico."
+   "A": "**0 a 35 graus** é o início do arco, antes da faixa em que o Sizínio considera o teste positivo para a raiz (35 a 70 graus). Dor tão cedo não tem leitura própria nos livros conferidos e não é o que sugere lesão da coluna lombar no teste bilateral.",
+   "B": "**35 a 70 graus** é a resposta certa para outra pergunta: é a faixa em que a elevação de uma perna só reproduz a dor ciática da compressão radicular (Sizínio, cap. 2.4). É o distrator feito para quem não percebeu que o teste da questão é bilateral.",
+   "D": "**Todo o arco de movimento** descreve uma dor que aparece desde o primeiro grau e não muda com a posição. Não localiza nada e, quando aparece de forma inconsistente entre deitado e sentado, entra na lista de sinais não orgânicos de WADDELL (Campbell, Tabela 46.4)."
   },
-  "conceito": "**O teste.** Com o paciente deitado de barriga para cima, o examinador eleva **as duas pernas juntas**, com os joelhos estendidos, fletindo os quadris. O objetivo é descobrir se a dor vem das articulações sacroilíacas ou da coluna lombar.\n\n**O que se move em cada fase.** Na primeira parte do movimento, até cerca de **70 graus** de flexão dos quadris, a pelve gira como um bloco sobre as articulações **sacroilíacas** (as articulações entre o sacro e os ossos do quadril). Dor nessa fase aponta para a sacroilíaca. Depois de cerca de 70 graus, a pelve já girou o que podia, e continuar elevando as pernas obriga a **coluna lombar** a fletir. Dor que aparece **acima de 70 graus** sugere origem **lombar**.\n\n**Não confundir com o Lasègue.** O Lasègue é a elevação de **uma** perna estendida. Ele estica a raiz ciática (L5 e S1) e é positivo quando reproduz dor que desce abaixo do joelho, geralmente entre 30 e 70 graus. Abaixo de 30 graus a raiz ainda está pouco tensionada; acima de 70, a dor costuma vir da coluna ou dos músculos de trás da coxa. Variações: o Bragard, em que se faz a dorsiflexão do tornozelo no limite da dor, aumentando a tensão no nervo; e o Lasègue cruzado, em que elevar a perna sã reproduz a dor na perna doente, sinal muito específico de hérnia de disco.\n\n**Na prova:** na elevação bilateral das pernas, dor acima de 70 graus indica coluna lombar; abaixo disso, sacroilíaca.",
-  "correta": "**Mais de 70 graus.** Acima desse ponto a pelve já girou sobre as sacroilíacas, e o movimento passa a fletir a coluna lombar; dor aí sugere origem lombar.",
   "referencias": [
-   "Hoppenfeld S. Physical Examination of the Spine and Extremities. New York: Appleton-Century-Crofts; 1976."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1785 e 1786, Tabela 46.4",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (coluna lombar)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "alerta": "Os livros conferidos descrevem só o teste unilateral (positivo entre 35 e 70 graus, Sizínio, cap. 2.4; dor abaixo do joelho, Campbell, cap. 46, p. 1785 e 1786). A elevação bilateral e o corte de 70 graus não aparecem neles; o gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0083": {
@@ -1747,17 +1760,20 @@
   "conferido": false
  },
  "coluna-0110": {
+  "conceito": "Esta é a tabela pura do tronco: três pontos que qualquer pessoa encontra no próprio corpo e três números que a banca quer na ordem certa. Vale a pena entender de onde vem a sequência, porque assim ela não se perde na véspera da prova.\n\n**Dermátomo é a faixa de pele de uma raiz.** Cada nervo espinal torácico corre por baixo da sua costela e inerva um anel de pele que dá a volta no tronco, descendo levemente da coluna para a frente. Os anéis são empilhados em ordem, de T1 no alto do tórax até T12 na virilha. Como as faixas são estreitas e parecidas, o exame precisa de pontos de referência visíveis.\n\n**Os pontos do Campbell.** O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873), ao descrever a ficha neurológica da ASIA/ISCoS, lista: **linha mamilar T4, processo xifoide T7, umbigo T10**, região inguinal T12 e L1 e região perianal S4 e S5. A ficha testa 28 dermátomos de cada lado, com tato leve e com picada de agulha estéril. O Sizínio Hebert, 5ª ed. (cap. 40), repete mamilos T4, xifoide T7, umbigo T10 e inguinal T12 a L1.\n\n**Um truque de memória que vem dos próprios números.** De um marco ao seguinte são três segmentos: 4, 7, 10. Quem lembra só do umbigo em T10 reconstrói o resto subtraindo três. E quem lembra que a virilha é T12 não cai na tentação de pôr o umbigo lá embaixo.\n\n**Para que serve na prática.** No trauma raquimedular, o nível sensitivo do tronco é a única forma de localizar uma lesão torácica pelo exame, porque ali não há músculo-chave nem reflexo profundo. Na hérnia torácica, a dor em faixa mais relatada é a de T10, que chega ao umbigo (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1781).\n\n**A pegadinha.** Todas as alternativas mantêm o intervalo de três segmentos; a banca só desloca a série inteira para cima ou para baixo. Não adianta lembrar do intervalo; é preciso ancorar um dos marcos, e o mais seguro é o umbigo.\n\nA sequência está na seção \"Tronco: dermátomos torácicos e reflexos superficiais\" do resumo.",
+  "correta": "**B) T4, T7 e T10.** São os marcos da ficha da ASIA/ISCoS descritos no Campbell (cap. 48, p. 1873) e no Sizínio (cap. 40): mamilo T4, processo xifoide T7, cicatriz umbilical T10. É a série que permite localizar pelo exame uma lesão medular torácica.",
   "incorretas": {
-   "A": "**Erra o mamilo e o umbigo.** T3 está acima da linha dos mamilos e T9 acima do umbigo; os marcos estão todos um nível acima.",
-   "C": "**Um nível abaixo em todos.** T5, T8 e T11 deslocam os três marcos para baixo: o mamilo é T4 e o umbigo é T10.",
-   "D": "**Dois níveis abaixo.** T6 é o xifoide, não o mamilo, e T12 já é a região inguinal, longe do umbigo."
+   "A": "**T3, T6 e T9** desloca a série um segmento para cima. Pela tabela do Campbell, T9 ficaria acima do umbigo e T6 acima do xifoide; nenhum dos três números coincide com um marco da ficha da ASIA.",
+   "C": "**T5, T8 e T11** desloca a série um segmento para baixo. É tentadora para quem lembra só que o umbigo fica \"perto de T10 ou T11\"; mas o livro ancora o umbigo em T10 e o xifoide em T7.",
+   "D": "**T6, T9 e T12** põe o umbigo em T12, que é o dermátomo da região inguinal, junto com L1 (Campbell, cap. 48, p. 1873). É o erro mais grosseiro, porque confunde a virilha com o umbigo."
   },
-  "conceito": "**Os dermátomos do tronco.** Dermátomo é a faixa de pele cuja sensibilidade é levada por uma raiz nervosa. No tronco, os dermátomos torácicos formam faixas horizontais, empilhadas de cima para baixo. Alguns marcos fáceis de achar no corpo permitem localizar o nível de uma lesão medular só testando onde a sensibilidade termina.\n\n**Os marcos.** O **mamilo** está na faixa de **T4**. O **processo xifoide**, a ponta de baixo do esterno, está entre T6 e T7: a padronização da ASIA (associação norte-americana de lesão medular) usa T6, e a banca usa T7. A **cicatriz umbilical** está em **T10**. A região inguinal, junto à virilha, fica entre T12 e L1.\n\n**Como resolver a questão.** Os dois marcos mais consagrados e estáveis entre as fontes são **T4 no mamilo** e **T10 no umbigo**. Só uma alternativa acerta os dois, e ela traz o xifoide em T7, dentro da faixa aceita. As outras deslocam todos os marcos para cima ou para baixo.\n\n**Nível neurológico e nível da vértebra.** O nível encontrado pela sensibilidade é o nível da medula, não necessariamente o número da vértebra lesada. A medula é mais curta que a coluna e termina em L1-L2; na coluna torácica baixa, os segmentos medulares ficam um a dois níveis acima das vértebras de mesmo número. Uma perda de sensibilidade a partir do umbigo (T10) costuma corresponder a uma fratura mais alta.\n\n**Na prova:** mamilo T4, xifoide T6 a T7, umbigo T10, região inguinal T12 e L1.",
-  "correta": "**T4, T7 e T10.** Mamilo em T4 e umbigo em T10 são os marcos consagrados, e o xifoide fica entre T6 e T7.",
   "referencias": [
-   "Kirshblum SC, Burns SP, Biering-Sorensen F et al. International standards for neurological classification of spinal cord injury (revised 2011). J Spinal Cord Med. 2011;34(6):535-546."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1781",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0111": {
@@ -1823,57 +1839,41 @@
   "geradoEm": "2026-09-13"
  },
  "coluna-0135": {
-  "conceito": "No exame neurológico cervical, cada raiz tem três assinaturas: um músculo, uma faixa de pele e, às vezes, um reflexo. A palavra \"às vezes\" é a pegadinha desta questão.\n\n**A tabela do capítulo.** O Rockwood and Green (10ª ed., cap. 48) traz a tabela de miótomos, dermátomos e reflexos. **C5**: deltoide, face lateral do ombro, reflexo **bicipital**. **C6**: bíceps e extensão do punho, face lateral do antebraço, polegar e indicador, reflexo **braquiorradial** (estilorradial). **C7**: tríceps e flexão do punho, dedo médio, reflexo **tricipital**. **C8**: intrínsecos e flexores dos dedos, anular, mínimo e face medial do antebraço, **sem reflexo**. T1 também não tem reflexo próprio.\n\n**Como usar no consultório.** Diante de uma raiz C8, o exame se apoia na força dos flexores dos dedos e dos intrínsecos e na sensibilidade do lado ulnar da mão. Procurar um reflexo para confirmar C8 leva a conclusões erradas.\n\n| Raiz | Reflexo |\n|---|---|\n| C5 | Bicipital |\n| C6 | Braquiorradial |\n| C7 | Tricipital |\n| C8 | Nenhum |\n\n> **Na prova:** C8 não tem reflexo próprio; avalie força dos flexores dos dedos e dos intrínsecos e a sensibilidade do anular e do mínimo.",
-  "correta": "**E: não há.** Na tabela do capítulo, C8 é avaliada por músculos (intrínsecos e flexores dos dedos) e pela sensibilidade do anular, do mínimo e da face medial do antebraço, sem reflexo próprio.",
+  "conceito": "A banca oferece quatro nomes de reflexos e, por último, \"não há\". A questão testa se o candidato sabe que a tabela de reflexos do membro superior **acaba em C7**.\n\n**Por que nem toda raiz tem reflexo.** Para haver um reflexo de percussão útil, é preciso um músculo grande, acessível ao martelo, cujo tendão possa ser estirado de uma vez e que seja inervado de forma predominante por um segmento. No braço, isso existe para três raízes: o **bicipital (C5)**, o **braquiorradial ou estilorradial (C6)** e o **tricipital (C7)**, segundo o Sizínio Hebert, 5ª ed. (cap. 40), e o Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 50). Os músculos de C8 e T1 são os flexores longos dos dedos e os intrínsecos da mão, pequenos e sem um tendão que se percuta na rotina.\n\n**O que o Campbell diz.** O Campbell's Operative Orthopaedics, 15ª ed., descreve a compressão de **C8** (hérnia C7-T1) com sensibilidade alterada no anular, no mínimo e na borda ulnar da palma, fraqueza dos interósseos e dos flexores dos dedos, às vezes do flexor ulnar do carpo, e **nenhuma alteração reflexa** (Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), Box 45.5, p. 1749 e 1750). O mesmo vale para T1 (Box 45.6, p. 1750). O Sizínio, no Quadro 2.1.1, também marca C8 como raiz sem reflexo.\n\n**Como isso aparece no consultório.** Num paciente com dor no lado ulnar da mão, reflexos normais não afastam a raiz C8; o que localiza a lesão é o território sensitivo e a força dos intrínsecos e do flexor profundo do dedo médio, músculo-chave de C8 na ficha da ASIA (Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.3, p. 1875). E, como C8 também não tem reflexo, o exame precisa separar essa raiz do nervo ulnar no cotovelo pelo território: o Campbell manda afastar o túnel cubital antes de culpar a coluna (p. 1750).\n\n**Pegadinha.** Reflexo \"estiloulnar\" não figura em nenhuma das tabelas dos livros conferidos; é o nome que a banca inventa para quem acha que cada raiz tem de ter um reflexo.\n\nO tema está nas seções \"Dermátomos, miótomos e reflexos: a lógica do exame\" e \"Membro superior: C5 a T1, raiz por raiz\" do resumo.",
+  "correta": "**E) Não há.** A raiz C8 não tem reflexo profundo de rotina: o Campbell descreve a sua compressão com \"nenhuma alteração reflexa\" (Box 45.5, p. 1750), e o Sizínio a deixa sem reflexo no Quadro 2.1.1. O diagnóstico de C8 se faz pela sensibilidade do anular e do mínimo e pela força dos intrínsecos e dos flexores dos dedos.",
   "incorretas": {
-   "A": "**É C5.** O reflexo bicipital está na linha de C5 da tabela.",
-   "B": "**É C7.** O tricipital acompanha o tríceps e a flexão do punho, na linha de C7.",
-   "C": "**É C6.** O estilorradial (braquiorradial) é o reflexo de C6, junto com bíceps, extensão do punho e a sensibilidade do polegar e do indicador.",
-   "D": "**Não está na tabela.** O capítulo não atribui um reflexo estiloulnar a C8; para essa raiz, a tabela registra \"nenhum\"."
+   "A": "**Bicipital** é o reflexo de C5, com participação de C6 (Campbell, Boxes 45.2 e 45.3). Diminui na hérnia C4-C5 e na C5-C6, nunca como marcador de C8.",
+   "B": "**Tricipital** é o reflexo de C7 (Campbell, Box 45.4, p. 1749). É o distrator mais próximo, porque C7 é a raiz vizinha; mas a hérnia C7-T1 comprime C8, e o tricipital fica normal.",
+   "C": "**Estilorradial**, o braquiorradial, é o reflexo de C6 (Sizínio, cap. 40; Netter, p. 50). Diminui na hérnia C5-C6; invertido, com flexão dos dedos exaltada, aponta mielopatia em C5-C6.",
+   "D": "**Estiloulnar** não aparece entre os reflexos descritos pelo Campbell, pelo Netter ou pelo Sizínio. A opção existe para atrair quem procura um reflexo do lado ulnar só porque C8 inerva a borda ulnar da mão."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), Boxes 45.2 a 45.6, p. 1748 a 1750",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.3, p. 1875",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 50)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atendimento inicial e exame neurológico"
-     ],
-     "blocos": [
-      "atendimento-inicial-e-exame-neurologico-d66ef39d",
-      "atendimento-inicial-e-exame-neurologico-8258b091"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "0b4aca1fa122b3f3f7f295f01585dc8975583f658efe613318e9a7c775857cb4"
-    }
-   ],
-   "questaoSha256": "41069d969356cb1b4e60e0ab748794aa8afef234b113d0804fd955c5bd859d8c",
-   "comentarioSha256": "4d8dcd9c346419eef490c1f3df440855e203a2baec7f6ac163f964f1b9bc702f"
-  }
+  "geradoEm": "2026-11-03",
+  "conferido": false
  },
  "coluna-0136": {
+  "conceito": "O paciente tem esclerose múltipla, e o examinador provoca nele um sinal que leva o nome de quem o descreveu nessa doença. A questão pede a manobra e, de quebra, testa se o candidato sabe separar um sinal de **medula** dos testes de **raiz**.\n\n**O que é o LHERMITTE.** É um sintoma provocado: ao movimentar o pescoço, o paciente sente um **choque elétrico** que desce pela coluna e às vezes se espalha pelos membros. Ele nasce da medula cervical doente, seja por placas de desmielinização, seja por compressão, e não de uma raiz isolada. A manobra cobrada pelas bancas é **fletir a cabeça contra o tórax com o paciente sentado**, o que estira a medula cervical dentro do canal.\n\n**O que o Campbell diz.** O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1748), ao descrever a mielopatia da doença discal cervical, fala de formigamento generalizado ou dor aguda \"com a extensão do pescoço, semelhante ao sinal de LHERMITTE\" da esclerose múltipla. No quadro da instabilidade cervical da artrite reumatoide (p. 1767), \"sintomas semelhantes ao LHERMITTE\" aparecem ao lado do HOFFMANN, do BABINSKI e da hiper-reflexia: a companhia deixa claro que se trata de um sinal medular. O livro, porém, não descreve a manobra em flexão; ver o alerta.\n\n**Por que as outras manobras são de raiz.** Os testes cervicais da Tabela 45.3 do Campbell (p. 1750) mexem no forame, por onde sai a raiz. O SPURLING fecha o forame com extensão, rotação para o lado afetado e carga; a distração o abre; o alívio pela abdução do ombro afrouxa a raiz. O VALSALVA aumenta a pressão dentro do canal e reproduz a dor discal que piora com esforço, tosse e espirro. Nenhum deles estira a medula como a flexão do pescoço.\n\n| Manobra | O que testa |\n|---|---|\n| Flexão da cabeça contra o tórax | LHERMITTE, medula cervical |\n| Inclinação, extensão e carga | SPURLING, raiz no forame |\n| Distração cervical | alívio da compressão foraminal |\n| Mão sobre a cabeça | alívio da raiz pela abdução |\n\nO LHERMITTE está na seção \"Mielopatia: os sinais de liberação piramidal\" do resumo.",
+  "correta": "**A) em, com o paciente sentado, fletir sua cabeça de encontro ao tórax.** A flexão do pescoço estira a medula cervical doente e provoca o choque que desce pela coluna, o sinal clássico da esclerose múltipla. O Campbell (cap. 45, p. 1748 e 1767) trata esse sintoma como sinal de doença medular, ao lado do HOFFMANN e do BABINSKI.",
   "incorretas": {
-   "B": "**É a manobra de Valsalva.** Prender a respiração e fazer força aumenta a pressão no canal vertebral e piora a dor de hérnias ou tumores; não é o Lhermitte.",
-   "C": "**A distração cervical alivia.** Tracionar a cabeça para cima abre os forames e reduz a dor radicular; é um teste de alívio, não de provocação medular.",
-   "D": "**A inclinação lateral faz parte do Spurling.** Junto com extensão e rotação, fecha o forame e reproduz a dor de uma raiz, não o choque medular.",
-   "E": "**A abdução do braço alivia a dor radicular.** Apoiar a mão sobre a cabeça relaxa a raiz cervical comprimida; é o sinal de alívio pela abdução, sem relação com o Lhermitte."
+   "B": "**Prender a respiração e fazer força** é a manobra de VALSALVA. Ela eleva a pressão dentro do canal e reproduz a dor da hérnia discal, que piora com esforço, tosse e espirro (Campbell, cap. 46, p. 1785). É um teste de compressão discal, não um sinal de medula.",
+   "C": "**Distrair a coluna cervical**, com as mãos no occipital e na mandíbula, é o teste de distração da Tabela 45.3 (Campbell, p. 1750). Alívio com distração e flexão sugere compressão radicular; alívio em extensão, lesão ligamentar posterior. Abre o forame, não provoca choque medular.",
+   "D": "**Inclinar o pescoço para o lado** é parte do SPURLING, que associa a rotação ou inclinação para o lado afetado à extensão e à carga axial. Fecha o forame e reproduz a dor no dermátomo, com 95% de sensibilidade e 94% de especificidade para a raiz cervical (Campbell, p. 1750).",
+   "E": "**Abduzir o membro superior**, pondo a mão sobre a cabeça, é o sinal do alívio pela abdução do ombro. Positivo quando a dor do braço melhora, porque a raiz afrouxa; se piora em 1 a 2 minutos, pensar em túnel cubital ou ombro (Campbell, p. 1750)."
   },
-  "conceito": "**O que é o sinal de Lhermitte.** Com o paciente sentado, o examinador **flete o pescoço**, levando o queixo em direção ao tórax. O sinal é positivo quando o paciente sente um **choque elétrico** descendo pela coluna e, às vezes, irradiando para os braços e as pernas.\n\n**O que ele significa.** A flexão do pescoço estica a medula cervical. Se as **colunas posteriores** da medula (os feixes que levam propriocepção e vibração, na parte de trás da medula) estão doentes, por desmielinização ou compressão, esse estiramento gera descargas anormais, sentidas como choque. É, portanto, um sinal de doença da **medula**, e não de uma raiz isolada.\n\n**As causas.** A clássica é a **esclerose múltipla**, doença que destrói a mielina (a capa isolante das fibras nervosas) no cérebro e na medula; por isso a questão o cita. Também aparece na mielopatia cervical por compressão degenerativa, na deficiência de vitamina B12 (que lesa as colunas posteriores), na siringomielia, em tumores dentro da medula e após radioterapia na região. A conduta é a ressonância da medula cervical.\n\n**As manobras das outras alternativas.** Prender a respiração e fazer força é a **manobra de Valsalva**, que aumenta a pressão dentro do canal e piora a dor de hérnia ou tumor. A **distração cervical** (puxar a cabeça para cima) alivia a dor radicular. A **inclinação lateral**, junto com extensão e rotação, faz parte do **Spurling**, que reproduz a dor de uma raiz. A **abdução do braço** com a mão sobre a cabeça alivia a dor radicular cervical.\n\n**Na prova:** Lhermitte é choque ao fletir o pescoço, sinal medular clássico da esclerose múltipla.",
-  "correta": "**Com o paciente sentado, fletir sua cabeça de encontro ao tórax.** A flexão do pescoço estica a medula cervical e provoca o choque elétrico quando as colunas posteriores estão doentes.",
   "referencias": [
-   "Kanchandani R, Howe JG. Lhermitte's sign in multiple sclerosis: a clinical survey and review of the literature. J Neurol Neurosurg Psychiatry. 1982;45(4):308-312."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1748, 1750 e 1767, Tabela 45.3",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1785",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "alerta": "Os livros conferidos não descrevem a manobra do sinal de LHERMITTE; o Campbell (cap. 45, p. 1748) liga o sintoma semelhante ao LHERMITTE à extensão do pescoço na mielopatia. O gabarito oficial (flexão da cabeça contra o tórax, com o paciente sentado) foi mantido.",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0146": {
@@ -2013,41 +2013,22 @@
   "conferido": false
  },
  "coluna-0153": {
-  "conceito": "Peça ao paciente para dobrar o punho para a frente contra resistência, mantendo o antebraço apoiado. Entre os movimentos oferecidos, essa **flexão do punho** é o marcador de C7 na tabela de exame cervical usada pela questão.\n\nA localização fica mais confiável quando o movimento é confrontado com outras funções da mesma raiz. C7 aparece com tríceps e flexão do punho, sensibilidade no dedo médio e reflexo tricipital. Encontrar esses achados juntos sustenta a localização melhor que uma fraqueza isolada, que pode ter outras explicações (Rockwood, 10ª ed., cap. 48, “O exame neurológico”, tabela 48-1).\n\nCompare os sentidos do movimento: **extensão do punho corresponde a C6 no esquema; flexão, a C7**. A articulação é a mesma, mas os músculos solicitados e a referência segmentar mudam. Abdução do ombro desloca o teste para C5, enquanto flexão dos dedos é usada para C8.\n\nOs níveis da tabela são referências clínicas. Não significam que cada músculo pertença exclusivamente a uma raiz, nem substituem a avaliação conjunta da força, sensibilidade e reflexos.\n\n> **Na prova:** para C7, associe flexão do punho, tríceps e reflexo tricipital.",
-  "correta": "**C: flexão do punho.** É o movimento oferecido que a tabela atribui a C7. Tríceps, dedo médio e reflexo tricipital são os achados complementares desse nível.",
+  "conceito": "Quatro movimentos do membro superior, cada um ligado a uma raiz diferente: a questão é um exercício de miótomo. O que a torna boa é que a resposta do livro não é a que o aluno costuma ter decorado.\n\n**Miótomo é o conjunto de músculos de uma raiz.** Como cada músculo recebe fibras de mais de uma raiz, o exame procura o movimento em que uma delas predomina. O Campbell's Operative Orthopaedics, 15ª ed., faz isso nos quadros de radiculopatia cervical, e é ali que a questão se decide.\n\n**O que o Campbell diz de C7.** Na compressão de C7, pela hérnia C6-C7, o livro descreve fraqueza do **tríceps** e dos **extensores dos dedos**, e acrescenta que a fraqueza dos **flexores do punho, em especial o flexor radial do carpo, é mais indicativa de C7** (Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), Box 45.4, p. 1749). O extensor comum dos dedos pode mostrar a lesão antes do tríceps, por ser naturalmente mais fraco; já o flexor ulnar do carpo tende a ser de C8. O reflexo é o tricipital, e a sensibilidade cai no dedo médio.\n\n**Onde ficam os outros três movimentos.**\n\n| Movimento | Raiz que o representa |\n|---|---|\n| Abdução do ombro (deltoide) | C5 |\n| Extensão do punho (extensores radiais do carpo) | C6 |\n| Flexão do punho (flexor radial do carpo) | C7 |\n| Flexão dos dedos (flexor profundo do dedo médio) | C8 |\n\nA fonte de cada linha é o próprio Campbell: o deltoide é quase exclusivamente C5 (Box 45.2, p. 1748); os extensores radiais longo e curto do carpo são de C6 (Box 45.3; Tabela 48.3, p. 1875); a flexão dos dedos é o músculo-chave de C8 na ficha da ASIA (Tabela 48.3).\n\n**A divergência que confunde.** O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 50), e o Sizínio Hebert, 5ª ed. (Quadro 2.1.1), usam a **extensão do cotovelo** (tríceps) como marcador motor de C7, e a ficha da ASIA também. Se essa opção estivesse na lista, seria igualmente C7. Como não está, a flexão do punho é a única que corresponde a C7.\n\nO assunto está na seção \"Membro superior: C5 a T1, raiz por raiz\" do resumo.",
+  "correta": "**C) Flexão do punho.** O Campbell descreve a fraqueza dos flexores do punho, sobretudo do flexor radial do carpo, como mais indicativa de C7 (Box 45.4, p. 1749). Entre as opções, é o único movimento que pertence a C7; os outros três são de C5, C6 e C8.",
   "incorretas": {
-   "A": "**Avalia um nível mais alto.** A abdução do ombro pelo deltoide é o marcador motor de C5 na tabela. A referência sensitiva é lateral do ombro e braço, com reflexo bicipital, diferente do conjunto de C7.",
-   "B": "**Troca o sentido do movimento e a raiz de referência.** Estender o punho é o marcador de C6, junto do bíceps e do reflexo braquiorradial. Para responder C7 nesta questão, deve-se escolher a flexão.",
-   "D": "**Desce para o conjunto de C8.** Flexores dos dedos e intrínsecos aparecem associados a esse nível, com sensibilidade no anular, mínimo e face medial do antebraço. Não são o movimento de referência de C7 solicitado."
+   "A": "**Abdução do ombro** é o deltoide, músculo quase exclusivamente de C5 (Campbell, Box 45.2, p. 1748; Netter, p. 50). Seria a resposta para uma hérnia C4-C5, com hipoestesia na face lateral do braço e bicipital diminuído.",
+   "B": "**Extensão do punho** é o distrator mais perigoso, porque fica no mesmo segmento do membro. Os extensores radiais longo e curto do carpo são de C6, músculo-chave de C6 na Tabela 48.3 do Campbell; o livro lembra que os extensores longos têm inervação dupla C6 e C7, mas o marcador é C6.",
+   "D": "**Flexão dos dedos**, testada no flexor profundo do dedo médio, é o miótomo-chave de C8 na ficha da ASIA (Campbell, Tabela 48.3, p. 1875) e no Sizínio. Seria a resposta para a hérnia C7-T1, com hipoestesia no anular e no mínimo e sem reflexo alterado."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), Boxes 45.2 a 45.5, p. 1748 a 1750",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.3, p. 1875",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 50)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atendimento inicial e exame neurológico"
-     ],
-     "blocos": [
-      "atendimento-inicial-e-exame-neurologico-d66ef39d"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "41891f722eb7f2f558c97e12b81e06a78ec7a1ab467db3214c19a35a01d0df91"
-    }
-   ],
-   "questaoSha256": "4ea630d49e10f61b431f5e27846b7b547f5cc63644cbe71a87152388ed01bd58",
-   "comentarioSha256": "4b4789c5376588c2517720543411eea22e5b2da1aa4b81d9d88b32a5e00437f1"
-  }
+  "geradoEm": "2026-11-03",
+  "conferido": false
  },
  "coluna-0154": {
   "conceito": "### Linha de Swischuk (linha cervical posterior)\n- **Traçado:** no **perfil**, liga a **junção espinolaminar** (cortical anterior do arco posterior) de **C1** à de **C3**. É a linha azul da figura.\n- **Leitura:** a cortical anterior do arco posterior de **C2** deve ficar **a até ~2 mm** dessa linha. Um desvio maior sugere **lesão verdadeira**, como a fratura do enforcado na criança.\n\n### Por que existe\nNa **criança** (sobretudo até ~8 anos), é comum a ==pseudossubluxação fisiológica== de C2 sobre C3 (e de C3 sobre C4): um deslizamento anterior de alguns milímetros, por frouxidão ligamentar e facetas horizontais. A linha de Swischuk ajuda a diferenciar a pseudossubluxação da lesão real.\n\n### Outras linhas da junção craniocervical\n| Linha | Uso |\n|---|---|\n| **McGregor** | palato duro → occipital; o dente não deve passar muito acima (invaginação basilar) |\n| **McRae** | plano do **forame magno**; o dente deve ficar abaixo |\n| **Chamberlain** | palato duro → opístio |\n| **Wackenheim** | ao longo do **clivo**; deve tangenciar o dente por trás |\n| **Powers** | razão para a luxação atlanto-occipital |\n\n> **Na prova:** linha espinolaminar de C1 a C3 = ==Swischuk== (pseudossubluxação pediátrica).",
@@ -2444,17 +2425,21 @@
   "conferido": false
  },
  "coluna-0181": {
+  "conceito": "Uma mulher de 29 anos tem uma hérnia **foraminal** em **C4-C5**, com estenose do forame e **sem compressão central**. O enunciado dá duas informações e a banca usa as duas: o nível diz qual raiz está presa, e a posição diz se a medula entra ou não na história.\n\n**Primeiro passo: qual raiz.** Há sete vértebras cervicais e oito raízes. O Campbell's Operative Orthopaedics, 15ª ed., explica que de C2 a C7 cada raiz sai **acima do pedículo** da vértebra que lhe dá nome (Campbell's Operative Orthopaedics, 15ª ed., cap. 43 (Anatomy of the Spine), p. 1688 e 1689, p. 1689; Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1740). No forame C4-C5 sai, portanto, a raiz **C5**. Na cervical, ao contrário da lombar, a hérnia posterolateral e a foraminal do mesmo disco pegam a mesma raiz, a de número maior.\n\n**Segundo passo: raiz ou medula.** O Campbell (p. 1751) resume a doença discal cervical em quatro grupos e uma regra: **lesão lateral dá sintomas de raiz; lesão central dá compressão da medula**. O Sizínio Hebert, 5ª ed. (cap. 2.1), diz o mesmo em outras palavras: a hérnia posterolateral ou foraminal comprime a raiz; a posteromedial ou central, a medula. Sem compressão central, não há motivo para sinais de neurônio motor superior.\n\n**O quadro de C5.** O Campbell (Box 45.2, p. 1748) descreve fraqueza do **deltoide**, quase exclusivamente C5, e do bíceps (variável, porque é dividido com C6), **reflexo bicipital** diminuído e hipoestesia na face lateral proximal do braço. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 50), põe a sensibilidade de C5 na porção lateral do ombro.\n\n**Como a banca monta a questão.** Cada alternativa errada traz um pedaço verdadeiro de outro quadro: sinais de medula, o quadro completo de C7, ou uma mistura de C5 com C7. Só uma descreve inteira a raiz C5 sem medula.\n\nO nível e a raiz estão nas seções \"A anatomia que decide o nível: raiz, pedículo e disco\" e \"Membro superior: C5 a T1, raiz por raiz\" do resumo.",
+  "correta": "**D) fraqueza muscular do deltoide e alteração de reflexo bicipital.** A hérnia foraminal C4-C5 comprime a raiz C5, cujo quadro no Campbell é fraqueza do deltoide (e do bíceps), reflexo bicipital diminuído e hipoestesia na face lateral do braço (Box 45.2, p. 1748). Sem compressão central, o exame fica restrito à raiz.",
   "incorretas": {
-   "A": "Dificuldade de marcha e Hoffmann são sinais de que a medula está sofrendo. O enunciado diz que não há compressão central.",
-   "B": "Dedo médio e tríceps são da raiz C7, que é comprimida pelo disco C6-C7, dois andares abaixo.",
-   "C": "Metade certa: o ombro é território de C5. Mas o reflexo tricipital pertence à C7; o de C5 é o bicipital."
+   "A": "**Dificuldade de marcha e HOFFMANN positivo** são sinais de mielopatia. O Campbell lista o distúrbio de marcha entre os primeiros sintomas da compressão medular e o HOFFMANN como sinal de lesão em C5-C6 ou acima (cap. 45, p. 1748 e 1750). O enunciado afasta isso ao dizer que não há compressão central.",
+   "B": "**Parestesia no dedo médio e fraqueza do tríceps** é o quadro de C7, comprimida pela hérnia C6-C7 (Campbell, Box 45.4, p. 1749). Seria a resposta dois níveis abaixo; no forame C4-C5, a raiz é C5.",
+   "C": "**Parestesia no ombro com tricipital alterado** mistura duas raízes. O ombro lateral é território de C5 no Netter, mas o tricipital é de C7. A metade sensitiva acerta; o reflexo entrega a combinação impossível para uma única raiz."
   },
-  "conceito": "A questão dá duas informações que decidem tudo, e vale ler cada uma com calma.\n\n**\"Foraminal, sem compressão central.\"** A hérnia está no forame, a porta lateral por onde a raiz sai. Ela aperta uma raiz, e não a medula. Então o quadro é de **radiculopatia**: dor, formigamento, fraqueza e reflexo alterados no território de uma raiz. Sinais de compressão da medula, como alteração da marcha, Hoffmann positivo, reflexos exaltados, ficam de fora. Isso já elimina uma alternativa.\n\n**\"C4-C5.\"** No pescoço, cada raiz sai acima da vértebra com o seu número. A raiz que sai entre C4 e C5 é a **C5**.\n\nA C5 tem um território fácil de lembrar porque é todo do ombro. Ela dá a sensibilidade da face lateral do ombro e do braço, na região do deltoide, a força do **deltoide** (abrir o braço para o lado) e participa do bíceps. O reflexo dela é o **bicipital**.\n\nHá uma armadilha clínica aqui que vale ouro no consultório. Uma mulher jovem com dor no ombro e dificuldade de levantar o braço pode facilmente receber o diagnóstico de lesão do manguito rotador. O que separa as duas coisas é o exame neurológico: na radiculopatia de C5 a sensibilidade sobre o deltoide está alterada, o reflexo bicipital está diminuído e a dor muitas vezes vem do pescoço.",
-  "correta": "Fraqueza do deltoide e alteração do reflexo bicipital. É o retrato da raiz C5, que sai pelo forame C4-C5.",
   "referencias": [
-   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 43 (Anatomy of the Spine), p. 1688 e 1689",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1740, 1748, 1750 e 1751, Box 45.2",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 50)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0182": {
@@ -2638,19 +2623,20 @@
   "conferido": false
  },
  "coluna-0203": {
-  "conceito": "### Teste de Nachlas\n- **Manobra:** paciente em **decúbito ventral**. O examinador **flete passivamente o joelho**, levando o calcanhar em direção à nádega.\n- **O que tensiona:** o **nervo femoral** e as raízes **lombares altas** (==L2 a L4==), além do reto femoral e da região sacroilíaca e lombossacra.\n- **Interpretação:**\n  - dor na **face anterior da coxa** sugere **radiculopatia L2-L3/L3-L4**, pela tensão do femoral;\n  - dor **lombar ou glútea** pode indicar sacroilíaca ou lombossacra (a localização orienta).\n- É o equivalente, para as raízes altas, do que o **Lasègue** é para L5 e S1. Também é chamado de **teste de estiramento do femoral**, ou **Lasègue invertido** (Ely).\n\n### Na prática\nDeve ser interpretado com o restante do exame (ver o alerta):\n- força do **quadríceps** e dos **adutores**;\n- reflexo **patelar**;\n- sensibilidade da face **anteromedial da coxa**.\n\nHérnias **foraminais** ou **altas** (L2-L3, L3-L4) e as de idosos dão esse quadro.\n\n> **Na prova:** Nachlas positivo = ==raízes L2-L3== (estiramento do femoral).",
-  "correta": "**Compressão das raízes L2-L3.**",
+  "conceito": "**A imagem.** A fotografia, em preto e branco e de baixa resolução, mostra um paciente deitado de **bruços** sobre a maca. A perna está levantada com o **joelho dobrado**, a planta do pé voltada para cima, enquanto a coxa permanece apoiada na mesa. É a **flexão passiva do joelho em decúbito ventral**, a manobra que as provas chamam de **teste de NACHLAS**.\n\n**O que essa posição faz com os nervos.** O nervo femoral nasce das raízes **L2, L3 e L4** e passa **à frente** do quadril, descendo pela face anterior da coxa até o quadríceps. Com o paciente de bruços, o quadril fica em extensão; ao dobrar o joelho, o quadríceps é estirado e, com ele, o femoral e as suas raízes. É o espelho da elevação da perna estendida, que estira o ciático por trás e testa L4, L5 e S1.\n\n**O que o Campbell diz.** O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1787), lembra que as rupturas discais em níveis mais altos muitas vezes **não têm a elevação da perna positiva** e que, nesses casos, o **teste de estiramento femoral** pode ajudar: paciente em decúbito ventral, flexão aguda do joelho com a mão do examinador na fossa poplítea; **dor na face anterior da coxa** é positiva e faz suspeitar de lesão alta. Essas hérnias podem trazer queixas neurológicas difusas e, às vezes, dor na virilha ou no testículo (p. 1785).\n\n**O que separa a raiz das outras dores da região.** O teste positivo reproduz dor na coxa anterior, no trajeto do femoral. Dor lombar ou glútea na mesma manobra não tem esse significado. O Campbell inclui a **sacroilíaca** entre as causas de ciática não discal (p. 1787) e liga as **facetas** ao ramo dorsal da raiz (p. 1774), mas não usa o estiramento femoral para nenhuma delas.\n\n| Teste | Nervo | Raízes |\n|---|---|---|\n| Elevação da perna estendida | ciático | L4, L5, S1 |\n| Flexão do joelho em decúbito ventral | femoral | L2, L3, L4 |\n\nO teste está na seção \"Testes de tensão: LASÈGUE, contralateral, sentado e estiramento femoral\" do resumo.",
+  "correta": "**C) compressão das raízes L2-L3.** A flexão do joelho em decúbito ventral estira o femoral e as raízes lombares altas; dor na face anterior da coxa faz suspeitar de hérnia alta (Campbell, cap. 46, p. 1787), justamente onde a elevação da perna estendida costuma ser negativa.",
   "incorretas": {
-   "A": "**Artrose facetária.**\n- Dor à extensão e rotação; não é teste de estiramento neural.",
-   "B": "**Sacroilíaca.**\n- Pode doer na região, mas os testes específicos são Gaenslen, FABER e compressão pélvica.",
-   "D": "**Psoíte.**\n- Investigada pela dor à **extensão do quadril** (sinal do psoas)."
+   "A": "**Artrose facetária lombar** dói por meio do ramo dorsal da raiz, que inerva as facetas (Campbell, cap. 46, p. 1774), e não pelo femoral. O estiramento femoral não é teste de faceta nos livros conferidos; a dor esperada seria lombar, não na coxa anterior.",
+   "B": "**Patologia da sacroilíaca** está entre as causas de ciática não discal (Campbell, cap. 46, p. 1787), mas não se diagnostica pelo estiramento femoral. A banca a inclui porque a manobra mexe na pelve, mas o teste positivo exige dor no trajeto do femoral.",
+   "D": "**Psoíte** não é descrita nos livros conferidos. O teste da figura estira o femoral e as raízes L2 a L4, e o Campbell o usa para a hérnia lombar alta; a dor da coxa anterior no estiramento é lida como raiz, não como inflamação muscular."
   },
-  "alerta": "O teste tem baixa especificidade isoladamente; deve ser interpretado com força, sensibilidade e reflexos, e não confirma sozinho compressão radicular.",
   "referencias": [
-   "Hoppenfeld S. Physical Examination of the Spine and Extremities.",
-   "Magee DJ. Orthopedic Physical Assessment. Lumbar spine and femoral nerve tests."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1774, 1785 e 1787",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (coluna lombar)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-09-23",
+  "alerta": "O Campbell (cap. 46, p. 1787) descreve a manobra como \"femoral stretch test\", sem o epônimo NACHLAS; o significado (hérnia lombar alta) é o mesmo do gabarito oficial.",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0204": {
@@ -2702,17 +2688,21 @@
   "conferido": false
  },
  "coluna-0207": {
+  "conceito": "A questão diz o disco e pede um achado. Para resolver, é preciso primeiro converter o disco em raiz e depois lembrar o trio daquela raiz.\n\n**Do disco à raiz.** O disco recebe o nome da vértebra de cima: o disco C6-C7 fica entre os corpos de C6 e C7. Pela regra do pedículo, as raízes cervicais de C2 a C7 saem acima do pedículo de mesmo nome, e o forame entre C6 e C7 é o da raiz **C7**. O Campbell's Operative Orthopaedics, 15ª ed., dá o exemplo literal: a doença no disco C6, entre C6 e C7, acomete a raiz C7 (Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1740; Campbell's Operative Orthopaedics, 15ª ed., cap. 43 (Anatomy of the Spine), p. 1688 e 1689, p. 1689).\n\n**O quadro de C7.** O Campbell (Box 45.4, p. 1749) descreve fraqueza do **tríceps**, dos flexores do punho (sobretudo o flexor radial do carpo) e dos extensores dos dedos, e o reflexo **tricipital** diminuído. A sensibilidade cai no **dedo médio**, mas o dermátomo de C7 é estreito e tem tanta superposição que a alteração pode ser difícil de documentar. É por isso que a banca escolheu o reflexo como resposta: entre os três eixos do exame, é o mais confiável nessa raiz.\n\n**Por que o reflexo cai.** O tricipital é um arco que passa pela raiz C7. Se ela está comprimida no forame, o sinal do fuso muscular chega mal ao corno anterior e a contração reflexa fica fraca ou some. O Sizínio Hebert, 5ª ed. (cap. 2.1), lembra que, sem compressão medular, a regra na radiculopatia é o reflexo **hipoativo ou abolido**; reflexos exaltados mandariam procurar a medula.\n\n**O desenho das alternativas.** As erradas descrevem as raízes vizinhas de cima: a face lateral do braço e o bíceps são de C5 (e o bíceps também de C6); o polegar e a base dele, de C6. Todas são achados de hérnias mais altas.\n\nA raiz C7 está na seção \"Membro superior: C5 a T1, raiz por raiz\" do resumo.",
+  "correta": "**C) diminuição do reflexo tricipital.** A hérnia C6-C7 comprime a raiz C7 (Campbell, cap. 45, p. 1740), e o tricipital é o reflexo dessa raiz (Box 45.4, p. 1749). Diminui porque o arco reflexo passa pela raiz presa no forame.",
   "incorretas": {
-   "A": "A face lateral do braço é o território de C5, comprimida pelo disco C4-C5.",
-   "B": "O bíceps depende de C5 e C6. A raiz C7 trabalha do lado oposto, no tríceps.",
-   "D": "A região tenar é território do nervo mediano na mão. Alteração isolada ali sugere túnel do carpo, não uma hérnia C6-C7."
+   "A": "**Alteração de sensibilidade na face lateral do braço** é o território de C5, comprimida pela hérnia C4-C5 (Campbell, Box 45.2, p. 1748; Sizínio, Quadro 2.1.1). Fica dois níveis acima do disco da questão.",
+   "B": "**Fraqueza do bíceps** aparece nas raízes C5 e C6, porque o bíceps tem inervação dupla (Campbell, Boxes 45.2 e 45.3). Seria esperada nas hérnias C4-C5 e C5-C6; na C6-C7, o músculo enfraquecido é o tríceps.",
+   "D": "**Alteração de sensibilidade na região tenar** fica no território do polegar, que é de C6 na hérnia C5-C6 (Campbell, Box 45.3; Netter, p. 50). Diante de queixa sensitiva na mão, o Campbell também manda afastar o túnel do carpo antes de culpar a raiz (p. 1750)."
   },
-  "conceito": "O raciocínio tem dois passos. Primeiro, descobrir qual raiz o disco C6-C7 aperta. No pescoço, cada raiz sai acima da vértebra com o seu número, porque existe uma raiz C8 sem vértebra C8. A raiz que sai entre C6 e C7 é a **C7**.\n\nSegundo, lembrar o que a C7 faz. Ela comanda o **tríceps**, que estende o cotovelo, e participa dos flexores do punho e dos extensores dos dedos. Seu território de pele é o **dedo médio**. E o reflexo que depende dela é o **tricipital**, pesquisado batendo no tendão do tríceps logo acima do cotovelo. Na compressão da raiz, esse reflexo diminui.\n\nC7 e C6 são as radiculopatias cervicais mais comuns, porque os discos C5-C6 e C6-C7 são os que mais se movem e mais se desgastam.\n\nUma das alternativas merece atenção especial. Dormência na região tenar, a parte carnuda da base do polegar, é território do nervo mediano na mão. Se ela aparece isolada, sem dor no pescoço e sem outros sinais de raiz, pense primeiro em compressão do nervo no punho, a síndrome do túnel do carpo. Radiculopatia não costuma se apresentar assim.",
-  "correta": "Diminuição do reflexo tricipital. O disco C6-C7 comprime a raiz C7, responsável pelo tríceps e por esse reflexo.",
   "referencias": [
-   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 43 (Anatomy of the Spine), p. 1688 e 1689",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1740, 1748 a 1750, Boxes 45.2 a 45.4",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 50)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0208": {
@@ -2811,18 +2801,20 @@
   "conferido": false
  },
  "coluna-0219": {
+  "conceito": "A banca pede duas classificações do mesmo sinal: se o HOFFMANN é fisiológico ou patológico, e se aponta mielopatia em qualquer nível ou só a partir de uma altura. As quatro alternativas cruzam essas duas perguntas, e só uma acerta as duas.\n\n**Como se pesquisa.** O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), Tabela 45.3, p. 1750), descreve: o examinador segura o dedo médio do paciente na articulação distal e dá uma peteleca na unha; é positivo quando o **indicador e o polegar se movem**, em flexão. O Sizínio Hebert, 5ª ed. (cap. 2.1), descreve a extensão abrupta da interfalângica distal do terceiro dedo, com flexão da interfalângica distal do primeiro e do segundo; o Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 50), beliscar o dedo médio, patológico se o polegar fletir.\n\n**Por que é patológico.** O estímulo produz um pequeno estiramento dos flexores dos dedos. Na pessoa normal, o córtex inibe esse arco, e nada se vê. Quando a via descendente (o trato corticospinal) está comprimida, a inibição some e o arco responde em excesso, como acontece com a hiper-reflexia e o clônus. O Campbell coloca o trato corticospinal como o primeiro e mais proeminente a mostrar sinais na compressão medular: **clônus sustentado, hiper-reflexia e BABINSKI** (p. 1750). O Netter e o Sizínio listam o HOFFMANN como sinal de mielopatia.\n\n**Por que o nível importa.** A resposta do HOFFMANN é uma flexão dos dedos, e a flexão dos dedos é o miótomo-chave de C8 na ficha da ASIA (Campbell, cap. 48, Tabela 48.3, p. 1875): o arco fica na medula cervical baixa. Para que ele apareça exaltado, a lesão precisa estar acima desses segmentos. O Campbell diz isso de forma direta: o HOFFMANN (medula cervical alta) ou o **reflexo radial invertido** aparecem quando a doença está **em C5-C6 ou acima** (p. 1750). Uma compressão torácica ou lombar pode dar BABINSKI e clônus nas pernas, mas deixa a mão normal.\n\n> Na prova: HOFFMANN é patológico e aponta medula comprimida em C5-C6 ou acima; nunca é teste de raiz.\n\nO sinal está na seção \"Mielopatia: os sinais de liberação piramidal\" do resumo.",
+  "correta": "**D) Patológico e sua presença sugere mielopatia no nível ou acima de C5-C6.** O HOFFMANN é sinal de liberação piramidal, listado como mielopatia no Netter e no Sizínio, e o Campbell dá o nível: aparece quando a doença está em C5-C6 ou acima (cap. 45, p. 1750).",
   "incorretas": {
-   "A": "O Hoffmann não é fisiológico, e sua ausência não sugere compressão. O sinal de alerta é a presença.",
-   "B": "Inverte o significado: a presença do reflexo é que é anormal e sugere sofrimento da medula.",
-   "C": "Uma compressão no próprio nível do circuito, em C6-C7 ou abaixo, tende a não liberar o reflexo. Por isso \"em qualquer nível\" não serve."
+   "A": "**Fisiológico, com ausência sugerindo compressão** inverte a lógica do sinal. O HOFFMANN não aparece na pessoa normal; o que indica doença é a presença, não a ausência. Seria a descrição correta de um reflexo profundo, como o tricipital, que cai quando a raiz é comprimida.",
+   "B": "**Fisiológico, com presença sugerindo normalidade** troca o sentido do sinal pelo avesso. Os três livros conferidos tratam o HOFFMANN como sinal patológico de mielopatia (Campbell, Tabela 45.3; Netter, p. 50; Sizínio, cap. 2.1).",
+   "C": "**Patológico, mas em qualquer nível** acerta a primeira metade e erra a segunda. A resposta do HOFFMANN depende dos flexores dos dedos, da medula cervical baixa, e só uma lesão em C5-C6 ou acima a libera (Campbell, p. 1750); uma mielopatia torácica dá sinais nas pernas e deixa a mão normal. É o distrator mais fino da questão."
   },
-  "conceito": "Segure o dedo médio do paciente e dê um peteleco na unha, fazendo a ponta do dedo fletir e soltar de repente. Na maioria das pessoas nada acontece. Se o polegar e o indicador dobram sozinhos, como se quisessem fazer uma pinça, o **sinal de Hoffmann** é positivo.\n\nEsse movimento é um reflexo que normalmente fica abafado. A medula cervical e o cérebro mantêm um freio sobre os reflexos dos segmentos de baixo. Quando a medula é comprimida, esse freio se perde e reflexos que deveriam ficar quietos aparecem. Por isso o Hoffmann é considerado um reflexo **patológico**, um sinal de neurônio motor superior, que fala a favor de mielopatia. Uma pequena parcela de pessoas normais o tem, o que exige sempre olhar o conjunto do exame.\n\nAgora a parte fina da questão. O circuito desse reflexo passa pelos segmentos da medula que comandam os flexores dos dedos, C8 e T1, que ficam mais ou menos na altura das vértebras C6 e C7. Um reflexo só fica liberado quando a lesão está acima do seu circuito, cortando o freio que vem de cima. Se a compressão estiver no próprio nível do circuito, ela estraga o circuito em vez de liberá-lo. Por isso o Hoffmann positivo sugere mielopatia **em C5-C6 ou acima**, e não em qualquer nível.\n\nEle faz parte de uma família de sinais de mielopatia cervical que vale conhecer: reflexos exaltados, clônus, Babinski, o dedo mínimo que escapa para fora quando a mão está estendida, a dificuldade de abrir e fechar a mão rápido, a marcha de base alargada e a perda de destreza para abotoar a camisa.",
-  "correta": "Patológico, e sua presença sugere mielopatia no nível ou acima de C5-C6. O reflexo é liberado quando a compressão está acima do seu circuito, que passa por C8 e T1.",
   "referencias": [
-   "Denno JJ, Meadows GR. Early diagnosis of cervical spondylotic myelopathy: a useful clinical sign. Spine. 1991;16(12):1353-1355.",
-   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1748 e 1750, Tabela 45.3",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 50)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0220": {
@@ -2900,17 +2892,20 @@
   "conferido": false
  },
  "coluna-0225": {
+  "conceito": "A questão é de ortopedia pediátrica e parte do reflexo para chegar à doença: de quatro condições, qual pode alterar a resposta do **reflexo cutâneo abdominal**? Quem sabe o que esse reflexo testa elimina três opções sem esforço.\n\n**O que o reflexo testa.** O estímulo é na pele do abdome, e a resposta é a contração da parede abdominal. É um reflexo **superficial**, cutâneo, que passa pela medula torácica e depende do **neurônio motor superior**. O Sizínio Hebert, 5ª ed. (cap. 40), coloca os reflexos abdominais e cremastéricos entre os testes desse neurônio: a ausência sinaliza lesão medular ou acima. Portanto, uma resposta inadequada aponta para **dentro do canal vertebral**.\n\n**A doença que o livro liga a ele.** O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1528, 1540 e 1601), pede atenção especial aos reflexos abdominais no exame da escoliose, porque muitas vezes são a **única anormalidade neurológica** de um distúrbio intraespinhal (p. 1540). O exemplo principal é a **siringomielia**: uma cavidade líquida dentro da medula, com escoliose em 63% a 73% das crianças afetadas, atrofia da mão, pé cavo, cefaleia occipital e **perda dos reflexos abdominais superficiais** (p. 1601). O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 34, p. 1701), lembra que a **assimetria** dos reflexos abdominais pode sustentar o diagnóstico, junto com uma faixa de hipoestesia dermatomal no tronco e uma curva torácica alta ou à esquerda.\n\n**Por que as outras não alteram o reflexo.** Nenhuma delas está dentro da medula: uma é deformidade da parede do tórax, outra é malformação de um osso longo, a terceira é lesão de nervo periférico do membro superior. Os livros conferidos não ligam nenhuma delas ao reflexo abdominal.\n\n> Na prova: reflexo abdominal ausente ou assimétrico numa criança com escoliose é siringomielia até prova em contrário; pede ressonância.\n\nO assunto está na seção \"Tronco: dermátomos torácicos e reflexos superficiais\" do resumo.",
+  "correta": "**A) siringomielia.** A cavidade dentro da medula interrompe o arco do reflexo abdominal e a via descendente; o Campbell lista a perda desse reflexo entre os sinais da siringe (cap. 40, p. 1601), e o Tachdjian valoriza a assimetria (cap. 34, p. 1701). Muitas vezes é a única alteração neurológica da criança com escoliose.",
   "incorretas": {
-   "B": "O pectus excavatum é uma deformidade da parede anterior do tórax. Não lesa a medula nem altera o reflexo abdominal.",
-   "C": "O fêmur curto congênito causa diferença de comprimento entre as pernas e, no máximo, uma escoliose postural, sem alteração neurológica.",
-   "D": "A paralisia do plexo braquial afeta o membro superior. Os segmentos e a via do reflexo abdominal não são atingidos."
+   "B": "**Pectus excavatum** é uma deformidade da parede anterior do tórax. Não lesa a medula nem o neurônio motor superior, e os livros conferidos não o relacionam ao reflexo cutâneo abdominal.",
+   "C": "**Fêmur curto congênito** é uma malformação de osso longo do membro inferior. Não envolve o canal vertebral, e por isso não tem como alterar um reflexo que depende da medula torácica.",
+   "D": "**Paralisia do plexo braquial** é lesão de nervo periférico do membro superior. Altera a força, a sensibilidade e os reflexos do braço, mas não toca a medula torácica nem os segmentos que fazem o reflexo abdominal."
   },
-  "conceito": "É um reflexo que muita gente esquece de pesquisar e que pode mudar o diagnóstico de uma escoliose. Com o paciente deitado, risca-se de leve a pele de cada quadrante do abdome, de fora para dentro. A resposta normal é o umbigo desviar para o lado estimulado, porque a musculatura daquele quadrante se contrai. Esse é o **reflexo cutâneo abdominal**, que depende dos segmentos de T7 a T12 e de uma via que passa pela medula e pelo cérebro.\n\nQuando a medula está doente acima desses segmentos, o reflexo pode diminuir ou desaparecer, de um lado ou dos dois. E é aqui que entra o ortopedista. Uma das causas mais importantes de escoliose que parece idiopática mas não é, é a **siringomielia**: uma cavidade cheia de líquido dentro da medula, muitas vezes associada à malformação de Chiari (parte do cerebelo descendo pelo forame da base do crânio). A siringe distorce a medula e pode tanto causar a curva quanto apagar o reflexo abdominal. Assimetria desse reflexo numa criança com escoliose é sinal para pedir ressonância.\n\nEla faz parte de uma lista de sinais que tiram a escoliose da categoria idiopática: curva torácica com convexidade à esquerda, dor importante, pé cavo de um lado só, alteração no exame neurológico, progressão rápida, cifose associada e escoliose juvenil acima de 20 graus. Vale a pena porque, em crianças pequenas, tratar a siringe pode estabilizar ou até melhorar a curva.",
-  "correta": "Siringomielia. A cavidade dentro da medula pode abolir ou tornar assimétrico o reflexo abdominal, e esse achado numa escoliose aponta para a necessidade de ressonância.",
   "referencias": [
-   "Zadeh HG, Sakka SA, Powell MP, Mehta MH. Absent superficial abdominal reflexes in children with scoliosis: an early indicator of syringomyelia. J Bone Joint Surg Br. 1995;77(5):762-767."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1528, 1540 e 1601",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 34 (Disorders of the Peripheral Nervous System), p. 1701 e 1703",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0226": {
@@ -2959,17 +2954,20 @@
   "conferido": false
  },
  "coluna-0229": {
+  "conceito": "A questão é pediátrica e cobra duas palavras sobre a síndrome de GUILLAIN-BARRÉ: a **direção** em que a paralisia avança e o estado dos **reflexos**. Ambas saem de um único fato: a doença ataca os **nervos periféricos**, não a medula.\n\n**O que é a doença.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 34, p. 1701), a define como uma **polirradiculoneurite aguda**: inflamação das raízes e dos nervos, com **desmielinização** periférica. É hoje a causa mais comum de paralisia flácida aguda na criança e costuma surgir depois de uma doença gastrointestinal ou respiratória benigna. É monofásica, atinge o pior momento em semanas e é tratada com imunomodulação.\n\n**Por que os reflexos somem.** O reflexo profundo depende do arco periférico: fuso, fibra sensitiva, corno anterior, fibra motora. A desmielinização bloqueia a condução nesse arco, e o reflexo fica diminuído ou ausente. É a mesma lógica do Sizínio Hebert, 5ª ed. (cap. 40): reflexo ausente indica interrupção do arco, lesão de raiz ou de nervo periférico. A hiper-reflexia, ao contrário, é sinal de neurônio motor superior, da medula ou acima, e não cabe numa neuropatia.\n\n**Por que a paralisia sobe.** O Tachdjian descreve a paralisia como **simétrica, mais distal que proximal** e **ascendente** (p. 1701 e 1703): começa nas pernas e vai subindo. Pode chegar rapidamente à musculatura respiratória e aos nervos cranianos (o facial e o acessório são citados), e nos casos graves compromete bexiga e intestino. A criança muitas vezes chega ao ortopedista porque deixou de andar ou se queixa de dor nas pernas e nas costas.\n\n**Paralisia flácida versus espástica.** Flácida, arrefléxica e ascendente: o trio do nervo periférico. Na lesão medular, depois do choque medular, aparecem espasticidade, hiper-reflexia e BABINSKI abaixo do nível. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 36), cita o GUILLAIN-BARRÉ no diagnóstico diferencial da poliomielite, outra paralisia flácida da criança.\n\nA síndrome está na seção \"Diagnóstico diferencial: neuropatia periférica e GUILLAIN-BARRÉ\" do resumo.",
+  "correta": "**A) ascendente e arreflexia.** O Tachdjian (cap. 34, p. 1701 e 1703) descreve paralisia flácida aguda, ascendente e simétrica, com arreflexia, por desmielinização dos nervos periféricos. Os reflexos somem porque o arco reflexo periférico deixa de conduzir.",
   "incorretas": {
-   "B": "Paralisia descendente, começando pelos nervos da cabeça, é o padrão do botulismo, não do Guillain-Barré.",
-   "C": "A direção está certa, mas reflexos exaltados indicam lesão do neurônio motor superior, como na compressão da medula. No Guillain-Barré eles somem.",
-   "D": "Erra os dois pontos: a paralisia sobe, e os reflexos estão abolidos, não aumentados."
+   "B": "**Descendente e arreflexia** acerta os reflexos e erra a direção. O Tachdjian descreve a paralisia do GUILLAIN-BARRÉ como ascendente, mais distal que proximal, começando pelas pernas e podendo subir até a respiração e os nervos cranianos.",
+   "C": "**Ascendente e hiperreflexia** acerta a direção e erra os reflexos. Hiper-reflexia é sinal de neurônio motor superior (Sizínio, cap. 40), incompatível com uma doença dos nervos periféricos que interrompe o arco reflexo.",
+   "D": "**Descendente e hiperreflexia** erra as duas metades. Descreve um quadro de neurônio motor superior que progride de cima para baixo, o oposto do que o Tachdjian descreve para a polirradiculoneurite."
   },
-  "conceito": "Uma criança que andava normalmente começa a tropeçar, depois não consegue subir escada, e em poucos dias não consegue ficar em pé. Muitas vezes, uma ou duas semanas antes, ela teve uma diarreia ou uma gripe. Esse é um cenário em que o ortopedista é chamado e precisa pensar em **Guillain-Barré**.\n\nA síndrome é uma reação autoimune que aparece depois de uma infecção (a bactéria Campylobacter, da diarreia, é um gatilho clássico). Os anticorpos produzidos contra o germe atacam por engano a mielina ou os axônios dos nervos periféricos e das raízes. A fraqueza costuma começar pelos pés e pernas e **subir**, alcançando o tronco, os braços e, nos casos graves, a musculatura da respiração. Como a lesão é no nervo periférico, ou seja, no neurônio motor inferior, a paralisia é **flácida** e os reflexos **desaparecem**. Pode haver formigamento, dor nas costas e nas pernas e instabilidade da pressão e do ritmo cardíaco.\n\nO exame do líquor mostra proteína alta com células normais, a chamada dissociação albuminocitológica, e a eletroneuromiografia confirma o comprometimento dos nervos. O tratamento é imunoglobulina na veia ou plasmaférese, com vigilância da capacidade respiratória, porque alguns pacientes precisam de ventilação.\n\nPara o ortopedista, a pergunta é: a fraqueza nas pernas vem da medula ou dos nervos? Uma compressão da medula dá um nível de sensibilidade no tronco, reflexos exaltados e Babinski. O Guillain-Barré dá reflexos abolidos e não tem nível. E se a paralisia começar de cima para baixo, pelos olhos, pela face e pela deglutição, pense em botulismo, que é descendente.",
-  "correta": "Ascendente e arreflexia. A fraqueza começa nas pernas e sobe, e como o problema está nos nervos periféricos, os reflexos desaparecem.",
   "referencias": [
-   "Willison HJ, Jacobs BC, van Doorn PA. Guillain-Barré syndrome. Lancet. 2016;388(10045):717-727."
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 34 (Disorders of the Peripheral Nervous System), p. 1701 e 1703",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 36 (Paralytic Disorders)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0230": {
@@ -3032,17 +3030,21 @@
   "conferido": false
  },
  "coluna-0237": {
+  "conceito": "Aqui a banca descreve a manobra e pede o nome. A descrição é precisa: a unha do **dedo médio** é resvalada, e a resposta aparece em **outros dedos**, a flexão da falange distal do **indicador e do polegar**. Quem guarda essa assimetria entre o dedo estimulado e os dedos que respondem não erra.\n\n**A manobra nas três fontes.** O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), Tabela 45.3, p. 1750), manda segurar o dedo médio na articulação distal e dar uma peteleca na unha; positivo se o indicador e o polegar se movem. O Sizínio Hebert, 5ª ed. (cap. 2.1), descreve a extensão abrupta da interfalângica distal do terceiro dedo, com flexão da interfalângica distal do primeiro e do segundo. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 50), fala em beliscar ou fletir o dedo médio, com flexão patológica do polegar. Os detalhes do estímulo variam; o essencial é o mesmo.\n\n**O que o sinal quer dizer.** É um reflexo de liberação: a medula comprimida deixa de inibir os flexores dos dedos, e um estímulo mínimo passa a fazê-los contrair. Por isso o HOFFMANN fica na mesma família do BABINSKI, do clônus e da hiper-reflexia, os sinais do trato corticospinal que o Campbell aponta como os primeiros e mais proeminentes da compressão medular (p. 1750). E aparece quando a lesão está em C5-C6 ou acima.\n\n**Os outros nomes da lista e o que cada um faz.**\n\n| Nome | O que é | Raiz ou medula |\n|---|---|---|\n| HOFFMANN | peteleca no médio, flexão de indicador e polegar | medula cervical |\n| LHERMITTE | choque que desce pela coluna ao mover o pescoço | medula cervical |\n| SPURLING | extensão, rotação e carga axial no pescoço | raiz cervical |\n| OPPENHEIM | reflexo patológico do membro inferior | neurônio motor superior |\n\nO HOFFMANN está na seção \"Mielopatia: os sinais de liberação piramidal\" do resumo.",
+  "correta": "**A) sinal de HOFFMAN.** É exatamente a manobra da Tabela 45.3 do Campbell (p. 1750): peteleca na unha do dedo médio, com flexão do indicador e do polegar. O sinal indica liberação piramidal por mielopatia cervical em C5-C6 ou acima.",
   "incorretas": {
-   "B": "Lhermitte é a sensação de choque elétrico descendo pela coluna ao fletir o pescoço, típica da esclerose múltipla e da mielopatia.",
-   "C": "Spurling combina extensão, inclinação e rotação do pescoço com compressão, para reproduzir a dor radicular no braço.",
-   "D": "Oppenheim é pesquisado na perna, deslizando o dedo pela crista da tíbia; o hálux sobe como no Babinski."
+   "B": "**Sinal de LHERMITTE** é outro sinal de medula, mas não envolve os dedos: é o choque elétrico que desce pela coluna ao movimentar o pescoço, que o Campbell compara ao da esclerose múltipla na mielopatia cervical (cap. 45, p. 1748). É um sintoma provocado, não um reflexo da mão.",
+   "C": "**Teste de SPURLING** é de raiz, não de medula: girar a cabeça para o lado afetado, estender o pescoço e pressionar para baixo; positivo se a dor irradia no dermátomo do mesmo lado, com 95% de sensibilidade e 94% de especificidade (Campbell, Tabela 45.3, p. 1750).",
+   "D": "**Sinal de OPPENHEIM** é citado pelo Sizínio (caps. 2.1 e 40) ao lado do BABINSKI como reflexo patológico, ou seja, também de neurônio motor superior. Os livros conferidos não descrevem a sua manobra, mas o situam no membro inferior; não é a peteleca na unha do médio."
   },
-  "conceito": "O nome é Hoffmann, e a manobra é tão simples que dá para fazer em qualquer consulta, em segundos. Segura-se o dedo médio do paciente, relaxado, e dá-se um peteleco na unha, resvalando a ponta do dedo para baixo e soltando. Se o polegar e o indicador fletem sozinhos, como se fossem fazer uma pinça, o sinal é positivo.\n\nO significado é o que interessa. Normalmente o cérebro e a medula mantêm um freio sobre esse reflexo. Quando a medula cervical está comprimida, por uma hérnia central, por osteófitos ou por um ligamento ossificado, o freio se perde e o reflexo aparece. É um sinal de liberação piramidal, de neurônio motor superior, que faz pensar em **mielopatia cervical**, especialmente quando a compressão está de C5-C6 para cima. Uma pequena parte das pessoas normais o tem, então ele se interpreta junto com o resto do exame.\n\nOs outros nomes da questão também são da semiologia neurológica, mas fazem coisas diferentes. O Lhermitte é o choque elétrico que desce pela coluna quando o paciente flete o pescoço. O Spurling é a manobra que fecha o forame cervical para reproduzir a dor de uma raiz no braço. O Oppenheim é um parente do Babinski: em vez de riscar a sola do pé, desliza-se o dedo com força pela crista da tíbia, de cima para baixo, e o hálux sobe se houver lesão piramidal.",
-  "correta": "Sinal de Hoffmann. O peteleco na unha do dedo médio provoca a flexão do polegar e do indicador quando a via piramidal está liberada, como na mielopatia cervical.",
   "referencias": [
-   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1748 e 1750, Tabela 45.3",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 50)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0238": {
@@ -3487,17 +3489,21 @@
   "conferido": false
  },
  "coluna-0274": {
+  "conceito": "O glúteo médio é o músculo que segura a pelve nivelada quando apoiamos o peso numa perna só. A questão pergunta de que raiz ele depende, e a resposta mais intuitiva (S1, porque é \"glúteo\" e fica atrás) é a errada.\n\n**Qual raiz, segundo o Campbell.** O Campbell's Operative Orthopaedics, 15ª ed., lista na compressão de **L5**, pela hérnia L4-L5, a fraqueza do **extensor longo do hálux**, do **glúteo médio** e dos **extensores longo e curto dos dedos** (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), Box 46.3, p. 1786). A sensibilidade cai na face anterolateral da perna, no dorso do pé e no hálux, com zona autônoma no primeiro espaço dorsal; o reflexo, em geral, não se altera. Já na compressão de **S1** o músculo do quadril que enfraquece é o **glúteo máximo**, junto com o tríceps sural e os fibulares (Box 46.4, p. 1786 e 1787).\n\n**Por que isso aparece na marcha.** Com o glúteo médio fraco, a pelve cai para o lado da perna que está no ar quando o paciente apoia o lado doente, e o tronco se inclina para compensar. O Sizínio Hebert, 5ª ed. (cap. 2.4), descreve exatamente isso: a compressão grave de L5 produz **marcha de TRENDELENBURG**, por fraqueza abdutora; quando L4 e L5 enfraquecem os dorsiflexores, aparece a marcha em pé caído.\n\n**Os vizinhos que confundem.** Cada raiz lombossacra tem um músculo que a denuncia. **L4** enfraquece o tibial anterior, e o paciente não consegue andar nos calcanhares (Campbell, Box 46.2). **L5** enfraquece o extensor longo do hálux e o glúteo médio. **S1** enfraquece o tríceps sural e o glúteo máximo, mas o Campbell avisa que a fraqueza franca não é habitual na radiculopatia S1 e às vezes só aparece como fadiga assimétrica (p. 1787). Os dois glúteos, portanto, ficam em raízes diferentes: o médio, abdutor, em L5; o máximo, extensor, em S1.\n\n| Raiz | Músculo do quadril | Outros marcadores |\n|---|---|---|\n| L5 | glúteo médio (abdução) | extensor longo do hálux, extensores dos dedos |\n| S1 | glúteo máximo (extensão) | tríceps sural, fibulares, aquileu |\n\nO assunto está na seção \"Membro inferior: L4, L5 e S1\" do resumo.",
+  "correta": "**C) L5.** O Campbell lista o glúteo médio entre os músculos enfraquecidos na compressão de L5, com o extensor longo do hálux e os extensores dos dedos (Box 46.3, p. 1786). Na compressão grave, a fraqueza abdutora dá a marcha de TRENDELENBURG (Sizínio, cap. 2.4).",
   "incorretas": {
-   "A": "A raiz L3 atua principalmente na flexão do quadril e na extensão do joelho, e não na abdução do quadril.",
-   "B": "L4 contribui para o nervo glúteo superior, mas o músculo característico de L4 é o quadríceps (junto com o tibial anterior), com o reflexo patelar. O predomínio no glúteo médio é de L5.",
-   "D": "S1 está ligada ao tríceps sural, aos fibulares e ao glúteo máximo, o extensor do quadril, além do reflexo aquileu."
+   "A": "**L3** é a raiz da extensão do joelho (quadríceps) na ficha da ASIA (Campbell, Tabela 48.3, p. 1875) e da face anterior e medial da coxa (Netter, p. 51). Participa do patelar, mas não é a raiz do glúteo médio.",
+   "B": "**L4** é a raiz do tibial anterior, da face medial da perna e do patelar (Campbell, Box 46.2, p. 1786). O paciente não consegue andar nos calcanhares, mas mantém a pelve nivelada no apoio unipodal.",
+   "D": "**S1** é o distrator montado para quem associa glúteo a S1. A raiz S1 enfraquece o glúteo máximo, extensor do quadril, além do tríceps sural e dos fibulares (Campbell, Box 46.4); o glúteo médio, abdutor, é de L5."
   },
-  "conceito": "O glúteo médio é o músculo que segura a pelve quando a gente apoia o peso numa perna só. A cada passo, quando um pé sai do chão, o glúteo médio do lado que ficou apoiado contrai e impede que o quadril do lado oposto caia. Se ele está fraco, a pelve despenca para o lado sem apoio, e a pessoa compensa jogando o tronco para o lado fraco. Esse é o sinal de **Trendelenburg**, e a marcha que resulta é a marcha em báscula.\n\nO glúteo médio é inervado pelo **nervo glúteo superior**, que recebe fibras de L4, L5 e S1, com **predomínio de L5**. Por isso, uma radiculopatia de L5 pode dar fraqueza para abduzir o quadril e um Trendelenburg discreto, e não apenas o famoso pé caído.\n\nIsso tem uma utilidade clínica muito prática. Um paciente que chega com pé caído pode ter uma compressão da raiz L5 na coluna ou uma lesão do nervo fibular comum no joelho (por exemplo, por cruzar as pernas por muito tempo ou por um gesso apertado). Nos dois casos, a dorsiflexão do tornozelo e a extensão do hálux ficam fracas. A diferença está nos músculos que não dependem do nervo fibular: o glúteo médio (glúteo superior) e o tibial posterior, responsável pela inversão (nervo tibial). Se a abdução do quadril e a inversão do pé também estão fracas, a lesão é da **raiz L5**, porque só ela está em comum a todos esses músculos.\n\nPara lembrar os vizinhos: L3 e L4 movem o quadríceps e dão o reflexo patelar; S1 move o tríceps sural e o glúteo máximo e dá o reflexo aquileu.",
-  "correta": "L5. O glúteo médio é inervado pelo nervo glúteo superior, com predomínio da raiz L5, e sua fraqueza produz o sinal de Trendelenburg.",
   "referencias": [
-   "Hoppenfeld S. Orthopaedic Neurology: A Diagnostic Guide to Neurologic Levels. Philadelphia: Lippincott; 1977."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), Boxes 46.2 a 46.4, p. 1786 e 1787",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.3, p. 1875",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 51)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (coluna lombar)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0276": {
@@ -4585,19 +4591,24 @@
   "conferido": false
  },
  "coluna-0330": {
-  "provavel": "B",
-  "conceito": "**Reflexo cremastérico.** É um reflexo superficial (cutâneo): ao estimular levemente a pele da face medial e superior da coxa, o músculo cremaster se contrai e eleva o testículo do mesmo lado.\n\n**Arco reflexo.**\n- **Via aferente**: ramo femoral do nervo **genitofemoral** e nervo **ilioinguinal**.\n- **Via eferente**: ramo genital do nervo genitofemoral, que inerva o cremaster.\n- **Segmentos**: classicamente **T12 e L1** (alguns textos citam L1 e L2, porque o genitofemoral se origina de L1 e L2).\n\n**Utilidade clínica.**\n- **Lesão medular**: abolido em lesões que interrompem a via corticoespinal acima do segmento (é um reflexo superficial, que depende também de vias descendentes) e em lesões do próprio segmento lombar alto.\n- **Torção testicular**: a ausência do reflexo cremastérico do lado acometido é um sinal clássico (muito sensível); sua presença torna a torção menos provável.\n- Assimetria pode indicar lesão do neurônio motor superior ou radiculopatia lombar alta.\n\n**Reflexos superficiais do tronco e seus segmentos.**\n\n| Reflexo | Segmentos |\n|---|---|\n| Cutâneo abdominal superior | T7 a T9 |\n| Cutâneo abdominal inferior | T11 a T12 |\n| **Cremastérico** | **T12 a L1** (L1 a L2 em alguns textos) |\n| Bulbocavernoso | S2 a S4 |\n| Anal superficial | S2 a S4 |\n\n> Reflexo cremastérico: segmentos lombares altos, classicamente T12-L1, pelos nervos genitofemoral e ilioinguinal.",
-  "correta": "**B: T12 e L1 (resposta pela bibliografia).** O reflexo cremastérico é mediado pelos segmentos T12 e L1, por meio dos nervos genitofemoral e ilioinguinal. Alguns textos o atribuem a L1 e L2, origem do nervo genitofemoral, mas entre as alternativas a correspondência clássica é T12 e L1.",
+  "conceito": "A pergunta é curta e o fundamento é um só: em que altura da medula fecha o arco do reflexo cremastérico. Para responder, vale lembrar o que se faz no exame e o que se está testando.\n\n**A manobra.** Com o paciente deitado, o examinador risca a pele da face medial da coxa, perto da raiz; a resposta normal é a contração do cremaster, que sobe o testículo do mesmo lado. É um reflexo **cutâneo**, ou superficial, como os abdominais, e não um reflexo de percussão.\n\n**O que ele testa.** Os reflexos superficiais dependem da integridade do **neurônio motor superior**. O Sizínio Hebert, 5ª ed. (cap. 40), classifica abdominais e cremastéricos como testes desse neurônio: ausentes, sinalizam lesão acima do segmento. Na mielopatia cervical, o padrão é cruzado: reflexos miotendíneos exaltados e cutâneos abolidos (cap. 2.1). O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1781), manda pesquisar o cremastérico e os abdominais no exame da hérnia torácica, justamente porque ela tem poucos sinais localizadores.\n\n**O nível.** O estímulo cai na pele da virilha e da raiz da coxa. O Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873) e o Sizínio põem a **região inguinal** em **T12 e L1**. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 8), dá ao nervo genitofemoral, motor do cremaster, as raízes **L1 e L2**. Os dois livros convergem para a transição toracolombar, e a alternativa que o representa é T12 e L1.\n\n**As outras opções saem da mesma régua.** T10 e T11 ficam no abdome (o umbigo é T10), território do reflexo abdominal inferior; L2 e L3 e L4 e L5 descem para a coxa anterior e a perna, raízes do patelar e da dorsiflexão.\n\nO reflexo cremastérico está na seção \"Tronco: dermátomos torácicos e reflexos superficiais\" do resumo.",
+  "correta": "**B) T12 e L1.** O reflexo é disparado na pele da região inguinal e da coxa medial, que o Campbell (cap. 48, p. 1873) e o Sizínio (cap. 40) situam em T12 e L1; é o segmento toracolombar alto, vizinho das raízes L1 e L2 do genitofemoral no Netter. É a alternativa que os livros sustentam.",
   "incorretas": {
-   "A": "**T10 e T11** correspondem ao reflexo cutâneo abdominal médio e inferior, não ao cremastérico.",
-   "C": "**L2 e L3** estão mais relacionados ao reflexo adutor e à parte do reflexo patelar. Apesar de alguns textos citarem L2 para o cremastérico, a combinação L2-L3 não é a referência clássica.",
-   "D": "**L4 e L5** estão ligados ao reflexo patelar (L4) e ao isquiotibial medial (L5), sem relação com o cremastérico."
+   "A": "**T10 e T11** são segmentos da parede abdominal, à altura do umbigo (T10 no Campbell, cap. 48, p. 1873). Entram no reflexo cutâneo abdominal inferior, que se pesquisa riscando o abdome; o cremastérico começa mais abaixo, na virilha.",
+   "C": "**L2 e L3** já são raízes da coxa anteromedial e do iliopsoas e do quadríceps (Tabela 48.3 do Campbell; Sizínio, cap. 2.4). O genitofemoral recebe L2 no Netter, mas o par L2 e L3 deixa de fora o segmento inguinal que dispara o reflexo.",
+   "D": "**L4 e L5** são raízes da perna e do pé: L4 do tibial anterior e do patelar, L5 do extensor longo do hálux, sem reflexo de rotina. Estão longe do território genital e inguinal do cremastérico."
   },
   "referencias": [
-   "Rockwood C.A. et al. Fractures. Philadelphia: Lippincott. 5ª ed., vol. 2, p. 1408.",
-   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1781",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 8 (nervo genitofemoral)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "Questão sem gabarito oficial no acervo; o gabarito da bibliografia é B. O Campbell e o Sizínio situam a região inguinal em T12 e L1, e o Netter dá L1 e L2 ao nervo genitofemoral; os livros conferidos não trazem uma linha literal com as raízes do reflexo cremastérico.",
+  "provavel": "B",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0331": {
@@ -5141,20 +5152,22 @@
   }
  },
  "coluna-0358": {
-  "conceito": "Um paciente diabético com dor lombar, tríceps sural fraco, parestesia na planta do pé e reflexo aquileu diminuído. Três achados, uma raiz. O Netter's Concise organiza isso em sua tabela de exame (cap. 2, p. 51):\n\n| Raiz | Reflexo | Sensibilidade | Motor |\n|---|---|---|---|\n| L4 | patelar | face medial da perna e tornozelo | tibial anterior |\n| L5 | nenhum | dorso do pé e 1º espaço | extensor longo do hálux |\n| S1 | **aquileu** | **planta e face lateral do pé** | **gastrocnêmio** |\n\nTudo aponta para **S1**. Para quem quer testar a força na beira do leito, basta pedir para ficar na ponta do pé várias vezes em um só apoio: o lado fraco cansa logo.\n\n**E a armadilha do enunciado?** Ele conta que o paciente é diabético de propósito. A neuropatia diabética também diminui o reflexo aquileu e causa parestesia plantar, em geral nos dois lados e progressiva. O que muda o raciocínio é a **dor lombar intensa** e a **fraqueza importante do tríceps sural**, que sugerem uma compressão localizada, mais do que uma neuropatia em bota. Isso vale também para quem espera uma hérnia L5-S1, uma das mais frequentes: quando há esses sinais, examine os dois lados e peça imagem.",
-  "correta": "**E: S1.** Tríceps sural, planta do pé e reflexo aquileu são os marcadores dessa raiz (Netter's Concise, cap. 2, p. 51).",
+  "conceito": "O enunciado coloca o diabetes logo na primeira linha, como quem convida a pensar em neuropatia. Mas o exame aponta outra coisa: **tríceps sural fraco**, **parestesia plantar** e **aquileu bem diminuído**, num paciente com **dor lombar intensa**. A questão testa se o candidato reconhece o padrão de uma **raiz** mesmo quando há uma doença sistêmica ao lado.\n\n**O trio de S1.** O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), Box 46.4, p. 1786 e 1787), descreve na compressão de S1, pela hérnia L5-S1: dor e dormência no maléolo lateral, na face lateral e **plantar** do pé e no calcanhar; fraqueza do **gastrocnêmio-sóleo**, dos fibulares e do glúteo máximo; e **aquileu reduzido ou ausente**. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 51), põe S1 na planta e na região lateral do pé, no gastrocnêmio e no reflexo do tornozelo; a ficha da ASIA usa a flexão plantar como miótomo-chave de S1 (Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.3, p. 1875). O caso tem as três peças.\n\n**Por que não é a neuropatia diabética.** A polineuropatia é **distal e simétrica**: o Sizínio Hebert, 5ª ed. (cap. 2.4), diz que parestesia em \"bota\" ou \"meia\" sugere neuropatia periférica. Ela não escolhe um miótomo nem um reflexo de um lado só, e não vem com dor lombar intensa. O Campbell lista a neuropatia periférica entre os imitadores da hérnia (p. 1787) e lembra que a **eletroneuromiografia** separa os dois quando a dúvida persiste (p. 1778). Aqui, o déficit concentrado num miótomo com o reflexo correspondente é padrão de raiz.\n\n**Um detalhe do Campbell.** Fraqueza franca não é o achado habitual da radiculopatia S1, que às vezes só aparece como fadiga assimétrica ao exercitar a panturrilha (p. 1787). Uma diminuição \"significativa\" da força, como no enunciado, fala de compressão importante.\n\nO trio de S1 está na seção \"Membro inferior: L4, L5 e S1\" do resumo, e a neuropatia, em \"Diagnóstico diferencial: neuropatia periférica e GUILLAIN-BARRÉ\".",
+  "correta": "**E) S1.** Tríceps sural fraco, parestesia plantar e aquileu diminuído formam o trio da compressão de S1 no Campbell (Box 46.4, p. 1786 e 1787) e no Netter (p. 51). O diabetes não muda a leitura, porque a polineuropatia seria distal, simétrica e em bota.",
   "incorretas": {
-   "A": "**Alta demais.** L3 corresponde à região anterior e medial da coxa (Netter's Concise, cap. 2, p. 51).",
-   "B": "**Ainda mais alta.** L2 não explicaria o reflexo nem o tríceps sural.",
-   "C": "**O reflexo é outro.** L4 é a raiz do reflexo patelar e da face medial da perna (Netter's Concise, cap. 2, p. 51).",
-   "D": "**A confusão comum.** L5 afeta o dorso do pé e o extensor do hálux, e não tem reflexo próprio (Netter's Concise, cap. 2, p. 51). O reflexo aquileu diminuído separa as duas."
+   "A": "**L3** inerva o quadríceps e a face anterior e medial da coxa (Campbell, Tabela 48.3; Netter, p. 51). O sintoma ficaria na coxa, e o reflexo alterado seria o patelar, nunca o aquileu.",
+   "B": "**L2** é a raiz da flexão do quadril (iliopsoas) e da coxa anteromedial (Sizínio, cap. 2.4). As raízes altas não chegam ao pé, e a sua compressão costuma ter elevação da perna negativa (Campbell, p. 1787).",
+   "C": "**L4** dá hipoestesia na face medial da perna e no maléolo medial, fraqueza do tibial anterior e patelar diminuído (Campbell, Box 46.2, p. 1786). O paciente não andaria nos calcanhares; o caso descreve o contrário, a flexão plantar fraca.",
+   "D": "**L5** é a raiz do dorso do pé e do hálux e do extensor longo do hálux, e em geral não altera reflexo (Campbell, Box 46.3). O aquileu diminuído e a fraqueza do tríceps sural afastam L5."
   },
   "referencias": [
-   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 2, p. 51",
-   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
-   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Hérnia discal lombar."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1778, 1786 e 1787, Boxes 46.2 a 46.4",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.3, p. 1875",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 51)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (coluna lombar)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-11-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0359": {
@@ -5422,20 +5435,20 @@
   "conferido": false
  },
  "coluna-0372": {
-  "conceito": "No caso do capotamento, o paciente chega hipotenso e bradicárdico, e a equipe precisa saber se ele está em choque medular antes de classificar a lesão. Qual reflexo responde a essa pergunta?\n\n**O reflexo certo.** O Rockwood and Green's Fractures in Adults, 10ª ed., cap. 47 (Principles of Spine Trauma Care) (p. 1888) diz que o bulbocavernoso é o reflexo usado justamente por ter o **arco mais caudal** da medula: avalia S2 a S4, no cone. O Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine) (p. 1873) indica a volta do **bulbocavernoso** e do **reflexo anal** como sinal do fim do choque, e a ausência dos dois como marca do choque em curso (p. 1875).\n\n**Como se faz.** Aperta-se a glande ou o clitóris, ou puxa-se levemente a sonda vesical, e palpa-se a contração do esfíncter anal com o dedo no reto. No paciente intubado e sem colaboração, o capítulo 48 do Rockwood and Green (p. 1907) limita o exame a movimento espontâneo, retirada à dor, tônus retal e bulbocavernoso.\n\n**Por que não os outros.** O cremastérico e o cutâneo plantar voltam em momentos diferentes, segundo a ordem de KO (plantar profundo, bulbocavernoso, cremastérico, aquileu, BABINSKI, patelar), e não foram adotados como marcador. O cutâneo abdominal depende de segmentos torácicos e diz pouco sobre a medula caudal.\n\nO reflexo está na subseção \"O bulbocavernoso\" do resumo.",
-  "correta": "**C) Bulbo cavernoso.** É o reflexo de arco mais caudal, testado para saber se o choque medular ainda está presente.",
+  "conceito": "O politraumatizado do caso chega intubado, 90 minutos depois de um capotamento, com **pressão de 90 por 60 e frequência cardíaca de 54**. Hipotensão com bradicardia num trauma raquimedular já sugere uma lesão alta da medula. A pergunta, porém, é outra: qual reflexo testar para saber se o paciente está em **choque medular**. A banca coloca lado a lado dois \"choques\" que o aluno costuma confundir.\n\n**Choque neurogênico e choque medular.** O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1875), separa os dois. O **neurogênico** é hemodinâmico: a lesão alta corta o tônus simpático e produz **bradicardia, hipotensão e hipotermia**, exatamente os sinais vitais do enunciado. O **medular** é neurológico: uma perda temporária da função e dos reflexos abaixo da lesão, com **paralisia flácida** e **ausência do reflexo anal e do bulbocavernoso**. Costuma passar em **24 a 48 horas**, mas pode durar semanas.\n\n**Por que o bulbocavernoso.** É um reflexo sacral, de arco curto, feito pela medula mais baixa (S2 a S4 no Sizínio; S2 e S3 no Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2, p. 51). No choque medular, toda a medula abaixo da lesão fica silenciosa, inclusive esse arco. Quando o choque termina, ele é dos primeiros a voltar. O Sizínio Hebert, 5ª ed. (cap. 40), descreve a manobra: estímulo do **pênis ou do clitóris**, que provoca a **contração do esfíncter anal**. O retorno indica o fim do choque e permite determinar o déficit. Por isso o Campbell manda esperar a saída do choque, sinalizada pelo **retorno do bulbocavernoso e da contração anal**, antes de classificar a lesão pela ASIA (p. 1873).\n\n**Uma exceção importante.** Se a lesão atinge o próprio cone medular ou a cauda equina, o arco sacral é destruído, e o bulbocavernoso pode **nunca** voltar (Campbell, p. 1875 e 1880; Sizínio, cap. 40). Nesses casos, a ausência persistente não significa choque prolongado.\n\n| | Choque neurogênico | Choque medular |\n|---|---|---|\n| Natureza | hemodinâmica | neurológica |\n| Sinais | hipotensão, bradicardia | paralisia flácida, arreflexia |\n| Marcador | sinais vitais | bulbocavernoso e reflexo anal |\n\nO assunto está na seção \"Cauda equina, cone medular e choque medular\" do resumo.",
+  "correta": "**C) Bulbo cavernoso.** O choque medular se manifesta pela ausência do bulbocavernoso e do reflexo anal, e o retorno deles marca o fim do choque, a partir do qual se classifica a lesão (Campbell, cap. 48, p. 1873 e 1875; Sizínio, cap. 40).",
   "incorretas": {
-   "A": "**Cremastérico** é um reflexo cutâneo que volta depois do bulbocavernoso na sequência de KO e não é o teste padrão do choque medular.",
-   "B": "**Cutâneo abdominal** tem arco torácico, acima da medula sacral que o teste precisa avaliar.",
-   "D": "**Cutâneo plantar** reaparece cedo na sequência de KO, mas o marcador consagrado pelos dois livros é o bulbocavernoso."
+   "A": "**Cremastérico** é um reflexo superficial, da região inguinal (T12 e L1), que testa o neurônio motor superior (Sizínio, cap. 40). Fica abolido numa lesão medular, mas o seu retorno não é o marcador usado para dizer que o choque medular acabou.",
+   "B": "**Cutâneo abdominal** é um reflexo superficial, dependente do neurônio motor superior; o seu papel mais cobrado é na escoliose, como único sinal de siringomielia (Campbell, cap. 40, p. 1540). Não é o critério de saída do choque medular.",
+   "D": "**Cutâneo plantar** é o reflexo cuja resposta em extensão do hálux é o BABINSKI, sinal de neurônio motor superior (Netter, p. 51). Aparece depois que a medula sai do choque e se torna espástica; não é ele que o Campbell usa para marcar o fim do choque."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 47 (Principles of Spine Trauma Care), p. 1888",
-   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), p. 1907",
-   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873 e 1875",
-   "Resumo OrtoQuestões: Lesão medular e síndromes medulares"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873, 1875 e 1880",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 51)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-11-01",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0373": {
@@ -5581,63 +5594,73 @@
   "conferido": false
  },
  "coluna-0382": {
-  "conceito": "**Raiz descendente e raiz de saída.** Na coluna lombar, cada raiz sai pelo forame abaixo do pedículo da vértebra de mesmo número. Em cada nível discal, existem duas raízes relevantes:\n- **Raiz de saída (emergente ou exiting)**: a que sai pelo forame naquele nível, acima do disco, junto ao pedículo superior. No nível L5-S1, é a raiz **L5**.\n- **Raiz descendente (transitória ou traversing)**: a que passa sobre o disco, no recesso lateral, para sair no forame de baixo. No nível L5-S1, é a raiz **S1**.\n\n| Localização da hérnia | Raiz acometida | No nível L5-S1 |\n|---|---|---|\n| Central ou paramediana (posterolateral) | **Descendente** | S1 |\n| Foraminal ou extraforaminal | De saída (emergente) | L5 |\n| Central volumosa | Várias raízes (risco de cauda equina) | S1, S2 e abaixo |\n\n**Por que a paramediana é a mais comum.** O ligamento longitudinal posterior é mais forte na linha média e mais fino lateralmente, e a hérnia tende a sair na região posterolateral, justamente onde passa a raiz descendente.\n\n**Raiz motora.** As raízes espinais têm componentes motor (ventral) e sensitivo (dorsal); a compressão por hérnia costuma afetar ambos, e o termo \"raiz motora\" não descreve a relação anatômica com o disco.\n\n> Hérnia paramediana comprime a raiz descendente; hérnia foraminal comprime a raiz de saída.",
-  "correta": "**D: Descendente.** No caso anterior, a hérnia paramediana em L5-S1 comprime a raiz S1, que desce pelo recesso lateral, passando sobre o disco L5-S1, para sair no forame S1. Essa é a raiz descendente (transitória). A raiz de saída nesse nível é L5, comprimida apenas por hérnias foraminais ou extraforaminais. (O texto \"Área livre\" na alternativa é resquício da diagramação.)",
+  "conceito": "O caso da SES-DF descreve um pedreiro de 39 anos com ciática à esquerda, piorada por carregar peso, com LASÈGUE sentado positivo e **paresia da flexão plantar e da extensão do quadril**. Esses dois músculos, tríceps sural e glúteo máximo, são de **S1**, e a hérnia que a comprime é a **L5-S1 paramediana**. A pergunta agora é como se chama essa raiz em relação ao disco.\n\n**A geometria das raízes lombares.** Na coluna lombar, cada raiz sai **abaixo do pedículo** de mesmo nome (Campbell's Operative Orthopaedics, 15ª ed., Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1773; Campbell's Operative Orthopaedics, 15ª ed., cap. 43 (Anatomy of the Spine), p. 1688 e 1689, p. 1689). A raiz S1 nasce no saco dural acima do disco L5-S1, **passa por ele** ainda dentro do canal e só sai pelo forame de baixo, sob o pedículo de S1. A raiz L5, ao contrário, já está saindo pelo forame do nível L5-S1. Cada disco lombar tem, portanto, duas raízes por perto: a que **passa** e a que **sai**.\n\n**Qual delas a hérnia pega.** O Campbell (p. 1774) diz que a hérnia posterolateral, ou a patologia do recesso lateral, acomete a **próxima raiz que sai abaixo daquele disco**: em L5-S1, é a S1. O Sizínio Hebert, 5ª ed. (cap. 2.4), dá os nomes: a hérnia de recesso lateral comprime a **raiz transeunte**, a que vai sair no forame do nível caudal; a intraforaminal comprime a raiz correspondente ao nível do disco, a que está saindo. O Campbell usa \"traversing nerve root\" na técnica da microdiscectomia.\n\n**Os sinônimos.** A raiz que passa é chamada de **transeunte**, **descendente** ou, no inglês, \"traversing\". A que sai é a raiz **de saída**, **emergente** ou \"exiting\".\n\n| Hérnia em L5-S1 | Raiz comprimida | Nome |\n|---|---|---|\n| Paramediana (recesso lateral) | S1 | transeunte, descendente |\n| Foraminal | L5 | de saída, emergente |\n\nO conceito está na seção \"A anatomia que decide o nível: raiz, pedículo e disco\" do resumo.",
+  "correta": "**D) Descendente.** A hérnia paramediana L5-S1 comprime S1, a raiz que cruza o disco dentro do canal e desce para sair no forame de baixo: é a raiz transeunte ou descendente (Campbell, cap. 46, p. 1774; Sizínio, cap. 2.4).",
   "incorretas": {
-   "A": "**Raiz motora não é um termo usado para descrever a relação da raiz com o disco.** As raízes têm componentes motor e sensitivo, e o paciente apresenta sintomas sensitivos (parestesia) e motores.",
-   "B": "**Raiz de saída é a que sai pelo forame naquele nível (L5 no nível L5-S1).** Ela é comprimida por hérnias foraminais ou extraforaminais, não pela hérnia paramediana do caso.",
-   "C": "**Raiz emergente é sinônimo de raiz de saída.** Pelo mesmo motivo da alternativa B, não corresponde à raiz comprimida pela hérnia paramediana."
+   "A": "**Motora** não é uma classificação da raiz em relação ao disco. Dentro do saco dural, as fibras motoras ficam ventrais às sensitivas (Campbell, cap. 46, p. 1773), mas a raiz comprimida leva as duas, e o caso tem tanto fraqueza quanto parestesia.",
+   "B": "**De saída** é a raiz que sai pelo forame daquele nível, em L5-S1 a raiz L5. Ela é comprimida pela hérnia foraminal (Sizínio, cap. 2.4), e daria dor no dorso do pé e fraqueza do extensor do hálux, não da flexão plantar.",
+   "C": "**Emergente** é sinônimo de raiz de saída, a L5 no forame L5-S1. A banca pôs as duas palavras para pegar quem não lembra que posterolateral comprime a raiz de baixo, e foraminal, a de cima."
   },
   "referencias": [
-   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Hérnia discal lombar.",
-   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 43 (Anatomy of the Spine), p. 1688 e 1689",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1773 e 1774",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (coluna lombar)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0383": {
-  "conceito": "**Reflexos profundos dos membros inferiores e suas raízes.** O reflexo tendinoso testa um arco que envolve a raiz sensitiva, a medula e a raiz motora do mesmo segmento. Uma compressão radicular reduz ou abole o reflexo correspondente.\n\n| Reflexo | Raiz principal | Músculo |\n|---|---|---|\n| Patelar | **L4** (L2 a L4) | Quadríceps |\n| Adutor | L2 a L4 (nervo obturatório) | Adutores da coxa |\n| Isquiotibial medial | L5 (pouco confiável) | Semitendíneo e semimembranáceo |\n| **Aquileu** | **S1** | Tríceps sural |\n\n**Reflexos superficiais.** O cremastérico (L1-L2) e o cutâneo abdominal (T7 a T12) são reflexos cutâneos, não tendinosos, e não avaliam as raízes lombares baixas.\n\n**No caso.** A radiculopatia S1 esquerda (flexão plantar e extensão do quadril fracas, hérnia paramediana em L5-S1) costuma reduzir ou abolir o **reflexo aquileu** do lado afetado. É o sinal mais objetivo da compressão de S1, porque independe da colaboração do paciente.\n\n**Como pesquisar bem.** Paciente ajoelhado na cadeira com os pés pendentes, ou deitado com o quadril em rotação externa e o joelho fletido, com leve dorsiflexão passiva do pé antes de percutir o tendão. Comparar sempre com o lado oposto.\n\n> Radiculopatia S1: reflexo aquileu diminuído ou abolido.",
-  "correta": "**A: Aquileu.** O reflexo aquileu depende da raiz S1, a mesma comprimida pela hérnia paramediana em L5-S1 do paciente. Sua diminuição ou abolição do lado esquerdo seria esperada e confirmaria objetivamente a radiculopatia S1.",
+  "conceito": "Neste item do mesmo caso, a banca já sabe a raiz (S1, pela fraqueza da flexão plantar e da extensão do quadril) e pergunta qual reflexo pode estar comprometido. É o trio do exame aplicado ao pé: força, sensibilidade e reflexo da mesma raiz.\n\n**O reflexo de S1.** Ao percutir o tendão calcâneo, o examinador estira o tríceps sural; o fuso muscular manda o sinal pela raiz S1 e a resposta volta pela mesma raiz, em flexão plantar. Se a raiz está comprimida pela hérnia L5-S1, o arco conduz mal e o reflexo cai. O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), Box 46.4, p. 1786 e 1787), descreve na compressão de S1 o **aquileu reduzido ou ausente**, ao lado da fraqueza do gastrocnêmio-sóleo, dos fibulares e do glúteo máximo. O Sizínio Hebert, 5ª ed. (cap. 40), e o Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 51), dão o aquileu a S1.\n\n**A regra geral que isso ilustra.** Reflexo diminuído ou ausente indica interrupção do arco, lesão de raiz ou nervo periférico; reflexo exaltado, lesão do neurônio motor superior (Sizínio, cap. 40). A hérnia lombar é sempre lesão de neurônio motor inferior, porque abaixo do cone medular só há raízes.\n\n**Os reflexos do membro inferior.**\n\n| Reflexo | Raiz | Tipo |\n|---|---|---|\n| Patelar | L4 (L2 a L4 no Campbell) | profundo |\n| Tibial posterior | L5, difícil de obter | profundo |\n| Aquileu | S1 | profundo |\n| Cremastérico | região inguinal, T12 e L1 | superficial |\n\n**O que esperar no caso.** O reflexo aquileu do lado esquerdo diminuído, comparado com o direito. O Campbell (p. 1787) lembra que os sinais variam com o tempo, piores depois de caminhar, e que o exame deve ser sempre bilateral e comparativo.\n\nOs reflexos estão na seção \"Dermátomos, miótomos e reflexos: a lógica do exame\" do resumo.",
+  "correta": "**A) Aquileu.** O aquileu é o reflexo de S1, reduzido ou ausente na sua compressão pela hérnia L5-S1 (Campbell, Box 46.4, p. 1786 e 1787; Sizínio, cap. 40; Netter, p. 51). Faz trio com a fraqueza da flexão plantar e a dor na planta e na borda lateral do pé.",
   "incorretas": {
-   "B": "**O reflexo patelar depende principalmente de L4** (com contribuição de L2 e L3). Estaria alterado em hérnias L3-L4 (posterolateral) ou L4-L5 foraminal, não na compressão de S1.",
-   "C": "**O reflexo adutor depende de L2 a L4**, pelo nervo obturatório. Não é afetado pela compressão de S1.",
-   "D": "**O reflexo cremastérico é um reflexo cutâneo de L1-L2.** Não testa as raízes sacrais e não se altera na radiculopatia S1."
+   "B": "**Patelar** é o reflexo de L4, com participação de L2 e L3 (Campbell, Box 46.2, p. 1786). Diminui na hérnia L3-L4, que dá fraqueza do tibial anterior e hipoestesia na face medial da perna.",
+   "C": "**Adutor** não está entre os reflexos de rotina dos livros conferidos. Os adutores são inervados por L2, L3 e L4 (Campbell, Box 46.2), raízes altas; um reflexo dependente deles nunca marcaria a compressão de S1.",
+   "D": "**Cremastérico** é um reflexo superficial, do segmento inguinal (T12 e L1), que depende do neurônio motor superior (Sizínio, cap. 40). Não testa a raiz S1 e não se altera numa hérnia L5-S1."
   },
   "referencias": [
-   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
-   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Hérnia discal lombar."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), Boxes 46.2 e 46.4, p. 1786 e 1787",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1873",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 51)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0384": {
-  "conceito": "**Dermátomos do membro inferior.** A distribuição da dor e da parestesia ajuda a localizar a raiz comprimida.\n\n| Raiz | Trajeto do dermátomo |\n|---|---|\n| L3 | Face anterior da coxa até a face medial do joelho |\n| L4 | Face lateral da coxa, cruza o joelho e desce pela **face medial da perna** até o maléolo medial |\n| L5 | Face lateral da coxa e da perna até o **dorso do pé e o hálux** |\n| S1 | Face **posterolateral** da coxa e da perna até a **borda lateral do pé**, a planta e o quinto dedo |\n| S2 | Face posteromedial da coxa e da perna |\n\n**Pontos-chave para memorizar.**\n- L4: maléolo medial.\n- L5: dorso do pé e hálux (o espaço entre o primeiro e o segundo dedos é o ponto mais específico).\n- S1: borda lateral do pé e planta; o paciente diz que a dor vai \"atrás da perna\" até o calcanhar e o dedo mínimo.\n\n**No caso.** O paciente tem radiculopatia S1 esquerda. A dor e a parestesia seguem a face posterolateral da coxa e da perna até a região lateral do pé.\n\n> S1: face posterolateral da coxa e da perna, borda lateral do pé.",
-  "correta": "**C: Desce pela face posterolateral da coxa e da perna e vai até a região lateral do pé.** É o trajeto do dermátomo S1, a raiz comprimida no caso. A parestesia nos dedos do pé relatada pelo paciente costuma envolver a borda lateral, o quinto dedo e a planta.",
+  "conceito": "Das quatro trilhas que a banca desenha na perna, só uma é o dermátomo de S1. Este item do caso pede para reconhecer a faixa de pele da raiz comprimida, e a melhor forma de não errar é ver as raízes lombossacras lado a lado, como faixas que descem em espiral pela perna.\n\n**Como as faixas se arrumam.** As raízes lombares altas ficam na coxa (L2 e L3 na face anterior e medial). **L4** cruza o joelho e desce pela **face medial da perna** até o maléolo medial. **L5** passa pela face lateral da coxa e **anterolateral da perna** e termina no **dorso do pé e no hálux**. **S1** desce por trás, pela **face posterior da coxa e da panturrilha**, e chega à **borda lateral e à planta do pé**. O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), Boxes 46.2 a 46.4, p. 1786 e 1787), dá as zonas autônomas que confirmam cada uma: maléolo medial para L4, primeiro espaço dorsal para L5 e dorso do quinto dedo para S1.\n\n**A ciática de S1.** O Sizínio Hebert, 5ª ed. (cap. 2.4), descreve o trajeto: da região glútea pela **face posterior da coxa, panturrilha e parte lateral da planta do pé**. O Campbell inclui ainda o maléolo lateral e o calcanhar; o Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 51), a planta e a região lateral do pé.\n\n**Por que é S1 neste paciente.** Fraqueza da flexão plantar e da extensão do quadril (tríceps sural e glúteo máximo) é S1, e a parestesia nos dedos do pé é compatível com a borda lateral do pé. Uma hérnia L5-S1 paramediana comprime S1, e é o território dela que a banca quer.\n\n| Raiz | Trajeto na perna | Termina em |\n|---|---|---|\n| L4 | face medial da perna | maléolo medial |\n| L5 | face lateral da coxa e anterolateral da perna | dorso do pé e hálux |\n| S1 | face posterior da coxa e da panturrilha | borda lateral e planta do pé |\n\nOs dermátomos estão na seção \"Membro inferior: L4, L5 e S1\" do resumo.",
+  "correta": "**C) Desce pela face posterolateral da coxa e da perna e vai até a região lateral do pé.** É o dermátomo de S1: face posterior da coxa e da panturrilha até a borda lateral e a planta do pé (Sizínio, cap. 2.4; Campbell, Box 46.4; Netter, p. 51), coerente com a fraqueza do tríceps sural e do glúteo máximo do caso.",
   "incorretas": {
-   "A": "**Face lateral da coxa, cruzando o joelho e descendo pela face medial da perna é o trajeto de L4.** A dor de L4 costuma chegar ao maléolo medial e acompanha fraqueza do tibial anterior e reflexo patelar diminuído.",
-   "B": "**Face lateral da coxa e da perna até o dorso do pé e o hálux corresponde a L5.** Esse dermátomo seria esperado em hérnias L4-L5 paramedianas ou L5-S1 foraminais, com fraqueza da extensão do hálux.",
-   "D": "**Face posteromedial da coxa e da perna até a região medial do pé** não corresponde ao padrão de S1. A face posteromedial da coxa é território de S2, e a região medial do pé é território de L4 e L5."
+   "A": "**Face lateral da coxa, cruzando o joelho para a face medial da perna** termina no território de L4, cuja zona autônoma é o maléolo medial (Campbell, Box 46.2, p. 1786). Seria o dermátomo de uma hérnia L3-L4, com patelar diminuído.",
+   "B": "**Face lateral da coxa até o dorso do pé e o hálux** é o dermátomo de L5 (Campbell, Box 46.3; Sizínio, cap. 2.4). É o distrator mais próximo, porque L5 também é raiz do pé; mas o dorso e o hálux são de L5, e a borda lateral e a planta, de S1.",
+   "D": "**Face posteromedial até a região medial do pé** não corresponde a nenhuma das faixas descritas nos livros conferidos. O lado medial do pé e o maléolo medial pertencem a L4, que desce pela face medial da perna, e não por trás."
   },
   "referencias": [
-   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
-   "American Spinal Injury Association. International Standards for Neurological Classification of Spinal Cord Injury. Revisão de 2019."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), Boxes 46.2 a 46.4, p. 1786 e 1787",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 51)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (coluna lombar)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0385": {
-  "conceito": "**Testes de tensão e de compressão radicular.** Cada teste estira ou comprime determinadas raízes, e saber quais permite localizar a lesão.\n\n**Testes para raízes lombares baixas (L5 e S1, nervo ciático).**\n- **Lasègue (elevação da perna estendida)**: dor ciática entre cerca de 30 e 70 graus.\n- **Bragard**: no ponto em que o Lasègue provoca dor, baixa-se um pouco a perna até a dor ceder e faz-se a dorsiflexão passiva do pé; o retorno da dor confirma a origem neural.\n- **Lasègue sentado (flip test)**: o paciente sentado inclina o tronco para trás ao estender o joelho.\n- **Lasègue contralateral (cruzado)**: elevar a perna sadia provoca dor no lado afetado; é muito específico para hérnia, geralmente volumosa ou axilar.\n\n**Testes para raízes lombares altas (L2 a L4, nervo femoral).**\n- **Nachlas**: decúbito ventral, flexão máxima do joelho até o calcanhar tocar a nádega; dor lombar alta, na nádega ou na face anterior da coxa.\n- **Estiramento do nervo femoral (Wassermann)**: decúbito ventral, extensão do quadril com o joelho fletido.\n\n**Testes de aumento da pressão.**\n- **Valsalva**: o aumento da pressão intratecal (tosse, espirro, esforço) piora a dor radicular em qualquer nível; é inespecífico quanto à raiz.\n\n| Teste | Raízes avaliadas |\n|---|---|\n| Lasègue, Bragard, Lasègue cruzado | L5, S1 |\n| Nachlas, estiramento femoral | L2 a L4 |\n| Valsalva | Qualquer nível |\n\n> O teste de Nachlas avalia raízes lombares altas; numa radiculopatia S1 isolada, espera-se que seja negativo.",
-  "correta": "**B: Nachlas.** O teste de Nachlas estira o nervo femoral e as raízes lombares altas (L2 a L4). Como o paciente tem compressão isolada da raiz S1, não se espera que esse teste seja positivo. Os outros testes citados podem ser positivos em hérnias L5-S1.",
+  "conceito": "O último item do caso inverte a pergunta: em vez de pedir o teste que confirma a hérnia, pede o que **não deve** estar positivo, porque a compressão não é alta. Para responder, é preciso saber qual nervo cada teste estira.\n\n**Dois nervos, dois testes.** As raízes L4, L5 e S1 formam o **ciático**, que passa atrás do quadril e do joelho; elevar a perna estendida o estira. As raízes altas, **L2, L3 e L4**, formam o **femoral**, que passa à frente do quadril; ele é estirado pelo movimento oposto, **extensão do quadril com flexão do joelho**. O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1787), explica que as hérnias altas muitas vezes não têm a elevação da perna positiva e que, nelas, ajuda o **teste de estiramento femoral**: paciente em decúbito ventral, flexão aguda do joelho com a mão na fossa poplítea; dor na face anterior da coxa faz suspeitar de lesão alta. As provas chamam essa manobra de **NACHLAS**.\n\n**Os testes do ciático, todos esperados no caso.** O **LASÈGUE** deve dar dor abaixo do joelho; elevar a perna sã e provocar dor na perna doente, o **LASÈGUE contralateral**, é considerado patognomônico de hérnia de disco (Campbell, p. 1786), provavelmente na axila da raiz (Sizínio Hebert, 5ª ed., cap. 2.4). O **BRAGARD** acrescenta a dorsiflexão do pé no ângulo de dor, uma manobra que o Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 52), descreve sem dar o nome. E o **VALSALVA**, prender a respiração e fazer força, reproduz a piora da dor discal com esforço, tosse e espirro (Campbell, p. 1785).\n\n| Teste | Nervo estirado | Esperado numa hérnia L5-S1 |\n|---|---|---|\n| LASÈGUE contralateral | ciático | pode ser positivo |\n| BRAGARD | ciático | positivo |\n| VALSALVA | pressão no canal | positivo |\n| NACHLAS | femoral | negativo |\n\nOs testes de tensão estão na seção \"Testes de tensão: LASÈGUE, contralateral, sentado e estiramento femoral\" do resumo.",
+  "correta": "**B) Nachlas.** A flexão do joelho em decúbito ventral estira o femoral e as raízes L2 a L4; dor na face anterior da coxa aponta hérnia alta (Campbell, cap. 46, p. 1787). Numa compressão de S1, esse teste não tem por que ser positivo.",
   "incorretas": {
-   "A": "**O teste de Bragard é uma sensibilização do Lasègue** pela dorsiflexão do pé, que traciona o nervo ciático e as raízes L5 e S1. Pode estar positivo neste caso.",
-   "C": "**A manobra de Valsalva aumenta a pressão no canal vertebral** e pode exacerbar a dor radicular em qualquer nível, inclusive na compressão de S1. Por isso pode estar positiva.",
-   "D": "**O Lasègue contralateral** é muito específico para hérnia discal lombar baixa, especialmente volumosa ou na axila da raiz. Pode estar positivo em uma hérnia L5-S1 como a do paciente."
+   "A": "**Bragard** é a dorsiflexão do pé no ângulo em que a elevação da perna começa a doer; sensibiliza a tensão do ciático, como descreve o Netter (p. 52). Pela raiz S1 fazer parte do ciático, é esperado positivo no caso.",
+   "C": "**Valsalva** aumenta a pressão dentro do canal e reproduz a dor da hérnia, que piora com tosse, espirro e esforço (Campbell, cap. 46, p. 1785). Não depende do nível da hérnia, e pode estar positivo numa L5-S1.",
+   "D": "**Lasègue contralateral** é o sinal mais específico de hérnia: a dor na perna doente ao elevar a sã é patognomônica no Campbell (p. 1786). Testa o ciático e se espera positivo numa hérnia que comprime S1, sobretudo axilar."
   },
   "referencias": [
-   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
-   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Exame físico da coluna lombar."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1785 a 1787",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 52)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (coluna lombar)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-05",
+  "alerta": "O Campbell (cap. 46, p. 1787) descreve a manobra como \"femoral stretch test\", sem o epônimo NACHLAS, e o BRAGARD não é nomeado nos livros conferidos (o Netter descreve a dorsiflexão do pé no ângulo de dor). O gabarito oficial foi mantido.",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0386": {
@@ -6122,18 +6145,21 @@
   "conferido": false
  },
  "coluna-0414": {
-  "conceito": "**Siringomielia e escoliose.** A siringomielia é uma cavidade cheia de líquido dentro da medula, frequentemente associada à **malformação de Chiari I**. Pode causar escoliose, muitas vezes com características atípicas, e às vezes é a única manifestação.\n\n**Por que o reflexo cutâneo abdominal.**\n- O reflexo é obtido estimulando a pele do abdome em cada quadrante; a resposta normal é a contração da musculatura e o desvio do umbigo para o lado estimulado.\n- Depende dos segmentos T7 a T12 e de vias que atravessam a medula.\n- A siringe pode lesar essas vias, e o reflexo fica **ausente ou assimétrico**, às vezes como **único sinal neurológico**.\n- Zadeh e colaboradores mostraram que a ausência ou assimetria do reflexo abdominal em crianças com escoliose é um indicador precoce de siringomielia.\n\n**Outros sinais da siringomielia.** Curva torácica esquerda, progressão rápida, dor, fraqueza ou atrofia das mãos, perda da sensibilidade térmica e dolorosa em \"capa\" nos ombros e braços, reflexos exaltados nos membros inferiores.\n\n**Conduta.** Ressonância do neuroeixo. Na presença de siringe significativa ou Chiari, a descompressão neurocirúrgica costuma preceder a correção da escoliose, e pode estabilizar ou até melhorar curvas em crianças pequenas.\n\n> Escoliose com suspeita de siringomielia: sempre pesquisar o reflexo cutâneo abdominal.",
-  "correta": "**C: Reflexo cutâneo-abdominal.** É o reflexo indispensável na suspeita de siringomielia como causa da escoliose. A ausência ou assimetria do reflexo abdominal pode ser o único sinal neurológico da siringe e é um indicador precoce, que justifica a ressonância do neuroeixo.",
+  "conceito": "Uma criança com escoliose pode ter, por trás da curva, uma cavidade cheia de líquido dentro da medula: a **siringomielia**. A curva é muitas vezes o primeiro sinal, e o exame neurológico pode ser quase normal. A banca pergunta qual reflexo não pode faltar quando se suspeita disso.\n\n**O que a siringe faz.** A cavidade cresce no centro da medula e lesa, de dentro para fora, as fibras que cruzam ali e as vias longas. O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1528, 1540 e 1601), descreve a escoliose em **63% a 73%** das crianças com siringe, às vezes como primeira manifestação (p. 1601), ao lado de atrofia intrínseca da mão, pé cavo, dor, cefaleia occipital e **perda dos reflexos abdominais superficiais**. A curva tende a ser **à esquerda** e a vir com **cifose torácica** maior que 40 graus, e a ausência da hipocifose apical habitual da escoliose idiopática também sugere siringe (p. 1540 e 1601).\n\n**Por que o reflexo abdominal.** O Campbell (p. 1540) pede atenção especial a ele, porque **muitas vezes é a única anormalidade neurológica** dos distúrbios intraespinhais. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 34, p. 1701), acrescenta que a **assimetria** dos reflexos abdominais sustenta o diagnóstico. Na escoliose de início precoce, a alteração do reflexo abdominal superficial entra entre os motivos para pedir ressonância (p. 1528).\n\n**O que se espera no exame.** É um reflexo superficial, cutâneo, dependente do neurônio motor superior; o Sizínio Hebert, 5ª ed. (cap. 40), o coloca entre os testes desse neurônio. Uma resposta ausente de um lado, ou diferente entre os lados, é o achado que manda investigar a medula.\n\n**Os outros reflexos não são errados, são menos específicos.** Clônus, BABINSKI e hiper-reflexia podem existir numa siringe, mas aparecem em qualquer lesão medular e muitas vezes faltam na criança com curva e exame quase normal.\n\nO reflexo está na seção \"Tronco: dermátomos torácicos e reflexos superficiais\" do resumo.",
+  "correta": "**C) Reflexo cutâneo-abdominal.** O Campbell pede atenção especial aos reflexos abdominais na escoliose porque muitas vezes são a única anormalidade de um distúrbio intraespinhal (cap. 40, p. 1540), e lista a sua perda entre os sinais da siringomielia (p. 1601); o Tachdjian valoriza a assimetria (cap. 34, p. 1701).",
   "incorretas": {
-   "A": "**O clônus aquileu** indica lesão do neurônio motor superior e pode estar presente em causas neurológicas, mas não é o reflexo específico e precoce da siringomielia.",
-   "B": "**O reflexo cutâneo-plantar** (Babinski) também pode estar alterado em lesões medulares, mas é menos sensível para siringomielia que o reflexo abdominal.",
-   "D": "**O reflexo patelar** pode estar exaltado em lesões medulares altas, mas é um achado inespecífico. Não é o reflexo-chave para a suspeita de siringomielia."
+   "A": "**Clônus aquileu**, contrações repetidas à dorsiflexão rápida do tornozelo, é sinal de neurônio motor superior (Netter, p. 51) e pode aparecer em qualquer compressão medular. Não é o marcador que o Campbell destaca para a siringe na escoliose.",
+   "B": "**Reflexo cutâneo-plantar** em extensão é o BABINSKI, outro sinal de liberação piramidal (Netter, p. 51; Campbell, cap. 45, p. 1750). Útil no exame, mas inespecífico e muitas vezes normal na criança cuja única pista é a curva.",
+   "D": "**Reflexo patelar** é um reflexo profundo da raiz L4 (Sizínio, cap. 40). Pode ficar exaltado numa lesão medular, mas não é o reflexo que os livros mandam pesquisar na suspeita de siringe."
   },
   "referencias": [
-   "Zadeh HG, Sakka SA, Powell MP, Mehta MH. Absent superficial abdominal reflexes in children with scoliosis: an early indicator of syringomyelia. J Bone Joint Surg Br. 1995;77(5):762-767.",
-   "Herring JA, ed. Tachdjian's Pediatric Orthopaedics. Elsevier. Escoliose."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1528, 1540 e 1601",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 34 (Disorders of the Peripheral Nervous System), p. 1701 e 1703",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 51)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 40 e 41 (trauma raquimedular)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0415": {
@@ -6734,42 +6760,23 @@
   "conferido": false
  },
  "coluna-0450": {
-  "conceito": "Tríceps fraco com reflexo tricipital alterado aponta para **C7**. A sensibilidade nos dedos acrescenta uma pista, mas o dado mais concordante do caso é o par motor e reflexo da mesma raiz.\n\nNa tabela cervical, C7 é representada por tríceps e flexão do punho, dedo médio e reflexo tricipital. C6, por sua vez, se relaciona a bíceps, extensão do punho, face lateral do antebraço, polegar e indicador, com reflexo braquiorradial (Rockwood, 10ª ed., cap. 48, “O exame neurológico”, tabela 48-1).\n\n**O enunciado mistura o segundo e o terceiro dedos.** O indicador aparece na referência de C6, enquanto o médio aparece em C7. Isso não torna C6 a melhor resposta, porque tríceps e tricipital fornecem dois achados específicos do conjunto C7. No exame clínico, sinais de diferentes modalidades devem ser confrontados, sem tratar a fronteira de cada território como um desenho rígido capaz de anular os demais achados.\n\nA radiografia degenerativa dá contexto, mas não define sozinha a raiz sintomática. É o exame neurológico descrito que sustenta a localização provável.\n\n> **Na prova:** tríceps e tricipital localizam C7; não trocar para C6 só pela menção ao indicador.",
-  "correta": "**D: C7.** O déficit do tríceps, a alteração do reflexo tricipital e o envolvimento do dedo médio convergem para essa raiz, apesar da extensão sensitiva também ao indicador.",
+  "conceito": "Um homem de 50 anos chega com dor e dormência no braço direito. O examinador encontra três coisas: **tríceps fraco**, **sensibilidade alterada no segundo e no terceiro dedos** e **reflexo tricipital alterado**. A radiografia mostra degeneração cervical. A questão é de localização pura, e a resposta sai da soma dos três achados.\n\n**Por que três eixos.** Um achado isolado engana, porque as raízes se superpõem: o bíceps recebe C5 e C6, os extensores longos do punho C6 e C7, e o dermátomo de C7 é estreito. O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1748), recomenda localizar a raiz pelo exame de vários grupos motores, dos reflexos e da sensibilidade, e confirmar com a ressonância. Quando os três eixos apontam a mesma raiz, a chance de erro é pequena.\n\n**Os três achados, um a um.**\n\n- **Tríceps**: o músculo-chave de C7 na ficha da ASIA (Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.3, p. 1875) e o primeiro da lista no Box 45.4 do Campbell (p. 1749).\n- **Segundo e terceiro dedos**: o Sizínio Hebert, 5ª ed. (Quadro 2.1.1), põe a sensibilidade de C7 exatamente aí; o Campbell e o Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 50), falam do dedo médio.\n- **Tricipital**: o reflexo de C7 nas três fontes.\n\n**O disco por trás.** Na cervical, o disco comprime a raiz de número maior; a raiz C7 é a do disco C6-C7, e o Campbell usa esse exemplo para ensinar a regra (p. 1740). Num paciente de 50 anos com sinais degenerativos, o mais provável é um esporão foraminal ou disco \"duro\", que o Campbell (p. 1751) coloca entre as causas de compressão de raiz.\n\n**A conduta, que a questão não pede mas o caso sugere.** A radiculopatia cervical responde ao tratamento não operatório em 70% a 80% dos casos, inclusive com fraqueza não progressiva (Campbell, p. 1751).\n\nO quadro de C7 está na seção \"Membro superior: C5 a T1, raiz por raiz\" do resumo.",
+  "correta": "**D) C7.** Tríceps fraco, hipoestesia no segundo e terceiro dedos e tricipital alterado formam o trio completo de C7 (Campbell, Box 45.4, p. 1749; Sizínio, Quadro 2.1.1; Netter, p. 50). A raiz C7 é a que sai no forame C6-C7.",
   "incorretas": {
-   "A": "**Desloca o quadro para os intrínsecos.** T1 é representada por intrínsecos e abdução dos dedos, com sensibilidade medial do braço e axila. Não explica o conjunto tríceps e reflexo tricipital.",
-   "B": "**É o conjunto do deltoide e do bicipital.** C5 se associa à sensibilidade lateral do ombro e braço. Fraqueza de tríceps e alteração tricipital não reproduzem esse padrão.",
-   "C": "**Aproveita um dedo e ignora os achados mais concordantes.** C6 pode ser lembrada pelo indicador, mas seus marcadores são bíceps, extensão do punho e braquiorradial. O caso enfatiza tríceps e tricipital, favorecendo C7.",
-   "E": "**É o nível dos flexores dos dedos e intrínsecos.** A referência sensitiva de C8 inclui anular, mínimo e face medial do antebraço. Não é a distribuição principal nem o reflexo fornecido."
+   "A": "**T1** dá fraqueza dos interósseos e hipoestesia na face medial do cotovelo, sem alteração reflexa (Campbell, Box 45.6, p. 1750). Nenhum dos três achados do caso pertence a ela.",
+   "B": "**C5** é a raiz do deltoide, da face lateral do braço e do reflexo bicipital (Campbell, Box 45.2). O caso não tem fraqueza de abdução do ombro nem alteração no braço; o reflexo alterado é outro.",
+   "C": "**C6** é a vizinha que mais confunde, porque o seu dermátomo inclui o indicador (polegar e indicador no Campbell, Box 45.3). Mas C6 enfraquece o bíceps e os extensores radiais do carpo e altera o braquiorradial; tríceps e tricipital são de C7.",
+   "E": "**C8** dá hipoestesia no anular, no mínimo e na borda ulnar da palma, fraqueza dos flexores dos dedos e dos interósseos, e nenhuma alteração reflexa (Campbell, Box 45.5, p. 1750). Um tricipital alterado já basta para afastá-la."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1740, 1748 a 1751, Boxes 45.2 a 45.6",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.3, p. 1875",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 50)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atendimento inicial e exame neurológico"
-     ],
-     "blocos": [
-      "atendimento-inicial-e-exame-neurologico-d66ef39d"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "41891f722eb7f2f558c97e12b81e06a78ec7a1ab467db3214c19a35a01d0df91"
-    }
-   ],
-   "questaoSha256": "429b6937fd41a6b86d378f2f7d583a5cf5a030803f5c6d089fba3db991a7df83",
-   "comentarioSha256": "5b09208c040c62affee506b728a20caa0ead7d149895c971382991d3ce7f6f7b"
-  }
+  "geradoEm": "2026-11-03",
+  "conferido": false
  },
  "coluna-0451": {
   "conceito": "**Lesões líticas no corpo vertebral.** Em adultos, a causa mais comum de lesão lítica na coluna são as **metástases** (mama, pulmão, próstata, rim, tireoide) e o **mieloma múltiplo**. Excluídas essas, o diagnóstico mais frequente é o **hemangioma vertebral**.\n\n**O hemangioma vertebral.** É uma lesão vascular benigna, encontrada em cerca de 10% das pessoas em estudos de autópsia e imagem. Localiza-se no **corpo vertebral**, principalmente na coluna torácica e lombar, e quase sempre é assintomático e descoberto por acaso.\n\n| Exame | Aspecto típico |\n|---|---|\n| Radiografia | Trabéculas verticais grosseiras, em “paliçada” ou “veludo cotelê” |\n| Tomografia | Pontos densos no corte axial (sinal das bolinhas, polka dot) |\n| Ressonância | Hiperssinal em T1 e T2, pela gordura e pelo componente vascular |\n\nUma minoria é **agressiva**: expande o corpo, invade o canal ou as partes moles e pode causar compressão medular ou fratura. Esses casos são tratados com vertebroplastia, embolização, radioterapia ou cirurgia.\n\n**Onde ficam os outros tumores benignos da coluna.**\n\n| Tumor | Local preferencial |\n|---|---|\n| Osteoma osteoide e osteoblastoma | Elementos posteriores (pedículo, lâmina) |\n| Osteocondroma | Elementos posteriores, processo espinhoso e transverso |\n| Cisto ósseo aneurismático | Elementos posteriores, com extensão ao corpo |\n| Tumor de células gigantes | Corpo vertebral e sacro |\n| Hemangioma | Corpo vertebral |\n\nUma regra útil: lesões dos elementos posteriores tendem a ser benignas; lesões do corpo vertebral em adultos devem fazer pensar primeiro em metástase e mieloma.\n\n> Excluídas metástases e mieloma, a lesão mais comum do corpo vertebral é o hemangioma, com trabéculas em paliçada e polka dot.",
@@ -6837,19 +6844,20 @@
   "conferido": false
  },
  "coluna-0455": {
-  "conceito": "**Qual raiz e qual disco.** Na coluna lombar, a raiz sai pelo forame **abaixo** da vértebra de mesmo número: a raiz L5 sai entre L5 e S1, a raiz S1, abaixo de S1. Uma hérnia centro-lateral (posterolateral), a mais comum, comprime a raiz que está descendo para sair no nível de baixo. Assim, uma hérnia **L4-L5 centro-lateral comprime L5**, e uma hérnia **L5-S1 centro-lateral comprime S1**. Já uma hérnia foraminal ou extraforaminal comprime a raiz que está saindo naquele nível (L4 em L4-L5, L5 em L5-S1).\n\n**O padrão de cada raiz.**\n\n| Raiz | Dor e dormência | Força | Reflexo |\n|---|---|---|---|\n| L4 | Face anterior da coxa e medial da perna | Quadríceps, tibial anterior | Patelar |\n| L5 | Face lateral da perna, dorso do pé, hálux | Extensor longo do hálux, glúteo médio | Nenhum confiável |\n| S1 | **Face posterior da coxa, panturrilha, planta e borda lateral do pé** | Tríceps sural (ficar na ponta dos pés), fibulares | **Aquileu** |\n\n**Aplicando ao caso.** Dor irradiada pela face posterior da coxa, panturrilha e planta do pé é o território de **S1**. Com Lasègue positivo, que indica tensão de raiz lombar baixa, a causa mais provável é uma hérnia **L5-S1 centro-lateral**.\n\n**O sinal de Lasègue.** Com o paciente deitado, eleva-se a perna estendida; a dor irradiada abaixo do joelho entre 30 e 70 graus indica tensão de raiz de L5 ou S1. O Lasègue cruzado (dor no lado afetado ao elevar a perna oposta) é mais específico para hérnia.\n\n**Tratamento.** A maioria melhora com tratamento conservador em semanas. A cirurgia (microdiscectomia) é indicada para síndrome da cauda equina, déficit motor progressivo ou dor incapacitante que não melhora após cerca de 6 semanas.\n\n> Dor na face posterior da coxa, panturrilha e planta: S1. Hérnia L5-S1 centro-lateral.",
-  "correta": "**E: hérnia discal L5-S1 centro-lateral.** A dor na face posterior da coxa, na panturrilha e na planta do pé corresponde ao dermátomo de S1. Uma hérnia centro-lateral no disco L5-S1 comprime justamente a raiz S1, que desce para sair abaixo de S1. O Lasègue positivo reforça a tensão de raiz lombar baixa. O exame ainda pode mostrar fraqueza para ficar na ponta dos pés e reflexo aquileu diminuído.",
+  "conceito": "A dor desce pela **face posterior da coxa e pela panturrilha** e chega à **planta do pé**, e o LASÈGUE é positivo. A banca pede o diagnóstico entre cinco hérnias que combinam dois níveis (L4-L5 e L5-S1) com três posições (central, centro-lateral e foraminal). O raciocínio tem dois passos: primeiro a raiz, depois o disco e a posição.\n\n**Primeiro passo: a raiz.** O trajeto glúteo, posterior da coxa, panturrilha e planta é a ciática de **S1** no Sizínio Hebert, 5ª ed. (cap. 2.4). O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), Box 46.4, p. 1786 e 1787), põe a sensibilidade de S1 no maléolo lateral, na face lateral e plantar do pé e no calcanhar. A ciática de L5, por outro lado, percorre a face lateral da coxa, a perna e o **dorso** do pé.\n\n**O LASÈGUE.** O teste estira o ciático, e com ele L4, L5 e S1. O Campbell exige dor abaixo do joelho para considerá-lo positivo (p. 1785 e 1786); o Sizínio dá a faixa de 35 a 70 graus. Os 30 graus do enunciado ficam no limite inferior dessa faixa; o que a banca quer dizer é que a elevação reproduziu a ciática cedo, e o que localiza a raiz é o território da dor.\n\n**Segundo passo: o disco e a posição.** Na lombar, a raiz sai abaixo do pedículo de mesmo nome (Campbell, p. 1773). A hérnia **posterolateral**, ou centro-lateral, pega a raiz que passa pelo disco e vai sair no forame de baixo; a **foraminal** pega a raiz que está saindo naquele nível (p. 1774; Sizínio, cap. 2.4). Assim:\n\n| Hérnia | Raiz comprimida |\n|---|---|\n| L4-L5 centro-lateral | L5 |\n| L4-L5 foraminal | L4 |\n| L5-S1 centro-lateral | S1 |\n| L5-S1 foraminal | L5 |\n\nPara S1, a única opção é **L5-S1 centro-lateral**. Mais de 95% das hérnias estão em L4-L5 ou L5-S1 (Campbell, p. 1787), e a L4-L5 é a mais comum (Sizínio), mas aqui o território decide.\n\nO assunto está nas seções \"A anatomia que decide o nível: raiz, pedículo e disco\" e \"Membro inferior: L4, L5 e S1\" do resumo.",
+  "correta": "**E) hérnia discal L5S1 centro-lateral.** A dor posterior na coxa e na panturrilha até a planta é ciática de S1 (Sizínio, cap. 2.4; Campbell, Box 46.4), e a hérnia centro-lateral L5-S1 comprime a raiz que cruza esse disco para sair abaixo, a S1 (Campbell, cap. 46, p. 1774).",
   "incorretas": {
-   "A": "**Uma hérnia L4-L5 central pode comprimir várias raízes ou a cauda equina, e não costuma dar um padrão isolado de S1.** Hérnias centrais volumosas causam lombalgia, ciatalgia bilateral e, nos casos graves, síndrome da cauda equina.",
-   "B": "**Uma hérnia foraminal L4-L5 comprime a raiz L4, que está saindo naquele forame.** A dor seria na face anterior da coxa e medial da perna, com reflexo patelar diminuído.",
-   "C": "**Uma hérnia foraminal L5-S1 comprime a raiz L5, não S1.** A dor seria na face lateral da perna e no dorso do pé, com fraqueza do extensor longo do hálux.",
-   "D": "**Uma hérnia L4-L5 centro-lateral comprime a raiz L5.** Causa dor na face lateral da perna, no dorso do pé e no hálux. Não corresponde ao padrão posterior com planta do pé do caso."
+   "A": "**Hérnia L4-L5 central** fica entre as bordas da cauda equina (Sizínio, cap. 2.4). Volumosa, pode dar o quadro bilateral da cauda equina, com anestesia em sela e disfunção esfincteriana; não produz uma ciática unilateral no território de S1.",
+   "B": "**Hérnia foraminal L4-L5** comprime a raiz de saída desse nível, a L4. Daria dor na face anterior da coxa e medial da perna, com patelar diminuído; as raízes altas muitas vezes nem têm a elevação da perna positiva (Campbell, p. 1787).",
+   "C": "**Hérnia foraminal L5-S1** está no disco certo, mas na posição errada: no forame, comprime L5, a raiz que sai ali. A dor iria ao dorso do pé e ao hálux, e não à planta.",
+   "D": "**Hérnia L4-L5 centro-lateral** é a mais comum e comprime L5 (Campbell, p. 1774). Daria dor na face lateral da perna e no dorso do pé, com fraqueza do extensor longo do hálux; a planta e a panturrilha apontam S1."
   },
   "referencias": [
-   "Hoppenfeld S. Propedêutica ortopédica: coluna e extremidades. Atheneu.",
-   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Hérnia discal lombar."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1773, 1774, 1785 a 1787, Boxes 46.3 e 46.4",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (coluna lombar)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0456": {
@@ -7262,16 +7270,17 @@
   "conferido": false
  },
  "coluna-0479": {
-  "conceito": "**Instabilidade lombar.** É a perda da capacidade da coluna de manter, sob cargas fisiológicas, as relações normais entre as vértebras, de forma a não causar dor incapacitante, deformidade ou lesão neurológica (conceito de White e Panjabi). Pode surgir na degeneração discal, na espondilolistese, após laminectomias amplas e após traumas.\n\n**Sinais clínicos sugestivos.**\n- Dor lombar mecânica que piora com movimentos e melhora com repouso.\n- Arco doloroso ou movimento interrompido (\"travamento\") ao sair da flexão.\n- Necessidade de apoiar as mãos nas coxas para voltar da flexão (sinal de Gowers lombar).\n- Teste de instabilidade em prono positivo.\n- Sensação de \"degrau\" à palpação em listeses.\n\n**Confirmação por imagem.** As **radiografias dinâmicas em flexão e extensão máximas**, em perfil, mostram o movimento anormal entre duas vértebras. Os critérios mais usados são:\n- **Translação** sagital acima de cerca de 3 a 4 mm (ou acima de 8% a 15% da largura do corpo vertebral).\n- **Angulação** sagital excessiva entre os níveis, acima de cerca de 10 a 15 graus, ou maior que a dos níveis vizinhos.\n\n| Critério | Valor sugestivo |\n|---|---|\n| Translação | Acima de 3 a 4 mm |\n| Angulação | Acima de 10 a 15 graus |\n\n**Outros exames.** A ressonância em decúbito pode subestimar a listese; líquido nas facetas articulares é um sinal indireto. A comparação entre radiografia em pé e ressonância deitada também ajuda.\n\n**Importância.** A presença de instabilidade muda a cirurgia: em uma estenose com listese instável, a descompressão isolada tende a piorar o deslizamento, e associa-se a artrodese.\n\n> Instabilidade: suspeita clínica, confirmação nas radiografias dinâmicas.",
-  "correta": "**A: Certo.** A instabilidade lombar tem sinais clínicos sugestivos (dor mecânica, arco doloroso, travamento ao sair da flexão) e é confirmada principalmente pelas radiografias dinâmicas em flexão e extensão, que mostram translação ou angulação excessivas entre as vértebras. O dado é importante no planejamento cirúrgico, porque a instabilidade costuma indicar artrodese associada à descompressão.",
+  "conceito": "O caso é o de uma mulher de 40 anos com hérnia volumosa comprimindo S1 há duas semanas, e a banca usa o cenário para uma série de afirmações. Esta é sobre outro assunto do exame da coluna: a **instabilidade lombar** e como confirmá-la.\n\n**O que é instabilidade segmentar.** É o movimento anormal entre duas vértebras quando a coluna se move. Por definição, aparece no movimento; uma imagem feita numa só posição pode não mostrá-lo, e o exame precisa capturar a coluna nas duas posições extremas.\n\n**O que o Campbell diz.** O Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1776), afirma que **radiografias laterais em flexão e extensão** podem revelar instabilidade segmentar. E faz uma ressalva técnica que vale a pena guardar: a radiografia em **flexão só é válida com o paciente sentado**, a posição que maximiza a cifose lombar. O Sizínio Hebert, 5ª ed. (cap. 2.1), usa as mesmas radiografias dinâmicas para documentar a instabilidade na coluna cervical.\n\n**A leitura da afirmação.** A banca une duas ideias: a instabilidade é suspeitada pela clínica e confirmada pela imagem dinâmica. A segunda metade é literal no Campbell, e a primeira é a razão de pedir o exame; nenhuma das duas contraria os livros conferidos.\n\n**Imagem sempre a serviço da clínica.** O mesmo capítulo lembra que a ressonância mostra hérnia em 20% a 36% de voluntários sem sintomas e alguma anormalidade em 76% dos assintomáticos (p. 1773 e 1775). Achado de imagem sem quadro clínico correspondente não define doença; com a instabilidade é igual, e a radiografia dinâmica serve para confirmar uma suspeita, não para criá-la.\n\n**Onde ela entra neste caso.** Numa hérnia de duas semanas, sem cauda equina e sem déficit progressivo, o Campbell recomenda tratamento conservador (p. 1775 e 1788). A busca por instabilidade importa no planejamento de uma eventual cirurgia, para decidir se basta retirar o fragmento ou se o segmento precisa ser estabilizado.\n\nAs radiografias dinâmicas estão na seção \"Hérnia lombar: história natural e quando operar\" do resumo.",
+  "correta": "**A) Certo.** O Campbell afirma que radiografias laterais em flexão e extensão podem revelar instabilidade segmentar, com a flexão feita sentado (cap. 46, p. 1776). A suspeita vem da clínica, e a confirmação vem da imagem dinâmica, feita nas duas posições extremas.",
   "incorretas": {
-   "B": "**Marcar errado seria considerar que a instabilidade só se confirma por ressonância ou que não tem expressão clínica.** A ressonância é feita em decúbito e pode mascarar o movimento anormal. As radiografias dinâmicas são o exame clássico de confirmação, ainda que os critérios numéricos variem entre autores."
+   "B": "**Errado** seria a resposta se as radiografias dinâmicas não tivessem papel no diagnóstico, ou se a instabilidade só pudesse ser vista na ressonância. Não é o que o Campbell diz: as laterais em flexão e extensão são o exame indicado para revelar a instabilidade segmentar (cap. 46, p. 1776), e a única ressalva é técnica, a flexão deve ser feita com o paciente sentado. O Sizínio usa o mesmo recurso na coluna cervical (cap. 2.1). A afirmação está correta."
   },
   "referencias": [
-   "White AA, Panjabi MM. Clinical Biomechanics of the Spine. 2nd ed. Lippincott; 1990.",
-   "Herkowitz HN et al. Rothman-Simeone The Spine. Elsevier. Instabilidade segmentar lombar."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 46 (Degenerative Disorders of the Thoracic and Lumbar Spine), p. 1773, 1775, 1776 e 1788",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0480": {
@@ -9699,20 +9708,23 @@
   "conferido": false
  },
  "coluna-0559": {
-  "conceito": "Examinar uma raiz cervical é sempre fazer três perguntas: onde dói ou formiga, o que enfraquece e que reflexo muda. O Netter's Concise reúne isso em uma tabela (cap. 2, p. 50):\n\n| Raiz | Motor | Reflexo | Sensibilidade |\n|---|---|---|---|\n| C5 | deltoide | bicipital | face lateral do ombro e braço |\n| C6 | bíceps, extensores do punho | braquiorradial | polegar |\n| C7 | tríceps | tricipital | dedo médio |\n| C8 | flexores dos dedos | nenhum | anular e mínimo |\n| T1 | intrínsecos | nenhum | face ulnar do antebraço |\n\nA alternativa correta é a linha da C5: **face lateral do braço, deltoide e bicipital**.\n\n**Por que isso importa em um homem de 72 anos?** Porque a idade torna frequentes as doenças degenerativas, e a queixa de ombro de um paciente com C5 pode ser confundida com lesão do manguito. A diferença está no exame: o deltoide fraco, a alteração de sensibilidade e o reflexo diminuído apontam para a raiz.\n\nHá um detalhe que confunde: o bíceps recebe C5 e C6. Por isso, o reflexo bicipital aparece na linha de C5, enquanto a força do bíceps muitas vezes é testada com C6. Mas note que o enunciado fala de sensibilidade, e as alternativas misturam os outros itens para testar a tabela inteira.",
-  "correta": "**A: face lateral do braço, deltoide, bicipital.** É a combinação de sensibilidade, força e reflexo da raiz C5 (Netter's Concise, cap. 2, p. 50).",
+  "conceito": "A imagem já mostrou a raiz comprimida: C5. A banca quer o trio que o examinador deveria encontrar, na ordem **sensibilidade, motricidade e reflexo**. As alternativas combinam três peças de duas raízes vizinhas, C5 e C6, e só uma combinação é coerente.\n\n**De onde sai a raiz C5.** Pela regra do pedículo do Campbell's Operative Orthopaedics, 15ª ed. (Campbell's Operative Orthopaedics, 15ª ed., cap. 43 (Anatomy of the Spine), p. 1688 e 1689, p. 1689), a raiz C5 sai acima do pedículo de C5, no forame C4-C5. A hérnia ou o esporão nesse nível é o que a comprime.\n\n**O trio de C5.** As três fontes concordam no essencial:\n\n- **Sensibilidade**: o Campbell (Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), Box 45.2, p. 1748) fala da face lateral proximal do braço e do cotovelo; o Sizínio Hebert, 5ª ed. (Quadro 2.1.1), da face lateral do braço; o Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 2, p. 50), da porção lateral do ombro.\n- **Motricidade**: o **deltoide**, que o Campbell descreve como inervado quase exclusivamente por C5; o bíceps também enfraquece, mas de forma variável, porque recebe C6.\n- **Reflexo**: o **bicipital**, que diminui de forma variável pela mesma divisão de inervação.\n\n**Por que C6 é a armadilha.** A raiz de baixo tem um trio que se encaixa perfeitamente nas peças erradas: **primeiro e segundo dedos**, **extensores do punho** e **braquiorradial** (Campbell, Box 45.3; Sizínio, Quadro 2.1.1). A banca embaralhou as peças de C5 e de C6 para ver quem sabe exatamente qual peça pertence a qual raiz.\n\n| Eixo | C5 | C6 |\n|---|---|---|\n| Sensibilidade | face lateral do braço | polegar e indicador, face lateral do antebraço |\n| Motor | deltoide | extensores radiais do carpo, bíceps |\n| Reflexo | bicipital | braquiorradial |\n\n**Um detalhe do paciente.** Aos 72 anos, a causa provável é degenerativa, e o Campbell (p. 1751) lembra que o disco duro costuma acometer mais de um nível; por isso o exame dos três eixos ajuda a separar a raiz responsável.\n\nO trio está na seção \"Membro superior: C5 a T1, raiz por raiz\" do resumo.",
+  "correta": "**A) Face lateral do braço, deltoide, bicipital.** É o trio de C5 no Campbell (Box 45.2, p. 1748), no Sizínio (Quadro 2.1.1) e no Netter (p. 50): sensibilidade na face lateral do braço, fraqueza do deltoide, que é quase só C5, e reflexo bicipital diminuído.",
   "incorretas": {
-   "B": "**A raiz vizinha.** Sensibilidade e reflexo cabem em C5, mas os extensores do punho são da C6 (Netter's Concise, cap. 2, p. 50).",
-   "C": "**É a linha de C6.** Polegar, extensores do punho e braquiorradial são a raiz seguinte (Netter's Concise, cap. 2, p. 50).",
-   "D": "**Mistura C6 e C5.** Primeiro e segundo dedos e braquiorradial são da C6, e o deltoide é da C5.",
-   "E": "**Só a sensibilidade sai errada.** Deltoide e bicipital estão certos, mas os primeiros dedos são território da C6."
+   "B": "**Face lateral do braço, extensores do punho, bicipital** acerta a sensibilidade e o reflexo de C5, mas põe no meio os extensores radiais do carpo, músculo-chave de C6 (Campbell, Box 45.3; Tabela 48.3). A peça motora está um nível abaixo.",
+   "C": "**Primeiro e segundo dedos, extensores do punho, braquiorradial** é o trio completo de C6 no Sizínio (Quadro 2.1.1) e no Campbell (Box 45.3). Seria a resposta perfeita para uma hérnia C5-C6; para a raiz C5, não serve.",
+   "D": "**Primeiro e segundo dedos, deltoide, braquiorradial** põe o deltoide de C5 entre duas peças de C6, a sensibilidade do polegar e do indicador e o reflexo braquiorradial. A combinação não corresponde a nenhuma raiz isolada.",
+   "E": "**Primeiro e segundo dedos, deltoide, bicipital** acerta a força e o reflexo de C5, mas erra a sensibilidade: polegar e indicador são de C6. A face lateral do braço é o território que separa C5."
   },
   "referencias": [
-   "Netter's Concise Orthopaedic Anatomy, 2ª ed., cap. 2 (Coluna), p. 50",
-   "Cervical radiculopathy. Current Reviews in Musculoskeletal Medicine, 2016. Tabela de distribuições sensitivas, motoras e reflexas. https://pmc.ncbi.nlm.nih.gov/articles/PMC4958381/",
-   "A clinical review of hand manifestations of cervical myelopathy, cervical radiculopathy, radial, ulnar, and median nerve neuropathies. Journal of Spine Surgery, 2024. Tabela 3. https://pmc.ncbi.nlm.nih.gov/articles/PMC10982913/"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 43 (Anatomy of the Spine), p. 1688 e 1689",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 45 (Degenerative Disorders of the Cervical Spine), p. 1748, 1749 e 1751, Boxes 45.2 e 45.3",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.3, p. 1875",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 2 (Coluna Vertebral), p. 49 a 52 (p. 50)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 2.1 (coluna cervical)",
+   "Resumo OrtoQuestões: Exame neurológico e radiculopatias"
   ],
-  "geradoEm": "2026-11-02",
+  "geradoEm": "2026-11-03",
   "conferido": false
  },
  "coluna-0560": {
