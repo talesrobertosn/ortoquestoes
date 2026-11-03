@@ -272,6 +272,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           {mensagem && !planoEscolhido && <p role="status" className="vd-aviso">{mensagem}</p>}
         </div>}
       </section>}
+      {!comAcessoPago && mostrarPlanos && <AjudaSuporte local="topo" />}
 
       {comAcessoPago && (
         <section className="vd-ativo" aria-labelledby="vd-titulo-minha">
@@ -410,6 +411,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} planosAntigos={planosAntigos} />
         <p className="vd-final__gratis">Ainda não é a hora? Tudo bem. <a href={href(sessao ? '/treinar' : '/conta?modo=criar')}>{sessao ? 'Continue no gratuito' : 'Comece pelo gratuito'}</a>, as questões e os comentários continuam abertos.</p>
       </section>}
+      {!comAcessoPago && mostrarPlanos && <AjudaSuporte local="final" />}
 
       {!comAcessoPago && pagamentosHabilitados && <div className={'vd-barra' + (barraNaTela ? ' vd-barra--visivel' : '')} aria-hidden={!barraNaTela}>
         <span className="vd-barra__preco"><strong>{real(PLANO_MENSAL.total)}</strong>/mês<span className="vd-barra__extra">, sem fidelidade</span></span>
@@ -477,10 +479,27 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             </>
           )}
           {mensagem && <p role="status" className="ck__mensagem">{mensagem}</p>}
+          {mensagem && <p className="ck__suporte">Não deu certo? <a href={href('/contato?assunto=assinatura')} data-funil="suporte-checkout">Fale com o suporte</a> e a gente resolve com você.</p>}
           <p className="ck__seguro"><Icone nome="cadeado" tamanho={14} /> Pagamento seguro pelo Mercado Pago; o Orto Questões não recebe os dados do cartão. Até 7 dias depois da cobrança, o reembolso integral é um botão em Minha conta. Depois disso, cancelar interrompe as renovações e mantém o acesso até o fim do período pago.</p>
         </div>}
       </JanelaCentral>
     </div>
+  )
+}
+
+/**
+ * Atalho para o suporte logo abaixo dos planos, fora da caixa verde (Tales, 03/11/2026): já
+ * houve um erro que impedia de assinar e só apareceu porque a pessoa escreveu. Abre o suporte
+ * com o assunto "Assinatura ou cobrança" escolhido.
+ */
+function AjudaSuporte({ local }: { local: 'topo' | 'final' }) {
+  return (
+    <p className={`vd-suporte vd-suporte--${local}`}>
+      <span>Ficou com alguma dúvida ou não conseguiu assinar?</span>
+      <a className="botao vd-suporte__botao" href={href('/contato?assunto=assinatura')} data-funil={`suporte-${local}`}>
+        <Icone nome="correio" tamanho={16} /> Fale com o suporte
+      </a>
+    </p>
   )
 }
 

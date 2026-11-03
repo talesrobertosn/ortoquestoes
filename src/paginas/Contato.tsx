@@ -30,6 +30,7 @@ function assuntoInicial(consulta: URLSearchParams): AssuntoSuporte {
   const assunto = consulta.get('assunto')
   if (assunto === 'exclusao-conta') return 'dados'
   if (assunto === 'sincronizacao') return 'acesso'
+  if (assunto === 'assinatura') return 'assinatura'
   return 'outro'
 }
 
