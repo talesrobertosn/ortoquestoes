@@ -253,7 +253,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 891 | CRIAR dois temas: amputações e próteses (Campbell's Operative Orthopaedics, 15ª ed., caps. 16 a 18 e 20; Tachdjian; HEBERT; Rockwood and Green) e dor peritrocantérica e tendinopatias (The Adult Hip, cap. 43 e outros; Campbell 15; HEBERT), mais 6 miniaulas do exame físico do pé. |
 | 892 | CRIAR gonartrose e osteotomias (HEBERT, 5ª ed., cap. 16; Campbell's Operative Orthopaedics, 15ª ed., caps. 10, 8, 50 e 52), mais 36 miniaulas: amputações (14), tendão calcâneo (11) e dor peritrocantérica (11). |
 | 893 | Osteoporose v2 (tratamento ligado ao resumo do Rockwood and Green, cap. 4, com 16 questões novas) e CRIAR fibrocartilagem triangular e punho ulnar (Green's Operative Hand Surgery, 7ª ed., cap. 14 e outros; Campbell 15, cap. 74; Rockwood and Green), mais 14 miniaulas da gonartrose. |
-| (este PR) | CRIAR raquitismo e osteomalácia (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6; Tachdjian, cap. 38; Rockwood and Green; HEBERT), mais 40 miniaulas: fibrocartilagem triangular (29), osteoporose (6) e raquitismo (5). Alerta da `osteometabolicas-0091` alinhado à bibliografia da banca. |
+| 894 | CRIAR raquitismo e osteomalácia (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6; Tachdjian, cap. 38; Rockwood and Green; HEBERT), mais 40 miniaulas: fibrocartilagem triangular (29), osteoporose (6) e raquitismo (5). Alerta da `osteometabolicas-0091` alinhado à bibliografia da banca. |
+| (este PR) | CRIAR dois temas: metatarsalgia e neuroma de MORTON (Campbell's Operative Orthopaedics, 15ª ed., caps. 89, 92 e 87; HEBERT; Tachdjian) e impacto femoroacetabular (The Adult Hip, cap. 35 e caps. 8, 11, 22, 23, 25 e 68; Campbell 15, caps. 7 e 56; HEBERT; Tachdjian). As miniaulas seguem no próximo PR. |
 
 ## Próximo
 
