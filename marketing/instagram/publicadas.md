@@ -42,3 +42,6 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | trauma-0764 | Fratura do colo do tálus, Hawkins III: subtalar e tibiotalar (TEOT 2025) | posts/2026-10-31-casa-assombrada-talus (stories) |
 | pediatria-0525 | Fratura fisária do úmero distal no lactente, que imita luxação (TARO 2025) | posts/2026-11-01-grupo-cotovelo-lactente (feed) |
 | ombro-cotovelo-0454 | Lesão traumática do subescapular: não leva a mão às costas, reparo cirúrgico (TARO 2024) | posts/2026-11-01-grupo-cotovelo-lactente (stories) |
+| tumores-0362 | MIRELS: fêmur distal, lítica, 50%, dor leve = 8 (ENARE R4 Ortopedia 2025) | posts/2026-11-04-tilt-mirels (feed) |
+| tumores-0364 | MIRELS: item "9 pontos" errado, a conta dá 12 (R4 Coluna SES-DF 2022) | posts/2026-11-04-tilt-mirels (stories) |
+| tumores-0190 | MIRELS: fêmur distal vale 2 (TEOT 2024) | posts/2026-11-04-tilt-mirels (stories) |
