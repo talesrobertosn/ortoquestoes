@@ -20,8 +20,8 @@ import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia } from '../estado/limiteDiario'
 import { usarAssinante } from '../conta/plano'
 import {
-  AREAS_QUE_CAEM, ASSUNTOS_QUE_MAIS_CAEM, planosDaPessoa, centavos, dadosDaPessoa, degrauAnual,
-  elogioHeroi, fatiaDasDuasPrimeiras, numero, pct, porDia, porMes, saudacaoAssinante, tituloHeroi, type Plano,
+  AREAS_QUE_CAEM, ASSUNTOS_QUE_MAIS_CAEM, planosDaPessoa, dadosDaPessoa,
+  elogioHeroi, fatiaDasDuasPrimeiras, numero, pct, porMes, saudacaoAssinante, tituloHeroi, type Plano,
 } from '../dados/vendas'
 import { CartoesPlanos } from '../componentes/vendas/CartoesPlanos'
 import { PreviaCronograma } from '../componentes/vendas/PreviaCronograma'
@@ -381,7 +381,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
       <section className="vd-secao vd-faq" aria-labelledby="vd-titulo-faq">
         <header className="vd-cabeca" data-revelar><p className="vd-sobre">Dúvidas</p><h2 id="vd-titulo-faq">Perguntas frequentes</h2><p>As respostas que decidem a compra, sem letra miúda. O texto completo está nas <a href={href('/condicoes-assinatura')}>Condições da Assinatura</a>.</p></header>
         <div className="vd-faq__lista" data-revelar>
-          <details><summary>Qual plano vale mais a pena?</summary><p>Os três liberam exatamente os mesmos recursos; muda só quanto tempo você paga de uma vez. O mensal sai {real(PLANO_MENSAL.total)} por mês. O semestral, {real(PLANO_SEMESTRAL.total)} a cada 6 meses ({real(porMes(PLANO_SEMESTRAL))} por mês). O anual, {real(PLANO_ANUAL.total)} por ano, o que dá {real(porMes(PLANO_ANUAL))} por mês e {centavos(porDia(PLANO_ANUAL))} por dia: {ECONOMIA_ANUAL === 'metade do preço' ? 'metade do preço do mensal' : `${ECONOMIA_ANUAL} que o mensal`}. {degrauAnual(PLANO_SEMESTRAL, PLANO_ANUAL).texto} Se a prova está a mais de seis meses ou você quer o ano todo de estudo, o anual é o que mais rende. Para uma reta final curta, o mensal resolve sem compromisso longo.</p></details>
+          <details><summary>Qual plano vale mais a pena?</summary><p>Os três liberam exatamente os mesmos recursos; muda só como você paga. O mensal sai {real(PLANO_MENSAL.total)} por mês, sem fidelidade: você paga só os meses em que estuda e desliga a renovação com um botão quando quiser. O semestral, {real(PLANO_SEMESTRAL.total)} a cada 6 meses ({real(porMes(PLANO_SEMESTRAL))} por mês). O anual, {real(PLANO_ANUAL.total)} por ano, o que dá {real(porMes(PLANO_ANUAL))} por mês: {ECONOMIA_ANUAL === 'metade do preço' ? 'metade do preço do mensal' : `${ECONOMIA_ANUAL} que o mensal`}, pago de uma vez. Se você ainda não sabe quanto tempo vai estudar até a prova, comece pelo mensal. Quem já tem o ano inteiro de estudo pela frente economiza no anual.</p></details>
           <details><summary>Posso pagar com Pix?</summary><p>Pode, em qualquer plano. Você escolhe o plano, informa o CPF de quem vai pagar (só para o Mercado Pago gerar o Pix; não fica salvo no seu perfil) e recebe o QR Code e o Pix Copia e Cola. É um pagamento único pelo período inteiro, sem renovação automática. O código vale por 24 horas; se não for pago, expira sem cobrança.</p></details>
           <details><summary>O acesso é liberado na hora?</summary><p>Sim, assim que o Mercado Pago confirma o pagamento. No Pix, a página fica conferindo sozinha e libera o acesso quando o pagamento cai, sem você precisar avisar ninguém. No cartão, o acesso começa com a aprovação da cobrança.</p></details>
           <details><summary>E no cartão? Renova sozinho?</summary><p>Renova na periodicidade escolhida (todo mês, a cada 6 meses ou todo ano), para você não ficar sem acesso na reta final. Desligar a renovação é um botão em Minha conta, a qualquer momento. Os dados do cartão são digitados no Mercado Pago; o Orto Questões não recebe nem guarda o número do cartão.</p></details>
@@ -414,10 +414,10 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
       {!comAcessoPago && mostrarPlanos && <AjudaSuporte local="final" />}
 
       {!comAcessoPago && pagamentosHabilitados && <div className={'vd-barra' + (barraNaTela ? ' vd-barra--visivel' : '')} aria-hidden={!barraNaTela}>
-        <span className="vd-barra__preco"><strong>{real(porMes(PLANO_ANUAL))}</strong>/mês no anual</span>
+        <span className="vd-barra__preco"><strong>{real(PLANO_MENSAL.total)}</strong>/mês<span className="vd-barra__extra">, sem fidelidade</span></span>
         <span className="vd-barra__garantia"><IconePix tamanho={14} /> Pix ou cartão · 7 dias de garantia</span>
         <a className="botao vd-barra__ver" href="#planos" tabIndex={barraNaTela ? 0 : -1} onClick={(e) => { e.preventDefault(); irPara('planos') }}>Ver os 3 planos</a>
-        <button type="button" className="botao vd-botao-destaque" tabIndex={barraNaTela ? 0 : -1} disabled={semCompra} onClick={() => comprar(PLANO_ANUAL)} data-funil="plano-anual-barra">Assinar o anual</button>
+        <button type="button" className="botao vd-botao-destaque" tabIndex={barraNaTela ? 0 : -1} disabled={semCompra} onClick={() => comprar(PLANO_MENSAL)} data-funil="plano-mensal-barra">Assinar o mensal</button>
       </div>}
 
       <JanelaCentral aberta={planoEscolhido !== null} aoFechar={() => { if (!abrindoCheckout) definirPlanoEscolhido(null) }} rotulo="Finalizar assinatura" className="ck">

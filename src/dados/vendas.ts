@@ -24,10 +24,10 @@ export function planosDaPessoa(planosAntigos: readonly string[] = []) {
   return { mensal, semestral, anual, pipoca: [mensal, semestral, anual] as readonly Plano[] }
 }
 
-/** Da pipoca pequena para a grande: a grande é a que salta aos olhos. */
+/** Do mensal para o anual, da esquerda para a direita: o mensal, primeiro e maior, é o destaque. */
 export const PLANOS_PIPOCA: readonly Plano[] = [PLANO_MENSAL, PLANO_SEMESTRAL, PLANO_ANUAL]
-/** No celular, o destaque vem primeiro e os outros dois logo abaixo, lado a lado. */
-export const PLANOS_CELULAR: readonly Plano[] = [PLANO_ANUAL, PLANO_SEMESTRAL, PLANO_MENSAL]
+/** No celular, o destaque (mensal) vem primeiro e os outros dois logo abaixo, lado a lado. */
+export const PLANOS_CELULAR: readonly Plano[] = [PLANO_MENSAL, PLANO_SEMESTRAL, PLANO_ANUAL]
 
 export const porMes = (p: Plano) => p.total / p.meses
 export const porDia = (p: Plano) => p.total / (p.meses * 365 / 12)
@@ -41,20 +41,14 @@ export const descontoPct = (p: Plano) => Math.round((1 - porMes(p) / MENSAL) * 1
 export const periodo = (p: Plano) => p.meses === 1 ? 'por mês' : p.meses === 6 ? 'a cada 6 meses' : 'por ano'
 export const cobranca = (p: Plano) => p.meses === 1 ? 'cobrado todo mês' : `${real(p.total)} ${periodo(p)}, de uma vez`
 
-/**
- * O "decoy": do semestral para o anual, quanto a mais se paga e quanto tempo a
- * mais se leva. Com os preços de hoje, R$ 149,40 a mais por 6 meses a mais.
- */
-export function degrauAnual(semestral: Plano = PLANO_SEMESTRAL, anual: Plano = PLANO_ANUAL) {
-  const diferenca = anual.total - semestral.total
-  const mesesAMais = anual.meses - semestral.meses
-  return { diferenca, mesesAMais, porMesAMais: diferenca / mesesAMais, texto: `Por ${real(diferenca)} a mais que o semestral, ${mesesAMais} meses a mais de estudo.` }
+/** Selo de cada plano: só o destaque (o mensal) leva selo, um convite e não um número. */
+export function seloPlano(p: Plano): string | null {
+  return p.destaque ? 'Comece por aqui' : null
 }
 
-/** Selo de cada plano: só o anual leva selo, e ele diz uma verdade aritmética. */
-export function seloPlano(p: Plano): string | null {
-  return p.destaque ? 'Melhor custo-benefício' : null
-}
+/** A linha extra do cartão em destaque: a garantia, que tira o medo de começar. */
+export const LEMBRETE_DESTAQUE = 'Mudou de ideia? Até 7 dias depois de cada cobrança, o reembolso é um botão em Minha conta.'
+
 
 /* ------------------------------------------------------------------------- */
 /* Temas que mais caem: porcentagens da contagem das provas oficiais.         */

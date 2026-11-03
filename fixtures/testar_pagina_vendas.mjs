@@ -15,9 +15,10 @@ try {
   const [mensal, semestral, anual] = m.PLANOS_PIPOCA
   const brl = (s) => s.replace(/\s/g, ' ')
 
-  // Pipoca pequena, média e grande; no celular o anual vem primeiro.
+  // Do mensal para o anual; o mensal é o destaque e vem primeiro também no celular (03/11/2026).
   assert.deepEqual(m.PLANOS_PIPOCA.map((p) => p.id), ['mensal', 'semestral', 'anual'])
-  assert.equal(m.PLANOS_CELULAR[0].id, 'anual')
+  assert.deepEqual(m.PLANOS_CELULAR.map((p) => p.id), ['mensal', 'semestral', 'anual'])
+  assert.deepEqual(m.PLANOS_PIPOCA.filter((p) => p.destaque).map((p) => p.id), ['mensal'])
   // Escada de R$ 5 por mês (reajuste de 31/10/2026): 39,90 / 34,90 / 29,90.
   assert.equal(brl(m.semMoeda(m.porMes(anual))), '29,90')
   assert.equal(brl(m.semMoeda(m.porMes(semestral))), '34,90')
@@ -28,22 +29,22 @@ try {
   assert.equal(brl(m.centavos(m.porDia(anual))), 'R$ 0,99')
   assert.ok(Math.abs(m.economia(anual) - 120) < 0.001)
   assert.equal(m.economia(mensal), 0)
-  const degrau = m.degrauAnual()
-  assert.ok(Math.abs(degrau.diferenca - 149.4) < 0.001 && degrau.mesesAMais === 6)
-  assert.equal(brl(degrau.texto), 'Por R$ 149,40 a mais que o semestral, 6 meses a mais de estudo.')
   // Quem já assinava antes do reajuste continua vendo o preço antigo, só no plano que pagava.
   const antigo = m.planosDaPessoa(['semestral', 'anual'])
   assert.equal(brl(m.semMoeda(m.porMes(antigo.anual))), '19,99')
   assert.equal(brl(m.semMoeda(m.porMes(antigo.semestral))), '29,98')
   assert.equal(m.descontoPct(antigo.anual), 50)
-  assert.equal(brl(m.degrauAnual(antigo.semestral, antigo.anual).texto), 'Por R$ 60,00 a mais que o semestral, 6 meses a mais de estudo.')
   assert.equal(m.planosDaPessoa().anual.total, anual.total)
   const soSemestral = m.planosDaPessoa(['semestral'])
   assert.equal(brl(m.semMoeda(m.porMes(soSemestral.semestral))), '29,98')
   assert.equal(soSemestral.anual.total, anual.total, 'Quem pagava o semestral não leva o anual antigo')
   assert.equal(m.planosDaPessoa(['mensal']).semestral.total, semestral.total)
-  assert.equal(m.seloPlano(anual), 'Melhor custo-benefício')
+  assert.equal(m.seloPlano(mensal), 'Comece por aqui')
   assert.equal(m.seloPlano(semestral), null)
+  assert.equal(m.seloPlano(anual), null)
+  assert.deepEqual(antigo.pipoca.filter((p) => p.destaque).map((p) => p.id), ['mensal'], 'Preço antigo não muda o destaque')
+  // O anual continua com a conta certa na chamada: 25% mais barato por mês que o mensal.
+  assert.equal(anual.chamada, 'O ano todo, pago de uma vez, 25% mais barato que o mensal.')
 
   // Temas que mais caem: só porcentagens, da que mais cai para a que menos cai.
   assert.ok(m.AREAS_QUE_CAEM.length >= 10)
