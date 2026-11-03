@@ -141,6 +141,11 @@
 .vd-plano__mes small { font-weight: 750; color: var(--texto-2); font-size: 0.95rem; }
 .vd-plano--destaque .vd-plano__mes strong { font-size: clamp(2.6rem, 4.2vw, 3.3rem); color: var(--verdete); }
 .vd-plano__total { margin: 0; color: var(--texto-2); font-size: var(--meta); }
+/* A pizza do mensal (Tales, 03/11/2026): a frase longa na chamada; onde a chamada some, a curta numa linha. */
+.vd-plano__pizza { flex: none; display: inline-block; vertical-align: -0.2em; margin-right: 0.35rem; }
+.vd-plano--mensal .vd-plano__chamada { color: var(--texto); font-weight: 650; }
+.vd-plano__pizza-curta { display: none; align-items: center; margin-top: 0.35rem; color: var(--texto); font-weight: 650; white-space: nowrap; }
+@media (max-width: 56rem) { .vd-plano__pizza-curta { display: flex; } }
 .vd-plano__ganho { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0; font-size: var(--meta); font-weight: 700; color: var(--acerto-texto, var(--acerto)); min-height: 1.5rem; }
 .vd-plano__desconto { padding: 0.1rem 0.4rem; border-radius: 3px; background: var(--acerto); color: var(--sobre-acerto, #fff); font-weight: 800; }
 .vd-plano__neutro { color: var(--texto-2); font-weight: 650; }

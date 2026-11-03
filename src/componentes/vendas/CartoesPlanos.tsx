@@ -8,6 +8,19 @@ import { IconePix, IconeCartao } from './IconesPagamento'
 
 const TAMANHO: Record<string, string> = { mensal: '1 mês', semestral: '6 meses', anual: '12 meses' }
 
+/* Fatia de pizza em pixel (9×9), desenhada em SVG para ficar nítida e leve: k contorno, b borda, y queijo, r calabresa. */
+const PIZZA = ['kkkkkkkkk', 'kbbbbbbbk', 'kyyryyyyk', '.kyyyyrk.', '.kyryyyk.', '..kyyyk..', '..kyryk..', '...kyk...', '....k....']
+const CORES_PIZZA: Record<string, string> = { k: '#1b1208', b: '#c9832e', y: '#f4cf7c', r: '#b3423a' }
+function PizzaPixel() {
+  const rastro: Record<string, string> = {}
+  PIZZA.forEach((linha, y) => [...linha].forEach((c, x) => { if (c !== '.') rastro[c] = (rastro[c] ?? '') + `M${x} ${y}h1v1h-1z` }))
+  return (
+    <svg className="vd-plano__pizza" viewBox="0 0 9 9" width={18} height={18} aria-hidden="true" shapeRendering="crispEdges">
+      {Object.entries(rastro).map(([c, d]) => <path key={c} d={d} fill={CORES_PIZZA[c]} />)}
+    </svg>
+  )
+}
+
 /**
  * Os três planos lado a lado. Desde 03/11/2026 o mensal é o destaque (Tales): vem à
  * esquerda, maior, com o selo, o baú e o botão dourado, e o semestral e o anual ficam
@@ -42,10 +55,10 @@ export function CartoesPlanos({ local, conta, pagamentos, semCompra, rotulo, aoE
               <h3 id={`vd-plano-${local}-${p.id}`}>{p.nome}</h3>
               <span className="vd-plano__tamanho">{TAMANHO[p.id]}</span>
             </header>
-            <p className="vd-plano__chamada">{p.chamada}</p>
+            <p className="vd-plano__chamada">{p.id === 'mensal' && <PizzaPixel />}{p.chamada}</p>
             <p className="vd-plano__mes" aria-label={`${real(porMes(p))} por mês`}><small>R$</small><strong>{semMoeda(porMes(p))}</strong><small>/mês</small></p>
             {/* O selo vai dentro do total: os cartões alinham as linhas por subgrid e precisam do mesmo número de filhos. */}
-            <p className="vd-plano__total">{cobranca(p)}{p.id !== 'mensal' && (planosAntigos.includes(p.id) ? <span className="vd-plano__abertura">Seu preço de sempre</span> : PRECO_DE_ABERTURA && <span className="vd-plano__abertura">Preço de abertura</span>)}</p>
+            <p className="vd-plano__total">{cobranca(p)}{/* Onde a chamada some (celular e tablet), a pizza vem na versão curta, numa linha, junto ao preço. */}{p.id === 'mensal' && <span className="vd-plano__pizza-curta"><PizzaPixel />Custa menos que uma pizza por mês</span>}{p.id !== 'mensal' && (planosAntigos.includes(p.id) ? <span className="vd-plano__abertura">Seu preço de sempre</span> : PRECO_DE_ABERTURA && <span className="vd-plano__abertura">Preço de abertura</span>)}</p>
             <p className="vd-plano__ganho">
               {desconto > 0
                 ? <><span className="vd-plano__desconto">-{desconto}%</span> economia de {real(economia(p))}</>

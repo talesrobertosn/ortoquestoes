@@ -97,6 +97,7 @@ try {
     assert.ok(await destaque.locator('.vd-botao-destaque').count() === 1, 'Mensal sem o botão dourado')
     assert.equal(await topo.locator('.vd-plano--anual .vd-plano__selo').count(), 0, 'O anual ainda tem selo')
     assert.ok((await topo.locator('.vd-plano--anual').innerText()).includes('-25%'), 'O anual perdeu o desconto')
+    assert.ok((await destaque.innerText()).includes('Prepare-se para o TEOT por menos que uma pizza por mês'), 'Mensal sem a pizza no computador')
     assert.ok((await pagina.locator('.vd-heroi').innerText()).includes('7 dias de garantia'), 'Garantia fora do topo')
     // Nenhum total de questões: nem o da contagem das provas, nem o do acervo.
     const texto = await pagina.locator('main, body').first().innerText()
@@ -235,6 +236,10 @@ try {
       const caixa = (id) => pagina.locator(`.vd-heroi .vd-plano--${id}`).boundingBox()
       const [m, s, a] = [await caixa('mensal'), await caixa('semestral'), await caixa('anual')]
       assert.ok(m.y < s.y && Math.abs(s.y - a.y) < 2 && s.x < a.x && m.width > s.width * 1.8, 'Ordem dos planos no celular')
+      // A pizza curta, numa linha só, no lugar da chamada (que some no celular).
+      const pizza = pagina.locator('.vd-heroi .vd-plano--mensal .vd-plano__pizza-curta')
+      assert.equal((await pizza.innerText()).trim(), 'Custa menos que uma pizza por mês')
+      assert.ok((await pizza.boundingBox()).height < 30, 'A pizza quebrou em duas linhas no celular')
     }
     await contexto.close()
   }
