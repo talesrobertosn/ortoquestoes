@@ -109,7 +109,7 @@ try {
     assert.equal(await pagina.locator('.vd-suporte--final').count(), 1, 'Atalho do suporte ausente no fim da página')
     // Preço de inauguração: fora da caixa verde, logo acima do atalho do suporte.
     const inauguracao = pagina.locator('.vd-depois-planos .vd-abertura:not(.vd-abertura--guardado)')
-    assert.match(await inauguracao.innerText(), /preço fica guardado/, 'Aviso de inauguração ausente')
+    assert.match(await inauguracao.innerText(), /este preço é seu para sempre/, 'Aviso de inauguração ausente')
     assert.equal(await pagina.locator('.vd-heroi .vd-abertura').count(), 0, 'O aviso de inauguração deveria ficar fora da caixa verde')
     const [yAviso, ySuporte] = [(await inauguracao.boundingBox()).y, (await pagina.locator('.vd-suporte--topo').boundingBox()).y]
     assert.ok(yAviso < ySuporte, 'O aviso de inauguração deveria vir acima do suporte')
