@@ -3282,6 +3282,152 @@
    ]
   },
   {
+   "id": "green-dupuytren",
+   "versao": 1,
+   "titulo": "Doença de DUPUYTREN",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 80)",
+   "capitulo": "Capítulo 4 · Dupuytren Disease",
+   "resumo": "Homem branco idoso, herança autossômica dominante de penetrância variável, bilateral mas assimétrica, anular e mínimo; diabetes, epilepsia e anticonvulsivantes, tabagismo, álcool e hipercolesterolemia associados, artrite reumatoide não; diátese de HUESTON (família, início antes dos 50, bilateral, GARROD, LEDDERHOSE, PEYRONIE); miofibroblasto e colágeno III (razão III/I acima de 35% na proliferativa, 20% a 35% na involutiva e abaixo de 20% na residual de LUCK); TUBIANA em degraus de 45 graus; corda pré-tendínea na MF, corda espiral (pré-tendínea, banda espiral, lâmina digital lateral e GRAYSON) que leva o feixe para a linha média e para a superfície, retrovascular e lateral na IFD; CLELAND poupado; cirurgia com MF de 30 graus ou qualquer IFP de 15 graus; agulha mais barata, dermofasciectomia com menor recidiva; JACOBSEN no mínimo, McCASH palma aberta; lesão de nervo digital e flare como complicações.",
+   "acesso": "gratis",
+   "minutos": 37,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-tem-a-doenca",
+     "titulo": "Quem tem a doença",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diatese-a-gravidade-biologica",
+     "titulo": "Diátese: a gravidade biológica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "doencas-associadas-ledderhose-peyronie-e-os-coxi",
+     "titulo": "Doenças associadas: LEDDERHOSE, PEYRONIE e os coxins de GARROD",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-que-se-ve-e-o-que-se-palpa",
+     "titulo": "O que se vê e o que se palpa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-biologia-miofibroblasto-colageno-iii-e-os-esta",
+     "titulo": "A biologia: miofibroblasto, colágeno III e os estágios de LUCK",
+     "radar": "confirmado"
+    },
+    {
+     "id": "medir-a-contratura-tubiana-e-as-armadilhas-da-go",
+     "titulo": "Medir a contratura: TUBIANA e as armadilhas da goniometria",
+     "radar": "confirmado"
+    },
+    {
+     "id": "anatomia-normal-da-fascia-palmar-e-digital",
+     "titulo": "Anatomia normal da fáscia palmar e digital",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-cordas-patologicas",
+     "titulo": "As cordas patológicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quando-tratar",
+     "titulo": "Quando tratar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fasciotomia-agulha-bisturi-e-colagenase",
+     "titulo": "Fasciotomia: agulha, bisturi e colagenase",
+     "radar": "confirmado"
+    },
+    {
+     "id": "comparando-os-procedimentos-custo-e-recidiva",
+     "titulo": "Comparando os procedimentos: custo e recidiva",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fasciectomia-retalhos-e-dermofasciectomia",
+     "titulo": "Fasciectomia, retalhos e dermofasciectomia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes-e-recidiva",
+     "titulo": "Complicações e recidiva",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0515",
+    "mao-0026",
+    "mao-0070",
+    "mao-0274",
+    "mao-0866",
+    "mao-0103",
+    "mao-1865",
+    "mao-0397",
+    "mao-0126",
+    "mao-0759",
+    "mao-1189",
+    "mao-1449",
+    "mao-1516",
+    "mao-0302",
+    "mao-0738",
+    "mao-0042",
+    "mao-1085",
+    "mao-0262",
+    "mao-0273",
+    "mao-0469",
+    "mao-0226",
+    "mao-1136",
+    "mao-0808",
+    "mao-0661",
+    "mao-1051",
+    "mao-1547",
+    "mao-1284",
+    "mao-0349",
+    "mao-1205",
+    "mao-0037",
+    "mao-0867",
+    "mao-1446",
+    "mao-0605",
+    "mao-0961",
+    "mao-1622",
+    "mao-0113",
+    "mao-0902",
+    "mao-0645",
+    "mao-0573",
+    "mao-0810",
+    "mao-0936",
+    "mao-0532",
+    "mao-0946",
+    "mao-0263",
+    "mao-0525",
+    "mao-1076",
+    "mao-0628",
+    "mao-0334",
+    "mao-0295",
+    "mao-1285",
+    "mao-0944"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Doença de Dupuytren"
+   ]
+  },
+  {
    "id": "green-exame-mao-punho",
    "versao": 1,
    "titulo": "Exame físico da mão e do punho",
