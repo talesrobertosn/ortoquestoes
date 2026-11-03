@@ -1,5 +1,11 @@
 # Página de vendas de 16/10/2026
 
+> **Atualização de 03/11/2026 (Tales):** depois do reajuste, o destaque passou do anual para o **mensal**
+> (maior lucro). O mensal vem à esquerda e primeiro no celular, com o selo "Comece por aqui", o baú, o
+> botão dourado e a linha da garantia de 7 dias; o selo "Melhor custo-benefício" e o texto do degrau
+> anual saíram; a barra fixa oferece o mensal (`plano-mensal-barra`). O semestral e o anual mantêm o
+> desconto correto em chip discreto. Prints em `docs/design/telas/2026-11-03-planos-mensal/`.
+
 Pedido do Tales em 15/10/2026: a página de planos convertia pouco e estava "pixel art demais". A
 nova versão mantém a temporada pixel nas ilustrações (baú, prancheta, turma, guerreiro, calendário,
 troféu), mas com fundo liso, tipografia firme e cantos arredondados; vende **tempo**; mostra os
