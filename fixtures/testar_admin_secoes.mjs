@@ -12,7 +12,7 @@ const pasta = await mkdtemp(join(process.cwd(), 'node_modules', '.oq-admin-secoe
 const arquivo = join(pasta, 's.mjs')
 try {
   await build({
-    stdin: { contents: `export * from './src/admin/rotas'\nexport * from './src/componentes/admin/ganhos'\nexport * from './src/componentes/admin/agora'\nexport { pedacosAtividade, areaDaQuestao } from './src/componentes/admin/formatos'\nexport * as catalogo from './src/componentes/admin/todasCartas'`, resolveDir: process.cwd(), loader: 'ts' },
+    stdin: { contents: `export * from './src/admin/rotas'\nexport * from './src/componentes/admin/ganhos'\nexport * from './src/componentes/admin/agora'\nexport { pedacosAtividade, areaDaQuestao } from './src/componentes/admin/formatos'\nexport * as catalogo from './src/componentes/admin/todasCartas'\nexport * as uso from './src/admin/dados/usoSupabase'`, resolveDir: process.cwd(), loader: 'ts' },
     outfile: arquivo, bundle: true, platform: 'node', format: 'esm', logLevel: 'error',
     define: { 'import.meta.env.BASE_URL': '"/"', 'import.meta.env.DEV': 'false', 'import.meta.env': '{}' },
   })
@@ -25,7 +25,22 @@ try {
   assert.deepEqual(m.AREAS.map(a => a.rotulo), ['Agora', 'Pessoas', 'Crescimento', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
   const partes = m.AREAS.flatMap(a => a.partes.map(p => p.id))
   assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas áreas')
-  assert.equal(partes.length, 19)
+  assert.equal(partes.length, 20)
+  // Ajustes › Uso do Supabase (03/11/2026): item próprio, com endereço que volta igual.
+  assert.deepEqual(m.defArea('configuracoes').partes.map(p => p.id), ['ajustes', 'exportar', 'supabase'])
+  assert.equal(m.areaDe('supabase'), 'configuracoes')
+  assert.equal(ida('aba=supabase'), '/admin?aba=supabase')
+  // Os três medidores: porcentagem do limite do plano e cor por faixa (sem tráfego nem funções, que pedem token).
+  {
+    const MB = 1024 ** 2, u = m.uso
+    const lista = u.medidores({ medido_em: '2026-11-03T10:00:00Z', banco_bytes: 250 * MB, tabelas: [], arquivos_bytes: 921.6 * MB, baldes: [], contas: 10, ativas_30d: 35_000 })
+    assert.deepEqual(lista.map(x => x.id), ['banco', 'arquivos', 'usuarios'])
+    assert.equal(Math.round(lista[0].pct), 50); assert.equal(Math.round(lista[1].pct), 90); assert.equal(Math.round(lista[2].pct), 70)
+    assert.deepEqual(lista.slice(0, 3).map(x => u.tomDe(x.pct)), ['ok', 'perigo', 'aviso'])
+    assert.equal(u.tamanho(182 * MB), '182 MB'); assert.equal(u.tamanho(1024 * MB), '1 GB'); assert.equal(u.tamanho(1.5 * MB), '1,5 MB')
+    assert.deepEqual(u.pertoDoLimite({ medido_em: '', banco_bytes: 250 * MB, tabelas: [], arquivos_bytes: 921.6 * MB, baldes: [], contas: 10, ativas_30d: 35_000 }).map(x => x.id), ['arquivos'])
+    assert.equal(u.medidores(null).every(x => x.pct === null), true)
+  }
   // Nenhuma parte do painel antigo some.
   for (const parte of ['usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'todas', 'ajustes'])
     assert.ok(partes.includes(parte), parte)
@@ -218,7 +233,7 @@ try {
     assert.ok(cat.combinaBusca(modelos.find(x => x.tipo === 'voltou'), null, 'DIAS fora'), 'busca sem acento e sem caixa')
   }
 
-  console.log('Painel 3.0: 7 áreas e 19 itens, Crescimento com área própria, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
+  console.log('Painel 3.0: 7 áreas e 20 itens, Crescimento com área própria, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }
