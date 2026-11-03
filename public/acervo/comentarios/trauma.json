@@ -15054,46 +15054,20 @@
   "formato": "corrido"
  },
  "trauma-0754": {
-  "conceito": "Encontrar cimento fora da vértebra e encontrar uma complicação neurológica são eventos diferentes. Essa distinção explica o par de números: o capítulo descreve **extravasamento em até 90% dos pacientes**, mas **complicação neurológica em 0,1%**. O primeiro valor é um limite descrito na literatura, não uma taxa inevitável para toda técnica e todo paciente.\n\nO cimento pode sair pelas descontinuidades da vértebra fraturada. O destino mais frequente é o disco, pelos platôs rompidos. Também há extravasamento paravertebral, epidural e pré-vertebral. Assim, muito vazamento pode ser encontrado sem que todo paciente tenha compressão neural. Quando ocorre lesão neurológica, porém, ela pode ser grave e exigir descompressão (resumo do Rockwood, 10ª ed., cap. 49, “As complicações do cimento”).\n\nCimento menos viscoso, volumes maiores e fraturas mais graves aumentam o extravasamento. Esses fatores ajudam a entender a variação entre situações, mas não permitem calcular o risco individual usando só os dois percentuais da questão.\n\n> **Na prova:** vazamento frequente não equivale a lesão neurológica frequente. A seção de complicações do cimento no resumo da Biblioteca apresenta os destinos e as duas taxas.",
-  "correta": "**C: 90% dos pacientes, com complicações neurológicas em 0,1%.** Corresponde ao extravasamento descrito em até nove de cada dez e à baixa frequência de consequência neurológica. O número maior se refere ao vazamento, e o menor à complicação; não são dois modos de medir o mesmo evento.",
+  "conceito": "A questão trabalha com dois números que costumam ser confundidos: quantas vezes o cimento vaza na cimentação vertebral, e quantas vezes esse vazamento machuca a medula ou as raízes. Um é muito alto, o outro muito baixo, e o contraste entre eles é o ensinamento.\n\n**A fratura e o procedimento.** A fratura vertebral por insuficiência é a fratura osteoporótica da coluna, o local mais comum de fratura por osteoporose (cerca de 50%, Rockwood and Green's Fractures in Adults, 10ª ed., cap. 49). O tratamento inicial é não operatório: o Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1916), recomenda repouso relativo e sintomáticos por 4 a 6 semanas, depois mobilização, tratando a osteoporose; a maioria fica entre T12 e L2. A cifoplastia entra se a dor for intolerável ou o tratamento falhar, **desde que a parede posterior esteja íntegra**. Na **vertebroplastia**, o cimento é injetado no corpo vertebral pelo pedículo; na **cifoplastia**, um balão primeiro reduz a cunha e abre espaço, e o cimento vem depois. O Rockwood considera as duas praticamente equivalentes em dor e função, com a cifoplastia mais cara.\n\n**Por que o cimento vaza tanto.** O corpo vertebral fraturado tem traços na cortical e na placa terminal, e o cimento injetado sob pressão procura o caminho mais fácil. O Rockwood (cap. 49) descreve o extravasamento como **comum, em até 9 de cada 10 pacientes**, e **geralmente sem consequência**; ele é maior com **cimento menos viscoso, mais volume injetado e fratura mais grave**.\n\n| Extravasamento (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 49) | |\n|---|---|\n| Frequência | até 90% dos pacientes |\n| Para o disco | 45% |\n| Paravertebral | 35% |\n| Epidural | 20% |\n| Pré-vertebral | 18% |\n| Complicação neurológica | 0,1% |\n\n**Por que quase nunca dói.** A maior parte do cimento que escapa vai para o disco ou para os tecidos ao lado da vértebra, longe do canal. A **complicação neurológica ocorre em 0,1%**, e, quando ocorre, pode exigir descompressão. O vazamento para o disco tem outra consequência, mais frequente: predispõe a placa terminal adjacente à fratura. A embolia de cimento é rara, mas pode ser fatal.\n\nA cimentação e suas complicações estão na seção \"Fratura vertebral osteoporótica e cimentação\" do resumo.",
+  "correta": "**C) 90% dos pacientes, com complicações neurológicas em 0,1%.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 49), descreve o extravasamento como comum, em até 9 de cada 10 pacientes, e geralmente sem consequência, com complicação neurológica em 0,1%. O número alto mede o vazamento; o baixo, o dano que ele causa.",
   "incorretas": {
-   "A": "**Acerta a raridade neurológica e subestima o extravasamento.** O 0,1% está de acordo com o resumo, mas 10% não reproduz a frequência máxima descrita de vazamento. A maioria dos extravasamentos não produz consequência neurológica.",
-   "B": "**Inverte o contraste central.** Apresenta pouco extravasamento e muita complicação neurológica. O material descreve justamente vazamento comum, em geral sem consequência, e comprometimento neurológico raro.",
-   "D": "**O vazamento frequente não justifica 10% de lesão neurológica.** A primeira parte acompanha o limite de 90%, mas a segunda amplia a complicação de 0,1% para 10%. Destino e consequência clínica do cimento precisam ser distinguidos."
+   "A": "**Acerta o déficit e subestima o vazamento.** A complicação neurológica é mesmo de 0,1%, mas o extravasamento não é raro: ocorre em até 90% dos pacientes (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 49). Quem pensa que o vazamento é incomum porque o déficit é incomum cai aqui.",
+   "B": "**Os dois números estão errados.** O extravasamento é de até 90%, e não de 10%; a complicação neurológica é de 0,1%, cem vezes menor que os 10% propostos. Um procedimento que lesasse a medula em um a cada dez pacientes não seria indicado para dor.",
+   "D": "**O vazamento está certo, o déficit não.** Com 90% de extravasamento e 10% de lesão neurológica, um de cada nove vazamentos seria grave; o Rockwood descreve o contrário, vazamento quase sempre sem consequência e déficit em 0,1%. A maior parte do cimento escapa para o disco e para os tecidos paravertebrais, longe do canal."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 49 · Thoracolumbar Spine Fractures and Dislocations (Kitto, Edwards e Tannoury). Seções: Fratura vertebral osteoporótica e cimentação."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 49 (Thoracolumbar Spine Fractures and Dislocations, seção das fraturas osteoporóticas)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (fratura vertebral osteoporótica), p. 1916",
+   "Resumo OrtoQuestões: Osteoporose: diagnóstico e tratamento"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-49-fratura-toracolombar",
-     "titulo": "Fraturas e luxações da coluna toracolombar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
-     "secoes": [
-      "Fratura vertebral osteoporótica e cimentação"
-     ],
-     "blocos": [
-      "fratura-vertebral-osteoporotica-e-cimentacao-95070427",
-      "fratura-vertebral-osteoporotica-e-cimentacao-7f8287dd",
-      "fratura-vertebral-osteoporotica-e-cimentacao-131730fc",
-      "fratura-vertebral-osteoporotica-e-cimentacao-d544fd1e",
-      "fratura-vertebral-osteoporotica-e-cimentacao-6bf668dc",
-      "fratura-vertebral-osteoporotica-e-cimentacao-80a53563"
-     ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
-     "trechosSha256": "cc87f4ff77a2eacacb1eea0e9643eb9ccfddcccd5e3769b3bac2409304416897"
-    }
-   ],
-   "questaoSha256": "80c6911c1f184521756c4a579aaec466b8520b5da6e8ae771a53175dc4550564",
-   "comentarioSha256": "573342c2958f54ccc386303f4477a2999ff3bd900211d52dabd12be1cb05561a"
-  }
+  "geradoEm": "2026-11-03",
+  "conferido": false
  },
  "trauma-0755": {
   "conceito": "Os cortes mostram translação entre vértebras e perda da relação das facetas, com luxação. Mesmo sem déficit neurológico, esse padrão pode somar pontos suficientes para tratamento cirúrgico no SLIC: **translação 4, complexo discoligamentar roto 2 e neurologia intacta 0, total 6**.\n\nO escore combina três domínios; não é uma escala apenas de força ou sensibilidade. A perda grosseira da relação facetária e o desalinhamento caracterizam a morfologia de rotação/translação e implicam falha da contenção discoligamentar no padrão mostrado (Rockwood, 10ª ed., cap. 48, “SLIC: a classificação que vira conduta”).\n\n**Um paciente pode estar neurologicamente íntegro e mecanicamente instável.** O exame intacto zera o componente neurológico, mas não apaga a luxação nem restaura os ligamentos. No sistema apresentado, 3 ou menos costuma orientar tratamento não cirúrgico; 4 é intermediário; 5 ou mais favorece cirurgia.\n\nO total descreve a indicação pelo escore. A imagem e a avaliação clínica também são necessárias para planejar redução, investigar disco e escolher a via de estabilização; os seis pontos não especificam sozinhos uma técnica operatória.\n\n> **Na prova:** fratura-luxação com translação e neurologia intacta pode somar 6 e ter indicação cirúrgica.",
