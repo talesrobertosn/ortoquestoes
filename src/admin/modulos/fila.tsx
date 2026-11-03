@@ -23,7 +23,8 @@ export function usarFila() {
   ]
   const parados = useMemo(() => p.usuarios ? p.usuarios.filter(u => novoParado(u)) : null, [p.usuarios])
   // Uso do Supabase: só entra na fila a partir de 80% de algum limite. Sem a função no banco, fica de fora calado.
-  const usoQ = usarRpc<UsoSupabase>(p.conta, 'uso_supabase_admin', {}, { validadeMs: 30 * 60_000 })
+  // Com a página aberta, mede de novo a cada 30 minutos (o uso muda devagar).
+  const usoQ = usarRpc<UsoSupabase>(p.conta, 'uso_supabase_admin', {}, { validadeMs: 30 * 60_000, atualizarCada: 30 * 60_000 })
   const uso = usoQ.dados && typeof usoQ.dados === 'object' ? usoQ.dados : null
   const perto = useMemo(() => pertoDoLimite(uso).map(m => ({ id: m.id, nome: m.nome, pct: m.pct ?? 0 })), [uso])
   return useMemo(() => filaDeAtencao({ eventos: p.eventos, lidosPagamento: p.lidosPagamento.lidos, assinaturas: p.reais, pendenciasConteudo: p.pendenciasConteudo, novosParados: parados, fontesIndisponiveis: fontes, usoSupabase: perto }),

@@ -41,7 +41,8 @@ export default function UsoSupabase() {
     </p>}
 
     <section className="us-grade" aria-label="Medidores de uso">
-      {!uso && !q.erro ? [0, 1, 2].map(i => <div key={i} className="a3-painel" style={{ padding: 20 }}><Carregando linhas={3} texto={i ? '' : 'Medindo o banco…'} /></div>)
+      {/* Sem medição (falhou ou a função não existe) os medidores somem: nunca mostrar 0% como se houvesse folga. */}
+      {!uso ? (!q.erro && [0, 1, 2].map(i => <div key={i} className="a3-painel" style={{ padding: 20 }}><Carregando linhas={3} texto={i ? '' : 'Medindo o banco…'} /></div>))
         : lista.map(m => <CartaoMedidor key={m.id} m={m} extra={m.id === 'usuarios' && uso ? `${Number(uso.contas).toLocaleString('pt-BR')} contas no total` : undefined} />)}
     </section>
 
