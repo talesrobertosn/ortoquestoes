@@ -340,6 +340,136 @@
    ]
   },
   {
+   "id": "callaghan-exame-quadril",
+   "versao": 1,
+   "titulo": "Exame físico do quadril",
+   "especialidade": "quadril",
+   "livro": "The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)",
+   "edicao": "Edição de 2017",
+   "capitulo": "Capítulo 22 · History and Physical Examination",
+   "resumo": "Exame em cinco camadas (osteocondral, capsulolabral, musculotendínea, neurovascular e cadeia cinemática; FREIBERG e PACE são os autores dos testes neurovasculares) na ordem em pé, sentado, supino, lateral e prono; sinal do C = dor intra-articular; TRENDELENBURG (apoio unipodal por 6 segundos, lado normal primeiro, desvio > 2 cm, pelve cai do lado oposto ao glúteo médio insuficiente; força abdutora cerca de 2,5 vezes o peso); rotação interna sentado normal de 20 a 35 graus, a primeira a se perder; THOMAS = contratura em flexão; FABER/PATRICK = quadril versus sacroilíaca; STINCHFIELD = patologia articular; FADIR (flexão, adução e rotação interna) = impacto anterior; DEXRIT = impacto superior e posterior e instabilidade anteroinferior; OBER = trato iliotibial (extensão) e glúteo médio (neutro); piriforme ativo em abdução e rotação externa contra resistência, passivo em adução e rotação interna; CRAIG = anteversão; ELY = reto femoral; LUDLOFF = iliopsoas e trocânter menor.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-cinco-camadas-e-quem-inventou-cada-familia-de",
+     "titulo": "As cinco camadas e quem inventou cada família de testes",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-historia-e-os-questionarios",
+     "titulo": "A história e os questionários",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-ordem-do-exame-e-a-inspecao-em-pe",
+     "titulo": "A ordem do exame e a inspeção em pé",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-marcha",
+     "titulo": "A marcha",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-apoio-unipodal-teste-de-trendelenburg",
+     "titulo": "O apoio unipodal: teste de TRENDELENBURG",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sentado-neurovascular-e-rotacoes",
+     "titulo": "Sentado: neurovascular e rotações",
+     "radar": "clinico"
+    },
+    {
+     "id": "decubito-dorsal-thomas-patrick-stinchfield-e-o-r",
+     "titulo": "Decúbito dorsal: THOMAS, PATRICK, STINCHFIELD e o rolamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "congruencia-femoroacetabular-impacto-e-instabili",
+     "titulo": "Congruência femoroacetabular: impacto e instabilidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "decubito-lateral-trocanter-abdutores-e-ober",
+     "titulo": "Decúbito lateral: trocânter, abdutores e OBER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dor-posterior-extra-articular-piriforme-freiberg",
+     "titulo": "Dor posterior extra-articular: piriforme, FREIBERG e PACE",
+     "radar": "confirmado"
+    },
+    {
+     "id": "decubito-ventral-craig-e-ely",
+     "titulo": "Decúbito ventral: CRAIG e ELY",
+     "radar": "fundamento"
+    },
+    {
+     "id": "iliopsoas-e-reto-femoral-ludloff-e-as-avulsoes",
+     "titulo": "Iliopsoas e reto femoral: LUDLOFF e as avulsões",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ressaltos",
+     "titulo": "Ressaltos",
+     "radar": "clinico"
+    },
+    {
+     "id": "quadril-ou-coluna-a-lombociatalgia-que-nao-fecha",
+     "titulo": "Quadril ou coluna: a lombociatalgia que não fecha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "quadril-0160",
+    "quadril-0218",
+    "quadril-0485",
+    "quadril-0209",
+    "quadril-0069",
+    "quadril-0714",
+    "quadril-0484",
+    "quadril-0643",
+    "quadril-0514",
+    "quadril-0152",
+    "quadril-0173",
+    "quadril-0334",
+    "quadril-0065",
+    "quadril-0046",
+    "quadril-0077",
+    "quadril-0124",
+    "quadril-0005",
+    "quadril-0517",
+    "quadril-0518"
+   ],
+   "treino": [
+    "quadril-0595",
+    "quadril-0596",
+    "quadril-0597",
+    "quadril-0598",
+    "quadril-0599",
+    "quadril-0255",
+    "quadril-0600",
+    "quadril-0603",
+    "quadril-0602",
+    "quadril-0601"
+   ],
+   "subtemas": [
+    "Exame físico do quadril"
+   ]
+  },
+  {
    "id": "callaghan-historia-biomecanica",
    "versao": 1,
    "titulo": "História da cirurgia do quadril, biomecânica e cinemática da artroplastia",
