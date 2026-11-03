@@ -21,6 +21,8 @@ Gere com `node marketing/instagram/gerar.mjs marketing/instagram/estilos/<estilo
 
 ## Raspadinha da prova (stories)
 
+> **Retirada em 03/11/2026 pelo Tales: nunca mais sugerir nem usar.** Fica aqui só como registro.
+
 **Quando usar:** questões de imagem com alternativas curtas (epônimos, classificações, sinais). A brincadeira é raspar para ver a resposta.
 
 1. **Bilhete:** título "Raspadinha da prova", prova e ano, a imagem real, o enunciado exato, as quatro alternativas e a área prateada "Raspe no próximo story" com a moeda.

@@ -101,6 +101,8 @@ amostras: [docs/emails/MODELOS.md](../emails/MODELOS.md); ideias: [docs/emails/I
 - Favoritos do dono: **Cartaz de cinema** (stories; "fenomenal") e **Jornal** (feed).
 - Um post bom tem: gancho na capa sem entregar a resposta, a questão real com "comente a sua letra",
   a explicação em passos e a resposta no fim, com uma frase "para a prova".
+- **Raspadinha da prova: nunca mais sugerir nem usar** (Tales, 03/11/2026; recusada muitas vezes).
+- **Questão do post: dizer o id e o assunto ao Tales antes de montar**, para ele confirmar que ainda não foi feita (03/11/2026).
 - Estilos novos são bem-vindos; quando um for aprovado, vira modelo em `marketing/instagram/estilos/`.
 
 ## Outros agentes (Codex)

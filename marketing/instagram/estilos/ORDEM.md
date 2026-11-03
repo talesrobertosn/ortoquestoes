@@ -21,8 +21,8 @@ Ordem atual (em 10/11/2026 entrou nos stories a **Oficina do encaixe**, logo dep
 |---|---|
 | 1. Jornal | 1. Cartaz de cinema |
 | 2. Cofre de duas chaves | 2. Busca (aprovado em 22/10/2026) |
-| 3. Busca (aprovado em 22/10/2026) | 3. Mecânica fina |
-| 4. Tabela de Snellen | 4. Raspadinha da prova |
+| 3. Busca (aprovado em 22/10/2026) | 3. Oficina do encaixe (aprovado em 10/11/2026) |
+| 4. Tabela de Snellen | 4. Mecânica fina |
 | 5. GPS do nervo | 5. Planta de engenharia |
 | 6. Caderneta de topografia | 6. Exame de DNA |
 | 7. Museu | 7. Bingo da prova |
@@ -35,5 +35,7 @@ Ordem atual (em 10/11/2026 entrou nos stories a **Oficina do encaixe**, logo dep
 | 14. Plantão das 3h14 |  |
 | 15. Modelo padrão |  |
 | 16. Conversa do grupo R+ |  |
+
+**Raspadinha da prova: retirada (Tales, 03/11/2026).** Nunca mais sugerir nem usar, nem como ideia ou variação. Ele já recusou muitas vezes.
 
 Os **Stories com alternativas** ([guia](STORIES-COM-ALTERNATIVAS.md), aprovados em 18/11/2026) também ficam fora da fila: entram quando o Tales pedir. Os stories de propaganda (Treine grátis, Créditos finais) ficam fora da fila: entram quando o Tales pedir, sempre **sem figurinha de link** (orientação de 19/10/2026).
