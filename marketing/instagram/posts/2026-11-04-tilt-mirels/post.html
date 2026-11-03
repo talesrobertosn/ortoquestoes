@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>TILT! O fliperama do MIRELS</title>
+<!-- 03/11/2026, pedido do Tales: "a pegada 2D HD, o design mais lindo do universo". A arte é a cena nova
+     scripts/gerar_cena_fliperama.py (a taverna à noite com a máquina de fliperama do MIRELS), pintada por código,
+     uma imagem por estado da máquina: o bumper aceso e o placar de cada slide estão na própria arte
+     (0 → 2 → 4 → 7 → 8; stories: 12 no TILT). Mascote e gato: folhas de poses do site, por cima da arte.
+     Questões reais: tumores-0362 (ENARE R4 Ortopedia 2025, C, 8 pontos) no feed; tumores-0364 (R4 Coluna SES-DF
+     2022, item Errado) e tumores-0190 (TEOT 2024, B, 2 pontos) nos stories. Textos dos comentários do site.
+     python3 scripts/gerar_cena_fliperama.py marketing/instagram/posts/2026-11-04-tilt-mirels/arte
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-04-tilt-mirels/post.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Jersey; src: url(../../fontes/jersey-10-latin-400-normal.woff2) format('woff2'); }
+:root { --ouro: #f4cf7c; --ouro-2: #ffe6a3; --tinta: #f6eedb; --apoio: #c9bfa8; --vidro: rgba(10, 16, 22, .76); --filete: rgba(255, 230, 170, .22);
+  --local: #ff7a64; --tamanho: #6ab4ff; --tipo: #5ae08a; --dor: #ffcc4a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #111; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1350px; margin-bottom: 40px; color: var(--tinta); font-family: Inter, sans-serif; background: #07090c; }
+section.story { height: 1920px; }
+.arte { position: absolute; inset: 0; width: 100%; height: 100%; display: block; image-rendering: pixelated; }
+.veu-esq { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(4, 6, 10, .62) 0%, rgba(4, 6, 10, .38) 34%, transparent 50%); }
+.veu-baixo { position: absolute; left: 0; right: 0; bottom: 0; height: 46%; background: linear-gradient(180deg, transparent, rgba(4, 6, 10, .82) 62%); }
+
+/* Etiqueta da marca e o contador, no alto. */
+.marca { position: absolute; left: 56px; top: 50px; z-index: 5; display: flex; align-items: center; gap: 12px; font: 600 26px Jakarta; letter-spacing: -.01em; }
+.marca svg { width: 42px; height: 42px; }
+.marca b { font-weight: 800; }
+.contador { position: absolute; right: 56px; top: 56px; z-index: 5; font: 34px/1 Jersey; color: var(--ouro); letter-spacing: .04em; text-shadow: 0 0 14px rgba(255, 190, 80, .55); }
+
+/* Vidro dos painéis (o mesmo do site: verde-noite translúcido, filete dourado). */
+.painel { position: absolute; z-index: 4; padding: 30px 34px; border-radius: 26px; background: var(--vidro); box-shadow: inset 0 0 0 1.5px var(--filete), 0 30px 60px rgba(0, 0, 0, .55);
+  -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+.selo { display: inline-flex; align-items: center; gap: 10px; padding: 9px 18px; border-radius: 99px; font: 800 22px Jakarta; letter-spacing: .12em; text-transform: uppercase; color: #1f1505; background: var(--ouro); }
+.rotulo { font: 800 22px Inter; letter-spacing: .16em; text-transform: uppercase; color: var(--ouro); }
+h1, h2 { font-family: Jakarta; font-weight: 800; letter-spacing: -.035em; text-wrap: balance; }
+h1 { font-size: 78px; line-height: 1; }
+h2 { font-size: 54px; line-height: 1.04; }
+h1 em, h2 em { font-style: normal; color: var(--ouro); }
+.texto { font: 500 30px/1.38 Inter; color: #e4dcc8; text-wrap: pretty; }
+.texto b { color: #fff; font-weight: 800; }
+.pequeno { font: 500 24px/1.4 Inter; color: var(--apoio); }
+
+/* Fichas de dados do caso (chips). */
+.chips { display: flex; flex-wrap: wrap; gap: 12px; }
+.chip { padding: 10px 18px; border-radius: 14px; font: 700 26px Jakarta; letter-spacing: -.01em; background: rgba(255, 255, 255, .08); box-shadow: inset 0 0 0 1.5px var(--filete); }
+
+/* Etiqueta de bumper apontando o que acendeu na arte. */
+.tag { position: absolute; z-index: 5; display: flex; align-items: center; gap: 14px; padding: 12px 20px 12px 14px; border-radius: 18px; background: rgba(8, 10, 14, .86); box-shadow: inset 0 0 0 2px var(--c), 0 0 30px color-mix(in srgb, var(--c) 45%, transparent), 0 18px 30px rgba(0, 0, 0, .5); }
+.tag i { display: grid; place-items: center; width: 64px; height: 64px; border-radius: 14px; font: 46px/1 Jersey; font-style: normal; color: #111; background: var(--c); }
+.tag span { font: 800 26px Jakarta; letter-spacing: .02em; text-transform: uppercase; }
+.tag small { display: block; font: 600 20px Inter; letter-spacing: 0; text-transform: none; color: var(--apoio); }
+
+/* Placar de pontos (lado do texto), espelhando o da máquina. */
+.conta { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.conta .n { display: grid; place-items: center; min-width: 58px; height: 58px; padding: 0 10px; border-radius: 12px; font: 42px/1 Jersey; color: #111; }
+.conta .n.apagado { color: rgba(255, 255, 255, .35); background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .14); }
+.conta .mais { font: 34px Jersey; color: var(--apoio); }
+.conta .total { margin-left: 6px; padding: 6px 16px; border-radius: 12px; font: 48px/1 Jersey; color: #1f1505; background: var(--ouro); box-shadow: 0 0 24px rgba(255, 200, 90, .5); }
+
+/* Alternativas como fichas de fliperama. */
+.fichas { display: flex; gap: 16px; }
+.ficha { position: relative; flex: 1; display: grid; justify-items: center; gap: 4px; padding: 14px 0 12px; border-radius: 50% / 34%; background: radial-gradient(circle at 35% 25%, #fff4c8, #f4cf7c 45%, #b38328); box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .28), inset 0 -6px 0 rgba(0, 0, 0, .18), 0 12px 22px rgba(0, 0, 0, .45); color: #2a1a04; }
+.ficha b { font: 800 22px Jakarta; letter-spacing: .1em; opacity: .7; }
+.ficha span { font: 64px/0.9 Jersey; }
+.ficha.certa { background: radial-gradient(circle at 35% 25%, #d8ffe6, #5ae08a 45%, #1e8a4a); box-shadow: inset 0 0 0 5px rgba(255, 255, 255, .35), 0 0 36px rgba(90, 224, 138, .7), 0 12px 22px rgba(0, 0, 0, .45); }
+.ficha.fora { opacity: .32; filter: grayscale(.7); }
+
+/* Mascote e gato (folhas de poses do site). */
+.boneco { position: absolute; z-index: 3; image-rendering: pixelated; background-repeat: no-repeat; filter: brightness(.86) saturate(1.05) drop-shadow(0 10px 8px rgba(0, 0, 0, .55)); }
+.esqueleto { width: 192px; height: 256px; background-image: url(../../../../public/pixel/mascote/esqueleto-poses.png); background-size: 1536px 2304px; }
+.gato { width: 192px; height: 120px; background-image: url(../../../../public/pixel/mascote/gato-poses.png); background-size: 1152px 720px; background-position: 0 0; }
+.sombra-pe { position: absolute; z-index: 2; height: 22px; border-radius: 50%; background: radial-gradient(closest-side, rgba(0, 0, 0, .6), transparent); }
+
+/* Tabela do MIRELS. */
+.tabela { width: 100%; border-collapse: separate; border-spacing: 0 10px; }
+.tabela th { font: 800 20px Inter; letter-spacing: .14em; text-transform: uppercase; color: var(--apoio); text-align: center; padding: 0 6px; }
+.tabela th:first-child { text-align: left; }
+.tabela td { padding: 14px 10px; font: 700 25px/1.2 Jakarta; text-align: center; background: rgba(255, 255, 255, .06); }
+.tabela td:first-child { text-align: left; border-radius: 14px 0 0 14px; font-weight: 800; color: #fff; }
+.tabela td:last-child { border-radius: 0 14px 14px 0; }
+.tabela td i { display: inline-block; width: 14px; height: 14px; margin-right: 10px; border-radius: 50%; background: var(--c); box-shadow: 0 0 12px var(--c); vertical-align: 1px; }
+.faixas { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+.faixa { padding: 16px 18px; border-radius: 16px; background: rgba(255, 255, 255, .06); box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .12); }
+.faixa b { display: block; font: 46px/1 Jersey; color: var(--c); }
+.faixa span { display: block; margin-top: 6px; font: 600 22px/1.3 Inter; color: #e4dcc8; }
+
+.botao { display: inline-flex; align-items: center; gap: 14px; padding: 24px 56px; border-radius: 99px; font: 800 46px Jakarta; letter-spacing: -.02em; color: #2a1e05; background: linear-gradient(#ffe6a3, #f0bd52); box-shadow: 0 18px 44px rgba(244, 207, 124, .35), inset 0 3px 0 rgba(255, 255, 255, .6); }
+.site { font: 800 40px Jakarta; letter-spacing: -.02em; color: var(--tinta); text-shadow: 0 2px 12px rgba(0, 0, 0, .7); }
+.tilt { font: 230px/0.82 Jersey; color: #ff5a3c; letter-spacing: .04em; text-shadow: 0 0 22px rgba(255, 80, 50, .9), 0 0 70px rgba(255, 60, 30, .6), 0 6px 0 #5a0e04; transform: rotate(-6deg); }
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+<symbol id="sim" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#14655e"/>
+<circle cx="17" cy="20" r="4.5" fill="#9cc3bd"/><rect x="26" y="16.5" width="24" height="7" rx="3.5" fill="#9cc3bd"/>
+<circle cx="17" cy="32" r="4.5" fill="#f4cf7c"/><rect x="26" y="28.5" width="24" height="7" rx="3.5" fill="#f4cf7c"/>
+<circle cx="17" cy="44" r="4.5" fill="#9cc3bd"/><rect x="26" y="40.5" width="19" height="7" rx="3.5" fill="#9cc3bd"/></symbol>
+</defs></svg>
+
+<!-- ============================ FEED (8 slides, 1080 x 1350) ============================ -->
+
+<!-- 1. Capa -->
+<section id="f1-capa">
+  <img class="arte" src="arte/feed-apagado.webp" alt="">
+  <div class="veu-esq"></div><div class="veu-baixo"></div>
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div><div class="contador">1/8</div>
+  <span class="boneco gato" style="left:792px;top:58px"></span>
+  <div style="position:absolute;left:56px;top:150px;width:520px;z-index:4">
+    <span class="selo">ENARE R4 · 2025</span>
+    <h1 style="margin-top:26px">Quantos pontos essa lesão faz no <em>MIRELS?</em></h1>
+    <p class="texto" style="margin-top:24px">A banca escolheu os dados para pegar dois erros clássicos. Jogue a bola e some ponto por ponto.</p>
+  </div>
+  <div class="painel" style="left:56px;right:56px;bottom:64px;padding:26px 30px">
+    <p class="rotulo">O caso</p>
+    <div class="chips" style="margin-top:14px">
+      <span class="chip">Tireoide</span><span class="chip">Fêmur distal</span><span class="chip">Lítica</span><span class="chip">50% do diâmetro</span><span class="chip">Dor leve</span>
+    </div>
+  </div>
+  <span class="sombra-pe" style="left:356px;top:1012px;width:150px"></span>
+  <span class="boneco esqueleto" style="left:334px;top:770px;background-position:0 -2048px"></span>
+</section>
+
+<!-- 2. A questão como caiu -->
+<section id="f2-questao">
+  <img class="arte" src="arte/feed-apagado.webp" alt="">
+  <div class="veu-baixo" style="height:70%"></div>
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div><div class="contador">2/8</div>
+  <span class="boneco gato" style="left:792px;top:58px"></span>
+  <div class="painel" style="left:48px;right:48px;bottom:56px">
+    <p class="rotulo">ENARE R4 Ortopedia 2025 · como caiu</p>
+    <p class="texto" style="margin-top:16px;font-size:30px">Paciente do sexo feminino, 58 anos de idade, em tratamento devido a um tumor maligno de tireoide, apresenta lesão lítica na extremidade distal de fêmur, acometendo 50% do diâmetro do osso e dor leve. O escore dessa lesão, segundo os critérios de Mirels, para decidir sobre a necessidade de estabilização profilática dessa lesão é:</p>
+    <div class="fichas" style="margin-top:26px">
+      <div class="ficha"><b>A</b><span>6</span></div><div class="ficha"><b>B</b><span>7</span></div><div class="ficha"><b>C</b><span>8</span></div><div class="ficha"><b>D</b><span>9</span></div><div class="ficha"><b>E</b><span>10</span></div>
+    </div>
+    <p class="pequeno" style="margin-top:18px">Escolha a sua ficha e arraste: a bola entra em jogo.</p>
+  </div>
+</section>
+
+<!-- 3. Bumper Local: +2 -->
+<section id="f3-local">
+  <img class="arte" src="arte/feed-local.webp" alt="">
+  <div class="veu-esq"></div><div class="veu-baixo" style="height:40%"></div>
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div><div class="contador">3/8</div>
+  <span class="boneco gato" style="left:792px;top:58px"></span>
+  <div class="tag" style="--c:var(--local);left:330px;top:600px"><i>+2</i><span>Local<small>fêmur distal</small></span></div>
+  <div style="position:absolute;left:56px;top:150px;width:470px;z-index:4">
+    <span class="rotulo" style="color:var(--local)">Bumper 1 · Local</span>
+    <h2 style="margin-top:14px">Fêmur distal vale <em style="color:var(--local)">2</em>, não 3</h2>
+    <p class="texto" style="margin-top:20px">É membro inferior, como qualquer outro ponto da perna. <b>Só a região peritrocantérica vale 3.</b></p>
+  </div>
+  <div class="painel" style="left:56px;right:56px;bottom:64px;padding:24px 30px">
+    <p class="rotulo" style="margin-bottom:14px">Placar</p>
+    <div class="conta"><span class="n" style="background:var(--local)">2</span><span class="mais">+</span><span class="n apagado">?</span><span class="mais">+</span><span class="n apagado">?</span><span class="mais">+</span><span class="n apagado">?</span><span class="mais">=</span><span class="total">2</span></div>
+    <p class="pequeno" style="margin-top:12px">Primeira armadilha: contar o fêmur inteiro como 3.</p>
+  </div>
+</section>
+
+<!-- 4. Bumper Tamanho: +2 -->
+<section id="f4-tamanho">
+  <img class="arte" src="arte/feed-tamanho.webp" alt="">
+  <div class="veu-esq"></div><div class="veu-baixo" style="height:40%"></div>
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div><div class="contador">4/8</div>
+  <span class="boneco gato" style="left:792px;top:58px"></span>
+  <div class="tag" style="--c:var(--tamanho);left:690px;top:520px"><i>+2</i><span>Tamanho<small>50% do osso</small></span></div>
+  <div style="position:absolute;left:56px;top:150px;width:470px;z-index:4">
+    <span class="rotulo" style="color:var(--tamanho)">Bumper 2 · Tamanho</span>
+    <h2 style="margin-top:14px">Metade do diâmetro vale <em style="color:var(--tamanho)">2</em></h2>
+    <p class="texto" style="margin-top:20px">50% cai na faixa do meio, <b>de 1/3 a 2/3</b> da largura do osso. Menos de 1/3 vale 1; mais de 2/3 vale 3.</p>
+  </div>
+  <div class="painel" style="left:56px;right:56px;bottom:64px;padding:24px 30px">
+    <p class="rotulo" style="margin-bottom:14px">Placar</p>
+    <div class="conta"><span class="n" style="background:var(--local)">2</span><span class="mais">+</span><span class="n" style="background:var(--tamanho)">2</span><span class="mais">+</span><span class="n apagado">?</span><span class="mais">+</span><span class="n apagado">?</span><span class="mais">=</span><span class="total">4</span></div>
+    <p class="pequeno" style="margin-top:12px">Quanto maior a lesão, menos osso sobra.</p>
+  </div>
+</section>
+
+<!-- 5. Bumper Tipo: +3 -->
+<section id="f5-tipo">
+  <img class="arte" src="arte/feed-tipo.webp" alt="">
+  <div class="veu-esq"></div><div class="veu-baixo" style="height:40%"></div>
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div><div class="contador">5/8</div>
+  <span class="boneco gato" style="left:792px;top:58px"></span>
+  <div class="tag" style="--c:var(--tipo);left:300px;top:712px"><i>+3</i><span>Tipo<small>lítica</small></span></div>
+  <div style="position:absolute;left:56px;top:150px;width:470px;z-index:4">
+    <span class="rotulo" style="color:var(--tipo)">Bumper 3 · Tipo</span>
+    <h2 style="margin-top:14px">Lítica vale o máximo: <em style="color:var(--tipo)">3</em></h2>
+    <p class="texto" style="margin-top:20px">A tireoide, como o rim, costuma dar <b>lesão puramente lítica</b>. Blástica vale 1; mista, 2.</p>
+  </div>
+  <div class="painel" style="left:56px;right:56px;bottom:64px;padding:24px 30px">
+    <p class="rotulo" style="margin-bottom:14px">Placar</p>
+    <div class="conta"><span class="n" style="background:var(--local)">2</span><span class="mais">+</span><span class="n" style="background:var(--tamanho)">2</span><span class="mais">+</span><span class="n" style="background:var(--tipo)">3</span><span class="mais">+</span><span class="n apagado">?</span><span class="mais">=</span><span class="total">7</span></div>
+    <p class="pequeno" style="margin-top:12px">A blástica ainda tem osso; a lítica, nenhum.</p>
+  </div>
+</section>
+
+<!-- 6. Bumper Dor: +1 → 8, alternativa C -->
+<section id="f6-dor">
+  <img class="arte" src="arte/feed-dor.webp" alt="">
+  <div class="veu-esq"></div><div class="veu-baixo" style="height:46%"></div>
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div><div class="contador">6/8</div>
+  <span class="boneco gato" style="left:792px;top:58px;background-position:-192px -600px"></span>
+  <div class="tag" style="--c:var(--dor);left:880px;top:650px;padding-right:16px"><i>+1</i><span>Dor<small>leve</small></span></div>
+  <div style="position:absolute;left:56px;top:150px;width:470px;z-index:4">
+    <span class="rotulo" style="color:var(--dor)">Bumper 4 · Dor</span>
+    <h2 style="margin-top:14px">Dor leve vale <em style="color:var(--dor)">1</em>. E fecha em 8.</h2>
+    <p class="texto" style="margin-top:20px">É o ponto que mais se esquece. Moderada vale 2; funcional, 3.</p>
+  </div>
+  <div class="painel" style="left:56px;right:56px;bottom:64px;padding:24px 30px">
+    <div class="conta"><span class="n" style="background:var(--local)">2</span><span class="mais">+</span><span class="n" style="background:var(--tamanho)">2</span><span class="mais">+</span><span class="n" style="background:var(--tipo)">3</span><span class="mais">+</span><span class="n" style="background:var(--dor)">1</span><span class="mais">=</span><span class="total">8</span></div>
+    <div class="fichas" style="margin-top:20px">
+      <div class="ficha fora"><b>A</b><span>6</span></div><div class="ficha fora"><b>B</b><span>7</span></div><div class="ficha certa"><b>C</b><span>8</span></div><div class="ficha fora"><b>D</b><span>9</span></div><div class="ficha fora"><b>E</b><span>10</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. A escala inteira -->
+<section id="f7-tabela">
+  <img class="arte" src="arte/feed-dor.webp" alt="" style="filter:brightness(.55) blur(2px);transform:scale(1.04)">
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div><div class="contador">7/8</div>
+  <div class="painel" style="left:48px;right:48px;top:140px;bottom:64px;padding:34px 36px">
+    <p class="rotulo">A escala do MIRELS · guarde esta</p>
+    <h2 style="margin-top:10px;font-size:50px">Quatro bumpers, de 1 a 3 pontos cada</h2>
+    <table class="tabela" style="margin-top:18px">
+      <thead><tr><th></th><th>1 ponto</th><th>2 pontos</th><th>3 pontos</th></tr></thead>
+      <tbody>
+        <tr><td><i style="--c:var(--local)"></i>Local</td><td>Membro superior</td><td>Membro inferior</td><td>Peritrocantérico</td></tr>
+        <tr><td><i style="--c:var(--tamanho)"></i>Tamanho</td><td>Menos de 1/3</td><td>1/3 a 2/3</td><td>Mais de 2/3</td></tr>
+        <tr><td><i style="--c:var(--tipo)"></i>Tipo</td><td>Blástica</td><td>Mista</td><td>Lítica</td></tr>
+        <tr><td><i style="--c:var(--dor)"></i>Dor</td><td>Leve</td><td>Moderada</td><td>Funcional</td></tr>
+      </tbody>
+    </table>
+    <p class="rotulo" style="margin-top:22px">Risco de fratura em 6 meses</p>
+    <div class="faixas" style="margin-top:12px">
+      <div class="faixa" style="--c:#5ae08a"><b>7 ou menos</b><span>5%: dá para irradiar com segurança</span></div>
+      <div class="faixa" style="--c:#ffcc4a"><b>8</b><span>15%: considerar a fixação; o julgamento clínico decide</span></div>
+      <div class="faixa" style="--c:#ff7a64"><b>9 ou mais</b><span>33%: fixação profilática recomendada</span></div>
+    </div>
+    <div style="margin-top:24px;padding:22px 24px;border-radius:18px;background:rgba(244,207,124,.08);box-shadow:inset 0 0 0 1.5px rgba(244,207,124,.3)">
+      <p class="rotulo">Na questão do ENARE</p>
+      <div class="conta" style="margin-top:12px"><span class="n" style="background:var(--local)">2</span><span class="mais">+</span><span class="n" style="background:var(--tamanho)">2</span><span class="mais">+</span><span class="n" style="background:var(--tipo)">3</span><span class="mais">+</span><span class="n" style="background:var(--dor)">1</span><span class="mais">=</span><span class="total">8</span></div>
+      <p class="texto" style="margin-top:14px;font-size:26px">Bem no limiar: considerar a fixação. E na tireoide, lesão muito vascularizada: o Rockwood recomenda <b>embolização pré-operatória</b>.</p>
+    </div>
+    <p class="pequeno" style="margin-top:16px;font-size:20px">Campbell, cap. 27 (Tabela 27.1) e Rockwood, cap. 25, como no comentário da questão no site.</p>
+  </div>
+</section>
+
+<!-- 8. Recordes -->
+<section id="f8-recordes">
+  <img class="arte" src="arte/feed-dor.webp" alt="">
+  <div class="veu-esq"></div><div class="veu-baixo" style="height:58%"></div>
+  <div class="marca"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div><div class="contador">8/8</div>
+  <span class="boneco gato" style="left:792px;top:58px;background-position:-192px -600px"></span>
+  <div style="position:absolute;left:56px;top:150px;width:520px;z-index:4">
+    <span class="rotulo">Quadro de recordes</span>
+    <h1 style="margin-top:16px;font-size:72px">O próximo recorde é <em>seu</em>.</h1>
+    <p class="texto" style="margin-top:22px">Questões das provas oficiais, com o porquê de cada alternativa, comentadas como aula.</p>
+  </div>
+  <div style="position:absolute;left:330px;right:40px;bottom:110px;z-index:5;text-align:center">
+    <span class="botao">Treine grátis</span>
+    <p class="site" style="margin-top:24px">ortoquestoes.com.br</p>
+  </div>
+  <span class="sombra-pe" style="left:142px;top:1036px;width:150px"></span>
+  <span class="boneco esqueleto" style="left:120px;top:794px;background-position:-384px -1024px"></span>
+</section>
+
+<!-- ============================ STORIES (4 telas, 1080 x 1920) ============================ -->
+
+<!-- S1. Insira a ficha: item de certo ou errado (R4 Coluna SES-DF 2022) -->
+<section id="s1-ficha" class="story">
+  <img class="arte" src="arte/story-apagado.webp" alt="">
+  <div class="veu-esq"></div>
+  <div class="marca" style="top:250px"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div>
+  <span class="boneco gato" style="left:792px;top:508px"></span>
+  <div style="position:absolute;left:56px;right:56px;top:350px;z-index:4">
+    <span class="selo">Insira a ficha</span>
+    <h2 style="margin-top:22px;font-size:62px">O item diz <em>9 pontos</em>. Certo ou errado?</h2>
+  </div>
+  <div class="painel" style="left:48px;right:48px;top:1160px;padding:28px 32px">
+    <p class="rotulo">R4 Coluna SES-DF 2022</p>
+    <p class="texto" style="margin-top:12px;font-size:26px">Um paciente de 62 anos de idade é portador de carcinoma metastático, de origem desconhecida, na extremidade proximal do fêmur direito, com aspecto radiográfico lítico e acometimento maior que 2/3. Apresenta ainda dor de forte intensidade, com limitação de suas atividades diárias.</p>
+    <p class="texto" style="margin-top:14px;font-size:28px"><b>Julgue o item:</b> Segundo o sistema de pontuação para avaliação de fraturas patológicas de Mirels, a pontuação desse paciente é 9, estando indicada a fixação profilática.</p>
+    <p class="pequeno" style="margin-top:14px">Certo ou errado? A resposta sai ao meio-dia.</p>
+  </div>
+</section>
+
+<!-- S2. TILT! -->
+<section id="s2-tilt" class="story">
+  <img class="arte" src="arte/story-tilt.webp" alt="">
+  <div class="veu-esq"></div>
+  <div class="marca" style="top:250px"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div>
+  <span class="boneco gato" style="left:792px;top:508px;background-position:-192px -600px"></span>
+  <div style="position:absolute;left:56px;top:340px;z-index:4"><p class="tilt">TILT!</p></div>
+  <div style="position:absolute;left:60px;width:700px;top:540px;z-index:4">
+    <h2 style="font-size:60px">Errado: a conta dá <em>12</em>, nunca 9</h2>
+  </div>
+  <div class="painel" style="left:48px;right:48px;top:1180px;padding:28px 32px">
+    <div class="conta"><span class="n" style="background:var(--local)">3</span><span class="mais">+</span><span class="n" style="background:var(--tamanho)">3</span><span class="mais">+</span><span class="n" style="background:var(--tipo)">3</span><span class="mais">+</span><span class="n" style="background:var(--dor)">3</span><span class="mais">=</span><span class="total">12</span></div>
+    <p class="texto" style="margin-top:18px;font-size:27px">Fêmur proximal (peritrocantérico), mais de 2/3, lítica e dor forte que limita a vida (funcional): <b>três pontos em cada</b>. Mesmo contando o local como 2, dá 11.</p>
+    <p class="texto" style="margin-top:12px;font-size:27px">A conduta estava certa: com 9 ou mais, <b>fixar</b>. Mas num item de certo ou errado, um número errado derruba a frase.</p>
+  </div>
+</section>
+
+<!-- S3. Fase bônus (TEOT 2024) -->
+<section id="s3-bonus" class="story">
+  <img class="arte" src="arte/story-local.webp" alt="">
+  <div class="veu-esq"></div>
+  <div class="marca" style="top:250px"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div>
+  <span class="boneco gato" style="left:792px;top:508px"></span>
+  <div style="position:absolute;left:56px;right:56px;top:350px;z-index:4">
+    <span class="selo" style="background:var(--local);color:#2a0804">Fase bônus</span>
+    <h2 style="margin-top:22px;font-size:62px">O fêmur distal vale quanto?</h2>
+  </div>
+  <div class="painel" style="left:48px;right:48px;top:1180px;padding:28px 32px">
+    <p class="rotulo">TEOT 2024</p>
+    <p class="texto" style="margin-top:12px;font-size:28px">De acordo com a escala de MIRELS para tratamento de fratura iminente em ossos longos, a presença de lesão tumoral na extremidade distal do fêmur recebe</p>
+    <div class="fichas" style="margin-top:22px">
+      <div class="ficha fora"><b>A</b><span>1</span></div><div class="ficha certa"><b>B</b><span>2</span></div><div class="ficha fora"><b>C</b><span>3</span></div><div class="ficha fora"><b>D</b><span>4</span></div>
+    </div>
+    <p class="texto" style="margin-top:18px;font-size:27px"><b>B, 2 pontos.</b> Só o peritrocantérico vale 3; o fêmur distal é membro inferior como qualquer outro.</p>
+  </div>
+</section>
+
+<!-- S4. Recordes -->
+<section id="s4-recordes" class="story">
+  <img class="arte" src="arte/story-apagado.webp" alt="">
+  <div class="veu-esq"></div><div class="veu-baixo" style="height:40%"></div>
+  <div class="marca" style="top:250px"><svg><use href="#sim"/></svg><b>Orto</b> Questões</div>
+  <span class="boneco gato" style="left:792px;top:508px;background-position:-192px -600px"></span>
+  <div style="position:absolute;left:56px;right:56px;top:350px;z-index:4">
+    <span class="rotulo">Quadro de recordes</span>
+    <h1 style="margin-top:16px;font-size:80px">O próximo recorde é <em>seu</em>.</h1>
+    <p class="texto" style="margin-top:22px;max-width:640px">A conta completa do MIRELS, ponto por ponto, está no nosso feed.</p>
+  </div>
+  <span class="sombra-pe" style="left:356px;top:1478px;width:150px"></span>
+  <span class="boneco esqueleto" style="left:334px;top:1236px;background-position:-384px -1024px"></span>
+  <div style="position:absolute;left:0;right:0;top:1500px;z-index:5;text-align:center">
+    <span class="botao">Treine grátis</span>
+    <p class="site" style="margin-top:22px">ortoquestoes.com.br</p>
+  </div>
+</section>
+</body></html>
