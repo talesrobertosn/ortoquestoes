@@ -76,6 +76,8 @@ try {
   assert.ok(!m.viuPlanos({ planos_vezes: 1, planos_ultima: ha(31) }, 30, agora))
   assert.ok(!m.viuPlanos({ planos_vezes: 0, planos_ultima: null }, 30, agora))
   assert.ok(!m.viuPlanos(undefined))
+  // Amarelo no painel: 24 horas contadas da última abertura dos planos.
+  assert.ok(m.planosEmDestaque(ha(23.9 / 24), agora) && !m.planosEmDestaque(ha(24.1 / 24), agora) && !m.planosEmDestaque(null, agora))
   assert.equal(m.textoPlanos({ planos_vezes: 3, planos_ultima: ha(0.1) }, agora), 'Viu os planos hoje · 3×')
   assert.equal(m.textoPlanos({ planos_vezes: 1, planos_ultima: ha(1.2) }, agora), 'Viu os planos ontem')
   assert.equal(m.textoPlanos({ planos_vezes: 1, planos_ultima: ha(4.5) }, agora), 'Viu os planos há 4 dias')

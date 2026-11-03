@@ -4,7 +4,7 @@ import { quadroDoDia } from '../../componentes/admin/agora'
 import { diaSP } from '../../componentes/admin/estudoHoje'
 import { registrarTitulosResumos } from '../../componentes/admin/formatos'
 import { CORTESIA_ADMIN, PLANO_CORTESIA, rotuloPlano } from '../../componentes/admin/rotulos'
-import { viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
+import { planosEmDestaque, viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
 import { usarRpc } from '../../componentes/admin/usarRpc'
 import { usarFunil, usarSerie } from '../dados/consultas'
 import { usarPainel } from '../dados/painel'
@@ -19,6 +19,9 @@ import { LinhaFila, useIrDestino, usarFila } from './fila'
 /** Último sinal da pessoa (aparelho, atividade ou login), para saber se entrou hoje. */
 const ultimoSinal = (u: LinhaUsuario) => [u.visto_em, u.ultima_atividade, u.ultimo_login].filter(Boolean).sort().slice(-1)[0] ?? null
 const viuHoje = (s: SinalUsuario | undefined, hoje: string) => !!s?.planos_ultima && diaSP(s.planos_ultima) === hoje
+/** "às 15:32" se foi hoje, "ontem às 20:10" se foi ontem (o amarelo dura 24 horas). */
+const quandoPlanos = (v: string | null | undefined, hoje: string) => !v ? '' : diaSP(v) === hoje ? `às ${horario(v)}` : `ontem às ${horario(v)}`
+/** Assinante; lead = abriu os planos nas últimas 24 horas (fica amarelo); grátis = o resto. */
 type Tipo = 'assinante' | 'lead' | 'gratis'
 
 /**
@@ -108,7 +111,7 @@ export default function Inicio() {
     const hoje = diaSP(Date.now())
     const sinal = (u: LinhaUsuario) => p.sinais.get(u.id_usuario)
     // Administrador é sempre "não assinante" (acesso de cortesia, nunca possível pagador), mesmo vendo os planos.
-    const tipoDe = (u: LinhaUsuario): Tipo => u.administrador ? 'gratis' : u.plano_vigente ? 'assinante' : viuHoje(sinal(u), hoje) ? 'lead' : 'gratis'
+    const tipoDe = (u: LinhaUsuario): Tipo => u.administrador ? 'gratis' : u.plano_vigente ? 'assinante' : planosEmDestaque(sinal(u)?.planos_ultima) ? 'lead' : 'gratis'
     const ordemTipo: Record<Tipo, number> = { lead: 0, assinante: 1, gratis: 2 }
     // Administradores aparecem no que é presença (online, estudaram, cadastros), com o selo "Admin" (Tales, 03/11/2026),
     // e ficam fora das listas de quem paga ou pode pagar (assinantes, viram os planos, limite, ausentes).
@@ -208,14 +211,14 @@ export default function Inicio() {
             <Filtro ativo={filtro === 'todos'} aoClicar={() => definirFiltro('todos')} contagem={g.listas.online.length}>Todos</Filtro>
             <Filtro ativo={filtro === 'assinante'} aoClicar={() => definirFiltro('assinante')} contagem={g.conta.assinante}>Assinantes</Filtro>
             <Filtro ativo={filtro === 'nao'} aoClicar={() => definirFiltro('nao')} contagem={g.conta.gratis + g.conta.lead}>Não assinantes</Filtro>
-            <Filtro ativo={filtro === 'lead'} aoClicar={() => definirFiltro('lead')} contagem={g.conta.lead}>Viram os planos hoje</Filtro>
+            <Filtro ativo={filtro === 'lead'} aoClicar={() => definirFiltro('lead')} contagem={g.conta.lead}>Viram os planos em 24 h</Filtro>
           </div>}
           <Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar por nome ou e-mail" />
         </div>
         {!daVista.length ? <div style={{ padding: 20 }}><Estado compacto icone={vista === 'ausentes' ? 'certo' : 'pessoas'} titulo={termo ? 'Ninguém com esse nome nesta lista' : vazio[vista]} /></div> : <>
           <ul className="a3-pessoas-lista">{vistos.map(u => u.online
             ? <LinhaOnline key={u.id_usuario} u={u} tipo={g.tipoDe(u)} hoje={g.hoje} limite={limite} />
-            : <LinhaFora key={u.id_usuario} u={u} tipo={g.tipoDe(u)} />)}</ul>
+            : <LinhaFora key={u.id_usuario} u={u} tipo={g.tipoDe(u)} hoje={g.hoje} />)}</ul>
           {daVista.length > limiteLista && <div className="a3-paginacao"><span>{vistos.length} de {daVista.length}</span>
             <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirLimiteLista(daVista.length)}>Ver todos os {daVista.length}</button></div>}
         </>}
@@ -249,7 +252,7 @@ function Filtro({ ativo, aoClicar, contagem, children }: { ativo: boolean; aoCli
 
 /** "Assinante · Anual" ou só "Cortesia" (quem tem acesso de presente, sem pagar). */
 const rotuloAssinante = (plano: string | null) => plano === PLANO_CORTESIA ? 'Cortesia' : `Assinante · ${rotuloPlano(plano)}`
-const ROTULO_TIPO: Record<Tipo, string> = { assinante: 'Assinante', lead: 'Viu os planos hoje', gratis: 'Não assinante' }
+const ROTULO_TIPO: Record<Tipo, string> = { assinante: 'Assinante', lead: 'Viu os planos em 24 h', gratis: 'Não assinante' }
 
 function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; hoje: string; limite: number | null }) {
   const p = usarPainel()
@@ -262,7 +265,7 @@ function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; h
         <span className="a3-pessoa-linha__nome">{nomeDe(u)}
           {u.administrador ? <><b className="a3-tag a3-tag--suave">{CORTESIA_ADMIN}</b><Selo solido>Admin</Selo></>
             : tipo === 'assinante' ? <b className="a3-tag a3-tag--assinante">{rotuloAssinante(u.plano_vigente)}</b>
-            : tipo === 'lead' ? <b className="a3-tag a3-tag--lead">Viu os planos às {horario(s?.planos_ultima)}</b>
+            : tipo === 'lead' ? <b className="a3-tag a3-tag--lead">Viu os planos {quandoPlanos(s?.planos_ultima, hoje)}</b>
             : <b className="a3-tag a3-tag--suave">Não assinante</b>}
           {tipo !== 'assinante' && !u.administrador && <Temperatura t={temperatura(u, s, hoje, limite)} />}
         </span>
@@ -285,7 +288,7 @@ function LinhaOnline({ u, tipo, hoje, limite }: { u: LinhaUsuario; tipo: Tipo; h
   </li>
 }
 
-function LinhaFora({ u, tipo }: { u: LinhaUsuario; tipo: Tipo }) {
+function LinhaFora({ u, tipo, hoje }: { u: LinhaUsuario; tipo: Tipo; hoje: string }) {
   const p = usarPainel()
   const nav = usarNav()
   const s = p.sinais.get(u.id_usuario)
@@ -298,7 +301,7 @@ function LinhaFora({ u, tipo }: { u: LinhaUsuario; tipo: Tipo }) {
           : <b className={`a3-tag a3-tag--${tipo === 'assinante' ? 'assinante' : tipo === 'lead' ? 'lead' : 'suave'}`}>{tipo === 'assinante' ? rotuloAssinante(u.plano_vigente) : ROTULO_TIPO[tipo]}</b>}</span>
         <span className="a3-pessoa-linha__meta">
           <span>{sinal ? `última vez ${haQuanto(sinal)}` : 'nunca entrou'}</span>
-          {viuPlanos(s) && <span>viu os planos {tipo === 'lead' ? `às ${horario(s?.planos_ultima)}` : haQuanto(s?.planos_ultima)} · {s?.planos_vezes ?? 0} {s?.planos_vezes === 1 ? 'vez' : 'vezes'} em 30 dias</span>}
+          {viuPlanos(s) && <span>viu os planos {tipo === 'lead' ? quandoPlanos(s?.planos_ultima, hoje) : haQuanto(s?.planos_ultima)} · {s?.planos_vezes ?? 0} {s?.planos_vezes === 1 ? 'vez' : 'vezes'} em 30 dias</span>}
         </span>
       </span>
     </button>

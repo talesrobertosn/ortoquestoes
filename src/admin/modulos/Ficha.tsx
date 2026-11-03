@@ -6,7 +6,7 @@ import { PLANOS, STATUS_EVENTO, TIPOS_EVENTO, acertoAposRevisao, acertoPorTentat
 import { perfilDaFicha, type EnvioHistorico } from '../../componentes/admin/modelosEmail'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, linkDoEvento, linkMercadoPago, reprocessarEvento, type EventoPagamento } from '../../componentes/admin/pagamentos'
 import { CORTESIA_ADMIN, STATUS_PIX, motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../../componentes/admin/rotulos'
-import { PLANOS_RECENTE_DIAS, diasDesde } from '../../componentes/admin/sinais'
+import { diasDesde, planosEmDestaque } from '../../componentes/admin/sinais'
 import { CINCO_MIN, rpcInexistente, usarRpc } from '../../componentes/admin/usarRpc'
 import { usarPainel } from '../dados/painel'
 import { estaOnline, nomeDe, type LinhaUsuario } from '../dados/pessoas'
@@ -109,7 +109,7 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
   const planos = extra?.planos ?? null
   const viuPlanos = !!planos && planos.vezes > 0
   const diasPlanos = diasDesde(planos?.ultima)
-  const planosRecente = viuPlanos && diasPlanos !== null && diasPlanos < PLANOS_RECENTE_DIAS
+  const planosRecente = viuPlanos && planosEmDestaque(planos?.ultima)
   const fc = extra?.flashcards
   const fcCartas = Math.max(fc?.servidor?.unicos ?? 0, fc?.progresso?.cartas ?? 0)
   const usaFlashcards = fcCartas > 0 || (fc?.cripta?.partidas ?? 0) > 0
@@ -122,7 +122,11 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
   const plano = u.administrador ? CORTESIA_ADMIN : u.plano_vigente && u.plano_vigente !== 'cortesia' ? `Assinante ${PLANOS[u.plano_vigente]?.toLowerCase() ?? u.plano_vigente}` : cortesiaVale || u.plano_vigente === 'cortesia' ? 'Cortesia' : 'Plano grátis'
 
   const topo = <span className="a3-avatar a3-avatar--grande">{iniciais(u.nome ?? u.email)}{u.online && <i className="a3-ponto a3-ponto--vivo" />}</span>
+  // Quem é, logo abaixo do nome (Tales, 03/11/2026): etapa, serviço, cidade e aparelho; o Resumo repete com detalhes.
+  const aparelho = detalhe?.aparelho?.descricao && detalhe.aparelho.descricao !== 'suporte' ? detalhe.aparelho.descricao : u.aparelho ?? null
+  const quem = [situacao ? rotuloEtapa(situacao, ano) : null, servico, cidadeUf || null, aparelho].filter((x): x is string => !!x)
   const subtitulo = <div style={{ display: 'grid', gap: 8 }}>
+    {quem.length > 0 && <span className="a3-ficha-quem">{quem.map(x => <span key={x}>{x}</span>)}</span>}
     <span>{u.email ?? 'conta sem e-mail'} · conta criada {haQuanto(u.criado_em)}</span>
     <span style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
       <Selo tom={u.plano_vigente || cortesiaVale || u.administrador ? 'ok' : undefined}>{plano}{cortesiaVale && detalhe?.cortesia?.ate ? ` até ${data(detalhe.cortesia.ate)}` : ''}</Selo>
@@ -135,7 +139,7 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
     </span>
   </div>
 
-  return <Gaveta aberta aoFechar={aoFechar} titulo={nomeDe(u)} subtitulo={subtitulo} topo={topo} largura={900}>
+  return <Gaveta aberta aoFechar={aoFechar} titulo={nomeDe(u)} subtitulo={subtitulo} topo={topo} largura={900} destaque={planosRecente && !u.plano_vigente && !u.administrador}>
     <div className="a3-abas-locais" role="tablist" aria-label="Partes da ficha" style={{ position: 'sticky', top: 0, background: 'var(--a3-papel)', zIndex: 2 }}>
       {ABAS.map(([id, r]) => <button key={id} type="button" role="tab" aria-selected={aba === id} onClick={() => definirAba(id)}>{r}</button>)}
     </div>

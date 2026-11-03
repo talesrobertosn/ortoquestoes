@@ -486,6 +486,7 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 .a3-gaveta { position: fixed; z-index: 61; top: 8px; right: 8px; bottom: 8px; width: min(720px, calc(100vw - 16px)); display: flex; flex-direction: column; border: 1px solid var(--a3-linha); border-radius: var(--a3-r-cartao); background: var(--a3-papel); box-shadow: var(--a3-sombra-alta); overflow: hidden; animation: a3-desliza .2s cubic-bezier(.2, .8, .2, 1); }
 @keyframes a3-desliza { from { transform: translateX(24px); opacity: 0; } }
 .a3-gaveta__cabeca { display: flex; align-items: flex-start; gap: 14px; padding: 18px 20px 14px; border-bottom: 1px solid var(--a3-linha); }
+.a3-gaveta__cabeca--destaque { background: var(--a3-aviso-veu); border-bottom-color: color-mix(in srgb, var(--a3-aviso) 35%, var(--a3-linha)); }
 .a3-gaveta__corpo { flex: 1; overflow-y: auto; padding: 0 0 24px; }
 @media (max-width: 720px) { .a3-gaveta { inset: 0; width: 100%; border-radius: 0; border: 0; } }
 .a3-dialogo { position: fixed; z-index: 70; left: 50%; top: 50%; width: min(460px, calc(100vw - 32px)); display: grid; gap: 14px; padding: 22px; border: 1px solid var(--a3-linha); border-radius: var(--a3-r-cartao); background: var(--a3-papel); box-shadow: var(--a3-sombra-alta); transform: translate(-50%, -50%); animation: a3-surge .15s; }

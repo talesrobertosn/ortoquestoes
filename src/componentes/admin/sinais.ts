@@ -22,6 +22,8 @@ export interface SinalUsuario {
 const DIA = 86_400_000
 /** Até quantos dias o "Viu os planos" fica em destaque na lista. */
 export const PLANOS_RECENTE_DIAS = 7
+/** Quem abriu os planos fica amarelo no painel por 24 horas (Tales, 03/11/2026), contadas da última abertura. */
+export const PLANOS_DESTAQUE_MS = 24 * 3_600_000
 /** O histórico de páginas guarda 30 dias (Termos, item 17.4). */
 export const PLANOS_JANELA_DIAS = 30
 
@@ -35,6 +37,12 @@ export function diasDesde(valor: string | null | undefined, agora = Date.now()):
 export function viuPlanos(s: Pick<SinalUsuario, 'planos_ultima' | 'planos_vezes'> | null | undefined, dias = PLANOS_JANELA_DIAS, agora = Date.now()): boolean {
   const d = diasDesde(s?.planos_ultima, agora)
   return !!s && s.planos_vezes > 0 && d !== null && d < dias
+}
+
+/** Abriu a página de planos nas últimas 24 horas: o amarelo da lista Agora, do Explorador e da ficha. */
+export function planosEmDestaque(ultima: string | null | undefined, agora = Date.now()): boolean {
+  const t = ultima ? new Date(ultima).getTime() : NaN
+  return Number.isFinite(t) && agora - t < PLANOS_DESTAQUE_MS
 }
 
 /** "hoje", "ontem", "há 3 dias". */
