@@ -340,6 +340,136 @@
    ]
   },
   {
+   "id": "callaghan-exame-quadril",
+   "versao": 1,
+   "titulo": "Exame físico do quadril",
+   "especialidade": "quadril",
+   "livro": "The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)",
+   "edicao": "Edição de 2017",
+   "capitulo": "Capítulo 22 · History and Physical Examination",
+   "resumo": "Exame em cinco camadas (osteocondral, capsulolabral, musculotendínea, neurovascular e cadeia cinemática; FREIBERG e PACE são os autores dos testes neurovasculares) na ordem em pé, sentado, supino, lateral e prono; sinal do C = dor intra-articular; TRENDELENBURG (apoio unipodal por 6 segundos, lado normal primeiro, desvio > 2 cm, pelve cai do lado oposto ao glúteo médio insuficiente; força abdutora cerca de 2,5 vezes o peso); rotação interna sentado normal de 20 a 35 graus, a primeira a se perder; THOMAS = contratura em flexão; FABER/PATRICK = quadril versus sacroilíaca; STINCHFIELD = patologia articular; FADIR (flexão, adução e rotação interna) = impacto anterior; DEXRIT = impacto superior e posterior e instabilidade anteroinferior; OBER = trato iliotibial (extensão) e glúteo médio (neutro); piriforme ativo em abdução e rotação externa contra resistência, passivo em adução e rotação interna; CRAIG = anteversão; ELY = reto femoral; LUDLOFF = iliopsoas e trocânter menor.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-cinco-camadas-e-quem-inventou-cada-familia-de",
+     "titulo": "As cinco camadas e quem inventou cada família de testes",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-historia-e-os-questionarios",
+     "titulo": "A história e os questionários",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-ordem-do-exame-e-a-inspecao-em-pe",
+     "titulo": "A ordem do exame e a inspeção em pé",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-marcha",
+     "titulo": "A marcha",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-apoio-unipodal-teste-de-trendelenburg",
+     "titulo": "O apoio unipodal: teste de TRENDELENBURG",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sentado-neurovascular-e-rotacoes",
+     "titulo": "Sentado: neurovascular e rotações",
+     "radar": "clinico"
+    },
+    {
+     "id": "decubito-dorsal-thomas-patrick-stinchfield-e-o-r",
+     "titulo": "Decúbito dorsal: THOMAS, PATRICK, STINCHFIELD e o rolamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "congruencia-femoroacetabular-impacto-e-instabili",
+     "titulo": "Congruência femoroacetabular: impacto e instabilidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "decubito-lateral-trocanter-abdutores-e-ober",
+     "titulo": "Decúbito lateral: trocânter, abdutores e OBER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dor-posterior-extra-articular-piriforme-freiberg",
+     "titulo": "Dor posterior extra-articular: piriforme, FREIBERG e PACE",
+     "radar": "confirmado"
+    },
+    {
+     "id": "decubito-ventral-craig-e-ely",
+     "titulo": "Decúbito ventral: CRAIG e ELY",
+     "radar": "fundamento"
+    },
+    {
+     "id": "iliopsoas-e-reto-femoral-ludloff-e-as-avulsoes",
+     "titulo": "Iliopsoas e reto femoral: LUDLOFF e as avulsões",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ressaltos",
+     "titulo": "Ressaltos",
+     "radar": "clinico"
+    },
+    {
+     "id": "quadril-ou-coluna-a-lombociatalgia-que-nao-fecha",
+     "titulo": "Quadril ou coluna: a lombociatalgia que não fecha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "quadril-0160",
+    "quadril-0218",
+    "quadril-0485",
+    "quadril-0209",
+    "quadril-0069",
+    "quadril-0714",
+    "quadril-0484",
+    "quadril-0643",
+    "quadril-0514",
+    "quadril-0152",
+    "quadril-0173",
+    "quadril-0334",
+    "quadril-0065",
+    "quadril-0046",
+    "quadril-0077",
+    "quadril-0124",
+    "quadril-0005",
+    "quadril-0517",
+    "quadril-0518"
+   ],
+   "treino": [
+    "quadril-0595",
+    "quadril-0596",
+    "quadril-0597",
+    "quadril-0598",
+    "quadril-0599",
+    "quadril-0255",
+    "quadril-0600",
+    "quadril-0603",
+    "quadril-0602",
+    "quadril-0601"
+   ],
+   "subtemas": [
+    "Exame físico do quadril"
+   ]
+  },
+  {
    "id": "callaghan-historia-biomecanica",
    "versao": 1,
    "titulo": "História da cirurgia do quadril, biomecânica e cinemática da artroplastia",
@@ -2409,6 +2539,473 @@
    ]
   },
   {
+   "id": "campbell15-artroscopia-vias-ombro",
+   "versao": 1,
+   "titulo": "Artroscopia e vias de acesso do ombro",
+   "especialidade": "ombro-cotovelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026)",
+   "capitulo": "Capítulo 57 · Arthroscopy of the Upper Extremity, com o Capítulo 54 · General Principles of Arthroscopy e o Capítulo 1 · Surgical Techniques (vias de acesso do ombro)",
+   "resumo": "Óptica (2,7 mm = 90 graus, 4,0 mm = 115 graus, 30 graus o mais usado); cadeira de praia (anatômica, menos neuropraxia, converte fácil, mas hipotensão e isquemia cerebral: medir no braço oposto) contra decúbito lateral (tração de 10 a 15 lb, melhor acesso posterior, âncoras baixas); portal posterior no soft spot 1,5 a 3 cm abaixo e 1 cm medial ao canto posterolateral, entre infraespinal e redondo menor; anterior no triângulo bíceps-subescapular-glenoide, lateral ao coracoide; 5 horas pelo subescapular a cerca de 1 cm da cefálica, 2,3 cm do musculocutâneo e 2,4 cm do axilar; NEVIASER no soft spot superior, pelo trapézio e supraespinal, 3 cm do supraescapular; WILMINGTON 1 cm anterior e 1 cm lateral ao ângulo posterior do acrômio para SLAP posterior; lateral 3 cm da borda acromial com axilar a 5 cm; BUFORD e orifício sublabral contra BANKART; vírgula = subescapular retraído; deltopeitoral com cefálica e musculocutâneo; divisão do deltoide até 3,8 a 5 cm (axilar); anterolateral estendida de GARDNER para placa no úmero proximal; JUDET entre infraespinal e redondo menor sem descer abaixo do redondo menor.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-artroscopio-optica-e-instrumentos",
+     "titulo": "O artroscópio: óptica e instrumentos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "indicacoes-avaliacao-e-planejamento",
+     "titulo": "Indicações, avaliação e planejamento",
+     "radar": "fundamento"
+    },
+    {
+     "id": "posicionamento-cadeira-de-praia-e-decubito-later",
+     "titulo": "Posicionamento: cadeira de praia e decúbito lateral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hemostasia-pressao-e-extravasamento",
+     "titulo": "Hemostasia, pressão e extravasamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "portais-principios-e-o-mapa-de-risco",
+     "titulo": "Portais: princípios e o mapa de risco",
+     "radar": "fundamento"
+    },
+    {
+     "id": "portal-posterior-e-portal-de-7-horas",
+     "titulo": "Portal posterior e portal de 7 horas",
+     "radar": "fundamento"
+    },
+    {
+     "id": "portais-anteriores-e-o-portal-de-5-horas",
+     "titulo": "Portais anteriores e o portal de 5 horas",
+     "radar": "fundamento"
+    },
+    {
+     "id": "portal-superior-de-neviaser-e-portal-de-lafosse",
+     "titulo": "Portal superior de NEVIASER e portal de LAFOSSE",
+     "radar": "confirmado"
+    },
+    {
+     "id": "portais-laterais-transmanguito-e-wilmington",
+     "titulo": "Portais laterais, transmanguito e WILMINGTON",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-artroscopica-normal-e-variantes",
+     "titulo": "Anatomia artroscópica normal e variantes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "subacromial-e-biceps",
+     "titulo": "Subacromial e bíceps",
+     "radar": "clinico"
+    },
+    {
+     "id": "subescapular-e-o-sinal-da-virgula",
+     "titulo": "Subescapular e o sinal da vírgula",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes-da-artroscopia-do-ombro",
+     "titulo": "Complicações da artroscopia do ombro",
+     "radar": "fundamento"
+    },
+    {
+     "id": "vias-abertas-anteriores-deltopeitoral-e-anterome",
+     "titulo": "Vias abertas anteriores: deltopeitoral e anteromedial",
+     "radar": "fundamento"
+    },
+    {
+     "id": "divisao-do-deltoide-e-via-anterolateral-estendid",
+     "titulo": "Divisão do deltoide e via anterolateral estendida",
+     "radar": "confirmado"
+    },
+    {
+     "id": "via-transacromial",
+     "titulo": "Via transacromial",
+     "radar": "fundamento"
+    },
+    {
+     "id": "vias-posteriores",
+     "titulo": "Vias posteriores",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "ombro-cotovelo-0021",
+    "ombro-cotovelo-0656",
+    "ombro-cotovelo-0554",
+    "ombro-cotovelo-0126",
+    "ombro-cotovelo-0466",
+    "ombro-cotovelo-0556",
+    "ombro-cotovelo-0184",
+    "ombro-cotovelo-0306"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Artroscopia e vias de acesso do ombro"
+   ]
+  },
+  {
+   "id": "campbell15-capsulite-adesiva",
+   "versao": 1,
+   "titulo": "Capsulite adesiva (ombro congelado)",
+   "especialidade": "ombro-cotovelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026)",
+   "capitulo": "Capítulo 51 · Shoulder and Elbow Injuries (seção Adhesive Capsulitis), com o Capítulo 57 · Arthroscopy of the Upper Extremity (contraturas e liberação capsular)",
+   "resumo": "Cápsula contraída e espessada (termo de NEVIASER), sinovite seguida de fibrose; cerca de 2% da população, 40 a 70 anos, 70% mulheres, bilateral em 20% a 30% (50% nos diabéticos), raramente recorre; fatores: imobilidade (o principal), diabetes (insulinodependente quase 5 vezes, pior resultado: 71% contra 90% de ADM completa), hipertireoidismo, idade acima de 49 anos, doença discal cervical, AVC, infarto, autoimunes, trauma, hiperlipidemia; metaloproteinases 2 e 9 e TGF-beta1; intervalo rotador e ligamento coracoumeral contraídos; primária e secundária (LUNDBERG); estágio 1 com dor e movimento preservado, depois rigidez, maturação de 4 a 12 meses e descongelamento; perda de RE e RI passivas, depois flexão; radiografia normal, RM com cápsula inferior contraída e \"burning sign\", artrografia abaixo de 10 mL; autolimitada em 12 a 18 meses; corticoide intra-articular na fase 1, hidrodilatação, bloqueio do supraescapular para a dor, manipulação em FEAR, liberação artroscópica (intervalo rotador = rotação externa) com 80% a 90% de melhora; fratura do úmero e luxação na manipulação, nervo axilar na liberação inferior.",
+   "acesso": "gratis",
+   "minutos": 35,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "definicao-epidemiologia-e-quem-adoece",
+     "titulo": "Definição, epidemiologia e quem adoece",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fatores-de-risco-imobilidade-diabetes-e-tireoide",
+     "titulo": "Fatores de risco: imobilidade, diabetes e tireoide",
+     "radar": "confirmado"
+    },
+    {
+     "id": "primaria-e-secundaria",
+     "titulo": "Primária e secundária",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fisiopatologia-sinovite-fibrose-e-o-intervalo-ro",
+     "titulo": "Fisiopatologia: sinovite, fibrose e o intervalo rotador",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-estagios-da-doenca",
+     "titulo": "Os estágios da doença",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quadro-clinico-e-exame-fisico",
+     "titulo": "Quadro clínico e exame físico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-e-exames-complementares",
+     "titulo": "Imagem e exames complementares",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diagnostico-diferencial",
+     "titulo": "Diagnóstico diferencial",
+     "radar": "clinico"
+    },
+    {
+     "id": "historia-natural-e-prognostico",
+     "titulo": "História natural e prognóstico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-nao-operatorio",
+     "titulo": "Tratamento não operatório",
+     "radar": "confirmado"
+    },
+    {
+     "id": "manipulacao-sob-anestesia",
+     "titulo": "Manipulação sob anestesia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "liberacao-capsular-artroscopica-e-aberta",
+     "titulo": "Liberação capsular artroscópica e aberta",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes",
+     "titulo": "Complicações",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "ombro-cotovelo-0042",
+    "ombro-cotovelo-0091",
+    "ombro-cotovelo-0488",
+    "ombro-cotovelo-0459",
+    "ombro-cotovelo-0037",
+    "ombro-cotovelo-0083",
+    "ombro-cotovelo-0194",
+    "ombro-cotovelo-0480",
+    "ombro-cotovelo-0174",
+    "ombro-cotovelo-0328",
+    "ombro-cotovelo-0470",
+    "ombro-cotovelo-0030",
+    "ombro-cotovelo-0436",
+    "ombro-cotovelo-0023",
+    "ombro-cotovelo-0411",
+    "ombro-cotovelo-0008",
+    "ombro-cotovelo-0067",
+    "ombro-cotovelo-0355"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Capsulite adesiva"
+   ]
+  },
+  {
+   "id": "campbell15-cervical-degenerativa",
+   "versao": 1,
+   "titulo": "Hérnia de disco e mielopatia cervical",
+   "especialidade": "coluna",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª ed., o Netter Atlas de Anatomia Ortopédica, 2ª ed., e o Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed.",
+   "capitulo": "Capítulo 44 · Approaches to the Cervical, Thoracic, and Lumbar Spine, com o Capítulo 45 · Degenerative Disorders of the Cervical Spine e o capítulo 43",
+   "resumo": "A raiz cervical sai acima do pedículo de mesmo número e o disco leva o nome da vértebra de cima (C6-C7 pega C7: tríceps, flexor radial do carpo, dedo médio, tricipital); hérnia central dá mielopatia (clônus, hiper-reflexia, BABINSKI; HOFFMAN só em C5-C6 ou acima), lateral dá radiculopatia; marcha e mãos desajeitadas são os primeiros sintomas; TORG-PAVLOV menor que 0,8 = canal estreito; 50% da rotação cervical em C1-C2 e flexão-extensão máxima em C4-C5 e C5-C6; 70% a 80% melhoram sem cirurgia, mas a mielopatia progride e é cirúrgica; mole lateral = foraminotomia posterior, mole central ou disco duro = via anterior (ACDF de SMITH-ROBINSON pela via de SOUTHWICK e ROBINSON); algoritmo: 1 a 2 níveis anterior, 3 ou mais posterior se lordose, combinada se cifose maior que 13 graus; disfagia é a complicação mais comum da artrodese anterior, laríngeo recorrente a mais frequente da via anterior (esquerda tradicionalmente preferida, sem prova); pseudartrose 3% a 7% em um nível; laminoplastia exige alinhamento neutro ou lordótico, K-line negativa na OPLL vai para a frente, paralisia de C5 resolve em 67% em 4 meses; artroplastia para 1 ou 2 níveis, 20 a 70 anos, falha de 6 semanas, contraindicada com 3 ou mais níveis, instabilidade e artrose facetária.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-coluna-cervical-em-movimento-occipicio-atlas-a",
+     "titulo": "A coluna cervical em movimento: occipício, atlas, áxis e o segmento que mais dobra",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-medula-dentro-do-canal-tratos-espaco-e-o-indic",
+     "titulo": "A medula dentro do canal: tratos, espaço e o índice de TORG-PAVLOV",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-degeneracao-em-tres-estagios-e-a-historia-natu",
+     "titulo": "A degeneração em três estágios e a história natural",
+     "radar": "fundamento"
+    },
+    {
+     "id": "radiculopatia-a-raiz-que-sai-acima-do-pediculo",
+     "titulo": "Radiculopatia: a raiz que sai acima do pedículo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mielopatia-espondilotica-quadro-sinais-e-a-herni",
+     "titulo": "Mielopatia espondilótica: quadro, sinais e a hérnia central",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-e-exames-complementares",
+     "titulo": "Imagem e exames complementares",
+     "radar": "clinico"
+    },
+    {
+     "id": "tratamento-conservador-a-regra-da-radiculopatia",
+     "titulo": "Tratamento conservador: a regra da radiculopatia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "indicacoes-cirurgicas-e-a-escolha-da-via",
+     "titulo": "Indicações cirúrgicas e a escolha da via",
+     "radar": "fundamento"
+    },
+    {
+     "id": "foraminotomia-posterior-e-o-posicionamento-na-ci",
+     "titulo": "Foraminotomia posterior e o posicionamento na cirurgia cervical posterior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-via-anterior-referencias-planos-e-o-lado",
+     "titulo": "A via anterior: referências, planos e o lado",
+     "radar": "confirmado"
+    },
+    {
+     "id": "acdf-tecnica-enxertos-e-complicacoes",
+     "titulo": "ACDF: técnica, enxertos e complicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "corpectomia-opll-e-a-estrutura-de-fibula",
+     "titulo": "Corpectomia, OPLL e a estrutura de fíbula",
+     "radar": "fundamento"
+    },
+    {
+     "id": "laminoplastia-laminectomia-com-artrodese-e-a-par",
+     "titulo": "Laminoplastia, laminectomia com artrodese e a paralisia de C5",
+     "radar": "fundamento"
+    },
+    {
+     "id": "artroplastia-de-disco-cervical",
+     "titulo": "Artroplastia de disco cervical",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "coluna-0034",
+    "coluna-0051",
+    "coluna-0238",
+    "coluna-0050",
+    "coluna-0207",
+    "coluna-0016",
+    "coluna-0361",
+    "coluna-0402",
+    "coluna-0482",
+    "coluna-0320",
+    "coluna-0399",
+    "coluna-0085",
+    "coluna-0146",
+    "coluna-0147"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Hérnia de disco e mielopatia cervical"
+   ]
+  },
+  {
+   "id": "campbell15-coalizoes-tarsais",
+   "versao": 1,
+   "titulo": "Coalizões tarsais",
+   "especialidade": "pe-tornozelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19)",
+   "capitulo": "Capítulo 88 · Disorders of the Tendons and Fascia and Adolescent and Adult Acquired Flatfoot Deformity (seção Pes Planus and Tarsal Coalition)",
+   "resumo": "Coalizão tarsal é falha de segmentação do mesênquima, autossômica dominante, bilateral em 50%; as mais comuns são a calcaneonavicular (ossifica entre 8 e 12 anos, oblíqua a 45 graus, nariz de tamanduá no perfil, ressecção com interposição do extensor curto dos dedos ou gordura) e a talocalcânea da faceta média (ossifica entre 12 e 16 anos, subtalar quase imóvel, sinal do C e bico talar no perfil, HARRIS e TC semicoronal, ressecção no jovem e artrodese quando mais de 50% da faceta posterior ou valgo maior que 16 graus); o espasmo fibular é consequência, não causa, e o objetivo da cirurgia é tirar a dor.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-e-uma-coalizao-e-de-onde-ela-vem",
+     "titulo": "O que é uma coalizão e de onde ela vem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quais-articulacoes-se-unem",
+     "titulo": "Quais articulações se unem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "por-que-a-dor-so-aparece-na-adolescencia",
+     "titulo": "Por que a dor só aparece na adolescência",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-pe-plano-espastico-fibular",
+     "titulo": "O pé plano espástico fibular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coalizao-calcaneonavicular-o-quadro-clinico",
+     "titulo": "Coalizão calcaneonavicular: o quadro clínico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coalizao-talocalcanea-o-quadro-clinico",
+     "titulo": "Coalizão talocalcânea: o quadro clínico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radiografia-da-calcaneonavicular-obliqua-e-taman",
+     "titulo": "Radiografia da calcaneonavicular: oblíqua e tamanduá",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radiografia-da-talocalcanea-o-sinal-do-c-e-o-bic",
+     "titulo": "Radiografia da talocalcânea: o sinal do C e o bico talar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tc-rm-e-cintilografia",
+     "titulo": "TC, RM e cintilografia",
+     "radar": "clinico"
+    },
+    {
+     "id": "tratamento-conservador",
+     "titulo": "Tratamento conservador",
+     "radar": "clinico"
+    },
+    {
+     "id": "resseccao-da-calcaneonavicular-com-interposicao",
+     "titulo": "Ressecção da calcaneonavicular com interposição",
+     "radar": "clinico"
+    },
+    {
+     "id": "talocalcanea-resseccao-ou-artrodese",
+     "titulo": "Talocalcânea: ressecção ou artrodese",
+     "radar": "confirmado"
+    },
+    {
+     "id": "outras-coalizoes-e-sindromes",
+     "titulo": "Outras coalizões e síndromes",
+     "radar": "fundamento"
+    },
+    {
+     "id": "resultados-e-complicacoes",
+     "titulo": "Resultados e complicações",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pe-tornozelo-0323",
+    "pe-tornozelo-0043",
+    "pe-tornozelo-0256",
+    "pe-tornozelo-0110",
+    "pe-tornozelo-0327",
+    "pe-tornozelo-0238",
+    "pe-tornozelo-0025",
+    "pe-tornozelo-0341",
+    "pe-tornozelo-0314",
+    "pe-tornozelo-0097",
+    "pe-tornozelo-0352",
+    "pe-tornozelo-0227",
+    "pe-tornozelo-0214",
+    "pe-tornozelo-0067",
+    "pe-tornozelo-0266",
+    "pe-tornozelo-0019",
+    "pe-tornozelo-0353"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Coalizões tarsais"
+   ]
+  },
+  {
    "id": "campbell15-condrossarcoma",
    "versao": 1,
    "titulo": "Condrossarcoma",
@@ -2511,6 +3108,353 @@
    "treino": [],
    "subtemas": [
     "Condrossarcoma"
+   ]
+  },
+  {
+   "id": "campbell15-dor-analgesia",
+   "versao": 1,
+   "titulo": "Dor e analgesia em ortopedia",
+   "especialidade": "conceitos-basicos",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Skeletal Trauma, 5ª ed. (cap. 14A), o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 27 e 28), o Green's Operative Hand Surgery, 7ª ed. (cap. 1 e 53) e o Sizínio Hebert, 5ª ed.",
+   "capitulo": "Capítulo 67 · Peripheral Nerve Injuries (seção Complex Regional Pain Syndrome), com o Capítulo 2 · Perioperative Patient Optimization and Overview of Tendon-to-Bone Fixation and Bone Grafting e o Capítulo 69 · Basic Surgical Technique and Postoperative Care",
+   "resumo": "Modulação é a fase em que vias descendentes inibem ou excitam a dor na medula; alodinia é dor a estímulo que normalmente não dói, hiperpatia é dor que soma, se espalha e persiste após o estímulo; AINE por pouco tempo não prejudica a consolidação; gabapentinoides bloqueiam canais de cálcio e tratam o componente neuropático; bloqueio femoral cobre a face anterior da coxa e o joelho, interescalênico o ombro (poupa C8 e T1 e bloqueia o frênico), infraclavicular cotovelo, punho e mão; ramo medial do ramo dorsal inerva as facetas; SDCR tipo 1 sem lesão nervosa (antiga distrofia simpático-reflexa) e tipo 2 com lesão nervosa (causalgia), mais em mulheres, membro superior, após fratura do rádio distal; critérios de BUDAPESTE; estágio 1 quente, vermelho e edemaciado, estágio 2 úmido, cianótico e frio; vitamina C 500 mg para prevenção; tratamento funcional multidisciplinar com fisioterapia e terapia ocupacional.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fisiologia-da-dor-do-nociceptor-ao-cortex",
+     "titulo": "Fisiologia da dor: do nociceptor ao córtex",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-vocabulario-da-dor-alodinia-hiperalgesia-e-hip",
+     "titulo": "O vocabulário da dor: alodinia, hiperalgesia e hiperpatia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "analgesia-sistemica-paracetamol-aine-e-o-osso",
+     "titulo": "Analgesia sistêmica: paracetamol, AINE e o osso",
+     "radar": "fundamento"
+    },
+    {
+     "id": "opioides-potencia-metabolitos-e-dependencia",
+     "titulo": "Opioides: potência, metabólitos e dependência",
+     "radar": "fundamento"
+    },
+    {
+     "id": "dor-neuropatica-gabapentinoides-e-o-esquema-mult",
+     "titulo": "Dor neuropática, gabapentinoides e o esquema multimodal",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anestesia-neuraxial-e-infiltracao-local",
+     "titulo": "Anestesia neuraxial e infiltração local",
+     "radar": "fundamento"
+    },
+    {
+     "id": "bloqueios-do-membro-superior",
+     "titulo": "Bloqueios do membro superior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "bloqueios-do-membro-inferior",
+     "titulo": "Bloqueios do membro inferior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dor-cronica-da-coluna-o-bloqueio-do-ramo-medial",
+     "titulo": "Dor crônica da coluna: o bloqueio do ramo medial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sdcr-nome-tipos-e-quem-tem",
+     "titulo": "SDCR: nome, tipos e quem tem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sdcr-diagnostico-pelos-criterios-de-budapeste",
+     "titulo": "SDCR: diagnóstico pelos critérios de BUDAPESTE",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sdcr-os-estagios-classicos",
+     "titulo": "SDCR: os estágios clássicos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sdcr-prevencao-com-vitamina-c",
+     "titulo": "SDCR: prevenção com vitamina C",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sdcr-tratamento-funcional-e-multidisciplinar",
+     "titulo": "SDCR: tratamento funcional e multidisciplinar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "conceitos-basicos-0007",
+    "conceitos-basicos-0094",
+    "conceitos-basicos-0266",
+    "conceitos-basicos-0021",
+    "conceitos-basicos-0170",
+    "conceitos-basicos-0123",
+    "conceitos-basicos-0012",
+    "coluna-0272",
+    "conceitos-basicos-0255",
+    "conceitos-basicos-0211",
+    "conceitos-basicos-0238",
+    "conceitos-basicos-0048",
+    "conceitos-basicos-0092",
+    "conceitos-basicos-0036",
+    "conceitos-basicos-0065",
+    "trauma-0576",
+    "conceitos-basicos-0264"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Dor e analgesia"
+   ]
+  },
+  {
+   "id": "campbell15-epicondilite",
+   "versao": 1,
+   "titulo": "Epicondilite lateral e medial",
+   "especialidade": "ombro-cotovelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Green's Operative Hand Surgery, 7ª ed. (cap. 25 e 23) e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed.",
+   "capitulo": "Capítulo 82 · Compressive Neuropathies of the Hand, Forearm, and Elbow (síndrome do túnel radial), com o Capítulo 51 · Shoulder and Elbow Injuries (seção Elbow Tendinopathies) e o Capítulo 57 · Arthroscopy of the Upper Extremity (portais do cotovelo e liberação artroscópica)",
+   "resumo": "Tendinose (não tendinite) da origem do extensor radial curto do carpo com hiperplasia angiofibroblástica de NIRSCHL; mais comum em não atletas na quarta e quinta décadas; dor 5 mm distal e anterior ao epicôndilo; COZEN (cotovelo a 90°, antebraço pronado, extensão resistida do punho), MILL (cotovelo estendido, flexão forçada do punho), MAUDSLEY (dedo médio), teste da cadeira de GARDNER e xícara de café; RM com hipersinal em T1 e T2; túnel radial (síndrome do supinador) como principal diferencial, coexistindo em 5%; conservador funciona em 84% a 95%; corticoide só alivia a curto prazo; cirurgia após 6 a 12 meses, aberta ou artroscópica, com falha por ressecção incompleta ou instabilidade posterolateral; portal anteromedial 2 cm distal e 2 cm anterior ao epicôndilo medial; epicondilite medial no pronador redondo e flexor radial do carpo, com neurite ulnar em 23% a 60%.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-anatomia-que-explica-a-doenca",
+     "titulo": "A anatomia que explica a doença",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quem-adoece",
+     "titulo": "Quem adoece",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fisiopatologia-tendinose-angiofibroblastica",
+     "titulo": "Fisiopatologia: tendinose angiofibroblástica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quadro-clinico-e-testes-provocativos",
+     "titulo": "Quadro clínico e testes provocativos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-imagem-radiografia-ultrassom-e-ressonancia",
+     "titulo": "A imagem: radiografia, ultrassom e ressonância",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diagnostico-diferencial-tunel-radial-e-instabili",
+     "titulo": "Diagnóstico diferencial: túnel radial e instabilidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-conservador",
+     "titulo": "Tratamento conservador",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-cirurgico-aberto",
+     "titulo": "Tratamento cirúrgico aberto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artroscopia-tecnica-e-portais",
+     "titulo": "Artroscopia: técnica e portais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quando-a-cirurgia-falha",
+     "titulo": "Quando a cirurgia falha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "epicondilite-medial-e-o-nervo-ulnar",
+     "titulo": "Epicondilite medial e o nervo ulnar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "reabilitacao-em-fases",
+     "titulo": "Reabilitação em fases",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "ombro-cotovelo-0034",
+    "ombro-cotovelo-0562",
+    "ombro-cotovelo-0014",
+    "ombro-cotovelo-0314",
+    "ombro-cotovelo-0099",
+    "ombro-cotovelo-0534",
+    "ombro-cotovelo-0298",
+    "ombro-cotovelo-0077",
+    "ombro-cotovelo-0024",
+    "ombro-cotovelo-0349",
+    "ombro-cotovelo-0070",
+    "ombro-cotovelo-0460",
+    "ombro-cotovelo-0333",
+    "ombro-cotovelo-0551",
+    "ombro-cotovelo-0507",
+    "ombro-cotovelo-0410",
+    "ombro-cotovelo-0521",
+    "ombro-cotovelo-0193"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Epicondilite lateral e medial"
+   ]
+  },
+  {
+   "id": "campbell15-espondiloartrites-artrites",
+   "versao": 1,
+   "titulo": "Espondiloartrites e outras artrites",
+   "especialidade": "osteometabolicas",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021) e o Green's Operative Hand Surgery, 7ª ed. (2017)",
+   "capitulo": "Capítulo 78 · Arthritic Hand",
+   "resumo": "AR é a artrite inflamatória idiopática mais comum, simétrica, de mãos e pés, com 4 de 7 critérios (rigidez matinal, 3 ou mais áreas, mão, simetria, nódulos, FR, erosões) e anti-CCP 98% específico; polegar de NALEBUFF tipo I (botoeira) é o mais comum; artrodese do punho com pino de STEINMANN saindo entre o 2º e o 3º metacarpos; prótese de cotovelo dá os melhores resultados na AR; soronegativas atacam a êntese, predominam em homens e se ligam ao HLA-B27 (88% a 96% na EA, que sobe de caudal para cefálico e poupa disco e ligamento longitudinal anterior); REITER é tríade com oligoartrite assimétrica de homem jovem; acro-osteólise e lápis na xícara são da psoriásica; gota é monoartrite súbita de homem, com cristal de birrefringência negativa; LYME acomete sobretudo o joelho; AIJ exige 6 semanas, oligoarticular em meninas de 2 a 4 anos, joelho, FAN e uveíte, e FR e FAN não diagnosticam.",
+   "acesso": "gratis",
+   "minutos": 32,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-mapa-das-artrites-inflamatorias",
+     "titulo": "O mapa das artrites inflamatórias",
+     "radar": "fundamento"
+    },
+    {
+     "id": "artrite-reumatoide-a-doenca-e-o-diagnostico",
+     "titulo": "Artrite reumatoide: a doença e o diagnóstico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-ar-fora-da-mao-coluna-cervical-quadril-e-cotov",
+     "titulo": "A AR fora da mão: coluna cervical, quadril e cotovelo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-mao-reumatoide-e-o-polegar-de-nalebuff",
+     "titulo": "A mão reumatoide e o polegar de NALEBUFF",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-punho-reumatoide-e-a-artrodese-com-pino",
+     "titulo": "O punho reumatoide e a artrodese com pino",
+     "radar": "confirmado"
+    },
+    {
+     "id": "espondiloartrites-o-que-une-o-grupo",
+     "titulo": "Espondiloartrites: o que une o grupo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "espondilite-anquilosante",
+     "titulo": "Espondilite anquilosante",
+     "radar": "confirmado"
+    },
+    {
+     "id": "reiter-e-artrite-reativa",
+     "titulo": "REITER e artrite reativa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrite-psoriasica-e-a-acro-osteolise",
+     "titulo": "Artrite psoriásica e a acro-osteólise",
+     "radar": "confirmado"
+    },
+    {
+     "id": "gota-e-pseudogota",
+     "titulo": "Gota e pseudogota",
+     "radar": "confirmado"
+    },
+    {
+     "id": "doenca-de-lyme",
+     "titulo": "Doença de LYME",
+     "radar": "confirmado"
+    },
+    {
+     "id": "febre-reumatica-e-artrite-pos-estreptococica",
+     "titulo": "Febre reumática e artrite pós-estreptocócica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrite-idiopatica-juvenil-definicao-e-o-subtipo",
+     "titulo": "Artrite idiopática juvenil: definição e o subtipo oligoarticular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "aij-poliarticular-sistemica-e-a-uveite",
+     "titulo": "AIJ poliarticular, sistêmica e a uveíte",
+     "radar": "confirmado"
+    },
+    {
+     "id": "aij-imagem-tratamento-e-cirurgia",
+     "titulo": "AIJ: imagem, tratamento e cirurgia",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "osteometabolicas-0078",
+    "osteometabolicas-0008",
+    "osteometabolicas-0033",
+    "mao-0142",
+    "mao-0454",
+    "osteometabolicas-0081",
+    "osteometabolicas-0093",
+    "osteometabolicas-0012",
+    "osteometabolicas-0066",
+    "osteometabolicas-0073",
+    "osteometabolicas-0068",
+    "osteometabolicas-0010",
+    "osteometabolicas-0015",
+    "osteometabolicas-0053",
+    "osteometabolicas-0045",
+    "osteometabolicas-0029",
+    "osteometabolicas-0092"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Espondiloartrites e outras artrites"
    ]
   },
   {
@@ -2639,6 +3583,345 @@
    ]
   },
   {
+   "id": "campbell15-estenose-lombar",
+   "versao": 1,
+   "titulo": "Estenose do canal lombar",
+   "especialidade": "coluna",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026)",
+   "capitulo": "Capítulo 47 · Adult Spinal Deformity (seção Degenerative Scoliosis), com a seção Stenosis of the Thoracic and Lumbar Spine do Capítulo 46 · Degenerative Disorders of the Thoracic and Lumbar Spine",
+   "resumo": "Cascata degenerativa de KIRKALDY-WILLIS com hipertrofia do processo articular superior e do ligamento amarelo; zonas de LEE (entrada = recesso lateral da borda medial do processo articular superior à borda medial do pedículo, média = forame, saída); artrose facetária como causa principal do recesso lateral; congênita usualmente central; L4-L5 mais acometido e raiz L5; central bilateral e não dermatômica, recesso lateral dermatômico; claudicação neurogênica com distância variável, alívio sentado ou fletido, melhor subindo ladeira e pedalando, pior na esteira, contra a vascular de distância fixa e alívio em pé; elevação da perna estendida geralmente normal; saco dural de 100 mm² ou menos; conservador primeiro; descompressão como escolha e fusão se instabilidade, listese, escoliose ou ressecção facetária extensa; na escoliose degenerativa a flexão muitas vezes não alivia.",
+   "acesso": "gratis",
+   "minutos": 37,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-cascata-degenerativa-como-o-canal-se-fecha",
+     "titulo": "A cascata degenerativa: como o canal se fecha",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-zonas-do-canal-central-recesso-lateral-forame",
+     "titulo": "As zonas do canal: central, recesso lateral, forame e saída",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-causas-congenita-adquirida-e-o-resto",
+     "titulo": "As causas: congênita, adquirida e o resto",
+     "radar": "fundamento"
+    },
+    {
+     "id": "clinica-central-contra-recesso-lateral",
+     "titulo": "Clínica: central contra recesso lateral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "claudicacao-neurogenica-contra-claudicacao-vascu",
+     "titulo": "Claudicação neurogênica contra claudicação vascular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-fisico",
+     "titulo": "O exame físico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-imagem",
+     "titulo": "A imagem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "historia-natural",
+     "titulo": "História natural",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tratamento-conservador-e-infiltracao-epidural",
+     "titulo": "Tratamento conservador e infiltração epidural",
+     "radar": "clinico"
+    },
+    {
+     "id": "quando-operar-e-o-que-esperar",
+     "titulo": "Quando operar e o que esperar",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-descompressao",
+     "titulo": "A descompressão",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "quando-somar-a-artrodese",
+     "titulo": "Quando somar a artrodese",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "espondilolistese-degenerativa-associada",
+     "titulo": "Espondilolistese degenerativa associada",
+     "radar": "fundamento"
+    },
+    {
+     "id": "escoliose-degenerativa-a-claudicacao-que-nao-mel",
+     "titulo": "Escoliose degenerativa: a claudicação que não melhora com a flexão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "segmento-adjacente-e-complicacoes",
+     "titulo": "Segmento adjacente e complicações",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "coluna-0068",
+    "coluna-0044",
+    "coluna-0029",
+    "coluna-0212",
+    "coluna-0255",
+    "coluna-0006",
+    "coluna-0013",
+    "coluna-0327",
+    "coluna-0440",
+    "coluna-0334",
+    "coluna-0346",
+    "coluna-0156"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Estenose do canal lombar"
+   ]
+  },
+  {
+   "id": "campbell15-exame-neurologico",
+   "versao": 1,
+   "titulo": "Exame neurológico e radiculopatias",
+   "especialidade": "coluna",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Netter Atlas de Anatomia Ortopédica, 2ª ed., o Sizínio Hebert, 5ª ed., e o Tachdjian's Pediatric Orthopaedics, 6ª ed.",
+   "capitulo": "Capítulo 45 · Degenerative Disorders of the Cervical Spine, com o Capítulo 46 · Degenerative Disorders of the Thoracic and Lumbar Spine e os capítulos 40, 43 e 48",
+   "resumo": "Raiz cervical sai acima do pedículo e a lombar abaixo (C4-5 = C5, C5-6 = C6, C6-7 = C7; L4-5 posterolateral = L5, foraminal = L4); C5 deltoide e bicipital, C6 extensores do punho e braquiorradial, C7 tríceps, flexor radial do carpo e tricipital, C8 sem reflexo; L4 patelar, L5 extensor do hálux e glúteo médio sem reflexo, S1 tríceps sural, glúteo máximo e aquileu; mamilo T4, xifoide T7, umbigo T10; SPURLING 95% sensível; LASÈGUE com dor abaixo do joelho, contralateral patognomônico; estiramento femoral para hérnia alta; HOFFMANN em C5-6 ou acima, BABINSKI, clônus e hiper-reflexia na mielopatia; reflexo abdominal na siringomielia; bulbocavernoso marca o fim do choque medular; cauda equina é a única urgência cirúrgica da hérnia; GUILLAIN-BARRÉ ascendente e arrefléxico.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-anatomia-que-decide-o-nivel-raiz-pediculo-e-di",
+     "titulo": "A anatomia que decide o nível: raiz, pedículo e disco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dermatomos-miotomos-e-reflexos-a-logica-do-exame",
+     "titulo": "Dermátomos, miótomos e reflexos: a lógica do exame",
+     "radar": "confirmado"
+    },
+    {
+     "id": "membro-superior-c5-a-t1-raiz-por-raiz",
+     "titulo": "Membro superior: C5 a T1, raiz por raiz",
+     "radar": "confirmado"
+    },
+    {
+     "id": "testes-de-raiz-cervical-spurling-distracao-e-abd",
+     "titulo": "Testes de raiz cervical: SPURLING, distração e abdução",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tronco-dermatomos-toracicos-e-reflexos-superfici",
+     "titulo": "Tronco: dermátomos torácicos e reflexos superficiais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "membro-inferior-l4-l5-e-s1",
+     "titulo": "Membro inferior: L4, L5 e S1",
+     "radar": "confirmado"
+    },
+    {
+     "id": "testes-de-tensao-lasegue-contralateral-sentado-e",
+     "titulo": "Testes de tensão: LASÈGUE, contralateral, sentado e estiramento femoral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hernia-lombar-historia-natural-e-quando-operar",
+     "titulo": "Hérnia lombar: história natural e quando operar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mielopatia-os-sinais-de-liberacao-piramidal",
+     "titulo": "Mielopatia: os sinais de liberação piramidal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radiculopatia-ou-mielopatia-o-diagnostico-que-ve",
+     "titulo": "Radiculopatia ou mielopatia: o diagnóstico que vem antes do nível",
+     "radar": "fundamento"
+    },
+    {
+     "id": "cauda-equina-cone-medular-e-choque-medular",
+     "titulo": "Cauda equina, cone medular e choque medular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diagnostico-diferencial-neuropatia-periferica-e-",
+     "titulo": "Diagnóstico diferencial: neuropatia periférica e GUILLAIN-BARRÉ",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "coluna-0382",
+    "coluna-0066",
+    "coluna-0135",
+    "coluna-0559",
+    "coluna-0181",
+    "coluna-0039",
+    "coluna-0073",
+    "coluna-0456",
+    "coluna-0100",
+    "coluna-0450",
+    "coluna-0207",
+    "coluna-0153",
+    "coluna-0193",
+    "coluna-0110",
+    "coluna-0018",
+    "coluna-0414",
+    "coluna-0225",
+    "coluna-0330",
+    "coluna-0063",
+    "coluna-0274",
+    "coluna-0381",
+    "coluna-0383",
+    "coluna-0384",
+    "coluna-0358",
+    "coluna-0455",
+    "coluna-0096",
+    "coluna-0475",
+    "coluna-0476",
+    "coluna-0082",
+    "coluna-0203",
+    "coluna-0385",
+    "coluna-0477",
+    "coluna-0478",
+    "coluna-0479",
+    "coluna-0219",
+    "coluna-0237",
+    "coluna-0136",
+    "coluna-0480",
+    "coluna-0372",
+    "coluna-0229"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Exame neurológico e radiculopatias"
+   ]
+  },
+  {
+   "id": "campbell15-exame-ombro",
+   "versao": 1,
+   "titulo": "Exame físico do ombro",
+   "especialidade": "ombro-cotovelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Netter Atlas de Anatomia Ortopédica, 2ª edição",
+   "capitulo": "Capítulo 52 · Recurrent Dislocations (testes de instabilidade), com os capítulos 51 · Shoulder and Elbow Injuries, 53 · Traumatic Disorders, 57 · Arthroscopy of the Upper Extremity e 14 · Open Reconstructive Procedures of the Shoulder",
+   "resumo": "NEER (elevação passiva forçada, dor com anestésico que some) e HAWKINS (flexão 90 e rotação interna) provocam impacto; JOBE (90 graus, 30 de flexão, polegar para baixo) testa o supraespinal; PATTE (corneteiro) o redondo menor; drop sign e atraso em rotação externa o infraespinal; lift-off, belly-press, bear hug e atraso em rotação interna o subescapular (específicos, pouco sensíveis); O'BRIEN dói na primeira fase e alivia na segunda (dentro = lábio/SLAP, em cima = acromioclavicular); YERGASON (supinação resistida) e SPEED avaliam a cabeça longa do bíceps; apreensão e relocação de JOBE para instabilidade anterior; sulco a 0 grau = intervalo rotador, a 45 graus = glenoumeral inferior; GAGEY acima de 20 graus de diferença e BEIGHTON para hiperfrouxidão; adução cruzada para a acromioclavicular; ADSON para o desfiladeiro torácico.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-anatomia-que-o-exame-interroga",
+     "titulo": "A anatomia que o exame interroga",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-roteiro-do-exame-inspecao-palpacao-amplitude-e",
+     "titulo": "O roteiro do exame: inspeção, palpação, amplitude e nervos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "testes-de-impacto-neer-hawkins-kennedy-e-companh",
+     "titulo": "Testes de impacto: NEER, HAWKINS-KENNEDY e companhia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-supraespinal-e-o-manguito-posterior-jobe-queda",
+     "titulo": "O supraespinal e o manguito posterior: JOBE, quedas, atrasos e PATTE",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-subescapular-lift-off-belly-press-bear-hug-e-a",
+     "titulo": "O subescapular: lift-off, belly-press, bear hug e atraso em rotação interna",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-biceps-e-o-labio-superior-o-brien-speed-yergas",
+     "titulo": "O bíceps e o lábio superior: O'BRIEN, SPEED, YERGASON e SLAP",
+     "radar": "confirmado"
+    },
+    {
+     "id": "instabilidade-apreensao-relocacao-gaveta-sulco-e",
+     "titulo": "Instabilidade: apreensão, relocação, gaveta, sulco e hiperfrouxidão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "acromioclavicular-escapula-e-desfiladeiro-toraci",
+     "titulo": "Acromioclavicular, escápula e desfiladeiro torácico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "ombro-cotovelo-0545",
+    "ombro-cotovelo-0015",
+    "ombro-cotovelo-0013",
+    "ombro-cotovelo-0657",
+    "ombro-cotovelo-0086",
+    "ombro-cotovelo-0205",
+    "ombro-cotovelo-0173",
+    "ombro-cotovelo-0406",
+    "ombro-cotovelo-0056",
+    "ombro-cotovelo-0518",
+    "ombro-cotovelo-0543",
+    "ombro-cotovelo-0092",
+    "ombro-cotovelo-0329",
+    "ombro-cotovelo-0571",
+    "ombro-cotovelo-0094",
+    "ombro-cotovelo-0544",
+    "ombro-cotovelo-0548",
+    "ombro-cotovelo-0547",
+    "ombro-cotovelo-0546",
+    "ombro-cotovelo-0330",
+    "ombro-cotovelo-0493",
+    "ombro-cotovelo-0433"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Exame físico do ombro"
+   ]
+  },
+  {
    "id": "campbell15-halux-valgo",
    "versao": 1,
    "titulo": "Hálux valgo",
@@ -2764,6 +4047,575 @@
    "treino": [],
    "subtemas": [
     "Hálux valgo"
+   ]
+  },
+  {
+   "id": "campbell15-imagem-joelho",
+   "versao": 1,
+   "titulo": "Imagem do joelho",
+   "especialidade": "joelho",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª edição (2025), o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e o HEBERT, Ortopedia e Traumatologia, 5ª edição",
+   "capitulo": "Capítulo 10 · Knee Preservation Surgery (radiografia da artrose, eixo e calcificações para-articulares), lido com os capítulos de imagem avançada, lesões do joelho e luxações do mesmo livro",
+   "resumo": "ROSENBERG (45 graus com carga, PA, 10 graus podal); MERCHANT e LAURIN; radiografia não confirma menisco, exclui o que imita; RM detecta mas não prevê o reparo; água escura em T1 e clara em T2; HUMPHRY anterior e WRISBERG posterior ao LCP; hiato do poplíteo; SEGOND = LCA, arqueado = canto posterolateral; contusões do LCA e da luxação patelar; varo 2,7 mm = LCL isolado; INSALL-SALVATI > 1,2; cruzamento = displasia troclear; TA-GT > 20 mm; AHLBACK III com platô posterior intacto.",
+   "acesso": "gratis",
+   "minutos": 32,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-fisica-que-a-prova-cobra-t1-e-t2",
+     "titulo": "A física que a prova cobra: T1 e T2",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-incidencias-radiograficas-do-joelho",
+     "titulo": "As incidências radiográficas do joelho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiografia-e-a-ressonancia-no-menisco",
+     "titulo": "A radiografia e a ressonância no menisco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "anatomia-na-ressonancia-meniscofemorais-popliteo",
+     "titulo": "Anatomia na ressonância: meniscofemorais, poplíteo e fabela",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sinais-radiograficos-de-avulsao-o-osso-que-fala-",
+     "titulo": "Sinais radiográficos de avulsão: o osso que fala pelo ligamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-ressonancia-dos-ligamentos-e-as-contusoes-osse",
+     "titulo": "A ressonância dos ligamentos e as contusões ósseas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radiografias-de-estresse",
+     "titulo": "Radiografias de estresse",
+     "radar": "confirmado"
+    },
+    {
+     "id": "altura-patelar-blumensaat-insall-salvati-caton-d",
+     "titulo": "Altura patelar: BLUMENSAAT, INSALL-SALVATI, CATON-DESCHAMPS e BLACKBURNE-PEEL",
+     "radar": "confirmado"
+    },
+    {
+     "id": "troclea-e-tomografia-cruzamento-dejour-e-ta-gt",
+     "titulo": "Tróclea e tomografia: cruzamento, DEJOUR e TA-GT",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-luxacao-da-patela-na-imagem",
+     "titulo": "A luxação da patela na imagem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiografia-da-artrose-e-do-eixo",
+     "titulo": "A radiografia da artrose e do eixo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-crianca-e-o-adolescente",
+     "titulo": "A criança e o adolescente",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "conceitos-basicos-0172",
+    "joelho-0380",
+    "trauma-1035",
+    "joelho-0330",
+    "joelho-0331",
+    "joelho-0149",
+    "joelho-0105",
+    "joelho-0107",
+    "joelho-0111",
+    "joelho-0188",
+    "joelho-0226",
+    "joelho-0282",
+    "joelho-0172",
+    "joelho-0132",
+    "joelho-0295",
+    "joelho-0286",
+    "joelho-0291",
+    "joelho-0232",
+    "joelho-0023",
+    "joelho-0336",
+    "joelho-0335",
+    "joelho-0337",
+    "joelho-0338",
+    "joelho-0318"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Imagem do joelho"
+   ]
+  },
+  {
+   "id": "campbell15-imagem-ombro-cotovelo",
+   "versao": 1,
+   "titulo": "Imagem do ombro e cotovelo",
+   "especialidade": "ombro-cotovelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª edição (2025), e o Rockwood and Wilkins' Fractures in Children, 10ª edição",
+   "capitulo": "Capítulo 3 · Advanced Imaging in Orthopaedics, com os capítulos 13 · Shoulder Arthroplasty, 51 · Shoulder and Elbow Injuries, 52 · Recurrent Dislocations, 53 · Traumatic Disorders, 57 · Arthroscopy of the Upper Extremity e 65 · Acute Dislocations",
+   "resumo": "Série do ombro (AP, GRASHEY a 30 graus, Y a 60 graus, axilar; VELPEAU sem abdução; luxação posterior perdida em 73% sem axilar ou Y); STRYKER (10 graus cefálico) para HILL-SACHS e coracoide; WEST POINT (prono, 25 e 25 graus) para o BANKART ósseo; GARTH 45 graus caudal; ZANCA e axilar (tipo IV) na acromioclavicular; HEINIG e TC na esternoclavicular; sourcil, intervalo < 7 e < 5 mm, HAMADA, barba de bode e subluxação posterior; TC para osteopenia e perda óssea; RM axial para o lábio anterior, coronal oblíquo para o manguito; ELLMAN; coxins, linhas do cotovelo e FABS.",
+   "acesso": "gratis",
+   "minutos": 37,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-serie-padrao-do-ombro",
+     "titulo": "A série padrão do ombro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-perfil-em-y-o-axilar-e-a-direcao-da-luxacao",
+     "titulo": "O perfil em Y, o axilar e a direção da luxação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-incidencias-especiais-da-instabilidade",
+     "titulo": "As incidências especiais da instabilidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coracoide-acromioclavicular-e-a-incidencia-de-za",
+     "titulo": "Coracoide, acromioclavicular e a incidência de ZANCA",
+     "radar": "confirmado"
+    },
+    {
+     "id": "esternoclavicular-heinig-hobbs-serendipity-e-a-t",
+     "titulo": "Esternoclavicular: HEINIG, HOBBS, serendipity e a TC",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radiografia-do-manguito-e-da-artrose",
+     "titulo": "Radiografia do manguito e da artrose",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tomografia-fratura-osteopenia-e-perda-ossea",
+     "titulo": "Tomografia: fratura, osteopenia e perda óssea",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ressonancia-do-ombro-planos-sinais-e-o-manguito",
+     "titulo": "Ressonância do ombro: planos, sinais e o manguito",
+     "radar": "confirmado"
+    },
+    {
+     "id": "labio-e-capsula-bankart-variantes-e-artro-rm",
+     "titulo": "Lábio e cápsula: BANKART, variantes e artro-RM",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ultrassonografia-e-artrografia",
+     "titulo": "Ultrassonografia e artrografia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "radiografia-do-cotovelo-linhas-angulos-e-coxins",
+     "titulo": "Radiografia do cotovelo: linhas, ângulos e coxins",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ressonancia-e-ultrassonografia-do-cotovelo",
+     "titulo": "Ressonância e ultrassonografia do cotovelo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "ombro-cotovelo-0549",
+    "ombro-cotovelo-0487",
+    "ombro-cotovelo-0045",
+    "ombro-cotovelo-0392",
+    "ombro-cotovelo-0471",
+    "ombro-cotovelo-0478",
+    "ombro-cotovelo-0341",
+    "ombro-cotovelo-0218",
+    "ombro-cotovelo-0511",
+    "trauma-0753",
+    "ombro-cotovelo-0440",
+    "ombro-cotovelo-0445",
+    "ombro-cotovelo-0468",
+    "ombro-cotovelo-0093",
+    "ombro-cotovelo-0316",
+    "ombro-cotovelo-0557",
+    "ombro-cotovelo-0560",
+    "ombro-cotovelo-0499",
+    "ombro-cotovelo-0520",
+    "ombro-cotovelo-0370"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Imagem do ombro e cotovelo"
+   ]
+  },
+  {
+   "id": "campbell15-imagem-pe-tornozelo",
+   "versao": 1,
+   "titulo": "Imagem do pé e tornozelo",
+   "especialidade": "pe-tornozelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª ed., o Tachdjian's Pediatric Orthopaedics, 6ª ed., e o Ortopedia e Traumatologia (HEBERT), 5ª ed.",
+   "capitulo": "Capítulo 93 · Fractures and Dislocations of the Foot",
+   "resumo": "Radiografia do pé sempre com carga; KITE (talocalcâneo) aumenta no plano valgo (AP 20 a 40°) e tende a zero no cavo e no pé torto (varo, paralelismo); MEARY é tálus com primeiro metatarso no perfil, normal 0°; pitch 15 a 25° (SIZÍNIO) ou 18 a 32° (Campbell); hálux normal até 15° e intermetatarsal até 9°; calcâneo com cinco incidências (perfil, HARRIS, AP, oblíqua e BRODEN em rotação interna de 40° com raio cefálico de 10 a 15°), BÖHLER 20 a 40° que cai e GISSANE 120 a 140° que sobe, BÖHLER normal com faceta dividida (dupla densidade); CANALE com pé pronado 15° e tubo a 75°; sinal de HAWKINS em 6 a 8 semanas exclui necrose; estresse do deltoide em supinação e rotação externa; BRODEN em inversão para a subtalar; nariz de tamanduá no perfil e oblíqua a 45° na coalizão calcaneonavicular; tálus vertical não reduz em flexão plantar; EICHENHOLTZ 1 = destruição com edema e calor.",
+   "acesso": "gratis",
+   "minutos": 37,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "regras-gerais-carga-incidencias-e-quando-pedir-t",
+     "titulo": "Regras gerais: carga, incidências e quando pedir TC e RM",
+     "radar": "fundamento"
+    },
+    {
+     "id": "pe-plano-os-angulos-que-caem",
+     "titulo": "Pé plano: os ângulos que caem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pe-cavo-kite-perto-de-zero-e-quebra-de-meary",
+     "titulo": "Pé cavo: KITE perto de zero e quebra de MEARY",
+     "radar": "confirmado"
+    },
+    {
+     "id": "crianca-pe-torto-talus-vertical-e-calcaneovalgo",
+     "titulo": "Criança: pé torto, tálus vertical e calcaneovalgo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coalizao-tarsal-obliqua-harris-nariz-de-tamandua",
+     "titulo": "Coalizão tarsal: oblíqua, HARRIS, nariz de tamanduá e sinal do C",
+     "radar": "confirmado"
+    },
+    {
+     "id": "halux-angulos-no-ap-com-carga",
+     "titulo": "Hálux: ângulos no AP com carga",
+     "radar": "confirmado"
+    },
+    {
+     "id": "calcaneo-bohler-gissane-harris-broden-e-tc",
+     "titulo": "Calcâneo: BÖHLER, GISSANE, HARRIS, BRODEN e TC",
+     "radar": "confirmado"
+    },
+    {
+     "id": "talus-canale-broden-e-sinal-de-hawkins",
+     "titulo": "Tálus: CANALE, BRODEN e sinal de HAWKINS",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tornozelo-sob-estresse-deltoide-ligamentos-later",
+     "titulo": "Tornozelo sob estresse: deltoide, ligamentos laterais e subtalar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mediope-lisfranc-e-sinais-sutis",
+     "titulo": "Mediopé: LISFRANC e sinais sutis",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "charcot-e-pe-diabetico-eichenholtz-rm-e-cintilog",
+     "titulo": "Charcot e pé diabético: EICHENHOLTZ, RM e cintilografia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lesao-osteocondral-do-talus-e-outras-imagens-ute",
+     "titulo": "Lesão osteocondral do tálus e outras imagens úteis",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pe-tornozelo-0101",
+    "pe-tornozelo-0277",
+    "pe-tornozelo-0255",
+    "pe-tornozelo-0008",
+    "pe-tornozelo-0379",
+    "pe-tornozelo-0076",
+    "pe-tornozelo-0343",
+    "pe-tornozelo-0316",
+    "pe-tornozelo-0364",
+    "pe-tornozelo-0055",
+    "pe-tornozelo-0315",
+    "pe-tornozelo-0328",
+    "pe-tornozelo-0365",
+    "pe-tornozelo-0348",
+    "pe-tornozelo-0177",
+    "pe-tornozelo-0099"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Imagem do pé e tornozelo"
+   ]
+  },
+  {
+   "id": "campbell15-instabilidade-femoropatelar",
+   "versao": 1,
+   "titulo": "Instabilidade femoropatelar",
+   "especialidade": "joelho",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026)",
+   "capitulo": "Capítulo 38 · Fractures and Dislocations in Children (seção Patellar Dislocations), com o Capítulo 52 · Recurrent Dislocations (seção Patella) e o Capítulo 50 · Knee Injuries (seção Chondromalacia of the Patella)",
+   "resumo": "MPFL e VMO seguram a patela de 0 a 20 graus e a tróclea assume a partir de 30; o MPFL é o restritor estático primário (50% a 60%) e sua incompetência é a lesão da recidiva; ângulo Q aumentado por valgo, anteversão femoral e tuberosidade lateral gera vetor lateral que pesa na extensão; DEJOUR A raso, B esporão com tróclea plana, C duplo contorno, D esporão com penhasco, todos com sinal do cruzamento; INSALL-SALVATI alta acima de 1,2, CATON-DESCHAMPS acima de 1,2 a 1,3; TT-TG acima de 20 mm com tróclea normal ou acima de 15 mm com displasia indica osteotomia da tuberosidade; reconstrução isolada do MPFL com alinhamento normal, DEJOUR A ou B e WIBERG C; túnel femoral no ponto de SCHÖTTLE; ELMSLIE-TRILLAT medializa, FULKERSON anteromedializa e descarrega lesão distal e lateral; liberação lateral nunca isolada para instabilidade; Down em até 8%.",
+   "acesso": "gratis",
+   "minutos": 34,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-estabilizadores-da-patela",
+     "titulo": "Os estabilizadores da patela",
+     "radar": "confirmado"
+    },
+    {
+     "id": "biomecanica-vetor-lateral-e-angulo-q",
+     "titulo": "Biomecânica, vetor lateral e ângulo Q",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quem-luxa-e-por-que-recidiva",
+     "titulo": "Quem luxa e por que recidiva",
+     "radar": "confirmado"
+    },
+    {
+     "id": "clinica-e-exame-fisico",
+     "titulo": "Clínica e exame físico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-altura-patelar",
+     "titulo": "Imagem: altura patelar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "imagem-displasia-troclear-e-a-classificacao-de-d",
+     "titulo": "Imagem: displasia troclear e a classificação de DEJOUR",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-tt-tg",
+     "titulo": "Imagem: TT-TG",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-luxacao-aguda",
+     "titulo": "A luxação aguda",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-reconstrucao-do-mpfl",
+     "titulo": "A reconstrução do MPFL",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-osteotomias-da-tuberosidade",
+     "titulo": "As osteotomias da tuberosidade",
+     "radar": "fundamento"
+    },
+    {
+     "id": "trocleoplastia-liberacao-lateral-e-instabilidade",
+     "titulo": "Trocleoplastia, liberação lateral e instabilidade medial iatrogênica",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-crianca-e-as-sindromes",
+     "titulo": "A criança e as síndromes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "dor-femoropatelar-e-condromalacia",
+     "titulo": "Dor femoropatelar e condromalacia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "joelho-0382",
+    "joelho-0176",
+    "trauma-1042",
+    "joelho-0002",
+    "joelho-0341",
+    "joelho-0214",
+    "joelho-0033",
+    "joelho-0219",
+    "trauma-1039",
+    "joelho-0291",
+    "joelho-0010",
+    "joelho-0029",
+    "joelho-0143",
+    "trauma-1059",
+    "joelho-0081",
+    "trauma-1018",
+    "joelho-0041",
+    "joelho-0145",
+    "joelho-0192",
+    "joelho-0194",
+    "joelho-0306"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Instabilidade femoropatelar"
+   ]
+  },
+  {
+   "id": "campbell15-lesoes-musculares",
+   "versao": 1,
+   "titulo": "Lesões musculares",
+   "especialidade": "conceitos-basicos",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026)",
+   "capitulo": "Capítulo 53 · Traumatic Disorders",
+   "resumo": "Estiramento por contração excêntrica, sobretudo nos isquiotibiais durante a corrida de velocidade, com a maioria das lesões na junção miotendínea proximal; graus leve, moderado e grave e a classificação de PEETRONS (menos de 5%, 5 a 50%, ruptura total); cicatrização em fase inflamatória (1 a 3 dias), de reparo (3 a 4 semanas) e de remodelamento (3 a 6 meses); RICE nos primeiros dias e mobilização precoce; tennis leg na cabeça medial do gastrocnêmio com joelho estendido e tornozelo em dorsiflexão, sempre não operatória; peitoral maior com fraqueza em adução e rotação interna e perda da prega axilar anterior; avulsão proximal dos isquiotibiais operada quando três tendões ou dois com 3 cm de retração, com dor e fraqueza como complicações principais; miosite ossificante com ossificação mais madura na periferia; síndrome compartimental crônica pelos critérios de PEDOWITZ.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-musculo-como-orgao-fibras-inervacao-e-miopatia",
+     "titulo": "O músculo como órgão: fibras, inervação e miopatia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "contracao-excentrica-e-o-mecanismo-do-estirament",
+     "titulo": "Contração excêntrica e o mecanismo do estiramento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "como-o-musculo-se-lesiona-contusao-estiramento-e",
+     "titulo": "Como o músculo se lesiona: contusão, estiramento e laceração",
+     "radar": "confirmado"
+    },
+    {
+     "id": "classificacoes-graus-peetrons-e-o-que-cada-grau-",
+     "titulo": "Classificações: graus, PEETRONS e o que cada grau significa",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-cicatrizacao-do-musculo-em-tres-fases",
+     "titulo": "A cicatrização do músculo em três fases",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-juncao-miotendinea-e-o-tendao",
+     "titulo": "A junção miotendínea e o tendão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "exame-clinico-e-diagnostico-por-imagem",
+     "titulo": "Exame clínico e diagnóstico por imagem",
+     "radar": "clinico"
+    },
+    {
+     "id": "tratamento-rice-mobilizacao-precoce-e-retorno-ao",
+     "titulo": "Tratamento: RICE, mobilização precoce e retorno ao esporte",
+     "radar": "fundamento"
+    },
+    {
+     "id": "isquiotibiais-estiramento-avulsao-e-cirurgia",
+     "titulo": "Isquiotibiais: estiramento, avulsão e cirurgia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "gastrocnemio-medial-a-tennis-leg",
+     "titulo": "Gastrocnêmio medial: a tennis leg",
+     "radar": "confirmado"
+    },
+    {
+     "id": "contusao-do-quadriceps-e-miosite-ossificante",
+     "titulo": "Contusão do quadríceps e miosite ossificante",
+     "radar": "confirmado"
+    },
+    {
+     "id": "peitoral-maior",
+     "titulo": "Peitoral maior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "outras-rupturas-quadriceps-reto-femoral-adutor-l",
+     "titulo": "Outras rupturas: quadríceps, reto femoral, adutor longo e as avulsões do adolescente",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "gluteo-medio-o-manguito-rotador-do-quadril",
+     "titulo": "Glúteo médio: o manguito rotador do quadril",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sindrome-compartimental-cronica-aguda-e-rabdomio",
+     "titulo": "Síndrome compartimental crônica, aguda e rabdomiólise",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "conceitos-basicos-0199",
+    "conceitos-basicos-0269",
+    "conceitos-basicos-0300",
+    "conceitos-basicos-0071",
+    "conceitos-basicos-0052",
+    "conceitos-basicos-0309",
+    "conceitos-basicos-0060",
+    "conceitos-basicos-0082",
+    "conceitos-basicos-0186",
+    "conceitos-basicos-0306",
+    "conceitos-basicos-0197",
+    "conceitos-basicos-0037",
+    "conceitos-basicos-0188",
+    "pe-tornozelo-0016",
+    "conceitos-basicos-0029",
+    "conceitos-basicos-0061",
+    "conceitos-basicos-0182",
+    "conceitos-basicos-0098"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Lesões musculares"
    ]
   },
   {
@@ -2913,6 +4765,259 @@
    "treino": [],
    "subtemas": [
     "Lesões meniscais"
+   ]
+  },
+  {
+   "id": "campbell15-nervos-ombro-cotovelo",
+   "versao": 1,
+   "titulo": "Lesões nervosas do ombro e cotovelo",
+   "especialidade": "ombro-cotovelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026)",
+   "capitulo": "Capítulo 14 · Open Reconstructive Procedures of the Shoulder (transferências para escápula alada), com o Capítulo 51 · Shoulder and Elbow Injuries (supraescapular e espaço quadrangular), o Capítulo 67 · Peripheral Nerve Injuries e o Capítulo 82 · Compressive Neuropathies of the Hand, Forearm, and Elbow",
+   "resumo": "Supraescapular do tronco superior, sob o ligamento transverso (artéria acima), mais comprimido na incisura supraescapular; atrofia isolada do infraespinal = espinoglenoidal, cisto de lesão labral posterior, cirurgia precoce; tração no reparo de rotura maciça; quadrangular = axilar + circunflexa umeral posterior, atrofia do redondo menor, abdução e rotação externa; axilar C5 C6 do fascículo posterior, cutâneo lateral superior do braço, 90% recuperam; torácico longo C5 a C7, escápula alada medial, peitoral maior esternal ao ângulo inferior; acessório espinal, escápula alada lateral, EDEN-LANGE; musculocutâneo perfura o coracobraquial; PARSONAGE-TURNER; túnel cubital com ligamento de OSBORNE, teste de flexão, in situ tão eficaz quanto transposição; STRUTHERS, pronador, interósseo anterior (FLP, FDP do indicador e médio, pronador quadrado); arcada de FROHSE e túnel radial.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-mapa-de-onde-sai-cada-nervo",
+     "titulo": "O mapa: de onde sai cada nervo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "nervo-supraescapular-trajeto-e-as-duas-incisuras",
+     "titulo": "Nervo supraescapular: trajeto e as duas incisuras",
+     "radar": "confirmado"
+    },
+    {
+     "id": "supraescapular-causas-o-cisto-e-o-manguito",
+     "titulo": "Supraescapular: causas, o cisto e o manguito",
+     "radar": "confirmado"
+    },
+    {
+     "id": "supraescapular-diagnostico-e-tratamento",
+     "titulo": "Supraescapular: diagnóstico e tratamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "nervo-axilar-e-espaco-quadrangular",
+     "titulo": "Nervo axilar e espaço quadrangular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "toracico-longo-e-a-escapula-alada-medial",
+     "titulo": "Torácico longo e a escápula alada medial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "acessorio-espinal-e-a-escapula-alada-lateral",
+     "titulo": "Acessório espinal e a escápula alada lateral",
+     "radar": "clinico"
+    },
+    {
+     "id": "musculocutaneo-o-nervo-que-perfura-o-coracobraqu",
+     "titulo": "Musculocutâneo: o nervo que perfura o coracobraquial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "parsonage-turner-a-neurite-que-imita-compressao",
+     "titulo": "PARSONAGE-TURNER: a neurite que imita compressão",
+     "radar": "clinico"
+    },
+    {
+     "id": "ulnar-no-cotovelo-tunel-cubital-e-subluxacao",
+     "titulo": "Ulnar no cotovelo: túnel cubital e subluxação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mediano-no-cotovelo-struthers-pronador-e-interos",
+     "titulo": "Mediano no cotovelo: STRUTHERS, pronador e interósseo anterior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radial-interosseo-posterior-e-tunel-radial",
+     "titulo": "Radial: interósseo posterior e túnel radial",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "ombro-cotovelo-0359",
+    "ombro-cotovelo-0019",
+    "ombro-cotovelo-0134",
+    "ombro-cotovelo-0458",
+    "ombro-cotovelo-0117",
+    "ombro-cotovelo-0029",
+    "ombro-cotovelo-0429",
+    "ombro-cotovelo-0207",
+    "ombro-cotovelo-0559",
+    "ombro-cotovelo-0007",
+    "ombro-cotovelo-0116"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Lesões nervosas do ombro e cotovelo"
+   ]
+  },
+  {
+   "id": "campbell15-osteonecrose-cabeca-femoral",
+   "versao": 1,
+   "titulo": "Osteonecrose da cabeça femoral no adulto",
+   "especialidade": "quadril",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026)",
+   "capitulo": "Capítulo 7 · Hip Pain in the Young Adult and Hip Preservation Surgery (seção Osteonecrosis of the Femoral Head), com os capítulos 3, 4, 5, 60 e 68",
+   "resumo": "Doença da 3ª à 5ª década, bilateral em até 75% das atraumáticas; fatores de risco (corticoide, álcool, falciforme, GAUCHER, mergulho, LES) e mecanismos (isquemia por oclusão, compressão ou ruptura; toxicidade celular direta pela irradiação); dor inguinal; crescente patognomônico (fratura subcondral, FICAT 3, STEINBERG III); RM de escolha, dupla linha em T2; osteoporose transitória com edema até a intertrocantérica; FICAT e ARLET 0 a 4 (2 = reparo, osso novo entre trabéculas mortas); STEINBERG e ARCO com A < 15%, B 15% a 30%, C > 30%; ângulo necrótico combinado de KERBOUL (< 190° não colapsa, > 240° colapsa); descompressão em FICAT I e IIA; trapdoor e light bulb; fíbula vascularizada abaixo de 50 anos sem colapso; osteotomia abaixo de 30%; acima de 30% e após o colapso, artroplastia total.",
+   "acesso": "gratis",
+   "minutos": 32,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-suprimento-sanguineo-da-cabeca-femoral",
+     "titulo": "O suprimento sanguíneo da cabeça femoral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fatores-de-risco-e-mecanismos",
+     "titulo": "Fatores de risco e mecanismos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "epidemiologia-bilateralidade-e-historia-natural",
+     "titulo": "Epidemiologia, bilateralidade e história natural",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-quadro-clinico-dor-inguinal",
+     "titulo": "O quadro clínico: dor inguinal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "radiografia-e-o-sinal-do-crescente",
+     "titulo": "Radiografia e o sinal do crescente",
+     "radar": "confirmado"
+    },
+    {
+     "id": "rm-dupla-linha-e-cintilografia",
+     "titulo": "RM, dupla linha e cintilografia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-diagnostico-diferencial-osteoporose-transitori",
+     "titulo": "O diagnóstico diferencial: osteoporose transitória",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ficat-e-arlet-a-fotografia-de-cada-fase",
+     "titulo": "FICAT e ARLET: a fotografia de cada fase",
+     "radar": "confirmado"
+    },
+    {
+     "id": "steinberg-e-arco-o-tamanho-entra-na-classificaca",
+     "titulo": "STEINBERG e ARCO: o tamanho entra na classificação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-tamanho-da-lesao-e-o-angulo-de-kerboul",
+     "titulo": "O tamanho da lesão e o ângulo de KERBOUL",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-nao-operatorio",
+     "titulo": "Tratamento não operatório",
+     "radar": "confirmado"
+    },
+    {
+     "id": "descompressao-do-nucleo",
+     "titulo": "Descompressão do núcleo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "enxertia-estrutural-trajeto-padrao-trapdoor-e-li",
+     "titulo": "Enxertia estrutural: trajeto padrão, trapdoor e light bulb",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fibula-vascularizada",
+     "titulo": "Fíbula vascularizada",
+     "radar": "confirmado"
+    },
+    {
+     "id": "osteotomias-femorais-proximais",
+     "titulo": "Osteotomias femorais proximais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artroplastia",
+     "titulo": "Artroplastia",
+     "radar": "clinico"
+    },
+    {
+     "id": "as-doencas-de-base-na-pratica",
+     "titulo": "As doenças de base na prática",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-osteonecrose-pos-traumatica",
+     "titulo": "A osteonecrose pós-traumática",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-decisao-por-estagio",
+     "titulo": "A decisão por estágio",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "quadril-0528",
+    "quadril-0171",
+    "quadril-0225",
+    "quadril-0529",
+    "quadril-0530",
+    "quadril-0211",
+    "quadril-0488",
+    "quadril-0534",
+    "quadril-0041",
+    "quadril-0072",
+    "quadril-0060",
+    "quadril-0234",
+    "quadril-0531",
+    "quadril-0206",
+    "quadril-0159",
+    "quadril-0644",
+    "quadril-0533",
+    "quadril-0025",
+    "quadril-0642",
+    "quadril-0118",
+    "quadril-0479",
+    "quadril-0073",
+    "quadril-0495",
+    "quadril-0095",
+    "quadril-0033",
+    "quadril-0504",
+    "quadril-0532"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Osteonecrose da cabeça femoral"
    ]
   },
   {
@@ -3168,6 +5273,231 @@
    ]
   },
   {
+   "id": "campbell15-pe-cavo",
+   "versao": 1,
+   "titulo": "Pé cavo",
+   "especialidade": "pe-tornozelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (caps. 19 e 34)",
+   "capitulo": "Capítulo 92 · Neurogenic Disorders (seção Cavus Foot)",
+   "resumo": "Pé cavo é arco longitudinal alto com equino do antepé (1º raio em flexão plantar e pronado) e retropé varo (cavovaro, o mais comum) ou em calcâneo (calcaneocavo, da paralisia do tríceps sural); dois terços têm causa neurológica e a mais comum é CHARCOT-MARIE-TOOTH (tibial anterior e fibular curto fracos, fibular longo e tibial posterior fortes, intrínsecos contraídos); exame neurológico e da coluna obrigatórios, RM se a causa não aparece; COLEMAN testa a flexibilidade do retropé (corrigiu = tratar só o antepé); MEARY normal 0° e aumentado, HIBBS normal acima de 150° e diminuído, KITE perto de zero = varo, calcaneal pitch normal 18° a 32°; tratamento: liberação plantar sempre, fibular longo para curto, tibial posterior para o dorso, JONES, osteotomia dorsal do 1º metatarso, DWYER no varo rígido, COLE, JAPAS e JAHSS no mediopé e tríplice artrodese como último recurso.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-e-o-pe-cavo-e-como-ele-se-organiza",
+     "titulo": "O que é o pé cavo e como ele se organiza",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-causas-quase-sempre-neurologicas",
+     "titulo": "As causas: quase sempre neurológicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "charcot-marie-tooth-quem-vence-e-quem-perde",
+     "titulo": "CHARCOT-MARIE-TOOTH: quem vence e quem perde",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-neurologico-obrigatorio-e-o-teste-de-col",
+     "titulo": "O exame: neurológico obrigatório e o teste de COLEMAN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiografia-meary-hibbs-kite-e-calcaneal-pitch",
+     "titulo": "A radiografia: MEARY, HIBBS, KITE e calcaneal pitch",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-nao-cirurgico",
+     "titulo": "Tratamento não cirúrgico",
+     "radar": "clinico"
+    },
+    {
+     "id": "os-principios-da-cirurgia",
+     "titulo": "Os princípios da cirurgia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "partes-moles-liberacao-plantar-e-transferencias",
+     "titulo": "Partes moles: liberação plantar e transferências",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-osteotomias",
+     "titulo": "As osteotomias",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-triplice-artrodese",
+     "titulo": "A tríplice artrodese",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pe-tornozelo-0032",
+    "pe-tornozelo-0011",
+    "pe-tornozelo-0264",
+    "pe-tornozelo-0242",
+    "pe-tornozelo-0093",
+    "pe-tornozelo-0332",
+    "pe-tornozelo-0221",
+    "pe-tornozelo-0154",
+    "pe-tornozelo-0289",
+    "pe-tornozelo-0237",
+    "pe-tornozelo-0239",
+    "pe-tornozelo-0342",
+    "pe-tornozelo-0004",
+    "pe-tornozelo-0244",
+    "pe-tornozelo-0355",
+    "pe-tornozelo-0274",
+    "pe-tornozelo-0008",
+    "pediatria-0193"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Pé cavo"
+   ]
+  },
+  {
+   "id": "campbell15-pe-diabetico-charcot",
+   "versao": 1,
+   "titulo": "Pé diabético e neuroartropatia de Charcot",
+   "especialidade": "pe-tornozelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed.",
+   "capitulo": "Capítulo 91 · Neuropathic Foot",
+   "resumo": "A úlcera do diabético nasce da neuropatia periférica (perda da sensibilidade protetora ao monofilamento 5.07 de 10 g) somada à pressão sobre proeminência óssea; WAGNER: 0 pé em risco, I superficial, II tendão exposto, III abscesso ou osteomielite, IV gangrena parcial, V extensa; a infecção vem de fora para dentro pela úlcera, raramente é hematogênica, costuma não dar febre e, quando profunda, mostra secreção purulenta; osso tocado na sondagem presume osteomielite; o gesso de contato total é o padrão-ouro de descarga; SYME exige coxim do calcâneo e tibial posterior patente; o CHARCOT é processo neurodegenerativo com fluxo sanguíneo aumentado por shunt arteriovenoso (teoria neurovascular francesa) ou microtrauma em articulação insensível (neurotraumática alemã); EICHENHOLTZ 0 clínico, 1 fragmentação com calor e edema, 2 coalescência, 3 consolidação; BRODSKY 1 tarsometatarsal (60%, a mais comum), 2 retropé (subtalar, talonavicular, calcaneocuboide), 3A tornozelo, 3B avulsão da tuberosidade do calcâneo; tipo 1 pede artrodese do mediopé e tipo 2 tríplice artrodese; cirurgia na fase inflamatória e no tornozelo tem altas taxas de complicação e falha.",
+   "acesso": "gratis",
+   "minutos": 35,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "por-que-o-pe-diabetico-ulcera-as-tres-neuropatia",
+     "titulo": "Por que o pé diabético ulcera: as três neuropatias",
+     "radar": "confirmado"
+    },
+    {
+     "id": "vasculopatia-imunidade-e-a-ferida-que-nao-fecha",
+     "titulo": "Vasculopatia, imunidade e a ferida que não fecha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-do-pe-em-risco-sapato-pele-pulso-monofil",
+     "titulo": "O exame do pé em risco: sapato, pele, pulso, monofilamento e sonda",
+     "radar": "fundamento"
+    },
+    {
+     "id": "classificacoes-das-ulceras-wagner-brodsky-e-univ",
+     "titulo": "Classificações das úlceras: WAGNER, BRODSKY e Universidade do TEXAS",
+     "radar": "confirmado"
+    },
+    {
+     "id": "infeccao-e-osteomielite-no-pe-diabetico",
+     "titulo": "Infecção e osteomielite no pé diabético",
+     "radar": "confirmado"
+    },
+    {
+     "id": "prevencao-e-tratamento-da-ulcera-educacao-desbri",
+     "titulo": "Prevenção e tratamento da úlcera: educação, desbridamento e gesso de contato total",
+     "radar": "clinico"
+    },
+    {
+     "id": "cirurgia-da-ulcera-e-das-deformidades",
+     "titulo": "Cirurgia da úlcera e das deformidades",
+     "radar": "clinico"
+    },
+    {
+     "id": "amputacoes-no-pe-diabetico",
+     "titulo": "Amputações no pé diabético",
+     "radar": "confirmado"
+    },
+    {
+     "id": "neuroartropatia-de-charcot-conceito-causas-e-his",
+     "titulo": "Neuroartropatia de CHARCOT: conceito, causas e história natural",
+     "radar": "confirmado"
+    },
+    {
+     "id": "patogenese-teoria-neurovascular-francesa-e-neuro",
+     "titulo": "Patogênese: teoria neurovascular (francesa) e neurotraumática (alemã)",
+     "radar": "confirmado"
+    },
+    {
+     "id": "estagios-de-eichenholtz-o-relogio-do-charcot",
+     "titulo": "Estágios de EICHENHOLTZ: o relógio do CHARCOT",
+     "radar": "confirmado"
+    },
+    {
+     "id": "classificacao-anatomica-de-brodsky-onde-o-pe-se-",
+     "titulo": "Classificação anatômica de BRODSKY: onde o pé se desfaz",
+     "radar": "confirmado"
+    },
+    {
+     "id": "charcot-ou-infeccao",
+     "titulo": "CHARCOT ou infecção?",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tratamento-do-charcot",
+     "titulo": "Tratamento do CHARCOT",
+     "radar": "confirmado"
+    },
+    {
+     "id": "trauma-no-diabetico",
+     "titulo": "Trauma no diabético",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pe-tornozelo-0027",
+    "pe-tornozelo-0156",
+    "pe-tornozelo-0046",
+    "pe-tornozelo-0092",
+    "pe-tornozelo-0174",
+    "pe-tornozelo-0344",
+    "pe-tornozelo-0375",
+    "pe-tornozelo-0155",
+    "pe-tornozelo-0333",
+    "pe-tornozelo-0246",
+    "pe-tornozelo-0361",
+    "pe-tornozelo-0038",
+    "pe-tornozelo-0099",
+    "pe-tornozelo-0069",
+    "pe-tornozelo-0270",
+    "pe-tornozelo-0272",
+    "pe-tornozelo-0299",
+    "pe-tornozelo-0222",
+    "pe-tornozelo-0340",
+    "pe-tornozelo-0135",
+    "pe-tornozelo-0020",
+    "pe-tornozelo-0231"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Pé diabético e neuroartropatia de Charcot"
+   ]
+  },
+  {
    "id": "campbell15-tcg",
    "versao": 1,
    "titulo": "Tumor de células gigantes",
@@ -3279,6 +5609,341 @@
    "treino": [],
    "subtemas": [
     "Tumor de células gigantes"
+   ]
+  },
+  {
+   "id": "campbell15-tendoes-fibulares",
+   "versao": 1,
+   "titulo": "Tendões fibulares e outras tendinopatias do pé e tornozelo",
+   "especialidade": "pe-tornozelo",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª ed. (2025)",
+   "capitulo": "Capítulo 94 · Sports Injuries of the Ankle (seção Peroneal Tendon Subluxation and Dislocation), com o Capítulo 88 · Disorders of the Tendons and Fascia and Adolescent and Adult Acquired Flatfoot Deformity (seções Achilles Tendon, Anterior Tibial Tendon, Peroneal Tendons e Flexor Tendons), o Capítulo 53 · Traumatic Disorders (seções Peroneal Tendons e Rupture of Achilles Tendon) e o Capítulo 1 · Surgical Techniques",
+   "resumo": "Tendinite reversível e inflamatória contra tendinose irreversível sem inflamação; no túnel retromaleolar o fibular curto fica junto à fíbula e o longo atrás, sob o retináculo fibular superior, que é a restrição primária; luxação anterior por contração em dorsiflexão, classificação de ODEN (grau 1 mais comum, grau 3 com \"fleck\" ósseo, grau 4 mais raro) e tratamento cirúrgico com reparo do retináculo e aprofundamento do sulco; rotura longitudinal na face profunda do curto (até 50% tubulariza, acima disso tenodese ao longo); teste seletivo do longo com eversão ativa contra a cabeça do 1º metatarso empurrada para dorsal; os peroneum doloroso e migrado; acesso posterolateral entre fibulares e flexor longo do hálux; tibial anterior com ruptura espontânea acima de 45 anos sob o ramo superomedial do retináculo extensor inferior; HAGLUND como exostose posterossuperior do calcâneo; conservador antes de operar a tendinopatia insercional; reforço da sutura aguda do calcâneo sem benefício sobre a sutura simples; estágio IV do tibial posterior com valgo do tornozelo.",
+   "acesso": "gratis",
+   "minutos": 34,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tendinite-tendinose-e-tendinopatia",
+     "titulo": "Tendinite, tendinose e tendinopatia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-mapa-dos-tendoes-ao-redor-do-tornozelo",
+     "titulo": "O mapa dos tendões ao redor do tornozelo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-acesso-posterolateral-do-tornozelo",
+     "titulo": "O acesso posterolateral do tornozelo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-dos-fibulares",
+     "titulo": "O exame dos fibulares",
+     "radar": "confirmado"
+    },
+    {
+     "id": "por-que-os-fibulares-saem-do-lugar",
+     "titulo": "Por que os fibulares saem do lugar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-classificacao-de-eckert-e-davis-modificada-por",
+     "titulo": "A classificação de ECKERT e DAVIS modificada por ODEN",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "diagnostico-e-tratamento-da-luxacao",
+     "titulo": "Diagnóstico e tratamento da luxação",
+     "radar": "clinico"
+    },
+    {
+     "id": "rotura-longitudinal-do-fibular-curto-e-lesoes-co",
+     "titulo": "Rotura longitudinal do fibular curto e lesões combinadas",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "o-os-peroneum-e-o-fibular-longo",
+     "titulo": "O os peroneum e o fibular longo",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "flexor-longo-do-halux-tendinite-e-impacto-poster",
+     "titulo": "Flexor longo do hálux: tendinite e impacto posterior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tibial-anterior",
+     "titulo": "Tibial anterior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tendao-calcaneo-insercional-e-a-deformidade-de-h",
+     "titulo": "Tendão calcâneo insercional e a deformidade de HAGLUND",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tendao-calcaneo-nao-insercional",
+     "titulo": "Tendão calcâneo não insercional",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ruptura-aguda-do-tendao-calcaneo-e-o-reforco-da-",
+     "titulo": "Ruptura aguda do tendão calcâneo e o reforço da sutura",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tibial-posterior-o-estagio-iv",
+     "titulo": "Tibial posterior: o estágio IV",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pe-tornozelo-0005",
+    "pe-tornozelo-0303",
+    "pe-tornozelo-0182",
+    "pe-tornozelo-0304",
+    "pe-tornozelo-0060",
+    "pe-tornozelo-0026",
+    "pe-tornozelo-0116",
+    "pe-tornozelo-0204",
+    "pe-tornozelo-0211",
+    "pe-tornozelo-0206",
+    "pe-tornozelo-0100",
+    "pe-tornozelo-0109",
+    "pe-tornozelo-0366",
+    "pe-tornozelo-0321"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Tendões fibulares e outras tendinopatias"
+   ]
+  },
+  {
+   "id": "campbell15-tuberculose-osteoarticular",
+   "versao": 1,
+   "titulo": "Tuberculose osteoarticular",
+   "especialidade": "osteometabolicas",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 23",
+   "capitulo": "Capítulo 25 · Tuberculosis and Other Unusual Infections",
+   "resumo": "Esquelética em 10% a 20% da tuberculose, metade com pulmão acometido; coluna é o sítio ósseo mais comum (espondilite), na porção anterior do corpo vertebral, transição toracolombar ou torácica baixa, com disseminação subligamentar e disco poupado; quadro de sintomas gerais e evolução indolente; periférica em quadril e joelho; no membro superior, cotovelo com olécrano e contratura em flexão; no pé, calcâneo e tálus; RM é a imagem de escolha, biópsia com cultura ou teste molecular confirma; tratamento com esquema de múltiplas drogas, cirurgia para déficit, cifose, instabilidade, abscesso grande ou falha.",
+   "acesso": "gratis",
+   "minutos": 32,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "do-bacilo-ao-osso-quanto-a-tuberculose-acomete-o",
+     "titulo": "Do bacilo ao osso: quanto a tuberculose acomete o esqueleto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "onde-a-coluna-adoece-o-segmento-e-a-porcao-da-ve",
+     "titulo": "Onde a coluna adoece: o segmento e a porção da vértebra",
+     "radar": "confirmado"
+    },
+    {
+     "id": "por-que-o-disco-e-poupado-e-como-a-infeccao-anda",
+     "titulo": "Por que o disco é poupado e como a infecção anda",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-quadro-clinico-do-mal-de-pott",
+     "titulo": "O quadro clínico do mal de POTT",
+     "radar": "confirmado"
+    },
+    {
+     "id": "abscesso-frio-giba-e-paraplegia",
+     "titulo": "Abscesso frio, giba e paraplegia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "diagnostico-laboratorio-imagem-e-biopsia",
+     "titulo": "Diagnóstico: laboratório, imagem e biópsia",
+     "radar": "clinico"
+    },
+    {
+     "id": "diagnostico-diferencial",
+     "titulo": "Diagnóstico diferencial",
+     "radar": "clinico"
+    },
+    {
+     "id": "tratamento-da-tuberculose-da-coluna",
+     "titulo": "Tratamento da tuberculose da coluna",
+     "radar": "clinico"
+    },
+    {
+     "id": "articulacoes-perifericas-o-padrao-geral",
+     "titulo": "Articulações periféricas: o padrão geral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "membro-superior-cotovelo-ombro-e-punho",
+     "titulo": "Membro superior: cotovelo, ombro e punho",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quadril-joelho-tornozelo-e-pelve",
+     "titulo": "Quadril, joelho, tornozelo e pelve",
+     "radar": "clinico"
+    },
+    {
+     "id": "pe-ossos-longos-e-spina-ventosa",
+     "titulo": "Pé, ossos longos e spina ventosa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "drogas-e-principios-gerais-do-tratamento",
+     "titulo": "Drogas e princípios gerais do tratamento",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-crianca",
+     "titulo": "A criança",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "osteometabolicas-0049",
+    "osteometabolicas-0040",
+    "osteometabolicas-0071",
+    "osteometabolicas-0001",
+    "osteometabolicas-0032",
+    "osteometabolicas-0006",
+    "coluna-0230",
+    "osteometabolicas-0016",
+    "osteometabolicas-0027",
+    "osteometabolicas-0038",
+    "osteometabolicas-0017",
+    "osteometabolicas-0077",
+    "osteometabolicas-0070",
+    "osteometabolicas-0030",
+    "osteometabolicas-0067",
+    "osteometabolicas-0050"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Tuberculose osteoarticular"
+   ]
+  },
+  {
+   "id": "campbell15-tumores-partes-moles",
+   "versao": 1,
+   "titulo": "Tumores benignos de partes moles",
+   "especialidade": "tumores",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Green's Operative Hand Surgery, 7ª edição (2017), o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição",
+   "capitulo": "Capítulo 30 · Soft-Tissue Tumors",
+   "resumo": "Dor não separa benigno de maligno, mas TINEL e dor irradiada apontam para a bainha nervosa; RM para massa > 5 cm ou profunda; lipoma brilha em T1 e apaga na supressão; schwannoma enucleável (ANTONI A e B, VEROCAY) e neurofibroma da NF1 que vira MPNST (schwannoma maligno); SVNP com histiócitos, hemossiderina e células gigantes, no joelho; condromatose em homens, joelho e quadril; desmoide recidivante, GARDNER com osteomas, desmoide cortical posteromedial do fêmur; rabdomiossarcoma da criança na cabeça e pescoço, sensível à quimioterapia; sarcoma sinovial indolente no carpo; epitelioide é o sarcoma da mão; lipossarcoma mixoide pede TC de abdome.",
+   "acesso": "gratis",
+   "minutos": 35,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-massa-de-partes-moles-avaliacao-imagem-e-biops",
+     "titulo": "A massa de partes moles: avaliação, imagem e biópsia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lipoma-variantes-e-o-hamartoma-lipofibromatoso",
+     "titulo": "Lipoma, variantes e o hamartoma lipofibromatoso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumores-da-bainha-nervosa-schwannoma-e-neurofibr",
+     "titulo": "Tumores da bainha nervosa: schwannoma e neurofibroma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lesoes-sinoviais-tcg-da-bainha-svnp-e-condromato",
+     "titulo": "Lesões sinoviais: TCG da bainha, SVNP e condromatose",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cisto-sinovial-ganglion-e-os-outros-cistos-da-ma",
+     "titulo": "Cisto sinovial (ganglion) e os outros cistos da mão",
+     "radar": "clinico"
+    },
+    {
+     "id": "lesoes-vasculares-hemangioma-malformacoes-e-tumo",
+     "titulo": "Lesões vasculares: hemangioma, malformações e tumor glômico",
+     "radar": "clinico"
+    },
+    {
+     "id": "lesoes-fibrosas-fasciite-nodular-desmoide-e-fibr",
+     "titulo": "Lesões fibrosas: fasciite nodular, desmoide e fibromatoses",
+     "radar": "confirmado"
+    },
+    {
+     "id": "miosite-ossificante-o-pseudotumor-que-amadurece",
+     "titulo": "Miosite ossificante: o pseudotumor que amadurece",
+     "radar": "clinico"
+    },
+    {
+     "id": "rabdomiossarcoma-o-sarcoma-de-partes-moles-da-cr",
+     "titulo": "Rabdomiossarcoma: o sarcoma de partes moles da criança",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sarcomas-do-adulto-sinovial-epitelioide-lipossar",
+     "titulo": "Sarcomas do adulto: sinovial, epitelioide, lipossarcoma e os sinais de malignidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "tumores-0123",
+    "tumores-0167",
+    "tumores-0056",
+    "tumores-0332",
+    "tumores-0037",
+    "tumores-0242",
+    "tumores-0323",
+    "tumores-0189",
+    "tumores-0200",
+    "tumores-0061",
+    "tumores-0260",
+    "tumores-0074",
+    "tumores-0017",
+    "tumores-0060",
+    "tumores-0117",
+    "tumores-0305",
+    "tumores-0114",
+    "tumores-0168",
+    "tumores-0029",
+    "tumores-0138"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Tumores benignos de partes moles"
    ]
   },
   {
@@ -3578,6 +6243,254 @@
    ]
   },
   {
+   "id": "green-kienbock",
+   "versao": 1,
+   "titulo": "Doença de KIENBÖCK",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 16 · Fractures of the Carpal Bones",
+   "resumo": "Homem de 15 a 40 anos, punho dominante, trabalhador manual; padrão vascular em I (vaso único) é o de maior risco; ulna minus em 78% (HULTÉN), mas a relação é controversa; RM com T1 baixo em todo o semilunar; LICHTMAN I RM, II esclerose sem colapso, IIIA colapso com carpo alinhado, IIIB capitato migrado e escafoide fletido (rotação fixa, ângulo radioescafoide maior que 60°), IV artrose; BAIN e BEGG conta superfícies articulares não funcionais; ulna minus sem colapso = encurtar o rádio 2 a 3 mm; ulna neutra = encurtamento do capitato de ALMQUIST, cunha radial ou revascularização (4ª e 5ª ACE); IIIB = carpectomia proximal, STT ou escafocapitato; IV = artrodese do punho ou carpectomia.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-adoece",
+     "titulo": "Quem adoece",
+     "radar": "confirmado"
+    },
+    {
+     "id": "vascularizacao-do-semilunar",
+     "titulo": "Vascularização do semilunar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "variancia-ulnar-e-a-forma-do-semilunar",
+     "titulo": "Variância ulnar e a forma do semilunar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fraturas-do-semilunar-e-a-fratura-do-kienbock",
+     "titulo": "Fraturas do semilunar e a fratura do KIENBÖCK",
+     "radar": "confirmado"
+    },
+    {
+     "id": "clinica-e-imagem",
+     "titulo": "Clínica e imagem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "classificacao-de-lichtman",
+     "titulo": "Classificação de LICHTMAN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "classificacao-artroscopica-de-bain-e-begg",
+     "titulo": "Classificação artroscópica de BAIN e BEGG",
+     "radar": "confirmado"
+    },
+    {
+     "id": "historia-natural-e-tratamento-conservador",
+     "titulo": "História natural e tratamento conservador",
+     "radar": "confirmado"
+    },
+    {
+     "id": "nivelamento-articular-encurtar-o-radio",
+     "titulo": "Nivelamento articular: encurtar o rádio",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ulna-neutra-ou-positiva-capitato-cunha-e-descomp",
+     "titulo": "Ulna neutra ou positiva: capitato, cunha e descompressão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "revascularizacao-enxertos-vascularizados",
+     "titulo": "Revascularização: enxertos vascularizados",
+     "radar": "confirmado"
+    },
+    {
+     "id": "salvamento-iiib-e-iv",
+     "titulo": "Salvamento: IIIB e IV",
+     "radar": "confirmado"
+    },
+    {
+     "id": "estagio-a-estagio",
+     "titulo": "Estágio a estágio",
+     "radar": "confirmado"
+    },
+    {
+     "id": "crianca-preiser-e-capitato",
+     "titulo": "Criança, PREISER e capitato",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0074",
+    "mao-0030",
+    "mao-0057",
+    "mao-0449",
+    "mao-1115",
+    "mao-0243",
+    "mao-0418",
+    "mao-0947",
+    "mao-1302",
+    "mao-1093",
+    "mao-1505",
+    "mao-0023",
+    "mao-0529",
+    "mao-0890",
+    "mao-0351",
+    "mao-0642",
+    "mao-0430",
+    "mao-0399",
+    "mao-1619",
+    "mao-0150",
+    "mao-0125",
+    "mao-0294",
+    "mao-0970",
+    "mao-0833",
+    "mao-0604"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Doença de Kienböck"
+   ]
+  },
+  {
+   "id": "green-mao-reumatoide",
+   "versao": 1,
+   "titulo": "Mão reumatoide",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)",
+   "capitulo": "Capítulo 55 · Rheumatoid Arthritis and Other Connective Tissue Diseases",
+   "resumo": "Sinóvia que estira e invade; deformidades bilaterais e simétricas; prioridade da dor, punho e polegar antes dos dedos; tenossinovite dorsal indolor; rupturas extensoras do mínimo para o indicador (VAUGHAN-JACKSON) e FPL pelo escafoide (MANNERFELT); caput ulnae com supinação do carpo, desvio radial do carpo e desvio ulnar com luxação palmar da MF; DARRACH, SAUVÉ-KAPANDJI e artrodese com pinos de STEINMANN; SWANSON e intrínseco cruzado de FLATT; pescoço de cisne de NALEBUFF tipos I a IV; botoeira que nasce na IFP; polegar tipo I botoeira, III cisne, IV goleiro.",
+   "acesso": "gratis",
+   "minutos": 39,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-doenca-da-sinovia-e-o-padrao-clinico",
+     "titulo": "A doença da sinóvia e o padrão clínico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "antes-de-operar-medicacoes-e-prioridades",
+     "titulo": "Antes de operar: medicações e prioridades",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tenossinovites-e-o-nervo-mediano",
+     "titulo": "Tenossinovites e o nervo mediano",
+     "radar": "confirmado"
+    },
+    {
+     "id": "rupturas-dos-extensores",
+     "titulo": "Rupturas dos extensores",
+     "radar": "confirmado"
+    },
+    {
+     "id": "rupturas-dos-flexores-e-a-lesao-de-mannerfelt",
+     "titulo": "Rupturas dos flexores e a lesão de MANNERFELT",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-punho-reumatoide",
+     "titulo": "O punho reumatoide",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cirurgia-do-punho-darrach-sauve-kapandji-e-artro",
+     "titulo": "Cirurgia do punho: DARRACH, SAUVÉ-KAPANDJI e artrodese",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-metacarpofalangica-desvio-ulnar-e-luxacao-palm",
+     "titulo": "A metacarpofalângica: desvio ulnar e luxação palmar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pescoco-de-cisne",
+     "titulo": "Pescoço de cisne",
+     "radar": "confirmado"
+    },
+    {
+     "id": "botoeira",
+     "titulo": "Botoeira",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-polegar-reumatoide",
+     "titulo": "O polegar reumatoide",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lupus-psoriase-esclerodermia-e-gota",
+     "titulo": "Lúpus, psoríase, esclerodermia e gota",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0059",
+    "mao-0566",
+    "mao-0095",
+    "mao-0405",
+    "mao-1356",
+    "mao-0726",
+    "mao-1476",
+    "mao-1297",
+    "mao-0849",
+    "mao-0069",
+    "mao-0553",
+    "mao-0252",
+    "mao-0796",
+    "mao-0485",
+    "mao-0005",
+    "mao-0454",
+    "mao-0755",
+    "mao-0596",
+    "mao-0431",
+    "mao-0177",
+    "mao-1494",
+    "mao-0880",
+    "mao-0128",
+    "mao-0626",
+    "mao-0608",
+    "mao-0153",
+    "mao-1532",
+    "mao-0142",
+    "mao-0398",
+    "mao-0965",
+    "mao-0350",
+    "mao-0500",
+    "mao-0848"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Mão reumatoide"
+   ]
+  },
+  {
    "id": "green-nervos-perifericos",
    "versao": 1,
    "titulo": "Lesões de nervos periféricos",
@@ -3726,6 +6639,174 @@
    "treino": [],
    "subtemas": [
     "Lesões de nervos periféricos"
+   ]
+  },
+  {
+   "id": "green-plexo-braquial",
+   "versao": 1,
+   "titulo": "Plexo braquial e paralisia obstétrica",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 12) e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36)",
+   "capitulo": "Capítulo 34 · Traumatic Brachial Plexus Injury (com o capítulo 40, Pediatric Brachial Plexus Palsy)",
+   "resumo": "Divisões posteriores formam o fascículo posterior (toracodorsal, axilar, radial); escapular dorsal de C5 e torácico longo de C5 a C7; HORNER, romboide e serrátil paralisados e diafragma elevado indicam avulsão; pan-plexo é o padrão traumático mais comum; cotovelo antes do ombro; OBERLIN (ulnar para bíceps com C8-T1 íntegros), acessório para supraescapular, LEECHAVENGVONGS (cabeça longa do tríceps para o axilar); obstétrica: distocia de ombro, lado direito, NARAKAS I a IV, bíceps antigravitacional decide a microcirurgia; contratura em RI com displasia de WATERS, L'EPISCOPO para RE e osteotomia derrotativa no ombro incongruente.",
+   "acesso": "gratis",
+   "minutos": 31,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-anatomia-que-localiza-a-lesao",
+     "titulo": "A anatomia que localiza a lesão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "como-o-plexo-se-rompe-no-adulto",
+     "titulo": "Como o plexo se rompe no adulto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pre-ou-pos-ganglionar-o-exame-que-decide-o-progn",
+     "titulo": "Pré ou pós-ganglionar: o exame que decide o prognóstico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-e-eletrodiagnostico",
+     "titulo": "Imagem e eletrodiagnóstico",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quando-operar-e-o-que-reconstruir-primeiro",
+     "titulo": "Quando operar e o que reconstruir primeiro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-transferencias-nervosas",
+     "titulo": "As transferências nervosas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quando-o-nervo-nao-basta-o-musculo-livre",
+     "titulo": "Quando o nervo não basta: o músculo livre",
+     "radar": "confirmado"
+    },
+    {
+     "id": "paralisia-obstetrica-quem-tem-e-por-que",
+     "titulo": "Paralisia obstétrica: quem tem e por quê",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-quadro-clinico-e-a-classificacao-de-narakas",
+     "titulo": "O quadro clínico e a classificação de NARAKAS",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-biceps-como-relogio-da-microcirurgia",
+     "titulo": "O bíceps como relógio da microcirurgia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-reconstrucao-nervosa-no-lactente",
+     "titulo": "A reconstrução nervosa no lactente",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-ombro-da-crianca-contratura-rotacao-externa-e-",
+     "titulo": "O ombro da criança: contratura, rotação externa e sinais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-displasia-glenoumeral-de-waters-e-as-cirurgias",
+     "titulo": "A displasia glenoumeral de WATERS e as cirurgias do ombro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cotovelo-antebraco-e-mao",
+     "titulo": "Cotovelo, antebraço e mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0708",
+    "mao-1814",
+    "mao-1019",
+    "mao-0792",
+    "mao-0844",
+    "mao-0451",
+    "mao-1369",
+    "mao-0465",
+    "mao-0923",
+    "mao-0924",
+    "mao-0873",
+    "mao-0662",
+    "ombro-cotovelo-0564",
+    "mao-1367",
+    "mao-1360",
+    "mao-1620",
+    "mao-1587",
+    "mao-0268",
+    "mao-1383",
+    "mao-1428",
+    "mao-0797",
+    "mao-0108",
+    "mao-0985",
+    "mao-1522",
+    "mao-0154",
+    "mao-0414",
+    "mao-0721",
+    "mao-0671",
+    "mao-0438",
+    "mao-0147",
+    "mao-0557",
+    "mao-0445",
+    "mao-1445",
+    "mao-1623",
+    "mao-1288",
+    "mao-1159",
+    "mao-1444",
+    "mao-1632",
+    "mao-1368",
+    "mao-0254",
+    "mao-1004",
+    "mao-0839",
+    "mao-0140",
+    "mao-1472",
+    "mao-0893",
+    "mao-0033",
+    "mao-0530",
+    "mao-0580",
+    "mao-1124",
+    "mao-0062",
+    "mao-1487",
+    "mao-0149",
+    "mao-0085",
+    "mao-1348",
+    "mao-1362",
+    "mao-0421",
+    "mao-0021",
+    "mao-0938",
+    "mao-1576",
+    "mao-1361",
+    "mao-0409",
+    "mao-1514",
+    "mao-1618",
+    "mao-1631",
+    "mao-1239",
+    "mao-0520",
+    "mao-0945",
+    "mao-1329"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Plexo braquial e paralisia obstétrica"
    ]
   },
   {
@@ -3917,6 +6998,136 @@
    "treino": [],
    "subtemas": [
     "Retalhos e cobertura cutânea"
+   ]
+  },
+  {
+   "id": "green-rizartrose-artrose-mao",
+   "versao": 1,
+   "titulo": "Rizartrose e artrose da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 78)",
+   "capitulo": "Capítulo 11 · Treatment of the Osteoarthritic Hand and Thumb",
+   "resumo": "Rizartrose: oblíquo anterior profundo (intracapsular, do tubérculo volar do trapézio à base volar ulnar do metacarpo) falha, metacarpo subluxa para dorsal e a metade volar se desgasta (trapézio 3:1); carga de 12 a 20 vezes na pinça; adução do metacarpo com hiperextensão da MCF; grind; ROBERT; EATON I a IV (2 mm e ETT); osteotomia em extensão e reconstrução de EATON e LITTLER nos I e II; trapeziectomia nos III e IV (BURTON e PELLEGRINI e WEILBY com FRC, THOMPSON com ALP); pseudartrose na osteotomia e na artrodese; dedos: BOUCHARD na IFP, HEBERDEN na IFD, erosiva mais na IFD e mais sintomática na IFP; IFP fundida de 30 a 60 graus, MCF do polegar 20 graus.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-tem-artrose-da-mao-e-onde-ela-aparece",
+     "titulo": "Quem tem artrose da mão e onde ela aparece",
+     "radar": "confirmado"
+    },
+    {
+     "id": "anatomia-e-biomecanica-da-trapeziometacarpal",
+     "titulo": "Anatomia e biomecânica da trapeziometacarpal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-paciente-com-rizartrose-e-o-exame",
+     "titulo": "O paciente com rizartrose e o exame",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-e-a-classificacao-de-eaton",
+     "titulo": "Imagem e a classificação de EATON",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-nao-operatorio",
+     "titulo": "Tratamento não operatório",
+     "radar": "confirmado"
+    },
+    {
+     "id": "estagios-iniciais-osteotomia-e-reconstrucao-liga",
+     "titulo": "Estágios iniciais: osteotomia e reconstrução ligamentar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-trapeziectomia-e-seus-eponimos",
+     "titulo": "A trapeziectomia e seus epônimos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrodese-trapeziometacarpal-implantes-e-complic",
+     "titulo": "Artrodese trapeziometacarpal, implantes e complicações",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-mcf-do-polegar-e-a-artrodese-metacarpofalangic",
+     "titulo": "A MCF do polegar e a artrodese metacarpofalângica",
+     "radar": "clinico"
+    },
+    {
+     "id": "artrodese-das-interfalangicas",
+     "titulo": "Artrodese das interfalângicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artroplastia-das-interfalangicas-e-da-mcf",
+     "titulo": "Artroplastia das interfalângicas e da MCF",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0306",
+    "mao-0495",
+    "mao-0036",
+    "mao-0014",
+    "mao-0048",
+    "mao-0481",
+    "mao-0536",
+    "mao-1513",
+    "mao-0101",
+    "mao-0677",
+    "mao-0950",
+    "mao-0603",
+    "mao-0235",
+    "mao-1071",
+    "mao-0690",
+    "mao-0158",
+    "mao-0595",
+    "mao-1235",
+    "mao-0575",
+    "mao-0082",
+    "mao-0744",
+    "mao-0236",
+    "mao-0826",
+    "mao-0774",
+    "mao-1588",
+    "mao-0639",
+    "mao-1317"
+   ],
+   "treino": [
+    "mao-2122",
+    "mao-2033",
+    "mao-2322",
+    "mao-1963",
+    "mao-1803",
+    "mao-2034",
+    "mao-1964",
+    "mao-1965",
+    "mao-2532",
+    "mao-2324",
+    "mao-2501",
+    "mao-1806",
+    "mao-2323",
+    "mao-1804",
+    "mao-2329",
+    "mao-2205",
+    "mao-2204"
+   ],
+   "subtemas": [
+    "Rizartrose e artrose da mão"
    ]
   },
   {
@@ -9593,6 +12804,104 @@
    ]
   },
   {
+   "id": "rockwood10-consolidacao-ossea",
+   "versao": 1,
+   "titulo": "Consolidação óssea",
+   "especialidade": "conceitos-basicos",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025), com o AO Principles of Fracture Management, 3ª ed. (2017), e o Campbell's Operative Orthopaedics, 15ª ed. (2026)",
+   "capitulo": "Capítulo 2 · Bone, Cartilage, and Tendon Healing",
+   "resumo": "Osteoclasto vem da linhagem hematopoética e escava as lacunas de HOWSHIP; osteoblasto vem da célula mesenquimal e produz o osteoide (matriz orgânica, colágeno tipo I, ainda não mineralizada); consolidação primária (direta) só com estabilidade absoluta (compressão interfragmentar, banda de tensão, movimento abaixo de 0,15 mm e strain abaixo de 2%), por cones de corte e sem calo; secundária (indireta) com estabilidade relativa (gesso, haste, tutor, placa em ponte, fixador), por calo, em inflamação (1 a 7 dias), calo mole (2 a 3 semanas), calo duro (3 a 4 meses) e remodelação (meses a anos); o suprimento do calo vem sobretudo das partes moles circunjacentes; BMP é osteoindutora, VEGF leva os vasos, TGF-beta baixo prediz pseudartrose; clavícula é o primeiro osso a ossificar, por via intramembranosa; nicotina diminui a diferenciação tecidual e atrapalha o osteoblasto; aloenxerto, fosfato de cálcio (reabsorvido de 6 meses a 10 anos) e vidro bioativo são osteocondutores; lei de WOLFF: o osso se remodela segundo a carga.",
+   "acesso": "gratis",
+   "minutos": 35,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-osso-como-tecido-tipos-matriz-e-celulas",
+     "titulo": "O osso como tecido: tipos, matriz e células",
+     "radar": "confirmado"
+    },
+    {
+     "id": "duas-maneiras-de-fazer-osso-endocondral-e-intram",
+     "titulo": "Duas maneiras de fazer osso: endocondral e intramembranosa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "consolidacao-primaria-direta-os-cones-de-corte",
+     "titulo": "Consolidação primária (direta): os cones de corte",
+     "radar": "confirmado"
+    },
+    {
+     "id": "consolidacao-secundaria-indireta-as-fases-do-cal",
+     "titulo": "Consolidação secundária (indireta): as fases do calo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sinais-moleculares-bmp-tgf-beta-vegf-pdgf-e-os-o",
+     "titulo": "Sinais moleculares: BMP, TGF-beta, VEGF, PDGF e os outros",
+     "radar": "confirmado"
+    },
+    {
+     "id": "vascularizacao-de-onde-vem-o-sangue-do-calo",
+     "titulo": "Vascularização: de onde vem o sangue do calo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mecanica-e-biologia-o-strain-decide-a-via",
+     "titulo": "Mecânica e biologia: o strain decide a via",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fatores-que-interferem-na-consolidacao",
+     "titulo": "Fatores que interferem na consolidação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "enxertos-e-substitutos-as-tres-propriedades",
+     "titulo": "Enxertos e substitutos: as três propriedades",
+     "radar": "confirmado"
+    },
+    {
+     "id": "estimulos-biofisicos",
+     "titulo": "Estímulos biofísicos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avaliacao-clinica-e-radiografica-da-consolidacao",
+     "titulo": "Avaliação clínica e radiográfica da consolidação",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "conceitos-basicos-0180",
+    "conceitos-basicos-0068",
+    "conceitos-basicos-0196",
+    "conceitos-basicos-0181",
+    "conceitos-basicos-0178",
+    "conceitos-basicos-0231",
+    "conceitos-basicos-0001",
+    "conceitos-basicos-0185",
+    "conceitos-basicos-0409",
+    "conceitos-basicos-0026",
+    "conceitos-basicos-0097",
+    "conceitos-basicos-0184",
+    "conceitos-basicos-0408"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Consolidação óssea"
+   ]
+  },
+  {
    "id": "rockwood10-lesao-medular",
    "versao": 1,
    "titulo": "Lesão medular e síndromes medulares",
@@ -9739,6 +13048,339 @@
    ]
   },
   {
+   "id": "rockwood10-luxacao-acromioclavicular",
+   "versao": 1,
+   "titulo": "Luxação acromioclavicular",
+   "especialidade": "trauma",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025)",
+   "capitulo": "Capítulo 32 · Acromioclavicular and Sternoclavicular Joint Injuries",
+   "resumo": "AC seguram o plano horizontal e coracoclaviculares o vertical (conoide contra o desvio anterior e a subida; trapezoide contra o posterior); CC normal de 11 a 13 mm; ZANCA 10 a 15 graus cefálicos, axilar no tipo IV, STRYKER na base do coracoide (variante do III com CC íntegros); ROCKWOOD I a VI (III 25 a 100%, V 100 a 300%); I e II conservadores, III controverso, IV a VI cirúrgicos; WEAVER-DUNN com até 30% de recidiva anteroposterior; MAZZOCCA com túneis a 45 e cerca de 30 mm; esternoclavicular anterior mais comum, serendipity 40 graus cefálicos no esterno, bipolar com SC anterior e AC posterior.",
+   "acesso": "gratis",
+   "minutos": 39,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-articulacao-acromioclavicular-e-seus-ligamento",
+     "titulo": "A articulação acromioclavicular e seus ligamentos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mecanismo-e-lesoes-associadas",
+     "titulo": "Mecanismo e lesões associadas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quadro-clinico-e-exame",
+     "titulo": "Quadro clínico e exame",
+     "radar": "clinico"
+    },
+    {
+     "id": "imagem-uma-incidencia-para-cada-pergunta",
+     "titulo": "Imagem: uma incidência para cada pergunta",
+     "radar": "confirmado"
+    },
+    {
+     "id": "classificacao-de-rockwood-e-os-valores-normais",
+     "titulo": "Classificação de ROCKWOOD e os valores normais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-conservador-tipos-i-e-ii-e-a-controve",
+     "titulo": "Tratamento conservador: tipos I e II, e a controvérsia do III",
+     "radar": "clinico"
+    },
+    {
+     "id": "cirurgia-indicacoes-e-tecnicas",
+     "titulo": "Cirurgia: indicações e técnicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes",
+     "titulo": "Complicações",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-articulacao-esternoclavicular",
+     "titulo": "A articulação esternoclavicular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "trauma-0783",
+    "trauma-0776",
+    "trauma-0685",
+    "trauma-0969",
+    "trauma-0159",
+    "trauma-0058",
+    "trauma-0063",
+    "trauma-0134",
+    "trauma-0443",
+    "trauma-0531",
+    "trauma-0922",
+    "trauma-0421",
+    "trauma-0796",
+    "trauma-0447",
+    "trauma-0673",
+    "trauma-0780"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Luxação acromioclavicular"
+   ]
+  },
+  {
+   "id": "rockwood10-luxacao-quadril",
+   "versao": 1,
+   "titulo": "Luxação do quadril e fratura da cabeça femoral",
+   "especialidade": "trauma",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025)",
+   "capitulo": "Capítulo 52 · Hip Dislocations and Femoral Head Fractures",
+   "resumo": "Posterior 9 vezes mais que anterior; flexão, adução e rotação interna dão luxação pura e menos adução dá fratura-luxação; anterior por hiperabdução, extensão e rotação externa com o psoas de fulcro e cápsula rota anterior e inferior; impacção da cabeça típica da anterior e com mais necrose; THOMPSON e EPSTEIN V e STEWART e MILFORD IV com fratura da cabeça; PIPKIN I caudal e II cefálico à fóvea, III com colo, IV com acetábulo; redução de emergência (até 6 horas; após 12 horas a necrose sobe 5,6 vezes) por ALLIS, BIGELOW ou STIMSON, depois TC; fixar o colo antes de reduzir; via anterior para PIPKIN I e II, luxação cirúrgica de GANZ para III e IV; artrose é a complicação mais comum; ciático com a divisão fibular mais lesada.",
+   "acesso": "gratis",
+   "minutos": 34,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "mecanismo-a-posicao-do-quadril-no-impacto",
+     "titulo": "Mecanismo: a posição do quadril no impacto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "patoanatomia-capsula-psoas-e-lesoes-da-cabeca",
+     "titulo": "Patoanatomia: cápsula, psoas e lesões da cabeça",
+     "radar": "confirmado"
+    },
+    {
+     "id": "anatomia-aplicada-capsula-ciatico-e-irrigacao-da",
+     "titulo": "Anatomia aplicada: cápsula, ciático e irrigação da cabeça",
+     "radar": "fundamento"
+    },
+    {
+     "id": "lesoes-associadas-exame-e-imagem",
+     "titulo": "Lesões associadas, exame e imagem",
+     "radar": "clinico"
+    },
+    {
+     "id": "classificacoes",
+     "titulo": "Classificações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-reducao-emergencia-e-tecnica",
+     "titulo": "A redução: emergência e técnica",
+     "radar": "clinico"
+    },
+    {
+     "id": "depois-da-reducao-congruencia-estabilidade-e-par",
+     "titulo": "Depois da redução: congruência, estabilidade e parede posterior",
+     "radar": "clinico"
+    },
+    {
+     "id": "indicacoes-cirurgicas-e-luxacao-irredutivel",
+     "titulo": "Indicações cirúrgicas e luxação irredutível",
+     "radar": "clinico"
+    },
+    {
+     "id": "tratamento-da-fratura-da-cabeca-por-pipkin",
+     "titulo": "Tratamento da fratura da cabeça por PIPKIN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-vias-de-acesso",
+     "titulo": "As vias de acesso",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "pos-operatorio",
+     "titulo": "Pós-operatório",
+     "radar": "fundamento"
+    },
+    {
+     "id": "necrose-avascular",
+     "titulo": "Necrose avascular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrose-ossificacao-heterotopica-e-o-nervo-ciati",
+     "titulo": "Artrose, ossificação heterotópica e o nervo ciático",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "trauma-0215",
+    "trauma-0077",
+    "trauma-0131",
+    "trauma-0283",
+    "trauma-0039",
+    "trauma-0825",
+    "trauma-0765",
+    "trauma-0197",
+    "trauma-0170",
+    "trauma-0936",
+    "trauma-0542",
+    "trauma-0029",
+    "trauma-0097",
+    "trauma-0285",
+    "trauma-0327",
+    "trauma-0709",
+    "trauma-0995"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Luxação do quadril e fratura da cabeça femoral"
+   ]
+  },
+  {
+   "id": "rockwood10-osteoporose",
+   "versao": 1,
+   "titulo": "Osteoporose: diagnóstico e tratamento",
+   "especialidade": "osteometabolicas",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 3, 7 e 48) e o Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed. (cap. 28)",
+   "capitulo": "Capítulo 4 · Osteoporosis and Metabolic Bone Disease",
+   "resumo": "Osteoporose é DMO baixa com microarquitetura deteriorada; T-escore ≤ −2,5 na coluna ou no quadril pela DEXA (osteopenia entre −1,0 e −2,5); tipo I pós-menopausa (queda do estrogênio, osteoclastos aumentados, perda trabecular rápida, calciúria aumentada, PTH diminuído) e tipo II senil (osteoclastos diminuídos, perda lenta cortical e trabecular, calciúria normal, PTH aumentado); fatores genéticos (raça branca, escoliose, osteogênese imperfeita, menopausa precoce) e comportamentais (álcool, fumo, sedentarismo, má nutrição); FRAX dá a probabilidade em 10 anos; fratura por fragilidade acima de 50 anos pede DEXA; bisfosfonatos inibem o osteoclasto, denosumabe bloqueia o RANKL, teriparatida (PTH 1-34) é anabólica e romosozumabe neutraliza a esclerostina; fratura atípica e osteonecrose da mandíbula; extravasamento de cimento em até 90% com complicação neurológica em 0,1%; osteoporose transitória do quadril com edema difuso realçado pela supressão de gordura.",
+   "acesso": "gratis",
+   "minutos": 29,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-osso-que-se-troca-estrutura-remodelacao-e-sina",
+     "titulo": "O osso que se troca: estrutura, remodelação e sinais",
+     "radar": "fundamento"
+    },
+    {
+     "id": "definicao-numeros-e-pico-de-massa-ossea",
+     "titulo": "Definição, números e pico de massa óssea",
+     "radar": "fundamento"
+    },
+    {
+     "id": "pos-menopausa-e-senil-os-dois-tipos-primarios",
+     "titulo": "Pós-menopausa e senil: os dois tipos primários",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fatores-de-risco-geneticos-biologicos-e-comporta",
+     "titulo": "Fatores de risco: genéticos, biológicos e comportamentais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "osteoporose-secundaria-doencas-drogas-e-o-rim",
+     "titulo": "Osteoporose secundária: doenças, drogas e o rim",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quadro-clinico-e-a-fratura-por-fragilidade-como-",
+     "titulo": "Quadro clínico e a fratura por fragilidade como sentinela",
+     "radar": "confirmado"
+    },
+    {
+     "id": "densitometria-dexa-t-escore-z-escore-e-os-criter",
+     "titulo": "Densitometria: DEXA, T-escore, Z-escore e os critérios",
+     "radar": "confirmado"
+    },
+    {
+     "id": "frax-e-quando-tratar",
+     "titulo": "FRAX e quando tratar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "medidas-gerais-calcio-e-vitamina-d",
+     "titulo": "Medidas gerais, cálcio e vitamina D",
+     "radar": "confirmado"
+    },
+    {
+     "id": "bisfosfonatos-o-freio-no-osteoclasto",
+     "titulo": "Bisfosfonatos: o freio no osteoclasto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "denosumabe-terapia-hormonal-e-raloxifeno",
+     "titulo": "Denosumabe, terapia hormonal e raloxifeno",
+     "radar": "clinico"
+    },
+    {
+     "id": "anabolicos-teriparatida-abaloparatida-e-romosozu",
+     "titulo": "Anabólicos: teriparatida, abaloparatida e romosozumabe",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fratura-atipica-do-femur-e-osteonecrose-da-mandi",
+     "titulo": "Fratura atípica do fêmur e osteonecrose da mandíbula",
+     "radar": "clinico"
+    },
+    {
+     "id": "fratura-vertebral-osteoporotica-e-cimentacao",
+     "titulo": "Fratura vertebral osteoporótica e cimentação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "monitorizacao-e-falha-do-tratamento",
+     "titulo": "Monitorização e falha do tratamento",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "osteoporose-transitoria-do-quadril",
+     "titulo": "Osteoporose transitória do quadril",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "osteometabolicas-0025",
+    "osteometabolicas-0002",
+    "osteometabolicas-0048",
+    "osteometabolicas-0009",
+    "osteometabolicas-0034",
+    "osteometabolicas-0035",
+    "osteometabolicas-0019",
+    "osteometabolicas-0079",
+    "osteometabolicas-0062",
+    "osteometabolicas-0058",
+    "osteometabolicas-0052",
+    "osteometabolicas-0026",
+    "osteometabolicas-0004",
+    "osteometabolicas-0007",
+    "osteometabolicas-0021",
+    "osteometabolicas-0080",
+    "osteometabolicas-0037",
+    "trauma-0754",
+    "osteometabolicas-0043",
+    "quadril-0172"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Osteoporose: diagnóstico"
+   ]
+  },
+  {
    "id": "rockwood10-pseudartrose",
    "versao": 1,
    "titulo": "Pseudartrose e retardo de consolidação",
@@ -9869,6 +13511,135 @@
    "treino": [],
    "subtemas": [
     "Pseudartrose e retardo de consolidação"
+   ]
+  },
+  {
+   "id": "rockwood10-radio-distal",
+   "versao": 1,
+   "titulo": "Fratura do rádio distal no adulto",
+   "especialidade": "trauma",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025), com o Green's Operative Hand Surgery, 7ª ed. (cap. 15) e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed. (cap. 51)",
+   "capitulo": "Capítulo 43 · Fractures of the Distal Radius and Ulna",
+   "resumo": "Parâmetros normais (inclinação radial 22 a 23 graus, inclinação volar 11 a 12 graus, altura radial 11 a 12 mm medida do estiloide radial à superfície articular da ulna, gota de lágrima 70 graus e menor que 45 graus na lesão da faceta semilunar), epônimos (COLLES, SMITH, BARTON, CHAUFFEUR), AO 23 e FERNANDEZ por mecanismo, critérios de LAFONTAINE (angulação dorsal maior que 20 graus, cominuição dorsal, traço articular, fratura da ulna, idade acima de 60), redução e gesso, KAPANDJI, fixador, placa volar pela via de HENRY e linha divisória de SOONG, placa em ponte, lesão do complexo da fibrocartilagem triangular como associada mais comum, ruptura do EPL e do FPL, vitamina C e osteotomia da consolidação viciosa.",
+   "acesso": "gratis",
+   "minutos": 37,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-quebra-como-quebra-e-o-que-se-ve",
+     "titulo": "Quem quebra, como quebra e o que se vê",
+     "radar": "fundamento"
+    },
+    {
+     "id": "anatomia-aplicada-o-plato-as-colunas-e-os-tendoe",
+     "titulo": "Anatomia aplicada: o platô, as colunas e os tendões",
+     "radar": "fundamento"
+    },
+    {
+     "id": "parametros-radiograficos-normais",
+     "titulo": "Parâmetros radiográficos normais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lesoes-associadas",
+     "titulo": "Lesões associadas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "eponimos-e-classificacoes",
+     "titulo": "Epônimos e classificações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "instabilidade-os-criterios-de-lafontaine-e-o-que",
+     "titulo": "Instabilidade: os critérios de LAFONTAINE e o que veio depois",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-nao-operatorio-e-reducao-no-pronto-so",
+     "titulo": "Tratamento não operatório e redução no pronto-socorro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pinos-percutaneos-e-kapandji",
+     "titulo": "Pinos percutâneos e KAPANDJI",
+     "radar": "confirmado"
+    },
+    {
+     "id": "placa-volar-bloqueada-e-a-via-de-henry",
+     "titulo": "Placa volar bloqueada e a via de HENRY",
+     "radar": "confirmado"
+    },
+    {
+     "id": "placa-dorsal-fragmento-especifica-fixador-extern",
+     "titulo": "Placa dorsal, fragmento-específica, fixador externo e placa em ponte",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ulna-distal-e-arud",
+     "titulo": "Ulna distal e ARUD",
+     "radar": "fundamento"
+    },
+    {
+     "id": "complicacoes",
+     "titulo": "Complicações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "trauma-0931",
+    "mao-1024",
+    "trauma-0800",
+    "mao-1352",
+    "mao-0298",
+    "mao-0780",
+    "trauma-1106",
+    "trauma-0068",
+    "trauma-0209",
+    "mao-1001",
+    "trauma-0276",
+    "trauma-0272",
+    "trauma-1163",
+    "trauma-0479",
+    "mao-1260",
+    "trauma-0729",
+    "mao-1503",
+    "mao-1234",
+    "trauma-1105",
+    "mao-0584",
+    "mao-1106",
+    "mao-0714",
+    "mao-0684",
+    "mao-1211",
+    "mao-1250",
+    "trauma-0809",
+    "trauma-0474",
+    "mao-1359",
+    "trauma-0013",
+    "mao-1573",
+    "trauma-0751",
+    "mao-0989",
+    "trauma-0895",
+    "trauma-0551",
+    "mao-0831",
+    "trauma-0576",
+    "mao-0901",
+    "mao-1303",
+    "mao-0988"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Fratura do rádio distal"
    ]
   },
   {
@@ -13779,6 +17550,123 @@
    ]
   },
   {
+   "id": "tachdjian6-artrite-septica",
+   "versao": 1,
+   "titulo": "Artrite séptica na criança e no adulto",
+   "especialidade": "conceitos-basicos",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 22 e 24), e o Sizínio, Ortopedia e Traumatologia, 5ª ed. (caps. 9.7 e 26)",
+   "capitulo": "Capítulo 22 · Arthritis (Acute Transient Synovitis of the Hip), com a seção Septic Arthritis do capítulo de infecções",
+   "resumo": "Metáfises intra-articulares (rádio e úmero proximais, fêmur proximal, tíbia e fíbula distais) e vaso transfisário até 18 meses; proteoglicano 30% em 48 h; falta de membrana basal nos capilares sinoviais; S. aureus (PANTON-VALENTINE), Kingella (PCR, frasco de hemocultura), gonococo no adulto jovem, Salmonella no falciforme; quadril em flexão, abdução e rotação externa; líquido acima de 50.000 com PMN, glicose baixa e proteína alta; KOCHER (febre, não apoio, VHS acima de 40, leucócitos acima de 12.000: 0,2%, 3%, 40%, 93%, 99,6%); via anterior no quadril da criança; punção do joelho lateral no polo superior da patela; 3 semanas de antibiótico; atraso é o pior fator (CHOI).",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "por-onde-a-infeccao-chega-a-articulacao",
+     "titulo": "Por onde a infecção chega à articulação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "como-a-cartilagem-morre",
+     "titulo": "Como a cartilagem morre",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quem-adoece-o-hospedeiro",
+     "titulo": "Quem adoece: o hospedeiro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-germes-por-idade-e-por-doenca-de-base",
+     "titulo": "Os germes: por idade e por doença de base",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-quadro-clinico-e-a-posicao-do-quadril",
+     "titulo": "O quadro clínico e a posição do quadril",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-neonato-e-o-lactente-o-quadril-septico-silenci",
+     "titulo": "O neonato e o lactente: o quadril séptico silencioso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "laboratorio-o-que-cada-exame-diz",
+     "titulo": "Laboratório: o que cada exame diz",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-liquido-sinovial-celularidade-glicose-e-protei",
+     "titulo": "O líquido sinovial: celularidade, glicose e proteína",
+     "radar": "confirmado"
+    },
+    {
+     "id": "kocher-separando-a-sinovite-transitoria",
+     "titulo": "KOCHER: separando a sinovite transitória",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-e-puncao-articulacao-por-articulacao",
+     "titulo": "Imagem e punção articulação por articulação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "drenagem-quando-como-e-por-qual-via",
+     "titulo": "Drenagem: quando, como e por qual via",
+     "radar": "confirmado"
+    },
+    {
+     "id": "antibiotico-e-duracao",
+     "titulo": "Antibiótico e duração",
+     "radar": "clinico"
+    },
+    {
+     "id": "complicacoes-e-sequelas-do-quadril",
+     "titulo": "Complicações e sequelas do quadril",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "conceitos-basicos-0250",
+    "conceitos-basicos-0187",
+    "conceitos-basicos-0287",
+    "conceitos-basicos-0411",
+    "conceitos-basicos-0166",
+    "conceitos-basicos-0263",
+    "pediatria-0438",
+    "conceitos-basicos-0147",
+    "conceitos-basicos-0033",
+    "pediatria-0381",
+    "conceitos-basicos-0025",
+    "conceitos-basicos-0413",
+    "conceitos-basicos-0066",
+    "conceitos-basicos-0119",
+    "conceitos-basicos-0011",
+    "conceitos-basicos-0074",
+    "conceitos-basicos-0205",
+    "conceitos-basicos-0050",
+    "conceitos-basicos-0089",
+    "pediatria-0340",
+    "conceitos-basicos-0169",
+    "conceitos-basicos-0096"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Artrite séptica"
+   ]
+  },
+  {
    "id": "tachdjian6-artrogripose-neuromusculares",
    "versao": 1,
    "titulo": "Artrogripose e doenças neuromusculares",
@@ -13909,6 +17797,131 @@
    "treino": [],
    "subtemas": [
     "Artrogripose e doenças neuromusculares"
+   ]
+  },
+  {
+   "id": "tachdjian6-cifose-scheuermann",
+   "versao": 1,
+   "titulo": "Cifose e doença de SCHEUERMANN",
+   "especialidade": "coluna",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 41)",
+   "capitulo": "Capítulo 10 · Kyphosis",
+   "resumo": "Cifose torácica normal de 20 a 45 graus (até 50); postural é flexível, sem cunha, nunca cirúrgica e é o diferencial mais comum; SCHEUERMANN com ápice T7 a T9 (torácico) ou T10 a T12 (toracolombar), início aos 10 a 12 anos, critérios de SORENSEN (cunha maior que 5 graus em três vértebras adjacentes no ápice, irregularidade das placas, estreitamento discal, nódulos de SCHMORL); isquiotibiais tensos, hiperlordose cervical e lombar, dor no ápice que melhora com a maturidade; escoliose em um terço, de 10 a 20 graus e que não progride; espondilólise em 50%; MILWAUKEE no ápice torácico (três pontos), órtese com mais de 50 graus, alguma flexibilidade e pelo menos 1 ano de crescimento; cirurgia com mais de 70 a 75 graus progressivos e dor refratária, posterior com osteotomias de PONTE, de T2 à vértebra sagital estável, sem hipercorrigir (cifose juncional em até 30% a 40%); cifose congênita tipo I (falha de formação) é a mais comum, mais progressiva e a que mais paralisa, órtese não tem papel.",
+   "acesso": "gratis",
+   "minutos": 33,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "como-a-coluna-se-dobra-valores-normais-e-mecanic",
+     "titulo": "Como a coluna se dobra: valores normais e mecânica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-cifose-postural-o-principal-diferencial",
+     "titulo": "A cifose postural: o principal diferencial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-doenca-de-scheuermann-definicao-tipos-e-apice",
+     "titulo": "A doença de SCHEUERMANN: definição, tipos e ápice",
+     "radar": "confirmado"
+    },
+    {
+     "id": "epidemiologia-e-causa",
+     "titulo": "Epidemiologia e causa",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-quadro-clinico",
+     "titulo": "O quadro clínico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiografia-e-os-criterios-de-sorensen",
+     "titulo": "A radiografia e os critérios de SORENSEN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "condicoes-associadas-escoliose-e-espondilolise",
+     "titulo": "Condições associadas: escoliose e espondilólise",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-diagnostico-diferencial",
+     "titulo": "O diagnóstico diferencial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-historia-natural",
+     "titulo": "A história natural",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-tratamento-nao-operatorio-e-a-ortese",
+     "titulo": "O tratamento não operatório e a órtese",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-tratamento-cirurgico",
+     "titulo": "O tratamento cirúrgico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-cifose-congenita",
+     "titulo": "A cifose congênita",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "a-fusao-anterior-progressiva-nao-infecciosa",
+     "titulo": "A fusão anterior progressiva não infecciosa",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "cifose-pos-laminectomia-e-pos-radioterapia",
+     "titulo": "Cifose pós-laminectomia e pós-radioterapia",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "outras-cifoses-displasias-marfan-e-tuberculose",
+     "titulo": "Outras cifoses: displasias, MARFAN e tuberculose",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "coluna-0290",
+    "coluna-0454",
+    "coluna-0031",
+    "coluna-0223",
+    "coluna-0309",
+    "coluna-0332",
+    "coluna-0404",
+    "coluna-0017",
+    "coluna-0008",
+    "coluna-0403",
+    "coluna-0318",
+    "coluna-0042",
+    "coluna-0086",
+    "coluna-0406",
+    "coluna-0091",
+    "coluna-0195",
+    "coluna-0079",
+    "coluna-0188",
+    "coluna-0405",
+    "coluna-0452"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Cifose e doença de Scheuermann"
    ]
   },
   {
@@ -14196,6 +18209,106 @@
    ],
    "subtemas": [
     "Deficiências longitudinais dos membros"
+   ]
+  },
+  {
+   "id": "tachdjian6-displasia-fibrosa",
+   "versao": 1,
+   "titulo": "Displasia fibrosa e lesões fibro-ósseas afins",
+   "especialidade": "tumores",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26, 27 e 29), o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), e o Sizínio Hebert, 5ª ed. (cap. 29)",
+   "capitulo": "Capítulo 25 · Benign Musculoskeletal Tumors",
+   "resumo": "Displasia fibrosa é falha de maturação do osso trançado por mutação da Gs alfa (Arg201), mono ou poliostótica, com vidro fosco, letras chinesas sem rima osteoblástica e cajado de pastor (varo do fêmur proximal); McCUNE-ALBRIGHT soma café com leite (costa do Maine) e endocrinopatia, MAZABRAUD soma mixomas intramusculares; fraturas consolidam rápido com calo endosteal pobre, enxerto esponjoso é reabsorvido, haste intramedular e enxerto cortical são a base, radioterapia é proibida; a displasia osteofibrosa de CAMPANACCI (fibroma ossificante) é intracortical anterior na tíbia, com rima osteoblástica e parente do adamantinoma; o fibroma não ossificante é excêntrico metafisário, fratura no estágio B de RITSCHL e com café com leite forma o JAFFE-CAMPANACCI; o desmoide cortical fica na face posteromedial da metáfise distal do fêmur.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "displasia-fibrosa-o-que-e-de-onde-vem-e-quem-tem",
+     "titulo": "Displasia fibrosa: o que é, de onde vem e quem tem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-tres-formas-e-as-sindromes-mccune-albright-e-",
+     "titulo": "As três formas e as síndromes: McCUNE-ALBRIGHT e MAZABRAUD",
+     "radar": "confirmado"
+    },
+    {
+     "id": "histologia-as-letras-chinesas",
+     "titulo": "Histologia: as letras chinesas",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-imagem-vidro-fosco-e-cajado-de-pastor",
+     "titulo": "A imagem: vidro fosco e cajado de pastor",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fraturas-patologicas-consolidam-rapido-com-calo-",
+     "titulo": "Fraturas patológicas: consolidam rápido, com calo endosteal pobre",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-da-displasia-fibrosa-menos-e-mais",
+     "titulo": "Tratamento da displasia fibrosa: menos é mais",
+     "radar": "clinico"
+    },
+    {
+     "id": "transformacao-maligna-e-radioterapia",
+     "titulo": "Transformação maligna e radioterapia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "displasia-osteofibrosa-de-campanacci-o-fibroma-o",
+     "titulo": "Displasia osteofibrosa de CAMPANACCI: o fibroma ossificante da tíbia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "adamantinoma-o-vizinho-maligno-da-tibia",
+     "titulo": "Adamantinoma: o vizinho maligno da tíbia",
+     "radar": "clinico"
+    },
+    {
+     "id": "fibroma-nao-ossificante-e-defeito-fibroso-cortic",
+     "titulo": "Fibroma não ossificante e defeito fibroso cortical",
+     "radar": "confirmado"
+    },
+    {
+     "id": "desmoide-cortical-e-outras-lesoes-fibrosas",
+     "titulo": "Desmoide cortical e outras lesões fibrosas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "tumores-0023",
+    "tumores-0084",
+    "tumores-0310",
+    "tumores-0111",
+    "tumores-0031",
+    "tumores-0248",
+    "tumores-0253",
+    "tumores-0011",
+    "tumores-0052",
+    "tumores-0041",
+    "tumores-0047",
+    "tumores-0035",
+    "tumores-0193",
+    "tumores-0261",
+    "tumores-0074"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Displasia fibrosa"
    ]
   },
   {
@@ -14691,6 +18804,385 @@
    "treino": [],
    "subtemas": [
     "Marcha na criança"
+   ]
+  },
+  {
+   "id": "tachdjian6-mielomeningocele",
+   "versao": 1,
+   "titulo": "Mielomeningocele",
+   "especialidade": "pediatria",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36)",
+   "capitulo": "Capítulo 32 · Disorders of the Spinal Cord",
+   "resumo": "Defeito de neurulação entre o 26º e o 28º dia, com arco POSTERIOR aberto, mielodisplasia e nervos periféricos normais; folato 0,4 mg/dia para toda mulher fértil e 4 mg/dia no alto risco; AFP sobe porque o tubo fica aberto; irmão afetado aumenta o risco (cerca de 1 em 14); espinha bífida oculta em L5 e S1; fechamento do saco em até 48 horas e derivação em 70% a 90%; CHIARI II com nistagmo, estridor e apneia; medula presa na RM em quase todos, clínica em 20% a 30%; escoliose de progressão rápida pede derivação e medula; torácico nasce em perna de rã (flexão de quadril e joelho); quadríceps decide a marcha; sacral alto = quadríceps e glúteo médio grau 3 ou mais com tríceps sural grau 2 ou menos; látex: ambiente livre de látex em todo procedimento; fraturas supracondilianas do fêmur sem dor, com calor e calo exuberante; pé calcâneo pelo tibial anterior sem oposição; luxação do quadril em geral não se reduz, e a unilateral no lombar baixo não muda a simetria da marcha.",
+   "acesso": "gratis",
+   "minutos": 37,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-espectro-do-disrafismo-espinal",
+     "titulo": "O espectro do disrafismo espinal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "embriologia-quando-e-como-o-tubo-deixa-de-fechar",
+     "titulo": "Embriologia: quando e como o tubo deixa de fechar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "prevencao-rastreio-e-hereditariedade",
+     "titulo": "Prevenção, rastreio e hereditariedade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "patologia-a-placa-as-vertebras-e-o-cerebro",
+     "titulo": "Patologia: a placa, as vértebras e o cérebro",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento-do-saco-hidrocefalia-e-cirurgia-fetal",
+     "titulo": "Fechamento do saco, hidrocefalia e cirurgia fetal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "chiari-ii-hidromielia-e-diastematomielia",
+     "titulo": "CHIARI II, hidromielia e diastematomielia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "medula-presa",
+     "titulo": "Medula presa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "niveis-neurologicos-e-o-que-cada-um-faz",
+     "titulo": "Níveis neurológicos e o que cada um faz",
+     "radar": "confirmado"
+    },
+    {
+     "id": "marcha-quem-anda-e-o-que-decide",
+     "titulo": "Marcha: quem anda e o que decide",
+     "radar": "confirmado"
+    },
+    {
+     "id": "alem-dos-membros-inferiores-membro-superior-cogn",
+     "titulo": "Além dos membros inferiores: membro superior, cognição e puberdade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "latex-infeccao-e-pele",
+     "titulo": "Látex, infecção e pele",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fraturas",
+     "titulo": "Fraturas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "exame-do-recem-nascido-e-acompanhamento",
+     "titulo": "Exame do recém-nascido e acompanhamento",
+     "radar": "fundamento"
+    },
+    {
+     "id": "pe-e-tornozelo",
+     "titulo": "Pé e tornozelo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "joelho",
+     "titulo": "Joelho",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quadril",
+     "titulo": "Quadril",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coluna",
+     "titulo": "Coluna",
+     "radar": "confirmado"
+    },
+    {
+     "id": "orteses",
+     "titulo": "Órteses",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0412",
+    "pediatria-0137",
+    "pediatria-1073",
+    "pediatria-0684",
+    "pediatria-0482",
+    "pediatria-0318",
+    "pediatria-0430",
+    "pediatria-0006",
+    "pediatria-0027",
+    "pediatria-0242",
+    "pediatria-0095",
+    "pediatria-0775",
+    "pediatria-0274",
+    "pediatria-0732",
+    "pediatria-0065",
+    "pediatria-0364",
+    "pediatria-0048"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Mielomeningocele"
+   ]
+  },
+  {
+   "id": "tachdjian6-osteocondrite-dissecante",
+   "versao": 1,
+   "titulo": "Osteocondrite dissecante",
+   "especialidade": "joelho",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (2026)",
+   "capitulo": "Capítulo 40 · Pediatric Sports Medicine: Issues in Contemporary Sports Participation",
+   "resumo": "Lesão idiopática do osso subcondral, mais comum em meninos (2:1) de 12 a 19 anos, na face lateral do côndilo femoral medial (cerca de 80%), bilateral em até 30%; sinal de WILSON (90° com rotação interna, dor a 30° ao estender; marcha em rotação externa); incidência do túnel; diferencial com centros de ossificação anômalos (radiografia comparativa, cintilografia negativa); instabilidade na RM = linha de alto sinal em T2 entre fragmento e osso, cistos e quebra da cartilagem; DIPAOLA, CAHILL, ROCK e BERNDT e HARTY; fise aberta e lesão estável cicatrizam com conservador; cirurgia se instável, sem cicatrização em 6 meses ou sintomas após o fechamento da fise; perfuração, fixação e enxertia osteocondral; patela com pior prognóstico, polo inferior e cintilografia quente contra o defeito dorsal superolateral e frio.",
+   "acesso": "gratis",
+   "minutos": 37,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-e-e-onde-fica",
+     "titulo": "O que é e onde fica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "por-que-o-osso-se-solta-etiologia",
+     "titulo": "Por que o osso se solta: etiologia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-menisco-discoide-e-o-condilo-lateral",
+     "titulo": "O menisco discoide e o côndilo lateral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "clinica-e-o-sinal-de-wilson",
+     "titulo": "Clínica e o sinal de WILSON",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiografia-e-o-diagnostico-diferencial",
+     "titulo": "A radiografia e o diagnóstico diferencial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-ressonancia-e-a-estabilidade-do-fragmento",
+     "titulo": "A ressonância e a estabilidade do fragmento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-classificacoes",
+     "titulo": "As classificações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-fise-decide-historia-natural-e-tratamento-cons",
+     "titulo": "A fise decide: história natural e tratamento conservador",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quando-operar-e-como-perfuracao-e-fixacao",
+     "titulo": "Quando operar e como: perfuração e fixação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quando-nao-da-para-salvar-reconstrucao-osteocond",
+     "titulo": "Quando não dá para salvar: reconstrução osteocondral",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-patela-e-o-defeito-dorsal",
+     "titulo": "A patela e o defeito dorsal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-cotovelo-capitulo-umeral-e-panner",
+     "titulo": "O cotovelo: capítulo umeral e PANNER",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-talus",
+     "titulo": "O tálus",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-quadril",
+     "titulo": "O quadril",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "joelho-0025",
+    "joelho-0072",
+    "joelho-0175",
+    "joelho-0014",
+    "pediatria-0392",
+    "joelho-0225",
+    "joelho-0182",
+    "joelho-0076",
+    "joelho-0216",
+    "pediatria-0553",
+    "joelho-0196",
+    "joelho-0125",
+    "joelho-0283",
+    "joelho-0005",
+    "trauma-1029",
+    "joelho-0037",
+    "joelho-0270",
+    "joelho-0006",
+    "joelho-0310"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Osteocondrite dissecante"
+   ]
+  },
+  {
+   "id": "tachdjian6-osteogenese-imperfeita",
+   "versao": 1,
+   "titulo": "Osteogênese imperfeita",
+   "especialidade": "pediatria",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 34)",
+   "capitulo": "Capítulo 38 · Metabolic and Endocrine Disorders of Bone (seção Osteogenesis Imperfecta)",
+   "resumo": "Colágeno tipo I com duas cadeias alfa-1 (COL1A1, cromossomo 17) e uma alfa-2 (COL1A2, cromossomo 7) e glicina a cada terceira posição; tipo I quantitativo com esclera azul, tipos II a IV qualitativos e quantitativos; SILLENCE: I e IV autossômicos dominantes, II letal e de fragilidade extrema, III o mais grave que sobrevive, IV com esclera normal, A e B pelos dentes; tipo V (IFITM5) com calo hiperplásico que simula osteossarcoma, membrana interóssea calcificada e luxação da cabeça do rádio; vértebras bicôncavas, wormianos, calcificações em pipoca; escoliose torácica, mais nos tipos III (89%) e IV (61%); fratura imobilizada só até a dor passar, pseudartrose incomum; olécrano no tipo I; SOFIELD-MILLAR, BAILEY-DUBOW e FASSIER-DUVAL; bisfosfonatos aumentam a massa óssea; maus-tratos no diferencial.",
+   "acesso": "gratis",
+   "minutos": 34,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-colageno-tipo-i-as-cadeias-os-genes-e-a-glicin",
+     "titulo": "O colágeno tipo I: as cadeias, os genes e a glicina",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-patologia-osso-imaturo-e-turnover-alto",
+     "titulo": "A patologia: osso imaturo e turnover alto",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-classificacao-de-sillence",
+     "titulo": "A classificação de SILLENCE",
+     "radar": "confirmado"
+    },
+    {
+     "id": "os-tipos-novos-ifitm5-serpinf1-e-os-recessivos",
+     "titulo": "Os tipos novos: IFITM5, SERPINF1 e os recessivos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-quadro-clinico-osso-olho-dente-e-ouvido",
+     "titulo": "O quadro clínico: osso, olho, dente e ouvido",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-imagem-o-que-a-radiografia-mostra",
+     "titulo": "A imagem: o que a radiografia mostra",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diagnostico-prognostico-e-pre-natal",
+     "titulo": "Diagnóstico, prognóstico e pré-natal",
+     "radar": "fundamento"
+    },
+    {
+     "id": "diagnostico-diferencial-e-maus-tratos",
+     "titulo": "Diagnóstico diferencial e maus-tratos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "bisfosfonatos-e-tratamento-clinico",
+     "titulo": "Bisfosfonatos e tratamento clínico",
+     "radar": "clinico"
+    },
+    {
+     "id": "as-fraturas",
+     "titulo": "As fraturas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-deformidade-dos-ossos-longos-e-as-osteotomias-",
+     "titulo": "A deformidade dos ossos longos e as osteotomias de SOFIELD-MILLAR",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-hastes-telescopicas-bailey-dubow-sheffield-e-",
+     "titulo": "As hastes telescópicas: BAILEY-DUBOW, SHEFFIELD e FASSIER-DUVAL",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-coluna",
+     "titulo": "A coluna",
+     "radar": "confirmado"
+    },
+    {
+     "id": "calo-hiperplasico-e-osteossarcoma",
+     "titulo": "Calo hiperplásico e osteossarcoma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quadril-e-base-do-cranio",
+     "titulo": "Quadril e base do crânio",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0059",
+    "pediatria-0313",
+    "pediatria-0435",
+    "pediatria-0206",
+    "pediatria-0744",
+    "pediatria-0071",
+    "pediatria-0526",
+    "pediatria-0419",
+    "pediatria-0900",
+    "pediatria-0138",
+    "pediatria-0366",
+    "pediatria-0199",
+    "pediatria-0121",
+    "pediatria-0329",
+    "pediatria-0008",
+    "pediatria-0083"
+   ],
+   "treino": [
+    "pediatria-1200"
+   ],
+   "subtemas": [
+    "Osteogênese imperfeita"
    ]
   },
   {
@@ -15399,6 +19891,112 @@
    "treino": [],
    "subtemas": [
     "Doença de Legg-Calvé-Perthes"
+   ]
+  },
+  {
+   "id": "tachdjian6-sarcoma-ewing",
+   "versao": 1,
+   "titulo": "Sarcoma de EWING",
+   "especialidade": "tumores",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª edição (2026), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição",
+   "capitulo": "Capítulo 26 · Malignant Bone Tumors",
+   "resumo": "Tumor de pequenas células redondas azuis da família PNET, terceiro maligno primário não hematológico do osso, mas o mais comum abaixo dos 10 anos; 10 a 20 anos (5 a 25), leve predomínio masculino, raríssimo em negros; pelve e membro inferior (fêmur, ílio, fíbula), diáfise dos ossos longos (Campbell: começa na metáfise e invade a diáfise); dor, massa grande de partes moles, febre, leucocitose e VHS imitando osteomielite (ROBERTS IV); lesão permeativa com casca de cebola; PAS positivo, reticulina negativa, CD99 (MIC2), t(11;22) EWS-FLI1 em mais de 90%; metástase em 25% ao diagnóstico, pulmão primeiro e osso segundo; todo EWING é de alto grau (AJCC II, A até 8 cm); quimioterapia VDC com ifosfamida e etoposídeo, controle local por cirurgia ou radioterapia (muito radiossensível, como linfoma e mieloma); pior prognóstico com metástase, tumor grande e central, febre e anemia, LDH alta, idade acima de 12 a 15 anos, sexo masculino e necrose abaixo de 90%; grau histológico e tipo de translocação não pesam.",
+   "acesso": "gratis",
+   "minutos": 34,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-e-o-sarcoma-de-ewing",
+     "titulo": "O que é o sarcoma de EWING",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quem-tem-idade-sexo-raca-e-frequencia",
+     "titulo": "Quem tem: idade, sexo, raça e frequência",
+     "radar": "confirmado"
+    },
+    {
+     "id": "onde-nasce-pelve-membro-inferior-e-diafise",
+     "titulo": "Onde nasce: pelve, membro inferior e diáfise",
+     "radar": "confirmado"
+    },
+    {
+     "id": "como-o-paciente-chega-dor-massa-e-o-falso-quadro",
+     "titulo": "Como o paciente chega: dor, massa e o falso quadro infeccioso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-destruicao-sem-matriz",
+     "titulo": "Imagem: destruição sem matriz",
+     "radar": "clinico"
+    },
+    {
+     "id": "patologia-pequenas-celulas-redondas-azuis",
+     "titulo": "Patologia: pequenas células redondas azuis",
+     "radar": "confirmado"
+    },
+    {
+     "id": "genetica-a-translocacao-que-define-o-tumor",
+     "titulo": "Genética: a translocação que define o tumor",
+     "radar": "fundamento"
+    },
+    {
+     "id": "biopsia-o-que-mandar-e-para-onde",
+     "titulo": "Biópsia: o que mandar e para onde",
+     "radar": "clinico"
+    },
+    {
+     "id": "metastases-e-estadiamento",
+     "titulo": "Metástases e estadiamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-quimioterapia-para-todos-controle-loc",
+     "titulo": "Tratamento: quimioterapia para todos, controle local escolhido",
+     "radar": "confirmado"
+    },
+    {
+     "id": "prognostico-o-que-pesa-e-o-que-nao-pesa",
+     "titulo": "Prognóstico: o que pesa e o que não pesa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ewing-osteossarcoma-condrossarcoma-e-linfoma-lad",
+     "titulo": "EWING, osteossarcoma, condrossarcoma e linfoma lado a lado",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "tumores-0346",
+    "tumores-0244",
+    "tumores-0026",
+    "tumores-0255",
+    "tumores-0100",
+    "tumores-0211",
+    "tumores-0077",
+    "tumores-0186",
+    "tumores-0283",
+    "tumores-0316",
+    "tumores-0075",
+    "tumores-0359",
+    "tumores-0122",
+    "tumores-0263",
+    "tumores-0284",
+    "tumores-0330"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Sarcoma de Ewing"
    ]
   },
   {
