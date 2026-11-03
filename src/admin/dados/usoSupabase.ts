@@ -16,10 +16,7 @@ export const PLANO_SUPABASE = {
     arquivosBytes: 1024 ** 3,
     /** Usuários ativos por mês (MAU). */
     usuariosAtivosMes: 50_000,
-    /** Tráfego de saída (egress, sem cache) por mês. */
-    saidaBytesMes: 5 * 1024 ** 3,
-    /** Chamadas de Edge Functions por mês. */
-    chamadasFuncoesMes: 500_000,
+    /* Tráfego de saída (5 GB/mês) e Edge Functions (500.000 chamadas/mês) não entram: só saem pela API com token. */
   },
 } as const
 
@@ -41,19 +38,19 @@ export interface UsoSupabase {
 }
 
 export interface Medidor {
-  id: 'banco' | 'arquivos' | 'usuarios' | 'saida' | 'funcoes'
+  id: 'banco' | 'arquivos' | 'usuarios'
   nome: string
   frase: string
-  /** null: ainda não medido (em breve). */
+  /** null: ainda não medido. */
   usado: number | null
   limite: number
-  unidade: 'bytes' | 'contas' | 'chamadas'
+  unidade: 'bytes' | 'contas'
   pct: number | null
 }
 
 const porcento = (usado: number, limite: number) => limite > 0 ? (100 * usado) / limite : 0
 
-/** Os cinco medidores, na ordem da tela. */
+/** Os três medidores, na ordem da tela. */
 export function medidores(u: UsoSupabase | null): Medidor[] {
   const L = PLANO_SUPABASE.limites
   const m = (id: Medidor['id'], nome: string, frase: string, usado: number | null, limite: number, unidade: Medidor['unidade']): Medidor =>
@@ -62,8 +59,6 @@ export function medidores(u: UsoSupabase | null): Medidor[] {
     m('banco', 'Banco de dados', 'Todas as tabelas, com índices. Passou do limite, o banco fica só para leitura.', u ? Number(u.banco_bytes) : null, L.bancoBytes, 'bytes'),
     m('arquivos', 'Arquivos', 'Imagens e anexos guardados no Storage, somando todos os baldes.', u ? Number(u.arquivos_bytes) : null, L.arquivosBytes, 'bytes'),
     m('usuarios', 'Usuários ativos', 'Contas que entraram nos últimos 30 dias, perto do que o plano conta por mês.', u ? Number(u.ativas_30d) : null, L.usuariosAtivosMes, 'contas'),
-    m('saida', 'Tráfego de saída', 'Dados que saem do Supabase para os aparelhos, no mês.', null, L.saidaBytesMes, 'bytes'),
-    m('funcoes', 'Edge Functions', 'Chamadas às funções do servidor (pagamentos, e-mails), no mês.', null, L.chamadasFuncoesMes, 'chamadas'),
   ]
 }
 

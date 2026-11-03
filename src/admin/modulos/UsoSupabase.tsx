@@ -11,9 +11,10 @@ const ROTULO_TOM = { ok: 'Folgado', aviso: 'Atenção', perigo: 'Perto do limite
 
 /**
  * Ajustes › Uso do Supabase (Tales, 03/11/2026): quanto do plano o site já usa. Cada medidor mostra o usado, o limite,
- * a porcentagem e uma frase curta; a barra fica âmbar a partir de 70% e vermelha a partir de 90%. Embaixo, o que mais
- * ocupa: as 10 maiores tabelas e os baldes de arquivos. Tráfego de saída e Edge Functions ficam "em breve": não saem
- * por SQL (ver o fim da tela).
+ * a porcentagem e uma frase curta; a barra fica âmbar a partir de 70% e vermelha a partir de 90%. O que mais ocupa (as
+ * 10 maiores tabelas e os baldes de arquivos) fica guardado num "Ver o que mais ocupa", para a tela continuar enxuta.
+ * Tráfego de saída e Edge Functions ficam de fora (pedem token da API do Supabase; Tales, 03/11/2026: "nada muito
+ * grande", sem token): o rodapé aponta para o painel de uso do próprio Supabase.
  */
 export default function UsoSupabase() {
   const parte = defParte('supabase')
@@ -44,46 +45,38 @@ export default function UsoSupabase() {
         : lista.map(m => <CartaoMedidor key={m.id} m={m} extra={m.id === 'usuarios' && uso ? `${Number(uso.contas).toLocaleString('pt-BR')} contas no total` : undefined} />)}
     </section>
 
-    {uso && <div className="us-duas">
-      <Painel titulo="Tabelas que mais ocupam" descricao={`As 10 maiores, com índices. O banco inteiro tem ${tamanho(Number(uso.banco_bytes))}.`}>
-        <ListaBarras itens={uso.tabelas.map(t => ({ nome: t.tabela, detalhe: t.esquema, bytes: Number(t.bytes) }))} total={Number(uso.banco_bytes)} vazio="Nenhuma tabela encontrada" />
-      </Painel>
-      <Painel titulo="Arquivos por balde" descricao={`O Storage inteiro tem ${tamanho(Number(uso.arquivos_bytes))}.`}>
-        <ListaBarras itens={uso.baldes.map(b => ({ nome: b.balde, detalhe: `${Number(b.arquivos).toLocaleString('pt-BR')} ${Number(b.arquivos) === 1 ? 'arquivo' : 'arquivos'}`, bytes: Number(b.bytes) }))} total={Number(uso.arquivos_bytes)} vazio="Nenhum arquivo no Storage" />
-      </Painel>
-    </div>}
-
-    <Painel titulo="Tráfego de saída e Edge Functions" descricao="Por que ainda não aparecem aqui.">
-      <div className="us-breve">
-        <p>Esses dois números não ficam no banco: o Supabase só mostra no próprio painel de uso. Para trazer para cá, falta uma Edge Function que só um administrador pode chamar, com um token pessoal do Supabase guardado como segredo dela.</p>
-        <p>Até lá, veja em <b>supabase.com › seu projeto › Usage</b>: lá estão o tráfego de saída e as chamadas de funções do mês.</p>
+    {uso && <details className="us-detalhe">
+      <summary>Ver o que mais ocupa</summary>
+      <div className="us-duas">
+        <Painel titulo="Tabelas que mais ocupam" descricao={`As 10 maiores, com índices. O banco inteiro tem ${tamanho(Number(uso.banco_bytes))}.`}>
+          <ListaBarras itens={uso.tabelas.map(t => ({ nome: t.tabela, detalhe: t.esquema, bytes: Number(t.bytes) }))} total={Number(uso.banco_bytes)} vazio="Nenhuma tabela encontrada" />
+        </Painel>
+        <Painel titulo="Arquivos por balde" descricao={`O Storage inteiro tem ${tamanho(Number(uso.arquivos_bytes))}.`}>
+          <ListaBarras itens={uso.baldes.map(b => ({ nome: b.balde, detalhe: `${Number(b.arquivos).toLocaleString('pt-BR')} ${Number(b.arquivos) === 1 ? 'arquivo' : 'arquivos'}`, bytes: Number(b.bytes) }))} total={Number(uso.arquivos_bytes)} vazio="Nenhum arquivo no Storage" />
+        </Painel>
       </div>
-    </Painel>
+    </details>}
 
     <p className="a3-mudo a3-pequeno">
-      A barra fica âmbar a partir de {LIMIAR_AVISO}% e vermelha a partir de {LIMIAR_PERIGO}%. Usuários ativos usa o último login dos últimos 30 dias; o Supabase conta por mês do ciclo de cobrança, então o número dele pode ser um pouco diferente.
+      A barra fica âmbar a partir de {LIMIAR_AVISO}% e vermelha a partir de {LIMIAR_PERIGO}%. Usuários ativos usa o último login dos últimos 30 dias; o Supabase conta pelo mês de cobrança, então pode dar um pouco diferente. Tráfego de saída e Edge Functions: veja em supabase.com › seu projeto › Usage.
       {uso && ` Medido em ${dataHora(uso.medido_em)}.`}
     </p>
   </div>
 }
 
 function CartaoMedidor({ m, extra }: { m: Medidor; extra?: string }) {
-  const emBreve = m.pct === null
-  const tom = emBreve ? 'breve' : tomDe(m.pct ?? 0)
-  const largura = Math.min(100, Math.max(m.pct ?? 0, m.pct ? 1.5 : 0))
-  return <article className={`a3-painel us-medidor us-medidor--${tom}`} aria-label={m.nome}>
+  const pct = m.pct ?? 0
+  const largura = Math.min(100, Math.max(pct, pct ? 1.5 : 0))
+  return <article className={`a3-painel us-medidor us-medidor--${tomDe(pct)}`} aria-label={m.nome}>
     <header className="us-medidor__cabeca">
       <h2 className="a3-titulo-3">{m.nome}</h2>
-      {emBreve ? <span className="us-selo">Em breve</span> : <b className="us-medidor__pct num">{Math.round(m.pct ?? 0)}%</b>}
+      <b className="us-medidor__pct num">{Math.round(pct)}%</b>
     </header>
     <p className="us-medidor__frase">{m.frase}</p>
-    <div className="us-medidor__trilho" role={emBreve ? undefined : 'meter'} aria-valuemin={0} aria-valuemax={100} aria-valuenow={emBreve ? undefined : Math.round(m.pct ?? 0)}
-      aria-label={emBreve ? undefined : `${m.nome}: ${Math.round(m.pct ?? 0)}% do limite`}>
+    <div className="us-medidor__trilho" role="meter" aria-valuemin={0} aria-valuemax={100} aria-valuenow={Math.round(pct)} aria-label={`${m.nome}: ${Math.round(pct)}% do limite`}>
       <i style={{ width: `${largura}%` }} />
     </div>
-    <p className="us-medidor__conta">{emBreve
-      ? <>Limite do plano: <b>{valorDe(m.limite, m.unidade)}</b> por mês. Ainda não medido aqui.</>
-      : <><b className="num">{valorDe(m.usado ?? 0, m.unidade)}</b> de {valorDe(m.limite, m.unidade)} usados{extra ? ` · ${extra}` : ''}</>}</p>
+    <p className="us-medidor__conta"><b className="num">{valorDe(m.usado ?? 0, m.unidade)}</b> de {valorDe(m.limite, m.unidade)} usados{extra ? ` · ${extra}` : ''}</p>
   </article>
 }
 

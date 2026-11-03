@@ -30,14 +30,13 @@ try {
   assert.deepEqual(m.defArea('configuracoes').partes.map(p => p.id), ['ajustes', 'exportar', 'supabase'])
   assert.equal(m.areaDe('supabase'), 'configuracoes')
   assert.equal(ida('aba=supabase'), '/admin?aba=supabase')
-  // Os medidores: porcentagem do limite do plano, cor por faixa e os dois "em breve" sem número.
+  // Os três medidores: porcentagem do limite do plano e cor por faixa (sem tráfego nem funções, que pedem token).
   {
     const MB = 1024 ** 2, u = m.uso
     const lista = u.medidores({ medido_em: '2026-11-03T10:00:00Z', banco_bytes: 250 * MB, tabelas: [], arquivos_bytes: 921.6 * MB, baldes: [], contas: 10, ativas_30d: 35_000 })
-    assert.deepEqual(lista.map(x => x.id), ['banco', 'arquivos', 'usuarios', 'saida', 'funcoes'])
+    assert.deepEqual(lista.map(x => x.id), ['banco', 'arquivos', 'usuarios'])
     assert.equal(Math.round(lista[0].pct), 50); assert.equal(Math.round(lista[1].pct), 90); assert.equal(Math.round(lista[2].pct), 70)
     assert.deepEqual(lista.slice(0, 3).map(x => u.tomDe(x.pct)), ['ok', 'perigo', 'aviso'])
-    assert.equal(lista[3].pct, null); assert.equal(lista[4].pct, null)
     assert.equal(u.tamanho(182 * MB), '182 MB'); assert.equal(u.tamanho(1024 * MB), '1 GB'); assert.equal(u.tamanho(1.5 * MB), '1,5 MB')
     assert.deepEqual(u.pertoDoLimite({ medido_em: '', banco_bytes: 250 * MB, tabelas: [], arquivos_bytes: 921.6 * MB, baldes: [], contas: 10, ativas_30d: 35_000 }).map(x => x.id), ['arquivos'])
     assert.equal(u.medidores(null).every(x => x.pct === null), true)
