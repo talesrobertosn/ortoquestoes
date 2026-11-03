@@ -15,7 +15,13 @@ PNGs: `node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-04-t
 | 15h | Story: fase bônus | `s3-bonus` |
 | 18h às 19h | Story: quadro de recordes | `s4-recordes` |
 
-Stories sem figurinha nenhuma.
+Figurinha de link só no `s4-recordes` (pedido do Tales, 03/11/2026), com o texto "Treine grátis", na área livre abaixo do site:
+
+```
+https://ortoquestoes.com.br/?utm_source=instagram&utm_medium=stories&utm_campaign=tilt-mirels&utm_content=s4-recordes#/conta?modo=criar&voltar=%2Ftreinar
+```
+
+Quem cria a conta por ele aparece no painel em Crescimento › Perfis e origem como "Instagram · Stories · tilt-mirels". Os stories `s1` a `s3` vão sem figurinha.
 
 ## Legenda do feed
 
