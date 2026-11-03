@@ -15,6 +15,10 @@ function cors(req) {
   };
 }
 var json = (dados, status = 200, req) => new Response(JSON.stringify(dados), { status, headers: cors(req) });
+async function banco(caminho, init = {}) {
+  const base = Deno.env.get("SUPABASE_URL"), service = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
+  return fetch(`${base}/rest/v1/${caminho}`, { ...init, headers: { apikey: service, Authorization: `Bearer ${service}`, "Content-Type": "application/json", Prefer: "return=representation", ...init.headers ?? {} } });
+}
 
 // supabase/functions/_shared/cartas.ts
 var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "primeiras_10", "voltou", "cronograma_pronto", "pagamento_aprovado", "obrigado_tempo"];
@@ -48,14 +52,77 @@ async function enviarEmail(para, assunto, html, texto2, descadastro, responderPa
   }
 }
 
+// supabase/functions/suporte/carta.ts
+var MOTIVOS_SUPORTE = {
+  pagar: "N\xE3o consegui assinar ou pagar",
+  assinatura: "Minha assinatura",
+  acesso: "Acesso \xE0 conta",
+  questao: "Erro em quest\xE3o",
+  dados: "Meus dados",
+  outro: "Sugest\xE3o ou outro assunto"
+};
+var esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+function montarCarta(d) {
+  const titulo = MOTIVOS_SUPORTE[d.motivo] ?? MOTIVOS_SUPORTE.outro;
+  const quem = d.nome ? `${d.nome} \xB7 ${d.email}` : d.email;
+  const fichas = [...d.campos, ["Conta", d.situacao]];
+  const responder = `mailto:${encodeURIComponent(d.email)}?subject=${encodeURIComponent(`Re: ${d.assunto}`)}`;
+  const primeiroNome2 = d.nome.trim().split(/\s+/)[0] ?? "";
+  const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${esc(d.assunto)}</title></head>
+<body style="margin:0;padding:24px 12px;background:#eef2f1;font-family:Arial,Helvetica,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td align="center">
+<table role="presentation" width="600" cellpadding="0" cellspacing="0" border="0" style="width:100%;max-width:600px;background:#ffffff;border-radius:14px;overflow:hidden;">
+<tr><td style="padding:20px 28px 18px 28px;background:#146b61;">
+<div style="font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:bold;color:#bfe9e1;">Suporte \xB7 Orto Quest\xF5es</div>
+<div style="margin-top:6px;font-size:21px;line-height:27px;font-weight:bold;color:#ffffff;">${esc(titulo)}</div>
+<div style="margin-top:4px;font-size:14px;line-height:20px;color:#dff3ef;">${esc(quem)}</div>
+</td></tr>
+<tr><td style="padding:18px 28px 4px 28px;">
+${fichas.map(([k, v]) => `<span style="display:inline-block;margin:0 6px 8px 0;padding:5px 11px;border-radius:999px;background:#eef6ee;border:1px solid #c9e2c6;font-size:13px;line-height:18px;color:#24452a;"><b>${esc(k)}:</b> ${esc(v)}</span>`).join("")}
+</td></tr>
+<tr><td style="padding:6px 28px 6px 28px;">
+<div style="white-space:pre-wrap;padding:14px 16px;border-left:4px solid #146b61;border-radius:6px;background:#fbfaf6;font-size:15px;line-height:23px;color:#1b2624;">${esc(d.mensagem)}</div>
+</td></tr>
+<tr><td style="padding:16px 28px 22px 28px;">
+<a href="${responder}" style="display:inline-block;padding:12px 22px;background:#146b61;color:#ffffff;border-radius:10px;font-weight:bold;text-decoration:none;font-size:14px;">Responder${primeiroNome2 ? ` a ${esc(primeiroNome2)}` : ""}</a>
+<span style="display:inline-block;margin-left:10px;font-size:12px;color:#5b6b67;">ou s\xF3 responda este e-mail</span>
+</td></tr>
+<tr><td style="padding:14px 28px 22px 28px;border-top:1px solid #e3e9e7;">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="font-size:12px;line-height:17px;color:#5b6b67;">
+${d.detalhes.map(([k, v]) => `<tr><td style="padding:2px 12px 2px 0;font-weight:bold;vertical-align:top;white-space:nowrap;">${esc(k)}</td><td style="padding:2px 0;word-break:break-word;">${esc(v)}</td></tr>`).join("")}
+</table>
+</td></tr>
+</table></td></tr></table></body></html>`;
+  const texto2 = `${titulo}
+${quem}
+
+${fichas.map(([k, v]) => `${k}: ${v}`).join("\n")}
+
+${d.mensagem}
+
+---
+${d.detalhes.map(([k, v]) => `${k}: ${v}`).join("\n")}
+
+Responda este e-mail para falar direto com ${d.email}.`;
+  return { html, texto: texto2 };
+}
+function descreverSituacao(a, precoAntigo = false, agora = Date.now()) {
+  if (!a?.plano) return "Sem assinatura";
+  const plano = a.plano.charAt(0).toUpperCase() + a.plano.slice(1);
+  const meio = a.id_externo?.startsWith("pix:") ? "no Pix" : "no cart\xE3o";
+  const fim = a.fim_periodo ? Date.parse(a.fim_periodo) : NaN;
+  const data = Number.isFinite(fim) ? new Date(fim).toLocaleDateString("pt-BR", { timeZone: "America/Sao_Paulo" }) : "";
+  const vigente = Number.isFinite(fim) && fim > agora;
+  const estado = a.status === "reembolsada" ? "reembolsada" : a.status === "falha_pagamento" ? "cobran\xE7a recusada" : a.status === "pendente" ? "pagamento pendente" : vigente ? `ativa at\xE9 ${data}${a.cancelar_ao_fim && !a.id_externo?.startsWith("pix:") ? ", sem renovar" : ""}` : data ? `terminou em ${data}` : a.status ?? "";
+  return `${plano} ${meio} \xB7 ${estado}${precoAntigo ? " \xB7 pre\xE7o antigo garantido" : ""}`;
+}
+
 // supabase/functions/suporte/index.ts
 var PARA = () => (Deno.env.get("SUPORTE_PARA") ?? "talesroberto23@gmail.com").trim();
-var MOTIVOS = {
-  assinatura: "Assinatura ou cobran\xE7a",
-  acesso: "Acesso \xE0 conta",
-  questao: "Quest\xE3o ou coment\xE1rio",
-  dados: "Meus dados",
-  outro: "Outro assunto"
+var CAMPOS = {
+  Plano: ["Mensal", "Semestral", "Anual", "N\xE3o sei"],
+  Pagamento: ["Pix", "Cart\xE3o", "N\xE3o cheguei a escolher"],
+  Quest\u00E3o: null
 };
 var JANELA_CURTA = 10 * 6e4;
 var MAX_CURTA = 3;
@@ -79,7 +146,21 @@ function podeEnviar(chave, agora = Date.now()) {
 var texto = (v, max) => (typeof v === "string" ? v : "").replace(/\r\n?/g, "\n").trim().slice(0, max);
 var linha = (v, max) => texto(v, max).replace(/[\n\t]+/g, " ");
 var emailValido = (e) => /^[^\s@<>()",;:]+@[^\s@<>()",;:]+\.[^\s@<>()",;:]{2,}$/.test(e) && e.length <= 200;
-var esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+async function situacaoDaConta(idUsuario) {
+  try {
+    const r = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&order=criada_em.desc&limit=1&select=plano,status,id_externo,fim_periodo,cancelar_ao_fim`);
+    if (!r.ok) return "n\xE3o consegui consultar";
+    const [a] = await r.json();
+    let precoAntigo = false;
+    if (a && (a.plano === "semestral" || a.plano === "anual")) {
+      const p = await banco("rpc/tem_preco_antigo", { method: "POST", body: JSON.stringify({ p_usuario: idUsuario, p_plano: a.plano }) });
+      precoAntigo = p.ok && await p.json() === true;
+    }
+    return descreverSituacao(a ?? null, precoAntigo);
+  } catch {
+    return "n\xE3o consegui consultar";
+  }
+}
 async function contaDoPedido(req) {
   const auth = req.headers.get("authorization") ?? "";
   if (!/^Bearer\s+ey/i.test(auth)) return null;
@@ -109,34 +190,29 @@ Deno.serve(async (req) => {
     if (!emailValido(email)) return json({ erro: "email_invalido" }, 400, req);
     if (!podeEnviar(conta ? `u:${conta.id}` : `ip:${ipDoPedido(req)}`)) return json({ erro: "muitas_mensagens" }, 429, req);
     if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
-    const motivo = MOTIVOS[linha(corpo.motivo, 30)] ?? MOTIVOS.outro;
+    const idMotivo = linha(corpo.motivo, 30);
+    const motivo = idMotivo in MOTIVOS_SUPORTE ? idMotivo : "outro";
     const nome = linha(corpo.nome, 80) || linha(conta?.nome, 80);
     const questao = linha(corpo.questao, 80);
-    const assunto = linha(corpo.assunto, 160) || `Orto Quest\xF5es \u2014 ${motivo}`;
+    const assunto = linha(corpo.assunto, 160) || `[Suporte] ${MOTIVOS_SUPORTE[motivo]}`;
     const ctx = corpo.contexto && typeof corpo.contexto === "object" ? corpo.contexto : {};
+    const brutos = corpo.campos && typeof corpo.campos === "object" ? corpo.campos : {};
+    const campos = Object.entries(CAMPOS).flatMap(([rotulo, aceitos]) => {
+      const valor = linha(brutos[rotulo], 80);
+      return valor && (!aceitos || aceitos.includes(valor)) ? [[rotulo, valor]] : [];
+    });
+    if (questao && !campos.some(([k]) => k === "Quest\xE3o")) campos.push(["Quest\xE3o", questao]);
+    const situacao = conta ? await situacaoDaConta(conta.id) : "Visitante, sem conta";
     const detalhes = [
-      ["Motivo", motivo],
-      ["De", nome ? `${nome} <${email}>` : email],
       ["Conta", conta ? `${conta.id}${conta.email && conta.email.toLowerCase() !== email ? ` (e-mail da conta: ${conta.email})` : ""}` : "visitante, sem conta"],
-      ...questao ? [["Quest\xE3o", questao]] : [],
+      ["Enviado em", (/* @__PURE__ */ new Date()).toLocaleString("pt-BR", { timeZone: "America/Sao_Paulo", dateStyle: "short", timeStyle: "short" }) + " (Bras\xEDlia)"],
       ["P\xE1gina", linha(ctx.pagina, 300)],
       ["Navegador", linha(ctx.navegador, 300)],
       ["Tela", linha(ctx.tela, 60)],
       ["Tema", linha(ctx.tema, 20)],
       ["Idioma e fuso", [linha(ctx.idioma, 20), linha(ctx.fuso, 60)].filter(Boolean).join(" \xB7 ")]
     ].filter(([, v]) => v);
-    const textoEmail = `${mensagem}
-
----
-${detalhes.map(([k, v]) => `${k}: ${v}`).join("\n")}
-
-Responda este e-mail para falar direto com ${email}.`;
-    const html = `<div style="font-family:system-ui,-apple-system,Segoe UI,sans-serif;font-size:15px;line-height:1.55;color:#1b1208;max-width:640px">
-<p style="margin:0 0 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#14655e;font-weight:700">Suporte do Orto Quest\xF5es \xB7 ${esc(motivo)}</p>
-<div style="white-space:pre-wrap;padding:14px 16px;border:2px solid #c9d5d1;border-radius:6px;background:#fbfaf6">${esc(mensagem)}</div>
-<table style="margin-top:14px;border-collapse:collapse;font-size:13px;color:#4a5652">${detalhes.map(([k, v]) => `<tr><td style="padding:2px 12px 2px 0;font-weight:700;vertical-align:top;white-space:nowrap">${esc(k)}</td><td style="padding:2px 0">${esc(v)}</td></tr>`).join("")}</table>
-<p style="margin-top:14px;font-size:13px;color:#4a5652">Responda este e-mail para falar direto com ${esc(email)}.</p>
-</div>`;
+    const { html, texto: textoEmail } = montarCarta({ motivo, assunto, mensagem, email, nome, campos, situacao, detalhes });
     try {
       await enviarEmail(PARA(), assunto, html, textoEmail, void 0, email);
     } catch (falha) {

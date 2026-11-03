@@ -1,5 +1,6 @@
-import { cors, json } from '../_shared/http.ts'
+import { banco, cors, json } from '../_shared/http.ts'
 import { emailConfigurado, enviarEmail } from '../_shared/email.ts'
+import { descreverSituacao, montarCarta, MOTIVOS_SUPORTE } from './carta.ts'
 
 /**
  * Suporte do site (19/10/2026): a página /contato manda a mensagem por aqui e ela chega
@@ -7,12 +8,13 @@ import { emailConfigurado, enviarEmail } from '../_shared/email.ts'
  * src/config.ts), pelo Resend, com "responder para" no e-mail de quem escreveu.
  *
  * POST, corpo JSON:
- *   motivo     id do motivo escolhido ("assinatura", "acesso", "questao", "dados", "outro")
+ *   motivo     id do motivo ("pagar", "assinatura", "acesso", "questao", "dados", "outro"; 03/11/2026)
  *   assunto    linha de assunto montada pela página (até 160 caracteres)
  *   mensagem   o texto (10 a 6000 caracteres)
  *   email      e-mail para a resposta (obrigatório para visitante; com conta, vale o da conta)
  *   nome       opcional
  *   questao    opcional, o id da questão quando veio de "Relatar erro"
+ *   campos     opcional: respostas de um toque { Plano, Pagamento, Questão } (03/11/2026)
  *   contexto   opcional: pagina, navegador, tela, tema, idioma, fuso (o que a página coleta)
  *   site       campo-isca: gente não preenche (fica escondido); robô preenche e é ignorado
  *
@@ -29,9 +31,11 @@ import { emailConfigurado, enviarEmail } from '../_shared/email.ts'
  */
 
 const PARA = () => (Deno.env.get('SUPORTE_PARA') ?? 'talesroberto23@gmail.com').trim()
-const MOTIVOS: Record<string, string> = {
-  assinatura: 'Assinatura ou cobrança', acesso: 'Acesso à conta', questao: 'Questão ou comentário',
-  dados: 'Meus dados', outro: 'Outro assunto',
+/** As respostas de um toque que a página pode mandar, com os valores aceitos. */
+const CAMPOS: Record<string, readonly string[] | null> = {
+  Plano: ['Mensal', 'Semestral', 'Anual', 'Não sei'],
+  Pagamento: ['Pix', 'Cartão', 'Não cheguei a escolher'],
+  Questão: null,
 }
 
 const JANELA_CURTA = 10 * 60_000, MAX_CURTA = 3
@@ -51,7 +55,23 @@ function podeEnviar(chave: string, agora = Date.now()): boolean {
 const texto = (v: unknown, max: number) => (typeof v === 'string' ? v : '').replace(/\r\n?/g, '\n').trim().slice(0, max)
 const linha = (v: unknown, max: number) => texto(v, max).replace(/[\n\t]+/g, ' ')
 const emailValido = (e: string) => /^[^\s@<>()",;:]+@[^\s@<>()",;:]+\.[^\s@<>()",;:]{2,}$/.test(e) && e.length <= 200
-const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;')
+
+/** A assinatura mais recente da conta, em uma linha. Se a consulta falhar, o e-mail sai assim mesmo. */
+async function situacaoDaConta(idUsuario: string): Promise<string> {
+  try {
+    const r = await banco(`assinaturas?id_usuario=eq.${encodeURIComponent(idUsuario)}&order=criada_em.desc&limit=1&select=plano,status,id_externo,fim_periodo,cancelar_ao_fim`)
+    if (!r.ok) return 'não consegui consultar'
+    const [a] = await r.json() as Array<{ plano: string; status: string; id_externo: string | null; fim_periodo: string | null; cancelar_ao_fim: boolean | null }>
+    let precoAntigo = false
+    if (a && (a.plano === 'semestral' || a.plano === 'anual')) {
+      const p = await banco('rpc/tem_preco_antigo', { method: 'POST', body: JSON.stringify({ p_usuario: idUsuario, p_plano: a.plano }) })
+      precoAntigo = p.ok && (await p.json()) === true
+    }
+    return descreverSituacao(a ?? null, precoAntigo)
+  } catch {
+    return 'não consegui consultar'
+  }
+}
 
 /** A conta de quem escreveu, se o pedido trouxe um token de sessão válido. Sem token (visitante), null. */
 async function contaDoPedido(req: Request): Promise<{ id: string; email?: string; nome?: string } | null> {
@@ -90,16 +110,22 @@ Deno.serve(async (req) => {
     if (!podeEnviar(conta ? `u:${conta.id}` : `ip:${ipDoPedido(req)}`)) return json({ erro: 'muitas_mensagens' }, 429, req)
     if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
 
-    const motivo = MOTIVOS[linha(corpo.motivo, 30)] ?? MOTIVOS.outro
+    const idMotivo = linha(corpo.motivo, 30)
+    const motivo = idMotivo in MOTIVOS_SUPORTE ? idMotivo : 'outro'
     const nome = linha(corpo.nome, 80) || linha(conta?.nome, 80)
     const questao = linha(corpo.questao, 80)
-    const assunto = linha(corpo.assunto, 160) || `Orto Questões — ${motivo}`
+    const assunto = linha(corpo.assunto, 160) || `[Suporte] ${MOTIVOS_SUPORTE[motivo]}`
     const ctx = (corpo.contexto && typeof corpo.contexto === 'object' ? corpo.contexto : {}) as Record<string, unknown>
+    const brutos = (corpo.campos && typeof corpo.campos === 'object' ? corpo.campos : {}) as Record<string, unknown>
+    const campos = Object.entries(CAMPOS).flatMap(([rotulo, aceitos]): Array<[string, string]> => {
+      const valor = linha(brutos[rotulo], 80)
+      return valor && (!aceitos || aceitos.includes(valor)) ? [[rotulo, valor]] : []
+    })
+    if (questao && !campos.some(([k]) => k === 'Questão')) campos.push(['Questão', questao])
+    const situacao = conta ? await situacaoDaConta(conta.id) : 'Visitante, sem conta'
     const detalhes: Array<[string, string]> = [
-      ['Motivo', motivo],
-      ['De', nome ? `${nome} <${email}>` : email],
       ['Conta', conta ? `${conta.id}${conta.email && conta.email.toLowerCase() !== email ? ` (e-mail da conta: ${conta.email})` : ''}` : 'visitante, sem conta'],
-      ...(questao ? [['Questão', questao] as [string, string]] : []),
+      ['Enviado em', new Date().toLocaleString('pt-BR', { timeZone: 'America/Sao_Paulo', dateStyle: 'short', timeStyle: 'short' }) + ' (Brasília)'],
       ['Página', linha(ctx.pagina, 300)],
       ['Navegador', linha(ctx.navegador, 300)],
       ['Tela', linha(ctx.tela, 60)],
@@ -107,13 +133,7 @@ Deno.serve(async (req) => {
       ['Idioma e fuso', [linha(ctx.idioma, 20), linha(ctx.fuso, 60)].filter(Boolean).join(' · ')],
     ].filter(([, v]) => v) as Array<[string, string]>
 
-    const textoEmail = `${mensagem}\n\n---\n${detalhes.map(([k, v]) => `${k}: ${v}`).join('\n')}\n\nResponda este e-mail para falar direto com ${email}.`
-    const html = `<div style="font-family:system-ui,-apple-system,Segoe UI,sans-serif;font-size:15px;line-height:1.55;color:#1b1208;max-width:640px">
-<p style="margin:0 0 6px;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#14655e;font-weight:700">Suporte do Orto Questões · ${esc(motivo)}</p>
-<div style="white-space:pre-wrap;padding:14px 16px;border:2px solid #c9d5d1;border-radius:6px;background:#fbfaf6">${esc(mensagem)}</div>
-<table style="margin-top:14px;border-collapse:collapse;font-size:13px;color:#4a5652">${detalhes.map(([k, v]) => `<tr><td style="padding:2px 12px 2px 0;font-weight:700;vertical-align:top;white-space:nowrap">${esc(k)}</td><td style="padding:2px 0">${esc(v)}</td></tr>`).join('')}</table>
-<p style="margin-top:14px;font-size:13px;color:#4a5652">Responda este e-mail para falar direto com ${esc(email)}.</p>
-</div>`
+    const { html, texto: textoEmail } = montarCarta({ motivo, assunto, mensagem, email, nome, campos, situacao, detalhes })
 
     try {
       await enviarEmail(PARA(), assunto, html, textoEmail, undefined, email)
