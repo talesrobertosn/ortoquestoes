@@ -329,7 +329,7 @@ O Green não traz um protocolo de imobilização. Ele lista o conservador entre 
 conceito: No estágio I, o Campbell indica imobilização e anti-inflamatório como primeira conduta, tratando como estágio II se não houver melhora; a imobilização exige 4 meses ou mais e tem resultado incerto.
 como: O TARO 2006 afirmou, para julgar certo ou errado, que no estágio I a imobilização por cerca de três meses tem bom resultado.
 armadilha: Dar como certa uma afirmação de resultado bom e previsível: os livros falam em primeira conduta, mas com resultado incerto e imobilização longa.
-alerta: `mao-0642` está sem gabarito oficial. O Campbell sustenta a imobilização como tratamento inicial do estágio I, mas diz que ela exige 4 meses ou mais e tem resultado incerto; o Green cita estudos em que a conduta conservadora não difere da cirúrgica e outros com deterioração previsível. Os livros não garantem bom resultado em três meses, o que pesa para "Errado".
+alerta: `mao-0642` está sem gabarito oficial. O Campbell sustenta a imobilização como tratamento inicial do estágio I, mas diz que ela exige 4 meses ou mais e tem resultado incerto; o Green cita estudos em que a conduta conservadora não difere da cirúrgica e outros com deterioração previsível. Os livros não garantem bom resultado em três meses; o gabarito da bibliografia da banca (Campbell, 8ª ed.) marca "Certo", e o site segue essa resposta, com a ressalva de que a edição atual é mais cautelosa.
 !fim
 
 # Nivelamento articular: encurtar o rádio {radar=confirmado}
@@ -478,7 +478,7 @@ alerta: Os livros citam GRANER só nas referências; a imagem de `mao-0833` não
 conceito: Com ulna minus, os estágios I a IIIA são tratados por nivelamento (encurtamento do rádio); silicone foi abandonado; no IV, artrodese total ou carpectomia.
 como: O TARO 2007 pediu a associação correta entre estágio e tratamento.
 armadilha: Aceitar a prótese de silicone no II ou a artrodese STT no IV.
-alerta: `mao-0604` está sem gabarito oficial; o Green sustenta a alternativa A (nivelamento no I, II e IIIA com ulna minus sintomático), embora o Campbell comece o estágio I com imobilização.
+alerta: `mao-0604` está sem gabarito oficial; o gabarito da bibliografia da banca (Skeletal Trauma) marca a ressecção do semilunar no estágio III, resposta que o site segue; o Campbell chama essa ressecção de controversa, e o Green sustentaria o nivelamento do rádio no estágio I com ulna minus.
 !fim
 
 # Criança, PREISER e capitato {radar=fundamento}
