@@ -427,7 +427,7 @@ O Sizínio é franco: **não há consenso sobre o tempo de uso** do bisfosfonato
 conceito: O efeito do bisfosfonato persiste depois da suspensão (fica na hidroxiapatita), ao contrário do denosumabe; a pausa é decidida por reavaliação após anos de uso, e não há consenso sobre a duração.
 como: O TARO 2006 afirmou, em certo ou errado, que a massa óssea se mantém por até um ano após suspender o alendronato, o que permitiria terapia cíclica de longo prazo.
 armadilha: Transferir para o alendronato o esquema cíclico e curto ou o rebote do denosumabe.
-alerta: Questão sem gabarito em `osteometabolicas-0091`; nenhuma fonte local traz o prazo de um ano nem a terapia cíclica. O que os livros sustentam (efeito duradouro, pausa reavaliada após 3 a 5 anos, Rockwood caps. 4 e 55) aponta para Errado, com a ressalva de que a resposta é inferida.
+alerta: Questão sem gabarito oficial em `osteometabolicas-0091`; o gabarito da bibliografia da banca (artigo do JBJS de 2001) marca Certo, e o site segue essa resposta, apoiada no efeito residual do bisfosfonato (Rockwood, caps. 4 e 55). Nenhuma fonte local traz o prazo de um ano nem a expressão terapia cíclica, e o Rockwood manda reavaliar a pausa só após 3 a 5 anos.
 !fim
 
 ## Bisfosfonato e consolidação
