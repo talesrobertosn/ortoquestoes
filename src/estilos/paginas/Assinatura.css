@@ -646,13 +646,18 @@
 /* Atalho para o suporte (03/11/2026): logo abaixo da caixa verde dos planos, no canto direito. */
 .vd-suporte {
   display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 0.5rem 0.85rem;
-  /* A página separa as seções com um vão grande (.vd gap): o atalho fica colado na caixa de cima. */
-  margin: calc(0.9rem - clamp(4rem, 9vw, 7rem)) 0 0; color: var(--texto-2); font-size: var(--corpo-menor); text-align: right;
+  margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); text-align: right;
 }
 .vd-suporte__botao { gap: 0.45rem; min-height: 40px; padding: 0.45rem 0.95rem; border: 1px solid var(--traco); background: var(--superficie); color: var(--texto); font-weight: 600; }
 .vd-suporte__botao:hover { border-color: var(--verdete); color: var(--verdete-tinta); }
 .vd-suporte__botao svg { color: var(--verdete); }
 .ck__suporte { margin: 0; font-size: var(--corpo-menor); color: var(--texto-2); }
+/* A página separa as seções com um vão grande (.vd gap): o bloco de baixo dos planos fica colado na caixa verde. */
+.vd-depois-planos { display: grid; gap: 1rem; margin-top: calc(1.1rem - clamp(4rem, 9vw, 7rem)); }
+.vd-final + .vd-suporte { margin-top: calc(0.9rem - clamp(4rem, 9vw, 7rem)); }
+.vd-depois-planos .vd-abertura { justify-self: center; width: min(100%, 46rem); }
 @media (max-width: 44rem) {
-  .vd-suporte { margin-top: calc(0.75rem - 3.75rem); justify-content: center; text-align: center; }
+  .vd-depois-planos { margin-top: calc(0.9rem - 3.75rem); }
+  .vd-final + .vd-suporte { margin-top: calc(0.75rem - 3.75rem); }
+  .vd-suporte { justify-content: center; text-align: center; }
 }

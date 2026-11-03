@@ -107,6 +107,16 @@ try {
     assert.match(await suporte.getAttribute('href'), /contato\?assunto=assinatura$/, 'Atalho do suporte sem o assunto')
     assert.equal(await pagina.locator('.vd-heroi .vd-suporte').count(), 0, 'O atalho do suporte deveria ficar fora da caixa verde')
     assert.equal(await pagina.locator('.vd-suporte--final').count(), 1, 'Atalho do suporte ausente no fim da página')
+    // Preço de inauguração: fora da caixa verde, logo acima do atalho do suporte.
+    const inauguracao = pagina.locator('.vd-depois-planos .vd-abertura:not(.vd-abertura--guardado)')
+    assert.match(await inauguracao.innerText(), /preço fica guardado/, 'Aviso de inauguração ausente')
+    assert.equal(await pagina.locator('.vd-heroi .vd-abertura').count(), 0, 'O aviso de inauguração deveria ficar fora da caixa verde')
+    const [yAviso, ySuporte] = [(await inauguracao.boundingBox()).y, (await pagina.locator('.vd-suporte--topo').boundingBox()).y]
+    assert.ok(yAviso < ySuporte, 'O aviso de inauguração deveria vir acima do suporte')
+    if (process.env.PRINTS) {
+      await inauguracao.scrollIntoViewIfNeeded(); await pagina.waitForTimeout(1200)
+      await pagina.screenshot({ path: join(process.env.PRINTS, 'inauguracao-computador.png') })
+    }
     if (process.env.PRINTS) {
       await suporte.scrollIntoViewIfNeeded(); await pagina.waitForTimeout(1500)
       await pagina.screenshot({ path: join(process.env.PRINTS, 'suporte-computador.png') })
@@ -213,6 +223,7 @@ try {
     assert.equal(await anual.locator('.vd-plano__abertura').count(), 0, 'Selo de preço antigo no plano que a pessoa não pagava')
     const aviso = pagina.locator('.vd-abertura--guardado')
     assert.ok((await aviso.innerText()).includes('Os preços subiram, o seu não'), 'Aviso de preço guardado ausente')
+    assert.equal(await pagina.locator('.vd-abertura:not(.vd-abertura--guardado)').count(), 0, 'Quem tem preço guardado não vê o aviso de inauguração')
     assert.match(await aviso.innerText(), /R\$\s?179,90/, 'Aviso sem o valor guardado')
     assert.ok((await aviso.innerText()).includes('nunca muda'), 'Aviso sem a promessa de que o preço não muda')
     // PRINTS=pasta salva a tela para conferência visual.
@@ -253,7 +264,7 @@ try {
       assert.equal((await pizza.innerText()).trim(), 'Custa menos que uma pizza por mês')
       assert.ok((await pizza.boundingBox()).height < 30, 'A pizza quebrou em duas linhas no celular')
       if (process.env.PRINTS) {
-        await pagina.locator('.vd-suporte--topo').scrollIntoViewIfNeeded(); await pagina.evaluate(() => scrollBy(0, 200))
+        await pagina.locator('.vd-depois-planos').scrollIntoViewIfNeeded(); await pagina.evaluate(() => scrollBy(0, 120))
         await pagina.screenshot({ path: join(process.env.PRINTS, 'suporte-celular.png') })
       }
     }

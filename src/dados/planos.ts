@@ -39,10 +39,12 @@ export const PLANOS = montarPlanos(SEMESTRAL, ANUAL)
 export const PLANOS_PRECO_ANTIGO = montarPlanos(SEMESTRAL_ANTIGO, ANUAL_ANTIGO)
 
 /**
- * Preço de abertura (Tales, 31/10/2026): o aviso de que o semestral e o anual vão subir.
- * Desligado no reajuste.
+ * Preço de inauguração (Tales, 31/10/2026; religado em 03/11/2026 com os valores novos): o aviso,
+ * abaixo dos planos, de que estes preços ainda são de inauguração e que quem assina agora guarda
+ * o valor enquanto renovar. Promessa a cumprir no próximo reajuste: quem já assina mantém o preço
+ * do plano que paga (como em PLANOS_PRECO_ANTIGO e na função tem_preco_antigo).
  */
-export const PRECO_DE_ABERTURA = false
+export const PRECO_DE_ABERTURA = true
 
 export const real = (valor: number) => valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
 

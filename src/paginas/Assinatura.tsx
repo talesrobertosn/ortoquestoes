@@ -260,7 +260,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         </aside>
 
         {mostrarPlanos && <div className="vd-heroi__planos" id="planos">
-          {avisoPrecoGuardado || (PRECO_DE_ABERTURA && pagamentosHabilitados && <AvisoAbertura />)}
+          {avisoPrecoGuardado}
           <CartoesPlanos local="topo" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} planosAntigos={planosAntigos} />
           <ul className="vd-confianca" aria-label="Pagamento e garantia">
             <li className="vd-confianca__pix"><IconePix tamanho={16} /> <span><strong>Pix</strong> à vista, liberado assim que cai</span></li>
@@ -272,7 +272,12 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           {mensagem && !planoEscolhido && <p role="status" className="vd-aviso">{mensagem}</p>}
         </div>}
       </section>}
-      {!comAcessoPago && mostrarPlanos && <AjudaSuporte local="topo" />}
+      {/* Logo abaixo da caixa verde (03/11/2026): o bilhete de preço de inauguração, só para quem ainda
+          não tem preço guardado, e o atalho para o suporte. */}
+      {!comAcessoPago && mostrarPlanos && <div className="vd-depois-planos">
+        {!avisoPrecoGuardado && PRECO_DE_ABERTURA && pagamentosHabilitados && <AvisoAbertura />}
+        <AjudaSuporte local="topo" />
+      </div>}
 
       {comAcessoPago && (
         <section className="vd-ativo" aria-labelledby="vd-titulo-minha">
