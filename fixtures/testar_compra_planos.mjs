@@ -100,6 +100,7 @@ try {
     // Sem o preço por dia nos cartões (Tales, 03/11/2026: não converte); fica o preço por mês e o total do período.
     assert.doesNotMatch(await topo.innerText(), /R\$\s?[\d,]+ por dia/, 'Preço por dia nos cartões')
     assert.ok((await destaque.innerText()).includes('Prepare-se para o TEOT por menos que uma pizza por mês'), 'Mensal sem a pizza no computador')
+    assert.ok((await destaque.innerText()).includes('Mudou de ideia? Em até 7 dias, você pede o reembolso com um só clique.'), 'Mensal sem a garantia')
     assert.ok((await pagina.locator('.vd-heroi').innerText()).includes('7 dias de garantia'), 'Garantia fora do topo')
     // Nenhum total de questões: nem o da contagem das provas, nem o do acervo.
     const texto = await pagina.locator('main, body').first().innerText()
