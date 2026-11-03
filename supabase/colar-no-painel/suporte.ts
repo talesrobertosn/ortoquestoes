@@ -29,7 +29,7 @@ var TIPOS_AUTOMATICOS = [...TIPOS_AUTOMATICOS_NOVOS, ...TIPOS_CAMPANHAS_DIARIAS]
 
 // supabase/functions/_shared/email.ts
 var emailConfigurado = () => !!Deno.env.get("RESEND_API_KEY") && !!Deno.env.get("EMAIL_REMETENTE");
-async function enviarEmail(para, assunto, html, texto2, descadastro, responderPara) {
+async function enviarEmail(para, assunto, html, texto2, descadastro, responderPara, anexos) {
   const chave = Deno.env.get("RESEND_API_KEY"), remetente = Deno.env.get("EMAIL_REMETENTE");
   const responder = responderPara?.trim() || Deno.env.get("EMAIL_RESPONDER_PARA")?.trim();
   if (!chave || !remetente) throw new Error("email_nao_configurado");
@@ -43,6 +43,7 @@ async function enviarEmail(para, assunto, html, texto2, descadastro, responderPa
       html,
       text: texto2,
       ...responder ? { reply_to: responder } : {},
+      ...anexos?.length ? { attachments: anexos } : {},
       ...descadastro ? { headers: { "List-Unsubscribe": [`<${descadastro}>`, ...responder ? [`<mailto:${responder}?subject=parar>`] : []].join(", ") } } : {}
     })
   });
@@ -61,11 +62,34 @@ var MOTIVOS_SUPORTE = {
   dados: "Meus dados",
   outro: "Sugest\xE3o ou outro assunto"
 };
+var MAX_IMAGENS = 3;
+var MAX_BYTES_IMAGEM = 2e6;
+var MAX_BYTES_TOTAL = 5e6;
+var TIPOS_IMAGEM = { "image/jpeg": "jpg", "image/png": "png", "image/webp": "webp", "image/gif": "gif" };
+function conferirAnexos(bruto) {
+  if (bruto === void 0 || bruto === null) return { anexos: [] };
+  if (!Array.isArray(bruto)) return { anexos: [], erro: "anexo_invalido" };
+  if (bruto.length > MAX_IMAGENS) return { anexos: [], erro: "anexos_demais" };
+  const anexos = [];
+  let total = 0;
+  for (const [i, item] of bruto.entries()) {
+    const { nome, tipo, base64 } = item ?? {};
+    const extensao = typeof tipo === "string" ? TIPOS_IMAGEM[tipo] : void 0;
+    if (!extensao || typeof base64 !== "string" || !/^[A-Za-z0-9+/]+={0,2}$/.test(base64)) return { anexos: [], erro: "anexo_invalido" };
+    const bytes = Math.floor(base64.length * 3 / 4) - (base64.endsWith("==") ? 2 : base64.endsWith("=") ? 1 : 0);
+    total += bytes;
+    if (bytes > MAX_BYTES_IMAGEM || total > MAX_BYTES_TOTAL) return { anexos: [], erro: "anexo_grande" };
+    const base = (typeof nome === "string" ? nome : "").replace(/\.[a-z0-9]{1,5}$/i, "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\w-]+/g, "-").replace(/^-+|-+$/g, "").slice(0, 40);
+    anexos.push({ filename: `${base || `imagem-${i + 1}`}.${extensao}`, content: base64 });
+  }
+  return { anexos };
+}
 var esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 function montarCarta(d) {
   const titulo = MOTIVOS_SUPORTE[d.motivo] ?? MOTIVOS_SUPORTE.outro;
   const quem = d.nome ? `${d.nome} \xB7 ${d.email}` : d.email;
-  const fichas = [...d.campos, ["Conta", d.situacao]];
+  const imagens = d.imagens ?? [];
+  const fichas = [...d.campos, ["Conta", d.situacao], ...imagens.length ? [["Anexos", imagens.length === 1 ? "1 imagem" : `${imagens.length} imagens`]] : []];
   const responder = `mailto:${encodeURIComponent(d.email)}?subject=${encodeURIComponent(`Re: ${d.assunto}`)}`;
   const primeiroNome2 = d.nome.trim().split(/\s+/)[0] ?? "";
   const html = `<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>${esc(d.assunto)}</title></head>
@@ -188,6 +212,8 @@ Deno.serve(async (req) => {
     const conta = await contaDoPedido(req);
     const email = (linha(corpo.email, 200) || conta?.email || "").toLowerCase();
     if (!emailValido(email)) return json({ erro: "email_invalido" }, 400, req);
+    const { anexos, erro: erroAnexo } = conferirAnexos(corpo.imagens);
+    if (erroAnexo) return json({ erro: erroAnexo }, 400, req);
     if (!podeEnviar(conta ? `u:${conta.id}` : `ip:${ipDoPedido(req)}`)) return json({ erro: "muitas_mensagens" }, 429, req);
     if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
     const idMotivo = linha(corpo.motivo, 30);
@@ -212,9 +238,9 @@ Deno.serve(async (req) => {
       ["Tema", linha(ctx.tema, 20)],
       ["Idioma e fuso", [linha(ctx.idioma, 20), linha(ctx.fuso, 60)].filter(Boolean).join(" \xB7 ")]
     ].filter(([, v]) => v);
-    const { html, texto: textoEmail } = montarCarta({ motivo, assunto, mensagem, email, nome, campos, situacao, detalhes });
+    const { html, texto: textoEmail } = montarCarta({ motivo, assunto, mensagem, email, nome, campos, situacao, detalhes, imagens: anexos.map((a) => a.filename) });
     try {
-      await enviarEmail(PARA(), assunto, html, textoEmail, void 0, email);
+      await enviarEmail(PARA(), assunto, html, textoEmail, void 0, email, anexos);
     } catch (falha) {
       console.error("suporte: envio falhou", String(falha));
       return json({ erro: "envio_falhou" }, 502, req);

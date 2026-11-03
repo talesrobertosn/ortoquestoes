@@ -63,7 +63,7 @@ var TIPOS_AUTOMATICOS = [...TIPOS_AUTOMATICOS_NOVOS, ...TIPOS_CAMPANHAS_DIARIAS]
 
 // supabase/functions/_shared/email.ts
 var emailConfigurado = () => !!Deno.env.get("RESEND_API_KEY") && !!Deno.env.get("EMAIL_REMETENTE");
-async function enviarEmail(para, assunto, html, texto, descadastro, responderPara) {
+async function enviarEmail(para, assunto, html, texto, descadastro, responderPara, anexos) {
   const chave = Deno.env.get("RESEND_API_KEY"), remetente = Deno.env.get("EMAIL_REMETENTE");
   const responder = responderPara?.trim() || Deno.env.get("EMAIL_RESPONDER_PARA")?.trim();
   if (!chave || !remetente) throw new Error("email_nao_configurado");
@@ -77,6 +77,7 @@ async function enviarEmail(para, assunto, html, texto, descadastro, responderPar
       html,
       text: texto,
       ...responder ? { reply_to: responder } : {},
+      ...anexos?.length ? { attachments: anexos } : {},
       ...descadastro ? { headers: { "List-Unsubscribe": [`<${descadastro}>`, ...responder ? [`<mailto:${responder}?subject=parar>`] : []].join(", ") } } : {}
     })
   });

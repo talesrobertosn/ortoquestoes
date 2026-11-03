@@ -57,8 +57,26 @@ try {
   for (const trecho of ['Não consegui assinar ou pagar', 'Maria Souza · maria@exemplo.com', '<b>Plano:</b> Anual', '<b>Pagamento:</b> Pix', '<b>Conta:</b> Sem assinatura', 'Responder a Maria', 'mailto:maria%40exemplo.com?subject=Re%3A%20']) assert.ok(carta.html.includes(trecho), trecho)
   assert.ok(carta.html.includes('&lt;Gerar Pix&gt;') && !carta.html.includes('<Gerar Pix>'), 'Mensagem sem escapar')
   assert.ok(carta.texto.includes('Plano: Anual') && carta.texto.includes('Cliquei em <Gerar Pix>'))
+
+  // Imagens: reduzidas na página, conferidas na função, com os mesmos limites.
+  assert.equal(s.MAX_IMAGENS, c.MAX_IMAGENS)
+  assert.deepEqual(s.medidaReduzida(3200, 1600), { largura: 1600, altura: 800 })
+  assert.deepEqual(s.medidaReduzida(1170, 2532), { largura: 739, altura: 1600 })
+  assert.deepEqual(s.medidaReduzida(800, 600), { largura: 800, altura: 600 })
+  const png = Buffer.from('imagem de teste').toString('base64')
+  assert.deepEqual(c.conferirAnexos(undefined), { anexos: [] })
+  assert.deepEqual(c.conferirAnexos([{ nome: 'Captura de Tela 2026-11-03 às 10.21.png', tipo: 'image/png', base64: png }]).anexos, [{ filename: 'Captura-de-Tela-2026-11-03-as-10-21.png', content: png }])
+  assert.equal(c.conferirAnexos([{ nome: '', tipo: 'image/jpeg', base64: png }]).anexos[0].filename, 'imagem-1.jpg')
+  assert.equal(c.conferirAnexos([{ nome: 'x.pdf', tipo: 'application/pdf', base64: png }]).erro, 'anexo_invalido', 'Só imagem passa')
+  assert.equal(c.conferirAnexos([{ nome: 'x', tipo: 'image/png', base64: 'não é base64!' }]).erro, 'anexo_invalido')
+  assert.equal(c.conferirAnexos(Array(4).fill({ nome: 'x', tipo: 'image/png', base64: png })).erro, 'anexos_demais')
+  assert.equal(c.conferirAnexos([{ nome: 'x', tipo: 'image/png', base64: 'A'.repeat(2_700_000) }]).erro, 'anexo_grande')
+  assert.equal(c.conferirAnexos([1, 2, 3].map(() => ({ nome: 'x', tipo: 'image/png', base64: 'A'.repeat(2_600_000) }))).erro, 'anexo_grande', 'Total acima de 5 MB')
+  for (const codigo of ['anexos_demais', 'anexo_grande', 'anexo_invalido']) assert.ok(s.AVISOS_IMAGEM[codigo], codigo)
+  const comImagens = c.montarCarta({ motivo: 'pagar', assunto: 'x', mensagem: 'Teste com print.', email: 'a@b.com', nome: '', campos: [], situacao: 'Sem assinatura', detalhes: [], imagens: ['print.png', 'erro.png'] })
+  assert.ok(comImagens.html.includes('<b>Anexos:</b> 2 imagens') && comImagens.texto.includes('Anexos: 2 imagens'))
   if (process.env.PRINTS) await writeFile(join(process.env.PRINTS, 'email-suporte.html'), carta.html)
-  console.log(`suporte: ${s.MOTIVOS.length} motivos, perguntas de um toque, situação da conta e e-mail conferidos`)
+  console.log(`suporte: ${s.MOTIVOS.length} motivos, perguntas de um toque, situação da conta, imagens e e-mail conferidos`)
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }
