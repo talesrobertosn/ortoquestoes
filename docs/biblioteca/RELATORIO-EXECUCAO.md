@@ -243,7 +243,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 869 | CRIAR três temas: cifose e doença de SCHEUERMANN (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 10; Campbell's Operative Orthopaedics, 15ª ed., cap. 41), tendões fibulares e outras tendinopatias (Campbell 15, caps. 94, 88 e 53; HEBERT) e imagem do pé e tornozelo (Campbell 15, cap. 93 e outros; Rockwood and Green, caps. 65 a 67; HEBERT), mais 17 miniaulas da imagem do joelho. |
 | 870 | 42 miniaulas dos temas publicados no PR 869: cifose e doença de SCHEUERMANN (17), tendões fibulares e outras tendinopatias (13) e imagem do pé e tornozelo (12). Imagens das questões de tendões abertas e descritas; nenhuma contraria o gabarito. |
 | 871 | CRIAR três temas: pseudartrose congênita da tíbia e deformidades da perna (Campbell's Operative Orthopaedics, 15ª ed., cap. 31; Tachdjian's Pediatric Orthopaedics, 6ª ed., caps. 18, 20 e 21; HEBERT), rigidez do cotovelo (Campbell 15, caps. 15, 51 e 57; Green's Operative Hand Surgery, 7ª ed., cap. 24; Rockwood and Green) e entorse e instabilidade lateral do tornozelo (Campbell 15, caps. 55, 94 e 59; Rockwood and Green; HEBERT). As miniaulas seguem no próximo PR. |
-| (este PR) | 32 miniaulas dos temas do PR 871: entorse do tornozelo (15), pseudartrose congênita da tíbia (9) e rigidez do cotovelo (8). Alerta de `ombro-cotovelo-0491` alinhado ao gabarito da bibliografia da banca. |
+| 872 | 32 miniaulas dos temas do PR 871: entorse do tornozelo (15), pseudartrose congênita da tíbia (9) e rigidez do cotovelo (8). Alerta de `ombro-cotovelo-0491` alinhado ao gabarito da bibliografia da banca. |
+| (este PR) | CRIAR dois temas: fraturas do retropé, mediopé e antepé (Rockwood and Green's Fractures in Adults, 10ª ed., caps. 67 e 68; Campbell's Operative Orthopaedics, 15ª ed., cap. 93), com 3 miniaulas, e lesões osteocondrais do tálus (Campbell 15, caps. 34, 94 e 55; Tachdjian; Rockwood and Green; HEBERT). |
 
 ## Próximo
 
