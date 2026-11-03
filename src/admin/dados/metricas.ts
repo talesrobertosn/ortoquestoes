@@ -72,7 +72,7 @@ export const METRICAS = {
     nome: 'Receita confirmada', pergunta: 'Quanto entrou de fato no período?', unidade: 'brl',
     numerador: 'Cobranças pagas gravadas no banco (Pix pelo valor confirmado; a última cobrança do cartão pelo valor contratado)',
     janela: FUSO, fonte: 'cobrancas_admin + listar_assinaturas_admin (receita.ts › cobrancas, estimada = false)', qualidade: 'confirmado',
-    testes: 'Excluídas (contasTeste.ts)', deduplicacao: 'Por cobrança; reembolsadas fora',
+    testes: 'Excluídas (contas de teste e de administrador, contasTeste.ts)', deduplicacao: 'Por cobrança; reembolsadas fora',
     latencia: 'Até o webhook do Mercado Pago chegar', comparavel: 'Sim, com os N dias anteriores', bom: 'sobe',
   },
   receitaReconstruida: {

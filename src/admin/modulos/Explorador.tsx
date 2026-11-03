@@ -47,7 +47,7 @@ export default function Explorador() {
           <span style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
             {u.administrador && <Selo solido>Admin</Selo>}
             {u.plano_vigente && <Selo tom="ok">{rotuloPlano(u.plano_vigente)}</Selo>}
-            {s && viuPlanos(s) && !u.plano_vigente && <Selo tom={viuPlanos(s, PLANOS_RECENTE_DIAS) ? 'aviso' : undefined}>{textoPlanos(s)}</Selo>}
+            {s && viuPlanos(s) && !u.plano_vigente && !u.administrador && <Selo tom={viuPlanos(s, PLANOS_RECENTE_DIAS) ? 'aviso' : undefined}>{textoPlanos(s)}</Selo>}
           </span>
         </span>
       </span>
