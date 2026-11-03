@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-02",
+ "geradoEm": "2026-11-03",
  "capitulos": [
   {
    "id": "ao-principios-osteossintese",
@@ -3019,6 +3019,120 @@
    ]
   },
   {
+   "id": "campbell15-tcg",
+   "versao": 1,
+   "titulo": "Tumor de células gigantes",
+   "especialidade": "tumores",
+   "livro": "Campbell's Operative Orthopaedics",
+   "edicao": "15ª edição (2026), com o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição",
+   "capitulo": "Capítulo 28 · Aggressive Benign Tumors of Bone",
+   "resumo": "Tumor benigno localmente agressivo de adulto jovem (20 a 40 anos, leve predomínio feminino, 5% das neoplasias ósseas), lesão lítica pura e excêntrica na epífise do esqueleto maduro encostada no subcondral, sem rima esclerótica nem matriz; fêmur distal, tíbia proximal e rádio distal (o mais agressivo); sacro é o local típico na coluna (benigno mais prevalente do sacro, excêntrico, ao contrário do cordoma) e o corpo vertebral é o sítio vertebral; células gigantes tipo osteoclasto com núcleos idênticos aos das mononucleares estromais; diferencial com tumor marrom (PTH), condroblastoma e condrossarcoma de células claras; ENNEKING 3 (agressivo) e CAMPANACCI I a III; curetagem estendida (janela grande, broca, adjuvante) e cimento; ressecção em bloco no estágio 3 e no rádio distal agressivo; denosumabe (anti-RANKL) nos irressecáveis, com rebote; metástase pulmonar benigna em cerca de 3%, transformação maligna em até 10%, ligada à radioterapia.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-tem-o-tumor-de-celulas-gigantes",
+     "titulo": "Quem tem o tumor de células gigantes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "onde-nasce-a-epifise-do-esqueleto-maduro",
+     "titulo": "Onde nasce: a epífise do esqueleto maduro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "clinica-e-imagem",
+     "titulo": "Clínica e imagem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "estadiamento-enneking-e-campanacci",
+     "titulo": "Estadiamento: ENNEKING e CAMPANACCI",
+     "radar": "confirmado"
+    },
+    {
+     "id": "histologia-a-celula-gigante-tipo-osteoclasto",
+     "titulo": "Histologia: a célula gigante tipo osteoclasto",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diagnostico-diferencial-e-laboratorio",
+     "titulo": "Diagnóstico diferencial e laboratório",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-curetagem-estendida-e-cimento",
+     "titulo": "Tratamento: curetagem estendida e cimento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "resseccao-e-reconstrucao",
+     "titulo": "Ressecção e reconstrução",
+     "radar": "clinico"
+    },
+    {
+     "id": "denosumabe-bisfosfonatos-radioterapia-e-emboliza",
+     "titulo": "Denosumabe, bisfosfonatos, radioterapia e embolização",
+     "radar": "confirmado"
+    },
+    {
+     "id": "recidiva-e-seguimento",
+     "titulo": "Recidiva e seguimento",
+     "radar": "clinico"
+    },
+    {
+     "id": "metastase-pulmonar-benigna-e-transformacao-malig",
+     "titulo": "Metástase pulmonar benigna e transformação maligna",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sacro-e-coluna",
+     "titulo": "Sacro e coluna",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "tumores-0241",
+    "tumores-0107",
+    "tumores-0315",
+    "tumores-0339",
+    "tumores-0085",
+    "tumores-0128",
+    "tumores-0065",
+    "tumores-0070",
+    "tumores-0309",
+    "tumores-0067",
+    "tumores-0368",
+    "tumores-0290",
+    "tumores-0268",
+    "tumores-0066",
+    "tumores-0118",
+    "tumores-0068",
+    "tumores-0014",
+    "tumores-0299",
+    "tumores-0063",
+    "tumores-0308",
+    "tumores-0022",
+    "tumores-0352",
+    "tumores-0003",
+    "tumores-0191"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Tumor de células gigantes"
+   ]
+  },
+  {
    "id": "green-exame-mao-punho",
    "versao": 1,
    "titulo": "Exame físico da mão e do punho",
@@ -3166,6 +3280,157 @@
    "treino": [],
    "subtemas": [
     "Exame físico da mão e punho"
+   ]
+  },
+  {
+   "id": "green-nervos-perifericos",
+   "versao": 1,
+   "titulo": "Lesões de nervos periféricos",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 67 e 73)",
+   "capitulo": "Capítulo 30 · Nerve Injury and Repair",
+   "resumo": "Endoneuro envolve a fibra, perineuro o fascículo (barreira de difusão) e epineuro o tronco (60% a 85% da área); SEDDON (neurapraxia, axonotmese, neurotmese) e SUNDERLAND (I mielina, II axônio, III endoneuro, IV perineuro, V tronco); degeneração walleriana distal com pico de receptividade entre 1 e 3 semanas; anidrose igual ou pouco maior que a área sensitiva; TINEL que avança indica regeneração (II e III); fibrilações após 2 a 4 semanas; reparo primário sem tensão, enxerto quando falta 1 cm ou mais, condutos até 3 cm; OBERLIN (fascículo posteromedial do ulnar para o bíceps), LEECHAVENGVONGS (cabeça longa do tríceps para a divisão anterior do axilar), MACKINNON (FDS para ERCC e FRC para interósseo posterior); idade e atraso pesam no resultado; MRC M0 a M5 e S0 a S4.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-nervo-por-dentro-fibra-fasciculo-e-tronco",
+     "titulo": "O nervo por dentro: fibra, fascículo e tronco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "seddon-e-sunderland-o-que-foi-rompido",
+     "titulo": "SEDDON e SUNDERLAND: o que foi rompido",
+     "radar": "confirmado"
+    },
+    {
+     "id": "degeneracao-walleriana-e-regeneracao",
+     "titulo": "Degeneração walleriana e regeneração",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-exame-do-nervo-lesado-sensibilidade-simpatico-",
+     "titulo": "O exame do nervo lesado: sensibilidade, simpático e TINEL",
+     "radar": "confirmado"
+    },
+    {
+     "id": "eletroneuromiografia-e-imagem",
+     "titulo": "Eletroneuromiografia e imagem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quando-operar",
+     "titulo": "Quando operar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-sutura-epineural-perineural-tensao-e-cola",
+     "titulo": "A sutura: epineural, perineural, tensão e cola",
+     "radar": "confirmado"
+    },
+    {
+     "id": "enxertos-condutos-e-aloenxertos",
+     "titulo": "Enxertos, condutos e aloenxertos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "transferencias-distais-nervo-ou-tendao",
+     "titulo": "Transferências distais: nervo ou tendão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "plexo-braquial-prioridades-e-transferencias",
+     "titulo": "Plexo braquial: prioridades e transferências",
+     "radar": "confirmado"
+    },
+    {
+     "id": "recuperacao-e-prognostico",
+     "titulo": "Recuperação e prognóstico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quadros-de-cada-nervo",
+     "titulo": "Quadros de cada nervo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0981",
+    "mao-0100",
+    "mao-0257",
+    "mao-0260",
+    "mao-0889",
+    "mao-1054",
+    "mao-1145",
+    "mao-0123",
+    "mao-0341",
+    "mao-0467",
+    "mao-0982",
+    "mao-0001",
+    "mao-0651",
+    "mao-0121",
+    "mao-1850",
+    "mao-0475",
+    "mao-0581",
+    "mao-1196",
+    "mao-0303",
+    "mao-0571",
+    "mao-0915",
+    "mao-1028",
+    "mao-0837",
+    "mao-1293",
+    "mao-1614",
+    "mao-1638",
+    "mao-1320",
+    "mao-1515",
+    "mao-1223",
+    "mao-0727",
+    "mao-0966",
+    "mao-0437",
+    "mao-0004",
+    "mao-0445",
+    "mao-0557",
+    "mao-0986",
+    "mao-0888",
+    "mao-0254",
+    "mao-0887",
+    "mao-0147",
+    "mao-0480",
+    "mao-0154",
+    "mao-0414",
+    "mao-0268",
+    "mao-0914",
+    "mao-0971",
+    "mao-0537",
+    "mao-0600",
+    "mao-0528",
+    "mao-1047",
+    "mao-1621",
+    "mao-1443",
+    "mao-0683",
+    "mao-0278",
+    "mao-0874",
+    "mao-0999",
+    "mao-1481",
+    "mao-1886",
+    "mao-0539",
+    "mao-0523",
+    "mao-0916"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Lesões de nervos periféricos"
    ]
   },
   {
@@ -13573,6 +13838,126 @@
    ]
   },
   {
+   "id": "tachdjian6-epifisiolise",
+   "versao": 1,
+   "titulo": "Epifisiólise proximal do fêmur",
+   "especialidade": "pediatria",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38",
+   "capitulo": "Capítulo 15 · Slipped Capital Femoral Epiphysis",
+   "resumo": "Adolescente obeso no estirão (meninos 12 a 15, meninas 11 a 13), colo que sobe e vai para anterior enquanto a epífise fica posterior e inferior; retroversão do colo, fise mais inclinada e colo-diáfise diminuído; hipotireoidismo, deficiência de GH, insuficiência renal e radioterapia pélvica; LODER pelo apoio (instável não anda nem com muletas, necrose até 47%), SOUTHWICK pelo ângulo cabeça-diáfise (leve abaixo de 30°, moderado 30 a 60°, grave acima de 60°); KLEIN e TRETHOWAN, STEEL e SCHAM no AP; parafuso canulado único central perpendicular à fise, evitando o quadrante anterossuperior; PARSCH, DUNN modificado com retalho retinacular posterior, SOUTHWICK intertrocantérica para crônicos de 30 a 70°; profilaxia contralateral com triradiada aberta e endocrinopatia; necrose prevista pela instabilidade, condrólise com espaço de 3 mm ou menos, impacto femoroacetabular do tipo came como sequela.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-desliza-para-onde-e-por-que",
+     "titulo": "O que desliza, para onde e por quê",
+     "radar": "confirmado"
+    },
+    {
+     "id": "quem-adoece",
+     "titulo": "Quem adoece",
+     "radar": "confirmado"
+    },
+    {
+     "id": "etiologia-mecanica-e-endocrina",
+     "titulo": "Etiologia mecânica e endócrina",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-tres-classificacoes",
+     "titulo": "As três classificações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-paciente-no-consultorio",
+     "titulo": "O paciente no consultório",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-radiografia-e-os-outros-exames",
+     "titulo": "A radiografia e os outros exames",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fixacao-in-situ-do-deslizamento-estavel",
+     "titulo": "Fixação in situ do deslizamento estável",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-deslizamento-instavel",
+     "titulo": "O deslizamento instável",
+     "radar": "confirmado"
+    },
+    {
+     "id": "deformidade-residual-e-osteotomias",
+     "titulo": "Deformidade residual e osteotomias",
+     "radar": "confirmado"
+    },
+    {
+     "id": "profilaxia-do-quadril-contralateral",
+     "titulo": "Profilaxia do quadril contralateral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "necrose-avascular",
+     "titulo": "Necrose avascular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "condrolise",
+     "titulo": "Condrólise",
+     "radar": "clinico"
+    },
+    {
+     "id": "prognostico-e-impacto-femoroacetabular",
+     "titulo": "Prognóstico e impacto femoroacetabular",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0290",
+    "pediatria-0728",
+    "pediatria-0355",
+    "pediatria-0455",
+    "pediatria-0029",
+    "pediatria-0672",
+    "pediatria-0760",
+    "pediatria-1063",
+    "pediatria-0454",
+    "pediatria-0104",
+    "pediatria-0120",
+    "pediatria-0511",
+    "pediatria-0136",
+    "pediatria-0449",
+    "pediatria-0167",
+    "pediatria-0139",
+    "pediatria-0043",
+    "pediatria-0492",
+    "pediatria-0250",
+    "pediatria-0852",
+    "pediatria-0273",
+    "pediatria-0356",
+    "pediatria-0787",
+    "pediatria-0415",
+    "pediatria-0855"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Epifisiólise proximal do fêmur"
+   ]
+  },
+  {
    "id": "tachdjian6-escoliose-idiopatica",
    "versao": 1,
    "titulo": "Escoliose idiopática",
@@ -13701,6 +14086,125 @@
    "treino": [],
    "subtemas": [
     "Escoliose idiopática"
+   ]
+  },
+  {
+   "id": "tachdjian6-marcha",
+   "versao": 1,
+   "titulo": "Marcha na criança",
+   "especialidade": "pediatria",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021)",
+   "capitulo": "Capítulo 5 · Gait Analysis",
+   "resumo": "Apoio 60% e balanço 40%, com duplo apoio nos 10% iniciais e finais e apoio simples nos 40% centrais; passo é calcanhar a calcanhar dos dois pés, passada é do mesmo pé ao mesmo pé; centro de gravidade anterior a S2, mais baixo no duplo apoio e mais alto no médio apoio; seis determinantes de SAUNDERS; flexão máxima do joelho (60°) no balanço inicial; ângulo de progressão do pé 10 a 15° externo; abdutores cerca de 2,5 vezes o peso; padrão adulto aos 7 anos; antálgica com apoio curto, TRENDELENBURG com tronco sobre o quadril afetado, DUCHENNE com hiperlordose, bamboleio e mais duplo apoio; agachamento do diplégico; anteversão femoral com patela medial no apoio; discrepância acima de 2 cm (3,7%) gera assimetria.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-ciclo-da-marcha-e-suas-fases",
+     "titulo": "O ciclo da marcha e suas fases",
+     "radar": "confirmado"
+    },
+    {
+     "id": "parametros-de-distancia-e-tempo",
+     "titulo": "Parâmetros de distância e tempo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "centro-de-gravidade-e-determinantes-da-marcha",
+     "titulo": "Centro de gravidade e determinantes da marcha",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cinematica-o-que-cada-articulacao-faz",
+     "titulo": "Cinemática: o que cada articulação faz",
+     "radar": "confirmado"
+    },
+    {
+     "id": "musculos-e-forcas-quem-acelera-quem-freia",
+     "titulo": "Músculos e forças: quem acelera, quem freia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "como-a-marcha-amadurece-na-crianca",
+     "titulo": "Como a marcha amadurece na criança",
+     "radar": "confirmado"
+    },
+    {
+     "id": "laboratorio-de-marcha",
+     "titulo": "Laboratório de marcha",
+     "radar": "fundamento"
+    },
+    {
+     "id": "marchas-patologicas-por-dor-e-fraqueza",
+     "titulo": "Marchas patológicas por dor e fraqueza",
+     "radar": "confirmado"
+    },
+    {
+     "id": "distrofia-muscular-de-duchenne-a-marcha-da-fraqu",
+     "titulo": "Distrofia muscular de DUCHENNE: a marcha da fraqueza proximal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "discrepancia-de-comprimento",
+     "titulo": "Discrepância de comprimento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "paralisia-cerebral-agachamento-tesoura-joelho-ri",
+     "titulo": "Paralisia cerebral: agachamento, tesoura, joelho rígido e equino",
+     "radar": "confirmado"
+    },
+    {
+     "id": "marcha-na-ponta-dos-pes-idiopatica",
+     "titulo": "Marcha na ponta dos pés idiopática",
+     "radar": "clinico"
+    },
+    {
+     "id": "marchas-rotacionais",
+     "titulo": "Marchas rotacionais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0055",
+    "pediatria-0023",
+    "pediatria-0170",
+    "pediatria-0122",
+    "pediatria-0320",
+    "pediatria-0082",
+    "pediatria-0485",
+    "pediatria-0477",
+    "pediatria-0041",
+    "pediatria-0157",
+    "pediatria-0388",
+    "pediatria-0285",
+    "pediatria-0108",
+    "pediatria-0191",
+    "pediatria-0349",
+    "pediatria-0893",
+    "pediatria-0113",
+    "pediatria-0035",
+    "pediatria-0385",
+    "pediatria-0354",
+    "pediatria-0208",
+    "pediatria-0360",
+    "pediatria-0141",
+    "pediatria-0026"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Marcha na criança"
    ]
   },
   {
