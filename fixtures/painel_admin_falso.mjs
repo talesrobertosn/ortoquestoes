@@ -69,6 +69,11 @@ export const rpcs = {
   listar_assinaturas_admin: () => assinaturas,
   // Karina (estuda sempre, nunca pagou) tem cortesia: no painel conta como assinante, com o selo Cortesia.
   listar_cortesias_admin: () => [{ id_usuario: u(10).id_usuario, ate: null, motivo: 'amigo' }],
+  // Uso do Supabase (parte 38): banco folgado, arquivos já em 84% (entra em "Pede ação" a partir de 80%).
+  uso_supabase_admin: () => ({ medido_em: new Date().toISOString(), banco_bytes: 190840832, contas: 1284, ativas_30d: 412, arquivos_bytes: 902823936,
+    tabelas: [['public', 'respostas', 77594624], ['public', 'progresso_sincronizado', 39845888], ['public', 'eventos_uso', 22020096], ['auth', 'audit_log_entries', 12582912], ['public', 'flashcards_respostas', 9437184],
+      ['auth', 'refresh_tokens', 6291456], ['public', 'perfis', 3145728], ['public', 'emails_enviados', 2097152], ['storage', 'objects', 1048576], ['public', 'assinaturas', 524288]].map(([esquema, tabela, bytes]) => ({ esquema, tabela, bytes })),
+    baldes: [{ balde: 'imagens-questoes', bytes: 828375040, arquivos: 9412 }, { balde: 'relatos', bytes: 69206016, arquivos: 318 }, { balde: 'avatares', bytes: 5242880, arquivos: 41 }] }),
   assinatura_usuario_admin: ({ p_usuario }) => ({
     assinaturas: assinaturas.filter(a => a.id_usuario === p_usuario).map((a, i) => ({ id: `as-${i}`, plano: a.plano, status: a.status, meio: a.meio, id_externo: 'abc123', inicio_periodo: a.inicio_periodo, fim_periodo: a.fim_periodo,
       cancelar_ao_fim: a.cancelar_ao_fim, cancelada_em: a.cancelada_em ?? null, ultima_cobranca_id: a.ultima_cobranca_em ? '999' : null, ultima_cobranca_em: a.ultima_cobranca_em, criada_em: a.criada_em, atualizada_em: a.ultima_atualizacao, valor: precos[a.plano], motivo_falha: a.motivo_falha ?? null, falha_em: a.falha_em ?? null })),

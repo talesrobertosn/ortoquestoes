@@ -257,6 +257,8 @@ export interface EntradaAtencao {
   novosParados: Array<{ ultima_atividade: string | null; criado_em: string }> | null
   /** Fontes que falharam (nome legível), para virar item técnico em vez de zero. */
   fontesIndisponiveis: string[]
+  /** Medidores do Supabase a partir de 80% do limite (Ajustes › Uso do Supabase). */
+  usoSupabase?: Array<{ id: string; nome: string; pct: number }>
   agora?: number
 }
 
@@ -295,6 +297,10 @@ export function filaDeAtencao(e: EntradaAtencao): ItemAtencao[] {
   }
   if (e.pendenciasConteudo) itens.push({ id: 'conteudo', severidade: 'media', grupo: 'conteudo', titulo: pl(e.pendenciasConteudo, 'relato ou "não ajudou" para revisar', 'relatos e "não ajudou" para revisar'), causa: 'Alguém apontou um erro numa questão ou disse que o comentário não ajudou.', contagem: e.pendenciasConteudo, ultimoEm: null, destino: { aba: 'conteudo', vista: 'relatos' }, acao: 'Abrir a triagem' })
   if (e.novosParados?.length) itens.push({ id: 'novos-parados', severidade: 'oportunidade', grupo: 'acompanhamento', titulo: pl(e.novosParados.length, 'pessoa nova que parou', 'pessoas novas que pararam'), causa: 'Chegaram nas últimas semanas, fizeram menos de 10 questões e não estudam há 2 dias.', contagem: e.novosParados.length, ultimoEm: maisRecente(e.novosParados.map(u => u.ultima_atividade ?? u.criado_em)), destino: { aba: 'usuarios', filtro: 'novos_parados' }, acao: 'Ver e mandar um recado' })
+  for (const m of e.usoSupabase ?? []) {
+    itens.push({ id: `supabase:${m.id}`, severidade: m.pct >= 90 ? 'alta' : 'media', grupo: 'tecnico', titulo: `% do limite de ${m.nome.toLowerCase()} no Supabase`,
+      causa: 'Perto do limite do plano gratuito. Veja o que mais ocupa e decida se limpa ou troca de plano.', contagem: Math.round(m.pct), ultimoEm: null, destino: { aba: 'supabase' }, acao: 'Ver uso' })
+  }
   return itens.sort((a, b) => ORDEM_SEVERIDADE[a.severidade] - ORDEM_SEVERIDADE[b.severidade] || (b.ultimoEm ?? '').localeCompare(a.ultimoEm ?? ''))
 }
 

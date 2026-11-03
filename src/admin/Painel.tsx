@@ -34,6 +34,7 @@ const Ajustes = lazy(() => import('./modulos/Ajustes'))
 const Exportar = lazy(() => import('./modulos/Exportar'))
 const AvisoTopo = lazy(() => import('./modulos/AvisoTopo'))
 const Ficha = lazy(() => import('./modulos/Ficha'))
+const UsoSupabase = lazy(() => import('./modulos/UsoSupabase'))
 
 function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
   switch (parte) {
@@ -54,6 +55,7 @@ function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
     case 'todas': return <Catalogo />
     case 'ajustes': case 'aviso': return sub === 'aviso' ? <AvisoTopo /> : <Ajustes />
     case 'exportar': return <Exportar />
+    case 'supabase': return <UsoSupabase />
   }
 }
 

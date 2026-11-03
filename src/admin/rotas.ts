@@ -15,7 +15,7 @@ export type Parte =
   | 'conteudo' | 'questoes' | 'simulados' | 'opinioes'
   | 'financeiro' | 'previsao' | 'assinaturas' | 'cobrancas' | 'pagamentos'
   | 'lembretes' | 'cartas' | 'envios' | 'todas'
-  | 'ajustes' | 'aviso' | 'exportar'
+  | 'ajustes' | 'aviso' | 'exportar' | 'supabase'
 
 /** Filtros do Explorador de pessoas (os mesmos do painel anterior, para os links continuarem). */
 export type FiltroPessoas = 'todos' | 'online' | 'hoje' | 'ativos' | 'novos' | 'novos_parados' | 'assinantes' | 'parados' | 'planos'
@@ -66,6 +66,7 @@ export const AREAS: DefArea[] = [
   { id: 'configuracoes', rotulo: 'Ajustes', curto: 'Ajustes', icone: 'ajustes', partes: [
     { id: 'ajustes', rotulo: 'Ajustes', pergunta: 'Limite gratuito, recursos pagos, pagamentos e o aviso no topo do site.' },
     { id: 'exportar', rotulo: 'Exportar dados', pergunta: 'Levar os dados do painel para uma análise, com a privacidade escolhida.' },
+    { id: 'supabase', rotulo: 'Uso do Supabase', pergunta: 'Quanto do plano o site já usa: banco, arquivos e usuários, perto ou longe do limite.', antes: 'Banco limite armazenamento' },
   ] },
 ]
 
