@@ -29,16 +29,21 @@
   "formato": "corrido"
  },
  "tumores-0003": {
-  "conceito": "**Tumores do sacro.** O **benigno** mais comum é o **tumor de células gigantes**, em adultos de 20 a 40 anos, **excêntrico**, no sacro **alto**, podendo cruzar a sacroilíaca; o sacro é o segundo sítio mais comum do TGC, depois do joelho. O **maligno primário** mais comum é o **cordoma**, em 50 a 70 anos, na **linha média**, no sacro distal e no cóccix, e expressa **brachyury**, marcador de origem notocordal. Nos idosos, metástase e mieloma lideram. Outras lesões possíveis são cisto ósseo aneurismático, osteoblastoma, granuloma eosinofílico, plasmocitoma e linfoma.\n\n**O TGC do sacro** é de curetagem difícil pelas raízes nervosas, e o denosumabe, a embolização e a radioterapia entram em casos selecionados.\n\n**Na prova:** o tumor benigno mais comum do sacro é o **tumor de células gigantes**.",
-  "correta": "**Tumor de células gigantes.** O sacro é seu segundo sítio mais comum, depois do joelho, em adultos jovens e em posição excêntrica e alta.",
+  "conceito": "O sacro é o único segmento da coluna em que o tumor de células gigantes (TCG) é frequente, e a pergunta quer saber qual lesão **benigna** lidera ali. O Campbell's Operative Orthopaedics, 15ª ed., abre a seção de TCG do capítulo de coluna dizendo que ele é o tumor benigno mais prevalente do sacro, e o sacro concentra cerca de metade dos TCG vertebrais, com a coluna cervical em segundo lugar.\n\n**Como o TCG se comporta no sacro.** Ele ocupa a parte **proximal** do osso e é **excêntrico**, em geral em mulheres de 30 a 40 anos. A queixa mais comum é dor de longa data, e o déficit neurológico aparece em 20% a 80% dos casos. À imagem, é uma lesão expansiva, lítica e septada, que rompe a cortical e forma massa de partes moles. O tratamento é a ressecção em bloco com margem ampla quando possível, com embolização pré-operatória; a recidiva relatada vai de 10% a 80%.\n\n**Por que o cordoma não responde.** No capítulo geral de tumores, os dois nomes que encabeçam o diferencial do sacro são o cordoma e o TCG, mas o cordoma é maligno e de **linha média**; a excentricidade é o que separa os dois na imagem.\n\nO assunto está na seção \"Sacro e coluna\" do resumo.",
+  "correta": "**D) tumor de células gigantes.** É a frase de abertura da seção do Campbell sobre TCG na coluna, e o TCG responde por cerca de metade dos casos vertebrais, localizados no sacro.",
   "incorretas": {
-   "A": "**É maligno.** O cordoma é o tumor primário maligno mais comum do sacro, mas a questão pede o benigno.",
-   "B": "**Menos frequente.** O osteoblastoma prefere os elementos posteriores das vértebras.",
-   "C": "**Criança e outros sítios.** O granuloma eosinofílico acomete crânio, fêmur, costelas e dá a vértebra plana."
+   "A": "**Cordoma** é o grande diferencial do sacro, mas é um tumor maligno, de linha média, e a pergunta pede o benigno; o TCG é excêntrico e proximal.",
+   "B": "**Osteoblastoma** é lembrado nos elementos posteriores da coluna (arco neural), junto com o cisto ósseo aneurismático e o osteoma osteoide, e não é o benigno dominante do sacro.",
+   "C": "**Granuloma eosinofílico** é a lesão de corpo vertebral do jovem, a histiocitose do capítulo de princípios, e não o tumor que domina o sacro do adulto."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "alerta": "O texto do Campbell (cap. 49) afirma que o TCG é o tumor benigno mais prevalente do sacro e, na frase seguinte, o coloca em segundo lugar, atrás do hemangioma. O gabarito oficial segue a primeira afirmação, que é a que responde à questão.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infections and Tumors of the Spine), seção Giant Cell Tumor, p. 1963 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), p. 869.e1",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0004": {
   "conceito": "**Tumor glômico** é um hamartoma do **glomo neuromioarterial**, a estrutura de termorregulação da pele. Mais da metade está no **leito ungueal** da mão, em mulheres de 30 a 50 anos, com a tríade de **dor intensa, dor ao frio e hipersensibilidade pontual**. No **teste de Love**, uma **pressão pontual com objeto pequeno e firme**, como a ponta de um lápis ou alfinete, provoca dor exuberante exatamente no ponto do tumor e o localiza para a excisão. No teste de **Hildreth**, um manguito acima da pressão sistólica faz a dor **sumir** com a isquemia; a imersão em água gelada reproduz a dor, e a transiluminação mostra uma mancha escura sob a unha.\n\n**Na imagem**, a ressonância mostra nódulo com hipersinal em T2 e realce intenso, e a radiografia às vezes mostra erosão da falange. O tratamento é a **excisão completa**, por via transungueal ou lateral, com recidiva quando incompleta; a forma múltipla tem associação familiar.\n\n**Na prova:** teste de Love é **pressão pontual com objeto firme**.",
@@ -173,16 +178,20 @@
   "formato": "corrido"
  },
  "tumores-0014": {
-  "conceito": "**Tumor de células gigantes e RANKL.** A célula neoplásica do TGC é a **estromal mononuclear**, com mutação H3F3A G34W, que expressa **RANKL**; as células gigantes são osteoclastos **recrutados**, que fazem a lise. O **denosumabe**, anti-RANKL, faz as células gigantes sumirem e a lesão ossificar. É indicado nos tumores irressecáveis, como os de sacro, coluna e pelve, nas recidivas e como neoadjuvante, para converter uma ressecção em curetagem.\n\n**Os cuidados** são o efeito apenas **supressivo**, com recidiva ao suspender, a casca ossificada que pode esconder tumor viável na curetagem e os efeitos adversos, como hipocalcemia, osteonecrose de mandíbula e fratura atípica. O tratamento padrão do TGC continua sendo a curetagem estendida com adjuvante, como fenol, nitrogênio ou cimento.\n\n**Na prova:** denosumabe em tumor benigno é para o **tumor de células gigantes**.",
-  "correta": "**Tumor de células gigantes.** O estroma neoplásico expressa RANKL, e o bloqueio remove os osteoclastos e ossifica a lesão.",
+  "conceito": "A pergunta liga uma droga a um tumor, e a ligação vem da biologia do TCG. O denosumabe é um anticorpo monoclonal totalmente humano que bloqueia a via RANK/RANKL, limitando a maturação dos osteoclastos. Como a destruição óssea do TCG é mediada por células gigantes de tipo osteoclástico, o fármaco atinge exatamente o mecanismo da lise.\n\n**Indicação aprovada.** Segundo o Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 954), é para adultos e pacientes esqueleticamente maduros com TCG irressecável ou em que a ressecção causaria morbidade grave. No capítulo de coluna, aparece como terapia primária nos tumores irressecáveis (sacro, coluna) e como uso neoadjuvante nos casos limítrofes.\n\n**O que o remédio faz e o que não faz.** Reduz as células gigantes, induz osso novo ao redor da lesão e, na TC, mostra reossificação e remodelação cortical. Mas **não atinge de forma definitiva as células estromais neoplásicas**: daí a preocupação com o rebote quando se suspende a droga e com as altas taxas de recidiva após a cirurgia que se segue ao tratamento. O capítulo de coluna registra ainda relatos de transformação sarcomatosa durante o uso.\n\nO tema está na seção \"Denosumabe, bisfosfonatos, radioterapia e embolização\" do resumo.",
+  "correta": "**D) tumor de células gigantes.** É o único tumor benigno dos quatro para o qual o Campbell descreve indicação do denosumabe, porque o RANKL move a osteólise das células gigantes.",
   "incorretas": {
-   "A": "**É cartilaginoso.** O encondroma não depende do RANKL; em geral só se observa.",
-   "B": "**Trata-se com curetagem.** O condroblastoma tem células gigantes, mas o denosumabe não tem papel nele.",
-   "C": "**Curetagem ou ressecção.** O fibroma condromixoide não responde a esse alvo."
+   "A": "**Encondroma** é uma lesão cartilaginosa benigna tratada sem denosumabe; o Campbell não traz indicação do anticorpo nesse tumor.",
+   "B": "**Condroblastoma** tem células gigantes e fica na epífise, o que induz o erro, mas é do esqueleto imaturo, e a aprovação do denosumabe é para adultos e esqueleticamente maduros com TCG; o livro não o indica no condroblastoma.",
+   "C": "**Fibroma condromixoide** não aparece nos livros lidos como alvo do denosumabe; a droga está ligada ao TCG pelo mecanismo RANKL das células gigantes."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 954",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infections and Tumors of the Spine), seção Giant Cell Tumor, p. 1957 aprox.",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0015": {
   "conceito": "A pergunta usa a palavra \"respectivamente\", então é preciso uma resposta para cada tumor, na ordem. O erro clássico é colocar os dois nas mesmas regiões ou trocar a ordem.\n\n**Parosteal** (Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), pp. 970 a 976, p. 972). Tumor de baixo grau, na superfície, com tendência a se formar como massa ossificada lobulada na **face posterior do fêmur distal**. O SIZÍNIO (Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 30 (Tumores ósseos malignos e lesões metastáticas)) acrescenta que também ocorre no úmero proximal. A localização típica é, portanto, a **extremidade distal do fêmur**.\n\n**Periosteal** (Campbell, p. 972). Tumor de grau intermediário, na superfície, cujos locais mais comuns são as **diáfises do fêmur e da tíbia**. Ele tem faixa etária um pouco mais velha e mais ampla que a do convencional, e as células fusiformes que produzem osteoide se organizam em fileiras entre lóbulos de cartilagem. O Tachdjian (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors), pp. 1049 a 1061, p. 1049) o classifica como condroblástico.\n\n**A construção da resposta.** Parosteal em fêmur distal, periosteal em diáfise. A metáfise da tíbia, tão presente nas alternativas, é o lugar do osteossarcoma convencional (tíbia proximal), não do periosteal. Quem lembra apenas que o convencional está na metáfise acaba marcando as opções erradas.\n\nAs duas localizações estão nas seções \"Parosteal\" e \"Periosteal\" do resumo.",
@@ -295,16 +304,22 @@
   "conferido": false
  },
  "tumores-0022": {
-  "conceito": "**O comportamento do tumor de células gigantes.** Apesar de benigno, o TGC é localmente agressivo: a recidiva após curetagem fica entre 10 e 25% mesmo com adjuvante. A **transformação maligna** ocorre em **cerca de 10%** nas séries usadas pela banca, com números menores, em torno de 5%, em outras, sobretudo **após radioterapia**. As **metástases pulmonares**, em **1 a 4%**, são peculiares: têm histologia idêntica à do tumor benigno, são indolentes e muitas vezes tratáveis com ressecção.\n\n**A biologia** explica o tratamento: a célula neoplásica é a estromal, que expressa RANKL e recruta osteoclastos, o que torna o denosumabe útil em lesões irressecáveis, recidivas e como neoadjuvante. O padrão continua sendo a curetagem estendida com adjuvante.\n\n**Na prova:** no TGC, transformação maligna em **cerca de 10%** e metástase pulmonar em **1 a 4%**.",
-  "correta": "**10% e metástase pulmonar entre 1% e 4%.** A malignização ocorre sobretudo após radioterapia, e os implantes pulmonares são benignos e indolentes.",
+  "conceito": "Duas taxas pequenas, cada uma com um erro de ordem de grandeza armado ao lado, e é preciso acertar as duas ao mesmo tempo. O TCG é benigno ao exame da lâmina, mas tem dois comportamentos que fogem disso: pode se transformar em sarcoma e pode dar metástase pulmonar de histologia benigna.\n\n**Transformação maligna.** O capítulo de coluna do Campbell's Operative Orthopaedics, 15ª ed., fala em transformação em cerca de 10%, e o capítulo de tumores benignos agressivos em menos de 10%. A forma secundária surge anos depois de um TCG tratado, com frequência após radioterapia, e o osteossarcoma é o subtipo mais comum. Aproximar de 25% é um exagero que nenhum dos livros sustenta.\n\n**Metástase pulmonar.** O Campbell traz cerca de 3%, o SIZÍNIO HEBERT traz 2% a 3% e o capítulo geral fala em 1% a 5% nos tumores de estágio 3. Todas as faixas cabem em \"1% a 4%\", e nenhuma chega perto de 0,1% a 0,4%, que descreveria um evento quase inexistente. O risco é maior nos recidivados e na extensão a partes moles.\n\nO tema está na seção \"Metástase pulmonar benigna e transformação maligna\" do resumo.",
+  "correta": "**B) 10% e metástase pulmonar entre 1% e 4% dos pacientes.** Une o teto de transformação do Campbell (cerca de 10%) com a faixa de metástase pulmonar que os livros dão, de 2% a 3% até 1% a 5%.",
   "incorretas": {
-   "A": "**Metástase subestimada.** A transformação está certa, mas 0,1 a 0,4% é dez vezes menos que a frequência real.",
-   "C": "**Duplamente errada.** Superestima a transformação e subestima a metástase.",
-   "D": "**Transformação errada.** A metástase está certa, mas 25% superestima a malignização."
+   "A": "**10% com 0,1% a 0,4%** acerta a transformação, mas subestima dez vezes a metástase: os livros trazem 2% a 3% ou 3%, e não décimos de ponto percentual.",
+   "C": "**25% com 0,1% a 0,4%** erra as duas taxas: superestima a transformação e subestima a metástase, e nenhum dos livros lidos traz esses números.",
+   "D": "**25% com 1% a 4%** acerta a metástase, mas o valor de 25% para transformação maligna não aparece nos livros; o Campbell fala em cerca de 10% ou menos."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infections and Tumors of the Spine), seção Giant Cell Tumor, p. 1963 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), p. 873",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0023": {
   "conceito": "**Displasia fibrosa** vem de uma mutação ativadora do **GNAS**, pós-zigótica em mosaico, que mantém os osteoblastos imaturos produzindo osso fibroso. Por isso a forma **monostótica** é a mais comum, com **70 a 80%** dos casos, e se distribui de forma **semelhante entre os sexos**, assim como a poliostótica. O predomínio **feminino** aparece só na síndrome de **McCune-Albright**, com manchas café-com-leite de bordas irregulares e puberdade precoce; a de Mazabraud associa mixomas.\n\n**Na imagem**, a lesão tem aspecto em **vidro fosco**, com cortical afilada e, no fêmur, cajado de pastor. As fraturas consolidam rápido, mas com calo pobre, e a fixação preferida é a haste intramedular, porque curetagem e enxerto falham.\n\n**Na prova:** displasia fibrosa é **monostótica, sem predileção de sexo**.",
@@ -903,32 +918,36 @@
   "conferido": false
  },
  "tumores-0065": {
-  "conceito": "**O que as imagens mostram.** A radiografia mostra lesão **lítica** na extremidade distal do fêmur, epifisometafisária, chegando ao **osso subcondral**, sem matriz mineralizada; a ressonância mostra lesão expansiva, com áreas de alto sinal compatíveis com componentes císticos ou hemorrágicos; e a histologia mostra **células gigantes multinucleadas** entre células mononucleares.\n\n**O perfil do tumor de células gigantes** é esse: adultos de 20 a 40 anos, **após o fechamento da fise**, com discreto predomínio feminino, mais da metade ao redor do **joelho** (fêmur distal e tíbia proximal), seguido do rádio distal e do sacro. A lesão é lítica, **excêntrica**, epifisária, chega ao subcondral e em geral não tem halo esclerótico; a clínica é de dor progressiva e aumento de volume, às vezes com fratura patológica. Antes de fechar o diagnóstico, dosam-se **cálcio e PTH**, para afastar o tumor marrom, e pede-se **tomografia de tórax**, pela possibilidade de metástase pulmonar benigna.\n\n**Na prova:** mulher de 30 anos, joelho, lesão lítica epifisária até o subcondral e células gigantes na lâmina é **tumor de células gigantes**.",
-  "correta": "**Tumor de células gigantes.** Idade, fise fechada, joelho, lesão lítica epifisária até o subcondral e células gigantes convergem para o diagnóstico.",
+  "conceito": "Esta questão se resolve juntando três pistas: a paciente, o local e o aspecto da lesão. Uma mulher de 30 anos com dor progressiva e aumento de volume do joelho está exatamente no perfil do TCG, que predomina entre 20 e 40 anos, com ligeira predominância feminina, e quase sempre com a fise já fechada.\n\n**A imagem.** Há três painéis. À esquerda, a radiografia em AP do joelho mostra uma área de rarefação óssea na extremidade distal do fêmur, sem esclerose marginal e sem calcificações no interior. No alto à direita, o corte axial de ressonância mostra uma massa grande, heterogênea, com vários pontos de sinal muito alto, compatíveis com componentes císticos ou sangue, e a cortical afinada ao redor. Embaixo à direita, a lâmina tem células gigantes multinucleadas no meio de células mononucleares ovoides e fusiformes.\n\n**Como o Campbell's Operative Orthopaedics, 15ª ed., descreve isso.** A lesão é puramente lítica, excêntrica na epífise e encostada no osso subcondral, sem matriz própria; o fêmur distal é o local mais comum. Na lâmina, as células gigantes têm núcleos iguais aos das mononucleares, e os focos de alto sinal na ressonância lembram o cisto ósseo aneurismático secundário, presente em cerca de 20% dos casos.\n\nO raciocínio completo está nas seções \"Onde nasce\" e \"Clínica e imagem\" do resumo.",
+  "correta": "**D) tumor de células gigantes.** Mulher de 30 anos, lesão lítica da epífise do fêmur distal e lâmina com células gigantes multinucleadas formam o retrato clássico descrito no Campbell.",
   "incorretas": {
-   "A": "**Outro retrato.** O osteossarcoma é da segunda década, metafisário, com matriz osteoide e reação periosteal agressiva.",
-   "B": "**Epifisário, mas da idade errada.** O condroblastoma é de adolescentes com fise aberta e costuma ter halo esclerótico.",
-   "C": "**Idade e matriz não batem.** O condrossarcoma é mais comum após os 40 anos e mostra matriz condroide, ausente aqui."
+   "A": "**Osteossarcoma** é metafisário, do adolescente, e produz matriz óssea na radiografia; aqui a lesão é lítica, epifisária e de adulta.",
+   "B": "**Condroblastoma** é a lesão epifisária do esqueleto imaturo, entre 10 e 25 anos, com rima esclerótica e calcificações em 30% a 50% dos casos; a idade e a lise pura sem calcificação o afastam.",
+   "C": "**Condrossarcoma** produz matriz condroide e é raro na epífise; o único condrossarcoma epifisário que o Campbell cita é o de células claras, e a imagem não traz calcificação."
   },
   "referencias": [
-   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
-   "Campanacci M. Bone and Soft Tissue Tumors. 2nd ed. Springer; 1999."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952 e Tabela 28.1 (p. 953)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), pp. 868 e 869.e1",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0066": {
-  "conceito": "**O imitador perfeito.** O tumor de células gigantes tem um imitador histológico: o **tumor marrom do hiperparatireoidismo**. As duas lesões mostram células gigantes multinucleadas em estroma de células mononucleares, e a lâmina sozinha não as separa. O que separa é o laboratório: a dosagem decisiva é a do **PTH**, junto com cálcio, fósforo e fosfatase alcalina; no hiperparatireoidismo primário, PTH e cálcio estão altos e o fósforo, baixo.\n\n**Por que isso importa.** Operar um tumor marrom como se fosse TGC deixa a doença de base intocada, e as lesões voltam ou surgem em outros ossos; o tratamento correto é a **paratireoidectomia**, e os tumores marrons regridem depois dela. A suspeita aumenta diante de lesões de células gigantes **múltiplas**, de paciente com doença renal crônica e de reabsorção subperiosteal nas falanges ou crânio em sal e pimenta.\n\n**Na prova:** toda lesão de células gigantes pede **cálcio e PTH** antes da biópsia.",
-  "correta": "**O PTH.** Separa o tumor de células gigantes do tumor marrom do hiperparatireoidismo, de histologia idêntica.",
+  "conceito": "O diferencial laboratorial do TCG tem um nome só: o **tumor marrom do hiperparatireoidismo**. Esse tumor, que também é formado por células gigantes, pode parecer um TCG na imagem e na lâmina, e a diferença entre os dois não se resolve olhando o tecido.\n\n**O que o Campbell's Operative Orthopaedics, 15ª ed., manda fazer.** No capítulo de princípios (p. 871), diz que os tumores marrons às vezes podem parecer TCG e que, diante da dúvida, se dosem o **cálcio sérico e o paratormônio (PTH)**. O SIZÍNIO HEBERT acrescenta pistas do hiperparatireoidismo: osteopenia generalizada, reabsorção subperiosteal das falanges distais e perda da lâmina dura dos dentes.\n\n**Por que importa.** Tratar como TCG uma lesão que é manifestação de doença endócrina é cirurgia no lugar errado: o problema de fundo está nas paratireoides, não no osso.\n\n**Onde o PTH entra na rotina.** Mulher jovem com lesão lítica e células gigantes pede cálcio e PTH antes da decisão cirúrgica.\n\nO assunto está na seção \"O tumor marrom e o PTH\" do resumo.",
+  "correta": "**C) o PTH.** Junto com o cálcio sérico, é o exame que separa o TCG do tumor marrom do hiperparatireoidismo, o imitador citado pelo Campbell e pelo SIZÍNIO.",
   "incorretas": {
-   "A": "**Marcador inespecífico.** A proteína C reativa sobe em inflamação e infecção e não separa as duas lesões.",
-   "B": "**Mesma limitação.** A VHS é inespecífica e não tem papel nesse diferencial.",
-   "D": "**É o exame do mieloma.** A eletroforese investiga mieloma em lesão lítica do adulto mais velho, não o diferencial do TGC."
+   "A": "**PCR** é marcador inflamatório, útil em infecção; os livros lidos não a usam no diagnóstico diferencial do TCG.",
+   "B": "**VHS** é marcador inespecífico de inflamação e não separa o TCG do tumor marrom; o livro não o traz para esse fim.",
+   "D": "**Eletroforese de proteínas** investiga o mieloma múltiplo, que o Campbell lista entre as causas de hipercalcemia, mas o mieloma não imita a lâmina do TCG; o imitador é o tumor marrom, que pede PTH."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), p. 871",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0067": {
   "conceito": "O TEOT 2022 mostra radiografias e ressonância do joelho de um adulto: uma lesão lítica **epifisária** do fêmur distal, que chega ao osso subcondral, e, na RM, uma massa com muitos níveis líquidos que ultrapassa os limites do osso. Pede o estágio de ENNEKING. É um **tumor de células gigantes**, o exemplo que o Campbell dá do estágio 3, agressivo (Fig. 24.4).\n\n**ENNEKING para as lesões benignas** (Campbell, cap. 24, p. 893 e 894, Tabela 24.1). Os estágios benignos usam **números arábicos**, e os malignos, romanos.\n\n| Estágio | O que é | Imagem | Tratamento | Exemplo |\n|---|---|---|---|---|\n| **1 latente** | intracapsular, assintomático, achado incidental | margem nítida, **halo espesso de osso reativo**, sem expansão | **não precisa tratar**; costuma regredir | fibroma não ossificante (Fig. 24.2) |\n| **2 ativo** | intracapsular, **cresce**, sintomas ou **fratura patológica** | margem nítida, pode **expandir e afinar a cortical**, halo fino | **curetagem estendida** | **cisto ósseo aneurismático** da fíbula proximal (Fig. 24.3) |\n| **3 agressivo** | **extracapsular**, não respeita barreiras | rompe o osso reativo e às vezes a cortical; massa de partes moles na RM | curetagem estendida, ressecção marginal ou ampla; **recidiva comum** | **tumor de células gigantes** do fêmur distal (Fig. 24.4) |\n\n**Metástases podem estar presentes em 1% a 5% dos pacientes com lesões do estágio 3, como o tumor de células gigantes** (p. 893). Muitas provas escrevem B1, B2 e B3 (B de benigno) para os mesmos estágios.\n\n**Lendo a imagem.** Lesão epifisária no esqueleto maduro é tumor de células gigantes até prova em contrário (Campbell, cap. 24, p. 890). A margem é mal definida e a RM mostra extensão além do osso: a lesão **não respeita as barreiras naturais**, que é a definição do estágio 3. O que define o estágio é o comportamento.\n\n**O tumor de células gigantes no estágio 3.** O Campbell diz que essas lesões **são extracapsulares, rompem o osso reativo e às vezes a cortical**, podem mostrar massa de partes moles na RM, **têm metástases em 1% a 5%** e são tratadas com **curetagem estendida, ressecção marginal ou ampla**, com **recidiva local comum** (p. 893). A curetagem estendida, com janela grande, broca e adjuvantes, baixou a recidiva do TCG para cerca de 10% (p. 904).\n\n**A curetagem no Campbell** (cap. 24, p. 904 a 906). Tem mais recidiva que a ressecção, mas melhor função. **A janela cortical deve ser pelo menos do tamanho da lesão**; tira-se o grosso com curetas grandes, **amplia-se a cavidade com broca motorizada até o osso normal (obrigatória)** e irriga-se: é a curetagem simples. A **estendida** acrescenta **nitrogênio líquido, fenol, metilmetacrilato ou cautério térmico (argônio)**; **a recidiva do TCG caiu para cerca de 10%**, contra 25% a 50% antes dos adjuvantes. O preenchimento: o **autoenxerto** é osteogênico, osteoindutor e osteocondutor; o aloenxerto esponjoso, osteocondutor; a matriz desmineralizada, osteocondutora e osteoindutora; o **cimento** dá estabilidade imediata e deixa ver a recidiva como lucência crescente junto a ele.\n\n**As células gigantes nos tumores benignos, no Campbell.** No **cisto ósseo aneurismático**, o microscópio mostra tecido hemorrágico com espaços cavernosos separados por estroma celular, revestidos por fibroblastos e histiócitos comprimidos, com **macrófagos carregados de hemossiderina, células inflamatórias crônicas e células gigantes multinucleadas**; a variante sólida é chamada de granuloma reparativo de células gigantes (cap. 25, p. 973). No **condroblastoma**, lâminas de condroblastos redondos a poligonais, calcificação distrófica em \"tela de galinheiro\", **células gigantes multinucleadas abundantes** e cisto ósseo aneurismático secundário em 20% (cap. 26, p. 995). O **tumor de células gigantes**, como o nome diz, também as tem, e por isso o diferencial histológico das lesões ricas em células gigantes precisa da clínica, da idade e da imagem.\n\n**O que a banca quis testar.** Se o candidato reconhece o TCG e sabe que o livro o usa como exemplo do estágio agressivo.\n\n> **Na prova:** TCG = epífise madura, ENNEKING 3 (B3, agressivo), metástase em 1% a 5%, curetagem estendida (recidiva de 10%).",
@@ -947,20 +966,21 @@
   "conferido": false
  },
  "tumores-0068": {
-  "conceito": "**O objetivo é preservar o joelho.** No tumor de células gigantes ressecável ao redor do joelho, o tratamento padrão é **intralesional**: **curetagem ampliada**, com janela cortical grande, curetas e fresa de alta rotação até osso sadio, **adjuvante local**, como fenol, nitrogênio líquido, eletrocautério ou o próprio cimento, e **preenchimento** da cavidade. O **polimetilmetacrilato** tem três vantagens: o **efeito térmico** da polimerização age como adjuvante nas paredes; dá **suporte mecânico imediato**, permitindo reabilitação precoce; e **facilita ver a recidiva**, que aparece cedo como área lítica nova na interface cimento-osso.\n\n**Nas imagens**, a lesão é lítica, expansiva, até o subcondral, com cortical afilada, mas com a **articulação preservada**, e ainda cabe o tratamento intralesional. A ressecção fica para destruição articular, fratura com grande perda óssea ou recidiva extensa, e o **denosumabe** entra em lesões irressecáveis ou para reduzir o tumor antes da cirurgia.\n\n**Na prova:** tumor de células gigantes ressecável do joelho é **curetagem ampliada com cimento**.",
-  "correta": "**Curetagem e cimentação.** Trata a lesão preservando a articulação, com adjuvância térmica, suporte imediato e vigilância facilitada.",
+  "conceito": "A paciente é a mesma da questão de diagnóstico: mulher de 30 anos, joelho doloroso e aumentado de volume. O que se pergunta agora é a cirurgia, e a lógica do TCG é conservar a articulação sem aceitar recidiva alta.\n\n**A imagem.** Quatro painéis. Duas radiografias, em AP e perfil, mostram lesão lítica na extremidade distal do fêmur, junto ao osso subcondral. O corte axial de ressonância e o sagital com saturação de gordura mostram massa lobulada, com muitos focos de sinal muito alto, aspecto de cistos com líquido, expandindo a cortical.\n\n**Curetagem estendida com cimento.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 954), descreve a técnica: janela cortical pelo menos do tamanho da lesão, broca motorizada ampliando a cavidade em 1 a 2 cm em todas as direções, sem perfurar o subcondral, e adjuvante. O cimento de metilmetacrilato (PMMA) dá estabilidade imediata, reabilitação rápida, mata células pelo calor da polimerização e mostra a recidiva como radioluscência em expansão junto ao manto. Com essa técnica, as séries atuais relatam 5% a 15% de recidiva, contra mais de 50% da curetagem simples histórica. O SIZÍNIO HEBERT conta que, na casuística da sociedade americana de tumores de 1990, o consenso era curetagem com adjuvante e cimento.\n\nO tema está nas seções \"Os passos da curetagem estendida\" e \"Com que preencher\" do resumo.",
+  "correta": "**D) curetagem e cimentação.** É o tratamento do TCG epifisário ressecável: preserva a articulação, tem estabilidade imediata e deixa a interface nítida para vigiar recidiva.",
   "incorretas": {
-   "A": "**Excepcional.** A amputação fica para doença incontrolável, infecção grave ou impossibilidade de reconstrução.",
-   "B": "**Morbidade desnecessária.** A ressecção ampla sacrifica a articulação e exige reconstrução; é reservada à destruição articular ou recidiva extensa.",
-   "C": "**Possível, mas não a preferida.** O enxerto preenche a cavidade, mas perde para o cimento em adjuvância, suporte e detecção de recidiva."
+   "A": "**Amputação** é rara, reservada a destruição maciça, recidivas múltiplas, infecção ou malignização, segundo o SIZÍNIO HEBERT; não é o primeiro tratamento do TCG do joelho.",
+   "B": "**Ressecção ampla** é indicada nos tumores de estágio 3 avançados, na recidiva local e quando outras medidas falham, ou se o estoque ósseo é inadequado; no joelho exige reconstrução e custa função, e a lesão da imagem é tratável por curetagem estendida.",
+   "C": "**Curetagem e enxertia** é aceita, mas o enxerto obriga a proteção prolongada contra fratura e torna difícil separar recidiva de reabsorção, o que o cimento resolve; por isso o consenso descrito é o cimento."
   },
   "referencias": [
-   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
-   "Campanacci M et al. Giant-cell tumor of bone. J Bone Joint Surg Am. 1987;69:106-114."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 954",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), p. 882",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0069": {
   "conceito": "**O que é vértebra plana.** É o colapso quase completo e **simétrico** do corpo vertebral, com **discos adjacentes preservados** e sem massa de partes moles significativa. Na criança, a causa mais frequente é a **histiocitose de células de Langerhans**, a vértebra plana de Calvé. Apesar do aspecto dramático, o **déficit neurológico é raro**, e a altura do corpo se **reconstitui** em graus variáveis com o crescimento; por isso, na maioria, a conduta é observação, às vezes com órtese, com cirurgia para instabilidade ou compressão neurológica.\n\n**O diferencial** inclui a **infecção**, em que osteomielite e espondilodiscite destroem o disco (disco preservado é forte argumento contra), o linfoma e a leucemia, o sarcoma de Ewing, o cisto ósseo aneurismático e, no adulto, mieloma e metástase. Como há doenças malignas na lista, a biópsia entra quando o quadro não é típico.\n\n**Na prova:** vértebra plana na criança, com discos preservados, é **histiocitose de células de Langerhans**.",
@@ -975,16 +995,21 @@
   "formato": "corrido"
  },
  "tumores-0070": {
-  "conceito": "**Três pistas que convergem.** Na **epífise**, lesão subarticular, com a **fise fechada**, a primeira hipótese é o tumor de células gigantes; a mesma topografia na criança apontaria para condroblastoma. Aos **30 anos**, a paciente está no pico, entre 20 e 40 anos, após o fechamento fisário. E o **fêmur distal**, com a tíbia proximal, concentra mais da metade dos casos, seguido do rádio distal e do sacro. Somando a lesão **lítica excêntrica**, em geral sem esclerose marginal, que chega ao subcondral e pode insuflar a cortical, o diagnóstico é **tumor de células gigantes**.\n\n**Antes da biópsia**, dosam-se **cálcio e PTH**, para afastar o tumor marrom, e pede-se tomografia de tórax, pela possibilidade de metástase pulmonar benigna. Nas lesões epifisárias por idade, a fise aberta sugere condroblastoma; o adulto jovem, tumor de células gigantes; e o adulto mais velho, geodo ou, raramente, condrossarcoma de células claras.\n\n**Na prova:** lesão lítica excêntrica epifisária no fêmur distal aos 30 anos é **tumor de células gigantes**.",
-  "correta": "**Tumor de células gigantes.** Lesão epifisária e excêntrica, em adulto jovem com fise fechada, no fêmur distal.",
+  "conceito": "Três dados do enunciado, e cada um elimina um candidato: a **idade** (30 anos), o **local** (epífise distal do fêmur) e o **aspecto** (lítico e excêntrico). O raciocínio parte da regra que o Campbell's Operative Orthopaedics, 15ª ed., dá no capítulo de princípios: lesão epifisária no esqueleto maduro é provavelmente tumor de células gigantes; no imaturo, provavelmente condroblastoma.\n\n**Cada pista pesa assim.** O TCG ocorre mais entre 20 e 40 anos, com as fises já fechadas, e o fêmur distal é o local mais comum, seguido de perto pela tíbia proximal. A radiografia mostra lise pura, excêntrica, encostada no osso subcondral, em geral sem rima de osso reativo, e sem matriz no interior do osso.\n\n**O diferencial epifisário do livro** tem apenas três nomes: condroblastoma (10 a 25 anos), TCG (20 a 40 anos) e condrossarcoma de células claras, raro. A idade da paciente decide entre os dois primeiros, e a raridade decide o terceiro.\n\nO tema está nas seções \"A regra de ouro da localização\" e \"Clínica e imagem\" do resumo.",
+  "correta": "**B) tumor de células gigantes.** Epífise do fêmur distal, lise excêntrica e 30 anos com fise fechada são o retrato descrito pelo Campbell.",
   "incorretas": {
-   "A": "**Epifisário, mas da criança.** O condroblastoma é de adolescentes com fise aberta; aos 30 anos a fise já fechou.",
-   "C": "**Metafisário e mais jovem.** O cisto ósseo aneurismático primário é metafisário e típico das duas primeiras décadas.",
-   "D": "**Do adulto, mas raro.** O condrossarcoma de células claras é o principal diferencial maligno, mas é raro e prefere o fêmur proximal."
+   "A": "**Condroblastoma** é epifisário, mas do esqueleto imaturo, entre 10 e 25 anos, com rima esclerótica e calcificação em 30% a 50% dos casos; aos 30 anos não é a primeira hipótese.",
+   "C": "**Cisto ósseo aneurismático** aparece junto ao TCG como componente secundário (níveis líquidos na ressonância) e acomete pacientes mais jovens, em local diafisário na descrição do SIZÍNIO HEBERT; não é a hipótese principal de lesão epifisária do adulto.",
+   "D": "**Condrossarcoma de células claras** consta do diferencial epifisário do Campbell, mas é raro, e a pergunta pede a principal hipótese."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), pp. 868 e 869.e1",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0071": {
   "conceito": "**O que as imagens mostram.** A radiografia mostra lesão **lítica** e bem delimitada na **epífise do úmero proximal**; a tomografia mostra **halo esclerótico** e focos de calcificação no interior; e a histologia mostra **condroblastos** arredondados com células gigantes de permeio. É o perfil do **condroblastoma**, tumor benigno raro da **epífise**, ou da apófise, de adolescentes e adultos jovens, com a fise aberta ou recém-fechada, no úmero proximal, no fêmur distal, na tíbia proximal e no fêmur proximal, inclusive no trocanter maior. A lesão é lítica, geográfica, com halo esclerótico e às vezes calcificação condroide, e a dor articular com derrame é frequente.\n\n**Na histologia**, os condroblastos têm núcleo em grão de café, e a calcificação pericelular fina forma o padrão em **tela de galinheiro**. O tratamento é curetagem com enxerto ou cimento, com cuidado para não lesar a fise ou a cartilagem articular; pode haver cisto aneurismático secundário associado.\n\n**Na prova:** lesão epifisária com halo esclerótico no úmero proximal do adolescente é **condroblastoma**.",
@@ -1193,19 +1218,20 @@
   "formato": "corrido"
  },
  "tumores-0085": {
-  "conceito": "**O rádio distal é o endereço mais difícil.** O tumor de células gigantes costuma ser **mais agressivo no rádio distal**, com recidiva local mais alta que nas outras sedes quando tratado só com curetagem. A epífise é pequena e a cortical, fina: o tumor rompe a cortical e chega às partes moles cedo, sobra pouco osso subcondral para uma curetagem segura, falta a massa óssea do fêmur distal ou da tíbia proximal para conter a expansão, e qualquer perda óssea compromete diretamente a radiocarpal.\n\n**No tratamento**, as lesões contidas ainda podem receber curetagem ampliada com adjuvante, mas as extensas, com cortical rompida ou recidiva, recebem **ressecção em bloco** com reconstrução (enxerto de fíbula, artrodese ou artroplastia do punho), indicada mais cedo que em outras sedes; o denosumabe pode reduzir a lesão antes da cirurgia. As sedes mais comuns do TGC são o fêmur distal e a tíbia proximal, seguidas do rádio distal e do sacro.\n\n**Na prova:** o tumor de células gigantes com fama de agressivo e de recidiva é o do **rádio distal**.",
-  "correta": "**Do rádio.** No rádio distal, o tumor rompe a cortical cedo e recidiva mais, pela anatomia pequena e pela proximidade da radiocarpal.",
+  "conceito": "A frequência de um tumor e a agressividade dele em cada osso são coisas diferentes, e a questão pergunta a segunda. Quem responde pelo local mais comum erra.\n\n**Os três endereços do TCG.** Pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 952), o fêmur distal é o local mais comum, seguido de perto pela tíbia proximal, e o **rádio distal é o terceiro**. Esse terceiro lugar, porém, tem a particularidade de **comportamento mais agressivo**. O SIZÍNIO HEBERT também localiza o TCG nas epífises distal do fêmur, proximal da tíbia e distal do rádio, com cerca de metade dos casos ao redor do joelho.\n\n**Consequência cirúrgica.** O rádio distal agressivo justifica ressecção primária com reconstrução por autoenxerto de fíbula proximal, com artroplastia ou artrodese do punho, enquanto o TCG do joelho costuma ser tratado por curetagem estendida com cimento.\n\nO tema está na seção \"O rádio distal é o pior\" do resumo.",
+  "correta": "**B) do rádio.** O Campbell dá o rádio distal como o terceiro local mais frequente e o de comportamento mais agressivo.",
   "incorretas": {
-   "A": "**Sede pouco frequente.** A tíbia distal não é endereço comum do TGC nem tem esse comportamento particular.",
-   "C": "**A mais comum, não a mais agressiva.** O fêmur distal concentra muitos casos, e sua massa óssea permite curetagem com recidiva menor.",
-   "D": "**Incomum.** O úmero distal é sede rara e não carrega essa fama de agressividade."
+   "A": "**Tíbia** (proximal) é o segundo local mais comum, mas o livro não lhe atribui comportamento mais agressivo; o destaque de agressividade é do rádio.",
+   "C": "**Fêmur** (distal) é o local mais frequente, e a questão pede o mais agressivo; é o erro de confundir frequência com agressividade.",
+   "D": "**Úmero** não está entre os três locais principais do TCG nos livros lidos (fêmur distal, tíbia proximal, rádio distal), e o livro não o associa a evolução mais agressiva."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 26"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0086": {
   "conceito": "Quando um ortopedista recebe uma radiografia com uma lesão óssea num adulto, a primeira pergunta é: de onde veio? O TARO 2022 perguntou de quais primários a metástase óssea de carcinoma vem com mais frequência. A resposta é direta, mas a banca adora trocar essa pergunta pela da origem desconhecida, e entender a diferença é o que separa quem acerta de quem cai na armadilha.\n\n**O tamanho do problema.** O Campbell abre a seção dizendo que **o carcinoma metastático é a malignidade mais comum tratada pelo ortopedista**: cerca de 8.000 sarcomas novos por ano nos Estados Unidos, contra mais de 1 milhão de carcinomas, e **50% a 80% dos pacientes com carcinoma têm metástase óssea na hora da morte** (cap. 27, p. 1028). No capítulo da coluna, as metástases aparecem como **40 vezes mais frequentes que todos os tumores ósseos primários juntos** (cap. 42, p. 1945).\n\n**A ordem geral.** **A maioria dos carcinomas que metastatizam para o osso vem da mama e da próstata, seguidos do pulmão, rim, tireoide e trato gastrointestinal**, em ordem decrescente de frequência (Campbell, p. 1028). Faz sentido: mama e próstata são cânceres muito comuns, que vivem muito tempo e têm grande afinidade pelo osso. Uma mulher com câncer de mama pode conviver anos com a doença, e boa parte desse tempo com metástases ósseas. O Rockwood lista os carcinomas que mais vão ao osso como mama, tireoide, pulmão, rim e próstata (cap. 25), e o Campbell diz que, na coluna, os mais frequentes são mama, pulmão e próstata (cap. 42, p. 1945).\n\n**A virada da origem desconhecida.** O Campbell explica: **nos pacientes com metástase de origem desconhecida, os primários mais comuns são o pulmão e o rim; mama e próstata são sítios primários incomuns nesse grupo**. E dá três explicações possíveis: as lesões primárias da mama e da próstata são detectadas mais facilmente cedo na doença; o câncer de mama e o de próstata podem só metastatizar para o osso relativamente tarde; e o câncer de pulmão e o de rim podem passar despercebidos até muito tarde e metastatizar para o osso relativamente cedo (cap. 27, p. 1028).\n\n**Como não confundir as duas perguntas.** \"Qual primário mais manda metástase para o osso?\" é uma pergunta sobre todos os pacientes com câncer: mama e próstata. \"Qual primário está por trás de uma metástase cujo tumor ninguém conhece?\" é uma pergunta sobre o paciente que chega ao ortopedista sem diagnóstico: pulmão e rim. A banca faz as duas, às vezes na mesma prova.\n\n| Pergunta | Resposta (Campbell, p. 1028) |\n|---|---|\n| Primários que mais metastatizam para o osso | MAMA e PRÓSTATA, depois pulmão, rim, tireoide, gastrointestinal |\n| Primário mais provável na origem desconhecida | PULMÃO e RIM |\n| Primário mais provável distal ao cotovelo ou joelho | PULMÃO |\n\n**Por que a sobrevida longa importa.** O Campbell lembra que pacientes com câncer de mama, próstata e rim costumam viver muitos anos depois do diagnóstico das metástases ósseas (p. 1030), e o Rockwood diz que a maioria das metástases aparece até 10 anos depois do tratamento do primário, com a mama podendo ter latência ainda maior (cap. 25). Um câncer comum, que vive muito e gosta do osso, acumula muitos pacientes com metástase óssea, e é isso que coloca a mama e a próstata no topo.\n\n**O que a banca quis testar.** A ordem geral dos primários que mais metastatizam para o osso.\n\n> **Na prova:** no geral, MAMA e PRÓSTATA; na origem desconhecida, PULMÃO e RIM.",
@@ -1485,16 +1511,21 @@
   "formato": "corrido"
  },
  "tumores-0107": {
-  "conceito": "**Epifisário e subarticular.** O tumor de células gigantes nasce na **epífise** e se estende até o **osso subcondral**, podendo chegar à metáfise, mas com epicentro epifisário. Ocorre **depois do fechamento da fise**, com pico entre 20 e 40 anos; na criança, a mesma topografia aponta para condroblastoma. Por chegar ao subcondral, **ameaça a articulação**, e isso decide entre a curetagem ampliada com adjuvante e a ressecção com reconstrução.\n\n**Onde aparece.** Mais da metade dos casos está no **joelho**, no fêmur distal e na tíbia proximal, seguido do **rádio distal**, onde é mais agressivo, e do **sacro**, a sede típica na coluna. Lesões **múltiplas** são raras e, quando aparecem, obrigam a afastar o hiperparatireoidismo com tumores marrons múltiplos, dosando cálcio e PTH.\n\n**Na prova:** o tumor de células gigantes é **epifisário**, com fise fechada, em lesão geralmente única.",
-  "correta": "**Na região epifisária.** A epífise, com extensão ao osso subcondral, é a topografia que define o tumor.",
+  "conceito": "A pergunta é de topografia: em que parte do osso e em que fase do esqueleto o TCG nasce. A resposta cabe em uma expressão, **epífise do osso maduro**, e as outras alternativas são exceções ou erros.\n\n**A regra.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 952), descreve a lesão como excêntrica na epífise dos ossos longos, geralmente encostada no osso subcondral. A Tabela 28.1 repete o dado e inclui o fêmur distal, a tíbia proximal e o rádio distal. O SIZÍNIO HEBERT diz que o tumor se desenvolve com maior preferência nas epífises e, ao crescer, destrói a epífise até a cartilagem articular.\n\n**As armadilhas.** No esqueleto imaturo o TCG é raro e, quando ocorre, nasce na metáfise; a hipótese do livro é que ele invade a epífise depois do fechamento da fise. A forma multicêntrica existe em apenas 1% a 2%. E, fora o sacro, a coluna é local raro.\n\nO tema está na seção \"Onde nasce: a epífise do esqueleto maduro\" do resumo.",
+  "correta": "**B) na região epifisária.** É a localização típica descrita pelo Campbell e pelo SIZÍNIO HEBERT: epífise, excêntrica, junto ao osso subcondral.",
   "incorretas": {
-   "A": "**Na coluna, é o sacro.** O TGC prefere o sacro; a coluna lombar não é sede característica.",
-   "C": "**Multicêntrico é raro.** Lesões múltiplas são exceção e levantam suspeita de hiperparatireoidismo.",
-   "D": "**Fise aberta afasta.** O tumor aparece após o fechamento da fise; com fise aberta, a hipótese é condroblastoma."
+   "A": "**Coluna lombar** é local raro: o Campbell diz que, fora o sacro, o TCG raramente acomete a coluna.",
+   "C": "**Lesões multicêntricas** ocorrem em 1% a 2% dos casos, de natureza incerta (múltiplos primários ou metástase); o TCG é em regra solitário.",
+   "D": "**Paciente com fise aberta** descreve o oposto do habitual: o TCG é raro no esqueleto imaturo, e a lesão epifisária da criança aponta antes para condroblastoma."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952 e Tabela 28.1 (p. 953)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), p. 869.e1",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0108": {
   "conceito": "Esta questão pede o estágio de ENNEKING de um tumor maligno de alto grau, extracompartimental e sem metástases. É a combinação mais comum na prática, a do osteossarcoma convencional típico: IIB.\n\n**ENNEKING para os malignos** (Campbell, cap. 24, p. 894, Tabela 24.1). O sistema cirúrgico se baseia em **três fatores: o grau histológico, a extensão local e as metástases**. **Estágio I = baixo grau** (bem diferenciado, poucas mitoses, atipia moderada, **risco de metástase menor que 25%**); **estágio II = alto grau** (pouco diferenciado, muitas mitoses, alta relação célula/matriz). **A = intracompartimental**, contido num compartimento limitado por barreiras naturais (**cortical óssea, cartilagem articular, septos fasciais, cápsulas articulares**); **B = extracompartimental**, além do compartimento de origem. **Estágio III = qualquer lesão com metástase, regional ou à distância, independentemente do tamanho ou do grau**; não se distingue linfonodo de metástase distante, porque os dois têm mau prognóstico.\n\n| Estágio | Grau | Local | Metástase |\n|---|---|---|---|\n| IA | baixo | intracompartimental | não |\n| IB | baixo | extracompartimental | não |\n| IIA | alto | intracompartimental | não |\n| IIB | alto | extracompartimental | não |\n| III | qualquer | qualquer | sim |\n\nOs exemplos do livro: **condrossarcoma IA do fêmur proximal** (Fig. 24.5) e **osteossarcoma IIB do úmero proximal** (Fig. 24.6).\n\n**As armadilhas do ENNEKING maligno.**\n\n- **Grau decide o número**: baixo grau = I; alto grau = II.\n- **Compartimento decide a letra**: dentro = A; fora = B. Os compartimentos são limitados pelas barreiras naturais: cortical, cartilagem articular, septos fasciais e cápsulas (Campbell, p. 894).\n- **Metástase leva ao III, sem letra e sem grau**: qualquer metástase, regional ou à distância, num tumor de qualquer grau e de qualquer extensão.\n- **Não existe estágio IV** no ENNEKING. O IV é da AJCC.\n- **O baixo grau tem risco de metástase menor que 25%**, não zero (Campbell, p. 894).\n- O osteossarcoma convencional que rompe a cortical e entra no músculo, sem metástase, é **IIB**; o condrossarcoma de baixo grau dentro do osso é **IA** (Figs. 24.5 e 24.6).\n\n**Aplicando.** Alto grau = II; extracompartimental = B; sem metástase = não é III. Resultado: **IIB**. O Campbell usa como exemplo um osteossarcoma do úmero proximal (Fig. 24.6).\n\n**ENNEKING x AJCC.** Os dois sistemas usam o grau e as metástases; o ENNEKING usa o compartimento, e a AJCC usa o tamanho (5 cm nas partes moles, 8 cm no osso). No ENNEKING, o III é qualquer metástase; na AJCC óssea, o III é a metástase saltitante no mesmo osso, e a metástase à distância é o IV (IV-A pulmão, IV-B fora do pulmão) (Campbell, cap. 24, p. 894 e 896).\n\n**A AJCC, no Campbell** (cap. 24, p. 894 e 896). Para os **sarcomas de partes moles** (Tabela 24.2): **grau, tamanho (até 5 cm ou mais), profundidade (superficial ou profundo à fáscia) e metástases**; I = baixo grau, qualquer tamanho e profundidade; II = alto grau, pequeno de qualquer profundidade ou grande e superficial; III = alto grau, grande e profundo; IV = metástase, **incluindo linfonodo regional**. Para os **sarcomas ósseos** (Tabela 24.3): **grau, tamanho (até 8 cm ou mais) e o local das metástases**; I-A e I-B baixo grau, II-A e II-B alto grau, separados pelos 8 cm; **III = \"skip metastases\", lesões descontínuas no mesmo osso**; **IV-A = metástases pulmonares**; **IV-B = não pulmonares**. O IV foi dividido porque **os pacientes com osteossarcoma e EWING com metástases fora do pulmão têm prognóstico pior** que os que têm só metástase pulmonar.\n\n**As margens no Campbell** (cap. 24, p. 903 e 904, classificação de ENNEKING, Figs. 24.11 e 24.12). Uma \"amputação\" ou \"ressecção\" significa pouco sem o nome da margem.\n\n| Margem | Onde passa o plano | Quando |\n|---|---|---|\n| **Intralesional** | **dentro do tumor**, deixando doença macroscópica: a **citorredução** (\"debulking\") | benigno sintomático quando a alternativa sacrificaria estruturas importantes; paliação na metástase |\n| **Marginal** | **pela pseudocápsula, a zona reativa** | maioria dos benignos e alguns malignos de baixo grau; no alto grau deixa **satélites** |\n| **Ampla** | **em tecido normal**, com o tumor inteiro envolto por um manguito normal; **sem distância definida** | meta nos malignos de alto grau |\n| **Radical** | **todos os compartimentos com tumor, em bloco** | hoje rara: a ampla dá resultado equivalente |\n\n**A pseudocápsula** é o tecido reativo comprimido em volta do tumor, que o faz parecer encapsulado; no alto grau, contém **focos microscópicos (\"satélites\")**. **A qualidade da margem importa mais que a espessura**: um plano fascial contém melhor que um subcutâneo mais grosso. **Se o plano tocar a pseudocápsula em qualquer ponto, a margem é marginal, e não ampla.** Ressecção ou amputação podem ter qualquer das quatro margens: são **oito procedimentos**; a hemipelvectomia por tumor pélvico grande pode ser **marginal**, e uma amputação paliativa, **intralesional**.\n\n**O que a banca quis testar.** Se o candidato monta o estágio pelos três fatores.\n\n> **Na prova:** alto grau + fora do compartimento + sem metástase = IIB.",
@@ -1781,19 +1812,20 @@
   "conferido": false
  },
  "tumores-0128": {
-  "conceito": "**Lítico e excêntrico.** O tumor de células gigantes aparece como lesão **lítica**, sem matriz e em geral sem halo esclerótico, e **excêntrica**, deslocada do eixo central do osso e insuflando a cortical de um lado. A biologia explica a imagem: as células estromais do tumor produzem **RANKL** em excesso, que recruta osteoclastos, e estes reabsorvem osso sem formação compensatória, uma lise pura. É também a base do tratamento com **denosumabe**, que bloqueia o RANKL.\n\n**A lesão típica completa** é epifisária e subarticular, chegando ao osso subcondral, excêntrica, lítica, sem esclerose nas bordas, com cortical afinada ou rompida, entre 20 e 40 anos, com a fise fechada, na região do joelho. Antes de tratar, dosam-se cálcio e PTH, porque o tumor marrom tem histologia igual, e pede-se tomografia de tórax, pela metástase pulmonar benigna.\n\n**Na prova:** tumor de células gigantes é **lítico, excêntrico e epifisário**.",
-  "correta": "**Lítica e excêntrica.** A reabsorção osteoclástica é pura, sem osso reativo, e o crescimento é deslocado do eixo, a partir da epífise.",
+  "conceito": "A radiografia do TCG pode ser descrita em duas palavras, **lítica** e **excêntrica**, e cada uma tem uma razão.\n\n**Lítica.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 952), diz que a lesão é puramente lítica, sem matriz dentro do osso; a matriz só aparece na extensão a partes moles, na recidiva em partes moles e nas metástases pulmonares. Os menos agressivos podem ter uma rima parcial de osso reativo, mas, em geral, não há esclerose. A destruição se explica pelas células gigantes de tipo osteoclástico, que reabsorvem osso sem formação compensatória.\n\n**Excêntrica.** O tumor fica deslocado em relação ao eixo do osso, encostado no osso subcondral da epífise, e pode expandir ou romper a cortical. O SIZÍNIO HEBERT acrescenta que, nas lesões grandes, a excentricidade se perde, porque o tumor ocupa toda a epífise.\n\n**Para fechar o diagnóstico.** A ressonância mostra sinal baixo em T1 e alto em T2, e a radiografia, muitas vezes, basta.\n\nO tema está nas seções \"A radiografia muitas vezes basta\" e \"Por que lítica e excêntrica\" do resumo.",
+  "correta": "**C) lítica e excêntrica.** É a descrição do Campbell: lise pura, sem matriz, deslocada para um lado da epífise e encostada no subcondral.",
   "incorretas": {
-   "A": "**Central é de outras lesões.** Cisto ósseo simples, encondroma e granuloma eosinofílico costumam ser centrais.",
-   "B": "**Contraria o mecanismo.** O tumor é de reabsorção pura e não produz lesão blástica.",
-   "D": "**Densidade errada.** Acerta a excentricidade, mas o tumor é lítico, não blástico."
+   "A": "**Lítica e central** acerta a lise, mas põe a lesão no eixo do osso; o livro descreve o TCG como excêntrico, e só a lesão muito grande perde essa posição.",
+   "B": "**Blástica e central** erra as duas características: o TCG não forma osso denso nem matriz mineralizada dentro do osso, e não é central.",
+   "D": "**Blástica e excêntrica** acerta a posição, mas o tumor não é blástico; o Campbell o descreve como puramente lítico, com matriz apenas fora do osso."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty), Cap. 26"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952 e Tabela 28.1 (p. 953)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0129": {
   "conceito": "O TEOT 2023 repetiu, com outras palavras, a pergunta do TARO 2014: em qual primário uma lesão óssea isolada deve ser tratada com ressecção ampla e intenção curativa? Quando uma banca repete um tema em anos diferentes, é sinal de que ele é central. Vale aproveitar a repetição para fixar o raciocínio inteiro, e não só a palavra \"rim\".\n\n**A exceção curável.** O Campbell afirma que **uma metástase óssea isolada de câncer de rim pode ser tratada com intenção curativa por ressecção ampla**, e ilustra com uma mulher de 77 anos com metástase renal isolada no úmero proximal, tratada com ressecção ampla e endoprótese (cap. 27, p. 1030, Fig. 27.24). O Rockwood explica o porquê: há literatura sugerindo que a **ressecção ampla de uma metástase isolada de carcinoma renal aumenta a sobrevida**, e esses dados **não se aplicam a outros primários**. Numa série de 99 pacientes, a metástase única, a ressecção ampla e a nefrectomia foram preditores independentes de sobrevida, e os 8 pacientes com ressecção ampla da metástase isolada e nefrectomia tiveram sobrevida doença-específica de 100% (cap. 25).\n\n**A lógica em quatro passos.** Diante de uma lesão óssea isolada num paciente com câncer conhecido:\n\n1. **Confirmar que é isolada.** Estadiamento completo, com cintilografia e tomografia de tórax, abdome e pelve. Lembrar que a cintilografia pode ser falso-negativa no rim (Campbell, cap. 24, p. 891); na dúvida, outros exames.\n2. **Confirmar que é metástase do primário conhecido.** O Campbell insiste que, mesmo com câncer conhecido, **a primeira lesão óssea deve ser biopsiada**, para estabelecer a relação firme entre o primário e a lesão, e do mesmo jeito que se biopsia um sarcoma (p. 1028). Um paciente com rim tratado pode ter um sarcoma primário ou outro câncer.\n3. **Saber o primário.** Se for rim, a ressecção ampla com intenção curativa é a indicação; nos outros, o tratamento é paliativo.\n4. **Planejar a reconstrução e o sangramento.** Endoprótese, como na Fig. 27.24 do Campbell, e embolização pré-operatória, porque o rim é hipervascular (Rockwood, cap. 25).\n\n**Comparando com os outros.** A mama e a próstata costumam viver muitos anos com as metástases (Campbell, p. 1030), mas a doença óssea é em geral múltipla, e elas respondem bem à radioterapia, à hormonioterapia e aos bisfosfonatos; operar com margem ampla não muda a sobrevida. O pulmão tem prognóstico curto na maioria. O rim é o único em que a cirurgia muda a história da doença.\n\n**Um erro de conduta comum.** Diante de uma lesão lítica no fêmur proximal de um paciente com rim operado, a tentação é passar uma haste intramedular e mandar para a radioterapia, como se faz com tantas metástases. No rim isolado, isso tem dois problemas: a haste atravessa e contamina todo o canal com células tumorais, e a radioterapia controla mal o tumor radiorresistente (Campbell, p. 1029). Resultado: a lesão continua crescendo em volta do implante, e a chance de cura se perde. Por isso a confirmação de que a lesão é isolada e a biópsia vêm antes de qualquer fixação. O Rockwood, ao falar do fêmur proximal, também prefere a artroplastia cimentada, e não a fixação, quando a lesão destrói a cabeça ou o colo (cap. 25).\n\n| Primário | Lesão isolada | Conduta |\n|---|---|---|\n| RIM | comum, tardia | RESSECÇÃO AMPLA, intenção curativa |\n| Mama | doença geralmente múltipla | paliativo; responde a radioterapia e hormônios |\n| Próstata | doença geralmente múltipla, blástica | paliativo; hormônios e radioterapia |\n| Pulmão | prognóstico curto | paliativo |\n\n**O que a banca quis testar.** De novo, a exceção curável das metástases.\n\n> **Na prova:** a pergunta pode vir como \"ressecção ampla\", \"margem alargada\" ou \"intenção curativa\": a resposta é sempre o RIM com metástase ISOLADA.",
@@ -2157,19 +2189,22 @@
   "conferido": false
  },
  "tumores-0191": {
-  "conceito": "**Frente e trás da vértebra.** Na coluna, a posição dentro da vértebra é um dos melhores filtros diagnósticos. Nos **elementos posteriores** (pedículo, lâmina e processos) ficam o osteoma osteoide, o osteoblastoma, o cisto ósseo aneurismático e o osteocondroma, lesões benignas de jovens. No **corpo vertebral**, nos elementos anteriores, ficam o **tumor de células gigantes**, o hemangioma, o granuloma eosinofílico (vértebra plana), o cordoma, o mieloma, o linfoma e as metástases, em sua maioria de adultos. A regra prática é que lesão posterior em jovem tende a ser benigna, e lesão do corpo em adulto tende a ser maligna.\n\n**A exceção do grupo anterior** é o tumor de células gigantes: benigno, mas localmente agressivo, acomete o corpo vertebral e sobretudo o **sacro**, entre 20 e 40 anos, podendo destruir muito osso; quando irressecável, usa-se o denosumabe.\n\n**Na prova:** entre as opções, o tumor dos elementos anteriores é o **tumor de células gigantes**.",
-  "correta": "**Tumor de células gigantes.** Na coluna, acomete o corpo vertebral e o sacro.",
+  "conceito": "Na coluna, o lugar do tumor dentro da vértebra é um dos melhores filtros diagnósticos, e a questão pergunta pelos **elementos anteriores**, isto é, o corpo vertebral.\n\n**O corpo vertebral.** O capítulo de coluna do Campbell's Operative Orthopaedics, 15ª ed., diz que mais de 50% dos TCG vertebrais acometem apenas o corpo; o texto da p. 1961 aprox. lista hemangioma, granuloma eosinofílico e TCG como as lesões benignas típicas do corpo, e a Figura 49.11 coloca o TCG ao longo do corpo vertebral. O SIZÍNIO HEBERT, no capítulo de tumores benignos, descreve o TCG da coluna como lítico puro do corpo vertebral.\n\n**Os elementos posteriores.** O capítulo de princípios do Campbell lista ali o cisto ósseo aneurismático, o osteoblastoma e o osteoma osteoide, e a Figura 49.11 põe o osteoblastoma e o osteoma osteoide nos arcos e pedículos.\n\n**Clínica.** Dor de longa data e déficit neurológico em 20% a 80%, com lesão expansiva, lítica e septada.\n\nO tema está na seção \"Corpo vertebral, não arco posterior\" do resumo.",
+  "correta": "**C) tumor de células gigantes.** Dos quatro, é o que os livros descrevem no corpo vertebral, e mais de metade dos casos vertebrais acomete só o corpo.",
   "incorretas": {
-   "A": "**Posterior.** O osteocondroma vertebral nasce dos elementos posteriores.",
-   "B": "**Posterior.** O osteoma osteoide é dos elementos posteriores, onde causa escoliose dolorosa.",
-   "D": "**Posterior.** O cisto aneurismático também é dos elementos posteriores, podendo estender-se ao corpo."
+   "A": "**Osteocondroma** não aparece nos livros lidos como tumor do corpo vertebral; o texto do Campbell sobre coluna não o coloca entre as lesões típicas do corpo.",
+   "B": "**Osteoma osteoide** é lesão dos arcos e pedículos, os elementos posteriores, segundo a Figura 49.11 e o capítulo de princípios.",
+   "D": "**Cisto ósseo aneurismático** é lembrado nos elementos posteriores pelo capítulo de princípios, embora a Figura 49.11 o desenhe também no corpo; não é o tumor do corpo mais frequente."
   },
+  "alerta": "O capítulo de coluna cervical do próprio SIZÍNIO HEBERT diz que, nos elementos posteriores, os mais comuns são o TCG, o osteoma osteoide e o osteoblastoma, o que contraria o capítulo de tumores benignos do mesmo livro e o Campbell. O gabarito oficial acompanha os livros que põem o TCG no corpo vertebral.",
   "referencias": [
-   "Lovell and Winter's Pediatric Orthopaedics, 8ª edição (Weinstein, Flynn), Cap. 13"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infections and Tumors of the Spine), seção Giant Cell Tumor, pp. 1955 a 1964 (Fig. 49.11, p. 1956)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), p. 869.e1",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0192": {
   "alerta": "Os livros descrevem o aspecto agressivo das metástases e a destruição cortical como sinal de malignidade, mas não trazem a frase literal de que as bordas são irregulares com quase nenhuma reação periosteal. O gabarito oficial (C) foi preservado; a explicação usa a biologia das lesões descrita no Campbell e no Rockwood.",
@@ -2502,18 +2537,20 @@
   "formato": "corrido"
  },
  "tumores-0241": {
-  "conceito": "**O tumor de células gigantes (TCG).** É um tumor ósseo **benigno, mas localmente agressivo**, formado por células estromais neoplásicas (com mutação no gene **H3F3A**) e por muitas **células gigantes multinucleadas** semelhantes a osteoclastos. As células estromais produzem o **RANKL**, que recruta e ativa as células gigantes, e são elas que destroem o osso.\n\n**O perfil típico.**\n- **Adultos jovens**, de **20 a 40 anos**, com o esqueleto **maduro** (fises fechadas).\n- Discreto predomínio **feminino**.\n- Localização **epifisária e metafisária**, chegando até o **osso subcondral**, quase encostando na articulação.\n- Locais mais comuns: **fêmur distal**, **tíbia proximal**, **rádio distal** e sacro.\n- Radiografia: lesão **lítica**, **excêntrica**, sem esclerose na borda, que pode romper a cortical.\n\n**A classificação radiográfica de Campanacci.**\n- Grau I: lesão bem delimitada, cortical íntegra (latente).\n- Grau II: limites nítidos, cortical afinada e expandida (ativa).\n- Grau III: limites mal definidos, rompe a cortical e invade as partes moles (agressiva).\n\n**O comportamento biológico.**\n- **Recidiva local**: o maior problema. Após curetagem simples, chega a 30 a 50%; com adjuvantes, cai para cerca de 10 a 20%.\n- **Metástase pulmonar**: rara, em cerca de **2 a 3%** dos casos. São os chamados \"**implantes pulmonares benignos**\": a histologia é a mesma do tumor primário, benigna. Costumam surgir após **recidivas locais**, e muitas têm evolução lenta, às vezes regredindo. Por isso, faz-se tomografia de tórax no estadiamento e no seguimento.\n- **Transformação maligna**: rara, geralmente após **radioterapia**.\n\n**O tratamento.**\n- **Curetagem intralesional ampliada**: abrir uma janela grande, curetar, usar a **fresa** de alta rotação e **adjuvantes** (fenol, nitrogênio líquido, eletrocautério, cimento ósseo).\n- **Preenchimento** com **cimento** (que ainda ajuda a ver recidivas, pelo halo de reabsorção) ou enxerto.\n- **Ressecção** em bloco nos casos muito destrutivos ou em ossos dispensáveis (fíbula proximal, ulna distal).\n- **Denosumabe** (anticorpo anti-RANKL): para tumores irressecáveis (sacro, coluna), para reduzir o tumor antes da cirurgia e nas metástases.\n\n**A epidemiologia em números.**\n- Cerca de **5%** dos tumores ósseos primários e cerca de 15 a 20% dos tumores ósseos **benignos**.\n- **Leve predomínio feminino** (diferente da maioria dos tumores ósseos, que predominam nos homens).\n- **Idade**: tipicamente entre **20 e 40 anos**, com o esqueleto maduro. É raro antes do fechamento das fises e depois dos 50 anos.\n- **Local**: o **fêmur distal** é o mais comum, seguido da **tíbia proximal** e do **rádio distal** (o terceiro local).",
-  "correta": "**Correta: D (ocorre tipicamente em pacientes entre 20 e 40 anos).** O tumor de células gigantes acomete tipicamente adultos jovens de **20 a 40 anos**, com o esqueleto maduro. Tem leve predomínio feminino e é mais comum no fêmur distal.",
+  "conceito": "Esta é a questão de panorama do TCG, e cada alternativa testa um número ou um dado epidemiológico. O jeito de resolver é lembrar o retrato: **adulto jovem, mulher, 20 a 40 anos**, tumor que responde por cerca de 5% das neoplasias ósseas.\n\n**O que o Campbell's Operative Orthopaedics, 15ª ed., traz** (cap. 28, p. 952 e Tabela 28.1): frequência de 5% das neoplasias ósseas (Mayo Clinic), mais comum entre 20 e 40 anos, leve predomínio feminino, com fêmur distal, tíbia proximal e rádio distal como locais, nessa ordem. No capítulo de coluna, a frequência é de 4% a 5% dos tumores ósseos primários e as mulheres são afetadas duas vezes mais que os homens. O SIZÍNIO HEBERT repete as idades e diz que a maioria tem as placas de crescimento fechadas, o que ajuda a separar o TCG do cisto ósseo aneurismático e do condroblastoma, mais jovens.\n\n**Os números que enganam.** O 10% da prova é o teto da transformação maligna, não a frequência do tumor.\n\nO tema está na seção \"Quem tem o tumor de células gigantes\" do resumo.",
+  "correta": "**D) ocorre tipicamente em pacientes entre 20 e 40 anos.** É a faixa que o Campbell e o SIZÍNIO HEBERT dão, já com a fise fechada.",
   "incorretas": {
-   "A": "O tumor de células gigantes tem **leve predomínio feminino**, diferente da maioria dos tumores ósseos.",
-   "B": "O **rádio distal** é o **terceiro** local mais comum. O mais comum é o **fêmur distal**, seguido da tíbia proximal.",
-   "C": "O tumor de células gigantes representa cerca de **5%** das neoplasias ósseas primárias, e não 10%."
+   "A": "**Acomete mais homens** inverte o dado: o livro descreve leve predomínio feminino, e no capítulo de coluna as mulheres são duas vezes mais afetadas.",
+   "B": "**É mais comum no rádio distal** troca a ordem dos locais: o mais comum é o fêmur distal, seguido da tíbia proximal; o rádio é o terceiro, apenas o mais agressivo.",
+   "C": "**Representa 10% das neoplasias ósseas** superestima a frequência: o Campbell traz cerca de 5% (4,2% na tabela do capítulo de coluna); 10% é o limite da transformação maligna."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
-   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952 e Tabela 28.1 (p. 953)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infections and Tumors of the Spine), seção Giant Cell Tumor, p. 1955 (Tabela 49.2)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0242": {
@@ -2882,16 +2919,21 @@
   "formato": "corrido"
  },
  "tumores-0268": {
-  "conceito": "**Quem é quem no tumor de células gigantes.** As **células gigantes multinucleadas** dão nome ao tumor e dominam o campo, mas **não são neoplásicas**: derivam da linhagem **monócito-macrófago** e se comportam como **osteoclastos**. As células neoplásicas são as **estromais mononucleares**, de linhagem osteoblástica, que expressam **RANKL** em excesso e recrutam os precursores macrofágicos, que se fundem nas células gigantes.\n\n**O que isso explica.** A **lise pura** na radiografia, sem osso reativo. O efeito do **denosumabe**, anti-RANKL: as células gigantes desaparecem e a lesão ossifica, num efeito supressivo, não curativo. E a semelhança histológica com o **tumor marrom** do hiperparatireoidismo, em que o PTH produz o mesmo recrutamento osteoclástico, razão para dosar **cálcio e PTH antes da biópsia**. Um marcador útil é a mutação **H3F3A (G34W)**, presente na grande maioria dos casos, que ajuda a separar o TCG de outras lesões ricas em células gigantes.\n\n**Na prova:** a célula gigante do TCG é **da linhagem do macrófago**, um osteoclasto; a neoplásica é a estromal.",
-  "correta": "**Macrófago.** As células gigantes vêm da linhagem monócito-macrófago e agem como osteoclastos.",
+  "conceito": "A pergunta quer a célula que predomina no TCG e o gabarito oficial é o macrófago. Convém separar o que a prova cobra do que os livros descrevem, para não decorar a coisa errada.\n\n**O que o Campbell's Operative Orthopaedics, 15ª ed., descreve** (cap. 28, p. 952): numerosas células gigantes multinucleadas, em geral com 40 a 60 núcleos, num mar de células estromais mononucleares cujos núcleos são idênticos aos das gigantes, detalhe que separa o TCG de outros tumores ricos em células gigantes. Podem aparecer macrófagos espumosos, áreas estoriformes de células fusiformes, osso reativo e cisto ósseo aneurismático secundário. O SIZÍNIO HEBERT descreve estroma de células fusiformes ou ovoides com numerosas células gigantes do tipo osteoclástico, uniformemente distribuídas, e tecido muito vascularizado.\n\n**Como ler a questão.** O macrófago é um componente real da lâmina, mas os livros lidos o citam como achado ocasional, e a célula gigante é descrita como tipo osteoclasto; o denosumabe, aliás, reduz as células gigantes osteoclast-like sem atingir o estroma neoplásico. Para a prova, guardar o gabarito oficial desta questão, e responder osteoclasto quando o enunciado falar da célula característica ou da célula gigante.\n\nO tema está na seção \"Histologia: a célula gigante tipo osteoclasto\" do resumo.",
+  "correta": "**A) macrófago.** É o gabarito oficial, apoiado no fato de que há macrófagos (espumosos) na lâmina; o livro, porém, descreve a célula gigante como tipo osteoclástico.",
   "incorretas": {
-   "B": "**Inflamação ou linfoma.** Linfócitos não predominam no TCG.",
-   "C": "**Mieloma.** O plasmócito é a célula do mieloma e do plasmocitoma.",
-   "D": "**Histiocitose.** Eosinófilos abundantes marcam o granuloma eosinofílico."
+   "B": "**Linfócito** não é descrito nos livros lidos como célula do TCG; a lâmina traz células gigantes e estromais mononucleares.",
+   "C": "**Plasmócito** é a célula do mieloma, que o Campbell cita ao falar de hipercalcemia, e não é descrita na histologia do TCG.",
+   "D": "**Eosinófilo** lembra o granuloma eosinofílico, lesão de corpo vertebral do jovem, e não faz parte da descrição histológica do TCG."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "alerta": "Questão com gabarito oficial A (macrófago). O Campbell (cap. 28, p. 952) e o SIZÍNIO HEBERT (cap. 29) descrevem a célula gigante como tipo osteoclástico e a célula predominante como estromal mononuclear, citando macrófagos espumosos só como achado ocasional; nenhum dos livros lidos descreve a célula predominante como semelhante ao macrófago. O gabarito foi mantido.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0269": {
   "conceito": "**As fases não são puras.** A doença de Paget é um distúrbio do **remodelamento**: reabsorção e formação coexistem o tempo todo, e o que muda é qual predomina. Na **fase inicial, lítica**, predomina a **atividade osteoclástica**, feita por osteoclastos gigantes e hipermultinucleados, mas já existe **alguma atividade osteoblástica** tentando acompanhar, e é ela que produz o osso desorganizado da histologia. A imagem é a osteoporose circunscrita do crânio e a **cunha em V**, em folha de grama, avançando da epífise para a diáfise. Depois vêm a fase **mista**, com as duas atividades intensas e osso em mosaico, e a **blástica**, com osso denso, expandido e mecanicamente ruim.\n\n**O que isso explica.** A fosfatase alcalina já está elevada na fase lítica e a cintilografia capta desde o início, o que não aconteceria sem atividade osteoblástica. Os bisfosfonatos, ao inibir o osteoclasto, desligam o gatilho do ciclo.\n\n**Na prova:** a fase inicial do Paget é **osteoclástica com alguma osteoblástica**, nunca sem a outra.",
@@ -3107,16 +3149,21 @@
   "formato": "corrido"
  },
  "tumores-0290": {
-  "conceito": "**A célula que dá nome ao tumor** é a célula gigante multinucleada, com dezenas de núcleos, morfológica e funcionalmente igual a um **osteoclasto**. De fato, é um osteoclasto, da linhagem monócito-macrófago, recrutado para a lesão, e **não é a célula neoplásica**: o clone tumoral são as células estromais mononucleares, de linhagem osteoblástica, que expressam **RANKL** em excesso e recrutam os precursores que se fundem nas células gigantes. Isso explica a lise pura na radiografia, a eficácia do **denosumabe**, anti-RANKL, e a semelhança com o tumor marrom, razão para dosar cálcio e PTH antes da biópsia.\n\n**Osteoclasto ou macrófago?** As duas respostas são compatíveis, já que o osteoclasto vem da linhagem macrofágica. Quando aparecem juntas, a mais precisa é **osteoclasto**, que descreve a célula formada.\n\n**Na prova:** a célula gigante do TCG é um **osteoclasto**, não neoplásico; a neoplásica é a estromal.",
-  "correta": "**Osteoclasto.** A célula gigante do TCG é um osteoclasto recrutado.",
+  "conceito": "Aqui o enunciado fala da **célula característica**, a que dá nome ao tumor: a célula gigante multinucleada. O aspecto dela é o do **osteoclasto**, e o raciocínio fica mais fácil quando se lembra do que o tumor faz com o osso.\n\n**A lâmina.** Pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 952), o TCG tem numerosas células gigantes de 40 a 60 núcleos, no meio de células estromais mononucleares com núcleos iguais aos delas. O SIZÍNIO HEBERT as chama de células gigantes do tipo osteoclástico, uniformemente distribuídas, sobre um estroma de células fusiformes ou ovoides, com mitoses mas sem atipia, e vascularização rica. A mutação H3F3A está em mais de 95% dos casos, segundo a Tabela 49.2 do capítulo de coluna.\n\n**A lógica do tratamento.** O denosumabe reduz as células gigantes osteoclast-like, o que explica o efeito sobre a lise, mas não atinge as células estromais neoplásicas, razão do rebote ao suspender.\n\n**Armadilha.** Os macrófagos espumosos que o Campbell cita são achado acessório, e não a célula característica.\n\nO tema está na seção \"Histologia: a célula gigante tipo osteoclasto\" do resumo.",
+  "correta": "**B) osteoclasto.** É como os dois livros descrevem a célula gigante do TCG: osteoclast-like no Campbell e do tipo osteoclástico no SIZÍNIO HEBERT.",
   "incorretas": {
-   "A": "**Mieloma.** O plasmócito é a célula do mieloma e do plasmocitoma.",
-   "C": "**Origem, não a célula formada.** O macrófago é a linhagem de origem; a célula gigante formada é o osteoclasto, resposta mais precisa.",
-   "D": "**Não característica.** Linfócitos aparecem em inflamação e linfoma."
+   "A": "**Plasmócito** é a célula do mieloma múltiplo e não é descrita na lâmina do TCG.",
+   "C": "**Macrófago** aparece na lâmina apenas como macrófago espumoso, achado ocasional; a célula gigante que caracteriza o tumor é descrita como de tipo osteoclástico.",
+   "D": "**Linfócito** não é citado pelos livros lidos como componente do TCG."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, pp. 952 e 954",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infections and Tumors of the Spine), seção Giant Cell Tumor, p. 1955 (Tabela 49.2)",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0291": {
   "conceito": "Uma criança com tumor cartilaginoso de alto grau levanta uma suspeita antes de tudo: não é condrossarcoma. O Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors), p. 1072, é direto: o condrossarcoma é doença do adulto, raro no adolescente e quase nunca na criança, e o condrossarcoma de alto grau na criança é quase sempre um **osteossarcoma condroblástico**, que fica claro quando se examina a peça inteira.\n\n**O critério que decide.** O Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone), p. 976, dá a regra para separar os dois: o condrossarcoma convencional tem células malignas com abundante matriz cartilaginosa, e, se houver **osteoide maligno, mesmo em pequena quantidade**, o diagnóstico passa a ser osteossarcoma condroblástico. O SIZÍNIO HEBERT (Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (tumores ósseos malignos)) diz o mesmo de outra forma: o condrossarcoma forma cartilagem, mas não osso.\n\n**A consequência para o tratamento.** O Tachdjian recomenda que esse tumor receba quimioterapia como osteossarcoma, ao contrário do condrossarcoma verdadeiro, que não responde. Por isso a lâmina de um adolescente rotulada como condrossarcoma deve levantar a dúvida: errar o diagnóstico é deixar de dar quimioterapia a quem precisa.\n\n**Por que as demais caem.** Condroblastoma maligno não é entidade descrita nessas fontes, e fibrossarcoma congênito e rabdomiossarcoma não fabricam matriz cartilaginosa com osteoide.\n\nO raciocínio está na seção \"O condrossarcoma de alto grau da criança\" do resumo.",
@@ -3245,16 +3292,20 @@
   "formato": "corrido"
  },
  "tumores-0299": {
-  "conceito": "**Por que o denosumabe funciona no TCG.** As células neoplásicas do **tumor de células gigantes** são as estromais mononucleares, que expressam **RANKL** em excesso; as células gigantes são osteoclastos recrutados por esse RANKL. Bloqueando o RANKL com o anticorpo, as células gigantes desaparecem e a lesão **ossifica**, formando uma casca periférica. As indicações são o tumor **irressecável** (sacro, coluna, pelve), o **recidivado** e o uso **neoadjuvante**, para tornar ressecável ou permitir curetagem em vez de ressecção.\n\n**Dois cuidados e os efeitos adversos.** O efeito é supressivo, não curativo, e a suspensão costuma ser seguida de recidiva; além disso, a casca ossificada pode esconder tumor viável e dificultar a curetagem. Os efeitos adversos a prevenir são hipocalcemia, corrigindo cálcio e vitamina D antes, osteonecrose de mandíbula, com avaliação odontológica prévia, e fratura atípica. O mesmo remédio é usado em metástase óssea e osteoporose, com doses e intervalos diferentes.\n\n**Na prova:** anti-RANKL em tumor ósseo é para o **tumor de células gigantes**.",
-  "correta": "**Do tumor de células gigantes.** O RANKL das células estromais é o motor do tumor.",
+  "conceito": "O enunciado entrega o mecanismo, anticorpo monoclonal humano contra o RANKL, e pede a doença. Nos livros lidos, o denosumabe só tem indicação ligada ao **tumor de células gigantes**.\n\n**O mecanismo.** O RANKL é o ligante que ativa o RANK nos precursores de osteoclasto. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 954), descreve o denosumabe como anticorpo totalmente humano que limita a maturação osteoclástica ao impedir a ativação do RANK; o capítulo de coluna diz que o alvo é o RANKL, mediador da osteólise das células gigantes.\n\n**A indicação.** Está aprovado para adultos e esqueleticamente maduros com TCG irressecável ou quando a ressecção causaria morbidade grave. No sacro e na coluna, é usado nos tumores irressecáveis e de forma neoadjuvante nos limítrofes, com a ressalva do capítulo de coluna sobre relatos de transformação sarcomatosa durante o tratamento.\n\n**O limite.** O fármaco não atinge as células estromais neoplásicas: há rebote ao suspender e recidiva alta após a cirurgia, e por isso o livro recomenda cautela.\n\nO tema está na seção \"Denosumabe\" do resumo.",
+  "correta": "**C) do tumor de células gigantes.** É a indicação descrita pelo Campbell para o anticorpo anti-RANKL: TCG irressecável ou com ressecção de grande morbidade.",
   "incorretas": {
-   "A": "**Sem alvo RANKL.** Na osteocondromatose, o tratamento é ressecar as lesões sintomáticas e corrigir deformidades.",
-   "B": "**Sem alvo RANKL.** A encondromatose é lesão cartilaginosa.",
-   "D": "**Outras opções.** O desmoide usa observação ativa e, se preciso, terapias sistêmicas como inibidores de tirosina quinase."
+   "A": "**Osteocondromatose** é doença de exostoses em que o livro não traz uso do denosumabe; o tratamento descrito é cirúrgico, quando necessário.",
+   "B": "**Encondromatose múltipla** não aparece nos livros lidos com indicação do denosumabe.",
+   "D": "**Fibroma desmoide agressivo** não tem, nos livros lidos, indicação do anticorpo; o mecanismo RANKL descrito é o das células gigantes do TCG."
   },
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 954",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infections and Tumors of the Spine), seção Giant Cell Tumor, p. 1957 aprox.",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0301": {
   "conceito": "**Três pistas que convergem.** A lesão está na **epífise**, subarticular, e poucas lesões vivem ali; com a **fise fechada**, a primeira hipótese é o tumor de células gigantes. A idade de **30 anos** cai no pico de 20 a 40, depois do fechamento fisário; a mesma topografia numa criança apontaria para condroblastoma. E o **fêmur distal**, junto com a tíbia proximal, concentra mais da metade dos casos, seguido do rádio distal e do sacro. Somando a lesão **lítica excêntrica**, em geral sem esclerose marginal, que chega ao osso subcondral e pode insuflar a cortical, o diagnóstico é **tumor de células gigantes**.\n\n**Antes da biópsia** dosam-se cálcio e PTH, para afastar o tumor marrom do hiperparatireoidismo, de histologia idêntica, e pede-se tomografia de tórax, pela possibilidade de metástase pulmonar benigna. Como regra para lesões epifisárias: fise aberta sugere condroblastoma; adulto jovem, tumor de células gigantes; adulto mais velho, geodo ou, raramente, condrossarcoma de células claras.\n\n**Na prova:** lesão lítica excêntrica epifisária no fêmur distal aos 30 anos é **tumor de células gigantes**.",
@@ -3355,36 +3406,39 @@
   "conferido": false
  },
  "tumores-0308": {
-  "conceito": "**O tumor de células gigantes (TCG).** É um tumor ósseo **benigno, mas localmente agressivo**, formado por células estromais neoplásicas (com mutação no gene **H3F3A**) e por muitas **células gigantes multinucleadas** semelhantes a osteoclastos. As células estromais produzem o **RANKL**, que recruta e ativa as células gigantes, e são elas que destroem o osso.\n\n**O perfil típico.**\n- **Adultos jovens**, de **20 a 40 anos**, com o esqueleto **maduro** (fises fechadas).\n- Discreto predomínio **feminino**.\n- Localização **epifisária e metafisária**, chegando até o **osso subcondral**, quase encostando na articulação.\n- Locais mais comuns: **fêmur distal**, **tíbia proximal**, **rádio distal** e sacro.\n- Radiografia: lesão **lítica**, **excêntrica**, sem esclerose na borda, que pode romper a cortical.\n\n**A classificação radiográfica de Campanacci.**\n- Grau I: lesão bem delimitada, cortical íntegra (latente).\n- Grau II: limites nítidos, cortical afinada e expandida (ativa).\n- Grau III: limites mal definidos, rompe a cortical e invade as partes moles (agressiva).\n\n**O comportamento biológico.**\n- **Recidiva local**: o maior problema. Após curetagem simples, chega a 30 a 50%; com adjuvantes, cai para cerca de 10 a 20%.\n- **Metástase pulmonar**: rara, em cerca de **2 a 3%** dos casos. São os chamados \"**implantes pulmonares benignos**\": a histologia é a mesma do tumor primário, benigna. Costumam surgir após **recidivas locais**, e muitas têm evolução lenta, às vezes regredindo. Por isso, faz-se tomografia de tórax no estadiamento e no seguimento.\n- **Transformação maligna**: rara, geralmente após **radioterapia**.\n\n**O tratamento.**\n- **Curetagem intralesional ampliada**: abrir uma janela grande, curetar, usar a **fresa** de alta rotação e **adjuvantes** (fenol, nitrogênio líquido, eletrocautério, cimento ósseo).\n- **Preenchimento** com **cimento** (que ainda ajuda a ver recidivas, pelo halo de reabsorção) ou enxerto.\n- **Ressecção** em bloco nos casos muito destrutivos ou em ossos dispensáveis (fíbula proximal, ulna distal).\n- **Denosumabe** (anticorpo anti-RANKL): para tumores irressecáveis (sacro, coluna), para reduzir o tumor antes da cirurgia e nas metástases.",
-  "correta": "**Correta: B (3%).** No tumor de células gigantes, a metástase pulmonar é rara, ocorrendo em cerca de **2 a 3%** dos casos. São implantes de histologia benigna, geralmente após recidiva local, e muitos têm evolução lenta.",
+  "conceito": "A questão cobra um número, e a chave é lembrar que o TCG, apesar da lâmina benigna, **metastatiza para o pulmão em cerca de 3%** dos pacientes. Os outros valores da prova representam o erro por baixo, o erro por cima e a confusão com outra taxa.\n\n**O que os livros dizem.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 952), traz cerca de 3% de metástase pulmonar; o SIZÍNIO HEBERT, 2% a 3%, a maioria pulmonar; o capítulo de princípios, 1% a 5% no estágio 3. O risco é maior nos recidivados e quando há extensão a partes moles. A metástase mantém a histologia benigna: algumas regridem sozinhas ou ficam silenciosas, outras progridem, e a mortalidade entre os que as têm é de cerca de 15%. Conduta: ressecar; quimioterapia teve pouco sucesso.\n\n**Seguimento.** Radiografia de tórax no diagnóstico, e a cada 3 a 4 meses nos 2 primeiros anos, porque a maioria das metástases aparece em 3 anos.\n\nO tema está na seção \"O paradoxo da metástase benigna\" do resumo.",
+  "correta": "**B) 3%.** É o valor do Campbell para a metástase pulmonar do TCG, dentro da faixa de 2% a 3% do SIZÍNIO HEBERT.",
   "incorretas": {
-   "A": "**0,5%** subestima a incidência descrita, de cerca de 2 a 3%.",
-   "C": "**7%** superestima a incidência de metástases pulmonares do tumor de células gigantes.",
-   "D": "**10%** é muito acima do descrito. A metástase pulmonar é um evento raro nesse tumor."
+   "A": "**0,5%** subestima o risco, como se tumor benigno não metastatizasse; os livros trazem de 2% a 3% até 1% a 5%.",
+   "C": "**7%** não é o valor do Campbell nem do SIZÍNIO HEBERT; só cabe na faixa ampla de 1% a 11% citada no capítulo de coluna, e não é o número padrão do capítulo de tumores.",
+   "D": "**10%** é o teto da transformação maligna do TCG, outro evento; não é a incidência de metástase pulmonar."
   },
+  "alerta": "O capítulo de coluna do Campbell (cap. 49) cita metástases em 1% a 11%, faixa que abrange o 7%; o capítulo específico de TCG (cap. 28) traz cerca de 3%, e o gabarito oficial acompanha esse valor.",
   "referencias": [
-   "Campbell's Operative Orthopaedics, 14ª edição (Azar, Beaty)",
-   "Campanacci M. Bone and Soft Tissue Tumors. 2ª edição. Springer; 1999."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952 e p. 954",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), p. 873",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 49 (Infections and Tumors of the Spine), seção Giant Cell Tumor",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
   ],
-  "geradoEm": "2026-10-05",
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0309": {
-  "conceito": "**O que as imagens mostram.** As radiografias têm lesão **lítica**, **expansiva** e excêntrica na extremidade distal do rádio, chegando ao **osso subcondral**, com cortical adelgaçada e fratura. A ressonância mostra massa ocupando a epífise e a metáfise distais, com sinal intermediário e expansão da cortical. A lâmina tem **células gigantes multinucleadas** distribuídas de maneira **uniforme** entre células mononucleares ovoides, com hemácias extravasadas. Aos 40 anos, com a fise fechada, no rádio distal, terceira sede mais comum, e com lise epifisária até o subcondral, tudo converge para **tumor de células gigantes**.\n\n**O rádio distal é sede agressiva.** A cortical é fina, a ruptura para partes moles é precoce e a recidiva após curetagem simples é maior. Com fratura e destruição extensa, considera-se a ressecção em bloco com reconstrução por enxerto de fíbula, artrodese ou translocação ulnar. Antes de qualquer conduta, cálcio e PTH para afastar tumor marrom e tomografia de tórax.\n\n**Na prova:** adulto, rádio distal, lise subcondral e células gigantes uniformes é **TCG**.",
-  "correta": "**Tumor de células gigantes.** Idade, rádio distal, lise subcondral e histologia típica convergem.",
+  "conceito": "Uma mulher de 40 anos chega com fratura do rádio distal, e a imagem mostra que o osso quebrou sobre uma lesão. Fratura patológica é a forma de apresentação em 10% a 30% dos TCG, e o rádio distal é o terceiro local mais frequente.\n\n**A imagem.** As radiografias do punho, em AP e oblíqua, mostram lesão lítica e expansiva na extremidade distal do rádio, que chega junto à superfície articular, com cortical afinada e traço de fratura. O corte axial e os cortes coronais de ressonância mostram uma massa que ocupa a epífise e a metáfise distais, de sinal intermediário e baixo, com expansão da cortical. A lâmina, à direita, tem muitas células gigantes multinucleadas distribuídas de modo uniforme entre células mononucleares ovoides, com hemácias extravasadas.\n\n**Como isso fecha o diagnóstico.** Pelo Campbell's Operative Orthopaedics, 15ª ed., a lesão é lítica e excêntrica na epífise junto ao subcondral, e a lâmina tem núcleos das mononucleares idênticos aos das gigantes. O rádio distal é o local de comportamento mais agressivo, e a conduta pode incluir ressecção com reconstrução por fíbula proximal.\n\nO tema está nas seções \"Clínica e imagem\" e \"O rádio distal é o pior\" do resumo.",
+  "correta": "**D) tumor de células gigantes.** Lesão lítica epifisária no rádio distal de mulher de 40 anos, com fratura patológica e lâmina rica em células gigantes uniformes.",
   "incorretas": {
-   "A": "**Outra histologia.** O osteossarcoma teria osteoide maligno, atipia marcada e padrão metafisário agressivo.",
-   "B": "**Adolescente.** O condroblastoma tem condroblastos, células gigantes esparsas e calcificação em tela de galinheiro.",
-   "C": "**Matriz cartilaginosa.** O condrossarcoma prefere o esqueleto axial e proximal."
+   "A": "**Osteossarcoma** é metafisário, do adolescente, e forma matriz mineralizada; a imagem é de lise pura, e a lâmina não mostra osteoide.",
+   "B": "**Condroblastoma** é epifisário do esqueleto imaturo, com rima esclerótica e calcificação; aos 40 anos, sem esses sinais, o diagnóstico é outro.",
+   "C": "**Condrossarcoma** forma matriz condroide e, quando epifisário, é o raro de células claras; a lâmina da imagem tem células gigantes, e não cartilagem."
   },
   "referencias": [
-   "WHO Classification of Tumours Editorial Board. Soft Tissue and Bone Tumours. 5th ed. IARC; 2020.",
-   "Campanacci M et al. Giant-cell tumor of bone. J Bone Joint Surg Am. 1987;69:106-114.",
-   "Campbell's Operative Orthopaedics, 15ª edição (Azar, Sawyer, Throckmorton), Cap. 28"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, pp. 952 e 953",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), pp. 868 e 869.e1",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
   ],
-  "geradoEm": "2026-09-28",
-  "conferido": false,
-  "formato": "corrido"
+  "geradoEm": "2026-11-02",
+  "conferido": false
  },
  "tumores-0310": {
   "conceito": "**A tríade de McCune-Albright** é **displasia fibrosa poliostótica**, **manchas café-com-leite** de bordas irregulares, as em costa do Maine, e **distúrbio endócrino** por hiperfunção. A endocrinopatia mais lembrada é a **puberdade precoce**, sobretudo em meninas, mas há também hipertireoidismo, excesso de hormônio do crescimento, síndrome de Cushing e hiperprolactinemia. Vem de uma mutação **pós-zigótica em mosaico do GNAS**, que ativa permanentemente a sinalização do AMP cíclico nos tecidos atingidos, o que explica o acometimento assimétrico.\n\n**Um detalhe renal importante.** A displasia fibrosa produz **FGF23**, que faz o rim perder fosfato; a hipofosfatemia piora a qualidade do osso e aumenta as fraturas, e precisa ser procurada. Para não confundir: displasia fibrosa com mixomas intramusculares é a síndrome de **Mazabraud**.\n\n**Na prova:** McCune-Albright é displasia fibrosa poliostótica, manchas e **endocrinopatia**.",
@@ -3860,19 +3914,22 @@
   "conferido": false
  },
  "tumores-0339": {
-  "conceito": "**Lesões epifisárias: idade é a pista.** Poucos tumores nascem na epífise, e a idade (fise aberta ou fechada) praticamente define o diagnóstico mais provável.\n\n**Esqueleto imaturo (fise aberta).**\n- **Condroblastoma**: tumor benigno epifisário típico de adolescentes (10 a 20 anos), lítico, com halo esclerótico e às vezes calcificações condroides; frequente no fêmur distal, tíbia proximal, úmero proximal.\n- Infecção (abscesso de Brodie epifisário), condrossarcoma de células claras (raro).\n\n**Esqueleto maduro (fise fechada).**\n- **Tumor de células gigantes (TCG)**: lesão **lítica, excêntrica, epifisometafisária**, que se estende até o **osso subcondral**, sem halo esclerótico, em adultos de **20 a 40 anos**. Locais: fêmur distal, tíbia proximal (cerca de metade ao redor do joelho), rádio distal, sacro.\n- Condrossarcoma de células claras (epífise do fêmur proximal ou úmero).\n- Geodos (cistos subcondrais da artrose), cistos intraósseos.\n\n**Tumor de células gigantes em detalhes.**\n- Benigno, mas **localmente agressivo** (Enneking 3), com recidiva de 10% a 50% conforme a técnica.\n- Pode dar **metástases pulmonares benignas** em cerca de 2% a 5%.\n- Classificação de Campanacci (I latente, II ativa, III agressiva).\n- Tratamento: **curetagem estendida** com broca de alta rotação e adjuvantes (fenol, nitrogênio líquido, cimento ósseo); ressecção em lesões muito destrutivas; **denosumabe** (anticorpo anti-RANKL) em lesões irressecáveis.\n\n| Fise | Lesão epifisária mais provável |\n|---|---|\n| Aberta (criança/adolescente) | Condroblastoma |\n| Fechada (adulto) | Tumor de células gigantes |\n\n> Lesão epifisária no esqueleto maduro: tumor de células gigantes.",
-  "correta": "**D: tumor de células gigantes (resposta pela bibliografia).** No esqueleto maduro, com a fise fechada, a lesão tumoral epifisária mais provável é o tumor de células gigantes: lítica, excêntrica, epifisometafisária, chegando ao osso subcondral, em adultos de 20 a 40 anos. Na criança, o equivalente epifisário típico é o condroblastoma.",
+  "conceito": "Poucos tumores nascem na epífise, e a **maturidade do esqueleto** quase sempre decide qual deles é. A pergunta fixa o esqueleto maduro, e a regra do Campbell's Operative Orthopaedics, 15ª ed. (cap. 26, p. 869.e1), é direta: lesão epifisária em esqueleto maduro é provavelmente TCG; em imaturo, provavelmente condroblastoma.\n\n**O diferencial epifisário do livro** (Box 26.1, p. 868) tem três nomes: condroblastoma, de 10 a 25 anos; TCG, de 20 a 40 anos; e condrossarcoma de células claras, raro. O TCG é excêntrico na epífise, encostado no subcondral, lítico, em geral sem rima esclerótica nem calcificação, e no imaturo é raro.\n\n**Outros candidatos.** O cisto ósseo aneurismático é mais jovem e diafisário na descrição do SIZÍNIO HEBERT, e aparece como componente secundário do TCG em cerca de 20% dos casos. O encondroma não é citado pelos livros lidos como lesão epifisária.\n\nO tema está na seção \"A regra de ouro da localização\" do resumo.",
+  "correta": "**D) tumor de células gigantes.** Para lesão epifisária no esqueleto maduro, é o diagnóstico mais provável pela regra do capítulo de princípios do Campbell.",
   "incorretas": {
-   "A": "**O cisto ósseo aneurismático** é geralmente metafisário e ocorre principalmente em crianças e adolescentes; pode coexistir com o TCG, mas não é a lesão epifisária típica do adulto.",
-   "B": "**O encondroma** é uma lesão central metafisária ou diafisária, com calcificações condroides, muito comum nas mãos; raramente é epifisário.",
-   "C": "**O condroblastoma** é a lesão epifisária típica do esqueleto **imaturo** (fise aberta), em adolescentes."
+   "A": "**Cisto ósseo aneurismático** é descrito como lesão mais jovem e diafisária pelo SIZÍNIO HEBERT, e no TCG surge como componente secundário; não é o diagnóstico epifisário do adulto.",
+   "B": "**Encondroma** não consta nos livros lidos como lesão epifisária do esqueleto maduro, e o livro não o traz no diferencial da epífise.",
+   "C": "**Condroblastoma** é a lesão epifisária do esqueleto imaturo, entre 10 e 25 anos, com rima e calcificação; a questão fixa o esqueleto maduro."
   },
-  "referencias": [
-   "Canale S.T. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 11ª ed., pg. 776.",
-   "Campanacci M, Baldini N, Boriani S, Sudanese A. Giant-cell tumor of bone. J Bone Joint Surg Am. 1987;69(1):106-114."
-  ],
   "provavel": "D",
-  "geradoEm": "2026-10-05",
+  "alerta": "Esta questão está sem gabarito oficial no banco. A referência da própria questão (Campbell, p. 776 da 11ª ed.) e o Campbell 15 (cap. 26, p. 868 e 869.e1) sustentam a alternativa D, tumor de células gigantes; por isso a resposta mais provável é D.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (General Principles of Tumors), pp. 868 e 869.e1",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone), seção Giant Cell Tumor, pp. 952 a 954, p. 952",
+   "Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (Tumores ósseos benignos e lesões pseudotumorais), seção Tumor de células gigantes",
+   "Resumo OrtoQuestões: Tumor de células gigantes"
+  ],
+  "geradoEm": "2026-11-02",
   "conferido": false
  },
  "tumores-0340": {
