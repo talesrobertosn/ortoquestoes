@@ -254,7 +254,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 892 | CRIAR gonartrose e osteotomias (HEBERT, 5ª ed., cap. 16; Campbell's Operative Orthopaedics, 15ª ed., caps. 10, 8, 50 e 52), mais 36 miniaulas: amputações (14), tendão calcâneo (11) e dor peritrocantérica (11). |
 | 893 | Osteoporose v2 (tratamento ligado ao resumo do Rockwood and Green, cap. 4, com 16 questões novas) e CRIAR fibrocartilagem triangular e punho ulnar (Green's Operative Hand Surgery, 7ª ed., cap. 14 e outros; Campbell 15, cap. 74; Rockwood and Green), mais 14 miniaulas da gonartrose. |
 | 894 | CRIAR raquitismo e osteomalácia (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6; Tachdjian, cap. 38; Rockwood and Green; HEBERT), mais 40 miniaulas: fibrocartilagem triangular (29), osteoporose (6) e raquitismo (5). Alerta da `osteometabolicas-0091` alinhado à bibliografia da banca. |
-| (este PR) | CRIAR dois temas: metatarsalgia e neuroma de MORTON (Campbell's Operative Orthopaedics, 15ª ed., caps. 89, 92 e 87; HEBERT; Tachdjian) e impacto femoroacetabular (The Adult Hip, cap. 35 e caps. 8, 11, 22, 23, 25 e 68; Campbell 15, caps. 7 e 56; HEBERT; Tachdjian). As miniaulas seguem no próximo PR. |
+| 895 | CRIAR dois temas: metatarsalgia e neuroma de MORTON (Campbell's Operative Orthopaedics, 15ª ed., caps. 89, 92 e 87; HEBERT; Tachdjian) e impacto femoroacetabular (The Adult Hip, cap. 35 e caps. 8, 11, 22, 23, 25 e 68; Campbell 15, caps. 7 e 56; HEBERT; Tachdjian). As miniaulas seguem no próximo PR. |
+| (este PR) | CRIAR dois temas: doença de PAGET (Campbell's Operative Orthopaedics, 15ª ed., caps. 4, 27, 29 e 46; Dahlin; Rockwood and Green; The Adult Hip) e politrauma e controle de danos (Rockwood and Green, 10ª ed., cap. 14 e outros; AO; Campbell 15; HEBERT; Skeletal Trauma), mais 31 miniaulas: PAGET (11), metatarsalgia (11) e impacto femoroacetabular (9). |
 
 ## Próximo
 
