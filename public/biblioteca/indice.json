@@ -8329,15 +8329,15 @@
   },
   {
    "id": "campbell15-rigidez-cotovelo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Rigidez do cotovelo",
    "especialidade": "ombro-cotovelo",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026), com o Green's Operative Hand Surgery, 7ª ed. (2017), e o Rockwood and Green's Fractures in Adults, 10ª ed. (2025)",
    "capitulo": "Capítulo 15 · Reconstructive Procedures of the Elbow",
-   "resumo": "Arco funcional de MORREY (30 a 130 graus, 50 de pronação e 50 de supinação); cirurgia se arco menor que 100 graus após fisioterapia e talas; extrínsecas (cápsula, colaterais, OH, consolidação viciosa extra-articular) contra intrínsecas (cartilagem, incongruência, aderências); OH pós-traumática posterolateral, da queimadura posteromedial, neurogênica dentro do músculo e num plano só; HASTINGS e GRAHAM (I, IIA, IIB, IIC, III); procedimento da coluna pela via lateral; medial over-the-top entre flexor ulnar do carpo e pronador para expor e transpor o ulnar; ulnar em risco quando a flexão é menor que 90 a 100 graus ou o arco é muito pequeno; CPM e talas estáticas progressivas; interposição no jovem com articulação destruída; artrodese unilateral em 90 a 100 graus.",
+   "resumo": "Arco funcional de MORREY (30 a 130 graus, 50 de pronação e 50 de supinação); cirurgia se arco menor que 100 graus após fisioterapia e talas; extrínsecas (cápsula, colaterais, OH, consolidação viciosa extra-articular) contra intrínsecas (cartilagem, incongruência, aderências); OH pós-traumática posterolateral, da queimadura posteromedial, neurogênica dentro do músculo e num plano só; HASTINGS e GRAHAM (I sem limitação, IIA flexoextensão, IIB pronossupinação, IIC ambas, III anquilose); BROOKER no quadril (I ilhas a IV anquilose); excisão cedo (3 a 6 meses) ou após maturação (cintilografia e fosfatase alcalina); procedimento da coluna pela via lateral; medial over-the-top entre flexor ulnar do carpo e pronador para expor e transpor o ulnar; ulnar em risco quando a flexão é menor que 90 a 100 graus ou o arco é muito pequeno; CPM e talas estáticas progressivas; interposição no jovem com articulação destruída; artrodese unilateral em 90 a 100 graus.",
    "acesso": "gratis",
-   "minutos": 34,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -8378,6 +8378,11 @@
      "id": "profilaxia-e-momento-da-excisao-da-oh",
      "titulo": "Profilaxia e momento da excisão da OH",
      "radar": "clinico"
+    },
+    {
+     "id": "brooker-a-oh-do-quadril",
+     "titulo": "BROOKER: a OH do quadril",
+     "radar": "fundamento"
     },
     {
      "id": "a-escolha-do-procedimento",
@@ -8443,6 +8448,7 @@
     "ombro-cotovelo-0297",
     "ombro-cotovelo-0065",
     "ombro-cotovelo-0373",
+    "ombro-cotovelo-0386",
     "ombro-cotovelo-0467",
     "ombro-cotovelo-0389",
     "ombro-cotovelo-0427",
@@ -8452,11 +8458,13 @@
     "ombro-cotovelo-0514"
    ],
    "treino": [
+    "ombro-cotovelo-0666",
     "ombro-cotovelo-0664",
     "ombro-cotovelo-0673"
    ],
    "subtemas": [
-    "Rigidez do cotovelo"
+    "Rigidez do cotovelo",
+    "Ossificação heterotópica"
    ]
   },
   {
