@@ -10887,6 +10887,116 @@
    ]
   },
   {
+   "id": "hebert-slap",
+   "versao": 1,
+   "titulo": "Lesões SLAP e do lábio superior",
+   "especialidade": "ombro-cotovelo",
+   "livro": "Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e colaboradores)",
+   "edicao": "5ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 57, 51 e 3)",
+   "capitulo": "Capítulo 5 · Artroscopia do ombro: diagnóstico e tratamento, com o Capítulo 45 · Traumatismos do ombro e o Capítulo 4 · Ombro e cotovelo do mesmo livro e os Capítulos 57 · Arthroscopy of the Upper Extremity, 51 · Shoulder and Elbow Injuries e 3 · Advanced Imaging in Orthopaedics do Campbell's Operative Orthopaedics, 15ª ed.",
+   "resumo": "Acima do equador (3 a 9 horas) a lesão labral anda com manguito e bíceps, abaixo com instabilidade; recesso e forame sublabral (até 70%) e BUFORD (LGUM em corda, sem lábio anterossuperior, 1,5%) são normais; tração, arremesso, compressão e peel-back com cápsula posterior curta; manguito em cerca de 40% e cisto paralabral com atrofia do infraespinal; O'BRIEN dentro = lábio, em cima = AC; biceps load II a 120 graus; artro-RM coronal e ABER; SNYDER II = lábio e âncora soltos com tendão íntegro, IV = alça de balde no bíceps; instabilidade bíceps-labral com hemorragia, granulação e 5 mm (Campbell) ou 3 mm (HEBERT); reparo até 40 anos e no arremessador, tenodese ou tenotomia acima.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-labio-superior-e-a-ancora-do-biceps",
+     "titulo": "O lábio superior e a âncora do bíceps",
+     "radar": "confirmado"
+    },
+    {
+     "id": "variacoes-normais-recesso-sublabial-forame-subla",
+     "titulo": "Variações normais: recesso sublabial, forame sublabral e BUFORD",
+     "radar": "fundamento"
+    },
+    {
+     "id": "mecanismo-tracao-compressao-e-peel-back",
+     "titulo": "Mecanismo: tração, compressão e peel-back",
+     "radar": "fundamento"
+    },
+    {
+     "id": "lesoes-associadas-manguito-instabilidade-e-cisto",
+     "titulo": "Lesões associadas: manguito, instabilidade e cisto paralabral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "exame-fisico-o-teste-de-o-brien",
+     "titulo": "Exame físico: o teste de O'BRIEN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "biceps-load-speed-e-os-outros-testes-do-labio-su",
+     "titulo": "Biceps load, SPEED e os outros testes do lábio superior",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem-a-artro-rm-e-seus-limites",
+     "titulo": "Imagem: a artro-RM e seus limites",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-classificacao-de-snyder",
+     "titulo": "A classificação de SNYDER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "alem-de-snyder-maffet-resnick-beltran-e-morgan",
+     "titulo": "Além de SNYDER: MAFFET, RESNICK, BELTRAN e MORGAN",
+     "radar": "fundamento"
+    },
+    {
+     "id": "diagnostico-artroscopico-a-instabilidade-biceps-",
+     "titulo": "Diagnóstico artroscópico: a instabilidade bíceps-labral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-por-tipo",
+     "titulo": "Tratamento por tipo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "reparar-tenodese-ou-tenotomia-a-idade-decide",
+     "titulo": "Reparar, tenodese ou tenotomia: a idade decide",
+     "radar": "confirmado"
+    },
+    {
+     "id": "a-tecnica-de-reparo-do-tipo-ii",
+     "titulo": "A técnica de reparo do tipo II",
+     "radar": "clinico"
+    },
+    {
+     "id": "pos-operatorio-e-retorno-ao-esporte",
+     "titulo": "Pós-operatório e retorno ao esporte",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "ombro-cotovelo-0563",
+    "ombro-cotovelo-0183",
+    "ombro-cotovelo-0112",
+    "ombro-cotovelo-0092",
+    "ombro-cotovelo-0571",
+    "ombro-cotovelo-0179",
+    "ombro-cotovelo-0435",
+    "ombro-cotovelo-0504",
+    "ombro-cotovelo-0001",
+    "ombro-cotovelo-0312"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Lesões SLAP e do lábio superior"
+   ]
+  },
+  {
    "id": "hebert-tendao-calcaneo",
    "versao": 1,
    "titulo": "Tendão calcâneo",
@@ -21256,15 +21366,15 @@
   },
   {
    "id": "tachdjian6-artrite-septica",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Artrite séptica na criança e no adulto",
    "especialidade": "conceitos-basicos",
    "livro": "Tachdjian's Pediatric Orthopaedics",
-   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 22 e 24), e o Sizínio, Ortopedia e Traumatologia, 5ª ed. (caps. 9.7 e 26)",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 22 e 24), o Sizínio, Ortopedia e Traumatologia, 5ª ed. (caps. 9.4, 9.7 e 26), e o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (caps. 11 e 12)",
    "capitulo": "Capítulo 22 · Arthritis (Acute Transient Synovitis of the Hip), com a seção Septic Arthritis do capítulo de infecções",
-   "resumo": "Metáfises intra-articulares (rádio e úmero proximais, fêmur proximal, tíbia e fíbula distais) e vaso transfisário até 18 meses; proteoglicano 30% em 48 h; falta de membrana basal nos capilares sinoviais; S. aureus (PANTON-VALENTINE), Kingella (PCR, frasco de hemocultura), gonococo no adulto jovem, Salmonella no falciforme; quadril em flexão, abdução e rotação externa; líquido acima de 50.000 com PMN, glicose baixa e proteína alta; KOCHER (febre, não apoio, VHS acima de 40, leucócitos acima de 12.000: 0,2%, 3%, 40%, 93%, 99,6%); via anterior no quadril da criança; punção do joelho lateral no polo superior da patela; 3 semanas de antibiótico; atraso é o pior fator (CHOI).",
+   "resumo": "Sinovite transitória em meninos de 4 a 10 anos (média de 6), recorrência anual de 4%, quadril em flexão, sem antibiótico; metáfises intra-articulares (rádio e úmero proximais, fêmur proximal, tíbia e fíbula distais) e vaso transfisário até 18 meses; proteoglicano 30% em 48 h; falta de membrana basal nos capilares sinoviais; S. aureus (PANTON-VALENTINE), Kingella (PCR, frasco de hemocultura), gonococo no adulto jovem, Salmonella no falciforme; quadril em flexão, abdução e rotação externa; líquido acima de 50.000 com PMN, glicose baixa e proteína alta; KOCHER (febre, não apoio, VHS acima de 40, leucócitos acima de 12.000: 0,2%, 3%, 40%, 93%, 99,6%); via anterior no quadril da criança; punção do joelho lateral no polo superior da patela; 3 semanas de antibiótico; atraso é o pior fator (CHOI).",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 42,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -21317,6 +21427,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "sinovite-transitoria-do-quadril",
+     "titulo": "Sinovite transitória do quadril",
+     "radar": "confirmado"
+    },
+    {
      "id": "imagem-e-puncao-articulacao-por-articulacao",
      "titulo": "Imagem e punção articulação por articulação",
      "radar": "confirmado"
@@ -21345,6 +21460,9 @@
    "questoes": [
     "conceitos-basicos-0250",
     "conceitos-basicos-0187",
+    "pediatria-0678",
+    "pediatria-0897",
+    "pediatria-0799",
     "conceitos-basicos-0287",
     "conceitos-basicos-0411",
     "conceitos-basicos-0166",
@@ -21363,12 +21481,21 @@
     "conceitos-basicos-0050",
     "conceitos-basicos-0089",
     "pediatria-0340",
+    "pediatria-0884",
+    "pediatria-0099",
+    "pediatria-0151",
+    "pediatria-0390",
+    "pediatria-0081",
+    "pediatria-0204",
+    "pediatria-0375",
     "conceitos-basicos-0169",
+    "pediatria-0870",
     "conceitos-basicos-0096"
    ],
    "treino": [],
    "subtemas": [
-    "Artrite séptica"
+    "Artrite séptica",
+    "Sinovite transitória e artrite séptica do quadril"
    ]
   },
   {

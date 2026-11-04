@@ -1,27 +1,27 @@
 ---
 id: tachdjian6-artrite-septica
-versao: 1
+versao: 2
 titulo: Artrite séptica na criança e no adulto
 especialidade: conceitos-basicos
 acesso: gratis
 livro: Tachdjian's Pediatric Orthopaedics
-edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 22 e 24), e o Sizínio, Ortopedia e Traumatologia, 5ª ed. (caps. 9.7 e 26)
+edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 22 e 24), o Sizínio, Ortopedia e Traumatologia, 5ª ed. (caps. 9.4, 9.7 e 26), e o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (caps. 11 e 12)
 capitulo: Capítulo 22 · Arthritis (Acute Transient Synovitis of the Hip), com a seção Septic Arthritis do capítulo de infecções
 autores: John A. HERRING (editor); seção de artrite séptica de Lawson A. B. COPLEY
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 22 (líquido sinovial e Tabela 22.1, p. 930 e 931; sinovite transitória, p. 940 a 942) e capítulo 23 (seção Septic Arthritis, p. 975 a 978, com ultrassom, RM, laboratório, agentes, Tabela 23.2, gonococo e falciforme, p. 946 a 966, 985, 986 e 994 a 996); Campbell's Operative Orthopaedics, 15ª ed., capítulo 24 (Infectious Arthritis, p. 821 a 838 e 838.e2) e capítulo 22 (p. 782 a 790); Sizínio, Ortopedia e Traumatologia, 5ª ed., capítulo 9.7 (Artrite séptica do quadril) e capítulo 26 (artrite séptica), sem página impressa no arquivo. As páginas citadas são as impressas.
-subtemas: Artrite séptica
-resumo: Metáfises intra-articulares (rádio e úmero proximais, fêmur proximal, tíbia e fíbula distais) e vaso transfisário até 18 meses; proteoglicano 30% em 48 h; falta de membrana basal nos capilares sinoviais; S. aureus (PANTON-VALENTINE), Kingella (PCR, frasco de hemocultura), gonococo no adulto jovem, Salmonella no falciforme; quadril em flexão, abdução e rotação externa; líquido acima de 50.000 com PMN, glicose baixa e proteína alta; KOCHER (febre, não apoio, VHS acima de 40, leucócitos acima de 12.000: 0,2%, 3%, 40%, 93%, 99,6%); via anterior no quadril da criança; punção do joelho lateral no polo superior da patela; 3 semanas de antibiótico; atraso é o pior fator (CHOI).
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 22 (líquido sinovial e Tabela 22.1, p. 930 e 931; sinovite transitória, p. 940 a 942) e capítulo 23 (seção Septic Arthritis, p. 975 a 978, com ultrassom, RM, laboratório, agentes, Tabela 23.2, gonococo e falciforme, p. 946 a 966, 985, 986 e 994 a 996); Campbell's Operative Orthopaedics, 15ª ed., capítulo 24 (Infectious Arthritis, p. 821 a 838 e 838.e2) e capítulo 22 (p. 782 a 790); Sizínio, Ortopedia e Traumatologia, 5ª ed., capítulo 9.4 (Sinovite transitória de quadril), capítulo 9.7 (Artrite séptica do quadril) e capítulo 26 (artrite séptica), sem página impressa no arquivo; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., capítulo 11 (p. 355) e capítulo 12 (p. 383 e 384), conferidos em 03/11/2026. As páginas citadas são as impressas.
+subtemas: Artrite séptica; Sinovite transitória e artrite séptica do quadril
+resumo: Sinovite transitória em meninos de 4 a 10 anos (média de 6), recorrência anual de 4%, quadril em flexão, sem antibiótico; metáfises intra-articulares (rádio e úmero proximais, fêmur proximal, tíbia e fíbula distais) e vaso transfisário até 18 meses; proteoglicano 30% em 48 h; falta de membrana basal nos capilares sinoviais; S. aureus (PANTON-VALENTINE), Kingella (PCR, frasco de hemocultura), gonococo no adulto jovem, Salmonella no falciforme; quadril em flexão, abdução e rotação externa; líquido acima de 50.000 com PMN, glicose baixa e proteína alta; KOCHER (febre, não apoio, VHS acima de 40, leucócitos acima de 12.000: 0,2%, 3%, 40%, 93%, 99,6%); via anterior no quadril da criança; punção do joelho lateral no polo superior da patela; 3 semanas de antibiótico; atraso é o pior fator (CHOI).
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado na seção Septic Arthritis do Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e no capítulo 22 do mesmo livro (líquido sinovial e sinovite transitória), costurados com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 24, Infectious Arthritis, e cap. 22, princípios gerais) e com o Sizínio, Ortopedia e Traumatologia, 5ª ed., que dedica um capítulo inteiro ao quadril séptico. As páginas citadas são as impressas. A osteomielite hematogênica e as infecções específicas têm resumos próprios na Biblioteca; aqui o foco é a articulação.
+Este resumo segue a seção Septic Arthritis e o capítulo 22 (líquido sinovial e sinovite transitória) do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 22 e 24), o Sizínio, Ortopedia e Traumatologia, 5ª ed. (quadril séptico e sinovite transitória) e o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. Páginas impressas. A osteomielite tem resumo próprio; aqui o foco é a articulação.
 
 A artrite séptica é uma corrida contra o relógio. A bactéria chega à sinóvia, o pus enche a cápsula e, em **48 horas**, a cartilagem já perdeu uma fração mensurável do proteoglicano, sem que nada apareça na radiografia. No quadril do lactente, a pressão do pus ainda espreme os vasos da epífise e pode luxar a cabeça. Tudo o que a prova cobra deriva dessa corrida: **por onde a infecção entra** (metáfise intra-articular, vaso transfisário), **como reconhecê-la cedo** (a criança que não apoia, o quadril em flexão, abdução e rotação externa, os preditores de KOCHER), **como provar** (a punção e o líquido purulento) e **como interromper** (drenar já, de preferência pela via anterior no quadril infantil, e dar antibiótico pelo tempo certo).
 
-A banca gosta de números: os preditores de KOCHER e suas probabilidades, a celularidade e a química do líquido, a posição do quadril, a via de drenagem, o ponto de punção do joelho e as metáfises intracapsulares. Nos agentes, Kingella, PANTON-VALENTINE e gonococo.
+A banca gosta de números: KOCHER e CAIRD, a celularidade e a química do líquido, a posição do quadril, a via de drenagem, o ponto de punção do joelho, as metáfises intracapsulares e, na sinovite transitória, sexo, idade e recorrência.
 
-> **Na prova:** **metáfise intra-articular** = **úmero proximal, rádio proximal, fêmur proximal, tíbia e fíbula distais**; KOCHER = **febre acima de 38,5 °C, não apoio, VHS acima de 40 mm/h, leucócitos acima de 12.000**, com **0,2%, 3%, 40%, 93,1% e 99,6%**; líquido **acima de 50.000** com **predomínio de neutrófilos**, **glicose baixa e proteína alta**; quadril em **flexão, abdução e rotação externa**; drenagem pela **via anterior** na criança; atraso é o **pior fator prognóstico**.
+> **Na prova:** KOCHER = **febre acima de 38,5 °C, não apoio, VHS acima de 40 mm/h, leucócitos acima de 12.000**, com **0,2%, 3%, 40%, 93,1% e 99,6%**; sinovite transitória em **meninos** com média de **6 anos**, recorrência anual de **4%**.
 
 # Por onde a infecção chega à articulação {radar=confirmado}
 
@@ -59,19 +59,26 @@ como: A SBOT-SP pediu o trio de fises cujas infecções levam à artrite séptic
 armadilha: Trocar proximal por distal (úmero distal, rádio distal e fíbula proximal são extracapsulares) ou escolher o fêmur distal e a tíbia proximal pensando no joelho, que é a articulação mais acometida mas não tem metáfise intracapsular.
 !fim
 
+!questoes central=pediatria-0678 relacionadas=pediatria-0897,pediatria-0799
+conceito: No ombro e no quadril a cápsula cobre a metáfise, e a osteomielite do úmero proximal ou do colo femoral drena para a articulação em qualquer idade; abaixo de 18 a 24 meses o vaso transfisário soma uma segunda via, e osteomielite e artrite séptica andam juntas.
+como: O TARO 2013 perguntou de onde vem a pioartrite do ombro na criança (osteomielite da metáfise proximal do úmero); a SES-DF 2022 pediu certo ou errado para a artrite séptica associada à osteomielite antes dos 2 anos; o TARO 2006 atribuiu aos vasos que cruzam a fise a artrite séptica do quadril secundária à osteomielite do colo.
+armadilha: Explicar toda pioartrite secundária pelo vaso transfisário: depois dos 18 meses a fise é barreira, e o que mantém a comunicação é a metáfise intracapsular.
+alerta: `pediatria-0799` não tem gabarito oficial. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 963 a 975), e o Sizínio (caps. 9.7 e 26) explicam a artrite do quadril secundária à osteomielite do colo pela metáfise intracapsular, válida em qualquer idade; o vaso transfisário só existe até cerca de 18 meses. Como regra geral, o livro sustenta "Errado". O Tachdjian cita o vaso até 18 meses e a questão diz 2 anos em `pediatria-0897`; gabarito Certo mantido.
+!fim
+
 # Como a cartilagem morre {radar=confirmado}
 
 ## A sinóvia que deixa a bactéria passar
 
 Por que a bactéria que circula no sangue pousa justamente na articulação? O Campbell (cap. 24, p. 825) dá três razões anatômicas e uma bioquímica. Primeiro, o **S. aureus**, a causa não gonocócica mais comum, tem **receptores de colágeno**. Segundo, os capilares da sinóvia **não têm membrana basal limitante**, e as bactérias atravessam pelos espaços entre as células endoteliais até o tecido sinovial. Terceiro, os **fibroblastos sinoviais inibem a fagocitose**. O Tachdjian (p. 975) acrescenta um dado experimental que reforça o primeiro ponto: cepas com o gene da **adesina de ligação ao colágeno (Cna)** produziram artrite em **70%** dos camundongos, contra **27%** sem o gene.
 
-Dentro, a sinóvia fica hiperêmica e se enche de **polimorfonucleares**; **mononucleares e linfócitos** só predominam por volta de **3 semanas** (Campbell, p. 825). O infiltrado inicial é rico em neutrófilos e pobre em mononucleares.
+Dentro, a sinóvia fica hiperêmica e se enche de **polimorfonucleares**; **mononucleares e linfócitos** só predominam por volta de **3 semanas** (Campbell, p. 825).
 
 ## Quem degrada a matriz
 
-A cartilagem morre por **perda da substância fundamental** antes de perder o colágeno. O Campbell (p. 825) cita PERRY: a depleção começa por volta de **2 dias** após a inoculação e tem três motores, as **enzimas da resposta inflamatória aguda**, as **toxinas e enzimas bacterianas** e a **estimulação de linfócitos T** na resposta imune tardia. Antígenos bacterianos depositados na sinóvia e toxinas como a **enterotoxina estafilocócica** fazem os linfócitos T proliferarem; eles degradam a substância fundamental e expõem o colágeno às colagenases, o que altera a mecânica da cartilagem e a torna suscetível ao desgaste. A destruição visível aparece em **4 a 6 dias**, e a destruição da cartilagem como um todo, por volta de **4 semanas**.
+A cartilagem morre por **perda da substância fundamental** antes de perder o colágeno. O Campbell (p. 825) cita PERRY: a depleção começa por volta de **2 dias** após a inoculação e tem três motores, as **enzimas da resposta inflamatória aguda**, as **toxinas e enzimas bacterianas** e a **estimulação de linfócitos T** na resposta imune tardia. Toxinas como a **enterotoxina estafilocócica** fazem os linfócitos T proliferarem, e eles degradam a substância fundamental e expõem o colágeno às colagenases. A destruição visível aparece em **4 a 6 dias**, e a destruição da cartilagem como um todo, por volta de **4 semanas**.
 
-O Tachdjian (p. 975) nomeia as moléculas: macrófagos, polimorfonucleares e sinoviócitos liberam **IL-1beta, IL-6, TNF-alfa, imunoglobulina G e enzimas lisossomais**. O modelo de joelho de coelho é o número a decorar: o S. aureus tira **30% do proteoglicano em 48 horas, 50% em 5 dias e 80% em 3 semanas**, e o **colágeno só começa a cair na terceira semana** (28%). O livro admite que não se sabe se a cartilagem consegue repor o proteoglicano depois que a infecção é eliminada, antes de o colágeno ser atacado. É o argumento biológico para a urgência.
+O Tachdjian (p. 975) nomeia as moléculas: macrófagos, polimorfonucleares e sinoviócitos liberam **IL-1beta, IL-6, TNF-alfa, imunoglobulina G e enzimas lisossomais**. O modelo de joelho de coelho é o número a decorar: o S. aureus tira **30% do proteoglicano em 48 horas, 50% em 5 dias e 80% em 3 semanas**, e o **colágeno só começa a cair na terceira semana** (28%). É o argumento biológico para a urgência.
 
 O Sizínio (cap. 26) conta a mesma história com outro vocabulário, o da **condrólise química**: enzimas bacterianas como a **estreptoquinase e a estreptodornase** atacam o ácido condroitinossulfúrico; primeiro some a matriz, depois o colágeno; erosões se soltam como grumos; e as alterações destrutivas já aparecem em **24 a 48 horas**. Ele soma o fator mecânico: o volume de pus aumenta a **pressão intra-articular**, distende a cápsula, causa isquemia da sinóvia (menos nutrição para a cartilagem) e, no quadril e no ombro, **isquemia da epífise**, com necrose e luxação.
 
@@ -88,7 +95,7 @@ O Sizínio (cap. 26) conta a mesma história com outro vocabulário, o da **cond
 | Cerca de 4 semanas | Destruição da cartilagem; luxação, subluxação e osteomielite podem ocorrer | Campbell |
 !fim
 
-Uma consequência clínica fecha a seção. O Campbell (p. 821) estima que **25% a 50%** dos pacientes com artrite séptica terminam com **perda irreversível da função articular**, e por isso chama o diagnóstico precoce de **fator mais crítico** para o prognóstico funcional.
+O Campbell (p. 821) estima que **25% a 50%** dos pacientes com artrite séptica terminam com **perda irreversível da função articular**, e por isso chama o diagnóstico precoce de **fator mais crítico** para o prognóstico funcional.
 
 !questoes central=conceitos-basicos-0287
 conceito: A bactéria chega à sinóvia porque os capilares sinoviais não têm membrana basal limitante, o S. aureus tem receptores de colágeno e os fibroblastos sinoviais inibem a fagocitose; o infiltrado inicial é de polimorfonucleares, e os linfócitos T estimulados por toxinas degradam a substância fundamental.
@@ -103,7 +110,7 @@ alerta: `conceitos-basicos-0287` não tem gabarito oficial. O Campbell's Operati
 
 A artrite séptica pode ocorrer em qualquer idade, mas o Campbell (cap. 24, p. 821) aponta os mais suscetíveis: **crianças pequenas e idosos**, sobretudo quando a articulação já é anormal por **trauma prévio, hemofilia, artrose ou artrite reumatoide**. Ela é **mais frequente no adulto**, mas as **sequelas mais graves são da criança**, principalmente no quadril tratado tarde. As articulações de carga dos membros inferiores somam **61% a 79%** dos casos, e a infecção pode ser múltipla, o que obriga a examinar todas as articulações antes de tratar.
 
-O Quadro 24.1 do Campbell (p. 822) organiza os fatores de risco em cinco grupos. Vale lê-los como uma lista de perguntas de anamnese:
+O Quadro 24.1 do Campbell (p. 822) organiza os fatores de risco em cinco grupos:
 
 !tabela Fatores de risco para artrite infecciosa (Campbell, cap. 24, Quadro 24.1, p. 822)
 | Grupo | Fatores |
@@ -180,7 +187,7 @@ alerta: O Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 955, descreve a gravid
 
 A **Kingella kingae** é um cocobacilo **gram-negativo** aeróbio e fastidioso que coloniza a orofaringe de quase **75%** das crianças entre **6 meses e 4 anos**, exatamente a faixa das infecções invasivas; o pico é de **10 a 24 meses** (Tachdjian, p. 956). O Campbell (p. 825) dá a faixa de **6 a 36 meses**. O quadro é **mais brando**, com marcadores pouco elevados, e a febre pode faltar.
 
-O problema é laboratorial. A Kingella cresce devagar e mal em **meio sólido**, porque o líquido sinovial e o pus inibem seu crescimento. A recomendação é **inocular o aspirado num frasco de hemocultura aeróbia**, onde a diluição em grande volume de caldo reduz os fatores inibitórios, e plaquear o material sólido em ágar sangue ou chocolate ainda na sala cirúrgica (Tachdjian, p. 957). Como mesmo assim a cultura falha, desenvolveu-se a **PCR** para identificar o germe no líquido articular; ela complementa, mas não substitui, a cultura, que continua essencial porque o resultado da PCR demora. O Tachdjian (p. 976) generaliza para a artrite séptica: a cultura do líquido é positiva em apenas **30% a 70%**, e a PCR suplementar melhora a identificação.
+O problema é laboratorial. A Kingella cresce devagar e mal em **meio sólido**, porque o líquido sinovial e o pus inibem seu crescimento. A recomendação é **inocular o aspirado num frasco de hemocultura aeróbia**, que dilui os inibidores, e plaquear o material sólido em ágar sangue ou chocolate ainda na sala cirúrgica (Tachdjian, p. 957). Como mesmo assim a cultura falha, desenvolveu-se a **PCR** para identificar o germe no líquido articular; ela complementa a cultura, que continua essencial. O Tachdjian (p. 976) generaliza para a artrite séptica: a cultura do líquido é positiva em apenas **30% a 70%**, e a PCR suplementar melhora a identificação.
 
 A Kingella é sensível aos **betalactâmicos**; em comunidades com MRSA, o empírico dessa idade deve incluir **clindamicina e ceftriaxona**, e, na cultura negativa, a transição oral costuma ser para **sulfametoxazol-trimetoprima**, que cobre MRSA e Kingella (Tachdjian, p. 957).
 
@@ -196,7 +203,7 @@ No adolescente sexualmente ativo e no adulto jovem, a pergunta muda. O Campbell 
 
 O Tachdjian (p. 958) descreve a infecção gonocócica disseminada na criança em três cenários: **neonatal** (canal de parto), **abuso sexual** e **atividade sexual do adolescente**. A queixa mais comum é **poliartrite** (até 60%), em joelho, tornozelo ou punho; o **exantema** aparece em dois terços, com lesões indolores no tronco, membros, palmas e plantas; é **quatro vezes mais comum em mulheres**. O diagnóstico preferido é o **teste urinário de amplificação de RNA**; a cultura exige ágar chocolate ou **THAYER-MARTIN** com CO2, e o Gram pode mostrar **diplococos gram-negativos intracelulares**. Tratamento: **ceftriaxona venosa por 7 dias** (ou cefotaxima), com azitromicina ou doxiciclina para a clamídia.
 
-A seção clássica de artrite gonocócica do Tachdjian (p. 985 e 986) acrescenta a evolução: a artrite surge **2 a 4 semanas** após a uretrite, começa com **dores fugazes em várias articulações**, febre e mal-estar, e depois se fixa em uma articulação quente e muito dolorosa; joelho, tornozelo, punho e **esternoclavicular** são os locais típicos. O gonococo é achado no líquido na **primeira semana**, depois as culturas negativam. Atenção ao que parece contraditório: a destruição da cartilagem na gonocócica é **rápida**, por isso o antibiótico deve ser imediato, mas, ao contrário das outras artrites sépticas, a **drenagem geralmente é desnecessária**. O diferencial é a síndrome de REITER (poliartrite, uretrite e conjuntivite).
+Na seção clássica (Tachdjian, p. 985 e 986), a artrite surge **2 a 4 semanas** após a uretrite, com dores fugazes em várias articulações antes de se fixar em uma (joelho, tornozelo, punho, **esternoclavicular**); o gonococo só aparece no líquido na **primeira semana**. A cartilagem se destrói **rápido**, por isso o antibiótico é imediato, mas a **drenagem geralmente é desnecessária**. Diferencial: síndrome de REITER.
 
 ## Salmonella e a doença falciforme
 
@@ -224,9 +231,7 @@ A criança falciforme é mais suscetível por **asplenia funcional, infartos tec
 
 O Tachdjian (p. 975) define a suspeita em uma frase: pensar em artrite séptica sempre que uma **criança com aspecto doente** tem **limitação atraumática da mobilidade** e **irritabilidade articular** ao exame. A irritabilidade é o que separa a artrite da osteomielite: na artrite, o **movimento passivo suave** já provoca dor; na osteomielite, mexer a articulação não incomoda tanto (p. 976).
 
-No quadril, que é profundo, os sinais locais clássicos somem. O Sizínio (cap. 9.7) explica: edema, hiperemia e calor são difíceis de ver nos primeiros dias; o que aparece é a **dor progressiva**, que não cede com analgésico e antitérmico comuns, a **febre** e a **limitação intensa da mobilidade ativa e passiva**. Na criança que já anda, **a claudicação ou a impossibilidade de apoiar o membro** são evidentes; os pontos dolorosos estão na face anterior da articulação, na região dos adutores e na compressão do trocânter contra o acetábulo. A dor pode **irradiar pela face anteromedial da coxa até o joelho** e enganar o examinador, que examina o joelho e esquece o quadril.
-
-Esse é o raciocínio por trás de uma questão recorrente: o achado mais comum no exame do quadril séptico não é o edema nem o rubor (escondidos pela profundidade), mas a **claudicação e o não apoio**. Não por acaso, o não apoio é um dos quatro preditores de KOCHER.
+No quadril, que é profundo, os sinais locais clássicos somem. O Sizínio (cap. 9.7) explica: edema, hiperemia e calor são difíceis de ver nos primeiros dias; o que aparece é a **dor progressiva**, que não cede com analgésico e antitérmico comuns, a **febre** e a **limitação intensa da mobilidade ativa e passiva**. Na criança que já anda, **a claudicação ou a impossibilidade de apoiar o membro** são evidentes; os pontos dolorosos estão na face anterior da articulação, na região dos adutores e na compressão do trocânter contra o acetábulo. A dor pode **irradiar pela face anteromedial da coxa até o joelho** e enganar o examinador, que examina o joelho e esquece o quadril. Por isso o achado mais comum no quadril séptico não é o edema nem o rubor, mas a **claudicação e o não apoio**, um dos preditores de KOCHER.
 
 ## Flexão, abdução e rotação externa
 
@@ -248,13 +253,13 @@ No neonato, a resposta inflamatória é **embotada**. O Campbell (cap. 24, p. 82
 
 O Tachdjian (p. 965) separa duas formas neonatais. A primeira acomete bebês de **2 a 8 semanas** que já foram para casa com a mãe, muitas vezes após parto normal a termo; febre e irritabilidade em geral não estão presentes, o laboratório pode não reagir e a radiografia pode ser duvidosa, por isso a **aspiração deve ser liberal**; S. aureus é o germe mais comum, ao lado do estreptococo do grupo B, enterococos e enterobactérias. A segunda forma é a do **recém-nascido de UTI**, de baixo peso, com intubação, cateteres arteriais e venosos ou cateterismo umbilical; aqui a infecção é frequentemente **multifocal**, com sinais de sepse (instabilidade térmica, má perfusão, distensão abdominal, apneia, taquicardia), e surtos de **MRSA em berçários** justificam vancomicina empírica.
 
-O Sizínio (cap. 9.7) usa a mesma divisão (tipo **neonatal**, atípico, e tipo **infantil**, com clínica evidente) e manda internar sempre que houver suspeita.
+O Sizínio (cap. 9.7) separa o tipo **neonatal**, atípico, do **infantil** e manda internar na suspeita.
 
 ## O que fazer com o quadril do lactente
 
 O lactente é o pior cenário porque reúne as duas portas (metáfise intra-articular e vaso transfisário) e uma cabeça femoral cartilaginosa que depende de vasos que correm dentro da cápsula. O Tachdjian (p. 966) é taxativo: até cerca de **18 meses**, as sequelas por **osteonecrose e distúrbio de crescimento** justificam **aspiração e desbridamento cirúrgico precoces** sempre que houver artrite séptica no início da infância. O Campbell (p. 831) acrescenta que o quadril séptico **não diagnosticado** no lactente pode **luxar** e que, depois de drenado, deve ser mantido em **abdução** para reduzir esse risco.
 
-Na imagem, o que aparece cedo é o líquido. O ultrassom mostra o derrame, e a radiografia pode mostrar o **aumento do espaço articular** e o **afastamento lateral da epífise com a linha de SHENTON quebrada**, sinais iniciais de pressão intra-articular alta (Sizínio, cap. 26). Esse é o quadro que uma questão clássica descreve: bebê de dois meses, alta recente da UTI neonatal, febre, irritabilidade e pseudoparalisia, quadril em flexão e rotação externa, derrame no ultrassom e espaço alargado na radiografia. Não há espaço para observação: o diagnóstico é artrite séptica, e o tratamento é **drenagem cirúrgica com antibiótico**.
+Na imagem, o que aparece cedo é o líquido. O ultrassom mostra o derrame, e a radiografia pode mostrar o **aumento do espaço articular** e o **afastamento lateral da epífise com a linha de SHENTON quebrada**, sinais iniciais de pressão intra-articular alta (Sizínio, cap. 26). No lactente com esse quadro não há espaço para observação: é artrite séptica, com **drenagem cirúrgica e antibiótico**.
 
 !questoes central=pediatria-0381
 conceito: No lactente, sobretudo egresso de UTI neonatal, febre, irritabilidade, pseudoparalisia e quadril em flexão e rotação externa com derrame e espaço articular alargado são artrite séptica até prova em contrário, e o tratamento é drenagem cirúrgica com antibiótico.
@@ -266,7 +271,7 @@ armadilha: Rotular de sinovite transitória (doença de criança de 4 a 10 anos,
 
 ## Hemograma, VHS e PCR
 
-O Tachdjian (p. 975) pede, para toda suspeita, **radiografias, hemograma com diferencial, PCR, VHS e hemoculturas**, e as hemoculturas sempre **antes do antibiótico** (p. 955). Cada exame tem uma personalidade.
+O Tachdjian (p. 975) pede, para toda suspeita, **radiografias, hemograma com diferencial, PCR, VHS e hemoculturas**, e as hemoculturas sempre **antes do antibiótico** (p. 955).
 
 O **hemograma** é o mais fraco: na osteomielite, só **25% a 35%** das crianças chegam com leucocitose (p. 953), embora o corte de **12.000** seja um dos preditores de KOCHER.
 
@@ -334,7 +339,7 @@ armadilha: Achar que o líquido infectado tem glicose alta por causa da inflama�
 
 ## O problema clínico
 
-O maior desafio diagnóstico, diz o Tachdjian (p. 976), é separar a artrite séptica da **sinovite transitória do quadril**, que responde por até **0,9%** das idas da criança ao pronto-socorro por ano. Errar para um lado opera sem necessidade; para o outro, deixa um quadril séptico evoluir.
+O maior desafio diagnóstico, diz o Tachdjian (p. 976), é separar a artrite séptica da **sinovite transitória do quadril**, que responde por até **0,9%** das idas da criança ao pronto-socorro por ano.
 
 ## Os quatro preditores
 
@@ -369,36 +374,87 @@ armadilha: Trocar "não apoio" por "claudicação" (a criança que manca ainda a
 
 As questões de probabilidade são contas: identificar quantos preditores o enunciado oferece e ler a linha da tabela. Uma criança com **limitação para apoiar e leucocitose de 13.000** tem **dois** preditores: cerca de **40%**. Se somar **VHS elevada**, sem febre, são **três**: cerca de **93%**. Com **quatro**, a probabilidade de artrite é de **99,6%** no estudo original (93% na validação), o que deixa para a sinovite transitória **menos de 10%** em qualquer das duas séries.
 
-O capítulo 22 do Tachdjian (p. 941), na seção de sinovite transitória, repete KOCHER com duas diferenças que convém conhecer: escreve o corte como VHS de **pelo menos 40 mm/h** e dá **93%** para quatro preditores, omitindo a linha dos três. É o mesmo estudo, citado de forma resumida; a tabela completa e exata está no capítulo 23 (p. 976).
+O corte da VHS muda de redação conforme o livro, e isso decide questões com VHS de exatamente 40. O capítulo 23 do Tachdjian (p. 976) escreve **acima de 40 mm/h**; o capítulo 22 do mesmo livro (p. 941), o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 12, p. 384), e o Sizínio (cap. 9.4) escrevem **pelo menos 40** (maior ou igual). Nos números, o capítulo 22 do Tachdjian dá **menos de 0,2%** sem preditor e **93%** com quatro, omitindo a linha dos três; o Lovell reproduz a série completa (3,0%, 40%, 93,1% e 99,6%) e a validação (9,5%, 35%, 72,8% e 93%).
 
 ## Os limites do modelo
 
-KOCHER não é infalível fora de Boston. LUHMANN encontrou só **59%** de artrite séptica com os quatro preditores (71% num modelo alternativo) e recomendou **ultrassom e artrocentese** como complementos. Outros grupos acharam que a **febre** foi o **melhor preditor isolado** (Tachdjian, p. 976). A lição do livro é que preditores criados numa população perdem desempenho em outra; eles ajudam a decidir entre observar e aspirar o quadril no centro cirúrgico, mas não substituem a vigilância clínica. O Tachdjian recomenda **limiar baixo para internar** e, quando não houver preocupação, revisão ambulatorial em poucos dias.
+KOCHER não é infalível fora de Boston. LUHMANN encontrou só **59%** de artrite séptica com os quatro preditores (71% num modelo alternativo) e recomendou **ultrassom e artrocentese** como complementos. Outros grupos acharam que a **febre** foi o **melhor preditor isolado** (Tachdjian, p. 976). O Tachdjian recomenda **limiar baixo para internar**. O Lovell (p. 384) acrescenta que três ou mais preditores são muito específicos, mas pouco sensíveis.
 
-!questoes relacionadas=conceitos-basicos-0050,conceitos-basicos-0089,pediatria-0340
+!questoes central=conceitos-basicos-0050 relacionadas=conceitos-basicos-0089,pediatria-0340
 conceito: Pelo modelo de KOCHER, dois preditores dão cerca de 40% de artrite séptica, três dão 93,1% e quatro dão 99,6%, o que deixa menos de 10% para a sinovite transitória.
-como: O TARO 2016 cobrou três vezes a conta: não apoio com leucócitos de 13.000 (40%) e não apoio, leucócitos de 13.000 e VHS de 40 mm sem febre (93%); uma prova de Ortopedia pediu a probabilidade de sinovite transitória com quatro preditores (menos de 10%).
+como: O TARO 2016 cobrou três vezes a conta: não apoio com leucócitos de 13.000 (40%) e não apoio, leucócitos de 13.000 e VHS de 40 mm sem febre (93%); o TEPOP 2024 pediu a probabilidade de sinovite transitória com quatro preditores (menos de 10%).
 armadilha: Esquecer que a ausência de febre tira um preditor, ou responder 99% com três fatores; com quatro, a pergunta pode vir invertida (probabilidade de sinovite, e não de artrite).
-alerta: Quando o caso traz VHS de exatamente 40 mm (há versão assim desta questão no banco), o capítulo 23 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 976), define o preditor como VHS acima de 40 mm/h, o que pela letra daria dois preditores (40%); o capítulo 22 do mesmo livro (p. 941) escreve "pelo menos 40 mm/h", que sustenta os três preditores e o gabarito oficial C (93%).
+alerta: Quando o caso traz VHS de exatamente 40 mm (há versão assim desta questão no banco), o capítulo 23 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 976), define o preditor como VHS acima de 40 mm/h, o que pela letra daria dois preditores (40%); o capítulo 22 do mesmo livro (p. 941), o Lovell (p. 384) e o Sizínio escrevem "pelo menos 40", que sustenta os três preditores e o gabarito oficial C (93%).
 !fim
 
-## A sinovite transitória que se deve reconhecer
+## CAIRD: a PCR entra na conta
 
-O capítulo 22 do Tachdjian (p. 940 a 942) descreve a doença que KOCHER tenta separar. A **sinovite transitória** é a **causa mais comum de dor no quadril da criança**, autolimitada e de causa desconhecida, às vezes depois de infecção respiratória alta. Acomete **meninos 2 a 3 vezes** mais, com pico entre **4 e 10 anos** (média de 6). A criança tem claudicação de início rápido e recusa o apoio, com o quadril em **flexão** e resistência à extensão total e à rotação interna, mas a irritabilidade é **vários graus menor** que na artrite séptica e a febre, quando existe, é baixa. É **diagnóstico de exclusão**: leucócitos, VHS e PCR levemente elevados, radiografia normal ou com leve alargamento, ultrassom com derrame. Um derrame mais ecogênico sugere sepse, mas não separa com segurança.
+O grupo de Filadélfia (CAIRD) estudou 53 crianças aspiradas por suspeita de quadril séptico e somou a **PCR** aos critérios de KOCHER. O Lovell (cap. 12, p. 384) dá os números: com os **cinco fatores** (temperatura oral acima de **38,5 °C**, **PCR elevada**, **VHS elevada**, **leucócitos elevados** e **recusa de apoio**), **98%** de artrite séptica; com **quatro**, **93%**. O Sizínio (cap. 9.4) registra a conclusão qualitativa: a PCR foi o **segundo melhor preditor**, depois da **febre**. O Tachdjian 6ª e o Campbell 15ª não citam CAIRD; o Tachdjian (p. 954) só traz do mesmo hospital que a PCR é melhor preditor negativo que positivo.
 
-O curso é a melhor prova: 1 a 2 dias sem andar, normalização em **até 2 semanas**; piora sugere sepse, curso longo sugere AIJ ou espondiloartropatia. O tratamento é repouso, **AINE** e **sem antibiótico** (que confunde o quadro), com **aspiração de qualquer criança que recuse andar e tenha limitação importante**, porque o objetivo da punção é diagnóstico. Não há efeito a longo prazo demonstrado, apesar da coxa magna em 32%.
+!questoes central=pediatria-0884
+conceito: Na série de CAIRD, cinco fatores (febre oral acima de 38,5 °C, PCR, VHS e leucócitos elevados e recusa de apoio) dão 98% de artrite séptica, e quatro dão 93%; no KOCHER, quatro dão 99,6% (93% na validação), mas só com o não apoio entre eles.
+como: A SES-DF 2022 deu uma criança de 7 anos com joelho doloroso e inchado, 38,5 °C, VHS 47, PCR 7 mg/dL e 12.500 leucócitos, e pediu certo ou errado para probabilidade preditiva acima de 95%.
+armadilha: Contar o não apoio que o enunciado não deu, ou contar 38,5 °C como febre quando o corte é acima de 38,5 °C.
+alerta: Gabarito oficial A (Certo) mantido, mas os livros não o sustentam pela letra: KOCHER e CAIRD são modelos do quadril; o caso tem no máximo quatro fatores de CAIRD sem a recusa de apoio (93% no Lovell, p. 384) e, por KOCHER (Tachdjian, p. 976), dois ou três preditores (40% a 93,1%). Acima de 95% só com quatro preditores de KOCHER ou cinco de CAIRD.
+!fim
 
-!tabela Artrite séptica contra sinovite transitória do quadril (Tachdjian, cap. 22, p. 940 a 942, e cap. 23, p. 975 e 976)
+# Sinovite transitória do quadril {radar=confirmado}
+
+## Quem tem e quantas vezes volta
+
+O capítulo 22 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 940 a 942), descreve a doença que KOCHER tenta separar. A **sinovite transitória** é a **causa mais comum de dor no quadril da criança**, autolimitada, de causa desconhecida, às vezes depois de infecção respiratória alta; também se chama sinovite tóxica, quadril irritável, quadril de observação e coxite fugaz. Entre 1 e 13 anos a incidência é de **0,2% ao ano**, e cada criança tem **3%** de chance de tê-la; depois do primeiro episódio, o **risco anual de recorrência é de 4%**. Acomete **meninos 2 a 3 vezes** mais, com pico entre **4 e 10 anos** e **média de cerca de 6 anos**.
+
+Os outros livros concordam no perfil e divergem nos números. O Sizínio (cap. 9.4) dá predomínio masculino de **2:1**, maioria entre **3 e 8 anos** com **pico em torno de 6**, e recidivas de **4%** (LANDIM), **0,2%** (ERKEN e KATZ) e **9%** (BRIGGS), com cerca de **10%** de recorrência no mesmo quadril ou no oposto na história natural. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 11, p. 355), fala em **70% de meninos**, pico entre **3 e 10 anos** e **4% a 17%** de recorrência em 6 meses. Para a prova, menino de cerca de 6 anos e recorrência anual de 4% vêm do Tachdjian.
+
+!questoes central=pediatria-0099 relacionadas=pediatria-0151,pediatria-0390
+conceito: A sinovite transitória acomete meninos 2 a 3 vezes mais, com pico entre 4 e 10 anos e média de cerca de 6 anos (Tachdjian); o Sizínio põe a maioria entre 3 e 8 anos, com pico perto de 6.
+como: A SBOT-SP, o TEOT 2022 e uma prova de Ortopedia pediram sexo e idade média (meninos, 6 anos); o TARO 2012, duas vezes, pediu a faixa principal (5 a 6 anos).
+armadilha: Trocar o sexo (meninas) ou escolher 2 a 3 anos, idade em que a claudicação aguda pede mais desconfiança de artrite séptica.
+!fim
+
+!questoes central=pediatria-0081
+conceito: Depois de um episódio de sinovite transitória, o risco anual de recorrência é de 4% (Tachdjian, p. 940); a incidência é de 0,2% ao ano, e a chance ao longo da infância, de 3%.
+como: O TARO 2014 perguntou a taxa anual de recorrência, entre 0,4%, 4%, 14% e 24%.
+armadilha: Confundir com a incidência anual (0,2%) ou com as séries de recidiva mais altas (9% a 17% no Sizínio e no Lovell), que não são taxas anuais.
+!fim
+
+## O quadro clínico
+
+A apresentação é a criança que passa a mancar e depois **recusa andar ou apoiar**, em **desconforto leve**, com **febre baixa** quando há. O Tachdjian (p. 941) descreve o quadril **em flexão**, arco curto tolerado e resistência à extensão total e à rotação interna; a irritabilidade é **vários graus menor** que na séptica. O Sizínio (cap. 9.4) dá a frase que a banca copiou: **criança saudável**, dor de **início súbito**, que pode ser **referida na face anterior da coxa ou no joelho**, e **limitação funcional do membro, mantido em flexão e rotação externa**; quando há febre, **pode ultrapassar 38 °C**; os sintomas duram de 1 a 10 dias. O Lovell (p. 355) diverge no início, que chama de **frequentemente gradual**, com duração média de **6 dias**.
+
+!questoes central=pediatria-0204
+conceito: Na sinovite transitória há dor aguda em criança de bom estado geral, referida na coxa ou no joelho, com o membro em flexão e rotação externa; a febre, quando presente, pode passar de 38 °C.
+como: O ENARE R4 2023 pediu a afirmação correta entre dor crônica, limitação em flexão e rotação externa, febre que não excede 38 °C, estado geral afetado e dor não referida no joelho.
+armadilha: Aceitar "a febre não excede 38 °C" por lembrar que a febre é baixa; o Sizínio diz que ela pode ultrapassar 38 °C. Estado geral afetado aponta para infecção.
+!fim
+
+## Ultrassom e punção
+
+O laboratório diverge entre os livros: o Tachdjian (p. 941) aceita **elevações leves** de leucócitos, VHS e PCR; o Sizínio (cap. 9.4) diz que os exames são **normais**. A radiografia é normal ou mostra leve alargamento. O **ultrassom** documenta o derrame no **recesso anterior** e costuma preceder a punção; um exame **negativo** desvia a atenção para outras causas, e o derrame mais ecogênico da séptica não separa com segurança (Tachdjian, p. 941). O Sizínio insiste que líquido não faz o diagnóstico: quem confirma é a **evolução transitória**.
+
+A punção tem objetivo **diagnóstico**. O Tachdjian (p. 942) aspira **toda criança que recusa andar e tem limitação importante**, com artrografia se pouco líquido sair, e baixa ainda mais o limiar com índices infecciosos, febre e leucocitose. O tratamento é repouso, **AINE** e **sem antibiótico**, que confunde o quadro; piora sugere sepse, curso longo sugere AIJ ou espondiloartropatia. Não há efeito a longo prazo demonstrado (coxa magna em 32%), e a relação causal com LEGG-CALVÉ-PERTHES nunca foi provada (Sizínio).
+
+## Sinovite contra séptica
+
+No Sizínio (cap. 9.4), a séptica tem **estado geral comprometido, febre alta e bloqueio total do movimento**. O Tachdjian (p. 941) lembra a séptica **de baixo grau** (após antibiótico, germes pouco virulentos) e os imitadores: osteomielite do fêmur proximal ou da pelve, abscesso de BRODIE e **abscesso do psoas** (curso subagudo, limitação específica da rotação interna).
+
+!tabela Artrite séptica contra sinovite transitória do quadril (Tachdjian, cap. 22, p. 940 a 942, e cap. 23, p. 975 e 976; Sizínio, cap. 9.4)
 | Aspecto | Artrite séptica | Sinovite transitória |
 |---|---|---|
 | Idade típica | Qualquer; quadril do lactente é o pior cenário | 4 a 10 anos, média de 6; meninos 2 a 3 vezes |
 | Aspecto geral | Criança com aspecto doente | Desconforto leve |
 | Febre | Frequente; acima de 38,5 °C é preditor | Baixa ou ausente |
-| Dor ao movimento | Intensa, ao movimento passivo suave | Vários graus menor; arco curto tolerado |
-| Laboratório | VHS acima de 40, leucócitos acima de 12.000 | Elevações leves |
+| Dor ao movimento | Intensa, bloqueio total | Vários graus menor; arco curto tolerado |
+| Laboratório | VHS acima de 40, leucócitos acima de 12.000 | Normal ou elevações leves |
 | Líquido | Acima de 50.000, PMN, glicose baixa | 5.000 a 15.000 (sinovite tóxica) |
 | Curso | Progride sem drenagem | Melhora espontânea em até 2 semanas |
 | Tratamento | Drenagem e antibiótico | Repouso, AINE, sem antibiótico |
+!fim
+
+!questoes central=pediatria-0375
+conceito: Criança em idade escolar com dor aguda no quadril, sem febre, PCR normal, VHS abaixo de 40 e leucócitos normais tem no máximo um preditor de KOCHER (o não apoio, cerca de 3%): sinovite transitória.
+como: O TEPOP 2024 deu uma criança de 7 anos com 37,2 °C, PCR abaixo de 0,5 mg/dL, VHS 27 e 5.000 leucócitos, e pediu o diagnóstico entre psoíte, epifisiólise, artrite séptica e sinovite transitória.
+armadilha: Ler a VHS de 27 como alterada (o corte é 40) ou pensar em epifisiólise, que é do adolescente.
 !fim
 
 # Imagem e punção articulação por articulação {radar=confirmado}
@@ -436,6 +492,17 @@ armadilha: Trocar o lado ou a altura; a referência do livro é lateral e no pol
 
 O Tachdjian (p. 977) diz que todos concordam em alguma forma de **descompressão** (aspiração e lavagem, aspirações seriadas, artroscopia ou artrotomia) com antibiótico venoso. A conduta conservadora é aspirar e fazer **artrotomia imediata** se o **Gram mostrar bactéria**, se a celularidade passar de **50.000** ou se a suspeita clínica continuar alta. **Aspirações seriadas** do quadril evitaram cirurgia em **24 de 28** crianças; a **artroscopia** curou **91%** de 76 crianças, com revisão aberta em 4%. O resultado é bom com intervenção em até **4 dias**; o atraso traz loculações de fibrina, pannus e reoperação. O Sizínio (cap. 26) discorda das punções repetidas, que não lavam nem retiram grumos, e faz artrotomia em todos. O Campbell (p. 827) chama a artroscopia de excelente alternativa, com menos reinfecção e internação, e reserva a **drenagem aberta** para o pus profundo, como no **ombro e no quadril**.
 
+## Gram negativo não descarta
+
+O Gram é a única identificação presuntiva em poucas horas, mas o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 12, p. 383), lembra que ele mostra o germe em só **cerca de um terço** dos aspirados, e as culturas são positivas em **30% a 80%** (no Tachdjian, p. 976, **30% a 70%**). Por isso o Tachdjian (p. 977) opera quando há bactéria no Gram, celularidade acima de 50.000 **ou** suspeita clínica alta **independentemente do líquido**. Gram negativo numa criança febril, que não anda e tem sinais flogísticos, não autoriza alta nem antibiótico sem drenagem.
+
+!questoes central=pediatria-0870
+conceito: O Gram identifica o germe em cerca de um terço das artrites sépticas; com clínica sugestiva, o Gram negativo não exclui a infecção, e a conduta é drenar (artrotomia) com antibiótico.
+como: A SES-DF 2024 deu uma criança de 5 anos com febre, joelho com sinais flogísticos e incapacidade de andar, Gram do líquido negativo, e pediu a conduta.
+armadilha: Ler o Gram negativo como "artrite séptica descartada" e dar alta com antibiótico oral, ou rotular de bursite pré-patelar.
+alerta: A alternativa C fala em Gram positivo em apenas 30%; o Lovell (p. 383) dá cerca de um terço, número compatível; o Tachdjian não traz a porcentagem do Gram.
+!fim
+
 ## O quadril da criança: via anterior
 
 O Campbell (p. 831) prefere a **via anterior** na criança pequena por três razões: **poupa a irrigação principal da cabeça femoral**, **reduz a luxação** pós-operatória e tem **reparos mais claros**. No adulto, a **posterior** (OBER) dá drenagem pendente, protegendo o **quadrado femoral**, que leva os vasos da cabeça (p. 832). O Sizínio usa a anterior de SMITH-PETERSEN (cap. 26) e diz que outros preferem a posterolateral ou a medial (cap. 9.7). Depois, o lactente fica em gesso com **abdução moderada** (Campbell, p. 833); o Sizínio usa tração em abdução de **45°** por 5 a 7 dias.
@@ -456,6 +523,6 @@ O Tachdjian (p. 978) lista **artrose precoce, osteonecrose do fêmur proximal, s
 
 # Fechamento {radar=fundamento}
 
-A artrite séptica se decide nas primeiras horas: a bactéria entra pela sinóvia ou pela metáfise intra-articular, a cartilagem perde proteoglicano em 48 horas, e só a punção seguida de drenagem e antibiótico interrompe o processo.
+A artrite séptica se decide nas primeiras horas, e a sinovite transitória é o diagnóstico de exclusão que se faz ao lado dela: a bactéria entra pela sinóvia ou pela metáfise intra-articular, a cartilagem perde proteoglicano em 48 horas, e só a punção seguida de drenagem e antibiótico interrompe o processo.
 
-> **Na prova:** metáfises intra-articulares = **úmero e rádio proximais, fêmur proximal, tíbia e fíbula distais**; capilar sinovial **sem membrana basal**; KOCHER = **febre acima de 38,5 °C, não apoio, VHS acima de 40, leucócitos acima de 12.000** (**40%** com dois, **93%** com três, **99,6%** com quatro); líquido **acima de 50.000 com neutrófilos, glicose baixa, proteína alta**; quadril em **flexão, abdução e rotação externa**; Kingella exige **PCR**; PVL = **mais grave**; joelho puncionado **lateral no polo superior**; quadril infantil drenado pela **via anterior**; **atraso** é o pior prognóstico.
+> **Na prova:** metáfises intra-articulares = **úmero e rádio proximais, fêmur proximal, tíbia e fíbula distais**; capilar sinovial **sem membrana basal**; KOCHER = **febre acima de 38,5 °C, não apoio, VHS acima de 40, leucócitos acima de 12.000** (**40%** com dois, **93%** com três, **99,6%** com quatro); líquido **acima de 50.000 com neutrófilos, glicose baixa, proteína alta**; quadril em **flexão, abdução e rotação externa**; Kingella exige **PCR**; PVL = **mais grave**; joelho puncionado **lateral no polo superior**; quadril infantil drenado pela **via anterior**; **atraso** é o pior prognóstico; sinovite transitória em **meninos** de cerca de **6 anos**, recorrência anual de **4%**, membro em **flexão e rotação externa**, **sem antibiótico**; Gram mostra o germe em só **um terço**.
