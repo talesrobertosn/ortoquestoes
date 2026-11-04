@@ -18,7 +18,8 @@ import { AvisoPrecoGuardado } from '../componentes/vendas/AvisoPrecoGuardado'
 import { diasAte } from '../dados/ritmos'
 import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia } from '../estado/limiteDiario'
-import { usarAssinante } from '../conta/plano'
+import { atualizarAssinante, usarAssinante } from '../conta/plano'
+import { atualizarPremium } from '../conta/premium'
 import {
   AREAS_QUE_CAEM, ASSUNTOS_QUE_MAIS_CAEM, planosDaPessoa, dadosDaPessoa,
   elogioHeroi, fatiaDasDuasPrimeiras, numero, pct, porMes, saudacaoAssinante, tituloHeroi, type Plano,
@@ -110,6 +111,9 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         if (encerrado) return
         if (r.status === 'approved') {
           definirMetricas((await chamarRpc<MetricasConta[]>('obter_estado_conta', {}))[0] ?? null)
+          // O resto do site (selo da conta, limite, recursos pagos) guarda o acesso no aparelho: libera agora.
+          void atualizarAssinante(sessao.user.id)
+          void atualizarPremium(sessao.user.id)
           definirMensagem('Pagamento confirmado. Seu período de acesso está ativo.')
           definirPix(null)
           definirPlanoEscolhido(null)

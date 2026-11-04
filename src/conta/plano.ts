@@ -23,18 +23,38 @@ export function registrarAssinante(assinante: boolean) {
   gravar(CHAVE, assinante)
 }
 
-// Uma consulta por conta a cada carregamento da página basta.
+// Uma consulta por conta a cada carregamento, refeita ao voltar para a aba
+// (o Pix costuma ser pago no app do banco, com o site aberto ao fundo).
 let consultado: string | null = null
+let consultadoEm = 0
+const REVALIDAR_APOS = 30_000
+
+function consultarAssinante(id: string) {
+  consultado = id
+  consultadoEm = Date.now()
+  return chamarRpc<EstadoAssinaturaConta[]>('obter_estado_conta', {})
+    .then(([conta]) => registrarAssinante(assinaturaVigente(conta)))
+    .catch(() => { consultado = null })
+}
+
+/** Depois de um pagamento aprovado: esquece o que estava guardado e consulta de novo. */
+export function atualizarAssinante(id: string) {
+  consultado = null
+  return consultarAssinante(id)
+}
 
 export function usarAssinante(sessao: Session | null): boolean {
   const [assinante] = usarArmazenado<boolean>(CHAVE, false)
   const id = sessao?.user.id
   useEffect(() => {
-    if (!id || consultado === id) return
-    consultado = id
-    chamarRpc<EstadoAssinaturaConta[]>('obter_estado_conta', {})
-      .then(([conta]) => registrarAssinante(assinaturaVigente(conta)))
-      .catch(() => { consultado = null })
+    if (!id) return
+    if (consultado !== id) void consultarAssinante(id)
+    const aoVoltar = () => {
+      if (document.visibilityState === 'visible' && Date.now() - consultadoEm > REVALIDAR_APOS) void consultarAssinante(id)
+    }
+    document.addEventListener('visibilitychange', aoVoltar)
+    window.addEventListener('pageshow', aoVoltar)
+    return () => { document.removeEventListener('visibilitychange', aoVoltar); window.removeEventListener('pageshow', aoVoltar) }
   }, [id])
   return !!id && assinante
 }
