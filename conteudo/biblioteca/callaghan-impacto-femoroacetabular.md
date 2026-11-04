@@ -1,46 +1,34 @@
 ---
 id: callaghan-impacto-femoroacetabular
-versao: 1
-titulo: Impacto femoroacetabular
+versao: 2
+titulo: Impacto femoroacetabular, artroscopia do quadril e lesão labral
 especialidade: quadril
 acesso: gratis
 livro: The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)
 edicao: Edição de 2017
 capitulo: Capítulo 35 · Sequelae of Pediatric Hip Disease
 autores: Stuart L. Weinstein, Ryan M. Ilgenfritz
-fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip: Hip Arthroplasty Surgery (2017), sem capítulo próprio de impacto, com o tema nos caps. 35 (Sequelae of Pediatric Hip Disease, p. 477 a 486), 8 (Anterior Approach, Traditional Table, p. 112 e 113), 11 (Kinematics of the Hip, p. 155 e 162 a 164 aprox.), 22 (History and Physical Examination, p. 327 a 333 aprox.), 23 (Radiographic Evaluation of the Hip, p. 355 a 357 aprox.), 25 (Magnetic Resonance Imaging of the Hip, p. 377 a 392 aprox.) e 68 (Metal on Metal Hip Resurfacing, p. 886 a 888); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (Hip Pain in the Young Adult and Hip Preservation Surgery, p. 358 a 375, com a Tabela 7.2 e a Fig. 7.27 extraídas do PDF) e cap. 56 (p. 2407 a 2412); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., caps. 10 (Quadril do adulto) e 13 (Artroscopia do quadril) e capítulo da epifisiólise, sem página impressa no PDF; Tachdjian's Pediatric Orthopaedics, 6ª ed., caps. 14 (p. 568 e 575 a 577 aprox.), 15 (p. 595 aprox.) e 40. As páginas citadas são as impressas.
-subtemas: Impacto femoroacetabular
-resumo: Came (fêmur, homem jovem atleta, flexão com rotação interna, junção condrolabral, delaminação anterossuperior) x pincer (acetábulo, mulher, coxa profunda, protrusão ou retroversão, lábio esmagado, contragolpe posteroinferior); FADIR e DIRI anterior, FABER posterior, McCARTHY dinâmico; cóccix 1 a 2 cm acima da sínfise; alfa acima de 55; cruzamento + parede posterior + espinha isquiática = retroversão verdadeira (periacetabular reversa); extra-articular posterior = anteversão aumentada e rotação externa diminuída; artro-RM padrão-ouro do lábio; GANZ preserva o ramo profundo da circunflexa medial; mau prognóstico: TÖNNIS 2, espaço menor que 2 mm, idade acima de 40.
+fonte: Livros conferidos localmente em 03/11/2026: The Adult Hip: Hip Arthroplasty Surgery (2017), sem capítulo próprio de impacto ou de artroscopia, com o tema nos caps. 2 (Gross Anatomy of the Hip, p. 37 e 47 aprox.), 35 (Sequelae of Pediatric Hip Disease, p. 477 a 486), 8 (Anterior Approach, Traditional Table, p. 112 e 113), 11 (Kinematics of the Hip, p. 155 e 162 a 164 aprox.), 22 (History and Physical Examination, p. 327 a 333 aprox.), 23 (Radiographic Evaluation of the Hip, p. 355 a 357 aprox.), 25 (Magnetic Resonance Imaging of the Hip, p. 377 a 392 aprox.) e 68 (Metal on Metal Hip Resurfacing, p. 886 a 888); Campbell's Operative Orthopaedics, 15ª ed., cap. 7 (Hip Pain in the Young Adult and Hip Preservation Surgery, p. 358 a 375, com a Tabela 7.2 e a Fig. 7.27 extraídas do PDF) e cap. 56 (Arthroscopy of the Lower Extremity, p. 2398 a 2415, com o Box 56.15 e as Figs. 56.62 e 56.64); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., caps. 9.8 (Artroscopia do quadril na criança e no adolescente), 10 (Quadril do adulto) e 13 (Artroscopia do quadril) e capítulo da epifisiólise, sem página impressa no PDF; Tachdjian's Pediatric Orthopaedics, 6ª ed., caps. 14 (p. 568 e 575 a 577 aprox.), 15 (p. 595 aprox.) e 40. As páginas citadas são as impressas.
+subtemas: Impacto femoroacetabular; Artroscopia do quadril e lesão labral
+resumo: Came (fêmur, homem jovem atleta, flexão com rotação interna, junção condrolabral, delaminação anterossuperior) x pincer (acetábulo, mulher, coxa profunda, protrusão ou retroversão, lábio esmagado, contragolpe posteroinferior); FADIR e DIRI anterior, FABER posterior, McCARTHY dinâmico; cóccix 1 a 2 cm acima da sínfise; alfa acima de 55; cruzamento + parede posterior + espinha isquiática = retroversão verdadeira (periacetabular reversa); extra-articular posterior = anteversão aumentada e rotação externa diminuída; artro-RM padrão-ouro do lábio; GANZ preserva o ramo profundo da circunflexa medial; mau prognóstico: TÖNNIS 2, espaço menor que 2 mm, idade acima de 40; artroscopia: anterolateral primeiro (glúteo superior), anterior pelo sartório e reto femoral (cutâneo femoral lateral, lesado se medializado), posterolateral (ciático); neuropraxia de tração é a complicação mais relatada; lesão labral anterior, 3 horas = anterior nos dois lados; reparo melhor que desbridamento.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-A âncora é o The Adult Hip: Hip Arthroplasty Surgery, de CALLAGHAN, ROSENBERG e RUBASH (2017). Por ser um livro de artroplastia, ele não tem um capítulo inteiro de impacto: o tema aparece na cinemática (cap. 11), na mini-aberta anterior (cap. 8), nos testes de congruência (cap. 22), na radiografia (cap. 23), na RM (cap. 25), na origem pediátrica da deformidade (cap. 35, o do cabeçalho) e no came do candidato a recapeamento (cap. 68). O esqueleto clínico e cirúrgico vem do Campbell's Operative Orthopaedics, 15ª ed., caps. 7 (preservação do quadril) e 56 (artroscopia), com o HEBERT e o Tachdjian.
+A âncora é o The Adult Hip: Hip Arthroplasty Surgery, de CALLAGHAN, ROSENBERG e RUBASH (2017). Por ser um livro de artroplastia, ele não tem capítulo de impacto nem de artroscopia: o tema aparece na anatomia (cap. 2), na cinemática (cap. 11), na mini-aberta anterior (cap. 8), no exame (cap. 22), na radiografia (cap. 23), na RM (cap. 25), na origem pediátrica (cap. 35, o do cabeçalho) e no recapeamento (cap. 68). O esqueleto clínico e cirúrgico vem do Campbell's Operative Orthopaedics, 15ª ed., caps. 7 (preservação do quadril) e 56 (artroscopia), com o HEBERT e o Tachdjian.
 
-A ideia que organiza tudo: **impacto é uma doença de forma que vira doença de cartilagem**. Um fêmur sem cintura (came) ou um acetábulo que cobre demais (pincer) faz o colo bater na borda no fim do movimento, centenas de vezes por dia. Quem apanha primeiro, o lábio ou a cartilagem, depende de qual osso está deformado, e é isso que a banca pergunta. O exame geral está em `callaghan-exame-quadril` e as incidências e ângulos em `callaghan-imagem-quadril`; aqui entra só o que serve ao impacto.
+A ideia que organiza a primeira metade: **impacto é uma doença de forma que vira doença de cartilagem**. Um fêmur sem cintura (came) ou um acetábulo que cobre demais (pincer) faz o colo bater na borda no fim do movimento, centenas de vezes por dia, e quem apanha primeiro, lábio ou cartilagem, depende de qual osso está deformado. A segunda metade trata do **lábio** (anatomia, relógio, padrões de lesão, RM) e da **artroscopia** (compartimentos, tração, portais, complicações, indicações, reparo), que a banca cobra como anatomia: **qual portal, qual músculo, qual nervo**. O exame geral está em `callaghan-exame-quadril` e as incidências em `callaghan-imagem-quadril`.
 
-> **Na prova:** came = **fêmur**, **homem jovem atleta**, **junção condrolabral**, **delaminação**; pincer = **acetábulo**, **mulher**, **lábio esmagado**, **contragolpe posteroinferior**.
+> **Na prova:** came = **fêmur**, **homem jovem atleta**, **junção condrolabral**, **delaminação**; pincer = **acetábulo**, **mulher**, **lábio esmagado**, **contragolpe posteroinferior**; portal anterior = **sartório e reto femoral** e **cutâneo femoral lateral**.
 
 # Duas maneiras de o colo bater na borda {radar=fundamento}
 
-## Definição
+O Campbell (cap. 7, p. 364) define o impacto como **variação anatômica que causa choque entre a junção cabeça-colo e o rebordo dentro do arco funcional**: não precisa de trauma, basta sentar fundo ou agachar. O cap. 56 (p. 2408) acrescenta que o contato lesa lábio e cartilagem e **pode explicar o que se chamava artrose idiopática**; o The Adult Hip (cap. 8, p. 112) fala em **causa de dor e artrose precoce no adulto jovem**.
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 7, p. 364) define o impacto como a **variação anatômica que causa choque entre a junção cabeça-colo e o rebordo acetabular dentro do arco funcional**: não precisa de trauma, basta sentar fundo ou agachar. O cap. 56 (p. 2408) acrescenta que esse contato lesa lábio e cartilagem e **pode explicar o que antes se chamava artrose idiopática**. O The Adult Hip (cap. 23, p. 356 aprox.) fala em morfologia que predispõe a **impacção, ruptura labral, delaminação da cartilagem e degeneração**, e o cap. 8 (HANSEN e HOZACK, p. 112), em **causa de dor e artrose precoce no adulto jovem**.
+- **Came**: o problema é o **fêmur**. A junção cabeça-colo perdeu a concavidade; o bump deixa a cabeça menos esférica e causa **cisalhamento da superfície condrolabral nos extremos do movimento** (The Adult Hip, cap. 8).
+- **Pincer**: o problema é o **acetábulo**, que cobre demais, de forma **global** (coxa profunda, protrusão) ou **focal** (retroversão), e pinça o lábio.
 
-## Came e pincer
-
-- **Came**: o problema é o **fêmur**. A junção cabeça-colo perdeu a concavidade; um "bump" deixa a cabeça menos esférica, como a peça excêntrica de um motor. O The Adult Hip (cap. 8) diz que o bump causa **cisalhamento da superfície condrolabral nos extremos do movimento**.
-- **Pincer**: o problema é o **acetábulo**, que cobre demais, de forma **global** (coxa profunda, protrusão) ou **focal** (retroversão). O colo encontra a borda e pinça o lábio.
-
-O Campbell (cap. 7, p. 364 e 365) acrescenta o **combinado** e a **retrotorção femoral**, em que o colo bate **com menos flexão** que o normal.
-
-## Quanto é misto: divergência
-
-- The Adult Hip (cap. 8, p. 112), citando BECK: misto em **até 30% a 40%**.
-- HEBERT (cap. 13): três tipos, CAM, Pincer e misto, e o misto é o **mais frequente, 70%**.
-- Campbell (cap. 7, p. 365): "segundo alguns autores", **a maioria** é combinada; o cap. 56 diz que **na maioria dos casos coexistem**.
-
-Alternativa que chame o misto de raro está errada em todos; se a banca pedir número, o HEBERT dá 70% e o The Adult Hip, 30% a 40%.
+O Campbell (p. 364 e 365) acrescenta o **combinado** e a **retrotorção femoral**, em que o colo bate **com menos flexão**. Quanto é misto diverge: **até 30% a 40%** no The Adult Hip (cap. 8, citando BECK); **70%, o tipo mais frequente**, no HEBERT (cap. 13); **a maioria** no Campbell (caps. 7 e 56). Alternativa que chame o misto de raro está errada em todos.
 
 !tabela Came x pincer (Campbell, cap. 7, p. 364 e 365, e cap. 56, p. 2408; The Adult Hip, caps. 11, 23 e 25; HEBERT, cap. 13)
 | Aspecto | Came | Pincer |
@@ -62,25 +50,13 @@ armadilha: Dar o contragolpe ao came, o pistol grip ao pincer, ou dizer que epif
 
 # Quem tem: o atleta, a mulher e a criança que cresceu {radar=clinico}
 
-## O homem jovem que pratica esporte
-
-O came é **mais comum em homens jovens atletas** (Campbell, cap. 7, p. 364); o cap. 56 opõe o came do homem jovem ao pincer da **mulher de meia-idade**. A causa é desconhecida, mas o Campbell cita uma **alteração do desenvolvimento da fise lateral, talvez ligada à atividade**. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40) desenvolve a hipótese: SIEBENROCK (2004) descreveu o came como **extensão da fise femoral proximal durante o pico de crescimento**; ele se forma **sobretudo em atletas e no estirão**, e, segundo VIGDORCHIK, **homens ativos têm duas a oito vezes mais chance** de tê-lo. A fise aberta recebe carga repetida em flexão e rotação, e o osso que se forma ali é o bump.
-
-## A mulher e o impacto que não parece came
-
-O The Adult Hip (cap. 25, p. 382) observa que **a imagem difere entre os sexos**: o homem tem o **came clássico**; a mulher, com frequência, **esclerose sutil do colo ou neoformação periosteal**, muitas vezes com **coxa valga** ou um elemento de displasia. Alfa normal na mulher não exclui impacto.
-
-## A criança que cresceu: epifisiólise e PERTHES
+O came é **mais comum em homens jovens atletas** (Campbell, cap. 7, p. 364), e o cap. 56 o opõe ao pincer da **mulher de meia-idade**. A causa provável é a **fise lateral sob carga**: o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40) cita SIEBENROCK, para quem o came é a **extensão da fise femoral proximal no pico de crescimento**, sobretudo em atletas, e VIGDORCHIK, com **homens ativos duas a oito vezes mais propensos**. Na mulher, o The Adult Hip (cap. 25, p. 382) mostra que a imagem difere: em vez do came clássico, **esclerose sutil do colo ou neoformação periosteal**, muitas vezes com **coxa valga** ou displasia. Alfa normal na mulher não exclui impacto.
 
 A ligação que a banca gosta: **epifisiólise e PERTHES deixam um fêmur com came**.
 
-- **Epifisiólise.** O escorregamento é **posteromedial**; fixa-se in situ, **sem reduzir, pelo risco de necrose**, e a deformidade residual frequentemente dá **impacto secundário** (The Adult Hip, cap. 25, p. 383). O Tachdjian (cap. 15, p. 595 aprox.) explica: **o offset diminui e a metáfise proeminente entra na articulação na flexão**, com lesão labral e artrose; se corrigir a deformidade melhora o prognóstico ainda é incerto. O HEBERT (capítulo da epifisiólise) fala em **desvio posteroinferior e retroversão da cabeça**, **CAM mesmo nos desvios moderados**, correção pela **luxação cirúrgica com osteotomia do colo**, valor do sinal de DREHMANN e **parafuso proximal demais como causa de impacto**.
-- **Pistol grip.** No cap. 35 do The Adult Hip (WEINSTEIN e ILGENFRITZ, p. 484 e 485 aprox.), MURRAY achou deformidade em "tilt" em **40% de 200 artroses ditas primárias** e a atribuiu a epifisiólise antiga; STULBERG descreveu o **pistol grip em 40%** dos operados de prótese sem doença prévia; RESNICK contestou, atribuindo a deformidade à remodelação. O capítulo lembra a associação da epifisiólise com **retroversão femoral proximal**. O Campbell (cap. 7, p. 362) usa o nome no adulto: came no AP = **"tilt" ou pistol grip**.
-- **PERTHES.** O Tachdjian (cap. 14, p. 575 e 576 aprox.) lembra que GANZ apresentou o conceito em 2001; a **coxa magna com a parte anterior descoberta** bate em flexão perto de 90 graus, com cisalhamento, abrasão da cartilagem e depois lesão do lábio. **Sexo masculino, trocânter alto e incongruência** associaram-se a condromalácia grave; **o pincer não é o tipo primário no PERTHES**, mas pode somar-se, e a retroversão acetabular é comum (p. 568 aprox.). O The Adult Hip (cap. 23) põe **displasia e LEGG-CALVÉ-PERTHES** entre os predisponentes do came, e o cap. 11 (p. 163 aprox.) explica a demora: as deformidades da infância **passam despercebidas até a vida adulta**.
-
-## Displasia e recapeamento
-
-O Campbell (cap. 7, p. 375) mostra came em **10% a 40% das displasias sintomáticas**, e a reorientação acetabular pode torná-lo sintomático; o cap. 11 do The Adult Hip põe o pincer num **contínuo da displasia**, da cobertura anterior aumentada à protrusão. No cap. 68 (SU, p. 886 e 887), o candidato ideal ao recapeamento (homem com menos de 65 anos e artrose primária) **frequentemente tem came**: cabeça **rodada posterior e medialmente** sobre o colo, offset anterior e superior diminuído; o caso tinha alfa de cerca de **70 graus**, dor havia 3 anos e rotação interna zero.
+- **Epifisiólise.** O escorregamento é **posteromedial**, fixado in situ **sem reduzir**; a deformidade residual dá **impacto secundário** (The Adult Hip, cap. 25, p. 383), porque **o offset diminui e a metáfise entra na articulação em flexão** (Tachdjian, cap. 15, p. 595 aprox.). O HEBERT fala em **CAM mesmo nos desvios moderados**, correção pela **luxação cirúrgica com osteotomia do colo** e **parafuso proximal demais como causa de impacto**. No cap. 35 do The Adult Hip (p. 484 e 485 aprox.), MURRAY achou deformidade em "tilt" em **40% de 200 artroses ditas primárias** e STULBERG, o **pistol grip em 40%** dos operados de prótese; RESNICK atribuiu a deformidade à remodelação.
+- **PERTHES.** A **coxa magna com a parte anterior descoberta** bate em flexão perto de 90 graus, com abrasão da cartilagem e depois lesão labral; **o pincer não é o tipo primário**, mas a retroversão acetabular é comum (Tachdjian, cap. 14, p. 568 e 575 aprox.). O cap. 11 do The Adult Hip explica por que demora: as deformidades da infância **passam despercebidas até a vida adulta**.
+- **Displasia e recapeamento.** Came em **10% a 40% das displasias sintomáticas** (Campbell, cap. 7, p. 375); no cap. 68 do The Adult Hip (p. 886 e 887), o candidato ideal ao recapeamento **frequentemente tem came**, com alfa de cerca de **70 graus** no caso descrito.
 
 !questoes treino=quadril-0240
 conceito: A dor do came é insidiosa, piora com atividade e ao sentar muito tempo, no homem jovem ativo; o risco de artrose secundária está no came do homem, não no pincer da mulher.
@@ -90,23 +66,9 @@ armadilha: Dor de início agudo após trauma ou mulher de meia-idade como grupo 
 
 # O came: a cabeça que entra onde não cabe {radar=confirmado}
 
-## Mecânica
+O Campbell (cap. 7, p. 364) descreve **junção anterossuperior proeminente ou colo com offset diminuído**; em **flexão com rotação interna**, a parte não esférica **gira para dentro do acetábulo**. O The Adult Hip (cap. 11, p. 162 e 163 aprox.) dá a cinemática: o contorno extra **contrai o arco de movimento**, a junção impacta o lábio e depois o rebordo, e o osso reage com **cistos, esclerose e microfraturas**.
 
-O Campbell (cap. 7, p. 364) descreve **junção anterossuperior proeminente ou colo com offset diminuído**; com **flexão, sobretudo com rotação interna**, a parte não esférica **gira para dentro do acetábulo**. O The Adult Hip (cap. 11, p. 162 e 163 aprox.) dá a versão cinemática: o contorno extra, **na base superolateral da cabeça**, reduz funcionalmente o offset e **contrai o arco de abdução**; nos extremos de flexão e abdução, a junção **impacta o lábio e depois o rebordo**, o lábio cicla e se desgasta, e o osso reage com **cistos, esclerose e microfraturas**.
-
-## Cartilagem primeiro, na junção condrolabral
-
-É o ponto mais cobrado. O Campbell (cap. 7, p. 364) descreve a sequência: **ruptura na base do lábio, na junção labrocondral**; a cartilagem adjacente é **comprimida pela cabeça de raio maior**; a cartilagem **se delamina do osso subcondral a partir do rebordo**; o **lábio é relativamente poupado**. O The Adult Hip (cap. 25, p. 382) diz o mesmo pela RM: **cisalhamento na junção condrolabral** e **delaminação basilar focal na margem lateral do teto anterossuperior**. O HEBERT (cap. 13) dá o relógio, **11 a 2 horas**, e o padrão labral: **o lábio se descola da cartilagem hialina na zona de transição**. O came entra como uma espátula por baixo de um azulejo.
-
-O HEBERT gradua a cartilagem pela ICRS: **bolha**, **separação condrolabral**, **bolso** (delaminação ainda estável), **flap** (instável) e **defeito** (osso exposto).
-
-!tabela Padrões de lesão condrolabral (Campbell, cap. 7, p. 364 e 365; The Adult Hip, cap. 25, p. 382; HEBERT, cap. 13)
-| Mecanismo | Onde | Lábio | Cartilagem |
-| --- | --- | --- | --- |
-| Came | acetábulo anterossuperior (11 a 2 h), margem lateral do teto | ruptura na base, descolamento na junção; relativamente poupado | cisalhamento, delaminação a partir do rebordo |
-| Pincer, golpe | rebordo anterossuperior (11 h a 2:30 no direito, arco de 105 graus) | esmagado: clivagem intrassubstancial, cistos, ossificação | relativamente poupada no início |
-| Pincer, contragolpe | cabeça posterior e acetábulo posteroinferior | não é o foco | lesão por alavanca contra a parede posterior |
-!fim
+O ponto mais cobrado é a sequência (Campbell, p. 364): **ruptura na base do lábio, na junção labrocondral**; a cartilagem é **comprimida pela cabeça de raio maior** e **se delamina do osso subcondral a partir do rebordo**; **o lábio é relativamente poupado**. O The Adult Hip (cap. 25, p. 382) vê o mesmo na RM: **cisalhamento na junção condrolabral** e **delaminação na margem lateral do teto anterossuperior**. O HEBERT (cap. 13) dá o relógio, **11 a 2 horas**, e gradua a cartilagem pela ICRS: **bolha, separação condrolabral, bolso** (delaminação ainda estável, que pode ser colada), **flap** (instável) e **defeito**. O came entra como uma espátula por baixo de um azulejo.
 
 !questoes central=quadril-0176 treino=quadril-0624
 conceito: No came, a cabeça de raio maior entra no acetábulo em flexão com rotação interna e cisalha a junção condrolabral anterossuperior; o lábio rompe na base e a cartilagem se delamina a partir do rebordo.
@@ -114,25 +76,13 @@ como: A SBOT-SP, sem ano, pediu a localização mais comum da lesão labral no c
 armadilha: Face posteroinferior é o contragolpe do pincer; a lesão primária começa na transição entre lábio e cartilagem, não na osteocondral.
 !fim
 
-## Came e artrose
-
-O Campbell (cap. 7, p. 364) dá os números: **alfa acima de 65 graus, razão de chances ajustada de 3,5** para artrose; **83 graus, perto de 10**. Mas (p. 365) com incidência de artrose radiográfica de cerca de **8%** na vida, **o came nem sempre leva à artrose**. Essa tensão justifica não operar o assintomático.
+Came e artrose (Campbell, p. 364 e 365): **alfa acima de 65 graus dá razão de chances de 3,5**, e 83 graus, perto de 10; mas, com incidência de artrose de cerca de **8%** na vida, **o came nem sempre leva à artrose**, o que justifica não operar o assintomático.
 
 # O pincer: o acetábulo que abraça demais {radar=confirmado}
 
-## Global ou focal, total ou isolada
+A sobrecobertura é **global (protrusão, coxa profunda)** ou **focal (retroversão)**, e a retroversão tem duas formas que o Campbell (cap. 7, p. 365) chama de distinção **crucial, porque o tratamento muda**: **verdadeira**, com todo o acetábulo rodado e **cobertura posterior deficiente**, e **isolada**, com só o rebordo anterossuperior avançado. O HEBERT (cap. 13) lista **sobrecobertura anterossuperior, coxa profunda, protrusão e retroversão**.
 
-A sobrecobertura pode ser **global (protrusão, coxa profunda)** ou **focal anterior (retroversão)**, e a retroversão tem duas formas que o Campbell (cap. 7, p. 365) chama de distinção **crucial, porque o tratamento muda**: **global ou verdadeira**, com todo o acetábulo rodado e **cobertura posterior deficiente**, e **isolada**, com só o **rebordo anterossuperior avançado**. O HEBERT (cap. 13) lista os subtipos: **sobrecobertura anterossuperior, coxa profunda, protrusão e retroversão**.
-
-## O golpe: o lábio no meio do martelo
-
-O colo bate na borda e **o lábio fica pinçado entre dois ossos**: ele sofre mais que a cartilagem, **relativamente poupada** (Campbell, cap. 7, p. 365), o inverso do came. O HEBERT (cap. 13) descreve o lábio **alargado, cístico, lacerado, ossificado ou ausente**, uma **endentação no colo**, e **clivagem dentro da substância do lábio**; e faz o contraste: no pincer a lesão é **dentro do lábio**, no came o lábio **se descola da cartilagem**. O pincer piora com o tempo: **osso reativo no rebordo e calcificação do lábio** aumentam a sobrecobertura (Campbell), e a **ossificação labral** gera impacto ainda maior (HEBERT).
-
-## O contragolpe
-
-Quando o colo encosta na borda anterior e o movimento continua, o colo vira **fulcro** e a cabeça é empurrada para trás. O Campbell (cap. 7, p. 365) descreve o **"contre-coup" na cabeça femoral posterior e no acetábulo posteroinferior**, pela alavanca do colo no rebordo; o cap. 56 (p. 2408), a cabeça **alavancada para fora do soquete** com lesão condral **posteroinferior**; o The Adult Hip (cap. 25, p. 382), o padrão **"contre coup" associado ao pincer**; o HEBERT, o choque do colo com o **rebordo anterossuperior proeminente**. Grave: **contragolpe é do pincer, e é posteroinferior**.
-
-O pincer é **mais comum na mulher** e liga-se à artrose **menos que o came**: **20% dos quadris com prótese por artrose tinham retroversão, contra 5% dos assintomáticos**, e o acetábulo fundo teve **razão de risco de 2,4** no estudo de Copenhague (Campbell, cap. 7, p. 365).
+No golpe, **o lábio fica entre dois ossos** e sofre mais que a cartilagem, **relativamente poupada**: o inverso do came. O HEBERT descreve o lábio **alargado, cístico, lacerado, ossificado ou ausente**, a **endentação no colo** e a **clivagem dentro da substância**; a ossificação aumenta o impacto. No contragolpe, o colo encosta na borda anterior, vira **fulcro** e a cabeça é alavancada para trás: lesão na **cabeça posterior e no acetábulo posteroinferior** (Campbell, cap. 7, p. 365; cap. 56, p. 2408; The Adult Hip, cap. 25, p. 382; HEBERT). Grave: **contragolpe é do pincer, e é posteroinferior**. O pincer é **mais comum na mulher** e liga-se menos à artrose: **20% das próteses por artrose tinham retroversão, contra 5% dos assintomáticos** (Campbell, p. 365).
 
 !questoes central=quadril-0165 relacionadas=quadril-0024 treino=quadril-0278
 conceito: No pincer, o colo bate no rebordo anterossuperior, o lábio é esmagado (clivagem, cistos, ossificação) e a cabeça é alavancada para trás, lesando a cabeça posterior e o acetábulo posteroinferior: o contragolpe.
@@ -141,46 +91,96 @@ armadilha: Responder came, ou localizar o contragolpe na região lateral ou ante
 alerta: O enunciado de `quadril-0024` (TARO 2016) fala em contragolpe "no impacto do tipo CAM"; Campbell (caps. 7 e 56), The Adult Hip (cap. 25) e HEBERT (cap. 13) atribuem o contragolpe ao pincer. A localização do gabarito oficial (D) é a dos livros e se mantém; a premissa do tipo é que diverge.
 !fim
 
-# O lábio: a gaxeta {radar=clinico}
+# O lábio acetabular: anatomia, vascularização e função {radar=clinico}
 
-O The Adult Hip (cap. 11, p. 155 aprox.) descreve o lábio **circundando toda a borda, exceto a inferomedial**, aprofundando o soquete e funcionando como **gaxeta**: veda a articulação e cria **pressão negativa**. Sob carga, a cartilagem expulsa líquido; com o lábio íntegro, a pressão sobe e distribui a força. Sem o selo (p. 163 aprox.), o líquido vaza, a pressão cai, aumentam a carga e o creep da cartilagem, e a **tensão de contato sobe até 90%**, com o **pico deslocado para a borda lateral**. O HEBERT (cap. 13) soma: **mais 22% de área e 33% de volume**, **10 a 15 vezes mais resistente que a cartilagem** sob tensão, **avascular nos dois terços profundos** (leito de osso sangrante para fixar), reparo com âncoras a **6 a 8 mm**, sem eversão, restaurando o selo. O Campbell (cap. 56, p. 2407 e 2408) descreve a **reconstrução** com aloenxerto ou autoenxerto (grácil, redondo, cápsula, cabeça indireta do reto, banda iliotibial), segmentar ou circunferencial, **sem enxerto superior e sem diferença entre as duas formas**.
+O acetábulo ósseo cobre só **170 graus** da cabeça; o lábio completa a cobertura e **espessa-se na base da fóvea como ligamento transverso** (The Adult Hip, cap. 2, p. 37 aprox.); a **cabeça indireta do reto femoral** funde-se ao lábio superior (p. 47 aprox.). Ele é **quase circunferencial, incompleto inferiormente**, onde o ligamento transverso cruza a incisura (cap. 25, p. 379). O HEBERT (cap. 13) dá a histologia: **camada interna, articular, de fibrocartilagem** e **camada externa, extra-articular e mais extensa, de tecido conjuntivo denso** com fibras circulares, um **anel de tensão** amarrado pelo ligamento transverso.
 
-!tabela O lábio em números (The Adult Hip, cap. 11, p. 155 e 163 aprox.; HEBERT, cap. 13)
+A vascularização vem de fora. O Campbell (cap. 56, p. 2404) diz que o acetábulo é irrigado pelas **artérias obturatória, glútea superior e glútea inferior** e que **a periferia do lábio é mais vascularizada que a região articular**; o HEBERT, que o lábio é **avascular nos dois terços profundos**, e por isso o reparo exige **leito de osso sangrante**. É a lógica do menisco: a parte colada à cápsula cicatriza; a de dentro, não.
+
+A função é de **gaxeta** (The Adult Hip, cap. 11, p. 155 e 163 aprox.): veda a articulação e cria **pressão negativa**; sob carga, a pressão do líquido distribui a força. Sem o selo, o líquido vaza e a **tensão de contato sobe até 90%**, com o **pico na borda lateral**. O Campbell (p. 2405) mede o estrago: **dano articular em 73%** dos quadris com lesão labral, quase sempre **perto dela**.
+
+!tabela O lábio em números (The Adult Hip, caps. 2, 11 e 25; Campbell, cap. 56, p. 2404 e 2405; HEBERT, cap. 13)
 | Fato | Valor |
 | --- | --- |
-| Extensão | toda a borda, exceto a inferomedial |
-| Função | gaxeta, selo, pressão negativa, efeito hidráulico |
+| Extensão | quase circunferencial; falta a inferomedial, coberta pelo ligamento transverso |
+| Camadas | articular de fibrocartilagem; capsular de conjuntivo denso, mais extensa |
+| Vascularização | obturatória e glúteas; periferia mais vascularizada; 2/3 profundos avasculares |
+| Função | gaxeta, selo, pressão negativa, estabilidade, propriocepção |
 | Sem o selo | tensão de contato até 90% maior; pico na borda lateral |
-| Área e volume | mais 22% e mais 33% |
+| Ganho | mais 22% de área e 33% de volume |
 | Resistência | 10 a 15 vezes a cartilagem |
-| Vascularização | avascular nos dois terços profundos |
+| Dano condral associado | 73%, perto da lesão |
 !fim
 
-!questoes treino=quadril-0435
-conceito: O lábio circunda a borda menos a inferomedial e funciona como gaxeta; sem ele, a tensão na cartilagem sobe até 90% e o pico vai para a borda lateral.
-como: O simulado do Fellowship pede a afirmação correta sobre o complexo labroacetabular segundo CALLAGHAN.
-armadilha: Lábio também na borda inferomedial, pico migrando para a fossa medial ou ressecção sem efeito na artroplastia.
+!questoes treino=quadril-0435,quadril-0249
+conceito: O lábio tem uma porção articular de fibrocartilagem e uma capsular de conjuntivo denso; o sangue chega pela periferia (obturatória e glúteas), e os dois terços profundos são avasculares, por isso cicatriza na margem capsular.
+como: O simulado do Fellowship pede a afirmação correta sobre a anatomia do lábio, invertendo a vascularização, inventando três camadas e mudando a região das interdigitações; outro pede o complexo labroacetabular segundo CALLAGHAN.
+armadilha: A alternativa das duas porções tem a histologia certa e a vascularização trocada (o aporte é capsular, não articular).
+alerta: Três camadas, maior largura posterior e interdigitações anteriores da junção condrolabral não aparecem nos livros conferidos; o gabarito (C) é sustentado por Campbell (periferia mais vascularizada) e HEBERT (dois terços profundos avasculares).
 !fim
 
-# Clínica e exame {radar=confirmado}
+# A lesão labral: onde, como e com que nome {radar=confirmado}
 
-## A história
+## O relógio
 
-O Campbell (cap. 56, p. 2408) descreve **dor na virilha de início insidioso**, pior com **exercício**, às vezes **posicional**, ao **sentar, dirigir, calçar meias e sapatos**; a palpação **não reproduz a dor** e a **rotação interna está diminuída**. O HEBERT (cap. 13) acrescenta o **sinal do C** de BYRD e a dor ao **levantar após muito tempo sentado**, em torção e escadas. O The Adult Hip (cap. 22, p. 327 aprox.) lembra que **a perda da rotação interna é um dos primeiros sinais de distúrbio intra-articular**, medida sentado (detalhes em `callaghan-exame-quadril`).
+O HEBERT (cap. 13) mapeia o compartimento central como um relógio: **6 horas é o ponto médio do ligamento transverso**, o mais inferior; **3 horas é sempre anterior, no quadril direito e no esquerdo**; 12 horas é superior e 9 horas, posterior. A convenção existe para que "3 horas" signifique o mesmo nos dois lados; o came cai em **11 a 2 horas**, o quadrante anterossuperior.
 
-## Os testes: comprimir onde bate
+!questoes treino=quadril-0287
+conceito: No relógio artroscópico, 6 horas é o meio do ligamento transverso, 12 horas superior e 3 horas anterior em qualquer lado; o quadrante anterossuperior fica entre 12 e 3 horas.
+como: O simulado do Fellowship pede a afirmação correta sobre o sistema de relógio na artroscopia.
+armadilha: Achar que 3 horas vira posterior no quadril esquerdo, ou pôr o anterossuperior entre 6 e 9 horas.
+!fim
 
-Todo teste de impacto leva o quadril à posição em que o colo encontra a borda e espera a dor do paciente.
+## Onde rompe e como se classifica
 
-- **FADIR (flexão, adução, rotação interna).** Quadril a **90 graus, adução além da linha média, rotação interna máxima**: dor = **impacto anterior**; comparar com o lado oposto (Campbell, cap. 7, p. 358.e1; cap. 56). O The Adult Hip (cap. 22, p. 331 aprox.) credita a manobra a GANZ.
-- **DIRI.** Supino, membro sadio fletido além de 90 graus (zera a pelve), o examinado vai a 90 graus ou mais e percorre **um arco amplo de adução e rotação interna**, checando a **congruência anterior**: versão dinâmica do FADIR.
-- **McCARTHY** descreveu a **avaliação dinâmica da congruência e do lábio**.
-- **DEXRIT.** Mesmo posicionamento, arco de **abdução e rotação externa**: impacto **superolateral e posterior**, mas também **instabilidade anteroinferior**, hipoplasia anteroinferior, lesão do redondo e frouxidão.
-- **Rebordo posterior.** Na beira da mesa, perna pendente em **extensão, abdução e rotação externa**: **impacto posterior ou instabilidade anterior**.
-- **FABER (PATRICK).** Separa quadril de sacroilíaca; dor pode ser **impacto posterior** (The Adult Hip, cap. 22); no Campbell (cap. 7), FABER positivo = **impacto lateral ou posterior (protrusão)**; no cap. 56, **distância joelho-mesa aumentada**.
-- **Apreensão anterior**: displasia com cobertura anterior deficiente.
+A ruptura é **anterior** ou anterossuperior: as lesões **afetam mais a parte anterior do lábio**, por trauma, degeneração ou biomecânica alterada, e as **posteriores isoladas** acompanham a **instabilidade posterior** (The Adult Hip, cap. 25, p. 380). O Campbell (cap. 56, p. 2405) cita SELDES: **separação do lábio de sua inserção articular**, típica do **came**, ou **rupturas em vários planos dentro da substância**, típicas do **pincer**. A classificação morfológica artroscópica que ele traz, sem nomear autor, tem quatro tipos: **radial em flap, radial fibrilada, longitudinal periférica e instável**. Nenhum dos livros nomeia CZERNY ou LAGE; se a banca citar os nomes, a lógica continua: separação na base contra lesão na substância.
 
-Regra mental: **flexão + adução + rotação interna = frente**; **abdução ou extensão + rotação externa = trás**.
+## Clínica e imagem
+
+O Campbell (p. 2405) descreve **dor na virilha e sintomas mecânicos**, o **sinal do C** de BYRD, dor posicional ao **sentar, dirigir, calçar e cruzar as pernas** e pouca dor na marcha no plano; o HEBERT soma **cliques, estalidos e bloqueio**. No exame, o The Adult Hip (cap. 22, p. 327 e 331 aprox.) atribui a avaliação **capsulolabral a McCARTHY e PHILIPPON**: McCARTHY descreveu a **avaliação dinâmica da congruência femoroacetabular e de sua relação com o lábio**.
+
+!questoes central=quadril-0514
+conceito: O teste de McCARTHY avalia dinamicamente a congruência femoroacetabular e a relação com o lábio; positivo, sugere lesão labral.
+como: O ENARE R4 2025 descreveu um homem de 25 anos com dor na virilha ao andar e pediu o teste que sustentou a hipótese de lesão labral (McCARTHY, contra OBER, CRAIG, GAENSLEN e PHELPS-BAKER).
+armadilha: OBER é da banda iliotibial (reproduz o ressalto externo), CRAIG mede anteversão, GAENSLEN é da sacroilíaca e PHELPS-BAKER, do grácil.
+!fim
+
+Na RM (The Adult Hip, cap. 25, p. 379 e 380), a fibrocartilagem tem **pouca água móvel e é escura**: o lábio normal é um **triângulo uniformemente hipointenso, colado ao rebordo**, sem líquido entre eles. A ruptura é **hipersinal focal** na inserção ou na substância; degeneração dá hipersinal difuso, **cistos paralabrais** e ossificação. Sobre o contraste, os livros divergem. O Campbell (cap. 7, p. 363) chama a **artro-RM de padrão-ouro**, com sensibilidade de **cerca de 60% para mais de 90%**. O The Adult Hip (cap. 25, p. 378) relata autores com **sensibilidade igual ou maior sem contraste**, diz que a escolha depende do radiologista e **prefere a RM de alta resolução sem contraste**. Na prova genérica, artro-RM é o padrão-ouro; "segundo CALLAGHAN", não há consenso.
+
+!tabela Lesões labrais (Campbell, cap. 56, p. 2405; HEBERT, cap. 13; The Adult Hip, cap. 25, p. 378 a 380)
+| Item | Dado |
+| --- | --- |
+| Local mais comum | anterior e anterossuperior (11 a 2 horas) |
+| Posterior isolada | instabilidade posterior |
+| SELDES | separação na inserção (came) ou ruptura na substância (pincer) |
+| Morfologia artroscópica | radial em flap, radial fibrilada, longitudinal periférica, instável |
+| Exame | McCARTHY (congruência e lábio em movimento), sinal do C |
+| RM normal | triângulo hipointenso, colado ao rebordo |
+| RM rompida | hipersinal focal; cisto paralabral; ossificação |
+| Contraste | padrão-ouro no Campbell; dispensável para CALLAGHAN |
+!fim
+
+!questoes central=quadril-0500 treino=quadril-0627
+conceito: O lábio normal é triangular, hipointenso e incompleto inferiormente; as lesões são mais comuns anteriormente; posteriores isoladas acompanham instabilidade posterior; CALLAGHAN prefere RM de alta resolução sem contraste.
+como: O simulado do Fellowship pede a RM do lábio segundo CALLAGHAN (contra lábio hiperintenso, lesão posterior isolada como a mais comum e contraste para todos). O TARO 2006 afirmou, em certo ou errado, que a lesão labral do atleta é mais frequente na região anterior.
+armadilha: Lábio hiperintenso (é escuro por falta de água móvel) e artro-RM como consenso no livro de CALLAGHAN.
+alerta: `quadril-0500` (TARO 2006) está sem gabarito oficial; The Adult Hip (cap. 25, p. 380) e HEBERT (cap. 13, came entre 11 e 2 horas) sustentam "Certo".
+!fim
+
+# Clínica e exame do impacto {radar=confirmado}
+
+O Campbell (cap. 56, p. 2408) descreve **dor na virilha de início insidioso**, pior com **exercício**, ao **sentar, dirigir, calçar meias e sapatos**, palpação que **não reproduz a dor** e **rotação interna diminuída**. O HEBERT (cap. 13) acrescenta a dor ao **levantar após muito tempo sentado**, em torção e escadas; o The Adult Hip (cap. 22, p. 327 aprox.) lembra que **a perda da rotação interna é um dos primeiros sinais intra-articulares**, medida sentado.
+
+Todo teste de impacto leva o quadril à posição em que o colo encontra a borda:
+
+- **FADIR (GANZ)**: **90 graus de flexão, adução além da linha média, rotação interna máxima** = **impacto anterior** (Campbell, cap. 7, p. 358.e1; The Adult Hip, cap. 22, p. 331 aprox.).
+- **DIRI**: membro sadio fletido (zera a pelve), o examinado percorre **um arco de adução e rotação interna** em 90 graus ou mais: FADIR dinâmico.
+- **DEXRIT**: arco de **abdução e rotação externa**: impacto **superolateral e posterior** e **instabilidade anteroinferior**.
+- **Rebordo posterior**: perna pendente em **extensão, abdução e rotação externa**: **impacto posterior ou instabilidade anterior**.
+- **FABER (PATRICK)**: separa quadril de sacroilíaca; dor pode ser **impacto posterior** (The Adult Hip) ou **lateral e posterior** (Campbell, cap. 7).
+- **Apreensão anterior**: displasia.
+
+Regra: **flexão + adução + rotação interna = frente**; **abdução ou extensão + rotação externa = trás**. A **infiltração anestésica**, segundo BYRD, **prediz causa intra-articular com 90% de acurácia** (Campbell, cap. 7, p. 358); resposta incompleta sugere impacto **extra-articular**.
 
 !tabela Testes de congruência (The Adult Hip, cap. 22, p. 331 a 333 aprox.; Campbell, cap. 7, p. 358.e1, e cap. 56, p. 2408)
 | Teste | Manobra | Sugere |
@@ -191,10 +191,7 @@ Regra mental: **flexão + adução + rotação interna = frente**; **abdução o
 | DEXRIT | arco de abdução e rotação externa | impacto superior e posterior; instabilidade anteroinferior |
 | Rebordo posterior | extensão, abdução, rotação externa | impacto posterior, instabilidade anterior |
 | FABER (PATRICK) | flexão, abdução, rotação externa | impacto posterior ou lateral; sacroilíaca |
-| Apreensão anterior | extensão e rotação externa | displasia |
 !fim
-
-A **infiltração com anestésico**, segundo BYRD, **prediz causa intra-articular com 90% de acurácia** (Campbell, cap. 7, p. 358); resposta incompleta sugere impacto **extra-articular**.
 
 !questoes central=quadril-0092 relacionadas=quadril-0484,quadril-0643 treino=quadril-0603,quadril-0600
 conceito: O impacto anterior se reproduz com flexão, adução e rotação interna: o FADIR de GANZ e o DIRI dinâmico; McCARTHY descreveu a avaliação dinâmica da congruência; o DEXRIT testa o impacto superior e posterior e a instabilidade anteroinferior.
@@ -211,18 +208,18 @@ armadilha: FADRI é o teste do impacto anterior; a apreensão aponta displasia.
 
 # O impacto extra-articular {radar=confirmado}
 
-O Campbell (cap. 7, p. 372) descreve um subgrupo, por RICCIARDI, de **mulheres jovens**, **40% já operadas** do quadril. Pistas: dor **lateral ou posterior**, **rotação externa diminuída**, **rotação interna diminuída sem came**, sinal de **impacto posterior**, **resposta incompleta à infiltração** e sintomas **após artroscopia sem came residual**. A chave é que **a torção femoral muda qual parte do fêmur bate na pelve**: o fêmur antevertido leva o trocânter maior para trás na rotação externa; o retrovertido leva a frente do fêmur contra a EIAI.
+O Campbell (cap. 7, p. 372) descreve, por RICCIARDI, um subgrupo de **mulheres jovens**, **40% já operadas**, com dor **lateral ou posterior**, **rotação externa diminuída**, rotação interna diminuída **sem came**, **resposta incompleta à infiltração** e sintomas **após artroscopia sem came residual**. A chave: **a torção femoral muda qual parte do fêmur bate na pelve**. O fêmur antevertido leva o trocânter maior para trás na rotação externa; o retrovertido leva a frente do fêmur contra a EIAI.
 
 !tabela Impacto extra-articular (Campbell, cap. 7, Tabela 7.2, p. 373)
 | Tipo | Anatomia | Exame | Imagem | Cirurgia |
 | --- | --- | --- | --- | --- |
-| Subespinal (I) | trocânter anterior ou linha intertrocantérica contra a EIAI | rotação interna menor a 90 graus; externa maior | retrotorção (anteversão menor que 5 a 10 graus) | descompressão da EIAI |
-| Posterior (II) | trocânter maior posterior e colo contra a pelve na rotação externa | anteversão excessiva, rotação externa limitada; interna maior a 90 graus | anteversão na TC | osteotomia derrotativa |
-| Complexo (III) | anterior e posterior; offset pequeno, deformidade de PERTHES, trocânter grande | rotação limitada nas duas direções | anteversão na TC | trocanteroplastia, alongamento relativo do colo |
-| Isquiofemoral | trocânter menor perto do ísquio | dor glútea baixa, virilha, coxa medial, pior na extensão | edema do quadrado femoral | ressecção parcial do trocânter menor |
+| Subespinal (I) | trocânter anterior ou linha intertrocantérica contra a EIAI | rotação interna menor a 90 graus; externa maior | retrotorção | descompressão da EIAI |
+| Posterior (II) | trocânter maior posterior e colo contra a pelve na rotação externa | rotação externa limitada; interna maior | anteversão na TC | osteotomia derrotativa |
+| Complexo (III) | anterior e posterior; offset pequeno, PERTHES, trocânter grande | rotação limitada nas duas direções | anteversão na TC | trocanteroplastia, alongamento relativo do colo |
+| Isquiofemoral | trocânter menor perto do ísquio | dor glútea baixa, pior na extensão | edema do quadrado femoral | ressecção parcial do trocânter menor |
 !fim
 
-O **subespinal** (Campbell, cap. 56, p. 2412) dói em **flexão profunda ou flexão com rotação interna** e é mais comum com **anteversão diminuída somada a pincer**; o cap. 7 (p. 374) diz que **não reconhecê-lo é causa comum de dor persistente** e que ele pode ser **criado na osteotomia periacetabular** quando o fragmento leva a EIAI para baixo. O The Adult Hip (cap. 25, p. 383) conta que o **isquiofemoral foi descrito em 1977** em três pacientes após artroplastia (alívio com excisão do trocânter menor), entidade ainda controversa, e que o impacto da **EIAI** segue a **avulsão do reto femoral**. No complexo, o **alongamento relativo do colo** com distalização do trocânter alivia o impacto e **melhora o braço dos abdutores** (Campbell, cap. 7, p. 374; Tachdjian, cap. 14).
+O **subespinal** dói em **flexão profunda** e é mais comum com **anteversão diminuída somada a pincer** (Campbell, cap. 56, p. 2412); **não reconhecê-lo é causa comum de dor persistente**, e ele pode ser **criado na periacetabular** (cap. 7, p. 374). O The Adult Hip (cap. 25, p. 383) conta que o **isquiofemoral foi descrito em 1977** após artroplastia, com alívio pela excisão do trocânter menor, e que o impacto da **EIAI** segue a **avulsão do reto femoral**.
 
 !questoes central=quadril-0004
 conceito: No impacto extra-articular posterior, o trocânter maior e o colo batem na pelve em rotação externa: anteversão femoral aumentada com rotação externa diminuída.
@@ -232,9 +229,7 @@ armadilha: Confundir com o subespinal, que vem com retrotorção e rotação ext
 
 # A radiografia do acetábulo {radar=confirmado}
 
-## O AP precisa ser verdadeiro
-
-Inclinação e rotação **fabricam ou apagam a retroversão**. O Campbell (cap. 7, p. 359) pede **asas e forames simétricos** e **cóccix 1 a 3 cm acima da sínfise**; o cap. 56 (p. 2409 aprox.), **cóccix apontando para a sínfise, a 1 a 2 cm**. O The Adult Hip (cap. 23, p. 357 aprox.) diz que **centragem e angulação craniocaudal** evitam falsos positivos e negativos. Divergência dentro do mesmo livro: capítulo de artroscopia, **1 a 2 cm**; de preservação, **1 a 3 cm**. Tocar a sínfise ou ficar a 4 a 6 cm é erro de inclinação.
+Inclinação e rotação **fabricam ou apagam a retroversão**. O Campbell (cap. 7, p. 359) pede **asas e forames simétricos** e **cóccix 1 a 3 cm acima da sínfise**; o cap. 56 (p. 2409 aprox.), **cóccix apontando para a sínfise, a 1 a 2 cm**; o The Adult Hip (cap. 23, p. 357 aprox.), centragem e angulação craniocaudal corretas. A divergência é do mesmo livro: **1 a 2 cm** no capítulo de artroscopia, **1 a 3 cm** no de preservação.
 
 !questoes central=quadril-0064
 conceito: No AP de bacia para impacto, o cóccix aponta para a sínfise e fica 1 a 2 cm acima (Campbell, cap. 56); o cap. 7 aceita 1 a 3 cm.
@@ -242,35 +237,27 @@ como: Uma prova de Ortopedia, sem ano, pediu essa distância (1 a 2 cm, contra 4
 armadilha: Cóccix tocando a sínfise; a inclinação cria ou esconde o cruzamento.
 !fim
 
-## Cobertura e profundidade
+- **WIBERG**: menor que 20 displasia, **acima de 40 sobrecobertura** (Campbell, cap. 7, p. 359 e 365); no HEBERT (cap. 13), **menor que 25 deficiência e maior que 35 excesso**.
+- **TÖNNIS**: **abaixo de 0 = sobrecobertura**, ligado ao **impacto tipo pinça** (Campbell, p. 361; HEBERT, cap. 10).
+- **Coxa profunda**: fossa medial à ilioisquiática, **pode ser normal na mulher**; **protrusão**: cabeça medial à ilioisquiática.
 
-- **WIBERG**: menor que 20 displasia, 20 a 24 limítrofe, **acima de 40 sobrecobertura** (Campbell, cap. 7, p. 359 e 365); no HEBERT (cap. 13), **menor que 25 deficiência e maior que 35 excesso**.
-- **TÖNNIS**: 0 a 10 normal, acima de 10 displasia, **abaixo de 0 sobrecobertura** (Campbell, p. 361); o HEBERT (cap. 10) liga o TÖNNIS diminuído ao **impacto tipo pinça**.
-- **Coxa profunda**: fossa medial à ilioisquiática, **pode ser normal na mulher** (Campbell, cap. 7, p. 362); o cap. 56 usa a lágrima medial à linha.
-- **Protrusão**: cabeça medial à ilioisquiática; artropatia inflamatória, MARFAN ou idiopática.
-- **Lábio calcificado** piora o pincer.
+O Campbell (cap. 7, p. 360) ensina o raciocínio da retroversão:
 
-## Cruzamento, parede posterior e espinha isquiática
+- **Cruzamento**: a parede anterior cruza a posterior **abaixo da margem superolateral** = sobrecobertura anterior **ou** retroversão total; sozinho não decide, e **a EIAI pode simulá-lo**. O HEBERT o chama de **figura de oito**.
+- **Parede posterior** medial ao centro da cabeça = cobertura posterior deficiente.
+- **Espinha isquiática** proeminente num AP bem posicionado = retroversão.
 
-O Campbell (cap. 7, p. 360) ensina o raciocínio:
+**Cruzamento + parede posterior + espinha isquiática = retroversão de todo o acetábulo**, tratada com **periacetabular**; o **cruzamento isolado** pode ser só retroversão do rebordo anterossuperior, tratada com **recorte** (p. 366). Recortar a frente de um acetábulo sem parede posterior criaria instabilidade. O The Adult Hip (cap. 23, p. 357 aprox.) diz que **o os acetabuli tem as implicações do acetábulo retrovertido**: num homem de 47 anos, causa **retroversão adquirida com cruzamento**.
 
-- **Cruzamento**: a parede anterior cruza a posterior **abaixo da margem superolateral** = **sobrecobertura anterior isolada ou retroversão total**; sozinho não decide qual. **Variações da EIAI podem simulá-lo**. O The Adult Hip (cap. 23) o chama de **relativamente específico** num AP otimizado; o HEBERT (cap. 10), de **figura de oito**.
-- **Parede posterior**: parede posterior **medial ao centro da cabeça** = cobertura posterior deficiente; **com o cruzamento, retroversão**.
-- **Espinha isquiática** ipsilateral proeminente num AP bem posicionado = **retroversão**.
-
-No algoritmo (Campbell, cap. 7, p. 366 e 366.e1), **cruzamento + parede posterior + espinha isquiática = retroversão de todo o acetábulo**, tratada com **periacetabular**; o **cruzamento isolado** pode ser o **único achado** do pincer por retroversão do rebordo anterossuperior, tratado com **recorte**. Recortar a frente de um acetábulo sem parede posterior criaria instabilidade. O Tachdjian (cap. 14, p. 576) usa a mesma dupla no PERTHES. O The Adult Hip (cap. 23, p. 357 aprox.) diz que **o os acetabuli tem as mesmas implicações do acetábulo retrovertido**: na fig. 23.31, um os acetabuli anterossuperior num homem de 47 anos causa **retroversão adquirida com cruzamento** e pincer.
-
-!tabela Sinais acetabulares do pincer (Campbell, cap. 7, p. 359 a 362 e 365; cap. 56; The Adult Hip, cap. 23; HEBERT, caps. 10 e 13)
+!tabela Sinais acetabulares do pincer (Campbell, cap. 7, p. 359 a 362 e 365; The Adult Hip, cap. 23; HEBERT, caps. 10 e 13)
 | Sinal | Como se vê | Significado |
 | --- | --- | --- |
-| Cruzamento | parede anterior cruza a posterior abaixo da margem superolateral | sobrecobertura anterior ou retroversão total; EIAI pode simular |
-| Parede posterior | parede posterior medial ao centro da cabeça | deficiência posterior; com cruzamento, retroversão |
+| Cruzamento | parede anterior cruza a posterior abaixo da margem superolateral | sobrecobertura anterior ou retroversão total |
+| Parede posterior | medial ao centro da cabeça | deficiência posterior |
 | Espinha isquiática | proeminente no AP bem posicionado | retroversão |
 | Os acetabuli | ossículo anterossuperior | retroversão adquirida |
-| Coxa profunda | fossa medial à ilioisquiática | sobrecobertura; pode ser normal na mulher |
-| Protrusão | cabeça medial à ilioisquiática | sobrecobertura global |
-| WIBERG | acima de 40 (Campbell) ou 35 (HEBERT) | sobrecobertura lateral |
-| TÖNNIS | menor que 0 | risco de pinça |
+| Coxa profunda / protrusão | fossa ou cabeça medial à ilioisquiática | sobrecobertura global |
+| WIBERG / TÖNNIS | acima de 40 (35 no HEBERT) / menor que 0 | sobrecobertura |
 !fim
 
 !questoes central=quadril-0175 treino=quadril-0611
@@ -281,34 +268,9 @@ armadilha: Tomar o cruzamento isolado como retroversão total ou lê-lo no DUNN 
 
 # A radiografia do fêmur: alfa e offset {radar=confirmado}
 
-## Onde procurar o came
+O came é **anterolateral** e se esconde no AP, onde aparece no máximo como **achatamento lateral da junção (tilt ou pistol grip)**; é **mais bem visto no cross-table e no DUNN modificado** (45 graus de flexão, 20 de abdução, rotação neutra) e quantificado pelo **alfa** e pela **razão de offset** (Campbell, cap. 7, p. 361 e 362). O HEBERT (cap. 10) usa o **gabarito de MOSES** (epífise **mais de 2 mm** fora do círculo = anesférica). Sinais indiretos: **esclerose e cistos na junção anterolateral** e **fosseta de herniação** (The Adult Hip, cap. 23, p. 356 aprox.).
 
-O came é **anterolateral** e se esconde no AP. O Campbell (cap. 7, p. 361 e 362) diz que ele aparece no AP como **achatamento lateral da junção (tilt ou pistol grip)**, mas é **mais bem visto no cross-table e no DUNN modificado** e **quantificado pelo alfa e pela razão de offset**. O DUNN de 45 graus: supino, **45 de flexão, 20 de abdução, rotação neutra**. O The Adult Hip (cap. 23, p. 356 aprox.) avalia esfericidade e offset **no perfil e no DUNN**, que também mostra a **fosseta de herniação**. O HEBERT (cap. 10) usa o **gabarito de MOSES** (epífise **mais de 2 mm** fora do círculo = **anesférica**), a **convexidade anterior** da junção como came pronunciado e lembra que a cabeça pode ser esférica no AP e não no perfil. Sinais indiretos (Campbell, p. 362): **esclerose e cistos na junção anterolateral** (cerca de um terço dos sintomáticos) e estreitamento posterior no falso perfil.
-
-## O ângulo alfa e suas três versões
-
-Uma linha do centro do colo ao centro da cabeça; outra do centro da cabeça ao ponto em que **o contorno diverge do círculo** (Campbell, cap. 7, p. 361). Quanto mais cedo a cabeça sai do círculo, maior o ângulo. O HEBERT (cap. 10) lembra que foi descrito **na RM axial** e extrapolado para os perfis. Os cortes divergem:
-
-- Campbell, cap. 56 (p. 2411 aprox.): **acima de 50 graus**.
-- HEBERT, cap. 10: **acima de 55 graus**.
-- Campbell, cap. 7 (p. 361): **acima de 55 a 60 graus**.
-
-O corte das provas é **55 graus**; o simulado que fala em cerca de 60 segue a parte alta do intervalo do cap. 7. Alfa alto = came; alfa não mede pincer.
-
-## Offset
-
-No **cross-table com 10 graus de rotação interna**, mede-se a distância entre as tangentes anteriores do colo e da cabeça; dividida pelo diâmetro, dá a **razão de offset** (Campbell, cap. 7, p. 361).
-
-!tabela Parâmetros femorais do came (Campbell, cap. 7, p. 361 e 362, e cap. 56, p. 2411; HEBERT, cap. 10; The Adult Hip, caps. 23 e 68)
-| Parâmetro | Onde | Critério |
-| --- | --- | --- |
-| Alfa | perfil, cross-table, DUNN, cortes radiais | acima de 50 (cap. 56), 55 (HEBERT), 55 a 60 (cap. 7) |
-| Alfa e artrose | radiografia | acima de 65: razão de chances 3,5; 83: perto de 10 |
-| Offset | cross-table em 10 graus de rotação interna | razão = offset / diâmetro da cabeça |
-| Esfericidade | AP e perfil, gabarito de MOSES | mais de 2 mm fora = anesférica |
-| Pistol grip | AP | achatamento lateral da junção |
-| Exemplo | perfil do candidato a recapeamento | came anterossuperior com alfa de 70 |
-!fim
+O **alfa** liga o centro do colo ao centro da cabeça e o centro da cabeça ao ponto em que **o contorno sai do círculo**; quanto mais cedo sai, maior o ângulo. Foi descrito **na RM axial** (HEBERT). Os cortes divergem: **acima de 50** (Campbell, cap. 56, p. 2411 aprox.), **acima de 55** (HEBERT, cap. 10), **acima de 55 a 60** (Campbell, cap. 7, p. 361). O corte das provas é **55 graus**; alfa não mede pincer. O **offset** se mede no **cross-table com 10 graus de rotação interna**, entre as tangentes anteriores do colo e da cabeça, e dividido pelo diâmetro dá a **razão de offset**.
 
 !questoes central=quadril-0075 treino=quadril-0326
 conceito: O alfa marca onde a cabeça deixa de ser esférica na junção anterior; acima de 55 graus sugere came (HEBERT; Campbell, cap. 7, aceita 55 a 60); o cap. 56 usa 50.
@@ -316,13 +278,9 @@ como: Duas provas de Ortopedia, sem ano, perguntaram o valor de corte do alfa (5
 armadilha: Marcar 65 (é o corte do risco de artrose) ou associar o alfa ao pincer.
 !fim
 
-# TC, RM e artro-RM {radar=confirmado}
+# TC, RM e artro-RM no impacto {radar=confirmado}
 
-A **TC**, pela radiação, fica no jovem **para as deformidades ósseas que serão corrigidas**; as **reformatações 2D e reconstruções 3D** mostram colo e rebordo e permitem medir para o planejamento (The Adult Hip, cap. 23, p. 357 aprox.). O Campbell (cap. 7, p. 363 e 365) usa a **TC 3D para guiar a ressecção** do came e do pincer e localizar a sobrecobertura, e aplica o alfa a **cortes radiais de TC e artro-RM**.
-
-Na **RM**, o The Adult Hip (cap. 25, p. 378 aprox.) troca o axial reto pelo **axial oblíquo**, que mostra **diretamente a junção cabeça-colo anterior**, detecta o came e planeja o desbridamento; mapas T2 detectam degeneração precoce da matriz. E alerta (p. 382): **sinais de impacto nem sempre se correlacionam com dor**; interpretar sempre com a clínica.
-
-A **artro-RM é o padrão-ouro do lábio**: eleva a sensibilidade de **cerca de 60% para mais de 90%** (Campbell, cap. 7, p. 363). Na delaminação do came, o contraste pode correr **por baixo da cartilagem**; veem-se edema, **fossetas de herniação** e esclerose; **cartilagem fina e cistos subcondrais** indicam doença avançada; a RM de **3 T** pode, no futuro, dispensar o contraste. **Lesão labral sem deformidade óssea é incomum** (p. 364); o cap. 11 do The Adult Hip dá **87% a 90%** de anormalidade óssea nos que têm impacto. Pior prognóstico na artro-RM (Campbell, p. 365): **cisto do rebordo, 60 graus de cartilagem envolvida, osteófito central em dente de sabre**.
+A **TC**, pela radiação, fica no jovem **para as deformidades que serão corrigidas**; as reconstruções **2D e 3D** mostram colo e rebordo para o planejamento (The Adult Hip, cap. 23, p. 357 aprox.), e o Campbell (cap. 7, p. 363 e 365) usa a **TC 3D para guiar a ressecção**. Na **RM**, o **axial oblíquo** mostra **diretamente a junção cabeça-colo anterior** (The Adult Hip, cap. 25, p. 378 aprox.), mas **sinais de impacto nem sempre se correlacionam com dor** (p. 382). Na artro-RM do came, o contraste pode correr **por baixo da cartilagem delaminada**; **lesão labral sem deformidade óssea é incomum** (Campbell, p. 364; 87% a 90% de anormalidade óssea no cap. 11 do The Adult Hip); pior prognóstico com **cisto do rebordo, 60 graus de cartilagem envolvida e osteófito central em dente de sabre** (p. 365).
 
 !questoes central=quadril-0036 treino=quadril-0622
 conceito: A forma óssea do came aparece no perfil e no DUNN e é mapeada pela TC com reconstrução 3D para guiar a ressecção; RM e artro-RM servem a lábio e cartilagem, e o axial oblíquo mostra a junção anterior.
@@ -333,66 +291,38 @@ alerta: Os livros não elegem um único melhor exame para o came: Campbell (cap.
 
 # Quando operar e por qual via {radar=clinico}
 
-## O assintomático não se opera
-
-Há impacto em **37% ou mais dos atletas assintomáticos**, e **não há indicação cirúrgica** sem sintomas (Campbell, cap. 56, p. 2411). O Tachdjian (cap. 40) diz o mesmo do adolescente: **impacto é diagnóstico clínico, não radiográfico**. O tratamento começa com **modificação de atividade, anti-inflamatório e fisioterapia** (Campbell, cap. 56); a indicação cirúrgica é a **dor persistente** com exame e imagem compatíveis (Tachdjian, cap. 14, p. 576). O HEBERT (cap. 13) observa que **não há estudos de eficácia do conservador no retorno ao esporte** e que a cirurgia precisa corrigir **toda a deformidade**, lembrando fatores como **hiperfrouxidão e anteversão**. Objetivo (Campbell, cap. 56): **tratar lábio e cartilagem, remover o impacto ósseo e restabelecer o offset**.
-
-## O algoritmo
+Há impacto em **37% ou mais dos atletas assintomáticos**, e **não há indicação cirúrgica** sem sintomas (Campbell, cap. 56, p. 2411); para o Tachdjian (cap. 40), **impacto é diagnóstico clínico, não radiográfico**. Começa-se com **modificação de atividade, anti-inflamatório e fisioterapia**; opera-se a **dor persistente** com exame e imagem compatíveis, buscando **tratar lábio e cartilagem, remover o impacto ósseo e restabelecer o offset**. O HEBERT (cap. 13) lembra que a correção precisa ser **completa** e que **hiperfrouxidão e anteversão** também contam.
 
 !tabela Algoritmo do impacto (Campbell, cap. 7, Fig. 7.27, p. 366 e 366.e1)
 | Deformidade | Tratamento |
 | --- | --- |
 | Came sintomático | osteocondroplastia: artroscópica (rotina), anterior limitada ou luxação cirúrgica |
-| Retroversão isolada do rebordo anterossuperior | desinserção do lábio, recorte do rebordo e reinserção (artroscopia, anterior limitada ou luxação) |
-| Pincer grande posterossuperior e posterior | luxação cirúrgica com recorte e reinserção do lábio |
-| Retroversão total (cruzamento + parede posterior + espinha isquiática) | periacetabular para antevertê-lo; nas menores, alguns fazem artroscopia com recorte |
-| Displasia limítrofe (LCE 20 a 25) com came | dor posicional: artroscopia com reparo da cápsula; dor de instabilidade: periacetabular + osteocondroplastia + reparo labral |
+| Retroversão isolada do rebordo anterossuperior | desinserção do lábio, recorte e reinserção |
+| Pincer posterossuperior e posterior | luxação cirúrgica com recorte e reinserção |
+| Retroversão total | periacetabular para antevertê-lo |
+| Displasia limítrofe (LCE 20 a 25) com came | dor posicional: artroscopia com reparo da cápsula; instabilidade: periacetabular + osteocondroplastia |
 !fim
 
-A lógica: **onde está a deformidade decide a via**. A frente se alcança por artroscopia ou via anterior; o que está atrás pede luxação cirúrgica; a orientação do acetábulo inteiro pede osteotomia, porque recortar borda não corrige direção.
-
-## Quando a artroscopia não basta
-
-O Campbell (cap. 7, p. 372) lista as **indicações relativas de cirurgia aberta**: **came na junção posterossuperior, atrás dos vasos retinaculares**; **pincer da parede posterossuperior e posterior**; **deformidade proximal grande** (retrotorção, **epifisiólise, PERTHES**, redução aberta prévia de displasia). No came com acetábulo limítrofe, a capsulotomia com recorte **pode causar instabilidade**; alguns têm bons resultados a 2 anos **com plicatura capsular**. O The Adult Hip (cap. 8, p. 113) concorda: o **came além dos vasos retinaculares posterossuperiores** é mais fácil pela **mini-aberta anterior, sem risco à vascularização**, e a visão direta evita a hipercorreção do rebordo e a instabilidade relatadas na artroscopia; mas **retroversão grave com parede posterior deficiente e protrusão** são **contraindicação** a essa via.
+A lógica: **onde está a deformidade decide a via**. A frente se alcança por artroscopia ou via anterior; o que está atrás pede luxação cirúrgica; a orientação do acetábulo inteiro pede osteotomia. As **indicações relativas de cirurgia aberta** (Campbell, cap. 7, p. 372) são o **came posterossuperior, atrás dos vasos retinaculares**, o **pincer posterior** e a **deformidade proximal grande** (retrotorção, epifisiólise, PERTHES). O The Adult Hip (cap. 8, p. 113) prefere a **mini-aberta anterior** para o came além dos retinaculares, **sem risco vascular**, e a contraindica na **retroversão grave com parede posterior deficiente e na protrusão**.
 
 # A luxação cirúrgica de GANZ {radar=clinico}
 
-O Campbell (cap. 7, p. 365) explica o princípio: acesso total ao acetábulo e à junção **preservando a vascularização**, porque a via **protege o ramo profundo da circunflexa femoral medial**, que **supre os vasos retinaculares posterolaterais**. É **extensível**, sem os limites da artroscopia, mas exige **osteotomia do trocânter** e recuperação mais lenta; serve também à **epifisiólise, ao PERTHES residual e às fraturas de PIPKIN**. O The Adult Hip (cap. 8, p. 113) cita os motivos para buscar alternativas: **material sintomático, pseudartrose do trocânter e risco vascular**. O Tachdjian (cap. 14, p. 577) destaca o intervalo **glúteo mínimo-piriforme**, ficando **proximal ao piriforme**.
+O princípio (Campbell, cap. 7, p. 365): acesso total **preservando o ramo profundo da circunflexa femoral medial**, que **supre os vasos retinaculares posterolaterais**. É **extensível**, mas exige **osteotomia do trocânter** e recuperação mais lenta; serve também à **epifisiólise, ao PERTHES e às fraturas de PIPKIN**. O The Adult Hip (cap. 8, p. 113) cita os motivos para buscar alternativas: **material sintomático, pseudartrose do trocânter e risco vascular**. Os passos (técnica 7.1, p. 366 a 369) seguem a artéria: **decúbito lateral**, **osteotomia do trocânter de até 1,5 cm** saindo **à frente da inserção posterior do glúteo médio**, intervalo **glúteo mínimo-piriforme** (Tachdjian, cap. 14), **capsulotomia em Z** com o braço anteroinferior **anterior ao trocânter menor**, **luxação em flexão e rotação externa**, recorte do rebordo com **reinserção do lábio**, ressecção do came (até **30% do diâmetro do colo** sem perda importante de resistência, mas em geral bem menos) e **dois parafusos de 4,5 mm**, com **toque por 6 semanas**.
 
-Os passos da técnica 7.1 (Campbell, p. 366 a 369), com o motivo de cada um:
-
-1. **Decúbito lateral**, via de **KOCHER-LANGENBECK** ou GIBSON.
-2. **Osteotomia do trocânter de até 1,5 cm**, saindo **à frente da inserção mais posterior do glúteo médio**, para proteger o ramo profundo da circunflexa medial; o fragmento vai à frente com o vasto lateral.
-3. Glúteo mínimo separado do piriforme e da cápsula, atento ao isquiático.
-4. **Capsulotomia em Z ao longo do eixo do colo**, com o braço anteroinferior **anterior ao trocânter menor**, porque o ramo principal da circunflexa medial passa **acima e atrás dele**.
-5. **Luxação em flexão e rotação externa**, perna numa bolsa estéril: 360 graus de acetábulo.
-6. Pincer: **desinserir o lábio, recortar o rebordo e reinseri-lo com âncoras**, recriando o selo.
-7. Came: cortar a cartilagem na borda proximal com bisturi e ressecar com osteótomo e broca; **até 30% do diâmetro do colo no quadrante anterolateral** não altera muito a resistência axial em cadáver, mas a ressecção típica é **bem menor**; o **esferômetro** mostra onde a cabeça deixa de ser esférica.
-8. Teste do impacto, fechamento da cápsula, **dois parafusos de 4,5 mm** no trocânter; **toque por 6 semanas**, sem abdução ativa.
-
-Resultados (Campbell, cap. 7, p. 366): bons a excelentes em **68% a 94%** (2 a 10 anos), prótese em **0% a 30%**; pioram com **TÖNNIS 2, delaminação na cirurgia e idade**. **Refixar o lábio melhora o resultado a 10 anos, sem mudar a progressão da artrose nem a conversão**; **80% sem progressão a 10 anos** com reinserção. Complicações raras: **ossificação heterotópica e parafusos dolorosos**. No PERTHES, **40% de 35 quadris** progrediram um grau de TÖNNIS, e **TÖNNIS 2 ou mais** foi contraindicação (Tachdjian, cap. 14, p. 577).
+Resultados (p. 366): bons a excelentes em **68% a 94%**, prótese em **0% a 30%**; pioram com **TÖNNIS 2, delaminação e idade**. **Refixar o lábio melhora o resultado a 10 anos**, sem mudar a progressão da artrose.
 
 # Osteocondroplastia por artroscopia e mini-aberta {radar=clinico}
 
-A **osteocondroplastia é o tratamento do came sintomático**, **rotineiramente artroscópica** (Campbell, cap. 7, p. 366.e1), e busca **recuperar o acinturamento** (HEBERT, cap. 13). As regras do HEBERT:
+A **osteocondroplastia** é o tratamento do came, **rotineiramente artroscópica** (Campbell, cap. 7, p. 366.e1), e busca **recuperar o acinturamento** (HEBERT, cap. 13). As regras do HEBERT: o impacto **começa na junção anterossuperior**; a ressecção é **gradual, de proximal para distal**; evitar o **degrau em "maçã mordida"**, que **aumenta o risco de fratura**; **medial e lateral são zonas de hipocorreção**, com referência medial na **prega sinovial medial (víncula), às 6 horas**, e lateral nos **vasos retinaculares superiores**, que tornam as lesões laterais **difíceis por artroscopia**. O Campbell (cap. 56, técnica de MAURO, p. 2412) é coerente: **flexão e rotação externa expõem as inferomediais, extensão e rotação interna as superolaterais**, com cuidado nos retinaculares; lesá-los é **necrose avascular**.
 
-- O impacto **começa na junção anterossuperior**; a ressecção é **gradual, de proximal para distal, ao longo do colo**.
-- Evitar o **degrau em "maçã mordida"**, que **aumenta o risco de fratura**.
-- **Medial e lateral são zonas de hipocorreção**; referência medial: **prega sinovial medial (víncula), às 6 horas**; lateral: **vasos retinaculares superiores**, que tornam as lesões laterais **difíceis por artroscopia**.
-- Lesões proximais e laterais com **tração leve, 10 a 20 graus de flexão e rotação interna**; anteromediais com **flexão e rotação externa progressivas**, sem tração.
+A **via anterior limitada** de CLOHISY e McCLURE (Campbell, cap. 7, p. 370) **evita a luxação**, mas **só alcança a face anterior**; falha de **11% a 58 meses**. No **pincer artroscópico** (técnica de LARSON, cap. 56, p. 2411), resseca-se o rebordo preservando a junção condrolabral ou, se preciso, **desinsere-se o lábio**, resseca-se até logo **distal ao cruzamento** e **refixa-se com âncoras**; o HEBERT avisa que o pincer **entre 2 e 6 horas** exige **seccionar parte do ligamento iliofemoral**.
 
-O Campbell (cap. 56, técnica de MAURO, p. 2412) é coerente: **flexão e rotação externa expõem as inferomediais, extensão e rotação interna as superolaterais**, e é preciso **cuidado com os vasos retinaculares no colo superolateral**; pós-operatório com **toque por 2 semanas**, sem extensão e rotação externa extremas, **esporte em 4 a 6 meses**. Os vasos retinaculares levam o sangue do ramo profundo da circunflexa medial pela face posterossuperior do colo: lesá-los é **necrose avascular**.
-
-A **via anterior limitada** de CLOHISY e McCLURE (Campbell, cap. 7, p. 370), por SMITH-PETERSEN ou HUETER, **evita a luxação**, mas **só alcança a face anterior**; falha de **11% a 58 meses**, melhor **abaixo de 40 anos e em TÖNNIS 0**. Ensina o princípio: usar o **offset anteromedial normal como referência**, osteótomo **distal e posterior em bisel** para não delaminar a cartilagem remanescente, ganho de **5 a 15 graus de flexão e 5 a 20 de rotação interna**, e **toque com muletas para evitar fratura de estresse do colo**. O The Adult Hip (cap. 8, p. 113) chama a mesma ideia de **osteoplastia mini-aberta**, pela porção distal do SMITH-PETERSEN, com avaliação dinâmica do impacto residual.
-
-No **pincer artroscópico** (técnica de LARSON, Campbell, cap. 56, p. 2411), se a lesão é visível, preserva-se a junção condrolabral e resseca-se com broca; se não, **desinsere-se o lábio**, resseca-se até logo **distal ao cruzamento** (conferido na fluoroscopia) e **refixa-se com âncoras**. O HEBERT (cap. 13) avisa que o pincer **entre 2 e 6 horas**, medial à EIAI, exige **seccionar parte do ligamento iliofemoral**.
-
-!tabela Três vias para o impacto (Campbell, cap. 7, p. 365 a 372, e cap. 56; The Adult Hip, cap. 8; HEBERT, cap. 13)
+!tabela Três vias para o impacto (Campbell, caps. 7 e 56; The Adult Hip, cap. 8; HEBERT, cap. 13)
 | Via | Alcance | Vantagem | Limite | Números |
 | --- | --- | --- | --- | --- |
-| Luxação cirúrgica | 360 graus | trata o que está atrás | osteotomia trocantérica, recuperação lenta | bons 68% a 94%; prótese 0% a 30% |
-| Anterior limitada ou mini-aberta | face anterior | evita a luxação; came além dos retinaculares (The Adult Hip) | contraindicada na retroversão grave e na protrusão | falha 11% a 58 meses |
-| Artroscopia | compartimentos central e periférico | recuperação rápida; quase toda a cirurgia nos EUA | came posterossuperior, pincer posterior, displasia limítrofe | 85% sem prótese a 10 anos; 75% a 90% voltam ao esporte |
+| Luxação cirúrgica | 360 graus | trata o que está atrás | osteotomia trocantérica | bons 68% a 94% |
+| Anterior limitada ou mini-aberta | face anterior | evita a luxação | retroversão grave, protrusão | falha 11% a 58 meses |
+| Artroscopia | central e periférico | recuperação rápida | came posterossuperior, pincer posterior | 85% sem prótese a 10 anos |
 !fim
 
 !questoes treino=quadril-0283
@@ -401,15 +331,159 @@ como: O simulado do Fellowship pede as orientações para a osteocondroplastia, 
 armadilha: Dizer que os retinaculares correm na face anterior e podem ser ignorados, ou que o came além deles contraindica a cirurgia. A expressão "perpendicular ao eixo do colo" não aparece nos livros conferidos; o HEBERT descreve a progressão de proximal para distal e o Campbell, o bisel distal e posterior.
 !fim
 
+# A artroscopia do quadril: compartimentos, posição e tração {radar=clinico}
+
+O HEBERT (cap. 13) dá a primeira artroscopia do quadril a TAKAGI, em **1939**; o cap. 9.8 do mesmo livro cita BURMAN, **1931**, sem explicar a diferença. A dificuldade é a mesma em todos: articulação **profunda**, cabeça **esférica e justa**, cápsula **espessa e inelástica**. O Campbell (cap. 56, p. 2398) fala em curva de aprendizado de **até 60 casos** e num volume que **quase quintuplicou entre 2008 e 2013**.
+
+- **Compartimento central**: entre a cartilagem da cabeça e o acetábulo, delimitado pelo lábio (HEBERT); contém **superfícies articulares, lábio e ligamento redondo** (Campbell). Exige **tração**.
+- **Compartimento periférico**: **intracapsular, ao redor do colo**, com cápsula e sinóvia. Entra-se **sem tração e com o quadril fletido** (45 graus no Campbell; 30 a 45 no HEBERT), que relaxa a cápsula anterior. É onde se vê o came.
+- **Espaço peritrocantérico**: **extracapsular**, sob a banda iliotibial. O Campbell só diz que nele se fazem "numerosos procedimentos", mas a técnica de reparo abdutor (p. 2413) mostra o conteúdo: **bursa, inserção dos glúteos, crista do vasto e origem do vasto lateral, profundo à banda iliotibial**; o HEBERT põe ali a **bursectomia, o reparo glúteo e o ressalto da banda iliotibial**.
+
+!questoes treino=quadril-0251
+conceito: O central tem cartilagem, lábio e ligamento redondo e exige tração; o periférico cerca o colo dentro da cápsula; o peritrocantérico é extracapsular, com face lateral do fêmur, bursa, glúteos, vasto lateral e banda iliotibial.
+como: O simulado do Fellowship dá o conteúdo do central e pede o do peritrocantérico, contra colo, zona orbicular, vasos retinaculares e linha intertrocantérica.
+armadilha: Junção cabeça-colo, zona orbicular e vasos retinaculares são do periférico, dentro da cápsula.
+alerta: Nenhum livro lista o peritrocantérico como no gabarito; o conteúdo vem das técnicas endoscópicas do Campbell (cap. 56, p. 2413) e do HEBERT (cap. 13). O pulvinar não é citado entre as estruturas do central.
+!fim
+
+A posição é **supina ou lateral**, à escolha do cirurgião: o supino usa a **mesa de fratura** e é o mais difundido; o lateral é melhor **no obeso**, porque a gordura cai (Campbell, p. 2398; HEBERT). O HEBERT pede **relaxamento do iliopsoas** e hipotensão (**PA média de 60 a 70 mmHg**).
+
+A tração afasta a cabeça para o instrumental passar sem raspar cartilagem nem furar o lábio, e os números variam: **10 a 12 mm e cerca de 50 lb** no supino do Campbell (p. 2398); **8 a 10 mm** na técnica lateral, em que **uma agulha com um pouco de ar quebra o vácuo** e reduz a força (p. 2403); no HEBERT, tração até o **centro da cabeça alcançar o limite inferior da lágrima**, em geral com **20 kg**, mais fácil depois da **primeira injeção salina**. O mecanismo é o do selo: rompido o vácuo, a cabeça solta, e o Campbell nota que **depois de entrar é preciso menos tração**. O tempo é o outro lado: **menos de 2 horas** (Campbell) ou **no máximo 120 minutos** (HEBERT), porque a compressão do **pudendo** no poste e o estiramento do **ciático** dependem dele. O poste deve ser **acolchoado, largo e lateralizado** contra a coxa medial do lado operado, para o fulcro sair do períneo e o vetor ficar **paralelo ao colo** (HEBERT, rolo de espuma de pelo menos 12 cm). A flexão leve relaxa a cápsula, mas **aproxima o ciático** (BYRD, p. 2400). Sem poste, uma revisão teve **nenhuma lesão do pudendo ou do períneo, contra 7,1% de complicações com poste** (p. 2403 e 2404).
+
+!tabela Tração na artroscopia do quadril (Campbell, cap. 56, p. 2398 a 2404; HEBERT, cap. 13)
+| Item | Campbell | HEBERT |
+| --- | --- | --- |
+| Distração | 10 a 12 mm (supino); 8 a 10 mm (lateral) | centro da cabeça no limite inferior da lágrima |
+| Força | cerca de 50 lb | em geral 20 kg |
+| Reduzir a força | agulha com ar quebra o vácuo | injeção salina facilita a subluxação |
+| Tempo máximo | menos de 2 horas | 120 minutos |
+| Poste | acolchoado, grande, lateralizado; ou sem poste | excêntrico, espuma de 12 cm |
+| Periférico | sem tração, flexão de 45 graus | sem tração, flexão de 30 a 45 graus |
+!fim
+
+!questoes treino=quadril-0250
+conceito: O compartimento central precisa de distração de cerca de 8 a 12 mm; quebrar o vácuo com agulha (ar ou soro) reduz a força necessária; o periférico dispensa tração.
+como: O simulado do Fellowship pede a distração e a força habituais, com a punção prévia para quebrar o vácuo.
+armadilha: 2 a 4 mm não deixam passar a cânula; 15 a 20 mm com mais de 300 lb são excessivos; dizer que o central dispensa tração.
+alerta: O intervalo de 25 a 200 libras do gabarito (B) não aparece nos livros: o Campbell dá cerca de 50 lb e o HEBERT, 20 kg. A abertura de 8 a 10 mm e a quebra do vácuo estão no Campbell (cap. 56, p. 2403); gabarito mantido.
+!fim
+
+# Os portais e as estruturas em risco {radar=confirmado}
+
+O supino usa **três portais padrão** (Campbell, cap. 56, p. 2398 a 2401, Figs. 56.62 e 56.64):
+
+- **Anterolateral**: cerca de **1 cm superior e anterior à borda anterior do trocânter maior**; atravessa o **glúteo médio** (o HEBERT acrescenta o risco ao **glúteo mínimo**).
+- **Anterior**: na **interseção da linha vertical que desce da EIAS com a horizontal da margem superior do trocânter**, com a agulha **30 graus medial e 45 graus cefálica** (HEBERT); atravessa **sartório e reto femoral**.
+- **Posterolateral**: cerca de **1 cm posterior e superior ao trocânter**, convergindo para o anterolateral; atravessa **glúteos médio e mínimo**.
+
+Todos cruzam o **ligamento iliofemoral**, o mais espesso da cápsula (p. 2404), daí a capsulotomia **interportal** ou **em T**; **reparar a cápsula melhora os resultados**.
+
+## A ordem
+
+Os dois livros começam pelo **anterolateral**, feito **às cegas, só com fluoroscopia**: agulha, soro (o refluxo confirma a posição), fio de nitinol, dilatadores e a ótica de 70 graus; com a câmera nele, os outros portais são feitos **sob visão direta** (Campbell, p. 2399; HEBERT). Por ter sido feito sem ver, é o portal que **fura o lábio**, e o Campbell manda depois **inspecioná-lo com a câmera no anterior**. O anterior, terceiro a ser feito, é o portal de **instrumentação** (HEBERT).
+
+!questoes central=quadril-0476
+conceito: O primeiro portal é o anterolateral, feito com fluoroscopia e sem visão direta; anterior e posterolateral são feitos depois, guiados pela ótica nele.
+como: O TEOT 2024 pediu o primeiro portal na técnica de dentro para fora (anterolateral, contra anterior, posterolateral e anterior acessório).
+armadilha: O anterior é o mais usado para instrumentação, mas é o último a ser feito.
+alerta: Nenhum livro usa o termo "inside-out"; Campbell (cap. 56, p. 2399) e HEBERT (cap. 13) sustentam o anterolateral como primeiro portal.
+!fim
+
+## Qual nervo em cada portal
+
+!tabela Portais e estruturas em risco (Campbell, cap. 56, p. 2399 a 2401 e 2415, Figs. 56.62 e 56.64; HEBERT, cap. 13)
+| Portal | Atravessa | Estrutura mais próxima | Distância | Proteção |
+| --- | --- | --- | --- | --- |
+| Anterolateral | glúteo médio (mínimo, HEBERT) | nervo glúteo superior; ciático | 6 cm; 4 cm | não subir demais (HEBERT) |
+| Anterior | sartório, reto femoral | cutâneo femoral lateral; ramo ascendente da circunflexa lateral | 1,5 cm, ramos mais perto | só pele, dissecção romba, não medializar |
+| Posterolateral | glúteos médio e mínimo | ciático | 2,2 cm | rotação neutra |
+!fim
+
+Em uma frase: **o anterior é vizinho do sensitivo da frente, o anterolateral do motor de cima, o posterolateral do ciático**. No **anterior**, o **cutâneo femoral lateral** se ramifica no subcutâneo: **incisar só a pele** e fazer **dissecção romba**, deixando a camisa e o trocarte empurrarem o nervo (Campbell, p. 2400 e 2403; HEBERT); o Campbell (p. 2415) diz que ele é lesado quando o portal é **colocado medial demais**. No **anterolateral**, o HEBERT avisa que o **glúteo superior** é lesado quando o portal fica **proximal demais**. No **posterolateral**, a **rotação neutra** mantém o ciático fora de risco (Campbell, p. 2400).
+
+!questoes central=quadril-0153 treino=quadril-0252
+conceito: O portal anterior atravessa sartório e reto femoral e passa perto do cutâneo femoral lateral e do ramo ascendente da circunflexa femoral lateral; o anterolateral, o glúteo médio; o posterolateral, glúteos médio e mínimo, a 2,2 cm do ciático.
+como: O TARO 2024 pediu os músculos do portal anterior (sartório e reto femoral). O simulado do Fellowship pede a afirmação correta sobre os portais, contra o anterolateral só pelo glúteo mínimo, o posterolateral pelo piriforme a menos de 1 cm do ciático e o anterior longe do femoral e da circunflexa lateral.
+armadilha: Nenhum portal padrão atravessa o piriforme; os glúteos são dos portais laterais.
+alerta: A tese de `quadril-0252` de que lateralizar o portal anterior não protege o cutâneo femoral lateral não aparece nos livros: o Campbell (p. 2400 e 2415) protege o nervo com incisão só da pele e diz que ele é lesado com o portal medial demais; o HEBERT, com incisão até a derme e dissecção romba. Gabarito (A) mantido pela parte que os livros sustentam: músculos e proteção pela técnica de incisão.
+!fim
+
+!questoes central=quadril-0216 relacionadas=quadril-0058,quadril-0194,quadril-0001
+conceito: O portal anterior, que chega ao compartimento central pela frente, põe em risco o nervo cutâneo femoral lateral e seus ramos, lesados sobretudo quando o portal é medializado; a proteção é incisão só da pele e dissecção romba.
+como: A SBOT-SP, sem ano, e uma prova de Ortopedia, sem ano, perguntaram a estrutura em risco no portal anterior (cutâneo femoral lateral, contra femoral, isquiático, glúteo superior, circunflexa medial e femoral profunda). O TARO 2012 pediu o portal do compartimento central e a estrutura em risco (anterior e cutâneo lateral da coxa). O TARO 2020 perguntou o que causa a lesão do cutâneo femoral lateral (medialização do portal anterior).
+armadilha: O glúteo superior é do anterolateral; o ciático, do posterolateral; a circunflexa medial não é estrutura de portal.
+!fim
+
+!questoes central=quadril-0049
+conceito: O portal anterolateral atravessa o glúteo médio e tem como estrutura nervosa mais próxima o nervo glúteo superior, a cerca de 6 cm, lesado quando o portal é feito proximal demais.
+como: O TARO 2022 mostrou a figura de um nervo e pediu o portal em que ele corre risco (anterolateral).
+armadilha: Responder anterior (cutâneo femoral lateral) ou posterolateral (ciático).
+alerta: A figura não foi conferida; o gabarito (C, anterolateral) corresponde ao nervo glúteo superior, a estrutura que Campbell (cap. 56, p. 2400) e HEBERT (cap. 13) associam a esse portal.
+!fim
+
+# Complicações da artroscopia {radar=clinico}
+
+As taxas são baixas, e a maioria das complicações vem da **tração**, não do bisturi. O HEBERT (cap. 13) dá **0,5% a 5%**, **em sua maioria transitórias e ligadas à distração**; o Campbell (cap. 56, p. 2415) cita **7,7%** numa revisão, **36% delas ligadas à tração**, e, em mais de 30.000 pacientes, **1,28% em 90 dias** (a mais comum, nessa série, a **TVP**) e **4,9% de revisão ou prótese em 5 anos**.
+
+- **Neuropraxia de tração**: a **mais relatada nos dois livros**; **femoral, ciático, pudendo e cutâneo femoral lateral**, com **resolução espontânea**, pelo **tempo de tração e pressão do poste** (Campbell).
+- **Nervo pelo portal**: rara; **0,5% de lesão transitória do cutâneo lateral da coxa** (HEBERT); portal anterior **medial demais** (Campbell).
+- **Lábio e cartilagem iatrogênicos**: **comuns** (HEBERT) e **subnotificados** (Campbell); o culpado típico é o **anterolateral**; previne-se com **distração suficiente** confirmada na fluoroscopia.
+- **Extravasamento e síndrome compartimental abdominal**: líquido no retroperitônio, inclusive **pela bainha do psoas** (tenotomia do psoas **no fim**), mais no **trauma agudo e nas fraturas acetabulares**.
+- **Instabilidade**: rara e grave; predispõem **displasia e frouxidão**; provocam **hiper-ressecção do rebordo, tenotomia do psoas, capsulotomia não reparada e desbridamento do ligamento redondo**.
+- **Erros ósseos**: a hipo-ressecção deixa o **impacto residual**, **causa mais comum de revisão**; a hiper-ressecção do came arrisca **fratura do colo**.
+- **Ossificação heterotópica**: **1,6% sem AINE profilático e 0% com**.
+
+!questoes treino=quadril-0286
+conceito: As complicações da artroscopia do quadril são em geral transitórias: neuropraxias (de tração e pelos portais, com o cutâneo femoral lateral entre os nervos afetados) e trauma condrolabral iatrogênico, que é reconhecido e comum.
+como: O simulado do Fellowship pede a afirmação correta sobre as complicações, contra lesão permanente do ciático como a mais frequente, trauma condrolabral não reconhecido e neuropraxias permanentes.
+armadilha: As neuropraxias resolvem espontaneamente; lesão permanente do ciático não é a regra.
+alerta: O gabarito (A) põe a neuropraxia do cutâneo femoral lateral pelos portais como a mais descrita; Campbell (cap. 56, p. 2415) e HEBERT (cap. 13) dão a neuropraxia de tração como a mais comum, com o cutâneo femoral lateral entre os nervos afetados e risco de 0,5% pelo portal (HEBERT). Gabarito mantido; as outras alternativas contrariam os dois livros.
+!fim
+
+# Indicações além do impacto {radar=clinico}
+
+O Box 56.15 do Campbell (p. 2398) e a DICA do HEBERT (cap. 13) quase coincidem: **lesão labral, corpos livres, impacto, lesão condral, doença sinovial, ligamento redondo, artrite séptica, psoas, impacto extra-articular, ressalto, dor trocantérica e trauma**; o HEBERT soma **osteonecrose, osteófitos, instabilidade e capsulite adesiva**.
+
+- **Corpos livres**: retirados inteiros ou **em pedaços** pelas cânulas (Campbell, p. 2400); na **condromatose**, sinovectomia e retirada dos corpos, **muitas vezes no periférico**; na **sinovite vilonodular difusa**, pode ser preciso **luxação cirúrgica** (HEBERT).
+- **Ligamento redondo**: rupturas por **trauma torsional**, mesmo **sem luxação**; **terceiro diagnóstico mais comum no atleta**, com **desbridamento** satisfatório (HEBERT). Mas o desbridamento do redondo está entre as causas de **instabilidade** (Campbell, p. 2415), e na **criança** ele não deve ser ressecado, porque contém a cabeça e **irriga a epífise** (HEBERT, cap. 9.8); o ramo acetabular da obturatória entra por ele (The Adult Hip, cap. 2).
+- **Lesão condral**: o bolso estável pode ser colado; a **microfratura** está entre os fatores de conversão para prótese (Campbell, cap. 7, p. 372).
+- **Osteonecrose**: só com **sintomas mecânicos e esfericidade mantida** (HEBERT).
+- **Ressalto**: externo pela banda iliotibial, interno pelo psoas; **displasia e hiperfrouxidão contraindicam a liberação do psoas** (Campbell, p. 2414).
+
+Contraindicações: **obesidade, displasia, impossibilidade de distrair e TÖNNIS 2** são relativas no Campbell; o HEBERT põe a **anquilose como absoluta**. A **displasia limítrofe** (centro-borda de 20 a 25 graus) melhorou em revisão recente (Campbell, p. 2398).
+
+# Reparo, desbridamento e reconstrução do lábio {radar=clinico}
+
+O tratamento começa **conservador** e, se a dor persiste, vem o **desbridamento ou o reparo**, tratando junto a causa (Campbell, cap. 56, p. 2405). O **desbridamento** melhora o HARRIS em 10 anos, mas com **alta conversão para prótese**; o **reparo dá HARRIS maior** no impacto, e, na cirurgia aberta, **refixar o lábio melhora o resultado a 10 anos** (cap. 7, p. 366).
+
+O reparo é **pela base**, atravessando a substância, quando o tecido é **robusto**, ou **circunferencial**, com o fio em volta, quando ele está **desfiado**, para o fio não o cortar; nenhuma configuração é superior, e o essencial é **manter o contato com a cabeça e restaurar o selo**. Âncora longe do rebordo ou ponto apertado demais **evertem o lábio**. Na técnica de KELLY (p. 2406 e 2407), o **portal médio-anterior** dá o ângulo, e a âncora vai no rebordo, **mais do lado capsular**, conferida na fluoroscopia. O HEBERT (cap. 13) completa: **leito sangrante**, âncoras de quadril de **até 3,1 mm** (as de ombro exigem ângulo acima de 10 graus e podem entrar na articulação), **6 a 8 mm entre elas** e **geometria triangular** restaurada. Lábio ausente, ossificado ou com defeito, comum na revisão, pede **reconstrução**, segmentar ou circunferencial, com **aloenxerto ou autoenxerto** (redondo, cápsula, cabeça indireta do reto, banda iliotibial, grácil), **sem enxerto superior** (Campbell, p. 2407 e 2408).
+
+!tabela Desbridar, reparar ou reconstruir (Campbell, caps. 7 e 56; HEBERT, cap. 13)
+| Situação | Conduta | Detalhe |
+| --- | --- | --- |
+| Fragmento instável, tecido inviável | desbridamento, preservando o sadio | alta conversão a longo prazo |
+| Lábio descolado, tecido robusto | reparo pela base | âncoras a 6 a 8 mm, leito sangrante |
+| Lábio descolado e desfiado | reparo circunferencial | o fio não lacera o tecido |
+| Pincer sob o lábio | desinserir, recortar, refixar | conferir o cruzamento na fluoroscopia |
+| Lábio ausente ou ossificado | reconstrução com enxerto | nenhum enxerto superior |
+!fim
+
+O pós-operatório da osteoplastia artroscópica (Campbell, cap. 56, técnica de MAURO, p. 2412) é **toque por 2 semanas**, sem **extensão e rotação externa extremas**, e **esporte em 4 a 6 meses**. A reabilitação **atrasada** deixa aderências entre a cápsula e o colo cruento, a **capsulite adesiva**, tratada por liberação artroscópica (HEBERT). A progressão por critérios (dor e movimento, carga total, força, gesto esportivo) segue esse raciocínio, mas nenhum livro conferido traz um protocolo de quatro fases.
+
+!questoes treino=quadril-0315
+conceito: A reabilitação após artroscopia do quadril avança por critérios: controle da dor, movimento protegido e prevenção de atrofia até a carga total; o retorno ao esporte vem por último, com força de flexão próxima à do lado sadio e movimentos em velocidade plena.
+como: O simulado do Fellowship pede a afirmação correta sobre o protocolo em quatro fases, contra retorno ao esporte na fase inicial, em 2 a 4 semanas ou com 50% de força.
+armadilha: Liberar o esporte por tempo, sem critério de força, ou cedo demais.
+alerta: O protocolo de quatro fases, o retorno entre 8 e 16 semanas e a força de flexão acima de 85% não aparecem nos livros conferidos; o Campbell (cap. 56, p. 2412) fala em esporte em 4 a 6 meses após a osteoplastia artroscópica. Gabarito (A) mantido.
+!fim
+
 # Osteotomia periacetabular na retroversão {radar=clinico}
 
-Quando todo o acetábulo está retrovertido, sobra parede anterior e falta posterior: recortar a frente tiraria cobertura de um quadril curto atrás. A solução é **rodar**. A periacetabular trata o **pincer por retroversão global**, com **cruzamento e parede posterior**, às vezes com **centro-borda menor que 20 graus** (Campbell, cap. 7, p. 370). Como aumenta a anteversão, o oposto da displasia comum, chama-se **"periacetabular reversa"**. A **cartilagem anterior deve estar íntegra na artro-RM**, porque vai para a zona de carga, e **não se deve anteverter demais**, sob pena de **impacto posterior**. SIEBENROCK relatou **71% bons a excelentes sem artrose a 11 anos**; mau resultado com **falta de offset femoral e hipercorreção da versão** (p. 371). No combinado, a osteocondroplastia sai pela mesma via de SMITH-PETERSEN.
-
-O The Adult Hip (cap. 8, p. 113) dá números da periacetabular bernesa na displasia: **84% a 10 anos** (MATHENEY), **81,6% a 9,2 anos** (TROELSEN), ou **15% a 20% de prótese em 10 anos**. O Campbell (cap. 7, p. 375) lembra que a coluna posterior fica íntegra (pouca necrose do fragmento) e que **rodar o acetábulo pode criar came anterior**, exigindo osteocondroplastia; e a rotação para a frente pode criar o **subespinal iatrogênico** (p. 374).
+Quando todo o acetábulo está retrovertido, sobra parede anterior e falta posterior: recortar a frente tiraria cobertura de um quadril curto atrás. A solução é **rodar**, na **periacetabular "reversa"**, que aumenta a anteversão (Campbell, cap. 7, p. 370). A **cartilagem anterior deve estar íntegra**, porque vai para a zona de carga, e **não se deve anteverter demais**, sob pena de **impacto posterior**. SIEBENROCK relatou **71% bons a excelentes sem artrose a 11 anos**; mau resultado com **falta de offset e hipercorreção** (p. 371). Rodar o acetábulo pode **criar came anterior** e o **subespinal iatrogênico** (p. 374 e 375).
 
 # Depois da cirurgia {radar=clinico}
 
-O The Adult Hip (cap. 25, p. 391 e 392 aprox.) descreve a RM após a osteoplastia: o normal é o desbridamento anterossuperior e, **muitas vezes, um pequeno defeito no ligamento iliofemoral**; as complicações vêm da deficiência óssea ou de partes moles: **fratura de estresse do colo, instabilidade e deficiência do iliofemoral**. Os outros livros explicam cada uma: o toque pós-operatório e a proibição do degrau previnem a **fratura** (Campbell, cap. 7, p. 370; HEBERT); a **instabilidade** vem da capsulotomia com recorte na displasia limítrofe, por isso a cápsula é reparada ou plicada (Campbell, p. 366.e1 e 372), e o The Adult Hip (cap. 8) lembra a hipercorreção do rebordo. O HEBERT acrescenta a **capsulite adesiva** com aderências entre a cápsula e o colo cruento quando a reabilitação atrasa, tratada por liberação artroscópica. E o **subespinal não reconhecido** segue como causa comum de dor persistente (Campbell, cap. 7, p. 374).
+O The Adult Hip (cap. 25, p. 391 e 392 aprox.) descreve a RM após a osteoplastia: o normal é o desbridamento anterossuperior e, **muitas vezes, um pequeno defeito no ligamento iliofemoral**; as complicações são **fratura de estresse do colo, instabilidade e deficiência do iliofemoral**. Os outros livros explicam cada uma: o toque e a proibição do degrau previnem a **fratura** (Campbell, cap. 7, p. 370; HEBERT); a **instabilidade** vem da capsulotomia com recorte na displasia limítrofe e da hiper-ressecção, por isso a cápsula é reparada (Campbell, caps. 7 e 56).
 
 !questoes treino=quadril-0630
 conceito: Após a osteoplastia, um pequeno defeito no iliofemoral pode ser normal; as complicações são fratura de estresse do colo, instabilidade e deficiência do iliofemoral; o isquiofemoral (trocânter menor contra ísquio) foi descrito em 1977 e o impacto da EIAI segue a avulsão do reto femoral.
@@ -419,27 +493,27 @@ armadilha: Trocânter maior no isquiofemoral, sartório na EIAI ou defeito do il
 
 # Resultados e mau prognóstico {radar=clinico}
 
-A artroscopia tem **85% de sobrevida sem prótese a 10 anos**; em 5 anos, **artrose progrediu em 26,5% contra 35% do conservador** e a **prótese foi de 6,8% contra 10,5%** (Campbell, cap. 56, p. 2411). **75% a 90% dos atletas voltam ao nível anterior** (HEBERT, cap. 13). No adolescente, a osteocondroplastia até a fise tem pouco risco fisário ou de necrose, mas o **bump recidiva em 30%** dos imaturos (Tachdjian, cap. 40).
+A artroscopia tem **85% de sobrevida sem prótese a 10 anos**; em 5 anos, **artrose progrediu em 26,5% contra 35% do conservador** e a **prótese foi de 6,8% contra 10,5%** (Campbell, cap. 56, p. 2411). **75% a 90% dos atletas voltam ao nível anterior** (HEBERT, cap. 13). No adolescente, o **bump recidiva em 30%** dos imaturos (Tachdjian, cap. 40). A revisão artroscópica melhora, **mas menos que a primária** (Campbell, p. 2415).
 
-O que decide é **a cartilagem que sobrou**. Espaço **acima de 2 mm** associa-se a bom resultado; **TÖNNIS 2** melhora a 2 anos, mas piora a longo prazo (Campbell, cap. 7, p. 365). O HEBERT usa o mesmo corte: **menos de 2 mm ou menos de 50% da espessura**, a artroscopia **pode não beneficiar**. Riscos de prótese após artroscopia: **sexo masculino, mais de 40 anos, microfratura, espaço menor que 2 mm e TÖNNIS 2 e 3** (Campbell, p. 372). Quando a janela fecha, o HEBERT descreve lesão difusa, osteófitos no colo, no rebordo, na fossa e na fóvea, e sinovite; daí o seu "ATENÇÃO!": **diagnosticar e tratar antes do dano condral irreversível**. Os livros são honestos sobre o limite: reinserir o lábio **não muda a progressão da artrose** (Campbell, p. 366) e a osteotomia após epifisiólise tem efeito **incerto** sobre a artrose (Tachdjian, cap. 15).
+O que decide é **a cartilagem que sobrou**. Espaço **acima de 2 mm** associa-se a bom resultado; com **menos de 2 mm ou menos de 50% da espessura**, a artroscopia **pode não beneficiar** (Campbell, cap. 7, p. 365; HEBERT). Riscos de prótese após artroscopia: **sexo masculino, mais de 40 anos, microfratura, espaço menor que 2 mm e TÖNNIS 2 e 3** (Campbell, p. 372). O "ATENÇÃO!" do HEBERT resume: **tratar antes do dano condral irreversível**.
 
-!tabela Fatores de mau prognóstico (Campbell, cap. 7, p. 365, 366 e 370 a 372; HEBERT, cap. 13; Tachdjian, cap. 14)
+!tabela Fatores de mau prognóstico (Campbell, cap. 7, p. 365, 366 e 370 a 372, e cap. 56, p. 2398; HEBERT, cap. 13; Tachdjian, cap. 14)
 | Fator | Contexto |
 | --- | --- |
 | TÖNNIS 2 ou 3 | luxação cirúrgica e artroscopia |
-| Espaço menor que 2 mm (ou menos de 50% da espessura) | artroscopia |
-| Idade acima de 40 anos | artroscopia e via anterior; idade maior na luxação |
+| Espaço menor que 2 mm ou menos de 50% da espessura | artroscopia |
+| Idade acima de 40 anos | artroscopia e via anterior |
 | Sexo masculino e microfratura | conversão após artroscopia |
 | Delaminação vista na cirurgia | luxação cirúrgica |
-| Cisto do rebordo, 60 graus de cartilagem, osteófito em dente de sabre | artro-RM |
+| Desbridamento labral isolado | alta conversão para prótese |
 | Falta de offset e hipercorreção | periacetabular reversa |
 | Trocânter alto, incongruência, sexo masculino | PERTHES |
 !fim
 
 # Fechamento {radar=fundamento}
 
-O impacto é **uma forma errada que bate repetidamente e rouba a cartilagem**. No came, o fêmur sem cintura entra em flexão com rotação interna, **cisalha a junção condrolabral anterossuperior** e delamina a cartilagem, poupando o lábio; é do **homem jovem atleta**, nasce na fise no estirão e é herdado da **epifisiólise e do PERTHES**. No pincer, o acetábulo que cobre demais (**coxa profunda, protrusão, retroversão, os acetabuli**) esmaga e ossifica o lábio e alavanca a cabeça para trás: **contragolpe posteroinferior**, mais na **mulher**. O misto é frequente (30% a 40% para BECK, 70% para o HEBERT).
+O impacto é **uma forma errada que bate repetidamente e rouba a cartilagem**. No came, o fêmur sem cintura entra em flexão com rotação interna, **cisalha a junção condrolabral anterossuperior** e delamina a cartilagem; no pincer, o acetábulo que cobre demais esmaga o lábio e alavanca a cabeça para trás, no **contragolpe posteroinferior**. O exame reproduz o choque, a imagem separa **retroversão verdadeira** de sobrecobertura anterior e mede o **alfa**, e o tratamento segue a deformidade.
 
-O exame reproduz o choque (**FADIR e DIRI na frente, FABER, DEXRIT e rebordo posterior atrás, McCARTHY dinâmico**). A imagem exige **AP verdadeiro**, separa sobrecobertura anterior de **retroversão verdadeira**, mede o came pelo **alfa** no perfil e no DUNN, planeja com a **TC 3D** e vê o lábio na **artro-RM**. O tratamento segue a deformidade: **osteocondroplastia** para o came respeitando os **vasos retinaculares**, **recorte com reinserção** para o pincer focal, **GANZ** para o que está atrás, **periacetabular reversa** para a retroversão total. A cartilagem dita o prognóstico, e o assintomático não se opera.
+O lábio é uma **gaxeta** de fibrocartilagem, irrigada pela **periferia**, que rompe **na frente**: na base no came, na substância no pincer, e se repara pela base ou em volta conforme a qualidade do tecido, porque **reparar vence desbridar**. A artroscopia tem **três compartimentos** (central com tração, periférico em flexão, peritrocantérico fora da cápsula), começa pelo **anterolateral às cegas** e tem um nervo para cada portal; quase tudo o que dá errado vem da **tração**, e quase tudo o que se revisa é **impacto residual**.
 
-> **Na prova:** came = **fêmur**, **homem jovem atleta**, flexão com **rotação interna**, **junção condrolabral** e **delaminação**; pincer = **acetábulo**, **mulher**, lábio esmagado, **contragolpe na cabeça posterior e no acetábulo posteroinferior**; **FADIR/DIRI** anterior, **FABER** posterior, **McCARTHY**; **cóccix 1 a 2 cm** da sínfise; **alfa acima de 55**; **cruzamento + parede posterior + espinha isquiática = retroversão verdadeira** (periacetabular reversa); extra-articular posterior = **anteversão aumentada e rotação externa diminuída**; artro-RM = **padrão-ouro do lábio**; mau prognóstico = **TÖNNIS 2, espaço menor que 2 mm, mais de 40 anos**.
+> **Na prova:** came = **fêmur**, **homem jovem atleta**, **junção condrolabral**; pincer = **acetábulo**, **mulher**, **contragolpe posteroinferior**; **FADIR/DIRI** anterior, **FABER** posterior, **McCARTHY** para o lábio; **alfa acima de 55**; **cruzamento + parede posterior + espinha isquiática = retroversão verdadeira**; lábio **anterior**, **3 horas = anterior** nos dois lados, irrigado pela **periferia**; primeiro portal = **anterolateral** (**glúteo médio**, nervo **glúteo superior**); anterior = **sartório e reto femoral**, **cutâneo femoral lateral**, lesado se **medializado**; posterolateral = **ciático**; distração de **8 a 12 mm**, quebrar o vácuo, tração **menos de 2 horas**; **neuropraxia de tração** é a complicação mais relatada.
