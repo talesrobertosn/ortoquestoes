@@ -1,6 +1,6 @@
 ---
 id: campbell14-manguito-rotador
-versao: 2
+versao: 3
 titulo: Manguito rotador: exame, roturas e tratamento
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021), ampliado com a 15ª edição (2026)
 capitulo: Capítulo 46 · Shoulder and Elbow Injuries, com os capítulos 52 · Arthroscopy of the Upper Extremity e 12 · Shoulder and Elbow Arthroplasty
 autores: Robert H. Miller III, Frederick M. Azar e Thomas W. Throckmorton (cap. 46)
-fonte: Livro conferido localmente em 30/10/2026, caps. 46, 52 e 12. O cabeçalho do PDF mostra a paginação impressa só em parte das páginas; as referências citam capítulo, seção, quadro e figura. Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (pp. 2144 a 2176), cap. 57 (reparo artroscópico) e caps. 13 e 14 (artropatia e transferências).
-subtemas: Lesões do manguito rotador; Tendinite calcária; Lesão do subescapular
-resumo: Campbell 15: pegada de cada tendão, cinco camadas, cabo; acurácia dos testes (PARK), lags, subescapular; HAMADA, acrômio, ângulo crítico de 35 graus, GOUTALLIER e sinal da tangente; estágios de NEER; KEENER, 3 semanas e 4 meses, Box 51.5, DERWIN; fileiras, TRANTALIS, convergência, reabilitação; LAFOSSE; trapézio inferior e reconstrução capsular superior; SARKAR e UHTHOFF. Anatomia (pares de forças, bainha do bíceps, cabo e crescente, arco coracoacromial); exame (NEER, HAWKINS, JOBE, PATTE, sinais de atraso, lift-off, belly-press, bear hug); impactos externo, subcoracoide e interno; COFIELD, GOUTALLIER e ELLMAN; história natural e tratamento inicial; parciais acima e abaixo de 50%; transferências (grande dorsal de GERBER, peitoral maior) e reparo parcial; nervo supraescapular a 1,8 cm; tecido da vírgula e subescapular; tendinite calcária; prótese reversa.
+fonte: Livro conferido localmente em 30/10/2026, caps. 46, 52 e 12. O cabeçalho do PDF mostra a paginação impressa só em parte das páginas; as referências citam capítulo, seção, quadro e figura. Ampliado em 01/11/2026 com o Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (pp. 2144 a 2176), cap. 57 (reparo artroscópico) e caps. 13 e 14 (artropatia e transferências). Ampliado em 04/11/2026 com o impacto subacromial e a acromioplastia: Campbell 15, cap. 51 (pp. 2147, 2148 e 2157.e1 a 2162), cap. 57 (pp. 2456 a 2459 e 2480 a 2483) e cap. 14 (p. 629 aprox.); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 32 (anatomia, biomecânica e imagem da acromioclavicular, sem página impressa); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., caps. 4 e 5 (sem página impressa); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 29 (p. 1182); Skeletal Trauma, 5ª ed., cap. 48 (p. 1408). As páginas citadas são as impressas.
+subtemas: Lesões do manguito rotador; Tendinite calcária; Lesão do subescapular; Impacto subacromial e acromioplastia
+resumo: Campbell 15: pegada de cada tendão, cinco camadas, cabo; acurácia dos testes (PARK), lags, subescapular; HAMADA, acrômio, ângulo crítico de 35 graus, GOUTALLIER e sinal da tangente; estágios de NEER; KEENER, 3 semanas e 4 meses, Box 51.5, DERWIN; fileiras, TRANTALIS, convergência, reabilitação; LAFOSSE; trapézio inferior e reconstrução capsular superior; SARKAR e UHTHOFF. Anatomia (pares de forças, bainha do bíceps, cabo e crescente, arco coracoacromial); exame (NEER, HAWKINS, JOBE, PATTE, sinais de atraso, lift-off, belly-press, bear hug); impactos externo, subcoracoide e interno; COFIELD, GOUTALLIER e ELLMAN; história natural e tratamento inicial; parciais acima e abaixo de 50%; transferências (grande dorsal de GERBER, peitoral maior) e reparo parcial; nervo supraescapular a 1,8 cm; tecido da vírgula e subescapular; tendinite calcária; prótese reversa; os acromiale, acromioplastia aberta e artroscópica e a acromioclavicular.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -55,7 +55,7 @@ A inserção do supraespinal vai do bíceps até a área nua posterior e da cart
 
 **O sinal da vírgula** tem medida: na inserção, cerca de **54%** de glenoumeral superior e **46%** de coracoumeral, com cerca de 1 cm de largura.
 
-!questoes relacionadas=ombro-cotovelo-0407,ombro-cotovelo-0455
+!questoes central=ombro-cotovelo-0407 relacionadas=ombro-cotovelo-0455
 conceito: Subescapular tem a maior pegada (1,79 cm medial-lateral, 40 mm de comprimento); o supraespinal ocupa cerca de 17 mm da tuberosidade; cinco camadas, a quinta é a cápsula; o cabo protege o crescente e sua lesão dói mais; o intervalo fica entre supraespinal, subescapular e coracoide.
 como: O TECOC perguntou a posição do cabo rotador em relação à cápsula e aos tendões; o TARO 2024 pediu músculos do manguito numa imagem.
 armadilha: Achar que o intervalo rotador tem tendão do manguito, ou que o cabo é visto pelo lado bursal.
@@ -114,7 +114,7 @@ alerta: O teste de YOCUM (`ombro-cotovelo-0013`) não aparece no capítulo lido;
 
 **A dor.** Pior com o movimento ativo que com o passivo, pior acima da cabeça, **noturna** (acorda o paciente), irradiada para a inserção do deltoide. Dor que passa do cotovelo sugere radiculopatia cervical. A palpação vale pouco.
 
-!questoes relacionadas=ombro-cotovelo-0217,ombro-cotovelo-0055
+!questoes central=ombro-cotovelo-0217 relacionadas=ombro-cotovelo-0055
 conceito: Arco doloroso é o teste de impacto mais acurado; HAWKINS, arco doloroso e infraespinal positivos juntos dão mais de 95%; o teste de NEER com lidocaína é sensível e pouco específico; os testes do subescapular são específicos e pouco sensíveis; a dor do manguito é pior à noite.
 como: O ENARE R4 2023 perguntou o tipo e o horário da dor da rotura crônica; o TEOT 2022 mostrou imagens de uma lesão isolada do subescapular.
 armadilha: Achar que um teste isolado fecha o diagnóstico, ou confiar no lift-off negativo para descartar o subescapular.
@@ -151,10 +151,143 @@ NEER (1972) apontou o **terço anterior do acrômio** e o seu lábio anterior co
 
 **A técnica.** O ligamento coracoacromial é **liberado, não ressecado**: retirá-lo pode levar à fuga anterossuperior se o reparo falhar. Na técnica aberta de NEER, a rafe entre o deltoide anterior e o médio não pode passar de **5 cm** abaixo do acrômio (nervo axilar), e a ressecção da clavícula distal nunca passa de **1,5 cm** (ligamentos coracoclaviculares). Na artroscopia, retiram-se cerca de 5 mm do acrômio anterior; a clavícula distal só é ressecada se a acromioclavicular doer e melhorar com anestésico, e não há benefício em ressecá-la junto com o reparo se ela for assintomática.
 
-!questoes relacionadas=ombro-cotovelo-0563
+!questoes central=ombro-cotovelo-0563
 conceito: NEER 1 é edema abaixo de 25 anos, 2 é fibrose de 25 a 40, 3 é esporão e rotura acima de 40; corticoide ajuda por 3 a 12 semanas, cirurgia depois de 3 a 4 meses; o coracoacromial é liberado e não ressecado; acromioplastia junto do reparo nos acrômios tipo 2 e 3.
 como: O TEOT 2025 associou as lesões labrais acima do equador da glenoide à lesão do manguito.
 armadilha: Ressecar o ligamento coracoacromial numa rotura que pode falhar, ou passar de 5 cm na abertura do deltoide.
+!fim
+
+# Os acromiale {radar=confirmado}
+
+**De onde ele vem.** O acrômio ossifica a partir de vários núcleos. Pelo Skeletal Trauma, 5ª ed. (BROWNER, cap. 48, p. 1408, Fig. 48A-1), o **basiacrômio** já existe ao nascer, e três núcleos aparecem dos **15 aos 17 anos**: **pré-acrômio** (o mais anterior), **mesoacrômio** e **meta-acrômio**; todos se fundem dos **19 aos 21 anos**. O os acromiale é a **falha de fusão** de um desses núcleos: o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 29, p. 1182), o define como a apófise do acrômio que não fechou, uma **variante normal em quase 10% dos ombros**, às vezes sintomática e associada a doença do manguito. O Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed. (cap. 5, GODINHO), fala em **até 5%** em algumas populações e liga o osso acromial à **predisposição ao impacto subacromial**. O Rockwood and Wilkins' Fractures in Children, 10ª ed., lembra que ele **não é fratura** e que a radiografia do outro lado ajuda a distinguir.
+
+**Por que causa impacto.** O fragmento solto é puxado para baixo pelo deltoide a cada elevação e reduz o espaço sob o arco. Por isso o Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2158), coloca o **os acromiale patológico** entre as causas de **impacto extrínseco primário**, ao lado do esporão, da fratura do acrômio, dos osteófitos acromioclaviculares e das exostoses da tuberosidade.
+
+**Como ver e o que fazer.** Ele aparece na **incidência axilar**, e o Campbell 15 (cap. 57, p. 2456) avisa: na descompressão, cuidado para **não desestabilizar o os**, porque ressecar a face inferior de um fragmento móvel o enfraquece ainda mais. O Tachdjian registra dois caminhos para o sintomático: **fixação interna com enxerto** ou **descompressão artroscópica do fragmento instável**.
+
+!questoes central=ombro-cotovelo-0383
+conceito: Os acromiale é a falha de fusão de um núcleo do acrômio (pré, meso e meta-acrômio, que aparecem dos 15 aos 17 anos e fundem dos 19 aos 21), presente em até 10% dos ombros, visto na axilar e causa de impacto extrínseco; o gabarito aponta o mesoacrômio como o tipo mais comum.
+como: Duas provas de Ortopedia (sem ano) pediram, com o mesmo enunciado, o tipo mais comum que causa impacto (mesoacrômio).
+armadilha: Marcar basoacrômio: ele já está ossificado ao nascer e não forma os acromiale; o pré-acrômio é o fragmento mais anterior, mas não o mais frequente pelo gabarito.
+alerta: Nenhum dos livros lidos (Campbell 15, Tachdjian 6, Skeletal Trauma 5, Sizínio 5, Rockwood and Wilkins 10) diz qual tipo de os acromiale é o mais comum (`ombro-cotovelo-0383`, `ombro-cotovelo-0383`); o Skeletal Trauma só nomeia os núcleos. O gabarito oficial (A, mesoacrômio) foi mantido.
+!fim
+
+# Impacto subacromial: os testes e o teste da lidocaína {radar=fundamento}
+
+**Sinal e teste não são a mesma coisa.** O **sinal de NEER** é a manobra: o examinador **bloqueia a escápula** e eleva o braço em **flexão forçada**, levando a tuberosidade maior contra o acrômio. O Sizínio (cap. 4) detalha: elevação **passiva e rápida no plano da escápula**, em **rotação neutra**, com a tuberosidade batendo na **face anteroinferior do acrômio**. O **teste de NEER** (o teste do impacto) é a mesma manobra repetida depois de injetar anestésico no espaço subacromial: se a dor some, o impacto é a causa.
+
+**HAWKINS-KENNEDY.** **Flexão de 90 graus** com **rotação interna forçada**: a tuberosidade maior passa sob o **ligamento coracoacromial**. O Sizínio acrescenta que, na mesma posição, a **tuberosidade menor** se aproxima do **coracoide**, e o teste pode reproduzir o **impacto coracoide** de GERBER.
+
+!tabela NEER e HAWKINS-KENNEDY em números (Campbell 15, cap. 51, pp. 2147 e 2148)
+| Medida | NEER com lidocaína | HAWKINS-KENNEDY |
+| --- | --- | --- |
+| Sensibilidade (bursite / manguito) | 75% / 88% | 92% / 88% |
+| Especificidade | 48% / 51% | 44% / 43% |
+| Valor preditivo negativo | 83% / 89% | 93,1% / 90% |
+| Positivo na artrose AC | 69% | 94% |
+| Positivo na SLAP | 46% | 69% |
+| Positivo na lesão de BANKART | 25% | 31% |
+!fim
+
+O raciocínio da tabela é o que a prova cobra: os dois são **sensíveis e pouco específicos**. Servem para **afastar** o impacto (valor preditivo negativo próximo de 90%), não para confirmá-lo, e o HAWKINS é positivo em quase toda artrose acromioclavicular.
+
+**A lidocaína, nos dois livros.** O Campbell 15 (p. 2148) usa **10 mL de lidocaína a 1%**; a injeção alivia o impacto, não as outras causas, talvez com exceção da calcária. O Sizínio (cap. 4) usa **8 a 10 mL de xilocaína**, chama-o de **teste de escolha** e de prova pré-operatória da eficácia da acromioplastia, e faz uma observação prática: as imagens e a exigência de laudo **praticamente substituíram** o teste. A mesma lógica vale na acromioclavicular: o Campbell 15 (cap. 57, p. 2480) diz que **80% a 100% de alívio** com lidocaína na AC prevê bom resultado da ressecção da clavícula distal.
+
+**Quem melhora com a cirurgia.** O Campbell 15 (p. 2160) cita que a melhora do escore de CONSTANT foi maior com **HAWKINS-KENNEDY em posição neutra, NEER e JOBE positivos**, e maior ainda com **quatro de cinco testes** positivos (NEER, HAWKINS em neutro e em abdução, JOBE, arco doloroso) do que com três ou menos.
+
+# Acromioplastia: técnica, resultados e a discussão atual {radar=fundamento}
+
+## A história da cirurgia
+
+O Sizínio (cap. 4) conta a evolução. De 1930 a 1960, WATSON-JONES e SMITH-PETERSEN associavam ao reparo a **ressecção radical, total ou lateral do acrômio**: o deltoide perdia o fulcro e a função era **péssima**. NEER (1972) mostrou que bastava ressecar a **porção anteroinferior** do acrômio para descomprimir, preservando a origem do deltoide. O Campbell 15 (p. 2157.e1) lembra que CODMAN (1931) já atribuía a perda da abdução à rotura do supraespinal, e que NEER apontou o **terço anterior e o lábio anterior** do acrômio como agressores.
+
+!tabela Vias da acromioplastia (Sizínio 5, cap. 4 e cap. 5)
+| Via | Autor | Observação |
+| --- | --- | --- |
+| incisão na linha de LANGER | preferida por PATTE | aberta clássica |
+| incisão transversa | preferida por NEER | aberta clássica |
+| mini-incisão de 3 a 4 cm | ROCKWOOD e BURKHEAD | ambulatorial |
+| artroscópica | ELLMAN (1987) | método de escolha hoje: não desinsere o deltoide |
+!fim
+
+O Sizínio estima que a acromioplastia descompressiva seja cerca de **70% dos procedimentos artroscópicos do ombro**, com curva de aprendizado de **30 a 50 casos**.
+
+## A técnica aberta de NEER (Campbell 15, Técnica 51.1, pp. 2160 a 2162)
+
+- **Cadeira de praia** com a cabeça a **30 a 35 graus**; incisão na linha de LANGER, de **4 a 6 cm**, do acrômio anterior ao coracoide.
+- Abrir a rafe entre o deltoide anterior e o médio **até 5 cm** do acrômio (**nervo axilar**); levantar um retalho de deltoide com periósteo cerca de **2 cm** sobre o acrômio.
+- Ressecar o ligamento coracoacromial com cautério (o ramo acromial da artéria sangra) e a bursa, que é **unilaminar**, enquanto o manguito é **multilaminar**.
+- Retirar primeiro o acrômio que fica **à frente da borda anterior da clavícula**; depois, a osteotomia vai do canto anterossuperior até a **junção dos terços anterior e médio**, com **serra oscilante** (o osteótomo pode propagar fratura para trás).
+- Clavícula distal: **1,0 a 1,5 cm** só com degeneração grave e sintomática; **nunca além de 1,5 cm** (ligamentos coracoclaviculares), preservando a cápsula AC superior.
+- Reinserir o deltoide por **túneis no acrômio**. Pós-operatório: pendulares no dia seguinte, passivos em **1 semana**, ativos em **3 semanas**.
+
+**A pior complicação comum** é a **perda do deltoide anterior**, por lesão do axilar ou desinserção: o resultado é ruim mesmo com o osso bem ressecado, e quase nada recupera um deltoide retraído. As outras: infecção, seroma, fístula sinovial, rotura do bíceps, embolia, **fratura do acrômio** e síndrome dolorosa regional complexa.
+
+## A técnica artroscópica (Campbell 15, cap. 57, Técnica 57.16, pp. 2456 a 2459)
+
+Primeiro se inspeciona a glenoumeral (lábio, bíceps, face articular do manguito). No espaço subacromial, o **portal lateral** fica cerca de **3 cm abaixo do acrômio**, alinhado com a face posterior da AC; agulhas marcam a AC e o canto anterolateral. Faz-se a **bursectomia**, libera-se o coracoacromial com dispositivo térmico e retira-se a borda **lateral** e a **anterior** do acrômio em cerca de **5 mm**, afinando para trás até alinhar o acrômio com a clavícula. A face inferior da clavícula só é rebaixada (cerca de **8 mm**) se houver **esporão**. Na variante de SAMPSON (chock-block), a broca entra pelo **portal posterior** e o próprio acrômio posterior serve de gabarito. Depois da cirurgia, a maioria tem **movimento completo em 3 semanas**, e o fortalecimento dura **3 meses**.
+
+## Resultados e o debate da descompressão
+
+!tabela O que cada livro diz sobre a acromioplastia hoje
+| Ponto | Campbell 15 (caps. 51 e 57) | Sizínio 5 (cap. 4) |
+| --- | --- | --- |
+| Tempo de conservador antes de operar | 3 a 4 meses | 3 a 6 meses |
+| Infiltração de corticoide | uma, no máximo duas; ajuda por 3 a 12 semanas | uma em média; mais de três lesam o tendão; "em pleno desuso" |
+| NEER 3 | acima de 40 anos | acima de 50 anos |
+| Ângulo crítico de risco | acima de 35 graus | acima de 38 graus (abaixo de 28, artrose) |
+| Acromioplastia com o reparo | sim nos acrômios 2 e 3 (mais reoperação sem ela, num ensaio) | resultados tendem a ser idênticos; evitar nas traumáticas e extensas; MATSEN e GARTSMAN reparam sem ela |
+| Ligamento coracoacromial | liberar sem ressecar | NEER ressecava na descrição clássica |
+| Clavícula distal | 1 cm se dor confirmada por anestésico | 8 a 10 mm (5 mm já evitam o atrito); osteófito sem dor não indica |
+!fim
+
+**O que a prova espera.** A acromioplastia aberta tem cerca de **85% de sucesso**; as falhas vêm de **diagnóstico errado** (artrose AC ou glenoumeral, instabilidade sutil do arremessador, capsulite inicial, fibromialgia, radiculopatia cervical, nervo supraescapular) e de **ressecção insuficiente**, mais comum na artroscopia (Campbell 15, p. 2160). Revisões e meta-análises **não mostram diferença** de dor, função e tempo de recuperação entre acromioplastia e reabilitação, e a **bursectomia isolada** rende o mesmo que bursectomia com acromioplastia. A prática caminha para **reparar o manguito sem descompressão** e para menos descompressões isoladas. O Sizínio acrescenta que a acromioplastia na fase II, chamada por alguns de "profilática", **não previne a rotura**, que segue a história natural. O tratamento conservador, nos dois livros, prioriza os **estabilizadores da escápula**: o Campbell 15 lista serrátil anterior, trapézio, romboides, grande dorsal e levantador; o Sizínio usa o exercício do "serrote" com 2 a 4 kg depois de recuperar o movimento passivo; num ensaio citado pelo Campbell 15, PRP e exercício foram igualmente eficazes.
+
+# A acromioclavicular, vizinha do impacto {radar=confirmado}
+
+A AC forma o teto do espaço subacromial: seus **osteófitos inferiores** são causa de impacto extrínseco, a sua artrose é o principal diagnóstico diferencial (HAWKINS positivo em 94% dela) e a ressecção da clavícula distal acompanha muitas descompressões. Por isso a banca mistura AC e impacto.
+
+**Anatomia.** Pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32, seção Anatomy), a AC é uma **diartrose** com **disco fibrocartilaginoso** completo ou parcial (meniscoide), que deixa de funcionar depois da **quarta década**. Os ligamentos AC (anterior, posterior, superior e inferior) seguram o **plano horizontal**; o **superior é o mais forte** e se mistura às fibras do deltoide e do trapézio. A cápsula superior se insere a **5,2 a 7 mm** da ponta da clavícula na mulher e cerca de **8 mm** no homem, e o trapezoide pode estar a **10 mm**: é por isso que uma ressecção generosa desestabiliza.
+
+!questoes central=ombro-cotovelo-0189
+conceito: O disco da AC é fibrocartilaginoso, completo ou parcial (meniscoide), e degenera após a quarta década.
+como: O TECOC pediu a composição do disco por face (gabarito: fibrocartilagem em cima, tecido conjuntivo denso embaixo).
+armadilha: Marcar fibrocartilagem nas duas faces só porque o livro chama o disco de fibrocartilaginoso.
+alerta: Nenhum dos livros lidos (Rockwood and Green 10, Campbell 15, Sizínio 5) descreve o disco da AC por face (`ombro-cotovelo-0189`); o gabarito oficial (D) foi mantido.
+!fim
+
+**Biomecânica (FUKUDA, no Rockwood and Green 10, seção Biomechanics).** Nos **pequenos desvios**, os ligamentos AC são a principal contenção da translação **posterior (89%)** e **superior (68%)**. Nos **grandes desvios**, o **conoide** passa a segurar a subida (62%), mas os AC continuam com a **posterior (90%)**. Entre os coracoclaviculares, o **trapezoide** resiste mais ao desvio posterior e o **conoide** ao anterior.
+
+!questoes central=ombro-cotovelo-0344
+conceito: Os ligamentos AC são a contenção primária da translação posterior da clavícula em pequenos e grandes desvios (89% e 90%); a superior só nos pequenos.
+como: O TARO 2011 pediu a direção em que os AC são restritores primários (posterior).
+armadilha: Marcar superior: nos grandes desvios quem segura a subida é o conoide.
+!fim
+
+**Ressecção da clavícula distal.** O Campbell 15 (cap. 57, pp. 2480 a 2482) só resseca a clavícula se a AC **dói** e a **lidocaína** alivia; artrose radiográfica sem sintoma não é ressecada, nem junto do reparo do manguito. A via artroscópica **preserva a porção superior da cápsula AC**; **5 mm** bastam e a meta é **5 a 8 mm**, sem romper a **cápsula posterior e superior**, pelo acesso **indireto** subacromial (o direto lesou os ligamentos superiores na série de LEVINE). No MUMFORD de TOLIN e SNYDER, a ressecção fica em **6 a 8 mm**. Os erros são a **sub-ressecção** (dor persiste, sobretudo atrás e em cima, as faces mais difíceis de ver) e a **hiper-ressecção** (instabilidade horizontal).
+
+!questoes central=ombro-cotovelo-0414
+conceito: A ressecção artroscópica preserva os ligamentos e a cápsula AC posterior e superior, que seguram a translação posterior; 5 a 8 mm pelo acesso indireto.
+como: O TECOC pediu quais ligamentos AC a ressecção artroscópica preserva (posterior e superior).
+armadilha: Marcar anterior e inferior: são as faces abordadas pelos portais subacromiais.
+!fim
+
+**Na artrodese glenoumeral.** O Campbell 15 (cap. 14, p. 629 aprox.) lista a **artrose AC secundária** e a dor escapulotorácica como complicações comuns e manda, se houver sinal de artrose AC antes da cirurgia, fazer **ressecção concomitante da clavícula distal**, não a fusão da AC.
+
+!questoes central=ombro-cotovelo-0505
+conceito: Na artrodese do ombro, a artrose AC prévia indica ressecção da clavícula distal, não fusão da AC.
+como: O TARO 2006 afirmou, em certo ou errado, que a degeneração AC indica fusão concomitante.
+armadilha: Achar que, se o ombro vai ser fundido, tanto faz fundir a AC.
+alerta: A questão (`ombro-cotovelo-0505`) não tem gabarito oficial; o gabarito pela bibliografia é B (Errado), que é a resposta provável, e o Campbell 15 (cap. 14) o sustenta.
+!fim
+
+**A luxação e a imagem.** Na classificação de ROCKWOOD, o **tipo III** tem AC e CC rotos, a clavícula acima do acrômio e espaço coracoclavicular **25% a 100%** maior, redutível; o **IV** é a clavícula **posterior**, dentro ou através do trapézio; o **V**, 100% a 300%, irredutível (Rockwood and Green 10, cap. 32). A **ZANCA** (10 a 15 graus cefálicos) mostra a AC sem a espinha da escápula sobreposta, mas o desvio **posterior** do IV se vê melhor na **axilar**, com a clavícula atrás da glenoide e do acrômio. O Campbell 15 (cap. 57, pp. 2482 e 2483) resume a conduta: **I e II** não operatórios, **III** controverso, **IV, V e VI** cirúrgicos; até **53%** das lesões de alto grau têm lesão glenoumeral associada, sobretudo do manguito pelo lado articular e SLAP.
+
+!questoes central=ombro-cotovelo-0540 relacionadas=ombro-cotovelo-0532,ombro-cotovelo-0511
+conceito: ROCKWOOD III: AC e CC rotos, espaço CC 25% a 100% maior, redutível; IV: clavícula posterior, vista na axilar, cirúrgica; V: 100% a 300%, irredutível; I e II conservadores, IV a VI operados.
+como: O ENARE R4 2025 descreveu desvio superior de 80% redutível (tipo III) e pediu o tratamento do tipo IV (reconstrução ligamentar); o TARO 2006 afirmou que a ZANCA é a melhor incidência no tipo IV.
+armadilha: Achar que a ZANCA, ótima para a AC no plano coronal, mostra o desvio posterior; ou tratar o IV com tipoia como o I e o II.
+alerta: A questão do TARO 2006 (`ombro-cotovelo-0511`) não tem gabarito oficial; o gabarito pela bibliografia é B (Errado), que é a resposta provável, e o Rockwood and Green 10 o sustenta (o tipo IV é melhor visto na axilar).
 !fim
 
 # Classificar a rotura {radar=confirmado}
@@ -217,7 +350,7 @@ Graus **3 e 4** indicam rotura antiga, com mais falha e provavelmente irreparáv
 conceito: Intervalo acromioumeral abaixo de 7 mm sugere rotura e abaixo de 5 mm rotura maciça; HAMADA vai do intervalo maior que 6 mm ao colapso da cabeça; ângulo crítico acima de 35 graus se liga à rotura degenerativa e à rerruptura; GOUTALLIER 3 e 4 com coto menor que 15 mm e tangente positiva falham em 90%.
 como: O TECOC perguntou a que se relaciona o ângulo crítico de 40 graus; a Ortopedia, o grau de GOUTALLIER com 60% de gordura; o TEOT 2022, o grau numa ressonância do subescapular; o TARO 2007, os sinais radiográficos da artropatia.
 armadilha: Achar que o acrômio em gancho causa a rotura, ou ler GOUTALLIER 2 como mais gordura que músculo.
-alerta: O TECOC (`ombro-cotovelo-0182`) usa 40 graus; o Campbell 15 dá 35 graus como o limite a partir do qual o ângulo crítico se associa à rotura degenerativa, e cita a acromioplastia lateral de GERBER para prevenir a rerruptura.
+alerta: O TECOC (`ombro-cotovelo-0182`) usa 40 graus; o Campbell 15 dá 35 graus como o limite a partir do qual o ângulo crítico se associa à rotura degenerativa, e cita a acromioplastia lateral de GERBER para prevenir a rerruptura. A `ombro-cotovelo-0468` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (sinal da sobrancelha, osteófito inferior na cabeça umeral e diminuição do espaço articular).
 !fim
 
 # História natural e tratamento {radar=fundamento}
@@ -299,7 +432,7 @@ armadilha: Achar que retração de 1,5 cm já piora o resultado (o limite é 2,5
 
 **A reabilitação.** Tipoia com almofada por **6 semanas**; o reparo é mais fraco por volta da **3ª semana** e, nos 3 primeiros meses, mais fraco que no dia da cirurgia. Esperar 6 semanas para a fisioterapia nas roturas médias e grandes **não aumentou a rigidez** em 1 ano e **reduziu a rerruptura**; nos **diabéticos**, que enrijecem com facilidade, a fisioterapia começa cedo. Isometria em rotação externa em 6 semanas, ativo em 12, fortalecimento depois de 10 a 12. O PRP não mostrou benefício clínico consistente.
 
-!questoes relacionadas=ombro-cotovelo-0208,ombro-cotovelo-0418
+!questoes central=ombro-cotovelo-0208 relacionadas=ombro-cotovelo-0418
 conceito: Fileira simples cobre metade da pegada e a dupla quase toda; nas grandes e maciças a dupla cicatriza melhor; superconstrição rompe a junção musculotendínea (TRANTALIS 2); convergência de margens nas roturas em U e L; tipoia por 6 semanas, e esperar 6 semanas pela fisioterapia reduz a rerruptura sem aumentar a rigidez.
 como: O TECOC perguntou o colágeno da mobilização precoce e o exercício passivo que mais ativa o supraespinal.
 armadilha: Mobilizar além de 1,8 cm da glenoide, ou achar que a dupla fileira é sempre melhor nas roturas pequenas.
@@ -335,11 +468,11 @@ armadilha: Trocar o grande dorsal pelo peitoral maior, ou esquecer que o peitora
 
 **Outras saídas.** O **reparo parcial** com convergência das margens foi superior a desbridamento, transferências e reforços; o reparo **não anatômico de McLAUGHLIN** leva o tendão até 2 cm mais proximal, no colo anatômico, à custa de braço de alavanca; a **transposição do subescapular de COFIELD** desfaz o par de forças e pode dar instabilidade anterior; a **cabeça longa do bíceps** pode ser redirecionada a uma âncora na tuberosidade maior, como depressor da cabeça; o **desbridamento** com descompressão limitada, preservando o coracoacromial e o bíceps, é boa opção para o idoso cujo objetivo é a dor.
 
-!questoes relacionadas=ombro-cotovelo-0232,ombro-cotovelo-0353,ombro-cotovelo-0396,ombro-cotovelo-0192,ombro-cotovelo-0502,ombro-cotovelo-0082
+!questoes central=ombro-cotovelo-0232 relacionadas=ombro-cotovelo-0353,ombro-cotovelo-0396,ombro-cotovelo-0192,ombro-cotovelo-0502,ombro-cotovelo-0082
 conceito: Transferência pede paciente jovem, sem pseudoparalisia e com a musculatura oposta íntegra (subescapular para o grande dorsal); o trapézio inferior imita o infraespinal e exige enxerto de AQUILES; a reconstrução capsular superior pede subescapular íntegro e dor como queixa; com fuga anterossuperior, reversa.
 como: A SBOT-SP perguntou o requisito de uma transferência; o TARO 2010 e o TARO 2009, o tendão que precisa estar íntegro para o grande dorsal; o TECOC, a transferência que exige enxerto e a fixação na reconstrução capsular; o TARO 2006, a rotura irreparável na prótese; a Ortopedia, o que não ocorre na artropatia.
 armadilha: Indicar transferência no paciente com pseudoparalisia ou subescapular roto, ou esquecer o enxerto no trapézio inferior.
-alerta: A margem de sutura e o local de falha na reconstrução capsular superior (`ombro-cotovelo-0192`) não aparecem no Campbell 15; o gabarito oficial foi mantido.
+alerta: A margem de sutura e o local de falha na reconstrução capsular superior (`ombro-cotovelo-0192`) não aparecem no Campbell 15; o gabarito oficial foi mantido. A `ombro-cotovelo-0502` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (Certo).
 !fim
 
 # Complicações do reparo {radar=confirmado}
@@ -353,6 +486,7 @@ alerta: A margem de sutura e o local de falha na reconstrução capsular superio
 conceito: Puxar o supraespinal mais de 1,8 cm além da borda da glenoide estira o nervo supraescapular.
 como: O TARO 2013 e o TARO 2008 perguntaram o nervo em risco na mobilização do supraespinal.
 armadilha: Responder nervo axilar, que é o risco do deltoide na acromioplastia.
+alerta: A `ombro-cotovelo-0481` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (do nervo supraescapular).
 !fim
 
 # Subescapular e o tecido da vírgula {radar=confirmado}
@@ -365,6 +499,7 @@ armadilha: Responder nervo axilar, que é o risco do deltoide na acromioplastia.
 conceito: O sinal da vírgula aparece na rotura retraída do subescapular e é feito do coracoumeral e do glenoumeral superior; o subescapular é o assoalho da bainha do bíceps, e os dois se lesam juntos.
 como: O TEOT 2023 pediu o tendão do sinal da vírgula; o TECOC, os ligamentos que o formam; o TARO 2011 e o TARO 2008, a associação entre o subescapular e o bíceps.
 armadilha: Pôr o sinal da vírgula no supraespinal, ou formá-lo com o coracoacromial.
+alerta: A `ombro-cotovelo-0479` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (subescapular).
 !fim
 
 # Subescapular: LAFOSSE e o reparo {radar=confirmado}
@@ -385,7 +520,7 @@ O **tipo V** em geral não é reparável: vai para **transferência** ou **prót
 
 **Quando não repara.** A **transferência do grande dorsal para a tuberosidade menor** vem substituindo a do **peitoral maior**, pela linha de tração mais direta; o peitoral tem linha de tração quase perpendicular à do subescapular (cap. 14). MUN e colaboradores tornaram negativo o belly-press em 18 de 24 pacientes e o lift-off em 16 de 24 com o grande dorsal.
 
-!questoes relacionadas=ombro-cotovelo-0058,ombro-cotovelo-0454,ombro-cotovelo-0443
+!questoes central=ombro-cotovelo-0058 relacionadas=ombro-cotovelo-0454,ombro-cotovelo-0443
 conceito: LAFOSSE vai da parcial do terço superior (I) ao tendão inteiro com subluxação e gordura (V, irreparável: transferência ou reversa); o subescapular é reparado primeiro; o grande dorsal para a tuberosidade menor substitui o peitoral maior no irreparável.
 como: O TEOT 2022 perguntou o tratamento de uma lesão isolada do subescapular com 5 anos; o TARO 2024, o diagnóstico e o tratamento depois de uma queda de cavalo; o TARO 2026, o aspecto do subescapular no ultrassom.
 armadilha: Tentar reparar um LAFOSSE V antigo, ou deixar o subescapular para o fim da artroscopia.
@@ -450,6 +585,4 @@ armadilha: Achar que a reversa lateraliza o centro de rotação ou que depende d
 
 Diante de um manguito roto, a sequência é sempre a mesma: **qual tendão** (os testes), **quanto falta** (COFIELD e ELLMAN), **quanto músculo sobrou** (GOUTALLIER) e **o que o paciente precisa** (idade, atividade, tempo de sintomas). Com essas quatro respostas, a decisão entre observar, reparar, transferir ou trocar a articulação deixa de ser uma aposta.
 
-> **Na prova:** **observar** idoso pouco ativo; **reparar** parcial acima de 50% e completas reparáveis; **transferir** nas irreparáveis (grande dorsal atrás, peitoral na frente); **reversa** na artropatia; **não mobilizar além de 1,8 cm** da glenoide.
-
-> **Na prova, o que a versão 2 acrescenta:** pegada do **subescapular** é a maior; **arco doloroso** é o teste de impacto mais acurado; intervalo acromioumeral **abaixo de 7 mm** = rotura, **abaixo de 5 mm** = maciça; ângulo crítico **acima de 35 graus**; GOUTALLIER **3 e 4** com coto **abaixo de 15 mm** e tangente positiva falham em **90%**; reparar a aguda em **3 semanas**; mau resultado com **idade acima de 65, diabetes, retração acima de 2,5 cm, gordura acima de 50%**; dupla fileira cobre **100%** da pegada; LAFOSSE **V** = transferência ou reversa; trapézio inferior com **AQUILES**; calcária dói na **reabsorção**.
+> **Na prova:** **observar** idoso pouco ativo; **reparar** parcial acima de 50% e completas reparáveis; **transferir** nas irreparáveis; **reversa** na artropatia; **não mobilizar além de 1,8 cm** da glenoide; pegada do **subescapular** é a maior; **arco doloroso** é o teste de impacto mais acurado; intervalo acromioumeral **abaixo de 7 mm** = rotura, **abaixo de 5 mm** = maciça; ângulo crítico **acima de 35 graus**; GOUTALLIER **3 e 4** com coto **abaixo de 15 mm** e tangente positiva falham em **90%**; reparar a aguda em **3 semanas**; mau resultado com **idade acima de 65, diabetes, retração acima de 2,5 cm, gordura acima de 50%**; dupla fileira cobre **100%** da pegada; LAFOSSE **V** = transferência ou reversa; trapézio inferior com **AQUILES**; calcária dói na **reabsorção**; NEER 1, 2 e 3 abaixo de 25, de 25 a 40 e acima de 40 anos; **os acromiale** na axilar, causa de impacto extrínseco (mesoacrômio pelo gabarito); NEER e HAWKINS sensíveis e pouco específicos, lidocaína 10 mL; conservador **3 a 4 meses**; acromioplastia aberta de NEER com rafe até **5 cm** e clavícula até **1,5 cm**, artroscópica (ELLMAN, 1987) com cerca de **5 mm**; sem vantagem sobre a reabilitação, mas feita nos acrômios **2 e 3** junto do reparo; coracoacromial **liberado, não ressecado**; AC posterior e superior preservadas na ressecção de **5 a 8 mm**.
