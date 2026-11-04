@@ -192,7 +192,7 @@ O Lovell and Winter (p. 1614) faz a crítica moderna: os discoides **representam
 conceito: WATANABE separa completo (I), incompleto (II, menos de 80%) e WRISBERG (III), que não tem o ligamento coronário posterior e fica preso só pelo WRISBERG; MONLLAU acrescenta o tipo IV em anel.
 como: Provas de Ortopedia pediram a afirmação correta sobre o discoide (o WRISBERG sem coronário), com distratores sobre lado medial, 5% bilateral e tipo 3 com periferia íntegra; o TEOT 2022 mostrou uma figura para classificar por WATANABE; o ENARE 2023 perguntou qual autor tem classificação de discoide congênito (MONLLAU).
 armadilha: Achar que o tipo 3 cobre o platô com periferia íntegra (isso é o completo) ou que o tipo WRISBERG não tem o ligamento de WRISBERG.
-alerta: Em `pediatria-0161` e `pediatria-0161` (mesmo enunciado), a alternativa "5% é bilateral" é falsa pela banca, mas os livros não dão 5%: Campbell (cap. 56) menos de 10%, Lovell and Winter até 20%, Tachdjian "comum". Em `joelho-0053` a figura não foi conferida; o gabarito oficial (C, tipo III) foi mantido.
+alerta: Em `pediatria-0161`, a alternativa "5% é bilateral" é falsa pela banca, mas os livros não dão 5%: Campbell (cap. 56) menos de 10%, Lovell and Winter até 20%, Tachdjian "comum". Em `joelho-0053`, a figura mostra o ligamento de WRISBERG saindo do corno posterior sem fixação tibial e confirma o gabarito (tipo III).
 !fim
 
 # O tipo WRISBERG e a instabilidade do rebordo {radar=confirmado}
