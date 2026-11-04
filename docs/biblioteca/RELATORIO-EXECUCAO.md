@@ -293,7 +293,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 931 | Osteoma osteoide (dahlin-osteoma-osteoide, 62 KB), osteomielite crônica (tachdjian6-osteomielite v3, 70 KB: CIERNY-MADER, biofilme, MARJOLIN, MASQUELET) e escoliose congênita e neuromuscular (campbell15-escoliose-congenita-neuromuscular, 62 KB, Campbell cap. 40 com Tachdjian e Lovell and Winter); 16 miniaulas (sindactilia 10, osteoma osteoide 5, cisto aneurismático 1). |
 | 932 | 41 miniaulas: osteomielite (36 questões antigas refeitas a partir da versão 3 do resumo) e escoliose congênita (5, com as figuras conferidas); alerta da figura da coluna-0220 retirado do resumo. |
 | 933 | Reconstrução do LCA: enxertos e túneis: versão 3 do resumo do LCA (campbell14-lca, 70 KB; carga e rigidez dos enxertos, retirada dos flexores, aloenxerto e esterilização, marcos do túnel femoral, transtibial x portal anteromedial, fixação, ligamentização e falha, com Campbell 15 e HEBERT lado a lado). |
-| (este PR) | Dois resumos novos: artroscopia do joelho (hebert-artroscopia-joelho, 52 KB, HEBERT cap. 64 com Campbell 15 caps. 10, 54 e 56) e imagem da mão e punho (green-imagem-mao-punho, 68 KB, Green 7 cap. 15 e outros com Rockwood e HEBERT; 37 questões ligadas). |
+| 934 | Dois resumos novos: artroscopia do joelho (hebert-artroscopia-joelho, 52 KB, HEBERT cap. 64 com Campbell 15 caps. 10, 54 e 56) e imagem da mão e punho (green-imagem-mao-punho, 68 KB, Green 7 cap. 15 e outros com Rockwood e HEBERT; 37 questões ligadas). |
+| (este PR) | Biomecânica do ombro e cotovelo: resumo novo (campbell15-biomecanica-ombro-cotovelo, 61 KB, Campbell 15 cap. 13 com Rockwood, Green e HEBERT); 23 miniaulas: imagem da mão e punho (16, com as figuras descritas e a dissertativa de SOONG), artroscopia do joelho (5) e LCA (2). |
 
 ## Próximo
 
