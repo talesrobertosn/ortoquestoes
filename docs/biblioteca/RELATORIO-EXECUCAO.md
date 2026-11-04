@@ -284,7 +284,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 922 | Impacto subacromial e acromioplastia: versão 3 do resumo do manguito rotador (70 KB; os acromiale, testes de NEER e HAWKINS, acromioplastia aberta e artroscópica, acromioclavicular); três resumos novos: biomecânica do joelho (hebert-biomecanica-joelho, 62 KB), metodologia científica e estatística (rockwood10-metodologia-cientifica, 62 KB, Rockwood cap. 8) e lesões condrais (campbell15-lesoes-condrais, 62 KB); alertas das questões sem gabarito alinhados ao gabarito pela bibliografia. |
 | 923 | 36 miniaulas: manguito rotador (22, refeitas a partir da versão 3 do resumo), biomecânica do joelho (6), lesões condrais (4) e metodologia científica (4), com Campbell, HEBERT e Rockwood lado a lado onde divergem. |
 | 924 | 21 miniaulas do manguito rotador (partes 3 e 4: tendinite calcária, os acromiale, GOUTALLIER, imagem, transferências, reabilitação), completando as 43 questões antigas refeitas; alertas da ombro-cotovelo-0565 e 0573 acrescentados ao resumo. |
-| (este PR) | Artroscopia do tornozelo: resumo novo (campbell15-artroscopia-tornozelo, 62 KB, Campbell 15 caps. 54 e 55 com Rockwood and Green 10) e 5 miniaulas, com os capítulos do Campbell lado a lado onde se contradizem. |
+| 925 | Artroscopia do tornozelo: resumo novo (campbell15-artroscopia-tornozelo, 62 KB, Campbell 15 caps. 54 e 55 com Rockwood and Green 10) e 5 miniaulas, com os capítulos do Campbell lado a lado onde se contradizem. |
+| (este PR) | Três resumos novos: pubalgia e osteíte púbica (hebert-pubalgia, 62 KB, HEBERT 76 com Campbell 7), fraturas periprotéticas do quadril (callaghan-fraturas-periproteticas-quadril, 62 KB, The Adult Hip 88 com Rockwood e Campbell) e imagem em ortopedia (rockwood10-imagem-ortopedia, 62 KB, Rockwood 7 com Campbell, The Adult Hip, HEBERT e Tachdjian). |
 
 ## Próximo
 
