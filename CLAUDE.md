@@ -1,5 +1,7 @@
 # Orientação permanente para Claude
 
+**Autonomia total para publicar (Tales, 04/11/2026):** toda alteração pode ser publicada sem pedir autorização: rodar os checks, abrir o PR, marcar como pronto e juntar (merge) assim que o CI ficar verde. Só parar para perguntar se o Tales disser o contrário naquele pedido.
+
 Leia [AGENTS.md](AGENTS.md).
 
 **Prioridade (Tales, 30/10/2026):** refazer os resumos e comentários curtos dos ciclos 3 a 20, conforme [docs/biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md](docs/biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md). Resumo com no mínimo 45 KB; comentário em miniaula com tamanho proporcional à questão, sem molde fixo e sem parágrafos copiados entre questões (Tales, 31/10/2026: "seja humano, seja flexível"; regras na seção "Professor humano, não molde" do padrão editorial). "Por que esta questão foi criada" só nos OrtoQuestões Simulados; "Na prova" só quando fizer sentido. Meça com `scripts/biblioteca/medir_profundidade.py` antes de publicar. Todo trabalho de comentários segue
