@@ -261,7 +261,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 899 | CRIAR dois temas: dedo em gatilho e outras tenossinovites (Green's Operative Hand Surgery, 7ª ed., cap. 56 e caps. 2 e 37; Campbell 15, caps. 81 e 84; Tachdjian; HEBERT) e amputações e reimplantes da mão (Green 7, caps. 42 e 49 e outros; Campbell 15, caps. 20, 21 e 68), mais 20 miniaulas: exame físico do joelho (10) e deformidades e alongamento (10). |
 | 900 | CRIAR síndrome do túnel do carpo (Green's Operative Hand Surgery, 7ª ed., caps. 28, 29, 31, 53 e 56; Campbell 15, caps. 82 e 78; HEBERT), mais 37 miniaulas de amputações e reimplantes da mão. |
 | 901 | 45 miniaulas de mão: dedo em gatilho e outras tenossinovites (24) e síndrome do túnel do carpo (21), com Green, Campbell e HEBERT lado a lado onde divergem. |
-| (este PR) | Artrite séptica v2 (sinovite transitória do quadril ligada ao resumo do Tachdjian 6, cap. 22, com Lovell and Winter 7 e HEBERT) e CRIAR lesões SLAP e do lábio superior (HEBERT, 5ª ed., caps. 5, 45 e 4; Campbell 15, caps. 57, 51 e 3). |
+| 902 | Artrite séptica v2 (sinovite transitória do quadril ligada ao resumo do Tachdjian 6, cap. 22, com Lovell and Winter 7 e HEBERT) e CRIAR lesões SLAP e do lábio superior (HEBERT, 5ª ed., caps. 5, 45 e 4; Campbell 15, caps. 57, 51 e 3). |
+| (este PR) | CRIAR três temas: osteocondroses (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 9; Tachdjian; Campbell 15; Rockwood and Wilkins), exame físico do cotovelo (HEBERT, 5ª ed., caps. 4, 48 e 47; Campbell 15; Green 7; Rockwood and Green) e hálux rígido (HEBERT, caps. 21.5 e 21.3; Campbell 15, caps. 87, 90, 55 e 36; Tachdjian). |
 
 ## Próximo
 
