@@ -96,3 +96,23 @@ function fonteDoHtml(dados: DataTransfer): string | null {
   // Miniatura do Google (gstatic) não é a fonte de verdade: melhor deixar em branco.
   return /^https?:\/\//i.test(src) && !/gstatic\.com|googleusercontent\.com/i.test(src) ? src : null
 }
+
+/**
+ * Lê a imagem que já está copiada (Chrome e Edge pedem permissão uma vez).
+ * Sem imagem copiada, sem permissão ou navegador sem suporte: lista vazia,
+ * e a pessoa ainda pode colar com Ctrl+V.
+ */
+export async function imagensDaAreaDeTransferencia(): Promise<ImagemLocal[]> {
+  if (!navigator.clipboard?.read) return []
+  try {
+    const itens = await navigator.clipboard.read()
+    const achadas: ImagemLocal[] = []
+    for (const item of itens) {
+      const tipo = item.types.find(t => t.startsWith('image/'))
+      if (!tipo) continue
+      const blob = await item.getType(tipo)
+      achadas.push({ arquivo: new File([blob], `colada.${tipo.split('/')[1] || 'png'}`, { type: tipo }) })
+    }
+    return achadas
+  } catch { return [] }
+}
