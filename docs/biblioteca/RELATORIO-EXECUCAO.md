@@ -268,7 +268,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 906 | CRIAR dois temas: outras lesões pseudotumorais (Dahlin's Bone Tumors, 6ª ed., caps. 14 e 26; Campbell 15; Lovell and Winter; Tachdjian; Rockwood and Green; HEBERT) e deformidades dos dedos (Green's Operative Hand Surgery, 7ª ed., cap. 10 e outros; Campbell 15, caps. 71, 79 e 85; HEBERT), mais 7 miniaulas do pé plano flexível. |
 | 907 | CRIAR medicamentos e exames laboratoriais (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 26 e outros; Campbell 15; HEBERT), mais 21 miniaulas: deformidades dos dedos (17) e lesões pseudotumorais (4). |
 | 908 | CRIAR biomecânica e marcha do pé e tornozelo (HEBERT, 5ª ed., cap. 1 e outros; Campbell 15; Rockwood and Green; Tachdjian), mais 10 miniaulas de medicamentos e exames laboratoriais. |
-| (este PR) | CRIAR deformidades congênitas do pé (HEBERT, 5ª ed., caps. 20.5, 20.3 e 20.1; Lovell and Winter 7, cap. 29; Tachdjian; Campbell 15) e impacto femoroacetabular v2 com artroscopia do quadril e lesão labral (Campbell 15, cap. 56; HEBERT; The Adult Hip). |
+| 909 | CRIAR deformidades congênitas do pé (HEBERT, 5ª ed., caps. 20.5, 20.3 e 20.1; Lovell and Winter 7, cap. 29; Tachdjian; Campbell 15) e impacto femoroacetabular v2 com artroscopia do quadril e lesão labral (Campbell 15, cap. 56; HEBERT; The Adult Hip). |
+| (este PR) | CRIAR vias de acesso à coluna (Hoppenfeld, Vias de Acesso em Cirurgia Ortopédica, 4ª ed., cap. 6, lido por OCR; Campbell 15, caps. 44 e 45; Rockwood and Green), mais 9 miniaulas de biomecânica e marcha do pé. |
 
 ## Próximo
 
