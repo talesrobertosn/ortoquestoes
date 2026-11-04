@@ -67,7 +67,7 @@ O mesmo capítulo do CALLAGHAN (p. 46 aprox.) define o **trígono femoral**: lim
 
 ## A questão de imagem
 
-A banca mostrou a pelve vista por baixo, com duas setas nas origens dos adutores, e pediu os dois músculos. O gabarito oficial é **adutor longo e adutor magno**. Pelo CALLAGHAN, os dois nascem do ramo púbico inferior, o magno estendendo a origem ao ramo isquiático, enquanto o grácil ocupa a **borda da sínfise**. A alternativa com o grácil é a armadilha clássica: ele também nasce no ramo inferior, mas mais medial, colado à sínfise. Como a figura não está disponível neste resumo, o gabarito foi preservado como está; o raciocínio que o livro permite é o de posição: mais medial e perto da sínfise, grácil; mais lateral e posterior, estendendo-se ao ísquio, magno.
+A banca mostrou a hemipelve em vista anterior, com uma seta no corpo do púbis, ao lado da sínfise, e outra na borda do ramo isquiopúbico, nas origens dos adutores, e pediu os dois músculos. O gabarito oficial é **adutor longo e adutor magno**. Pelo CALLAGHAN, os dois nascem do ramo púbico inferior, o magno estendendo a origem ao ramo isquiático, enquanto o grácil ocupa a **borda da sínfise**. A alternativa com o grácil é a armadilha clássica: ele também nasce no ramo inferior, mas mais medial, colado à sínfise. Como a figura não está disponível neste resumo, o gabarito foi preservado como está; o raciocínio que o livro permite é o de posição: mais medial e perto da sínfise, grácil; mais lateral e posterior, estendendo-se ao ísquio, magno.
 
 !questoes central=quadril-0139
 conceito: O adutor longo, o curto e o magno nascem do ramo púbico inferior (o magno também do ramo isquiático) e vão à linha áspera; o grácil nasce do ramo púbico inferior e da borda da sínfise e vai à pata de ganso.
