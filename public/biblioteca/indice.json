@@ -17624,6 +17624,137 @@
    ]
   },
   {
+   "id": "rockwood10-medicamentos-laboratorio",
+   "versao": 1,
+   "titulo": "Medicamentos e exames laboratoriais",
+   "especialidade": "conceitos-basicos",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 2, 4, 22, 46 e 49) e o Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed. (caps. 16, 26, 28 e 56)",
+   "capitulo": "Capítulo 26 · Venous Thromboembolism in Patients With Skeletal Trauma",
+   "resumo": "Ácido tranexâmico é antifibrinolítico que inibe a ativação do plasminogênio; heparina ativa a antitrombina (TTPa, osteoporose, TIH) e é revertida pela protamina, parcial na enoxaparina; varfarina bloqueia II, VII, IX e X (vitamina K); clopidogrel tem meia-vida de 8 h e 5 a 7 dias de recuperação plaquetária; opioide, não AINE, associou-se à pseudartrose; PRP tem ao menos 4 vezes as plaquetas; osteoclasto vem da célula-tronco hematopoética; denosumabe é anti-RANKL e romosozumabe antiesclerostina; VHS normaliza em 3 semanas e PCR em 1; infecção periprotética pelo ICM com 6 pontos; biológico suspende e DMARD segue.",
+   "acesso": "gratis",
+   "minutos": 36,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-coagulacao-cascata-modelo-celular-e-onde-cada-",
+     "titulo": "A coagulação: cascata, modelo celular e onde cada fármaco encosta",
+     "radar": "confirmado"
+    },
+    {
+     "id": "acido-tranexamico-e-os-antifibrinoliticos",
+     "titulo": "Ácido tranexâmico e os antifibrinolíticos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "heparinas-fondaparinux-e-a-protamina",
+     "titulo": "Heparinas, fondaparinux e a protamina",
+     "radar": "confirmado"
+    },
+    {
+     "id": "varfarina-e-anticoagulantes-orais-diretos",
+     "titulo": "Varfarina e anticoagulantes orais diretos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "antiagregantes-aspirina-e-clopidogrel",
+     "titulo": "Antiagregantes: aspirina e clopidogrel",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tromboprofilaxia-no-trauma-e-na-cirurgia-ortoped",
+     "titulo": "Tromboprofilaxia no trauma e na cirurgia ortopédica",
+     "radar": "clinico"
+    },
+    {
+     "id": "diagnostico-do-tromboembolismo",
+     "titulo": "Diagnóstico do tromboembolismo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "analgesia-paracetamol-dipirona-aine-e-opioide",
+     "titulo": "Analgesia: paracetamol, dipirona, AINE e opioide",
+     "radar": "confirmado"
+    },
+    {
+     "id": "farmacos-e-consolidacao-aine-opioide-antirreabso",
+     "titulo": "Fármacos e consolidação: AINE, opioide, antirreabsortivos e PRP",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-osteoclasto-e-os-farmacos-que-mexem-no-osso",
+     "titulo": "O osteoclasto e os fármacos que mexem no osso",
+     "radar": "clinico"
+    },
+    {
+     "id": "calcio-fosforo-fosfatase-alcalina-pth-e-vitamina",
+     "titulo": "Cálcio, fósforo, fosfatase alcalina, PTH e vitamina D",
+     "radar": "fundamento"
+    },
+    {
+     "id": "vhs-e-pcr-os-dois-cronometros-da-infeccao",
+     "titulo": "VHS e PCR: os dois cronômetros da infecção",
+     "radar": "confirmado"
+    },
+    {
+     "id": "infeccao-periprotetica-os-criterios-do-consenso",
+     "titulo": "Infecção periprotética: os critérios do consenso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "liquido-sinovial-o-tubo-certo-para-cada-exame",
+     "titulo": "Líquido sinovial: o tubo certo para cada exame",
+     "radar": "confirmado"
+    },
+    {
+     "id": "medicamentos-reumatologicos-no-perioperatorio",
+     "titulo": "Medicamentos reumatológicos no perioperatório",
+     "radar": "confirmado"
+    },
+    {
+     "id": "antibioticoprofilaxia-e-preparo-do-paciente",
+     "titulo": "Antibioticoprofilaxia e preparo do paciente",
+     "radar": "clinico"
+    },
+    {
+     "id": "anemia-transfusao-e-a-coagulopatia-do-trauma",
+     "titulo": "Anemia, transfusão e a coagulopatia do trauma",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "conceitos-basicos-0274",
+    "conceitos-basicos-0121",
+    "conceitos-basicos-0243",
+    "conceitos-basicos-0069",
+    "conceitos-basicos-0414",
+    "conceitos-basicos-0022",
+    "conceitos-basicos-0230",
+    "conceitos-basicos-0010",
+    "conceitos-basicos-0083",
+    "conceitos-basicos-0006",
+    "conceitos-basicos-0278"
+   ],
+   "treino": [
+    "conceitos-basicos-0348",
+    "conceitos-basicos-0357",
+    "conceitos-basicos-0341",
+    "conceitos-basicos-0342"
+   ],
+   "subtemas": [
+    "Medicamentos e exames laboratoriais"
+   ]
+  },
+  {
    "id": "rockwood10-osteoporose",
    "versao": 2,
    "titulo": "Osteoporose: diagnóstico e tratamento",
