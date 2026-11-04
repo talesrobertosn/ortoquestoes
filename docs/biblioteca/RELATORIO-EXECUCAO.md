@@ -282,7 +282,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 920 | Três resumos novos: coxartrose (callaghan-coxartrose, 62 KB, The Adult Hip cap. 41 com Campbell e HEBERT), condroblastoma (dahlin-condroblastoma, 60 KB, Dahlin cap. 4) e osteocondroma e exostoses múltiplas (dahlin-osteocondroma, 57 KB, Dahlin cap. 2), com Campbell, Tachdjian, Lovell and Winter, Green e HEBERT lado a lado; 5 miniaulas da fasciíte plantar. |
 | 921 | 17 miniaulas: coxartrose (4), condroblastoma (6) e osteocondroma (7), com Dahlin, Campbell, Tachdjian, Lovell and Winter, Green, HEBERT e CALLAGHAN lado a lado onde divergem. |
 | 922 | Impacto subacromial e acromioplastia: versão 3 do resumo do manguito rotador (70 KB; os acromiale, testes de NEER e HAWKINS, acromioplastia aberta e artroscópica, acromioclavicular); três resumos novos: biomecânica do joelho (hebert-biomecanica-joelho, 62 KB), metodologia científica e estatística (rockwood10-metodologia-cientifica, 62 KB, Rockwood cap. 8) e lesões condrais (campbell15-lesoes-condrais, 62 KB); alertas das questões sem gabarito alinhados ao gabarito pela bibliografia. |
-| (este PR) | 36 miniaulas: manguito rotador (22, refeitas a partir da versão 3 do resumo), biomecânica do joelho (6), lesões condrais (4) e metodologia científica (4), com Campbell, HEBERT e Rockwood lado a lado onde divergem. |
+| 923 | 36 miniaulas: manguito rotador (22, refeitas a partir da versão 3 do resumo), biomecânica do joelho (6), lesões condrais (4) e metodologia científica (4), com Campbell, HEBERT e Rockwood lado a lado onde divergem. |
+| (este PR) | 21 miniaulas do manguito rotador (partes 3 e 4: tendinite calcária, os acromiale, GOUTALLIER, imagem, transferências, reabilitação), completando as 43 questões antigas refeitas; alertas da ombro-cotovelo-0565 e 0573 acrescentados ao resumo. |
 
 ## Próximo
 
