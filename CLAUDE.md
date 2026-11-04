@@ -1,6 +1,6 @@
 # Orientação permanente para Claude
 
-**Autonomia total para publicar (Tales, 04/11/2026):** toda alteração pode ser publicada sem pedir autorização: rodar os checks, abrir o PR, marcar como pronto e juntar (merge) assim que o CI ficar verde. Só parar para perguntar se o Tales disser o contrário naquele pedido.
+**Autonomia total para publicar (Tales, 04/11/2026):** toda alteração pode ser publicada sem pedir autorização: rodar os checks, abrir o PR, marcar como pronto e juntar (merge) assim que o CI ficar verde. Só parar para perguntar se o Tales disser o contrário naquele pedido. Não esperar nem depender da revisão do Codex (bot `chatgpt-codex-connector`): os comentários dele não bloqueiam a publicação.
 
 Leia [AGENTS.md](AGENTS.md).
 
