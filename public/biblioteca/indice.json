@@ -863,15 +863,15 @@
   },
   {
    "id": "callaghan-impacto-femoroacetabular",
-   "versao": 1,
-   "titulo": "Impacto femoroacetabular",
+   "versao": 2,
+   "titulo": "Impacto femoroacetabular, artroscopia do quadril e lesão labral",
    "especialidade": "quadril",
    "livro": "The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)",
    "edicao": "Edição de 2017",
    "capitulo": "Capítulo 35 · Sequelae of Pediatric Hip Disease",
-   "resumo": "Came (fêmur, homem jovem atleta, flexão com rotação interna, junção condrolabral, delaminação anterossuperior) x pincer (acetábulo, mulher, coxa profunda, protrusão ou retroversão, lábio esmagado, contragolpe posteroinferior); FADIR e DIRI anterior, FABER posterior, McCARTHY dinâmico; cóccix 1 a 2 cm acima da sínfise; alfa acima de 55; cruzamento + parede posterior + espinha isquiática = retroversão verdadeira (periacetabular reversa); extra-articular posterior = anteversão aumentada e rotação externa diminuída; artro-RM padrão-ouro do lábio; GANZ preserva o ramo profundo da circunflexa medial; mau prognóstico: TÖNNIS 2, espaço menor que 2 mm, idade acima de 40.",
+   "resumo": "Came (fêmur, homem jovem atleta, flexão com rotação interna, junção condrolabral, delaminação anterossuperior) x pincer (acetábulo, mulher, coxa profunda, protrusão ou retroversão, lábio esmagado, contragolpe posteroinferior); FADIR e DIRI anterior, FABER posterior, McCARTHY dinâmico; cóccix 1 a 2 cm acima da sínfise; alfa acima de 55; cruzamento + parede posterior + espinha isquiática = retroversão verdadeira (periacetabular reversa); extra-articular posterior = anteversão aumentada e rotação externa diminuída; artro-RM padrão-ouro do lábio; GANZ preserva o ramo profundo da circunflexa medial; mau prognóstico: TÖNNIS 2, espaço menor que 2 mm, idade acima de 40; artroscopia: anterolateral primeiro (glúteo superior), anterior pelo sartório e reto femoral (cutâneo femoral lateral, lesado se medializado), posterolateral (ciático); neuropraxia de tração é a complicação mais relatada; lesão labral anterior, 3 horas = anterior nos dois lados; reparo melhor que desbridamento.",
    "acesso": "gratis",
-   "minutos": 32,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -899,13 +899,18 @@
      "radar": "confirmado"
     },
     {
-     "id": "o-labio-a-gaxeta",
-     "titulo": "O lábio: a gaxeta",
+     "id": "o-labio-acetabular-anatomia-vascularizacao-e-fun",
+     "titulo": "O lábio acetabular: anatomia, vascularização e função",
      "radar": "clinico"
     },
     {
-     "id": "clinica-e-exame",
-     "titulo": "Clínica e exame",
+     "id": "a-lesao-labral-onde-como-e-com-que-nome",
+     "titulo": "A lesão labral: onde, como e com que nome",
+     "radar": "confirmado"
+    },
+    {
+     "id": "clinica-e-exame-do-impacto",
+     "titulo": "Clínica e exame do impacto",
      "radar": "confirmado"
     },
     {
@@ -924,8 +929,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "tc-rm-e-artro-rm",
-     "titulo": "TC, RM e artro-RM",
+     "id": "tc-rm-e-artro-rm-no-impacto",
+     "titulo": "TC, RM e artro-RM no impacto",
      "radar": "confirmado"
     },
     {
@@ -941,6 +946,31 @@
     {
      "id": "osteocondroplastia-por-artroscopia-e-mini-aberta",
      "titulo": "Osteocondroplastia por artroscopia e mini-aberta",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-artroscopia-do-quadril-compartimentos-posicao-",
+     "titulo": "A artroscopia do quadril: compartimentos, posição e tração",
+     "radar": "clinico"
+    },
+    {
+     "id": "os-portais-e-as-estruturas-em-risco",
+     "titulo": "Os portais e as estruturas em risco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "complicacoes-da-artroscopia",
+     "titulo": "Complicações da artroscopia",
+     "radar": "clinico"
+    },
+    {
+     "id": "indicacoes-alem-do-impacto",
+     "titulo": "Indicações além do impacto",
+     "radar": "clinico"
+    },
+    {
+     "id": "reparo-desbridamento-e-reconstrucao-do-labio",
+     "titulo": "Reparo, desbridamento e reconstrução do lábio",
      "radar": "clinico"
     },
     {
@@ -968,6 +998,8 @@
     "quadril-0176",
     "quadril-0165",
     "quadril-0024",
+    "quadril-0514",
+    "quadril-0500",
     "quadril-0092",
     "quadril-0484",
     "quadril-0643",
@@ -976,7 +1008,14 @@
     "quadril-0064",
     "quadril-0175",
     "quadril-0075",
-    "quadril-0036"
+    "quadril-0036",
+    "quadril-0476",
+    "quadril-0153",
+    "quadril-0216",
+    "quadril-0058",
+    "quadril-0194",
+    "quadril-0001",
+    "quadril-0049"
    ],
    "treino": [
     "quadril-0239",
@@ -984,16 +1023,25 @@
     "quadril-0624",
     "quadril-0278",
     "quadril-0435",
+    "quadril-0249",
+    "quadril-0287",
+    "quadril-0627",
     "quadril-0603",
     "quadril-0600",
     "quadril-0611",
     "quadril-0326",
     "quadril-0622",
     "quadril-0283",
+    "quadril-0251",
+    "quadril-0250",
+    "quadril-0252",
+    "quadril-0286",
+    "quadril-0315",
     "quadril-0630"
    ],
    "subtemas": [
-    "Impacto femoroacetabular"
+    "Impacto femoroacetabular",
+    "Artroscopia do quadril e lesão labral"
    ]
   },
   {
