@@ -12,7 +12,8 @@ import { usarNav } from '../nav'
 import { PERIODOS_CRESCIMENTO, defParte, rotuloPeriodo } from '../rotas'
 import { Icone } from '../ui/Icone'
 import { diaDaSerie, inteiro, pct } from '../ui/formato'
-import { Funil, Legenda, MapaCalor, Quadro, Ranking, SerieTempo } from '../ui/graficos'
+import { Colunas, Funil, Legenda, MapaCalor, Quadro, Ranking } from '../ui/graficos'
+import { CadastrosEAssinantes } from './ritmo'
 import { Cabeca, Carregando, Estado, Faixa, Metrica, Painel, Segmento } from '../ui/kit'
 import { Tabela } from '../ui/tabela'
 
@@ -61,7 +62,6 @@ function Aquisicao() {
   // "Desde sempre": a série inteira (até um ano), cortada no primeiro dia com cadastro ou estudo.
   const serieQ = usarSerie(tudo ? 365 : periodo * 2)
   const { funil, carregando } = usarFunil()
-  const [agrupar, definirAgrupar] = useState<'semana' | 'mes'>('semana')
   const cortes = useMemo(() => {
     const limpa = serieLimpa(serieQ.dados)
     if (!tudo || !limpa) return cortarPeriodos(limpa, periodo)
@@ -79,51 +79,39 @@ function Aquisicao() {
     return { cadastros: porPeriodos(p.usuariosReais.map(u => new Date(u.criado_em)).filter(d => Number.isFinite(d.getTime()))), assinantes: porPeriodos([...primeira.values()]) }
   }, [p.usuariosReais, p.reais])
   const parte = defParte('crescimento')
-  const rotulos = (cortes?.atual ?? []).map(d => ({ longo: diaDaSerie(d.dia, true), curto: diaDaSerie(d.dia) }))
-  const cad = ritmo?.cadastros[agrupar], ass = ritmo?.assinantes[agrupar]
+  // Muitos dias ("desde sempre") viram colunas finas demais: aí ficam os últimos 60.
+  const estudaramDia = (cortes?.atual ?? []).slice(-60).map((d, i, l) => ({ longo: diaDaSerie(d.dia, true), curto: diaDaSerie(d.dia), partes: [Number(d.ativos)], parcial: i === l.length - 1 }))
+  const cad = ritmo?.cadastros.semana, ass = ritmo?.assinantes.semana
   const esteCad = cad?.[cad.length - 1]?.n ?? 0, esteAss = ass?.[ass.length - 1]?.n ?? 0
   return <div className="a3-pilha a3-pilha--larga">
     <Cabeca area="Crescimento" titulo={parte.rotulo} pergunta={parte.pergunta}
       acoes={<Segmento rotulo="Período" valor={periodo} aoMudar={d => nav.ajustar({ periodo: d })} opcoes={PERIODOS_CRESCIMENTO.map(d => [d, rotuloPeriodo(d)] as [typeof d, string])} />} />
     <section className="a3-painel" aria-label="Aquisição no período">
       <div className="a3-faixa-metricas" style={{ '--colunas': 4 } as React.CSSProperties}>
-        <Metrica metrica="cadastros" valor={num ? inteiro(num.cadastros.atual) : serieQ.carregando ? '…' : null} variacao={tudo ? undefined : num?.cadastros} tendencia={cortes?.atual.map(d => d.cadastros)} />
-        <Metrica metrica="estudaramDia" valor={num ? inteiro(num.estudaramDia.atual) : serieQ.carregando ? '…' : null} unidade="por dia" variacao={tudo ? undefined : num?.estudaramDia} tendencia={cortes?.atual.map(d => d.ativos)} />
-        <Metrica metrica="questoes" valor={num ? inteiro(num.questoes.atual) : serieQ.carregando ? '…' : null} variacao={tudo ? undefined : num?.questoes} tendencia={cortes?.atual.map(d => d.respostas)} />
-        <Metrica rotulo={`Conversão · ${agrupar === 'semana' ? 'esta semana' : 'este mês'}`} valor={ritmo ? pct(porcentagem(esteAss, esteCad)) : null} qualidade="derivado"
+        <Metrica metrica="cadastros" valor={num ? inteiro(num.cadastros.atual) : serieQ.carregando ? '…' : null} variacao={tudo ? undefined : num?.cadastros} />
+        <Metrica metrica="estudaramDia" valor={num ? inteiro(num.estudaramDia.atual) : serieQ.carregando ? '…' : null} unidade="por dia" variacao={tudo ? undefined : num?.estudaramDia} />
+        <Metrica metrica="questoes" valor={num ? inteiro(num.questoes.atual) : serieQ.carregando ? '…' : null} variacao={tudo ? undefined : num?.questoes} />
+        <Metrica rotulo="Conversão · esta semana" valor={ritmo ? pct(porcentagem(esteAss, esteCad)) : null} qualidade="derivado"
           nota={`${esteAss} ${esteAss === 1 ? 'assinante novo' : 'assinantes novos'} sobre ${esteCad} ${esteCad === 1 ? 'cadastro' : 'cadastros'} (correlação no tempo, não a mesma pessoa)`} />
       </div>
     </section>
 
-    <Quadro titulo="Cadastros e pessoas que estudaram, por dia" descricao={`${janela}, mesmo eixo (são pessoas). Hoje ainda está em andamento.`} fonte="serie_diaria_admin · dia de São Paulo" qualidade="confirmado"
-      legenda={<Legenda itens={[{ nome: 'Pessoas que estudaram', chave: 'linha' }, { nome: 'Cadastros', chave: 'serie2' }]} />}
+    <CadastrosEAssinantes />
+
+    <Quadro titulo="Pessoas que estudaram, por dia" descricao={`${janela}. Cada coluna é quantas pessoas diferentes estudaram no dia; hoje ainda está em andamento.`} fonte="serie_diaria_admin · dia de São Paulo" qualidade="confirmado"
+      legenda={<Legenda itens={[{ nome: 'Pessoas que estudaram', chave: 'serie1' }, { nome: 'Hoje (em andamento)', chave: 'parcial' }, { nome: 'Média', chave: 'media' }]} />}
       estado={serieQ.carregando && !serieQ.dados ? <Carregando linhas={5} /> : !cortes ? <Estado compacto tipo="erro" titulo="Série indisponível" /> : undefined}
-      tabela={cortes ? { cabecalho: ['Dia', 'Cadastros', 'Estudaram', 'Questões'], linhas: cortes.atual.map(d => [diaDaSerie(d.dia, true), d.cadastros, d.ativos, inteiro(d.respostas)]) } : null}>
-      {cortes && <SerieTempo descricao="Cadastros e pessoas que estudaram por dia" rotulos={rotulos} series={[{ nome: 'Cadastros', tipo: 'barra', estilo: 2, valores: cortes.atual.map(d => d.cadastros) }, { nome: 'Estudaram', tipo: 'linha', valores: cortes.atual.map(d => d.ativos) }]} />}
+      tabela={cortes ? { cabecalho: ['Dia', 'Cadastros', 'Estudaram', 'Questões'], linhas: [...cortes.atual].reverse().map(d => [diaDaSerie(d.dia, true), d.cadastros, d.ativos, inteiro(d.respostas)]) } : null}>
+      {cortes && <Colunas descricao="Pessoas que estudaram por dia" pontos={estudaramDia} series={[{ nome: 'Estudaram' }]} />}
     </Quadro>
 
-    <div className="a3-grade a3-grade--12">
-      <div style={{ gridColumn: 'span 7' }}>
-        <Painel titulo="Funil de ativação" descricao="Todas as contas desde o começo. Cada taxa é sobre a etapa anterior; a maior queda fica em vermelho." >
-          {carregando && !funil ? <Carregando linhas={6} /> : !funil ? <Estado compacto tipo="erro" titulo="Funil indisponível" texto={p.erroDados || 'funil_admin não respondeu.'} /> :
-            <Funil etapas={[{ nome: 'Cadastraram', valor: funil.cadastrados }, { nome: 'Confirmaram o e-mail', valor: funil.confirmaram, base: 'cadastros' },
-              { nome: 'Responderam a 1ª questão', valor: funil.responderam, base: 'quem confirmou' }, { nome: 'Passaram de 50 questões', valor: funil.passaram_50, base: 'quem começou' },
-              { nome: 'Passaram de 500', valor: funil.passaram_500, base: 'quem passou de 50' }, { nome: 'Assinaram', valor: funil.assinaram, base: 'quem respondeu a 1ª questão', sobre: 2 }]} />}
-          {funil && <p className="a3-mudo a3-pequeno" style={{ marginTop: 12 }}>Etapas cumulativas: quem passou de 500 também passou de 50. Assinar não exige 500 questões, por isso a taxa de quem assinou é sobre quem começou a estudar.</p>}
-        </Painel>
-      </div>
-      <div style={{ gridColumn: 'span 5' }}>
-        <Quadro titulo={`Cadastros e assinantes novos por ${agrupar === 'semana' ? 'semana' : 'mês'}`} descricao="Assinante novo = primeira compra paga de cada pessoa. Semana de segunda a domingo."
-          fonte="listar_usuarios_admin + listar_assinaturas_admin · contas de teste fora" qualidade="derivado"
-          acoes={<Segmento rotulo="Agrupar por" valor={agrupar} aoMudar={definirAgrupar} opcoes={[['semana', 'Semana'], ['mes', 'Mês']]} />}
-          legenda={<Legenda itens={[{ nome: 'Cadastros', chave: 'linha' }, { nome: 'Assinantes novos', chave: 'acento' }]} />}
-          estado={!ritmo ? <Carregando linhas={4} /> : undefined}
-          tabela={cad && ass ? { cabecalho: [agrupar === 'semana' ? 'Semana' : 'Mês', 'Cadastros', 'Assinantes novos'], linhas: cad.map((c, i) => [c.longo, c.n, ass[i].n]) } : null}>
-          {cad && ass && <SerieTempo descricao="Cadastros e assinantes novos por período" altura={200} rotulos={cad.map(c => ({ longo: c.longo, curto: c.curto }))}
-            series={[{ nome: 'Cadastros', tipo: 'area', valores: cad.map(c => c.n) }, { nome: 'Assinantes novos', tipo: 'linha', estilo: 'acento', valores: ass.map(c => c.n) }]} />}
-        </Quadro>
-      </div>
-    </div>
+    <Painel titulo="Funil de ativação" descricao="Todas as contas desde o começo. Cada taxa é sobre a etapa anterior; a maior queda fica em vermelho." >
+      {carregando && !funil ? <Carregando linhas={6} /> : !funil ? <Estado compacto tipo="erro" titulo="Funil indisponível" texto={p.erroDados || 'funil_admin não respondeu.'} /> :
+        <Funil etapas={[{ nome: 'Cadastraram', valor: funil.cadastrados }, { nome: 'Confirmaram o e-mail', valor: funil.confirmaram, base: 'cadastros' },
+          { nome: 'Responderam a 1ª questão', valor: funil.responderam, base: 'quem confirmou' }, { nome: 'Passaram de 50 questões', valor: funil.passaram_50, base: 'quem começou' },
+          { nome: 'Passaram de 500', valor: funil.passaram_500, base: 'quem passou de 50' }, { nome: 'Assinaram', valor: funil.assinaram, base: 'quem respondeu a 1ª questão', sobre: 2 }]} />}
+      {funil && <p className="a3-mudo a3-pequeno" style={{ marginTop: 12 }}>Etapas cumulativas: quem passou de 500 também passou de 50. Assinar não exige 500 questões, por isso a taxa de quem assinou é sobre quem começou a estudar.</p>}
+    </Painel>
   </div>
 }
 

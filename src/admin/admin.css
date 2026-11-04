@@ -553,3 +553,58 @@ select.a3-entrada { appearance: none; padding-right: 32px; background-image: url
 }
 /* Filtro com rótulo longo (select dentro): quebra a linha em tela estreita em vez de empurrar a página. */
 @media (max-width: 480px) { label.a3-filtro { white-space: normal; height: auto; min-height: 32px; padding-block: 4px; flex-wrap: wrap; max-width: 100%; } }
+
+/* ───────── Colunas ("em torre"), 04/11/2026 ───────── */
+.a3-g-valor { fill: var(--a3-tinta); font: 600 11.5px var(--a3-fonte); font-variant-numeric: tabular-nums; }
+.a3-g-valor--zero { fill: var(--a3-cinza-2); font-weight: 500; }
+.a3-g-valor--parcial { fill: var(--a3-cinza); }
+.a3-g-barra--parcial { opacity: .4; }
+.a3-g-parcial { fill: none; stroke: var(--a3-acento); stroke-width: 1.2; stroke-dasharray: 3 3; }
+.a3-g-eixo--parcial { font-style: italic; }
+.a3-g-media line { stroke: var(--a3-ouro); stroke-width: 1.3; stroke-dasharray: 5 4; }
+.a3-g-media text { fill: var(--a3-ouro); font: 600 11px var(--a3-fonte); paint-order: stroke; stroke: var(--a3-papel); stroke-width: 3px; }
+.a3-resumo-colunas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; margin: 0; }
+.a3-resumo-colunas div { display: grid; gap: 2px; padding: 8px 10px; border-radius: 10px; background: var(--a3-alt); min-width: 0; }
+.a3-resumo-colunas div:first-child { background: var(--a3-acento-veu); }
+.a3-resumo-colunas dt { font-size: 11.5px; color: var(--a3-cinza); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.a3-resumo-colunas dd { margin: 0; font: 700 20px var(--a3-titulo); letter-spacing: -.02em; font-variant-numeric: tabular-nums; color: var(--a3-tinta); }
+.a3-resumo-colunas div:first-child dd { color: var(--a3-acento); }
+@media (max-width: 640px) { .a3-resumo-colunas { grid-template-columns: repeat(2, minmax(0, 1fr)); } .a3-resumo-colunas dd { font-size: 18px; } }
+.a3-chave--parcial { background: none !important; border: 1.2px dashed var(--a3-acento); }
+.a3-chave--media { height: 0 !important; border-radius: 0 !important; background: none !important; border-top: 2px dashed var(--a3-ouro); width: 14px !important; }
+.a3-ritmo { align-items: start; }
+.a3-ritmo__bloco { display: grid; gap: 12px; min-width: 0; padding: 14px; border: 1px solid var(--a3-linha); border-radius: 16px; }
+.a3-ritmo__titulo { margin: 0; font: 700 15px var(--a3-titulo); letter-spacing: -.01em; }
+.a3-ritmo__bloco--assinantes .a3-g-barra { fill: var(--a3-ouro); }
+.a3-ritmo__bloco--assinantes .a3-g-media line { stroke: var(--a3-acento); }
+.a3-ritmo__bloco--assinantes .a3-g-media text { fill: var(--a3-acento); }
+.a3-ritmo__bloco--assinantes .a3-g-parcial { stroke: var(--a3-ouro); }
+.a3-ritmo__bloco--assinantes .a3-resumo-colunas div:first-child { background: var(--a3-aviso-veu); }
+.a3-ritmo__bloco--assinantes .a3-resumo-colunas div:first-child dd { color: var(--ouro-texto, var(--a3-ouro)); }
+
+/* ───────── Financeiro: quanto entra por mês, 04/11/2026 ───────── */
+.a3-expectativa { display: grid; gap: 16px; padding: 20px; }
+.a3-expectativa__topo { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 20px; align-items: center; }
+.a3-expectativa__frase { display: grid; gap: 8px; }
+.a3-expectativa__frase .a3-rotulo { color: var(--a3-acento); }
+.a3-expectativa__frase p { margin: 0; font-size: 14.5px; line-height: 1.55; }
+.a3-expectativa__valor { margin: 0; font: 800 clamp(34px, 5vw, 48px) var(--a3-titulo); letter-spacing: -.03em; color: var(--a3-acento); font-variant-numeric: tabular-nums; }
+.a3-expectativa__valor small { font-size: 16px; font-weight: 600; color: var(--a3-cinza); letter-spacing: 0; }
+.a3-expectativa__conta tbody th { font-weight: 600; }
+.a3-expectativa__conta .a3-sub { display: block; font-size: 11.5px; color: var(--a3-cinza); font-weight: 400; }
+.a3-expectativa__conta tr.fora { color: var(--a3-cinza); }
+.a3-expectativa__conta tfoot th, .a3-expectativa__conta tfoot td { border-top: 2px solid var(--a3-linha-2); font-weight: 700; }
+.a3-expectativa__conta tfoot b { color: var(--a3-acento); font-size: 15px; }
+@media (max-width: 820px) { .a3-expectativa__topo { grid-template-columns: minmax(0, 1fr); } }
+.a3-expectativa__conta tbody th, .a3-expectativa__conta tfoot th { position: static; height: auto; padding: 10px 14px; background: none; color: var(--a3-tinta); font-size: 13.5px; }
+.a3-expectativa__conta td { padding: 10px 14px; vertical-align: top; }
+.a3-expectativa__conta .so-celular { display: none; }
+@media (max-width: 640px) {
+  .a3-expectativa__conta .so-largo { display: none; }
+  .a3-expectativa__conta .so-celular { display: block; }
+  .a3-expectativa { padding: 16px; }
+}
+@media (max-width: 640px) {
+  .a3-expectativa__conta th, .a3-expectativa__conta td, .a3-expectativa__conta tbody th, .a3-expectativa__conta tfoot th { padding: 9px 8px; white-space: normal; }
+  .a3-expectativa__conta td.num { white-space: nowrap; }
+}
