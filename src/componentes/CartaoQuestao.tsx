@@ -258,11 +258,14 @@ function CartaoQuestaoExibida({
 
   const { mostrarEtiquetas, alternarEtiquetas } = usarEtiquetas()
   const { indice } = usarIndice()
-  const { comentario: comentarioDoAcervo, carregando: carregandoIA } = usarComentarioIA(
+  const { comentario: comentarioCarregado, carregando: carregandoIA } = usarComentarioIA(
     questao,
     indice,
     mostrarGabarito,
   )
+  // Foto posta pelo administrador no pé da questão: aparece na hora, sem recarregar.
+  const [comentarioAdmin, definirComentarioAdmin] = useState<{ id: string; c: ComentarioIA } | null>(null)
+  const comentarioDoAcervo = comentarioAdmin?.id === questao.id && comentarioCarregado ? comentarioAdmin.c : comentarioCarregado
   // Alternativas em outra ordem: o comentário acompanha (letras citadas e análise de cada uma).
   const letrasAcervo = usarLetrasAcervo()
   const reordenado = useMemo(
@@ -752,7 +755,7 @@ function CartaoQuestaoExibida({
         )}
 
         <div className="qz-rodape nao-imprime">
-          <EditarQuestaoAdmin idQuestao={questao.id} />
+          <EditarQuestaoAdmin questao={questao} aoSalvarComentario={(c) => definirComentarioAdmin({ id: questao.id, c })} />
           {ultimaAcao && <button type="button" className="qz-rodape__link" onClick={desfazerUltimaAcao}><Icone nome="reiniciar" tamanho={16} /> Desfazer</button>}
           {!modoProva && <span className="qz-rodape__id numerico">{questao.id}</span>}
         </div>
