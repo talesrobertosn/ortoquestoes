@@ -1,6 +1,6 @@
 ---
 id: campbell15-lesoes-condrais
-versao: 1
+versao: 2
 titulo: Lesões condrais do joelho
 especialidade: joelho
 acesso: gratis
@@ -8,18 +8,18 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª ed., o Rockwood and Wilkins' Fractures in Children, 10ª ed., e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed.
 capitulo: Capítulo 56 · Arthroscopy of the Lower Extremity, com o Capítulo 50 · Knee Injuries (seção Articular Cartilage Injuries)
 autores: David L. Bernholt e Marc J. Mihalko (cap. 56); David L. Bernholt e Frederick M. Azar (cap. 50)
-fonte: Livros conferidos localmente em 04/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (seção Articular Cartilage Injuries, p. 2117 a 2123; condromalácia da patela, p. 2129 e 2130; exame e menisco, p. 1993 e 2011), cap. 56 (p. 2360 a 2366), cap. 38 (p. 1451, 1460 e 1461), cap. 10 (p. 498 e 499) e cap. 3 (p. 164 a 166); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 2 (Bone, Cartilage, and Tendon Healing, seção Cartilage, páginas do PDF, sem página impressa); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28 (fraturas osteocondrais) e cap. 2 (sem página impressa); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., caps. 64 (Lesão da cartilagem), 16 (Osteonecrose espontânea), 61 (Fraturas osteocondrais), 15 (Instabilidade femoropatelar), 10, 9.5 e 13, edição digital sem página impressa; The Adult Hip, cap. 25 (P.378 e 379). As páginas citadas são as impressas.
-subtemas: Lesões condrais
-resumo: Cartilagem avascular, sem nervos, de colágeno tipo II e proteoglicanos, com condrócitos que formam agrupamentos mas não migram; lesão só condral não cicatriza, a osteocondral vira fibrocartilagem (colágeno I e III); fratura osteocondral típica do adolescente na luxação da patela (faceta inferomedial e côndilo lateral) e principal indicação de cirurgia na primeira luxação; OUTERBRIDGE, modificada, ICRS e BAUER e JACKSON; tratamento pelo tamanho, profundidade e demanda (desbridamento, microfratura até cerca de 2 cm2, autoenxerto até 2 a 2,5, aloenxerto 2 a 3,5, MACI até 10 e múltiplas); idade acima de 50, perda meniscal, tabagismo, IMC acima de 30, mau alinhamento e instabilidade pioram, o tamanho não; fratura por insuficiência subcondral após meniscectomia.
+fonte: Livros conferidos localmente em 04/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (seção Articular Cartilage Injuries, p. 2117 a 2123; condromalácia da patela, p. 2129 e 2130; exame e menisco, p. 1997 e 2011), cap. 56 (p. 2360 a 2366), cap. 38 (p. 1451, 1460 e 1461), cap. 10 (p. 498 e 499), cap. 3 (p. 164 a 166) e cap. 54 (p. 2303 e referências, para a osteonecrose após radiofrequência e laser); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 2 (Bone, Cartilage, and Tendon Healing, seção Cartilage, páginas do PDF, sem página impressa); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28 (fraturas osteocondrais) e cap. 2 (sem página impressa); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., caps. 64 (Lesão da cartilagem), 16 (Osteonecrose espontânea), 61 (Fraturas osteocondrais), 15 (Instabilidade femoropatelar), 10, 9.5 e 13, edição digital sem página impressa; The Adult Hip, cap. 25 (P.378 e 379) e cap. 37 (p. 513 e 514, aprox., fatores de risco da osteonecrose). Versão 2 em 04/11/2026: acrescentada a osteonecrose do joelho (espontânea, secundária e pós-artroscópica) pelo HEBERT (cap. 16, inteiro), Campbell (caps. 50 e 54) e The Adult Hip (cap. 37). As páginas citadas são as impressas.
+subtemas: Lesões condrais; Osteonecrose do joelho
+resumo: Cartilagem avascular, sem nervos, de colágeno tipo II e proteoglicanos, com condrócitos que formam agrupamentos mas não migram; lesão só condral não cicatriza, a osteocondral vira fibrocartilagem (colágeno I e III); fratura osteocondral típica do adolescente na luxação da patela (faceta inferomedial e côndilo lateral) e principal indicação de cirurgia na primeira luxação; OUTERBRIDGE, modificada, ICRS e BAUER e JACKSON; tratamento pelo tamanho, profundidade e demanda (desbridamento, microfratura até cerca de 2 cm2, autoenxerto até 2 a 2,5, aloenxerto 2 a 3,5, MACI até 10 e múltiplas); idade acima de 50, perda meniscal, tabagismo, IMC acima de 30, mau alinhamento e instabilidade pioram, o tamanho não; fratura por insuficiência subcondral após meniscectomia; osteonecrose espontânea (idoso, mulher, dor súbita, um joelho, côndilo medial) x secundária (corticoide, álcool, lúpus, hemoglobinopatias; mais jovem, ambos os côndilos e platôs, metáfise e diáfise) x pós-artroscópica (meniscectomia, radiofrequência, laser).
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 56 (Arthroscopy of the Lower Extremity) do Campbell's Operative Orthopaedics, 15ª edição (2026), com o quadro de decisão do tratamento e os fatores que pioram a cicatrização, e se apoia no capítulo 50 (Knee Injuries), cuja seção Articular Cartilage Injuries é a mais completa do livro sobre o tema. A biologia vem do Rockwood and Green's Fractures in Adults, 10ª ed.; a fratura osteocondral do adolescente, do Rockwood and Wilkins' Fractures in Children, 10ª ed., e do HEBERT; a osteonecrose espontânea, do HEBERT. As páginas citadas são as impressas.
+Este resumo é inspirado no capítulo 56 (Arthroscopy of the Lower Extremity) do Campbell's Operative Orthopaedics, 15ª edição (2026), com o quadro de decisão do tratamento e os fatores que pioram a cicatrização, e se apoia no capítulo 50 (Knee Injuries), cuja seção Articular Cartilage Injuries é a mais completa do livro sobre o tema. A biologia vem do Rockwood and Green's Fractures in Adults, 10ª ed.; a fratura osteocondral do adolescente, do Rockwood and Wilkins' Fractures in Children, 10ª ed., e do HEBERT; a osteonecrose do joelho (espontânea, secundária e pós-artroscópica), do HEBERT, com o Campbell (cap. 54) e o The Adult Hip. As páginas citadas são as impressas.
 
 Uma ideia organiza o tema inteiro: **a cartilagem articular não tem vaso, não tem nervo e suas células não andam**. Tudo o que a prova pergunta decorre disso. Se a lesão fica restrita à cartilagem, ninguém chega para consertá-la: os condrócitos vizinhos se multiplicam em agrupamentos, mas não migram, e o defeito permanece. Se a lesão atravessa até o osso subcondral, o sangue da medula traz células e o buraco se enche, mas de **fibrocartilagem**, um tecido de colágeno tipo I e III que não aguenta a carga como a cartilagem hialina e se desgasta com o tempo. Toda a cirurgia de cartilagem é uma tentativa de contornar esse destino: furar o osso para trazer a medula (estimulação medular), transplantar cartilagem hialina pronta com seu osso (autoenxerto e aloenxerto osteocondral) ou cultivar condrócitos do próprio paciente (ACI e MACI).
 
-A prova cobra o tema em cinco frentes, nesta ordem: **biologia** (colágeno tipo II, proteoglicanos, condrócitos que não migram, fibrocartilagem); **fratura osteocondral** do adolescente na luxação da patela; **classificações** (OUTERBRIDGE, modificada, ICRS, BAUER e JACKSON); **tratamento** pelo tamanho, pela profundidade e pela demanda, corrigindo eixo, instabilidade e menisco; e o **diagnóstico diferencial** com a fratura por insuficiência subcondral depois da meniscectomia. A osteocondrite dissecante tem resumo próprio (tachdjian6-osteocondrite-dissecante).
+A prova cobra o tema em cinco frentes, nesta ordem: **biologia** (colágeno tipo II, proteoglicanos, condrócitos que não migram, fibrocartilagem); **fratura osteocondral** do adolescente na luxação da patela; **classificações** (OUTERBRIDGE, modificada, ICRS, BAUER e JACKSON); **tratamento** pelo tamanho, pela profundidade e pela demanda, corrigindo eixo, instabilidade e menisco; e a **osteonecrose do joelho**, em que a banca compara a forma espontânea (fratura por insuficiência subcondral, do idoso, depois da meniscectomia) com a secundária e a pós-artroscópica. A osteocondrite dissecante tem resumo próprio (tachdjian6-osteocondrite-dissecante).
 
 # A cartilagem articular: o tecido e suas camadas {radar=fundamento}
 
@@ -318,7 +318,7 @@ Os dois capítulos divergem no corte: o 50 usa **cerca de 2 cm2** para o limite 
 
 ## Corrigir o que está em volta
 
-O Campbell repete em todos os procedimentos: **mau alinhamento, instabilidade ligamentar, instabilidade patelar e deficiência meniscal devem ser corrigidos antes ou junto** com o reparo (cap. 50, p. 2120 e 2122; cap. 56, p. 2361). O HEBERT (cap. 64) põe em destaque que todo reparo deve ser precedido da avaliação das patologias associadas, com **instabilidades e desvios do eixo corrigidos quando indicado**. A cartilagem nova num compartimento sobrecarregado recebe a mesma carga que destruiu a original. O menisco reduz o estresse sobre a cartilagem; lesões radiais ou de raiz aumentam a força de contato (Campbell, cap. 50, p. 1993), e alguns autores viram **reparo fibrocartilaginoso depois da osteotomia tibial alta** (cap. 10, p. 499).
+O Campbell repete em todos os procedimentos: **mau alinhamento, instabilidade ligamentar, instabilidade patelar e deficiência meniscal devem ser corrigidos antes ou junto** com o reparo (cap. 50, p. 2120 e 2122; cap. 56, p. 2361). O HEBERT (cap. 64) põe em destaque que todo reparo deve ser precedido da avaliação das patologias associadas, com **instabilidades e desvios do eixo corrigidos quando indicado**. A cartilagem nova num compartimento sobrecarregado recebe a mesma carga que destruiu a original. O menisco reduz o estresse sobre a cartilagem; lesões radiais ou de raiz aumentam a força de contato (Campbell, cap. 50, p. 1997), e alguns autores viram **reparo fibrocartilaginoso depois da osteotomia tibial alta** (cap. 10, p. 499).
 
 # Desbridamento e estimulação medular {radar=fundamento}
 
@@ -478,7 +478,7 @@ O ponto que a prova cobra é a patogênese. Segundo o HEBERT, **a hipótese mais
 
 ## Menisco, meniscectomia e a carga sobre o osso
 
-O HEBERT registra a associação frequente com **lesão meniscal, sobretudo as radiais do corno posterior com extrusão maior que 3 mm, e com meniscectomia**; alguns autores consideram a osteonecrose depois da artroscopia uma terceira forma da doença. O mecanismo casa com o Campbell (cap. 50, p. 1993): sem a função do menisco (lesão radial, de raiz ou ressecção), a força de contato sobre o côndilo sobe e surgem **lesões de medula óssea e alterações de osteonecrose espontânea**. Daí a recomendação do HEBERT: nos pacientes **acima de 60 anos submetidos a meniscectomia artroscópica, muletas por 3 a 4 semanas** no pós-operatório, para uma adaptação biomecânica mais lenta, e **ressecção a mais econômica possível**.
+O HEBERT registra a associação frequente com **lesão meniscal, sobretudo as radiais do corno posterior com extrusão maior que 3 mm, e com meniscectomia**; alguns autores consideram a osteonecrose depois da artroscopia uma terceira forma da doença. O mecanismo casa com o Campbell (cap. 50, p. 1997): sem a função do menisco (lesão radial, de raiz ou ressecção), a força de contato sobre o côndilo sobe e surgem **lesões de medula óssea e alterações de osteonecrose espontânea**. Daí a recomendação do HEBERT: nos pacientes **acima de 60 anos submetidos a meniscectomia artroscópica, muletas por 3 a 4 semanas** no pós-operatório, para uma adaptação biomecânica mais lenta, e **ressecção a mais econômica possível**.
 
 ## Imagem e tratamento
 
@@ -505,6 +505,55 @@ armadilha: Responder osteotomia ou condrectomia; a cirurgia que tira a proteçã
 alerta: A `joelho-0305` e a `joelho-0296` estão sem gabarito oficial. O HEBERT (cap. 16) sustenta Certo na `joelho-0305` (hipótese microtraumática como a mais aceita; a fratura é o evento inicial e o nome apropriado é fratura por insuficiência do osso subcondral) e a alternativa B, meniscectomia, na `joelho-0296`.
 !fim
 
+# Osteonecrose do joelho: espontânea, secundária e pós-artroscópica {radar=confirmado}
+
+## Duas doenças com o mesmo nome
+
+O Ortopedia e Traumatologia de SIZÍNIO HEBERT (cap. 16) divide as lesões dolorosas das epífises do joelho adulto em **osteonecrose secundária** (necrose avascular verdadeira) e lesões com **edema medular**, grupo em que está a osteonecrose espontânea da seção anterior. A secundária é a do quadril levada ao joelho: o joelho é a **terceira articulação mais acometida, depois do quadril e do ombro**, entre a **quarta e a quinta década**, e os fatores são os mesmos: **corticoide, alcoolismo, hiperuricemia, lúpus, hemoglobinopatias e HIV**. A isquemia aparece em **ambos os côndilos femorais ou platôs**, e é mais frequente nas **metáfises e diáfises**, onde fica oculta por muito tempo e às vezes regride. Na forma epifisária a dor é **tardia e gradual**, e anuncia o osso subcondral prestes a fraturar.
+
+The Adult Hip, de CALLAGHAN (cap. 37, p. 513 e 514, aprox.), amplia a lista e separa fatores **diretos** (trauma, **hemoglobinopatias** como anemia falciforme e talassemia, quimioterapia, radiação, disbarismo) de **indiretos** (corticoide acima de 2 g de prednisona, álcool acima de 300 g, **tabaco**, lúpus, coagulopatias, transplante, gravidez). Ali o quadril é o local mais comum, o joelho vem logo atrás, e **multifocal** quer dizer três ou mais articulações. Diabetes e hepatite não aparecem em nenhum dos dois livros.
+
+!tabela Osteonecrose do joelho: as três formas (HEBERT, cap. 16; Campbell, cap. 54; The Adult Hip, cap. 37)
+| Aspecto | Espontânea (fratura por insuficiência subcondral) | Secundária | Pós-artroscópica |
+| --- | --- | --- | --- |
+| idade e sexo | após a sexta década, mulheres 3:1 | quarta a quinta década, segue a doença de base | idoso operado |
+| causa | microtrauma em osso osteopênico; obesidade; menisco | corticoide, álcool, lúpus, hemoglobinopatias, HIV | meniscectomia; radiofrequência ou laser |
+| início da dor | súbito, o paciente lembra o momento | tardio e gradual | depois da artroscopia |
+| distribuição | um joelho, côndilo femoral medial (90%) | ambos os côndilos ou platôs, metáfise e diáfise; outras articulações | não detalhada |
+| RM | edema sem anel; banda de baixo sinal em T2 junto à placa | lesão geográfica com anel serpiginoso | não detalhada |
+!fim
+
+## Imagem e tratamento da secundária
+
+Na radiografia, os infartos são **escleróticos e contornados por anel serpiginoso**, às vezes com discreta reação periosteal na metáfise; na forma epifisária avançada, depressão e **sinal do crescente**. A cintilografia só ajuda antes do colapso. Na RM, a lesão é **geográfica, com anel de baixo sinal em T1** (a interface entre medula viva e morta), ao contrário do edema difuso e sem anel da espontânea; lesões de **um terço à metade do côndilo** no coronal, ou dos terços médio e posterior no sagital, colapsam mais. O tratamento segue tamanho, local e estágio: o conservador costuma ser **insatisfatório**; sem acometimento subcondral, **descompressão** com ou sem enxerto; com lesão subcondral, **enxertia osteocondral ou aloenxerto**; com deformidade ou artrose, **artroplastia total**.
+
+O estadiamento que o HEBERT traz (estágios I a V, da radiografia normal à artrose) é o da forma espontânea e vem sem nome de autor. Nenhum dos livros conferidos (Campbell 15ª, HEBERT, The Adult Hip) descreve KOSHINO, AGLIETTI ou FICAT para o joelho.
+
+!questoes central=joelho-0274 relacionadas=joelho-0229
+conceito: A espontânea é do idoso, sobretudo mulher, com dor súbita, em um joelho, no côndilo femoral medial; a secundária é mais jovem, gradual, acomete os dois côndilos e platôs e outras articulações (quadril, ombro).
+como: O TARO 2010 perguntou o tipo de dor e a idade da osteonecrose do côndilo femoral; o TARO 2013, o que a secundária tem a mais que a espontânea.
+armadilha: Na secundária, achar que é mais velha ou mais feminina (são traços da espontânea); na espontânea, chamar a dor de crônica.
+alerta: O HEBERT não usa a palavra bilateral; sustenta a alternativa A da `joelho-0274` por contraste (espontânea em geral em um joelho; secundária nos dois côndilos e platôs e em outras articulações).
+!fim
+
+!questoes central=joelho-0075
+conceito: As causas da secundária são as do quadril: corticoide, álcool, hiperuricemia, lúpus, hemoglobinopatias e HIV.
+como: Prova de Ortopedia sem ano pediu a causa secundária entre hepatite, diabetes, tabagismo e hemoglobinopatias.
+armadilha: Diabetes e hepatite não constam das listas; hemoglobinopatia é causa direta, por oclusão vascular.
+alerta: Gabarito oficial D mantido. The Adult Hip (cap. 37) também lista o tabaco, como fator indireto da osteonecrose em geral; o HEBERT, na lista do joelho, não. Hemoglobinopatia está nos dois.
+!fim
+
+## A forma pós-artroscópica
+
+O HEBERT registra que alguns autores tratam a osteonecrose depois da artroscopia como **terceira forma**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 54, p. 2303), diz por quê: a **radiofrequência** monopolar ou bipolar gera calor semelhante ao do **laser**, sem controle seguro da profundidade nem da temperatura, e entre as complicações da ablação meniscal por radiofrequência estão **dano à cartilagem e osteonecrose**. As referências do capítulo citam osteonecrose após artroscopia **assistida por laser ou radiofrequência** (BONUTTI) e por laser (GARINO). Shaver e ultrassom não aparecem nessa lista.
+
+!questoes central=joelho-0285
+conceito: A osteonecrose iatrogênica do joelho se liga ao calor da artroscopia assistida por radiofrequência ou laser, além da meniscectomia.
+como: O TARO 2008 perguntou a que instrumentos se relaciona, citando BONUTTI (J Bone Joint Surg Am, 2006).
+armadilha: Shaver e ultrassom não estão entre as causas citadas; o que lesa o osso é o calor.
+alerta: A `joelho-0285` está sem gabarito oficial. A resposta do gabarito pela bibliografia, provável, é A (radiofrequência ou laser), sustentada pelo Campbell (cap. 54, p. 2303) e pela referência de BONUTTI que ele cita.
+!fim
+
 # Osteocondrite dissecante: onde o tema encosta {radar=fundamento}
 
 A osteocondrite dissecante tem resumo próprio (tachdjian6-osteocondrite-dissecante). Do Campbell (cap. 50, p. 2123) basta lembrar que é a **causa mais comum de corpos livres no joelho**, entre **12 e 19 anos**, sobretudo na **face lateral do côndilo femoral medial** (80%), e que, na ressonância, **líquido sob a lesão ou edema subcondral** indicam instabilidade (cap. 56, p. 2360); ela deve ser diferenciada da fratura osteocondral verdadeira.
@@ -519,4 +568,6 @@ No adolescente, a **luxação aguda da patela** é a causa mais comum de **fratu
 
 OUTERBRIDGE, modificada e ICRS medem profundidade; BAUER e JACKSON, forma. O tratamento segue **tamanho, profundidade e demanda**, sempre corrigindo **eixo, estabilidade e menisco**; o tamanho escolhe a técnica, não o prognóstico.
 
-> **Na prova:** cartilagem **sem vaso e sem nervo**, colágeno **tipo II** e **proteoglicanos**; condrócitos formam **agrupamentos mas não migram**; lesão que chega ao osso vira **fibrocartilagem (colágeno I e III)**; fratura osteocondral no **adolescente** com **luxação da patela**, faceta **inferomedial** e **côndilo lateral**, indicação de **cirurgia aguda**; **OUTERBRIDGE IV** e **ICRS IV** = osso exposto; microfratura até cerca de **2 cm2**, remove a **camada calcificada**, ponte de **1 a 2 mm**, deteriora após **18 meses**; autoenxerto até **2 a 2,5**; aloenxerto **2 a 3,5** com perda óssea; **MACI** até **10 cm2** e múltiplas, dois tempos, sem periósteo; pioram **idade acima de 50**, **perda meniscal**, **tabagismo**, **IMC acima de 30**, mau alinhamento, instabilidade e lesão bipolar, **não o tamanho**; **meniscectomia** precede a **fratura por insuficiência subcondral** do côndilo medial.
+Na osteonecrose do joelho, a **espontânea** é fratura por insuficiência subcondral do idoso (dor súbita, um joelho, côndilo medial); a **secundária** é a necrose avascular do quadril levada ao joelho (corticoide, álcool, lúpus, hemoglobinopatias), mais jovem, nos dois côndilos e platôs e em outras articulações; a **pós-artroscópica** segue a meniscectomia e o calor da radiofrequência ou do laser.
+
+> **Na prova:** cartilagem **sem vaso e sem nervo**, colágeno **tipo II** e **proteoglicanos**; condrócitos formam **agrupamentos mas não migram**; lesão que chega ao osso vira **fibrocartilagem (colágeno I e III)**; fratura osteocondral no **adolescente** com **luxação da patela**, faceta **inferomedial** e **côndilo lateral**, indicação de **cirurgia aguda**; **OUTERBRIDGE IV** e **ICRS IV** = osso exposto; microfratura até cerca de **2 cm2**, remove a **camada calcificada**, ponte de **1 a 2 mm**, deteriora após **18 meses**; autoenxerto até **2 a 2,5**; aloenxerto **2 a 3,5** com perda óssea; **MACI** até **10 cm2** e múltiplas, dois tempos, sem periósteo; pioram **idade acima de 50**, **perda meniscal**, **tabagismo**, **IMC acima de 30**, mau alinhamento, instabilidade e lesão bipolar, **não o tamanho**; **meniscectomia** precede a **fratura por insuficiência subcondral** do côndilo medial; osteonecrose espontânea = **idoso, dor aguda, um joelho**; secundária = **hemoglobinopatias**, corticoide, álcool, lúpus, mais **jovem** e **bilateral**; iatrogênica = **radiofrequência ou laser**.

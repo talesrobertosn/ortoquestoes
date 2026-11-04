@@ -1,6 +1,6 @@
 ---
 id: campbell15-rigidez-cotovelo
-versao: 1
+versao: 2
 titulo: Rigidez do cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Green's Operative Hand Surgery, 7ª ed. (2017), e o Rockwood and Green's Fractures in Adults, 10ª ed. (2025)
 capitulo: Capítulo 15 · Reconstructive Procedures of the Elbow
 autores: Tyler J. Brolin e Thomas W. (Quin) Throckmorton
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 15 (p. 643 a 651 e 662 a 663), cap. 51 (seções Elbow contractures e Heterotopic ossification, p. 2184 a 2189), cap. 57 (Arthrofibrosis, p. 2502 a 2505) e cap. 62 (p. 2794); Green's Operative Hand Surgery, 7ª ed., cap. 24 (Treatment of the Stiff Elbow, p. 843 a 859) e cap. 26 (p. 894); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures, seções de tratamento não operatório, via medial e rigidez pós-operatória com a Tabela 39-8) e cap. 40 (Elbow Dislocations and Terrible Triad Injuries, complicações). As páginas citadas são as impressas.
-subtemas: Rigidez do cotovelo
-resumo: Arco funcional de MORREY (30 a 130 graus, 50 de pronação e 50 de supinação); cirurgia se arco menor que 100 graus após fisioterapia e talas; extrínsecas (cápsula, colaterais, OH, consolidação viciosa extra-articular) contra intrínsecas (cartilagem, incongruência, aderências); OH pós-traumática posterolateral, da queimadura posteromedial, neurogênica dentro do músculo e num plano só; HASTINGS e GRAHAM (I, IIA, IIB, IIC, III); procedimento da coluna pela via lateral; medial over-the-top entre flexor ulnar do carpo e pronador para expor e transpor o ulnar; ulnar em risco quando a flexão é menor que 90 a 100 graus ou o arco é muito pequeno; CPM e talas estáticas progressivas; interposição no jovem com articulação destruída; artrodese unilateral em 90 a 100 graus.
+fonte: Livros conferidos localmente em 01/11/2026 e 04/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (Arthroplasty of the Hip, OH e BROOKER, p. 265 e 266), cap. 15 (p. 643 a 651, 648 e 662 a 663), cap. 51 (seções Elbow contractures e Heterotopic ossification, p. 2184 a 2189), cap. 57 (Arthrofibrosis e complicações, p. 2502 a 2507) e cap. 62 (p. 2794); Green's Operative Hand Surgery, 7ª ed., cap. 18 (p. 699 aprox.), cap. 19 (p. 733 aprox.), cap. 21 (p. 803 e 804, Tabela 21.1), cap. 22 (p. 826 e 827 aprox.), cap. 24 (Treatment of the Stiff Elbow, p. 843 a 859) e cap. 26 (p. 894); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (Distal Humerus Fractures, tratamento não operatório, via medial e rigidez pós-operatória com a Tabela 39-8), cap. 40 (Elbow Dislocations and Terrible Triad Injuries, complicações) e cap. 51 (acetábulo, ossificação heterotópica), sem paginação impressa no PDF; HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 10, 42 e 48, sem paginação impressa no PDF. As páginas citadas são as impressas.
+subtemas: Rigidez do cotovelo; Ossificação heterotópica
+resumo: Arco funcional de MORREY (30 a 130 graus, 50 de pronação e 50 de supinação); cirurgia se arco menor que 100 graus após fisioterapia e talas; extrínsecas (cápsula, colaterais, OH, consolidação viciosa extra-articular) contra intrínsecas (cartilagem, incongruência, aderências); OH pós-traumática posterolateral, da queimadura posteromedial, neurogênica dentro do músculo e num plano só; HASTINGS e GRAHAM (I sem limitação, IIA flexoextensão, IIB pronossupinação, IIC ambas, III anquilose); BROOKER no quadril (I ilhas a IV anquilose); excisão cedo (3 a 6 meses) ou após maturação (cintilografia e fosfatase alcalina); procedimento da coluna pela via lateral; medial over-the-top entre flexor ulnar do carpo e pronador para expor e transpor o ulnar; ulnar em risco quando a flexão é menor que 90 a 100 graus ou o arco é muito pequeno; CPM e talas estáticas progressivas; interposição no jovem com articulação destruída; artrodese unilateral em 90 a 100 graus.
 ---
 
 
@@ -77,7 +77,7 @@ O Campbell (cap. 51, p. 2185) manda tratar primeiro com **fisioterapia e talas**
 conceito: O Campbell indica liberação quando o arco de flexoextensão fica abaixo de 100 graus depois do tratamento não operatório, sobretudo com contratura em flexão acima de 45 graus.
 como: O TARO 2009 perguntou quando há indicação de liberação cirúrgica, misturando arco inferior a 100 graus, contratura em flexão acima de 30 graus, lesão articular grave e falha após dois meses de conservador.
 armadilha: Achar que 30 graus de contratura bastam (o corte é 45 no Campbell e 40 no Green), que lesão articular grave pede liberação simples (pede artroplastia) ou que dois meses esgotam o conservador (a melhora vai até 4 a 6 meses).
-alerta: Questão sem gabarito oficial no acervo; o gabarito da bibliografia da banca (Campbell, 11ª ed.) marca a contratura em flexão acima de 30 graus, resposta que o site segue. O Campbell 15 (cap. 51, p. 2185) usa o arco abaixo de 100 graus e a contratura acima de 45, e o Green usa a perda de 40 graus de extensão.
+alerta: Questão sem gabarito oficial no acervo; o gabarito da bibliografia da banca (Campbell, 11ª ed.) marca a contratura em flexão acima de 30 graus, resposta que o site segue. O Campbell 15 (cap. 51, p. 2185) usa o arco abaixo de 100 graus e a contratura acima de 45, e o Green usa a perda de 40 graus de extensão. A `ombro-cotovelo-0491` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (a contratura em flexão for superior a 30o).
 !fim
 
 # Causas intrínsecas e extrínsecas {radar=confirmado}
@@ -119,11 +119,11 @@ armadilha: Inverter a ordem (aderências e cápsula) ou achar que a OH ou o cola
 
 ## O que procurar
 
-O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 844 a 848), organiza a avaliação pela causa provável, pela demanda do paciente, pela idade e pelo tempo de rigidez:
+O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 844 a 848), avalia causa, demanda, idade e tempo de rigidez:
 
 - **Dor.** A contratura pós-traumática simples **dói pouco**, só no fim do arco; **dor no meio do arco** sugere **artrose ou incongruência**. Na artrose primária, a dor é típica **nos extremos**, onde os osteófitos se chocam.
-- **Ulnar.** Preso após trauma, pode só causar **relutância em fletir**, dor medial e "aperto" nos dedos ulnares, sem déficit franco.
-- **Idade.** Melhor resultado entre **18 e 50 anos**; o adolescente que não colabora pode piorar; no **idoso**, edema da mão e rigidez do ombro limitam, e às vezes a única saída é a prótese.
+- **Ulnar.** Preso após trauma, pode só causar **relutância em fletir** e dor medial, sem déficit franco.
+- **Idade.** Melhor resultado entre **18 e 50 anos**; no **idoso**, às vezes a única saída é a prótese.
 - **Tempo.** Fixação que falhou ou cotovelo luxado: **não esperar**. Articulação normal: operar após **falha documentada** de fisioterapia e talas; a melhora para em **4 a 6 meses**; depois de **1 ano** o ganho é menor; com **mais de 10 anos**, pode ser preciso **encurtar o úmero**, porque **mediano e artéria braquial** encurtaram.
 - **Imagem.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2185; cap. 15, p. 646), usa radiografias, RM e **TC com reconstrução 3D**, imprescindível para localizar osteófitos e corpos livres. O Green pede AP com o úmero apoiado, perfil verdadeiro, perfis em flexão e extensão máximas e TC em cortes de 0,8 mm; a **cintilografia não tem utilidade** (fica "quente" por anos).
 
@@ -139,9 +139,9 @@ O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 844 a 848), organiza a av
 
 Os três livros começam pelo **não operatório**. O Campbell (cap. 51, p. 2185) usa **fisioterapia e talas**; no capítulo 57 (p. 2503 aprox.), na artrofibrose leve, **fisioterapia agressiva e órteses** podem bastar. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39), cita a **tala estática progressiva** supervisionada como eficaz e, no capítulo 40, para a rigidez após fratura da cabeça do rádio (causa mais comum: **contratura capsular**), soma a **turnbuckle**.
 
-O Green (p. 857 aprox.) explica a física. A **tala dinâmica** aplica **torque constante**, dói e tem baixa adesão; HOTCHKISS não a usa. A **estática progressiva** aplica um **deslocamento incremental** e deixa o tecido sofrer **relaxamento de tensão**, "como um alongamento de ILIZAROV". A **turnbuckle** (GREEN e MCCOY) serve para contraturas em flexão de **25 a 40 graus**; o **come-along** de argolas e tiras ganha flexão. Princípio: a tala **raramente aumenta** o arco obtido na sala de cirurgia; ela **mantém** o ganho.
+O Green (p. 857 aprox.) explica a física. A **tala dinâmica** aplica **torque constante**, dói e tem baixa adesão. A **estática progressiva** aplica um **deslocamento incremental** e deixa o tecido sofrer **relaxamento de tensão**, "como um alongamento de ILIZAROV". A **turnbuckle** (GREEN e MCCOY) serve para contraturas em flexão de **25 a 40 graus**. Princípio: a tala **raramente aumenta** o arco obtido na sala de cirurgia; ela **mantém** o ganho.
 
-A **manipulação sob anestesia isolada não é recomendada nas contraturas antigas**, porque pode causar **fratura, hematoma, cicatriz e OH**; seu papel é de **adjuvante depois da liberação** (Campbell, cap. 51, p. 2185), por exemplo por volta de **6 semanas** após a excisão da OH se as metas não forem atingidas (p. 2189 aprox.).
+A **manipulação sob anestesia isolada não é recomendada nas contraturas antigas**, porque pode causar **fratura, hematoma, cicatriz e OH**; seu papel é de **adjuvante depois da liberação** (Campbell, cap. 51, p. 2185).
 
 !tabela Medidas conservadoras (Green 7, cap. 24, p. 857 e 858; Rockwood and Green 10, caps. 39 e 40; Campbell 15, cap. 51, p. 2185)
 | Medida | Princípio | Observação |
@@ -170,6 +170,12 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2186 e 2188), liga a 
 | Genéticos | Fibrodisplasia ossificante progressiva; história prévia de OH |
 !fim
 
+## O que os outros livros acrescentam: tempo, cérebro e medula
+
+O Green's Operative Hand Surgery, 7ª ed., soma a **infecção** e o **atraso cirúrgico** (cap. 22, p. 826 aprox.): na série de KUNDEL, o úmero distal fixado **depois de 24 horas** teve mais OH, e **toda anquilose por OH** ocorreu nesse grupo (cap. 18, p. 699 aprox.). O HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 48) concorda (fixar a fratura instável **nas primeiras 24 horas**) e cita cirurgia óssea, **TCE com coma prolongado** e **queimadura**. O Campbell (cap. 51, p. 2188) lembra que a **prótese total** só aumenta a OH quando a indicação é **traumática**.
+
+Na **lesão medular**, o HEBERT (cap. 42) situa a OH entre o **1º mês e o 1º ano**, com **pico no 4º mês**, em **quadris, cotovelos e joelhos**; o início (edema, hiperemia, pouca perda de movimento) **imita trombose, fratura ou celulite**. No antebraço, o Green (cap. 21, p. 803) registra **sinostose radioulnar** em **1,2% a 6,6%** após placa e até **18% com TCE**; somam risco MONTEGGIA, fratura dos dois ossos **no mesmo nível**, queimadura e **fragmentos na membrana interóssea**, e **incisões separadas** reduzem o risco.
+
 ## Onde se forma conforme a causa
 
 É o fato mais cobrado do tema. O Box 51.10 do Campbell (cap. 51, p. 2188, de MORREY e HARTER) mostra que a localização **varia com a doença de base**:
@@ -179,6 +185,8 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2186 e 2188), liga a 
 - **Neurogênica:** **anterior, nos flexores**, ou **posterior, nos extensores**; a ossificação ocorre **dentro do músculo** e segue **um único plano**; antebraço e radioulnar proximal podem ser acometidos.
 
 Pelo mecanismo: no trauma, o osso nasce onde houve dano e hematoma, e a luxação típica rasga as partes moles laterais e posteriores; na queimadura, o osso surge no trajeto do ulnar e o envolve; na neurogênica, segue o **músculo espástico**, por isso fica dentro dele, num plano.
+
+O Green (cap. 22, p. 826 e 827 aprox.) descreve a OH da **luxação complexa** com outro endereço: **anterior, entre a cápsula e o braquial**, e **posterior, entre a cápsula e o tríceps**. Para a prova, vale o Box do Campbell, de onde vêm as questões.
 
 !tabela Localização da OH conforme a causa (Campbell 15, cap. 51, Box 51.10, p. 2188)
 | Causa | Local mais comum | Características |
@@ -205,16 +213,6 @@ A classificação de HASTINGS e GRAHAM (Tabela 39-8 do Rockwood and Green's Frac
 
 As letras seguem a ordem anatômica: primeiro o plano do cotovelo (A), depois o do antebraço (B), por fim os dois (C).
 
-!tabela Classificação de HASTINGS e GRAHAM (Rockwood and Green 10, cap. 39, Tabela 39-8)
-| Classe | Descrição | Implicação |
-|---|---|---|
-| I | OH radiográfica sem limitação funcional | Observar |
-| IIA | Limitação da flexoextensão | Excisão se o arco funcional estiver comprometido |
-| IIB | Limitação da pronossupinação | Excisão; olhar a radioulnar proximal |
-| IIC | Limitação nos dois planos | Excisão e liberação ampla |
-| III | Anquilose óssea do cotovelo ou do antebraço | Excisão; a anquilose ganha mais que a restrição parcial |
-!fim
-
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2188), dá a regra que conversa com a classificação: se a OH **causa ou contribui para a perda do arco funcional, inclusive da pronossupinação**, a excisão com liberação da cápsula está indicada, **seja a limitação parcial ou completa**. Ou seja, classes II e III operam; a I, não.
 
 !questoes central=ombro-cotovelo-0373
@@ -223,22 +221,82 @@ como: A SBOT-SP pediu a alternativa correta, misturando tipo I como ausência de
 armadilha: Achar que o tipo I é ausência de OH, trocar IIA por IIB ou chamar de III a simples limitação de rotação (III é anquilose).
 !fim
 
-# Profilaxia e momento da excisão da OH {radar=clinico}
+## A mesma classificação no Green: cotovelo e antebraço
 
-Aqui os livros divergem. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2188 e 2189), recomenda **operar cedo o trauma complexo**; acha o **ácido tranexâmico promissor**; considera **AINE e radioterapia equívocos**; mas, após a **excisão** da OH, prescreve **indometacina por 6 semanas** e acha fraca a evidência da radioterapia de baixa dose. O Rockwood and Green's Fractures in Adults, 10ª ed., **recomenda indometacina e/ou radiação** no **alto risco**, como o TCE (cap. 39), mas chama de **controverso** o uso rotineiro após a liberação; no capítulo 40, **não recomenda indometacina** na luxação simples, lembra que o paciente com TCE em geral não é candidato a AINE nem a radiação, cita **indometacina 25 mg três vezes ao dia por 3 semanas** com risco de **pseudartrose** e manda **evitar radiação na fratura aguda do úmero distal**. O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 857 aprox.), diz que **não há ensaios randomizados**; HOTCHKISS (como JUPITER) **abandonou os AINE** sem aumento de recidiva e reserva **700 cGy em dose única nas primeiras 72 horas** para formadores de OH; para ele, o que mais reduziu a OH foi o **movimento precoce**.
+O Green's Operative Hand Surgery, 7ª ed. (cap. 21, p. 804, Tabela 21.1), reproduz o artigo original (1994), cujo título diz o alcance: OH **do cotovelo e do antebraço**. A redação usa **perda parcial** para as classes II e **anquilose completa** para a III: a sinostose radioulnar completa, indolor e travada, é **III**; a incompleta, com bloqueio doloroso da rotação, é **IIB** (p. 803).
 
-!tabela Profilaxia da OH nos três livros (Campbell 15, cap. 51, p. 2188 e 2189; Rockwood and Green 10, caps. 39 e 40; Green 7, cap. 24, p. 857 aprox.)
-| Medida | Campbell 15 | Rockwood and Green 10 | Green 7 |
-|---|---|---|---|
-| Ácido tranexâmico | Promissor | Não citado | Não citado |
-| Indometacina | Equívoca; 6 semanas após excisão | Alto risco: recomendada; luxação simples: não; após liberação: controversa | Abandonada |
-| Radioterapia | Equívoca; evidência fraca | Alto risco: recomendada; evitar na fratura aguda do úmero distal | 700 cGy dose única até 72 h, só em formadores |
-| Movimento precoce | CPM e fisioterapia | Obrigatório | Principal fator de redução |
+!tabela HASTINGS e GRAHAM: Rockwood and Green contra Green (Rockwood and Green 10, cap. 39, Tabela 39-8; Green 7, cap. 21, Tabela 21.1, p. 804)
+| Classe | Rockwood and Green 10 | Green 7 |
+|---|---|---|
+| I | OH radiográfica sem limitação funcional | OH sem limitação funcional |
+| II | Com limitação | Limitação subtotal do movimento |
+| IIA | Flexoextensão | Perda parcial da flexoextensão do cotovelo |
+| IIB | Pronossupinação | Perda parcial da supinação e pronação |
+| IIC | Os dois planos | Perda parcial dos dois |
+| III | Anquilose óssea do cotovelo ou do antebraço | Anquilose completa do cotovelo, do antebraço ou de ambos |
 !fim
 
-O **momento da excisão** também diverge. O Campbell (p. 2188) segue a **tendência de excisão precoce**, entre **3 e 6 meses**, com três critérios: **fraturas consolidadas**, **feridas cicatrizadas** e **inflamação resolvida**; a OH não costuma crescer depois de identificada e a demora pode piorar o resultado. O Rockwood and Green (cap. 39) manda esperar **parar de crescer e corticalizar**. O Green (p. 845 aprox.) opera por volta de **6 meses**, sem cintilografia; no **TCE**, espera **12 a 24 meses** e exige que o paciente dispare **bíceps e tríceps voluntariamente** (p. 854).
+!questoes central=ombro-cotovelo-0386 treino=ombro-cotovelo-0666
+conceito: Na classificação de HASTINGS e GRAHAM, a limitação parcial da pronação e da supinação, sem anquilose e sem perda da flexoextensão, é a classe IIB.
+como: O simulado SBCM 2024 pediu a classe da perda parcial da pronação e da supinação; uma prova de Ortopedia perguntou a classe da limitação da pronossupinação (a mesma questão aparece duas vezes no acervo).
+armadilha: Marcar IIA (é a flexoextensão), IIC (exige os dois planos) ou III (só a anquilose completa, como a sinostose radioulnar fechada).
+!fim
 
-Na excisão (Campbell, p. 2188 e 2189), a **TC pré-operatória** localiza a OH e os nervos; usa-se via de **KOCHER** limitada ou estendida, ou incisão posterior (técnica de MORREY e HARTER) com acesso circunferencial; quando a OH chega ao lado medial, **transpor o ulnar** (que pode estar envolto em osso); na parte anterior, identificar o **radial**; não fechar a cápsula. O ganho é de **50 a 70 graus**, igual entre as causas; a **anquilose ganha mais** que a restrição parcial; a **recidiva é maior no SNC**. O Rockwood and Green acrescenta que a excisão da OH ganha mais que a liberação só de partes moles.
+# Profilaxia e momento da excisão da OH {radar=clinico}
+
+## Profilaxia: indometacina, radiação e movimento
+
+Aqui os livros divergem. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2188 e 2189), recomenda **operar cedo o trauma complexo**, acha o **ácido tranexâmico promissor** e **AINE e radioterapia equívocos**, mas prescreve **indometacina por 6 semanas após a excisão**. O Rockwood and Green's Fractures in Adults, 10ª ed., **recomenda indometacina e/ou radiação** no **alto risco**, como o TCE (cap. 39), chama de **controverso** o uso rotineiro após a liberação e, no capítulo 40, não a recomenda na luxação simples, cita **25 mg três vezes ao dia por 3 semanas** com risco de **pseudartrose** e manda **evitar radiação na fratura aguda**. O Green's Operative Hand Surgery, 7ª ed. (cap. 24, p. 857 aprox.): **sem ensaios randomizados**, HOTCHKISS **abandonou os AINE** sem mais recidiva, reserva **700 cGy em dose única nas primeiras 72 horas** a formadores de OH e credita ao **movimento precoce** a maior redução.
+
+Os outros capítulos do Green afinam a regra. Na luxação complexa (cap. 22, p. 827 aprox.), indometacina e radiação **não têm eficácia comprovada** e podem **prejudicar a consolidação**: um ensaio randomizado mostrou mais **pseudartrose** com **radiação aguda** após trauma do cotovelo. Na cabeça do rádio (cap. 19, p. 733 aprox.), a profilaxia segue o momento: excisão **precoce (menos de 6 meses)**, **500 cGy em dose única** no pós-operatório; **tardia**, **indometacina**; no **TCE com déficit cognitivo**, radiação, porque a recidiva é maior. O HEBERT (cap. 48) usa **indometacina 75 mg/dia**, sobretudo na fratura-luxação com TCE, e, na lesão medular (cap. 42), cita também o **etidronato dissódico**.
+
+!tabela Profilaxia da OH nos quatro livros (Campbell 15, cap. 51, p. 2188 e 2189; Rockwood and Green 10, caps. 39 e 40; Green 7, caps. 19, 22 e 24; HEBERT, caps. 42 e 48)
+| Medida | Campbell 15 | Rockwood and Green 10 | Green 7 | HEBERT |
+|---|---|---|---|---|
+| Ácido tranexâmico | Promissor | Não citado | Não citado | Não citado |
+| Indometacina | Equívoca; 6 semanas após excisão | Alto risco: sim; luxação simples: não; após liberação: controversa | Abandonada (cap. 24); após excisão tardia (cap. 19) | 75 mg/dia, sobretudo com TCE |
+| Radioterapia | Equívoca; evidência fraca | Alto risco: sim; evitar na fratura aguda | 700 cGy até 72 h em formadores; 500 cGy após excisão precoce; aguda aumenta pseudartrose | Dose única no 1º dia após a ressecção |
+| Movimento precoce | CPM e fisioterapia | Obrigatório | Principal fator de redução | Fisioterapia |
+!fim
+
+## Quando a OH está madura: o momento da excisão
+
+O **momento da excisão** é a maior divergência do tema. O Campbell (cap. 51, p. 2188) segue a **excisão precoce**, entre **3 e 6 meses**, com **fraturas consolidadas**, **feridas cicatrizadas** e **inflamação resolvida**: a OH não costuma crescer depois de identificada, operar cedo não aumentou a recidiva e a demora piora o resultado. O Rockwood and Green (cap. 39) espera **corticalizar**. O Green opera quando há **trabéculas** ou **margens corticais definidas** com o cotovelo **sem inflamação**, em geral **3 a 6 meses**, e afirma que a **cintilografia não ajuda** (caps. 19, 22 e 24); no **TCE**, espera **12 a 24 meses** e o controle voluntário de **bíceps e tríceps** (cap. 24, p. 854).
+
+O critério clássico de maturidade vem do quadril: **cintilografia com tecnécio em queda** e **fosfatase alcalina normal** (Campbell, cap. 4, p. 266). O Rockwood and Green (cap. 51, acetábulo) conta que **tradicionalmente** se esperavam esses marcadores e a maturação radiográfica, muitas vezes **mais de 1 ano**, e que hoje se prefere a **excisão precoce**: na série de WU, recidiva de **29% antes de 6 meses** e **36% depois**; **no cotovelo**, **29% nas precoces e 27% nas tardias**. O HEBERT (cap. 48) aconselha **12 a 18 meses**, com irradiação no 1º dia, mas cita VIOLA e HASTINGS operando em **3 a 6 meses** e DENORMANDIE concluindo, em TCE, que **valeu operar antes de 1 ano**.
+
+!tabela Momento da excisão conforme o livro (Campbell 15, cap. 51; Rockwood and Green 10, caps. 39 e 51; Green 7, caps. 19, 22 e 24; HEBERT, cap. 48)
+| Livro | Quando | Critério |
+|---|---|---|
+| Campbell 15, cap. 51 | 3 a 6 meses | Fraturas consolidadas, feridas fechadas, sem inflamação |
+| Rockwood and Green 10, cap. 39 | Após parar de crescer | OH corticalizada |
+| Rockwood and Green 10, cap. 51 | Antes: mais de 1 ano; hoje: precoce | Recidiva igual (29% contra 27% no cotovelo) |
+| Green 7, caps. 19, 22 e 24 | 3 a 4 meses; cerca de 6 meses | Trabéculas, margens corticais, cotovelo frio; cintilografia inútil |
+| HEBERT, cap. 48 | 12 a 18 meses (VIOLA e HASTINGS: 3 a 6) | Maturação; irradiação no 1º dia |
+!fim
+
+## A técnica de excisão
+
+Na excisão (Campbell, cap. 51, p. 2188 e 2189), a **TC pré-operatória** localiza a OH e os nervos **mediano, radial e ulnar**; usa-se a via de **KOCHER** ou a incisão posterior de MORREY e HARTER, com acesso circunferencial. **Posterolateral:** tríceps afastado para medial sem soltar a inserção, ressecção da **porção central da ponte**, das inserções e do osso da **fossa olecraniana**. **Medial:** **transpor o ulnar**, que pode estar envolto em osso (pinça de KERRISON). **Anterior:** elevar **braquiorradial e braquial** da crista supracondiliana lateral e proteger o **radial**. Não se fecha a cápsula; indometacina por 6 semanas, fisioterapia, talas e **manipulação sob anestesia por volta de 6 semanas** se a meta não vier. Na **queimadura**, **múltiplas incisões** poupam a pele; a **toxina botulínica** é adjuvante.
+
+O ganho é de **50 a 70 graus**, igual entre as causas; a **anquilose ganha mais** que a restrição parcial; a **recidiva é maior no SNC**; e, pelo Rockwood and Green, a excisão ganha mais que a liberação só de partes moles. Na sinostose radioulnar (Green, cap. 21, p. 804), a ressecção é guiada por radioscopia, o osso exposto recebe **cera** e o movimento começa logo; a recidiva é de **5% a 10%**. A OH também é **fator de risco para neurite tardia do ulnar** após a liberação, que ocorreu em **11%** na série de BLONNA (Campbell, cap. 57, p. 2503).
+
+# BROOKER: a OH do quadril {radar=fundamento}
+
+Fora do cotovelo, a classificação muda de lógica: a de BROOKER (Campbell, cap. 4, p. 265 aprox.; HEBERT, cap. 10) é **radiográfica**, pela distância entre as massas ósseas, e não funcional como HASTINGS e GRAHAM. A calcificação aparece na **3ª a 4ª semana**, mas a OH só **amadurece em 1 a 2 anos**; a maioria é **assintomática**, e dor e perda de movimento surgem nos **graus III e IV**. Fatores de risco (Campbell): **OH prévia**, **osteoartrite hipertrófica**, **espondilite anquilosante**, **DISH**, PAGET, **sexo masculino** e etnia afro-americana; o HEBERT soma **TCE, coma, FORESTIER** e **dissecção extensa** e descreve três formas: massa **intramuscular** (trauma de repetição), massa **contígua ao periósteo** (hematoma subperiosteal) e ossificação **periarticular** na cápsula e nos planos fasciais.
+
+!tabela Classificação de BROOKER (Campbell 15, cap. 4, p. 265 aprox.; HEBERT, cap. 10)
+| Grau | Descrição |
+|---|---|
+| I | Ilhas de osso nas partes moles |
+| II | Esporões do fêmur proximal ou da pelve com pelo menos 1 cm entre as superfícies |
+| III | Esporões com menos de 1 cm entre as superfícies |
+| IV | Anquilose |
+!fim
+
+A profilaxia **não é rotina**; vale para o **alto risco**. O Campbell (p. 265 e 266) usa **radiação de baixa dose** (até **500 cGy**), que falha mais quando dada **mais de 8 horas antes** ou **mais de 72 horas depois** da cirurgia, ou **AINE por 6 semanas** (7 dias também funcionam), com **COX-2** preferido pela segurança; a **aspirina** contra TEV também reduziu a OH. O HEBERT dá **indometacina 25 mg três vezes ao dia por 6 semanas** ou **600 a 700 rads em dose única até 3 dias** depois. A excisão é **raramente indicada**: a cirurgia é extensa e sangrante, e a dor pode persistir.
+
+No **acetábulo**, o Rockwood and Green (cap. 51) relata OH radiográfica em **até 90%**; grave é a que tira **mais de 20% do movimento** do quadril. BROOKER usa **só a AP** e **superestima** a gravidade (as **oblíquas de JUDET** ajudam). Sem profilaxia, MATTA viu OH importante em **20%** pela **iliofemoral estendida**, **8%** pela KOCHER-LANGENBECK e **2%** pela ilioinguinal.
 
 # A escolha do procedimento {radar=confirmado}
 
@@ -266,7 +324,7 @@ O **fixador articulado** tem três indicações (Green, p. 855 e 856): **instabi
 conceito: Manipulação isolada não se faz em contratura antiga; artroscopia exige cartilagem preservada; a via lateral isolada (coluna) alcança cápsula anterior e posterior; a distração com ou sem interposição fascial é a saída quando o problema é intra-articular.
 como: O TARO 2007 pediu a afirmação correta, com alternativas sobre manipulação como primeira opção, artroscopia na destruição articular, artroplastia de distração na aderência intra-articular extensa e proibição da via lateral isolada.
 armadilha: Achar que a via lateral não alcança a parte posterior; o procedimento da coluna faz cápsulectomia anterior e posterior pela mesma incisão.
-alerta: Questão sem gabarito oficial no acervo. O Campbell (cap. 51, p. 2185 e 2186) torna falsas A, B e D; a C é a única compatível com os livros (o Green, cap. 24, p. 855 e 856, lista a distração com ou sem interposição entre as indicações do fixador articulado), embora nenhum use a expressão "aderência intra-articular extensa".
+alerta: Questão sem gabarito oficial no acervo. O Campbell (cap. 51, p. 2185 e 2186) torna falsas A, B e D; a C é a única compatível com os livros (o Green, cap. 24, p. 855 e 856, lista a distração com ou sem interposição entre as indicações do fixador articulado), embora nenhum use a expressão "aderência intra-articular extensa". A `ombro-cotovelo-0467` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (o tratamento por artroplastia de distração, com ou sem interposição fascial, está indicado se houver aderência intra-articular extensa).
 !fim
 
 # Liberação artroscópica {radar=fundamento}
@@ -372,13 +430,13 @@ alerta: Nenhum livro diz literalmente que o CPM serve para "diminuir a formaçã
 
 ## Artroplastia de desbridamento e OUTERBRIDGE-KASHIWAGI
 
-Quando a rigidez vem da **artrose primária** (osteófitos no coronoide e no olécrano que se chocam nos extremos do arco), a cirurgia é um **desbridamento**: retirar osteófitos e corpos livres e recriar as fossas. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 15, p. 645 e 646 aprox.), indica o desbridamento para **jovens de alta demanda** que não aceitariam as restrições de carga da prótese total e para artrose grave; pode ser artroscópico ou aberto. Numa revisão de 30 estudos e 887 cotovelos, o aberto ganhou **19 graus de flexão e 11 de extensão**, e o artroscópico **10 de flexão e 11 de extensão**, com poucas complicações. As vias são a **coluna lateral** (técnica 15.1) e a **medial de WADA** (técnica 15.2), que permite descomprimir o ulnar e retirar os osteófitos da **borda medial** do coronoide e do olécrano.
+Quando a rigidez vem da **artrose primária** (osteófitos no coronoide e no olécrano que se chocam nos extremos do arco), a cirurgia é um **desbridamento**: retirar osteófitos e corpos livres e recriar as fossas. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 15, p. 645 e 646 aprox.), indica o desbridamento para **jovens de alta demanda** que não aceitariam as restrições de carga da prótese total e para artrose grave; pode ser artroscópico ou aberto. As vias são a **coluna lateral** (técnica 15.1) e a **medial de WADA** (técnica 15.2), que permite descomprimir o ulnar e retirar os osteófitos da **borda medial** do coronoide e do olécrano.
 
 O procedimento de **OUTERBRIDGE-KASHIWAGI** é a **trepanação transumeral**: abre-se um orifício na **fossa olecraniana**, de trás para a frente, para retirar osteófitos e corpos livres do compartimento anterior sem precisar de uma via anterior. O Green's Operative Hand Surgery, 7ª ed., cita o procedimento duas vezes: no capítulo 24 (p. 849 aprox.), HOTCHKISS diz que **não o usa mais** para a artrose primária, preferindo a via over-the-top ou a artroscopia; no capítulo 26 (p. 894), lembra que a fossa olecraniana pode ser **fenestrada por artroscopia**, como no procedimento de OUTERBRIDGE-KASHIWAGI, o que cria um **portal extra para ver o compartimento anterior**.
 
 ## Interposição
 
-O Campbell (cap. 15, p. 647 a 651 aprox.) define a **artroplastia de interposição** como tratamento da **artrose terminal** em quem tem **contraindicação a implante**. A indicação principal é **dor incapacitante no jovem ativo** que quer evitar as restrições da prótese, quase sempre por artrose **pós-traumática ou inflamatória**. Exige partes moles o mais normais possível, musculatura do antebraço em bom estado, estoque ósseo e cápsula e ligamentos preservados; **instabilidade não é boa indicação**, porque a interposição não dá estabilidade; infecção prévia pede cautela. A técnica molda o úmero distal num côndilo convexo (em V invertido), aprofunda a incisura troclear, resseca a cabeça do rádio e cobre as superfícies com **aloenxerto de tendão calcâneo** (ou matriz dérmica acelular, ou fáscia lata); fecha-se com **90 graus de flexão**, que são mantidos por 10 a 14 dias para impedir a rotação; depois, órtese articulada, exercícios e tala noturna até cerca de 12 semanas; o máximo de força e movimento vem em até 2 anos.
+O Campbell (cap. 15, p. 647 a 651 aprox.) define a **artroplastia de interposição** como tratamento da **artrose terminal** em quem tem **contraindicação a implante**. A indicação principal é **dor incapacitante no jovem ativo** que quer evitar as restrições da prótese, quase sempre por artrose **pós-traumática ou inflamatória**. Exige partes moles o mais normais possível, musculatura do antebraço em bom estado, estoque ósseo e cápsula e ligamentos preservados; **instabilidade não é boa indicação**, porque a interposição não dá estabilidade; infecção prévia pede cautela. A técnica molda o úmero distal, resseca a cabeça do rádio e cobre as superfícies com **aloenxerto de tendão calcâneo** (ou matriz dérmica, ou fáscia lata), mantendo **90 graus de flexão** por 10 a 14 dias; o máximo de força e movimento vem em até 2 anos.
 
 O prognóstico é **reservado**: só **29%** de 45 pacientes bons ou excelentes aos 6 anos; complicações acumuladas de **38,4%** (41,2% na pós-traumática e 11,7% na inflamatória) e reoperação de **23,5%**; as complicações mais comuns, em ordem, são **infecção, neuropatia e instabilidade**; a inflamatória melhora mais. O Green (p. 847 e 856) concorda: no jovem com incongruência grave, a interposição é **imprevisível**, e HOTCHKISS raramente a faz após trauma.
 
@@ -428,7 +486,7 @@ O tratamento não operatório da fratura do úmero distal inclui gesso, tração
 conceito: O bag of bones (colar e punho) troca a redução anatômica pelo movimento precoce; os resultados mostram arco médio em torno de 100 graus, com alguma perda de flexão e extensão em relação ao lado sadio, e o método fica restrito ao idoso de baixa demanda.
 como: O TARO 2006 afirmou, para julgar certo ou errado, que a técnica do saco de ossos causa rigidez do cotovelo na fratura multifragmentária do úmero distal.
 armadilha: Confundir o objetivo do método (movimento precoce) com imobilização prolongada, que é a verdadeira causa de rigidez.
-alerta: Questão sem gabarito oficial no acervo. O Rockwood and Green (cap. 39) não atribui rigidez ao método: descreve flexão ativa com 2 semanas, arco médio de 100 graus (BROWN e MORGAN) e arco melhor que a fixação não rígida (RISEBOROUGH e RADIN), mas também perda de flexão e extensão no idoso (DESLOGES); a leitura mais compatível é "Errado".
+alerta: Questão sem gabarito oficial no acervo. O Rockwood and Green (cap. 39) não atribui rigidez ao método: descreve flexão ativa com 2 semanas, arco médio de 100 graus (BROWN e MORGAN) e arco melhor que a fixação não rígida (RISEBOROUGH e RADIN), mas também perda de flexão e extensão no idoso (DESLOGES); a leitura mais compatível é "Errado". A `ombro-cotovelo-0514` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (Errado).
 !fim
 
 # Resultados e complicações {radar=fundamento}
@@ -449,7 +507,6 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2186), relata ganho m
 | Situação | Resultado | Fonte |
 |---|---|---|
 | Liberação aberta | Ganho médio de 40 a 50 graus; melhora até 1 ano | Campbell |
-| Excisão da OH | Ganho de 50 a 70 graus; anquilose ganha mais; recidiva maior no SNC | Campbell |
 | Contratura mínima | Contratura residual de 5 a 10 graus | Green |
 | Moderada (50 a 105 com OH) | Arco final de 20 a 130 | Green |
 | Arco menor que 30 graus | Meta de 25 a 130, variável | Green |
@@ -460,6 +517,6 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 51, p. 2186), relata ganho m
 
 O cotovelo rígido se resolve com três perguntas. **Quanto falta para o arco funcional** (30 a 130 graus, com 50 de pronação e 50 de supinação)? Se o arco está abaixo de 100 graus depois de fisioterapia e talas estáticas progressivas, a cirurgia entra. **O que está segurando?** Cápsula, colaterais, consolidação viciosa extra-articular e OH são extrínsecos; cartilagem, incongruência e aderências são intrínsecos; com a superfície boa, libera-se; com ela destruída, interposição no jovem, prótese no idoso e artrodese como salvamento. **Por onde entrar?** Artroscopia no caso simples; coluna lateral na maioria; medial over-the-top quando o ulnar precisa ser visto e transposto.
 
-A ossificação heterotópica tem endereço conforme a causa (pós-traumática posterolateral, queimadura posteromedial com o ulnar envolto, neurogênica dentro do músculo num plano só), classifica-se pela função (HASTINGS e GRAHAM) e se retira quando limita o arco, cedo pelo Campbell (3 a 6 meses, com fraturas consolidadas, feridas fechadas e sem inflamação) e após a maturação pelo Rockwood and Green. A profilaxia com indometacina ou radiação é controversa nos três livros.
+A ossificação heterotópica nasce do trauma grave e tratado tarde, da queimadura, do TCE e da lesão medular (pico no 4º mês); tem endereço conforme a causa (pós-traumática posterolateral, queimadura posteromedial com o ulnar envolto, neurogênica dentro do músculo num plano só); classifica-se pela função no cotovelo e antebraço (HASTINGS e GRAHAM, em que só a anquilose é III) e pelo intervalo radiográfico no quadril (BROOKER); e se retira quando limita o arco: cedo pelo Campbell e pelo Green (3 a 6 meses, fraturas consolidadas, feridas fechadas, sem inflamação), após a maturação pelo Rockwood and Green e pelo HEBERT. Cintilografia e fosfatase alcalina são o critério clássico de maturidade, mas a recidiva não muda com a excisão precoce. A profilaxia com indometacina ou radiação é controversa em todos os livros, e a radiação aguda aumenta a pseudartrose.
 
-> **Na prova:** arco funcional de MORREY **30 a 130** e **50/50**; operar com arco **< 100** após conservador; **aderências são intrínsecas**, **cápsula e OH extrínsecas**; OH **pós-traumática posterolateral**, **queimadura posteromedial**, **neurogênica intramuscular em plano único**; HASTINGS **I sem limitação, IIA flexoextensão, IIB pronossupinação, IIC ambos, III anquilose**; procedimento da coluna = **via lateral**; over-the-top = **expor e transpor o ulnar**, entre **flexor ulnar do carpo e pronador redondo**; explorar o ulnar com **flexão < 90 a 100** ou **arco < 30**; CPM lento após liberação, rotação livre; artrodese unilateral **90 a 100 graus**.
+> **Na prova:** arco funcional de MORREY **30 a 130** e **50/50**; operar com arco **< 100** após conservador; **aderências são intrínsecas**, **cápsula e OH extrínsecas**; OH **pós-traumática posterolateral**, **queimadura posteromedial**, **neurogênica intramuscular em plano único**; HASTINGS **I sem limitação, IIA flexoextensão, IIB pronossupinação, IIC ambos, III anquilose**; BROOKER **I ilhas a IV anquilose**; excisão da OH com **3 a 6 meses** (fraturas consolidadas, sem inflamação); procedimento da coluna = **via lateral**; over-the-top = **expor e transpor o ulnar**, entre **flexor ulnar do carpo e pronador redondo**; explorar o ulnar com **flexão < 90 a 100** ou **arco < 30**; CPM lento após liberação, rotação livre; artrodese unilateral **90 a 100 graus**.

@@ -6482,15 +6482,15 @@
   },
   {
    "id": "campbell15-lesoes-condrais",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Lesões condrais do joelho",
    "especialidade": "joelho",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026), com o Rockwood and Green's Fractures in Adults, 10ª ed., o Rockwood and Wilkins' Fractures in Children, 10ª ed., e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed.",
    "capitulo": "Capítulo 56 · Arthroscopy of the Lower Extremity, com o Capítulo 50 · Knee Injuries (seção Articular Cartilage Injuries)",
-   "resumo": "Cartilagem avascular, sem nervos, de colágeno tipo II e proteoglicanos, com condrócitos que formam agrupamentos mas não migram; lesão só condral não cicatriza, a osteocondral vira fibrocartilagem (colágeno I e III); fratura osteocondral típica do adolescente na luxação da patela (faceta inferomedial e côndilo lateral) e principal indicação de cirurgia na primeira luxação; OUTERBRIDGE, modificada, ICRS e BAUER e JACKSON; tratamento pelo tamanho, profundidade e demanda (desbridamento, microfratura até cerca de 2 cm2, autoenxerto até 2 a 2,5, aloenxerto 2 a 3,5, MACI até 10 e múltiplas); idade acima de 50, perda meniscal, tabagismo, IMC acima de 30, mau alinhamento e instabilidade pioram, o tamanho não; fratura por insuficiência subcondral após meniscectomia.",
+   "resumo": "Cartilagem avascular, sem nervos, de colágeno tipo II e proteoglicanos, com condrócitos que formam agrupamentos mas não migram; lesão só condral não cicatriza, a osteocondral vira fibrocartilagem (colágeno I e III); fratura osteocondral típica do adolescente na luxação da patela (faceta inferomedial e côndilo lateral) e principal indicação de cirurgia na primeira luxação; OUTERBRIDGE, modificada, ICRS e BAUER e JACKSON; tratamento pelo tamanho, profundidade e demanda (desbridamento, microfratura até cerca de 2 cm2, autoenxerto até 2 a 2,5, aloenxerto 2 a 3,5, MACI até 10 e múltiplas); idade acima de 50, perda meniscal, tabagismo, IMC acima de 30, mau alinhamento e instabilidade pioram, o tamanho não; fratura por insuficiência subcondral após meniscectomia; osteonecrose espontânea (idoso, mulher, dor súbita, um joelho, côndilo medial) x secundária (corticoide, álcool, lúpus, hemoglobinopatias; mais jovem, ambos os côndilos e platôs, metáfise e diáfise) x pós-artroscópica (meniscectomia, radiofrequência, laser).",
    "acesso": "gratis",
-   "minutos": 33,
+   "minutos": 36,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -6553,6 +6553,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "osteonecrose-do-joelho-espontanea-secundaria-e-p",
+     "titulo": "Osteonecrose do joelho: espontânea, secundária e pós-artroscópica",
+     "radar": "confirmado"
+    },
+    {
      "id": "osteocondrite-dissecante-onde-o-tema-encosta",
      "titulo": "Osteocondrite dissecante: onde o tema encosta",
      "radar": "fundamento"
@@ -6570,11 +6575,16 @@
     "trauma-1020",
     "joelho-0129",
     "joelho-0305",
-    "joelho-0296"
+    "joelho-0296",
+    "joelho-0274",
+    "joelho-0229",
+    "joelho-0075",
+    "joelho-0285"
    ],
    "treino": [],
    "subtemas": [
-    "Lesões condrais"
+    "Lesões condrais",
+    "Osteonecrose do joelho"
    ]
   },
   {
@@ -8319,15 +8329,15 @@
   },
   {
    "id": "campbell15-rigidez-cotovelo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Rigidez do cotovelo",
    "especialidade": "ombro-cotovelo",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026), com o Green's Operative Hand Surgery, 7ª ed. (2017), e o Rockwood and Green's Fractures in Adults, 10ª ed. (2025)",
    "capitulo": "Capítulo 15 · Reconstructive Procedures of the Elbow",
-   "resumo": "Arco funcional de MORREY (30 a 130 graus, 50 de pronação e 50 de supinação); cirurgia se arco menor que 100 graus após fisioterapia e talas; extrínsecas (cápsula, colaterais, OH, consolidação viciosa extra-articular) contra intrínsecas (cartilagem, incongruência, aderências); OH pós-traumática posterolateral, da queimadura posteromedial, neurogênica dentro do músculo e num plano só; HASTINGS e GRAHAM (I, IIA, IIB, IIC, III); procedimento da coluna pela via lateral; medial over-the-top entre flexor ulnar do carpo e pronador para expor e transpor o ulnar; ulnar em risco quando a flexão é menor que 90 a 100 graus ou o arco é muito pequeno; CPM e talas estáticas progressivas; interposição no jovem com articulação destruída; artrodese unilateral em 90 a 100 graus.",
+   "resumo": "Arco funcional de MORREY (30 a 130 graus, 50 de pronação e 50 de supinação); cirurgia se arco menor que 100 graus após fisioterapia e talas; extrínsecas (cápsula, colaterais, OH, consolidação viciosa extra-articular) contra intrínsecas (cartilagem, incongruência, aderências); OH pós-traumática posterolateral, da queimadura posteromedial, neurogênica dentro do músculo e num plano só; HASTINGS e GRAHAM (I sem limitação, IIA flexoextensão, IIB pronossupinação, IIC ambas, III anquilose); BROOKER no quadril (I ilhas a IV anquilose); excisão cedo (3 a 6 meses) ou após maturação (cintilografia e fosfatase alcalina); procedimento da coluna pela via lateral; medial over-the-top entre flexor ulnar do carpo e pronador para expor e transpor o ulnar; ulnar em risco quando a flexão é menor que 90 a 100 graus ou o arco é muito pequeno; CPM e talas estáticas progressivas; interposição no jovem com articulação destruída; artrodese unilateral em 90 a 100 graus.",
    "acesso": "gratis",
-   "minutos": 34,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -8368,6 +8378,11 @@
      "id": "profilaxia-e-momento-da-excisao-da-oh",
      "titulo": "Profilaxia e momento da excisão da OH",
      "radar": "clinico"
+    },
+    {
+     "id": "brooker-a-oh-do-quadril",
+     "titulo": "BROOKER: a OH do quadril",
+     "radar": "fundamento"
     },
     {
      "id": "a-escolha-do-procedimento",
@@ -8433,6 +8448,7 @@
     "ombro-cotovelo-0297",
     "ombro-cotovelo-0065",
     "ombro-cotovelo-0373",
+    "ombro-cotovelo-0386",
     "ombro-cotovelo-0467",
     "ombro-cotovelo-0389",
     "ombro-cotovelo-0427",
@@ -8442,11 +8458,13 @@
     "ombro-cotovelo-0514"
    ],
    "treino": [
+    "ombro-cotovelo-0666",
     "ombro-cotovelo-0664",
     "ombro-cotovelo-0673"
    ],
    "subtemas": [
-    "Rigidez do cotovelo"
+    "Rigidez do cotovelo",
+    "Ossificação heterotópica"
    ]
   },
   {
@@ -14626,15 +14644,15 @@
   },
   {
    "id": "netter-anatomia-cotovelo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia do cotovelo",
    "especialidade": "ombro-cotovelo",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
    "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026), o Rockwood and Green's Fractures in Adults, 10ª edição (2025), e o Green's Operative Hand Surgery, 7ª edição (2017)",
    "capitulo": "Capítulo 4 · Braço (o cotovelo), com o Capítulo 5 · Antebraço",
-   "resumo": "Três articulações (trocogínglimo), valgo de 11 a 16 graus que vira varo na flexão e ossificação CRMTOL (capítulo 1, cabeça do rádio 2 a 3, epicôndilo medial 5, tróclea 7, olécrano 9, epicôndilo lateral 11 anos); feixe anterior do colateral medial no tubérculo sublime, o mais forte e o principal contra o valgo entre 20 e 120 graus; LUCL na crista do supinador contra a instabilidade rotatória posterolateral; braquial como flexor principal (musculocutâneo e radial), bíceps como supinador principal, ancôneo e braquiorradial do radial, ERCC e extensor dos dedos com origens fundidas; fossa cubital de lateral para medial (cutâneo lateral, tendão do bíceps, artéria braquial, mediano); braquial começa na borda inferior do redondo maior, medial ao bíceps, com três arcadas anastomóticas; ulnar sob STRUTHERS (70%, 8 cm) e OSBORNE, assoalho no colateral medial; mediano entre as cabeças do pronador; NIP pela arcada de FROHSE e junto da interóssea posterior; KOCHER (ancôneo e EUC, pronar), KAPLAN, BOYD, medial e posterior com osteotomia; portais e zona de segurança da cabeça do rádio.",
+   "resumo": "Três articulações (trocogínglimo), valgo de 11 a 16 graus que vira varo na flexão e ossificação CRMTOL (capítulo 1, cabeça do rádio 2 a 3, epicôndilo medial 5, tróclea 7, olécrano 9, epicôndilo lateral 11 anos); feixe anterior do colateral medial no tubérculo sublime, o mais forte e o principal contra o valgo entre 20 e 120 graus; LUCL na crista do supinador contra a instabilidade rotatória posterolateral; braquial como flexor principal (musculocutâneo e radial), bíceps como supinador principal, ancôneo e braquiorradial do radial, ERCC e extensor dos dedos com origens fundidas; fossa cubital de lateral para medial (cutâneo lateral, tendão do bíceps, artéria braquial, mediano); braquial começa na borda inferior do redondo maior, medial ao bíceps, com três arcadas anastomóticas; ulnar sob STRUTHERS (70%, 8 cm) e OSBORNE, assoalho no colateral medial; mediano entre as cabeças do pronador; NIP pela arcada de FROHSE e junto da interóssea posterior; KOCHER (ancôneo e EUC, pronar), KAPLAN, BOYD, medial e posterior com osteotomia; zona de segurança da cabeça do rádio; artroscopia com distensão pelo ponto fraco, anterolateral distal a 7,2 mm do radial, anteromedial 2 cm distal e 2 cm anterior, NIP em risco na capsulotomia anterior e transposição prévia do ulnar como contraindicação.",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 42,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -14707,8 +14725,18 @@
      "radar": "fundamento"
     },
     {
+     "id": "artroscopia-posicao-distensao-e-indicacoes",
+     "titulo": "Artroscopia: posição, distensão e indicações",
+     "radar": "confirmado"
+    },
+    {
      "id": "artroscopia-os-portais-e-os-nervos-em-risco",
      "titulo": "Artroscopia: os portais e os nervos em risco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artroscopia-liberacao-capsular-e-complicacoes",
+     "titulo": "Artroscopia: liberação capsular e complicações",
      "radar": "confirmado"
     },
     {
@@ -14731,7 +14759,12 @@
     "mao-0535",
     "ombro-cotovelo-0384",
     "mao-0312",
-    "ombro-cotovelo-0568"
+    "ombro-cotovelo-0558",
+    "ombro-cotovelo-0568",
+    "ombro-cotovelo-0521",
+    "ombro-cotovelo-0439",
+    "ombro-cotovelo-0196",
+    "ombro-cotovelo-0432"
    ],
    "treino": [
     "ombro-cotovelo-0659",
@@ -14745,7 +14778,8 @@
     "ombro-cotovelo-0681"
    ],
    "subtemas": [
-    "Anatomia do cotovelo"
+    "Anatomia do cotovelo",
+    "Artroscopia do cotovelo"
    ]
   },
   {
