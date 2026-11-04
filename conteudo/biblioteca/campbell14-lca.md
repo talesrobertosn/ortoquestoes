@@ -1,6 +1,6 @@
 ---
 id: campbell14-lca
-versao: 2
+versao: 3
 titulo: Lesão do ligamento cruzado anterior e o que vem junto
 especialidade: joelho
 acesso: gratis
@@ -8,23 +8,23 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021)
 capitulo: Capítulo 45 · Lesões do joelho (ligamento cruzado anterior, meniscos e exame ligamentar)
 autores: Campbell Clinic (editores Frederick M. Azar e James H. Beaty)
-fonte: Livro conferido localmente em 30/10/2026 (original em inglês), capítulo 45, lido nas seções de estruturas intra-articulares e mecânica (p. 2209 a 2211), meniscos (p. 2211 a 2223), exame e classificação das instabilidades (p. 2229 a 2241) e ligamento cruzado anterior (p. 2282 a 2312), além do capítulo 36 (fratura da eminência tibial, p. 1601 e 1602). As páginas citadas são as impressas.
-subtemas: Lesão do ligamento cruzado anterior
-resumo: Bandas anteromedial (tensa em flexão) e posterolateral (tensa em extensão, freia a hiperextensão); genicular média; 85% da gaveta a 90 graus; estalo e hemartrose (mais de 70%); LACHMAN (95%), pivot shift e artrômetro (3 mm); SEGOND patognomônica, contusões laterais (80%); menisco lateral na lesão aguda, medial na tardia; rampa (edema posteromedial da tíbia); reparo ideal: longitudinal, periférico, agudo, com o LCA; mulheres 2 a 8 vezes, fossa estreita; enxertos comparáveis, patelar mais dor ao ajoelhar e menos tensão; LCA normal não é isométrico; túnel às 12 horas deixa o pivot; dor anterior e déficit de extensão.
+fonte: Livros conferidos localmente em 30/10/2026 e 04/11/2026 (originais em inglês e português). Campbell's Operative Orthopaedics, 14ª ed. (2021), capítulo 45, nas seções de estruturas intra-articulares e mecânica (p. 2209 a 2211), meniscos (p. 2211 a 2223), exame e classificação das instabilidades (p. 2229 a 2241) e ligamento cruzado anterior (p. 2282 a 2312), além do capítulo 36 (fratura da eminência tibial, p. 1601 e 1602). Campbell's Operative Orthopaedics, 15ª ed. (2026), capítulo 50 (Knee Injuries: pata de ganso, p. 1984; via medial e nervo safeno, p. 2028; anatomia do LCA, p. 2064; escolha, posição, tensão e fixação do enxerto, técnicas com patelar e com isquiotibiais, aloenxerto e esterilização, p. 2076 a 2089; resultados, complicações e revisão, p. 2090 a 2094) e capítulo 56 (Arthroscopy of the Knee: Tabela 56.2 e Quadro 56.11, p. 2366 e 2367; técnicas anatômicas de feixe único e dupla banda, p. 2368 a 2379; técnicas na criança, p. 2380 a 2383). Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., capítulos 63 (Lesões meniscoligamentares do joelho), 64 (Artroscopia do joelho) e 79 (Vias de acesso ao membro inferior), edição digital sem página impressa, citada por capítulo. As páginas citadas são as impressas.
+subtemas: Lesão do ligamento cruzado anterior; Reconstrução do LCA: enxertos e túneis
+resumo: Bandas anteromedial (tensa em flexão) e posterolateral (tensa em extensão); genicular média; 85% da gaveta a 90 graus; LACHMAN (95%); SEGOND patognomônica, contusões laterais (80%); menisco lateral na lesão aguda, medial na tardia; rampa; enxertos: patelar rígido e com osso, isquiotibiais quádruplos mais fortes (4.140 N) e de baixa morbidade, mas com o dobro de re-ruptura no jovem; ramo sartorial do safeno e fáscia do sartório na retirada; aloenxerto: cosmética, tempo menor, mecanismo extensor preservado, mas falha 2 a 5 vezes maior no atleta jovem; túnel femoral pela crista do residente e crista bifurcada, baixo na parede (10 ou 2 horas), não às 12; portal anteromedial mais anatômico; fixação é o elo fraco inicial; ligamentização; túnel femoral mal posto é a causa mais citada de falha.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
 O ligamento cruzado anterior é o tema mais estudado da ortopedia esportiva: o próprio Campbell lembra que mais de 400.000 LCAs se rompem por ano nos Estados Unidos, que pelo menos 200.000 reconstruções são feitas por ano, e que nas últimas duas décadas foram publicados mais de 2.000 artigos sobre ele (cap. 45, p. 2282). A discussão hoje não é mais se o joelho deve ser operado, mas qual enxerto usar, onde exatamente colocar os túneis e se o enxerto deve ter uma ou duas bandas.
 
-Este resumo segue o capítulo 45 do Campbell's Operative Orthopaedics, 14ª edição (2021), lido nas partes que a banca cobra: as estruturas intra-articulares e a mecânica do joelho, os meniscos (porque o LCA quase nunca rompe sozinho), o exame ligamentar e a seção inteira do LCA, da anatomia às complicações.
+Este resumo segue o capítulo 45 do Campbell's Operative Orthopaedics, 14ª edição (2021), lido nas partes que a banca cobra: as estruturas intra-articulares e a mecânica do joelho, os meniscos (porque o LCA quase nunca rompe sozinho), o exame ligamentar e a seção inteira do LCA, da anatomia às complicações. Nesta terceira versão, a parte cirúrgica foi refeita com o Campbell's Operative Orthopaedics, 15ª edição (2026), capítulos 50 (lesões do joelho) e 56 (artroscopia do joelho), e com o HEBERT, Ortopedia e Traumatologia, 5ª edição, capítulos 63, 64 e 79: escolha do enxerto, retirada dos flexores, aloenxerto e esterilização, pontos de referência dos túneis, transtibial contra portal anteromedial, fixação, incorporação e falha.
 
 **Quanto e como cai.** O subtema "Lesão do ligamento cruzado anterior" tem mais de trinta questões oficiais no acervo, e elas se distribuem assim:
 
 - **Anatomia e biomecânica das bandas**: qual banda fica tensa em flexão, qual em extensão, quem irriga, quanto o LCA segura da gaveta.
 - **Diagnóstico**: os testes (LACHMAN, gaveta, pivot shift), a fratura de SEGOND, as contusões ósseas, o índice da fossa intercondilar e o risco maior nas mulheres.
 - **Lesões associadas**: os meniscos (qual rompe na lesão aguda, a lesão em rampa, a sutura meniscal ideal), o colateral medial e o canto posterolateral.
-- **Reconstrução**: a escolha do enxerto, a tensão, a posição dos túneis, a isometria e as duas bandas.
+- **Reconstrução** (agora também um subtema próprio, "Reconstrução do LCA: enxertos e túneis"): a escolha do enxerto, a anatomia da retirada dos flexores, o aloenxerto, a tensão, a posição dos túneis, a isometria e as duas bandas.
 - **Complicações**: dor anterior, perda de extensão e a relação entre as duas.
 
 > **Na prova:** banda **anteromedial tensa em FLEXÃO**, **posterolateral tensa em EXTENSÃO**; LCA = **85%** da gaveta a 90 graus; irrigação pela **genicular média**; **LACHMAN** é o mais sensível (**95%**); **SEGOND** é patognomônica; contusões no **côndilo femoral lateral e platô tibial lateral**; na lesão aguda rompe mais o menisco **LATERAL**, nas tardias o **MEDIAL**; o LCA normal **não é isométrico**.
@@ -43,8 +43,6 @@ Pense no LCA como duas cordas presas em pontos diferentes do fêmur. Quando o jo
 
 **Irrigação e inervação.** A irrigação principal vem da **artéria genicular média**, que perfura a cápsula posterior e entra na fossa intercondilar perto da inserção femoral. Há suprimento adicional pelo coxim gorduroso retropatelar, via geniculares inferiores medial e lateral, que ganha importância quando o ligamento está lesado. **As inserções ósseas contribuem pouco** para a vascularização. A inervação vem do **nervo articular posterior**, ramo do tibial; há fibras compatíveis com a transmissão de dor e mecanorreceptores, sobretudo nas inserções (p. 2283). Esses receptores dão ao LCA uma função **proprioceptiva**.
 
-**Resistência.** Um estudo biomecânico abrangente encontrou carga de ruptura de 1.725 ± 269 N, rigidez de 182 ± 33 N/mm e energia absorvida até a falha de 12,8 ± 2,2 N/mm; em espécimes jovens, 2.160 ± 157 N e 242 ± 28 N/mm (p. 2283). O Campbell avisa que esses valores dependem da idade, do ângulo de flexão, da direção e da velocidade da carga.
-
 **O LCA e a rotação.** Os cruzados funcionam como eixos em torno dos quais ocorre a rotação. A rotação externa da tíbia desenrola os cruzados, e a rotação interna os enrola um em volta do outro, sob forte tensão; nos colaterais acontece o oposto (p. 2209 e 2210). É por isso que a rotação interna da tíbia tensiona o LCA, e que o mecanismo clássico de lesão envolve a tíbia rodando em relação ao fêmur.
 
 !questoes central=joelho-0209 relacionadas=joelho-0253,joelho-0298 treino=joelho-0383
@@ -52,6 +50,7 @@ conceito: A banda anteromedial fica tensa em flexão e a posterolateral em exten
 como: O TARO 2012 perguntou a artéria; outra banca e o TARO 2006 perguntaram qual banda fica tensa em flexão e qual em extensão.
 armadilha: Inverter as bandas, dizendo que a anteromedial fica tensa em extensão.
 armadilha: Achar que as inserções ósseas irrigam o ligamento: contribuem pouco.
+alerta: A `joelho-0298` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (Errado).
 !fim
 
 # O mecanismo, a história e o exame {radar=confirmado}
@@ -91,7 +90,7 @@ alerta: O capítulo descreve a instabilidade combinada anterolateral e anteromed
 
 ## Quando o lado lateral também abre
 
-O Campbell traz um número útil para as radiografias com estresse em varo: num estudo em cadáver, LaPRADE e colaboradores mostraram que uma **lesão isolada do colateral lateral** deve ser suspeitada quando a abertura lateral em varo aumenta cerca de **2,7 mm**, e uma **lesão grau III do canto posterolateral**, quando aumenta cerca de **4 mm** (p. 2239). O dial test, que compara a rotação externa da tíbia, deixa de ser confiável quando há instabilidade medial (p. 2238). E um pivot shift reverso significativamente positivo sugere que o cruzado posterior, o complexo arqueado e o colateral lateral estão todos rompidos (p. 2237).
+O Campbell traz um número útil para as radiografias com estresse em varo: num estudo em cadáver, LaPRADE e colaboradores mostraram que uma **lesão isolada do colateral lateral** deve ser suspeitada quando a abertura lateral em varo aumenta cerca de **2,7 mm**, e uma **lesão grau III do canto posterolateral**, quando aumenta cerca de **4 mm** (p. 2239).
 
 Sobre as instabilidades combinadas, o Campbell diz que **a instabilidade combinada anterolateral e anteromedial é a mais comum**; a gaveta em rotação neutra é muito positiva, com os dois côndilos tibiais indo para a frente (p. 2241).
 
@@ -117,34 +116,31 @@ Por que a cápsula lateral? No mecanismo clássico, a tíbia roda internamente e
 
 **A ressonância** é o exame mais útil, com acurácia relatada de 70% a 100%, e trabalhos mais recentes falam em 95% a 100%. Como o LCA cruza o joelho num ângulo oblíquo, ele raramente aparece inteiro num único corte sagital verdadeiro; VELLET propôs um plano não ortogonal, obtido com **rotação externa do joelho de cerca de 15 graus**, que costuma mostrar o ligamento inteiro (p. 2283 e 2284).
 
-**As contusões ósseas** aparecem na ressonância em **80%** das lesões do LCA, principalmente no **côndilo femoral lateral** e no **platô tibial lateral** (p. 2284). É o retrato do mesmo mecanismo: na subluxação, o côndilo femoral lateral bate na parte de trás do platô tibial lateral, e os dois ossos ficam machucados no ponto de contato. Num estudo de 525 pacientes, as contusões não se associaram a dor ou sintomas depois da reconstrução; os únicos fatores ligados a elas foram a idade mais jovem e não estar saltando no momento da lesão.
+**As contusões ósseas** aparecem na ressonância em **80%** das lesões do LCA, principalmente no **côndilo femoral lateral** e no **platô tibial lateral** (p. 2284). É o retrato do mesmo mecanismo: na subluxação, o côndilo femoral lateral bate na parte de trás do platô tibial lateral, e os dois ossos ficam machucados no ponto de contato.
 
 !figura 45.94 imagem=joelho/campbell14-45-94-contusao.jpeg
 Contusão óssea na ressonância depois da ruptura do LCA, presente em 80% dos casos, sobretudo no côndilo femoral lateral e no platô tibial lateral (Campbell, cap. 45, Fig. 45.94, p. 2284).
 !fim
-
-As lesões osteocondrais aparecem em 21% a 31% dos joelhos examinados depois da lesão inicial e são classificadas na ressonância como geográficas, reticulares ou lineares; as reticulares, que não tocam a cortical, em geral desaparecem entre 6 e 12 meses (p. 2285). Radiografias com estresse quase não são usadas hoje, exceto para avaliar lesões crônicas do cruzado posterior que parecem cicatrizadas na ressonância (p. 2284).
 
 !questoes central=joelho-0188 relacionadas=joelho-0021,joelho-0282 treino=joelho-0385
 conceito: A fratura de SEGOND é a avulsão da cápsula lateral da tíbia, patognomônica de lesão do LCA; as contusões ósseas aparecem em 80%, no côndilo femoral lateral e no platô tibial lateral; a ressonância com rotação externa de 15 graus mostra o ligamento inteiro.
 como: O TEOT 2025 mostrou a radiografia com a seta no fragmento; o TARO 2017 perguntou de onde é a avulsão; o TARO 2007 perguntou o achado característico da ressonância na lesão aguda.
 armadilha: Confundir SEGOND com PELLEGRINI-STIEDA (calcificação do colateral medial) ou com o sinal arqueado (avulsão da cabeça da fíbula, canto posterolateral).
 armadilha: Colocar a contusão típica no côndilo femoral medial.
+alerta: A `joelho-0282` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (contusão óssea no côndilo femoral lateral).
 !fim
 
 # Quem rompe: mulheres, fossa estreita e tíbia inclinada {radar=confirmado}
 
-**Mulheres atletas.** Os dados da vigilância de lesões da NCAA e outros estudos mostram taxas de lesão do LCA significativamente maiores em mulheres no **futebol, basquete e rúgbi**, de **duas a oito vezes** as dos homens. Os fatores podem ser **extrínsecos** (movimento do corpo, força muscular, interface entre calçado e solo, nível de habilidade) ou **intrínsecos** (frouxidão articular, influências hormonais, alinhamento do membro, dimensões da fossa intercondilar e tamanho do ligamento). Os hormônios femininos (estrogênio, progesterona e relaxina) oscilam durante o ciclo e aumentariam a frouxidão e reduziriam o desempenho neuromuscular (p. 2285). HEWETT mostrou, em 205 atletas, que as que romperam o LCA aterrissavam de saltos com 8 graus a mais de abdução do joelho e 2,5 vezes mais momento em abdução: o famoso **valgo dinâmico** (p. 2286).
+**Mulheres atletas.** Os dados da NCAA mostram taxas de lesão do LCA de **duas a oito vezes** as dos homens no **futebol, basquete e rúgbi**. Os fatores são **extrínsecos** (movimento, força, calçado e solo, habilidade) ou **intrínsecos** (frouxidão, hormônios, alinhamento, fossa intercondilar, tamanho do ligamento) (p. 2285). HEWETT mostrou que as atletas que romperam o LCA aterrissavam com 8 graus a mais de abdução do joelho: o **valgo dinâmico** (p. 2286).
 
-**A fossa intercondilar.** Vários estudos mostraram que atletas com lesão sem contato têm **estenose da fossa intercondilar**. SOURYAL e FREEMAN criaram o **índice da largura da fossa**: a largura da fossa dividida pela largura do fêmur distal na altura do sulco poplíteo, numa radiografia em túnel. O normal é **0,231 ± 0,044**. **O índice dos homens é maior que o das mulheres**, e as lesões sem contato foram mais frequentes em atletas com índice pelo menos um desvio-padrão abaixo da média. SHELBOURNE mostrou que as mulheres tinham fossas mais estreitas, mas a taxa de ruptura do enxerto foi igual entre os sexos, provavelmente porque foi feita a plastia da fossa (p. 2285).
+**A fossa intercondilar.** Atletas com lesão sem contato têm **estenose da fossa**. O **índice da largura da fossa** de SOURYAL e FREEMAN divide a largura da fossa pela do fêmur distal na altura do sulco poplíteo, na radiografia em túnel; o normal é **0,231 ± 0,044**. **O índice dos homens é maior que o das mulheres**, e as lesões sem contato foram mais frequentes com índice um desvio-padrão abaixo da média (p. 2285). O HEBERT (cap. 63) usa a mesma medida e diz que, abaixo de 0,2, a evolução para instabilidade anterior é muito mais provável.
 
 !figura 45.95 imagem=joelho/campbell14-45-95-indice-fossa.jpeg
 Índice da largura da fossa intercondilar: largura da fossa dividida pela largura do fêmur distal na altura do sulco poplíteo, medida na radiografia em túnel (Campbell, cap. 45, Fig. 45.95, p. 2285).
 !fim
 
 **A inclinação posterior da tíbia.** Um slope posterior maior desloca para a frente a posição de repouso da tíbia e aumenta a força no LCA, e se correlaciona com mais translação anterior. Num estudo de falhas precoces da reconstrução, o slope lateral médio foi de 8,4 graus, contra 6,5 nos controles; cada 2 graus a mais aumentaram o risco de falha (razão de chances de 1,6, chegando a 3,8 com 6 graus). Um slope 5 graus maior produz cerca de 2 mm a mais de translação anterior na marcha (p. 2286).
-
-**Outros fatores.** Um índice do côndilo femoral lateral acima de 63% se associou a risco maior de lesão (p. 2286). A frouxidão articular é fator de risco para a lesão e para resultados piores (p. 2284). Os programas de prevenção funcionam melhor quando juntam pliometria, equilíbrio e fortalecimento, mais de uma vez por semana, por pelo menos 6 semanas (p. 2286).
 
 !questoes central=joelho-0032 treino=joelho-0386
 conceito: Mulheres atletas têm de 2 a 8 vezes mais lesões do LCA; têm fossa intercondilar mais estreita (índice menor), e a fossa estreita se associa à lesão sem contato.
@@ -160,7 +156,7 @@ Por que o lateral na lesão aguda? Volte ao mecanismo: na subluxação, o côndi
 
 ## A anatomia e a mecânica que explicam as lesões
 
-Os meniscos funcionam como enchimento articular, distribuem líquido sinovial, absorvem impacto, aprofundam a articulação, estabilizam (sobretudo contra a rotação) e transmitem carga. Sem o menisco medial, a área de contato cai cerca de 40%: com o menisco, ela é 2,5 vezes maior (p. 2211). O menisco **lateral** é menor em diâmetro, mais espesso na periferia, mais largo no corpo e **mais móvel**; o **medial**, preso à cápsula por toda a periferia, é menos móvel, o que talvez explique por que se lesa mais (p. 2210 e 2211).
+Os meniscos estabilizam, sobretudo contra a rotação, e transmitem carga (p. 2211). O menisco **lateral** é menor em diâmetro, mais espesso na periferia, mais largo no corpo e **mais móvel**; o **medial**, preso à cápsula por toda a periferia, é menos móvel, o que talvez explique por que se lesa mais (p. 2210 e 2211).
 
 **Vascularização.** Os meniscos são quase avasculares, exceto perto da fixação periférica. Um plexo capilar perimeniscal supre os **10% a 25%** periféricos; a profundidade da penetração vascular é de 10% a 30% da largura do menisco medial e de 10% a 25% do lateral (p. 2213 e 2214). No corno posterolateral do menisco lateral há uma área sem vasos, onde passa o tendão do poplíteo.
 
@@ -181,6 +177,7 @@ conceito: Lesão meniscal acompanha 50% a 70% das lesões agudas do LCA; o later
 como: O TARO 2011 e o TARO 2006 perguntaram a lesão associada mais comum na lesão aguda; o TARO 2016, o tipo mais comum; o TARO 2010, a lesão traumática mais comum do lateral; o TARO 2014 e o TARO 2011, a lesão que dói do outro lado; o TEOT 2022 mostrou a alça de balde do lateral com o LCA rompido.
 armadilha: Escolher o menisco medial para a lesão aguda: ele é o das lesões tardias.
 armadilha: Atribuir ao lateral a alça de balde típica: ela é sobretudo do medial; o lateral tem mais transversas incompletas.
+alerta: A `joelho-0311` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (Errado).
 !fim
 
 # A lesão em rampa {radar=confirmado}
@@ -188,8 +185,6 @@ armadilha: Atribuir ao lateral a alça de balde típica: ela é sobretudo do med
 As lesões em rampa são variantes da lesão do **corno posterior periférico do menisco medial**, **quase sempre associadas à ruptura do LCA**. O termo descrevia a separação da **junção meniscocapsular posterior**, mas também é usado para a ruptura do **ligamento meniscotibial** e para lesões na zona vermelha-vermelha do corno posterior. A incidência varia de 3% a 13% na maioria dos relatos, e estudos recentes falam em 24% a 42%. DePHILLIPO diagnosticou rampa em 17% de 301 reconstruções do LCA, e **menos da metade apareceu na ressonância pré-operatória**. **Um edema ósseo posteromedial da tíbia foi sinal secundário de rampa em 72% dos pacientes**. Idade mais jovem é fator de risco citado (p. 2221).
 
 Por isso o Campbell avisa que lesões meniscocapsulares como a rampa **não são bem detectadas pela ressonância e devem ser procuradas na artroscopia** (p. 2218). A lógica do sinal indireto é a mesma das contusões: o canto posteromedial da tíbia bate contra o fêmur durante a subluxação, a junção meniscocapsular se rasga, e o osso ali fica com edema.
-
-O Campbell também relata que reparar as lesões meniscocapsulares e meniscotibiais depois da reconstrução do LCA não restaurou a rotação interna e externa acima de 30 graus num estudo biomecânico, e que preservar os meniscos, sobretudo o medial, melhora a estabilidade quando associado à reconstrução (p. 2220).
 
 !questoes central=joelho-0180 relacionadas=joelho-0170
 conceito: A rampa é a lesão do corno posterior periférico do menisco medial na junção meniscocapsular ou no ligamento meniscotibial, quase sempre com o LCA; o edema ósseo posteromedial da tíbia é sinal secundário em 72%, e a ressonância deixa passar mais da metade.
@@ -207,26 +202,26 @@ armadilha: Atribuir o edema posteromedial à própria lesão do LCA: as contusõ
 
 **Quando não operar.** Uma lesão meniscal incompleta ou uma **lesão periférica pequena (10 mm) e estável, sem outra lesão como um LCA rompido**, pode ser tratada sem cirurgia com bons resultados previsíveis; lesões periféricas pequenas e estáveis cicatrizam com 3 a 6 semanas de proteção (p. 2219). Repare na condição: "sem LCA rompido". Com o LCA lesado e o joelho instável, a lesão não está protegida.
 
-**Os resultados.** Lesões complexas (80%) e em alça de balde (47%) tiveram taxas de falha maiores que as simples. Uma série de reparo isolado aberto teve 17 de 18 bons resultados em 21 anos, mas re-ruptura de cerca de 30% (p. 2220).
-
 !questoes central=joelho-0071 relacionadas=joelho-0051,joelho-0304
 conceito: A sutura meniscal ideal é na lesão aguda, de 1 a 2 cm, longitudinal, periférica, feita junto com a reconstrução do LCA no jovem; lesão periférica pequena e estável sem LCA rompido pode ficar sem cirurgia.
 como: Outra banca perguntou as situações ideais para a cicatrização; o TEOT 2022 perguntou qual lesão suturar numa mulher de 45 anos com entorse antigo; o TARO 2006 perguntou sobre uma lesão vertical vermelha-vermelha menor que 10 mm vista na reconstrução.
 armadilha: Achar que a lesão radial tem a mesma chance de cicatrizar: a longitudinal periférica é a melhor.
 armadilha: Achar que o LCA rompido atrapalha a sutura: ela é feita junto com a reconstrução e cicatriza melhor nesse cenário.
+armadilha: Achar que toda lesão vista na reconstrução precisa de ponto: a lesão periférica pequena (até 10 mm) e estável tem bom prognóstico sem sutura.
+alerta: `joelho-0304` não tem gabarito oficial; o gabarito pela bibliografia da questão (Rockwood, 5ª ed.) é B (Errado), a resposta provável: a lesão vertical vermelha-vermelha menor que 10 mm, estável, pode ficar sem sutura durante a reconstrução. O Campbell não trata dessa situação exata: diz que a lesão periférica pequena e estável cicatriza sem cirurgia quando não há LCA rompido (p. 2219) e que a sutura ideal é a de 1 a 2 cm feita com o LCA (p. 2220); como a reconstrução devolve a estabilidade, os dois textos apontam para a mesma resposta.
 !fim
 
 # A história natural e a decisão de operar {radar=fundamento}
 
-**O que acontece sem o LCA.** Está bem documentado que quem volta ao esporte com o joelho sem LCA e tem episódios repetidos de falseio acaba com lesões meniscais e osteocondrais que levam à artrose. Os resultados do tratamento não operatório foram desanimadores, em parte pelas lesões associadas (p. 2284). Numa coorte de 964 pacientes acompanhados por 13,7 anos, o tratamento não operatório ou a reconstrução tardia tiveram mais lesões meniscais secundárias, mais artrose e, no grupo não operado, mais artroplastia total. Por outro lado, van YPEREN mostrou que, quando o tratamento era escolhido pela resposta a 3 meses de reabilitação, não houve diferença de artrose aos 20 anos (p. 2285). NEUMAN não encontrou relação entre lesão osteocondral inicial e artrose em 15 anos, mas a **meniscectomia** foi um fator de risco potente: todos os 16% com artrose tinham feito meniscectomia (p. 2285).
+**O que acontece sem o LCA.** Quem volta ao esporte com o joelho sem LCA e falseia repetidamente acumula lesões meniscais e osteocondrais que levam à artrose (p. 2284). Numa coorte de 964 pacientes em 13,7 anos, o tratamento não operatório ou a reconstrução tardia tiveram mais lesões meniscais secundárias e mais artrose; NEUMAN mostrou que a **meniscectomia** foi o fator de risco potente para artrose em 15 anos (p. 2285).
 
-**A série de DANIEL.** Em 236 pacientes com joelho instável no KT-1000, **19%** optaram pela reconstrução precoce, **20%** precisaram de reconstrução tardia e **61%** conseguiram conviver com a lesão, embora muitos com sintomas. Três fatores do primeiro exame previram a necessidade de cirurgia: **idade mais jovem, horas de esporte antes da lesão e quantidade de instabilidade anterior** no artrômetro (p. 2286). O tratamento não operatório é opção para quem aceita mudar o estilo de vida e evitar as atividades que causam falseio, com reabilitação intensa e orientação; a órtese funcional não reduziu significativamente a nova lesão no retorno a esporte de alto nível.
+**A série de DANIEL.** Em 236 pacientes instáveis no KT-1000, **19%** optaram pela reconstrução precoce, **20%** precisaram de reconstrução tardia e **61%** conviveram com a lesão. Previram a cirurgia: **idade mais jovem, horas de esporte e instabilidade anterior** no artrômetro (p. 2286). O HEBERT (cap. 63) resume o mesmo raciocínio: quem quer manter o esporte deve reconstruir, porque os falseios sucessivos lesam meniscos e cartilagem.
 
 **Quando operar.** O Campbell prefere adiar a reconstrução até o paciente se recuperar da lesão inicial: a resolução da inflamação e o retorno do movimento completo reduzem a rigidez pós-operatória (p. 2292).
 
 **O reparo do próprio LCA.** O reparo primário de lesões no meio do ligamento falhava de rotina, o que levou à reconstrução. Hoje há interesse renovado em reparar lesões **proximais** com reforço interno, sobretudo em crianças; mas uma série de adolescentes teve falha 10,66 vezes maior com o reparo que com a reconstrução (48,8% contra 4,7% em 3 anos), e a viabilidade a longo prazo ainda é desconhecida (p. 2287).
 
-**A avulsão da eminência tibial.** Quando o LCA arranca um fragmento ósseo da tíbia, o reparo agudo é apropriado: o fragmento é reduzido e fixado com suturas por túneis ou com parafuso. É essencial limpar o coágulo do leito, senão o ligamento fica frouxo. A frouxidão anterior objetiva residual aparece em 50% a 90%, mas a instabilidade funcional é rara; perda da fixação e **rigidez** são complicações, e começar o movimento até 4 semanas reduz a artrofibrose (p. 2287 e 2288). No capítulo de fraturas da criança, o Campbell completa: as fraturas da eminência intercondilar respondem por 2% a 5% das lesões do joelho com derrame em crianças e adolescentes e são classificadas por MEYERS e McKEEVER (tipo I sem desvio; tipo II com o fragmento elevado na frente e dobradiça posterior; tipos III e IV com desvio completo, inteiro ou cominuto). A **consolidação viciosa** é mais comum quando o diagnóstico atrasa e **pode bloquear a extensão; trata-se com desbridamento do fragmento elevado ou com plastia da fossa femoral (intercondiloplastia)**; se a consolidação viciosa trouxer frouxidão e instabilidade, considera-se revisão ou reconstrução do LCA. Começar o movimento cedo reduziu a artrofibrose de 36% para 0% nas fraturas operadas (cap. 36, p. 1601 e 1602).
+**A avulsão da eminência tibial.** O reparo agudo é apropriado, com suturas por túneis ou parafuso, limpando o coágulo do leito; perda da fixação e **rigidez** são complicações (p. 2287 e 2288). As fraturas da eminência são classificadas por MEYERS e McKEEVER; a **consolidação viciosa** é mais comum quando o diagnóstico atrasa e **pode bloquear a extensão: trata-se com desbridamento do fragmento elevado ou com plastia da fossa femoral (intercondiloplastia)**; se trouxer frouxidão e instabilidade, considera-se reconstrução do LCA (cap. 36, p. 1601 e 1602).
 
 **O LCA no joelho com artrose.** O capítulo do LCA não trata das indicações de osteotomia e de artroplastia unicompartimental no joelho com LCA deficiente; essas questões ficam ligadas aqui com esse aviso.
 
@@ -239,65 +234,178 @@ alerta: As contraindicações clássicas da artroplastia unicompartimental (`joe
 
 # A escolha do enxerto {radar=confirmado}
 
-**O ponto de partida.** O autoenxerto é o mais usado. Tem baixo risco de reação inflamatória e praticamente nenhum risco de transmitir doença. Como enxerto biológico, passa por revascularização e recolagenização, mas **perde cerca de 50% da resistência logo depois de implantado**; por isso convém começar com um enxerto mais forte que o tecido que ele substitui. As escolhas mais comuns hoje são o **osso-tendão patelar-osso**, o **tendão dos isquiotibiais quádruplo** e o **tendão do quadríceps**, com ou sem bloco ósseo da patela; este último virou alternativa sobretudo nas revisões e nas lesões multiligamentares (cap. 45, p. 2292).
+**O ponto de partida.** O autoenxerto é o mais usado. Tem baixo risco de reação inflamatória e praticamente nenhum risco de transmitir doença. Como enxerto biológico, passa por revascularização e recolagenização, mas **perde cerca de 50% da resistência logo depois de implantado**; por isso convém começar com um enxerto mais forte que o tecido que ele substitui. As escolhas mais comuns são o **osso-tendão patelar-osso**, o **tendão dos isquiotibiais quádruplo** e o **tendão do quadríceps**, com ou sem bloco ósseo da patela (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2076; o texto é o mesmo da 14ª ed., p. 2292).
 
-**Por que os isquiotibiais cresceram.** O uso do enxerto de isquiotibiais aumentou nos últimos anos **pela morbidade relativamente baixa da área doadora** (p. 2292). A preocupação com fraqueza da flexão não se confirmou na maioria dos estudos aos 2 anos, talvez porque os tendões se regeneram, como mostram estudos de ressonância; houve fraqueza medida só em flexões de 70 graus ou mais.
+**Resistência e rigidez.** A tabela de cargas do capítulo de artroscopia explica por que se dobram os flexores. Um fio só não basta: o semitendíneo tem 75% e o grácil 49% da resistência do LCA; dobrados em três ou quatro fios, somam cerca de 4.100 N (cap. 50, Tabela 50.4, p. 2076).
 
-**O que mostram as comparações.** A maioria dos investigadores relata resultados comparáveis entre o patelar e os isquiotibiais quádruplos. Na revisão sistemática de SPINDLER, de nove ensaios randomizados:
-
-- um pouco mais de **frouxidão** no artrômetro com os **isquiotibiais** em três de sete estudos;
-- **mais dor ao ajoelhar** com o **patelar** em todos os quatro estudos que a avaliaram;
-- mais dor anterior com o patelar em apenas um de nove estudos;
-- nenhum estudo com diferença significativa de falha do enxerto: **3,1% no patelar e 4,1% nos isquiotibiais** (p. 2292).
-
-Outras metanálises mostraram que a instabilidade não difere entre os dois e que os isquiotibiais têm menos crepitação patelofemoral, dor ao ajoelhar e perda de extensão. Aos 17 anos, mais pacientes com isquiotibiais tinham frouxidão acima de 3 mm, e mais pacientes com patelar tinham artrose de grau maior. **Os registros norueguês e dinamarquês mostraram risco maior de revisão com os isquiotibiais**, com razões de risco de 1,41 a 2,3, embora os dois enxertos deem bons resultados (p. 2307). Num registro, cada 0,5 mm a mais de diâmetro do enxerto de isquiotibiais, de 7 a 9 mm, reduziu a chance de revisão; o enxerto deve ter **pelo menos 8 mm** (p. 2307). Outro estudo achou mais revisão em homens, com isquiotibiais, com IMC abaixo de 30 e com aloenxerto abaixo dos 40 anos (p. 2308).
-
-**O aloenxerto.** Vantagens: nenhuma morbidade doadora, cirurgia mais curta, incisões menores e mais disponibilidade. Elas foram em parte ofuscadas pelo **risco de transmissão de doença**; a infecção profunda, porém, foi muito rara (0,15%) numa revisão de mais de 10.000 aloenxertos (p. 2304). Os piores resultados aparecem em **jovens ativos**: numa série com aloenxerto de tibial anterior, a falha foi de **55% abaixo dos 25 anos**, contra 24% acima; o estudo MOON também mostrou mais falha com aloenxerto em atletas jovens, e num ensaio randomizado houve 8,3% de falha com autoenxerto de isquiotibiais contra 26,5% com aloenxerto em 10 anos (p. 2305). Irradiação acima de 1,8 Mrad, alguns processamentos, idade jovem e sexo masculino aumentaram a falha (p. 2304). Reforçar isquiotibiais finos com aloenxerto não reduziu a falha e talvez a tenha aumentado (p. 2305).
-
-**Os sintéticos.** Teriam a vantagem de não sacrificar tecido do paciente, mas não são muito usados nos Estados Unidos (p. 2303); quando falham, devem ser retirados em bloco para não fragmentar (p. 2312).
-
-!tabela Enxertos do LCA (Campbell, cap. 45, p. 2292 e 2303 a 2308)
-| Enxerto | A favor | Contra |
+!tabela Carga de ruptura e rigidez dos enxertos (Campbell 15ª ed., cap. 56, Tabela 56.2, p. 2366)
+| Estrutura | Carga de ruptura (N) | Rigidez (N/mm) |
 |---|---|---|
-| Patelar (osso-tendão-osso) | consolidação osso com osso; menos frouxidão em alguns estudos | mais dor ao ajoelhar; perda de extensão e crepitação mais frequentes |
-| Isquiotibiais quádruplos | BAIXA MORBIDADE DOADORA; menos dor ao ajoelhar | um pouco mais de frouxidão; mais revisão nos registros; precisa de pelo menos 8 mm |
-| Tendão do quadríceps | alternativa nas revisões e lesões multiligamentares | |
-| Aloenxerto | sem morbidade doadora, cirurgia mais curta | doença transmissível; falha alta no jovem (55% abaixo de 25 anos numa série) |
+| LCA nativo | 2.160 | 242 |
+| LCP nativo | 1.867 | não informada |
+| Tendão patelar | 2.977 | 455 |
+| Isquiotibiais quádruplos (semitendíneo e grácil) | 4.140 | 807 |
+| Tendão do quadríceps | 2.353 | 326 |
 !fim
 
-!questoes central=joelho-0080 relacionadas=joelho-0003 treino=joelho-0387,joelho-0317
-conceito: Os isquiotibiais ganharam espaço pela baixa morbidade doadora; patelar e isquiotibiais têm resultados comparáveis, com mais dor ao ajoelhar no patelar e um pouco mais de frouxidão e de revisão nos registros com os isquiotibiais; o aloenxerto falha mais no jovem.
+Repare no paradoxo: o enxerto mais forte e mais rígido no laboratório (os isquiotibiais quádruplos) não é o que menos falha na clínica. A tabela mede o enxerto preso numa máquina; no joelho, o que decide nas primeiras semanas é a fixação e a cicatrização do tendão no túnel. O próprio Campbell lista como desvantagem dos flexores a **cicatrização do tendão dentro do túnel ósseo e a falta de fixação óssea rígida**, e lembra que a **fluência (creep) e o relaxamento são mais frequentes com os isquiotibiais** do que com o patelar ou o quadricipital (cap. 50, p. 2076; cap. 56, p. 2366).
+
+**O patelar.** De 8 a 11 mm de largura, tirado do terço central com blocos da patela e da tuberosidade; dá fixação rígida osso com osso; o preço é a **dor ao ajoelhar**, a **tendinite patelar** (mais com enxertos largos) e a **fratura aguda ou tardia da patela** quando o corte é profundo demais (cap. 50, p. 2076; cap. 56, p. 2366). Na técnica do Campbell, o bloco patelar tem 5 mm de espessura, 10 mm de largura e 2 a 2,5 cm de comprimento, e o tibial, 8 mm de espessura; se o tendão tiver menos de 30 mm de largura, usa-se só o terço central (p. 2080 e 2081). Na artroscopia, retira-se 10 mm ou um terço do tendão, o que for menor (p. 2368).
+
+**Os isquiotibiais.** Ganharam espaço **pela morbidade relativamente baixa da área doadora** (p. 2076). A 15ª edição traz o contrapeso: o estudo MOON mostrou **re-ruptura duas vezes maior com isquiotibiais que com patelar** (p. 2076), e, entre 14 e 22 anos, **2,1 vezes mais falha** (cap. 56, p. 2367). O enxerto deve ter **pelo menos 8 mm**: cada 0,5 mm a mais, entre 7 e 9 mm, reduziu a chance de revisão (p. 2090.e1). Os registros norueguês e dinamarquês também mostraram mais revisão com isquiotibiais (razões de risco de 1,41 a 2,3).
+
+**O quadricipital.** Tirado com um pedaço de osso da patela ou só como partes moles, com 2.352 N; é alternativa sobretudo na revisão e nas lesões multiligamentares. Os dados recentes mostram **o dobro de re-ruptura ou revisão em comparação com o patelar** (11,1% em 2 anos) e **fraqueza significativa do quadríceps aos 7 meses** (cap. 50, p. 2076 e 2090; cap. 56, p. 2379).
+
+**O que mostram as comparações.** Na revisão de SPINDLER, de nove ensaios, houve um pouco mais de **frouxidão** com os **isquiotibiais**, **mais dor ao ajoelhar** com o **patelar** e falha semelhante: **3,1% no patelar e 4,1% nos isquiotibiais** (14ª ed., p. 2292). As metanálises dão ao patelar mais LACHMAN e pivot normais e menos perda de flexão, e aos isquiotibiais menos crepitação, dor ao ajoelhar e perda de extensão (15ª ed., p. 2090.e1).
+
+**Onde os livros divergem.** O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 64), diz que aos 2 anos a avaliação funcional é idêntica entre flexores e patelar, com diferença só no KT-1000, e mede o déficit inicial em **10% da força de flexão** com os flexores e **10% do extensor** com o patelar, com dor no polo inferior da patela por até 12 meses. O Campbell fala em fraqueza que **chega a 20%** com a retirada de dois flexores (cap. 56, p. 2366). O HEBERT (cap. 63) chama o patelar de **técnica mais usual, testada por décadas**; o Campbell chega lá pela re-ruptura: o **patelar falha menos no jovem atleta** (cap. 56, p. 2366 e 2367). Mas o HEBERT dá uma vantagem aos flexores: são **mais fáceis de alocar na posição anatômica do fêmur**, porque o tarugo do patelar, de 20 a 30 mm, é difícil de alinhar ao túnel (cap. 64).
+
+!tabela Enxertos do LCA lado a lado (Campbell 14ª ed. p. 2292 e 2307; 15ª ed. cap. 50 p. 2076 e cap. 56 p. 2366 e 2367; HEBERT cap. 63 e 64)
+| Enxerto | A favor | Contra |
+|---|---|---|
+| Patelar (osso-tendão-osso) | fixação rígida osso com osso; menos re-ruptura no jovem atleta; a mais usual (HEBERT) | dor ao ajoelhar; tendinite patelar; fratura da patela; tarugo difícil de alinhar no túnel anatômico |
+| Isquiotibiais quádruplos | BAIXA MORBIDADE DOADORA; 4.140 N e 807 N/mm; fáceis de pôr na posição anatômica | o dobro de re-ruptura (MOON); fluência; cicatrização tendão-túnel; precisa de 8 mm ou mais |
+| Tendão do quadríceps | alternativa na revisão e nas multiligamentares | o dobro de re-ruptura que o patelar; fraqueza do quadríceps aos 7 meses |
+| Aloenxerto | sem morbidade doadora, cirurgia mais curta | falha 2 a 5 vezes maior no atleta jovem; doença transmissível |
+!fim
+
+!questoes central=joelho-0080 relacionadas=joelho-0003 treino=joelho-0387
+conceito: Os isquiotibiais ganharam espaço pela baixa morbidade doadora e são mais fáceis de pôr na posição anatômica do fêmur, mas têm o dobro de re-ruptura em relação ao patelar no MOON e mais revisão nos registros; o aloenxerto falha mais no jovem.
 como: Outra banca perguntou a vantagem dos isquiotibiais; o TARO 2020 perguntou a taxa de ruptura e o posicionamento femoral com o enxerto quádruplo de flexores.
-armadilha: Achar que os isquiotibiais dão mais estoque para revisão ou cicatrizam mais rápido no túnel: a vantagem citada é a baixa morbidade doadora.
-alerta: O Campbell mostra falha semelhante nos ensaios (3,1% contra 4,1%) e mais revisão com isquiotibiais nos registros, mas não fala de posicionamento femoral melhor com esse enxerto (`joelho-0003`); o gabarito oficial foi preservado.
+armadilha: Achar que os isquiotibiais dão mais estoque para revisão ou cicatrizam mais rápido no túnel: a cicatrização do tendão no túnel é justamente uma desvantagem.
+armadilha: Confundir resistência na máquina (os flexores quádruplos são os mais fortes) com taxa de re-ruptura na clínica (maior com os flexores).
+!fim
+
+# A retirada dos flexores: pata de ganso, sartório e safeno {radar=confirmado}
+
+**A anatomia que o cirurgião encontra.** A **pata de ganso** é a inserção conjunta do **sartório, do grácil e do semitendíneo** na face medial proximal da tíbia. São flexores primários do joelho, rotadores internos secundários, e protegem contra o estresse rotatório e em valgo; num estudo em cadáver, cortar o semitendíneo, com ou sem o grácil, aumentou a frouxidão em valgo a 0 e 30 graus, sobretudo quando o ligamento oblíquo posterior também estava seccionado (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 1984).
+
+As três estruturas estão em planos diferentes. O sartório é o mais superficial: o que se vê primeiro é a **fáscia do sartório**, que cobre os outros dois. Por baixo dela correm o **grácil** e, logo abaixo (distal), o **semitendíneo**. A técnica do Campbell descreve o semitendíneo como **o componente mais baixo da pata de ganso**, posteromedial, com o grácil **logo proximal** a ele; o semitendíneo se reconhece pela **inserção em Y** na tíbia anteromedial e na crista tibial, muitas vezes misturada à fáscia da perna (cap. 50, técnica 50.23, p. 2085).
+
+**O passo a passo.** Na técnica de AZAR e MILLER, faz-se uma incisão de 3 cm, 6 cm abaixo do planalto anteromedial e 3 cm medial à tuberosidade; **disseca-se até a fáscia do sartório e ela é levantada do colateral medial superficial em L invertido**; com uma pinça de ângulo reto, separa-se o grácil do semitendíneo; os dois são soltos do sartório na inserção, retirados com o extrator de tendão, e no fim **a fáscia do sartório é reparada** (cap. 56, técnica 56.23, p. 2383). É exatamente o que mostra a figura clássica de prova: a estrutura larga e superficial afastada é o sartório, e o extrator entra nos tendões que estavam por baixo.
+
+**Dois cuidados que viram complicação.**
+
+- **Enxerto curto.** Antes de passar o extrator, liberam-se todas as aderências fasciais; senão, o extrator corta o tendão antes da hora e o enxerto fica curto demais (cap. 50, p. 2085 e 2086). Enxerto curto aparece entre as complicações intraoperatórias da Tabela 50.6 (p. 2091).
+- **O nervo safeno.** O Campbell manda evitar o **ramo sartorial do nervo safeno** na retirada (p. 2085) e lembra que a lesão do safeno pela retirada "pode ser danosa" (cap. 56, p. 2366). Na via medial, o ramo sartorial **sai entre o sartório e o grácil** e dá a sensibilidade da face medial da perna até o tornozelo; os **ramos infrapatelares** nem sempre podem ser preservados (cap. 50, p. 2028). O HEBERT (cap. 79) descreve o ramo infrapatelar acompanhando a **borda dorsal do sartório** e perfurando a fáscia **entre o sartório e o grácil** para se tornar cutâneo, e pede atenção a ele em toda incisão anteromedial.
+
+Por que o safeno está tão perto? Ele desce junto da borda do sartório e fica cutâneo entre o sartório e o grácil, bem onde a incisão da pata de ganso é feita.
+
+**Preparo e túnel.** O túnel tibial tem o mesmo diâmetro do enxerto, em geral 7 a 8 mm dobrado; a equipe do Campbell fresa 2 mm menor e dilata, o que melhora a fixação. Soltar a inserção tibial por completo evita que o enxerto "escorregue" depois de tensionado (p. 2086).
+
+!questoes central=joelho-0152
+conceito: Na retirada dos flexores, a fáscia do sartório (a camada mais superficial da pata de ganso) é levantada e afastada para expor o grácil e, logo abaixo, o semitendíneo, que saem com o extrator; o ramo sartorial do safeno sai entre o sartório e o grácil.
+como: Outra banca mostrou o desenho da retirada com o extrator e perguntou qual tendão estava sendo afastado.
+armadilha: Responder grácil ou semitendíneo: são os tendões retirados, não o afastado.
+armadilha: Responder semimembranáceo: ele não faz parte da pata de ganso; insere-se no canto posteromedial.
+!fim
+
+# O aloenxerto: quando usar, por que falha e como se esteriliza {radar=confirmado}
+
+**As vantagens que a banca cobra.** O Quadro 56.11 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 56, p. 2367), lista: **menos morbidade pós-operatória**, **melhor efeito cosmético**, **menor tempo cirúrgico** e **preservação do mecanismo extensor**, sem a tendinite e a condromalácia que podem seguir a retirada do patelar. No capítulo 50 entram ainda as incisões menores e a disponibilidade; na revisão, a ausência de limite de tamanho (p. 2088 e 2092).
+
+**A desvantagem que decide.** **A falha é de 2 a 5 vezes a do autoenxerto em atletas e jovens** (Quadro 56.11). Com tendão tibial anterior em jovens ativos, a reoperação chegou a 38% num estudo, e a falha foi de **55% abaixo dos 25 anos**, contra 24% acima (cap. 50, p. 2088 e 2089). Um estudo sugere **35 anos** como corte razoável, e o capítulo de artroscopia diz que acima de 34 anos não houve diferença de re-ruptura (p. 2089; cap. 56, p. 2366). Reforçar isquiotibiais finos com aloenxerto não reduziu a falha e talvez a tenha aumentado (p. 2089). O HEBERT (cap. 64) reserva os enxertos de banco **preferencialmente para a revisão**, com falha de **12%** na primeira reconstrução, contra **4,5%** dos autólogos, e cita como opções os flexores, o tibial anterior e o tendão do calcâneo.
+
+**Por que incorpora mais devagar.** Auto e aloenxerto passam pelas mesmas **quatro fases: necrose, revascularização, proliferação celular e remodelação**, e nenhum volta à resistência original (fica entre 30% e 40% da carga final); por isso se começa com mais de 100% da resistência do LCA. A resposta imune é dirigida às **células**, não ao arcabouço de colágeno: congelar e descongelar mata as células e neutraliza os antígenos; a liofilização reduz a resposta mais que o congelamento fresco; a criopreservação, que mantém as células, ainda provoca resposta. Anticorpos elevados no joelho levantam a hipótese de reação que explicaria o atraso da incorporação (cap. 50, p. 2087 e 2088).
+
+**A esterilização.** É aqui que a prova encontra números.
+
+- **Doença transmissível.** O HIV-1 replicou depois de **2,5 Mrad** de radiação gama, a dose máxima que ainda deixa o enxerto útil; existe uma janela de meses entre o contágio do doador e os anticorpos; o Quadro 56.11 estima a transmissão do HIV em 1 para 1,5 milhão. Mesmo assim, a infecção profunda foi de **0,15%** em 10.190 aloenxertos primários, sem diferença entre processados e não processados (p. 2088).
+- **Radiação gama.** Até **2 Mrad** não muda as propriedades mecânicas iniciais; **3 Mrad** muda. Um estudo associou 1,8 Mrad a falha e revisão, e outro achou melhor o enxerto não irradiado que o irradiado em dose baixa (p. 2088).
+- **Óxido de etileno.** Deixa **etilenoglicol** residual no tecido, apontado como causa de **derrames estéreis** em falhas tardias (p. 2088).
+- **Liofilização.** Não altera muito a mecânica em relação ao congelamento profundo, mas há **falhas tardias frequentes** na clínica (p. 2088).
+- **Feixe de elétrons.** Penetra menos e esteriliza em segundos; entre 17,1 e 21,0 kGy não mudou a mecânica (p. 2088).
+- **O mais usado hoje.** **Radiação em dose baixa (1 a 3,5 Mrad) com banho de antibióticos** e outros processamentos (p. 2088).
+
+!tabela Aloenxerto: obtenção e armazenamento (Campbell 15ª ed., cap. 50, Tabela 50.5, p. 2088)
+| Etapa | O que o livro exige |
+|---|---|
+| Triagem do doador | exclui doença autoimune, artrite reumatoide, lúpus, poliarterite, sarcoidose, tóxicos, doença óssea significativa |
+| Sorologia | HIV (anticorpo e ácido nucleico), hepatite B (antígeno de superfície e anticorpo anticore), hepatite C (anticorpo e ácido nucleico), HTLV, sífilis |
+| Retirada | até 24 h após a morte se o corpo foi resfriado; até 15 h se não foi; técnica asséptica e cultura |
+| Desinfecção e esterilização | banho de antibióticos; óxido de etileno ou outros químicos; radiação gama ou feixe de elétrons; protocolos próprios |
+| Armazenamento | fresco: até 24 dias; congelado: 3 a 5 anos; criopreservado: até 10 anos; liofilizado: 3 a 5 anos em temperatura ambiente |
+!fim
+
+!questoes central=joelho-0130
+conceito: O aloenxerto tem melhor efeito cosmético, cirurgia mais curta, menos morbidade e preserva o mecanismo extensor, mas falha de 2 a 5 vezes mais que o autoenxerto em atletas e jovens (55% abaixo de 25 anos numa série); fica de preferência para o paciente mais velho, de menor demanda, ou para a revisão.
+como: O SBOT-SP pediu a afirmação falsa sobre o aloenxerto, misturando as três vantagens clássicas com "maior sucesso em atletas".
+armadilha: Marcar "preserva o mecanismo extensor" como falsa: é vantagem real, porque nada é tirado do tendão patelar do paciente.
 !fim
 
 # Onde colocar os túneis, e a ilusão da isometria {radar=confirmado}
 
-**A isometria.** Por muito tempo, procurou-se a colocação **isométrica** do enxerto, que limita as mudanças de comprimento e de tensão durante a flexão e a extensão e que, em tese, evitaria o estiramento e a falha. **Hoje o conceito de isometria é considerado simplificado demais, porque o LCA normal não é isométrico**: suas bandas sofrem estresse variável; **a AM tem mais estresse em flexão, e a PL, em extensão** (p. 2293). Os isômetros ajudam a achar as áreas, mas não preveem a relação entre a tensão e o comprimento do enxerto.
+**A isometria.** Por muito tempo, procurou-se a colocação **isométrica** do enxerto, que limita as mudanças de comprimento e de tensão durante a flexão e a extensão. **Hoje o conceito de isometria é considerado simplificado demais, porque o LCA normal não é isométrico**: **a AM tem mais estresse em flexão, e a PL, em extensão** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2077; igual na 14ª ed., p. 2293). Os isômetros confirmam o local, mas não preveem a relação entre a tensão e o comprimento do enxerto. **Os erros no fêmur pesam mais que os da tíbia**, porque o túnel femoral fica perto do eixo de movimento do joelho (p. 2077).
 
-**O túnel tibial.** A controvérsia sobre os pontos de fixação continua após mais de 30 anos. Muitos cirurgiões colocam o túnel tibial **mais anterior, no centro da inserção tibial**, de forma mais anatômica, aceitando que ele não é isométrico; essa posição dá LACHMAN negativo, mas uma pequena excursão na gaveta. Outros preferem a **porção posterior da inserção, perto da banda PL**, para reproduzir melhor a função do LCA intacto e reduzir o choque do enxerto contra o teto da fossa em extensão, que pode acontecer com a colocação anterior (p. 2293).
+## Os pontos de referência no fêmur
 
-**A plastia da fossa.** Era comum alargar a fossa para evitar o choque, mais provável com o enxerto anterior. A posição tibial posterior exige plastia mínima, a não ser que a fossa esteja estreita por osteófitos na lesão crônica. A equipe do Campbell prefere uma plastia limitada, de 2 a 3 mm na parte anterior da fossa, e retirar a "crista do residente" se ela atrapalhar a identificação da inserção femoral; uma plastia excessiva pode deslocar o ponto de inserção e alterar a cinemática (p. 2293 e 2294).
+A inserção femoral é ovoide, de 8 por 15 mm, na parede medial do côndilo femoral lateral. Dois relevos ósseos a delimitam (cap. 50, p. 2064):
 
-**O túnel femoral e o relógio.** Um túnel **vertical, alto na fossa, perto das 12 horas**, dá estabilidade anteroposterior, mas **não restaura a estabilidade rotatória: o LACHMAN fica normal, mas o pivot shift fica positivo**. Por isso, os cirurgiões passaram a colocar o túnel mais baixo na parede lateral, **perto das 10 ou das 2 horas**, ou ainda mais baixo, reproduzindo melhor a inserção femoral. Para o feixe único, o centro do túnel femoral deve ficar 1,7 mm proximal à crista bifurcada e cerca de 8 mm à frente da margem articular posterior do côndilo lateral. Os guias transtibiais tendem a deixar o túnel femoral mais vertical (p. 2294). Curiosamente, uma comparação de registro mostrou mais revisão com o portal anteromedial (5,16%) que com a perfuração transtibial (3,2%), talvez porque a posição mais anatômica coloque mais carga no enxerto.
+- **Crista intercondilar lateral, a "crista do residente"**: a **borda anterior** das inserções das duas bandas. Tem esse nome porque engana o iniciante: na técnica de CLANCY, ela pode ser confundida com o ponto over-the-top, e, **se for usada como referência, o túnel femoral fica anterior demais** (p. 2081). Por isso o Campbell manda retirá-la se atrapalhar a identificação da inserção (p. 2077).
+- **Crista bifurcada**: separa a **banda AM da PL**, de proximal para distal no plano sagital. No feixe único, **o centro do túnel fica 1,7 mm proximal à crista bifurcada e cerca de 8 mm anterior à margem articular posterior do côndilo lateral** (p. 2077).
 
-**Banda única ou dupla.** Num estudo em cadáver, a dupla banda foi igual à única no LACHMAN e melhor no controle do pivot shift, e os autores sugeriram que ela poderia ajudar em joelhos de risco, com lesão meniscal ou pivot grande. Mas três ensaios randomizados com 375 pacientes não mostraram diferença clínica ou subjetiva, e dois túneis femorais complicam muito uma revisão (p. 2294). Na reconstrução extra-articular de ANDREWS, descrita no mesmo capítulo, a banda anterior é a que fica tensa em flexão e a posterior em extensão, imitando as bandas do LCA (p. 2290 e 2291).
+Com o joelho a 90 graus, a inserção ocupa **os 30% a 35% inferiores da parede lateral da fossa** (cap. 56, p. 2378 e 2379); o furo deixa **2 mm de parede posterior**, cerca de 5 mm acima da cartilagem (p. 2370). O HEBERT (cap. 64) avisa que, nas lesões agudas, a crista do residente às vezes pode ser vista, mas **a crista bifurcada é mais difícil de identificar**; por isso valoriza os **remanescentes do LCA**, que orientam os túneis e guardam mecanorreceptores e vasos para a "religamentização".
 
-!questoes central=joelho-0231 relacionadas=joelho-0227,joelho-0307
-conceito: O LCA normal não é isométrico: a banda anteromedial tem mais estresse em flexão e a posterolateral em extensão; o túnel femoral vertical, às 12 horas, deixa o pivot shift positivo; o túnel tibial pode ir para o centro da inserção ou para a parte posterior, perto da banda posterolateral.
-como: Outra banca perguntou como se comporta o enxerto na reconstrução anatômica; o TARO 2010 perguntou em que posição se tensionam as duas bandas na dupla banda; o TARO 2006 perguntou se o túnel tibial deve ficar na inserção da banda posterolateral.
-armadilha: Achar que a reconstrução anatômica é isométrica.
-armadilha: Inverter as bandas na tensão: anteromedial em flexão, posterolateral em extensão.
+**Na radiografia.** O quadrante de BERNARD não aparece nos capítulos lidos do Campbell nem do HEBERT. O Campbell usa outra referência no perfil, a **linha de BLUMENSAAT**: na técnica transepifisária de ANDERSON, o ponto femoral fica a **cerca de um quarto da distância de posterior para anterior ao longo da linha e um quarto abaixo dela** (cap. 56, p. 2380). Não confunda com o ponto de SCHÖTTLE, que usa a cortical posterior e o ponto posterior da linha de BLUMENSAAT para o túnel femoral do ligamento patelofemoral medial, no côndilo medial (ver o resumo de instabilidade femoropatelar).
+
+## O relógio e a parede lateral
+
+Um túnel **vertical, alto na fossa, perto das 12 horas**, dá estabilidade anteroposterior, mas **não restaura a estabilidade rotatória: o LACHMAN fica normal, mas o pivot shift fica positivo**. Por isso o túnel desceu na parede lateral, **para as 10 ou 2 horas** ou ainda mais baixo (cap. 50, p. 2077). As técnicas dão os horários pelo lado: **11 horas no joelho direito e 1 hora no esquerdo** na técnica de CLANCY (p. 2081); **10 ou 11 horas no direito e 1 a 2 horas no esquerdo** na técnica com isquiotibiais, com 1,5 a 2,0 mm de parede posterior para evitar o estouro e pelo menos 2 cm de profundidade (p. 2087).
+
+O raciocínio é geométrico. O túnel às 12 horas fica no teto, perto do eixo do joelho: o enxerto vira um poste vertical no centro, que segura a tíbia para a frente, mas não tem braço de alavanca contra a rotação. Descendo para a parede, o enxerto se inclina e passa a resistir ao giro da tíbia, que é o que o pivot shift testa.
+
+## O túnel tibial
+
+Na técnica artroscópica, as referências são **a borda interna do menisco lateral, a base da espinha medial e o LCP**; o túnel fica **um pouco anterior à borda interna do menisco lateral** e **posterior ao teto da fossa**, para o enxerto não bater em extensão (cap. 56, Fig. 56.37, p. 2369). O capítulo 50 mantém as duas escolas (p. 2077): o centro da inserção, mais anatômico, que dá LACHMAN negativo e pequena excursão na gaveta, ou a **parte posterior da inserção, perto da banda PL**, que reproduz melhor a função e reduz o impacto no teto. As técnicas abertas e pediátricas entram pela metade posterior da inserção tibial (p. 2083; cap. 56, p. 2380).
+
+## O que cada erro de túnel faz
+
+!tabela Erros de túnel e suas consequências (Campbell 15ª ed., cap. 50, p. 2077, 2081 e 2091)
+| Erro | O que acontece |
+|---|---|
+| Femoral anterior demais | a distância entre os túneis aumenta em flexão: o enxerto "captura" o joelho e tira flexão, ou estica e falha |
+| Femoral posterior | enxerto tenso em extensão e frouxo em flexão; aceitável, mas tem de ser fixado em extensão para não perder extensão |
+| Femoral alto, às 12 horas | LACHMAN normal, pivot shift positivo |
+| Crista do residente tomada como over-the-top | túnel femoral anterior demais |
+| Tibial anterior demais | impacto no teto em extensão; estiramento do enxerto e frouxidão |
+| Parede posterior violada | perde a fixação femoral; exige over-the-top ou fixação suspensa na revisão |
+| Plastia excessiva | desloca o ponto de inserção e altera a cinemática |
 !fim
 
-# A tensão e a fixação {radar=confirmado}
+## Transtibial ou portal anteromedial
 
-**Quanto tensionar.** Em teoria, a tensão deve ser suficiente para eliminar a instabilidade, o LACHMAN. Tensão demais "captura" a articulação, dificulta recuperar o movimento ou degenera a cartilagem por cinemática alterada. **A tensão necessária depende do tecido, do comprimento e da rigidez do enxerto: o osso-tendão patelar-osso precisa de menos tensão que o semitendíneo, porque a sua parte tendínea é mais curta e mais rígida** (p. 2295). Os números: fixando a 30 graus, os isquiotibiais podem precisar de 80 N, sem benefício além disso; o patelar fixado a 30 graus dificilmente precisa de mais de 20 N, mas, se fixado em extensão completa, recomenda-se 90 N. A força no enxerto pode cair até 30% depois da fixação se ele não for pré-condicionado ciclicamente. Num ensaio, o grupo do patelar com 45 N teve mais translação anterior que o grupo com 90 N (p. 2295).
+Os guias **transtibiais** tendem a deixar o túnel femoral **mais vertical**; com esforço chegam às 10 ou 2 horas. Estudos em cadáver mostraram túneis **superiores e posteriores** à inserção nativa e **desencontro entre o comprimento do túnel e o do enxerto**, porque o túnel tibial precisa ser curto para mirar o centro da inserção. Pelo **portal anteromedial baixo, rente ao tendão patelar**, o túnel femoral é feito de forma independente e alcança a parte baixa da parede lateral; com duas incisões, o guia também fica livre (cap. 50, p. 2077).
 
-Pense numa mola curta e dura e numa mola longa e macia. Para segurar o mesmo peso sem folga, a mola longa precisa ser esticada muito mais. O tendão patelar é a mola curta e rígida; os isquiotibiais quádruplos são a mola longa e mais complacente.
+O resultado clínico surpreende. Os estudos não mostram diferença subjetiva entre as técnicas, mas o registro Kaiser, com 19.059 pacientes, mostrou **mais revisão asséptica com as técnicas independentes da tíbia**, e outro estudo, 5,16% contra 3,2%; uma explicação é que a posição mais anatômica coloca mais carga no enxerto. E, numa ressonância 3D, quatro cirurgiões experientes, cada um com sua técnica, erraram a pegada femoral em proporções parecidas (p. 2078).
 
-**A fixação.** Uma série mostrou mais revisão com fixação cortical suspensa de isquiotibiais e menos com fixação transversa dentro do túnel (p. 2296). O túnel tibial deve ter o mesmo diâmetro do enxerto de isquiotibiais (p. 2302).
+O HEBERT (cap. 64) explica o preço técnico do transtibial anatômico: para alcançar o ponto certo no fêmur, **o túnel tibial precisa começar mais medial e mais alto na cortical**, às vezes perto demais do planalto; com o patelar, o parafuso de interferência nesse túnel pode **fraturar a cortical anterior da tíbia**, e o fio-guia deve ficar medial ou lateral ao tarugo.
+
+!tabela Transtibial x portal anteromedial (Campbell 15ª ed., cap. 50, p. 2077 e 2078; HEBERT cap. 64)
+| Ponto | Transtibial | Portal anteromedial |
+|---|---|---|
+| Túnel femoral | mais vertical, superior e posterior à pegada | independente, alcança a parte baixa da parede |
+| Exigência | túnel tibial medial, alto e curto; pouca margem de erro | portal baixo rente ao tendão patelar |
+| Problema típico | desencontro túnel e enxerto; risco na cortical anterior com patelar | mais carga no enxerto anatômico |
+| Revisão nos registros | 3,2% | 5,16%; mais revisão asséptica no Kaiser |
+!fim
+
+## Banda única ou dupla
+
+A dupla banda foi igual à única no LACHMAN e melhor no pivot em cadáver, mas sem diferença clínica, e **dois túneis femorais complicam a revisão** (cap. 50, p. 2078 e 2079). Na técnica de KARLSSON, **o enxerto AM é tensionado a cerca de 45 graus de flexão e o PL em extensão completa**, imitando as bandas nativas (cap. 56, p. 2379).
+
+!questoes central=joelho-0231 relacionadas=joelho-0227,joelho-0307
+conceito: O LCA normal não é isométrico: a AM tem mais estresse em flexão e a PL em extensão; na dupla banda, a AM é tensionada a cerca de 45 graus e a PL em extensão; o túnel femoral às 12 horas deixa o pivot positivo; o tibial pode ir ao centro da inserção ou à parte posterior.
+como: Outra banca perguntou como se comporta o enxerto na reconstrução anatômica; o TARO 2010, em que posição se tensionam as duas bandas; o TARO 2006, se o túnel tibial deve ficar na inserção da banda posterolateral.
+armadilha: Achar que a reconstrução anatômica é isométrica.
+armadilha: Inverter as bandas na tensão: anteromedial em flexão, posterolateral em extensão.
+alerta: `joelho-0307` não tem gabarito oficial; o gabarito pela bibliografia é B (Errado), a resposta provável, porque a técnica anatômica centra o túnel tibial na inserção (um pouco anterior à borda interna do menisco lateral, cap. 56, p. 2369). O Campbell, porém, registra a posição posterior perto da banda posterolateral como opção que reproduz bem a função (cap. 50, p. 2077): é uma escolha, não uma regra.
+!fim
+
+# A tensão, a fixação e a incorporação {radar=confirmado}
+
+**Quanto tensionar.** A tensão deve ser suficiente para eliminar o LACHMAN; demais, ela "captura" o joelho, dificulta recuperar o movimento ou degenera a cartilagem. **A tensão necessária depende do tecido, do comprimento e da rigidez: o osso-tendão patelar-osso precisa de menos tensão que o semitendíneo, porque é mais curto e mais rígido** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, Quadro 50.7, p. 2079). Fixando a 30 graus, os isquiotibiais precisam de 80 N, e o patelar de 20 N; o patelar fixado em extensão completa precisa de 90 N. A força cai até 30% depois da fixação se o enxerto não for pré-condicionado. Tensão suprafisiológica degenera o enxerto, com fibras mais grossas e menos orientadas e queda da resistência.
+
+Pense numa mola curta e dura e numa mola longa e macia. Para segurar o mesmo peso sem folga, a mola longa precisa ser esticada muito mais. O tendão patelar é a mola curta e rígida; os isquiotibiais quádruplos, a longa e mais complacente.
 
 !questoes central=joelho-0056
 conceito: O patelar precisa de menos tensão na fixação que os isquiotibiais, porque a sua parte tendínea é mais curta e mais rígida.
@@ -305,15 +413,28 @@ como: O TEOT 2022 perguntou se o patelar precisa de mais ou menos tensão, e por
 armadilha: Achar que o enxerto mais rígido precisa de mais tensão: é o contrário.
 !fim
 
+**A fixação é o elo fraco.** Nas primeiras semanas, **o ponto fraco é a fixação, não o enxerto** (p. 2079). Ela é **direta** (parafuso de interferência, grampos, arruelas, pinos transversos) ou **indireta** (botão com fita, poste de sutura), de 200 a 1.600 N. O **parafuso de interferência**, o mais popular para o patelar, pode empurrar o enxerto, cortar a sutura ou lacerar o tendão; **divergência maior que 15 graus entre parafuso e bloco reduz a carga de ruptura em 50%**; os bioabsorvíveis seguram como os metálicos (p. 2079 e 2080). A fixação suspensa cortical teve mais revisão em alguns estudos e mais estabilidade em outros (p. 2080). O HEBERT (cap. 63) usa parafuso de interferência no fêmur e amarria a parafuso na tíbia para o patelar, e Endobutton no fêmur para os flexores.
+
+**A incorporação.** O bloco ósseo se incorpora ao túnel em cerca de **6 semanas**; o enxerto de partes moles leva **2 a 3 semanas a mais**, e os estudos variam de 3 semanas a mais de 3 meses. O **alargamento do túnel** na abertura acontece nas primeiras 6 semanas, continua até 12 e depois o túnel estreita um pouco (cap. 56, p. 2366 e 2367). É a vantagem do osso com osso: o bloco consolida no túnel como uma fratura, enquanto o tendão precisa cicatrizar na parede óssea, a desvantagem que o Campbell aponta nos flexores (cap. 50, p. 2076).
+
+**A ligamentização.** As análises histológicas do patelar mostram que o enxerto sofre **"ligamentização" ao longo de meses a anos**; talvez não haja fase necrótica, e o enxerto pode estar viável com 3 semanas (cap. 50, p. 2090). A maturação continua além dos 6 meses, talvez até **18 meses**, e o retorno precoce ao esporte de alto nível é fator de risco de falha (p. 2089 e 2090). O HEBERT (cap. 63) fixa a reabilitação média em **6 meses**, o período em que se demonstrou experimentalmente a integração total do enxerto: os dois livros concordam no mínimo de 6 meses, mas o Campbell avisa que a maturação vai além.
+
+!tabela O tempo do enxerto (Campbell 15ª ed., cap. 50, p. 2076, 2087, 2089 e 2090; cap. 56, p. 2366 e 2367; HEBERT cap. 63)
+| Momento | O que acontece |
+|---|---|
+| Logo após o implante | perde cerca de 50% da resistência; a fixação é o elo fraco |
+| 3 semanas | o patelar já pode estar viável |
+| 6 semanas | bloco ósseo incorporado; alargamento do túnel em curso |
+| 8 a 9 semanas | partes moles incorporadas (2 a 3 semanas depois do osso) |
+| 12 semanas | o alargamento para; o túnel estreita um pouco |
+| 6 meses | retorno ao esporte no mínimo; integração total (HEBERT) |
+| até 18 meses | maturação continua (Campbell) |
+| Final | 30% a 40% da carga final, nunca a resistência original |
+!fim
+
 # Reabilitação {radar=fundamento}
 
-Os protocolos atuais, com pouca ou nenhuma imobilização e reabilitação mais intensa, diminuíram muito a perda de movimento e a dor anterior (p. 2309). Pontos do Campbell (p. 2305 e 2306):
-
-- **Reabilitação intensiva ajuda a prevenir a artrofibrose precoce** e devolve força e função mais cedo.
-- O joelho é imobilizado numa órtese em **extensão completa** logo depois da cirurgia, **para prevenir a contratura em flexão**.
-- O movimento passivo contínuo não é usado de rotina, só no joelho tratado por artrofibrose.
-- O fortalecimento começa pelos **isquiotibiais**, que trabalham com o LCA contra a translação anterior da tíbia; na comparação entre cadeia aberta e fechada, a cadeia fechada teve menos diferença no artrômetro e menos dor patelofemoral.
-- O retorno ao esporte costuma esperar pelo menos **6 meses**, para o enxerto amadurecer; testes de salto ajudam a decidir, e a órtese funcional não tem evidência para reduzir nova lesão.
+A reabilitação intensiva previne a artrofibrose precoce; a órtese em **extensão completa** logo depois da cirurgia previne a **contratura em flexão**; o fortalecimento começa pelos **isquiotibiais**, que trabalham com o LCA, e a cadeia fechada teve menos dor patelofemoral e menos diferença no artrômetro; o retorno ao esporte espera **pelo menos 6 meses** (Campbell 14ª ed., p. 2305 e 2306; 15ª ed., cap. 50, p. 2089). Na 15ª edição, só 44% voltaram ao esporte competitivo numa metanálise, e os testes de salto pedem 85% do lado normal (p. 2090).
 
 # Complicações e revisão {radar=confirmado}
 
@@ -323,9 +444,13 @@ Os protocolos atuais, com pouca ou nenhuma imobilização e reabilitação mais 
 
 Por que a contratura em flexão dói na frente? Um joelho que não estende anda sempre um pouco fletido, e com o joelho fletido o quadríceps precisa trabalhar o tempo todo para sustentar o corpo, comprimindo a patela contra a tróclea a cada passo. É por isso que a órtese em extensão completa logo depois da cirurgia é uma medida contra a dor anterior.
 
-**Outras.** Numa série de 4.933 reconstruções, as complicações mais comuns foram trombose venosa profunda sintomática (0,55%), reoperação (0,36%), infecção superficial (0,20%), infecção profunda (0,14%) e embolia pulmonar (0,12%). O diabetes aumentou em 18,8 vezes a chance de infecção, e a artrite séptica apareceu em 0,51% de 7.096 reconstruções (mais nas revisões). Jovens que voltam ao esporte têm risco de nova lesão do LCA muito maior que os não lesados (p. 2308 e 2309).
+**Outras.** Trombose venosa profunda e embolia ficam abaixo de 1% (0,5% e 0,1%), assim como a infecção; o diabetes aumenta em 18,8 vezes a chance de infecção (Campbell 15ª ed., cap. 50, p. 2090 e 2091). A Tabela 50.6 dá as faixas: déficit de extensão de **1% a 13%** e dor anterior de **0% a 34%** (p. 2091).
 
-**Revisão.** Antes de revisar, é preciso descobrir por que a reconstrução falhou, para não repetir a causa. Revisão em dois tempos se houver problema de movimento (falta de 5 graus de extensão ou de 20 de flexão) sem instabilidade, ou defeitos ósseos grandes. O sucesso das reconstruções primárias é de 90% a 95%, e o das revisões, de 65% a 75% (p. 2310 a 2312).
+## Por que a reconstrução falha
+
+As falhas vão de **10% a 25%**, conforme a definição; a instabilidade recorrente por falha do enxerto, de 0,7% a 8%. A **falha precoce**, nos primeiros 6 meses, vem de **erro técnico**, reabilitação agressiva, retorno precoce ou falha de incorporação; a **tardia**, depois de 1 ano, de **nova lesão**. **A causa mais comum e mais evitável é a técnica, e o motivo mais citado é o túnel mal posicionado, sobretudo o femoral** (cap. 50, p. 2091). PARKINSON achou como preditores de falha a idade jovem, a deficiência meniscal e o **túnel femoral raso e não anatômico**; abaixo de 30 anos, a falha se aproxima de 25%; a tenodese extra-articular lateral reduziu a re-ruptura em atletas de elite de 9,5% para 3,4% (p. 2090.e2).
+
+**Revisão.** Antes de revisar, descobre-se a causa; a TC ou, de preferência, a ressonância mostra a posição e o **alargamento dos túneis**. Reaproveitar o patelar do mesmo joelho não é recomendado; a equipe do Campbell usa o patelar contralateral ou o quadricipital com bloco; os isquiotibiais, mais finos, podem não encher o túnel antigo e oscilar como um **limpador de para-brisa**; os aloenxertos mais usados são o patelar e o tendão do calcâneo com osso. Faz-se em **dois tempos** quando falta movimento (5 graus de extensão ou 20 de flexão) sem instabilidade, ou quando há defeito ósseo grande: HARNER enxerta antes o túnel **maior que 15 mm** (p. 2092 e 2093). Primárias têm 90% a 95% de sucesso; revisões, **65% a 75%** (p. 2094).
 
 !questoes central=joelho-0276 relacionadas=joelho-0171
 conceito: As complicações pós-operatórias mais comuns são o déficit de extensão e a dor anterior persistente; a dor patelofemoral se relaciona à contratura em flexão persistente ou à fraqueza do quadríceps.
@@ -333,7 +458,7 @@ como: O TARO 2013 pediu a relação de causa e efeito no pós-operatório; o CET
 armadilha: Escolher a instabilidade residual ou a infecção: são bem menos frequentes que a dor anterior.
 !fim
 
-# Revisão em uma página {radar=fundamento}
+# Fechamento {radar=fundamento}
 
 !tabela LCA e o que vem junto: o que mais cai
 | Assunto | A frase que resolve |
@@ -352,12 +477,20 @@ armadilha: Escolher a instabilidade residual ou a infecção: são bem menos fre
 | Dor do outro lado | lesão posterior do menisco LATERAL |
 | Rampa | junção meniscocapsular do corno posterior do MEDIAL; edema posteromedial da tíbia (72%) |
 | Sutura ideal | aguda, 1 a 2 cm, longitudinal, periférica, com o LCA, no jovem |
-| Enxertos | comparáveis; isquiotibiais = baixa morbidade; patelar = dor ao ajoelhar; aloenxerto falha no jovem |
+| Enxertos | isquiotibiais = baixa morbidade, mais fortes na máquina, o dobro de re-ruptura; patelar = dor ao ajoelhar |
+| Retirada | fáscia do SARTÓRIO afastada; grácil acima, semitendíneo abaixo; ramo sartorial do safeno |
+| Aloenxerto | cosmética, tempo menor, extensor preservado; falha 2 a 5 vezes no atleta jovem; 0,15% de infecção |
+| Marcos femorais | crista do RESIDENTE (borda anterior); crista BIFURCADA (entre AM e PL); 30% a 35% inferiores da parede |
+| Transtibial | túnel vertical; portal anteromedial mais anatômico (e mais revisão nos registros) |
+| Fixação | elo fraco inicial; parafuso divergente acima de 15 graus perde 50% |
+| Incorporação | osso em 6 semanas, tendão 2 a 3 semanas depois; ligamentização em meses a anos |
 | Tensão | patelar precisa de MENOS (mais curto e rígido) |
 | Isometria | o LCA normal NÃO é isométrico |
 | Túnel femoral | 12 horas = LACHMAN normal, pivot positivo; 10 ou 2 horas |
 | Complicações | déficit de extensão e dor anterior; dor patelofemoral x contratura em flexão |
-| Revisão | sucesso 65% a 75% (primária 90% a 95%) |
+| Falha | túnel femoral mal posto é a causa mais citada; revisão 65% a 75% |
 !fim
 
-> **Na prova:** desenhe o mecanismo. A tíbia roda e vai para a frente, o côndilo femoral lateral bate no platô lateral (contusões, entalhe, menisco lateral), a cápsula lateral arranca a SEGOND, e o canto posteromedial se rasga na rampa. Quase todas as questões do LCA saem dessa única imagem.
+Nos enxertos e túneis, a lógica é a mesma: o enxerto precisa nascer mais forte que o LCA porque perde metade da resistência, a fixação segura as primeiras semanas, e o túnel femoral baixo na parede, atrás da crista do residente, é o que devolve o controle da rotação.
+
+> **Na prova:** desenhe o mecanismo (tíbia roda e vai para a frente: contusões laterais, SEGOND, menisco lateral, rampa) e lembre a cirurgia: isquiotibiais = baixa morbidade e o dobro de re-ruptura; fáscia do SARTÓRIO afastada na retirada; aloenxerto falha 2 a 5 vezes mais no atleta jovem; patelar precisa de menos tensão; túnel femoral às 12 horas deixa o pivot positivo, o certo é baixo na parede, atrás da crista do residente e junto da crista bifurcada; túnel femoral mal posto é a causa mais citada de falha.
