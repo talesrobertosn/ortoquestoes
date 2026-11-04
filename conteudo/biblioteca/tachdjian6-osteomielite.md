@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-osteomielite
-versao: 2
+versao: 3
 titulo: Osteomielite e artrite séptica na criança
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,16 +8,16 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed.
 capitulo: Capítulo 23 · Infecções do sistema musculoesquelético
 autores: John A. Herring (editor)
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulo 23, sobretudo fisiopatologia da osteomielite hematogênica aguda, agentes por idade, osteomielite subaguda, discite e osteomielite vertebral e infecções do pé. As páginas citadas são as impressas. Ampliado em 01/11/2026 com as partes de osteomielite do cap. 23 relidas por inteiro e o Campbell's Operative Orthopaedics, 15ª ed., caps. 22, 23, 25 e 49.
-subtemas: Osteomielite aguda
-resumo: Metáfise (alças arteriolares e sinusoides lentos); vasos transfisários até 18 meses; metáfises intra-articulares (rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais); localizações; agentes por idade (S. aureus, Kingella, pneumococo, Hib); osteomielite subaguda e classificação de ROBERTS; discite e osteomielite vertebral; calcâneo hematogênico e Pseudomonas no ferimento puntiforme; sífilis congênita.
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulo 23, sobretudo fisiopatologia da osteomielite hematogênica aguda, agentes por idade, osteomielite subaguda, discite e osteomielite vertebral e infecções do pé. As páginas citadas são as impressas. Ampliado em 01/11/2026 com as partes de osteomielite do cap. 23 relidas por inteiro e o Campbell's Operative Orthopaedics, 15ª ed., caps. 22, 23, 25 e 49. Versão 3 (04/11/2026), osteomielite crônica do adulto: Campbell's Operative Orthopaedics, 15ª ed., cap. 22 (p. 792 a 796) e cap. 23 (p. 810 a 818); Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 29, p. 835 a 867 (páginas inferidas pelo índice); Tachdjian, cap. 23, p. 965; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 26 (sem página impressa) e cap. 67.
+subtemas: Osteomielite aguda; Osteomielite crônica
+resumo: Metáfise (alças arteriolares e sinusoides lentos); vasos transfisários até 18 meses; metáfises intra-articulares (rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais); localizações; agentes por idade (S. aureus, Kingella, pneumococo, Hib); osteomielite subaguda e classificação de ROBERTS; discite e osteomielite vertebral; calcâneo hematogênico e Pseudomonas no ferimento puntiforme; crônica do adulto: sequestro por elevação periosteal e necrose, biofilme, CIERNY e MADER (I medular, II superficial, III localizada sem instabilidade, IV difusa com instabilidade; hospedeiro A, B local ou sistêmico, C), fresagem do canal no tipo I, MASQUELET, transporte ósseo e carcinoma espinocelular de MARJOLIN na fístula.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
 Este resumo é inspirado no capítulo 23 (Infecções do sistema musculoesquelético) do Tachdjian's Pediatric Orthopaedics, 6ª edição (2021). As páginas citadas são as impressas.
 
-A osteomielite da criança se entende por três mapas: **onde a bactéria pousa** (a metáfise), **por onde ela chega à articulação** (os vasos transfisários antes dos 18 meses e as metáfises intra-articulares) e **qual germe esperar** em cada idade e situação.
+A osteomielite da criança se entende por três mapas: **onde a bactéria pousa** (a metáfise), **por onde ela chega à articulação** (os vasos transfisários antes dos 18 meses e as metáfises intra-articulares) e **qual germe esperar** em cada idade e situação. A versão 3 acrescenta o quarto mapa, o da **osteomielite crônica do adulto**, que é quase sempre pós-traumática e se cobra pela classificação de **CIERNY e MADER**: tipo anatômico (I a IV) mais o hospedeiro (A, B, C). Para ela, o resumo soma o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29), e o HEBERT ao Campbell.
 
 > **Na prova:** **metáfise**; vasos transfisários até **18 meses**; metáfises intra-articulares = **rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais**; ROBERTS **III** = cortical diafisária, **VI** = vertebral; discite **~2,8 anos** sem febre; osteomielite vertebral **~7,5 anos** febril; prego no tênis = **Pseudomonas**.
 
@@ -28,11 +28,11 @@ A osteomielite da criança se entende por três mapas: **onde a bactéria pousa*
 - **Até ~18 meses**, a circulação atravessa a fise: a infecção invade a epífise (osteonecrose, distúrbio de crescimento). Aspirar e desbridar cedo as grandes articulações nessa idade.
 - **Metáfises intra-articulares** (Fig. 23.23): **rádio proximal**, **úmero proximal**, **fêmur proximal**, **tíbia e fíbula distais**.
 
-!questoes central=conceitos-basicos-0002 relacionadas=conceitos-basicos-0053,conceitos-basicos-0187,conceitos-basicos-0229,conceitos-basicos-0039,conceitos-basicos-0076,conceitos-basicos-0249 treino=conceitos-basicos-0416
+!questoes central=conceitos-basicos-0002 relacionadas=conceitos-basicos-0053,conceitos-basicos-0187,conceitos-basicos-0229,conceitos-basicos-0039,conceitos-basicos-0249 treino=conceitos-basicos-0416
 conceito: Abaixo de 18 meses os vasos cruzam a fise; nas metáfises intra-articulares, a osteomielite rompe para a articulação em qualquer idade.
-como: O TARO 2010, 2015 e 2020 e o TEOT 2025 perguntaram a associação com pioartrite e a idade da osteonecrose; o TARO 2017 e 2022, a fisiopatologia metafisária e o sequestro; a SBOT-SP, a distribuição por idade.
+como: O TARO 2010, 2015 e 2020 e o TEOT 2025 perguntaram a associação com pioartrite e a idade da osteonecrose; o TARO 2017, a fisiopatologia metafisária; a SBOT-SP, a distribuição por idade.
 armadilha: Pôr o úmero distal ou o fêmur distal entre as metáfises intra-articulares.
-alerta: O Tachdjian's Pediatric Orthopaedics, 6ª ed., só sugere de forma indireta a escassez de macrófagos na metáfise (esponjosa primária relativamente acelular, `conceitos-basicos-0039`), e a distribuição bimodal por idade (`conceitos-basicos-0249`) está só no Campbell's Operative Orthopaedics, 15ª ed.; a fisiopatologia do sequestro (`conceitos-basicos-0076`) foi confirmada no Tachdjian, p. 970, Fig. 23.21. Os gabaritos oficiais foram preservados.
+alerta: O Tachdjian's Pediatric Orthopaedics, 6ª ed., só sugere de forma indireta a escassez de macrófagos na metáfise (esponjosa primária relativamente acelular, `conceitos-basicos-0039`), e a distribuição bimodal por idade (`conceitos-basicos-0249`) está só no Campbell's Operative Orthopaedics, 15ª ed. (o Rockwood and Green's Fractures in Adults, 10ª ed., cap. 29, p. 840 aprox., fala em outra bimodalidade, a da osteomielite em geral: menores de 5 e maiores de 50 anos). A fisiopatologia do sequestro (`conceitos-basicos-0076`) passou para a seção nova da crônica do adulto. Os gabaritos oficiais foram preservados.
 !fim
 
 # Os agentes {radar=confirmado}
@@ -157,7 +157,7 @@ armadilha: Achar que o corte de idade é único: TARO e TEOT usam 18 meses (Tach
 conceito: A VHS depende do fibrinogênio, sobe devagar, normaliza em semanas e não é confiável no neonato e no falciforme; a PCR, estimulada pela IL-6, sobe em 6 horas, tem pico em 2 dias, meia-vida de 24 horas e normaliza em cerca de 1 semana, e por isso segue melhor a resposta.
 como: O TARO 2006, 2007 e 2008 cobraram em sequência a VHS não confiável no neonato e no falciforme, a comparação entre VHS e PCR e o mecanismo da subida da PCR.
 armadilha: Usar a VHS para seguir a melhora dos primeiros dias, ou atribuir a PCR ao fibrinogênio, que é o determinante da VHS.
-alerta: As três questões (`conceitos-basicos-0284`, `conceitos-basicos-0285`, `conceitos-basicos-0292`) estão sem gabarito oficial no acervo; o texto segue o Tachdjian (fibrinogênio, IL-6, cinética da PCR) e o Campbell, cap. 22 (VHS não confiável no neonato e no falciforme).
+alerta: As três questões (`conceitos-basicos-0284`, `conceitos-basicos-0285`, `conceitos-basicos-0292`) estão sem gabarito oficial no acervo; o texto segue o Tachdjian (fibrinogênio, IL-6, cinética da PCR) e o Campbell, cap. 22 (VHS não confiável no neonato e no falciforme); as respostas prováveis seguem o gabarito pela bibliografia: VHS menos sensível que a PCR, interleucina-6 e Certo.
 !fim
 
 # Imagem: da radiografia à RM {radar=confirmado}
@@ -267,34 +267,151 @@ armadilha: Marcar o tipo III, também diafisário, mas cortical e localizado, qu
 
 **Tratamento.** Cirurgia é a base, com média de **3,2 procedimentos por criança**; MADER pede desbridamento "direto, atraumático e com a reconstrução em mente", até o **sinal da páprica** (sangramento uniforme). **Rifampicina** soma-se ao antiestafilocócico (bactericida dentro dos leucócitos), por até **6 a 9 meses**. Pérolas de **sulfato de cálcio** com vancomicina e tobramicina eluem por até 6 semanas e reabsorvem. O transporte de ILIZAROV aumenta o fluxo **3 a 10 vezes** e, na criança, dispensa enxerto no ponto de encontro. A recidiva em 2 anos é de **20% a 30%**; o transporte por fio oblíquo dá **80% a 100%** de bons resultados (p. 973 e 974).
 
-# A crônica do adulto e o estadiamento de CIERNY e MADER {radar=confirmado}
+# A crônica do adulto: definição, sequestro e invólucro {radar=confirmado}
 
-**O quadro.** No Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 810 a 812), a crônica é **geralmente secundária a trauma grave**, com osso morto dentro de partes moles **avasculares** que tornam o antibiótico sistêmico quase ineficaz. O exame de escolha é a **biópsia óssea**; VHS e PCR altas na maioria, **leucócitos só em 35%**. Riscos de crônica complicada e polimicrobiana (Box 23.2): idade, obesidade, tabagismo, comorbidades, acidente rural, **GUSTILO III**, dano muscular, transfusão e múltiplos desbridamentos. Nenhuma imagem confirma ou exclui; a **fistulografia** ajuda a planejar, a TC acha **sequestros** e a RM sofre com o metal.
+**O que é.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 810), define a osteomielite crônica como infecção óssea **de longa data, em geral bacteriana e secundária a trauma grave**. Os sintomas sistêmicos podem sumir, mas um ou mais focos guardam pus, granulação infectada ou **sequestro**, com **agudizações intermitentes por anos** que respondem a repouso e antibiótico. A marca da doença é **osso morto infectado dentro de um envelope de partes moles avascular**, o que torna o antibiótico sistêmico praticamente inútil.
 
-!tabela CIERNY e MADER (Campbell, cap. 23, p. 810 e 811, Fig. 23.7)
-| Tipo | Nome | O que é |
+**Aguda ou crônica: tempo ou histologia?** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 837 aprox.), separa as duas pelo que se vê no osso: na aguda há alterações inflamatórias, tipicamente **cerca de 2 semanas** após a infecção; na crônica já há **destruição óssea e sequestros**, tipicamente **cerca de 6 semanas** após. Como o início é insidioso, preferem a **histopatologia** ao relógio. Na criança, o Tachdjian's Pediatric Orthopaedics, 6ª ed., usa **mais de 1 mês**.
+
+**Por que a crônica nasce.** O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 26, Infecções osteoarticulares), é direto: a maioria das crônicas vem de **diagnóstico tardio ou incorreto e de tratamento insuficiente ou retardado**, e por isso o autor as chama de **iatrogenias**. O pus invade os **canais de VOLKMANN**, o canal medular e o espaço **subperiosteal**; a área isquêmica resultante morre, e nesse momento surge o **sequestro** e se instala a cronificação. O sequestro pode ser pequeno ou tomar **toda a diáfise** (osteomielite **pandiafisária**).
+
+**O sequestro é fisiologia, não azar.** O mecanismo é o mesmo nos três livros. Na criança, a cortical metafisária fina e o periósteo frouxo deixam o pus **descolar o periósteo** ao redor da diáfise, e a cortical perde o suprimento externo, **necrosa** e vira sequestro (Tachdjian, p. 970, Fig. 23.21). No adulto, o Rockwood (p. 841 aprox.) descreve o mesmo fim: **comprometimento vascular**, necrose e um segmento **avascular** onde nem defesa nem antibiótico chegam. Por isso a questão que pergunta o que está diretamente envolvido no sequestro quer **elevação periosteal e necrose óssea**: a fístula e o osso novo são consequências; a pioartrite é complicação de outra via; a imunodeficiência modula, mas não define o sequestro.
+
+**O invólucro e a cloaca.** O Rockwood (p. 841 aprox.) define **invólucro** como a **manga de tecido vivo de osso neoformado** depositado ao redor do osso infectado e desvitalizado. Na criança, o invólucro leva **2 a 8 meses** e, quando generoso, regenera a diáfise (Tachdjian, p. 973). O termo **cloaca** não aparece nos capítulos conferidos; os livros falam em **trajeto fistuloso**.
+
+!tabela A tríade da crônica segundo cada livro (Campbell, cap. 23, p. 810; Rockwood, cap. 29, p. 837 a 841 aprox.; Tachdjian, cap. 23, p. 970 e 973; HEBERT, cap. 26)
+| Elemento | O que é | O que importa |
 | --- | --- | --- |
-| I | medular | doença endosteal, nicho endosteal |
-| II | superficial | cortical de superfície, defeito de cobertura |
-| III | localizada | sequestro de toda a espessura cortical, **ressecável sem perder estabilidade** |
-| IV | difusa | **instabilidade mecânica** antes ou depois do desbridamento; toda a circunferência |
-| hospedeiro A | normal | imunocompetente, boa vascularização |
-| hospedeiro B | comprometido | fatores locais (L) ou sistêmicos (S) |
-| hospedeiro C | proibitivo | tratamento pior que a doença |
+| sequestro | osso morto, isquêmico, separado do vivo | abriga bactérias longe do antibiótico; tem de ser retirado |
+| invólucro | manga de osso novo vivo ao redor do sequestro | na criança, 2 a 8 meses; pode reconstruir a diáfise |
+| trajeto fistuloso | comunicação do foco com a pele | alivia a dor cíclica; cultura do trajeto não vale; risco de carcinoma |
+| envelope avascular | partes moles cicatriciais e osso esclerótico | antibiótico sistêmico ineficaz; pede desbridamento e retalho |
 !fim
 
-Tipo mais hospedeiro dá **12 estágios** (tipo II em hospedeiro A = **IIA**), que orientam tratamento simples ou complexo, curativo ou paliativo, preservador ou ablativo. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 965), detalha o hospedeiro B como sistêmico, local ou ambos e escreve "**estágio 4B**" em arábico; lembra ainda que a classificação de 1984 tem **aplicação limitada na criança**, quase sempre hospedeiro normal com doença localizada.
-
-**Tratamento.** Corrigir glicemia, tabagismo, fígado e rim. A crônica **não se erradica sem cirurgia**: sequestrectomia, ressecção de osso e partes moles doentes, antibiótico local e fixador externo após desbridamento radical; LANGIT obteve resultado comparável à ressecção oncológica com desbridamento adequado e antibiótico local em alta concentração. Tradicionalmente, **6 semanas de antibiótico intravenoso** após o desbridamento, sem consenso. Na sequestrectomia (Técnica 23.2): **azul de metileno** nos trajetos 24 horas antes, janela cortical oval, cavidade aberta para o canal e fresa até o **sinal da páprica** (p. 813).
-
-**A malignização** (p. 810 e 818): prevalência de **0,2% a 1,6%**; fístula com **mais dor e odor fétido** pede biópsia; o tumor mais frequente é o **carcinoma espinocelular** do trajeto; a **amputação** é o meio mais confiável.
-
-!questoes central=conceitos-basicos-0208 relacionadas=conceitos-basicos-0013,conceitos-basicos-0227
-conceito: CIERNY e MADER: I medular, II superficial, III localizada (sequestro de toda a espessura cortical, ressecável sem perder estabilidade), IV difusa (instabilidade); hospedeiro A, B ou C.
-como: O TARO 2012 pediu o tipo da osteomielite localizada; o TARO 2019 descreveu placa que penetra o córtex sem instabilidade axial; o TARO 2010 perguntou como desbridar o tipo I do fêmur após osteossíntese.
-armadilha: Chamar de difusa toda lesão que atravessa a cortical: só é IV com instabilidade.
-alerta: O Campbell descreve fresagem e irrigação do canal na troca por haste de cimento com antibiótico (cap. 23, p. 815), mas não liga explicitamente o tipo I à fresagem (`conceitos-basicos-0227`); o gabarito oficial foi preservado.
+!questoes central=conceitos-basicos-0076
+conceito: O sequestro nasce da elevação periosteal pelo pus, que tira da cortical o suprimento externo: o segmento isquêmico necrosa e fica longe do antibiótico.
+como: O TARO 2022 perguntou com o que a fisiopatologia do sequestro está diretamente envolvida.
+armadilha: Marcar neoformação óssea e fístula, que são consequências (invólucro e drenagem), ou a imunodeficiência, que só modula o risco.
 !fim
+
+# O biofilme e o germe da crônica {radar=fundamento}
+
+**Por que o osso sadio resiste e o fraturado não.** O osso sadio é relativamente **resistente à infecção**; o que a vence é trauma direto, inóculo grande ou germe muito virulento (Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 841 aprox.)). O S. aureus tem três armas: **adesinas** que o prendem à matriz óssea e ao colágeno, o **biofilme** e a **invasão de células do hospedeiro** (osteoblastos, fibroblastos, endotélio), onde forma **variantes de pequenas colônias** metabolicamente inertes, resistentes a antibióticos de parede e a aminoglicosídeos. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 964 e 970), diz o mesmo na criança.
+
+**Como o biofilme se forma.** Até **65%** das infecções ortopédicas são por germes formadores de biofilme (estafilococos, Pseudomonas aeruginosa, Propionibacterium acnes). A sequência do Rockwood (p. 841 e 842 aprox.): **aderência** à superfície óssea ou ao implante por adesinas; **proliferação** com secreção de uma **matriz polissacarídica e proteica** relativamente impermeável, a matriz de **substâncias poliméricas extracelulares**; envolvimento por **glicocálice** (camada de limo); e comunicação entre colônias por **quorum sensing**, com moléculas chamadas autoindutores. O resultado clínico: germes do biofilme são **até 800 vezes menos sensíveis** ao antibiótico que os planctônicos, podem ficar inertes por anos e causar agudizações tardias, e as culturas convencionais falham.
+
+**Os germes.** O S. aureus é o agente predominante de todas as formas, isolado em **30% a 60%**. Os **estafilococos coagulase-negativos** aparecem em **25%** das pós-traumáticas, e o S. epidermidis é o mais comum na infecção periprotética. A hematogênica é quase sempre **monomicrobiana**; a por contiguidade, **polimicrobiana** (até **29%** no pós-traumático, contra **5%** na hematogênica). A cultura é negativa em até **32%** das pós-traumáticas (Rockwood, p. 842 aprox.). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 811), concorda: no pós-traumático, **predominam os estafilococos**.
+
+# As classificações: WALDVOGEL e CIERNY-MADER {radar=confirmado}
+
+**WALDVOGEL, a primeira.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 965), conta que a primeira classificação foi a de **WALDVOGEL e colaboradores, em 1970**, que dividiu a infecção óssea **pela causa**; o problema é que ela **não orientava o tratamento nem o prognóstico**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 840 aprox.), usa a mesma lógica etiológica sem nomear o autor: **hematogênica**, por **contiguidade** (a **mais comum**) e associada à **insuficiência vascular**.
+
+**CIERNY-MADER, a que cai.** Proposta em **1984**, é a **mais usada** para a crônica dos ossos longos do adulto e combina **4 tipos anatômicos** com **3 classes fisiológicas** do hospedeiro em **12 estágios**, incorporando prognóstico e tratamento (Rockwood, p. 838 aprox.). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 810 e 811, Tabela 23.2), dá a definição que as bancas copiam.
+
+!tabela CIERNY-MADER: o tipo anatômico (Campbell, cap. 23, p. 811, Tabela 23.2 e Fig. 23.7; Rockwood, cap. 29, p. 839 e 840 aprox.)
+| Tipo | Nome | Definição | Raciocínio de tratamento |
+| --- | --- | --- | --- |
+| I | medular | doença endosteal; nicho endosteal | limpar o canal (fresagem, RIA) |
+| II | superficial | cortical de superfície infectada por **defeito de cobertura** | limpar a superfície e resolver a cobertura |
+| III | localizada | **sequestro cortical de toda a espessura**, ressecável **sem comprometer a estabilidade** | sequestrectomia, espaço morto |
+| IV | difusa | I + II + III com **instabilidade mecânica** antes ou depois do desbridamento; toda a circunferência | ressecção, estabilização e reconstrução |
+!fim
+
+**O hospedeiro.** É a metade que mais se esquece. A tabela do Rockwood (p. 839 aprox., Tabela 29-3) lista os fatores; o Campbell (p. 811) define A como **imunocompetente com boa vascularização local**, B como **fatores locais (L) ou sistêmicos (S)** que comprometem a imunidade ou a cicatrização, e C como paciente em que a **morbidade do tratamento seria proibitiva** ou o prognóstico de cura é ruim. O Tachdjian (p. 965) acrescenta que o B pode ser sistêmico, local ou ambos.
+
+!tabela CIERNY-MADER: o hospedeiro (Rockwood, cap. 29, p. 839 aprox., Tabela 29-3; Campbell, cap. 23, p. 811)
+| Classe | Definição | Fatores |
+| --- | --- | --- |
+| A | normal | imunocompetente, boa vascularização |
+| B sistêmico (Bs) | compromisso geral | desnutrição, insuficiência renal ou hepática, diabetes, hipóxia crônica, doença imune, extremos de idade, imunossupressão, imunodeficiência, tabagismo, alcoolismo, neoplasia |
+| B local (Bl) | compromisso do membro | linfedema crônico, estase venosa, comprometimento de grande vaso, arterite, **cicatrização extensa**, fibrose actínica, doença de pequenos vasos, neuropatia |
+| C | proibitivo | tratamento pior que a doença; incapacidade mínima; não candidato a cirurgia; tratamento supressivo ou nenhum |
+!fim
+
+**Como estadiar um caso.** Primeiro o osso, depois o paciente, e escreve-se junto: tipo II em hospedeiro A = **IIA** (Campbell, p. 810). Três regras resolvem quase todas as questões:
+
+- **Atravessar a cortical não basta para ser IV.** A placa que perfura a cortical e deixa um sequestro de toda a espessura, sem instabilidade axial, é **III**; vira **IV** só quando há instabilidade, antes ou depois do desbridamento, ou quando toda a circunferência do segmento está tomada.
+- **Localizada é sinônimo de III**, e **difusa, de IV**. Medular é I; superficial é II. Não existe tipo V.
+- **"Hígido" não garante hospedeiro A.** O jovem sem comorbidades que já passou por várias cirurgias tem um membro com **cicatrização extensa**, fator **local** da Tabela 29-3: é hospedeiro **B (local)**. O estadiamento do hospedeiro olha o paciente e o membro.
+
+**O que cada livro acrescenta.** O Campbell usa a classificação para decidir se o tratamento será **simples ou complexo, curativo ou paliativo, preservador ou ablativo**; o Tachdjian (p. 965) escreve "estágio 4B" em arábico e avisa que ela tem **aplicação limitada na criança**.
+
+!questoes central=conceitos-basicos-0208 relacionadas=conceitos-basicos-0013,conceitos-basicos-0310
+conceito: CIERNY e MADER: I medular, II superficial, III localizada (sequestro de toda a espessura cortical, ressecável sem perder estabilidade), IV difusa (instabilidade); hospedeiro A normal, B local ou sistêmico, C proibitivo; múltiplas cirurgias com cicatrização extensa são fator local (B).
+como: O TARO 2012 pediu o tipo da osteomielite localizada; o TARO 2019 descreveu placa que penetra o córtex sem instabilidade axial; o ENARE R4 2025 deu um jovem hígido, já operado várias vezes, com infecção de todo o segmento e instabilidade axial, e o gabarito foi IV B.
+armadilha: Chamar de difusa toda lesão que atravessa a cortical (só é IV com instabilidade) e classificar como A o paciente sem comorbidades, esquecendo que o membro multioperado e cicatricial é hospedeiro B local.
+alerta: Nenhum livro lido traz o caso do ENARE 2025 (`conceitos-basicos-0310`) resolvido; o IV B do gabarito oficial se sustenta pela Tabela 29-3 do Rockwood and Green's Fractures in Adults, 10ª ed. (p. 839 aprox.), que põe a cicatrização extensa entre os fatores locais do hospedeiro B. O gabarito oficial foi preservado.
+!fim
+
+# Fístula, diagnóstico e o carcinoma de MARJOLIN {radar=fundamento}
+
+**A clínica da crônica.** No caso arrastado, o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 843 aprox.), descreve uma **dor cíclica** que piora progressivamente, com febre, e que **alivia quando a fístula se forma** e o pus drena.
+
+**Quem cronifica.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 811, Box 23.2), lista os fatores de risco de crônica complicada e polimicrobiana: idade avançada, obesidade, tabagismo, comorbidades, **acidente rural**, fratura **GUSTILO III**, **dano muscular grave**, transfusão e múltiplos desbridamentos. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 836 aprox.), vai de **1%** nas fraturas simples a **mais de 30%** nas expostas de alta energia, com a **tíbia** à frente.
+
+**Os critérios da infecção relacionada à fratura.** Um grupo internacional propôs critérios em dois níveis (Rockwood, Tabela 29-2). Basta um **confirmatório** para fechar o diagnóstico; os **sugestivos** pedem investigação.
+
+!tabela Infecção relacionada à fratura: critérios (Rockwood, cap. 29, Tabela 29-2, p. 837 aprox.)
+| Confirmatórios (basta um) | Sugestivos (investigar) |
+| --- | --- |
+| fístula, trajeto ou deiscência comunicando com osso ou implante | sinais clínicos locais ou sistêmicos |
+| drenagem purulenta da ferida ou pus na cirurgia | sinais radiológicos |
+| mesmo germe em cultura de ao menos 2 amostras profundas separadas | derrame articular novo |
+| microrganismo em tecido profundo confirmado pela histopatologia | VHS, leucócitos ou PCR elevados |
+| | drenagem persistente, crescente ou nova |
+| | germe em uma única amostra profunda |
+!fim
+
+**Imagem: cada exame responde a uma pergunta.** Nenhum exame confirma ou exclui a crônica; a imagem ajuda a confirmar e a **planejar a cirurgia** (Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 811)). O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 26), acha que a radiografia **tende a bastar** e valoriza a **fistulografia** para achar o trajeto e o sequestro pequeno, como o Campbell (Fig. 23.8).
+
+!tabela Imagem na osteomielite crônica, livro a livro (Campbell, cap. 22, p. 792 a 796, e cap. 23, p. 811; Rockwood, cap. 29, p. 845 a 849 aprox.)
+| Exame | Campbell | Rockwood |
+| --- | --- | --- |
+| radiografia | lise só após 10 a 21 dias e 30% a 50% de perda; primeiro exame | idem; sequestro = esclerose focal com halo lucente |
+| TC | identifica sequestros | exame de escolha para a cortical; sequestros e fístulas intraósseas; artefato do metal |
+| RM | 97% e 92%; ruim na cortical e no metal; gadolínio realça a granulação, não o sequestro | a mais acurada para medula e partes moles; alterada em 1 a 2 dias; define a extensão do desbridamento |
+| cintilografia óssea (Tc) | três fases: osteomielite capta nas três; fria se pus ou sequestro cortam o fluxo | três fases negativas praticamente excluem |
+| leucócitos marcados | discutível na crônica, que é linfocítica e pode dar exame frio | padrão-ouro da medicina nuclear; pior no esqueleto axial |
+| FDG-PET | o mais acurado (92%), maior VPP (94%) | maior sensibilidade e especificidade, sobretudo no esqueleto axial |
+!fim
+
+A divergência que vale saber: para o **leucócito marcado**, o Campbell (cap. 22, p. 795) diz que há **discordância** sobre o valor na crônica, porque o infiltrado é **predominantemente linfocítico**, enquanto o Rockwood (p. 849 aprox.) o chama de **padrão-ouro da medicina nuclear** para infecção ortopédica. Os dois concordam que o **FDG-PET** é o mais acurado, sobretudo no esqueleto axial.
+
+**Laboratório.** VHS e PCR estão altas na maioria; os **leucócitos, só em 35%** (Campbell, p. 811). O Rockwood (p. 852 aprox.) dá os cortes: **PCR acima de 10 mg/L** e **VHS acima de 30 mm/h**.
+
+**Biópsia e cultura.** O **exame de escolha é a biópsia óssea** com histologia e microbiologia (Campbell, p. 810); o Rockwood (p. 867 aprox.) chama **cultura óssea positiva com histopatologia** de padrão-ouro. As regras de coleta (Rockwood, p. 852 aprox.): tecido profundo e osso, **instrumentos separados** para cada amostra, **no mínimo 3 e no máximo 5 amostras, sempre em número ímpar**, aeróbios e anaeróbios. **Swab de fístula não é mais aceito**: coloniza, é polimicrobiano e engana; o Campbell (cap. 22, p. 796) só lhe dá valor se crescer S. aureus predominante ou uma espécie pura.
+
+**MARJOLIN: a fístula que muda.** A complicação **mais importante** da crônica é a **transformação maligna**, a **úlcera de MARJOLIN**, quase sempre **carcinoma espinocelular** agressivo e de mau prognóstico (Rockwood, p. 866 aprox.). O preditor é a **duração da osteomielite** (latência de **27 a 30 anos**). Os números divergem: o Rockwood dá **1,6% a 23%** dos pacientes com crônica; o Campbell (cap. 23, p. 818), **0,2% a 1,6%**, quase sempre espinocelular do trajeto fistuloso, mas também sarcoma de células reticulares e fibrossarcoma. O sinal de alerta é a **fístula antiga com mais dor e odor fétido**, que pede **biópsia** (Campbell, p. 810). No tratamento, o Campbell fala em **excisão local ampla ou amputação com quimioterapia e radioterapia** (p. 810) e chama a **amputação de meio mais confiável** (p. 818); o Rockwood põe a malignização entre as indicações de amputação e manda **ressecar os trajetos fistulosos com exame histológico** em todo desbridamento (p. 857 aprox.).
+
+# O tratamento da crônica do adulto {radar=confirmado}
+
+**Os objetivos.** A crônica é **muito difícil, se não impossível, de erradicar**, e recidiva anos depois; o alvo é aliviar sintomas e devolver função (Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 853 aprox.)). O Rockwood fala em **remissão** só após 1 ano, seguimento de **5 anos** e nunca em "cura". Os objetivos: **otimizar o hospedeiro**, **retirar todo o tecido desvitalizado**, **manejar o espaço morto** e **estimular a consolidação**, com equipe **ortoplástica** (ortopedista e cirurgião plástico).
+
+**O desbridamento é o tratamento.** A **adequação do desbridamento** é o principal preditor de sucesso (Rockwood, p. 856 aprox.); no paciente apto, o **desbridamento radical** é a escolha, e ele **não deve ser limitado pelo medo do defeito** que vai deixar. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 812), fala em abordagem **oncológica**, contestada por LANGIT, que obteve resultado comparável com desbridamento adequado e antibiótico local. Detalhes do Rockwood (p. 857 aprox.): irrigar com **ao menos 3 L de soro em baixa pressão**; o fechamento primário não é obrigatório, e o curativo a vácuo pode ficar até a próxima limpeza; **ressecar os trajetos fistulosos** e mandá-los à histologia.
+
+**O desbridamento muda com o tipo.** É aqui que a classificação ganha uso:
+
+- **Tipo I (medular)**: o foco está no canal. O Rockwood (p. 857 aprox.) indica a **fresagem intramedular**, com **fenestração da extremidade distal** do osso para drenar a irrigação, preservando a estabilidade cortical. Fresagem excessiva causa **necrose térmica**. O **RIA** (fresador-irrigador-aspirador) fresa e irriga ao mesmo tempo, com menos necrose térmica e sem a janela distal. Depois, pode-se pôr **haste de cimento com antibiótico**. O Campbell (p. 815 e 816) faz o mesmo na haste infectada, trocando-a depois pela definitiva.
+- **Tipo II (superficial)**: como o Campbell o define pelo **defeito de cobertura**, o raciocínio é limpar a superfície cortical e trazer partes moles vivas (retalho).
+- **Tipo III (localizada)**: **sequestrectomia** e curetagem (Campbell, Técnica 23.2, p. 813): azul de metileno nos trajetos 24 horas antes, janela cortical oval, retirar sequestros, pus e tecido cicatricial, **abrir para o canal** a cavidade selada por osso esclerótico e fresar até o **sinal da páprica** (sangramento puntiforme ativo).
+- **Tipo IV (difusa)**: ressecção do segmento e **estabilização**, de preferência com fixador tipo ILIZAROV (Campbell, p. 813), e reconstrução do defeito.
+
+**O implante.** O ideal é retirá-lo no desbridamento; se a fratura não consolidou, **não há osteólise ao redor e a fixação está estável**, desbridamento e antibiótico podem **suprimir** a infecção até a consolidação (Rockwood, p. 857 aprox.).
+
+!questoes central=conceitos-basicos-0227
+conceito: No tipo I de CIERNY e MADER, a doença é endosteal: desbrida-se o canal pela fresagem intramedular (com fenestração distal ou RIA) e, se preciso, haste de cimento com antibiótico.
+como: O TARO 2010 perguntou como desbridar a infecção crônica tipo I do fêmur após osteossíntese.
+armadilha: Responder sequestrectomia cortical (tipo III) ou ressecção segmentar (tipo IV), que tratam outra anatomia.
+alerta: Nenhum livro lido liga com todas as letras o tipo I à fresagem; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 857 aprox.), indica a fresagem quando o canal medular está acometido, e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 815), descreve fresagem e irrigação na troca por haste de cimento. O gabarito oficial foi preservado.
+!fim
+
+**O antibiótico sistêmico.** O Campbell (p. 812) registra que **não há consenso** sobre a duração e que, tradicionalmente, se dão **6 semanas intravenosas** após a excisão. O Rockwood (p. 855 aprox.) diz que a maioria recomenda **4 a 6 semanas**, porque a **revascularização do osso desbridado leva 3 a 4 semanas**, mas sem evidência forte. Na via, um ensaio randomizado mostrou que o **antibiótico oral nas primeiras 6 semanas não é inferior ao intravenoso**. O antibiótico **não substitui o desbridamento**.
+
+**O defeito ósseo: MASQUELET ou transporte.** O Campbell, o Rockwood e o HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 67, Fraturas dos ossos da perna no adulto), descrevem a **membrana induzida**: espaçador de PMMA com antibiótico no defeito, que induz uma **membrana vascularizada**, depois preenchida com enxerto. O intervalo diverge: o Campbell (p. 815) retira o espaçador **após 6 semanas**; o Rockwood (p. 857 aprox.) enxerta **4 a 8 semanas** depois e registra **reoperação por falha de revascularização do enxerto em até 18%** (p. 858 aprox.). O HEBERT a chama de bom receptáculo para o enxerto. O **transporte ósseo**, descrito por ILIZAROV nos anos 1950 (Rockwood, p. 857 aprox.), faz a corticotomia em **osso normal** e transporta o segmento até a consolidação; trata defeitos de até **13 cm** sobre haste (Campbell, p. 816). O Rockwood (p. 857 aprox.) lista as complicações: refratura **4% a 5%**, neurovasculares **2% a 13%**, infecção do pino **10% a 100%** e amputação por falha **3% a 4%**.
+
+**Partes moles.** O retalho muscular leva sangue, defesa e antibiótico ao leito, com sucesso de **66% a 100%** (Campbell, p. 816 e 817; a escolha por terço da tíbia está na seção do espaço morto); o enxerto aberto de PAPINEAU serve quando não há retalho possível, e a irrigação fechada de LAUTENBACH dá cerca de **85%** (Campbell, p. 814 e 817).
+
+**Quando parar.** O paciente frágil, que não sobreviveria à cirurgia extensa, recebe **desbridamento limitado, antibiótico supressivo e suporte nutricional** (Campbell, p. 810; Rockwood, p. 856 aprox.). A **amputação** vai de **1% a 17%** e chega a **50% no diabético**; indicações: **malignização**, falhas múltiplas e desejo do paciente com dor incapacitante (Rockwood, p. 862 aprox.). O HEBERT (cap. 26) a reserva como recurso extremo.
 
 # Espaço morto, antibiótico local e a infecção com implante {radar=confirmado}
 
@@ -302,20 +419,18 @@ alerta: O Campbell descreve fresagem e irrigação do canal na troca por haste d
 
 **As pérolas de PMMA.** Concentração local muito acima da CIM com nível sérico baixo, transportada pelo **hematoma**; só se mantém com **fechamento primário**, e **drenos de sucção não são recomendados** (diluem). Aminoglicosídeos são os mais usados; a **vancomicina elui menos**. A maioria dos antibióticos resiste à **cura exotérmica**; os autores somam 2 a 4 g de vancomicina, com ou sem 1,2 g de tobramicina, por pacote de 40 g. O nível bactericida dura só **2 a 4 semanas**; depois o cimento vira **corpo estranho** para bactérias formadoras de glicocálice. No cap. 22 (p. 797), o PMMA com antibióticos **termoestáveis** (tobramicina, vancomicina, gentamicina) é **padrão-ouro desde os anos 1970**, com concentração alta a **2 a 3 cm** da pérola e retirada em até **4 semanas**; as **quinolonas prejudicam condrócitos e consolidação**.
 
-**MASQUELET, haste de cimento, ILIZAROV e retalhos.** O espaçador induz **membrana vascularizada**, preenchida com enxerto após **6 semanas** (Fig. 23.12). Na haste infectada, retira-se a haste, **fresa-se e irriga-se o canal** (RIA) e põe-se haste de cimento com antibiótico. A distração sobre haste trata defeitos de até **13 cm**. Na tíbia: **gastrocnêmio no terço proximal, sóleo no médio, retalho livre no distal** (p. 815 a 817).
-
-**E o biofilme?** Os capítulos de osteomielite não têm seção de infecção pós-osteossíntese. O que trazem é o mecanismo: o **glicocálice** do S. aureus aumenta a aderência a implantes metálicos e protege contra o antibiótico (Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 964)); no pós-traumático **predominam os estafilococos** (Campbell, p. 812).
+**Retalhos na tíbia.** **Gastrocnêmio no terço proximal, sóleo no médio, retalho livre no distal**; MASQUELET, haste de cimento e ILIZAROV estão na seção do tratamento da crônica do adulto (Campbell, p. 815 a 817).
 
 !questoes central=conceitos-basicos-0045 relacionadas=conceitos-basicos-0064,conceitos-basicos-0058,conceitos-basicos-0093,conceitos-basicos-0194
 conceito: O antibiótico no PMMA precisa ser termoestável (tobramicina, gentamicina, vancomicina) para resistir à cura exotérmica; o glicocálice protege a bactéria aderida ao implante e ao cimento esgotado.
-como: O TARO 2016 pediu a propriedade do antibiótico no cimento; o TEOT 2022, a matriz do biofilme maduro; o TARO 2014, os agentes da infecção precoce; a prova de Ombro e Cotovelo, os critérios sugestivo e confirmatório de infecção da osteossíntese.
+como: O TARO 2016 pediu a propriedade do antibiótico no cimento; a SBOT-SP, a matriz do biofilme maduro; o TARO 2014, os agentes da infecção precoce; a prova de Ombro e Cotovelo, os critérios sugestivo e confirmatório de infecção da osteossíntese.
 armadilha: Escolher o antibiótico pelo espectro e esquecer a estabilidade ao calor.
-alerta: Os livros lidos não descrevem a matriz exopolissacarídea (só o glicocálice, `conceitos-basicos-0064`), não classificam a infecção pós-osteossíntese em precoce nem lhe dão S. aureus e bacilos gram-negativos como agentes (`conceitos-basicos-0058`, `conceitos-basicos-0093`) e não trazem critérios sugestivos e confirmatórios (`conceitos-basicos-0194`); os gabaritos oficiais foram preservados.
+alerta: Na versão 3, o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29), sustenta duas delas: a maturação do biofilme com matriz polissacarídica e proteica de substâncias poliméricas extracelulares (p. 841 e 842 aprox., `conceitos-basicos-0064`, embora sem a palavra exopolissacarídea) e os critérios da Tabela 29-2, em que a drenagem persistente é sugestiva e o microrganismo na histopatologia de tecido profundo é confirmatório (p. 837 aprox., `conceitos-basicos-0194`). Nenhum livro lido classifica a infecção pós-osteossíntese em precoce nem lhe dá S. aureus e bacilos gram-negativos como agentes (`conceitos-basicos-0058`, `conceitos-basicos-0093`). Os gabaritos oficiais foram preservados.
 !fim
 
 # Formas especiais: CRMO, GARRÉ, falciforme, pé e pelve {radar=oportunidade}
 
-**CRMO.** Inflamação óssea **não bacteriana** descrita por **GIEDION em 1972** (Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 973 a 975)). Pico aos **10 anos**; tíbia, fêmur, clavícula, pé e vértebra; **multifocal em 93%**. Associa-se a **pustulose palmoplantar**, psoríase, doença inflamatória intestinal e acne grave; síndromes como MAJEED apontam para a **IL-1**. Culturas negativas; diferencial com EWING, neuroblastoma e histiocitose. Trata-se com **AINE**, às vezes corticoide, e **pamidronato**; **não deve responder a antibiótico**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 818 e 819), chama-a de **autoinflamatória**, com lesões muitas vezes **bilaterais e simétricas**, RM de corpo inteiro, anti-TNF nos refratários e autolimitação em cerca de 2 anos.
+**CRMO.** Inflamação óssea **não bacteriana** descrita por **GIEDION em 1972** (Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 973 a 975)). Pico aos **10 anos**; tíbia, fêmur, clavícula, pé e vértebra; **multifocal em 93%**. Associa-se a **pustulose palmoplantar**, psoríase, doença inflamatória intestinal e acne grave; síndromes como MAJEED apontam para a **IL-1**. Culturas negativas; diferencial com EWING, neuroblastoma e histiocitose. Trata-se com **AINE**, às vezes corticoide, e **pamidronato**; **não deve responder a antibiótico**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 818 e 819), chama-a de **autoinflamatória**, com lesões muitas vezes **bilaterais e simétricas**, RM de corpo inteiro, anti-TNF nos refratários e autolimitação em cerca de 2 anos; dá incidência de **1 a 4 por milhão** ao ano, acometimento da **metáfise** de tíbia, fêmur e clavícula e diagnóstico **de exclusão**, com biópsia se houver dúvida. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 853 aprox.), põe a CRMO no diferencial da osteomielite do adulto: afeta sobretudo crianças, mas há **início na idade adulta**; a **esclerose marginal** das lesões é típica, e a doença autoinflamatória vizinha é a **SAPHO** (sinovite, acne, pustulose, hiperostose e osteíte).
 
 !tabela CRMO segundo cada livro (Tachdjian, p. 973 e 974; Campbell, p. 818 e 819)
 | Item | Tachdjian | Campbell |
@@ -369,4 +484,6 @@ armadilha: Responder úmero distal ou cabeça do rádio por analogia com as frat
 
 # Fechamento {radar=fundamento}
 
-> **Na prova, o que a versão 2 acrescenta:** KOCHER = **febre acima de 38,5 °C, sem apoio, VHS acima de 40, leucócitos acima de 12.000** (4 preditores, 99,6%); VHS depende do **fibrinogênio**, falha no **neonato e no falciforme** e serve para **suspender** o antibiótico; PCR pela **IL-6**, sobe em **6 h**, pico em **2 dias**, normal em **7 dias**; radiografia só com perda de **30% a 50%**; RM **98% e 75%**; cintilografia **fria** = grave; cronificação **19% x 2%** com até 3 semanas de antibiótico x mais; ROBERTS **IV = EWING**; JONES **B3** recidiva; CIERNY e MADER **III localizada** sem instabilidade, **IV** com instabilidade; PMMA exige antibiótico **termoestável**; espinocelular na fístula; CRMO **não responde a antibiótico**; Salmonella **2,2:1** na falciforme; espondilodiscite infantil = **Kingella**; coluna do adulto com enterococo e estreptococo = **endocardite**; tuberculose do cotovelo = **ulna proximal**.
+Na aguda da criança, a banca quer **anatomia vascular e idade**; na crônica do adulto, quer **o osso morto e quem o carrega**: sequestro, biofilme e o estadiamento de CIERNY e MADER, que junta o tipo anatômico ao hospedeiro. Os livros convergem no essencial (o desbridamento é o tratamento) e divergem nos números (MASQUELET, malignização, leucócito marcado).
+
+> **Na prova:** metáfise; vasos transfisários até **18 meses**; metáfises intra-articulares = **rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais**; KOCHER = febre acima de **38,5 °C**, sem apoio, VHS acima de **40**, leucócitos acima de **12.000**; PCR sobe em **6 h** e normaliza em cerca de **7 dias**; radiografia só com perda de **30% a 50%** após **10 a 21 dias**; ROBERTS **III** cortical diafisária, **IV** = diferencial com EWING, **VI** vertebral; prego no tênis = **Pseudomonas**; Salmonella **2,2:1** na falciforme; sequestro = **elevação periosteal e necrose óssea**; invólucro = osso novo vivo ao redor do morto; biofilme até **800 vezes** menos sensível; CIERNY e MADER: **I medular** (fresagem do canal), **II superficial**, **III localizada** (atravessa a cortical **sem instabilidade**), **IV difusa** (com **instabilidade**); hospedeiro **A** normal, **B** local ou sistêmico (múltiplas cirurgias e cicatriz = **B local**, logo o jovem hígido multioperado com instabilidade é **IV B**), **C** proibitivo; TC acha o **sequestro**; biópsia óssea é o exame de escolha e swab de fístula não vale; PMMA com antibiótico **termoestável**; MARJOLIN = **carcinoma espinocelular** na fístula antiga com dor e odor; CRMO **não responde a antibiótico**.
