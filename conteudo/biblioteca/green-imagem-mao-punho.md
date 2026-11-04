@@ -350,9 +350,9 @@ A placa volar deve ficar **proximal à linha de transição (watershed)**, porqu
 
 !questoes central=mao-1222
 conceito: SOONG gradua no perfil a proeminência da placa volar em relação à linha crítica e ao lábio volar; graus 1 e 2 (placa sobre ou junto ao lábio) têm alta taxa de ruptura dos flexores; a cobertura pelo pronador quadrado reduz o contato da placa com os tendões (Green, cap. 15, p. 550).
-como: A UERJ 2024 mostrou o perfil de uma placa volar além do lábio (grau 2) e pediu a classificação, a complicação esperada, opções de tratamento e a estrutura cujo reparo diminui a complicação.
+como: A UERJ 2024 mostrou o perfil de uma placa volar e pediu a classificação, a complicação esperada, opções de tratamento e a estrutura cujo reparo diminui a complicação.
 armadilha: Achar que SOONG protege o extensor longo do polegar (esse risco é do parafuso longo no dorso); SOONG é sobre os flexores no lado volar.
-alerta: Questão discursiva `mao-1222` sem gabarito no acervo; o livro sustenta grau 2, ruptura dos tendões flexores e o pronador quadrado como estrutura protetora. As opções de tratamento da ruptura não estão na ficha.
+alerta: Questão discursiva `mao-1222` sem gabarito no acervo; a resposta esperada do acervo classifica a placa como grau 1 (na figura, volar à linha crítica mas proximal à ponta do lábio volar; o limite do Green para o grau 2, até 3 mm da borda, não se mede sem escala), com ruptura dos tendões flexores como complicação e o pronador quadrado como estrutura protetora. As opções de tratamento da ruptura vêm da resposta esperada, não da ficha.
 !fim
 
 # Escafoide: das radiografias à RM {radar=confirmado}
