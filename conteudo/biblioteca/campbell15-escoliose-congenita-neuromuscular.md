@@ -145,7 +145,6 @@ O crescimento manda, mas os livros recortam os períodos de modo diferente: **pr
 conceito: O maior risco de progressão é a barra unilateral com hemivértebra contralateral; a barra isolada progride mais que duas hemivértebras do mesmo lado; vértebra em bloco é falha de segmentação e é a mais benigna.
 como: O TEOT 2025 mostrou quatro desenhos de defeitos de segmentação e formação e pediu o de maior risco; a prova de R4 de Coluna de Joinville 2010 pediu a afirmação correta, misturando o tipo de defeito do bloco, da hemivértebra e da cunha com a comparação entre barra e duas hemivértebras ipsilaterais.
 armadilha: Achar que duas hemivértebras do mesmo lado somam mais que uma barra, ou classificar bloco, hemivértebra e cunha no grupo errado.
-alerta: A figura da `coluna-0220` não foi vista; pelo gabarito (figura 4) e pelos três livros, o desenho de maior risco deve ser a barra unilateral com hemivértebra contralateral.
 !fim
 
 # O local da anomalia: torácica, toracolombar e lombossacra {radar=confirmado}
