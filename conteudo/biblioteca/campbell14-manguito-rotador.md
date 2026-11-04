@@ -309,7 +309,7 @@ alerta: A questão do TARO 2006 (`ombro-cotovelo-0511`) não tem gabarito oficia
 conceito: COFIELD mede o tendão (maciça a partir de 5 cm), GOUTALLIER mede a gordura do músculo (cinco estágios) e ELLMAN, a parcial (grau 3 acima de 6 mm, cerca de metade da espessura); acima de 50%, repara-se.
 como: O CET-PR mostrou uma parcial para classificar por ELLMAN; a SBOT-SP pediu o limite do grau 3; uma prova de Ortopedia, o grau de GOUTALLIER com 60% de gordura.
 armadilha: Trocar os limites de 3 e 6 mm do ELLMAN, ou chamar de grande uma rotura de 2 cm.
-alerta: O Campbell cita os cinco estágios de GOUTALLIER, mas o texto lido não traz a porcentagem de cada estágio cobrada em `ombro-cotovelo-0387`; o gabarito oficial foi preservado.
+alerta: O Campbell cita os cinco estágios de GOUTALLIER, mas o texto lido não traz a porcentagem de cada estágio cobrada em `ombro-cotovelo-0387`; o gabarito oficial foi preservado. A `ombro-cotovelo-0573` está sem gabarito oficial e sem gabarito pela bibliografia; a resposta provável é 6 mm, porque ELLMAN define o grau 3 como mais de 6 mm (cerca de metade da espessura do tendão).
 !fim
 
 # Imagem: HAMADA, acrômio, ângulo crítico e o músculo {radar=confirmado}
@@ -453,6 +453,7 @@ alerta: O tipo de colágeno depositado com a mobilização precoce (`ombro-cotov
 conceito: Para trás e para cima, grande dorsal; para a frente e para cima, peitoral maior com o arco coracoacromial intacto; o reparo parcial é a alternativa com melhores resultados nas maciças.
 como: O TARO 2015 pediu a transferência para a lesão do supraespinal e do infraespinal; o TEOT 2025, a transferência para a lesão anterossuperior.
 armadilha: Trocar o grande dorsal pelo peitoral maior, ou esquecer que o peitoral exige o arco coracoacromial intacto.
+alerta: Na `ombro-cotovelo-0565`, o gabarito oficial (peitoral maior) segue a técnica clássica; o Campbell 15 (cap. 14) diz que o grande dorsal para a tuberosidade menor vem substituindo o peitoral no subescapular irreparável.
 !fim
 
 # Irreparáveis: o que mais existe além do grande dorsal {radar=confirmado}
