@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-26-fise-distal-femur
-versao: 2
+versao: 3
 titulo: Fratura da fise distal do fêmur na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 26 · Fractures of the Distal Femoral Physis
 autores: Ying Li
-fonte: Livro conferido localmente em 26/10/2026, capítulo 26. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livros conferidos localmente em 26/10/2026 e 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 26 (o PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 30 (Lower Extremity Injuries, seção Knee), págs. 1332 a 1344; Campbell's Operative Orthopaedics, 15ª ed., capítulo 38 (Fractures and Dislocations in Children), págs. 1352 (aprox.), 1448 a 1451 e 1483 a 1485. As páginas citadas do Tachdjian e do Campbell são as impressas.
 subtemas: Fraturas do fêmur e da perna na criança; Trauma pediátrico
 resumo: SALTER-HARRIS II em 57%, valgo e varo com o ligamento mais forte que a fise, cruzado anterior no tipo III do côndilo medial, artéria poplítea no desvio anterior, fibular por tração, distúrbio do crescimento em cerca de metade, pinos lisos por 4 semanas, 10 dias para remanipular, PARK-HARRIS e ponte menor que 50%.
 ---
@@ -324,6 +324,205 @@ A **rigidez do joelho** aparece em até um terço dos pacientes, por aderências
 | Instabilidade do joelho | Checar ligamentos quando a fratura estiver estável; ressonância no tipo III |
 | Rigidez | Tirar o gesso em 4 semanas; evitar imobilização longa e manipulação agressiva |
 !fim
+
+# Os três livros lado a lado {radar=fundamento}
+
+O tema também é tratado no Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 30, Lower Extremity Injuries, seção Knee, págs. 1332 a 1344), e no Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, Fractures and Dislocations in Children, de David D. SPENCE e Benjamin W. SHEFFER, págs. 1448 a 1451). Os três concordam no essencial, fratura rara, de alta energia e com muita parada do crescimento, mas os números variam, e a banca costuma copiar o de um deles. Esta parte junta as divergências.
+
+## Anatomia e crescimento: o que cada livro diz
+
+A epífise distal do fêmur nasce de **um único núcleo**, presente ao nascimento, e é **a primeira epífise do corpo a ossificar** (Tachdjian, pág. 1332). Os colaterais e os cruzados se inserem **abaixo da fise**; no varo ou no valgo, os colaterais tensos **transferem a força para a fise**, que cede sem que o ligamento se rompa. Os números de crescimento, porém, não batem:
+
+!tabela Crescimento da fise distal do fêmur (RWC cap. 26; Tachdjian pág. 1332)
+| Dado | Rockwood and Wilkins, 10ª ed. | Tachdjian, 6ª ed. |
+| --- | --- | --- |
+| Contribuição para o fêmur | 70% | Não traz |
+| Contribuição para o membro inferior | 37% | Cerca de 40% |
+| Ritmo anual | 9 a 10 mm | 8 a 10 mm |
+| Fechamento nas meninas | 14 anos, em média | Cerca de 13 anos |
+| Fechamento nos meninos | 16 anos, em média | Cerca de 15 anos |
+!fim
+
+Se a alternativa disser "cerca de 40% do membro" ou fechamento aos 13 e 15 anos, a fonte é o Tachdjian; a ideia é a mesma: é a fise que mais cresce no membro inferior.
+
+O Tachdjian acrescenta os músculos que desviam os fragmentos: as **duas cabeças do gastrocnêmio** e o plantar, presos na face posterior da metáfise logo acima da fise, **fletem o fragmento distal**; o **adutor magno**, no tubérculo adutor, leva-o para **varo**. Há também uma nuance vascular. O Rockwood fala em rede rica de anastomoses para explicar por que a **epífise** quase nunca necrosa; o Tachdjian lembra que a **circulação colateral em torno do joelho é relativamente pobre** para manter a **perna** viva, e a lesão da poplítea não tratada logo custa o membro. Um fala da epífise, o outro da perna inteira.
+
+O Campbell entra pela histologia: em geral a fratura fisária passa pela **zona proliferativa**, a mais fraca (pág. 1352, aprox.), mas no fêmur distal os tipos I e II **atravessam várias zonas, inclusive a hipertrófica**, o que explica a parada mais frequente (pág. 1448). Quanto à frequência, o Rockwood fala em menos de 2% de **todas** as lesões fisárias; o Tachdjian e o Campbell, em **7% das lesões fisárias do membro inferior**. São denominadores diferentes.
+
+# O mecanismo muda com a idade {radar=fundamento}
+
+O Tachdjian (págs. 1332 e 1333) organiza o mecanismo por faixa etária, o que ajuda a reconhecer a vinheta.
+
+!tabela Mecanismo por idade (Tachdjian págs. 1332 e 1333; RWC cap. 26)
+| Idade | Mecanismo típico | Tipo e observação |
+| --- | --- | --- |
+| Recém-nascido | Parto, sobretudo apresentação pélvica | Em geral SALTER-HARRIS I sem desvio, descoberto pelo calo em 2 a 3 semanas |
+| Lactente e criança pequena | Maus-tratos | Fratura do canto metafisário com fise alargada, patognomônica no Rockwood |
+| 3 a 10 anos | Trauma grave: queda de altura, atropelamento | Precisa de mais energia; poucos casos por esporte |
+| Adolescente | Quedas e esporte (futebol americano) | Golpe lateral em valgo; SALTER-HARRIS II ou III |
+| Doença de base | Trauma mínimo (mielomeningocele, paralisia cerebral, artrogripose ao manipular joelho rígido) | Na mielomeningocele, imobilização mais longa |
+!fim
+
+No conjunto das séries, o **atropelamento** responde por **45% a 50%**, o **esporte** por **25%** e as **quedas** por cerca de **20%**. Abaixo de **11 anos** (os juvenis), é preciso **mais energia** para separar a fise, porque periósteo e pericôndrio são espessos; essas fraturas machucam mais a fise e evoluem pior (Tachdjian, pág. 1335).
+
+## Valgo e hiperextensão
+
+Para o Tachdjian, as duas forças diretas mais comuns são o **valgo** e a **hiperextensão**; a fise se separa do lado da **tensão**, e o fragmento ósseo fica do lado da **compressão**. No **valgo** (golpe na face lateral), a fratura é II ou III, o **periósteo rompe do lado medial**, a epífise vai para **lateral** com o **fragmento metafisário lateral**, e a equimose fica **medial**. Na **hiperextensão**, a epífise vai para **anterior**, empurrada pela força e puxada pelo quadríceps; o periósteo posterior rasga, a dobradiça íntegra e o fragmento metafisário ficam **anteriores**, e a ponta da diáfise afunda na **fossa poplítea**, onde ameaça vasos poplíteos e nervos fibular e tibial posterior.
+
+# A classificação nos três livros {radar=fundamento}
+
+Os três usam SALTER-HARRIS, e os três dizem que, **no fêmur distal, ela prevê mal o desfecho**. As frequências, porém, mudam:
+
+!tabela Frequência dos tipos no fêmur distal (RWC cap. 26; Tachdjian págs. 1333 a 1335; Campbell Tabela 38.9)
+| Tipo | Rockwood and Wilkins, 10ª ed. | Tachdjian, 6ª ed. | Campbell, 15ª ed. |
+| --- | --- | --- | --- |
+| I | Cerca de 15% | 7,7%; recém-nascido e adolescente | Muitos sem desvio; raramente cirúrgico |
+| II | Cerca de 57% | Cerca de 60%; adolescente, desviado | O mais comum; crianças maiores; desvio coronal; parada em 30% a 50% |
+| III | Cerca de 10% | Cerca de 10%; mais no côndilo medial | Raro; ponte se não alinhado |
+| IV | Cerca de 12% | Cerca de 10% | Ainda mais raro; a espícula metafisária preocupa |
+| V | Cerca de 3% | Cerca de 6% | Incomum; fechamento uniforme; mais frequente aqui que em outras fises |
+| Periférico (VI de RANG) | Raríssimo; varo, colateral lateral | Não traz | Borda da fise, sobretudo medial, arrancada com o pericôndrio pelo colateral; angulação grave |
+!fim
+
+O que mais cai é o ponto comum: **o tipo II é o mais frequente em todos**, perto de 60%. O Campbell ainda afirma que, aqui, o **II causa paradas mais graves** que em outras partes do esqueleto. Nos tipos III e IV, o Campbell (Fig. 38.140) mostra formas **unicondilares, bicondilares** e a combinação de III e IV que chama de **triplanar**, e pede imagem avançada porque a **lesão intra-articular associada é mais comum** quando o traço cruza a epífise.
+
+## O fragmento de THURSTON-HOLLAND em cada livro
+
+- No Tachdjian, ele marca o lado da compressão: no valgo fica **lateral** (Fig. 30.77), e a redução usa manobra em **varo**, de hipercorreção, que tensiona o periósteo íntegro preso a ele.
+- No Rockwood, ele protege a fise presa a ele, e a parada atinge o **lado oposto** (espícula medial, parada lateral, valgo).
+- No Campbell, quando é **grande**, no adolescente, recebe **um ou dois parafusos canulados** que não cruzam a fise; quando é **pequeno**, não segura: a Fig. 38.144 mostra perda de redução em 2 semanas por fixar só a espícula pequena, e então se cruzam fios lisos pela fise.
+
+# Avaliação: a radiografia de estresse saiu de cena {radar=fundamento}
+
+No Tachdjian (pág. 1335), a criança não anda, o joelho fica **fletido pelo espasmo dos isquiotibiais**, a equimose mostra a força e o **edema na fossa poplítea** alerta para lesão vascular. O perigo é a fratura que passa despercebida: dos tipos III e IV, cerca de **um terço** não é vista na chegada, e num estudo **50% dos minimamente desviados (menos de 2 mm)** foram perdidos. **Hemartrose importante no atleta com fise aberta** pede imagem avançada se a radiografia não fechar o diagnóstico.
+
+!tabela Estresse e imagem avançada (RWC Tabela 26-1; Tachdjian págs. 1333 e 1336; Campbell págs. 1448 e 1449)
+| Livro | Radiografia em estresse | Ressonância | Tomografia |
+| --- | --- | --- | --- |
+| Rockwood and Wilkins, 10ª ed. | Dói e pode lesar a fise; o autor evita | Tipo I oculto, lactente, partes moles no tipo III | Em todo tipo III e IV visto na radiografia |
+| Tachdjian, 6ª ed. | "Pode ser considerada", supervisionada pelo médico; ainda citada para confirmar o tipo I sem desvio do adolescente | Separa lesão interna do joelho de fratura sem desvio; recém-nascido | Desvio e degrau nos tipos III e IV |
+| Campbell, 15ª ed. | **Substituída pela ressonância**, pelo risco à fise e pela dor | Primeira escolha para separar lesão ligamentar de fratura oculta | Com a ressonância, para degrau e planejamento |
+!fim
+
+A posição moderna é a do Rockwood e do Campbell: **a ressonância substituiu a radiografia de estresse**. O Tachdjian ainda pede radiografias do **fêmur inteiro com o quadril**, **comparação com o joelho oposto** quando se suspeita do tipo V, **índice tornozelo-braço** ou imagem vascular, e palpação dos compartimentos **nas primeiras 48 horas** (págs. 1335 e 1336).
+
+# Tratamento por tipo nos três livros {radar=clinico}
+
+Os princípios do Tachdjian (pág. 1339) são os do Rockwood: **redução sob anestesia geral ou sedação**, manobra feita **principalmente de tração**, **redução anatômica** sobretudo nos tipos III e IV, e fixação que **evita a fise** ou, quando a cruza, é **sem rosca**. Ele cita SALTER: se for preciso manipular demais, é melhor preservar o crescimento e fazer **osteotomia depois**.
+
+## Quanto desvio se aceita
+
+O Tachdjian quer redução anatômica e estável sobretudo **acima de 10 anos**; na criança menor, aceita até **20 graus no plano sagital**, **menos de 5 graus de varo ou valgo** e **nenhuma rotação**. O Campbell (págs. 1448 e 1449): **abaixo de 5 anos**, alinhamento geral aceitável é preferível a tentativas forçadas; perto da maturidade, quase anatômica; no tipo III, a maioria aceita **até 2 mm** com redução fechada.
+
+!tabela Conduta por tipo nos três livros (RWC Tabela 26-2; Tachdjian págs. 1339 a 1342; Campbell págs. 1448 a 1450)
+| Situação | Rockwood and Wilkins, 10ª ed. | Tachdjian, 6ª ed. | Campbell, 15ª ed. |
+| --- | --- | --- | --- |
+| Sem desvio | Gesso; radiografia em 5 a 7 dias | Gesso inguinopodálico 4 a 6 semanas, sem carga | Não detalha |
+| I no recém-nascido | Ultrassonografia pode guiar a redução | Imobilizar sem reduzir; curativo volumoso | Não detalha |
+| I e II desviados | Redução fechada e fios lisos cruzados | Redução sob anestesia; fios lisos na criança menor | Gesso com cinto pélvico e fios lisos de 2,4 mm cruzados se instável |
+| II com fragmento grande | Parafusos canulados pelo fragmento | Parafusos canulados de 4,0 ou 6,5 mm acima de 10 anos | Um ou dois parafusos canulados no adolescente |
+| III | Redução anatômica e parafusos epifisários | Aberta (ou artroscópica) em todos, mesmo sem desvio; dois parafusos na epífise | Artrotomia; parafuso transversal ao côndilo oposto sem cruzar a fise |
+| IV | Igual ao III | Aberta; fixação paralela à interlinha na metáfise e na epífise | Aberta; espícula grande fixada à metáfise |
+| Imobilização | Pinos e gesso fora em 4 semanas | Gesso 6 a 8 semanas; fios fora em 4 semanas e mais 2 de gesso | Consolida em 4 a 6 semanas; carga com 8 a 10 semanas |
+!fim
+
+A duração é a divergência mais prática: 4 semanas no Rockwood, 6 a 8 no Tachdjian, 4 a 6 no Campbell. Para o tempo de consolidação, os três convergem em **4 a 6 semanas**.
+
+## Detalhes de técnica que caem
+
+**Fios cruzados.** O Campbell usa fios **lisos de 2,4 mm** pelos côndilos, **cruzando perto do centro da fise** e penetrando a cortical oposta da metáfise, para impedir a rotação da epífise; retirados em **4 a 6 semanas**, dificilmente causam distúrbio do crescimento (págs. 1449 e 1450).
+
+**O tipo II no Tachdjian** (págs. 1341 e 1342). De **60% a 75%** chegam desviados, e entre os juvenis quase **100%**. Redução por tração e **hipercorreção**, gesso com o joelho em **20 a 30 graus**; uma **lesão ligamentar** associada atrapalha a manobra e quase sempre obriga a fixar. A literatura fixa só **10% a 15%** dos tipos II, mas os autores preferem fixar todos. A redução fechada falha em cerca de **5%**, quase sempre pelo **periósteo interposto do lado da tensão**, às vezes por músculo.
+
+**A posição do joelho na hiperextensão** diverge. O Tachdjian reduz com flexão crescente até cerca de **60 graus** e gessa nessa posição, estendendo aos poucos em 3 a 4 semanas, mas registra a opinião contrária de imobilizar **em extensão** quando o fragmento distal é posterior, com a cabeça medial do gastrocnêmio servindo de tala. O Campbell usa **45 graus** no desvio **anterior**, comparando com o supracondiliano do úmero (o quadríceps faz o papel do tríceps), e **extensão** no desvio **posterior** (pág. 1450). O Rockwood fixa com pinos justamente para poder imobilizar em **leve flexão**.
+
+# Lesões associadas: os números de cada livro {radar=clinico}
+
+## Nervo fibular e artéria poplítea
+
+O Tachdjian (pág. 1343) dá ao fibular cerca de **5%** (6 de 111), por estiramento no **varo violento** ou trauma direto, e diz que **todas as lesões publicadas se recuperaram em até 6 meses**; ENMG se nada voltar em **3 meses**, exploração se houver fibrilação ou desnervação. O Rockwood dá **2% a 7%** e recuperação em **6 a 12 semanas**.
+
+Na artéria, os dois **reduzem antes de investigar**. No Tachdjian (págs. 1342 e 1343): com assimetria de pulso, **redução fechada suave imediata** e novo exame; se nada mudar, **arteriografia** e possível exploração, sem atraso, porque **isquemia quente acima de 6 horas** piora o salvamento. A fratura é estabilizada por **via medial**, que dá acesso à artéria e à safena. **Pé quente sem pulso com arteriografia normal: observar 48 horas.** O Rockwood dá **15 a 20 minutos** para a perfusão voltar antes de explorar e fasciotomia com isquemia acima de **6 a 8 horas**.
+
+## Ligamentos e meniscos
+
+!tabela Lesão ligamentar associada (RWC cap. 26; Tachdjian pág. 1343)
+| Dado | Rockwood and Wilkins, 10ª ed. | Tachdjian, 6ª ed. |
+| --- | --- | --- |
+| Frequência | Instabilidade em 8% a 37% (até 40%) | 23% (26 de 111) |
+| Mais lesado | Cruzado anterior, sobretudo no III do côndilo medial | Cruzado anterior |
+| Depois | Colaterais, cruzado posterior, meniscos | Colateral lateral, depois colateral medial |
+| Quando examinar | Fratura estável ou consolidada; ressonância no tipo III | Assim que houver consolidação inicial |
+| Menisco | Reparo periférico na cirurgia da fratura | Procurar lesão; artroscopia pode ser necessária |
+!fim
+
+# Complicações tardias: os números de cada livro {radar=clinico}
+
+## Distúrbio do crescimento e discrepância
+
+O Campbell (pág. 1450) cita a mesma metanálise de **564 fraturas** do Rockwood: **52%** de distúrbio do crescimento (36% no I, 58% no II, 49% no III, 64% no IV). A discrepância é que diverge:
+
+!tabela Complicações tardias (RWC cap. 26; Tachdjian págs. 1343 e 1344; Campbell pág. 1450)
+| Complicação | Rockwood and Wilkins, 10ª ed. | Tachdjian, 6ª ed. | Campbell, 15ª ed. |
+| --- | --- | --- | --- |
+| Distúrbio do crescimento | 52% (metanálise) | Frequente, apesar de redução e fixação melhores | 52% (mesma metanálise) |
+| Discrepância | Maior que 1,5 cm em só 22% | Maior que 2 cm em cerca de um terço | Maior que 1,5 cm em 52% |
+| Deformidade angular | Lado previsto pelo fragmento | 29% (49 de 171) | Comum, pela ponte óssea |
+| Perda de movimento | Até um terço | 27% (45 de 167) | Entre as complicações tardias |
+!fim
+
+O Rockwood explica seus 22%: muitas fraturas acontecem perto do fim do crescimento. O Campbell traz outro dado da metanálise: o **distúrbio do crescimento foi mais frequente com fixação**, mas a **discrepância clinicamente importante foi menor com fixação (27%) do que sem (37%)**. A fixação não é a vilã; a gravidade leva tanto à fixação quanto à parada. Os fatores de risco do Tachdjian repetem os do Rockwood: **alta energia**, **idade juvenil**, **desvio grande** e **cominuição**; para investigar a ponte, ele pede **tomografia**, e o Rockwood prefere a ressonância.
+
+## Ponte fisária: a ressecção de LANGENSKIÖLD
+
+O Campbell (págs. 1352 aprox. e 1483) explica a lógica: a **ponte central tende a encurtar** e a **periférica, a angular**; a correção espontânea é muito rara; tamanho e lugar são mapeados por **TC ou RM tridimensional**. Perto da maturidade, observa-se. A ressecção é **imprevisível**, com insucesso em **10% a 40%**, e funciona melhor em **criança jovem com ponte periférica pequena (menos de 30% da fise)**. Para pontes grandes, **epifisiodese do restante da fise**, com correção angular e alongamento.
+
+A técnica de **LANGENSKIÖLD** (Campbell, técnica 38.35, págs. 1483 e 1484):
+
+1. Mapear a ponte com RM e TC em dois planos; **mais da metade da fise deve estar normal**, e a ponte, **periférica**, com angulação ou discrepância progressivas.
+2. Abordar a periferia junto à ponte, com **garrote** e **lupa ou microscópio**.
+3. Ressecar até **ver cartilagem fisária em toda a volta da cavidade**, sem deixar ponte nem tirar cartilagem sadia.
+4. Preencher com **gordura autógena**, de preferência da **prega glútea**, e suturar tecido por cima para segurá-la.
+
+A interposição pode ser **enxerto de fise, gordura livre ou Silastic**; o enxerto de fise da **crista ilíaca** foi superior. A fise não se regenera no local, mas a cartilagem sadia em volta volta a crescer de forma ordenada. Um limite que cai em prova: **a ressecção não corrige deformidade angular importante**; diminui a recidiva e o número de osteotomias, e por isso se associa à osteotomia quando a deformidade já existe. Na técnica de **INGRAM**, a osteotomia é feita **no nível da ponte, paralela à fise**, abrindo em cunha para **ganhar comprimento**, e a ponte é ressecada por dentro; na de **BIRCH**, para pontes periféricas, parte-se da junção com o **anel pericondral sadio**, sob fluoroscopia; pontes **centrais** entram por **janela metafisária**. O Tachdjian (Fig. 30.90) mostra uma parada após tipo IV tratada com **epifisiólise com interposição de gordura e marcador metálico**, com crescimento retomado dois anos depois.
+
+!tabela Indicação de ressecção da ponte (RWC cap. 26; Tachdjian pág. 1343; Campbell págs. 1352 aprox. e 1483)
+| Critério | Rockwood and Wilkins, 10ª ed. | Tachdjian, 6ª ed. | Campbell, 15ª ed. |
+| --- | --- | --- | --- |
+| Tamanho da ponte | Menos de 50% da fise | Menos de 50% da fise | Menos da metade; melhor se menos de 30% |
+| Crescimento restante | Pelo menos 2 anos | Pelo menos 2,5 cm | Criança jovem |
+| Resultado | Retomada em 25% a 80% | Não traz número | Insucesso em 10% a 40% |
+| Com angulação | Osteotomia se maior que 15 a 20 graus | Osteotomia ou epifisiólise se maior que 5 graus | Osteotomia associada |
+!fim
+
+## Epifisiodese contralateral e alongamento
+
+- **Rockwood**: estima a discrepância final sem medidas seriadas (PALEY, MENELAUS); **epifisiodese femoral distal contralateral** se a projeção passar de **2 a 2,5 cm** na criança mais velha; acima de **2,5 cm**, planeja-se **alongamento**.
+- **Tachdjian** (pág. 1343): **gráfico de linha reta de MOSELEY** por 1 a 2 anos ou tabelas de **ANDERSON-GREEN**; **menos de 2 cm**, nada; **2 a 6 cm**, **epifisiodese contralateral do fêmur distal ou da tíbia proximal**; acima disso, **alongamento do fêmur**.
+- **Campbell** (pág. 1450): epifisiodese contralateral pela parada com encurtamento, angulação ou ambos, combinada a ressecção da ponte e osteotomia.
+
+O piso converge em **2 cm**; o teto diverge: 2,5 cm para planejar alongamento no Rockwood, até **6 cm** de epifisiodese no Tachdjian.
+
+## Deformidade angular e rigidez
+
+O Rockwood prevê o lado da deformidade pelo fragmento metafisário; o Tachdjian (pág. 1344) afirma que **não há correlação entre a direção do desvio e o surgimento de valgo ou varo**. Falam de coisas diferentes: lado do fragmento num, direção do desvio no outro. O Tachdjian trata a angulação anormal acima de **5 graus**, com osteotomia ou epifisiólise.
+
+Para a rigidez (**27%**), o Tachdjian cita estudo multicêntrico em que o **gesso causou mais perda de movimento**; a incongruência dos tipos III e IV também predispõe. Prevenção: **imobilização curta**, **retirar os fios cruzados cedo** e **redução anatômica**; exercícios ativos com **4 a 6 semanas**, e uma **tala posterior removível** com 4 semanas permite exercitar duas vezes ao dia.
+
+# Seguimento e prognóstico nos três livros {radar=fundamento}
+
+O Rockwood pede **radiografias em pé a cada 6 meses até a maturidade**; o Tachdjian, **pelo menos 18 meses** de seguimento (pág. 1342); o Campbell, observação **até a maturidade esquelética** (pág. 1450), lembrando que os pais devem ser avisados do risco de distúrbio do crescimento em toda fratura fisária (pág. 1352, aprox.).
+
+!tabela Fatores de prognóstico (RWC cap. 26; Tachdjian pág. 1342; Campbell pág. 1448)
+| Fator | Rockwood and Wilkins, 10ª ed. | Tachdjian, 6ª ed. | Campbell, 15ª ed. |
+| --- | --- | --- | --- |
+| Idade | Pior entre 2 e 11 anos; bom abaixo de 2 | Juvenil (menos de 11 anos) pior que adolescente | Abaixo de 5 anos, a remodelação tolera alinhamento imperfeito |
+| Desvio | Maior que 50% da metáfise prevê complicações; 4 vezes mais parada | Forte preditor | Preditor significativo (73 pacientes) |
+| Redução | Anatômica, com pouco trauma | Redução inadequada deixa discrepância de cerca de 25 mm | Quase anatômica perto da maturidade |
+| SALTER-HARRIS | Prevê mal; I e II também param | I e II evoluem melhor que III, IV e V | Valor discutível; preditor no estudo de 73 |
+!fim
+
+Essa é a contradição que a banca explora. Pela regra geral, e pelo Tachdjian, **os tipos I e II evoluem melhor**; pela metanálise citada no Rockwood e no Campbell, **os tipos I e II do fêmur distal param em 36% e 58%**. As duas coisas valem: o IV para ainda mais (64%), mas o II, por ser o mais comum e parar em mais da metade, é o que mais produz sequela. Quem aplica só a regra geral erra a questão do fêmur distal.
 
 # Fechamento {radar=fundamento}
 
