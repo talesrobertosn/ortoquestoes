@@ -4,7 +4,8 @@ import { carregarComentario } from '../../dados/comentarios'
 import { carregarEdicoes, esquecerEdicoes, foraDoSite, urlImagem, type EdicaoQuestao } from '../../dados/edicoes'
 import type { ComentarioIA, Imagem, Letra, Questao } from '../../dados/tipos'
 import { usarIndice } from '../../dados/usarIndice'
-import { chamarRpc, enviarImagemQuestao } from '../../servicos/supabase'
+import { chamarRpc } from '../../servicos/supabase'
+import { enviarImagens, imagensDaTransferencia, type ImagemLocal } from '../imagensQuestao'
 import { href } from '../../util/rotas'
 import { TextoEditorial } from '../../componentes/TextoEditorial'
 import { erroDoPainel } from '../../componentes/admin/formatos'
@@ -73,48 +74,21 @@ function CampoTexto({ rotulo, valor, aoMudar, linhas = 3, dica }: { rotulo: stri
   </div>
 }
 
-const LADO_MAXIMO = 1800
-/** Reduz e converte para WebP (ou JPEG) antes do envio; GIF segue como está. */
-async function prepararImagem(arquivo: File): Promise<{ blob: Blob; extensao: string }> {
-  if (arquivo.type === 'image/gif') return { blob: arquivo, extensao: 'gif' }
-  const endereco = URL.createObjectURL(arquivo)
-  try {
-    const img = new Image()
-    img.src = endereco
-    await img.decode().catch(() => { throw new Error(`Não consegui abrir "${arquivo.name}". Tente salvar como JPG ou PNG.`) })
-    const escala = Math.min(1, LADO_MAXIMO / Math.max(img.naturalWidth, img.naturalHeight))
-    const tela = document.createElement('canvas')
-    tela.width = Math.max(1, Math.round(img.naturalWidth * escala)); tela.height = Math.max(1, Math.round(img.naturalHeight * escala))
-    const ctx = tela.getContext('2d')
-    if (!ctx) throw new Error('Seu navegador não conseguiu processar a imagem.')
-    ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, tela.width, tela.height); ctx.drawImage(img, 0, 0, tela.width, tela.height)
-    const gerar = (tipo: string) => new Promise<Blob | null>(ok => tela.toBlob(ok, tipo, 0.86))
-    const webp = await gerar('image/webp')
-    if (webp && webp.type === 'image/webp') return { blob: webp, extensao: 'webp' }
-    const jpeg = await gerar('image/jpeg')
-    if (!jpeg) throw new Error('Seu navegador não conseguiu converter a imagem.')
-    return { blob: jpeg, extensao: 'jpg' }
-  } finally { URL.revokeObjectURL(endereco) }
-}
-
 function Imagens({ imagens, aoMudar, idQuestao, pasta }: { imagens: Imagem[]; aoMudar: (v: Imagem[]) => void; idQuestao: string; pasta: string }) {
   const [enviando, definirEnviando] = useState(false)
-  async function enviar(arquivos: FileList | null) {
-    if (!arquivos?.length) return
+  const [sobre, definirSobre] = useState(false)
+  async function enviar(locais: ImagemLocal[] | Promise<ImagemLocal[]>) {
     definirEnviando(true)
     try {
-      const novas: Imagem[] = []
-      for (const arquivo of Array.from(arquivos)) {
-        const { blob, extensao } = await prepararImagem(arquivo)
-        if (blob.size > 5 * 1024 * 1024) throw new Error(`"${arquivo.name}" passa de 5 MB mesmo depois de reduzida.`)
-        const base = arquivo.name.toLowerCase().normalize('NFKD').replace(/\.[^.]*$/, '').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 60) || 'imagem'
-        novas.push({ arquivo: await enviarImagemQuestao(`${idQuestao}/${pasta}/${Date.now()}-${base}.${extensao}`, blob), legenda: null })
-      }
+      const lista = await locais
+      if (!lista.length) return
+      const novas = await enviarImagens(lista, idQuestao, pasta)
       aoMudar([...imagens, ...novas])
       avisoRapido(novas.length === 1 ? 'Imagem enviada. Salve a edição para valer no site.' : `${novas.length} imagens enviadas. Salve a edição para valer no site.`)
     } catch (f) { avisoRapido(f instanceof Error ? f.message : 'Não foi possível enviar a imagem.', 'erro') } finally { definirEnviando(false) }
   }
-  return <div className="a3-galeria">
+  // Ctrl+V com a galeria em foco (clique num espaço vazio dela ou Tab até ela).
+  return <div className="a3-galeria" tabIndex={0} aria-label={`Imagens (${pasta}): arraste ou cole com Ctrl+V`} onPaste={e => { if (e.clipboardData?.files.length || e.clipboardData?.types.includes('text/html')) { e.preventDefault(); void enviar(imagensDaTransferencia(e.clipboardData)) } }}>
     {imagens.map((img, i) => <figure key={img.arquivo} className="a3-galeria__item">
       <img src={urlImagem(img.arquivo)} alt={img.legenda ?? ''} loading="lazy" />
       <input className="a3-entrada" placeholder="Legenda (opcional)" aria-label="Legenda" value={img.legenda ?? ''} onChange={e => aoMudar(imagens.map((x, j) => j === i ? { ...x, legenda: e.target.value || null } : x))} />
@@ -124,9 +98,11 @@ function Imagens({ imagens, aoMudar, idQuestao, pasta }: { imagens: Imagem[]; ao
         <button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno" onClick={() => aoMudar(imagens.filter((_, j) => j !== i))}><Icone nome="lixeira" tamanho={14} />Tirar</button>
       </div>
     </figure>)}
-    <label className={'a3-galeria__enviar' + (enviando ? ' ocupado' : '')}>
-      <Icone nome="mais" tamanho={20} /><span>{enviando ? 'Enviando…' : 'Enviar imagem'}</span><small>reduzida e convertida antes de subir</small>
-      <input type="file" accept="image/*" multiple className="a3-so-leitor" disabled={enviando} onChange={e => { void enviar(e.target.files); e.target.value = '' }} />
+    <label className={'a3-galeria__enviar' + (enviando ? ' ocupado' : '') + (sobre ? ' sobre' : '')}
+      onDragOver={e => { e.preventDefault(); definirSobre(true) }} onDragLeave={() => definirSobre(false)}
+      onDrop={e => { e.preventDefault(); definirSobre(false); void enviar(imagensDaTransferencia(e.dataTransfer)) }}>
+      <Icone nome="mais" tamanho={20} /><span>{enviando ? 'Enviando…' : 'Enviar imagem'}</span><small>escolha, arraste ou cole (Ctrl+V); reduzida antes de subir</small>
+      <input type="file" accept="image/*" multiple className="a3-so-leitor" disabled={enviando} onChange={e => { const lista = Array.from(e.target.files ?? []).map(arquivo => ({ arquivo })); e.target.value = ''; void enviar(lista) }} />
     </label>
   </div>
 }

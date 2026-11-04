@@ -491,3 +491,5 @@
   .a3-ficha-quem > span + span::before { content: none; }
   .a3-ficha-quem > span:first-child { font-weight: 650; }
 }
+.a3-galeria:focus-visible { outline: 2px solid var(--a3-tinta); outline-offset: 4px; border-radius: 14px; }
+.a3-galeria__enviar.sobre { background: var(--a3-alt); border-color: var(--a3-tinta); color: var(--a3-tinta); }
