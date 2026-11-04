@@ -254,13 +254,15 @@ export interface PontoColuna {
  * andamento fica claro e tracejado para não parecer queda. Os números só somem quando não cabem (muitas colunas
  * no celular); aí ficam o maior e o último, e o resto na dica e em "Ver dados".
  */
-export function Colunas({ pontos, series, formato = inteiro, altura = 210, descricao, media = true, rotuloMedia = 'média', cor = 'verde', destacarMaior = false }: {
+export function Colunas({ pontos, series, formato = inteiro, altura = 210, descricao, media = true, rotuloMedia = 'média', cor = 'verde', destacarMaior = false, lado = false }: {
   pontos: PontoColuna[]; series: Array<{ nome: string; estilo?: 1 | 2 | 'hachura' }>; formato?: (n: number) => string
   altura?: number; descricao: string; media?: boolean; rotuloMedia?: string
   /** Cor da série principal: verde da marca, verde claro ou ouro. */
   cor?: 'verde' | 'claro' | 'ouro'
   /** A coluna mais alta ganha a cor cheia e as outras ficam claras ("o dia em que mais…"). */
   destacarMaior?: boolean
+  /** Séries lado a lado em vez de empilhadas (comparar esta semana com a passada). */
+  lado?: boolean
 }) {
   const caixa = useRef<HTMLDivElement>(null)
   const [largura, definirLargura] = useState(320)
@@ -276,7 +278,7 @@ export function Colunas({ pontos, series, formato = inteiro, altura = 210, descr
     return () => ro.disconnect()
   }, [])
   const n = pontos.length
-  const total = (p: PontoColuna) => p.partes.reduce((s, v) => s + (v || 0), 0)
+  const total = (p: PontoColuna) => lado ? Math.max(0, ...p.partes.map(v => v || 0)) : p.partes.reduce((s, v) => s + (v || 0), 0)
   const valores = pontos.map(total)
   const completos = pontos.filter(p => !p.parcial).map(total)
   const mediaV = media && completos.length >= 2 ? completos.reduce((s, v) => s + v, 0) / completos.length : null
@@ -324,6 +326,18 @@ export function Colunas({ pontos, series, formato = inteiro, altura = 210, descr
         let acumulado = 0
         const t = valores[i]
         const apagado = ativo !== null && ativo !== i
+        if (lado) {
+          const nS = series.length, larg = Math.max(3, Math.min((coluna * 0.8) / nS, 30))
+          return <g key={i} opacity={apagado ? 0.5 : 1}>{series.map((s, k) => {
+            const v = p.partes[k] ?? 0
+            const x = xc(i) - (nS * larg) / 2 + k * larg
+            const caberNum = larg >= curtoValor(v).length * 6.2 + 1
+            return <g key={s.nome}>
+              {v > 0 && <rect x={x + 1} width={larg - 2} y={y(v)} height={Math.max(1, y(0) - y(v))} rx={Math.min(4, larg / 3)} className={'a3-g-barra' + classe(s)} />}
+              {caberNum && v > 0 && <text x={x + larg / 2} y={y(v) - 5} textAnchor="middle" className="a3-g-valor">{curtoValor(v)}</text>}
+            </g>
+          })}</g>
+        }
         return <g key={i} opacity={apagado ? 0.5 : 1}>
           {series.map((s, k) => {
             const v = p.partes[k] ?? 0
@@ -349,7 +363,7 @@ export function Colunas({ pontos, series, formato = inteiro, altura = 210, descr
     {ativo !== null && pontos[ativo] && <div className="a3-dica" style={{ left: dicaX, top: -6 }}>
       <b>{pontos[ativo].longo}{pontos[ativo].parcial ? ' (em andamento)' : ''}</b>
       {series.length > 1 && series.map((s, k) => <span key={s.nome}>{s.nome}<strong>{formato(pontos[ativo].partes[k] ?? 0)}</strong></span>)}
-      <span>{series.length > 1 ? 'Total' : series[0]?.nome}<strong>{formato(valores[ativo])}</strong></span>
+      {!(lado && series.length > 1) && <span>{series.length > 1 ? 'Total' : series[0]?.nome}<strong>{formato(valores[ativo])}</strong></span>}
     </div>}
   </div>
 }
