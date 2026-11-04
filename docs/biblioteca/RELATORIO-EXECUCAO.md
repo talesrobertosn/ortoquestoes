@@ -259,7 +259,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 897 | CRIAR dois temas: infecções da coluna (Campbell's Operative Orthopaedics, 15ª ed., cap. 49 e outros; Tachdjian; HEBERT; Rockwood and Green) e histiocitose de células de LANGERHANS (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., caps. 10 e 13; Tachdjian; Dahlin; Campbell 15), mais 18 miniaulas: politrauma (13) e infecções da coluna (5). Alerta da `trauma-1171` alinhado à bibliografia da banca. |
 | 898 | CRIAR dois temas: exame físico do joelho (HEBERT, 5ª ed., cap. 63; Campbell's Operative Orthopaedics, 15ª ed., caps. 50, 52, 56, 8 e 35; Tachdjian; Rockwood and Green) e deformidades ósseas e alongamento (Campbell 15, caps. 63, 31, 58 e 10; Tachdjian; Lovell and Winter; Rockwood and Green; HEBERT), mais 9 miniaulas da histiocitose de LANGERHANS. |
 | 899 | CRIAR dois temas: dedo em gatilho e outras tenossinovites (Green's Operative Hand Surgery, 7ª ed., cap. 56 e caps. 2 e 37; Campbell 15, caps. 81 e 84; Tachdjian; HEBERT) e amputações e reimplantes da mão (Green 7, caps. 42 e 49 e outros; Campbell 15, caps. 20, 21 e 68), mais 20 miniaulas: exame físico do joelho (10) e deformidades e alongamento (10). |
-| (este PR) | CRIAR síndrome do túnel do carpo (Green's Operative Hand Surgery, 7ª ed., caps. 28, 29, 31, 53 e 56; Campbell 15, caps. 82 e 78; HEBERT), mais 37 miniaulas de amputações e reimplantes da mão. |
+| 900 | CRIAR síndrome do túnel do carpo (Green's Operative Hand Surgery, 7ª ed., caps. 28, 29, 31, 53 e 56; Campbell 15, caps. 82 e 78; HEBERT), mais 37 miniaulas de amputações e reimplantes da mão. |
+| (este PR) | 45 miniaulas de mão: dedo em gatilho e outras tenossinovites (24) e síndrome do túnel do carpo (21), com Green, Campbell e HEBERT lado a lado onde divergem. |
 
 ## Próximo
 
