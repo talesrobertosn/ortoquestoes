@@ -1,16 +1,16 @@
 ---
 id: campbell15-tumores-partes-moles
-versao: 1
-titulo: Tumores benignos de partes moles
+versao: 2
+titulo: Tumores e sarcomas de partes moles
 especialidade: tumores
 acesso: gratis
 livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Green's Operative Hand Surgery, 7ª edição (2017), o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição
 capitulo: Capítulo 30 · Soft-Tissue Tumors
 autores: Robert K. HECK Jr. e Patrick C. TOY
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 30 (Soft-Tissue Tumors, com as tabelas 30.1 e 30.2, p. 1004 a 1029), cap. 27 (desmoide cortical, p. 933 e 934) e cap. 83 (Tumors and Tumorous Conditions of the Hand, de James H. CALANDRUCCIO, seções de partes moles, p. 3567 a 3597); Green's Operative Hand Surgery, 7ª ed., cap. 59 (Bone and Soft Tissue Tumors, p. 2010 a 2019); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (rabdomiossarcoma, p. 1073); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores de partes moles da mão) e cap. 29 (síndrome de GARDNER e miosite ossificante), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
-subtemas: Tumores benignos de partes moles
-resumo: Dor não separa benigno de maligno, mas TINEL e dor irradiada apontam para a bainha nervosa; RM para massa > 5 cm ou profunda; lipoma brilha em T1 e apaga na supressão; schwannoma enucleável (ANTONI A e B, VEROCAY) e neurofibroma da NF1 que vira MPNST (schwannoma maligno); SVNP com histiócitos, hemossiderina e células gigantes, no joelho; condromatose em homens, joelho e quadril; desmoide recidivante, GARDNER com osteomas, desmoide cortical posteromedial do fêmur; rabdomiossarcoma da criança na cabeça e pescoço, sensível à quimioterapia; sarcoma sinovial indolente no carpo; epitelioide é o sarcoma da mão; lipossarcoma mixoide pede TC de abdome.
+fonte: Livros conferidos localmente em 01/11/2026 e 03/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 30 (Soft-Tissue Tumors, com as tabelas 30.1 e 30.2, p. 1004 a 1029), cap. 26 (General Principles of Tumors: estadiamento, biópsia e margens, p. 873 a 882), cap. 27 (desmoide cortical, p. 933 e 934) e cap. 83 (Tumors and Tumorous Conditions of the Hand, de James H. CALANDRUCCIO, seções de partes moles, p. 3567 a 3597); Green's Operative Hand Surgery, 7ª ed., cap. 59 (Bone and Soft Tissue Tumors, p. 2010 a 2019) e cap. 3 (sarcoma de KAPOSI, p. 121, aprox.); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (rabdomiossarcoma, p. 1073 e 1074); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (rabdomiossarcoma, p. 474 e 475); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (tumores de partes moles da mão) e cap. 29 (síndrome de GARDNER e miosite ossificante), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
+subtemas: Tumores benignos de partes moles; Sarcomas de partes moles
+resumo: Dor não separa benigno de maligno, mas TINEL aponta para a bainha nervosa; RM para massa > 5 cm ou profunda; schwannoma enucleável e neurofibroma da NF1 que vira MPNST; SVNP com hemossiderina e células gigantes, no joelho; condromatose em homens; GARDNER com osteomas; sarcomas estadiados por grau, tamanho, profundidade e metástase, biópsia planejada com trajeto contaminado e margem ampla com radioterapia no alto grau; rabdomiossarcoma da criança na cabeça e pescoço, sensível à quimioterapia, pleomórfico no adulto; sinovial indolente no carpo; epitelioide é o sarcoma da mão; mixoide pede TC de abdome.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -19,9 +19,9 @@ Este resumo segue o capítulo 30 (Soft-Tissue Tumors) do Campbell's Operative Or
 
 O tema parece uma lista interminável de nomes, mas a prova cobra sempre a mesma coisa: **reconhecer cada lesão pela sua assinatura**. Cada tumor benigno de partes moles tem um detalhe que o denuncia: o lipoma tem o sinal de gordura, o schwannoma tem o TINEL, a SVNP tem a hemossiderina, o glômico tem a dor desproporcional ao tamanho, o desmoide tem a recidiva. A banca brasileira gosta de três perguntas: **onde a lesão aparece** (joelho, quadril, subungueal, fêmur distal posteromedial), **o que o patologista vê** (hemossiderina, células gigantes, ANTONI A e B) e **com o que a lesão se associa** (NF1, GARDNER, MAFFUCCI, KLIPPEL-TRENAUNAY).
 
-O segundo eixo é saber quando a massa deixou de ser benigna: metade das questões ligadas aqui fala de sarcomas (rabdomiossarcoma da criança, sinovial do adulto jovem, epitelioide da mão, lipossarcoma mixoide).
+O segundo eixo são os sarcomas: estadiamento, biópsia, margens e adjuvância, e cada tipo pela sua marca (rabdomiossarcoma da criança, sinovial do adulto jovem, epitelioide da mão, lipossarcoma mixoide, UPS do idoso).
 
-> **Na prova:** dor não separa benigno de maligno; RM para massa **> 5 cm ou profunda**; SVNP = **hemossiderina, histiócitos e células gigantes**, **joelho**; condromatose = **homens, joelho e quadril**; neurofibroma vira **schwannoma maligno (MPNST)**; GARDNER = **osteomas**; desmoide cortical = **posteromedial** do fêmur distal; rabdomiossarcoma = **criança, cabeça e pescoço, responde à quimioterapia**.
+> **Na prova:** dor não separa benigno de maligno; SVNP = **hemossiderina e células gigantes**, **joelho**; neurofibroma vira **MPNST**; sarcoma: **grau, tamanho e profundidade**, biópsia planejada, margem ampla; rabdomiossarcoma = **criança, cabeça e pescoço, quimioterapia**.
 
 # A massa de partes moles: avaliação, imagem e biópsia {radar=confirmado}
 
@@ -48,11 +48,7 @@ O exame avalia a massa, o segmento e os **linfonodos de drenagem**. A radiografi
 
 ## A biópsia e a decisão de margem
 
-A biópsia vem **depois** da imagem, porque altera o exame. Pode ser por agulha grossa ou incisional, com estadiamento de ENNEKING ou AJCC (Campbell, p. 1004). O ponto decisivo é separar o benigno do maligno, porque isso define a **margem**: marginal no benigno, ampla no maligno. O Green (p. 2015 e 2016) insiste nos detalhes da mão: a incisão é **longitudinal**, alinhada com a futura ressecção, nunca transversa, oblíqua ou em zigue-zague de BRUNER.
-
-Na mão, o capítulo 83 do Campbell (p. 3567 e 3568) lembra que **cada raio e cada metacarpo são compartimentos**, e que o espaço palmar e o dorso são extracompartimentais. O tumor benigno de partes moles é tratado por **biópsia excisional** (margem marginal, pela pseudocápsula); o maligno exige **excisão ampla com 2 cm de tecido livre**, e o nível de amputação segue a falange: distal pela média, média pela proximal, proximal pelo raio.
-
-Pelo Campbell (p. 1005), a maioria dos benignos é tratada por **observação ou ressecção marginal**; benignos **localmente agressivos**, como o desmoide, podem pedir ressecção ampla ou tratamento multimodal; sarcomas de baixo grau, ressecção ampla (com radioterapia se a margem for exígua); de alto grau, cirurgia com radioterapia.
+A biópsia vem **depois** da imagem, porque altera o exame, e o que ela decide é a **margem**: marginal no benigno, ampla no maligno (Campbell, p. 1004 e 1005). A maioria dos benignos é tratada por **observação ou ressecção marginal**; benignos **localmente agressivos**, como o desmoide, podem pedir ressecção ampla ou tratamento multimodal. Na mão, o capítulo 83 (p. 3567 e 3568) lembra que **cada raio e cada metacarpo são compartimentos**, que o benigno vai para **biópsia excisional** pela pseudocápsula e que o maligno exige **excisão ampla com 2 cm de tecido livre**, com amputação um nível acima da falange acometida. As regras da biópsia e das margens no sarcoma estão na seção própria, adiante.
 
 !questoes central=tumores-0123
 conceito: Nas partes moles a dor não separa benigno de maligno, mas dor irradiada no território do nervo e TINEL positivo são próprios dos tumores da bainha nervosa, isto é, da linhagem neurogênica.
@@ -163,7 +159,7 @@ O tumor de células gigantes da bainha do tendão e a sinovite vilonodular pigme
 
 Aqui mora o ponto mais cobrado da lista. A histologia, nas palavras do Campbell, é de **células espumosas (histiócitos), tecido fibroso, células gigantes e depósito de hemossiderina** (p. 1011); a tabela 30.1 resume a SVNP como **tecido fibroso brando contendo histiócitos, células gigantes e hemossiderina**, e o capítulo descreve **células poliédricas brandas cercadas de colágeno, com células gigantes e hemossiderina**. O capítulo da mão (cap. 83, p. 3572) detalha: células fusiformes, tecido fibroso, **histiócitos carregados de colesterol**, **células gigantes multinucleadas semelhantes a osteoclastos** e hemossiderina.
 
-Na prática, os **histiócitos (macrófagos) carregados de hemossiderina** dão a cor castanha que justifica o nome pigmentada, e a hemossiderina explica a lesão **escura em T1 e em T2** na RM. Note o que **não** está na lista: atipia celular, mitoses anormais, neutrófilos. A lesão é benigna e reativa no aspecto; quem marca atipia está pensando em sarcoma. E a célula gigante é **multinucleada**, não "mononuclear".
+Os **histiócitos carregados de hemossiderina** dão a cor castanha (pigmentada) e a lesão **escura em T1 e T2**. Não estão na lista atipia, mitoses anormais nem neutrófilos, e a célula gigante é **multinucleada**.
 
 ## SVNP: joelho, sangue e RM escura
 
@@ -214,22 +210,13 @@ armadilha: Escolher mulheres por associação com doenças inflamatórias, ou pu
 
 ## A massa mais comum da mão
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3594), define o ganglion como **a causa mais comum de massa focal na mão**. Ele nasce da **sinóvia de articulações ou de bainhas tendíneas** e pode até ser intratendíneo, causando ressalto ou gatilho. Uma característica clínica o separa dos tumores verdadeiros: **o ganglion flutua de tamanho**. A causa não é clara; a maioria surge de forma insidiosa, e uma história de trauma agudo ou estresse repetido sugere origem traumática. O SIZÍNIO HEBERT (cap. 7, pág. PDF 559 e 560) concorda que o cisto sinovial é o mais frequente dos tumores desse segmento, cita como hipóteses a degeneração mucoide, tecidos periarticulares embrionários e trauma, e registra predomínio entre a **2ª e a 4ª décadas** e em **mulheres**.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3594), define o ganglion como **a causa mais comum de massa focal na mão**. Ele nasce da **sinóvia de articulações ou de bainhas tendíneas** e pode até ser intratendíneo, causando ressalto ou gatilho. Uma característica clínica o separa dos tumores verdadeiros: **o ganglion flutua de tamanho**. A causa não é clara; a maioria surge de forma insidiosa, e uma história de trauma agudo ou estresse repetido sugere origem traumática. O SIZÍNIO HEBERT (cap. 7, pág. PDF 559 e 560) concorda que o cisto sinovial é o mais frequente dos tumores desse segmento, e registra predomínio entre a **2ª e a 4ª décadas** e em **mulheres**.
 
 ## Onde ele nasce e como se trata
 
 O mais comum é o **ganglion dorsal do punho**, entre o **2º e o 4º compartimentos extensores**, nascido quase sempre **da porção dorsal (distal) do ligamento escafossemilunar** (Campbell, p. 3594 e 3595). Pode ser **oculto**: dor localizada sobre o intervalo escafossemilunar, sem trauma, sugere o cisto mesmo com imagem negativa. No diferencial, o **extensor curto dos dedos anômalo** fica mais firme na extensão resistida, e a **bossa carpometacarpal** é dura e um pouco mais distal e radial. O segundo mais frequente é o **ganglion volar**, **radial ao flexor radial do carpo**, com a **artéria radial** muitas vezes aderida (daí o **teste de ALLEN** antes da cirurgia); o **retinacular volar** nasce da bainha flexora na prega da MF e é duro, imóvel e doloroso à pressão.
 
 O Campbell (p. 3595) é direto: **punção, aspiração e corticoide recidivam em mais de 60%**, e o cisto sintomático vai para excisão aberta ou artroscópica, com **cerca de 90% de sucesso**; a artroscopia não reduziu a recidiva. O segredo é **ressecar margem generosa de cápsula em torno da base**, **preservar a porção dorsal distal do escafossemilunar** e **não fechar a cápsula**. O SIZÍNIO (pág. PDF 560) é mais conservador: o tratamento não cirúrgico tem valor histórico, a cirurgia recidiva em **20%** e fica para a dor persistente, e o cisto silencioso não deve ser operado.
-
-!tabela Os ganglions da mão e do punho (Campbell, cap. 83, p. 3594 e 3595; SIZÍNIO, cap. 7)
-| Tipo | Origem | Ponto prático |
-|---|---|---|
-| Dorsal do punho (o mais comum) | Porção dorsal distal do escafossemilunar | Ressecar com margem de cápsula |
-| Volar do punho (segundo) | Radial ao flexor radial do carpo | Artéria radial aderida; ALLEN |
-| Retinacular volar | Bainha flexora na prega da MF | Duro, imóvel, doloroso |
-| Intratendíneo | Dentro do tendão | Ressalto ou gatilho |
-!fim
 
 ## Os outros cistos
 
@@ -316,7 +303,7 @@ A tabela 30.1 do Campbell (p. 1008) define a **síndrome de GARDNER** como a ass
 
 ## Desmoide cortical: o falso tumor do fêmur
 
-O nome confunde, mas o **desmoide cortical** não é fibromatose de partes moles; é uma **irregularidade da cortical** que o Campbell (cap. 27, p. 933) descreve na **face posteromedial da metáfise distal do fêmur**, geralmente em **meninos de 10 a 15 anos**. Seria uma reação ao **estresse muscular do adutor magno**, que se insere ali. É mais bem visto numa **radiografia oblíqua com o membro em rotação externa de 20 a 45 graus**. Quando dá sintomas, são edema e dor; a tabela do capítulo 27 (p. 934) registra a **erosão posteromedial do fêmur distal**. O valor clínico é não confundir essa lesão de tração com um tumor agressivo.
+O nome confunde, mas o **desmoide cortical** não é fibromatose de partes moles; é uma **irregularidade da cortical** que o Campbell (cap. 27, p. 933) descreve na **face posteromedial da metáfise distal do fêmur**, geralmente em **meninos de 10 a 15 anos**. Seria uma reação ao **estresse muscular do adutor magno**, que se insere ali. É mais bem visto numa **radiografia oblíqua com o membro em rotação externa de 20 a 45 graus**. Quando dá sintomas, são edema e dor; a tabela do capítulo 27 (p. 934) registra a **erosão posteromedial do fêmur distal**.
 
 !questoes central=tumores-0260 relacionadas=tumores-0074
 conceito: A síndrome de GARDNER une desmoides (fibromatose), osteomas do crânio, cistos epidérmicos e polipose intestinal; o desmoide cortical é uma irregularidade posteromedial da metáfise distal do fêmur, ligada ao adutor magno.
@@ -346,90 +333,112 @@ A queixa é **dor e aumento de volume local**, muitas vezes com limitação da a
 | Histologia | Pode ser muito celular, simulando osteossarcoma justacortical e sarcoma de partes moles |
 !fim
 
-O princípio por trás da tabela é o **zoneamento**: a lesão amadurece de fora para dentro, então a periferia vira osso primeiro, e uma **faixa radiotransparente** entre a massa e a cortical mostra que o osso não está envolvido. É o oposto do sarcoma, que é mais denso e mais agressivo no centro. Por isso a **TC** é tão útil: mostra a casca calcificada e o córtex poupado (SIZÍNIO, pág. PDF 2096). O Campbell (cap. 30) inclui a miosite ossificante no diagnóstico diferencial da condromatose sinovial (tabela 30.1, p. 1007) e lembra que a TC ajuda a separar calcificação de ossificação (p. 1004). O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 26, p. 1073), também a coloca, com o hematoma, no diferencial do rabdomiossarcoma da criança.
+O princípio por trás da tabela é o **zoneamento**: a lesão amadurece de fora para dentro, então a periferia vira osso primeiro, e uma **faixa radiotransparente** entre a massa e a cortical mostra que o osso não está envolvido. A **TC** mostra a casca calcificada e o córtex poupado (SIZÍNIO, pág. PDF 2096); o Campbell (cap. 30, p. 1004 e 1007) a usa para separar calcificação de ossificação e põe a miosite no diferencial da condromatose. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 26, p. 1073), também a coloca, com o hematoma, no diferencial do rabdomiossarcoma da criança.
 
 ## Tratamento
 
 O tratamento é **conservador**, desde que os diagnósticos diferenciais estejam definitivamente afastados. A cirurgia na fase ativa agride os tecidos e provoca **novas áreas de ossificação**. Lesões que causam limitação articular, bursite ou compressão de feixes vasculonervosos são ressecadas, mas **só 12 a 18 meses depois do fim da fase de atividade** (SIZÍNIO, pág. PDF 2097).
 
-# Rabdomiossarcoma: o sarcoma de partes moles da criança {radar=confirmado}
+# Sarcomas de partes moles: estadiamento, biópsia, margens e adjuvância {radar=confirmado}
 
-## Por que ele entra neste tema
+## O que é maligno e quem é mais comum
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 26, p. 1073), começa com uma frase que resolve duas questões de uma vez: **os sarcomas de partes moles na criança são muito menos comuns que as lesões benignas**, mas **o sarcoma de partes moles mais comum da infância é o rabdomiossarcoma**; os outros sarcomas são muito menos comuns do que no adulto. Ele responde por **4% dos tumores malignos até 15 anos**, aparece na **primeira e na segunda décadas**, um pouco mais em meninos.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 30, p. 1017 e 1020), abre os malignos com uma mudança de nome: o antigo **histiocitoma fibroso maligno (MFH)** não é mais reconhecido pela OMS como entidade e passou a se chamar **sarcoma pleomórfico indiferenciado (UPS)**. O **lipossarcoma** é o **segundo** sarcoma mais diagnosticado e o **sinovial**, o **terceiro das extremidades**. Na mão, o Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 2015), aponta o **epitelioide, o sinovial e o histiocitoma fibroso maligno**; o SIZÍNIO HEBERT (cap. 7, pág. PDF 569) lista sinovial, lipossarcoma, rabdomiossarcoma e fibrossarcoma.
 
-## Onde aparece
+O **sarcoma de KAPOSI** é, pelo Green (cap. 3, p. 121, aprox.), uma doença vascular ligada ao **herpes-vírus humano 8**, vista sobretudo em homens com HIV, em **nódulos ou placas violáceos e indolores**, que pode aparecer na mão, exige biópsia (o diferencial é a angiomatose bacilar), tem estadiamento próprio até a forma **visceral** e é tratada de forma sistêmica.
 
-O Tachdjian distribui os casos: **cabeça e pescoço 26%**, **órbita 9%**, **geniturinário 24%**, **mediastino e abdome 22%** e **extremidades 19%**. Somando cabeça, pescoço e órbita, a região cefálica responde por cerca de um terço dos casos; as extremidades, que interessam ao ortopedista, ficam em quarto lugar. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 30, p. 1025), reforça pela histologia: o **embrionário** costuma estar na **cabeça ou pescoço ou no trato geniturinário** (com a variante **botrioide**, polipoide, sob o epitélio geniturinário), e o **alveolar**, na cabeça, pescoço ou extremidades.
+!questoes central=tumores-0388
+conceito: O sarcoma de KAPOSI é a lesão maligna da lista: proliferação vascular ligada ao herpes-vírus 8 e ao HIV, com nódulos violáceos que podem acometer a mão e chegar às vísceras; glômico e SVNP são benignos.
+como: O ENARE de Cirurgia da Mão 2022 pediu, entre tumor glômico, hemangioma esclerosante, SVNP, KAPOSI e rabdomioma, a tumoração de aspecto maligno.
+armadilha: Escolher o tumor glômico pela dor intensa ou a SVNP pela erosão e pela recidiva, que não são sinais de malignidade.
+alerta: Os livros conferidos não descrevem o hemangioma esclerosante nem o rabdomioma; a benignidade deles não foi conferida. O Green trata o KAPOSI no capítulo de infecções crônicas, sem a palavra maligno, mas com estadiamento até a doença visceral.
+!fim
 
-!tabela Rabdomiossarcoma: tipos e números (Campbell, cap. 30, p. 1019, 1025 e 1026; Tachdjian, cap. 26, p. 1073)
-| Item | Dado |
+## Estadiamento: ENNEKING e AJCC
+
+O Campbell (cap. 30, p. 1004) aceita os dois sistemas. O de **ENNEKING** (cap. 26, p. 873 e 874) estadia os benignos com algarismos arábicos (**1 latente, 2 ativo, 3 agressivo**) e os sarcomas com romanos, pelo **grau**, pela **extensão local** e pela **metástase**. O compartimento é limitado por barreiras naturais: cortical, cartilagem articular, septos fasciais e cápsula. No estádio III, linfonodo e metástase a distância **não se distinguem**, porque os dois têm mau prognóstico. O **AJCC** de partes moles usa **grau, tamanho (5 cm), profundidade em relação à fáscia e metástase**, e coloca o linfonodo regional no estádio IV.
+
+!tabela Estadiamento dos sarcomas de partes moles (Campbell, cap. 26, tabelas 26.1 e 26.2, p. 873 e 874)
+| Sistema | Estádio | Critério |
+|---|---|---|
+| ENNEKING | IA e IB | Baixo grau (poucas mitoses, atipia moderada, metástase < 25%); A intracompartimental, B extracompartimental |
+| ENNEKING | IIA e IIB | Alto grau (pouco diferenciado, alta relação célula/matriz); A intra, B extra |
+| ENNEKING | III | Metástase regional ou a distância, qualquer grau |
+| AJCC | I | Baixo grau, qualquer tamanho ou profundidade |
+| AJCC | II | Alto grau pequeno (≤ 5 cm) de qualquer profundidade, ou grande e superficial |
+| AJCC | III | Alto grau, grande (> 5 cm) e profundo |
+| AJCC | IV | Metástase, inclusive linfonodo regional |
+!fim
+
+## Biópsia: o primeiro ato da ressecção
+
+O Campbell (cap. 26, p. 873 e 875) manda **planejar a biópsia como o procedimento definitivo** e fazê-la só depois da avaliação completa. Diante da suspeita de sarcoma, o paciente deve ser **encaminhado ao oncologista ortopédico antes da biópsia**: erros de diagnóstico, amostras ruins e complicações de ferida são mais frequentes quando a biópsia é feita fora do centro de referência. O raciocínio é que **o trajeto, de agulha ou aberto, está contaminado** e terá de ser ressecado em bloco com o tumor.
+
+!tabela Regras da biópsia (Campbell, cap. 26, p. 875 e 877; tabela 26.4)
+| Regra | Motivo |
 |---|---|
-| Tipos | Embrionário, alveolar, pleomórfico (e botrioide, variante do embrionário) |
-| Embrionário | Criança; cabeça e pescoço, geniturinário; células fusiformes em estroma mixoide; melhor prognóstico |
-| Alveolar | Criança e adolescente; extremidades e tronco; células redondas; t(2;13) e t(1;13), FOXO1; mais agressivo e mais linfonodo |
-| Pleomórfico | Adulto; raro; extremidades; células em raquete e em fita |
-| Distribuição | Cabeça e pescoço 26%, geniturinário 24%, mediastino e abdome 22%, extremidades 19%, órbita 9% |
-| Clínica | Massa profunda, de crescimento rápido, dolorosa ou não; confundida com lesão traumática ou hematoma |
-| RM | Isointenso ao músculo em T1, alto sinal em T2 |
-| Metástase | Pulmão, linfonodo (cerca de 15%), medula óssea |
-| Tratamento | Cirurgia, radioterapia e quimioterapia multiagente (vincristina, ciclofosfamida, actinomicina D) |
-| Sobrevida | Cerca de 65% em 5 anos (Campbell); de < 20% só com cirurgia para cerca de 60% com quimioterapia (Tachdjian) |
+| Incisão longitudinal, nunca transversa | A transversa é difícil ou impossível de ressecar com a peça |
+| Um só compartimento muscular | Não contaminar o plano intermuscular |
+| Longe dos feixes neurovasculares | Preservar o salvamento do membro |
+| Garrote sem exsanguinação por compressão | Não espremer células para a circulação |
+| Congelação no intraoperatório | Garantir tecido diagnóstico |
+| Hemostasia antes de fechar; dreno em linha com a incisão | O hematoma e o trajeto do dreno ficam contaminados |
+| PAAF | Cerca de 90% de acerto para malignidade, pouco para o tipo; boa para metástase, infecção e linfonodo |
+| Agulha grossa | Acurácia de 84% a 98%; 97% para maligno ou não, 81% para tipo e grau |
+| Aberta | Mais tecido (citogenética), mais complicações |
+| Excisional | Só massa subcutânea < 3 cm pouco suspeita; nunca lesão grande ou profunda, salvo lipoma pela RM |
 !fim
 
-## Por que a quimioterapia muda tudo
+Na mão, o Green (cap. 59, p. 2015 e 2016) proíbe também a incisão oblíqua ou em zigue-zague de BRUNER.
 
-No adulto, o papel da quimioterapia é controverso. No rabdomiossarcoma, o Campbell (p. 1026) afirma que, **ao contrário dos sarcomas de partes moles do adulto, houve melhora dramática da sobrevida com a quimioterapia multiagente**. O Tachdjian documenta a virada: de **menos de 20% com cirurgia isolada para cerca de 60%** com os protocolos do Intergroup Rhabdomyosarcoma Study; a forma não metastática da extremidade tem **74% em 5 anos**, pior que a orbitária e a geniturinária, e os linfonodos estão acometidos em cerca de **15%** (p. 1073 e 1074).
+## Margens de ENNEKING
 
-O comportamento é **rápido e agressivo**, com pico entre **1 e 5 anos** (tabela 30.2). Os pais muitas vezes relatam um trauma que só chamou a atenção para a massa, e o diferencial inclui hematoma, miosite ossificante, schwannoma e lipoma: **massa indolor que cresce sem trauma deve ser vista com suspeita** (Tachdjian, p. 1073).
+A margem é definida pelo **plano de dissecção** em relação à **pseudocápsula**, a zona reativa que o tumor cria ao comprimir os tecidos (Campbell, cap. 26, p. 882). A margem marginal passa por ela e basta para a maioria dos benignos; no **alto grau**, a pseudocápsula contém **lesões satélites**, e a marginal deixa doença microscópica. A ampla é a meta dos sarcomas de alto grau, e o Campbell faz duas ressalvas cobradas: **não há distância mínima definida**, e a **qualidade vale mais que a espessura** (uma fáscia contém melhor que uma camada mais grossa de subcutâneo). Se o plano tocar a pseudocápsula em qualquer ponto, a margem é marginal.
 
-!questoes central=tumores-0017 relacionadas=tumores-0060,tumores-0117,tumores-0305
-conceito: O rabdomiossarcoma é o sarcoma de partes moles mais comum da criança, predomina na cabeça e pescoço e, ao contrário dos sarcomas do adulto, responde à quimioterapia multiagente.
-como: O TARO 2019 perguntou a faixa etária e a resposta à quimioterapia; o TARO 2014, a região mais acometida na infância; duas provas de Ortopedia, o tumor de partes moles mais comum na criança.
-armadilha: Escolher as extremidades porque a pergunta está numa prova de ortopedia, ou o sarcoma sinovial, que é do adulto jovem.
-alerta: Em `tumores-0117` e `tumores-0305`, o enunciado fala em tumor de partes moles, mas o Tachdjian (p. 1073) diz que o rabdomiossarcoma é o sarcoma de partes moles mais comum da infância e que as lesões benignas são muito mais comuns que os sarcomas; o gabarito vale entre as alternativas, todas malignas.
+!tabela Margens cirúrgicas (Campbell, cap. 26, p. 882; cap. 83, p. 3567 e 3568)
+| Margem | Plano de dissecção | Uso |
+|---|---|---|
+| Intralesional | Dentro do tumor (debulking) | Benigno sintomático junto de estrutura nobre; paliação |
+| Marginal | Pela pseudocápsula | Maioria dos benignos, alguns malignos de baixo grau; com radioterapia e quimioterapia, alternativa à amputação em casos selecionados |
+| Ampla | Tecido normal em volta de todo o tumor | Sarcoma de alto grau; na mão, 2 cm de tecido livre |
+| Radical | Todo o compartimento em bloco | Hoje rara, porque a ampla dá resultado equivalente |
 !fim
 
-# Sarcomas do adulto: sinovial, epitelioide, lipossarcoma e os sinais de malignidade {radar=confirmado}
+Ressecção e amputação admitem as quatro margens: uma hemipelvectomia pode ser marginal.
 
-## O panorama
+## Radioterapia, quimioterapia e metástase
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 30, p. 1020), registra que o antigo **histiocitoma fibroso maligno** virou **sarcoma pleomórfico indiferenciado (UPS)**, típico de 50 a 70 anos com massa **> 5 cm, indolor, na coxa**; o **lipossarcoma** é o segundo mais diagnosticado e o **sinovial**, o terceiro das extremidades. Os maus fatores prognósticos se repetem: **alto grau, tamanho grande, localização profunda ou proximal e metástase**. Na mão, o Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 2015), aponta como subtipos mais comuns o **epitelioide, o sinovial e o histiocitoma fibroso maligno**; o SIZÍNIO HEBERT (cap. 7, pág. PDF 569) lista sinovial, lipossarcoma, rabdomiossarcoma e fibrossarcoma.
+O Campbell (cap. 30, p. 1005) resume a conduta: **benignos**, observação ou ressecção marginal; **sarcoma de baixo grau**, ressecção ampla, com radioterapia se a margem for exígua; **alto grau**, **cirurgia com radioterapia**. A controvérsia é o momento da radioterapia: a **pré-operatória** aumenta as **complicações da ferida**, mas pode ser **mais eficaz pela oxigenação** dos tecidos ainda não operados; a **pós-operatória** espera a cicatrização, mas exige **campo maior**. Há ainda a **braquiterapia**. A **quimioterapia adjuvante** dos sarcomas do adulto continua em debate, com protocolos para os tumores grandes de alto grau. O rabdomiossarcoma é a exceção, como se verá.
+
+A metástase dos sarcomas do adulto vai sobretudo ao **pulmão**, e o Campbell manda **ressecá-la quando possível** e seguir o paciente com exame, imagem do local e do tórax (p. 1020). As exceções têm nome: o **mixoide** vai ao retroperitônio; o **sinovial, o epitelioide e o rabdomiossarcoma** vão aos linfonodos; o rabdomiossarcoma vai ainda à **medula óssea**.
+
+# Sarcoma pleomórfico indiferenciado e lipossarcoma {radar=confirmado}
+
+## UPS: o sarcoma do idoso na coxa
+
+O UPS é típico de **50 a 70 anos**, com massa **> 5 cm, indolor**, na **coxa** (Campbell's Operative Orthopaedics, 15ª ed., cap. 30, p. 1020). A RM mostra massa **bem circunscrita, escura em T1 e clara em T2**, com **necrose central**; padrão **estoriforme**, e o **grau** prediz mais que o subtipo. Tratamento: **ressecção ampla**, radioterapia adjuvante nos tumores grandes ou de margem exígua (pré-operatória se o tumor parece irressecável), quimioterapia controversa. Com o tratamento multimodal, a **recidiva local fica abaixo de 10%**; sobrevida de cerca de **60% em 5 anos**. Os maus fatores prognósticos são **alto grau, tamanho grande, localização profunda e metástase**.
+
+## Lipossarcoma: do ALT ao mixoide
+
+O lipossarcoma acomete adultos **acima de 50 anos**, com massa grande, indolor, profunda e **proximal**; a RM é inespecífica, salvo nos bem diferenciados, que mostram gordura (p. 1020). Os subtipos são **ALT, WDL, mixoide, de células redondas e pleomórfico**. O **lipoma atípico (ALT)** e o **lipossarcoma bem diferenciado (WDL)** são histologicamente idênticos; a OMS reserva ALT para o membro e o tronco superficial e WDL para retroperitônio, mediastino e região paratesticular, (a ressecção no membro é mais fácil). O ALT é tratado **só com cirurgia**, sem radioterapia nem quimioterapia (tabela 30.2): recidiva em média 6 a 8 anos depois, metástase rara, sobrevida excelente. Os outros tipos seguem o UPS; o de alto grau tem **60% em 5 anos**, e o **pleomórfico** tem o pior prognóstico.
 
 !tabela Sarcomas de partes moles: o essencial (Campbell, cap. 30, tabela 30.2, p. 1018 a 1026; Green, cap. 59, p. 2017 a 2019)
 | Sarcoma | Quem | Onde | Marca |
 |---|---|---|---|
-| UPS (ex-histiocitoma fibroso maligno) | 50 a 70 anos | Coxa | Massa > 5 cm indolor; necrose central; 60% em 5 anos |
-| Lipossarcoma bem diferenciado (ALT) | Meia-idade | Coxa, tronco superficial (WDL: retroperitônio) | Parece lipoma; septos espessos; MDM2; só cirurgia |
+| UPS (ex-MFH) | 50 a 70 anos | Coxa | Massa > 5 cm indolor; necrose central; estoriforme; 60% em 5 anos |
+| ALT e WDL | Meia-idade | ALT: coxa, tronco superficial; WDL: retroperitônio | Parece lipoma; adipócitos maduros com células hipercromáticas; só cirurgia |
 | Lipossarcoma mixoide | Adultos | Membro inferior | Capilares em tela de galinheiro; t(12;16), FUS; vai ao retroperitônio |
-| Sarcoma sinovial | Adultos jovens, mediana 35 anos; homens | Distal, justa-articular; pé; na mão, carpo | Indolente; calcificação; t(X;18) SYT-SSX; linfonodo; mais comum do pé |
-| Sarcoma epitelioide | Adolescentes e adultos jovens | Mão e dedos, antebraço | Nódulo pequeno ulcerado; linfonodo até 42%; recidiva > 50%; mais comum da mão |
+| Sarcoma sinovial | Adultos jovens (mediana 35 anos) | Distal; pé; na mão, carpo | Indolente; calcificação; bifásico; t(X;18) SYT-SSX; linfonodo |
+| Sarcoma epitelioide | Adolescentes e adultos jovens | Mão e dedos, antebraço | Nódulo pequeno ulcerado; linfonodo até 42%; recidiva > 50% |
 | Fibrossarcoma | 30 a 50 anos | Membro inferior profundo | Espinha de peixe; diagnóstico de exclusão |
 | Dermatofibrossarcoma protuberante | Adultos jovens | Tronco | Placa cutânea; t(17;22); recidiva local |
-| MPNST | 30 a 50 anos (28 na NF) | Ciático, plexos | Contrapartida maligna do neurofibroma |
+| MPNST | 30 a 50 anos (28 na NF) | Ciático, plexos | Contrapartida maligna do neurofibroma; 50% em 5 anos |
+| EWING extraesquelético | Adolescentes e adultos jovens | Paravertebral, parede torácica | Massa de crescimento rápido; células pequenas redondas |
 !fim
 
-## Sarcoma sinovial: o sarcoma que finge ser benigno
+## Mixoide: quando estadiar o abdome
 
-O sarcoma sinovial foge do perfil dos sarcomas "do adulto" (Campbell, p. 1020): é de **adultos jovens** (mediana de 35 anos), relativamente comum nas **extremidades distais** (80% nas extremidades), **o sarcoma de partes moles mais comum do pé**, **frequentemente indolente no início** (a massa pode existir há anos) e muitas vezes **pequeno (< 5 cm)**, porque o paciente se queixa de dor antes da massa. O nome é um equívoco: o tumor **não nasce da sinóvia** e é intra-articular em **menos de 10%**; quando intra-articular, confunde-se com SVNP localizada, e favorecem o sarcoma o tamanho **> 3 cm**, a **ausência de derrame** e o **sexo masculino**. A radiografia mostra **calcificação amorfa**; a histologia é **bifásica**; a translocação **t(X;18)** (SYT com SSX) está em 90%; a quimioterapia é útil, e o linfonodo é acometido em **10% a 12%** (p. 1023).
-
-Na mão, o Green (p. 2017) dá a localização cobrada: **região do carpo**, raramente os dedos, como massa indolor no dorso ou na palma presente há anos, o que dá a falsa impressão de lesão benigna. Daí a regra do Green para todo o tema: **massa inexplicada, não diagnosticada pelo exame ou pela imagem, deve ser biopsiada**.
-
-## Sarcoma epitelioide: o sarcoma da mão
-
-O Campbell (cap. 30, p. 1023) chama o sarcoma epitelioide de **o sarcoma mais comum da mão**, e o Green (p. 2017) diz o mesmo para o antebraço e a mão. É de **adolescentes e adultos jovens**, cresce devagar e se apresenta como **nódulo pequeno (média de 3 cm), superficial, às vezes ulcerado**, confundido com carcinoma, infecção ou nódulo de DUPUYTREN. Espalha-se ao longo de tendões, fáscias e linfáticos: recidiva **acima de 50%**, linfonodo até **42%** (Green), sobrevida de cerca de **70% em 5 anos e 50% em 10**. Tratamento: **excisão ampla ou amputação** do dedo ou raio, com amostragem linfonodal; a excisão marginal é inaceitável.
-
-!questoes central=tumores-0114 relacionadas=tumores-0168,tumores-0029
-conceito: O sarcoma sinovial é do adulto jovem, distal, frequentemente indolente no início e pequeno; no membro superior predomina na região do carpo; o sarcoma epitelioide é o sarcoma de partes moles mais comum da mão.
-como: Uma prova de Ortopedia perguntou o que distingue o sarcoma sinovial dos demais e, em outra, o local mais comum no membro superior; o TARO 2021, o sarcoma mais comum da mão.
-armadilha: Achar que o sarcoma sinovial é intra-articular, proximal ou do idoso, ou escolher o lipossarcoma, que é comum no corpo, mas raro na mão.
-!fim
-
-## Lipossarcoma: quando estadiar o abdome
-
-O lipossarcoma atinge sobretudo adultos acima de 50 anos, com massa grande, indolor, profunda e proximal (Campbell, p. 1020). O **lipoma atípico (ALT)** e o **lipossarcoma bem diferenciado (WDL)** são histologicamente idênticos; a OMS reserva ALT para o membro e o tronco superficial e WDL para retroperitônio, mediastino e região paratesticular. O ALT é tratado **só com cirurgia**: recidiva local em média 6 a 8 anos depois, metástase rara e sobrevida excelente.
-
-O dado cobrado é o **lipossarcoma mixoide**. Ele tem tendência única a **metastatizar para o retroperitônio**, e por isso o paciente deve ser estadiado e seguido com **TC de tórax, abdome e pelve** (p. 1020 e 1021). A tabela 30.2 completa: estroma mixoide, capilares em **tela de galinheiro**, lipoblastos em anel de sinete, translocação **t(12;16)** e marcador **FUS**. No sarcoma sinovial, no epitelioide e no rabdomiossarcoma, a TC de abdome e pelve também é útil, mas pelo risco de **disseminação linfática**, não pelo retroperitônio (p. 1005).
+O dado cobrado é o **lipossarcoma mixoide**, de tendência única a **metastatizar para o retroperitônio**: o paciente é estadiado e seguido com **TC de tórax, abdome e pelve** (p. 1020 e 1021). Na histologia, capilares em **tela de galinheiro** e lipoblastos em anel de sinete. No sinovial, no epitelioide e no rabdomiossarcoma, a TC de abdome e pelve também ajuda, mas pela **disseminação linfática** (p. 1005).
 
 !questoes central=tumores-0138
 conceito: O lipossarcoma mixoide metastatiza para o retroperitônio, e por isso o estadiamento inclui TC de tórax, abdome e pelve.
@@ -437,30 +446,90 @@ como: O TARO 2023 perguntou em qual sarcoma a TC do abdome é essencial no estad
 armadilha: Escolher o sarcoma sinovial ou o rabdomiossarcoma, em que a TC de abdome e pelve ajuda pela via linfática, mas não pela metástase retroperitoneal característica.
 !fim
 
-## Os sinais de malignidade, reunidos
+# Sarcoma sinovial e sarcoma epitelioide {radar=confirmado}
 
-Juntando os livros, a massa de partes moles merece investigação de sarcoma quando aparece um destes sinais:
+## Sarcoma sinovial: o sarcoma que finge ser benigno
+
+O sarcoma sinovial foge do perfil "do adulto" (Campbell's Operative Orthopaedics, 15ª ed., cap. 30, p. 1020): é de **adultos jovens** (mediana de 35 anos), relativamente comum nas **extremidades distais** (80% nas extremidades), **o sarcoma de partes moles mais comum do pé**, **frequentemente indolente no início** (a massa pode existir há anos) e muitas vezes **pequeno (< 5 cm)**, porque o paciente se queixa de dor antes da massa. O nome é um equívoco: as células lembram sinóvia, mas o tumor **não nasce dela** e é intra-articular em **menos de 10%**; quando intra-articular, confunde-se com SVNP localizada, e favorecem o sarcoma o tamanho **> 3 cm**, a **ausência de derrame** e o **sexo masculino**. A radiografia mostra **calcificação amorfa**; a histologia é **bifásica** (ninhos epitelioides cercados de células fusiformes); a **t(X;18)** (SYT com SSX1 ou SSX2) está em 90%; tratamento com **ressecção ampla e radioterapia**, a quimioterapia é benéfica, e o linfonodo é acometido em **10% a 12%** (p. 1018 e 1023).
+
+Na mão, o Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 2017), dá o local cobrado: **região do carpo**, raramente os dedos, massa indolor no dorso ou na palma presente há anos, que dá falsa impressão de benignidade. Daí a regra do Green: **massa inexplicada pelo exame ou pela imagem deve ser biopsiada**.
+
+## Sarcoma epitelioide: o sarcoma da mão
+
+O Campbell (cap. 30, p. 1023, e tabela 30.2) chama o epitelioide de **o sarcoma de partes moles mais comum da mão**; o Green (p. 2017) diz o mesmo para antebraço e mão. É de **adolescentes e adultos jovens**, cresce devagar, como **nódulo pequeno (média de 3 cm), superficial, às vezes ulcerado**, confundido com carcinoma, infecção ou nódulo de DUPUYTREN. Espalha-se por tendões, fáscias e linfáticos: recidiva **acima de 50%**, linfonodo até **42%** (Green), sobrevida de cerca de **70% em 5 anos e 50% em 10**, pior se > 3 cm ou proximal. Tratamento: **excisão ampla ou amputação** do dedo ou raio, com amostragem linfonodal; a excisão marginal é inaceitável.
+
+!questoes central=tumores-0114 relacionadas=tumores-0168,tumores-0029
+conceito: O sarcoma sinovial é do adulto jovem, distal, frequentemente indolente no início e pequeno; no membro superior predomina na região do carpo; o sarcoma epitelioide é o sarcoma de partes moles mais comum da mão.
+como: Uma prova de Ortopedia perguntou o que distingue o sarcoma sinovial dos demais e, em outra, o local mais comum no membro superior; o TARO 2021, o sarcoma mais comum da mão.
+armadilha: Achar que o sarcoma sinovial é intra-articular, proximal ou do idoso, ou escolher o lipossarcoma, que é comum no corpo, mas raro na mão.
+!fim
+
+# Rabdomiossarcoma: o sarcoma de partes moles da criança {radar=confirmado}
+
+## O mais comum da infância
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 26, p. 1073), resolve várias questões de uma vez: **os sarcomas de partes moles na criança são muito menos comuns que as lesões benignas**, mas **o mais comum deles é o rabdomiossarcoma**; os outros sarcomas são bem menos comuns do que no adulto. Ele responde por **4% dos tumores malignos até 15 anos**, aparece na **primeira e na segunda décadas**, um pouco mais em meninos. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 474), concorda e lembra as associações com **neurofibromatose, BECKWITH-WIEDEMANN, LI-FRAUMENI e COSTELLO**. O **EWING extraesquelético**, outra alternativa clássica, é de adolescentes e adultos jovens, paravertebral ou na parede torácica (Campbell's Operative Orthopaedics, 15ª ed., cap. 30, p. 1028), e o **sinovial**, do adulto jovem.
+
+O Tachdjian distribui os casos: **cabeça e pescoço 26%**, **geniturinário 24%**, **mediastino e abdome 22%**, **extremidades 19%** e **órbita 9%**. As extremidades ficam em quarto lugar.
+
+!questoes central=tumores-0017 relacionadas=tumores-0060,tumores-0049,tumores-0087,tumores-0336,tumores-0117,tumores-0305
+conceito: O rabdomiossarcoma é o sarcoma de partes moles mais comum da criança e do adolescente, predomina na cabeça e pescoço e, ao contrário dos sarcomas do adulto, responde à quimioterapia multiagente.
+como: O TARO 2019 perguntou a faixa etária e a resposta à quimioterapia; o TARO 2014, a região mais acometida na infância; o TARO 2016, o TARO 2022 e o TARO 2008, o sarcoma mais comum na infância (ou abaixo de 15 anos); duas provas de Ortopedia, o tumor de partes moles mais comum na criança.
+armadilha: Escolher as extremidades porque a pergunta está numa prova de ortopedia, o sinovial, que é do adulto jovem, ou o EWING extraesquelético, de adolescentes e adultos jovens.
+alerta: `tumores-0336` não tem gabarito oficial no acervo; o Tachdjian (p. 1073) e o Lovell (p. 474) sustentam a alternativa D (rabdomiossarcoma). Em `tumores-0117` e `tumores-0305`, o enunciado fala em tumor de partes moles, mas o Tachdjian diz que as lesões benignas são muito mais comuns que os sarcomas; o gabarito vale entre as alternativas, todas malignas.
+!fim
+
+## Os tipos: embrionário, alveolar e pleomórfico
+
+O Campbell (cap. 30, p. 1025 e 1026) divide o tumor em **embrionário, alveolar e pleomórfico**, com formas mistas; o Tachdjian e o Lovell acrescentam o **botrioide**, variante polipoide do embrionário sob o epitélio de víscera oca, da primeira década. **Embrionário e alveolar são da criança e do adolescente; o pleomórfico clássico é do adulto e raro**, nas extremidades, com células gigantes multinucleadas e células em **fita e raquete**. O Lovell (p. 475) dá o pleomórfico como o tipo do adulto, o menos comum (< 20%) e o de pior prognóstico.
+
+A localização do embrionário é a pegadinha. O Campbell o põe na **cabeça, pescoço e trato geniturinário**, e o Lovell, também no retroperitônio, **raro nas extremidades**; o alveolar é o das **extremidades e tronco**, de 10 a 25 anos, mais agressivo e mais linfonodal, com **t(2;13)** (70%) ou **t(1;13)** (30%) e FOXO1. O Tachdjian (p. 1073) matiza: o embrionário predomina no total da criança, mas ainda responde por **cerca de 50% das lesões das extremidades**; a outra metade é alveolar.
+
+!tabela Rabdomiossarcoma: tipos e números (Campbell, cap. 30, p. 1019, 1025 e 1026; Tachdjian, cap. 26, p. 1073 e 1074; Lovell, cap. 13, p. 475)
+| Item | Dado |
+|---|---|
+| Embrionário | Criança; cabeça e pescoço, geniturinário, retroperitônio; células fusiformes em estroma mixoide; 11p15; melhor prognóstico (cerca de 70%) |
+| Botrioide | Variante do embrionário; víscera oca, geniturinário; primeira década |
+| Alveolar | 10 a 25 anos; extremidades e tronco; células redondas; t(2;13), t(1;13), FOXO1; mais linfonodo |
+| Pleomórfico | Adulto; raro; extremidades; células em fita e raquete; pior prognóstico |
+| RM | Isointenso ao músculo em T1, alto sinal em T2 |
+| Metástase | Pulmão, linfonodo (cerca de 15%), medula óssea |
+| Tratamento | Quimioterapia multiagente, cirurgia com margem ampla, radioterapia |
+| Sobrevida | Cerca de 65% em 5 anos (Campbell); de < 20% só com cirurgia para cerca de 60% (Tachdjian); 1 a 4 anos, cerca de 80% (Lovell) |
+!fim
+
+!questoes central=tumores-0188 relacionadas=tumores-0348
+conceito: O rabdomiossarcoma pleomórfico é o tipo do adulto, raro e de pior prognóstico; o embrionário, o mais comum da criança, prefere cabeça, pescoço e trato geniturinário, e não as extremidades.
+como: A SBOT-SP perguntou o tipo mais comum em adultos; o TARO 2006, em certo ou errado, se o embrionário da criança ocorre preferencialmente nas extremidades.
+armadilha: Responder embrionário para o adulto por ser o tipo mais comum no total, ou aceitar as extremidades para o embrionário, que é a sede do alveolar.
+alerta: `tumores-0348` não tem gabarito oficial no acervo; o Campbell (p. 1025) e o Lovell (p. 475) sustentam errado. O Tachdjian (p. 1073) registra que o embrionário ainda responde por cerca de 50% das lesões das extremidades, o que não muda a resposta, porque a sede preferencial é a cabeça e o pescoço.
+!fim
+
+## Por que a quimioterapia muda tudo
+
+No adulto, o papel da quimioterapia é controverso. No rabdomiossarcoma, o Campbell (p. 1026) afirma que, **ao contrário dos sarcomas do adulto, houve melhora dramática da sobrevida com a quimioterapia multiagente**. O Tachdjian documenta a virada: de **menos de 20% com cirurgia isolada para cerca de 60%** com os protocolos do Intergroup Rhabdomyosarcoma Study; a forma não metastática da extremidade tem **74% em 5 anos**, pior que a orbitária e a geniturinária (p. 1073 e 1074). O Lovell (p. 475) dá a sequência: **quimioterapia pré-operatória** na extremidade, **margem ampla**, radioterapia **pré-operatória** só para evitar amputação e **pós-operatória** se a margem for positiva; pior prognóstico no alveolar, no tumor grande, acima de 10 anos e na extremidade.
+
+O curso é **rápido e agressivo**. O trauma relatado pelos pais só chama a atenção para a massa, e o diferencial inclui hematoma, miosite ossificante, schwannoma e lipoma: **massa indolor que cresce sem trauma deve ser vista com suspeita** (Tachdjian, p. 1073).
+
+# Os sinais de malignidade, reunidos {radar=fundamento}
 
 !tabela Sinais de alerta numa massa de partes moles (Campbell, cap. 30, p. 1004 a 1011; cap. 83, p. 3567, 3576 e 3580; Green, cap. 59, p. 2015 e 2017; Tachdjian, cap. 26, p. 1073)
 | Sinal | Por que preocupa |
 |---|---|
-| Tamanho > 5 cm | Indica RM; sarcomas grandes têm pior prognóstico |
-| Localização profunda à fáscia | Indica RM; profundidade é fator prognóstico |
-| Crescimento recente ou rápido | Lipossarcoma cresce mais rápido que o lipoma; rabdomiossarcoma cresce rápido |
+| Tamanho > 5 cm | Indica RM; muda o estádio AJCC; pior prognóstico |
+| Profunda à fáscia | Indica RM; fator prognóstico |
+| Crescimento recente ou rápido | Lipossarcoma cresce mais que o lipoma; rabdomiossarcoma cresce rápido |
 | Sinal heterogêneo, necrose, sem supressão de gordura | Tira o diagnóstico de lipoma |
 | Dor nova num neurofibroma antigo | Alerta de MPNST |
-| Realce periférico, edema perilesional, alteração cística, PET-FDG alto | Malignidade em tumor de bainha |
-| Lesão aderida ou que não se separa do nervo | Schwannoma atípico ou maligno |
-| Glômico > 2 cm com histologia sugestiva | Metástase em mais de 25% |
 | Massa indolor crescendo sem trauma na criança | Rabdomiossarcoma |
 | Linfonodo regional aumentado | Epitelioide, sinovial, rabdomiossarcoma |
-| Recidiva de lesão "benigna" | Fasciite que recidiva questiona o diagnóstico; sarcoma tratado como ganglion |
+| Recidiva de lesão "benigna" | Fasciite que recidiva questiona o diagnóstico |
 !fim
 
-A dor isolada não está na lista: o que pesa é o conjunto de tamanho, profundidade, crescimento e imagem.
+A dor isolada não está na lista.
 
 # Fechamento {radar=fundamento}
 
-Os tumores benignos de partes moles se reconhecem pela assinatura: o lipoma pela gordura na RM, o schwannoma pelo TINEL e pela enucleação, o neurofibroma pela NF1 e pelo risco de MPNST, a SVNP pela hemossiderina e pelo joelho, a condromatose pelos corpos livres no homem, o ganglion pela flutuação no dorso do punho, o glômico pela dor desproporcional sob a unha, o desmoide pela recidiva e pela regressão imprevisível. Por trás de todos está a pergunta que define a conduta: benigno, que se observa ou se resseca com margem marginal, ou sarcoma, que pede biópsia planejada, estadiamento e margem ampla.
+O benigno se reconhece pela assinatura (gordura do lipoma, TINEL do schwannoma, hemossiderina da SVNP, recidiva do desmoide). O sarcoma pede outro caminho: estadiamento pelo grau, tamanho e profundidade, biópsia planejada como o primeiro ato da ressecção, margem ampla e radioterapia no alto grau, e a busca da metástase no pulmão, no retroperitônio ou nos linfonodos, conforme o tipo.
 
-> **Na prova:** dor **não** separa benigno de maligno, mas TINEL e dor irradiada apontam para a **linhagem neurogênica**; RM para massa **> 5 cm ou profunda**; lipoma **brilha em T1 e apaga na supressão**; hamartoma lipofibromatoso do **mediano** com fascículos em meio à gordura; schwannoma com **ANTONI A e B e VEROCAY**, enucleável; neurofibroma **frequente na NF1** e capaz de virar **schwannoma maligno (MPNST)**; SVNP = **histiócitos com hemossiderina, células gigantes multinucleadas e estroma fibroso**, **joelho**, RM **escura em T1 e T2**; TCG da bainha é o **tumor sólido** mais comum da mão; condromatose = **homens, joelho (70%) e quadril**; ganglion é a **massa mais comum da mão**, dorsal sobre o **escafossemilunar**; glômico **subungueal**, LOVE e HILDRETH; desmoide sem metástase, radioterapia não reduz recidiva; GARDNER = **osteomas**; desmoide cortical **posteromedial** no fêmur distal; rabdomiossarcoma é o **sarcoma de partes moles da criança**, **cabeça e pescoço**, responde à **quimioterapia**; sarcoma sinovial **indolente**, adulto jovem, **carpo**, mais comum do **pé**; **epitelioide** é o sarcoma da mão; lipossarcoma **mixoide** pede **TC de abdome**.
+> **Na prova:** dor **não** separa benigno de maligno, mas TINEL e dor irradiada apontam para a **linhagem neurogênica**; RM para massa **> 5 cm ou profunda**; lipoma **brilha em T1 e apaga na supressão**; hamartoma lipofibromatoso do **mediano**; schwannoma com **ANTONI A e B**, enucleável; neurofibroma **frequente na NF1**, vira **schwannoma maligno (MPNST)**; SVNP = **histiócitos com hemossiderina e células gigantes multinucleadas**, **joelho**; condromatose = **homens, joelho e quadril**; GARDNER = **osteomas**; ENNEKING por **grau, compartimento e metástase**, AJCC por **grau, 5 cm, fáscia e metástase**; trajeto de biópsia **contaminado**, incisão **longitudinal**; margem ampla em **tecido normal**, qualidade acima da espessura; radioterapia **pré-operatória** complica a ferida; UPS do idoso na **coxa**; ALT **só cirurgia**; lipossarcoma **mixoide** pede **TC de abdome**; sinovial **indolente**, adulto jovem, **carpo**, mais comum do **pé**; **epitelioide** é o sarcoma da mão; **KAPOSI** é maligno; rabdomiossarcoma é o **sarcoma de partes moles da criança**, **cabeça e pescoço**, responde à **quimioterapia**; **pleomórfico** no adulto; embrionário **não** prefere as extremidades.
