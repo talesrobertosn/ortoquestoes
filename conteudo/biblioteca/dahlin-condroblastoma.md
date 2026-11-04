@@ -350,7 +350,7 @@ A conciliação: abrir a articulação para enxergar é aceitável (o Lovell and
 conceito: O condroblastoma é tumor benigno epifisário que progride e pode invadir a articulação, e a curetagem (estendida, com adjuvantes e enxerto ou cimento) é o tratamento de escolha.
 como: O TARO 2006 deu uma afirmação para julgar certo ou errado: tumor benigno da região epifisária que evolui com invasão da articulação, com curetagem como tratamento indicado.
 armadilha: Julgar errado por achar que tumor benigno não invade a articulação, ou por achar que a invasão articular obrigaria à ressecção ampla.
-alerta: A questão `tumores-0347` não tem gabarito no acervo; o Lovell and Winter (cap. 13, p. 445) sustenta "Certo" ("progridem e invadem a articulação", curetagem como tratamento de escolha). O Dahlin (cap. 4) não fala em invasão articular e o Campbell (cap. 28, p. 958) diz que a extensão para partes moles é extremamente rara, de modo que "evolui com invasão" descreve a tendência, não a regra.
+alerta: A questão `tumores-0347` não tem gabarito oficial; o gabarito pela bibliografia da prova é Errado e a resposta provável o segue, mas o Lovell and Winter, 7ª ed. (cap. 13, p. 445), sustentaria "Certo" ("progridem e invadem a articulação", curetagem como tratamento de escolha). O Dahlin (cap. 4) não fala em invasão articular e o Campbell (cap. 28, p. 958) diz que a extensão para partes moles é extremamente rara, de modo que "evolui com invasão" descreve a tendência, não a regra, o que apoia o Errado da bibliografia.
 !fim
 
 ## Ressecção e radioterapia
