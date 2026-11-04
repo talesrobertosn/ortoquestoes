@@ -27202,15 +27202,15 @@
   },
   {
    "id": "tachdjian6-osteomielite",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Osteomielite e artrite séptica na criança",
    "especialidade": "conceitos-basicos",
    "livro": "Tachdjian's Pediatric Orthopaedics",
    "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed.",
    "capitulo": "Capítulo 23 · Infecções do sistema musculoesquelético",
-   "resumo": "Metáfise (alças arteriolares e sinusoides lentos); vasos transfisários até 18 meses; metáfises intra-articulares (rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais); localizações; agentes por idade (S. aureus, Kingella, pneumococo, Hib); osteomielite subaguda e classificação de ROBERTS; discite e osteomielite vertebral; calcâneo hematogênico e Pseudomonas no ferimento puntiforme; sífilis congênita.",
+   "resumo": "Metáfise (alças arteriolares e sinusoides lentos); vasos transfisários até 18 meses; metáfises intra-articulares (rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais); localizações; agentes por idade (S. aureus, Kingella, pneumococo, Hib); osteomielite subaguda e classificação de ROBERTS; discite e osteomielite vertebral; calcâneo hematogênico e Pseudomonas no ferimento puntiforme; crônica do adulto: sequestro por elevação periosteal e necrose, biofilme, CIERNY e MADER (I medular, II superficial, III localizada sem instabilidade, IV difusa com instabilidade; hospedeiro A, B local ou sistêmico, C), fresagem do canal no tipo I, MASQUELET, transporte ósseo e carcinoma espinocelular de MARJOLIN na fístula.",
    "acesso": "gratis",
-   "minutos": 28,
+   "minutos": 40,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -27278,8 +27278,28 @@
      "radar": "fundamento"
     },
     {
-     "id": "a-cronica-do-adulto-e-o-estadiamento-de-cierny-e",
-     "titulo": "A crônica do adulto e o estadiamento de CIERNY e MADER",
+     "id": "a-cronica-do-adulto-definicao-sequestro-e-involu",
+     "titulo": "A crônica do adulto: definição, sequestro e invólucro",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-biofilme-e-o-germe-da-cronica",
+     "titulo": "O biofilme e o germe da crônica",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-classificacoes-waldvogel-e-cierny-mader",
+     "titulo": "As classificações: WALDVOGEL e CIERNY-MADER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fistula-diagnostico-e-o-carcinoma-de-marjolin",
+     "titulo": "Fístula, diagnóstico e o carcinoma de MARJOLIN",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-tratamento-da-cronica-do-adulto",
+     "titulo": "O tratamento da crônica do adulto",
      "radar": "confirmado"
     },
     {
@@ -27314,7 +27334,6 @@
     "conceitos-basicos-0187",
     "conceitos-basicos-0229",
     "conceitos-basicos-0039",
-    "conceitos-basicos-0076",
     "conceitos-basicos-0249",
     "conceitos-basicos-0079",
     "conceitos-basicos-0207",
@@ -27338,8 +27357,10 @@
     "conceitos-basicos-0285",
     "conceitos-basicos-0171",
     "tumores-0211",
+    "conceitos-basicos-0076",
     "conceitos-basicos-0208",
     "conceitos-basicos-0013",
+    "conceitos-basicos-0310",
     "conceitos-basicos-0227",
     "conceitos-basicos-0045",
     "conceitos-basicos-0064",
@@ -27357,7 +27378,8 @@
     "conceitos-basicos-0419"
    ],
    "subtemas": [
-    "Osteomielite aguda"
+    "Osteomielite aguda",
+    "Osteomielite crônica"
    ]
   },
   {
