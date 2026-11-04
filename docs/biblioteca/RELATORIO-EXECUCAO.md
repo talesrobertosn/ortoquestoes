@@ -265,7 +265,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 903 | CRIAR três temas: osteocondroses (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 9; Tachdjian; Campbell 15; Rockwood and Wilkins), exame físico do cotovelo (HEBERT, 5ª ed., caps. 4, 48 e 47; Campbell 15; Green 7; Rockwood and Green) e hálux rígido (HEBERT, caps. 21.5 e 21.3; Campbell 15, caps. 87, 90, 55 e 36; Tachdjian). |
 | 904 | Tumores de partes moles v2 (sarcomas de partes moles ligados ao resumo do Campbell 15, cap. 30, com Tachdjian, Lovell and Winter e Green), mais 20 miniaulas: hálux rígido (10), osteocondroses (7) e exame do cotovelo (3). |
 | 905 | CRIAR dois temas: lombalgia (Campbell's Operative Orthopaedics, 15ª ed., caps. 46 e 24; HEBERT; Tachdjian) e pé plano flexível (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 29; Tachdjian; HEBERT; Campbell 15), mais 10 miniaulas: lombalgia (5) e sarcomas de partes moles (5). |
-| (este PR) | CRIAR dois temas: outras lesões pseudotumorais (Dahlin's Bone Tumors, 6ª ed., caps. 14 e 26; Campbell 15; Lovell and Winter; Tachdjian; Rockwood and Green; HEBERT) e deformidades dos dedos (Green's Operative Hand Surgery, 7ª ed., cap. 10 e outros; Campbell 15, caps. 71, 79 e 85; HEBERT), mais 7 miniaulas do pé plano flexível. |
+| 906 | CRIAR dois temas: outras lesões pseudotumorais (Dahlin's Bone Tumors, 6ª ed., caps. 14 e 26; Campbell 15; Lovell and Winter; Tachdjian; Rockwood and Green; HEBERT) e deformidades dos dedos (Green's Operative Hand Surgery, 7ª ed., cap. 10 e outros; Campbell 15, caps. 71, 79 e 85; HEBERT), mais 7 miniaulas do pé plano flexível. |
+| (este PR) | CRIAR medicamentos e exames laboratoriais (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 26 e outros; Campbell 15; HEBERT), mais 21 miniaulas: deformidades dos dedos (17) e lesões pseudotumorais (4). |
 
 ## Próximo
 
