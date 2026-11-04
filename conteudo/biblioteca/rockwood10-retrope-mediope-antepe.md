@@ -1,6 +1,6 @@
 ---
 id: rockwood10-retrope-mediope-antepe
-versao: 1
+versao: 2
 titulo: Fraturas do retropé, mediopé e antepé
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,8 +8,8 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 93
 capitulo: Capítulo 67 · Calcaneus Fractures; Capítulo 68 · Fractures and Dislocations of the Midfoot and Forefoot
 autores: Roy W. Sanders e Christopher D. Flanagan (cap. 67); Kaan Irgit, Thomas A. Schildhauer, Martin F. Hoffmann e Robert F. Ostrum (cap. 68)
-fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 67 (pág. PDF 3411 a 3447, anatomia, mecanismo, partes moles, imagem, classificação, patoanatomia, tratamento e complicações) e cap. 68 (pág. PDF 3457 a 3543 e 3551 a 3553: navicular, cuboide, cuneiformes, tarsometatarsal, metatarsos, sesamoides, falanges e compartimentos do pé); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 93 (Fractures and Dislocations of the Foot, p. 4063 a 4082, 4106 a 4118 e 4119 a 4122). O PDF do Rockwood não traz página impressa no cabeçalho desses capítulos; nele a página citada é a do PDF ("pág. PDF"). No Campbell, as páginas citadas são as impressas.
-subtemas: Fraturas do retropé, mediopé e antepé
+fonte: Livros conferidos localmente em 01/11/2026 e revistos em 04/11/2026 (versão 2: releitura do Rockwood, cap. 68, pág. PDF 3457, 3459, 3460, 3472 e 3498, sobre SANGEORZAN, o quebra-nozes e HARDCASTLE, e do Campbell, cap. 93, legenda da fig. 93.60, aprox. p. 4107, e cap. 38, pág. PDF 1889, sobre o mecanismo do quebra-nozes do cuboide): Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 67 (pág. PDF 3411 a 3447, anatomia, mecanismo, partes moles, imagem, classificação, patoanatomia, tratamento e complicações) e cap. 68 (pág. PDF 3457 a 3543 e 3551 a 3553: navicular, cuboide, cuneiformes, tarsometatarsal, metatarsos, sesamoides, falanges e compartimentos do pé); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 93 (Fractures and Dislocations of the Foot, p. 4063 a 4082, 4106 a 4118 e 4119 a 4122). O PDF do Rockwood não traz página impressa no cabeçalho desses capítulos; nele a página citada é a do PDF ("pág. PDF"). No Campbell, as páginas citadas são as impressas.
+subtemas: Fraturas do retropé, mediopé e antepé; Fraturas do mediopé e antepé
 resumo: Calcâneo por carga axial com o processo lateral do tálus como cunha; ESSEX-LOPRESTI (língua x depressão articular) e SANDERS na TC coronal (I sem desvio, II a IV pelo número de fragmentos da faceta posterior, letras de lateral para medial, III com 47% de artrodese); BÖHLER normal 25 a 40 graus, cai na fratura e fica normal quando só a metade lateral afunda (dupla densidade); GISSANE aumenta; BRODEN com rotação interna de 40 graus e feixe cefálico; seio do tarso em até 14 dias, acesso lateral extenso em 14 a 21 dias com sinal da ruga; língua com pele tensa é emergência; deiscência é a complicação mais comum; LISFRANC com 2º metatarso como pedra angular, sem ligamento entre as bases do 1º e do 2º, ligamento do cuneiforme medial à base do 2º, MYERSON A, B1, B2, C1, C2, fleck sign, radiografia com carga, coluna lateral com fios e sem artrodese; navicular de estresse sagital no terço central; cuboide em quebra-nozes; 5º metatarso em três zonas, JONES na zona 2 com parafuso intramedular no atleta.
 ---
 
@@ -98,7 +98,7 @@ Qualquer suspeita intra-articular pede **TC** (pág. PDF 3419). O **coronal**, p
 conceito: BÖHLER normal de 25 a 40 graus cai no colapso da faceta posterior e o GISSANE aumenta; a BRODEN usa rotação interna de 40 graus e feixe cefálico de 10 a 15 graus; quando só a metade lateral da faceta afunda, há dupla densidade e os ângulos podem ficar normais.
 como: O ENARE R4 2024 pediu a afirmação correta sobre a avaliação radiográfica sem tomógrafo (a técnica da BRODEN); o TARO 2007 perguntou em que metade da faceta o afundamento mantém GISSANE e BÖHLER normais.
 armadilha: Achar que BÖHLER acima de 40 graus indica fratura, que GISSANE diminui ou que a BRODEN é feita em rotação externa.
-alerta: Em `pe-tornozelo-0315`, a alternativa E reproduz a técnica do Campbell (p. 4064); o Rockwood dá BÖHLER de 25 a 40 graus (a alternativa B fala em 20 a 40) e nenhum dos dois livros traz a faixa normal do GISSANE citada na alternativa D. A `pe-tornozelo-0328` está sem gabarito oficial; o Rockwood (pág. PDF 3413 e 3418) sustenta a alternativa C, metade lateral da faceta posterior.
+alerta: Em `pe-tornozelo-0315`, a alternativa E reproduz a técnica do Campbell (p. 4064); o Rockwood dá BÖHLER de 25 a 40 graus (a alternativa B fala em 20 a 40) e nenhum dos dois livros traz a faixa normal do GISSANE citada na alternativa D. A `pe-tornozelo-0328` está sem gabarito oficial; o gabarito pela bibliografia da prova (Rockwood, 6ª ed., p. 2298) é a metade medial da faceta posterior, mas o Rockwood and Green, 10ª ed. (cap. 67, pág. PDF 3418), diz que o BÖHLER só cai quando toda a faceta posterior afunda separada do sustentáculo e fica em geral normal quando o traço divide a faceta em metades medial e lateral (sinal da dupla densidade), o que favorece o afundamento da metade lateral; a resposta provável segue a bibliografia da prova, com a divergência registrada.
 !fim
 
 # A classificação: ESSEX-LOPRESTI e SANDERS {radar=fundamento}
@@ -241,6 +241,18 @@ A classificação de SANGEORZAN (pág. PDF 3459) separa **avulsão** (a lesão *
 | OTA/AO | 83-A não cominuta; 83-B cominuta; luxações 80-C | pesquisa |
 !fim
 
+## Como distinguir os três tipos de SANGEORZAN
+
+O raciocínio é geométrico. No **tipo I**, o traço corre no **plano horizontal (coronal), transverso**, separando um fragmento **dorsal** de um plantar; por isso o que se rompe são os **ligamentos dorsais** (Rockwood, pág. PDF 3459). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93, legenda da fig. 93.60, aprox. p. 4107) acrescenta que o fragmento dorsal costuma ter **menos de 50% do corpo** e que, no AP, o único sinal pode ser uma **sutil sombra de cortical dupla** na linha articular; como o traço é transverso, a redução satisfatória em geral é obtida (p. 4106). No **tipo II**, o traço passa a ser **vertical**, a abdução esmaga a **porção lateral** e rompe o **ligamento talonavicular**; o Campbell descreve a talonavicular subluxada dorsal e medialmente com **adução do antepé**. No **tipo III**, a cominução central derruba o arco medial e o antepé desvia para **lateral**, com lesão da naviculocuneiforme e, muitas vezes, do cuboide ou do processo anterior do calcâneo.
+
+Em resumo, "horizontal com ligamento dorsal" é tipo I, "vertical com cominução lateral" é tipo II e "esmagamento central" é tipo III. Não existe um tipo de SANGEORZAN com lesão ligamentar **plantar**.
+
+!questoes central=trauma-0024
+conceito: O tipo I de SANGEORZAN do corpo do navicular tem traço transverso horizontal com ruptura dos ligamentos dorsais; o vertical com cominução lateral é o tipo II.
+como: O TARO 2019 pediu o traço do tipo I, oferecendo vertical sem desvio, horizontal com lesão dorsal, horizontal com lesão plantar e vertical com cominução lateral.
+armadilha: Marcar "horizontal com lesão ligamentar plantar" (o traço está certo, o ligamento não) ou o vertical com cominução lateral, que descreve o tipo II.
+!fim
+
 ## Diagnóstico
 
 A radiografia simples tem **sensibilidade de apenas 33%** comparada à TC (HAAPAMAKI); a **TC do pé inteiro** é a ferramenta-chave, e a fluoroscopia dinâmica ou a radiografia com carga avaliam a estabilidade das colunas (pág. PDF 3458). Na suspeita de estresse: **RM** ou TC de **1 mm perpendicular ao navicular**.
@@ -268,7 +280,7 @@ armadilha: Imaginar um traço transverso horizontal, como o do tipo I de SANGEOR
 alerta: A `pe-tornozelo-0357` está sem gabarito oficial; o Campbell (p. 4106 a 4108) sustenta "Certo" (plano sagital, terço central), e o Rockwood (pág. PDF 3460) descreve o mesmo traço partindo do meio do dorso para plantar.
 !fim
 
-# Cuboide e cuneiformes {radar=fundamento}
+# Cuboide e cuneiformes {radar=confirmado}
 
 ## O cuboide, pedra angular da coluna lateral
 
@@ -277,6 +289,15 @@ O cuboide é o **único osso da parte lateral do mediopé**; articula com o calc
 ## Avulsão e quebra-nozes
 
 A lesão **mais comum** (50 a 70%) é a **avulsão** com entorse, e **70%** delas passam despercebidas (pág. PDF 3474). O cuboide fica apoiado **entre o calcâneo e as bases do 4º e 5º metatarsos** (pág. PDF 3472) e sofre com forças diretas ou **indiretas por abdução do pé** (bailarinas); o Rockwood usa "**quebra-nozes**" (nutcracker) para o quadro do mecanismo indireto, com dor súbita e incapacidade de apoiar (pág. PDF 3473). COURT-BROWN: cuboide em **mulheres idosas** e baixa energia; navicular em homens e alta energia.
+
+O nome descreve o mecanismo: com o antepé forçado em **abdução** (valgo do mediopé), em geral somado a carga axial (Campbell, 15ª ed., cap. 38, pág. PDF 1889), a **coluna lateral é comprimida** e o cuboide é esmagado entre o calcâneo e as bases do 4º e 5º, como uma noz entre os braços do quebra-nozes. A mesma abdução **traciona a coluna medial**: no navicular, o Rockwood (pág. PDF 3457) descreve a avulsão do quebra-nozes como o valgo do mediopé **arrancando o tendão tibial posterior da face medial do navicular**, que é o ponto de inserção do **único tendão** do osso (pág. PDF 3460), a tuberosidade. A legenda da fig. 68-11 (pág. PDF 3472) mostra o quadro completo: lesão em abdução ou "nutcracker", **esmagamento lateral** e **fratura-avulsão do navicular**, com pé plano e abdução do mediopé depois, quando o comprimento da coluna lateral se perdeu. Por isso o cuboide em quebra-nozes deve fazer procurar a **tuberosidade do navicular** e o **tibial posterior** do lado de dentro; MAIN e JOWETT lembram que fraturas do navicular não devem ser vistas isoladamente, e HOWIE achou lesão da calcaneocuboide em metade das avulsões do navicular, com 71% de maus resultados (pág. PDF 3472).
+
+!questoes central=trauma-0478
+conceito: No quebra-nozes, a abdução do antepé comprime o cuboide na coluna lateral e traciona a medial, arrancando o tibial posterior da face medial do navicular, isto é, da tuberosidade.
+como: O ENARE R4 2023 perguntou a que lesões se associa o cuboide em quebra-nozes, trocando tuberosidade por colo do navicular, cuneiforme ou sesamoide e tibial posterior por tibial anterior.
+armadilha: Escolher o tibial anterior, que não se insere no navicular, ou o colo do navicular, que não é o ponto de tração.
+alerta: O Rockwood (pág. PDF 3457 e 3460) não usa a palavra "tuberosidade" junto do quebra-nozes; fala da face medial do navicular, onde se insere o tibial posterior. O gabarito oficial da `trauma-0478` (A) é mantido e coerente com essa leitura.
+!fim
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93, p. 4110) resume: avulsões pequenas por **entorse em inversão** vão bem sem cirurgia; as fraturas por **compressão, "nutcracker"**, associam-se a lesões de LISFRANC e mediotarsais; a maioria tem pouco desvio e vai bem com gesso **sem carga por 4 semanas** e **mais 4 com carga**; se houver **encurtamento da coluna lateral**, redução aberta, enxerto e às vezes fixador para restaurar o comprimento. Equimose na planta do arco deve levantar suspeita, como no LISFRANC.
 
@@ -362,9 +383,30 @@ AP, oblíqua (em **30 graus de rotação interna**) e perfil verdadeiro, e a rad
 - o **"fleck sign"**, avulsão da base do 2º ou do cuneiforme medial, é **patognomônico**;
 - "medial column sign" de COSS: sob estresse em abdução, a tangente à borda medial do cuneiforme medial passa medial à base do 1º.
 
+Uma regra ajuda a memorizar: cada incidência confere uma coluna. O **AP** mostra a coluna medial e a do meio (1º com cuneiforme medial; **2º com cuneiforme intermédio**, pela borda medial); a **oblíqua** abre a coluna lateral e mostra o **4º com o cuboide**, sempre pela **borda medial** dos dois (Rockwood, pág. PDF 3473 e 3492 a 3496). Depois da redução, os mesmos alinhamentos servem de parâmetro de controle.
+
+!questoes central=trauma-0888
+conceito: Na oblíqua do pé, a borda medial do 4º metatarso deve alinhar com a borda medial do cuboide; no AP, a borda medial do 2º alinha com a do cuneiforme intermédio; 1 mm de desalinhamento é patológico.
+como: O TARO 2010 perguntou o parâmetro de redução do LISFRANC visto na oblíqua.
+armadilha: Marcar o 2º com o cuneiforme medial (o par certo do AP é 2º com cuneiforme intermédio) ou usar a borda lateral do cuboide com o 5º.
+!fim
+
 ## As classificações
 
-Nenhuma classificação padroniza bem as lesões nem prevê resultado (Rockwood, pág. PDF 3498 a 3501); o Campbell (p. 4112) diz que a classificação é útil para comunicação, mas **não é prognóstica**. Todas descendem de QUÉNU e KÜSS (1909): **homolateral, isolada e divergente**. HARDCASTLE reorganizou em **A (completa)**, **B (parcial, medial ou lateral)** e **C (divergente)**. MYERSON (1986) modificou HARDCASTLE incorporando lesões ósseas da coluna medial, e é a mais cobrada.
+Nenhuma classificação padroniza bem as lesões nem prevê resultado (Rockwood, pág. PDF 3498 a 3501); o Campbell (p. 4112) diz que a classificação é útil para comunicação, mas **não é prognóstica**. Todas descendem de QUÉNU e KÜSS (1909), a mais usada: **homolateral, isolada e divergente**. HARDCASTLE a modificou com base na morfologia radiográfica (pág. PDF 3498), e é dele a versão com letras que as provas chamam de "QUÉNU e KÜSS modificada":
+
+- **A (completa)**: todo o complexo de LISFRANC envolvido, com luxação **num só plano** (sagital, frontal ou combinado), o padrão homolateral;
+- **B (parcial)**: incongruência parcial; no padrão **medial**, desvia o 1º metatarso ou um número variável de metatarsos, **excluindo o 5º**; no padrão **lateral**, **um ou mais metatarsos laterais luxam enquanto o 1º raio permanece estável e intacto**;
+- **C (divergente)**: no AP, **medialização do 1º metatarso** com **translação lateral** de um número variável dos quatro laterais; pode ser completa ou parcial.
+
+O segredo é olhar o 1º raio: se ele acompanha os outros, A; se fica no lugar enquanto parte do pé sai, B; se vai para o lado oposto, C. Não existe tipo D. MYERSON (1986) modificou QUÉNU e KÜSS e HARDCASTLE incorporando lesões mais proximais da coluna medial (Campbell, p. 4112), e é a mais cobrada.
+
+!questoes central=trauma-0540 relacionadas=trauma-0720
+conceito: Na QUÉNU e KÜSS modificada por HARDCASTLE, A é completa (todos no mesmo plano), B é parcial (medial, ou lateral com o 1º raio estável e intacto) e C é divergente (1º metatarso para medial, laterais para lateral).
+como: A SBOT-SP descreveu, com as palavras do Rockwood, metatarsos laterais desviados com o 1º raio intacto (tipo B) e, em outra prova, pediu o tipo de uma lesão em figura, com gabarito C (divergente).
+armadilha: Chamar de A toda luxação lateral; se o 1º raio fica no lugar, é B, e só é C quando o 1º vai para o lado oposto. Não há tipo D.
+alerta: A figura da `trauma-0720` não está no acervo (a questão está sem imagem), por isso o resumo não pôde conferir o desenho; o gabarito oficial C, padrão divergente, é mantido.
+!fim
 
 !tabela Classificação de MYERSON (Rockwood and Green, 10ª ed., cap. 68, pág. PDF 3500 e 3501; Campbell 15ª ed., cap. 93, p. 4112)
 | Tipo | Rockwood | Campbell |
@@ -465,7 +507,7 @@ São cerca de **10%** das fraturas de metatarso, muitas vezes contíguas: o 3º 
 | múltiplas adjacentes, cominução | contraindicação relativa ao não operatório |
 !fim
 
-# O 5º metatarso: zonas, JONES e estresse {radar=fundamento}
+# O 5º metatarso: zonas, JONES e estresse {radar=confirmado}
 
 ## Anatomia que explica a pseudartrose
 
@@ -492,6 +534,14 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 93, p. 4120) define as zonas
 | diáfise distal | espiral do bailarino | tratamento funcional; consolida em cerca de 8 semanas |
 !fim
 
+A sequência é fácil de fixar andando de proximal para distal: **avulsão (zona 1), JONES (zona 2), estresse (zona 3)**. O que separa a zona 2 da 3 não é só o ponto, é a história: a JONES é **aguda**, sem pródromos, na junção metáfise-diáfise que inclui a articulação entre o 4º e o 5º; a de estresse vem de **carga cíclica**, com **pródromos**, nos 1,5 cm proximais da diáfise, já distal a essa articulação (Rockwood, pág. PDF 3527; Campbell, p. 4120). Não existe zona IV nessa divisão.
+
+!questoes central=trauma-0172
+conceito: Nas fraturas proximais do 5º metatarso, a zona I é a avulsão da tuberosidade, a zona II é a JONES aguda na junção metáfise-diáfise e a zona III é a fratura de estresse dos 1,5 cm proximais da diáfise.
+como: A prova perguntou as zonas da JONES e da fratura por estresse, respectivamente (II e III); o mesmo enunciado caiu no TEOT 2021.
+armadilha: Chamar a avulsão da tuberosidade (zona I) de JONES ou inventar uma zona IV.
+!fim
+
 ## TORG e o tratamento
 
 Zona 1: bota ou enfaixamento com carga, melhor que gesso. Zona 2 aguda: gesso **sem carga por 6 semanas**; com pródromos, **mais 8 semanas** (pág. PDF 3528). No atleta, zonas 2 e 3 vão para **parafuso intramedular**, o padrão-ouro, de pelo menos **4,0 a 4,5 mm** e comprimento abaixo de **68 a 70%** do metatarso; retorno em **98,4%**, em **9,7 semanas** contra 13,1 sem cirurgia (pág. PDF 3529). TORG gradua a cronicidade: **I** aguda de traço estreito, **II** retardo com reação periosteal, **III** pseudartrose com **canal esclerótico** (II e III pedem enxerto).
@@ -512,8 +562,6 @@ São as lesões **mais comuns do antepé**; a **falange proximal do 5º dedo** �
 
 # Fechamento {radar=fundamento}
 
-No **calcâneo**, o processo lateral do tálus desce como cunha, o fragmento **sustentacular** fica preso ao tálus e a **metade lateral** da faceta posterior afunda; o BÖHLER diminui e o GISSANE aumenta, salvo na **dupla densidade**. SANDERS, na TC coronal, gradua a faceta e o prognóstico. O **seio do tarso** cedo é o acesso atual; **língua** com pele tensa e **fratura-luxação** são urgências. No **mediopé**, preserve o comprimento das colunas; no **LISFRANC**, o 2º metatarso é a pedra angular, a coluna medial é rígida e a lateral, flexível. No **antepé**, proteja as cabeças e lembre a zona divisora de águas do 5º.
+No **calcâneo**, o processo lateral do tálus desce como cunha, o fragmento **sustentacular** fica preso ao tálus e a **metade lateral** da faceta posterior afunda; o BÖHLER diminui e o GISSANE aumenta, salvo na **dupla densidade**. SANDERS, na TC coronal, gradua a faceta e o prognóstico. O **seio do tarso** cedo é o acesso atual; **língua** com pele tensa e **fratura-luxação** são urgências. No **mediopé**, preserve o comprimento das colunas; no **LISFRANC**, o 2º metatarso é a pedra angular, a coluna medial é rígida e a lateral, flexível. No **antepé**, proteja a posição das cabeças; lembre a **zona divisora de águas** do 5º metatarso, a **JONES** na zona 2 e o estresse na zona 3; e não confunda **sesamoide bipartido** com fratura.
 
-No **antepé**, proteja a posição das cabeças; lembre a **zona divisora de águas** do 5º metatarso, a **JONES** na zona 2 e o parafuso intramedular no atleta; e não confunda **sesamoide bipartido** com fratura.
-
-> **Na prova:** BÖHLER **25 a 40 graus** (normal na dupla densidade, quando só a **metade lateral** da faceta posterior afunda); GISSANE **aumenta**; BRODEN com rotação **interna de 40 graus** e feixe **10 a 15 graus cefálico**; SANDERS na **TC coronal**, III com **47%** de artrodese; seio do tarso da ponta da fíbula à base do **4º metatarso**, preservando o **interósseo**; deiscência apical até **25%**; LISFRANC do **cuneiforme medial à base do 2º**, sem ligamento entre **1º e 2º**; MYERSON **B2 = parcial lateral**; **fleck sign** patognomônico; 4ª e 5ª TMT com **fios de KIRSCHNER**, sem artrodese; **tibial anterior** bloqueia a redução; navicular de estresse **sagital no terço central**, gesso sem carga 6 a 8 semanas; cuboide em **quebra-nozes**; JONES na **zona 2**, parafuso de pelo menos **4,5 mm** no atleta.
+> **Na prova:** BÖHLER **25 a 40 graus** (normal na dupla densidade, quando só a **metade lateral** da faceta posterior afunda); GISSANE **aumenta**; BRODEN com rotação **interna de 40 graus** e feixe **10 a 15 graus cefálico**; SANDERS na **TC coronal**, III com **47%** de artrodese; seio do tarso da ponta da fíbula à base do **4º metatarso**, preservando o **interósseo**; deiscência apical até **25%**; LISFRANC do **cuneiforme medial à base do 2º**, sem ligamento entre **1º e 2º**; MYERSON **B2 = parcial lateral**; **fleck sign** patognomônico; 4ª e 5ª TMT com **fios de KIRSCHNER**, sem artrodese; **tibial anterior** bloqueia a redução; SANGEORZAN I **horizontal com ligamentos dorsais**; navicular de estresse **sagital no terço central**, gesso sem carga 6 a 8 semanas; cuboide em **quebra-nozes** com avulsão do **tibial posterior** na tuberosidade do navicular; oblíqua com **4º alinhado ao cuboide** pela borda medial; HARDCASTLE B lateral com **1º raio intacto**, C **divergente**; JONES na **zona 2**, estresse na **zona 3**, parafuso de pelo menos **4,5 mm** no atleta.

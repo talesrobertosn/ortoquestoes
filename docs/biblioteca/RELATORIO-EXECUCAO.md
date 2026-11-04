@@ -272,7 +272,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 910 | CRIAR vias de acesso à coluna (Hoppenfeld, Vias de Acesso em Cirurgia Ortopédica, 4ª ed., cap. 6, lido por OCR; Campbell 15, caps. 44 e 45; Rockwood and Green), mais 9 miniaulas de biomecânica e marcha do pé. |
 | 911 | 26 miniaulas: deformidades congênitas do pé (14), artroscopia do quadril e lesão labral (8) e vias de acesso à coluna (4), com os livros comparados onde divergem. |
 | 912 | Quatro resumos novos: biomecânica da mão (green-biomecanica-mao, 62 KB), peitoral maior e rupturas tendíneas (campbell15-peitoral-maior, 62 KB), fixadores externos (ao-fixadores-externos, 61 KB) e luxação acromioclavicular e esternoclavicular (versão 2, 68 KB); 14 miniaulas da biomecânica da mão, com Green, Campbell e Rockwood lado a lado onde divergem. |
-| (este PR) | Dois resumos novos: pé reumatoide (hebert-pe-reumatoide, 62 KB, HEBERT 21.6 com o Campbell 15) e desenvolvimento neuropsicomotor (tachdjian6-desenvolvimento-neuropsicomotor, 62 KB, Tachdjian 1 com Rockwood and Wilkins, Lovell and Winter e HEBERT); 21 miniaulas: fixadores externos (9), peitoral maior (5) e luxação AC e EC (7), com os livros lado a lado onde divergem. |
+| 913 | Dois resumos novos: pé reumatoide (hebert-pe-reumatoide, 62 KB, HEBERT 21.6 com o Campbell 15) e desenvolvimento neuropsicomotor (tachdjian6-desenvolvimento-neuropsicomotor, 62 KB, Tachdjian 1 com Rockwood and Wilkins, Lovell and Winter e HEBERT); 21 miniaulas: fixadores externos (9), peitoral maior (5) e luxação AC e EC (7), com os livros lado a lado onde divergem. |
+| (este PR) | Fraturas do mediopé e antepé: versão 2 do resumo do retropé, mediopé e antepé (70 KB; SANGEORZAN, quebra-nozes, HARDCASTLE e MYERSON, 5º metatarso; 6 questões novas); 14 miniaulas: pé reumatoide (8) e desenvolvimento neuropsicomotor (6), com HEBERT, Campbell, Tachdjian, Rockwood and Wilkins e Lovell and Winter lado a lado. |
 
 ## Próximo
 
