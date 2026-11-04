@@ -6,7 +6,8 @@ import { registrarTitulosResumos } from '../../componentes/admin/formatos'
 import { CORTESIA_ADMIN, PLANO_CORTESIA, rotuloPlano } from '../../componentes/admin/rotulos'
 import { planosEmDestaque, viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
 import { usarRpc } from '../../componentes/admin/usarRpc'
-import { usarFunil, usarSerie } from '../dados/consultas'
+import { serieLimpa, usarFunil, usarSerie } from '../dados/consultas'
+import { Comparacoes, Destaques, Semana, Termometro, VendoAgora } from './central'
 import { usarPainel } from '../dados/painel'
 import { nomeDe, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
@@ -197,6 +198,15 @@ export default function Inicio() {
       </>}
     </section>
 
+    <Comparacoes />
+
+    <section className="cr-secao" aria-labelledby="cc-observatorio">
+      <header className="cr-secao__cabeca"><span className="cr-secao__numero" aria-hidden="true"><Icone nome="olho" tamanho={16} /></span><div><h2 id="cc-observatorio">Observatório</h2><p>O que estão vendo, quem está perto de assinar, quem mais estudou e a semana em colunas.</p></div></header>
+      <div className="cr-grade-2"><VendoAgora /><Termometro limite={limite} /></div>
+      <Semana serie={serieLimpa(serieQ.dados)} />
+      <Destaques />
+    </section>
+
     {!g ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="A lista de pessoas não carregou" texto={p.erroDados} /> : <Carregando linhas={5} texto="Vendo quem está online…" />}</div> :
       <section className="a3-painel a3-ancora" id="a3-pessoas" aria-label="Pessoas">
         <div className="a3-abas-locais a3-abas-locais--rolam" role="tablist" aria-label="Qual lista">
@@ -223,6 +233,7 @@ export default function Inicio() {
             <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirLimiteLista(daVista.length)}>Ver todos os {daVista.length}</button></div>}
         </>}
       </section>}
+
 
     <div className="a3-grade a3-grade--12" style={{ alignItems: 'start' }}>
       <div style={{ gridColumn: 'span 5' }} id="a3-acao" className="a3-ancora">
