@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Classificados: Túnel Cubital (stories)</title>
+<!-- Stories, estilo novo "Classificados de imóveis": questão ombro-cotovelo-0646 (OrtoQuestões Simulados, anatomia do
+     cotovelo), gabarito A (teto: ligamento de Osborne + aponeurose entre as cabeças do FUC; assoalho: feixes posterior
+     e transverso do LCM + cápsula). Conteúdo do comentário do acervo (Green, cap. 28, p. 1105; cap. 22, p. 977).
+     Sem desenho de anatomia. Stories sem figurinha.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-04-classificados-tunel-cubital/stories.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; font-style: italic; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Serif4; src: url(../../fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Serif4; font-style: italic; src: url(../../fontes/source-serif-4-latin-opsz-italic.woff2) format('woff2'); font-weight: 200 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+@font-face { font-family: Jersey; src: url(../../fontes/jersey-10-latin-400-normal.woff2) format('woff2'); }
+
+:root { --papel: #f3eddc; --papel2: #ebe3cc; --tinta: #1b1a17; --tinta2: #4a463d; --verde: #14655e; --verde2: #0b3a35;
+  --noite: #0a1f1c; --ouro: #f4cf7c; --ourot: #7a5710; --creme: #f6eedb; --verm: #a2322a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: var(--tinta); }
+b, strong { font-weight: 700; }
+
+/* ---------- papel de jornal ---------- */
+.jornal { background: var(--papel); }
+.jornal::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .5;
+  background-image: radial-gradient(rgba(90,70,30,.10) 1px, transparent 1.4px), radial-gradient(rgba(90,70,30,.06) 1px, transparent 1.6px);
+  background-size: 7px 7px, 11px 11px; background-position: 0 0, 3px 5px; }
+.jornal::after { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background: radial-gradient(ellipse at 50% 40%, transparent 55%, rgba(120,90,30,.16) 100%); }
+.cab { position: absolute; left: 56px; right: 56px; top: 54px; }
+.cab .linha1 { display: flex; justify-content: space-between; align-items: center; font: 700 21px Inter; letter-spacing: .16em; text-transform: uppercase; color: var(--tinta2); padding-bottom: 12px; border-bottom: 2px solid var(--tinta); }
+.marca { display: inline-flex; align-items: center; gap: 12px; text-transform: none; letter-spacing: -.01em; font: 800 27px Jakarta; color: var(--tinta); }
+.marca img { width: 40px; height: 40px; }
+.marca span { font-weight: 500; }
+.cont { font: 400 38px Jersey; letter-spacing: .04em; color: var(--verde); }
+.titulo-jornal { text-align: center; white-space: nowrap; font: 900 78px/1 Playfair; letter-spacing: -.02em; margin: 14px 0 8px; }
+.titulo-jornal i { font-style: italic; font-weight: 700; color: var(--verde); }
+.cab .linha2 { display: flex; justify-content: space-between; font: 600 20px Inter; letter-spacing: .08em; text-transform: uppercase; color: var(--tinta2); padding: 10px 0; border-top: 4px double var(--tinta); border-bottom: 2px solid var(--tinta); }
+.faixa { position: absolute; left: 56px; right: 56px; background: var(--tinta); color: var(--papel); font: 800 22px Inter; letter-spacing: .2em; text-transform: uppercase; padding: 12px 22px; display: flex; justify-content: space-between; }
+.faixa i { font-style: normal; color: var(--ouro); }
+
+/* ---------- story 1: anúncio ---------- */
+.anuncio { position: absolute; left: 56px; right: 56px; top: 398px; border: 3px solid var(--tinta); outline: 1px solid var(--tinta); outline-offset: 6px; padding: 26px 34px 26px; background: rgba(255,252,240,.55); }
+.anuncio .selo-op { position: absolute; top: -20px; left: 30px; background: var(--verm); color: #fff; font: 800 20px Inter; letter-spacing: .2em; padding: 6px 16px; transform: rotate(-2deg); }
+.anuncio h2 { font: 900 108px/.94 Playfair; letter-spacing: -.025em; text-align: center; margin-top: 8px; }
+.anuncio h2 small { display: block; font: 800 30px Inter; letter-spacing: .5em; margin-bottom: 6px; color: var(--verm); }
+.anuncio h2 em { font-style: italic; color: var(--verde); }
+.anuncio .sub { text-align: center; font: italic 500 31px/1.3 Serif4; color: var(--tinta2); margin: 12px 0 18px; }
+.ficha { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 2px solid var(--tinta); }
+.ficha div { padding: 13px 16px 13px 0; border-bottom: 1px dashed rgba(27,26,23,.45); font: 400 24px/1.33 Serif4; }
+.ficha div:nth-child(odd) { padding-right: 22px; border-right: 1px dashed rgba(27,26,23,.45); }
+.ficha div:nth-child(even) { padding-left: 22px; }
+.ficha div.larga { grid-column: 1 / -1; border-right: 0; padding-right: 0; }
+.ficha b { display: block; font: 800 18px Inter; letter-spacing: .16em; text-transform: uppercase; color: var(--verde); margin-bottom: 3px; }
+.recado { position: absolute; right: 50px; top: 236px; transform: rotate(4deg); font: 700 40px/1 Caveat; color: var(--verm); text-align: center; }
+.recado::after { content: ''; position: absolute; left: -16px; right: -16px; top: -10px; bottom: -14px; border: 3px solid var(--verm); border-radius: 50% 46% 52% 44%; }
+
+.pergunta { position: absolute; left: 56px; right: 56px; top: 1110px; }
+.pergunta .rot { display: flex; justify-content: space-between; align-items: baseline; font: 800 21px Inter; letter-spacing: .18em; text-transform: uppercase; color: var(--verde); border-bottom: 2px solid var(--tinta); padding-bottom: 8px; }
+.pergunta .rot span { color: var(--ourot); letter-spacing: .08em; }
+.pergunta p.enun { font: 600 33px/1.3 Serif4; margin: 14px 0 16px; }
+.alts { display: grid; gap: 12px; }
+.alt { display: grid; grid-template-columns: 64px 1fr; align-items: center; border: 2px solid var(--tinta); background: rgba(255,252,240,.7); }
+.alt .l { align-self: stretch; display: grid; place-items: center; background: var(--tinta); color: var(--papel); font: 400 48px Jersey; }
+.alt p { padding: 11px 18px; font: 500 25px/1.32 Inter; }
+.rodape-cl { position: absolute; left: 56px; right: 56px; bottom: 56px; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+.mini { border: 2px solid var(--tinta); padding: 12px 14px; font: 400 21px/1.3 Serif4; background: rgba(255,252,240,.5); }
+.mini b { display: block; font: 900 23px Playfair; letter-spacing: .02em; text-transform: uppercase; margin-bottom: 4px; }
+.mini.escuro { background: var(--verde2); color: var(--creme); border-color: var(--verde2); }
+.mini.escuro b { color: var(--ouro); }
+.chamada { position: absolute; left: 56px; right: 56px; top: 1638px; display: flex; align-items: center; gap: 18px; font: 700 30px Caveat; font-size: 40px; color: var(--verm); }
+.chamada::before, .chamada::after { content: ''; flex: 1; height: 2px; background: repeating-linear-gradient(90deg, var(--verm) 0 10px, transparent 10px 18px); }
+
+.fluxo { position: absolute; left: 56px; right: 56px; top: 252px; bottom: 50px; display: flex; flex-direction: column; justify-content: space-between; }
+.fluxo > * { position: relative !important; left: auto !important; right: auto !important; top: auto !important; bottom: auto !important; }
+.fluxo .anuncio { margin-top: -10px; }
+.anuncio h2 { font-size: 100px !important; }
+/* ---------- story 2: laudo ---------- */
+.laudo-cab { position: absolute; left: 56px; right: 56px; top: 54px; }
+.laudo-cab .topo { display: flex; justify-content: space-between; align-items: center; padding-bottom: 14px; border-bottom: 2px solid var(--tinta); }
+.laudo-cab h1 { font: 900 84px/1 Playfair; letter-spacing: -.02em; margin-top: 18px; }
+.laudo-cab h1 em { font-style: italic; color: var(--verde); }
+.dados { margin-top: 14px; display: grid; grid-template-columns: repeat(3, 1fr); border: 2px solid var(--tinta); }
+.dados div { padding: 10px 14px; border-right: 1px solid var(--tinta); font: 600 22px/1.25 Inter; }
+.dados div:last-child { border-right: 0; }
+.dados small { display: block; font: 800 16px Inter; letter-spacing: .16em; text-transform: uppercase; color: var(--tinta2); margin-bottom: 2px; }
+.carimbo { position: absolute; right: 64px; top: 140px; width: 250px; height: 250px; border-radius: 50%; border: 6px double var(--verm); color: var(--verm); display: grid; place-items: center; text-align: center; transform: rotate(-12deg); background: rgba(243,237,220,.92); z-index: 5; }
+.carimbo div { font: 800 20px Inter; letter-spacing: .2em; line-height: 1.2; }
+.carimbo strong { display: block; font: 400 128px/.85 Jersey; letter-spacing: 0; }
+.itens { position: absolute; left: 56px; right: 56px; top: 452px; display: grid; gap: 16px; }
+.item { display: grid; grid-template-columns: 70px 1fr; gap: 18px; padding: 18px 22px; border: 2px solid var(--tinta); background: rgba(255,252,240,.62); }
+.item .ck { width: 62px; height: 62px; border: 3px solid var(--verde); display: grid; place-items: center; color: var(--verde); }
+.item .ck svg { width: 46px; height: 46px; }
+.item h3 { font: 800 21px Inter; letter-spacing: .16em; text-transform: uppercase; color: var(--verde); }
+.item h4 { font: 800 36px/1.15 Jakarta; letter-spacing: -.02em; margin: 4px 0 6px; }
+.item p { font: 400 27px/1.4 Serif4; color: var(--tinta); }
+.item p i { color: var(--tinta2); }
+.item.alerta { background: var(--verde2); color: var(--creme); border-color: var(--verde2); }
+.item.alerta .ck { border-color: var(--ouro); color: var(--ouro); font: 400 54px Jersey; }
+.item.alerta h3 { color: var(--ouro); }
+.item.alerta p { color: var(--creme); }
+.irreg { position: absolute; left: 56px; right: 56px; top: 1210px; }
+.irreg .rot { font: 800 21px Inter; letter-spacing: .18em; text-transform: uppercase; color: var(--verm); border-bottom: 2px solid var(--tinta); padding-bottom: 8px; display: flex; justify-content: space-between; }
+.irreg .rot span { color: var(--tinta2); letter-spacing: .06em; }
+.irreg .g { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; margin-top: 14px; }
+.irreg .c { border: 2px dashed var(--verm); padding: 14px 16px; background: rgba(255,252,240,.55); }
+.irreg .c .l { font: 400 52px/.9 Jersey; color: var(--verm); }
+.irreg .c h5 { font: 900 25px/1.12 Playfair; margin: 4px 0 6px; }
+.irreg .c p { font: 400 23.5px/1.38 Serif4; }
+.naprova { position: absolute; left: 56px; right: 56px; top: 1590px; background: var(--tinta); color: var(--papel); padding: 22px 28px; display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; }
+.naprova .t { font: 900 34px/1 Playfair; font-style: italic; color: var(--ouro); }
+.naprova p { font: 600 27px/1.35 Inter; }
+.naprova p b { color: var(--ouro); }
+.assin { position: absolute; left: 56px; right: 56px; bottom: 52px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.assin div { border-top: 2px solid var(--tinta); padding-top: 6px; font: 600 18px Inter; letter-spacing: .1em; text-transform: uppercase; color: var(--tinta2); position: relative; }
+.assin div span { position: absolute; top: -50px; left: 10px; font: 700 44px Caveat; letter-spacing: 0; text-transform: none; color: var(--verde); }
+
+/* ---------- stories 3 e 4: noite ---------- */
+.noite { background: radial-gradient(ellipse at 50% 18%, #11504a 0%, var(--verde2) 42%, var(--noite) 100%); color: var(--creme); }
+.planta::before { content: ''; position: absolute; inset: 0; pointer-events: none;
+  background-image: linear-gradient(rgba(244,207,124,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(244,207,124,.08) 1px, transparent 1px),
+    linear-gradient(rgba(244,207,124,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(244,207,124,.035) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px; }
+.topo-n { position: absolute; left: 56px; right: 56px; top: 54px; display: flex; justify-content: space-between; align-items: center; padding-bottom: 14px; border-bottom: 1px solid rgba(244,207,124,.45); }
+.topo-n .marca { color: var(--creme); }
+.topo-n .cont { color: var(--ouro); }
+.topo-n .tag { font: 800 19px Inter; letter-spacing: .2em; text-transform: uppercase; color: var(--ouro); }
+
+.s3-tit { position: absolute; left: 56px; right: 56px; top: 170px; }
+.s3-tit .rot { font: 800 22px Inter; letter-spacing: .22em; text-transform: uppercase; color: var(--ouro); }
+.s3-tit h2 { font: 800 74px/1.03 Jakarta; letter-spacing: -.035em; margin-top: 12px; }
+.s3-tit h2 em { font-style: normal; color: var(--ouro); }
+.s3-tit p { font: 500 30px/1.38 Inter; color: rgba(246,238,219,.86); margin-top: 16px; }
+.carimbo-p { position: absolute; right: 56px; top: 176px; border: 3px solid var(--ouro); color: var(--ouro); padding: 8px 14px; font: 800 17px/1.3 Inter; letter-spacing: .16em; text-transform: uppercase; transform: rotate(6deg); text-align: center; }
+.etapas { position: absolute; left: 56px; right: 56px; top: 600px; display: grid; gap: 0; }
+.etapa { position: relative; display: grid; grid-template-columns: 96px 1fr; gap: 22px; padding: 18px 0; border-bottom: 1px dashed rgba(244,207,124,.35); }
+.etapa .n { width: 96px; height: 96px; border: 2px solid var(--ouro); display: grid; place-items: center; font: 400 66px Jersey; color: var(--ouro); background: rgba(10,31,28,.6); }
+.etapa h4 { font: 800 33px/1.1 Jakarta; letter-spacing: -.02em; }
+.etapa h4 small { font: 800 18px Inter; letter-spacing: .18em; text-transform: uppercase; color: var(--ouro); display: block; margin-bottom: 4px; }
+.etapa p { font: 500 24px/1.38 Inter; color: rgba(246,238,219,.86); margin-top: 6px; }
+.etapa p b { color: var(--ouro); }
+.exemplo { margin-top: 10px; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; font: 700 22px Inter; }
+.exemplo .pill { padding: 7px 14px; border: 1.5px solid rgba(244,207,124,.7); border-radius: 999px; color: var(--ouro); }
+.exemplo .pill.cheia { background: var(--ouro); color: var(--noite); border-color: var(--ouro); }
+.exemplo svg { width: 34px; height: 20px; color: var(--ouro); }
+.tela { position: absolute; left: 56px; right: 56px; top: 1296px; height: 450px; border-radius: 22px; overflow: hidden; border: 2px solid rgba(244,207,124,.55); box-shadow: 0 24px 60px rgba(0,0,0,.45); }
+.tela img { width: 1600px; display: block; margin: -150px 0 0 -100px; }
+.tela::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 120px; background: linear-gradient(transparent, rgba(10,31,28,.96)); }
+.tela .lupa { position: absolute; left: 160px; top: 46px; width: 280px; height: 68px; border: 4px solid var(--ouro); border-radius: 999px; box-shadow: 0 0 0 6px rgba(244,207,124,.18); }
+.tela .pino { position: absolute; left: 470px; top: 54px; padding: 10px 18px; font-size: 24px !important; border-radius: 10px; background: var(--ouro); color: var(--noite); font: 800 20px Inter; }
+.tela .nota { position: absolute; left: 26px; bottom: 18px; z-index: 2; font: 600 19px Inter; letter-spacing: .06em; color: rgba(246,238,219,.75); }
+.aviso3 { position: absolute; left: 56px; right: 56px; bottom: 56px; font: 500 21px/1.4 Inter; color: rgba(246,238,219,.7); text-align: center; }
+.aviso3 b { color: var(--creme); }
+
+/* story 4: lançamento */
+.s4-cab { position: absolute; left: 56px; right: 56px; top: 160px; text-align: center; }
+.s4-cab .rot { display: inline-block; font: 800 22px Inter; letter-spacing: .3em; text-transform: uppercase; color: var(--noite); background: var(--ouro); padding: 8px 18px; }
+.s4-cab h2 { white-space: nowrap; font: 900 74px/1 Playfair; letter-spacing: -.02em; margin-top: 18px; }
+.s4-cab h2 em { font-style: italic; color: var(--ouro); }
+.s4-cab p { font: 500 28px/1.35 Inter; color: rgba(246,238,219,.85); margin-top: 12px; }
+.predio { position: absolute; left: 92px; right: 92px; top: 440px; }
+.predio .antena { margin: 0 auto; width: 520px; height: 44px; border: 2px solid var(--ouro); border-bottom: 0; display: grid; place-items: center; font: 800 18px Inter; letter-spacing: .3em; color: var(--ouro); background: rgba(10,31,28,.8); }
+.andar { position: relative; display: grid; grid-template-columns: 120px 1fr 120px; align-items: stretch; border: 2px solid var(--ouro); border-top-width: 0; background: rgba(9,40,36,.92); }
+.andar:first-of-type { border-top-width: 2px; }
+.andar .num { display: grid; place-items: center; border-right: 2px solid rgba(244,207,124,.5); font: 400 44px Jersey; color: var(--ouro); text-align: center; line-height: .9; }
+.andar .num small { display: block; font: 700 15px Inter; letter-spacing: .14em; }
+.andar .txt { padding: 17px 22px; }
+.andar .txt h4 { font: 800 31px/1.08 Jakarta; letter-spacing: -.02em; }
+.andar .txt p { font: 500 21px/1.3 Inter; color: rgba(246,238,219,.82); margin-top: 4px; }
+.andar .jan { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 12px 18px; border-left: 2px solid rgba(244,207,124,.5); }
+.andar .jan i { display: block; background: linear-gradient(180deg, #ffe6a6, #e7b64e); box-shadow: 0 0 14px rgba(244,207,124,.55); border-radius: 2px; }
+.andar .jan i.off { background: rgba(244,207,124,.16); box-shadow: none; }
+.andar.cob { background: linear-gradient(90deg, rgba(244,207,124,.22), rgba(9,40,36,.92) 60%); }
+.lazer { position: absolute; left: 56px; right: 56px; top: 1238px; border: 2px solid rgba(244,207,124,.6); padding: 18px 24px 20px; background: rgba(10,31,28,.75); }
+.lazer .rot { font: 800 20px Inter; letter-spacing: .22em; text-transform: uppercase; color: var(--ouro); margin-bottom: 12px; }
+.lazer ul { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 9px 26px; }
+.lazer li { position: relative; padding-left: 28px; font: 600 24px/1.3 Inter; }
+.lazer li::before { content: ''; position: absolute; left: 0; top: 10px; width: 13px; height: 13px; background: var(--ouro); transform: rotate(45deg); }
+.temas { margin-top: 14px; padding-top: 12px; border-top: 1px dashed rgba(244,207,124,.4); font: 500 21px/1.45 Inter; color: rgba(246,238,219,.8); }
+.temas b { color: var(--ouro); letter-spacing: .14em; text-transform: uppercase; font-size: 18px; margin-right: 8px; }
+.cta { position: absolute; left: 56px; right: 56px; top: 1612px; display: grid; grid-template-columns: 1fr auto; gap: 18px; align-items: center; padding: 24px 30px; background: var(--ouro); color: var(--noite); border-radius: 18px; box-shadow: 0 0 0 6px rgba(244,207,124,.22), 0 24px 60px rgba(0,0,0,.4); }
+.cta h3 { font: 800 50px/1 Jakarta; letter-spacing: -.03em; }
+.cta p { font: 600 25px/1.3 Inter; margin-top: 8px; }
+.cta .site { text-align: right; font: 800 30px Jakarta; letter-spacing: -.02em; }
+.cta .site small { display: block; font: 700 19px Inter; letter-spacing: .12em; text-transform: uppercase; margin-top: 6px; opacity: .8; }
+.pe4 { position: absolute; left: 56px; right: 56px; bottom: 50px; text-align: center; font: 600 21px Inter; letter-spacing: .1em; color: rgba(246,238,219,.7); }
+</style></head><body>
+
+<!-- ============ STORY 1: o anúncio (a pergunta) ============ -->
+<section id="s1-anuncio" class="jornal">
+  <div class="cab">
+    <div class="linha1"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span>Caderno de Imóveis</span><span class="cont">1/4</span></div>
+    <div class="titulo-jornal">Classificados <i>do Cotovelo</i></div>
+    <div class="linha2"><span>Quarta-feira, 4 de novembro de 2026</span><span>Edição Anatomia</span><span>Região medial</span></div>
+  </div>
+  <div class="fluxo">
+  <div class="faixa"><span>Imóveis · <i>Aluguel</i></span><span>Ref. 0646</span></div>
+
+  <div class="anuncio">
+    <div class="selo-op">DESTAQUE DA SEMANA</div>
+    <h2><small>ALUGA-SE</small>Túnel <em>Cubital</em></h2>
+    <p class="sub">Morador único, bem localizado, vista para o epicôndilo medial. Reforma comum no bairro: abrir o teto.</p>
+    <div class="ficha">
+      <div><b>Endereço</b>Atrás do epicôndilo medial, medial ao olécrano.</div>
+      <div><b>Morador</b>Nervo ulnar, único e superficial dentro do túnel.</div>
+      <div><b>Como ele chega</b>Desce posteromedial à artéria braquial, atrás do septo intermuscular medial e na frente da cabeça medial do tríceps.</div>
+      <div><b>Por onde sai</b>Segue entre as cabeças umeral e ulnar do flexor ulnar do carpo.</div>
+      <div class="larga"><b>Aviso do síndico</b>Com o cotovelo fletido, o teto estica: aumentam a tensão e a tração sobre o morador. Reforma prevista no contrato: <b style="display:inline;font:inherit;font-weight:700;letter-spacing:0;text-transform:none;color:var(--verde)">descompressão in situ</b>.</div>
+    </div>
+  </div>
+
+  <div class="pergunta">
+    <div class="rot">Pergunta do corretor <span>OrtoQuestões Simulados</span></div>
+    <p class="enun">Na descompressão in situ do nervo ulnar no cotovelo, quais estruturas formam o teto do túnel cubital, liberado pelo cirurgião, e o assoalho do túnel, respectivamente?</p>
+    <div class="alts">
+      <div class="alt"><span class="l">A</span><p>Ligamento de Osborne (retináculo do túnel cubital) e aponeurose entre as cabeças do flexor ulnar do carpo; feixes posterior e transverso do ligamento colateral medial e cápsula</p></div>
+      <div class="alt"><span class="l">B</span><p>Feixes posterior e transverso do ligamento colateral medial; ligamento de Osborne e aponeurose do flexor ulnar do carpo</p></div>
+      <div class="alt"><span class="l">C</span><p>Aponeurose bicipital (lacerto fibroso); músculo braquial e cápsula anterior</p></div>
+      <div class="alt"><span class="l">D</span><p>Arcada de Struthers e septo intermuscular medial; cabeça medial do tríceps</p></div>
+    </div>
+  </div>
+
+  <div class="rodape-cl">
+    <div class="mini"><b>Procura-se</b>Residente que saiba teto e piso de cabeça, sem trocar a ordem.</div>
+    <div class="mini"><b>Troca-se</b>Decoreba de lista por raciocínio de cirurgião. Tratar no próximo story.</div>
+    <div class="mini escuro"><b>Plantão</b>Escolha a sua letra antes de ler o laudo de vistoria.</div>
+  </div>
+  </div>
+</section>
+
+<!-- ============ STORY 2: o laudo de vistoria (a resposta) ============ -->
+<section id="s2-laudo" class="jornal">
+  <div class="laudo-cab">
+    <div class="topo"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span style="font:800 20px Inter;letter-spacing:.18em;text-transform:uppercase;color:var(--tinta2)">Imobiliária da Anatomia</span><span class="cont">2/4</span></div>
+    <h1>Laudo de <em>vistoria</em></h1>
+    <div class="dados" style="margin-right:300px">
+      <div><small>Imóvel</small>Túnel cubital</div>
+      <div><small>Morador</small>Nervo ulnar</div>
+      <div><small>Vistoriador</small>Green, cap. 28</div>
+    </div>
+  </div>
+  <div class="carimbo"><div>APROVADA<strong>A</strong>RESPOSTA</div></div>
+
+  <div class="fluxo" style="top:340px;bottom:150px">
+  <div class="itens">
+    <div class="item">
+      <div class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M4 12.5l5 5L20 6"/></svg></div>
+      <div><h3>Teto · é o que o cirurgião abre</h3>
+        <h4>Ligamento de Osborne + aponeurose entre as cabeças do flexor ulnar do carpo</h4>
+        <p>O Green define o túnel pelo que o cobre: <i>"uma camada fascial tensa que se estende do músculo flexor ulnar do carpo e do ligamento de Osborne"</i> (cap. 28, p. 1105). Essa camada é o retináculo do túnel cubital, liberado na descompressão in situ.</p></div>
+    </div>
+    <div class="item">
+      <div class="ck"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="square"><path d="M4 12.5l5 5L20 6"/></svg></div>
+      <div><h3>Assoalho · a parede da articulação</h3>
+        <h4>Cápsula + feixes posterior e transverso do colateral medial</h4>
+        <p>No colateral medial, o Green separa o feixe anterior, robusto, dos feixes posterior e transverso, <i>"espessamentos sutis da cápsula"</i> (cap. 22, p. 977). São eles, com a cápsula, o leito do nervo.</p></div>
+    </div>
+    <div class="item alerta">
+      <div class="ck">!</div>
+      <div><h3>Por que isso importa na cirurgia</h3>
+        <p>Na flexão, o teto estica e aumenta a tensão e a tração no nervo, que fica superficial no túnel. Na in situ, <b>solta-se o teto e não se mexe no assoalho</b>, para não desestabilizar a articulação.</p></div>
+    </div>
+  </div>
+
+  <div class="irreg">
+    <div class="rot">Irregularidades nas outras letras <span>B · C · D</span></div>
+    <div class="g">
+      <div class="c"><div class="l">B</div><h5>Obra invertida</h5><p>Peças certas, lugares trocados. A camada do FUC e de Osborne cobre o nervo; cápsula e colateral ficam embaixo.</p></div>
+      <div class="c"><div class="l">C</div><h5>Endereço errado</h5><p>É a fossa cubital, na frente do cotovelo: aponeurose bicipital e braquial abrigam a artéria braquial e o mediano.</p></div>
+      <div class="c"><div class="l">D</div><h5>Andar de cima</h5><p>Struthers e septo ficam no braço, acima do túnel: pontos de compressão a liberar na transposição, não as paredes.</p></div>
+    </div>
+  </div>
+
+  <div class="naprova">
+    <div class="t">Na<br>prova</div>
+    <p><b>Teto</b> = Osborne + aponeurose do FUC (é o que se libera). <b>Assoalho</b> = cápsula + feixes posterior e transverso do colateral medial.</p>
+  </div>
+  </div>
+
+  <div class="assin">
+    <div><span>Green, p. 1105</span>Vistoriador · referência</div>
+    <div><span>nervo ulnar</span>Morador · de acordo</div>
+  </div>
+</section>
+
+<!-- ============ STORY 3: a planta (engenharia reversa) ============ -->
+<section id="s3-planta" class="noite planta">
+  <div class="topo-n"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="tag">Planta da prova</span><span class="cont">3/4</span></div>
+  <div class="s3-tit">
+    <div class="rot">Como esta questão foi construída</div>
+    <h2>Toda prova tem uma planta.<br>Nós fizemos a <em>engenharia reversa.</em></h2>
+    <p>Os OrtoQuestões Simulados são questões nossas, escritas no padrão da prova: o mesmo estilo, o mesmo tipo de cobrança e o mesmo nível.</p>
+  </div>
+  <div class="etapas">
+    <div class="etapa"><div class="n">1</div><div><h4><small>Levantamento</small>O que caiu, prova a prova, ano a ano</h4>
+      <div class="exemplo"><span class="pill">SIMÃO 2026 · questão 67</span><svg viewBox="0 0 34 20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M2 10h28M22 3l8 7-8 7"/></svg><span class="pill">cobrou teto e assoalho do túnel cubital</span></div></div></div>
+    <div class="etapa"><div class="n">2</div><div><h4><small>Desmontagem</small>Como a banca pergunta</h4>
+      <p>O tipo de cobrança, o nível de detalhe e a pegadinha de cada alternativa, <b>como o teto e o piso trocados da letra B</b>.</p></div></div>
+    <div class="etapa"><div class="n">3</div><div><h4><small>Reconstrução</small>Uma questão nova, no mesmo padrão</h4>
+      <p>Escrita a partir do livro de referência da prova. No título da mão, <b>uma questão nossa para cada questão da prova</b>, no mesmo assunto.</p></div></div>
+    <div class="etapa" style="border-bottom:0"><div class="n">4</div><div><h4><small>Acabamento</small>Comentário em forma de aula</h4>
+      <p>A correta e cada errada explicadas, <b>com o livro e a página</b>. Foi assim que você viu o laudo do story anterior.</p></div></div>
+  </div>
+  <div class="tela">
+    <img src="../../../kit/telas/t-lap-simulado.png" alt="">
+    <div class="lupa"></div><div class="pino">Selo em cada questão</div>
+    <div class="nota">Tela real do site · computador, tema escuro</div>
+  </div>
+  <div class="aviso3"><b>Questões autorais, não são as oficiais.</b> As questões oficiais das provas também estão lá, todas comentadas.</div>
+</section>
+
+<!-- ============ STORY 4: o lançamento (propaganda) ============ -->
+<section id="s4-lancamento" class="noite">
+  <div class="topo-n"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="tag">Lançamento</span><span class="cont">4/4</span></div>
+  <div class="s4-cab">
+    <span class="rot">Entrada grátis</span>
+    <h2>Residencial <em>Orto Questões</em></h2>
+    <p>Um andar para cada prova. Questões oficiais comentadas e OrtoQuestões Simulados feitos por <b style="color:var(--ouro)">engenharia reversa, no padrão da prova</b>.</p>
+  </div>
+  <div class="predio">
+    <div class="antena">ORTOQUESTOES.COM.BR</div>
+    <div class="andar cob"><div class="num">C<small>COBERTURA</small></div><div class="txt"><h4>Título de Cirurgia da Mão</h4><p>SBCM e SIMÃO: uma questão nossa para cada uma da prova.</p></div><div class="jan"><i></i><i></i><i></i><i class="off"></i></div></div>
+    <div class="andar"><div class="num">6<small>ANDAR</small></div><div class="txt"><h4>Ingresso em Cirurgia da Mão</h4><p>Provas de seleção oficiais, comentadas como aula.</p></div><div class="jan"><i></i><i class="off"></i><i></i><i></i></div></div>
+    <div class="andar"><div class="num">5<small>ANDAR</small></div><div class="txt"><h4>R4 Coluna</h4><p>Para a cirurgia da coluna: o tema inteiro, comentado.</p></div><div class="jan"><i class="off"></i><i></i><i></i><i></i></div></div>
+    <div class="andar"><div class="num">4<small>ANDAR</small></div><div class="txt"><h4>Fellowship de Quadril</h4><p>OrtoQuestões Simulados no padrão da prova.</p></div><div class="jan"><i></i><i></i><i class="off"></i><i></i></div></div>
+    <div class="andar"><div class="num">3<small>ANDAR</small></div><div class="txt"><h4>TEOT</h4><p>Questões oficiais, a correta e cada errada explicadas.</p></div><div class="jan"><i></i><i></i><i></i><i class="off"></i></div></div>
+    <div class="andar"><div class="num">2<small>ANDAR</small></div><div class="txt"><h4>TARO</h4><p>Questões oficiais, organizadas pelo que mais cai.</p></div><div class="jan"><i class="off"></i><i></i><i></i><i></i></div></div>
+    <div class="andar"><div class="num">1<small>ANDAR</small></div><div class="txt"><h4>ENARE</h4><p>As provas de acesso, também comentadas.</p></div><div class="jan"><i></i><i class="off"></i><i></i><i></i></div></div>
+  </div>
+  <div class="lazer">
+    <div class="rot">Área comum, para todos os andares</div>
+    <ul>
+      <li>Questões oficiais comentadas</li>
+      <li>OrtoQuestões Simulados</li>
+      <li>Cronograma até a prova</li>
+      <li>Revisão espaçada</li>
+      <li>Caderno de erros</li>
+      <li>Resumos dos capítulos</li>
+      <li>Flashcards</li>
+      <li>Atlas 3D</li>
+    </ul>
+    <div class="temas"><b>Plantas</b>Coluna · Joelho · Mão e punho · Ombro e cotovelo · Quadril · Pé e tornozelo · Pediatria · Trauma · Tumores · Osteometabólicas · Conceitos básicos</div>
+  </div>
+  <div class="cta">
+    <div><h3>Treine grátis.</h3><p>Inscreva-se: criar a conta é gratuito. Responda a primeira questão hoje.</p></div>
+    <div class="site">ortoquestoes.com.br<small>Caminho no perfil</small></div>
+  </div>
+  <div class="pe4">@ORTOQUESTOES · O CAMINHO ESTÁ NO NOSSO PERFIL</div>
+</section>
+</body></html>
