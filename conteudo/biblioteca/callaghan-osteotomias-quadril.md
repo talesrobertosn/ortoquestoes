@@ -457,7 +457,7 @@ O CALLAGHAN (cap. 6, p. 86 e 87) corrige um equívoco: os glúteos não puxam o 
 conceito: A fixação do trocânter osteotomizado usa fios ou cabos em configurações de dois, três ou quatro fios (HARRIS, CHARNLEY), cabos com garra (DALL-MILES), parafusos e placas; o importante é resistir às forças verticais, anteroposteriores e rotacionais.
 como: A SBOT-SP mostrou a figura de uma montagem de fixação do trocânter maior e pediu o nome da técnica.
 armadilha: Confundir os nomes associados a estudos de fixação (MARKOLF e AMSTUTZ testaram configurações em cadáver; AMSTUTZ e MAKI estudaram complicações) com o nome de uma técnica de montagem.
-alerta: A figura não está disponível e os livros do acervo não descrevem uma técnica de fixação trocantérica chamada de COVENTRY nem de SMITH; COVENTRY aparece no CALLAGHAN só no estudo de BAKER e COVENTRY sobre o tratamento da pseudartrose do trocânter (66% de consolidação). O gabarito oficial foi mantido.
+alerta: A figura mostra o trocânter refixado só com fios em alças cruzadas sobre o ápice e um fio transversal, mas os livros do acervo não descrevem uma técnica de fixação trocantérica chamada de COVENTRY nem de SMITH; COVENTRY aparece no CALLAGHAN só no estudo de BAKER e COVENTRY sobre o tratamento da pseudartrose do trocânter (66% de consolidação). O gabarito oficial foi mantido.
 !fim
 
 ## As complicações
