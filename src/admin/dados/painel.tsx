@@ -34,8 +34,8 @@ export interface LinhaAssinatura extends AssinaturaBase {
 
 const MIGRACAO = '202609290100_painel_admin.sql'
 /** Partes que mostram a lista de pessoas (ou abrem fichas a partir dela). */
-const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'crescimento', 'retencao', 'perfis', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
-const COM_COBRANCAS: Parte[] = ['comando', 'agora', 'financeiro', 'previsao', 'cobrancas']
+const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'crescimento', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
+const COM_COBRANCAS: Parte[] = ['comando', 'agora', 'financeiro', 'cobrancas', 'crescimento', 'assinaturas']
 /** Intervalo da lista de pessoas nas telas ao vivo. */
 const TRES_MIN = 180_000
 const AO_VIVO: Parte[] = ['comando', 'agora', 'usuarios']

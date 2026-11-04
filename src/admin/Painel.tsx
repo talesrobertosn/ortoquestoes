@@ -17,7 +17,7 @@ import './cores.css'
 
 const Inicio = lazy(() => import('./modulos/Inicio'))
 const Explorador = lazy(() => import('./modulos/Explorador'))
-const Analise = lazy(() => import('./modulos/Analise'))
+const Crescimento = lazy(() => import('./modulos/Crescimento'))
 const Receita = lazy(() => import('./modulos/Receita'))
 const Assinaturas = lazy(() => import('./modulos/Assinaturas'))
 const Cobrancas = lazy(() => import('./modulos/Cobrancas'))
@@ -40,8 +40,8 @@ function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
   switch (parte) {
     case 'comando': case 'pendencias': case 'agora': return <Inicio />
     case 'usuarios': return <Explorador />
-    case 'crescimento': case 'retencao': case 'perfis': return <Analise />
-    case 'financeiro': case 'previsao': return <Receita />
+    case 'crescimento': return <Crescimento />
+    case 'financeiro': return <Receita />
     case 'assinaturas': return <Assinaturas />
     case 'cobrancas': return <Cobrancas />
     case 'pagamentos': return <Avisos />
