@@ -297,7 +297,7 @@ O **retináculo** e o **trato iliotibial** são extensores secundários (Rockwoo
 conceito: O braço de alavanca extensor é máximo a 20 a 30 graus (Campbell), mas o quadríceps precisa do dobro do torque para os últimos 15 graus de extensão, e a patela fornece 60% de torque adicional nessa faixa (Rockwood and Green).
 como: O TARO 2007 perguntou em que faixa ocorre o torque máximo exercido pelo quadríceps para estender o joelho, com faixas de 60 a 45, 45 a 30, 30 a 15 e 15 a 0 graus.
 armadilha: Confundir a faixa do maior braço de alavanca (20 a 30 graus, Campbell) com a faixa da maior exigência de torque (últimos 15 graus).
-alerta: Questão sem gabarito oficial no acervo; o gabarito pela bibliografia da prova (Rockwood, 6ª ed., p. 1977) é a faixa de 60 a 45 graus, e a resposta provável o segue, mas o Rockwood and Green, 10ª ed. (cap. 60), sustenta a faixa de 15 a 0 graus (alternativa D), com o dobro do torque nos últimos 15 graus; o Campbell (cap. 8, p. 413) concorda que a força necessária cresce nos últimos 20 graus, embora situe o braço de alavanca máximo em 20 a 30 graus. A `joelho-0279` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (60 graus e 45 graus).
+alerta: Questão sem gabarito oficial no acervo; o gabarito pela bibliografia da prova (Rockwood, 6ª ed., p. 1977) é a faixa de 60 a 45 graus, e a resposta provável o segue, mas o Rockwood and Green, 10ª ed. (cap. 60), sustenta a faixa de 15 a 0 graus (alternativa D), com o dobro do torque nos últimos 15 graus; o Campbell (cap. 8, p. 413) concorda que a força necessária cresce nos últimos 20 graus, embora situe o braço de alavanca máximo em 20 a 30 graus.
 !fim
 
 # Força de reação patelofemoral e as áreas de contato {radar=fundamento}
