@@ -270,7 +270,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 908 | CRIAR biomecânica e marcha do pé e tornozelo (HEBERT, 5ª ed., cap. 1 e outros; Campbell 15; Rockwood and Green; Tachdjian), mais 10 miniaulas de medicamentos e exames laboratoriais. |
 | 909 | CRIAR deformidades congênitas do pé (HEBERT, 5ª ed., caps. 20.5, 20.3 e 20.1; Lovell and Winter 7, cap. 29; Tachdjian; Campbell 15) e impacto femoroacetabular v2 com artroscopia do quadril e lesão labral (Campbell 15, cap. 56; HEBERT; The Adult Hip). |
 | 910 | CRIAR vias de acesso à coluna (Hoppenfeld, Vias de Acesso em Cirurgia Ortopédica, 4ª ed., cap. 6, lido por OCR; Campbell 15, caps. 44 e 45; Rockwood and Green), mais 9 miniaulas de biomecânica e marcha do pé. |
-| (este PR) | 26 miniaulas: deformidades congênitas do pé (14), artroscopia do quadril e lesão labral (8) e vias de acesso à coluna (4), com os livros comparados onde divergem. |
+| 911 | 26 miniaulas: deformidades congênitas do pé (14), artroscopia do quadril e lesão labral (8) e vias de acesso à coluna (4), com os livros comparados onde divergem. |
+| (este PR) | Quatro resumos novos: biomecânica da mão (green-biomecanica-mao, 62 KB), peitoral maior e rupturas tendíneas (campbell15-peitoral-maior, 62 KB), fixadores externos (ao-fixadores-externos, 61 KB) e luxação acromioclavicular e esternoclavicular (versão 2, 68 KB); 14 miniaulas da biomecânica da mão, com Green, Campbell e Rockwood lado a lado onde divergem. |
 
 ## Próximo
 
