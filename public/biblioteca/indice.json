@@ -21256,15 +21256,15 @@
   },
   {
    "id": "tachdjian6-artrite-septica",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Artrite séptica na criança e no adulto",
    "especialidade": "conceitos-basicos",
    "livro": "Tachdjian's Pediatric Orthopaedics",
-   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 22 e 24), e o Sizínio, Ortopedia e Traumatologia, 5ª ed. (caps. 9.7 e 26)",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 22 e 24), o Sizínio, Ortopedia e Traumatologia, 5ª ed. (caps. 9.4, 9.7 e 26), e o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (caps. 11 e 12)",
    "capitulo": "Capítulo 22 · Arthritis (Acute Transient Synovitis of the Hip), com a seção Septic Arthritis do capítulo de infecções",
-   "resumo": "Metáfises intra-articulares (rádio e úmero proximais, fêmur proximal, tíbia e fíbula distais) e vaso transfisário até 18 meses; proteoglicano 30% em 48 h; falta de membrana basal nos capilares sinoviais; S. aureus (PANTON-VALENTINE), Kingella (PCR, frasco de hemocultura), gonococo no adulto jovem, Salmonella no falciforme; quadril em flexão, abdução e rotação externa; líquido acima de 50.000 com PMN, glicose baixa e proteína alta; KOCHER (febre, não apoio, VHS acima de 40, leucócitos acima de 12.000: 0,2%, 3%, 40%, 93%, 99,6%); via anterior no quadril da criança; punção do joelho lateral no polo superior da patela; 3 semanas de antibiótico; atraso é o pior fator (CHOI).",
+   "resumo": "Sinovite transitória em meninos de 4 a 10 anos (média de 6), recorrência anual de 4%, quadril em flexão, sem antibiótico; metáfises intra-articulares (rádio e úmero proximais, fêmur proximal, tíbia e fíbula distais) e vaso transfisário até 18 meses; proteoglicano 30% em 48 h; falta de membrana basal nos capilares sinoviais; S. aureus (PANTON-VALENTINE), Kingella (PCR, frasco de hemocultura), gonococo no adulto jovem, Salmonella no falciforme; quadril em flexão, abdução e rotação externa; líquido acima de 50.000 com PMN, glicose baixa e proteína alta; KOCHER (febre, não apoio, VHS acima de 40, leucócitos acima de 12.000: 0,2%, 3%, 40%, 93%, 99,6%); via anterior no quadril da criança; punção do joelho lateral no polo superior da patela; 3 semanas de antibiótico; atraso é o pior fator (CHOI).",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 42,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -21317,6 +21317,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "sinovite-transitoria-do-quadril",
+     "titulo": "Sinovite transitória do quadril",
+     "radar": "confirmado"
+    },
+    {
      "id": "imagem-e-puncao-articulacao-por-articulacao",
      "titulo": "Imagem e punção articulação por articulação",
      "radar": "confirmado"
@@ -21345,6 +21350,9 @@
    "questoes": [
     "conceitos-basicos-0250",
     "conceitos-basicos-0187",
+    "pediatria-0678",
+    "pediatria-0897",
+    "pediatria-0799",
     "conceitos-basicos-0287",
     "conceitos-basicos-0411",
     "conceitos-basicos-0166",
@@ -21363,12 +21371,21 @@
     "conceitos-basicos-0050",
     "conceitos-basicos-0089",
     "pediatria-0340",
+    "pediatria-0884",
+    "pediatria-0099",
+    "pediatria-0151",
+    "pediatria-0390",
+    "pediatria-0081",
+    "pediatria-0204",
+    "pediatria-0375",
     "conceitos-basicos-0169",
+    "pediatria-0870",
     "conceitos-basicos-0096"
    ],
    "treino": [],
    "subtemas": [
-    "Artrite séptica"
+    "Artrite séptica",
+    "Sinovite transitória e artrite séptica do quadril"
    ]
   },
   {
