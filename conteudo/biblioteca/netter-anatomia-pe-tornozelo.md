@@ -312,7 +312,7 @@ alerta: A `pe-tornozelo-0337` está sem gabarito no banco, e o Campbell 15 não 
 conceito: O tendão do calcâneo é irrigado principalmente pelo mesotendão, com os vasos mais ricos na face anterior (profunda), e é hipovascular 2 a 6 cm acima da inserção; a fascite dói na face inferomedial da tuberosidade.
 como: O TARO 2007 perguntou em que face estão os vasos do mesotendão a preservar no reparo; o TARO 2012, a dor da fascite plantar.
 armadilha: Achar que os vasos vêm pela face posterior, subcutânea, a primeira que o cirurgião vê.
-alerta: Nenhum dos livros lidos associa a fascite à dor na cabeça medial do gastrocnêmio, como pede o gabarito da `pe-tornozelo-0257`; o gabarito oficial foi preservado.
+alerta: O Netter não associa a fascite à dor na cabeça medial do gastrocnêmio, como pede o gabarito da `pe-tornozelo-0257`; quem sustenta o gabarito é o HEBERT (cap. 21.1), que descreve pontos dolorosos na porção proximal da cabeça medial do gastrocnêmio na síndrome miofascial (ver o resumo de fasciíte plantar).
 !fim
 
 # Os músculos intrínsecos e os compartimentos do pé {radar=confirmado}
