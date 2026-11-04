@@ -8940,15 +8940,15 @@
   },
   {
    "id": "dahlin-cisto-osseo-simples",
-   "versao": 1,
-   "titulo": "Cisto ósseo simples",
+   "versao": 2,
+   "titulo": "Cisto ósseo simples e cisto ósseo aneurismático",
    "especialidade": "tumores",
    "livro": "Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases",
    "edicao": "6ª edição (2010)",
    "capitulo": "Capítulo 26 · Conditions That Commonly Simulate Primary Neoplasms of Bone (seção Simple Cyst)",
-   "resumo": "Lesão cística benigna da criança, masculina 2:1, nas duas primeiras décadas; metáfise do úmero e do fêmur proximais (no adulto, ilíaco e calcâneo); central, não mais larga que a fise; ativo junto da fise e latente quando a fise se afasta; descoberto na fratura patológica; fragmento caído patognomônico; líquido cor de palha com prostaglandinas; SCAGLIETTI injeta metilprednisolona; medula, curetagem e enxerto, descompressão e hastes flexíveis; diferencial com o aneurismático (excêntrico, elementos posteriores, recidiva abaixo de 15 anos e central) e a displasia fibrosa.",
+   "resumo": "Cisto simples: menino 2:1, duas primeiras décadas, metáfise do úmero e do fêmur proximais (adulto: ilíaco e calcâneo), central, não mais largo que a fise, descoberto na fratura patológica, fragmento caído, prostaglandinas, SCAGLIETTI com metilprednisolona. Cisto aneurismático: primário (fusão USP6, CDH11-USP6) ou secundário a TCG, condroblastoma, osteoblastoma e displasia fibrosa; abaixo de 20 anos; metáfise excêntrica, mais larga que a fise; elementos posteriores da coluna (15% a 20%); níveis líquido-líquido; diferencial com osteossarcoma telangiectásico; curetagem estendida com adjuvantes, embolização, escleroterapia, denosumabe; recidiva com menos de 15 anos e cisto central.",
    "acesso": "gratis",
-   "minutos": 35,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -9011,6 +9011,11 @@
      "radar": "fundamento"
     },
     {
+     "id": "o-cisto-osseo-aneurismatico-por-inteiro",
+     "titulo": "O cisto ósseo aneurismático por inteiro",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -9030,11 +9035,14 @@
     "tumores-0115",
     "tumores-0013",
     "tumores-0281",
-    "tumores-0361"
+    "tumores-0361",
+    "tumores-0240",
+    "tumores-0327"
    ],
    "treino": [],
    "subtemas": [
-    "Cisto ósseo simples"
+    "Cisto ósseo simples",
+    "Cisto ósseo aneurismático"
    ]
   },
   {

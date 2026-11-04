@@ -1,29 +1,29 @@
 ---
 id: dahlin-cisto-osseo-simples
-versao: 1
-titulo: Cisto ósseo simples
+versao: 2
+titulo: Cisto ósseo simples e cisto ósseo aneurismático
 especialidade: tumores
 acesso: gratis
 livro: Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases
 edicao: 6ª edição (2010)
 capitulo: Capítulo 26 · Conditions That Commonly Simulate Primary Neoplasms of Bone (seção Simple Cyst)
 autores: K. Krishnan UNNI e Carrie Y. INWARDS
-fonte: Livros conferidos localmente em 03/11/2026: Dahlin's Bone Tumors, 6ª ed. (2010), cap. 26, displasia fibrosa (p. 317 a 320), lesões císticas e cisto ósseo aneurismático (p. 332 a 340) e cisto simples (p. 340 a 342); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (Tabela 13-2, p. 432; displasia fibrosa, p. 449 a 452; cistos unicameral e aneurismático, p. 454 a 457); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 25 (p. 1003 a 1013); Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (p. 937 a 940, Tabela 27.4). As páginas citadas são as impressas.
-subtemas: Cisto ósseo simples
-resumo: Lesão cística benigna da criança, masculina 2:1, nas duas primeiras décadas; metáfise do úmero e do fêmur proximais (no adulto, ilíaco e calcâneo); central, não mais larga que a fise; ativo junto da fise e latente quando a fise se afasta; descoberto na fratura patológica; fragmento caído patognomônico; líquido cor de palha com prostaglandinas; SCAGLIETTI injeta metilprednisolona; medula, curetagem e enxerto, descompressão e hastes flexíveis; diferencial com o aneurismático (excêntrico, elementos posteriores, recidiva abaixo de 15 anos e central) e a displasia fibrosa.
+fonte: Livros conferidos localmente em 03/11/2026 e 04/11/2026: Dahlin's Bone Tumors, 6ª ed. (2010), cap. 26, displasia fibrosa (p. 317 a 320), cisto ósseo aneurismático (p. 333 a 340) e cisto simples (p. 340 a 342); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (Tabela 13-2, p. 432; displasia fibrosa, p. 449 a 452; cistos unicameral e aneurismático, p. 454 a 457); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 25 (p. 1003 a 1013); Campbell's Operative Orthopaedics, 15ª ed., cap. 26 (p. 869.e1 e 870), cap. 27 (p. 937 a 940, Tabela 27.4), cap. 28 (p. 952 e Tabela 28.1, p. 953) e cap. 29 (p. 972). As páginas citadas são as impressas.
+subtemas: Cisto ósseo simples; Cisto ósseo aneurismático
+resumo: Cisto simples: menino 2:1, duas primeiras décadas, metáfise do úmero e do fêmur proximais (adulto: ilíaco e calcâneo), central, não mais largo que a fise, descoberto na fratura patológica, fragmento caído, prostaglandinas, SCAGLIETTI com metilprednisolona. Cisto aneurismático: primário (fusão USP6, CDH11-USP6) ou secundário a TCG, condroblastoma, osteoblastoma e displasia fibrosa; abaixo de 20 anos; metáfise excêntrica, mais larga que a fise; elementos posteriores da coluna (15% a 20%); níveis líquido-líquido; diferencial com osteossarcoma telangiectásico; curetagem estendida com adjuvantes, embolização, escleroterapia, denosumabe; recidiva com menos de 15 anos e cisto central.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado na seção Simple Cyst do capítulo 26 (Conditions That Commonly Simulate Primary Neoplasms of Bone) do Dahlin's Bone Tumors, 6ª edição (2010), de UNNI e INWARDS, comparado com o capítulo 13 do Lovell and Winter's Pediatric Orthopaedics, 7ª ed., o capítulo 25 do Tachdjian's Pediatric Orthopaedics, 6ª ed., e o capítulo 27 do Campbell's Operative Orthopaedics, 15ª ed. As páginas citadas são as impressas.
+Este resumo segue o capítulo 26 (Conditions That Commonly Simulate Primary Neoplasms of Bone) do Dahlin's Bone Tumors, 6ª edição (2010), de UNNI e INWARDS, que trata dos dois cistos, comparado com o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13), o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25), e o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26 a 29). A versão 2 ganhou uma seção própria do cisto ósseo aneurismático, antes do fechamento.
 
 O lugar do cisto ósseo simples no Dahlin já ensina muito. O livro da Mayo Clinic não o coloca entre os tumores: ele aparece no capítulo das **condições que simulam neoplasias primárias do osso**, ao lado do cisto aneurismático, do gânglio intraósseo e da displasia fibrosa (p. 332). É uma cavidade cheia de líquido, sem célula tumoral a ser combatida, que vive enquanto a criança cresce e que se torna problema por um motivo mecânico: **enfraquece o osso até quebrar**.
 
 Uma imagem organiza o tema: uma bolha de líquido que nasce **encostada na placa de crescimento** da metáfise do úmero ou do fêmur proximal. Enquanto encosta na placa, cresce (fase **ativa**); com o crescimento, a placa se afasta e a deixa para trás (fase **latente**). O córtex fica fino como casca de ovo, e a primeira notícia do cisto, na maioria das crianças, é uma **fratura patológica** depois de um trauma banal.
 
-A prova cobra quem tem, onde, em que parte do osso, como chega, o que contém, como se trata e com quem se confunde. Os números mudam bastante de livro para livro (definição de cisto ativo, frequência do fragmento caído, proporção de fraturas, dose e sucesso do corticoide), e cada seção abaixo mostra o que cada livro diz.
+A prova cobra quem tem, onde, em que parte do osso, como chega, o que contém, como se trata e com quem se confunde. O cisto aneurismático é o outro lado da moeda: cheio de sangue, excêntrico, doloroso, com elementos posteriores da coluna, níveis líquido-líquido e recidiva como pontos preferidos. Os números mudam de livro para livro, e cada seção mostra o que cada um diz.
 
-> **Na prova:** menino **2:1**, duas primeiras décadas; **úmero proximal** (cerca de 50%) e **fêmur proximal**; no adulto, **ilíaco e calcâneo**; **metafisário, central**, não mais largo que a fise; diagnóstico na **fratura patológica**; **fragmento caído** patognomônico; líquido com **prostaglandinas**; SCAGLIETTI = **injeção de metilprednisolona**.
+> **Na prova:** menino **2:1**, duas primeiras décadas; **úmero proximal** (cerca de 50%) e **fêmur proximal**; no adulto, **ilíaco e calcâneo**; **metafisário, central**, não mais largo que a fise; diagnóstico na **fratura patológica**; **fragmento caído** patognomônico; líquido com **prostaglandinas**; SCAGLIETTI = **injeção de metilprednisolona**; aneurismático = **excêntrico**, sangue, **elementos posteriores**.
 
 # O que é e de onde vem {radar=confirmado}
 
@@ -66,7 +66,7 @@ alerta: A `tumores-0337` está sem gabarito oficial. O Tachdjian (p. 1004) e o C
 
 O cisto simples é doença do esqueleto imaturo. O Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 340), fala nas **duas primeiras décadas**; o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1003), diz que ocorre quase sempre nas duas primeiras décadas, **mais entre 4 e 10 anos**, com **predomínio masculino de 2 para 1**; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 937), dá **85% nas duas primeiras décadas** e o mesmo **2:1 masculino**, repetido na Tabela 27.4; o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 454), situa as crianças "em torno da segunda década".
 
-O raciocínio da prova é o de exclusão: o cisto depende da fise aberta, então não é doença da terceira e da quarta décadas; é masculino 2:1; e o local típico é o úmero proximal, não a tíbia nem os ossos chatos. O Tachdjian (p. 1003) lembra ainda que, embora raros, o cisto pode aparecer na pelve e em outros ossos do esqueleto axial; e o Campbell (p. 937) diz que os cistos dos **ossos chatos** costumam ser assintomáticos, achados incidentais, e **raramente fraturam**.
+O raciocínio da prova é o de exclusão: o cisto depende da fise aberta, então não é doença da terceira e da quarta décadas; é masculino 2:1; e o local típico é o úmero proximal, não a tíbia nem os ossos chatos, que o Campbell (p. 937) diz serem achados incidentais que **raramente fraturam**.
 
 !tabela Epidemiologia do cisto ósseo simples nos quatro livros
 | Dado | Dahlin (p. 340) | Lovell and Winter (p. 454) | Tachdjian (p. 1003) | Campbell 15 (p. 937 e 940) |
@@ -89,7 +89,7 @@ armadilha: Marcar os ossos chatos lembrando do ilíaco do adulto; no conjunto do
 
 Todos os livros põem o **úmero proximal** em primeiro e o **fêmur proximal** em segundo. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1003 e 1005), dá números: cerca de **50% no úmero** e **18% a 27% no fêmur**; depois a **tíbia proximal e a distal**; ocasionalmente calcâneo, fíbula, ulna, rádio, pelve, tálus e coluna lombar. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 454), junta os dois: fêmur e úmero proximais respondem por **cerca de 80%** das lesões. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 937), diz que qualquer osso dos membros pode ser acometido, mas que úmero e fêmur proximais são os mais comuns.
 
-O Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 340), mantém a ordem com uma palavra diferente: o cisto ocorre na **parte superior da diáfise do úmero**, na **diáfise do fêmur proximal** e na **parte proximal da diáfise da tíbia**, nessa ordem de frequência. A palavra "diáfise" deve ser lida junto com a descrição radiográfica do mesmo Dahlin (p. 340 e 341): a lucência fica na medular **encostada na placa epifisária**, e com o crescimento a epífise se afasta até o cisto ficar perto do centro da diáfise. Os três livros de ortopedia são explícitos: o cisto **nasce na metáfise**, e o Tachdjian (p. 1003) diz que **mais de 95%** nascem nela ou a envolvem.
+O Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 340), mantém a ordem, mas fala em **diáfise** superior do úmero, do fêmur proximal e da tíbia proximal. A palavra se explica pela descrição radiográfica do mesmo livro (p. 340 e 341): a lucência nasce **encostada na placa epifisária** e, com o crescimento, fica perto do centro da diáfise. Os outros três livros são explícitos: o cisto **nasce na metáfise** (mais de 95% no Tachdjian, p. 1003).
 
 ## No adulto
 
@@ -104,7 +104,7 @@ Aqui está a pergunta preferida das bancas. O Campbell (p. 937) diz, numa frase 
 | Campbell 15 (p. 937 e 940) | úmero e fêmur proximais | **ilíaco e calcâneo** |
 !fim
 
-Uma curiosidade do Lovell and Winter: a Tabela 13-2 (p. 432), que lista os tumores pediátricos por região do osso, põe o "cisto ósseo" entre as lesões **diafisárias**, ao lado da displasia fibrosa e do granuloma eosinofílico, e deixa a metáfise como "qualquer coisa". O texto do mesmo capítulo (p. 454) diz que o cisto envolve mais a **metáfise**, e na p. 456 descreve a epífise "crescendo para longe" do cisto maduro, o que leva a lesão em direção à diáfise. Na prova, a localização do cisto ao nascer, e a resposta esperada, é a metáfise.
+Uma curiosidade: a Tabela 13-2 do Lovell and Winter (p. 432) põe o "cisto ósseo" entre as lesões **diafisárias**, mas o texto do mesmo capítulo (p. 454 e 456) diz que ele envolve mais a **metáfise** e só migra para a diáfise quando a epífise "cresce para longe". Na prova, a resposta esperada é a metáfise.
 
 !questoes central=tumores-0121 relacionadas=tumores-0048,tumores-0119
 conceito: Na criança, o cisto simples ocupa a metáfise do úmero e do fêmur proximais; no adulto, o Campbell 15 aponta o ilíaco e o calcâneo como as localizações mais comuns.
@@ -209,11 +209,11 @@ armadilha: Escolher dor ou aumento de volume, que são manifestações do cisto 
 
 ## Macroscopia e líquido
 
-A cavidade pode estar vazia, mas o Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 341), diz que geralmente contém **líquido claro ou amarelo-esverdeado, de baixa viscosidade**. A superfície interna tem cristas que separam zonas deprimidas e às vezes uma camada carnosa de **1 cm ou mais**; septos parciais ou completos podem tornar o cisto multicameral; fraturas recentes modificam o quadro. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1005), descreve o líquido como **cor de palha ou serossanguinolento**, o que **distingue o cisto simples do aneurismático**, e conta que a **pressão** dentro do cisto pode passar de **30 cm de água** quando se introduz a agulha. Onde o córtex é mais fino, a parede pode ser **flutuante** e mostrar um **tom azulado** do líquido. Depois de uma fratura, o cisto pode se encher de coágulo, tecido de granulação ou tecido fibro-ósseo, e o córtex fica mais espesso, com septos ósseos múltiplos.
+A cavidade pode estar vazia, mas o Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 341), diz que geralmente contém **líquido claro ou amarelo-esverdeado, de baixa viscosidade**. A superfície interna tem cristas que separam zonas deprimidas e às vezes uma camada carnosa de **1 cm ou mais**; septos parciais ou completos podem tornar o cisto multicameral; fraturas recentes modificam o quadro. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1005), descreve o líquido como **cor de palha ou serossanguinolento**, o que **distingue o cisto simples do aneurismático**, e conta que a **pressão** dentro do cisto pode passar de **30 cm de água** quando se introduz a agulha. Onde o córtex é mais fino, a parede pode ser **flutuante e azulada**; depois de uma fratura, o cisto se enche de coágulo ou tecido fibro-ósseo e ganha septos.
 
 ## Microscopia
 
-O que a prova pode perguntar é a membrana. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 938 e 940), diz que uma **membrana fibrosa, geralmente com menos de 1 mm**, reveste a parede, e que o revestimento é de **fibroblastos e não de células endoteliais**; abaixo dela há tecido fibrovascular com fragmentos de osso imaturo, células gigantes semelhantes a osteoclastos, células mesenquimais e linfócitos ocasionais. O Tachdjian (p. 1005) descreve o revestimento como membrana fina de **células achatadas a gordas, de aspecto epitelial**, com células gigantes tipo osteoclasto, células de colesterol e gordura, e focos de hemossiderina, fibrina, calcificação e osso reativo.
+O que a prova pode perguntar é a membrana. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 938 e 940), diz que uma **membrana fibrosa, geralmente com menos de 1 mm**, reveste a parede, e que o revestimento é de **fibroblastos e não de células endoteliais**; abaixo dela há tecido fibrovascular com fragmentos de osso imaturo, células gigantes semelhantes a osteoclastos, células mesenquimais e linfócitos ocasionais. O Tachdjian (p. 1005) descreve membrana fina de **células achatadas a gordas, de aspecto epitelial**, com células gigantes, colesterol, gordura, hemossiderina e osso reativo.
 
 O Dahlin (p. 341 e 342) mostra por que o cisto simples confunde o patologista. O revestimento pode ser apenas uma camada muito fina de tecido fibroso com **células gigantes benignas** esparsas; as áreas mais espessas têm tecido conjuntivo fibrogênico, células gigantes numerosas, hemossiderina, células inflamatórias crônicas e lipófagos. **Por causa das células gigantes, algumas dessas lesões foram erroneamente classificadas como tumor de células gigantes.** Um septo isolado, quando existe, se parece muito com os septos do cisto aneurismático. Depósitos de **fibrina** frequentes podem se mineralizar em massas focais semelhantes ao **cemento** dos tumores odontogênicos, e a lesão já foi confundida com **cementoma**.
 
@@ -233,11 +233,9 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1005), lista três di
 
 ## O cisto ósseo aneurismático
 
-O aneurismático é o diferencial que a prova mais cobra, e o próprio Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 333), lembra por que os dois andam juntos: ambos estão no capítulo das lesões que simulam neoplasia. Mas o Dahlin também registra a mudança de entendimento: muitos aneurismáticos contêm **genes de fusão USP6**, mais comumente **CDH11-USP6**, o que apoia a ideia de que sejam **neoplásicos, e não reativos**. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 457), cita a translocação **t(16;17)** que põe o USP6 sob o promotor do CDH11; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 939), ainda o descreve como lesão **reativa, cheia de sangue**, não neoplasia verdadeira.
+O aneurismático é o diferencial que a prova mais cobra, e o Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 333), o coloca no mesmo capítulo das lesões que simulam neoplasia. A natureza (fusão USP6), o componente secundário, a imagem, a histologia e o tratamento ficam na seção própria, no fim; aqui vai o que separa os dois cistos.
 
-Outra diferença é o **componente secundário**. Áreas de aneurismático aparecem em tumor de células gigantes, condroblastoma, fibroma condromixoide, osteoblastoma, displasia fibrosa e até tumores malignos (Dahlin p. 333; Campbell p. 939). O Tachdjian (p. 1008) dá **65% primários e 35% secundários** e inclui o **próprio cisto simples** entre as lesões que podem ter aneurismático secundário; MARTINEZ e SISSONS, citados pelo Dahlin, acharam cerca de **28%** secundários. Por isso o Lovell and Winter manda **biopsiar** o aneurismático e avisar o patologista sobre o **osteossarcoma telangiectásico**, que pode ser idêntico na radiografia e na macroscopia; o Dahlin diz que só a **citologia** separa os dois.
-
-A clínica também é outra. O aneurismático **dói e incha** (Dahlin p. 334; Campbell p. 939), e a fratura raramente é a queixa; o cisto simples é silencioso até fraturar. Na coluna, o aneurismático pode comprimir medula e raízes, e o Tachdjian (p. 1009) diz que isso exige **intervenção urgente**.
+A clínica também é outra. O aneurismático **dói e incha** (Dahlin p. 334; Campbell's Operative Orthopaedics, 15ª ed., cap. 27, p. 939), e a fratura raramente é a queixa; o cisto simples é silencioso até fraturar. Na coluna, o aneurismático pode comprimir medula e raízes, e o Tachdjian (p. 1009) diz que isso exige **intervenção urgente**.
 
 !tabela Cisto ósseo simples e cisto aneurismático (Campbell 15, Tabela 27.4, p. 940, completada pelos outros livros)
 | Item | Cisto ósseo simples | Cisto ósseo aneurismático |
@@ -256,7 +254,7 @@ A clínica também é outra. O aneurismático **dói e incha** (Dahlin p. 334; C
 
 ## Onde o aneurismático aparece
 
-Os números da coluna variam, e a banca cobra exatamente esse número. O Campbell (p. 939) diz que as lesões vertebrais respondem por **15% a 20%** e ficam nos **elementos posteriores**, com extensão frequente ao corpo ou a níveis adjacentes. O Tachdjian (p. 1008 e 1009) dá **cerca de 20%** na coluna, do áxis ao sacro, e diz que dentro da vértebra o cisto aparece no corpo, nos pedículos, na lâmina e no processo espinhoso, **mais nos elementos posteriores que no corpo**. O Lovell and Winter (p. 457) dá **quase 30%** na coluna e afirma que a lesão **sempre** envolve os elementos posteriores, podendo atingir o corpo. O Dahlin (p. 333 e 334) não dá a porcentagem, mas diz que a coluna é frequentemente acometida, cervical e torácica igualmente, e que nas vértebras o cisto tende aos **elementos posteriores**; nos ossos longos, à **metáfise**; e o local mais comum é **ao redor do joelho**.
+Os números da coluna variam, e a banca cobra exatamente esse número. O Campbell (p. 939) diz que as lesões vertebrais respondem por **15% a 20%** e ficam nos **elementos posteriores**, com extensão frequente ao corpo ou a níveis adjacentes. O Tachdjian (p. 1008 e 1009) dá **cerca de 20%** na coluna, do áxis ao sacro, e diz que dentro da vértebra o cisto aparece no corpo, nos pedículos, na lâmina e no processo espinhoso, **mais nos elementos posteriores que no corpo**. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 457), dá **quase 30%** na coluna e afirma que a lesão **sempre** envolve os elementos posteriores, podendo atingir o corpo. O Dahlin (p. 333 e 334) não dá a porcentagem, mas diz que a coluna é frequentemente acometida, cervical e torácica igualmente, e que nas vértebras o cisto tende aos **elementos posteriores**; nos ossos longos, à **metáfise**; e o local mais comum é **ao redor do joelho**.
 
 Nos ossos longos, o aneurismático é **excêntrico**. O Dahlin (p. 334) diz que a lucência típica é excêntrica na medular da metáfise; **menos comumente, central**; muito menos, cortical ou periosteal. O Tachdjian (p. 1009) confirma cerca de **80%** metafisários e excêntricos, "ao contrário do cisto simples", e lembra que nos ossos curtos do pé o cisto fica mais central, pelo tamanho do osso.
 
@@ -280,7 +278,7 @@ alerta: A porcentagem da coluna diverge: 15% a 20% no Campbell 15 (o número do 
 
 ## A recidiva do aneurismático
 
-O tratamento do aneurismático é a curetagem, e a recidiva é o problema. O Campbell (p. 940) dá **10% a 20%** após curetagem e diz que a recidiva se correlaciona com **idade abaixo de 15 anos**, **cistos de localização central** e **remoção incompleta** do conteúdo. O Tachdjian (p. 1010) dá **14% a 59%** e cita GIBBS, que obteve controle local de quase 90% com broca mecânica e achou **idade muito jovem e fises abertas** associadas a mais recidiva. O Lovell and Winter (p. 457) fala em recidiva **de até 60%** com curetagem e enxerto e em menos de 20% com a técnica de quatro passos (curetagem estendida, broca de alta rotação, adjuvante como fenol e eletrocautério); o Tachdjian (p. 1011) cita GARG com **0 de 8** recidivas com quatro passos semelhantes (curetagem, broca, eletrocautério e enxerto) e STEFFNER com **7,5%** usando broca e coagulação com argônio. O Dahlin (p. 340) é o mais otimista: prognóstico **excelente**, recidivas **raras**, e até a remoção incompleta pode ser seguida de regressão. O Dahlin registra também três **sarcomas pós-radiação** em aneurismáticos irradiados na Mayo Clinic, e o Tachdjian (p. 1013) limita a radioterapia (3000 a 5000 cGy) aos casos inoperáveis.
+O tratamento do aneurismático é a curetagem, e a recidiva é o problema. O Campbell (p. 940) dá **10% a 20%** após curetagem e diz que a recidiva se correlaciona com **idade abaixo de 15 anos**, **cistos de localização central** e **remoção incompleta** do conteúdo. O Tachdjian (p. 1010) dá **14% a 59%** e cita GIBBS, que obteve controle local de quase 90% com broca mecânica e achou **idade muito jovem e fises abertas** associadas a mais recidiva. O Lovell and Winter (p. 457) fala em recidiva **de até 60%** com curetagem e enxerto e em menos de 20% com a técnica de quatro passos (curetagem estendida, broca de alta rotação, adjuvante como fenol e eletrocautério); o Tachdjian (p. 1011) cita GARG com **0 de 8** recidivas com quatro passos semelhantes (curetagem, broca, eletrocautério e enxerto) e STEFFNER com **7,5%** usando broca e coagulação com argônio. O Dahlin (p. 340) é o mais otimista: prognóstico **excelente**, recidivas **raras**, e até a remoção incompleta pode ser seguida de regressão. 
 
 O que liga as duas lesões é a criança pequena: no cisto simples, idade abaixo de 10 anos e cisto ativo recidivam mais; no aneurismático, idade abaixo de 15 anos e fises abertas. A diferença é a posição: no aneurismático, o fator de risco é o cisto **central**, justamente porque o típico é excêntrico.
 
@@ -361,7 +359,7 @@ alerta: O gabarito oficial da `tumores-0361` (ENARE R4 2025) é a ressecção em
 
 ## Medula óssea e outros injetáveis
 
-O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 456), diz que a **injeção de medula óssea autógena** é defendida por alguns com **resultados melhores que o corticoide**. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1006 e 1007), cita DOCQUIER e DELLOYE, com regressão em **15 de 17** cistos após uma única injeção de medula e recidiva de **12%** em 3 anos; KILLIAN, com cicatrização completa em **9 de 11** com matriz óssea desmineralizada; ROUGRAFF e KLING, com **16 de 23** usando medula mais matriz desmineralizada (5 recidivas em 4 anos); e conta que a instituição do livro passou a preferir a **pasta de fosfato de cálcio** bioabsorvível. Mas o mesmo Tachdjian (p. 1006) relata uma revisão Cochrane de ZHAO (2017) que reanalisou um ensaio multicêntrico e achou o **corticoide levemente melhor que a medula**, com evidência de **qualidade muito baixa**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 939), lista medula com matriz desmineralizada, hidroxiapatita, sulfato de cálcio, fosfato de cálcio e aloenxerto esponjoso, e conclui que **nenhum estudo mostrou superioridade** de um injetável sobre outro.
+O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 456), diz que a **injeção de medula óssea autógena** é defendida por alguns com **resultados melhores que o corticoide**. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1006 e 1007), cita DOCQUIER e DELLOYE, com regressão em **15 de 17** cistos após uma única injeção de medula e recidiva de **12%** em 3 anos; KILLIAN (**9 de 11** com matriz óssea desmineralizada) e ROUGRAFF e KLING (**16 de 23** com medula e matriz); e conta que a instituição do livro passou a preferir a **pasta de fosfato de cálcio** bioabsorvível. Mas o mesmo Tachdjian (p. 1006) relata uma revisão Cochrane de ZHAO (2017) que reanalisou um ensaio multicêntrico e achou o **corticoide levemente melhor que a medula**, com evidência de **qualidade muito baixa**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 939), lista medula com matriz desmineralizada, hidroxiapatita, sulfato de cálcio, fosfato de cálcio e aloenxerto esponjoso, e conclui que **nenhum estudo mostrou superioridade** de um injetável sobre outro.
 
 Aqui está a terceira divergência: o Lovell and Winter diz que a medula dá resultado melhor que o corticoide; a Cochrane citada pelo Tachdjian, que o corticoide foi levemente melhor; o Campbell, que nenhum é superior.
 
@@ -369,7 +367,7 @@ Aqui está a terceira divergência: o Lovell and Winter diz que a medula dá res
 
 Se a teoria venosa estiver certa, o cisto cura quando o líquido volta a drenar. O Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 342), registra que mais recentemente se sugeriu que **perfurar múltiplos orifícios** na lesão seja terapêutico. O Tachdjian (p. 1007) descreve a **perfuração múltipla percutânea**: trepanação, lavagem com soro, vários furos na parede, por onde o líquido escapa e a pressão cai; os fios de KIRSCHNER podem ficar como drenos. Também se relatou **descompressão contínua com parafuso canulado**, e **hastes intramedulares flexíveis de titânio** criam comunicações com o canal medular em várias direções por um único furo cortical. Abrir o canal medular pode **encurtar a cicatrização**, e a haste flexível dá **estabilidade precoce**; os dois métodos se associaram a **menos recidiva**. O Campbell (p. 938) diz que a haste flexível no **fêmur e no úmero** dá estabilidade precoce, muitas vezes **dispensa o gesso** e **diminui o risco de nova fratura**.
 
-O Lovell and Winter (p. 456) diz que vários autores defendem a **descompressão como a forma mais eficiente** e descreve a técnica minimamente invasiva dos autores, sob anestesia geral e fluoroscopia: **agulha de JAMSHIDI** com aspiração, **cistograma** para ver lojas, trocarte de 6 mm, biópsia com congelação se houver dúvida, **curetagem** da membrana, **descompressão** com curetas curvas e/ou **haste elástica de titânio** e enxerto com **pellets de sulfato de cálcio**; a cicatrização foi de cerca de **80% após um procedimento** e **mais de 90% após repetição** (dados não publicados).
+O Lovell and Winter (p. 456) diz que vários autores defendem a **descompressão como a forma mais eficiente** e descreve a técnica percutânea dos autores: **agulha de JAMSHIDI**, **cistograma**, **curetagem** da membrana, descompressão com curetas e/ou **haste elástica de titânio** e **pellets de sulfato de cálcio**; cicatrização de cerca de **80% após um procedimento** e **mais de 90% após repetição** (dados não publicados).
 
 ## Curetagem e enxerto, e a fratura do fêmur proximal
 
@@ -397,23 +395,89 @@ A fratura do fêmur proximal é exceção em todos os livros. O Campbell (p. 938
 
 O cisto simples é benigno, mas teimoso. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1006), diz que há historicamente uma **taxa relativamente alta de recidiva** com qualquer tratamento; o Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 342), já mostrava, com GARCEAU e GREGORY (1954), que a idade abaixo de 10 anos e o cisto justaepifisário recidivavam mais. A transformação maligna é **extremamente rara**: o Dahlin cita JOHNSON e colaboradores (1962), com quatro exemplos de **alteração sarcomatosa**, e um **fibrossarcoma do fêmur** da Mayo Clinic que possivelmente começou num cisto.
 
-!tabela Números que mudam de livro para livro
-| Dado | Dahlin | Lovell and Winter | Tachdjian | Campbell 15 |
+# O cisto ósseo aneurismático por inteiro {radar=confirmado}
+
+## Neoplasia ou reação: a fusão USP6
+
+O Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 333), resume a dúvida em duas frases. Contra a ideia de neoplasia pesa um fato clínico: a lesão pode **regredir depois de remoção incompleta**. A favor, a genética: muitos aneurismáticos têm **genes de fusão USP6**, mais comumente **CDH11-USP6**, o que apoia a natureza **neoplásica, e não reativa**. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 457), dá o mecanismo: a translocação **t(16;17)(q22;p13)** põe o gene da protease USP6 sob o controle do promotor da **caderina 11 (CDH11)**, muito ativo no osteoblasto. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1008), cita os segmentos 7q, 16p e 17p11-13, o **IGF-I** e casos herdados. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 939), fica com a visão antiga: lesão **reativa**, cheia de sangue, nascida de um **distúrbio circulatório local** com pressão venosa alta e hemorragia.
+
+## Primário e secundário
+
+O aneurismático pode nascer **de novo** ou dentro de outra lesão. O Dahlin (p. 333) cita **tumor de células gigantes, condroblastoma, fibroma condromixoide e displasia fibrosa**, e raramente tumores malignos; o processo de base é que dita o comportamento. O Campbell (p. 939) acrescenta **osteoblastoma** e fibroma não ossificante, e no capítulo 28 dá aneurismático secundário em **20% dos tumores de células gigantes** (p. 952) e **20% dos condroblastomas** (Tabela 28.1, p. 953). O Tachdjian (p. 1008 e 1009) inclui o cisto simples, o osteossarcoma telangiectásico, o condrossarcoma e metástases, e manda amostrar bastante: **área sólida de 1 cm ou mais** sugere outra lesão por baixo.
+
+!tabela Primário e secundário nos quatro livros
+| Dado | Dahlin (p. 333) | Lovell and Winter (p. 457) | Tachdjian (p. 1008 e 1009) | Campbell 15 (p. 939, 952 e 953) |
 | --- | --- | --- | --- | --- |
-| cisto ativo | encosta na placa | junto da fise; latente depois dos 10 anos | **menos de 0,5 cm** da fise | **até 1 cm** da fise |
-| fragmento caído | não cita | não cita | **menos de 10%** | **20%** |
-| fratura na apresentação | a maioria | **cerca de 85%** | **até 90%** | **dois terços** |
-| fratura cura o cisto | não comenta | não comenta | **menos de 5%** | ocasionalmente estimula a cicatrização |
-| dose do corticoide | não informa | não informa | **40 a 120 mg**, máximo 120 mg | **80 a 200 mg** |
-| sucesso do corticoide | **90%** (SCAGLIETTI) | persistência muito alta | 90% original; **40% a 80%** depois | **mais de 90%** |
-| recidiva da curetagem e enxerto | não informa | reservada às falhas | quase 50% (CASSARD) | cerca de 50% |
-| cicatrização na maturidade | atinge tamanho máximo antes da maturidade | latente pode cicatrizar | nenhum cicatrizou em 24 (DONALDSON e WRIGHT) | geralmente cicatriza |
+| natureza | fusão USP6 apoia neoplasia | t(16;17), USP6 e CDH11 | neoplasia primária ou resposta secundária | reativo, não neoplasia verdadeira |
+| proporção secundária | cerca de 28% (MARTINEZ e SISSONS) | não informa | 35% | 20% dos TCG e dos condroblastomas |
+| lesões de base | TCG, condroblastoma, fibroma condromixoide, displasia fibrosa | TCG, condroblastoma, osteoblastoma, osteossarcoma | displasia, condroblastoma, TCG, cisto simples, malignos | TCG, condroblastoma, osteoblastoma, displasia, fibroma não ossificante |
+| consequência | a lesão de base dita o comportamento | não muda tratamento nem prognóstico da base | área sólida de 1 cm ou mais: procurar a lesão de base | não comenta |
 !fim
+
+## Idade e locais: o que cada livro põe em primeiro
+
+A idade e os locais estão na tabela da seção do diferencial: duas primeiras décadas, quase sempre abaixo de 20 anos. O que a prova explora é o primeiro lugar, que muda: **ao redor do joelho** no Dahlin (p. 333); **úmero proximal, fêmur distal, tíbia proximal e coluna** no Campbell; fêmur, tíbia e coluna no Tachdjian (p. 1008). A coluna aparece em todos (15% a 30%), e o Campbell (cap. 26, p. 870) põe o aneurismático entre as lesões dos **elementos posteriores abaixo dos 30 anos**, com o osteoide osteoma e o osteoblastoma.
+
+!questoes central=tumores-0240
+conceito: O cisto aneurismático é mais comum na metáfise dos ossos longos ao redor do joelho e na coluna, onde ocupa os elementos posteriores; tíbia distal, falanges e úmero distal não estão entre os locais preferidos.
+como: A SBOT-SP perguntou onde o cisto aneurismático é mais comum, entre tíbia distal, falanges da mão, úmero distal e coluna vertebral.
+armadilha: Procurar o osso longo e marcar úmero ou tíbia na extremidade errada; os livros falam em úmero proximal e tíbia proximal.
+alerta: O gabarito oficial é a coluna. O Dahlin (p. 333) diz que o local mais comum é o joelho, e a coluna responde por 15% a 30% conforme o livro; entre as alternativas, porém, só a coluna é citada como local frequente pelos quatro livros.
+!fim
+
+## A imagem: insuflante, excêntrica, com níveis
+
+O Dahlin (p. 334) descreve a lucência **excêntrica na medular da metáfise**, menos vezes central, raramente cortical ou periosteal; a lesão tende a destruir o córtex e abaular para as partes moles, contida por **fina rima calcificada**. Só metade parece benigna na radiografia; uma parte parece **maligna**. O Tachdjian (p. 1009) usa a imagem de JAFFE, o **"blowout"** balonado sob uma casca de osso subperiosteal, e descreve três fases: incipiente, **ativa de crescimento rápido** (lise extrema, destruição cortical focal, triângulos de CODMAN, fácil de confundir com malignidade) e de estabilização, com aspecto **trabeculado ou "bolhoso"**. O Campbell (p. 939) também avisa que o **crescimento rápido** pode simular malignidade e que a cintilografia mostra captação periférica com **centro hipocaptante**.
+
+Na TC e na RM, o sinal clássico são os **níveis líquido-líquido**, o soro separado do sangue (Dahlin p. 334). O Lovell and Winter (p. 457) explica a física: o paciente precisa ficar **imóvel 20 a 30 minutos** para as células sedimentarem; a lesão tem cerca de **20 UH** e não realça; e o nível **não é diagnóstico**, porque aparece em outras lesões. O Campbell (p. 952) o liga ao aneurismático secundário do tumor de células gigantes.
+
+O diferencial mais perigoso é o **osteossarcoma telangiectásico**. O Campbell (cap. 29, p. 972) diz que ele é puramente lítico, pode ser **insuflado como o aneurismático** e parece um cisto cheio de sangue, mas no grande aumento as células dos septos são francamente malignas. O Dahlin (p. 340) diz que o pequeno aumento pode ser idêntico e que só a **citologia** separa os dois; o Lovell and Winter manda **biopsiar** e avisar o patologista.
+
+!tabela Fases radiográficas e classificação de CAPANNA (Tachdjian, cap. 25, p. 1009 e 1010)
+| Sistema | Grau | Aspecto |
+| --- | --- | --- |
+| fases | incipiente | pequena lesão excêntrica ou só descolamento do periósteo |
+| fases | ativa | crescimento rápido, lise extrema, CODMAN, "blowout"; imita tumor maligno |
+| fases | estabilização | expansão lisa, aspecto trabeculado ou "bolhoso", esclerose ao redor |
+| CAPANNA | inativo | casca periosteal completa, rima esclerótica |
+| CAPANNA | ativo | casca incompleta, borda intraóssea nítida |
+| CAPANNA | agressivo | sem casca, borda endosteal mal definida |
+!fim
+
+!questoes central=tumores-0327
+conceito: Lesão lítica insuflante, excêntrica na metáfise, de crescimento rápido e aspecto em favo de mel ou bolhoso num jovem é cisto ósseo aneurismático.
+como: O TARO 2007 descreveu a lesão na metáfise distal do fêmur e ofereceu tumor de células gigantes, fibroma condromixoide, cisto aneurismático e condroblastoma.
+armadilha: Marcar tumor de células gigantes pelo aspecto insuflante; ele é epifisário e do adulto de 20 a 40 anos, e o condroblastoma também é epifisário (Campbell 15, cap. 26, p. 869.e1, e Tabela 28.1, p. 953).
+alerta: A `tumores-0327` está sem gabarito oficial. O gabarito pela bibliografia é a alternativa C (cisto ósseo aneurismático), a resposta provável: excêntrico metafisário (Dahlin, p. 334; Tachdjian, p. 1009), de crescimento rápido (Campbell 15, p. 939) e com espaços em favo de mel (Tachdjian, p. 1009). O fibroma condromixoide também é "bolhoso" na Tabela 28.1 do Campbell 15, mas na tíbia proximal e com rima reativa.
+!fim
+
+## A histologia e a variante sólida
+
+O Dahlin (p. 335) define a lesão pelos **espaços cavernomatosos** cujas paredes **não têm a estrutura de vaso** nem revestimento endotelial; os **septos quase sempre têm células gigantes**, traves finas de osso e às vezes mineral com "aura condroide"; as áreas sólidas têm proliferação fusocelular frouxa, com **mitoses frequentes, mas sem atipia**, e **osso reativo** com osteoblastos ativos. O Tachdjian (p. 1009) descreve a macroscopia: tecido friável vermelho-acastanhado, com sangue saindo de uma malha de espaços **em favo de mel**. O Lovell and Winter (p. 457) acha o revestimento parecido com o do tumor de células gigantes; o Dahlin (p. 337) lembra que a idade e a **localização metafisária** separam os dois.
+
+A **variante sólida** não tem cistos nem septos: proliferação fusocelular frouxa com **muito osso novo reativo**, parecida com a ossificação heterotópica (Dahlin p. 337). O Campbell (p. 940) a chama de **granuloma reparativo de células gigantes**; o Tachdjian (p. 1009 e 1010) dá **7,5%** numa grande série e diz que a RM com gadolínio ajuda a separá-la.
+
+## O tratamento além da curetagem
+
+A base é a curetagem, e a recidiva já foi comparada acima. Os livros divergem nos acessórios. O Campbell (p. 940) faz **curetagem estendida** com substituto de enxerto, sob garrote; ressecção marginal em osso dispensável; **embolização pré-operatória** na coluna e na pelve, e embolização arterial ou **escleroterapia percutânea** como tratamento definitivo onde a curetagem seria muito difícil; e cita o **denosumabe** (anti-RANKL) quando a cirurgia teria morbidade inaceitável. O Tachdjian (p. 1010 e 1011) lista crioterapia, broca, argônio, polidocanol (cura em **37 de 38**, mediana de 4 injeções), álcool, doxiciclina e denosumabe, mas registra que KECECI não viu benefício do fenol ou do álcool e que o Ethibloc já causou embolia fatal. O Lovell and Winter acha a embolização útil para sangrar menos, mas de necessidade discutível. A radioterapia é exceção para todos: o Campbell não a usa de rotina pelo risco de transformação maligna, o Tachdjian (p. 1013) a limita a 3000 a 5000 cGy nos inoperáveis, e o Dahlin (p. 340) registra três **sarcomas pós-radiação** na Mayo Clinic.
+
+!tabela Tratamento do cisto aneurismático
+| Opção | Dahlin (p. 340) | Lovell and Winter (p. 457) | Tachdjian (p. 1010 a 1013) | Campbell 15 (p. 940) |
+| --- | --- | --- | --- | --- |
+| base | retirar toda a lesão ou o máximo possível | curetagem e enxerto; quatro passos | curetagem e enxerto; broca, argônio | curetagem estendida e substituto |
+| adjuvantes | não cita | fenol, eletrocautério; criocirurgia na recidiva | crioterapia ajuda; KECECI sem benefício | não cita |
+| embolização | não cita | menos sangramento; discutível | pré-operatória; isolada em coluna e pelve | pré-operatória; definitiva se curetagem difícil |
+| escleroterapia e drogas | não cita | não cita | polidocanol, álcool, doxiciclina, denosumabe | escleroterapia; denosumabe se cirurgia mórbida |
+| ressecção | não cita | ampla se a perda é mínima | osso dispensável (costela, fíbula) | marginal em osso dispensável |
+| radioterapia | três sarcomas pós-radiação | não cita | só inoperável, 3000 a 5000 cGy | baixa dose eficaz, não rotineira |
+!fim
+
+Na coluna, o Lovell and Winter reseca os elementos posteriores e cureta pedículo e corpo; o Tachdjian (p. 1011 e 1013) diz que a via posterior isolada recidiva mais que a ressecção completa ou combinada, e que déficit neurológico pede descompressão de urgência. O Dahlin fecha com otimismo: prognóstico **excelente**, sem transformação maligna espontânea na Mayo Clinic.
 
 # Fechamento {radar=fundamento}
 
-O cisto ósseo simples é uma cavidade de líquido claro, sem célula tumoral, que nasce na **metáfise** do **úmero** ou do **fêmur proximal** de um **menino** entre 4 e 10 anos, encostada na fise. Enquanto encosta, é **ativo** (menos de 0,5 cm no Tachdjian, até 1 cm no Campbell 15); quando a fise se afasta, fica **latente**. É **central**, puramente lítico, alarga a metáfise **sem passar a largura da fise** e não tem reação periosteal nem massa. Fica silencioso até a **fratura patológica**, que é a forma de apresentação da maioria (dois terços a 90%, conforme o livro), e o **fragmento caído** que afunda no líquido é patognomônico, embora raro (menos de 10% no Tachdjian, 20% no Campbell 15). O líquido tem **prostaglandinas** e outros fatores de reabsorção, e é por isso que o corticoide de **SCAGLIETTI** funciona. No adulto, o Campbell 15 lembra o **ilíaco e o calcâneo**.
+O cisto ósseo simples é uma cavidade de líquido claro que nasce na **metáfise** do **úmero** ou do **fêmur proximal** de um **menino** entre 4 e 10 anos, encostada na fise: **ativo** enquanto encosta (menos de 0,5 cm no Tachdjian, até 1 cm no Campbell 15), **latente** quando ela se afasta. É **central**, lítico puro, não passa a largura da fise e fica silencioso até a **fratura patológica**; o **fragmento caído** é patognomônico, embora raro. O líquido tem **prostaglandinas**, e daí o corticoide de **SCAGLIETTI**; depois vêm medula, substitutos, descompressão, hastes flexíveis e curetagem, reservada às falhas e ao **fêmur proximal**. No adulto, **ilíaco e calcâneo**.
 
-O tratamento vai da observação do cisto pequeno do membro superior à injeção de **metilprednisolona**, de **medula óssea** ou de substitutos, à **descompressão** com perfuração e **hastes flexíveis**, e à **curetagem com enxerto**, hoje reservada às falhas e à fratura do **fêmur proximal**, que pede fixação. O diferencial é com o **cisto aneurismático** (dor, excêntrico, mais largo que a fise, níveis líquido-líquido, elementos posteriores da coluna, recidiva com menos de 15 anos e cisto central) e com a **displasia fibrosa** (vidro fosco, diafisária, cajado de pastor).
+O cisto aneurismático é o oposto: cheio de **sangue**, **excêntrico**, doloroso, mais largo que a fise, com **níveis líquido-líquido**, nos **elementos posteriores** da coluna, primário (fusão **USP6**) ou secundário a TCG, condroblastoma, osteoblastoma ou displasia fibrosa; o rival na imagem é o **osteossarcoma telangiectásico**. Trata-se com **curetagem estendida** e adjuvantes, com embolização, escleroterapia ou denosumabe onde a cirurgia é difícil, e recidiva mais com **menos de 15 anos e cisto central**.
 
-> **Na prova:** menino **2:1**, 4 a 10 anos; **úmero proximal** (cerca de 50%) e **fêmur proximal**, no adulto **ilíaco e calcâneo**; **metafisário e central**, não mais largo que a fise; diagnóstico pela **fratura patológica**; **fragmento caído** patognomônico; líquido com **prostaglandinas**; **SCAGLIETTI** = injeção de **metilprednisolona** (90%); fêmur proximal fraturado = curetagem, enxerto e fixação; aneurismático = **excêntrico**, coluna **15% a 20%** nos **elementos posteriores** abaixo de 20 anos, recidiva com **menos de 15 anos e cisto central**.
+> **Na prova:** cisto simples = menino **2:1**, 4 a 10 anos, **úmero proximal** e **fêmur proximal** (adulto: **ilíaco e calcâneo**), **metafisário e central**, não mais largo que a fise, **fratura patológica**, **fragmento caído**, **prostaglandinas**, **SCAGLIETTI** = **metilprednisolona**; aneurismático = **excêntrico**, sangue, **USP6**, secundário a TCG e condroblastoma, coluna **15% a 20%** nos **elementos posteriores** abaixo de 20 anos, **níveis líquido-líquido**, diferencial com **telangiectásico**, recidiva com **menos de 15 anos e cisto central**.
