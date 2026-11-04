@@ -10656,6 +10656,100 @@
    ]
   },
   {
+   "id": "hebert-exame-cotovelo",
+   "versao": 1,
+   "titulo": "Exame físico do cotovelo",
+   "especialidade": "ombro-cotovelo",
+   "livro": "Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e colaboradores)",
+   "edicao": "5ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 15, 51, 52, 53, 67 e 82), o Green's Operative Hand Surgery, 7ª ed. (caps. 23, 25 e 28), e o Rockwood and Green's Fractures in Adults, 10ª ed. (caps. 39 e 40)",
+   "capitulo": "Capítulo 4 · Ombro e cotovelo (seções Epicondilite lateral e Síndromes compressivas do membro superior), com o Capítulo 48 · Traumatismos do cotovelo no adulto do mesmo livro e os Capítulos 52 · Recurrent Dislocations e 53 · Traumatic Disorders do Campbell's Operative Orthopaedics, 15ª ed.",
+   "resumo": "COZEN é extensão resistida do punho com cotovelo a 90° e antebraço pronado, MILL força a flexão do punho com cotovelo estendido, MAUDSLEY é extensão resistida do dedo médio e o teste da cadeira de GARDNER ergue a cadeira com antebraço pronado e punho fletido; a instabilidade posterolateral aparece com carga axial, valgo e supinação (pivot shift de O'DRISCOLL, gaveta posterolateral, levantar da cadeira e push-up com antebraço supinado); milking e moving valgus testam o ligamento colateral medial, com valgo a cerca de 30°; o hook test engancha a borda lateral do tendão do bíceps com flexão e supinação ativas, porque a medial é o lacerto fibroso, e o squeeze test se faz a 60 a 80°; ângulo de carregamento médio de 15° (0 a 26°) e arco funcional de 30 a 130° com 50° de pronação e 50° de supinação.",
+   "acesso": "gratis",
+   "minutos": 33,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-anatomia-que-o-exame-interroga",
+     "titulo": "A anatomia que o exame interroga",
+     "radar": "fundamento"
+    },
+    {
+     "id": "inspecao-angulo-de-carregamento-cubito-valgo-e-c",
+     "titulo": "Inspeção: ângulo de carregamento, cúbito valgo e cúbito varo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "palpacao-o-triangulo-e-os-pontos-dolorosos",
+     "titulo": "Palpação: o triângulo e os pontos dolorosos",
+     "radar": "clinico"
+    },
+    {
+     "id": "amplitude-de-movimento-e-arco-funcional",
+     "titulo": "Amplitude de movimento e arco funcional",
+     "radar": "fundamento"
+    },
+    {
+     "id": "instabilidade-medial-estresse-em-valgo-moving-va",
+     "titulo": "Instabilidade medial: estresse em valgo, moving valgus e milking",
+     "radar": "confirmado"
+    },
+    {
+     "id": "instabilidade-posterolateral-rotatoria-pivot-shi",
+     "titulo": "Instabilidade posterolateral rotatória: pivot shift, gaveta, cadeira e push-up",
+     "radar": "confirmado"
+    },
+    {
+     "id": "epicondilite-lateral-e-medial-cozen-mill-maudsle",
+     "titulo": "Epicondilite lateral e medial: COZEN, MILL, MAUDSLEY e GARDNER",
+     "radar": "confirmado"
+    },
+    {
+     "id": "biceps-distal-hook-test-squeeze-test-e-o-lacerto",
+     "titulo": "Bíceps distal: hook test, squeeze test e o lacerto fibroso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "nervos-no-cotovelo-ulnar-mediano-e-interosseo-po",
+     "titulo": "Nervos no cotovelo: ulnar, mediano e interósseo posterior",
+     "radar": "clinico"
+    },
+    {
+     "id": "plica-e-o-cotovelo-que-doi-sem-nome",
+     "titulo": "Plica e o cotovelo que dói sem nome",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "ombro-cotovelo-0555",
+    "ombro-cotovelo-0516",
+    "ombro-cotovelo-0382",
+    "ombro-cotovelo-0536",
+    "ombro-cotovelo-0314",
+    "ombro-cotovelo-0534",
+    "ombro-cotovelo-0298",
+    "ombro-cotovelo-0302",
+    "ombro-cotovelo-0566",
+    "ombro-cotovelo-0027",
+    "ombro-cotovelo-0570",
+    "ombro-cotovelo-0238"
+   ],
+   "treino": [
+    "ombro-cotovelo-0683"
+   ],
+   "subtemas": [
+    "Exame físico do cotovelo"
+   ]
+  },
+  {
    "id": "hebert-exame-joelho",
    "versao": 1,
    "titulo": "Exame físico do joelho",
@@ -10884,6 +10978,101 @@
    "treino": [],
    "subtemas": [
     "Gonartrose e osteotomias"
+   ]
+  },
+  {
+   "id": "hebert-halux-rigido",
+   "versao": 1,
+   "titulo": "Hálux rígido",
+   "especialidade": "pe-tornozelo",
+   "livro": "Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e colaboradores)",
+   "edicao": "5ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 87, 90, 55 e 36), e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19)",
+   "capitulo": "Capítulo 21.5 · Metatarsalgias (seção Metatarsalgia I isolada: hálux rígido), com o Capítulo 21.3 · Hálux valgo do mesmo livro, os Capítulos 87 · Disorders of the Hallux (seção Hallux Rigidus) e 90 · Arthritis of the Foot do Campbell's Operative Orthopaedics, 15ª ed., e o Capítulo 19 · Disorders of the Foot do Tachdjian's Pediatric Orthopaedics, 6ª ed.",
+   "resumo": "Limitação dolorosa da dorsiflexão da primeira metatarsofalângica (COTTERILL) que começa na cartilagem dorsal da cabeça do primeiro metatarso (lesão de McMASTER entre o ápice da cúpula e a margem dorsal) e evolui com osteófito dorsal que bloqueia a extensão; o Campbell (cap. 87) nega associação com metatarso elevado, primeiro metatarso longo, hipermobilidade e postura do pé, mas o cap. 90 e o Tachdjian citam o primeiro metatarso longo; COUGHLIN e SHURNAS: grau 2 com dor mais constante e restrição moderada, grau 3 com arco abaixo de 20 graus e grau 4 com dor na meia-amplitude passiva; conservador com sola rígida, placa de carbono e barra metatarsal; queilectomia retira o osteófito e 20% a 30% dorsal da cabeça até cerca de 70 graus de dorsiflexão, melhor nos graus 1 e 2 e acima de 60 anos; cunha de fechamento dorsal da falange proximal; KELLER descomprime e fica para o idoso de baixa demanda; silicone obsoleto; artrodese é o padrão no avançado, com 10 a 15 graus de dorsiflexão em relação à planta do pé, 20 a 30 (ou 25 a 30) em relação ao primeiro metatarso, 5 a 15 de valgo e rotação neutra.",
+   "acesso": "gratis",
+   "minutos": 35,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-e-o-halux-rigido-e-onde-a-lesao-comeca",
+     "titulo": "O que é o hálux rígido e onde a lesão começa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "por-que-acontece-metatarso-elevado-longo-plano-e",
+     "titulo": "Por que acontece: metatarso elevado, longo, plano e outras suspeitas",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-quadro-clinico-dor-dorsal-e-bloqueio-da-dorsif",
+     "titulo": "O quadro clínico: dor dorsal e bloqueio da dorsiflexão",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-imagem",
+     "titulo": "A imagem",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-classificacao-de-coughlin-e-shurnas",
+     "titulo": "A classificação de COUGHLIN e SHURNAS",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tratamento-conservador",
+     "titulo": "Tratamento conservador",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-queilectomia",
+     "titulo": "A queilectomia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-osteotomias-mudar-o-arco-sem-fundir",
+     "titulo": "As osteotomias: mudar o arco sem fundir",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-artroplastias-keller-interposicao-implantes-e",
+     "titulo": "As artroplastias: KELLER, interposição, implantes e hemiartroplastia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-artrodese-da-primeira-metatarsofalangica",
+     "titulo": "A artrodese da primeira metatarsofalângica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-halux-rigido-do-adolescente",
+     "titulo": "O hálux rígido do adolescente",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pe-tornozelo-0345",
+    "pe-tornozelo-0047",
+    "pe-tornozelo-0102",
+    "pe-tornozelo-0071",
+    "pe-tornozelo-0253",
+    "pe-tornozelo-0305",
+    "pe-tornozelo-0363",
+    "pe-tornozelo-0293",
+    "pe-tornozelo-0220",
+    "pe-tornozelo-0278"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Hálux rígido"
    ]
   },
   {
@@ -11199,6 +11388,130 @@
    "treino": [],
    "subtemas": [
     "Histiocitose de células de Langerhans"
+   ]
+  },
+  {
+   "id": "lw-osteocondroses",
+   "versao": 1,
+   "titulo": "Osteocondroses",
+   "especialidade": "pediatria",
+   "livro": "Lovell and Winter's Pediatric Orthopaedics",
+   "edicao": "7ª edição (2014), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), caps. 19 e 40, o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 34, e o Rockwood and Wilkins' Fractures in Children, 10ª ed., caps. 23 e 31",
+   "capitulo": "Capítulo 9 · Localized Disorders of Skin and Soft Tissue (seção The Osteochondroses), com o Capítulo 29 · The Foot e o Capítulo 31 · Sports Medicine in the Growing Child",
+   "resumo": "Osteocondrose é falha da ossificação endocondral de um núcleo que crescia normalmente, por isquemia nas articulares e por tração nas apofisárias; KÖHLER é o navicular do menino pequeno (4 vezes mais em meninos, abaixo de 6 a 7 anos, autolimitado, gesso curto); FREIBERG é a cabeça do 2º metatarso da adolescente, a única com predileção feminina; SEVER é a apófise do calcâneo (9 a 14 anos, bilateral, radiografia normal); ISELIN é a base do 5º metatarso (fibular curto, oblíqua); OSGOOD-SCHLATTER é o tubérculo tibial (patela alta e reto femoral encurtado); SINDING-LARSEN-JOHANSSON é o polo inferior da patela por tração; PANNER é o capítulo antes dos 10 anos, e a osteocondrite dissecante do capítulo é a da criança mais velha, do beisebol e da ginástica.",
+   "acesso": "gratis",
+   "minutos": 33,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-e-uma-osteocondrose",
+     "titulo": "O que é uma osteocondrose",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-classificacao-articulares-nao-articulares-e-fi",
+     "titulo": "A classificação: articulares, não articulares e fisárias",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-mapa-dos-eponimos",
+     "titulo": "O mapa dos epônimos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "kohler-o-navicular-do-menino-pequeno",
+     "titulo": "KÖHLER: o navicular do menino pequeno",
+     "radar": "confirmado"
+    },
+    {
+     "id": "freiberg-a-cabeca-do-2-metatarso-da-adolescente",
+     "titulo": "FREIBERG: a cabeça do 2º metatarso da adolescente",
+     "radar": "confirmado"
+    },
+    {
+     "id": "kohler-e-freiberg-lado-a-lado",
+     "titulo": "KÖHLER e FREIBERG lado a lado",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sever-a-apofise-do-calcaneo",
+     "titulo": "SEVER: a apófise do calcâneo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "iselin-a-base-do-5-metatarso",
+     "titulo": "ISELIN: a base do 5º metatarso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-apofisites-de-tracao-do-joelho",
+     "titulo": "As apofisites de tração do joelho",
+     "radar": "fundamento"
+    },
+    {
+     "id": "osgood-schlatter-o-tuberculo-tibial",
+     "titulo": "OSGOOD-SCHLATTER: o tubérculo tibial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sinding-larsen-johansson-o-polo-inferior-da-pate",
+     "titulo": "SINDING-LARSEN-JOHANSSON: o polo inferior da patela",
+     "radar": "confirmado"
+    },
+    {
+     "id": "panner-e-o-cotovelo-do-pequeno-arremessador",
+     "titulo": "PANNER e o cotovelo do pequeno arremessador",
+     "radar": "confirmado"
+    },
+    {
+     "id": "panner-contra-osteocondrite-dissecante-do-capitu",
+     "titulo": "PANNER contra osteocondrite dissecante do capítulo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "kienbock-thiemann-e-os-nomes-que-viram-distrator",
+     "titulo": "KIENBÖCK, THIEMANN e os nomes que viram distratores",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "as-fisarias-e-as-que-tem-resumo-proprio",
+     "titulo": "As fisárias e as que têm resumo próprio",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tratamento-tempo-repouso-e-poucas-cirurgias",
+     "titulo": "Tratamento: tempo, repouso e poucas cirurgias",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0015",
+    "pediatria-0079",
+    "pe-tornozelo-0298",
+    "pediatria-0102",
+    "pediatria-0283",
+    "pediatria-0039",
+    "pediatria-0937",
+    "pediatria-0518",
+    "pediatria-0512",
+    "pediatria-0249",
+    "pediatria-0194",
+    "pediatria-0123",
+    "pediatria-0084",
+    "pediatria-0321"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Osteocondroses"
    ]
   },
   {
