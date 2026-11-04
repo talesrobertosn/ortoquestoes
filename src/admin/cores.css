@@ -514,3 +514,34 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .a3-tempo__marca i.tinta { background: var(--a3-verde); }
 
 .a3-fila__item--media .a3-fila__marca { background: var(--a3-verde); }
+
+/* ───────── Ficha da pessoa: página corrida (04/11/2026) ───────── */
+.fx-indice { position: sticky; top: 0; z-index: 3; display: flex; gap: 6px; flex-wrap: wrap; padding: 10px 20px; background: var(--a3-papel); border-bottom: 1px solid var(--a3-linha); }
+.fx-indice button { padding: 7px 13px; border-radius: 999px; border: 1px solid var(--a3-linha); background: var(--a3-papel); color: var(--a3-tinta); font: 600 13px var(--a3-fonte); cursor: pointer; }
+.fx-indice button:hover { background: var(--a3-verde-veu); }
+.fx-indice button[aria-current="true"] { background: var(--a3-verde); border-color: var(--a3-verde); color: var(--cor-sobre, #fff); }
+.fx-indice button:focus-visible { outline: 2px solid var(--a3-verde); outline-offset: 2px; }
+.fx-corpo { display: grid; gap: 28px; padding: 18px 20px 28px; }
+.fx-secao { display: grid; gap: 14px; scroll-margin-top: 64px; }
+.fx-titulo { display: flex; gap: 12px; align-items: flex-start; padding-top: 6px; border-top: 1px dashed var(--a3-linha-2); padding-top: 18px; }
+.fx-titulo > span { display: grid; place-items: center; flex: none; width: 30px; height: 30px; border-radius: 50%; background: var(--a3-verde); color: var(--cor-sobre, #fff); font: 700 14px var(--a3-titulo); }
+.fx-titulo h2 { margin: 1px 0 2px; font: 800 19px var(--a3-titulo); letter-spacing: -.01em; }
+.fx-titulo p { margin: 0; font-size: 13px; color: var(--a3-cinza); }
+.fx-retrato { display: grid; gap: 14px; padding: 18px; border-radius: 18px; background: var(--heroi); color: var(--sobre-heroi, #fff); }
+.fx-agora { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; background: var(--heroi-vidro, rgba(255,255,255,.1)); font-size: 13.5px; }
+.fx-agora b { color: var(--pixel-ouro, #f4cf7c); }
+.fx-link { color: var(--sobre-heroi, #fff); text-decoration: underline; }
+.fx-numeros { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.fx-numeros > div { display: grid; gap: 2px; padding: 12px 14px; border-radius: 14px; background: var(--heroi-vidro, rgba(255,255,255,.1)); border: 1px solid var(--heroi-traco, rgba(255,255,255,.18)); }
+.fx-numeros span { font-size: 12px; font-weight: 600; color: var(--sobre-heroi-2, rgba(255,255,255,.82)); }
+.fx-numeros b { font: 800 28px var(--a3-titulo); letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+.fx-numeros small { font-size: 11.5px; color: var(--sobre-heroi-2, rgba(255,255,255,.8)); }
+@media (max-width: 640px) { .fx-numeros { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.fx-leitura { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 10px; }
+.fx-leitura .a3-achado { background: var(--a3-papel); border-color: transparent; padding: 12px; }
+.fx-leitura .a3-achado--ouro { background: var(--ouro-veu, #fbf3df); }
+.fx-leitura .a3-achado p { font-size: 13.5px; }
+.fx-abrir-carta { display: flex; align-items: center; gap: 12px; width: 100%; padding: 16px; border-radius: 16px; border: 1.5px dashed var(--a3-verde); background: var(--a3-verde-veu); color: var(--a3-verde); font: inherit; text-align: left; cursor: pointer; }
+.fx-abrir-carta span { display: grid; font-weight: 700; }
+.fx-abrir-carta small { font-weight: 400; color: var(--a3-cinza); }
+.fx-abrir-carta:hover { background: color-mix(in srgb, var(--a3-verde) 14%, var(--a3-papel)); }
