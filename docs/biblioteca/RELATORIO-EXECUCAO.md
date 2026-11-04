@@ -291,7 +291,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 929 | Sindactilia e polidactilia: resumo novo (green-sindactilia-polidactilia, 61 KB, Green 7 caps. 35 a 38 com Tachdjian, Campbell, Lovell and Winter e HEBERT; 58 questões ligadas); 3 miniaulas do cotovelo (artroscopia e HASTINGS e GRAHAM). |
 | 930 | Cisto ósseo aneurismático: versão 2 do resumo de cisto ósseo simples (dahlin-cisto-osseo-simples, 70 KB, com USP6, primário e secundário, imagem, variante sólida e tratamento em quatro livros); 19 miniaulas de sindactilia e polidactilia (partes 1 e 3), com Green, Tachdjian, Campbell, Lovell and Winter e HEBERT lado a lado. |
 | 931 | Osteoma osteoide (dahlin-osteoma-osteoide, 62 KB), osteomielite crônica (tachdjian6-osteomielite v3, 70 KB: CIERNY-MADER, biofilme, MARJOLIN, MASQUELET) e escoliose congênita e neuromuscular (campbell15-escoliose-congenita-neuromuscular, 62 KB, Campbell cap. 40 com Tachdjian e Lovell and Winter); 16 miniaulas (sindactilia 10, osteoma osteoide 5, cisto aneurismático 1). |
-| (este PR) | 41 miniaulas: osteomielite (36 questões antigas refeitas a partir da versão 3 do resumo) e escoliose congênita (5, com as figuras conferidas); alerta da figura da coluna-0220 retirado do resumo. |
+| 932 | 41 miniaulas: osteomielite (36 questões antigas refeitas a partir da versão 3 do resumo) e escoliose congênita (5, com as figuras conferidas); alerta da figura da coluna-0220 retirado do resumo. |
+| (este PR) | Reconstrução do LCA: enxertos e túneis: versão 3 do resumo do LCA (campbell14-lca, 70 KB; carga e rigidez dos enxertos, retirada dos flexores, aloenxerto e esterilização, marcos do túnel femoral, transtibial x portal anteromedial, fixação, ligamentização e falha, com Campbell 15 e HEBERT lado a lado). |
 
 ## Próximo
 

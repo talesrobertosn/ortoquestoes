@@ -2799,15 +2799,15 @@
   },
   {
    "id": "campbell14-lca",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Lesão do ligamento cruzado anterior e o que vem junto",
    "especialidade": "joelho",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "14ª edição (2021)",
    "capitulo": "Capítulo 45 · Lesões do joelho (ligamento cruzado anterior, meniscos e exame ligamentar)",
-   "resumo": "Bandas anteromedial (tensa em flexão) e posterolateral (tensa em extensão, freia a hiperextensão); genicular média; 85% da gaveta a 90 graus; estalo e hemartrose (mais de 70%); LACHMAN (95%), pivot shift e artrômetro (3 mm); SEGOND patognomônica, contusões laterais (80%); menisco lateral na lesão aguda, medial na tardia; rampa (edema posteromedial da tíbia); reparo ideal: longitudinal, periférico, agudo, com o LCA; mulheres 2 a 8 vezes, fossa estreita; enxertos comparáveis, patelar mais dor ao ajoelhar e menos tensão; LCA normal não é isométrico; túnel às 12 horas deixa o pivot; dor anterior e déficit de extensão.",
+   "resumo": "Bandas anteromedial (tensa em flexão) e posterolateral (tensa em extensão); genicular média; 85% da gaveta a 90 graus; LACHMAN (95%); SEGOND patognomônica, contusões laterais (80%); menisco lateral na lesão aguda, medial na tardia; rampa; enxertos: patelar rígido e com osso, isquiotibiais quádruplos mais fortes (4.140 N) e de baixa morbidade, mas com o dobro de re-ruptura no jovem; ramo sartorial do safeno e fáscia do sartório na retirada; aloenxerto: cosmética, tempo menor, mecanismo extensor preservado, mas falha 2 a 5 vezes maior no atleta jovem; túnel femoral pela crista do residente e crista bifurcada, baixo na parede (10 ou 2 horas), não às 12; portal anteromedial mais anatômico; fixação é o elo fraco inicial; ligamentização; túnel femoral mal posto é a causa mais citada de falha.",
    "acesso": "gratis",
-   "minutos": 35,
+   "minutos": 45,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2860,13 +2860,23 @@
      "radar": "confirmado"
     },
     {
+     "id": "a-retirada-dos-flexores-pata-de-ganso-sartorio-e",
+     "titulo": "A retirada dos flexores: pata de ganso, sartório e safeno",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-aloenxerto-quando-usar-por-que-falha-e-como-se",
+     "titulo": "O aloenxerto: quando usar, por que falha e como se esteriliza",
+     "radar": "confirmado"
+    },
+    {
      "id": "onde-colocar-os-tuneis-e-a-ilusao-da-isometria",
      "titulo": "Onde colocar os túneis, e a ilusão da isometria",
      "radar": "confirmado"
     },
     {
-     "id": "a-tensao-e-a-fixacao",
-     "titulo": "A tensão e a fixação",
+     "id": "a-tensao-a-fixacao-e-a-incorporacao",
+     "titulo": "A tensão, a fixação e a incorporação",
      "radar": "confirmado"
     },
     {
@@ -2880,8 +2890,8 @@
      "radar": "confirmado"
     },
     {
-     "id": "revisao-em-uma-pagina",
-     "titulo": "Revisão em uma página",
+     "id": "fechamento",
+     "titulo": "Fechamento",
      "radar": "fundamento"
     }
    ],
@@ -2913,6 +2923,8 @@
     "joelho-0301",
     "joelho-0080",
     "joelho-0003",
+    "joelho-0152",
+    "joelho-0130",
     "joelho-0231",
     "joelho-0227",
     "joelho-0307",
@@ -2930,7 +2942,8 @@
     "joelho-0387"
    ],
    "subtemas": [
-    "Lesão do ligamento cruzado anterior"
+    "Lesão do ligamento cruzado anterior",
+    "Reconstrução do LCA: enxertos e túneis"
    ]
   },
   {
