@@ -290,7 +290,7 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 928 | Três versões 2 com temas novos: osteonecrose do joelho (campbell15-lesoes-condrais v2, 70 KB), artroscopia do cotovelo (netter-anatomia-cotovelo v2, 70 KB) e ossificação heterotópica (campbell15-rigidez-cotovelo v2, 70 KB, com HASTINGS e GRAHAM e BROOKER); 4 miniaulas da osteonecrose do joelho. |
 | 929 | Sindactilia e polidactilia: resumo novo (green-sindactilia-polidactilia, 61 KB, Green 7 caps. 35 a 38 com Tachdjian, Campbell, Lovell and Winter e HEBERT; 58 questões ligadas); 3 miniaulas do cotovelo (artroscopia e HASTINGS e GRAHAM). |
 | 930 | Cisto ósseo aneurismático: versão 2 do resumo de cisto ósseo simples (dahlin-cisto-osseo-simples, 70 KB, com USP6, primário e secundário, imagem, variante sólida e tratamento em quatro livros); 19 miniaulas de sindactilia e polidactilia (partes 1 e 3), com Green, Tachdjian, Campbell, Lovell and Winter e HEBERT lado a lado. |
-| (este PR) | Osteoma osteoide: resumo novo (dahlin-osteoma-osteoide, 62 KB, Dahlin cap. 9 com o osteoblastoma, Campbell, Tachdjian, Lovell and Winter e HEBERT lado a lado); 10 miniaulas de sindactilia e polidactilia (parte 2, com a primeira dissertativa comentada, mao-1229). |
+| (este PR) | Osteoma osteoide (dahlin-osteoma-osteoide, 62 KB), osteomielite crônica (tachdjian6-osteomielite v3, 70 KB: CIERNY-MADER, biofilme, MARJOLIN, MASQUELET) e escoliose congênita e neuromuscular (campbell15-escoliose-congenita-neuromuscular, 62 KB, Campbell cap. 40 com Tachdjian e Lovell and Winter); 16 miniaulas (sindactilia 10, osteoma osteoide 5, cisto aneurismático 1). |
 
 ## Próximo
 
