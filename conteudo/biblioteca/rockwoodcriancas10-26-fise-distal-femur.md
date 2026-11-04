@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-26-fise-distal-femur
-versao: 1
+versao: 2
 titulo: Fratura da fise distal do fêmur na criança
 especialidade: pediatria
 acesso: gratis
@@ -9,7 +9,7 @@ edicao: 10ª edição (2025)
 capitulo: Capítulo 26 · Fractures of the Distal Femoral Physis
 autores: Ying Li
 fonte: Livro conferido localmente em 26/10/2026, capítulo 26. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
-subtemas: Fraturas do fêmur e da perna na criança
+subtemas: Fraturas do fêmur e da perna na criança; Trauma pediátrico
 resumo: SALTER-HARRIS II em 57%, valgo e varo com o ligamento mais forte que a fise, cruzado anterior no tipo III do côndilo medial, artéria poplítea no desvio anterior, fibular por tração, distúrbio do crescimento em cerca de metade, pinos lisos por 4 semanas, 10 dias para remanipular, PARK-HARRIS e ponte menor que 50%.
 ---
 
@@ -108,7 +108,7 @@ Lesões viscerais acompanham cerca de 5% dos casos e outras lesões musculoesque
 
 O detalhe que mais pega: a instabilidade **costuma ser diagnosticada depois da consolidação**, quando começa a reabilitação. Com a fratura instável e dolorosa, o exame ligamentar não é confiável. Por isso: checar os ligamentos quando a fratura estiver estável ou consolidada, ressonância em caso de dúvida, especialmente no tipo III, reparo de menisco periférico na própria cirurgia da fratura e reconstrução do cruzado só depois de recuperada a amplitude de movimento.
 
-!questoes central=pediatria-0608,pediatria-0590 treino=pediatria-1097
+!questoes central=pediatria-0608 relacionadas=pediatria-0590 treino=pediatria-1097
 conceito: A lesão associada mais comum da fratura do fêmur distal da criança é a ligamentar do joelho; no SALTER-HARRIS III do côndilo medial, o cruzado anterior. A instabilidade costuma aparecer depois da consolidação.
 como: O TARO 2016 perguntou a lesão associada mais comum da fratura do terço distal do fêmur na criança (lesão ligamentar do joelho); o TARO 2021, a lesão mais associada ao tipo III do côndilo femoral medial (cruzado anterior).
 armadilha: Colateral medial, que é o ligamento que o valgo romperia no adulto; ou o menisco medial.
@@ -116,7 +116,15 @@ armadilha: Colateral medial, que é o ligamento que o valgo romperia no adulto; 
 
 ## A artéria poplítea e o desvio anterior
 
-A artéria poplítea corre colada à face posterior do fêmur distal, separada só por uma fina camada de gordura. Na **hiperextensão**, a epífise vai para a **frente**, e a ponta distal da metáfise é empurrada contra a artéria: estiramento com oclusão e espasmo são o mais comum, mas lesão da íntima e laceração também ocorrem. Lesão vascular é rara (cerca de 3%, junto com as fraturas expostas), mas o desvio anterior é o de maior risco neurovascular. A Fig. 26-4 resume: desvio **anterior**, risco vascular; **posterior**, risco nervoso; **medial ou lateral**, risco neurovascular; desvio maior que **50% do diâmetro da metáfise**, mais complicações (seções Vascular Assessment e Neurovascular Anatomy).
+A artéria poplítea corre colada à face posterior do fêmur distal, separada só por uma fina camada de gordura. Na **hiperextensão**, a epífise vai para a **frente**, e a ponta distal da metáfise é empurrada contra a artéria: estiramento com oclusão e espasmo são o mais comum, mas lesão da íntima e laceração também ocorrem. Lesão vascular é rara (cerca de 3%, junto com as fraturas expostas), mas o desvio anterior é o de maior risco neurovascular. O capítulo resume: desvio **anterior**, risco vascular; **posterior**, risco nervoso; **medial ou lateral**, risco neurovascular; desvio maior que **50% do diâmetro da metáfise**, mais complicações (seções Vascular Assessment e Neurovascular Anatomy).
+
+**Como reconhecer no perfil.** A radiografia típica mostra a **epífise com o joelho para a frente**, à frente da metáfise, e a ponta da diáfise femoral descendo para a fossa poplítea: é o **ápice posterior** da angulação. O Rockwood and Wilkins' Fractures in Children, 10ª ed., liga esse desenho a três fatos (seções Classification by Displacement, Vascular Assessment e Closed Reduction):
+- vem de **hiperextensão violenta** do joelho, não de hiperflexão;
+- tem **mais risco neurovascular** que as outras direções de desvio, e a direção do desvio não prevê as demais complicações (deformidade angular, distúrbio do crescimento, rigidez); o que prevê é o **tamanho** do desvio;
+- não é o padrão mais comum: no adolescente o mecanismo mais frequente é **varo ou valgo** com torção, que desvia a epífise no plano frontal;
+- reduz-se com **tração longitudinal seguida de flexão do joelho**, e manter a redução pode exigir **flexão importante**, nem sempre prudente com o joelho muito inchado e a poplítea em risco; por isso muitas vezes se fixa com pinos só para poder imobilizar em **leve flexão**.
+
+O desvio medial ou lateral grande ameaça o **nervo fibular**.
 
 A sequência no pé sem perfusão é objetiva:
 
@@ -127,10 +135,10 @@ A sequência no pé sem perfusão é objetiva:
 
 A síndrome compartimental é rara (1,2% numa série) e tende a aparecer horas depois, sobretudo com fratura da tíbia associada ou vascularização comprometida.
 
-!questoes treino=pediatria-1098,pediatria-1106
-conceito: Desvio anterior da epífise (hiperextensão) ameaça a artéria poplítea; com o pé sem perfusão, reduzir e fixar primeiro e explorar se a perfusão não voltar em 15 a 20 minutos.
-como: Questões de projeção sobre a direção de risco e a sequência de conduta; o raciocínio da hiperextensão já caiu na tíbia proximal (TARO 2017, `pediatria-0616`).
-armadilha: Pedir arteriografia antes da redução, ou fazer o reparo vascular antes de estabilizar a fratura.
+!questoes central=trauma-0770 treino=pediatria-1098,pediatria-1106
+conceito: Desvio anterior da epífise (hiperextensão) ameaça a artéria poplítea; reduz-se com tração e flexão, não em extensão, e não é o desvio mais comum (varo e valgo predominam); com o pé sem perfusão, reduzir e fixar primeiro e explorar se a perfusão não voltar em 15 a 20 minutos.
+como: O TEPOP 2024 mostrou o perfil de um descolamento da fise distal do fêmur com a epífise para a frente e pediu a afirmação correta (grande risco de lesão neurovascular); o raciocínio da hiperextensão já caiu na tíbia proximal (TARO 2017, `pediatria-0616`).
+armadilha: Achar que a epífise anterior reduz em extensão ou vem de hiperflexão; pedir arteriografia antes da redução, ou fazer o reparo vascular antes de estabilizar a fratura.
 !fim
 
 ## O nervo fibular, por tração
@@ -294,7 +302,7 @@ armadilha: Acertar o lado da parada e inverter a deformidade.
 
 Só **22%** dos pacientes ficam com discrepância maior que 1,5 cm, porque muitos fraturam perto do fim do crescimento. Na parada completa, a discrepância final é estimada por métodos que não exigem medidas seriadas (PALEY, MENELAUS): **epifisiodese femoral distal contralateral** se a discrepância projetada passar de **2 a 2,5 cm** na criança mais velha; acima de 2,5 cm, planeja-se o **alongamento**.
 
-!questoes relacionadas=pediatria-0641 treino=pediatria-1105
+!questoes central=pediatria-0641 treino=pediatria-1105
 conceito: Ressecar a ponte quando ela ocupa menos de 50% da fise e restam pelo menos 2 anos de crescimento; com pouco crescimento, hemiepifisiodese e epifisiodese contralateral.
 como: O TARO 2019 perguntou a causa de ponte com melhor resultado após a ressecção (trauma); o critério de indicação é o da 10ª edição.
 armadilha: Indicar ressecção de ponte grande ou no fim do crescimento.

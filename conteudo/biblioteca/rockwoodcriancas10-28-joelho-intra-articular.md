@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-28-joelho-intra-articular
-versao: 2
+versao: 3
 titulo: Lesões intra-articulares do joelho na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,8 +8,8 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 28 · Intra-Articular Injuries of the Knee
 autores: Dennis E. Kramer e Mininder S. Kocher
-fonte: Livro conferido localmente em 28/10/2026 e relido por inteiro em 31/10/2026, capítulo 28, com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38 (pp. 1451 a 1461) e cap. 56 (pp. 2380 a 2383). O PDF do Rockwood não traz numeração impressa; as referências dele citam capítulo, seção, figura, tabela e algoritmo.
-subtemas: Joelho da criança
+fonte: Livro conferido localmente em 28/10/2026 e relido por inteiro em 31/10/2026, capítulo 28, com o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38 (pp. 1451 a 1461) e cap. 56 (pp. 2380 a 2383), e o Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 30, fraturas da patela (pp. 1344 a 1346, a 1345 inferida). O PDF do Rockwood não traz numeração impressa; as referências dele citam capítulo, seção, figura, tabela e algoritmo.
+subtemas: Joelho da criança; Trauma pediátrico
 resumo: Espinha tibial (avulsão condroepifisária, valgo com rotação externa, osso mais fraco que o LCA, MEYERS e MCKEEVER e ZARICZNYJ, menisco medial encarcerado em 26% e 65%, menisco lateral roto, extensão completa por 6 semanas no tipo I, redução fechada em 50% do II e 0% do III, parafuso epifisário ou sutura, LACHMAN positivo sem instabilidade, artrofibrose, perda da extensão, ruptura tardia do LCA); luva patelar; fratura osteocondral (faceta medial e côndilo lateral, radiografia perde 36%, 5 mm); luxação da patela (PARIKH, LPFM 60%, ângulo Q e TT-TG, conservador 60% a 70%, LPFM epifisário, osteotomia só com apófise fechada); hemartrose e LCA; colaterais; LCA no imaturo por grupo de crescimento; LCP; luxação do joelho e índice tornozelo-braquial.
 ---
 
@@ -23,7 +23,7 @@ O capítulo tem quatro blocos de tamanhos muito diferentes:
 - as **fraturas osteocondrais** e a **luxação da patela**, que andam juntas, porque a luxação aguda é a causa mais comum do fragmento osteocondral;
 - as **lesões ligamentares e a luxação do joelho**, que crescem na prática e no capítulo, com a reconstrução do LCA no esqueleto imaturo como peça central.
 
-A banca já cobrou da espinha tibial a **classificação de MEYERS e MCKEEVER** numa figura, o **mecanismo** (duas vezes, com gabaritos que divergem do livro), a **lesão associada** mais comum e, três vezes, a **perda da extensão** como complicação ou prejuízo funcional. Do LCA no imaturo, uma questão antiga em Certo ou Errado. Os outros blocos ainda não apareceram nas provas analisadas, mas estão no mesmo capítulo e entram nas projeções.
+A banca já cobrou da espinha tibial a **classificação de MEYERS e MCKEEVER** numa figura, o **mecanismo** (duas vezes, com gabaritos que divergem do livro), a **lesão associada** mais comum e, três vezes, a **perda da extensão** como complicação ou prejuízo funcional. Do LCA no imaturo, uma questão antiga em Certo ou Errado; da luva da patela, o TEPOP 2024. Os outros blocos ainda não apareceram nas provas analisadas, mas estão no mesmo capítulo e entram nas projeções.
 
 Um fio liga o capítulo inteiro: no joelho da criança, **o elo mais fraco muda com a idade**. A espinha ainda pouco ossificada cede antes do LCA; a junção osteocondral do adolescente cede antes da cartilagem; a fise cede antes do ligamento na luxação do joelho. Quem entende onde está o elo fraco em cada idade acerta o mecanismo, a lesão e a escolha da técnica.
 
@@ -47,7 +47,7 @@ Dois detalhes explicam por que algumas crianças rompem o ligamento em vez de fr
 
 Os dados recentes confirmam a mudança de padrão. Num grande pronto-socorro pediátrico, em 12 anos, os casos de fratura da espinha tibial aumentaram **1%**, e os de ruptura do LCA, **11%**.
 
-!questoes central=pediatria-0624,pediatria-0693 treino=pediatria-1300
+!questoes central=pediatria-0624 relacionadas=pediatria-0693 treino=pediatria-1300
 conceito: A espinha tibial é a avulsão condroepifisária do LCA; o mecanismo mais comum é o valgo forçado com rotação externa da tíbia, e o osso pouco ossificado cede antes do ligamento.
 como: TARO 2018 perguntou os mecanismos mais comuns entre combinações de flexão ou hiperextensão com rotação medial ou lateral; TARO 2014 perguntou o mecanismo mais comum entre hiperflexão, hiperextensão, varo com rotação medial e valgo com rotação lateral.
 armadilha: Marcar hiperextensão como o mecanismo mais comum só porque a lesão "parece" do LCA; o capítulo a lista entre os possíveis, não como o principal.
@@ -261,40 +261,38 @@ O tratamento da rigidez segue o tempo:
 | Pseudartrose | Tratamento conservador, criança nova | Nova fixação ou retirada do fragmento |
 !fim
 
-!questoes central=pediatria-0711,pediatria-0700 relacionadas=pediatria-0735 treino=pediatria-1305
+!questoes central=pediatria-0711 relacionadas=pediatria-0700,pediatria-0735 treino=pediatria-1305
 conceito: A artrofibrose é a complicação mais comum da espinha tibial, e o movimento precoce a previne; a consolidação viciosa com o fragmento elevado causa bloqueio mecânico da extensão, o maior prejuízo funcional.
 como: TEOT 2024 perguntou o que mais se associa ao maior prejuízo funcional (gabarito perda da extensão total); TEOT 2022 perguntou em que direção a mobilidade se perde com mais frequência (gabarito extensão); TARO 2007 perguntou a principal implicação da consolidação viciosa.
 armadilha: Responder instabilidade residual como o maior prejuízo; ela é comum no exame, mas raramente dá sintomas.
 alerta: O TARO 2007 (`pediatria-0735`) está sem gabarito oficial no acervo; o capítulo sustenta a limitação da extensão como principal implicação da consolidação viciosa.
 !fim
 
-# Fratura em luva da patela {radar=oportunidade}
+# Fratura em luva da patela {radar=confirmado}
 
-A fratura em luva (sleeve fracture) é a **fratura de patela mais comum do adolescente** com crescimento restante. O mecanismo é a **contração súbita do quadríceps com o joelho fletido**, como no salto ou na aterrissagem. É uma lesão por **cisalhamento**: o **periósteo grosso** do adolescente continua preso ao tendão patelar e ao mecanismo extensor e se descola da sua inserção mais fraca no osso da patela, levando uma **luva de cartilagem** do **polo inferior**. A patela sobe.
+A fratura em luva (sleeve fracture) é a **fratura de patela mais comum do adolescente** com crescimento restante. O mecanismo é **indireto**: **contração súbita do quadríceps com o joelho fletido**, no salto ou na aterrissagem. É uma lesão por **cisalhamento**: o **periósteo grosso** continua preso ao tendão patelar e se descola da inserção mais fraca no osso, levando uma **luva de cartilagem** do **polo inferior**. A patela sobe (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28, seção Introduction to Patellar Sleeve Fractures).
 
-**Diagnóstico.** A radiografia em **perfil** mostra **patela alta** e, às vezes, uma pequena ossificação distal, presa ao periósteo intacto junto ao tendão patelar (Fig. 28-14). O exame é o que mais pesa:
-- joelho muito inchado, muitas vezes mantido em **flexão**;
-- **incapacidade de elevar a perna estendida**, sinal de que o mecanismo extensor está interrompido;
-- dor a qualquer movimento.
+**Onde ocorre.** O Rockwood fala só do polo inferior. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 30, p. 1345), completa a ordem: a avulsão é **mais comum no polo inferior**, pode ocorrer no **polo superior** e, na **margem medial**, aparece com a **luxação da patela**. O mesmo livro diz que a luva inferior vem quase sempre da **contração excêntrica** do quadríceps, e só às vezes do trauma direto; a superior costuma vir de golpe direto.
 
-Se o perfil é duvidoso, a **ressonância** mostra o desvio e a integridade do mecanismo extensor. O Campbell 15 (cap. 38, Figs. 38.147 e 38.148, p. 1454) dá a imagem que se deve guardar: a luva grande de cartilagem aparece na radiografia **só como um floco de osso** e **parece benigna**; a ressonância revela a extensão real.
+**Diagnóstico.** A radiografia em **perfil** mostra **patela alta** e, às vezes, uma pequena ossificação distal presa ao tendão patelar (Fig. 28-14). O exame pesa mais: joelho muito inchado, muitas vezes em **flexão**, **incapacidade de elevar a perna estendida** e dor a qualquer movimento. Se o perfil é duvidoso, a **ressonância** mostra o desvio e o mecanismo extensor. O Campbell 15 (cap. 38, Figs. 38.147 e 38.148, p. 1454) lembra que a luva grande aparece **só como um floco de osso** e **parece benigna**.
+
+**O diagnóstico diferencial.** O Tachdjian (pp. 1345 e 1346) cita os **centros de ossificação acessórios** (em geral na face anterior do polo distal) e a **SINDING-LARSEN-JOHANSSON**, lesão de sobrecarga com pequenas calcificações no tendão patelar. O que os separa da luva é a **radiografia**: nenhum dos dois tem **patela alta**. A ressonância entra para o perfil duvidoso, não como o critério da diferença.
 
 !figura 28-14 imagem=pediatria/rwc10-28-14.jpeg
 Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28, Fig. 28-14. Fratura em luva da patela no perfil: patela alta e pequena lasca do polo inferior presa ao tendão patelar.
 !fim
 
 **Tratamento.**
-- **Sem desvio ou com desvio mínimo**, e com o mecanismo extensor íntegro (o paciente **eleva a perna estendida**): gesso ou órtese travada em **extensão**.
-- **Com desvio importante**, principalmente se **não eleva a perna estendida**: **reparo cirúrgico**. Os passos são a **redução anatômica** da luva, para devolver a congruência à cartilagem e a tensão correta ao mecanismo extensor; o reparo das lesões associadas, como as rupturas do retináculo e os fragmentos soltos; e uma fixação satisfatória no fragmento distal, que tem pouco osso. O capítulo descreve **suturas transósseas** pela patela com ponto de **KRACKOW** no tendão, seguidas de imobilização e movimento progressivo.
+- **Sem desvio ou com desvio mínimo**, e o paciente **eleva a perna estendida**: gesso ou órtese travada em **extensão**.
+- **Com desvio importante**, sobretudo se **não eleva a perna estendida**: **reparo cirúrgico**, com **redução anatômica** da luva, reparo do retináculo e fixação no fragmento distal, que tem **pouco osso**. O Rockwood descreve **suturas transósseas** com ponto de **KRACKOW** no tendão, gesso ou órtese em extensão e carga e movimento progressivos só quando a radiografia mostra consolidação (seção Operative Repair of Patellar Sleeve Fractures). O Tachdjian (p. 1346) usa sutura inabsorvível até 10 anos e **banda de tensão com fios de KIRSCHNER** acima disso; o Campbell 15 descreve parafusos canulados com banda de tensão **quando há osso suficiente**. Parafuso de tração com carga precoce não é a regra de nenhum dos três, porque o fragmento distal é quase só cartilagem.
 
-O Campbell 15 descreve a técnica de HOUGHTON e ACKROYD, com parafusos canulados e banda de tensão quando há osso suficiente, e lembra que, por haver um fragmento grande de cartilagem preso à lasca, a **redução anatômica é obrigatória** nas desviadas. A consolidação viciosa pode **doer** e exigir a retirada do fragmento distal; se a luva veio de uma luxação da patela, a consolidação com a patela **alongada** pode favorecer a luxação recorrente.
+Complicações: **artrofibrose**, **déficit de extensão** e **diagnóstico tardio**, o erro mais comum.
 
-Complicações descritas no capítulo: **artrofibrose**, **déficit de extensão** ativa e **diagnóstico tardio**, que é o erro mais comum, porque a lasca pequena tranquiliza quem olha só a radiografia.
-
-!questoes treino=pediatria-1308
-conceito: A fratura em luva é a fratura de patela mais comum do adolescente: quadríceps contra joelho fletido, patela alta, lasca pequena no polo inferior e incapacidade de elevar a perna estendida; a desviada se repara.
-como: Questão de projeção; a luva é a armadilha clássica da radiografia pediátrica, lasca pequena e lesão grande.
-armadilha: Diagnosticar SINDING-LARSEN-JOHANSSON ou contusão pela lasca pequena e perder a ruptura do mecanismo extensor.
+!questoes central=trauma-0769 treino=pediatria-1308
+conceito: A luva é a fratura de patela mais comum do adolescente: contração do quadríceps com joelho fletido, polo inferior (depois o superior; a medial vem com a luxação), patela alta e incapacidade de elevar a perna estendida; a desviada se repara com sutura ou banda de tensão.
+como: O TEPOP 2024 pediu a afirmativa correta sobre a fratura em luva (polo inferior, depois superior e, por fim, medial).
+armadilha: Achar que o trauma direto é o mecanismo mais comum, que a ressonância é o que separa a luva da SINDING-LARSEN-JOHANSSON (é a patela alta na radiografia) ou que se fixa com parafuso de tração.
+alerta: O Rockwood and Wilkins' Fractures in Children, 10ª ed., não traz a ordem polo inferior, superior e medial cobrada em `trauma-0769`; ela vem do Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 30, p. 1345), que sustenta o gabarito oficial (A).
 !fim
 
 # Fraturas osteocondrais: mecanismo e diagnóstico {radar=oportunidade}
@@ -345,7 +343,7 @@ Cada fratura osteocondral é única, e o tratamento se individualiza pela idade 
 
 Na fratura que veio de luxação da patela, o reparo do retináculo medial ou a **reconstrução do LPFM** no mesmo tempo pode diminuir a recidiva. O reparo simples tem evidência conflitante; a reconstrução tem dados melhores. O estudo prospectivo de GURUSAMY, com 76 adolescentes com luxação e corpo livre, comparou reconstrução do LPFM, reparo ou nada: com a reconstrução, menos instabilidade recorrente (**10,0% contra 58,7%**), menos novas cirurgias (**6,7% contra 47,8%**) e mais volta ao esporte (**66,7% contra 39,1%**).
 
-**Técnica.** A artroscopia diagnóstica avalia a cartilagem da patela e do côndilo, o alinhamento e os corpos livres. As fraturas da **faceta medial da patela** se fixam por liberação lateral aberta, inclinando a patela, ou, mais comumente, por liberação lateral artroscópica com **artrotomia parapatelar medial**, evertendo a patela com dois fios de KIRSCHNER temporários; essa via também permite tensionar o reparo medial ou reconstruir o LPFM (Fig. 28-19). As do **côndilo femoral lateral** pedem **artrotomia parapatelar lateral** (Fig. 28-20). O fragmento e o leito são desbridados até osso sadio, o leito pode ser perfurado para sangrar, e o fragmento é reduzido anatomicamente. Às vezes ele **incha** e fica maior que o leito: apara-se a cartilagem menos importante com bisturi ou se rebaixa mais o leito.
+**Técnica.** Artroscopia diagnóstica primeiro. A faceta medial da patela se fixa, mais comumente, por liberação lateral artroscópica com **artrotomia parapatelar medial**, que também permite reparar ou reconstruir o LPFM (Fig. 28-19); o côndilo femoral lateral, por **artrotomia parapatelar lateral** (Fig. 28-20). Leito e fragmento são desbridados até osso sadio e reduzidos anatomicamente; o fragmento que **incha** e não cabe no leito é aparado ou o leito é rebaixado.
 
 A escolha do implante segue o osso que o fragmento carrega:
 - osso subcondral **grosso**: **parafusos sem cabeça** de compressão, que permitem movimento precoce;
@@ -363,16 +361,16 @@ A escolha do implante segue o osso que o fragmento carrega:
 | Parada de crescimento | Implantes curtos, sem cruzar a fise distal do fêmur |
 !fim
 
-**Pós-operatório.** Depois da retirada, movimento imediato e carga conforme a tolerância. Depois da **fixação**, carga protegida com órtese até consolidar, movimento de **0 a 30 graus** nas 2 primeiras semanas e progressão gradual; a consolidação costuma ocorrer entre **6 e 12 semanas**. Na microfratura de área de carga, a carga atrasa e se pode usar movimento passivo contínuo. Com parafuso metálico, faz-se uma **artroscopia de revisão** para confirmar a consolidação e retirar o implante.
+**Pós-operatório.** Depois da retirada, movimento imediato. Depois da **fixação**, carga protegida, movimento de **0 a 30 graus** nas 2 primeiras semanas, consolidação em **6 a 12 semanas**; com parafuso metálico, artroscopia de revisão para retirar o implante.
 
 **Resultados.** Fragmentos pequenos fora da área de carga vão bem após a retirada. A **retirada de fragmentos grandes da área de carga** leva previsivelmente a **degeneração**. A fixação que consolida com superfície congruente dá o melhor prognóstico a longo prazo, embora mesmo esses joelhos possam ter crepitação e rigidez. As lesões dos **côndilos em área de carga** tiveram escores piores que as da patela ou fora da carga.
 
-**Complicações.** A mais comum após luxação com fratura osteocondral é a **instabilidade recorrente da patela**; depois vêm a **rigidez** (órtese dinâmica e fisioterapia nos primeiros 3 a 4 meses, liberação artroscópica e manipulação depois, sem forçar a fise), a **pseudartrose**, a **artrose** e os problemas de implante: cabeça de parafuso saliente que risca a cartilagem, implante bioabsorvível que solta, quebra ou provoca sinovite e derrame estéril. A retirada de fragmento grande de área de carga pede reconstrução da cartilagem (microfratura, mosaicoplastia, implante de condrócitos), com resultados piores na femoropatelar do que na tibiofemoral.
+**Complicações.** A mais comum após luxação com fratura osteocondral é a **instabilidade recorrente da patela**; depois vêm **rigidez**, **pseudartrose**, **artrose** e problemas de implante (cabeça saliente que risca a cartilagem, bioabsorvível que solta ou provoca sinovite). A retirada de fragmento grande de área de carga pede reconstrução da cartilagem, com resultados piores na femoropatelar.
 
 
 # Luxação da patela: quem, como e o que mais se lesa {radar=oportunidade}
 
-A instabilidade da patela vai da **luxação aguda traumática** à **subluxação crônica recorrente** do paciente frouxo. A incidência de primeira luxação lateral ajustada por idade e sexo é de **23,2 por 100.000** pessoas-ano, com idade média de 21,4 anos e **55%** em mulheres. Entre atletas do ensino médio, as maiores taxas estão na ginástica feminina, no futebol americano e na luta, e mais em competição do que em treino.
+A instabilidade da patela vai da **luxação aguda traumática** à **subluxação crônica recorrente** do paciente frouxo. A primeira luxação lateral tem incidência de **23,2 por 100.000** pessoas-ano, **55%** em mulheres.
 
 O capítulo separa dois perfis:
 - **luxação aguda traumática**: mais comum no **adolescente**; na criança menor, costuma ter **displasia femoropatelar** por trás;
@@ -390,7 +388,7 @@ O capítulo separa dois perfis:
 - deslocamento lateral (ângulo de congruência) e inclinação (ângulo femoropatelar lateral);
 - distância **TT-TG** (tuberosidade da tíbia ao sulco troclear).
 
-Quando há suspeita de anteversão femoral ou torção tibial, sequências que incluem o colo do fêmur e a tíbia distal medem a versão; a tomografia também serve. A **panorâmica dos membros em carga** avalia o **valgo**, importante porque o imaturo com valgo e instabilidade pode se beneficiar da **hemiepifisiodese** do fêmur distal.
+A **panorâmica em carga** avalia o **valgo**: o imaturo com valgo e instabilidade pode se beneficiar da **hemiepifisiodese** do fêmur distal.
 
 !tabela Classificação de PARIKH e LYKISSAS da instabilidade da patela (Tabela 28-2, cap. 28)
 | Tipo | Descrição | Subtipos |
@@ -401,7 +399,7 @@ Quando há suspeita de anteversão femoral ou torção tibial, sequências que i
 | IV | Patela luxada | A redutível; B irredutível |
 !fim
 
-Não existe classificação universal. DEJOUR separou três tipos pelo número de luxações e pelas alterações anatômicas; CHOTEL propôs cinco padrões clínicos pela idade; PARIKH e LYKISSAS propuseram a mais abrangente, com os tipos I e II do adolescente e os tipos III e IV da criança pequena. A luxação **medial** é raríssima e aparece após golpe medial ou **liberação lateral exagerada**. O desfecho principal é a **reluxação**; o IKDC médio após um episódio de instabilidade é de cerca de 50.
+Não existe classificação universal (DEJOUR, CHOTEL e a mais abrangente, de PARIKH e LYKISSAS). A luxação **medial** é raríssima e aparece após golpe medial ou **liberação lateral exagerada**.
 
 !questoes treino=pediatria-1469
 conceito: A luxação da patela rompe o LPFM, edemacia o vasto medial oblíquo e arranca um fragmento osteocondral em cerca de um terço, quase sempre da faceta medial da patela; a ressonância também mede os fatores de recidiva.
@@ -445,20 +443,18 @@ O resultado sem fratura osteocondral é **bom**: **60% a 70%** sem nova instabil
 - **distais ósseas**: osteotomia da tuberosidade da tíbia;
 - **distais de partes moles**: **ROUX-GOLDTHWAIT** (transferência medial parcial do tendão patelar) ou transferência completa do tendão.
 
-**Osteotomia da tuberosidade só no esqueleto maduro.** As opções são a medialização (**ELMSLIE-TRILLAT**), a anteriorização (**MAQUET**) e a anteromedialização (**FULKERSON**). Todas são **contraindicadas com a apófise da tuberosidade aberta**, pelo risco de **parada de crescimento** com **recurvato**. Na patela alta importante, alguns autores distalizam a tuberosidade. Os autores indicam a osteotomia associada à reconstrução do LPFM no maduro com ângulo Q muito anormal ou **TT-TG acima de 16 a 20 mm**; preferem a de FULKERSON quando há condrose da patela ou lesão osteocondral fixada. O Campbell 15 (cap. 38, p. 1452) dá a mesma regra para a fise aberta e descreve alternativas de partes moles, como o procedimento 3 em 1 de OLIVA (liberação lateral, avanço do vasto medial e transferência do terço medial do tendão patelar para o colateral medial) e a técnica de GRAMMONT.
+**Osteotomia da tuberosidade só no esqueleto maduro.** Medialização (**ELMSLIE-TRILLAT**), anteriorização (**MAQUET**) e anteromedialização (**FULKERSON**) são **contraindicadas com a apófise da tuberosidade aberta**, pelo risco de **parada de crescimento** com **recurvato**. No maduro, os autores a associam à reconstrução do LPFM com **TT-TG acima de 16 a 20 mm**. O Campbell 15 (cap. 38, p. 1452) dá a mesma regra para a fise aberta.
 
-**No imaturo**, a tenodese do semitendíneo de **GALEAZZI** e o **ROUX-GOLDTHWAIT** foram os procedimentos tradicionais, mas estudos recentes mostram resultados menos favoráveis do que os relatados antes, o que aumentou o interesse na reconstrução do LPFM na criança.
+**No imaturo**, GALEAZZI e ROUX-GOLDTHWAIT foram os procedimentos tradicionais, mas com resultados recentes menos favoráveis, o que levou à reconstrução do LPFM na criança.
 
-**Reconstrução do LPFM com a fise aberta.** Havia dados conflitantes sobre a relação entre a inserção femoral do LPFM e a fise distal do fêmur, e complicações ligadas à fixação femoral. Hoje, com técnica correta, a reconstrução é **segura e eficaz** no adolescente com fise aberta. Os pontos técnicos dos autores:
+**Reconstrução do LPFM com a fise aberta.** Com técnica correta, é **segura e eficaz** no adolescente. Os pontos técnicos dos autores:
 - fixação femoral **epifisária, distal à fise**: dá enxerto **mais isométrico** e não lesa a fise;
-- localização no **ponto de SCHÖTTLE**, com radioscopia em **perfil perfeito**;
 - no imaturo, **âncora** ou sutura no periósteo; perto da maturidade, túnel curto com parafuso de interferência;
-- na patela, uma âncora no terço proximal para o ramo maior do aloenxerto de flexor dobrado; o outro ramo passa pelo tendão quadricipital, reproduzindo o ligamento quadricipital-femoral medial (MQTFL);
 - teste de **isometria** antes de fixar: o enxerto deve ficar isométrico ou **afrouxar levemente na flexão**, nunca apertar;
 - o LPFM reconstruído funciona como **freio de 0 a 30 graus**, sem aumentar a pressão femoropatelar medial;
 - **hemiepifisiodese medial** associada se houver **valgo** importante.
 
-A fixação **proximal à fise** faz o enxerto **apertar na flexão** e, com o crescimento, **bloquear a flexão**. Os resultados no imaturo são bons: uma revisão de **132** reconstruções teve **3,8%** de reluxação e **nenhum fechamento precoce da fise** em quase 5 anos; outras séries tiveram de 0% a 12,5% de recidiva, sem distúrbio de crescimento.
+A fixação **proximal à fise** faz o enxerto **apertar na flexão** e, com o crescimento, **bloquear a flexão**. Numa revisão de **132** reconstruções no imaturo, **3,8%** de reluxação e **nenhum fechamento precoce da fise**.
 
 !questoes treino=pediatria-1310,pediatria-1311,pediatria-1470
 conceito: Primeira luxação sem fragmento vai sem cirurgia (60% a 70% de sucesso); na recorrente do imaturo, reconstrói-se o LPFM com fixação femoral distal à fise, e a osteotomia da tuberosidade fica para a apófise fechada, pelo risco de recurvato.
@@ -466,15 +462,13 @@ como: Questões de projeção; a instabilidade da patela é o tema de joelho ped
 armadilha: Fixar o enxerto proximal à fise ou indicar ELMSLIE-TRILLAT, MAQUET ou FULKERSON com a apófise da tuberosidade aberta.
 !fim
 
-**Pós-operatório e complicações.** Depois da reconstrução do LPFM ou da plicatura medial: órtese articulada de **0 a 30 graus** e carga protegida por 2 semanas, progressão entre a 3ª e a 6ª semana e arco completo na 6ª. Depois da osteotomia, 0 a 30 graus e carga protegida por 6 semanas. Corrida em linha reta aos **3 meses** e volta ao esporte em **4 a 6 meses**, com arco completo e força simétrica.
+**Pós-operatório e complicações.** Órtese de **0 a 30 graus** e carga protegida por 2 semanas (6 semanas após osteotomia); volta ao esporte em **4 a 6 meses**.
 
-As complicações são **artrofibrose**, **subluxação** e **reluxação**. A recidiva é maior após **liberação lateral isolada**, sem reparo medial, e a liberação exagerada pode causar **instabilidade medial** iatrogênica. Uma série de 179 reconstruções do LPFM em jovens teve **16%** de complicações (instabilidade recorrente, rigidez em flexão, **fratura da patela**, dor ou artrose femoropatelar); **47%** delas eram técnicas e evitáveis, e o sexo feminino e a reconstrução bilateral foram fatores de risco. O enxerto **tenso demais** aumenta a pressão na cartilagem medial e pode levar à artrose. Para evitar a fratura da patela, os autores contraindicam túneis **longos (mais de 20 mm)**, **largos (mais de 5 mm)**, oblíquos, transpatelares completos ou múltiplos. Depois da osteotomia, foram descritas pseudartrose, dor pelo implante, lesão neurovascular e síndrome compartimental.
+As complicações são **artrofibrose**, **subluxação** e **reluxação**, maior após **liberação lateral isolada**. Numa série de 179 reconstruções do LPFM, **16%** de complicações, **47%** delas técnicas e evitáveis; para evitar a **fratura da patela**, nada de túneis **longos (mais de 20 mm)**, largos, transpatelares completos ou múltiplos.
 
 # Hemartrose e lesões ligamentares {radar=oportunidade}
 
 As lesões ligamentares do joelho da criança, antes consideradas raras, são vistas com frequência cada vez maior, pela participação maior e mais competitiva no esporte e pela atenção maior do médico. A **ruptura do LCA** aparece em **10% a 65%** das crianças com **hemartrose aguda traumática**, conforme a série. STANITSKI, em 70 crianças e adolescentes com hemartrose aguda, achou lesão do LCA na artroscopia em **47%** dos de **7 a 12 anos** e em **65%** dos de **13 a 18**.
-
-O padrão de lesão depende da carga e da anatomia em desenvolvimento. A frouxidão ligamentar da criança protege um pouco; a carga rápida favorece a lesão ligamentar, e a lenta, a fratura; a incisura que estreita com o desenvolvimento predispõe à lesão ligamentar. Fratura e lesão ligamentar podem coexistir.
 
 **Mecanismos por idade e ligamento.**
 - Na criança **menor**, a lesão ligamentar costuma vir com **politrauma**.
@@ -488,9 +482,9 @@ O padrão de lesão depende da carga e da anatomia em desenvolvimento. A frouxid
 
 **Associações.** LCA com **menisco** (mais o **lateral** na fase aguda) e **colateral medial**; colateral medial com **luxação da patela**, pelo mesmo valgo; **canto posterolateral com LCP**.
 
-**Exame.** A hemartrose aguda sugere ruptura de cruzado, fratura osteocondral (em geral com luxação da patela), lesão periférica do menisco na zona vascular ou ruptura da cápsula profunda. A **ausência** de hemartrose **não** garante lesão leve: na ruptura completa, o sangue escapa para as partes moles. Palpam-se as origens e inserções dos colaterais; um defeito pode ser sentido na avulsão tibial do medial ou fibular do lateral. Começar pelo joelho **sadio** acalma a criança e dá a referência de frouxidão, que varia com a idade. O estresse em **valgo e varo** se faz a **20 graus** e em **extensão completa**; abertura em extensão sugere cruzado roto junto (Fig. 28-27). Para o LCA, a gaveta anterior é a manobra clássica, e o **LACHMAN** e o **pivot-shift** são mais sensíveis no adolescente relaxado. Para o LCP, **gaveta posterior**, teste do quadríceps ativo e **sinal da posteriorização** (Figs. 28-28 e 28-29).
+**Exame.** A **ausência** de hemartrose **não** garante lesão leve: na ruptura completa, o sangue escapa para as partes moles. Começar pelo joelho **sadio**, que dá a referência de frouxidão. O estresse em **valgo e varo** se faz a **20 graus** e em **extensão completa**; abertura em extensão sugere cruzado roto junto. Para o LCA, **LACHMAN** e **pivot-shift**; para o LCP, **gaveta posterior** e **sinal da posteriorização**.
 
-**Imagem.** AP e perfil em toda suspeita, procurando fratura fisária ou epifisária oculta, avulsões e a **espinha tibial** na incisura. Uma lasca do fêmur medial ou da tíbia proximal sugere lesão do colateral medial; da epífise fibular ou do fêmur lateral, do colateral lateral. A **ressonância** confirma o diagnóstico incerto ou acrescenta o que muda o tratamento: colaterais, cruzados, canto posterolateral, contusões, cartilagem e meniscos.
+**Imagem.** AP e perfil procuram fratura fisária oculta, avulsões e a **espinha tibial**; a **ressonância** confirma o diagnóstico incerto e mostra colaterais, cruzados, canto posterolateral, cartilagem e meniscos.
 
 !tabela Graus da lesão ligamentar (cap. 28)
 | Grau | O que rompe | Abertura no estresse | Estabilidade |
@@ -499,8 +493,6 @@ O padrão de lesão depende da carga e da anatomia em desenvolvimento. A frouxid
 | 2 | Mais fibras | 5 a 10 mm | Assimetria com o outro lado, instabilidade mínima |
 | 3 | Ruptura completa | Mais de 10 mm | Instabilidade grosseira |
 !fim
-
-A classificação anatômica descreve onde rompeu (avulsão femoral, substância média, avulsão tibial ou fibular; Figs. 28-30 e 28-31), e a de instabilidade descreve a direção: em um plano, rotatória (anteromedial, anterolateral, posterolateral, posteromedial) ou combinada.
 
 !questoes treino=pediatria-1471
 conceito: Derrame nas primeiras 2 horas após entorse é hemartrose, e a causa mais comum é a lesão do LCA (47% aos 7 a 12 anos e 65% aos 13 a 18 na série de STANITSKI); a ausência de hemartrose não garante lesão leve.
@@ -516,7 +508,7 @@ armadilha: Achar que a lesão ligamentar é rara antes dos 14 anos; o LCA cresce
 - **grau III com LCA**: reconstrução do LCA **sem reparo formal** do colateral, mas só depois de **4 a 6 semanas**, e com a estabilidade medial **confirmada sob anestesia**; órtese articulada no pós-operatório inicial;
 - cirurgia do colateral medial isolado é **rara**: reparo agudo na avulsão óssea grande, muito desviada, com instabilidade importante; reconstrução na instabilidade em valgo crônica e sintomática.
 
-**Colateral lateral** (Algorithm 28-6): o grau III é **raríssimo** na criança. Às vezes aparece o **sinal da cápsula lateral** na radiografia. O ligamento costuma avulsionar da **epífise proximal da fíbula**, com ou sem lasca cortical; lesões proximais e intersticiais são incomuns. Isolado, trata-se como o medial: órtese articulada por **6 semanas** no grau III. Reparo agudo na avulsão óssea grande desviada ou com canto posterolateral num joelho instável. Com LCA e colateral lateral grau 1 ou 2: reconstrução do LCA sem reparo, depois de 4 a 6 semanas e confirmando a estabilidade. Com **avulsão completa** do lateral e LCA roto: reparo do lateral com a reconstrução do LCA entre **2 e 4 semanas**, equilibrando cicatrização e risco de artrofibrose; se atrasou e o tecido é ruim, reconstrução do canto posterolateral e do colateral lateral com aloenxerto.
+**Colateral lateral** (Algorithm 28-6): o grau III é **raríssimo** na criança; o ligamento costuma avulsionar da **epífise proximal da fíbula**. Isolado, trata-se como o medial (órtese articulada por **6 semanas** no grau III). Com **avulsão completa** do lateral e LCA roto, reparo do lateral com a reconstrução do LCA entre **2 e 4 semanas**.
 
 **LCP** (Algorithm 28-7): considerado raro, e a maioria dos relatos é de **avulsão óssea**. Na série de KOCHER de 26 joelhos até 18 anos, 15 foram operados por instabilidade grosseira: **67%** por **avulsão osteocondral** da tíbia ou do fêmur, 27% por ruptura ligamentar completa e 7% por ruptura parcial; **53%** tinham outra lesão ligamentar e **60%**, lesão meniscal. Os autores:
 - tratam a lesão **ligamentar pura isolada** do imaturo **sem cirurgia**, com órtese e fortalecimento do quadríceps;
@@ -545,7 +537,7 @@ O tratamento do LCA rompido na criança gira em torno de uma pergunta: **quanto 
 | Adolescente perto da maturidade | Técnica do adulto: parafuso de interferência, tendão patelar, quadricipital ou flexores | Pouco ou nenhum crescimento a perder |
 !fim
 
-**A técnica da banda iliotibial** (Fig. 28-32): o enxerto de banda iliotibial é **solto em cima** e **mantido preso no tubérculo de GERDY**; passa pelo joelho na posição **over-the-top** por trás, atravessa a articulação e sai **sob o ligamento intermeniscal** na frente, onde é fixado. O resultado é uma reconstrução **intra e extra-articular** sem tocar nas fises do fêmur e da tíbia. Para os autores, as consequências de um distúrbio de crescimento iatrogênico pela técnica transfisária nesses pacientes são **proibitivas**. Uma análise tridimensional do movimento mostrou cinética e cinemática normais e simétricas um ano depois, mantidas por até 20 anos, e um estudo em cadáver mostrou melhor estabilidade anteroposterior e rotacional que as técnicas epifisária e transfisária over-the-top.
+**A técnica da banda iliotibial** (Fig. 28-32): o enxerto é **solto em cima** e **mantido preso no tubérculo de GERDY**, passa **over-the-top** por trás e sai **sob o ligamento intermeniscal** na frente: reconstrução **intra e extra-articular** sem tocar nas fises. Para os autores, o risco de distúrbio de crescimento iatrogênico pela técnica transfisária nesses pacientes é **proibitivo**.
 
 !figura 28-32 imagem=pediatria/rwc10-28-32.jpeg
 Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 28, Fig. 28-32. Reconstrução do LCA poupadora da fise com banda iliotibial no pré-púbere: A, enxerto solto em cima e preso no tubérculo de GERDY; B, passagem over-the-top atrás; C, passagem sob o ligamento intermeniscal na frente; D, resultado intra e extra-articular.
@@ -584,8 +576,6 @@ A luxação aguda do joelho é **incomum na criança**, porque a força que luxa
 - **agudo**: redução sob anestesia; se houver reparo vascular de urgência, em geral **fasciotomias** juntas; a reconstrução ligamentar é **adiada**;
 - órtese com carga protegida e movimento limitado, ou **fixador externo** para proteger o reparo vascular;
 - reconstrução multiligamentar em cerca de **2 a 4 semanas**, conforme o padrão; depois disso, o reparo primário fica difícil pela cicatriz;
-- reconstrução em um tempo ou estagiada, artroscópica e aberta; reparo ou reconstrução dos colaterais, reconstrução dos cruzados rompidos na substância e reparo meniscal;
-- **aloenxerto** com frequência para LCP, colateral medial ou lateral, para reduzir o tempo de garrote e o trauma da retirada de enxertos;
 - no pós-operatório, **evitar imobilização prolongada**, pelo risco alto de **artrofibrose**: órtese articulada com movimento limitado e carga protegida, depois progressão.
 
 !questoes treino=pediatria-1314
@@ -601,8 +591,4 @@ O Campbell's Operative Orthopaedics, 15ª edição, trata o joelho da criança n
 - **Espinha tibial**: usa a classificação modificada de MEYERS e MCKEEVER com quatro tipos, o quarto como **tipo III com rotação** (Fig. 38.150, p. 1455); faz ressonância de **rotina**; imobiliza o tipo I e o II reduzido em **leve flexão** por cerca de 6 semanas e libera o arco completo em 10 a 12 semanas; repete o encarceramento em 26% e 65%.
 - **Artrofibrose**: **36%** com movimento após 4 semanas contra **0%** com movimento precoce (p. 1456).
 - **Consolidação viciosa**: **bloqueio da extensão**, tratado com desbridamento do fragmento ou **plastia da incisura**; frouxidão maior nos tipos III e IV; o leito pode ser rebaixado para tensionar o LCA (p. 1456).
-- **Luva patelar**: a luva grande de cartilagem parece só um floco de osso e **parece benigna** (Figs. 38.147 e 38.148, p. 1454); redução anatômica obrigatória nas desviadas.
-- **Luxação da patela**: recidiva de **15% a 75%**; fatores principais idade abaixo de 15 anos, displasia troclear, TT-TG e patela alta; volta ao esporte em 6 a 12 semanas; na fise aberta, nada de osteotomia da tuberosidade nem túnel que invada a fise distal do fêmur (pp. 1451 e 1452).
-- **Osteocondral**: em **mais da metade** das luxações agudas; radiografia perde **36%**; ressonância e artroscopia (pp. 1460 e 1461).
 - **Joelho flutuante**: fratura do fêmur e da tíbia do mesmo lado; classificação de LETTS em cinco tipos; pelo menos uma fratura fixada de forma rígida, e hoje em geral as duas; numa série multicêntrica de 130 pacientes, **93%** de resultados bons a excelentes com fixação moderna (p. 1461).
-- **LCA no imaturo**: KOCHER, GARG e MICHELI (banda iliotibial), ANDERSON (transepifisária com flexores) e AZAR e MILLER (parcialmente transepifisária), no capítulo 56 (pp. 2380 a 2383).

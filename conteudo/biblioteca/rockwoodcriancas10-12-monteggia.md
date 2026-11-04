@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-12-monteggia
-versao: 2
+versao: 3
 titulo: Fratura-luxação de MONTEGGIA na criança
 especialidade: pediatria
 acesso: gratis
@@ -9,7 +9,7 @@ edicao: 10ª edição (2025)
 capitulo: Capítulo 12 · Monteggia Fracture-Dislocation in Children
 autores: Peter M. Waters e Kenneth J. Noonan
 fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 12. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e algoritmo.
-subtemas: Fraturas do antebraço e punho na criança; Luxações na criança
+subtemas: Fraturas do antebraço e punho na criança; Luxações na criança; Trauma pediátrico
 resumo: BADO I anterior (70% a 75%), II posterior com imobilização em extensão, III lateral por varo com mais lesão do interósseo posterior, IV com o rádio; equivalentes e LETTS; tratamento pela ulna (plástica e galho verde fechada, transversa intramedular, oblíqua longa com placa); linha radiocapitelar e arco ulnar; luxação congênita da cabeça; ligamento anular interposto; MONTEGGIA crônico com osteotomia da ulna; BELL TAWSE; nervos, síndrome compartimental e ossificação.
 ---
 
@@ -69,7 +69,7 @@ Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fi
 
 **Tipo IV.** Luxação **anterior** da cabeça com fratura da **ulna e do rádio**. Na descrição original, o rádio quebra **no mesmo nível ou distal** à fratura da ulna. É **relativamente raro** na criança.
 
-!questoes central=pediatria-0724,pediatria-0929 relacionadas=pediatria-0930 treino=pediatria-1285,pediatria-1286,pediatria-1289
+!questoes central=pediatria-0724 relacionadas=pediatria-0929,pediatria-0930 treino=pediatria-1285,pediatria-1286,pediatria-1289
 conceito: BADO classifica pela direção da cabeça e pelo ápice da ulna: I anterior (70% a 75%), II posterior com ulna metafisária (6%, mais velhos), III lateral em varo (segundo), IV anterior com o rádio no mesmo nível ou distal (raro).
 como: TARO 2010 perguntou como é caracteristicamente a fratura da ulna no tipo II (metafisária proximal); SBOT-SP perguntou o que é o tipo IV (raro, rádio no mesmo nível ou distal à ulna).
 armadilha: Achar que o tipo II é o mais comum na criança, ou trocar "distal" por "proximal" no tipo IV.
@@ -111,7 +111,7 @@ Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12, Fi
 
 A utilidade da LETTS é clínica: a ordem A, B, C é também a ordem crescente de **instabilidade** da ulna, e é exatamente essa instabilidade que decide o tratamento, como se verá adiante.
 
-!questoes central=pediatria-0712,pediatria-0659 treino=pediatria-1290
+!questoes central=pediatria-0712 relacionadas=pediatria-0659 treino=pediatria-1290
 conceito: LETTS divide o BADO I pela ulna (A plástica, B galho verde, C completa) e chama de D o posterior e de E o lateral; os equivalentes incluem a luxação isolada da cabeça (com arco ulnar normal) e as fraturas do colo do rádio.
 como: TEOT 2024 perguntou a que corresponde o tipo B de LETTS (galho verde da ulna com luxação anterior da cabeça); TARO 2012 perguntou que tipo de MONTEGGIA é a fratura do colo do rádio desviada lateralmente com deformidade plástica em varo do olécrano (tipo III).
 armadilha: Trocar A (plástica) por B (galho verde), ou chamar de equivalente um BADO I com deformidade plástica sutil.
@@ -132,7 +132,7 @@ O tipo IV nasce do mesmo modo que o tipo I; a força anterior do fragmento dista
 
 **Tipo III.** WRIGHT descreveu a queda com a mão apoiada e uma força em **varo** no cotovelo: a ulna proximal dobra em **galho verde** com o ápice lateral, e a cabeça do rádio sai para o lado.
 
-!questoes central=pediatria-0924,pediatria-0930 treino=pediatria-1293,pediatria-1288
+!questoes central=pediatria-0924 relacionadas=pediatria-0930 treino=pediatria-1293,pediatria-1288
 conceito: Tipo I: hiperextensão (TOMPKINS), com o bíceps luxando a cabeça e a ulna falhando em tensão anterior; tipo II: carga longitudinal com o cotovelo a 60 graus (PENROSE); tipo III: varo, com galho verde da ulna proximal.
 como: SBOT-SP perguntou a que tipo corresponde a queda com o cotovelo fletido a 60 graus e carga longitudinal (tipo II); outra SBOT-SP perguntou o mecanismo do tipo III (varo, com fratura em galho verde da ulna proximal).
 armadilha: Trocar varo por valgo no tipo III, ou galho verde por fratura completa.
@@ -183,7 +183,7 @@ Uma cabeça do rádio fora do lugar sem trauma claro pode ser **congênita** ou 
 
 O capítulo dá uma regra de bolso: para não deixar passar um MONTEGGIA agudo, **toda luxação anterior da cabeça do rádio deve ser considerada traumática** até prova em contrário. A ulna é a testemunha: uma curvatura persistente ou uma consolidação viciosa indicam a origem traumática de uma luxação "isolada" da cabeça (Figs. 12-3 e 12-42). A ressonância ajuda nos casos duvidosos. A forma da cabeça é o argumento mais forte: a cabeça se molda contra o capítulo durante o crescimento; a que nunca esteve no lugar cresce **convexa** e deixa o capítulo **hipoplásico**, enquanto a que saiu do lugar depois de formada continua **côncava** por um bom tempo.
 
-!questoes central=pediatria-0091,pediatria-0656 treino=pediatria-1297
+!questoes central=pediatria-0091 relacionadas=pediatria-0656 treino=pediatria-1297
 conceito: A luxação congênita da cabeça do rádio é em geral posterior, com cabeça convexa e capítulo hipoplásico, às vezes bilateral; a luxação anterior deve ser tratada como traumática até prova em contrário.
 como: TEOT 2022 e TARO 2012 perguntaram a direção mais frequente da luxação congênita da cabeça do rádio (posterior).
 armadilha: Marcar anterior ou anterolateral, que é a direção típica do MONTEGGIA traumático.
@@ -263,7 +263,7 @@ armadilha: Imobilizar o tipo II em flexão, como o tipo I.
 alerta: O TARO 2006 (`pediatria-0831`) está sem gabarito oficial no acervo; o capítulo indica extensão, o que torna a afirmativa errada.
 !fim
 
-# Tipo III: extensão, valgo e atenção ao nervo {radar=clinico}
+# Tipo III: extensão, valgo e atenção ao nervo {radar=confirmado}
 
 A redução do tipo III **reverte o varo** (seção Nonoperative Treatment of Type III, Figs. 12-34 a 12-36):
 1. cotovelo em **extensão** com tração longitudinal;
@@ -277,12 +277,22 @@ Na imobilização:
 - **100 a 110 graus** de flexão na luxação **lateral pura ou anterolateral**; **70 a 80 graus** se houver componente **posterolateral**;
 - antebraço em geral em **supinação**, que tensiona o anular e a membrana interóssea; alguns preferem neutro para não perder a rotação.
 
-Qualquer desalinhamento da radiocapitelar em qualquer incidência sugere **partes moles interpostas** ou ulna ainda desviada. A **interposição é mais frequente no tipo III**, e a cirurgia chega a **12%** dos casos. Lembrar que o tipo III é o que mais lesa o **interósseo posterior**.
+Qualquer desalinhamento da radiocapitelar em qualquer incidência sugere **partes moles interpostas** ou ulna ainda desviada. A **interposição é mais frequente no tipo III**, e a cirurgia chega a **12%** dos casos.
 
 !questoes treino=pediatria-1288,pediatria-1453
 conceito: O tipo III reduz em extensão com valgo na ulna e se imobiliza com molde em valgo, em 100 a 110 graus na luxação lateral pura; até 10 graus de angulação da ulna são aceitos na criança menor.
 como: Questões de projeção; as provas cobraram o mecanismo do tipo III, não a imobilização.
 armadilha: Imobilizar em extensão como no tipo II, ou moldar em varo.
+!fim
+
+## O nervo do tipo III
+
+O Rockwood and Wilkins' Fractures in Children, 10ª ed., diz em dois lugares que as lesões do nervo radial, **sobretudo do ramo interósseo posterior**, são **mais frequentes no tipo III** do que nos outros tipos de MONTEGGIA (seções Type III Clinical Findings e Pathoanatomy, Nerves). O raciocínio é anatômico: o interósseo posterior contorna o **colo do rádio** e passa sob a **arcada de FROHSE**; quando o varo da ulna joga a cabeça para **lateral**, o nervo é estirado sobre ela. O quadro clínico do tipo III já aponta o risco: **edema lateral**, **varo do cotovelo** e perda de movimento, sobretudo da **supinação**. Por isso o exame motor (extensão das metacarpofalângicas e retropulsão do polegar) é obrigatório antes de qualquer manobra.
+
+!questoes central=trauma-0772
+conceito: O interósseo posterior se lesa mais no BADO III (luxação lateral da cabeça com ulna em varo), pela proximidade com a cabeça e o colo do rádio e pela arcada de FROHSE.
+como: O TEPOP 2024 perguntou em qual tipo de BADO a lesão do interósseo posterior é mais comum (tipo III).
+armadilha: Marcar o tipo I por ser o mais frequente; ele é o mais comum como fratura, mas o nervo sofre mais no tipo III.
 !fim
 
 # Tipo IV: fixar o rádio e transformar em tipo I {radar=oportunidade}

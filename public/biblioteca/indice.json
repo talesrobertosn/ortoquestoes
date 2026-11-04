@@ -23103,7 +23103,7 @@
   },
   {
    "id": "rockwoodcriancas10-12-monteggia",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Fratura-luxação de MONTEGGIA na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -23111,7 +23111,7 @@
    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
    "resumo": "BADO I anterior (70% a 75%), II posterior com imobilização em extensão, III lateral por varo com mais lesão do interósseo posterior, IV com o rádio; equivalentes e LETTS; tratamento pela ulna (plástica e galho verde fechada, transversa intramedular, oblíqua longa com placa); linha radiocapitelar e arco ulnar; luxação congênita da cabeça; ligamento anular interposto; MONTEGGIA crônico com osteotomia da ulna; BELL TAWSE; nervos, síndrome compartimental e ossificação.",
    "acesso": "gratis",
-   "minutos": 32,
+   "minutos": 33,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -23176,7 +23176,7 @@
     {
      "id": "tipo-iii-extensao-valgo-e-atencao-ao-nervo",
      "titulo": "Tipo III: extensão, valgo e atenção ao nervo",
-     "radar": "clinico"
+     "radar": "confirmado"
     },
     {
      "id": "tipo-iv-fixar-o-radio-e-transformar-em-tipo-i",
@@ -23230,6 +23230,7 @@
     "pediatria-0656",
     "pediatria-0539",
     "pediatria-0831",
+    "trauma-0772",
     "pediatria-0742"
    ],
    "treino": [
@@ -23254,7 +23255,8 @@
    ],
    "subtemas": [
     "Fraturas do antebraço e punho na criança",
-    "Luxações na criança"
+    "Luxações na criança",
+    "Trauma pediátrico"
    ]
   },
   {
@@ -24194,7 +24196,7 @@
   },
   {
    "id": "rockwoodcriancas10-26-fise-distal-femur",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fratura da fise distal do fêmur na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -24202,7 +24204,7 @@
    "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
    "resumo": "SALTER-HARRIS II em 57%, valgo e varo com o ligamento mais forte que a fise, cruzado anterior no tipo III do côndilo medial, artéria poplítea no desvio anterior, fibular por tração, distúrbio do crescimento em cerca de metade, pinos lisos por 4 semanas, 10 dias para remanipular, PARK-HARRIS e ponte menor que 50%.",
    "acesso": "gratis",
-   "minutos": 20,
+   "minutos": 21,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -24271,6 +24273,7 @@
     "pediatria-0559",
     "pediatria-0608",
     "pediatria-0590",
+    "trauma-0770",
     "pediatria-0065",
     "pediatria-0570",
     "pediatria-0825",
@@ -24294,7 +24297,8 @@
     "pediatria-1105"
    ],
    "subtemas": [
-    "Fraturas do fêmur e da perna na criança"
+    "Fraturas do fêmur e da perna na criança",
+    "Trauma pediátrico"
    ]
   },
   {
@@ -24435,7 +24439,7 @@
   },
   {
    "id": "rockwoodcriancas10-28-joelho-intra-articular",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Lesões intra-articulares do joelho na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -24443,7 +24447,7 @@
    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
    "resumo": "Espinha tibial (avulsão condroepifisária, valgo com rotação externa, osso mais fraco que o LCA, MEYERS e MCKEEVER e ZARICZNYJ, menisco medial encarcerado em 26% e 65%, menisco lateral roto, extensão completa por 6 semanas no tipo I, redução fechada em 50% do II e 0% do III, parafuso epifisário ou sutura, LACHMAN positivo sem instabilidade, artrofibrose, perda da extensão, ruptura tardia do LCA); luva patelar; fratura osteocondral (faceta medial e côndilo lateral, radiografia perde 36%, 5 mm); luxação da patela (PARIKH, LPFM 60%, ângulo Q e TT-TG, conservador 60% a 70%, LPFM epifisário, osteotomia só com apófise fechada); hemartrose e LCA; colaterais; LCA no imaturo por grupo de crescimento; LCP; luxação do joelho e índice tornozelo-braquial.",
    "acesso": "gratis",
-   "minutos": 49,
+   "minutos": 44,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -24498,7 +24502,7 @@
     {
      "id": "fratura-em-luva-da-patela",
      "titulo": "Fratura em luva da patela",
-     "radar": "oportunidade"
+     "radar": "confirmado"
     },
     {
      "id": "fraturas-osteocondrais-mecanismo-e-diagnostico",
@@ -24559,6 +24563,7 @@
     "pediatria-0711",
     "pediatria-0700",
     "pediatria-0735",
+    "trauma-0769",
     "pediatria-0824"
    ],
    "treino": [
@@ -24582,7 +24587,8 @@
     "pediatria-1314"
    ],
    "subtemas": [
-    "Joelho da criança"
+    "Joelho da criança",
+    "Trauma pediátrico"
    ]
   },
   {
