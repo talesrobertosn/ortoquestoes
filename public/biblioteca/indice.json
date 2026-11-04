@@ -9391,6 +9391,91 @@
    ]
   },
   {
+   "id": "dahlin-cordoma",
+   "versao": 1,
+   "titulo": "Cordoma",
+   "especialidade": "tumores",
+   "livro": "Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases",
+   "edicao": "6ª edição (2010)",
+   "capitulo": "Capítulo 21 · Chordoma",
+   "resumo": "Tumor maligno de baixo grau dos restos da notocorda, que mata pela invasão local; homem (2:1 a 3:1), raro antes dos 30, pico de 50 a 70 anos; linha média, sacrococcígeo primeiro, malignidade primária mais comum do sacro (na coluna o mieloma vem antes); dor lombar baixa, massa pré-sacral ao toque retal, parestesias tardias; lítica destrutiva com massa anterior e calcificação, escondida pelo gás intestinal na AP; células fisalíferas, queratina e brachyury; ressecção em bloco com margem ampla, S2 e S3 decidindo a continência, prótons na base do crânio; recidiva de 44%, metástase tardia.",
+   "acesso": "gratis",
+   "minutos": 39,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "da-notocorda-ao-tumor",
+     "titulo": "Da notocorda ao tumor",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quem-adoece-incidencia-sexo-e-idade",
+     "titulo": "Quem adoece: incidência, sexo e idade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "onde-o-cordoma-nasce",
+     "titulo": "Onde o cordoma nasce",
+     "radar": "confirmado"
+    },
+    {
+     "id": "maligno-benigno-agressivo-ou-de-baixo-grau",
+     "titulo": "Maligno, benigno agressivo ou de baixo grau?",
+     "radar": "fundamento"
+    },
+    {
+     "id": "quadro-clinico",
+     "titulo": "Quadro clínico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "imagem",
+     "titulo": "Imagem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "patologia-a-peca-e-a-lamina",
+     "titulo": "Patologia: a peça e a lâmina",
+     "radar": "fundamento"
+    },
+    {
+     "id": "diagnostico-diferencial",
+     "titulo": "Diagnóstico diferencial",
+     "radar": "clinico"
+    },
+    {
+     "id": "tratamento",
+     "titulo": "Tratamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "recidiva-metastase-e-prognostico",
+     "titulo": "Recidiva, metástase e prognóstico",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "tumores-0214",
+    "tumores-0096",
+    "tumores-0171",
+    "tumores-0034",
+    "tumores-0055"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Cordoma"
+   ]
+  },
+  {
    "id": "dahlin-encondroma",
    "versao": 1,
    "titulo": "Encondroma e encondromatoses",
@@ -14840,6 +14925,119 @@
    ],
    "subtemas": [
     "Vias de acesso à coluna"
+   ]
+  },
+  {
+   "id": "lw-artrites-inflamatorias-crianca",
+   "versao": 1,
+   "titulo": "Artrite idiopática juvenil e outras artrites da criança",
+   "especialidade": "pediatria",
+   "livro": "Lovell and Winter's Pediatric Orthopaedics",
+   "edicao": "7ª edição (2014), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (caps. 22 e 23), o Campbell's Operative Orthopaedics, 15ª ed. (caps. 7, 10, 23 e 25) e o Sizínio, Ortopedia e Traumatologia, 5ª ed. (caps. 15, 16 e 26)",
+   "capitulo": "Capítulo 11 · Juvenile Idiopathic Arthritis",
+   "resumo": "AIJ = artrite com mais de 6 semanas antes dos 16 anos (ILAR); oligoarticular é a mais comum, em meninas de 2 a 4 anos, FAN positivo em 70% e uveíte crônica assintomática (lâmpada de fenda a cada 3 meses no FAN positivo abaixo de 7 anos); poli FR positivo em adolescentes como a AR do adulto; sistêmica (STILL) com febre cotidiana, exantema salmão e ativação macrofágica; entesite em meninos acima de 6 anos com HLA-B27; joelho unilateral hipercresce e gera discrepância; instabilidade atlantoaxial e fusão C2-C3; cisto poplíteo posteromedial da criança é benigno e regride; LYME com derrame grande e pouco doloroso; abaixo de 18 meses a 2 anos a osteomielite atravessa a fise, e as metáfises intra-articulares (fêmur e úmero proximais) abrem a articulação em qualquer idade.",
+   "acesso": "gratis",
+   "minutos": 37,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "da-artrite-reumatoide-juvenil-a-artrite-idiopati",
+     "titulo": "Da artrite reumatoide juvenil à artrite idiopática juvenil",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-forma-oligoarticular",
+     "titulo": "A forma oligoarticular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "as-formas-poliarticulares",
+     "titulo": "As formas poliarticulares",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-forma-sistemica-a-doenca-de-still",
+     "titulo": "A forma sistêmica, a doença de STILL",
+     "radar": "fundamento"
+    },
+    {
+     "id": "psoriasica-relacionada-a-entesite-e-espondilite-",
+     "titulo": "Psoriásica, relacionada à entesite e espondilite juvenil",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-uveite-e-o-rastreamento-oftalmologico",
+     "titulo": "A uveíte e o rastreamento oftalmológico",
+     "radar": "fundamento"
+    },
+    {
+     "id": "laboratorio-e-liquido-sinovial",
+     "titulo": "Laboratório e líquido sinovial",
+     "radar": "fundamento"
+    },
+    {
+     "id": "imagem-coluna-cervical-e-mandibula",
+     "titulo": "Imagem, coluna cervical e mandíbula",
+     "radar": "confirmado"
+    },
+    {
+     "id": "deformidades-discrepancia-e-crescimento",
+     "titulo": "Deformidades, discrepância e crescimento",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-tratamento-clinico",
+     "titulo": "O tratamento clínico",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-papel-do-ortopedista-quando-operar",
+     "titulo": "O papel do ortopedista: quando operar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-cisto-popliteo-na-crianca",
+     "titulo": "O cisto poplíteo na criança",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lyme-e-as-artrites-pos-infecciosas",
+     "titulo": "LYME e as artrites pós-infecciosas",
+     "radar": "fundamento"
+    },
+    {
+     "id": "diagnostico-diferencial-artrite-septica-e-sinovi",
+     "titulo": "Diagnóstico diferencial: artrite séptica e sinovite transitória",
+     "radar": "fundamento"
+    },
+    {
+     "id": "diagnostico-diferencial-com-a-osteomielite",
+     "titulo": "Diagnóstico diferencial com a osteomielite",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "osteometabolicas-0053",
+    "pediatria-0835",
+    "pediatria-0807",
+    "pediatria-0786",
+    "pediatria-0678",
+    "pediatria-0897",
+    "pediatria-0896",
+    "pediatria-0898"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Infecções e artrites na criança"
    ]
   },
   {
@@ -23103,7 +23301,7 @@
   },
   {
    "id": "rockwoodcriancas10-12-monteggia",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Fratura-luxação de MONTEGGIA na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -23111,7 +23309,7 @@
    "capitulo": "Capítulo 12 · Monteggia Fracture-Dislocation in Children",
    "resumo": "BADO I anterior (70% a 75%), II posterior com imobilização em extensão, III lateral por varo com mais lesão do interósseo posterior, IV com o rádio; equivalentes e LETTS; tratamento pela ulna (plástica e galho verde fechada, transversa intramedular, oblíqua longa com placa); linha radiocapitelar e arco ulnar; luxação congênita da cabeça; ligamento anular interposto; MONTEGGIA crônico com osteotomia da ulna; BELL TAWSE; nervos, síndrome compartimental e ossificação.",
    "acesso": "gratis",
-   "minutos": 32,
+   "minutos": 33,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -23176,7 +23374,7 @@
     {
      "id": "tipo-iii-extensao-valgo-e-atencao-ao-nervo",
      "titulo": "Tipo III: extensão, valgo e atenção ao nervo",
-     "radar": "clinico"
+     "radar": "confirmado"
     },
     {
      "id": "tipo-iv-fixar-o-radio-e-transformar-em-tipo-i",
@@ -23230,6 +23428,7 @@
     "pediatria-0656",
     "pediatria-0539",
     "pediatria-0831",
+    "trauma-0772",
     "pediatria-0742"
    ],
    "treino": [
@@ -23254,7 +23453,8 @@
    ],
    "subtemas": [
     "Fraturas do antebraço e punho na criança",
-    "Luxações na criança"
+    "Luxações na criança",
+    "Trauma pediátrico"
    ]
   },
   {
@@ -24194,7 +24394,7 @@
   },
   {
    "id": "rockwoodcriancas10-26-fise-distal-femur",
-   "versao": 1,
+   "versao": 3,
    "titulo": "Fratura da fise distal do fêmur na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -24202,7 +24402,7 @@
    "capitulo": "Capítulo 26 · Fractures of the Distal Femoral Physis",
    "resumo": "SALTER-HARRIS II em 57%, valgo e varo com o ligamento mais forte que a fise, cruzado anterior no tipo III do côndilo medial, artéria poplítea no desvio anterior, fibular por tração, distúrbio do crescimento em cerca de metade, pinos lisos por 4 semanas, 10 dias para remanipular, PARK-HARRIS e ponte menor que 50%.",
    "acesso": "gratis",
-   "minutos": 20,
+   "minutos": 32,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -24255,6 +24455,46 @@
      "radar": "clinico"
     },
     {
+     "id": "os-tres-livros-lado-a-lado",
+     "titulo": "Os três livros lado a lado",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-mecanismo-muda-com-a-idade",
+     "titulo": "O mecanismo muda com a idade",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-classificacao-nos-tres-livros",
+     "titulo": "A classificação nos três livros",
+     "radar": "fundamento"
+    },
+    {
+     "id": "avaliacao-a-radiografia-de-estresse-saiu-de-cena",
+     "titulo": "Avaliação: a radiografia de estresse saiu de cena",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tratamento-por-tipo-nos-tres-livros",
+     "titulo": "Tratamento por tipo nos três livros",
+     "radar": "clinico"
+    },
+    {
+     "id": "lesoes-associadas-os-numeros-de-cada-livro",
+     "titulo": "Lesões associadas: os números de cada livro",
+     "radar": "clinico"
+    },
+    {
+     "id": "complicacoes-tardias-os-numeros-de-cada-livro",
+     "titulo": "Complicações tardias: os números de cada livro",
+     "radar": "clinico"
+    },
+    {
+     "id": "seguimento-e-prognostico-nos-tres-livros",
+     "titulo": "Seguimento e prognóstico nos três livros",
+     "radar": "fundamento"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -24271,6 +24511,7 @@
     "pediatria-0559",
     "pediatria-0608",
     "pediatria-0590",
+    "trauma-0770",
     "pediatria-0065",
     "pediatria-0570",
     "pediatria-0825",
@@ -24294,7 +24535,8 @@
     "pediatria-1105"
    ],
    "subtemas": [
-    "Fraturas do fêmur e da perna na criança"
+    "Fraturas do fêmur e da perna na criança",
+    "Trauma pediátrico"
    ]
   },
   {
@@ -24435,7 +24677,7 @@
   },
   {
    "id": "rockwoodcriancas10-28-joelho-intra-articular",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Lesões intra-articulares do joelho na criança",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
@@ -24443,7 +24685,7 @@
    "capitulo": "Capítulo 28 · Intra-Articular Injuries of the Knee",
    "resumo": "Espinha tibial (avulsão condroepifisária, valgo com rotação externa, osso mais fraco que o LCA, MEYERS e MCKEEVER e ZARICZNYJ, menisco medial encarcerado em 26% e 65%, menisco lateral roto, extensão completa por 6 semanas no tipo I, redução fechada em 50% do II e 0% do III, parafuso epifisário ou sutura, LACHMAN positivo sem instabilidade, artrofibrose, perda da extensão, ruptura tardia do LCA); luva patelar; fratura osteocondral (faceta medial e côndilo lateral, radiografia perde 36%, 5 mm); luxação da patela (PARIKH, LPFM 60%, ângulo Q e TT-TG, conservador 60% a 70%, LPFM epifisário, osteotomia só com apófise fechada); hemartrose e LCA; colaterais; LCA no imaturo por grupo de crescimento; LCP; luxação do joelho e índice tornozelo-braquial.",
    "acesso": "gratis",
-   "minutos": 49,
+   "minutos": 44,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -24498,7 +24740,7 @@
     {
      "id": "fratura-em-luva-da-patela",
      "titulo": "Fratura em luva da patela",
-     "radar": "oportunidade"
+     "radar": "confirmado"
     },
     {
      "id": "fraturas-osteocondrais-mecanismo-e-diagnostico",
@@ -24559,6 +24801,7 @@
     "pediatria-0711",
     "pediatria-0700",
     "pediatria-0735",
+    "trauma-0769",
     "pediatria-0824"
    ],
    "treino": [
@@ -24582,7 +24825,8 @@
     "pediatria-1314"
    ],
    "subtemas": [
-    "Joelho da criança"
+    "Joelho da criança",
+    "Trauma pediátrico"
    ]
   },
   {
@@ -26730,15 +26974,15 @@
   },
   {
    "id": "tachdjian6-displasia-fibrosa",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Displasia fibrosa e lesões fibro-ósseas afins",
    "especialidade": "tumores",
    "livro": "Tachdjian's Pediatric Orthopaedics",
-   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26, 27 e 29), o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), e o Sizínio Hebert, 5ª ed. (cap. 29)",
+   "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26, 27 e 29), o Dahlin's Bone Tumors, 6ª ed. (caps. 24 e 26), o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13), o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), e o Sizínio Hebert, 5ª ed. (cap. 29)",
    "capitulo": "Capítulo 25 · Benign Musculoskeletal Tumors",
-   "resumo": "Displasia fibrosa é falha de maturação do osso trançado por mutação da Gs alfa (Arg201), mono ou poliostótica, com vidro fosco, letras chinesas sem rima osteoblástica e cajado de pastor (varo do fêmur proximal); McCUNE-ALBRIGHT soma café com leite (costa do Maine) e endocrinopatia, MAZABRAUD soma mixomas intramusculares; fraturas consolidam rápido com calo endosteal pobre, enxerto esponjoso é reabsorvido, haste intramedular e enxerto cortical são a base, radioterapia é proibida; a displasia osteofibrosa de CAMPANACCI (fibroma ossificante) é intracortical anterior na tíbia, com rima osteoblástica e parente do adamantinoma; o fibroma não ossificante é excêntrico metafisário, fratura no estágio B de RITSCHL e com café com leite forma o JAFFE-CAMPANACCI; o desmoide cortical fica na face posteromedial da metáfise distal do fêmur.",
+   "resumo": "Displasia fibrosa é falha de maturação do osso trançado por mutação da Gs alfa (Arg201), intramedular, com vidro fosco, letras chinesas sem rima osteoblástica e cajado de pastor; McCUNE-ALBRIGHT soma café com leite e endocrinopatia, MAZABRAUD soma mixomas; a fratura consolida rápido com calo endosteal pobre, e a base é haste intramedular e enxerto cortical, sem radioterapia; a displasia osteofibrosa de CAMPANACCI nasce no córtex anterior da diáfise da tíbia da criança, tem rima osteoblástica, é observada e recidiva se curetada; o adamantinoma, seu diferencial maligno de baixo grau, dá lucências múltiplas em bolhas na diáfise da tíbia (85% a 90%) na 2ª e 3ª décadas, tem ilhas epiteliais com queratina, é radio e quimiorresistente, pede ressecção ampla e metastatiza tarde; o fibroma não ossificante é excêntrico metafisário, fratura no RITSCHL B e com café com leite forma o JAFFE-CAMPANACCI.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -26788,7 +27032,7 @@
     {
      "id": "adamantinoma-o-vizinho-maligno-da-tibia",
      "titulo": "Adamantinoma: o vizinho maligno da tíbia",
-     "radar": "clinico"
+     "radar": "confirmado"
     },
     {
      "id": "fibroma-nao-ossificante-e-defeito-fibroso-cortic",
@@ -26816,6 +27060,11 @@
     "tumores-0253",
     "tumores-0011",
     "tumores-0052",
+    "tumores-0349",
+    "tumores-0389",
+    "tumores-0262",
+    "tumores-0007",
+    "tumores-0206",
     "tumores-0041",
     "tumores-0047",
     "tumores-0035",
@@ -26825,7 +27074,9 @@
    ],
    "treino": [],
    "subtemas": [
-    "Displasia fibrosa"
+    "Displasia fibrosa",
+    "Displasia osteofibrosa e adamantinoma",
+    "Fibroma não ossificante e defeito fibroso cortical"
    ]
   },
   {
