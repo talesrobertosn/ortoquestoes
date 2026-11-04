@@ -477,7 +477,7 @@ O Tachdjian (p. 2015 e 2016) faz **meniscectomia parcial central preservando 5 a
 conceito: O discoide completo ou incompleto, com inserção posterior, costuma ser silencioso até se romper, quando dá dor, estalido e derrame; o tipo WRISBERG, sem inserção tibial posterior, estala mesmo sem ruptura nem trauma.
 como: O TARO 2006 pôs em certo ou errado que, no menisco discoide lateral, ressalto e dor surgem após a ruptura.
 armadilha: Esquecer o tipo WRISBERG, que estala sem rasgar, ou achar que todo discoide precisa de cirurgia.
-alerta: A `joelho-0299` está sem gabarito oficial. Para os tipos completo e incompleto (os mais comuns), o Campbell 15 sustenta "certo": são assintomáticos e só dão sintomas quando há desarranjo; a exceção é o tipo WRISBERG, cujo estalido independe de ruptura.
+alerta: A `joelho-0299` está sem gabarito oficial. Para os tipos completo e incompleto (os mais comuns), o Campbell 15 sustenta "certo": são assintomáticos e só dão sintomas quando há desarranjo; a exceção é o tipo WRISBERG, cujo estalido independe de ruptura, e por isso a resposta provável, igual ao gabarito pela bibliografia, é Errado (ver o resumo de menisco discoide).
 !fim
 
 # Fechamento {radar=fundamento}
