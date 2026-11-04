@@ -7,7 +7,7 @@ import { CORTESIA_ADMIN, PLANO_CORTESIA, rotuloPlano } from '../../componentes/a
 import { planosEmDestaque, viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
 import { usarRpc } from '../../componentes/admin/usarRpc'
 import { serieLimpa, usarFunil, usarSerie } from '../dados/consultas'
-import { Comparacoes, Destaques, Semana, Termometro, VendoAgora } from './central'
+import { Comparacoes, Destaques, Graficos, Termometro } from './central'
 import { usarPainel } from '../dados/painel'
 import { nomeDe, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
@@ -73,7 +73,8 @@ function Temperatura({ t }: { t: ReturnType<typeof temperatura> }) {
 type Filtro = 'todos' | 'assinante' | 'nao' | 'lead'
 /** As listas da página: o que está acontecendo agora e tudo de hoje. Cada número do topo abre uma delas. */
 type Vista = 'online' | 'assinantes' | 'viram' | 'limite' | 'estudaram' | 'cadastros' | 'ausentes' | 'viram30'
-const POR_VEZ = 30
+// 12 de cada vez: a linha do dia fica logo abaixo, sem rolar demais (Tales, 04/11/2026).
+const POR_VEZ = 12
 
 /**
  * Página inicial do painel (revisão de 02/11/2026, pedido do Tales: "botões clicáveis, mostrar fácil assinantes hoje e
@@ -88,7 +89,8 @@ const POR_VEZ = 30
 export default function Inicio() {
   const p = usarPainel()
   const nav = usarNav()
-  const serieQ = usarSerie(7, true)
+  // 35 dias: os gráficos comparam semanas; continua uma consulta só, a cada 5 minutos.
+  const serieQ = usarSerie(35, true)
   const { funil } = usarFunil()
   const fila = usarFila()
   const irDestino = useIrDestino()
@@ -198,15 +200,6 @@ export default function Inicio() {
       </>}
     </section>
 
-    <Comparacoes />
-
-    <section className="cr-secao" aria-labelledby="cc-observatorio">
-      <header className="cr-secao__cabeca"><span className="cr-secao__numero" aria-hidden="true"><Icone nome="olho" tamanho={16} /></span><div><h2 id="cc-observatorio">Observatório</h2><p>O que estão vendo, quem está perto de assinar, quem mais estudou e a semana em colunas.</p></div></header>
-      <div className="cr-grade-2"><VendoAgora /><Termometro limite={limite} /></div>
-      <Semana serie={serieLimpa(serieQ.dados)} />
-      <Destaques />
-    </section>
-
     {!g ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="A lista de pessoas não carregou" texto={p.erroDados} /> : <Carregando linhas={5} texto="Vendo quem está online…" />}</div> :
       <section className="a3-painel a3-ancora" id="a3-pessoas" aria-label="Pessoas">
         <div className="a3-abas-locais a3-abas-locais--rolam" role="tablist" aria-label="Qual lista">
@@ -244,6 +237,14 @@ export default function Inicio() {
       </div>
       <div style={{ gridColumn: 'span 7' }} id="a3-linha" className="a3-ancora"><LinhaDoDia quadro={quadro} /></div>
     </div>
+    <Comparacoes />
+
+    <section className="cr-secao" aria-labelledby="cc-observatorio">
+      <header className="cr-secao__cabeca"><span className="cr-secao__numero" aria-hidden="true"><Icone nome="grafico" tamanho={16} /></span><div><h2 id="cc-observatorio">Números do dia a dia</h2><p>Cadastros, estudo, questões e assinaturas em colunas, quem está perto de assinar e quem mais estudou.</p></div></header>
+      <Graficos serie={serieLimpa(serieQ.dados)} />
+      <div className="cr-grade-2"><Termometro limite={limite} /><Destaques /></div>
+    </section>
+
     <div id="a3-listas" className="a3-ancora"><Listas quadro={quadro} /></div>
     <p className="a3-mudo a3-pequeno">Online é quem deu sinal nos últimos 5 minutos. A lista de pessoas se atualiza sozinha a cada 3 minutos e o resto a cada 5; o botão Atualizar, lá em cima, busca na hora.</p>
   </div>

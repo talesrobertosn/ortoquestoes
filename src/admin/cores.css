@@ -545,3 +545,9 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .fx-abrir-carta span { display: grid; font-weight: 700; }
 .fx-abrir-carta small { font-weight: 400; color: var(--a3-cinza); }
 .fx-abrir-carta:hover { background: color-mix(in srgb, var(--a3-verde) 14%, var(--a3-papel)); }
+/* Esta semana × a passada: a passada clara, esta cheia. */
+.cc-graficos { display: grid; gap: 12px; }
+.cc-comparar .a3-colunas .a3-g-barra { fill: var(--a3-verde-claro); }
+.cc-comparar .a3-colunas .a3-g-barra--2 { fill: var(--a3-verde); }
+.cc-comparar--ouro .a3-colunas .a3-g-barra { fill: var(--a3-ouro-claro); }
+.cc-comparar--ouro .a3-colunas .a3-g-barra--2 { fill: var(--a3-ouro-cheio); }

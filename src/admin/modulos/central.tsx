@@ -1,5 +1,4 @@
-import { useMemo, type ReactNode } from 'react'
-import { pedacosAtividade } from '../../componentes/admin/formatos'
+import { useMemo, useState, type ReactNode } from 'react'
 import { cobrancas as cobrancasDe } from '../../componentes/admin/receita'
 import { viuPlanos } from '../../componentes/admin/sinais'
 import { diaSP } from '../../componentes/admin/estudoHoje'
@@ -9,6 +8,7 @@ import { usarNav } from '../nav'
 import { Icone } from '../ui/Icone'
 import { inteiro, reais } from '../ui/formato'
 import { Barras, Colunas } from '../ui/graficos'
+import { Segmento } from '../ui/kit'
 import { temperatura } from './Inicio'
 
 /**
@@ -76,29 +76,6 @@ export function Comparacoes() {
   </section>
 }
 
-/** O que as pessoas estão vendo: online agora e quem passou hoje, pela última página de cada uma. */
-export function VendoAgora() {
-  const p = usarPainel()
-  const d = useMemo(() => {
-    if (!p.usuarios) return null
-    const hoje = diaSP(Date.now())
-    const agrupar = (l: LinhaUsuario[]) => { const m = new Map<string, number>(); for (const u of l) { const n = pedacosAtividade(u).nome; m.set(n, (m.get(n) ?? 0) + 1) } return [...m].map(([nome, valor]) => ({ nome, valor })).sort((a, b) => b.valor - a.valor) }
-    const online = p.usuarios.filter(u => u.online && u.pagina)
-    const hojeL = p.usuarios.filter(u => u.pagina && u.pagina_em && diaSP(u.pagina_em) === hoje)
-    return { online: agrupar(online), nOnline: online.length, hoje: agrupar(hojeL), nHoje: hojeL.length }
-  }, [p.usuarios])
-  if (!d) return null
-  return <article className="cr-cartao">
-    <h3>O que estão vendo <small>pela última página de cada pessoa</small></h3>
-    <div className="cc-duas">
-      <div><span className="cc-sub"><i className="a3-ponto a3-ponto--vivo" aria-hidden="true" /> Online agora · {inteiro(d.nOnline)}</span>
-        {d.online.length ? <Barras itens={d.online} total={d.nOnline} limite={8} /> : <p className="a3-mudo">Ninguém online agora.</p>}</div>
-      <div><span className="cc-sub">Hoje, a última página · {inteiro(d.nHoje)}</span>
-        {d.hoje.length ? <Barras itens={d.hoje} total={d.nHoje} limite={8} cor="claro" /> : <p className="a3-mudo">Ninguém registrou página hoje.</p>}</div>
-    </div>
-  </article>
-}
-
 /** Não assinantes por temperatura (sinais de que podem comprar) e os mais quentes, com o botão da ficha. */
 export function Termometro({ limite }: { limite: number | null }) {
   const p = usarPainel()
@@ -128,17 +105,76 @@ export function Termometro({ limite }: { limite: number | null }) {
   </article>
 }
 
-/** Os últimos 7 dias em colunas: cadastros, pessoas que estudaram e questões. */
-export function Semana({ serie }: { serie: Array<{ dia: string; cadastros: number; ativos: number; respostas: number }> | null }) {
-  if (!serie?.length) return null
-  const l = [...serie].sort((a, b) => a.dia.localeCompare(b.dia)).slice(-7)
-  const rot = (d: string, i: number) => ({ longo: new Date(`${d}T12:00:00Z`).toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit', timeZone: 'UTC' }), curto: i === l.length - 1 ? 'hoje' : new Date(`${d}T12:00:00Z`).toLocaleDateString('pt-BR', { weekday: 'short', timeZone: 'UTC' }).replace('.', ''), parcial: i === l.length - 1 })
-  const g = (k: 'cadastros' | 'ativos' | 'respostas') => l.map((d, i) => ({ ...rot(d.dia, i), partes: [Number(d[k])] }))
-  return <div className="cr-grade-3">
-    <article className="cr-cartao"><h3>Cadastros <small>últimos 7 dias</small></h3><Colunas descricao="Cadastros nos últimos 7 dias" pontos={g('cadastros')} series={[{ nome: 'Cadastros' }]} altura={170} /></article>
-    <article className="cr-cartao"><h3>Pessoas que estudaram <small>últimos 7 dias</small></h3><Colunas descricao="Pessoas que estudaram nos últimos 7 dias" pontos={g('ativos')} series={[{ nome: 'Pessoas' }]} altura={170} cor="claro" /></article>
-    <article className="cr-cartao"><h3>Questões respondidas <small>últimos 7 dias</small></h3><Colunas descricao="Questões nos últimos 7 dias" pontos={g('respostas')} series={[{ nome: 'Questões' }]} altura={170} cor="claro" /></article>
-  </div>
+type Janela = '7' | '30' | 'semanas' | 'comparar'
+const SEMANA_CURTA = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom']
+const SEMANA_LONGA = ['segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo']
+
+/**
+ * Cadastros, pessoas que estudaram, questões e assinaturas novas por dia, com quatro jeitos de ver
+ * (Tales, 04/11/2026): 7 dias, 30 dias, semana a semana (qual semana foi melhor) e esta semana contra a passada,
+ * dia a dia (qual dia da semana rende mais).
+ */
+export function Graficos({ serie }: { serie: Array<{ dia: string; cadastros: number; ativos: number; respostas: number }> | null }) {
+  const p = usarPainel()
+  const [janela, definirJanela] = useState<Janela>('7')
+  const dados = useMemo(() => {
+    if (!serie?.length) return null
+    const novasPorDia = new Map<string, number>()
+    if (p.reais) for (const c of cobrancasDe(p.reais, p.cobrancas)) if (c.tipo === 'nova') { const d = diaSP(c.em.getTime()); novasPorDia.set(d, (novasPorDia.get(d) ?? 0) + 1) }
+    const dias = [...serie].sort((a, b) => a.dia.localeCompare(b.dia)).map(d => ({ dia: d.dia, cadastros: Number(d.cadastros), ativos: Number(d.ativos), respostas: Number(d.respostas), assinaram: novasPorDia.get(d.dia) ?? 0 }))
+    return dias
+  }, [serie, p.reais, p.cobrancas])
+  if (!dados) return null
+  type Chave = 'cadastros' | 'ativos' | 'respostas' | 'assinaram'
+  const hoje = dados[dados.length - 1]?.dia ?? diaSP(Date.now())
+  const semanaDe = (dia: string) => { const d = new Date(`${dia}T12:00:00Z`); return (d.getUTCDay() + 6) % 7 }
+  const somarDias = (dia: string, n: number) => new Date(new Date(`${dia}T12:00:00Z`).getTime() + n * DIA_MS).toISOString().slice(0, 10)
+  const segunda = somarDias(hoje, -semanaDe(hoje))
+  const porDia = new Map(dados.map(d => [d.dia, d]))
+  const rotDia = (dia: string, i: number, n: number) => ({ longo: new Date(`${dia}T12:00:00Z`).toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: '2-digit', timeZone: 'UTC' }), curto: i === n - 1 ? 'hoje' : n <= 7 ? SEMANA_CURTA[semanaDe(dia)] : `${dia.slice(8, 10)}/${dia.slice(5, 7)}`, parcial: i === n - 1 })
+
+  const montar = (k: Chave) => {
+    if (janela === '7' || janela === '30') {
+      const l = dados.slice(-Number(janela))
+      return { pontos: l.map((d, i) => ({ ...rotDia(d.dia, i, l.length), partes: [d[k]] })), lado: false, resumo: null as ReactNode }
+    }
+    if (janela === 'semanas') {
+      const semanas = Array.from({ length: 5 }, (_, i) => somarDias(segunda, (i - 4) * 7))
+      const pontos = semanas.map((s, i) => {
+        const soma = Array.from({ length: 7 }, (_, j) => porDia.get(somarDias(s, j))?.[k] ?? 0).reduce((a, b) => a + b, 0)
+        return { longo: `Semana de ${s.slice(8, 10)}/${s.slice(5, 7)} a ${somarDias(s, 6).slice(8, 10)}/${somarDias(s, 6).slice(5, 7)}`, curto: i === 4 ? 'esta' : `${s.slice(8, 10)}/${s.slice(5, 7)}`, partes: [soma], parcial: i === 4 }
+      })
+      const completas = pontos.slice(0, 4)
+      const melhor = completas.reduce((m, x) => x.partes[0] > m.partes[0] ? x : m, completas[0])
+      return { pontos, lado: false, resumo: melhor && melhor.partes[0] > 0 ? <>Melhor semana: <b>{melhor.longo.toLowerCase()}</b>, com {inteiro(melhor.partes[0])}.</> : null }
+    }
+    // Esta semana × a passada, dia a dia; os dias que ainda não chegaram ficam vazios.
+    const hojeI = semanaDe(hoje)
+    const pontos = SEMANA_CURTA.map((c, j) => {
+      const passada = porDia.get(somarDias(segunda, j - 7))?.[k] ?? 0
+      const esta = j <= hojeI ? porDia.get(somarDias(segunda, j))?.[k] ?? 0 : 0
+      return { longo: SEMANA_LONGA[j] + (j === hojeI ? ' (hoje, em andamento)' : j > hojeI ? ' (ainda não chegou)' : ''), curto: c, partes: [passada, esta] }
+    })
+    const ateHoje = (q: 0 | 1) => pontos.slice(0, hojeI + 1).reduce((s, x) => s + x.partes[q], 0)
+    const a = ateHoje(1), b = ateHoje(0)
+    const melhorDia = pontos.reduce((m, x, j) => x.partes[0] > pontos[m].partes[0] ? j : m, 0)
+    return { pontos, lado: true, resumo: <>Até {SEMANA_LONGA[hojeI]}: <b>{inteiro(a)}</b> nesta semana contra {inteiro(b)} na passada{b ? ` (${a >= b ? '+' : ''}${Math.round(((a - b) / b) * 100)}%)` : ''}. Semana passada, o dia mais forte foi {SEMANA_LONGA[melhorDia]}.</> }
+  }
+  const CARTOES: Array<{ k: Chave; titulo: string; cor: 'verde' | 'claro' | 'ouro' }> = [
+    { k: 'cadastros', titulo: 'Cadastros', cor: 'verde' }, { k: 'ativos', titulo: 'Pessoas que estudaram', cor: 'claro' },
+    { k: 'respostas', titulo: 'Questões respondidas', cor: 'claro' }, { k: 'assinaram', titulo: 'Assinaram (primeira compra)', cor: 'ouro' },
+  ]
+  const sub: Record<Janela, string> = { '7': 'por dia, últimos 7 dias', '30': 'por dia, últimos 30 dias', semanas: 'soma de cada semana (segunda a domingo), últimas 5', comparar: 'dia a dia: semana passada (claro) × esta semana (cheio)' }
+  return <section className="cc-graficos" aria-label="Gráficos do dia a dia">
+    <div className="cr-acoes"><Segmento rotulo="Como ver" valor={janela} aoMudar={definirJanela} opcoes={[['7', '7 dias'], ['30', '30 dias'], ['semanas', 'Semana a semana'], ['comparar', 'Esta × passada']]} /></div>
+    <div className="cr-grade-2">{CARTOES.map(c => { const m = montar(c.k); return <article key={c.k} className={`cr-cartao${janela === 'comparar' ? ` cc-comparar cc-comparar--${c.cor}` : ''}`}>
+      <h3>{c.titulo} <small>{sub[janela]}</small></h3>
+      {m.resumo && <p className="cr-conclusao">{m.resumo}</p>}
+      <Colunas descricao={`${c.titulo}: ${sub[janela]}`} pontos={m.pontos} lado={m.lado} cor={c.cor} altura={190}
+        media={!m.lado} destacarMaior={janela === 'semanas'}
+        series={m.lado ? [{ nome: 'Semana passada' }, { nome: 'Esta semana', estilo: 2 }] : [{ nome: c.titulo }]} />
+    </article> })}</div>
+  </section>
 }
 
 /** Quem mais estudou hoje e na semana. */
