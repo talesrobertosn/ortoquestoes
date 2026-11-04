@@ -157,7 +157,7 @@ armadilha: Achar que o corte de idade é único: TARO e TEOT usam 18 meses (Tach
 conceito: A VHS depende do fibrinogênio, sobe devagar, normaliza em semanas e não é confiável no neonato e no falciforme; a PCR, estimulada pela IL-6, sobe em 6 horas, tem pico em 2 dias, meia-vida de 24 horas e normaliza em cerca de 1 semana, e por isso segue melhor a resposta.
 como: O TARO 2006, 2007 e 2008 cobraram em sequência a VHS não confiável no neonato e no falciforme, a comparação entre VHS e PCR e o mecanismo da subida da PCR.
 armadilha: Usar a VHS para seguir a melhora dos primeiros dias, ou atribuir a PCR ao fibrinogênio, que é o determinante da VHS.
-alerta: As três questões (`conceitos-basicos-0284`, `conceitos-basicos-0285`, `conceitos-basicos-0292`) estão sem gabarito oficial no acervo; o texto segue o Tachdjian (fibrinogênio, IL-6, cinética da PCR) e o Campbell, cap. 22 (VHS não confiável no neonato e no falciforme).
+alerta: As três questões (`conceitos-basicos-0284`, `conceitos-basicos-0285`, `conceitos-basicos-0292`) estão sem gabarito oficial no acervo; o texto segue o Tachdjian (fibrinogênio, IL-6, cinética da PCR) e o Campbell, cap. 22 (VHS não confiável no neonato e no falciforme); as respostas prováveis seguem o gabarito pela bibliografia: VHS menos sensível que a PCR, interleucina-6 e Certo.
 !fim
 
 # Imagem: da radiografia à RM {radar=confirmado}
