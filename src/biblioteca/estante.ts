@@ -58,7 +58,8 @@ export function rotuloLivro(c: Pick<ResumoCapitulo, 'livro' | 'edicao'>): string
 }
 /** Número do capítulo no livro ("Capítulo 19 · ..." → 19); sem número, vai para o fim. */
 export function numeroCapitulo(c: Pick<ResumoCapitulo, 'capitulo'>): number {
-  const n = Number(c.capitulo.match(/\d+/)?.[0])
+  // O HEBERT numera com decimais (21.2, 21.5): os dois são capítulos diferentes do mesmo livro.
+  const n = Number(c.capitulo.match(/\d+(?:\.\d+)?/)?.[0])
   return Number.isFinite(n) && n > 0 ? n : Number.MAX_SAFE_INTEGER
 }
 /** O título em inglês do capítulo ("Capítulo 19 · Shoulder ..." → "Shoulder ..."). */
