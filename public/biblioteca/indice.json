@@ -2,6 +2,113 @@
  "geradoEm": "2026-11-04",
  "capitulos": [
   {
+   "id": "ao-fixadores-externos",
+   "versao": 1,
+   "titulo": "Fixadores externos",
+   "especialidade": "conceitos-basicos",
+   "livro": "AO Principles of Fracture Management",
+   "edicao": "3ª edição (2017)",
+   "capitulo": "Capítulo 3.3.3 · External fixator",
+   "resumo": "Unilateral mais rígido com pinos afastados no fragmento, pinos perto do foco sem entrar no hematoma, barra perto do osso, pino mais grosso (6 mm = dobro da rigidez do 5 mm; no máximo um terço do diâmetro ósseo), mais pinos, duas barras e segundo plano; circular de ILIZAROV mais rígido com fio mais grosso e mais tenso, olivado, cruzamento perto de 90 graus, anel menor e mais fios, com rigidez axial menor que a do unilateral; pré-perfuração e baixa rotação contra a necrose térmica; CHECKETTS-OTTERBURN com seis graus; conversão em até 2 semanas; pino supra-acetabular guiado pela lágrima.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-o-fixador-oferece-e-quando-usar",
+     "titulo": "O que o fixador oferece e quando usar",
+     "radar": "clinico"
+    },
+    {
+     "id": "os-tipos-de-montagem",
+     "titulo": "Os tipos de montagem",
+     "radar": "fundamento"
+    },
+    {
+     "id": "estabilidade-do-fixador-unilateral",
+     "titulo": "Estabilidade do fixador unilateral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-pino-diametro-rosca-e-material",
+     "titulo": "O pino: diâmetro, rosca e material",
+     "radar": "confirmado"
+    },
+    {
+     "id": "insercao-do-pino-calor-pre-perfuracao-e-tecnica",
+     "titulo": "Inserção do pino: calor, pré-perfuração e técnica",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-fixador-circular-de-ilizarov",
+     "titulo": "O fixador circular de ILIZAROV",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hibrido-e-hexapode",
+     "titulo": "Híbrido e hexápode",
+     "radar": "fundamento"
+    },
+    {
+     "id": "corredores-seguros-e-zonas-de-risco",
+     "titulo": "Corredores seguros e zonas de risco",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pelve-crista-iliaca-e-supra-acetabular",
+     "titulo": "Pelve: crista ilíaca e supra-acetabular",
+     "radar": "confirmado"
+    },
+    {
+     "id": "controle-de-danos-e-ponte-periarticular",
+     "titulo": "Controle de danos e ponte periarticular",
+     "radar": "clinico"
+    },
+    {
+     "id": "infeccao-do-trajeto-do-pino-e-a-classificacao-de",
+     "titulo": "Infecção do trajeto do pino e a classificação de CHECKETTS-OTTERBURN",
+     "radar": "fundamento"
+    },
+    {
+     "id": "conversao-para-fixacao-interna-a-janela",
+     "titulo": "Conversão para fixação interna: a janela",
+     "radar": "fundamento"
+    },
+    {
+     "id": "consolidacao-sob-fixador-dinamizacao-e-retirada",
+     "titulo": "Consolidação sob fixador, dinamização e retirada",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "conceitos-basicos-0020",
+    "conceitos-basicos-0088",
+    "conceitos-basicos-0075",
+    "conceitos-basicos-0141",
+    "conceitos-basicos-0044",
+    "conceitos-basicos-0282",
+    "conceitos-basicos-0210",
+    "conceitos-basicos-0137",
+    "trauma-0423"
+   ],
+   "treino": [
+    "conceitos-basicos-0335",
+    "conceitos-basicos-0334"
+   ],
+   "subtemas": [
+    "Fixadores externos"
+   ]
+  },
+  {
    "id": "ao-principios-osteossintese",
    "versao": 1,
    "titulo": "Princípios de osteossíntese",
