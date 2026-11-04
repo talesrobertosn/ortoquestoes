@@ -7732,15 +7732,15 @@
   },
   {
    "id": "campbell15-tumores-partes-moles",
-   "versao": 1,
-   "titulo": "Tumores benignos de partes moles",
+   "versao": 2,
+   "titulo": "Tumores e sarcomas de partes moles",
    "especialidade": "tumores",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026), com o Green's Operative Hand Surgery, 7ª edição (2017), o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição",
    "capitulo": "Capítulo 30 · Soft-Tissue Tumors",
-   "resumo": "Dor não separa benigno de maligno, mas TINEL e dor irradiada apontam para a bainha nervosa; RM para massa > 5 cm ou profunda; lipoma brilha em T1 e apaga na supressão; schwannoma enucleável (ANTONI A e B, VEROCAY) e neurofibroma da NF1 que vira MPNST (schwannoma maligno); SVNP com histiócitos, hemossiderina e células gigantes, no joelho; condromatose em homens, joelho e quadril; desmoide recidivante, GARDNER com osteomas, desmoide cortical posteromedial do fêmur; rabdomiossarcoma da criança na cabeça e pescoço, sensível à quimioterapia; sarcoma sinovial indolente no carpo; epitelioide é o sarcoma da mão; lipossarcoma mixoide pede TC de abdome.",
+   "resumo": "Dor não separa benigno de maligno, mas TINEL aponta para a bainha nervosa; RM para massa > 5 cm ou profunda; schwannoma enucleável e neurofibroma da NF1 que vira MPNST; SVNP com hemossiderina e células gigantes, no joelho; condromatose em homens; GARDNER com osteomas; sarcomas estadiados por grau, tamanho, profundidade e metástase, biópsia planejada com trajeto contaminado e margem ampla com radioterapia no alto grau; rabdomiossarcoma da criança na cabeça e pescoço, sensível à quimioterapia, pleomórfico no adulto; sinovial indolente no carpo; epitelioide é o sarcoma da mão; mixoide pede TC de abdome.",
    "acesso": "gratis",
-   "minutos": 35,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7788,14 +7788,29 @@
      "radar": "clinico"
     },
     {
+     "id": "sarcomas-de-partes-moles-estadiamento-biopsia-ma",
+     "titulo": "Sarcomas de partes moles: estadiamento, biópsia, margens e adjuvância",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sarcoma-pleomorfico-indiferenciado-e-lipossarcom",
+     "titulo": "Sarcoma pleomórfico indiferenciado e lipossarcoma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sarcoma-sinovial-e-sarcoma-epitelioide",
+     "titulo": "Sarcoma sinovial e sarcoma epitelioide",
+     "radar": "confirmado"
+    },
+    {
      "id": "rabdomiossarcoma-o-sarcoma-de-partes-moles-da-cr",
      "titulo": "Rabdomiossarcoma: o sarcoma de partes moles da criança",
      "radar": "confirmado"
     },
     {
-     "id": "sarcomas-do-adulto-sinovial-epitelioide-lipossar",
-     "titulo": "Sarcomas do adulto: sinovial, epitelioide, lipossarcoma e os sinais de malignidade",
-     "radar": "confirmado"
+     "id": "os-sinais-de-malignidade-reunidos",
+     "titulo": "Os sinais de malignidade, reunidos",
+     "radar": "fundamento"
     },
     {
      "id": "fechamento",
@@ -7816,18 +7831,25 @@
     "tumores-0061",
     "tumores-0260",
     "tumores-0074",
-    "tumores-0017",
-    "tumores-0060",
-    "tumores-0117",
-    "tumores-0305",
+    "tumores-0388",
+    "tumores-0138",
     "tumores-0114",
     "tumores-0168",
     "tumores-0029",
-    "tumores-0138"
+    "tumores-0017",
+    "tumores-0060",
+    "tumores-0049",
+    "tumores-0087",
+    "tumores-0336",
+    "tumores-0117",
+    "tumores-0305",
+    "tumores-0188",
+    "tumores-0348"
    ],
    "treino": [],
    "subtemas": [
-    "Tumores benignos de partes moles"
+    "Tumores benignos de partes moles",
+    "Sarcomas de partes moles"
    ]
   },
   {

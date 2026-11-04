@@ -203,7 +203,7 @@ As duas articulares do pé são o par preferido das provas porque cada traço de
 conceito: Nas osteocondroses do pé, cada nome tem perfil fixo: KÖHLER no navicular do menino pequeno, SEVER na apófise do calcâneo do escolar corredor, FREIBERG na cabeça do 2º metatarso da adolescente.
 como: A SBOT-SP descreveu três conjuntos de características numa figura e pediu a associação certa com SEVER, KÖHLER e FREIBERG.
 armadilha: Associar a adolescente ao KÖHLER ou o calcanhar bilateral do escolar ao FREIBERG.
-alerta: A `pediatria-0937` está sem gabarito oficial, e as características 1, 2 e 3 estão numa imagem que não acompanha o texto; não dá para dizer qual alternativa os livros sustentam. Pelos perfis acima: menino pequeno com navicular esclerótico é KÖHLER; escolar com dor bilateral no calcanhar e radiografia normal é SEVER; adolescente com cabeça do 2º metatarso achatada é FREIBERG.
+alerta: A `pediatria-0937` está sem gabarito oficial; a tabela da questão (sexo, idade, bilateralidade, sequelas e cirurgia) corresponde a SEVER, KÖHLER e FREIBERG, nessa ordem, o que sustenta a alternativa A, igual ao gabarito da bibliografia da banca. O valor de bilateralidade "até 60%" não está nos livros; o Lovell diz só que o SEVER é bilateral na maioria.
 !fim
 
 # SEVER: a apófise do calcâneo {radar=confirmado}
