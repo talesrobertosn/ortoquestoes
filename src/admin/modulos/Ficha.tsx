@@ -13,7 +13,7 @@ import { estaOnline, nomeDe, type LinhaUsuario } from '../dados/pessoas'
 import type { AbaFicha } from '../nav'
 import { Icone } from '../ui/Icone'
 import { data, dataHora, haQuanto, horario, iniciais, inteiro, reais } from '../ui/formato'
-import { Ranking, SerieTempo } from '../ui/graficos'
+import { Ranking, Colunas } from '../ui/graficos'
 import { Carregando, Estado, Faixa, Painel, Selo, SeloQualidade, Situacao } from '../ui/kit'
 import { Gaveta, avisoRapido, confirmar } from '../ui/sobreposicoes'
 import { EditorCarta } from './cartas-comum'
@@ -270,11 +270,14 @@ function AbaAtividade({ u, detalhe, atividade, extra, semAtividade }: { u: Linha
   const diasSem = diasDesde(u.ultima_atividade)
   return <>
     {semAtividade ? <Faixa>Sem o registro de páginas (migração 202610080100), aparecem só sessões e e-mails.</Faixa> : atividade && <Painel titulo="Últimos 30 dias" descricao="Questões diferentes por dia; a linha mostra respostas de flashcards">
-      <SerieTempo descricao="Questões e flashcards por dia nos últimos 30 dias" rotulos={dias30.map(d => ({ longo: d.longo, curto: d.curto }))} altura={180}
-        series={[{ nome: 'Questões', tipo: 'barra', valores: dias30.map(d => d.q) }, ...(dias30.some(d => d.f) ? [{ nome: 'Flashcards', tipo: 'linha' as const, estilo: 'acento' as const, valores: dias30.map(d => d.f) }] : [])]} />
+      <Colunas descricao="Questões e flashcards por dia nos últimos 30 dias" altura={180} rotuloMedia="média"
+        pontos={dias30.map((d, i) => ({ longo: d.longo, curto: d.curto, partes: [d.q ?? 0, d.f ?? 0], parcial: i === dias30.length - 1 }))}
+        series={[{ nome: 'Questões' }, { nome: 'Flashcards', estilo: 2 }]} />
     </Painel>}
     {atividade && atividade.horas.length > 0 && <Painel titulo="Horário em que estuda" descricao="Tentativas por hora (São Paulo), últimos 30 dias">
-      <SerieTempo descricao="Tentativas por hora do dia" altura={140} rotulos={Array.from({ length: 24 }, (_, h) => ({ longo: `${h}h`, curto: `${h}h` }))} series={[{ nome: 'Tentativas', tipo: 'barra', estilo: 2, valores: Array.from({ length: 24 }, (_, h) => atividade.horas.find(x => x.hora === h)?.n ?? 0) }]} />
+      <Colunas descricao="Tentativas por hora do dia" altura={150} media={false}
+        pontos={Array.from({ length: 24 }, (_, h) => ({ longo: `${h}h às ${h + 1}h`, curto: `${h}h`, partes: [atividade.horas.find(x => x.hora === h)?.n ?? 0] }))}
+        series={[{ nome: 'Tentativas' }]} />
     </Painel>}
     {diasSem !== null && diasSem >= 3 && <Faixa tom="aviso">Sem responder questões há {diasSem} dias.</Faixa>}
     <Bloco titulo="Linha do tempo" extra="páginas dos últimos 30 dias, sessões, partidas e e-mails">

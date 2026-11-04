@@ -10,8 +10,9 @@ import { usarNav } from '../nav'
 import { PERIODOS, defAba } from '../rotas'
 import { Icone } from '../ui/Icone'
 import { data, diaDaSerie, inteiro, pct, reais } from '../ui/formato'
-import { Composicao, Legenda, Quadro, SerieTempo } from '../ui/graficos'
-import { Cabeca, Carregando, Estado, Faixa, Metrica, Painel, Segmento, SeloQualidade, VariacaoTexto } from '../ui/kit'
+import { Colunas, Composicao, Legenda, Quadro } from '../ui/graficos'
+import { Expectativa } from './expectativa'
+import { Cabeca, Carregando, Estado, Faixa, Metrica, Painel, Segmento, VariacaoTexto } from '../ui/kit'
 import { Tabela } from '../ui/tabela'
 import { variacao } from '../dados/metricas'
 
@@ -62,6 +63,8 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
       Entram como estimadas, pelo preço do plano. Vale conferir no Mercado Pago e reprocessar o aviso: {semCobranca.slice(0, 4).map(a => `${a.nome || a.usuario} (${rotuloPlano(a.plano)}, desde ${data(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao)})`).join('; ')}{semCobranca.length > 4 ? '…' : ''}
     </Faixa>}
 
+    <Expectativa assinaturas={assinaturas} todas={todas} />
+
     <section className="a3-painel" aria-label="Quanto entrou por período">
       <div className="a3-faixa-metricas" style={{ '--colunas': 5 } as React.CSSProperties}>
         <Metrica rotulo={`Receita de ${mesAtual}`} grande valor={reais(g.mes.valor)} qualidade="derivado" variacao={variacao(g.mes.valor, g.mesPassadoAteHoje.valor)} formato={reais}
@@ -79,9 +82,9 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
       tabela={{ cabecalho: ['Dia', 'Confirmado', 'Estimado'], linhas: r.porDia.filter(x => x.confirmada || x.reconstruida).map(x => [diaDaSerie(x.dia, true), reais(x.confirmada), reais(x.reconstruida)]) }}
       estado={r.porDia.every(x => !x.confirmada && !x.reconstruida) ? <Estado compacto titulo={`Nenhuma cobrança nos últimos ${periodo} dias`} texto="É zero de verdade, não falta de dado." /> : undefined}>
       <div className="a3-grade a3-grade--12" style={{ alignItems: 'start' }}>
-        <div style={{ gridColumn: 'span 8' }}><SerieTempo descricao={`Receita por dia, confirmada e estimada, nos últimos ${periodo} dias`} formato={reais}
-          rotulos={r.porDia.map(x => ({ longo: diaDaSerie(x.dia, true), curto: diaDaSerie(x.dia) }))}
-          series={[{ nome: 'Confirmado', tipo: 'barra', valores: r.porDia.map(x => x.confirmada) }, { nome: 'Estimado', tipo: 'barra', estilo: 'hachura', valores: r.porDia.map(x => x.reconstruida) }]} /></div>
+        <div style={{ gridColumn: 'span 8' }}><Colunas descricao={`Receita por dia, confirmada e estimada, nos últimos ${periodo} dias`} formato={reais} media={false}
+          pontos={r.porDia.map((x, i) => ({ longo: diaDaSerie(x.dia, true), curto: diaDaSerie(x.dia), partes: [x.confirmada, x.reconstruida], parcial: i === r.porDia.length - 1 }))}
+          series={[{ nome: 'Confirmado' }, { nome: 'Estimado', estilo: 'hachura' }]} /></div>
         <dl className="a3-pares" style={{ gridColumn: 'span 4' }}>
           <div><dt>Confirmado</dt><dd>{reais(r.confirmada.atual)} <VariacaoTexto v={r.confirmada} formato={reais} curto /></dd></div>
           <div><dt>Estimado (à parte)</dt><dd>{reais(r.reconstruida)}</dd></div>
@@ -95,10 +98,11 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
     <div className="a3-grade a3-grade--12">
       <div style={{ gridColumn: 'span 8' }}>
         <Quadro titulo="Receita por mês" descricao="Últimos 12 meses, cartão e Pix empilhados" fonte="receita.ts › cobrancas (confirmado + estimado)" qualidade="derivado"
-          legenda={<Legenda itens={[{ nome: 'Cartão', chave: 'serie1' }, { nome: 'Pix', chave: 'serie2' }]} />}
+          legenda={<Legenda itens={[{ nome: 'Cartão', chave: 'serie1' }, { nome: 'Pix', chave: 'serie2' }, { nome: 'Mês atual (em andamento)', chave: 'parcial' }, { nome: 'Média', chave: 'media' }]} />}
           tabela={{ cabecalho: ['Mês', 'Cartão', 'Pix', 'Total'], linhas: d.serie.map(x => [x.rotulo, reais(x.partes[0]), reais(x.partes[1]), reais(x.partes[0] + x.partes[1])]) }}>
-          <SerieTempo descricao="Receita por mês nos últimos 12 meses" formato={reais} altura={220} rotulos={d.serie.map(x => ({ longo: x.rotulo, curto: x.rotuloCurto }))}
-            series={[{ nome: 'Cartão', tipo: 'barra', valores: d.serie.map(x => x.partes[0]) }, { nome: 'Pix', tipo: 'barra', estilo: 2, valores: d.serie.map(x => x.partes[1]) }]} />
+          <Colunas descricao="Receita por mês nos últimos 12 meses" formato={reais} altura={230} rotuloMedia="média"
+            pontos={(() => { const i0 = d.serie.findIndex(x => x.partes[0] + x.partes[1] > 0); const l = i0 < 0 ? d.serie.slice(-1) : d.serie.slice(i0); return l.map((x, i) => ({ longo: x.rotulo, curto: x.rotuloCurto, partes: [x.partes[0], x.partes[1]], parcial: i === l.length - 1 })) })()}
+            series={[{ nome: 'Cartão' }, { nome: 'Pix', estilo: 2 }]} />
         </Quadro>
       </div>
       <div style={{ gridColumn: 'span 4' }} className="a3-pilha">
@@ -118,13 +122,12 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
     </div>
 
     <div className="a3-grade a3-grade--2">
-      <Painel titulo="Base de assinantes agora" descricao="Pessoas com acesso pago; renovar não soma">
+      <Painel titulo="Quem tem acesso pago agora" descricao="Cada pessoa conta uma vez, mesmo com dois períodos pagos. O dinheiro esperado está no quadro do topo.">
         <dl className="a3-pares">
           <div><dt>Com acesso</dt><dd>{inteiro(d.comAcesso)}</dd></div>
           <div><dt>Cartão que renova sozinho</dt><dd>{inteiro(d.renovamAgora)}</dd></div>
           <div><dt>Pix</dt><dd>{inteiro(d.pixComAcesso)}</dd></div>
           <div><dt>Cancelados que ainda têm acesso</dt><dd>{inteiro(d.cartaoSemRenovar)}</dd></div>
-          <div><dt>Receita recorrente por mês</dt><dd>{reais(d.mrr)} <SeloQualidade q="derivado" /></dd></div>
           <div><dt>Conversão</dt><dd>{usuarios ? `${pct(porcentagem(d.pagantes, usuarios))} · ${d.pagantes} de ${inteiro(usuarios)} já pagaram` : '—'}</dd></div>
         </dl>
         <div style={{ marginTop: 16 }}><Tabela rotulo="Base por plano" compacta linhas={d.porPlano} chave={x => x.id} colunas={[
@@ -132,7 +135,6 @@ function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
           { id: 'v', titulo: 'Com acesso', numero: true, celula: x => inteiro(x.vigentes), rotuloCelular: 'Com acesso' },
           { id: 'r', titulo: 'Renovam', numero: true, celula: x => inteiro(x.renovam), rotuloCelular: 'Renovam' },
           { id: 'x', titulo: 'Pix', numero: true, celula: x => inteiro(x.pix), rotuloCelular: 'Pix' },
-          { id: 'm', titulo: 'Por mês', numero: true, celula: x => reais(x.mensal), rotuloCelular: 'Por mês' },
         ]} /></div>
       </Painel>
       <Painel titulo={`Movimento de ${mesAtual}`} descricao={`Comparado com ${mesAnterior}`}>
@@ -249,8 +251,9 @@ function Previsao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
     <Quadro titulo="Previsão mês a mês" descricao={`Próximos 12 meses: cartão se ninguém cancelar, Pix se ${pctPix}% recomprarem. Assinaturas novas entram por cima, não aqui.`} fonte="receita.ts › aReceberNoCartao e aReceberNoPix" qualidade="previsao"
       legenda={<Legenda itens={[{ nome: 'Cartão (renovação automática)', chave: 'serie1' }, { nome: 'Pix (recompra estimada)', chave: 'hachura' }]} />}
       tabela={{ cabecalho: ['Mês', 'Cartão', 'Pix (estimado)', 'Total'], linhas: prev.pontos.map(x => [x.longo, reais(x.cartao), reais(x.pix), reais(x.cartao + x.pix)]) }}>
-      <SerieTempo descricao="Previsão de receita por mês nos próximos 12 meses" formato={reais} altura={220} rotulos={prev.pontos.map(x => ({ longo: x.longo, curto: x.curto }))}
-        series={[{ nome: 'Cartão', tipo: 'barra', valores: prev.pontos.map(x => x.cartao) }, { nome: 'Pix estimado', tipo: 'barra', estilo: 'hachura', valores: prev.pontos.map(x => x.pix) }]} />
+      <Colunas descricao="Previsão de receita por mês nos próximos 12 meses" formato={reais} altura={230} media={false}
+        pontos={prev.pontos.map(x => ({ longo: x.longo, curto: x.curto, partes: [x.cartao, x.pix] }))}
+        series={[{ nome: 'Cartão' }, { nome: 'Pix estimado', estilo: 'hachura' }]} />
     </Quadro>
 
     <div className="a3-grade a3-grade--2">
