@@ -289,7 +289,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 927 | 19 miniaulas: pubalgia (6), fraturas periprotéticas do quadril (8) e imagem em ortopedia (5), com HEBERT, Campbell, CALLAGHAN, Rockwood e Tachdjian lado a lado; descrição da figura da quadril-0139 corrigida no resumo; amostra quadril-0078 da página inicial regenerada. |
 | 928 | Três versões 2 com temas novos: osteonecrose do joelho (campbell15-lesoes-condrais v2, 70 KB), artroscopia do cotovelo (netter-anatomia-cotovelo v2, 70 KB) e ossificação heterotópica (campbell15-rigidez-cotovelo v2, 70 KB, com HASTINGS e GRAHAM e BROOKER); 4 miniaulas da osteonecrose do joelho. |
 | 929 | Sindactilia e polidactilia: resumo novo (green-sindactilia-polidactilia, 61 KB, Green 7 caps. 35 a 38 com Tachdjian, Campbell, Lovell and Winter e HEBERT; 58 questões ligadas); 3 miniaulas do cotovelo (artroscopia e HASTINGS e GRAHAM). |
-| (este PR) | Cisto ósseo aneurismático: versão 2 do resumo de cisto ósseo simples (dahlin-cisto-osseo-simples, 70 KB, com USP6, primário e secundário, imagem, variante sólida e tratamento em quatro livros); 19 miniaulas de sindactilia e polidactilia (partes 1 e 3), com Green, Tachdjian, Campbell, Lovell and Winter e HEBERT lado a lado. |
+| 930 | Cisto ósseo aneurismático: versão 2 do resumo de cisto ósseo simples (dahlin-cisto-osseo-simples, 70 KB, com USP6, primário e secundário, imagem, variante sólida e tratamento em quatro livros); 19 miniaulas de sindactilia e polidactilia (partes 1 e 3), com Green, Tachdjian, Campbell, Lovell and Winter e HEBERT lado a lado. |
+| (este PR) | Osteoma osteoide: resumo novo (dahlin-osteoma-osteoide, 62 KB, Dahlin cap. 9 com o osteoblastoma, Campbell, Tachdjian, Lovell and Winter e HEBERT lado a lado); 10 miniaulas de sindactilia e polidactilia (parte 2, com a primeira dissertativa comentada, mao-1229). |
 
 ## Próximo
 
