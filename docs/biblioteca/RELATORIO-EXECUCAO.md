@@ -262,7 +262,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 900 | CRIAR síndrome do túnel do carpo (Green's Operative Hand Surgery, 7ª ed., caps. 28, 29, 31, 53 e 56; Campbell 15, caps. 82 e 78; HEBERT), mais 37 miniaulas de amputações e reimplantes da mão. |
 | 901 | 45 miniaulas de mão: dedo em gatilho e outras tenossinovites (24) e síndrome do túnel do carpo (21), com Green, Campbell e HEBERT lado a lado onde divergem. |
 | 902 | Artrite séptica v2 (sinovite transitória do quadril ligada ao resumo do Tachdjian 6, cap. 22, com Lovell and Winter 7 e HEBERT) e CRIAR lesões SLAP e do lábio superior (HEBERT, 5ª ed., caps. 5, 45 e 4; Campbell 15, caps. 57, 51 e 3). |
-| (este PR) | CRIAR três temas: osteocondroses (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 9; Tachdjian; Campbell 15; Rockwood and Wilkins), exame físico do cotovelo (HEBERT, 5ª ed., caps. 4, 48 e 47; Campbell 15; Green 7; Rockwood and Green) e hálux rígido (HEBERT, caps. 21.5 e 21.3; Campbell 15, caps. 87, 90, 55 e 36; Tachdjian). |
+| 903 | CRIAR três temas: osteocondroses (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 9; Tachdjian; Campbell 15; Rockwood and Wilkins), exame físico do cotovelo (HEBERT, 5ª ed., caps. 4, 48 e 47; Campbell 15; Green 7; Rockwood and Green) e hálux rígido (HEBERT, caps. 21.5 e 21.3; Campbell 15, caps. 87, 90, 55 e 36; Tachdjian). |
+| (este PR) | Tumores de partes moles v2 (sarcomas de partes moles ligados ao resumo do Campbell 15, cap. 30, com Tachdjian, Lovell and Winter e Green), mais 20 miniaulas: hálux rígido (10), osteocondroses (7) e exame do cotovelo (3). |
 
 ## Próximo
 
