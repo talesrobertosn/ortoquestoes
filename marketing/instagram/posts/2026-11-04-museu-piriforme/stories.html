@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Museu: piriforme (stories)</title>
+<!-- 3 stories, tema "peça de museu": questão quadril-0649 (OrtoQuestões Simulados, anatomia do quadril), gabarito A
+     (piriforme). Imagem real da questão (Netter, Atlas de Anatomia Ortopédica, 2ª ed.). Pouco texto: chamar atenção,
+     levar à propaganda e ao site. Stories sem figurinha.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-04-museu-piriforme/stories.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Playfair; src: url(../../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Playfair; font-style: italic; src: url(../../fontes/playfair-display-latin-wght-italic.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Jersey; src: url(../../fontes/jersey-10-latin-400-normal.woff2) format('woff2'); }
+:root { --noite: #0a1f1c; --verde2: #0b3a35; --ouro: #f4cf7c; --ouro2: #c99a3e; --creme: #f6eedb; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: var(--creme);
+  background: radial-gradient(ellipse 70% 45% at 50% 44%, #15524b 0%, var(--verde2) 45%, #071613 100%); }
+/* feixe de luz do teto */
+section::before { content: ''; position: absolute; left: 50%; top: -80px; width: 1300px; height: 1400px; transform: translateX(-50%);
+  background: radial-gradient(ellipse 38% 60% at 50% 0%, rgba(255,236,190,.22), transparent 70%); pointer-events: none; }
+.topo { position: absolute; left: 64px; right: 64px; top: 70px; display: flex; justify-content: space-between; align-items: center; z-index: 3; }
+.marca { display: inline-flex; align-items: center; gap: 12px; font: 800 30px Jakarta; letter-spacing: -.01em; }
+.marca img { width: 44px; height: 44px; }
+.marca span { font-weight: 500; }
+.cont { font: 400 42px Jersey; color: var(--ouro); }
+
+.rotulo { position: absolute; left: 0; right: 0; text-align: center; font: 800 24px Inter; letter-spacing: .32em; text-transform: uppercase; color: var(--ouro); }
+.titulo { position: absolute; left: 0; right: 0; text-align: center; font: 900 138px/1 Playfair; letter-spacing: -.02em; }
+.titulo em { font-style: italic; color: var(--ouro); }
+
+/* moldura dourada */
+.quadro { position: absolute; left: 50%; transform: translateX(-50%); padding: 26px; border-radius: 6px;
+  background: linear-gradient(135deg, #f8dc95, #b98a36 30%, #f4cf7c 55%, #94681f 80%, #e9c06a);
+  box-shadow: 0 50px 90px rgba(0,0,0,.6), inset 0 0 0 3px rgba(80,50,10,.45); }
+.quadro .pp { padding: 18px; background: #fbf8f1; box-shadow: inset 0 0 0 2px rgba(120,90,30,.25); }
+.quadro img { display: block; width: 920px; height: auto; }
+.quadro .zoom { position: relative; width: 920px; height: 820px; overflow: hidden; }
+.quadro .zoom img { position: absolute; width: 1380px; left: -330px; top: -100px; }
+
+.placa { position: absolute; left: 50%; transform: translateX(-50%); width: 720px; padding: 20px 28px; text-align: center;
+  background: linear-gradient(180deg, #f6eedb, #e6d9b8); color: #1b1a17; border-radius: 4px; box-shadow: 0 16px 30px rgba(0,0,0,.45); }
+.placa small { display: block; font: 800 18px Inter; letter-spacing: .26em; text-transform: uppercase; color: #7a5710; }
+.placa p { font: 600 29px/1.3 Inter; margin-top: 6px; }
+.fonte { position: absolute; left: 0; right: 0; text-align: center; font: 500 20px Inter; color: rgba(246,238,219,.55); }
+
+.alts { position: absolute; left: 64px; right: 64px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.alt { display: flex; align-items: center; gap: 18px; padding: 20px 24px; border: 2px solid rgba(244,207,124,.55); border-radius: 18px; background: rgba(7,22,19,.55); font: 700 36px Jakarta; letter-spacing: -.01em; }
+.alt b { display: grid; place-items: center; width: 58px; height: 58px; flex: none; border-radius: 12px; background: var(--ouro); color: var(--noite); font: 400 44px Jersey; }
+.alt.certa { background: var(--ouro); color: var(--noite); border-color: var(--ouro); box-shadow: 0 0 0 8px rgba(244,207,124,.2), 0 0 60px rgba(244,207,124,.45); }
+.alt.certa b { background: var(--noite); color: var(--ouro); }
+.alt.apaga { opacity: .3; }
+.pe { position: absolute; left: 0; right: 0; text-align: center; font: 600 28px Inter; color: rgba(246,238,219,.75); }
+.pe b { color: var(--ouro); }
+
+/* etiqueta da resposta sobre a imagem */
+.tag { position: absolute; z-index: 2; padding: 12px 24px; border-radius: 12px; background: var(--noite); color: var(--ouro); font: 900 46px Playfair; font-style: italic; box-shadow: 0 10px 24px rgba(0,0,0,.45); border: 3px solid var(--ouro); }
+.anel { position: absolute; z-index: 2; border: 6px solid var(--ouro); border-radius: 50%; box-shadow: 0 0 0 8px rgba(244,207,124,.25), 0 0 40px rgba(244,207,124,.6); }
+
+/* story 3 */
+.provas { position: absolute; left: 64px; right: 64px; display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; }
+.provas span { padding: 14px 26px; border-radius: 999px; border: 2px solid var(--ouro); font: 800 34px Jakarta; letter-spacing: -.01em; }
+.provas span.d { background: var(--ouro); color: var(--noite); }
+.tela { position: absolute; left: 50%; transform: translateX(-50%); width: 952px; padding: 16px; border-radius: 28px; background: #10100f; box-shadow: 0 50px 90px rgba(0,0,0,.6), 0 0 0 2px rgba(244,207,124,.4); }
+.tela .vid { height: 560px; overflow: hidden; border-radius: 16px; }
+.tela img { width: 1250px; display: block; margin: -70px 0 0 -60px; }
+.cta { position: absolute; left: 64px; right: 64px; padding: 34px 36px; border-radius: 26px; background: var(--ouro); color: var(--noite); text-align: center; box-shadow: 0 0 0 10px rgba(244,207,124,.18), 0 30px 70px rgba(0,0,0,.5); }
+.cta h3 { font: 800 84px/1 Jakarta; letter-spacing: -.04em; }
+.cta p { font: 600 32px Inter; margin-top: 12px; }
+.site { position: absolute; left: 0; right: 0; text-align: center; font: 800 44px Jakarta; letter-spacing: -.02em; }
+.site small { display: block; font: 700 22px Inter; letter-spacing: .2em; text-transform: uppercase; color: rgba(246,238,219,.6); margin-top: 8px; }
+</style></head><body>
+
+<!-- STORY 1: a peça (pergunta) -->
+<section id="s1-quem-e">
+  <div class="topo"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="cont">1/3</span></div>
+  <div class="rotulo" style="top:220px">Anatomia do quadril</div>
+  <div class="titulo" style="top:270px">Quem é <em>ele?</em></div>
+  <div class="quadro" style="top:470px"><div class="pp"><div class="zoom"><img src="../../../../public/imagens/quadril/quadril-0649-1.jpeg" alt=""></div></div></div>
+  <div class="placa" style="top:1360px"><small>Peça 0649 · OrtoQuestões Simulados</small><p>Na exposição dos rotadores laterais curtos do quadril, a seta identifica o músculo</p></div>
+  <div class="alts" style="top:1530px">
+    <div class="alt"><b>A</b>piriforme.</div>
+    <div class="alt"><b>B</b>gêmeo inferior.</div>
+    <div class="alt"><b>C</b>gêmeo superior.</div>
+    <div class="alt"><b>D</b>quadrado femoral.</div>
+  </div>
+  <div class="fonte" style="top:1760px">Fonte: Netter, Atlas de Anatomia Ortopédica, 2ª edição.</div>
+  <div class="pe" style="top:1810px">Escolha a sua letra. <b>Resposta no próximo story.</b></div>
+</section>
+
+<!-- STORY 2: a resposta -->
+<section id="s2-piriforme">
+  <div class="topo"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="cont">2/3</span></div>
+  <div class="rotulo" style="top:220px">Resposta A</div>
+  <div class="titulo" style="top:270px"><em>Piriforme.</em></div>
+  <div class="quadro" style="top:470px"><div class="pp"><div class="zoom"><img src="../../../../public/imagens/quadril/quadril-0649-1.jpeg" alt="">
+    <div class="anel" style="left:140px;top:220px;width:330px;height:150px;transform:rotate(12deg)"></div>
+    <div class="tag" style="left:30px;top:60px">piriforme</div>
+  </div></div></div>
+  <div class="placa" style="top:1360px"><small>Na prova</small><p>O mais alto dos rotadores laterais curtos. O isquiático costuma sair logo abaixo dele.</p></div>
+  <div class="alts" style="top:1550px">
+    <div class="alt certa"><b>A</b>piriforme.</div>
+    <div class="alt apaga"><b>B</b>gêmeo inferior.</div>
+    <div class="alt apaga"><b>C</b>gêmeo superior.</div>
+    <div class="alt apaga"><b>D</b>quadrado femoral.</div>
+  </div>
+</section>
+
+<!-- STORY 3: propaganda -->
+<section id="s3-treine">
+  <div class="topo"><span class="marca"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="cont">3/3</span></div>
+  <div class="rotulo" style="top:220px">OrtoQuestões Simulados</div>
+  <div class="titulo" style="top:270px;font-size:104px;line-height:1.02">No padrão<br><em>da prova.</em></div>
+  <div class="pe" style="top:510px;font-size:32px">Feitas por <b>engenharia reversa</b> das provas oficiais.</div>
+  <div class="tela" style="top:610px"><div class="vid"><img src="../../../kit/telas/t-lap-simulado.png" alt=""></div></div>
+  <div class="rotulo" style="top:1236px;font-size:21px">Questões oficiais e simulados para</div>
+  <div class="provas" style="top:1286px">
+    <span class="d">TEOT</span><span class="d">TARO</span><span>SBCM</span><span>SIMÃO</span><span>R4 Coluna</span><span>Fellowship de Quadril</span>
+  </div>
+  <div class="cta" style="top:1500px"><h3>Treine grátis</h3><p>Crie sua conta: é gratuito.</p></div>
+  <div class="site" style="top:1752px">ortoquestoes.com.br<small>O caminho está no perfil</small></div>
+</section>
+</body></html>

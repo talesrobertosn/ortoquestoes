@@ -42,4 +42,4 @@ agente) também entram aqui: o dono avisa e o id é anotado.
 | trauma-0764 | Fratura do colo do tálus, Hawkins III: subtalar e tibiotalar (TEOT 2025) | posts/2026-10-31-casa-assombrada-talus (stories) |
 | pediatria-0525 | Fratura fisária do úmero distal no lactente, que imita luxação (TARO 2025) | posts/2026-11-01-grupo-cotovelo-lactente (feed) |
 | ombro-cotovelo-0454 | Lesão traumática do subescapular: não leva a mão às costas, reparo cirúrgico (TARO 2024) | posts/2026-11-01-grupo-cotovelo-lactente (stories) |
-| ombro-cotovelo-0646 | Túnel cubital: teto (Osborne + aponeurose do FUC) e assoalho (cápsula + LCM posterior e transverso) (Simulados, padrão SIMÃO 2026) | posts/2026-11-04-classificados-tunel-cubital (stories) |
+| quadril-0649 | Piriforme, o mais alto dos rotadores laterais curtos, com a figura do Netter (Simulados, anatomia do quadril) | posts/2026-11-04-museu-piriforme (stories) |
