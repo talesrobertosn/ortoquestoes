@@ -9,8 +9,8 @@ import { Icone } from './Icone'
 const FotoComentarioJanela = lazy(() => import('../admin/FotoComentarioJanela'))
 
 /**
- * Atalhos só para administradores, no pé da questão: "Foto no comentário"
- * (rápido, sem sair da questão) e "Editar questão" (o editor completo do painel).
+ * Atalhos só para administradores, no pé da questão: "Adicionar imagem" (no
+ * comentário, rápido, sem sair da questão) e "Editar questão" (o editor completo do painel).
  */
 export function EditarQuestaoAdmin({ questao, aoSalvarComentario }: { questao: Questao; aoSalvarComentario?: (c: ComentarioIA) => void }) {
   const { sessao } = usarConta()
@@ -18,7 +18,7 @@ export function EditarQuestaoAdmin({ questao, aoSalvarComentario }: { questao: Q
   const [foto, definirFoto] = useState(false)
   if (!admin) return null
   return <>
-    <button type="button" className="qz-rodape__link" onClick={() => definirFoto(true)}><Icone nome="imagem" tamanho={16} /> Foto no comentário</button>
+    <button type="button" className="qz-rodape__link" title="Cole uma imagem no comentário desta questão" onClick={() => definirFoto(true)}><Icone nome="imagem" tamanho={16} /> Adicionar imagem</button>
     <a className="qz-rodape__link" href={href(`/admin?aba=questoes&id=${encodeURIComponent(questao.id)}`)} target="_blank" rel="noopener noreferrer"><Icone nome="lapis" tamanho={16} /> Editar questão</a>
     {foto && <Suspense fallback={null}>
       <FotoComentarioJanela questao={questao} aoFechar={() => definirFoto(false)} aoSalvar={c => aoSalvarComentario?.(c)} />

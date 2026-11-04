@@ -8,7 +8,7 @@ import type { ComentarioIA, Imagem, Questao } from '../dados/tipos'
 import { usarIndice } from '../dados/usarIndice'
 import { chamarRpc, chamarRpcPublica } from '../servicos/supabase'
 import { href } from '../util/rotas'
-import { enviarImagens, imagensDaTransferencia, type ImagemLocal } from './imagensQuestao'
+import { enviarImagens, imagensDaAreaDeTransferencia, imagensDaTransferencia, type ImagemLocal } from './imagensQuestao'
 import './FotoComentarioJanela.css'
 
 interface Nova extends ImagemLocal { chave: string; previa: string; legenda: string; fonte: string }
@@ -95,14 +95,29 @@ export default function FotoComentarioJanela({ questao, aoFechar, aoSalvar }: { 
   }
 
   const carregado = comentario !== undefined && edicao !== null
+  // Abriu com uma imagem já copiada: ela entra sozinha, falta só salvar.
+  const puxou = useRef(false)
+  useEffect(() => {
+    if (!carregado || !comentario || puxou.current) return
+    puxou.current = true
+    void imagensDaAreaDeTransferencia().then(lista => { if (lista.length) adicionar(lista) })
+  }, [carregado, comentario])
+  // Ctrl+Enter (ou Cmd+Enter) salva sem tirar a mão do teclado.
+  const salvarRef = useRef(salvar)
+  salvarRef.current = salvar
+  useEffect(() => {
+    const teclar = (e: KeyboardEvent) => { if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); void salvarRef.current() } }
+    document.addEventListener('keydown', teclar)
+    return () => document.removeEventListener('keydown', teclar)
+  }, [])
   const editarCompleto = href(`/admin?aba=questoes&id=${encodeURIComponent(id)}`)
 
-  return <JanelaCentral aberta aoFechar={() => { if (!salvando) aoFechar() }} rotulo={`Foto no comentário da questão ${id}`} className="fc">
+  return <JanelaCentral aberta aoFechar={() => { if (!salvando) aoFechar() }} rotulo={`Adicionar imagem ao comentário da questão ${id}`} className="fc">
     <div className="fc__corpo">
       <header className="fc__cabeca">
         <p className="fc__rotulo">Só administradores · {id}</p>
-        <h2>Foto no comentário</h2>
-        <p className="fc__dica">Cole com <kbd>Ctrl</kbd>+<kbd>V</kbd>, arraste a imagem para cá ou escolha um arquivo. Ela é reduzida antes de subir e aparece logo abaixo do conceito-chave.</p>
+        <h2>Adicionar imagem ao comentário</h2>
+        <p className="fc__dica">A imagem que você copiou já entra sozinha. Se não entrar, cole com <kbd>Ctrl</kbd>+<kbd>V</kbd>, arraste ou escolha um arquivo. Salve com <kbd>Ctrl</kbd>+<kbd>Enter</kbd>: ela é reduzida e aparece logo abaixo do conceito-chave.</p>
       </header>
 
       {!carregado && !erro && <p className="fc__estado" role="status">Abrindo o comentário…</p>}
