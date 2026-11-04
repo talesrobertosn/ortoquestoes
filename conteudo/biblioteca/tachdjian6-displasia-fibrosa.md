@@ -1,27 +1,25 @@
 ---
 id: tachdjian6-displasia-fibrosa
-versao: 1
+versao: 2
 titulo: Displasia fibrosa e lesões fibro-ósseas afins
 especialidade: tumores
 acesso: gratis
 livro: Tachdjian's Pediatric Orthopaedics
-edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26, 27 e 29), o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), e o Sizínio Hebert, 5ª ed. (cap. 29)
+edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26, 27 e 29), o Dahlin's Bone Tumors, 6ª ed. (caps. 24 e 26), o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13), o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), e o Sizínio Hebert, 5ª ed. (cap. 29)
 capitulo: Capítulo 25 · Benign Musculoskeletal Tumors
 autores: John A. Herring (editor)
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (Fibrous Dysplasia, Osteofibrous Dysplasia of the Tibia and Fibula e Nonossifying Fibroma and Fibrous Cortical Defect, p. 1013 a 1018, 1042 e 1043); Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (Fibrous Lesions e Tabela 27.3, p. 932 a 937), cap. 26 (p. 869.e1, 870 e 873) e cap. 29 (osteossarcoma secundário e adamantinoma, p. 972, 975 e 983); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7 (fraturas patológicas, p. 104 a 109 pelo índice); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (displasia fibrosa, sem página impressa no cabeçalho). As páginas citadas são as impressas.
-subtemas: Displasia fibrosa
-resumo: Displasia fibrosa é falha de maturação do osso trançado por mutação da Gs alfa (Arg201), mono ou poliostótica, com vidro fosco, letras chinesas sem rima osteoblástica e cajado de pastor (varo do fêmur proximal); McCUNE-ALBRIGHT soma café com leite (costa do Maine) e endocrinopatia, MAZABRAUD soma mixomas intramusculares; fraturas consolidam rápido com calo endosteal pobre, enxerto esponjoso é reabsorvido, haste intramedular e enxerto cortical são a base, radioterapia é proibida; a displasia osteofibrosa de CAMPANACCI (fibroma ossificante) é intracortical anterior na tíbia, com rima osteoblástica e parente do adamantinoma; o fibroma não ossificante é excêntrico metafisário, fratura no estágio B de RITSCHL e com café com leite forma o JAFFE-CAMPANACCI; o desmoide cortical fica na face posteromedial da metáfise distal do fêmur.
+fonte: Livros conferidos localmente em 01/11/2026 e 04/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (p. 1013 a 1018, 1042 e 1043); Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (p. 932 a 937 e Tabela 27.3), cap. 26 (p. 869.e1, 870 e 873) e cap. 29 (p. 972, 975 e 983); Dahlin's Bone Tumors, 6ª ed. (2010), cap. 24 (Adamantinoma of Long Bones, p. 286 a 293) e cap. 26 (Osteofibrous Dysplasia, p. 327 a 330); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (Tabela 13-2, p. 432; Osteofibrous Dysplasia e adamantinoma, p. 452 e 453); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7 (p. 104 a 109 pelo índice); Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed., cap. 29 (sem página impressa no cabeçalho). As páginas citadas são as impressas.
+subtemas: Displasia fibrosa; Displasia osteofibrosa e adamantinoma; Fibroma não ossificante e defeito fibroso cortical
+resumo: Displasia fibrosa é falha de maturação do osso trançado por mutação da Gs alfa (Arg201), intramedular, com vidro fosco, letras chinesas sem rima osteoblástica e cajado de pastor; McCUNE-ALBRIGHT soma café com leite e endocrinopatia, MAZABRAUD soma mixomas; a fratura consolida rápido com calo endosteal pobre, e a base é haste intramedular e enxerto cortical, sem radioterapia; a displasia osteofibrosa de CAMPANACCI nasce no córtex anterior da diáfise da tíbia da criança, tem rima osteoblástica, é observada e recidiva se curetada; o adamantinoma, seu diferencial maligno de baixo grau, dá lucências múltiplas em bolhas na diáfise da tíbia (85% a 90%) na 2ª e 3ª décadas, tem ilhas epiteliais com queratina, é radio e quimiorresistente, pede ressecção ampla e metastatiza tarde; o fibroma não ossificante é excêntrico metafisário, fratura no RITSCHL B e com café com leite forma o JAFFE-CAMPANACCI.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado no capítulo 25 do Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), com o capítulo 27 do Campbell's Operative Orthopaedics, 15ª ed., o Rockwood and Wilkins' Fractures in Children, 10ª ed., e o Sizínio Hebert, 5ª ed. As páginas citadas são as impressas.
+Este resumo parte do capítulo 25 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 26, 27 e 29), o Dahlin's Bone Tumors, 6ª ed. (caps. 24 e 26), o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13), o Rockwood and Wilkins' Fractures in Children, 10ª ed., e o Sizínio Hebert, 5ª ed. Páginas impressas. Nesta segunda versão, a displasia osteofibrosa e o adamantinoma ganharam seções próprias, com os livros comparados.
 
 O tema reúne um grupo de lesões em que o osso é trocado, em parte, por tecido fibroso. A ideia que organiza tudo é simples: **o tecido fibroso que ocupa o lugar do osso não aguenta carga como osso lamelar**. Daí saem as fraturas, as deformidades (o cajado de pastor), a recidiva depois da curetagem e a reabsorção do enxerto. O que muda entre as lesões é onde o tecido fica, quem tem e o que vem junto.
 
-A banca brasileira cobra quatro blocos com muita regularidade: as **síndromes** (McCUNE-ALBRIGHT contra MAZABRAUD contra JAFFE-CAMPANACCI, que aparecem quase todo ano como alternativas umas das outras); a **localização** do fibroma não ossificante (excêntrico na metáfise) e do desmoide cortical (posteromedial no fêmur distal); a **fratura na displasia fibrosa** (consolida rápido, calo endosteal pobre; varo do fêmur proximal); e a **displasia osteofibrosa**, também chamada de fibroma ossificante dos ossos longos, que mora na tíbia.
-
-> **Na prova:** McCUNE-ALBRIGHT = poliostótica + **café com leite** + **endocrinopatia**; MAZABRAUD = poliostótica + **mixomas intramusculares**; JAFFE-CAMPANACCI = **múltiplos fibromas não ossificantes** + café com leite; fibroma não ossificante = **excêntrico na metáfise**; fratura só no **RITSCHL B**; desmoide cortical = **posteromedial** da metáfise distal do fêmur; fibroma ossificante = **tíbia**.
+A banca cobra cinco blocos: as **síndromes** (McCUNE-ALBRIGHT, MAZABRAUD e JAFFE-CAMPANACCI, trocadas entre si); a **localização** do fibroma não ossificante (excêntrico na metáfise) e do desmoide cortical (posteromedial no fêmur distal); a **fratura na displasia fibrosa** (rápida, calo endosteal pobre; varo do fêmur proximal); a **displasia osteofibrosa** (fibroma ossificante, córtex anterior da tíbia); e o **adamantinoma**, seu diferencial maligno (lucências na diáfise da tíbia, 2ª e 3ª décadas, ressecção ampla).
 
 # Displasia fibrosa: o que é, de onde vem e quem tem {radar=confirmado}
 
@@ -31,7 +29,7 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1013), conta que o te
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 933), define a displasia fibrosa como uma **anomalia do desenvolvimento da formação óssea**, monostótica ou poliostótica, cuja marca é a **substituição do osso normal e da medula por tecido fibroso e pequenas espículas de osso trançado**. O Campbell acrescenta um detalhe que contradiz uma ideia comum: a lesão **pode ocorrer na epífise, na metáfise ou na diáfise**. O Tachdjian (p. 1014) é mais restritivo: nos ossos longos, a lesão começa na metáfise ou na diáfise e **raramente** atinge a epífise. As duas afirmações convivem: a epífise pode ser atingida, mas é exceção.
 
-O Sizínio Hebert, 5ª ed. (cap. 29), descreve a displasia fibrosa como **lesão benigna ativa, pseudotumoral, osteofibrosa**, com substituição do osso lamelar por tecido fibroso que contém trabéculas de osso imaturo, e frisa que é **lesão do esqueleto em crescimento**: as lesões progridem enquanto o esqueleto cresce e ficam **quiescentes depois da maturidade**. A **regressão é rara**.
+O Sizínio Hebert, 5ª ed. (cap. 29), a chama de **lesão benigna ativa, pseudotumoral**, do **esqueleto em crescimento**: progride enquanto o esqueleto cresce, fica **quiescente depois da maturidade**, e a **regressão é rara**.
 
 ## O mecanismo: osso que não amadurece
 
@@ -43,7 +41,7 @@ Isso explica dois fatos de prova: o osso trançado imaturo é mecanicamente frac
 
 Aqui os livros divergem. O Tachdjian (p. 1013) diz que a displasia fibrosa é **mais frequente em meninas que em meninos, sobretudo a forma poliostótica**, e que a maioria das lesões provavelmente existe desde cedo, mas só fica evidente **no fim da infância ou na adolescência**. A Tabela 27.3 do Campbell (p. 934) registra a displasia fibrosa nas **1ª a 3ª décadas** e com distribuição **masculino = feminino**. O Sizínio diz que a **síndrome de McCUNE-ALBRIGHT é quase exclusiva de meninas**, o que concilia os dois: o excesso feminino está concentrado na forma poliostótica com endocrinopatia, enquanto a doença como um todo tem distribuição parecida entre os sexos.
 
-Quanto à forma mais comum, o Tachdjian descreve a monostótica como a forma em que muitos pacientes ficam **assintomáticos** até uma fratura ou aumento de volume, a poliostótica como **mais grave** e a poliostótica com alterações endócrinas como **a menos comum** das três. O Campbell, no capítulo de princípios (cap. 26, p. 869.e1 e 870), põe a displasia fibrosa entre os diagnósticos diferenciais das **lesões diafisárias** (5 a 30 anos) e também das **lesões múltiplas**.
+O Campbell (cap. 26, p. 869.e1 e 870) põe a displasia fibrosa entre os diferenciais das **lesões diafisárias** (5 a 30 anos) e das **lesões múltiplas**.
 
 !questoes central=tumores-0023
 conceito: A displasia fibrosa é mais comum na forma monostótica, que costuma ficar silenciosa; a distribuição entre os sexos é semelhante (Campbell, Tabela 27.3), com predomínio feminino concentrado na poliostótica e no McCUNE-ALBRIGHT.
@@ -86,7 +84,7 @@ O Campbell (p. 933 e Tabela 27.3) define a síndrome de **MAZABRAUD** como **dis
 
 ## Como não confundir as três síndromes
 
-Ancore cada nome no que vem junto: McCUNE-ALBRIGHT traz **pele e hormônio**; MAZABRAUD traz **músculo** (mixoma); JAFFE-CAMPANACCI traz **pele com múltiplos fibromas não ossificantes**, não com displasia fibrosa. As bancas trocam exatamente essas peças.
+McCUNE-ALBRIGHT traz **pele e hormônio**; MAZABRAUD, **músculo**; JAFFE-CAMPANACCI, **pele com fibromas não ossificantes**.
 
 !tabela Síndromes das lesões fibrosas (Campbell 15, cap. 27, p. 933 e Tabela 27.3; Tachdjian, cap. 25, p. 1013 e 1014)
 | Síndrome | Lesão óssea | O que vem junto |
@@ -114,7 +112,7 @@ Ao microscópio, o achado é de **focos irregulares de trabéculas de osso tran�
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, Tabela 27.3 e p. 935), resume a histologia como **espículas irregulares de osso trançado com estroma fibroso** e registra pequenas áreas de **metaplasia cartilaginosa** e alterações císticas.
 
-Por que a falta de osteoblastos em volta das espículas importa? Porque mostra que aquele osso não está sendo construído de modo organizado: ele nasce por metaplasia direta do estroma fibroso, sem a camada de osteoblastos que, no osso normal, deposita lamela sobre lamela. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), descreve justamente isso: osso trançado **formado por metaplasia**, com trabéculas mal orientadas, o que resulta em **menor resistência, deformidade e fratura patológica**.
+A falta de osteoblastos em volta das espículas mostra que esse osso nasce por **metaplasia** direta do estroma, sem a camada que deposita lamela sobre lamela; o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), tira a consequência: trabéculas mal orientadas, **menor resistência, deformidade e fratura patológica**.
 
 !tabela Histologia comparada das lesões fibro-ósseas (Tachdjian, cap. 25, p. 1013, 1017 e 1042; Campbell 15, cap. 27, Tabela 27.3 e p. 933 e 935; cap. 29, p. 983)
 | Lesão | Achado-chave | Osteoblastos nas espículas | Outros |
@@ -140,13 +138,13 @@ O Tachdjian (p. 1014) explica a densidade da lesão por dois fatores: **quanto o
 
 As lesões menores ficam confinadas à medula, muitas vezes cercadas de **esclerose**, e podem parecer "bolhosas" ou trabeculadas. O comum, porém, é a **substituição lenta do córtex** à medida que a lesão se expande. Lesões maiores dão expansão lisa, central ou excêntrica, mas em geral **contidas por uma rima de osso periosteal**.
 
-O Sizínio descreve a mesma imagem com outras palavras: lesões **radiolucentes intramedulares** de aspecto "nebuloso", o **vidro fosco**; as mais ossificadas ficam escleróticas e densas; há **perda da distinção entre córtex e canal**, dando a imagem de um "osso maciço"; a zona de esclerose reacional em volta é o **"sinal do anel"**; e a expansão do osso é **rara**. Para o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), a lesão é **lítica e central, na diáfise**; para a Tabela 27.3 do Campbell, **vidro fosco com borda esclerótica bem definida**.
+O Sizínio fala em lesões **radiolucentes intramedulares** "nebulosas", **perda da distinção entre córtex e canal** ("osso maciço") e esclerose reacional em volta, o **"sinal do anel"**. Para o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), a lesão é **lítica e central, na diáfise**; para a Tabela 27.3 do Campbell, **vidro fosco com borda esclerótica bem definida**.
 
 ## O cajado de pastor: varo do fêmur proximal
 
-O exemplo clássico da deformidade, diz o Tachdjian (p. 1014), é o **fêmur proximal**. **Microfraturas repetidas** levam ao **"cajado de pastor"**, com dor, **varo importante do colo femoral**, encurtamento do fêmur, **marcha de TRENDELENBURG** evidente e mobilidade limitada. A deformidade pode ocorrer em todos os ossos longos, **mas em geral não no grau visto no fêmur**. Na imagem (p. 1014), o Tachdjian acrescenta que a deformidade angular pode surgir no fêmur proximal e **às vezes no úmero**, sempre como resultado da **remodelação após microfraturas repetidas ou fraturas evidentes** pelo osso displásico. A figura 25.13 do livro mostra um menino de 9 anos cujo fêmur, 6 anos depois, tinha desenvolvido o cajado.
+O exemplo clássico da deformidade, diz o Tachdjian (p. 1014), é o **fêmur proximal**. **Microfraturas repetidas** levam ao **"cajado de pastor"**, com dor, **varo importante do colo femoral**, encurtamento do fêmur, **marcha de TRENDELENBURG** evidente e mobilidade limitada. A deformidade pode ocorrer em todos os ossos longos, **mas em geral não no grau visto no fêmur**. Na imagem (p. 1014), o Tachdjian acrescenta que a deformidade angular pode surgir no fêmur proximal e **às vezes no úmero**, sempre como resultado da **remodelação após microfraturas repetidas ou fraturas evidentes** pelo osso displásico.
 
-O Sizínio (figura 29.63) descreve a sequência: encurvamento sob carga, **sobrecarga medial com reabsorção óssea lateral** na região do trocânter maior, e o estágio pré-fratura, tratado com **osteotomia valgizante** e fixação com placa. O Rockwood lembra que as fraturas patológicas do fêmur proximal são especialmente problemáticas pela tendência à **consolidação viciosa ou à deformidade progressiva, levando à coxa vara e ao cajado de pastor**.
+O Sizínio descreve a sequência: encurvamento sob carga, **sobrecarga medial com reabsorção lateral** no trocânter maior e o estágio pré-fratura, tratado com **osteotomia valgizante** e placa. O Rockwood lembra que as fraturas patológicas do fêmur proximal são especialmente problemáticas pela tendência à **consolidação viciosa ou à deformidade progressiva, levando à coxa vara e ao cajado de pastor**.
 
 !questoes central=tumores-0253
 conceito: O local clássico da deformidade em varo da displasia fibrosa é o fêmur proximal, onde microfraturas repetidas e a carga produzem coxa vara e o cajado de pastor.
@@ -156,7 +154,7 @@ armadilha: Escolher o úmero proximal, que também pode deformar (o Tachdjian di
 
 ## Diagnóstico diferencial pela imagem
 
-O Tachdjian (p. 1015) diz que, na monostótica, pode ser difícil distinguir **lesões pequenas** do **cisto ósseo simples** na radiografia; menos vezes, elas se confundem com **histiocitose ou encondroma**, e a biópsia pode ser necessária. As **lesões grandes**, com córtex afinado e vidro fosco, **dispensam biópsia**, e a poliostótica é reconhecida de imediato na radiografia. O Rockwood também põe o cisto ósseo unicameral como o diferencial difícil e diz que a **RM ajuda**.
+O Tachdjian (p. 1015) diz que, na monostótica, pode ser difícil distinguir **lesões pequenas** do **cisto ósseo simples** na radiografia; menos vezes, com **histiocitose ou encondroma**. As **lesões grandes** com vidro fosco **dispensam biópsia**. O Rockwood também aponta o cisto unicameral e diz que a **RM ajuda**.
 
 O Sizínio amplia a lista: **encondroma**, **encondromatose** (OLLIER também prefere um dimídio), **fibroma desmoide**, **displasia osteofibrosa** e **adamantinoma** (na tíbia), **cisto ósseo solitário** e **neurofibromatose** (tíbia da criança). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 29, p. 972), acrescenta uma armadilha de adulto: o **osteossarcoma intramedular de baixo grau**, de curso indolente e aspecto benigno, pode ser confundido na radiografia e na histologia com **osteoblastoma ou displasia fibrosa**.
 
@@ -181,9 +179,9 @@ alerta: O Rockwood and Wilkins (cap. 7) sustenta o gabarito palavra por palavra;
 
 ## Tratamento da fratura
 
-O Rockwood propõe tratamento **conservador, ao menos de início, com imobilização** para a maioria, com duas exceções: fraturas em **ossos longos muito deformados** (sobretudo dos membros inferiores) e fraturas em **grandes áreas císticas**. As fraturas da **poliostótica** muitas vezes pedem tratamento **mais agressivo**. Quando a fratura é operada, a **fixação interna** é a chave, e a preferência é por **fixação intramedular com partilha de carga**, que diminui o estresse na interface metal-osso e de preferência oferece **"fixação do osso inteiro"**, combinada com correção da deformidade para reduzir novas fraturas.
+O Rockwood indica **imobilização** de início na maioria, exceto em **ossos longos muito deformados**, **grandes áreas císticas** e na **poliostótica**. Operando, prefere **fixação intramedular com partilha de carga**, de preferência do **osso inteiro**, com correção da deformidade.
 
-O Tachdjian (p. 1016) aponta que o objetivo principal é **realinhar o osso deformado**, sobretudo nos membros inferiores que carregam peso. Na **criança pequena**, o **gesso** costuma bastar. Se as fraturas se repetem nos ossos longos ou se a fratura é do **fêmur proximal**, a cirurgia é a preferida. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 935), concorda: fraturas reais ou **iminentes** são mais bem tratadas com **fixação intramedular quando possível**; a Tabela 27.3 fala em **fixação profilática da fratura iminente**.
+Para o Tachdjian (p. 1016), o objetivo é **realinhar o osso**; na **criança pequena**, o **gesso** basta; fraturas repetidas ou do **fêmur proximal** pedem cirurgia. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 935), concorda: fraturas reais ou **iminentes** são mais bem tratadas com **fixação intramedular quando possível**; a Tabela 27.3 fala em **fixação profilática da fratura iminente**.
 
 !tabela Fratura na displasia fibrosa: o que cada livro diz (Rockwood and Wilkins, cap. 7; Tachdjian, cap. 25, p. 1014 a 1016; Campbell 15, cap. 27, p. 935)
 | Ponto | Rockwood and Wilkins | Tachdjian | Campbell |
@@ -209,17 +207,17 @@ Para dor óssea ou lesões que a cirurgia não melhora (em especial no McCUNE-AL
 
 O Tachdjian (p. 1016) enumera as indicações: **fraturas patológicas repetidas**, lesões que causam **deformidade importante ou progressiva** que ameaça a integridade do osso longo, **desfiguração inaceitável** e **dor persistente**. O Campbell (p. 935) dá uma lista equivalente: deformidade importante, fratura patológica ou dor importante.
 
-Existe uma exceção proposta à regra de não operar a criança sem fratura ou deformidade: a **displasia fibrosa infantil**. Nessas crianças com doença poliostótica, a **cirurgia precoce** para prevenir deformidades difíceis de corrigir depois pode trazer benefício duradouro, e a **haste intramedular profilática** de tamanho adequado foi a mais eficaz (Tachdjian, p. 1015). Já no **adulto**, o enxerto ósseo na displasia fibrosa foi relatado com **mais sucesso** em curar o osso displásico.
+A exceção proposta é a **displasia fibrosa infantil** poliostótica: **cirurgia precoce** com **haste intramedular profilática** previne deformidades (Tachdjian, p. 1015). No **adulto**, o enxerto teve **mais sucesso**.
 
 ## Fixação no fêmur proximal
 
-O fêmur proximal concentra a discussão técnica. O Tachdjian (p. 1016) diz que, no **varo leve**, a correção com **parafuso de compressão com placa lateral** tem algum sucesso, mas a natureza mecânica do osso displásico leva à **perda gradual da fixação e ao varo recorrente**, terminando no cajado de pastor. A **fixação intramedular do colo e da diáfise, combinada a osteotomias corretivas**, oferece a **melhor chance** de estabilizar a deformidade. São cirurgias difíceis: a **falta de córtex** torna difícil passar a haste, e a **perda sanguínea pode ser grande** pela vascularização aumentada do osso. A deformidade pode voltar mesmo assim. O Campbell (p. 935 e figura 27.14) diz que as deformidades são corrigidas por **osteotomia com fixação interna**.
+O fêmur proximal concentra a discussão técnica. O Tachdjian (p. 1016) diz que, no **varo leve**, a correção com **parafuso de compressão com placa lateral** tem algum sucesso, mas a natureza mecânica do osso displásico leva à **perda gradual da fixação e ao varo recorrente**, terminando no cajado de pastor. A **fixação intramedular do colo e da diáfise, combinada a osteotomias corretivas**, oferece a **melhor chance** de estabilizar a deformidade. São cirurgias difíceis: a **falta de córtex** torna difícil passar a haste, e a **perda sanguínea pode ser grande** pela vascularização aumentada do osso. A deformidade pode voltar mesmo assim. O Campbell (p. 935) diz que as deformidades são corrigidas por **osteotomia com fixação interna**.
 
 ## O enxerto: cortical vence esponjoso
 
 O Tachdjian (p. 1016) cita **ENNEKING e GEAREN**: o **enxerto cortical em escora** reforça o fêmur proximal melhor que o esponjoso, e o **aloenxerto cortical** reabsorve **mais devagar**. Mas um estudo extenso, com **23 pacientes e 52 enxertos** acompanhados por **19,6 anos** em média, mostrou **alta probabilidade de reabsorção** com o tempo: os enxertos duraram mais nos pacientes mais velhos, e **estrutural, aloenxerto e autoenxerto foram igualmente mal** (p. 1016). O Campbell (p. 935) diz que, como a recidiva após curetagem e enxerto é alta, o **enxerto cortical é preferido** ao esponjoso e aos substitutos, pela **reabsorção mais lenta**. O Rockwood diz que curetagem e enxerto em geral **não estão indicados**, porque o enxerto é reabsorvido e trocado por osso displásico, e que o **aloenxerto cortical** parece ser o mais resistente.
 
-E no esqueleto maduro? O Tachdjian (p. 1016) lembra que as **artroplastias totais de quadril e de joelho** podem dar alguns anos de alívio da dor e melhora da função, mas **acabam soltando**, porque a interface óssea **não tem estabilidade cortical**.
+No esqueleto maduro, as **artroplastias** aliviam por alguns anos, mas **acabam soltando** por falta de estabilidade cortical (Tachdjian, p. 1016).
 
 !tabela Opções cirúrgicas na displasia fibrosa e o que esperar (Tachdjian, cap. 25, p. 1015 e 1016; Campbell 15, cap. 27, p. 935; Rockwood and Wilkins, cap. 7)
 | Opção | Resultado descrito |
@@ -238,37 +236,37 @@ E no esqueleto maduro? O Tachdjian (p. 1016) lembra que as **artroplastias totai
 
 ## Quão rara e por quê
 
-Os livros concordam que a malignização é **rara**, mas discordam no número. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1014 e 1015), diz que a transformação maligna é rara mas foi relatada, que **quando ocorre o prognóstico é ruim** e que a **maioria dos casos ocorre em pacientes que receberam radioterapia**. A conclusão prática é direta: **a radioterapia deve ser evitada** na displasia fibrosa pela associação com a transformação maligna. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 933), diz que a mudança maligna é **extremamente rara** e foi relatada **com e sem radioterapia prévia**. No capítulo de tumores malignos (cap. 29, p. 975), o Campbell põe a displasia fibrosa entre as condições associadas ao **osteossarcoma secundário**, mas frisa que esses casos são **extremamente raros** e que a relação causal **não está estabelecida**; o osteossarcoma pós-radiação aparece em média **10 a 15 anos** depois da exposição.
+A malignização é **rara** em todos os livros. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1014 e 1015), diz que, quando ocorre, **o prognóstico é ruim** e a **maioria dos casos recebeu radioterapia**; por isso **a radioterapia deve ser evitada**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 933), diz **extremamente rara**, relatada **com e sem radioterapia**; no cap. 29 (p. 975), põe a displasia fibrosa entre as condições do **osteossarcoma secundário**, com relação causal **não estabelecida**, e o osteossarcoma pós-radiação surge em média **10 a 15 anos** depois. O Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 327), confirma que o sarcoma **surge também de modo espontâneo**, com incidência baixa.
 
 O Sizínio Hebert, 5ª ed. (cap. 29), é o único que dá um número: transformação para **osteossarcoma, fibrossarcoma, condrossarcoma ou fibro-histiocitoma maligno** em cerca de **2,4%**, podendo ocorrer de modo **espontâneo**.
 
 ## Como suspeitar
 
-O Tachdjian (p. 1015) lista os sinais de alarme: **áreas maiores de radiolucência pura, destruição cortical e massa de partes moles**. Note que todos contrariam o comportamento esperado da displasia fibrosa, que fica contida por uma rima de osso periosteal e não destrói o córtex. O Campbell (cap. 26, p. 870) lembra a regra geral: expansão cortical pode existir em lesões benignas agressivas, mas **destruição cortical franca costuma ser sinal de malignidade**.
+O Tachdjian (p. 1015) lista os sinais de alarme: **radiolucência pura extensa, destruição cortical e massa de partes moles**, tudo o que a displasia fibrosa, contida por osso periosteal, não faz. O Campbell (cap. 26, p. 870) generaliza: **destruição cortical franca costuma ser sinal de malignidade**.
 
 # Displasia osteofibrosa de CAMPANACCI: o fibroma ossificante da tíbia {radar=confirmado}
 
 ## Nomes e história
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1016 e 1017), conta que a lesão foi relatada pela primeira vez por **FRANGENHEIM em 1921**, com o nome de osteíte fibrosa congênita. Outros nomes usados: displasia fibrosa congênita, defeito fibroso congênito da tíbia e **fibroma ossificante**. O nome **displasia osteofibrosa da tíbia e da fíbula** foi proposto por **CAMPANACCI em 1976**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 935), chama a lesão de **fibroma ossificante dos ossos longos** ou **doença de CAMPANACCI**, rara, de **tíbia e fíbula**.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1016 e 1017), conta que a lesão foi relatada por **FRANGENHEIM em 1921** como osteíte fibrosa congênita; outros nomes foram displasia fibrosa congênita, defeito fibroso congênito da tíbia e **fibroma ossificante**. O nome **displasia osteofibrosa da tíbia e da fíbula** veio de **CAMPANACCI em 1976**. O Dahlin's Bone Tumors, 6ª ed. (cap. 26, p. 327), acrescenta a origem da briga sobre o nome: **KEMPSON**, que a descreveu como fibroma ossificante em 1966, achava a lesão **agressiva**; **CAMPANACCI** a via como **benigna e com regressão espontânea** e por isso preferiu "osteofibrosa". O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 935), usa **fibroma ossificante dos ossos longos** e **doença de CAMPANACCI**.
 
 ## Parente da displasia fibrosa ou do adamantinoma?
 
-A displasia osteofibrosa já foi descrita como **variante da displasia fibrosa**, mas a biologia molecular separou as duas: a **mutação da Gs alfa no códon Arg201 está presente na displasia fibrosa e ausente na osteofibrosa**, o que sugere patogêneses diferentes (Tachdjian, p. 1016). Ao mesmo tempo, a osteofibrosa parece ter **relação histogenética com o adamantinoma**: **células citoqueratina positivas** aparecem no estroma da osteofibrosa e do adamantinoma, mas **não** na displasia fibrosa. A literatura discute se ela é **reação secundária a um adamantinoma ou precursora** dele (p. 1017).
+Aqui os livros não falam a mesma língua. O Tachdjian (p. 1016 e 1017) separa a osteofibrosa da displasia fibrosa pela biologia molecular: a **mutação da Gs alfa no códon Arg201 está na displasia fibrosa e falta na osteofibrosa**. Ao mesmo tempo, aproxima a osteofibrosa do adamantinoma: **células citoqueratina positivas** aparecem no estroma das duas, e não na displasia fibrosa; a literatura discute se ela é **reação a um adamantinoma ou precursora** dele. O Dahlin (cap. 26, p. 330) diz o contrário na primeira parte: a osteofibrosa **provavelmente é uma forma de displasia fibrosa confinada à tíbia e à fíbula, com tendência cortical**, e a relação com o adamantinoma, "se houver", segue incerta. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 453), fica do lado do parentesco com o adamantinoma (ver adiante a complexidade citogenética crescente).
 
 ## Quem tem e onde
 
-Diferente da displasia fibrosa, a osteofibrosa é **um pouco mais comum em meninos** (Tachdjian, p. 1017), e os sintomas aparecem **quase sempre na primeira década**: **quase dois terços** das lesões são notados **antes dos 5 anos**, e há casos em lactentes. A **tíbia é quase sempre** atingida, e a **fíbula ipsilateral** pode ser. Há relatos bilaterais e no rádio e na ulna. A lesão é **diafisária**, no **terço médio da tíbia**, às vezes estendendo-se à metáfise proximal ou distal; raramente toma toda a diáfise. Quando só a fíbula é atingida, é o **terço distal**. O Campbell (p. 935) dá o mesmo retrato: duas primeiras décadas, **terço médio da tíbia**, diafisária podendo chegar à metáfise; e a Tabela 27.3 põe **masculino = feminino**, 1ª e 2ª décadas, **tíbia (diáfise)**.
+A osteofibrosa é **um pouco mais comum em meninos** (Tachdjian, p. 1017), e os sintomas aparecem **quase sempre na primeira década**: **dois terços** antes dos **5 anos**, com casos em lactentes. A **tíbia** é quase sempre atingida, a **fíbula ipsilateral** às vezes; há casos bilaterais e no rádio e na ulna. A lesão é **diafisária, no terço médio da tíbia**, às vezes chegando à metáfise; na fíbula, é o **terço distal**. O Campbell (p. 935) dá o mesmo retrato (duas primeiras décadas, terço médio, diafisária podendo chegar à metáfise), e a Tabela 27.3 põe **masculino = feminino**. O Dahlin (p. 328) registra que predomina nas **duas primeiras décadas**, mas há adultos.
 
-## Quadro clínico e imagem
+## Quadro clínico e imagem: começa no córtex
 
-A queixa comum é um **aumento de volume firme sobre a tíbia** com **arqueamento anterior** leve a moderado, e a lesão é **indolor**, salvo quando há fratura patológica (Tachdjian, p. 1017; Campbell, p. 935, que fala em tíbia **aumentada e arqueada anterolateralmente**).
+A queixa comum é um **aumento de volume firme** com **arqueamento anterior ou anterolateral** e **sem dor**, salvo fratura (Tachdjian, p. 1017; Campbell, p. 935). O Lovell (p. 452) define a lesão como **benigna ativa, às vezes localmente agressiva**, e às vezes o diagnóstico vem com a **fratura patológica**.
 
-Na radiografia (Tachdjian, p. 1017), a lesão costuma ser extensa e acomete o **córtex anterior** da diáfise ou da metáfise da tíbia, **poupando a epífise**. O achado característico é a **osteólise intracortical excêntrica**, com expansão moderada ou acentuada do córtex. Em pequenas áreas o córtex pode parecer ausente, com aspecto **"bolhoso"**, e algumas áreas líticas podem ter **vidro fosco**. A tíbia pode estar arqueada **anterior ou anterolateralmente**. Na fíbula, a lesão é do terço distal e envolve quase toda a circunferência. A Tabela 27.3 do Campbell descreve **lesões radiolucentes multicêntricas no córtex da tíbia**.
+O ponto que a prova antiga cobrou está no Lovell (p. 452): a lesão está **quase sempre no córtex anterior da tíbia**, é **mais bem vista na radiografia em perfil**, **nasce no córtex e só envolve o canal medular tardiamente**. Há **múltiplas áreas radiolucentes com rima de osso reativo**, e a cintilografia mostra captação. O Tachdjian (p. 1017) chama o achado característico de **osteólise intracortical excêntrica**, com expansão do córtex, aspecto **"bolhoso"** e às vezes **vidro fosco**, **poupando a epífise**. O Dahlin (p. 328) descreve **múltiplas lucências no córtex anterior com esclerose entre elas**, imagem **muito parecida com a do adamantinoma**, e mostra uma RM axial que **confirma a lesão intracortical**. O caso típico do Lovell (p. 453) é lítico, loculado, na diáfise média, com expansão leve, **sem massa de partes moles e sem reação periosteal**.
 
 ## Histologia: o que muda em relação à displasia fibrosa
 
-Na peça (Tachdjian, p. 1017), o **periósteo está intacto**, o córtex afetado é fino e pode estar perfurado, e o tecido é branco-amarelado ou avermelhado. Ao microscópio, a imagem lembra a displasia fibrosa, com espículas irregulares de osso trabecular em estroma fibroso, mas com uma diferença decisiva: **as espículas costumam estar revestidas por osteoblastos**. O achado de **osso trançado justaposto a osso lamelar** (formado por esses osteoblastos) é considerado **característico** da osteofibrosa. O Campbell (p. 935) descreve a **arquitetura zonal**: **tecido fibroso frouxo no centro** e uma faixa de trabéculas ósseas **com osteoblastos ativos na periferia**. A imuno-histoquímica mostra **células citoqueratina positivas isoladas** no estroma; os **ninhos de células epiteliais**, porém, são do **adamantinoma** e não aparecem na osteofibrosa.
+Ao microscópio (Tachdjian, p. 1017), lembra a displasia fibrosa, mas as **espículas estão revestidas por osteoblastos**, e o **osso trançado justaposto a osso lamelar** é característico. O Campbell (p. 935) e o Dahlin (p. 330) descrevem a **zonação**: centro de tecido fibroso frouxo (fusocelular, às vezes **estoriforme**) e periferia com trabéculas de **rima osteoblástica proeminente**, que amadurecem e se fundem ao córtex. A imuno-histoquímica mostra **células citoqueratina positivas isoladas**; **ninhos epiteliais** visíveis já são do adamantinoma.
 
 !questoes central=tumores-0052
 conceito: O fibroma ossificante dos ossos longos é a displasia osteofibrosa de CAMPANACCI, lesão intracortical anterior da diáfise da tíbia (terço médio), às vezes com a fíbula, na criança pequena.
@@ -276,58 +274,145 @@ como: O TARO 2015 perguntou o local mais comum do fibroma ossificante, com tíbi
 armadilha: Pensar no fêmur, local da displasia fibrosa e do fibroma não ossificante, sem reconhecer que fibroma ossificante é outro nome da osteofibrosa.
 !fim
 
-## História natural e tratamento
+## História natural e tratamento: esperar a maturidade
 
-A evolução varia (Tachdjian, p. 1017 e 1018), com **cura espontânea** relatada; o curso mais comum é **crescimento e expansão nos primeiros 5 a 10 anos**, depois desaceleração e **parada após a maturidade**. O Campbell (p. 935) diz que o curso é **imprevisível**: algumas lesões regridem na infância, a maioria **progride na infância, mas não depois da puberdade**.
+A evolução varia. O Tachdjian (p. 1017 e 1018) descreve **cura espontânea** em alguns e, no mais comum, **crescimento nos primeiros 5 a 10 anos** e parada depois da maturidade; o Campbell (p. 935), curso **imprevisível**, progredindo na infância e **não depois da puberdade**; o Lovell (p. 452), crescimento gradual **até cerca de 15 anos**; o Dahlin (p. 329) registra "cura" de uma lesão de lactente 13 anos depois.
 
-Daí sai a regra do tratamento: **esperar a maturidade sempre que der**. Na **criança pequena**, a ressecção subperiosteal marginal ou a curetagem foram relatadas com sucesso, mas **a recidiva é frequente**; a **ressecção extraperiosteal em bloco** provavelmente cura, mas quase nunca se justifica (Tachdjian, p. 1018). Deformidade leve: **observar**; progressiva: **órtese tornozelo-pé com concha anterior** ou osteotomia com placa; fratura: **gesso**. No **adolescente**, conservador; se a lesão cresce, **excisão marginal com transporte ósseo**. O Campbell (p. 935) resume: **recidiva alta após curetagem ou ressecção marginal na criança, baixa no esqueleto maduro**; fraturas tratadas sem cirurgia; cirurgia para prevenir ou corrigir deformidade.
+A regra comum é não curetar a criança pequena. O Lovell (p. 452) diz que a lesão **recidiva rápido se curetada**; o Campbell (p. 935), que a recidiva é **alta após curetagem ou ressecção marginal na criança** e **baixa no esqueleto maduro**; o Tachdjian (p. 1018), que a curetagem foi relatada com sucesso, mas **a recidiva é frequente**, e que a ressecção extraperiosteal em bloco provavelmente cura, mas quase nunca se justifica. O protocolo mais completo é o do Lovell (p. 453):
 
-!tabela Displasia fibrosa contra displasia osteofibrosa (Tachdjian, cap. 25, p. 1013 a 1018; Campbell 15, cap. 27, p. 933 a 935 e Tabela 27.3)
+!tabela Conduta na suspeita de displasia osteofibrosa (Lovell and Winter, 7ª ed., cap. 13, p. 453; Tachdjian, cap. 25, p. 1018; Campbell 15, cap. 27, p. 935)
+| Situação | Conduta |
+| --- | --- |
+| menor de 10 anos | **observar**; biópsia incisional dispensável na maioria (o quadro é diagnóstico) |
+| risco de fratura, dor, arqueamento | **órtese** (Tachdjian: órtese tornozelo-pé com concha anterior) |
+| fratura | **gesso**, tratamento não operatório |
+| progressão rápida antes do fechamento da fise | biópsia e ressecção |
+| após fechamento da fise, grande (mais de 3 a 4 cm) ou agressiva | **biópsia**; se osteofibrosa, **excisar toda a lesão** para afastar foco de adamantinoma |
+| pequena (menos de 3 cm) e sem sintomas | continuar observando |
+| em observação | radiografia **ao menos a cada 6 meses** até estabilizar, curar ou ser ressecada |
+| deformidade progressiva | osteotomia; no adolescente, excisão marginal com transporte ósseo (Tachdjian) |
+!fim
+
+!questoes central=tumores-0349
+conceito: A displasia osteofibrosa nasce no córtex anterior da diáfise da tíbia e só invade a medular tardiamente; na criança, observa-se, porque a curetagem recidiva rápido.
+como: O TARO 2006 deu, em certo ou errado, duas afirmações falsas juntas: início medular e curetagem nessa fase.
+armadilha: Transferir para a osteofibrosa o comportamento da displasia fibrosa (intramedular) e a conduta de lesão benigna comum (curetagem), esquecendo que a recidiva na criança é a regra.
+alerta: Questão sem gabarito oficial; o gabarito pela bibliografia (gabaritoBibliografia) é B, Errado, e é a resposta provável. O Lovell and Winter, 7ª ed. (p. 452 e 453), sustenta: a lesão nasce no córtex, envolve o canal medular tardiamente, recidiva rápido se curetada e deve ser observada abaixo dos 10 anos; o Campbell (p. 935) e o Tachdjian (p. 1018) concordam quanto à recidiva após curetagem na criança. Sem divergência nos livros lidos em `tumores-0349`.
+!fim
+
+!tabela Displasia fibrosa contra displasia osteofibrosa (Tachdjian, cap. 25, p. 1013 a 1018; Campbell 15, cap. 27, p. 933 a 935; Dahlin, cap. 26, p. 328 a 330; Lovell and Winter, cap. 13, p. 452)
 | Critério | Displasia fibrosa | Displasia osteofibrosa (CAMPANACCI) |
 | --- | --- | --- |
 | idade | em geral detectada **após 10 anos** | **1ª década**, dois terços antes de 5 anos |
 | sexo | meninas mais (Tachdjian), igual (Campbell) | um pouco mais em meninos (Tachdjian), igual (Campbell) |
-| local | qualquer osso; metáfise ou diáfise; intramedular | **tíbia** (terço médio, córtex anterior); fíbula distal |
-| imagem | **intramedular**, vidro fosco | **intracortical excêntrica**, bolhosa, multicêntrica |
+| local | qualquer osso; metáfise ou diáfise | **tíbia** (terço médio, córtex anterior); fíbula distal |
+| imagem | **intramedular**, vidro fosco | **intracortical excêntrica**, bolhosa, multicêntrica; medula só tarde |
 | arqueamento | não rotineiro anterior | **anterior ou anterolateral** |
-| histologia | espículas **sem** osteoblastos (letras chinesas) | espículas **com** osteoblastos, arquitetura zonal |
-| molecular | **Gs alfa Arg201** presente | ausente |
+| histologia | espículas **sem** osteoblastos (letras chinesas) | espículas **com** osteoblastos, zonação |
+| molecular | **Gs alfa Arg201** presente | ausente (Tachdjian); Dahlin a vê como forma de DF |
 | citoqueratina | ausente | células isoladas positivas |
-| curso | progride no crescimento | progride até a puberdade e para |
+| curso | progride no crescimento | progride até a puberdade (cerca de 15 anos) e para |
 !fim
 
-# Adamantinoma: o vizinho maligno da tíbia {radar=clinico}
+# Adamantinoma: o vizinho maligno da tíbia {radar=confirmado}
 
 ## Por que ele entra neste tema
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1017), diz que **as duas entidades que precisam ser separadas da osteofibrosa são a displasia fibrosa monostótica e o adamantinoma**, e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 26, p. 869.e1), lista o adamantinoma entre os diagnósticos diferenciais das lesões diafisárias, **"especialmente na tíbia"**.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1017), e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 935), dizem que a osteofibrosa **precisa ser separada da displasia fibrosa monostótica e do adamantinoma**. O Campbell (cap. 26, p. 869.e1) e a Tabela 13-2 do Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 432), põem as três lesões entre as **diafisárias**. E o Dahlin's Bone Tumors, 6ª ed. (cap. 24, p. 287), fecha a recíproca: **o diferencial mais frequente do adamantinoma é a displasia osteofibrosa**.
 
-## Quem tem, onde e como aparece
+## Origem: um tumor epitelial dentro do osso
 
-O Campbell (cap. 29, p. 983) diz que o adamantinoma é **raro**, menos de **1% das malignidades ósseas primárias**. A faixa etária é ampla, mas a maioria dos pacientes está na **2ª ou 3ª década**. Tem **predileção peculiar pela tíbia (cerca de 85%)** e pode envolver a **fíbula ipsilateral**. A hipótese de origem em **ninhos aberrantes de células epiteliais** explica por que ele surge em **osso subcutâneo**. O diagnóstico é difícil porque as características clínicas, radiográficas e histológicas se **sobrepõem às da osteofibrosa**, e a **biópsia com amostragem adequada** é crucial.
+O Dahlin (p. 286) chama o adamantinoma dos ossos longos de neoplasia **peculiar**: as **ilhas epiteliais** têm origem desconhecida, mas a imuno-histoquímica e a microscopia eletrônica confirmaram sua **natureza epitelial**. As hipóteses são **implantação traumática de epitélio** (quase todos surgem em osso **perto da pele**), **restos congênitos de epitélio**, ou uma forma incomum de **sarcoma** (sinovial ou angiossarcoma). CHANGUS, em 1957, propôs origem **angioblástica**, mas os marcadores endoteliais são negativos e os epiteliais, positivos. **Nenhuma teoria explica a predileção pela tíbia**. O nome vem da semelhança histológica com o adamantinoma (ameloblastoma) da mandíbula, que **não tem relação** com ele. O Campbell (cap. 29, p. 983) resume na hipótese dos **ninhos aberrantes de células epiteliais**, o que explicaria a preferência por **osso subcutâneo**.
 
-A **dor** é o sintoma mais comum; como a lesão cresce devagar, a dor pode existir **por anos** antes da consulta. Por ser subcutânea, pode haver **massa palpável**, e cerca de **20%** têm **fratura patológica**. Na imagem, o aspecto mais comum é de **múltiplas lesões radiolucentes bem demarcadas na diáfise da tíbia, separadas por áreas de osso esclerótico denso**. A aparência lembra a osteofibrosa, mas o adamantinoma costuma parecer **mais agressivo**; uma grande parte ou toda a tíbia pode estar tomada, e a fíbula pode ser atingida por extensão direta.
+## Quem tem e onde: os números de cada livro
 
-## Histologia e tratamento
+!tabela Adamantinoma: epidemiologia lado a lado (Dahlin, cap. 24, p. 286 e 287; Campbell 15, cap. 29, p. 983; Lovell and Winter, cap. 13, p. 453; Tachdjian, cap. 25, p. 1017)
+| Ponto | Dahlin | Campbell | Lovell and Winter / Tachdjian |
+| --- | --- | --- | --- |
+| frequência | 44 casos na Mayo, **0,56%** dos malignos primários | **menos de 1%** dos malignos primários | não quantificam |
+| sexo | **leve predomínio masculino** | não diz | não dizem |
+| idade | **72% na 2ª e 3ª décadas**; só 2 na 1ª (7 anos); até 79 anos | faixa ampla, maioria na **2ª ou 3ª década** | Lovell: em geral **3ª década**; Tachdjian: **acima de 10 anos** |
+| tíbia | **90%** dos relatados; Mayo: 29 na tíbia média, 5 na metáfise distal | **cerca de 85%** | tíbia |
+| fíbula | 4 na Mayo; 11 de 85 com fíbula ipsilateral (KEENEY) | ipsilateral, muitas vezes por extensão direta | fíbula |
+| outros | ulna, rádio, fêmur; ossos curtos são diagnósticos suspeitos | não cita | não citam |
+!fim
 
-Ao microscópio (Campbell, p. 983), o adamantinoma tem **ilhas de células epiteliais num estroma fibroso**. Algumas áreas lembram displasia fibrosa ou osteofibrosa, e alguns autores consideram o adamantinoma uma **variante maligna da osteofibrosa**. A atipia nuclear é mínima, as mitoses raras, e a imuno-histoquímica costuma ser positiva para **citoqueratinas e vimentina**. É em geral **de baixo grau**, e a histologia não prevê o comportamento.
+A divergência de idade é de ênfase (2ª e 3ª décadas no Dahlin e no Campbell, 3ª no Lovell, "acima de 10 anos" no Tachdjian); nenhum põe a maioria na 5ª ou 6ª década.
 
-O tratamento ideal é **ressecção ampla ou amputação**; o tumor é **radiorresistente e quimiorresistente**. A **recidiva local** ocorre em cerca de **25%**, e nesses pacientes a amputação deve ser considerada. As **metástases** são raras na apresentação, mas aparecem depois em **30%**. A **sobrevida em 10 anos** é de cerca de **85%**, e o prognóstico depende sobretudo da **margem cirúrgica**: com margem ampla ou radical, recidiva e metástase caem para **menos de 10%**. Recidiva e metástase podem surgir **até 19 anos** depois.
+!questoes central=tumores-0389
+conceito: O adamantinoma é maligno de baixo grau, raro, da tíbia (85% a 90%), na 2ª e 3ª décadas, atribuído a ninhos epiteliais em osso subcutâneo e por isso palpável; é radio e quimiorresistente e se trata com ressecção ampla.
+como: O ENARE de Cirurgia da Mão 2022 trocou, uma a uma, a idade, a origem, a palpação e o tratamento, deixando certa só a tíbia.
+armadilha: Aceitar a 5ª e 6ª décadas, "ninhos de células osteoides" (são epiteliais), "localização profunda" (é subcutâneo, com massa palpável) ou radio e quimioterapia isoladas (é radio e quimiorresistente).
+!fim
 
-## Como separar na criança e no adolescente
+## Quadro clínico
 
-O Tachdjian (p. 1017) dá a régua prática. O **adamantinoma** ocorre em geral **acima dos 10 anos** e tem **componente epitelial** na histologia. **No adolescente, a biópsia aberta é necessária** para diferenciar osteofibrosa de adamantinoma, e o tecido precisa ser examinado com cuidado, porque a distinção é difícil.
+O crescimento é **lento**. A **dor** é o sintoma inicial mais comum, e poucos chegam por tumefação (Dahlin, p. 287; Campbell, p. 983). Os sintomas duram de **meses a 50 anos** (um terço por mais de 5 anos, na série de KEENEY). Ao exame, a **massa** subcutânea. Na fratura patológica, os livros divergem: o Campbell diz **cerca de 20%**, o Dahlin diz que é **incomum**. Compare com a osteofibrosa, que é **indolor** salvo fratura.
 
-!tabela Lesões corticais da tíbia: osteofibrosa contra adamantinoma (Tachdjian, cap. 25, p. 1017; Campbell 15, cap. 27, p. 935, e cap. 29, p. 983)
+## Imagem: lucências em bolhas na diáfise da tíbia
+
+O Campbell (p. 983) descreve o aspecto mais comum: **múltiplas lesões radiolucentes bem demarcadas na diáfise da tíbia, separadas por áreas de osso esclerótico denso**; a imagem lembra a osteofibrosa, mas costuma ser **mais agressiva**, e grande parte ou toda a tíbia pode estar tomada. O Dahlin (p. 287) detalha o desenho em bolhas serrilhado: defeitos lucentes **de tamanhos diferentes**, com osso esclerótico **entre eles e acima e abaixo**; algumas lucências são pequenas, **inteiramente corticais**, iguais às da osteofibrosa; e, tipicamente, **uma das áreas líticas, em geral na diáfise média, é maior e mais destrutiva**. As zonas múltiplas provavelmente são **uma só lesão**; raramente a lucência é medular e alongada, ou multilobulada e expansiva.
+
+O Lovell (p. 453) lista o que pesa a favor do adamantinoma: **extensão para partes moles, reação periosteal aguda, tamanho grande e envolvimento do canal medular**. O Dahlin (p. 292) dá a nuance: o componente **destrutivo** está em geral, mas nem sempre, no adamantinoma e **não deve existir** na osteofibrosa; alguns adamantinomas são **indistinguíveis** dela na radiografia.
+
+!questoes central=tumores-0262
+conceito: A apresentação radiográfica mais comum do adamantinoma é de múltiplas lesões radiolucentes bem demarcadas na diáfise da tíbia, separadas por osso esclerótico, uma delas maior e mais destrutiva.
+como: O TARO 2025 cruzou radiopaca ou radiolucente com diáfise ou metáfise da tíbia.
+armadilha: Ser puxado pelo osso esclerótico entre as bolhas e marcar radiopaca, ou pela metáfise, local da maioria dos tumores ósseos; o adamantinoma é diafisário (no Dahlin, só 5 de 34 lesões tibiais estavam na metáfise distal).
+!fim
+
+## Histologia e queratinas
+
+O Dahlin (p. 288 a 292) diz que todos os padrões têm **qualidade epitelial**. O típico é de **pequenas ilhas epiteliais em estroma fibroso**, em proporções variáveis. Há o padrão **basaloide**, com paliçada periférica e centro de células estreladas que lembra o ameloblastoma; o **tubular**, com espaços que parecem vasos, mas revestidos por células **queratina positivas**; o **escamoso**, com queratina, em só **cerca de 10%**; e o **fusocelular**, em espinha de peixe, que imita fibrossarcoma (16 de 85 casos de KEENEY). Uma **neoplasia de células fusiformes no córtex da tíbia é praticamente diagnóstica de adamantinoma**. Em qualquer padrão falta **atipia acentuada**, o que o separa do carcinoma metastático (raro na tíbia e nessa idade) e do fibrossarcoma. O Campbell (p. 983) acrescenta a imuno-histoquímica positiva para **citoqueratinas e vimentina**, mitoses raras e **baixo grau**, sem que a histologia preveja o comportamento.
+
+## Osteofibrosa, adamantinoma diferenciado e adamantinoma clássico
+
+O Dahlin (p. 292) organiza a parte mais confusa. Há muito se sabe que o adamantinoma da tíbia tem áreas **semelhantes à displasia fibrosa**, hoje interpretadas como **semelhantes à osteofibrosa**, às vezes tão extensas que as ilhas epiteliais passam **despercebidas**. Como a osteofibrosa tem **células queratina positivas** e imagem parecida, surgiu a ideia de que ela fosse **precursora** do adamantinoma; mas **dois grandes estudos, da Mayo Clinic e do AFIP, não acharam um único caso de progressão**. CZERNIAK propôs dividir em dois grupos: o **adamantinoma clássico**, no **córtex e na medula** da tíbia de **adultos jovens**, e o **adamantinoma diferenciado**, em **crianças**, **cortical e bem circunscrito**, com padrão **semelhante à osteofibrosa**; para ele, parte da osteofibrosa seria **reparação** de um adamantinoma. Hoje, **adamantinoma diferenciado (ou semelhante à osteofibrosa)** é a lesão com aspecto de osteofibrosa mas com **ninhos ou cordões epiteliais visíveis na hematoxilina-eosina**; células positivas só na imuno-histoquímica **não bastam**. A maioria dos diferenciados se comporta de modo **benigno** (p. 293).
+
+O Lovell (p. 453) aceita o espectro: osteofibrosa, adamantinoma semelhante à osteofibrosa e adamantinoma clássico mostram **complexidade crescente de aberrações citogenéticas**, talvez uma **transformação neoplásica em múltiplos passos**; não se sabe se o tipo semelhante à osteofibrosa metastatiza. O Campbell (p. 983) registra que alguns autores veem o adamantinoma como **variante maligna da osteofibrosa**. A conclusão comum aos quatro livros: **a relação ainda é incerta**, e por isso o diagnóstico depende de **biópsia com amostragem adequada** (Campbell), **aberta no adolescente** (Tachdjian, p. 1017), com **excisão completa** da lesão suspeita após a maturidade (Lovell).
+
+!tabela O espectro osteofibrosa e adamantinoma (Dahlin, cap. 24, p. 292 e 293, e cap. 26, p. 329 e 330; Lovell and Winter, cap. 13, p. 453; Campbell 15, cap. 29, p. 983)
+| Lesão | Quem | Onde no osso | Epitélio | Comportamento |
+| --- | --- | --- | --- | --- |
+| displasia osteofibrosa | criança | **cortical** | só células isoladas queratina positivas na imuno | autolimitada; sem progressão comprovada |
+| adamantinoma diferenciado (semelhante à osteofibrosa) | criança | cortical, bem circunscrito | ninhos ou cordões **visíveis na HE** | maioria benigna; metástase incerta |
+| adamantinoma clássico | adulto jovem | **córtex e medula** | **ilhas epiteliais** evidentes | maligno de baixo grau; recidiva e metástase tardias |
+!fim
+
+!questoes central=tumores-0007 relacionadas=tumores-0206
+conceito: O principal diagnóstico diferencial do adamantinoma é a displasia osteofibrosa (doença de CAMPANACCI) da tíbia, e vice-versa: imagem cortical em bolhas na diáfise tibial e células queratina positivas nas duas.
+como: O TARO 2020 cruzou fibrosa ou osteofibrosa com tíbia ou fêmur; o TARO 2024 partiu da osteofibrosa e ofereceu adamantinoma, osteossarcoma, EWING e tumor de células gigantes.
+armadilha: Marcar a displasia fibrosa da tíbia (é diferencial também, mas medular e sem epitélio) ou o EWING, lembrado como "tumor diafisário", esquecendo que só a osteofibrosa repete a lesão cortical anterior da tíbia.
+!fim
+
+## Tratamento e prognóstico
+
+O Campbell (p. 983) diz que o tratamento ideal é **ressecção ampla ou amputação**; o tumor é **radiorresistente e quimiorresistente**. A **recidiva local** fica em cerca de **25%** (nesses, considerar amputação); as **metástases** são raras na apresentação e surgem depois em **30%**; a **sobrevida em 10 anos** é de cerca de **85%**. O prognóstico depende sobretudo da **margem**: com margem ampla ou radical, recidiva e metástase caem para **menos de 10%**. Recidiva e metástase podem vir **até 19 anos** depois, o que obriga a seguimento longo. São fatores de **comportamento agressivo**: **sexo masculino, ausência de diferenciação escamosa, intervalo livre curto, recidiva local e dor ao diagnóstico**.
+
+O Dahlin (p. 292 e 293) conta a evolução histórica: BAKER, revendo os casos publicados, concluiu que a **amputação** era a escolha, porque **dois terços recidivavam após excisão local**; com a cirurgia de **preservação do membro**, muitos passaram a ser tratados com **ressecção local**. **Terapia radical precoce cura** a maioria, e **excisões inadequadas** levaram a morte por metástase. A metástase vai por **via hematogênica (pulmão) ou linfática (linfonodo inguinal)**; na série de KEENEY, a recidiva foi de **31%**, de 3 meses a **19,4 anos**, e as metástases surgiram até **17,9 anos** depois. O Lovell (p. 453) é direto: se a biópsia mostra adamantinoma, **ressecção ampla**. Nenhum dos livros lidos descreve a técnica de reconstrução após a ressecção intercalar da tíbia.
+
+!tabela Adamantinoma: tratamento e evolução por livro (Campbell 15, cap. 29, p. 983; Dahlin, cap. 24, p. 292 e 293; Lovell and Winter, cap. 13, p. 453)
+| Ponto | Campbell | Dahlin | Lovell and Winter |
+| --- | --- | --- | --- |
+| cirurgia | ressecção ampla ou amputação | amputação (BAKER) deu lugar à ressecção local com preservação | ressecção ampla |
+| radio e quimioterapia | resistente às duas | não indica | não indica |
+| recidiva local | cerca de 25% | 31% (KEENEY), até 19,4 anos | não quantifica |
+| metástase | 30%, tardia | pulmão (13) e linfonodo (6), até 17,9 anos | clássico metastatiza |
+| sobrevida e prognóstico | 85% em 10 anos; margem decide | terapia radical precoce cura; diferenciado quase sempre benigno | metástase do tipo semelhante à osteofibrosa incerta |
+!fim
+
+## Como separar na prática
+
+!tabela Lesões corticais da tíbia: osteofibrosa contra adamantinoma (Tachdjian, cap. 25, p. 1017; Campbell 15, caps. 27 e 29, p. 935 e 983; Dahlin, cap. 24, p. 287 e 292; Lovell and Winter, cap. 13, p. 452 e 453)
 | Critério | Displasia osteofibrosa | Adamantinoma |
 | --- | --- | --- |
-| natureza | benigna, não neoplásica | **maligna**, baixo grau |
-| idade | 1ª década, dois terços antes de 5 anos | maioria na 2ª ou 3ª década; acima de 10 anos |
-| dor | indolor salvo fratura | **dor** é o sintoma mais comum |
-| imagem | osteólise intracortical anterior, bolhosa | múltiplas lucências separadas por osso esclerótico, mais agressivo |
-| epitélio | só células isoladas citoqueratina positivas | **ilhas de células epiteliais** |
-| tratamento | observar; esperar a maturidade | **ressecção ampla ou amputação** |
-| evolução | para após a puberdade | recidiva cerca de 25%, metástase tardia 30%, até 19 anos |
+| natureza | benigna, não neoplásica | **maligno**, baixo grau |
+| idade | 1ª década, dois terços antes de 5 anos | 2ª e 3ª décadas; desconfiar acima de 10 anos |
+| dor | indolor salvo fratura | **dor**, às vezes por anos |
+| imagem | intracortical anterior, bolhosa, sem massa | lucências múltiplas com esclerose, uma maior e **destrutiva**; medula, partes moles, reação periosteal |
+| epitélio | só células isoladas citoqueratina positivas | **ilhas epiteliais**, citoqueratina e vimentina |
+| conduta | observar; órtese; esperar a maturidade | **ressecção ampla**; não responde a radio e quimioterapia |
+| evolução | para por volta dos 15 anos | recidiva 25% a 31%, metástase tardia 30%, até 19 anos |
 !fim
 
 # Fibroma não ossificante e defeito fibroso cortical {radar=confirmado}
@@ -336,7 +421,7 @@ O Tachdjian (p. 1017) dá a régua prática. O **adamantinoma** ocorre em geral 
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 932 e 933), dá a lista de sinônimos que ajuda a não errar o nome: o fibroma não ossificante é também chamado de **defeito fibroso metafisário, defeito fibroso cortical e fibroxantoma**. São **anormalidades comuns do desenvolvimento**, presentes em até **20% das crianças**, quase sempre achados **incidentais**. Ocorrem na **metáfise dos ossos longos**, entre **2 e 20 anos**. Qualquer osso pode ser atingido, mas cerca de **40% estão no fêmur distal, 40% na tíbia e 10% na fíbula**.
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1042), diz que os **defeitos fibrosos são as lesões benignas mais comuns da infância**, em geral achados em radiografias feitas por outro motivo, na metáfise dos ossos longos, **sobretudo fêmur e tíbia**; costumam ser **corticais**, mas podem ficar na área esponjosa. Em **1942**, **JAFFE e LICHTENSTEIN** mostraram que, à biópsia, essas lesões tinham tecido fibroso e cunharam os termos **defeito fibroso cortical** e **fibroma não osteogênico (não ossificante)**; outros nomes são defeito fibroso metafisário e defeito fibroso endosteal. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), estima **20%** de incidência.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1042), diz que os **defeitos fibrosos são as lesões benignas mais comuns da infância**, achados incidentais na metáfise, **sobretudo de fêmur e tíbia**, em geral **corticais**. Em **1942**, **JAFFE e LICHTENSTEIN** cunharam os termos **defeito fibroso cortical** e **fibroma não osteogênico (não ossificante)**. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), estima **20%** de incidência.
 
 ## Defeito cortical e fibroma não ossificante: a mesma lesão em fases
 
@@ -367,9 +452,7 @@ Na curetagem (Tachdjian, p. 1042), o tecido é **mole, friável, amarelo ou marr
 
 O Tachdjian (p. 1042) descreve os **quatro estágios de RITSCHL** na evolução do defeito fibroso cortical. No **estágio A**, a lesão é **excêntrica, no córtex da metáfise, sem borda esclerótica**. No **estágio B**, a lesão está **mais longe da epífise**, tem **forma policíclica e borda esclerótica fina**. O **estágio C** é como o B, mas com **esclerose que começa pelo lado diafisário**. No **estágio D**, a esclerose aumenta até a lesão **desaparecer**. As lesões passam de um estágio ao outro em velocidades variáveis. E o dado que a prova cobra: num estudo abrangente de **103 lesões**, **as fraturas ocorreram apenas no estágio B**.
 
-Raciocínio: no B a lesão está no auge do tamanho e ainda sem a esclerose que a reforça; no C e no D o osso já a preenche.
-
-O Rockwood acrescenta os outros fatores de risco de fratura: lesões com **mais de 50% do diâmetro cortical**, estágios iniciais de RITSCHL **com dor**, localização no **membro inferior** e **meninos entre 6 e 14 anos**. Na **tíbia distal**, **RITSCHL B**, **mais de 50% do diâmetro** em AP e perfil e **córtex fino** aumentaram o risco; pela TC, também **ruptura cortical** e falta de **neocórtex**. O próprio Rockwood, porém, pondera que o tamanho, embora ajude a prever fratura, **não obriga a curetagem profilática**, e que o tamanho **não se associou à dor**.
+O Rockwood acrescenta os outros fatores de risco de fratura: lesões com **mais de 50% do diâmetro cortical**, estágios iniciais de RITSCHL **com dor**, localização no **membro inferior** e **meninos entre 6 e 14 anos**. Na **tíbia distal**, **RITSCHL B**, **mais de 50% do diâmetro** em AP e perfil e **córtex fino** aumentaram o risco; pela TC, também **ruptura cortical** e falta de **neocórtex**. Mesmo assim, o tamanho **não obriga a curetagem profilática** (Rockwood).
 
 !tabela Estágios de RITSCHL do defeito fibroso cortical (Tachdjian, cap. 25, p. 1042; Rockwood and Wilkins, cap. 7)
 | Estágio | Aspecto | Risco de fratura |
@@ -390,7 +473,7 @@ armadilha: Escolher o estágio A, imaginando que a lesão mais "nova" é a mais 
 
 O Tachdjian (p. 1043) diz que a **maioria dos defeitos fibrosos corticais não precisa de tratamento**, porque regride. Os **fibromas não ossificantes maiores** podem causar desconforto e fratura patológica, mas mesmo assim **a maioria pode ser apenas monitorada**, e as **fraturas, quando ocorrem, podem ser tratadas sem cirurgia**. **Biópsia, curetagem e enxerto** ficam para três situações: lesão grande com **risco de fratura iminente**, lesão que **ficou dolorosa** e lesão cuja aparência **impede o diagnóstico radiográfico** definitivo. A **recidiva é rara**, e o risco de malignização é **pequeno ou nenhum**.
 
-O Campbell (p. 933) concorda: a maioria é assintomática e **regride espontaneamente na vida adulta**; a maioria das fraturas patológicas é tratada sem cirurgia; a lesão pode pedir tratamento se ficar **grande** ou sofrer **trauma repetido**; alguns autores indicam tratar lesões **maiores que 50% do diâmetro do osso** pelo risco teórico de fratura, mas esse parâmetro **não é universalmente aceito**; a **recidiva após curetagem é rara**. A figura 27.10 do Campbell mostra a exceção: um adolescente de 14 anos com fratura de um fibroma não ossificante da **tíbia distal** após trauma mínimo, que evoluiu com **consolidação viciosa em valgo** e precisou de osteotomia, curetagem e enxerto.
+O Campbell (p. 933) concorda: a maioria é assintomática e **regride espontaneamente na vida adulta**; a maioria das fraturas patológicas é tratada sem cirurgia; a lesão pode pedir tratamento se ficar **grande** ou sofrer **trauma repetido**; alguns autores indicam tratar lesões **maiores que 50% do diâmetro do osso** pelo risco teórico de fratura, mas esse parâmetro **não é universalmente aceito**; a **recidiva após curetagem é rara**. A exceção descrita pelo Campbell é a fratura da **tíbia distal** que consolida em **valgo** e pede osteotomia, curetagem e enxerto.
 
 O Rockwood completa: a fratura **consolida, mas a lesão persiste** e pode **refraturar**; imobiliza-se, e a cirurgia, se indicada, vem **depois da consolidação**.
 
@@ -421,7 +504,7 @@ armadilha: Trocar pelo McCUNE-ALBRIGHT (displasia fibrosa com café com leite) o
 
 ## Desmoide cortical: a irregularidade do adutor magno
 
-O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 933), define o **desmoide cortical** como uma **irregularidade na face posteromedial da metáfise distal do fêmur**, vista em geral em **meninos de 10 a 15 anos**. Pode ser uma **reação ao estresse muscular exercido pelo adutor magno**, que se insere ali. Vê-se melhor numa **radiografia oblíqua com o membro em rotação externa de 20 a 45 graus**. Se houver sintomas, são aumento de volume de partes moles e dor. A radiografia e a RM mostram **erosão do córtex com base esclerótica**. A **biópsia não se justifica**, e o tratamento é **observação**. A Tabela 27.3 acrescenta: 2ª década, sexo masculino, em geral **assintomático**, histologia de tecido fibroso com estroma colágeno e células fusiformes estoriformes, **semelhante ao fibroma não ossificante**. A figura 27.11 mostra o desmoide no fêmur de um menino de 8 anos.
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 27, p. 933), define o **desmoide cortical** como uma **irregularidade na face posteromedial da metáfise distal do fêmur**, vista em geral em **meninos de 10 a 15 anos**. Pode ser uma **reação ao estresse muscular exercido pelo adutor magno**, que se insere ali. Vê-se melhor numa **radiografia oblíqua com o membro em rotação externa de 20 a 45 graus**. Se houver sintomas, são aumento de volume de partes moles e dor. A radiografia e a RM mostram **erosão do córtex com base esclerótica**. A **biópsia não se justifica**, e o tratamento é **observação**. A Tabela 27.3 acrescenta: 2ª década, sexo masculino, em geral **assintomático**, histologia de tecido fibroso com estroma colágeno e células fusiformes estoriformes, **semelhante ao fibroma não ossificante**.
 
 A localização decide o diagnóstico: irregularidade **posteromedial** no fêmur distal do adolescente é desmoide cortical e não se biopsia.
 
@@ -433,14 +516,14 @@ armadilha: Escolher posterolateral (lado do bíceps e da cabeça lateral do gast
 
 ## Histiocitoma fibroso benigno
 
-O Campbell (p. 933 e Tabela 27.3) descreve o **histiocitoma fibroso benigno** como entidade rara, mais comum nas partes moles que no osso. A histologia é **semelhante à do fibroma não ossificante**, mas o comportamento biológico e a imagem são **muito mais agressivos**. Diferente do fibroma não ossificante (excêntrico, metafisário), ele pode estar na **diáfise ou epífise** dos ossos longos ou na **pelve**, e aparece em pacientes **mais velhos, entre 30 e 40 anos**. Ao contrário do fibroma não ossificante, é uma **neoplasia verdadeira**, e pela tendência à recidiva local indica-se **curetagem estendida ou ressecção ampla**.
+O Campbell (p. 933 e Tabela 27.3) descreve o **histiocitoma fibroso benigno** como raro, de histologia **igual à do fibroma não ossificante**, mas **neoplasia verdadeira**, mais agressiva, na **diáfise, epífise ou pelve**, entre **30 e 40 anos**; trata-se com **curetagem estendida ou ressecção ampla**.
 
 ## Fibroma desmoplásico
 
-O **fibroma desmoplásico** (Campbell, p. 935 e Tabela 27.3) é **extremamente raro**, benigno mas **localmente agressivo**, e pode ser visto como a **contraparte óssea do tumor desmoide** de partes moles. Predomina na **2ª e 3ª décadas**, masculino **2:1**, nos **ossos tubulares longos**, com dor e lesão **lítica bem circunscrita**, às vezes com destruição cortical e septações. A histologia é de **tecido fibroso hipocelular com colágeno abundante**, e o tratamento é **curetagem estendida ou ressecção ampla**.
+O **fibroma desmoplásico** (Campbell, p. 935 e Tabela 27.3) é **extremamente raro**, benigno e **localmente agressivo**, a **contraparte óssea do tumor desmoide**: 2ª e 3ª décadas, masculino 2:1, lítico com septações, tecido fibroso hipocelular rico em colágeno; **curetagem estendida ou ressecção ampla**.
 
 # Fechamento {radar=fundamento}
 
-O fio comum deste capítulo é o tecido fibroso que ocupa o lugar do osso. Na displasia fibrosa, ele está na medula, nasce de uma célula com a Gs alfa mutada e produz espículas soltas de osso trançado sem osteoblastos em volta, as letras chinesas; a imagem é o vidro fosco, a deformidade é o cajado de pastor, a fratura consolida rápido mas com calo endosteal pobre, o enxerto esponjoso é reabsorvido, e a radioterapia é proibida. Na displasia osteofibrosa, o tecido fibroso está no córtex anterior da tíbia da criança pequena, com osteoblastos em volta das espículas, e o vizinho a temer é o adamantinoma. No fibroma não ossificante, a lesão é um defeito do desenvolvimento, excêntrico na metáfise, que some sozinho e só fratura no estágio B de RITSCHL. E as três síndromes se resolvem pelo que vem junto: pele e hormônio, músculo, ou pele com fibromas não ossificantes.
+O fio comum é o tecido fibroso no lugar do osso. Na displasia fibrosa, ele está na medula, nasce de célula com a Gs alfa mutada e faz espículas sem osteoblastos; a imagem é o vidro fosco, a deformidade é o cajado de pastor, a fratura consolida rápido com calo endosteal pobre, o enxerto esponjoso some e a radioterapia é proibida. Na osteofibrosa, ele está no córtex anterior da tíbia da criança pequena, com osteoblastos em volta das espículas, e se observa até a maturidade. O adamantinoma repete essa imagem cortical, mas é maligno, do adulto jovem, com ilhas epiteliais e destruição, e pede ressecção ampla. O fibroma não ossificante é um defeito do desenvolvimento, excêntrico na metáfise, que some sozinho e só fratura no RITSCHL B.
 
-> **Na prova:** DF = **Gs alfa Arg201**, osso trançado em **letras chinesas sem rima osteoblástica**, **vidro fosco**, **cajado de pastor** (varo do **fêmur proximal**); monostótica silenciosa, poliostótica com craniofacial em quase 50% e lado único; **McCUNE-ALBRIGHT** = poliostótica + **café com leite** (costa do Maine) + **endocrinopatia** (puberdade precoce, meninas); **MAZABRAUD** = poliostótica + **mixomas intramusculares**; fratura **rápida com calo endosteal pobre**, haste intramedular e **enxerto cortical**, nunca radioterapia; **osteofibrosa (CAMPANACCI, fibroma ossificante)** = **tíbia**, córtex anterior, antes dos 5 anos, **com osteoblastos**, sem Arg201, diferencial com **adamantinoma** (ilhas epiteliais, ressecção ampla); **fibroma não ossificante** = **excêntrico na metáfise**, 40% fêmur distal e 40% tíbia, fratura só no **RITSCHL B**, **JAFFE-CAMPANACCI** com café com leite; **desmoide cortical** = **posteromedial** da metáfise distal do fêmur (adutor magno), só observar.
+> **Na prova:** DF = **Gs alfa Arg201**, **letras chinesas sem rima osteoblástica**, **vidro fosco**, **cajado de pastor** (varo do **fêmur proximal**); **McCUNE-ALBRIGHT** = poliostótica + **café com leite** + **endocrinopatia**; **MAZABRAUD** = poliostótica + **mixomas intramusculares**; fratura **rápida com calo endosteal pobre**, haste intramedular e **enxerto cortical**, nunca radioterapia; **osteofibrosa (CAMPANACCI, fibroma ossificante)** = **córtex anterior da diáfise da tíbia**, antes dos 5 anos, **com osteoblastos**, medula só tarde, **observar** (curetagem recidiva); **adamantinoma** = principal diferencial da osteofibrosa, **tíbia (85% a 90%)**, **2ª e 3ª décadas**, **lucências múltiplas na diáfise** com esclerose entre elas, **ilhas epiteliais** com queratina, **ressecção ampla**, radio e quimiorresistente, metástase tardia em 30%; **fibroma não ossificante** = **excêntrico na metáfise**, fratura só no **RITSCHL B**, **JAFFE-CAMPANACCI** com café com leite; **desmoide cortical** = **posteromedial** da metáfise distal do fêmur, só observar.
