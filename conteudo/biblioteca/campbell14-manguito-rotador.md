@@ -350,7 +350,7 @@ Graus **3 e 4** indicam rotura antiga, com mais falha e provavelmente irreparáv
 conceito: Intervalo acromioumeral abaixo de 7 mm sugere rotura e abaixo de 5 mm rotura maciça; HAMADA vai do intervalo maior que 6 mm ao colapso da cabeça; ângulo crítico acima de 35 graus se liga à rotura degenerativa e à rerruptura; GOUTALLIER 3 e 4 com coto menor que 15 mm e tangente positiva falham em 90%.
 como: O TECOC perguntou a que se relaciona o ângulo crítico de 40 graus; a Ortopedia, o grau de GOUTALLIER com 60% de gordura; o TEOT 2022, o grau numa ressonância do subescapular; o TARO 2007, os sinais radiográficos da artropatia.
 armadilha: Achar que o acrômio em gancho causa a rotura, ou ler GOUTALLIER 2 como mais gordura que músculo.
-alerta: O TECOC (`ombro-cotovelo-0182`) usa 40 graus; o Campbell 15 dá 35 graus como o limite a partir do qual o ângulo crítico se associa à rotura degenerativa, e cita a acromioplastia lateral de GERBER para prevenir a rerruptura.
+alerta: O TECOC (`ombro-cotovelo-0182`) usa 40 graus; o Campbell 15 dá 35 graus como o limite a partir do qual o ângulo crítico se associa à rotura degenerativa, e cita a acromioplastia lateral de GERBER para prevenir a rerruptura. A `ombro-cotovelo-0468` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (sinal da sobrancelha, osteófito inferior na cabeça umeral e diminuição do espaço articular).
 !fim
 
 # História natural e tratamento {radar=fundamento}
@@ -472,7 +472,7 @@ armadilha: Trocar o grande dorsal pelo peitoral maior, ou esquecer que o peitora
 conceito: Transferência pede paciente jovem, sem pseudoparalisia e com a musculatura oposta íntegra (subescapular para o grande dorsal); o trapézio inferior imita o infraespinal e exige enxerto de AQUILES; a reconstrução capsular superior pede subescapular íntegro e dor como queixa; com fuga anterossuperior, reversa.
 como: A SBOT-SP perguntou o requisito de uma transferência; o TARO 2010 e o TARO 2009, o tendão que precisa estar íntegro para o grande dorsal; o TECOC, a transferência que exige enxerto e a fixação na reconstrução capsular; o TARO 2006, a rotura irreparável na prótese; a Ortopedia, o que não ocorre na artropatia.
 armadilha: Indicar transferência no paciente com pseudoparalisia ou subescapular roto, ou esquecer o enxerto no trapézio inferior.
-alerta: A margem de sutura e o local de falha na reconstrução capsular superior (`ombro-cotovelo-0192`) não aparecem no Campbell 15; o gabarito oficial foi mantido.
+alerta: A margem de sutura e o local de falha na reconstrução capsular superior (`ombro-cotovelo-0192`) não aparecem no Campbell 15; o gabarito oficial foi mantido. A `ombro-cotovelo-0502` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (Certo).
 !fim
 
 # Complicações do reparo {radar=confirmado}
@@ -486,6 +486,7 @@ alerta: A margem de sutura e o local de falha na reconstrução capsular superio
 conceito: Puxar o supraespinal mais de 1,8 cm além da borda da glenoide estira o nervo supraescapular.
 como: O TARO 2013 e o TARO 2008 perguntaram o nervo em risco na mobilização do supraespinal.
 armadilha: Responder nervo axilar, que é o risco do deltoide na acromioplastia.
+alerta: A `ombro-cotovelo-0481` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (do nervo supraescapular).
 !fim
 
 # Subescapular e o tecido da vírgula {radar=confirmado}
@@ -498,6 +499,7 @@ armadilha: Responder nervo axilar, que é o risco do deltoide na acromioplastia.
 conceito: O sinal da vírgula aparece na rotura retraída do subescapular e é feito do coracoumeral e do glenoumeral superior; o subescapular é o assoalho da bainha do bíceps, e os dois se lesam juntos.
 como: O TEOT 2023 pediu o tendão do sinal da vírgula; o TECOC, os ligamentos que o formam; o TARO 2011 e o TARO 2008, a associação entre o subescapular e o bíceps.
 armadilha: Pôr o sinal da vírgula no supraespinal, ou formá-lo com o coracoacromial.
+alerta: A `ombro-cotovelo-0479` está sem gabarito oficial; a resposta provável segue o gabarito pela bibliografia da prova (subescapular).
 !fim
 
 # Subescapular: LAFOSSE e o reparo {radar=confirmado}
