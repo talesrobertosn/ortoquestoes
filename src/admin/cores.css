@@ -484,3 +484,33 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .fi-atalhos small { font-weight: 400; font-size: 12px; color: var(--a3-cinza); }
 .fi-atalhos .a3-icone:first-child { color: var(--a3-verde); }
 @media (max-width: 960px) { .fi-atalhos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ───────── Agora: central de controle (04/11/2026) ───────── */
+.cc-comparacoes { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 1100px) { .cc-comparacoes { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.cc-comp { display: grid; gap: 4px; padding: 14px 16px; border-radius: 18px; background: var(--a3-verde-veu); border: 1px solid color-mix(in srgb, var(--a3-verde) 16%, transparent); min-width: 0; }
+.cc-comp--ouro { background: var(--ouro-veu, var(--a3-aviso-veu)); border-color: color-mix(in srgb, var(--a3-ouro-cheio) 22%, transparent); }
+.cc-comp__rotulo { display: flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 700; color: var(--a3-verde); }
+.cc-comp--ouro .cc-comp__rotulo { color: var(--ouro-texto, var(--a3-ouro)); }
+.cc-comp__icone { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 9px; background: var(--a3-verde); color: var(--cor-sobre, #fff); flex: none; }
+.cc-comp--ouro .cc-comp__icone { background: var(--a3-ouro-cheio); }
+.cc-comp__valor { font: 800 28px var(--a3-titulo); letter-spacing: -.02em; color: var(--a3-tinta); font-variant-numeric: tabular-nums; }
+.cc-comp small { font-size: 12px; color: var(--a3-cinza); line-height: 1.35; }
+.cc-comp small .sobe { color: var(--a3-ok); font-weight: 700; }
+.cc-comp small .desce { color: var(--a3-erro); font-weight: 700; }
+.cc-comp small .igual { font-weight: 700; }
+.cc-duas { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+@media (max-width: 760px) { .cc-duas { grid-template-columns: minmax(0, 1fr); } }
+.cc-duas > div { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.cc-sub { display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 700; letter-spacing: .03em; text-transform: uppercase; color: var(--a3-verde); }
+.cc-quentes, .cc-podio { display: grid; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.cc-quentes li { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 12px; background: var(--ouro-veu, var(--a3-aviso-veu)); }
+.cc-quentes li > button:first-child, .cc-podio button { flex: 1; display: grid; min-width: 0; border: 0; background: none; padding: 2px 0; text-align: left; font: inherit; color: inherit; cursor: pointer; }
+.cc-carta { display: inline-flex; align-items: center; gap: 4px; padding: 6px 10px; border-radius: 999px; border: 0; background: var(--a3-ouro-cheio); color: var(--cor-sobre, #fff); font: 600 12px var(--a3-fonte); cursor: pointer; }
+.cc-podio li { display: flex; align-items: center; gap: 10px; padding: 6px 8px; border-radius: 12px; background: var(--a3-alt); }
+.cc-podio li b { font: 700 16px var(--a3-titulo); font-variant-numeric: tabular-nums; }
+.cc-podio__pos { display: grid; place-items: center; flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--a3-verde); color: var(--cor-sobre, #fff); font: 700 12px var(--a3-titulo); }
+.cc-podio__pos--claro { background: var(--a3-verde-claro); color: var(--a3-tinta); }
+.a3-tempo__marca i.tinta { background: var(--a3-verde); }
+
+.a3-fila__item--media .a3-fila__marca { background: var(--a3-verde); }
