@@ -13,7 +13,7 @@ export type Parte =
   | 'comando' | 'agora' | 'pendencias'
   | 'usuarios' | 'crescimento'
   | 'conteudo' | 'questoes' | 'simulados' | 'opinioes'
-  | 'financeiro' | 'assinaturas' | 'cobrancas' | 'pagamentos'
+  | 'financeiro' | 'metas' | 'assinaturas' | 'cobrancas' | 'pagamentos'
   | 'lembretes' | 'cartas' | 'envios' | 'todas'
   | 'ajustes' | 'aviso' | 'exportar' | 'supabase'
 
@@ -49,6 +49,7 @@ export const AREAS: DefArea[] = [
   ] },
   { id: 'receita', rotulo: 'Financeiro', curto: 'Finanças', icone: 'receita', partes: [
     { id: 'financeiro', rotulo: 'Resumo', pergunta: 'Quanto entrou, quanto entra por mês com quem assina hoje e quando cada plano renova.', antes: 'Ganhos receita previsão cenários' },
+    { id: 'metas', rotulo: 'Metas', pergunta: 'O cenário moderado como referência: progresso do mês, projeção, ritmo semanal e meta × real mês a mês.', antes: 'Metas objetivos planejamento cenário moderado projeção' },
     { id: 'cobrancas', rotulo: 'Extrato', pergunta: 'Cada pagamento recebido, estimado ou reembolsado, dia a dia.', antes: 'Pagamentos cobranças' },
     { id: 'pagamentos', rotulo: 'Avisos do Mercado Pago', pergunta: 'As mensagens automáticas que o Mercado Pago manda ao site. Só as que falharam pedem você.', antes: 'Avisos de pagamento processador' },
   ] },

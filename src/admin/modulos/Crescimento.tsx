@@ -13,6 +13,7 @@ import { Achado, Barras, Colunas, Funil, type PontoColuna } from '../ui/graficos
 import { Carregando, Estado, Faixa, Segmento } from '../ui/kit'
 import { Tabela } from '../ui/tabela'
 import { contarPorPeriodo, type Agrupamento } from './ritmo'
+import { FaixaMetas } from './metasResumo'
 
 /**
  * Crescimento, refeito do zero em 04/11/2026 (Tales: "uma página só, rolando; gráficos separados, não juntos; o
@@ -99,6 +100,8 @@ export default function Crescimento() {
       <p>Tudo numa página só: role para baixo ou pule para a parte que quer ver. Contas de teste e de administrador ficam de fora; datas no relógio de São Paulo.</p>
       <nav className="cr-indice" aria-label="Partes da página">{SECOES.map(([id, nome]) => <a key={id} href={`#${id}`} onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>{nome}</a>)}</nav>
     </header>
+
+    <FaixaMetas titulo="Metas de crescimento" chaves={['cadastros', 'novosPagantes', 'ativosFim']} />
 
     {!base ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="As contas não carregaram" texto={p.erroDados} /> : <Carregando linhas={8} texto="Contando cadastros e assinaturas…" />}</div> : <>
       <Achados base={base} estudo={estudo} funil={funil} coortes={coortes} usuarios={p.usuariosReais ?? []} />

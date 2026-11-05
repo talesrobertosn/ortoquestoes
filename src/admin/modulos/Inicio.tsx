@@ -8,6 +8,7 @@ import { planosEmDestaque, viuPlanos, type SinalUsuario } from '../../componente
 import { usarRpc } from '../../componentes/admin/usarRpc'
 import { serieLimpa, usarFunil, usarSerie } from '../dados/consultas'
 import { Comparacoes, Destaques, Graficos, Termometro } from './central'
+import { FaixaMetas } from './metasResumo'
 import { usarPainel } from '../dados/painel'
 import { nomeDe, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
@@ -237,6 +238,7 @@ export default function Inicio() {
       </div>
       <div style={{ gridColumn: 'span 7' }} id="a3-linha" className="a3-ancora"><LinhaDoDia quadro={quadro} /></div>
     </div>
+    <FaixaMetas chaves={['faturamento', 'cadastros', 'novosPagantes', 'ativosFim']} />
     <Comparacoes />
 
     <section className="cr-secao" aria-labelledby="cc-observatorio">

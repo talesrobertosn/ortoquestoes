@@ -19,6 +19,7 @@ const Inicio = lazy(() => import('./modulos/Inicio'))
 const Explorador = lazy(() => import('./modulos/Explorador'))
 const Crescimento = lazy(() => import('./modulos/Crescimento'))
 const Receita = lazy(() => import('./modulos/Receita'))
+const Metas = lazy(() => import('./modulos/Metas'))
 const Assinaturas = lazy(() => import('./modulos/Assinaturas'))
 const Cobrancas = lazy(() => import('./modulos/Cobrancas'))
 const Avisos = lazy(() => import('./modulos/Avisos'))
@@ -42,6 +43,7 @@ function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
     case 'usuarios': return <Explorador />
     case 'crescimento': return <Crescimento />
     case 'financeiro': return <Receita />
+    case 'metas': return <Metas />
     case 'assinaturas': return <Assinaturas />
     case 'cobrancas': return <Cobrancas />
     case 'pagamentos': return <Avisos />

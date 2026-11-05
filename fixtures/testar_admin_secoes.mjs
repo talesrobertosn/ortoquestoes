@@ -25,7 +25,7 @@ try {
   assert.deepEqual(m.AREAS.map(a => a.rotulo), ['Agora', 'Pessoas', 'Crescimento', 'Assinantes', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
   const partes = m.AREAS.flatMap(a => a.partes.map(p => p.id))
   assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas áreas')
-  assert.equal(partes.length, 18)
+  assert.equal(partes.length, 19)
   // Ajustes › Uso do Supabase (03/11/2026): item próprio, com endereço que volta igual.
   assert.deepEqual(m.defArea('configuracoes').partes.map(p => p.id), ['ajustes', 'exportar', 'supabase'])
   assert.equal(m.areaDe('supabase'), 'configuracoes')
@@ -44,12 +44,12 @@ try {
   // Nenhuma parte do painel antigo some.
   for (const parte of ['usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'todas', 'ajustes'])
     assert.ok(partes.includes(parte), parte)
-  assert.deepEqual(m.defArea('receita').partes.map(p => p.rotulo), ['Resumo', 'Extrato', 'Avisos do Mercado Pago'])
+  assert.deepEqual(m.defArea('receita').partes.map(p => p.rotulo), ['Resumo', 'Metas', 'Extrato', 'Avisos do Mercado Pago'])
   assert.deepEqual(m.abasDe('crescimento'), [], 'Crescimento é área própria, sem abas escondidas')
   // Crescimento numa página só e Assinantes em área própria (Tales, 04/11/2026).
   assert.deepEqual(m.defArea('crescimento').partes.map(p => p.id), ['crescimento'])
   assert.deepEqual(m.defArea('assinantes').partes.map(p => p.id), ['assinaturas'])
-  assert.deepEqual(m.defArea('receita').partes.map(p => p.id), ['financeiro', 'cobrancas', 'pagamentos'])
+  assert.deepEqual(m.defArea('receita').partes.map(p => p.id), ['financeiro', 'metas', 'cobrancas', 'pagamentos'])
   assert.deepEqual(m.abasDe('financeiro'), [])
   assert.deepEqual(m.abasDe('ajustes').map(a => a.id), ['ajustes', 'aviso'])
   assert.equal(m.defParte('crescimento').rotulo, 'Crescimento')
@@ -234,7 +234,7 @@ try {
     assert.ok(cat.combinaBusca(modelos.find(x => x.tipo === 'voltou'), null, 'DIAS fora'), 'busca sem acento e sem caixa')
   }
 
-  console.log('Painel 3.0: 8 áreas e 18 itens, Crescimento numa página só, Assinantes à parte, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
+  console.log('Painel 3.0: 8 áreas e 19 itens, Crescimento numa página só, Assinantes à parte, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }

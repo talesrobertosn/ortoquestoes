@@ -13,6 +13,7 @@ import { Colunas, type PontoColuna } from '../ui/graficos'
 import { Carregando, Estado, Faixa, Painel, VariacaoTexto } from '../ui/kit'
 import { Tabela } from '../ui/tabela'
 import { Calendario } from './calendario'
+import { FaixaMetas } from './metasResumo'
 
 /**
  * Financeiro › Resumo, refeito do zero em 04/11/2026 (Tales: "quanto vou ganhar em cada mês; os cenários de 50% a 90%;
@@ -111,6 +112,7 @@ function Financeiro({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
         <div><dt>Desde o começo</dt><dd>{reais(f.total)}</dd></div>
       </dl>
     </header>
+    <FaixaMetas titulo="Metas financeiras" chaves={['faturamento', 'receitaEquivalente', 'ativosFim']} />
     {p.avisoCobrancas && <Faixa tom="aviso" titulo="Cobranças gravadas indisponíveis">{p.avisoCobrancas}</Faixa>}
     {semCobranca.length > 0 && <Faixa tom="aviso" titulo={plural(semCobranca.length, 'assinatura paga sem a cobrança gravada', 'assinaturas pagas sem a cobrança gravada')}>
       Entram como estimadas, pelo preço do plano. Vale conferir no Mercado Pago: {semCobranca.slice(0, 4).map(a => `${a.nome || a.usuario} (${rotuloPlano(a.plano)})`).join('; ')}{semCobranca.length > 4 ? '…' : ''}
