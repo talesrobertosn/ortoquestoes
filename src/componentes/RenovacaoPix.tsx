@@ -57,8 +57,8 @@ export function RenovacaoPix({ fim, aoRenovar, agora = Date.now() }: { fim: numb
     </div>
 
     <p className="renova-pix__texto">{aberta
-      ? <><strong>Faltam {dias} {dias === 1 ? 'dia' : 'dias'}.</strong> A renovação já está aberta: no Pix, pague agora e o novo período começa em {diaMes(fim)}; no cartão, a primeira cobrança é só em {diaMes(fim)}. No plano mensal, o acesso vai até {diaMes(novoFim)}.</>
-      : <>Seu acesso vai até <strong>{diaMes(fim)}</strong>. A renovação abre <strong>{abreTexto.includes(',') ? abreTexto : `em ${abreTexto}`}</strong>, 7 dias antes do fim, e mandamos um lembrete por e-mail perto do fim. Renovando pelo Pix ou pelo cartão, o novo período começa em {diaMes(fim)}.</>}</p>
+      ? <><strong>Faltam {dias} {dias === 1 ? 'dia' : 'dias'}, e você não perde nenhum deles renovando agora.</strong> Os {dias} {dias === 1 ? 'dia' : 'dias'} que você ainda tem continuam seus, e o novo mês só começa a contar quando eles acabam, em {diaMes(fim)}. Renovando o plano mensal hoje, seu acesso vai até <strong>{diaMes(novoFim)}</strong>. Se escolher o cartão, nada é cobrado agora: a primeira cobrança só acontece em {diaMes(fim)}.</>
+      : <>Seu acesso vai até <strong>{diaMes(fim)}</strong>. A renovação abre <strong>{abreTexto.includes(',') ? abreTexto : `em ${abreTexto}`}</strong>, 7 dias antes do fim, e mandamos um lembrete por e-mail perto do fim. Quando renovar, os dias que você ainda tiver se somam ao novo mês: nada se perde.</>}</p>
 
     {aberta
       ? (aoRenovar
