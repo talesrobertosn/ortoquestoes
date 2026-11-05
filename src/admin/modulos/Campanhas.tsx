@@ -8,6 +8,7 @@ import { data, haQuanto, inteiro } from '../ui/formato'
 import { Cabeca, Carregando, Estado, Faixa, Painel, Selo } from '../ui/kit'
 import { confirmar } from '../ui/sobreposicoes'
 import { Tabela } from '../ui/tabela'
+import { CartasPorSituacao } from './cartasLote'
 
 const MIGRACAO = '202610040100_emails_lembretes.sql'
 const MIGRACAO_LISTA = '202610060300_lembretes_sem_spam.sql'
@@ -169,6 +170,8 @@ export default function Campanhas() {
         <p className="a3-mudo a3-pequeno">Quem desligou os e-mails não recebe. Ninguém recebe dois lembretes em menos de 2 dias (só "Pix: termina hoje" passa, por ser o último aviso); o servidor segura quem recebeu qualquer e-mail nas últimas 48 horas ou 3 em 14 dias; e cada lembrete sai uma vez por ausência. "Primeira missão" e a carta "Criou e não começou" falam com as mesmas pessoas, assim como "Retomar a jornada" e "Sumiu": use um ou outro.</p>
       </details>
     </section>
+
+    <CartasPorSituacao />
 
     <div className="a3-campanhas">
       <nav className="a3-painel a3-campanhas__lista" aria-label="Campanhas">
