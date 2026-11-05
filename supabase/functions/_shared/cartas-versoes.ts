@@ -2443,6 +2443,131 @@ const simulado_lembrete: Versao[] = [
     ps: () => 'P.S.: se quiser me contar como foi, é só responder este e-mail. Cada resposta ajuda a próxima edição.' },
 ]
 
+// ---------------------------------------------------------------------------
+// 05/11/2026 (Tales): o acesso pago terminou, e o assinante em risco de parar.
+// Manuais, pela tela "Prontas para enviar"; nunca saem sozinhas.
+// ---------------------------------------------------------------------------
+const DIA_MS = 86_400_000
+const ddmm = (iso: string) => new Date(iso).toLocaleDateString('pt-BR', { day: '2-digit', month: '2-digit', timeZone: 'America/Sao_Paulo' })
+/** "hoje", "ontem", "há 5 dias": quando o acesso terminou. */
+const quandoTerminou = (c: Ctx) => (c.p.fimAcesso ? c.quando(Math.max(0, Math.floor((c.hoje.getTime() - new Date(c.p.fimAcesso).getTime()) / DIA_MS))) : 'há pouco')
+/** O que a pessoa conquistou, com o acerto só quando é motivo de orgulho. */
+const conquista = (c: Ctx): string => c.pctBom !== null
+  ? `Foram ${Q(c.r)} com ${c.pctBom}% de acerto, e tudo isso continua guardado: o histórico, o Caderno de erros e o cronograma, do jeito que você deixou.`
+  : `${cap(asSuas(c))}, o Caderno de erros e o cronograma continuam guardados, do jeito que você deixou.`
+/**
+ * Para quem assina e tem o acesso perto do fim, sem renovação automática: a conta dos dias, sem jargão
+ * (Tales: "o usuário sempre vai se confundir"). Fora disso, nada.
+ */
+const diasSomados = (c: Ctx): string | null => {
+  if (!c.p.assinante || c.p.renovaSozinho || !c.p.fimAcesso) return null
+  const fim = new Date(c.p.fimAcesso).getTime()
+  const restam = Math.ceil((fim - c.hoje.getTime()) / DIA_MS)
+  if (!Number.isFinite(restam) || restam < 0 || restam > 7) return null
+  if (restam === 0) return 'Seu acesso termina hoje. Renovando, você segue estudando sem nenhum dia de pausa.'
+  return `Seu acesso vai até ${ddmm(c.p.fimAcesso)}. Se renovar antes, os ${D(restam)} que faltam não se perdem: eles se somam ao novo mês.`
+}
+
+/** O acesso pago terminou há até 30 dias e não foi renovado. */
+const acesso_terminou: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'seu estudo continua guardado', 'Seu estudo continua guardado'), nm(c, 'tudo continua aqui', 'Tudo continua aqui')],
+    corpo: (c) => [
+      `Seu plano terminou ${quandoTerminou(c)}, e eu quis passar para dizer, com carinho, que nada do que você construiu se perdeu.`,
+      conquista(c),
+      c.obs(1, ['melhorArea', 'maisEstudada', 'cronograma']),
+      'Se quiser voltar, é só renovar: tudo reabre na hora, exatamente de onde você parou. Sem pressa e sem pressão.',
+      `Fica aqui: ${c.link('assinatura')}`,
+      c.fecho(),
+    ] },
+  { id: 'v2', assuntos: (c) => [nm(c, 'sentimos sua falta', 'Sentimos sua falta'), nm(c, 'passando para dar um oi', 'Passando para dar um oi')],
+    corpo: (c) => [
+      momento(c),
+      `Vi que o seu plano terminou ${quandoTerminou(c)}. Se foi uma pausa planejada, tudo certo. Se foi só a correria, quis lembrar que voltar é simples.`,
+      conquista(c),
+      'Renovando, a Revisão, o cronograma e o Simulado Nacional voltam na hora, com todo o seu histórico. Nenhuma questão precisa ser refeita.',
+      `Se fizer sentido: ${c.link('assinatura')}`,
+    ],
+    ps: () => 'P.S.: se algo no site não funcionou como você esperava, me responde contando. Cada resposta é lida com carinho.' },
+  { id: 'v3', requer: (c) => c.diasProva !== null && c.diasProva >= 7, assuntos: (c) => [nm(c, `faltam ${diasProva(c)} para a prova`, `Faltam ${diasProva(c)} para a prova`)],
+    corpo: (c) => [
+      `Faltam ${diasProva(c)} para ${c.nomeProva}, e lembrei de você. Seu plano terminou ${quandoTerminou(c)}, e quis te escrever antes que a reta final chegue.`,
+      conquista(c),
+      'Ainda dá tempo de fazer muita coisa. Com o plano de volta, o cronograma refaz a lista de cada dia até a prova, com o que mais cai primeiro.',
+      `Para voltar: ${c.link('assinatura')}`,
+      c.fecho(),
+    ] },
+  { id: 'v4', assuntos: (c) => [nm(c, 'nada do seu estudo se perdeu', 'Nada do seu estudo se perdeu'), nm(c, 'a porta continua aberta', 'A porta continua aberta')],
+    corpo: (c) => [
+      'Passando só para dar um oi e deixar uma coisa clara, porque muita gente fica em dúvida.',
+      `Quando o plano termina, nada é apagado. O seu plano terminou ${quandoTerminou(c)}, e ${asSuas(c)}, o Caderno de erros e o cronograma estão exatamente onde você deixou.`,
+      c.obs(1, ['melhorArea', 'maisEstudada', 'prova']) ?? (c.pctBom !== null ? `E o seu acerto de ${c.pctBom}% também continua lá, esperando a próxima questão.` : null),
+      'Se e quando fizer sentido voltar, é só renovar e seguir do mesmo ponto, sem refazer nada.',
+      `Fica aqui: ${c.link('assinatura')}`,
+      c.fecho(),
+    ] },
+  { id: 'v5', assuntos: (c) => [nm(c, 'obrigado por ter estudado com a gente', 'Obrigado por ter estudado com a gente')],
+    corpo: (c) => [
+      momento(c),
+      `Seu plano terminou ${quandoTerminou(c)}, e antes de qualquer coisa eu quis agradecer pela confiança nesse tempo de estudo.`,
+      conquista(c),
+      'Se a rotina pedir uma pausa, tudo bem. Quando quiser voltar, a Revisão já vai saber por onde começar com você.',
+      `Para renovar, quando quiser: ${c.link('assinatura')}`,
+    ],
+    ps: () => 'P.S.: se tiver alguma sugestão para o site, é só responder. Eu adoraria ouvir.' },
+]
+
+/** Assinante com risco moderado ou alto de parar (detector do painel). Nunca fala em cancelar. */
+const como_estao: Versao[] = [
+  { id: 'v1', assuntos: (c) => [nm(c, 'como estão os estudos?', 'Como estão os estudos?')],
+    corpo: (c) => [
+      'Passando só para saber como estão os estudos por aí. Quem estuda trabalhando tem semanas mais cheias, e está tudo bem.',
+      c.pctBom !== null ? `Você já tem ${Q(c.r)} com ${c.pctBom}% de acerto, e isso não some.` : `${cap(asSuas(c))} continua todo aqui.`,
+      c.obs(1, ['melhorArea', 'maisEstudada', 'cronograma']),
+      'Se a semana apertou, uma sugestão leve: dez questões da Revisão no intervalo que der. Ela já separou as que pedem uma segunda olhada.',
+      diasSomados(c),
+      `Para começar: ${c.link('revisao')}`,
+      c.fecho(),
+    ] },
+  { id: 'v2', assuntos: (c) => [nm(c, 'me conta como está a rotina', 'Me conta como está a rotina')],
+    corpo: (c) => [
+      momento(c),
+      'Quis te escrever para perguntar, com carinho: como está a rotina? Se alguma coisa no site estiver atrapalhando, ou faltando, eu adoraria saber.',
+      c.pctBom !== null ? `Do meu lado, fico feliz com o que vejo: ${Q(c.r)} e ${c.pctBom}% de acerto.` : c.obs(1, ['maisEstudada', 'melhorArea', 'cronograma']),
+      'Às vezes um ajuste pequeno resolve: marcar os dias corridos como plantão no cronograma, e ele reorganiza o resto sozinho, sem quebrar o plano até a prova.',
+      diasSomados(c),
+      `O cronograma fica aqui: ${c.link('cronograma')}`,
+    ],
+    ps: () => 'P.S.: é só responder este e-mail. Cada resposta é lida com carinho.' },
+  { id: 'v3', requer: (c) => !!c.fatos.melhorArea || !!c.fatos.maisEstudada, assuntos: (c) => [nm(c, 'o que você já conquistou', 'O que você já conquistou')],
+    corpo: (c) => [
+      'Às vezes a gente para e esquece o quanto já andou. Então quis te lembrar.',
+      c.obs(2, ['melhorArea', 'maisEstudada', 'ranking']),
+      'Nada disso se perde numa semana mais corrida. Quando der, cinco questões já recolocam tudo em movimento.',
+      diasSomados(c),
+      `A Revisão está pronta: ${c.link('revisao')}`,
+      c.fecho(),
+    ] },
+  { id: 'v4', assuntos: (c) => [nm(c, 'dez minutos já valem', 'Dez minutos já valem'), nm(c, 'tudo certo por aí?', 'Tudo certo por aí?')],
+    corpo: (c) => [
+      'Lembrei de você e quis saber se está tudo certo por aí. Semana de plantão, prova da residência, a vida acontecendo: faz parte.',
+      c.pctBom !== null ? `${cap(Q(c.r))} e ${c.pctBom}% de acerto não somem numa semana parada.` : `${cap(asSuas(c))} continua todo guardado.`,
+      'O jeito mais leve de retomar é o menor: dez minutos da Revisão hoje, no intervalo que der. Amanhã, mais dez. O embalo volta antes do que parece.',
+      diasSomados(c),
+      `Para começar: ${c.link('revisao')}`,
+      c.fecho(),
+    ] },
+  { id: 'v5', assuntos: (c) => [nm(c, 'seu cronograma se ajusta', 'Seu cronograma se ajusta')],
+    corpo: (c) => [
+      momento(c),
+      'Quis te escrever porque reparei que os estudos deram uma desacelerada, e queria que isso não pesasse.',
+      c.obs(1, ['cronograma', 'melhorArea', 'maisEstudada']) ?? (c.pctBom !== null ? `Você chegou a ${c.pctBom}% de acerto, e isso é trabalho seu.` : null),
+      'Se você usa o cronograma, ele refaz a lista de cada dia com o que ficou para trás, sem quebrar o plano até a prova. Se ainda não usa, leva dois minutos para montar.',
+      diasSomados(c),
+      `Fica aqui: ${c.link('cronograma')}`,
+    ],
+    ps: () => 'P.S.: se algo no site estiver atrapalhando, me conta respondendo este e-mail. Cada resposta é lida com carinho.' },
+]
+
 export const VERSOES: Record<string, Versao[]> = {
   'ativo:0-10': ativo_0_10, 'ativo:10-20': ativo_10_20, 'ativo:20-30': ativo_20_30, 'ativo:30-40': ativo_30_40, 'ativo:40-60': ativo_40_60,
   'ativo:60-70': ativo_60_70, 'ativo:70-80': ativo_70_80, 'ativo:80-90': ativo_80_90, 'ativo:90-100': ativo_90_100,
@@ -2450,5 +2575,5 @@ export const VERSOES: Record<string, Versao[]> = {
   reta_final, marco, opiniao, indicar, cronograma, pix_3_dias, pix_hoje, relatorio,
   boas_vindas_dia0, primeiras_10, voltou, cronograma_pronto, pagamento_aprovado, obrigado_tempo,
   assinou_sem_cronograma, assinante_parado_7, simulado_resultado, vespera_prova, depois_prova, aniversario, um_ano, indicacao_deu_certo, resumo_do_tema,
-  simulado_lembrete,
+  simulado_lembrete, acesso_terminou, como_estao,
 }

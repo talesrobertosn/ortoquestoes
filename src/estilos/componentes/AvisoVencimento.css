@@ -1,0 +1,44 @@
+/* Aviso de vencimento do Pix (05/11/2026): carinhoso, a conta dos dias à vista, nunca bloqueia. */
+.aviso-venc { position: relative; display: grid; gap: 12px; margin: 0 0 16px; padding: 20px 22px; border-radius: var(--raio-cartao, 18px); border: 1px solid var(--traco); background: var(--superficie); color: var(--texto); box-shadow: var(--sombra-1); animation: aviso-venc-entra .35s ease-out; overflow: hidden; }
+.aviso-venc::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: linear-gradient(90deg, var(--verdete), var(--ouro)); }
+.aviso-venc--atento { border-color: color-mix(in srgb, var(--ouro) 45%, var(--traco)); }
+.aviso-venc--hoje { border-color: var(--verdete); background: linear-gradient(180deg, var(--verdete-veu), var(--superficie) 70%); }
+.aviso-venc__oi { margin: 0; padding-right: 40px; font-size: var(--corpo-menor, 15px); color: var(--texto-2); line-height: 1.5; }
+.aviso-venc__pct { color: var(--verdete); }
+.aviso-venc__titulo { margin: 0; font-size: clamp(1.15rem, 2.2vw, 1.4rem); line-height: 1.25; color: var(--texto); }
+.aviso-venc__fechar { position: absolute; top: 8px; right: 8px; display: grid; place-items: center; width: var(--toque, 44px); height: var(--toque, 44px); border: 0; border-radius: 50%; background: none; color: var(--texto-2); cursor: pointer; }
+.aviso-venc__fechar:hover { background: var(--superficie-2); }
+.aviso-venc__fechar:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; }
+.aviso-venc__claro { display: flex; gap: 8px; align-items: flex-start; margin: 0; font-size: var(--corpo-menor, 15px); line-height: 1.5; color: var(--texto-2); }
+.aviso-venc__claro svg { flex: none; margin-top: 3px; color: var(--verdete); }
+.aviso-venc__claro strong { color: var(--texto); }
+.aviso-venc__botao { justify-self: start; }
+
+/* A conta: [dias que você tem] + [dias do novo mês] = [total] */
+.aviso-venc-soma { display: grid; grid-template-columns: 1fr auto 1fr auto 1.15fr; align-items: stretch; gap: 8px; }
+.aviso-venc-soma__bloco { display: grid; align-content: center; gap: 2px; padding: 12px 10px; border-radius: 14px; text-align: center; border: 1px solid var(--traco); background: var(--superficie-2); }
+.aviso-venc-soma__bloco b { font-size: 1.3rem; line-height: 1.1; color: var(--texto); font-variant-numeric: tabular-nums; }
+.aviso-venc-soma__bloco span { font-size: 13px; line-height: 1.3; color: var(--texto-2); }
+.aviso-venc-soma__bloco--seu { background: var(--ouro-veu); border-color: color-mix(in srgb, var(--ouro) 40%, transparent); }
+.aviso-venc-soma__bloco--novo { background: var(--verdete-veu); border-color: color-mix(in srgb, var(--verdete) 35%, transparent); }
+.aviso-venc-soma__bloco--total { background: var(--verdete); border-color: var(--verdete); }
+.aviso-venc-soma__bloco--total b, .aviso-venc-soma__bloco--total span { color: var(--sobre-destaque, #fff); }
+.aviso-venc-soma__sinal { align-self: center; font-size: 1.4rem; font-weight: 700; color: var(--texto-2); }
+@media (max-width: 640px) {
+  .aviso-venc { padding: 18px 16px; }
+  .aviso-venc-soma { grid-template-columns: 1fr auto 1fr; }
+  .aviso-venc-soma__bloco--total { grid-column: 1 / -1; }
+  .aviso-venc-soma__sinal:nth-of-type(2) { display: none; }
+  .aviso-venc__botao { justify-self: stretch; justify-content: center; }
+}
+@keyframes aviso-venc-entra { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .aviso-venc { animation: none; } }
+
+.jc__caixa.aviso-venc-janela { width: min(32rem, 100%); }
+.aviso-venc-janela__corpo { display: grid; gap: 12px; padding: 28px 22px 22px; text-align: center; justify-items: center; }
+.aviso-venc-janela__corpo .aviso-venc__oi { padding: 0; }
+.aviso-venc-janela__corpo .aviso-venc-soma { width: 100%; }
+.aviso-venc-janela__selo { display: grid; place-items: center; width: 56px; height: 56px; border-radius: 18px; background: var(--verdete-veu); color: var(--verdete); }
+.aviso-venc-janela__corpo h2 { margin: 0; font-size: 1.4rem; color: var(--texto); }
+.aviso-venc-janela__corpo > p:not(.aviso-venc__oi) { margin: 0; color: var(--texto-2); line-height: 1.55; }
+.aviso-venc-janela__botoes { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 4px; }

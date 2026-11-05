@@ -60,6 +60,8 @@ export const GATILHOS: Record<TipoCarta, Gatilho> = {
   um_ano: { quando: 'Agendador diário, no dia em que a conta faz 1, 2, 3... anos (candidatos_um_ano). Uma por aniversário de conta.', paraQuem: `Contas que já responderam pelo menos uma questão. ${TRAVAS}` },
   indicacao_deu_certo: { quando: 'Agendador diário (candidatos_indicacao_deu_certo): indicação confirmada nos últimos 14 dias, ou convidado com 20 questões nos últimos 90. Uma por amigo indicado.', paraQuem: `Quem indicou (o padrinho). ${TRAVAS}` },
   simulado_lembrete: { quando: 'Agendador diário (candidatos_simulado_lembrete, parte 32): a edição abre nas próximas 24 horas ou abriu nas últimas 24. Uma por edição; depois do envio, a inscrição fica marcada.', paraQuem: `Quem se inscreveu na edição e ainda não começou a prova. Se a edição pede o plano e a pessoa não assina, a carta avisa, sem preço. ${TRAVAS}` },
+  acesso_terminou: { quando: 'Só manual: E-mails › Prontas para enviar (aba "Acesso terminou") ou pela ficha. Uma por vencimento (não repete em 60 dias).', paraQuem: 'Quem tinha o plano pago e o acesso terminou há até 30 dias sem renovar. Sem preço e sem pressão.' },
+  como_estao: { quando: 'Só manual: E-mails › Prontas para enviar (aba "Em risco de parar") ou pela ficha. No máximo uma a cada 30 dias.', paraQuem: 'Assinante com risco moderado ou alto no detector de Assinantes (dias sem estudar, queda de ritmo, acesso perto do fim sem renovação automática). Nunca fala em cancelar.' },
   resumo_do_tema: { quando: 'Agendador diário, no máximo uma por semana (candidatos_resumo_do_tema). O catálogo vem de biblioteca/indice.json, lido pela função a cada execução.', paraQuem: `Quem aceitou receber novidades e tem 10 questões ou mais na área do resumo publicado nos últimos 7 dias, que ainda não abriu. ${TRAVAS}` },
 }
 
@@ -120,6 +122,8 @@ const PESSOA_DO_TIPO: Partial<Record<TipoCarta, [string, PerfilCarta, Partial<Op
   convite_20: ['Gabriel, 34 questões, não assina', { nome: 'Gabriel', respondidas: 34, acertos: 21, erros: 13, diasConta: 12, diasParado: 0, limiteGratisLigado: true }],
   convite_50: ['Pedro Alves, 290 questões, 75%, R3, TEOT a 87 dias', { ...FICTICIOS['70-80'][1], limiteGratisLigado: true }],
   reta_final: ['Pedro Alves, R3, TEOT a 87 dias', FICTICIOS['70-80'][1]],
+  acesso_terminou: ['Otávio Reis, 340 questões, o plano terminou há 6 dias', { ...otavio, assinante: false, fimAcesso: new Date(Date.now() - 6 * 86_400_000).toISOString() }],
+  como_estao: ['Pedro Alves, assina, 12 dias sem estudar, acesso no Pix até daqui a 3 dias', { ...FICTICIOS['70-80'][1], assinante: true, diasParado: 12, semana: 0, renovaSozinho: false, fimAcesso: new Date(Date.now() + 3 * 86_400_000).toISOString() }],
   marco: ['Júlia Prado passou de 500 questões', { ...FICTICIOS['80-90'][1], respondidas: 507 }, { marco: 500 }],
   opiniao: ['Júlia Prado, 1.450 questões', FICTICIOS['80-90'][1]],
   indicar: ['Rafael Couto, R2, Curitiba', FICTICIOS['40-60'][1]],

@@ -443,7 +443,7 @@ function AbaAcoes({ u, detalhe, cortesiaVale, recarregar }: { u: LinhaUsuario; d
   async function acao(rotulo: string, fazer: () => Promise<unknown>, sucesso: string) {
     if (ocupado) return
     definirOcupado(true)
-    try { await fazer(); avisoRapido(sucesso); await recarregar(); if (rotulo === 'Cortesia') void painel.atualizar() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
+    try { await fazer(); avisoRapido(sucesso); await recarregar(); if (rotulo === 'Cortesia') void painel.atualizar(); if (rotulo === 'Público') void painel.recarregarForaPublico() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
   }
   return <div className="a3-pilha">
     <div className="a3-acao-cartao">
@@ -462,6 +462,14 @@ function AbaAcoes({ u, detalhe, cortesiaVale, recarregar }: { u: LinhaUsuario; d
           <label className="a3-campo"><span>Prazo</span><select className="a3-entrada" value={dias} onChange={e => definirDias(e.target.value)}><option value="30">30 dias</option><option value="90">90 dias</option><option value="365">1 ano</option><option value="sem">Sem prazo</option></select></label>
           <button type="button" className="a3-botao" disabled={ocupado} onClick={async () => { if (await confirmar({ titulo: `Conceder cortesia a ${nome}?`, texto: `Acesso sem limite diário ${dias === 'sem' ? 'sem prazo' : `por ${dias === '365' ? '1 ano' : `${dias} dias`}`}, sem cobrança.${motivo.trim() ? ` Motivo: ${motivo.trim()}.` : ''}`, sim: 'Conceder cortesia' })) void acao('Cortesia', () => chamarRpc('definir_cortesia_admin', { p_id: u.id_usuario, p_ate: dias === 'sem' ? null : new Date(Date.now() + Number(dias) * 86_400_000).toISOString(), p_motivo: motivo, p_remover: false }), 'Cortesia concedida.') }}>Conceder cortesia</button>
         </div>}
+    </div>
+    <div className="a3-acao-cartao">
+      <div><h3 className="a3-titulo-3">{painel.foraPublico.has(u.id_usuario) ? 'Fora do público-alvo' : 'Dentro do público-alvo'}</h3><p className="a3-mudo">{painel.foraPublico.has(u.id_usuario) ? `Marcada${painel.foraPublico.get(u.id_usuario) ? ` (${painel.foraPublico.get(u.id_usuario)})` : ''}: continua registrada e na receita, mas fora dos números de aquisição, ativação, retenção e conversão.` : 'Para quem não é residente nem ortopedista. A conta continua registrada e os pagamentos continuam na receita.'}</p></div>
+      <button type="button" className="a3-botao a3-botao--contorno" disabled={ocupado || painel.foraPublicoSemSql} title={painel.foraPublicoSemSql ? 'Rode o SQL 202611050100 no Supabase' : undefined} onClick={async () => {
+        const fora = painel.foraPublico.has(u.id_usuario)
+        if (!(await confirmar({ titulo: fora ? `Voltar ${nome} ao público-alvo?` : `Marcar ${nome} fora do público-alvo?`, texto: fora ? 'Volta a contar nos números de crescimento.' : 'Sai dos números de crescimento; nada é apagado e os pagamentos continuam na receita.', sim: fora ? 'Voltar ao público' : 'Marcar fora' }))) return
+        void acao('Público', () => fora ? chamarRpc('desmarcar_fora_publico_admin', { p_ids: [u.id_usuario] }) : chamarRpc('marcar_fora_publico_admin', { p_ids: [u.id_usuario], p_motivo: 'pela ficha' }), fora ? 'Voltou ao público-alvo.' : 'Marcada fora do público-alvo.')
+      }}>{painel.foraPublico.has(u.id_usuario) ? 'Voltar ao público' : 'Marcar fora do público'}</button>
     </div>
     <p className="a3-mudo a3-pequeno"><SeloQualidade q="confirmado" /> Cada ação vale na hora e é feita no servidor, com a checagem de administrador.</p>
     <div style={{ height: 12 }} />

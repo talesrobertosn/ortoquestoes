@@ -13,6 +13,8 @@ import { Achado, Barras, Colunas, Funil, type PontoColuna } from '../ui/graficos
 import { Carregando, Estado, Faixa, Segmento } from '../ui/kit'
 import { Tabela } from '../ui/tabela'
 import { contarPorPeriodo, type Agrupamento } from './ritmo'
+import { FaixaMetas } from './metasResumo'
+import { Canais, Duplicadas, ForaDoPublico, FunilCompleto, RetencaoPorTipo } from './qualidade'
 
 /**
  * Crescimento, refeito do zero em 04/11/2026 (Tales: "uma página só, rolando; gráficos separados, não juntos; o
@@ -58,7 +60,7 @@ const frase = (q: ReturnType<typeof quando>) => `${artigo(q.melhor.dia)} ${DIAS[
 
 /* ───────────── Página ───────────── */
 
-const SECOES: Array<[string, string]> = [['cr-achados', 'Resumo'], ['cr-cadastros', 'Cadastros'], ['cr-assinantes', 'Assinantes'], ['cr-quando', 'Quando'], ['cr-funil', 'Funil'], ['cr-retencao', 'Retenção'], ['cr-estudo', 'Estudo'], ['cr-perfis', 'Quem são'], ['cr-origem', 'De onde vêm'], ['cr-indicacoes', 'Indicações']]
+const SECOES: Array<[string, string]> = [['cr-achados', 'Resumo'], ['cr-cadastros', 'Cadastros'], ['cr-assinantes', 'Assinantes'], ['cr-quando', 'Quando'], ['cr-funil', 'Funil'], ['cr-retencao', 'Retenção'], ['cr-estudo', 'Estudo'], ['cr-perfis', 'Quem são'], ['cr-origem', 'De onde vêm'], ['cr-indicacoes', 'Indicações'], ['cr-dados', 'Qualidade dos dados']]
 
 export default function Crescimento() {
   const p = usarPainel()
@@ -99,6 +101,8 @@ export default function Crescimento() {
       <p>Tudo numa página só: role para baixo ou pule para a parte que quer ver. Contas de teste e de administrador ficam de fora; datas no relógio de São Paulo.</p>
       <nav className="cr-indice" aria-label="Partes da página">{SECOES.map(([id, nome]) => <a key={id} href={`#${id}`} onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>{nome}</a>)}</nav>
     </header>
+
+    <FaixaMetas titulo="Metas de crescimento" chaves={['cadastros', 'novosPagantes', 'ativosFim']} />
 
     {!base ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="As contas não carregaram" texto={p.erroDados} /> : <Carregando linhas={8} texto="Contando cadastros e assinaturas…" />}</div> : <>
       <Achados base={base} estudo={estudo} funil={funil} coortes={coortes} usuarios={p.usuariosReais ?? []} />
@@ -142,7 +146,8 @@ export default function Crescimento() {
         <Turnos qc={base.qc} qa={base.qa} />
       </Secao>
 
-      <Secao id="cr-funil" numero={4} titulo="Funil" texto="Todas as contas desde o começo. Cada taxa é sobre a etapa anterior; a maior queda fica marcada.">
+      <Secao id="cr-funil" numero={4} titulo="Funil" texto="Do cadastro à primeira renovação, com as etapas que o site já mede. Embaixo, o funil resumido de todas as contas desde o começo.">
+        <FunilCompleto funil={funil} />
         <div className="cr-cartao">
           {carregandoFunil && !funil ? <Carregando linhas={6} /> : !funil ? <Estado compacto tipo="erro" titulo="Funil indisponível" texto={p.erroDados || 'funil_admin não respondeu.'} /> : <>
             <Funil etapas={[{ nome: 'Cadastraram', valor: funil.cadastrados }, { nome: 'Confirmaram o e-mail', valor: funil.confirmaram, base: 'cadastros' },
@@ -154,6 +159,7 @@ export default function Crescimento() {
       </Secao>
 
       <Secao id="cr-retencao" numero={5} titulo="Quem fica" texto="Cada semana de cadastro: quantos estudaram na primeira semana e quantos voltaram na segunda.">
+        <RetencaoPorTipo />
         <Retencao coortes={coortes} carregando={retQ.carregando} />
         <Adocao />
       </Secao>
@@ -164,6 +170,10 @@ export default function Crescimento() {
 
       <Perfis />
       <Indicacoes />
+      <Secao id="cr-dados" numero={10} titulo="Qualidade dos dados" texto="Contas fora do público-alvo (residentes e ortopedistas) e possíveis contas repetidas. Nada é apagado ou fundido.">
+        <ForaDoPublico />
+        <Duplicadas />
+      </Secao>
     </>}
   </div>
 }
@@ -417,6 +427,7 @@ function Perfis() {
     </Secao>
 
     <Secao id="cr-origem" numero={8} titulo="De onde vêm" texto={d.temOrigem ? `${inteiro(d.comOrigem)} contas com origem registrada (desde que a medição começou).` : 'Rode a migração 202610070100_origem_cadastro.sql para medir.'}>
+      <Canais />
       {d.origens.length ? <div className="cr-grade-2">
         <article className="cr-cartao"><h3>Cadastros por origem</h3><Barras total={d.comOrigem} itens={d.origens.map(o => ({ nome: o.rotulo, valor: o.contas }))} /></article>
         <article className="cr-cartao"><h3>Quantos assinaram, por origem <small>a origem que traz quem paga</small></h3>

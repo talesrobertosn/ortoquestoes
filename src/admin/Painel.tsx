@@ -19,6 +19,7 @@ const Inicio = lazy(() => import('./modulos/Inicio'))
 const Explorador = lazy(() => import('./modulos/Explorador'))
 const Crescimento = lazy(() => import('./modulos/Crescimento'))
 const Receita = lazy(() => import('./modulos/Receita'))
+const Metas = lazy(() => import('./modulos/Metas'))
 const Assinaturas = lazy(() => import('./modulos/Assinaturas'))
 const Cobrancas = lazy(() => import('./modulos/Cobrancas'))
 const Avisos = lazy(() => import('./modulos/Avisos'))
@@ -27,6 +28,7 @@ const Editor = lazy(() => import('./modulos/Editor'))
 const Simulados = lazy(() => import('./modulos/Simulados'))
 const Opinioes = lazy(() => import('./modulos/Opinioes'))
 const Campanhas = lazy(() => import('./modulos/Campanhas'))
+const Prontas = lazy(() => import('./modulos/Prontas'))
 const Cartas = lazy(() => import('./modulos/Cartas'))
 const Envios = lazy(() => import('./modulos/Envios'))
 const Catalogo = lazy(() => import('./modulos/Catalogo'))
@@ -42,6 +44,7 @@ function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
     case 'usuarios': return <Explorador />
     case 'crescimento': return <Crescimento />
     case 'financeiro': return <Receita />
+    case 'metas': return <Metas />
     case 'assinaturas': return <Assinaturas />
     case 'cobrancas': return <Cobrancas />
     case 'pagamentos': return <Avisos />
@@ -49,6 +52,7 @@ function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
     case 'questoes': return <Editor />
     case 'simulados': return <Simulados />
     case 'opinioes': return <Opinioes />
+    case 'prontas': return <Prontas />
     case 'lembretes': return <Campanhas />
     case 'cartas': return <Cartas />
     case 'envios': return <Envios />

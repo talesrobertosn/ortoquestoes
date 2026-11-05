@@ -13,8 +13,8 @@ export type Parte =
   | 'comando' | 'agora' | 'pendencias'
   | 'usuarios' | 'crescimento'
   | 'conteudo' | 'questoes' | 'simulados' | 'opinioes'
-  | 'financeiro' | 'assinaturas' | 'cobrancas' | 'pagamentos'
-  | 'lembretes' | 'cartas' | 'envios' | 'todas'
+  | 'financeiro' | 'metas' | 'assinaturas' | 'cobrancas' | 'pagamentos'
+  | 'prontas' | 'lembretes' | 'cartas' | 'envios' | 'todas'
   | 'ajustes' | 'aviso' | 'exportar' | 'supabase'
 
 /** Filtros do Explorador de pessoas (os mesmos do painel anterior, para os links continuarem). */
@@ -49,6 +49,7 @@ export const AREAS: DefArea[] = [
   ] },
   { id: 'receita', rotulo: 'Financeiro', curto: 'Finanças', icone: 'receita', partes: [
     { id: 'financeiro', rotulo: 'Resumo', pergunta: 'Quanto entrou, quanto entra por mês com quem assina hoje e quando cada plano renova.', antes: 'Ganhos receita previsão cenários' },
+    { id: 'metas', rotulo: 'Metas', pergunta: 'O cenário moderado como referência: progresso do mês, projeção, ritmo semanal e meta × real mês a mês.', antes: 'Metas objetivos planejamento cenário moderado projeção' },
     { id: 'cobrancas', rotulo: 'Extrato', pergunta: 'Cada pagamento recebido, estimado ou reembolsado, dia a dia.', antes: 'Pagamentos cobranças' },
     { id: 'pagamentos', rotulo: 'Avisos do Mercado Pago', pergunta: 'As mensagens automáticas que o Mercado Pago manda ao site. Só as que falharam pedem você.', antes: 'Avisos de pagamento processador' },
   ] },
@@ -59,6 +60,7 @@ export const AREAS: DefArea[] = [
     { id: 'opinioes', rotulo: 'Opiniões dos flashcards', pergunta: 'O que as pessoas dizem do som, do visual, do desempenho e do conteúdo.' },
   ] },
   { id: 'comunicacao', rotulo: 'E-mails', curto: 'E-mails', icone: 'carta', partes: [
+    { id: 'prontas', rotulo: 'Prontas para enviar', pergunta: 'Para cada pessoa, a carta que combina com o momento dela, já escrita no seu jeito: acerto, melhor área e um convite gentil para continuar. Você lê e clica em enviar.', antes: 'Sugeridas e-mails escritos carta pronta enviar' },
     { id: 'lembretes', rotulo: 'Lembretes', pergunta: 'O que está pendente para enviar: tudo de uma vez ou campanha por campanha.' },
     { id: 'cartas', rotulo: 'Cartas pessoais', pergunta: 'Uma carta escrita para cada pessoa de um grupo, com prévia e revisão.' },
     { id: 'envios', rotulo: 'Enviados', pergunta: 'Tudo o que já saiu, o relatório mensal e os e-mails automáticos.', antes: 'Relatórios e histórico' },

@@ -37,6 +37,7 @@ import { usarArmazenado } from '../estado/usarArmazenado'
 import { CHAVE_SESSAO } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
 import { usarConta } from '../conta/ContextoConta'
+import { AvisoVencimento } from '../componentes/AvisoVencimento'
 import { proximoPasso } from '../conta/passosPerfil'
 import { contasDisponiveis } from '../conta/supabase'
 import { EXIGIR_CONTA_PARA_QUESTOES } from '../config'
@@ -142,6 +143,12 @@ export function Inicio() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [indice, pedeConta, contexto.respondidas, ritmo.limite, ritmo.folgas.join(',')],
   )
+  // Acerto geral (última resposta de cada questão), para o aviso de vencimento citar.
+  const desempenhoGeral = useMemo(() => {
+    const lista = Object.values(contexto.respondidas ?? {})
+    const certas = lista.filter((r) => r?.c === true).length
+    return { respondidas: lista.length, acerto: lista.length ? Math.round((certas / lista.length) * 100) : null }
+  }, [contexto.respondidas])
   const temaFragil = useMemo(() => {
     if (!indice || pedeConta) return null
     const porTema = new Map<string, { acertos: number; tentativas: number; pendentes: number; slug: string }>()
@@ -419,6 +426,8 @@ export function Inicio() {
   const semDados = respondidasTotal === 0
   return (
     <div className="ip ip--painel hd jn" style={CENAS_SECOES}>
+      {/* Vencimento do Pix: um lembrete calmo, só nos 7 dias finais (05/11/2026). */}
+      <AvisoVencimento desempenho={desempenhoGeral} />
       {/* ── Nível 1: o acampamento e a missão do dia ── */}
       <HeroiJornada
         data={dataHoje.charAt(0).toLocaleUpperCase('pt-BR') + dataHoje.slice(1)}
