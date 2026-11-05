@@ -28,6 +28,7 @@ const Editor = lazy(() => import('./modulos/Editor'))
 const Simulados = lazy(() => import('./modulos/Simulados'))
 const Opinioes = lazy(() => import('./modulos/Opinioes'))
 const Campanhas = lazy(() => import('./modulos/Campanhas'))
+const Prontas = lazy(() => import('./modulos/Prontas'))
 const Cartas = lazy(() => import('./modulos/Cartas'))
 const Envios = lazy(() => import('./modulos/Envios'))
 const Catalogo = lazy(() => import('./modulos/Catalogo'))
@@ -51,6 +52,7 @@ function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
     case 'questoes': return <Editor />
     case 'simulados': return <Simulados />
     case 'opinioes': return <Opinioes />
+    case 'prontas': return <Prontas />
     case 'lembretes': return <Campanhas />
     case 'cartas': return <Cartas />
     case 'envios': return <Envios />

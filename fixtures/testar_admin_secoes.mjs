@@ -25,7 +25,7 @@ try {
   assert.deepEqual(m.AREAS.map(a => a.rotulo), ['Agora', 'Pessoas', 'Crescimento', 'Assinantes', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
   const partes = m.AREAS.flatMap(a => a.partes.map(p => p.id))
   assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas áreas')
-  assert.equal(partes.length, 19)
+  assert.equal(partes.length, 20)
   // Ajustes › Uso do Supabase (03/11/2026): item próprio, com endereço que volta igual.
   assert.deepEqual(m.defArea('configuracoes').partes.map(p => p.id), ['ajustes', 'exportar', 'supabase'])
   assert.equal(m.areaDe('supabase'), 'configuracoes')
@@ -100,7 +100,7 @@ try {
   assert.equal(ler('aba=assinaturas&grupo=falha_pagamento').grupo, 'falha_pagamento')
   assert.equal(ler('aba=assinaturas&grupo=xyz').grupo, 'vigentes')
   assert.match(m.urlDe(ler('aba=assinaturas&grupo=falha_pagamento')), /grupo=falha_pagamento/)
-  assert.deepEqual(m.AREAS.map(a => m.partePadrao(a.id)), ['comando', 'usuarios', 'crescimento', 'assinaturas', 'financeiro', 'conteudo', 'lembretes', 'ajustes'])
+  assert.deepEqual(m.AREAS.map(a => m.partePadrao(a.id)), ['comando', 'usuarios', 'crescimento', 'assinaturas', 'financeiro', 'conteudo', 'prontas', 'ajustes'])
 
   // ---------- Financeiro › Ganhos ----------
   // 17/10/2026 15h em Brasília (18h UTC).
@@ -234,7 +234,7 @@ try {
     assert.ok(cat.combinaBusca(modelos.find(x => x.tipo === 'voltou'), null, 'DIAS fora'), 'busca sem acento e sem caixa')
   }
 
-  console.log('Painel 3.0: 8 áreas e 19 itens, Crescimento numa página só, Assinantes à parte, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
+  console.log('Painel 3.0: 8 áreas e 20 itens (Prontas para enviar abre E-mails), Crescimento numa página só, Assinantes à parte, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }

@@ -833,3 +833,17 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 @media (prefers-color-scheme: dark) {
   .rk__nivel--alto strong, .rk__pontos--alto { color: #e48a7c }
 }
+
+/* E-mails › Prontas para enviar (05/11/2026) */
+.pr-topo { display: grid; gap: 8px }
+.pr-topo .a3-abas-grandes { grid-template-columns: repeat(3, minmax(0, 1fr)) }
+.pr-link { background: none; border: 0; padding: 0; color: var(--a3-verde); font: inherit; text-decoration: underline; cursor: pointer }
+.pr-tipo { font-size: .78rem; font-weight: 600; color: var(--a3-verde) }
+.pr-cabeca { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; align-items: start }
+.pr-editar { border: 1px solid var(--a3-borda, rgba(0,0,0,.1)); border-radius: 12px; padding: 10px 14px }
+.pr-editar[open] { display: grid; gap: 10px }
+.pr-editar summary { cursor: pointer; font-weight: 600; font-size: .9rem }
+.pr-acoes { display: flex; justify-content: flex-end; gap: 10px; flex-wrap: wrap; position: sticky; bottom: 0; padding: 12px 0 2px; background: linear-gradient(transparent, var(--a3-fundo-painel, var(--a3-superficie, #fff)) 30%) }
+.pr-enviar { min-height: 46px; padding-inline: 22px; font-size: 1rem }
+@media (max-width: 640px) { .pr-acoes { justify-content: stretch } .pr-acoes > * { flex: 1 } }
+.pr-saida li { grid-template-columns: minmax(0, 1fr); padding-left: 4px }
