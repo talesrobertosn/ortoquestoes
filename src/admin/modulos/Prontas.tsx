@@ -14,8 +14,9 @@ import { Cabeca, Carregando, Estado, Faixa, Selo } from '../ui/kit'
 import { avisoRapido, confirmar } from '../ui/sobreposicoes'
 import { AvisosTexto, PreviaCarta } from './cartas-comum'
 
-type Grupo = 'todas' | 'assinantes' | 'gratuitos'
-const GRUPOS: Array<[Grupo, string]> = [['todas', 'Todas'], ['assinantes', 'Assinantes'], ['gratuitos', 'Plano gratuito']]
+type Grupo = 'todas' | 'risco' | 'voltar' | 'assinantes' | 'gratuitos'
+const GRUPOS: Array<[Grupo, string]> = [['todas', 'Todas'], ['risco', 'Em risco de parar'], ['voltar', 'Acesso terminou'], ['assinantes', 'Assinantes'], ['gratuitos', 'Plano gratuito']]
+const noGrupo = (x: Pronta, g: Grupo) => g === 'todas' ? true : g === 'risco' ? x.carta.tipo === 'como_estao' : g === 'voltar' ? x.carta.tipo === 'acesso_terminou' : x.grupo === g
 const hoje = () => new Date().toISOString().slice(0, 10)
 const CHAVE_PULADAS = () => `oq:admin:prontas-puladas:${hoje()}`
 function lerPuladas(): Set<string> { try { return new Set(JSON.parse(localStorage.getItem(CHAVE_PULADAS()) ?? '[]')) } catch { return new Set() } }
@@ -43,11 +44,11 @@ export default function Prontas() {
     if (sementes[x.id] === undefined) return x
     try { return { ...x, carta: gerarCarta(perfilDoBanco(x.dados), { tipo: x.carta.tipo, semente: sementes[x.id], anteriores: anterioresDosDados(x.dados), site: SITE.url }) } } catch { return x }
   }), [todas, sementes])
-  const visiveis = comVersao.filter(x => !puladas.has(x.id) && enviadas[x.id] !== 'ok' && (grupo === 'todas' || x.grupo === grupo))
+  const visiveis = comVersao.filter(x => !puladas.has(x.id) && enviadas[x.id] !== 'ok' && noGrupo(x, grupo))
   const atual = visiveis.find(x => x.id === aberta) ?? visiveis[0] ?? null
   const texto = (x: Pronta) => edicoes[x.id] ?? { assunto: x.carta.assunto, corpo: x.carta.corpo }
   const nEnviadas = Object.values(enviadas).filter(v => v === 'ok').length
-  const conta = (g: Grupo) => comVersao.filter(x => !puladas.has(x.id) && enviadas[x.id] !== 'ok' && (g === 'todas' || x.grupo === g)).length
+  const conta = (g: Grupo) => comVersao.filter(x => !puladas.has(x.id) && enviadas[x.id] !== 'ok' && noGrupo(x, g)).length
 
   function proxima(depoisDe: string) {
     const i = visiveis.findIndex(x => x.id === depoisDe)
@@ -97,7 +98,7 @@ export default function Prontas() {
                   <button type="button" className="a3-saida__abrir" aria-current={atual.id === x.id ? 'true' : undefined} onClick={() => definirAberta(x.id)}>
                     <span className="a3-avatar">{iniciais(x.nome)}</span>
                     <span className="a3-saida__texto">
-                      <span className="a3-nome">{x.nome}{x.grupo === 'assinantes' && <Selo contorno>assina</Selo>}</span>
+                      <span className="a3-nome">{x.nome}{x.grupo === 'assinantes' && <Selo contorno>assina</Selo>}{x.risco && x.risco !== 'baixo' && <Selo tom={x.risco === 'alto' ? 'erro' : 'aviso'}>risco {x.risco}</Selo>}</span>
                       <span className="pr-tipo">{TIPOS[x.carta.tipo].rotulo}</span>
                       <span className="a3-sub">{Number(x.dados.respondidas ?? 0) > 0 ? `${inteiro(Number(x.dados.respondidas))} questões` : 'nenhuma questão'}{x.acerto !== null ? ` · ${x.acerto}% de acerto` : ''}{x.dados.ultima_atividade ? ` · estudou ${haQuanto(x.dados.ultima_atividade)}` : ''}</span>
                     </span>

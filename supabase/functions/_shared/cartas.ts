@@ -58,6 +58,8 @@ export type TipoCarta =
   | 'aniversario' | 'um_ano' | 'indicacao_deu_certo' | 'resumo_do_tema'
   // Parte 32 (19/10/2026): o lembrete de quem se inscreveu no Simulado Nacional (candidatos_simulado_lembrete).
   | 'simulado_lembrete'
+  // 05/11/2026: manuais, pela tela "Prontas para enviar" (o acesso pago terminou; assinante em risco de parar).
+  | 'acesso_terminou' | 'como_estao'
 
 export interface InfoTipo { rotulo: string; descricao: string; grupo: 'situacao' | 'convite' | 'pessoal' | 'automatico' }
 export const TIPOS: Record<TipoCarta, InfoTipo> = {
@@ -94,10 +96,12 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   um_ano: { grupo: 'automatico', rotulo: 'Um ano de Orto Questões', descricao: 'No dia em que a conta faz um ano (ou mais): o caminho até aqui, sem convite.' },
   indicacao_deu_certo: { grupo: 'automatico', rotulo: 'Sua indicação deu certo', descricao: 'Quem a pessoa indicou chegou a 20 questões: obrigado pela confiança.' },
   resumo_do_tema: { grupo: 'automatico', rotulo: 'Saiu um resumo do seu tema', descricao: 'Semanal, só para quem aceitou novidades: um resumo novo na área que a pessoa mais estuda.' },
+  acesso_terminou: { grupo: 'situacao', rotulo: 'Sentimos sua falta (acesso terminou)', descricao: 'O acesso pago terminou há até 30 dias e não foi renovado: tudo está guardado, o que a pessoa conquistou e a porta aberta para voltar, sem pressão.' },
+  como_estao: { grupo: 'situacao', rotulo: 'Como estão os estudos? (risco de parar)', descricao: 'Assinante que o painel marcou com risco moderado ou alto: pergunta da rotina, a Revisão e o cronograma que se ajusta; se o acesso estiver perto do fim, a conta dos dias somados.' },
   simulado_lembrete: { grupo: 'automatico', rotulo: 'Lembrete do Simulado Nacional', descricao: 'Para quem se inscreveu: a edição abre amanhã (ou abriu hoje), quantas questões, quanto tempo e até quando dá para fazer.' },
 }
 /** Tipos que o administrador pode escolher na ficha (os automáticos ficam de fora). */
-export const TIPOS_MANUAIS: readonly TipoCarta[] = ['nunca_comecou', 'boas_vindas', 'comecando', 'comecou_parou', 'sumiu', 'ativo', 'obrigado_assinatura', 'convite_20', 'convite_50', 'reta_final', 'marco', 'opiniao', 'indicar', 'cronograma']
+export const TIPOS_MANUAIS: readonly TipoCarta[] = ['nunca_comecou', 'boas_vindas', 'comecando', 'comecou_parou', 'sumiu', 'ativo', 'obrigado_assinatura', 'convite_20', 'convite_50', 'reta_final', 'marco', 'opiniao', 'indicar', 'cronograma', 'acesso_terminou', 'como_estao']
 /** Os seis automáticos novos (17/10/2026), disparados por acontecimento, sem SQL novo. */
 export const TIPOS_AUTOMATICOS_NOVOS: readonly TipoCarta[] = ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo']
 /**
@@ -152,6 +156,10 @@ export interface PerfilCarta {
   cidade?: string | null
   /** Data de nascimento (ISO "AAAA-MM-DD" ou "MM-DD"). */
   nascimento?: string | null
+  /** Fim do último acesso pago (ISO), vigente ou já terminado (05/11/2026). */
+  fimAcesso?: string | null
+  /** O acesso vigente renova sozinho (cartão ligado). */
+  renovaSozinho?: boolean
 }
 
 /** Um e-mail que a pessoa já recebeu (para não repetir a versão nem o tipo, e para a cadência). */
@@ -398,6 +406,11 @@ export function escolherTipo(p: PerfilCarta, anteriores: readonly EnvioAnterior[
 
   if (r === 0) return com('nunca_comecou', null, null, 'Ainda não respondeu nenhuma questão.')
   if (p.assinante && !recebeu('obrigado_assinatura') && !recebeu('pagamento_aprovado', 30)) return com('obrigado_assinatura', null, null, 'Assina e ainda não recebeu o agradecimento.')
+  const fimAcesso = p.fimAcesso ? new Date(p.fimAcesso) : null
+  if (!p.assinante && fimAcesso && Number.isFinite(fimAcesso.getTime())) {
+    const desde = Math.floor(diasDesde(p.fimAcesso!, hoje))
+    if (desde >= 0 && desde <= 30 && !recebeu('acesso_terminou', 60)) return com('acesso_terminou', null, null, `O acesso pago terminou ${desde === 0 ? 'hoje' : desde === 1 ? 'ontem' : `há ${dias(desde)}`} e não foi renovado.`)
+  }
   if (parado !== null && parado >= 10) return com('sumiu', null, null, `Sem responder há ${dias(parado)}.`)
   if (r < MINIMO_PARA_ACERTO && parado !== null && parado >= 3) return com('comecou_parou', null, null, `Fez ${questoes(r)} e parou há ${dias(parado)}.`)
   if (r < MINIMO_PARA_ACERTO && conta <= 3) return com('boas_vindas', null, null, 'Chegou há poucos dias e já começou.')
@@ -1028,6 +1041,9 @@ export function tipoCombina(tipo: TipoCarta, p: PerfilCarta): boolean {
     case 'marco': return r >= 100
     case 'primeiras_10': return r >= MINIMO_PARA_NUMERO
     case 'boas_vindas': case 'comecando': case 'comecou_parou': case 'pausa': case 'sumiu': case 'convite_20': case 'convite_50': case 'voltou': case 'assinante_parado_7': return r > 0
+    // Pela ficha, sem a data do fim: "terminou há pouco". A tela Prontas só escolhe estas com o dado certo.
+    case 'acesso_terminou': return !p.assinante && r > 0
+    case 'como_estao': return r > 0
     default: return true
   }
 }
@@ -1218,6 +1234,9 @@ export interface DadosCartaBanco {
   data_prova?: string | null
   prova_cronograma?: string | null
   ultimo_login?: string | null
+  // 05/11/2026 (listar_sugestoes_cartas_admin): o último acesso pago e se ele renova sozinho.
+  fim_acesso?: string | null
+  renova_sozinho?: boolean | null
 }
 
 export function perfilDosDados(d: DadosCartaBanco, limiteGratisLigado = false): PerfilCarta {
@@ -1239,6 +1258,7 @@ export function perfilDosDados(d: DadosCartaBanco, limiteGratisLigado = false): 
     servico: texto(d.servico), cidade: texto(d.cidade), nascimento: texto(d.nascimento),
     resumosLidos: resumos !== null && resumos > 0 ? { total: resumos, titulos: Array.isArray(d.resumos_titulos) ? d.resumos_titulos.map(String) : [] } : null,
     diasParaProva: num(d.dias_para_prova), provaData: texto(d.data_prova), provaCronograma: texto(d.prova_cronograma),
+    fimAcesso: texto(d.fim_acesso), renovaSozinho: !!d.renova_sozinho,
   }
 }
 

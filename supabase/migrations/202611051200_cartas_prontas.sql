@@ -1,7 +1,8 @@
 -- E-mails › Prontas para enviar (Tales, 05/11/2026).
 --
--- listar_sugestoes_cartas_admin: quem estudou nos últimos 90 dias ou criou a conta nos últimos 30, com os
--- mesmos dados das cartas pessoais (dados_cartas_interno). O painel escolhe a carta que combina com cada
+-- listar_sugestoes_cartas_admin: quem estudou nos últimos 90 dias, criou a conta nos últimos 30 ou teve o
+-- acesso pago terminado nos últimos 30, com os mesmos dados das cartas pessoais (dados_cartas_interno) e mais
+-- dois campos: fim_acesso (fim do último acesso pago) e renova_sozinho (cartão ativo, sem cancelar ao fim). O painel escolhe a carta que combina com cada
 -- pessoa e o administrador envia uma a uma. Só leitura: não envia nada e não altera dados.
 -- Fica de fora quem recebeu e-mail nas últimas 48 horas, quem não confirmou o e-mail, administradores e
 -- (se a tabela existir) as contas marcadas fora do público-alvo. O envio continua conferindo as travas no
@@ -33,15 +34,23 @@ begin
     where p.tipo = 'respondidas' and p.valor <> 'null'::jsonb
       and (coalesce(e.epoca, 0) = 0 or p.item like ('r' || e.epoca || ':%'))
     group by p.usuario_id
+  ),
+  acessos as (
+    select s.id_usuario, max(s.fim_periodo) as fim
+    from public.assinaturas s
+    where s.fim_periodo is not null and s.status not in ('pendente', 'falha_pagamento', 'reembolsada')
+    group by s.id_usuario
   )
   select array_agg(x.id) into v_ids from (
     select u.id
     from auth.users u
     left join contagem c on c.usuario_id = u.id
+    left join acessos ac on ac.id_usuario = u.id
     where u.email is not null and u.email_confirmed_at is not null
       and not exists (select 1 from public.administradores a where a.id_usuario = u.id)
       and not (u.id = any(v_fora))
-      and (c.ultima > now() - interval '90 days' or u.created_at > now() - interval '30 days')
+      and (c.ultima > now() - interval '90 days' or u.created_at > now() - interval '30 days'
+           or ac.fim between now() - interval '30 days' and now())
       and not exists (select 1 from public.emails_enviados e where e.id_usuario = u.id
                       and e.tipo not in ('alerta_admin', 'relato_resolvido')
                       and e.status in ('enviado', 'enviando') and e.enviado_em > now() - interval '48 hours')
@@ -52,7 +61,12 @@ begin
   if v_ids is null then return; end if;
 
   return query
-    select d.id_usuario, d.dados,
+    select d.id_usuario,
+           d.dados || jsonb_build_object(
+             'fim_acesso', (select max(s.fim_periodo) from public.assinaturas s where s.id_usuario = d.id_usuario
+                            and s.fim_periodo is not null and s.status not in ('pendente', 'falha_pagamento', 'reembolsada')),
+             'renova_sozinho', exists (select 1 from public.assinaturas s where s.id_usuario = d.id_usuario and s.status = 'ativa'
+                            and not s.cancelar_ao_fim and coalesce(s.id_externo, '') not like 'pix:%' and coalesce(s.fim_periodo, 'infinity') > now())),
            case when not coalesce((d.dados->>'quer_cartas')::boolean, false) then 'nao_quer_cartas' end
     from public.dados_cartas_interno(v_ids) d;
 end $$;

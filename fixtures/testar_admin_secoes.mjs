@@ -204,9 +204,9 @@ try {
     const cat = m.catalogo
     const modelos = cat.modelosDoCatalogo()
     const tipos = new Set(modelos.map(x => x.tipo))
-    assert.equal(tipos.size, 34, 'os 34 tipos do motor (18 antigos, 6 novos e 10 campanhas diárias)')
+    assert.equal(tipos.size, 36, 'os 36 tipos do motor (18 antigos, 6 novos, 10 campanhas diárias e as 2 manuais de 05/11/2026)')
     assert.equal(modelos.filter(x => x.tipo === 'ativo').length, 9, 'as 9 faixas')
-    assert.equal(modelos.length, 34 - 1 + 9)
+    assert.equal(modelos.length, 36 - 1 + 9)
     assert.equal(new Set(modelos.map(x => x.id)).size, modelos.length, 'id repetido')
     for (const grupo of ['situacao', 'faixa', 'convite', 'pessoal', 'automatico', 'novo', 'campanha']) assert.ok(modelos.some(x => x.grupo === grupo), grupo)
     assert.equal(modelos.filter(x => x.grupo === 'novo').length, 6)

@@ -836,7 +836,8 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 
 /* E-mails › Prontas para enviar (05/11/2026) */
 .pr-topo { display: grid; gap: 8px }
-.pr-topo .a3-abas-grandes { grid-template-columns: repeat(3, minmax(0, 1fr)) }
+.pr-topo .a3-abas-grandes { grid-template-columns: repeat(5, minmax(0, 1fr)) }
+@media (max-width: 900px) { .pr-topo .a3-abas-grandes { grid-template-columns: repeat(3, minmax(0, 1fr)) } }
 .pr-link { background: none; border: 0; padding: 0; color: var(--a3-verde); font: inherit; text-decoration: underline; cursor: pointer }
 .pr-tipo { font-size: .78rem; font-weight: 600; color: var(--a3-verde) }
 .pr-cabeca { display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; align-items: start }

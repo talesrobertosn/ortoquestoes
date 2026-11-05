@@ -36,6 +36,20 @@ try {
   // Quem recebeu a mesma carta há pouco não aparece de novo com ela.
   const jaRecebeu = [{ ...linhas[1], dados: { ...linhas[1].dados, emails: { ultimo_em: iso(1), n7: 1, n30: 1, lista: [{ tipo: 'carta', modelo: 'convite_50:70-80', versao: 'convite_50:70-80#v1', em: iso(1), status: 'enviado' }] } } }]
   assert.ok(!m.montarProntas(jaRecebeu, { agora }).some(x => x.carta.tipo === 'convite_50'))
+  // 05/11/2026: o acesso terminou (volte) e o assinante em risco de parar.
+  const novas = m.montarProntas([
+    { id_usuario: 'h', dados: base({ id: 'h', nome: 'Helena Prado', d: { assinante: false, respondidas: 340, acertos: 245, erros: 95, areas, fim_acesso: iso(6), ultima_atividade: iso(7), dias_parado: 7 } }), bloqueio: null },
+    { id_usuario: 'i', dados: base({ id: 'i', nome: 'Igor Melo', d: { assinante: false, respondidas: 340, acertos: 245, erros: 95, areas, fim_acesso: iso(45), ultima_atividade: iso(46), dias_parado: 46 } }), bloqueio: null },
+    { id_usuario: 'j', dados: base({ id: 'j', nome: 'Júlia Reis', d: { assinante: true, respondidas: 900, acertos: 650, erros: 250, semana: 0, areas, ultima_atividade: iso(12), dias_parado: 12, criado_em: iso(90), fim_acesso: new Date(agora.getTime() + 2 * dia).toISOString(), renova_sozinho: false, emails: { ultimo_em: iso(40), n7: 0, n30: 0, lista: [{ tipo: 'carta', modelo: 'obrigado_assinatura', em: iso(40), status: 'enviado' }] } } }), bloqueio: null },
+    { id_usuario: 'k', dados: base({ id: 'k', nome: 'Kaio Lopes', d: { assinante: true, respondidas: 900, acertos: 650, erros: 250, semana: 120, areas, renova_sozinho: true, fim_acesso: new Date(agora.getTime() + 20 * dia).toISOString(), emails: { ultimo_em: iso(40), n7: 0, n30: 0, lista: [{ tipo: 'carta', modelo: 'obrigado_assinatura', em: iso(40), status: 'enviado' }] } } }), bloqueio: null },
+  ], { agora })
+  const pn = Object.fromEntries(novas.map(x => [x.id, x]))
+  assert.equal(pn.h.carta.tipo, 'acesso_terminou'); assert.match(pn.h.carta.corpo, /terminou há 6 dias|terminou/); assert.match(pn.h.carta.corpo, /#\/assinatura/)
+  assert.notEqual(pn.i?.carta.tipo, 'acesso_terminou', 'terminou há mais de 30 dias: não')
+  assert.equal(pn.j.carta.tipo, 'como_estao'); assert.equal(pn.j.risco, 'alto'); assert.ok(!/cancel/i.test(pn.j.carta.corpo), 'nunca fala em cancelar')
+  assert.match(pn.j.carta.corpo, /se somam ao novo mês/)
+  assert.notEqual(pn.k.carta.tipo, 'como_estao', 'estudando bem: não é risco')
+  for (const x of novas) { const linhas = x.carta.corpo.split('\n').filter(Boolean).length; assert.ok(linhas >= 4 && linhas <= 12, `${x.id}: ${linhas} linhas`) }
   console.log('Cartas prontas: tipo certo por pessoa, travas, sem convite sem aceite, acerto e melhor área ok.')
-  console.log('\nExemplo (' + por.a.carta.tipo + '):\nAssunto: ' + por.a.carta.assunto + '\n' + por.a.carta.corpo)
+  for (const x of [pn.h, pn.j]) console.log('\n--- ' + x.carta.tipo + ' (' + x.carta.versao + ')\nAssunto: ' + x.carta.assunto + '\n' + x.carta.corpo)
 } finally { await rm(pasta, { recursive: true, force: true }) }
