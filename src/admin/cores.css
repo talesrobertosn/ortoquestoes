@@ -751,3 +751,43 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .mt-faixa__item--proximo .mt-faixa__sit { color: var(--ouro-texto, #7a5710); }
 .mt-faixa__item--abaixo .mt-faixa__sit { color: var(--ardosia, #5b686c); }
 .mt-faixa__ir { display: inline-flex; align-items: center; gap: 4px; align-self: center; padding: 0 8px; font: 700 13px var(--a3-fonte); color: var(--a3-verde); }
+
+/* ───────── Avisos: decisões e auditoria (05/11/2026) ───────── */
+.av-decisao { display: grid; gap: 10px; padding: 14px; border-radius: 14px; background: var(--a3-alt); }
+.av-historico { display: grid; gap: 4px; margin: 0; padding-left: 18px; font-size: 12.5px; }
+.av-historico small { display: block; color: var(--a3-cinza); }
+.av-auditoria { display: grid; gap: 12px; padding: 18px; border-radius: 18px; background: var(--a3-papel); border: 1px solid var(--a3-linha); box-shadow: var(--a3-sombra); }
+.av-auditoria h2 { margin: 0; font: 800 18px var(--a3-titulo); }
+.av-auditoria header p { margin: 2px 0 0; color: var(--a3-cinza); }
+.av-auditoria__grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px; }
+.av-auditoria__item { display: grid; gap: 3px; align-content: start; padding: 12px 14px; border-radius: 14px; background: var(--a3-verde-veu); }
+.av-auditoria__item.tem { background: var(--erro-veu, #fbeeee); }
+.av-auditoria__item span { font-size: 12.5px; font-weight: 700; }
+.av-auditoria__item b { font: 800 26px var(--a3-titulo); }
+.av-auditoria__item small { font-size: 12px; color: var(--a3-cinza); }
+.av-auditoria__item ul { display: grid; gap: 4px; margin: 6px 0 0; padding: 0; list-style: none; font-size: 12px; }
+.av-auditoria__item button { border: 0; background: none; padding: 0; color: var(--a3-verde); font: 600 12px var(--a3-fonte); text-decoration: underline; cursor: pointer; }
+
+/* ───────── Crescimento: funil completo, coortes, qualidade dos dados (05/11/2026) ───────── */
+.qd-funil { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.qd-funil li { display: grid; grid-template-columns: minmax(150px, 32%) minmax(0, 1fr) 56px 44px; align-items: center; gap: 10px; }
+.qd-funil__nome { display: grid; font-size: 13.5px; font-weight: 600; }
+.qd-funil__nome small { font-weight: 400; font-size: 11.5px; color: var(--a3-cinza); }
+.qd-funil__trilho { height: 16px; border-radius: 999px; background: var(--a3-verde-veu); overflow: hidden; }
+.qd-funil__trilho i { display: block; height: 100%; border-radius: 999px; background: var(--a3-verde); }
+.qd-funil li b { text-align: right; font-variant-numeric: tabular-nums; }
+.qd-funil__taxa { font-size: 12px; color: var(--a3-cinza); text-align: right; }
+.qd-funil li.sem { opacity: .55; }
+.qd-funil li.sem .qd-funil__trilho { background: repeating-linear-gradient(135deg, var(--a3-alt) 0 6px, var(--a3-papel) 6px 12px); }
+.qd-funil li.pior .qd-funil__taxa { color: var(--a3-erro); font-weight: 700; }
+@media (max-width: 640px) { .qd-funil li { grid-template-columns: minmax(0, 1fr) auto auto; } .qd-funil__trilho { grid-column: 1 / -1; grid-row: 2; } }
+.qd-coortes td { text-align: right; } .qd-coortes td b { display: block; }
+.qd-bloco { display: grid; gap: 8px; align-content: start; }
+.qd-lista { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; max-height: 320px; overflow: auto; }
+.qd-lista li { display: flex; align-items: center; gap: 8px; padding: 6px 8px; border-radius: 10px; background: var(--a3-alt); }
+.qd-pessoa { display: grid; flex: 1; min-width: 0; border: 0; background: none; padding: 0; text-align: left; font: inherit; color: var(--a3-tinta); cursor: pointer; }
+.qd-pessoa small { font-size: 11.5px; color: var(--a3-cinza); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.qd-dup { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.qd-dup li { display: grid; gap: 6px; padding: 10px 12px; border-radius: 12px; background: var(--a3-alt); }
+.qd-dup li > div { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px; }
+.qd-dup .qd-pessoa { padding: 6px 8px; border-radius: 8px; background: var(--a3-papel); }
