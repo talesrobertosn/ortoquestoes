@@ -791,3 +791,45 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .qd-dup li { display: grid; gap: 6px; padding: 10px 12px; border-radius: 12px; background: var(--a3-alt); }
 .qd-dup li > div { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px; }
 .qd-dup .qd-pessoa { padding: 6px 8px; border-radius: 8px; background: var(--a3-papel); }
+
+/* Assinantes › Risco de abandono (05/11/2026) */
+.rk { padding: 0; overflow: hidden }
+.rk__cabeca { display: flex; gap: 16px; justify-content: space-between; align-items: flex-start; padding: 18px 20px 6px }
+.rk__titulo { margin: 0 0 4px; font-size: 1.05rem }
+.rk__niveis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 10px 20px 14px }
+.rk__nivel { display: grid; gap: 2px; text-align: left; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--a3-borda, rgba(0,0,0,.1)); background: transparent; color: inherit; cursor: pointer; font: inherit }
+.rk__nivel strong { font-size: 1.6rem; font-variant-numeric: tabular-nums; line-height: 1 }
+.rk__nivel span { font-size: .82rem; opacity: .8 }
+.rk__nivel--alto strong { color: #b4483a }
+.rk__nivel--moderado strong { color: var(--a3-ouro-cheio) }
+.rk__nivel--baixo strong { color: var(--a3-verde) }
+.rk__nivel[aria-selected="true"] { border-color: currentColor; box-shadow: inset 0 0 0 1px currentColor; background: var(--a3-verde-veu) }
+.rk__ajuste { margin: 0 20px 14px; padding: 14px; border-radius: 12px; background: var(--a3-verde-veu); display: grid; gap: 10px }
+.rk__ajuste p { margin: 0 }
+.rk__pesos { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px }
+.rk__ajuste > .a3-botao { justify-self: start }
+.rk-peso { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: .84rem }
+.rk-peso input { width: 56px; padding: 4px 6px; border-radius: 8px; border: 1px solid var(--a3-borda, rgba(0,0,0,.15)); background: transparent; color: inherit; font: inherit; text-align: right }
+.rk__vazio { padding: 6px 20px 20px; margin: 0; opacity: .75 }
+.rk__lista { list-style: none; margin: 0; padding: 0 }
+.rk__item { display: grid; grid-template-columns: auto 1fr auto; gap: 12px; align-items: start; padding: 14px 20px; border-top: 1px solid var(--a3-borda, rgba(0,0,0,.08)) }
+.rk__corpo { min-width: 0; display: grid; gap: 4px }
+.rk__nome { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap }
+.rk__pontos { font-size: .74rem; padding: 2px 8px; border-radius: 99px; font-weight: 600 }
+.rk__pontos--alto { background: rgba(180,72,58,.12); color: #b4483a }
+.rk__pontos--moderado { background: color-mix(in srgb, var(--a3-ouro-cheio) 16%, transparent); color: var(--a3-ouro-cheio) }
+.rk__pontos--baixo { background: var(--a3-verde-veu); color: var(--a3-verde) }
+.rk__motivos { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .84rem; opacity: .85 }
+.rk__motivos li::before { content: "• "; opacity: .5 }
+.rk__acao { margin: 2px 0 0; display: flex; gap: 6px; align-items: center; font-size: .84rem; color: var(--a3-verde) }
+.rk__botoes { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end }
+@media (max-width: 640px) {
+  .rk__cabeca { flex-direction: column }
+  .rk__item { grid-template-columns: auto 1fr }
+  .rk__botoes { grid-column: 1 / -1; justify-content: flex-start }
+  .rk__nivel { padding: 10px }
+  .rk__nivel strong { font-size: 1.3rem }
+}
+@media (prefers-color-scheme: dark) {
+  .rk__nivel--alto strong, .rk__pontos--alto { color: #e48a7c }
+}
