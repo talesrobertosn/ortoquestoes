@@ -12,6 +12,7 @@ import { data, diaDaSerie, inteiro, reais } from '../ui/formato'
 import { Colunas, type PontoColuna } from '../ui/graficos'
 import { Carregando, Estado, Faixa, Painel, VariacaoTexto } from '../ui/kit'
 import { Tabela } from '../ui/tabela'
+import { Calendario } from './calendario'
 
 /**
  * Financeiro › Resumo, refeito do zero em 04/11/2026 (Tales: "quanto vou ganhar em cada mês; os cenários de 50% a 90%;
@@ -35,7 +36,7 @@ const soMes = (k: string) => NOME_MES(k).replace(/ de \d{4}$/, '')
 const nomeCurto = (a: LinhaAssinatura) => a.nome || a.usuario || a.id_usuario.slice(0, 8)
 
 /** Quem paga hoje, uma linha por pessoa: plano, como paga, o último valor pago e quando vence. */
-interface Pagante { id: string; nome: string; plano: string; meses: number; meio: 'cartao' | 'pix'; renova: boolean; saindo: boolean; preco: number; fim: Date }
+export interface Pagante { id: string; nome: string; plano: string; meses: number; meio: 'cartao' | 'pix'; renova: boolean; saindo: boolean; preco: number; fim: Date }
 function carteiraDe(assinaturas: LinhaAssinatura[], todas: Cobranca[], agora = Date.now()): Pagante[] {
   const ultimo = new Map<string, number>()
   for (const c of [...todas].sort((a, b) => a.em.getTime() - b.em.getTime())) ultimo.set(c.id_usuario, c.valor)
@@ -61,7 +62,7 @@ function proximosPagamentos(c: Pagante[], ate: Date, agora = new Date()) {
   return lista.sort((a, b) => a.em.getTime() - b.em.getTime())
 }
 
-const CENARIOS: Array<{ taxa: number; nome: string }> = [
+export const CENARIOS: Array<{ taxa: number; nome: string }> = [
   { taxa: 0.3, nome: 'Pessimista' }, { taxa: 0.5, nome: 'Metade' }, { taxa: 0.6, nome: '60%' }, { taxa: 0.7, nome: '70%' },
   { taxa: 0.8, nome: '80%' }, { taxa: 0.9, nome: '90%' }, { taxa: 1, nome: 'Todos' },
 ]
@@ -116,6 +117,7 @@ function Financeiro({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
     </Faixa>}
 
     <Mensais carteira={carteira} taxa={taxa} escolher={escolher} observado={observado.taxa !== null ? { taxa: observado.taxa, renovados: observado.renovados, encerrados: observado.encerrados } : null} />
+    <Calendario pagamentos={doze} todas={todas} assinaturas={assinaturas} taxa={taxa} escolher={escolher} />
     <Longos carteira={carteira} doze={doze} taxa={taxa} />
     <Previsao doze={doze} taxa={taxa} recebido={g.mes.valor} chaveMes={chaveMes} />
     <Recebido serie={f.serie} porDia={g.porDia} meses={meses} taxaRenovacao={f.taxaRenovacaoMes} renovaram={f.renovaramMes} perderam={f.perderamMes} />
