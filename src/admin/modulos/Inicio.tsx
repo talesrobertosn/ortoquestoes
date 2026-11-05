@@ -114,8 +114,9 @@ export default function Inicio() {
     if (!p.usuarios) return null
     const hoje = diaSP(Date.now())
     const sinal = (u: LinhaUsuario) => p.sinais.get(u.id_usuario)
-    // Administrador é sempre "não assinante" (acesso de cortesia, nunca possível pagador), mesmo vendo os planos.
-    const tipoDe = (u: LinhaUsuario): Tipo => u.administrador ? 'gratis' : u.plano_vigente ? 'assinante' : planosEmDestaque(sinal(u)?.planos_ultima) ? 'lead' : 'gratis'
+    // Administrador conta como assinante no "Agora no site" (Tales, 05/11/2026): tem acesso completo, então não é
+    // "não assinante" nem possível pagador. Continua fora das listas de quem paga (assinantes hoje, ausentes).
+    const tipoDe = (u: LinhaUsuario): Tipo => u.administrador || u.plano_vigente ? 'assinante' : planosEmDestaque(sinal(u)?.planos_ultima) ? 'lead' : 'gratis'
     const ordemTipo: Record<Tipo, number> = { lead: 0, assinante: 1, gratis: 2 }
     // Administradores aparecem no que é presença (online, estudaram, cadastros), com o selo "Admin" (Tales, 03/11/2026),
     // e ficam fora das listas de quem paga ou pode pagar (assinantes, viram os planos, limite, ausentes).
