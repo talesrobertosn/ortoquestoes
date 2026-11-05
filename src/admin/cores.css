@@ -674,9 +674,11 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .mt-cartao__numeros span { font-size: 13px; color: var(--a3-cinza); }
 .mt-cartao dl { display: grid; gap: 4px; margin: 0; }
 .mt-cartao dl div { display: flex; justify-content: space-between; gap: 8px; font-size: 12.5px; }
-.mt-cartao dt { color: var(--a3-cinza); }
+.mt-cartao dt { color: var(--a3-cinza); flex: 1 1 auto; min-width: 7.5em; overflow-wrap: normal; word-break: normal; }
 .mt-cartao dd { margin: 0; font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
-.mt-cartao dd small { font-weight: 400; color: var(--a3-cinza); }
+.mt-cartao dd { flex: 0 1 auto; min-width: 0; }
+/* O intervalo da projeção vai na linha de baixo: o número nunca espreme o rótulo (bug de 05/11/2026). */
+.mt-cartao dd small { display: block; font-weight: 400; color: var(--a3-cinza); white-space: normal; overflow-wrap: anywhere; }
 .mt-cartao dd.ok { color: var(--acerto-texto, #1f7a4d); }
 .mt-cartao__explica { margin: 0; font-size: 11.5px; color: var(--a3-cinza); line-height: 1.4; }
 .mt-pilha { position: relative; display: flex; height: 26px; border-radius: 10px; background: var(--a3-alt); overflow: visible; }
@@ -733,7 +735,7 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 @keyframes mt-cai { 0% { opacity: 0; transform: translateY(0) rotate(0); } 15% { opacity: 1; } 100% { opacity: 0; transform: translateY(240px) rotate(260deg); } }
 @media (prefers-reduced-motion: reduce) { .mt-confete { display: none; } }
 .mt-cartao header { flex-direction: column; align-items: flex-start; }
-.mt-cartao dl div { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+.mt-cartao dl div { display: grid; grid-template-columns: minmax(7.5em, 1fr) auto; }
 .mt-faixa { display: flex; flex-wrap: wrap; align-items: stretch; gap: 10px; padding: 12px; border-radius: 18px; background: var(--a3-papel); border: 1px solid var(--a3-linha); box-shadow: var(--a3-sombra); color: var(--a3-tinta); text-decoration: none; }
 .mt-faixa:hover { border-color: var(--a3-verde); }
 .mt-faixa:focus-visible { outline: 2px solid var(--a3-verde); outline-offset: 2px; }
@@ -848,3 +850,29 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .pr-enviar { min-height: 46px; padding-inline: 22px; font-size: 1rem }
 @media (max-width: 640px) { .pr-acoes { justify-content: stretch } .pr-acoes > * { flex: 1 } }
 .pr-saida li { grid-template-columns: minmax(0, 1fr); padding-left: 4px }
+
+/* E-mails › Lembretes › Cartas por situação (05/11/2026) */
+.cl { padding: 0; overflow: hidden; border-left: 4px solid var(--a3-ouro-cheio); }
+.cl__cabeca { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 10px 20px; align-items: center; padding: 20px 20px 8px; }
+.cl__cabeca p { margin: 4px 0 0; }
+.cl__trava { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; padding: 4px 20px 14px; }
+.cl__andamento { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 0 20px 12px; padding: 10px 14px; border-radius: 12px; background: var(--a3-verde-veu); }
+.cl__andamento progress { flex: 1 1 160px; }
+.cl__vazio { margin: 0; padding: 4px 20px 20px; opacity: .75; }
+.cl__lista { list-style: none; margin: 0; padding: 0; }
+.cl__lista > li { border-top: 1px solid var(--a3-linha); }
+.cl__lista > li.aberto { background: var(--a3-recuo); }
+.cl__linha { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 8px 16px; align-items: center; padding: 14px 20px; }
+.cl__texto { display: grid; gap: 3px; min-width: 0; }
+.cl__n { font: 800 24px var(--a3-titulo); font-variant-numeric: tabular-nums; }
+.cl__botoes { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+.cl__exemplo { display: grid; gap: 8px; padding: 0 20px 18px; }
+.cl__exemplo p { margin: 0; }
+@media (max-width: 640px) {
+  .cl__cabeca { grid-template-columns: 1fr; padding: 16px 16px 8px; }
+  .cl__cabeca .a3-botao--grande { width: 100%; justify-content: center; }
+  .cl__trava, .cl__linha { padding-inline: 16px; }
+  .cl__linha { grid-template-columns: minmax(0, 1fr) auto; }
+  .cl__botoes { grid-column: 1 / -1; justify-content: stretch; }
+  .cl__botoes .a3-botao { flex: 1; justify-content: center; }
+}
