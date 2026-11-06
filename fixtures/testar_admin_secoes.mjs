@@ -32,13 +32,13 @@ try {
   assert.equal(ida('aba=supabase'), '/admin?aba=supabase')
   // Os três medidores: porcentagem do limite do plano e cor por faixa (sem tráfego nem funções, que pedem token).
   {
-    const MB = 1024 ** 2, u = m.uso
-    const lista = u.medidores({ medido_em: '2026-11-03T10:00:00Z', banco_bytes: 250 * MB, tabelas: [], arquivos_bytes: 921.6 * MB, baldes: [], contas: 10, ativas_30d: 35_000 })
+    const MB = 1024 ** 2, GB = 1024 ** 3, u = m.uso
+    const lista = u.medidores({ medido_em: '2026-11-03T10:00:00Z', banco_bytes: 4 * GB, tabelas: [], arquivos_bytes: 90 * GB, baldes: [], contas: 10, ativas_30d: 70_000 })
     assert.deepEqual(lista.map(x => x.id), ['banco', 'arquivos', 'usuarios'])
     assert.equal(Math.round(lista[0].pct), 50); assert.equal(Math.round(lista[1].pct), 90); assert.equal(Math.round(lista[2].pct), 70)
     assert.deepEqual(lista.slice(0, 3).map(x => u.tomDe(x.pct)), ['ok', 'perigo', 'aviso'])
     assert.equal(u.tamanho(182 * MB), '182 MB'); assert.equal(u.tamanho(1024 * MB), '1 GB'); assert.equal(u.tamanho(1.5 * MB), '1,5 MB')
-    assert.deepEqual(u.pertoDoLimite({ medido_em: '', banco_bytes: 250 * MB, tabelas: [], arquivos_bytes: 921.6 * MB, baldes: [], contas: 10, ativas_30d: 35_000 }).map(x => x.id), ['arquivos'])
+    assert.deepEqual(u.pertoDoLimite({ medido_em: '', banco_bytes: 4 * GB, tabelas: [], arquivos_bytes: 90 * GB, baldes: [], contas: 10, ativas_30d: 70_000 }).map(x => x.id), ['arquivos'])
     assert.equal(u.medidores(null).every(x => x.pct === null), true)
   }
   // Nenhuma parte do painel antigo some.

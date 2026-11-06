@@ -1,22 +1,24 @@
 /**
  * Uso do Supabase (Tales, 03/11/2026): os limites do plano e as contas do medidor, num lugar só.
  *
- * Plano: Free. Limites conferidos em 03/11/2026 na página de preços (supabase.com/pricing) e no guia de cobrança
+ * Plano: Pro desde 06/11/2026 (antes Free, conferido em 03/11/2026). Limites da página de preços (supabase.com/pricing) e no guia de cobrança
  * (supabase.com/docs/guides/platform/billing-on-supabase). Mudou de plano ou de limite? Troque só aqui.
  * Os números de uso vêm da função `uso_supabase_admin` (supabase/migrations/202611030100_uso_supabase.sql),
  * que só administrador pode chamar.
  */
 export const PLANO_SUPABASE = {
-  nome: 'Free',
-  conferidoEm: '03/11/2026',
+  // Plano Pro desde 06/11/2026 (Tales assinou depois do aviso de cota do Free). Limites incluídos no plano:
+  // passando deles, o Supabase cobra o excedente, sem bloquear o site.
+  nome: 'Pro',
+  conferidoEm: '06/11/2026',
   limites: {
-    /** Tamanho do banco por projeto. */
-    bancoBytes: 500 * 1024 ** 2,
-    /** Arquivos (Storage). */
-    arquivosBytes: 1024 ** 3,
-    /** Usuários ativos por mês (MAU). */
-    usuariosAtivosMes: 50_000,
-    /* Tráfego de saída (5 GB/mês) e Edge Functions (500.000 chamadas/mês) não entram: só saem pela API com token. */
+    /** Tamanho do banco incluído (8 GB). */
+    bancoBytes: 8 * 1024 ** 3,
+    /** Arquivos (Storage) incluídos: 100 GB. */
+    arquivosBytes: 100 * 1024 ** 3,
+    /** Usuários ativos por mês (MAU) incluídos. */
+    usuariosAtivosMes: 100_000,
+    /* Tráfego de saída (250 GB/mês no Pro) e Edge Functions não entram: só saem pela API com token. */
   },
 } as const
 
@@ -56,7 +58,7 @@ export function medidores(u: UsoSupabase | null): Medidor[] {
   const m = (id: Medidor['id'], nome: string, frase: string, usado: number | null, limite: number, unidade: Medidor['unidade']): Medidor =>
     ({ id, nome, frase, usado, limite, unidade, pct: usado === null ? null : porcento(usado, limite) })
   return [
-    m('banco', 'Banco de dados', 'Todas as tabelas, com índices. Passou do limite, o banco fica só para leitura.', u ? Number(u.banco_bytes) : null, L.bancoBytes, 'bytes'),
+    m('banco', 'Banco de dados', 'Todas as tabelas, com índices. No Pro, passar do incluído gera cobrança extra, sem bloquear o site.', u ? Number(u.banco_bytes) : null, L.bancoBytes, 'bytes'),
     m('arquivos', 'Arquivos', 'Imagens e anexos guardados no Storage, somando todos os baldes.', u ? Number(u.arquivos_bytes) : null, L.arquivosBytes, 'bytes'),
     m('usuarios', 'Usuários ativos', 'Contas que entraram nos últimos 30 dias, perto do que o plano conta por mês.', u ? Number(u.ativas_30d) : null, L.usuariosAtivosMes, 'contas'),
   ]
