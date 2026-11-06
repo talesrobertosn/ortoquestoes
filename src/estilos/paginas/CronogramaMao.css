@@ -37,3 +37,18 @@
 .cm > .cr-rodape { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3); }
 /* No celular o texto do convite passa por cima da oficina: o véu fica mais firme para a leitura. */
 @media (max-width: 40rem) { .cm-form .pe-heroi--torre .ct-cena::after { background: linear-gradient(90deg, rgba(8, 12, 16, 0.9), rgba(8, 12, 16, 0.74)); } }
+
+/* O tamanho do plano (06/11/2026): quantas questões o plano cobre e o que seria preciso por dia para fazer todas. */
+.cm-tamanho { display: grid; gap: 10px; }
+.cm-tamanho__topo { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 6px 16px; }
+.cm-tamanho__topo h2 { margin: 2px 0 0; font-size: clamp(1.1rem, 2.4vw, 1.35rem); line-height: 1.25; }
+.cm-tamanho__topo h2 .numerico { color: var(--verdete); }
+.cm-tamanho__acervo { margin: 0; color: var(--texto-2); font-size: var(--corpo-menor, 15px); }
+.cm-tamanho__barra { height: 10px; border-radius: 99px; background: var(--superficie-2); overflow: hidden; }
+.cm-tamanho__barra span { display: block; height: 100%; min-width: 4px; border-radius: inherit; background: linear-gradient(90deg, var(--verdete), var(--ouro)); }
+.cm-tamanho > .texto-2 { margin: 0; }
+.cm-tamanho__aviso, .cm-tamanho__ok { margin: 0; padding: 12px 14px; border-radius: 12px; line-height: 1.5; font-size: var(--corpo-menor, 15px); }
+.cm-tamanho__aviso { background: var(--ouro-veu); border: 1px solid color-mix(in srgb, var(--ouro) 40%, transparent); }
+.cm-tamanho__ok { background: var(--verdete-veu); }
+.cm-tamanho .botao-link { display: inline; margin-left: 4px; padding: 0; border: 0; background: none; color: var(--verdete); font: inherit; font-weight: 700; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.cm-tamanho .botao-link:focus-visible { outline: 3px solid var(--foco); outline-offset: 2px; border-radius: 4px; }

@@ -85,17 +85,23 @@ try {
 
   // título: questões no padrão da prova primeiro; o essencial não usa as de ingresso
   const tit = m.calcularPlanoMao(indice, {}, { ...m.configInicial('titulo', AGORA), dias: todosOsDias, criadoEm: hoje }, AGORA)
-  // título: foco na SBCM e no SIMÃO; ingresso só como reforço (no máximo uma para cada quatro), nos mesmos assuntos
+  // título (06/11/2026): na completa, as questões de seleção do mesmo assunto entram misturadas com foco no
+  // título (no máximo uma de seleção para cada FOCO_TITULO SBCM/SIMÃO enquanto houver do título), e o plano fica
+  // denso como o do ingresso
   const idsTitulo = tit.temas.flatMap((t) => t.ids)
   assert.equal(new Set(idsTitulo).size, idsTitulo.length, 'questão repetida no título')
   assert.ok([...poolTitulo].every((id) => idsTitulo.includes(id)), 'o título deixou questões SBCM/SIMÃO de fora')
   for (const t of tit.temas) {
-    const proprias = t.ids.filter((id) => poolTitulo.has(id)).length, reforco = t.ids.length - proprias
-    assert.ok(proprias > 0 && reforco <= Math.ceil(proprias * m.REFORCO_TITULO), `${t.nome}: reforço demais`)
+    const ultimaPropria = t.ids.reduce((u, id, i) => (poolTitulo.has(id) ? i : u), -1)
+    const proprias = t.ids.filter((id) => poolTitulo.has(id)).length
+    const selecaoNoMeio = t.ids.slice(0, ultimaPropria + 1).filter((id) => !poolTitulo.has(id)).length
+    assert.ok(proprias === 0 || selecaoNoMeio <= Math.ceil(proprias / m.FOCO_TITULO), `${t.nome}: seleção demais no meio do título (${selecaoNoMeio} para ${proprias})`)
+    assert.ok(proprias === 0 || poolTitulo.has(t.ids[0]), `${t.nome}: o assunto não começa pelo padrão do título`)
   }
   const doTituloHoje = tit.idsHoje.filter((id) => poolTitulo.has(id)).length
   assert.ok(doTituloHoje >= tit.idsHoje.length * 0.75, `título com pouco SBCM/SIMÃO no dia: ${doTituloHoje}/${tit.idsHoje.length}`)
-  assert.ok(tit.total < p.total, 'o título ficou do tamanho do ingresso')
+  assert.ok(tit.total >= p.total * 0.9, `o título continua fraco: ${tit.total} contra ${p.total} do ingresso`)
+  assert.ok(tit.metaNormal >= 10, `meta do título baixa demais: ${tit.metaNormal} por dia`)
   const essencial = m.calcularPlanoMao(indice, {}, { ...m.configInicial('titulo', AGORA), dias: todosOsDias, criadoEm: hoje, cobertura: 'essencial' }, AGORA)
   assert.ok(essencial.temas.every((t) => t.nivel >= 3 && t.ids.every((id) => poolTitulo.has(id))), 'essencial do título com questão de ingresso')
   assert.ok(essencial.total < tit.total)
