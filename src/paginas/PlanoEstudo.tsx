@@ -281,7 +281,7 @@ export function PlanoEstudo() {
       : idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), { ...atuais, ...marcarReservadas(c) }, incluiSimulados(p))
     if (!ids.length) return
     const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
-    if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma' }))) return
+    if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma', diaPlano: hojeBR() }))) return
     navegar('/sessao')
   }
 
@@ -315,7 +315,7 @@ export function PlanoEstudo() {
     const sessaoIds = doDia ? idsDaSessaoDoDia(doDia, atuais) : ids.filter((id) => !atuais[id])
     if (!sessaoIds.length) return
     const temas = [...new Set((doDia?.itens ?? []).map((i) => i.slug))]
-    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, situacao: 'naoRespondidas' as const, embaralhar: false, limite: sessaoIds.length }, sessaoIds, { origem: 'cronograma' }))) return
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, situacao: 'naoRespondidas' as const, embaralhar: false, limite: sessaoIds.length }, sessaoIds, { origem: 'cronograma', diaPlano: dia }))) return
     navegar('/sessao')
   }
   /** Começa uma sessão já montada (diagnóstico, reta final, reativar, risco). */
@@ -332,7 +332,7 @@ export function PlanoEstudo() {
     if (!indice) return
     const ids = idsMiniSimulado(indice, respondidas)
     if (!ids.length) return
-    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', simulado: true, limiteSegundos: Math.round(ids.length * 90) }))) return
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', simulado: true, limiteSegundos: Math.round(ids.length * 90), diaPlano: hojeBR() }))) return
     marcarFeito('mini')
     navegar('/sessao')
   }
@@ -494,9 +494,10 @@ function marcasDoAparelho(feitos: FeitosDoDia, resumao: ResumaoHoje): MarcasDia 
  */
 export function sessaoPendente(sessao: EstadoSessao | null, agora: number = Date.now()): { feitas: number; total: number; tema: string; simulado: boolean } | null {
   if (!sessao || sessao.concluidaEm || !sessao.origem) return null
-  // A sessão do cronograma da mão (área "mao") também tem origem "cronograma": não é a do TEOT/TARO
-  // (06/11/2026: o cronograma geral mostrava "faltam 17" de uma sessão da mão pela metade).
-  if (sessao.filtros.areas?.includes('mao')) return null
+  // Só a sessão aberta pelo próprio cronograma de TEOT/TARO (o dia, um dia puxado ou o mini-simulado) vira o
+  // "Continuar" do dia (06/11/2026: uma sessão de 18 questões aberta por outra tela prendia o botão em
+  // "faltam 17" de um dia de 65). As outras continuam em Questões, mas não tomam o lugar do dia.
+  if (!sessao.diaPlano) return null
   if (chaveDoDia(sessao.criadaEm) !== chaveDoDia(agora)) return null
   const feitas = Object.keys(sessao.respostas).length
   if (feitas >= sessao.ids.length) return null
