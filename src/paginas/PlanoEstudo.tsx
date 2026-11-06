@@ -494,6 +494,9 @@ function marcasDoAparelho(feitos: FeitosDoDia, resumao: ResumaoHoje): MarcasDia 
  */
 export function sessaoPendente(sessao: EstadoSessao | null, agora: number = Date.now()): { feitas: number; total: number; tema: string; simulado: boolean } | null {
   if (!sessao || sessao.concluidaEm || !sessao.origem) return null
+  // A sessão do cronograma da mão (área "mao") também tem origem "cronograma": não é a do TEOT/TARO
+  // (06/11/2026: o cronograma geral mostrava "faltam 17" de uma sessão da mão pela metade).
+  if (sessao.filtros.areas?.includes('mao')) return null
   if (chaveDoDia(sessao.criadaEm) !== chaveDoDia(agora)) return null
   const feitas = Object.keys(sessao.respostas).length
   if (feitas >= sessao.ids.length) return null
