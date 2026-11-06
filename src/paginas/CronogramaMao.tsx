@@ -120,7 +120,7 @@ function Formulario({ prova, inicial, novo, aoSalvar, aoCancelar, logado }: { pr
         <fieldset className="pe-form__campos cm-campo">
           <legend className="pe-form__sub">Até onde ir?</legend>
           <div className="pe-intensidades" role="radiogroup" aria-label="Até onde ir">
-            <button type="button" role="radio" aria-checked={c.cobertura === 'completa'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><span>{prova === 'titulo' ? 'Todos os assuntos do título: primeiro as questões no padrão SBCM e SIMÃO, depois as de seleção do mesmo assunto, como treino.' : 'Todos os assuntos, com todo tipo de questão da mão.'}</span></button>
+            <button type="button" role="radio" aria-checked={c.cobertura === 'completa'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><span>{prova === 'titulo' ? 'Todos os assuntos do título, com foco no padrão SBCM e SIMÃO e questões de seleção do mesmo assunto misturadas, como treino.' : 'Todos os assuntos, com todo tipo de questão da mão.'}</span></button>
             <button type="button" role="radio" aria-checked={c.cobertura === 'essencial'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'essencial' })}><strong>Essencial</strong><span>Só os assuntos de prioridade máxima e alta{prova === 'titulo' ? ', só com questões no padrão SBCM e SIMÃO' : ''}. Bom para pouco tempo.</span></button>
           </div>
         </fieldset>

@@ -108,6 +108,17 @@ export interface PlanoMao {
 
 /** Reforço do título: no máximo uma questão de ingresso para cada quatro do padrão SBCM e SIMÃO. */
 
+/** No título (cobertura completa), quantas questões SBCM/SIMÃO vêm para cada uma de seleção do mesmo assunto. */
+export const FOCO_TITULO = 3
+
+/** Mistura com foco: a cada `foco` da primeira lista entra uma da segunda; o que sobrar da segunda vai para o fim. */
+function comFoco(a: string[], b: string[], foco: number): string[] {
+  const saida: string[] = []
+  let j = 0
+  a.forEach((id, i) => { saida.push(id); if ((i + 1) % foco === 0 && j < b.length) saida.push(b[j++]) })
+  return saida.concat(b.slice(j))
+}
+
 /** Junta duas listas espalhando a segunda pela primeira, na proporção dos tamanhos. */
 function misturar(a: string[], b: string[]): string[] {
   if (!b.length) return a
@@ -129,9 +140,10 @@ function rankingDoPlano(indice: Indice, prova: ProvaMao, cobertura: ConfigMao['c
   const daOutra = new Map(outra.temas.map((t) => [t.nome, t]))
   if (prova === 'titulo') {
     // Tales, 06/11/2026: o título estava "fraquinho" (cerca de 5 questões por dia). Na cobertura completa (a
-    // padrão), todas as questões das provas de seleção do mesmo assunto entram como treino, DEPOIS das questões no
-    // padrão SBCM/SIMÃO do assunto: o padrão da prova continua vindo primeiro. A essencial fica só com SBCM/SIMÃO.
-    const temas: TemaRanking[] = ranking.temas.map((t) => ({ ...t, ids: cobertura === 'essencial' ? t.ids : [...t.ids, ...(daOutra.get(t.nome)?.ids ?? [])] }))
+    // padrão), as questões de seleção do mesmo assunto entram misturadas, com foco no título: três SBCM/SIMÃO para
+    // cada uma de seleção; as de seleção que sobrarem vêm no fim do assunto, como treino. A essencial fica só com
+    // SBCM/SIMÃO.
+    const temas: TemaRanking[] = ranking.temas.map((t) => ({ ...t, ids: cobertura === 'essencial' ? t.ids : comFoco(t.ids, daOutra.get(t.nome)?.ids ?? [], FOCO_TITULO) }))
     // Na completa, os assuntos que só a seleção cobra também entram, com metade do peso e prioridade baixa.
     if (cobertura === 'completa') {
       const proprios = new Set(ranking.temas.map((t) => t.nome))

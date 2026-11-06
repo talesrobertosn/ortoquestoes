@@ -85,15 +85,18 @@ try {
 
   // título: questões no padrão da prova primeiro; o essencial não usa as de ingresso
   const tit = m.calcularPlanoMao(indice, {}, { ...m.configInicial('titulo', AGORA), dias: todosOsDias, criadoEm: hoje }, AGORA)
-  // título (06/11/2026): na completa, todas as questões de seleção do mesmo assunto entram como treino, sempre
-  // depois das SBCM/SIMÃO do assunto (o padrão da prova vem primeiro), e o plano fica denso como o do ingresso
+  // título (06/11/2026): na completa, as questões de seleção do mesmo assunto entram misturadas com foco no
+  // título (no máximo uma de seleção para cada FOCO_TITULO SBCM/SIMÃO enquanto houver do título), e o plano fica
+  // denso como o do ingresso
   const idsTitulo = tit.temas.flatMap((t) => t.ids)
   assert.equal(new Set(idsTitulo).size, idsTitulo.length, 'questão repetida no título')
   assert.ok([...poolTitulo].every((id) => idsTitulo.includes(id)), 'o título deixou questões SBCM/SIMÃO de fora')
   for (const t of tit.temas) {
     const ultimaPropria = t.ids.reduce((u, id, i) => (poolTitulo.has(id) ? i : u), -1)
-    const primeiraReforco = t.ids.findIndex((id) => !poolTitulo.has(id))
-    assert.ok(primeiraReforco === -1 || ultimaPropria < primeiraReforco, `${t.nome}: questão de seleção antes das SBCM/SIMÃO`)
+    const proprias = t.ids.filter((id) => poolTitulo.has(id)).length
+    const selecaoNoMeio = t.ids.slice(0, ultimaPropria + 1).filter((id) => !poolTitulo.has(id)).length
+    assert.ok(proprias === 0 || selecaoNoMeio <= Math.ceil(proprias / m.FOCO_TITULO), `${t.nome}: seleção demais no meio do título (${selecaoNoMeio} para ${proprias})`)
+    assert.ok(proprias === 0 || poolTitulo.has(t.ids[0]), `${t.nome}: o assunto não começa pelo padrão do título`)
   }
   const doTituloHoje = tit.idsHoje.filter((id) => poolTitulo.has(id)).length
   assert.ok(doTituloHoje >= tit.idsHoje.length * 0.75, `título com pouco SBCM/SIMÃO no dia: ${doTituloHoje}/${tit.idsHoje.length}`)
