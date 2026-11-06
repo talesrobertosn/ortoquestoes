@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { usarPremium } from '../conta/premium'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS } from '../dados/tipos'
-import { calcularPlanoMao, comAdiantado, comSemanaDificil, configInicial, itemConfigMao, lerConfig, MINUTOS_POR_QUESTAO_MAO, type ConfigMao, type ProvaMao, type TemaDoPlano } from '../dados/cronogramaMao'
+import { acervoMao, calcularPlanoMao, comAdiantado, comSemanaDificil, configInicial, itemConfigMao, lerConfig, MINUTOS_POR_QUESTAO_MAO, type ConfigMao, type ProvaMao, type TemaDoPlano } from '../dados/cronogramaMao'
 import { idsDoDiaMao, idsParaAdiantar, painelMao, resumoSemanaMao } from '../dados/painelMao'
 import { calcularConstancia, desempenhoPorArea, elogio, formatarTempo, prontidaoPorArea } from '../dados/hubCronograma'
 import { corDaArea } from '../dados/coresAreas'
@@ -120,7 +120,7 @@ function Formulario({ prova, inicial, novo, aoSalvar, aoCancelar, logado }: { pr
         <fieldset className="pe-form__campos cm-campo">
           <legend className="pe-form__sub">Até onde ir?</legend>
           <div className="pe-intensidades" role="radiogroup" aria-label="Até onde ir">
-            <button type="button" role="radio" aria-checked={c.cobertura === 'completa'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><span>{prova === 'titulo' ? 'Todos os assuntos do título, com questões de ingresso como reforço.' : 'Todos os assuntos, com todo tipo de questão da mão.'}</span></button>
+            <button type="button" role="radio" aria-checked={c.cobertura === 'completa'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'completa' })}><strong>Completo</strong><span>{prova === 'titulo' ? 'Todos os assuntos do título: primeiro as questões no padrão SBCM e SIMÃO, depois as de seleção do mesmo assunto, como treino.' : 'Todos os assuntos, com todo tipo de questão da mão.'}</span></button>
             <button type="button" role="radio" aria-checked={c.cobertura === 'essencial'} className="pe-intensidade" onClick={() => definir({ ...c, cobertura: 'essencial' })}><strong>Essencial</strong><span>Só os assuntos de prioridade máxima e alta{prova === 'titulo' ? ', só com questões no padrão SBCM e SIMÃO' : ''}. Bom para pouco tempo.</span></button>
           </div>
         </fieldset>
@@ -145,6 +145,7 @@ interface PropsPainel { prova: ProvaMao; config: ConfigMao; premium: boolean; in
  */
 function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConfig, aoEditar, aoApagar }: PropsPainel) {
   const mao = useMemo(() => calcularPlanoMao(indice, respondidas, config), [indice, respondidas, config])
+  const acervo = useMemo(() => acervoMao(indice), [indice])
   const { plano, calculo } = useMemo(() => painelMao(mao), [mao])
   // a constância conta só as questões da mão (as de ortopedia têm o próprio cronograma)
   const idsDoPlano = useMemo(() => new Set(mao.temas.flatMap((t) => t.ids)), [mao])
@@ -255,6 +256,8 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
     <OndeVoceEsta plano={plano} calculo={calculo} aoAjustar={aoEditar} acao={acaoTopo} nome={nome} recados={recados} rodape={premium && semana ? <ResumoSemana {...semana} /> : undefined}
       cena={<CenaOficina />} depois={mostrarTour ? <TourCronograma compacto aoFechar={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }} /> : undefined} />
 
+    {!calculo.naRetaFinal && !mao.encerrado && <TamanhoPlano mao={mao} acervo={acervo} minutos={minutos} aoAjustar={aoEditar} />}
+
     <CalendarioCronograma embutido aoSelecionar={definirDiaEscolhido} nome={nome} plano={plano} calculo={calculo} indice={indice} respondidas={respondidasMao} minutos={minutos}
       acoes={{ aoComecar: premium ? comecar : undefined, aoPuxar: premium ? (dia) => aoEstudar(idsDoDiaMao(mao, dia)) : undefined, proximo: calculo.amanha }} />
 
@@ -311,5 +314,32 @@ function LinhaPrioridade({ t, premium, aoEstudar }: { t: TemaDoPlano; premium: b
       <span className="cm-prioridades__nome"><strong>{t.nome}</strong><small>{num(t.pctEdicao)}% por prova · {porque} · {num(t.pendentes.length)} por fazer</small></span>
       <button type="button" className="cm-treinar" onClick={() => aoEstudar(ids)} aria-label={`Treinar ${t.nome}`}>{premium ? 'Treinar' : 'Assinar'}<Icone nome="direita" tamanho={14} /></button>
     </li>
+  )
+}
+
+/**
+ * O tamanho do plano (Tales, 06/11/2026: "mostra a quantidade de questão que a pessoa vai fazer naquele tempo e
+ * orienta"). Quantas questões de mão o plano cobre até a prova, de quantas o acervo tem, e o que seria preciso por
+ * dia para fazer todas, quando o tempo escolhido não dá.
+ */
+function TamanhoPlano({ mao, acervo, minutos, aoAjustar }: { mao: ReturnType<typeof calcularPlanoMao>; acervo: number; minutos: number; aoAjustar: () => void }) {
+  const faltam = Math.max(0, mao.total - mao.feitas)
+  const pct = mao.total ? Math.round((100 * mao.feitas) / mao.total) : 0
+  const curto = mao.tetoAtivo
+  return (
+    <section className="cartao cartao__corpo cm-tamanho" aria-labelledby="cm-tamanho-titulo">
+      <div className="cm-tamanho__topo">
+        <div>
+          <p className="tr-heroi__selo">O tamanho do seu plano</p>
+          <h2 id="cm-tamanho-titulo"><span className="numerico">{num(mao.total)}</span> questões de cirurgia da mão até a prova</h2>
+        </div>
+        <p className="cm-tamanho__acervo">de <b className="numerico">{num(acervo)}</b> no acervo</p>
+      </div>
+      <div className="cm-tamanho__barra" role="img" aria-label={`${pct}% do plano feito`}><span style={{ width: `${pct}%` }} /></div>
+      <p className="texto-2"><b>{num(mao.feitas)}</b> feitas · faltam <b>{num(faltam)}</b> · {mao.config.cobertura === 'completa' ? 'cobertura completa' : 'cobertura essencial'}</p>
+      {curto
+        ? <p className="cm-tamanho__aviso">No tempo que você escolheu, o plano fica em cerca de <b>{mao.metaNormal} questões por dia</b>, e dá para fazer <b>{mao.projecaoAlvo}%</b> dele até a reta final. Para fazer todas, seriam cerca de <b>{mao.metaParaTudo} por dia</b> (≈ {formatarTempo(mao.metaParaTudo * minutos)}). <button type="button" className="botao-link" onClick={aoAjustar}>Aumentar o tempo por dia</button></p>
+        : <p className="cm-tamanho__ok">São cerca de <b>{mao.metaNormal} questões por dia</b> (≈ {formatarTempo(mao.metaNormal * minutos)}), e o plano inteiro cabe até a reta final.{mao.config.cobertura === 'essencial' ? <> Quer treinar mais? O plano <b>Completo</b> usa as questões de todos os assuntos. <button type="button" className="botao-link" onClick={aoAjustar}>Mudar a cobertura</button></> : ''}</p>}
+    </section>
   )
 }
