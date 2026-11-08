@@ -262,7 +262,7 @@ var ativo_20_30 = [
   },
   {
     id: "v4",
-    assuntos: (c) => [nm(c, "que esfor\xE7o bonito", "Que esfor\xE7o bonito")],
+    assuntos: (c) => [nm(c, "seu estudo at\xE9 aqui", "Seu estudo at\xE9 aqui")],
     corpo: (c) => [
       momento(c),
       `Passando s\xF3 para reconhecer o seu esfor\xE7o: ${jaFez(c)}. Isso \xE9 muita dedica\xE7\xE3o para quem tem o dia tomado.`,
@@ -484,7 +484,7 @@ var ativo_60_70 = [
     assuntos: (c) => [nm(c, "uma ideia para o tema mais dif\xEDcil", "Uma ideia para o tema mais dif\xEDcil")],
     corpo: (c) => [
       momento(c),
-      `Fiquei feliz de ver ${asSuas(c)}. \xC9 volume de quem senta e faz, mesmo com sono.`,
+      `Fiquei feliz de ver ${asSuas(c)}.`,
       c.fato("areaFraca") ?? "Uma ideia para as pr\xF3ximas semanas: escolher o tema em que voc\xEA menos confia e dar dez quest\xF5es por semana a ele. \xC9 onde cada sess\xE3o vai render mais agora, e cabe num intervalo.",
       c.tempo(),
       `O tema fica \xE0 sua escolha aqui: ${c.link("treinar")}`
@@ -531,7 +531,7 @@ var ativo_70_80 = [
     assuntos: (c) => assuntosAtivo(c, [nm(c, "que estudo bonito", "Que estudo bonito")]),
     corpo: (c) => [
       momento(c),
-      J(`Que alegria ver ${jaFez(c)}`, c.pctBom !== null ? `com ${c.pctBom}% de acerto. Isso \xE9 de quem senta e faz, mesmo com sono.` : "com uma const\xE2ncia que \xE9 de quem senta e faz, mesmo com sono."),
+      `Que alegria ver ${jaFez(c)}${c.pctBom !== null ? ` com ${c.pctBom}% de acerto` : ""}.`,
       c.obs(1),
       "Nesse n\xEDvel, o que mais rende \xE9 ler o coment\xE1rio mesmo quando acerta. \xC0s vezes ele traz um detalhe que a banca ainda vai cobrar, e voc\xEA j\xE1 estar\xE1 com ele guardado.",
       c.tempo(),
@@ -579,7 +579,7 @@ var ativo_70_80 = [
     corpo: (c) => [
       momento(c),
       `Voc\xEA est\xE1 entre as pessoas que mais aproveitam o site${c.pctBom !== null ? `: ${jaFez(c)}, ${c.pctBom}% de acerto` : `: ${jaFez(c)}`}. Por isso tenho um pedido.`,
-      "Se encontrar alguma quest\xE3o com algo estranho, ou um coment\xE1rio que poderia ser melhor, me avisa pelo bot\xE3o de relatar. Quem est\xE1 nesse n\xEDvel enxerga o que escapa a todo mundo, e cada relato melhora o banco para quem vem depois.",
+      "Se encontrar alguma quest\xE3o com algo estranho, ou um coment\xE1rio que poderia ser melhor, me avisa pelo bot\xE3o de relatar. Cada relato ajuda a melhorar o banco de quest\xF5es.",
       c.obs(1),
       "Obrigado, de verdade, por estudar por aqui."
     ]
@@ -697,7 +697,7 @@ var ativo_90_100 = [
     corpo: (c) => [
       momento(c),
       `${cap(jaFez(c))}${c.pctBom !== null ? `, ${c.pctBom}% de acerto` : ""}. Pouqu\xEDssimas pessoas chegam aqui, e eu queria te pedir uma coisa.`,
-      "Se encontrar qualquer quest\xE3o com algo estranho, ou um coment\xE1rio que voc\xEA faria melhor, me conta pelo bot\xE3o de relatar. Quem est\xE1 nesse n\xEDvel enxerga o que escapa a todo mundo, inclusive a mim.",
+      "Se encontrar qualquer quest\xE3o com algo estranho, ou um coment\xE1rio que voc\xEA faria melhor, me conta pelo bot\xE3o de relatar.",
       c.obs(1),
       "E obrigado por estudar por aqui. \xC9 uma honra."
     ]
@@ -1135,7 +1135,7 @@ var sumiu = [
       `Faltam ${diasProva(c)} para ${c.nomeProva}, e lembrei de voc\xEA. Faz ${tempoFora(c.p.diasParado)} que a gente n\xE3o se v\xEA por aqui, e imagino que a rotina tenha engolido o estudo.`,
       `Ainda d\xE1 tempo de fazer muita coisa, e ${asSuas(c)} j\xE1 \xE9 um \xF3timo come\xE7o. Nada se perdeu.`,
       `Quando quiser retomar, a Revis\xE3o est\xE1 aqui, com as quest\xF5es que pedem uma segunda olhada j\xE1 separadas: ${c.link("revisao")}`,
-      "Dez minutos por dia, daqui at\xE9 a prova, valem mais do que uma maratona na v\xE9spera. E dormir tamb\xE9m conta.",
+      "Dez minutos por dia, daqui at\xE9 a prova, valem mais do que uma maratona na v\xE9spera.",
       c.fecho()
     ]
   },
@@ -1221,7 +1221,7 @@ var obrigado_assinatura = [
 ];
 var lista = (itens) => itens.map((t) => `- ${cap(t)}`).join("\n");
 var eLista = (itens) => itens.length <= 1 ? itens.join("") : `${itens.slice(0, -1).join(", ")} e ${itens[itens.length - 1]}`;
-var presente = (c) => `Antes de tudo, uma dica de presente. ${c.dica()}`;
+var dicaInicial = (c) => c.dica();
 var garantia = "Se n\xE3o for o que voc\xEA esperava, o reembolso em 7 dias \xE9 pelo pr\xF3prio site, sem precisar explicar nada.";
 var portaAberta = "Se n\xE3o for a hora, tudo bem tamb\xE9m. Eu continuo por aqui.";
 var cronogramaDevolve = (c) => c.um(
@@ -1235,7 +1235,7 @@ var convite_20 = [
     corpo: (c) => [
       momento(c),
       `Vi que voc\xEA j\xE1 respondeu ${Q(c.r)} no Orto Quest\xF5es, e fiquei feliz de ver voc\xEA por aqui.`,
-      presente(c),
+      dicaInicial(c),
       `E, caso seja \xFAtil para a sua rotina, queria te contar o que a assinatura faz por ela:
 ${lista(c.beneficios(3))}`,
       `${garantia} Se fizer sentido para o seu momento, os planos est\xE3o aqui: ${c.link("assinatura")}`,
@@ -1333,7 +1333,7 @@ var convite_50 = [
     assuntos: (c) => [diasProva(c) && nm(c, `faltam ${diasProva(c)} e eu estou na torcida`, `Faltam ${diasProva(c)} e eu estou na torcida`), nm(c, "escrevi para voc\xEA", "Escrevi para voc\xEA"), nm(c, "um convite pessoal", "Um convite pessoal")],
     corpo: (c) => [
       momento(c),
-      J(`Que alegria ver ${Q(c.r)} j\xE1 respondidas.`, c.obs(1, ["melhorArea", "ranking", "maisEstudada"]), "\xC9 de quem senta e faz, mesmo com sono."),
+      J(`Que alegria ver ${Q(c.r)} j\xE1 respondidas.`, c.obs(1, ["melhorArea", "ranking", "maisEstudada"])),
       cronogramaDevolve(c),
       `D\xE1 para ver uma pr\xE9via do seu aqui: ${c.link("cronograma")}. ${garantia}`,
       portaAberta
@@ -1359,7 +1359,7 @@ var convite_50 = [
       momento(c),
       `Que alegria ver ${Q(c.r)} suas por aqui, cada uma encaixada no tempo que a rotina deixa.`,
       J(c.obs(1), tomAcerto(c)),
-      presente(c),
+      dicaInicial(c),
       `Se voc\xEA quiser ir al\xE9m, a assinatura soma:
 ${lista(c.beneficios(3))}`,
       `Sem press\xE3o nenhuma. Se fizer sentido: ${c.link("assinatura")}`
@@ -1410,7 +1410,7 @@ ${lista(c.beneficios(3))}`,
     corpo: (c) => [
       momento(c),
       J("Queria te fazer um convite, e n\xE3o \xE9 pelo n\xFAmero de quest\xF5es: \xE9 pelo jeito que voc\xEA estuda.", c.obs(2)),
-      presente(c),
+      dicaInicial(c),
       `A assinatura foi pensada para quem estuda assim, com pouco tempo e muita vontade:
 ${lista(c.beneficios(3))}`,
       `${garantia} Se quiser conhecer: ${c.link("assinatura")}`,
@@ -1450,7 +1450,7 @@ var reta_final = [
       `${faltam(c)}. Na reta final, o instinto \xE9 correr atr\xE1s de tudo o que falta. Mas o que mais rende \xE9 proteger o que voc\xEA j\xE1 sabe.`,
       `${c.dez ? `Com ${Q(c.r)} feitas, voc\xEA` : "Voc\xEA"} j\xE1 tem material para isso. O Caderno de erros \xE9 um \xF3timo lugar para come\xE7ar: cada quest\xE3o que te pegou e vira acerto agora \xE9 um ponto garantido no dia: ${c.link("erros")}`,
       c.obs(1),
-      "E um lembrete de amigo: dormir tamb\xE9m \xE9 estudar. A mem\xF3ria se consolida no sono.",
+      "Ler o coment\xE1rio completo ajuda a entender por que cada alternativa est\xE1 certa ou errada.",
       c.fecho()
     ]
   },
@@ -1468,12 +1468,12 @@ var reta_final = [
   },
   {
     id: "v5",
-    assuntos: (c) => [nm(c, "cuida de voc\xEA tamb\xE9m", "Cuida de voc\xEA tamb\xE9m"), nm(c, "dormir tamb\xE9m \xE9 estudar", "Dormir tamb\xE9m \xE9 estudar")],
+    assuntos: (c) => [nm(c, "revisar as quest\xF5es anteriores", "Revisar as quest\xF5es anteriores")],
     corpo: (c) => [
-      `${faltam(c)}. Um lembrete que ningu\xE9m costuma dar nessa fase: dormir tamb\xE9m \xE9 estudar.`,
-      `A mem\xF3ria se consolida no sono. Ent\xE3o, nestas \xFAltimas semanas, vale preferir menos horas bem dormidas a madrugadas de quest\xE3o.${c.fatos.horario === "madrugada" ? " Digo isso com carinho, porque vi que voc\xEA anda estudando de madrugada." : ""}`,
+      `${faltam(c)}. Vale reservar parte do estudo para revisar os erros anteriores.`,
+      "Uma sess\xE3o curta pode servir para reler os coment\xE1rios das quest\xF5es que voc\xEA errou e entender o detalhe que mudou a resposta.",
       c.obs(1),
-      "Voc\xEA j\xE1 fez muito. Agora \xE9 chegar com a cabe\xE7a descansada, que \xE9 ela que acerta o detalhe no dia.",
+      "Na pr\xF3xima sess\xE3o, tente responder essas quest\xF5es de novo antes de abrir o coment\xE1rio.",
       c.fecho()
     ]
   },
@@ -2562,7 +2562,7 @@ var vespera_prova = [
     corpo: (c) => [
       J(usaProva(c), `Amanh\xE3 \xE9 ${provaDela(c)}, e eu quis te escrever hoje, com calma.`),
       "O estudo que decide a prova j\xE1 foi feito: nas quest\xF5es de cada intervalo, nas sess\xF5es depois do hospital, em cada coment\xE1rio lido at\xE9 o fim. Hoje n\xE3o \xE9 dia de mat\xE9ria nova.",
-      "Se der vontade de revisar, abra s\xF3 as frases que caem por uns vinte minutos, e pare. Depois, jantar com calma, separar documento e caneta, e deitar cedo. Dormir \xE9 estudar, principalmente hoje.",
+      "Se der vontade de revisar, abra s\xF3 as frases que caem por uns vinte minutos, e pare. Depois, jantar com calma, separar documento e caneta, e deitar cedo.",
       "Vai com a cabe\xE7a descansada e confia no que voc\xEA construiu.",
       c.fecho()
     ],
@@ -2674,10 +2674,9 @@ var aniversario = [
     corpo: (c) => [
       J(usaAniversario(c), "Hoje \xE9 o seu anivers\xE1rio, e eu n\xE3o podia deixar passar. Parab\xE9ns, de cora\xE7\xE3o."),
       "Que o ano que come\xE7a traga dias mais leves, plant\xF5es mais tranquilos e, quando chegar a hora, a aprova\xE7\xE3o que voc\xEA est\xE1 construindo.",
-      "Hoje n\xE3o tem quest\xE3o, n\xE3o tem cronograma, n\xE3o tem nada para fazer aqui. \xC9 dia de comemorar com quem voc\xEA gosta.",
+      "Espero que consiga comemorar com quem voc\xEA gosta.",
       "O estudo espera, e fica do jeito que voc\xEA deixou."
-    ],
-    ps: () => "P.S.: se for comemorar com bolo, guarda um peda\xE7o por mim."
+    ]
   },
   {
     id: "v2",
@@ -2687,8 +2686,7 @@ var aniversario = [
       "Sei que a resid\xEAncia n\xE3o para nem no dia do anivers\xE1rio, ent\xE3o espero que hoje sobre pelo menos um tempinho s\xF3 seu: uma refei\xE7\xE3o sem pressa, uma liga\xE7\xE3o para algu\xE9m querido, uma noite de sono inteira.",
       c.dez ? `E j\xE1 que anivers\xE1rio \xE9 dia de balan\xE7o: ${Q(c.r)} respondidas at\xE9 aqui. Isso \xE9 muito estudo, e merece ser lembrado hoje tamb\xE9m.` : "Fico contente de ter voc\xEA por aqui neste ano.",
       "Que o ano novo da sua vida seja generoso com voc\xEA."
-    ],
-    ps: () => "P.S.: hoje, nada de quest\xE3o. Amanh\xE3 a gente volta."
+    ]
   },
   {
     id: "v3",
@@ -2714,9 +2712,9 @@ var aniversario = [
   },
   {
     id: "v5",
-    assuntos: (c) => [nm(c, "um caf\xE9 por mim hoje", "Um caf\xE9 por mim hoje")],
+    assuntos: (c) => [nm(c, "parab\xE9ns pelo anivers\xE1rio", "Parab\xE9ns pelo anivers\xE1rio")],
     corpo: (c) => [
-      J(usaAniversario(c), "Feliz anivers\xE1rio. Hoje o caf\xE9, o bolo e o descanso s\xE3o por minha conta, pelo menos em pensamento."),
+      J(usaAniversario(c), "Feliz anivers\xE1rio."),
       "Fico contente de ter voc\xEA por aqui, e mais ainda de poder te desejar um ano bom de verdade: com tempo para voc\xEA, com sono em dia e com a prova correndo bem.",
       "O site n\xE3o vai a lugar nenhum. Hoje, o dia \xE9 seu.",
       "Comemora com quem voc\xEA gosta."
@@ -2741,8 +2739,7 @@ var um_ano = [
     corpo: (c) => [
       `Uma data diferente hoje: a sua conta no Orto Quest\xF5es faz ${anosTexto(c)}. \xC9 esse o tempo que a gente se conhece por aqui.`,
       c.dez ? `Olhando para tr\xE1s: ${jaFez(c)}, um Caderno de erros cheio de coisas que hoje voc\xEA j\xE1 sabe, e a Revis\xE3o trazendo de volta na hora certa.` : "Olhando para tr\xE1s, o mais importante j\xE1 aconteceu: voc\xEA escolheu um lugar para estudar.",
-      "Um presente para esta data, se quiser: escolha o tema que mais te incomodava no come\xE7o e fa\xE7a dez quest\xF5es dele. \xC9 impressionante ver o quanto ele mudou.",
-      `Para o presente: ${c.link("treinar")}`
+      `Para treinar: ${c.link("treinar")}`
     ],
     ps: () => "P.S.: obrigado por estar aqui. Que venham muitos outros anos de bons estudos."
   },
@@ -3307,7 +3304,6 @@ function escolherTipo(p, anteriores = [], hoje = /* @__PURE__ */ new Date()) {
   const acerto = acertoCitavel({ ...p, respondidas: r });
   const com = (tipo, faixa, marco3, motivo2) => ({ tipo, faixa, marco: marco3, motivo: motivo2, bloqueio: cadenciaBloqueia(anteriores, hoje, tipo) });
   if (r === 0) return com("nunca_comecou", null, null, "Ainda n\xE3o respondeu nenhuma quest\xE3o.");
-  if (p.assinante && !recebeu("obrigado_assinatura") && !recebeu("pagamento_aprovado", 30)) return com("obrigado_assinatura", null, null, "Assina e ainda n\xE3o recebeu o agradecimento.");
   const fimAcesso = p.fimAcesso ? new Date(p.fimAcesso) : null;
   if (!p.assinante && fimAcesso && Number.isFinite(fimAcesso.getTime())) {
     const desde = Math.floor(diasDesde(p.fimAcesso, hoje));
@@ -3433,7 +3429,7 @@ function frasesDoFato(chave, f, mostrar) {
         `Reparei que ${a.em} \xE9 o seu ponto mais forte, com ${m.pct}% de acerto. Isso n\xE3o aparece por acaso.`,
         `Reparei que ${a.em} virou o seu ponto forte, com ${m.pct}% de acerto em ${questoes(m.total)}. \xC9 fruto de quest\xE3o feita com aten\xE7\xE3o, e nada disso se perde.`,
         `Em ${a.em} voc\xEA est\xE1 voando: ${m.pct}% de acerto. ${a.sabor[0]}`,
-        `Seu melhor tema hoje \xE9 ${a.em}, com ${m.pct}%. D\xE1 gosto de ver, porque isso \xE9 de quem senta e faz.`
+        `Seu melhor tema hoje \xE9 ${a.em}, com ${m.pct}%.`
       ] : [
         `Vi que ${a.em} j\xE1 virou um ponto forte seu. ${a.sabor[0]}`,
         `Reparei que ${a.em} \xE9 o tema em que voc\xEA mais brilha. Fiquei feliz de ver.`,
@@ -3453,13 +3449,13 @@ function frasesDoFato(chave, f, mostrar) {
       return [
         `Um tema bom para as pr\xF3ximas semanas \xE9 ${a.em}: \xE9 onde cada sess\xE3o vai render mais para voc\xEA agora. Dez quest\xF5es por semana j\xE1 mudam o quadro.`,
         `Reparei que ${a.em} \xE9 o tema com mais espa\xE7o para crescer no seu caso, e isso \xE9 uma boa not\xEDcia: \xE9 ali que os pontos v\xEAm mais r\xE1pido. Dez quest\xF5es por semana bastam.`,
-        `Uma ideia carinhosa: dez quest\xF5es de ${a.de} por semana podem fazer uma bela diferen\xE7a nas pr\xF3ximas semanas.`
+        `Uma sugest\xE3o: dez quest\xF5es de ${a.de} por semana podem fazer uma bela diferen\xE7a nas pr\xF3ximas semanas.`
       ];
     }
     case "horario":
       return {
         noite: ["Vi que voc\xEA estuda quase sempre \xE0 noite. \xC9 uma rotina pesada: o dia inteiro no hospital e o estudo esperando no fim dele.", "Reparei que quase tudo seu sai \xE0 noite, quando o dia j\xE1 acabou. Sei o que isso custa, e admiro.", "Vi que a noite \xE9 o seu hor\xE1rio de estudo. Respeito demais quem encontra esse tempo depois de um dia inteiro."],
-        madrugada: ["Vi que muita quest\xE3o sua sai de madrugada, provavelmente no plant\xE3o. Admiro a dedica\xE7\xE3o, e pe\xE7o com carinho que cuide do sono tamb\xE9m.", "Reparei que voc\xEA estuda at\xE9 de madrugada. Pe\xE7o com carinho: lembre que o sono tamb\xE9m \xE9 estudo."],
+        madrugada: ["Vi que muita quest\xE3o sua sai de madrugada, provavelmente no plant\xE3o.", "Reparei que voc\xEA estuda at\xE9 de madrugada."],
         manha: ["Reparei que voc\xEA gosta de estudar cedo, antes de o dia come\xE7ar. \xC9 um jeito bonito de proteger o estudo da rotina.", "Vi que voc\xEA estuda bastante de manh\xE3 cedo, antes de o hospital te engolir. Admiro essa disciplina."],
         almoco: ["Vi que muita quest\xE3o sua sai na hora do almo\xE7o. Que jeito esperto de encaixar o estudo no \xFAnico intervalo do dia.", "Reparei que voc\xEA aproveita o hor\xE1rio do almo\xE7o para estudar. Isso \xE9 usar bem o pouco tempo que a resid\xEAncia deixa."],
         tarde: ["Vi que voc\xEA costuma estudar \xE0 tarde, num ritmo bem constante.", "Reparei que a tarde \xE9 o seu hor\xE1rio de quest\xF5es. Gosto de ver essa rotina."]
@@ -3487,7 +3483,7 @@ function frasesDoFato(chave, f, mostrar) {
       return n <= 10 ? [`Voc\xEA est\xE1 em ${n}\xBA no ranking geral, entre os dez primeiros. Que orgulho.`, `${n}\xBA lugar no ranking geral. Isso \xE9 muito estudo, e fiquei feliz de ver.`] : [`Parab\xE9ns pela ${n}\xAA posi\xE7\xE3o no ranking geral.`, `Vi que voc\xEA est\xE1 em ${n}\xBA no ranking geral, e fiquei feliz de ver o seu nome l\xE1.`];
     }
     case "sequencia":
-      return [`S\xE3o ${dias(f.sequencia)} seguidos estudando. Que const\xE2ncia bonita.`, `Sua sequ\xEAncia est\xE1 em ${dias(f.sequencia)}, e isso diz muito sobre voc\xEA.`];
+      return [`S\xE3o ${dias(f.sequencia)} seguidos estudando.`, `Sua sequ\xEAncia est\xE1 em ${dias(f.sequencia)}, e isso diz muito sobre voc\xEA.`];
     case "flashcards":
       return ["Vi que voc\xEA tamb\xE9m est\xE1 usando os flashcards, que bom.", `Vi que voc\xEA j\xE1 passou por ${numero(f.flashcards)} flashcards tamb\xE9m.`];
     case "semana":
@@ -3553,7 +3549,7 @@ var DICAS = {
     'Um detalhe de prova: o "exceto" e o "incorreta" no enunciado. \xC9 ali que at\xE9 quem sabe muito ainda deixa escapar um ponto.'
   ]
 };
-var FECHOS = ["Se n\xE3o for a hora, tudo bem tamb\xE9m. Eu continuo por aqui.", "Se eu puder ajudar em qualquer coisa, \xE9 s\xF3 responder este e-mail.", "Estou torcendo por voc\xEA.", "Conte comigo no que precisar.", "Fico feliz de acompanhar o seu caminho.", "Tor\xE7o muito pela sua aprova\xE7\xE3o.", "Bons estudos por a\xED, e cuide-se.", "Vai dar certo. E eu estou por aqui."];
+var FECHOS = ["Se n\xE3o for a hora, tudo bem tamb\xE9m. Eu continuo por aqui.", "Se eu puder ajudar em qualquer coisa, \xE9 s\xF3 responder este e-mail.", "Estou torcendo por voc\xEA.", "Conte comigo no que precisar.", "Fico feliz de acompanhar o seu caminho.", "Tor\xE7o muito pela sua aprova\xE7\xE3o.", "Bons estudos por a\xED, e cuide-se."];
 var CHAVES_FECHO = ["respond", "torc", "acompanh", "conte comigo", "bons estudos", "n\xE3o for a hora", "por aqui"];
 var simples = (t) => t.toLowerCase().replace(/ç/g, "c");
 var IDEIAS_PS = [
@@ -3621,17 +3617,13 @@ function frasesSeguidasRepetem(texto) {
 }
 var PS_HUMANOS = [
   "P.S.: se quiser responder este e-mail, vou adorar ler.",
-  "P.S.: cuida do sono. Ele conta como estudo, e ningu\xE9m avisa isso na resid\xEAncia.",
   "P.S.: se encontrar algo estranho numa quest\xE3o, tem um bot\xE3o para relatar. Cada relato \xE9 lido com carinho.",
   "P.S.: dez minutos no intervalo j\xE1 contam. N\xE3o precisa esperar um dia livre para estudar.",
   "P.S.: se a semana apertar, tudo bem. O site fica do jeito que voc\xEA deixou.",
   "P.S.: se quiser me contar como est\xE1 sendo a rotina, \xE9 s\xF3 responder. Gosto de saber.",
   "P.S.: o coment\xE1rio das alternativas erradas costuma ensinar muito. Vale ler at\xE9 o fim.",
-  "P.S.: toma um caf\xE9 por mim antes da pr\xF3xima sess\xE3o.",
   "P.S.: errar aqui \xE9 barato. \xC9 na prova que custa. Aproveita que aqui \xE9 treino.",
-  "P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo mais leve.",
-  "P.S.: dormir bem na v\xE9spera de um dia cheio tamb\xE9m \xE9 estudar.",
-  "P.S.: n\xE3o precisa responder, mas se responder eu fico feliz."
+  "P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo mais leve."
 ];
 function tomDaFaixa(f) {
   if (!f) return "baixo";
@@ -3721,10 +3713,10 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado) {
       const candidatos = [];
       if (fatos.aniversario && !usados.has("aniversario")) candidatos.push(["aniversario", fatos.aniversario === "hoje" ? "P.S.: e parab\xE9ns pelo anivers\xE1rio. Que o ano que come\xE7a traga a aprova\xE7\xE3o e dias mais leves." : "P.S.: vi que o seu anivers\xE1rio est\xE1 chegando. Deixo o parab\xE9ns adiantado, com carinho."]);
       if (fatos.ranking && !usados.has("ranking")) candidatos.push(["ranking", `P.S.: vi que voc\xEA est\xE1 em ${fatos.ranking}\xBA no ranking geral. Fiquei feliz de ver o seu nome l\xE1.`]);
-      if (fatos.sequencia && !usados.has("sequencia")) candidatos.push(["sequencia", `P.S.: ${dias(fatos.sequencia)} seguidos de estudo. Que const\xE2ncia bonita.`]);
-      if (fatos.horario === "madrugada" && !usados.has("horario")) candidatos.push(["horario", "P.S.: vi que voc\xEA estuda at\xE9 de madrugada. Admiro muito, e pe\xE7o com carinho: cuide do sono tamb\xE9m, que a mem\xF3ria agradece."]);
+      if (fatos.sequencia && !usados.has("sequencia")) candidatos.push(["sequencia", `P.S.: ${dias(fatos.sequencia)} seguidos de estudo.`]);
+      if (fatos.horario === "madrugada" && !usados.has("horario")) candidatos.push(["horario", "P.S.: vi que voc\xEA estuda at\xE9 de madrugada."]);
       if (fatos.horario === "noite" && !usados.has("horario")) candidatos.push(["horario", "P.S.: vi que voc\xEA estuda bastante \xE0 noite. Admiro muito quem encontra tempo depois de um dia inteiro."]);
-      if (fatos.cronograma && !usados.has("cronograma")) candidatos.push(["cronograma", fatos.cronograma.dias >= 60 ? `P.S.: ${dias(fatos.cronograma.dias)} \xE9 bastante tempo. Cuida do sono nas pr\xF3ximas semanas, que ele conta como estudo.` : `P.S.: faltam ${dias(fatos.cronograma.dias)} para ${fatos.cronograma.prova ? `o ${fatos.cronograma.prova}` : "a sua prova"}. Estou na torcida.`]);
+      if (fatos.cronograma && !usados.has("cronograma")) candidatos.push(["cronograma", `P.S.: faltam ${dias(fatos.cronograma.dias)} para ${fatos.cronograma.prova ? `o ${fatos.cronograma.prova}` : "a sua prova"}. Estou na torcida.`]);
       if (fatos.servico && !usados.has("servico")) candidatos.push(["servico", `P.S.: um abra\xE7o para o pessoal ${fatos.servico.de}.`]);
       if (fatos.melhorArea && !usados.has("melhorArea")) {
         const em = AREAS[fatos.melhorArea.slug].em;
@@ -4027,7 +4019,7 @@ function marcoComCarta(total) {
 }
 function pronto(carta, descadastro, aviso) {
   const e = renderizarCarta({ assunto: carta.assunto, corpo: carta.corpo, descadastro, textoDescadastro: aviso });
-  return { ...e, modelo: carta.modelo, versao: carta.versao };
+  return { ...e, modelo: carta.modelo, versao: carta.versao, corpo: carta.corpo, personalizacao: carta.personalizacao };
 }
 function perfilDe(d, extra) {
   return {
@@ -4230,13 +4222,13 @@ function emailRelatoResolvido(d) {
 
 // supabase/functions/_shared/email.ts
 var emailConfigurado = () => !!Deno.env.get("RESEND_API_KEY") && !!Deno.env.get("EMAIL_REMETENTE");
-async function enviarEmail(para, assunto, html, texto, descadastro, responderPara, anexos) {
+async function enviarEmail(para, assunto, html, texto, descadastro, responderPara, anexos, idempotencia) {
   const chave = Deno.env.get("RESEND_API_KEY"), remetente = Deno.env.get("EMAIL_REMETENTE");
   const responder = responderPara?.trim() || Deno.env.get("EMAIL_RESPONDER_PARA")?.trim();
   if (!chave || !remetente) throw new Error("email_nao_configurado");
   const resposta = await fetch("https://api.resend.com/emails", {
     method: "POST",
-    headers: { Authorization: `Bearer ${chave}`, "Content-Type": "application/json" },
+    headers: { Authorization: `Bearer ${chave}`, "Content-Type": "application/json", ...idempotencia ? { "Idempotency-Key": idempotencia } : {} },
     body: JSON.stringify({
       from: remetente,
       to: Array.isArray(para) ? para : [para],
@@ -4338,6 +4330,11 @@ async function podeReceber(id, categoria) {
   } catch {
     return false;
   }
+}
+async function bloqueioCentral(id, tipo, categoria, referencia = null) {
+  const r = await banco("rpc/hub_bloqueio", { method: "POST", body: JSON.stringify({ p_id: id, p_tipo: tipo, p_categoria: categoria, p_referencia: referencia }) });
+  if (!r.ok) throw new Error("sql_hub_pendente");
+  return await r.json();
 }
 async function ehAdministrador(id) {
   const r = await banco(`administradores?id_usuario=eq.${encodeURIComponent(id)}&select=id_usuario`);
@@ -4444,8 +4441,7 @@ async function enviarRelatorios(mesPedido, limitePedido, quinzenal = false) {
       recusados++;
       continue;
     }
-    const anteriores = await anterioresDe(id).catch(() => []);
-    if (cadenciaBloqueia(anteriores, /* @__PURE__ */ new Date(), "relatorio")) {
+    if (await bloqueioCentral(id, "relatorio", "relatorio", mes)) {
       adiados++;
       continue;
     }
@@ -4463,11 +4459,11 @@ async function enviarRelatorios(mesPedido, limitePedido, quinzenal = false) {
     try {
       const pronto2 = quinzenal ? await montarQuinzenal(id, mes) : await montarRelatorio(id, mes);
       if (!pronto2) throw new Error("usuario_sem_email");
-      await enviarEmail(pronto2.para, pronto2.assunto, pronto2.html, pronto2.texto, await linkDescadastro(id, "relatorio"));
+      await enviarEmail(pronto2.para, pronto2.assunto, pronto2.html, pronto2.texto, await linkDescadastro(id, "relatorio"), void 0, void 0, `relatorio/${id}/${mes}`);
       await atualizarEnvio(linha.id, { status: "enviado", assunto: pronto2.assunto }, { modelo: pronto2.modelo, versao: pronto2.versao, origem: "automatico" });
       enviados++;
     } catch (falha) {
-      await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "falhou", erro: motivo(falha) }) });
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? "falhou" : "enviando", erro: motivo(falha) }) });
       falhas++;
     }
     await esperar(600);
@@ -4497,7 +4493,7 @@ async function enviarLembretes(campanha, limitePedido, por) {
       continue;
     }
     const anteriores = await anterioresDe(d.id_usuario).catch(() => []);
-    if (cadenciaBloqueia(anteriores, /* @__PURE__ */ new Date(), TIPO_DA_CAMPANHA[campanha])) {
+    if (await bloqueioCentral(d.id_usuario, TIPO_DA_CAMPANHA[campanha], "lembretes", d.referencia)) {
       adiados++;
       continue;
     }
@@ -4532,11 +4528,11 @@ async function enviarLembretes(campanha, limitePedido, por) {
         // O perfil completo (parte 27) deixa a carta citar a área em que a pessoa estava e os fatos pessoais.
         perfil: await perfilCompleto(d.id_usuario).catch(() => null)
       });
-      await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro);
+      await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro, void 0, void 0, `lembrete/${d.id_usuario}/${d.referencia}`);
       await atualizarEnvio(linha.id, { status: "enviado", assunto: e.assunto }, { modelo: e.modelo, versao: e.versao, origem: por ? "lote" : "automatico" });
       enviados++;
     } catch (falha) {
-      await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "falhou", erro: motivo(falha) }) });
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? "falhou" : "enviando", erro: motivo(falha) }) });
       falhas++;
     }
     await esperar(600);
@@ -4592,7 +4588,7 @@ async function enviarAutomatico(id, tipo, pedido, por) {
   const existe = await banco(`emails_enviados?id_usuario=eq.${id}&referencia=eq.${encodeURIComponent(referencia)}&status=in.(enviado,enviando)&select=id&limit=1`);
   if (existe.ok && (await existe.json()).length) return { resultado: "ja_enviado", tipo };
   const anteriores = await anterioresDe(id).catch(() => []);
-  const bloqueio = automaticoBloqueado(tipo, anteriores);
+  const bloqueio = automaticoBloqueado(tipo, anteriores) ?? (transacional ? null : await bloqueioCentral(id, tipo, "cartas", referencia));
   if (bloqueio) return { resultado: "adiado", tipo, motivo: bloqueio };
   const meio = pedido.meio === "pix" ? "pix" : pedido.meio === "cartao" ? "cartao" : null;
   const e = emailAutomatico({
@@ -4627,11 +4623,11 @@ async function enviarAutomatico(id, tipo, pedido, por) {
     [linha] = await reserva.json();
   }
   try {
-    await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, transacional ? void 0 : await linkDescadastro(id, "cartas"));
+    await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, transacional ? void 0 : await linkDescadastro(id, "cartas"), void 0, void 0, `automatico/${id}/${referencia}`);
     if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "enviado" }) });
     return { resultado: "enviado", tipo, para: pessoa.email };
   } catch (falha) {
-    if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "falhou", erro: motivo(falha) }) });
+    if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? "falhou" : "enviando", erro: motivo(falha) }) });
     return { resultado: "falhou", tipo };
   }
 }
@@ -4848,8 +4844,10 @@ Deno.serve(async (req) => {
       const marco2 = marcoComCarta(Number(dados.respondidas));
       if (!marco2) return json({ resultado: "ainda_nao" }, 200, req);
       if (Number(dados.respondidas) > marco2.minimo + folga(marco2)) return json({ resultado: "longe_do_marco", marco: marco2.minimo }, 200, req);
-      const bloqueio = cadenciaBloqueia(await anterioresDe(usuario.id).catch(() => []), /* @__PURE__ */ new Date(), "marco");
+      const bloqueio = await bloqueioCentral(usuario.id, "marco", "conquistas");
       if (bloqueio) return json({ resultado: "adiado", marco: marco2.minimo, motivo: bloqueio }, 200, req);
+      const pronto2 = await montar(usuario.id, marco2);
+      if (!pronto2?.dados.email) return json({ resultado: "sem_email" }, 200, req);
       const reserva = await registrar({ id_usuario: usuario.id, tipo: "marco", marco: marco2.minimo, status: "enviando" });
       let linha;
       if (reserva.ok) [linha] = await reserva.json();
@@ -4861,13 +4859,12 @@ Deno.serve(async (req) => {
         if (retomada.ok) [linha] = await retomada.json();
       }
       if (!linha) return json({ resultado: "ja_enviado", marco: marco2.minimo }, 200, req);
-      const pronto2 = await montar(usuario.id, marco2);
       try {
-        await enviarEmail(pronto2.dados.email, pronto2.email.assunto, pronto2.email.html, pronto2.email.texto, await linkDescadastro(usuario.id));
+        await enviarEmail(pronto2.dados.email, pronto2.email.assunto, pronto2.email.html, pronto2.email.texto, await linkDescadastro(usuario.id), void 0, void 0, `marco/${usuario.id}/${marco2.minimo}`);
         await atualizarEnvio(linha.id, { status: "enviado", assunto: pronto2.email.assunto }, { modelo: pronto2.email.modelo, versao: pronto2.email.versao, origem: "automatico" });
         return json({ resultado: "enviado", marco: marco2.minimo }, 200, req);
       } catch (falha) {
-        await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "falhou", erro: motivo(falha) }) });
+        await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? "falhou" : "enviando", erro: motivo(falha) }) });
         return json({ resultado: "falhou" }, 200, req);
       }
     }
@@ -4895,38 +4892,36 @@ ${texto}`);
       if (grave) return json({ erro: `carta_com_problema: ${grave}` }, 400, req);
       const modelo = typeof corpo.modelo === "string" && /^[a-z0-9_:-]{1,60}$/.test(corpo.modelo) ? corpo.modelo : null;
       const versao = typeof corpo.versao === "string" && /^[a-z0-9_:#-]{1,80}$/.test(corpo.versao) ? corpo.versao : null;
+      if (modelo?.split(":")[0] === "obrigado_assinatura") return json({ erro: "modelo_aposentado" }, 409, req);
       const lote = corpo.origem === "lote";
       if (!emailConfigurado()) return json({ erro: "email_nao_configurado" }, 503, req);
       const r = await banco("rpc/dados_carta_envio", { method: "POST", body: JSON.stringify({ p_id: corpo.id_usuario, p_modelo: modelo }) });
-      let pessoa = null;
-      const comParte27 = r.ok;
-      if (comParte27) pessoa = await r.json();
-      else {
-        if (lote) return json({ erro: "sql_pendente" }, 409, req);
-        const antigo = await dadosUsuario(corpo.id_usuario);
-        pessoa = antigo ? { email: antigo.email, quer_cartas: antigo.quer_conquistas } : null;
-      }
+      if (!r.ok) return json({ erro: "sql_pendente" }, 409, req);
+      const pessoa = await r.json();
       if (!pessoa?.email) return json({ erro: "usuario_sem_email" }, 404, req);
       if (!pessoa.quer_cartas || !await podeReceber(corpo.id_usuario, "cartas")) return json({ erro: "pessoa_nao_quer_emails" }, 409, req);
       if (lote) {
         if (pessoa.administrador) return json({ erro: "administrador" }, 409, req);
         if (!pessoa.confirmado) return json({ erro: "email_nao_confirmado" }, 409, req);
         if (modelo?.startsWith("convite") && !pessoa.novidades) return json({ erro: "sem_aceite_novidades" }, 409, req);
-        if (pessoa.mesmo_tipo_30d) return json({ erro: "mesmo_tipo_30_dias" }, 409, req);
-        if (Number(pessoa.emails_48h ?? 0) > 0) return json({ erro: "recebeu_email_recente" }, 409, req);
       }
-      const descadastro = lote ? await linkDescadastro(corpo.id_usuario, "cartas") : null;
+      const impedimento = await bloqueioCentral(corpo.id_usuario, modelo?.split(":")[0] ?? "opiniao", "cartas");
+      if (impedimento) return json({ erro: impedimento }, 409, req);
+      const descadastro = await linkDescadastro(corpo.id_usuario, "cartas");
       const e = renderizarCarta({ assunto, corpo: texto, descadastro });
-      const registro = { id_usuario: corpo.id_usuario, assunto, status: "enviando", enviado_por: usuario.id };
-      let reserva = comParte27 ? await registrar({ ...registro, tipo: "carta", modelo, versao, origem: lote ? "lote" : "manual" }) : null;
-      if (!reserva?.ok) reserva = await registrar({ ...registro, tipo: "parabens" });
-      const [linha] = reserva.ok ? await reserva.json() : [];
+      const hash = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(`${corpo.id_usuario}:${diaDeHoje()}:${assunto}:${texto}`));
+      const referencia = "individual:" + [...new Uint8Array(hash)].map((b) => b.toString(16).padStart(2, "0")).join("").slice(0, 40);
+      const registro = { id_usuario: corpo.id_usuario, assunto, referencia, status: "enviando", enviado_por: usuario.id };
+      const reserva = await registrar({ ...registro, tipo: "carta", modelo, versao, origem: lote ? "lote" : "manual" });
+      if (!reserva.ok) return json({ erro: reserva.status === 409 ? "mensagem_ja_reservada" : "reserva_falhou" }, 409, req);
+      const [linha] = await reserva.json();
+      if (!linha) return json({ erro: "reserva_falhou" }, 503, req);
       try {
-        await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, descadastro ?? void 0);
+        await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, descadastro ?? void 0, void 0, void 0, referencia);
         if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "enviado" }) });
         return json({ resultado: "enviado", para: pessoa.email }, 200, req);
       } catch (falha) {
-        if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: "falhou", erro: motivo(falha) }) });
+        if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: "PATCH", body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? "falhou" : "enviando", erro: motivo(falha) }) });
         return json({ erro: motivo(falha) }, 502, req);
       }
     }

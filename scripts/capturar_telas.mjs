@@ -295,7 +295,8 @@ const COM_DADOS = args.includes('--com-dados')
 // --roteiro ARQ.mjs: o arquivo exporta default async (pagina, foto) e fotografa cada passo de um fluxo
 // (foto('sufixo') salva a dobra como <prefixo>-<sufixo>-<cel|pc>.png).
 const iRoteiro = args.indexOf('--roteiro')
-const roteiro = iRoteiro >= 0 ? (await import(new URL(args[iRoteiro + 1], `file://${process.cwd()}/`).href)).default : null
+const moduloRoteiro = iRoteiro >= 0 ? await import(new URL(args[iRoteiro + 1], `file://${process.cwd()}/`).href) : null
+const roteiro = moduloRoteiro?.default ?? null
 let respondidasExemplo = null
 let favoritosExemplo = null
 if (COM_DADOS) {
@@ -339,6 +340,7 @@ for (const [nome, vp, esc] of TAMANHOS) {
   if (SN && iAgora < 0) await contexto.clock.setFixedTime(new Date(SN_AGORA[SN]))
   const p = await contexto.newPage()
   p.on('pageerror', (e) => erros.push(`${nome}: ${e.message}`))
+  if (moduloRoteiro?.antes) await moduloRoteiro.antes(p, nome)
   await p.goto(`${BASE}#${ROTA}`); await p.waitForTimeout(4000); await p.addStyleTag({ content: ESCONDER }); await p.waitForTimeout(400)
   if (roteiro) await roteiro(p, (sufixo, opcoes = {}) => p.screenshot({ path: TELAS + `${PREF}-${sufixo}-${nome}.png`, ...opcoes }), nome)
   else {

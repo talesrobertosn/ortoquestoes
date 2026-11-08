@@ -21,14 +21,14 @@ export const emailConfigurado = () => !!Deno.env.get('RESEND_API_KEY') && !!Deno
 /** Anexo para o Resend: nome do arquivo e o conteúdo em base64 (suporte com imagens, 03/11/2026). */
 export interface Anexo { filename: string; content: string }
 
-export async function enviarEmail(para: string | string[], assunto: string, html: string, texto: string, descadastro?: string, responderPara?: string, anexos?: Anexo[]) {
+export async function enviarEmail(para: string | string[], assunto: string, html: string, texto: string, descadastro?: string, responderPara?: string, anexos?: Anexo[], idempotencia?: string) {
   const chave = Deno.env.get('RESEND_API_KEY'), remetente = Deno.env.get('EMAIL_REMETENTE')
   // responderPara (suporte, 19/10/2026): a resposta vai para quem escreveu, não para o endereço padrão.
   const responder = responderPara?.trim() || Deno.env.get('EMAIL_RESPONDER_PARA')?.trim()
   if (!chave || !remetente) throw new Error('email_nao_configurado')
   const resposta = await fetch('https://api.resend.com/emails', {
     method: 'POST',
-    headers: { Authorization: `Bearer ${chave}`, 'Content-Type': 'application/json' },
+    headers: { Authorization: `Bearer ${chave}`, 'Content-Type': 'application/json', ...(idempotencia ? { 'Idempotency-Key': idempotencia } : {}) },
     body: JSON.stringify({
       from: remetente,
       to: Array.isArray(para) ? para : [para],

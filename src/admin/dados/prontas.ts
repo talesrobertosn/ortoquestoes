@@ -38,7 +38,7 @@ export function montarProntas(linhas: readonly LinhaBanco[], opcoes: { admins?: 
     }, undefined, agora.getTime()) : null
     const recebeuComoEstao = anteriores.some(e => (e.modelo ?? '').split(':')[0] === 'como_estao' && e.status !== 'falhou' && agora.getTime() - new Date(e.em).getTime() < 30 * 86_400_000)
     const emRisco = !!risco && risco.nivel !== 'baixo' && Number(d.respondidas ?? 0) > 0 && !recebeuComoEstao
-      && !['obrigado_assinatura', 'marco', 'reta_final'].includes(escolha.tipo)
+      && !['marco', 'reta_final'].includes(escolha.tipo)
     const tipo: TipoCarta | undefined = emRisco ? 'como_estao' : semConvite ? (acertoCitavel(perfil) === null ? 'comecando' : 'ativo') : undefined
     if (escolha.bloqueio && !semConvite && !emRisco) continue
     let carta: Carta

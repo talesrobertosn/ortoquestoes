@@ -1,3 +1,5 @@
+> Atualização de 08/11/2026: cartas enviadas pela ficha também levam o link de descadastro e List-Unsubscribe. A prévia da ficha foi ajustada para mostrar o mesmo rodapé. Ver [HUB.md](HUB.md).
+
 # E-mails do Orto Questões: entregabilidade e como funciona
 
 Pedido do Tales (15/10/2026): e-mail com cara de e-mail de amigo, para cair na caixa

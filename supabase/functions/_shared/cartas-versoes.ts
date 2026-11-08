@@ -249,7 +249,7 @@ const ativo_20_30: Versao[] = [
       c.obs(1),
       c.fecho(),
     ] },
-  { id: 'v4', assuntos: (c) => [nm(c, 'que esforço bonito', 'Que esforço bonito')],
+  { id: 'v4', assuntos: (c) => [nm(c, 'seu estudo até aqui', 'Seu estudo até aqui')],
     corpo: (c) => [
       momento(c),
       `Passando só para reconhecer o seu esforço: ${jaFez(c)}. Isso é muita dedicação para quem tem o dia tomado.`,
@@ -420,7 +420,7 @@ const ativo_60_70: Versao[] = [
   { id: 'v3', assuntos: (c) => [nm(c, 'uma ideia para o tema mais difícil', 'Uma ideia para o tema mais difícil')],
     corpo: (c) => [
       momento(c),
-      `Fiquei feliz de ver ${asSuas(c)}. É volume de quem senta e faz, mesmo com sono.`,
+      `Fiquei feliz de ver ${asSuas(c)}.`,
       c.fato('areaFraca') ?? 'Uma ideia para as próximas semanas: escolher o tema em que você menos confia e dar dez questões por semana a ele. É onde cada sessão vai render mais agora, e cabe num intervalo.',
       c.tempo(),
       `O tema fica à sua escolha aqui: ${c.link('treinar')}`,
@@ -456,7 +456,7 @@ const ativo_70_80: Versao[] = [
   { id: 'v1', assuntos: (c) => assuntosAtivo(c, [nm(c, 'que estudo bonito', 'Que estudo bonito')]),
     corpo: (c) => [
       momento(c),
-      J(`Que alegria ver ${jaFez(c)}`, c.pctBom !== null ? `com ${c.pctBom}% de acerto. Isso é de quem senta e faz, mesmo com sono.` : 'com uma constância que é de quem senta e faz, mesmo com sono.'),
+      `Que alegria ver ${jaFez(c)}${c.pctBom !== null ? ` com ${c.pctBom}% de acerto` : ''}.`,
       c.obs(1),
       'Nesse nível, o que mais rende é ler o comentário mesmo quando acerta. Às vezes ele traz um detalhe que a banca ainda vai cobrar, e você já estará com ele guardado.',
       c.tempo(),
@@ -491,7 +491,7 @@ const ativo_70_80: Versao[] = [
     corpo: (c) => [
       momento(c),
       `Você está entre as pessoas que mais aproveitam o site${c.pctBom !== null ? `: ${jaFez(c)}, ${c.pctBom}% de acerto` : `: ${jaFez(c)}`}. Por isso tenho um pedido.`,
-      'Se encontrar alguma questão com algo estranho, ou um comentário que poderia ser melhor, me avisa pelo botão de relatar. Quem está nesse nível enxerga o que escapa a todo mundo, e cada relato melhora o banco para quem vem depois.',
+      'Se encontrar alguma questão com algo estranho, ou um comentário que poderia ser melhor, me avisa pelo botão de relatar. Cada relato ajuda a melhorar o banco de questões.',
       c.obs(1),
       'Obrigado, de verdade, por estudar por aqui.',
     ] },
@@ -579,7 +579,7 @@ const ativo_90_100: Versao[] = [
     corpo: (c) => [
       momento(c),
       `${cap(jaFez(c))}${c.pctBom !== null ? `, ${c.pctBom}% de acerto` : ''}. Pouquíssimas pessoas chegam aqui, e eu queria te pedir uma coisa.`,
-      'Se encontrar qualquer questão com algo estranho, ou um comentário que você faria melhor, me conta pelo botão de relatar. Quem está nesse nível enxerga o que escapa a todo mundo, inclusive a mim.',
+      'Se encontrar qualquer questão com algo estranho, ou um comentário que você faria melhor, me conta pelo botão de relatar.',
       c.obs(1),
       'E obrigado por estudar por aqui. É uma honra.',
     ] },
@@ -917,7 +917,7 @@ const sumiu: Versao[] = [
       `Faltam ${diasProva(c)} para ${c.nomeProva}, e lembrei de você. Faz ${tempoFora(c.p.diasParado)} que a gente não se vê por aqui, e imagino que a rotina tenha engolido o estudo.`,
       `Ainda dá tempo de fazer muita coisa, e ${asSuas(c)} já é um ótimo começo. Nada se perdeu.`,
       `Quando quiser retomar, a Revisão está aqui, com as questões que pedem uma segunda olhada já separadas: ${c.link('revisao')}`,
-      'Dez minutos por dia, daqui até a prova, valem mais do que uma maratona na véspera. E dormir também conta.',
+      'Dez minutos por dia, daqui até a prova, valem mais do que uma maratona na véspera.',
       c.fecho(),
     ] },
   { id: 'v6', assuntos: (c) => [nm(c, 'do jeito que você deixou', 'O site está do jeito que você deixou'), nm(c, 'um recado curto', 'Um recado curto')],
@@ -989,7 +989,7 @@ const lista = (itens: string[]) => itens.map((t) => `- ${cap(t)}`).join('\n')
 /** "a, b e c". */
 const eLista = (itens: string[]) => (itens.length <= 1 ? itens.join('') : `${itens.slice(0, -1).join(', ')} e ${itens[itens.length - 1]}`)
 /** Dar antes de pedir: uma dica útil, oferecida antes do convite. */
-const presente = (c: Ctx) => `Antes de tudo, uma dica de presente. ${c.dica()}`
+const dicaInicial = (c: Ctx) => c.dica()
 const garantia = 'Se não for o que você esperava, o reembolso em 7 dias é pelo próprio site, sem precisar explicar nada.'
 const portaAberta = 'Se não for a hora, tudo bem também. Eu continuo por aqui.'
 /** O cronograma explicado como horas devolvidas, no tom da amostra do PLANO. */
@@ -1003,7 +1003,7 @@ const convite_20: Versao[] = [
     corpo: (c) => [
       momento(c),
       `Vi que você já respondeu ${Q(c.r)} no Orto Questões, e fiquei feliz de ver você por aqui.`,
-      presente(c),
+      dicaInicial(c),
       `E, caso seja útil para a sua rotina, queria te contar o que a assinatura faz por ela:\n${lista(c.beneficios(3))}`,
       `${garantia} Se fizer sentido para o seu momento, os planos estão aqui: ${c.link('assinatura')}`,
       portaAberta,
@@ -1076,7 +1076,7 @@ const convite_50: Versao[] = [
   { id: 'v1', assuntos: (c) => [diasProva(c) && nm(c, `faltam ${diasProva(c)} e eu estou na torcida`, `Faltam ${diasProva(c)} e eu estou na torcida`), nm(c, 'escrevi para você', 'Escrevi para você'), nm(c, 'um convite pessoal', 'Um convite pessoal')],
     corpo: (c) => [
       momento(c),
-      J(`Que alegria ver ${Q(c.r)} já respondidas.`, c.obs(1, ['melhorArea', 'ranking', 'maisEstudada']), 'É de quem senta e faz, mesmo com sono.'),
+      J(`Que alegria ver ${Q(c.r)} já respondidas.`, c.obs(1, ['melhorArea', 'ranking', 'maisEstudada'])),
       cronogramaDevolve(c),
       `Dá para ver uma prévia do seu aqui: ${c.link('cronograma')}. ${garantia}`,
       portaAberta,
@@ -1095,7 +1095,7 @@ const convite_50: Versao[] = [
       momento(c),
       `Que alegria ver ${Q(c.r)} suas por aqui, cada uma encaixada no tempo que a rotina deixa.`,
       J(c.obs(1), tomAcerto(c)),
-      presente(c),
+      dicaInicial(c),
       `Se você quiser ir além, a assinatura soma:\n${lista(c.beneficios(3))}`,
       `Sem pressão nenhuma. Se fizer sentido: ${c.link('assinatura')}`,
     ] },
@@ -1129,7 +1129,7 @@ const convite_50: Versao[] = [
     corpo: (c) => [
       momento(c),
       J('Queria te fazer um convite, e não é pelo número de questões: é pelo jeito que você estuda.', c.obs(2)),
-      presente(c),
+      dicaInicial(c),
       `A assinatura foi pensada para quem estuda assim, com pouco tempo e muita vontade:\n${lista(c.beneficios(3))}`,
       `${garantia} Se quiser conhecer: ${c.link('assinatura')}`,
       portaAberta,
@@ -1143,7 +1143,7 @@ const convite_50: Versao[] = [
 const teotOuProva = (c: Ctx) => c.fatos.prova === 'teot' || !!c.fatos.cronograma || (!c.fatos.prova && (c.fatos.etapa === 'r3' || c.fatos.etapa === 'r4'))
 const faltam = (c: Ctx) => (diasProva(c) ? `Faltam ${diasProva(c)} para ${c.nomeProva}` : `${cap(c.nomeProva)} está chegando`)
 
-/** Reta final: dormir é estudar, modo prova, revisão. */
+/** Reta final: modo prova e revisão. */
 const reta_final: Versao[] = [
   { id: 'v1', assuntos: (c) => [diasProva(c) && nm(c, `faltam ${diasProva(c)}`, `Faltam ${diasProva(c)} para ${c.nomeProva}`), nm(c, 'reta final', 'Reta final')],
     corpo: (c) => [
@@ -1166,7 +1166,7 @@ const reta_final: Versao[] = [
       `${faltam(c)}. Na reta final, o instinto é correr atrás de tudo o que falta. Mas o que mais rende é proteger o que você já sabe.`,
       `${c.dez ? `Com ${Q(c.r)} feitas, você` : 'Você'} já tem material para isso. O Caderno de erros é um ótimo lugar para começar: cada questão que te pegou e vira acerto agora é um ponto garantido no dia: ${c.link('erros')}`,
       c.obs(1),
-      'E um lembrete de amigo: dormir também é estudar. A memória se consolida no sono.',
+      'Ler o comentário completo ajuda a entender por que cada alternativa está certa ou errada.',
       c.fecho(),
     ] },
   { id: 'v4', requer: (c) => !!c.fatos.areaFraca, assuntos: (c) => [nm(c, 'um tema para a reta final', 'Um tema para a reta final')],
@@ -1177,12 +1177,12 @@ const reta_final: Versao[] = [
       c.obs(1),
       c.fecho(),
     ] },
-  { id: 'v5', assuntos: (c) => [nm(c, 'cuida de você também', 'Cuida de você também'), nm(c, 'dormir também é estudar', 'Dormir também é estudar')],
+  { id: 'v5', assuntos: (c) => [nm(c, 'revisar as questões anteriores', 'Revisar as questões anteriores')],
     corpo: (c) => [
-      `${faltam(c)}. Um lembrete que ninguém costuma dar nessa fase: dormir também é estudar.`,
-      `A memória se consolida no sono. Então, nestas últimas semanas, vale preferir menos horas bem dormidas a madrugadas de questão.${c.fatos.horario === 'madrugada' ? ' Digo isso com carinho, porque vi que você anda estudando de madrugada.' : ''}`,
+      `${faltam(c)}. Vale reservar parte do estudo para revisar os erros anteriores.`,
+      'Uma sessão curta pode servir para reler os comentários das questões que você errou e entender o detalhe que mudou a resposta.',
       c.obs(1),
-      'Você já fez muito. Agora é chegar com a cabeça descansada, que é ela que acerta o detalhe no dia.',
+      'Na próxima sessão, tente responder essas questões de novo antes de abrir o comentário.',
       c.fecho(),
     ] },
   { id: 'v6', requer: (c) => !!c.fatos.melhorArea, assuntos: (c) => [nm(c, 'proteja o seu ponto forte', 'Proteja o seu ponto forte')],
@@ -2090,7 +2090,7 @@ const vespera_prova: Versao[] = [
     corpo: (c) => [
       J(usaProva(c), `Amanhã é ${provaDela(c)}, e eu quis te escrever hoje, com calma.`),
       'O estudo que decide a prova já foi feito: nas questões de cada intervalo, nas sessões depois do hospital, em cada comentário lido até o fim. Hoje não é dia de matéria nova.',
-      'Se der vontade de revisar, abra só as frases que caem por uns vinte minutos, e pare. Depois, jantar com calma, separar documento e caneta, e deitar cedo. Dormir é estudar, principalmente hoje.',
+      'Se der vontade de revisar, abra só as frases que caem por uns vinte minutos, e pare. Depois, jantar com calma, separar documento e caneta, e deitar cedo.',
       'Vai com a cabeça descansada e confia no que você construiu.',
       c.fecho(),
     ],
@@ -2176,18 +2176,16 @@ const aniversario: Versao[] = [
     corpo: (c) => [
       J(usaAniversario(c), 'Hoje é o seu aniversário, e eu não podia deixar passar. Parabéns, de coração.'),
       'Que o ano que começa traga dias mais leves, plantões mais tranquilos e, quando chegar a hora, a aprovação que você está construindo.',
-      'Hoje não tem questão, não tem cronograma, não tem nada para fazer aqui. É dia de comemorar com quem você gosta.',
+      'Espero que consiga comemorar com quem você gosta.',
       'O estudo espera, e fica do jeito que você deixou.',
-    ],
-    ps: () => 'P.S.: se for comemorar com bolo, guarda um pedaço por mim.' },
+    ] },
   { id: 'v2', assuntos: (c) => [nm(c, 'um abraço de aniversário', 'Um abraço de aniversário')],
     corpo: (c) => [
       J(usaAniversario(c), 'Passando só para te desejar um feliz aniversário.'),
       'Sei que a residência não para nem no dia do aniversário, então espero que hoje sobre pelo menos um tempinho só seu: uma refeição sem pressa, uma ligação para alguém querido, uma noite de sono inteira.',
       c.dez ? `E já que aniversário é dia de balanço: ${Q(c.r)} respondidas até aqui. Isso é muito estudo, e merece ser lembrado hoje também.` : 'Fico contente de ter você por aqui neste ano.',
       'Que o ano novo da sua vida seja generoso com você.',
-    ],
-    ps: () => 'P.S.: hoje, nada de questão. Amanhã a gente volta.' },
+    ] },
   { id: 'v3', assuntos: (c) => [nm(c, 'parabéns pelo seu dia', 'Parabéns pelo seu dia')],
     corpo: (c) => [
       J(usaAniversario(c), 'Parabéns pelo seu dia.'),
@@ -2204,9 +2202,9 @@ const aniversario: Versao[] = [
       c.fecho(),
       'Feliz aniversário.',
     ] },
-  { id: 'v5', assuntos: (c) => [nm(c, 'um café por mim hoje', 'Um café por mim hoje')],
+  { id: 'v5', assuntos: (c) => [nm(c, 'parabéns pelo aniversário', 'Parabéns pelo aniversário')],
     corpo: (c) => [
-      J(usaAniversario(c), 'Feliz aniversário. Hoje o café, o bolo e o descanso são por minha conta, pelo menos em pensamento.'),
+      J(usaAniversario(c), 'Feliz aniversário.'),
       'Fico contente de ter você por aqui, e mais ainda de poder te desejar um ano bom de verdade: com tempo para você, com sono em dia e com a prova correndo bem.',
       'O site não vai a lugar nenhum. Hoje, o dia é seu.',
       'Comemora com quem você gosta.',
@@ -2227,8 +2225,7 @@ const um_ano: Versao[] = [
     corpo: (c) => [
       `Uma data diferente hoje: a sua conta no Orto Questões faz ${anosTexto(c)}. É esse o tempo que a gente se conhece por aqui.`,
       c.dez ? `Olhando para trás: ${jaFez(c)}, um Caderno de erros cheio de coisas que hoje você já sabe, e a Revisão trazendo de volta na hora certa.` : 'Olhando para trás, o mais importante já aconteceu: você escolheu um lugar para estudar.',
-      'Um presente para esta data, se quiser: escolha o tema que mais te incomodava no começo e faça dez questões dele. É impressionante ver o quanto ele mudou.',
-      `Para o presente: ${c.link('treinar')}`,
+      `Para treinar: ${c.link('treinar')}`,
     ],
     ps: () => 'P.S.: obrigado por estar aqui. Que venham muitos outros anos de bons estudos.' },
   { id: 'v3', assuntos: (c) => [nm(c, 'obrigado pelo tempo junto', 'Obrigado pelo tempo junto')],

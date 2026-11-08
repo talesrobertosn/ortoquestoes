@@ -229,7 +229,7 @@ try {
   // 6. Escolha automática do tipo (marcos 100, 250, 500, 1.000, 2.000; cadência no resultado).
   const escolha = (p, ant = []) => m.escolherTipo({ diasConta: 60, diasParado: 1, ...p }, ant, HOJE).tipo
   assert.equal(escolha({ respondidas: 0, diasParado: null }), 'nunca_comecou')
-  assert.equal(escolha({ respondidas: 300, acertos: 200, erros: 100, assinante: true }), 'obrigado_assinatura')
+  assert.equal(escolha({ respondidas: 300, acertos: 200, erros: 100, assinante: true }), 'ativo', 'agradecimento duplicado aposentado')
   assert.equal(escolha({ respondidas: 300, acertos: 200, erros: 100, assinante: true }, obrigadoJa), 'ativo')
   assert.equal(escolha({ respondidas: 300, diasParado: 15 }), 'sumiu')
   assert.equal(escolha({ respondidas: 12, diasParado: 5 }), 'comecou_parou')

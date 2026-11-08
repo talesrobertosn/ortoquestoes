@@ -1,3 +1,5 @@
+> Atualização de 08/11/2026: a operação diária foi redesenhada na [Central de e-mails](HUB.md). Este documento conserva o histórico do plano anterior.
+
 # E-mails: plano de reescrita (17/10/2026)
 
 Pedido do Tales: "melhorar 100% de todos os e-mails. Deixar mais pessoal, mais fofo e mais gentil, falar

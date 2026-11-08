@@ -168,7 +168,7 @@ export function EditorCarta({ usuario, perfilReserva, historicoReserva, querRese
             <button type="button" className="a3-botao a3-botao--suave a3-botao--pequeno" disabled={!nomeModelo.trim()} onClick={salvarModelo}>Salvar</button></span>}
         {salvos.length > 0 && <button type="button" className="a3-botao a3-botao--fantasma" onClick={async () => { if (await confirmar({ titulo: 'Apagar todos os seus modelos salvos?', texto: 'Somem só deste navegador; e-mails já enviados não mudam.', sim: 'Apagar modelos', perigo: true })) { definirSalvos([]); gravarModelosSalvos([]) } }}>Apagar meus modelos</button>}
       </div>
-      <PreviaCarta assunto={assunto} corpo={corpo} />
+      <PreviaCarta assunto={assunto} corpo={corpo} descadastro />
     </div>
     <aside className="a3-carta__lado">
       <HistoricoEnvios lista={historico} carregando={q.carregando} nota={semParte27 ? 'Sem a parte 27: os 20 últimos, sem o tipo de cada carta.' : undefined} />

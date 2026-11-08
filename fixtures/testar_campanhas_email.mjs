@@ -85,6 +85,7 @@ try {
       const lista = C[rota.slice('rpc/candidatos_'.length)] ?? []
       return j(lista.slice(0, corpo.p_limite).map(([id_usuario, referencia, dados]) => ({ id_usuario, referencia, dados })))
     }
+    if (rota === 'rpc/hub_bloqueio') return j(null)
     if (rota === 'rpc/registrar_catalogo_biblioteca') { catalogos.push(corpo.p_capitulos); return j(1) }
     if (rota === 'rpc/sn_marcar_lembrete') { marcados.push(corpo); return j(true) }
     const p = pessoas.get(corpo?.p_id ?? eq('id_usuario') ?? eq('usuario_id')) ?? pessoas.get(eq('usuario_id'))

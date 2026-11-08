@@ -17,7 +17,7 @@ import { PreviaCarta } from './cartas-comum'
 const PAUSA_MS = 1_100
 const esperar = (ms: number) => new Promise(r => window.setTimeout(r, ms))
 /** Ordem das cartas na tela: primeiro quem paga e pode parar, depois quem saiu, depois o resto. */
-const ORDEM: TipoCarta[] = ['como_estao', 'acesso_terminou', 'obrigado_assinatura', 'marco', 'reta_final', 'sumiu', 'comecou_parou', 'ativo', 'comecando', 'boas_vindas', 'convite_50', 'convite_20', 'nunca_comecou']
+const ORDEM: TipoCarta[] = ['como_estao', 'acesso_terminou', 'marco', 'reta_final', 'sumiu', 'comecou_parou', 'ativo', 'comecando', 'boas_vindas', 'convite_50', 'convite_20', 'nunca_comecou']
 const posicao = (t: TipoCarta) => { const i = ORDEM.indexOf(t); return i < 0 ? 99 : i }
 
 interface Andamento { tipo: TipoCarta | 'todas'; feitos: number; total: number; atual: string }

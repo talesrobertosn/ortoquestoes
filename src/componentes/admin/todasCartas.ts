@@ -33,7 +33,7 @@ export const GATILHOS: Record<TipoCarta, Gatilho> = {
   pausa: { quando: 'Lembrete "Fogueira apagando" (botão em Lembretes), um por ausência.', paraQuem: 'Respondia e está de 3 a 6 dias sem aparecer.' },
   sumiu: { quando: 'Lembrete "Retomar a jornada" (botão), lote "Sumiu" ou ficha.', paraQuem: 'Respondia e está há 10 dias ou mais sem aparecer (até 90 no lembrete).' },
   ativo: { quando: 'Pela ficha ou pelo lote, quando nenhuma situação especial se aplica.', paraQuem: 'Estudando, com 30 questões ou mais: a faixa vem do acerto.' },
-  obrigado_assinatura: { quando: 'Pela ficha; o motor escolhe sozinho para assinante que ainda não recebeu nem este nem o recibo.', paraQuem: 'Quem acabou de assinar.' },
+  obrigado_assinatura: { quando: 'Aposentado em 08/11/2026; preservado somente para interpretar o histórico.', paraQuem: 'Quem acabou de assinar.' },
   convite_20: { quando: 'Lote "De 21 a 50 questões" (Cartas pessoais) ou ficha; nunca em cima de outro e-mail (48 h) nem repetido em 30 dias.', paraQuem: 'Não assina, mais de 20 questões, aceitou novidades.' },
   convite_50: { quando: 'Lote "Mais de 50 questões" (Cartas pessoais) ou ficha; mesmas travas do convite 20+.', paraQuem: 'Não assina, mais de 50 questões, aceitou novidades.' },
   reta_final: { quando: 'Pela ficha ou pelo lote, uma vez a cada 30 dias.', paraQuem: 'Prova a 60 dias ou menos (TEOT ou a data do cronograma).' },
@@ -159,6 +159,7 @@ function grupoDe(tipo: TipoCarta): GrupoCatalogo {
 export function modelosDoCatalogo(): ModeloCatalogo[] {
   const lista: ModeloCatalogo[] = []
   for (const tipo of Object.keys(TIPOS) as TipoCarta[]) {
+    if (tipo === 'obrigado_assinatura') continue // Histórico preservado; substituído pelo automático no pagamento.
     const info = TIPOS[tipo]
     if (tipo === 'ativo') {
       for (const faixa of FAIXAS) {

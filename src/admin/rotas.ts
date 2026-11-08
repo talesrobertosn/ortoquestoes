@@ -60,11 +60,9 @@ export const AREAS: DefArea[] = [
     { id: 'opinioes', rotulo: 'Opiniões dos flashcards', pergunta: 'O que as pessoas dizem do som, do visual, do desempenho e do conteúdo.' },
   ] },
   { id: 'comunicacao', rotulo: 'E-mails', curto: 'E-mails', icone: 'carta', partes: [
-    { id: 'prontas', rotulo: 'Prontas para enviar', pergunta: 'Para cada pessoa, a carta que combina com o momento dela, já escrita no seu jeito: acerto, melhor área e um convite gentil para continuar. Você lê e clica em enviar.', antes: 'Sugeridas e-mails escritos carta pronta enviar' },
-    { id: 'lembretes', rotulo: 'Lembretes', pergunta: 'O que está pendente para enviar: tudo de uma vez ou campanha por campanha.' },
-    { id: 'cartas', rotulo: 'Cartas pessoais', pergunta: 'Uma carta escrita para cada pessoa de um grupo, com prévia e revisão.' },
-    { id: 'envios', rotulo: 'Enviados', pergunta: 'Tudo o que já saiu, o relatório mensal e os e-mails automáticos.', antes: 'Relatórios e histórico' },
-    { id: 'todas', rotulo: 'Modelos', pergunta: 'Todos os modelos de carta do site, com amostra, variações e prévia. Nada sai daqui.', antes: 'Todas as cartas' },
+    { id: 'prontas', rotulo: 'Hoje', pergunta: 'Uma rodada diária, uma mensagem por pessoa, com todas as regras conferidas no servidor.', antes: 'Central hub e-mails lembretes cartas prontas' },
+    { id: 'envios', rotulo: 'Histórico', pergunta: 'Tudo o que já saiu, o relatório mensal e os e-mails automáticos.', antes: 'Relatórios e histórico' },
+    { id: 'todas', rotulo: 'Modelos e regras', pergunta: 'Todos os modelos de carta do site, com amostra, variações e prévia. Nada sai daqui.', antes: 'Todas as cartas' },
   ] },
   { id: 'configuracoes', rotulo: 'Ajustes', curto: 'Ajustes', icone: 'ajustes', partes: [
     { id: 'ajustes', rotulo: 'Ajustes', pergunta: 'Limite gratuito, recursos pagos, pagamentos e o aviso no topo do site.' },
@@ -103,7 +101,7 @@ const LEGADO: Record<string, Parte> = {
   previsao: 'financeiro', aviso: 'ajustes', retencao: 'crescimento', perfis: 'crescimento', assinantes: 'assinaturas',
   configuracoes: 'ajustes', avisos: 'pagamentos', receita: 'financeiro', pessoas: 'usuarios',
   avaliacoes: 'conteudo', relatos: 'conteudo',
-  operacoes: 'lembretes', emails: 'lembretes', comunicacao: 'lembretes',
+  operacoes: 'prontas', emails: 'prontas', comunicacao: 'prontas', lembretes: 'prontas', cartas: 'prontas',
   estudo: 'conteudo', mensal: 'envios', relatorios: 'envios', historico: 'envios',
 }
 

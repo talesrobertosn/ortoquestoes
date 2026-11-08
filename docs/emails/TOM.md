@@ -8,6 +8,18 @@ gentil, falar sobre tempo, praticidade, sobre estudar fácil; um pouquinho maior
 Vale para todas as versões (`supabase/functions/_shared/cartas-versoes.ts`), para os blocos do motor
 (`cartas.ts`) e para os automáticos (`modelo-email.ts`).
 
+## Atualização de 08/11/2026 (Tales)
+
+Manter a personalização explícita: referências reais a horários de estudo, cidade, serviço,
+sequência, temas e tempo sem responder são desejadas pelo dono. Não retirar essas observações
+por receio de parecer monitoramento; nunca inventar dados.
+
+Retirar os bordões de sono como estudo, os elogios "quem senta e faz, mesmo com sono",
+"que esforço bonito" e "que constância bonita", a promessa "vai dar certo", pedidos de café
+ou bolo em nome do remetente, "se responder eu fico feliz" e dicas/tarefas chamadas de presente.
+Não usar "uma ideia carinhosa" nem bajulação sobre enxergar o que escapa a todo mundo.
+No aniversário, não mandar a pessoa parar de estudar. Preservar o restante do tom e a assinatura.
+
 ## Atualização de 22/10/2026 (Tales: "os e-mails estão cringe")
 
 Tom **fofo e gentil**, nada de se achar. Fora de todas as cartas: falar de si ou de por que o site existe ("fiz o
@@ -47,8 +59,7 @@ caracteres, sem emoji e sem ponto de exclamação.
 
 - **Interesse pela pessoa**: o nome com naturalidade; falar do que importa para ela (a prova, a
   residência, o plantão, o sonho de passar), não do site.
-- **Elogio honesto e específico** a cada progresso, e uma boa reputação para honrar ("isso é de quem
-  senta e faz, mesmo com sono").
+- **Elogio honesto e específico** a cada progresso, e uma boa reputação para honrar (com base em dados reais do estudo).
 - **Fazer a pessoa se sentir importante**: "lembrei de você", "fiquei feliz de ver".
 - **Perguntar e sugerir** em vez de mandar: "que tal...", "se fizer sentido para você...".
 - **Dar antes de pedir**: no convite para assinar, primeiro uma dica útil; depois o que o plano faz
@@ -57,7 +68,7 @@ caracteres, sem emoji e sem ponto de exclamação.
 - **Tempo e praticidade** em toda carta: o benefício de tudo é o tempo que volta.
 - **Por faixa**: alta, celebração e pedido de ajuda ("como você estuda?", indicar); média,
   encorajamento ("a fase em que mais dá para crescer"); baixa, acolhimento, esperança ("todo mundo
-  que passou começou assim") e uma ideia de dez minutos oferecida como presente.
+  que passou começou assim") e uma sugestão prática de dez minutos.
 - **Automáticos com cara de carta**: a pausa cita a área em que a pessoa estava e a Revisão; o Pix
   diz que nada se perde, sem urgência; o resumo quinzenal conta uma história; o relato resolvido
   cita a alternativa; o recibo é gentil e nunca traz o valor.

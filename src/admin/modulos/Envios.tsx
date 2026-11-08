@@ -8,6 +8,7 @@ import { combina, dataHora, inteiro, normalizar } from '../ui/formato'
 import { Busca, Cabeca, Carregando, Estado, Faixa, Filtro, Interruptor, Metrica, Painel, Selo } from '../ui/kit'
 import { avisoRapido, confirmar } from '../ui/sobreposicoes'
 import { Tabela } from '../ui/tabela'
+import { HistoricoRodadas } from './HistoricoRodadas'
 
 interface ConfigEmails { marcos_automaticos: boolean; alertas_admin: boolean }
 interface EmailEnviado { id: number; tipo: string; marco: number | null; assunto: string | null; status: string; erro: string | null; enviado_em: string; usuario: string | null }
@@ -19,44 +20,30 @@ function mesAnterior() { const d = new Date(); d.setDate(1); d.setMonth(d.getMon
 /** Comunicação › Relatórios e envios: o relatório do mês, os e-mails automáticos e o registro do que saiu. */
 export default function Envios() {
   const parte = defParte('envios')
-  const [config, definirConfig] = useState<ConfigEmails | null>(null)
   const [enviados, definirEnviados] = useState<EmailEnviado[] | null>(null)
   const [erro, definirErro] = useState('')
   const carregar = useCallback(async () => {
     try {
-      const [e, lista] = await Promise.all([chamarRpc<ConfigEmails[]>('obter_config_emails_admin', {}), chamarRpc<EmailEnviado[]>('listar_emails_admin', {})])
-      definirConfig(e[0] ?? null); definirEnviados(lista); definirErro('')
+      const lista = await chamarRpc<EmailEnviado[]>('listar_emails_admin', {})
+      definirEnviados(lista); definirErro('')
     } catch (f) { definirErro(erroDoPainel(f, MIGRACAO)) }
   }, [])
   useEffect(() => { void carregar() }, [carregar])
   useEffect(() => ouvirEmailsEnviados(() => void carregar()), [carregar])
 
-  async function salvar(proximo: ConfigEmails) {
-    definirConfig(proximo)
-    try { await chamarRpc('definir_config_emails_admin', { p_marcos: proximo.marcos_automaticos, p_alertas: proximo.alertas_admin }); avisoRapido('Configuração dos e-mails salva.') }
-    catch { avisoRapido('Não foi possível salvar a configuração de e-mails. Nada mudou.', 'erro'); await carregar() }
-  }
   const semana = enviados?.filter(e => Date.now() - Date.parse(e.enviado_em) < 7 * 86_400_000) ?? []
 
   return <div className="a3-pilha a3-pilha--larga">
     <Cabeca area="E-mails" titulo={parte.rotulo} pergunta={parte.pergunta} />
     {erro && <Faixa tom="erro" titulo="Os e-mails não carregaram">{erro}</Faixa>}
     {enviados && <section className="a3-painel"><div className="a3-faixa-metricas" style={{ '--colunas': 4 } as React.CSSProperties}>
-      <Metrica rotulo="Enviados em 7 dias" valor={inteiro(semana.filter(e => e.status === 'enviado').length)} qualidade="confirmado" nota={`dos últimos ${enviados.length} registros`} />
+      <Metrica rotulo="Aceitos em 7 dias" valor={inteiro(semana.filter(e => e.status === 'enviado').length)} qualidade="confirmado" nota={`dos últimos ${enviados.length} registros`} />
       <Metrica rotulo="Falharam em 7 dias" valor={inteiro(semana.filter(e => e.status === 'falhou').length)} qualidade="confirmado" nota="motivo em cada linha abaixo" />
       <Metrica rotulo="Cartas e lembretes" valor={inteiro(semana.filter(e => e.tipo === 'carta' || e.tipo === 'lembrete' || e.tipo === 'parabens').length)} qualidade="confirmado" nota="em 7 dias" />
-      <Metrica rotulo="Automáticos" valor={inteiro(semana.filter(e => e.tipo === 'marco' || e.tipo === 'relatorio').length)} qualidade="confirmado" nota="parabéns e resumos, em 7 dias" />
+      <Metrica rotulo="Marcos e relatórios" valor={inteiro(semana.filter(e => e.tipo === 'marco' || e.tipo === 'relatorio').length)} qualidade="confirmado" nota="registros em 7 dias" />
     </div></section>}
-    <div className="a3-grade a3-grade--2" style={{ alignItems: 'start' }}>
-      <RelatorioMensal />
-      <Painel titulo="E-mails automáticos" descricao="Saem sozinhos; desligar aqui vale para todo mundo.">
-        {!config ? (erro ? <Estado compacto tipo="erro" titulo="Configuração indisponível" /> : <Carregando linhas={2} />) : <div className="a3-pilha">
-          <Interruptor marcado={config.marcos_automaticos} aoMudar={v => void salvar({ ...config, marcos_automaticos: v })} titulo="Parabéns pelos emblemas" descricao="50, 100, 250, 500, 1.000, 2.000, 3.000 e 4.000 questões; uma vez por emblema e só para quem não desligou em Minha conta." />
-          <Interruptor marcado={config.alertas_admin} aoMudar={v => void salvar({ ...config, alertas_admin: v })} titulo="Me avisar por e-mail" descricao="Quando um pagamento der erro ou alguém escrever que um comentário não ajudou." />
-          <p className="a3-mudo a3-pequeno">Todos os e-mails para as pessoas saem como carta: só texto, sem logo, assinados “Um abraço, Tales, do Orto Questões”.</p>
-        </div>}
-      </Painel>
-    </div>
+    <HistoricoRodadas />
+    <details className="a3-painel" style={{ padding: 20 }}><summary style={{ cursor: 'pointer', fontWeight: 650 }}>Relatórios de períodos anteriores</summary><p className="a3-mudo a3-pequeno">Para uma recuperação excepcional. Os relatórios devidos já entram na central e conservam seus agendamentos.</p><RelatorioMensal /></details>
     <UltimosEnvios lista={enviados} />
   </div>
 }
@@ -113,22 +100,46 @@ function UltimosEnvios({ lista }: { lista: EmailEnviado[] | null }) {
   const [busca, definirBusca] = useState('')
   const termo = normalizar(busca.trim())
   const tipos = useMemo(() => [...new Set((lista ?? []).map(e => e.tipo))], [lista])
-  const visiveis = useMemo(() => (lista ?? []).filter(e => (filtro === 'todos' || (filtro === 'falhou' ? e.status === 'falhou' : e.tipo === filtro)) && combina([e.assunto, e.usuario, TIPO_EMAIL[e.tipo]], termo)), [lista, filtro, termo])
-  return <Painel justo titulo="Registro de envios" descricao="Os mais recentes primeiro, de todos os tipos.">
+  const visiveis = useMemo(() => (lista ?? []).filter(e => (filtro === 'todos' || (filtro === 'falhou' || filtro === 'enviando' ? e.status === filtro : e.tipo === filtro)) && combina([e.assunto, e.usuario, TIPO_EMAIL[e.tipo]], termo)), [lista, filtro, termo])
+  return <Painel justo titulo="Registro de envios" descricao="Os mais recentes primeiro, de todos os tipos. Aceito pelo provedor não confirma a entrega.">
     {!lista ? <div style={{ padding: 20 }}><Carregando linhas={4} /></div> : <>
       <div className="a3-filtros"><Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar assunto ou e-mail" /></div>
       <div className="a3-filtros" style={{ paddingTop: 0 }} role="group" aria-label="Filtrar">
         <Filtro ativo={filtro === 'todos'} aoClicar={() => definirFiltro('todos')} contagem={lista.length}>Todos</Filtro>
         <Filtro ativo={filtro === 'falhou'} aoClicar={() => definirFiltro('falhou')} contagem={lista.filter(e => e.status === 'falhou').length}>Com falha</Filtro>
+        <Filtro ativo={filtro === 'enviando'} aoClicar={() => definirFiltro('enviando')} contagem={lista.filter(e => e.status === 'enviando').length}>Em processamento ou a conferir</Filtro>
         {tipos.map(t => <Filtro key={t} ativo={filtro === t} aoClicar={() => definirFiltro(t)} contagem={lista.filter(e => e.tipo === t).length}>{TIPO_EMAIL[t] ?? t}</Filtro>)}
       </div>
       <Tabela rotulo="Registro de envios" linhas={visiveis} chave={e => String(e.id)} porPagina={30}
         vazio={<div style={{ padding: 20 }}><Estado icone="carta" titulo="Nenhum e-mail neste filtro" /></div>}
         colunas={[
           { id: 'a', titulo: 'E-mail', celula: e => <span style={{ display: 'grid' }}><span className="a3-nome">{e.assunto ?? TIPO_EMAIL[e.tipo]}</span><span className="a3-sub">{TIPO_EMAIL[e.tipo] ?? e.tipo}{e.usuario ? ` · ${e.usuario}` : ''}</span>{e.status === 'falhou' && <span className="a3-sub a3-erro-texto">{motivoFalhaEmail(e.erro)}</span>}</span> },
-          { id: 's', titulo: 'Situação', rotuloCelular: 'Situação', celula: e => <Selo tom={e.status === 'enviado' ? 'ok' : e.status === 'falhou' ? 'erro' : undefined}>{e.status === 'enviado' ? 'Enviado' : e.status === 'falhou' ? 'Falhou' : e.status}</Selo> },
+          { id: 's', titulo: 'Situação', rotuloCelular: 'Situação', celula: e => <Selo tom={e.status === 'enviado' ? 'ok' : e.status === 'falhou' ? 'erro' : undefined}>{e.status === 'enviado' ? 'Aceito pelo provedor' : e.status === 'falhou' ? 'Falhou' : e.status === 'enviando' ? (Date.now() - Date.parse(e.enviado_em) > 600_000 ? 'Entrega a conferir' : 'Processando') : e.status}</Selo> },
           { id: 'q', titulo: 'Quando', numero: true, rotuloCelular: 'Quando', ordem: e => e.enviado_em, celula: e => dataHora(e.enviado_em) },
         ]} ordemInicial={{ coluna: 'q', sentido: 'desc' }} />
     </>}
+  </Painel>
+}
+
+/** Configuração fica junto dos modelos e das regras, fora do histórico. */
+export function ConfiguracaoEmails() {
+  const [config, definirConfig] = useState<ConfigEmails | null>(null)
+  const [erro, definirErro] = useState('')
+  const [salvando, definirSalvando] = useState(false)
+  useEffect(() => { void chamarRpc<ConfigEmails[]>('obter_config_emails_admin', {}).then(e => definirConfig(e[0] ?? null)).catch(e => definirErro(String(e))) }, [])
+  async function salvar(proximo: ConfigEmails) {
+    if (salvando) return
+    definirSalvando(true)
+    try { await chamarRpc('definir_config_emails_admin', { p_marcos: proximo.marcos_automaticos, p_alertas: proximo.alertas_admin }); definirConfig(proximo); definirErro(''); avisoRapido('Configuração salva.') }
+    catch (e) { definirErro(String(e)) }
+    finally { definirSalvando(false) }
+  }
+  return <Painel titulo="E-mails automáticos" descricao="O que continua acontecendo sem iniciar uma rodada.">
+    {erro && <Faixa tom="erro">{erro}</Faixa>}
+    {!config ? <Carregando linhas={2} /> : <fieldset disabled={salvando} style={{ border: 0, padding: 0, margin: 0 }} className="a3-pilha">
+      <Interruptor marcado={config.marcos_automaticos} aoMudar={v => void salvar({ ...config, marcos_automaticos: v })} titulo="Marcos de estudo" descricao="100, 250, 500, 1.000 e 2.000 questões; uma vez por marco, respeitando preferências e frequência." />
+      <Interruptor marcado={config.alertas_admin} aoMudar={v => void salvar({ ...config, alertas_admin: v })} titulo="Me avisar por e-mail" descricao="Quando um pagamento der erro ou alguém escrever que um comentário não ajudou." />
+      <p className="a3-mudo a3-pequeno">O agradecimento sai no pagamento aprovado. Esse contato não é repetido na rodada diária.</p>
+    </fieldset>}
   </Painel>
 }
