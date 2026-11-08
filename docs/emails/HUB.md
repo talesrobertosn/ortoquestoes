@@ -1,6 +1,6 @@
 # Central de e-mails — 08/11/2026
 
-Reformulação pedida pelo Tales, com publicação autorizada em 08/11/2026. SQL instalado e funções `hub-emails` v1 e `enviar-email` v18 publicadas pelo acesso conectado, sem iniciar uma rodada real. Substitui a operação diária nas páginas Prontas,
+Reformulação pedida pelo Tales, com publicação autorizada em 08/11/2026. SQL instalado e funções `hub-emails` v2 e `enviar-email` v18 publicadas pelo acesso conectado, sem iniciar uma rodada real. Substitui a operação diária nas páginas Prontas,
 Lembretes e Cartas pessoais. Os endereços antigos abrem Hoje. O menu tem Hoje, Histórico e Modelos e regras.
 As referências explícitas ao histórico, horários, temas e rotina são desejadas pelo dono e foram preservadas.
 
@@ -28,6 +28,8 @@ lembretes, marcos e relatórios. Falha de consulta bloqueia. Preferências por c
 administradores/fora do público, consentimento para novidades, 48 h e três contatos em 14 dias são conferidos.
 Os convites e as abordagens de retomada compartilham uma espera de 30 dias por intenção. O primeiro convite
 para começar não se repete. Contas de teste são excluídas na montagem e novamente na checagem de pertinência.
+
+O processador possui uma credencial exclusiva, validada por `hub_autenticar_processador`, sem alterar os segredos dos pagamentos.
 
 As exceções de frequência existentes foram mantidas: relatórios não esperam a cadência, mas contam para as
 outras cartas; transacionais não esperam nem contam. Preferências continuam valendo. Os automáticos do
@@ -72,9 +74,10 @@ Entregas incertas antigas não foram reenviadas nem alteradas em massa.
 
 1. Publicar `hub-emails`, com validação de JWT da plataforma desligada, pois o corpo autentica os administradores
    pelo Auth e o processador pelo segredo existente, como `enviar-email`.
-2. Aplicar `supabase/migrations/20261108215621_hub_emails.sql` (cópia em `supabase/colar-no-painel/`).
-   O SQL deriva o comando autenticado do cron mensal sem expor segredos. Se esse cron não existir, o botão de
-   iniciar fica bloqueado até configurar o processador.
+2. Aplicar, nesta ordem, `20261108215621_hub_emails.sql` e `20261108225340_hub_worker_autenticacao.sql` (cópias em `supabase/colar-no-painel/`).
+   O primeiro cria a fila e deriva a URL do cron mensal. O segundo cria uma credencial exclusiva para o
+   processador, sem depender do segredo legado que foi recusado na validação em produção. A credencial
+   fica no agendamento; somente a função com service_role pode validá-la. Nenhum valor é exposto ao navegador.
 3. Publicar a versão nova de `enviar-email`, que passa a depender de `hub_bloqueio`.
 4. Publicar o frontend. Não iniciar rodada durante a verificação da instalação.
 

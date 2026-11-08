@@ -430,7 +430,12 @@ Deno.serve(async (req) => {
     if (p.acao === 'processar') {
       const esperado = Deno.env.get('EMAIL_SEGREDO') ?? '',
         recebido = req.headers.get('x-segredo') ?? ''
-      if (!esperado || esperado !== recebido) return json({ erro: 'acesso_negado' }, 403, req)
+      const legado = !!esperado && esperado === recebido
+      const agendador = !legado && /^[a-f0-9]{64}$/.test(recebido)
+        ? await rpc<boolean>('hub_autenticar_processador', { p_segredo: recebido }).catch(() => false)
+        : false
+      if (!legado && !agendador) return json({ erro: 'acesso_negado' }, 403, req)
+
       return json(await processar(), 200, req)
     }
     const u = await usuarioDoPedido(req)

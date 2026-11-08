@@ -117,6 +117,7 @@ try {
     const rpc = url.pathname.split('/rpc/')[1]
     if (rpc) {
       if (rpc === 'hub_worker_ativo') return j(true)
+      if (rpc === 'hub_autenticar_processador') return j(body.p_segredo === 'a'.repeat(64))
       if (rpc === 'hub_pessoas') {
         if (consultasFalham) return j({}, 500)
         return j([...pessoas].map(([id_usuario, dados]) => ({ id_usuario, dados })))
@@ -226,6 +227,10 @@ try {
   }
   assert.equal((await chamar('preparar', {}, 'comum')).status, 403)
   assert.equal((await chamar('processar', {}, 'admin')).status, 403)
+  for (const [token, codigo] of [['a'.repeat(64), 200], ['b'.repeat(64), 403]]) {
+    const resposta = await handler(new Request('https://hub.test', { method: 'POST', headers: { 'content-type': 'application/json', 'x-segredo': token }, body: JSON.stringify({ acao: 'processar' }) }))
+    assert.equal(resposta.status, codigo, 'credencial exclusiva do agendador validada sem liberar chamadas anônimas')
+  }
   const p = await chamar('preparar')
   assert.equal(p.status, 200)
   assert.equal(p.dados.prontas.length, 2)
