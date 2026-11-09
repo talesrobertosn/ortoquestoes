@@ -5,6 +5,14 @@ de divulgação. Decisões do dono do projeto, Tales Roberto. Atualizar sempre q
 for dada. Detalhes técnicos dos posts em [marketing/instagram/README.md](../../marketing/instagram/README.md)
 e o catálogo de estilos em [marketing/instagram/estilos/ESTILOS.md](../../marketing/instagram/estilos/ESTILOS.md).
 
+## Padrão aula: o jeito oficial de fazer post de questão (09/11/2026)
+
+**Leia primeiro [marketing/instagram/estilos/PADRAO-AULA.md](../../marketing/instagram/estilos/PADRAO-AULA.md).** O
+Tales aprovou a campanha do índice de REIMERS como o novo padrão: o post ensina do zero (pensado para quem está
+começando, sem escrever "R1"), com texto na medida, nenhum slide só de palavras, as imagens da questão e do comentário,
+livro e página em cada explicação, uma temática que ajuda a entender e no máximo 4 stories. Quando uma regra antiga
+deste documento pedir menos texto ou só a imagem original, vale o padrão aula.
+
 ## Público
 
 Residentes de ortopedia (R1 a R3) que se preparam para o TARO e o TEOT, e candidatos às provas de

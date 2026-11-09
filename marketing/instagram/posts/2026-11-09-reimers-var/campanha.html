@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>A bola saiu? REIMERS no VAR (campanha)</title>
+<!-- Aula para o R1: por que o quadril sai na paralisia cerebral, como ler as linhas, como fazer a conta do REIMERS e
+     o que o número significa. Questão pediatria-0088 (TEOT 2022), gabarito C (REIMERS). Imagens: a da questão (zoom por
+     recorte), o desenho (learningradiology.com) e a radiografia (PMC12690503) do comentário, com a fonte, liberadas pelo
+     Tales. Gráficos (GMFCS, régua, bola) são esquemas abstratos, sem desenho de osso. Fontes do texto: Tachdjian 6ª ed.
+     p. 1463 a 1466; Campbell 15ª ed. p. 1240 e 1241 (via resumo do site e comentário da questão).
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-09-reimers-var/campanha.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Mono; src: local('JetBrains Mono Bold'), local('DejaVu Sans Mono Bold'); font-weight: 700; }
+:root { --ouro: #FFD23F; --verm: #FF4D5A; --verde: #35E08A; --roxo: #5B3DF5; --noite: #0A1226; --noite2: #050914;
+  --creme: #F6F4FF; --cinza: #B4BAD4; --azul: #4E8DFF; --amar: #F7D23E; --card: #121838; --borda: #2C3370; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; margin-bottom: 40px; color: var(--creme);
+  background: radial-gradient(ellipse 85% 55% at 50% 30%, #1A1E52 0%, var(--noite) 50%, var(--noite2) 100%); }
+.feed { height: 1350px; } .story { height: 1920px; }
+section::before { content: ''; position: absolute; inset: 0; pointer-events: none; opacity: .45;
+  background: repeating-linear-gradient(90deg, rgba(91,61,245,.07) 0 90px, transparent 90px 180px); -webkit-mask-image: linear-gradient(180deg, transparent, #000 45%); }
+.box { position: absolute; z-index: 3; }
+
+/* cabeçalho */
+.cab { position: absolute; left: 56px; right: 56px; z-index: 6; display: flex; align-items: center; gap: 14px; }
+.cab .m { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 10px; border-radius: 10px; background: #fff; color: var(--noite); font: 800 24px Jakarta; letter-spacing: -.01em; }
+.cab .m img { width: 34px; height: 34px; } .cab .m span { font-weight: 500; }
+.cab .t { padding: 9px 14px; border-radius: 10px; background: var(--roxo); font: 800 19px Jakarta; }
+.cab .x { flex: 1; font: 700 16px Mono, monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--cinza); }
+.cab .var { padding: 9px 14px; border-radius: 10px; background: var(--verm); font: 800 18px Jakarta; letter-spacing: .1em; display: flex; align-items: center; gap: 8px; }
+.cab .var::before { content: ''; width: 10px; height: 10px; border-radius: 50%; background: #fff; }
+.passo-n { display: inline-flex; align-items: center; gap: 10px; font: 800 20px Mono, monospace; letter-spacing: .16em; text-transform: uppercase; color: var(--ouro); }
+.passo-n b { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 10px; background: var(--ouro); color: var(--noite); font: 800 22px Jakarta; letter-spacing: 0; }
+
+.h { font: 800 64px/1.03 Jakarta; letter-spacing: -.04em; }
+.h em { font-style: normal; color: var(--ouro); }
+.txt { font: 500 29px/1.42 Inter; color: var(--cinza); }
+.txt b { color: var(--creme); font-weight: 700; }
+.txt .y { color: var(--ouro); font-weight: 700; }
+.ref { font: 600 18px Inter; color: rgba(180,186,212,.8); }
+.fonte { font: 500 16px Inter; color: rgba(180,186,212,.75); }
+.site { font: 800 32px Jakarta; letter-spacing: -.015em; color: var(--ouro); }
+
+/* moldura de imagem */
+.tela { position: absolute; z-index: 3; border-radius: 18px; padding: 12px; background: linear-gradient(180deg, #1a1f45, #0b0f28); box-shadow: 0 0 0 3px var(--borda), 0 30px 60px rgba(0,0,0,.55); }
+.tela .in { border-radius: 10px; overflow: hidden; background: #000; position: relative; }
+.tela img { display: block; width: 100%; }
+.tela .cap { display: flex; justify-content: space-between; padding: 0 4px 10px; font: 700 15px Mono, monospace; letter-spacing: .14em; text-transform: uppercase; color: var(--cinza); }
+.tela .cap b { color: var(--ouro); }
+.zoom { background-image: url(questao-3x.png); background-repeat: no-repeat; }
+
+/* itens explicativos */
+.item { display: grid; grid-template-columns: 60px 1fr; gap: 18px; align-items: start; }
+.item .ic { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 14px; font: 800 30px Jakarta; }
+.item h4 { font: 800 33px/1.1 Jakarta; letter-spacing: -.02em; }
+.item p { font: 500 26px/1.38 Inter; color: var(--cinza); margin-top: 4px; }
+.item p b { color: var(--creme); }
+.card { position: absolute; z-index: 3; padding: 20px 24px; border-radius: 18px; background: var(--card); border: 2px solid var(--borda); }
+.alt { display: flex; align-items: center; gap: 14px; padding: 13px 16px; border-radius: 12px; background: var(--card); border: 2px solid var(--borda); font: 800 30px Jakarta; letter-spacing: -.02em; }
+.alt i { font-style: normal; display: grid; place-items: center; width: 44px; height: 44px; border-radius: 10px; background: var(--roxo); font-size: 22px; flex: none; }
+.formula { display: inline-flex; align-items: center; gap: 16px; padding: 14px 26px; border-radius: 16px; background: var(--ouro); color: var(--noite); font: 800 52px Jakarta; letter-spacing: -.03em; }
+.formula small { font: 800 15px/1.2 Mono, monospace; letter-spacing: .14em; }
+.cta { display: inline-flex; align-items: center; gap: 14px; padding: 20px 36px; border-radius: 16px; background: var(--verde); color: var(--noite); font: 800 40px Jakarta; letter-spacing: -.02em; box-shadow: 0 0 0 8px rgba(53,224,138,.18); }
+.cta svg { width: 38px; height: 22px; }
+/* régua de 0 a 100% */
+.regua { position: relative; height: 54px; border-radius: 12px; background: linear-gradient(90deg, var(--verde) 0 30%, var(--ouro) 30% 60%, var(--verm) 60% 100%); box-shadow: inset 0 -6px 0 rgba(0,0,0,.18); }
+.regua i { position: absolute; top: -10px; bottom: -10px; width: 4px; background: #fff; border-radius: 2px; }
+.rot { position: absolute; transform: translateX(-50%); text-align: center; white-space: nowrap; }
+.rot b { display: block; font: 800 30px Jakarta; letter-spacing: -.02em; }
+.rot span { display: block; font: 500 21px/1.3 Inter; color: var(--cinza); }
+/* barras GMFCS */
+.barras { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; align-items: end; }
+.barras .b { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.barras .b span { font: 800 30px Jakarta; }
+.barras .b i { width: 100%; border-radius: 10px 10px 4px 4px; background: linear-gradient(180deg, var(--verm), #9a2a3a); }
+.barras .b small { font: 800 22px Jakarta; color: var(--cinza); }
+</style></head><body>
+
+<!-- bola (cabeça do fêmur) cruzando a linha de PERKINS: 30% para fora. Esquema abstrato. -->
+<template id="bola">
+<svg viewBox="0 0 360 330" style="width:100%;height:auto">
+  <defs><clipPath id="fora"><rect x="200" y="0" width="200" height="330"/></clipPath></defs>
+  <circle cx="164" cy="150" r="90" fill="#2B3263" stroke="#F6F4FF" stroke-width="4"/>
+  <circle cx="164" cy="150" r="90" fill="#F7D23E" clip-path="url(#fora)"/>
+  <line x1="200" y1="20" x2="200" y2="270" stroke="#4E8DFF" stroke-width="8" stroke-linecap="round"/>
+  <text x="200" y="14" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="20" fill="#4E8DFF">PERKINS</text>
+  <text x="140" y="158" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="22" fill="#F6F4FF">dentro</text>
+  <text x="228" y="158" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="20" fill="#0A1226">fora</text>
+  <line x1="74" y1="268" x2="254" y2="268" stroke="#F6F4FF" stroke-width="4"/><line x1="74" y1="258" x2="74" y2="278" stroke="#F6F4FF" stroke-width="4"/><line x1="254" y1="258" x2="254" y2="278" stroke="#F6F4FF" stroke-width="4"/>
+  <text x="164" y="306" text-anchor="middle" font-family="Jakarta" font-weight="800" font-size="26" fill="#F6F4FF">B = 20 mm</text>
+  <line x1="200" y1="52" x2="254" y2="52" stroke="#F7D23E" stroke-width="5"/><line x1="254" y1="42" x2="254" y2="62" stroke="#F7D23E" stroke-width="5"/>
+  <text x="290" y="60" text-anchor="start" font-family="Jakarta" font-weight="800" font-size="26" fill="#F7D23E" dx="-28">A = 6</text>
+</svg>
+</template>
+<template id="seta"><svg viewBox="0 0 38 22" fill="none" stroke="currentColor" stroke-width="3.2"><path d="M2 11h30M24 3l8 8-8 8"/></svg></template>
+
+<!-- ======================= STORY 1 · O PROBLEMA ======================= -->
+<section id="story-01-problema" class="story">
+  <div class="cab" style="top:250px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">TEOT 2022</span><span class="x">Lance em revisão</span><span class="var">VAR</span></div>
+  <div class="box" style="left:64px;right:64px;top:340px">
+    <h1 class="h" style="font-size:70px">A bola <em>saiu?</em></h1>
+    <p class="txt" style="margin-top:16px">Na paralisia cerebral, os músculos que <b>fecham a coxa</b> (adutores) e que a <b>dobram</b> (flexores) ficam espásticos e vencem os que abrem e estendem. Aos poucos, eles <span class="y">puxam a cabeça do fêmur (a bola) para fora do acetábulo (o gol)</span>.</p>
+  </div>
+  <div class="tela" style="left:190px;right:190px;top:650px"><div class="cap"><span>Radiografia da prova</span><b>Câm. 1</b></div><div class="in"><img src="questao-3x.png" alt="Radiografia da questão"></div></div>
+  <div class="box" style="left:64px;right:64px;top:1320px">
+    <div style="font:800 36px/1.15 Jakarta;letter-spacing:-.02em;text-align:center">Para saber <span style="color:var(--ouro)">quanto já saiu</span>, mede-se na radiografia. Qual índice é esse?</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px">
+      <div class="alt"><i>A</i>WIBERG</div><div class="alt"><i>B</i>PERKINS</div><div class="alt"><i>C</i>REIMERS</div><div class="alt" style="font-size:27px"><i>D</i>HILGENHEINER</div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= STORY 2 · LEIA AS LINHAS ======================= -->
+<section id="story-02-linhas" class="story">
+  <div class="cab" style="top:250px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">Replay 1</span><span class="x">Aprenda as linhas</span><span class="var">VAR</span></div>
+  <div class="box" style="left:64px;right:64px;top:340px"><div class="passo-n"><b>1</b>Antes da conta</div><h2 class="h" style="margin-top:12px;font-size:60px">O VAR traça <em>duas linhas.</em></h2></div>
+  <div class="tela" style="left:150px;right:150px;top:540px;background:linear-gradient(180deg,#1a1f45,#0b0f28)">
+    <div class="cap"><span>Normal (esq.)</span><b>Luxado (dir.)</b></div>
+    <div class="in" style="background:#fff"><img src="comentario-desenho.png" alt="Desenho do comentário"></div></div>
+  <div class="fonte box" style="left:0;right:0;top:1262px;text-align:center">Fonte do desenho: learningradiology.com</div>
+  <div class="box" style="left:64px;right:64px;top:1310px;display:grid;gap:20px">
+    <div class="item"><span class="ic" style="background:var(--azul)">—</span><div><h4>HILGENREINER</h4><p>a <b>horizontal</b> que passa pelas duas cartilagens trirradiadas, no fundo dos acetábulos.</p></div></div>
+    <div class="item"><span class="ic" style="background:var(--azul)">|</span><div><h4>PERKINS</h4><p>a <b>vertical</b> que desce da borda lateral do teto do acetábulo. <b>Normal:</b> a cabeça fica por dentro dela.</p></div></div>
+  </div>
+</section>
+
+<!-- ======================= STORY 3 · A CONTA ======================= -->
+<section id="story-03-conta" class="story">
+  <div class="cab" style="top:250px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">Replay 2</span><span class="x">A conta</span><span class="var">VAR</span></div>
+  <div class="box" style="left:64px;right:64px;top:340px"><div class="passo-n"><b>2</b>Quanto da bola saiu</div><h2 class="h" style="margin-top:12px;font-size:60px">Mede a bola, <em>mede o que saiu.</em></h2></div>
+  <!-- zoom: x 290-420, y 120-260 da radiografia (428×364) -->
+  <div class="tela" style="left:64px;top:550px;width:560px"><div class="cap"><span>Zoom na questão</span><b>Câm. 1</b></div>
+    <div class="in"><div class="zoom" style="height:540px;background-size:1288px auto;background-position:-753px -271px"></div></div></div>
+  <div class="box" style="left:650px;right:50px;top:590px"><div data-bola></div><div style="font:600 21px/1.3 Inter;color:var(--cinza);text-align:center;margin-top:4px">exemplo: 6 ÷ 20 × 100 = <b style="color:var(--ouro)">30%</b></div></div>
+  <div class="box" style="left:64px;right:64px;top:1200px;display:grid;gap:18px">
+    <div class="item"><span class="ic" style="background:#fff;color:var(--noite)">B</span><div><h4>A bola inteira</h4><p>a largura da cabeça do fêmur, entre os pontilhados brancos (seta preta).</p></div></div>
+    <div class="item"><span class="ic" style="background:var(--amar);color:var(--noite)">A</span><div><h4>O que passou da linha</h4><p>o pedaço da cabeça <b>por fora da PERKINS</b> (seta amarela).</p></div></div>
+  </div>
+  <div class="box" style="left:0;right:0;top:1470px;text-align:center"><div class="formula"><small>REIMERS<br>=</small>A ÷ B × 100</div>
+    <div style="font:700 26px Jakarta;margin-top:14px">Resposta: <span style="color:var(--verde)">C, REIMERS</span> · <span class="ref">Tachdjian, 6ª ed., p. 1466</span></div></div>
+</section>
+
+<!-- ======================= STORY 4 · O NÚMERO + CONVITE ======================= -->
+<section id="story-04-numero" class="story">
+  <div class="cab" style="top:250px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">Decisão</span><span class="x">O que o número diz</span><span class="var">VAR</span></div>
+  <div class="box" style="left:64px;right:64px;top:340px"><div class="passo-n"><b>3</b>A decisão do VAR</div><h2 class="h" style="margin-top:12px;font-size:60px">O que fazer <em>com o número.</em></h2></div>
+  <div class="box" style="left:90px;right:90px;top:600px">
+    <div class="regua"><i style="left:30%"></i><i style="left:60%"></i></div>
+    <div style="position:relative;height:150px;margin-top:20px">
+      <div class="rot" style="left:2%;transform:none;text-align:left"><b style="color:var(--verde)">0%</b><span>toda coberta</span></div>
+      <div class="rot" style="left:30%"><b style="color:var(--ouro)">30%</b><span>encaminhar</span></div>
+      <div class="rot" style="left:60%"><b style="color:var(--verm)">60%</b><span>vai luxar</span></div>
+      <div class="rot" style="right:0;left:auto;transform:none;text-align:right"><b style="color:var(--verm)">100%</b><span>luxada</span></div>
+    </div>
+  </div>
+  <div class="box" style="left:64px;right:64px;top:800px;display:grid;gap:16px">
+    <div class="item"><span class="ic" style="background:var(--verde);color:var(--noite)">&lt;</span><div><h4>Abaixo de 30%</h4><p>cerca de <b>75% não progridem</b> (MILLER e BAGG).</p></div></div>
+    <div class="item"><span class="ic" style="background:var(--ouro);color:var(--noite)">!</span><div><h4>A partir de 30%</h4><p>a vigilância, que começa aos <b>12 meses</b>, encaminha ao ortopedista.</p></div></div>
+    <div class="item"><span class="ic" style="background:var(--verm)">&gt;</span><div><h4>Acima de 60%</h4><p><b>todos luxam</b>.</p></div></div>
+  </div>
+  <div class="card" style="left:64px;right:64px;top:1120px;font:500 25px/1.4 Inter;color:var(--cinza)"><b style="color:var(--creme)">Não confunda:</b> PERKINS e HILGENREINER são as <b style="color:var(--creme)">linhas</b>; WIBERG é um <b style="color:var(--creme)">ângulo</b>, em graus. REIMERS é a <b style="color:var(--ouro)">porcentagem</b>.</div>
+  <div class="box" style="left:0;right:0;top:1310px;text-align:center"><div class="cta">Treine grátis<span data-seta style="display:inline-flex;width:38px"></span></div></div>
+  <div class="box" style="left:0;right:0;top:1450px;text-align:center"><span class="site" style="font-size:40px">ortoquestoes.com.br</span><div class="ref" style="margin-top:8px">Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1465 e 1466</div></div>
+</section>
+
+<!-- ======================= FEED 1 · CAPA ======================= -->
+<section id="feed-01-capa" class="feed">
+  <div class="cab" style="top:44px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">TEOT 2022</span><span class="x">Paralisia cerebral</span><span class="var">VAR</span></div>
+  <div class="box" style="left:64px;right:64px;top:140px"><h1 class="h" style="font-size:96px">A bola <em>saiu?</em></h1>
+    <p class="txt" style="margin-top:10px">O quadril da criança com paralisia cerebral vai saindo do lugar. Aprenda a medir isso em <b>3 passos</b>.</p></div>
+  <div class="tela" style="left:180px;right:180px;top:400px"><div class="cap"><span>Radiografia da prova</span><b>Câm. 1</b></div><div class="in"><img src="questao-3x.png" alt="Radiografia da questão"></div></div>
+  <div class="box" style="left:64px;right:64px;top:1080px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+    <div class="card" style="position:static;padding:16px 18px"><div class="passo-n" style="font-size:16px"><b style="width:34px;height:34px;font-size:19px">1</b>Linhas</div><div style="font:600 22px/1.3 Inter;color:var(--cinza);margin-top:8px">as duas azuis</div></div>
+    <div class="card" style="position:static;padding:16px 18px"><div class="passo-n" style="font-size:16px"><b style="width:34px;height:34px;font-size:19px">2</b>Conta</div><div style="font:600 22px/1.3 Inter;color:var(--cinza);margin-top:8px">A e B</div></div>
+    <div class="card" style="position:static;padding:16px 18px"><div class="passo-n" style="font-size:16px"><b style="width:34px;height:34px;font-size:19px">3</b>Decisão</div><div style="font:600 22px/1.3 Inter;color:var(--cinza);margin-top:8px">o que o número diz</div></div>
+  </div>
+  <div class="box" style="left:64px;right:64px;bottom:40px;display:flex;justify-content:space-between;align-items:center"><span class="site">ortoquestoes.com.br</span><span style="font:700 26px Jakarta">Arraste →</span></div>
+</section>
+
+<!-- ======================= FEED 2 · A QUESTÃO ======================= -->
+<section id="feed-02-questao" class="feed">
+  <div class="cab" style="top:44px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">TEOT 2022</span><span class="x">Como caiu</span><span class="var">VAR</span></div>
+  <h2 class="h box" style="left:64px;right:64px;top:140px;font-size:62px">O índice demonstrado<br>na figura é o de</h2>
+  <div class="tela" style="left:120px;right:120px;top:320px"><div class="in"><img src="questao-3x.png" alt="Radiografia da questão"></div></div>
+  <div class="box" style="left:64px;right:64px;top:1060px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+    <div class="alt"><i>A</i>WIBERG.</div><div class="alt"><i>B</i>PERKINS.</div><div class="alt"><i>C</i>REIMERS.</div><div class="alt" style="font-size:27px"><i>D</i>HILGENHEINER.</div>
+  </div>
+  <div class="box" style="left:64px;right:64px;bottom:40px;display:flex;justify-content:space-between;align-items:center"><span class="site">ortoquestoes.com.br</span><span style="font:700 26px Jakarta">Comente e arraste →</span></div>
+</section>
+
+<!-- ======================= FEED 3 · POR QUE O QUADRIL SAI ======================= -->
+<section id="feed-03-porque" class="feed">
+  <div class="cab" style="top:44px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">O lance</span><span class="x">Por que o quadril sai</span><span class="var">VAR</span></div>
+  <h2 class="h box" style="left:64px;right:64px;top:140px">Por que a bola <em>sai do gol?</em></h2>
+  <p class="txt box" style="left:64px;right:64px;top:290px">Não é frouxidão, como na displasia. Os <b>adutores e flexores espásticos</b> vencem abdutores e extensores e arrancam a cabeça do acetábulo, para cima e para trás. O acetábulo fica raso e a cabeça se achata.</p>
+  <div class="card" style="left:64px;right:64px;top:560px;padding:24px 30px">
+    <div style="font:800 28px Jakarta;letter-spacing:-.01em">Quanto mais grave a criança, mais o quadril sai</div>
+    <div style="font:500 21px Inter;color:var(--cinza);margin-top:4px">Chance de luxar por nível de função motora (GMFCS)</div>
+    <div class="barras" style="height:360px;margin-top:20px">
+      <div class="b"><span>0%</span><i style="height:6px"></i><small>I</small></div>
+      <div class="b"><span>15%</span><i style="height:45px"></i><small>II</small></div>
+      <div class="b"><span>41%</span><i style="height:123px"></i><small>III</small></div>
+      <div class="b"><span>69%</span><i style="height:207px"></i><small>IV</small></div>
+      <div class="b"><span>90%</span><i style="height:270px"></i><small>V</small></div>
+    </div>
+    <div style="display:flex;justify-content:space-between;font:600 19px Inter;color:var(--cinza);margin-top:10px"><span>I: anda sem apoio</span><span>V: sem controle de tronco</span></div>
+  </div>
+  <p class="txt box" style="left:64px;right:64px;top:1110px;font-size:27px">No começo não dói. Por isso se <span class="y">mede na radiografia</span>, de tempos em tempos.</p>
+  <div class="box" style="left:64px;right:64px;bottom:40px;display:flex;justify-content:space-between;align-items:center"><span class="ref">Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1463 a 1465 (SOO)</span><span style="font:700 26px Jakarta">→</span></div>
+</section>
+
+<!-- ======================= FEED 4 · AS LINHAS ======================= -->
+<section id="feed-04-linhas" class="feed">
+  <div class="cab" style="top:44px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">Passo 1</span><span class="x">As duas linhas</span><span class="var">VAR</span></div>
+  <h2 class="h box" style="left:64px;right:64px;top:140px">Primeiro, <em>duas linhas.</em></h2>
+  <div class="tela" style="left:64px;top:270px;width:520px"><div class="cap"><span>Normal</span><b>Luxado</b></div><div class="in" style="background:#fff"><img src="comentario-desenho.png" alt="Desenho do comentário"></div></div>
+  <div class="fonte box" style="left:64px;top:770px">Fonte: learningradiology.com</div>
+  <div class="box" style="left:620px;right:56px;top:280px;display:grid;gap:22px">
+    <div class="item" style="grid-template-columns:50px 1fr"><span class="ic" style="width:50px;height:50px;background:var(--azul)">—</span><div><h4 style="font-size:28px">HILGENREINER</h4><p style="font-size:22px">horizontal, pelas duas <b>cartilagens trirradiadas</b>, no fundo dos acetábulos</p></div></div>
+    <div class="item" style="grid-template-columns:50px 1fr"><span class="ic" style="width:50px;height:50px;background:var(--azul)">|</span><div><h4 style="font-size:28px">PERKINS</h4><p style="font-size:22px">vertical, desce da <b>borda lateral do teto</b> do acetábulo</p></div></div>
+    <div class="item" style="grid-template-columns:50px 1fr"><span class="ic" style="width:50px;height:50px;background:var(--ouro);color:var(--noite)">S</span><div><h4 style="font-size:28px">SHENTON</h4><p style="font-size:22px">o arco do colo ao púbis; <b>quebrar é o primeiro sinal</b> de que saiu</p></div></div>
+  </div>
+  <div class="card" style="left:64px;right:64px;top:830px;padding:22px 26px">
+    <div style="font:800 30px Jakarta;letter-spacing:-.02em">Como ler o desenho</div>
+    <p class="txt" style="font-size:25px;margin-top:8px"><b>Normal (esquerda):</b> a cabeça fica abaixo da HILGENREINER e por dentro da PERKINS; SHENTON contínua. <b>Luxado (direita):</b> a cabeça sobe e passa para fora da PERKINS; SHENTON quebra.</p>
+  </div>
+  <div class="box" style="left:64px;right:64px;bottom:40px;display:flex;justify-content:space-between;align-items:center"><span class="ref">Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1465 e 1466</span><span style="font:700 26px Jakarta">→</span></div>
+</section>
+
+<!-- ======================= FEED 5 · A CONTA ======================= -->
+<section id="feed-05-conta" class="feed">
+  <div class="cab" style="top:44px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">Passo 2</span><span class="x">A conta</span><span class="var">VAR</span></div>
+  <h2 class="h box" style="left:64px;right:64px;top:140px">Depois, <em>quanto da bola saiu.</em></h2>
+  <div class="tela" style="left:64px;top:280px;width:470px"><div class="cap"><span>Zoom na questão</span><b>Câm. 1</b></div>
+    <div class="in"><div class="zoom" style="height:450px;background-size:1124px auto;background-position:-657px -236px"></div></div></div>
+  <div class="box" style="left:570px;right:56px;top:290px"><div data-bola></div><div style="font:600 21px/1.3 Inter;color:var(--cinza);text-align:center">exemplo: 6 ÷ 20 × 100 = <b style="color:var(--ouro)">30%</b></div></div>
+  <div class="box" style="left:64px;right:64px;top:830px;display:grid;grid-template-columns:1fr 1fr;gap:20px">
+    <div class="item" style="grid-template-columns:50px 1fr"><span class="ic" style="width:50px;height:50px;background:#fff;color:var(--noite)">B</span><div><h4 style="font-size:28px">A bola inteira</h4><p style="font-size:22px">largura da cabeça, entre os pontilhados (seta preta)</p></div></div>
+    <div class="item" style="grid-template-columns:50px 1fr"><span class="ic" style="width:50px;height:50px;background:var(--amar);color:var(--noite)">A</span><div><h4 style="font-size:28px">O que saiu</h4><p style="font-size:22px">o pedaço <b>por fora da PERKINS</b> (seta amarela)</p></div></div>
+  </div>
+  <div class="box" style="left:64px;right:64px;top:1030px;display:flex;align-items:center;gap:24px">
+    <div class="formula" style="font-size:44px;white-space:nowrap;flex:none"><small>REIMERS<br>=</small>A ÷ B × 100</div>
+    <div style="font:600 24px/1.35 Inter;color:var(--cinza)">a <b style="color:var(--creme)">% da cabeça</b> que já está fora. <b style="color:var(--verde)">Resposta: C.</b></div>
+  </div>
+  <div class="box" style="left:64px;right:64px;bottom:40px;display:flex;justify-content:space-between;align-items:center"><span class="ref">Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 1466</span><span style="font:700 26px Jakarta">→</span></div>
+</section>
+
+<!-- ======================= FEED 6 · DOS DOIS LADOS + PEGADINHAS ======================= -->
+<section id="feed-06-dois-lados" class="feed">
+  <div class="cab" style="top:44px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">Câmera 2</span><span class="x">Treine o olho</span><span class="var">VAR</span></div>
+  <h2 class="h box" style="left:64px;right:64px;top:140px">Treine o olho: <em>outra bacia.</em></h2>
+  <div class="tela" style="left:130px;right:130px;top:280px"><div class="cap"><span>Mesma conta, nos dois lados</span><b>Câm. 2</b></div><div class="in"><img src="comentario-rx-2x.png" alt="Radiografia do comentário"></div></div>
+  <div class="fonte box" style="left:130px;top:905px">Fonte da imagem: PMC12690503</div>
+  <p class="txt box" style="left:64px;right:64px;top:950px;font-size:25px">Em cada lado, <b>B</b> é a cabeça inteira e <b>A</b>, o que passou da PERKINS. Mede-se <span class="y">cada quadril separado</span>.</p>
+  <div class="card" style="left:64px;right:64px;top:1105px;padding:16px 22px;font:500 23px/1.4 Inter;color:var(--cinza)"><b style="color:var(--verm)">As erradas:</b> PERKINS e HILGENREINER são as <b style="color:var(--creme)">linhas</b>, não a medida. WIBERG é o <b style="color:var(--creme)">ângulo centro-borda</b>, em graus.</div>
+  <div class="box" style="left:64px;right:64px;bottom:40px;display:flex;justify-content:space-between;align-items:center"><span class="site">ortoquestoes.com.br</span><span style="font:700 26px Jakarta">→</span></div>
+</section>
+
+<!-- ======================= FEED 7 · O NÚMERO + CONVITE ======================= -->
+<section id="feed-07-decisao" class="feed">
+  <div class="cab" style="top:44px"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="t">Passo 3</span><span class="x">A decisão</span><span class="var">VAR</span></div>
+  <h2 class="h box" style="left:64px;right:64px;top:140px">O que o número <em>quer dizer.</em></h2>
+  <div class="box" style="left:90px;right:90px;top:300px">
+    <div class="regua"><i style="left:30%"></i><i style="left:60%"></i></div>
+    <div style="position:relative;height:96px;margin-top:16px">
+      <div class="rot" style="left:0;transform:none;text-align:left"><b style="color:var(--verde)">0%</b><span>coberta</span></div>
+      <div class="rot" style="left:30%"><b style="color:var(--ouro)">30%</b><span>encaminhar</span></div>
+      <div class="rot" style="left:60%"><b style="color:var(--verm)">60%</b><span>vai luxar</span></div>
+      <div class="rot" style="right:0;left:auto;transform:none;text-align:right"><b style="color:var(--verm)">100%</b><span>luxada</span></div>
+    </div>
+  </div>
+  <div class="box" style="left:64px;right:64px;top:480px;display:grid;grid-template-columns:1fr 1fr;gap:18px 30px">
+    <div class="item" style="grid-template-columns:50px 1fr"><span class="ic" style="width:50px;height:50px;background:var(--verde);color:var(--noite)">&lt;</span><div><h4 style="font-size:27px">Abaixo de 30%</h4><p style="font-size:22px">cerca de 75% não progridem (MILLER e BAGG)</p></div></div>
+    <div class="item" style="grid-template-columns:50px 1fr"><span class="ic" style="width:50px;height:50px;background:var(--verm)">&gt;</span><div><h4 style="font-size:27px">Acima de 60%</h4><p style="font-size:22px">todos luxam</p></div></div>
+    <div class="item" style="grid-template-columns:50px 1fr"><span class="ic" style="width:50px;height:50px;background:var(--ouro);color:var(--noite)">!</span><div><h4 style="font-size:27px">Vigilância</h4><p style="font-size:22px">começa aos 12 meses; encaminha com 30%</p></div></div>
+    <div class="item" style="grid-template-columns:50px 1fr"><span class="ic" style="width:50px;height:50px;background:var(--roxo)">↑</span><div><h4 style="font-size:27px">+12% ao ano</h4><p style="font-size:22px">nos que não andam (Campbell)</p></div></div>
+  </div>
+  <div class="ref box" style="left:64px;top:770px">Tachdjian, 6ª ed., p. 1466 · Campbell's Operative Orthopaedics, 15ª ed., p. 1240 e 1241</div>
+  <div class="card" style="left:64px;right:64px;top:830px;padding:26px 30px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center">
+    <div><div style="font:800 34px/1.1 Jakarta;letter-spacing:-.02em">Entendeu o lance?</div><div style="font:500 24px/1.4 Inter;color:var(--cinza);margin-top:8px">Todas as questões do TEOT e do TARO estão comentadas assim: cada alternativa explicada, com livro e página.</div></div>
+    <div class="cta" style="font-size:32px;padding:18px 26px">Treine grátis</div>
+  </div>
+  <div class="box" style="left:64px;right:64px;top:1110px;font:600 21px Inter;color:var(--cinza)">Também: Cirurgia da Mão · R4 Coluna · ENARE R4</div>
+  <div class="box" style="left:64px;right:64px;bottom:40px"><span class="site">ortoquestoes.com.br</span></div>
+</section>
+
+<script>
+const bola = document.getElementById('bola').innerHTML, seta = document.getElementById('seta').innerHTML;
+document.querySelectorAll('[data-bola]').forEach(e => e.innerHTML = bola);
+document.querySelectorAll('[data-seta]').forEach(e => e.innerHTML = seta);
+</script>
+</body></html>
