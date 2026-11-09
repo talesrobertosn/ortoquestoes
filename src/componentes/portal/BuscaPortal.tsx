@@ -10,7 +10,7 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { navegar } from '../../util/rotas'
 import { Icone } from '../Icone'
 import { IconePixel } from './IconePixel'
-import type { IconeMenu, Pagina } from './rotas'
+import { ehExterno, type IconeMenu, type Pagina } from './rotas'
 
 /**
  * A busca do Portal (31/10/2026): uma caixa só, a primeira coisa do menu. Acha, em grupos:
@@ -133,7 +133,8 @@ export function BuscaPortal({ paginas, aoIr, focar, aoDigitar }: { paginas: Pagi
       definirRecentes(ler<Recente[]>(CHAVE_RECENTES, []))
     }
     aoIr()
-    navegar(r.destino)
+    if (ehExterno(r.destino)) window.location.assign(recurso(r.destino))
+    else navegar(r.destino)
   }
   const teclas = (e: KeyboardEvent<HTMLInputElement>) => {
     if (e.key === 'Escape' && q) { e.preventDefault(); e.stopPropagation(); definirQ(''); return }
