@@ -23,3 +23,7 @@ O temporizador troca na virada da faixa. Ao voltar à aba ou janela, recalcula o
 `fixtures/e2e_abrigo_inicio.mjs`: manhã/tarde/noite, imagem carregada, um mascote por tipo, presença dos bichos, pausa na fogueira e ausência de transbordamento de 320 a 1920 px. Temas claro/escuro e visitantes/contas, com API fictícia.
 
 `fixtures/e2e_sorteio_inicio.mjs`: virada automática da faixa sem recarregar, reload estável e correção ao recuperar foco, usando relógio simulado.
+
+## Publicação
+
+Na publicação de 09/11, duas tentativas do workflow 42707122409 passaram em testes/build e excederam 600000 ms em `syncing_files` no GitHub Pages. O limite da ação de publicação foi ampliado para 1200000 ms (20 minutos), sem mudar arte ou regras do rodízio. Mantida a serialização de deploy e a proteção contra publicar revisão superada.

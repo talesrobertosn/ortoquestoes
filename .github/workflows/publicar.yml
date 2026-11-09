@@ -131,3 +131,7 @@ jobs:
       - id: publicacao
         if: steps.atual.outputs.publicar == 'true'
         uses: actions/deploy-pages@v4
+        with:
+          # O Pages excedeu 10 min em syncing_files em duas tentativas em 09/11/2026.
+          # Dar tempo à sincronização sem interromper o serviço nem republicar código diferente.
+          timeout: 1200000
