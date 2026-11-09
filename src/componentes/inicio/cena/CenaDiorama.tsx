@@ -8,7 +8,7 @@ import { FALAS_PAUSA_APAGADA, FALAS_PAUSA_FOGUEIRA } from '../../mascote/falas'
 import { EVENTO_AMOSTRA } from '../AmostraRespondivel'
 import { urlCss } from '../../../config'
 import { luzNoBicho, mapasDeLuz, type Luz } from '../../mascote/luz'
-import { cenarioDaHora, type Cenario } from './cenarios'
+import { cenarioDaHora, faixaDoCenario, type Cenario } from './cenarios'
 import { ROTEIROS, tempoDeLer, type Acao, type Bicho, type Roteiro } from './roteiros'
 import type { IdComportamento } from '../../mascote/comportamentos'
 import type { Periodo } from '../../../estado/aparencia'
@@ -331,15 +331,40 @@ function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObjec
     onClick={() => definirFala(null)} style={{ left: `${fala.x}%`, top: `${fala.y}%` }}>{fala.texto}</span>
 }
 
-export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }: {
+type PropsCena = {
   linhaFogo: number; periodo: Periodo
-  /** Meta do dia cumprida (31/10/2026): o esqueleto senta para se aquecer na fogueira e o gato ronrona. */
   descanso?: boolean
-  /** Muda de valor para disparar a comemoração curta da meta cumprida (esqueleto pula e o gato comemora). */
   festa?: number
-}) {
-  // O cenário desta hora (cenarios.ts): decide uma vez ao abrir a página, para nada trocar de lugar no meio da visita.
-  const [cenario] = useState(() => cenarioDaHora())
+}
+
+/** A escolha muda só na virada da faixa; o palco novo reinicia bichos e balões sem coordenadas antigas. */
+export function CenaDiorama(props: PropsCena) {
+  const [cenario, definirCenario] = useState(() => cenarioDaHora())
+  useEffect(() => {
+    let timer = 0
+    const atualizar = () => {
+      window.clearTimeout(timer)
+      const agora = new Date()
+      if (!document.hidden) definirCenario(cenarioDaHora(agora))
+      timer = window.setTimeout(atualizar, Math.max(100, faixaDoCenario(agora).proxima - agora.getTime()))
+    }
+    atualizar()
+    const voltar = () => { if (!document.hidden) atualizar() }
+    window.addEventListener('focus', voltar)
+    document.addEventListener('visibilitychange', voltar)
+    return () => {
+      window.clearTimeout(timer)
+      window.removeEventListener('focus', voltar)
+      document.removeEventListener('visibilitychange', voltar)
+    }
+  }, [])
+  return <CenaNoPalco key={cenario.id} {...props} cenario={cenario} />
+}
+
+function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario }: PropsCena & { cenario: Cenario }) {
+  const [fogoX, fogoY] = cenario.fogo ?? [240, 146]
+  const mascote = cenario.mascote ?? { x: 262, y: 96, w: 46, h: 66.7 }
+  const lugarFogo = (x: number, y: number, w: number, h: number) => lugar(x + fogoX - 240, y + fogoY - 146, w, h)
   const [reacaoAmostra, definirReacaoAmostra] = useState<{ id: 'comemora2' | 'quadro'; n: number } | null>(null)
   // A pausa na fogueira (01/11/2026): um toque no fogo e o esqueleto senta para se aquecer, a luz esquenta e o gato
   // ronrona. É só um respiro: não conta dia, não mexe na sequência e acaba sozinha (ou com outro toque no fogo).
@@ -352,7 +377,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   const PONTOS_GATO = cenario.gato
   const repouso: IdLinhaGato = descanso || (pausa && fogoAceso) ? 'ronronando' : 'dormindo'
   const poseDoPonto = (i: number): IdLinhaGato => (PONTOS_GATO[i].pose === 'repouso' ? repouso : PONTOS_GATO[i].pose)
-  const [gato, definirGato] = useState<IdLinhaGato>(repouso)
+  const [gato, definirGato] = useState<IdLinhaGato>(() => cenario.posePadrao ? poseDoPonto(0) : repouso)
   const [ponto, definirPonto] = useState(0)
   const [andando, definirAndando] = useState<'direita' | 'esquerda' | null>(null)
   const [semLugar, definirSemLugar] = useState(false)
@@ -549,12 +574,12 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   const imagem = (larg: number) => recurso(`pixel/inicio/${cenario.arquivo}-${periodo}${larg === 960 ? '-960' : ''}.webp`)
   // As luzes da cena para os bichos (componentes/mascote/luz.ts): a fogueira, mais forte na pausa, e o céu da hora.
   const luzes: Luz[] = [
-    { x: 240, y: 140, forca: fogoAceso ? (pausa ? 1.15 : 0.95) : 0.06, alcance: 175, tipo: linhaFogo === 5 ? 'azul' : linhaFogo === 6 ? 'arcana' : 'fogo' },
+    { x: fogoX, y: fogoY - 6, forca: fogoAceso ? (pausa ? 1.15 : 0.95) : 0.06, alcance: 175, tipo: linhaFogo === 5 ? 'azul' : linhaFogo === 6 ? 'arcana' : 'fogo' },
     periodo === 'noite' ? { x: 400, y: 0, forca: 0.32, alcance: 620, tipo: 'lua' } : { x: 470, y: periodo === 'tarde' ? 70 : 10, forca: periodo === 'tarde' ? 0.42 : 0.36, alcance: 620, tipo: 'sol' },
   ]
-  const luzMascote = luzNoBicho(285, 130, luzes, periodo)
+  const luzMascote = luzNoBicho(mascote.x + mascote.w / 2, mascote.y + mascote.h / 2, luzes, periodo)
   const classeMascote = `hd-mascote ${luzMascote.className} bicho-sombra`
-  const estiloMascote = { ...lugar(262, 96, 46, 66.7), ...luzMascote.style }
+  const estiloMascote = { ...lugar(mascote.x, mascote.y, mascote.w, mascote.h), ...luzMascote.style }
   const luzGato = luzNoBicho(PONTOS_GATO[ponto].x + 18, PONTOS_GATO[ponto].y + 9, luzes, periodo)
 
   // O diretor de cena: a atividade que ele pede ao esqueleto, a estrela cadente e o gato dourado (uma visita em 150).
@@ -569,7 +594,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
   const levarGato = (ate: 'fogo' | 'esqueleto' | 'longe') => {
     const { gato: g, ponto: atual } = agora.current
     if (reduzMovimento() || g === 'tala' || g === 'andando' || g === 'acordando') return
-    const alvo = ate === 'fogo' ? 240 : 285
+    const alvo = ate === 'fogo' ? fogoX : mascote.x + mascote.w / 2
     const opcoes = pontosLivres().filter((i) => i !== atual)
     if (!opcoes.length) return
     const perto = (i: number) => Math.abs(PONTOS_GATO[i].x + 18 - alvo)
@@ -598,25 +623,25 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
       <div ref={palco} className={`hd-palco hd-palco--${periodo} hd-palco--${cenario.id}${pausa && fogoAceso ? ' hd-palco--pausa' : ''}`}>
         <img className="hd-palco__fundo" src={imagem(1440)} srcSet={`${imagem(960)} 960w, ${imagem(1440)} 1440w`} sizes="(max-width: 60rem) 170vw, 100vw"
           width={1440} height={600} alt="" decoding="async" fetchPriority="high" />
-        <span className="hd-luz-fogo" aria-hidden="true" style={{ left: `${(240 / 480) * 100}%`, top: `${(140 / 200) * 100}%`, '--forca': linhaFogo === 0 ? 0.2 : 1 } as CSSProperties} />
+        <span className="hd-luz-fogo" aria-hidden="true" style={{ left: `${(fogoX / 480) * 100}%`, top: `${((fogoY - 6) / 200) * 100}%`, '--forca': linhaFogo === 0 ? 0.2 : 1 } as CSSProperties} />
         {/* A pausa vira um quadro de cinema: a borda do acampamento escurece e um calor âmbar respira em volta do fogo. */}
         <span className="hd-vinheta" aria-hidden="true" />
-        <span className="hd-calor" aria-hidden="true" style={lugar(130, 50, 220, 150)} />
-        <span className={`hd-fogo hd-fogo--${linhaFogo}`} aria-hidden="true" style={{ ...lugar(220, 104, 40, 48), '--linha': linhaFogo } as CSSProperties} />
+        <span className="hd-calor" aria-hidden="true" style={lugarFogo(130, 50, 220, 150)} />
+        <span className={`hd-fogo hd-fogo--${linhaFogo}`} aria-hidden="true" style={{ ...lugarFogo(220, 104, 40, 48), '--linha': linhaFogo } as CSSProperties} />
         {/* Ray tracing na espada (Tales, 01/11/2026): os raios de luz que sobem do fogo e a aura em volta da lâmina, atrás
             dela, na cor da chama do momento; o cintilar na guarda vem depois, por cima (InicioHd.css, .hd-espada__*). */}
-        {comEspada && fogoAceso && <span className="hd-espada__raios" aria-hidden="true" style={{ ...lugar(206, 58, 68, 92), '--luz-espada': luzEspada } as CSSProperties} />}
-        {comEspada && fogoAceso && <span className="hd-espada__aura" aria-hidden="true" style={{ ...lugar(226, 100, 28, 54), '--luz-espada': luzEspada } as CSSProperties} />}
+        {comEspada && fogoAceso && <span className="hd-espada__raios" aria-hidden="true" style={{ ...lugarFogo(206, 58, 68, 92), '--luz-espada': luzEspada } as CSSProperties} />}
+        {comEspada && fogoAceso && <span className="hd-espada__aura" aria-hidden="true" style={{ ...lugarFogo(226, 100, 28, 54), '--luz-espada': luzEspada } as CSSProperties} />}
         {/* A marca do site: a espada fincada na fogueira (scripts/sprites/espada_fogueira.py), em todos os cenários. */}
-        {comEspada && <span className={`hd-espada${linhaFogo === 0 ? ' hd-espada--apagada' : ''}`} aria-hidden="true" style={{ ...lugar(234, 109, 12, 40), '--sprite-espada': urlCss('pixel/inicio/espada.png'), '--luz-espada': luzEspada } as CSSProperties} />}
-        {comEspada && fogoAceso && <span className="hd-espada__brilho" aria-hidden="true" style={{ ...lugar(235, 111, 10, 10), '--luz-espada': luzEspada } as CSSProperties} />}
+        {comEspada && <span className={`hd-espada${linhaFogo === 0 ? ' hd-espada--apagada' : ''}`} aria-hidden="true" style={{ ...lugarFogo(234, 109, 12, 40), '--sprite-espada': urlCss('pixel/inicio/espada.png'), '--luz-espada': luzEspada } as CSSProperties} />}
+        {comEspada && fogoAceso && <span className="hd-espada__brilho" aria-hidden="true" style={{ ...lugarFogo(235, 111, 10, 10), '--luz-espada': luzEspada } as CSSProperties} />}
         {/* Fogo e espada juntos (01/11/2026, "tipo Dark Souls"): uma segunda chama, só a parte de baixo, passa na frente
             da lâmina; a luz da fogueira e a brasa ficam recortadas no desenho da espada (InicioHd.css, .hd-espada). */}
-        {comEspada && linhaFogo > 0 && <span className={`hd-fogo hd-fogo--${linhaFogo} hd-fogo--frente`} aria-hidden="true" style={{ ...lugar(222, 106, 36, 44), '--linha': linhaFogo } as CSSProperties} />}
-        {linhaFogo > 0 && <span className="hd-brasas" aria-hidden="true" style={comEspada ? lugar(233, 90, 14, 36) : lugar(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
-        {pausa > 0 && fogoAceso && <span className="hd-brasas hd-brasas--pausa" aria-hidden="true" style={lugar(222, 60, 36, 70)}>{fagulhas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
+        {comEspada && linhaFogo > 0 && <span className={`hd-fogo hd-fogo--${linhaFogo} hd-fogo--frente`} aria-hidden="true" style={{ ...lugarFogo(222, 106, 36, 44), '--linha': linhaFogo } as CSSProperties} />}
+        {linhaFogo > 0 && <span className="hd-brasas" aria-hidden="true" style={comEspada ? lugarFogo(233, 90, 14, 36) : lugarFogo(232, 96, 16, 30)}>{brasas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
+        {pausa > 0 && fogoAceso && <span className="hd-brasas hd-brasas--pausa" aria-hidden="true" style={lugarFogo(222, 60, 36, 70)}>{fagulhas.map((b, i) => <i key={i} style={{ '--dx': `${b.dx * 3}px`, '--t': `${b.t}s`, '--d': `${b.d}s` } as CSSProperties} />)}</span>}
         {/* A fogueira se toca: pausa de jornada opcional (clique, toque ou teclado). Sem botão desenhado: é o próprio fogo. */}
-        <button type="button" className="hd-fogueira" style={lugar(218, 100, 44, 54)} aria-pressed={pausa > 0}
+        <button type="button" className="hd-fogueira" style={lugarFogo(218, 100, 44, 54)} aria-pressed={pausa > 0}
           aria-label={fogoAceso ? 'Descansar na fogueira' : 'Sentar na fogueira apagada'} onClick={() => { if (!pausa) avisarFala('esqueleto'); definirPausa((p) => (p ? 0 : Date.now())) }} />
         {/* O mascote, em pé ao lado da fogueira: um comportamento diferente a cada visita (componentes/mascote). */}
         {pausa
@@ -627,7 +652,7 @@ export function CenaDiorama({ linhaFogo, periodo, descanso = false, festa = 0 }:
           ? <Mascote key="descanso" className={classeMascote} decorativo falar={!emCena} comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={estiloMascote} />
           : reacaoAmostra?.id === 'quadro'
             ? <Mascote key={`quadro-${reacaoAmostra.n}`} className={classeMascote} decorativo falar={!emCena} comportamento="quadro" style={estiloMascote} />
-            : <Mascote key="dia" className={classeMascote} decorativo falar={!emCena} reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
+            : <Mascote key="dia" comportamento={cenario.posePadrao} className={classeMascote} decorativo falar={!emCena} reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
         {pausa > 0 && <span className="so-leitor" role="status">{fogoAceso ? 'Pausa na fogueira: o esqueleto senta para se aquecer e o gato ronrona.' : 'A fogueira está apagada; o esqueleto senta um instante ao lado dela.'}</span>}
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" aria-label="Falar com o gato" tabIndex={semLugar ? -1 : undefined} aria-hidden={semLugar || undefined}

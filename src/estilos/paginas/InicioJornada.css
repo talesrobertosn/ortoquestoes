@@ -617,3 +617,12 @@
    e links dela recebem o toque). */
 .jn-saudacao { pointer-events: none; }
 .jn-saudacao :is(a, button, input, select, summary, label) { pointer-events: auto; }
+
+/* Abrigo aprovado: o recorte acompanha a fogueira e os três personagens, sem cortar o pedestal da coruja. */
+@media (max-width: 60rem) {
+  .jn-heroi .hd-palco.hd-palco--abrigo { transform: translate(-62.5%, 0); }
+}
+@media (min-width: 75.01rem) {
+  .jn-heroi--vitrine .hd-palco.hd-palco--abrigo { left: calc(100cqw - 21.5rem - 2.75rem - max(20.4cqw, 48.96cqh)); }
+  .jn-heroi--vitrine:has(.ip-amostra--respondida) .hd-palco.hd-palco--abrigo { left: calc(100cqw - 21.5rem - 2.75rem - max(20.4cqw, 48.96cqh)); }
+}
