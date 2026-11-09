@@ -1,32 +1,102 @@
-.ind { max-width: 46rem; padding-block: 1.25rem 2rem; }
-.ind-heroi { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 1.1rem 1.5rem; align-items: center; padding: clamp(1.2rem, 3vw, 1.75rem); border-radius: var(--raio-cartao); border: 2px solid color-mix(in srgb, var(--ouro) 60%, transparent); background: radial-gradient(120% 140% at 0% 0%, var(--ouro-veu), transparent 60%), var(--superficie); box-shadow: 0 10px 28px color-mix(in srgb, var(--ouro) 14%, transparent); }
-.ind-heroi__arte { display: flex; align-items: flex-end; gap: 0.4rem; }
-.ind-heroi__arte img { image-rendering: pixelated; }
-.ind-heroi__selo { margin: 0; font-family: var(--fonte-pixel); font-weight: 700; color: var(--ouro-texto); font-size: 0.95rem; letter-spacing: 0.02em; }
-.ind-heroi h1 { margin: 0.25rem 0 0.4rem; font-size: clamp(1.45rem, 4vw, 1.9rem); line-height: 1.15; }
-.ind-heroi h1 em { font-style: normal; color: var(--ouro-texto); }
-.ind-heroi p:last-child { margin: 0; color: var(--texto-2); line-height: 1.5; }
-.ind-cartao { padding: clamp(1.1rem, 3vw, 1.5rem); border-radius: var(--raio-cartao); border: var(--borda); background: var(--superficie); }
-.ind-cartao h2 { margin: 0; font-size: 1.15rem; }
+/* Indique e ganhe (refeita em 09/11/2026 no desenho atual): o topo no painel escuro da Sala dos bichos, com os três
+   bichos novos na lareira (cada toque, uma fala); o link, o placar, os amigos e as regras em folhas do atlas. Títulos e
+   números na fonte da marca (saiu a fonte pixel antiga). */
+.ind { display: grid; gap: var(--e-5); max-width: 62rem; margin-inline: auto; padding-block: var(--e-4) var(--e-7); }
+
+/* ---------- Topo ---------- */
+.ind-topo { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(16rem, 1fr); align-items: stretch; overflow: hidden;
+  border-radius: var(--mundo-raio); background: var(--mundo-painel); color: var(--mundo-tinta);
+  box-shadow: inset 0 0 0 1px var(--mundo-filete), 0 18px 40px -24px rgba(0, 0, 0, 0.55); }
+.ind-topo__texto { display: grid; align-content: center; gap: var(--e-2); padding: clamp(1.4rem, 3.6vw, 2.25rem); }
+.ind-topo__selo { display: inline-flex; align-items: center; gap: 0.4rem; margin: 0; color: var(--mundo-ouro); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.ind-topo h1 { margin: 0; font-family: var(--fonte-marca); font-size: clamp(1.7rem, 1.1rem + 2.2vw, 2.5rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.03em; text-wrap: balance; }
+.ind-topo h1 em { font-style: normal; color: var(--mundo-ouro); }
+.ind-topo__texto p:last-child { margin: 0; max-width: 52ch; color: var(--mundo-tinta-2); line-height: 1.5; }
+
+/* O palco: chão de tábuas e a luz da lareira, como nas fichas da Sala dos bichos. */
+.ind-palco { position: relative; isolation: isolate; display: flex; align-items: flex-end; justify-content: center; gap: 0.5rem; min-height: 15rem; padding: 0 1rem 1.4rem; overflow: hidden;
+  background: radial-gradient(70% 80% at 30% 75%, rgba(255, 150, 60, 0.3), transparent 70%), linear-gradient(180deg, #121a17 0%, #18211d 68%, #2a1d12 68%, #1b130c 100%); }
+.ind-palco::after { content: ""; position: absolute; inset: auto 0 0; height: 32%; pointer-events: none; z-index: -1; background: repeating-linear-gradient(90deg, transparent 0 46px, rgba(0, 0, 0, 0.35) 46px 48px); }
+.ind-palco__lareira { position: absolute; left: 18%; bottom: 0.8rem; width: 7rem; height: 7rem; border-radius: 50%; z-index: -1; pointer-events: none;
+  background: radial-gradient(closest-side, rgba(255, 200, 120, 0.65), rgba(255, 130, 50, 0.22) 55%, transparent); mix-blend-mode: screen; animation: ind-lareira 2.6s steps(4, end) infinite; }
+@keyframes ind-lareira { 0%, 100% { opacity: 0.8; transform: scale(1); } 40% { opacity: 1; transform: scale(1.06); } 70% { opacity: 0.86; transform: scale(0.97); } }
+.ind-bicho { position: relative; display: grid; place-items: end center; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; transition: transform 0.18s ease; }
+.ind-bicho:hover { transform: translateY(-3px); }
+.ind-bicho:focus-visible { outline: 2px solid var(--mundo-ouro); outline-offset: 4px; border-radius: 8px; }
+.ind-bicho--esqueleto .mascote { width: 136px; }
+.ind-bicho--gato .gato-pixel { width: 144px; height: 108px; }
+.ind-bicho--coruja { display: flex; flex-direction: column; align-items: center; }
+.ind-bicho--coruja .coruja-pixel { --coruja-escala: 2.5; }
+/* O caixote em que a coruja pousa: madeira em pixel, com tábuas e cantoneiras. */
+.ind-caixote { display: block; width: 58px; height: 40px; margin-top: -2px;
+  background: linear-gradient(#3d2512, #3d2512) 0 0 / 100% 3px no-repeat, linear-gradient(#3d2512, #3d2512) 0 100% / 100% 3px no-repeat,
+    repeating-linear-gradient(180deg, #8a5226 0 11px, #6b3e1c 11px 13px);
+  box-shadow: 0 0 0 2px #1b1208, inset 4px 0 0 #b47a45, inset -4px 0 0 #5c3415; }
+.ind-balao { position: absolute; left: 50%; top: 0.9rem; z-index: 2; width: min(90%, 18rem); margin: 0; padding: 0.55rem 0.75rem; transform: translateX(-50%); cursor: pointer;
+  background: #fbf3df; color: #1b1208; font-size: var(--corpo-menor); font-weight: 650; line-height: 1.4; text-align: center; border-radius: 10px;
+  box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px rgba(0, 0, 0, 0.3); animation: ind-balao 0.25s steps(3); }
+@keyframes ind-balao { from { opacity: 0; transform: translate(-50%, 6px); } }
+
+/* ---------- Folhas ---------- */
+.ind-grade { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--e-5); }
+.ind-folha { display: grid; align-content: start; gap: var(--e-3); padding: clamp(1.1rem, 3vw, 1.6rem); }
+.ind-folha h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.2rem; font-weight: 800; letter-spacing: -0.015em; }
 .ind-link { padding: 0.75rem 0.9rem; border-radius: var(--raio-controle); background: var(--superficie-2); border: 1px dashed var(--traco-forte); overflow-wrap: anywhere; }
 .ind-link code { font-size: 0.95rem; }
 .ind-acoes { display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .ind-acoes .botao, .ind-acoes__whatsapp { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px; }
 .ind-acoes__whatsapp { padding: 0.55rem 1.1rem; border-radius: var(--raio-controle); background: #1fa855; color: #fff !important; font-weight: 700; text-decoration: none; }
 .ind-acoes__whatsapp:hover { background: #18914a; }
+.ind-nota { margin: 0; }
+
 .ind-placar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; margin: 0; }
-.ind-placar div { padding: 0.75rem 0.85rem; border-radius: var(--raio-controle); background: var(--superficie-2); }
-.ind-placar dt { font-size: var(--meta); color: var(--texto-2); }
-.ind-placar dd { margin: 0.2rem 0 0; font-family: var(--fonte-pixel); font-weight: 700; font-size: 1.6rem; color: var(--texto); }
-.ind-placar dd small { font-family: var(--fonte-marca); font-size: 0.8rem; font-weight: 500; color: var(--texto-2); }
+.ind-placar div { padding: 0.75rem 0.85rem; border-radius: var(--raio-controle); background: var(--superficie-2); border: 1px solid var(--traco); }
+.ind-placar dt { font-size: var(--meta); font-weight: 700; color: var(--texto-2); }
+.ind-placar dd { margin: 0.15rem 0 0; font-family: var(--fonte-marca); font-weight: 800; font-size: 1.9rem; line-height: 1.1; letter-spacing: -0.02em; color: var(--texto); font-variant-numeric: tabular-nums; }
+.ind-placar__ouro { background: var(--ouro-veu) !important; border-color: color-mix(in srgb, var(--ouro) 55%, transparent) !important; }
+.ind-placar__ouro dd { color: var(--ouro-texto); }
+.ind-limite { display: grid; gap: 0.35rem; }
+.ind-limite__trilho { height: 8px; border-radius: 999px; background: var(--superficie-2); border: 1px solid var(--traco); overflow: hidden; }
+.ind-limite__trilho i { display: block; height: 100%; background: var(--verdete); border-radius: inherit; transition: width 0.6s ease; }
+.ind-limite small { color: var(--texto-2); font-size: var(--meta); }
 .ind-ate { display: flex; align-items: center; gap: 0.4rem; margin: 0; color: var(--verdete-tinta); font-weight: 650; }
-.ind-passos { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
-.ind-passos li { display: grid; grid-template-columns: 44px minmax(0, 1fr); gap: 0.85rem; align-items: center; }
-.ind-passos img { image-rendering: pixelated; justify-self: center; }
+
+/* ---------- Amigos ---------- */
+.ind-amigos { display: grid; margin: 0; padding: 0; list-style: none; }
+.ind-amigo { display: grid; grid-template-columns: 2.6rem minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; padding: 0.8rem 0; border-top: 1px solid var(--traco); }
+.ind-amigo:first-child { border-top: 0; padding-top: 0.2rem; }
+.ind-amigo__inicial { display: grid; place-items: center; width: 2.6rem; height: 2.6rem; border-radius: 50%; background: var(--verdete-veu); color: var(--verdete-tinta); font-family: var(--fonte-marca); font-weight: 800; font-size: 1.1rem; }
+.ind-amigo--confirmado .ind-amigo__inicial { background: var(--ouro-veu); color: var(--ouro-texto); box-shadow: inset 0 0 0 2px color-mix(in srgb, var(--ouro) 60%, transparent); }
+.ind-amigo__texto { display: grid; gap: 0.15rem; min-width: 0; }
+.ind-amigo__texto strong { font-size: 1rem; }
+.ind-amigo__texto small { color: var(--texto-2); font-size: var(--meta); }
+.ind-amigo__barra { display: block; width: min(100%, 14rem); height: 6px; margin-top: 0.2rem; border-radius: 999px; background: var(--superficie-2); border: 1px solid var(--traco); overflow: hidden; }
+.ind-amigo__barra i { display: block; height: 100%; background: var(--verdete); }
+.ind-amigo__selo { padding: 0.25rem 0.65rem; border-radius: 999px; background: var(--superficie-2); color: var(--texto-2); font-size: var(--meta); font-weight: 750; white-space: nowrap; border: 1px solid var(--traco); }
+.ind-amigo__selo--ok { background: var(--ouro-veu); color: var(--ouro-texto); border-color: color-mix(in srgb, var(--ouro) 55%, transparent); }
+.ind-vazio { display: flex; align-items: center; gap: 1rem; padding: 0.4rem 0; }
+.ind-vazio__gato { flex: none; width: 96px; height: 72px; }
+.ind-vazio p { margin: 0; color: var(--texto-2); line-height: 1.5; }
+.ind-vazio strong { color: var(--texto); }
+
+/* ---------- Como funciona ---------- */
+.ind-passos { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.85rem; }
+.ind-passos li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.85rem; align-items: start; }
 .ind-passos strong { display: block; }
-.ind-passos span { display: block; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
+.ind-passos span:not(.numero-passo) { display: block; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
+
+@media (prefers-reduced-motion: reduce) { .ind-palco__lareira, .ind-balao { animation: none; } .ind-bicho { transition: none; } }
+@media (max-width: 52rem) {
+  .ind-topo, .ind-grade { grid-template-columns: minmax(0, 1fr); }
+  .ind-palco { min-height: 13rem; }
+}
 @media (max-width: 34rem) {
-  .ind-heroi { grid-template-columns: 1fr; }
-  .ind-placar { grid-template-columns: 1fr; }
+  .ind-placar { gap: 0.4rem; }
+  .ind-placar div { padding: 0.6rem 0.55rem; }
+  .ind-placar dd { font-size: 1.5rem; }
   .ind-acoes > * { flex: 1 1 100%; justify-content: center; }
+  .ind-bicho--esqueleto .mascote { width: 100px; }
+  .ind-bicho--gato .gato-pixel { width: 104px; height: 78px; }
+  .ind-bicho--coruja .coruja-pixel { --coruja-escala: 2; }
+  .ind-caixote { width: 46px; height: 32px; }
 }
