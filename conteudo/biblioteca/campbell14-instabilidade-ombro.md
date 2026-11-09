@@ -1,6 +1,6 @@
 ---
 id: campbell14-instabilidade-ombro
-versao: 2
+versao: 3
 titulo: Instabilidade do ombro
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021)
 capitulo: Capítulo 47 · Luxações recidivantes (ombro), com o capítulo 35 do Rockwood and Green's Fractures in Adults
 autores: Campbell Clinic (editores Frederick M. Azar e James H. Beaty)
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Campbell, cap. 47, parte do ombro (p. 2438 a 2462: epidemiologia, anatomia funcional, anatomia patológica, classificação, história, exame, imagem, glenoid track, ISIS, BANKART, LATARJET, falhas, instabilidade multidirecional e posterior, McLAUGHLIN). Rockwood and Green's Fractures in Adults, 10ª edição (2025), cap. 35 (Instabilidade glenoumeral: mecanismos, lesões associadas, testes, perda óssea subcrítica, glenoid track de 83%, ISIS acima de 6, algoritmo dos autores, remplissage, LATARJET e complicações), sem páginas impressas no arquivo local. As páginas citadas são as impressas do Campbell.
-subtemas: Instabilidade anterior do ombro
-resumo: O ombro responde por quase 50% das luxações; a idade é o maior fator de recidiva (90% abaixo de 20 anos, 60% de 20 a 40, 10% acima de 40), com esporte de contato, hiperfrouxidão e defeito ósseo; acima de 40, manguito roto em 30% (mais de 80% acima de 60) e tuberosidade; glenoumeral superior = restritor inferior em 0 grau, médio = rotação externa em abduções baixas, inferior = principal a partir de 45 graus; BANKART é a lesão mais vista, mas não a essencial; HILL-SACHS posterolateral; HAGL; sulco em 0 grau = intervalo, em 45 graus = complexo inferior; GAGEY; BEIGHTON; rotação interna e STRYKER para HILL-SACHS, West Point para a glenoide; tomografia 3D para osso; glenoid track (83% da glenoide menos o defeito; Campbell usa 84%); perda subcrítica de 13,5%; ISIS (acima de 6 = 70% de recidiva); remplissage com o infraespinal; LATARJET de 17,3% a 30%, enxerto acima de 30%; nervo axilar na luxação (13,5%) e musculocutâneo no LATARJET; posterior: McLAUGHLIN.
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Campbell, cap. 47, parte do ombro (p. 2438 a 2462: epidemiologia, anatomia funcional, anatomia patológica, classificação, história, exame, imagem, glenoid track, ISIS, BANKART, LATARJET, falhas, instabilidade multidirecional e posterior, McLAUGHLIN). Rockwood and Green's Fractures in Adults, 10ª edição (2025), cap. 35 (Instabilidade glenoumeral: mecanismos, lesões associadas, testes, perda óssea subcrítica, glenoid track de 83%, ISIS acima de 6, algoritmo dos autores, remplissage, LATARJET e complicações), sem páginas impressas no arquivo local. As páginas citadas são as impressas do Campbell. Versão 3, conferida em 09/11/2026, nas seções novas de instabilidade posterior e multidirecional: Campbell's Operative Orthopaedics, 15ª edição (2026), cap. 52 (Recurrent Dislocations, p. 2193 e 2208 a 2228) e cap. 66 (Old Unreduced Dislocations, p. 2965 a 2971), com as páginas impressas da 15ª edição; HEBERT, Ortopedia e Traumatologia, 5ª edição, cap. 45, sem páginas impressas no arquivo local.
+subtemas: Instabilidade anterior do ombro; Instabilidade posterior e multidirecional
+resumo: O ombro responde por quase 50% das luxações; a idade é o maior fator de recidiva (90% abaixo de 20 anos, 60% de 20 a 40, 10% acima de 40), com esporte de contato, hiperfrouxidão e defeito ósseo; acima de 40, manguito roto em 30% (mais de 80% acima de 60) e tuberosidade; glenoumeral superior = restritor inferior em 0 grau, médio = rotação externa em abduções baixas, inferior = principal a partir de 45 graus; BANKART é a lesão mais vista, mas não a essencial; HILL-SACHS posterolateral; HAGL; sulco em 0 grau = intervalo, em 45 graus = complexo inferior; GAGEY; BEIGHTON; rotação interna e STRYKER para HILL-SACHS, West Point para a glenoide; tomografia 3D para osso; glenoid track (83% da glenoide menos o defeito; Campbell usa 84%); perda subcrítica de 13,5%; ISIS (acima de 6 = 70% de recidiva); remplissage com o infraespinal; LATARJET de 17,3% a 30%, enxerto acima de 30%; nervo axilar na luxação (13,5%) e musculocutâneo no LATARJET; posterior: McLAUGHLIN; luxação posterior travada: braço aduzido e em rotação interna, sem rotação externa, AP sutil e perfil axilar diagnóstico; HILL-SACHS reverso de 15% a 40% = McLAUGHLIN ou aloenxerto, acima de 40% = artroplastia; glenoplastia posterior acima de 20 graus de retroversão; bloqueio ósseo posterior acima de 20% de perda; multidirecional: bolsa inferior redundante, pelo menos 6 meses de reabilitação, cirurgia contraindicada no luxador voluntário, sulco que não reduz em rotação externa = fechar o intervalo, shift capsular inferior de NEER e FOSTER.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -246,6 +246,140 @@ alerta: Os livros lidos não trazem a frequência de hematoma depois do LATARJET
 conceito: A instabilidade posterior responde por 5% a 10%; a microtraumática é mais comum que a recidiva traumática; HILL-SACHS reverso é anteromedial e se trata com McLAUGHLIN (subescapular, com ou sem a tuberosidade menor) em defeitos de 20% a 30%; jerk doloroso prediz falha do conservador; a multidirecional tem a bolsa inferior redundante.
 como: O TARO 2008 perguntou o nome da lesão anteromedial; o TARO 2018 e o TEOT 2023, o tratamento do HILL-SACHS reverso de 25%; o TECOC, a classificação de KIM, os preditores de falha e a reconstrução da cápsula superior.
 alerta: Os livros lidos não trazem a classificação numerada de KIM (`ombro-cotovelo-0187`) nem os resultados da reconstrução da cápsula superior (`ombro-cotovelo-0400`); os gabaritos oficiais foram preservados.
+!fim
+
+# A luxação posterior que ninguém vê {radar=oportunidade}
+
+A seção anterior tratou da instabilidade posterior recidivante. Esta trata do outro extremo: a luxação posterior aguda que passa despercebida e fica travada. No Campbell's Operative Orthopaedics, 15ª ed. (2026), ela está em dois lugares: no capítulo 52, "Recurrent Dislocations" (o antigo capítulo 47 da 14ª edição), e no capítulo 66, "Old Unreduced Dislocations". O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 45), completa o mecanismo.
+
+**Por que a cabeça sai para trás.** O HEBERT explica a convulsão e o choque elétrico pela desproporção de forças: a musculatura toda se contrai, e **os rotadores internos, mais fortes, vencem os rotadores externos**, empurrando a cabeça para trás da glenoide; o trauma direto de frente para trás faz o mesmo (cap. 45). O Campbell acrescenta a intoxicação, o golpe na frente do ombro e a queda com o braço fletido (cap. 52, p. 2221).
+
+**Por que ninguém vê.** O Campbell diz que a luxação posterior é negligenciada porque o membro chega **aduzido e em rotação interna** (cap. 66, p. 2969), a posição de quem usa uma tipoia, sem a deformidade visível da luxação anterior. O paciente com a luxação posterior não reduzida mantém o braço ao lado do corpo e ainda alcança o rosto, a cabeça e as costas; o da anterior fica com o braço afastado e em rotação externa (p. 2968). O achado que denuncia é a **rotação externa bloqueada**: na luxação posterior antiga faltam a abdução e a rotação externa; na anterior antiga, a abdução e a rotação interna (p. 2965). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 35), dá o tamanho do problema: 73% de 150 luxações posteriores passaram despercebidas no primeiro atendimento, por falta de perfil axilar, incidência em Y ou tomografia. O Campbell fala em 50% (cap. 52, p. 2208).
+
+**A radiografia.** Na incidência anteroposterior as alterações são sutis; quem mostra a luxação é o **perfil axilar**, com a cabeça atrás da glenoide e a borda posterior da glenoide encaixada no defeito da cabeça (Campbell, cap. 66, Fig. 66.16, p. 2967). O Campbell pede sempre AP e axilar, e a tomografia, de preferência 3D, para medir o dano articular, que decide a cirurgia (p. 2965 e 2966). O HEBERT mostra o mesmo erro: a oblíqua mal feita não deixa clara a relação entre a cabeça e a glenoide, e o axilar ou o perfil da escápula comprovam a posição posterior (cap. 45, Fig. 45.5).
+
+!figura 66.16 imagem=ombro-cotovelo/campbell15-66-16.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª edição (2026), cap. 66, Fig. 66.16, p. 2967. Luxação posterior do ombro: em A, a radiografia anteroposterior mostra só alterações sutis; em B, o perfil axilar mostra a cabeça atrás da glenoide, com a borda posterior da glenoide encaixada no defeito anteromedial da cabeça (HILL-SACHS reverso).
+!fim
+
+!tabela Luxação não reduzida do ombro: anterior contra posterior (Campbell 15, cap. 66, p. 2965 a 2969)
+| | Anterior | Posterior |
+|---|---|---|
+| Posição do braço | afastado do corpo, em rotação externa | ao lado do corpo, aduzido e em rotação interna |
+| Movimento perdido | abdução e rotação interna | abdução e **rotação externa** |
+| O que o paciente alcança | rosto com dificuldade, costas não | rosto, cabeça e costas |
+| Defeito da cabeça | posterolateral (HILL-SACHS) | **anteromedial** (HILL-SACHS reverso) |
+| Quem bate no defeito | borda anterior da glenoide | borda posterior da glenoide |
+| Imobilização depois da redução | braço à frente do eixo do corpo | braço atrás do eixo do corpo |
+!fim
+
+**O defeito que trava.** A borda posterior da glenoide afunda a região anteromedial da cabeça: é o **HILL-SACHS reverso**, que as provas chamam de lesão de **McLAUGHLIN**, pelo autor da cirurgia que a trata. Na luxação crônica o defeito costuma ser grande, porque o paciente insiste em mover o ombro, e a cápsula anterior adere à glenoide vazia, o "bowstringing" de NEVIASER, que impede a redução fechada (Campbell, cap. 66, p. 2966 e 2967). Mesmo depois de reduzido, o ombro com um defeito grande reluxa em rotação interna, flexão ou adução, quando o defeito volta a encontrar a borda da glenoide (cap. 52, Fig. 52.34, p. 2228).
+
+**Reduzir fechado ou aberto.** O Campbell considera imprudente tentar a redução fechada com defeito de **mais de 20%** da superfície articular ou com **mais de 3 a 4 semanas** de luxação; quando se tenta, é com tração mínima, sem alavanca e com relaxamento completo sob anestesia geral, lembrando o risco de rotura da artéria axilar no idoso com doença arterial. Depois da redução, 3 a 4 semanas de imobilização (cap. 66, p. 2968).
+
+**O tamanho do defeito escolhe a cirurgia.** Os livros usam cortes diferentes, e a prova já cobrou mais de um:
+
+!tabela HILL-SACHS reverso: o corte de cada livro
+| Fonte | Defeito pequeno | Defeito médio | Defeito grande |
+|---|---|---|---|
+| Campbell 15, cap. 66, algoritmo da Fig. 66.17 (p. 2967) | 0% a 15%: shift capsular posterior | **15% a 40%: McLAUGHLIN ou aloenxerto**, com ou sem osteotomia rotacional | mais de 40%: artroplastia |
+| Campbell 15, cap. 52 (p. 2213, 2227 e 2228) | | 20% a 25%: subescapular com a tuberosidade menor, resultado satisfatório; Tabela 52.6: acima de 30%, McLAUGHLIN | lesões maiores: aloenxerto |
+| HEBERT, cap. 45 | menos de 20%: redução incruenta e imobilização em leve rotação externa | **20% a 50%** com luxações frequentes: McLAUGHLIN modificada por NEER (em outro trecho, 20% a 40%) | mais de 50%: prótese |
+| ROCKWOOD, citado no Campbell (p. 2969) | menos de 15%: via posterior | mais de 15%: reconstrução anterior por via anterior | |
+!fim
+
+Na artroplastia, o algoritmo do Campbell separa a **hemiartroplastia** (menos de 45 anos e glenoide normal) da **artroplastia reversa** (mais de 45 anos ou erosão da glenoide). Na hemiartroplastia da luxação posterior, a retroversão do componente umeral é reduzida para a cabeça não escapar para trás: versão neutra quando a luxação tem mais de 6 meses, cerca de 20 graus de retroversão quando tem menos. KEPPLER descreveu a osteotomia rotacional do colo cirúrgico, que roda a diáfise para dentro e mantém o defeito sempre à frente da borda da glenoide; acima de 40% ela não devolve a congruência. Os resultados das reconstruções pioram depois de 6 meses de luxação (cap. 66, p. 2967 a 2971).
+
+**A cirurgia de McLAUGHLIN, passo a passo.** Via deltopeitoral; tendão conjunto afastado para medial; subescapular seccionado junto à inserção, ou, na modificação de NEER e FOSTER, osteotomia da tuberosidade menor com o tendão inserido; desbridamento do defeito; fixação do tendão no fundo do defeito com pontos transósseos ou âncoras, ou da tuberosidade com parafuso. No pós-operatório, **nada de rotação externa forçada por pelo menos 3 meses** (Campbell, cap. 52, Técnica 52.12, p. 2228).
+
+!questoes treino=ombro-cotovelo-0580
+conceito: A luxação posterior deixa o braço aduzido e em rotação interna, sem rotação externa; o AP engana e o perfil axilar mostra a cabeça atrás da glenoide com a borda posterior encaixada no defeito anteromedial, o HILL-SACHS reverso, que a prova chama de lesão de McLAUGHLIN.
+como: O TARO 2008 perguntou o nome da lesão anteromedial da cabeça; uma questão de treino deu o quadro clínico com as radiografias de GRASHEY e axilar e pediu o diagnóstico.
+armadilha: HILL-SACHS sem o "reverso" é posterolateral e da luxação anterior; BANKART é da glenoide; ombro com dor que não roda para fora depois de convulsão ou choque é luxação posterior até o axilar provar o contrário.
+alerta: Os livros lidos chamam a lesão de HILL-SACHS reverso e usam o nome de McLAUGHLIN para a cirurgia (`ombro-cotovelo-0385`); o gabarito oficial foi preservado.
+!fim
+
+# O osso na instabilidade posterior: retroversão e borda glenoidal {radar=confirmado}
+
+**O que o Campbell pensa da versão.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52), é cético: a versão da glenoide só contribui de modo importante para a instabilidade posterior na **displasia congênita grave** ou na rotura traumática da arquitetura óssea. FUCHS, JOST e GERBER indicaram a osteotomia da glenoide acima de **10 graus** de retroversão, mas as osteotomias caíram em desuso pelas complicações (p. 2222). A tomografia, sobretudo a 3D, é o exame mais sensível para medir a deficiência óssea e a retroversão (p. 2211).
+
+**Quando a glenoplastia posterior ainda entra.** Na descrição da técnica, o Campbell dá o número que a prova pede: a glenoplastia posterior é raramente indicada, mas pode ser usada quando a **retroversão grave, de desenvolvimento ou traumática, passa de 20 graus**, confirmada na tomografia com reconstrução. O preço é alto: recidiva de **até 53%** e, na série de HAWKINS, **29% de complicações**, entre elas osteonecrose da glenoide e artrose glenoumeral. A mesma exposição posterior serve para o enxerto ósseo da glenoide posterior deficiente (Técnica 52.11, de ROCKWOOD, p. 2226).
+
+**Os dois números de retroversão não se contradizem.** Os 10 graus são o limiar histórico da osteotomia de FUCHS, JOST e GERBER, que o livro cita para dizer que saiu de uso; os 20 graus são o limiar em que o próprio Campbell ainda admite a glenoplastia. Quem responde "10" numa questão sobre a indicação atual erra.
+
+**A borda posterior.** Mais comum que a retroversão grave é a **perda da borda óssea posterior**. A fratura da borda pede fixação, artroscópica ou aberta, e aberta se o fragmento é grande. O lábio descolado que dói, mas sem instabilidade verdadeira, é reparado no lugar, sem plicatura da cápsula (Campbell, p. 2223). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 35), indica o **bloqueio ósseo posterior** na instabilidade posterior crônica com **perda óssea crítica acima de 20%** ou depois da falha de uma estabilização; aponta a retroversão aumentada e a displasia como fatores de risco do aparecimento da instabilidade; e registra que o reparo posterior aberto recidivou em 19%, contra 8% do artroscópico.
+
+!tabela Osso e instabilidade posterior: os números (Campbell 15, cap. 52; Rockwood 10, cap. 35)
+| Número | O que significa | Fonte |
+|---|---|---|
+| 10 graus de retroversão | limiar antigo da osteotomia (FUCHS, JOST e GERBER); em desuso | Campbell, p. 2222 |
+| **20 graus de retroversão** | glenoplastia posterior ainda admitida, com tomografia | Campbell, p. 2226 |
+| até 53% | recidiva depois da glenoplastia posterior | Campbell, p. 2226 |
+| 29% | complicações de HAWKINS (osteonecrose da glenoide, artrose) | Campbell, p. 2226 |
+| **20% de perda glenoidal posterior** | perda crítica: bloqueio ósseo posterior | Rockwood, cap. 35 |
+| 19% contra 8% | recidiva do reparo aberto contra o artroscópico | Rockwood, cap. 35 |
+| mais de 80% | lesão condrolabral posteroinferior (KIM) na ressonância | Campbell, p. 2222 |
+| maior que 1 cm | fenda do intervalo dos rotadores que pede fechamento | Campbell, p. 2223 |
+!fim
+
+**As partes moles, quando o osso está bom.** Os "conceitos" do Campbell para a instabilidade posterior (p. 2223): restaurar a anatomia e tensionar a cápsula como na anterior; na subluxação posterior incapacitante, ou quando o plano posterior domina uma multidirecional, o shift capsular inferior por via posterior; no atleta de arremesso, a técnica de TIBONE, com divisão do músculo e shift medial; a de HAWKINS e JANDA para trabalhadores braçais e atletas de contato com deficiência capsular. Os resultados artroscópicos do serviço são superiores aos abertos, a não ser quando há deficiência óssea grave a tratar. Depois das capsulorrafias posteriores abertas, o arremesso leve volta aos 6 meses, e a competição, com 1 ano (p. 2226).
+
+**Quem não operar.** O paciente que subluxa o ombro por vontade, com adução horizontal e rotação interna, não tem por isso um componente psicológico; o que preocupa é o afeto indiferente com a subluxação feita só por contração muscular, e esses raramente, ou nunca, devem ser operados (Campbell, p. 2222).
+
+!questoes central=ombro-cotovelo-0234 treino=ombro-cotovelo-0596,ombro-cotovelo-0579
+conceito: Na instabilidade posterior, a glenoplastia posterior só entra com retroversão acima de 20 graus na tomografia (recidiva de até 53%); a perda glenoidal posterior acima de 20% pede bloqueio ósseo; o jerk com dor e estalido prediz a falha do tratamento conservador.
+como: O SBOT-SP perguntou a retroversão que indica a glenoplastia posterior; as questões de treino, os limiares dos autores do Rockwood para o bloqueio ósseo e o achado de KIM no teste do jerk.
+armadilha: 10 graus é o limiar antigo de FUCHS, JOST e GERBER, citado como abandonado; 20 graus é o da glenoplastia; 20% é de perda óssea, não de retroversão.
+alerta: A ficha sustenta, pelo Rockwood, a perda óssea crítica acima de 20%; o limiar de 20 graus de retroversão "dos autores" (`ombro-cotovelo-0596`) não foi reconferido, porque o arquivo do Rockwood não estava disponível nesta leitura, e aqui se apoia no Campbell (p. 2226). Gabarito preservado.
+!fim
+
+# A instabilidade multidirecional por dentro {radar=oportunidade}
+
+**O que está frouxo.** O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 45), parte da anatomia funcional: a cápsula e os ligamentos ficam frouxos em quase todo o arco e só seguram perto dos limites do movimento; na amplitude média, quem estabiliza é o **manguito, comprimindo a cabeça contra a glenoide**, desde que os estabilizadores da escápula mantenham a glenoide de frente para a cabeça. Na multidirecional, o **recesso axilar é grande**, as bandas do glenoumeral inferior ficam mal definidas e o volume capsular aumenta. Soma-se um **déficit proprioceptivo**: com a cápsula frouxa, os mecanorreceptores só disparam quando a cabeça já subluxou, e a contração reflexa chega atrasada. É por isso que o tratamento começa pelo músculo e pelo controle neuromuscular, não pela cápsula.
+
+**Quem é o paciente.** Adolescente ou adulto jovem, muitos atletas de membro superior (ginastas, nadadores, vôlei); raro depois dos 30 anos; 55% mulheres e 45% homens; bilateral com frequência. A queixa principal é **dor**, com cansaço, parestesia transitória e o "braço morto"; as luxações ocorrem com trauma mínimo e reduzem sozinhas (HEBERT, cap. 45). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 52, p. 2208), manda investigar EHLERS-DANLOS e MARFAN, tratados com reabilitação supervisionada extensa e avisados de que o tecido pode voltar a ceder depois de uma cirurgia.
+
+**O sinal do sulco, lido por inteiro.** Tração do braço para baixo, com a depressão entre o acrômio e a cabeça. O HEBERT considera positivo o sulco de **1 cm ou mais** e faz duas ressalvas: o sinal aparece em ombros normais, mais em mulheres e nos mais jovens, e **frouxidão é sinal, instabilidade é sintoma**. O Campbell refina em três passos (p. 2209 e 2210):
+
+- **A posição do braço.** Em 0 grau de abdução, o sulco fala do intervalo dos rotadores, com o glenoumeral superior; em 45 graus, do complexo glenoumeral inferior.
+- **A rotação externa.** Ela tensiona o intervalo e deveria apagar o sulco. O sulco que **não se reduz com 45 graus de rotação externa** denuncia o intervalo incompetente; o 3+ é definido como mais de 2 cm de subluxação inferior que não reduz com a rotação externa.
+- **O gesto cirúrgico.** O **fechamento do intervalo dos rotadores** reduz a frouxidão inferior em 0 grau e a translação posterior (p. 2219). Na artroscopia, a fenda de mais de 1 cm entre os glenoumerais superior e médio na borda da glenoide pede o fechamento, sobretudo com rotação externa de mais de 90 graus em 0 grau de abdução e sulco positivo (p. 2223).
+
+**A frouxidão generalizada.** O escore de BEIGHTON soma 9 pontos (os itens estão na seção do exame). No Campbell 15 há uma incoerência interna: o texto diz que **5 ou mais** sugere frouxidão ligamentar generalizada, e o rodapé da Tabela 52.1 traz 4 pontos como o corte diagnóstico (p. 2193). O HEBERT pede os mesmos achados, sem pontuar: hiperextensão dos cotovelos e das metacarpofalângicas, polegar no antebraço, subluxação da patela.
+
+**O tratamento começa, e quase sempre termina, na reabilitação.** O HEBERT cita BURKHEAD e ROCKWOOD, com **88% de resultados satisfatórios** num programa específico. O programa fortalece o manguito, os estabilizadores da escápula e as três porções do deltoide, sempre abaixo da horizontal para não criar impacto secundário, com elásticos de resistência progressiva trocados a cada duas semanas, e treina a propriocepção; uma infiltração subacromial pode aliviar a tendinite que atrapalha os exercícios (cap. 45).
+
+!tabela Multidirecional: onde os livros concordam e onde divergem
+| Ponto | Campbell 15, cap. 52 | HEBERT, cap. 45 |
+|---|---|---|
+| Lesão primária | bolsa inferior frouxa e redundante (NEER e FOSTER, 1980) | recesso axilar aumentado, déficit proprioceptivo |
+| Tempo de tratamento conservador | **pelo menos 6 meses**, supervisionado, com programa em casa (p. 2219) | **mínimo de um ano** segundo NEER e a maioria; alguns aceitam 3 a 6 meses |
+| Luxador voluntário | cirurgia não indicada; com ganho secundário, fadada ao fracasso (p. 2208 e 2219) | cirurgia contraindicada; as voluntárias costumam ser posteriores |
+| Cirurgia aberta | shift capsular inferior de NEER e FOSTER pelo lado da maior instabilidade | capsuloplastia em T de NEER, por via anterior |
+| Via posterior | indicada quando o plano posterior domina (p. 2223) | abandonada por muitos: a cápsula posterior é fina |
+| Intervalo dos rotadores | fechar: reduz a frouxidão inferior e a translação posterior | fechamento controverso na artroscopia |
+| Artroscopia | resultados superiores aos abertos no serviço | plicaturas com âncoras; TREACY 88%, KIM 90%; ainda abaixo da aberta |
+| Imagem | ressonância com contraste | artrorressonância é o melhor exame |
+!fim
+
+**Quando operar.** O Campbell exige três condições: incapacidade frequente e importante, falha de um programa adequado de reabilitação, e paciente que **não é luxador voluntário**. As provas costumam pedir o intervalo de 6 a 12 meses, que cabe entre o mínimo de 6 meses do Campbell e o ano de NEER citado pelo HEBERT.
+
+**Por que as cirurgias da instabilidade anterior falham aqui.** O BRISTOW-LATARJET, o PUTTI-PLATT e o MAGNUSON-STACK tratam uma direção e deixam o excesso de cápsula do recesso inferior; o HEBERT lista a multidirecional não reconhecida entre as causas de recidiva depois da cirurgia (cap. 45). O Campbell diz o mesmo: a multidirecional não se corrige com os reparos padrão (p. 2219).
+
+**O shift capsular inferior de NEER e FOSTER** (Campbell, Técnica 52.8, p. 2220). A lógica é soltar a cápsula do colo do úmero e puxá-la para o outro lado do calcar, apagando a bolsa inferior e tensionando também o lado oposto ao da incisão:
+
+- **Escolha do lado.** Sulco 3+ com sintomas inferiores, somado a instabilidade anterior ou posterior: via anterior, com fechamento do intervalo. Instabilidade posterior com sulco de 1+ a 2+ e poucos sintomas inferiores: procedimento capsular posterior.
+- **O subescapular.** A metade superficial do tendão é dividida 1 cm medial ao sulco do bíceps; a metade profunda fica presa à cápsula, para engrossá-la.
+- **A cápsula.** Fecha-se a fenda entre os glenoumerais médio e superior; abre-se em T, entre o médio e o inferior; o retalho inferior, com o glenoumeral inferior, é solto do colo até a face posterior, com um descolador protegendo o **nervo axilar**.
+- **O fechamento.** O retalho inferior sobe primeiro, e o superior desce por cima dele, de modo que o glenoumeral médio reforce a frente e sirva de tipoia contra a subluxação inferior. O braço fica em leve flexão e 10 graus de rotação externa; BIGLIANI usa 25 graus de rotação externa e 20 de abdução, e mais nos arremessadores.
+
+No pós-operatório do Campbell, a rotação externa volta devagar: 10 graus depois de 10 dias, 30 entre 2 e 4 semanas, 40 entre 4 e 6 semanas, quando começam os exercícios resistidos, e 50 graus com 6 semanas; progredir depressa demais leva à recidiva, sobretudo no fim da adolescência (p. 2220 e 2221). O HEBERT imobiliza por 4 a 6 semanas em posição neutra e relata 92% de bons resultados na série de CHECCHIA (cap. 45).
+
+!questoes treino=ombro-cotovelo-0597,ombro-cotovelo-0578,ombro-cotovelo-0598
+conceito: Na multidirecional, a bolsa inferior é redundante e o tratamento é a reabilitação por pelo menos 6 meses; a cirurgia é contraindicada no luxador voluntário; o sulco que não se reduz em rotação externa indica intervalo dos rotadores incompetente e acrescenta o fechamento do intervalo ao shift capsular inferior.
+como: As questões de treino perguntaram o tempo mínimo de tratamento conservador com a contraindicação, o significado do sulco que persiste em rotação externa e o corte do escore de BEIGHTON.
+armadilha: O lábio posterior não é o alvo na multidirecional sem lesão labral; atleta de arremesso não é contraindicação; o sulco isolado, sem sintoma, é só frouxidão.
+alerta: O Campbell 15 fala em pelo menos 6 meses e o HEBERT em um ano; o intervalo de 6 a 12 meses (`ombro-cotovelo-0597`) não aparece com essas palavras nos livros lidos. Para o BEIGHTON (`ombro-cotovelo-0598`), o Campbell 15 traz 5 ou mais no texto e 4 pontos no rodapé da tabela, e não "mais de 5". Os gabaritos foram preservados.
 !fim
 
 # Revisão rápida {radar=fundamento}

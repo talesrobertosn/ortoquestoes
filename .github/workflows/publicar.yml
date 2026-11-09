@@ -107,7 +107,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.publicacao.outputs.page_url }}
+      url: ${{ steps.publicacao2.outputs.page_url || steps.publicacao.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -128,10 +128,13 @@ jobs:
           else
             echo 'Build superado por alterações funcionais; aguardando a versão mais recente.' >> "$GITHUB_STEP_SUMMARY"
           fi
+      # O deploy-pages desiste em 10 minutos (teto fixo da ação). Quando a sincronização do Pages
+      # trava do lado do GitHub, a primeira tentativa é cancelada e a segunda publica o mesmo pacote.
       - id: publicacao
         if: steps.atual.outputs.publicar == 'true'
+        continue-on-error: true
         uses: actions/deploy-pages@v4
-        # O site tem quase 29 mil arquivos: às vezes o GitHub Pages leva mais de 10 minutos (o padrão da ação) para
-        # sincronizar e a publicação era cancelada no meio ("syncing_files", 09/11/2026). 30 minutos de folga.
-        with:
-          timeout: 1800000
+      - id: publicacao2
+        name: Segunda tentativa de publicação
+        if: steps.atual.outputs.publicar == 'true' && steps.publicacao.outcome == 'failure'
+        uses: actions/deploy-pages@v4

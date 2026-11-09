@@ -300,3 +300,9 @@ Contrato de todo cenário novo (arte 480 x 200, saída 1440 x 600 e 960 x 400 na
   algo firme) ficam em `scripts/cenarios/cena-<id>.json` e são copiados para `cenarios.ts`.
 Na cena, um bicho fala de cada vez, e o balão procura um lugar livre (se não couber perto, o gato anda até um canto
 onde caiba).
+
+## Atualização — 09/11/2026: Abrigo das Águas e rodízio compartilhado
+
+Tales aprovou o sexto cenário, **Abrigo das Águas**: pátio de pedra molhada, arco, lago e castelo, com fogueira/espada e os três mascotes oficiais. Script `scripts/cenarios/inicio_abrigo.py`. O cenário usa âncoras próprias para fogo e esqueleto, sem alterar as dos cinco anteriores. A pintura de fundo não duplica personagens, espada ou chama.
+
+O terreno da inicial é igual para todos por seis faixas de quatro horas em Brasília, com ordem embaralhada a cada dia e estável nas recargas. A troca ocorre na virada e ao voltar à aba. Detalhes e testes em [ABRIGO-DAS-AGUAS.md](ABRIGO-DAS-AGUAS.md).

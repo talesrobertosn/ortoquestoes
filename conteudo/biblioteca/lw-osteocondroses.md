@@ -1,6 +1,6 @@
 ---
 id: lw-osteocondroses
-versao: 1
+versao: 2
 titulo: Osteocondroses
 especialidade: pediatria
 acesso: gratis
@@ -9,7 +9,7 @@ edicao: 7ª edição (2014), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (
 capitulo: Capítulo 9 · Localized Disorders of Skin and Soft Tissue (seção The Osteochondroses), com o Capítulo 29 · The Foot e o Capítulo 31 · Sports Medicine in the Growing Child
 autores: Haemish CRAWFORD (Lovell, cap. 9); Vincent S. MOSCA (Lovell, cap. 29); R. Baxter WILLIS, Mininder S. KOCHER e Theodore J. GANLEY (Lovell, cap. 31); Benjamin W. SHEFFER (Campbell, cap. 34)
 fonte: Livros conferidos localmente em 03/11/2026: Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 9, seção The Osteochondroses, p. 309 e 310 (Tabela 9-4), cap. 29, seções Freiberg Infraction e Kohler Disease, p. 1480, 1481, 1491 e 1492, e cap. 31, seções Overuse Injuries, Sever Disease e Elbow Problems in the Throwing Athlete, p. 1641 a 1643 e 1648 a 1652; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19, seção Osteochondroses, p. 689 a 691, cap. 40, p. 2001, 2004, 2005, 2010 a 2012 e Tabela 40.11 (p. 2043), cap. 12 (MADELUNG, p. aprox. 298) e cap. 7 (p. 79 e 80); Campbell's Operative Orthopaedics, 15ª ed., cap. 34, seção Osteochondrosis or Epiphysitis, p. 1201 a 1204, 1209 aprox. e 1211 aprox., cap. 38 (p. 1483 aprox.), cap. 57 (p. 2499) e cap. 74 (p. 3308 e 3309); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23 (sincondrose isquiopúbica) e cap. 31 (calcâneo), sem página impressa no cabeçalho. As páginas citadas são as impressas.
-subtemas: Osteocondroses
+subtemas: Osteocondroses; Joelho na criança
 resumo: Osteocondrose é falha da ossificação endocondral de um núcleo que crescia normalmente, por isquemia nas articulares e por tração nas apofisárias; KÖHLER é o navicular do menino pequeno (4 vezes mais em meninos, abaixo de 6 a 7 anos, autolimitado, gesso curto); FREIBERG é a cabeça do 2º metatarso da adolescente, a única com predileção feminina; SEVER é a apófise do calcâneo (9 a 14 anos, bilateral, radiografia normal); ISELIN é a base do 5º metatarso (fibular curto, oblíqua); OSGOOD-SCHLATTER é o tubérculo tibial (patela alta e reto femoral encurtado); SINDING-LARSEN-JOHANSSON é o polo inferior da patela por tração; PANNER é o capítulo antes dos 10 anos, e a osteocondrite dissecante do capítulo é a da criança mais velha, do beisebol e da ginástica.
 ---
 
@@ -306,6 +306,16 @@ conceito: O Tachdjian associa o OSGOOD-SCHLATTER à patela alta e ao encurtament
 como: O TEOT 2024 pediu a associação forte do OSGOOD-SCHLATTER combinando patela alta ou baixa com alongamento ou encurtamento do reto femoral.
 armadilha: Escolher patela baixa, hipótese que o LW cita para alguns autores, ou alongamento do reto femoral, que é o tratamento e não o fator.
 alerta: O LW registra autores que associam o OSGOOD-SCHLATTER à patela alta e outros à patela baixa, sem escolher; o gabarito (patela alta e reto femoral encurtado) é o do Tachdjian e foi mantido.
+!fim
+
+## O que sobra de quem não trata
+
+As duas sequelas que os livros descrevem saem do endereço da lesão. A tuberosidade é a parte **anterior** da placa de crescimento da tíbia proximal. Quando ela se funde antes da hora, a frente para de crescer e o resto da fise continua: o planalto se inclina para a frente e o joelho entra em **recurvato**. É o que o Tachdjian (cap. 40, p. 2012) chama de fechamento do tubérculo com recurvato grave e o Campbell (cap. 34, p. 1203 aprox.) de fusão prematura da parte anterior da epífise com genu recurvatum. Um desvio em varo ou valgo pediria parada medial ou lateral da fise, que não é onde a doença mora, e o flexo seria o oposto do que a parada anterior produz. A segunda sequela é o **ossículo que não se une** à tíbia, a **pseudartrose** do fragmento da tuberosidade, a mesma que dói ao ajoelhar no adulto e se resolve com a excisão. O Tachdjian frisa que as duas são **raras**; o Campbell soma à lista a **subluxação da patela** e a **patela alta**, mas nenhum dos três livros fala em instabilidade ligamentar do joelho.
+
+!questoes central=joelho-0197
+conceito: Sem tratamento, o OSGOOD-SCHLATTER pode, raramente, fundir cedo a parte anterior da fise tibial, com genu recurvatum, e deixar pseudartrose do ossículo da tuberosidade; o Campbell acrescenta subluxação da patela e patela alta.
+como: O TEPOP 2024 pediu as principais complicações do OSGOOD-SCHLATTER não tratado, combinando varo, valgo, flexo ou recurvato com instabilidade do joelho ou pseudartrose da tuberosidade.
+armadilha: Marcar geno flexo por associar a doença à dor na extensão; a parada do crescimento é anterior e dá recurvato, e a instabilidade não é sequela descrita.
 !fim
 
 # SINDING-LARSEN-JOHANSSON: o polo inferior da patela {radar=confirmado}

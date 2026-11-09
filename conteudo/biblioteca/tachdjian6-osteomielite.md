@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-osteomielite
-versao: 3
+versao: 4
 titulo: Osteomielite e artrite séptica na criança
 especialidade: conceitos-basicos
 acesso: gratis
@@ -9,7 +9,7 @@ edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed.
 capitulo: Capítulo 23 · Infecções do sistema musculoesquelético
 autores: John A. Herring (editor)
 fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulo 23, sobretudo fisiopatologia da osteomielite hematogênica aguda, agentes por idade, osteomielite subaguda, discite e osteomielite vertebral e infecções do pé. As páginas citadas são as impressas. Ampliado em 01/11/2026 com as partes de osteomielite do cap. 23 relidas por inteiro e o Campbell's Operative Orthopaedics, 15ª ed., caps. 22, 23, 25 e 49. Versão 3 (04/11/2026), osteomielite crônica do adulto: Campbell's Operative Orthopaedics, 15ª ed., cap. 22 (p. 792 a 796) e cap. 23 (p. 810 a 818); Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 29, p. 835 a 867 (páginas inferidas pelo índice); Tachdjian, cap. 23, p. 965; HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 26 (sem página impressa) e cap. 67.
-subtemas: Osteomielite aguda; Osteomielite crônica
+subtemas: Osteomielite aguda; Osteomielite crônica; Joelho na criança
 resumo: Metáfise (alças arteriolares e sinusoides lentos); vasos transfisários até 18 meses; metáfises intra-articulares (rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais); localizações; agentes por idade (S. aureus, Kingella, pneumococo, Hib); osteomielite subaguda e classificação de ROBERTS; discite e osteomielite vertebral; calcâneo hematogênico e Pseudomonas no ferimento puntiforme; crônica do adulto: sequestro por elevação periosteal e necrose, biofilme, CIERNY e MADER (I medular, II superficial, III localizada sem instabilidade, IV difusa com instabilidade; hospedeiro A, B local ou sistêmico, C), fresagem do canal no tipo I, MASQUELET, transporte ósseo e carcinoma espinocelular de MARJOLIN na fístula.
 ---
 
@@ -158,6 +158,17 @@ conceito: A VHS depende do fibrinogênio, sobe devagar, normaliza em semanas e n
 como: O TARO 2006, 2007 e 2008 cobraram em sequência a VHS não confiável no neonato e no falciforme, a comparação entre VHS e PCR e o mecanismo da subida da PCR.
 armadilha: Usar a VHS para seguir a melhora dos primeiros dias, ou atribuir a PCR ao fibrinogênio, que é o determinante da VHS.
 alerta: As três questões (`conceitos-basicos-0284`, `conceitos-basicos-0285`, `conceitos-basicos-0292`) estão sem gabarito oficial no acervo; o texto segue o Tachdjian (fibrinogênio, IL-6, cinética da PCR) e o Campbell, cap. 22 (VHS não confiável no neonato e no falciforme); as respostas prováveis seguem o gabarito pela bibliografia: VHS menos sensível que a PCR, interleucina-6 e Certo.
+!fim
+
+## Metáfise dolorosa, radiografia normal: puncionar antes do antibiótico
+
+O caso típico de prova junta febre, claudicação, dor à palpação da **metáfise** com a articulação móvel, trauma leve recente e radiografia normal na primeira semana. A mobilidade preservada afasta a artrite séptica, e a radiografia normal não afasta nada, porque o osso só muda em 10 a 14 dias. O Tachdjian (p. 947) apoia a conduta de **aspirar o foco suspeito antes de iniciar o antibiótico**, para identificar o germe, com agulha que traz osso para a histologia e líquido para a cultura; a histologia é o que separa a infecção da leucemia e do EWING.
+
+!questoes central=joelho-0327
+conceito: Na suspeita de osteomielite hematogênica aguda da metáfise com radiografia ainda normal, punciona-se o osso antes do antibiótico, para cultura e histopatológico; a artrotomia fica para a articulação infectada.
+como: O SES-DF 2024 (R4) descreveu adolescente de 13 anos com febre, dor na tíbia proximal, joelho móvel e radiografia normal e pediu a conduta entre antibiótico empírico, hemocultura com antibiótico, punção da metáfise e artrotomia.
+armadilha: Começar o antibiótico empírico sem material do foco, ou abrir o joelho por causa do edema, quando a mobilidade preservada aponta para o osso.
+alerta: Na `joelho-0327`, o Tachdjian sustenta a punção antes do antibiótico; o Campbell (cap. 23, p. 807 e 808) diz que não há consenso e reserva a aspiração óssea a quem não tem abscesso aparente, não respondeu ao antibiótico empírico e tem hemocultura negativa. O gabarito oficial (C) foi mantido.
 !fim
 
 # Imagem: da radiografia à RM {radar=confirmado}

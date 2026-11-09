@@ -55,11 +55,6 @@ extrapolação confiável para o mês.
   superado por mudança funcional. Documentação posterior não invalida o build.
   Isso também protege contra reexecuções antigas. Falha de fetch interrompe o
   deploy; não é interpretada como autorização para publicar.
-- **Tempo do envio ao Pages (09/11/2026):** o site tem quase 29 mil arquivos e,
-  em alguns dias, o GitHub Pages passa dos 10 minutos padrão em `syncing_files`;
-  a ação cancelava a publicação no meio. O `deploy-pages` espera até 30 minutos
-  (`timeout: 1800000`). Se ainda falhar por tempo, rodar de novo só o job
-  `publicar` (o build é reaproveitado).
 - **Suíte:** todos os testes existentes de `npm test` permanecem. No Pages foram
   retiradas somente chamadas extras de `testar_revisao.mjs`, `testar_reinicio.mjs`
   e `testar_deteccao.py`, já executadas pela suíte. Acervo e geradores continuam.
@@ -119,3 +114,7 @@ acervo, build e diff passaram. O guard extraído diretamente do YAML também foi
 executado contra um remoto Git temporário: publicou o head atual e um build
 seguido só de documentação, recusou código superado, branch manual inválida e
 falha de fetch. A validação remota e o deploy serão conferidos no PR desta entrega.
+
+## Segunda tentativa do Pages (09/11/2026)
+
+O `deploy-pages` tem teto fixo de 10 minutos (valores maiores em `timeout` são ignorados). Em 09/11/2026 três publicações falharam com o Pages parado em `syncing_files` (pacote de cerca de 215 MB), enquanto outras, com o mesmo pacote, sincronizaram em segundos: a trava é do lado do GitHub. O job `publicar` agora tenta de novo uma vez, sozinho, quando a primeira tentativa falha. Se as duas falharem, reexecute o job; reduzir o pacote (imagens) é a otimização de fundo.
