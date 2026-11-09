@@ -159,7 +159,7 @@ function grupoDe(tipo: TipoCarta): GrupoCatalogo {
 export function modelosDoCatalogo(): ModeloCatalogo[] {
   const lista: ModeloCatalogo[] = []
   for (const tipo of Object.keys(TIPOS) as TipoCarta[]) {
-    if (tipo === 'obrigado_assinatura') continue // Histórico preservado; substituído pelo automático no pagamento.
+    if (tipo === 'obrigado_assinatura' || tipo === 'assinou_sem_cronograma') continue // Histórico preservado; substituído pelo automático no pagamento.
     const info = TIPOS[tipo]
     if (tipo === 'ativo') {
       for (const faixa of FAIXAS) {

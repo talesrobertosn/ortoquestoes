@@ -129,6 +129,10 @@ try {
       if (rpc.startsWith('destinatarios_')) return j([])
       if (rpc === 'hub_avaliar')
         return j(body.p_itens.map((m) => ({ chave: m.chave, bloqueio: bloqueios.get(m.id_usuario) ?? null })))
+      if (rpc === 'hub_concluir') {
+        if (rodada?.status === 'ativa' && !fila.some(f => ['pendente', 'processando'].includes(f.status))) rodada.status = 'concluida'
+        return j(null)
+      }
       if (rpc === 'hub_iniciar') {
         if (!rodada) {
           rodada = {
@@ -138,7 +142,11 @@ try {
             criado_em: new Date().toISOString(),
             resumo: body.p_resumo,
           }
-          fila = body.p_itens.map((m, i) => ({
+          fila = []
+        }
+        const novas = body.p_itens.filter(m => !fila.some(f => f.id_usuario === m.id_usuario))
+        if (novas.length && rodada.status !== 'pausada') rodada.status = 'ativa'
+        fila.push(...novas.map((m, i) => ({
             id: 'fila-' + i,
             id_usuario: m.id_usuario,
             mensagem: m,
@@ -146,8 +154,7 @@ try {
             rodada: rodada.id,
             envio_id: null,
             motivo: null,
-          }))
-        }
+          })))
         return j(rodada.id)
       }
       if (rpc === 'hub_proximo') {
@@ -299,6 +306,33 @@ try {
   )
   assert.equal(regras.contaTeste('Tales Roberto', 'real@exemplo.test'), true)
   // A ficha usa as mesmas regras e não manda de novo ao repetir a mesma requisição.
+  // Cenários não ocultam alternativas e o segundo lote do dia acrescenta pessoas sem repetir.
+  consultasFalham = false; rodada = null; fila = []; logs = []; bloqueios.clear(); provedor = 'ok'; proximoPausado = true
+  pessoas.set(A, { ...perfil('Ana'), respondidas: 0, dias_conta: 5 })
+  pessoas.set(B, { ...perfil('Bruno'), respondidas: 155 })
+  const porCenario = await chamar('preparar')
+  const primeira = porCenario.dados.prontas.find(m => m.id_usuario === A)
+  assert.equal(primeira.tipo, 'nunca_comecou')
+  assert.equal((await chamar('iniciar', { cenario: 'pix_hoje', itens: [{ chave: primeira.chave }] })).status, 409, 'um cenário não aceita destinatário de outro')
+  assert.equal((await chamar('iniciar', { cenario: 'inventado', itens: [{ chave: primeira.chave }] })).status, 400)
+  assert.equal((await chamar('iniciar', { cenario: 'nunca_comecou', itens: [{ chave: primeira.chave }] })).status, 200)
+  await esperar()
+  assert.equal(fila.length, 1)
+  const restante = await chamar('preparar')
+  assert.ok(!restante.dados.prontas.some(m => m.id_usuario === A), 'pessoa na fila sai dos cenários')
+  const segunda = restante.dados.prontas.find(m => m.id_usuario === B)
+  assert.equal((await chamar('iniciar', { cenario: 'fogo_apagando', itens: [{ chave: segunda.chave }] })).status, 200)
+  await esperar()
+  assert.equal(fila.length, 2, 'segundo cenário acrescenta outra pessoa na mesma rodada')
+  assert.equal(new Set(fila.map(f => f.id_usuario)).size, 2)
+  assert.equal((await chamar('iniciar', { cenario: 'nunca_comecou', itens: [{ chave: primeira.chave }] })).status, 200)
+  assert.equal(fila.length, 2, 'duplo clique não duplica')
+  const alternativa = regras.selecionarHub([
+    { ...primeira, tipo: 'pix_hoje', prioridade: 0 },
+    { ...primeira, chave: 'retomada', tipo: 'pausa', prioridade: 53 },
+  ], 'fogo_apagando')
+  assert.equal(alternativa.prontas[0].tipo, 'pausa', 'o cenário escolhe sua própria mensagem')
+  assert.ok(!regras.CENARIOS_HUB.some(c => c.tipos.includes('assinou_sem_cronograma')))
   await import(pathToFileURL(join(tmp, 'individual.mjs')))
   provedor = 'ok'
   consultasFalham = false
@@ -318,6 +352,7 @@ try {
     409,
     'modelo aposentado também é recusado no servidor',
   )
+  assert.equal((await chamar('carta', { ...individual, modelo: 'assinou_sem_cronograma' })).status, 409)
   assert.equal((await chamar('carta', individual)).status, 200)
   const depois = envios.length
   assert.equal((await chamar('carta', individual)).status, 409)

@@ -1423,70 +1423,68 @@ var faltam = (c) => diasProva(c) ? `Faltam ${diasProva(c)} para ${c.nomeProva}` 
 var reta_final = [
   {
     id: "v1",
-    assuntos: (c) => [diasProva(c) && nm(c, `faltam ${diasProva(c)}`, `Faltam ${diasProva(c)} para ${c.nomeProva}`), nm(c, "reta final", "Reta final")],
+    assuntos: (c) => [nm(c, "uma ideia para a reta final", "Uma ideia para a reta final")],
     corpo: (c) => [
-      `${faltam(c)}, e lembrei de voc\xEA. Sei como essa fase \xE9: a cabe\xE7a corre atr\xE1s de tudo o que falta, e o corpo pede descanso.`,
-      c.dez ? `Ainda d\xE1 tempo de fazer muita coisa, e voc\xEA j\xE1 tem ${Q(c.r)} no caminho. Isso \xE9 base de verdade.` : "Ainda d\xE1 tempo de fazer muita coisa, e cada quest\xE3o agora conta.",
-      `Se ajudar, nesta fase vale priorizar duas coisas: revisar as quest\xF5es que te pegaram e treinar os temas que mais caem. Nada de conte\xFAdo novo em volume. A Revis\xE3o fica aqui: ${c.link("revisao")}`,
-      c.obs(1),
-      "Conte comigo nessa reta final."
+      J(usaProva(c), `${faltam(c)}. Vale reservar parte do estudo para revisar os erros anteriores.`),
+      "Uma sess\xE3o curta pode ter duas etapas: responder sem consultar e depois ler o coment\xE1rio inteiro, incluindo as alternativas que voc\xEA descartou.",
+      c.obs(1, ["maisEstudada", "melhorArea"]),
+      `O Caderno de erros re\xFAne essas quest\xF5es: ${c.link("erros")}`,
+      "\xC9 uma forma de usar o tempo para esclarecer o que ainda gera d\xFAvida."
     ]
   },
   {
     id: "v2",
-    assuntos: (c) => [nm(c, "uma ideia para a reta final", "Uma ideia para a reta final"), nm(c, "a prova est\xE1 chegando", "A prova est\xE1 chegando")],
+    assuntos: (c) => [nm(c, "revisar o racioc\xEDnio antes da prova", "Revisar o racioc\xEDnio antes da prova")],
     corpo: (c) => [
-      `${faltam(c)}, e estou na torcida.`,
-      momento(c),
-      "Se ajudar, uma ideia: quest\xF5es novas pela manh\xE3, quando a cabe\xE7a est\xE1 fresca; Revis\xE3o \xE0 noite, que pede menos energia; e um simulado por semana, cronometrado, para treinar o tempo e o nervoso.",
-      c.obs(1, ["areaFraca", "melhorArea"]),
-      c.fecho()
+      J(usaProva(c), `${faltam(c)}. Nesta fase, vale olhar tamb\xE9m para os acertos que vieram com d\xFAvida.`),
+      "Ao responder de novo, tente explicar a escolha antes de abrir o coment\xE1rio. Depois, compare seu racioc\xEDnio com a explica\xE7\xE3o de cada alternativa.",
+      c.obs(1, ["maisEstudada", "melhorArea"]),
+      `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
+      "Uma d\xFAvida esclarecida agora j\xE1 torna a pr\xF3xima sess\xE3o mais \xFAtil."
     ]
   },
   {
     id: "v3",
-    assuntos: (c) => [nm(c, "menos conte\xFAdo novo, mais revis\xE3o", "Menos conte\xFAdo novo, mais revis\xE3o")],
+    assuntos: (c) => [nm(c, "um recorte para os pr\xF3ximos dias", "Um recorte para os pr\xF3ximos dias")],
     corpo: (c) => [
-      `${faltam(c)}. Na reta final, o instinto \xE9 correr atr\xE1s de tudo o que falta. Mas o que mais rende \xE9 proteger o que voc\xEA j\xE1 sabe.`,
-      `${c.dez ? `Com ${Q(c.r)} feitas, voc\xEA` : "Voc\xEA"} j\xE1 tem material para isso. O Caderno de erros \xE9 um \xF3timo lugar para come\xE7ar: cada quest\xE3o que te pegou e vira acerto agora \xE9 um ponto garantido no dia: ${c.link("erros")}`,
-      c.obs(1),
-      "Ler o coment\xE1rio completo ajuda a entender por que cada alternativa est\xE1 certa ou errada.",
-      c.fecho()
+      J(usaProva(c), `${faltam(c)}. Se o tempo estiver curto, um recorte pequeno facilita come\xE7ar.`),
+      "Escolha um tema, responda dez quest\xF5es e leia os coment\xE1rios das que errou ou acertou sem seguran\xE7a. O objetivo \xE9 descobrir o detalhe que mudou a resposta.",
+      c.obs(1, ["maisEstudada", "melhorArea"]),
+      `Seu Caderno de erros est\xE1 aqui: ${c.link("erros")}`,
+      "Esse recorte pode orientar o que revisar na sess\xE3o seguinte."
     ]
   },
   {
     id: "v4",
-    requer: (c) => !!c.fatos.areaFraca,
-    assuntos: (c) => [nm(c, "um tema para a reta final", "Um tema para a reta final")],
+    assuntos: (c) => [nm(c, "tempo de prova tamb\xE9m se treina", "Tempo de prova tamb\xE9m se treina")],
     corpo: (c) => [
-      `${faltam(c)}, e queria te mandar uma ideia com carinho.`,
-      c.fato("areaFraca"),
-      `Na reta final, dar aten\xE7\xE3o a um tema assim costuma render mais do que polir um que j\xE1 est\xE1 forte. Dez quest\xF5es por semana bastam, e o tema fica \xE0 sua escolha aqui: ${c.link("treinar")}`,
-      c.obs(1),
-      c.fecho()
+      J(usaProva(c), `${faltam(c)}. Al\xE9m do conte\xFAdo, vale observar o tempo gasto para decidir uma resposta.`),
+      "Em uma sess\xE3o com tempo marcado, identifique onde voc\xEA demora mais. Depois, leia o coment\xE1rio completo dessas quest\xF5es e procure o que faltou reconhecer no enunciado.",
+      c.obs(1, ["maisEstudada", "melhorArea"]),
+      `As quest\xF5es para revisar ficam aqui: ${c.link("revisao")}`,
+      "Assim, o treino mostra onde concentrar a pr\xF3xima revis\xE3o."
     ]
   },
   {
     id: "v5",
-    assuntos: (c) => [nm(c, "revisar as quest\xF5es anteriores", "Revisar as quest\xF5es anteriores")],
+    assuntos: (c) => [nm(c, "o coment\xE1rio depois da resposta", "O coment\xE1rio depois da resposta")],
     corpo: (c) => [
-      `${faltam(c)}. Vale reservar parte do estudo para revisar os erros anteriores.`,
-      "Uma sess\xE3o curta pode servir para reler os coment\xE1rios das quest\xF5es que voc\xEA errou e entender o detalhe que mudou a resposta.",
-      c.obs(1),
-      "Na pr\xF3xima sess\xE3o, tente responder essas quest\xF5es de novo antes de abrir o coment\xE1rio.",
-      c.fecho()
+      J(usaProva(c), `${faltam(c)}. Um cuidado \xFAtil nesta fase \xE9 n\xE3o encerrar a quest\xE3o no gabarito.`),
+      "Mesmo quando acertar, confira por que as outras alternativas n\xE3o servem. Se houver um ponto que ainda precisar de explica\xE7\xE3o, ele merece voltar \xE0 revis\xE3o.",
+      c.obs(1, ["maisEstudada", "melhorArea"]),
+      `Para retomar as quest\xF5es: ${c.link("revisao")}`,
+      "\xC9 uma maneira de distinguir o que ficou claro do que apenas pareceu familiar."
     ]
   },
   {
     id: "v6",
-    requer: (c) => !!c.fatos.melhorArea,
-    assuntos: (c) => [nm(c, "proteja o seu ponto forte", "Proteja o seu ponto forte")],
+    assuntos: (c) => [nm(c, "uma revis\xE3o com come\xE7o e fim", "Uma revis\xE3o com come\xE7o e fim")],
     corpo: (c) => [
-      `${faltam(c)}.`,
-      c.fato("melhorArea"),
-      `Na reta final, vale manter esse tema aquecido com a Revis\xE3o, que leva poucos minutos, e usar o tempo novo nos outros. Assim voc\xEA chega sem perder nada do que j\xE1 conquistou: ${c.link("revisao")}`,
-      c.obs(1),
-      c.fecho()
+      J(usaProva(c), `${faltam(c)}. Uma lista curta de d\xFAvidas pode ajudar a organizar os pr\xF3ximos dias.`),
+      "Ao terminar cada sess\xE3o, anote o conceito que faltou em cada erro. Na pr\xF3xima, responda algumas quest\xF5es desse tema antes de reler a explica\xE7\xE3o.",
+      c.obs(1, ["maisEstudada", "melhorArea"]),
+      `O Caderno de erros ajuda a encontrar esses pontos: ${c.link("erros")}`,
+      "A pr\xF3pria resposta mostra se o conceito ficou mais claro."
     ]
   }
 ];
@@ -2322,10 +2320,7 @@ var obrigado_tempo = [
     ps: () => "P.S.: qualquer resposta, mesmo de uma linha, me ajuda muito."
   }
 ];
-var provaDela = (c) => {
-  const nome = (c.p.provaCronograma ?? "").trim();
-  return nome && nome.length <= 30 && !/[@\d_]/.test(nome) ? `o ${nome}` : c.nomeProva;
-};
+var provaDela = (c) => c.nomeProva;
 var daProvaDela = (c) => provaDela(c).replace(/^o /, "do ").replace(/^a /, "da ");
 var usaProva = (c) => {
   if (c.fatos.cronograma) c.usados.add("cronograma");
@@ -2442,59 +2437,58 @@ var assinou_sem_cronograma = [
 var assinante_parado_7 = [
   {
     id: "v1",
-    assuntos: (c) => [nm(c, "a semana apertou?", "A semana apertou?"), nm(c, "tudo certo por a\xED?", "Tudo certo por a\xED?")],
+    assuntos: (c) => [nm(c, "dez quest\xF5es para retomar", "Dez quest\xF5es para retomar")],
     corpo: (c) => [
-      `Faz ${semanaFora(c)} desde a sua \xFAltima quest\xE3o, e eu quis s\xF3 saber se est\xE1 tudo bem por a\xED.`,
-      "Semana de plant\xE3o, prova da resid\xEAncia, a vida acontecendo: faz parte. O plano continua aqui, e nada se perdeu.",
-      "Para voltar sem peso, uma sugest\xE3o: abra a Revis\xE3o e fa\xE7a dez quest\xF5es. Ela j\xE1 separou as que pedem uma segunda olhada, ent\xE3o \xE9 s\xF3 sentar e fazer.",
+      `Faz ${semanaFora(c)} desde a sua \xFAltima quest\xE3o por aqui. Seu hist\xF3rico e suas marca\xE7\xF5es continuam guardados.`,
+      "Uma forma simples de retomar \xE9 escolher dez quest\xF5es e responder antes de consultar a explica\xE7\xE3o.",
+      "Depois, leia o coment\xE1rio completo das que deixaram d\xFAvida. Isso j\xE1 d\xE1 uma dire\xE7\xE3o para o pr\xF3ximo estudo.",
       `A Revis\xE3o fica aqui: ${c.link("revisao")}`,
       c.fecho()
     ]
   },
   {
     id: "v2",
-    assuntos: (c) => [nm(c, "o cronograma se ajusta", "O cronograma se ajusta sozinho")],
+    assuntos: (c) => [nm(c, "sua pr\xF3xima sess\xE3o pode ser curta", "Sua pr\xF3xima sess\xE3o pode ser curta")],
     corpo: (c) => [
-      momento(c),
-      `Reparei que faz ${semanaFora(c)} desde a sua \xFAltima sess\xE3o. Quis te escrever antes que isso pese, porque n\xE3o precisa pesar.`,
-      "Se voc\xEA usa o cronograma, marque os dias que passaram como plant\xE3o: ele redistribui o que ficou para tr\xE1s, sem quebrar o plano at\xE9 a prova. Se ele ainda est\xE1 por montar, hoje \xE9 um \xF3timo dia para isso, e leva dois minutos.",
-      `Fica aqui: ${c.link("cronograma")}`,
-      c.obs(1, ["melhorArea", "maisEstudada", "prova"])
-    ]
-  },
-  {
-    id: "v3",
-    assuntos: (c) => [nm(c, "dez quest\xF5es para recome\xE7ar", "Dez quest\xF5es para recome\xE7ar")],
-    corpo: (c) => [
-      `Faz ${semanaFora(c)} sem quest\xE3o por aqui, e eu imagino que a rotina tenha apertado. Acontece com todo mundo que estuda trabalhando.`,
-      c.obs(1, ["maisEstudada", "melhorArea", "cronograma"]) ?? `${guardado(c)}, e a fila da Revis\xE3o tamb\xE9m.`,
-      "O jeito mais leve de voltar \xE9 o menor: dez quest\xF5es da Revis\xE3o, no intervalo que der. Amanh\xE3, mais dez. O embalo volta antes do que parece.",
-      `Para come\xE7ar: ${c.link("revisao")}`,
+      `Vi que faz ${semanaFora(c)} desde a \xFAltima sess\xE3o. Talvez uma sess\xE3o menor caiba melhor na semana.`,
+      c.obs(1, ["maisEstudada", "melhorArea"]),
+      "Voc\xEA pode separar dez quest\xF5es, responder e conferir o racioc\xEDnio nos coment\xE1rios. N\xE3o \xE9 preciso reorganizar todo o estudo para voltar.",
+      `Para retomar: ${c.link("revisao")}`,
       c.fecho()
     ]
   },
   {
-    id: "v4",
-    assuntos: (c) => [nm(c, "passando para dar um oi", "Passando para dar um oi")],
+    id: "v3",
+    assuntos: (c) => [nm(c, "por onde voltar ao estudo", "Por onde voltar ao estudo")],
     corpo: (c) => [
-      "Passando s\xF3 para dar um oi. Vi que a \xFAltima semana foi sem quest\xF5es, e quis lembrar que est\xE1 tudo bem: o plano \xE9 seu, no seu ritmo.",
-      momento(c),
-      "Se ajudar, me conta o que atrapalhou: plant\xE3o, cansa\xE7o, qualquer coisa. \xC0s vezes um ajuste pequeno no cronograma resolve, e eu ajudo com carinho a achar esse ajuste.",
-      `Quando quiser voltar, a Revis\xE3o est\xE1 pronta: ${c.link("revisao")}`,
-      c.tempo()
+      `Faz ${semanaFora(c)} desde a sua \xFAltima quest\xE3o. Queria te deixar uma sugest\xE3o para a volta.`,
+      "Retome um tema que voc\xEA j\xE1 estudou. Tentar responder antes de reler ajuda a perceber o que permaneceu claro e o que precisa de aten\xE7\xE3o.",
+      c.obs(1, ["maisEstudada", "melhorArea"]),
+      `A Revis\xE3o pode ser o ponto de partida: ${c.link("revisao")}`,
+      "Se encontrar algum problema para usar o site, pode me contar respondendo este e-mail."
+    ]
+  },
+  {
+    id: "v4",
+    assuntos: (c) => [nm(c, "um recorte pequeno para esta semana", "Um recorte pequeno para esta semana")],
+    corpo: (c) => [
+      `Reparei que passaram ${semanaFora(c)} desde a \xFAltima sess\xE3o por aqui.`,
+      "Se a rotina estiver apertada, escolha um \xFAnico tema e fa\xE7a dez quest\xF5es. Ao conferir o coment\xE1rio, procure o detalhe que distingue a correta das demais.",
+      c.obs(1, ["maisEstudada", "melhorArea"]),
+      `A Revis\xE3o continua dispon\xEDvel: ${c.link("revisao")}`,
+      "O hist\xF3rico anterior permanece salvo, ent\xE3o voc\xEA pode continuar de onde parou."
     ]
   },
   {
     id: "v5",
-    assuntos: (c) => [nm(c, "seu lugar est\xE1 guardado", "Seu lugar est\xE1 guardado")],
+    assuntos: (c) => [nm(c, "retomar sem refazer o planejamento", "Retomar sem refazer o planejamento")],
     corpo: (c) => [
-      momento(c),
-      `Faz ${semanaFora(c)} desde a \xFAltima quest\xE3o, e eu quis te escrever sem press\xE3o nenhuma.`,
-      `${guardado(c)}, o Caderno de erros continua l\xE1 e a Revis\xE3o segue separando o que vale uma segunda olhada.`,
-      "Quando der, cinco quest\xF5es j\xE1 recolocam tudo em movimento. N\xE3o precisa ser hoje, nem ser muito.",
-      `Fica aqui: ${c.link("revisao")}`
-    ],
-    ps: () => "P.S.: se a prova mudou de data, vale atualizar o cronograma. Ele refaz o plano em segundos."
+      `Faz ${semanaFora(c)} desde a sua \xFAltima quest\xE3o. Voc\xEA pode retomar sem montar um cronograma novo.`,
+      "Uma sess\xE3o de dez quest\xF5es j\xE1 permite identificar quais assuntos precisam de uma nova leitura.",
+      "Responda primeiro e consulte o coment\xE1rio depois, inclusive nas quest\xF5es que acertou com d\xFAvida.",
+      `Para come\xE7ar pela Revis\xE3o: ${c.link("revisao")}`,
+      c.fecho()
+    ]
   }
 ];
 var simulado_resultado = [
@@ -2618,52 +2612,50 @@ var depois_prova = [
     id: "v1",
     assuntos: (c) => [nm(c, "como foi a prova?", "Como foi a prova?")],
     corpo: (c) => [
-      J(usaProva(c), `${cap(provaDela(c))} passou, e lembrei de voc\xEA com carinho. Como foi?`),
-      "Pergunto sem esperar resposta pronta. \xC0s vezes a gente sai da prova achando que foi mal e vai bem, e \xE0s vezes o contr\xE1rio. A sensa\xE7\xE3o de hoje ainda n\xE3o \xE9 o resultado.",
-      "Seja como for, o que voc\xEA estudou continua seu, e tudo o que fez por aqui fica guardado.",
-      "Se quiser me contar, \xE9 s\xF3 responder este e-mail. Vou gostar muito de saber."
+      J(usaProva(c), `Pela data que voc\xEA informou, ${provaDela(c)} j\xE1 passou. Como foi?`),
+      "Queria saber quais temas apareceram e se houve alguma quest\xE3o que chamou sua aten\xE7\xE3o.",
+      "Esse relato ajuda a entender melhor a prova e o que vale aprimorar no material de estudo.",
+      "Se quiser contar, pode responder este e-mail. N\xE3o precisa esperar o resultado."
     ]
   },
   {
     id: "v2",
-    assuntos: (c) => [nm(c, "e a\xED, como foi?", "E a\xED, como foi?")],
+    assuntos: (c) => [nm(c, "o que achou da prova?", "O que achou da prova?")],
     corpo: (c) => [
-      J(usaProva(c), `Passando para saber como foi ${provaDela(c)}. Espero que a v\xE9spera tenha sido tranquila e que as quest\xF5es tenham parecido conhecidas.`),
-      "Agora \xE9 hora de descansar de verdade. Alguns dias sem quest\xE3o nenhuma s\xE3o merecidos.",
-      c.dez ? `Foram ${Q(c.r)} at\xE9 aqui, e cada uma contou.` : "Cada hora de estudo at\xE9 aqui contou.",
-      "Quando sair o gabarito, se alguma quest\xE3o ficar martelando, me escreve. Eu gosto de conversar sobre isso.",
-      c.fecho()
+      J(usaProva(c), `Como foi ${provaDela(c)}? Vi que a data informada no cronograma j\xE1 passou.`),
+      "O que voc\xEA achou do n\xEDvel das quest\xF5es e do tempo dispon\xEDvel?",
+      "Se algum tema apareceu de um jeito diferente do esperado, vou gostar de conhecer esse exemplo.",
+      "Pode responder por aqui, quando fizer sentido para voc\xEA."
     ]
   },
   {
     id: "v3",
-    assuntos: (c) => [nm(c, "depois da prova, um respiro", "Depois da prova, um respiro")],
+    assuntos: (c) => [nm(c, "uma pergunta depois da prova", "Uma pergunta depois da prova")],
     corpo: (c) => [
-      J(usaProva(c), `J\xE1 passou ${provaDela(c)}, e eu quis te mandar um abra\xE7o antes de qualquer resultado.`),
-      "Os dias seguintes costumam ser assim: a cabe\xE7a repassando quest\xE3o por quest\xE3o. Tenta deixar isso de lado agora. O que podia ser feito, voc\xEA fez.",
-      "Se quiser, me conta como foi: o que caiu, o que surpreendeu, o que achou da prova. Vou gostar muito de saber.",
-      "E descansa. Voc\xEA merece alguns dias leves."
+      J(usaProva(c), `${cap(provaDela(c))} j\xE1 passou pela data do seu cronograma. Queria saber como foi a experi\xEAncia.`),
+      "Teve algum assunto que voc\xEA sentiu ter conseguido revisar bem? E algum que fez falta na prepara\xE7\xE3o?",
+      "Seu hist\xF3rico de estudo e suas marca\xE7\xF5es continuam guardados no site.",
+      "Se quiser compartilhar suas impress\xF5es, \xE9 s\xF3 responder este e-mail."
     ]
   },
   {
     id: "v4",
-    assuntos: (c) => [nm(c, "uma pergunta sobre a prova", "Uma pergunta sobre a prova")],
+    assuntos: (c) => [nm(c, "como foram as quest\xF5es?", "Como foram as quest\xF5es?")],
     corpo: (c) => [
-      J(usaProva(c), `${cap(provaDela(c))} passou. Antes de mais nada: parab\xE9ns por ter chegado l\xE1, com tudo o que a rotina pede.`),
-      "Tenho uma pergunta s\xF3: como foi estar l\xE1, durante a prova? N\xE3o o resultado, a sensa\xE7\xE3o. Isso diz muito sobre o que vem pela frente, e sobre o que o site pode melhorar.",
-      "Se a pr\xF3xima etapa j\xE1 tiver data, o cronograma pode ser refeito com ela quando voc\xEA quiser. Sem pressa nenhuma.",
-      "Fico por aqui, esperando not\xEDcias.",
-      c.fecho()
+      J(usaProva(c), `Passando para perguntar como foi ${provaDela(c)}.`),
+      "Quais temas apareceram mais? As alternativas exigiam mais mem\xF3ria, interpreta\xE7\xE3o de imagem ou decis\xE3o de tratamento?",
+      "Esses detalhes s\xE3o \xFAteis para entender o formato da prova e melhorar os pr\xF3ximos materiais.",
+      "Se puder contar um exemplo do que chamou sua aten\xE7\xE3o, pode responder por aqui."
     ]
   },
   {
     id: "v5",
-    assuntos: (c) => [nm(c, "os dias depois da prova", "Os dias depois da prova")],
+    assuntos: (c) => [nm(c, "suas impress\xF5es sobre a prova", "Suas impress\xF5es sobre a prova")],
     corpo: (c) => [
-      J(usaProva(c), "Escrevo uns dias depois de prop\xF3sito: passou a correria, e ainda d\xE1 para lembrar de tudo."),
-      `Como foi ${provaDela(c)}? Fiquei com vontade de saber.`,
-      "Se foi bem, quero comemorar junto. Se foi dif\xEDcil, quero ouvir, e talvez ajudar a pensar no pr\xF3ximo passo. Nos dois casos, o que voc\xEA construiu estudando continua inteiro.",
-      "\xC9 s\xF3 responder este e-mail, do jeito que quiser."
+      J(usaProva(c), `Pelo seu cronograma, ${provaDela(c)} aconteceu nos \xFAltimos dias. Como foi?`),
+      "Se a data tiver mudado, vale atualizar o cadastro para que os pr\xF3ximos lembretes fa\xE7am sentido.",
+      "Se a prova j\xE1 aconteceu, queria saber o que mais surpreendeu e o que foi parecido com o seu treino.",
+      "Voc\xEA pode responder este e-mail com suas impress\xF5es, sem precisar de um relato longo."
     ]
   }
 ];
@@ -3195,24 +3187,33 @@ var ROTULO_FAIXA = {
   "80-90": "80 a 90%",
   "90-100": "90% ou mais"
 };
+function nomeProvaInformado(valor) {
+  const nome = (valor ?? "").replace(/[\r\n\t]+/g, " ").replace(/\s+/g, " ").trim().slice(0, 80);
+  return /^(outra(?: prova)?|outro|n[aã]o informad[oa]|prova)$/i.test(nome) || /[@<>]/.test(nome) || !/\p{L}/u.test(nome) ? "" : nome;
+}
+function provaComArtigo(valor) {
+  const nome = nomeProvaInformado(valor);
+  return !nome ? "a sua prova" : /^(?:TEOT|TEPOT|TARO|ENARE)(?:\b|$)/i.test(nome) ? `o ${nome}` : `a prova de ${nome.replace(/^prova\s+(?:de\s+)?/i, "")}`;
+}
+var TIPOS_APOSENTADOS = ["obrigado_assinatura", "assinou_sem_cronograma"];
 var TIPOS = {
-  nunca_comecou: { grupo: "situacao", rotulo: "Criou a conta e n\xE3o come\xE7ou", descricao: "Uma sugest\xE3o para os primeiros dez minutos; sem n\xFAmero." },
+  nunca_comecou: { grupo: "situacao", rotulo: "Criou a conta e n\xE3o come\xE7ou", descricao: "Conta criada h\xE1 pelo menos um dia e nenhuma quest\xE3o respondida." },
   boas_vindas: { grupo: "situacao", rotulo: "Boas-vindas", descricao: "Chegou nos \xFAltimos 3 dias e j\xE1 respondeu algumas quest\xF5es." },
   comecando: { grupo: "situacao", rotulo: "Come\xE7ando", descricao: "Ativo, com menos de 30 quest\xF5es: pergunta como est\xE1 sendo e d\xE1 uma ideia pr\xE1tica." },
-  comecou_parou: { grupo: "situacao", rotulo: "Come\xE7ou e parou", descricao: "Menos de 30 quest\xF5es e alguns dias sem aparecer. Sem culpa; a Revis\xE3o como volta leve." },
-  pausa: { grupo: "automatico", rotulo: "Pausa curta (3 a 6 dias)", descricao: "Lembrete autom\xE1tico: cita a \xE1rea que a pessoa estava estudando e a Revis\xE3o." },
-  sumiu: { grupo: "situacao", rotulo: "Sumiu", descricao: 'Respondia e est\xE1 h\xE1 10 dias ou mais sem aparecer. "Lembrei de voc\xEA", com a melhor \xE1rea.' },
+  comecou_parou: { grupo: "situacao", rotulo: "Come\xE7ou e parou", descricao: "Menos de 30 quest\xF5es respondidas e alguns dias sem nova sess\xE3o." },
+  pausa: { grupo: "automatico", rotulo: "Fogo apagando: 3 a 6 dias sem estudar", descricao: "\xDAltima sess\xE3o h\xE1 tr\xEAs a seis dias, com hist\xF3rico de estudo anterior." },
+  sumiu: { grupo: "situacao", rotulo: "Sem estudar h\xE1 v\xE1rios dias", descricao: "J\xE1 respondia quest\xF5es e est\xE1 h\xE1 v\xE1rios dias sem estudar; o motivo mostra a janela aplicada." },
   ativo: { grupo: "situacao", rotulo: "Estudando (pela faixa de acerto)", descricao: "Uma voz para cada faixa de acerto, com o que a pessoa tem de especial." },
   obrigado_assinatura: { grupo: "pessoal", rotulo: "Obrigado pela assinatura", descricao: "Aposentado: o agradecimento j\xE1 sai automaticamente no pagamento." },
   convite_20: { grupo: "convite", rotulo: "Convite para assinar (mais de 20 quest\xF5es)", descricao: "Leve: o que o plano faz pela rotina, a garantia, sem pre\xE7o." },
   convite_50: { grupo: "convite", rotulo: "Convite pessoal (mais de 50 quest\xF5es)", descricao: "Dias para a prova, \xE1rea forte, o cronograma como horas devolvidas; garantia." },
-  reta_final: { grupo: "situacao", rotulo: "Reta final", descricao: "A prova est\xE1 chegando: modo prova e revis\xE3o." },
-  marco: { grupo: "situacao", rotulo: "Marco de quest\xF5es (100, 250, 500, 1.000, 2.000)", descricao: "O que o n\xFAmero significa em horas e dias." },
+  reta_final: { grupo: "situacao", rotulo: "Reta final", descricao: "A prova informada est\xE1 se aproximando; a carta usa a data e o nome dispon\xEDveis." },
+  marco: { grupo: "situacao", rotulo: "Marco de quest\xF5es (100, 250, 500, 1.000, 2.000)", descricao: "Alcan\xE7ou 100, 250, 500, 1.000 ou 2.000 quest\xF5es respondidas." },
   opiniao: { grupo: "pessoal", rotulo: "Pedir opini\xE3o", descricao: "Tr\xEAs perguntas concretas." },
   indicar: { grupo: "pessoal", rotulo: "Pedir para indicar", descricao: '"Quem voc\xEA conhece que est\xE1 nessa?"; os 7 dias para os dois.' },
   cronograma: { grupo: "pessoal", rotulo: "Apresentar o cronograma", descricao: "Quando ele devolve tempo." },
-  pix_3_dias: { grupo: "automatico", rotulo: "Pix: faltam 3 dias", descricao: "Autom\xE1tico: o acesso pago no Pix est\xE1 acabando. Nada se perde; sem urg\xEAncia." },
-  pix_hoje: { grupo: "automatico", rotulo: "Pix: termina hoje", descricao: "Autom\xE1tico: \xFAltimo dia do acesso pago no Pix. Transacional." },
+  pix_3_dias: { grupo: "automatico", rotulo: "Pix: faltam 3 dias", descricao: "O per\xEDodo de acesso pago no Pix termina em tr\xEAs dias." },
+  pix_hoje: { grupo: "automatico", rotulo: "Pix: termina hoje", descricao: "O per\xEDodo de acesso pago no Pix termina hoje." },
   relatorio: { grupo: "automatico", rotulo: "Resumo de estudo", descricao: "Autom\xE1tico: a quinzena ou o m\xEAs contados como uma hist\xF3ria." },
   boas_vindas_dia0: { grupo: "automatico", rotulo: "Boas-vindas no dia da confirma\xE7\xE3o", descricao: "Primeiro login depois de confirmar o e-mail: boas-vindas, as fun\xE7\xF5es do site (quest\xF5es, Cronograma, resumos) e o pedido para contar aos colegas." },
   primeiras_10: { grupo: "automatico", rotulo: "Primeiras 10 quest\xF5es", descricao: "Ao passar de 10 quest\xF5es: o h\xE1bito come\xE7ou." },
@@ -3220,8 +3221,8 @@ var TIPOS = {
   cronograma_pronto: { grupo: "automatico", rotulo: "Cronograma pronto", descricao: "No dia em que a pessoa monta o plano at\xE9 a prova." },
   pagamento_aprovado: { grupo: "automatico", rotulo: "Obrigado pela assinatura", descricao: "Sai quando a assinatura ou a renova\xE7\xE3o \xE9 aprovada: agradecimento, plano, per\xEDodo, o que libera e o link do cronograma. Transacional." },
   obrigado_tempo: { grupo: "automatico", rotulo: "Obrigado pelo tempo de assinatura", descricao: "Cancelou ou pediu reembolso: porta aberta, sem cobran\xE7a." },
-  assinou_sem_cronograma: { grupo: "automatico", rotulo: "Assinou e n\xE3o montou o cronograma", descricao: "Tr\xEAs dias depois de assinar, sem plano: o cronograma como as horas que o plano devolve." },
-  assinante_parado_7: { grupo: "automatico", rotulo: "Assinante parado h\xE1 7 dias", descricao: "Assina e est\xE1 h\xE1 uma semana sem responder: sem culpa, a Revis\xE3o e o cronograma que se ajusta." },
+  assinou_sem_cronograma: { grupo: "automatico", rotulo: "Assinou e n\xE3o montou o cronograma", descricao: "Aposentado: montar um cronograma \xE9 opcional." },
+  assinante_parado_7: { grupo: "automatico", rotulo: "Assinante parado h\xE1 7 dias", descricao: "Assinatura ativa e pelo menos uma semana sem responder quest\xF5es." },
   simulado_resultado: { grupo: "automatico", rotulo: "Resultado do Simulado Nacional", descricao: "Quando a edi\xE7\xE3o fecha: obrigado por ter feito, o que o resultado mostra e o que fazer com ele." },
   vespera_prova: { grupo: "automatico", rotulo: "V\xE9spera da prova", descricao: "Na v\xE9spera da data do cronograma: orienta\xE7\xF5es pr\xE1ticas e boa prova." },
   depois_prova: { grupo: "automatico", rotulo: "Depois da prova: como foi?", descricao: "De 1 a 3 dias depois da data do cronograma: pergunta como foi, sem presumir o resultado." },
@@ -3234,7 +3235,7 @@ var TIPOS = {
   simulado_lembrete: { grupo: "automatico", rotulo: "Lembrete do Simulado Nacional", descricao: "Para quem se inscreveu: a edi\xE7\xE3o abre amanh\xE3 (ou abriu hoje), quantas quest\xF5es, quanto tempo e at\xE9 quando d\xE1 para fazer." }
 };
 var TIPOS_AUTOMATICOS_NOVOS = ["boas_vindas_dia0", "primeiras_10", "voltou", "cronograma_pronto", "pagamento_aprovado", "obrigado_tempo"];
-var TIPOS_CAMPANHAS_DIARIAS = ["assinou_sem_cronograma", "assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema", "simulado_lembrete"];
+var TIPOS_CAMPANHAS_DIARIAS = ["assinante_parado_7", "simulado_resultado", "vespera_prova", "depois_prova", "aniversario", "um_ano", "indicacao_deu_certo", "resumo_do_tema", "simulado_lembrete"];
 var TIPOS_TRANSACIONAIS = ["pix_hoje", "pagamento_aprovado", "obrigado_tempo", "relato_resolvido", "alerta_admin"];
 var ASSINATURA = "Um abra\xE7o,\nTales, do Orto Quest\xF5es";
 var DATA_TEOT = "2027-01-10T12:00:00-03:00";
@@ -3431,8 +3432,8 @@ function fatosDe(p, hoje = /* @__PURE__ */ new Date()) {
   let diasProva2 = p.diasParaProva === null || p.diasParaProva === void 0 ? NaN : Number(p.diasParaProva);
   if (!Number.isFinite(diasProva2) && p.provaData) diasProva2 = Math.ceil((new Date(p.provaData).getTime() - hoje.getTime()) / 864e5);
   if (Number.isFinite(diasProva2) && diasProva2 >= 1 && diasProva2 <= 730) {
-    const nome = (p.provaCronograma ?? "").trim();
-    f.cronograma = { dias: Math.round(diasProva2), prova: nome && nome.length <= 30 && !/[@\d_]/.test(nome) ? nome : null };
+    const nome = nomeProvaInformado(p.provaCronograma);
+    f.cronograma = { dias: Math.round(diasProva2), prova: nome || null };
   }
   const servico = (p.servico ?? "").trim();
   if (servico.length >= 3) f.servico = { nome: servico, de: servicoComArtigo(servico) };
@@ -3535,7 +3536,7 @@ function frasesDoFato(chave, f, mostrar) {
       ];
     }
     case "cronograma": {
-      const c = f.cronograma, prova = c.prova ? `o ${c.prova}` : "a sua prova";
+      const c = f.cronograma, prova = provaComArtigo(c.prova);
       return [
         `Vi no seu cronograma que faltam ${dias(c.dias)} para ${prova}. D\xE1 tempo de muita coisa, ainda mais com a lista de cada dia j\xE1 pronta.`,
         `Pelo seu cronograma, ${prova} est\xE1 a ${dias(c.dias)}, e eu estou na torcida.`
@@ -3695,7 +3696,7 @@ function criarCtx(p, tipo, faixa, marco2, rnd, op, estado2) {
   };
   const teot = fatos.prova === "teot" || !fatos.prova && (fatos.etapa === "r3" || fatos.etapa === "r4");
   const diasProva2 = fatos.cronograma?.dias ?? (teot ? diasAteTeot(hoje) : null);
-  const nomeProva = fatos.cronograma?.prova && !/[@\d_]/.test(fatos.cronograma.prova) ? `o ${fatos.cronograma.prova}` : fatos.prova ? NOME_PROVA[fatos.prova] : teot ? "o TEOT" : "a prova";
+  const nomeProva = p.provaData || p.provaCronograma ? provaComArtigo(p.provaCronograma) : fatos.prova ? NOME_PROVA[fatos.prova] : teot ? "o TEOT" : "a sua prova";
   const ctx = {
     p,
     tipo,
@@ -4234,6 +4235,28 @@ function avaliarRisco(e, pesos = PESOS_PADRAO, agora = Date.now()) {
 }
 
 // supabase/functions/_shared/hub-regras.ts
+var CENARIOS_HUB = [
+  { id: "pix_hoje", titulo: "Pix: acesso termina hoje", descricao: "\xDAltimo dia do per\xEDodo pago no Pix.", grupo: "Com prazo", tipos: ["pix_hoje"] },
+  { id: "pix_3_dias", titulo: "Pix: faltam 3 dias", descricao: "O acesso pago no Pix termina em tr\xEAs dias.", grupo: "Com prazo", tipos: ["pix_3_dias"] },
+  { id: "fogo_apagando", titulo: "Fogo apagando", descricao: "J\xE1 estudava e est\xE1 sem responder. A mensagem considera h\xE1 quanto tempo parou.", grupo: "Voltar a estudar", tipos: ["pausa", "sumiu", "como_estao", "assinante_parado_7"] },
+  { id: "comecou_parou", titulo: "Come\xE7ou e parou", descricao: "Deu os primeiros passos, com menos de 30 quest\xF5es, e interrompeu o estudo.", grupo: "Voltar a estudar", tipos: ["comecou_parou"] },
+  { id: "nunca_comecou", titulo: "Criou a conta e n\xE3o come\xE7ou", descricao: "Ainda n\xE3o respondeu nenhuma quest\xE3o. O primeiro convite n\xE3o se repete.", grupo: "Voltar a estudar", tipos: ["nunca_comecou"] },
+  { id: "acesso_terminou", titulo: "Acesso pago terminou", descricao: "O per\xEDodo pago acabou e a pessoa ainda n\xE3o renovou.", grupo: "Voltar a estudar", tipos: ["acesso_terminou"] },
+  { id: "reta_final", titulo: "Reta final", descricao: "A prova se aproxima: revisar erros e treinar com tempo marcado.", grupo: "Provas e estudo", tipos: ["reta_final"] },
+  { id: "vespera_prova", titulo: "A prova \xE9 amanh\xE3", descricao: "V\xE9spera da data informada no cronograma.", grupo: "Provas e estudo", tipos: ["vespera_prova"] },
+  { id: "depois_prova", titulo: "Depois da prova: como foi?", descricao: "De um a tr\xEAs dias depois da prova, sem presumir o resultado.", grupo: "Provas e estudo", tipos: ["depois_prova"] },
+  { id: "simulado_lembrete", titulo: "Simulado: inscri\xE7\xE3o feita", descricao: "Aviso para quem se inscreveu na edi\xE7\xE3o e ainda precisa faz\xEA-la.", grupo: "Provas e estudo", tipos: ["simulado_lembrete"] },
+  { id: "simulado_resultado", titulo: "Resultado do simulado", descricao: "A edi\xE7\xE3o encerrou; o resultado j\xE1 pode ser consultado.", grupo: "Provas e estudo", tipos: ["simulado_resultado"] },
+  { id: "marco", titulo: "Marco de quest\xF5es", descricao: "100, 250, 500, 1.000 ou 2.000 quest\xF5es respondidas.", grupo: "Acompanhar e celebrar", tipos: ["marco"] },
+  { id: "relatorio", titulo: "Resumo de estudo", descricao: "Relat\xF3rios mensais e quinzenais, nas datas devidas.", grupo: "Acompanhar e celebrar", tipos: ["relatorio"] },
+  { id: "aniversario", titulo: "Anivers\xE1rio", descricao: "Anivers\xE1rio da pessoa, sem sugest\xE3o de estudo ou de compra.", grupo: "Acompanhar e celebrar", tipos: ["aniversario"] },
+  { id: "um_ano", titulo: "Anivers\xE1rio da conta", descricao: "Um ano ou mais de Orto Quest\xF5es.", grupo: "Acompanhar e celebrar", tipos: ["um_ano"] },
+  { id: "indicacao_deu_certo", titulo: "Indica\xE7\xE3o deu certo", descricao: "A pessoa indicada alcan\xE7ou o marco necess\xE1rio.", grupo: "Acompanhar e celebrar", tipos: ["indicacao_deu_certo"] },
+  { id: "resumo_do_tema", titulo: "Resumo novo do tema", descricao: "Novidade da Biblioteca relacionada ao estudo da pessoa.", grupo: "Provas e estudo", tipos: ["resumo_do_tema"] },
+  { id: "convite", titulo: "Conhecer o plano completo", descricao: "J\xE1 usa as quest\xF5es e aceitou receber novidades.", grupo: "Convites", tipos: ["convite_20", "convite_50"] },
+  { id: "boas_vindas", titulo: "Primeiros dias de estudo", descricao: "Criou a conta recentemente e j\xE1 come\xE7ou a responder.", grupo: "Acompanhar e celebrar", tipos: ["boas_vindas"] }
+];
+var cenarioValido = (id) => CENARIOS_HUB.some((c) => c.id === id);
 var PRIORIDADE = {
   pix_hoje: 0,
   vespera_prova: 10,
@@ -4243,7 +4266,6 @@ var PRIORIDADE = {
   aniversario: 25,
   depois_prova: 26,
   pix_3_dias: 30,
-  assinou_sem_cronograma: 40,
   marco: 45,
   reta_final: 46,
   assinante_parado_7: 50,
@@ -4333,9 +4355,13 @@ function sugestaoPessoal(id, d, hoje = /* @__PURE__ */ new Date(), site2) {
     fonte: "pessoal"
   };
 }
-function selecionarHub(candidatas) {
+function selecionarHub(candidatas, cenario) {
   const grupos = /* @__PURE__ */ new Map();
-  for (const m of candidatas) grupos.set(m.id_usuario, [...grupos.get(m.id_usuario) ?? [], m]);
+  for (const original of candidatas) {
+    if (cenario && !CENARIOS_HUB.find((c) => c.id === cenario).tipos.includes(original.tipo)) continue;
+    const m = { ...original };
+    grupos.set(m.id_usuario, [...grupos.get(m.id_usuario) ?? [], m]);
+  }
   const prontas = [], adiadas = [];
   for (const grupo of grupos.values()) {
     grupo.sort((a, b) => a.prioridade - b.prioridade || a.chave.localeCompare(b.chave));
@@ -4574,7 +4600,12 @@ async function preparar(variar) {
   const porChave = new Map(bloqueios.map((x) => [x.chave, x.bloqueio]));
   for (const m of candidatas)
     m.bloqueio = porChave.has(m.chave) ? porChave.get(m.chave) : "N\xE3o foi poss\xEDvel conferir as regras";
-  return { dia, ...selecionarHub(candidatas), avisos: [...new Set(avisos)], consultadas: perfis.size };
+  const deHoje = await ler(`email_rodadas?dia=eq.${dia}&select=id`);
+  const enfileiradas = deHoje.length ? await ler(`email_fila?rodada=eq.${deHoje[0].id}&select=id_usuario&limit=2001`) : [];
+  if (enfileiradas.length > 2e3) throw new Error("Fila di\xE1ria excedeu o limite de consulta");
+  const incluidos = new Set(enfileiradas.map((x) => x.id_usuario));
+  for (const m of candidatas) if (incluidos.has(m.id_usuario)) m.bloqueio = "J\xE1 inclu\xEDdo nos envios de hoje";
+  return { dia, opcoes: candidatas, ...selecionarHub(candidatas), avisos: [...new Set(avisos)], consultadas: perfis.size };
 }
 async function estado(rodadaId) {
   const dia = diaSP(), rodadas = await ler(
@@ -4589,6 +4620,7 @@ async function estado(rodadaId) {
   return { dia, rodada, fila, rodadas, automaticos, worker_ativo: await rpc("hub_worker_ativo") };
 }
 async function aindaPertinente(m) {
+  if (TIPOS_APOSENTADOS.includes(m.tipo)) return false;
   const atual = await rpc("dados_carta_usuario", { p_id: m.id_usuario });
   if (!atual?.email || !atual.confirmado || atual.administrador || contaTeste(atual.nome, atual.email) || atual.email !== m.email)
     return false;
@@ -4662,12 +4694,7 @@ async function processar() {
     await new Promise((r) => setTimeout(r, 650));
   }
   const ativas = await ler("email_rodadas?status=eq.ativa&select=id");
-  for (const r of ativas) {
-    const pendentes = await ler(
-      `email_fila?rodada=eq.${r.id}&status=in.(pendente,processando)&select=id&limit=1`
-    );
-    if (!pendentes.length) await gravar(`email_rodadas?id=eq.${r.id}`, { status: "concluida" });
-  }
+  for (const r of ativas) await rpc("hub_concluir", { p_rodada: r.id });
   return { processados: feitos };
 }
 Deno.serve(async (req) => {
@@ -4697,10 +4724,11 @@ Deno.serve(async (req) => {
       if (!await rpc("hub_worker_ativo"))
         return json({ erro: "O processador da fila precisa estar ativo antes de iniciar uma rodada." }, 503, req);
       const atual = await estado();
-      if (atual.rodada) return json(atual, 200, req);
       if (!Array.isArray(p.itens) || !p.itens.length || p.itens.length > 2e3)
         return json({ erro: "selecao_invalida" }, 400, req);
-      const previa = await preparar(), mapa = new Map(previa.prontas.map((x) => [x.chave, x])), vistos = /* @__PURE__ */ new Set(), itens = [];
+      if (p.cenario !== void 0 && !cenarioValido(p.cenario)) return json({ erro: "cenario_invalido" }, 400, req);
+      if (atual.rodada && p.itens.every((i) => atual.fila.some((f) => f.mensagem.chave === i.chave))) return json(atual, 200, req);
+      const previa = await preparar(), selecao = selecionarHub(previa.opcoes, p.cenario), mapa = new Map(selecao.prontas.map((x) => [x.chave, x])), vistos = /* @__PURE__ */ new Set(), itens = [];
       for (const i of p.itens) {
         const m = mapa.get(i.chave);
         if (!m || vistos.has(m.id_usuario))
@@ -4720,11 +4748,12 @@ Deno.serve(async (req) => {
         p_admin: u.id,
         p_itens: itens,
         p_resumo: {
+          cenario: p.cenario ?? "todos",
           consultadas: previa.consultadas,
           avisos: previa.avisos,
           excluidas: [
-            ...previa.adiadas.map((m) => ({ nome: m.nome, motivo: m.bloqueio })),
-            ...previa.prontas.filter((m) => !vistos.has(m.id_usuario)).map((m) => ({ nome: m.nome, motivo: "Pulado pelo administrador" }))
+            ...selecao.adiadas.map((m) => ({ nome: m.nome, motivo: m.bloqueio })),
+            ...selecao.prontas.filter((m) => !vistos.has(m.id_usuario)).map((m) => ({ nome: m.nome, motivo: "Pulado pelo administrador" }))
           ]
         }
       });

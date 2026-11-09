@@ -349,7 +349,7 @@ interface PedidoAutomatico {
 }
 
 /** Os tipos que saem uma vez só por pessoa: a referência é o próprio tipo. */
-const UMA_VEZ: readonly string[] = ['boas_vindas_dia0', 'primeiras_10', 'cronograma_pronto', 'assinou_sem_cronograma']
+const UMA_VEZ: readonly string[] = ['boas_vindas_dia0', 'primeiras_10', 'cronograma_pronto']
 
 /**
  * Um dos seis automáticos novos (17/10/2026). Idempotente por pessoa e referência
@@ -385,7 +385,7 @@ async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: Pedido
     if (diasFora < 10) return { resultado: 'ainda_nao' }
   }
   if (tipo === 'primeiras_10' && respondidas < 10) return { resultado: 'ainda_nao' }
-  let diasParaProva = Number(pedido.dias_para_prova ?? 0) || null, prova = typeof pedido.prova === 'string' ? pedido.prova.slice(0, 30) : null
+  let diasParaProva = Number(pedido.dias_para_prova ?? 0) || null, prova = typeof pedido.prova === 'string' ? pedido.prova.slice(0, 40) : null
   if (tipo === 'cronograma_pronto') {
     const p = await banco(`planos_estudo?usuario_id=eq.${id}&select=data_prova,prova&limit=1`)
     const [plano] = p.ok ? await p.json() as Array<{ data_prova: string; prova: string | null }> : []
@@ -735,7 +735,7 @@ Deno.serve(async (req) => {
       if (grave) return json({ erro: `carta_com_problema: ${grave}` }, 400, req)
       const modelo = typeof corpo.modelo === 'string' && /^[a-z0-9_:-]{1,60}$/.test(corpo.modelo) ? corpo.modelo : null
       const versao = typeof corpo.versao === 'string' && /^[a-z0-9_:#-]{1,80}$/.test(corpo.versao) ? corpo.versao : null
-      if (modelo?.split(':')[0] === 'obrigado_assinatura') return json({ erro: 'modelo_aposentado' }, 409, req)
+      if (['obrigado_assinatura', 'assinou_sem_cronograma'].includes(modelo?.split(':')[0] ?? '')) return json({ erro: 'modelo_aposentado' }, 409, req)
       const lote = corpo.origem === 'lote'
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
 

@@ -372,7 +372,17 @@ try {
   tomOk(cartaAntiga.texto, 'carta antiga')
 
   // 12. Os seis automáticos novos: cada um sai com os dados do acontecimento, transacionais sem descadastro e fora da cadência.
-  const CAMPANHAS = ['assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'simulado_lembrete']
+  for (const tipo of ['reta_final', 'vespera_prova', 'depois_prova']) {
+    for (const nomeProva of ['Outra prova', 'Outra', 'Cirurgia da mão USP', 'R4 de coluna 2027']) {
+      for (let semente = 0; semente < 20; semente++) {
+        const perfil = rico(72, { provaCronograma: nomeProva, provaData: '2026-11-09', diasParaProva: tipo === 'vespera_prova' ? 1 : 27 })
+        const carta = m.gerarCarta(perfil, { tipo, hoje: HOJE, ignorarCadencia: true, semente })
+        assert.ok(!/para o Outra|a prova de Outra|o Outra prova/.test(carta.corpo), carta.corpo)
+        assert.match(carta.corpo, /Outra/.test(nomeProva) ? /sua prova/ : new RegExp(nomeProva), carta.corpo)
+      }
+    }
+  }
+  const CAMPANHAS = [ 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'simulado_lembrete']
   assert.deepEqual([...auto.TIPOS_AUTOMATICOS], ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo', ...CAMPANHAS])
   assert.deepEqual([...auto.CAMPANHAS_DIARIAS], CAMPANHAS)
   for (const t of CAMPANHAS) assert.ok(auto.ehCampanhaDiaria(t) && !auto.ehTransacional(t), t)
@@ -413,7 +423,6 @@ try {
   {
     const ANIV = { ...rico(72), nascimento: '1993-10-15' } // aniversário em HOJE
     const casosCampanha = {
-      assinou_sem_cronograma: { perfis: [rico(72, { assinante: true, diasParaProva: null, provaCronograma: null }), pobre(30, { nome: 'Caio', assinante: true }), pobre(0, { nome: 'Rui', assinante: true })], esperado: /cronograma/i, link: '#/cronograma' },
       assinante_parado_7: { perfis: [rico(72, { assinante: true, diasParado: 9 }), pobre(120, { nome: 'Bia', assinante: true, diasParado: 8 }), pobre(3, { nome: 'Leo', assinante: true, diasParado: 15 })], esperado: /semana|dias/i, link: /#\/(revisao|cronograma)/, extra: { diasFora: 9 } },
       simulado_resultado: { perfis: [rico(72), pobre(40, { nome: 'Caio' }), pobre(0)], esperado: /Simulado Nacional|simulado/, link: '#/simulado-nacional', campanhas: [{ simulado: { acertos: 41, total: 50, posicao: 12, participantes: 180 } }, { simulado: { acertos: 20, total: 50, posicao: null } }, { simulado: { acertos: 8, total: 10, posicao: 45 } }, {}] },
       vespera_prova: { perfis: [rico(72, { diasParaProva: 1 }), pobre(50, { nome: 'Lia', diasParaProva: 1, provaCronograma: 'TARO' }), pobre(0)], esperado: /amanhã/i, link: null },

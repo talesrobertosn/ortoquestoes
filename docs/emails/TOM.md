@@ -8,6 +8,10 @@ gentil, falar sobre tempo, praticidade, sobre estudar fácil; um pouquinho maior
 Vale para todas as versões (`supabase/functions/_shared/cartas-versoes.ts`), para os blocos do motor
 (`cartas.ts`) e para os automáticos (`modelo-email.ts`).
 
+## Atualização de 09/11/2026 (Tales)
+
+Montar cronograma é uma escolha, nunca uma obrigação. Não entrar em contato só porque a pessoa assinou e não montou um. Nos avisos de prova, citar o nome informado no cronograma; “Outra prova” é rótulo de seleção, não nome de exame. Sem nome, usar “a sua prova”. Retomadas sugerem uma sessão concreta e o uso do comentário, sem pressão para montar cronograma. Depois da prova, perguntar pelo conteúdo/formato e pela experiência, sem presumir resultado nem determinar descanso.
+
 ## Atualização de 08/11/2026 (Tales)
 
 Manter a personalização explícita: referências reais a horários de estudo, cidade, serviço,

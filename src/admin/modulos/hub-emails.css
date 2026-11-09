@@ -584,3 +584,183 @@
     flex: 1;
   }
 }
+
+/* Cenários concretos: cada cartão explica o gatilho e permite revisar ou enviar só aquele público. */
+.hub-cenarios {
+  display: grid;
+  gap: 24px;
+}
+.hub-cenarios > .hub-lista__cabeca {
+  padding: 0;
+}
+.hub-cenarios > .hub-lista__cabeca p {
+  max-width: 780px;
+}
+.hub-grupo {
+  display: grid;
+  gap: 12px;
+}
+.hub-grupo > h3 {
+  margin: 0;
+  font-size: 13px;
+  color: var(--a3-cinza);
+  font-weight: 650;
+}
+.hub-cenarios__grade {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.hub-cenario {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  padding: 22px;
+  border: 1px solid var(--a3-linha);
+  border-radius: var(--a3-r-cartao);
+  background: var(--a3-papel);
+}
+.hub-cenario--ativo {
+  border-color: var(--a3-acento);
+  box-shadow: inset 0 3px var(--a3-acento);
+}
+.hub-cenario__topo {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.hub-cenario__topo h4 {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--a3-tinta);
+}
+.hub-cenario__topo > strong {
+  font-size: 28px;
+  line-height: 1;
+  color: var(--a3-acento);
+  font-variant-numeric: tabular-nums;
+}
+.hub-cenario > p {
+  margin: 0;
+  color: var(--a3-cinza);
+  font-size: 13px;
+  line-height: 1.6;
+}
+.hub-cenario > small {
+  margin-top: auto;
+  padding-top: 8px;
+  color: var(--a3-cinza);
+  font-size: 12px;
+}
+.hub-cenario__acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.hub-cenario .hub-cenario__acoes {
+  display: grid;
+}
+.hub-cenario .a3-botao {
+  width: 100%;
+  justify-content: center;
+  font-size: 12px;
+}
+.hub-lista {
+  scroll-margin-top: 24px;
+}
+.hub-pessoa__motivo small {
+  white-space: normal;
+  line-height: 1.5;
+}
+.hub-lista > .hub-adiadas {
+  border-top: 1px solid var(--a3-linha);
+  padding: 18px 24px;
+}
+@media (max-width: 1100px) {
+  .hub-cenarios__grade {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 650px) {
+  .hub-cenarios__grade {
+    grid-template-columns: 1fr;
+  }
+  .hub-cenario {
+    padding: 18px;
+  }
+  .hub-lista__cabeca > .a3-botao {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hub-lista {
+    scroll-behavior: auto;
+  }
+}
+.hub-numeros--dois {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+.hub-numeros--dois > div:nth-child(2) {
+  border-right: 0;
+}
+@media (max-width: 650px) {
+  .hub-dia {
+    padding: 20px;
+    gap: 18px;
+  }
+  .hub-dia h2 {
+    font-size: 24px;
+    margin: 8px 0;
+  }
+  .hub-dia p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .hub-garantias {
+    margin-top: 12px;
+    gap: 8px;
+  }
+  .hub-dia__acao {
+    gap: 8px;
+  }
+  .hub-dia__acao small {
+    font-size: 11px;
+  }
+}
+@media (max-width: 650px) {
+  .hub-lista__cabeca {
+    flex-wrap: wrap;
+  }
+  .hub-lista__cabeca > .hub-cenario__acoes {
+    width: 100%;
+  }
+  .hub-pessoa--fila > .a3-botao {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+.hub-cenarios__controle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--a3-cinza);
+  font-size: 13px;
+  cursor: pointer;
+}
+.hub-cenarios__controle input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--a3-acento);
+  flex-shrink: 0;
+}
+.hub-busca__nota {
+  margin: 0;
+  padding: 0 24px 16px;
+  color: var(--a3-cinza);
+  font-size: 12px;
+  line-height: 1.5;
+}

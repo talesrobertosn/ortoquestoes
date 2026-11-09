@@ -3,14 +3,22 @@ import { chamarFuncao } from '../../servicos/supabase'
 import { dataHora, diaDaSerie } from '../ui/formato'
 import { Painel, Carregando, Faixa } from '../ui/kit'
 import { PreviaCarta } from './cartas-comum'
-import type { MensagemHub } from '../../../supabase/functions/_shared/hub-regras'
+import { CENARIOS_HUB, type MensagemHub } from '../../../supabase/functions/_shared/hub-regras'
 interface Dados {
   rodadas: Array<{
     id: string
     dia: string
     status: string
     criado_em: string
-    resumo?: { excluidas?: Array<{ nome: string; motivo: string }> }
+    resumo?: {
+      excluidas?: Array<{ nome: string; motivo: string }>
+      lotes?: Array<{
+        cenario?: string
+        incluidas?: number
+        em?: string
+        excluidas?: Array<{ nome: string; motivo: string }>
+      }>
+    }
   }>
   rodada: { id: string } | null
   fila: Array<{ id: string; status: string; motivo: string | null; mensagem: MensagemHub }>
@@ -31,7 +39,10 @@ export function HistoricoRodadas() {
     [aberta, setAberta] = useState<string | null>(null)
   useEffect(() => {
     let ativo = true
-    void chamarFuncao<Dados>('hub-emails', { acao: 'estado', ...(selecionada ? { rodada: selecionada } : {}) })
+    void chamarFuncao<Dados>('hub-emails', {
+      acao: 'estado',
+      ...(selecionada ? { rodada: selecionada } : {}),
+    })
       .then((d) => {
         if (ativo) {
           setDados(d)
@@ -47,19 +58,21 @@ export function HistoricoRodadas() {
   }, [selecionada])
   return (
     <Painel
-      titulo="Rodadas diárias"
-      descricao="As últimas 14 rodadas: o que você autorizou, quem ficou de fora e o resultado de cada mensagem."
+      titulo="Envios por dia"
+      descricao="Os últimos 14 dias com envios: cenários autorizados, destinatários e resultado de cada mensagem."
     >
       {erro ? (
         <Faixa tom="erro">{erro}</Faixa>
       ) : !dados ? (
         <Carregando linhas={3} />
       ) : !dados.rodadas.length ? (
-        <p className="a3-mudo">Nenhuma rodada iniciada. Os envios anteriores continuam no registro abaixo.</p>
+        <p className="a3-mudo">
+          Nenhum envio diário iniciado. Os envios anteriores continuam no registro abaixo.
+        </p>
       ) : (
         <div className="a3-pilha">
           <label className="a3-campo">
-            <span>Rodada</span>
+            <span>Dia dos envios</span>
             <select
               className="a3-entrada"
               value={selecionada || dados.rodada?.id || ''}
@@ -69,7 +82,7 @@ export function HistoricoRodadas() {
               }}
             >
               <option value="" disabled>
-                Escolher rodada
+                Escolher dia
               </option>
               {dados.rodadas.map((r) => (
                 <option key={r.id} value={r.id}>
@@ -78,7 +91,36 @@ export function HistoricoRodadas() {
               ))}
             </select>
           </label>
-          {!dados.rodada && <p className="a3-mudo">Escolha uma rodada anterior.</p>}
+          {!dados.rodada && <p className="a3-mudo">Escolha um dia anterior.</p>}
+          {!!dados.rodadas.find((r) => r.id === dados.rodada?.id)?.resumo?.lotes?.length && (
+            <section className="a3-pilha" aria-label="Cenários autorizados neste dia">
+              <h3>Cenários autorizados</h3>
+              {dados.rodadas
+                .find((r) => r.id === dados.rodada?.id)!
+                .resumo!.lotes!.map((lote, i) => (
+                  <div key={i}>
+                    <strong>
+                      {lote.cenario === 'todos'
+                        ? 'Todos os cenários liberados'
+                        : (CENARIOS_HUB.find((c) => c.id === lote.cenario)?.titulo ?? 'Seleção de pessoas')}
+                    </strong>
+                    <p className="a3-pequeno a3-mudo">
+                      {lote.incluidas ?? 0} pessoas incluídas{lote.em ? ` · ${dataHora(lote.em)}` : ''}
+                    </p>
+                    {!!lote.excluidas?.length && (
+                      <details>
+                        <summary>{lote.excluidas.length} contatos fora desta seleção</summary>
+                        {lote.excluidas.map((e, j) => (
+                          <p className="a3-pequeno" key={j}>
+                            {e.nome} · {e.motivo}
+                          </p>
+                        ))}
+                      </details>
+                    )}
+                  </div>
+                ))}
+            </section>
+          )}
           {!!dados.rodadas.find((r) => r.id === dados.rodada?.id)?.resumo?.excluidas?.length && (
             <details>
               <summary>Contatos excluídos na preparação</summary>
@@ -105,7 +147,9 @@ export function HistoricoRodadas() {
                 {f.mensagem.assunto}
                 {f.motivo ? ` · ${f.motivo}` : ''}
               </p>
-              {aberta === f.id && <PreviaCarta assunto={f.mensagem.assunto} corpo={f.mensagem.corpo} descadastro />}
+              {aberta === f.id && (
+                <PreviaCarta assunto={f.mensagem.assunto} corpo={f.mensagem.corpo} descadastro />
+              )}
             </div>
           ))}
         </div>

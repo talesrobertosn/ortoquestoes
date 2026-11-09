@@ -32,6 +32,30 @@ export interface MensagemHub {
   fonte: 'pessoal' | 'campanha' | 'lembrete' | 'mensal' | 'quinzenal'
   origem_dados?: Record<string, unknown>
 }
+export const CENARIOS_HUB = [
+  { id: 'pix_hoje', titulo: 'Pix: acesso termina hoje', descricao: 'Último dia do período pago no Pix.', grupo: 'Com prazo', tipos: ['pix_hoje'] },
+  { id: 'pix_3_dias', titulo: 'Pix: faltam 3 dias', descricao: 'O acesso pago no Pix termina em três dias.', grupo: 'Com prazo', tipos: ['pix_3_dias'] },
+  { id: 'fogo_apagando', titulo: 'Fogo apagando', descricao: 'Já estudava e está sem responder. A mensagem considera há quanto tempo parou.', grupo: 'Voltar a estudar', tipos: ['pausa', 'sumiu', 'como_estao', 'assinante_parado_7'] },
+  { id: 'comecou_parou', titulo: 'Começou e parou', descricao: 'Deu os primeiros passos, com menos de 30 questões, e interrompeu o estudo.', grupo: 'Voltar a estudar', tipos: ['comecou_parou'] },
+  { id: 'nunca_comecou', titulo: 'Criou a conta e não começou', descricao: 'Ainda não respondeu nenhuma questão. O primeiro convite não se repete.', grupo: 'Voltar a estudar', tipos: ['nunca_comecou'] },
+  { id: 'acesso_terminou', titulo: 'Acesso pago terminou', descricao: 'O período pago acabou e a pessoa ainda não renovou.', grupo: 'Voltar a estudar', tipos: ['acesso_terminou'] },
+  { id: 'reta_final', titulo: 'Reta final', descricao: 'A prova se aproxima: revisar erros e treinar com tempo marcado.', grupo: 'Provas e estudo', tipos: ['reta_final'] },
+  { id: 'vespera_prova', titulo: 'A prova é amanhã', descricao: 'Véspera da data informada no cronograma.', grupo: 'Provas e estudo', tipos: ['vespera_prova'] },
+  { id: 'depois_prova', titulo: 'Depois da prova: como foi?', descricao: 'De um a três dias depois da prova, sem presumir o resultado.', grupo: 'Provas e estudo', tipos: ['depois_prova'] },
+  { id: 'simulado_lembrete', titulo: 'Simulado: inscrição feita', descricao: 'Aviso para quem se inscreveu na edição e ainda precisa fazê-la.', grupo: 'Provas e estudo', tipos: ['simulado_lembrete'] },
+  { id: 'simulado_resultado', titulo: 'Resultado do simulado', descricao: 'A edição encerrou; o resultado já pode ser consultado.', grupo: 'Provas e estudo', tipos: ['simulado_resultado'] },
+  { id: 'marco', titulo: 'Marco de questões', descricao: '100, 250, 500, 1.000 ou 2.000 questões respondidas.', grupo: 'Acompanhar e celebrar', tipos: ['marco'] },
+  { id: 'relatorio', titulo: 'Resumo de estudo', descricao: 'Relatórios mensais e quinzenais, nas datas devidas.', grupo: 'Acompanhar e celebrar', tipos: ['relatorio'] },
+  { id: 'aniversario', titulo: 'Aniversário', descricao: 'Aniversário da pessoa, sem sugestão de estudo ou de compra.', grupo: 'Acompanhar e celebrar', tipos: ['aniversario'] },
+  { id: 'um_ano', titulo: 'Aniversário da conta', descricao: 'Um ano ou mais de Orto Questões.', grupo: 'Acompanhar e celebrar', tipos: ['um_ano'] },
+  { id: 'indicacao_deu_certo', titulo: 'Indicação deu certo', descricao: 'A pessoa indicada alcançou o marco necessário.', grupo: 'Acompanhar e celebrar', tipos: ['indicacao_deu_certo'] },
+  { id: 'resumo_do_tema', titulo: 'Resumo novo do tema', descricao: 'Novidade da Biblioteca relacionada ao estudo da pessoa.', grupo: 'Provas e estudo', tipos: ['resumo_do_tema'] },
+  { id: 'convite', titulo: 'Conhecer o plano completo', descricao: 'Já usa as questões e aceitou receber novidades.', grupo: 'Convites', tipos: ['convite_20', 'convite_50'] },
+  { id: 'boas_vindas', titulo: 'Primeiros dias de estudo', descricao: 'Criou a conta recentemente e já começou a responder.', grupo: 'Acompanhar e celebrar', tipos: ['boas_vindas'] },
+] as const
+export type CenarioHub = typeof CENARIOS_HUB[number]['id']
+export const cenarioValido = (id: unknown): id is CenarioHub => CENARIOS_HUB.some(c => c.id === id)
+
 export const PRIORIDADE: Partial<Record<TipoCarta, number>> = {
   pix_hoje: 0,
   vespera_prova: 10,
@@ -41,7 +65,6 @@ export const PRIORIDADE: Partial<Record<TipoCarta, number>> = {
   aniversario: 25,
   depois_prova: 26,
   pix_3_dias: 30,
-  assinou_sem_cronograma: 40,
   marco: 45,
   reta_final: 46,
   assinante_parado_7: 50,
@@ -157,9 +180,13 @@ export function sugestaoPessoal(id: string, d: DadosCartaBanco, hoje = new Date(
   }
 }
 /** Uma decisão por pessoa. Uma opção bloqueada não esconde outra opção permitida. */
-export function selecionarHub(candidatas: MensagemHub[]) {
+export function selecionarHub(candidatas: readonly MensagemHub[], cenario?: CenarioHub) {
   const grupos = new Map<string, MensagemHub[]>()
-  for (const m of candidatas) grupos.set(m.id_usuario, [...(grupos.get(m.id_usuario) ?? []), m])
+  for (const original of candidatas) {
+    if (cenario && !(CENARIOS_HUB.find(c => c.id === cenario)!.tipos as readonly string[]).includes(original.tipo)) continue
+    const m = { ...original }
+    grupos.set(m.id_usuario, [...(grupos.get(m.id_usuario) ?? []), m])
+  }
   const prontas: MensagemHub[] = [],
     adiadas: MensagemHub[] = []
   for (const grupo of grupos.values()) {

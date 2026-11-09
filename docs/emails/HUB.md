@@ -1,4 +1,21 @@
-# Central de e-mails — 08/11/2026
+# Central de e-mails
+
+## Atualização de 09/11/2026 — cenários explícitos
+
+A operação diária agora se organiza pelo motivo concreto: Pix termina hoje, Pix em três dias, fogo apagando, começou e parou, nunca começou, acesso terminou, reta final, véspera, depois da prova, simulados, marcos e datas pessoais. Cada cenário tem contagem, condição, revisão das mensagens e botão próprio. O botão geral escolhe uma mensagem por pessoa entre todos os cenários. Cenários sem pessoas liberadas podem ser exibidos por opção; nenhuma regra é escondida.
+
+É possível enviar um cenário e depois outro no mesmo dia. `hub_iniciar` acrescenta à mesma fila diária, sob bloqueio de linha, com unicidade por destinatário. Fila concluída volta a ativa ao receber pessoas novas; fila pausada continua pausada. `hub_concluir` usa o mesmo bloqueio para não encerrar um acréscimo concorrente. A preparação exclui quem já está na fila, e o servidor remonta a seleção do cenário antes de autorizar cada lote. O histórico registra os cenários e as exclusões de cada seleção.
+
+`assinou_sem_cronograma` foi retirado da seleção, do catálogo e dos envios; o RPC legado não devolve candidatos, o bloqueio central recusa o modelo e itens pendentes desse tipo são adiados. A confirmação de um cronograma que a pessoa escolheu montar continua existindo.
+
+Ao escolher **Outra prova** no cronograma, aparece um campo de nome (até 40 caracteres), obrigatório para salvar/avançar. O nome real é salvo em `planos_estudo.prova`, sem nova coluna. E-mails de reta final/véspera/depois usam esse nome; registros antigos com o rótulo genérico usam **a sua prova**. Nomes como “R4 de coluna 2027” são válidos. Foram reescritas 16 versões de reta final, assinante sem estudar e depois da prova, preservando personalização e cadência.
+
+Verificações: testes HTTP isolados de cenários e fila ampliada; 44.550 combinações do motor; teste SQL `fixtures/sql/hub_cenarios.sql` com ROLLBACK; interface real em claro/escuro a 320, 390 e 1440 px; nome de prova enviado ao RPC no navegador. Nenhuma rodada real é iniciada na validação.
+
+Instalado em 09/11/2026: migração `20261109143037_hub_email_cenarios.sql`, `hub-emails` v3 e `enviar-email` v19, sem iniciar rodada real. O SQL e as funções foram publicados antes da interface. Não exige alteração do HTML dos modelos de autenticação.
+
+---
+
 
 Reformulação pedida pelo Tales, com publicação autorizada em 08/11/2026. SQL instalado e funções `hub-emails` v2 e `enviar-email` v18 publicadas pelo acesso conectado, sem iniciar uma rodada real. Substitui a operação diária nas páginas Prontas,
 Lembretes e Cartas pessoais. Os endereços antigos abrem Hoje. O menu tem Hoje, Histórico e Modelos e regras.

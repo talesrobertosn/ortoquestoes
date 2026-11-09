@@ -10,6 +10,7 @@ import {
 } from '../_shared/modelo-email.ts'
 import {
   TIPOS,
+  TIPOS_APOSENTADOS,
   anterioresDosDados,
   perfilDosDados,
   gerarCarta,
@@ -21,6 +22,8 @@ import {
 } from '../_shared/cartas.ts'
 import {
   PRIORIDADE,
+  cenarioValido,
+  type CenarioHub,
   diaSP,
   selecionarHub,
   sugestaoPessoal,
@@ -296,7 +299,12 @@ async function preparar(variar?: { chave: string; semente: number }) {
   const porChave = new Map(bloqueios.map((x) => [x.chave, x.bloqueio]))
   for (const m of candidatas)
     m.bloqueio = porChave.has(m.chave) ? porChave.get(m.chave)! : 'Não foi possível conferir as regras'
-  return { dia, ...selecionarHub(candidatas), avisos: [...new Set(avisos)], consultadas: perfis.size }
+  const deHoje = await ler<Array<{ id: string }>>(`email_rodadas?dia=eq.${dia}&select=id`)
+  const enfileiradas = deHoje.length ? await ler<Array<{ id_usuario: string }>>(`email_fila?rodada=eq.${deHoje[0].id}&select=id_usuario&limit=2001`) : []
+  if (enfileiradas.length > 2000) throw new Error('Fila diária excedeu o limite de consulta')
+  const incluidos = new Set(enfileiradas.map(x => x.id_usuario))
+  for (const m of candidatas) if (incluidos.has(m.id_usuario)) m.bloqueio = 'Já incluído nos envios de hoje'
+  return { dia, opcoes: candidatas, ...selecionarHub(candidatas), avisos: [...new Set(avisos)], consultadas: perfis.size }
 }
 
 async function estado(rodadaId?: string) {
@@ -318,6 +326,7 @@ async function estado(rodadaId?: string) {
 }
 
 async function aindaPertinente(m: MensagemHub): Promise<boolean> {
+  if (TIPOS_APOSENTADOS.includes(m.tipo)) return false
   const atual = await rpc<DadosCartaBanco>('dados_carta_usuario', { p_id: m.id_usuario })
   if (
     !atual?.email ||
@@ -406,12 +415,7 @@ async function processar() {
     await new Promise((r) => setTimeout(r, 650))
   }
   const ativas = await ler<Array<{ id: string }>>('email_rodadas?status=eq.ativa&select=id')
-  for (const r of ativas) {
-    const pendentes = await ler<unknown[]>(
-      `email_fila?rodada=eq.${r.id}&status=in.(pendente,processando)&select=id&limit=1`,
-    )
-    if (!pendentes.length) await gravar(`email_rodadas?id=eq.${r.id}`, { status: 'concluida' })
-  }
+  for (const r of ativas) await rpc('hub_concluir', { p_rodada: r.id })
   return { processados: feitos }
 }
 
@@ -453,11 +457,14 @@ Deno.serve(async (req) => {
       if (!(await rpc<boolean>('hub_worker_ativo')))
         return json({ erro: 'O processador da fila precisa estar ativo antes de iniciar uma rodada.' }, 503, req)
       const atual = await estado()
-      if (atual.rodada) return json(atual, 200, req)
       if (!Array.isArray(p.itens) || !p.itens.length || p.itens.length > 2000)
         return json({ erro: 'selecao_invalida' }, 400, req)
+      if (p.cenario !== undefined && !cenarioValido(p.cenario)) return json({ erro: 'cenario_invalido' }, 400, req)
+      // Um clique repetido na mesma seleção não acrescenta nem reenvia ninguém.
+      if (atual.rodada && p.itens.every((i: { chave: string }) => atual.fila.some(f => f.mensagem.chave === i.chave))) return json(atual, 200, req)
       const previa = await preparar(),
-        mapa = new Map(previa.prontas.map((x) => [x.chave, x])),
+        selecao = selecionarHub(previa.opcoes, p.cenario as CenarioHub | undefined),
+        mapa = new Map(selecao.prontas.map((x) => [x.chave, x])),
         vistos = new Set<string>(),
         itens: MensagemHub[] = []
       for (const i of p.itens) {
@@ -480,11 +487,12 @@ Deno.serve(async (req) => {
         p_admin: u.id,
         p_itens: itens,
         p_resumo: {
+          cenario: p.cenario ?? 'todos',
           consultadas: previa.consultadas,
           avisos: previa.avisos,
           excluidas: [
-            ...previa.adiadas.map((m) => ({ nome: m.nome, motivo: m.bloqueio })),
-            ...previa.prontas
+            ...selecao.adiadas.map((m) => ({ nome: m.nome, motivo: m.bloqueio })),
+            ...selecao.prontas
               .filter((m) => !vistos.has(m.id_usuario))
               .map((m) => ({ nome: m.nome, motivo: 'Pulado pelo administrador' })),
           ],
