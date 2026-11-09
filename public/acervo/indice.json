@@ -1,13 +1,13 @@
 {
   "versao": 1,
-  "geradoEm": "2026-11-09T11:50:13-03:00",
-  "total": 8444,
+  "geradoEm": "2026-11-09T12:16:43-03:00",
+  "total": 8446,
   "temas": [
     {
       "slug": "mao",
       "nome": "Mão e punho",
       "arquivo": "temas/mao.json",
-      "total": 2474
+      "total": 2476
     },
     {
       "slug": "ombro-cotovelo",
@@ -42025,6 +42025,42 @@
       "t": 0,
       "s": [
         7
+      ],
+      "p": 19,
+      "a": 2024,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2631",
+      "t": 0,
+      "s": [
+        9,
+        24
+      ],
+      "p": 19,
+      "a": 2024,
+      "d": null,
+      "img": 0,
+      "an": 0,
+      "c": 1,
+      "cia": 1,
+      "cc": 0,
+      "sim": 1,
+      "ar": "mao"
+    },
+    {
+      "id": "mao-2632",
+      "t": 0,
+      "s": [
+        16,
+        18
       ],
       "p": 19,
       "a": 2024,

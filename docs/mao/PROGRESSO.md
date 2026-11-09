@@ -15,7 +15,7 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 100 | 0 | mao-2278 a mao-2377 | A 27, B 25, C 25, D 23 |
 | SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 100 | 0 | mao-2613 a mao-2624; mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
 | SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 99 | 1 | mao-2189 a mao-2277; ombro-cotovelo-0676 a ombro-cotovelo-0685 | A 25, B 25, C 25, D 24 |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 96 | 4 | mao-2619 a mao-2630; mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 98 | 2 | mao-2619 a mao-2632; mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -407,8 +407,8 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 24 | Bloqueio interescalênico | afirmativas | cap. 1, p. 2 e 5 | mao / Anestesia em cirurgia da mão | 09 | mao-2061 | publicada |
 | 25 | Prega palmar formada pela flexão das MF ulnares | anatomia | sem página na correção | mao / Anatomia da mão e punho | 21 | mao-2619 | publicada (Green 7ª ed., 09/11/2026) |
 | 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | pendente: sem fonte (linha cardinal de KAPLAN não está no Green) |
-| 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist | mao / Instabilidade do carpo | 04 |  | pendente: sem fonte (valores do ângulo SL não estão no Green) |
-| 28 | Teste de BERGER | epônimo | correção cita The Wrist | mao / Exame físico da mão e punho | 11 |  | pendente: sem fonte (teste de BERGER não está no Green; os PDFs do Pardini são imagem, sem texto pesquisável) |
+| 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist | mao / Instabilidade do carpo | 23 | mao-2631 | publicada (The Wrist, 2ª ed., 09/11/2026) |
+| 28 | Teste de BERGER | epônimo | correção cita The Wrist | mao / Exame físico da mão e punho | 23 | mao-2632 | publicada (The Wrist, 2ª ed., 09/11/2026) |
 | 29 | Melhor indicação da transferência de dedo do pé | indicação | cap. 36, p. 1404 e 1423 | mao / Outras malformações congênitas | 16 | mao-2091 | publicada |
 | 30 | Kienböck na criança: conduta (algoritmo de Lichtman) | conduta | cap. 16, p. 733 | mao / Doença de Kienböck | 06 | mao-2049 | publicada |
 | 31 | Procedimento de LEECHAVENGVONGS | afirmativas | cap. 34, p. 1328 a 1330 | mao / Plexo braquial e paralisia obstétrica | 13 | mao-2080 | publicada (ângulo: divisão anterior do axilar, rotina no Green) |
@@ -1052,5 +1052,5 @@ SIMÃO 2021 (37, 57, 59, 78 e 81; mao-2608 a mao-2612), SBCM 2022 (5, 44, 52, 74
 Lotes: `simao-2022/lote_19.py` a `lote_21.py`, `simao-2021/lote_21.py`, `sbcm-2022/lote_22.py` e `lote_23.py`, `sbcm-2024/lote_21.py`. A 8 da SIMÃO 2022 e a 44 da SBCM 2022 tinham figura e viraram texto.
 Divergência registrada: SIMÃO 2022 nº 28 (gabarito oficial "extensão dos dedos"; o Green 7 dá a extensão do punho como função mais necessária no grupo 1). A 57 do SIMÃO 2021 não tinha gabarito; a resposta segue o Green.
 
-**Ainda sem fonte local:** SIMÃO 2021 nº 69 (arco de CHEN) e 89 (espessura do fio 10-0); SIMÃO 2022 nº 34 (microanastomose); SIMÃO 2023 nº 37, 38 e 89; SBCM 2023 nº 56; SBCM 2024 nº 26, 27 e 28.
+**Ainda sem fonte local:** SIMÃO 2021 nº 69 (arco de CHEN) e 89 (espessura do fio 10-0); SIMÃO 2022 nº 34 (microanastomose); SIMÃO 2023 nº 37, 38 e 89; SBCM 2023 nº 56; SBCM 2024 nº 26 (a Fig. 56.4 do The Wrist mostra a linha cardinal, mas não o marco do ramo motor). As nº 27 e 28 da SBCM 2024 saíram com o The Wrist (Cooney, 2ª ed., 2010; mao-2631 e mao-2632). O PDF dele é escaneado: ler por OCR só as páginas necessárias (página impressa = folha do PDF menos 12).
 **Figuras convertidas em texto (09/11/2026):** SBCM 2022 nº 19, 21, 34, 45 e 54 (mao-2620 a mao-2624) e SBCM 2024 nº 2, 19, 23, 71, 72 e 76 (mao-2625 a mao-2630). A SBCM 2024 nº 79 (camadas embrionárias) não virou questão nova: o conceito já está na mao-2004.
