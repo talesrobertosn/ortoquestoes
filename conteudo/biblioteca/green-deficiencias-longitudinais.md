@@ -156,7 +156,7 @@ Sobre a frequência, o HEBERT e o Lovell and Winter (p. 932) afirmam que o **tip
 conceito: BAYNE e KLUG modificada: 1, rádio distal mais de 2 mm curto; 2, hipoplasia distal e proximal, com fise distal presente; 3, fise distal ausente e proximal de hipoplasia variável (ausência parcial); 4, rádio ausente.
 como: A USP-SP 2024 e o ENARE 2023 pediram o tipo sem fise distal; a USP-SP 2026, o tipo com hipoplasia proximal e distal e fise presente; o INTO 2023 e o TARO 2007, o rádio hipoplásico; o SIMÃO 2022 e 2024 e a SBCM 2023 e 2024 (simulados), as linhas 2 e 3 da tabela; o TEOT 2025, o tipo pela radiografia.
 armadilha: Chamar de tipo 2 a "ausência parcial" (é o 3) ou de tipo 3 o rádio pequeno mas inteiro (é o 2); e esquecer que hipoplasia só da epífise distal é o tipo 1.
-alerta: `mao-0609` está sem gabarito na lista; os livros sustentam "hipoplasia total do rádio" para o tipo II (rádio em miniatura; HEBERT, Fig. 6.29). Em `mao-0406` a imagem não foi conferida aqui; a ficha sustenta que o gabarito (tipo IV) corresponde à ausência completa do rádio. Em `mao-1411`, `mao-1549` e `mao-1852` o gabarito segue o Green; a figura 12.73 do Tachdjian põe a ausência da placa de crescimento no tipo II.
+alerta: `mao-0609` está sem gabarito na lista; os livros sustentam "hipoplasia total do rádio" para o tipo II (rádio em miniatura; HEBERT, Fig. 6.29). Em `mao-0406` a imagem da questão mostra a ulna única e curva, sem rádio, o que confirma o gabarito (tipo IV, ausência completa do rádio). Em `mao-1411`, `mao-1549` e `mao-1852` o gabarito segue o Green; a figura 12.73 do Tachdjian põe a ausência da placa de crescimento no tipo II.
 !fim
 
 # A anatomia do antebraço radial {radar=confirmado}
@@ -242,7 +242,7 @@ Nos tipos 3 e 4 unilaterais, o antebraço afetado tem em geral **metade** do com
 conceito: Tipos 0, 1 e 2 leve ficam com alongamento e tala; alongamento do rádio é opção no tipo 2 grave; centralização nos tipos 3 e 4, facilitada pela distração prévia com fixador externo uniplanar ou circunferencial; VILKKI é do tipo 4; cotovelo rígido em extensão contraindica.
 como: A USP-SP 2025 pediu a afirmação correta sobre o tratamento por tipo; a USP-SP 2026, o procedimento que alonga as partes moles antes da centralização; a PUC-SP 2022, em questão discursiva com imagem, o diagnóstico, a classificação, as síndromes, os objetivos e as etapas cirúrgicas.
 armadilha: Indicar alongamento do rádio no tipo IV (não há rádio), VILKKI no tipo II, ou dizer que a distração prévia impede a centralização.
-alerta: `mao-1233` é discursiva, sem gabarito, e a imagem não foi conferida aqui. Se for mão torta radial, o livro sustenta: classificação de BAYNE e KLUG modificada (N, 0 e 1 a 4) com BLAUTH para o polegar; síndromes HOLT-ORAM, TAR, FANCONI e VACTERL; as seis metas do Green (p. 1334); e a sequência alongamento e tala desde o nascimento, distração prévia se o punho não reduz, centralização por volta de 1 ano e polegar em segundo tempo.
+alerta: `mao-1233` é discursiva, sem gabarito; a imagem mostra o rádio ausente e a mão em ângulo reto (mão torta radial tipo 4). O livro sustenta: classificação de BAYNE e KLUG modificada (N, 0 e 1 a 4) com BLAUTH para o polegar; síndromes HOLT-ORAM, TAR, FANCONI e VACTERL; as seis metas do Green (p. 1334); e a sequência alongamento e tala desde o nascimento, distração prévia se o punho não reduz, centralização por volta de 1 ano e polegar em segundo tempo.
 !fim
 
 # Hipoplasia do polegar: a classificação de BLAUTH {radar=confirmado}
