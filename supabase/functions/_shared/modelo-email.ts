@@ -75,11 +75,11 @@ export interface DadosMarco {
 }
 
 /** O e-mail pronto, com o modelo e a versão para o histórico. */
-export interface EmailPronto { assunto: string; html: string; texto: string; modelo: string | null; versao: string | null }
+export interface EmailPronto { assunto: string; html: string; texto: string; modelo: string | null; versao: string | null; corpo?: string; personalizacao?: string[] }
 
 function pronto(carta: Carta, descadastro: string | null, aviso: string): EmailPronto {
   const e = renderizarCarta({ assunto: carta.assunto, corpo: carta.corpo, descadastro, textoDescadastro: aviso })
-  return { ...e, modelo: carta.modelo, versao: carta.versao }
+  return { ...e, modelo: carta.modelo, versao: carta.versao, corpo: carta.corpo, personalizacao: carta.personalizacao }
 }
 
 function perfilDe(d: { nome: string | null; respondidas: number; acertos?: number; erros?: number; respondidas7d?: number }, extra?: PerfilCarta | null): PerfilCarta {

@@ -232,6 +232,7 @@ def topo(titulo: str, descricao: str, caminho: str, extra: str = "", raiz: str =
     <a href="{raiz}curso-preparatorio-teot/">Curso preparatório</a>
     <a href="{raiz}cirurgia-da-mao/">Cirurgia da mão</a>
     <a href="{raiz}guias/">Guias de estudo</a>
+    <a href="{raiz}blog/">Blog</a>
     <a href="{raiz}#/treinar">Treinar</a>
     <a href="{raiz}sobre/">Sobre</a>
   </nav>
@@ -251,6 +252,8 @@ def rodape(raiz: str = "../") -> str:
     Os comentários se baseiam na bibliografia de referência da especialidade.
     <a href="{raiz}#/contato">Encontrou um erro?</a>
     · <a href="{raiz}guias/">Guias de estudo</a>
+    · <a href="{raiz}blog/">Blog</a>
+    · <a href="{raiz}blog/como-estudar-por-questoes/">Como estudar por questões</a>
     · <a href="{raiz}resumos/">Resumos de capítulos</a>
     · <a href="{raiz}banco-de-questoes-ortopedia/">Banco de questões de ortopedia</a>
     · <a href="{raiz}teot/">TEOT</a>

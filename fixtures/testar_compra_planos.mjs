@@ -102,17 +102,19 @@ try {
     assert.ok((await destaque.innerText()).includes('Prepare-se para o TEOT por menos que uma pizza por mês'), 'Mensal sem a pizza no computador')
     assert.ok((await destaque.innerText()).includes('Mudou de ideia? Em até 7 dias, você pede o reembolso com um só clique.'), 'Mensal sem a garantia')
     assert.ok((await pagina.locator('.vd-heroi').innerText()).includes('7 dias de garantia'), 'Garantia fora do topo')
-    // Suporte logo abaixo dos planos, fora da caixa verde, com o assunto da assinatura já escolhido.
-    const suporte = pagina.locator('.vd-suporte--topo').getByRole('link', { name: 'Fale com o suporte' })
+    // Tudo o que é da compra fica dentro da caixa verde, na mesma linguagem (Tales, 09/11/2026: o bilhete de
+    // inauguração e o suporte soltos embaixo dela deixavam a página desconexa). Ordem: planos, inauguração, selos,
+    // e a linha de baixo com o guia do blog e o suporte (com o assunto da assinatura já escolhido).
+    const suporte = pagina.locator('.vd-heroi .vd-suporte--topo').getByRole('link', { name: 'Fale com o suporte' })
     assert.match(await suporte.getAttribute('href'), /contato\?assunto=assinatura$/, 'Atalho do suporte sem o assunto')
-    assert.equal(await pagina.locator('.vd-heroi .vd-suporte').count(), 0, 'O atalho do suporte deveria ficar fora da caixa verde')
-    assert.equal(await pagina.locator('.vd-suporte--final').count(), 1, 'Atalho do suporte ausente no fim da página')
-    // Preço de inauguração: fora da caixa verde, logo acima do atalho do suporte.
-    const inauguracao = pagina.locator('.vd-depois-planos .vd-abertura:not(.vd-abertura--guardado)')
+    assert.equal(await pagina.locator('.vd-final .vd-suporte--final').count(), 1, 'Atalho do suporte ausente no fim da página')
+    assert.equal(await pagina.locator('.vd-depois-planos').count(), 0, 'Ainda há um bloco solto embaixo da caixa verde')
+    const guia = pagina.locator('.vd-heroi .vd-guia-estudo')
+    assert.match(await guia.getAttribute('href'), /blog\/como-estudar-por-questoes\/$/, 'Guia de estudo por questões ausente abaixo dos planos')
+    const inauguracao = pagina.locator('.vd-heroi .vd-abertura--faixa')
     assert.match(await inauguracao.innerText(), /este preço é seu para sempre/, 'Aviso de inauguração ausente')
-    assert.equal(await pagina.locator('.vd-heroi .vd-abertura').count(), 0, 'O aviso de inauguração deveria ficar fora da caixa verde')
-    const [yAviso, ySuporte] = [(await inauguracao.boundingBox()).y, (await pagina.locator('.vd-suporte--topo').boundingBox()).y]
-    assert.ok(yAviso < ySuporte, 'O aviso de inauguração deveria vir acima do suporte')
+    const [yPlanos, yAviso, ySuporte] = [(await topo.boundingBox()).y + (await topo.boundingBox()).height, (await inauguracao.boundingBox()).y, (await pagina.locator('.vd-suporte--topo').boundingBox()).y]
+    assert.ok(yPlanos <= yAviso && yAviso < ySuporte, 'A ordem deveria ser: planos, inauguração, suporte')
     if (process.env.PRINTS) {
       await inauguracao.scrollIntoViewIfNeeded(); await pagina.waitForTimeout(1200)
       await pagina.screenshot({ path: join(process.env.PRINTS, 'inauguracao-computador.png') })
@@ -264,7 +266,7 @@ try {
       assert.equal((await pizza.innerText()).trim(), 'Custa menos que uma pizza por mês')
       assert.ok((await pizza.boundingBox()).height < 30, 'A pizza quebrou em duas linhas no celular')
       if (process.env.PRINTS) {
-        await pagina.locator('.vd-depois-planos').scrollIntoViewIfNeeded(); await pagina.evaluate(() => scrollBy(0, 120))
+        await pagina.locator('.vd-compra-rodape').first().scrollIntoViewIfNeeded(); await pagina.evaluate(() => scrollBy(0, 120))
         await pagina.screenshot({ path: join(process.env.PRINTS, 'suporte-celular.png') })
       }
     }

@@ -6,7 +6,9 @@ import { registrarTitulosResumos } from '../../componentes/admin/formatos'
 import { CORTESIA_ADMIN, PLANO_CORTESIA, rotuloPlano } from '../../componentes/admin/rotulos'
 import { planosEmDestaque, viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
 import { usarRpc } from '../../componentes/admin/usarRpc'
-import { usarFunil, usarSerie } from '../dados/consultas'
+import { serieLimpa, usarFunil, usarSerie } from '../dados/consultas'
+import { Comparacoes, Destaques, Graficos, Termometro } from './central'
+import { FaixaMetas } from './metasResumo'
 import { usarPainel } from '../dados/painel'
 import { nomeDe, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
@@ -72,7 +74,8 @@ function Temperatura({ t }: { t: ReturnType<typeof temperatura> }) {
 type Filtro = 'todos' | 'assinante' | 'nao' | 'lead'
 /** As listas da página: o que está acontecendo agora e tudo de hoje. Cada número do topo abre uma delas. */
 type Vista = 'online' | 'assinantes' | 'viram' | 'limite' | 'estudaram' | 'cadastros' | 'ausentes' | 'viram30'
-const POR_VEZ = 30
+// 12 de cada vez: a linha do dia fica logo abaixo, sem rolar demais (Tales, 04/11/2026).
+const POR_VEZ = 12
 
 /**
  * Página inicial do painel (revisão de 02/11/2026, pedido do Tales: "botões clicáveis, mostrar fácil assinantes hoje e
@@ -87,7 +90,8 @@ const POR_VEZ = 30
 export default function Inicio() {
   const p = usarPainel()
   const nav = usarNav()
-  const serieQ = usarSerie(7, true)
+  // 35 dias: os gráficos comparam semanas; continua uma consulta só, a cada 5 minutos.
+  const serieQ = usarSerie(35, true)
   const { funil } = usarFunil()
   const fila = usarFila()
   const irDestino = useIrDestino()
@@ -110,8 +114,9 @@ export default function Inicio() {
     if (!p.usuarios) return null
     const hoje = diaSP(Date.now())
     const sinal = (u: LinhaUsuario) => p.sinais.get(u.id_usuario)
-    // Administrador é sempre "não assinante" (acesso de cortesia, nunca possível pagador), mesmo vendo os planos.
-    const tipoDe = (u: LinhaUsuario): Tipo => u.administrador ? 'gratis' : u.plano_vigente ? 'assinante' : planosEmDestaque(sinal(u)?.planos_ultima) ? 'lead' : 'gratis'
+    // Administrador conta como assinante no "Agora no site" (Tales, 05/11/2026): tem acesso completo, então não é
+    // "não assinante" nem possível pagador. Continua fora das listas de quem paga (assinantes hoje, ausentes).
+    const tipoDe = (u: LinhaUsuario): Tipo => u.administrador || u.plano_vigente ? 'assinante' : planosEmDestaque(sinal(u)?.planos_ultima) ? 'lead' : 'gratis'
     const ordemTipo: Record<Tipo, number> = { lead: 0, assinante: 1, gratis: 2 }
     // Administradores aparecem no que é presença (online, estudaram, cadastros), com o selo "Admin" (Tales, 03/11/2026),
     // e ficam fora das listas de quem paga ou pode pagar (assinantes, viram os planos, limite, ausentes).
@@ -224,6 +229,7 @@ export default function Inicio() {
         </>}
       </section>}
 
+
     <div className="a3-grade a3-grade--12" style={{ alignItems: 'start' }}>
       <div style={{ gridColumn: 'span 5' }} id="a3-acao" className="a3-ancora">
         <Painel justo titulo={fila.length ? 'Pede ação' : 'Nada pedindo ação'} descricao={fila.length ? 'Do mais grave ao menos grave' : 'Sem falha de pagamento, relato aberto ou fonte fora do ar.'}>
@@ -233,6 +239,15 @@ export default function Inicio() {
       </div>
       <div style={{ gridColumn: 'span 7' }} id="a3-linha" className="a3-ancora"><LinhaDoDia quadro={quadro} /></div>
     </div>
+    <FaixaMetas chaves={['faturamento', 'cadastros', 'novosPagantes', 'ativosFim']} />
+    <Comparacoes />
+
+    <section className="cr-secao" aria-labelledby="cc-observatorio">
+      <header className="cr-secao__cabeca"><span className="cr-secao__numero" aria-hidden="true"><Icone nome="grafico" tamanho={16} /></span><div><h2 id="cc-observatorio">Números do dia a dia</h2><p>Cadastros, estudo, questões e assinaturas em colunas, quem está perto de assinar e quem mais estudou.</p></div></header>
+      <Graficos serie={serieLimpa(serieQ.dados)} />
+      <div className="cr-grade-2"><Termometro limite={limite} /><Destaques /></div>
+    </section>
+
     <div id="a3-listas" className="a3-ancora"><Listas quadro={quadro} /></div>
     <p className="a3-mudo a3-pequeno">Online é quem deu sinal nos últimos 5 minutos. A lista de pessoas se atualiza sozinha a cada 3 minutos e o resto a cada 5; o botão Atualizar, lá em cima, busca na hora.</p>
   </div>

@@ -76,6 +76,8 @@ export interface PlanoMao {
   agenda: DiaMao[]
   /** meta de um dia de estudo normal e quanto o plano previa até ontem (para o ritmo) */
   metaNormal: number
+  /** Questões por dia que fariam o plano inteiro até a reta final, sem o teto do tempo da pessoa. */
+  metaParaTudo: number
   esperadoAteHoje: number
   feitasDesdeInicio: number
   feitasHoje: number
@@ -105,7 +107,17 @@ export interface PlanoMao {
 }
 
 /** Reforço do título: no máximo uma questão de ingresso para cada quatro do padrão SBCM e SIMÃO. */
-export const REFORCO_TITULO = 0.25
+
+/** No título (cobertura completa), quantas questões SBCM/SIMÃO vêm para cada uma de seleção do mesmo assunto. */
+export const FOCO_TITULO = 3
+
+/** Mistura com foco: a cada `foco` da primeira lista entra uma da segunda; o que sobrar da segunda vai para o fim. */
+function comFoco(a: string[], b: string[], foco: number): string[] {
+  const saida: string[] = []
+  let j = 0
+  a.forEach((id, i) => { saida.push(id); if ((i + 1) % foco === 0 && j < b.length) saida.push(b[j++]) })
+  return saida.concat(b.slice(j))
+}
 
 /** Junta duas listas espalhando a segunda pela primeira, na proporção dos tamanhos. */
 function misturar(a: string[], b: string[]): string[] {
@@ -127,10 +139,16 @@ function rankingDoPlano(indice: Indice, prova: ProvaMao, cobertura: ConfigMao['c
   const outra = rankingModalidade(indice, modalidadePorId(prova === 'titulo' ? 'mao-ingresso' : 'mao-titulo')!)
   const daOutra = new Map(outra.temas.map((t) => [t.nome, t]))
   if (prova === 'titulo') {
-    const temas = ranking.temas.map((t) => {
-      const reforco = cobertura === 'essencial' ? [] : (daOutra.get(t.nome)?.ids ?? []).slice(0, Math.ceil(t.ids.length * REFORCO_TITULO))
-      return { ...t, ids: misturar(t.ids, reforco) }
-    })
+    // Tales, 06/11/2026: o título estava "fraquinho" (cerca de 5 questões por dia). Na cobertura completa (a
+    // padrão), as questões de seleção do mesmo assunto entram misturadas, com foco no título: três SBCM/SIMÃO para
+    // cada uma de seleção; as de seleção que sobrarem vêm no fim do assunto, como treino. A essencial fica só com
+    // SBCM/SIMÃO.
+    const temas: TemaRanking[] = ranking.temas.map((t) => ({ ...t, ids: cobertura === 'essencial' ? t.ids : comFoco(t.ids, daOutra.get(t.nome)?.ids ?? [], FOCO_TITULO) }))
+    // Na completa, os assuntos que só a seleção cobra também entram, com metade do peso e prioridade baixa.
+    if (cobertura === 'completa') {
+      const proprios = new Set(ranking.temas.map((t) => t.nome))
+      for (const t of outra.temas) if (!proprios.has(t.nome)) temas.push({ ...t, pctEdicao: Math.round(t.pctEdicao * 5) / 10, nivel: 1, tendencia: null })
+    }
     return { ranking, temas }
   }
   const temas: TemaRanking[] = ranking.temas.map((t) => ({ ...t, ids: misturar(t.ids, daOutra.get(t.nome)?.ids ?? []) }))
@@ -267,7 +285,7 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
     projecaoAlvo: total ? Math.round((100 * (total - cortadas)) / total) : 0,
     projecaoMaisCai: maisCai ? Math.round((100 * (maisCai - maisCaiCortadas)) / maisCai) : 0,
     fimMaisCai: maisCaiFeitas >= maisCai ? null : fimMaisCai,
-    cortadas, tetoAtivo: metaBase > teto,
+    cortadas, tetoAtivo: metaBase > teto, metaParaTudo: metaBase,
     projecao: total ? Math.round((100 * projetadas) / total) : 0,
     ritmo,
     cobertura: temas.length ? Math.round((100 * temas.filter((t) => t.feitas >= Math.min(3, t.ids.length)).length) / temas.length) : 0,
@@ -344,3 +362,10 @@ export function comAdiantado(config: ConfigMao, dia: string, n: number): ConfigM
 }
 
 export const itemConfigMao = (prova: ProvaMao) => `c.mao-${prova}`
+
+/** Quantas questões de cirurgia da mão o acervo tem (seleção e título, sem repetidas nem anuladas). */
+export function acervoMao(indice: Indice): number {
+  const ids = new Set<string>()
+  for (const id of ['mao-ingresso', 'mao-titulo']) for (const t of rankingModalidade(indice, modalidadePorId(id)!).temas) for (const q of t.ids) ids.add(q)
+  return ids.size
+}

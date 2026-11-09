@@ -65,11 +65,11 @@ try {
   const assinaturas = [assinatura('a', 'anual', 'pix', 2), assinatura('b', 'mensal', 'cartao', 3), assinatura('d', 'mensal', 'cartao', 4, { ultima_cobranca_em: null })]
   const reais = [{ id_usuario: 'a', plano: 'anual', meio: 'pix', valor: 349, em: assinaturas[0].ultima_cobranca_em, id_pagamento: '1', situacao: 'paga' }]
   const r = m.receitaDoPeriodo(assinaturas, reais, 7, agora)
-  assert.equal(r.confirmada.atual, 388.9, 'Pix gravado + última cobrança do cartão são confirmados')
+  assert.equal(r.confirmada.atual, 349, 'Só o Pix tem valor gravado; cartão sem aceite é estimativa')
   assert.ok(r.reconstruida > 0, 'paga sem cobrança gravada entra como reconstruída, à parte')
   assert.ok(!Number.isNaN(r.reconstruida + r.confirmada.atual))
   assert.equal(r.porDia.length, 7)
-  assert.equal(Math.round(r.porDia.reduce((s, d) => s + d.confirmada, 0) * 100) / 100, 388.9)
+  assert.equal(Math.round(r.porDia.reduce((s, d) => s + d.confirmada, 0) * 100) / 100, 349)
   assert.equal(Math.round(r.porDia.reduce((s, d) => s + d.reconstruida, 0) * 100) / 100, r.reconstruida)
   assert.equal(r.novas.atual, 3)
 

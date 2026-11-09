@@ -1,5 +1,7 @@
 # Treinar: "mesa de estudo leve" (01/11/2026)
 
+> **Atualização de 08/11/2026:** Tales pediu retirar o preto sólido do bloco “Começar agora” e usar uma arte HD-2D suave e esmaecida, como na inicial. O bloco agora usa a clareira da própria inicial; o cabeçalho continua compacto. Ver “Clareira suave” abaixo.
+
 Pedido do Tales em 01/11/2026: o Halloween acabou; Treinar deixa de ter cena ilustrada no topo e vira a ferramenta
 clara e rápida do mundo OrtoQuestões. A ligação com a página inicial vem da paleta, da tipografia, do ritmo e do tom.
 
@@ -41,7 +43,7 @@ outras páginas. Em Treinar:
 
 | Elemento da inicial | Onde aparece em Treinar |
 |---|---|
-| Painel escuro quente (`--mundo-painel`), tinta marfim, selo dourado (`--mundo-ouro`) | "Começar agora", com os atalhos em vidro e os números dourados como a sequência |
+| Clareira HD-2D esmaecida (`cena-manha-960.webp`), superfícies legíveis e números em verdete | "Começar agora", com tratamento próprio para claro e escuro (pedido de 08/11/2026) |
 | Botão de cristal (`.cristal`) | Toda ação de começar: sessão rápida, "Responder"/"Iniciar prova" no resumo, na barra e na gaveta do celular |
 | Superfícies brancas de 20 px (`--mundo-raio`) com sombra média | Montagem e resumo |
 | Item em fundo recuado; escolhido em verdete-véu com filete à esquerda (`.jn-item`) | Cartões de prova |
@@ -116,3 +118,29 @@ cartões mais baixos (56 px) para caber "Continuar" + seis atalhos na primeira t
 - `node scripts/capturar_telas.mjs /treinar treinar-funcional --com-dados --roteiro fixtures/roteiro_treinar.mjs --pasta DIR`
   confere no navegador: atalhos x contagens, URL compartilhada, "Mais filtros" abrindo sozinho, tirar filtro pelo
   resumo, quantidade personalizada, estado vazio com sugestão, limpar e desfazer, filtro salvo e a sessão rápida de 10.
+
+
+## Clareira suave (08/11/2026)
+
+O fundo decorativo usa `public/pixel/inicio/cena-manha-960.webp` (arte existente da inicial, sem personagens sobre os controles). A URL respeita `BASE_URL`. A paisagem fica num pseudo-elemento estático, sem capturar cliques: no claro, opacidade de 32% com saturação e contraste reduzidos; no escuro, base verde-noite e opacidade de 24%. Os atalhos têm superfícies quase opacas, texto nos tokens da página e contagens em verdete, sem sombra preta. Zero continua desabilitado e tracejado. O botão de cristal dourado mantém a ação principal.
+
+A mudança não volta ao herói grande: nenhum título sobre cena, mascote, canvas ou animação no cabeçalho. Reaproveita um arquivo de cerca de 43 KB já disponível no site. Capturas da revisão em `work/treinar-suave/`, nos temas claro/escuro e larguras 320/390/1440. A conferência específica do painel verifica o fundo aplicado, os quatro atalhos, ausência de transbordamento horizontal e início da sessão rápida com dez questões. O roteiro amplo existente chegou aos filtros e quantidades, mas parou no estado vazio da busca após alterar a quantidade; a busca isolada funciona. Nenhuma lógica de filtros ou sessões foi alterada nesta revisão visual.
+
+### Quatro momentos do dia (09/11/2026)
+
+No cenário automático, o início rápido alterna entre quatro artes existentes, sempre no horário de Brasília:
+
+| Horário | Arte |
+|---|---|
+| 05h–11h59 | Clareira (`cena-manha-960.webp`) |
+| 12h–16h59 | Lago e cais à luz do dia (`cena-cais-manha-960.webp`) |
+| 17h–18h59 | Cais ao pôr do sol (`cena-cais-tarde-960.webp`) |
+| 19h–04h59 | Observatório estrelado (`cena-observatorio-noite-960.webp`) |
+
+As preferências fixas de cenário continuam valendo: manhã, pôr do sol ou noite. A escolha da arte é independente do tema claro/escuro. A página verifica o horário a cada minuto enquanto visível e ao recuperar foco; remove os listeners e o intervalo ao sair. Carrega apenas a arte selecionada e mantém o tratamento esmaecido, sem animação ou mudança nos controles.
+
+`fixtures/testar_paisagem_treinar.mjs` confere fronteiras de horário, madrugada, fuso e escolhas fixas. A revisão no navegador percorre os quatro horários em claro/escuro e celular/computador, incluindo a troca automática com a página aberta. Capturas em `work/treinar-suave/horarios-{claro,escuro}/`.
+
+### Correção do carregamento publicado (09/11/2026)
+
+O primeiro build usou `BASE_URL` relativo dentro da variável CSS. Em desenvolvimento o CSS era injetado na página e a arte aparecia; no CSS externo publicado o navegador buscava incorretamente `/assets/pixel/inicio/...` (404), deixando o painel branco. Treinar agora usa `urlCss()` de `src/config.ts`, como a inicial, resolvendo a imagem pelo endereço absoluto da página. O teste de imagens inclui Treinar e sua variável `--tn-paisagem`. A verificação no navegador passou a usar também `--producao`, conferir o endereço computado e decodificar cada uma das quatro imagens, além de percorrer os horários. Evidências em `work/treinar-suave/correcao-producao/`.

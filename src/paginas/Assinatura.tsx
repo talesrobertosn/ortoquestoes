@@ -18,7 +18,8 @@ import { AvisoPrecoGuardado } from '../componentes/vendas/AvisoPrecoGuardado'
 import { diasAte } from '../dados/ritmos'
 import { DATAS_PROVA } from '../estado/conquistas'
 import { chaveDia } from '../estado/limiteDiario'
-import { usarAssinante } from '../conta/plano'
+import { atualizarAssinante, usarAssinante } from '../conta/plano'
+import { atualizarPremium } from '../conta/premium'
 import {
   AREAS_QUE_CAEM, ASSUNTOS_QUE_MAIS_CAEM, planosDaPessoa, dadosDaPessoa,
   elogioHeroi, fatiaDasDuasPrimeiras, numero, pct, porMes, saudacaoAssinante, tituloHeroi, type Plano,
@@ -110,6 +111,9 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         if (encerrado) return
         if (r.status === 'approved') {
           definirMetricas((await chamarRpc<MetricasConta[]>('obter_estado_conta', {}))[0] ?? null)
+          // O resto do site (selo da conta, limite, recursos pagos) guarda o acesso no aparelho: libera agora.
+          void atualizarAssinante(sessao.user.id)
+          void atualizarPremium(sessao.user.id)
           definirMensagem('Pagamento confirmado. Seu período de acesso está ativo.')
           definirPix(null)
           definirPlanoEscolhido(null)
@@ -125,12 +129,17 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
     return () => { encerrado = true; window.clearInterval(timer) }
   }, [pix, sessao])
 
-  // A barra com o preço aparece quando o topo sai da tela: o botão de assinar nunca fica longe.
+  // A barra com o preço aparece quando o topo sai da tela: o botão de assinar nunca fica longe. Some de novo quando
+  // os planos do fim da página entram na tela (09/11/2026: ela cobria o suporte e repetia os cartões).
   useEffect(() => {
-    const alvo = heroi.current
-    if (!alvo || typeof IntersectionObserver === 'undefined') return
-    const observador = new IntersectionObserver(([e]) => definirBarraVisivel(!e.isIntersecting), { rootMargin: '-80px 0px 0px 0px' })
-    observador.observe(alvo)
+    const alvos = [heroi.current, document.querySelector('.vd-final')].filter((x): x is Element => !!x)
+    if (!alvos.length || typeof IntersectionObserver === 'undefined') return
+    const vistos = new Map<Element, boolean>()
+    const observador = new IntersectionObserver((entradas) => {
+      for (const e of entradas) vistos.set(e.target, e.isIntersecting)
+      definirBarraVisivel(![...vistos.values()].some(Boolean))
+    }, { rootMargin: '-80px 0px 0px 0px' })
+    for (const a of alvos) observador.observe(a)
     return () => observador.disconnect()
   }, [metricas, consultou, assinanteGuardado])
 
@@ -262,22 +271,20 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         {mostrarPlanos && <div className="vd-heroi__planos" id="planos">
           {avisoPrecoGuardado}
           <CartoesPlanos local="topo" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} planosAntigos={planosAntigos} />
+          {/* Tudo o que é da compra fica dentro da caixa, na mesma linguagem (Tales, 09/11/2026: o bilhete de
+              inauguração e o suporte soltos embaixo dela deixavam a página desconexa). */}
+          {!avisoPrecoGuardado && PRECO_DE_ABERTURA && pagamentosHabilitados && <AvisoAbertura />}
           <ul className="vd-confianca" aria-label="Pagamento e garantia">
             <li className="vd-confianca__pix"><IconePix tamanho={16} /> <span><strong>Pix</strong> à vista, liberado assim que cai</span></li>
             <li><IconeCartao tamanho={16} /> <span><strong>Cartão</strong> com renovação que você desliga</span></li>
             <li><Icone nome="certo" tamanho={16} /> <span><strong>7 dias de garantia</strong>: reembolso por um botão</span></li>
           </ul>
           {!sessao && pagamentosHabilitados && <p className="vd-heroi__semconta">Ainda sem conta? O botão cria a sua, grátis, e volta direto para o pagamento do plano escolhido.</p>}
+          <RodapeCompra local="topo" />
           {!pagamentosHabilitados && <p className="vd-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, o acervo, os comentários e a revisão continuam disponíveis no gratuito.</p>}
           {mensagem && !planoEscolhido && <p role="status" className="vd-aviso">{mensagem}</p>}
         </div>}
       </section>}
-      {/* Logo abaixo da caixa verde (03/11/2026): o bilhete de preço de inauguração, só para quem ainda
-          não tem preço guardado, e o atalho para o suporte. */}
-      {!comAcessoPago && mostrarPlanos && <div className="vd-depois-planos">
-        {!avisoPrecoGuardado && PRECO_DE_ABERTURA && pagamentosHabilitados && <AvisoAbertura />}
-        <AjudaSuporte local="topo" />
-      </div>}
 
       {comAcessoPago && (
         <section className="vd-ativo" aria-labelledby="vd-titulo-minha">
@@ -362,8 +369,8 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             ...(FLASHCARDS_NA_VENDA ? [['Flashcards por dia (beta)', fraseGratis('flashcardsPorDia'), 'Sem limite'] as const] : []),
             ['Cronograma até a prova: a lista de cada dia, o que mais cai primeiro, dia de plantão e reta final', false, true],
             ['Temas que mais caem, área por área e assunto por assunto', false, true],
-            // A Biblioteca é aberta a todos (todos os resumos com acesso: gratis); as frases que caem têm amostra no gratuito.
-            ['Biblioteca de resumos, na ordem em que a prova cobra', true, true],
+            // Biblioteca (Tales, 09/11/2026): quem não assina lê uma prévia de cada resumo (src/biblioteca/porta.ts), sem dizer o tamanho.
+            ['Biblioteca de resumos, na ordem em que a prova cobra', 'Prévia de cada resumo', 'Completa'],
             ['Frases que caem, assunto por assunto', 'Amostra', 'Todas'],
             ['Atlas 3D: clique no osso e veja as classificações', 'Ossos e músculos', 'Todas as camadas'],
             ['Como a turma respondeu e treino pelas que a turma mais erra', false, true],
@@ -415,8 +422,8 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
         </div>
         <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} planosAntigos={planosAntigos} />
         <p className="vd-final__gratis">Ainda não é a hora? Tudo bem. <a href={href(sessao ? '/treinar' : '/conta?modo=criar')}>{sessao ? 'Continue no gratuito' : 'Comece pelo gratuito'}</a>, as questões e os comentários continuam abertos.</p>
+        <RodapeCompra local="final" />
       </section>}
-      {!comAcessoPago && mostrarPlanos && <AjudaSuporte local="final" />}
 
       {!comAcessoPago && pagamentosHabilitados && <div className={'vd-barra' + (barraNaTela ? ' vd-barra--visivel' : '')} aria-hidden={!barraNaTela}>
         <span className="vd-barra__preco"><strong>{real(PLANO_MENSAL.total)}</strong>/mês<span className="vd-barra__extra">, sem fidelidade</span></span>
@@ -497,14 +504,20 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
  * houve um erro que impedia de assinar e só apareceu porque a pessoa escreveu. Abre o suporte
  * com o assunto "Assinatura ou cobrança" escolhido.
  */
-function AjudaSuporte({ local }: { local: 'topo' | 'final' }) {
+/** A linha de baixo de cada bloco de compra: o guia do blog e o suporte, discretos, na linguagem da caixa verde. */
+function RodapeCompra({ local }: { local: 'topo' | 'final' }) {
   return (
-    <p className={`vd-suporte vd-suporte--${local}`}>
-      <span>Ficou com alguma dúvida ou não conseguiu assinar?</span>
-      <a className="botao vd-suporte__botao" href={href('/contato?assunto=assinatura')} data-funil={`suporte-${local}`}>
-        <Icone nome="correio" tamanho={16} /> Fale com o suporte
+    <div className="vd-compra-rodape">
+      <a className="vd-guia-estudo" href={recurso('blog/como-estudar-por-questoes/')} data-funil={`guia-${local}`}>
+        <img src={recurso('pixel/menu/blog.png?v=1')} alt="" width={24} height={24} loading="lazy" decoding="async" draggable={false} />
+        Como estudar por questões
       </a>
-    </p>
+      <p className={`vd-suporte vd-suporte--${local}`}>
+        <Icone nome="correio" tamanho={15} />
+        <span>Dúvida para assinar?</span>
+        <a href={href('/contato?assunto=assinatura')} data-funil={`suporte-${local}`}>Fale com o suporte</a>
+      </p>
+    </div>
   )
 }
 

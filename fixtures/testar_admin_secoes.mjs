@@ -22,36 +22,38 @@ try {
 
   // Painel 3.0, revisão de 02/11/2026: seis áreas com os nomes do painel anterior e 17 itens no menu;
   // o que era parecido virou aba dentro da mesma tela (Crescimento, Financeiro › Ganhos, Ajustes).
-  assert.deepEqual(m.AREAS.map(a => a.rotulo), ['Agora', 'Pessoas', 'Crescimento', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
+  assert.deepEqual(m.AREAS.map(a => a.rotulo), ['Agora', 'Pessoas', 'Crescimento', 'Assinantes', 'Financeiro', 'Conteúdo', 'E-mails', 'Ajustes'])
   const partes = m.AREAS.flatMap(a => a.partes.map(p => p.id))
   assert.equal(new Set(partes).size, partes.length, 'parte repetida em duas áreas')
-  assert.equal(partes.length, 20)
+  assert.equal(partes.length, 18)
   // Ajustes › Uso do Supabase (03/11/2026): item próprio, com endereço que volta igual.
   assert.deepEqual(m.defArea('configuracoes').partes.map(p => p.id), ['ajustes', 'exportar', 'supabase'])
   assert.equal(m.areaDe('supabase'), 'configuracoes')
   assert.equal(ida('aba=supabase'), '/admin?aba=supabase')
   // Os três medidores: porcentagem do limite do plano e cor por faixa (sem tráfego nem funções, que pedem token).
   {
-    const MB = 1024 ** 2, u = m.uso
-    const lista = u.medidores({ medido_em: '2026-11-03T10:00:00Z', banco_bytes: 250 * MB, tabelas: [], arquivos_bytes: 921.6 * MB, baldes: [], contas: 10, ativas_30d: 35_000 })
+    const MB = 1024 ** 2, GB = 1024 ** 3, u = m.uso
+    const lista = u.medidores({ medido_em: '2026-11-03T10:00:00Z', banco_bytes: 4 * GB, tabelas: [], arquivos_bytes: 90 * GB, baldes: [], contas: 10, ativas_30d: 70_000 })
     assert.deepEqual(lista.map(x => x.id), ['banco', 'arquivos', 'usuarios'])
     assert.equal(Math.round(lista[0].pct), 50); assert.equal(Math.round(lista[1].pct), 90); assert.equal(Math.round(lista[2].pct), 70)
     assert.deepEqual(lista.slice(0, 3).map(x => u.tomDe(x.pct)), ['ok', 'perigo', 'aviso'])
     assert.equal(u.tamanho(182 * MB), '182 MB'); assert.equal(u.tamanho(1024 * MB), '1 GB'); assert.equal(u.tamanho(1.5 * MB), '1,5 MB')
-    assert.deepEqual(u.pertoDoLimite({ medido_em: '', banco_bytes: 250 * MB, tabelas: [], arquivos_bytes: 921.6 * MB, baldes: [], contas: 10, ativas_30d: 35_000 }).map(x => x.id), ['arquivos'])
+    assert.deepEqual(u.pertoDoLimite({ medido_em: '', banco_bytes: 4 * GB, tabelas: [], arquivos_bytes: 90 * GB, baldes: [], contas: 10, ativas_30d: 70_000 }).map(x => x.id), ['arquivos'])
     assert.equal(u.medidores(null).every(x => x.pct === null), true)
   }
   // Nenhuma parte do painel antigo some.
-  for (const parte of ['usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'lembretes', 'todas', 'ajustes'])
+  for (const parte of ['usuarios', 'crescimento', 'financeiro', 'assinaturas', 'cobrancas', 'pagamentos', 'conteudo', 'questoes', 'opinioes', 'simulados', 'prontas', 'todas', 'ajustes'])
     assert.ok(partes.includes(parte), parte)
-  assert.deepEqual(m.defArea('receita').partes.map(p => p.rotulo), ['Resumo', 'Assinantes', 'Extrato', 'Avisos do Mercado Pago'])
+  assert.deepEqual(m.defArea('receita').partes.map(p => p.rotulo), ['Resumo', 'Metas', 'Extrato', 'Avisos do Mercado Pago'])
   assert.deepEqual(m.abasDe('crescimento'), [], 'Crescimento é área própria, sem abas escondidas')
-  assert.deepEqual(m.defArea('crescimento').partes.map(p => p.id), ['crescimento', 'retencao', 'perfis'])
-  assert.deepEqual(m.abasDe('financeiro').map(a => a.id), ['financeiro', 'previsao'])
+  // Crescimento numa página só e Assinantes em área própria (Tales, 04/11/2026).
+  assert.deepEqual(m.defArea('crescimento').partes.map(p => p.id), ['crescimento'])
+  assert.deepEqual(m.defArea('assinantes').partes.map(p => p.id), ['assinaturas'])
+  assert.deepEqual(m.defArea('receita').partes.map(p => p.id), ['financeiro', 'metas', 'cobrancas', 'pagamentos'])
+  assert.deepEqual(m.abasDe('financeiro'), [])
   assert.deepEqual(m.abasDe('ajustes').map(a => a.id), ['ajustes', 'aviso'])
-  assert.equal(m.defParte('crescimento').rotulo, 'Aquisição e funil')
-  assert.equal(m.areaDe('retencao'), 'crescimento')
-  assert.equal(m.defAba('previsao').rotulo, 'Previsão')
+  assert.equal(m.defParte('crescimento').rotulo, 'Crescimento')
+  assert.equal(m.areaDe('assinaturas'), 'assinantes')
   assert.equal(m.areaDe('pagamentos'), 'receita')
   assert.equal(m.areaDe('questoes'), 'estudo')
   for (const a of m.AREAS) for (const p of a.partes) assert.ok(p.pergunta.length > 20, p.id)
@@ -59,17 +61,17 @@ try {
   // Endereços antigos → tela nova (favoritos e e-mails de alerta continuam abrindo).
   const mapa = {
     '': 'comando', 'aba=geral': 'comando', 'aba=hoje': 'comando', 'aba=agora': 'comando', 'aba=pendencias': 'comando', 'aba=usuarios': 'usuarios', 'aba=conteudo': 'conteudo',
-    'aba=questoes': 'questoes', 'aba=opinioes': 'opinioes', 'aba=crescimento': 'crescimento', 'aba=retencao': 'retencao', 'aba=perfis': 'perfis',
+    'aba=questoes': 'questoes', 'aba=opinioes': 'opinioes', 'aba=crescimento': 'crescimento', 'aba=retencao': 'crescimento', 'aba=perfis': 'crescimento',
     'aba=financeiro': 'financeiro', 'aba=previsao': 'financeiro', 'aba=assinaturas': 'assinaturas', 'aba=pagamentos': 'pagamentos', 'aba=cobrancas': 'cobrancas',
     'aba=avisos': 'pagamentos', 'aba=configuracoes': 'ajustes', 'aba=aviso': 'ajustes', 'aba=avaliacoes': 'conteudo', 'aba=relatos': 'conteudo',
-    'aba=receita': 'financeiro', 'aba=pessoas': 'usuarios', 'aba=operacoes': 'lembretes', 'aba=emails': 'lembretes', 'aba=cartas': 'cartas',
-    'aba=simulados': 'simulados', 'aba=lembretes': 'lembretes', 'aba=todas': 'todas', 'aba=ajustes': 'ajustes', 'aba=qualquer-coisa': 'comando', 'aba=mensal': 'envios',
+    'aba=receita': 'financeiro', 'aba=pessoas': 'usuarios', 'aba=operacoes': 'prontas', 'aba=emails': 'prontas', 'aba=cartas': 'prontas',
+    'aba=simulados': 'simulados', 'aba=lembretes': 'prontas', 'aba=todas': 'todas', 'aba=ajustes': 'ajustes', 'aba=qualquer-coisa': 'comando', 'aba=mensal': 'envios',
   }
   for (const [consulta, parte] of Object.entries(mapa)) assert.equal(ler(consulta).parte, parte, consulta)
   // O endereço antigo de uma aba abre a aba certa.
-  assert.equal(ler('aba=previsao').sub, 'previsao')
-  assert.equal(ida('aba=previsao'), '/admin?aba=financeiro&sub=previsao')
-  assert.equal(ida('aba=retencao'), '/admin?aba=retencao')
+  assert.equal(ler('aba=previsao').parte, 'financeiro', 'a antiga Previsão está dentro do Resumo')
+  assert.equal(ida('aba=previsao'), '/admin?aba=financeiro')
+  assert.equal(ida('aba=retencao'), '/admin?aba=crescimento')
   assert.equal(ida('aba=aviso'), '/admin?aba=ajustes&sub=aviso')
   assert.equal(ida('aba=financeiro&sub=financeiro'), '/admin?aba=financeiro', 'a primeira aba não vai no endereço')
   assert.equal(ida('aba=usuarios&sub=previsao'), '/admin?aba=usuarios', 'aba de outra tela é ignorada')
@@ -89,17 +91,16 @@ try {
   assert.equal(ler('aba=questoes&id=fulano@x.com').id, null, 'nada pessoal no endereço')
   assert.equal(ida('aba=geral'), '/admin')
   for (const antigo of ['aba=geral', 'aba=hoje', 'aba=agora', 'aba=configuracoes', 'aba=avaliacoes', 'aba=receita', 'aba=previsao', 'aba=xyz']) assert.ok(m.urlAntiga(new URLSearchParams(antigo)), antigo)
-  for (const atual of ['', 'aba=usuarios&filtro=novos', 'aba=lembretes', 'aba=todas', 'aba=ajustes', 'aba=simulados', 'aba=cartas', 'aba=conteudo&vista=relatos', 'aba=financeiro&sub=previsao']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
-  // Abas antigas de Crescimento viram os itens próprios do menu.
-  assert.equal(ler('aba=crescimento&sub=retencao').parte, 'retencao')
-  assert.equal(ler('aba=crescimento&sub=perfis').parte, 'perfis')
-  assert.ok(m.urlAntiga(new URLSearchParams('aba=crescimento&sub=perfis')))
+  for (const atual of ['', 'aba=usuarios&filtro=novos', 'aba=prontas', 'aba=todas', 'aba=ajustes', 'aba=simulados', 'aba=conteudo&vista=relatos', 'aba=financeiro&sub=previsao']) assert.ok(!m.urlAntiga(new URLSearchParams(atual)), atual)
+  // Retenção e perfis voltaram para dentro de Crescimento (página única, 04/11/2026).
+  assert.equal(ler('aba=crescimento&sub=retencao').parte, 'crescimento')
+  assert.ok(m.urlAntiga(new URLSearchParams('aba=perfis')))
   assert.equal(ler('aba=crescimento').parte, 'crescimento')
   // A fila manda direto para o grupo certo dos assinantes, e o grupo vai no endereço.
   assert.equal(ler('aba=assinaturas&grupo=falha_pagamento').grupo, 'falha_pagamento')
   assert.equal(ler('aba=assinaturas&grupo=xyz').grupo, 'vigentes')
   assert.match(m.urlDe(ler('aba=assinaturas&grupo=falha_pagamento')), /grupo=falha_pagamento/)
-  assert.deepEqual(m.AREAS.map(a => m.partePadrao(a.id)), ['comando', 'usuarios', 'crescimento', 'financeiro', 'conteudo', 'lembretes', 'ajustes'])
+  assert.deepEqual(m.AREAS.map(a => m.partePadrao(a.id)), ['comando', 'usuarios', 'crescimento', 'assinaturas', 'financeiro', 'conteudo', 'prontas', 'ajustes'])
 
   // ---------- Financeiro › Ganhos ----------
   // 17/10/2026 15h em Brasília (18h UTC).
@@ -203,13 +204,15 @@ try {
     const cat = m.catalogo
     const modelos = cat.modelosDoCatalogo()
     const tipos = new Set(modelos.map(x => x.tipo))
-    assert.equal(tipos.size, 34, 'os 34 tipos do motor (18 antigos, 6 novos e 10 campanhas diárias)')
+    assert.equal(tipos.size, 34, 'agradecimento duplicado e cobrança por cronograma aposentados')
+    assert.equal(tipos.has('obrigado_assinatura'), false)
+    assert.equal(tipos.has('assinou_sem_cronograma'), false)
     assert.equal(modelos.filter(x => x.tipo === 'ativo').length, 9, 'as 9 faixas')
     assert.equal(modelos.length, 34 - 1 + 9)
     assert.equal(new Set(modelos.map(x => x.id)).size, modelos.length, 'id repetido')
     for (const grupo of ['situacao', 'faixa', 'convite', 'pessoal', 'automatico', 'novo', 'campanha']) assert.ok(modelos.some(x => x.grupo === grupo), grupo)
     assert.equal(modelos.filter(x => x.grupo === 'novo').length, 6)
-    assert.equal(modelos.filter(x => x.grupo === 'campanha').length, 10, 'as 10 campanhas diárias (parte 31 e o lembrete do simulado, parte 32)')
+    assert.equal(modelos.filter(x => x.grupo === 'campanha').length, 9, 'as 9 campanhas diárias (parte 31 e o lembrete do simulado, parte 32)')
     for (const x of modelos.filter(x => x.grupo === 'campanha')) assert.ok(/candidatos_|Agendador/.test(x.gatilho.quando) && /cadência/.test(x.gatilho.paraQuem), `${x.id}: gatilho da campanha`)
     for (const x of modelos) {
       assert.ok(x.rotulo && x.descricao && x.gatilho.quando.length >= 10 && x.gatilho.paraQuem.length >= 10 && x.pessoa, `${x.id}: faltou rótulo, descrição, gatilho ou pessoa`)
@@ -233,7 +236,7 @@ try {
     assert.ok(cat.combinaBusca(modelos.find(x => x.tipo === 'voltou'), null, 'DIAS fora'), 'busca sem acento e sem caixa')
   }
 
-  console.log('Painel 3.0: 7 áreas e 20 itens, Crescimento com área própria, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
+  console.log('Painel 3.0: 8 áreas e 18 itens (Central de e-mails), Crescimento numa página só, Assinantes à parte, endereços antigos, estado na URL, ganhos, a torre de controle de Agora e o catálogo Todas as cartas ok.')
 } finally {
   await rm(pasta, { recursive: true, force: true })
 }

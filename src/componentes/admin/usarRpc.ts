@@ -12,7 +12,7 @@ import { ErroRpc, chamarRpc, type OpcoesRpc } from '../../servicos/supabase'
  */
 interface Estado { dados: unknown; erro: unknown; em: number }
 interface Voo { controle: AbortController; promessa: Promise<unknown> }
-interface Entrada { estado: Estado; voo: Voo | null; ouvintes: Set<() => void> }
+interface Entrada { estado: Estado; voo: Voo | null; ouvintes: Set<() => void>; buscar?: Buscador<unknown> }
 
 const entradas = new Map<string, Entrada>()
 
@@ -75,6 +75,7 @@ export function usarConsulta<T>(chave: string | null, buscador: Buscador<T>, { a
     if (!chave) return
     const e = entradaDe(chave)
     e.ouvintes.add(redesenhar)
+    e.buscar = sinal => ref.current(sinal)
     if (!e.voo && Date.now() - e.estado.em > validadeMs) void buscarConsulta(chave, s => ref.current(s)).catch(() => undefined)
     else redesenhar()
     return () => {
@@ -116,3 +117,9 @@ export function usarRpc<T>(conta: string | null | undefined, nome: string, args:
 /** A função ainda não existe no banco (SQL novo não colado): PostgREST responde 404 / PGRST202. */
 export const rpcInexistente = (falha: unknown) =>
   falha instanceof ErroRpc && (falha.status === 404 || /PGRST202|could not find the function/i.test(falha.codigo))
+
+/** Atualiza todas as consultas montadas desta conta, com deduplicação de pedidos. */
+export async function recarregarConsultasAtivas(conta: string | null | undefined) {
+  if (!conta) return
+  await Promise.allSettled([...entradas].filter(([k, e]) => k.startsWith(`${conta}:`) && e.ouvintes.size && e.buscar).map(([k, e]) => buscarConsulta(k, e.buscar!)))
+}

@@ -338,6 +338,8 @@ export interface EstadoSessao {
   revisarPendente?: boolean
   /** De onde a sessão nasceu, para oferecer a volta no lugar certo (ex.: o cronograma). */
   origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar'
+  /** Sessão de um dia do cronograma de TEOT/TARO ("AAAA-MM-DD"): só ela vira o "Continuar" do botão do dia. */
+  diaPlano?: string
 }
 
 /** Quanto falta, em segundos. Negativo quando o tempo acabou. */

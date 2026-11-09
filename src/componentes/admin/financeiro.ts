@@ -26,6 +26,7 @@ export function taxaPixSugerida(assinaturas: AssinaturaBase[], agora = new Date(
 
 export function calcularFinanceiro(assinaturas: AssinaturaBase[], todas: Cobranca[], agora = new Date()) {
   const ms = agora.getTime()
+  todas = todas.filter(c => c.em.getTime() <= ms)
   const esteMes = MES(agora), mesPassado = somarMesChave(esteMes, -1)
   // Recebido por mês (de Brasília), separado em cartão e Pix (últimos 12 meses).
   const porMes = new Map<string, [number, number]>()
@@ -49,9 +50,9 @@ export function calcularFinanceiro(assinaturas: AssinaturaBase[], todas: Cobranc
   // Taxa de renovação do mês: de quem tinha o acesso terminando de 1º do mês até hoje (ou já renovou
   // no mês), quantos renovaram. Perdeu = o acesso acabou no mês e a pessoa está sem acesso agora.
   const inicioMes = inicioDoMes(esteMes).getTime()
-  const renovaramMes = new Set(todas.filter(c => c.tipo === 'renovacao' && c.em.getTime() >= inicioMes).map(c => c.id_usuario))
+  const renovaramMes = new Set(todas.filter(c => c.tipo === 'renovacao' && c.em.getTime() >= inicioMes && c.em.getTime() <= ms).map(c => c.id_usuario))
   const comAcessoIds = new Set(comAcesso.map(a => a.id_usuario))
-  const perderamMes = new Set(assinaturas.filter(a => a.status !== 'reembolsada' && a.status !== 'pendente' && a.fim_periodo
+  const perderamMes = new Set(assinaturas.filter(a => a.status !== 'reembolsada' && a.status !== 'pendente' && (a.ultima_cobranca_em || pagaSemCobranca(a)) && a.fim_periodo
     && new Date(a.fim_periodo).getTime() >= inicioMes && new Date(a.fim_periodo).getTime() <= ms && !comAcessoIds.has(a.id_usuario) && !renovaramMes.has(a.id_usuario)).map(a => a.id_usuario))
   const porPlano = PRECOS.map(p => {
     const lista = comAcesso.filter(a => a.plano === p.id)

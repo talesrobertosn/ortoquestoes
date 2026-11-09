@@ -58,26 +58,39 @@ export type TipoCarta =
   | 'aniversario' | 'um_ano' | 'indicacao_deu_certo' | 'resumo_do_tema'
   // Parte 32 (19/10/2026): o lembrete de quem se inscreveu no Simulado Nacional (candidatos_simulado_lembrete).
   | 'simulado_lembrete'
+  // 05/11/2026: manuais, pela tela "Prontas para enviar" (o acesso pago terminou; assinante em risco de parar).
+  | 'acesso_terminou' | 'como_estao'
+
+/** Nomes informados no cronograma; nunca tratar o rótulo de seleção como nome da prova. */
+export function nomeProvaInformado(valor?: string | null): string {
+  const nome = (valor ?? '').replace(/[\r\n\t]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80)
+  return /^(outra(?: prova)?|outro|n[aã]o informad[oa]|prova)$/i.test(nome) || /[@<>]/.test(nome) || !/\p{L}/u.test(nome) ? '' : nome
+}
+export function provaComArtigo(valor?: string | null): string {
+  const nome = nomeProvaInformado(valor)
+  return !nome ? 'a sua prova' : /^(?:TEOT|TEPOT|TARO|ENARE)(?:\b|$)/i.test(nome) ? `o ${nome}` : `a prova de ${nome.replace(/^prova\s+(?:de\s+)?/i, '')}`
+}
+export const TIPOS_APOSENTADOS: readonly string[] = ['obrigado_assinatura', 'assinou_sem_cronograma']
 
 export interface InfoTipo { rotulo: string; descricao: string; grupo: 'situacao' | 'convite' | 'pessoal' | 'automatico' }
 export const TIPOS: Record<TipoCarta, InfoTipo> = {
-  nunca_comecou: { grupo: 'situacao', rotulo: 'Criou a conta e não começou', descricao: 'Uma sugestão para os primeiros dez minutos; sem número.' },
+  nunca_comecou: { grupo: 'situacao', rotulo: 'Criou a conta e não começou', descricao: 'Conta criada há pelo menos um dia e nenhuma questão respondida.' },
   boas_vindas: { grupo: 'situacao', rotulo: 'Boas-vindas', descricao: 'Chegou nos últimos 3 dias e já respondeu algumas questões.' },
   comecando: { grupo: 'situacao', rotulo: 'Começando', descricao: 'Ativo, com menos de 30 questões: pergunta como está sendo e dá uma ideia prática.' },
-  comecou_parou: { grupo: 'situacao', rotulo: 'Começou e parou', descricao: 'Menos de 30 questões e alguns dias sem aparecer. Sem culpa; a Revisão como volta leve.' },
-  pausa: { grupo: 'automatico', rotulo: 'Pausa curta (3 a 6 dias)', descricao: 'Lembrete automático: cita a área que a pessoa estava estudando e a Revisão.' },
-  sumiu: { grupo: 'situacao', rotulo: 'Sumiu', descricao: 'Respondia e está há 10 dias ou mais sem aparecer. "Lembrei de você", com a melhor área.' },
+  comecou_parou: { grupo: 'situacao', rotulo: 'Começou e parou', descricao: 'Menos de 30 questões respondidas e alguns dias sem nova sessão.' },
+  pausa: { grupo: 'automatico', rotulo: 'Fogo apagando: 3 a 6 dias sem estudar', descricao: 'Última sessão há três a seis dias, com histórico de estudo anterior.' },
+  sumiu: { grupo: 'situacao', rotulo: 'Sem estudar há vários dias', descricao: 'Já respondia questões e está há vários dias sem estudar; o motivo mostra a janela aplicada.' },
   ativo: { grupo: 'situacao', rotulo: 'Estudando (pela faixa de acerto)', descricao: 'Uma voz para cada faixa de acerto, com o que a pessoa tem de especial.' },
-  obrigado_assinatura: { grupo: 'pessoal', rotulo: 'Obrigado pela assinatura', descricao: 'Agradecimento e o que fazer nos primeiros dez minutos: montar o cronograma.' },
+  obrigado_assinatura: { grupo: 'pessoal', rotulo: 'Obrigado pela assinatura', descricao: 'Aposentado: o agradecimento já sai automaticamente no pagamento.' },
   convite_20: { grupo: 'convite', rotulo: 'Convite para assinar (mais de 20 questões)', descricao: 'Leve: o que o plano faz pela rotina, a garantia, sem preço.' },
   convite_50: { grupo: 'convite', rotulo: 'Convite pessoal (mais de 50 questões)', descricao: 'Dias para a prova, área forte, o cronograma como horas devolvidas; garantia.' },
-  reta_final: { grupo: 'situacao', rotulo: 'Reta final', descricao: 'A prova está chegando: dormir é estudar, modo prova, revisão.' },
-  marco: { grupo: 'situacao', rotulo: 'Marco de questões (100, 250, 500, 1.000, 2.000)', descricao: 'O que o número significa em horas e dias.' },
+  reta_final: { grupo: 'situacao', rotulo: 'Reta final', descricao: 'A prova informada está se aproximando; a carta usa a data e o nome disponíveis.' },
+  marco: { grupo: 'situacao', rotulo: 'Marco de questões (100, 250, 500, 1.000, 2.000)', descricao: 'Alcançou 100, 250, 500, 1.000 ou 2.000 questões respondidas.' },
   opiniao: { grupo: 'pessoal', rotulo: 'Pedir opinião', descricao: 'Três perguntas concretas.' },
   indicar: { grupo: 'pessoal', rotulo: 'Pedir para indicar', descricao: '"Quem você conhece que está nessa?"; os 7 dias para os dois.' },
   cronograma: { grupo: 'pessoal', rotulo: 'Apresentar o cronograma', descricao: 'Quando ele devolve tempo.' },
-  pix_3_dias: { grupo: 'automatico', rotulo: 'Pix: faltam 3 dias', descricao: 'Automático: o acesso pago no Pix está acabando. Nada se perde; sem urgência.' },
-  pix_hoje: { grupo: 'automatico', rotulo: 'Pix: termina hoje', descricao: 'Automático: último dia do acesso pago no Pix. Transacional.' },
+  pix_3_dias: { grupo: 'automatico', rotulo: 'Pix: faltam 3 dias', descricao: 'O período de acesso pago no Pix termina em três dias.' },
+  pix_hoje: { grupo: 'automatico', rotulo: 'Pix: termina hoje', descricao: 'O período de acesso pago no Pix termina hoje.' },
   relatorio: { grupo: 'automatico', rotulo: 'Resumo de estudo', descricao: 'Automático: a quinzena ou o mês contados como uma história.' },
   boas_vindas_dia0: { grupo: 'automatico', rotulo: 'Boas-vindas no dia da confirmação', descricao: 'Primeiro login depois de confirmar o e-mail: boas-vindas, as funções do site (questões, Cronograma, resumos) e o pedido para contar aos colegas.' },
   primeiras_10: { grupo: 'automatico', rotulo: 'Primeiras 10 questões', descricao: 'Ao passar de 10 questões: o hábito começou.' },
@@ -85,19 +98,21 @@ export const TIPOS: Record<TipoCarta, InfoTipo> = {
   cronograma_pronto: { grupo: 'automatico', rotulo: 'Cronograma pronto', descricao: 'No dia em que a pessoa monta o plano até a prova.' },
   pagamento_aprovado: { grupo: 'automatico', rotulo: 'Obrigado pela assinatura', descricao: 'Sai quando a assinatura ou a renovação é aprovada: agradecimento, plano, período, o que libera e o link do cronograma. Transacional.' },
   obrigado_tempo: { grupo: 'automatico', rotulo: 'Obrigado pelo tempo de assinatura', descricao: 'Cancelou ou pediu reembolso: porta aberta, sem cobrança.' },
-  assinou_sem_cronograma: { grupo: 'automatico', rotulo: 'Assinou e não montou o cronograma', descricao: 'Três dias depois de assinar, sem plano: o cronograma como as horas que o plano devolve.' },
-  assinante_parado_7: { grupo: 'automatico', rotulo: 'Assinante parado há 7 dias', descricao: 'Assina e está há uma semana sem responder: sem culpa, a Revisão e o cronograma que se ajusta.' },
+  assinou_sem_cronograma: { grupo: 'automatico', rotulo: 'Assinou e não montou o cronograma', descricao: 'Aposentado: montar um cronograma é opcional.' },
+  assinante_parado_7: { grupo: 'automatico', rotulo: 'Assinante parado há 7 dias', descricao: 'Assinatura ativa e pelo menos uma semana sem responder questões.' },
   simulado_resultado: { grupo: 'automatico', rotulo: 'Resultado do Simulado Nacional', descricao: 'Quando a edição fecha: obrigado por ter feito, o que o resultado mostra e o que fazer com ele.' },
-  vespera_prova: { grupo: 'automatico', rotulo: 'Véspera da prova', descricao: 'Na véspera da data do cronograma: dormir é estudar, nada de matéria nova, torcida.' },
+  vespera_prova: { grupo: 'automatico', rotulo: 'Véspera da prova', descricao: 'Na véspera da data do cronograma: orientações práticas e boa prova.' },
   depois_prova: { grupo: 'automatico', rotulo: 'Depois da prova: como foi?', descricao: 'De 1 a 3 dias depois da data do cronograma: pergunta como foi, sem presumir o resultado.' },
   aniversario: { grupo: 'automatico', rotulo: 'Aniversário', descricao: 'No dia do aniversário (data de nascimento do cadastro): curta, sem convite.' },
   um_ano: { grupo: 'automatico', rotulo: 'Um ano de Orto Questões', descricao: 'No dia em que a conta faz um ano (ou mais): o caminho até aqui, sem convite.' },
   indicacao_deu_certo: { grupo: 'automatico', rotulo: 'Sua indicação deu certo', descricao: 'Quem a pessoa indicou chegou a 20 questões: obrigado pela confiança.' },
   resumo_do_tema: { grupo: 'automatico', rotulo: 'Saiu um resumo do seu tema', descricao: 'Semanal, só para quem aceitou novidades: um resumo novo na área que a pessoa mais estuda.' },
+  acesso_terminou: { grupo: 'situacao', rotulo: 'Sentimos sua falta (acesso terminou)', descricao: 'O acesso pago terminou há até 30 dias e não foi renovado: tudo está guardado, o que a pessoa conquistou e a porta aberta para voltar, sem pressão.' },
+  como_estao: { grupo: 'situacao', rotulo: 'Como estão os estudos? (risco de parar)', descricao: 'Assinante que o painel marcou com risco moderado ou alto: pergunta da rotina, a Revisão e o cronograma que se ajusta; se o acesso estiver perto do fim, a conta dos dias somados.' },
   simulado_lembrete: { grupo: 'automatico', rotulo: 'Lembrete do Simulado Nacional', descricao: 'Para quem se inscreveu: a edição abre amanhã (ou abriu hoje), quantas questões, quanto tempo e até quando dá para fazer.' },
 }
 /** Tipos que o administrador pode escolher na ficha (os automáticos ficam de fora). */
-export const TIPOS_MANUAIS: readonly TipoCarta[] = ['nunca_comecou', 'boas_vindas', 'comecando', 'comecou_parou', 'sumiu', 'ativo', 'obrigado_assinatura', 'convite_20', 'convite_50', 'reta_final', 'marco', 'opiniao', 'indicar', 'cronograma']
+export const TIPOS_MANUAIS: readonly TipoCarta[] = ['nunca_comecou', 'boas_vindas', 'comecando', 'comecou_parou', 'sumiu', 'ativo', 'convite_20', 'convite_50', 'reta_final', 'marco', 'opiniao', 'indicar', 'cronograma', 'acesso_terminou', 'como_estao']
 /** Os seis automáticos novos (17/10/2026), disparados por acontecimento, sem SQL novo. */
 export const TIPOS_AUTOMATICOS_NOVOS: readonly TipoCarta[] = ['boas_vindas_dia0', 'primeiras_10', 'voltou', 'cronograma_pronto', 'pagamento_aprovado', 'obrigado_tempo']
 /**
@@ -106,7 +121,7 @@ export const TIPOS_AUTOMATICOS_NOVOS: readonly TipoCarta[] = ['boas_vindas_dia0'
  * (`candidatos_<tipo>`) e o agendador manda pela ação `campanhas_diarias` de enviar-email,
  * pelo mesmo caminho dos automáticos (idempotência por referência, cadência, preferência).
  */
-export const TIPOS_CAMPANHAS_DIARIAS: readonly TipoCarta[] = ['assinou_sem_cronograma', 'assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'simulado_lembrete']
+export const TIPOS_CAMPANHAS_DIARIAS: readonly TipoCarta[] = ['assinante_parado_7', 'simulado_resultado', 'vespera_prova', 'depois_prova', 'aniversario', 'um_ano', 'indicacao_deu_certo', 'resumo_do_tema', 'simulado_lembrete']
 /** Transacionais: resposta a algo que a pessoa fez ou pagou. Não entram no teto de cadência. */
 export const TIPOS_TRANSACIONAIS: readonly string[] = ['pix_hoje', 'pagamento_aprovado', 'obrigado_tempo', 'relato_resolvido', 'alerta_admin']
 
@@ -152,6 +167,10 @@ export interface PerfilCarta {
   cidade?: string | null
   /** Data de nascimento (ISO "AAAA-MM-DD" ou "MM-DD"). */
   nascimento?: string | null
+  /** Fim do último acesso pago (ISO), vigente ou já terminado (05/11/2026). */
+  fimAcesso?: string | null
+  /** O acesso vigente renova sozinho (cartão ligado). */
+  renovaSozinho?: boolean
 }
 
 /** Um e-mail que a pessoa já recebeu (para não repetir a versão nem o tipo, e para a cadência). */
@@ -382,8 +401,7 @@ export function cadenciaBloqueia(anteriores: readonly EnvioAnterior[] = [], hoje
 export interface Escolha { tipo: TipoCarta; faixa: Faixa | null; marco: number | null; motivo: string; bloqueio: string | null }
 
 /**
- * A situação da pessoa, na ordem em que o dono pensaria: quem nunca começou, quem
- * acabou de assinar, quem sumiu, quem parou cedo, marco recém-atingido, reta
+ * A situação da pessoa, na ordem em que o dono pensaria: quem nunca começou, quem sumiu, quem parou cedo, marco recém-atingido, reta
  * final, convite (não assinante com mais de 20 ou 50 questões, sem convite nos
  * últimos 30 dias) e, por fim, a carta da faixa de acerto. `bloqueio` traz o
  * motivo quando a cadência não permite escrever agora.
@@ -397,7 +415,11 @@ export function escolherTipo(p: PerfilCarta, anteriores: readonly EnvioAnterior[
   const com = (tipo: TipoCarta, faixa: Faixa | null, marco: number | null, motivo: string): Escolha => ({ tipo, faixa, marco, motivo, bloqueio: cadenciaBloqueia(anteriores, hoje, tipo) })
 
   if (r === 0) return com('nunca_comecou', null, null, 'Ainda não respondeu nenhuma questão.')
-  if (p.assinante && !recebeu('obrigado_assinatura') && !recebeu('pagamento_aprovado', 30)) return com('obrigado_assinatura', null, null, 'Assina e ainda não recebeu o agradecimento.')
+  const fimAcesso = p.fimAcesso ? new Date(p.fimAcesso) : null
+  if (!p.assinante && fimAcesso && Number.isFinite(fimAcesso.getTime())) {
+    const desde = Math.floor(diasDesde(p.fimAcesso!, hoje))
+    if (desde >= 0 && desde <= 30 && !recebeu('acesso_terminou', 60)) return com('acesso_terminou', null, null, `O acesso pago terminou ${desde === 0 ? 'hoje' : desde === 1 ? 'ontem' : `há ${dias(desde)}`} e não foi renovado.`)
+  }
   if (parado !== null && parado >= 10) return com('sumiu', null, null, `Sem responder há ${dias(parado)}.`)
   if (r < MINIMO_PARA_ACERTO && parado !== null && parado >= 3) return com('comecou_parou', null, null, `Fez ${questoes(r)} e parou há ${dias(parado)}.`)
   if (r < MINIMO_PARA_ACERTO && conta <= 3) return com('boas_vindas', null, null, 'Chegou há poucos dias e já começou.')
@@ -519,8 +541,8 @@ export function fatosDe(p: PerfilCarta, hoje = new Date()): Fatos {
   let diasProva = p.diasParaProva === null || p.diasParaProva === undefined ? NaN : Number(p.diasParaProva)
   if (!Number.isFinite(diasProva) && p.provaData) diasProva = Math.ceil((new Date(p.provaData).getTime() - hoje.getTime()) / 86_400_000)
   if (Number.isFinite(diasProva) && diasProva >= 1 && diasProva <= 730) {
-    const nome = (p.provaCronograma ?? '').trim()
-    f.cronograma = { dias: Math.round(diasProva), prova: nome && nome.length <= 30 && !/[@\d_]/.test(nome) ? nome : null }
+    const nome = nomeProvaInformado(p.provaCronograma)
+    f.cronograma = { dias: Math.round(diasProva), prova: nome || null }
   }
   const servico = (p.servico ?? '').trim()
   if (servico.length >= 3) f.servico = { nome: servico, de: servicoComArtigo(servico) }
@@ -618,7 +640,7 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
             `Reparei que ${a.em} é o seu ponto mais forte, com ${m.pct}% de acerto. Isso não aparece por acaso.`,
             `Reparei que ${a.em} virou o seu ponto forte, com ${m.pct}% de acerto em ${questoes(m.total)}. É fruto de questão feita com atenção, e nada disso se perde.`,
             `Em ${a.em} você está voando: ${m.pct}% de acerto. ${a.sabor[0]}`,
-            `Seu melhor tema hoje é ${a.em}, com ${m.pct}%. Dá gosto de ver, porque isso é de quem senta e faz.`,
+            `Seu melhor tema hoje é ${a.em}, com ${m.pct}%.`,
           ]
         : [
             `Vi que ${a.em} já virou um ponto forte seu. ${a.sabor[0]}`,
@@ -639,13 +661,13 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
       return [
         `Um tema bom para as próximas semanas é ${a.em}: é onde cada sessão vai render mais para você agora. Dez questões por semana já mudam o quadro.`,
         `Reparei que ${a.em} é o tema com mais espaço para crescer no seu caso, e isso é uma boa notícia: é ali que os pontos vêm mais rápido. Dez questões por semana bastam.`,
-        `Uma ideia carinhosa: dez questões de ${a.de} por semana podem fazer uma bela diferença nas próximas semanas.`,
+        `Uma sugestão: dez questões de ${a.de} por semana podem fazer uma bela diferença nas próximas semanas.`,
       ]
     }
     case 'horario':
       return {
         noite: ['Vi que você estuda quase sempre à noite. É uma rotina pesada: o dia inteiro no hospital e o estudo esperando no fim dele.', 'Reparei que quase tudo seu sai à noite, quando o dia já acabou. Sei o que isso custa, e admiro.', 'Vi que a noite é o seu horário de estudo. Respeito demais quem encontra esse tempo depois de um dia inteiro.'],
-        madrugada: ['Vi que muita questão sua sai de madrugada, provavelmente no plantão. Admiro a dedicação, e peço com carinho que cuide do sono também.', 'Reparei que você estuda até de madrugada. Peço com carinho: lembre que o sono também é estudo.'],
+        madrugada: ['Vi que muita questão sua sai de madrugada, provavelmente no plantão.', 'Reparei que você estuda até de madrugada.'],
         manha: ['Reparei que você gosta de estudar cedo, antes de o dia começar. É um jeito bonito de proteger o estudo da rotina.', 'Vi que você estuda bastante de manhã cedo, antes de o hospital te engolir. Admiro essa disciplina.'],
         almoco: ['Vi que muita questão sua sai na hora do almoço. Que jeito esperto de encaixar o estudo no único intervalo do dia.', 'Reparei que você aproveita o horário do almoço para estudar. Isso é usar bem o pouco tempo que a residência deixa.'],
         tarde: ['Vi que você costuma estudar à tarde, num ritmo bem constante.', 'Reparei que a tarde é o seu horário de questões. Gosto de ver essa rotina.'],
@@ -675,7 +697,7 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
         : [`Parabéns pela ${n}ª posição no ranking geral.`, `Vi que você está em ${n}º no ranking geral, e fiquei feliz de ver o seu nome lá.`]
     }
     case 'sequencia':
-      return [`São ${dias(f.sequencia!)} seguidos estudando. Que constância bonita.`, `Sua sequência está em ${dias(f.sequencia!)}, e isso diz muito sobre você.`]
+      return [`São ${dias(f.sequencia!)} seguidos estudando.`, `Sua sequência está em ${dias(f.sequencia!)}, e isso diz muito sobre você.`]
     case 'flashcards':
       return ['Vi que você também está usando os flashcards, que bom.', `Vi que você já passou por ${numero(f.flashcards!)} flashcards também.`]
     case 'semana':
@@ -689,7 +711,7 @@ function frasesDoFato(chave: keyof Fatos, f: Fatos, mostrar: boolean): string[] 
       ]
     }
     case 'cronograma': {
-      const c = f.cronograma!, prova = c.prova ? `o ${c.prova}` : 'a sua prova'
+      const c = f.cronograma!, prova = provaComArtigo(c.prova)
       return [
         `Vi no seu cronograma que faltam ${dias(c.dias)} para ${prova}. Dá tempo de muita coisa, ainda mais com a lista de cada dia já pronta.`,
         `Pelo seu cronograma, ${prova} está a ${dias(c.dias)}, e eu estou na torcida.`,
@@ -750,7 +772,7 @@ const DICAS: Record<'baixo' | 'medio' | 'alto', string[]> = {
     'Um detalhe de prova: o "exceto" e o "incorreta" no enunciado. É ali que até quem sabe muito ainda deixa escapar um ponto.',
   ],
 }
-const FECHOS = ['Se não for a hora, tudo bem também. Eu continuo por aqui.', 'Se eu puder ajudar em qualquer coisa, é só responder este e-mail.', 'Estou torcendo por você.', 'Conte comigo no que precisar.', 'Fico feliz de acompanhar o seu caminho.', 'Torço muito pela sua aprovação.', 'Bons estudos por aí, e cuide-se.', 'Vai dar certo. E eu estou por aqui.']
+const FECHOS = ['Se não for a hora, tudo bem também. Eu continuo por aqui.', 'Se eu puder ajudar em qualquer coisa, é só responder este e-mail.', 'Estou torcendo por você.', 'Conte comigo no que precisar.', 'Fico feliz de acompanhar o seu caminho.', 'Torço muito pela sua aprovação.', 'Bons estudos por aí, e cuide-se.']
 /** O fecho não repete o que o texto já disse ("é só responder", "torcendo", "acompanhando"...). */
 const CHAVES_FECHO = ['respond', 'torc', 'acompanh', 'conte comigo', 'bons estudos', 'não for a hora', 'por aqui']
 /** Minúsculas e sem cedilha, para "torço" e "torcida" contarem como a mesma ideia. */
@@ -817,17 +839,13 @@ export function frasesSeguidasRepetem(texto: string): string | null {
 /** P.S. genéricos, humanos, para quando nenhum fato sobra. */
 const PS_HUMANOS = [
   'P.S.: se quiser responder este e-mail, vou adorar ler.',
-  'P.S.: cuida do sono. Ele conta como estudo, e ninguém avisa isso na residência.',
   'P.S.: se encontrar algo estranho numa questão, tem um botão para relatar. Cada relato é lido com carinho.',
   'P.S.: dez minutos no intervalo já contam. Não precisa esperar um dia livre para estudar.',
   'P.S.: se a semana apertar, tudo bem. O site fica do jeito que você deixou.',
   'P.S.: se quiser me contar como está sendo a rotina, é só responder. Gosto de saber.',
   'P.S.: o comentário das alternativas erradas costuma ensinar muito. Vale ler até o fim.',
-  'P.S.: toma um café por mim antes da próxima sessão.',
   'P.S.: errar aqui é barato. É na prova que custa. Aproveita que aqui é treino.',
   'P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo mais leve.',
-  'P.S.: dormir bem na véspera de um dia cheio também é estudar.',
-  'P.S.: não precisa responder, mas se responder eu fico feliz.',
 ]
 
 function tomDaFaixa(f: Faixa | null): 'baixo' | 'medio' | 'alto' {
@@ -868,7 +886,7 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
   }
   const teot = fatos.prova === 'teot' || (!fatos.prova && (fatos.etapa === 'r3' || fatos.etapa === 'r4'))
   const diasProva = fatos.cronograma?.dias ?? (teot ? diasAteTeot(hoje) : null)
-  const nomeProva = fatos.cronograma?.prova && !/[@\d_]/.test(fatos.cronograma.prova) ? `o ${fatos.cronograma.prova}` : fatos.prova ? NOME_PROVA[fatos.prova] : teot ? 'o TEOT' : 'a prova'
+  const nomeProva = p.provaData || p.provaCronograma ? provaComArtigo(p.provaCronograma) : fatos.prova ? NOME_PROVA[fatos.prova] : teot ? 'o TEOT' : 'a sua prova'
   const ctx: Ctx = {
     p, tipo, faixa, nome: primeiroNome(p.nome), r, dez: r >= MINIMO_PARA_NUMERO, q: questoes(r), pct,
     get pctBom() { if (!mostrarAcerto()) return null; usados.add('acerto'); return pctBomValor },
@@ -899,10 +917,10 @@ function criarCtx(p: PerfilCarta, tipo: TipoCarta, faixa: Faixa | null, marco: n
       const candidatos: Array<[string | null, string]> = []
       if (fatos.aniversario && !usados.has('aniversario')) candidatos.push(['aniversario', fatos.aniversario === 'hoje' ? 'P.S.: e parabéns pelo aniversário. Que o ano que começa traga a aprovação e dias mais leves.' : 'P.S.: vi que o seu aniversário está chegando. Deixo o parabéns adiantado, com carinho.'])
       if (fatos.ranking && !usados.has('ranking')) candidatos.push(['ranking', `P.S.: vi que você está em ${fatos.ranking}º no ranking geral. Fiquei feliz de ver o seu nome lá.`])
-      if (fatos.sequencia && !usados.has('sequencia')) candidatos.push(['sequencia', `P.S.: ${dias(fatos.sequencia)} seguidos de estudo. Que constância bonita.`])
-      if (fatos.horario === 'madrugada' && !usados.has('horario')) candidatos.push(['horario', 'P.S.: vi que você estuda até de madrugada. Admiro muito, e peço com carinho: cuide do sono também, que a memória agradece.'])
+      if (fatos.sequencia && !usados.has('sequencia')) candidatos.push(['sequencia', `P.S.: ${dias(fatos.sequencia)} seguidos de estudo.`])
+      if (fatos.horario === 'madrugada' && !usados.has('horario')) candidatos.push(['horario', 'P.S.: vi que você estuda até de madrugada.'])
       if (fatos.horario === 'noite' && !usados.has('horario')) candidatos.push(['horario', 'P.S.: vi que você estuda bastante à noite. Admiro muito quem encontra tempo depois de um dia inteiro.'])
-      if (fatos.cronograma && !usados.has('cronograma')) candidatos.push(['cronograma', fatos.cronograma.dias >= 60 ? `P.S.: ${dias(fatos.cronograma.dias)} é bastante tempo. Cuida do sono nas próximas semanas, que ele conta como estudo.` : `P.S.: faltam ${dias(fatos.cronograma.dias)} para ${fatos.cronograma.prova ? `o ${fatos.cronograma.prova}` : 'a sua prova'}. Estou na torcida.`])
+      if (fatos.cronograma && !usados.has('cronograma')) candidatos.push(['cronograma', `P.S.: faltam ${dias(fatos.cronograma.dias)} para ${fatos.cronograma.prova ? `o ${fatos.cronograma.prova}` : 'a sua prova'}. Estou na torcida.`])
       if (fatos.servico && !usados.has('servico')) candidatos.push(['servico', `P.S.: um abraço para o pessoal ${fatos.servico.de}.`])
       if (fatos.melhorArea && !usados.has('melhorArea')) {
         const em = AREAS[fatos.melhorArea.slug].em
@@ -1028,6 +1046,9 @@ export function tipoCombina(tipo: TipoCarta, p: PerfilCarta): boolean {
     case 'marco': return r >= 100
     case 'primeiras_10': return r >= MINIMO_PARA_NUMERO
     case 'boas_vindas': case 'comecando': case 'comecou_parou': case 'pausa': case 'sumiu': case 'convite_20': case 'convite_50': case 'voltou': case 'assinante_parado_7': return r > 0
+    // Pela ficha, sem a data do fim: "terminou há pouco". A tela Prontas só escolhe estas com o dado certo.
+    case 'acesso_terminou': return !p.assinante && r > 0
+    case 'como_estao': return r > 0
     default: return true
   }
 }
@@ -1218,6 +1239,9 @@ export interface DadosCartaBanco {
   data_prova?: string | null
   prova_cronograma?: string | null
   ultimo_login?: string | null
+  // 05/11/2026 (listar_sugestoes_cartas_admin): o último acesso pago e se ele renova sozinho.
+  fim_acesso?: string | null
+  renova_sozinho?: boolean | null
 }
 
 export function perfilDosDados(d: DadosCartaBanco, limiteGratisLigado = false): PerfilCarta {
@@ -1239,6 +1263,7 @@ export function perfilDosDados(d: DadosCartaBanco, limiteGratisLigado = false): 
     servico: texto(d.servico), cidade: texto(d.cidade), nascimento: texto(d.nascimento),
     resumosLidos: resumos !== null && resumos > 0 ? { total: resumos, titulos: Array.isArray(d.resumos_titulos) ? d.resumos_titulos.map(String) : [] } : null,
     diasParaProva: num(d.dias_para_prova), provaData: texto(d.data_prova), provaCronograma: texto(d.prova_cronograma),
+    fimAcesso: texto(d.fim_acesso), renovaSozinho: !!d.renova_sozinho,
   }
 }
 

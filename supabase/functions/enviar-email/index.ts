@@ -2,7 +2,7 @@ import { banco, cors, json, usuarioDoPedido } from '../_shared/http.ts'
 import { alertarAdministradores, emailConfigurado, enviarEmail, linkDescadastro, site, tokenDescadastroValido } from '../_shared/email.ts'
 import { CAMPANHAS_DIARIAS, MARCOS, automaticoBloqueado, ehCampanhaDiaria, ehTransacional, emailAutomatico, emailCarta, emailLembrete, emailMarco, emailRelatoResolvido, emailRelatorio, marcoAtingido, marcoComCarta, tipoAutomaticoValido, type CampanhaLembrete, type DadosRelatorio, type Marco, type TipoAutomatico, type TipoCampanhaDiaria } from '../_shared/modelo-email.ts'
 import { permiteEnvio, preferenciasDaLinha, type CategoriaEmail } from '../_shared/preferencias.ts'
-import { cadenciaBloqueia, perfilDosDados, problemaGrave, renderizarCarta, type DadosCampanha, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
+import { perfilDosDados, problemaGrave, renderizarCarta, type DadosCampanha, type DadosCartaBanco, type EnvioAnterior, type PerfilCarta, type TipoCarta } from '../_shared/cartas.ts'
 
 /**
  * E-mails do OrtoQuestões. Ações (POST, corpo JSON):
@@ -105,6 +105,13 @@ async function podeReceber(id: string, categoria: CategoriaEmail): Promise<boole
   } catch {
     return false
   }
+}
+
+/** Mesma política da central; erro de leitura nunca libera um envio. */
+async function bloqueioCentral(id: string, tipo: string, categoria: string, referencia: string | null = null): Promise<string | null> {
+  const r = await banco('rpc/hub_bloqueio', { method: 'POST', body: JSON.stringify({ p_id: id, p_tipo: tipo, p_categoria: categoria, p_referencia: referencia }) })
+  if (!r.ok) throw new Error('sql_hub_pendente')
+  return await r.json() as string | null
 }
 
 async function ehAdministrador(id: string) {
@@ -230,8 +237,7 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     vistos++
     if (!await podeReceber(id, 'relatorio')) { recusados++; continue }
     // Relatórios não esperam a cadência (TIPOS_PERIODICOS em _shared/cartas.ts); a chamada fica para o caso de a regra mudar.
-    const anteriores = await anterioresDe(id).catch(() => [] as EnvioAnterior[])
-    if (cadenciaBloqueia(anteriores, new Date(), 'relatorio')) { adiados++; continue }
+    if (await bloqueioCentral(id, 'relatorio', 'relatorio', mes)) { adiados++; continue }
     const reserva = await registrar({ id_usuario: id, tipo: 'relatorio', referencia: mes, status: 'enviando' })
     let linha: { id: number } | undefined
     if (reserva.ok) [linha] = await reserva.json() as Array<{ id: number }>
@@ -245,11 +251,11 @@ async function enviarRelatorios(mesPedido?: string, limitePedido?: number, quinz
     try {
       const pronto = quinzenal ? await montarQuinzenal(id, mes) : await montarRelatorio(id, mes)
       if (!pronto) throw new Error('usuario_sem_email')
-      await enviarEmail(pronto.para, pronto.assunto, pronto.html, pronto.texto, await linkDescadastro(id, 'relatorio'))
+      await enviarEmail(pronto.para, pronto.assunto, pronto.html, pronto.texto, await linkDescadastro(id, 'relatorio'), undefined, undefined, `relatorio/${id}/${mes}`)
       await atualizarEnvio(linha.id, { status: 'enviado', assunto: pronto.assunto }, { modelo: pronto.modelo, versao: pronto.versao, origem: 'automatico' })
       enviados++
     } catch (falha) {
-      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? 'falhou' : 'enviando', erro: motivo(falha) }) })
       falhas++
     }
     await esperar(600)
@@ -293,7 +299,7 @@ async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number 
     if (!await podeReceber(d.id_usuario, 'lembretes')) { recusados++; continue }
     // Cadência (o "Pix termina hoje" é transacional e nunca é adiado).
     const anteriores = await anterioresDe(d.id_usuario).catch(() => [] as EnvioAnterior[])
-    if (cadenciaBloqueia(anteriores, new Date(), TIPO_DA_CAMPANHA[campanha])) { adiados++; continue }
+    if (await bloqueioCentral(d.id_usuario, TIPO_DA_CAMPANHA[campanha], 'lembretes', d.referencia)) { adiados++; continue }
     const reserva = await registrar({ id_usuario: d.id_usuario, tipo: 'lembrete', referencia: d.referencia, status: 'enviando', enviado_por: por })
     let linha: { id: number } | undefined
     if (reserva.ok) [linha] = await reserva.json() as Array<{ id: number }>
@@ -316,11 +322,11 @@ async function enviarLembretes(campanha: CampanhaLembrete, limitePedido: number 
         // O perfil completo (parte 27) deixa a carta citar a área em que a pessoa estava e os fatos pessoais.
         perfil: await perfilCompleto(d.id_usuario).catch(() => null),
       })
-      await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro)
+      await enviarEmail(d.email, e.assunto, e.html, e.texto, descadastro, undefined, undefined, `lembrete/${d.id_usuario}/${d.referencia}`)
       await atualizarEnvio(linha.id, { status: 'enviado', assunto: e.assunto }, { modelo: e.modelo, versao: e.versao, origem: por ? 'lote' : 'automatico' })
       enviados++
     } catch (falha) {
-      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
+      await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? 'falhou' : 'enviando', erro: motivo(falha) }) })
       falhas++
     }
     await esperar(600)
@@ -343,7 +349,7 @@ interface PedidoAutomatico {
 }
 
 /** Os tipos que saem uma vez só por pessoa: a referência é o próprio tipo. */
-const UMA_VEZ: readonly string[] = ['boas_vindas_dia0', 'primeiras_10', 'cronograma_pronto', 'assinou_sem_cronograma']
+const UMA_VEZ: readonly string[] = ['boas_vindas_dia0', 'primeiras_10', 'cronograma_pronto']
 
 /**
  * Um dos seis automáticos novos (17/10/2026). Idempotente por pessoa e referência
@@ -379,7 +385,7 @@ async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: Pedido
     if (diasFora < 10) return { resultado: 'ainda_nao' }
   }
   if (tipo === 'primeiras_10' && respondidas < 10) return { resultado: 'ainda_nao' }
-  let diasParaProva = Number(pedido.dias_para_prova ?? 0) || null, prova = typeof pedido.prova === 'string' ? pedido.prova.slice(0, 30) : null
+  let diasParaProva = Number(pedido.dias_para_prova ?? 0) || null, prova = typeof pedido.prova === 'string' ? pedido.prova.slice(0, 40) : null
   if (tipo === 'cronograma_pronto') {
     const p = await banco(`planos_estudo?usuario_id=eq.${id}&select=data_prova,prova&limit=1`)
     const [plano] = p.ok ? await p.json() as Array<{ data_prova: string; prova: string | null }> : []
@@ -403,7 +409,7 @@ async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: Pedido
   if (existe.ok && (await existe.json() as unknown[]).length) return { resultado: 'ja_enviado', tipo }
 
   const anteriores = await anterioresDe(id).catch(() => [] as EnvioAnterior[])
-  const bloqueio = automaticoBloqueado(tipo, anteriores)
+  const bloqueio = automaticoBloqueado(tipo, anteriores) ?? (transacional ? null : await bloqueioCentral(id, tipo, 'cartas', referencia))
   if (bloqueio) return { resultado: 'adiado', tipo, motivo: bloqueio }
 
   const meio = pedido.meio === 'pix' ? 'pix' : pedido.meio === 'cartao' ? 'cartao' : null
@@ -433,11 +439,11 @@ async function enviarAutomatico(id: string, tipo: TipoAutomatico, pedido: Pedido
     ;[linha] = await reserva.json() as Array<{ id: number }>
   }
   try {
-    await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, transacional ? undefined : await linkDescadastro(id, 'cartas'))
+    await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, transacional ? undefined : await linkDescadastro(id, 'cartas'), undefined, undefined, `automatico/${id}/${referencia}`)
     if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado' }) })
     return { resultado: 'enviado', tipo, para: pessoa.email }
   } catch (falha) {
-    if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
+    if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? 'falhou' : 'enviando', erro: motivo(falha) }) })
     return { resultado: 'falhou', tipo }
   }
 }
@@ -678,8 +684,11 @@ Deno.serve(async (req) => {
       if (!marco) return json({ resultado: 'ainda_nao' }, 200, req)
       if (Number(dados.respondidas) > marco.minimo + folga(marco)) return json({ resultado: 'longe_do_marco', marco: marco.minimo }, 200, req)
       // Cadência: se recebeu outro e-mail há pouco, o site tenta de novo mais tarde.
-      const bloqueio = cadenciaBloqueia(await anterioresDe(usuario.id).catch(() => [] as EnvioAnterior[]), new Date(), 'marco')
+      const bloqueio = await bloqueioCentral(usuario.id, 'marco', 'conquistas')
       if (bloqueio) return json({ resultado: 'adiado', marco: marco.minimo, motivo: bloqueio }, 200, req)
+      // Gerar antes de reservar: a própria reserva não pode bloquear a carta pela cadência.
+      const pronto = await montar(usuario.id, marco)
+      if (!pronto?.dados.email) return json({ resultado: 'sem_email' }, 200, req)
       // A trava do banco (um e-mail por marco) evita duplicata com dois pedidos juntos.
       const reserva = await registrar({ id_usuario: usuario.id, tipo: 'marco', marco: marco.minimo, status: 'enviando' })
       let linha: { id: number } | undefined
@@ -693,13 +702,12 @@ Deno.serve(async (req) => {
         if (retomada.ok) [linha] = await retomada.json() as Array<{ id: number }>
       }
       if (!linha) return json({ resultado: 'ja_enviado', marco: marco.minimo }, 200, req)
-      const pronto = await montar(usuario.id, marco)
       try {
-        await enviarEmail(pronto!.dados.email!, pronto!.email.assunto, pronto!.email.html, pronto!.email.texto, await linkDescadastro(usuario.id))
+        await enviarEmail(pronto.dados.email!, pronto.email.assunto, pronto.email.html, pronto.email.texto, await linkDescadastro(usuario.id), undefined, undefined, `marco/${usuario.id}/${marco.minimo}`)
         await atualizarEnvio(linha.id, { status: 'enviado', assunto: pronto!.email.assunto }, { modelo: pronto!.email.modelo, versao: pronto!.email.versao, origem: 'automatico' })
         return json({ resultado: 'enviado', marco: marco.minimo }, 200, req)
       } catch (falha) {
-        await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
+        await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? 'falhou' : 'enviando', erro: motivo(falha) }) })
         return json({ resultado: 'falhou' }, 200, req)
       }
     }
@@ -727,42 +735,41 @@ Deno.serve(async (req) => {
       if (grave) return json({ erro: `carta_com_problema: ${grave}` }, 400, req)
       const modelo = typeof corpo.modelo === 'string' && /^[a-z0-9_:-]{1,60}$/.test(corpo.modelo) ? corpo.modelo : null
       const versao = typeof corpo.versao === 'string' && /^[a-z0-9_:#-]{1,80}$/.test(corpo.versao) ? corpo.versao : null
+      if (['obrigado_assinatura', 'assinou_sem_cronograma'].includes(modelo?.split(':')[0] ?? '')) return json({ erro: 'modelo_aposentado' }, 409, req)
       const lote = corpo.origem === 'lote'
       if (!emailConfigurado()) return json({ erro: 'email_nao_configurado' }, 503, req)
 
-      // Travas (parte 27). Sem ela, a carta individual segue a regra antiga; o lote espera o SQL.
+      // A central exige o esquema completo. Sem consulta confiável, não enviar.
       const r = await banco('rpc/dados_carta_envio', { method: 'POST', body: JSON.stringify({ p_id: corpo.id_usuario, p_modelo: modelo }) })
-      let pessoa: { email: string | null; quer_cartas: boolean; confirmado?: boolean; novidades?: boolean; administrador?: boolean; mesmo_tipo_30d?: boolean; emails_48h?: number } | null = null
-      const comParte27 = r.ok
-      if (comParte27) pessoa = await r.json()
-      else {
-        if (lote) return json({ erro: 'sql_pendente' }, 409, req)
-        const antigo = await dadosUsuario(corpo.id_usuario)
-        pessoa = antigo ? { email: antigo.email, quer_cartas: antigo.quer_conquistas } : null
-      }
+      if (!r.ok) return json({ erro: 'sql_pendente' }, 409, req)
+      const pessoa = await r.json() as { email: string | null; quer_cartas: boolean; confirmado?: boolean; novidades?: boolean; administrador?: boolean } | null
       if (!pessoa?.email) return json({ erro: 'usuario_sem_email' }, 404, req)
       if (!pessoa.quer_cartas || !await podeReceber(corpo.id_usuario, 'cartas')) return json({ erro: 'pessoa_nao_quer_emails' }, 409, req)
       if (lote) {
         if (pessoa.administrador) return json({ erro: 'administrador' }, 409, req)
         if (!pessoa.confirmado) return json({ erro: 'email_nao_confirmado' }, 409, req)
         if (modelo?.startsWith('convite') && !pessoa.novidades) return json({ erro: 'sem_aceite_novidades' }, 409, req)
-        if (pessoa.mesmo_tipo_30d) return json({ erro: 'mesmo_tipo_30_dias' }, 409, req)
-        if (Number(pessoa.emails_48h ?? 0) > 0) return json({ erro: 'recebeu_email_recente' }, 409, req)
       }
 
-      const descadastro = lote ? await linkDescadastro(corpo.id_usuario, 'cartas') : null
+      // A ficha e a rodada diária passam pela mesma regra, inclusive 3 em 14 dias. Falha de consulta bloqueia.
+      const impedimento = await bloqueioCentral(corpo.id_usuario, modelo?.split(':')[0] ?? 'opiniao', 'cartas')
+      if (impedimento) return json({ erro: impedimento }, 409, req)
+      const descadastro = await linkDescadastro(corpo.id_usuario, 'cartas')
       const e = renderizarCarta({ assunto, corpo: texto, descadastro })
       // Reserva o registro antes de enviar: dois cliques seguidos não mandam duas vezes no lote.
-      const registro = { id_usuario: corpo.id_usuario, assunto, status: 'enviando', enviado_por: usuario.id }
-      let reserva = comParte27 ? await registrar({ ...registro, tipo: 'carta', modelo, versao, origem: lote ? 'lote' : 'manual' }) : null
-      if (!reserva?.ok) reserva = await registrar({ ...registro, tipo: 'parabens' })
-      const [linha] = reserva.ok ? await reserva.json() as Array<{ id: number }> : []
+      const hash = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`${corpo.id_usuario}:${diaDeHoje()}:${assunto}:${texto}`))
+      const referencia = 'individual:' + [...new Uint8Array(hash)].map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 40)
+      const registro = { id_usuario: corpo.id_usuario, assunto, referencia, status: 'enviando', enviado_por: usuario.id }
+      const reserva = await registrar({ ...registro, tipo: 'carta', modelo, versao, origem: lote ? 'lote' : 'manual' })
+      if (!reserva.ok) return json({ erro: reserva.status === 409 ? 'mensagem_ja_reservada' : 'reserva_falhou' }, 409, req)
+      const [linha] = await reserva.json() as Array<{ id: number }>
+      if (!linha) return json({ erro: 'reserva_falhou' }, 503, req)
       try {
-        await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, descadastro ?? undefined)
+        await enviarEmail(pessoa.email, e.assunto, e.html, e.texto, descadastro ?? undefined, undefined, undefined, referencia)
         if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'enviado' }) })
         return json({ resultado: 'enviado', para: pessoa.email }, 200, req)
       } catch (falha) {
-        if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: 'falhou', erro: motivo(falha) }) })
+        if (linha) await banco(`emails_enviados?id=eq.${linha.id}`, { method: 'PATCH', body: JSON.stringify({ status: /envio_recusado_4\d\d/.test(motivo(falha)) ? 'falhou' : 'enviando', erro: motivo(falha) }) })
         return json({ erro: motivo(falha) }, 502, req)
       }
     }

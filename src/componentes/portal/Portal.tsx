@@ -5,12 +5,13 @@ import { usarPremium } from '../../conta/premium'
 import { contasDisponiveis } from '../../conta/supabase'
 import { usarNacionalAbertoATodos } from '../../dados/nacionalEmDestaque'
 import { A_PARTIR_DE } from '../../dados/planos'
+import { recurso } from '../../config'
 import { href } from '../../util/rotas'
 import { Icone } from '../Icone'
 import { BuscaPortal } from './BuscaPortal'
 import { ContinuarJornada } from './ContinuarJornada'
 import { IconePixel } from './IconePixel'
-import { GRUPOS, PRINCIPAIS, SO_NA_BUSCA, grupoConta, type Pagina } from './rotas'
+import { GRUPOS, PRINCIPAIS, SO_NA_BUSCA, ehExterno, grupoConta, type Pagina } from './rotas'
 import { Visitantes } from './Visitantes'
 import { FogueiraDoMenu } from './FogueiraDoMenu'
 import '../../estilos/componentes/Portal.css'
@@ -84,7 +85,7 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
                 const fechado = bloqueado(p)
                 const destino = fechado && p.icone === 'relatorio' ? '/assinatura' : p.destino
                 return <li key={p.rotulo}>
-                  <a className="pt-item" href={href(destino)} onClick={aoFechar} aria-current={atual === p.destino && p.icone !== 'relatorio' ? 'page' : undefined}
+                  <a className="pt-item" href={ehExterno(destino) ? recurso(destino) : href(destino)} onClick={aoFechar} aria-current={atual === p.destino && p.icone !== 'relatorio' ? 'page' : undefined}
                     style={{ '--atraso': `${g.itens.indexOf(p) * 18}ms` } as CSSProperties}>
                     <IconePixel nome={p.icone} tamanho={48} />
                     <span className="pt-item__texto"><strong>{p.rotulo}</strong><small>{p.texto}</small></span>

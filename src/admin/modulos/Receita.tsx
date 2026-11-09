@@ -1,172 +1,258 @@
 import { useMemo, useState } from 'react'
-import { HORIZONTES, MINIMO_PARA_OBSERVADA, calcularFinanceiro, curto, taxaPixSugerida } from '../../componentes/admin/financeiro'
+import { calcularFinanceiro, taxaPixSugerida } from '../../componentes/admin/financeiro'
 import { baixarCsv, porcentagem } from '../../componentes/admin/formatos'
-import { calcularGanhos, fechamentoDoMes } from '../../componentes/admin/ganhos'
-import { NOME_MES, aReceberNoPix, cobrancas as cobrancasDe, mesAMes, pagaSemCobranca, precoDe, type Mes } from '../../componentes/admin/receita'
+import { calcularGanhos } from '../../componentes/admin/ganhos'
+import { MES, NOME_MES, cobrancas as cobrancasDe, meioDe, mesAMes, pagaSemCobranca, precoDe, renovaSozinha, somarMesChave, somarMeses, vigentesPorPessoa, type Cobranca, type Mes } from '../../componentes/admin/receita'
 import { rotuloMeio, rotuloPlano, rotuloTipoCobranca } from '../../componentes/admin/rotulos'
-import { receitaDoPeriodo } from '../dados/metricas'
 import { usarPainel, type LinhaAssinatura } from '../dados/painel'
-import { usarNav } from '../nav'
-import { PERIODOS, defAba } from '../rotas'
-import { Icone } from '../ui/Icone'
-import { data, diaDaSerie, inteiro, pct, reais } from '../ui/formato'
-import { Composicao, Legenda, Quadro, SerieTempo } from '../ui/graficos'
-import { Cabeca, Carregando, Estado, Faixa, Metrica, Painel, Segmento, SeloQualidade, VariacaoTexto } from '../ui/kit'
-import { Tabela } from '../ui/tabela'
 import { variacao } from '../dados/metricas'
+import { usarNav } from '../nav'
+import { Icone } from '../ui/Icone'
+import { data, diaDaSerie, inteiro, reais } from '../ui/formato'
+import { Colunas, type PontoColuna } from '../ui/graficos'
+import { Carregando, Estado, Faixa, Painel, VariacaoTexto } from '../ui/kit'
+import { Tabela } from '../ui/tabela'
+import { Calendario } from './calendario'
+import { PulsoFinanceiro } from './PulsoFinanceiro'
+import { FaixaMetas } from './metasResumo'
 
-/** Receita › Visão financeira e Receita › Previsão. */
+/**
+ * Financeiro › Resumo, refeito do zero em 04/11/2026 (Tales: "quanto vou ganhar em cada mês; os cenários de 50% a 90%;
+ * só os mensais primeiro; semestral e anual: quem paga neste mês e daqui quanto tempo renova"). De cima para baixo:
+ *   1. Receita do mês (o que já entrou) e o fechamento previsto.
+ *   2. Mensais: quanto entra por mês só com eles, cartão e Pix, com os cenários de recompra do Pix.
+ *   3. Semestrais e anuais: quem paga, quando e quanto falta para renovar.
+ *   4. Previsão dos próximos 12 meses, no cenário escolhido.
+ *   5. O que já entrou: por mês e por dia, e o movimento do mês.
+ * Assinantes viraram área própria; Extrato e Avisos do Mercado Pago continuam no Financeiro.
+ */
 export default function Receita() {
-  const { estado } = usarNav()
   const p = usarPainel()
+  if (!p.reais && p.assinaturasQ.erro) return <div className="ng-painel"><Estado tipo="erro" titulo="Não foi possível carregar o Financeiro" texto="Os valores não foram substituídos por zero. Tente carregar novamente." /><button type="button" className="a3-botao" onClick={() => void p.atualizar()}>Tentar novamente</button></div>
   if (!p.reais) return <Carregando linhas={8} />
   if (p.cobrancasCarregando) return <Carregando linhas={8} texto="Carregando as cobranças…" />
-  return estado.sub === 'previsao' ? <Previsao assinaturas={p.reais} /> : <Visao assinaturas={p.reais} />
+  return <Financeiro assinaturas={p.reais} />
 }
 
 const plural = (n: number, um: string, varios: string) => `${inteiro(n)} ${n === 1 ? um : varios}`
 const soMes = (k: string) => NOME_MES(k).replace(/ de \d{4}$/, '')
+const nomeCurto = (a: LinhaAssinatura) => a.nome || a.usuario || a.id_usuario.slice(0, 8)
 
-function usarNomes(assinaturas: LinhaAssinatura[]) {
-  return useMemo(() => {
-    const m = new Map<string, { nome: string | null; email: string | null }>()
-    for (const a of assinaturas) { const x = m.get(a.id_usuario); if (!x || (!x.nome && a.nome)) m.set(a.id_usuario, { nome: a.nome ?? x?.nome ?? null, email: a.usuario ?? x?.email ?? null }) }
-    return m
-  }, [assinaturas])
+/** Quem paga hoje, uma linha por pessoa: plano, como paga, o último valor pago e quando vence. */
+export interface Pagante { id: string; nome: string; plano: string; meses: number; meio: 'cartao' | 'pix'; renova: boolean; saindo: boolean; preco: number; fim: Date }
+function carteiraDe(assinaturas: LinhaAssinatura[], todas: Cobranca[], agora = Date.now()): Pagante[] {
+  const ultimo = new Map<string, number>()
+  for (const c of [...todas].sort((a, b) => a.em.getTime() - b.em.getTime())) ultimo.set(c.id_usuario, c.valor)
+  return vigentesPorPessoa(assinaturas, agora).flatMap(a => {
+    const p = precoDe(a.plano)
+    if (!p || !a.fim_periodo) return []
+    const meio = meioDe(a), renova = renovaSozinha(a)
+    return [{ id: a.id_usuario, nome: nomeCurto(a), plano: a.plano, meses: p.meses, meio, renova, saindo: meio === 'cartao' && !renova, preco: ultimo.get(a.id_usuario) ?? p.total, fim: new Date(a.fim_periodo) }]
+  })
 }
 
-function Visao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
+/** Cada próximo pagamento de quem continua (cartão que renova e Pix, que precisa pagar de novo), até `ate`. */
+function proximosPagamentos(c: Pagante[], ate: Date, agora = new Date()) {
+  const lista: Array<{ quem: Pagante; em: Date; chave: string; ciclo: number }> = []
+  for (const x of c) {
+    if (x.saindo) continue
+    for (let j = 0; j < 40; j++) {
+      const em = j === 0 ? x.fim : somarMeses(x.fim, j * x.meses)
+      if (em > ate) break
+      if (em >= agora) lista.push({ quem: x, em, chave: MES(em), ciclo: j + 1 })
+    }
+  }
+  return lista.sort((a, b) => a.em.getTime() - b.em.getTime())
+}
+
+export const CENARIOS: Array<{ taxa: number; nome: string }> = [
+  { taxa: 0.3, nome: 'Pessimista' }, { taxa: 0.5, nome: 'Metade' }, { taxa: 0.6, nome: '60%' }, { taxa: 0.7, nome: '70%' },
+  { taxa: 0.8, nome: '80%' }, { taxa: 0.9, nome: '90%' }, { taxa: 1, nome: 'Todos' },
+]
+
+function Financeiro({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
   const p = usarPainel()
   const nav = usarNav()
-  const periodo = nav.estado.periodo
   const todas = useMemo(() => cobrancasDe(assinaturas, p.cobrancas), [assinaturas, p.cobrancas])
-  const d = useMemo(() => calcularFinanceiro(assinaturas, todas), [assinaturas, todas])
   const g = useMemo(() => calcularGanhos(todas), [todas])
-  const r = useMemo(() => receitaDoPeriodo(assinaturas, p.cobrancas, periodo), [assinaturas, p.cobrancas, periodo])
+  const f = useMemo(() => calcularFinanceiro(assinaturas, todas), [assinaturas, todas])
   const meses = useMemo(() => mesAMes(assinaturas, 12, new Date(), p.cobrancas), [assinaturas, p.cobrancas])
-  const nomes = usarNomes(assinaturas)
+  const carteira = useMemo(() => carteiraDe(assinaturas, todas), [assinaturas, todas])
+  const { observado, taxa: sugerida } = useMemo(() => taxaPixSugerida(assinaturas), [assinaturas])
+  const [escolhida, escolher] = useState<number | null>(null)
+  const taxa = escolhida ?? sugerida
   const semCobranca = useMemo(() => assinaturas.filter(pagaSemCobranca), [assinaturas])
-  const atual = meses[meses.length - 1], anterior = meses[meses.length - 2]
-  const mesAtual = soMes(d.chaveMes), mesAnterior = soMes(d.chaveMesPassado)
-  const parte = defAba('financeiro')
-  const exportar = () => baixarCsv(`ortoquestoes-cobrancas-${new Date().toISOString().slice(0, 10)}.csv`, ['Data', 'Pessoa', 'E-mail', 'Plano', 'Valor bruto', 'Meio', 'Tipo', 'Origem', 'Pagamento no Mercado Pago'],
-    todas.map(c => [c.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' }), nomes.get(c.id_usuario)?.nome ?? '', nomes.get(c.id_usuario)?.email ?? '', rotuloPlano(c.plano), c.valor.toFixed(2).replace('.', ','), rotuloMeio(c.meio), rotuloTipoCobranca(c), c.estimada ? 'estimada (renovação antiga ou paga sem cobrança gravada)' : 'cobrança gravada', c.id_pagamento ?? '']))
-  const novasAgora = (atual?.novasCartao ?? 0) + (atual?.novasPix ?? 0), novasAntes = (anterior?.novasCartao ?? 0) + (anterior?.novasPix ?? 0)
-  const usuarios = p.resumo?.usuarios ?? p.usuarios?.length ?? null
-  return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Valores brutos, em dias e meses de São Paulo; o extrato oficial é o do Mercado Pago.${p.testes ? ` ${plural(p.testes, 'assinatura de teste do dono fica', 'assinaturas de teste do dono ficam')} de fora.` : ''}`}
-      acoes={<><Segmento rotulo="Período" valor={periodo} aoMudar={x => nav.ajustar({ periodo: x })} opcoes={PERIODOS.map(x => [x, `${x} dias`] as [typeof x, string])} />
-        <button type="button" className="a3-botao a3-botao--contorno" onClick={exportar}><Icone nome="baixar" tamanho={15} />CSV das cobranças</button></>} />
+
+  const agora = new Date()
+  const chaveMes = MES(agora)
+  const doze = useMemo(() => { const ate = new Date(); ate.setMonth(ate.getMonth() + 12); return proximosPagamentos(carteira, ate) }, [carteira])
+  const valorDe = (x: { quem: Pagante; ciclo: number }) => x.quem.meio === 'pix' ? x.quem.preco * taxa ** x.ciclo : x.quem.preco
+  const restoDoMes = doze.filter(x => x.chave === chaveMes)
+  const fechamento = g.mes.valor + restoDoMes.reduce((s, x) => s + valorDe(x), 0)
+
+  const exportar = () => baixarCsv(`ortoquestoes-cobrancas-${new Date().toISOString().slice(0, 10)}.csv`, ['Data', 'Plano', 'Valor bruto', 'Meio', 'Tipo', 'Origem', 'Pagamento no Mercado Pago'],
+    todas.map(c => [c.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' }), rotuloPlano(c.plano), c.valor.toFixed(2).replace('.', ','), rotuloMeio(c.meio), rotuloTipoCobranca(c), c.estimada ? 'estimada' : 'cobrança gravada', c.id_pagamento ?? '']))
+
+  return <div className="a3-pilha a3-pilha--larga fi ng">
+    <PulsoFinanceiro cobrancas={todas} assinaturas={assinaturas} fechamento={fechamento} taxa={taxa} />
+    <FaixaMetas titulo="Objetivos financeiros" chaves={['faturamento', 'ativosFim']} />
     {p.avisoCobrancas && <Faixa tom="aviso" titulo="Cobranças gravadas indisponíveis">{p.avisoCobrancas}</Faixa>}
     {semCobranca.length > 0 && <Faixa tom="aviso" titulo={plural(semCobranca.length, 'assinatura paga sem a cobrança gravada', 'assinaturas pagas sem a cobrança gravada')}>
-      Entram como estimadas, pelo preço do plano. Vale conferir no Mercado Pago e reprocessar o aviso: {semCobranca.slice(0, 4).map(a => `${a.nome || a.usuario} (${rotuloPlano(a.plano)}, desde ${data(a.inicio_periodo ?? a.criada_em ?? a.ultima_atualizacao)})`).join('; ')}{semCobranca.length > 4 ? '…' : ''}
+      Entram como estimadas, pelo preço do plano. Vale conferir no Mercado Pago: {semCobranca.slice(0, 4).map(a => `${a.nome || a.usuario} (${rotuloPlano(a.plano)})`).join('; ')}{semCobranca.length > 4 ? '…' : ''}
     </Faixa>}
 
-    <section className="a3-painel" aria-label="Quanto entrou por período">
-      <div className="a3-faixa-metricas" style={{ '--colunas': 5 } as React.CSSProperties}>
-        <Metrica rotulo={`Receita de ${mesAtual}`} grande valor={reais(g.mes.valor)} qualidade="derivado" variacao={variacao(g.mes.valor, g.mesPassadoAteHoje.valor)} formato={reais}
-          nota={`contra ${mesAnterior} até o dia ${g.diaDoMes} · ${mesAnterior} inteiro: ${reais(d.mesPassado)}`} />
-        <Metrica rotulo="Hoje" valor={reais(g.hoje.valor)} qualidade="derivado" variacao={variacao(g.hoje.valor, g.ontem.valor)} formato={reais} nota={plural(g.hoje.quantidade, 'cobrança', 'cobranças')} />
-        <Metrica rotulo="Últimos 7 dias" valor={reais(g.semana.valor)} qualidade="derivado" variacao={variacao(g.semana.valor, g.semanaAnterior.valor)} formato={reais} nota={plural(g.semana.quantidade, 'cobrança', 'cobranças')} />
-        <Metrica rotulo={`Em ${g.chaveAno}`} valor={reais(g.ano.valor)} qualidade="derivado" nota={`${plural(g.ano.quantidade, 'cobrança', 'cobranças')} desde 1º de janeiro`} />
-        <Metrica rotulo="Desde o começo" valor={reais(d.total)} qualidade="derivado" nota={d.primeira ? `desde ${data(d.primeira)} · ${reais(d.mediaMensal)} por mês` : 'nenhuma cobrança ainda'} />
-      </div>
-    </section>
+    <Mensais carteira={carteira} taxa={taxa} escolher={escolher} observado={observado.taxa !== null ? { taxa: observado.taxa, renovados: observado.renovados, encerrados: observado.encerrados } : null} />
+    <div className="ng-secao"><Calendario pagamentos={doze} todas={todas} assinaturas={assinaturas} taxa={taxa} escolher={escolher} /></div>
+    <Longos carteira={carteira} doze={doze} taxa={taxa} />
+    <Previsao doze={doze} taxa={taxa} recebido={g.mes.valor} recebidoLongos={todas.filter(c => MES(c.em) === chaveMes && c.em <= agora && c.plano !== 'mensal').reduce((n,c) => n+c.valor,0)} chaveMes={chaveMes} />
+    <details className="ng-detalhes"><summary>Histórico mensal completo <small>Receita, renovações, cancelamentos e reembolsos</small></summary><Recebido serie={f.serie} porDia={g.porDia} meses={meses} taxaRenovacao={f.taxaRenovacaoMes} renovaram={f.renovaramMes} perderam={f.perderamMes} /></details>
 
-    <Quadro titulo={`Receita por dia · últimos ${periodo} dias`} descricao="Confirmado (cobrança gravada) em verde; estimado (renovação antiga do cartão ou paga sem registro) hachurado. Os dois nunca viram um número só."
-      fonte="cobrancas_admin + listar_assinaturas_admin · contas de teste fora" qualidade="derivado"
-      legenda={<Legenda itens={[{ nome: 'Confirmado', chave: 'serie1' }, { nome: 'Estimado', chave: 'hachura' }]} />}
-      tabela={{ cabecalho: ['Dia', 'Confirmado', 'Estimado'], linhas: r.porDia.filter(x => x.confirmada || x.reconstruida).map(x => [diaDaSerie(x.dia, true), reais(x.confirmada), reais(x.reconstruida)]) }}
-      estado={r.porDia.every(x => !x.confirmada && !x.reconstruida) ? <Estado compacto titulo={`Nenhuma cobrança nos últimos ${periodo} dias`} texto="É zero de verdade, não falta de dado." /> : undefined}>
-      <div className="a3-grade a3-grade--12" style={{ alignItems: 'start' }}>
-        <div style={{ gridColumn: 'span 8' }}><SerieTempo descricao={`Receita por dia, confirmada e estimada, nos últimos ${periodo} dias`} formato={reais}
-          rotulos={r.porDia.map(x => ({ longo: diaDaSerie(x.dia, true), curto: diaDaSerie(x.dia) }))}
-          series={[{ nome: 'Confirmado', tipo: 'barra', valores: r.porDia.map(x => x.confirmada) }, { nome: 'Estimado', tipo: 'barra', estilo: 'hachura', valores: r.porDia.map(x => x.reconstruida) }]} /></div>
-        <dl className="a3-pares" style={{ gridColumn: 'span 4' }}>
-          <div><dt>Confirmado</dt><dd>{reais(r.confirmada.atual)} <VariacaoTexto v={r.confirmada} formato={reais} curto /></dd></div>
-          <div><dt>Estimado (à parte)</dt><dd>{reais(r.reconstruida)}</dd></div>
-          <div><dt>Primeiras assinaturas</dt><dd>{r.novas.atual} <VariacaoTexto v={r.novas} curto /></dd></div>
-          <div><dt>Renovações</dt><dd>{r.renovacoes}</dd></div>
-          <div><dt>Cartão · Pix</dt><dd>{reais(r.porMeio.cartao)} · {reais(r.porMeio.pix)}</dd></div>
-        </dl>
-      </div>
-    </Quadro>
-
-    <div className="a3-grade a3-grade--12">
-      <div style={{ gridColumn: 'span 8' }}>
-        <Quadro titulo="Receita por mês" descricao="Últimos 12 meses, cartão e Pix empilhados" fonte="receita.ts › cobrancas (confirmado + estimado)" qualidade="derivado"
-          legenda={<Legenda itens={[{ nome: 'Cartão', chave: 'serie1' }, { nome: 'Pix', chave: 'serie2' }]} />}
-          tabela={{ cabecalho: ['Mês', 'Cartão', 'Pix', 'Total'], linhas: d.serie.map(x => [x.rotulo, reais(x.partes[0]), reais(x.partes[1]), reais(x.partes[0] + x.partes[1])]) }}>
-          <SerieTempo descricao="Receita por mês nos últimos 12 meses" formato={reais} altura={220} rotulos={d.serie.map(x => ({ longo: x.rotulo, curto: x.rotuloCurto }))}
-            series={[{ nome: 'Cartão', tipo: 'barra', valores: d.serie.map(x => x.partes[0]) }, { nome: 'Pix', tipo: 'barra', estilo: 2, valores: d.serie.map(x => x.partes[1]) }]} />
-        </Quadro>
-      </div>
-      <div style={{ gridColumn: 'span 4' }} className="a3-pilha">
-        <Painel titulo="Composição desde o começo">
-          <div className="a3-pilha">
-            <span className="a3-rotulo">Por meio</span>
-            <Composicao formato={reais} partes={[{ nome: 'Cartão', valor: d.receitaCartao }, { nome: 'Pix', valor: d.receitaPix }]} />
-            <span className="a3-rotulo">Por plano</span>
-            <Composicao formato={reais} partes={d.receitaPorPlano.map(x => ({ nome: `${x.nome} · ${x.cobrancas}`, valor: x.valor }))} />
-            <dl className="a3-pares">
-              <div><dt>Ticket médio</dt><dd>{reais(d.ticket)}</dd></div>
-              <div><dt>Por pagante</dt><dd>{reais(d.porPagante)} <span className="a3-mudo">({d.pagantes})</span></dd></div>
-            </dl>
-          </div>
-        </Painel>
-      </div>
-    </div>
-
-    <div className="a3-grade a3-grade--2">
-      <Painel titulo="Base de assinantes agora" descricao="Pessoas com acesso pago; renovar não soma">
-        <dl className="a3-pares">
-          <div><dt>Com acesso</dt><dd>{inteiro(d.comAcesso)}</dd></div>
-          <div><dt>Cartão que renova sozinho</dt><dd>{inteiro(d.renovamAgora)}</dd></div>
-          <div><dt>Pix</dt><dd>{inteiro(d.pixComAcesso)}</dd></div>
-          <div><dt>Cancelados que ainda têm acesso</dt><dd>{inteiro(d.cartaoSemRenovar)}</dd></div>
-          <div><dt>Receita recorrente por mês</dt><dd>{reais(d.mrr)} <SeloQualidade q="derivado" /></dd></div>
-          <div><dt>Conversão</dt><dd>{usuarios ? `${pct(porcentagem(d.pagantes, usuarios))} · ${d.pagantes} de ${inteiro(usuarios)} já pagaram` : '—'}</dd></div>
-        </dl>
-        <div style={{ marginTop: 16 }}><Tabela rotulo="Base por plano" compacta linhas={d.porPlano} chave={x => x.id} colunas={[
-          { id: 'p', titulo: 'Plano', celula: x => <span className="a3-nome">{x.nome}</span> },
-          { id: 'v', titulo: 'Com acesso', numero: true, celula: x => inteiro(x.vigentes), rotuloCelular: 'Com acesso' },
-          { id: 'r', titulo: 'Renovam', numero: true, celula: x => inteiro(x.renovam), rotuloCelular: 'Renovam' },
-          { id: 'x', titulo: 'Pix', numero: true, celula: x => inteiro(x.pix), rotuloCelular: 'Pix' },
-          { id: 'm', titulo: 'Por mês', numero: true, celula: x => reais(x.mensal), rotuloCelular: 'Por mês' },
-        ]} /></div>
-      </Painel>
-      <Painel titulo={`Movimento de ${mesAtual}`} descricao={`Comparado com ${mesAnterior}`}>
-        <dl className="a3-pares">
-          <div><dt>Primeiras assinaturas</dt><dd>{novasAgora} <VariacaoTexto v={variacao(novasAgora, novasAntes)} curto /> <span className="a3-mudo">· {atual?.novasCartao ?? 0} cartão · {atual?.novasPix ?? 0} Pix</span></dd></div>
-          {(atual?.voltas ?? 0) > 0 && <div><dt>Voltaram a assinar</dt><dd>{atual?.voltas} · {reais(atual?.receitaVoltas ?? 0)}</dd></div>}
-          <div><dt>Renovações</dt><dd>{atual?.renovacoes ?? 0} <VariacaoTexto v={variacao(atual?.renovacoes ?? 0, anterior?.renovacoes ?? 0)} curto /> <span className="a3-mudo">· {reais(atual?.receitaRenovacoes ?? 0)}</span></dd></div>
-          <div><dt>Taxa de renovação do mês</dt><dd>{d.taxaRenovacaoMes === null ? <span className="a3-mudo">ninguém venceu ainda</span> : `${d.taxaRenovacaoMes}% · ${d.renovaramMes} de ${d.renovaramMes + d.perderamMes}`}</dd></div>
-          <div><dt>Renovações desligadas</dt><dd>{atual?.cancelamentos ?? 0} <VariacaoTexto v={variacao(atual?.cancelamentos ?? 0, anterior?.cancelamentos ?? 0)} bom="desce" curto /></dd></div>
-          <div><dt>Reembolsos</dt><dd>{atual?.reembolsos ?? 0} · {reais(atual?.valorReembolsado ?? 0)}</dd></div>
-          <div><dt>Pix encerrados (normal no Pix)</dt><dd>{atual?.pixEncerrados ?? 0}</dd></div>
-          <div><dt>Cancelamento acumulado no cartão</dt><dd>{d.pagasCartao ? `${pct(porcentagem(d.cancelaram, d.pagasCartao))} · ${d.cancelaram} de ${d.pagasCartao}` : '—'}</dd></div>
-        </dl>
-      </Painel>
-    </div>
-
-    <div className="a3-atalhos-finance">
-      <a href={nav.link('cobrancas')} onClick={e => { e.preventDefault(); nav.ir('cobrancas') }}><Icone nome="receita" tamanho={16} /><span>Ver cada pagamento<small>{todas.length} cobranças, dia a dia</small></span><Icone nome="direita" tamanho={15} /></a>
-      <a href={nav.link('assinaturas')} onClick={e => { e.preventDefault(); nav.ir('assinaturas') }}><Icone nome="pessoas" tamanho={16} /><span>Ver os assinantes<small>quem paga e até quando</small></span><Icone nome="direita" tamanho={15} /></a>
+    <div className="fi-atalhos">
+      <a href={nav.link('cobrancas')} onClick={e => { e.preventDefault(); nav.ir('cobrancas') }}><Icone nome="receita" tamanho={16} /><span>Extrato<small>{todas.length} cobranças, dia a dia</small></span><Icone nome="direita" tamanho={15} /></a>
+      <a href={nav.link('assinaturas')} onClick={e => { e.preventDefault(); nav.ir('assinaturas') }}><Icone nome="estrela" tamanho={16} /><span>Assinantes<small>quem paga e até quando</small></span><Icone nome="direita" tamanho={15} /></a>
       <a href={nav.link('pagamentos')} onClick={e => { e.preventDefault(); nav.ir('pagamentos') }}><Icone nome="alerta" tamanho={16} /><span>Avisos do Mercado Pago<small>{p.errosPagamento ? `${plural(p.errosPagamento, 'aviso precisa', 'avisos precisam')} de atenção` : 'nenhum com problema'}</small></span><Icone nome="direita" tamanho={15} /></a>
+      <button type="button" onClick={exportar}><Icone nome="baixar" tamanho={16} /><span>CSV das cobranças<small>para planilha</small></span></button>
     </div>
-    <details className="a3-painel a3-metodo">
-      <summary>Mês a mês (tabela completa, com churn e CSV)</summary>
-      <MesAMes meses={meses} />
-    </details>
     <details className="a3-painel a3-metodo">
       <summary>Como estes números são calculados</summary>
       <div className="a3-texto">
-        <p>{p.cobrancas ? 'Confirmado: cobranças gravadas no banco (Pix pelo valor pago, cartão pelo valor contratado). O banco guarda só a última cobrança de cada cartão; as renovações anteriores são estimadas a cada período do plano. Reembolsos descontados.' : 'Sem as cobranças gravadas, tudo sai do preço dos planos e aparece como estimado.'} Cartão renova sozinho; Pix é compra avulsa. Valores brutos, sem a taxa do Mercado Pago.</p>
-        <p>Nova, renovação ou volta é decidido pela pessoa: a primeira compra paga é a nova; pagar de novo com o acesso valendo (ou até 30 dias depois do fim) é renovação; depois disso é "voltou a assinar".</p>
-        <p>Receita recorrente por mês = soma dos cartões que renovam sozinhos, cada um dividido pelos meses do plano. A receita do mês é comparada com o mês passado até o mesmo dia.</p>
+        <p>Valores brutos, sem a taxa do Mercado Pago, em dias e meses de São Paulo. Usamos o último valor gravado por pessoa; quando ele falta, usamos o preço atual e sinalizamos a estimativa. Ciclos antigos do cartão são reconstruídos, podendo não refletir pausas ou reajustes históricos.</p>
+        <p>Cartão renova sozinho na data do fim do acesso. Pix não renova: a pessoa precisa pagar de novo, e o cenário escolhido estima a chance de recompra a cada vencimento. Nos ciclos seguintes, a chance se acumula (taxa², taxa³), pois uma recompra depende da anterior. Cartão agendado também pode falhar ou ser cancelado. Quem desligou a renovação do cartão ainda tem acesso, mas não entra na previsão. Assinantes novos que ainda vão chegar também não entram: a previsão é só de quem já assina.</p>
+        <p>Nova, renovação ou volta é decidido pela pessoa: a primeira compra paga é a nova; pagar de novo com o acesso valendo (ou até 30 dias depois do fim) é renovação.</p>
       </div>
     </details>
   </div>
+}
+
+/* ───────────── 2. Mensais ───────────── */
+
+function Mensais({ carteira, taxa, escolher, observado }: { carteira: Pagante[]; taxa: number; escolher: (t: number) => void; observado: { taxa: number; renovados: number; encerrados: number } | null }) {
+  const m = carteira.filter(x => x.plano === 'mensal')
+  const cartao = m.filter(x => x.renova), pix = m.filter(x => x.meio === 'pix'), saindo = m.filter(x => x.saindo)
+  const soma = (l: Pagante[]) => l.reduce((s, x) => s + x.preco, 0)
+  const vCartao = soma(cartao), vPix = soma(pix)
+  const pctAtual = Math.round(taxa * 100)
+  const cenarios = [...CENARIOS, ...(observado ? [{ taxa: Math.round(observado.taxa * 100) / 100, nome: 'O que já aconteceu' }] : [])].sort((a, b) => a.taxa - b.taxa)
+  return <section className="fi-secao" aria-labelledby="fi-mensais">
+    <header className="fi-secao__cabeca"><span className="fi-secao__selo">Mensais</span><div><h2 id="fi-mensais">Quanto entra por mês só com os assinantes mensais</h2>
+      <p>{plural(m.length, 'assinante mensal', 'assinantes mensais')} hoje. O cartão cai sozinho todo mês; o Pix só entra se a pessoa pagar de novo quando o acesso acaba.</p></div></header>
+    <div className="fi-mensais">
+      <div className="fi-soma">
+        <div className="fi-soma__linha"><span className="fi-ponto fi-ponto--verde" /><span>Cartão, renova sozinho<small>{plural(cartao.length, 'pessoa', 'pessoas')}</small></span><b>{reais(vCartao)}</b><em>agendado</em></div>
+        <div className="fi-soma__linha"><span className="fi-ponto fi-ponto--ouro" /><span>Pix, se pagarem de novo<small>{plural(pix.length, 'pessoa', 'pessoas')} · {reais(vPix)} se todos pagarem</small></span><b>{reais(vPix * taxa)}</b><em>{pctAtual}% do Pix</em></div>
+        <div className="fi-soma__total"><span>Por mês, com {pctAtual}% do Pix voltando</span><b>{reais(vCartao + vPix * taxa)}</b></div>
+        {saindo.length > 0 && <p className="fi-nota">Fora da conta: {plural(saindo.length, 'mensal desligou', 'mensais desligaram')} a renovação do cartão ({reais(soma(saindo))} por mês a menos quando o acesso acabar).</p>}
+      </div>
+      <div className="fi-cenarios">
+        <h3>E se só uma parte do Pix pagar de novo? <small>Toque num cenário: a previsão de toda a página muda.</small></h3>
+        <table className="fi-cenarios__tabela">
+          <thead><tr><th scope="col">Cenário</th><th scope="col" className="num">Pix que voltam</th><th scope="col" className="num">Por mês</th></tr></thead>
+          <tbody>{cenarios.map(c => { const ativo = Math.abs(c.taxa - taxa) < 0.001; return <tr key={c.nome} className={ativo ? 'ativo' : undefined}>
+            <th scope="row"><button type="button" aria-pressed={ativo} onClick={() => escolher(c.taxa)}>{c.nome}{c.nome !== `${Math.round(c.taxa * 100)}%` && <small> {Math.round(c.taxa * 100)}%</small>}</button></th>
+            <td className="num">{inteiro(Math.round(pix.length * c.taxa))} de {inteiro(pix.length)}</td>
+            <td className="num"><b>{reais(vCartao + vPix * c.taxa)}</b></td>
+          </tr> })}</tbody>
+        </table>
+        {observado && <p className="fi-nota">O que já aconteceu: {observado.renovados} de {observado.encerrados} Pix encerrados pagaram de novo em até 30 dias ({Math.round(observado.taxa * 100)}%){observado.encerrados < 5 ? ', amostra ainda pequena' : ''}.</p>}
+      </div>
+    </div>
+  </section>
+}
+
+/* ───────────── 3. Semestrais e anuais ───────────── */
+
+const emQuanto = (d: Date, agora = new Date()) => {
+  const dias = Math.round((d.getTime() - agora.getTime()) / 86_400_000)
+  if (dias <= 0) return 'hoje'
+  if (dias < 31) return dias === 1 ? 'amanhã' : `em ${dias} dias`
+  const m = Math.round(dias / 30.44)
+  return m === 1 ? 'em 1 mês' : `em ${m} meses`
+}
+
+function Longos({ carteira, doze, taxa }: { carteira: Pagante[]; doze: Array<{ quem: Pagante; em: Date; chave: string; ciclo: number }>; taxa: number }) {
+  const longos = carteira.filter(x => x.plano !== 'mensal').sort((a, b) => a.fim.getTime() - b.fim.getTime())
+  const chave = MES(new Date())
+  const pagamentos = doze.filter(x => x.quem.plano !== 'mensal')
+  const esteMes = pagamentos.filter(x => x.chave === chave)
+  const proximo = pagamentos[0]
+  const porMes = Array.from({ length: 12 }, (_, i) => somarMesChave(chave, i)).map(k => ({ k, l: pagamentos.filter(x => x.chave === k) }))
+  const pontos: PontoColuna[] = porMes.map(({ k, l }) => ({ longo: `${NOME_MES(k)}: ${l.map(x => `${x.quem.nome} (${rotuloPlano(x.quem.plano)})`).join(', ') || 'ninguém'}`, curto: NOME_MES(k, true).replace('.', ''), partes: [l.filter(x => x.quem.meio === 'cartao').reduce((s, x) => s + x.quem.preco, 0), l.filter(x => x.quem.meio === 'pix').reduce((s, x) => s + x.quem.preco * taxa ** x.ciclo, 0)] }))
+  return <section className="fi-secao" aria-labelledby="fi-longos">
+    <header className="fi-secao__cabeca"><span className="fi-secao__selo fi-secao__selo--ouro">Semestrais e anuais</span><div><h2 id="fi-longos">Quem paga de uma vez, e quando paga de novo</h2>
+      <p>Esses planos não pagam todo mês: pagam tudo de uma vez quando o acesso acaba. Aqui está quem paga neste mês e quanto falta para cada um.</p></div></header>
+    <div className="fi-longos__destaques">
+      <div className={esteMes.length ? 'tem' : ''}><span>Neste mês ({soMes(chave)})</span><b>{esteMes.length ? plural(esteMes.length, 'pagamento', 'pagamentos') : 'Ninguém paga'}</b>
+        <small>{esteMes.length ? `${esteMes.map(x => `${x.quem.nome}, ${rotuloPlano(x.quem.plano).toLowerCase()} em ${data(x.em.toISOString())}`).join('; ')} · ${reais(esteMes.reduce((s, x) => s + (x.quem.meio === 'pix' ? x.quem.preco * taxa ** x.ciclo : x.quem.preco), 0))}` : 'nenhum semestral ou anual vence até o fim do mês'}</small></div>
+      <div><span>Próximo a renovar</span><b>{proximo ? emQuanto(proximo.em) : '—'}</b><small>{proximo ? `${proximo.quem.nome} · ${rotuloPlano(proximo.quem.plano)} · ${reais(proximo.quem.preco)} em ${data(proximo.em.toISOString())}` : 'ninguém nos próximos 12 meses'}</small></div>
+      <div><span>Assinantes com plano longo</span><b>{inteiro(longos.length)}</b><small>{longos.filter(x => x.plano === 'semestral').length} semestrais · {longos.filter(x => x.plano === 'anual').length} anuais</small></div>
+    </div>
+    {longos.length > 0 && <div className="fi-cartao">
+      <h3>Pagamentos de semestrais e anuais nos próximos 12 meses <small>verde: cartão (agendado); dourado: Pix ({Math.round(taxa * 100)}% do valor, se pagar de novo)</small></h3>
+      <Colunas descricao="Pagamentos de semestrais e anuais por mês" pontos={pontos} series={[{ nome: 'Cartão' }, { nome: 'Pix', estilo: 2 }]} formato={reais} media={false} altura={190} />
+    </div>}
+    <div className="fi-cartao">
+      <h3>Cada assinante semestral e anual <small>do vencimento mais próximo ao mais distante</small></h3>
+      {!longos.length ? <Estado compacto titulo="Ninguém com plano semestral ou anual agora" /> : <Tabela rotulo="Semestrais e anuais" compacta linhas={longos} chave={x => x.id} colunas={[
+        { id: 'n', titulo: 'Assinante', celula: x => <span className="a3-nome">{x.nome}</span> },
+        { id: 'p', titulo: 'Plano', celula: x => rotuloPlano(x.plano), rotuloCelular: 'Plano' },
+        { id: 'm', titulo: 'Como paga', celula: x => x.saindo ? <span className="fraco">Cartão, desligou a renovação</span> : x.meio === 'pix' ? 'Pix, precisa pagar de novo' : 'Cartão, renova sozinho', rotuloCelular: 'Como paga' },
+        { id: 'v', titulo: 'Valor', numero: true, celula: x => reais(x.preco), ordem: x => x.preco, rotuloCelular: 'Valor' },
+        { id: 'd', titulo: 'Próximo pagamento', numero: true, celula: x => <><b>{data(x.fim.toISOString())}</b><span className="a3-sub">{x.saindo ? 'não renova' : emQuanto(x.fim)}</span></>, ordem: x => x.fim.getTime(), rotuloCelular: 'Próximo' },
+      ]} />}
+    </div>
+  </section>
+}
+
+/* ───────────── 4. Previsão ───────────── */
+
+function Previsao({ doze, taxa, recebido, recebidoLongos, chaveMes }: { doze: Array<{ quem: Pagante; em: Date; chave: string; ciclo: number }>; taxa: number; recebido: number; recebidoLongos: number; chaveMes: string }) {
+  const linhas = Array.from({ length: 12 }, (_, i) => somarMesChave(chaveMes, i)).map(k => {
+    const l = doze.filter(x => x.chave === k)
+    const v = (f: (x: { quem: Pagante; ciclo: number }) => boolean) => l.filter(f).reduce((s, x) => s + (x.quem.meio === 'pix' ? x.quem.preco * taxa ** x.ciclo : x.quem.preco), 0)
+    return { k, mensais: v(x => x.quem.plano === 'mensal'), longos: v(x => x.quem.plano !== 'mensal'), ja: k === chaveMes ? recebido - recebidoLongos : 0, jaLongos: k === chaveMes ? recebidoLongos : 0, pessoas: l.length }
+  })
+  const total12 = linhas.reduce((s, x) => s + x.mensais + x.longos, 0) + recebido
+  const pontos: PontoColuna[] = linhas.map(x => ({ longo: `${NOME_MES(x.k)}${x.ja ? ` (já entrou ${reais(x.ja)})` : ''}`, curto: NOME_MES(x.k, true).replace('.', ''), partes: [x.ja + x.mensais, x.jaLongos + x.longos] }))
+  return <section className="fi-secao" aria-labelledby="fi-previsao">
+    <header className="fi-secao__cabeca"><span className="fi-secao__selo fi-secao__selo--claro">Previsão</span><div><h2 id="fi-previsao">Quanto deve entrar em cada mês</h2>
+      <p>Só com quem já assina, com chance de recompra de {Math.round(taxa * 100)}% por ciclo Pix. A chance diminui nos ciclos sucessivos; cartão é agendado, sem garantia. Novos clientes ficam fora. Em 12 meses: <b>{reais(total12)}</b>.</p></div></header>
+    <div className="fi-cartao">
+      <Colunas descricao="Previsão de receita por mês" pontos={pontos} series={[{ nome: 'Mensais' }, { nome: 'Semestrais e anuais', estilo: 2 }]} formato={reais} media={false} altura={230} />
+      <ul className="fi-legenda"><li><i className="verde" />Mensais (recebido e previsto)</li><li><i className="ouro" />Semestrais e anuais (recebido e previsto)</li></ul>
+      <div className="a3-tabela-caixa"><table className="a3-tabela a3-tabela--compacta fi-tabela">
+        <thead><tr><th scope="col">Mês</th><th scope="col" className="num">Mensais</th><th scope="col" className="num">Semestrais e anuais</th><th scope="col" className="num">Total</th></tr></thead>
+        <tbody>{linhas.map(x => <tr key={x.k}><th scope="row">{NOME_MES(x.k).replace(/^./, c => c.toUpperCase())}</th><td className="num">{reais(x.ja + x.mensais)}</td><td className="num">{x.longos + x.jaLongos ? reais(x.longos + x.jaLongos) : '—'}</td><td className="num"><b>{reais(x.ja + x.mensais + x.longos + x.jaLongos)}</b></td></tr>)}</tbody>
+      </table></div>
+    </div>
+  </section>
+}
+
+/* ───────────── 5. O que já entrou ───────────── */
+
+function Recebido({ serie, porDia, meses, taxaRenovacao, renovaram, perderam }: {
+  serie: Array<{ rotulo: string; rotuloCurto: string; partes: number[] }>; porDia: Array<{ dia: string; cartao: number; pix: number }>; meses: Mes[]
+  taxaRenovacao: number | null; renovaram: number; perderam: number
+}) {
+  const i0 = serie.findIndex(x => x.partes[0] + x.partes[1] > 0)
+  const hist = i0 < 0 ? serie.slice(-1) : serie.slice(i0)
+  const atual = meses[meses.length - 1], anterior = meses[meses.length - 2]
+  const novas = (m?: Mes) => (m?.novasCartao ?? 0) + (m?.novasPix ?? 0)
+  return <section className="fi-secao" aria-labelledby="fi-recebido">
+    <header className="fi-secao__cabeca"><span className="fi-secao__selo fi-secao__selo--claro">Recebido</span><div><h2 id="fi-recebido">O que já entrou</h2><p>Cartão e Pix somados; passe o mouse para ver a divisão.</p></div></header>
+    <div className="fi-grade">
+      <div className="fi-cartao"><h3>Por mês</h3>
+        <Colunas descricao="Receita por mês" formato={reais} altura={220} rotuloMedia="média" pontos={hist.map((x, i) => ({ longo: x.rotulo, curto: x.rotuloCurto, partes: [x.partes[0] + x.partes[1]], parcial: i === hist.length - 1 }))} series={[{ nome: 'Recebido' }]} /></div>
+      <div className="fi-cartao"><h3>Por dia <small>últimos 30 dias</small></h3>
+        <Colunas descricao="Receita por dia nos últimos 30 dias" formato={reais} altura={220} media={false} cor="claro" pontos={porDia.map((x, i) => ({ longo: diaDaSerie(x.dia, true), curto: diaDaSerie(x.dia), partes: [x.cartao + x.pix], parcial: i === porDia.length - 1 }))} series={[{ nome: 'Recebido' }]} /></div>
+    </div>
+    <div className="fi-movimento">
+      <div><span>Assinantes novos no mês</span><b>{novas(atual)}</b><small><VariacaoTexto v={variacao(novas(atual), novas(anterior))} curto /> · {atual?.novasCartao ?? 0} cartão · {atual?.novasPix ?? 0} Pix</small></div>
+      <div><span>Renovações no mês</span><b>{atual?.renovacoes ?? 0}</b><small>{reais(atual?.receitaRenovacoes ?? 0)}</small></div>
+      <div><span>Taxa de renovação</span><b>{taxaRenovacao === null ? '—' : `${taxaRenovacao}%`}</b><small>{taxaRenovacao === null ? 'ninguém venceu ainda' : `${renovaram} de ${renovaram + perderam} com renovação paga ou acesso encerrado`}</small></div>
+      <div><span>Desligaram a renovação</span><b>{atual?.cancelamentos ?? 0}</b><small>reembolsos: {atual?.reembolsos ?? 0} · {reais(atual?.valorReembolsado ?? 0)}</small></div>
+    </div>
+    <details className="a3-painel a3-metodo"><summary>Mês a mês (tabela completa, com churn e CSV)</summary><MesAMes meses={meses} /></details>
+  </section>
 }
 
 function MesAMes({ meses }: { meses: Mes[] }) {
@@ -174,7 +260,7 @@ function MesAMes({ meses }: { meses: Mes[] }) {
   const churn = (m: Mes, i: number) => { const a = linhas[i + 1]?.baseCartao ?? 0; return a ? porcentagem(m.cancelamentos, a) : null }
   return <Painel titulo="Mês a mês" descricao="Churn = cancelamentos do mês sobre os cartões que renovavam no fim do mês anterior (Pix não entra: termina sem renovar)." justo
     acoes={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => baixarCsv(`ortoquestoes-mes-a-mes-${new Date().toISOString().slice(0, 10)}.csv`,
-      ['Mês', 'Receita', 'Novas no cartão', 'Novas no Pix', 'Receita de novas', 'Renovações automáticas', 'Receita de renovações', 'Cancelamentos', 'Reembolsos', 'Valor reembolsado', 'Pix encerrados', 'Cartões renovando no fim do mês', 'Churn (%)'],
+      ['Mês', 'Receita', 'Novas no cartão', 'Novas no Pix', 'Receita de novas', 'Renovações pagas', 'Receita de renovações', 'Cancelamentos', 'Reembolsos', 'Valor reembolsado', 'Pix encerrados', 'Cartões renovando no fim do mês', 'Churn (%)'],
       linhas.map((m, i) => [NOME_MES(m.chave), m.receita.toFixed(2).replace('.', ','), m.novasCartao, m.novasPix, m.receitaNovas.toFixed(2).replace('.', ','), m.renovacoes, m.receitaRenovacoes.toFixed(2).replace('.', ','), m.cancelamentos, m.reembolsos, m.valorReembolsado.toFixed(2).replace('.', ','), m.pixEncerrados, m.baseCartao, churn(m, i)]))}><Icone nome="baixar" tamanho={14} />CSV</button>}>
     <Tabela rotulo="Mês a mês" compacta porPagina={12} linhas={linhas.map((m, i) => ({ m, c: churn(m, i) }))} chave={x => x.m.chave} colunas={[
       { id: 'm', titulo: 'Mês', celula: x => <span className="a3-nome">{NOME_MES(x.m.chave)}</span> },
@@ -184,94 +270,8 @@ function MesAMes({ meses }: { meses: Mes[] }) {
       { id: 'c', titulo: 'Cancelamentos', numero: true, celula: x => inteiro(x.m.cancelamentos), rotuloCelular: 'Cancelamentos' },
       { id: 'e', titulo: 'Reembolsos', numero: true, soLargo: true, celula: x => x.m.reembolsos ? `${x.m.reembolsos} · ${reais(x.m.valorReembolsado)}` : '0' },
       { id: 'p', titulo: 'Pix encerrados', numero: true, soLargo: true, celula: x => inteiro(x.m.pixEncerrados) },
-      { id: 'b', titulo: 'Cartões renovando', numero: true, soLargo: true, celula: x => inteiro(x.m.baseCartao) },
       { id: 'h', titulo: 'Churn', numero: true, celula: x => x.c === null ? '—' : <span style={{ color: x.c > 10 ? 'var(--a3-erro)' : undefined }}>{x.c}%</span>, rotuloCelular: 'Churn' },
     ]} />
   </Painel>
 }
 
-/* ───────────── Previsão ───────────── */
-
-function Previsao({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
-  const p = usarPainel()
-  const todas = useMemo(() => cobrancasDe(assinaturas, p.cobrancas), [assinaturas, p.cobrancas])
-  const d = useMemo(() => calcularFinanceiro(assinaturas, todas), [assinaturas, todas])
-  const { observado, taxa: sugerida } = useMemo(() => taxaPixSugerida(assinaturas), [assinaturas])
-  const [escolhida, escolher] = useState<number | null>(null)
-  const taxa = escolhida ?? sugerida
-  const pctPix = Math.round(taxa * 100)
-  const prev = useMemo(() => {
-    const agora = new Date()
-    const pix = HORIZONTES.map(m => ({ meses: m, ...aReceberNoPix(assinaturas, m, taxa, agora) }))
-    const doze = HORIZONTES.indexOf(12)
-    const cartao = new Map(d.aReceber[doze].porMes)
-    const pontos = pix[doze].porMes.map(([k, v], i) => { const c = cartao.get(k) ?? { valor: 0, quantidade: 0 }; return { k, longo: `${NOME_MES(k)} · ${c.quantidade} no cartão, ~${Math.round(v.quantidade)} no Pix`, curto: i === 0 || k.endsWith('-01') ? `${curto(k)} ${k.slice(2, 4)}` : curto(k), cartao: c.valor, pix: v.valor } })
-    return { pix, pontos, pessoas: pix[doze].pessoas, fechamento: fechamentoDoMes(d.esteMes, d.chaveMes, d.aReceber[doze].porMes, pix[doze].porMes) }
-  }, [assinaturas, taxa, d.aReceber, d.esteMes, d.chaveMes])
-  const parte = defAba('previsao')
-  const f = prev.fechamento
-  return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={parte.pergunta} />
-    <section className="a3-painel a3-previsao-topo">
-      <div className="a3-metrica a3-metrica--grande">
-        <span className="a3-rotulo">Previsão de fechamento de {soMes(d.chaveMes)}</span>
-        <span className="a3-metrica__valor">{reais(f.total)}</span>
-        <span className="a3-metrica__linha"><span className="a3-qualidade a3-qualidade--previsao"><i />Previsão</span> com {pctPix}% de recompra do Pix</span>
-      </div>
-      <ol className="a3-soma">
-        <li><span>Já recebido no mês</span><b>{reais(f.recebido)}</b><span className="a3-qualidade"><i />Recebido</span></li>
-        <li><span>+ {plural(f.cartao.quantidade, 'renovação', 'renovações')} do cartão até o fim do mês</span><b>{reais(f.cartao.valor)}</b><span className="a3-qualidade a3-qualidade--previsao"><i />Se ninguém cancelar</span></li>
-        <li><span>+ recompra do Pix que vence no mês</span><b>~{reais(f.pix.valor)}</b><span className="a3-qualidade a3-qualidade--previsao"><i />Se {pctPix}% recomprarem</span></li>
-      </ol>
-    </section>
-
-    <div className="a3-grade a3-grade--4">{d.aReceber.map((x, i) => { const pix = prev.pix[i]; return <div key={x.meses} className="a3-painel"><div className="a3-metrica">
-      <span className="a3-rotulo">{x.meses === 1 ? 'Próximo mês' : `Próximos ${x.meses} meses`}</span>
-      <span className="a3-metrica__valor">{reais(x.valor + pix.valor)}</span>
-      <span className="a3-metrica__linha">Cartão {reais(x.valor)} · {plural(x.cobrancas, 'renovação', 'renovações')}</span>
-      <span className="a3-metrica__linha">Pix ~{reais(pix.valor)} · ~{plural(Math.round(pix.renovacoes), 'recompra', 'recompras')}</span>
-    </div></div> })}</div>
-
-    <Painel titulo="Hipótese de recompra do Pix" descricao="O Pix não renova sozinho, mas muita gente recompra quando o acesso acaba. Ajuste a hipótese: toda a previsão se refaz.">
-      <div className="a3-simulador">
-        <div className="a3-simulador__controle">
-          <input type="range" min={0} max={100} step={1} value={pctPix} aria-label="Porcentagem de quem pagou Pix e recompra" aria-valuetext={`${pctPix}% recompram`} onChange={e => escolher(Number(e.target.value) / 100)} />
-          <output className="num" aria-live="polite">{pctPix}%</output>
-        </div>
-        <div className="a3-acoes-linha">
-          {observado.taxa !== null && <button type="button" className="a3-filtro" aria-pressed={Math.abs(taxa - Math.round(observado.taxa * 100) / 100) < 0.001} onClick={() => escolher(Math.round(observado.taxa! * 100) / 100)}>Observada ({Math.round(observado.taxa * 100)}%)</button>}
-          {[0.3, 0.5, 0.7, 0.9].map(t => <button key={t} type="button" className="a3-filtro" aria-pressed={Math.abs(taxa - t) < 0.001} onClick={() => escolher(t)}>{t === 0.3 ? 'Pessimista' : t === 0.5 ? 'Metade' : t === 0.7 ? 'Otimista' : 'Quase todos'} {Math.round(t * 100)}%</button>)}
-        </div>
-        <p className="a3-mudo a3-pequeno">Para {plural(prev.pessoas, 'pessoa', 'pessoas')} com Pix vigente, conta {pctPix}% do plano no dia em que o acesso termina; quem recompra pode recomprar de novo no fim do plano seguinte. Quem também tem cartão renovando fica só no cartão. {observado.encerrados === 0 ? 'Ainda não há Pix encerrado há mais de 30 dias para medir; a hipótese começa em 60%.' : `Observado: ${observado.renovados} de ${observado.encerrados} Pix encerrados (${Math.round((observado.taxa ?? 0) * 100)}%) renovaram em até 30 dias${observado.encerrados < MINIMO_PARA_OBSERVADA ? '; amostra pequena, por isso a hipótese começa em 60%' : ''}.`}</p>
-      </div>
-    </Painel>
-
-    <Quadro titulo="Previsão mês a mês" descricao={`Próximos 12 meses: cartão se ninguém cancelar, Pix se ${pctPix}% recomprarem. Assinaturas novas entram por cima, não aqui.`} fonte="receita.ts › aReceberNoCartao e aReceberNoPix" qualidade="previsao"
-      legenda={<Legenda itens={[{ nome: 'Cartão (renovação automática)', chave: 'serie1' }, { nome: 'Pix (recompra estimada)', chave: 'hachura' }]} />}
-      tabela={{ cabecalho: ['Mês', 'Cartão', 'Pix (estimado)', 'Total'], linhas: prev.pontos.map(x => [x.longo, reais(x.cartao), reais(x.pix), reais(x.cartao + x.pix)]) }}>
-      <SerieTempo descricao="Previsão de receita por mês nos próximos 12 meses" formato={reais} altura={220} rotulos={prev.pontos.map(x => ({ longo: x.longo, curto: x.curto }))}
-        series={[{ nome: 'Cartão', tipo: 'barra', valores: prev.pontos.map(x => x.cartao) }, { nome: 'Pix estimado', tipo: 'barra', estilo: 'hachura', valores: prev.pontos.map(x => x.pix) }]} />
-    </Quadro>
-
-    <div className="a3-grade a3-grade--2">
-      <Painel titulo="Próximos 30 dias">
-        <dl className="a3-pares">
-          <div><dt>Renovações no cartão</dt><dd>{d.renovacoes30} · {reais(d.valorRenovacoes30)} <span className="a3-mudo">se ninguém cancelar</span></dd></div>
-          <div><dt>Pix que vencem</dt><dd>{d.pixAcabando30} · ~{reais(prev.pix[0].valor)} <span className="a3-mudo">se {pctPix}% recomprarem</span></dd></div>
-          <div><dt>Receita recorrente por mês</dt><dd>{reais(d.mrr)} <span className="a3-mudo">· {plural(d.recorrentes.length, 'cartão', 'cartões')}</span></dd></div>
-        </dl>
-        <p className="a3-mudo a3-pequeno" style={{ marginTop: 10 }}>Pix vencendo são bons candidatos à campanha "Pix a vencer" (Comunicação › Campanhas).</p>
-      </Painel>
-      <Painel titulo="Cartões que renovam sozinhos" justo>
-        <Tabela rotulo="Cartões que renovam sozinhos" compacta porPagina={8} linhas={d.recorrentes} chave={x => `${x.assinatura.id_usuario}-${x.proxima ?? ''}`}
-          vazio={<div style={{ padding: 20 }}><Estado compacto titulo="Nenhum cartão renovando sozinho agora" /></div>} colunas={[
-            { id: 'a', titulo: 'Assinante', celula: x => <span className="a3-nome">{x.assinatura.nome || x.assinatura.usuario || x.assinatura.id_usuario.slice(0, 8)}</span> },
-            { id: 'p', titulo: 'Plano', celula: x => x.plano, rotuloCelular: 'Plano' },
-            { id: 'm', titulo: 'Por mês', numero: true, celula: x => reais(x.mensal), ordem: x => x.mensal, rotuloCelular: 'Por mês' },
-            { id: 'r', titulo: 'Próxima', numero: true, celula: x => x.proxima ? data(x.proxima) : 'sem data', ordem: x => x.proxima ?? '', rotuloCelular: 'Próxima' },
-          ]} />
-      </Painel>
-    </div>
-    <p className="a3-mudo a3-pequeno">Previsão não é receita: nunca entra nos números de Visão financeira. Valores pelo preço dos planos ({['mensal', 'semestral', 'anual'].map(x => `${rotuloPlano(x)} ${reais(precoDe(x)?.total ?? 0)}`).join(' · ')}).</p>
-  </div>
-}

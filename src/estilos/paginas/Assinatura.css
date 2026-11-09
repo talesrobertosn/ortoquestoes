@@ -643,32 +643,32 @@
 @media (prefers-reduced-motion: reduce) { .vd-abertura__cadeado { animation: none; } }
 .vd-ativo__planos .vd-abertura { margin-bottom: 1rem; }
 
-/* Atalho para o suporte (03/11/2026): logo abaixo da caixa verde dos planos, no canto direito. */
-.vd-suporte {
-  display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 0.5rem 0.85rem;
-  margin: 0; color: var(--texto-2); font-size: var(--corpo-menor); text-align: right;
-}
-.vd-suporte__botao { gap: 0.45rem; min-height: 40px; padding: 0.45rem 0.95rem; border: 1px solid var(--traco); background: var(--superficie); color: var(--texto); font-weight: 600; }
-.vd-suporte__botao:hover { border-color: var(--verdete); color: var(--verdete-tinta); }
-.vd-suporte__botao svg { color: var(--verdete); }
 .ck__suporte { margin: 0; font-size: var(--corpo-menor); color: var(--texto-2); }
-/* A página separa as seções com um vão grande (.vd gap): o bloco de baixo dos planos fica colado na caixa verde. */
-.vd-depois-planos { display: grid; gap: 1rem; margin-top: calc(1.1rem - clamp(4rem, 9vw, 7rem)); }
-.vd-final + .vd-suporte { margin-top: calc(0.9rem - clamp(4rem, 9vw, 7rem)); }
-.vd-depois-planos .vd-abertura { justify-self: center; width: min(100%, 52rem); }
-/* Inauguração (refeito em 03/11/2026): a promessa em título grande e as regras em três linhas com visto. */
-.vd-abertura--inauguracao { gap: 1.15rem; padding: 1.15rem 1.4rem 1.2rem; }
-.vd-abertura--inauguracao .vd-abertura__cadeado { width: 56px; height: 64px; }
-.vd-abertura--inauguracao h2 { font-size: clamp(1.2rem, 2.4vw, 1.45rem); line-height: 1.2; letter-spacing: -0.02em; }
-.vd-abertura__pontos { display: grid; gap: 0.3rem; margin: 0.45rem 0 0; padding: 0; list-style: none; }
-.vd-abertura__pontos li { display: inline-flex; align-items: flex-start; gap: 0.35rem; font-size: var(--corpo-menor); line-height: 1.4; color: #4a3a20; }
-.vd-abertura__pontos svg { flex: none; margin-top: 0.15rem; color: #2f6b34; }
-@media (max-width: 34rem) {
-  .vd-abertura--inauguracao { padding: 1rem; }
-  .vd-abertura--inauguracao .vd-abertura__cadeado { width: 44px; height: 58px; }
+/* ---------- Dentro da caixa dos planos (09/11/2026): tudo o que é da compra na mesma linguagem ---------- */
+/* Preço de inauguração: uma faixa fina de vidro com filete dourado, logo abaixo dos cartões. */
+.vd-abertura--faixa {
+  justify-self: center; display: inline-flex; align-items: center; gap: 0.6rem; width: auto; max-width: 100%;
+  padding: 0.5rem 1rem 0.5rem 0.75rem; border-radius: 4px; background: rgba(244, 207, 124, 0.12); color: var(--sobre-heroi-2);
+  box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.55); font-size: var(--meta); line-height: 1.4;
 }
+.vd-abertura--faixa strong { color: #ffe3a3; }
+.vd-abertura--faixa .vd-abertura__cadeado { width: 22px; height: 26px; }
+/* A linha de baixo: o guia do blog e o suporte, dois links discretos separados por um filete. */
+.vd-compra-rodape {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 0.5rem 1.6rem;
+  margin-top: 0.2rem; padding-top: 0.9rem; border-top: 1px dashed var(--heroi-traco); font-size: var(--corpo-menor);
+}
+.vd-guia-estudo { display: inline-flex; align-items: center; gap: 0.5rem; min-height: 40px; color: #ffe3a3; font-weight: 700; text-decoration: none; }
+.vd-guia-estudo img { width: 24px; height: 24px; image-rendering: pixelated; transition: transform 0.15s ease; }
+.vd-guia-estudo:hover { color: #fff1c9; text-decoration: underline; text-underline-offset: 3px; }
+.vd-guia-estudo:hover img { transform: translateY(-2px) rotate(-6deg); }
+.vd-suporte { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; min-height: 40px; margin: 0; color: var(--sobre-heroi-2); }
+.vd-suporte svg { color: #7fe0cf; }
+.vd-suporte a { color: var(--sobre-heroi); font-weight: 700; text-underline-offset: 3px; }
+.vd-suporte a:hover { color: #ffe3a3; }
+.vd-guia-estudo:focus-visible, .vd-suporte a:focus-visible { outline: 3px solid #f4cf7c; outline-offset: 3px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) { .vd-guia-estudo img { transition: none; } }
 @media (max-width: 44rem) {
-  .vd-depois-planos { margin-top: calc(0.9rem - 3.75rem); }
-  .vd-final + .vd-suporte { margin-top: calc(0.75rem - 3.75rem); }
-  .vd-suporte { justify-content: center; text-align: center; }
+  .vd-abertura--faixa { align-items: flex-start; text-align: left; }
+  .vd-compra-rodape { flex-direction: column; gap: 0.1rem; margin-bottom: 0.5rem; }
 }

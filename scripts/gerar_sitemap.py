@@ -14,6 +14,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -116,6 +117,18 @@ def principal() -> int:
     else:
         print("aviso: public/resumos/ não existe — rode gerar_resumos_seo.py antes", file=sys.stderr)
 
+    # Blog (09/11/2026): páginas escritas à mão em public/blog/ (não geradas), com a data de cada uma no
+    # <meta property="article:modified_time">. /blog/ e /blog/<post>/ são as canônicas.
+    dir_blog = DIR_PUBLICO / "blog"
+    if (dir_blog / "index.html").exists():
+        datas_blog = []
+        for pasta in sorted(p for p in dir_blog.iterdir() if (p / "index.html").exists()):
+            texto = (pasta / "index.html").read_text(encoding="utf-8")
+            achado = re.search(r'article:modified_time" content="(\d{4}-\d{2}-\d{2})', texto)
+            data_post = achado.group(1) if achado else data
+            datas_blog.append(data_post)
+            urls.append(entrada(f"{SITE}blog/{pasta.name}/", data_post, "monthly", "0.9"))
+        urls.insert(1, entrada(f"{SITE}blog/", max(datas_blog, default=data), "weekly", "0.9"))
     xml = ['<?xml version="1.0" encoding="UTF-8"?>',
            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">', *urls, "</urlset>"]
     (DIR_PUBLICO / "sitemap.xml").write_text("\n".join(xml) + "\n", encoding="utf-8")

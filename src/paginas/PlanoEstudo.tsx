@@ -281,7 +281,7 @@ export function PlanoEstudo() {
       : idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), { ...atuais, ...marcarReservadas(c) }, incluiSimulados(p))
     if (!ids.length) return
     const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
-    if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma' }))) return
+    if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma', diaPlano: hojeBR() }))) return
     navegar('/sessao')
   }
 
@@ -315,7 +315,7 @@ export function PlanoEstudo() {
     const sessaoIds = doDia ? idsDaSessaoDoDia(doDia, atuais) : ids.filter((id) => !atuais[id])
     if (!sessaoIds.length) return
     const temas = [...new Set((doDia?.itens ?? []).map((i) => i.slug))]
-    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, situacao: 'naoRespondidas' as const, embaralhar: false, limite: sessaoIds.length }, sessaoIds, { origem: 'cronograma' }))) return
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, situacao: 'naoRespondidas' as const, embaralhar: false, limite: sessaoIds.length }, sessaoIds, { origem: 'cronograma', diaPlano: dia }))) return
     navegar('/sessao')
   }
   /** Começa uma sessão já montada (diagnóstico, reta final, reativar, risco). */
@@ -332,7 +332,7 @@ export function PlanoEstudo() {
     if (!indice) return
     const ids = idsMiniSimulado(indice, respondidas)
     if (!ids.length) return
-    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', simulado: true, limiteSegundos: Math.round(ids.length * 90) }))) return
+    if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, embaralhar: false, limite: ids.length }, ids, { origem: 'cronograma', simulado: true, limiteSegundos: Math.round(ids.length * 90), diaPlano: hojeBR() }))) return
     marcarFeito('mini')
     navegar('/sessao')
   }
@@ -494,6 +494,10 @@ function marcasDoAparelho(feitos: FeitosDoDia, resumao: ResumaoHoje): MarcasDia 
  */
 export function sessaoPendente(sessao: EstadoSessao | null, agora: number = Date.now()): { feitas: number; total: number; tema: string; simulado: boolean } | null {
   if (!sessao || sessao.concluidaEm || !sessao.origem) return null
+  // Só a sessão aberta pelo próprio cronograma de TEOT/TARO (o dia, um dia puxado ou o mini-simulado) vira o
+  // "Continuar" do dia (06/11/2026: uma sessão de 18 questões aberta por outra tela prendia o botão em
+  // "faltam 17" de um dia de 65). As outras continuam em Questões, mas não tomam o lugar do dia.
+  if (!sessao.diaPlano) return null
   if (chaveDoDia(sessao.criadaEm) !== chaveDoDia(agora)) return null
   const feitas = Object.keys(sessao.respostas).length
   if (feitas >= sessao.ids.length) return null
@@ -812,6 +816,10 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
 }) {
   const [data, definirData] = useState(atual?.data_prova ?? (DATA_TEOT > hojeBR() ? DATA_TEOT : ''))
   const [prova, definirProva] = useState(atual?.prova ?? 'TEOT')
+  const [nomeOutraProva, definirNomeOutraProva] = useState(atual?.prova && !PROVAS.includes(atual.prova) ? atual.prova : '')
+  const outraProva = !PROVAS.slice(0, 3).includes(prova)
+  const nomeProva = outraProva ? nomeOutraProva.replace(/\s+/g, ' ').trim() : prova
+  const provaValida = nomeProva.length >= 2 && nomeProva.length <= 40 && !/[<>@]/.test(nomeProva) && !/^outra(?: prova)?$/i.test(nomeProva) && /\p{L}/u.test(nomeProva)
   const [intensidade, definirIntensidade] = useState<Intensidade>(atual?.intensidade ?? 'firme')
   const [folgas, definirFolgas] = useState<number[]>(atual?.folgas ?? [0])
   const [simulados, definirSimulados] = useState(incluiSimulados(atual))
@@ -864,10 +872,10 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
   }, [indice, respondidas, adiadas, prova])
 
   async function salvar() {
-    if (!dataValida || salvando) return
+    if (!dataValida || !provaValida || salvando) return
     const base = respondidasNoAcervo(indice, respondidas, simulados)
     if (previa) {
-      aoSalvar({ data_prova: data, intensidade, folgas, prova, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados, opcoes: opcoes() })
+      aoSalvar({ data_prova: data, intensidade, folgas, prova: nomeProva, base_respondidas: base, criado_em: new Date().toISOString(), incluir_simulados: simulados, opcoes: opcoes() })
       return
     }
     // A contagem do plano parte das respostas deste aparelho: se ele ainda não
@@ -882,7 +890,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
       const recomecando = !fresco || recomecar || mudouSimulados
       const anteriores = opcoesDe(fresco)
       const novasOpcoes: OpcoesPlano = { ...opcoes(), semanasDificeis: anteriores.semanasDificeis, ...(recomecando ? {} : { adiantados: anteriores.adiantados }) }
-      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: prova, p_base: base, p_recomecar: recomecando }, simulados, novasOpcoes)
+      const salvo = await salvarPlano({ p_data_prova: data, p_intensidade: intensidade, p_folgas: folgas, p_prova: nomeProva, p_base: base, p_recomecar: recomecando }, simulados, novasOpcoes)
       if (!salvo) throw new Error('Plano não encontrado depois de salvar.')
       aoSalvar(salvo, diagnostico)
     } catch (falha) {
@@ -897,7 +905,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
 
   const alternar = (lista: number[], dia: number) => lista.includes(dia) ? lista.filter((x) => x !== dia) : [...lista, dia].sort()
   const passos = [
-    { titulo: 'Qual prova e quando?', curto: 'Prova', pronto: dataValida },
+    { titulo: 'Qual prova e quando?', curto: 'Prova', pronto: dataValida && provaValida },
     { titulo: 'Quanto tempo por dia?', curto: 'Tempo', pronto: true },
     { titulo: 'Como é a sua semana?', curto: 'Semana', pronto: true },
     { titulo: 'Por onde começar?', curto: 'Prioridades', pronto: true },
@@ -919,7 +927,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
       <div className="pe-montar">
       <section className="cartao cartao__corpo pe-form pe-form--passos">
         <ol className="pe-passos" aria-label="Passos">
-          {passos.map((p, i) => <li key={p.curto}><button type="button" className={'pe-passos__item' + (i === passo ? ' pe-passos__item--atual' : i < passo ? ' pe-passos__item--feito' : '')} aria-current={i === passo ? 'step' : undefined} disabled={i > 0 && !dataValida} onClick={() => definirPasso(i)}><span className="numerico">{i < passo ? '✓' : i + 1}</span>{p.curto}</button></li>)}
+          {passos.map((p, i) => <li key={p.curto}><button type="button" className={'pe-passos__item' + (i === passo ? ' pe-passos__item--atual' : i < passo ? ' pe-passos__item--feito' : '')} aria-current={i === passo ? 'step' : undefined} disabled={i > 0 && (!dataValida || !provaValida)} onClick={() => definirPasso(i)}><span className="numerico">{i < passo ? '✓' : i + 1}</span>{p.curto}</button></li>)}
         </ol>
         <h2 className="pe-form__titulo">{passos[passo].titulo}</h2>
 
@@ -928,6 +936,10 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
             <label className="campo">Prova<select className="entrada" value={PROVAS.includes(prova) ? prova : 'Outra prova'} onChange={(e) => definirProva(e.target.value)}>{PROVAS.map((p) => <option key={p}>{p}</option>)}</select></label>
             <label className="campo">Data da prova<input className="entrada" type="date" min={amanhaIso()} value={data} onChange={(e) => definirData(e.target.value)} /></label>
           </div>
+          {outraProva && <label className="campo">Qual é a prova?
+            <input className="entrada" value={nomeOutraProva} onChange={e => definirNomeOutraProva(e.target.value)} maxLength={40} minLength={2} required placeholder="Ex.: Cirurgia da mão — USP" aria-describedby="pe-nome-prova-ajuda" />
+            <small id="pe-nome-prova-ajuda" className="texto-2">Informe o nome da prova ou da instituição. Ele aparecerá no cronograma e nos e-mails sobre essa data.</small>
+          </label>}
           {DATA_TEOT > hojeBR() && <button type="button" className={'pe-data-atalho' + (data === DATA_TEOT ? ' pe-data-atalho--ativo' : '')} onClick={() => { definirData(DATA_TEOT); if (!PROVAS.slice(0, 2).includes(prova)) definirProva('TEOT') }}>
             <Icone nome="calendario" tamanho={16} /> <span><strong>TEOT e TEPOT {DATA_TEOT.slice(0, 4)}</strong> · prova teórica em {diaCivil(DATA_TEOT).toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })}</span>{data === DATA_TEOT && <Icone nome="certo" tamanho={16} />}
           </button>}
@@ -1001,8 +1013,8 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
           {passo > 0 && <button type="button" className="botao botao--fantasma" onClick={() => definirPasso(passo - 1)}><Icone nome="esquerda" tamanho={16} /> Voltar</button>}
           {!ultimo
             ? <button type="button" className="botao botao--principal botao--grande" disabled={!passos[passo].pronto} onClick={() => definirPasso(passo + 1)}>Continuar <Icone nome="direita" tamanho={16} /></button>
-            : <button type="button" className={'botao botao--grande ' + (previa ? 'botao--ouro' : 'botao--principal')} disabled={!dataValida || salvando} onClick={salvar}>{salvando ? 'Salvando…' : previa ? 'Ver a prévia do meu cronograma' : atual ? 'Salvar ajustes' : 'Criar meu cronograma'}</button>}
-          {atual && !ultimo && <button type="button" className="botao" disabled={!dataValida || salvando} onClick={salvar}>{salvando ? 'Salvando…' : 'Salvar agora'}</button>}
+            : <button type="button" className={'botao botao--grande ' + (previa ? 'botao--ouro' : 'botao--principal')} disabled={!dataValida || !provaValida || salvando} onClick={salvar}>{salvando ? 'Salvando…' : previa ? 'Ver a prévia do meu cronograma' : atual ? 'Salvar ajustes' : 'Criar meu cronograma'}</button>}
+          {atual && !ultimo && <button type="button" className="botao" disabled={!dataValida || !provaValida || salvando} onClick={salvar}>{salvando ? 'Salvando…' : 'Salvar agora'}</button>}
         </div>
         <div className="pe-form__rodape">
           {aoCancelar && <button type="button" className="botao botao--fantasma" onClick={aoCancelar}>Cancelar</button>}
@@ -1010,7 +1022,7 @@ function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, pre
         </div>
         {previa && <p className="texto-2 pe-form__nota"><Icone nome="cadeado" tamanho={14} /> A prévia mostra o dia de hoje e as duas primeiras semanas. O cronograma completo, salvo e ajustado todo dia, é do assinante.</p>}
       </section>
-      <ResultadoAoVivo data={dataValida ? data : null} prova={prova} folgas={folgas} diasLeves={diasLeves} qtdLeve={qtdLeve} simulados={simulados} intensidade={intensidade} meta={sim?.meta ?? null} maisCai={sim?.maisCai ?? null} minutos={minutos} />
+      <ResultadoAoVivo data={dataValida ? data : null} prova={nomeProva} folgas={folgas} diasLeves={diasLeves} qtdLeve={qtdLeve} simulados={simulados} intensidade={intensidade} meta={sim?.meta ?? null} maisCai={sim?.maisCai ?? null} minutos={minutos} />
       </div>
     </div>
   )

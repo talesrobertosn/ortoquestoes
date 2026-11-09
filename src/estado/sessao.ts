@@ -37,6 +37,8 @@ export interface OpcoesSessao {
   /** Início vindo do servidor, para o cronômetro bater em qualquer aparelho. */
   criadaEm?: number
   origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar'
+  /** Dia do cronograma de TEOT/TARO desta sessão (ver EstadoSessao.diaPlano). */
+  diaPlano?: string
 }
 
 export function novaSessao(
@@ -58,6 +60,7 @@ export function novaSessao(
     limiteSegundos: opcoes.limiteSegundos ?? null,
     ...(opcoes.nacional ? { nacional: opcoes.nacional } : {}),
     ...(opcoes.origem ? { origem: opcoes.origem } : {}),
+    ...(opcoes.diaPlano ? { diaPlano: opcoes.diaPlano } : {}),
   }
 }
 

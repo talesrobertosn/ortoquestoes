@@ -40,8 +40,8 @@ export function Quadro({ titulo, descricao, acoes, legenda, fonte, qualidade, ta
   </figure>
 }
 
-export function Legenda({ itens }: { itens: Array<{ nome: string; chave: 'serie1' | 'serie2' | 'serie3' | 'linha' | 'tracejada' | 'hachura' | 'acento' }> }) {
-  const classe = { serie1: '', serie2: ' a3-chave--2', serie3: ' a3-chave--3', linha: ' a3-chave--linha', tracejada: ' a3-chave--tracejada', hachura: ' a3-chave--hachura', acento: ' a3-chave--acento' }
+export function Legenda({ itens }: { itens: Array<{ nome: string; chave: 'serie1' | 'serie2' | 'serie3' | 'linha' | 'tracejada' | 'hachura' | 'acento' | 'parcial' | 'media' }> }) {
+  const classe = { serie1: '', serie2: ' a3-chave--2', serie3: ' a3-chave--3', linha: ' a3-chave--linha', tracejada: ' a3-chave--tracejada', hachura: ' a3-chave--hachura', acento: ' a3-chave--acento', parcial: ' a3-chave--parcial', media: ' a3-chave--media' }
   return <ul className="a3-legenda">{itens.map(i => <li key={i.nome}><i className={'a3-chave' + classe[i.chave]} aria-hidden="true" />{i.nome}</li>)}</ul>
 }
 
@@ -233,4 +233,183 @@ export function Ranking({ itens, formato = inteiro }: { itens: Array<{ nome: str
     <span title={i.nome}>{i.nome}{i.detalhe && <span className="a3-mudo"> · {i.detalhe}</span>}</span><b>{formato(i.valor)}</b>
     <i style={{ '--p': `${(i.valor / max) * 100}%` } as React.CSSProperties} aria-hidden="true" />
   </li>)}</ul>
+}
+
+/* ───────────── Colunas (o gráfico "em torre") ───────────── */
+
+export interface PontoColuna {
+  /** Rótulo da dica e da tabela ("Semana de 27/10"). */
+  longo: string
+  /** Rótulo do eixo ("27/10", "out"). */
+  curto: string
+  /** Uma parte por série (empilhadas de baixo para cima). */
+  partes: number[]
+  /** Período ainda em andamento (hoje, esta semana, este mês): cor mais clara e contorno tracejado. */
+  parcial?: boolean
+}
+
+/**
+ * Colunas com o número escrito em cima de cada uma (pedido do Tales, 04/11/2026: "antigamente era tipo em torre,
+ * mais fácil de ler"). Sempre começa no zero; linha tracejada da média dos períodos completos; o período em
+ * andamento fica claro e tracejado para não parecer queda. Os números só somem quando não cabem (muitas colunas
+ * no celular); aí ficam o maior e o último, e o resto na dica e em "Ver dados".
+ */
+export function Colunas({ pontos, series, formato = inteiro, altura = 210, descricao, media = true, rotuloMedia = 'média', cor = 'verde', destacarMaior = false, lado = false }: {
+  pontos: PontoColuna[]; series: Array<{ nome: string; estilo?: 1 | 2 | 'hachura' }>; formato?: (n: number) => string
+  altura?: number; descricao: string; media?: boolean; rotuloMedia?: string
+  /** Cor da série principal: verde da marca, verde claro ou ouro. */
+  cor?: 'verde' | 'claro' | 'ouro'
+  /** A coluna mais alta ganha a cor cheia e as outras ficam claras ("o dia em que mais…"). */
+  destacarMaior?: boolean
+  /** Séries lado a lado em vez de empilhadas (comparar esta semana com a passada). */
+  lado?: boolean
+}) {
+  const caixa = useRef<HTMLDivElement>(null)
+  const [largura, definirLargura] = useState(320)
+  const [ativo, definirAtivo] = useState<number | null>(null)
+  const idH = useId().replace(/:/g, '')
+  useLayoutEffect(() => {
+    const el = caixa.current
+    if (!el) return
+    const medir = () => definirLargura(Math.max(240, Math.round(el.getBoundingClientRect().width)))
+    medir()
+    const ro = new ResizeObserver(medir)
+    ro.observe(el)
+    return () => ro.disconnect()
+  }, [])
+  const n = pontos.length
+  const total = (p: PontoColuna) => lado ? Math.max(0, ...p.partes.map(v => v || 0)) : p.partes.reduce((s, v) => s + (v || 0), 0)
+  const valores = pontos.map(total)
+  const completos = pontos.filter(p => !p.parcial).map(total)
+  const mediaV = media && completos.length >= 2 ? completos.reduce((s, v) => s + v, 0) / completos.length : null
+  // Com média, a etiqueta dela mora numa faixa própria no alto, sem cobrir colunas nem números.
+  const esq = 8, dir = 8, topo = mediaV ? 36 : 22, baixo = 24
+  const w = largura - esq - dir, h = altura - topo - baixo
+  const maxBruto = Math.max(1, ...valores, mediaV ?? 0)
+  const passo = degrau(maxBruto)
+  const max = Math.ceil(maxBruto / passo) * passo
+  const y = (v: number) => topo + h - (v / max) * h
+  const coluna = w / Math.max(n, 1)
+  const xc = (i: number) => esq + i * coluna + coluna / 2
+  const larguraBarra = Math.max(3, Math.min(coluna * 0.68, 46))
+  const curtoValor = (v: number) => formato === inteiro ? inteiro(v) : formato(v).replace(/,00$/, '').replace(/^R\$\s?/, '')
+  // Cabe o número em cima? Mede pelo texto mais longo (≈ 6,5 px por caractere a 11 px).
+  const maiorTexto = Math.max(...valores.map(v => curtoValor(v).length), 1)
+  const cabe = coluna >= maiorTexto * 6.2 + 2
+  const iMax = valores.indexOf(Math.max(...valores))
+  // Zero escrito só em gráfico curto; em 30 colunas, a fila de zeros vira ruído.
+  const mostraNumero = (i: number) => (valores[i] > 0 || n <= 14) && (cabe || i === iMax || i === n - 1)
+  const passoX = Math.max(1, Math.ceil(n / Math.max(2, Math.floor(w / 46))))
+  const classe = (s: { estilo?: 1 | 2 | 'hachura' }) => s.estilo === 2 ? ' a3-g-barra--2' : ''
+
+  function tecla(e: KeyboardEvent<SVGSVGElement>) {
+    const atual = ativo ?? n - 1
+    const destino = e.key === 'ArrowRight' ? Math.min(n - 1, atual + 1) : e.key === 'ArrowLeft' ? Math.max(0, atual - 1) : e.key === 'Home' ? 0 : e.key === 'End' ? n - 1 : null
+    if (destino === null) { if (e.key === 'Escape') definirAtivo(null); return }
+    e.preventDefault(); definirAtivo(destino)
+  }
+  function mover(e: PointerEvent<SVGSVGElement>) {
+    const r = e.currentTarget.getBoundingClientRect()
+    const i = Math.floor((e.clientX - r.left - esq) / coluna)
+    definirAtivo(i >= 0 && i < n ? i : null)
+  }
+  const dicaX = ativo !== null ? Math.min(Math.max(xc(ativo), 90), largura - 90) : 0
+
+  return <div className={`a3-grafico a3-colunas a3-colunas--${cor}${destacarMaior ? ' a3-colunas--destaque' : ''}`} ref={caixa}>
+    <svg width={largura} style={{ maxWidth: '100%' }} height={altura} role="img" aria-label={descricao} tabIndex={0} onKeyDown={tecla} onPointerMove={mover}
+      onPointerLeave={() => definirAtivo(null)} onBlur={() => definirAtivo(null)}>
+      <defs><pattern id={`a3-c-${idH}`} width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <rect width="5" height="5" className="a3-g-hachura-fundo" /><line x1="0" y1="0" x2="0" y2="5" className="a3-g-hachura-linha" />
+      </pattern></defs>
+      <line x1={esq} x2={largura - dir} y1={y(0)} y2={y(0)} className="a3-g-base" />
+      {pontos.map((p, i) => {
+        let acumulado = 0
+        const t = valores[i]
+        const apagado = ativo !== null && ativo !== i
+        if (lado) {
+          const nS = series.length, larg = Math.max(3, Math.min((coluna * 0.8) / nS, 30))
+          return <g key={i} opacity={apagado ? 0.5 : 1}>{series.map((s, k) => {
+            const v = p.partes[k] ?? 0
+            const x = xc(i) - (nS * larg) / 2 + k * larg
+            const caberNum = larg >= curtoValor(v).length * 6.2 + 1
+            return <g key={s.nome}>
+              {v > 0 && <rect x={x + 1} width={larg - 2} y={y(v)} height={Math.max(1, y(0) - y(v))} rx={Math.min(4, larg / 3)} className={'a3-g-barra' + classe(s)} />}
+              {caberNum && v > 0 && <text x={x + larg / 2} y={y(v) - 5} textAnchor="middle" className="a3-g-valor">{curtoValor(v)}</text>}
+            </g>
+          })}</g>
+        }
+        return <g key={i} opacity={apagado ? 0.5 : 1}>
+          {series.map((s, k) => {
+            const v = p.partes[k] ?? 0
+            if (v <= 0) return null
+            const y0 = y(acumulado + v), alt = y(acumulado) - y0
+            acumulado += v
+            const ultima = p.partes.slice(k + 1).every(x => !x)
+            return <rect key={s.nome} x={xc(i) - larguraBarra / 2} width={larguraBarra} y={y0} height={Math.max(1, alt)} rx={ultima ? Math.min(5, larguraBarra / 3) : 0}
+              className={'a3-g-barra' + classe(s) + (p.parcial ? ' a3-g-barra--parcial' : '') + (destacarMaior && i === iMax && t > 0 ? ' a3-g-barra--maior' : '')} style={s.estilo === 'hachura' ? { fill: `url(#a3-c-${idH})` } : undefined} />
+          })}
+          {p.parcial && t > 0 && <rect x={xc(i) - larguraBarra / 2} width={larguraBarra} y={y(t)} height={Math.max(1, y(0) - y(t))} rx={Math.min(5, larguraBarra / 3)} className="a3-g-parcial" />}
+          {mostraNumero(i) && <text x={xc(i)} y={y(t) - 6} textAnchor="middle" className={'a3-g-valor' + (t === 0 ? ' a3-g-valor--zero' : '') + (p.parcial ? ' a3-g-valor--parcial' : '')}>{curtoValor(t)}</text>}
+        </g>
+      })}
+      {mediaV !== null && mediaV > 0 && <g className="a3-g-media">
+        <line x1={esq} x2={largura - dir} y1={y(mediaV)} y2={y(mediaV)} />
+        <line x1={largura - dir - 16} x2={largura - dir} y1={9} y2={9} />
+        <text x={largura - dir - 22} y={13} textAnchor="end">{rotuloMedia} {formato === inteiro ? mediaV.toLocaleString('pt-BR', { maximumFractionDigits: 1 }) : formato(mediaV)}</text>
+      </g>}
+      {pontos.map((p, i) => (i % passoX === 0 || i === n - 1) && !(i !== n - 1 && n - 1 - i < passoX)
+        ? <text key={i} x={xc(i)} y={altura - 6} textAnchor="middle" className={'a3-g-eixo' + (p.parcial ? ' a3-g-eixo--parcial' : '')}>{p.curto}</text> : null)}
+    </svg>
+    {ativo !== null && pontos[ativo] && <div className="a3-dica" style={{ left: dicaX, top: -6 }}>
+      <b>{pontos[ativo].longo}{pontos[ativo].parcial ? ' (em andamento)' : ''}</b>
+      {series.length > 1 && series.map((s, k) => <span key={s.nome}>{s.nome}<strong>{formato(pontos[ativo].partes[k] ?? 0)}</strong></span>)}
+      {!(lado && series.length > 1) && <span>{series.length > 1 ? 'Total' : series[0]?.nome}<strong>{formato(valores[ativo])}</strong></span>}
+    </div>}
+  </div>
+}
+
+/**
+ * A linha de números que acompanha um gráfico de colunas: o período atual, o anterior, a média e o total,
+ * escritos (o gráfico mostra a forma; aqui se lê o número).
+ */
+export function ResumoColunas({ pontos, nomePeriodo, formato = inteiro }: { pontos: PontoColuna[]; nomePeriodo: { atual: string; anterior: string; unidade: string }; formato?: (n: number) => string }) {
+  const valores = pontos.map(p => p.partes.reduce((s, v) => s + (v || 0), 0))
+  const completos = pontos.filter(p => !p.parcial).map((p) => p.partes.reduce((s, v) => s + (v || 0), 0))
+  const atual = valores[valores.length - 1] ?? 0
+  const anterior = valores[valores.length - 2] ?? 0
+  const media = completos.length ? completos.reduce((s, v) => s + v, 0) / completos.length : 0
+  const total = valores.reduce((s, v) => s + v, 0)
+  const fmtMedia = formato === inteiro ? media.toLocaleString('pt-BR', { maximumFractionDigits: 1 }) : formato(media)
+  return <dl className="a3-resumo-colunas">
+    <div><dt>{nomePeriodo.atual}</dt><dd>{formato(atual)}</dd></div>
+    <div><dt>{nomePeriodo.anterior}</dt><dd>{formato(anterior)}</dd></div>
+    <div><dt>Média por {nomePeriodo.unidade}</dt><dd>{fmtMedia}</dd></div>
+    <div><dt>Total no gráfico</dt><dd>{formato(total)}</dd></div>
+  </dl>
+}
+
+/**
+ * Barras deitadas, grossas e coloridas, com o número e a parte escritos (etapas, provas, estados, origem…).
+ * `total` dá a porcentagem; sem ele, a barra é relativa ao maior.
+ */
+export function Barras({ itens, total, formato = inteiro, cor = 'verde', limite }: {
+  itens: Array<{ nome: string; valor: number; detalhe?: string }>; total?: number; formato?: (n: number) => string
+  cor?: 'verde' | 'claro' | 'ouro'; limite?: number
+}) {
+  const vis = limite ? itens.slice(0, limite) : itens
+  const max = Math.max(1, ...vis.map(i => i.valor))
+  if (!vis.length) return <p className="a3-mudo">Sem dados ainda.</p>
+  return <ul className={`a3-barras a3-barras--${cor}`}>{vis.map((i, k) => <li key={i.nome + k}>
+    <span className="a3-barras__nome" title={i.nome}>{i.nome}{i.detalhe && <small>{i.detalhe}</small>}</span>
+    <span className="a3-barras__trilho" aria-hidden="true"><i style={{ width: `${Math.max(1.5, (i.valor / max) * 100)}%` }} /></span>
+    <span className="a3-barras__valor"><b>{formato(i.valor)}</b>{total ? <small>{Math.round((i.valor / Math.max(1, total)) * 100)}%</small> : null}</span>
+  </li>)}</ul>
+}
+
+/** Uma conclusão em frase, com o número em destaque ("As pessoas se cadastram mais na terça à noite"). */
+export function Achado({ icone, titulo, children, tom = 'verde' }: { icone: ReactNode; titulo: string; children: ReactNode; tom?: 'verde' | 'ouro' | 'claro' }) {
+  return <article className={`a3-achado a3-achado--${tom}`}>
+    <span className="a3-achado__icone" aria-hidden="true">{icone}</span>
+    <div><span className="a3-achado__titulo">{titulo}</span><p>{children}</p></div>
+  </article>
 }

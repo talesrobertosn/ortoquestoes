@@ -37,7 +37,6 @@ try {
   const pessoa = (n, extra = {}) => { const p = { id: id(n), nome: `${NOMES[n % NOMES.length]} Teste`, email: `p${n}@teste`, confirmado: true, quer_cartas: true, prefs: null, respondidas: 240, ...extra }; pessoas.set(p.id, p); return p.id }
   // Uma candidata por campanha, mais os casos de trava.
   const C = {
-    assinou_sem_cronograma: [[pessoa(1, { assinante: true }), 'assinou_sem_cronograma', { assinou_em: horas(24 * 4) }]],
     assinante_parado_7: [[pessoa(2, { assinante: true, dias_parado: 9 }), 'assinante_parado_7:2026-10-09', { dias_fora: 9 }]],
     simulado_resultado: [[pessoa(3), 'simulado_resultado:2026-09', { edicao: '2026-09', titulo: 'Simulado Nacional de setembro', acertos: 41, total: 50, posicao: 12, participantes: 180 }]],
     vespera_prova: [[pessoa(4, { prova: 'TEOT' }), 'vespera_prova:2026-10-19', { data_prova: '2026-10-19', prova: 'TEOT' }]],
@@ -85,6 +84,7 @@ try {
       const lista = C[rota.slice('rpc/candidatos_'.length)] ?? []
       return j(lista.slice(0, corpo.p_limite).map(([id_usuario, referencia, dados]) => ({ id_usuario, referencia, dados })))
     }
+    if (rota === 'rpc/hub_bloqueio') return j(null)
     if (rota === 'rpc/registrar_catalogo_biblioteca') { catalogos.push(corpo.p_capitulos); return j(1) }
     if (rota === 'rpc/sn_marcar_lembrete') { marcados.push(corpo); return j(true) }
     const p = pessoas.get(corpo?.p_id ?? eq('id_usuario') ?? eq('usuario_id')) ?? pessoas.get(eq('usuario_id'))
@@ -143,7 +143,7 @@ try {
   const c = r.dados.campanhas
   for (const t of TIPOS.filter((t) => t !== 'um_ano')) assert.deepEqual(c[t], { candidatas: 1, enviado: 1 }, `${t}: ${JSON.stringify(c[t])}`)
   assert.deepEqual(c.um_ano, { candidatas: 7, enviado: 2, nao_quer: 2, email_nao_confirmado: 1, adiado: 1, ja_enviado: 1 }, JSON.stringify(c.um_ano))
-  assert.equal(enviados.length, 11)
+  assert.equal(enviados.length, TIPOS.length + 1)
   assert.deepEqual(marcados, [{ p_edicao: '2026-10', p_usuario: C.simulado_lembrete[0][0] }], 'marcou o lembrete enviado')
   assert.equal(catalogos.length, 1, 'registrou o catálogo da Biblioteca')
   assert.equal(catalogos[0].length, JSON.parse(indice).capitulos.length)
@@ -171,7 +171,7 @@ try {
   assert.match(texto('simulado_resultado'), /#\/simulado-nacional/)
   assert.match(texto('simulado_lembrete'), /#\/simulado-nacional/)
   assert.match(texto('simulado_lembrete'), /no ar|abriu|aberto/i, 'lembrete: abriu hoje')
-  assert.match(texto('assinou_sem_cronograma'), /#\/cronograma/)
+  assert.equal(TIPOS.includes('assinou_sem_cronograma'), false, 'cronograma opcional não gera campanha')
   assert.ok(!/\b[1-6] dias\b/.test(texto('assinante_parado_7').split('Um abraço')[0].replace(/faltam \d+ dias|a \d+ dias/g, '')), 'parado: nunca menos de uma semana')
   // O envio que tinha falhado foi retomado na mesma linha (sem duplicar).
   const doFalhou = linhas.filter((l) => l.id_usuario === falhou)

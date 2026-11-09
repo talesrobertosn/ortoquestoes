@@ -42,6 +42,10 @@ def fingerprint_questao(q):
 def fingerprint_comentario(c):
     return sha({k:v for k,v in c.items() if k != 'baseResumo'})
 
+def sha_capitulo(c):
+    # `corte` (fim da prévia de quem não assina, 09/11/2026) é acesso, não texto: não muda a proveniência.
+    return sha({k: v for k, v in c.items() if k != 'corte'})
+
 def fonte(cid, blocos, caps):
     c = caps[cid]
     por_bloco = {b['id']: (s, b) for s in c['secoes'] for b in s['blocos']}
@@ -49,7 +53,7 @@ def fonte(cid, blocos, caps):
         raise ValueError(f'{cid}: bloco ausente/inválido')
     return {'resumo': cid, 'titulo': c['titulo'], 'livro': c['livro'], 'edicao': c['edicao'],
             'capitulo': c['capitulo'], 'secoes': list(dict.fromkeys(por_bloco[b][0]['titulo'] for b in blocos)),
-            'blocos': blocos, 'sha256': sha(c), 'trechosSha256': sha([por_bloco[b][1] for b in blocos])}
+            'blocos': blocos, 'sha256': sha_capitulo(c), 'trechosSha256': sha([por_bloco[b][1] for b in blocos])}
 
 def inventario():
     qs, cs, bib, caps, mapa = dados()
@@ -95,7 +99,7 @@ def inventario():
         saida[qid] = item
     contagem = dict(sorted(Counter(x['estado'] for x in saida.values()).items()))
     return {'versao':1, 'criterio':'Citação direta OU subtema em comum; candidato não significa cobertura bibliográfica suficiente.',
-            'estados':contagem, 'resumos':{c['id']:{'titulo':c['titulo'],'sha256':sha(caps[c['id']]),
+            'estados':contagem, 'resumos':{c['id']:{'titulo':c['titulo'],'sha256':sha_capitulo(caps[c['id']]),
                 'estados':dict(sorted(Counter(x['estado'] for x in saida.values() if c['id'] in x['resumosCandidatos']).items()))} for c in bib},
             'questoes': dict(sorted(saida.items()))}
 

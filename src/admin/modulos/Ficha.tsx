@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import { lerLocais, rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { usarIndice } from '../../dados/usarIndice'
 import { chamarRpc } from '../../servicos/supabase'
@@ -13,10 +13,11 @@ import { estaOnline, nomeDe, type LinhaUsuario } from '../dados/pessoas'
 import type { AbaFicha } from '../nav'
 import { Icone } from '../ui/Icone'
 import { data, dataHora, haQuanto, horario, iniciais, inteiro, reais } from '../ui/formato'
-import { Ranking, SerieTempo } from '../ui/graficos'
+import { Achado, Barras, Colunas } from '../ui/graficos'
 import { Carregando, Estado, Faixa, Painel, Selo, SeloQualidade, Situacao } from '../ui/kit'
 import { Gaveta, avisoRapido, confirmar } from '../ui/sobreposicoes'
 import { EditorCarta } from './cartas-comum'
+import { temperatura } from './Inicio'
 
 interface Detalhe {
   respostas: Array<{ id: string; c: string | null; primeira: string | null }>
@@ -139,24 +140,101 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
     </span>
   </div>
 
-  return <Gaveta aberta aoFechar={aoFechar} titulo={nomeDe(u)} subtitulo={subtitulo} topo={topo} largura={900} destaque={planosRecente && !u.plano_vigente && !u.administrador}>
-    <div className="a3-abas-locais" role="tablist" aria-label="Partes da ficha" style={{ position: 'sticky', top: 0, background: 'var(--a3-papel)', zIndex: 2 }}>
-      {ABAS.map(([id, r]) => <button key={id} type="button" role="tab" aria-selected={aba === id} onClick={() => definirAba(id)}>{r}</button>)}
-    </div>
-    <div style={{ padding: '18px 20px 0', display: 'grid', gap: 16 }}>
-      {viuPlanos && !u.plano_vigente && aba !== 'assinatura' && <Faixa tom={planosRecente ? 'aviso' : undefined} titulo={`Olhou os preços ${planos!.vezes > 1 ? `${planos!.vezes} vezes` : 'uma vez'} nos últimos 30 dias`}
-        acao={aba !== 'carta' ? <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirAba('carta')}>Escrever uma carta</button> : undefined}>
-        Última vez {planos?.ultima ? `${haQuanto(planos.ultima)}, às ${horario(planos.ultima)}` : ''}.{(planos?.condicoes_vezes ?? 0) > 0 ? ` Também abriu as Condições da Assinatura (${planos!.condicoes_vezes}×), o passo antes do checkout.` : ''} Ainda não assina.
-      </Faixa>}
-      {aba === 'assinatura' ? <AbaAssinatura idUsuario={u.id_usuario} email={u.email} aoCarta={() => definirAba('carta')} />
-        : !detalhe ? (detalheQ.erro ? <Estado tipo="erro" titulo="A ficha não abriu" texto="Confira se a migração 202609290200_painel_admin_2.sql foi aplicada." /> : <Carregando linhas={8} texto="Carregando a ficha…" />)
-          : aba === 'resumo' ? <AbaResumo u={u} detalhe={detalhe} atividade={atividade} extra={extra} semExtra={semExtra} porTema={porTema}
-            perfil={{ situacao, ano, servico, locais, provas, cidadeUf }} semAtividade={!atividade && !!atividadeQ.erro} />
-            : aba === 'atividade' ? <AbaAtividade u={u} detalhe={detalhe} atividade={atividade} extra={extra} semAtividade={!atividade && !!atividadeQ.erro} />
-              : aba === 'carta' ? (u.administrador ? <Estado titulo="Conta de administrador" texto="Cartas não são enviadas para administradores." /> : <EditorCarta usuario={u} perfilReserva={perfilReserva} historicoReserva={historicoReserva} querReserva={detalhe.emails_conquistas} aoEnviar={() => void detalheQ.recarregar()} />)
-                : <AbaAcoes u={u} detalhe={detalhe} cortesiaVale={cortesiaVale} recarregar={detalheQ.recarregar} />}
+  // A ficha é uma página corrida (Tales, 04/11/2026): o índice no alto leva a cada parte; abrir "na carta" rola até ela.
+  const corpo = useRef<HTMLDivElement>(null)
+  const [cartaAberta, abrirCarta] = useState(aba === 'carta')
+  const irPara = useCallback((id: AbaFicha) => {
+    definirAba(id)
+    if (id === 'carta') abrirCarta(true)
+    requestAnimationFrame(() => corpo.current?.querySelector(`#ficha-${id}`)?.scrollIntoView({ behavior: 'smooth', block: 'start' }))
+  }, [definirAba])
+  useEffect(() => { if (aba !== 'resumo' && detalhe) irPara(aba) }, [detalhe ? 1 : 0]) // eslint-disable-line react-hooks/exhaustive-deps
+  // Rolando a ficha, o índice acende a parte que está na tela.
+  useEffect(() => {
+    const raiz = corpo.current
+    if (!raiz || !detalhe || typeof IntersectionObserver === 'undefined') return
+    const obs = new IntersectionObserver(es => { const v = es.filter(e => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)[0]; if (v) definirAba(v.target.id.replace('ficha-', '') as AbaFicha) }, { rootMargin: '-80px 0px -60% 0px' })
+    raiz.querySelectorAll('.fx-secao').forEach(el => obs.observe(el))
+    return () => obs.disconnect()
+  }, [detalhe ? 1 : 0, definirAba]) // eslint-disable-line react-hooks/exhaustive-deps
+  const temp = !u.plano_vigente && !u.administrador ? temperatura(u, { planos_ultima: planos?.ultima ?? null, planos_vezes: planos?.vezes ?? 0 } as never, diaSP(new Date()), null) : null
+
+  return <Gaveta aberta aoFechar={aoFechar} titulo={nomeDe(u)} subtitulo={subtitulo} topo={topo} largura={960} destaque={planosRecente && !u.plano_vigente && !u.administrador}>
+    <nav className="fx-indice" aria-label="Partes da ficha">
+      {ABAS.map(([id, r]) => <button key={id} type="button" aria-current={aba === id ? 'true' : undefined} onClick={() => irPara(id)}>{r}</button>)}
+    </nav>
+    <div ref={corpo} className="fx-corpo">
+      {!detalhe ? (detalheQ.erro ? <Estado tipo="erro" titulo="A ficha não abriu" texto="Confira se a migração 202609290200_painel_admin_2.sql foi aplicada." /> : <Carregando linhas={8} texto="Carregando a ficha…" />) : <>
+        <section id="ficha-resumo" className="fx-secao">
+          <Retrato u={u} atividade={atividade} porTema={porTema} extra={extra} temp={temp} semAtividade={!atividade && !!atividadeQ.erro} />
+          {viuPlanos && !u.plano_vigente && <Faixa tom={planosRecente ? 'aviso' : undefined} titulo={`Olhou os preços ${planos!.vezes > 1 ? `${planos!.vezes} vezes` : 'uma vez'} nos últimos 30 dias`}
+            acao={<button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => irPara('carta')}>Escrever uma carta</button>}>
+            Última vez {planos?.ultima ? `${haQuanto(planos.ultima)}, às ${horario(planos.ultima)}` : ''}.{(planos?.condicoes_vezes ?? 0) > 0 ? ` Também abriu as Condições da Assinatura (${planos!.condicoes_vezes}×), o passo antes do checkout.` : ''} Ainda não assina.
+          </Faixa>}
+          <AbaResumo u={u} detalhe={detalhe} atividade={atividade} extra={extra} semExtra={semExtra} porTema={porTema}
+            perfil={{ situacao, ano, servico, locais, provas, cidadeUf }} />
+        </section>
+        <section id="ficha-atividade" className="fx-secao"><TituloSecao n={2} titulo="Atividade" texto="Os últimos 30 dias, o horário em que estuda e tudo o que fez, do mais recente ao mais antigo." />
+          <AbaAtividade u={u} detalhe={detalhe} atividade={atividade} extra={extra} semAtividade={!atividade && !!atividadeQ.erro} /></section>
+        <section id="ficha-assinatura" className="fx-secao"><TituloSecao n={3} titulo="Assinatura" texto="Planos, pedidos Pix e os avisos do Mercado Pago desta pessoa." />
+          <AbaAssinatura idUsuario={u.id_usuario} email={u.email} aoCarta={() => irPara('carta')} /></section>
+        <section id="ficha-carta" className="fx-secao"><TituloSecao n={4} titulo="Carta" texto="Uma carta escrita para esta pessoa, com prévia antes de enviar." />
+          {u.administrador ? <Estado compacto titulo="Conta de administrador" texto="Cartas não são enviadas para administradores." />
+            : cartaAberta ? <EditorCarta usuario={u} perfilReserva={perfilReserva} historicoReserva={historicoReserva} querReserva={detalhe.emails_conquistas} aoEnviar={() => void detalheQ.recarregar()} />
+            : <button type="button" className="fx-abrir-carta" onClick={() => abrirCarta(true)}><Icone nome="carta" tamanho={18} /><span>Escrever uma carta para {nomeDe(u).split(' ')[0]}<small>{detalhe.emails.length ? `${detalhe.emails.length} e-mails já enviados · o último ${haQuanto(detalhe.emails[0]?.em)}` : 'nenhum e-mail enviado ainda'}</small></span></button>}
+        </section>
+        <section id="ficha-acoes" className="fx-secao"><TituloSecao n={5} titulo="Ações" texto="Cortesia, ranking e desconectar. Cada ação vale na hora." />
+          <AbaAcoes u={u} detalhe={detalhe} cortesiaVale={cortesiaVale} recarregar={detalheQ.recarregar} /></section>
+      </>}
     </div>
   </Gaveta>
+}
+
+function TituloSecao({ n, titulo, texto }: { n: number; titulo: string; texto: string }) {
+  return <header className="fx-titulo"><span aria-hidden="true">{n}</span><div><h2>{titulo}</h2><p>{texto}</p></div></header>
+}
+
+/**
+ * O retrato da pessoa no alto da ficha: onde está agora, os números que importam e a leitura rápida em frases
+ * (quando estuda, tema mais forte e mais fraco, constância, termômetro de compra).
+ */
+function Retrato({ u, atividade, porTema, extra, temp, semAtividade }: {
+  u: LinhaUsuario; atividade: Atividade | null; porTema: Array<{ nome: string; acerto: number; total: number }>; extra: FichaExtra | null
+  temp: ReturnType<typeof temperatura> | null; semAtividade: boolean
+}) {
+  const a1 = acertoReal(u), ar = acertoAposRevisao(u)
+  const hojeChave = diaSP(new Date())
+  const hoje = atividade?.por_dia.find(d => d.dia === hojeChave)
+  const dias = atividade?.por_dia.filter(d => d.questoes > 0).length ?? null
+  const horas = atividade?.horas ?? []
+  const pico = horas.length ? horas.reduce((m, h) => h.n > m.n ? h : m) : null
+  const turno = pico ? (pico.hora < 6 ? 'de madrugada' : pico.hora < 12 ? 'de manhã' : pico.hora < 18 ? 'à tarde' : 'à noite') : null
+  const comBase = porTema.filter(t => t.total >= 10)
+  const forte = comBase.length ? comBase.reduce((m, t) => t.acerto > m.acerto ? t : m) : null
+  const fraco = comBase.length > 1 ? comBase.reduce((m, t) => t.acerto < m.acerto ? t : m) : null
+  const fc = extra?.flashcards.servidor
+  const agora = atividade?.agora
+  return <div className="fx-retrato">
+    <div className={'fx-agora' + (agora?.online ? ' vivo' : '')}>
+      {agora?.online ? <i className="a3-ponto a3-ponto--vivo" aria-hidden="true" /> : <Icone nome="olho" tamanho={16} />}
+      <span><b>{agora?.online ? 'Online agora' : 'Última página vista'}</b>{' '}
+        {semAtividade ? 'navegação ainda não registrada' : agora?.pagina ? <>{rotuloPagina(agora.pagina)}{agora.questao && <> · <a className="fx-link" href={`#/questao/${agora.questao}`} target="_blank" rel="noopener noreferrer">{agora.questao}</a></>}{!agora.online && ` · ${haQuanto(agora.visto_em)}`}</> : 'ainda sem registro'}</span>
+    </div>
+    <div className="fx-numeros">
+      <div><span>Questões</span><b>{inteiro(u.respondidas)}</b><small>{inteiro(u.respondidas_7d)} na semana</small></div>
+      <div><span>{a1 !== null ? 'Acerto real' : 'Acerto'}</span><b>{(a1 ?? ar) === null ? '—' : `${a1 ?? ar}%`}</b><small>{a1 !== null && ar !== null ? `${ar}% após revisão` : '1ª tentativa'}</small></div>
+      <div><span>Hoje</span><b>{inteiro(hoje?.questoes ?? u.respondidas_hoje ?? 0)}</b><small>{hoje?.tentativas ? `${Math.round((hoje.acertos / hoje.tentativas) * 100)}% de acerto` : 'nada ainda'}</small></div>
+      <div><span>Dias estudando</span><b>{dias ?? '—'}</b><small>dos últimos 30</small></div>
+    </div>
+    <div className="fx-leitura">
+      {pico && <Achado icone={<Icone nome="relogio" tamanho={16} />} titulo="Quando estuda">Estuda mais <b>{turno}</b>; o horário mais forte é das <b>{pico.hora}h às {pico.hora + 1}h</b>.</Achado>}
+      {dias !== null && <Achado icone={<Icone nome="calendario" tamanho={16} />} titulo="Constância"><b>{dias} de 30 dias</b> com questões{dias >= 20 ? ': muito constante.' : dias >= 10 ? ': ritmo bom.' : dias >= 3 ? ': ainda irregular.' : ': quase parado.'}</Achado>}
+      {forte && <Achado icone={<Icone nome="estrela" tamanho={16} />} titulo="Tema mais forte"><b>{forte.nome}</b>, {forte.acerto}% de acerto em {forte.total} questões.</Achado>}
+      {fraco && fraco !== forte && <Achado tom="ouro" icone={<Icone nome="alerta" tamanho={16} />} titulo="Tema mais fraco"><b>{fraco.nome}</b>, {fraco.acerto}% em {fraco.total} questões. Bom assunto para uma carta.</Achado>}
+      {fc && fc.respostas > 0 && <Achado icone={<Icone nome="livro" tamanho={16} />} titulo="Flashcards"><b>{inteiro(fc.unicos)} cartas</b> diferentes, {inteiro(fc.semana)} respostas na semana.</Achado>}
+      {temp && <Achado tom="ouro" icone={<Icone nome="raio" tamanho={16} />} titulo="Termômetro de compra"><b>{temp.rotulo}</b> ({temp.pontos} {temp.pontos === 1 ? 'ponto' : 'pontos'}): soma ter visto os planos, questões no total e estar online.</Achado>}
+    </div>
+  </div>
 }
 
 function Bloco({ titulo, extra, children }: { titulo: string; extra?: ReactNode; children: ReactNode }) {
@@ -166,35 +244,17 @@ function Numero({ rotulo, valor, apoio }: { rotulo: string; valor: ReactNode; ap
   return <div className="a3-metrica" style={{ padding: '14px 16px' }}><span className="a3-rotulo">{rotulo}</span><span className="a3-metrica__valor" style={{ fontSize: 24 }}>{valor}</span>{apoio && <span className="a3-metrica__linha">{apoio}</span>}</div>
 }
 
-function AbaResumo({ u, detalhe, atividade, extra, semExtra, porTema, perfil, semAtividade }: {
-  u: LinhaUsuario; detalhe: Detalhe; atividade: Atividade | null; extra: FichaExtra | null; semExtra: boolean; semAtividade: boolean
+function AbaResumo({ u, detalhe, atividade, extra, semExtra, porTema, perfil }: {
+  u: LinhaUsuario; detalhe: Detalhe; atividade: Atividade | null; extra: FichaExtra | null; semExtra: boolean
   porTema: Array<{ nome: string; acerto: number; aposRevisao: number; total: number }>
   perfil: { situacao: string | null; ano: string | null; servico: string | null; locais: string[]; provas: string[]; cidadeUf: string }
 }) {
-  const a1 = acertoReal(u), ar = acertoAposRevisao(u)
-  const hojeChave = diaSP(new Date())
-  const hoje = atividade?.por_dia.find(d => d.dia === hojeChave)
   const fc = extra?.flashcards
   const fcProg = fc?.progresso ?? null, fcServ = fc?.servidor ?? null, fcCripta = fc?.cripta ?? null
   const fcCartas = Math.max(fcServ?.unicos ?? 0, fcProg?.cartas ?? 0)
   const fcAcerto = fcProg ? porcentagem(fcProg.acertos, fcProg.acertos + fcProg.erros) : null
   const usaFlashcards = fcCartas > 0 || (fcCripta?.partidas ?? 0) > 0
   return <>
-    <div className="a3-faixa">
-      {atividade?.agora?.online ? <i className="a3-ponto a3-ponto--vivo" style={{ marginTop: 6 }} aria-hidden="true" /> : <Icone nome="olho" tamanho={16} />}
-      <div><b style={{ fontWeight: 600 }}>{atividade?.agora?.online ? 'Agora' : 'Última página vista'}</b>
-        <span>{semAtividade ? 'Rode a migração 202610080100_monitor_usuarios.sql para ver a navegação.' : atividade?.agora?.pagina ? <>{rotuloPagina(atividade.agora.pagina)}{atividade.agora.questao && <> · <a className="a3-link" href={`#/questao/${atividade.agora.questao}`} target="_blank" rel="noopener noreferrer">{atividade.agora.questao}</a></>}{!atividade.agora.online && <span className="a3-mudo"> · {haQuanto(atividade.agora.visto_em)}</span>}</> : 'Ainda sem registro de navegação'}</span>
-      </div>
-    </div>
-    <Bloco titulo="Questões" extra={`última atividade ${haQuanto(u.ultima_atividade)}`}>
-      <div className="a3-painel"><div className="a3-faixa-metricas" style={{ '--colunas': 4 } as React.CSSProperties}>
-        <Numero rotulo="Respondidas" valor={inteiro(u.respondidas)} apoio={`${inteiro(u.respondidas_7d)} na semana`} />
-        <Numero rotulo={a1 !== null ? 'Acerto real' : 'Acerto'} valor={(a1 ?? ar) === null ? '—' : `${a1 ?? ar}%`} apoio={a1 !== null && ar !== null ? `${ar}% após revisão` : undefined} />
-        <Numero rotulo="Hoje" valor={inteiro(hoje?.questoes ?? u.respondidas_hoje ?? 0)} apoio={hoje?.tentativas ? `${Math.round((hoje.acertos / hoje.tentativas) * 100)}% de acerto` : 'sem respostas hoje'} />
-        <Numero rotulo="Dias com estudo" valor={atividade ? atividade.por_dia.length : '—'} apoio="nos últimos 30" />
-      </div></div>
-      <p className="a3-mudo a3-pequeno">{detalhe.favoritas} favoritas · {detalhe.anotacoes} anotações{acertoPorTentativa(u) !== null ? ` · ${acertoPorTentativa(u)}% por tentativa (como a pessoa vê)` : ''}</p>
-    </Bloco>
     <Bloco titulo="Flashcards" extra={fcServ?.ultima ? `última resposta ${haQuanto(fcServ.ultima)}` : undefined}>
       {semExtra ? <p className="a3-mudo">Cole no Supabase a parte 25 para acompanhar os flashcards e quem abriu os planos.</p> : !extra ? <Carregando linhas={2} /> : !usaFlashcards ? <p className="a3-mudo">Ainda não usou os flashcards.</p> :
         <div className="a3-painel"><div className="a3-faixa-metricas" style={{ '--colunas': 4 } as React.CSSProperties}>
@@ -204,9 +264,10 @@ function AbaResumo({ u, detalhe, atividade, extra, semExtra, porTema, perfil, se
           <Numero rotulo="Partidas" valor={inteiro(Math.max(fcCripta?.partidas ?? 0, fcProg?.recordes?.partidas ?? 0))} apoio={`${fcServ?.dias_30 ?? 0} dias com flashcards em 30`} />
         </div></div>}
     </Bloco>
-    {porTema.length > 0 && <Bloco titulo="Acerto real por tema" extra="1ª tentativa · ao lado, quantas questões e o acerto após revisão">
-      <Ranking formato={v => `${v}%`} itens={porTema.map(t => ({ nome: t.nome, valor: t.acerto, detalhe: `${t.total} questões · ${t.aposRevisao}% após revisão` }))} />
+    {porTema.length > 0 && <Bloco titulo="Acerto real por tema" extra="1ª tentativa · embaixo do nome, quantas questões e o acerto após revisão">
+      <Barras formato={v => `${v}%`} itens={porTema.map(t => ({ nome: t.nome, valor: t.acerto, detalhe: `${t.total} questões · ${t.aposRevisao}% após revisão` }))} />
     </Bloco>}
+    <p className="a3-mudo a3-pequeno">{detalhe.favoritas} favoritas · {detalhe.anotacoes} anotações{acertoPorTentativa(u) !== null ? ` · ${acertoPorTentativa(u)}% de acerto por tentativa (como a pessoa vê)` : ''}</p>
     <div className="a3-grade a3-grade--2">
       <Bloco titulo="Perfil">
         <dl className="a3-pares">
@@ -269,12 +330,15 @@ function AbaAtividade({ u, detalhe, atividade, extra, semAtividade }: { u: Linha
   const marca: Record<EventoFicha['tipo'], string> = { planos: 'erro', condicoes: 'erro', pagina: '', sessao: 'tinta', cripta: 'tinta', email: 'ok', conta: 'tinta' }
   const diasSem = diasDesde(u.ultima_atividade)
   return <>
-    {semAtividade ? <Faixa>Sem o registro de páginas (migração 202610080100), aparecem só sessões e e-mails.</Faixa> : atividade && <Painel titulo="Últimos 30 dias" descricao="Questões diferentes por dia; a linha mostra respostas de flashcards">
-      <SerieTempo descricao="Questões e flashcards por dia nos últimos 30 dias" rotulos={dias30.map(d => ({ longo: d.longo, curto: d.curto }))} altura={180}
-        series={[{ nome: 'Questões', tipo: 'barra', valores: dias30.map(d => d.q) }, ...(dias30.some(d => d.f) ? [{ nome: 'Flashcards', tipo: 'linha' as const, estilo: 'acento' as const, valores: dias30.map(d => d.f) }] : [])]} />
+    {semAtividade ? <Faixa>Sem o registro de páginas (migração 202610080100), aparecem só sessões e e-mails.</Faixa> : atividade && <Painel titulo="Últimos 30 dias" descricao="Questões diferentes por dia, em verde; respostas de flashcards por cima, em dourado">
+      <Colunas descricao="Questões e flashcards por dia nos últimos 30 dias" altura={180} rotuloMedia="média"
+        pontos={dias30.map((d, i) => ({ longo: d.longo, curto: d.curto, partes: [d.q ?? 0, d.f ?? 0], parcial: i === dias30.length - 1 }))}
+        series={[{ nome: 'Questões' }, { nome: 'Flashcards', estilo: 2 }]} />
     </Painel>}
     {atividade && atividade.horas.length > 0 && <Painel titulo="Horário em que estuda" descricao="Tentativas por hora (São Paulo), últimos 30 dias">
-      <SerieTempo descricao="Tentativas por hora do dia" altura={140} rotulos={Array.from({ length: 24 }, (_, h) => ({ longo: `${h}h`, curto: `${h}h` }))} series={[{ nome: 'Tentativas', tipo: 'barra', estilo: 2, valores: Array.from({ length: 24 }, (_, h) => atividade.horas.find(x => x.hora === h)?.n ?? 0) }]} />
+      <Colunas descricao="Tentativas por hora do dia" altura={150} media={false}
+        pontos={Array.from({ length: 24 }, (_, h) => ({ longo: `${h}h às ${h + 1}h`, curto: `${h}h`, partes: [atividade.horas.find(x => x.hora === h)?.n ?? 0] }))}
+        series={[{ nome: 'Tentativas' }]} />
     </Painel>}
     {diasSem !== null && diasSem >= 3 && <Faixa tom="aviso">Sem responder questões há {diasSem} dias.</Faixa>}
     <Bloco titulo="Linha do tempo" extra="páginas dos últimos 30 dias, sessões, partidas e e-mails">
@@ -379,7 +443,7 @@ function AbaAcoes({ u, detalhe, cortesiaVale, recarregar }: { u: LinhaUsuario; d
   async function acao(rotulo: string, fazer: () => Promise<unknown>, sucesso: string) {
     if (ocupado) return
     definirOcupado(true)
-    try { await fazer(); avisoRapido(sucesso); await recarregar(); if (rotulo === 'Cortesia') void painel.atualizar() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
+    try { await fazer(); avisoRapido(sucesso); await recarregar(); if (rotulo === 'Cortesia') void painel.atualizar(); if (rotulo === 'Público') void painel.recarregarForaPublico() } catch (f) { avisoRapido(`${rotulo}: ${String(f).replace(/^Error: /, '')}`, 'erro') } finally { definirOcupado(false) }
   }
   return <div className="a3-pilha">
     <div className="a3-acao-cartao">
@@ -398,6 +462,14 @@ function AbaAcoes({ u, detalhe, cortesiaVale, recarregar }: { u: LinhaUsuario; d
           <label className="a3-campo"><span>Prazo</span><select className="a3-entrada" value={dias} onChange={e => definirDias(e.target.value)}><option value="30">30 dias</option><option value="90">90 dias</option><option value="365">1 ano</option><option value="sem">Sem prazo</option></select></label>
           <button type="button" className="a3-botao" disabled={ocupado} onClick={async () => { if (await confirmar({ titulo: `Conceder cortesia a ${nome}?`, texto: `Acesso sem limite diário ${dias === 'sem' ? 'sem prazo' : `por ${dias === '365' ? '1 ano' : `${dias} dias`}`}, sem cobrança.${motivo.trim() ? ` Motivo: ${motivo.trim()}.` : ''}`, sim: 'Conceder cortesia' })) void acao('Cortesia', () => chamarRpc('definir_cortesia_admin', { p_id: u.id_usuario, p_ate: dias === 'sem' ? null : new Date(Date.now() + Number(dias) * 86_400_000).toISOString(), p_motivo: motivo, p_remover: false }), 'Cortesia concedida.') }}>Conceder cortesia</button>
         </div>}
+    </div>
+    <div className="a3-acao-cartao">
+      <div><h3 className="a3-titulo-3">{painel.foraPublico.has(u.id_usuario) ? 'Fora do público-alvo' : 'Dentro do público-alvo'}</h3><p className="a3-mudo">{painel.foraPublico.has(u.id_usuario) ? `Marcada${painel.foraPublico.get(u.id_usuario) ? ` (${painel.foraPublico.get(u.id_usuario)})` : ''}: continua registrada e na receita, mas fora dos números de aquisição, ativação, retenção e conversão.` : 'Para quem não é residente nem ortopedista. A conta continua registrada e os pagamentos continuam na receita.'}</p></div>
+      <button type="button" className="a3-botao a3-botao--contorno" disabled={ocupado || !!painel.foraPublicoErro || painel.foraPublicoCarregando} title={painel.foraPublicoErro ? 'Não foi possível carregar as marcações. Atualize o painel e tente novamente.' : undefined} onClick={async () => {
+        const fora = painel.foraPublico.has(u.id_usuario)
+        if (!(await confirmar({ titulo: fora ? `Voltar ${nome} ao público-alvo?` : `Marcar ${nome} fora do público-alvo?`, texto: fora ? 'Volta a contar nos números de crescimento.' : 'Sai dos números de crescimento; nada é apagado e os pagamentos continuam na receita.', sim: fora ? 'Voltar ao público' : 'Marcar fora' }))) return
+        void acao('Público', () => fora ? chamarRpc('desmarcar_fora_publico_admin', { p_ids: [u.id_usuario] }) : chamarRpc('marcar_fora_publico_admin', { p_ids: [u.id_usuario], p_motivo: 'pela ficha' }), fora ? 'Voltou ao público-alvo.' : 'Marcada fora do público-alvo.')
+      }}>{painel.foraPublico.has(u.id_usuario) ? 'Voltar ao público' : 'Marcar fora do público'}</button>
     </div>
     <p className="a3-mudo a3-pequeno"><SeloQualidade q="confirmado" /> Cada ação vale na hora e é feita no servidor, com a checagem de administrador.</p>
     <div style={{ height: 12 }} />

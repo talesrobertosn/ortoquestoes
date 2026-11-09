@@ -7,7 +7,7 @@ import { usarLidos } from '../../componentes/admin/lidos'
 import { PLANO_CORTESIA } from '../../componentes/admin/rotulos'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, type EventoPagamento } from '../../componentes/admin/pagamentos'
 import { indexarSinais, type SinalUsuario } from '../../componentes/admin/sinais'
-import { CINCO_MIN, usarRpc, type Consulta } from '../../componentes/admin/usarRpc'
+import { CINCO_MIN, recarregarConsultasAtivas, rpcInexistente, usarRpc, type Consulta } from '../../componentes/admin/usarRpc'
 import type { AssinaturaBase, CobrancaReal } from '../../componentes/admin/receita'
 import type { Parte } from '../rotas'
 import { estaOnline, type LinhaUsuario, type ResumoAdmin } from './pessoas'
@@ -34,8 +34,8 @@ export interface LinhaAssinatura extends AssinaturaBase {
 
 const MIGRACAO = '202609290100_painel_admin.sql'
 /** Partes que mostram a lista de pessoas (ou abrem fichas a partir dela). */
-const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'crescimento', 'retencao', 'perfis', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
-const COM_COBRANCAS: Parte[] = ['comando', 'agora', 'financeiro', 'previsao', 'cobrancas']
+const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'financeiro', 'crescimento', 'metas', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
+const COM_COBRANCAS: Parte[] = ['comando', 'agora', 'financeiro', 'metas', 'cobrancas', 'crescimento', 'assinaturas']
 /** Intervalo da lista de pessoas nas telas ao vivo. */
 const TRES_MIN = 180_000
 const AO_VIVO: Parte[] = ['comando', 'agora', 'usuarios']
@@ -56,6 +56,12 @@ export interface DadosPainel {
   testes: number
   usuarios: LinhaUsuario[] | null
   usuariosReais: LinhaUsuario[] | null
+  /** Contas marcadas fora do público-alvo (id → motivo). */
+  foraPublico: Map<string, string | null>
+  foraPublicoSemSql: boolean
+  foraPublicoErro: unknown
+  foraPublicoCarregando: boolean
+  recarregarForaPublico: () => Promise<void>
   sinais: Map<string, SinalUsuario>
   eventos: EventoPagamento[] | null
   resumo: ResumoAdmin | null
@@ -85,6 +91,8 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const conta = sessao?.user.id
   const assinaturasQ = usarRpc<LinhaAssinatura[]>(conta, 'listar_assinaturas_admin')
   const eventosQ = usarRpc<EventoPagamento[]>(conta, 'listar_eventos_pagamento_admin')
+  const decisoesPagamentoQ = usarRpc<Array<{ id_evento: number; decisao: string }>>(conta, 'listar_decisoes_eventos_admin', {}, { ativo: !!eventosQ.dados?.some(e => e.status_processamento === 'erro') })
+  const decisoesPagamento = useMemo(() => { const m = new Map<number,string>(); for (const d of decisoesPagamentoQ.dados ?? []) if (!m.has(d.id_evento)) m.set(d.id_evento,d.decisao); return m }, [decisoesPagamentoQ.dados])
   const resumoQ = usarRpc<ResumoAdmin[]>(conta, 'resumo_admin', {}, { atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const contadoresQ = usarContadoresAdmin(conta)
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
@@ -103,6 +111,10 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   // Uso do Supabase: a mesma consulta da fila (Agora) e da tela Ajustes › Uso do Supabase; aqui só para o botão
   // Atualizar buscar de novo também. Parada nas outras telas.
   const usoSupabaseQ = usarRpc<unknown>(conta, 'uso_supabase_admin', {}, { ativo: parte === 'comando' || parte === 'supabase', validadeMs: 30 * 60_000 })
+  // Fora do público-alvo (Tales, 05/11/2026): a conta continua registrada e na receita, mas sai dos números de
+  // aquisição, ativação, retenção e conversão (usuariosReais). Sem o SQL, a lista vem vazia e nada muda.
+  const foraQ = usarRpc<Array<{ id_usuario: string; motivo: string | null; marcado_em: string }>>(conta, 'listar_fora_publico_admin', {}, { ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: CINCO_MIN })
+  const foraPublico = useMemo(() => new Map((Array.isArray(foraQ.dados) ? foraQ.dados : []).map(f => [f.id_usuario, f.motivo])), [foraQ.dados])
   const cortesias = useMemo(() => new Set(Array.isArray(cortesiasQ.dados) ? cortesiasQ.dados.filter(c => c.tipo !== 'administrador').map(c => c.id_usuario) : []), [cortesiasQ.dados])
 
   // "Online" é refeito a cada 10 s pelo último sinal, sem esperar o servidor.
@@ -111,7 +123,7 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   // Administrador aparece em tudo, mas como não assinante, com o acesso "Cortesia de administrador" (Tales, 03/11/2026):
   // uma compra de teste na conta dele não o faz contar como assinante.
   const usuarios = useMemo(() => usuariosQ.dados?.map(u => ({ ...u, plano_vigente: u.administrador ? null : u.plano_vigente ?? (cortesias.has(u.id_usuario) ? PLANO_CORTESIA : null), online: estaOnline(u, Math.max(tique, usuariosQ.atualizadoEm ?? 0)) })) ?? null, [usuariosQ.dados, usuariosQ.atualizadoEm, tique, cortesias])
-  const usuariosReais = useMemo(() => usuarios?.filter(u => !u.administrador && !contaDeTeste({ nome: u.nome, usuario: u.email })) ?? null, [usuarios])
+  const usuariosReais = useMemo(() => usuarios?.filter(u => !u.administrador && !contaDeTeste({ nome: u.nome, usuario: u.email }) && !foraPublico.has(u.id_usuario)) ?? null, [usuarios, foraPublico])
   const assinaturas = assinaturasQ.dados ?? null
   const reais = useMemo(() => assinaturas?.filter(a => !foraDosNumeros(a)) ?? null, [assinaturas])
   const sinais = useMemo(() => indexarSinais(Array.isArray(sinaisQ.dados) ? sinaisQ.dados : []), [sinaisQ.dados])
@@ -121,7 +133,7 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const [aoVivo, definirAoVivo] = useState<{ valor: number; em: number } | null>(null)
   const registrarPendencias = useCallback((valor: number) => definirAoVivo({ valor, em: Date.now() }), [])
   const pendenciasConteudo = aoVivo && aoVivo.em >= (contadoresQ.atualizadoEm ?? 0) ? aoVivo.valor : contadoresQ.dados?.conteudo ?? null
-  const errosPagamento = eventos?.filter(e => e.status_processamento === 'erro' && !lidosPagamento.lidos.has(String(e.id))).length ?? 0
+  const errosPagamento = eventos?.filter(e => e.status_processamento === 'erro' && !['conciliado','ignorado'].includes(decisoesPagamento.get(e.id) ?? '') && !lidosPagamento.lidos.has(String(e.id))).length ?? 0
 
   const cobrancasCarregando = cobrancasQ.dados === undefined && !cobrancasQ.erro
   const avisoCobrancas = !cobrancasQ.erro ? null : funcaoAusente(cobrancasQ.erro)
@@ -129,13 +141,14 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
     : `As cobranças gravadas não carregaram (código ${codigoDaFalha(cobrancasQ.erro)}). Os valores abaixo saem do preço dos planos e aparecem como estimados.`
 
   const { recarregar: r1 } = assinaturasQ, { recarregar: r2 } = eventosQ, { recarregar: r3 } = resumoQ, { recarregar: r4 } = usuariosQ
-  const { recarregar: r5 } = contadoresQ, { recarregar: r6 } = cobrancasQ, { recarregar: r7 } = sinaisQ, { recarregar: r8 } = cortesiasQ, { recarregar: r9 } = usoSupabaseQ
-  const atualizar = useCallback(async () => { await Promise.all([r1(), r2(), r3(), r4(), r5(), r6(), r7(), r8(), r9()]) }, [r1, r2, r3, r4, r5, r6, r7, r8, r9])
+  const { recarregar: r5 } = contadoresQ, { recarregar: r6 } = cobrancasQ, { recarregar: r7 } = sinaisQ, { recarregar: r8 } = cortesiasQ, { recarregar: r9 } = usoSupabaseQ, { recarregar: r10 } = foraQ
+  const atualizar = useCallback(async () => { await Promise.all([recarregarConsultasAtivas(conta), r1(), r2(), r3(), r4(), r5(), r6(), r7(), r8(), r9(), r10()]) }, [conta, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10])
   const falha = resumoQ.erro ?? usuariosQ.erro
 
   const valor: DadosPainel = {
     conta, parte, assinaturasQ, eventosQ, resumoQ, usuariosQ, cobrancasQ, sinaisQ,
     assinaturas, reais, testes: (assinaturas?.length ?? 0) - (reais?.length ?? 0), usuarios, usuariosReais, sinais, eventos,
+    foraPublico, foraPublicoSemSql: rpcInexistente(foraQ.erro), foraPublicoErro: foraQ.erro, foraPublicoCarregando: foraQ.carregando, recarregarForaPublico: r10,
     resumo: resumoQ.dados?.[0] ?? null,
     cobrancas: cobrancasQ.erro ? null : cobrancasQ.dados ?? null, cobrancasCarregando, avisoCobrancas,
     online: usuarios ? usuarios.filter(u => u.online).length : contadoresQ.dados?.online ?? resumoQ.dados?.[0]?.online_agora ?? null,

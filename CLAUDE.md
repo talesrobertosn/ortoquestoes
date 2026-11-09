@@ -1,5 +1,7 @@
 # Orientação permanente para Claude
 
+**Autonomia total para publicar (Tales, 04/11/2026):** toda alteração pode ser publicada sem pedir autorização: rodar os checks, abrir o PR, marcar como pronto e juntar (merge) assim que o CI ficar verde. Só parar para perguntar se o Tales disser o contrário naquele pedido. Não esperar nem depender da revisão do Codex (bot `chatgpt-codex-connector`): os comentários dele não bloqueiam a publicação.
+
 Leia [AGENTS.md](AGENTS.md).
 
 **Prioridade (Tales, 30/10/2026):** refazer os resumos e comentários curtos dos ciclos 3 a 20, conforme [docs/biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md](docs/biblioteca/REFAZER-RESUMOS-E-COMENTARIOS.md). Resumo com no mínimo 45 KB; comentário em miniaula com tamanho proporcional à questão, sem molde fixo e sem parágrafos copiados entre questões (Tales, 31/10/2026: "seja humano, seja flexível"; regras na seção "Professor humano, não molde" do padrão editorial). "Por que esta questão foi criada" só nos OrtoQuestões Simulados; "Na prova" só quando fizer sentido. Meça com `scripts/biblioteca/medir_profundidade.py` antes de publicar. Todo trabalho de comentários segue
@@ -33,6 +35,8 @@ e o andamento em [docs/mao/PROGRESSO.md](docs/mao/PROGRESSO.md). Comando para co
 [docs/prompts/claude-mao-provas.md](docs/prompts/claude-mao-provas.md). Livros, resumos enviados e provas originais nunca vão para o git. Só SBCM e SIMÃO viram OrtoQuestões Simulados; as outras bancas (ABC, Unesp etc.) entram com o nome real, conferindo antes se já estão no site.
 
 ## Arsenal de marketing aprovado
+**Padrão oficial de posts de questão (Tales, 09/11/2026):** antes de qualquer post, leia [marketing/instagram/estilos/PADRAO-AULA.md](marketing/instagram/estilos/PADRAO-AULA.md): aula que ensina do zero (sem citar R1), texto na medida e nunca slide só de palavras, imagens da questão e do comentário, livro e página em cada explicação, temática que ajuda a entender, no máximo 4 stories. Referência: `marketing/instagram/posts/2026-11-09-reimers-var/`. Os estilos abaixo viram moldura dessa aula.
+
 Para posts, leia [docs/marketing/orientacoes.md](docs/marketing/orientacoes.md). Tales aprovou em 11/10/2026 os modelos **Cofre de duas chaves** (feed) e **Mecânica fina / Relojoaria anatômica** (stories, versão final de mão). Veja [o guia de reutilização](marketing/instagram/estilos/COFRE-E-MECANICA-FINA.md): quando escolher cada um, roteiro, acabamento, HTMLs executáveis e revisão. São opções criativas do arsenal; adapte à questão, sem repetir mecanicamente ou substituir os outros estilos.
 
 Em 12/10/2026, Tales também aprovou a **Tabela de Snellen** (feed de questão em que a linha miúda decide) e o **Cupom fiscal** (stories: primeiro uma questão com a resposta, depois uma propaganda leve e sem preço; a variante com preço só a pedido). Veja [o guia](marketing/instagram/estilos/SNELLEN-E-CUPOM.md).

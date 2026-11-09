@@ -5,8 +5,9 @@ import { defParte } from '../rotas'
 import { Icone } from '../ui/Icone'
 import { Busca, Cabeca, Estado, Faixa, Filtro, Selo } from '../ui/kit'
 import { PreviaCarta } from './cartas-comum'
+import { ConfiguracaoEmails } from './Envios'
 
-const PLANO_REPO = 'https://github.com/talesrobertosn/ortoquestoes/blob/main/docs/emails/PLANO.md'
+const PLANO_REPO = 'https://github.com/talesrobertosn/ortoquestoes/blob/HEAD/docs/emails/HUB.md'
 
 /**
  * Comunicação › Catálogo de cartas: todos os tipos de carta, com amostra escrita na hora pelo mesmo motor da
@@ -31,8 +32,16 @@ export default function Catalogo() {
   const am = atual ? amostras[atual.id] : null
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="E-mails" titulo={parte.rotulo} pergunta={`${modelos.length} modelos (${Object.keys(TIPOS).length} tipos, a carta de estudo aberta nas 9 faixas) e ${totalVersoes} versões escritas à mão. Nada sai daqui: é para ler, conferir o tom e sortear versões.`}
-      acoes={<a className="a3-botao a3-botao--contorno" href={PLANO_REPO} target="_blank" rel="noreferrer"><Icone nome="externo" tamanho={15} />Plano dos e-mails</a>} />
+    <Cabeca area="E-mails" titulo={parte.rotulo} pergunta={`${modelos.length} modelos (${Object.keys(TIPOS).length - 1} tipos, a carta de estudo aberta nas 9 faixas) e ${totalVersoes} versões escritas à mão. Nada sai daqui: é para ler, conferir o tom e sortear versões.`}
+      acoes={<a className="a3-botao a3-botao--contorno" href={PLANO_REPO} target="_blank" rel="noreferrer"><Icone nome="externo" tamanho={15} />Como funciona a central</a>} />
+    <section className="a3-painel" style={{ padding: 24 }}>
+      <h2 className="a3-titulo-2">Como a rodada é escolhida</h2>
+      <p>Uma mensagem por pessoa. Assuntos com prazo vêm primeiro, seguidos de relatórios, ajuda para usar o plano, acompanhamento do estudo e convites.</p>
+      <p className="a3-mudo">O servidor confere a preferência da categoria, o aceite de novidades quando necessário, 48 horas entre contatos e no máximo três em 14 dias. Mensagens com a mesma intenção — como retomar o estudo — compartilham uma espera de 30 dias.</p>
+      <p className="a3-mudo">Relatórios não esperam a cadência, mas contam para as próximas cartas. Avisos operacionais, como o Pix que termina hoje, têm exceção de frequência. Nenhuma exceção ignora o descadastro.</p>
+      <p className="a3-mudo">As referências a horários, temas, sequência e rotina usam dados reais do estudo. Você pode revisar e ajustar a mensagem antes de iniciar a rodada.</p>
+    </section>
+    <ConfiguracaoEmails />
     <div className="a3-catalogo">
       <section className="a3-painel a3-catalogo__lista" aria-label="Modelos">
         <div className="a3-filtros"><Busca valor={busca} aoMudar={definirBusca} rotulo="Buscar tipo, gatilho ou texto" /></div>
@@ -53,7 +62,7 @@ export default function Catalogo() {
         <div className="a3-pilha" style={{ padding: 20 }}>
           <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
             <Selo contorno>{GRUPOS.find(g => g.id === atual.grupo)?.rotulo}</Selo>
-            {atual.transacional && <span title="Sai mesmo dentro do teto de cadência e para quem desligou as cartas: é resposta a algo que a pessoa fez."><Selo tom="aviso">Transacional</Selo></span>}
+            {atual.transacional && <span title="Não espera o teto de cadência, mas continua respeitando a preferência de e-mail da categoria."><Selo tom="aviso">Transacional</Selo></span>}
             <Selo tom="ok">{atual.versoes} {atual.versoes === 1 ? 'versão' : 'versões'}</Selo>
           </div>
           <h2 className="a3-titulo-2">{atual.rotulo}</h2>

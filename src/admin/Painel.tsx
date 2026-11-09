@@ -14,11 +14,13 @@ import { HospedeAvisos, HospedeConfirmar, Paleta, type ItemPaleta } from './ui/s
 import './admin.css'
 import './modulos.css'
 import './cores.css'
+import './modulos/negocio.css'
 
 const Inicio = lazy(() => import('./modulos/Inicio'))
 const Explorador = lazy(() => import('./modulos/Explorador'))
-const Analise = lazy(() => import('./modulos/Analise'))
+const Crescimento = lazy(() => import('./modulos/Crescimento'))
 const Receita = lazy(() => import('./modulos/Receita'))
+const Metas = lazy(() => import('./modulos/Metas'))
 const Assinaturas = lazy(() => import('./modulos/Assinaturas'))
 const Cobrancas = lazy(() => import('./modulos/Cobrancas'))
 const Avisos = lazy(() => import('./modulos/Avisos'))
@@ -26,8 +28,7 @@ const Triagem = lazy(() => import('./modulos/Triagem'))
 const Editor = lazy(() => import('./modulos/Editor'))
 const Simulados = lazy(() => import('./modulos/Simulados'))
 const Opinioes = lazy(() => import('./modulos/Opinioes'))
-const Campanhas = lazy(() => import('./modulos/Campanhas'))
-const Cartas = lazy(() => import('./modulos/Cartas'))
+const HubEmails = lazy(() => import('./modulos/HubEmails'))
 const Envios = lazy(() => import('./modulos/Envios'))
 const Catalogo = lazy(() => import('./modulos/Catalogo'))
 const Ajustes = lazy(() => import('./modulos/Ajustes'))
@@ -40,8 +41,9 @@ function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
   switch (parte) {
     case 'comando': case 'pendencias': case 'agora': return <Inicio />
     case 'usuarios': return <Explorador />
-    case 'crescimento': case 'retencao': case 'perfis': return <Analise />
-    case 'financeiro': case 'previsao': return <Receita />
+    case 'crescimento': return <Crescimento />
+    case 'financeiro': return <Receita />
+    case 'metas': return <Metas />
     case 'assinaturas': return <Assinaturas />
     case 'cobrancas': return <Cobrancas />
     case 'pagamentos': return <Avisos />
@@ -49,8 +51,7 @@ function Modulo({ parte, sub }: { parte: Parte; sub: Parte }) {
     case 'questoes': return <Editor />
     case 'simulados': return <Simulados />
     case 'opinioes': return <Opinioes />
-    case 'lembretes': return <Campanhas />
-    case 'cartas': return <Cartas />
+    case 'prontas': case 'lembretes': case 'cartas': return <HubEmails />
     case 'envios': return <Envios />
     case 'todas': return <Catalogo />
     case 'ajustes': case 'aviso': return sub === 'aviso' ? <AvisoTopo /> : <Ajustes />
@@ -81,6 +82,7 @@ export function PainelAdmin({ consulta }: { consulta: URLSearchParams }) {
 function Casca({ estado }: { estado: EstadoUrl }) {
   const p = usarPainel()
   const { alternar } = usarTema()
+  const atualizarPainel = () => { if (estado.parte === 'prontas') window.dispatchEvent(new Event('oq:hub:atualizar')); void p.atualizar() }
   const area = areaDe(estado.parte)
   const parte = defParte(estado.parte)
   const [pessoa, definirPessoa] = useState<{ id: string; aba?: AbaFicha } | null>(null)
@@ -128,7 +130,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
 
   const itensPaleta: ItemPaleta[] = useMemo(() => [
     ...AREAS.flatMap(a => a.partes.map(x => ({ id: `parte-${x.id}`, grupo: 'Ir para', titulo: x.rotulo, detalhe: a.rotulo, icone: a.icone, palavras: `${x.pergunta} ${x.antes ?? ''}`, executar: () => nav.ir(x.id) }))),
-    { id: 'acao-atualizar', grupo: 'Ações', titulo: 'Atualizar os dados do painel', icone: 'atualizar' as const, executar: () => void p.atualizar() },
+    { id: 'acao-atualizar', grupo: 'Ações', titulo: 'Atualizar os dados do painel', icone: 'atualizar' as const, executar: atualizarPainel },
     { id: 'acao-tema', grupo: 'Ações', titulo: 'Trocar entre claro e escuro', icone: 'lua' as const, executar: alternar },
     { id: 'acao-online', grupo: 'Ações', titulo: 'Ver quem está online', icone: 'pessoas' as const, executar: () => nav.ir('usuarios', { filtro: 'online' }) },
     { id: 'acao-parados', grupo: 'Ações', titulo: 'Novos que pararam de estudar', icone: 'pessoas' as const, executar: () => nav.ir('usuarios', { filtro: 'novos_parados' }) },
@@ -175,7 +177,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
   </nav>
 
   const conteudo: ReactNode = p.erroAcesso && !p.assinaturas
-    ? <Estado tipo="erro" icone="trava" titulo={/negado/i.test(p.erroAcesso) ? 'Acesso negado' : 'O painel não carregou'} texto={p.erroAcesso} acao={<button type="button" className="a3-botao a3-botao--contorno" onClick={() => void p.atualizar()}>Tentar de novo</button>} />
+    ? <Estado tipo="erro" icone="trava" titulo={/negado/i.test(p.erroAcesso) ? 'Acesso negado' : 'O painel não carregou'} texto={p.erroAcesso} acao={<button type="button" className="a3-botao a3-botao--contorno" onClick={atualizarPainel}>Tentar de novo</button>} />
     : !p.assinaturas ? <Carregando linhas={6} texto="Verificando o acesso e carregando o painel…" />
     : <Suspense fallback={<Carregando linhas={6} />}><Modulo parte={estado.parte} sub={estado.sub} /></Suspense>
 
@@ -203,7 +205,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
             <img src={recurso('marca/simbolo.svg')} alt="" width={26} height={26} style={{ borderRadius: 7 }} />
             <div className="a3-movel-topo__titulo"><small>{defArea(area).partes.length > 1 ? defArea(area).rotulo : 'Painel'}</small><b>{parte.rotulo}</b></div>
             <button type="button" className="a3-botao a3-botao--fantasma a3-botao--icone" onClick={() => definirPaleta(true)} aria-label="Buscar no painel"><Icone nome="busca" /></button>
-            <button type="button" className="a3-botao a3-botao--fantasma a3-botao--icone" onClick={() => void p.atualizar()} aria-label="Atualizar os dados" aria-busy={p.atualizando} disabled={p.atualizando}><Icone nome="atualizar" /></button>
+            <button type="button" className="a3-botao a3-botao--fantasma a3-botao--icone" onClick={atualizarPainel} aria-label="Atualizar os dados" aria-busy={p.atualizando} disabled={p.atualizando}><Icone nome="atualizar" /></button>
           </header>
           {defArea(area).partes.length > 1 && <nav className="a3-movel-partes" aria-label={`Partes de ${defArea(area).rotulo}`}>
             {defArea(area).partes.map(x => <a key={x.id} href={nav.link(x.id)} aria-current={x.id === estado.parte ? 'page' : undefined} onClick={clique(x.id)}>
@@ -219,7 +221,7 @@ function Casca({ estado }: { estado: EstadoUrl }) {
             </nav>
             <div className="a3-topo__acoes">
               <span className="a3-mudo a3-pequeno" aria-live="polite">{p.atualizando ? 'Atualizando…' : p.atualizadoEm ? `Atualizado às ${horario(p.atualizadoEm)}` : ''}</span>
-              <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => void p.atualizar()} disabled={p.atualizando} aria-busy={p.atualizando}><Icone nome="atualizar" tamanho={14} />Atualizar</button>
+              <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={atualizarPainel} disabled={p.atualizando} aria-busy={p.atualizando}><Icone nome="atualizar" tamanho={14} />Atualizar</button>
               <a className="a3-botao a3-botao--contorno a3-botao--pequeno" href={nav.link('exportar')} onClick={clique('exportar')}><Icone nome="baixar" tamanho={14} />Exportar</a>
             </div>
           </header>

@@ -11,6 +11,7 @@ import { Icone } from '../ui/Icone'
 import { combina, data, haQuanto, iniciais, inteiro, normalizar, reais } from '../ui/formato'
 import { Busca, Cabeca, Carregando, Estado, FiltrosAtivos, Selo } from '../ui/kit'
 import { Tabela, type Coluna } from '../ui/tabela'
+import { RiscoAbandono } from './riscoAbandono'
 
 type Grupo = GrupoAssinatura
 type Recorte = 'tudo' | '7' | '30' | '90' | '365'
@@ -111,6 +112,8 @@ export default function Assinaturas() {
         <span className="a3-aba-grande__numero">{inteiro(contagem[g])}</span><span>{rotulo}</span>
       </button>)}
     </div>
+
+    {grupo === 'vigentes' && <RiscoAbandono />}
 
     <section className="a3-painel" aria-label="Lista de assinaturas">
       <div className="a3-filtros">

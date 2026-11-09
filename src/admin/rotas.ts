@@ -8,13 +8,13 @@
  */
 import type { NomeIconeAdmin } from './ui/Icone'
 
-export type Area = 'comando' | 'pessoas' | 'crescimento' | 'estudo' | 'receita' | 'comunicacao' | 'configuracoes'
+export type Area = 'comando' | 'pessoas' | 'crescimento' | 'assinantes' | 'estudo' | 'receita' | 'comunicacao' | 'configuracoes'
 export type Parte =
   | 'comando' | 'agora' | 'pendencias'
-  | 'usuarios' | 'crescimento' | 'retencao' | 'perfis'
+  | 'usuarios' | 'crescimento'
   | 'conteudo' | 'questoes' | 'simulados' | 'opinioes'
-  | 'financeiro' | 'previsao' | 'assinaturas' | 'cobrancas' | 'pagamentos'
-  | 'lembretes' | 'cartas' | 'envios' | 'todas'
+  | 'financeiro' | 'metas' | 'assinaturas' | 'cobrancas' | 'pagamentos'
+  | 'prontas' | 'lembretes' | 'cartas' | 'envios' | 'todas'
   | 'ajustes' | 'aviso' | 'exportar' | 'supabase'
 
 /** Filtros do Explorador de pessoas (os mesmos do painel anterior, para os links continuarem). */
@@ -39,15 +39,17 @@ export const AREAS: DefArea[] = [
   { id: 'pessoas', rotulo: 'Pessoas', curto: 'Pessoas', icone: 'pessoas', partes: [
     { id: 'usuarios', rotulo: 'Usuários', pergunta: 'Encontrar uma pessoa ou um grupo, entender o que fazem e agir por eles.' },
   ] },
-  // Crescimento ganhou área própria (Tales, 02/11/2026: "tem muita coisa importante e muito escondido").
+  // Crescimento numa página só, que se lê rolando (Tales, 04/11/2026: "transforma tudo do crescer em uma página só").
   { id: 'crescimento', rotulo: 'Crescimento', curto: 'Crescer', icone: 'grafico', partes: [
-    { id: 'crescimento', rotulo: 'Aquisição e funil', pergunta: 'Quantos chegam, quantos começam a estudar e onde o funil perde gente.' },
-    { id: 'retencao', rotulo: 'Retenção e ritmo', pergunta: 'Quem volta depois da primeira semana e em que dias e horários o site vive.' },
-    { id: 'perfis', rotulo: 'Perfis e origem', pergunta: 'Quem estuda aqui (etapa, prova, estado, serviço) e de onde vêm os cadastros.' },
+    { id: 'crescimento', rotulo: 'Crescimento', pergunta: 'Quantos chegam e quantos assinam, por dia, semana e mês; quando, de onde, quem fica e quem são.', antes: 'Aquisição funil retenção ritmo perfis origem indicações' },
+  ] },
+  // Assinantes não é finanças (Tales, 04/11/2026): área própria.
+  { id: 'assinantes', rotulo: 'Assinantes', curto: 'Assinantes', icone: 'estrela', partes: [
+    { id: 'assinaturas', rotulo: 'Assinantes', pergunta: 'Quem tem acesso pago, por qual plano e meio, e até quando.', antes: 'Assinaturas' },
   ] },
   { id: 'receita', rotulo: 'Financeiro', curto: 'Finanças', icone: 'receita', partes: [
-    { id: 'financeiro', rotulo: 'Resumo', pergunta: 'Quanto entrou, quanto deve entrar e de onde vem.', antes: 'Ganhos receita' },
-    { id: 'assinaturas', antes: 'Assinaturas', rotulo: 'Assinantes', pergunta: 'Quem tem acesso pago, por qual plano e meio, e até quando.' },
+    { id: 'financeiro', rotulo: 'Resumo', pergunta: 'Quanto entrou, quanto entra por mês com quem assina hoje e quando cada plano renova.', antes: 'Ganhos receita previsão cenários' },
+    { id: 'metas', rotulo: 'Metas', pergunta: 'O cenário moderado como referência: progresso do mês, projeção, ritmo semanal e meta × real mês a mês.', antes: 'Metas objetivos planejamento cenário moderado projeção' },
     { id: 'cobrancas', rotulo: 'Extrato', pergunta: 'Cada pagamento recebido, estimado ou reembolsado, dia a dia.', antes: 'Pagamentos cobranças' },
     { id: 'pagamentos', rotulo: 'Avisos do Mercado Pago', pergunta: 'As mensagens automáticas que o Mercado Pago manda ao site. Só as que falharam pedem você.', antes: 'Avisos de pagamento processador' },
   ] },
@@ -58,10 +60,9 @@ export const AREAS: DefArea[] = [
     { id: 'opinioes', rotulo: 'Opiniões dos flashcards', pergunta: 'O que as pessoas dizem do som, do visual, do desempenho e do conteúdo.' },
   ] },
   { id: 'comunicacao', rotulo: 'E-mails', curto: 'E-mails', icone: 'carta', partes: [
-    { id: 'lembretes', rotulo: 'Lembretes', pergunta: 'O que está pendente para enviar: tudo de uma vez ou campanha por campanha.' },
-    { id: 'cartas', rotulo: 'Cartas pessoais', pergunta: 'Uma carta escrita para cada pessoa de um grupo, com prévia e revisão.' },
-    { id: 'envios', rotulo: 'Enviados', pergunta: 'Tudo o que já saiu, o relatório mensal e os e-mails automáticos.', antes: 'Relatórios e histórico' },
-    { id: 'todas', rotulo: 'Modelos', pergunta: 'Todos os modelos de carta do site, com amostra, variações e prévia. Nada sai daqui.', antes: 'Todas as cartas' },
+    { id: 'prontas', rotulo: 'Hoje', pergunta: 'Uma rodada diária, uma mensagem por pessoa, com todas as regras conferidas no servidor.', antes: 'Central hub e-mails lembretes cartas prontas' },
+    { id: 'envios', rotulo: 'Histórico', pergunta: 'Tudo o que já saiu, o relatório mensal e os e-mails automáticos.', antes: 'Relatórios e histórico' },
+    { id: 'todas', rotulo: 'Modelos e regras', pergunta: 'Todos os modelos de carta do site, com amostra, variações e prévia. Nada sai daqui.', antes: 'Todas as cartas' },
   ] },
   { id: 'configuracoes', rotulo: 'Ajustes', curto: 'Ajustes', icone: 'ajustes', partes: [
     { id: 'ajustes', rotulo: 'Ajustes', pergunta: 'Limite gratuito, recursos pagos, pagamentos e o aviso no topo do site.' },
@@ -72,10 +73,6 @@ export const AREAS: DefArea[] = [
 
 /** Abas dentro de uma tela: a primeira é a padrão. O nome e a pergunta de cada aba ficam aqui. */
 const ABAS_DE: Partial<Record<Parte, DefParte[]>> = {
-  financeiro: [
-    { id: 'financeiro', rotulo: 'Recebido', pergunta: 'Quanto entrou de fato, como se compõe e como se compara.' },
-    { id: 'previsao', rotulo: 'Previsão', pergunta: 'O que deve entrar, com as hipóteses à vista; nunca somado ao que já entrou.' },
-  ],
   ajustes: [
     { id: 'ajustes', rotulo: 'Acesso e pagamentos', pergunta: 'Limite gratuito, recursos pagos e pagamentos: o que vale agora e o efeito de mudar.' },
     { id: 'aviso', rotulo: 'Aviso no topo do site', pergunta: 'A faixa que todo mundo vê: o que está no ar, prévia e publicação.' },
@@ -101,10 +98,10 @@ export const partePadrao = (area: Area): Parte => defArea(area).partes[0].id
  */
 const LEGADO: Record<string, Parte> = {
   geral: 'comando', hoje: 'comando', agora: 'comando', pendencias: 'comando',
-  previsao: 'financeiro', aviso: 'ajustes',
+  previsao: 'financeiro', aviso: 'ajustes', retencao: 'crescimento', perfis: 'crescimento', assinantes: 'assinaturas',
   configuracoes: 'ajustes', avisos: 'pagamentos', receita: 'financeiro', pessoas: 'usuarios',
   avaliacoes: 'conteudo', relatos: 'conteudo',
-  operacoes: 'lembretes', emails: 'lembretes', comunicacao: 'lembretes',
+  operacoes: 'prontas', emails: 'prontas', comunicacao: 'prontas', lembretes: 'prontas', cartas: 'prontas',
   estudo: 'conteudo', mensal: 'envios', relatorios: 'envios', historico: 'envios',
 }
 
@@ -115,7 +112,7 @@ export const PERIODO_PADRAO: Periodo = 30
 export const periodoPadrao = (parte: Parte): Periodo => parte === 'crescimento' ? 0 : PERIODO_PADRAO
 const periodoValido = (parte: Parte, n: number): n is Periodo => (parte === 'crescimento' ? PERIODOS_CRESCIMENTO : PERIODOS).includes(n as Periodo)
 export const rotuloPeriodo = (n: Periodo) => n === 0 ? 'Desde sempre' : `${n} dias`
-const COM_PERIODO = new Set<Parte>(['comando', 'crescimento', 'retencao', 'financeiro'])
+const COM_PERIODO = new Set<Parte>(['comando', 'crescimento', 'financeiro'])
 export type GrupoAssinatura = 'vigentes' | 'pendente' | 'falha_pagamento' | 'encerradas' | 'todas'
 const GRUPOS: GrupoAssinatura[] = ['vigentes', 'pendente', 'falha_pagamento', 'encerradas', 'todas']
 const FILTROS: FiltroPessoas[] = ['todos', 'online', 'hoje', 'ativos', 'novos', 'novos_parados', 'assinantes', 'parados', 'planos']
@@ -136,10 +133,7 @@ export function lerUrl(consulta: URLSearchParams): EstadoUrl {
   const vistaLegada = bruta === 'avaliacoes' || bruta === 'relatos' ? bruta : null
   const id = consulta.get('id')
   const periodoBruto = consulta.get('periodo')
-  let parte: Parte = PARTES.has(bruta as Parte) ? bruta as Parte : LEGADO[bruta] ?? 'comando'
-  // Crescimento já foi tela com abas (?aba=crescimento&sub=retencao); essas abas hoje são itens próprios do menu.
-  const subAntiga = consulta.get('sub')
-  if (parte === 'crescimento' && (subAntiga === 'retencao' || subAntiga === 'perfis')) parte = subAntiga
+  const parte: Parte = PARTES.has(bruta as Parte) ? bruta as Parte : LEGADO[bruta] ?? 'comando'
   // A aba vem de ?sub=… ou do endereço antigo que apontava direto para ela (?aba=previsao, retencao, aviso…).
   const abas = abasDe(parte).map(a => a.id)
   const sub = [consulta.get('sub'), bruta].find(x => abas.includes(x as Parte)) as Parte | undefined

@@ -24,7 +24,6 @@ Todas as cartas saem só em texto, na voz de um amigo que entende a rotina de qu
 | Começou e parou | 6 | 396 textos e 7 assuntos diferentes em 400 sorteios |
 | Pausa curta (3 a 6 dias) | 5 | 391 textos e 6 assuntos diferentes em 400 sorteios |
 | Sumiu | 6 | 391 textos e 10 assuntos diferentes em 400 sorteios |
-| Obrigado pela assinatura | 6 | 388 textos e 5 assuntos diferentes em 400 sorteios |
 | Convite para assinar (mais de 20 questões) | 7 | 389 textos e 9 assuntos diferentes em 400 sorteios |
 | Convite pessoal (mais de 50 questões) | 7 | 387 textos e 9 assuntos diferentes em 400 sorteios |
 | Reta final | 6 | 389 textos e 8 assuntos diferentes em 400 sorteios |
@@ -105,7 +104,6 @@ Cinco questões no ônibus, cinco no café, cinco antes de dormir. No fim da sem
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: toma um café por mim antes da próxima sessão.
 ```
 
 ### Faixa 20 a 30%: Diego Farias
@@ -118,7 +116,7 @@ P.S.: toma um café por mim antes da próxima sessão.
 ```text
 Olá, Diego, tudo bem?
 
-Reparei que você estuda até de madrugada. Peço com carinho: lembre que o sono também é estudo.
+Reparei que você estuda até de madrugada.
 
 Só para dizer que eu vi o seu esforço: 290 questões já respondidas. Isso é muita dedicação para quem tem o dia tomado.
 
@@ -133,7 +131,6 @@ Se não for a hora, tudo bem também. Eu continuo por aqui.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: toma um café por mim antes da próxima sessão.
 ```
 
 ### Faixa 30 a 40%: Marina Teles
@@ -159,7 +156,6 @@ Cinco questões no ônibus, cinco no café, cinco antes de dormir. No fim da sem
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: toma um café por mim antes da próxima sessão.
 ```
 
 ### Faixa na média (40 a 60%): Rafael Couto
@@ -293,7 +289,6 @@ Gosto muito de ver gente estudando sem prova marcada, só pelo prazer de se mant
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: cuida do sono. Ele conta como estudo, e ninguém avisa isso na residência.
 ```
 
 ## Situações
@@ -371,7 +366,6 @@ Trinta minutos num horário fixo valem mais que duas horas espalhadas pelo fim d
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: cuida do sono. Ele conta como estudo, e ninguém avisa isso na residência.
 ```
 
 ### Começou e parou
@@ -424,29 +418,7 @@ Tales, do Orto Questões
 P.S.: errar aqui é barato. É na prova que custa. Aproveita que aqui é treino.
 ```
 
-### Obrigado pela assinatura
-
-Fernanda acabou de assinar.
-
-**Assunto:** Fernanda, obrigado, e uma coisa que reparei  
-*Versão obrigado_assinatura#v5 · personalizada com: prova de interesse, ritmo da semana*
-
-```text
-Fernanda, tudo bem por aí?
-
-Obrigado por assinar o Orto Questões. Quis te escrever pessoalmente.
-
-Passei para te escrever num intervalo meu, imaginando que você também lê isso num intervalo seu. Vi que o TEOT está no seu horizonte, e fico na torcida. Vi as 35 questões desta última semana, e fiquei feliz.
-
-Se quiser aproveitar desde já, eu começaria pelo cronograma: você coloca a data do TEOT e ele monta a lista de cada dia, começando pelo que mais cai. É o que mais devolve tempo. Fica aqui: ortoquestoes.com.br/#/cronograma
-
-Mas, antes de tudo, obrigado.
-
-Um abraço,
-Tales, do Orto Questões
-
-P.S.: se quiser me contar como está sendo a rotina, é só responder. Gosto de saber.
-```
+> Modelo manual de agradecimento aposentado em 08/11/2026. O agradecimento permanece no automático `pagamento_aprovado`.
 
 ### Convite (mais de 20 questões)
 
@@ -532,19 +504,19 @@ P.S.: se tiver um colega estudando para a mesma prova, estudar junto deixa tudo 
 
 Pedro, R3, TEOT a 87 dias.
 
-**Assunto:** Pedro, dormir também é estudar  
+**Assunto:** Pedro, revisar as questões anteriores
 *Versão reta_final#v5 · personalizada com: dias para a prova*
 
 ```text
 Olá, Pedro, tudo bem?
 
-Faltam 87 dias para o TEOT. Um lembrete que ninguém costuma dar nessa fase: dormir também é estudar.
+Faltam 87 dias para o TEOT. Vale reservar parte do estudo para revisar os erros anteriores.
 
-A memória se consolida no sono. Então, nestas últimas semanas, vale preferir menos horas bem dormidas a madrugadas de questão.
+Uma sessão curta pode servir para reler os comentários das questões que você errou e entender o detalhe que mudou a resposta.
 
 Vi no seu cronograma que faltam 87 dias para o TEOT. Dá tempo de muita coisa, ainda mais com a lista de cada dia já pronta.
 
-Você já fez muito. Agora é chegar com a cabeça descansada, que é ela que acerta o detalhe no dia.
+Na próxima sessão, tente responder essas questões de novo antes de abrir o comentário.
 
 Se não for a hora, tudo bem também. Eu continuo por aqui.
 
@@ -627,7 +599,6 @@ Estou torcendo por você.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: toma um café por mim antes da próxima sessão.
 ```
 
 ### Apresentar o cronograma
@@ -651,7 +622,6 @@ Fico feliz de acompanhar o seu caminho.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: toma um café por mim antes da próxima sessão.
 ```
 
 ## Automáticos (em forma de carta)
@@ -700,7 +670,6 @@ Isso muda o jeito de estudar: uma questão bem lida vale por quatro, e cabe em d
 
 Que tal ver como funciona com uma questão só? ortoquestoes.com.br/#/treinar
 
-Vai dar certo. E eu estou por aqui.
 
 Um abraço,
 Tales, do Orto Questões
@@ -759,7 +728,6 @@ Bons estudos por aí, e cuide-se.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: não precisa responder, mas se responder eu fico feliz.
 
 --
 
@@ -788,8 +756,6 @@ Se tiver qualquer dúvida sobre o pagamento, me responde aqui.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: dormir bem na véspera de um dia cheio também é estudar. Eu demorei a aprender isso.
-
 --
 
 Se preferir não receber mais lembretes de estudo: https://ortoquestoes.com.br/#/emails?u=…&t=…
@@ -817,7 +783,6 @@ Se não for a hora, tudo bem também. Eu continuo por aqui.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: cuida do sono. Ele conta como estudo, e ninguém avisa isso na residência.
 
 --
 
@@ -870,7 +835,6 @@ Para voltar sem peso: não tente recuperar o tempo. Dez questões e a Revisão d
 
 A Revisão fica aqui: ortoquestoes.com.br/#/revisao
 
-Vai dar certo. E eu estou por aqui.
 
 Um abraço,
 Tales, do Orto Questões
@@ -989,7 +953,6 @@ O tempo que a gente mais perde não é estudando, é decidindo o que estudar. De
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: toma um café por mim antes da próxima sessão.
 
 --
 
@@ -1215,7 +1178,7 @@ Se quiser me contar como foi a experiência, é só responder. Cada resposta aju
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: 21 dias seguidos de estudo. Que constância bonita.
+P.S.: 21 dias seguidos de estudo.
 
 --
 
@@ -1296,7 +1259,7 @@ Feliz aniversário.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: 21 dias seguidos de estudo. Que constância bonita.
+P.S.: 21 dias seguidos de estudo.
 
 --
 
@@ -1354,7 +1317,7 @@ Se não for a hora, tudo bem também. Eu continuo por aqui.
 Um abraço,
 Tales, do Orto Questões
 
-P.S.: 5 dias seguidos de estudo. Que constância bonita.
+P.S.: 5 dias seguidos de estudo.
 
 --
 
