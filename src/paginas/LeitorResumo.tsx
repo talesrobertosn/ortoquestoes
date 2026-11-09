@@ -16,10 +16,9 @@ import { usarPremium } from '../conta/premium'
 import { ConvitePremium } from '../componentes/Premium'
 import { usarSessao } from '../estado/sessao'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
-import { usarConta } from '../conta/ContextoConta'
 import { contasDisponiveis } from '../conta/supabase'
-import { calcularPorta, linkDaPorta, SECOES_ABERTAS } from '../biblioteca/porta'
-import { PortaLeitura } from '../biblioteca/PortaLeitura'
+import { blocosAbertos, calcularPorta } from '../biblioteca/porta'
+import { FimDaPrevia, PortaLeitura } from '../biblioteca/PortaLeitura'
 import { usarSemCopia } from '../biblioteca/semCopia'
 import { flashcardsDosSubtemas, linkFlashcards, usarAreasDosFlashcards } from '../biblioteca/ligacoes'
 import { PrateleiraVazia } from '../biblioteca/salao/PrateleiraVazia'
@@ -63,6 +62,10 @@ export function LeitorResumo({ id, consulta }: { id: string; consulta: URLSearch
   const acesso = usarPremium()
   const [capitulo, definirCapitulo] = useState<Capitulo | null | undefined>(undefined)
   const [falhou, definirFalhou] = useState(false)
+  // Conta que ainda não sabe se assina (primeira vez neste aparelho): espera um pouco a resposta, para o assinante
+  // não ver a prévia piscar; sem resposta (rede ruim), abre a prévia e a paywall diz "Conferindo a sua assinatura".
+  const [semEspera, definirSemEspera] = useState(false)
+  useEffect(() => { const t = window.setTimeout(() => definirSemEspera(true), 4000); return () => window.clearTimeout(t) }, [])
   useEffect(() => {
     let vivo = true
     definirCapitulo(undefined); definirFalhou(false)
@@ -72,7 +75,8 @@ export function LeitorResumo({ id, consulta }: { id: string; consulta: URLSearch
   if (falhou) return <Estado titulo="Não foi possível abrir o resumo." acoes={<button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button>}><p>Confira a conexão.</p></Estado>
   if (capitulo === undefined) return <Carregando linhas={8} rotulo="Abrindo o resumo" />
   if (capitulo === null) return <Estado titulo="Resumo não encontrado." acoes={<a className="botao botao--principal" href={href('/resumos')}>Ver a biblioteca</a>}><PrateleiraVazia /><p>Este capítulo ainda não foi escrito, ou o endereço mudou.</p></Estado>
-  // Desde 16/10/2026 todos os resumos são abertos (acesso: gratis); o portão fica para um resumo marcado como assinante.
+  // acesso: gratis abre a prévia para quem não assina (paywall no Leitor); assinante fecha o resumo inteiro (hoje nenhum).
+  if (acesso.logado && !acesso.carregado && !semEspera) return <Carregando linhas={8} rotulo="Abrindo o resumo" />
   if (capitulo.acesso !== 'gratis' && !acesso.premium) {
     if (acesso.logado && !acesso.carregado) return <Carregando linhas={6} rotulo="Conferindo o acesso" />
     return <ResumoFechado capitulo={capitulo} />
@@ -107,10 +111,16 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   const { indice } = usarIndice()
   // Resumos abertos para todos (pedido do Tales, 16/10/2026); resolver as questões citadas é do assinante.
   const { premium } = usarPremium()
-  // Visitante (sem conta) lê as SECOES_ABERTAS primeiras partes; a conta grátis abre o resto (Tales, 19/10/2026).
-  const { sessao } = usarConta()
-  const porta = useMemo(() => calcularPorta(capitulo.secoes, contasDisponiveis && !sessao, blocoInicial), [capitulo.secoes, sessao, blocoInicial])
-  const secoesVisiveis = porta.fechado ? capitulo.secoes.slice(0, porta.abertas) : capitulo.secoes
+  // Quem não assina (visitante ou conta grátis) lê a prévia; depois, a paywall (Tales, 09/11/2026: src/biblioteca/porta.ts).
+  const porta = useMemo(() => calcularPorta(capitulo, contasDisponiveis && !premium, blocoInicial), [capitulo, premium, blocoInicial])
+  const secoesVisiveis = porta.secoes
+  const abertos = useMemo(() => blocosAbertos(porta), [porta])
+  const restantes = useMemo(() => {
+    if (!porta.fechado) return { minutos: 0, questoes: 0 }
+    const vistos = new Set(porta.secoes.flatMap((s) => s.blocos.map((b) => b.id)))
+    const ids = new Set(capitulo.secoes.flatMap((s) => s.blocos).filter((b) => !vistos.has(b.id)).flatMap((b) => b.tipo === 'questoes' ? questoesReais(b) : []))
+    return { minutos: Math.max(1, Math.round(capitulo.minutos * (1 - porta.fracao))), questoes: ids.size }
+  }, [porta, capitulo])
   const bib = usarBiblioteca()
   const { preferencias: prefSalva, definirPreferencias } = bib
   // Primeira vez no leitor: o tema acompanha o do site (escuro abre escuro).
@@ -198,6 +208,41 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
 
   const elementoDoBloco = (b: string) => pagina.current?.querySelector<HTMLElement>(`[data-bloco="${CSS.escape(b)}"]`) ?? null
 
+  // ── Prévia de quem não assina (Tales, 09/11/2026): a página tem o comprimento real (o resto vira linhas
+  // esmaecidas, sem o texto), mas a rolagem só desce até o começo delas; ali a página esmaece e abre a paywall. ──
+  const [paywall, definirPaywall] = useState(false)
+  const [restoAltura, definirRestoAltura] = useState(0)
+  /** Até onde a rolagem desce: o começo do resto esmaecido fica pouco abaixo do meio da tela. */
+  const limitePrevia = () => {
+    const el = rolagem.current, resto = elementoDoBloco('porta')
+    if (!el || !resto) return Infinity
+    return Math.max(0, resto.getBoundingClientRect().top - el.getBoundingClientRect().top + el.scrollTop - el.clientHeight * 0.55)
+  }
+  const fecharPaywall = useCallback(() => {
+    definirPaywall(false)
+    const el = rolagem.current
+    if (el && !paginado) el.scrollTop = Math.max(0, limitePrevia() - el.clientHeight * 0.3)
+  }, [paginado]) // eslint-disable-line react-hooks/exhaustive-deps
+  // O resto esmaecido mede o que falta na mesma proporção do que já está na tela (some no modo paginado).
+  useEffect(() => {
+    if (!porta.fechado || paginado) { definirRestoAltura(0); return }
+    const art = pagina.current
+    if (!art) return
+    const medir = () => {
+      const resto = art.querySelector('[data-bloco="porta"]')
+      if (!resto) return
+      const acima = resto.getBoundingClientRect().top - art.getBoundingClientRect().top
+      const alvo = Math.min(80000, Math.round(acima * (1 - porta.fracao) / Math.max(0.05, porta.fracao)))
+      definirRestoAltura((h) => Math.abs(h - alvo) > 8 ? alvo : h)
+    }
+    medir()
+    if (typeof ResizeObserver === 'undefined') return
+    const ro = new ResizeObserver(medir)
+    ro.observe(art)
+    return () => ro.disconnect()
+  }, [porta, paginado])
+  useEffect(() => { if (!porta.fechado) definirPaywall(false) }, [porta.fechado])
+
   // ── Paginado: colunas CSS do tamanho da tela; uma "página" = uma coluna ──
   const [geometria, definirGeometria] = useState({ largura: 0, altura: 0 })
   useLayoutEffect(() => {
@@ -242,6 +287,13 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   const irPara = useCallback((bloco: string, fracao = 0, piscar = false) => {
     const el = rolagem.current, alvo = elementoDoBloco(bloco)
     if (!el || !alvo) return
+    // Parte fechada (índice, busca, link): vai ao limite da prévia e abre a paywall.
+    if (bloco === 'porta') {
+      if (paginado) { const pg = paginasRef.current; el.scrollLeft = Math.max(0, pg.total - 1) * pg.passo; definirPaginas((p) => ({ ...p, atual: Math.max(0, p.total - 1) })) }
+      else el.scrollTop = limitePrevia()
+      definirPaywall(true)
+      return
+    }
     if (paginado) {
       const caixa = el.getBoundingClientRect(), r = alvo.getBoundingClientRect()
       const passo = colunaLargura + vao
@@ -295,9 +347,9 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     const pct = Math.round(progressoAtual())
     bib.salvarLeitura(capitulo.id, p ? { bloco: p.bloco, deslocamento: Math.round(p.fracao * 100) / 100, progresso: pct, ...(pct >= 98 && !leitura?.concluidoEm && !porta.fechado ? { concluidoEm: Date.now() } : {}) } : {}, tempo)
   }, [capitulo.id, leitura?.concluidoEm, porta.fechado]) // eslint-disable-line react-hooks/exhaustive-deps
-  /** Com a porta, o fim do texto visível é a parte 6, não o fim do resumo: o progresso conta só a fração aberta. */
+  /** Com a paywall, o fim do texto visível é o fim da prévia, não o do resumo: o progresso conta só a fração aberta. */
   function progressoAtual() {
-    return progressoDaTela() * (porta.fechado ? porta.abertas / capitulo.secoes.length : 1)
+    return progressoDaTela() * porta.fracao
   }
   function progressoDaTela() {
     const el = rolagem.current
@@ -308,6 +360,13 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     return max <= 0 ? 100 : (el.scrollTop / max) * 100
   }
   const aoRolar = useCallback(() => {
+    // Quem não assina não desce além do limite da prévia: chegou nele, a paywall abre.
+    const el = rolagem.current
+    if (el && porta.fechado && !paginado) {
+      const limite = limitePrevia()
+      if (el.scrollTop > limite) el.scrollTop = limite
+      if (el.scrollTop >= limite - 1) definirPaywall(true)
+    }
     registrarAtividade(cronometro.current)
     posicao.current = lerPosicao()
     definirProgresso(progressoAtual())
@@ -315,7 +374,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     if (b) definirSecaoAtual(b.startsWith('h-') ? b.slice(2) : secaoDe.get(b) ?? null)
     clearTimeout(temporizador.current)
     temporizador.current = setTimeout(salvarAgora, 1200)
-  }, [lerPosicao, salvarAgora, secaoDe]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [lerPosicao, salvarAgora, secaoDe, porta.fechado, paginado]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     const sair = () => { if (document.visibilityState === 'hidden') salvarAgora(true) }
     const fechar = () => salvarAgora(true)
@@ -335,6 +394,9 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     }, PASSO_MS)
     return () => { clearInterval(relogio); for (const e of eventos) window.removeEventListener(e, mexeu) }
   }, [salvarAgora])
+
+  // Modo paginado: a última página é o fim da prévia; chegar nela abre a paywall.
+  useEffect(() => { if (porta.fechado && paginado && paginas.total > 1 && paginas.atual >= paginas.total - 1) definirPaywall(true) }, [porta.fechado, paginado, paginas.atual, paginas.total])
 
   const mudarPagina = useCallback((delta: number) => {
     const el = rolagem.current
@@ -553,12 +615,12 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
             <p className="lr-capa__ref">A partir de <cite>{capitulo.livro}</cite>, {capitulo.edicao}. {capitulo.capitulo}. {capitulo.autores}.</p>
             <p className="lr-capa__meta"><span>~{capitulo.minutos} min de leitura</span>{idsDoCapitulo.length > 0 && <span>{idsDoCapitulo.length} questões citadas</span>}{leitura?.concluidoEm && <span className="lr-capa__ok"><Icone nome="certo" tamanho={14} /> Concluído</span>}{alvoFc && <a className="lr-capa__fc" href={href(linkFlashcards(alvoFc, capitulo.titulo))}><Icone nome="raio" tamanho={14} /> Estudar flashcards deste tema</a>}</p>
             <p className="lr-capa__dica">Selecione qualquer trecho para destacar ou anotar. Tudo fica salvo na sua conta.</p>
-            {porta.fechado && <p className="lr-capa__porta">Sem conta, você lê as {SECOES_ABERTAS} primeiras das {capitulo.secoes.length} partes. A leitura completa é grátis com a conta: <a href={href(linkDaPorta('criar', capitulo.id, porta))}>criar conta grátis</a>.</p>}
+            {porta.fechado && <p className="lr-capa__porta"><Icone nome="cadeado" tamanho={13} /> Você está lendo a prévia deste resumo. O texto completo é para assinantes: <a href={href('/assinatura')}>ver os planos</a>.</p>}
           </header>
-          {secoesVisiveis.map((s) => {
+          {secoesVisiveis.map((s, i) => {
             const reais = new Set(s.blocos.flatMap((b) => b.tipo === 'questoes' ? questoesReais(b) : []))
             return (
-              <section key={s.id} className="lr-secao" id={`secao-${s.id}`} aria-labelledby={`t-${s.id}`}>
+              <section key={s.id} className={porta.fechado && i === secoesVisiveis.length - 1 ? 'lr-secao lr-secao--previa' : 'lr-secao'} id={`secao-${s.id}`} aria-labelledby={`t-${s.id}`}>
                 <h2 id={`t-${s.id}`} data-bloco={`h-${s.id}`}>{s.titulo}</h2>
                 <p className={`lr-radar lr-radar--${s.radar}`} title={RADAR[s.radar].texto}>
                   {s.radar === 'confirmado' ? (reais.size ? <>{RADAR.confirmado.rotulo} · {reais.size} {reais.size === 1 ? 'questão' : 'questões'}</> : 'Nenhuma questão encontrada no conjunto analisado') : RADAR[s.radar].rotulo}
@@ -567,7 +629,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
               </section>
             )
           })}
-          {porta.fechado && <PortaLeitura capitulo={capitulo.id} numeroCapitulo={capitulo.capitulo.match(/\d+/)?.[0]} porta={porta} restantes={capitulo.secoes.slice(porta.abertas)} />}
+          {porta.fechado && <FimDaPrevia altura={restoAltura} aoAbrir={() => irPara('porta')} />}
           {!porta.fechado && capitulo.subtemas?.length ? <FrasesDoTema subtemas={capitulo.subtemas} /> : null}
           {porta.fechado ? <p className="lr-capa__ref">Texto autoral do OrtoQuestões, com as ideias e os números do capítulo; não substitui a leitura do original.</p> : <footer className="lr-fim" data-bloco="fim" aria-labelledby="lr-fim-titulo">
             <div className="lr-fim__cartao">
@@ -601,8 +663,8 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
 
       {painel && <aside className={`lr-painel lr-painel--${painel}`} aria-labelledby="lr-painel-titulo">
         <header className="lr-painel__topo"><strong id="lr-painel-titulo">{painel === 'indice' ? 'Índice' : painel === 'notas' ? 'Destaques, notas e marcadores' : painel === 'busca' ? 'Buscar no capítulo' : 'Aparência'}</strong><button type="button" className="lr-botao" onClick={() => definirPainel(null)} aria-label="Fechar o painel" title="Fechar (Esc)"><Icone nome="fechar" tamanho={18} /></button></header>
-        {painel === 'indice' && <div className="lr-indice__caixa"><p className="lr-indice__resumo numerico">{Math.round(Math.min(100, progresso))}% lido · ~{minutosRestantes} min restantes</p><ol className="lr-indice">{capitulo.secoes.map((s, i) => { const fechada = i >= porta.abertas; const atual = s.id === secaoAtual; return <li key={s.id} className={fechada ? 'lr-indice--fechada' : atual ? 'lr-indice--atual' : progressoSecoes.has(s.id) ? 'lr-indice--lida' : ''}>
-          <button type="button" aria-current={atual ? 'location' : undefined} onClick={() => { irPara(fechada ? 'porta' : `h-${s.id}`, 0, fechada); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null) }} aria-label={fechada ? `${s.titulo} (crie a conta grátis para ler)` : undefined}><span>{s.titulo}</span>{fechada && <span className="lr-indice__cadeado" title="Leitura completa grátis com conta"><Icone nome="cadeado" tamanho={14} /></span>}{atual && <span className="lr-indice__aqui">Você está aqui</span>}<i className={`lr-ponto lr-ponto--${s.radar}`} title={RADAR[s.radar].rotulo} /></button>
+        {painel === 'indice' && <div className="lr-indice__caixa">{porta.fechado ? <p className="lr-indice__resumo">Prévia do resumo · o cadeado marca o que é para assinantes</p> : <p className="lr-indice__resumo numerico">{Math.round(Math.min(100, progresso))}% lido · ~{minutosRestantes} min restantes</p>}<ol className="lr-indice">{capitulo.secoes.map((s) => { const fechada = !abertos.has(`h-${s.id}`); const atual = s.id === secaoAtual; return <li key={s.id} className={fechada ? 'lr-indice--fechada' : atual ? 'lr-indice--atual' : progressoSecoes.has(s.id) ? 'lr-indice--lida' : ''}>
+          <button type="button" aria-current={atual ? 'location' : undefined} onClick={() => { irPara(fechada ? 'porta' : `h-${s.id}`, 0, fechada); if (matchMedia('(max-width: 52rem)').matches) definirPainel(null) }} aria-label={fechada ? `${s.titulo} (para assinantes)` : undefined}><span>{s.titulo}</span>{fechada && <span className="lr-indice__cadeado" title="Para assinantes"><Icone nome="cadeado" tamanho={14} /></span>}{atual && <span className="lr-indice__aqui">Você está aqui</span>}<i className={`lr-ponto lr-ponto--${s.radar}`} title={RADAR[s.radar].rotulo} /></button>
         </li> })}</ol></div>}
         {painel === 'busca' && <div className="lr-busca">
           <input type="search" autoFocus value={busca} onChange={(e) => definirBusca(e.target.value)} placeholder="Ex.: Garden, Pauwels, cimentada" aria-label="Buscar no capítulo" />
@@ -623,6 +685,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
       </aside>}
       {questao && <button type="button" className="lr-veu" aria-label="Voltar à leitura" tabIndex={-1} onClick={fecharQuestao} />}
 
+      {porta.fechado && paywall && <PortaLeitura aoFechar={fecharPaywall} capitulo={capitulo.id} titulo={capitulo.titulo} numeroCapitulo={capitulo.capitulo.match(/\d+/)?.[0]} porta={porta} minutosRestantes={restantes.minutos} questoesRestantes={restantes.questoes} />}
       {aviso && <Aviso aviso={aviso} aoFechar={() => definirAviso(null)} />}
       {guia && <GuiaTour id="leitor" titulo="Ajuda do leitor" passos={PASSOS_LEITOR} rolar={false} aoFechar={() => definirGuia(false)} />}
     </div>

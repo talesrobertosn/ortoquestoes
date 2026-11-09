@@ -12,7 +12,6 @@ import {
   CHAVE_CONSULTA_ESTANTE, FILTROS_PADRAO, consultaDosFiltros, estadoLeitura, filtrarEstante, filtrosAtivos, filtrosDaConsulta, livrosDaEstante, type FiltrosEstante,
 } from '../estante'
 import { GuiaTour, deveAbrirGuia, usarGuiaNaConta, type PassoGuia } from '../GuiaTour'
-import { SECOES_ABERTAS } from '../porta'
 import type { IndiceBiblioteca, ResumoCapitulo } from '../tipos'
 import { usarBiblioteca } from '../usarBiblioteca'
 import { BarraFiltros, type Modo } from './BarraFiltros'
@@ -68,9 +67,8 @@ const soFiltros = (c: URLSearchParams) => { const x = new URLSearchParams(c); x.
 function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSearchParams }) {
   const { indice } = usarIndice()
   const { leituras, marcas } = usarBiblioteca()
-  const { premium } = usarPremium()
+  const { premium, carregado: premiumCarregado } = usarPremium()
   const { sessao } = usarConta()
-  const visitante = contasDisponiveis && !sessao
   const capitulos = dados.capitulos
 
   const [filtros, definirFiltros] = useState<FiltrosEstante>(() => filtrosDaConsulta(consulta))
@@ -147,7 +145,8 @@ function Salao({ dados, consulta }: { dados: IndiceBiblioteca; consulta: URLSear
     s.acoes.falar('Escolha uma sugestão com as setas e Enter, ou continue digitando: a estante mostra só o que combina.')
   }
 
-  const porta = visitante ? <p className="bb-porta"><Icone nome="cadeado" tamanho={14} /> <span><b>Leitura completa grátis com conta.</b> Sem conta, cada resumo abre as {SECOES_ABERTAS} primeiras partes. <a href={href('/conta?modo=criar&voltar=%2Fresumos')}>Criar conta grátis</a></span></p> : null
+  // Quem não assina lê a prévia de cada resumo (Tales, 09/11/2026: src/biblioteca/porta.ts); o tamanho dela não é dito.
+  const porta = contasDisponiveis && !premium && !(sessao && !premiumCarregado) ? <p className="bb-porta"><Icone nome="cadeado" tamanho={14} /> <span><b>Cada resumo abre com uma prévia.</b> A leitura completa de toda a Biblioteca é para assinantes. <a href={href('/assinatura')}>Ver os planos</a></span></p> : null
   const livrosFiltro = livros.map((l) => ({ chave: l.chave, rotulo: l.rotulo, total: l.capitulos.length }))
   const areasFiltro = [...capitulos.reduce((m, c) => m.set(c.especialidade, (m.get(c.especialidade) ?? 0) + 1), new Map<string, number>())].map(([slug, total]) => ({ slug, total }))
   const fichaAtual = ficha ? capitulos.find((c) => c.id === ficha.c.id) ?? ficha.c : null

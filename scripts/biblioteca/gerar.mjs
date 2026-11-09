@@ -19,6 +19,11 @@ const RADARES = new Set(['confirmado', 'fundamento', 'clinico', 'oportunidade'])
 /** Regra do Tales (16/10/2026, revista no mesmo dia): todos os resumos ficam abertos (também para o Google);
  * resolver as questões citadas é do assinante. O limite antigo de 5 grátis deixou de valer. */
 const MAXIMO_GRATIS = Infinity
+/** Prévia para quem não é assinante (Tales, 09/11/2026): mais ou menos esta fração do texto, cortada num bloco
+ * inteiro. O número é interno: nem o leitor nem as páginas públicas o mencionam. O ponto de corte vai no capítulo
+ * (`corte`, o id do último bloco aberto) e vale igual para o leitor (src/biblioteca/porta.ts) e para as páginas do
+ * Google (scripts/gerar_resumos_seo.py). */
+const FRACAO_PREVIA = 0.35
 
 const indice = JSON.parse(await readFile(join(RAIZ, 'public/acervo/indice.json'), 'utf8'))
 const porId = new Map(indice.questoes.map((q) => [q.id, q]))
@@ -122,6 +127,7 @@ function analisar(texto, arquivo) {
     acesso: meta.acesso === 'gratis' ? 'gratis' : 'assinante',
     minutos: Math.max(1, Math.round(palavras / 200)), secoes,
   }
+  capitulo.corte = calcularCorte(secoes)
   // Radar honesto: "cobrança confirmada" exige questão de prova real citada na seção.
   for (const s of secoes) if (s.radar === 'confirmado' && !s.blocos.some((b) => b.tipo === 'questoes' && (b.central.length || b.relacionadas.length))) erros.push(`${arquivo} › ${s.titulo}: radar=confirmado sem questão de prova real (use fundamento, clinico ou oportunidade)`)
   for (const s of secoes) for (const b of s.blocos) if (b.t && /\*\*[^*]*$/.test(b.t.replace(/\*\*[^*]+\*\*/g, ''))) erros.push(`${arquivo}: negrito sem fechar em "${semMarcas(b.t).slice(0, 60)}"`)
@@ -135,6 +141,25 @@ function analisar(texto, arquivo) {
   for (const s of subtemas) if (!indice.subtemas.includes(s)) erros.push(`${arquivo}: subtema "${s}" não existe no acervo`)
   capitulo.subtemas = subtemas
   return { capitulo, resumo: { id: capitulo.id, versao: capitulo.versao, titulo: capitulo.titulo, especialidade: capitulo.especialidade, livro: capitulo.livro, edicao: capitulo.edicao, capitulo: capitulo.capitulo, resumo: capitulo.resumo, acesso: capitulo.acesso, minutos: capitulo.minutos, secoes: secoes.map((s) => ({ id: s.id, titulo: s.titulo, radar: s.radar })), questoes: [...questoes], treino: [...treino], subtemas } }
+}
+
+/** Peso de cada bloco na leitura: os caracteres, com um acréscimo para o que ocupa altura (títulos, cartões, figuras). */
+function pesoBloco(b) {
+  if (b.tipo === 'questoes') return 220 + [b.conceito, b.como, ...(b.armadilhas ?? []), b.alerta].filter(Boolean).join(' ').length
+  if (b.tipo === 'tabela') return 120 + [b.titulo, ...b.cab, ...b.linhas.flat()].join(' ').length + 40 * b.linhas.length
+  if (b.tipo === 'figura') return 500 + b.legenda.length
+  return (b.tipo === 'h3' ? 80 : 40) + b.t.length
+}
+
+/** O último bloco da prévia: onde o peso acumulado passa de FRACAO_PREVIA. Nunca termina num título nem no meio de uma lista. */
+function calcularCorte(secoes) {
+  const itens = secoes.flatMap((s) => [{ peso: 90 + s.titulo.length, b: null }, ...s.blocos.map((b) => ({ peso: pesoBloco(b), b }))])
+  const total = itens.reduce((t, x) => t + x.peso, 0)
+  let i = 0
+  for (let soma = 0; i < itens.length - 1; i++) { soma += itens[i].peso; if (soma >= total * FRACAO_PREVIA) break }
+  while (itens[i]?.b?.tipo === 'li' && itens[i + 1]?.b?.tipo === 'li') i++
+  while (i > 0 && (!itens[i].b || itens[i].b.tipo === 'h3')) i--
+  return itens.slice(0, i + 1).reverse().find((x) => x.b)?.b.id ?? itens.find((x) => x.b)?.b.id ?? null
 }
 
 const arquivos = (await readdir(ORIGEM)).filter((a) => a.endsWith('.md') && !a.startsWith('_')).sort()
