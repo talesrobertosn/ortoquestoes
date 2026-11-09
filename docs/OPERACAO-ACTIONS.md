@@ -55,6 +55,11 @@ extrapolação confiável para o mês.
   superado por mudança funcional. Documentação posterior não invalida o build.
   Isso também protege contra reexecuções antigas. Falha de fetch interrompe o
   deploy; não é interpretada como autorização para publicar.
+- **Tempo do envio ao Pages (09/11/2026):** o site tem quase 29 mil arquivos e,
+  em alguns dias, o GitHub Pages passa dos 10 minutos padrão em `syncing_files`;
+  a ação cancelava a publicação no meio. O `deploy-pages` espera até 30 minutos
+  (`timeout: 1800000`). Se ainda falhar por tempo, rodar de novo só o job
+  `publicar` (o build é reaproveitado).
 - **Suíte:** todos os testes existentes de `npm test` permanecem. No Pages foram
   retiradas somente chamadas extras de `testar_revisao.mjs`, `testar_reinicio.mjs`
   e `testar_deteccao.py`, já executadas pela suíte. Acervo e geradores continuam.

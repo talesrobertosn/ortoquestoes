@@ -131,3 +131,7 @@ jobs:
       - id: publicacao
         if: steps.atual.outputs.publicar == 'true'
         uses: actions/deploy-pages@v4
+        # O site tem quase 29 mil arquivos: às vezes o GitHub Pages leva mais de 10 minutos (o padrão da ação) para
+        # sincronizar e a publicação era cancelada no meio ("syncing_files", 09/11/2026). 30 minutos de folga.
+        with:
+          timeout: 1800000
