@@ -1,8 +1,6 @@
-/* Treinar: "mesa de estudo leve" (pedido do Tales, 01/11/2026), nas cores da página inicial ("as paletas precisam
-   seguir a página inicial"). Sem cena no topo; o parentesco vem dos mesmos tokens (--mundo-*, --cristal em tokens.css):
-   "Começar agora" é o painel escuro quente da inicial, com selo dourado, tinta marfim e o botão de cristal; o resto é a
-   página clara da inicial (superfícies brancas de 20 px, itens em fundo recuado, o escolhido em verdete-véu com filete
-   à esquerda, números em Jersey 10 verdete). Todo botão de começar é o cristal; o contorno verdete é o secundário. */
+/* Treinar: mesa de estudo clara, nas cores da página inicial. O início rápido recebe a clareira
+   HD-2D da inicial, esmaecida e estática (pedido do Tales, 08/11/2026). Cabeçalho compacto,
+   controles em superfícies legíveis e botão de cristal preservado. */
 .tn { display: grid; gap: var(--e-5); }
 .tn-num { font-variant-numeric: tabular-nums; }
 .tn-rotulo { display: flex; align-items: center; gap: var(--e-2); margin: 0; font-family: var(--fonte-texto); font-size: var(--meta); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--texto-2); }
@@ -19,39 +17,49 @@
 .tn-cabeca__links a { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 32px; color: var(--verdete); font-size: var(--corpo-menor); font-weight: 650; text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--verdete) 35%, transparent); text-underline-offset: 3px; }
 .tn-cabeca__links a:hover { text-decoration-color: currentColor; }
 
-/* ---------- Começar agora: o painel escuro da página inicial (o chão do acampamento, sem a cena) ---------- */
+/* ---------- Começar agora: clareira suave, sem competir com os controles ---------- */
 .tn-rapido {
   display: grid; grid-template-columns: minmax(16rem, 22rem) minmax(0, 1fr); gap: var(--e-5);
-  padding: var(--e-5); border-radius: var(--mundo-raio); background: var(--mundo-painel); color: var(--mundo-tinta);
-  box-shadow: inset 0 0 0 1px var(--mundo-filete), 0 18px 40px -24px rgba(0, 0, 0, 0.55);
+  --tn-filete: color-mix(in srgb, var(--verdete) 20%, var(--traco));
+  position: relative; isolation: isolate; overflow: hidden;
+  padding: var(--e-5); border: 1px solid var(--tn-filete); border-radius: var(--mundo-raio);
+  background: var(--superficie); color: var(--texto); box-shadow: var(--sombra);
 }
-.tn-rapido .tn-rotulo { color: var(--mundo-ouro); letter-spacing: 0.12em; font-weight: 800; }
-.tn-rapido .tn-nota { color: var(--mundo-tinta-2); }
+.tn-rapido::before {
+  content: ''; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background-image: var(--tn-paisagem); background-size: cover; background-position: center 62%;
+  image-rendering: pixelated; opacity: .32; filter: saturate(.6) contrast(.85);
+}
+.tn-rapido > * { position: relative; z-index: 1; }
+:root[data-tema="escuro"] .tn-rapido { background: var(--verdete-noite); }
+:root[data-tema="escuro"] .tn-rapido::before { opacity: .24; filter: saturate(.55) brightness(.85); }
+.tn-rapido .tn-rotulo { color: var(--texto); letter-spacing: 0.12em; font-weight: 800; }
+.tn-rapido .tn-nota { color: var(--texto); }
 .tn-rapido__principal { display: grid; align-content: start; gap: var(--e-3); }
 .botao.tn-rapido__botao { justify-content: flex-start; gap: var(--e-3); width: 100%; min-height: 60px; padding: var(--e-2) var(--e-4); text-align: left; }
 .tn-rapido__botao > svg { flex: none; }
 .tn-rapido__botao span { display: grid; gap: 1px; min-width: 0; }
 .tn-rapido__botao strong { font-size: var(--corpo); font-weight: 800; }
 .tn-rapido__botao small { font-size: var(--meta); font-weight: 650; opacity: 0.92; }
-.tn-rapido__atalhos { display: grid; align-content: start; gap: var(--e-2); padding-left: var(--e-5); border-left: 1px solid var(--mundo-filete); min-width: 0; }
-.tn-rapido__atalhos-titulo { margin: 0; color: var(--mundo-tinta-2); font-size: var(--meta); font-weight: 650; }
+.tn-rapido__atalhos { display: grid; align-content: start; gap: var(--e-2); padding-left: var(--e-5); border-left: 1px solid var(--tn-filete); min-width: 0; }
+.tn-rapido__atalhos-titulo { margin: 0; color: var(--texto); font-size: var(--meta); font-weight: 650; }
 .tn-rapido__atalhos ul { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--e-2); margin: 0; padding: 0; list-style: none; }
-/* Os atalhos no vidro do painel, com o número dourado como a sequência da inicial. */
+/* Superfícies opacas o suficiente para os atalhos continuarem legíveis sobre a paisagem. */
 .tn-atalho {
   display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--e-3);
   width: 100%; min-height: 56px; padding: var(--e-2) var(--e-3); text-align: left;
-  border: 0; border-radius: var(--raio-controle); background: rgba(255, 255, 255, 0.06); box-shadow: inset 0 0 0 1px var(--mundo-filete); color: var(--mundo-tinta);
+  border: 0; border-radius: var(--raio-controle); background: color-mix(in srgb, var(--superficie) 88%, transparent); box-shadow: inset 0 0 0 1px var(--tn-filete); color: var(--texto);
   font: inherit; cursor: pointer; transition: background-color var(--duracao-rapida) ease, transform var(--duracao-rapida) var(--curva);
 }
-.tn-atalho > svg { color: var(--mundo-ouro); }
+.tn-atalho > svg { color: var(--verdete); }
 .tn-atalho__nome { display: grid; min-width: 0; font-size: var(--corpo-menor); font-weight: 750; line-height: 1.25; }
-.tn-atalho__nome small { overflow: hidden; color: var(--mundo-tinta-2); font-size: var(--meta); font-weight: 500; white-space: nowrap; text-overflow: ellipsis; }
-.tn-atalho__n { font-family: var(--fonte-pixel-titulo); font-size: 1.7rem; font-weight: 400; line-height: 1; color: var(--mundo-ouro); text-shadow: 0 2px 0 #000; }
-.tn-atalho:hover:not(:disabled) { background: rgba(255, 255, 255, 0.12); transform: translateY(-1px); }
+.tn-atalho__nome small { overflow: hidden; color: var(--texto-2); font-size: var(--meta); font-weight: 500; white-space: nowrap; text-overflow: ellipsis; }
+.tn-atalho__n { font-family: var(--fonte-pixel-titulo); font-size: 1.7rem; font-weight: 400; line-height: 1; color: var(--verdete); text-shadow: none; }
+.tn-atalho:hover:not(:disabled) { background: var(--superficie); transform: translateY(-1px); }
 .tn-atalho:active:not(:disabled) { transform: translateY(1px); }
-.tn-atalho:disabled { cursor: default; background: transparent; box-shadow: inset 0 0 0 1px rgba(255, 236, 200, 0.1); color: var(--mundo-tinta-2); }
-.tn-atalho:disabled > svg, .tn-atalho:disabled .tn-atalho__n { color: var(--mundo-tinta-2); opacity: 0.7; text-shadow: none; }
-.tn-rapido :focus-visible { outline-color: var(--mundo-ouro); }
+.tn-atalho:disabled { cursor: default; background: color-mix(in srgb, var(--superficie) 72%, transparent); border: 1px dashed var(--traco-forte); box-shadow: none; color: var(--texto-2); }
+.tn-atalho:disabled > svg, .tn-atalho:disabled .tn-atalho__n { color: var(--texto-2); text-shadow: none; }
+.tn-rapido :focus-visible { outline-color: var(--foco); }
 
 /* ---------- Filtros salvos ---------- */
 .tn-salvos { display: grid; gap: var(--e-2); }
@@ -235,7 +243,7 @@
 }
 @media (max-width: 52rem) {
   .tn-rapido { grid-template-columns: 1fr; gap: var(--e-4); }
-  .tn-rapido__atalhos { padding: var(--e-4) 0 0; border-left: 0; border-top: 1px solid var(--mundo-filete); }
+  .tn-rapido__atalhos { padding: var(--e-4) 0 0; border-left: 0; border-top: 1px solid var(--tn-filete); }
 }
 @media (max-width: 40rem) {
   .tn { gap: var(--e-4); padding-bottom: 5.5rem; }
