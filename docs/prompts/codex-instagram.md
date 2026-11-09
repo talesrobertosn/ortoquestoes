@@ -1,5 +1,7 @@
 # Prompt para agentes externos (ChatGPT Codex): posts do Instagram do Orto Questões
 
+**Antes de tudo (09/11/2026):** leia `marketing/instagram/estilos/PADRAO-AULA.md`, o padrão oficial dos posts de questão, e siga o roteiro dele; a referência é `marketing/instagram/posts/2026-11-09-reimers-var/`.
+
 Roteiro para outro agente fazer os posts exatamente como eles são feitos aqui. Siga na ordem.
 Não pule etapa. Antes de tudo, leia as regras em
 [docs/marketing/orientacoes.md](../marketing/orientacoes.md).

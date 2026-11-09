@@ -26,6 +26,8 @@ mencionar IA, não citar o número total de questões).
 
 ---
 
+**Padrão oficial desde 09/11/2026:** todo post de questão segue [PADRAO-AULA.md](PADRAO-AULA.md); os estilos deste catálogo entram como moldura da aula.
+
 ## Regras permanentes (valem sobre qualquer instrução antiga deste guia)
 
 1. **Stories sem figurinha.** Nada de quiz, enquete, sim/não, caixa de pergunta nem link: o
