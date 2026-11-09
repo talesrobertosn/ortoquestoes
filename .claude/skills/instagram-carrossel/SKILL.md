@@ -16,6 +16,8 @@ código próprios, sem copiar os arquivos dele.
 
 ## Antes de tudo (sempre)
 
+0. Ler `marketing/instagram/estilos/PADRAO-AULA.md`, o padrão oficial dos posts de questão (09/11/2026): é ele que define o roteiro, a quantidade de texto, as imagens e as citações; os modelos desta skill são só a moldura.
+
 1. Ler `DESIGN.md`, `docs/design/INSTAGRAM.md` e `docs/marketing/orientacoes.md` (regras da marca: sem emoji, sem IA,
    sem figurinha nos stories de questão, legenda sem link, no máximo 5 hashtags).
 2. Ver o estilo do dia: `node marketing/instagram/estilos/ordem.mjs` (pedido do Tales vence a fila).

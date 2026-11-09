@@ -35,6 +35,8 @@ e o andamento em [docs/mao/PROGRESSO.md](docs/mao/PROGRESSO.md). Comando para co
 [docs/prompts/claude-mao-provas.md](docs/prompts/claude-mao-provas.md). Livros, resumos enviados e provas originais nunca vão para o git. Só SBCM e SIMÃO viram OrtoQuestões Simulados; as outras bancas (ABC, Unesp etc.) entram com o nome real, conferindo antes se já estão no site.
 
 ## Arsenal de marketing aprovado
+**Padrão oficial de posts de questão (Tales, 09/11/2026):** antes de qualquer post, leia [marketing/instagram/estilos/PADRAO-AULA.md](marketing/instagram/estilos/PADRAO-AULA.md): aula que ensina do zero (sem citar R1), texto na medida e nunca slide só de palavras, imagens da questão e do comentário, livro e página em cada explicação, temática que ajuda a entender, no máximo 4 stories. Referência: `marketing/instagram/posts/2026-11-09-reimers-var/`. Os estilos abaixo viram moldura dessa aula.
+
 Para posts, leia [docs/marketing/orientacoes.md](docs/marketing/orientacoes.md). Tales aprovou em 11/10/2026 os modelos **Cofre de duas chaves** (feed) e **Mecânica fina / Relojoaria anatômica** (stories, versão final de mão). Veja [o guia de reutilização](marketing/instagram/estilos/COFRE-E-MECANICA-FINA.md): quando escolher cada um, roteiro, acabamento, HTMLs executáveis e revisão. São opções criativas do arsenal; adapte à questão, sem repetir mecanicamente ou substituir os outros estilos.
 
 Em 12/10/2026, Tales também aprovou a **Tabela de Snellen** (feed de questão em que a linha miúda decide) e o **Cupom fiscal** (stories: primeiro uma questão com a resposta, depois uma propaganda leve e sem preço; a variante com preço só a pedido). Veja [o guia](marketing/instagram/estilos/SNELLEN-E-CUPOM.md).

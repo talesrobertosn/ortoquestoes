@@ -366,8 +366,8 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             ...(FLASHCARDS_NA_VENDA ? [['Flashcards por dia (beta)', fraseGratis('flashcardsPorDia'), 'Sem limite'] as const] : []),
             ['Cronograma até a prova: a lista de cada dia, o que mais cai primeiro, dia de plantão e reta final', false, true],
             ['Temas que mais caem, área por área e assunto por assunto', false, true],
-            // A Biblioteca é aberta a todos (todos os resumos com acesso: gratis); as frases que caem têm amostra no gratuito.
-            ['Biblioteca de resumos, na ordem em que a prova cobra', true, true],
+            // Biblioteca (Tales, 09/11/2026): quem não assina lê uma prévia de cada resumo (src/biblioteca/porta.ts), sem dizer o tamanho.
+            ['Biblioteca de resumos, na ordem em que a prova cobra', 'Prévia de cada resumo', 'Completa'],
             ['Frases que caem, assunto por assunto', 'Amostra', 'Todas'],
             ['Atlas 3D: clique no osso e veja as classificações', 'Ossos e músculos', 'Todas as camadas'],
             ['Como a turma respondeu e treino pelas que a turma mais erra', false, true],
