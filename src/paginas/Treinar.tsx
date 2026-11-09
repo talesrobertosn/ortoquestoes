@@ -20,6 +20,7 @@ import { consultaParaFiltros, filtrosParaConsulta, navegar, rotaDe } from '../ut
 import { SeletorArvore } from '../componentes/SeletorArvore'
 import { Carregando, Estado } from '../componentes/Estados'
 import { usarSessao } from '../estado/sessao'
+import { usarPaisagemTreinar } from '../estado/paisagemTreinar'
 import { usarContextoLocal } from '../estado/usarContextoLocal'
 import { usarEtiquetas } from '../estado/preferencias'
 import { href } from '../util/rotas'
@@ -95,6 +96,7 @@ const DURACOES: Array<[number, string]> = [
 ]
 
 export function Treinar({ consulta }: { consulta: URLSearchParams }) {
+  const paisagem = usarPaisagemTreinar()
   const cronograma = usarCronogramaHoje()
   const { indice, carregando, erro: erroIndice } = usarIndice()
   const { iniciarComAviso } = usarSessao()
@@ -566,7 +568,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       </header>
 
       {/* Começar agora: uma ação principal e quatro atalhos, todos de 10 questões, sem passar pelos filtros. */}
-      <section className="tn-rapido" aria-labelledby="tn-rapido-titulo" style={{ '--tn-paisagem': `url("${import.meta.env.BASE_URL}pixel/inicio/cena-manha-960.webp")` } as CSSProperties}>
+      <section className="tn-rapido" aria-labelledby="tn-rapido-titulo" style={{ '--tn-paisagem': `url("${import.meta.env.BASE_URL}pixel/inicio/${paisagem}")` } as CSSProperties}>
         <div className="tn-rapido__principal">
           <h2 className="tn-rotulo" id="tn-rapido-titulo">Começar agora</h2>
           <button type="button" className="botao cristal tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">

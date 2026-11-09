@@ -125,3 +125,18 @@ cartões mais baixos (56 px) para caber "Continuar" + seis atalhos na primeira t
 O fundo decorativo usa `public/pixel/inicio/cena-manha-960.webp` (arte existente da inicial, sem personagens sobre os controles). A URL respeita `BASE_URL`. A paisagem fica num pseudo-elemento estático, sem capturar cliques: no claro, opacidade de 32% com saturação e contraste reduzidos; no escuro, base verde-noite e opacidade de 24%. Os atalhos têm superfícies quase opacas, texto nos tokens da página e contagens em verdete, sem sombra preta. Zero continua desabilitado e tracejado. O botão de cristal dourado mantém a ação principal.
 
 A mudança não volta ao herói grande: nenhum título sobre cena, mascote, canvas ou animação no cabeçalho. Reaproveita um arquivo de cerca de 43 KB já disponível no site. Capturas da revisão em `work/treinar-suave/`, nos temas claro/escuro e larguras 320/390/1440. A conferência específica do painel verifica o fundo aplicado, os quatro atalhos, ausência de transbordamento horizontal e início da sessão rápida com dez questões. O roteiro amplo existente chegou aos filtros e quantidades, mas parou no estado vazio da busca após alterar a quantidade; a busca isolada funciona. Nenhuma lógica de filtros ou sessões foi alterada nesta revisão visual.
+
+### Quatro momentos do dia (09/11/2026)
+
+No cenário automático, o início rápido alterna entre quatro artes existentes, sempre no horário de Brasília:
+
+| Horário | Arte |
+|---|---|
+| 05h–11h59 | Clareira (`cena-manha-960.webp`) |
+| 12h–16h59 | Lago e cais à luz do dia (`cena-cais-manha-960.webp`) |
+| 17h–18h59 | Cais ao pôr do sol (`cena-cais-tarde-960.webp`) |
+| 19h–04h59 | Observatório estrelado (`cena-observatorio-noite-960.webp`) |
+
+As preferências fixas de cenário continuam valendo: manhã, pôr do sol ou noite. A escolha da arte é independente do tema claro/escuro. A página verifica o horário a cada minuto enquanto visível e ao recuperar foco; remove os listeners e o intervalo ao sair. Carrega apenas a arte selecionada e mantém o tratamento esmaecido, sem animação ou mudança nos controles.
+
+`fixtures/testar_paisagem_treinar.mjs` confere fronteiras de horário, madrugada, fuso e escolhas fixas. A revisão no navegador percorre os quatro horários em claro/escuro e celular/computador, incluindo a troca automática com a página aberta. Capturas em `work/treinar-suave/horarios-{claro,escuro}/`.
