@@ -66,19 +66,20 @@ export default function Cobrancas() {
   const termo = normalizar(busca.trim())
   const visiveis = useMemo(() => doMeio.filter(l => (situacao === 'todas' || l.situacao === situacao) && combina([l.nome, l.email, rotuloPlano(l.plano), l.id_pagamento], termo)), [doMeio, situacao, termo])
   const totais = useMemo(() => {
-    const contam = doMeio.filter(l => !l.marca)
+    const contam = visiveis.filter(l => !l.marca)
     const entram = contam.filter(l => l.situacao !== 'reembolsada'), soma = (x: Linha[]) => x.reduce((s, l) => s + l.valor, 0)
     const devolvidas = contam.filter(l => l.situacao === 'reembolsada')
     return { bruto: soma(entram), quantidade: entram.length, confirmado: soma(entram.filter(l => l.situacao === 'paga')), estimado: soma(entram.filter(l => l.situacao === 'estimada')), estimadas: entram.filter(l => l.situacao === 'estimada').length,
       cartao: soma(entram.filter(l => l.meio === 'cartao')), pix: soma(entram.filter(l => l.meio === 'pix')), devolvido: soma(devolvidas), devolvidas: devolvidas.length }
-  }, [doMeio])
+  }, [visiveis])
   const dias = useMemo(() => {
+    const totaisDoDia = new Map<string, number>()
+    for (const l of visiveis) if (l.situacao !== 'reembolsada' && !l.marca) totaisDoDia.set(diaChave(l.em), (totaisDoDia.get(diaChave(l.em)) ?? 0) + l.valor)
     const grupos: Array<{ dia: string; data: Date; linhas: Linha[]; soma: number }> = []
     for (const l of visiveis.slice(0, limite)) {
       const k = diaChave(l.em), ultimo = grupos[grupos.length - 1]
-      const vale = l.situacao !== 'reembolsada' && !l.marca ? l.valor : 0
-      if (ultimo?.dia === k) { ultimo.linhas.push(l); ultimo.soma += vale }
-      else grupos.push({ dia: k, data: l.em, linhas: [l], soma: vale })
+      if (ultimo?.dia === k) ultimo.linhas.push(l)
+      else grupos.push({ dia: k, data: l.em, linhas: [l], soma: totaisDoDia.get(k) ?? 0 })
     }
     return grupos
   }, [visiveis, limite])
@@ -90,7 +91,7 @@ export default function Cobrancas() {
   const contagem = (s: FiltroSituacao) => doMeio.filter(l => s === 'todas' || l.situacao === s).length
 
   return <div className="a3-pilha a3-pilha--larga">
-    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Valores brutos; taxa e líquido estão no extrato do Mercado Pago (o banco não guarda a taxa).${p.testes ? ' Compras de administrador e de teste aparecem com o selo e ficam fora dos totais.' : ''}`}
+    <Cabeca area="Financeiro" titulo={parte.rotulo} pergunta={`${parte.pergunta} Totais acompanham os filtros e a busca. Valores brutos; taxas e líquido ficam no Mercado Pago.${p.testes ? ' Compras de administrador e de teste aparecem com o selo e ficam fora dos totais.' : ''}`}
       acoes={<><Segmento rotulo="Período" valor={periodo} aoMudar={definirPeriodo} opcoes={PERIODOS} />
         <button type="button" className="a3-botao a3-botao--contorno" onClick={exportar} disabled={!visiveis.length}><Icone nome="baixar" tamanho={15} />CSV</button></>} />
     {p.avisoCobrancas && <Faixa tom="aviso" titulo="Cobranças gravadas indisponíveis">{p.avisoCobrancas}</Faixa>}
@@ -137,6 +138,6 @@ export default function Cobrancas() {
       {visiveis.length > limite && <div className="a3-paginacao"><span>{inteiro(limite)} de {inteiro(visiveis.length)}</span>
         <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirLimite(n => n + POR_VEZ)}>Mostrar mais {Math.min(POR_VEZ, visiveis.length - limite)}</button></div>}
     </section>
-    <p className="a3-mudo a3-pequeno">Estimada: renovação antiga do cartão refeita pelo período do plano (o banco guarda só a última cobrança de cada cartão) ou assinatura paga sem a cobrança gravada.</p>
+    <p className="a3-mudo a3-pequeno">Os totais por dia consideram todas as linhas filtradas, inclusive as ainda não carregadas. Estimada: renovação antiga do cartão refeita pelo período do plano (o banco guarda só a última cobrança de cada cartão) ou assinatura paga sem a cobrança gravada.</p>
   </div>
 }

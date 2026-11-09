@@ -49,8 +49,8 @@ try {
     const lista = m.cobrancas([cartao])
     assert.deepEqual(lista.map(c => m.DIA(c.em)), ['2025-12-31', '2026-01-31', '2026-02-28', '2026-03-31'], `datas do cartão (${fuso})`)
     assert.deepEqual(lista.map(c => c.tipo), ['nova', 'renovacao', 'renovacao', 'renovacao'])
-    // Só a última é a gravada; as anteriores são reconstruídas.
-    assert.deepEqual(lista.map(c => c.estimada), [true, true, true, false])
+    // Sem valor histórico, até a última cobrança tem montante estimado.
+    assert.deepEqual(lista.map(c => c.estimada), [true, true, true, true])
     const meses = m.mesAMes([cartao], 12, sp('2026-04-10T12:00:00'))
     assert.equal(meses.length, 12)
     assert.equal(meses.at(-1).chave, '2026-04')

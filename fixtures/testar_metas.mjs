@@ -64,9 +64,9 @@ try {
   assert.equal(Math.round(p.partes.cartao * 100), 20940); assert.equal(Math.round(p.partes.pix * 100), 3990)
   assert.ok(p.faturamento.baixo <= p.faturamento.centro && p.faturamento.centro <= p.faturamento.alto)
 
-  // 7b. Começo do mês: com 4 dias, o ritmo real pesa 4/14 e o resto vem do ritmo da meta.
+  // 7b. Objetivo não muda previsão: com 4 dias, vale o ritmo observado e há aviso de amostra pequena.
   const cedo = m.projetarMes({ agora: sp('2026-11-05T00:00:00').getTime(), cadastros: Array.from({ length: 40 }, () => sp('2026-11-02T12:00:00')), cobrancas: [], assinaturas: [], taxaPix: 0.6, meta: { cadastros: 102, novosPagantes: 22 } })
-  const ritmo = (4 / 14) * (40 / 4) + (10 / 14) * (102 / 30)
+  const ritmo = 40 / 4
   assert.equal(Math.round(cedo.cadastros.centro), Math.round(40 + ritmo * 26))
   assert.equal(cedo.amostraPequena, true)
 

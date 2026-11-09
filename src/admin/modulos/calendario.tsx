@@ -15,7 +15,7 @@ import { CENARIOS, type Pagante } from './Receita'
  */
 
 type Tipo = 'mensal-cartao' | 'mensal-pix' | 'semestral' | 'anual'
-interface Item { id: string; nome: string; plano: string; meio: 'cartao' | 'pix'; valor: number; tipo: Tipo; pago: boolean }
+interface Item { id: string; nome: string; plano: string; meio: 'cartao' | 'pix'; valor: number; tipo: Tipo; pago: boolean; ciclo?: number }
 
 const tipoDe = (plano: string, meio: 'cartao' | 'pix'): Tipo => plano === 'semestral' ? 'semestral' : plano === 'anual' ? 'anual' : meio === 'pix' ? 'mensal-pix' : 'mensal-cartao'
 const ROTULO: Record<Tipo, string> = { 'mensal-cartao': 'Mensal · cartão', 'mensal-pix': 'Mensal · Pix', semestral: 'Semestral', anual: 'Anual' }
@@ -23,7 +23,7 @@ const SEMANA = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom']
 const DIA_MS = 86_400_000
 
 export function Calendario({ pagamentos, todas, assinaturas, taxa, escolher }: {
-  pagamentos: Array<{ quem: Pagante; em: Date; chave: string }>; todas: Cobranca[]; assinaturas: LinhaAssinatura[]
+  pagamentos: Array<{ quem: Pagante; em: Date; chave: string; ciclo: number }>; todas: Cobranca[]; assinaturas: LinhaAssinatura[]
   taxa: number; escolher: (t: number) => void
 }) {
   const nav = usarNav()
@@ -40,7 +40,7 @@ export function Calendario({ pagamentos, todas, assinaturas, taxa, escolher }: {
     // O que já entrou no mês atual (dias que já passaram, e hoje até agora).
     for (const c of todas) { const d = DIA(c.em); if (d.slice(0, 7) === meses[0] && d <= hoje) juntar(d, { id: c.id_usuario, nome: nomes.get(c.id_usuario) ?? 'Assinante', plano: c.plano, meio: c.meio, valor: c.valor, tipo: tipoDe(c.plano, c.meio), pago: true }) }
     // O que ainda vai vencer, do agora até o fim do mês que vem.
-    for (const x of pagamentos) { const d = DIA(x.em); if (meses.includes(d.slice(0, 7))) juntar(d, { id: x.quem.id, nome: x.quem.nome, plano: x.quem.plano, meio: x.quem.meio, valor: x.quem.preco, tipo: tipoDe(x.quem.plano, x.quem.meio), pago: false }) }
+    for (const x of pagamentos) { const d = DIA(x.em); if (meses.includes(d.slice(0, 7))) juntar(d, { id: x.quem.id, nome: x.quem.nome, plano: x.quem.plano, meio: x.quem.meio, valor: x.quem.preco, tipo: tipoDe(x.quem.plano, x.quem.meio), pago: false, ciclo: x.ciclo }) }
     return m
   }, [pagamentos, todas, assinaturas, hoje, meses[0]]) // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -49,7 +49,7 @@ export function Calendario({ pagamentos, todas, assinaturas, taxa, escolher }: {
   const diasNoMes = new Date(Date.UTC(ano, mes, 0)).getUTCDate()
   const primeiroSemana = (new Date(Date.UTC(ano, mes - 1, 1)).getUTCDay() + 6) % 7
   const diasDoMes = Array.from({ length: diasNoMes }, (_, i) => `${chave}-${String(i + 1).padStart(2, '0')}`)
-  const valorEsperado = (it: Item) => it.pago ? it.valor : it.meio === 'pix' ? it.valor * taxa : it.valor
+  const valorEsperado = (it: Item) => it.pago ? it.valor : it.meio === 'pix' ? it.valor * taxa ** (it.ciclo ?? 1) : it.valor
   const doMes = diasDoMes.flatMap(d => porDia.get(d) ?? [])
   const soma = (l: Item[], f: (i: Item) => number) => l.reduce((s, i) => s + f(i), 0)
   const recebido = soma(doMes.filter(i => i.pago), i => i.valor)
@@ -78,9 +78,9 @@ export function Calendario({ pagamentos, todas, assinaturas, taxa, escolher }: {
 
       <div className="cal__placar">
         {mesI === 0 && <div className="cal__placar-item cal__placar-item--pago"><span>Já entrou</span><b>{reais(recebido)}</b><small>até hoje</small></div>}
-        <div className="cal__placar-item"><span>Cartão (certo)</span><b>{reais(certo)}</b><small>{inteiro(doMes.filter(i => !i.pago && i.meio === 'cartao').length)} cobranças {mesI === 0 ? 'até o fim do mês' : 'no mês'}</small></div>
+        <div className="cal__placar-item"><span>Cartão agendado</span><b>{reais(certo)}</b><small>{inteiro(doMes.filter(i => !i.pago && i.meio === 'cartao').length)} cobranças {mesI === 0 ? 'até o fim do mês' : 'no mês'}</small></div>
         <div className="cal__placar-item cal__placar-item--pix"><span>Pix, se todos pagarem</span><b>{reais(pixTodos)}</b><small>{inteiro(doMes.filter(i => !i.pago && i.meio === 'pix').length)} vencimentos</small></div>
-        <div className="cal__placar-item cal__placar-item--total"><span>Total com {Math.round(taxa * 100)}% do Pix</span><b>{reais(recebido + certo + pixTodos * taxa)}</b><small>se todos: {reais(recebido + certo + pixTodos)}</small></div>
+        <div className="cal__placar-item cal__placar-item--total"><span>Total com {Math.round(taxa * 100)}% do Pix</span><b>{reais(soma(doMes, valorEsperado))}</b><small>se todos: {reais(recebido + certo + pixTodos)}</small></div>
       </div>
 
       <ul className="cal__legenda">

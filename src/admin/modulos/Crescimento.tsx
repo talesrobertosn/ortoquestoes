@@ -4,26 +4,23 @@ import { acertoAposRevisao, acertoReal, baixarCsv, dataHora as dataHoraAntiga, p
 import { cobrancas as cobrancasDe } from '../../componentes/admin/receita'
 import { SERVICO_GERAL, chaveServico, servicoConhecido } from '../../componentes/admin/servicosConhecidos'
 import { usarRpc } from '../../componentes/admin/usarRpc'
-import { serieLimpa, usarFunil, usarRetencao, usarSerie } from '../dados/consultas'
+import { serieLimpa } from '../dados/consultas'
 import { usarPainel } from '../dados/painel'
 import type { LinhaUsuario } from '../dados/pessoas'
 import { Icone } from '../ui/Icone'
 import { inteiro, pct } from '../ui/formato'
-import { Achado, Barras, Colunas, Funil, type PontoColuna } from '../ui/graficos'
+import { Barras, Colunas, type PontoColuna } from '../ui/graficos'
 import { Carregando, Estado, Faixa, Segmento } from '../ui/kit'
 import { Tabela } from '../ui/tabela'
 import { contarPorPeriodo, type Agrupamento } from './ritmo'
 import { FaixaMetas } from './metasResumo'
-import { Canais, Duplicadas, ForaDoPublico, FunilCompleto, RetencaoPorTipo } from './qualidade'
+import { PulsoCrescimento, JornadaDeCompra, usarJornada } from './PulsoCrescimento'
+import { Canais, Duplicadas, ForaDoPublico, RetencaoPorTipo } from './qualidade'
 
 /**
- * Crescimento, refeito do zero em 04/11/2026 (Tales: "uma página só, rolando; gráficos separados, não juntos; o
- * máximo de informação, mastigada; as cores da tela inicial"). De cima para baixo:
- *   1. O que os números dizem: conclusões em frase (quando se cadastram, quando assinam, quando estudam…).
- *   2. Cadastros: um gráfico por dia, um por semana, um por mês.
- *   3. Assinantes novos: idem, em ouro.
- *   4. Quando: dia da semana e hora de cadastros, assinaturas e estudo.
- *   5. Funil · 6. Retenção · 7. Estudo · 8. Quem são · 9. De onde vêm · 10. Indicações.
+ * Crescimento (08/11/2026): movimento comparável e investigação visual na frente;
+ * jornada/coortes na mesma base, e todos os relatórios úteis nas seções de detalhe.
+ * Gráficos separados de dia/semana/mês continuam disponíveis em expansão.
  */
 
 /* ───────────── Datas de São Paulo ───────────── */
@@ -60,18 +57,19 @@ const frase = (q: ReturnType<typeof quando>) => `${artigo(q.melhor.dia)} ${DIAS[
 
 /* ───────────── Página ───────────── */
 
-const SECOES: Array<[string, string]> = [['cr-achados', 'Resumo'], ['cr-cadastros', 'Cadastros'], ['cr-assinantes', 'Assinantes'], ['cr-quando', 'Quando'], ['cr-funil', 'Funil'], ['cr-retencao', 'Retenção'], ['cr-estudo', 'Estudo'], ['cr-perfis', 'Quem são'], ['cr-origem', 'De onde vêm'], ['cr-indicacoes', 'Indicações'], ['cr-dados', 'Qualidade dos dados']]
+const SECOES: Array<[string,string]> = [['cr-pulso','Movimento'],['cr-funil','Da chegada à compra'],['cr-estudo','Estudo'],['cr-retencao','Continuidade'],['cr-quando','Horários'],['cr-perfis','Público'],['cr-origem','Canais'],['cr-indicacoes','Indicações'],['cr-dados','Qualidade']]
 
 export default function Crescimento() {
   const p = usarPainel()
-  const serieQ = usarSerie(365)
-  const { funil, carregando: carregandoFunil } = usarFunil()
-  const retQ = usarRetencao()
+  const jornadaQ = usarJornada()
+  const serieQ = { dados: jornadaQ.dados?.serie, carregando: jornadaQ.carregando }
+  const retQ = { dados: jornadaQ.dados?.coortes, carregando: jornadaQ.carregando }
 
   const base = useMemo(() => {
     if (!p.usuariosReais || !p.reais) return null
+    const publico = new Set(p.usuariosReais.map(u => u.id_usuario))
     const primeira = new Map<string, Date>()
-    for (const c of cobrancasDe(p.reais, p.cobrancas)) if (c.tipo === 'nova' && !primeira.has(c.id_usuario)) primeira.set(c.id_usuario, c.em)
+    for (const c of cobrancasDe(p.reais, p.cobrancas)) if (publico.has(c.id_usuario) && c.tipo === 'nova' && !primeira.has(c.id_usuario)) primeira.set(c.id_usuario, c.em)
     const cadastros = p.usuariosReais.map(u => new Date(u.criado_em)).filter(d => Number.isFinite(d.getTime()))
     const assinaturas = [...primeira.values()]
     const contar = (a: Agrupamento) => { const [c, s] = contarPorPeriodo([cadastros, assinaturas], a); return { c, s } }
@@ -94,24 +92,26 @@ export default function Crescimento() {
 
   const coortes = Array.isArray(retQ.dados) ? retQ.dados.map(c => ({ semana: String(c.semana).slice(0, 10), cadastros: Number(c.cadastros), e1: Number(c.estudaram_1a_semana), v2: Number(c.voltaram_2a_semana) })) : null
 
-  return <div className="a3-pilha a3-pilha--larga cr">
-    <header className="cr-topo">
+  return <div className="a3-pilha a3-pilha--larga cr ng">
+    <header className="ng-cabeca">
       <span className="a3-rotulo">Crescimento</span>
-      <h1 className="a3-titulo-1">Quem chega, quem assina e quem fica</h1>
-      <p>Tudo numa página só: role para baixo ou pule para a parte que quer ver. Contas de teste e de administrador ficam de fora; datas no relógio de São Paulo.</p>
-      <nav className="cr-indice" aria-label="Partes da página">{SECOES.map(([id, nome]) => <a key={id} href={`#${id}`} onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>{nome}</a>)}</nav>
+      <h1 className="a3-titulo-1">Seu crescimento, com contexto</h1>
+      <p>Acompanhe quem chega, quem compra e quem continua estudando.</p>
+      <nav className="ng-ancoras" aria-label="Partes da página">{SECOES.map(([id, nome]) => <a key={id} href={`#${id}`} onClick={e => { e.preventDefault(); document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' }) }}>{nome}</a>)}</nav>
     </header>
 
-    <FaixaMetas titulo="Metas de crescimento" chaves={['cadastros', 'novosPagantes', 'ativosFim']} />
+    <PulsoCrescimento />
+    <FaixaMetas titulo="Objetivos do mês" chaves={['cadastros', 'novosPagantes']} />
 
     {!base ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="As contas não carregaram" texto={p.erroDados} /> : <Carregando linhas={8} texto="Contando cadastros e assinaturas…" />}</div> : <>
-      <Achados base={base} estudo={estudo} funil={funil} coortes={coortes} usuarios={p.usuariosReais ?? []} />
+      <JornadaDeCompra estudos={jornadaQ.dados?.primeiros ?? null} carregando={jornadaQ.carregando} erro={jornadaQ.erro} />
+      <details className="ng-detalhes"><summary>Cadastros e primeiras assinaturas em gráficos separados <small>Dia, semana e mês</small></summary>
 
       <Secao id="cr-cadastros" numero={1} titulo="Cadastros" texto="Quantas contas novas foram criadas. Cada gráfico conta de um jeito; o último período ainda está em andamento (tracejado).">
         <div className="cr-grade-3">
           <CartaoContagem titulo="Por dia" sub="últimos 30 dias" pontos={base.dia.c} nomes={['Hoje', 'Ontem', 'dia']} />
           <CartaoContagem titulo="Por semana" sub="segunda a domingo" pontos={base.semana.c} nomes={['Esta semana', 'Semana passada', 'semana']} />
-          <CartaoContagem titulo="Por mês" sub="desde o começo" pontos={base.mes.c} nomes={['Este mês', 'Mês passado', 'mês']} />
+          <CartaoContagem titulo="Por mês" sub="últimos 12 meses" pontos={base.mes.c} nomes={['Este mês', 'Mês passado', 'mês']} />
         </div>
       </Secao>
 
@@ -119,9 +119,21 @@ export default function Crescimento() {
         <div className="cr-grade-3">
           <CartaoContagem titulo="Por dia" sub="últimos 30 dias" pontos={base.dia.s} nomes={['Hoje', 'Ontem', 'dia']} cor="ouro" />
           <CartaoContagem titulo="Por semana" sub="segunda a domingo" pontos={base.semana.s} nomes={['Esta semana', 'Semana passada', 'semana']} cor="ouro" />
-          <CartaoContagem titulo="Por mês" sub="desde o começo" pontos={base.mes.s} nomes={['Este mês', 'Mês passado', 'mês']} cor="ouro" />
+          <CartaoContagem titulo="Por mês" sub="últimos 12 meses" pontos={base.mes.s} nomes={['Este mês', 'Mês passado', 'mês']} cor="ouro" />
         </div>
-        <Conversao cadastros={base.semana.c} assinantes={base.semana.s} meses={{ c: base.mes.c, s: base.mes.s }} />
+
+      </Secao>
+
+      </details>
+
+      <Secao id="cr-estudo" numero={6} titulo="Estudo no dia a dia" texto="Pessoas diferentes que estudaram e questões respondidas em cada dia. Hoje ainda está em andamento.">
+        <Estudo dias={estudo?.dias ?? null} carregando={serieQ.carregando} />
+      </Secao>
+
+      <Secao id="cr-retencao" numero={5} titulo="Quem fica" texto="Cada semana de cadastro: quantos estudaram na primeira semana e quantos voltaram na segunda.">
+        <RetencaoPorTipo />
+        <Retencao coortes={coortes} carregando={retQ.carregando} />
+        <Adocao />
       </Secao>
 
       <Secao id="cr-quando" numero={3} titulo="Quando as coisas acontecem" texto="Dia da semana e hora do dia, desde o começo. A coluna mais alta fica com a cor cheia.">
@@ -146,28 +158,6 @@ export default function Crescimento() {
         <Turnos qc={base.qc} qa={base.qa} />
       </Secao>
 
-      <Secao id="cr-funil" numero={4} titulo="Funil" texto="Do cadastro à primeira renovação, com as etapas que o site já mede. Embaixo, o funil resumido de todas as contas desde o começo.">
-        <FunilCompleto funil={funil} />
-        <div className="cr-cartao">
-          {carregandoFunil && !funil ? <Carregando linhas={6} /> : !funil ? <Estado compacto tipo="erro" titulo="Funil indisponível" texto={p.erroDados || 'funil_admin não respondeu.'} /> : <>
-            <Funil etapas={[{ nome: 'Cadastraram', valor: funil.cadastrados }, { nome: 'Confirmaram o e-mail', valor: funil.confirmaram, base: 'cadastros' },
-              { nome: 'Responderam a 1ª questão', valor: funil.responderam, base: 'quem confirmou' }, { nome: 'Passaram de 50 questões', valor: funil.passaram_50, base: 'quem começou' },
-              { nome: 'Passaram de 500', valor: funil.passaram_500, base: 'quem passou de 50' }, { nome: 'Assinaram', valor: funil.assinaram, base: 'quem respondeu a 1ª questão', sobre: 2 }]} />
-            <p className="cr-conclusao" style={{ marginTop: 12 }}>De cada 100 cadastros, <b>{Math.round((funil.responderam / Math.max(1, funil.cadastrados)) * 100)}</b> respondem a primeira questão e <b>{Math.round((funil.assinaram / Math.max(1, funil.cadastrados)) * 100)}</b> assinam.</p>
-          </>}
-        </div>
-      </Secao>
-
-      <Secao id="cr-retencao" numero={5} titulo="Quem fica" texto="Cada semana de cadastro: quantos estudaram na primeira semana e quantos voltaram na segunda.">
-        <RetencaoPorTipo />
-        <Retencao coortes={coortes} carregando={retQ.carregando} />
-        <Adocao />
-      </Secao>
-
-      <Secao id="cr-estudo" numero={6} titulo="Estudo no dia a dia" texto="Pessoas diferentes que estudaram e questões respondidas em cada dia. Hoje ainda está em andamento.">
-        <Estudo dias={estudo?.dias ?? null} carregando={serieQ.carregando} />
-      </Secao>
-
       <Perfis />
       <Indicacoes />
       <Secao id="cr-dados" numero={10} titulo="Qualidade dos dados" texto="Contas fora do público-alvo (residentes e ortopedistas) e possíveis contas repetidas. Nada é apagado ou fundido.">
@@ -178,51 +168,14 @@ export default function Crescimento() {
   </div>
 }
 
-function Secao({ id, numero, titulo, texto, children }: { id: string; numero: number; titulo: string; texto: string; children: ReactNode }) {
+function Secao({ id, titulo, texto, children }: { id: string; numero: number; titulo: string; texto: string; children: ReactNode }) {
   return <section id={id} className="cr-secao a3-ancora" aria-labelledby={`${id}-t`}>
-    <header className="cr-secao__cabeca"><span className="cr-secao__numero" aria-hidden="true">{numero}</span><div><h2 id={`${id}-t`}>{titulo}</h2><p>{texto}</p></div></header>
+    <header className="cr-secao__cabeca"><div><h2 id={`${id}-t`}>{titulo}</h2><p>{texto}</p></div></header>
     {children}
   </section>
 }
 
 /* ───────────── 0. Resumo em frases ───────────── */
-
-function Achados({ base, estudo, funil, coortes, usuarios }: {
-  base: { qc: ReturnType<typeof quando>; qa: ReturnType<typeof quando>; semana: { c: PontoColuna[]; s: PontoColuna[] }; mes: { c: PontoColuna[]; s: PontoColuna[] } }
-  estudo: { melhorDia: number; mediaPessoas: number[] } | null; funil: { cadastrados: number; responderam: number; assinaram: number } | null
-  coortes: Array<{ cadastros: number; e1: number; v2: number }> | null; usuarios: LinhaUsuario[]
-}) {
-  const n = (l: PontoColuna[], i: number) => l[l.length - 1 - i]?.partes[0] ?? 0
-  const cadSem = n(base.semana.c, 0), cadAnt = n(base.semana.c, 1), assSem = n(base.semana.s, 0), assAnt = n(base.semana.s, 1)
-  const origem = useMemo(() => {
-    const m = new Map<string, number>()
-    for (const u of usuarios) if (u.origem) { const r = rotuloOrigem(u.origem); m.set(r, (m.get(r) ?? 0) + 1) }
-    const l = [...m].sort((a, b) => b[1] - a[1])
-    const uf = new Map<string, number>(); for (const u of usuarios) if (u.uf) uf.set(u.uf, (uf.get(u.uf) ?? 0) + 1)
-    const ufs = [...uf].sort((a, b) => b[1] - a[1])
-    return { top: l[0], total: l.reduce((s, x) => s + x[1], 0), uf: ufs[0], comUf: ufs.reduce((s, x) => s + x[1], 0) }
-  }, [usuarios])
-  const ret = coortes?.filter(c => c.cadastros > 0) ?? []
-  const somaC = ret.reduce((s, c) => s + c.cadastros, 0)
-  const e1 = somaC ? Math.round((ret.reduce((s, c) => s + c.e1, 0) / somaC) * 100) : null
-  const v2 = somaC ? Math.round((ret.reduce((s, c) => s + c.v2, 0) / somaC) * 100) : null
-  const comparar = (a: number, b: number) => a > b ? `mais que os ${inteiro(b)} da semana passada` : a < b ? `menos que os ${inteiro(b)} da semana passada` : 'o mesmo que na semana passada'
-  return <section id="cr-achados" className="a3-ancora" aria-label="O que os números dizem">
-    <div className="a3-achados">
-      <Achado icone={<Icone nome="pessoas" tamanho={18} />} titulo="Cadastros nesta semana"><b>{fim(cadSem, 'conta nova', 'contas novas')}</b>, {comparar(cadSem, cadAnt)}.</Achado>
-      <Achado tom="ouro" icone={<Icone nome="estrela" tamanho={18} />} titulo="Assinantes novos nesta semana"><b>{fim(assSem, 'assinante novo', 'assinantes novos')}</b>, {comparar(assSem, assAnt)}.</Achado>
-      {base.qc.total > 0 && <Achado icone={<Icone nome="calendario" tamanho={18} />} titulo="Quando se cadastram">As pessoas costumam se cadastrar mais <b>{frase(base.qc)}</b>.</Achado>}
-      {base.qa.total > 0 && <Achado tom="ouro" icone={<Icone nome="relogio" tamanho={18} />} titulo="Quando assinam">As pessoas costumam assinar mais <b>{frase(base.qa)}</b>.</Achado>}
-      {estudo && <Achado icone={<Icone nome="livro" tamanho={18} />} titulo="Quando estudam">O dia com mais gente estudando é <b>{DIAS[estudo.melhorDia]}</b>, com {inteiro(Math.round(estudo.mediaPessoas[estudo.melhorDia]))} pessoas em média.</Achado>}
-      {funil && funil.cadastrados > 0 && <Achado icone={<Icone nome="funil" tamanho={18} />} titulo="Do cadastro à assinatura">De cada 100 contas, <b>{Math.round((funil.responderam / funil.cadastrados) * 100)} começam a estudar</b> e <b>{Math.round((funil.assinaram / funil.cadastrados) * 100)} assinam</b>.</Achado>}
-      {e1 !== null && <Achado icone={<Icone nome="atualizar" tamanho={18} />} titulo="Quem fica"><b>{e1}%</b> estudam na primeira semana e <b>{v2}%</b> voltam na segunda.</Achado>}
-      {origem.top && <Achado icone={<Icone nome="mapa" tamanho={18} />} titulo="De onde vêm">A origem que mais traz gente é <b>{origem.top[0]}</b> ({Math.round((origem.top[1] / Math.max(1, origem.total)) * 100)}% de quem tem origem medida).</Achado>}
-      {origem.uf && <Achado icone={<Icone nome="mapa" tamanho={18} />} titulo="Estado com mais contas"><b>{origem.uf[0]}</b>, com {inteiro(origem.uf[1])} contas ({Math.round((origem.uf[1] / Math.max(1, origem.comUf)) * 100)}% de quem informou).</Achado>}
-    </div>
-  </section>
-}
-
-/* ───────────── 1 e 2. Contagens ───────────── */
 
 function CartaoContagem({ titulo, sub, pontos, nomes, cor = 'verde' }: { titulo: string; sub: string; pontos: PontoColuna[]; nomes: [string, string, string]; cor?: 'verde' | 'ouro' }) {
   const v = pontos.map(x => x.partes[0])
@@ -248,20 +201,6 @@ function CartaoContagem({ titulo, sub, pontos, nomes, cor = 'verde' }: { titulo:
   </article>
 }
 
-function Conversao({ cadastros, assinantes, meses }: { cadastros: PontoColuna[]; assinantes: PontoColuna[]; meses: { c: PontoColuna[]; s: PontoColuna[] } }) {
-  const taxa = (c: PontoColuna[], s: PontoColuna[]) => c.map((x, i) => ({ longo: x.longo, curto: x.curto, parcial: x.parcial, partes: [x.partes[0] ? Math.round(((s[i]?.partes[0] ?? 0) / x.partes[0]) * 1000) / 10 : 0] }))
-  const sem = taxa(cadastros, assinantes), mes = taxa(meses.c, meses.s)
-  const pctF = (n: number) => `${n.toLocaleString('pt-BR', { maximumFractionDigits: 1 })}%`
-  return <div className="cr-grade-2">
-    <div className="cr-cartao"><h3>Conversão por semana <small>assinantes novos ÷ cadastros da mesma semana</small></h3>
-      <Colunas descricao="Conversão por semana" pontos={sem} series={[{ nome: 'Conversão' }]} formato={pctF} cor="claro" altura={180} /></div>
-    <div className="cr-cartao"><h3>Conversão por mês <small>correlação no tempo, não a mesma pessoa</small></h3>
-      <Colunas descricao="Conversão por mês" pontos={mes} series={[{ nome: 'Conversão' }]} formato={pctF} cor="claro" altura={180} /></div>
-  </div>
-}
-
-/* ───────────── 3. Quando ───────────── */
-
 function CartaoQuando({ titulo, q, tipo, cor = 'verde', conclusao }: { titulo: string; q: ReturnType<typeof quando>; tipo: 'semana' | 'hora'; cor?: 'verde' | 'ouro'; conclusao: ReactNode }) {
   const pontos: PontoColuna[] = tipo === 'semana' ? q.semana.map((n, i) => ({ longo: DIAS[i], curto: DIAS_CURTOS[i], partes: [n] }))
     : q.hora.map((n, h) => ({ longo: `Das ${h}h às ${h + 1}h`, curto: `${h}h`, partes: [n] }))
@@ -285,7 +224,7 @@ function Turnos({ qc, qa }: { qc: ReturnType<typeof quando>; qa: ReturnType<type
 const ddmm = (dia: string) => `${dia.slice(8, 10)}/${dia.slice(5, 7)}`
 function Retencao({ coortes, carregando }: { coortes: Array<{ semana: string; cadastros: number; e1: number; v2: number }> | null; carregando: boolean }) {
   if (carregando && !coortes) return <div className="cr-cartao"><Carregando linhas={6} /></div>
-  if (!coortes) return <div className="cr-cartao"><Estado compacto tipo="erro" titulo="Retenção indisponível" texto="retencao_admin não respondeu." /></div>
+  if (!coortes) return <div className="cr-cartao"><Estado compacto tipo="erro" titulo="Retenção indisponível" texto="Não foi possível carregar as coortes. Use Atualizar para tentar novamente." /></div>
   if (!coortes.length) return <div className="cr-cartao"><Estado compacto titulo="Ainda não há semanas completas" /></div>
   const lista = [...coortes].sort((a, b) => b.semana.localeCompare(a.semana)).slice(0, 12)
   return <article className="cr-cartao">

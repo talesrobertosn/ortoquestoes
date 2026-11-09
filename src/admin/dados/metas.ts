@@ -108,7 +108,7 @@ export function realizadoPorMes(meses: string[], cadastros: Date[], cobrancas: C
 
 /* ───────────── Projeção do mês corrente ───────────── */
 
-/** z de 90% (bilateral): o intervalo cobre o resultado em cerca de 9 de cada 10 meses parecidos. */
+/** Aproximação normal de Poisson para contagens; cenários financeiros não são intervalos calibrados. */
 const Z90 = 1.645
 export interface Faixa { centro: number; baixo: number; alto: number }
 export interface ProjecaoMes {
@@ -121,14 +121,13 @@ export interface ProjecaoMes {
 }
 
 /**
- * Contagem de Poisson: o ritmo até hoje projetado nos dias que faltam, com o intervalo de 90%. Nos primeiros
- * 14 dias, o ritmo é misturado com o ritmo da meta (peso do real = dias passados ÷ 14): poucos dias de dado
- * não viram previsão confiável. Sem meta, vale só o ritmo real.
+ * Ritmo observado até hoje projetado nos dias que faltam. A aproximação normal de Poisson
+ * fornece uma faixa de sensibilidade de contagens, sem misturar objetivo e previsão.
+ * Poucos dias de dado são sinalizados na interface; não há garantia estatística para receita.
  */
-function poisson(ate: number, diasPassados: number, diasRestantes: number, meta?: number, diasNoMes = 30): Faixa {
+function poisson(ate: number, diasPassados: number, diasRestantes: number, _meta?: number, _diasNoMes = 30): Faixa {
   const ritmoReal = diasPassados > 0 ? ate / diasPassados : 0
-  const peso = meta === undefined ? 1 : Math.min(1, diasPassados / 14)
-  const ritmo = peso * ritmoReal + (1 - peso) * ((meta ?? 0) / diasNoMes)
+  const ritmo = ritmoReal
   const esperado = ritmo * diasRestantes
   const d = Z90 * Math.sqrt(Math.max(esperado, 0))
   return { centro: ate + esperado, baixo: ate + Math.max(0, esperado - d), alto: ate + esperado + d }
@@ -137,7 +136,7 @@ function poisson(ate: number, diasPassados: number, diasRestantes: number, meta?
 /**
  * Metodologia (documentada em docs/admin/METAS.md):
  * - Cadastros e primeiras compras: o ritmo diário do mês até agora, projetado nos dias que faltam
- *   (modelo de Poisson), com intervalo de 90%; nos primeiros 14 dias, misturado com o ritmo da meta.
+ *   (aproximação de Poisson para contagens); a meta não altera a previsão.
  * - Faturamento: o que já entrou + as renovações agendadas até o fim do mês, pelo calendário de cada pessoa
  *   (cartão que renova entra inteiro; Pix entra pela taxa de recompra escolhida, com faixa de 30% a 100%)
  *   + as compras novas esperadas × o valor médio das compras novas do mês (ou o mensal, sem compras ainda).
@@ -147,13 +146,13 @@ function poisson(ate: number, diasPassados: number, diasRestantes: number, meta?
  */
 export function projetarMes({ agora = Date.now(), cadastros, cobrancas, assinaturas, taxaPix, meta }: {
   agora?: number; cadastros: Date[]; cobrancas: Cobranca[]; assinaturas: AssinaturaBase[]; taxaPix: number
-  /** A meta do mês, para suavizar a projeção dos primeiros dias. */
+  /** Compatibilidade dos chamadores: objetivo não altera o ritmo observado nem a projeção. */
   meta?: Pick<MetaMes, 'cadastros' | 'novosPagantes'>
 }): ProjecaoMes {
   const chave = MES(new Date(agora))
   const inicio = inicioDoMes(chave).getTime(), fimMes = inicioDoMes(somarMesChave(chave, 1)).getTime()
   const diasNoMes = Math.round((fimMes - inicio) / 86_400_000)
-  const diasPassados = Math.max(0.5, (agora - inicio) / 86_400_000)
+  const diasPassados = Math.max(1 / 24, (agora - inicio) / 86_400_000)
   const diasRestantes = Math.max(0, (fimMes - agora) / 86_400_000)
   const noMes = (t: number) => t >= inicio && t < agora
   const cad = cadastros.filter(d => noMes(d.getTime())).length
@@ -190,7 +189,7 @@ export function projetarMes({ agora = Date.now(), cadastros, cobrancas, assinatu
     amostraPequena: diasPassados < 7 || novas.length + cad < 5,
     cadastros: fCad,
     novosPagantes: fNovas,
-    faturamento: { centro: fat(taxaPix, novasEsperadas), baixo: fat(0.3, fNovas.baixo - novas.length), alto: fat(1, fNovas.alto - novas.length) },
+    faturamento: { centro: fat(taxaPix, novasEsperadas), baixo: fat(Math.min(0.3, taxaPix), fNovas.baixo - novas.length), alto: fat(1, fNovas.alto - novas.length) },
     ativosFim: { centro: ativos(novasEsperadas, saindo), baixo: ativos(fNovas.baixo - novas.length, saindo + pixPessoas * Math.max(0, taxaPix - 0.3)), alto: ativos(fNovas.alto - novas.length, saindo - pixPessoas * (1 - taxaPix)) },
     receitaEquivalente: { centro: rme(novasEsperadas, saindoMensal), baixo: rme(fNovas.baixo - novas.length, saindoMensal * 1.4), alto: rme(fNovas.alto - novas.length, 0) },
     partes: { recebido, cartao, pix, pixPessoas, novas: novasEsperadas, ticketNovo },
@@ -212,7 +211,7 @@ export function situacao(projecao: number, meta: number): Situacao {
   const r = projecao / meta
   return r >= 1 ? 'acima' : r >= 0.9 ? 'proximo' : 'abaixo'
 }
-export const ROTULO_SITUACAO: Record<Situacao, string> = { acima: 'Estamos acima da meta', proximo: 'Estamos próximos da meta', abaixo: 'Abaixo do ritmo necessário' }
+export const ROTULO_SITUACAO: Record<Situacao, string> = { acima: 'Projeção alcança o objetivo', proximo: 'Projeção próxima do objetivo', abaixo: 'Projeção abaixo do objetivo' }
 
 /** O esperado até hoje, para metas de fluxo (cadastros, primeiras compras, faturamento): a meta × a parte do mês que já passou. */
 export const esperadoAteHoje = (meta: number, diasPassados: number, diasNoMes: number) => meta * Math.min(1, diasPassados / diasNoMes)

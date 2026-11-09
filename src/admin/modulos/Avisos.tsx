@@ -120,7 +120,7 @@ function Detalhe({ e, visto, comDono, reprocessando, aoReprocessar, aoVisto, aoF
       {comDono && <div><dt>Pessoa</dt><dd>{e.id_usuario ? <>{e.nome ?? e.usuario}{e.nome && e.usuario && <span className="a3-mudo" style={{ display: 'block', fontWeight: 400 }}>{e.usuario}</span>}</> : <span className="a3-mudo" style={{ fontWeight: 400 }}>não deu para ligar a uma pessoa</span>}</dd></div>}
       <div><dt>Número no Mercado Pago</dt><dd className="num">{e.id_recurso ?? '—'}</dd></div>
     </dl>
-    {erro && decisoes !== null && <Decidir e={e} decisoes={decisoes} aoDecidir={aoDecidir} />}
+    {erro && decisoes !== null && <Decidir key={e.id} e={e} decisoes={decisoes} aoDecidir={aoDecidir} />}
     <details className="a3-detalhes-tecnicos"><summary>Detalhes técnicos</summary><span className="a3-codigo">evento {e.id_evento} · tipo {e.tipo ?? '—'}{e.erro ? ` · erro ${e.erro}` : ''}</span></details>
     <div className="a3-acoes-linha">
       {erro && <button type="button" className="a3-botao" disabled={reprocessando !== null} aria-busy={reprocessando === e.id} onClick={aoReprocessar}><Icone nome="atualizar" tamanho={15} />{reprocessando === e.id ? 'Reprocessando… aguardando o resultado' : 'Reprocessar'}</button>}
@@ -176,7 +176,7 @@ function Auditoria({ lista, semSql, aoFicha }: { lista: Inconsistencia[] | null;
   if (!lista) return null
   const grupos = Object.keys(TIPOS_AUDITORIA).map(t => ({ t, l: lista.filter(x => x.tipo === t) }))
   return <section className="av-auditoria" aria-label="Auditoria dos pagamentos">
-    <header><h2>Auditoria dos pagamentos</h2><p>{lista.length ? `${lista.length} ${lista.length === 1 ? 'ponto' : 'pontos'} para conferir. Nada aqui muda assinatura ou pagamento.` : 'Nada fora do lugar: pagamentos, acessos e avisos estão de acordo.'}</p></header>
+    <header><h2>Auditoria dos pagamentos</h2><p>{lista.length ? `${lista.length} ${lista.length === 1 ? 'ponto' : 'pontos'} para conferir. Nada aqui muda assinatura ou pagamento.` : 'Nenhuma inconsistência encontrada nas quatro verificações abaixo.'}</p></header>
     <div className="av-auditoria__grade">{grupos.map(({ t, l }) => <div key={t} className={'av-auditoria__item' + (l.length ? ' tem' : '')}>
       <span>{TIPOS_AUDITORIA[t].titulo}</span><b>{l.length}</b><small>{TIPOS_AUDITORIA[t].texto}</small>
       {l.length > 0 && <ul>{l.slice(0, 5).map((x, k) => <li key={k}>{x.id_usuario ? <button type="button" onClick={() => aoFicha(x.id_usuario!)}>{x.email ?? 'ficha'}</button> : null} <span>{x.detalhe}</span></li>)}</ul>}

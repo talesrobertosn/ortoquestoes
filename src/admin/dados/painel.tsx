@@ -7,7 +7,7 @@ import { usarLidos } from '../../componentes/admin/lidos'
 import { PLANO_CORTESIA } from '../../componentes/admin/rotulos'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, type EventoPagamento } from '../../componentes/admin/pagamentos'
 import { indexarSinais, type SinalUsuario } from '../../componentes/admin/sinais'
-import { CINCO_MIN, usarRpc, type Consulta } from '../../componentes/admin/usarRpc'
+import { CINCO_MIN, recarregarConsultasAtivas, usarRpc, type Consulta } from '../../componentes/admin/usarRpc'
 import type { AssinaturaBase, CobrancaReal } from '../../componentes/admin/receita'
 import type { Parte } from '../rotas'
 import { estaOnline, type LinhaUsuario, type ResumoAdmin } from './pessoas'
@@ -34,7 +34,7 @@ export interface LinhaAssinatura extends AssinaturaBase {
 
 const MIGRACAO = '202609290100_painel_admin.sql'
 /** Partes que mostram a lista de pessoas (ou abrem fichas a partir dela). */
-const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'crescimento', 'metas', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
+const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'financeiro', 'crescimento', 'metas', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
 const COM_COBRANCAS: Parte[] = ['comando', 'agora', 'financeiro', 'metas', 'cobrancas', 'crescimento', 'assinaturas']
 /** Intervalo da lista de pessoas nas telas ao vivo. */
 const TRES_MIN = 180_000
@@ -89,6 +89,8 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const conta = sessao?.user.id
   const assinaturasQ = usarRpc<LinhaAssinatura[]>(conta, 'listar_assinaturas_admin')
   const eventosQ = usarRpc<EventoPagamento[]>(conta, 'listar_eventos_pagamento_admin')
+  const decisoesPagamentoQ = usarRpc<Array<{ id_evento: number; decisao: string }>>(conta, 'listar_decisoes_eventos_admin', {}, { ativo: !!eventosQ.dados?.some(e => e.status_processamento === 'erro') })
+  const decisoesPagamento = useMemo(() => { const m = new Map<number,string>(); for (const d of decisoesPagamentoQ.dados ?? []) if (!m.has(d.id_evento)) m.set(d.id_evento,d.decisao); return m }, [decisoesPagamentoQ.dados])
   const resumoQ = usarRpc<ResumoAdmin[]>(conta, 'resumo_admin', {}, { atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const contadoresQ = usarContadoresAdmin(conta)
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
@@ -129,7 +131,7 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const [aoVivo, definirAoVivo] = useState<{ valor: number; em: number } | null>(null)
   const registrarPendencias = useCallback((valor: number) => definirAoVivo({ valor, em: Date.now() }), [])
   const pendenciasConteudo = aoVivo && aoVivo.em >= (contadoresQ.atualizadoEm ?? 0) ? aoVivo.valor : contadoresQ.dados?.conteudo ?? null
-  const errosPagamento = eventos?.filter(e => e.status_processamento === 'erro' && !lidosPagamento.lidos.has(String(e.id))).length ?? 0
+  const errosPagamento = eventos?.filter(e => e.status_processamento === 'erro' && !['conciliado','ignorado'].includes(decisoesPagamento.get(e.id) ?? '') && !lidosPagamento.lidos.has(String(e.id))).length ?? 0
 
   const cobrancasCarregando = cobrancasQ.dados === undefined && !cobrancasQ.erro
   const avisoCobrancas = !cobrancasQ.erro ? null : funcaoAusente(cobrancasQ.erro)
@@ -138,7 +140,7 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
 
   const { recarregar: r1 } = assinaturasQ, { recarregar: r2 } = eventosQ, { recarregar: r3 } = resumoQ, { recarregar: r4 } = usuariosQ
   const { recarregar: r5 } = contadoresQ, { recarregar: r6 } = cobrancasQ, { recarregar: r7 } = sinaisQ, { recarregar: r8 } = cortesiasQ, { recarregar: r9 } = usoSupabaseQ, { recarregar: r10 } = foraQ
-  const atualizar = useCallback(async () => { await Promise.all([r1(), r2(), r3(), r4(), r5(), r6(), r7(), r8(), r9(), r10()]) }, [r1, r2, r3, r4, r5, r6, r7, r8, r9, r10])
+  const atualizar = useCallback(async () => { await Promise.all([recarregarConsultasAtivas(conta), r1(), r2(), r3(), r4(), r5(), r6(), r7(), r8(), r9(), r10()]) }, [conta, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10])
   const falha = resumoQ.erro ?? usuariosQ.erro
 
   const valor: DadosPainel = {

@@ -14,6 +14,7 @@ import { HospedeAvisos, HospedeConfirmar, Paleta, type ItemPaleta } from './ui/s
 import './admin.css'
 import './modulos.css'
 import './cores.css'
+import './modulos/negocio.css'
 
 const Inicio = lazy(() => import('./modulos/Inicio'))
 const Explorador = lazy(() => import('./modulos/Explorador'))

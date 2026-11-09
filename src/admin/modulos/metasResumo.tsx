@@ -36,7 +36,7 @@ export function FaixaMetas({ chaves, titulo = 'Metas do mês' }: { chaves: Chave
   if (!d) return null
   const { meta, real, proj } = d
   return <a className="mt-faixa" href={nav.link('metas')} onClick={e => { e.preventDefault(); nav.ir('metas') }} aria-label={`${titulo}: abrir Metas`}>
-    <span className="mt-faixa__titulo"><Icone nome="grafico" tamanho={16} />{titulo} · {NOME_MES(meta.mes).replace(/ de \d{4}$/, '')}<small>cenário moderado</small></span>
+    <span className="mt-faixa__titulo"><Icone nome="grafico" tamanho={16} />{titulo} · {NOME_MES(meta.mes).replace(/ de \d{4}$/, '')}<small>realizado / objetivo</small></span>
     {chaves.map(k => {
       const v = real[k] as number, alvo = (meta as MetaMes)[k]
       const s = situacao(proj[k].centro, alvo)
@@ -46,7 +46,7 @@ export function FaixaMetas({ chaves, titulo = 'Metas do mês' }: { chaves: Chave
         <span>{NOME[k]}</span>
         <b>{f(v)} <small>/ {f(alvo)}</small></b>
         <span className="mt-barra"><i style={{ width: `${Math.min(100, alvo ? (v / alvo) * 100 : 100)}%` }} />{esperado !== null && alvo > 0 && <em style={{ left: `${Math.min(100, (esperado / alvo) * 100)}%` }} />}</span>
-        <small className="mt-faixa__sit"><i aria-hidden="true" />{s === 'acima' ? 'acima da meta' : s === 'proximo' ? 'perto da meta' : 'abaixo do ritmo'}</small>
+        <small className="mt-faixa__sit"><i aria-hidden="true" />{s === 'acima' ? 'projeção alcança' : s === 'proximo' ? 'projeção próxima' : 'projeção abaixo'}</small>
       </span>
     })}
     <span className="mt-faixa__ir">Ver metas <Icone nome="direita" tamanho={14} /></span>

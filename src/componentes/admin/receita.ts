@@ -258,7 +258,7 @@ export function cobrancas(assinaturas: AssinaturaBase[], reais?: CobrancaReal[] 
     if (a.status === 'reembolsada') datas.shift()
     datas.reverse()
     datas.forEach(({ em, gravada }, i) => lista.push({
-      em, valor, plano: a.plano, id_usuario: a.id_usuario, estimada: !gravada, tipo: i === 0 ? 'nova' : 'renovacao', meio,
+      em, valor, plano: a.plano, id_usuario: a.id_usuario, estimada: !gravada || valorDe(real?.valor) === null, tipo: i === 0 ? 'nova' : 'renovacao', meio,
       id_pagamento: gravada ? real?.id_pagamento ?? null : null,
     }))
   }
@@ -325,7 +325,7 @@ export interface Mes {
 
 /** Mês a mês (meses de Brasília), dos últimos `meses` meses até o atual. */
 export function mesAMes(assinaturas: AssinaturaBase[], meses = 12, agora = new Date(), reais?: CobrancaReal[] | null): Mes[] {
-  const lista = cobrancas(assinaturas, reais)
+  const lista = cobrancas(assinaturas, reais).filter(c => c.em <= agora)
   const mapa = new Map<string, Mes>()
   const atual = MES(agora)
   for (let i = meses - 1; i >= 0; i--) {
@@ -342,9 +342,11 @@ export function mesAMes(assinaturas: AssinaturaBase[], meses = 12, agora = new D
   for (const a of assinaturas) {
     const cancelada = dataCancelamento(a)
     if (cancelada) { const m = mapa.get(MES(cancelada)); if (m) m.cancelamentos++ }
-    const reembolso = dataReembolso(a)
-    if (reembolso) { const m = mapa.get(MES(reembolso)); if (m) { m.reembolsos++; m.valorReembolsado += precoDe(a.plano)?.total ?? 0 } }
     if (meioDe(a) === 'pix' && a.status !== 'reembolsada' && a.fim_periodo && new Date(a.fim_periodo) <= agora) { const m = mapa.get(MES(new Date(a.fim_periodo))); if (m) m.pixEncerrados++ }
+  }
+  for (const c of cobrancasReembolsadas(assinaturas, reais)) {
+    if ((c.reembolsadaEm ?? c.em) > agora) continue
+    const m = mapa.get(MES(c.reembolsadaEm ?? c.em)); if (m) { m.reembolsos++; m.valorReembolsado += c.valor }
   }
   // Base de cartões ativos no fim de cada mês: criada antes do fim do mês e sem cancelamento/reembolso até lá.
   for (const m of mapa.values()) {

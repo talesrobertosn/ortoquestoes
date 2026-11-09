@@ -7,14 +7,16 @@ import { chamarRpc } from '../../servicos/supabase'
 import { usarPainel } from '../dados/painel'
 import { META_MODERADA, ROTULO_SITUACAO, esperadoAteHoje, metasVigentes, porSemanaNecessario, projetarMes, realizadoPorMes, situacao, tiposDeReceita, type Faixa, type LinhaMetaBanco, type MetaMes, type RealizadoMes, type Situacao } from '../dados/metas'
 import { inteiro, reais } from '../ui/formato'
+import { Linhas } from '../ui/linhas'
+import { dataSP, diaCurto, moverDia, percentual } from '../dados/negocio'
 import { Colunas } from '../ui/graficos'
-import { Carregando, Estado, Faixa as FaixaAviso } from '../ui/kit'
+import { Carregando, Estado, Segmento, Faixa as FaixaAviso } from '../ui/kit'
 import { avisoRapido } from '../ui/sobreposicoes'
 import { CENARIOS } from './Receita'
 
 /**
  * Financeiro › Metas (Tales, 05/11/2026): o cenário moderado como referência permanente, nunca como garantia.
- * Em camadas: o progresso do mês, as cinco metas com projeção e ritmo, a comparação mês a mês, os tipos de
+ * Em camadas: três objetivos de fluxo, gráfico acumulado, saúde da base, projeção, comparação mês a mês, tipos de
  * receita e, por último, a edição das metas futuras. Metodologia em docs/admin/METAS.md.
  */
 
@@ -22,7 +24,7 @@ type Chave = 'faturamento' | 'cadastros' | 'novosPagantes' | 'ativosFim' | 'rece
 const DEF: Record<Chave, { nome: string; curto: string; dinheiro: boolean; fluxo: boolean; explica: string }> = {
   faturamento: { nome: 'Faturamento recebido', curto: 'Faturamento', dinheiro: true, fluxo: true, explica: 'Pagamentos confirmados no mês (caixa). Reembolsos ficam de fora e aparecem à parte.' },
   cadastros: { nome: 'Cadastros', curto: 'Cadastros', dinheiro: false, fluxo: true, explica: 'Contas novas do público-alvo (sem teste, administrador e contas marcadas fora do público).' },
-  novosPagantes: { nome: 'Novos pagantes', curto: 'Primeiras compras', dinheiro: false, fluxo: true, explica: 'Primeira compra paga de cada pessoa. Renovação não conta.' },
+  novosPagantes: { nome: 'Primeiras assinaturas', curto: 'Primeiras compras', dinheiro: false, fluxo: true, explica: 'Primeira compra paga de cada pessoa. Renovação não conta.' },
   ativosFim: { nome: 'Pagantes ativos', curto: 'Pagantes ativos', dinheiro: false, fluxo: false, explica: 'Pessoas com acesso pago no fim do mês (agora, no mês em andamento). Cortesia não conta.' },
   receitaEquivalente: { nome: 'Receita mensal equivalente', curto: 'Receita equivalente', dinheiro: true, fluxo: false, explica: 'O valor de cada assinatura com acesso ativo, mensalizado (semestral ÷ 6, anual ÷ 12). Não é dinheiro que entra no mês.' },
 }
@@ -50,22 +52,25 @@ export default function Metas() {
     return { todas, metas, real, proj, reemb }
   }, [p.reais, p.usuariosReais, p.cobrancas, metasQ.dados, taxa])
 
-  if (!d) return <Carregando linhas={8} texto="Somando metas e resultados…" />
+  if (!d && (p.assinaturasQ.erro || p.usuariosQ.erro)) return <div className="ng-painel"><Estado tipo="erro" titulo="Não foi possível carregar os resultados" texto="Tente novamente para comparar os resultados com os objetivos." /><button type="button" className="a3-botao" onClick={() => void p.atualizar()}>Tentar novamente</button></div>
+  if (!d || p.cobrancasCarregando) return <Carregando linhas={8} texto="Somando metas e resultados…" />
   const atual = MES(new Date())
   const i = d.metas.findIndex(x => x.mes === atual)
   const meta = d.metas[i]
   const real = d.real[i]
-  return <div className="a3-pilha a3-pilha--larga mt">
+  return <div className="a3-pilha a3-pilha--larga mt ng">
     {!meta ? <Estado titulo="Fora do período das metas" texto={`O cenário moderado vai de novembro de 2026 a outubro de 2027.`} /> : <>
-      <Topo meta={meta} real={real} proj={d.proj} />
-      <section className="mt-cartoes" aria-label="As cinco metas do mês">
-        {ORDEM.map(k => <CartaoMeta key={k} k={k} meta={meta[k]} real={real[k]} proj={d.proj[k]} diasPassados={d.proj.diasPassados} diasNoMes={d.proj.diasNoMes} diasRestantes={d.proj.diasRestantes} />)}
+      <header className="ng-cabeca"><div className="ng-sobre"><b>Objetivos do mês</b><span>{NOME_MES(meta.mes)}</span></div><h1>Onde queremos chegar.<br />E quanto falta.</h1><p>Meta é um objetivo escolhido no planejamento. Realizado é o que aconteceu. Projeção é uma estimativa do que pode acontecer — as três coisas são diferentes.</p><p className="ng-nota">Objetivos herdados do planejamento moderado de novembro/2026 a outubro/2027. Você pode ajustar os meses futuros no final desta página; a versão original fica guardada.</p></header>
+      <section className="ng-meta-grade" aria-label="Os três objetivos principais do mês">
+        {(['cadastros','novosPagantes','faturamento'] as Chave[]).map(k => <MetaSimples key={k} k={k} meta={meta[k]} real={real[k]} dias={d.proj.diasRestantes} passados={d.proj.diasPassados} diasNoMes={d.proj.diasNoMes} />)}
       </section>
+      <GraficoObjetivo meta={meta} real={real} proj={d.proj} todas={d.todas} />
+      <details className="ng-detalhes"><summary>Saúde da base <small>Pagantes ativos e receita mensal equivalente</small></summary><p className="ng-nota">Estes objetivos acompanham o tamanho da carteira no fim do mês. Não são somas de entradas no mês.</p><section className="ng-grade-2">{(['ativosFim','receitaEquivalente'] as Chave[]).map(k => <CartaoMeta key={k} k={k} meta={meta[k]} real={real[k]} proj={d.proj[k]} diasPassados={d.proj.diasPassados} diasNoMes={d.proj.diasNoMes} diasRestantes={d.proj.diasRestantes} />)}</section></details>
       <Projecao proj={d.proj} meta={meta} taxa={taxa} escolher={escolher} />
       <RitmoSemanal meta={meta} real={real} proj={d.proj} todas={d.todas} />
     </>}
-    <Comparacao metas={d.metas} real={d.real} />
-    <TiposReceita todas={d.todas} reemb={d.reemb} />
+    <details className="ng-detalhes"><summary>Planejamento em 12 meses <small>Objetivos originais, ajustes e resultados</small></summary><Comparacao metas={d.metas} real={d.real} /></details>
+    <details className="ng-detalhes"><summary>Entenda os tipos de receita <small>Recebido, competência e mensalização</small></summary><TiposReceita todas={d.todas} reemb={d.reemb} /></details>
     <Editor metas={d.metas} semTabela={semTabela} aoSalvar={() => void metasQ.recarregar()} />
     <p className="a3-mudo a3-pequeno">Versão fixa: <b>{META_MODERADA.nome}</b> ({META_MODERADA.id}), registrada em {META_MODERADA.registradaEm.split('-').reverse().join('/')}. As metas são planejamento, não garantia de resultado. Faturamento previsto nos 12 meses: {reais(META_MODERADA.meses.reduce((s, x) => s + x.faturamento, 0))}.</p>
   </div>
@@ -81,32 +86,30 @@ function Barra({ valor, meta, esperado, tom = 'verde' }: { valor: number; meta: 
   </span>
 }
 
-function Topo({ meta, real, proj }: { meta: MetaMes; real: RealizadoMes; proj: ReturnType<typeof projetarMes> }) {
-  const pct = meta.faturamento ? real.faturamento / meta.faturamento : 0
-  const falta = Math.max(0, meta.faturamento - real.faturamento)
-  const s = situacao(proj.faturamento.centro, meta.faturamento)
-  const bateu = pct >= 1
-  const esperado = esperadoAteHoje(meta.faturamento, proj.diasPassados, proj.diasNoMes)
-  return <header className={'mt-topo' + (bateu ? ' mt-topo--bateu' : '')}>
-    {bateu && <span className="mt-confete" aria-hidden="true">{Array.from({ length: 14 }, (_, k) => <i key={k} style={{ '--k': k } as React.CSSProperties} />)}</span>}
-    <span className="a3-rotulo">Metas do OrtoQuestões · {soMes(meta.mes)}</span>
-    <h1>Seu progresso neste mês</h1>
-    <p className="mt-topo__frase">{bateu ? <>Meta de {soMes(meta.mes)} alcançada! <b>{reais(real.faturamento)}</b> recebidos, {Math.round(pct * 100)}% do objetivo.</>
-      : <>Você já alcançou <b>{Math.round(pct * 100)}%</b> da meta de {soMes(meta.mes)}. Faltam <b>{reais(falta)}</b> para chegar ao objetivo.</>}</p>
-    <div className="mt-topo__barra">
-      <Barra valor={real.faturamento} meta={meta.faturamento} esperado={esperado} tom="ouro" />
-      <div className="mt-topo__marcas"><span>{reais(real.faturamento)} recebidos</span><span>esperado até hoje: {reais(esperado)}</span><span>meta {reais(meta.faturamento)}</span></div>
-    </div>
-    <div className="mt-topo__rodape">
-      <Selo s={s} />
-      <span>Projeção de fechamento: <b>{reais(proj.faturamento.centro)}</b> (entre {reais(proj.faturamento.baixo)} e {reais(proj.faturamento.alto)})</span>
-      <span>Dia {proj.diasPassados} de {proj.diasNoMes} · faltam {proj.diasRestantes} dias</span>
-    </div>
-  </header>
-}
-
 function Selo({ s }: { s: Situacao }) {
   return <span className={`mt-selo mt-selo--${s}`}><i aria-hidden="true" />{ROTULO_SITUACAO[s]}</span>
+}
+
+function MetaSimples({ k, meta, real, dias, passados, diasNoMes }: { k: Chave; meta: number; real: number; dias: number; passados: number; diasNoMes: number }) {
+  const f = fmt(k), falta = Math.max(0, meta - real), esperado = esperadoAteHoje(meta, passados, diasNoMes)
+  const texto = k === 'cadastros' ? 'pessoas novas' : k === 'novosPagantes' ? 'primeiras assinaturas' : 'em recebimentos brutos'
+  return <article className="ng-meta"><span className="ng-kicker">Objetivo de {soMes(MES(new Date()))}</span><h2>{DEF[k].nome}</h2><strong className="ng-alvo">{f(meta)}<small>{texto}</small></strong><Barra valor={real} meta={meta} esperado={esperado} />
+    <dl><div><dt>Já aconteceu</dt><dd>{f(real)} · {percentual(real, meta)}</dd></div><div><dt>Falta para o objetivo</dt><dd>{f(falta)}</dd></div><div><dt>Necessário daqui em diante</dt><dd>{falta ? `${f(k === 'faturamento' ? falta / Math.max(1, dias) : Math.ceil(falta / Math.max(1, dias)))} / dia` : 'Objetivo alcançado'}</dd></div></dl><p className="ng-nota" style={{ marginTop: 16 }}>{DEF[k].explica}</p>
+  </article>
+}
+
+function GraficoObjetivo({ meta, real, proj, todas }: { meta: MetaMes; real: RealizadoMes; proj: ReturnType<typeof projetarMes>; todas: ReturnType<typeof cobrancasDe> }) {
+  const p = usarPainel()
+  const [k, escolher] = useState<'cadastros' | 'novosPagantes' | 'faturamento'>('cadastros')
+  const hoje = Number(new Date(Date.now() - 3 * 3600000).toISOString().slice(8,10))
+  const f = fmt(k)
+  const pontos = Array.from({ length: proj.diasNoMes }, (_, i) => {
+    const dia = moverDia(`${meta.mes}-01`, i), limite = Math.min(Date.now(), dataSP(moverDia(dia, 1)).getTime())
+    const acumulado = k === 'cadastros' ? (p.usuariosReais ?? []).filter(u => u.criado_em >= `${meta.mes}-01T03:00:00Z` && new Date(u.criado_em).getTime() < limite).length : todas.filter(c => MES(c.em) === meta.mes && c.em.getTime() < limite && (k === 'faturamento' || c.tipo === 'nova')).reduce((n, c) => n + (k === 'faturamento' ? c.valor : 1), 0)
+    const progresso = (i + 1 - hoje) / Math.max(1, proj.diasNoMes - hoje)
+    return { rotulo: diaCurto(dia), valores: [i + 1 <= hoje ? acumulado : null, meta[k] * (i + 1) / proj.diasNoMes, i + 1 >= hoje ? real[k] + (proj[k].centro - real[k]) * progresso : null] }
+  })
+  return <section className="ng-secao"><div className="ng-titulo"><div><span className="ng-kicker">Acompanhamento</span><h2>O caminho até o objetivo</h2><p>Linha contínua: o realizado. Linha do objetivo: uma referência de distribuição ao longo do mês. Projeção: estimativa a partir de hoje.</p></div><Segmento rotulo="Objetivo no gráfico" valor={k} aoMudar={escolher} opcoes={[['cadastros','Cadastros'],['novosPagantes','Assinaturas'],['faturamento','Receita']]} /></div><div className="ng-painel"><Linhas titulo={`${DEF[k].nome}: realizado, caminho para o objetivo e projeção`} formato={f} pontos={pontos} series={[{ nome: 'Realizado' }, { nome: 'Caminho para o objetivo', tracejada: true }, { nome: 'Projeção', tracejada: true }]} altura={270} /><div className="ng-acompanhamento">Objetivo: <b>{f(meta[k])}</b>. No ritmo estimado, o mês pode fechar em <b>{f(proj[k].centro)}</b>. {proj.amostraPequena ? 'Ainda há poucos dias ou eventos para uma projeção estável.' : `Faixa de sensibilidade: ${f(proj[k].baixo)} a ${f(proj[k].alto)}.`}</div><p className="ng-nota" style={{ marginTop: 12 }}>O objetivo não entra no cálculo da projeção. Para receita, a estimativa soma carteira atual e primeiras compras futuras. Nenhuma previsão garante recebimento.</p></div></section>
 }
 
 function CartaoMeta({ k, meta, real, proj, diasPassados, diasNoMes, diasRestantes }: { k: Chave; meta: number; real: number; proj: Faixa; diasPassados: number; diasNoMes: number; diasRestantes: number }) {
@@ -135,9 +138,9 @@ function Projecao({ proj, meta, taxa, escolher }: { proj: ReturnType<typeof proj
   const total = Math.max(1, proj.faturamento.alto)
   const seg = (v: number) => `${Math.max(0, (v / total) * 100)}%`
   return <section className="fi-secao" aria-labelledby="mt-proj">
-    <header className="fi-secao__cabeca"><span className="fi-secao__selo">Projeção</span><div><h2 id="mt-proj">Projeção de fechamento de {soMes(meta.mes)}</h2>
-      <p>Se mantivermos o ritmo atual, {soMes(meta.mes)} pode terminar com aproximadamente <b>{reais(proj.faturamento.centro)}</b>, entre {reais(proj.faturamento.baixo)} e {reais(proj.faturamento.alto)} (intervalo de 90%).</p></div></header>
-    {proj.amostraPequena && <FaixaAviso tom="aviso" titulo="Ainda é cedo">Com {proj.diasPassados} {proj.diasPassados === 1 ? 'dia' : 'dias'} de mês, a projeção é só uma ideia: o intervalo é largo de propósito.</FaixaAviso>}
+    <header className="fi-secao__cabeca"><span className="fi-secao__selo">Projeção</span><div><h2 id="mt-proj">O que pode acontecer até o fim de {soMes(meta.mes)}</h2>
+      <p>Se mantivermos o ritmo atual, {soMes(meta.mes)} pode terminar com aproximadamente <b>{reais(proj.faturamento.centro)}</b>, entre {reais(proj.faturamento.baixo)} e {reais(proj.faturamento.alto)} (cenários de sensibilidade).</p></div></header>
+    {proj.amostraPequena && <FaixaAviso tom="aviso" titulo="Ainda é cedo">Com {proj.diasPassados} {proj.diasPassados === 1 ? 'dia' : 'dias'} de mês, a projeção é só uma ideia: variações de poucos eventos podem mudar bastante o resultado.</FaixaAviso>}
     <div className="fi-cartao">
       <h3>De onde vem a projeção <small>cada parte no seu calendário, sem dividir planos anuais por dia</small></h3>
       <div className="mt-pilha" aria-hidden="true">
@@ -288,7 +291,7 @@ function Editor({ metas, semTabela, aoSalvar }: { metas: Array<MetaMes & { edita
     <summary>Editar metas futuras ({futuras.length} meses) e como os números são calculados</summary>
     <div className="a3-texto">
       {semTabela && <FaixaAviso tom="aviso" titulo="Edição desligada">Rode o SQL das metas (202611050100_metas_e_publico.sql) no Supabase para editar. Enquanto isso, vale a versão fixa.</FaixaAviso>}
-      <p>Só meses futuros podem ser editados. A versão original <b>{META_MODERADA.id}</b> nunca muda; a editada fica numa camada à parte e a comparação mostra as duas.</p>
+      <p>Os objetivos atuais vêm do planejamento original, definido em 05/11/2026. Só meses futuros podem ser editados, para não mover o alvo depois de conhecer o resultado. A versão original <b>{META_MODERADA.id}</b> nunca muda; a editada fica numa camada à parte e a comparação mostra as duas.</p>
       <div className="a3-tabela-caixa"><table className="a3-tabela a3-tabela--compacta mt-tabela mt-editor">
         <thead><tr><th scope="col">Mês</th>{ORDEM.map(k => <th key={k} scope="col" className="num">{DEF[k].curto}</th>)}<th scope="col" /></tr></thead>
         <tbody>{futuras.map(m => <tr key={m.mes}><th scope="row">{NOME_MES(m.mes)}{m.editada && <small> editada</small>}</th>
@@ -297,7 +300,7 @@ function Editor({ metas, semTabela, aoSalvar }: { metas: Array<MetaMes & { edita
             {m.editada && <button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno" disabled={salvando !== null} onClick={() => void voltar(m)}>Original</button>}</span></td></tr>)}</tbody>
       </table></div>
       <p><b>Como a situação é decidida.</b> Acima da meta: a projeção de fechamento chega a 100% da meta. Próximo: entre 90% e 100%. Abaixo do ritmo necessário: menos de 90%. O traço na barra mostra o esperado até hoje (a meta × a parte do mês que já passou), para metas que se acumulam no mês.</p>
-      <p><b>Projeção.</b> Cadastros e primeiras compras: o ritmo diário do mês até agora, projetado nos dias que faltam (modelo de Poisson), com intervalo de 90%. Faturamento: o que já entrou, mais as renovações no calendário de cada pessoa (cartão inteiro; Pix pela taxa escolhida, de 30% a 100% no intervalo), mais as compras novas esperadas × o valor médio delas. Com menos de 7 dias ou poucos eventos, a projeção vem marcada como "ainda é cedo".</p>
+      <p><b>Projeção.</b> Cadastros e primeiras compras: o ritmo diário do mês até agora, projetado nos dias que faltam (modelo de Poisson), com uma faixa aproximada para as contagens. Faturamento: o que já entrou, mais as renovações no calendário de cada pessoa (cartão inteiro; Pix pela taxa escolhida, do cenário cauteloso ao cenário favorável), mais as compras novas esperadas × o valor médio delas. Com menos de 7 dias ou poucos eventos, a projeção vem marcada como "ainda é cedo".</p>
     </div>
   </details>
 }
