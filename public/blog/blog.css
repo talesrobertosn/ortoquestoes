@@ -155,10 +155,13 @@ img { max-width: 100%; height: auto; }
 .bl-alt--certa .bl-alt__letra { background: var(--acerto); color: #fff; border-color: var(--acerto); }
 .bl-alt--errada { border-color: var(--erro); background: var(--erro-veu); }
 .bl-alt--errada .bl-alt__letra { background: var(--erro); color: #fff; border-color: var(--erro); }
-.bl-alt__porque { grid-column: 2; display: none; margin: 0.3rem 0 0.2rem; font-size: 0.93rem; line-height: 1.55; color: var(--texto); }
-.bl-quiz--respondida .bl-alt__porque { display: block; animation: bl-surge 0.4s ease both; }
-.bl-quiz__depois { display: none; margin-top: 1.1rem; }
-.bl-quiz--respondida .bl-quiz__depois { display: block; animation: bl-surge 0.4s 0.15s ease both; }
+.bl-alt__porque { grid-column: 2; display: block; margin: 0.3rem 0 0.2rem; font-size: 0.93rem; line-height: 1.55; color: var(--texto); }
+/* Esconder o porquê até responder só quando o blog.js roda (sem ele, a página mostra tudo). */
+.com-js .bl-alt__porque { display: none; }
+.com-js .bl-quiz--respondida .bl-alt__porque { display: block; animation: bl-surge 0.4s ease both; }
+.bl-quiz__depois { margin-top: 1.1rem; }
+.com-js .bl-quiz__depois { display: none; }
+.com-js .bl-quiz--respondida .bl-quiz__depois { display: block; animation: bl-surge 0.4s 0.15s ease both; }
 .bl-quiz__resultado { margin: 1rem 0 0; font-weight: 700; }
 .bl-quiz noscript p, .bl-sem-js { font-size: 0.92rem; color: var(--suave); }
 @keyframes bl-surge { from { opacity: 0; transform: translateY(6px); } }
