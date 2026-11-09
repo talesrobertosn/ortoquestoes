@@ -271,6 +271,12 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
             <li><IconeCartao tamanho={16} /> <span><strong>Cartão</strong> com renovação que você desliga</span></li>
             <li><Icone nome="certo" tamanho={16} /> <span><strong>7 dias de garantia</strong>: reembolso por um botão</span></li>
           </ul>
+          {/* Logo abaixo do preço (Tales, 09/11/2026): o guia do blog sobre estudo por questões, para quem quer entender o método antes de assinar. */}
+          <a className="vd-guia-estudo" href={recurso('blog/como-estudar-por-questoes/')}>
+            <img src={recurso('pixel/menu/blog.png?v=1')} alt="" width={48} height={48} loading="lazy" decoding="async" draggable={false} />
+            <span><strong>Como estudar por questões</strong><small>O que a ciência diz sobre estudo ativo, e o método em 7 passos para a residência</small></span>
+            <Icone nome="direita" tamanho={16} />
+          </a>
           {!sessao && pagamentosHabilitados && <p className="vd-heroi__semconta">Ainda sem conta? O botão cria a sua, grátis, e volta direto para o pagamento do plano escolhido.</p>}
           {!pagamentosHabilitados && <p className="vd-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, o acervo, os comentários e a revisão continuam disponíveis no gratuito.</p>}
           {mensagem && !planoEscolhido && <p role="status" className="vd-aviso">{mensagem}</p>}
@@ -418,6 +424,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           </div>
         </div>
         <CartoesPlanos local="final" conta={Boolean(sessao)} pagamentos={pagamentosHabilitados} semCompra={semCompra} rotulo={rotuloComprar} aoEscolher={escolher} planos={PLANOS_PIPOCA} planosAntigos={planosAntigos} />
+        <p className="vd-final__gratis">Quer entender o método antes? Leia <a href={recurso('blog/como-estudar-por-questoes/')}>como estudar por questões</a>.</p>
         <p className="vd-final__gratis">Ainda não é a hora? Tudo bem. <a href={href(sessao ? '/treinar' : '/conta?modo=criar')}>{sessao ? 'Continue no gratuito' : 'Comece pelo gratuito'}</a>, as questões e os comentários continuam abertos.</p>
       </section>}
       {!comAcessoPago && mostrarPlanos && <AjudaSuporte local="final" />}

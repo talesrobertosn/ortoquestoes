@@ -429,7 +429,7 @@ def rodape() -> str:
     links = "".join(f'<a href="../{p}/">{esc(r)}</a>' for p, r in PAGINAS)
     return f"""</main>
 <footer><div class="env">
-<nav aria-label="Mais páginas">{links}<a href="../questoes/">Questões por assunto</a><a href="../guias/">Guias de estudo</a><a href="../resumos/">Resumos de capítulos</a><a href="../guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a><a href="../guias/cronograma-de-estudo-para-o-teot.html">Cronograma para o TEOT</a><a href="../atlas-3d/">Atlas 3D de anatomia</a><a href="../sobre/">Sobre o Orto Questões</a><a href="../#/contato">Contato</a></nav>
+<nav aria-label="Mais páginas">{links}<a href="../questoes/">Questões por assunto</a><a href="../guias/">Guias de estudo</a><a href="../blog/">Blog</a><a href="../blog/como-estudar-por-questoes/">Como estudar por questões</a><a href="../resumos/">Resumos de capítulos</a><a href="../guias/temas-que-mais-caem-no-teot.html">Temas que mais caem</a><a href="../guias/cronograma-de-estudo-para-o-teot.html">Cronograma para o TEOT</a><a href="../atlas-3d/">Atlas 3D de anatomia</a><a href="../sobre/">Sobre o Orto Questões</a><a href="../#/contato">Contato</a></nav>
 <p><strong>Orto Questões</strong> (também escrito OrtoQuestões, ortoquestoes.com.br) é um banco de questões comentadas de ortopedia e traumatologia
 feito para quem se prepara para as provas da especialidade. As questões de prova são transcritas dos cadernos originais e o gabarito é o da banca; as
 marcadas como OrtoQuestões Simulados são autorais, elaboradas a partir da bibliografia de referência, sem caráter oficial nem
@@ -1591,6 +1591,17 @@ def llms(d: dict, paginas: list[dict], completo: bool) -> str:
         GUIAS = []
     for guia in GUIAS:
         linhas.append(f"- [{guia['headline']}]({SITE}guias/{guia['slug']}.html): {guia['description']}")
+    # Blog (public/blog/, escrito à mão): o título e a descrição saem do próprio HTML de cada post.
+    dir_blog = DIR_PUBLICO / "blog"
+    posts = sorted(p for p in dir_blog.iterdir() if (p / "index.html").exists()) if dir_blog.is_dir() else []
+    if posts:
+        linhas += ["", "## Blog", "", f"- [Blog Orto Questões]({SITE}blog/): como estudar ortopedia por questões, do R1 ao TEOT."]
+        for pasta in posts:
+            texto = (pasta / "index.html").read_text(encoding="utf-8")
+            titulo = re.search(r"<title>(.*?)</title>", texto, re.S)
+            desc = re.search(r'<meta name="description" content="(.*?)">', texto, re.S)
+            if titulo and desc:
+                linhas.append(f"- [{html.unescape(titulo.group(1).split(' | ')[0])}]({SITE}blog/{pasta.name}/): {html.unescape(desc.group(1))}")
     resumos = (ler_json(DIR_PUBLICO / "biblioteca" / "indice.json", {}) or {}).get("capitulos") or []
     if resumos:
         # Páginas de gerar_resumos_seo.py: o texto inteiro de cada resumo, aberto e grátis.

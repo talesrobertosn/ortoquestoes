@@ -7,6 +7,10 @@ export type IconeMenu =
   | 'treinar' | 'revisao' | 'flashcards' | 'cronograma' | 'resumos' | 'atlas'
   | 'cronograma-mao' | 'temas' | 'torneio' | 'simulado' | 'ranking' | 'liga' | 'conquistas'
   | 'desempenho' | 'erros' | 'favoritas' | 'relatorio' | 'conta' | 'assinatura' | 'indicar' | 'suporte' | 'projeto' | 'admin' | 'entrar'
+  | 'blog'
+
+/** Páginas estáticas fora do aplicativo (o blog, lido pelo Google): o link é o endereço de verdade, não a rota por hash. */
+export const ehExterno = (destino: string) => destino.startsWith('/blog/')
 
 
 export interface Pagina {
@@ -40,6 +44,8 @@ export const GRUPOS: Grupo[] = [
       { destino: '/cronograma-mao', rotulo: 'Cronograma da Mão', texto: 'Prepare-se para ingresso e título em Cirurgia da Mão.', icone: 'cronograma-mao', assinante: true, chaves: 'cirurgia da mao plano estudo sbcm simao ingresso titulo residencia data da prova' },
       { destino: '/temas-que-mais-caem', rotulo: 'Temas que mais caem', texto: 'Veja os assuntos mais cobrados por prova.', icone: 'temas', assinante: true, chaves: 'incidencia mais cobrado o que cai assuntos teot taro mao sbcm simao' },
       { destino: '/flashcards/cripta', rotulo: 'Torneio de Flashcards', texto: 'Aprenda com flashcards em formato de jogo.', icone: 'torneio', chaves: 'cripta jogo cartas torneio' },
+      // Blog (Tales, 09/11/2026): páginas estáticas em public/blog/, abertas a todos e no sitemap.
+      { destino: '/blog/', rotulo: 'Blog Orto Questões', texto: 'Como estudar por questões e dicas para o R1.', icone: 'blog', novo: 'Novo', chaves: 'blog artigos como estudar questoes estudo ativo metodo r1 r2 residencia curso ortopedia dicas' },
     ],
   },
   {
