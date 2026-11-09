@@ -1,5 +1,5 @@
 import { useDeferredValue, useEffect, useMemo, useRef, useState, type CSSProperties } from 'react'
-import { FLASHCARDS_NO_MENU, fraseGratis } from '../config'
+import { FLASHCARDS_NO_MENU, fraseGratis, urlCss } from '../config'
 import { usarIndice } from '../dados/usarIndice'
 import { arvoreAssuntos, contar, filtrar, LIMITE_TURMA_ACERTA, LIMITE_TURMA_ERRA, montarSessao } from '../dados/acervo'
 import { usarPremium } from '../conta/premium'
@@ -568,7 +568,7 @@ export function Treinar({ consulta }: { consulta: URLSearchParams }) {
       </header>
 
       {/* Começar agora: uma ação principal e quatro atalhos, todos de 10 questões, sem passar pelos filtros. */}
-      <section className="tn-rapido" aria-labelledby="tn-rapido-titulo" style={{ '--tn-paisagem': `url("${import.meta.env.BASE_URL}pixel/inicio/${paisagem}")` } as CSSProperties}>
+      <section className="tn-rapido" aria-labelledby="tn-rapido-titulo" style={{ '--tn-paisagem': urlCss(`pixel/inicio/${paisagem}`) } as CSSProperties}>
         <div className="tn-rapido__principal">
           <h2 className="tn-rotulo" id="tn-rapido-titulo">Começar agora</h2>
           <button type="button" className="botao cristal tn-rapido__botao" onClick={() => sessaoRapida()} aria-describedby="tn-rapido-nota">

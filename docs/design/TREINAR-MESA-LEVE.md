@@ -140,3 +140,7 @@ No cenário automático, o início rápido alterna entre quatro artes existentes
 As preferências fixas de cenário continuam valendo: manhã, pôr do sol ou noite. A escolha da arte é independente do tema claro/escuro. A página verifica o horário a cada minuto enquanto visível e ao recuperar foco; remove os listeners e o intervalo ao sair. Carrega apenas a arte selecionada e mantém o tratamento esmaecido, sem animação ou mudança nos controles.
 
 `fixtures/testar_paisagem_treinar.mjs` confere fronteiras de horário, madrugada, fuso e escolhas fixas. A revisão no navegador percorre os quatro horários em claro/escuro e celular/computador, incluindo a troca automática com a página aberta. Capturas em `work/treinar-suave/horarios-{claro,escuro}/`.
+
+### Correção do carregamento publicado (09/11/2026)
+
+O primeiro build usou `BASE_URL` relativo dentro da variável CSS. Em desenvolvimento o CSS era injetado na página e a arte aparecia; no CSS externo publicado o navegador buscava incorretamente `/assets/pixel/inicio/...` (404), deixando o painel branco. Treinar agora usa `urlCss()` de `src/config.ts`, como a inicial, resolvendo a imagem pelo endereço absoluto da página. O teste de imagens inclui Treinar e sua variável `--tn-paisagem`. A verificação no navegador passou a usar também `--producao`, conferir o endereço computado e decodificar cada uma das quatro imagens, além de percorrer os horários. Evidências em `work/treinar-suave/correcao-producao/`.
