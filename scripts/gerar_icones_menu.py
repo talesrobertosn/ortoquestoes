@@ -555,6 +555,18 @@ def projeto(t: Tela) -> None:
     t.camada(tracar(13.6, 16.4, 12, 19.6, 1), OURO, por_cima=True)
 
 
+def blog(t: Tela) -> None:
+    """Pergaminho do blog aberto: rolos de madeira, título em verdete, linhas de texto e a fita dourada."""
+    t.camada(ret(4, 4, 19, 18), PAPEL)
+    t.camada(ret(6, 6, 15, 8), VERDETE, contorno=False)
+    for y, x1 in ((10, 17), (12, 15), (14, 17), (16, 13)):
+        t.pintar(pixels_linha(6, y, x1, y), LINHA_PAPEL)
+    for y0 in (2, 18):
+        t.camada(ret(2, y0, 21, y0 + 2), MADEIRA, por_cima=True)
+        t.pintar({(2, y0 + 1), (21, y0 + 1)}, MADEIRA[4])
+    t.camada(poli([(15.5, 18.5), (18.5, 18.5), (18.5, 22.5), (17, 21.2), (15.5, 22.5)]), OURO, por_cima=True)
+
+
 def admin(t: Tela) -> None:
     """Chave ornamentada: argola com furo e três botões, gema no colar, haste e dois dentes."""
     argola = circ(7, 7, 4.4) | circ(7, 2.9, 1.3) | circ(2.9, 7, 1.3) | circ(4, 4, 1.2)
@@ -584,7 +596,7 @@ PRINCIPAIS = {"treinar": treinar, "revisao": revisao, "flashcards": flashcards,
 SECUNDARIOS = {"cronograma-mao": cronograma_mao, "temas": temas, "torneio": torneio, "simulado": simulado,
                "ranking": ranking, "liga": liga, "conquistas": conquistas, "desempenho": desempenho,
                "erros": erros, "favoritas": favoritas, "relatorio": relatorio, "conta": conta,
-               "assinatura": assinatura, "indicar": indicar, "suporte": suporte, "projeto": projeto,
+               "assinatura": assinatura, "indicar": indicar, "suporte": suporte, "projeto": projeto, "blog": blog,
                "admin": admin, "entrar": entrar}
 
 
