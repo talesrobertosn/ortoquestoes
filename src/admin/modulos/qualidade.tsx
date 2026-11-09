@@ -110,7 +110,7 @@ export function ForaDoPublico() {
     if (!(await confirmar({ titulo: `Marcar ${ids.length} ${ids.length === 1 ? 'conta' : 'contas'} fora do público-alvo?`, texto: 'A conta continua registrada e na receita; só sai dos números de aquisição, ativação, retenção e conversão. Dá para desfazer.', sim: 'Marcar' }))) return
     definirOcupado(true)
     try { await chamarRpc('marcar_fora_publico_admin', { p_ids: ids, p_motivo: m }); avisoRapido('Marcadas fora do público-alvo.'); definirMarcadas(new Set()); await p.recarregarForaPublico() }
-    catch { avisoRapido(p.foraPublicoSemSql ? 'Rode o SQL 202611050100 no Supabase para marcar.' : 'Não foi possível marcar.', 'erro') } finally { definirOcupado(false) }
+    catch { avisoRapido('Não foi possível marcar. Atualize as marcações e tente novamente.', 'erro') } finally { definirOcupado(false) }
   }
   async function desmarcar(id: string) {
     definirOcupado(true)
@@ -120,24 +120,27 @@ export function ForaDoPublico() {
   const Linha = ({ u, marcar: podeMarcar }: { u: LinhaUsuario; marcar?: boolean }) => <li>
     {podeMarcar && <input type="checkbox" aria-label={`Selecionar ${nomeDe(u)}`} checked={marcadas.has(u.id_usuario)} onChange={e => definirMarcadas(s => { const n = new Set(s); if (e.target.checked) n.add(u.id_usuario); else n.delete(u.id_usuario); return n })} />}
     <button type="button" className="qd-pessoa" onClick={() => nav.abrirPessoa(u.id_usuario)}><b>{nomeDe(u)}</b><small>{[u.email, u.servico, u.cidade].filter(Boolean).join(' · ')}</small></button>
-    {!podeMarcar && <><span className="a3-mudo a3-pequeno">{p.foraPublico.get(u.id_usuario) ?? ''}</span><button type="button" className="cal__ficha-btn" disabled={ocupado} onClick={() => void desmarcar(u.id_usuario)}>Voltar ao público</button></>}
+    {!podeMarcar && <><span className="a3-mudo a3-pequeno">{p.foraPublico.get(u.id_usuario) ?? ''}</span><button type="button" className="cal__ficha-btn" disabled={ocupado || !!p.foraPublicoErro || p.foraPublicoCarregando} onClick={() => void desmarcar(u.id_usuario)}>Voltar ao público</button></>}
   </li>
   return <article className="cr-cartao">
     <h3>Fora do público-alvo <small>a conta fica registrada e na receita, mas sai dos números de crescimento</small></h3>
-    {p.foraPublicoSemSql && <Faixa tom="aviso" titulo="Marcação desligada">Rode o SQL 202611050100_metas_e_publico.sql no Supabase para marcar contas.</Faixa>}
+    {!!p.foraPublicoErro && <Faixa tom="aviso" titulo={p.foraPublicoSemSql ? 'Recurso de marcação indisponível' : 'Não foi possível carregar as marcações'}>
+      {p.foraPublicoSemSql ? 'O servidor não encontrou o recurso de marcação. Tente carregar novamente.' : 'A consulta falhou. A lista não deve ser interpretada como vazia; as marcações existentes continuam salvas.'}
+      <p><button type="button" className="a3-botao a3-botao--contorno" disabled={p.foraPublicoCarregando} onClick={() => void p.recarregarForaPublico()}>{p.foraPublicoCarregando ? 'Carregando…' : 'Tentar carregar novamente'}</button></p>
+    </Faixa>}
     <div className="cr-grade-2">
       <div className="qd-bloco"><span className="cc-sub">Sugestões para revisar ({sugeridas.length})</span>
         <p className="a3-mudo a3-pequeno">Contas ligadas à UECE e as de "Glauderrr" e "Samara Menezes". Confira cada uma antes de marcar.</p>
         {sugeridas.length ? <ul className="qd-lista">{sugeridas.map(u => <Linha key={u.id_usuario} u={u} marcar />)}</ul> : <p className="a3-mudo">Nenhuma sugestão agora.</p>}
         <label className="a3-campo"><span>Motivo</span><input className="a3-entrada" value={motivo} maxLength={200} onChange={e => definirMotivo(e.target.value)} placeholder="Ex.: estudante de outra área (UECE)" /></label>
-        <button type="button" className="a3-botao" disabled={ocupado || !marcadas.size} onClick={() => void marcar([...marcadas], motivo)}>Marcar {marcadas.size || ''} selecionadas</button>
+        <button type="button" className="a3-botao" disabled={ocupado || !!p.foraPublicoErro || p.foraPublicoCarregando || !marcadas.size} onClick={() => void marcar([...marcadas], motivo)}>Marcar {marcadas.size || ''} selecionadas</button>
       </div>
       <div className="qd-bloco"><span className="cc-sub">Marcar por instituição ou serviço</span>
         <select className="a3-entrada" value={servico} onChange={e => definirServico(e.target.value)} aria-label="Serviço"><option value="">Escolha um serviço…</option>{servicos.map(([s, n]) => <option key={s} value={s}>{s} ({n})</option>)}</select>
         {servico && <><ul className="qd-lista">{doServico.slice(0, 20).map(u => <Linha key={u.id_usuario} u={u} marcar />)}</ul>{doServico.length > 20 && <p className="a3-mudo a3-pequeno">e mais {doServico.length - 20}</p>}
-          <button type="button" className="a3-botao a3-botao--contorno" disabled={ocupado || !doServico.length} onClick={() => void marcar(doServico.map(u => u.id_usuario), motivo || `Serviço: ${servico}`)}>Marcar as {doServico.length} contas de {servico}</button></>}
-        <span className="cc-sub" style={{ marginTop: 10 }}>Já marcadas ({fora.length})</span>
-        {fora.length ? <ul className="qd-lista">{fora.map(u => <Linha key={u.id_usuario} u={u} />)}</ul> : <p className="a3-mudo">Nenhuma conta marcada.</p>}
+          <button type="button" className="a3-botao a3-botao--contorno" disabled={ocupado || !!p.foraPublicoErro || p.foraPublicoCarregando || !doServico.length} onClick={() => void marcar(doServico.map(u => u.id_usuario), motivo || `Serviço: ${servico}`)}>Marcar as {doServico.length} contas de {servico}</button></>}
+        <span className="cc-sub" style={{ marginTop: 10 }}>Já marcadas ({p.foraPublicoErro ? 'consulta indisponível' : p.foraPublicoCarregando ? 'carregando…' : fora.length})</span>
+        {fora.length ? <ul className="qd-lista">{fora.map(u => <Linha key={u.id_usuario} u={u} />)}</ul> : <p className="a3-mudo">{p.foraPublicoErro ? 'A lista não foi carregada. Tente novamente.' : p.foraPublicoCarregando ? 'Carregando marcações…' : 'Nenhuma conta marcada.'}</p>}
       </div>
     </div>
   </article>

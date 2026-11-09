@@ -7,7 +7,7 @@ import { usarLidos } from '../../componentes/admin/lidos'
 import { PLANO_CORTESIA } from '../../componentes/admin/rotulos'
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, type EventoPagamento } from '../../componentes/admin/pagamentos'
 import { indexarSinais, type SinalUsuario } from '../../componentes/admin/sinais'
-import { CINCO_MIN, recarregarConsultasAtivas, usarRpc, type Consulta } from '../../componentes/admin/usarRpc'
+import { CINCO_MIN, recarregarConsultasAtivas, rpcInexistente, usarRpc, type Consulta } from '../../componentes/admin/usarRpc'
 import type { AssinaturaBase, CobrancaReal } from '../../componentes/admin/receita'
 import type { Parte } from '../rotas'
 import { estaOnline, type LinhaUsuario, type ResumoAdmin } from './pessoas'
@@ -59,6 +59,8 @@ export interface DadosPainel {
   /** Contas marcadas fora do público-alvo (id → motivo). */
   foraPublico: Map<string, string | null>
   foraPublicoSemSql: boolean
+  foraPublicoErro: unknown
+  foraPublicoCarregando: boolean
   recarregarForaPublico: () => Promise<void>
   sinais: Map<string, SinalUsuario>
   eventos: EventoPagamento[] | null
@@ -146,7 +148,7 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const valor: DadosPainel = {
     conta, parte, assinaturasQ, eventosQ, resumoQ, usuariosQ, cobrancasQ, sinaisQ,
     assinaturas, reais, testes: (assinaturas?.length ?? 0) - (reais?.length ?? 0), usuarios, usuariosReais, sinais, eventos,
-    foraPublico, foraPublicoSemSql: !!foraQ.erro, recarregarForaPublico: r10,
+    foraPublico, foraPublicoSemSql: rpcInexistente(foraQ.erro), foraPublicoErro: foraQ.erro, foraPublicoCarregando: foraQ.carregando, recarregarForaPublico: r10,
     resumo: resumoQ.dados?.[0] ?? null,
     cobrancas: cobrancasQ.erro ? null : cobrancasQ.dados ?? null, cobrancasCarregando, avisoCobrancas,
     online: usuarios ? usuarios.filter(u => u.online).length : contadoresQ.dados?.online ?? resumoQ.dados?.[0]?.online_agora ?? null,
