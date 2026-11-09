@@ -9,13 +9,13 @@ Situações: `a fazer`, `em lote NN`, `publicada`, `pendente: sem fonte`, `pende
 
 | Prova | Arquivo local | Questões | Publicadas | Pendentes | Ids | Gabarito (A/B/C/D) |
 |---|---|---|---|---|---|---|
-| SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 93 | 7 | mao-2466 a mao-2558 | A 25, B 23, C 28, D 17 |
-| SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 88 | 12 | mao-2378 a mao-2465 | A 26, B 21, C 24, D 17 |
+| SIMÃO 2021 | SIMAO-2021-questoes.json | 100 | 98 | 2 | mao-2466 a mao-2558; mao-2608 a mao-2612 | A 25, B 23, C 28, D 17 |
+| SIMÃO 2022 | SIMAO-2022-questoes.json | 100 | 98 | 2 | mao-2378 a mao-2465; mao-2598 a mao-2607 | A 26, B 21, C 24, D 17 |
 | SIMÃO 2023 | Prova  Simão 2023 - sem resposta.pdf | 100 | 97 | 3 | mao-1932 a mao-2022; ombro-cotovelo-0658 a ombro-cotovelo-0663 | A 25, B 24, C 24, D 24 |
 | SIMÃO 2024 | SIMAO-2024-questoes.json | 100 | 100 | 0 | mao-2278 a mao-2377 | A 27, B 25, C 25, D 23 |
-| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 89 | 11 | mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
+| SBCM 2022 | PROVA SBCM 2022 - SEM RESPOSTA.pdf (separada em .oq/provas/sbcm-2022.json) | 100 | 100 | 0 | mao-2613 a mao-2624; mao-2106 a mao-2188; ombro-cotovelo-0670 a ombro-cotovelo-0675 | A 22, B 23, C 22, D 22 |
 | SBCM 2023 | Prova SBCM 2023 - sem resposta.pdf (.oq/provas/sbcm-2023.json) | 100 | 99 | 1 | mao-2189 a mao-2277; ombro-cotovelo-0676 a ombro-cotovelo-0685 | A 25, B 25, C 25, D 24 |
-| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 89 | 11 | mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
+| SBCM 2024 | PROVA SBCM 2024 - sem resposta.pdf (separada em .oq/provas/sbcm-2024.json) | 100 | 96 | 4 | mao-2619 a mao-2630; mao-2023 a mao-2105; ombro-cotovelo-0664 a ombro-cotovelo-0669 | A 22, B 22, C 22, D 23 |
 | SIMÃO 2026 | SIMAO-2026-Questoes.docx | 100 | 100 | 0 | mao-1719 a mao-1810; ombro-cotovelo-0645 a 0652 (comentários refeitos em 20/10, exceto 0645 e 0647) | 25/25/25/25 |
 
 (Linha nova por prova, criada na fase 0 do protocolo.)
@@ -382,7 +382,7 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | Nº | Assunto (palavras nossas) | Formato | Green: cap. e páginas | Tema / subtema | Lote | Id | Situação |
 |---|---|---|---|---|---|---|---|
 | 1 | Dupuytren: comorbidades mais associadas | lista | cap. 4, p. 148 e 149 | mao / Doença de Dupuytren | 01 | mao-2023 | publicada |
-| 2 | Técnica de tenorrafia (autor e zonas indicadas) | epônimo, figura | cap. 6, p. 239 | mao / Lesões dos tendões flexores | 01 |  | pendente: figura e zonas sem fonte no Green |
+| 2 | Técnica de tenorrafia (autor e zonas indicadas) | epônimo, figura | cap. 6, p. 239 | mao / Lesões dos tendões flexores | 22 | mao-2625 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 3 | Luxação MF dorsal complexa do polegar: estrutura interposta | fato | cap. 8, p. 358 | mao / Lesões ligamentares dos dedos | 02 | mao-2030 | publicada |
 | 4 | Artrose mediocárpica no SNAC/SLAC: tratamento de escolha | conduta | cap. 12, p. 446 e 449 | mao / Artrose do punho e artroscopia | 03 | mao-2035 | publicada |
 | 5 | Instabilidade carpal não dissociativa: característica | afirmativas | cap. 13, p. 501 e 537 | mao / Instabilidade do carpo | 04 | mao-2036 | publicada |
@@ -399,13 +399,13 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 16 | Rigidez articular: resultados conforme a causa | afirmativas | cap. 10, p. 392 | mao / Deformidades dos dedos | 02 | mao-2031 | publicada |
 | 17 | Paralisia cerebral: segunda prioridade na hierarquia | fato | cap. 32, p. 1248 | mao / Transferências tendinosas e paralisias | 12 | mao-2074 | publicada |
 | 18 | Rádio distal na criança: fator de perda de redução | fato | cap. 41, p. 1625 | mao / Fratura do rádio distal | 05 | mao-2044 | publicada |
-| 19 | Enxerto vascularizado para Kienböck: artéria | anatomia, figura | cap. 16, seção de enxertos vascularizados no Kienböck | mao / Doença de Kienböck | 07 |  | pendente: figura (o Green aceita várias artérias para o enxerto do Kienböck) |
+| 19 | Enxerto vascularizado para Kienböck: artéria | anatomia, figura | cap. 16, seção de enxertos vascularizados no Kienböck | mao / Doença de Kienböck | 22 | mao-2626 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 20 | Polegar hipoplásico: tendão preferido na oponentoplastia | transferência | cap. 37, p. 1457 | mao / Outras malformações congênitas | 16 | mao-2090 | publicada |
 | 21 | Carcinoma basocelular: formas | afirmativas | cap. 58, p. 2166 e 2167 | mao / Tumores da mão | 08 | mao-2054 | publicada |
 | 22 | Síndrome compartimental neonatal | afirmativas | cap. 51, p. 1967 | mao / Outros temas da mão | 09 | mao-2062 | publicada |
-| 23 | Artropatia pela imagem | diagnóstico, figura | cap. 55, p. 2040 e 2041 | mao / Mão reumatoide | 08 |  | pendente: figura (diagnóstico pela imagem) |
+| 23 | Artropatia pela imagem | diagnóstico, figura | cap. 55, p. 2040 e 2041 | mao / Mão reumatoide | 22 | mao-2627 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 24 | Bloqueio interescalênico | afirmativas | cap. 1, p. 2 e 5 | mao / Anestesia em cirurgia da mão | 09 | mao-2061 | publicada |
-| 25 | Prega palmar formada pela flexão das MF ulnares | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | pendente: sem fonte (pregas palmares não descritas no Green) |
+| 25 | Prega palmar formada pela flexão das MF ulnares | anatomia | sem página na correção | mao / Anatomia da mão e punho | 21 | mao-2619 | publicada (Green 7ª ed., 09/11/2026) |
 | 26 | Linha de KAPLAN com a borda radial do médio: referência | anatomia | sem página na correção | mao / Anatomia da mão e punho | 19 |  | pendente: sem fonte (linha cardinal de KAPLAN não está no Green) |
 | 27 | Ângulo escafossemilunar da flexão à extensão | número | correção cita The Wrist | mao / Instabilidade do carpo | 04 |  | pendente: sem fonte (valores do ângulo SL não estão no Green) |
 | 28 | Teste de BERGER | epônimo | correção cita The Wrist | mao / Exame físico da mão e punho | 11 |  | pendente: sem fonte (teste de BERGER não está no Green; os PDFs do Pardini são imagem, sem texto pesquisável) |
@@ -451,12 +451,12 @@ livros da SBCM): procurar o fato no Green; sem fonte, "pendente: sem fonte".
 | 68 | Escafoide: comprimento do parafuso | número | cap. 16, p. 689 | mao / Fraturas do escafoide e do carpo | 06 | mao-2047 | publicada |
 | 69 | Dupuytren: estruturas da figura | anatomia, figura | cap. 4, p. 156 | mao / Doença de Dupuytren | 01 | mao-2024 | publicada |
 | 70 | Rizartrose: estágio de EATON pela imagem | classificação, figura | cap. 11, p. 423 | mao / Rizartrose e artrose da mão | 03 | mao-2034 | publicada |
-| 71 | CMC do polegar: ligamentos da figura | anatomia, figura | cap. 11, p. 423 | mao / Rizartrose e artrose da mão | 03 |  | pendente: figura (letras dos ligamentos) |
-| 72 | Radiografia: diagnóstico | diagnóstico, figura | cap. 38 | mao / Deficiências longitudinais e mão torta | 15 |  | pendente: depende da radiografia |
+| 71 | CMC do polegar: ligamentos da figura | anatomia, figura | cap. 11, p. 423 | mao / Rizartrose e artrose da mão | 22 | mao-2628 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
+| 72 | Radiografia: diagnóstico | diagnóstico, figura | cap. 38 | mao / Deficiências longitudinais e mão torta | 22 | mao-2629 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 73 | Ângulo da lágrima no desvio anterior | número | cap. 15, p. 604 e 610 | mao / Fratura do rádio distal | 05 | mao-2042 | publicada |
 | 74 | Amputação no eponíquio: zonas de TAMAI e ALLEN | classificação | cap. 49, p. 1908 | mao / Amputações e reimplantes | 10 | mao-2065 | publicada |
 | 75 | Tensor da fáscia lata: tipo de suprimento muscular | classificação | cap. 44, p. 1731 e 1732 | mao / Retalhos e cobertura cutânea | 18 | mao-2100 | publicada |
-| 76 | Deformidade de dedo pela imagem | diagnóstico, figura | cap. 36 | mao / Deformidades dos dedos | 16 |  | pendente: depende da imagem |
+| 76 | Deformidade de dedo pela imagem | diagnóstico, figura | cap. 36 | mao / Deformidades dos dedos | 22 | mao-2630 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 77 | Retalho da imagem para a ponta do polegar | epônimo, figura | cap. 48, p. 1850 e 1853 (Fig. 48.6) | mao / Retalhos e cobertura cutânea | 19 | mao-2105 | publicada (caso da figura descrito) |
 | 78 | CURTIS estágio II: estrutura seccionada | classificação | cap. 5, p. 201 e 202 | mao / Lesões dos tendões extensores | 01 | mao-2025 | publicada |
 | 79 | Embriologia: camadas da figura | anatomia, figura | cap. 35, p. 1364 (Fig. 35.1) | mao / Outras malformações congênitas | 14 |  | pendente: figura com letras; conceito já em mao-2004 |
@@ -499,7 +499,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 2 | FERNANDEZ (rádio distal): tipo com suspeita de lesão escafossemilunar | classificação | cap. 15, p. 615 (Fig. 15.15) | mao / Fratura do rádio distal | 06 | mao-2129 | publicada |
 | 3 | Banda sagital, lesão fechada: banda e dedos mais acometidos | fato | cap. 5, p. 185 e 204 | mao / Lesões dos tendões extensores | 02 | mao-2110 | publicada |
 | 4 | LICHTMAN: grau IV do teste de instabilidade mediocárpica | classificação | cap. 13, p. 539 | mao / Instabilidade do carpo | 05 | mao-2124 | publicada (gabarito pelo Green: grau IV = C; o oficial D é o grau V) |
-| 5 | Luxação isolada do escafoide tipo II: articulação desalinhada | classificação | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | pendente: sem fonte (tipos da luxação isolada do escafoide não estão no Green) |
+| 5 | Luxação isolada do escafoide tipo II: articulação desalinhada | classificação | cap. 16 | mao / Fraturas do escafoide e do carpo | 23 | mao-2617 | publicada (Green 7ª ed., 09/11/2026) |
 | 6 | Desfiladeiro torácico: valor do potencial evocado somatossensitivo | fato | cap. 29, p. 1137 | mao / Neuropatia ulnar e outras compressões | 09 | mao-2139 | publicada |
 | 7 | O que mimetiza a paralisia ulnar | fato | cap. 28, p. 1105 e 1121 | mao / Lesões de nervos periféricos | 09 | mao-2138 | publicada (ângulo: o Green não cita CMT; C8 também seria defensável) |
 | 8 | Pronação do antebraço na paralisia cerebral: evolução | fato | cap. 32, p. 1248 e 1250 | mao / Transferências tendinosas e paralisias | 10 | mao-2144 | publicada (gabarito pelo Green: espástica; o oficial B era flácida) |
@@ -513,9 +513,9 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 16 | PANEVA-HOLEVICH: tendão do enxerto | epônimo | cap. 6, p. 232 e 241 | mao / Lesões dos tendões flexores | 02 | mao-2111 | publicada |
 | 17 | Enxerto ósseo da foto: área doadora | figura | cap. 8, p. 338 | mao / Lesões ligamentares dos dedos | 03 | mao-2116 | publicada (caso da foto descrito) |
 | 18 | Osteoartrite inflamatória dos dedos: mais sintomática e mais acometida | fato | cap. 11, p. 409 | mao / Rizartrose e artrose da mão | 04 | mao-2122 | publicada |
-| 19 | Técnica da figura: qual instabilidade trata | figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | pendente: figura |
+| 19 | Técnica da figura: qual instabilidade trata | figura | cap. 13 | mao / Instabilidade do carpo | 24 | mao-2620 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 20 | Luxação dorsal da ARUD: posição do punho | fato | cap. 14, p. 574 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2127 | publicada |
-| 21 | Pseudartrose do escafoide: técnica da foto | figura | cap. 16 | mao / Fraturas do escafoide e do carpo | 07 |  | pendente: depende da foto |
+| 21 | Pseudartrose do escafoide: técnica da foto | figura | cap. 16 | mao / Fraturas do escafoide e do carpo | 24 | mao-2621 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 22 | Colateral medial do cotovelo: porção mais resistente | anatomia | cap. 22, p. 977 | ombro-cotovelo / Instabilidade do cotovelo | 20 | ombro-cotovelo-0670 | publicada |
 | 23 | FROMENT, EGAWA e DUCHENNE sem déficit sensitivo: zona do canal de GUYON | fato | cap. 28, p. 1103 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2135 | publicada |
 | 24 | Classificação internacional da tetraplegia, grupo 4: músculos disponíveis | classificação | cap. 33, p. 1268 (Tabela 33.3) | mao / Transferências tendinosas e paralisias | 10 | mao-2145 | publicada |
@@ -528,7 +528,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 31 | Tendinite calcária na mão e punho: tendão mais comum | fato | cap. 56, p. 2115 e 2116 | mao / Dedo em gatilho e outras tenossinovites | 17 | mao-2180 | publicada |
 | 32 | Hamartoma fibrolipomatoso: nervo mais acometido | fato | cap. 59, p. 2209 | mao / Tumores da mão | 19 | mao-2185 | publicada |
 | 33 | Ligamento de STRUTHERS: nervo comprimido | fato | cap. 28, p. 1100 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2134 | publicada |
-| 34 | Ligamentos do aparelho extensor da figura | anatomia, figura | cap. 5 | mao / Lesões dos tendões extensores | 02 |  | pendente: figura com letras |
+| 34 | Ligamentos do aparelho extensor da figura | anatomia, figura | cap. 5 | mao / Lesões dos tendões extensores | 24 | mao-2622 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 35 | Melanoma que surge junto a um nevo | fato | cap. 58, p. 2171 | mao / Tumores da mão | 03 | mao-2118 | publicada |
 | 36 | Síndrome do interósseo anterior: o que enfraquece | fato | cap. 28, p. 1100 | mao / Neuropatia ulnar e outras compressões | 08 | mao-2136 | publicada (alternativa B ajustada: duas eram certas pelo Green) |
 | 37 | Flexor longo do polegar: reparo tardio com bom resultado até | número | cap. 6, p. 245 | mao / Lesões dos tendões flexores | 02 | mao-2112 | publicada |
@@ -538,17 +538,17 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 41 | Ligamentos ulnocárpicos palmares: quantos e em que plano | anatomia | cap. 13, p. 491; cap. 14, p. 566 | mao / Fibrocartilagem triangular e punho ulnar | 06 | mao-2126 | publicada |
 | 42 | CAMITZ: melhor indicação | indicação | cap. 31, p. 1199 | mao / Transferências tendinosas e paralisias | 10 | mao-2142 | publicada |
 | 43 | NALEBUFF: polegar reumatoide da radiografia | classificação, figura | cap. 55, p. 2091 a 2093 | mao / Mão reumatoide | 18 | mao-2181 | publicada |
-| 44 | Ângulo da lágrima (teardrop) na radiografia | número, figura | cap. 15, p. 604 | mao / Fratura do rádio distal | 06 |  | pendente: depende da radiografia |
-| 45 | Ligamentos do punho da figura | anatomia, figura | cap. 13 | mao / Instabilidade do carpo | 05 |  | pendente: figura com letras |
+| 44 | Ângulo da lágrima (teardrop) na radiografia | número, figura | cap. 15, p. 604 | mao / Fratura do rádio distal | 23 | mao-2618 | publicada (Green 7ª ed., 09/11/2026) |
+| 45 | Ligamentos do punho da figura | anatomia, figura | cap. 13 | mao / Instabilidade do carpo | 24 | mao-2623 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 46 | Contratura em flexão da IFP: o que liberar | técnica | cap. 10, p. 400 | mao / Deformidades dos dedos | 04 | mao-2119 | publicada |
 | 47 | Contratura em extensão da IFP: o que liberar | técnica | cap. 10, p. 403 | mao / Deformidades dos dedos | 04 | mao-2120 | publicada |
 | 48 | TSUGE, Volkmann moderada: melhor tratamento | conduta | cap. 51, p. 1978 a 1982 | mao / Outros temas da mão | 17 | mao-2176 | publicada |
 | 49 | Plexo total: contraindicação da artrodese glenoumeral | conduta | cap. 34, p. 1341 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2148 | publicada |
 | 50 | Reconstrução do plexo: principal contraindicação | conduta | cap. 34, p. 1311 | mao / Plexo braquial e paralisia obstétrica | 11 | mao-2149 | publicada |
 | 51 | MONTEGGIA posterior: causa da instabilidade ulnoumeral | fato | cap. 20, p. 947 | ombro-cotovelo / Fraturas do cotovelo e antebraço | 20 | ombro-cotovelo-0671 | publicada |
-| 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55, p. 2051 (não diz qual é a mais comum) | mao / Mão reumatoide | 18 |  | pendente: sem fonte |
+| 52 | Artrite reumatoide: o que mais simula ruptura extensora | fato | cap. 55, p. 2051 (não diz qual é a mais comum) | mao / Mão reumatoide | 22 | mao-2613 | publicada (Green 7ª ed., 09/11/2026) |
 | 53 | BLAUTH: tipo sem tenares, com déficit esquelético e CMC instável | classificação | cap. 37 p. 1455 | mao / Outras malformações congênitas | 13 | mao-2156 | publicada |
-| 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 01 |  | pendente: figura com letras |
+| 54 | Estruturas da fáscia digital na figura (Dupuytren) | anatomia, figura | cap. 4 | mao / Doença de Dupuytren | 24 | mao-2624 | publicada (figura virou texto; Green 7ª ed., 09/11/2026) |
 | 55 | Dupuytren: recorrência que começa em 6 a 12 semanas | classificação | cap. 4, p. 156 | mao / Doença de Dupuytren | 01 | mao-2109 | publicada (ângulo: definição do Green, sem o 6 a 12 semanas) |
 | 56 | Flexor superficial dos dedos: anatomia | afirmativas | cap. 6, p. 214 | mao / Lesões dos tendões flexores | 02 | mao-2113 | publicada |
 | 57 | Avulsão do colateral ulnar do polegar: quando ressecar e reinserir | número | cap. 8, p. 352 | mao / Lesões ligamentares dos dedos | 03 | mao-2114 | publicada |
@@ -568,7 +568,7 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 71 | Retalho inguinal: a circunflexa ilíaca superficial | afirmativas | cap. 44 p. 1736 | mao / Retalhos e cobertura cutânea | 15 | mao-2168 | publicada |
 | 72 | Gluconato de cálcio subdérmico: qual queimadura química | conduta | cap. 57, p. 2144 | mao / Queimaduras | 18 | mao-2182 | publicada |
 | 73 | Bloqueio interescalênico: nervo que mais falha | fato | cap. 1, p. 5 e 8 | mao / Anestesia em cirurgia da mão | 01 | mao-2106 | publicada |
-| 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16, p. 736 | mao / Doença de Kienböck | 07 |  | pendente: sem fonte (artrodese junto do encurtamento do capitato não está no Green) |
+| 74 | Encurtamento do capitato no Kienböck: artrodese associada | técnica | cap. 16, p. 736 | mao / Doença de Kienböck | 22 | mao-2614 | publicada (Green 7ª ed., 09/11/2026) |
 | 75 | Policização: o que fazer com a cabeça do 2º metacarpo | técnica | cap. 37 p. 1464 | mao / Outras malformações congênitas | 13 | mao-2157 | publicada (pergunta pela articulação MCF; o Green deixa a cabeça em flexão) |
 | 76 | Sinal de HUTCHINSON na melanoníquia | sinal | cap. 58, p. 2162 | mao / Tumores da mão | 03 | mao-2117 | publicada |
 | 77 | IFD hiperestende mais que a IFP: o que falta nela | anatomia | cap. 8, p. 326; cap. 10, p. 390 | mao / Lesões ligamentares dos dedos | 03 | mao-2115 | publicada (IFD sem checkrein: cap. 10, p. 390) |
@@ -583,13 +583,13 @@ Separada de `PROVA SBCM 2022 - SEM RESPOSTA.pdf` em 21/10/2026 (100 questões em
 | 86 | Dedo mínimo abduzido na paralisia ulnar: transferência | transferência | cap. 31, p. 1223 | mao / Transferências tendinosas e paralisias | 10 | mao-2143 | publicada |
 | 87 | Fratura de SEYMOUR: o que se interpõe | fato | cap. 41 p. 1602 | mao / Fraturas dos metacarpos e falanges | 14 | mao-2164 | publicada |
 | 88 | Síndrome compartimental neonatal: achados | fato | cap. 51, p. 1967 e 1972 | mao / Outros temas da mão | 17 | mao-2177 | publicada |
-| 89 | Toxina botulínica: mecanismo | fato | cap. 32 | mao / Transferências tendinosas e paralisias | 10 |  | pendente: sem fonte (mecanismo da toxina botulínica não está no Green) |
+| 89 | Toxina botulínica: mecanismo | fato | cap. 32 | mao / Transferências tendinosas e paralisias | 22 | mao-2615 | publicada (Green 7ª ed., 09/11/2026) |
 | 90 | Embriologia: blastemas e tensão de oxigênio | fato | cap. 35 p. 1368 | mao / Outras malformações congênitas | 12 | mao-2151 | publicada (distrator refeito: B e D iguais na original) |
 | 91 | BLAUTH: tipos com indicação de policização | classificação | cap. 37 p. 1455 | mao / Outras malformações congênitas | 13 | mao-2158 | publicada |
 | 92 | Reimplante de dedos: melhores indicações | indicação | cap. 42 p. 1653 | mao / Amputações e reimplantes | 14 | mao-2165 | publicada |
 | 93 | Anterolateral da coxa: artéria das perfurantes | anatomia | cap. 45 p. 1767 | mao / Microcirurgia e retalhos livres | 16 | mao-2172 | publicada |
 | 94 | GILLIES: reconstrução osteoplástica do polegar | técnica | cap. 48 p. 1859 a 1862 | mao / Retalhos e cobertura cutânea | 16 | mao-2175 | publicada (GILLIES só citado como fora de uso; pergunta a osteoplástica clássica) |
-| 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 (padrão de deformidade não descrito) | mao / Mão reumatoide | 18 |  | pendente: sem fonte |
+| 95 | Artrite psoriática: deformidades mais comuns | fato | cap. 55 (padrão de deformidade não descrito) | mao / Mão reumatoide | 22 | mao-2616 | publicada (Green 7ª ed., 09/11/2026) |
 | 96 | ENNEKING: estágio IIA | classificação | cap. 59, p. 2186 | mao / Tumores da mão | 19 | mao-2187 | publicada |
 | 97 | Braquial profunda: ramo mais calibroso | anatomia | cap. 45 p. 1756 | mao / Microcirurgia e retalhos livres | 16 | mao-2173 | publicada (pergunta o ramo do retalho lateral do braço: 'mais calibroso' não está no Green) |
 | 98 | Paroníquia: mecanismo e agente | fato | cap. 2, p. 20 | mao / Infecções da mão | 01 | mao-2108 | publicada |
@@ -838,12 +838,12 @@ Fase 0 em 26/10/2026: 100 questões extraídas de `SIMÃO 2022 SEM RESPOSTAS.pdf
 | 1 | Ligamentos de contenção da IFP | reformulada | 10 | Dedo rígido | 01 | mao-2378 | publicada |
 | 2 | McGOWAN grau II | reformulada | 28 | Neuropatia ulnar | 01 | mao-2379 | publicada |
 | 3 | Sarcoma na falange média | reformulada | 59 | Tumores | 01 | mao-2380 | publicada |
-| 4 | Classificação de LISTER do polegar | reformulada | 48 | Polegar | - | - | pendente: sem fonte (LISTER não está no Green nem nos livros locais) |
+| 4 | Classificação de LISTER do polegar | reformulada | 48 | Polegar | 19 | mao-2598 | publicada (Green 7ª ed., 09/11/2026) |
 | 5 | MATHES e NAHAI tipo III | reformulada (exemplo do Green) | 44 | Cobertura | 01 | mao-2381 | publicada |
 | 6 | Mecanismo da fratura da cabeça do rádio | reformulada (original com alternativas repetidas) | 19 | Cabeça do rádio | 01 | mao-2382 | publicada |
 | 7 | Pioderma gangrenoso | reformulada | 2 | Infecções | 02 | mao-2383 | publicada |
-| 8 | Fraturas-luxações axiais de GARCIA-ELIAS | figura | 16 | Carpo | - | - | pendente: depende da figura da prova |
-| 9 | ZANCOLLI na paralisia cerebral | reformulada | 32 | PC | - | - | pendente: sem fonte (ZANCOLLI não está no cap. 32 traduzido) |
+| 8 | Fraturas-luxações axiais de GARCIA-ELIAS | figura | 16 | Carpo | 21 | mao-2604 | publicada (Green 7ª ed., 09/11/2026) |
+| 9 | ZANCOLLI na paralisia cerebral | reformulada | 32 | PC | 20 | mao-2599 | publicada (Green 7ª ed., 09/11/2026) |
 | 10 | Sequência da lesão escafolunar | reformulada | 13 | Carpo | 02 | mao-2384 | publicada |
 | 11 | Junção término-lateral de BURKHALTER | reformulada (gabarito diverge do Green) | 31 | Transferências | 16 | mao-2453 | publicada |
 | 12 | Sanguessuga e Aeromonas | reformulada | 2 | Infecções | 02 | mao-2385 | publicada |
@@ -862,7 +862,7 @@ Fase 0 em 26/10/2026: 100 questões extraídas de `SIMÃO 2022 SEM RESPOSTAS.pdf
 | 25 | AIJ oligoarticular | reformulada | 55 | Reumatoide | 04 | mao-2396 | publicada |
 | 26 | Sinal do bocejo (gaveta anterior) | reformulada | 13 | Carpo | 04 | mao-2397 | publicada |
 | 27 | Oponentoplastia de HUBER | reformulada | 31 | Transferências | 05 | mao-2399 | publicada |
-| 28 | Objetivo na tetraplegia C5 | reformulada | 33 | Tetraplegia | - | - | pendente: conferir à mão (objetivo do nível C5 não fica claro no cap. 33) |
+| 28 | Objetivo na tetraplegia C5 | reformulada | 33 | Tetraplegia | 20 | mao-2600 | publicada (Green 7ª ed., 09/11/2026) |
 | 29 | Estiloidectomia na artrodese reumatoide | reformulada | 12 | Artrodese do punho | 05 | mao-2400 | publicada |
 | 30 | Tempo da degeneração walleriana | reformulada (gabarito diverge do Green) | 30 | Nervos | 05 | mao-2401 | publicada |
 | 31 | Camptodactilia e artrogripose | reformulada (WATERS e BAE) | 39 | Congênitas | 05 | mao-2402 | publicada |
@@ -890,17 +890,17 @@ Fase 0 em 26/10/2026: 100 questões extraídas de `SIMÃO 2022 SEM RESPOSTAS.pdf
 | 53 | Tenossinovectomia no túnel do carpo | reformulada | 28 | Túnel do carpo | 09 | mao-2421 | publicada |
 | 54 | Associações da mão torta ulnar | reformulada | 38 | Mão torta | 09 | mao-2422 | publicada |
 | 55 | Biópsia da melanoníquia | reformulada | 58 | Tumores de pele | 10 | mao-2423 | publicada |
-| 56 | Complicação da transferência do dedo do pé | reformulada | 47 | Dedo do pé | - | - | pendente: conferir à mão (complicação mais comum não aparece explícita no cap. 47) |
-| 57 | Comprimento do retalho da comissura | reformulada | 36 | Sindactilia | - | - | pendente: sem fonte (medida não está no cap. 36 traduzido) |
+| 56 | Complicação da transferência do dedo do pé | reformulada | 47 | Dedo do pé | 20 | mao-2601 | publicada (Green 7ª ed., 09/11/2026) |
+| 57 | Comprimento do retalho da comissura | reformulada | 36 | Sindactilia | 21 | mao-2605 | publicada (Green 7ª ed., 09/11/2026) |
 | 58 | Divisão posterior do tronco superior | reformulada | 34 | Plexo | 10 | mao-2424 | publicada |
 | 59 | Macrodactilia tipo IV | reformulada | 36 | Congênitas | 10 | mao-2425 | publicada |
 | 60 | Ligamento triangular | reformulada | 5 | Extensores | 10 | mao-2426 | publicada |
 | 61 | MADELUNG | reformulada | 38 | Congênitas | 10 | mao-2427 | publicada |
 | 62 | Fixador externo no metacarpo | reformulada | 7 | Metacarpos | 11 | mao-2428 | publicada |
-| 63 | Resultados da artrodese escafocapitato | reformulada | 13 | Carpo | - | - | pendente: conferir à mão (opções não estão no cap. 13 traduzido) |
+| 63 | Resultados da artrodese escafocapitato | reformulada | 13 | Carpo | 21 | mao-2606 | publicada (Green 7ª ed., 09/11/2026) |
 | 64 | Anatomia do mediano | reformulada (Netter + Green) | 28 | Anatomia | 11 | mao-2429 | publicada |
 | 65 | Algoritmo do polegar na artrogripose | reformulada | 39 | Artrogripose | 13 | mao-2439 | publicada |
-| 66 | Epidemiologia dos aneurismas da mão | reformulada | 60 | Vascular | - | - | pendente: conferir à mão |
+| 66 | Epidemiologia dos aneurismas da mão | reformulada | 60 | Vascular | 20 | mao-2602 | publicada (Green 7ª ed., 09/11/2026) |
 | 67 | Critérios de instabilidade do escafoide | reformulada | 16 | Carpo | 18 | mao-2463 | publicada |
 | 68 | PANEVA-HOLEVICH | reformulada | 6 | Flexores | 11 | mao-2430 | publicada |
 | 69 | Ossos da braquidactilia | reformulada | 36 | Congênitas | 11 | mao-2431 | publicada |
@@ -922,8 +922,8 @@ Fase 0 em 26/10/2026: 100 questões extraídas de `SIMÃO 2022 SEM RESPOSTAS.pdf
 | 85 | HUI e LINSCHEID | reformulada | 14 | Radioulnar distal | 14 | mao-2447 | publicada |
 | 86 | Pedículo do grácil | reformulada | 34 | Plexo | 15 | mao-2448 | publicada |
 | 87 | Manobra de EICHHOFF | reformulada | 56 | Tendinopatias | 15 | mao-2449 | publicada |
-| 88 | Ausência congênita dos dedos | reformulada | 36 | Congênitas | - | - | pendente: conferir à mão |
-| 89 | Tempo da fasciotomia | reformulada | 51 | Compartimental | - | - | pendente: conferir à mão (o cap. 51 não fixa 8 horas) |
+| 88 | Ausência congênita dos dedos | reformulada | 36 | Congênitas | 20 | mao-2603 | publicada (Green 7ª ed., 09/11/2026) |
+| 89 | Tempo da fasciotomia | reformulada | 51 | Compartimental | 21 | mao-2607 | publicada (Green 7ª ed., 09/11/2026) |
 | 90 | Portal mediocárpico ulnar | reformulada | 17 | Artroscopia | 15 | mao-2450 | publicada |
 | 91 | Instabilidade carpal adaptativa | reformulada (alternativa oficial sem apoio no Green) | 13 | Carpo | 17 | mao-2460 | publicada |
 | 92 | Tumores malignos de pele | reformulada | 58 | Tumores de pele | 15 | mao-2451 | publicada |
@@ -980,7 +980,7 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 34 | Indicação da tenodese ulnocarpal (HUI e LINSCHEID) | reformulada, outro ângulo | 14, p. 579 | Radioulnar distal | 15 | mao-2550 | aplicada |
 | 35 | Desalinhamento adaptativo do carpo no rádio viciado | reformulada | 13, p. 544 e 545 | Instabilidade do carpo | 13 | mao-2535 | aplicada |
 | 36 | Principal músculo da oposição | reformulada | 31 | Transferências | 03 | mao-2479 | aplicada |
-| 37 | De QUERVAIN: atividade de risco | — | 56 | Tenossinovites | — | — | pendente: tema já no acervo; atividade da alternativa oficial sem fonte no Green |
+| 37 | De QUERVAIN: atividade de risco | — | 56 | Tenossinovites | 21 | mao-2608 | publicada (Green 7ª ed., 09/11/2026) |
 | 38 | Fóvea da ulna | reformulada, outro ângulo | 14, p. 563 e 564 | Fibrocartilagem triangular | 13 | mao-2536 | aplicada |
 | 39 | Local da lesão do colateral ulnar | reformulada | 8 | Ligamentos | 03 | mao-2480 | aplicada |
 | 40 | Achados anatômicos na deficiência radial | reformulada, outro ângulo | 38, p. 1496 | Mão torta radial | 13 | mao-2537 | aplicada |
@@ -1000,9 +1000,9 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 54 | Critérios de LAFONTAINE | reformulada | 15 | Rádio distal | 08 | mao-2505 | aplicada |
 | 55 | Pseudartrose na artrodese total do punho (prevenção na 3ª CMC) | reformulada, outro ângulo | 12, p. 465 | Artrose do punho | 09 | mao-2506 | aplicada |
 | 56 | Artrodese total com carpectomia proximal (radiocapitato e 3ª CMC) | reformulada, outro ângulo | 12, p. 463 e 465 | Artrose do punho | 09 | mao-2507 | aplicada |
-| 57 | Lesão de nervos periféricos (afirmações) | — | 30 | Nervos | — | — | pendente: sem gabarito e sem fonte para a alternativa do radial |
+| 57 | Lesão de nervos periféricos (afirmações) | — | 30 | Nervos | 21 | mao-2609 | publicada (Green 7ª ed., 09/11/2026) |
 | 58 | Garra mais acentuada na lesão ulnar baixa | reformulada, outro ângulo | 31, p. 1192, 1208 e 1209 | Transferências e paralisias | 09 | mao-2508 | aplicada |
-| 59 | Anatomia vascular (axila e arcos) | — | 60 | Anatomia | — | — | pendente: anatomia da axila fora do Green |
+| 59 | Anatomia vascular (axila e arcos) | — | 60 | Anatomia | 21 | mao-2610 | publicada (Green 7ª ed., 09/11/2026) |
 | 60 | Contraindicação relativa ao reimplante | reformulada, outro ângulo | 42, p. 1653 | Amputações e reimplantes | 09 | mao-2509 | aplicada |
 | 61 | Interescalênico bilateral contraindicado (frênico) | reformulada, outro ângulo | 1, p. 1 e 2 | Anestesia | 09 | mao-2510 | aplicada |
 | 62 | Mecanismo do sinal de WARTENBERG | reformulada | 31, p. 1210 | Exame físico | 09 | mao-2511 | aplicada |
@@ -1021,10 +1021,10 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 75 | Tendão flexor aderido: terapia antes da tenólise | reformulada, outro ângulo | 6, p. 227 e 228 | Tendões flexores | 11 | mao-2523 | aplicada |
 | 76 | Polo proximal do escafoide: fixar sempre | reformulada | 16, p. 682 e 683 | Escafoide | 11 | mao-2524 | aplicada |
 | 77 | Margem do melanoma até 1 mm de Breslow | reformulada | 58, p. 2172 | Tumores | 11 | mao-2525 | aplicada |
-| 78 | Reconstrução do polegar (limites de 1,5 cm² e 2,5 cm) | — | 48 | Polegar | — | — | pendente: limites sem fonte no Green |
+| 78 | Reconstrução do polegar (limites de 1,5 cm² e 2,5 cm) | — | 48 | Polegar | 21 | mao-2611 | publicada (Green 7ª ed., 09/11/2026) |
 | 79 | MONTEGGIA no adulto: princípio do tratamento | reformulada, outro ângulo | 20, p. 938, 945 e 946.e4 | Ulna proximal | 11 | mao-2526 | aplicada |
 | 80 | Embriologia: dedos separados aos 52 a 53 dias | reformulada, outro ângulo | 35, p. 1363 | Malformações congênitas | 12 | mao-2527 | aplicada |
-| 81 | Paralisia cerebral: transferência para extensão dos dedos | — | 32 | Paralisia cerebral | — | — | pendente: FCU para extensor comum sem fonte no Green |
+| 81 | Paralisia cerebral: transferência para extensão dos dedos | — | 32 | Paralisia cerebral | 21 | mao-2612 | publicada (Green 7ª ed., 09/11/2026) |
 | 82 | Pioderma gangrenoso: reação patérgica | reformulada, outro ângulo | 3, p. 75; 2, p. 57 | Infecções | 12 | mao-2528 | aplicada |
 | 83 | Círculo de HORII: banda anterior do LCM pode ficar íntegra | reformulada, outro ângulo | 22, p. 979 | Cotovelo | 12 | mao-2529 | aplicada |
 | 84 | Regra 1:1 do retalho aleatório | reformulada | 44, p. 1712 | Retalhos | 12 | mao-2530 | aplicada |
@@ -1044,3 +1044,13 @@ Fase 0 em 26/10/2026: 100 questões extraídas do PDF sem respostas por `~/oqsp/
 | 98 | Botoeira traumática | reformulada | 5 | Extensores | 04 | mao-2485 | aplicada |
 | 99 | Neurotizações no plexo braquial | reformulada | 34 | Plexo | 07 | mao-2498 | aplicada |
 | 100 | Irrigação do grande dorsal | reformulada | 45 | Retalhos livres | 05 | mao-2490 | aplicada |
+
+## Pendentes resolvidas com o Green 7 (09/11/2026)
+
+O Green 7ª ed. (2017, inglês) resolveu 22 pendentes que estavam "sem fonte no Green traduzido": SIMÃO 2022 (4, 8, 9, 28, 56, 57, 63, 66, 88 e 89; mao-2598 a mao-2607),
+SIMÃO 2021 (37, 57, 59, 78 e 81; mao-2608 a mao-2612), SBCM 2022 (5, 44, 52, 74, 89 e 95; mao-2613 a mao-2618) e SBCM 2024 (25, com o Hoppenfeld; mao-2619).
+Lotes: `simao-2022/lote_19.py` a `lote_21.py`, `simao-2021/lote_21.py`, `sbcm-2022/lote_22.py` e `lote_23.py`, `sbcm-2024/lote_21.py`. A 8 da SIMÃO 2022 e a 44 da SBCM 2022 tinham figura e viraram texto.
+Divergência registrada: SIMÃO 2022 nº 28 (gabarito oficial "extensão dos dedos"; o Green 7 dá a extensão do punho como função mais necessária no grupo 1). A 57 do SIMÃO 2021 não tinha gabarito; a resposta segue o Green.
+
+**Ainda sem fonte local:** SIMÃO 2021 nº 69 (arco de CHEN) e 89 (espessura do fio 10-0); SIMÃO 2022 nº 34 (microanastomose); SIMÃO 2023 nº 37, 38 e 89; SBCM 2023 nº 56; SBCM 2024 nº 26, 27 e 28.
+**Figuras convertidas em texto (09/11/2026):** SBCM 2022 nº 19, 21, 34, 45 e 54 (mao-2620 a mao-2624) e SBCM 2024 nº 2, 19, 23, 71, 72 e 76 (mao-2625 a mao-2630). A SBCM 2024 nº 79 (camadas embrionárias) não virou questão nova: o conceito já está na mao-2004.
