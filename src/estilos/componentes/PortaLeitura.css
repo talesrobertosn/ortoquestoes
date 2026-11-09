@@ -11,28 +11,66 @@
   --pl-papel: #f6eedb;
   --pl-papel-linha: #d8c69c;
   --pl-palco: color-mix(in srgb, var(--lr-acento) 9%, var(--lr-papel));
-  position: relative; margin: 0 0 1.5rem; padding-top: 1.4rem;
+  /* Pop-up por cima do leitor (a barra fica visível); o véu esmaece a página. */
+  position: fixed; inset: 0; z-index: 6; display: grid; place-items: center; padding: 1rem;
   font-family: var(--fonte-texto, system-ui); font-size: 1rem; line-height: 1.5; hyphens: manual; -webkit-hyphens: manual; text-align: left;
-  color: var(--lr-texto); break-inside: avoid; scroll-margin-top: 80px;
+  color: var(--lr-texto);
 }
-/* O fim da prévia esmaece: as últimas linhas da última seção aberta somem aos poucos (máscara, sem cor própria). */
-.lr-secao--previa {
-  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 10rem), rgba(0, 0, 0, 0.12));
-  mask-image: linear-gradient(to bottom, #000 calc(100% - 10rem), rgba(0, 0, 0, 0.12));
+.pl-veu {
+  position: absolute; inset: 0; border: 0; padding: 0; cursor: default;
+  background: color-mix(in srgb, var(--lr-papel) 62%, transparent);
+  -webkit-backdrop-filter: blur(3px) saturate(0.8); backdrop-filter: blur(3px) saturate(0.8);
+  animation: pl-veu 0.35s ease-out both;
 }
 .pl-cartao {
   position: relative; display: grid; grid-template-columns: 13rem minmax(0, 1fr); gap: 1.6rem; align-items: stretch;
+  width: min(54rem, 100%); max-height: calc(100% - 1rem); overflow: auto; overscroll-behavior: contain; box-sizing: border-box;
   padding: 0.7rem 1.6rem 1.5rem 0.7rem;
   border: 2px solid var(--pl-tinta); background: var(--lr-papel);
-  box-shadow: 6px 6px 0 color-mix(in srgb, var(--lr-acento) 30%, transparent);
+  box-shadow: 6px 6px 0 color-mix(in srgb, var(--lr-acento) 30%, transparent), 0 24px 60px rgba(0, 0, 0, 0.22);
+  animation: pl-sobe 0.42s cubic-bezier(0.2, 0.8, 0.2, 1) both;
 }
 /* Filete de ouro no alto do cartão, como a fita do livro. */
 .pl-cartao::before {
-  content: ""; position: absolute; left: -2px; right: -2px; top: -2px; height: 6px;
+  content: ""; position: absolute; left: 0; right: 0; top: 0; height: 6px; z-index: 1;
   background: linear-gradient(to right, var(--px-ouro, #f4cf7c) 0 70%, #d9a43c 70%); box-shadow: 0 2px 0 var(--pl-tinta);
 }
+.pl-fechar {
+  position: absolute; top: 0.9rem; right: 0.7rem; z-index: 2; display: grid; place-items: center; width: 40px; height: 40px;
+  border: 0; background: transparent; color: var(--lr-suave); cursor: pointer;
+}
+.pl-fechar:hover { color: var(--lr-texto); background: color-mix(in srgb, var(--lr-texto) 7%, transparent); }
+.pl-fechar:focus-visible { outline: 3px solid var(--lr-acento); outline-offset: 0; }
 .lr--escuro .pl { --pl-tinta: #050807; }
-.lr--escuro .pl-cartao { border-color: #39433f; box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.45); }
+.lr--escuro .pl-veu { background: color-mix(in srgb, var(--lr-papel) 70%, transparent); }
+.lr--escuro .pl-cartao { border-color: #39433f; box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.45), 0 24px 60px rgba(0, 0, 0, 0.5); }
+@keyframes pl-veu { from { opacity: 0; } }
+@keyframes pl-sobe { from { opacity: 0; transform: translateY(24px) scale(0.98); } }
+
+/* ---------- O resto do resumo na página: linhas esmaecidas, sem o texto ---------- */
+/* O fim da prévia esmaece: as últimas linhas da última seção aberta somem aos poucos (máscara, sem cor própria). */
+.lr-secao--previa {
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 10rem), rgba(0, 0, 0, 0.25));
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 10rem), rgba(0, 0, 0, 0.25));
+}
+.pl-resto { position: relative; min-height: 14rem; margin-top: 0.4rem; break-inside: avoid; }
+.pl-resto__linhas {
+  position: absolute; inset: 3.6rem 0 0; pointer-events: none;
+  background:
+    linear-gradient(to right, transparent 0 0, transparent 100%),
+    repeating-linear-gradient(to bottom, color-mix(in srgb, var(--lr-texto) 9%, transparent) 0 0.62em, transparent 0.62em calc(var(--lr-entrelinha, 1.7) * 1em));
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.12) 40rem, rgba(0, 0, 0, 0.05));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.12) 40rem, rgba(0, 0, 0, 0.05));
+  filter: blur(1.5px);
+}
+.pl-resto__botao {
+  position: relative; z-index: 1; display: flex; align-items: center; justify-content: center; gap: 0.45rem; margin: 0 auto; min-height: 44px; padding: 0.5rem 1rem;
+  border: 2px solid var(--px-tinta, #1b1208); background: var(--px-ouro, #f4cf7c); color: var(--px-tinta, #1b1208);
+  font-family: var(--fonte-texto, system-ui); font-size: 0.92rem; font-weight: 800; cursor: pointer;
+  box-shadow: 3px 3px 0 var(--px-ouro-sombra, #6b4a0c);
+}
+.pl-resto__botao:hover { background: #ffdf95; }
+.pl-resto__botao:focus-visible { outline: 3px solid var(--lr-acento); outline-offset: 3px; }
 
 /* ---------- O palco e o livro ---------- */
 .pl-palco {
@@ -208,13 +246,22 @@
 .lr-capa__porta svg { display: inline-block; vertical-align: -2px; margin-right: 0.2rem; color: var(--lr-ouro); }
 
 @media (max-width: 40rem) {
-  .pl-cartao { grid-template-columns: 1fr; gap: 0.6rem; padding: 0.6rem 0.6rem 1.2rem; box-shadow: 4px 4px 0 color-mix(in srgb, var(--lr-acento) 30%, transparent); }
-  .pl-palco { min-height: 0; padding: 1.4rem 0.5rem 0.9rem; }
-  .pl-resta { grid-auto-flow: column; gap: 1rem; }
-  .pl-livro { --u: 3.4px; }
-  .pl-texto { padding: 0.4rem 0.5rem 0; }
-  .pl .pl-texto h2 { font-size: 1.38rem; }
-  .pl-lista { grid-template-columns: 1fr; }
+  /* No celular, a paywall sobe de baixo como uma folha. */
+  .pl { place-items: end stretch; padding: 0; }
+  .pl-cartao { grid-template-columns: 1fr; gap: 0.4rem; width: 100%; max-height: 88%; padding: 0.6rem 0.6rem calc(1.2rem + env(safe-area-inset-bottom)); border-width: 2px 0 0; box-shadow: 0 -12px 40px rgba(0, 0, 0, 0.22); }
+  .pl-palco { min-height: 0; grid-template-columns: auto auto; justify-content: center; gap: 1.4rem; padding: 1.2rem 0.5rem 0.6rem; }
+  .pl-resta { justify-items: start; text-align: left; gap: 0.25rem; }
+  .pl-livro { --u: 2.4px; }
+  .pl-texto { padding: 0.3rem 0.5rem 0; }
+  .pl .pl-selo { margin-bottom: 0.5rem; }
+  .pl .pl-texto h2 { font-size: 1.32rem; margin-bottom: 0.4rem; }
+  .pl .pl-frase { font-size: 0.95rem; margin-bottom: 0.8rem; }
+  .pl-lista { grid-template-columns: 1fr 1fr; gap: 0.55rem 0.7rem; margin-bottom: 1rem; }
+  .pl-lista small { display: none; }
+  .pl-lista strong { font-size: 0.86rem; }
+  .pl-lista__icone { width: 1.8rem; height: 1.8rem; }
+  .pl-fechar { top: 0.7rem; right: 0.4rem; }
   .pl .pl-botao { width: 100%; }
   .pl-acoes { justify-content: center; }
 }
+@media (prefers-reduced-motion: reduce) { .pl-veu, .pl-cartao { animation: none; } }

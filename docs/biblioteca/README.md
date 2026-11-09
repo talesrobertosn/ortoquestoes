@@ -18,13 +18,15 @@ estão no fim deste arquivo. A fila de temas e o que já foi enviado estão em [
    "Fazer a questão" e "Treinar o capítulo" mostram o convite da assinatura para quem não assina.
    (O limite antigo de 5 grátis caiu; o campo `acesso` continua, caso um resumo precise voltar a ser fechado.)
    **Prévia e paywall (Tales, 09/11/2026; substitui a porta das 6 partes de 19/10/2026):** no leitor do app, quem
-   não assina (visitante ou conta grátis) lê o começo de cada resumo, cerca de 35% do texto; dali em diante o texto
-   esmaece e aparece a paywall ("Assinar e ler o resumo completo"). **O tamanho da prévia é interno: nenhuma tela o
-   diz.** O ponto de corte é calculado por `scripts/biblioteca/gerar.mjs` (campo `corte` do capítulo, o último bloco
+   não assina (visitante ou conta grátis) desce no máximo cerca de 35% da página de cada resumo. A página tem o
+   comprimento real (o resto aparece como linhas esmaecidas, sem o texto de verdade no aparelho); ao chegar no
+   limite, a rolagem trava, a página esmaece e abre o pop-up da assinatura ("Assinar e ler o resumo completo"). Fechou,
+   volta à prévia, com um botão para reabrir. No modo paginado, a última página abre o pop-up. **O tamanho da prévia é
+   interno: nenhuma tela o diz.** O ponto de corte é calculado por `scripts/biblioteca/gerar.mjs` (campo `corte` do capítulo, o último bloco
    aberto, nunca num título nem no meio de lista). O índice mostra todas as partes, com cadeado nas fechadas; um
    `?bloco=` fechado abre na paywall dizendo qual parte era. Assinante, cortesia e administrador leem tudo. As páginas
    estáticas do Google continuam com o texto inteiro (só a busca chega nelas). Lógica em `src/biblioteca/porta.ts`
-   (teste `fixtures/testar_porta_resumos.mjs`), paywall em `src/biblioteca/PortaLeitura.tsx`.
+   (teste `fixtures/testar_porta_resumos.mjs`), pop-up e resto esmaecido em `src/biblioteca/PortaLeitura.tsx`, trava da rolagem em `src/paginas/LeitorResumo.tsx`.
 3. **Pode e deve citar as questões no meio do resumo**, com botão para fazer a questão (ela abre num
    painel, sem perder o lugar da leitura).
 4. Texto **autoral**, em português, na ordem em que a prova cobra; não traduzir o livro nem copiar trechos

@@ -18,7 +18,7 @@ import { usarSessao } from '../estado/sessao'
 import { AREAS_TREINO, FILTROS_VAZIOS } from '../dados/tipos'
 import { contasDisponiveis } from '../conta/supabase'
 import { blocosAbertos, calcularPorta } from '../biblioteca/porta'
-import { PortaLeitura } from '../biblioteca/PortaLeitura'
+import { FimDaPrevia, PortaLeitura } from '../biblioteca/PortaLeitura'
 import { usarSemCopia } from '../biblioteca/semCopia'
 import { flashcardsDosSubtemas, linkFlashcards, usarAreasDosFlashcards } from '../biblioteca/ligacoes'
 import { PrateleiraVazia } from '../biblioteca/salao/PrateleiraVazia'
@@ -208,6 +208,41 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
 
   const elementoDoBloco = (b: string) => pagina.current?.querySelector<HTMLElement>(`[data-bloco="${CSS.escape(b)}"]`) ?? null
 
+  // ── Prévia de quem não assina (Tales, 09/11/2026): a página tem o comprimento real (o resto vira linhas
+  // esmaecidas, sem o texto), mas a rolagem só desce até o começo delas; ali a página esmaece e abre a paywall. ──
+  const [paywall, definirPaywall] = useState(false)
+  const [restoAltura, definirRestoAltura] = useState(0)
+  /** Até onde a rolagem desce: o começo do resto esmaecido fica pouco abaixo do meio da tela. */
+  const limitePrevia = () => {
+    const el = rolagem.current, resto = elementoDoBloco('porta')
+    if (!el || !resto) return Infinity
+    return Math.max(0, resto.getBoundingClientRect().top - el.getBoundingClientRect().top + el.scrollTop - el.clientHeight * 0.55)
+  }
+  const fecharPaywall = useCallback(() => {
+    definirPaywall(false)
+    const el = rolagem.current
+    if (el && !paginado) el.scrollTop = Math.max(0, limitePrevia() - el.clientHeight * 0.3)
+  }, [paginado]) // eslint-disable-line react-hooks/exhaustive-deps
+  // O resto esmaecido mede o que falta na mesma proporção do que já está na tela (some no modo paginado).
+  useEffect(() => {
+    if (!porta.fechado || paginado) { definirRestoAltura(0); return }
+    const art = pagina.current
+    if (!art) return
+    const medir = () => {
+      const resto = art.querySelector('[data-bloco="porta"]')
+      if (!resto) return
+      const acima = resto.getBoundingClientRect().top - art.getBoundingClientRect().top
+      const alvo = Math.min(80000, Math.round(acima * (1 - porta.fracao) / Math.max(0.05, porta.fracao)))
+      definirRestoAltura((h) => Math.abs(h - alvo) > 8 ? alvo : h)
+    }
+    medir()
+    if (typeof ResizeObserver === 'undefined') return
+    const ro = new ResizeObserver(medir)
+    ro.observe(art)
+    return () => ro.disconnect()
+  }, [porta, paginado])
+  useEffect(() => { if (!porta.fechado) definirPaywall(false) }, [porta.fechado])
+
   // ── Paginado: colunas CSS do tamanho da tela; uma "página" = uma coluna ──
   const [geometria, definirGeometria] = useState({ largura: 0, altura: 0 })
   useLayoutEffect(() => {
@@ -252,6 +287,13 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
   const irPara = useCallback((bloco: string, fracao = 0, piscar = false) => {
     const el = rolagem.current, alvo = elementoDoBloco(bloco)
     if (!el || !alvo) return
+    // Parte fechada (índice, busca, link): vai ao limite da prévia e abre a paywall.
+    if (bloco === 'porta') {
+      if (paginado) { const pg = paginasRef.current; el.scrollLeft = Math.max(0, pg.total - 1) * pg.passo; definirPaginas((p) => ({ ...p, atual: Math.max(0, p.total - 1) })) }
+      else el.scrollTop = limitePrevia()
+      definirPaywall(true)
+      return
+    }
     if (paginado) {
       const caixa = el.getBoundingClientRect(), r = alvo.getBoundingClientRect()
       const passo = colunaLargura + vao
@@ -318,6 +360,13 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     return max <= 0 ? 100 : (el.scrollTop / max) * 100
   }
   const aoRolar = useCallback(() => {
+    // Quem não assina não desce além do limite da prévia: chegou nele, a paywall abre.
+    const el = rolagem.current
+    if (el && porta.fechado && !paginado) {
+      const limite = limitePrevia()
+      if (el.scrollTop > limite) el.scrollTop = limite
+      if (el.scrollTop >= limite - 1) definirPaywall(true)
+    }
     registrarAtividade(cronometro.current)
     posicao.current = lerPosicao()
     definirProgresso(progressoAtual())
@@ -325,7 +374,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     if (b) definirSecaoAtual(b.startsWith('h-') ? b.slice(2) : secaoDe.get(b) ?? null)
     clearTimeout(temporizador.current)
     temporizador.current = setTimeout(salvarAgora, 1200)
-  }, [lerPosicao, salvarAgora, secaoDe]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [lerPosicao, salvarAgora, secaoDe, porta.fechado, paginado]) // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
     const sair = () => { if (document.visibilityState === 'hidden') salvarAgora(true) }
     const fechar = () => salvarAgora(true)
@@ -345,6 +394,9 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
     }, PASSO_MS)
     return () => { clearInterval(relogio); for (const e of eventos) window.removeEventListener(e, mexeu) }
   }, [salvarAgora])
+
+  // Modo paginado: a última página é o fim da prévia; chegar nela abre a paywall.
+  useEffect(() => { if (porta.fechado && paginado && paginas.total > 1 && paginas.atual >= paginas.total - 1) definirPaywall(true) }, [porta.fechado, paginado, paginas.atual, paginas.total])
 
   const mudarPagina = useCallback((delta: number) => {
     const el = rolagem.current
@@ -577,7 +629,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
               </section>
             )
           })}
-          {porta.fechado && <PortaLeitura capitulo={capitulo.id} titulo={capitulo.titulo} numeroCapitulo={capitulo.capitulo.match(/\d+/)?.[0]} porta={porta} minutosRestantes={restantes.minutos} questoesRestantes={restantes.questoes} />}
+          {porta.fechado && <FimDaPrevia altura={restoAltura} aoAbrir={() => irPara('porta')} />}
           {!porta.fechado && capitulo.subtemas?.length ? <FrasesDoTema subtemas={capitulo.subtemas} /> : null}
           {porta.fechado ? <p className="lr-capa__ref">Texto autoral do OrtoQuestões, com as ideias e os números do capítulo; não substitui a leitura do original.</p> : <footer className="lr-fim" data-bloco="fim" aria-labelledby="lr-fim-titulo">
             <div className="lr-fim__cartao">
@@ -633,6 +685,7 @@ function Leitor({ capitulo, blocoInicial }: { capitulo: Capitulo; blocoInicial: 
       </aside>}
       {questao && <button type="button" className="lr-veu" aria-label="Voltar à leitura" tabIndex={-1} onClick={fecharQuestao} />}
 
+      {porta.fechado && paywall && <PortaLeitura aoFechar={fecharPaywall} capitulo={capitulo.id} titulo={capitulo.titulo} numeroCapitulo={capitulo.capitulo.match(/\d+/)?.[0]} porta={porta} minutosRestantes={restantes.minutos} questoesRestantes={restantes.questoes} />}
       {aviso && <Aviso aviso={aviso} aoFechar={() => definirAviso(null)} />}
       {guia && <GuiaTour id="leitor" titulo="Ajuda do leitor" passos={PASSOS_LEITOR} rolar={false} aoFechar={() => definirGuia(false)} />}
     </div>

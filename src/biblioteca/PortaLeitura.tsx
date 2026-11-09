@@ -17,13 +17,28 @@ const BENEFICIOS: Array<{ icone: NomeIcone; titulo: string; texto: string }> = [
 ]
 
 /**
- * A paywall dos resumos (pedido do Tales, 09/11/2026): no fim da prévia, o texto esmaece e aparece o livrinho
- * pixel fechado com a fita de ouro e o cadeado. Parado, flutua e a fita balança; com o mouse por cima, levanta;
+ * O resto do resumo, como a página o mostra a quem não assina: linhas esmaecidas no comprimento do texto que
+ * falta (sem o texto de verdade), para a página ter o tamanho real. A rolagem para pouco depois do começo delas
+ * (LeitorResumo) e abre a paywall; o botão reabre a paywall depois de fechada.
+ */
+export function FimDaPrevia({ altura, aoAbrir }: { altura: number; aoAbrir: () => void }) {
+  return (
+    <div className="pl-resto" data-bloco="porta" style={{ height: altura || undefined }}>
+      <button type="button" className="pl-resto__botao" onClick={aoAbrir}><Icone nome="cadeado" tamanho={15} /> Continuar lendo: exclusivo para assinantes</button>
+      <div className="pl-resto__linhas" aria-hidden="true" />
+    </div>
+  )
+}
+
+/**
+ * A paywall dos resumos (pedido do Tales, 09/11/2026): a pessoa desce a prévia; no limite, a página esmaece e
+ * abre este pop-up com o livrinho pixel fechado com a fita de ouro e o cadeado. Parado, flutua e a fita balança; com o mouse por cima, levanta;
  * no clique, o fecho abre e a capa entreabre antes de ir para os planos. O livro é um link de verdade
  * (Ctrl/Cmd e "reduzir movimento" vão direto) e fica aria-hidden: o botão com texto ao lado faz o mesmo.
  * Nunca diz quanto do texto a prévia mostra.
  */
-export function PortaLeitura({ capitulo, titulo, numeroCapitulo, porta, minutosRestantes, questoesRestantes }: {
+export function PortaLeitura({ capitulo, titulo, numeroCapitulo, porta, minutosRestantes, questoesRestantes, aoFechar }: {
+  aoFechar: () => void
   capitulo: string
   titulo: string
   numeroCapitulo?: string
@@ -34,7 +49,7 @@ export function PortaLeitura({ capitulo, titulo, numeroCapitulo, porta, minutosR
   const { logado, carregado, pagamentos_ativos } = usarPremium()
   const [abrindo, definirAbrindo] = useState(false)
   const [longe, definirLonge] = useState(false)
-  const no = useRef<HTMLElement>(null)
+  const no = useRef<HTMLDivElement>(null)
   const relogio = useRef<number | undefined>(undefined)
   const planos = '/assinatura'
   useEffect(() => {
@@ -45,6 +60,14 @@ export function PortaLeitura({ capitulo, titulo, numeroCapitulo, porta, minutosR
     return () => io.disconnect()
   }, [])
   useEffect(() => () => window.clearTimeout(relogio.current), [])
+  // Pop-up: o foco entra nele ao abrir, Esc fecha, e o foco volta para onde estava.
+  useEffect(() => {
+    const antes = document.activeElement as HTMLElement | null
+    (no.current?.querySelector<HTMLElement>('.pl-botao') ?? no.current?.querySelector<HTMLElement>('.pl-fechar'))?.focus({ preventScroll: true })
+    const tecla = (e: KeyboardEvent) => { if (e.key === 'Escape') { e.stopImmediatePropagation(); aoFechar() } }
+    window.addEventListener('keydown', tecla, true)
+    return () => { window.removeEventListener('keydown', tecla, true); antes?.focus?.({ preventScroll: true }) }
+  }, [aoFechar])
 
   const abrir = (e: MouseEvent<HTMLAnchorElement>) => {
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return
@@ -58,8 +81,10 @@ export function PortaLeitura({ capitulo, titulo, numeroCapitulo, porta, minutosR
   const partes = porta.restantes.length
   const conferindo = logado && !carregado
   return (
-    <section ref={no} id="porta-leitura" className={'pl' + (abrindo ? ' pl--abrindo' : '') + (longe ? ' pl--longe' : '')} data-bloco="porta" aria-labelledby="pl-titulo">
-      <div className="pl-cartao">
+    <div ref={no} className={'pl' + (abrindo ? ' pl--abrindo' : '') + (longe ? ' pl--longe' : '')}>
+      <button type="button" className="pl-veu" aria-label="Voltar à prévia" tabIndex={-1} onClick={aoFechar} />
+      <section id="porta-leitura" className="pl-cartao" role="dialog" aria-modal="true" aria-labelledby="pl-titulo">
+        <button type="button" className="pl-fechar" onClick={aoFechar} aria-label="Fechar e voltar à prévia" title="Voltar à prévia (Esc)"><Icone nome="fechar" tamanho={18} /></button>
         <div className="pl-palco">
           <a className="pl-livro" href={href(planos)} tabIndex={-1} aria-hidden="true" onClick={abrir}>
             <span className="pl-livro__flutua">
@@ -111,7 +136,7 @@ export function PortaLeitura({ capitulo, titulo, numeroCapitulo, porta, minutosR
             <ol>{porta.restantes.map((s) => <li key={s.id + (s.continua ? '-c' : '')} className={porta.pedida?.secao.id === s.id ? 'pl-depois--pedida' : ''}>{s.titulo}{s.continua && <small> (continuação)</small>}</li>)}</ol>
           </details>}
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
   )
 }
