@@ -248,13 +248,13 @@ function Adocao() {
     const u = p.usuariosReais
     if (!u) return null
     const s = p.sinais
-    return { contas: u.length, questoes: u.filter(x => x.respondidas > 0).length, cem: u.filter(x => x.respondidas >= 100).length, flashcards: u.filter(x => (s.get(x.id_usuario)?.flashcards_unicos ?? 0) > 0).length, resumos: u.filter(x => (x.pagina ?? '').startsWith('/resumos')).length, semana: u.filter(x => x.respondidas_7d > 0).length, planos: u.filter(x => !!s.get(x.id_usuario)?.planos_ultima).length, temSinais: s.size > 0 }
+    return { contas: u.length, questoes: u.filter(x => x.respondidas > 0).length, cinquenta: u.filter(x => x.respondidas >= 50).length, quinhentas: u.filter(x => x.respondidas >= 500).length, cem: u.filter(x => x.respondidas >= 100).length, flashcards: u.filter(x => (s.get(x.id_usuario)?.flashcards_unicos ?? 0) > 0).length, resumos: u.filter(x => (x.pagina ?? '').startsWith('/resumos')).length, semana: u.filter(x => x.respondidas_7d > 0).length, planos: u.filter(x => !!s.get(x.id_usuario)?.planos_ultima).length, temSinais: s.size > 0 }
   }, [p.usuariosReais, p.sinais])
   if (!a) return null
   return <article className="cr-cartao">
     <h3>O que as contas usam <small>de {inteiro(a.contas)} contas reais, desde o começo</small></h3>
     <Barras total={a.contas} itens={[
-      { nome: 'Responderam questões', valor: a.questoes }, { nome: 'Ativas nesta semana', valor: a.semana }, { nome: 'Passaram de 100 questões', valor: a.cem },
+      { nome: 'Responderam questões', valor: a.questoes }, { nome: 'Ativas nesta semana', valor: a.semana }, { nome: 'Fizeram 50 questões', valor: a.cinquenta }, { nome: 'Fizeram 100 questões', valor: a.cem }, { nome: 'Fizeram 500 questões', valor: a.quinhentas },
       ...(a.temSinais ? [{ nome: 'Usaram flashcards', valor: a.flashcards }, { nome: 'Viram os planos (30 dias)', valor: a.planos }] : []),
       { nome: 'Última página num resumo', valor: a.resumos },
     ]} />
