@@ -1,6 +1,6 @@
 ---
 id: dahlin-osteoma-osteoide
-versao: 1
+versao: 2
 titulo: Osteoma osteoide (e o osteoblastoma)
 especialidade: tumores
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases
 edicao: 6ª edição (2010)
 capitulo: Capítulo 9 · Osteoid Osteoma
 autores: K. Krishnan UNNI e Carrie Y. INWARDS
-fonte: Livros conferidos localmente em 04/11/2026: Dahlin's Bone Tumors, 6ª ed. (2010), cap. 9 (Osteoid Osteoma, p. 102 a 111) e cap. 10 (Osteoblastoma (Giant Osteoid Osteoma), p. 112 a 121); Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (p. 926 a 929, com a Tabela 27.1), cap. 28 (osteoblastoma, p. 963), cap. 26 (p. 867 a 870, com o Box 26.1) e cap. 3 (p. 176, 177 e 182); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 25 (p. 1033 a 1038); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (p. 430, 432 com a Tabela 13-2 e 437 a 439); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 29 (sem página impressa no PDF). As páginas citadas são as impressas.
-subtemas: Osteoma osteoide
-resumo: Lesão osteoblástica benigna de nicho pequeno (menor que 1,5 cm, raramente acima de 1 cm; osteoblastoma acima de 2 cm) cercado por esclerose reversível; masculino cerca de 3:1, 76% entre 5 e 24 anos; mais da metade em fêmur e tíbia, fêmur proximal com colo o local isolado mais comum; coluna nos elementos posteriores com escoliose dolorosa de concavidade para o lado da lesão; intra-articular sem esclerose, com sinovite que imita artrite; dor noturna aliviada por salicilatos e AINE pelas prostaglandinas e ciclo-oxigenases do nicho; TC é o exame de escolha para achar o nicho, cintilografia sempre positiva com foco intenso dentro de área maior, RM com edema que engana; trabéculas finas de osteoide orladas por osteoblastos em estroma fibrovascular; remissão espontânea em 3 a 4 anos; ablação por radiofrequência guiada por TC na maioria, burr-down ou curetagem do nicho sem ressecar toda a esclerose; recidiva baixa, nenhuma malignização; osteoblastoma maior, medular, coluna em 30% a 50%, menos dor e menos resposta ao AINE, comportamento às vezes agressivo.
+fonte: Livros conferidos localmente em 04/11/2026: Dahlin's Bone Tumors, 6ª ed. (2010), cap. 9 (Osteoid Osteoma, p. 102 a 111) e cap. 10 (Osteoblastoma (Giant Osteoid Osteoma), p. 112 a 121); Campbell's Operative Orthopaedics, 15ª ed., cap. 27 (p. 926 a 929, com a Tabela 27.1), cap. 28 (osteoblastoma, p. 963), cap. 26 (p. 867 a 870, com o Box 26.1) e cap. 3 (p. 176, 177 e 182); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 25 (p. 1033 a 1038); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (p. 430, 432 com a Tabela 13-2 e 437 a 439); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 29 (sem página impressa no PDF). Complemento de 09/11/2026 (osteoblastoma): Dahlin, cap. 10, relido com a Figura 10.1 (p. 112 a 121); Campbell 15, cap. 28 (p. 963); Tachdjian, cap. 7 (p. 83 e 84) e cap. 25 (p. 1036 a 1038); HEBERT, cap. 29. As páginas citadas são as impressas.
+subtemas: Osteoma osteoide; Osteoblastoma
+resumo: Lesão osteoblástica benigna de nicho pequeno (menor que 1,5 cm, raramente acima de 1 cm; osteoblastoma acima de 2 cm) cercado por esclerose reversível; masculino cerca de 3:1, 76% entre 5 e 24 anos; mais da metade em fêmur e tíbia, fêmur proximal com colo o local isolado mais comum; coluna nos elementos posteriores com escoliose dolorosa de concavidade para o lado da lesão; intra-articular sem esclerose, com sinovite que imita artrite; dor noturna aliviada por salicilatos e AINE pelas prostaglandinas e ciclo-oxigenases do nicho; TC é o exame de escolha para achar o nicho, cintilografia sempre positiva com foco intenso dentro de área maior, RM com edema que engana; trabéculas finas de osteoide orladas por osteoblastos em estroma fibrovascular; remissão espontânea em 3 a 4 anos; ablação por radiofrequência guiada por TC na maioria, burr-down ou curetagem do nicho sem ressecar toda a esclerose; recidiva baixa, nenhuma malignização; osteoblastoma maior, medular, coluna em 30% a 50%, menos dor e menos resposta ao AINE, comportamento às vezes agressivo; na prova do osteoblastoma, coluna é o local mais comum (40% a 50% no Campbell, mais de 40% com o sacro no Dahlin), 72% em homens, mais de 80% até a terceira década, e a pelve pode ser acometida.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -396,6 +396,62 @@ A banca às vezes tira o número de um livro e a alternativa de outro, por isso 
 | esclerose | não precisa sair | burr-down remove o mínimo | remodela | não precisa sair | só pequena margem |
 | primeira descrição | bibliografia: JAFFE 1935 | não cita | JAFFE 1935 | credita MCLEOD | não cita |
 !fim
+
+# Osteoblastoma na prova: onde, em quem e quanto {radar=confirmado}
+
+A seção anterior apresentou o osteoblastoma pelo contraste com o osteoma osteoide. Esta junta o que a banca pergunta de forma direta (local mais comum, percentual na coluna, sexo, faixa etária, ossos que ele pode ou não acometer) e abre a casuística do Dahlin's Bone Tumors, 6ª ed. (cap. 10, p. 112 a 121), para que o número venha com o livro de onde saiu.
+
+## Definição em uma linha e a relação com o osteoma osteoide
+
+É o mesmo tecido do osteoma osteoide (trabéculas de osteoide e osso imaturo orladas por osteoblastos, em estroma fibrovascular) em uma lesão **que não para de crescer**. O que separa os dois é **tamanho e comportamento**, não a lâmina: para MCLEOD, lesão duvidosa com **mais de 1,5 cm** vai para o lado do osteoblastoma (Dahlin, p. 112), o Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 963) usa o mesmo corte ao dizer que o nicho do osteoma osteoide tem menos de 1,5 cm, e o HEBERT (cap. 29) repete "em geral, maior do que 1,5 cm". A dor acompanha a diferença: o Campbell admite dor noturna aliviada por anti-inflamatório, como no irmão menor, mas o Tachdjian's Pediatric Orthopaedics, 6ª ed., no capítulo de dor nas costas (cap. 7, p. 83), afirma que ela **não é tão intensa nem piora à noite**. O Dahlin defende que o tumor seja chamado só de osteoblastoma, sem o adjetivo benigno, justamente para lembrar a rara lesão agressiva, e o classifica como **neoplasia verdadeira**, embora alguns casos regridam ou estacionem depois de remoção incompleta.
+
+## Sexo e idade: masculino, segunda e terceira décadas
+
+A Figura 10.1 do Dahlin (p. 113) traz **108 casos, 78 em homens e 30 em mulheres**, o que dá os cerca de **72%** do texto, e a barra mais alta do histograma está na **segunda década**; **mais de 80%** dos pacientes estavam nas três primeiras décadas, com extremos de 4 e 75 anos. Os outros livros dizem o mesmo com outras palavras: **3:1** e **10 a 30 anos** no Campbell, **2:1** e **10 a 25 anos** no Tachdjian (cap. 25, p. 1036), "infância e adolescência" no HEBERT. Nenhum livro sustenta predileção feminina, e a faixa de 20 a 40 anos pega só a cauda da distribuição: quando a alternativa oferecer essa faixa, lembre que o pico é antes dos 20.
+
+## Localização: a coluna em primeiro lugar, e a pelve existe
+
+O Dahlin (p. 113) escreve que o osteoblastoma, ao contrário da maioria das neoplasias ósseas, tem **predileção nítida pela coluna vertebral**: coluna e sacro somaram **mais de 40%** das lesões. No esqueleto da Figura 10.1 a conta fecha: **13 cervicais, 11 torácicas, 10 lombares e 10 sacrais**, 44 de 108, sem segmento preferido. O restante ficou nos ossos longos, e a lista de exceções é a que derruba alternativas do tipo "não acomete": **11 na mandíbula** (vários seriam cementoblastomas, que a série inclui), **9 no osso inominado**, 5 no tarso, 2 em costelas, 2 na maxila e 1 em carpo, falange da mão e clavícula. A pelve, portanto, é sede reconhecida: o HEBERT cita o **ilíaco** logo depois das vértebras, e o Tachdjian (p. 1037) lista a pelve entre os locais menos frequentes, ao lado de mandíbula, pé, calvária, escápula, esterno, patela, costelas, clavícula e mãos.
+
+!tabela Percentual do osteoblastoma na coluna, livro a livro (Dahlin, cap. 10, p. 113; Campbell 15, cap. 28, p. 963; Tachdjian, cap. 7, p. 83, e cap. 25, p. 1036; HEBERT, cap. 29)
+| Livro | Coluna | Sexo | Idade | Outros locais citados |
+| --- | --- | --- | --- | --- |
+| Dahlin | mais de 40% (com o sacro); 44 de 108 | 72% homens (78 e 30) | mais de 80% até a terceira década; pico na segunda | ossos longos, mandíbula 11, inominado 9, tarso 5 |
+| Campbell | 40% a 50% | 3:1 | 10 a 30 anos | qualquer osso |
+| Tachdjian, cap. 25 | 30% a 40% | 2:1 | 10 a 25 anos, pico perto de 20 | fêmur e tíbia; pelve entre os menos comuns |
+| Tachdjian, cap. 7 | cerca de 40% | não dá | não dá | não dá |
+| HEBERT | cerca de 50% (arco neural) | não dá | infância e adolescência | ilíaco, costelas, mãos e pés |
+!fim
+
+O intervalo **40% a 50%** é texto literal do Campbell e contém o "mais de 40%" do Dahlin, o "cerca de 40%" do capítulo 7 do Tachdjian e o "cerca de 50%" do HEBERT; só o capítulo 25 do Tachdjian fica abaixo, com 30% a 40%. Repare que o Tachdjian traz dois números em capítulos diferentes do mesmo livro. Na vértebra, o tumor nasce nos **elementos posteriores** (processos espinhoso e transverso, lâminas e pedículos) e, pelo tamanho, pode avançar para o corpo; começar no corpo é raro.
+
+!questoes central=tumores-0209 relacionadas=tumores-0185
+conceito: O osteoblastoma prefere a coluna (40% a 50% no Campbell, mais de 40% com o sacro no Dahlin), nos elementos posteriores; predomina em homens (72% no Dahlin, 3:1 no Campbell), entre 10 e 30 anos, e pode acometer a pelve (9 casos no osso inominado no Dahlin; ilíaco no HEBERT).
+como: Uma prova de serviço perguntou só o local mais comum, com coluna contra tíbia proximal, fêmur distal e metacarpo; outra montou quatro afirmações (sexo feminino, coluna em 40 a 50%, 20 a 40 anos, não acomete a pelve) e a correta era o percentual da coluna, com as palavras do Campbell.
+armadilha: Levar para o osteoblastoma o mapa do osteoma osteoide (fêmur proximal e tíbia) ou do osteossarcoma (joelho); aceitar "20 a 40 anos" porque a terceira década entra na faixa; e esquecer que a pelve aparece na casuística.
+alerta: Os livros divergem no número: o Tachdjian, cap. 25, dá 30% a 40% e o HEBERT cerca de 50%; em `tumores-0209` o gabarito segue o Campbell (40% a 50%), compatível com o Dahlin (mais de 40%).
+!fim
+
+## Imagem e macroscopia: o que ainda não foi dito
+
+Na série de LUCAS citada pelo Dahlin (p. 114), os 116 osteoblastomas apendiculares eram **metafisários em 42%, diafisários em 36% e epifisários em 22%**, havia **esclerose reativa em mais da metade** e neoformação periosteal frequente; pela radiografia, **72% pareciam benignos**, 10% malignos e o resto ficou indeterminado. Na coluna, os 66 casos variaram de **1 a 15 cm**, com margens boas, intermediárias ou ruins em proporções iguais. Na mão do cirurgião, o tecido é **hemorrágico, granular e friável**, tão vascular que a **hemostasia pode ser um problema**, e nas lesões antigas lembra osso esponjoso (p. 114). O Tachdjian (cap. 7, p. 84) acrescenta que cerca de **40% das crianças** com osteoblastoma vertebral têm **escoliose**.
+
+## Lâmina: os achados que assustam sem ser sarcoma
+
+O Dahlin (p. 115 a 120) descreve três variações que não mudam o diagnóstico. A primeira é o **crescimento multifocal** (5 casos da Mayo): vários focos pequenos separados por osso e tecido fibroso, que não devem ser lidos como permeação, porque permeação verdadeira destrói osso. A segunda é o **osteoblastoma epitelioide multinodular**, com nódulos só de células que podem passar por carcinoma metastático. A terceira é o **osteoblastoma pseudomaligno** de MIRRA: núcleos grandes e hipercromáticos, mas borrados, sem aumento da relação núcleo-citoplasma, com fibrose entre as trabéculas, uma alteração degenerativa vista em **11%** da série de LUCAS. O rótulo de **osteoblastoma agressivo** de DORFMAN e WEISS apoia-se em osteoblastos epitelioides, osteoide trabecular ou em lençol e reabsorção osteoclástica; BERTONI concordou que a célula epitelioide sugere lesão mais agressiva, mas DELLA ROCCA e HUVOS e o próprio LUCAS não conseguiram separar esse grupo pelo comportamento. Os oito osteoblastomas malignos de SCHAJOWICZ e LEMOS não deram metástase. Para o osteossarcoma, o que pesa é a **permeação com aprisionamento do osso hospedeiro** e os **lençóis de osteoblastos sem osso** (com a exceção do epitelioide multifocal).
+
+## Tratamento e recidiva, com os números de cada livro
+
+!tabela Tratamento e recidiva do osteoblastoma (Dahlin, cap. 10, p. 120 e 121; Campbell 15, cap. 28, p. 963; Tachdjian, cap. 7, p. 84, e cap. 25, p. 1038; HEBERT, cap. 29)
+| Livro | Cirurgia | Recidiva | Radioterapia |
+| --- | --- | --- | --- |
+| Dahlin | curetagem de toda a lesão ou do possível, enxerto se preciso | 5 casos na Mayo; às vezes mais de uma operação | utilidade duvidosa; fibrossarcoma fatal 10 anos depois (C5) |
+| Campbell | curetagem estendida ou ressecção; fusão instrumentada se a coluna ficar instável | não dá número | só em lesão inoperável sintomática |
+| Tachdjian | curetagem ou excisão local; descompressão se houver compressão neural | 10% a 20% (cap. 25); cerca de 10% (cap. 7) | relatada em locais inacessíveis |
+| HEBERT | ressecção com margens amplas | curetagem recidiva, e mais agressiva | nenhum adjuvante |
+!fim
+
+O Dahlin registra que alguns pacientes com remoção incompleta ficaram curados e conta o caso de uma menina de 14 anos com lesão em metade do sacro, só biopsiada, **assintomática 15 anos depois**; por isso mantém a cirurgia conservadora, enquanto o HEBERT exige margem ampla. A transformação maligna é excepcional: **um único caso** na Mayo (tíbia proximal aos 16 anos, osteossarcoma 40 meses depois), e o Campbell lembra que a degeneração sarcomatosa parece mais comum depois de radiação e que muitos relatos seriam osteossarcomas de baixo grau mal diagnosticados no início.
 
 # Fechamento {radar=fundamento}
 
