@@ -3,8 +3,8 @@ import { inteiro } from './formato'
 
 export interface PontoLinha { rotulo: string; valores: Array<number | null>; nota?: string }
 /** Gráfico de linhas sem dependências: teclado, toque, dados tabulares e CSV pelo consumidor. */
-export function Linhas({ pontos, series, formato = inteiro, titulo, altura = 240 }: {
-  pontos: PontoLinha[]; series: Array<{ nome: string; tracejada?: boolean }>; formato?: (v: number) => string; titulo: string; altura?: number
+export function Linhas({ pontos, series, formato = inteiro, titulo, altura = 240, inteiros = false }: {
+  pontos: PontoLinha[]; series: Array<{ nome: string; tracejada?: boolean }>; formato?: (v: number) => string; titulo: string; altura?: number; inteiros?: boolean
 }) {
   const [ativo, selecionar] = useState<number | null>(null)
   const caixa = useRef<HTMLDivElement>(null)
@@ -17,7 +17,9 @@ export function Linhas({ pontos, series, formato = inteiro, titulo, altura = 240
   }, [])
   const id = useId()
   const w = largura, h = altura, esq = 70, dir = 20, topo = 18, baixo = 32
-  const max = Math.max(1, ...pontos.flatMap(p => p.valores.map(v => v ?? 0))) * 1.12
+  const teto = Math.max(1, ...pontos.flatMap(p => p.valores.map(v => v ?? 0))) * 1.12
+  const max = inteiros ? Math.ceil(teto) : teto
+  const marcas = [...new Set([0, 0.25, 0.5, 0.75, 1].map(f => inteiros ? Math.round(max * f) : max * f))]
   const x = (i: number) => esq + i / Math.max(1, pontos.length - 1) * (w - esq - dir)
   const y = (v: number) => h - baixo - v / max * (h - topo - baixo)
   const escolhido = ativo === null ? null : pontos[ativo]
@@ -32,7 +34,7 @@ export function Linhas({ pontos, series, formato = inteiro, titulo, altura = 240
       if (['ArrowLeft', 'ArrowRight', 'Home', 'End', 'Escape'].includes(e.key)) { e.preventDefault(); selecionar(e.key === 'Escape' ? null : e.key === 'Home' ? 0 : e.key === 'End' ? pontos.length - 1 : Math.max(0, Math.min(pontos.length - 1, (ativo ?? pontos.length - 1) + (e.key === 'ArrowLeft' ? -1 : 1)))) }
     }} onBlur={() => selecionar(null)}>
       <title id={id}>{titulo}. Use as setas para explorar os valores; tabela disponível abaixo.</title>
-      {[0, 0.25, 0.5, 0.75, 1].map(f => <g key={f}><line x1={esq} x2={w - dir} y1={y(max * f)} y2={y(max * f)} className="ng-grade" /><text x={esq - 10} y={y(max * f) + 4} textAnchor="end">{formato(max * f).replace(/,00$/, '')}</text></g>)}
+      {marcas.map(v => <g key={v}><line x1={esq} x2={w - dir} y1={y(v)} y2={y(v)} className="ng-grade" /><text x={esq - 10} y={y(v) + 4} textAnchor="end">{formato(v).replace(/,00$/, '')}</text></g>)}
       {series.map((s, k) => <path key={s.nome} d={caminho(k)} fill="none" className={`ng-traco ng-traco-${k}`} strokeWidth={k ? 2.5 : 3.5} strokeDasharray={s.tracejada ? '7 5' : undefined} />)}
       {pontos.map((p, i) => p.nota && <g key={`nota-${i}`}><title>{p.nota}</title><line x1={x(i)} x2={x(i)} y1={topo} y2={h-baixo} className="ng-guia" opacity={0.4} /><circle cx={x(i)} cy={topo} r={4} className="ng-ponto ng-traco-1" /></g>)}
       {pontos.map((p, i) => (i === 0 || i === pontos.length - 1 || (i % passoX === 0 && pontos.length - 1 - i >= passoX)) && <text key={i} x={x(i)} y={h - 7} textAnchor={i === 0 ? 'start' : i === pontos.length - 1 ? 'end' : 'middle'}>{p.rotulo}</text>)}

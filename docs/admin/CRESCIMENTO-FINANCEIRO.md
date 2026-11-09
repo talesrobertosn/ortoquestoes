@@ -59,6 +59,16 @@ Os advisors foram comparados por achado com o estado anterior. Os avisos das qua
 
 ## Resumos visuais no início das páginas
 
-Refinamento solicitado após a publicação: Crescimento mostra quatro comparações gráficas com seleção Hoje/Semana/Mês; as barras do período atual e anterior usam a mesma escala dentro de cada indicador. Os números abrem as pessoas e a tabela dos três períodos permanece disponível em expansão. No Financeiro, o recebido é comparado visualmente com o mesmo trecho do mês anterior; um anel distingue recebido de ainda previsto no fechamento da carteira (não é meta); a distribuição dos pagantes por plano usa uma barra de composição com contagens e percentuais. Valores zerados não recebem preenchimento artificial. Nenhuma consulta nova nem mudança no banco.
+Refinamento solicitado após a publicação: Crescimento passou a mostrar Hoje, Esta semana e Este mês simultaneamente (detalhamento abaixo); as barras do período atual e anterior usam a mesma escala dentro de cada indicador. Os números abrem as pessoas e a tabela dos três períodos permanece disponível em expansão. No Financeiro, o recebido é comparado visualmente com o mesmo trecho do mês anterior; um anel distingue recebido de ainda previsto no fechamento da carteira (não é meta); a distribuição dos pagantes por plano usa uma barra de composição com contagens e percentuais. Valores zerados não recebem preenchimento artificial. Nenhuma consulta nova nem mudança no banco.
 
 A interação que abre pagantes no Financeiro leva a página até a lista correspondente, respeitando movimento reduzido. Os gráficos possuem descrições acessíveis e não dependem apenas de cor. Componentes: `src/admin/ui/resumosVisuais.tsx`. Fluxo `fixtures/e2e_negocio.mjs` cobre os filtros, tabela expandida, anel, lista de pagantes e ausência de transbordamento de 320 a 1920 px.
+
+## Cadastros e primeiras assinaturas por período (09/11/2026)
+
+Hoje, Esta semana e Este mês têm setores próprios, visíveis juntos. O panorama inicial reúne os seis números principais e atalhos para cada setor. Cada métrica mostra atual, anterior equivalente, diferença absoluta e percentual, barras comparativas, curva acumulada e referência do fechamento anterior completo. Não se inventa percentual quando o anterior é zero.
+
+O comparativo principal usa São Paulo: ontem no mesmo horário, semana anterior até o mesmo dia/horário e mês anterior até a mesma data/horário, limitado ao fim daquele mês. Eventos futuros ficam de fora. O fechamento anterior completo é apenas uma referência, separado da comparação equivalente. Primeiras assinaturas significam primeira compra paga; renovações e reativações têm contagens próprias.
+
+Cada setor inclui seu histórico de colunas: últimos 30 dias, 12 semanas ou 12 meses. Os seis gráficos acumulados comparam atual e anterior; eixos de contagens usam inteiros sem rótulos repetidos. Números atuais e anteriores abrem as pessoas em diálogo com fechamento por Escape. CSV comparativo disponível por setor; tabela dos três períodos e exploração anterior (linhas, médias e calendário) permanecem disponíveis em expansão. Nenhuma alteração no banco ou SQL manual.
+
+Regressões de datas, meses mais curtos e curvas em `fixtures/testar_negocio.mjs`. Fluxo visual com API fictícia em `fixtures/e2e_crescimento_periodos.mjs`, validado em temas claro/escuro e larguras de 320 a 1440 px; usar o mesmo capturador e relógio do roteiro anterior.

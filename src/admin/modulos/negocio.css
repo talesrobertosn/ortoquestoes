@@ -90,3 +90,58 @@
 .nv-composicao{display:flex;gap:3px;height:16px;border-radius:4px;overflow:hidden;background:var(--a3-recuo)}.nv-plano-0{background:var(--a3-acento)}.nv-plano-1{background:var(--ouro-texto)}.nv-plano-2{background:var(--a3-verde-claro)}.nv-plano-3{background:var(--a3-cinza)}.nv-planos{list-style:none;padding:0;margin:0;display:grid;gap:12px}.nv-planos li{display:grid;grid-template-columns:8px minmax(0,1fr) auto 36px;align-items:center;gap:8px;font-size:12px}.nv-planos li>i{height:8px;border-radius:2px}.nv-planos small{color:var(--a3-cinza);text-align:right;font-size:11px}.nv-base-botao{align-self:flex-start;padding:0!important;min-height:44px;display:inline-flex!important;gap:14px;align-items:center}
 @media(max-width:1100px) and (min-width:701px){.nv-financeiro{grid-template-columns:repeat(2,minmax(0,1fr))}.nv-financeiro>article:last-child{grid-column:1/-1;border-left:0;border-top:1px solid var(--a3-linha);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 32px}.nv-financeiro-base>.nv-rotulo,.nv-financeiro-base>.nv-base-botao,.nv-financeiro-base>.nv-contexto{grid-column:1}.nv-financeiro-base>.nv-composicao,.nv-financeiro-base>.nv-planos{grid-column:2}.nv-financeiro-base>.nv-composicao{grid-row:1;align-self:center}.nv-financeiro-base>.nv-planos{grid-row:2/5}.nv-financeiro-base>.ng-nota{grid-column:1/-1}}
 @media(max-width:700px){.nv-crescimento{margin:0 -16px}.nv-movimento{padding:20px 16px}.nv-movimento-0,.nv-movimento-1{grid-column:1/-1}.nv-movimento-1{border-left:0!important;border-top:1px solid var(--a3-linha)}.nv-movimento-2{border-left:0!important}.nv-numero-linha{margin-bottom:16px}.nv-financeiro{grid-template-columns:minmax(0,1fr)}.nv-financeiro>article{padding:24px 20px}.nv-financeiro>article+article{border-left:0;border-top:1px solid var(--a3-linha)}.nv-financeiro .nv-valor{font-size:32px}.nv-fechamento{flex-wrap:nowrap}.nv-anel{width:clamp(104px,32vw,136px)}.nv-resumo-topo{gap:12px}.nv-movimento-2 .nv-numero-linha,.nv-movimento-3 .nv-numero-linha{align-items:flex-start;flex-direction:column;gap:4px}.nv-movimento-2 .nv-comparacao-linha,.nv-movimento-3 .nv-comparacao-linha{font-size:11px;gap:6px}.nv-movimento-2 .nv-comparacao-linha>b,.nv-movimento-3 .nv-comparacao-linha>b{font-size:12px}}
+
+/* Dia, semana e mês ficam visíveis juntos; cada escala tem seu comparativo e suas curvas. */
+.mp-movimento,.mp-periodos{display:grid;gap:24px;min-width:0}
+.mp-panorama{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mp-panorama>a{display:grid;gap:16px;padding:22px;background:var(--a3-papel);border:1px solid var(--a3-linha);border-radius:16px;color:var(--a3-tinta);text-decoration:none;min-width:0}
+.mp-panorama>a:hover{border-color:var(--a3-acento)}
+.mp-panorama__titulo{font-size:19px;font-weight:750;display:grid;gap:5px}
+.mp-panorama__titulo small{font-size:11px;font-weight:400;color:var(--a3-cinza)}
+.mp-panorama__metrica{display:grid;grid-template-columns:1fr auto;align-items:center;gap:4px 12px;font-size:12px;color:var(--a3-cinza)}
+.mp-panorama__metrica strong{font-size:28px;line-height:1.1;color:var(--a3-acento)}
+.mp-panorama__metrica--nova strong{color:var(--ouro-texto)}
+.mp-panorama__metrica small{grid-column:1/-1;font-size:11px}
+.mp-panorama__abrir{font-size:12px;font-weight:650;color:var(--a3-acento)}
+.mp-periodo{padding:0;overflow:hidden;scroll-margin-top:90px}
+.mp-periodo__cabeca{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;padding:26px 28px 16px;flex-wrap:wrap}
+.mp-periodo__cabeca h3{margin:6px 0;font-size:28px;letter-spacing:-.035em;line-height:1.15}
+.mp-periodo__cabeca p{margin:0;color:var(--a3-cinza);font-size:13px;line-height:1.6;max-width:75ch}
+.mp-janelas{display:flex;flex-wrap:wrap;gap:8px 24px;padding:0 28px 24px;color:var(--a3-cinza);font-size:12px;border-bottom:1px solid var(--a3-linha)}
+.mp-janelas>span{display:flex;gap:8px;flex-wrap:wrap}.mp-janelas b{font-weight:650;color:var(--a3-tinta)}
+.mp-periodo>.ng-nota{padding:12px 28px;margin:0;background:var(--a3-alt)}
+.mp-metricas{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.mp-metrica{padding:28px;min-width:0;--mp-cor:var(--a3-acento);--nv-cor:var(--mp-cor)}
+.mp-metrica--nova{--mp-cor:var(--ouro-texto);border-left:1px solid var(--a3-linha)}
+.mp-metrica>h4{font-size:15px;font-weight:650;margin:0 0 12px}
+.mp-numero{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:22px}
+.mp-numero>.ng-numero{font-size:48px;font-weight:800;line-height:1.1;letter-spacing:-.04em;color:var(--mp-cor);padding:0;display:inline-flex;align-items:center;gap:12px}
+.mp-numero>.ng-numero span{font-size:17px;letter-spacing:0;opacity:.6}
+.mp-numero>span{font-size:12px;font-weight:650;padding:6px 9px;border-radius:6px;background:var(--a3-alt)}
+.mp-ver-anterior{padding:12px 0 0;background:none;border:0;cursor:pointer;color:var(--a3-acento);font:inherit;font-size:12px;text-align:left;line-height:1.5;min-height:40px}
+.mp-ver-anterior:hover{text-decoration:underline}
+.mp-curva{margin-top:24px;padding-top:20px;border-top:1px solid var(--a3-linha)}
+.mp-curva>h5{font-size:12px;font-weight:650;color:var(--a3-cinza);margin:0 0 12px}
+.mp-metrica .ng-traco-0{stroke:var(--mp-cor)}.mp-metrica .ng-traco-1{stroke:var(--a3-cinza)}
+.mp-metrica .ng-cor-0{background:var(--mp-cor)}.mp-metrica .ng-cor-1{background:var(--a3-cinza)}
+.mp-periodo-completo{display:grid;gap:5px;margin-top:18px;padding:12px;background:var(--a3-alt);border-radius:8px;font-size:12px;color:var(--a3-cinza)}
+.mp-periodo-completo>span{display:flex;justify-content:space-between;gap:12px}.mp-periodo-completo b{color:var(--a3-tinta)}.mp-periodo-completo small{font-size:11px;line-height:1.5}
+.mp-outros{display:grid;grid-template-columns:1.2fr 1fr 1fr;border-top:1px solid var(--a3-linha);background:var(--a3-alt);padding:20px 28px;gap:24px}
+.mp-outros h4{font-size:13px;margin:0 0 4px}.mp-outros p{margin:0;font-size:12px;color:var(--a3-cinza)}
+.mp-outros>div:not(:first-child){display:grid;grid-template-columns:1fr auto;gap:3px 12px;align-items:center;font-size:12px}
+.mp-outros .ng-numero{font-size:24px;font-weight:750;padding:0}.mp-outros small{grid-column:1/-1;color:var(--a3-cinza);font-size:11px}
+.mp-pessoas-dialog{width:min(720px,calc(100% - 32px));max-height:85vh;padding:24px;border:1px solid var(--a3-linha);border-radius:16px;color:var(--a3-tinta);background:var(--a3-papel);box-sizing:border-box}
+.mp-pessoas-dialog::backdrop{background:rgba(15,20,19,.48)}
+.mp-pessoas-dialog .ng-detalhe-numero{margin:0;padding:0;border:0;background:none}
+.mp-pessoas-dialog .ng-titulo{position:sticky;top:-24px;background:var(--a3-papel);padding:8px 0;z-index:1}
+@media(max-width:900px){.mp-panorama>a{padding:18px}.mp-metrica{padding:22px}.mp-numero>.ng-numero{font-size:40px}.mp-outros{grid-template-columns:1fr 1fr}.mp-outros>div:first-child{grid-column:1/-1}}
+@media(max-width:650px){.mp-panorama{grid-template-columns:1fr;gap:12px}.mp-panorama>a{grid-template-columns:1fr 1fr;gap:14px}.mp-panorama__titulo,.mp-panorama__abrir{grid-column:1/-1}.mp-panorama__titulo{font-size:18px}.mp-metricas{grid-template-columns:1fr}.mp-metrica--nova{border-left:0;border-top:1px solid var(--a3-linha)}.mp-periodo__cabeca{padding:22px 18px 14px}.mp-periodo__cabeca h3{font-size:25px}.mp-janelas{padding:0 18px 18px;gap:10px}.mp-metrica{padding:22px 18px}.mp-numero>.ng-numero{font-size:44px}.mp-outros{padding:18px;gap:16px}.mp-pessoas-dialog{padding:18px}.mp-pessoas-dialog .ng-titulo{top:-18px}.mp-pessoas-dialog .ng-titulo h3{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.mp-panorama{scroll-behavior:auto}}
+.mp-historico{display:grid;gap:16px;padding:24px 28px;border-top:1px solid var(--a3-linha);min-width:0}
+.mp-historico h4{margin:0 0 6px;font-size:17px;letter-spacing:-.02em}.mp-historico p{margin:0;font-size:12px;line-height:1.6;color:var(--a3-cinza);max-width:85ch}
+.mp-historico__rolagem{overflow-x:auto;min-width:0}.mp-historico__rolagem>div{min-width:680px}
+.mp-historico__dica{display:none;font-size:11px;color:var(--a3-cinza)}
+@media(max-width:700px){.mp-historico{padding:22px 18px}.mp-historico__dica{display:block}}
+.mp-explorar>summary{cursor:pointer;font-size:15px;font-weight:650;line-height:1.5;color:var(--a3-acento)}.mp-explorar[open]>summary{margin-bottom:24px}
+
+.mp-curva .ng-cor-0{border-color:var(--mp-cor)}.mp-curva .ng-cor-1{border-color:var(--a3-cinza)}

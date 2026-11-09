@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import { baixarCsv } from '../../componentes/admin/formatos'
 import { cobrancas as lerCobrancas, DIA, NOME_MES } from '../../componentes/admin/receita'
 import { CINCO_MIN, usarRpc } from '../../componentes/admin/usarRpc'
@@ -10,9 +10,8 @@ import type { DiaSerie } from '../../componentes/admin/estudoHoje'
 import { usarNav } from '../nav'
 import { inteiro } from '../ui/formato'
 import { Colunas } from '../ui/graficos'
-import { Icone } from '../ui/Icone'
 import { Linhas } from '../ui/linhas'
-import { ComparacaoVisual } from '../ui/resumosVisuais'
+import { MovimentoPorPeriodo } from './MovimentoPorPeriodo'
 import { Carregando, Estado, Segmento } from '../ui/kit'
 import { avisoRapido, confirmar } from '../ui/sobreposicoes'
 
@@ -31,9 +30,13 @@ export function PulsoCrescimento() {
   const anotacoes = usarRpc<Anotacao[]>(p.conta, 'listar_anotacoes_negocio_admin')
   const [escala, escolherEscala] = useState<Escala>('dia')
   const [metrica, escolherMetrica] = useState<'cadastro' | 'nova'>('cadastro')
-  const [periodoResumo, escolherPeriodoResumo] = useState<Escala>('mes')
   const [visual, escolherVisual] = useState<'colunas' | 'tendencia'>('colunas')
   const [abertas, mostrar] = useState<{ titulo: string; eventos: EventoNegocio[] } | null>(null)
+  const pessoasDialog = useRef<HTMLDialogElement>(null)
+  useEffect(() => {
+    if (abertas && !pessoasDialog.current?.open) pessoasDialog.current?.showModal()
+    else if (!abertas && pessoasDialog.current?.open) pessoasDialog.current?.close()
+  }, [abertas])
   const [dia, escolherDia] = useState(DIA(new Date()))
   const eventos = useMemo(() => p.usuariosReais && p.reais ? eventosNegocio(p.usuariosReais, lerCobrancas(p.reais, p.cobrancas)) : null, [p.usuariosReais, p.reais, p.cobrancas])
   if (!eventos && (p.usuariosQ.erro || p.assinaturasQ.erro)) return <div className="ng-painel"><Estado tipo="erro" titulo="Não foi possível carregar o movimento" texto="Os números estão indisponíveis; tente atualizar os dados." /><button type="button" className="a3-botao" onClick={() => void p.atualizar()}>Tentar novamente</button></div>
@@ -50,21 +53,10 @@ export function PulsoCrescimento() {
   const maxCalor = Math.max(1, ...calor.map(d => d.n))
   const doDia = eventos.filter(e => e.tipo === metrica && DIA(e.em) === dia && e.em <= agora)
   return <section id="cr-pulso" className="ng-secao">
-    <div className="ng-titulo"><div><span className="ng-kicker">01 / Movimento</span><h2>Cadastros e assinaturas, de perto</h2><p>Hoje, nesta semana e neste mês. Clique nos números para ver as pessoas.</p></div><button className="a3-botao a3-botao--contorno a3-botao--pequeno" type="button" onClick={() => baixarCsv('crescimento-por-periodo.csv', ['Período', 'Cadastros', 'Primeiras assinaturas', 'Renovações', 'Voltas'], serie.map(s => [s.chave, s.cadastro, s.nova, s.renovacao, s.volta]))}>Baixar CSV</button></div>
-    <div className="ng-painel">
-      <div className="nv-resumo-topo"><div><span className="ng-kicker">Agora, em perspectiva</span><h3>Como estamos {periodoResumo === 'dia' ? 'hoje' : periodoResumo === 'semana' ? 'nesta semana' : 'neste mês'}</h3></div><Segmento rotulo="Período do resumo de crescimento" valor={periodoResumo} aoMudar={escolherPeriodoResumo} opcoes={[["dia","Hoje"],["semana","Semana"],["mes","Mês"]]} /></div>
-      <div className="nv-crescimento">{TIPOS.map(([tipo, rotulo], i) => {
-        const j = janelas(periodoResumo, agora)
-        const atuais = eventos.filter(e => e.tipo === tipo && e.em.getTime() >= j.inicio && e.em.getTime() <= j.fim)
-        const antes = eventos.filter(e => e.tipo === tipo && e.em.getTime() >= j.anterior && e.em.getTime() < j.ateAnterior).length
-        const delta = atuais.length - antes
-        const nomePeriodo = periodoResumo === 'dia' ? 'hoje' : periodoResumo === 'semana' ? 'nesta semana' : 'neste mês'
-        return <article key={tipo} className={`nv-movimento nv-movimento-${i}`}>
-          <span className="nv-rotulo">{rotulo}</span><div className="nv-numero-linha"><button type="button" className="ng-numero nv-numero" aria-label={`${rotulo}: ${atuais.length}, ${nomePeriodo}. Ver pessoas`} onClick={() => mostrar({ titulo: `${rotulo} · ${nomePeriodo}`, eventos: atuais })}>{inteiro(atuais.length)}<span className="nv-abrir" aria-hidden="true"><Icone nome="direita" tamanho={16} /></span></button><span className={`nv-delta ${delta > 0 ? 'ng-positivo' : delta < 0 ? 'ng-negativo' : ''}`}>{delta === 0 ? 'Mesmo volume' : `${delta > 0 ? '+' : '−'}${Math.abs(delta)} ${delta > 0 ? 'a mais' : 'a menos'}`}</span></div>
-          <ComparacaoVisual atual={atuais.length} anterior={antes} rotuloAtual={periodoResumo === 'dia' ? 'Hoje' : periodoResumo === 'semana' ? 'Esta semana' : 'Este mês'} rotuloAnterior={periodoResumo === 'dia' ? 'Ontem' : periodoResumo === 'semana' ? 'Semana anterior' : 'Mês anterior'} />
-        </article>
-      })}</div>
-      <details className="ng-dados nv-todos-periodos"><summary>Ver os três períodos em tabela</summary>
+    <div className="ng-titulo"><div><span className="ng-kicker">01 / Movimento</span><h2>Cadastros e assinaturas, de perto</h2><p>Hoje, nesta semana e neste mês. Clique nos números para ver as pessoas.</p></div><button className="a3-botao a3-botao--contorno a3-botao--pequeno" type="button" onClick={() => baixarCsv('crescimento-por-periodo.csv', ['Período', 'Cadastros', 'Primeiras assinaturas', 'Renovações', 'Voltas'], serie.map(s => [s.chave, s.cadastro, s.nova, s.renovacao, s.volta]))}>Baixar histórico</button></div>
+    <div className="mp-movimento">
+      <MovimentoPorPeriodo eventos={eventos} agora={agora} aoVer={(titulo, eventos) => mostrar({ titulo, eventos })} />
+      <details className="ng-dados nv-todos-periodos ng-painel"><summary>Ver os três períodos em tabela</summary>
       <div className="a3-tabela-caixa ng-so-pc"><table className="ng-tabela"><thead><tr><th scope="col">Período</th>{TIPOS.map(([k, n]) => <th key={k} scope="col">{n}</th>)}</tr></thead><tbody>{ESCALAS.map(([e], i) => {
         const j = janelas(e, agora)
         return <tr key={e}><th scope="row"><b>{['Hoje', 'Nesta semana', 'Neste mês'][i]}</b><small>{['até agora', 'desde segunda-feira', 'desde o dia 1º'][i]}</small></th>{TIPOS.map(([tipo, rotulo]) => {
@@ -81,9 +73,11 @@ export function PulsoCrescimento() {
       })}</tr>)}</tbody></table>
       </details>
       <p className="ng-nota">Comparação até o mesmo horário: ontem, os mesmos dias da semana anterior e o mesmo trecho do mês anterior. Primeira assinatura = primeira compra paga; renovação e volta são cobranças, podendo repetir uma pessoa. Contas de teste, administrador e fora do público ficam de fora; horário de São Paulo.</p>
-      {abertas && <div id="cr-pessoas-do-numero" className="ng-detalhe-numero"><div className="ng-titulo"><h3>{abertas.titulo}</h3><button type="button" className="a3-botao a3-botao--fantasma a3-botao--pequeno" onClick={() => mostrar(null)}>Fechar pessoas</button></div>{abertas.eventos.length ? <ul className="ng-pessoas">{[...abertas.eventos].sort((a, b) => b.em.getTime() - a.em.getTime()).map((ev, i) => <li key={i}><button type="button" onClick={() => nav.abrirPessoa(ev.id)}><span>{nome(ev.id)}{ev.estimada && <small>Compra com valor ou histórico estimado</small>}</span><small>{ev.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' })}</small></button></li>)}</ul> : <p className="ng-nota">Nenhum registro neste período.</p>}</div>}
+      <dialog ref={pessoasDialog} className="mp-pessoas-dialog" aria-labelledby="cr-pessoas-titulo" onCancel={() => mostrar(null)} onClose={() => mostrar(null)}>
+        {abertas && <div id="cr-pessoas-do-numero" className="ng-detalhe-numero"><div className="ng-titulo"><h3 id="cr-pessoas-titulo">{abertas.titulo}</h3><button type="button" autoFocus className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => mostrar(null)}>Fechar pessoas</button></div>{abertas.eventos.length ? <ul className="ng-pessoas">{[...abertas.eventos].sort((a, b) => b.em.getTime() - a.em.getTime()).map((ev, i) => <li key={i}><button type="button" onClick={() => { pessoasDialog.current?.close(); mostrar(null); nav.abrirPessoa(ev.id) }}><span>{nome(ev.id)}{ev.estimada && <small>Compra com valor ou histórico estimado</small>}</span><small>{ev.em.toLocaleDateString('pt-BR', { timeZone: 'America/Sao_Paulo' })}</small></button></li>)}</ul> : <p className="ng-nota">Nenhum registro neste período.</p>}</div>}
+      </dialog>
     </div>
-    <div className="ng-painel">
+    <details className="ng-painel mp-explorar"><summary>Explorar o histórico: linhas, médias e calendário</summary><div className="mp-explorar__historico">
       <div className="ng-titulo"><div><h3>O ritmo ao longo do tempo</h3><p>Cadastros e primeiras assinaturas lado a lado. O último período está em andamento.</p></div><Segmento rotulo="Escala do crescimento" valor={escala} aoMudar={escolherEscala} opcoes={ESCALAS} /></div>
       <div className="ng-filtros"><Segmento rotulo="Visual do crescimento" valor={visual} aoMudar={escolherVisual} opcoes={[['colunas', 'Colunas'], ['tendencia', 'Linhas']]} /></div>
       {visual === 'colunas' ? <Colunas descricao="Cadastros e primeiras assinaturas por período" pontos={pontos} series={[{ nome: 'Cadastros' }, { nome: 'Primeiras assinaturas', estilo: 2 }]} lado altura={260} media={false} /> : <Linhas titulo="Evolução de cadastros e primeiras assinaturas" pontos={serie.map(s => ({ rotulo: nomeP(s.chave), valores: [s.cadastro, s.nova], nota: (anotacoes.dados ?? []).filter(n => chavePeriodo(dataSP(String(n.dia).slice(0,10)), escala) === s.chave).map(n => n.texto).join(' · ') || undefined }))} series={[{ nome: 'Cadastros' }, { nome: 'Primeiras assinaturas' }]} />}
@@ -92,7 +86,7 @@ export function PulsoCrescimento() {
     <div className="ng-grade-2">
       <div className="ng-painel"><div className="ng-titulo"><div><h3>A tendência, sem o ruído diário</h3><p>A média de sete dias suaviza os picos. Hoje ainda está incompleto.</p></div></div><Segmento rotulo="Métrica da tendência e calendário" valor={metrica} aoMudar={escolherMetrica} opcoes={[['cadastro', 'Cadastros'], ['nova', 'Primeiras assinaturas']]} /><Linhas titulo="Contagem diária e média móvel de sete dias" pontos={diario.map((s, i) => ({ rotulo: diaCurto(s.chave), valores: [s[metrica], medias[i]] }))} series={[{ nome: 'No dia' }, { nome: 'Média de 7 dias', tracejada: true }]} formato={v => v.toLocaleString('pt-BR', { maximumFractionDigits: 1 })} /></div>
       <div className="ng-painel"><div className="ng-titulo"><div><h3>91 dias de movimento</h3><p>{metrica === 'cadastro' ? 'Cadastros' : 'Primeiras assinaturas'} por dia. Cada coluna reúne sete dias, do mais antigo ao mais recente. Quanto mais forte a cor, maior o movimento.</p></div></div><div className="ng-calor">{calor.map(d => <button key={d.chave} type="button" data-nivel={d.n === 0 ? 0 : Math.min(3, Math.ceil(d.n / maxCalor * 3))} aria-pressed={dia === d.chave} aria-label={`${diaCurto(d.chave)}: ${d.n} ${metrica === 'cadastro' ? 'cadastros' : 'primeiras assinaturas'}`} title={`${diaCurto(d.chave)} · ${d.n}`} onClick={() => escolherDia(d.chave)}>{d.n || ''}</button>)}</div><p className="ng-nota" style={{ marginTop: 16 }}><b>{diaCurto(dia)} · {doDia.length}</b> {metrica === 'cadastro' ? 'cadastros' : 'primeiras assinaturas'} <button type="button" className="ng-numero" onClick={() => mostrar({ titulo: `${diaCurto(dia)} · ${metrica === 'cadastro' ? 'Cadastros' : 'Primeiras assinaturas'}`, eventos: doDia })}>Ver pessoas ↑</button></p></div>
-    </div>
+    </div></details>
     <Anotacoes />
   </section>
 }

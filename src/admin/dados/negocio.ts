@@ -53,3 +53,32 @@ export function coortesCompra(usuarios: LinhaUsuario[], cobrancas: Cobranca[], e
 }
 export const mediana = (valores: number[]) => { const v = [...valores].sort((a, b) => a - b); return v.length ? (v[Math.floor((v.length - 1) / 2)] + v[Math.floor(v.length / 2)]) / 2 : null }
 export const percentual = (n: number, d: number) => d ? `${Math.round(n / d * 100)}%` : '—'
+
+const TIPOS_MOVIMENTO = ['cadastro', 'nova', 'renovacao', 'volta'] as const
+/** Contagens e curvas de períodos equivalentes. Nunca usa registros futuros ou o restante do período anterior na comparação principal. */
+export function compararMovimento(eventos: readonly EventoNegocio[], escala: Escala, agora = new Date()) {
+  const janela = janelas(escala, agora)
+  const contagens = Object.fromEntries(TIPOS_MOVIMENTO.map(tipo => [tipo, {
+    atuais: eventos.filter(e => e.tipo === tipo && e.em.getTime() >= janela.inicio && e.em.getTime() <= janela.fim),
+    anteriores: eventos.filter(e => e.tipo === tipo && e.em.getTime() >= janela.anterior && e.em.getTime() < janela.ateAnterior),
+    anteriorCompleto: eventos.filter(e => e.tipo === tipo && e.em.getTime() >= janela.anterior && e.em.getTime() < janela.inicio),
+  }])) as Record<typeof TIPOS_MOVIMENTO[number], { atuais: EventoNegocio[]; anteriores: EventoNegocio[]; anteriorCompleto: EventoNegocio[] }>
+  const passo = escala === 'dia' ? 3_600_000 : UM_DIA
+  const cortes: number[] = []
+  for (let t = janela.inicio + passo; t < janela.fim; t += passo) cortes.push(t)
+  cortes.push(janela.fim)
+  const hora = (t: number) => new Intl.DateTimeFormat('pt-BR', {timeZone:'America/Sao_Paulo',hour:'2-digit',minute:'2-digit'}).format(t)
+  const pontos = [{ rotulo: 'Início', atualAte: janela.inicio, anteriorAte: janela.anterior, cadastro: [0, 0], nova: [0, 0] }, ...cortes.map((t, i) => {
+    const ultimo = i === cortes.length - 1
+    const anteriorAte = Math.min(janela.ateAnterior, janela.anterior + t - janela.inicio)
+    const rotulo = escala === 'dia' ? hora(t) : escala === 'semana'
+      ? ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'][Math.min(6, Math.floor((t - janela.inicio - (ultimo ? 0 : 1)) / UM_DIA))]
+      : String(Math.min(31, Math.floor((t - janela.inicio - (ultimo ? 0 : 1)) / UM_DIA) + 1)).padStart(2, '0')
+    const valores = (tipo: 'cadastro' | 'nova') => [
+      contagens[tipo].atuais.filter(e => ultimo ? e.em.getTime() <= t : e.em.getTime() < t).length,
+      contagens[tipo].anteriores.filter(e => e.em.getTime() < anteriorAte).length,
+    ]
+    return { rotulo: ultimo && escala !== 'dia' ? `${rotulo} · agora` : rotulo, atualAte: t, anteriorAte, cadastro: valores('cadastro'), nova: valores('nova') }
+  })]
+  return { janela, contagens, pontos, anteriorMaisCurto: escala === 'mes' && janela.ateAnterior === janela.inicio && janela.fim - janela.inicio > janela.inicio - janela.anterior }
+}

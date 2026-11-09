@@ -49,5 +49,39 @@ try {
   }
   const args={agora:agora.getTime(),cadastros:[new Date('2026-11-01T12:00:00Z')],cobrancas:[],assinaturas:[],taxaPix:.6}
   assert.equal(m.projetarMes({...args,meta:{cadastros:10,novosPagantes:2}}).cadastros.centro,m.projetarMes({...args,meta:{cadastros:1000,novosPagantes:200}}).cadastros.centro,'mudar objetivo não muda a previsão')
+  const momento = new Date('2026-11-09T15:30:00Z')
+  const eventosComparacao = [
+    ['cadastro','2026-11-09T04:00:00Z'],['cadastro','2026-11-09T16:00:00Z'],
+    ['cadastro','2026-11-02T04:00:00Z'],['cadastro','2026-11-02T16:00:00Z'],
+    ['cadastro','2026-11-08T20:00:00Z'],['nova','2026-11-01T04:00:00Z'],
+    ['nova','2026-10-01T04:00:00Z'],['nova','2026-10-20T04:00:00Z'],
+    ['renovacao','2026-11-09T05:00:00Z'],
+  ].map(([tipo,em],i)=>({id:String(i),tipo,em:new Date(em),valor:0}))
+  for (const fuso of ['UTC','Asia/Tokyo','America/Sao_Paulo']) {
+    process.env.TZ = fuso
+    for (const escala of ['dia','semana','mes']) {
+      const c=m.compararMovimento(eventosComparacao,escala,momento)
+      for (const tipo of ['cadastro','nova']) {
+        assert.equal(c.pontos.at(-1)[tipo][0],c.contagens[tipo].atuais.length,'curva atual fecha no total exibido')
+        assert.equal(c.pontos.at(-1)[tipo][1],c.contagens[tipo].anteriores.length,'curva anterior fecha no trecho comparável')
+        for(let i=1;i<c.pontos.length;i++) for(const lado of [0,1]) assert.ok(c.pontos[i][tipo][lado]>=c.pontos[i-1][tipo][lado],'curvas acumuladas não caem')
+      }
+    }
+    const semana=m.compararMovimento(eventosComparacao,'semana',momento)
+    assert.equal(semana.contagens.cadastro.atuais.length,1,'segunda-feira não inclui o restante da semana ou registros futuros')
+    assert.equal(semana.contagens.cadastro.anteriores.length,1,'compara só até segunda no mesmo horário')
+    assert.equal(semana.contagens.cadastro.anteriorCompleto.length,3,'fechamento anterior aparece apenas como referência')
+    const mes=m.compararMovimento(eventosComparacao,'mes',momento)
+    assert.equal(mes.contagens.nova.anteriores.length,1,'mês anterior para no mesmo dia, sem incluir dia 20')
+    assert.equal(mes.contagens.nova.anteriorCompleto.length,2)
+    assert.equal(mes.contagens.renovacao.atuais.length,1,'renovação não vira primeira assinatura')
+    const curto=m.compararMovimento([
+      {id:'fim-fevereiro',tipo:'nova',em:new Date('2027-03-01T02:59:59Z'),valor:0},
+      {id:'inicio-marco',tipo:'nova',em:new Date('2027-03-01T03:00:00Z'),valor:0},
+    ],'mes',new Date('2027-03-31T15:30:00Z'))
+    assert.equal(curto.contagens.nova.anteriores.length,1)
+    assert.equal(curto.anteriorMaisCurto,true)
+    assert.equal(curto.pontos.at(-1).nova[1],1,'curva anterior não invade março quando fevereiro termina')
+  }
   console.log('Negócio: fuso, janelas equivalentes, público, coortes maduras, histórico, renovação, reembolso e independência de metas ok.')
 } finally { await rm(pasta,{recursive:true,force:true}) }
