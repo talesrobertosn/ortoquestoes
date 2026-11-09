@@ -24,6 +24,14 @@ O temporizador troca na virada da faixa. Ao voltar à aba ou janela, recalcula o
 
 `fixtures/e2e_sorteio_inicio.mjs`: virada automática da faixa sem recarregar, reload estável e correção ao recuperar foco, usando relógio simulado.
 
-## Publicação
+## Diagnóstico da publicação (09/11/2026)
 
-Na publicação de 09/11, duas tentativas do workflow 42707122409 passaram em testes/build e excederam 600000 ms em `syncing_files` no GitHub Pages. O limite da ação de publicação foi ampliado para 1200000 ms (20 minutos), sem mudar arte ou regras do rodízio. Mantida a serialização de deploy e a proteção contra publicar revisão superada.
+Os testes e o build passam; as falhas ocorrem em `actions/deploy-pages@v4` aguardando o estado `syncing_files`. A ação cancela a publicação após 600000 ms. O código oficial impõe `MAX_TIMEOUT = 600000` e limita qualquer entrada maior com `Math.min`; o ajuste temporário para 1200000 não tinha efeito e foi removido.
+
+A última publicação real bem-sucedida analisada, 42692355781 (4e1f3d3b), levou 80 segundos na etapa publicar e tinha artefato de 214873267 bytes. A tentativa 42711442382 (4dc85d5c) tinha 215246316 bytes (+0,17%) e excedeu dez minutos. Houve falhas do mesmo tipo antes da integração do cenário. As seis imagens novas somam 262844 bytes. Logo, não há evidência de que a arte ou o pequeno aumento de tamanho tenham causado a falha.
+
+O build local tem aproximadamente 414 MB de conteúdo em 28578 arquivos: 17634 JSONs no acervo e 8381 arquivos em questoes. O envio integral a cada mudança é um custo estrutural relevante, mas um pacote praticamente igual foi publicado em 80 segundos; tamanho sozinho não explica a falha intermitente.
+
+A execução 42711249840 ficou verde, mas a etapa de deploy foi pulada porque outra atualização funcional já estava na branch. Verde no workflow não comprova publicação. É obrigatório conferir a conclusão da etapa e os arquivos da página pública.
+
+Não foi possível comparar os hashes dos dois artefatos: o token permite ler os metadados, mas o download dos arquivos retorna HTTP 403. Os logs disponíveis mostram onde a sincronização para; não revelam a causa interna do serviço Pages. Não remover HTMLs, imagens ou dados do acervo como tentativa de reduzir tamanho sem validar seus consumidores e preservar as URLs públicas.
