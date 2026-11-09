@@ -1,6 +1,6 @@
 ---
 id: rockwood10-60-patela-mecanismo-extensor
-versao: 1
+versao: 2
 titulo: Fratura da patela, luxação aguda da patela e lesões do aparelho extensor
 especialidade: trauma
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries
 autores: Philip K. Lim, Christen E. Chalmers e John A. Scolaro
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (questoes__resumo_de_joelho_patela_mecanismo_extensor_e_luxacao_joelho.pdf, páginas 1 a 20; as páginas seguintes são o capítulo 61)
-subtemas: Fratura da patela e lesão do aparelho extensor; Ruptura dos tendões patelar e quadricipital
-resumo: Retináculos e extensão ativa, axial de MERCHANT, carga salina, patela bipartida, 3 mm de incongruência, banda de tensão, patelectomia, luxação lateral aguda, idade e local das rupturas tendíneas, patela alta e baixa, cerclagem a 30 graus e CODIVILLA.
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (questoes__resumo_de_joelho_patela_mecanismo_extensor_e_luxacao_joelho.pdf, páginas 1 a 20; as páginas seguintes são o capítulo 61). Complemento conferido localmente em 09/11/2026 para a tendinopatia patelar e do quadríceps: Campbell's Operative Orthopaedics, 15ª ed., cap. 53, p. 2269 e 2270 (joelho do saltador, BLAZINA, Tabela 53.4 de FERRETTI, Técnica 53.20); Sizínio HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017), caps. 16 e 76 (tendinite patelar e quadricipital), edição digital sem página impressa.
+subtemas: Fratura da patela e lesão do aparelho extensor; Ruptura dos tendões patelar e quadricipital; Fratura da patela; Tendinopatias do aparelho extensor
+resumo: Retináculos e extensão ativa, axial de MERCHANT, carga salina, patela bipartida, 3 mm de incongruência, banda de tensão, patelectomia, luxação lateral aguda, idade e local das rupturas tendíneas, patela alta e baixa, cerclagem a 30 graus e CODIVILLA; joelho do saltador no polo inferior da patela, fases de BLAZINA (a 4 é fratura por estresse da patela ou ruptura do extensor) e estágios 0 a 5 de FERRETTI.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -344,6 +344,68 @@ Variante incomum das lesões do extensor, tratada como a avulsão do polo distal
 - **Perda da redução:** 0% a 20%; SMITH teve 11 em 51, metade por erro técnico na banda e metade por não adesão. Reoperar se o extensor falhar ou o desvio ou a incongruência aumentarem. **Rerruptura** do tendão vem do retorno precoce; esporte só com 4 a 6 meses.
 - **Pseudartrose:** até **15%**; fatores: traço transverso, fratura exposta e tratamento não cirúrgico. O idoso tolera; no jovem ativo, reoperar (nenhuma pseudartrose consolidou com tratamento conservador numa revisão), com fixação rígida e enxerto autólogo; UVARAJ teve 91% de bons e excelentes.
 - **Artrose:** sinais radiográficos em **50% a 75%** das operadas a longo prazo; a maioria responde a tratamento conservador; a inclinação da patela após reinserção não anatômica do tendão na patelectomia parcial foi implicada.
+
+# Tendinopatia patelar e do quadríceps: o joelho do saltador {radar=confirmado}
+
+As seções anteriores tratam do mecanismo extensor que quebra ou rompe de uma vez. Esta trata do que vem antes: o tendão que adoece aos poucos por sobrecarga, e que no fim da linha pode terminar justamente na ruptura ou na fratura por estresse da patela. O capítulo 60 do Rockwood não descreve a tendinopatia; o texto aqui vem do Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2269 e 2270), e do HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (caps. 16 e 76, edição digital sem página impressa).
+
+## O que é e onde fica
+
+O Campbell chama a doença de **tendinose do mecanismo extensor** e diz que ela é mais comum em atletas de elite dos esportes de salto: **40% a 50% dos jogadores de vôlei de alto nível e 35% a 40% dos de basquete**. O HEBERT (cap. 16) acrescenta futebol, corrida de longa distância e tênis, e aponta o excesso ou a inadequação do treino como causa habitual; o cap. 76 situa os doentes entre a adolescência e a quarta década.
+
+O local é o ponto que a prova cobra: a **junção tendão-osso no polo inferior da patela**, ou seja, a **inserção proximal do tendão patelar**. Não é o terço médio nem a tuberosidade da tíbia. Na RM, o Campbell descreve **espessamento focal medial** e sinal anormal no **terço proximal** do tendão, com as rupturas parciais na **face posterior ou posteromedial**.
+
+O HEBERT explica por que a face posterior: as fibras anteriores são as mais solicitadas pela tração, por seu comprimento e disposição, mas a lesão aparece nas **fibras posteriores**, que só são tensionadas em certo grau de flexão e podem sofrer **compressão pelo polo inferior da patela**. A histologia mostra microlesões, degeneração e **neovascularização sem células inflamatórias**; por isso o nome correto é **tendinose, não tendinite**. O Campbell descreve o mesmo processo como degeneração mucoide focal, esgarçamento e microrruptura das fibrilas de colágeno por microtrauma repetido (tendinose angiofibroblástica nos achados cirúrgicos), e admite que um único episódio de sobrecarga excêntrica ou um golpe direto pode iniciar os sintomas. O cap. 76 do HEBERT resume a cronificação em três fases: **tendinopatia reativa, incapacidade de reparação e degeneração**.
+
+## Exame e imagem
+
+A dor é anterior, de início insidioso, ligada ao aumento da carga de treino. Ao exame há dor (e discreto aumento de volume, no HEBERT) no polo inferior da patela; o Campbell observa que a dor à palpação costuma ser **pior em extensão que em flexão** e que são frequentes as associações com alteração do trajeto patelar, condromalácia, OSGOOD-SCHLATTER e mau alinhamento do membro.
+
+Na radiografia (AP, perfil e tangencial), o Campbell descreve uma sequência: **radiolucência do polo envolvido** no começo; **alongamento do polo inferior** com sintomas prolongados; **reação periosteal da face anterior da patela (sinal do dente, na incidência tangencial)** e calcificação do tendão; e, na doença de longa data, **fratura por estresse da patela ou ruptura do mecanismo extensor**. Ultrassom e RM mostram a lesão dentro do tendão, mas o HEBERT avisa que não precisam o grau de ruptura das fibras e que há **achados positivos em assintomáticos**. Para o Campbell, dois achados de RM preveem falha do tratamento conservador: **ruptura parcial maior que 50% da largura** do tendão ou **espessura maior que 11,45 mm**.
+
+## BLAZINA e FERRETTI: duas escalas que os livros contam de modo diferente
+
+As duas classificações graduam a doença pela relação entre a dor e a atividade. A diferença útil é que a de BLAZINA termina em uma lesão estrutural, e a de FERRETTI termina na dor do dia a dia.
+
+!tabela Joelho do saltador: BLAZINA e FERRETTI (Campbell 15, cap. 53, p. 2269 e Tabela 53.4, p. 2270)
+| Grau | BLAZINA (fases) | FERRETTI (estágios) |
+|---|---|---|
+| 0 | não existe | sem dor |
+| 1 | dor só após a atividade | dor só após atividade esportiva intensa, sem prejuízo funcional |
+| 2 | dor durante e após a atividade, sem prejuízo funcional significativo | dor no início e após a atividade; ainda rende em nível satisfatório |
+| 3 | dor durante e após, com dificuldade progressiva de render | dor durante a atividade; dificuldade crescente de render |
+| 4 | acrescentada depois: doença terminal, com fratura por estresse da patela ou ruptura do mecanismo extensor | dor durante a atividade; incapaz de render em nível satisfatório |
+| 5 | não existe | dor nas atividades diárias; incapaz de praticar esporte em qualquer nível |
+!fim
+
+Há aqui uma divergência real entre os livros. Para o Campbell, BLAZINA descreveu **três fases**, a **fase 4 foi acrescentada depois**, e os **seis estágios (0 a 5)** são de FERRETTI. O HEBERT (cap. 16) atribui a BLAZINA **cinco estágios, de I a V**, cujo texto é o mesmo dos estágios 1 a 5 de FERRETTI no Campbell (I, dor só após atividade intensa; V, dor nas atividades diárias e incapacidade para o esporte), e não cita FERRETTI nem a fratura por estresse. Quem estudou só pelo HEBERT não encontra o estágio 4 de BLAZINA com fratura da patela; quem estudou pelo Campbell encontra.
+
+!questoes central=joelho-0088
+conceito: A tendinose do joelho do saltador fica na inserção proximal do tendão patelar, no polo inferior da patela; na escala de BLAZINA a fase 2 é dor durante e após a atividade e a fase 4, acrescentada depois, é a doença terminal com fratura por estresse da patela ou ruptura do mecanismo extensor; no estágio 1 de FERRETTI a dor vem só depois da atividade intensa.
+como: A prova pediu a afirmativa certa entre o local da tendinose (terço médio), o estágio 2 de BLAZINA (dor após a atividade), o estágio 4 de BLAZINA (fratura por estresse da patela) e o estágio I de FERRETTI (dor durante atividade intensa).
+armadilha: Trocar "após" por "durante": a fase 2 de BLAZINA já dói durante a atividade, e o estágio 1 de FERRETTI ainda dói só depois; e pôr a tendinose no terço médio, quando ela é do terço proximal.
+alerta: O Campbell 15 (cap. 53, p. 2269 e 2270) sustenta o gabarito C de `joelho-0088` e traz as duas escalas. O HEBERT (cap. 16) dá a BLAZINA cinco estágios iguais aos de FERRETTI do Campbell, sem fratura por estresse, e não cita FERRETTI; por ele a alternativa C não se confirma. O Tachdjian's Pediatric Orthopaedics, 6ª ed., não traz BLAZINA nem FERRETTI.
+!fim
+
+## Tratamento
+
+O raciocínio do Campbell segue a fase. **Fases 1 e 2** costumam responder ao conservador: modificação da atividade, repouso e anti-inflamatório, com fisioterapia funcional sem dor e retorno gradual. Na **fase 3** tenta-se o mesmo protocolo com repouso mais longo, e a **cirurgia** entra se os sintomas persistem. Na **fase 4** o mecanismo extensor não está íntegro e o tratamento é em geral cirúrgico, com reparo como na ruptura aguda do tendão quadricipital ou patelar.
+
+!tabela Tratamento da tendinopatia patelar: o que cada livro diz (Campbell 15, cap. 53, p. 2269 e 2270; HEBERT, caps. 16 e 76)
+| Medida | Campbell 15 | HEBERT |
+|---|---|---|
+| Anti-inflamatório | parte do tratamento das fases 1 e 2 | questionado, porque a doença não é inflamatória; no máximo alívio de curto prazo |
+| Corticoide injetável | não usar: pode aumentar o risco de ruptura do tendão | contraindicado pelos efeitos deletérios sobre o tendão |
+| Exercício excêntrico | tradicionalmente desencorajado; alguns hoje o incluem; ensaios conflitantes (um comparável à cirurgia, outro sem efeito em 12 semanas); melhor resultado em curto prazo | base do fortalecimento progressivo; agachamento excêntrico em plano inclinado de cerca de 25 graus com resultado favorável em revisão sistemática (LARSSON) |
+| Repouso | repouso relativo, mais longo na fase 3 | reduzir a carga até não haver sintomas; repouso absoluto e imobilização atrofiam e desorganizam o colágeno |
+| PRP | melhor resultado em longo prazo com múltiplas injeções; usar o pobre em leucócitos; ensaios contra placebo mistos | parece bem-sucedido, falta evidência (também aprotinina e sangue autólogo) |
+| Ondas de choque | opção nos refratários: 74% de volta ao esporte em média de 6 semanas; PRP foi melhor aos 6 e 12 meses em dois estudos | precisa de mais estudos |
+| Cirurgia | desbridamento aberto ou artroscópico na falha do conservador | ressecção do tecido degenerado e talvez de parte do polo inferior; publicações com falhas de método |
+!fim
+
+A técnica aberta do Campbell (Técnica 53.20) abre a bainha, retira a área degenerada por **incisões longitudinais no tendão**, cureta ou perfura o **polo inferior da patela** para estimular a cicatrização e fecha o defeito lado a lado. No pós-operatório, imobilizador ou órtese articulada por 3 a 4 semanas, carga com o joelho travado em extensão e movimento passivo precoce até 90 graus; o retorno pleno espera **85% a 90% da força** e arco completo.
+
+A **tendinopatia do quadríceps**, no polo superior, é menos comum que a patelar. O HEBERT diz que ela aparece por sobrecarga ou depois de uma contração forçada com ruptura parcial do tendão, que o tratamento é semelhante ao da patelar e que raramente inclui cirurgia. O Campbell trata as duas sob o mesmo nome de tendinose do mecanismo extensor.
 
 # Controvérsias e o que falta saber {radar=fundamento}
 
