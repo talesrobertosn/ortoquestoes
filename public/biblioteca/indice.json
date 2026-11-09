@@ -15404,7 +15404,7 @@
   },
   {
    "id": "lw-osteocondroses",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Osteocondroses",
    "especialidade": "pediatria",
    "livro": "Lovell and Winter's Pediatric Orthopaedics",
@@ -15412,7 +15412,7 @@
    "capitulo": "Capítulo 9 · Localized Disorders of Skin and Soft Tissue (seção The Osteochondroses), com o Capítulo 29 · The Foot e o Capítulo 31 · Sports Medicine in the Growing Child",
    "resumo": "Osteocondrose é falha da ossificação endocondral de um núcleo que crescia normalmente, por isquemia nas articulares e por tração nas apofisárias; KÖHLER é o navicular do menino pequeno (4 vezes mais em meninos, abaixo de 6 a 7 anos, autolimitado, gesso curto); FREIBERG é a cabeça do 2º metatarso da adolescente, a única com predileção feminina; SEVER é a apófise do calcâneo (9 a 14 anos, bilateral, radiografia normal); ISELIN é a base do 5º metatarso (fibular curto, oblíqua); OSGOOD-SCHLATTER é o tubérculo tibial (patela alta e reto femoral encurtado); SINDING-LARSEN-JOHANSSON é o polo inferior da patela por tração; PANNER é o capítulo antes dos 10 anos, e a osteocondrite dissecante do capítulo é a da criança mais velha, do beisebol e da ginástica.",
    "acesso": "gratis",
-   "minutos": 33,
+   "minutos": 35,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15516,6 +15516,7 @@
     "pediatria-0518",
     "pediatria-0512",
     "pediatria-0249",
+    "joelho-0197",
     "pediatria-0194",
     "pediatria-0123",
     "pediatria-0084",
@@ -15523,7 +15524,8 @@
    ],
    "treino": [],
    "subtemas": [
-    "Osteocondroses"
+    "Osteocondroses",
+    "Joelho na criança"
    ]
   },
   {
@@ -15919,7 +15921,7 @@
   },
   {
    "id": "netter-anatomia-joelho",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Anatomia do joelho",
    "especialidade": "joelho",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
@@ -15927,7 +15929,7 @@
    "capitulo": "Capítulo 9 · Perna/Joelho",
    "resumo": "Semimembranáceo e suas cinco expansões (a primeira é o ligamento poplíteo oblíquo) e o oblíquo posterior de HUGHSTON (espessamento do ligamento capsular medial); canto posterolateral com LCF, tendão poplíteo e popliteofibular (rotação externa); poplíteo roda medialmente a tíbia e destrava o joelho; ligamento anterolateral extra-articular, entre GERDY e a fíbula, atuando a 30 e 90 graus; LCA irrigado pela genicular média, feixes AM e PL; LCP e meniscofemorais de HUMPHREY e WRISBERG; platô lateral convexo; trato iliotibial em GERDY; fabela no gastrocnêmio lateral; via de GALLA e LOBENHOFFER entre semimembranáceo e gastrocnêmio medial; ângulo Q; COVENTRY com hipercorreção a 8 a 10 graus de valgo; nervos fibulares e safeno; testes do exame físico.",
    "acesso": "gratis",
-   "minutos": 34,
+   "minutos": 36,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -16044,11 +16046,13 @@
     "joelho-0147",
     "joelho-0185",
     "joelho-0215",
+    "joelho-0106",
     "joelho-0187"
    ],
    "treino": [],
    "subtemas": [
-    "Anatomia do joelho"
+    "Anatomia do joelho",
+    "Vias de acesso ao joelho"
    ]
   },
   {
@@ -20047,7 +20051,7 @@
   },
   {
    "id": "rockwood10-61-luxacao-joelho",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Luxação do joelho e lesão multiligamentar",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
@@ -20055,7 +20059,7 @@
    "capitulo": "Capítulo 61 · Knee Dislocations",
    "resumo": "Artéria poplítea e índice tornozelo-braquial, Schenck, canto posterolateral, cruzado posterior, nervo fibular, luxação irredutível e a ordem da reconstrução: o joelho luxado explicado pelo que a prova cobra.",
    "acesso": "gratis",
-   "minutos": 45,
+   "minutos": 47,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -20128,6 +20132,7 @@
     "trauma-0298",
     "trauma-0704",
     "trauma-0802",
+    "joelho-0315",
     "trauma-0125",
     "trauma-0222",
     "trauma-0745",
@@ -20191,7 +20196,8 @@
     "Luxação do joelho",
     "Canto posterolateral",
     "Lesão do ligamento cruzado posterior",
-    "Ligamento colateral medial"
+    "Ligamento colateral medial",
+    "Vias de acesso ao joelho"
    ]
   },
   {
@@ -27205,7 +27211,7 @@
   },
   {
    "id": "tachdjian6-desenvolvimento-neuropsicomotor",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Desenvolvimento neuropsicomotor",
    "especialidade": "pediatria",
    "livro": "Tachdjian's Pediatric Orthopaedics",
@@ -27213,7 +27219,7 @@
    "capitulo": "Capítulo 1 · Growth and Development",
    "resumo": "Recém-nascido em flexão com tônus flexor e movimentos alternados; desenvolvimento cefalocaudal; reflexo do susto (toque no esterno, flexão, nunca some) contra MORO (extensão, some 3 a 6 meses); marcos (4 meses cabeça e tórax nos antebraços, 9 meses senta e engatinha, 14 meses anda sozinho, 18 meses sobe escada com as duas mãos, 2 anos sem apoio e pula); ossificação dos ossos longos na 7ª e 8ª semanas; capítulo é o primeiro centro do cotovelo; cabeça femoral aos 4 meses; valgo máximo entre 3 e 4 anos; MENELAUS 9 mm no fêmur distal e 6 mm na tíbia proximal por ano, parada aos 14 e 16 anos; ANDERSON-GREEN, MOSELEY e multiplicador de PALEY.",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 40,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -27296,6 +27302,7 @@
     "pediatria-0514",
     "pediatria-0022",
     "pediatria-0057",
+    "pediatria-0198",
     "pediatria-0378",
     "pediatria-0386",
     "pediatria-0264",
@@ -27303,7 +27310,8 @@
    ],
    "treino": [],
    "subtemas": [
-    "Desenvolvimento neuropsicomotor"
+    "Desenvolvimento neuropsicomotor",
+    "Joelho na criança"
    ]
   },
   {
@@ -28289,7 +28297,7 @@
   },
   {
    "id": "tachdjian6-osteomielite",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Osteomielite e artrite séptica na criança",
    "especialidade": "conceitos-basicos",
    "livro": "Tachdjian's Pediatric Orthopaedics",
@@ -28297,7 +28305,7 @@
    "capitulo": "Capítulo 23 · Infecções do sistema musculoesquelético",
    "resumo": "Metáfise (alças arteriolares e sinusoides lentos); vasos transfisários até 18 meses; metáfises intra-articulares (rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais); localizações; agentes por idade (S. aureus, Kingella, pneumococo, Hib); osteomielite subaguda e classificação de ROBERTS; discite e osteomielite vertebral; calcâneo hematogênico e Pseudomonas no ferimento puntiforme; crônica do adulto: sequestro por elevação periosteal e necrose, biofilme, CIERNY e MADER (I medular, II superficial, III localizada sem instabilidade, IV difusa com instabilidade; hospedeiro A, B local ou sistêmico, C), fresagem do canal no tipo I, MASQUELET, transporte ósseo e carcinoma espinocelular de MARJOLIN na fístula.",
    "acesso": "gratis",
-   "minutos": 40,
+   "minutos": 41,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -28442,6 +28450,7 @@
     "conceitos-basicos-0292",
     "conceitos-basicos-0284",
     "conceitos-basicos-0285",
+    "joelho-0327",
     "conceitos-basicos-0171",
     "tumores-0211",
     "conceitos-basicos-0076",
@@ -28466,7 +28475,8 @@
    ],
    "subtemas": [
     "Osteomielite aguda",
-    "Osteomielite crônica"
+    "Osteomielite crônica",
+    "Joelho na criança"
    ]
   },
   {

@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-joelho
-versao: 1
+versao: 2
 titulo: Anatomia do joelho
 especialidade: joelho
 acesso: gratis
@@ -9,7 +9,7 @@ edicao: 2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (20
 capitulo: Capítulo 9 · Perna/Joelho
 autores: Jon C. Thompson (ilustrações de Frank H. Netter)
 fonte: Livros conferidos localmente em 01/11/2026: Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho) lido por inteiro, inclusive as tabelas que só existem como imagem (aprox. p. 265 a 347), e as tabelas de músculos da coxa do cap. 8 (aprox. p. 237 a 240); Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries, p. 1983 a 2000, 2015 a 2023, 2065 a 2067, 2078, 2098 e 2099), cap. 1 (vias de acesso ao joelho, p. 25 a 47), cap. 8 (p. 412 a 414 e 421) e cap. 10 (p. 500 e 501). As páginas citadas são as impressas; no Netter, que não traz número no cabeçalho do arquivo, foram inferidas pelo deslocamento constante do capítulo e vão marcadas como aproximadas.
-subtemas: Anatomia do joelho
+subtemas: Anatomia do joelho; Vias de acesso ao joelho
 resumo: Semimembranáceo e suas cinco expansões (a primeira é o ligamento poplíteo oblíquo) e o oblíquo posterior de HUGHSTON (espessamento do ligamento capsular medial); canto posterolateral com LCF, tendão poplíteo e popliteofibular (rotação externa); poplíteo roda medialmente a tíbia e destrava o joelho; ligamento anterolateral extra-articular, entre GERDY e a fíbula, atuando a 30 e 90 graus; LCA irrigado pela genicular média, feixes AM e PL; LCP e meniscofemorais de HUMPHREY e WRISBERG; platô lateral convexo; trato iliotibial em GERDY; fabela no gastrocnêmio lateral; via de GALLA e LOBENHOFFER entre semimembranáceo e gastrocnêmio medial; ângulo Q; COVENTRY com hipercorreção a 8 a 10 graus de valgo; nervos fibulares e safeno; testes do exame físico.
 ---
 
@@ -100,7 +100,7 @@ armadilha: Chamar de ângulo anatômico ou mecânico, que são eixos de fêmur e
 
 Os eixos explicam a osteotomia. No joelho varo com artrose medial, a osteotomia tibial proximal valgizante transfere a carga para o compartimento lateral (Netter, aprox. p. 337). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 10, p. 501), descreve a osteotomia em **cunha de fechamento de COVENTRY**, proximal à tuberosidade, e registra que a falha aumenta se o alinhamento **não for hipercorrigido a pelo menos 8 graus de valgo** e se o paciente tiver obesidade importante; o planejamento soma **3 a 5 graus de hipercorreção** à correção para o normal, chegando a **cerca de 10 graus de valgo**. Daí a resposta "8 a 10 graus".
 
-!questoes relacionadas=joelho-0252
+!questoes central=joelho-0252
 conceito: Na osteotomia tibial alta de COVENTRY para o joelho varo, o eixo anatômico deve ficar hipercorrigido a pelo menos 8 graus de valgo, cerca de 10 graus, porque a subcorreção é causa de falha.
 como: O TARO 2009 perguntou o valgo mínimo da correção segundo COVENTRY; a mesma questão aparece duas vezes no acervo.
 armadilha: Marcar 5 a 7 graus, que é o valgo fisiológico, e esquecer que a osteotomia precisa de hipercorreção.
@@ -443,6 +443,22 @@ conceito: Na face lateral do joelho, o cutâneo sural lateral é ramo superficia
 como: A prova numerou dois nervos na face lateral do joelho; o TEOT 2024 e o TEOT 2025 apontaram nervos na perna lateral e anterior; o TARO 2012 perguntou em que compartimentos ficam o fibular profundo e o sural.
 armadilha: Confundir o fibular profundo, junto à artéria e à membrana, com o superficial, que é mais lateral e superficial; inventar um "fibular recorrente" como tronco nervoso; colocar o sural no compartimento posterior profundo.
 alerta: Na `joelho-0215`, o Netter situa o fibular profundo no compartimento anterior, mas descreve o sural como subcutâneo, sem incluí-lo em compartimento; o gabarito "posterior superficial" foi mantido como a resposta mais próxima.
+!fim
+
+## O ramo infrapatelar desenhado sobre a via anteromedial
+
+A prova gosta de um desenho só: o joelho visto pela frente e por dentro, a incisão anteromedial ao lado da patela e, abaixo dela, um nervo amarelo que vem de trás e se abre em leque sobre a tíbia proximal. É o **ramo infrapatelar do nervo safeno**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 32, Fig. 1.44), descreve o caminho: o safeno desce **posterior ao sartório**, **perfura a fáscia lata entre os tendões do sartório e do grácil** e fica subcutâneo na face medial da perna, ao lado da veia safena; no **lado medial do joelho** solta o **grande ramo infrapatelar**, de **local e distribuição variáveis**, que cruza para a frente, abaixo da patela, e dá a sensibilidade da **pele anteromedial do joelho**. Por isso o mesmo capítulo manda, em **qualquer via anteromedial, inclusive a da meniscectomia**, procurar e proteger esse ramo, e avisa que nenhuma incisão o evita com certeza (p. 31).
+
+!figura 1.44 imagem=joelho/campbell15-1-44.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.44, p. 32. Face medial do joelho: o nervo safeno desce com a veia safena atrás do sartório e solta o ramo infrapatelar, que cruza para a frente abaixo da patela, sobre o caminho das incisões anteromediais.
+!fim
+
+Para reconhecer o nervo, vale eliminar os vizinhos pelo território. O **tibial** é profundo e posterior, entre as cabeças do gastrocnêmio, e o seu ramo de pele, o cutâneo sural medial, desce pela panturrilha. Os ramos cutâneos anteriores do **femoral** descem pela frente da coxa, de cima para baixo, e não surgem de trás do sartório na altura da interlinha. O **obturatório** é o nervo dos adutores, na face medial da coxa. Só o safeno chega ao joelho por trás do sartório e manda um ramo transversal para a frente, abaixo da patela. Quando esse ramo é cortado, o paciente fica com uma área dormente lateral à cicatriz ou com um neuroma doloroso.
+
+!questoes central=joelho-0106
+conceito: O ramo infrapatelar sai do safeno no lado medial do joelho, depois que o nervo perfura a fáscia entre o sartório e o grácil, cruza para a frente abaixo da patela e inerva a pele anteromedial; é a estrutura em risco em toda via anteromedial.
+como: O TEOT 2023 mostrou o desenho de uma incisão anteromedial com um nervo ramificado abaixo da patela e perguntou de que nervo ele é ramo, entre tibial, safeno, obturatório e cutâneo femoral anterior.
+armadilha: Marcar o cutâneo femoral anterior por o nervo estar na frente do joelho; o ramo vem de trás e de medial, do safeno, e não de cima.
 !fim
 
 # Artérias {radar=confirmado}
