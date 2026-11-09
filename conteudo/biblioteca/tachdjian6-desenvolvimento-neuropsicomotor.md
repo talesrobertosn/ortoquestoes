@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-desenvolvimento-neuropsicomotor
-versao: 1
+versao: 2
 titulo: Desenvolvimento neuropsicomotor
 especialidade: pediatria
 acesso: gratis
@@ -9,7 +9,7 @@ edicao: 6ª edição (2021)
 capitulo: Capítulo 1 · Growth and Development
 autores: John A. Herring
 fonte: Livros conferidos localmente em 04/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 1 inteiro (p. 3 a 21, com as Figs. 1.6 a 1.11 e as Tabelas 1.1 a 1.3), capítulo 3 (reflexos do lactente, p. 39 a 46), capítulo 18 (varo e valgo fisiológicos, p. 636), capítulo 20 (previsão de crescimento, p. 814 a 823), capítulo 21 (embriologia do membro, p. 874) e capítulo 31 (reflexos na paralisia cerebral, p. 1423); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., capítulo 1 (p. 9 a 24); Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulos 13 (cotovelo, Tabela 13-1), 24 (quadril) e 31 (pé), sem página impressa no PDF; Campbell's Operative Orthopaedics, 15ª ed., capítulo 31 (p. 1104 a 1107) e capítulo 38 (p. 1358); HEBERT, Ortopedia e Traumatologia, 5ª ed., capítulos 15 e 23, sem página impressa no PDF. As páginas citadas são as impressas.
-subtemas: Desenvolvimento neuropsicomotor
+subtemas: Desenvolvimento neuropsicomotor; Joelho na criança
 resumo: Recém-nascido em flexão com tônus flexor e movimentos alternados; desenvolvimento cefalocaudal; reflexo do susto (toque no esterno, flexão, nunca some) contra MORO (extensão, some 3 a 6 meses); marcos (4 meses cabeça e tórax nos antebraços, 9 meses senta e engatinha, 14 meses anda sozinho, 18 meses sobe escada com as duas mãos, 2 anos sem apoio e pula); ossificação dos ossos longos na 7ª e 8ª semanas; capítulo é o primeiro centro do cotovelo; cabeça femoral aos 4 meses; valgo máximo entre 3 e 4 anos; MENELAUS 9 mm no fêmur distal e 6 mm na tíbia proximal por ano, parada aos 14 e 16 anos; ANDERSON-GREEN, MOSELEY e multiplicador de PALEY.
 ---
 
@@ -225,6 +225,19 @@ A ordem dos eventos ajuda a eliminar as alternativas. Na 5ª e 6ª semanas ainda
 ## Duas formas de fazer osso
 
 O Lovell and Winter's (cap. 1, p. 22 e 23) lembra que conjuntivo, cartilagem e osso vêm do mesênquima e que o osso se forma de duas maneiras. A **intramembranosa** transforma tecido fibroso primitivo em osso; é como se formam a **clavícula e os ossos chatos do crânio**. A **endocondral** substitui um molde de cartilagem por osso e forma **todo o resto** do esqueleto axial e apendicular: as células do centro do molde hipertrofiam, a matriz calcifica, os vasos invadem levando osteoblastos, e a ossificação parte do centro primário, na diáfise, para as extremidades. O mesmo ciclo se repete depois nos centros secundários das epífises.
+
+## A rotação dos membros e onde estava a patela
+
+O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 1, p. 11 e 12), explica o giro que o Tachdjian só enuncia. No período embrionário os quatro membros são parecidos, de **eixos paralelos**, com a **borda pré-axial voltada para a cabeça** e a pós-axial para a cauda: polegar e hálux são pré-axiais, e rádio e tíbia, ulna e fíbula são ossos homólogos, na mesma posição do broto. Depois, o membro superior roda **90° para lateral** e o inferior **90° para medial**; no antebraço os flexores ficam mediais e os extensores laterais, e na perna os **extensores ficam ventrais** e os flexores dorsais. A Fig. 1-13 (p. 12) mostra a sequência: aos **48 dias** as placas da mão e do pé se olham; aos **51 dias** os **cotovelos estão dobrados para lateral**; aos **54 dias** as plantas dos pés se olham; ao fim, a rotação lateral dos braços e medial das pernas deixa os cotovelos voltados para a cauda e os **joelhos voltados para a cabeça**, o que no corpo em pé é para a frente. Há uma diferença de calendário entre os livros: o LW escreve que a rotação ocorre no período fetal, e o Tachdjian (cap. 21, p. 874) a põe na 7ª semana, completa na 8ª.
+
+A consequência para a prova é de geometria. Se a face extensora do joelho precisa rodar 90° para medial para chegar à frente, antes do giro ela olhava para **lateral**, do mesmo jeito que o cotovelo dobrado para fora aos 51 dias. A **patela** mora nessa face extensora, dentro do aparelho extensor; logo, antes da rotação, estava **lateral**. Anterior é o ponto de chegada, e medial é só o sentido do movimento. O mesmo giro explica por que a superfície ventral original fica posterior na perna madura e anterior no braço (LW, legenda da Fig. 1-12, p. 11) e por que o hálux, pré-axial, termina do lado de dentro.
+
+!questoes central=pediatria-0198
+conceito: O membro inferior roda 90° para medial no fim do período embrionário e leva os extensores e o joelho para a frente; antes do giro, a face extensora, onde fica a patela, olhava para lateral.
+como: O TARO 2023 perguntou, com as quatro direções como alternativas, onde fica a patela antes da rotação axial dos membros inferiores.
+armadilha: Marcar medial, trocando o sentido do giro pelo ponto de partida, ou anterior, que é a posição depois da rotação.
+alerta: Na `pediatria-0198`, o LW e o Tachdjian descrevem a rotação medial de 90° do membro inferior e os extensores da perna terminando ventrais, sem citar a patela pelo nome; a posição lateral é a dedução direta desse giro e coincide com o gabarito oficial (A), que foi mantido.
+!fim
 
 # Os centros secundários do membro superior e o cotovelo {radar=confirmado}
 

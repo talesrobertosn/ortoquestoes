@@ -114,3 +114,7 @@ acervo, build e diff passaram. O guard extraído diretamente do YAML também foi
 executado contra um remoto Git temporário: publicou o head atual e um build
 seguido só de documentação, recusou código superado, branch manual inválida e
 falha de fetch. A validação remota e o deploy serão conferidos no PR desta entrega.
+
+## Segunda tentativa do Pages (09/11/2026)
+
+O `deploy-pages` tem teto fixo de 10 minutos (valores maiores em `timeout` são ignorados). Em 09/11/2026 três publicações falharam com o Pages parado em `syncing_files` (pacote de cerca de 215 MB), enquanto outras, com o mesmo pacote, sincronizaram em segundos: a trava é do lado do GitHub. O job `publicar` agora tenta de novo uma vez, sozinho, quando a primeira tentativa falha. Se as duas falharem, reexecute o job; reduzir o pacote (imagens) é a otimização de fundo.

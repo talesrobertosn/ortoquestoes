@@ -1,6 +1,6 @@
 ---
 id: rockwood10-61-luxacao-joelho
-versao: 2
+versao: 3
 titulo: Luxação do joelho e lesão multiligamentar
 especialidade: trauma
 acesso: gratis
@@ -9,7 +9,7 @@ edicao: 10ª edição (2025)
 capitulo: Capítulo 61 · Knee Dislocations
 autores: James P. Stannard e Jarod A. Richards
 fonte: Capítulo enviado pelo Tales em 16/10/2026 (joelho_dislocation.pdf, 63 páginas)
-subtemas: Luxação do joelho e lesões ligamentares; Luxação do joelho; Canto posterolateral; Lesão do ligamento cruzado posterior; Ligamento colateral medial
+subtemas: Luxação do joelho e lesões ligamentares; Luxação do joelho; Canto posterolateral; Lesão do ligamento cruzado posterior; Ligamento colateral medial; Vias de acesso ao joelho
 resumo: Artéria poplítea e índice tornozelo-braquial, Schenck, canto posterolateral, cruzado posterior, nervo fibular, luxação irredutível e a ordem da reconstrução: o joelho luxado explicado pelo que a prova cobra.
 ---
 
@@ -80,6 +80,17 @@ alerta: O gabarito oficial do TARO 2025 foi a luxação anterior. O Rockwood nã
 Não restabelecer a perfusão em **6 a 8 horas** pode levar a até **86% de amputação**. Depois de reconhecida, a lesão deve ser **revascularizada** (para evitar claudicação e novos eventos isquêmicos), e **nenhum reparo ou reconstrução ligamentar** deve ser feito, nem agudo nem tardio, **sem uma árvore arterial íntegra**. O **fixador externo** é auxiliar essencial quando há reparo vascular: é colocado logo antes da ponte, para que a anastomose cicatrize sem episódios de subluxação. Depois de revascularizar, examine os compartimentos; quando necessário, a fasciotomia dos quatro compartimentos é feita com **duas incisões de 15 a 20 cm**, medial e lateral, com uma ponte de pele de **pelo menos 7 cm**. Para o reparo arterial, o membro fica um pouco fletido e em rotação externa, para o cirurgião vascular chegar à artéria por via posteromedial; antes do reparo, uma radioscopia rápida com estresse em varo, valgo e gaveta posterior já registra o padrão de instabilidade. Depois da fasciotomia, o paciente volta à sala a cada **48 a 72 horas** para nova limpeza; as feridas são fechadas quando possível, com enxerto de pele parcial ou com a técnica da "sandália romana" (alças vasculares cruzadas presas por grampos e apertadas aos poucos).
 
 No algoritmo dos autores, lesão vascular que limita o fluxo e síndrome compartimental são **emergências**; lesão nervosa (indicação relativa), lesão do aparelho extensor e luxação exposta são **urgências**.
+
+## Os ligamentos no dia do reparo arterial
+
+A pergunta antiga de prova é quanto do joelho se conserta enquanto a artéria está exposta. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2113), responde com números e com conduta. A amputação fica em cerca de **6%** quando o reparo vascular é feito em até 6 horas, **11%** em até 8 horas, **86%** depois de 8 horas e **90%** sem tratamento. Quando a poplítea precisa ser reparada, os autores em geral **não fazem reconstrução ligamentar extensa no mesmo tempo**: **alguns pontos bem colocados nas estruturas capsulares**, enquanto a artéria está exposta, são justificados, e o reparo e a reconstrução extensos são **adiados**. O reparo dos colaterais e da cápsula e o reparo ou a reconstrução dos cruzados podem ser feitos com segurança **até 3 semanas depois** do reparo vascular, com a incisão cicatrizada, a artéria comprovadamente pérvia e o tecido ainda bom; o garrote é evitado e só entra com a liberação do cirurgião vascular. O capítulo do Rockwood vai na mesma direção e é mais seco: nada de ligamento sem árvore arterial íntegra, e fixador externo para proteger a anastomose. O raciocínio é o mesmo nos dois livros: o tempo de isquemia decide o membro, e uma cirurgia longa, com outras incisões e manipulação, ameaça a anastomose recém-feita.
+
+!questoes central=joelho-0315
+conceito: Com reparo da artéria poplítea, o cirurgião se limita a poucos pontos capsulares ao alcance da via vascular e adia o reparo e a reconstrução ligamentar extensos, que o Campbell admite até 3 semanas depois.
+como: O TARO 2006 afirmou, em certo ou errado, que na luxação do joelho com lesão da poplítea os reparos ligamentares devem se limitar aos visíveis pela via de acesso vascular.
+armadilha: Aproveitar a anestesia para reconstruir tudo no mesmo tempo; o reparo extenso prolonga a isquemia e põe a anastomose em risco.
+alerta: A `joelho-0315` está sem gabarito oficial no acervo. O Campbell 15 (cap. 50, p. 2113) sustenta Certo (A): só alguns pontos capsulares com a artéria exposta e o restante adiado. O Rockwood and Green's Fractures in Adults, 10ª ed., não estava disponível para nova leitura; pelo que este resumo já traz do capítulo, ele proíbe reparo ou reconstrução ligamentar sem árvore arterial íntegra e não descreve os pontos capsulares.
+!fim
 
 # Classificação de Schenck {radar=confirmado}
 

@@ -1,6 +1,6 @@
 ---
 id: campbell15-metatarsalgia-morton
-versao: 1
+versao: 2
 titulo: Metatarsalgia e neuroma de MORTON
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed. (cap. 21.5) e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 19)
 capitulo: Capítulo 89 · Lesser Toe Abnormalities and Disorders of Nails
 autores: G. Andrew MURPHY (cap. 89); Carson M. RIDER (cap. 92)
-fonte: Livros conferidos localmente em 03/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 89 (Lesser Toe Abnormalities and Disorders of Nails), seções de instabilidade metatarsofalângica, metatarsalgia, desvio axial, dedo em martelo, garra e taco, calo plantar, metatarso longo e FREIBERG (p. 3878 a 3904, 3913 a 3915 e 3924 a 3928); cap. 92 (Neurogenic Disorders), seção Interdigital Neuroma (p. 4033 a 4037, com o texto online 4035.e1); cap. 87 (sesamoidectomias, p. 3804 a 3806); cap. 93 (fraturas de estresse dos metatarsos, turf toe e sesamoides, p. 4123 a 4133); cap. 34 (FREIBERG, p. 1202); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., cap. 21.5 (Metatarsalgias, lido por inteiro, com o Quadro 21.5.1 e a Tabela 21.5.1 extraídos do PDF) e trechos dos caps. 21.3 e 21.6; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (FREIBERG, p. 690). As páginas citadas são as impressas; o PDF do HEBERT não traz página impressa e é citado por capítulo, quadro e tabela.
-subtemas: Metatarsalgia e neuroma de Morton
-resumo: Metatarsalgia é dor sob as cabeças, 8 mulheres para 1 homem, 92% mecânica; ESPINOSA divide em primárias (comprimento, flexão excessiva, insuficiência do primeiro raio por hipermobilidade da primeira metatarsocuneiforme, braquimetatarsia ou pé plano, equino do antepé), secundárias (hálux rígido, instabilidade, neuroma, FREIBERG) e iatrogênicas; palmilhas de VALENTI com retângulos de espuma de densidades variáveis do colo à base da falange, revisadas a cada 6 a 8 meses; a placa plantar é a primeira estrutura a falhar na instabilidade da segunda metatarsofalângica e COUGHLIN, BAUMFELD e NERY graduam de 0 a 4 (3 = deformidade dorsal com sobreposição e articulação luxável); turf toe é lesão da placa do hálux por carga axial com antepé dorsifletido; WEIL recua a cabeça (Campbell 3 a 8 mm, HEBERT não mais que 3 mm); garra tem MTF estendida e IFD fletida, martelo é IFP fletida, taco é IFD fletida; FREIBERG é mais em meninas, na cabeça do segundo metatarso, após os 13 anos; neuroma interdigital é degenerativo, no terceiro espaço, 8:1 em mulheres, MULDER não basta sozinho, ressecção 3 cm proximal ao ligamento intermetatarsal.
+fonte: Livros conferidos localmente em 03/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 89 (Lesser Toe Abnormalities and Disorders of Nails), seções de instabilidade metatarsofalângica, metatarsalgia, desvio axial, dedo em martelo, garra e taco, calo plantar, metatarso longo e FREIBERG (p. 3878 a 3904, 3913 a 3915 e 3924 a 3928); cap. 92 (Neurogenic Disorders), seção Interdigital Neuroma (p. 4033 a 4037, com o texto online 4035.e1); cap. 87 (sesamoidectomias, p. 3804 a 3806); cap. 93 (fraturas de estresse dos metatarsos, turf toe e sesamoides, p. 4123 a 4133); cap. 34 (FREIBERG, p. 1202); Ortopedia e Traumatologia (Sizinio HEBERT), 5ª ed., cap. 21.5 (Metatarsalgias, lido por inteiro, com o Quadro 21.5.1 e a Tabela 21.5.1 extraídos do PDF) e trechos dos caps. 21.3 e 21.6; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19 (FREIBERG, p. 690). As páginas citadas são as impressas; o PDF do HEBERT não traz página impressa e é citado por capítulo, quadro e tabela. Complemento de 09/11/2026 (garra e martelo): Campbell, cap. 89 (Técnica 89.7, p. 3888 a 3904) e cap. 90 (p. 3964 a 3967); HEBERT, caps. 21.4 e 21.6.
+subtemas: Metatarsalgia e neuroma de Morton; Dedos menores em garra e em martelo
+resumo: Metatarsalgia é dor sob as cabeças, 8 mulheres para 1 homem, 92% mecânica; ESPINOSA divide em primárias (comprimento, flexão excessiva, insuficiência do primeiro raio por hipermobilidade da primeira metatarsocuneiforme, braquimetatarsia ou pé plano, equino do antepé), secundárias (hálux rígido, instabilidade, neuroma, FREIBERG) e iatrogênicas; palmilhas de VALENTI com retângulos de espuma de densidades variáveis do colo à base da falange, revisadas a cada 6 a 8 meses; a placa plantar é a primeira estrutura a falhar na instabilidade da segunda metatarsofalângica e COUGHLIN, BAUMFELD e NERY graduam de 0 a 4 (3 = deformidade dorsal com sobreposição e articulação luxável); turf toe é lesão da placa do hálux por carga axial com antepé dorsifletido; WEIL recua a cabeça (Campbell 3 a 8 mm, HEBERT não mais que 3 mm); garra tem MTF estendida e IFD fletida, martelo é IFP fletida, taco é IFD fletida; FREIBERG é mais em meninas, na cabeça do segundo metatarso, após os 13 anos; neuroma interdigital é degenerativo, no terceiro espaço, 8:1 em mulheres, MULDER não basta sozinho, ressecção 3 cm proximal ao ligamento intermetatarsal; a garra difere do martelo pela flexão da distal, o martelo isolado é incomum na artrite reumatoide e comum nas soronegativas, e GIRDLESTONE-TAYLOR-PARRISH transfere o flexor longo para o aparelho extensor no martelo flexível.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -439,6 +439,63 @@ O ligamento intermetatarsal divide os autores. Na **via dorsal de AMIS**, a **li
 !fim
 
 O neuroma **recorrente** tem resultado pior (43% insatisfeitos num estudo). O Campbell recomenda a **via plantar**, que acha o nervo em tecido sadio e o segue até o coto, enquanto pela dorsal o coto se perde na cicatriz; poucas linhas adiante, porém, o mesmo texto diz que **a via dorsal tem sido recomendada** para o recorrente. A leitura coerente do capítulo, que traz até uma figura de incisão plantar para o recorrente, é que a plantar é a preferência do livro e a dorsal, uma opção citada da literatura.
+
+# Garra e martelo na prova: a distal, a artrite e a transferência {radar=confirmado}
+
+A seção de dedos menores já trouxe definições, mecanismos e tratamento. Aqui ficam os três pontos que as bancas cobraram: o que separa a garra do martelo, o martelo isolado nas artrites inflamatórias e a transferência do flexor para o extensor.
+
+## O que separa a garra do martelo
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3892), dá três diferenças, e vale ver por que só uma serve de resposta. A **extensão da metatarsofalângica** é obrigatória na garra, mas **o martelo grave e antigo também a desenvolve**; logo, ela existe nos dois. A **rigidez** não distingue: tanto um quanto a outra podem ser flexíveis (corrigem passivamente até o neutro) ou fixos. O **calo dorsal** sobre a interfalângica proximal é justamente o ponto doloroso mais comum do martelo (p. 3893 aprox.). Resta a **interfalângica distal**: na garra ela está frequentemente fletida, porque o flexor longo, inserido na base da falange distal, flete as duas interfalângicas quando o extensor perde excursão; no martelo ela **em geral permanece livre**, embora o livro admita que possa, às vezes, fletir ou estender. Quando a distal de um martelo se fixa em flexão, o Campbell fala em **martelo combinado com taco** (p. 3904), com calo no dorso da proximal e outro na ponta do dedo.
+
+!questoes central=pe-tornozelo-0248
+conceito: A garra tem sempre a metatarsofalângica estendida e frequentemente a interfalângica distal fletida; no martelo a deformidade é a flexão da proximal, a distal costuma ficar livre e a extensão da metatarsofalângica pode ou não existir.
+como: O TARO 2025 perguntou o que diferencia o dedo em garra do dedo em martelo (flexão da interfalângica distal).
+armadilha: Marcar extensão da metatarsofalângica: ela é constante na garra, mas também aparece no martelo grave e antigo; rigidez e calo dorsal existem nas duas deformidades.
+alerta: Em `pe-tornozelo-0248`, o Campbell (cap. 89, p. 3892) também lista a extensão da metatarsofalângica como diferença (sempre na garra, inconstante no martelo); o gabarito fica com a distal porque é o achado que o martelo em geral não tem.
+!fim
+
+## Martelo isolado: raro na reumatoide, comum nas soronegativas
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 90, Arthritis of the Foot, p. 3964 a 3967 aprox.), explica o antepé reumatoide a partir da **metatarsofalângica**. A sinovite libera enzimas que enfraquecem os ligamentos capsulares e os intrínsecos, e a articulação hiperestende. Com a subluxação dorsal crônica, os **interósseos são levados para dorsal ao eixo de rotação e viram extensores fracos**; os extensores curto e longo perdem excursão e deixam de estender as interfalângicas, e o resultado é a **garra**. No fim, a falange proximal luxa sobre o dorso do colo do metatarso. Como tudo começa na metatarsofalângica, o livro conclui que o **martelo isolado, sem sinovite nem deformidade metatarsofalângica, é incomum na artrite reumatoide**. Nas **espondiloartropatias soronegativas**, como a artropatia psoriásica, a artrite atinge a própria **interfalângica proximal**: o martelo é **comum** e pode vir sem envolvimento metatarsofalângico.
+
+!tabela Dedos menores nas artrites inflamatórias (Campbell's Operative Orthopaedics, 15ª ed., cap. 90, p. 3964 a 3967 aprox.; HEBERT, 5ª ed., cap. 21.6)
+| Ponto | Artrite reumatoide | Soronegativas |
+|---|---|---|
+| Alvo | Sinóvia da metatarsofalângica | Êntese (inserção do tendão no osso) e interfalângicas |
+| Deformidade típica | Garra com subluxação dorsal e hálux valgo | Martelo por artrite da interfalângica proximal |
+| Martelo sem doença da MTF | Incomum | Comum |
+| Sexo | Predomínio feminino | Predomínio masculino; na psoriásica, 1:1 |
+| Marcador | Erosões marginais | HLA-B27; "dedo em linguiça" |
+| Pé como início da doença | 17% no Campbell, 19% no HEBERT | Não informado |
+!fim
+
+O Campbell cita como soronegativas mais comuns a síndrome de REITER, a artrite psoriásica e a espondilite anquilosante. O HEBERT (cap. 21.6) conta a mesma história pelo outro lado: a **placa plantar e a cápsula estiram**, as falanges subluxam para dorsal e lateral e as cabeças são empurradas para plantar; o quinto dedo aduz sob o quarto (curly toe). Acrescenta a cronologia, que o Campbell não traz: **depois de cerca de 10 anos de doença ativa a sinovite metatarsofalângica diminui, e a incidência do martelo cresce com a duração da doença**, com calos e até úlceras dorsais no segundo e no terceiro dedos. E dá a pista que fecha o raciocínio: o **comprometimento da interfalângica distal ("dedo em linguiça") sugere espondiloartropatia soronegativa**.
+
+!questoes central=pe-tornozelo-0269
+conceito: Na artrite reumatoide a deformidade nasce da sinovite metatarsofalângica, e o martelo isolado é incomum; nas soronegativas (psoriásica) a artrite da interfalângica proximal produz martelo comum, sem envolvimento metatarsofalângico obrigatório.
+como: O TARO 2011 pediu a frequência do martelo sem sinovite nem deformidade metatarsofalângica na artrite reumatoide e nas artrites soronegativas (incomum na primeira, comum nas segundas).
+armadilha: Inverter o par porque o pé reumatoide é cheio de martelos e garras: eles existem, mas acompanham a metatarsofalângica doente, e a pergunta é sobre o martelo isolado.
+!fim
+
+## GIRDLESTONE-TAYLOR-PARRISH passo a passo
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, Técnica 89.7, p. 3888 a 3890 aprox.; indicações na p. 3894), agrupa sob os nomes GIRDLESTONE, TAYLOR, PARRISH, MANN e COUGHLIN os procedimentos só de partes moles, sem encurtamento ósseo nem artrodese. A ideia é tirar o **flexor longo dos dedos** do papel de deformador e fazê-lo trabalhar como intrínseco: fletir a metatarsofalângica e estender as interfalângicas.
+
+A técnica usa três incisões. Uma **plantar transversa na prega proximal do dedo** abre 3 a 4 mm da polia e acha o flexor longo, que é o **tendão central** (mover a distal com a proximal reta confirma). Outra, na **prega da interfalângica distal**, faz a tenotomia sem ferir a placa plantar dessa articulação. O coto é entregue na incisão proximal, conferindo-se que as duas fitas do flexor curto ficaram íntegras, e **dividido ao longo do sulco longitudinal** por 1,5 a 2,5 cm. Uma incisão **dorsal sobre a falange proximal** expõe o aparelho extensor; cada metade do tendão sobe **rente ao osso**, uma de cada lado, sempre **plantar ao ligamento intermetatarsal transverso profundo**, e é suturada sob tensão às **bandas laterais do extensor na altura da meia diáfise da falange proximal**, ou uma à outra sobre o dorso. A tensão é dada com o **tornozelo a 90°**: metatarsofalângica do neutro a 5° de flexão e interfalângica proximal com menos de 10° de flexão. Nos três dedos centrais, começa-se pelo **segundo**.
+
+O procedimento só é confiável no **martelo flexível, idiopático e sintomático do jovem**. Para reduzir o **dedo flutuante** depois da transferência, BOYER e DeORIO usaram incisão plantar longitudinal, fios de KIRSCHNER mais grossos e o tendão passado **profundamente ao capuz dorsal**: nenhum dedo flutuante em 79 dedos.
+
+Os dois livros usam os epônimos de modo diferente. O HEBERT (cap. 21.4, correção dos dedos no pé cavo) chama de **técnica de PARRISH** a liberação de partes moles (extensores e cápsulas) com estabilização ativa por transferência tendínea, indicada na **garra flexível**, e de **artroplastia de DuVRIES** a **ressecção das cabeças das falanges proximais (condilectomia) com fio de KIRSCHNER intramedular**, indicada quando a **interfalângica proximal está rígida**; no cap. 21.6, diz que o flexor longo transferido assume "as funções de interósseo ou lumbrical" e pode ser passado de forma assimétrica para corrigir desvio lateral. O Campbell descreve a mesma ressecção da cabeça e do colo da falange proximal sem epônimo e guarda o nome de MANN e DuVRIES para a artroplastia da metatarsofalângica.
+
+Sobre a fixação (p. 3895 aprox.), o Campbell relata que o **fio de KIRSCHNER** manteve bem a correção em 1.115 procedimentos, e que a **artrodese com implante permanente fica sobretudo para as revisões**. No idoso de baixa demanda com deformidade grave, cabe a amputação do segundo dedo (p. 3904).
+
+!questoes central=pe-tornozelo-0107
+conceito: GIRDLESTONE-TAYLOR-PARRISH é a transferência do flexor longo dos dedos, seccionado na distal e dividido em duas metades, para o aparelho extensor no dorso da falange proximal; indicada no martelo flexível do jovem, sem ressecção óssea nem artrodese.
+como: O TEOT 2023 pediu em que consiste a técnica no martelo flexível (transferência do flexor longo para o capuz extensor).
+armadilha: Marcar ressecção dos côndilos da falange média (é o tratamento do taco) ou tenotomia do flexor com fixação temporária: na técnica o tendão é cortado, mas para ser transferido.
+alerta: Em `pe-tornozelo-0107`, o gabarito situa a fixação no capuz extensor da interfalângica proximal; o Campbell (Técnica 89.7) sutura as metades às bandas laterais do extensor na meia diáfise da falange proximal, proximal a essa articulação. O HEBERT cita PARRISH sem descrever o ponto de fixação.
+!fim
 
 # Fechamento {radar=fundamento}
 
