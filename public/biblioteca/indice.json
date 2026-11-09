@@ -22360,6 +22360,121 @@
    ]
   },
   {
+   "id": "rockwood10-tumores-coluna",
+   "versao": 1,
+   "titulo": "Tumores da coluna",
+   "especialidade": "coluna",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 49, 40, 43, 25 e 29) e o Skeletal Trauma, 5ª ed. (cap. 20)",
+   "capitulo": "Capítulo 25 · Pathologic Fractures",
+   "resumo": "Benignos nos elementos posteriores e no jovem (osteoma osteoide, osteoblastoma, cisto aneurismático, osteocondroma); no corpo, hemangioma (estrias verticais, veludo cotelê, polka dot, hipersinal T1 e T2), granuloma eosinofílico (vértebra plana) e TCG (sacro); osteoma osteoide é a causa mais comum de escoliose dolorosa no adolescente, nicho na concavidade; mieloma é o primário mais comum da coluna do adulto e a metástase responde por 90% dos malignos (mama, pulmão, próstata; torácica; corpo e pedículo; coruja piscando; plexo de BATSON); ENNEKING, WEINSTEIN-BORIANI-BIAGINI (12 setores, cinco camadas) e TOMITA (tipo 4 = epidural); escores de TOKUHASHI e TOMITA; PATCHELL: cirurgia mais radioterapia preserva a marcha melhor que a radioterapia isolada.",
+   "acesso": "gratis",
+   "minutos": 35,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-mapa-da-vertebra-localizacao-e-idade",
+     "titulo": "O mapa da vértebra: localização e idade",
+     "radar": "fundamento"
+    },
+    {
+     "id": "estadiamento-e-classificacoes-cirurgicas",
+     "titulo": "Estadiamento e classificações cirúrgicas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "biopsia-margens-e-adjuvantes",
+     "titulo": "Biópsia, margens e adjuvantes",
+     "radar": "fundamento"
+    },
+    {
+     "id": "osteoma-osteoide-a-escoliose-dolorosa",
+     "titulo": "Osteoma osteoide: a escoliose dolorosa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "osteoblastoma-o-irmao-maior",
+     "titulo": "Osteoblastoma: o irmão maior",
+     "radar": "fundamento"
+    },
+    {
+     "id": "osteocondroma-e-cisto-osseo-aneurismatico",
+     "titulo": "Osteocondroma e cisto ósseo aneurismático",
+     "radar": "fundamento"
+    },
+    {
+     "id": "hemangioma-o-veludo-cotele-do-corpo-vertebral",
+     "titulo": "Hemangioma: o veludo cotelê do corpo vertebral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "granuloma-eosinofilico-a-vertebra-plana",
+     "titulo": "Granuloma eosinofílico: a vértebra plana",
+     "radar": "fundamento"
+    },
+    {
+     "id": "tumor-de-celulas-gigantes-o-benigno-do-sacro",
+     "titulo": "Tumor de células gigantes: o benigno do sacro",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-primarios-malignos",
+     "titulo": "Os primários malignos",
+     "radar": "fundamento"
+    },
+    {
+     "id": "mieloma-plasmocitoma-e-linfoma",
+     "titulo": "Mieloma, plasmocitoma e linfoma",
+     "radar": "fundamento"
+    },
+    {
+     "id": "metastases-quem-onde-e-como-chegam",
+     "titulo": "Metástases: quem, onde e como chegam",
+     "radar": "fundamento"
+    },
+    {
+     "id": "prognostico-tokuhashi-e-tomita",
+     "titulo": "Prognóstico: TOKUHASHI e TOMITA",
+     "radar": "confirmado"
+    },
+    {
+     "id": "instabilidade-e-fratura-iminente",
+     "titulo": "Instabilidade e fratura iminente",
+     "radar": "clinico"
+    },
+    {
+     "id": "compressao-medular-radioterapia-ou-cirurgia",
+     "titulo": "Compressão medular: radioterapia ou cirurgia",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-crianca-dor-nas-costas-leucemia-e-tumores-medu",
+     "titulo": "A criança: dor nas costas, leucemia e tumores medulares",
+     "radar": "fundamento"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "coluna-0287",
+    "tumores-0137",
+    "tumores-0204",
+    "coluna-0451",
+    "coluna-0270"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Tumores da coluna"
+   ]
+  },
+  {
    "id": "rockwood10-umero-distal",
    "versao": 1,
    "titulo": "Fratura do úmero distal no adulto",
@@ -22711,15 +22826,15 @@
   },
   {
    "id": "rockwoodcriancas10-04-gesso-tala",
-   "versao": 2,
-   "titulo": "Gesso e tala na criança",
+   "versao": 3,
+   "titulo": "Tratamento conservador e imobilização",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 4 · Cast and Splint Immobilization",
-   "resumo": "Regra do polegar (ápice volar com pronação, ápice dorsal com supinação), abertura do gesso do lado oposto ao desvio, gesso curto no terço distal com índice de 0,7; spica sem bota de tração; três As e abertura de gesso e algodão; queimadura acima de 50 °C e 24 camadas; fibra de vidro com estirar e relaxar; úlcera do calcanhar, fios intra-articulares e serra; tempos de imobilização, gesso pendente e tala em pinça.",
+   "resumo": "Três princípios do gesso na fratura instável (dobradiça de partes moles, três pontos e pressão hidrostática: partes moles e diáfise não compressíveis ficam rígidas); dobradiça íntegra na baixa energia do jovem; cunha com dobradiça medial e varo no distal para a tíbia em valgo; BURKHALTER e JAMES com punho a 40 graus, MF a 70 a 90 e IF estendidas (colaterais estirados); PTB até o polo inferior da patela, longe do fibular comum; órtese de SARMIENTO por pressão hidrostática, contração muscular e gravidade; gesso pendente com alça curta em varo; tração 90-90 pelo iliopsoas e rigidez do joelho como pior complicação da tração; tenaz com 10 lb e 5 lb por segmento; halo acima do terço lateral da órbita; JEWETT de T6 a L3; gesso vence a órtese no paciente pouco colaborativo; na criança, regra do polegar, spica sem bota de tração, três As, queimadura acima de 50 °C e 24 camadas.",
    "acesso": "gratis",
-   "minutos": 16,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -22727,23 +22842,73 @@
      "radar": "fundamento"
     },
     {
-     "id": "reducao-e-gesso-do-antebraco",
-     "titulo": "Redução e gesso do antebraço",
+     "id": "quando-tratar-sem-operar",
+     "titulo": "Quando tratar sem operar",
+     "radar": "fundamento"
+    },
+    {
+     "id": "os-tres-principios-do-gesso-na-fratura-instavel",
+     "titulo": "Os três princípios do gesso na fratura instável",
      "radar": "confirmado"
     },
     {
-     "id": "gesso-pelvipodalico-spica",
-     "titulo": "Gesso pelvipodálico (spica)",
+     "id": "aplicar-moldar-e-corrigir-tala-gesso-circular-e-",
+     "titulo": "Aplicar, moldar e corrigir: tala, gesso circular e cunha",
+     "radar": "clinico"
+    },
+    {
+     "id": "gesso-tala-ou-ortese-removivel",
+     "titulo": "Gesso, tala ou órtese removível",
+     "radar": "clinico"
+    },
+    {
+     "id": "posicoes-de-imobilizacao-do-membro-superior",
+     "titulo": "Posições de imobilização do membro superior",
      "radar": "confirmado"
     },
     {
-     "id": "complicacoes-do-gesso-e-sindrome-compartimental",
-     "titulo": "Complicações do gesso e síndrome compartimental",
+     "id": "membro-inferior-bota-gesso-longo-e-ptb",
+     "titulo": "Membro inferior: bota, gesso longo e PTB",
+     "radar": "clinico"
+    },
+    {
+     "id": "orteses-funcionais-de-sarmiento-umero-e-tibia",
+     "titulo": "Órteses funcionais de SARMIENTO: úmero e tíbia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tracao-cutanea-e-esqueletica",
+     "titulo": "Tração: cutânea e esquelética",
+     "radar": "clinico"
+    },
+    {
+     "id": "coluna-tenaz-halo-colares-e-coletes",
+     "titulo": "Coluna: tenaz, halo, colares e coletes",
+     "radar": "clinico"
+    },
+    {
+     "id": "complicacoes-e-cuidados-no-adulto",
+     "titulo": "Complicações e cuidados no adulto",
      "radar": "oportunidade"
     },
     {
-     "id": "materiais-e-queimadura-termica",
-     "titulo": "Materiais e queimadura térmica",
+     "id": "na-crianca-reducao-e-gesso-do-antebraco",
+     "titulo": "Na criança: redução e gesso do antebraço",
+     "radar": "confirmado"
+    },
+    {
+     "id": "na-crianca-gesso-pelvipodalico-spica",
+     "titulo": "Na criança: gesso pelvipodálico (spica)",
+     "radar": "confirmado"
+    },
+    {
+     "id": "na-crianca-complicacoes-do-gesso-e-sindrome-comp",
+     "titulo": "Na criança: complicações do gesso e síndrome compartimental",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "gesso-de-paris-fibra-de-vidro-e-queimadura",
+     "titulo": "Gesso de paris, fibra de vidro e queimadura",
      "radar": "oportunidade"
     },
     {
@@ -22752,8 +22917,8 @@
      "radar": "oportunidade"
     },
     {
-     "id": "imobilizacao-por-regiao-e-tempo-de-gesso",
-     "titulo": "Imobilização por região e tempo de gesso",
+     "id": "na-crianca-imobilizacao-por-regiao-e-tempo-de-ge",
+     "titulo": "Na criança: imobilização por região e tempo de gesso",
      "radar": "oportunidade"
     },
     {
@@ -22763,6 +22928,9 @@
     }
    ],
    "questoes": [
+    "conceitos-basicos-0265",
+    "conceitos-basicos-0140",
+    "conceitos-basicos-0008",
     "pediatria-0702",
     "pediatria-0523",
     "pediatria-0747",
@@ -22770,6 +22938,18 @@
     "pediatria-0666"
    ],
    "treino": [
+    "conceitos-basicos-0360",
+    "conceitos-basicos-0361",
+    "conceitos-basicos-0362",
+    "conceitos-basicos-0371",
+    "conceitos-basicos-0363",
+    "conceitos-basicos-0365",
+    "conceitos-basicos-0364",
+    "conceitos-basicos-0369",
+    "conceitos-basicos-0370",
+    "conceitos-basicos-0367",
+    "conceitos-basicos-0366",
+    "conceitos-basicos-0368",
     "pediatria-1374",
     "pediatria-1375",
     "pediatria-1376",
@@ -22792,7 +22972,8 @@
     "pediatria-1383"
    ],
    "subtemas": [
-    "Outras fraturas na criança"
+    "Outras fraturas na criança",
+    "Tratamento conservador e imobilização"
    ]
   },
   {

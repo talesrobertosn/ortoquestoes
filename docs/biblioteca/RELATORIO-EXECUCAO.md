@@ -295,7 +295,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 933 | Reconstrução do LCA: enxertos e túneis: versão 3 do resumo do LCA (campbell14-lca, 70 KB; carga e rigidez dos enxertos, retirada dos flexores, aloenxerto e esterilização, marcos do túnel femoral, transtibial x portal anteromedial, fixação, ligamentização e falha, com Campbell 15 e HEBERT lado a lado). |
 | 934 | Dois resumos novos: artroscopia do joelho (hebert-artroscopia-joelho, 52 KB, HEBERT cap. 64 com Campbell 15 caps. 10, 54 e 56) e imagem da mão e punho (green-imagem-mao-punho, 68 KB, Green 7 cap. 15 e outros com Rockwood e HEBERT; 37 questões ligadas). |
 | 935 | Biomecânica do ombro e cotovelo: resumo novo (campbell15-biomecanica-ombro-cotovelo, 61 KB, Campbell 15 cap. 13 com Rockwood, Green e HEBERT); 23 miniaulas: imagem da mão e punho (16, com as figuras descritas e a dissertativa de SOONG), artroscopia do joelho (5) e LCA (2). |
-| (este PR) | Trauma pediátrico (MONTEGGIA v3, fise distal do fêmur v3 com 55 KB, joelho intra-articular v3), displasia osteofibrosa e adamantinoma (tachdjian6-displasia-fibrosa v2), cordoma (dahlin-cordoma) e infecções e artrites na criança (lw-artrites-inflamatorias-crianca); 45 miniaulas. |
+| 936 | Trauma pediátrico (MONTEGGIA v3, fise distal do fêmur v3 com 55 KB, joelho intra-articular v3), displasia osteofibrosa e adamantinoma (tachdjian6-displasia-fibrosa v2), cordoma (dahlin-cordoma) e infecções e artrites na criança (lw-artrites-inflamatorias-crianca); 45 miniaulas. |
+| (este PR) | Tratamento conservador e imobilização (versão 3 do resumo de gesso e tala, 59 KB: adulto, SARMIENTO, tração e coluna) e tumores da coluna (rockwood10-tumores-coluna, 60 KB, Rockwood cap. 25 com Campbell cap. 49). |
 
 ## Próximo
 
