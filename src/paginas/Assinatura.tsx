@@ -273,9 +273,17 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
           </ul>
           {/* Logo abaixo do preço (Tales, 09/11/2026): o guia do blog sobre estudo por questões, para quem quer entender o método antes de assinar. */}
           <a className="vd-guia-estudo" href={recurso('blog/como-estudar-por-questoes/')}>
-            <img src={recurso('pixel/menu/blog.png?v=1')} alt="" width={48} height={48} loading="lazy" decoding="async" draggable={false} />
-            <span><strong>Como estudar por questões</strong><small>O que a ciência diz sobre estudo ativo, e o método em 7 passos para a residência</small></span>
-            <Icone nome="direita" tamanho={16} />
+            <span className="vd-guia-estudo__arte" aria-hidden="true">
+              <img src={recurso('pixel/menu/blog.png?v=1')} alt="" width={64} height={64} loading="lazy" decoding="async" draggable={false} />
+              <i className="vd-guia-estudo__brilho" /><i className="vd-guia-estudo__brilho vd-guia-estudo__brilho--b" />
+            </span>
+            <span className="vd-guia-estudo__texto">
+              <span className="vd-guia-estudo__selo">Guia grátis<span className="vd-guia-estudo__tempo"> · 16 min de leitura</span></span>
+              <strong>Como estudar por questões</strong>
+              <span className="vd-guia-estudo__frase">Por que responder fixa mais do que reler, e o método em 7 passos para a residência.</span>
+              <span className="vd-guia-estudo__chips"><span>17 estudos científicos</span><span>Uma questão real do TEOT</span><span>Interativo</span></span>
+            </span>
+            <span className="vd-guia-estudo__acao">Ler o guia <Icone nome="direita" tamanho={16} /></span>
           </a>
           {!sessao && pagamentosHabilitados && <p className="vd-heroi__semconta">Ainda sem conta? O botão cria a sua, grátis, e volta direto para o pagamento do plano escolhido.</p>}
           {!pagamentosHabilitados && <p className="vd-aviso"><Icone nome="calendario" tamanho={16} /> As assinaturas abrem em breve. Até lá, o acervo, os comentários e a revisão continuam disponíveis no gratuito.</p>}
