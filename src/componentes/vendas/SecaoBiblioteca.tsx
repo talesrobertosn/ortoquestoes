@@ -16,14 +16,14 @@ const COMO = [
 /** Quantos capítulos a estante mostra aqui; o resto fica a um clique, na Biblioteca. */
 const NA_ESTANTE = 8
 
-/** Seção "Biblioteca de resumos" da página de vendas (pedido do Tales, 16/10/2026): aberta para todos, explicada por inteiro. */
+/** Seção "Biblioteca de resumos" da página de vendas (pedido do Tales, 16/10/2026), explicada por inteiro. Desde 09/11/2026, prévia aberta e leitura completa na assinatura. */
 export function SecaoBiblioteca() {
   const [capitulos, definir] = useState<ResumoCapitulo[]>([])
   useEffect(() => { carregarIndiceBiblioteca().then((i) => definir(i.capitulos)).catch(() => undefined) }, [])
   return (
     <section className="vd-secao vd-bib" aria-labelledby="vd-titulo-bib">
       <header className="vd-cabeca" data-revelar>
-        <p className="vd-sobre">Biblioteca de resumos · aberta para todos</p>
+        <p className="vd-sobre">Biblioteca de resumos · completa na assinatura</p>
         <h2 id="vd-titulo-bib">O livro de referência, <em>na ordem em que a prova cobra.</em></h2>
         <p>Capítulos dos livros da bibliografia reescritos em português por quem estudou cada questão que já caiu. Não é um resumo qualquer: é engenharia reversa da banca, para você ler sabendo o que procurar.</p>
       </header>

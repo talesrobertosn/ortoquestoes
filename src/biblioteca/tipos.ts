@@ -32,8 +32,11 @@ export interface Capitulo {
   autores: string
   fonte: string
   resumo: string
-  /** Plano gratuito: até 5 resumos abertos; os outros só para assinantes. */
+  /** 'gratis': prévia para quem não assina e texto inteiro para o assinante (src/biblioteca/porta.ts);
+   * 'assinante': o resumo inteiro fechado (hoje nenhum). */
   acesso: 'gratis' | 'assinante'
+  /** Último bloco da prévia de quem não assina (scripts/biblioteca/gerar.mjs). */
+  corte?: string | null
   /** Subtemas do acervo que o resumo ensina (adendo "Frases que caem" no fim do leitor). */
   subtemas?: string[]
   minutos: number
