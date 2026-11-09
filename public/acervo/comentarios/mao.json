@@ -17221,17 +17221,18 @@
   "conferido": false
  },
  "mao-1048": {
-  "conceito": "**Após a lesão do nervo, o coto distal e o músculo desnervado passam a produzir fatores neurotróficos que atraem e sustentam os axônios em regeneração.** A secreção dessas moléculas sobe nos primeiros dias e atinge pico por volta do **sétimo dia**.\n\n**Atores principais:**\n- **células de Schwann** do coto distal: perdem o fenótipo mielinizante, proliferam, formam as bandas de Büngner e secretam NGF, BDNF, GDNF e outros;\n- **músculo desnervado:** aumenta a produção de fatores (IGF, NT-3, NT-4) e a expressão de receptores;\n- **macrófagos:** limpam os restos de mielina e estimulam as células de Schwann.\n\n**Por que importa:** a capacidade de suporte do coto distal e do músculo diminui com o tempo. Depois de meses de desnervação, as células de Schwann perdem a capacidade de apoiar a regeneração e o músculo sofre fibrose, por isso o reparo e as transferências nervosas têm janelas de tempo (o alvo motor deve ser reinervado idealmente em 12 a 18 meses).",
-  "correta": "**Sétimo dia após a lesão.** É o pico das mudanças na secreção de neurotrofinas pelo coto distal e pelo músculo.",
+  "conceito": "Quando um nervo é cortado, o que acontece no segmento distal não é só \"morrer\". É uma sequência programada, com tempo certo para cada etapa, e é essa sequência que explica por que o reparo precoce rende mais que o tardio.\n\n**A degeneração walleriana.** O Green descreve que, abaixo da lesão, os axônios e a mielina se desfazem e os detritos são limpos; as células de SCHWANN mudam de fenótipo e deixam de expressar os genes que mantêm a mielina, os nodos e os paranodos; e os fibroblastos depositam colágeno no endoneuro, o que já se vê em peças clínicas por volta de 3 semanas (cap. 30, p. 984).\n\n**As neurotrofinas.** No mesmo período, há mudanças marcadas na expressão de neurotrofinas, como o fator neurotrófico derivado do cérebro (BDNF) e as neurotrofinas 3 e 4, no músculo e no nervo distal, e essas mudanças atingem o pico 7 dias depois da lesão (Green, cap. 30, p. 984). É o momento em que o coto distal está mais \"receptivo\" para receber os axônios que vão crescer.\n\n**Por que o tempo pesa.** Com o passar das semanas, mais colágeno é depositado, o número de células de SCHWANN cai e elas assumem um fenótipo menos receptivo à regeneração (p. 984). O ambiente que favorece o crescimento axonal vai se fechando. Quando a membrana basal fica íntegra, como na axonotmese, o axônio que regenera reencontra rapidamente as células de SCHWANN distais e restabelece o fluxo de neurotrofinas, e o prejuízo para o corpo celular é muito menor.\n\n> **Na prova:** neurotrofinas no músculo e no nervo distal: pico no 7º DIA. Colágeno no endoneuro: por volta de 3 semanas.",
+  "correta": "**C: sétimo dia após lesão.** O Green diz que as mudanças na expressão de neurotrofinas, como o BDNF e as neurotrofinas 3 e 4, no músculo e no nervo distal atingem o pico 7 dias depois da lesão (cap. 30, p. 984).",
   "incorretas": {
-   "A": "No momento da lesão, a resposta ainda não começou; ela se desenvolve nos dias seguintes.",
-   "B": "No terceiro dia a secreção está em ascensão, mas ainda não atingiu o pico.",
-   "D": "No décimo dia a secreção já passou do pico."
+   "A": "**Cedo demais.** No momento da lesão começa a degeneração walleriana; a mudança na secreção de neurotrofinas é uma resposta que cresce e só atinge o pico com 7 dias (Green, cap. 30, p. 984).",
+   "B": "**Ainda em ascensão.** No terceiro dia, a resposta do coto distal está em curso, mas o pico descrito pelo Green é aos 7 dias (cap. 30, p. 984). É o distrator mais forte, porque é a fase de limpeza dos detritos.",
+   "D": "**Passou do pico.** Aos 10 dias, a expressão de neurotrofinas já não está no máximo; o livro situa o pico em 7 dias (Green, cap. 30, p. 984)."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (Wolfe, Pederson, Hotchkiss, Kozin, Cohen; 2017), cap. 30 (Nerve Injury and Repair), p. 984",
    "Gordon T. The role of neurotrophic factors in nerve regeneration. Neurosurg Focus. 2009;26(2):E3."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "mao-1049": {
@@ -17525,33 +17526,36 @@
   }
  },
  "mao-1063": {
-  "conceito": "**Os lumbricais são os únicos músculos do corpo que nascem de um tendão (o flexor profundo) e se inserem em outro (o aparelho extensor).** Isso os torna peças centrais do equilíbrio entre flexão e extensão dos dedos.\n\n### Anatomia\n\n| Lumbrical | Origem | Forma | Inervação |\n|---|---|---|---|\n| 1º (indicador) | **Face radial** do flexor profundo do indicador | Unipenado | **Mediano** |\n| 2º (médio) | **Face radial** do flexor profundo do médio | Unipenado | **Mediano** |\n| 3º (anular) | Faces adjacentes dos profundos do médio e anular | Bipenado | Ulnar |\n| 4º (mínimo) | Faces adjacentes dos profundos do anular e mínimo | Bipenado | Ulnar |\n\nTodos passam **volares ao ligamento intermetacarpal transverso profundo**, pelo lado **radial** da MF de cada dedo, e se inserem na banda lateral radial do aparelho extensor. Os interósseos, ao contrário, passam **dorsais** a esse ligamento.\n\n### Função\n\n- fletem a MF e estendem as interfalângicas (posição intrínseca plus, como em segurar um cartão);\n- ao se contrair, puxam distalmente o tendão do profundo, de onde nascem, **relaxando o flexor profundo** e diminuindo a resistência à extensão das interfalângicas;\n- são ricos em fusos musculares, com papel proprioceptivo.\n\n### Correlações clínicas\n\n- **dedo lumbrical (paradoxo lumbrical):** quando o flexor profundo é seccionado distal à origem do lumbrical (amputação, enxerto longo, ruptura), a força de flexão é transmitida ao lumbrical e o dedo **estende paradoxalmente as interfalângicas** ao tentar fechar. O tratamento é a secção do lumbrical;\n- **mão em garra ulnar:** como o 3º e o 4º lumbricais são inervados pelo ulnar, a garra é mais intensa no anular e no mínimo; o indicador e o médio ficam relativamente protegidos pelos lumbricais inervados pelo mediano;\n- na **garra total** (mediano + ulnar), todos os dedos ficam em garra.",
-  "correta": "**No flexor profundo, do lado radial.** O 1º e o 2º lumbricais nascem da face radial dos tendões do flexor profundo do indicador e do médio, como músculos unipenados.",
+  "conceito": "Os lumbricais nascem de um tendão flexor e terminam no aparelho extensor. Saber de onde saem e de que lado explica a inervação, a função e até o caminho de uma infecção.\n\n**A origem.** Os lumbricais nascem dos tendões do flexor profundo na palma. Os dois radiais, do indicador e do médio, saem do lado radial do tendão profundo do próprio dedo, com uma cabeça só; os dois ulnares, do anular e do mínimo, nascem dos tendões profundos dos dedos vizinhos, com duas cabeças (Green, cap. 10, p. 338.e4; Hoppenfeld, cap. 5, p. 427). Por isso o flexor profundo, e não o superficial, é a origem.\n\n**A inervação acompanha a origem.** O Hoppenfeld resume a regra prática: os lumbricais que saem de um tendão só, em geral os dois radiais, são do mediano; os que saem de dois tendões vizinhos, em geral os dois ulnares, são do ulnar (cap. 5, p. 479).\n\n**O caminho até o dedo.** Cada tendão de lumbrical passa palmar ao ligamento metacarpal transverso profundo, contorna o lado radial da metacarpofalângica e se junta à banda lateral radial no meio da falange proximal (Green, cap. 10, p. 338.e4). Daí a função: flete a metacarpofalângica e estende as interfalângicas. Na zona 3 dos flexores, a zona da origem dos lumbricais, é onde os dois mundos se cruzam (Green, cap. 6, p. 185).\n\n> **Na prova:** 1º e 2º lumbricais: PROFUNDO, lado RADIAL, uma cabeça, mediano. 3º e 4º: dois profundos vizinhos, duas cabeças, ulnar.",
+  "correta": "**B: flexor profundo e radial a ele.** O Green e o Hoppenfeld descrevem os lumbricais do indicador e do médio nascendo do lado radial dos tendões do flexor profundo desses dedos, com uma cabeça só (Green, cap. 10, p. 338.e4; Hoppenfeld, cap. 5, p. 427).",
   "incorretas": {
-   "A": "Os lumbricais nascem do flexor profundo, não do superficial.",
-   "C": "A origem é no flexor profundo, e do lado radial, não no superficial e do lado ulnar.",
-   "D": "O flexor profundo está certo, mas o 1º e o 2º lumbricais nascem do lado radial do tendão; só o 3º e o 4º nascem de dois tendões adjacentes."
+   "A": "**Acerta o lado, erra o tendão.** Todos os lumbricais nascem do flexor profundo, e não do superficial (Green, cap. 10, p. 338.e4). O superficial fica por cima e se divide no dedo, sem dar origem a músculo na palma.",
+   "C": "**Erra os dois pontos.** A origem é o flexor profundo, do lado radial (Hoppenfeld, cap. 5, p. 427).",
+   "D": "**Acerta o tendão, erra o lado.** O flexor profundo está certo, mas os dois lumbricais radiais nascem do lado radial do tendão; são os ulnares que nascem de dois tendões vizinhos (Green, cap. 10, p. 338.e4). É o distrator mais forte."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (Wolfe, Pederson, Hotchkiss, Kozin, Cohen; 2017), cap. 10, p. 338.e4; cap. 6 (Flexor Tendon Injury), p. 185",
+   "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach, 5ª ed. (2016), cap. 5, p. 427 e 479",
    "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. 8ª ed. Guanabara Koogan; 2019.",
    "Parkes A. The 'lumbrical plus' finger. J Bone Joint Surg Br. 1971;53(2):236-9."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "mao-1064": {
-  "conceito": "**O flexor curto do polegar é o músculo tenar de inervação dupla, e a pergunta testou exatamente essa divisão.**\n\n### Os músculos do polegar e sua inervação\n\n| Músculo | Grupo | Nervo |\n|---|---|---|\n| Abdutor curto do polegar | Tenar | Mediano (ramo recorrente) |\n| Oponente do polegar | Tenar | Mediano (ramo recorrente) |\n| **Flexor curto do polegar, cabeça superficial** | Tenar | **Mediano (ramo recorrente)** |\n| Flexor curto do polegar, cabeça profunda | Tenar | **Ulnar** (ramo profundo) |\n| Adutor do polegar (oblíqua e transversa) | Adutor | Ulnar |\n| Flexor longo do polegar | Extrínseco | Interósseo anterior (mediano) |\n| Abdutor longo, extensores curto e longo | Extrínsecos | Interósseo posterior (radial) |\n\n### Variações de inervação\n\nNa prática, a inervação dos tenares varia muito:\n- a **anastomose de Riche-Cannieu** (na palma, entre o ramo profundo do ulnar e o ramo recorrente do mediano) é encontrada em grande parte das mãos e pode fazer com que músculos ditos \"medianos\" continuem funcionando após lesão do mediano;\n- a **anastomose de Martin-Gruber** (no antebraço, fibras do mediano ou do interósseo anterior para o ulnar) pode fazer os intrínsecos \"ulnares\" receberem fibras do mediano.\n\n### Por que isso cai\n\nNa lesão do mediano no punho, a flexão da MF do polegar muitas vezes se mantém (cabeça profunda do flexor curto pelo ulnar), e a oposição pode estar parcialmente preservada. Na lesão do ulnar, a perda do adutor e da cabeça profunda do flexor curto gera o **sinal de Froment**: para segurar um papel em pinça lateral, a pessoa flete a IF do polegar com o flexor longo (mediano), compensando o adutor fraco.",
-  "correta": "**Nervo mediano.** A cabeça superficial do flexor curto do polegar é inervada pelo ramo recorrente do mediano; a profunda, pelo ulnar.",
+  "conceito": "Os músculos tenares parecem um bloco só, mas são inervados por dois nervos diferentes, e o flexor curto do polegar é justamente o músculo dividido entre eles. É isso que a prova gosta de perguntar.\n\n**A regra clássica.** O Green lembra a descrição clássica: o abdutor curto, o oponente e o flexor curto do polegar são supridos pelo ramo motor do mediano, e o adutor do polegar, pelo ramo profundo do ulnar (cap. 31, p. 1026). No detalhe, o flexor curto tem duas cabeças: a superficial, do ramo recorrente do mediano, e a profunda, do ulnar. É o que o capítulo de hipoplasia do polegar usa para explicar o tipo II: faltam os músculos do ramo recorrente do mediano (abdutor curto, oponente e cabeça superficial do flexor curto), mas a cabeça profunda do flexor curto, do ulnar, costuma estar presente e ainda dá alguma estabilidade à metacarpofalângica (cap. 37, p. 1290).\n\n**A variação é a regra na clínica.** O mesmo livro avisa que a inervação varia bastante: estudos clínicos sugerem que, em alguns casos, todos os músculos tenares recebem pelo menos parte da inervação do ulnar ou do mediano (cap. 31, p. 1026). É por isso que uma lesão completa do mediano pode deixar alguma oposição preservada.\n\n> **Na prova:** flexor curto do polegar: cabeça SUPERFICIAL, MEDIANO (ramo recorrente); cabeça profunda, ulnar.",
+  "correta": "**D: n. mediano.** A cabeça superficial do flexor curto do polegar é inervada pelo ramo recorrente do mediano, junto com o abdutor curto e o oponente; a cabeça profunda é do ulnar (Green, cap. 37, p. 1290; cap. 31, p. 1026).",
   "incorretas": {
-   "A": "O radial não inerva músculos intrínsecos da mão; inerva os extensores e o abdutor longo do polegar no antebraço.",
-   "B": "O ulnar inerva a cabeça **profunda** do flexor curto do polegar, não a superficial.",
-   "C": "O interósseo anterior inerva o flexor longo do polegar, o flexor profundo do indicador e do médio e o pronador quadrado; não os músculos tenares."
+   "A": "**Não aparece na inervação tenar.** O Green descreve os músculos tenares supridos pelo mediano e pelo ulnar, com variações entre esses dois nervos (cap. 31, p. 1026); o radial não entra nessa lista.",
+   "B": "**É a cabeça profunda.** O ulnar inerva a cabeça profunda do flexor curto e o adutor do polegar (Green, cap. 37, p. 1290; cap. 31, p. 1026). É o distrator mais forte, porque o músculo é mesmo dividido entre os dois nervos.",
+   "C": "**O interósseo anterior não chega à mão intrínseca.** É um ramo motor do mediano no antebraço; os músculos tenares recebem o ramo recorrente do mediano (Green, cap. 37, p. 1290)."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (Wolfe, Pederson, Hotchkiss, Kozin, Cohen; 2017), cap. 31, p. 1026; cap. 37, p. 1290",
    "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. 8ª ed. Guanabara Koogan; 2019.",
    "Rowntree T. Anomalous innervation of the hand muscles. J Bone Joint Surg Br. 1949;31B(4):505-10."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "mao-1065": {
@@ -17925,18 +17929,19 @@
   "conferido": false
  },
  "mao-1084": {
-  "conceito": "**A classificação de Cierny e Mader é a mais usada para osteomielite e combina o tipo anatômico com o estado fisiológico do hospedeiro.** Ela vale para a mão e para os ossos em geral.\n\n### Tipo anatômico\n\n| Tipo | Nome | Descrição | Tratamento |\n|---|---|---|---|\n| I | **Medular** (endosteal) | Infecção restrita ao canal (por exemplo, haste infectada, hematogênica) | Fresagem ou curetagem do canal, retirada do implante |\n| **II** | **Superficial** | **Acomete a superfície externa do osso (periósteo e cortical)**, geralmente por ferida ou úlcera sobrejacente | Desbridamento superficial e cobertura de partes moles (retalho) |\n| III | Localizada | Lesão de espessura total da cortical, mas o osso continua **estável** após o desbridamento | Desbridamento com preservação da estabilidade |\n| IV | Difusa | Comprometimento de todo o segmento; **instável** antes ou após desbridamento | Ressecção, estabilização e reconstrução (transporte ósseo, enxerto vascularizado) |\n\n### Classe do hospedeiro\n\n- **A:** hospedeiro normal;\n- **B:** comprometido sistemicamente (Bs: diabetes, desnutrição, imunossupressão, idade avançada) ou localmente (Bl: tabagismo, cicatriz, linfedema, radiação, doença vascular) ou ambos;\n- **C:** o tratamento seria pior que a doença (paciente não candidato à cirurgia agressiva).\n\nO estágio final combina os dois (por exemplo, IV-Bl).\n\n### Osteomielite na mão\n\n- causas mais comuns: **contiguidade** (paroníquia, panarício, tenossinovite, mordidas) e **fraturas expostas**, especialmente na falange distal;\n- *S. aureus* é o principal agente;\n- tratamento: desbridamento do osso necrótico (sequestro), antibiótico prolongado (4 a 6 semanas), estabilização e cobertura; amputação em casos de falange distal destruída com mau prognóstico de função.",
-  "correta": "**Superficial (periosteal e cortical).** O tipo II de Cierny e Mader é a infecção que acomete a superfície externa do osso.",
+  "conceito": "A osteomielite da mão se trata conforme onde está a infecção no osso e quem é o paciente. A classificação de CIERNY e MADER junta as duas coisas, e o Green a reproduz no capítulo de infecções agudas.\n\n**Como a classificação funciona.** Ela foi refinada por CIERNY e MADER em 1985, se aplica aos ossos longos e combina quatro localizações anatômicas com três classes de hospedeiro, formando 12 tipos clínicos (Green, cap. 2, p. 45).\n\n| Tipo anatômico | O que é |\n|---|---|\n| I, medular | Infecção endosteal; ligada à osteomielite hematogênica ou à haste intramedular |\n| II, superficial | Acomete o periósteo e a cortical; em geral as partes moles por cima são deficientes |\n| III, localizada | Medular e superficial juntas, com sequestro de espessura total |\n| IV, difusa | Há instabilidade, por lesão, infecção ou desbridamento |\n\nAs classes de hospedeiro são A (normal), B (comprometido local ou sistemicamente: cicatriz, radiação, linfedema, doença vascular, diabetes, doença hepática ou renal, desnutrição, tabagismo) e C, em quem o tratamento pode ser pior que a doença (p. 45).\n\n**O raciocínio.** O tipo II é a infecção que vem de fora: uma ferida ou úlcera crônica expõe o osso, que se infecta pela superfície. Por isso o problema central é a cobertura de partes moles.\n\n> **Na prova:** CIERNY e MADER: I medular, II SUPERFICIAL (periósteo e cortical), III localizada, IV difusa (instável).",
+  "correta": "**C: superficial (periosteal e cortical).** Na Tabela 2.4 do Green, o tipo II de CIERNY e MADER é a osteomielite superficial, com acometimento do periósteo e da cortical e, em geral, partes moles deficientes por cima (cap. 2, p. 45).",
   "incorretas": {
-   "A": "Medular (endosteal) é o tipo I.",
-   "B": "A infecção localizada, de espessura total, porém estável, é o tipo III.",
-   "D": "A infecção difusa, com instabilidade, é o tipo IV."
+   "A": "**É o tipo I.** A osteomielite medular, endosteal, ligada à forma hematogênica ou à haste intramedular, é o tipo I (Green, cap. 2, p. 45). É o distrator mais forte, porque é o primeiro da lista.",
+   "B": "**É o tipo III.** A infecção localizada junta acometimento medular e superficial, com sequestro de espessura total (Green, cap. 2, p. 45).",
+   "D": "**É o tipo IV.** A infecção difusa é a que tem instabilidade óssea, por lesão, infecção ou desbridamento (Green, cap. 2, p. 45)."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (Wolfe, Pederson, Hotchkiss, Kozin, Cohen; 2017), cap. 2 (Acute Infections of the Hand), p. 45 (Tabela 2.4)",
    "Cierny G 3rd, Mader JT, Penninck JJ. A clinical staging system for adult osteomyelitis. Clin Orthop Relat Res. 2003;(414):7-24.",
    "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022. Capítulo de osteomielite."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "mao-1085": {
@@ -18063,18 +18068,19 @@
   }
  },
  "mao-1090": {
-  "conceito": "**A cinemática do carpo se baseia no comportamento diferente da fileira proximal, que não tem nenhum tendão inserido nela (segmento intercalado).** Os ossos da fileira proximal se movem em resposta às forças das articulações vizinhas e dos ligamentos.\n\n### Escafoide e semilunar no plano sagital\n\nNa flexoextensão do punho, o escafoide roda mais que o semilunar. Na flexão do punho, a banca usou os valores clássicos de contribuição: **escafoide cerca de 70%** e **semilunar cerca de 46%** do movimento total do punho (a fileira distal, com o capitato, se move praticamente junto com a mão).\n\n**Por que essa diferença existe:**\n- o escafoide é mais longo e oblíquo, apoia-se no trapézio e trapezoide e tende naturalmente a **fletir** sob carga;\n- o semilunar, em forma de cunha (mais alto na face volar), tende a **estender**;\n- o piramidal, pela superfície helicoidal com o hamato, tende a estender;\n- o ligamento escafossemilunar e o semilunopiramidal mantêm o equilíbrio entre essas tendências opostas.\n\n### Consequências clínicas (o que essa fisiologia explica)\n\n| Lesão | O que acontece |\n|---|---|\n| Ruptura escafossemilunar | O escafoide flete livremente e o semilunar estende com o piramidal: **DISI** |\n| Ruptura semilunopiramidal | O semilunar flete com o escafoide: **VISI** |\n| Pseudartrose do escafoide | O fragmento proximal estende com o semilunar, o distal flete: humpback e DISI |\n\n### Teorias da mecânica do carpo\n\n- **colunas** (Navarro, Taleisnik): central (semilunar e capitato) para flexoextensão, lateral (escafoide) móvel, medial (piramidal) para rotação;\n- **fileiras** (anel ovalado de Lichtman): fileira proximal intercalada, ligada à distal por elos;\n- **movimento do arremessador de dardos** (dart thrower's motion): extensão com desvio radial para flexão com desvio ulnar, o movimento funcional mais usado, ocorre principalmente na mediocárpica, com pouco movimento da fileira proximal.",
-  "correta": "**70% e 46%.** São as contribuições clássicas do escafoide e do semilunar para a flexão do punho adotadas pela banca.",
+  "conceito": "A fileira proximal do carpo é um segmento intercalado: não tem tendão inserido nela e se move pelo que acontece em volta. Ainda assim, o escafoide e o semilunar não se movem por igual, e essa diferença é o fundamento da dissociação escafossemilunar.\n\n**Quanto cada um contribui.** O Green explica que, no plano sagital, o escafoide gira mais que o semilunar, pela forma diferente das superfícies articulares e pelos ligamentos em volta. Da posição neutra à flexão máxima do punho, escafoide e semilunar contribuem com 70% e 46% do arco total; na extensão máxima, com 72% e 42% (cap. 13, p. 423). O restante vem da mediocárpica.\n\n**Por que o escafoide gira mais.** Ele fica oblíquo, em cerca de 45 graus de flexão em relação ao rádio (de 30 a 60 graus), para sustentar o metacarpo do polegar, que está à frente do plano do capitato (Green, cap. 13, p. 420). É uma ponte entre as duas fileiras, e por isso acompanha mais o movimento da fileira distal que o semilunar.\n\n**A consequência clínica.** Se o ligamento escafossemilunar se rompe, cada osso segue a sua tendência: o escafoide flete e o semilunar estende. É a mesma diferença de rotação, agora sem a amarra entre eles.\n\n> **Na prova:** flexão do punho: escafoide 70%, semilunar 46%. Extensão: 72% e 42%. O escafoide sempre gira mais.",
+  "correta": "**B: 70 e 46%.** O Green diz que, da posição neutra à flexão máxima do punho, o escafoide e o semilunar contribuem com 70% e 46% do arco total, respectivamente (cap. 13, p. 423).",
   "incorretas": {
-   "A": "62% e 48% não são os valores descritos para a flexão do punho.",
-   "C": "58% e 46% subestimam a contribuição do escafoide.",
-   "D": "74% e 42% não correspondem aos valores clássicos."
+   "A": "**Números fora do livro.** 62% e 48% não correspondem aos valores do Green para a flexão, que são 70% e 46% (cap. 13, p. 423).",
+   "C": "**Acerta o semilunar, erra o escafoide.** O semilunar contribui com 46% na flexão, mas o escafoide contribui com 70%, e não 58% (Green, cap. 13, p. 423).",
+   "D": "**Mistura com a extensão.** Os números da extensão máxima são 72% e 42% (Green, cap. 13, p. 423); 74% e 42% lembram esses valores, mas a pergunta é sobre a flexão. É o distrator mais forte."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (Wolfe, Pederson, Hotchkiss, Kozin, Cohen; 2017), cap. 13 (Wrist Instabilities, Misalignments, and Dislocations), p. 420 e 423",
    "Ruby LK, Cooney WP 3rd, An KN, Linscheid RL, Chao EY. Relative motion of selected carpal bones: a kinematic analysis of the normal wrist. J Hand Surg Am. 1988;13(1):1-10.",
    "Garcia-Elias M, Lluch A. Wrist instabilities, misalignments, and dislocations. In: Green's Operative Hand Surgery."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "mao-1091": {
@@ -18168,18 +18174,19 @@
   }
  },
  "mao-1095": {
-  "conceito": "**O ramo motor (recorrente) do mediano inerva a musculatura tenar lateral: abdutor curto, oponente e cabeça superficial do flexor curto do polegar.**\n\n### O mediano na mão\n\n- **ramo motor recorrente:** sai na borda distal do retináculo dos flexores e faz curva para trás até a eminência tenar;\n- **ramos digitais comuns:** sensitivos para a face palmar do polegar, indicador, médio e metade radial do anular, e **motores para o 1º e o 2º lumbricais**;\n- **ramo cutâneo palmar:** sai **antes** do túnel do carpo (cerca de 5 cm proximal ao punho) e inerva a pele da eminência tenar. Por isso a sensibilidade da palma tenar fica **preservada** na síndrome do túnel do carpo (útil para o diferencial com a síndrome do pronador).\n\n### Variações do ramo recorrente (Lanz)\n\n- extraligamentar (a mais comum, cerca de 46% a 50%);\n- subligamentar;\n- **transligamentar** (atravessa o ligamento transverso do carpo: risco na liberação);\n- origem ulnar do mediano, ramos acessórios, alta divisão do mediano.\n\nPor isso, na liberação do túnel do carpo, a incisão é feita **no eixo do anular**, com o corte do ligamento do lado ulnar, longe do ramo recorrente.\n\n### Os outros músculos das alternativas\n\n| Músculo | Inervação |\n|---|---|\n| Abdutor longo do polegar | Interósseo posterior (radial) |\n| Oponente do mínimo | Ulnar (ramo profundo) |\n| Adutor do polegar | Ulnar (ramo profundo) |",
-  "correta": "**Abdutor curto do polegar.** É inervado pelo ramo motor recorrente do mediano e é o principal músculo para a abdução palmar e a oposição.",
+  "conceito": "O ramo motor do mediano é um nervo pequeno, curto e de enorme importância: dele depende a oposição do polegar. É também o ramo que o cirurgião precisa proteger na liberação do túnel do carpo.\n\n**O que ele inerva.** Na descrição clássica, o abdutor curto, o oponente e o flexor curto do polegar são supridos pelo ramo motor do mediano, enquanto o adutor do polegar recebe o ramo profundo do ulnar (Green, cap. 31, p. 1026). Na hipoplasia do polegar tipo II, faltam exatamente os músculos do ramo recorrente do mediano: abdutor curto, oponente e cabeça superficial do flexor curto (cap. 37, p. 1290).\n\n**Os vizinhos que confundem.** O abdutor longo do polegar não é intrínseco: é um músculo do antebraço, do primeiro compartimento extensor, e está entre os músculos inervados pelo interósseo posterior (Green, cap. 28, p. 949). O oponente do mínimo é hipotenar e, como o adutor do polegar, depende do ulnar (Green, cap. 31, p. 1026).\n\n**A variação.** O livro lembra que a inervação dos tenares varia, e que em alguns casos todos recebem parte do ulnar ou do mediano (p. 1026).\n\n> **Na prova:** ramo motor do mediano: ABDUTOR CURTO, oponente e cabeça superficial do flexor curto. Adutor do polegar e hipotenares: ulnar.",
+  "correta": "**C: abdutor curto do polegar.** O abdutor curto do polegar é um dos músculos supridos pelo ramo motor do mediano, junto com o oponente e o flexor curto (Green, cap. 31, p. 1026; cap. 37, p. 1290).",
   "incorretas": {
-   "A": "O abdutor longo do polegar é extrínseco, inervado pelo interósseo posterior (radial).",
-   "B": "O oponente do dedo mínimo é hipotenar, inervado pelo ulnar.",
-   "D": "O adutor do polegar é inervado pelo ramo profundo do ulnar."
+   "A": "**É músculo do antebraço.** O abdutor longo do polegar fica no primeiro compartimento extensor e é inervado pelo interósseo posterior, ramo do radial (Green, cap. 28, p. 949); não é tenar.",
+   "B": "**É hipotenar.** O oponente do mínimo pertence à eminência hipotenar, inervada pelo ulnar (Green, cap. 31, p. 1026).",
+   "D": "**É do ulnar.** O adutor do polegar recebe o ramo profundo do ulnar (Green, cap. 31, p. 1026). É o distrator mais forte, porque fica junto do polegar e trabalha na pinça."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (Wolfe, Pederson, Hotchkiss, Kozin, Cohen; 2017), cap. 31, p. 1026; cap. 37, p. 1290",
    "Lanz U. Anatomical variations of the median nerve in the carpal tunnel. J Hand Surg Am. 1977;2(1):44-53.",
    "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. 8ª ed. Guanabara Koogan; 2019."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "mao-1096": {
@@ -18368,18 +18375,20 @@
   }
  },
  "mao-1104": {
-  "conceito": "**Os lumbricais são pequenos músculos que conectam o sistema flexor ao extensor.** Questões sobre eles costumam trocar origem, trajeto e função, e esta testou exatamente esses três pontos.\n\n### Os quatro fatos que respondem quase tudo\n\n1. **Origem:** nos tendões do **flexor profundo** (não no superficial). O 1º e o 2º nascem do **lado radial** dos profundos do indicador e do médio (unipenados); o 3º e o 4º, de dois tendões adjacentes (bipenados).\n2. **Trajeto:** passam **volares ao ligamento metacarpal transverso profundo**, pelo lado radial da MF (os interósseos passam dorsais a ele).\n3. **Inserção:** na **banda lateral radial** do aparelho extensor.\n4. **Função:** **fletem a MF e estendem a IFP e a IFD** (posição intrínseca plus).\n\n| Lumbrical | Origem | Inervação |\n|---|---|---|\n| 1º e 2º | Lado radial do profundo do indicador e do médio | Mediano |\n| 3º e 4º | Lados adjacentes dos profundos (médio-anular, anular-mínimo) | Ulnar |\n\n### Por que saber isso importa\n\n- **dedo lumbrical plus:** profundo seccionado ou enxerto longo demais; a tração passa ao lumbrical e o dedo estende paradoxalmente ao tentar fletir;\n- **garra ulnar:** a perda dos 3º e 4º lumbricais (ulnar) deixa o anular e o mínimo em garra, enquanto indicador e médio são protegidos pelos lumbricais do mediano;\n- o lumbrical, ao contrair, puxa o profundo distalmente e o relaxa, facilitando a extensão das interfalângicas.",
-  "correta": "**Os lumbricais do indicador e do médio surgem do lado radial dos tendões flexores profundos.** São o 1º e o 2º lumbricais, unipenados, inervados pelo mediano.",
+  "conceito": "Os lumbricais têm uma anatomia que a banca adora transformar em afirmações quase certas: origem, trajeto e função, cada uma com um detalhe trocado.\n\n**Origem.** Nascem dos tendões do flexor profundo na palma. Os do indicador e do médio saem do lado radial do tendão profundo do próprio dedo; os do anular e do mínimo, dos tendões profundos dos dedos vizinhos (Green, cap. 10, p. 338.e4; Hoppenfeld, cap. 5, p. 427).\n\n**Trajeto.** O tendão de cada lumbrical passa palmar ao ligamento metacarpal transverso profundo e se junta à banda lateral radial no meio da falange proximal (Green, cap. 10, p. 338.e4). O Hoppenfeld descreve o mesmo na comissura: os tendões dos lumbricais e o feixe neurovascular ficam palmares ao ligamento transverso profundo, que une as placas volares das metacarpofalângicas (cap. 5, p. 453).\n\n**Função.** Os lumbricais estendem as interfalângicas proximal e distal e ajudam a fletir a metacarpofalângica (Green, cap. 10, p. 338.e4; cap. 5, p. 154). Ao contrair, ainda puxam o tendão profundo para distal, relaxando o flexor e facilitando a extensão.\n\n> **Na prova:** lumbrical: nasce do PROFUNDO (os dois radiais, do lado radial), passa PALMAR ao ligamento transverso profundo, flete a MF e ESTENDE as duas interfalângicas.",
+  "correta": "**B: os lumbricais do indicador e do médio surgem do lado radial dos tendões flexores profundos.** É a descrição do Green e do Hoppenfeld: os lumbricais desses dois dedos nascem do lado radial dos tendões do flexor profundo correspondentes (Green, cap. 10, p. 338.e4; Hoppenfeld, cap. 5, p. 427).",
   "incorretas": {
-   "A": "Os lumbricais passam **volares** ao ligamento metacarpal transverso profundo; quem passa dorsal são os interósseos.",
-   "C": "A função é o inverso: os lumbricais **fletem a MF e estendem** as interfalângicas.",
-   "D": "Os lumbricais nascem dos tendões do flexor **profundo**, não do superficial."
+   "A": "**Troca o plano.** O tendão do lumbrical passa palmar ao ligamento metacarpal transverso profundo, junto com o feixe neurovascular (Green, cap. 10, p. 338.e4; Hoppenfeld, cap. 5, p. 453). É o distrator mais forte, porque o lumbrical termina mesmo no dorso, no aparelho extensor.",
+   "C": "**Inverte a função nas interfalângicas.** Os lumbricais estendem as duas interfalângicas e ajudam a fletir a metacarpofalângica (Green, cap. 10, p. 338.e4). Não fletem a proximal.",
+   "D": "**Erra o tendão de origem.** Os lumbricais nascem dos tendões do flexor profundo, e não do superficial (Green, cap. 10, p. 338.e4)."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (Wolfe, Pederson, Hotchkiss, Kozin, Cohen; 2017), cap. 10, p. 338.e4; cap. 5, p. 154",
+   "Hoppenfeld S, deBoer P, Buckley R. Surgical Exposures in Orthopaedics: The Anatomic Approach, 5ª ed. (2016), cap. 5, p. 427 e 453",
    "Moore KL, Dalley AF, Agur AMR. Anatomia orientada para a clínica. 8ª ed. Guanabara Koogan; 2019.",
    "Wolfe SW et al. Green's Operative Hand Surgery. 8ª ed. Elsevier; 2022."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "mao-1105": {
@@ -19136,17 +19145,18 @@
   "conferido": false
  },
  "mao-1143": {
-  "conceito": "**O retalho de Kite (pipa) de Foucher é um retalho em ilha da pele dorsal da falange proximal do indicador, baseado na primeira artéria metacarpal dorsal (1ª AMD).** O desenho lembra uma pipa: a ilha de pele é a pipa, e o pedículo longo é a linha.\n\n### Anatomia\n\n- a **1ª artéria metacarpal dorsal** nasce da artéria radial na tabaqueira anatômica, antes de ela mergulhar entre as cabeças do primeiro interósseo dorsal;\n- corre sobre (ou dentro da fáscia do) primeiro interósseo dorsal até o dorso da MF do indicador;\n- o retalho leva também o **ramo do nervo radial superficial** (retalho sensível) e veias dorsais;\n- arco de rotação: alcança todo o polegar (dorso e polpa), o primeiro espaço e o dorso da mão.\n\n### Indicações\n\n- **defeitos do polegar**: polpa, dorso, perdas após trauma ou ressecção de tumor;\n- cobertura do primeiro espaço após liberação de contratura;\n- área doadora coberta com enxerto de pele total.\n\n### Retalhos dorsais da mão, comparados\n\n| Retalho | Pedículo | Uso |\n|---|---|---|\n| **Kite (Foucher)** | **1ª metacarpal dorsal** | Polegar |\n| Quaba | Perfurantes distais das metacarpais dorsais (fluxo retrógrado) | Dorso dos dedos |\n| Retalho da 2ª metacarpal dorsal | 2ª AMD | Dorso dos dedos e da mão |\n| Cross-finger | Ao acaso, do dorso do dedo vizinho | Perda volar de dedo longo |\n| Moberg | Digitais palmares | Polpa do polegar (avanço) |",
-  "correta": "**Primeira artéria metacarpal dorsal.** É o pedículo do retalho de Kite (Foucher), usado principalmente para reconstruir o polegar.",
+  "conceito": "O dorso da mão tem artérias metacarpais que correm sob a pele em direção às comissuras. Elas permitem levantar retalhos axiais pequenos, finos e, quando se leva um ramo do nervo radial, sensíveis. O mais famoso é o retalho em pipa.\n\n**As artérias metacarpais dorsais.** O Green descreve que esses vasos dorsais dão base axial a quatro retalhos: o retalho em bandeira, o da primeira artéria metacarpal dorsal, também chamado retalho em pipa (kite), o da segunda artéria metacarpal dorsal e o retalho metacarpal dorsal reverso (cap. 44, p. 1545). Os retalhos com base proximal na primeira artéria metacarpal dorsal conseguem transferir sensibilidade, incorporando os ramos do nervo radial da pele dorsal (p. 1545).\n\n**Para que serve o retalho em pipa.** A pele do dorso da falange proximal do indicador vai, presa pelo pedículo da primeira artéria metacarpal dorsal, cobrir defeitos do polegar. O Green mostra um caso de amputação distal do polegar coberta com um retalho em pipa, levantado com margem generosa de tecido em volta dos vasos e passado sob uma ponte de pele (cap. 44, Fig. 44.20, p. 1546). No capítulo de reconstrução do polegar, ele aparece entre os retalhos heterodigitais, como o retalho em ilha da primeira artéria metacarpal dorsal (cap. 48, p. 1684 a 1686).\n\n**O nome.** A ilha de pele lembra a pipa, e o pedículo comprido, a linha.\n\n> **Na prova:** retalho em pipa (KITE) = PRIMEIRA artéria metacarpal dorsal, dorso do indicador, para o polegar, sensível pelo ramo do radial.",
+  "correta": "**A: primeira metacarpal dorsal.** O Green chama o retalho da primeira artéria metacarpal dorsal de retalho em pipa (kite flap) e o usa para cobrir defeitos do polegar, inclusive com sensibilidade pelos ramos do nervo radial (cap. 44, p. 1545 e 1546).",
   "incorretas": {
-   "B": "A segunda metacarpal dorsal nutre outro retalho, usado para o dorso dos dedos e da mão.",
-   "C": "A artéria digital ulnar nutre retalhos homodigitais e heterodigitais, não o Kite.",
-   "D": "A artéria digital radial também não é o pedículo do Kite."
+   "B": "**É outro retalho da mesma família.** A segunda artéria metacarpal dorsal tem o seu próprio retalho, citado ao lado do retalho em pipa, mas não é ele (Green, cap. 44, p. 1545 e 1546). É o distrator mais forte.",
+   "C": "**É base de retalho digital.** As artérias digitais sustentam os retalhos em ilha digitais, descritos em outra seção do capítulo (Green, cap. 44, p. 1546 e 1547); o retalho em pipa é dorsal e metacarpal.",
+   "D": "**Mesmo erro da alternativa C.** O retalho em pipa não depende de artéria digital; seu pedículo é a primeira artéria metacarpal dorsal (Green, cap. 44, p. 1545)."
   },
   "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed. (Wolfe, Pederson, Hotchkiss, Kozin, Cohen; 2017), cap. 44 (Nonmicrosurgical Coverage of the Upper Extremity), p. 1545 e 1546; cap. 48, p. 1684 a 1686",
    "Foucher G, Braun JB. A new island flap transfer from the dorsum of the index to the thumb. Plast Reconstr Surg. 1979;63(3):344-9."
   ],
-  "geradoEm": "2026-10-04",
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "mao-1144": {
