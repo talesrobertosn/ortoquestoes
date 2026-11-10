@@ -4,7 +4,8 @@ import { gravar, ler } from '../../estado/armazenamento'
 import { Icone } from '../Icone'
 import { CorujaPixel, type EstadoCoruja } from '../../biblioteca/sala/CorujaPixel'
 import { GatoPixel } from '../mascote/GatoPixel'
-import type { IdLinhaGato } from '../mascote/sprites'
+import type { IdLinhaDragao, IdLinhaGato } from '../mascote/sprites'
+import { DURACAO_DRAGAO, DragaoPixel } from '../mascote/DragaoPixel'
 import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../mascote/falasBichos'
 
 /**
@@ -17,7 +18,10 @@ import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../mascote/falasBicho
  *   entra andando pelo rodapé, senta, se espreguiça e dorme;
  * - os dois somem quando a pessoa começa a digitar na busca; com "menos movimento", ninguém voa nem anda;
  * - nunca os dois ao mesmo tempo de entrada: se o gato já está e a coruja pousa, ele olha para cima (o segredo raro);
- * - para testar: sessionStorage 'portal:forcar' = 'coruja' | 'gato' | 'todos'.
+ * - o dragão do tesouro (10/11/2026, pedido do Tales: "de vez em quando ele vem e solta um fogo") aparece numa
+ *   abertura em cada três: chega voando pela direita, pousa acima do rodapé, solta fogo e vai embora; um toque e
+ *   ele sopra de novo;
+ * - para testar: sessionStorage 'portal:forcar' = 'coruja' | 'gato' | 'dragao' | 'todos'.
  * Nenhum deles cobre texto ou botão: a coruja fica no alto, à esquerda do X; o gato, na faixa do rodapé.
  */
 type FaseCoruja = 'longe' | 'chegando' | 'pousada' | 'saindo'
@@ -44,6 +48,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
   const [fala, definirFala] = useState<string | null>(null)
   const [gato, definirGato] = useState<FaseGato>('longe')
   const [miau, definirMiau] = useState<string | null>(null)
+  const [dragao, definirDragao] = useState<{ fase: 'longe' | 'chegando' | 'pousado' | 'saindo'; linha: IdLinhaDragao }>({ fase: 'longe', linha: 'voando' })
   const relogios = useRef<number[]>([])
   const depois = (f: () => void, ms: number) => { relogios.current.push(window.setTimeout(f, ms)) }
   useEffect(() => () => relogios.current.forEach((t) => window.clearTimeout(t)), [])
@@ -76,6 +81,24 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     const vez = window.setInterval(() => { if (!document.hidden) definirEstadoCoruja((e) => (e === 'piando' ? e : ciclo[n++ % ciclo.length])) }, 5200)
     return () => window.clearInterval(vez)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
+  // O dragão: uma abertura em cada três, depois de um instante.
+  useEffect(() => {
+    const f = forcado()
+    if (semMovimento() || !(f === 'dragao' || f === 'todos' || ler<number>(CHAVE_ABERTURAS, 0) % 3 === 0)) return
+    const pouso = 2600 + 1300, fogo = pouso + DURACAO_DRAGAO.pousando * 1000 + 900
+    depois(() => definirDragao({ fase: 'chegando', linha: 'voando' }), 2600)
+    depois(() => definirDragao({ fase: 'pousado', linha: 'pousando' }), pouso)
+    depois(() => definirDragao((d) => (d.fase === 'pousado' ? { fase: 'pousado', linha: 'fogo' } : d)), fogo)
+    depois(() => definirDragao((d) => (d.fase === 'pousado' ? { fase: 'pousado', linha: 'parado' } : d)), fogo + DURACAO_DRAGAO.fogo * 1000 + 200)
+    depois(() => definirDragao((d) => (d.fase === 'pousado' ? { fase: 'saindo', linha: 'voando' } : d)), fogo + 9000)
+    depois(() => definirDragao((d) => (d.fase === 'saindo' ? { fase: 'longe', linha: 'voando' } : d)), fogo + 10300)
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  const tocarDragao = () => {
+    if (dragao.fase !== 'pousado' || dragao.linha === 'fogo' || dragao.linha === 'pousando') return
+    definirDragao({ fase: 'pousado', linha: 'fogo' })
+    depois(() => definirDragao((d) => (d.fase === 'pousado' ? { fase: 'pousado', linha: 'parado' } : d)), DURACAO_DRAGAO.fogo * 1000 + 200)
+  }
 
   // O gato: depois de 1 s sem mexer no menu.
   useEffect(() => {
@@ -110,6 +133,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     definirFala(null)
     if (coruja === 'pousada' || coruja === 'chegando') { definirCoruja('saindo'); definirEstadoCoruja('voando'); depois(() => definirCoruja('longe'), 1000) }
     if (gato !== 'longe') definirGato('longe')
+    definirDragao({ fase: 'longe', linha: 'voando' })
   }, [digitando]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const tocarCoruja = () => {
@@ -149,6 +173,13 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
             : <p className="pt-coruja__fala" role="status" onClick={() => definirFala(null)}>{fala}</p>)}
           <button type="button" className="pt-coruja__botao" onClick={tocarCoruja} aria-label="A coruja bibliotecária: um conceito que cai na prova">
             <CorujaPixel estado={estadoCoruja} />
+          </button>
+        </div>
+      )}
+      {dragao.fase !== 'longe' && !digitando && (
+        <div className={`pt-dragao pt-dragao--${dragao.fase}`}>
+          <button type="button" className="pt-dragao__botao" onClick={tocarDragao} aria-label="O dragão do tesouro: tocar para ele soltar fogo">
+            <DragaoPixel estado={dragao.linha} />
           </button>
         </div>
       )}

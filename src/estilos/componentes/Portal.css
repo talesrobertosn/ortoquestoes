@@ -166,23 +166,24 @@
 
 /* "Indique e ganhe" em chamas (Tales, 10/11/2026): um halo de fogo ao redor do botão para chamar a atenção. Só o botão
    leva fogo; o movimento é só em transform e opacity (e "menos movimento" desliga tudo, abaixo). */
-.pt-item--fogo { position: relative; isolation: isolate; border-radius: 14px; background: linear-gradient(135deg, rgba(255, 176, 56, 0.16), rgba(255, 94, 40, 0.1));
-  box-shadow: inset 0 0 0 1.5px rgba(255, 150, 50, 0.75), 0 0 10px rgba(255, 120, 40, 0.45); }
-.pt-item--fogo:hover { background: linear-gradient(135deg, rgba(255, 176, 56, 0.26), rgba(255, 94, 40, 0.18)); }
-.pt-item--fogo::before, .pt-item--fogo::after { content: ""; position: absolute; z-index: -1; pointer-events: none; border-radius: 20px; }
-.pt-item--fogo::before { inset: -7px; background: radial-gradient(ellipse at 50% 100%, rgba(255, 214, 90, 0.75), rgba(255, 110, 30, 0.55) 45%, rgba(255, 60, 20, 0) 72%);
-  filter: blur(7px); transform-origin: 50% 100%; animation: pt-fogo 1.6s ease-in-out infinite alternate; }
-.pt-item--fogo::after { inset: -4px; background: conic-gradient(from 0deg, rgba(255, 200, 70, 0.9), rgba(255, 80, 30, 0.2), rgba(255, 200, 70, 0.9), rgba(255, 80, 30, 0.2), rgba(255, 200, 70, 0.9));
-  filter: blur(5px); opacity: 0.55; animation: pt-fogo-gira 3.2s ease-in-out infinite alternate; }
+.pt-item--fogo { position: relative; isolation: isolate; margin-top: 1.5rem; border-radius: 14px; background: linear-gradient(180deg, rgba(255, 190, 70, 0.3), rgba(255, 96, 30, 0.16)); }
+.pt-item--fogo:hover { background: linear-gradient(180deg, rgba(255, 190, 70, 0.42), rgba(255, 96, 30, 0.24)); }
 .pt-item--fogo .pt-item__texto strong { color: var(--pt-tinta); }
-.pt-item--fogo .pt-item__texto strong::after { content: "🔥"; margin-left: 0.3rem; display: inline-block; animation: pt-fogo-chama 1.1s ease-in-out infinite alternate; transform-origin: 50% 90%; }
-@keyframes pt-fogo { from { opacity: 0.6; transform: scale(0.97, 0.94); } to { opacity: 1; transform: scale(1.04, 1.08); } }
-@keyframes pt-fogo-gira { from { opacity: 0.35; transform: scale(1); } to { opacity: 0.7; transform: scale(1.03); } }
-@keyframes pt-fogo-chama { from { transform: scale(0.92) rotate(-6deg); } to { transform: scale(1.12) rotate(5deg); } }
 
 .pt-chao { position: relative; z-index: 3; display: flex; align-items: center; gap: 0.4rem 1.2rem; min-height: 50px; padding: 0 1.4rem; border-top: 1px solid var(--pt-linha); border-radius: 0 0 22px 22px;
   background: var(--pt-papel-2); font-size: 0.8125rem; }
 .pt-chao a { color: var(--pt-tinta-2); text-decoration: underline; text-underline-offset: 3px; }
+
+/* O dragão do tesouro: chega voando pela direita, pousa acima do rodapé, solta fogo e vai embora. */
+.pt-dragao { position: absolute; z-index: 6; right: 30%; bottom: 2px; pointer-events: none; filter: drop-shadow(0 0 10px rgba(255, 150, 60, 0.55)); }
+.pt-dragao__botao { display: block; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; pointer-events: auto; }
+.pt-dragao__botao:focus-visible { outline: 3px solid var(--pt-verde); outline-offset: 2px; border-radius: 8px; }
+.pt-dragao .dragao-pixel { display: block; width: 176px; }
+.pt-dragao--chegando { animation: pt-dragao-chega 1.3s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.pt-dragao--saindo { animation: pt-dragao-sai 1.3s ease-in both; }
+@keyframes pt-dragao-chega { from { opacity: 0; transform: translate(60%, -170%) scale(0.7); } 15% { opacity: 1; } }
+@keyframes pt-dragao-sai { to { opacity: 0; transform: translate(-70%, -190%) scale(0.7); } }
+@media (max-width: 48rem) { .pt-dragao .dragao-pixel { width: 136px; } .pt-dragao { right: 22%; bottom: 0; } }
 
 /* Os visitantes: a coruja pousa no alto (à esquerda do X); o gato passeia no rodapé. */
 .pt-coruja { position: absolute; z-index: 5; top: calc(1.1rem + 44px); right: 72px; transform: translateY(-94%); }

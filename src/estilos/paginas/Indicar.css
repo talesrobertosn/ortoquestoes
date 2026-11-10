@@ -1,55 +1,91 @@
-/* Indique e ganhe (refeita em 09/11/2026 no desenho atual): o topo no painel escuro da Sala dos bichos, com os três
-   bichos novos na lareira (cada toque, uma fala); o link, o placar, os amigos e as regras em folhas do atlas. Títulos e
-   números na fonte da marca (saiu a fonte pixel antiga). */
-.ind { display: grid; gap: var(--e-5); max-width: 62rem; margin-inline: auto; padding-block: var(--e-4) var(--e-7); }
+/* Indique e ganhe (09/11/2026; em ouro desde 10/11/2026): o topo é a Câmara do Tesouro, cenário HD-2D com os três
+   bichos em cima do ouro (cada toque, uma fala); o link dourado, o tesouro (dias ganhos e as 12 moedas), os amigos e
+   as regras em folhas do atlas com filete de ouro. Títulos e números na fonte da marca. */
+/* A página inteira é a caverna do tesouro (Tales, 10/11/2026: "tudo coerente, tudo épico"): os blocos trocam o papel
+   claro pelo mesmo vidro escuro com filete de ouro, só redefinindo as cores do site aqui dentro. */
+.ind { --superficie: #17100a; --superficie-2: #241a0f; --traco: rgba(244, 207, 124, 0.22); --traco-forte: rgba(244, 207, 124, 0.42); --texto: #fff6e2; --texto-2: #d9c9a6;
+  --ouro: #e0b862; --ouro-veu: rgba(244, 199, 90, 0.14); --ouro-texto: #f4cf7c; --verdete: #5fd8c0; --verdete-tinta: #8fe6d4; --verdete-veu: rgba(95, 216, 192, 0.14);
+  --borda: 1px solid rgba(244, 207, 124, 0.3); --sombra-folha: 0 22px 44px -26px rgba(0, 0, 0, 0.9); color: var(--texto); }
+.ind::before { content: ""; position: absolute; z-index: 0; left: 50%; top: calc(-1 * var(--e-5)); bottom: 0; width: 100vw; transform: translateX(-50%); pointer-events: none;
+  background: radial-gradient(60% 34rem at 50% 0, rgba(244, 170, 70, 0.2), transparent 70%), radial-gradient(circle at 1px 1px, rgba(255, 220, 150, 0.05) 1px, transparent 0) 0 0 / 16px 16px, linear-gradient(180deg, #120b06, #0a0705 40%, #0d0906); }
+.ind > :not(.ind-margens, .ind-voador) { position: relative; z-index: 1; }
+.ind .folha { background: radial-gradient(90% 60% at 100% 0, rgba(244, 199, 90, 0.1), transparent 65%), linear-gradient(180deg, #1d1309, #110b06); }
+.ind .folha a:not([class]) { color: #f4cf7c; }
+.ind :is(.botao, .botao--principal) { border-color: rgba(244, 207, 124, 0.5); }
+.ind { position: relative; display: grid; gap: var(--e-5); max-width: 62rem; margin-inline: auto; padding-block: var(--e-3) var(--e-7); }
 
-/* ---------- Topo ---------- */
-.ind-topo { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(16rem, 1fr); align-items: stretch; overflow: hidden;
-  border-radius: var(--mundo-raio); background: var(--mundo-painel); color: var(--mundo-tinta);
-  box-shadow: inset 0 0 0 1px var(--mundo-filete), 0 18px 40px -24px rgba(0, 0, 0, 0.55); }
-.ind-topo__texto { display: grid; align-content: center; gap: var(--e-2); padding: clamp(1.4rem, 3.6vw, 2.25rem); }
-.ind-topo__selo { display: inline-flex; align-items: center; gap: 0.4rem; margin: 0; color: var(--mundo-ouro); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
-.ind-topo h1 { margin: 0; font-family: var(--fonte-marca); font-size: clamp(1.7rem, 1.1rem + 2.2vw, 2.5rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.03em; text-wrap: balance; }
-.ind-topo h1 em { font-style: normal; color: var(--mundo-ouro); }
-.ind-topo__texto p:last-child { margin: 0; max-width: 52ch; color: var(--mundo-tinta-2); line-height: 1.5; }
+/* ---------- Topo: a Câmara do Tesouro (cenário HD-2D de scripts/gerar_cena_tesouro.py) ---------- */
+.ind-topo { position: relative; isolation: isolate; display: grid; align-items: center; min-height: clamp(16.5rem, 27vw, 20rem); overflow: hidden;
+  border-radius: var(--mundo-raio); background: #070506; color: #fff6e2;
+  box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.45), 0 0 0 1px #1b1208, 0 22px 48px -22px rgba(120, 80, 10, 0.55); }
+.ind-topo__texto { position: relative; z-index: 2; display: grid; align-content: center; gap: var(--e-2); width: min(100%, 31rem); padding: clamp(1.4rem, 3.6vw, 2.25rem); }
+.ind-topo__selo { display: inline-flex; align-items: center; gap: 0.4rem; margin: 0; color: #f4cf7c; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.ind-topo h1 { margin: 0; font-family: var(--fonte-marca); font-size: clamp(1.7rem, 1.1rem + 2.2vw, 2.5rem); font-weight: 800; line-height: 1.08; letter-spacing: -0.03em; text-wrap: balance; text-shadow: 0 2px 12px rgba(0, 0, 0, 0.7); }
+/* O ouro do título: um brilho que atravessa as letras de tempos em tempos. */
+.ind-topo h1 em { font-style: normal; color: #f4cf7c; background: linear-gradient(100deg, #e0aa45 0%, #f4cf7c 35%, #fff6cf 50%, #f4cf7c 65%, #e0aa45 100%) 0 0 / 250% 100%;
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; animation: ind-ouro 4.5s ease-in-out infinite; }
+@keyframes ind-ouro { 0%, 55% { background-position: 100% 0; } 100% { background-position: -150% 0; } }
+.ind-topo__texto p:last-child { margin: 0; max-width: 46ch; color: #e9dcc0; line-height: 1.5; text-shadow: 0 1px 8px rgba(0, 0, 0, 0.8); }
 
-/* O palco: chão de tábuas e a luz da lareira, como nas fichas da Sala dos bichos. */
-.ind-palco { position: relative; isolation: isolate; display: flex; align-items: flex-end; justify-content: center; gap: 0.5rem; min-height: 15rem; padding: 0 1rem 1.4rem; overflow: hidden;
-  background: radial-gradient(70% 80% at 30% 75%, rgba(255, 150, 60, 0.3), transparent 70%), linear-gradient(180deg, #121a17 0%, #18211d 68%, #2a1d12 68%, #1b130c 100%); }
-.ind-palco::after { content: ""; position: absolute; inset: auto 0 0; height: 32%; pointer-events: none; z-index: -1; background: repeating-linear-gradient(90deg, transparent 0 46px, rgba(0, 0, 0, 0.35) 46px 48px); }
-.ind-palco__lareira { position: absolute; left: 18%; bottom: 0.8rem; width: 7rem; height: 7rem; border-radius: 50%; z-index: -1; pointer-events: none;
-  background: radial-gradient(closest-side, rgba(255, 200, 120, 0.65), rgba(255, 130, 50, 0.22) 55%, transparent); mix-blend-mode: screen; animation: ind-lareira 2.6s steps(4, end) infinite; }
-@keyframes ind-lareira { 0%, 100% { opacity: 0.8; transform: scale(1); } 40% { opacity: 1; transform: scale(1.06); } 70% { opacity: 0.86; transform: scale(0.97); } }
-.ind-bicho { position: relative; display: grid; place-items: end center; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; transition: transform 0.18s ease; }
+/* A cena fica presa ao canto direito de baixo, sempre na proporção da pintura (3:1): os bichos usam % dela. */
+.ind-cena { position: absolute; inset: 0; z-index: 0; }
+.ind-cena__arte { position: absolute; right: 0; bottom: 0; height: 100%; aspect-ratio: 3 / 1; min-width: 100%; background: var(--arte) right bottom / cover no-repeat; image-rendering: pixelated; }
+.ind-topo::after { content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none; background: linear-gradient(90deg, rgba(7, 5, 6, 0.88) 0%, rgba(7, 5, 6, 0.6) 34%, transparent 58%); }
+.ind-bicho { position: absolute; z-index: 3; display: grid; place-items: end center; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; transition: transform 0.18s ease;
+  filter: sepia(0.28) saturate(1.25) brightness(1.04) drop-shadow(0 0 7px rgba(255, 196, 90, 0.5)); }
 .ind-bicho:hover { transform: translateY(-3px); }
-.ind-bicho:focus-visible { outline: 2px solid var(--mundo-ouro); outline-offset: 4px; border-radius: 8px; }
-.ind-bicho--esqueleto .mascote { width: 136px; }
-.ind-bicho--gato .gato-pixel { width: 144px; height: 108px; }
-.ind-bicho--coruja { display: flex; flex-direction: column; align-items: center; }
-.ind-bicho--coruja .coruja-pixel { --coruja-escala: 2.5; }
-/* O caixote em que a coruja pousa: madeira em pixel, com tábuas e cantoneiras. */
-.ind-caixote { display: block; width: 58px; height: 40px; margin-top: -2px;
-  background: linear-gradient(#3d2512, #3d2512) 0 0 / 100% 3px no-repeat, linear-gradient(#3d2512, #3d2512) 0 100% / 100% 3px no-repeat,
-    repeating-linear-gradient(180deg, #8a5226 0 11px, #6b3e1c 11px 13px);
-  box-shadow: 0 0 0 2px #1b1208, inset 4px 0 0 #b47a45, inset -4px 0 0 #5c3415; }
-.ind-balao { position: absolute; left: 50%; top: 0.9rem; z-index: 2; width: min(90%, 18rem); margin: 0; padding: 0.55rem 0.75rem; transform: translateX(-50%); cursor: pointer;
+.ind-bicho:focus-visible, .ind-espada:focus-visible { outline: 2px solid #f4cf7c; outline-offset: 4px; border-radius: 8px; }
+.ind-bicho--esqueleto { left: 74.2%; bottom: 47%; width: 8.4%; }
+.ind-bicho--esqueleto .mascote { width: 100%; }
+.ind-bicho--gato { left: 79%; bottom: 9%; width: 9.5%; }
+.ind-bicho--gato .gato-pixel { width: 100%; height: auto; aspect-ratio: 4 / 3; }
+.ind-bicho--coruja { left: 90.2%; bottom: 43%; }
+.ind-bicho--coruja .coruja-pixel { --coruja-escala: 2; }
+.ind-espada { position: absolute; z-index: 4; left: 71.3%; top: 24%; width: 4.2%; height: 26%; padding: 0; border: 0; background: none; cursor: pointer; }
+/* Cintilar do ouro por cima da pintura. */
+.ind-cena__cintila i { position: absolute; z-index: 2; width: 3px; height: 3px; background: #fffbe0; box-shadow: 0 0 6px 2px rgba(255, 214, 120, 0.9); opacity: 0; animation: ind-cintila 3.8s var(--d) ease-in-out infinite; }
+@keyframes ind-cintila { 0%, 70%, 100% { opacity: 0; transform: scale(0.4) rotate(0); } 80% { opacity: 1; transform: scale(1.5) rotate(45deg); } }
+/* Chuva de moedas em pixel. */
+.ind-chuva { position: absolute; inset: 0; z-index: 4; pointer-events: none; overflow: hidden; }
+.ind-chuva i { position: absolute; left: var(--x); top: -8%; width: 10px; height: 10px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #fff6c0 0 18%, #f4c64a 20% 60%, #a8661a 62%);
+  box-shadow: 0 0 0 2px #3d2804, 0 0 8px rgba(255, 200, 90, 0.7); animation: ind-cai var(--t) var(--d) cubic-bezier(0.4, 0, 0.9, 0.6) both; }
+@keyframes ind-cai { 0% { transform: translateY(0) scaleX(1); opacity: 0; } 10% { opacity: 1; } 50% { transform: translateY(12rem) scaleX(0.2); } 100% { transform: translateY(24rem) scaleX(1); opacity: 0; } }
+.ind-balao { position: absolute; right: 4%; top: 6%; z-index: 5; width: min(46%, 17rem); margin: 0; padding: 0.55rem 0.75rem; cursor: pointer; image-rendering: auto;
   background: #fbf3df; color: #1b1208; font-size: var(--corpo-menor); font-weight: 650; line-height: 1.4; text-align: center; border-radius: 10px;
-  box-shadow: 0 0 0 2px #1b1208, 3px 3px 0 2px rgba(0, 0, 0, 0.3); animation: ind-balao 0.25s steps(3); }
-@keyframes ind-balao { from { opacity: 0; transform: translate(-50%, 6px); } }
+  box-shadow: 0 0 0 2px #1b1208, 0 0 0 4px #e0aa45, 3px 5px 0 4px rgba(0, 0, 0, 0.35); animation: ind-balao 0.25s steps(3); }
+@keyframes ind-balao { from { opacity: 0; transform: translateY(6px); } }
 
 /* ---------- Folhas ---------- */
 .ind-grade { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: var(--e-5); }
 .ind-folha { display: grid; align-content: start; gap: var(--e-3); padding: clamp(1.1rem, 3vw, 1.6rem); }
 .ind-folha h2 { margin: 0; font-family: var(--fonte-marca); font-size: 1.2rem; font-weight: 800; letter-spacing: -0.015em; }
+.ind-folha { position: relative; }
+.ind-folha::before { content: ""; position: absolute; left: 1.2rem; right: 1.2rem; top: -1px; height: 3px; border-radius: 0 0 3px 3px; background: linear-gradient(90deg, transparent, #e0aa45 20%, #f4cf7c 50%, #e0aa45 80%, transparent); }
+.ind-folha h2 { display: flex; align-items: center; gap: 0.5rem; }
+.ind-folha h2::before { content: ""; flex: none; width: 9px; height: 9px; transform: rotate(45deg); background: #f4cf7c; box-shadow: 0 0 0 2px #7a5710; }
+/* O bilhete dourado do link. */
+.ind .ind-folha--bilhete { background: radial-gradient(80% 70% at 0 0, rgba(244, 199, 90, 0.2), transparent 65%), linear-gradient(180deg, #24170a, #110b06); border-color: color-mix(in srgb, var(--ouro) 55%, var(--traco)); }
+.ind-folha--bilhete .ind-link { background: var(--superficie); border: 2px dashed color-mix(in srgb, var(--ouro) 70%, var(--traco-forte)); }
+/* O tesouro: dias ganhos em ouro, grande, com as 12 moedas. */
+.ind .ind-folha--ouro { background: radial-gradient(120% 90% at 100% 0%, rgba(244, 199, 90, 0.22), transparent 62%), linear-gradient(180deg, #24170a, #110b06); border-color: color-mix(in srgb, var(--ouro) 55%, var(--traco)); }
+.ind-cofre { display: grid; justify-items: start; gap: 0.1rem; }
+.ind-cofre__rotulo { font-size: var(--meta); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ouro-texto); }
+.ind-cofre__numero { font-family: var(--fonte-marca); font-size: clamp(3rem, 2rem + 4vw, 4.2rem); font-weight: 800; line-height: 0.95; letter-spacing: -0.04em; font-variant-numeric: tabular-nums;
+  color: var(--ouro-texto); background: linear-gradient(180deg, #f7d98a 0%, #e0aa45 45%, #a8741a 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 0 rgba(107, 74, 12, 0.35)); }
+.ind-cofre__sub { color: var(--texto-2); font-size: var(--corpo-menor); }
+.ind-moedas { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 4px; max-width: 21rem; }
+.ind-moedas i { aspect-ratio: 1; border-radius: 50%; background: var(--superficie-2); box-shadow: inset 0 0 0 2px var(--traco-forte); }
+.ind-moedas .ind-moedas--cheia { background: radial-gradient(circle at 35% 30%, #fff6c0 0 16%, #f4c64a 18% 58%, #c8861e 60%); box-shadow: inset 0 0 0 2px #7a5710, 0 0 8px rgba(244, 199, 90, 0.7); animation: ind-moeda-entra 0.5s var(--d) cubic-bezier(0.2, 1.4, 0.4, 1) both; }
+@keyframes ind-moeda-entra { from { transform: translateY(-10px) scale(0.3); opacity: 0; } }
+.ind-moedinha { display: inline-block; width: 0.7em; height: 0.7em; margin-right: 0.3em; border-radius: 50%; vertical-align: -0.02em; background: radial-gradient(circle at 35% 30%, #fff6c0 0 16%, #f4c64a 18% 58%, #c8861e 60%); box-shadow: 0 0 0 1.5px #7a5710; }
+.ind-moeda { display: grid; place-items: center; width: 2.1rem; height: 2.1rem; border-radius: 50%; font-family: var(--fonte-marca); font-weight: 800; color: #3d2804;
+  background: radial-gradient(circle at 35% 28%, #fff6c0 0 14%, #f4c64a 16% 62%, #c8861e 64%); box-shadow: inset 0 0 0 2px #7a5710, 0 2px 0 #7a5710, 0 0 10px rgba(244, 199, 90, 0.45); }
 .ind-link { padding: 0.75rem 0.9rem; border-radius: var(--raio-controle); background: var(--superficie-2); border: 1px dashed var(--traco-forte); overflow-wrap: anywhere; }
 .ind-link code { font-size: 0.95rem; }
-.ind-acoes { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.ind-acoes .botao, .ind-acoes__whatsapp { display: inline-flex; align-items: center; gap: 0.45rem; min-height: 44px; }
-.ind-acoes__whatsapp { padding: 0.55rem 1.1rem; border-radius: var(--raio-controle); background: #1fa855; color: #fff !important; font-weight: 700; text-decoration: none; }
-.ind-acoes__whatsapp:hover { background: #18914a; }
 .ind-nota { margin: 0; }
 
-.ind-placar { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.6rem; margin: 0; }
+.ind-placar { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; margin: 0; }
 .ind-placar div { padding: 0.75rem 0.85rem; border-radius: var(--raio-controle); background: var(--superficie-2); border: 1px solid var(--traco); }
 .ind-placar dt { font-size: var(--meta); font-weight: 700; color: var(--texto-2); }
 .ind-placar dd { margin: 0.15rem 0 0; font-family: var(--fonte-marca); font-weight: 800; font-size: 1.9rem; line-height: 1.1; letter-spacing: -0.02em; color: var(--texto); font-variant-numeric: tabular-nums; }
@@ -83,20 +119,142 @@
 .ind-passos { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.85rem; }
 .ind-passos li { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 0.85rem; align-items: start; }
 .ind-passos strong { display: block; }
-.ind-passos span:not(.numero-passo) { display: block; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
+.ind-passos span:not(.ind-moeda) { display: block; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
 
-@media (prefers-reduced-motion: reduce) { .ind-palco__lareira, .ind-balao { animation: none; } .ind-bicho { transition: none; } }
+
+/* ---------- O dragão que quebra a quarta parede (DragaoViajante): uma camada por cima da página ---------- */
+/* A âncora é o ponto dos pés; o desenho (160 x 112, pés em 104, corpo em 62,5% da largura) se arruma em volta. */
+.ind-ninho { position: absolute; left: 61%; bottom: 19%; width: 1px; height: 1px; }
+.ind-voador { --w: 256px; position: absolute; left: 0; top: 0; z-index: 6; width: 0; height: 0; pointer-events: none; transition: transform var(--voo, 0s) cubic-bezier(0.45, 0.05, 0.4, 1); will-change: transform; }
+.ind-voador__arco { position: absolute; left: 0; top: 0; display: block; }
+.ind-voador--voando .ind-voador__arco { animation: ind-arco var(--voo, 1.6s) ease-in-out both; }
+@keyframes ind-arco { 0% { transform: translateY(0) scale(1); } 45% { transform: translateY(-110px) scale(1.14); } 100% { transform: translateY(0) scale(1); } }
+.ind-voador__botao { position: absolute; left: calc(var(--w) * -0.625); top: calc(var(--w) * -0.65); width: var(--w); padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; pointer-events: auto;
+  filter: drop-shadow(0 10px 6px rgba(0, 0, 0, 0.45)) drop-shadow(0 0 12px rgba(255, 150, 50, 0.5)); }
+.ind-voador--voando .ind-voador__botao { pointer-events: none; filter: drop-shadow(0 26px 10px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 14px rgba(255, 150, 50, 0.55)); }
+.ind-voador--virado .ind-voador__botao { left: calc(var(--w) * -0.375); transform: scaleX(-1); }
+.ind-voador__botao .dragao-pixel { display: block; width: 100%; }
+.ind-voador__botao:focus-visible { outline: 2px solid #f4cf7c; outline-offset: 2px; border-radius: 10px; }
+.ind-voador__fala { position: absolute; left: 0; bottom: calc(var(--w) * 0.66); width: 15rem; margin: 0 0 0 -7.5rem; padding: 0.55rem 0.75rem; pointer-events: auto; cursor: pointer;
+  background: #fbf3df; color: #1b1208; font-size: var(--corpo-menor); font-weight: 650; line-height: 1.4; text-align: center; border-radius: 10px;
+  box-shadow: 0 0 0 2px #1b1208, 0 0 0 4px #e0aa45, 3px 5px 0 4px rgba(0, 0, 0, 0.35); animation: ind-balao 0.25s steps(3); }
+@media (max-width: 43.75rem) { .ind-voador { --w: 150px; } .ind-voador__fala { width: 12rem; margin-left: -6rem; } }
+
+/* ---------- Os botões de envio ---------- */
+.ind-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; }
+.ind-acoes > * { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 46px; padding: 0.55rem 1.15rem; border-radius: var(--raio-controle); font: inherit; font-weight: 750; text-decoration: none; cursor: pointer; transition: transform 0.12s ease, filter 0.12s ease; }
+.ind-acoes > *:active { transform: translateY(2px); }
+.ind-acoes__whatsapp { border: 0; background: #1fa855; color: #fff !important; box-shadow: 0 3px 0 #13703a; }
+.ind-acoes__whatsapp:hover { background: #18914a; }
+.ind-acoes__ouro { position: relative; overflow: hidden; border: 0; color: #2a1a04 !important; background: linear-gradient(180deg, #fbe7a6 0%, #f4c64a 48%, #d89a2a 100%); box-shadow: inset 0 0 0 1.5px #7a5710, 0 3px 0 #7a5710, 0 0 16px rgba(244, 199, 90, 0.4); }
+.ind-acoes__ouro::after { content: ""; position: absolute; inset: 0; background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, 0.75) 50%, transparent 65%) -150% 0 / 250% 100% no-repeat; animation: ind-brilho 3.6s ease-in-out infinite; pointer-events: none; }
+@keyframes ind-brilho { 0%, 60% { background-position: -150% 0; } 100% { background-position: 250% 0; } }
+.ind-acoes__ouro:hover { filter: brightness(1.06); }
+.ind-acoes__mais { border: 1.5px solid var(--traco-forte); background: transparent; color: var(--texto); }
+.ind-acoes--grande { margin-top: 0.5rem; }
+.ind-acoes--grande > * { min-height: 50px; font-size: 1.02rem; }
+:is(.ind-topo, .ind-fecho) .ind-acoes__mais { color: #f4cf7c; border-color: rgba(244, 207, 124, 0.55); }
+.ind-previa summary { cursor: pointer; color: var(--texto-2); font-size: var(--corpo-menor); font-weight: 650; }
+.ind-previa p { margin: 0.6rem 0 0; padding: 0.75rem 0.9rem; border-radius: 12px 12px 12px 2px; background: color-mix(in srgb, #1fa855 12%, var(--superficie)); border: 1px solid color-mix(in srgb, #1fa855 35%, var(--traco)); font-size: var(--corpo-menor); line-height: 1.5; white-space: pre-line; overflow-wrap: anywhere; }
+
+/* ---------- A conta: 1, 4 e 12 amigos ---------- */
+.ind-conta { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-3); }
+.ind-conta li { position: relative; display: grid; justify-items: center; gap: 0.1rem; padding: 1rem 0.6rem 0.9rem; text-align: center; border-radius: var(--mundo-raio, 14px); color: #fff6e2;
+  background: radial-gradient(90% 120% at 50% 0%, rgba(244, 199, 90, 0.28), transparent 62%), linear-gradient(180deg, #24170a, #120b05); box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.5), 0 10px 22px -14px rgba(120, 80, 10, 0.7); }
+.ind-conta li:last-child { box-shadow: inset 0 0 0 2px #f4cf7c, 0 0 26px -4px rgba(244, 199, 90, 0.65); }
+.ind-conta__amigos { color: #f4cf7c; font-size: var(--meta); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; }
+.ind-conta strong { font-family: var(--fonte-marca); font-size: clamp(2rem, 1.3rem + 3vw, 3.1rem); font-weight: 800; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums;
+  background: linear-gradient(180deg, #fff3c4 0%, #f4c64a 50%, #c8861e 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.ind-conta strong small { font-size: 0.42em; letter-spacing: 0; }
+.ind-conta__nota { color: #d9c9a6; font-size: var(--corpo-menor); }
+
+/* ---------- A vitrine: o que os 7 dias liberam ---------- */
+.ind-vitrine { display: grid; gap: var(--e-4); padding: clamp(1.2rem, 3vw, 1.9rem); border-radius: var(--mundo-raio, 14px); color: #fff6e2;
+  background: radial-gradient(70% 55% at 50% 0%, rgba(244, 199, 90, 0.2), transparent 70%), radial-gradient(circle at 1px 1px, rgba(255, 220, 150, 0.07) 1px, transparent 0) 0 0 / 14px 14px, linear-gradient(180deg, #1d1309, #0c0805);
+  box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.45), 0 22px 48px -26px rgba(120, 80, 10, 0.6); }
+.ind-vitrine__cabeca { display: grid; gap: 0.4rem; justify-items: center; text-align: center; }
+.ind-sobre { margin: 0; color: #f4cf7c; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.ind-vitrine h2 { margin: 0; max-width: 24ch; font-family: var(--fonte-marca); font-size: clamp(1.45rem, 1rem + 1.8vw, 2.1rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.025em; text-wrap: balance; }
+.ind-vitrine h2 em { font-style: normal; color: #f4cf7c; }
+.ind-vitrine__cabeca > p:last-child { margin: 0; max-width: 52ch; color: #d9c9a6; line-height: 1.5; }
+.ind-beneficios { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.7rem; }
+.ind-beneficios li { position: relative; display: grid; align-content: start; gap: 0.6rem; padding: 0.95rem 0.9rem 1rem; border-radius: 12px; background: linear-gradient(180deg, rgba(255, 236, 190, 0.09), rgba(255, 236, 190, 0.03)); box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.28);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease; }
+.ind-beneficios li:hover { transform: translateY(-3px); background: linear-gradient(180deg, rgba(255, 236, 190, 0.16), rgba(255, 236, 190, 0.05)); box-shadow: inset 0 0 0 1.5px #f4cf7c, 0 12px 24px -14px rgba(244, 199, 90, 0.7); }
+.ind-beneficios img { image-rendering: pixelated; filter: drop-shadow(0 0 8px rgba(255, 200, 90, 0.45)) drop-shadow(2px 3px 0 rgba(0, 0, 0, 0.4)); }
+.ind-beneficios strong { display: block; margin-bottom: 0.2rem; font-family: var(--fonte-marca); font-size: 1.02rem; font-weight: 800; letter-spacing: -0.01em; color: #fff6e2; }
+.ind-beneficios span { display: block; color: #d9c9a6; font-size: var(--corpo-menor); line-height: 1.42; }
+.ind-javem { display: grid; gap: 0.6rem; padding-top: var(--e-3); border-top: 1px dashed rgba(244, 207, 124, 0.35); }
+.ind-javem p { margin: 0; color: #d9c9a6; font-size: var(--corpo-menor); }
+.ind-javem p strong { color: #fff6e2; }
+.ind-javem ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.45rem; }
+.ind-javem li { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0.75rem 0.3rem 0.45rem; border-radius: 999px; background: rgba(255, 236, 190, 0.08); box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.3); font-size: var(--corpo-menor); font-weight: 650; }
+.ind-javem img { image-rendering: pixelated; }
+
+/* ---------- O fecho: o dragão dorme no ouro até o link sair ---------- */
+.ind-fecho { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0.5rem 1.2rem; padding: clamp(1rem, 2.6vw, 1.5rem); border-radius: var(--mundo-raio, 14px); color: #fff6e2;
+  background: radial-gradient(60% 140% at 0% 100%, rgba(255, 150, 40, 0.3), transparent 65%), linear-gradient(120deg, #2a1608, #120b05 70%); box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.5), 0 0 30px -10px rgba(244, 160, 60, 0.6); }
+.ind-fecho h2 { margin: 0 0 0.25rem; font-family: var(--fonte-marca); font-size: clamp(1.2rem, 0.9rem + 1.2vw, 1.6rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+.ind-fecho p { margin: 0; color: #d9c9a6; font-size: var(--corpo-menor); line-height: 1.45; max-width: 44ch; }
+
+/* ---------- As margens: estandartes, moedas subindo e ouro nos cantos (só em telas com margem sobrando) ---------- */
+.ind-margens { display: none; }
+@media (min-width: 80rem) {
+  .ind-margens { display: block; position: absolute; inset: 0; pointer-events: none; }
+  .ind-margem { position: absolute; top: calc(-1 * var(--e-4)); bottom: 0; width: calc((100vw - 62rem) / 2 - 0.9rem); max-width: 17rem; }
+  .ind-margem--esq { right: calc(100% + 0.4rem); }
+  .ind-margem--dir { left: calc(100% + 0.4rem); }
+  .ind-margem__ar { position: sticky; top: 0; height: 100vh; height: 100dvh; overflow: hidden; }
+  .ind-margem__ar::before { content: ""; position: absolute; inset: 0; background: radial-gradient(90% 46% at 50% 100%, rgba(244, 199, 90, 0.34), transparent 70%); }
+  .ind-margem img { position: absolute; bottom: 0; left: 0; width: 135%; max-width: none; height: auto; image-rendering: pixelated; filter: drop-shadow(0 0 18px rgba(244, 199, 90, 0.45)); }
+  .ind-margem--esq .ind-margem__ar { -webkit-mask-image: linear-gradient(90deg, #000 62%, transparent); mask-image: linear-gradient(90deg, #000 62%, transparent); }
+  .ind-margem--dir .ind-margem__ar { -webkit-mask-image: linear-gradient(270deg, #000 62%, transparent); mask-image: linear-gradient(270deg, #000 62%, transparent); }
+  .ind-margem--esq img { left: auto; right: -8%; }
+  .ind-margem--dir img { left: -8%; transform: scaleX(-1); }
+  /* O estandarte: haste de ouro, pano carmim com filete e o losango do site. */
+  .ind-estandarte { position: absolute; top: 5.2rem; left: 50%; width: 3.4rem; height: 9.5rem; margin-left: -1.7rem; transform-origin: 50% 0; animation: ind-pano 5.5s ease-in-out infinite alternate;
+    background: linear-gradient(90deg, #6d1218, #b0242c 30%, #8a1a20 62%, #5a0e14); clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 84%, 0 100%); box-shadow: inset 0 0 0 3px #e0aa45, inset 0 0 0 5px #5a0e14; }
+  .ind-estandarte::before { content: ""; position: absolute; left: -0.5rem; right: -0.5rem; top: 0; height: 6px; border-radius: 3px; background: linear-gradient(180deg, #fff3c4, #e0aa45 45%, #7a5710); }
+  .ind-estandarte i { position: absolute; left: 50%; top: 38%; width: 1.1rem; height: 1.1rem; margin: -0.55rem 0 0 -0.55rem; transform: rotate(45deg); background: linear-gradient(135deg, #fff3c4, #f4c64a 50%, #c8861e); box-shadow: 0 0 0 2px #5a0e14, 0 0 10px rgba(244, 199, 90, 0.7); }
+  .ind-margem--dir .ind-estandarte { animation-delay: -2.4s; }
+  @keyframes ind-pano { from { transform: rotate(-1.6deg) skewX(1deg); } to { transform: rotate(1.6deg) skewX(-1deg); } }
+  .ind-margem b { position: absolute; left: var(--x); bottom: 14%; width: 9px; height: 9px; border-radius: 50%; opacity: 0; background: radial-gradient(circle at 35% 30%, #fff6c0 0 18%, #f4c64a 20% 60%, #a8661a 62%); box-shadow: 0 0 0 1.5px #7a5710, 0 0 8px rgba(255, 200, 90, 0.8);
+    animation: ind-sobe var(--t) var(--d) linear infinite; }
+  @keyframes ind-sobe { 0% { transform: translateY(0) scaleX(1); opacity: 0; } 8% { opacity: 0.9; } 50% { transform: translateY(-34vh) scaleX(0.15); } 92% { opacity: 0.5; } 100% { transform: translateY(-68vh) scaleX(1); opacity: 0; } }
+}
+
+/* ---------- Regras de uso ---------- */
+.ind-regras__abre { margin: 0; color: var(--texto-2); line-height: 1.5; }
+.ind-regras { counter-reset: regra; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem 1.4rem; }
+.ind-regras li { counter-increment: regra; position: relative; padding: 0.15rem 0 0.15rem 2.3rem; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; }
+.ind-regras li::before { content: counter(regra); position: absolute; left: 0; top: 0.15rem; display: grid; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; font-family: var(--fonte-marca); font-size: 0.82rem; font-weight: 800; color: #f4cf7c; box-shadow: inset 0 0 0 1.5px rgba(244, 207, 124, 0.6); }
+.ind-regras strong { color: var(--texto); }
+@media (max-width: 52rem) { .ind-regras { grid-template-columns: minmax(0, 1fr); } }
+
+@media (prefers-reduced-motion: reduce) { .ind-estandarte, .ind-acoes__ouro::after, .ind-voador__arco { animation: none !important; } .ind-voador { transition: none; } .ind-margem b { display: none; } .ind-topo h1 em, .ind-cena__cintila i, .ind-balao, .ind-moedas .ind-moedas--cheia { animation: none; } .ind-chuva { display: none; } .ind-bicho { transition: none; } }
+@media (max-width: 64rem) { .ind-beneficios { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 52rem) {
-  .ind-topo, .ind-grade { grid-template-columns: minmax(0, 1fr); }
-  .ind-palco { min-height: 13rem; }
+  .ind-grade { grid-template-columns: minmax(0, 1fr); }
+  .ind-fecho { grid-template-columns: minmax(0, 1fr); }
+  /* No celular a cena vai para cima (a metade direita da pintura) e o texto fica embaixo, no escuro. */
+  .ind-topo { display: flex; flex-direction: column; align-items: stretch; min-height: 0; }
+  .ind-cena { order: -1; flex: none; }
+  .ind-cena { position: relative; inset: auto; height: 13.5rem; overflow: hidden; }
+  .ind-cena__arte { min-width: 0; background-image: var(--arte-960); }
+  .ind-topo::after { background: linear-gradient(180deg, transparent 0, transparent 9.5rem, #070506 13.5rem); }
+  .ind-topo__texto { width: auto; padding-top: 0.4rem; }
+  .ind-balao { width: min(70%, 16rem); }
 }
 @media (max-width: 34rem) {
+  .ind-beneficios { grid-template-columns: minmax(0, 1fr); }
+  .ind-beneficios li { grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: 0.85rem; }
+  .ind-conta { gap: 0.4rem; }
+  .ind-conta li { padding: 0.75rem 0.3rem; }
+  .ind-conta__nota { font-size: var(--meta); }
+  .ind-fecho { grid-template-columns: minmax(0, 1fr); justify-items: start; }
   .ind-placar { gap: 0.4rem; }
   .ind-placar div { padding: 0.6rem 0.55rem; }
   .ind-placar dd { font-size: 1.5rem; }
-  .ind-acoes > * { flex: 1 1 100%; justify-content: center; }
-  .ind-bicho--esqueleto .mascote { width: 100px; }
-  .ind-bicho--gato .gato-pixel { width: 104px; height: 78px; }
-  .ind-bicho--coruja .coruja-pixel { --coruja-escala: 2; }
-  .ind-caixote { width: 46px; height: 32px; }
+  .ind-acoes > * { flex: 1 1 100%; }
+  .ind-bicho--coruja .coruja-pixel { --coruja-escala: 1.5; }
 }

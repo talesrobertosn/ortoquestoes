@@ -616,6 +616,9 @@ export function Inicio() {
             <div className="jn-quadro"><QuadroAtlas /></div>
           </div>
 
+          {/* Indique e ganhe subiu (Tales, 10/11/2026): logo depois da galeria, com o botão pegando fogo. */}
+          <div className="jn-quadro jn-quadro--indique"><SecaoIndique /></div>
+
           <section className="jn-temas" id="hd-temas" aria-labelledby="ip-temas-titulo">
             <header className="jn-subcabeca">
               <h3 id="ip-temas-titulo">Treinar por tema</h3>
@@ -659,10 +662,7 @@ export function Inicio() {
           {/* O fim da página: a assinatura numa faixa curta e, embaixo, indicação e Instagram lado a lado. */}
           <div className="jn-fim">
             <div className="jn-quadro jn-quadro--faixa"><CartaoPlanos /></div>
-            <div className="jn-fim__par">
-              <div className="jn-quadro"><SecaoIndique /></div>
-              <ConviteInstagram />
-            </div>
+            <ConviteInstagram />
           </div>
         </section>
       </>}

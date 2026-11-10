@@ -34,6 +34,8 @@ const RARIDADES: Raridade[] = [
   { id: 'mimico', nome: 'O baú suspeito', pista: 'Fique na página inicial: um baú aparece e o gato desconfia.', de: 'gato' },
   { id: 'osso-trocado', nome: 'O osso trocado', pista: 'Fique na página inicial: o esqueleto se monta com uma costela fora do lugar.', de: 'esqueleto' },
   { id: 'meia-noite', nome: 'O gato da meia-noite', pista: 'Abra a página inicial entre meia-noite e uma da manhã.', de: 'gato' },
+  { id: 'tesouro-espada', nome: 'A espada do tesouro', pista: 'Na página Indique e ganhe, toque na espada no alto do ouro.', de: 'esqueleto' },
+  { id: 'dragao-fogo', nome: 'O fogo do dragão', pista: 'Na página Indique e ganhe, toque no dragão em cima do ouro.', de: 'esqueleto' },
   { id: 'gato-recrutador', nome: 'O gato recrutador', pista: 'Na página Indique e ganhe, toque três vezes no gato.', de: 'gato' },
 ]
 
