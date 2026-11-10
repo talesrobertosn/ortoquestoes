@@ -53,10 +53,10 @@ export function AvisoTermos({ variante = 'faixa' }: { variante?: 'faixa' | 'cart
   return <section className={`aviso-termos aviso-termos--${variante} nao-imprime`} aria-labelledby="aviso-termos-titulo">
     <div className={variante === 'faixa' ? 'conteudo aviso-termos__interno' : 'aviso-termos__interno'}>
       <div className="aviso-termos__texto">
-        <h2 id="aviso-termos-titulo"><Icone nome="livro" tamanho={18} /> Atualizamos os Termos de Uso e as Condições da Assinatura</h2>
+        <h2 id="aviso-termos-titulo"><Icone nome="livro" tamanho={18} /> Nossos Termos ganharam uma versão nova</h2>
         <p>
-          A nova versão vale a partir de {dataDaVersao(VERSAO_TERMOS)}. Nada mudou em preços, planos, limites ou na garantia
-          de 7 dias. Sua conta continua funcionando normalmente enquanto você lê.
+          Vale a partir de {dataDaVersao(VERSAO_TERMOS)}. Preços, planos e a garantia de 7 dias continuam iguais,
+          e sua conta segue funcionando normalmente. Quando puder, dê uma olhada no que mudou:
         </p>
         <details className="aviso-termos__mudancas" open={variante === 'cartao'}>
           <summary>O que mudou, em resumo</summary>

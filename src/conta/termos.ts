@@ -25,8 +25,8 @@ export const VERSAO_CONDICOES_ASSINATURA = '2026-11-03'
  * reaceite e no topo dos dois documentos. Trocar junto com a versão.
  */
 export const MUDANCAS_TERMOS: readonly string[] = [
-  'Incluímos a OpenAI entre os serviços de medição de anúncios, com os pixels carregados apenas após o aceite no aviso de cookies.',
-  'Explicamos a correspondência automática da OpenAI: dados de cadastro presentes nos formulários podem ser transformados em hashes no navegador para associar conversões aos anúncios. Hashes são identificadores, não dados anônimos.',
+  'Além do Meta, agora usamos também a OpenAI para saber quais anúncios do Orto Questões trazem gente nova ao site. Isso só acontece se você tocar em "Aceitar" no aviso de cookies.',
+  'Com esse aceite, a OpenAI pode receber o e-mail do cadastro embaralhado em código (hash), só para ligar a sua visita ao anúncio que você viu. O código ainda identifica a pessoa, por isso pedimos a sua permissão.',
   'A escolha sobre cookies pode ser recusada ou revogada pelo rodapé, sem limitar o uso do site. Os eventos comerciais enviados pelo site não incluem CPF, respostas, desempenho ou assuntos estudados.',
 ]
 
