@@ -16,6 +16,8 @@ Referência aprovada: [docs/exemplos/mao-0853.json](docs/exemplos/mao-0853.json)
 (na mão, Green com página, só no computador com os livros). Prompt: [docs/prompts/comentarios-miniaula.md](docs/prompts/comentarios-miniaula.md);
 referência: [docs/exemplos/mao-2164.json](docs/exemplos/mao-2164.json).
 
+**Padrão a atingir nas miniaulas (Tales, 10/11/2026: "esse é o padrão que nós queremos"):** [docs/exemplos/pe-tornozelo-0107.json](docs/exemplos/pe-tornozelo-0107.json), com a figura do livro colocada onde o texto precisa dela (fonte na legenda, passo a passo acompanhando a figura), página em cada fato e o que mais de um livro diz do mesmo ponto. Comparar livros quando eles divergem ou se completam, sem virar molde. Figuras de livro com fonte são permitidas no leitor (resumo só quando necessário; comentário com mais liberdade); gráfico se recria como tabela.
+
 **Prompt mestre dos 284 temas (Tales, 31/10/2026: nunca parar, nunca perguntar, resolver sozinho):** [docs/prompts/PROMPT-MESTRE-284-TEMAS.md](docs/prompts/PROMPT-MESTRE-284-TEMAS.md).
 
 **Fluxo mestre (Tales, 31/10/2026):** antes de qualquer tema, leia [docs/biblioteca/FLUXO-MESTRE.md](docs/biblioteca/FLUXO-MESTRE.md): a meta dos 284 temas, o ciclo de dez etapas por tema, o padrão dos simulados no estilo da prova, os portões automáticos e as regras contra o decaimento.
