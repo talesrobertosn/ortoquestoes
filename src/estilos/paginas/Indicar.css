@@ -37,7 +37,7 @@
   filter: sepia(0.28) saturate(1.25) brightness(1.04) drop-shadow(0 0 7px rgba(255, 196, 90, 0.5)); }
 .ind-bicho:hover { transform: translateY(-3px); }
 .ind-bicho:focus-visible, .ind-espada:focus-visible { outline: 2px solid #f4cf7c; outline-offset: 4px; border-radius: 8px; }
-.ind-bicho--gato { left: 79.5%; bottom: 30%; width: 8.2%; }
+.ind-bicho--gato { left: 81.6%; bottom: 31%; width: 7.6%; }
 .ind-bicho--gato .gato-pixel { width: 100%; height: auto; aspect-ratio: 4 / 3; }
 .ind-bicho--coruja { left: 89.6%; bottom: 39%; width: 6.6%; }
 .ind-bicho--coruja .coruja-pixel { width: 100%; height: auto; aspect-ratio: 44 / 32; }
@@ -124,7 +124,7 @@
 /* ---------- O dragão que quebra a quarta parede (DragaoViajante): uma camada por cima da página ---------- */
 /* A âncora é o ponto dos pés; o quadro (224 x 112, pés em 104, corpo em 73% da largura, a esquerda é do fogo) se
    arruma em volta. O toque pega só o corpo, para o espaço vazio do fogo não cobrir os botões da página. */
-.ind-ninho { position: absolute; left: 66%; bottom: 17%; width: 1px; height: 1px; }
+.ind-ninho { position: absolute; left: 72.5%; bottom: 17%; width: 1px; height: 1px; }
 .ind-voador { --w: 350px; position: absolute; left: 0; top: 0; z-index: 6; width: 0; height: 0; pointer-events: none; transition: transform var(--voo, 0s) cubic-bezier(0.45, 0.05, 0.4, 1); will-change: transform; }
 .ind-voador__arco { position: absolute; left: 0; top: 0; display: block; }
 .ind-voador--voando .ind-voador__arco { animation: ind-arco var(--voo, 1.6s) ease-in-out both; }
@@ -264,6 +264,8 @@
 .ind .ind-topo h1, .ind .ind-vitrine h2, .ind .ind-fecho h2 { font-family: var(--fonte-pixel-titulo); font-weight: 400; letter-spacing: 0.01em; line-height: 0.95; }
 .ind .ind-topo h1 { font-size: clamp(2.2rem, 1.4rem + 2.6vw, 3.1rem); }
 .ind .ind-acoes { flex-wrap: nowrap; }
+/* No topo, "Mais opções" só no celular: no computador a fileira invadia a pintura e o ninho do dragão. */
+@media (min-width: 52.01rem) { .ind-topo .ind-pixel--fantasma { display: none; } }
 @media (max-width: 34rem) { .ind .ind-acoes { flex-wrap: wrap; } }
 .ind .ind-vitrine h2 { font-size: clamp(2rem, 1.3rem + 2.4vw, 2.9rem); }
 .ind .ind-fecho h2 { font-size: clamp(1.7rem, 1.2rem + 1.6vw, 2.3rem); }
