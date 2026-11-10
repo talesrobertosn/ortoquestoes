@@ -131,7 +131,37 @@ export const ROTEIROS: Roteiro[] = [
   { id: 'osso-trocado', peso: 1, raro: true, passos: [
     { quem: 'esqueleto', fala: 'Espera. Essa costela era do outro lado.', acao: { tipo: 'pose', id: 'raiox' } },
     { quem: 'coruja', fala: 'Décima segunda costela, flutuante. Pode deixar aí.' }] },
+  // Terceira leva (09/11/2026): o acampamento lembra as fogueiras de descanso dos jogos de aventura sombrios.
+  { id: 'nevoa', peso: 1, raro: true, passos: [
+    { quem: 'esqueleto', fala: 'Uma névoa no caminho. Do outro lado, o chefe: o TEOT.', acao: { tipo: 'pose', id: 'luneta' } },
+    { quem: 'coruja', fala: 'Respire. Quem revisa todo dia atravessa a névoa já sabendo o padrão do chefe.' },
+    { quem: 'gato', fala: 'Eu fico aqui. Névoa dá sono.', acao: { tipo: 'gato-pose', id: 'ronronando' } }] },
+  { id: 'mimico', peso: 1, raro: true, precisa: ['gato'], passos: [
+    { quem: 'esqueleto', fala: 'Um baú de questões sozinho no caminho. Suspeito.', acao: { tipo: 'pose', id: 'raiox' } },
+    { acao: { tipo: 'gato-pose', id: 'assustado' }, espera: 1400 },
+    { quem: 'gato', fala: 'É um mímico. Eu tentei dormir nele uma vez.' },
+    { quem: 'coruja', fala: 'Regra de aventureiro: baú bonito demais no meio do nada, desconfie.' }] },
+  { id: 'estus', peso: 1, raro: true, passos: [
+    { quem: 'esqueleto', fala: 'Um gole do frasco. Café, claro. Energia para mais três questões.', acao: { tipo: 'pose', id: 'cafe' } },
+    { quem: 'gato', fala: 'Tem refil? Para o sono, digo.' }] },
+  { id: 'meia-noite', peso: 6, raro: true, precisa: ['gato'], quando: (d) => d.getHours() === 0, passos: [
+    { quem: 'gato', fala: 'Meia-noite. A hora em que o gato estuda.', acao: { tipo: 'gato-pose', id: 'observando' } },
+    { quem: 'coruja', fala: 'Sério?' },
+    { quem: 'gato', fala: 'Não.', acao: { tipo: 'gato-pose', id: 'ronronando' } }] },
+  // Aparece sozinha de vez em quando e também por palavra digitada na página inicial (CenaDiorama).
+  { id: 'louva-o-sol', peso: 2, raro: true, passos: [
+    { quem: 'esqueleto', fala: 'Louvado seja o sol!', acao: { tipo: 'pose', id: 'comemora2' } },
+    { quem: 'coruja', fala: 'Braços para o alto, em V. Do jeito que manda a tradição.' },
+    { quem: 'gato', fala: 'O sol é ótimo. Dá para deitar nele.', acao: { tipo: 'gato-pose', id: 'derretido' } }] },
+  // O código antigo dos videogames, no teclado: cima, cima, baixo, baixo, esquerda, direita, esquerda, direita, B, A.
+  { id: 'codigo-antigo', peso: 2, raro: true, passos: [
+    { quem: 'esqueleto', fala: 'Código antigo aceito! Trinta vidas extras.', acao: { tipo: 'pose', id: 'comemora2' } },
+    { quem: 'gato', fala: 'Trinta vidas. Vou usar todas dormindo.', acao: { tipo: 'gato-pose', id: 'comemorando' } },
+    { quem: 'coruja', fala: 'Usem as vidas extras na revisão, por favor.' }] },
 ]
+
+/** O pedido de uma cena específica (segredos da página inicial): o diretor encena o roteiro com este id. */
+export const EVENTO_ROTEIRO = 'hd-roteiro'
 
 /** Quanto falta de tempo para ler uma fala: curtas ficam pelo menos 2,6 s. */
 export const tempoDeLer = (fala: string) => Math.max(2600, Math.min(7000, 1200 + fala.length * 55))

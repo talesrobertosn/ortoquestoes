@@ -460,3 +460,20 @@ Cada recurso é um item num espaço de inventário: moldura de ferro com cantos 
   background: linear-gradient(90deg, rgba(255, 246, 210, 0.9), transparent); }
 @keyframes hd-estrela { from { opacity: 0; translate: 0 0; } 15% { opacity: 1; } 85% { opacity: 1; } to { opacity: 0; translate: -12vw 5vw; } }
 @media (prefers-reduced-motion: reduce) { .hd-coruja--voando { transition: none; } .hd-gato--dourado::after, .hd-estrela-cadente { animation: none; display: none; } }
+
+/* ---------- A espada (09/11/2026): toque no punho, faíscas, frase e o segredo da faixa dourada ---------- */
+.hd-espada__toque { position: absolute; padding: 0; border: 0; background: none; cursor: pointer; pointer-events: auto; z-index: 2; -webkit-tap-highlight-color: transparent; }
+.hd-espada__toque:focus-visible { outline: 3px solid #ffe3a3; outline-offset: 2px; border-radius: 6px; }
+.hd-espada__faiscas { position: absolute; z-index: 2; pointer-events: none; }
+.hd-espada__faiscas i { position: absolute; left: 50%; top: 50%; width: 3px; height: 3px; background: #ffd27a; box-shadow: 0 0 6px 1px rgba(255, 190, 90, 0.9);
+  animation: hd-faisca 0.7s cubic-bezier(0.2, 0.8, 0.3, 1) both; transform: rotate(var(--a)) translateY(0); }
+@keyframes hd-faisca { to { opacity: 0; transform: rotate(var(--a)) translateY(-26px) scale(0.4); } }
+.hd-balao--espada { z-index: 6; }
+/* Cinco toques rápidos: a faixa dourada atravessa a cena, como a vitória sobre um chefe. */
+.hd-consolidado { position: fixed; left: 0; right: 0; top: 42%; z-index: 1200; display: grid; place-items: center; padding: 1.1rem 1rem; pointer-events: none;
+  background: linear-gradient(90deg, transparent, rgba(8, 6, 3, 0.78) 18%, rgba(8, 6, 3, 0.78) 82%, transparent);
+  animation: hd-consolidado 4.2s ease both; }
+.hd-consolidado span { font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif; font-size: clamp(1.3rem, 5vw, 3.2rem); letter-spacing: 0.12em; text-transform: uppercase;
+  color: #f4cf7c; text-shadow: 0 0 18px rgba(244, 207, 124, 0.55), 0 2px 0 #3d2804; text-align: center; }
+@keyframes hd-consolidado { 0% { opacity: 0; } 18%, 72% { opacity: 1; } 100% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .hd-consolidado { animation: none; } }
