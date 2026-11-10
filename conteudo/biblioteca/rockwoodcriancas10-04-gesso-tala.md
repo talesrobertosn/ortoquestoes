@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-04-gesso-tala
-versao: 3
+versao: 4
 titulo: Tratamento conservador e imobilização
 especialidade: pediatria
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 4 · Cast and Splint Immobilization
 autores: Vince W. Prusick e Vishwas Talwalkar
-fonte: Livros conferidos localmente em 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 4 (base); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 10 (Principles of Nonoperative Management of Fractures, de OLLIVERE e DUCKWORTH), com trechos dos caps. 26, 37, 53, 57 e 63; Campbell's Operative Orthopaedics, 15ª ed., cap. 58 (p. 2537 a 2539) e cap. 62 (p. 2784 e 2785); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 46, 49, 60 e 67. Os PDFs dos dois Rockwood e do HEBERT não trazem página impressa; nesses, as referências citam capítulo, seção, tabela e figura. As páginas do Campbell são as impressas.
+fonte: Livros conferidos localmente em 04/11/2026: Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 4 (base); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 10 (Principles of Nonoperative Management of Fractures, de OLLIVERE e DUCKWORTH), com trechos dos caps. 26, 37, 53, 57 e 63; Campbell's Operative Orthopaedics, 15ª ed., cap. 58 (p. 2537 a 2539) e cap. 62 (p. 2784 e 2785); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 46, 49, 60 e 67. Em 10/11/2026, conferidos ainda o Rockwood adulto, cap. 37 (seção Techniques: VELPEAU, tala em U, gesso pendente e órtese), e o HEBERT, cap. 46 (pinça de confeiteiro e VELPEAU). Os PDFs dos dois Rockwood e do HEBERT não trazem página impressa; nesses, as referências citam capítulo, seção, tabela e figura. As páginas do Campbell são as impressas.
 subtemas: Outras fraturas na criança; Tratamento conservador e imobilização
-resumo: Três princípios do gesso na fratura instável (dobradiça de partes moles, três pontos e pressão hidrostática: partes moles e diáfise não compressíveis ficam rígidas); dobradiça íntegra na baixa energia do jovem; cunha com dobradiça medial e varo no distal para a tíbia em valgo; BURKHALTER e JAMES com punho a 40 graus, MF a 70 a 90 e IF estendidas (colaterais estirados); PTB até o polo inferior da patela, longe do fibular comum; órtese de SARMIENTO por pressão hidrostática, contração muscular e gravidade; gesso pendente com alça curta em varo; tração 90-90 pelo iliopsoas e rigidez do joelho como pior complicação da tração; tenaz com 10 lb e 5 lb por segmento; halo acima do terço lateral da órbita; JEWETT de T6 a L3; gesso vence a órtese no paciente pouco colaborativo; na criança, regra do polegar, spica sem bota de tração, três As, queimadura acima de 50 °C e 24 camadas.
+resumo: Três princípios do gesso na fratura instável (dobradiça de partes moles, três pontos e pressão hidrostática: partes moles e diáfise não compressíveis ficam rígidas); dobradiça íntegra na baixa energia do jovem; cunha com dobradiça medial e varo no distal para a tíbia em valgo; BURKHALTER e JAMES com punho a 40 graus, MF a 70 a 90 e IF estendidas (colaterais estirados); PTB até o polo inferior da patela, longe do fibular comum; órtese de SARMIENTO por pressão hidrostática, contração muscular e gravidade; gesso pendente com alça curta em varo; tração 90-90 pelo iliopsoas e rigidez do joelho como pior complicação da tração; tenaz com 10 lb e 5 lb por segmento; halo acima do terço lateral da órbita; JEWETT de T6 a L3; gesso vence a órtese no paciente pouco colaborativo; na criança, regra do polegar, spica sem bota de tração, três As, queimadura acima de 50 °C e 24 camadas. No braço, só a órtese une os três princípios; VELPEAU e tala em U são provisórias, gesso pendente usa só a gravidade.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -193,6 +193,35 @@ Na série de **1.000** tíbias, SARMIENTO teve pseudartrose de **1,1%**; o encur
 | Articulações livres | ombro e cotovelo | joelho e tornozelo |
 | Série de SARMIENTO | 620 casos, pseudartrose 2,6% | 1.000 casos, pseudartrose 1,1% |
 | Falha mais | terço proximal, OTA A, obesos | expostas, encurtamento inicial maior que 12 mm, fíbula íntegra |
+!fim
+
+## Úmero: os quatro métodos lado a lado
+
+A prova costuma pôr a órtese entre os outros métodos conservadores do braço, e cada um deles usa só uma parte dos três princípios. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 37, seção Techniques), lista as opções: tração esquelética, VELPEAU, tipoia com faixa, gesso ou tala em abdução, tala de coaptação em U, gesso pendente e órtese funcional. A **tração** e o **gesso em abdução foram abandonados**, por serem difíceis de aplicar e de tolerar. Os outros continuam em uso, mas a órtese de SARMIENTO domina o tratamento conservador há duas ou três décadas; os demais servem sobretudo para a fase provisória.
+
+- **VELPEAU.** O enfaixamento prende o braço ao tórax, com o cotovelo fletido e o antebraço contra o peito. O Rockwood (cap. 37) diz que é difícil de tolerar por mais de alguns dias e deve dar lugar à órtese o quanto antes. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 46), indica-o mais para **crianças** e, no adulto e no idoso, para a fratura **sem desvio ou estável**.
+- **Pinça de confeiteiro (tala em U).** Vai da axila pela face medial, contorna o olécrano e sobe pela face lateral até o acrômio. Para o Rockwood, **afrouxa e escorrega** com facilidade e também deve ser trocada pela órtese; o HEBERT a descreve como a técnica do **primeiro atendimento**, colocada com o paciente inclinado para a frente, aproveitando o peso do membro, com tipoia collar and cuff, e lembra que alguns a mantêm até o fim.
+- **Gesso pendente.** Gesso do alto da fratura até o punho, cotovelo a 90 graus e antebraço neutro; a **gravidade** restaura comprimento e alinhamento, mas o gesso pode **distrair** a fratura se não for vigiado (Rockwood, cap. 37). O HEBERT o descreve como braquiopalmar.
+- **Órtese funcional.** Duas valvas com velcro sobre o ventre muscular, ombro e cotovelo livres, depois de no máximo 7 a 10 dias de imobilização provisória (Rockwood, cap. 37).
+
+Nenhum dos livros conferidos lista um **gesso circular axilopalmar** entre os métodos para a diáfise do úmero do adulto. O que separa a órtese dos outros é a junção dos três princípios que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, p. 2784), enumera: o gesso pendente usa a gravidade, mas não comprime o envoltório muscular com as articulações livres; o VELPEAU e a tala em U imobilizam, mas não trabalham com a contração muscular.
+
+!tabela Métodos conservadores da diáfise do úmero (Rockwood adulto, cap. 37; HEBERT, cap. 46; Campbell 15, cap. 62, p. 2784)
+| Método | Como segura | Papel |
+| --- | --- | --- |
+| VELPEAU | braço preso ao tórax, cotovelo fletido | poucos dias; criança; fratura estável |
+| Tala em U (pinça de confeiteiro) | tala da axila ao acrômio, em volta do cotovelo | provisória; afrouxa e escorrega |
+| Gesso pendente | peso do gesso e gravidade | encurtamento e desvio; risco de distração |
+| Órtese de SARMIENTO | efeito hidrostático, contração muscular ativa e gravidade | tratamento definitivo |
+| Tração esquelética e gesso em abdução | tração ou gesso com o braço abduzido | abandonados: difíceis de aplicar e tolerar |
+!fim
+
+!questoes relacionadas=conceitos-basicos-0008
+conceito: Só a órtese funcional de SARMIENTO trabalha com os três princípios ao mesmo tempo: efeito hidrostático (ou hidráulico) das partes moles comprimidas pelas valvas, contração muscular ativa com as articulações livres e gravidade.
+como: O TARO 2020 perguntou qual método conservador da diáfise umeral se baseia nesses três princípios e pôs como alternativas tipoia VELPEAU, gesso circular axilopalmar e tala tipo pinça de confeiteiro. É a mesma questão de `conceitos-basicos-0008`, ligada acima.
+armadilha: Tipoia VELPEAU: prende o braço ao tórax; é tolerada por poucos dias e não usa a contração muscular.
+armadilha: Pinça de confeiteiro: imobilização provisória do primeiro atendimento, que afrouxa e escorrega.
+armadilha: Gesso circular axilopalmar: não aparece entre os métodos da diáfise umeral do adulto nos livros conferidos; prender o cotovelo é o contrário da ideia funcional.
 !fim
 
 # Tração: cutânea e esquelética {radar=clinico}

@@ -1,6 +1,6 @@
 ---
 id: campbell15-outras-infeccoes
-versao: 1
+versao: 2
 titulo: Artrite séptica, tuberculose e outras infecções osteoarticulares
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 24 · Infectious Arthritis
 autores: Anthony A. Mascioli and Ashley L. Park
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulos 24 (Infectious Arthritis, p. 821 a 840) e 25 (Tuberculosis and Other Unusual Infections, de Kevin B. Cleveland, p. 839 a 864) lidos por inteiro, com trechos dos capítulos 4 (p. 281 a 285), 8 (p. 451 a 456), 22 (p. 783 a 799), 23 (p. 807 e 814), 49 (p. 1943 a 1946), 58 (p. 2524, 2525 e 2562) e 84 (Hand Infections, p. 3604 a 3623); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), capítulo 23 (Infections of the Musculoskeletal System, de Lawson A. B. Copley, p. 945 a 996); Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 29 (p. 832 a 853). As páginas citadas são as impressas.
-subtemas: Outras infecções osteoarticulares
-resumo: Artrite séptica (S. aureus em todas as idades, gonococo em 75% do adulto jovem sexualmente ativo, Kingella de 6 a 36 meses, metáfises intra-articulares de rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais, KOCHER, GÄCHTER), tuberculose (coluna 30% a 50%, POTT, cotovelo na ulna proximal), brucelose (quadril 53% no Tachdjian, axial no Campbell), Salmonella diafisária na falciforme, endocardite na espondilodiscite por enterococo, paroníquia crônica por Candida e gram-negativos, C. perfringens, biofilme exopolissacarídeo, sonicação, critérios de FRI e MSIS.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., capítulos 24 (Infectious Arthritis, p. 821 a 840) e 25 (Tuberculosis and Other Unusual Infections, de Kevin B. Cleveland, p. 839 a 864) lidos por inteiro, com trechos dos capítulos 4 (p. 281 a 285), 8 (p. 451 a 456), 22 (p. 783 a 799), 23 (p. 807 e 814), 49 (p. 1943 a 1946), 58 (p. 2524, 2525 e 2562) e 84 (Hand Infections, p. 3604 a 3623); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), capítulo 23 (Infections of the Musculoskeletal System, de Lawson A. B. Copley, p. 945 a 996); Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 29 (p. 832 a 853). Complemento de 10/11/2026: Campbell cap. 23 (Osteomyelitis, p. 818 e 819); Tachdjian cap. 23 (p. 973 a 975); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 12 (Musculoskeletal Infection, p. 413 e 414). As páginas citadas são as impressas.
+subtemas: Outras infecções osteoarticulares; Doenças autoinflamatórias ósseas
+resumo: Artrite séptica (S. aureus em todas as idades, gonococo em 75% do adulto jovem sexualmente ativo, Kingella de 6 a 36 meses, metáfises intra-articulares de rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais, KOCHER, GÄCHTER), tuberculose (coluna 30% a 50%, POTT, cotovelo na ulna proximal), brucelose (quadril 53% no Tachdjian, axial no Campbell), Salmonella diafisária na falciforme, endocardite na espondilodiscite por enterococo, paroníquia crônica por Candida e gram-negativos, C. perfringens, biofilme exopolissacarídeo, sonicação, critérios de FRI e MSIS; CRMO autoinflamatória de menina de 10 anos, tíbia, fêmur, clavícula, pé e corpo vertebral (pelve e costelas raras), cultura negativa, AINE e não antibiótico.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -531,6 +531,64 @@ conceito: Na infecção aguda da artroplastia do joelho, a cultura positiva para
 como: O TARO 2025 perguntou o significado do S. aureus na infecção aguda pós-artroplastia do joelho.
 armadilha: Tratar como contraindicação absoluta, ou como contraindicação à revisão em dois tempos, que é justamente a saída quando a retenção falha.
 !fim
+
+# Osteomielite crônica multifocal recorrente e SAPHO: a osteomielite sem germe {radar=confirmado}
+
+Tudo o que veio antes neste resumo tem um germe por trás. A **osteomielite crônica multifocal recorrente (CRMO)** é o contrário: parece infecção na clínica, na imagem e até na lâmina, mas a cultura é negativa e o antibiótico não resolve. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 818), chama-a de **doença óssea autoinflamatória não bacteriana**.
+
+## O que é e quem tem
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 973), atribui a descrição a **GIEDION, em 1972**, e coloca o pico de início aos **10 anos**, com predomínio feminino de **1,7:1 a 4:1**. O Campbell (p. 818) dá o mesmo pico, **4:1** para as meninas e incidência anual de **1 a 4 por milhão**, talvez subestimada. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 12, p. 413), dá **cerca de 70% de meninas** e define a doença pelo curso: exacerbações e remissões espontâneas por **pelo menos 6 meses**; sem lesões múltiplas ou recidiva, sugere o nome **osteomielite crônica não bacteriana**. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 29, p. 853 aprox.), lembra que há **início na idade adulta**.
+
+A doença anda com a pele e o intestino. O Tachdjian (p. 973) lista **pustulose palmoplantar**, artrite crônica, psoríase, doença inflamatória intestinal, pioderma gangrenoso, SWEET e acne grave, com **FR em 8% e HLA-B27 em 11%**; duas síndromes genéticas com CRMO (MAJEED e deficiência do antagonista do receptor de IL-1) apontam a **IL-1**. No Lovell and Winter (p. 413), JANSSON achou doença autoimune em **20%** dos pacientes, **FAN elevado em 30%** e doença autoimune em **40% das famílias**.
+
+## Onde: clavícula, pé e corpo vertebral ao lado do joelho
+
+A distribuição é o ponto que a prova cobra, e cada livro a dá de um jeito.
+
+!tabela Locais da CRMO em cada livro (Tachdjian cap. 23, p. 973; Campbell cap. 23, p. 818; Lovell and Winter cap. 12, p. 414)
+| Livro | Locais mais comuns | Raros ou ausentes | Multifocal |
+| --- | --- | --- | --- |
+| Tachdjian | tíbia, fêmur, **clavícula, pé, corpo vertebral** | **pelve e caixa torácica** | 93%, mediana de 3 lesões |
+| Campbell | metáfise de tíbia, fêmur e **clavícula**; **coluna** frequente | não cita | por critério, 2 ou mais lesões |
+| Lovell and Winter | metáfises proximal e distal de tíbia e fêmur, simétricas; rádio e ulna distais, fíbula distal, **metatarsos**, face medial da parede torácica anterior | não cita | mais de 90%, muitas vezes não simultâneo |
+!fim
+
+Os três livros convergem na **clavícula** e nas metáfises do joelho. O Tachdjian é o único que escreve, na mesma frase, os três locais do gabarito (clavícula, pé e corpo vertebral) e o único que chama pelve e costelas de raras. O Campbell põe a coluna entre os locais frequentes. O Lovell and Winter não fala em corpo vertebral entre os locais, mas lista a **cifose** entre as sequelas e descreve a clavícula com detalhe: osteomielite esclerosante crônica que começa na **extremidade medial**, com lucências e reação periosteal em **casca de cebola**.
+
+!questoes central=conceitos-basicos-0192
+conceito: A CRMO acomete sobretudo tíbia, fêmur, clavícula, pé e corpo vertebral, e raramente a pelve ou a caixa torácica (Tachdjian, cap. 23, p. 973); o Campbell destaca tíbia, fêmur, clavícula e coluna (p. 818).
+como: O TEPOP 2024 perguntou a distribuição comum, entre mão, tíbia e pelve; pelve, costelas e fêmur; clavícula, pé e corpo vertebral; e corpo vertebral, costelas e clavícula.
+armadilha: As alternativas erradas misturam um local verdadeiro com pelve, costelas ou mão; o Tachdjian chama pelve e caixa torácica de raras, e nenhum livro põe a mão entre os locais típicos.
+!fim
+
+## Clínica, laboratório e imagem
+
+São episódios de **dor, vermelhidão e aumento de volume** de início insidioso, que regridem sozinhos, com pouca limitação (Tachdjian, p. 973). No Lovell and Winter (p. 413), a dor local vem muitas vezes com **febre**, e no começo a CRMO é indistinguível da osteomielite bacteriana. O laboratório é parecido nos livros: **leucócitos normais** (ou pouco elevados no Campbell), **VHS e PCR altas** e **culturas de osso e sangue negativas**.
+
+A radiografia mostra lucências metafisárias **excêntricas e mal delimitadas junto à fise**, que podem cruzar para a epífise, e **esclerose na cura**; nos ossos tubulares pequenos e chatos aparece reação periosteal precoce, que imita leucemia, EWING e granuloma eosinofílico (Lovell and Winter, p. 413 e 414). O Campbell (p. 818) acrescenta lesões predominantemente líticas, muitas vezes **bilaterais e simétricas**, e a **RM em STIR**, inclusive de corpo inteiro, que ajuda a excluir infecção piogênica. A **cintilografia** é o exame que prova a multifocalidade, porque acha lesões assintomáticas antes da radiografia (Tachdjian, p. 974; Lovell and Winter, p. 414). O Rockwood (p. 853 aprox.) chama a **esclerose marginal** de traço típico.
+
+## Biópsia estéril e critérios: diagnóstico de exclusão
+
+Os livros concordam que se trata de **diagnóstico de exclusão**, e por isso cultura e biópsia muitas vezes são feitas. O Tachdjian (p. 973) diz que as culturas não devem ser omitidas só porque se suspeita de CRMO: numa revisão de 1997, **13 de 184 culturas** foram positivas, todas consideradas contaminantes. A histologia vai de neutrófilos, necrose, granuloma e fibrose até inflamação crônica inespecífica com linfócitos, plasmócitos e células gigantes; o Lovell and Winter (p. 414) resume como **inflamação crônica sem a inflamação aguda** da bacteriana. Se tumor maligno estiver no diferencial (EWING, neuroblastoma metastático, histiocitose), a biópsia segue os princípios de biópsia de tumor (Tachdjian, p. 974).
+
+!tabela Critérios propostos para a CRMO (Tachdjian cap. 23, p. 973; Campbell cap. 23, p. 818)
+| Item | Tachdjian | Campbell |
+| --- | --- | --- |
+| duração | mais de 3 meses | 6 meses ou mais, crônico e recidivante |
+| lesões | não exige número | 2 ou mais, imitando osteomielite, com imagem e cintilografia compatíveis |
+| prova de exclusão | biópsia aberta com inflamação crônica e cultura sem germe | falha de pelo menos 1 mês de tratamento adequado e nenhuma outra causa |
+!fim
+
+## Tratamento: anti-inflamatório, não antibiótico
+
+A CRMO **não deve responder a antibiótico** (Tachdjian, p. 975). O tratamento é o **AINE**: no Lovell and Winter (p. 414), **90%** melhoram de forma importante, a base é o AINE programado nas crises, e a **indometacina** talvez seja especialmente eficaz. Para a falha, os livros sobem degraus diferentes: corticoide e interferon-gama em casos isolados (Tachdjian e Lovell and Winter), **bisfosfonato**, com o pamidronato tendo efeito dramático na dor, na remodelação vertebral e na RM (Tachdjian, p. 975), e **anti-TNF e anti-interleucina** na doença refratária, sobretudo com coluna (Campbell, p. 819).
+
+A duração é uma divergência numérica: o Campbell (p. 819) fala em recidivas por cerca de **2 anos**, e o Lovell and Winter (p. 414) em **3 a 5 anos** até a doença "se apagar". Todos a chamam de autolimitada, mas não inocente: há relatos de **fechamento precoce de fise**, deformidade, discrepância, **cifose**, dor crônica e síndrome do desfiladeiro torácico (Lovell and Winter, p. 414; Tachdjian, p. 975).
+
+## SAPHO e GARRÉ: os parentes
+
+O Lovell and Winter (p. 414) chama de **SAPHO** a associação de **sinovite, acne, pustulose, hiperostose e osteíte**, quase certamente uma expressão variável da mesma doença, com curso de recidivas e remissões, benigno, controlado com AINE, e alterações crônicas tipo PAGET (osso hipertrófico inativo e fibrose da medula). O **Propionibacterium acnes** já foi achado em lesões de acne grave e em lesões osteoarticulares com pustulose, mas a maioria das biópsias é negativa; o Tachdjian (p. 973) frisa que o germe foi isolado no SAPHO, **não na CRMO**. A **osteomielite esclerosante de GARRÉ** seria a forma **unifocal**, com segmento ósseo aumentado e doloroso na metáfise dos ossos longos ou na mandíbula (Lovell and Winter, p. 414).
 
 # Fechamento {radar=fundamento}
 

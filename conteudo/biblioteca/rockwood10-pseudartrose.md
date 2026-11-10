@@ -1,6 +1,6 @@
 ---
 id: rockwood10-pseudartrose
-versao: 1
+versao: 2
 titulo: Pseudartrose e retardo de consolidação
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (2026)
 capitulo: Capítulo 30 · Principles of Nonunion and Bone Defect Treatment
 autores: William M. Ricci e Benjamin J. Ollivere
-fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 30 (Principles of Nonunion and Bone Defect Treatment) lido por inteiro, p. 873 a 920 aprox. (o PDF não imprime a página no cabeçalho; páginas inferidas pelo índice remissivo e marcadas como aproximadas), com consultas ao cap. 3 (Biologic and Biophysical Technologies, p. 65 a 77 aprox.), ao cap. 16 (perda óssea aguda na fratura exposta) e ao cap. 31 (consolidação viciosa); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 64 (Delayed Union and Nonunion of Fractures, John C. Weinlein) lido por inteiro, p. 2902 a 2936, com o cap. 2 (enxertos, p. 150 a 150.e2) e o cap. 23 (osteomielite, p. 814 e 815). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 30 (Principles of Nonunion and Bone Defect Treatment) lido por inteiro, p. 873 a 920 aprox. (o PDF não imprime a página no cabeçalho; páginas inferidas pelo índice remissivo e marcadas como aproximadas), com consultas ao cap. 3 (Biologic and Biophysical Technologies, p. 65 a 77 aprox.), ao cap. 16 (perda óssea aguda na fratura exposta) e ao cap. 31 (consolidação viciosa); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 64 (Delayed Union and Nonunion of Fractures, John C. Weinlein) lido por inteiro, p. 2902 a 2936, com o cap. 2 (enxertos, p. 150 a 150.e2) e o cap. 23 (osteomielite, p. 814 e 815). Em 10/11/2026, conferidos ainda o Campbell, cap. 23 (técnica e23.1 de PAPINEAU, p. 814.e1 aprox.), e o Rockwood, cap. 11 (história do fixador de HOFFMANN) e cap. 42 (GALEAZZI). As páginas citadas são as impressas.
 subtemas: Pseudartrose e retardo de consolidação
-resumo: Retardo (3 a 6 meses) e pseudartrose (não consolida sem nova intervenção; FDA 9 meses + 3 sem progressão); hipertrófica (falta estabilidade), oligotrófica (falta contato), atrófica (falta biologia) e sinovial (fenda fria entre duas áreas quentes); TC com sensibilidade de 100% e especificidade de 62%; nicotina e AINE (COX-2 e não seletivos) atrapalham; NURD com retalho valendo 5 pontos; haste fresada fechada na tíbia, placa no úmero; autoenxerto com as três propriedades, cerâmicas e vidro bioativo osteocondutores, homoenxerto vem de outro indivíduo, PRP de 2 a 6 vezes; MASQUELET (PMMA, membrana, enxerto em 4 a 8 semanas); ILIZAROV com compressão no foco e corticotomia metafisária com alongamento gradual.
+resumo: Retardo (3 a 6 meses) e pseudartrose (não consolida sem nova intervenção; FDA 9 meses + 3 sem progressão); hipertrófica (falta estabilidade), oligotrófica (falta contato), atrófica (falta biologia) e sinovial (fenda fria entre duas áreas quentes); TC com sensibilidade de 100% e especificidade de 62%; nicotina e AINE (COX-2 e não seletivos) atrapalham; NURD com retalho valendo 5 pontos; haste fresada fechada na tíbia, placa no úmero; autoenxerto com as três propriedades, cerâmicas e vidro bioativo osteocondutores, homoenxerto vem de outro indivíduo, PRP de 2 a 6 vezes; MASQUELET (PMMA, membrana, enxerto em 4 a 8 semanas); ILIZAROV com compressão no foco e corticotomia metafisária com alongamento gradual; PAPINEAU (enxerto esponjoso aberto em três tempos: desbridamento e estabilização, enxerto, pele) quando não há retalho.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -490,6 +490,38 @@ alerta: Questão sem gabarito oficial no acervo; o Rockwood (cap. 30) e o Campbe
 | **1. Controle** | amostra pré-operatória; **retirada do material**; desbridamento amplo e culturas; cobertura; **estabilização** (fixador ponteando a zona ou haste com antibiótico na tíbia); antibiótico local e sistêmico; **espaçador de PMMA** |
 | **2. Antibiótico** | antibiótico específico, em geral por **6 semanas**, até sumirem os sinais |
 | **3. Reconstrução** | como **atrófica asséptica**; bactéria resistente ou hospedeiro ruim: **transporte**; bom hospedeiro: enxerto |
+!fim
+
+## O enxerto aberto de PAPINEAU
+
+Quando a pseudartrose vem com **osteomielite crônica** e falta cobertura, existe uma saída que dispensa fechar a pele sobre o enxerto: o **enxerto ósseo aberto de PAPINEAU**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, Osteomyelitis, p. 814 e técnica e23.1, p. 814.e1 aprox.), explica a ideia: forma-se **tecido de granulação saudável num leito de enxerto esponjoso**, que se **vasculariza rápido**, **resiste à infecção** e **drena** livremente. A técnica é útil quando **retalho livre ou transferência de partes moles não são possíveis**, pela localização, ou no **fumante** e no paciente clinicamente comprometido.
+
+O Campbell descreve três tempos, com a modificação de ARCHDEACON e MESSERSCHMITT, que usa curativo de pressão negativa:
+
+- **Primeiro tempo, desbridamento e estabilização.** Retirar todos os sequestros e o osso necrótico até tecido viável e irrigar; **estabilizar com fixador externo ou haste, se necessário**; curativo a vácuo, com novo desbridamento a cada **48 a 96 horas** até o leito ficar limpo e viável.
+- **Segundo tempo, enxerto.** Esponjoso autólogo da **crista ilíaca ou da tíbia proximal**, socado no defeito **até o nível do subcutâneo**, coberto por gaze não aderente e vácuo, trocado a cada 72 a 96 horas até a granulação cobrir o enxerto. A primeira troca vai do **3º ao 5º dia**, repondo o enxerto que sair grudado. Pele e subcutâneo ficam **abertos**; na tíbia, se a pele tender a fechar antes de a granulação cobrir o enxerto, resseca-se a borda.
+- **Terceiro tempo, cobertura.** **Enxerto de pele** ou epitelização espontânea.
+
+O antibiótico venoso, guiado pela cultura, continua **além da última cirurgia**. É exatamente a sequência que as provas descrevem: excisão do tecido infectado, com ou sem fixador, autoenxerto esponjoso e **fechamento tardio** da ferida.
+
+!tabela PAPINEAU, MASQUELET e transporte ósseo na pseudartrose infectada (Campbell 15, cap. 23, p. 814 e 815; Rockwood 10, cap. 30)
+| Ponto | PAPINEAU | MASQUELET | Transporte de ILIZAROV |
+| --- | --- | --- | --- |
+| O que preenche | esponjoso autólogo exposto | espaçador de PMMA, depois esponjoso dentro da membrana | o próprio osso regenerado |
+| Partes moles | dispensa retalho; ferida aberta até granular, enxerto de pele no fim | exige bom envelope de partes moles | a infecção cede com o aumento da vascularização (Campbell, cap. 64, p. 2917) |
+| Tempos | três | dois | corticotomia e distração gradual |
+| Estabilização | fixador ou haste, se necessário | haste, placa ou fixador | fixador circular |
+| Quando pensar | sem retalho possível, fumante, paciente comprometido | defeito segmentar com bom envelope de partes moles | defeito grande, bactéria resistente, hospedeiro ruim |
+!fim
+
+Os nomes que a banca põe ao lado ajudam a fixar. HOFFMANN deu nome a um **fixador externo**: o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 11, Principles of External Fixation), conta que Raoul HOFFMANN começou em **1938**, chamou o método de **ostéotaxis**, reduzia a fratura fechada e publicou em **1942**, com quadros só de meios-pinos. GALEAZZI é a **fratura do rádio com luxação da radioulnar distal** (Rockwood adulto, cap. 42). ILIZAROV é o fixador circular com compressão, distração e transporte, e PALEY dá nome à corticotomia e a uma classificação de pseudartrose, ambas vistas acima.
+
+!questoes central=trauma-1197
+conceito: Na pseudartrose com osteomielite crônica, a técnica de PAPINEAU é o enxerto ósseo aberto: excisão do tecido infectado e estabilização (fixador ou haste, se necessário), autoenxerto esponjoso deixado exposto para granular e fechamento tardio com enxerto de pele, em três tempos.
+como: O ENARE R4 2025 descreveu as etapas da técnica e pôs como alternativas PAPINEAU, HOFFMANN, GALEAZZI, ILIZAROV e PALEY.
+armadilha: HOFFMANN: nome de fixador externo (ostéotaxis), não de técnica de enxerto.
+armadilha: ILIZAROV: trata a infectada com fixador circular, compressão e transporte ósseo, sem o enxerto aberto.
+armadilha: PALEY: corticotomia e classificação de pseudartrose; GALEAZZI: fratura do rádio com luxação da radioulnar distal.
 !fim
 
 # Deformidade associada e consolidação viciosa {radar=confirmado}

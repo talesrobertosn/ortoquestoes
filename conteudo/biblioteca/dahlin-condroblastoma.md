@@ -1,6 +1,6 @@
 ---
 id: dahlin-condroblastoma
-versao: 1
+versao: 2
 titulo: Condroblastoma (e o fibroma condromixoide)
 especialidade: tumores
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases
 edicao: 6ª edição (2010)
 capitulo: Capítulo 4 · Benign Chondroblastoma
 autores: K. Krishnan UNNI e Carrie Y. INWARDS
-fonte: Livros conferidos localmente em 04/11/2026: Dahlin's Bone Tumors, 6ª ed. (2010), cap. 4 (Benign Chondroblastoma, p. 41 a 49) e cap. 5 (Chondromyxoid Fibroma, p. 50 a 58); Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone, p. 952, 953 com a Tabela 28.1, 958 a 963), cap. 26 (Box 26.1, p. 869 e 869.e1; estadiamento, p. 873) e cap. 27 (cisto ósseo aneurismático, p. 939); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 24 (p. 999 e 1000, Box 24.1) e cap. 25 (p. 1008 e 1029 a 1033); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (p. 430, 432 com a Tabela 13-2, 434, 439, 444 a 447 e 457). As páginas citadas são as impressas.
-subtemas: Condroblastoma
-resumo: Tumor cartilaginoso benigno do centro de ossificação secundário (tumor de CODMAN): segunda década, fise aberta, 2:1 masculino; epífise ou apófise (úmero proximal o local isolado mais comum, joelho somando 34%, trocânter maior, tubérculo maior, patela); lítico, bem delimitado, halo esclerótico fino, calcificação em 30% a 50% (melhor na TC), edema abundante na RM, cruzar a fise aberta é quase diagnóstico; condroblastos poligonais em pedra de calçamento com núcleo em grão de café, células gigantes e calcificação em tela de galinheiro; ABC secundário em 20% a mais de 1/3; ENNEKING 2, raramente 3; curetagem estendida com broca e adjuvantes e enxerto ou cimento, curetagem adequada acima de poupar a fise; recidiva 10% a 32%; metástase pulmonar benigna em ~1%.
+fonte: Livros conferidos localmente em 04/11/2026: Dahlin's Bone Tumors, 6ª ed. (2010), cap. 4 (Benign Chondroblastoma, p. 41 a 49) e cap. 5 (Chondromyxoid Fibroma, p. 50 a 58); Campbell's Operative Orthopaedics, 15ª ed., cap. 28 (Aggressive Benign Tumors of Bone, p. 952, 953 com a Tabela 28.1, 958 a 963), cap. 26 (Box 26.1, p. 869 e 869.e1; estadiamento, p. 873) e cap. 27 (cisto ósseo aneurismático, p. 939); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 24 (p. 999 e 1000, Box 24.1) e cap. 25 (p. 1008 e 1029 a 1033); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 13 (p. 430, 432 com a Tabela 13-2, 434, 439, 444 a 447 e 457). Complemento de 10/11/2026: Dahlin cap. 5, Fig. 5.1 (p. 51) e p. 53 a 58; Campbell cap. 28, p. 962 a 964 (Figs. 28.10 a 28.12), e cap. 29, p. 976. As páginas citadas são as impressas.
+subtemas: Condroblastoma; Fibroma condromixoide
+resumo: Tumor cartilaginoso benigno do centro de ossificação secundário (tumor de CODMAN): segunda década, fise aberta, 2:1 masculino; epífise ou apófise (úmero proximal o local isolado mais comum, joelho somando 34%, trocânter maior, tubérculo maior, patela); lítico, bem delimitado, halo esclerótico fino, calcificação em 30% a 50% (melhor na TC), edema abundante na RM, cruzar a fise aberta é quase diagnóstico; condroblastos poligonais em pedra de calçamento com núcleo em grão de café, células gigantes e calcificação em tela de galinheiro; ABC secundário em 20% a mais de 1/3; ENNEKING 2, raramente 3; curetagem estendida com broca e adjuvantes e enxerto ou cimento, curetagem adequada acima de poupar a fise; recidiva 10% a 32%; metástase pulmonar benigna em ~1%; fibroma condromixoide metafisário, tíbia proximal (14 de 50 na Fig. 5.1 do Dahlin), dor longa, sem cálcio, diferencial com condrossarcoma pela hipercelularidade difusa.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -467,6 +467,76 @@ O Dahlin (p. 57) considera a **excisão em bloco**, quando viável, o melhor tra
 | metástase | pulmonar benigna ~1% | sem metástase benigna nos livros; malignização rara |
 | tratamento | curetagem estendida com adjuvantes e enxerto ou cimento | excisão em bloco quando viável, ou curetagem estendida com enxerto |
 !fim
+
+# Fibroma condromixoide em detalhe: o mapa da Mayo, a clínica e o diferencial {radar=confirmado}
+
+A seção anterior apresentou o FCM como irmão metafisário do condroblastoma. Esta aprofunda o que a prova cobra dele: **onde ele mora em números**, como se apresenta, o que o separa do condrossarcoma e o que cada livro manda fazer.
+
+## O mapa da série da Mayo: tíbia proximal na frente
+
+O Dahlin's Bone Tumors, 6ª ed. (cap. 5, Fig. 5.1, p. 51), desenha a distribuição de **50 casos (30 homens e 20 mulheres)** no esqueleto. A **tíbia proximal sozinha tem 14**, mais que o dobro do segundo colocado (o ilíaco, com 6). Somando o fêmur distal (5), o **joelho reúne 19 dos 50 (38%)**, e a tíbia inteira (16) bate com o "um terço na tíbia" do texto. O pé aparece logo atrás, como o texto avisa: **os ossos pequenos do pé** são local comum. Vértebras, costelas, escápula, crânio e mandíbula são incomuns (p. 51).
+
+!tabela Fibroma condromixoide: distribuição dos 50 casos da Fig. 5.1 (Dahlin cap. 5, p. 51)
+| Região | Casos | Detalhe |
+| --- | --- | --- |
+| tíbia proximal | 14 | o local isolado mais comum (28%) |
+| tíbia distal e fíbula distal | 2 e 1 | perna distal |
+| fêmur | 6 | distal 5, proximal 1 |
+| pelve | 8 | ilíaco 6, mais 2 pontos isolados |
+| pé | 7 | 5 no pé, 2 nos dedos |
+| membro superior | 8 | escápula 1, úmero proximal 1, antebraço 4, punho 1, mão 1 |
+| crânio, clavícula e coluna cervical | 2, 1 e 1 | raros |
+!fim
+
+O texto do Dahlin (p. 51) acrescenta um detalhe de idade: dos **10 tumores acima dos 40 anos**, só 3 estavam em ossos tubulares longos; os outros 7 estavam na pelve, nos ossos pequenos do pé e no septo nasal. Fora da faixa jovem, portanto, o FCM foge da metáfise longa.
+
+Os quatro livros concordam na tíbia, mas cada um completa o mapa de um jeito. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 28, p. 962), diz que qualquer osso pode ser acometido e ilustra o FCM na **coluna posterior do acetábulo** (Fig. 28.10) e na **metáfise distal do rádio** (Fig. 28.12). O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 25, p. 1032), lista depois da tíbia o **ilíaco, fêmur, fíbula, metatarsos e calcâneo**, e chama de raros os membros superiores, a coluna e o esterno. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 13, p. 445), fica no essencial: **um terço na tíbia, geralmente proximal**.
+
+!figura 28.11 imagem=tumores/campbell15-28-11.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 28, Fig. 28.11, p. 963. Homem de 36 anos com dor no joelho há 1 ano: lesão lítica excêntrica e bem delimitada, de orla esclerótica, na metáfise proximal da tíbia (A e B, frente e perfil), e o aspecto microscópico típico, com células estreladas espalhadas em matriz mixoide (C).
+!fim
+
+!questoes central=tumores-0033
+conceito: O fibroma condromixoide é metafisário e acomete mais a extremidade proximal da tíbia (14 dos 50 casos da Fig. 5.1 do Dahlin; um terço de todos na tíbia), dado que o Campbell, o Tachdjian e o Lovell and Winter repetem.
+como: O TARO 2021 perguntou a extremidade mais acometida, entre fêmur proximal, fêmur distal, tíbia proximal e tíbia distal.
+armadilha: Escolher o fêmur distal por analogia com o fibroma não ossificante, que o FCM imita na imagem e que mora no fêmur distal em 90% (Lovell and Winter, p. 447); no FCM o fêmur distal tem só 5 casos, e o joelho só lidera porque a tíbia proximal carrega a soma.
+!fim
+
+## A clínica: dor longa, pouca coisa ao exame
+
+No Dahlin (p. 51), a **dor é de longe o sintoma mais comum**, às vezes com anos de duração; aumento de volume foi notado por apenas **6 pacientes**, mais nos ossos pequenos, e há achados incidentais. O exame físico pouco ajuda. Os livros divergem no caráter da dor. O Lovell and Winter (p. 445) descreve dor **surda, constante e geralmente pior à noite**, com dor à palpação e às vezes massa profunda. O Tachdjian (p. 1032) descreve desconforto **leve e intermitente** e diz que o achado incidental é comum. O Campbell (p. 962) lembra que **na mão e no pé a queixa pode ser uma massa indolor**.
+
+## A imagem: o que engana e o que tranquiliza
+
+O Dahlin (p. 51) explica um detalhe que confunde: as trabéculas que parecem cruzar a lesão são **reflexo radiográfico de corrugações da parede da cavidade**, não septos verdadeiros, e a lobulação aparece melhor na **ressonância**. Houve **fratura patológica em 4 de 30 casos** da série de RAHIMI. A Fig. 5.6 (p. 53) mostra uma lesão do fêmur distal que encosta na fise sem cruzá-la, com contraforte periosteal benigno e **edema extenso da medula e das partes moles na RM**, o que não deve assustar.
+
+O Tachdjian (p. 1033) dá dois sinais úteis. A borda esclerótica, vista sobretudo **abaixo dos 20 anos**, é sinal de benignidade. E o FCM, ao contrário do fibroma não ossificante, pode **abaular o contorno original do osso**. O Campbell (p. 962) admite que o FCM raramente entra no diferencial radiográfico, **a não ser na metáfise proximal da tíbia**: é a localização que lembra o diagnóstico.
+
+## Macroscopia e genética
+
+O tumor é pequeno: até **5 cm** na série da Mayo, firme, algo fibroso e **semitranslúcido**, raramente parecido com cartilagem hialina; retirado inteiro, é lobulado e tão bem delimitado que lembra uma bola de gude incrustada no osso (Dahlin, p. 51 e 54). O Tachdjian (p. 1032) acrescenta a cor **branco-acinzentada**, a orla fina de osso ou periósteo por fora, cistos e hemorragia, e a citogenética: **translocação recíproca desequilibrada entre o braço curto do cromossomo 3 e o braço longo do 6**, regiões com genes que controlam o crescimento do osso endocondral. Ele também aceita a **aspiração por agulha fina** como meio diagnóstico (p. 1033).
+
+## O diferencial: o erro nos dois sentidos
+
+O Dahlin (p. 50) conta uma história de prova. JAFFE e LICHTENSTEIN alertaram contra confundir o FCM com condrossarcoma, e alguns patologistas levaram o alerta a sério demais: houve **condrossarcomas chamados de FCM e tratados de forma insuficiente**. Por isso o capítulo (p. 57) lista o que denuncia o condrossarcoma que imita o FCM: **liquefação da matriz**, **permeação franca do osso**, **imagem maligna** e, sobretudo, **hipercelularidade difusa**. O FCM também tem pegadinhas próprias: liquefação pequena em cerca de **um terço**, **necrose em 12%** e, raramente, nódulos satélites ou osso medular aprisionado nos ossos pequenos e chatos.
+
+!tabela Diferencial do fibroma condromixoide (Dahlin cap. 5, p. 50 a 57; Campbell cap. 28, p. 962; Tachdjian cap. 25, p. 1033; Lovell and Winter cap. 13, p. 445 e 447)
+| Diferencial | O que separa |
+| --- | --- |
+| condrossarcoma | difusamente hipercelular, matriz liquefeita, permeação e imagem maligna; o FCM tem lóbulos de centro pobre |
+| condroblastoma | epífise ou apófise; nos casos mistos, a localização decide |
+| fibroma não ossificante | igual na metáfise excêntrica e na borda esclerótica, mas não abaula o contorno |
+| cisto ósseo aneurismático | RM: FCM sólido, ABC cístico |
+| outros (Tachdjian e Campbell) | displasia fibrosa, TCG, cisto simples, granuloma eosinofílico, encondroma; no mais velho, mieloma |
+!fim
+
+O Lovell and Winter (p. 447) fecha o raciocínio pela lâmina: sem cartilagem hialina típica, com matriz condroide, mixoide e muito tecido fibroso, o FCM pode ser tomado por **malignidade de baixo grau** se o diagnóstico não for lembrado.
+
+## Tratamento e evolução, livro a livro
+
+O Lovell and Winter (p. 445) classifica o FCM como **benigno ativo, raramente agressivo**, e diz que a história natural é desconhecida porque quase todos são operados; recomenda **curetagem completa com enxerto** e avisar paciente e pais da recidiva (p. 447). O Tachdjian (p. 1033) pede para **evitar procedimentos radicais** e não indica radioterapia nem quimioterapia. O Campbell (p. 964, Fig. 28.12) mostra a técnica num rádio distal: curetas, **broca de alta rotação**, coagulação com **feixe de argônio** e preenchimento com **fosfato de cálcio**.
+
+O Dahlin (p. 57 e 58) registra o lado sombrio da série da Mayo: **11 recidivas**, três amputações (uma pelo tamanho e duas por diagnóstico errado de sarcoma), duas amputações de raio no metatarso e uma morte por recidiva agressiva no sacro. RAHIMI associou mais recidiva a núcleos grandes e irregulares e matriz mixoide, sobretudo **abaixo dos 15 anos**, mas GHERLINZONI não confirmou. A malignização segue rara: um sarcoma 6 anos após radioterapia e um sarcoma letal sem radioterapia. O Campbell (cap. 29, p. 976) inclui o FCM entre as lesões associadas ao **condrossarcoma secundário**, ao lado da condromatose sinovial, do condroma periosteal, do condroblastoma, da radioterapia prévia e da displasia fibrosa.
 
 # Fechamento {radar=fundamento}
 
