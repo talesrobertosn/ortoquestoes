@@ -308,7 +308,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 983 | Exemplo aprovado de miniaula com figura (docs/exemplos/pe-tornozelo-0107.json) e registro do padrão no CLAUDE.md |
 | 985 | Comentários curtos de resumos antigos, onda 1: 59 miniaulas refeitas com figuras (35 de malformações congênitas da mão, 24 da fise proximal da tíbia) |
 | 986 | Comentários curtos, onda 1: 63 miniaulas refeitas com figuras (23 do exame da mão e do punho, 21 do carpo, 19 do tornozelo da criança); limpeza do resto de extração "Área livre PROVA APLICADA" em 14 questões e 4 flashcards |
-| (este PR) | Comentários curtos, onda 1: 48 miniaulas refeitas com figuras (19 de nervos periféricos, 16 de DDQ, 13 do ombro e úmero da criança); pendências: desenho no lugar da foto intraoperatória (mao-1562), imagens trocadas retiradas (conceitos-basicos-0312), gabarito provável da trauma-1127 trocado para C |
+| 991 | Comentários curtos, onda 1: 48 miniaulas refeitas com figuras (19 de nervos periféricos, 16 de DDQ, 13 do ombro e úmero da criança); pendências: desenho no lugar da foto intraoperatória (mao-1562), imagens trocadas retiradas (conceitos-basicos-0312), gabarito provável da trauma-1127 trocado para C |
+| (este PR) | Comentários curtos, onda 1: 33 miniaulas refeitas com figuras do Rockwood (12 do colo do rádio e olécrano, 11 da diáfise do fêmur e 10 do quadril, todas na criança); 10 questões sem livro no acervo (9 de neurocirurgia e a classificação de EDWARDS e DeLEE) refeitas com artigos abertos e aviso de tema fora da bibliografia |
 
 ## Próximo
 
