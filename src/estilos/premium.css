@@ -756,26 +756,6 @@
 .aviso-site__fechar:hover { background: color-mix(in srgb, currentColor 10%, transparent); color: var(--texto); }
 .aviso-site__mais:focus-visible, .aviso-site__fechar:focus-visible { outline: 2px solid var(--foco); outline-offset: -2px; }
 
-/* ---------- Termos atualizados (reaceite, 16/10/2026) ----------------- */
-.aviso-termos { background: var(--ouro-veu, var(--aviso-veu)); color: var(--texto); }
-.aviso-termos--faixa { border-bottom: 1px solid color-mix(in srgb, var(--aviso) 35%, var(--traco)); }
-.aviso-termos--cartao { border: 1px solid color-mix(in srgb, var(--aviso) 35%, var(--traco)); border-radius: var(--raio-cartao); }
-.aviso-termos__interno { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .75rem 1.25rem; padding-block: .9rem; }
-.aviso-termos--cartao .aviso-termos__interno { padding: 1rem 1.1rem; }
-.aviso-termos__texto { flex: 1 1 28rem; min-width: 0; }
-.aviso-termos h2 { display: flex; align-items: center; gap: .45rem; margin: 0 0 .3rem; font-size: 1.02rem; line-height: 1.3; }
-.aviso-termos h2 svg { flex: 0 0 auto; color: var(--aviso); }
-.aviso-termos p { margin: 0 0 .4rem; font-size: var(--corpo-menor); line-height: 1.5; }
-.aviso-termos__mudancas summary { cursor: pointer; font-size: var(--corpo-menor); font-weight: 700; color: var(--verdete); min-height: 32px; display: flex; align-items: center; }
-.aviso-termos__mudancas ul { margin: .35rem 0 0; padding-left: 1.2rem; font-size: var(--corpo-menor); line-height: 1.5; }
-.aviso-termos__mudancas li + li { margin-top: .25rem; }
-.aviso-termos__erro { color: var(--erro); font-weight: 650; }
-.aviso-termos__acoes { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; flex: 0 1 auto; }
-@media (max-width: 640px) {
-  .aviso-termos__acoes { width: 100%; }
-  .aviso-termos__acoes .botao { flex: 1 1 calc(50% - .5rem); justify-content: center; }
-}
-
 /* ---------- Páginas jurídicas: resumo, vigência e tabelas ------------- */
 .juridico-resumo { padding: 1.1rem 1.2rem; border: var(--borda); border-left: 4px solid var(--verdete); border-radius: var(--raio-cartao); background: var(--superficie); }
 .juridico-resumo h2 { margin-top: 0; font-size: 1.15rem; }
