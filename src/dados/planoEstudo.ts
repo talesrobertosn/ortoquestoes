@@ -67,6 +67,16 @@ export interface OpcoesPlano {
    * fez) e o resto continua lá. Ver opcoesComPuxado.
    */
   puxados?: Record<string, string[]>
+  /**
+   * Só questões do TEOT (10/11/2026): o plano deixa de fora o TARO e as outras provas. Os OrtoQuestões
+   * Simulados seguem a escolha de `incluir_simulados`. Ausente em planos antigos: desligado.
+   */
+  soTeot?: boolean
+  /**
+   * Dia da semana (0 = domingo) reservado para a revisão dos erros do cronograma: nesse dia o roteiro
+   * abre pelos erros dos dias anteriores. Não muda a meta. Ausente: nenhum.
+   */
+  diaErros?: number | null
 }
 
 export interface RegistroAdiantado { em: string; meta: number; pedido?: number }
@@ -86,7 +96,7 @@ export const TAMANHO_MINI = 30
 /** Minutos por questão quando ainda não há histórico. */
 export const MINUTOS_POR_QUESTAO = 1.5
 
-export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados'>> => ({
+export const opcoesDe = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Required<Omit<OpcoesPlano, 'provaExtra' | 'marcasDia' | 'puxados' | 'soTeot' | 'diaErros'>> => ({
   diasLeves: plano?.opcoes?.diasLeves ?? [],
   qtdLeve: Math.max(5, Math.min(40, plano?.opcoes?.qtdLeve ?? QTD_LEVE_PADRAO)),
   semanasDificeis: plano?.opcoes?.semanasDificeis ?? [],
@@ -228,7 +238,9 @@ export interface CalculoPlano {
   reservados: string[]
 }
 
-export function calcularPlano(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date(), interno: { soMeta?: boolean } = {}): CalculoPlano {
+export function calcularPlano(indiceInteiro: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date(), interno: { soMeta?: boolean } = {}): CalculoPlano {
+  // "Só TEOT": o motor inteiro trabalha sobre o recorte (plano antigo, sem a opção: o acervo de sempre).
+  const indice = indiceDoPlano(indiceInteiro, plano)
   // Hoje e o dia de criação são dias de São Paulo (src/util/dia.ts), como datas civis.
   const hoje = diaCivil(agora)
   const inicioHoje = inicioDoDia(agora)
@@ -287,8 +299,11 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
     return { slug, nome: tema?.nome ?? String(i), faltam: t.faltam, acerto, acertoEstimado, respondidas: t.respondidas, reforcado: acertoEstimado !== null && media !== null && acertoEstimado < media - 5, incidencia: pesoIncidenciaDoTema(slug) }
   })
 
-  const alvo = Math.max(0, Math.ceil((elegiveis - Math.min(plano.base_respondidas, elegiveis)) * COBERTURA[plano.intensidade]))
-  const feitas = Math.max(0, respondidasNoAcervo - plano.base_respondidas)
+  // Linha de base: a guardada na criação. No recorte "só TEOT" ela é refeita pelas datas (o que já estava
+  // respondido do recorte antes de o plano nascer), para ligar e desligar sem zerar nem inflar o andamento.
+  const base = indice === indiceInteiro ? plano.base_respondidas : baseDoRecorte(indice, respondidas, plano)
+  const alvo = Math.max(0, Math.ceil((elegiveis - Math.min(base, elegiveis)) * COBERTURA[plano.intensidade]))
+  const feitas = Math.max(0, respondidasNoAcervo - base)
   const restante = Math.max(0, alvo - feitas)
 
   // Primeira resposta de hoje (não conta revisão de questão já vista).
@@ -649,6 +664,104 @@ export function calcularPlano(indice: Indice, respondidas: Record<string, Regist
 }
 
 const unicos = (lista: string[]) => [...new Set(lista)]
+
+// ─── Plano guardado: formatos antigos e o recorte "só TEOT" (10/11/2026) ─────
+
+/** Se o plano está no modo "só questões do TEOT". */
+export const soTeot = (plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined) => plano?.opcoes?.soTeot === true
+
+/**
+ * O plano como o motor espera, a partir da linha guardada em qualquer formato que já existiu: sem
+ * `incluir_simulados` (antes de 06/10/2026), sem `opcoes` ou com `opcoes: null` (antes de 14/10/2026) e
+ * com chaves que o site já não usa. Nada é convertido nem apagado: os campos conhecidos são conferidos,
+ * o resto passa como veio, e as funções novas ("só TEOT", dia dos erros) ficam desligadas. É por isso que
+ * quem já tinha cronograma continua exatamente de onde estava (fixtures/testar_cronograma_roteiro.mjs).
+ * Linha sem data de prova ou de criação válidas: null.
+ */
+export function normalizarPlano(bruto: unknown): PlanoSalvo | null {
+  if (!bruto || typeof bruto !== 'object') return null
+  const p = bruto as Record<string, unknown>
+  if (typeof p.data_prova !== 'string' || !/^\d{4}-\d{2}-\d{2}/.test(p.data_prova)) return null
+  if (typeof p.criado_em !== 'string' || !Number.isFinite(Date.parse(p.criado_em))) return null
+  const dias = (v: unknown) => (Array.isArray(v) ? v.filter((d): d is number => Number.isInteger(d) && d >= 0 && d <= 6) : [])
+  const opcoes = p.opcoes && typeof p.opcoes === 'object' && !Array.isArray(p.opcoes) ? (p.opcoes as OpcoesPlano) : null
+  const plano: PlanoSalvo = {
+    ...(p as unknown as PlanoSalvo),
+    intensidade: p.intensidade === 'leve' || p.intensidade === 'completo' ? p.intensidade : 'firme',
+    folgas: dias(p.folgas),
+    prova: typeof p.prova === 'string' ? p.prova : '',
+    base_respondidas: Math.max(0, Math.round(Number(p.base_respondidas) || 0)),
+  }
+  if ('opcoes' in p) plano.opcoes = opcoes
+  return plano
+}
+
+const recortes = new WeakMap<Indice, Indice>()
+/**
+ * O acervo que o plano usa. No modo "só TEOT", um recorte sem as outras provas (guardado, para os
+ * caches por índice continuarem valendo); senão, o próprio índice. Quem monta a sessão do dia usa o mesmo.
+ */
+export function indiceDoPlano(indice: Indice, plano: Pick<PlanoSalvo, 'opcoes'> | null | undefined): Indice {
+  if (!soTeot(plano)) return indice
+  let recorte = recortes.get(indice)
+  if (!recorte) {
+    const teot = indice.provas.indexOf('TEOT')
+    recorte = { ...indice, questoes: indice.questoes.filter((q) => q.p === teot || q.sim === 1) }
+    recortes.set(indice, recorte)
+  }
+  return recorte
+}
+
+/** No recorte: quantas questões do plano já estavam respondidas antes de ele ser criado. */
+function baseDoRecorte(indice: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo): number {
+  const criadoEm = Date.parse(plano.criado_em)
+  const simulados = incluiSimulados(plano)
+  let n = 0
+  for (const q of indice.questoes) {
+    if (!entraNoPlano(q, simulados)) continue
+    const r = respondidas[q.id]
+    if (!r) continue
+    const primeira = r.historico?.[0]?.em ?? r.q
+    if (primeira === undefined || primeira < criadoEm) n++
+  }
+  return n
+}
+
+/**
+ * O último dia de estudo antes de hoje (pulando as folgas): a meta que ele teve, refeita com o que havia
+ * até o fim dele, quantas questões novas a pessoa fez e quanto faltou. É o que a página usa para dizer,
+ * com os números, o que acontece quando o dia anterior não foi completado. Sem dia anterior no plano
+ * (criado hoje) ou já na reta final: null.
+ */
+export function balancoDiaAnterior(indiceInteiro: Indice, respondidas: Record<string, RegistroMinimo>, plano: PlanoSalvo, agora: Date | number = new Date()): { data: Date; meta: number; feitas: number; faltou: number; passou: number } | null {
+  const indice = indiceDoPlano(indiceInteiro, plano)
+  const hoje = diaCivil(agora)
+  const criado = diaCivil(Date.parse(plano.criado_em))
+  const prova = dataLocal(plano.data_prova)
+  const inicioRetaFinal = new Date(prova.getFullYear(), prova.getMonth(), prova.getDate() - diasRetaFinal(plano.criado_em, plano.data_prova))
+  if (hoje > inicioRetaFinal) return null
+  for (let k = 1; k <= 7; k++) {
+    const dia = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - k)
+    if (dia < criado) return null
+    if (plano.folgas.includes(dia.getDay())) continue
+    const chave = chaveData(dia)
+    const ini = inicioDaChave(chave), fim = inicioDaChave(somarDias(chave, 1))
+    const simulados = incluiSimulados(plano)
+    let feitas = 0
+    for (const q of indice.questoes) {
+      if (!entraNoPlano(q, simulados)) continue
+      const r = respondidas[q.id]
+      const primeira = r?.historico?.[0]?.em ?? r?.q
+      if (primeira !== undefined && primeira >= ini && primeira < fim) feitas++
+    }
+    const conhecidos = opcoesDe(plano).adiantados.filter((r) => r.em < chave)
+    const guardada = opcoesDe(plano).adiantados.find((r) => r.em === chave)?.meta
+    const meta = guardada ?? metaDoDiaPassado(indice, respondidas, { ...plano, opcoes: { ...(plano.opcoes ?? {}), adiantados: conhecidos } }, dia)
+    if (!Number.isFinite(meta)) return null
+    return { data: dia, meta, feitas, faltou: Math.max(0, meta - feitas), passou: Math.max(0, feitas - meta) }
+  }
+  return null
+}
 
 /** Até quantos dias para trás um dia sem registro de adiantamento é refeito. */
 export const DIAS_INFERIR_ADIANTADO = 7

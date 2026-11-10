@@ -42,7 +42,7 @@ export function CaixaResumos({ subtemasHoje, especialidade, rotuloDia }: { subte
 
   return (
     <section className="cp-bloco" aria-labelledby="bib-caixa-titulo">
-      <p className="cp-rotulo"><span id="bib-caixa-titulo">Resumos <span className="cp-tag">Beta</span></span><a className="bib-caixa__todos" href={href(especialidade ? `/resumos?area=${especialidade}` : '/resumos')}>Ver a biblioteca</a></p>
+      <p className="cp-rotulo"><span id="bib-caixa-titulo">Resumos</span><a className="bib-caixa__todos" href={href(especialidade ? `/resumos?area=${especialidade}` : '/resumos')}>Ver a biblioteca</a></p>
       <div className="bib-caixa">
         {combina && <div className="bib-destaque-fogo"><ChamaPixel altura={30} lados={10} forca={0.9} raio={14} /><a className={'bib-destaque' + (fechado(combina) ? ' bib-destaque--fechado' : '')} href={href(`/resumos/${combina.id}`)} style={estiloArea(combina)}>
           <span className="bib-destaque__lombada" aria-hidden="true" />

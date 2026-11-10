@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { chamarRpc, ErroRpc } from '../servicos/supabase'
 import { gravar, ler } from '../estado/armazenamento'
 import { hojeBR, somarDias } from '../util/dia'
-import { incluiSimulados, opcoesDe, type CalculoPlano, type OpcoesPlano, type PlanoSalvo } from '../dados/planoEstudo'
+import { normalizarPlano, incluiSimulados, opcoesDe, type CalculoPlano, type OpcoesPlano, type PlanoSalvo } from '../dados/planoEstudo'
 import { opcoesComMarcas, type MarcasDia } from './marcasDia'
 
 /**
@@ -39,7 +39,9 @@ const marcarGravacao = () => { ultimaGravacao = ++pedidos }
 
 export async function obterPlano(): Promise<PlanoSalvo | null> {
   const numero = ++pedidos
-  const [bruto] = await chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {})
+  const [linha] = await chamarRpc<PlanoSalvo[]>('obter_plano_estudo', {})
+  // Linha guardada em qualquer formato antigo: conferida, sem perder nada (normalizarPlano).
+  const bruto = normalizarPlano(linha)
   const plano = !bruto ? null : {
     ...bruto,
     incluir_simulados: typeof bruto.incluir_simulados === 'boolean' ? bruto.incluir_simulados : ler<boolean>(CHAVE, true),

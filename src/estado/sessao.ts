@@ -36,7 +36,7 @@ export interface OpcoesSessao {
   nacional?: string
   /** Início vindo do servidor, para o cronômetro bater em qualquer aparelho. */
   criadaEm?: number
-  origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar'
+  origem?: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar' | 'erros'
   /** Dia do cronograma de TEOT/TARO desta sessão (ver EstadoSessao.diaPlano). */
   diaPlano?: string
 }

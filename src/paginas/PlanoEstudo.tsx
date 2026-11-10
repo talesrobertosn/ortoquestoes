@@ -1,29 +1,28 @@
 import { DATA_TEOT } from '../dados/calendarioProvas'
-import { useDeferredValue, useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from 'react'
 import { conferirMetaCronograma } from '../conta/feitos'
 import { chamarRpc, codigoErro } from '../servicos/supabase'
 import { enviarMarcas, guardarAdiantamento, marcarAvisoSimulados, obterPlano, trocarSimulados, opcoesComAdiantamento, salvarOpcoes, salvarPlano, usarPlanoSalvo } from '../conta/cronograma'
 import { NovidadeSimulados } from '../componentes/NovidadeSimulados'
 import { usarPremium } from '../conta/premium'
 import { usarConta } from '../conta/ContextoConta'
-import { avisoVistoNaConta, marcarAvisoNaConta } from '../conta/avisosVistos'
+import {  marcarAvisoNaConta } from '../conta/avisosVistos'
 import { usarIndice } from '../dados/usarIndice'
 import { FILTROS_VAZIOS, type Indice } from '../dados/tipos'
 import { usarArmazenado } from '../estado/usarArmazenado'
 import type { RegistroQuestao } from '../estado/revisao'
 import { lerHistorico, usarSessao } from '../estado/sessao'
 import type { EstadoSessao } from '../dados/tipos'
-import { calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, marcarReservadas, opcoesComPuxado, proximoDiaParaPuxar, MINUTOS_POR_QUESTAO, opcoesDe, TAMANHO_MINI, type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
+import { calcularPlano, diasAte, idsDaSessaoDoDia, idsDoDiaPlano, idsParaPuxar, incluiSimulados, indiceDoPlano, marcarReservadas, opcoesComPuxado,  opcoesDe,  type OpcoesPlano, respondidasNoAcervo, ROTULO_INTENSIDADE, type CalculoPlano, type Intensidade, type PlanoSalvo } from '../dados/planoEstudo'
 import { areasDoDiaRevisao, TAMANHO_DIAGNOSTICO, calcularConstancia, contagemSimulados, contarErrosQueImportam, desempenhoPorArea, elogio, idsAquecimentoVespera, idsDiagnostico, idsErrosQueImportam, idsReativar, idsRevisaoForte, idsMiniSimulado, mapaDeRisco, minutosPorQuestao, pontosCegos, prontidaoPorArea, temasEsquecidos, formatarTempo } from '../dados/hubCronograma'
 import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dados/incidencia'
 import { idsRevisaoHoje } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
-import { AvisoDiagnostico, AvisoEsquecimento, CartaoConstancia, CartaoDesempenho, CartaoSimulados, ComoFuncionaCompleto, HojeRetaFinal, MapaRisco } from './CronogramaHub'
-import { diaCurto, textoPuxar } from '../dados/frasesAdiantar'
-import { CartaoHoje, fraseAdiantadoHoje, PainelAdiantar, ComoEstouIndo, Depois, EstaSemana, ExportarCalendario, LinhaAmanha, OndeVoceEsta, porQueHoje, Prontidao, Recolhido, ResumoSemana, TourCronograma, type ItemChecklist } from './CronogramaPainel'
+import {       HojeRetaFinal } from './CronogramaHub'
 import { corDaArea } from '../dados/coresAreas'
-import { CalendarioCronograma } from './CronogramaCalendario'
-import { ConviteFicticio, FaixaFicticio, type MotivoConvite } from './CronogramaFicticio'
+import { VisaoCronograma } from './CronogramaVisao'
+export { VisaoCronograma }
+import { ConviteFicticio,  type MotivoConvite } from './CronogramaFicticio'
 import { CenaTorre } from '../componentes/cronograma/CenaTorre'
 import { VisitaCronograma } from '../componentes/cronograma/VisitaCronograma'
 import { vistaDoCronograma } from '../dados/vistaCronograma'
@@ -31,21 +30,18 @@ import { CONTEXTO_VAZIO, montarSessao } from '../dados/acervo'
 import '../estilos/paginas/CronogramaPainel.css'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
-import { Degustacao, SeloAssinante } from '../componentes/Premium'
-import { href, navegar } from '../util/rotas'
+import {  SeloAssinante } from '../componentes/Premium'
+import {  navegar } from '../util/rotas'
 import '../estilos/paginas/PlanoEstudo.css'
 import '../estilos/paginas/Cronograma.css'
 import '../estilos/paginas/CronogramaTorre.css'
 import '../estilos/componentes/Cristal.css'
 import { usarDiaAtual } from '../util/usarDiaAtual'
 import { chaveCivil, chaveDoDia, diaCivil, hojeBR, inicioDaChave, somarDias } from '../util/dia'
-import { CHAVE_RESUMAO_HOJE, lidoHoje, RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
+import { CHAVE_RESUMAO_HOJE,  RESUMAO_HOJE_VAZIO, type ResumaoHoje } from '../estado/resumaoLido'
 import { juntarMarcas, marcasDoPlano, opcoesComMarcas, type MarcasDia } from '../conta/marcasDia'
 import { ler } from '../estado/armazenamento'
 import { IndicadorSincronia } from '../componentes/IndicadorSincronia'
-import { CaixaResumos } from '../biblioteca/CaixaResumos'
-import { resumosDosSubtemas, subtemasDasQuestoes, usarIndiceBiblioteca } from '../biblioteca/recomendar'
-import { usarBiblioteca } from '../biblioteca/usarBiblioteca'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
 const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
@@ -53,7 +49,6 @@ const PROVAS = ['TEOT', 'TARO', 'ENARE R4', 'Outra prova']
 /** Próxima prova teórica do TEOT e do TEPOT: vem preenchida por padrão. */
 // A data também é usada pelos lembretes discretos de véspera.
 /** Semanas que o não assinante vê na prévia do próprio cronograma. */
-const SEMANAS_PREVIA = 2
 const FORMATO_CURTA = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit' })
 const curta = (d: Date) => FORMATO_CURTA.format(d)
 type Respondidas = Record<string, RegistroQuestao>
@@ -278,7 +273,7 @@ export function PlanoEstudo() {
     // sem as questões presas aos próximos dias puxados.
     const ids = c.puxados[hojeBR()] && c.dias[0]
       ? idsDaSessaoDoDia(c.dias[0], atuais).slice(0, 100)
-      : idsDoDiaPlano(indice, itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), { ...atuais, ...marcarReservadas(c) }, incluiSimulados(p))
+      : idsDoDiaPlano(indiceDoPlano(indice, p), itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), { ...atuais, ...marcarReservadas(c) }, incluiSimulados(p))
     if (!ids.length) return
     const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
     if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma', diaPlano: hojeBR() }))) return
@@ -319,7 +314,7 @@ export function PlanoEstudo() {
     navegar('/sessao')
   }
   /** Começa uma sessão já montada (diagnóstico, reta final, reativar, risco). */
-  async function comecarIds(ids: string[], origem: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar', temas: string[] = []) {
+  async function comecarIds(ids: string[], origem: 'cronograma' | 'diagnostico' | 'reta-final' | 'reativar' | 'erros', temas: string[] = []) {
     if (ficticio) { convidar('outro'); return }
     if (!ids.length) return
     if (!(await iniciarComAviso({ ...FILTROS_VAZIOS, temas, embaralhar: false, limite: ids.length }, ids, { origem }))) return
@@ -387,6 +382,21 @@ export function PlanoEstudo() {
     try { await salvarOpcoes(alternarSemana) } catch { definirPlano(plano); definirErro('Não foi possível salvar a semana difícil agora. Confira a conexão e tente de novo.') } finally { definirSalvandoOpcoes(false) }
   }
 
+  /** Muda uma opção do plano (só TEOT, dia dos erros): mostra na hora e o servidor confirma em seguida. */
+  async function mudarOpcao(alterar: (p: PlanoSalvo) => OpcoesPlano, falha: string) {
+    if (ficticio) { convidar('outro'); return }
+    if (!plano) return
+    definirSalvandoOpcoes(true); definirErro('')
+    definirPlano({ ...plano, opcoes: alterar(plano) })
+    if (exemplo) { definirSalvandoOpcoes(false); return }
+    try { await salvarOpcoes(alterar) } catch { definirPlano(plano); definirErro(falha) } finally { definirSalvandoOpcoes(false) }
+  }
+  const acoesVisao = {
+    aoRevanche: (ids: string[]) => comecarIds(ids, 'erros'),
+    aoSoTeot: (ligar: boolean) => mudarOpcao((p) => ({ ...(p.opcoes ?? {}), soTeot: ligar }), 'Não foi possível mudar para só TEOT agora. Confira a conexão e tente de novo.'),
+    aoDiaErros: (dia: number | null) => mudarOpcao((p) => ({ ...(p.opcoes ?? {}), diaErros: dia }), 'Não foi possível guardar o dia dos erros agora. Confira a conexão e tente de novo.'),
+  }
+
   const hub = montarHub()
   function montarHub(): HubDados | null {
     if (!indice || !plano || !calculo || !dadosHub) return null
@@ -433,9 +443,10 @@ export function PlanoEstudo() {
     const nome = primeiroNome(sessaoConta?.user.user_metadata?.nome)
     const area = calculo.hoje?.itens.find((i) => !i.mistura) ?? calculo.hoje?.itens[0] ?? null
     return (
-      <div className="empilha-2 pe cp cr cr--torre cf">
+      <div className="empilha-2 pe cp cr cr--torre cn cf">
         <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto ficticio={{ nome, aoConvidar: convidar }}
-          aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} hub={hub} />
+          aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} hub={hub} acoes={acoesVisao}
+          detalheSemanas={<SemanaASemana semanas={calculo.semanas.filter((s) => s.diasEstudo > 0)} aberto calculo={calculo} />} />
         {convite && <ConviteFicticio motivo={convite} nome={nome} area={area ? { slug: area.slug, nome: area.nome } : null}
           aoTreinar={(slug) => { definirConvite(null); void treinarGratis(slug) }} aoFechar={() => definirConvite(null)} />}
         <VisitaCronograma />
@@ -452,11 +463,12 @@ export function PlanoEstudo() {
   }
 
   return (
-    <div className="empilha-2 pe cp cr cr--torre">
+    <div className="empilha-2 pe cp cr cr--torre cn">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
-      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} />
+      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} acoes={acoesVisao}
+        detalheSemanas={<SemanaASemana semanas={calculo.semanas.filter((s) => s.diasEstudo > 0)} aberto calculo={calculo} />} />
       {/* A coruja ou o gato, de vez em quando, sentados num botão (easter egg). */}
       <VisitaCronograma />
     </div>
@@ -563,198 +575,6 @@ export interface HubDados {
   aoSemanaDificil: (ativar: boolean) => void
   aoCancelarAdiantar: () => void
   salvandoOpcoes: boolean
-}
-
-export function VisaoCronograma({ plano, calculo, indice, respondidas, aberto, aoComecar, aoAdiantar, aoPuxar, pendente = null, hub = null, aoAjustar, ficticio = null }: { plano: PlanoSalvo; calculo: CalculoPlano; indice?: Indice; respondidas?: Respondidas; aberto: boolean; aoComecar?: () => void; aoAdiantar?: (n: number) => void; /** Puxar um dia ("AAAA-MM-DD"): abre a sessão com as questões dele. */ aoPuxar?: (dia: string) => void; pendente?: { feitas: number; total: number; tema: string; simulado?: boolean } | null; hub?: HubDados | null; aoAjustar?: () => void; /** Cenário fictício de quem não assina: o painel do assinante com um plano de exemplo (CronogramaFicticio.tsx). */ ficticio?: { nome: string; aoConvidar: (motivo: MotivoConvite) => void } | null }) {
-  // O tour só é lido e gravado no cronograma do assinante (aberto): a vitrine não toca nele,
-  // para ele aparecer sozinho na primeira visita depois de assinar.
-  const [tourVisto, definirTourVisto] = usarArmazenado<boolean>('cronograma:tour-v2', false)
-  // O resumão marca a área como lida hoje (botão "Li esta área" ou um minuto com ela aberta).
-  const [resumaoHoje] = usarArmazenado<ResumaoHoje>(CHAVE_RESUMAO_HOJE, RESUMAO_HOJE_VAZIO)
-  const minutos = hub?.minutosQuestao ?? MINUTOS_POR_QUESTAO
-  const { sessao: sessaoConta } = usarConta()
-  // Quem já tinha fechado o tour neste aparelho leva o "já vi" para a conta.
-  useEffect(() => { if (aberto && !ficticio && tourVisto && sessaoConta) marcarAvisoNaConta(sessaoConta.user.user_metadata, 'cronograma-tour') }, [aberto, ficticio, tourVisto, sessaoConta])
-  const naRetaFinalComRoteiro = aberto && !!hub && (calculo.fase === 'revisao' || calculo.fase === 'prova' || calculo.fase === 'vespera')
-  const semanas = calculo.semanas.filter((s) => s.diasEstudo > 0)
-  const visiveis = aberto ? semanas : semanas.slice(0, SEMANAS_PREVIA)
-  const feitos = hub?.feitosDia ?? { data: '' }
-  // Calendário do mês (16/10/2026): só no cronograma do assinante; #/cronograma?calendario=1 abre direto.
-  const temCalendario = aberto && !!indice && !!respondidas
-  // Desde 16/10/2026 ele fica sempre aberto na página (embaixo de Hoje); "ver no calendário" só rola até ele.
-  const abrirCalendario = temCalendario ? () => document.getElementById('calendario')?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' }) : undefined
-  useEffect(() => {
-    if (!temCalendario || !location.hash.includes('calendario=1')) return
-    const t = setTimeout(() => abrirCalendario?.(), 300)
-    return () => clearTimeout(t)
-  }, [temCalendario]) // eslint-disable-line react-hooks/exhaustive-deps
-
-  // ── A lista de hoje ──
-  const itensDia = calculo.hoje?.itens ?? []
-  const principal = itensDia.find((i) => !i.mistura) ?? itensDia[0] ?? null
-  const mistura = itensDia.filter((i) => i !== principal)
-  const folgaHoje = calculo.tipoHoje === 'folga'
-  const metaFeita = calculo.metaDiaria > 0 && calculo.faltaHoje === 0
-  const corHoje = corDaArea(principal?.slug ?? calculo.dias.find((d) => d.itens.length)?.itens[0]?.slug)
-  // O resumo da Biblioteca que ensina os assuntos de hoje (pelos subtemas das questões do dia).
-  const biblioteca = usarIndiceBiblioteca()
-  const { leituras } = usarBiblioteca()
-  const subtemasHoje = useMemo(() => subtemasDasQuestoes(indice, (calculo.hoje?.itens ?? []).flatMap((i) => i.ids)), [indice, calculo.hoje])
-  // O dia escolhido no calendário (1/11/2026): os resumos ao lado acompanham o dia tocado; hoje, como antes.
-  const [diaEscolhido, definirDiaEscolhido] = useState<{ data: Date; ehHoje: boolean; ids: string[] } | null>(null)
-  const subtemasEscolhido = useMemo(() => (diaEscolhido && !diaEscolhido.ehHoje && diaEscolhido.ids.length ? subtemasDasQuestoes(indice, diaEscolhido.ids) : subtemasHoje), [indice, diaEscolhido, subtemasHoje])
-  const rotuloEscolhido = diaEscolhido && !diaEscolhido.ehHoje && diaEscolhido.ids.length ? diaEscolhido.data.toLocaleDateString('pt-BR', { weekday: 'short', day: 'numeric', month: 'numeric' }).replace('.', '') : undefined
-  const resumoHoje = resumosDosSubtemas(biblioteca, subtemasHoje)[0] ?? null
-  const lista: ItemChecklist[] = []
-  if (!calculo.provaPassou && !calculo.naRetaFinal) {
-    if (principal) lista.push({ id: 'resumao', titulo: 'Frases que caem do tema', texto: `As frases "Na prova" de ${principal.nome.toLowerCase()}, para chegar às questões sabendo o que procurar.`, minutos: aberto ? 4 : null, estado: !ficticio && lidoHoje(resumaoHoje, principal.slug) || (hub?.resumaoLido ?? []).includes(principal.slug) ? 'feito' : 'afazer', acao: aberto ? { rotulo: 'Ler', href: href(`/resumos/frases?tema=${principal.slug}`) } : undefined })
-    if (resumoHoje) {
-      const l = leituras[resumoHoje.id]
-      lista.push({ id: 'resumo-biblioteca', titulo: 'Resumo do capítulo', texto: <>{resumoHoje.titulo}: o capítulo na ordem em que a prova cobra, com as questões que já caíram no texto.{l?.progresso && !l.concluidoEm ? ` ${l.progresso}% lido.` : ''}</>, minutos: Math.max(1, Math.round(resumoHoje.minutos * (1 - (l?.progresso ?? 0) / 100))), estado: l?.concluidoEm || (l?.progresso ?? 0) >= 95 ? 'feito' : 'afazer', acao: { rotulo: l?.progresso ? 'Continuar' : 'Ler', href: href(`/resumos/${resumoHoje.id}`) }, opcional: true, icone: 'livro' })
-    }
-    const jaAdiantado = calculo.adiantadoHoje > 0 ? ` ${fraseAdiantadoHoje(calculo)}` : ''
-    // A vitrine mostra o jeito do dia, sem os números (orientação de 14/10): quantas e quanto tempo é do assinante.
-    if (calculo.metaDiaria > 0 && !aberto) lista.push({
-      id: 'novas', titulo: 'Questões novas',
-      texto: <>{principal ? <>{principal.nome}{mistura.length ? <>, com {mistura.map((m) => m.nome).join(' e ')} para misturar</> : null}</> : 'Do cronograma'}{incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados no meio' : ''}.</>,
-      minutos: null, estado: 'afazer',
-    })
-    else if (calculo.metaDiaria > 0) lista.push({
-      id: 'novas', titulo: `${calculo.metaDiaria} questões novas`,
-      texto: <>{principal && !metaFeita ? <>{mistura.length ? (calculo.adiantarFalta > 0 ? <>{principal.nome}, com {mistura.map((m) => m.nome).join(' e ')} para misturar</> : <>{principal.n} de {principal.nome} e {mistura.reduce((s, m) => s + m.n, 0)} de {mistura.map((m) => m.nome).join(' e ')} para misturar</>) : principal.nome}</> : 'Do cronograma'}{incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados no meio' : ''}. {calculo.feitasHoje > 0 ? `${Math.min(calculo.feitasHoje, calculo.metaDiaria)} de ${calculo.metaDiaria} feitas.` : ''}{jaAdiantado}</>,
-      minutos: calculo.metaDiaria * minutos, estado: metaFeita ? 'feito' : calculo.feitasHoje > 0 || pendente ? 'agora' : 'afazer',
-      progresso: { feitas: Math.min(calculo.feitasHoje, calculo.metaDiaria), total: calculo.metaDiaria },
-    })
-    else if (calculo.adiantadoHoje > 0) lista.push({ id: 'novas', titulo: 'Hoje já está adiantado', texto: `Você adiantou ${calculo.adiantadoHoje} questões; hoje sua meta é 0 (era ${calculo.metaHojeSemAdiantar}). Descanse ou adiante mais.`, minutos: null, estado: 'feito' })
-    const adiantando = Math.max(calculo.extraHoje, calculo.adiantarPedido)
-    if (adiantando > 0 && aberto) lista.push({
-      id: 'adiantadas', titulo: `+${adiantando} adiantadas`,
-      texto: calculo.adiantarFalta > 0 ? `Pedidas para adiantar: ${Math.min(calculo.extraHoje, adiantando)} de ${adiantando} feitas.` : 'Feitas além da meta. Saem dos próximos dias.',
-      minutos: calculo.adiantarFalta > 0 ? adiantando * minutos : null, estado: calculo.adiantarFalta > 0 ? (calculo.extraHoje > 0 ? 'agora' : 'afazer') : 'feito',
-      progresso: calculo.adiantarFalta > 0 ? { feitas: Math.min(calculo.extraHoje, adiantando), total: adiantando } : undefined,
-    })
-    if (calculo.miniHoje) lista.push({ id: 'mini', titulo: aberto ? `Mini-simulado de ${TAMANHO_MINI} questões` : 'Mini-simulado', texto: 'Cronometrado, com o que você já viu nas últimas semanas, misturado como na prova. Os seus erros e dúvidas vêm primeiro.', minutos: aberto ? TAMANHO_MINI * 1.5 : null, estado: feitos.mini ? 'feito' : 'afazer', acao: aberto && hub ? { rotulo: 'Começar', aoClicar: hub.aoMini } : undefined })
-  }
-  if (hub && !calculo.provaPassou && !calculo.naRetaFinal) {
-    // Revisões e flashcards ajudam a fixar, mas não são obrigatórios: ficam à parte, sem contar na meta.
-    if (hub.revisoesHoje > 0) lista.push({ id: 'revisoes', titulo: `${hub.revisoesHoje} ${hub.revisoesHoje === 1 ? 'revisão' : 'revisões'}`, texto: `Erros, chutes e dúvidas que voltam hoje · ~${formatarTempo(hub.revisoesHoje * minutos)}`, minutos: hub.revisoesHoje * minutos, estado: 'afazer', opcional: true, icone: 'reiniciar', acao: { rotulo: 'Revisar', href: href('/revisao') } })
-    lista.push({ id: 'flashcards', titulo: 'Flashcards', texto: 'Uma rodada curta para fixar o que você errou · ~5 min', minutos: 5, estado: feitos.flashcards ? 'feito' : 'afazer', opcional: true, icone: 'raio', acao: { rotulo: 'Abrir', href: href('/flashcards'), aoClicar: () => hub.aoMarcar('flashcards') } })
-  }
-
-  // ── O botão único ──
-  let botao: Parameters<typeof CartaoHoje>[0]['botao'] = null
-  if (!aberto) botao = { rotulo: 'Criar meu cronograma', detalhe: 'Exclusivo para assinantes', href: href('/assinatura'), ouro: true }
-  else if (pendente) botao = { rotulo: `Continuar: faltam ${pendente.total - pendente.feitas} questões`, detalhe: `Você parou na ${pendente.feitas + 1}ª. As que já respondeu ficam salvas.`, href: href('/sessao') }
-  else if (calculo.hoje && calculo.faltaHoje + calculo.adiantarFalta > 0) {
-    const n = calculo.faltaHoje + calculo.adiantarFalta
-    const so = calculo.faltaHoje === 0
-    botao = { rotulo: so ? `Continuar: faltam ${n} adiantadas` : calculo.feitasHoje > 0 ? `Continuar: faltam ${n} questões` : `Começar: ${n} questões`, detalhe: `${principal ? `${principal.nome}${mistura.length ? ` + ${mistura.map((m) => m.nome).join(' e ')}` : ''}` : 'Do cronograma'}${calculo.adiantarFalta > 0 && !so ? `, com ${calculo.adiantarFalta} adiantadas` : ''} · ~${formatarTempo(n * minutos)}`, aoClicar: aoComecar }
-  }
-  else if (calculo.miniHoje && !feitos.mini && hub) botao = { rotulo: 'Fazer o mini-simulado', detalhe: `${TAMANHO_MINI} questões · ~45 min`, aoClicar: hub.aoMini }
-  // Hoje terminado (ou folga): o botão passa a puxar o próximo dia de estudo (pedido do Tales, 19/10/2026),
-  // para quem não sabe que dá para tocar no dia no calendário.
-  const proximoPuxar = aberto && aoPuxar && !pendente ? proximoDiaParaPuxar(calculo) : null
-  let acaoTopo = botao
-  if (!botao && proximoPuxar) {
-    const t = textoPuxar(proximoPuxar)
-    const aoClicar = () => aoPuxar!(chaveCivil(proximoPuxar.data))
-    botao = { rotulo: t.rotulo, detalhe: `${t.detalhe} · ~${formatarTempo(proximoPuxar.total * minutos)} · contam para ${diaCurto(proximoPuxar.data).split(',')[0]}`, aoClicar, ouro: true }
-    // No topo cabe pouco: o mesmo botão, com a data embaixo.
-    const comecado = !!proximoPuxar.puxado?.feitas
-    const amanha = t.rotulo.includes('amanhã')
-    const semana = diaCurto(proximoPuxar.data).split(',')[0]
-    acaoTopo = { rotulo: comecado ? `Continuar ${semana}` : amanha ? 'Puxar amanhã' : `Puxar ${semana}`, detalhe: `${diaCurto(proximoPuxar.data)} · ${t.detalhe}`, aoClicar, ouro: true }
-  }
-  // Meta feita: o destaque passa a ser o painel de adiantar (e as revisões ficam como extra, sem cobrança).
-  const podeAdiantar = aberto && !!aoAdiantar && !calculo.naRetaFinal && !calculo.provaPassou && calculo.restante > 0
-  const painelAdiantar = podeAdiantar && hub ? <PainelAdiantar calculo={calculo} minutos={minutos} destaque={!botao} salvando={hub.salvandoOpcoes} aoAdiantar={aoAdiantar!} aoCancelar={hub.aoCancelarAdiantar} /> : null
-
-  const tituloHoje = calculo.provaPassou ? 'A prova chegou' : folgaHoje ? 'Hoje é folga' : !aberto && principal ? principal.nome : calculo.restante === 0 && !calculo.naRetaFinal ? 'Você cumpriu o cronograma inteiro' : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Hoje já está adiantado' : metaFeita && !calculo.miniHoje ? 'Meta de hoje feita' : principal ? principal.nome : calculo.miniHoje ? 'Dia de mini-simulado' : 'Hoje'
-  const porQue = folgaHoje ? 'Dia de descanso no seu plano: a meta foi espalhada pelos outros dias. Se quiser, adiante o próximo dia de estudo.'
-    : !aberto ? (principal ? porQueHoje(calculo, principal.slug, plano.prova, true) : '')
-    : calculo.metaDiaria === 0 && calculo.adiantadoHoje > 0 ? 'Você fez as questões de hoje num dia anterior. Pode descansar ou adiantar mais.'
-    : metaFeita ? `Feito: ${calculo.metaDiaria} questões. Revisões e flashcards são extras, se sobrar tempo.`
-    : calculo.tipoHoje === 'leve' ? `Dia leve (plantão): só ${calculo.metaDiaria} questões. ${principal ? porQueHoje(calculo, principal.slug, plano.prova).replace('Por que hoje: ', 'A área: ') : ''}`
-    : calculo.tipoHoje === 'dificil' ? `Semana difícil: só o dia mínimo (${calculo.metaDiaria} questões), para não quebrar a sequência.`
-    : principal ? porQueHoje(calculo, principal.slug, plano.prova) : calculo.restante === 0 ? 'Mantenha a revisão em dia e faça o Simulado Nacional do mês.' : ''
-
-  // O nome e duas frases com os dados da pessoa no topo (adendo do dono, 18/10/2026), com o tato
-  // dos e-mails (docs/emails/TOM.md): nada abaixo de 10 questões, nenhum acerto abaixo de 50%, sem cobrança.
-  const nome = primeiroNome(sessaoConta?.user.user_metadata?.nome)
-  const recados: ReactNode[] = []
-  if (aberto && !calculo.provaPassou) {
-    if (calculo.naRetaFinal) recados.push(<>Reta final: agora é revisar o que mais cai, sem conteúdo novo.</>)
-    else if (folgaHoje) recados.push(<>Hoje é dia de descanso. {calculo.amanha?.total ? <>Amanhã o plano segue com <b>{calculo.amanha.total >= 10 ? `${calculo.amanha.total} questões` : 'poucas questões'}</b>.</> : 'O plano segue no próximo dia de estudo.'}</>)
-    else if (metaFeita) recados.push(<>A meta de hoje está feita. O que vier agora adianta os próximos dias.</>)
-    else if (calculo.metaDiaria > 0) recados.push(<>A meta de hoje: <b>{calculo.metaDiaria >= 10 ? `${calculo.metaDiaria} questões` : 'poucas questões'}</b>, cerca de {formatarTempo(calculo.metaDiaria * minutos)}.</>)
-    const forte = (hub?.desempenho ?? []).filter((a) => a.respondidas >= 15 && a.acerto >= 50 && a.nome !== hub?.semana?.fraca).sort((a, b) => b.acerto - a.acerto)[0]
-    if (forte) recados.push(ficticio ? <>Neste exemplo, a área mais forte é <b>{forte.nome}</b>, com {forte.acerto}% de acerto.</> : <>Sua área mais forte até aqui: <b>{forte.nome}</b>, com {forte.acerto}% de acerto.</>)
-  }
-
-  return <>
-    {ficticio && <FaixaFicticio nome={ficticio.nome} />}
-    {!aberto && <p className="pe-aviso-previa"><Icone nome="cadeado" tamanho={15} /> Um exemplo do cronograma até o {plano.prova}, montado com o seu histórico. Montar e seguir o seu, com a data, o ritmo e a semana que você escolher, é exclusivo para assinantes.</p>}
-
-    {/* O botão do dia também no topo: o calendário vem antes do cartão Hoje e o empurra para baixo. */}
-    {/* A Torre do Tempo (31/10/2026): o cenário pintado do topo. O tour da primeira visita fica curto, logo abaixo
-        do botão do dia, com o "Entendi" e o registro de sempre. */}
-    <OndeVoceEsta plano={plano} calculo={calculo} previa={!aberto} selo={ficticio ? 'Cenário fictício' : undefined} aoAjustar={aberto ? aoAjustar : undefined} acao={naRetaFinalComRoteiro ? null : acaoTopo} nome={nome} recados={recados}
-      rodape={aberto && hub?.semana ? <ResumoSemana {...hub.semana} /> : undefined} cena={<CenaTorre />}
-      depois={aberto && !ficticio && !tourVisto && !avisoVistoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') ? <TourCronograma compacto aoFechar={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }} /> : undefined} />
-
-    {/* Prioridade da página (Tales, 17/10/2026): o calendário grande vem logo abaixo de "Onde você está";
-        o detalhe de hoje, a coluna lateral e os recolhidos ficam depois. */}
-    {temCalendario && <CalendarioCronograma embutido ficticio={!!ficticio} nome={nome} plano={plano} calculo={calculo} indice={indice!} respondidas={respondidas!} minutos={minutos} revisoesHoje={hub?.revisoesHoje ?? 0}
-      acoes={{ aoComecar, pendente, aoPuxar: podeAdiantar ? aoPuxar : undefined, proximo: proximoPuxar, salvando: hub?.salvandoOpcoes }} aoSelecionar={definirDiaEscolhido} />}
-
-    <div className="cp-colunas">
-      <div className="cp-col cp-col--principal">
-        <div className="cp-ordem-1">{naRetaFinalComRoteiro && hub
-          ? <HojeRetaFinal calculo={calculo} acoes={hub.retaFinal} minutos={minutos} />
-          : <CartaoHoje calculo={calculo} titulo={tituloHoje} porQue={porQue} assuntos={principal ? [...principal.assuntos, ...mistura.flatMap((m) => m.assuntos.slice(0, 1))] : []} itens={lista} botao={botao} cor={corHoje} adiantar={painelAdiantar}
-            aviso={folgaHoje && aberto && aoAjustar ? <p className="cp-hoje__ajustar"><span>Vai estudar hoje ou quer mudar as folgas?</span><button type="button" className="botao botao--principal" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Ajustar o cronograma</button></p> : resumoHoje && !(leituras[resumoHoje.id]?.concluidoEm) ? <a className="cp-hoje__resumo" href={href(`/resumos/${resumoHoje.id}`)}><Icone nome="livro" tamanho={16} /><span><strong>Antes das questões, leia o resumo</strong><small>{resumoHoje.titulo} · ~{resumoHoje.minutos} min · o que já caiu, ano a ano</small></span><Icone nome="direita" tamanho={15} /></a> : undefined} />}</div>
-        {(hub?.mostrarDiagnostico || (hub?.esquecidos.length ?? 0) > 0) && <div className="cp-ordem-2">
-          {hub?.mostrarDiagnostico && <AvisoDiagnostico aoFazer={hub.aoDiagnostico} simulados={incluiSimulados(plano)} />}
-          {hub && <AvisoEsquecimento esquecidos={hub.esquecidos} aoReativar={hub.aoReativar} />}
-        </div>}
-        {aberto && !temCalendario && <div className="cp-ordem-6"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
-      </div>
-      <div className="cp-col cp-col--lado">
-        {!calculo.provaPassou && <div className="cp-ordem-3"><CaixaResumos subtemasHoje={subtemasEscolhido} rotuloDia={rotuloEscolhido} /></div>}
-        {aberto && !calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-3"><LinhaAmanha dia={calculo.amanha} /></div>}
-        {temCalendario && <div className="cp-ordem-4"><ComoEstouIndo calculo={calculo} constancia={hub?.constancia ?? null} minutosQuestao={minutos} /></div>}
-        {!calculo.naRetaFinal && !calculo.provaPassou && <div className="cp-ordem-4"><EstaSemana calculo={calculo} plano={plano} constancia={hub?.constancia ?? null} aoSemanaDificil={aberto && hub ? hub.aoSemanaDificil : undefined} salvando={hub?.salvandoOpcoes} simples={!aberto} compacta={temCalendario} /></div>}
-        {!calculo.provaPassou && !temCalendario && <div className="cp-ordem-5">{aberto
-          ? <Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} aoVerCalendario={abrirCalendario} />
-          : <div className="cp-previa-depois">
-              <Degustacao className="pe-degustacao" titulo="O resto é do assinante" texto={<ul className="cp-vitrine-lista">
-                <li>Amanhã e as semanas até a prova, com os marcos</li>
-                <li>A sua data, o seu tempo por dia, folgas e dias de plantão</li>
-                <li>Ajuste automático quando atrasa ou adianta</li>
-                <li>Semana difícil, mini-simulados e reta final</li>
-                <li>Desempenho, prontidão e mapa de risco por área</li>
-              </ul>} acao={null}>
-                <Depois calculo={calculo} plano={plano} maximo={3} semMais />
-              </Degustacao>
-            </div>}</div>}
-      </div>
-    </div>
-
-        {aberto && hub && <div className="cp-recolhidos cp-recolhidos--grade">
-          <Recolhido titulo="Constância: os últimos 14 dias" icone="fogo"><CartaoConstancia constancia={hub.constancia} elogio={hub.elogio} /></Recolhido>
-          <Recolhido titulo="Desempenho e prontidão por área" icone="grafico"><Prontidao areas={hub.prontidao} /><CartaoDesempenho areas={hub.desempenho} media={hub.media} /></Recolhido>
-          <Recolhido titulo="Mapa de risco" icone="alvo"><MapaRisco riscos={hub.riscos} cegos={hub.cegos} aoTreinar={hub.aoTreinarFoco} /></Recolhido>
-          <Recolhido titulo="OrtoQuestões Simulados" icone="estrela"><CartaoSimulados plano={plano} feitas={hub.simulados.feitas} total={hub.simulados.total} acerto={hub.simulados.acerto} aoTrocar={hub.aoTrocarSimulados} /></Recolhido>
-          {!calculo.provaPassou && <Recolhido titulo="Até a prova, semana a semana" icone="rota"><Depois calculo={calculo} plano={plano} detalhe={<SemanaASemana semanas={visiveis} aberto calculo={calculo} />} /></Recolhido>}
-          {!ficticio && <Recolhido titulo="Levar para o calendário do celular" icone="calendario"><ExportarCalendario calculo={calculo} plano={plano} /></Recolhido>}
-          {/* Recolhido sempre: o tour de 3 partes já explica a página na primeira visita. */}
-          <ComoFuncionaCompleto aberto={false} plano={plano} />
-        </div>}
-
-    {aberto && <p className="cr-rodape">
-      <a className="cr-rodape__link" href={href('/temas-que-mais-caem')}><Icone nome="grafico" tamanho={16} /> Temas que mais caem</a>
-    </p>}
-  </>
 }
 
 /** A lista detalhada de cada semana: os assuntos, o porquê e quanto cada um cai. */

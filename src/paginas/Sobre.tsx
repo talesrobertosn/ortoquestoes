@@ -35,7 +35,7 @@ const GRUPOS: { titulo: string; lide: string; itens: Recurso[] }[] = [
     itens: [
       { titulo: 'Cronograma até a prova', texto: 'Você diz a data e o tempo por dia; cada dia chega decidido.', destino: '/cronograma', icone: 'rota', assinante: true },
       { titulo: 'Temas que mais caem', texto: 'A contagem dos assuntos nas provas oficiais, área por área.', destino: '/temas-que-mais-caem', icone: 'grafico', assinante: true },
-      { titulo: 'Biblioteca de Resumos', texto: 'Os temas que mais caem, com questões no meio do texto.', destino: '/resumos', icone: 'lapis', beta: true },
+      { titulo: 'Biblioteca de Resumos', texto: 'Os temas que mais caem, com questões no meio do texto.', destino: '/resumos', icone: 'lapis' },
       { titulo: 'Simulado Nacional', texto: 'Uma prova por mês, no tempo, com nota e posição.', destino: '/simulado-nacional', icone: 'alvo', assinante: true },
     ],
   },
