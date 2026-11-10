@@ -3,7 +3,7 @@ import type { User } from '@supabase/auth-js'
 import { chave, supabase, url, type ClienteSupabase } from './supabase'
 import { dadosAceiteTermos } from './termos'
 import { dadosOrigem } from './origem'
-import { eventoMeta } from './consentimento'
+import { eventoAnuncio } from './consentimento'
 import { rotaDe } from '../util/rotas'
 import { guardarVoltar, rotaVoltar, tomarVoltar } from './passagem'
 
@@ -106,8 +106,9 @@ async function completarPerfil(cliente: ClienteSupabase, usuario: User) {
   const nova = Date.now() - Date.parse(usuario.created_at ?? '') < 86_400_000
   if (nova && !m.origem) {
     Object.assign(dados, dadosOrigem())
-    eventoMeta('CompleteRegistration', { content_name: 'google' })
   }
+  // O primeiro aceite é gravado no perfil: voltar no mesmo dia não conta um novo cadastro.
+  if (nova && !m.termos_versao) eventoAnuncio('CompleteRegistration', { content_name: 'google' })
   if (!Object.keys(dados).length) return
   try { await cliente.auth.updateUser({ data: dados }) } catch { /* tenta de novo no próximo login */ }
 }

@@ -50,6 +50,30 @@ export function usarMinhaIndicacao(usuario: string | null | undefined) {
   return { dados, carregado }
 }
 
+/** Um amigo que entrou pelo meu link (meus_amigos_indicados, migração 20261109230000): só o primeiro nome. */
+export interface AmigoIndicado { nome: string; entrou_em: string; respondidas: number; confirmada_em: string | null; dias: number }
+
+/**
+ * A lista dos amigos (página Indicar). null quando o servidor ainda não tem a função (SQL não colado) ou falhou: a
+ * página continua só com os totais.
+ */
+export function buscarAmigosIndicados(): Promise<AmigoIndicado[] | null> {
+  return chamarRpc<AmigoIndicado[]>('meus_amigos_indicados', {})
+    .then((linhas) => linhas.map((l) => ({ ...l, respondidas: Number(l.respondidas), dias: Number(l.dias) })))
+    .catch(() => null)
+}
+
+export function usarAmigosIndicados(usuario: string | null | undefined) {
+  const [amigos, definir] = useState<AmigoIndicado[] | null>(null)
+  useEffect(() => {
+    if (!usuario) { definir(null); return }
+    let ativo = true
+    void buscarAmigosIndicados().then((l) => { if (ativo) definir(l) })
+    return () => { ativo = false }
+  }, [usuario])
+  return amigos
+}
+
 export function previaConvite(codigo: string): Promise<string | null> {
   return chamarRpcPublica<string | null>('previa_convite', { p_codigo: codigo }).catch(() => null)
 }

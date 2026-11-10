@@ -13,6 +13,7 @@ import { ContinuarJornada } from './ContinuarJornada'
 import { IconePixel } from './IconePixel'
 import { GRUPOS, PRINCIPAIS, SO_NA_BUSCA, ehExterno, grupoConta, type Pagina } from './rotas'
 import { Visitantes } from './Visitantes'
+import { BordaDeFogo } from '../BordaDeFogo'
 import { FogueiraDoMenu } from './FogueiraDoMenu'
 import '../../estilos/componentes/Portal.css'
 
@@ -85,8 +86,9 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
                 const fechado = bloqueado(p)
                 const destino = fechado && p.icone === 'relatorio' ? '/assinatura' : p.destino
                 return <li key={p.rotulo}>
-                  <a className="pt-item" href={ehExterno(destino) ? recurso(destino) : href(destino)} onClick={aoFechar} aria-current={atual === p.destino && p.icone !== 'relatorio' ? 'page' : undefined}
+                  <a className={p.icone === 'indicar' ? 'pt-item pt-item--fogo' : 'pt-item'} href={ehExterno(destino) ? recurso(destino) : href(destino)} onClick={aoFechar} aria-current={atual === p.destino && p.icone !== 'relatorio' ? 'page' : undefined}
                     style={{ '--atraso': `${g.itens.indexOf(p) * 18}ms` } as CSSProperties}>
+                    {p.icone === 'indicar' && <BordaDeFogo chamas={9} />}
                     <IconePixel nome={p.icone} tamanho={48} />
                     <span className="pt-item__texto"><strong>{p.rotulo}</strong><small>{p.texto}</small></span>
                     {fechado ? <span className="pt-cadeado" title="Recurso do assinante"><Icone nome="cadeado" tamanho={12} /><span className="so-leitor">, recurso do assinante</span></span> : <Icone nome="direita" tamanho={15} />}

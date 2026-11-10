@@ -164,9 +164,26 @@
 .pt-item__texto strong { font-size: 0.875rem; font-weight: 700; line-height: 1.25; }
 .pt-item__texto small { font-size: 0.78rem; line-height: 1.3; color: var(--pt-tinta-2); }
 
+/* "Indique e ganhe" em chamas (Tales, 10/11/2026): um halo de fogo ao redor do botão para chamar a atenção. Só o botão
+   leva fogo; o movimento é só em transform e opacity (e "menos movimento" desliga tudo, abaixo). */
+.pt-item--fogo { position: relative; isolation: isolate; margin-top: 1.5rem; border-radius: 14px; background: linear-gradient(180deg, rgba(255, 190, 70, 0.3), rgba(255, 96, 30, 0.16)); }
+.pt-item--fogo:hover { background: linear-gradient(180deg, rgba(255, 190, 70, 0.42), rgba(255, 96, 30, 0.24)); }
+.pt-item--fogo .pt-item__texto strong { color: var(--pt-tinta); }
+
 .pt-chao { position: relative; z-index: 3; display: flex; align-items: center; gap: 0.4rem 1.2rem; min-height: 50px; padding: 0 1.4rem; border-top: 1px solid var(--pt-linha); border-radius: 0 0 22px 22px;
   background: var(--pt-papel-2); font-size: 0.8125rem; }
 .pt-chao a { color: var(--pt-tinta-2); text-decoration: underline; text-underline-offset: 3px; }
+
+/* O dragão do tesouro: chega voando pela direita, pousa acima do rodapé, solta fogo e vai embora. */
+.pt-dragao { position: absolute; z-index: 6; right: 30%; bottom: 2px; pointer-events: none; filter: drop-shadow(0 0 10px rgba(255, 150, 60, 0.55)); }
+.pt-dragao__botao { display: block; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; pointer-events: auto; }
+.pt-dragao__botao:focus-visible { outline: 3px solid var(--pt-verde); outline-offset: 2px; border-radius: 8px; }
+.pt-dragao .dragao-pixel { display: block; width: 176px; }
+.pt-dragao--chegando { animation: pt-dragao-chega 1.3s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
+.pt-dragao--saindo { animation: pt-dragao-sai 1.3s ease-in both; }
+@keyframes pt-dragao-chega { from { opacity: 0; transform: translate(60%, -170%) scale(0.7); } 15% { opacity: 1; } }
+@keyframes pt-dragao-sai { to { opacity: 0; transform: translate(-70%, -190%) scale(0.7); } }
+@media (max-width: 48rem) { .pt-dragao .dragao-pixel { width: 136px; } .pt-dragao { right: 22%; bottom: 0; } }
 
 /* Os visitantes: a coruja pousa no alto (à esquerda do X); o gato passeia no rodapé. */
 .pt-coruja { position: absolute; z-index: 5; top: calc(1.1rem + 44px); right: 72px; transform: translateY(-94%); }

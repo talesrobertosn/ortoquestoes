@@ -1536,7 +1536,9 @@ kbd {
 .aviso-cookies__botoes { display: flex; gap: 0.35rem; flex-shrink: 0; }
 .aviso-cookies .botao--pequeno { min-height: 2.1rem; padding: 0.3rem 0.8rem; font-size: 0.82rem; }
 @media (max-width: 40rem) {
-  .aviso-cookies { border-radius: var(--raio-cartao); bottom: calc(4.4rem + env(safe-area-inset-bottom)); padding: 0.5rem 0.5rem 0.5rem 0.75rem; }
+  .aviso-cookies { border-radius: var(--raio-cartao); bottom: calc(4.4rem + env(safe-area-inset-bottom)); padding: 0.85rem; flex-direction: column; align-items: stretch; }
+  .aviso-cookies__botoes { justify-content: flex-end; }
+  .aviso-cookies .botao--pequeno { min-height: 2.75rem; }
   .aviso-cookies p { font-size: 0.76rem; }
 }
 

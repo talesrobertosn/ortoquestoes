@@ -1,15 +1,16 @@
+import { createPortal } from 'react-dom'
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react'
 import { recurso } from '../../../config'
 import { Mascote } from '../../mascote/Mascote'
 import { folhaGato, type IdLinhaGato } from '../../mascote/sprites'
 import { CorujaPixel, type EstadoCoruja } from '../../../biblioteca/sala/CorujaPixel'
-import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../../mascote/falasBichos'
+import { CONCEITOS_CORUJA, FALAS_ESPADA, FALAS_ESPADA_APAGADA, FALAS_GATO, proximaFala } from '../../mascote/falasBichos'
 import { FALAS_PAUSA_APAGADA, FALAS_PAUSA_FOGUEIRA } from '../../mascote/falas'
 import { EVENTO_AMOSTRA } from '../AmostraRespondivel'
 import { urlCss } from '../../../config'
 import { luzNoBicho, mapasDeLuz, type Luz } from '../../mascote/luz'
 import { cenarioDaHora, faixaDoCenario, type Cenario } from './cenarios'
-import { ROTEIROS, tempoDeLer, type Acao, type Bicho, type Roteiro } from './roteiros'
+import { EVENTO_ROTEIRO, ROTEIROS, tempoDeLer, type Acao, type Bicho, type Roteiro } from './roteiros'
 import type { IdComportamento } from '../../mascote/comportamentos'
 import type { Periodo } from '../../../estado/aparencia'
 
@@ -57,7 +58,8 @@ function planejarBalao(balao: HTMLElement, alturaBicho: number, deslocs: { x: nu
   for (let d = 12; d <= v.w; d += 12) passos.push(d, -d)
   // Evita também o esqueleto e a fala dele; prefere ficar perto do bicho (em cima ou embaixo) a ir longe.
   // Também os outros bichos e as outras falas (a coruja e o gato falando ao mesmo tempo não se cobrem).
-  const bichos = [...heroi.querySelectorAll('.hd-mascote .mascote__corpo, .hd-mascote:not([data-lado="oculto"]) .mascote__balao, .hd-balao:not(.hd-balao--sem-lugar), .hd-gato:not(.hd-gato--fora), .hd-coruja:not(.hd-coruja--fora)')].filter((e) => e !== balao).map(caixa)
+  const bichos = [...heroi.querySelectorAll('.hd-mascote .mascote__corpo, .hd-mascote:not([data-lado="oculto"]) .mascote__balao, .hd-balao:not(.hd-balao--sem-lugar), .hd-gato:not(.hd-gato--fora), .hd-coruja:not(.hd-coruja--fora), .hd-espada__toque, .hd-fogueira')].filter((e) => e !== balao).map(caixa)
+  const tampas = [...heroi.querySelectorAll(TAMPAS)].map(caixa)
   const embaixo = b0.h + alturaBicho + 14
   const perto = b0.w * 0.6
   // Nunca por cima de um bicho ou de outra fala: sem lugar livre de verdade, o nível 8 tira o balão da vista.
@@ -68,9 +70,18 @@ function planejarBalao(balao: HTMLElement, alturaBicho: number, deslocs: { x: nu
       if (Math.abs(dx) > longe) return false
       const c = { x: b.x + dx, y: b.y + dy, w: b.w, h: b.h }
       if (c.x < v.x || c.y < v.y || c.x + c.w > v.x + v.w || c.y + c.h > v.y + v.h) return false
-      return livre(c, heroi, cena) && bichos.every((t) => cruza(c, t) === 0)
+      return tampas.every((t) => cruza(c, t) === 0) && bichos.every((t) => cruza(c, t) === 0)
     })
     for (const [k, [dy, longe]] of tentativas.entries()) { const dx = acha(dy, longe); if (dx !== undefined) return { dx, dy, nivel: k } }
+    // A resposta ao toque na espada procura também os intervalos livres entre o título e os bichos.
+    if (balao.classList.contains('hd-balao--espada')) {
+      for (let distancia = 12; distancia <= v.h; distancia += 12) {
+        for (const dy of [-distancia, distancia]) {
+          const dx = acha(dy, Infinity)
+          if (dx !== undefined) return { dx, dy, nivel: dy > 0 ? 5 : 4 }
+        }
+      }
+    }
     return { dx: 0, dy: 0, nivel: 8 }
   })
 }
@@ -91,7 +102,7 @@ function encaixarBalao(balao: HTMLElement | null, alturaBicho: number) {
 
 /** Um bicho fala de cada vez na cena: quem começa a falar avisa, e o outro fecha o balão. */
 const EVENTO_FALA = 'hd-bicho-fala'
-const avisarFala = (quem: 'gato' | 'coruja' | 'esqueleto' | 'diretor') => window.dispatchEvent(new CustomEvent(EVENTO_FALA, { detail: quem }))
+const avisarFala = (quem: 'gato' | 'coruja' | 'esqueleto' | 'diretor' | 'espada') => window.dispatchEvent(new CustomEvent(EVENTO_FALA, { detail: quem }))
 const ouvirFala = (f: (quem: string) => void) => {
   const ouvir = (e: Event) => f(String((e as CustomEvent).detail))
   window.addEventListener(EVENTO_FALA, ouvir)
@@ -182,7 +193,19 @@ function CorujaDoAcampamento({ poleiros: POLEIROS, luzes, periodo }: { poleiros:
   // A luz da cena na coruja: do lado da fogueira (ou do sol, da lua) que estiver mais perto do poleiro.
   const luz = luzNoBicho(pt.x, pt.y - 12, luzes, periodo)
   // A coruja é a sábia: cada toque explica um conceito que cai na prova.
-  const tocar = () => { definirAcenou((n) => n + 1); definirFala(proximaFala('coruja', CONCEITOS_CORUJA)); avisarFala('coruja') }
+  // Segredo (09/11/2026): três perguntas seguidas e a coruja cochila. Entra no álbum dos bichos.
+  const toques = useRef<number[]>([])
+  const tocar = () => {
+    const agora = Date.now()
+    toques.current = [...toques.current.filter((t) => agora - t < 6000), agora]
+    definirAcenou((n) => n + 1)
+    if (toques.current.length >= 3) {
+      toques.current = []
+      definirFala('Zzz... três perguntas seguidas. Até a coruja precisa de revisão espaçada.')
+      guardarNoAlbum('coruja-cochilo')
+    } else definirFala(proximaFala('coruja', CONCEITOS_CORUJA))
+    avisarFala('coruja')
+  }
   // Um fala de cada vez: se o gato começa a falar, a coruja fecha o balão dela.
   useEffect(() => ouvirFala((quem) => { if (quem !== 'coruja') definirFala(null) }), [])
   return <>
@@ -268,7 +291,7 @@ function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObjec
     const aVista = (b: Bicho) => !!el.querySelector(SELETOR_BICHO[b])
     const sortear = (): Roteiro | null => {
       const agora = new Date()
-      const raridade = Math.random() < 0.08
+      const raridade = Math.random() < 0.4
       const opcoes = ROTEIROS.filter((r) => r.id !== ultimo && (!r.raro || raridade) && (!r.horas || r.horas.includes(periodo)) && (!r.cenarios || r.cenarios.includes(cenario))
         && (!r.quando || r.quando(agora)) && (r.precisa ?? []).every(aVista)
         && (r.passos.every((p) => p.acao?.tipo !== 'coruja-voar') || Number(el.querySelector<HTMLElement>('.hd-coruja')?.dataset.livres ?? 0) >= 2)
@@ -315,7 +338,7 @@ function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObjec
     const agendar = (primeira: boolean) => {
       const forcado = primeira && pedido ? (pedido === 'volta' ? roteiroDaVolta(4) : ROTEIROS.find((r) => r.id === pedido) ?? null)
         : primeira && dias >= 2 ? roteiroDaVolta(dias) : null
-      const [min, max] = forcado ? (pedido ? [2, 2] : [6, 9]) : primeira ? [25, 45] : celular() ? [150, 300] : [60, 120]
+      const [min, max] = forcado ? (pedido ? [2, 2] : [6, 9]) : primeira ? [8, 14] : celular() ? [60, 120] : [35, 70]
       timer = window.setTimeout(() => {
         const ocupado = el.querySelector('.hd-balao, .mascote__balao')
         const r = forcado ?? (!document.hidden && visivel && !ocupado ? sortear() : null)
@@ -324,7 +347,13 @@ function DiretorDeCena({ palco, periodo, cenario, controles }: { palco: RefObjec
       }, (min + Math.random() * (max - min)) * 1000)
     }
     agendar(true)
-    return () => { window.clearTimeout(timer); rodando++; io?.disconnect(); tirar() }
+    // Um segredo pediu uma cena (a palavra digitada na página inicial): ela entra na hora, por cima do que estiver.
+    const pedirCena = (e: Event) => {
+      const r = ROTEIROS.find((x) => x.id === String((e as CustomEvent).detail))
+      if (r) { parar(); void encenar(r) }
+    }
+    window.addEventListener(EVENTO_ROTEIRO, pedirCena)
+    return () => { window.clearTimeout(timer); rodando++; io?.disconnect(); tirar(); window.removeEventListener(EVENTO_ROTEIRO, pedirCena) }
   }, [palco, periodo, cenario])
   if (!fala) return null
   return <span ref={balao} key={fala.n} className={`hd-balao hd-balao--longo hd-balao--diretor hd-balao--de-${fala.quem} ${fala.x > 52 ? 'hd-balao--esquerda' : 'hd-balao--direita'}`} role="status"
@@ -381,6 +410,63 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
   const [ponto, definirPonto] = useState(0)
   const [andando, definirAndando] = useState<'direita' | 'esquerda' | null>(null)
   const [semLugar, definirSemLugar] = useState(false)
+  // A espada (09/11/2026, pedido do Tales: referência a Dark Souls, e "tem que aparecer muito fácil"). O primeiro
+  // toque já traz a faixa dourada atravessando a tela (entra no álbum); os outros sempre falam, e a cada 4 a faixa volta.
+  const [falaEspada, definirFalaEspada] = useState<string | null>(null)
+  const [faiscas, definirFaiscas] = useState(0)
+  const [consolidado, definirConsolidado] = useState(0)
+  const toquesEspada = useRef<number[]>([])
+  const balaoEspada = useRef<HTMLSpanElement>(null)
+  useEffect(() => ouvirFala((quem) => { if (quem !== 'espada') definirFalaEspada(null) }), [])
+  useLayoutEffect(() => {
+    if (!falaEspada) return
+    encaixarBalao(balaoEspada.current, 30)
+    // Recalcula depois que a fala automática do mascote sai do DOM.
+    const quadro = requestAnimationFrame(() => encaixarBalao(balaoEspada.current, 30))
+    return () => cancelAnimationFrame(quadro)
+  }, [falaEspada])
+  useEffect(() => { if (!falaEspada) return; const t = window.setTimeout(() => definirFalaEspada(null), tempoDeLer(falaEspada)); return () => window.clearTimeout(t) }, [falaEspada])
+  useEffect(() => { if (!consolidado) return; const t = window.setTimeout(() => definirConsolidado(0), 4200); return () => window.clearTimeout(t) }, [consolidado])
+  const tocarEspada = () => {
+    const agora = Date.now()
+    toquesEspada.current = [...toquesEspada.current, agora]
+    definirFaiscas(agora)
+    avisarFala('espada')
+    if (toquesEspada.current.length % 4 === 1) {
+      definirFalaEspada(null)
+      definirConsolidado(agora)
+      guardarNoAlbum('chama-consolidada')
+      return
+    }
+    definirFalaEspada(fogoAceso ? proximaFala('espada', FALAS_ESPADA) : proximaFala('espada-apagada', FALAS_ESPADA_APAGADA))
+  }
+  // Segredos de teclado na página inicial (fora de campos de texto): palavras que os bichos entendem e o código antigo
+  // dos videogames. Nenhum aparece escrito no site; o álbum dos bichos só dá pistas.
+  useEffect(() => {
+    let digitado = ''
+    let setas: string[] = []
+    const CODIGO = ['arrowup', 'arrowup', 'arrowdown', 'arrowdown', 'arrowleft', 'arrowright', 'arrowleft', 'arrowright', 'b', 'a']
+    const cena = (id: string) => window.dispatchEvent(new CustomEvent(EVENTO_ROTEIRO, { detail: id }))
+    const tecla = (e: KeyboardEvent) => {
+      if (e.ctrlKey || e.metaKey || e.altKey || (e.target as HTMLElement)?.closest?.('input, textarea, select, [contenteditable="true"]')) return
+      const k = e.key.toLowerCase()
+      setas = [...setas, k].slice(-CODIGO.length)
+      if (setas.join() === CODIGO.join()) { setas = []; cena('codigo-antigo'); return }
+      if (e.key.length !== 1) return
+      digitado = (digitado + k).slice(-12)
+      if (digitado.endsWith('louvaosol')) { digitado = ''; cena('louva-o-sol') }
+      else if (digitado.endsWith('estus')) { digitado = ''; cena('estus') }
+      else if (digitado.endsWith('miau')) {
+        digitado = ''
+        guardarNoAlbum('miau')
+        definirGato((g) => (g === 'dormindo' || g === 'ronronando' ? 'acordado' : g))
+        definirFalaGato('Miau? Você fala gato? Então já sabe que eu não vou levantar.')
+        avisarFala('gato')
+      }
+    }
+    window.addEventListener('keydown', tecla)
+    return () => window.removeEventListener('keydown', tecla)
+  }, [])
   // O gato é o preguiçoso: cada toque, uma frase; no 6º toque seguido, a tala (o segredo antigo).
   const [falaGato, definirFalaGato] = useState<string | null>(null)
   const toquesGato = useRef(0)
@@ -466,7 +552,7 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
       b.style.animation = 'none'
       try {
         // Também não cobre o gato, a coruja nem a fala deles.
-        const bichos = [...heroi.querySelectorAll('.hd-gato:not(.hd-gato--fora), .hd-coruja:not(.hd-coruja--fora), .hd-balao:not(.hd-balao--sem-lugar)')].map(caixa)
+        const bichos = [...heroi.querySelectorAll('.hd-gato:not(.hd-gato--fora), .hd-coruja:not(.hd-coruja--fora), .hd-balao:not(.hd-balao--sem-lugar), .hd-espada__toque, .hd-fogueira')].map(caixa)
         for (const lado of ['cima', 'esquerda', 'direita', 'baixo']) {
           mascote.dataset.lado = lado
           const c = caixa(balao)
@@ -589,7 +675,7 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
   const [emCena, definirEmCena] = useState(false)
   const [estrela, definirEstrela] = useState(0)
   useEffect(() => { if (!estrela) return; const t = window.setTimeout(() => definirEstrela(0), 1600); return () => window.clearTimeout(t) }, [estrela])
-  const [dourado] = useState(() => Math.random() < 1 / 150)
+  const [dourado] = useState(() => Math.random() < 1 / 10)
   useEffect(() => { if (dourado) guardarNoAlbum('gato-dourado') }, [dourado])
   const levarGato = (ate: 'fogo' | 'esqueleto' | 'longe') => {
     const { gato: g, ponto: atual } = agora.current
@@ -617,6 +703,7 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
     estrela: () => definirEstrela(++contaDiretor.current),
   }
 
+  const permitirFalaMascote = !emCena && !falaEspada && !consolidado
   return (
     // Só os bichos e a fogueira são alcançáveis (teclado e leitor de tela); o resto da arte é enfeite (aria-hidden).
     <div className="hd-cena">
@@ -643,16 +730,22 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
         {/* A fogueira se toca: pausa de jornada opcional (clique, toque ou teclado). Sem botão desenhado: é o próprio fogo. */}
         <button type="button" className="hd-fogueira" style={lugarFogo(218, 100, 44, 54)} aria-pressed={pausa > 0}
           aria-label={fogoAceso ? 'Descansar na fogueira' : 'Sentar na fogueira apagada'} onClick={() => { if (!pausa) avisarFala('esqueleto'); definirPausa((p) => (p ? 0 : Date.now())) }} />
+        {/* A espada se toca pelo punho e pela parte de cima da lâmina; o resto da fogueira continua sendo a pausa. */}
+        {comEspada && <button type="button" className="hd-espada__toque" style={lugarFogo(229, 104, 22, 22)} aria-label="Tocar na espada fincada na fogueira" onClick={tocarEspada} />}
+        {comEspada && faiscas > 0 && !reduzMovimento() && <span key={faiscas} className="hd-espada__faiscas" aria-hidden="true" style={lugarFogo(232, 104, 16, 16)}>{[0, 1, 2, 3, 4, 5].map((i) => <i key={i} style={{ '--a': `${i * 60 + 20}deg` } as CSSProperties} />)}</span>}
+        {falaEspada && <span ref={balaoEspada} className="hd-balao hd-balao--longo hd-balao--espada" role="status" onClick={() => definirFalaEspada(null)}
+          style={{ left: `${(fogoX / 480) * 100}%`, top: `${((fogoY - 43) / 200) * 100}%` }}>{falaEspada}</span>}
+        {consolidado > 0 && createPortal(<span key={consolidado} className="hd-consolidado" role="status"><span>Conhecimento consolidado</span></span>, document.body)}
         {/* O mascote, em pé ao lado da fogueira: um comportamento diferente a cada visita (componentes/mascote). */}
         {pausa
-          ? <Mascote key={`pausa-${pausa}`} className={classeMascote} decorativo comportamento={fogoAceso ? 'fogueira' : 'descansando'} falas={fogoAceso ? FALAS_PAUSA_FOGUEIRA : FALAS_PAUSA_APAGADA} style={estiloMascote} />
+          ? <Mascote key={`pausa-${pausa}`} className={classeMascote} decorativo falar={permitirFalaMascote} comportamento={fogoAceso ? 'fogueira' : 'descansando'} falas={fogoAceso ? FALAS_PAUSA_FOGUEIRA : FALAS_PAUSA_APAGADA} style={estiloMascote} />
           : poseDiretor
           ? <Mascote key={`diretor-${poseDiretor.n}`} className={classeMascote} decorativo falar={false} comportamento={poseDiretor.id} style={estiloMascote} />
           : descanso
-          ? <Mascote key="descanso" className={classeMascote} decorativo falar={!emCena} comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={estiloMascote} />
+          ? <Mascote key="descanso" className={classeMascote} decorativo falar={permitirFalaMascote} comportamento="fogueira" reacao={festa ? 'comemora2' : null} style={estiloMascote} />
           : reacaoAmostra?.id === 'quadro'
-            ? <Mascote key={`quadro-${reacaoAmostra.n}`} className={classeMascote} decorativo falar={!emCena} comportamento="quadro" style={estiloMascote} />
-            : <Mascote key="dia" comportamento={cenario.posePadrao} className={classeMascote} decorativo falar={!emCena} reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
+            ? <Mascote key={`quadro-${reacaoAmostra.n}`} className={classeMascote} decorativo falar={permitirFalaMascote} comportamento="quadro" style={estiloMascote} />
+            : <Mascote key="dia" comportamento={cenario.posePadrao} className={classeMascote} decorativo falar={permitirFalaMascote} reacao={reacaoAmostra?.id === 'comemora2' ? 'comemora2' : null} style={estiloMascote} />}
         {pausa > 0 && <span className="so-leitor" role="status">{fogoAceso ? 'Pausa na fogueira: o esqueleto senta para se aquecer e o gato ronrona.' : 'A fogueira está apagada; o esqueleto senta um instante ao lado dela.'}</span>}
         {/* O gato (pixel art de scripts/gerar_mascote.py): dorme; um clique e acorda; outro e aparece com a tala. */}
         <button type="button" aria-label="Falar com o gato" tabIndex={semLugar ? -1 : undefined} aria-hidden={semLugar || undefined}
@@ -661,7 +754,7 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
           onClick={() => {
             toquesGato.current++
             jaAndou.current = false
-            if (toquesGato.current % 6 === 0) { definirFalaGato(null); definirGato('tala'); return }
+            if (toquesGato.current % 4 === 0) { definirFalaGato(null); definirGato('tala'); return }
             definirGato((g) => (g === 'dormindo' || g === 'ronronando' ? 'acordado' : g))
             definirFalaGato(dourado && toquesGato.current === 1 ? 'Hoje acordei dourado. Não se acostume.' : proximaFala('gato', FALAS_GATO))
             avisarFala('gato')

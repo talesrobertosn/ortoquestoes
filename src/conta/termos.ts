@@ -15,7 +15,7 @@
  * ninguém a aceitar de novo os Termos); numa revisão conjunta, como a de
  * 16/10/2026, recebem a mesma data.
  */
-export const VERSAO_TERMOS = '2026-10-16'
+export const VERSAO_TERMOS = '2026-11-10'
 
 /** Versão das condições específicas exibidas antes de abrir o checkout. */
 export const VERSAO_CONDICOES_ASSINATURA = '2026-11-03'
@@ -25,16 +25,14 @@ export const VERSAO_CONDICOES_ASSINATURA = '2026-11-03'
  * reaceite e no topo dos dois documentos. Trocar junto com a versão.
  */
 export const MUDANCAS_TERMOS: readonly string[] = [
-  'Os Termos de Uso e as Condições da Assinatura foram reescritos e reorganizados em cláusulas numeradas, com um resumo em linguagem simples no topo.',
-  'Nova regra de descontinuidade: se o site for encerrado, deixar de vender planos, ficar gratuito para todos ou perder um recurso essencial do plano, quem tem período pago recebe de volta o valor proporcional aos dias que faltam.',
-  'Ficou mais claro o que acontece no arrependimento de 7 dias, na garantia, no cancelamento, em cobranças recusadas e em contestações de pagamento.',
-  'A parte de privacidade agora explica cada finalidade e base legal, inclusive o uso das páginas visitadas para entender o interesse nos planos e personalizar mensagens, e como deixar de receber cada tipo de e-mail.',
-  'Regras de uso mais detalhadas: conta pessoal, proibição de cópia e extração do acervo, ranking e apelidos, funcionalidades em teste (como os Flashcards) e solução amigável de problemas pelo suporte.',
+  'Incluímos a OpenAI entre os serviços de medição de anúncios, com os pixels carregados apenas após o aceite no aviso de cookies.',
+  'Explicamos a correspondência automática da OpenAI: dados de cadastro presentes nos formulários podem ser transformados em hashes no navegador para associar conversões aos anúncios. Hashes são identificadores, não dados anônimos.',
+  'A escolha sobre cookies pode ser recusada ou revogada pelo rodapé, sem limitar o uso do site. Os eventos comerciais enviados pelo site não incluem CPF, respostas, desempenho ou assuntos estudados.',
 ]
 
 /**
  * O que mudou nas Condições da Assinatura na versão atual (só nelas: os Termos de Uso
- * continuam na versão de 16/10/2026). Aparece no topo das Condições.
+ * estão na versão de 10/11/2026). Aparece no topo das Condições.
  */
 export const MUDANCAS_CONDICOES: readonly string[] = [
   'Valores dos planos: mensal R$ 39,90, semestral R$ 209,40 (R$ 34,90 por mês) e anual R$ 358,80 (R$ 29,90 por mês).',

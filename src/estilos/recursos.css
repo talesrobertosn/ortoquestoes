@@ -342,6 +342,10 @@
 .ig__whatsapp:hover { background: #18914a; }
 .ig__copiar { background: transparent; color: #fff6e0; border: 2px solid #c99a3b; }
 .ig__copiar:hover { background: rgba(201, 154, 59, 0.18); }
+.ig__destaque { margin: 2.3rem 0 0 !important; max-width: none !important; }
+.ig__fogo { position: relative; isolation: isolate; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 3.2rem; padding: 0 1.7rem; border-radius: var(--raio-controle); font-family: var(--fonte-marca); font-size: 1.15rem; font-weight: 800; text-decoration: none;
+  color: #2a1204 !important; background: linear-gradient(180deg, #ffe9a0 0%, #ffb53a 52%, #f0741c 100%); transition: transform 0.12s ease, filter 0.12s ease; }
+.ig__fogo:hover { transform: translateY(-2px); filter: brightness(1.08); }
 .ig__mais { display: inline-flex; align-items: center; gap: 0.25rem; color: #f4cf7c !important; font-weight: 700; font-size: var(--corpo-menor); text-decoration: none; padding: 0 0.4rem; }
 .ig__trilha { list-style: none; margin: 0; padding: 0.9rem; display: grid; gap: 0.6rem; border-radius: var(--raio-controle); background: rgba(10, 8, 4, 0.35); border: 2px dashed rgba(201, 154, 59, 0.55); }
 .ig__trilha li { display: grid; grid-template-columns: 52px minmax(0, 1fr); align-items: center; gap: 0.7rem; font-size: var(--corpo-menor); color: #f3ead6; font-weight: 600; }

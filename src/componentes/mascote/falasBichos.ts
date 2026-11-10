@@ -115,6 +115,35 @@ export const CONCEITOS_CORUJA: readonly string[] = [
   'Coalizão tarsal: a calcaneonavicular aparece no raio X oblíquo (sinal do tamanduá); a talocalcânea, no sinal do C.',
   'Legg-Calvé-Perthes: Catterall e Herring classificam; Stulberg avalia o resultado final.',
   'Crescimento do membro inferior: a fise do fêmur distal cresce cerca de 9 mm por ano e a da tíbia proximal, cerca de 6 mm.',
+  // Segunda leva (09/11/2026): conceitos que aparecem nos resumos e nos comentários das questões.
+  'Índice de Garden no colo do fêmur: cerca de 160 graus no AP e 180 no perfil. Trocar os dois é a pegadinha clássica.',
+  'Sinal de Lowell: as curvas em S na junção da cabeça com o colo do fêmur. Perder o S sugere desvio.',
+  'Via de Hardinge: dividir o glúteo médio mais de 5 cm acima do trocânter arrisca o nervo glúteo superior.',
+  'Kocher-Langenbeck: o ciático é protegido com o quadril estendido e o joelho fletido.',
+  'Cada via, seu nervo: posterior, ciático; anterior, femoral; lateral direta, glúteo superior.',
+  'Lesão do glúteo superior enfraquece os abdutores: a pelve cai do lado oposto no apoio. É o Trendelenburg.',
+  'Ângulo cervicodiafisário do fêmur: em torno de 125 a 135 graus. Não confunda com o índice de Garden.',
+  'Linha de Shenton quebrada no raio X da pelve: pense em fratura do colo ou em luxação do quadril.',
+  'No perfil do cotovelo, a linha umeral anterior cruza o terço médio do capítulo. Fora disso, desconfie da supracondiliana.',
+  'Coxim gorduroso posterior visível no cotovelo é derrame: muitas vezes, fratura escondida.',
+  'Ângulo de Baumann ajuda a conferir a redução da supracondiliana na criança.',
+  'Insall-Salvati acima de 1,2 indica patela alta.',
+  'Ângulo Q aumentado favorece a instabilidade lateral da patela.',
+  'McMurray e Thessaly procuram lesão de menisco.',
+  'Encondroma é o tumor ósseo mais comum da mão.',
+  'Ollier são encondromas múltiplos; Maffucci, encondromas com hemangiomas. O risco de malignizar sobe nos dois.',
+  'Osteocondroma: a cortical e a medular continuam com as do osso de origem.',
+  'Tumor marrom do hiperparatireoidismo pode imitar uma lesão lítica qualquer. Peça cálcio e PTH.',
+  'Tumor glômico: dor forte, sensível ao frio, num ponto embaixo da unha.',
+  'Na flexão, todos os dedos apontam para o escafoide. Se um cruza, há rotação na fratura.',
+  'Colo do 5º metacarpo tolera bastante angulação; o do 2º e do 3º, bem pouca.',
+  'Escafoide com raio X normal e dor na tabaqueira: imobilize e confirme. A fratura pode aparecer depois.',
+  'O nervo axilar passa pelo espaço quadrangular junto da artéria circunflexa umeral posterior.',
+  'Túnel do tarso: compressão do nervo tibial posterior atrás do maléolo medial.',
+  'Disfunção do tibial posterior: o sinal dos muitos dedos e a dificuldade de ficar na ponta de um pé só.',
+  'Fratura do processo lateral do tálus é a fratura do snowboarder. Escapa fácil no raio X.',
+  'Sinal de Galeazzi na displasia do quadril: um joelho mais baixo que o outro, do lado luxado.',
+  'Dedo em martelo com fragmento grande e subluxação da falange distal: aí a conversa vira cirúrgica.',
 ]
 
 export const FALAS_GATO: readonly string[] = [
@@ -164,6 +193,62 @@ export const FALAS_GATO: readonly string[] = [
   'Miau é a resposta certa? Não? Então volto a dormir.',
   'Sou adepto do tratamento conservador. Muito conservador.',
   'Me chama quando sair o gabarito.',
+  // Segunda leva (09/11/2026): mais preguiça, com orgulho.
+  'Hoje eu pulei a revisão. Pulei não: dormi em cima dela.',
+  'Meu músculo mais treinado é o de bocejar.',
+  'Fiz flashcards. Deitei em todos.',
+  'Não estou parado. Estou em consolidação primária.',
+  'Estudo em blocos: um bloco de sono, outro bloco de sono.',
+  'O cronograma disse descanso. Eu sigo o cronograma à risca.',
+  'Tenho tendinite de tanto não fazer nada.',
+  'Ler o enunciado inteiro? Eu leio o título e durmo.',
+  'Plantão? Eu faço plantão no colo de alguém.',
+  'Minha posição favorita é a de Fowler. Com almofada.',
+  'Hoje acordei produtivo. Já passou.',
+  'Se cochilar fosse questão, eu estava no topo do ranking.',
+  'Prova prática: deitar no teclado na hora certa.',
+  'Vim, vi, dormi.',
+  'Não é preguiça. É poupar cartilagem.',
+  'O esqueleto estuda por dois. Eu durmo por três.',
+  'Revisão espaçada? Eu espaço até a próxima vida.',
+  'Gosto de questão fácil. De questão nenhuma, mais ainda.',
+  'A coruja passa a noite acordada. Coitada.',
+  'Eu durmo 16 horas por dia. Faltam só 8.',
+  'Meu único objetivo hoje é achar o lugar mais quente.',
+  'Abri um livro. Ele era quentinho. Fim do estudo.',
+  'Não me chame de preguiçoso. Me chame mais tarde.',
+  'Sonhei com o TEOT. Eu dormia na prova e passava.',
+  'Exercício de hoje: espreguiçar. O de amanhã: espreguiçar de novo.',
+]
+
+/**
+ * A espada fincada na fogueira (09/11/2026, pedido do Tales: "referência a Dark Souls"). Um toque e, nem sempre, ela
+ * diz alguma coisa: frases originais no clima das fogueiras de descanso e das mensagens deixadas no chão, sem citar
+ * texto de jogo. Com a fogueira apagada (sequência zerada), as frases da brasa.
+ */
+export const FALAS_ESPADA: readonly string[] = [
+  'Fogueira acesa. Daqui você recomeça quando quiser.',
+  'Você descansou. As questões erradas voltaram para a revisão.',
+  'Prepare-se para estudar.',
+  'Mensagem no chão: cuidado com Galeazzi adiante.',
+  'Mensagem no chão: tente revisão, mas sem pressa.',
+  'Mensagem no chão: Monteggia à frente. Olhe a ulna.',
+  'Mensagem no chão: atalho adiante. É a revisão espaçada.',
+  'Mensagem no chão: leia o enunciado. Depois, leia de novo.',
+  'Não fique vazio por dentro: uma questão por dia mantém a chama.',
+  'Cada erro aqui é uma alma guardada. Volte para buscar na revisão.',
+  'Louve a sequência. Ela esquenta mais que o sol.',
+  'Este chefe tem duas fases: o TARO e o TEOT.',
+  'A chama não pede pressa. Pede que você volte.',
+  'Rolar não desvia de pegadinha. Ler as alternativas, sim.',
+  'Você sentiu um calor familiar. A sequência está viva.',
+  'A lâmina está fincada há muito tempo. Paciência também é técnica.',
+  'Ninguém atravessa a névoa sem antes estudar o caminho.',
+]
+export const FALAS_ESPADA_APAGADA: readonly string[] = [
+  'A chama se apagou. Uma questão hoje e ela volta.',
+  'Brasa fria, espada firme. Recomece daqui.',
+  'Até a fogueira mais antiga acende de novo com uma faísca.',
 ]
 
 const embaralhar = (n: number) => {
@@ -176,7 +261,7 @@ const embaralhar = (n: number) => {
  * A próxima fala de uma lista: embaralhada uma vez por sessão do navegador, sem repetir até acabar (e nunca a mesma
  * duas vezes seguidas na virada). `chave` separa as listas (coruja, gato).
  */
-export function proximaFala(chave: 'coruja' | 'gato', lista: readonly string[]): string {
+export function proximaFala(chave: 'coruja' | 'gato' | 'espada' | 'espada-apagada', lista: readonly string[]): string {
   const nome = `bichos:fala:${chave}`
   let estado: { ordem: number[]; i: number } | null = null
   try { estado = JSON.parse(sessionStorage.getItem(nome) ?? 'null') } catch { /* sem sessionStorage */ }

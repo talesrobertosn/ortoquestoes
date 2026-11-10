@@ -35,3 +35,11 @@ O build local tem aproximadamente 414 MB de conteúdo em 28578 arquivos: 17634 J
 A execução 42711249840 ficou verde, mas a etapa de deploy foi pulada porque outra atualização funcional já estava na branch. Verde no workflow não comprova publicação. É obrigatório conferir a conclusão da etapa e os arquivos da página pública.
 
 Não foi possível comparar os hashes dos dois artefatos: o token permite ler os metadados, mas o download dos arquivos retorna HTTP 403. Os logs disponíveis mostram onde a sincronização para; não revelam a causa interna do serviço Pages. Não remover HTMLs, imagens ou dados do acervo como tentativa de reduzir tamanho sem validar seus consumidores e preservar as URLs públicas.
+
+## Easter eggs da bonfire — correção de 09/11/2026
+
+A espada visual já acompanhava a âncora própria do Abrigo, mas o botão invisível de toque, as faíscas e o balão ainda usavam as coordenadas do acampamento. Agora os três acompanham a mesma âncora `fogo`.
+
+O primeiro toque no punho visível mostra “Conhecimento consolidado” e registra `chama-consolidada` no álbum local. Toques seguintes mostram as falas da espada; a pausa no fogo continua separada. A interação interrompe a conversa anterior, e o mascote suspende sua fala automática enquanto o easter egg responde. Balões evitam os botões da espada e do fogo. Quando os encaixes próximos não servem, a fala da espada procura outra faixa livre da cena, respeitando textos e bichos.
+
+Regressão: `fixtures/e2e_bonfire_inicio.mjs`. O teste usa as coordenadas da lâmina desenhada para um toque real (não força um botão por seletor), confere faixa no primeiro toque, álbum, fala legível e o segredo de teclado `estus`, nos seis cenários, celular/computador e temas claro/escuro. Dados e API fictícios; nenhum progresso de estudo é alterado.

@@ -21,9 +21,22 @@ import '../estilos/paginas/Bichos.css'
 
 type Raridade = { id: string; nome: string; pista: string; de: 'esqueleto' | 'gato' | 'coruja' }
 const RARIDADES: Raridade[] = [
-  { id: 'gato-dourado', nome: 'O gato dourado', pista: 'Uma visita em 150, ele acorda dourado na página inicial.', de: 'gato' },
-  { id: 'estrela-cadente', nome: 'A estrela cadente', pista: 'Só à noite, quando a coruja olha para o céu.', de: 'coruja' },
-  { id: 'osso-trocado', nome: 'O osso trocado', pista: 'Às vezes o esqueleto se monta com uma costela fora do lugar.', de: 'esqueleto' },
+  // Pistas que dizem o que fazer (Tales, 09/11/2026: "tem que aparecer muito fácil").
+  { id: 'chama-consolidada', nome: 'Conhecimento consolidado', pista: 'Toque na espada fincada na fogueira da página inicial.', de: 'esqueleto' },
+  { id: 'coruja-cochilo', nome: 'A coruja cochila', pista: 'Toque três vezes seguidas na coruja.', de: 'coruja' },
+  { id: 'miau', nome: 'Você fala gato', pista: 'Na página inicial, digite miau.', de: 'gato' },
+  { id: 'louva-o-sol', nome: 'Louvado seja o sol', pista: 'Na página inicial, digite louvaosol. Ou espere: ela também aparece sozinha.', de: 'esqueleto' },
+  { id: 'estus', nome: 'O frasco de café', pista: 'Na página inicial, digite estus. Ou espere o esqueleto beber sozinho.', de: 'esqueleto' },
+  { id: 'codigo-antigo', nome: 'O código antigo', pista: 'No computador, aperte ↑ ↑ ↓ ↓ ← → ← → B A na página inicial.', de: 'esqueleto' },
+  { id: 'gato-dourado', nome: 'O gato dourado', pista: 'Uma visita em cada dez, o gato acorda dourado. Volte mais tarde.', de: 'gato' },
+  { id: 'estrela-cadente', nome: 'A estrela cadente', pista: 'À noite, fique um pouco na página inicial: a coruja olha para o céu.', de: 'coruja' },
+  { id: 'nevoa', nome: 'A névoa do chefe', pista: 'Fique na página inicial: o esqueleto avista uma névoa no caminho.', de: 'esqueleto' },
+  { id: 'mimico', nome: 'O baú suspeito', pista: 'Fique na página inicial: um baú aparece e o gato desconfia.', de: 'gato' },
+  { id: 'osso-trocado', nome: 'O osso trocado', pista: 'Fique na página inicial: o esqueleto se monta com uma costela fora do lugar.', de: 'esqueleto' },
+  { id: 'meia-noite', nome: 'O gato da meia-noite', pista: 'Abra a página inicial entre meia-noite e uma da manhã.', de: 'gato' },
+  { id: 'tesouro-espada', nome: 'A espada do tesouro', pista: 'Na página Indique e ganhe, toque na espada no alto do ouro.', de: 'esqueleto' },
+  { id: 'dragao-fogo', nome: 'O fogo do dragão', pista: 'Na página Indique e ganhe, toque no dragão em cima do ouro.', de: 'esqueleto' },
+  { id: 'gato-recrutador', nome: 'O gato recrutador', pista: 'Na página Indique e ganhe, toque três vezes no gato.', de: 'gato' },
 ]
 
 const POSES_ESQUELETO: { id: IdComportamento; nome: string }[] = [
@@ -106,7 +119,7 @@ export function Bichos() {
           fala={falaEsq} outraFala={outraEsq} poses={POSES_ESQUELETO} pose={poseEsq} definirPose={(id) => definirPoseEsq(id as IdComportamento)}
           retrato={<Mascote key={poseEsq} comportamento={poseEsq} falar={false} interativo={false} className="bx-esqueleto" />} />
         <Ficha classe="gato" nome="O gato" papel="O preguiçoso oficial" mora="Todos os cantos quentes: a fogueira, a estufa, o tapete do gabinete"
-          encontrar="Toque nele seis vezes seguidas. Ele não gosta, mas aparece de tala."
+          encontrar="Toque nele quatro vezes seguidas. Ele não gosta, mas aparece de tala."
           fala={falaGato} outraFala={outraGato} poses={POSES_GATO} pose={poseGato} definirPose={(id) => definirPoseGato(id as IdLinhaGato)}
           retrato={<GatoPixel key={poseGato} estado={poseGato} className="bx-gato" />} />
         <Ficha classe="coruja" nome="A coruja" papel="A sábia da biblioteca" mora="Os poleiros: placas, vigas, armários e a cornija da vitrine"
@@ -119,7 +132,7 @@ export function Bichos() {
       <section className="bx-album" aria-labelledby="bx-album-titulo">
         <header>
           <h2 id="bx-album-titulo">Álbum das raridades</h2>
-          <p><b>{vistas}</b> de {RARIDADES.length} vistas. Elas aparecem sozinhas, de vez em quando, na página inicial.</p>
+          <p><b>{vistas}</b> de {RARIDADES.length} achadas. Cada carta diz como encontrar.</p>
         </header>
         <ul>
           {RARIDADES.map((r) => {
