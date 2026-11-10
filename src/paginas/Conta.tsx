@@ -20,7 +20,7 @@ import { usarTema } from '../estado/tema'
 import { dadosAceiteTermos, dataDaVersao, VERSAO_TERMOS } from '../conta/termos'
 import { AvisoTermos } from '../componentes/AvisoTermos'
 import { dadosOrigem } from '../conta/origem'
-import { abrirPreferenciasCookies, eventoMeta, PIXEL_META } from '../conta/consentimento'
+import { abrirPreferenciasCookies, eventoAnuncio, PIXEL_META } from '../conta/consentimento'
 import { textoErro } from '../conta/erros'
 import { emailTrazido, esquecerEmailTrazido, guardarVoltar, rotaVoltar, tomarVoltar } from '../conta/passagem'
 import { gravarConfirmacaoPendente, lerConfirmacaoPendente, limparConfirmacaoPendente } from '../conta/confirmacaoPendente'
@@ -382,7 +382,7 @@ export function Conta({ consulta }: { consulta?: URLSearchParams }) {
         // Com a confirmação ligada, o Supabase não revela que o e-mail já existe:
         // devolve um usuário sem identidades. É o sinal de cadastro repetido.
         if (data.user && data.user.identities?.length === 0) { falhar('Este e-mail já tem cadastro no Orto Questões. Entre com a sua senha ou recupere o acesso.', 'ja_cadastrado'); return }
-        eventoMeta('CompleteRegistration', { content_name: 'email' })
+        eventoAnuncio('CompleteRegistration', { content_name: 'email' })
         // Conta criada: agora o passo 2 (perfil). O pop-up de confirmar o e-mail
         // vem depois dele, para não cobrir o formulário.
         if (!data.session) gravarConfirmacaoPendente(email.trim())

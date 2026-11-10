@@ -91,6 +91,7 @@ jobs:
           VITE_FLASHCARDS_VENDA: '1'
           # Pixel do Meta (anúncios). Vazio: usa o do código (src/conta/consentimento.ts).
           VITE_META_PIXEL_ID: ${{ vars.VITE_META_PIXEL_ID }}
+          VITE_OPENAI_PIXEL_ID: ${{ vars.VITE_OPENAI_PIXEL_ID }}
         run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

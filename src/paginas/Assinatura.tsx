@@ -6,7 +6,7 @@ import { Icone, type NomeIcone } from '../componentes/Icone'
 import { Simbolo } from '../marca/Simbolo'
 import { JanelaCentral } from '../componentes/JanelaCentral'
 import { VERSAO_CONDICOES_ASSINATURA } from '../conta/termos'
-import { eventoMeta } from '../conta/consentimento'
+import { eventoAnuncio } from '../conta/consentimento'
 import { href, navegar } from '../util/rotas'
 import { cpfValido } from '../util/cpf'
 import { linkConta } from '../conta/passagem'
@@ -145,7 +145,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
 
   function escolher(plano: Plano) {
     if (!pagamentosHabilitados || !sessao) return
-    eventoMeta('AddToCart', { content_name: plano.id, currency: 'BRL', value: plano.total })
+    eventoAnuncio('AddToCart', { content_name: plano.id, currency: 'BRL', value: plano.total })
     definirPlanoEscolhido(plano)
     definirPix(null)
     definirCpf('')
@@ -163,7 +163,7 @@ export function Assinatura({ consulta }: { consulta?: URLSearchParams }) {
     if (!planoEscolhido || !aceitouCondicoes || !pagamentosHabilitados || !sessao || abrindoCheckout) return
     definirAbrindoCheckout(true)
     definirMensagem('Preparando checkout seguro…')
-    eventoMeta('InitiateCheckout', { content_name: planoEscolhido.id, currency: 'BRL', value: planoEscolhido.total, payment_type: meioPagamento })
+    eventoAnuncio('InitiateCheckout', { content_name: planoEscolhido.id, currency: 'BRL', value: planoEscolhido.total, payment_type: meioPagamento })
     try {
       if (meioPagamento === 'pix') {
         const r = await chamarFuncao<PixGerado>('criar-pix', {
