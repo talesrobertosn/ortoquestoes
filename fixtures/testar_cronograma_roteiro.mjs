@@ -203,6 +203,30 @@ try {
   const comResumo = cPux.dias.filter((d) => d.total > 0).slice(0, 30).map((d) => m.resumosDoDia(biblioteca, indice, d.itens.flatMap((i) => i.ids)).length)
   assert.ok(comResumo.every((n) => n >= 1), `dia sem resumo nos 30 primeiros: ${comResumo.join(',')}`)
 
+  // ── 6. Painel: previsão no ritmo real, áreas para melhorar e histórico dos dias ──
+  const pv = m.previsaoDeTermino(indice, respondidas, planos['opcoes-nulas'], cPux, agora)
+  // 7 dias antes de hoje: 3 a 9/11; domingo 8 é folga → 6 dias de estudo; 5 dias de 45 e ontem com 20.
+  assert.equal(pv.ritmo, Math.round(((45 * 5 + 20) / 6) * 10) / 10)
+  assert.equal(pv.precisa, cPux.metaDiaNormal)
+  assert.ok(pv.termina > agora && pv.folga < 0, 'no ritmo de ~41 por dia o conteúdo passa do começo da reta final')
+  const rapido = m.previsaoDeTermino(indice, respondidas, planos['opcoes-nulas'], { ...cPux, restante: 40 }, agora)
+  assert.ok(rapido.folga > 0 && rapido.termina.getDay() !== 0, 'termina num dia de estudo, com folga')
+  assert.deepEqual(m.previsaoDeTermino(indice, {}, { ...comum, criado_em: agora.toISOString() }, cPux, agora).ritmo, null)
+  const hist = m.historicoDosDias(indice, respondidas, planos['opcoes-nulas'])
+  assert.equal(hist.get('2026-11-09').n, 20)
+  assert.equal(hist.get('2026-10-28').n, 12)
+  assert.ok(!hist.has('2026-11-08') && !hist.has('2026-10-15'), 'folga e dias de antes do plano ficam de fora')
+  assert.equal([...hist.values()].reduce((s, d) => s + d.n, 0), cPux.feitas, 'o histórico soma o que o plano conta como feito')
+  assert.ok([...hist.values()].every((d) => d.areas.reduce((s, a) => s + a.n, 0) === d.n && d.certas <= d.validas))
+  const { areas: ar, media: md } = m.areasParaMelhorar(cPux.temas)
+  assert.ok(md > 50 && md < 90)
+  assert.ok(ar.length >= 10 && ar.every((a) => a.cobertura >= 0 && a.cobertura <= 100))
+  assert.ok(ar.every((a, i) => i === 0 || a.impacto <= ar[i - 1].impacto), 'a ordem é de onde vale mais melhorar')
+  assert.ok(ar.filter((a) => a.situacao === 'melhorar').every((a) => a.diferenca <= -5))
+  const fraca = m.areasParaMelhorar([{ slug: 'a', nome: 'A', faltam: 10, acerto: 40, acertoEstimado: 40, respondidas: 50, incidencia: 2 }, { slug: 'b', nome: 'B', faltam: 10, acerto: 90, acertoEstimado: 90, respondidas: 50, incidencia: 1 }, { slug: 'c', nome: 'C', faltam: 5, acerto: null, acertoEstimado: null, respondidas: 0, incidencia: 3 }])
+  assert.deepEqual(fraca.areas.map((a) => [a.slug, a.situacao]), [['a', 'melhorar'], ['b', 'forte'], ['c', 'sem-dados']])
+  assert.equal(fraca.media, 65)
+
   console.log('OK: cronograma novo (migração do formato antigo, só TEOT, balanço de ontem, erros do cronograma e resumos do dia).')
 } finally {
   await rm(pasta, { recursive: true, force: true })

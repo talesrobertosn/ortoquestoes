@@ -19,18 +19,15 @@ import { idsDoFoco, posicaoDaArea, type AreaIncidencia, type Foco } from '../dad
 import { idsRevisaoHoje } from '../estado/planoRevisao'
 import { usarRitmoRevisao } from '../estado/preferencias'
 import {       HojeRetaFinal } from './CronogramaHub'
-import { corDaArea } from '../dados/coresAreas'
 import { VisaoCronograma } from './CronogramaVisao'
 export { VisaoCronograma }
 import { ConviteFicticio,  type MotivoConvite } from './CronogramaFicticio'
 import { CenaTorre } from '../componentes/cronograma/CenaTorre'
-import { VisitaCronograma } from '../componentes/cronograma/VisitaCronograma'
 import { vistaDoCronograma } from '../dados/vistaCronograma'
 import { CONTEXTO_VAZIO, montarSessao } from '../dados/acervo'
 import '../estilos/paginas/CronogramaPainel.css'
 import { Carregando } from '../componentes/Estados'
 import { Icone } from '../componentes/Icone'
-import {  SeloAssinante } from '../componentes/Premium'
 import {  navegar } from '../util/rotas'
 import '../estilos/paginas/PlanoEstudo.css'
 import '../estilos/paginas/Cronograma.css'
@@ -44,13 +41,10 @@ import { ler } from '../estado/armazenamento'
 import { IndicadorSincronia } from '../componentes/IndicadorSincronia'
 
 const DIAS_SEMANA = ['dom', 'seg', 'ter', 'qua', 'qui', 'sex', 'sáb']
-const ROTULO_COBRANCA: Record<number, string> = { 4: 'prioridade máxima', 3: 'prioridade alta', 2: 'prioridade média', 1: 'prioridade baixa', 0: 'fora do ranking' }
 const PROVAS = ['TEOT', 'TARO', 'ENARE R4', 'Outra prova']
 /** Próxima prova teórica do TEOT e do TEPOT: vem preenchida por padrão. */
 // A data também é usada pelos lembretes discretos de véspera.
 /** Semanas que o não assinante vê na prévia do próprio cronograma. */
-const FORMATO_CURTA = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: '2-digit' })
-const curta = (d: Date) => FORMATO_CURTA.format(d)
 type Respondidas = Record<string, RegistroQuestao>
 
 /** Amanhã no dia de São Paulo (src/util/dia.ts). */
@@ -259,7 +253,7 @@ export function PlanoEstudo() {
   }
 
   /** A sessão do dia: a área principal com a mistura espalhada (as duas da lista do dia), com o que a pessoa pediu para adiantar. */
-  async function comecarHoje(c: CalculoPlano | null = calculo, p: PlanoSalvo | null | undefined = plano) {
+  async function comecarHoje(c: CalculoPlano | null = calculo, p: PlanoSalvo | null | undefined = plano, /** Dia curto: só as primeiras `limite` questões da sessão de hoje (o resto continua no dia). */ limite = 100) {
     if (ficticio) { convidar('comecar'); return }
     if (!indice || !c?.hoje || !p) return
     // Antes de escolher as questões, traz o que foi feito nos outros aparelhos:
@@ -274,6 +268,7 @@ export function PlanoEstudo() {
     const ids = c.puxados[hojeBR()] && c.dias[0]
       ? idsDaSessaoDoDia(c.dias[0], atuais).slice(0, 100)
       : idsDoDiaPlano(indiceDoPlano(indice, p), itens.map((i) => ({ ...i, n: Math.min(i.n, 100) })), { ...atuais, ...marcarReservadas(c) }, incluiSimulados(p))
+    if (limite < ids.length) ids.length = Math.max(1, limite)
     if (!ids.length) return
     const filtros = { ...FILTROS_VAZIOS, temas: [...new Set(itens.map((i) => i.slug))], situacao: 'naoRespondidas' as const, embaralhar: false, limite: ids.length }
     if (!(await iniciarComAviso(filtros, ids, { origem: 'cronograma', diaPlano: hojeBR() }))) return
@@ -393,6 +388,7 @@ export function PlanoEstudo() {
   }
   const acoesVisao = {
     aoRevanche: (ids: string[]) => comecarIds(ids, 'erros'),
+    aoComecarCurto: (n: number) => { void comecarHoje(calculo, plano, n) },
     aoSoTeot: (ligar: boolean) => mudarOpcao((p) => ({ ...(p.opcoes ?? {}), soTeot: ligar }), 'Não foi possível mudar para só TEOT agora. Confira a conexão e tente de novo.'),
     aoDiaErros: (dia: number | null) => mudarOpcao((p) => ({ ...(p.opcoes ?? {}), diaErros: dia }), 'Não foi possível guardar o dia dos erros agora. Confira a conexão e tente de novo.'),
   }
@@ -443,13 +439,11 @@ export function PlanoEstudo() {
     const nome = primeiroNome(sessaoConta?.user.user_metadata?.nome)
     const area = calculo.hoje?.itens.find((i) => !i.mistura) ?? calculo.hoje?.itens[0] ?? null
     return (
-      <div className="empilha-2 pe cp cr cr--torre cn cf">
+      <div className="empilha-2 pe cp cr cr--torre cg cf">
         <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto ficticio={{ nome, aoConvidar: convidar }}
-          aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} hub={hub} acoes={acoesVisao}
-          detalheSemanas={<SemanaASemana semanas={calculo.semanas.filter((s) => s.diasEstudo > 0)} aberto calculo={calculo} />} />
+          aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} hub={hub} acoes={acoesVisao} />
         {convite && <ConviteFicticio motivo={convite} nome={nome} area={area ? { slug: area.slug, nome: area.nome } : null}
           aoTreinar={(slug) => { definirConvite(null); void treinarGratis(slug) }} aoFechar={() => definirConvite(null)} />}
-        <VisitaCronograma />
       </div>
     )
   }
@@ -463,14 +457,11 @@ export function PlanoEstudo() {
   }
 
   return (
-    <div className="empilha-2 pe cp cr cr--torre cn">
+    <div className="empilha-2 pe cp cr cr--torre cg">
       {erro && <p className="aviso-formulario aviso-formulario--erro" role="alert">{erro}</p>}
       {!DEMO && <IndicadorSincronia preparando={preparando} />}
       <NovidadeSimulados plano={plano} aoMudarPlano={definirPlano} />
-      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} acoes={acoesVisao}
-        detalheSemanas={<SemanaASemana semanas={calculo.semanas.filter((s) => s.diasEstudo > 0)} aberto calculo={calculo} />} />
-      {/* A coruja ou o gato, de vez em quando, sentados num botão (easter egg). */}
-      <VisitaCronograma />
+      <VisaoCronograma plano={plano} calculo={calculo} indice={indice} respondidas={respondidas} aberto aoComecar={() => comecarHoje()} aoAdiantar={adiantar} aoPuxar={puxarDia} pendente={sessaoPendente(sessao)} hub={hub} aoAjustar={() => definirEditando(true)} acoes={acoesVisao} />
     </div>
   )
 }
@@ -575,54 +566,6 @@ export interface HubDados {
   aoSemanaDificil: (ativar: boolean) => void
   aoCancelarAdiantar: () => void
   salvandoOpcoes: boolean
-}
-
-/** A lista detalhada de cada semana: os assuntos, o porquê e quanto cada um cai. */
-function SemanaASemana({ semanas, aberto, calculo }: { semanas: CalculoPlano['semanas']; aberto: boolean; calculo: CalculoPlano }) {
-  return (
-    <section className="pe-semanas" aria-label="Semana a semana, em detalhe">
-      {aberto && <header className="pe-semanas__cabeca"><div><h2>Semana a semana, em detalhe</h2><p className="pe-semanas__dica">Toque numa semana para ver os assuntos, o porquê e quanto cada um cai.</p></div><SeloAssinante /></header>}
-      <ol className="pe-linha">
-        {semanas.map((s, i) => (
-          <li key={i} className={'pe-semana pe-semana--detalhe' + (s.atual ? ' pe-semana--atual' : '')}>
-            <details>
-              <summary className="pe-semana__linha">
-                <span className="pe-semana__data">{curta(s.inicio)} – {curta(s.fim)}{s.atual && <em>esta semana</em>}</span>
-                <span className="pe-semana__temas">
-                  {s.temas.length ? s.temas.map((t) => <span key={t.slug} className="pe-chip" style={{ borderLeft: `4px solid ${corDaArea(t.slug)}` }}>{t.nome}<b className="numerico">{t.n}</b></span>) : <span className="texto-2">Folga do cronograma: revisão e questões livres.</span>}
-                </span>
-                <span className="pe-semana__total numerico">{s.total}<Icone nome="baixo" tamanho={14} /></span>
-              </summary>
-              {s.temas.length > 0 && <div className="pe-semana__corpo">
-                <p className="pe-semana__explica">{s.diasEstudo} {s.diasEstudo === 1 ? 'dia' : 'dias'} de estudo, cerca de <b>{Math.round(s.total / Math.max(1, s.diasEstudo))} questões por dia</b>.</p>
-                {s.temas.map((t) => (
-                  <div key={t.slug} className="pe-semana__tema">
-                    <div className="pe-semana__tema-cabeca">
-                      <p className="pe-semana__tema-nome"><strong>{t.nome}</strong><span className="numerico">{t.n} questões</span></p>
-                      {t.posicaoArea && <span className="pe-semana__area">{t.posicaoArea}ª área em número de questões</span>}
-                    </div>
-                    <ul className="pe-assuntos">
-                      {t.assuntos.slice(0, 10).map((a) => (
-                        <li key={a.nome} className={a.nivel ? `pe-assunto pe-assunto--${a.nivel}` : 'pe-assunto'}>
-                          <span className="pe-assunto__posicao numerico">{a.posicao ? `${a.posicao}º` : '·'}</span>
-                          <span className="pe-assunto__nome">{a.nome}<small>{ROTULO_COBRANCA[a.nivel]}</small></span>
-                          <b className="numerico">{a.n}</b>
-                        </li>
-                      ))}
-                      {t.assuntos.length > 10 && <li className="pe-assunto pe-assunto--resto"><span className="pe-assunto__posicao">+</span><span className="pe-assunto__nome">e mais {t.assuntos.length - 10} assuntos</span><b className="numerico">{t.assuntos.slice(10).reduce((soma, a) => soma + a.n, 0)}</b></li>}
-                    </ul>
-                    {t.depois.length > 0 && <p className="pe-semana__depois"><Icone nome="direita" tamanho={14} /> Nas próximas semanas de {t.nome.toLowerCase()}: {t.depois.join(', ')}.</p>}
-                  </div>
-                ))}
-              </div>}
-            </details>
-          </li>
-        ))}
-        {aberto && !calculo.provaPassou && calculo.diasRetaFinal > 7 && <li className="pe-semana pe-semana--final"><span className="pe-semana__data">{curta(calculo.inicioRetaFinal)} – {curta(new Date(calculo.inicioModoProva.getTime() - 86_400_000))}</span><div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Revisão forte: erros, dúvidas e o que mais cai</span></div><span className="pe-semana__total"><Icone nome="reiniciar" tamanho={16} /></span></li>}
-        {aberto && !calculo.provaPassou && <li className="pe-semana pe-semana--final"><span className="pe-semana__data">{curta(calculo.inicioModoProva)} – véspera</span><div className="pe-semana__temas"><span className="pe-chip pe-chip--final">Modo prova: simulado, erros que importam e resumão</span></div><span className="pe-semana__total"><Icone nome="bandeira" tamanho={16} /></span></li>}
-      </ol>
-    </section>
-  )
 }
 
 function FormularioPlano({ indice, respondidas, atual, aoSalvar, aoCancelar, previa = false }: {
