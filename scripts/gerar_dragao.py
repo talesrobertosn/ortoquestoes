@@ -5,8 +5,8 @@ de distância, luz calculada, contorno e paletas): chibi de três quartos virado
 barriga em placas douradas, um chifre no nariz e dois para trás, espinhos no dorso, asas de membrana alaranjada, cauda
 em ponta de lança e olho âmbar de pupila em fenda.
 
-Gera public/pixel/mascote/dragao.png: quadros de 160 x 112, 8 por linha, uma linha por comportamento (ids em
-src/componentes/mascote/sprites.ts, LINHAS_DRAGAO): parado, voando, pousando, fogo, dormindo, rugindo.
+Gera public/pixel/mascote/dragao.png: quadros de 224 x 112, 16 por linha, uma linha por comportamento (ids em
+src/componentes/mascote/sprites.ts, LINHAS_DRAGAO): parado, voando, pousando, fogo, dormindo, rugindo, decolando, olhando, bocejando.
 O dragão ocupa a direita do quadro; a esquerda fica livre para o jato de fogo.
 
 Uso: python3 scripts/gerar_dragao.py [--previa ARQUIVO.png]
@@ -24,8 +24,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gerar_mascote as gm  # noqa: E402
 from gerar_mascote import Mat, Quadro2D, Tela, bezier, capsula, circulo, elipse, hx, poligono, rampa, ruido, traco  # noqa: E402
 
-DW, DH, DQ = 160, 112, 8
-OX = 34          # deslocamento do dragão no quadro (a esquerda é do fogo)
+DW, DH, DQ = 224, 112, 16
+OX = 98          # deslocamento do dragão no quadro (a esquerda é do fogo)
 CHAO = 104.0
 TAU = math.tau
 
@@ -175,6 +175,7 @@ def cauda(t: Tela, pts, z: float):
     t.pinta(traco(pts, rs), "dragao", z, R=3.6, pid="cauda", tom=escamas(1.5, 0.055), semente=95)
     t.pinta(traco([(x, y + r * 0.62) for (x, y), r in zip(pts, rs)][: n - 2], [r * 0.5 for r in rs][: n - 2]), "barriga", 0, sobre="cauda", R=1.2, tom=placas)
     espinhos(t, pts[1:-1], z - 0.1, alt=3.6, pid="esp_cauda")
+    t.pinta(circulo(pts[-2], rs[-2] + 1.0), "barriga", z + 0.06, R=1.0, pid="anel_cauda", tom=0.2)  # argola de ouro antes da lança
     (x0, y0), (x1, y1) = pts[-2], pts[-1]
     tx, ty = x1 - x0, y1 - y0
     L = math.hypot(tx, ty) or 1
@@ -239,6 +240,12 @@ def dragao(t: Tela, k: int, sobe: float = 0.0, resp: float = 0.0, cab_inc: float
     pesc = bezier(P(58, 68), P(57 + cab_dx * 0.3, 52 + cab_dy * 0.5), (hc[0] + 6, hc[1] + 5), 8)
     t.pinta(traco(pesc, [9.2, 8.8, 8.2, 7.6, 7.2, 6.8, 6.6, 6.4]), "dragao", 2.6, R=5.0, pid="pescoco", tom=escamas(1.0), semente=102)
     t.pinta(traco([(x - 4.4, y + 2.0) for (x, y) in pesc], [3.6, 3.5, 3.3, 3.1, 3.0, 2.9, 2.8, 2.6]), "barriga", 0, sobre="pescoco", R=2.0, tom=placas)
+    # as joias do dono do tesouro: coleira de ouro com rubi e a brasa do peito, que pulsa com a respiração
+    jx, jy = pesc[2]
+    t.pinta(capsula((jx - 6.8, jy + 3.2), (jx + 6.2, jy - 2.6), 1.9, 1.7), "barriga", 2.7, R=1.4, pid="coleira", tom=lambda X, Y: 0.12 * np.sin((X + Y) * 1.4))
+    t.pinta(circulo((jx - 4.6, jy + 3.6), 2.0), "brasa", 2.75, pid="rubi", tom=0.5, sem_contorno=True)
+    t.pinta(circulo((jx - 5.2, jy + 3.0), 0.6), "chama", 2.8, pid="rubi_brilho", tom=1.0, sem_contorno=True)
+    t.luz(P(55, 80)[0], P(55, 80)[1], 10, "#ff8a30", 24, 0.45 + 0.25 * resp + 0.9 * chama)
     dorso = [(x + 6.5, y - 3.0) for (x, y) in pesc[::-1]] + [P(70, 62.5 - resp * 0.5), P(80, 65 - resp * 0.4), P(88, 72), P(92, 80)]
     espinhos(t, dorso, 2.5, alt=5.4, cada=1, pid="esp_dorso")
     # pernas da frente
@@ -264,9 +271,9 @@ def fumacinha(t: Tela, x: float, y: float, fase: float):
 def l_parado(t: Tela, k: int):
     f = k / DQ
     resp = math.sin(f * TAU)
-    q = dragao(t, k, resp=resp, cab_inc=-3 + resp * 2.0, cab_dy=-resp * 0.8, asa_ang=24 - resp * 3, asa_abre=0.5 + resp * 0.015, cauda_f=f, fechado=(k == 5), olhar=(-0.3 if k in (2, 3) else 0.0))
-    if k in (6, 7):
-        fumacinha(t, q.p(-18.0, 1.5)[0], q.p(-18.0, 1.5)[1], (k - 6) / 2.4)
+    q = dragao(t, k, resp=resp, cab_inc=-3 + resp * 3.0, cab_dx=math.sin(f * TAU + 1.0) * 1.3, cab_dy=-resp * 1.1, asa_ang=24 - resp * 5, asa_abre=0.5 + 0.04 * math.sin(f * TAU * 2), cauda_f=f, fechado=(0.6 <= f < 0.7), olhar=(-0.3 if 0.25 <= f < 0.5 else 0.0))
+    if f >= 0.75:
+        fumacinha(t, q.p(-18.0, 1.5)[0], q.p(-18.0, 1.5)[1], (f - 0.75) * 3.3)
 
 
 def l_voando(t: Tela, k: int):
@@ -282,17 +289,21 @@ def l_pousando(t: Tela, k: int):
     bat = math.sin(u * TAU * 1.6)
     abre = 1.08 - 0.58 * max(0.0, (u - 0.55) / 0.45)
     dragao(t, k, sobe=18 * desce ** 1.4, cab_inc=-8 * desce - 3 * (1 - desce), asa_ang=(-14 + bat * 36) * max(desce, 0.25) + 24 * (1 - max(desce, 0.25)), asa_abre=abre,
-           bate=bat * desce, cauda_f=u * 0.8, voo=desce, resp=(-1.6 if k in (5, 6) else 0.0))
+           bate=bat * desce, cauda_f=u * 0.8, voo=desce, resp=(-1.6 if 0.68 <= u <= 0.88 else 0.0))
 
 
 def l_fogo(t: Tela, k: int):
     """Inspira (cabeça para trás), abre a boca e solta o jato; fecha soltando fumaça."""
-    forca = (0.0, 0.0, 0.45, 0.9, 1.0, 0.95, 0.5, 0.0)[k]
-    recuo = (0.0, 1.0, 0.2, -0.6, -0.8, -0.7, -0.3, 0.0)[k]
-    boca = (0.0, 0.25, 0.8, 1.0, 1.0, 1.0, 0.7, 0.15)[k]
-    q = dragao(t, k, resp=(1.6 if k == 1 else -0.6 * forca), cab_inc=recuo * 13 + 4 * forca, cab_dx=recuo * 4.0, cab_dy=-recuo * 2.5 + forca * 2.5, boca=boca,
-               asa_ang=24 - 18 * max(forca, recuo * 0.6), asa_abre=0.5 + 0.34 * max(forca, recuo * 0.5), cauda_f=k / DQ, chama=forca, bravo=1.0 * (forca > 0 or k == 1))
-    if k == 7:
+    u = k / (DQ - 1)
+    chave = lambda vals: float(np.interp(u, np.linspace(0, 1, len(vals)), vals))
+    # inspira (0 a 0,2), o jato cresce, segura firme no meio e apaga aos poucos
+    forca = chave((0.0, 0.0, 0.0, 0.35, 0.75, 0.95, 1.0, 1.0, 0.97, 0.8, 0.45, 0.0))
+    recuo = chave((0.0, 0.6, 1.0, 0.3, -0.4, -0.7, -0.8, -0.8, -0.75, -0.55, -0.25, 0.0))
+    boca = chave((0.0, 0.15, 0.3, 0.75, 1.0, 1.0, 1.0, 1.0, 1.0, 0.9, 0.6, 0.15))
+    inspira = 0.08 < u < 0.22
+    q = dragao(t, k, resp=(1.6 if inspira else -0.6 * forca), cab_inc=recuo * 13 + 4 * forca, cab_dx=recuo * 4.0, cab_dy=-recuo * 2.5 + forca * 2.5, boca=boca,
+               asa_ang=24 - 18 * max(forca, recuo * 0.6), asa_abre=0.5 + 0.34 * max(forca, recuo * 0.5), cauda_f=k / DQ, chama=forca, bravo=1.0 * (forca > 0 or inspira))
+    if k == DQ - 1:
         fumacinha(t, q.p(-18.0, 2.0)[0], q.p(-18.0, 2.0)[1], 0.2)
 
 
@@ -333,7 +344,35 @@ def l_dormindo(t: Tela, k: int):
     gm.zz(t, OX + 24 + fase * 5, 72 - fase * 10, 5, 0.9 * (1 - fase))
 
 
-LINHAS = [("parado", l_parado), ("voando", l_voando), ("pousando", l_pousando), ("fogo", l_fogo), ("dormindo", l_dormindo), ("rugindo", l_rugindo)]
+def l_decolando(t: Tela, k: int):
+    """Toca uma vez: agacha, abre as asas para o alto e salta batendo com força."""
+    u = k / (DQ - 1)
+    a = min(u / 0.4, 1.0)
+    s = max(0.0, (u - 0.38) / 0.62)
+    agacha = math.sin(min(u / 0.42, 1.0) * math.pi)
+    dragao(t, k, sobe=15 * s ** 1.4, resp=-2.2 * agacha, cab_inc=-5 * agacha - 8 * s, cab_dy=2.0 * agacha, asa_ang=24 - 62 * a + 46 * math.sin(s * math.pi * 1.5),
+           asa_abre=0.5 + 0.58 * a, bate=math.sin(s * math.pi * 1.5), cauda_f=u * 0.9, voo=s, bravo=0.5)
+
+
+def l_olhando(t: Tela, k: int):
+    """Desconfiado: ergue a cabeça, olha para um lado e para o outro, e a cauda chicoteia."""
+    f = k / DQ
+    v = math.sin(f * TAU)
+    dragao(t, k, resp=math.sin(f * TAU * 2) * 0.6, cab_inc=11 * v, cab_dx=3.2 * v, cab_dy=-3.2 * abs(v), olhar=0.7 * v, asa_ang=24 - 4 * abs(v),
+           asa_abre=0.5 + 0.07 * math.sin(f * TAU * 2), cauda_f=f * 2, fechado=(0.46 <= f < 0.54), bravo=0.35 * abs(v))
+
+
+def l_bocejando(t: Tela, k: int):
+    """Toca uma vez: espreguiça as asas, abre a bocarra num bocejo e solta um fiapo de fumaça."""
+    u = k / (DQ - 1)
+    s = math.sin(u * math.pi) ** 0.8
+    q = dragao(t, k, resp=1.4 * s, cab_inc=15 * s, cab_dx=2.0 * s, cab_dy=-5.5 * s, boca=s, asa_ang=24 - 44 * s, asa_abre=0.5 + 0.52 * s, bate=-0.6 * s,
+               cauda_f=u * 0.7, fechado=(s > 0.45))
+    if u > 0.55:
+        fumacinha(t, q.p(-18.0, 1.5)[0], q.p(-18.0, 1.5)[1], (u - 0.55) * 1.6)
+
+
+LINHAS = [("parado", l_parado), ("voando", l_voando), ("pousando", l_pousando), ("fogo", l_fogo), ("dormindo", l_dormindo), ("rugindo", l_rugindo), ("decolando", l_decolando), ("olhando", l_olhando), ("bocejando", l_bocejando)]
 
 
 def folha() -> Image.Image:

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type ReactNode } from 'react'
+import { useEffect, useLayoutEffect, useRef, useState, type CSSProperties, type ReactNode } from 'react'
 import { createPortal } from 'react-dom'
 import { gravar, ler } from '../../estado/armazenamento'
 import { Icone } from '../Icone'
@@ -18,8 +18,8 @@ import { CONCEITOS_CORUJA, FALAS_GATO, proximaFala } from '../mascote/falasBicho
  *   entra andando pelo rodapé, senta, se espreguiça e dorme;
  * - os dois somem quando a pessoa começa a digitar na busca; com "menos movimento", ninguém voa nem anda;
  * - nunca os dois ao mesmo tempo de entrada: se o gato já está e a coruja pousa, ele olha para cima (o segredo raro);
- * - o dragão do tesouro (10/11/2026, pedido do Tales: "de vez em quando ele vem e solta um fogo") aparece numa
- *   abertura em cada três: chega voando pela direita, pousa acima do rodapé, solta fogo e vai embora; um toque e
+ * - o dragão do tesouro (10/11/2026, pedido do Tales: "de vez em quando ele vem e solta um fogo") aparece raramente, numa
+ *   abertura em cada cinquenta (Tales, 10/11/2026): chega voando pela direita, pousa acima do rodapé, solta fogo e vai embora; um toque e
  *   ele sopra de novo;
  * - para testar: sessionStorage 'portal:forcar' = 'coruja' | 'gato' | 'dragao' | 'todos'.
  * Nenhum deles cobre texto ou botão: a coruja fica no alto, à esquerda do X; o gato, na faixa do rodapé.
@@ -82,10 +82,10 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     return () => window.clearInterval(vez)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
 
-  // O dragão: uma abertura em cada três, depois de um instante.
+  // O dragão: raro, uma abertura em cada cinquenta, depois de um instante.
   useEffect(() => {
     const f = forcado()
-    if (semMovimento() || !(f === 'dragao' || f === 'todos' || ler<number>(CHAVE_ABERTURAS, 0) % 3 === 0)) return
+    if (semMovimento() || !(f === 'dragao' || f === 'todos' || Math.random() < 1 / 50)) return
     const pouso = 2600 + 1300, fogo = pouso + DURACAO_DRAGAO.pousando * 1000 + 900
     depois(() => definirDragao({ fase: 'chegando', linha: 'voando' }), 2600)
     depois(() => definirDragao({ fase: 'pousado', linha: 'pousando' }), pouso)
@@ -94,6 +94,25 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
     depois(() => definirDragao((d) => (d.fase === 'pousado' ? { fase: 'saindo', linha: 'voando' } : d)), fogo + 9000)
     depois(() => definirDragao((d) => (d.fase === 'saindo' ? { fase: 'longe', linha: 'voando' } : d)), fogo + 10300)
   }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  // O dragão vai até o botão Indique e ganhe (Tales, 10/11/2026): pousa à esquerda dele, virado para ele, e o sopro
+  // cai em cima do botão, que arde mais forte enquanto isso. Se o botão não estiver à vista, fica no canto do rodapé.
+  const dragaoRef = useRef<HTMLDivElement>(null)
+  const [alvoDragao, definirAlvoDragao] = useState<{ left: number; top: number } | null>(null)
+  useLayoutEffect(() => {
+    if (dragao.fase !== 'chegando') return
+    const el = dragaoRef.current, base = el?.offsetParent, botao = document.querySelector('.pt-item--fogo')
+    if (!el || !base || !botao) return
+    const b = base.getBoundingClientRect(), r = botao.getBoundingClientRect(), w = el.offsetWidth
+    const left = r.left - b.left - w * 0.62, top = r.top + r.height / 2 - b.top - w * 0.25
+    definirAlvoDragao(left > -w * 0.2 && r.top > b.top + 60 && r.bottom < b.bottom - 20 ? { left, top } : null)
+  }, [dragao.fase])
+  useEffect(() => {
+    const botao = document.querySelector<HTMLElement>('.pt-item--fogo')
+    if (!botao) return
+    if (dragao.fase === 'pousado' && dragao.linha === 'fogo' && alvoDragao) botao.dataset.surto = '1'
+    else delete botao.dataset.surto
+    return () => { delete botao.dataset.surto }
+  }, [dragao, alvoDragao])
   const tocarDragao = () => {
     if (dragao.fase !== 'pousado' || dragao.linha === 'fogo' || dragao.linha === 'pousando') return
     definirDragao({ fase: 'pousado', linha: 'fogo' })
@@ -177,7 +196,7 @@ export function Visitantes({ digitando }: { digitando: boolean }) {
         </div>
       )}
       {dragao.fase !== 'longe' && !digitando && (
-        <div className={`pt-dragao pt-dragao--${dragao.fase}`}>
+        <div ref={dragaoRef} className={`pt-dragao pt-dragao--${dragao.fase}${alvoDragao ? ' pt-dragao--no-botao' : ''}`} style={alvoDragao ? { left: alvoDragao.left, top: alvoDragao.top, right: 'auto', bottom: 'auto' } as CSSProperties : undefined}>
           <button type="button" className="pt-dragao__botao" onClick={tocarDragao} aria-label="O dragão do tesouro: tocar para ele soltar fogo">
             <DragaoPixel estado={dragao.linha} />
           </button>

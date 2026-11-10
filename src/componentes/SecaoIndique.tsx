@@ -30,7 +30,7 @@ export function SecaoIndique() {
         <h2 id="ig-titulo">Indique e ganhe <em>{DIAS_POR_AMIGO} dias grátis</em></h2>
         <p>O Orto Questões cresce no boca a boca. Chame um colega da residência: quando ele responder {QUESTOES_PARA_CONFIRMAR} questões, vocês dois ganham {DIAS_POR_AMIGO} dias do plano completo. Vale para até {LIMITE_AMIGOS} amigos.</p>
         {dados && dados.confirmados > 0 && <p className="ig__placar"><b>{dados.confirmados}</b> {dados.confirmados === 1 ? 'amigo confirmado' : 'amigos confirmados'} · <b>{dados.dias_ganhos}</b> dias ganhos</p>}
-        <p className="ig__destaque"><a className="ig__fogo" href={href('/indicar')}><BordaDeFogo chamas={8} />Indique e ganhe <Icone nome="direita" tamanho={15} /></a></p>
+        <p className="ig__destaque"><a className="ig__fogo" href={href('/indicar')}><BordaDeFogo />Indique e ganhe <Icone nome="direita" tamanho={15} /></a></p>
         <div className="ig__acoes">
           {dados ? <>
             <a className="ig__whatsapp" href={`https://wa.me/?text=${encodeURIComponent(textoIndicacao(dados.codigo))}`} target="_blank" rel="noopener noreferrer"><IconeWhatsapp tamanho={18} /> Chamar no WhatsApp</a>
