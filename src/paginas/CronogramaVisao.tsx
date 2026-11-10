@@ -187,9 +187,9 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
         {balanco && balanco.faltou > 0 && !folgaHoje && <p className="cg-aviso" role="note"><Icone nome="relogio" tamanho={16} /><span><strong>{hoje.getTime() - balanco.data.getTime() <= DIA ? 'Ontem' : `Na ${F_SEMANA.format(balanco.data).replace('-feira', '')}`} {balanco.feitas === 0 ? `as ${balanco.meta} questões ficaram sem fazer` : `ficaram ${plural(balanco.faltou, 'questão', 'questões')} sem fazer`}.</strong> Nada se perdeu: voltaram para a fila e foram divididas pelos dias que faltam{calculo.projecao.tetoAtivo ? `; a meta parou no teto de ${Math.round((TETO_ATRASO - 1) * 100)}% acima do planejado` : `, por isso hoje são ${calculo.metaHojeSemAdiantar}`}.</span></p>}
 
         {naRetaFinal && mao ? <p className="cg-nota">Reta final: a sessão de hoje traz os seus erros, os assuntos de prioridade máxima e as questões que você ainda não viu (inclusive as que entraram no acervo agora), para nenhuma ficar de fora.</p> : naRetaFinal && hub ? <RetaFinal calculo={calculo} hub={hub} minutos={minutos} /> : <div className="cg-passos">
-          <div className="cg-passo">
+          <div className="cg-passo cg-passo--leitura">
             <h3><b>1</b>{diaLeitura.deHoje ? 'Leia antes' : `Leitura para ${diaLeitura.data ? F_SEMANA.format(diaLeitura.data) : 'o próximo dia'}`}<small>os resumos mais próximos das questões {diaLeitura.deHoje ? 'de hoje' : 'que vêm'}</small></h3>
-            <ResumosDoDia resumos={resumos} leituras={leituras} carregando={!biblioteca} total={diaLeitura.ids.length} deHoje={diaLeitura.deHoje} area={mao ? { slug: 'mao', nome: 'Cirurgia da mão' } : principal ?? calculo.dias.find((d) => d.itens.length)?.itens[0] ?? null} frasesLidas={false} />
+            <ResumosDoDia destaque resumos={resumos} leituras={leituras} carregando={!biblioteca} total={diaLeitura.ids.length} deHoje={diaLeitura.deHoje} area={mao ? { slug: 'mao', nome: 'Cirurgia da mão' } : principal ?? calculo.dias.find((d) => d.itens.length)?.itens[0] ?? null} frasesLidas={false} />
           </div>
           <div className={'cg-passo cg-questoes' + (metaFeita ? ' cg-passo--feito' : '')}>
             <h3><b>{metaFeita ? <Icone nome="certo" tamanho={13} /> : 2}</b>{folgaHoje ? 'Sem questões hoje' : calculo.metaDiaria > 0 ? `${calculo.metaDiaria} questões novas` : 'Questões de hoje'}<small>{calculo.metaDiaria > 0 ? `${Math.min(calculo.feitasHoje, calculo.metaDiaria)} de ${calculo.metaDiaria} feitas · cerca de ${formatarTempo(calculo.metaDiaria * minutos)}` : calculo.adiantadoHoje > 0 ? fraseAdiantadoHoje(calculo) : 'nenhuma agendada'}</small></h3>
@@ -201,21 +201,23 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
               {calculo.miniHoje && !feitos.mini && hub && botao?.aoClicar !== hub.aoMini && <button type="button" className="cg-btn" onClick={hub.aoMini}>Mini-simulado</button>}
             </div>
           </div>
-          {conteudo && <div className={'cg-passo cg-passo--erros' + (diaDosErrosHoje ? ' cg-passo--destaque' : '')}>
-            <h3><b>3</b>Refaça o que errou<small>{erros.pendentes.length ? `${plural(erros.pendentes.length, 'questão', 'questões')} · alternativas em ordem nova${diaDosErrosHoje ? ' · hoje é o seu dia dos erros' : ''}` : erros.total ? `você zerou os ${erros.total} erros das últimas duas semanas` : 'nenhum erro pendente'}</small></h3>
-            {erros.pendentes.length > 0 && <>
-              <ul className="cg-erros">{erros.dias.filter((d) => d.pendentes.length).slice(0, 6).map((d) => {
-                const rot = hoje.getTime() - d.data.getTime() <= DIA ? 'ontem' : `${SEM3[d.data.getDay()]} ${curta(d.data)}`
-                return <li key={d.chave}><button type="button" onClick={() => acoes?.aoRevanche(d.pendentes.slice(0, 40))} disabled={!acoes} aria-label={`Refazer ${plural(d.pendentes.length, 'erro', 'erros')} de ${rot}`}><b>{d.pendentes.length}</b>{rot}</button></li>
-              })}</ul>
-              {acoes && <div className="cg-linha"><button type="button" className="cg-btn cg-btn--forte" onClick={() => acoes.aoRevanche(idsRevanche(erros))}><Icone nome="reiniciar" tamanho={15} /> Refazer {Math.min(TAMANHO_REVANCHE, erros.pendentes.length)}{erros.pendentes.length > TAMANHO_REVANCHE ? ` de ${erros.pendentes.length}` : ''} erros</button><span className="cg-nota">Acertou, sai da fila. Não conta na meta.</span></div>}
-            </>}
-          </div>}
         </div>}
       </section>
 
       {/* ── 3. O calendário: a semana, com o mês a um toque ── */}
       <Mes plano={plano} calculo={calculo} historico={historico} biblioteca={biblioteca} indice={indicePlano} leituras={leituras} minutos={minutos} botaoHoje={Acao('cg-ir--claro')} aoPuxar={podeAdiantar ? aoPuxar : undefined} salvando={hub?.salvandoOpcoes} />
+
+      {/* ── 3b. Refaça o que errou: abaixo do calendário ── */}
+      {conteudo && <section className={'cg-caixa cg-passo cg-passo--erros cg-erros-caixa' + (diaDosErrosHoje ? ' cg-passo--destaque' : '')} aria-label="Refaça o que errou">
+        <h3><b>3</b>Refaça o que errou<small>{erros.pendentes.length ? `${plural(erros.pendentes.length, 'questão', 'questões')} · alternativas em ordem nova${diaDosErrosHoje ? ' · hoje é o seu dia dos erros' : ''}` : erros.total ? `você zerou os ${erros.total} erros das últimas duas semanas` : 'nenhum erro pendente'}</small></h3>
+        {erros.pendentes.length > 0 && <>
+          <ul className="cg-erros">{erros.dias.filter((d) => d.pendentes.length).slice(0, 6).map((d) => {
+            const rot = hoje.getTime() - d.data.getTime() <= DIA ? 'ontem' : `${SEM3[d.data.getDay()]} ${curta(d.data)}`
+            return <li key={d.chave}><button type="button" onClick={() => acoes?.aoRevanche(d.pendentes.slice(0, 40))} disabled={!acoes} aria-label={`Refazer ${plural(d.pendentes.length, 'erro', 'erros')} de ${rot}`}><b>{d.pendentes.length}</b>{rot}</button></li>
+          })}</ul>
+          {acoes && <div className="cg-linha"><button type="button" className="cg-btn cg-btn--forte" onClick={() => acoes.aoRevanche(idsRevanche(erros))}><Icone nome="reiniciar" tamanho={15} /> Refazer {Math.min(TAMANHO_REVANCHE, erros.pendentes.length)}{erros.pendentes.length > TAMANHO_REVANCHE ? ` de ${erros.pendentes.length}` : ''} erros</button><span className="cg-nota">Acertou, sai da fila. Não conta na meta.</span></div>}
+        </>}
+      </section>}
 
       {/* ── 4. Três caixas menores: próximos dias, extras e a previsão ── */}
         {conteudo && <section className="cg-caixa cg-col-4" aria-label="Próximos dias">
@@ -365,28 +367,42 @@ function Estrada({ plano, calculo, mao }: { plano: PlanoSalvo; calculo: CalculoP
 
 type Leituras = Record<string, { progresso: number; concluidoEm?: number | null } | undefined>
 
-export function ListaResumos({ resumos, leituras, total }: { resumos: ResumoDoDia[]; leituras: Leituras; total: number }) {
+export function ListaResumos({ resumos, leituras, total, destaque = false }: { resumos: ResumoDoDia[]; leituras: Leituras; total: number; destaque?: boolean }) {
+  const primeiro = destaque ? resumos.find(({ resumo: r }) => { const l = leituras[r.id]; return !(l?.concluidoEm || (l?.progresso ?? 0) >= 95) })?.resumo.id : undefined
   return (
-    <ul className="cg-resumos">
+    <ul className={'cg-resumos' + (destaque ? ' cg-resumos--destaque' : '')}>
       {resumos.map(({ resumo: r, questoes, assuntos }) => {
         const l = leituras[r.id]
         const lido = !!l?.concluidoEm || (l?.progresso ?? 0) >= 95
         const andamento = lido ? 100 : l?.progresso ?? 0
-        return <li key={r.id}><a className={'cg-resumo' + (lido ? ' cg-resumo--lido' : '')} href={href(`/resumos/${r.id}`)} style={area(r.especialidade)}>
+        const falta = Math.max(1, Math.round(r.minutos * (1 - andamento / 100)))
+        const explica = questoes > 0 ? `explica ${questoes === 1 ? '1 questão' : `${questoes} das ${total} questões`} do dia` : `ensina ${assuntos.slice(0, 2).join(' e ').toLowerCase()}`
+        if (!destaque) return <li key={r.id}><a className={'cg-resumo' + (lido ? ' cg-resumo--lido' : '')} href={href(`/resumos/${r.id}`)} style={area(r.especialidade)}>
           <i className="cg-resumo__marca" aria-hidden="true"><Icone nome={lido ? 'certo' : 'livro'} tamanho={14} /></i>
-          <span className="cg-resumo__texto"><strong>{r.titulo}</strong><small>{questoes > 0 ? `explica ${questoes === 1 ? '1 questão' : `${questoes} das ${total} questões`} do dia` : `ensina ${assuntos.slice(0, 2).join(' e ').toLowerCase()}`}{andamento > 0 && !lido ? ` · ${andamento}% lido` : ''}</small></span>
-          <span className="cg-resumo__tempo">{lido ? 'lido' : `${Math.max(1, Math.round(r.minutos * (1 - andamento / 100)))} min`}</span>
+          <span className="cg-resumo__texto"><strong>{r.titulo}</strong><small>{explica}{andamento > 0 && !lido ? ` · ${andamento}% lido` : ''}</small></span>
+          <span className="cg-resumo__tempo">{lido ? 'lido' : `${falta} min`}</span>
+        </a></li>
+        const cobre = total > 0 ? Math.min(100, Math.round((questoes / total) * 100)) : 0
+        return <li key={r.id}><a className={'cg-livro' + (lido ? ' cg-livro--lido' : '') + (r.id === primeiro ? ' cg-livro--primeiro' : '')} href={href(`/resumos/${r.id}`)} style={area(r.especialidade)}>
+          <span className="cg-livro__capa" aria-hidden="true"><i className="cg-livro__faixa" /><Icone nome={lido ? 'certo' : 'livro'} tamanho={20} /></span>
+          <span className="cg-livro__corpo">
+            {r.id === primeiro && <em className="cg-livro__selo">{andamento > 0 ? 'Continue por este' : 'Comece por este'}</em>}
+            <strong>{r.titulo}</strong>
+            <small>{explica}{andamento > 0 && !lido ? ` · ${andamento}% lido` : ''}</small>
+            {questoes > 0 && <span className="cg-livro__cobre" title={`Cobre ${cobre}% das questões do dia`}><i style={{ width: `${Math.max(4, cobre)}%` }} /></span>}
+          </span>
+          <span className="cg-livro__ler">{lido ? <><Icone nome="certo" tamanho={14} /> lido</> : <>{andamento > 0 ? 'Continuar' : 'Ler'}<small>{falta} min</small></>}</span>
         </a></li>
       })}
     </ul>
   )
 }
 
-export function ResumosDoDia({ resumos, leituras, carregando, total, deHoje, area: a, frasesLidas }: { resumos: ResumoDoDia[]; leituras: Leituras; carregando: boolean; total: number; deHoje: boolean; data?: Date | null; area: { slug: string; nome: string } | null; frasesLidas: boolean }) {
+export function ResumosDoDia({ resumos, leituras, carregando, total, deHoje, area: a, frasesLidas, destaque = false }: { resumos: ResumoDoDia[]; leituras: Leituras; carregando: boolean; total: number; deHoje: boolean; data?: Date | null; area: { slug: string; nome: string } | null; frasesLidas: boolean; destaque?: boolean }) {
   if (!total) return <p className="cg-nota">Sem questões novas agendadas: aproveite para reler um resumo na <a className="cg-link" href={href('/resumos')}>Biblioteca</a>.</p>
   if (carregando) return <p className="cg-nota" aria-busy="true">Procurando os resumos deste dia…</p>
   if (!resumos.length) return <p className="cg-nota">Os assuntos {deHoje ? 'de hoje' : 'desse dia'} ainda não têm resumo próprio.{a && <> Veja as <a className="cg-link" href={href(`/resumos/frases?tema=${a.slug}`)}>frases que caem{frasesLidas ? ' (lidas hoje)' : ''}</a> ou os <a className="cg-link" href={href(`/resumos?area=${a.slug}`)}>resumos de {a.nome.toLowerCase()}</a>.</>}</p>
-  return <ListaResumos resumos={resumos} leituras={leituras} total={total} />
+  return <ListaResumos resumos={resumos} leituras={leituras} total={total} destaque={destaque} />
 }
 
 // ─── Reta final: revisão forte, modo prova e véspera ─────────────────────────
@@ -721,7 +737,7 @@ function Ajustes({ plano, calculo, hub, acoes, aoAjustar, ficticio, mao }: { pla
         {aoAjustar && <button type="button" className="cg-btn" onClick={aoAjustar}><Icone nome="lapis" tamanho={14} /> Data, ritmo e folgas</button>}
         <a className="cg-btn" href={href(mao ? '/temas-que-mais-caem?modalidade=mao' : '/temas-que-mais-caem')}><Icone nome="grafico" tamanho={14} /> Temas que mais caem</a>
         <a className="cg-btn" href={href('/resumos')}><Icone nome="livro" tamanho={14} /> Biblioteca</a>
-        <a className="cg-btn" href={href('/desempenho')}><Icone nome="alvo" tamanho={14} /> Desempenho completo</a>
+        <a className="cg-btn" href={href('/dados')}><Icone nome="alvo" tamanho={14} /> Desempenho completo</a>
       </p>
     </section>
   )
