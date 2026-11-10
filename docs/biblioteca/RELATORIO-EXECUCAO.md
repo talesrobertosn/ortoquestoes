@@ -301,7 +301,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 968 | Coluna cervical da criança e torcicolo (resumo novo, Tachdjian 6 cap. 8, 3 figuras); osteoblastoma (v2 de osteoma osteoide); biomecânica da coluna (v3 de anatomia da coluna); tendinopatias do aparelho extensor e fratura da patela (v2 de patela e mecanismo extensor); artroplastia unicompartimental (v2 de gonartrose e osteotomias); 27 miniaulas com figuras (deficiências longitudinais, joelho na criança, vias do joelho, dedos menores) |
 | 973 | Tumores da mão (resumo novo, Green 7 caps. 59 e 58, 49 questões) e displasia do quadril no adulto (resumo novo, The Adult Hip cap. 71); versões novas para discrepância de membros, raquitismo, osteocondroses do pé, sindesmose, fibroma condromixoide, espondiloartrites e artrite reumatoide, doenças autoinflamatórias, osteonecrose da cabeça umeral e fixação externa; 40 miniaulas com figuras |
 | 975 | Miscelâneas: outros temas da coluna (campbell15-outros-coluna), do joelho (campbell15-outros-joelho) e osteometabólicos (hebert-outros-osteometabolicos), resumos novos com uma seção por assunto; 7 miniaulas dos temas pequenos |
-| (este PR) | Miscelânea do quadril (callaghan-outros-quadril, The Adult Hip cap. 26: risco perioperatório, cápsula e ligamentos, luxação pura, artrodese e outros); 45 miniaulas das miscelâneas da coluna, do joelho, osteometabólicas e do quadril, com figuras |
+| 976 | Miscelânea do quadril (callaghan-outros-quadril, The Adult Hip cap. 26: risco perioperatório, cápsula e ligamentos, luxação pura, artrodese e outros); 45 miniaulas das miscelâneas da coluna, do joelho, osteometabólicas e do quadril, com figuras |
+| (este PR) | Miscelâneas de conceitos básicos (rockwood10-outros-conceitos-basicos) e de trauma (rockwood10-outros-trauma), resumos novos com uma seção por assunto; 18 miniaulas da miscelânea do ombro e cotovelo, com figuras |
 
 ## Próximo
 
