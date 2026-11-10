@@ -495,11 +495,11 @@ export function Inicio() {
                   ? <>{nome ? `${nome}, você` : 'Você'} estudou em <strong>{semana.diasAtivos} dos últimos 7 dias</strong>. É essa constância que fixa.</>
                   : <>{nome ? `${nome}, os` : 'Os'} primeiros passos da semana já estão aqui. Um pouco por dia leva longe.</>}</p>
               ) : <p className="jn-texto">A semana começa na primeira questão. As colunas sobem conforme você responde.</p>}
-              {/* Sete colunas: a altura é o número de questões do dia. */}
+              {/* Sete colunas de blocos empilhados (10/11/2026: sem degradê): a altura é o número de questões do dia. */}
               <ol className="jn-colunas" aria-label="Questões respondidas por dia">
                 {semana.dias.map((dia, i) => (
                   <li key={dia.chave} className={dia.hoje ? 'hoje' : undefined} title={`${dia.nomeCompleto}: ${dia.total} ${dia.total === 1 ? 'questão' : 'questões'}`}>
-                    <span className="jn-colunas__trilho"><span style={{ '--h': `${dia.total ? Math.max(8, (dia.total / semana.maximo) * 100) : 0}%`, '--i': i } as CSSProperties} />
+                    <span className="jn-colunas__trilho" style={{ '--h': dia.total ? Math.max(0.12, dia.total / semana.maximo) : 0, '--i': i } as CSSProperties}><span />
                       {dia.total >= MINIMO_PARA_NUMERO && (dia.hoje || dia.total === semana.maximo) && <b className="numerico" aria-hidden="true">{dia.total}</b>}
                     </span>
                     <small aria-hidden="true">{dia.hoje ? 'Hoje' : dia.rotulo.slice(0, 3)}</small>

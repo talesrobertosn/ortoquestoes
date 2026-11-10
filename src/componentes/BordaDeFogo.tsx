@@ -2,21 +2,32 @@ import { useEffect, useRef } from 'react'
 import '../estilos/componentes/BordaDeFogo.css'
 
 /**
- * O botão inteiro pegando fogo (Tales, 10/11/2026: "não é um foguinho em cima do botão; é o botão inteiro, ao redor
- * e dentro"). É a mesma receita da aura dos flashcards (AuraDeFogo): um campo de chamas calculado numa grade de
- * pixels grandes, com ruído que sobe e forma as línguas, e as cores em faixas como nos jogos de 16 bits. Aqui o campo
- * envolve o botão por todos os lados e arde também por dentro dele, atrás do texto. Contido de propósito (Tales,
- * 10/11/2026: "menos chamativo"): chamas curtas, lentas e sem miolo branco.
- *
- * O pai precisa de `position: relative` e `isolation: isolate`. `data-surto="1"` no pai (o dragão soprando) faz o
- * fogo crescer por um instante. Só enfeite: não recebe toque; fora da tela e com "menos movimento" não anima.
+ * O botão pegando fogo (10/11/2026, refeito a pedido do Tales: o fogo antigo, um campo de ruído que enchia o botão de
+ * laranja, "está muito feio"). Agora é fogo de pixel de verdade, calculado célula a célula como nos jogos de 16 bits:
+ * - as fontes de calor ficam na BORDA do botão: forte no alto (as línguas sobem), média nos lados e fraca embaixo;
+ * - a cada quadro, cada célula vira a média das de baixo, menos um resfriamento que sobe junto (ruído esticado na
+ *   vertical): é isso que desenha as línguas, os rasgos e as pontas que se soltam;
+ * - por dentro o botão é brasa (só vermelhos escuros que respiram), para o texto continuar legível;
+ * - fagulhas: alguns pontos claros escapam da chama, sobem ondulando e se apagam;
+ * - a paleta tem 12 tons em degraus, do vermelho da ponta ao amarelo claro da base, sem branco estourado.
+ * O pai precisa de `position: relative` e `isolation: isolate`. `data-surto="1"` no pai faz o fogo crescer por um
+ * instante. Só enfeite: não recebe toque; fora da tela e com "menos movimento" não anima (fica um quadro parado).
  */
 const PX = 3
-const FAIXAS = 7
-/** Paleta do calor (0 a 1): r, g, b, opacidade. */
-const PALETA: Array<[number, number, number, number, number]> = [
-  [0, 70, 8, 0, 0], [0.1, 130, 16, 6, 150], [0.24, 186, 34, 10, 230], [0.4, 232, 78, 18, 255], [0.56, 255, 132, 28, 255], [0.72, 255, 190, 62, 255], [0.88, 255, 232, 140, 255], [1, 255, 252, 225, 255],
+/** Margens do campo em volta do botão (px): as chamas sobem bem mais do que descem. */
+const M = { lado: 14, cima: 30, baixo: 6 }
+/** Paleta em degraus (12 tons, do vermelho da borda ao amarelo claro da base), r, g, b, opacidade. */
+const PALETA: Array<[number, number, number, number]> = [
+  [0, 0, 0, 0], [170, 34, 14, 170], [200, 52, 16, 215], [224, 78, 20, 245], [240, 104, 26, 255], [250, 132, 34, 255],
+  [255, 156, 44, 255], [255, 178, 58, 255], [255, 198, 78, 255], [255, 214, 104, 255], [255, 230, 140, 255], [255, 244, 192, 255],
 ]
+const rgba = ([r, g, b, a]: [number, number, number, number]) => ((a << 24) | (b << 16) | (g << 8) | r) >>> 0
+const COR = new Uint32Array(PALETA.map(rgba))
+/** A brasa de dentro do botão: dois vinhos escuros, para o texto continuar legível. */
+const BRASA = [rgba([92, 16, 8, 235]), rgba([120, 24, 10, 240])]
+/** Ajustes do fogo, escolhidos num protótipo lado a lado (10/11/2026): resfriamento, força e escala do ruído, subida e degraus. */
+const FRIO = 0.027, RUIDO = 0.075, SX = 0.45, SY = 0.12, SOBE = 1.6, DEGRAUS = 14
+
 function sorteio(ix: number, iy: number) {
   let h = (Math.imul(ix, 374761393) + Math.imul(iy, 668265263)) | 0
   h = Math.imul(h ^ (h >>> 13), 1274126177)
@@ -29,22 +40,6 @@ function ruido(x: number, y: number) {
   const a = sorteio(ix, iy), b = sorteio(ix + 1, iy), c = sorteio(ix, iy + 1), d = sorteio(ix + 1, iy + 1)
   return a + (b - a) * fx + (c - a) * fy + (a - b - c + d) * fx * fy
 }
-const camadas = (x: number, y: number) => 0.6 * ruido(x, y) + 0.4 * ruido(x * 2.03, y * 2.03)
-function montarLut() {
-  const lut = new Uint32Array(256)
-  for (let i = 0; i < 256; i++) {
-    const h = i / 255
-    let k = 0
-    while (k < PALETA.length - 2 && h > PALETA[k + 1][0]) k++
-    const [h0, r0, g0, b0, a0] = PALETA[k], [h1, r1, g1, b1, a1] = PALETA[k + 1]
-    const t = Math.min(1, Math.max(0, (h - h0) / (h1 - h0)))
-    lut[i] = (((a0 + (a1 - a0) * t) & 255) << 24) | (((b0 + (b1 - b0) * t) & 255) << 16) | (((g0 + (g1 - g0) * t) & 255) << 8) | ((r0 + (r1 - r0) * t) & 255)
-  }
-  return lut
-}
-
-/** Margens do campo de fogo em volta do botão (px): as chamas sobem bem mais do que descem. */
-const M = { lado: 12, cima: 24, baixo: 6 }
 
 export function BordaDeFogo() {
   const ref = useRef<HTMLCanvasElement>(null)
@@ -53,59 +48,88 @@ export function BordaDeFogo() {
     if (!cv || !pai) return
     const c = cv.getContext('2d')
     if (!c) return
-    const lut = montarLut()
     let gw = 0, gh = 0, img: ImageData | null = null, px: Uint32Array | null = null
+    let calor = new Float32Array(0), novo = new Float32Array(0)
+    let x0 = 0, x1 = 0, y0 = 0, y1 = 0
     const medir = () => {
       const w = pai.offsetWidth + M.lado * 2, h = pai.offsetHeight + M.cima + M.baixo
       gw = Math.max(8, Math.ceil(w / PX)); gh = Math.max(8, Math.ceil(h / PX))
       cv.width = gw; cv.height = gh
       img = c.createImageData(gw, gh); px = new Uint32Array(img.data.buffer)
+      calor = new Float32Array(gw * gh); novo = new Float32Array(gw * gh)
+      x0 = Math.round(M.lado / PX); x1 = gw - Math.round(M.lado / PX) - 1; y0 = Math.round(M.cima / PX); y1 = gh - Math.round(M.baixo / PX) - 1
     }
+    let semente = 0x9e3779b9
+    const sorte = () => { semente ^= semente << 13; semente ^= semente >>> 17; semente ^= semente << 5; return (semente >>> 0) / 4294967296 }
+    type Fagulha = { x: number; y: number; vida: number; fase: number }
+    const fagulhas: Fagulha[] = []
     let surto = 0
-    const pintar = (t: number) => {
+    let t = 0
+    const dentro = (x: number, y: number) => x >= x0 && x <= x1 && y >= y0 && y <= y1
+    const passo = () => {
       if (!img || !px) return
-      px.fill(0)
-      const x0 = M.lado / PX, x1 = gw - M.lado / PX, y0 = M.cima / PX, y1 = gh - M.baixo / PX
+      t++
       surto += ((pai.dataset.surto === '1' ? 1 : 0) - surto) * 0.12
-      const R = 4.2 + surto * 4, esc = 0.11, sobe = t * 8
-      for (let y = 0; y < gh; y++) {
-        const dCima = Math.max(y0 - y, 0) * 0.42, dBaixo = Math.max(y - y1, 0) * 2.2
-        const v = (y + sobe) * esc * 0.5
-        for (let x = 0; x < gw; x++) {
-          const dx = Math.max(x0 - x, 0, x - x1)
-          let h: number
-          if (dx === 0 && dCima === 0 && dBaixo === 0) {
-            // por dentro: o botão arde inteiro, mais quente embaixo, com línguas subindo atrás do texto
-            const fundo = (y - y0) / Math.max(1, y1 - y0)
-            h = Math.min(0.62, 0.22 + 0.16 * fundo + 0.34 * camadas(x * esc * 1.5, v * 1.3) + surto * 0.12)
-          } else {
-            const d = Math.sqrt(dx * dx * 2.4 + dCima * dCima + dBaixo * dBaixo)
-            const nv = Math.min(1, Math.max(0, (camadas(x * esc * 1.4 + 0.9 * ruido(x * esc * 0.4, v * 0.8 + 7.3), v) - 0.5) * 2.2 + 0.5))
-            h = Math.min(0.86, 1 - d / (R * (0.14 + 1.5 * nv)))
-          }
-          if (h <= 0) continue
-          const faixa = Math.floor(Math.min(1, h) * FAIXAS) / FAIXAS
-          if (faixa > 0) px[y * gw + x] = lut[(faixa * 255) | 0]
+      // 1. as fontes de calor na borda: forte em cima (com uma onda lenta que faz as línguas grandes), média nos lados, fraca embaixo.
+      for (let x = x0; x <= x1; x++) {
+        const onda = 0.6 + 0.4 * Math.sin(x * 0.17 + t * 0.08) * Math.sin(x * 0.047 - t * 0.03)
+        calor[y0 * gw + x] = (0.7 + 0.3 * sorte()) * onda * (1 + surto * 0.5) + 0.15
+        calor[y1 * gw + x] = 0.25 * sorte()
+      }
+      for (let y = y0; y <= y1; y++) { const v = 0.55 * (0.6 + 0.4 * sorte()); calor[y * gw + x0] = v; calor[y * gw + x1] = v }
+      // 2. o calor sobe: cada célula é a média das de baixo, menos um resfriamento que sobe junto (um ruído esticado na
+      //    vertical). É isso que corta o fogo em línguas e solta as pontas.
+      novo.set(calor)
+      const frio = FRIO * (1 - surto * 0.5)
+      for (let y = 0; y < gh - 2; y++) {
+        for (let x = 1; x < gw - 1; x++) {
+          if (dentro(x, y)) continue
+          const j = (y + 1) * gw + x
+          const v = (calor[j - 1] + calor[j] + calor[j + 1] + calor[j + gw]) * 0.25 - frio - RUIDO * ruido(x * SX, (y + t * SOBE) * SY)
+          novo[y * gw + x] = v > 0 ? v : 0
         }
+      }
+      const troca = calor; calor = novo; novo = troca
+      // 3. pinta em degraus: chama por fora, brasa por dentro, e as fagulhas por cima.
+      px.fill(0)
+      for (let y = 0; y < gh; y++) {
+        for (let x = 0; x < gw; x++) {
+          const i = y * gw + x
+          if (x > x0 && x < x1 && y > y0 && y < y1) {
+            const m = Math.sin(x * 0.16 + t * 0.045) * Math.sin(y * 0.42 - t * 0.07) + 0.35 * Math.sin((x - y) * 0.09 + t * 0.03)
+            px[i] = BRASA[m > 0.5 ? 1 : 0]
+            continue
+          }
+          const k = Math.min(PALETA.length - 1, (calor[i] * DEGRAUS) | 0)
+          if (k > 0) px[i] = COR[k]
+        }
+      }
+      if (fagulhas.length < 8 && sorte() < 0.2) fagulhas.push({ x: x0 + sorte() * (x1 - x0), y: y0 - 3, vida: 12 + sorte() * 12, fase: sorte() * 6 })
+      for (let k = fagulhas.length - 1; k >= 0; k--) {
+        const f = fagulhas[k]
+        f.y -= 0.6; f.x += Math.sin(f.fase + t * 0.3) * 0.4; f.vida--
+        if (f.vida <= 0 || f.y < 0) { fagulhas.splice(k, 1); continue }
+        const fx = f.x | 0, fy = f.y | 0
+        if (fx >= 0 && fx < gw && fy >= 0 && fy < gh) px[fy * gw + fx] = COR[f.vida > 9 ? 11 : f.vida > 4 ? 9 : 6]
       }
       c.putImageData(img, 0, 0)
     }
     medir()
     const parado = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (parado) { pintar(1.7); return }
+    if (parado) { for (let k = 0; k < 60; k++) passo(); return }
     let quadro = 0, visivel = true, ultimo = 0
-    const inicio = performance.now()
-    // 24 quadros por segundo bastam para fogo em pixel e poupam bateria.
-    const passo = (agora: number) => {
-      quadro = requestAnimationFrame(passo)
-      if (!visivel || document.hidden || agora - ultimo < 41) return
+    // 20 quadros por segundo: o fogo em pixel fica vivo e poupa bateria.
+    const laco = (agora: number) => {
+      quadro = requestAnimationFrame(laco)
+      if (!visivel || document.hidden || agora - ultimo < 50) return
       ultimo = agora
-      pintar((agora - inicio) / 1000)
+      passo()
     }
-    quadro = requestAnimationFrame(passo)
+    for (let k = 0; k < 50; k++) passo()
+    quadro = requestAnimationFrame(laco)
     const olho = typeof IntersectionObserver !== 'undefined' ? new IntersectionObserver(([e]) => { visivel = e.isIntersecting }) : null
     olho?.observe(pai)
-    const medida = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(medir) : null
+    const medida = typeof ResizeObserver !== 'undefined' ? new ResizeObserver(() => { medir(); for (let k = 0; k < 50; k++) passo() }) : null
     medida?.observe(pai)
     return () => { cancelAnimationFrame(quadro); olho?.disconnect(); medida?.disconnect() }
   }, [])

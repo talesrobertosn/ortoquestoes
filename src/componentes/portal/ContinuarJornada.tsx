@@ -14,11 +14,16 @@ import { Icone } from '../Icone'
 import { IconePixel } from './IconePixel'
 
 /**
- * Continue sua jornada (31/10/2026): a sessão em andamento em destaque (retoma a MESMA sessão, nada de criar outra) e,
- * ao lado, três atalhos compactos com números de verdade: o cronograma, a revisão de hoje e o resumo em leitura.
+ * Continue sua jornada (31/10/2026; painel desde 10/11/2026, pedido do Tales: "um pequeno hub, um painel"). No alto, o
+ * cartão grande da sessão em andamento (retoma a MESMA sessão, nada de criar outra), em verde chapado, sem degradê, com a
+ * barra em blocos. Embaixo, três cartões com o mesmo peso e números grandes: o cronograma (quanto do plano já foi, o
+ * tema de hoje e os dias até a prova), a revisão de hoje e o resumo em leitura. Quando um deles não tem dado, o cartão
+ * vira um convite para a ferramenta, e a grade nunca fica torta.
  * Os números vêm dos dados do aparelho e do servidor (os mesmos do resto do site); o índice do acervo desce aqui
  * quando ainda não está na memória, para o cronograma e a revisão não sumirem na primeira abertura.
  */
+const BLOCOS = 20
+
 export function ContinuarJornada({ premium, aoIr }: { premium: boolean; aoIr: () => void }) {
   const [sessao] = usarArmazenado<EstadoSessao | null>(CHAVE_SESSAO, null)
   const feitas = sessao ? Object.keys(sessao.respostas).length : 0
@@ -41,60 +46,90 @@ export function ContinuarJornada({ premium, aoIr }: { premium: boolean; aoIr: ()
   const [respondidas] = usarArmazenado<Record<string, RegistroQuestao>>('respondidas', {})
   const crono = useMemo(() => (premium && plano && indice ? calcularPlano(indice, respondidas, plano) : null), [premium, plano, indice, respondidas])
   const pctPlano = crono && crono.alvo > 0 ? Math.min(100, Math.round((crono.feitas / crono.alvo) * 100)) : null
+  const temaHoje = crono?.hoje ? [crono.hoje.nome, crono.hoje.focos?.[0]].filter(Boolean).join(' · ') : null
 
   const pctSessao = pendente ? Math.round((pendente.feitas / pendente.total) * 100) : 0
+  const cheios = Math.round((pctSessao / 100) * BLOCOS)
   return (
     <section className="pt-jornada" aria-labelledby="pt-jornada-titulo">
       <h3 id="pt-jornada-titulo" className="pt-rotulo">Continue sua jornada</h3>
-      <div className="pt-jornada__grade">
-        {pendente ? (
-          <a className="pt-sessao" href={href('/sessao')} onClick={aoIr} aria-label={`Continuar de onde parei: ${pendente.feitas} de ${pendente.total} questões respondidas, ${pctSessao}%`}>
-            <IconePixel nome="treinar" tamanho={64} className="pt-sessao__icone" />
-            <span className="pt-sessao__texto">
-              <span className="pt-sessao__eyebrow">{sessao?.origem === 'cronograma' ? 'Sessão do cronograma' : 'Sessão em andamento'}</span>
-              <strong>Continuar de onde parei</strong>
-              <span className="pt-sessao__conta"><b className="numerico">{pendente.feitas}</b> de <b className="numerico">{pendente.total}</b> questões · {pctSessao}%</span>
-              <span className="pt-barra" aria-hidden="true"><span style={{ width: `${pctSessao}%` }} /></span>
+      {pendente ? (
+        <a className="pt-sessao" href={href('/sessao')} onClick={aoIr} aria-label={`Continuar de onde parei: ${pendente.feitas} de ${pendente.total} questões respondidas, ${pctSessao}%`}>
+          <span className="pt-sessao__moldura" aria-hidden="true"><IconePixel nome="treinar" tamanho={64} className="pt-sessao__icone" /></span>
+          <span className="pt-sessao__texto">
+            <span className="pt-sessao__eyebrow">{sessao?.origem === 'cronograma' ? 'Sessão do cronograma' : 'Sessão em andamento'}</span>
+            <strong>Continuar de onde parei</strong>
+            <span className="pt-sessao__conta"><b className="numerico">{pendente.feitas}</b> de <b className="numerico">{pendente.total}</b> questões respondidas</span>
+            <span className="pt-blocos" aria-hidden="true">
+              {Array.from({ length: BLOCOS }, (_, i) => <i key={i} className={i < cheios ? 'cheio' : undefined} />)}
+              <b className="numerico">{pctSessao}%</b>
             </span>
-            <span className="pt-sessao__acao">Retomar <Icone nome="direita" tamanho={16} /></span>
+          </span>
+          <span className="pt-sessao__acao">Retomar <Icone nome="direita" tamanho={16} /></span>
+        </a>
+      ) : (
+        <a className="pt-sessao pt-sessao--nova" href={href('/treinar')} onClick={aoIr}>
+          <span className="pt-sessao__moldura" aria-hidden="true"><IconePixel nome="treinar" tamanho={64} className="pt-sessao__icone" /></span>
+          <span className="pt-sessao__texto">
+            <span className="pt-sessao__eyebrow">Nenhuma sessão aberta</span>
+            <strong>Começar uma sessão</strong>
+            <span className="pt-sessao__conta">Escolha os temas e a quantidade de questões.</span>
+          </span>
+          <span className="pt-sessao__acao">Treinar <Icone nome="direita" tamanho={16} /></span>
+        </a>
+      )}
+
+      <ul className="pt-painel">
+        <li>{premium && plano ? (
+          <a className="pt-cartao pt-cartao--crono" href={href('/cronograma')} onClick={aoIr}>
+            <span className="pt-cartao__topo"><IconePixel nome="cronograma" tamanho={32} /><span>Cronograma</span></span>
+            <span className="pt-cartao__meio">
+              <span className="pt-anel" style={{ '--pct': pctPlano ?? 0 } as CSSProperties} aria-hidden="true"><b className="numerico">{pctPlano ?? '…'}{pctPlano !== null ? <small>%</small> : null}</b></span>
+              <span className="pt-cartao__linhas">
+                <strong>{crono ? (crono.provaPassou ? 'A prova já passou' : crono.metaDiaria ? <>Hoje <b className="numerico">{crono.feitasHoje}</b> de <b className="numerico">{crono.metaDiaria}</b></> : 'Plano em dia') : falhou ? 'Abra para ver o plano' : 'Calculando…'}</strong>
+                {temaHoje && !crono?.provaPassou && <small className="pt-cartao__tema">Estudando: {temaHoje}</small>}
+                {crono && !crono.provaPassou && <small>{crono.diasAteProva} {crono.diasAteProva === 1 ? 'dia' : 'dias'} até a prova</small>}
+                {crono?.provaPassou && <small>Hora de montar o próximo plano.</small>}
+              </span>
+            </span>
+            <span className="pt-cartao__acao">Ver o plano de hoje <Icone nome="direita" tamanho={14} /></span>
           </a>
         ) : (
-          <a className="pt-sessao pt-sessao--nova" href={href('/treinar')} onClick={aoIr}>
-            <IconePixel nome="treinar" tamanho={64} className="pt-sessao__icone" />
-            <span className="pt-sessao__texto">
-              <span className="pt-sessao__eyebrow">Nenhuma sessão aberta</span>
-              <strong>Começar uma sessão</strong>
-              <span className="pt-sessao__conta">Escolha os temas e a quantidade de questões.</span>
-            </span>
-            <span className="pt-sessao__acao">Treinar <Icone nome="direita" tamanho={16} /></span>
+          <a className="pt-cartao pt-cartao--convite" href={href('/cronograma')} onClick={aoIr}>
+            <span className="pt-cartao__topo"><IconePixel nome="cronograma" tamanho={32} /><span>Cronograma</span></span>
+            <span className="pt-cartao__linhas"><strong>Seu plano até a prova</strong><small>Questões do dia certas para a data da sua prova.</small></span>
+            <span className="pt-cartao__acao">{premium ? 'Montar o cronograma' : 'Conhecer'} <Icone nome="direita" tamanho={14} /></span>
           </a>
-        )}
-        <ul className="pt-pendencias">
-          {premium && plano && (
-            <li><a className="pt-pendencia" href={href('/cronograma')} onClick={aoIr}>
-              <IconePixel nome="cronograma" tamanho={32} />
-              <span><strong>Cronograma{pctPlano !== null ? ` · ${pctPlano}%` : ''}</strong>
-                <small>{crono ? (crono.provaPassou ? 'A prova já passou: hora de montar o próximo plano.' : `${crono.metaDiaria ? `Hoje ${crono.feitasHoje} de ${crono.metaDiaria}` : 'Plano em dia'} · ${crono.diasAteProva} ${crono.diasAteProva === 1 ? 'dia' : 'dias'} até a prova`) : falhou ? 'Abra para ver o plano de hoje' : 'Calculando o plano…'}</small>
-              </span>
-              {pctPlano !== null && <span className="pt-anel" style={{ '--pct': pctPlano } as CSSProperties} aria-hidden="true" />}
-            </a></li>
-          )}
-          <li><a className="pt-pendencia" href={href('/revisao')} onClick={aoIr}>
-            <IconePixel nome="revisao" tamanho={32} />
-            <span><strong>Revisão de hoje</strong>
-              <small>{revisarHoje === null ? (falhou ? 'Abra para ver o que volta hoje' : 'Contando as questões…') : revisarHoje > 0 ? `${revisarHoje} ${revisarHoje === 1 ? 'questão volta' : 'questões voltam'} hoje` : 'Nada para revisar hoje. Tudo em dia.'}</small>
+        )}</li>
+        <li><a className="pt-cartao pt-cartao--revisao" href={href('/revisao')} onClick={aoIr}>
+          <span className="pt-cartao__topo"><IconePixel nome="revisao" tamanho={32} /><span>Revisões de hoje</span></span>
+          <span className="pt-cartao__meio">
+            <b className="pt-cartao__numero numerico">{revisarHoje === null ? '…' : revisarHoje}</b>
+            <span className="pt-cartao__linhas">
+              <strong>{revisarHoje === null ? (falhou ? 'Abra para ver' : 'Contando…') : revisarHoje === 1 ? 'questão volta hoje' : revisarHoje > 0 ? 'questões voltam hoje' : 'Tudo em dia'}</strong>
+              <small>{revisarHoje ? 'Revise antes de avançar: é o que mais fixa.' : 'Nada para revisar hoje.'}</small>
             </span>
-            {revisarHoje ? <span className="pt-contador numerico">{revisarHoje}</span> : null}
-          </a></li>
-          {leitura && (
-            <li><a className="pt-pendencia" href={href(`/resumos/${leitura.capitulo}`)} onClick={aoIr}>
-              <IconePixel nome="resumos" tamanho={32} />
-              <span><strong>{tituloLeitura ?? 'Resumo em andamento'}</strong><small>{leitura.progresso}% lido · continua no parágrafo em que parou</small></span>
-              <span className="pt-anel" style={{ '--pct': leitura.progresso } as CSSProperties} aria-hidden="true" />
-            </a></li>
-          )}
-        </ul>
-      </div>
+          </span>
+          <span className="pt-cartao__acao">{revisarHoje ? 'Revisar agora' : 'Abrir a revisão'} <Icone nome="direita" tamanho={14} /></span>
+        </a></li>
+        <li>{leitura ? (
+          <a className="pt-cartao pt-cartao--leitura" href={href(`/resumos/${leitura.capitulo}`)} onClick={aoIr}>
+            <span className="pt-cartao__topo"><IconePixel nome="resumos" tamanho={32} /><span>Último resumo</span></span>
+            <span className="pt-cartao__linhas">
+              <strong className="pt-cartao__titulo">{tituloLeitura ?? 'Resumo em andamento'}</strong>
+              <span className="pt-cartao__progresso" aria-hidden="true"><i style={{ width: `${leitura.progresso}%` }} /></span>
+              <small><b className="numerico">{leitura.progresso}%</b> lido · volta no parágrafo em que parou</small>
+            </span>
+            <span className="pt-cartao__acao">Continuar lendo <Icone nome="direita" tamanho={14} /></span>
+          </a>
+        ) : (
+          <a className="pt-cartao pt-cartao--convite" href={href('/resumos')} onClick={aoIr}>
+            <span className="pt-cartao__topo"><IconePixel nome="resumos" tamanho={32} /><span>Resumos</span></span>
+            <span className="pt-cartao__linhas"><strong>Os capítulos que mais caem</strong><small>Comece um resumo e ele fica aqui para você continuar.</small></span>
+            <span className="pt-cartao__acao">Abrir a Biblioteca <Icone nome="direita" tamanho={14} /></span>
+          </a>
+        )}</li>
+      </ul>
     </section>
   )
 }

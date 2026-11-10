@@ -11,6 +11,9 @@ import { estagioDaSequencia, textoProximoEstagio } from '../inicio/estagiosFogue
  * os dias seguidos), com o cumprimento pela hora e o que importa hoje: os dias seguidos e quantas das 5 questões do
  * dia já foram. Para quem ainda não tem conta, a fogueira apagada convida a acender.
  */
+/** A tocha da página inicial (tocha-semana-v2.png, 6 quadros x 8 linhas; Tales, 10/11/2026: "pode usar o mesmo fogo
+ * da página principal, que são tochas"): acesa, azul nas chamas de 30 dias ou mais, apagada sem sequência. */
+const LINHA_TOCHA = { acesa: 0, apagada: 4, azul: 6 } as const
 const cumprimento = (h: number) => (h >= 5 && h < 12 ? 'Bom dia' : h >= 12 && h < 18 ? 'Boa tarde' : 'Boa noite')
 
 export function FogueiraDoMenu({ nome, logado }: { nome?: string | null; logado: boolean }) {
@@ -28,8 +31,8 @@ export function FogueiraDoMenu({ nome, logado }: { nome?: string | null; logado:
       : `${streak.atual === 1 ? '1 dia seguido' : `${streak.atual} dias seguidos`} · ${estagio.nome}${streak.metaHojeAtingida ? ' · meta de hoje feita' : ` · hoje ${hoje} de ${META_STREAK_DIARIA}`}`
   return (
     <div className="pt-fogueira">
-      <span className={`pt-fogueira__chama${indice === 0 ? ' pt-fogueira__chama--apagada' : ''}`} aria-hidden="true"
-        style={{ '--sprite-fogo': urlCss('pixel/inicio/fogo.png'), '--linha': indice } as CSSProperties} />
+      <span className={`pt-fogueira__tocha${indice === 0 ? ' pt-fogueira__tocha--apagada' : ''}`} aria-hidden="true"
+        style={{ '--sprite-tocha': urlCss('pixel/inicio/tocha-semana-v2.png'), '--linha': indice === 0 ? LINHA_TOCHA.apagada : ['azul', 'arcana', 'lendaria'].includes(estagio.id) ? LINHA_TOCHA.azul : LINHA_TOCHA.acesa } as CSSProperties} />
       <span className="pt-fogueira__texto">
         <strong>{titulo}</strong>
         <small title={proximo ?? undefined}>{linha}</small>

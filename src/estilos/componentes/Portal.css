@@ -33,15 +33,16 @@
 .pt-cabeca__linha { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .pt-fogueira { display: flex; align-items: center; gap: 0.75rem; min-width: 0; }
 /* A chama da sequência (a mesma folha da página inicial, linha = estágio), sobre um pequeno leito de brasas. */
-.pt-fogueira__chama { position: relative; flex: none; width: 34px; height: 41px; background: var(--sprite-fogo) 0 calc(var(--linha) / 7 * 100%) / 600% 800% no-repeat;
-  image-rendering: pixelated; animation: hd-fogo 0.75s steps(6) infinite; filter: drop-shadow(0 0 8px rgba(255, 170, 70, 0.55)); }
-.pt-fogueira__chama::after { content: ""; position: absolute; left: 3px; right: 3px; bottom: -2px; height: 4px; border-radius: 2px; background: linear-gradient(90deg, #4a2a16, #7a4422, #4a2a16); }
-.pt-fogueira__chama--apagada { animation-duration: 2.4s; filter: none; }
+/* A tocha da página inicial em escala 2x (quadro de 24 x 40), com o halo da chama; um pouco para fora da faixa, como na inicial. */
+.pt-fogueira__tocha { position: relative; flex: none; width: 48px; height: 80px; margin: -10px -4px -26px -6px; background: var(--sprite-tocha) 0 calc(var(--linha) / 7 * 100%) / 600% 800% no-repeat;
+  image-rendering: pixelated; animation: pt-tocha 0.9s steps(6) infinite; filter: drop-shadow(0 -4px 8px rgba(255, 170, 70, 0.4)); }
+@keyframes pt-tocha { to { background-position-x: 120%; } }
+.pt-fogueira__tocha--apagada { animation-duration: 2.4s; filter: none; }
 .pt-fogueira__texto { display: grid; gap: 0.15rem; min-width: 0; line-height: 1.15; }
 .pt-fogueira__texto strong { font: 800 1.15rem/1.1 var(--fonte-marca); letter-spacing: -0.02em; color: var(--pt-tinta); }
 .pt-fogueira__texto small { font-size: 0.8125rem; font-weight: 600; color: var(--pt-tinta-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 @keyframes hd-fogo { to { background-position-x: 120%; } }
-@media (prefers-reduced-motion: reduce) { .pt-fogueira__chama { animation: none; } }
+@media (prefers-reduced-motion: reduce) { .pt-fogueira__tocha { animation: none; } }
 .pt-fechar { display: grid; place-items: center; width: 44px; height: 44px; flex: none; border: 1px solid transparent; border-radius: 12px; background: transparent; color: var(--pt-tinta-2); cursor: pointer;
   transition: background 0.12s, color 0.12s, border-color 0.12s, transform 0.08s; }
 .pt-fechar:hover { background: var(--pt-papel-2); color: var(--pt-tinta); border-color: var(--pt-linha); }
@@ -94,33 +95,7 @@
 .pt-icone { display: block; image-rendering: pixelated; flex: none; }
 
 /* Continue sua jornada. */
-.pt-jornada__grade { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 0.9rem; }
-.pt-sessao { position: relative; display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 1rem; padding: 1.1rem 1.2rem; border-radius: 18px; text-decoration: none; color: var(--pt-tinta);
-  /* "Continuar": a missão da página inicial (painel escuro, selo dourado, botão de cristal), a primeira ação do menu. */
-  color: var(--mundo-tinta); background: var(--mundo-painel-suave); border: 0; box-shadow: inset 0 0 0 1px var(--mundo-filete), 0 14px 30px -18px rgba(0, 0, 0, 0.6);
-  transition: transform 0.15s cubic-bezier(0.2, 0.7, 0.3, 1), box-shadow 0.15s; }
-.pt-sessao:hover { transform: translateY(-2px); box-shadow: inset 0 0 0 1px var(--mundo-filete), 0 18px 34px -16px rgba(0, 0, 0, 0.65); }
-.pt-sessao:active { transform: translateY(0) scale(0.99); }
-.pt-sessao:focus-visible, .pt-pendencia:focus-visible, .pt-atalho:focus-visible, .pt-item:focus-visible, .pt-planos:focus-visible { outline: 3px solid var(--pt-verde); outline-offset: 3px; }
-.pt-sessao__icone { filter: drop-shadow(0 4px 6px rgba(20, 60, 50, 0.18)); }
-.pt-sessao__texto { display: grid; gap: 0.2rem; min-width: 0; }
-.pt-sessao__eyebrow { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: var(--mundo-ouro); }
-.pt-sessao strong { font: 800 1.25rem/1.2 var(--fonte-marca); letter-spacing: -0.015em; }
-.pt-sessao__conta { font-size: 0.9375rem; color: var(--mundo-tinta-2); }
-.pt-sessao__conta b { color: var(--mundo-tinta); }
-.pt-barra { display: block; height: 8px; margin-top: 0.35rem; border-radius: 999px; background: rgba(255, 255, 255, 0.12); overflow: hidden; }
-.pt-barra > span { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, #c48218, #ffd060); }
-.pt-sessao__acao { display: inline-flex; align-items: center; gap: 0.3rem; min-height: 44px; padding: 0 1rem; border-radius: var(--raio-controle); background: var(--cristal); box-shadow: var(--cristal-sombra); color: var(--cristal-tinta); font-weight: 800; text-shadow: none; white-space: nowrap; }
-.pt-sessao:hover .pt-sessao__acao { filter: brightness(1.05); }
-.pt-pendencias { display: grid; gap: 0.5rem; margin: 0; padding: 0; list-style: none; align-content: start; }
-.pt-pendencia { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 0.75rem; min-height: 60px; padding: 0.5rem 0.8rem; border-radius: 14px; text-decoration: none; color: var(--pt-tinta);
-  background: var(--pt-cartao); border: 1px solid var(--pt-linha); transition: border-color 0.15s, transform 0.15s; }
-.pt-pendencia:hover { border-color: var(--pt-linha-forte); transform: translateX(2px); }
-.pt-pendencia > span:nth-child(2) { display: grid; min-width: 0; }
-.pt-pendencia strong { font-size: 0.9375rem; font-weight: 700; line-height: 1.25; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.pt-pendencia small { font-size: 0.8125rem; color: var(--pt-tinta-2); line-height: 1.3; }
-.pt-anel { width: 28px; height: 28px; border-radius: 50%; background: radial-gradient(closest-side, var(--pt-cartao) 70%, transparent 72%), conic-gradient(var(--pt-verde) calc(var(--pct) * 1%), var(--pt-papel-3) 0); }
-.pt-contador { min-width: 1.8rem; padding: 0.15rem 0.5rem; border-radius: 999px; background: var(--ouro-veu); color: var(--ouro-texto); font-weight: 750; font-size: 0.875rem; text-align: center; }
+.pt-sessao:focus-visible, .pt-cartao:focus-visible, .pt-atalho:focus-visible, .pt-item:focus-visible, .pt-planos:focus-visible { outline: 3px solid var(--pt-verde); outline-offset: 3px; }
 
 /* Os seis atalhos. */
 .pt-atalhos { position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.95rem; }
@@ -219,7 +194,6 @@
 @media (max-width: 62rem) {
   .pt-grupos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .pt-atalhos { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .pt-jornada__grade { grid-template-columns: 1fr; }
 }
 
 /* Celular: quase a tela toda, subindo de baixo; a busca no alto; atalhos em duas colunas legíveis. */
@@ -231,13 +205,6 @@
   .pt-fogueira__texto strong { font-size: 1.05rem; }
   .pt-corpo { padding: 1rem 1rem 1.4rem; gap: 1.3rem; }
   .pt-chao { padding: 0 1rem env(safe-area-inset-bottom); min-height: calc(50px + env(safe-area-inset-bottom)); border-radius: 0; }
-  .pt-sessao { grid-template-columns: auto 1fr auto; padding: 0.8rem 0.85rem; gap: 0.7rem; }
-  .pt-sessao__icone { width: 48px; height: 48px; }
-  .pt-sessao strong { font-size: 1.05rem; }
-  .pt-sessao__conta { font-size: 0.8125rem; }
-  .pt-sessao__acao { min-height: 44px; padding: 0 0.7rem; font-size: 0.875rem; }
-  .pt-sessao--nova .pt-sessao__conta { display: none; }
-  .pt-pendencia { min-height: 54px; }
   .pt-atalhos { gap: 0.75rem; }
   .pt-atalho { grid-template-columns: 1fr; align-content: start; justify-items: start; gap: 0.35rem; min-height: 0; padding: 0.7rem 0.75rem 0.8rem; border-radius: 16px; }
   .pt-atalho__icone { width: 48px; height: 48px; border-radius: 12px; }
@@ -294,3 +261,82 @@
 /* O texto da fogueira para antes da coruja, que pousa entre ele e o X; no celular a linha de baixo quebra em duas. */
 .pt-cabeca__linha .pt-fogueira { flex: 1; padding-right: 5.5rem; }
 @media (max-width: 48rem) { .pt-fogueira__texto small { white-space: normal; } }
+
+/* ── Painel "Continue sua jornada" (10/11/2026, pedido do Tales: um pequeno hub, sem degradê, no verde da marca). ──
+ * O cartão grande é verde chapado (#14655e, o verdete do tema claro, fixo nos dois temas), com texto branco, a barra em
+ * blocos e o botão branco. Os três cartões de baixo têm o mesmo peso e um número grande cada. Nada aqui usa degradê;
+ * o anel é um conic com corte seco. */
+.pt-jornada { display: grid; gap: 0.75rem; }
+.pt-jornada > .pt-rotulo { margin-bottom: 0; }
+.pt-sessao { --pt-sessao-verde: #14655e; --pt-sessao-escuro: #0f4f49; --pt-sessao-linha: #2a7f74;
+  position: relative; isolation: isolate; overflow: hidden; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 1.1rem;
+  padding: 1.15rem 1.35rem; border-radius: 18px; text-decoration: none; color: #fff; background: var(--pt-sessao-verde);
+  box-shadow: inset 0 0 0 1px var(--pt-sessao-escuro), 0 4px 0 var(--pt-sessao-escuro), 0 16px 28px -18px rgba(8, 40, 36, 0.7);
+  transition: transform 0.15s cubic-bezier(0.2, 0.7, 0.3, 1), background-color 0.15s; }
+/* Enfeite em pixel, só com cores chapadas: uma escada de quadradinhos no canto (sem degradê). */
+.pt-sessao::after { content: ""; position: absolute; z-index: -1; right: 26%; top: 12px; width: 8px; height: 8px; background: #1b7166;
+  box-shadow: 10px 0 #1b7166, 20px 0 #1b7166, 10px 10px #1b7166, 20px 10px #1b7166, 30px 10px #1b7166, 20px 20px #1b7166, 30px 20px #1b7166, 40px 20px #1b7166,
+    30px 30px #1b7166, 40px 30px #1b7166, 50px 30px #1b7166, 40px 40px #1b7166, 50px 40px #1b7166, 60px 40px #1b7166; }
+.pt-sessao:hover { transform: translateY(-2px); background: #156b63; }
+.pt-sessao:active { transform: translateY(1px); box-shadow: inset 0 0 0 1px var(--pt-sessao-escuro), 0 2px 0 var(--pt-sessao-escuro); }
+.pt-sessao__moldura { display: grid; place-items: center; width: 84px; height: 84px; border-radius: 16px; background: var(--pt-sessao-escuro); box-shadow: inset 0 0 0 2px var(--pt-sessao-linha); }
+.pt-sessao__icone { filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.25)); }
+.pt-sessao__texto { display: grid; gap: 0.25rem; min-width: 0; }
+.pt-sessao__eyebrow { font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #bfe7de; }
+.pt-sessao strong { font: 800 1.4rem/1.15 var(--fonte-marca); letter-spacing: -0.02em; color: #fff; }
+.pt-sessao__conta { font-size: 0.9375rem; color: #d9f1eb; }
+.pt-sessao__conta b { color: #fff; }
+.pt-blocos { display: flex; align-items: center; gap: 3px; margin-top: 0.45rem; }
+.pt-blocos i { flex: 1; max-width: 14px; height: 10px; border-radius: 2px; background: var(--pt-sessao-linha); }
+.pt-blocos i.cheio { background: #fff; box-shadow: inset 0 -2px 0 #cfe9e3; }
+.pt-blocos b { margin-left: 0.55rem; font-size: 0.875rem; font-weight: 800; color: #fff; }
+.pt-sessao__acao { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 48px; padding: 0 1.2rem; border-radius: var(--raio-controle); background: #fff; color: var(--pt-sessao-verde);
+  font-weight: 800; font-size: 1rem; white-space: nowrap; box-shadow: 0 3px 0 var(--pt-sessao-escuro); }
+.pt-sessao:hover .pt-sessao__acao { background: #f2faf8; }
+
+.pt-painel { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+.pt-painel > li { display: flex; min-width: 0; }
+.pt-cartao { display: flex; flex-direction: column; gap: 0.7rem; width: 100%; min-height: 172px; padding: 0.95rem 1.05rem 1rem; border-radius: 16px; text-decoration: none; color: var(--pt-tinta);
+  background: var(--pt-cartao); border: 1px solid var(--pt-linha); box-shadow: 0 2px 0 var(--pt-linha); transition: transform 0.15s cubic-bezier(0.2, 0.7, 0.3, 1), border-color 0.15s; }
+.pt-cartao:hover { transform: translateY(-2px); border-color: var(--pt-verde); }
+.pt-cartao__topo { display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase; color: var(--pt-verde); }
+.pt-cartao__meio { display: flex; align-items: center; gap: 0.9rem; min-width: 0; }
+.pt-cartao__linhas { display: grid; gap: 0.2rem; min-width: 0; }
+.pt-cartao__linhas strong { font-size: 0.9875rem; font-weight: 750; line-height: 1.25; }
+.pt-cartao__linhas small { font-size: 0.8125rem; line-height: 1.35; color: var(--pt-tinta-2); }
+.pt-cartao__tema { color: var(--pt-tinta) !important; font-weight: 650; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pt-cartao__titulo { font: 800 1.05rem/1.25 var(--fonte-marca) !important; letter-spacing: -0.01em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pt-cartao__numero { flex: none; min-width: 3.2rem; font: 800 2.75rem/1 var(--fonte-marca); letter-spacing: -0.03em; color: var(--pt-verde); }
+.pt-cartao--revisao .pt-cartao__numero { color: var(--ouro-texto); }
+.pt-cartao__progresso { display: block; height: 10px; margin: 0.35rem 0 0.15rem; border-radius: 3px; background: var(--pt-papel-3); overflow: hidden; }
+.pt-cartao__progresso i { display: block; height: 100%; background: var(--pt-verde); }
+.pt-cartao__acao { display: inline-flex; align-items: center; gap: 0.3rem; margin-top: auto; font-size: 0.875rem; font-weight: 800; color: var(--pt-verde); }
+.pt-cartao--convite { background: var(--pt-papel-2); border-style: dashed; box-shadow: none; }
+.pt-anel { position: relative; flex: none; display: grid; place-items: center; width: 66px; height: 66px; border-radius: 50%;
+  background: conic-gradient(var(--pt-verde) calc(var(--pct) * 1%), var(--pt-papel-3) 0); }
+.pt-anel::before { content: ""; position: absolute; inset: 7px; border-radius: 50%; background: var(--pt-cartao); }
+.pt-anel b { position: relative; font: 800 1.15rem/1 var(--fonte-marca); color: var(--pt-tinta); }
+.pt-anel b small { font-size: 0.7rem; margin-left: 1px; }
+
+@media (max-width: 52rem) {
+  .pt-painel { grid-template-columns: 1fr; gap: 0.6rem; }
+  .pt-cartao { min-height: 0; padding: 0.85rem 0.95rem; }
+}
+@media (max-width: 40rem) {
+  .pt-sessao { grid-template-columns: auto minmax(0, 1fr); gap: 0.8rem; padding: 0.95rem; }
+  .pt-sessao__moldura { width: 64px; height: 64px; border-radius: 14px; }
+  .pt-sessao__icone { width: 48px; height: 48px; }
+  .pt-sessao strong { font-size: 1.15rem; }
+  .pt-sessao__conta { font-size: 0.8125rem; }
+  .pt-sessao__acao { grid-column: 1 / -1; justify-content: center; min-height: 46px; }
+  .pt-sessao::after { right: 8%; }
+  .pt-cartao__numero { font-size: 2.3rem; }
+  .pt-anel { width: 58px; height: 58px; }
+  /* No celular o cartão fica baixo: a ação vira só a seta no canto e a frase de apoio da revisão sai. */
+  .pt-cartao { position: relative; gap: 0.5rem; padding: 0.8rem 0.9rem; }
+  .pt-cartao__acao { position: absolute; top: 0.75rem; right: 0.8rem; margin: 0; font-size: 0; }
+  .pt-cartao__acao svg { width: 18px; height: 18px; }
+  .pt-cartao--revisao .pt-cartao__linhas small { display: none; }
+  .pt-cartao__topo { padding-right: 1.6rem; }
+}
+@media (prefers-reduced-motion: reduce) { .pt-sessao, .pt-cartao { transition: none; } .pt-sessao:hover, .pt-cartao:hover { transform: none; } }
