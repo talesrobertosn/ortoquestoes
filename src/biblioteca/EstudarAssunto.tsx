@@ -120,7 +120,7 @@ export function EstudarAssunto({ questao, subtemas = [], baseResumo }: { questao
         </a>
       </div>
       <div className="bib-convite__texto">
-        <span className="bib-convite__selo"><span className="bib-convite__selo-ponto" aria-hidden="true" />Biblioteca<span className="bib-convite__selo-marca"> OrtoQuestões</span> <b>Beta</b></span>
+        <span className="bib-convite__selo"><span className="bib-convite__selo-ponto" aria-hidden="true" />Biblioteca<span className="bib-convite__selo-marca"> OrtoQuestões</span></span>
         <h3 className="bib-convite__titulo">{citada ? 'Esta questão está explicada num resumo' : 'Tem um resumo sobre este tema'}</h3>
         <p className="bib-convite__frase">{citada
           ? <>O raciocínio dela está em <strong>“{trecho!.s}”</strong>, no resumo de {tema}.</>

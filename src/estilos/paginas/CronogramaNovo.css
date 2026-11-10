@@ -1,0 +1,245 @@
+/* A página do Cronograma de TEOT e TARO, refeita em 10/11/2026 (CronogramaVisao.tsx).
+   Paleta da página inicial: a cena pintada e o chão escuro (--mundo-*) no topo, o botão de começar dourado
+   (.cristal) e, no resto, o papel calmo do site (porcelana, branco, verdete para agir). Botões chapados, sem
+   gradiente; a cor de cada área (--cn-area) aparece só como marca pequena. Raio 20 nas superfícies grandes
+   (como na inicial), 10 nos controles. */
+
+.cn { --cn-raio: var(--mundo-raio, 20px); --cn-area: var(--verdete); gap: var(--e-5); }
+.cn :where(h1, h2, h3, p, ul, ol) { margin: 0; }
+.cn :where(ul, ol) { padding: 0; list-style: none; }
+.cn-rotulo { color: var(--texto-2); font-size: var(--meta); font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+.cn-secao__titulo { font-family: var(--fonte-marca); font-size: clamp(1.25rem, 1.1rem + 0.8vw, 1.5rem); font-weight: 800; letter-spacing: -0.02em; text-wrap: balance; }
+.cn-secao__sub { margin-top: var(--e-1); color: var(--texto-2); font-size: var(--corpo-menor); }
+.cn-nota { color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; text-wrap: pretty; }
+.cn-nota b { color: var(--texto); }
+.cn-ponto { display: inline-block; width: 0.7rem; height: 0.7rem; margin-right: 0.55rem; border-radius: 3px; background: var(--cn-area); vertical-align: 0.06em; }
+
+/* ── Botões chapados ── */
+.cn-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.45rem; min-height: 2.75rem; padding: 0 1rem; border: 1px solid var(--traco-forte, var(--traco)); border-radius: var(--raio-controle);
+  background: var(--superficie); color: var(--texto); font: inherit; font-size: var(--corpo-menor); font-weight: 700; text-decoration: none; cursor: pointer; white-space: nowrap;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease; }
+.cn-btn:hover:not(:disabled) { border-color: var(--verdete); background: var(--verdete-veu); color: var(--verdete-tinta, var(--verdete)); }
+.cn-btn:active:not(:disabled) { transform: translateY(1px); }
+.cn-btn:focus-visible, .cn-link:focus-visible, .cn-etapa:focus-visible, .cn-resumo:focus-visible, .cn-chave:focus-visible, .cn-pergunta summary:focus-visible, .cn-mais summary:focus-visible { outline: 3px solid var(--verdete); outline-offset: 2px; }
+.cn-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+.cn-btn[aria-pressed="true"] { border-color: var(--verdete); background: var(--verdete-veu); }
+.cn-btn--forte { border-color: var(--verdete); background: var(--verdete); color: #fff; }
+.cn-btn--forte:hover:not(:disabled) { background: var(--verdete-tinta, var(--verdete)); border-color: var(--verdete-tinta, var(--verdete)); color: #fff; }
+:root[data-tema="escuro"] .cn-btn--forte, :root[data-tema="escuro"] .cn-btn--forte:hover:not(:disabled) { color: #06201c; }
+.cn-btn small { font-weight: 600; opacity: 0.85; }
+.cn-link { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0; border: 0; background: none; color: var(--verdete); font: inherit; font-size: inherit; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.cn-link:hover { color: var(--verdete-tinta, var(--verdete)); }
+.cn-linha-btn { display: flex; flex-wrap: wrap; gap: var(--e-2); }
+
+/* O botão do dia: o cristal dourado da inicial, com a segunda linha pequena. */
+.cn-acao { display: inline-grid; justify-items: start; gap: 0.1rem; min-height: 3.25rem; padding: 0.55rem 1.25rem; border-radius: 12px; text-align: left; line-height: 1.2; }
+.cn-acao strong { font-size: 1.0625rem; font-weight: 800; }
+.cn-acao small { font-size: var(--meta); font-weight: 600; opacity: 0.82; }
+.cn-acao--grande { width: 100%; max-width: 26rem; margin-top: var(--e-2); justify-items: center; text-align: center; }
+
+/* ── Topo: a estrada até a prova ── */
+.cn-topo { position: relative; isolation: isolate; overflow: hidden; border-radius: var(--cn-raio); background: var(--mundo-chao, #0b100e); color: var(--mundo-tinta, #fffaf0); }
+.cn-topo__palco { position: relative; display: grid; }
+.cn-topo__cena { position: relative; height: clamp(10rem, 44vw, 13rem); overflow: hidden; }
+.cn-topo__cena .ct-cena { --ct-foco: 0.72; }
+.cn-topo__cena::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, transparent 62%, var(--mundo-chao, #0b100e)); }
+.cn-topo__texto { position: relative; z-index: 1; display: grid; gap: var(--e-2); margin-top: -1.25rem; padding: 0 var(--e-4) var(--e-5); }
+.cn-topo__selo { justify-self: start; color: var(--mundo-ouro, #f0c46a); font-size: 0.75rem; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; }
+.cn-topo h1 { font-family: var(--fonte-marca); font-size: clamp(2rem, 1.3rem + 3.2vw, 3.25rem); font-weight: 800; line-height: 1.02; letter-spacing: -0.035em; text-wrap: balance; color: inherit; }
+.cn-topo h1 em { color: var(--mundo-ouro, #f0c46a); font-style: normal; }
+.cn-topo__sub { color: var(--mundo-tinta-2, #e4d8bd); font-size: var(--corpo-menor); }
+.cn-topo__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3); margin-top: var(--e-2); }
+.cn-topo__ajustar { display: inline-flex; align-items: center; gap: 0.4rem; min-height: 2.75rem; padding: 0 0.9rem; border: 1px solid var(--mundo-filete, rgba(255, 236, 200, 0.14)); border-radius: var(--raio-controle);
+  background: rgba(9, 13, 14, 0.5); color: var(--mundo-tinta, #fffaf0); font: inherit; font-size: var(--corpo-menor); font-weight: 700; cursor: pointer; }
+.cn-topo__ajustar:hover { border-color: var(--mundo-ouro, #f0c46a); }
+.cn-topo__ajustar:focus-visible { outline: 3px solid var(--mundo-ouro, #f0c46a); outline-offset: 2px; }
+@media (max-width: 30rem) { .cn-topo .cn-acao { flex: 1 1 100%; } }
+
+@media (min-width: 52rem) {
+  .cn-topo__palco { min-height: clamp(21rem, 34vw, 27rem); align-items: center; }
+  .cn-topo__cena { position: absolute; inset: 0; height: auto; }
+  .cn-topo__cena .ct-cena { --ct-foco: 1; }
+  /* O véu só do lado do texto e na base: a pintura fica inteira do centro para a direita. */
+  .cn-topo__cena::after { background:
+    linear-gradient(90deg, rgba(7, 11, 12, 0.82), rgba(7, 11, 12, 0.55) 30%, rgba(7, 11, 12, 0) 54%),
+    linear-gradient(180deg, transparent 80%, var(--mundo-chao, #0b100e)); }
+  .cn-topo__texto { margin: 0; padding: var(--e-7) clamp(1.5rem, 3.5vw, 3rem); max-width: 34rem; gap: var(--e-3); }
+  .cn-topo h1, .cn-topo__sub { text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6); }
+}
+
+/* A estrada: as etapas como trechos proporcionais ao tempo, cada uma um botão que explica a etapa. */
+.cn-estrada { display: grid; gap: var(--e-3); padding: var(--e-4) var(--e-4) var(--e-5); border-top: 1px solid var(--mundo-filete, rgba(255, 236, 200, 0.14)); }
+@media (min-width: 52rem) { .cn-estrada { padding-inline: clamp(1.5rem, 3.5vw, 3rem); } }
+.cn-estrada__titulo { color: var(--mundo-tinta, #fffaf0); font-size: var(--meta); font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+.cn-estrada__titulo small { margin-left: 0.5rem; color: var(--mundo-tinta-2, #e4d8bd); font-size: var(--meta); font-weight: 500; letter-spacing: 0; text-transform: none; opacity: 0.85; }
+.cn-estrada__trilho { position: relative; display: grid; gap: 4px; padding-top: 0.9rem; }
+.cn-etapa { display: grid; gap: 0.15rem; min-width: 0; min-height: 3.75rem; padding: 0 0.15rem 0.3rem; border: 0; border-radius: 8px; background: none; color: var(--mundo-tinta-2, #e4d8bd); font: inherit; text-align: left; cursor: pointer; align-content: start; }
+.cn-etapa__faixa { display: block; height: 8px; margin-bottom: 0.4rem; border-radius: 999px; background: rgba(255, 250, 240, 0.16); transition: box-shadow 0.15s ease; }
+.cn-etapa--feita .cn-etapa__faixa { background: #2f8f80; }
+.cn-etapa--atual .cn-etapa__faixa { background: var(--mundo-ouro, #f0c46a); }
+.cn-etapa--prova { min-width: 3.4rem; }
+.cn-etapa--prova .cn-etapa__faixa { background: repeating-linear-gradient(90deg, var(--mundo-ouro, #f0c46a) 0 5px, transparent 5px 9px); }
+.cn-etapa b { overflow: hidden; color: var(--mundo-tinta, #fffaf0); font-size: var(--meta); font-weight: 700; white-space: nowrap; text-overflow: ellipsis; }
+.cn-etapa small { overflow: hidden; font-size: 0.75rem; white-space: nowrap; text-overflow: ellipsis; }
+.cn-etapa--atual small { color: var(--mundo-ouro, #f0c46a); font-weight: 700; }
+.cn-etapa:hover .cn-etapa__faixa, .cn-etapa[aria-expanded="true"] .cn-etapa__faixa { box-shadow: 0 0 0 2px rgba(240, 196, 106, 0.45); }
+.cn-etapa[aria-expanded="true"] b { text-decoration: underline; text-underline-offset: 3px; }
+.cn-topo .cn-etapa:focus-visible { outline-color: var(--mundo-ouro, #f0c46a); }
+/* O marcador "você": um losango dourado sobre o trilho (a marca do mundo HD-2D). */
+.cn-estrada__voce { position: absolute; top: 0.9rem; width: 14px; height: 14px; margin: -3px 0 0 -7px; border: 2px solid var(--mundo-chao, #0b100e); background: var(--mundo-ouro, #f0c46a); transform: rotate(45deg); pointer-events: none; }
+.cn-estrada__painel p { max-width: 78ch; color: var(--mundo-tinta-2, #e4d8bd); font-size: var(--corpo-menor); line-height: 1.55; text-wrap: pretty; }
+.cn-estrada__painel b { color: var(--mundo-tinta, #fffaf0); }
+.cn-estrada .cp-resumo { background: rgba(255, 255, 255, 0.05); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1); border-radius: 12px; }
+
+/* ── Primeira visita ── */
+.cn-boasvindas { display: flex; flex-wrap: wrap; align-items: center; gap: var(--e-3); padding: var(--e-3) var(--e-4); border: 1px solid var(--traco); border-radius: var(--raio-cartao); background: var(--superficie); }
+.cn-boasvindas p { flex: 1 1 18rem; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; }
+.cn-boasvindas p strong, .cn-boasvindas p b { color: var(--texto); }
+
+/* ── O roteiro de hoje ── */
+.cn-hoje { display: grid; gap: var(--e-5); padding: clamp(1.1rem, 3.5vw, 2rem); border: 1px solid var(--traco); border-radius: var(--cn-raio); background: var(--superficie); box-shadow: var(--sombra-media); }
+.cn-hoje--reta { padding: 0; border: 0; background: none; box-shadow: none; }
+.cn-hoje__cabeca { display: grid; gap: var(--e-2); }
+.cn-hoje__cabeca h2 { font-family: var(--fonte-marca); font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2rem); font-weight: 800; line-height: 1.12; letter-spacing: -0.02em; text-wrap: balance; }
+.cn-hoje__porque { max-width: 70ch; color: var(--texto-2); line-height: 1.5; text-wrap: pretty; }
+
+.cn-ontem { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: var(--e-3); padding: var(--e-3) var(--e-4); border-radius: 12px; background: var(--aviso-veu); color: var(--texto); font-size: var(--corpo-menor); line-height: 1.5; }
+.cn-ontem svg { margin-top: 0.15rem; color: var(--aviso-texto, var(--aviso)); }
+.cn-ontem span { text-wrap: pretty; }
+
+.cn-passos { display: grid; gap: 0; }
+.cn-passo { position: relative; display: grid; grid-template-columns: 2.25rem minmax(0, 1fr); gap: var(--e-4); padding-bottom: var(--e-6); }
+.cn-passo:last-child { padding-bottom: 0; }
+/* A linha que liga os passos. */
+.cn-passo:not(:last-child)::before { content: ""; position: absolute; left: calc(1.125rem - 1px); top: 2.6rem; bottom: 0.35rem; width: 2px; border-radius: 2px; background: var(--traco); }
+.cn-passo__n { display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border-radius: 50%; background: var(--verdete-veu); color: var(--verdete-tinta, var(--verdete)); font-family: var(--fonte-marca); font-size: 1.0625rem; font-weight: 800; }
+.cn-passo--feito .cn-passo__n { background: var(--acerto); color: #fff; }
+:root[data-tema="escuro"] .cn-passo--feito .cn-passo__n { color: #06201c; }
+.cn-passo--erros .cn-passo__n { background: var(--erro-veu); color: var(--erro-texto, var(--erro)); }
+.cn-passo--destaque .cn-passo__corpo { padding: var(--e-4); border: 1px solid color-mix(in srgb, var(--erro) 35%, var(--traco)); border-radius: var(--raio-cartao); background: color-mix(in srgb, var(--erro-veu) 45%, var(--superficie)); }
+.cn-passo__corpo { display: grid; gap: var(--e-3); min-width: 0; padding-top: 0.2rem; }
+.cn-passo__corpo h3 { font-size: 1.1875rem; font-weight: 750; line-height: 1.3; }
+.cn-passo__corpo h3 small { color: var(--texto-2); font-size: var(--corpo-menor); font-weight: 600; }
+.cn-passo__porque { max-width: 68ch; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.55; text-wrap: pretty; }
+.cn-passo__porque b { color: var(--texto); }
+.cn-passo__conta { color: var(--texto-2); font-size: var(--corpo-menor); }
+.cn-passo__conta b { color: var(--texto); font-size: var(--corpo); }
+@media (max-width: 30rem) { .cn-passo { grid-template-columns: 1.9rem minmax(0, 1fr); gap: var(--e-3); } .cn-passo__n { width: 1.9rem; height: 1.9rem; font-size: 0.9375rem; } .cn-passo:not(:last-child)::before { left: calc(0.95rem - 1px); top: 2.25rem; } }
+
+.cn-barra { height: 10px; max-width: 26rem; border-radius: 999px; background: var(--superficie-2); box-shadow: inset 0 0 0 1px var(--traco); overflow: hidden; }
+.cn-barra span { display: block; height: 100%; min-width: 0; border-radius: inherit; background: var(--verdete); transition: width 0.4s ease; }
+
+/* As áreas do dia: o número, a marca de cor e os assuntos. */
+.cn-areas { display: grid; gap: 0; border-block: 1px solid var(--traco); }
+.cn-areas li { display: grid; grid-template-columns: 4.2rem minmax(0, 1fr); gap: var(--e-3); align-items: start; padding: var(--e-3) 0; }
+.cn-areas li + li { border-top: 1px solid var(--traco); }
+.cn-areas b.numerico { padding-left: 0.55rem; border-left: 4px solid var(--cn-area); font-family: var(--fonte-pixel-titulo); font-size: 2rem; font-weight: 400; line-height: 0.95; white-space: nowrap; }
+.cn-areas strong { font-weight: 700; }
+.cn-areas em { color: var(--texto-2); font-size: var(--corpo-menor); font-style: normal; }
+.cn-areas small { display: block; margin-top: 0.15rem; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; text-wrap: pretty; }
+.cn-amanha { display: flex; gap: 0.4rem; align-items: baseline; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
+.cn-amanha svg { flex: none; translate: 0 2px; }
+.cn-amanha b { color: var(--texto); }
+
+/* Os resumos do dia: cada um um livro deitado, com a lombada na cor da área. */
+.cn-resumos { display: grid; gap: var(--e-2); }
+.cn-resumo { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: stretch; min-height: 4rem; border: 1px solid var(--traco); border-radius: 12px; background: var(--superficie); color: var(--texto); text-decoration: none; overflow: hidden;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease; }
+.cn-resumo:hover { border-color: var(--cn-area); transform: translateY(-1px); box-shadow: var(--sombra-media); }
+.cn-resumo__lombada { display: grid; place-items: center; width: 2.6rem; background: var(--cn-area); color: #fff; }
+.cn-resumo__texto { display: grid; align-content: center; gap: 0.15rem; min-width: 0; padding: 0.6rem 0.85rem; }
+.cn-resumo__texto strong { font-weight: 700; line-height: 1.3; text-wrap: balance; }
+.cn-resumo__texto small { color: var(--texto-2); font-size: var(--meta); line-height: 1.4; }
+.cn-resumo__barra { display: block; height: 4px; max-width: 12rem; margin-top: 0.25rem; border-radius: 999px; background: var(--superficie-2); overflow: hidden; }
+.cn-resumo__barra i { display: block; height: 100%; background: var(--cn-area); }
+.cn-resumo__tempo { display: grid; align-content: center; justify-items: end; padding: 0 0.9rem; color: var(--verdete); font-size: var(--corpo-menor); font-weight: 800; white-space: nowrap; }
+.cn-resumo__tempo small { color: var(--texto-2); font-size: var(--meta); font-weight: 600; }
+.cn-resumo--lido .cn-resumo__lombada { background: var(--acerto); }
+:root[data-tema="escuro"] .cn-resumo--lido .cn-resumo__lombada { color: #06201c; }
+.cn-resumo--lido .cn-resumo__tempo { color: var(--acerto-texto, var(--acerto)); }
+@media (prefers-reduced-motion: reduce) { .cn-resumo, .cn-btn, .cn-barra span { transition: none; } .cn-resumo:hover { transform: none; } }
+
+/* Os erros por dia. */
+.cn-erros { display: flex; flex-wrap: wrap; gap: var(--e-2); }
+.cn-erros li { display: inline-flex; align-items: baseline; gap: 0.45rem; min-height: 2.75rem; padding: 0.35rem 0.8rem; border-radius: 12px; background: var(--erro-veu); font-size: var(--corpo-menor); }
+.cn-erros li b { color: var(--erro-texto, var(--erro)); font-family: var(--fonte-pixel-titulo); font-size: 1.6rem; font-weight: 400; line-height: 1; }
+.cn-erros li .cn-link { min-height: 2rem; margin-left: 0.2rem; font-size: var(--meta); }
+.cn-erros .cn-erros__resto { background: var(--superficie-2); }
+
+/* Mais para hoje (fechado de início). */
+.cn-mais { border-top: 1px solid var(--traco); }
+.cn-mais summary, .cn-pergunta summary { display: flex; align-items: center; gap: var(--e-3); min-height: 3rem; padding: var(--e-3) 0; list-style: none; cursor: pointer; font-weight: 700; }
+.cn-mais summary::-webkit-details-marker, .cn-pergunta summary::-webkit-details-marker { display: none; }
+.cn-mais summary small { flex: 1; color: var(--texto-2); font-size: var(--meta); font-weight: 500; }
+.cn-mais summary svg, .cn-pergunta summary svg { flex: none; margin-left: auto; color: var(--texto-2); transition: transform 0.2s ease; }
+.cn-mais[open] summary svg, .cn-pergunta[open] summary svg { transform: rotate(180deg); }
+@media (max-width: 30rem) { .cn-mais summary small { display: none; } }
+.cn-mais__corpo { display: grid; gap: var(--e-4); padding-bottom: var(--e-2); }
+.cn-extras { display: grid; }
+.cn-extras li { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: var(--e-3); align-items: center; padding: var(--e-3) 0; }
+.cn-extras li + li { border-top: 1px solid var(--traco); }
+.cn-extras li > svg { color: var(--verdete); }
+.cn-extras strong { display: block; font-weight: 700; }
+.cn-extras small { display: block; color: var(--texto-2); font-size: var(--meta); line-height: 1.4; }
+/* O painel de adiantar dentro do roteiro: chapado, sem o dourado em gradiente. */
+.cn .cp-adiantar, .cn .cp-adiantar--destaque { background: var(--superficie-2); border: 1px solid var(--traco); border-radius: 12px; box-shadow: none; }
+.cn .cp-adiantar__icone, .cn .cp-adiantar--destaque .cp-adiantar__icone { background: var(--ouro-veu); color: var(--ouro-texto); box-shadow: none; }
+.cn .cp-botao--ouro { background: var(--mundo-ouro, #f0c46a); color: #1b1208; box-shadow: none; }
+
+.cn-avisos { display: grid; gap: var(--e-3); }
+.cn-doescolhido { display: grid; gap: var(--e-3); padding: var(--e-4); border: 1px solid var(--traco); border-radius: var(--raio-cartao); background: var(--superficie); }
+
+/* ── Como funciona ── */
+.cn-como__lista { margin-top: var(--e-4); border: 1px solid var(--traco); border-radius: var(--cn-raio); background: var(--superficie); overflow: hidden; }
+.cn-pergunta + .cn-pergunta { border-top: 1px solid var(--traco); }
+.cn-pergunta summary { padding-inline: clamp(1rem, 3vw, 1.5rem); }
+.cn-pergunta summary:hover { background: var(--superficie-2); }
+.cn-pergunta p { max-width: 76ch; padding: 0 clamp(1rem, 3vw, 1.5rem) var(--e-4); color: var(--texto-2); line-height: 1.6; text-wrap: pretty; }
+.cn-pergunta p b { color: var(--texto); }
+
+/* ── O resto ── */
+.cn-resto { display: grid; gap: var(--e-4); }
+.cn-dificil { display: grid; gap: var(--e-3); justify-items: start; }
+.cn-dificil p { color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; }
+
+/* ── Pé: as opções discretas ── */
+.cn-pe { display: grid; gap: var(--e-4); padding-top: var(--e-4); border-top: 1px solid var(--traco); }
+.cn-opcoes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr)); gap: var(--e-3); max-width: 46rem; }
+.cn-opcao { display: flex; align-items: center; justify-content: space-between; gap: var(--e-3); min-height: 3.5rem; padding: 0.6rem 0.9rem; border: 1px solid var(--traco); border-radius: 12px; background: transparent; color: var(--texto); font: inherit; text-align: left; }
+.cn-opcao strong { display: block; font-size: var(--corpo-menor); font-weight: 700; }
+.cn-opcao small { display: block; color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
+.cn-opcao select { min-height: 2.5rem; padding: 0 0.6rem; border: 1px solid var(--traco-forte, var(--traco)); border-radius: var(--raio-controle); background: var(--superficie); color: var(--texto); font: inherit; font-size: var(--corpo-menor); }
+.cn-chave { cursor: pointer; }
+.cn-chave:hover:not(:disabled) { border-color: var(--verdete); }
+.cn-chave:disabled { opacity: 0.6; cursor: wait; }
+.cn-chave__trilho { flex: none; position: relative; width: 2.75rem; height: 1.6rem; border-radius: 999px; background: var(--traco-forte, var(--traco)); transition: background-color 0.15s ease; }
+.cn-chave__trilho i { position: absolute; top: 3px; left: 3px; width: calc(1.6rem - 6px); height: calc(1.6rem - 6px); border-radius: 50%; background: #fff; transition: transform 0.15s ease; }
+.cn-chave[aria-checked="true"] .cn-chave__trilho { background: var(--verdete); }
+.cn-chave[aria-checked="true"] .cn-chave__trilho i { transform: translateX(1.15rem); }
+.cn-pe__links { display: flex; flex-wrap: wrap; gap: var(--e-2) var(--e-5); font-size: var(--corpo-menor); }
+.cn-pe__links .cn-link { min-height: 2.75rem; }
+
+/* ── O calendário do mês dentro da página nova: a mesma superfície redonda e o assunto de cada dia ── */
+.cn .cc--cronograma.cc--embutido { margin: 0; }
+.cn .cc--cronograma.cc--embutido .cc-janela, .cn .cc--cronograma.cc--embutido > :first-child { border-radius: var(--cn-raio); }
+.cc-dia__assunto { display: none; }
+@media (min-width: 64rem) {
+  .cn .cc-dia__assunto { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; margin-top: 0.1rem; color: var(--texto-2); font-size: 0.6875rem; font-weight: 500; line-height: 1.25; text-align: left; overflow-wrap: anywhere; }
+  .cn .cc--cronograma .cc-dia > button { min-height: 8.25rem; }
+}
+
+@media (min-width: 40.01rem) { .cn-estreito { display: none; } }
+/* ── Celular ── */
+@media (max-width: 40rem) {
+  .cn-etapa b { white-space: normal; line-height: 1.15; font-size: 0.6875rem; overflow-wrap: normal; word-break: normal; overflow: visible; }
+  .cn-largo { display: none; }
+  .cn-estrada__trilho { grid-template-columns: none !important; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+  .cn-estrada__voce { display: none; }
+  .cn-btn { white-space: normal; text-align: left; }
+  .cn-etapa { min-height: 4.4rem; }
+  .cn-estrada__titulo small { display: block; margin: 0.2rem 0 0; }
+  .cn-resumo__livro { display: none; }
+  .cn-resumo__lombada { width: 1.9rem; }
+  .cn-resumo__tempo { padding: 0 0.7rem; }
+  .cn-hoje { border-radius: var(--raio-cartao); }
+}

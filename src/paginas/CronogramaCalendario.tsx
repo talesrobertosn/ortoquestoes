@@ -63,7 +63,8 @@ export interface AcoesCalendario {
 export type VistaCalendario = 'semana' | 'mes'
 const CHAVE_VISTA = 'oq:cronograma:calendario:vista'
 function lerVista(): VistaCalendario {
-  try { return sessionStorage.getItem(CHAVE_VISTA) === 'mes' ? 'mes' : 'semana' } catch { return 'semana' }
+  // O mês inteiro é a vista de entrada (Tales, 10/11/2026); a semana fica a um toque.
+  try { return sessionStorage.getItem(CHAVE_VISTA) === 'semana' ? 'semana' : 'mes' } catch { return 'mes' }
 }
 function gravarVista(v: VistaCalendario) {
   try { sessionStorage.setItem(CHAVE_VISTA, v) } catch { /* sem armazenamento: a escolha vale só nesta tela */ }
@@ -486,7 +487,9 @@ function Celula({ dia: d, selecionado, aoEscolher }: { dia: DiaCalendario; selec
   const areas = [...partes].reduce<Array<{ slug: string; nome: string; n: number }>>((acc, p) => { const a = acc.find((x) => x.slug === p.slug); if (a) a.n += p.n; else acc.push({ ...p }); return acc }, []).sort((a, b) => b.n - a.n)
   const mini = !!d.plano?.mini
   const marco = mini || d.marcos.length > 0
-  const descricao = [dataLonga(d.data), texto, areas.length ? juntar(areas.map((a) => `${a.nome} ${a.n}`)) : '', mini ? 'mini-simulado' : '', ...d.marcos].filter(Boolean).join(', ')
+  // O assunto que abre o dia (o que mais cai da área em foco): o mês mostra o que se vê em cada dia.
+  const assunto = passado ? '' : (d.plano?.itens.find((i) => !i.mistura) ?? d.plano?.itens[0])?.assuntos[0] ?? ''
+  const descricao = [dataLonga(d.data), texto, areas.length ? juntar(areas.map((a) => `${a.nome} ${a.n}`)) : '', assunto ? `começa por ${assunto}` : '', mini ? 'mini-simulado' : '', ...d.marcos].filter(Boolean).join(', ')
   return (
     <li className={`cc-dia cc-dia--${estado}${marco ? ' cc-dia--marco' : ''}${d.plano?.adiantado ? ' cc-dia--com-adiantado' : ''}${selecionado ? ' cc-dia--selecionado' : ''}${d.ehHoje ? ' cc-dia--atual' : ''}`}>
       <button type="button" onClick={() => aoEscolher(d)} aria-label={descricao} aria-pressed={selecionado} aria-current={d.ehHoje ? 'date' : undefined} disabled={estado === 'fora'}>
@@ -500,6 +503,7 @@ function Celula({ dia: d, selecionado, aoEscolher }: { dia: DiaCalendario; selec
           {areas.slice(0, 2).map((a) => <span key={a.slug} className="cc-dia__area"><i style={{ background: corDaArea(a.slug) }} /><span>{a.nome}</span></span>)}
           {areas.length > 2 && <span className="cc-dia__area cc-dia__area--mais">+{areas.length - 2}</span>}
         </span>}
+        {assunto && estado !== 'folga' && <span className="cc-dia__assunto">{assunto}</span>}
         {d.marcos.length > 0 && <span className="cc-dia__marco">{d.marcos[0]}</span>}
         <span className="cc-dia__rodape">
           {texto && <em data-curto={textoCurto(estado, texto)}><span>{texto}</span></em>}

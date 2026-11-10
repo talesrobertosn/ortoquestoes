@@ -194,3 +194,36 @@ Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoque
     rodapé), só onde não cobrem texto nem controle; um toque e falam (as mesmas falas do Salão dos Cem). Código:
     `src/componentes/cronograma/VisitaCronograma.tsx`. Para conferir: `#/cronograma?visita=gato` (ou `coruja`,
     `nenhuma`).
+
+### Página refeita (10/11/2026)
+
+57. [x] A página do cronograma de TEOT e TARO foi refeita (pedido do Tales: design, arte, explicações e funcionamento).
+    Código: `src/paginas/CronogramaVisao.tsx` e `src/estilos/paginas/CronogramaNovo.css` (classes `cn-*`); `PlanoEstudo.tsx`
+    continua com os dados, as ações e o formulário. Ordem da tela:
+    - **Topo:** a cena "A estrada até o castelo da prova" (`scripts/cenarios/cronograma_estrada.py`), os dias que faltam,
+      o botão do dia (o `.cristal` dourado da inicial) e **a estrada**: cada etapa (passadas, revisão forte, modo prova,
+      prova) é um botão que explica, com as datas do plano, como aquela etapa funciona.
+    - **Roteiro de hoje**, em passos: 1. os resumos do dia; 2. as questões de hoje (quantas, de quais áreas e assuntos,
+      o que é mistura, o botão); 3. os erros dos dias anteriores. "Mais para hoje" (adiantar, revisões espaçadas,
+      flashcards, frases que caem) começa fechado. Se o último dia de estudo ficou incompleto, um aviso diz, com os
+      números, o que aconteceu (`balancoDiaAnterior` em `planoEstudo.ts`).
+    - **Calendário do mês** como vista de entrada (a semana fica a um toque); no computador cada dia mostra também o
+      assunto que abre o dia. Tocar num dia mostra, abaixo do calendário, os resumos daquele dia.
+    - **Como o cronograma funciona:** dez perguntas respondidas com as datas e os números do plano (quais questões faço
+      hoje, e se eu não terminar o dia, onde entram os erros e as revisões, revisão forte, modo prova, véspera e prova).
+    - **Seu andamento** e os blocos recolhidos de sempre; no pé, as opções discretas.
+58. [x] **Resumos do dia pelos dados** (`resumosDoDia` em `src/dados/cronogramaRoteiro.ts`): os 3 resumos mais próximos das
+    questões do dia, pelo índice da Biblioteca (`public/biblioteca/indice.json`): 3 pontos por questão do dia que o resumo
+    cita (`questoes` e `treino`) e 1 por questão de um subtema que ele ensina (`subtemas`). Resumo novo aparece sozinho;
+    assunto sem resumo mostra as frases que caem e a Biblioteca da área. A palavra "Beta" saiu dos resumos.
+59. [x] **Erros do cronograma** (`errosDoCronograma`): as questões do plano erradas na primeira vez nos últimos 14 dias
+    (sem hoje) e ainda não acertadas, por dia. "Refazer" abre uma sessão só com elas (origem `erros`); como já foram
+    respondidas, as alternativas vêm em ordem nova (`dados/ordemAlternativas.ts`). Acertou, sai da fila. Opção
+    `opcoes.diaErros` (dia da semana em que o roteiro destaca os erros). Não conta na meta.
+60. [x] **Só questões do TEOT** (`opcoes.soTeot`, chave discreta no pé): o motor passa a trabalhar num recorte do acervo
+    (`indiceDoPlano`: TEOT oficial e, se ligados, os OrtoQuestões Simulados). A linha de base do recorte é refeita pelas
+    datas, para ligar e desligar sem zerar nem inflar o andamento.
+61. [x] **Quem já tinha cronograma continua de onde estava.** Nada foi convertido: as opções novas são chaves opcionais em
+    `planos_estudo.opcoes` (sem SQL novo) e nascem desligadas; `normalizarPlano` confere a linha guardada em qualquer
+    formato antigo sem apagar nada. Teste: `fixtures/testar_cronograma_roteiro.mjs`, que compara seis planos em formato
+    antigo com os números gravados pelo motor anterior (`fixtures/cronograma_formato_antigo.json`; não regravar).
