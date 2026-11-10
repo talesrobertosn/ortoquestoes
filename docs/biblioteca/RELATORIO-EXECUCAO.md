@@ -306,7 +306,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 981 | Miscelânea de ortopedia pediátrica e outras deformidades do pé na criança (tachdjian6-outros-pediatria, resumo novo); outros temas do pé e tornozelo (versão nova de 3 resumos: síndromes do túnel do tarso, pé paralítico, KAPPIS); outros temas da mão (green-outros-mao-1 e green-outros-mao-2, resumos novos); 13 miniaulas de conceitos básicos com figuras. Com este PR os 284 temas da cobertura têm resumo |
 | 982 | Fechamento da fila dos 284 temas: 34 miniaulas das últimas miscelâneas (25 da mão, 9 de pediatria e pé), com figuras |
 | 983 | Exemplo aprovado de miniaula com figura (docs/exemplos/pe-tornozelo-0107.json) e registro do padrão no CLAUDE.md |
-| (este PR) | Comentários curtos de resumos antigos, onda 1: 59 miniaulas refeitas com figuras (35 de malformações congênitas da mão, 24 da fise proximal da tíbia) |
+| 985 | Comentários curtos de resumos antigos, onda 1: 59 miniaulas refeitas com figuras (35 de malformações congênitas da mão, 24 da fise proximal da tíbia) |
+| (este PR) | Comentários curtos, onda 1: 63 miniaulas refeitas com figuras (23 do exame da mão e do punho, 21 do carpo, 19 do tornozelo da criança); limpeza do resto de extração "Área livre PROVA APLICADA" em 14 questões e 4 flashcards |
 
 ## Próximo
 
