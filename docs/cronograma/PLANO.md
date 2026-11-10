@@ -263,3 +263,9 @@ Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoque
     assuntos por extenso; no celular, uma linha por dia), com "Abrir o mês inteiro"; próximos dias, mais para hoje e
     previsão viraram três caixas menores abaixo; ao lado do "que ainda vem por área" ficam o acerto por dia, os números
     dos últimos 7 dias contra os 7 anteriores e a constância; números na fonte da marca (a de pixel era difícil de ler).
+65. [x] **Cronogramas da Mão no painel novo (10/11/2026).** Ingresso e título usam o mesmo `VisaoCronograma` (prop `mao`,
+    `VarianteMao`): a cena continua a Oficina da Mão (arte sem mudança), o motor continua `cronogramaMao.ts`, e o plano
+    vira um índice próprio (`indiceMao` em `CronogramaMao.tsx`: só as questões do plano, cada grande área como um tema)
+    para o histórico, os erros, a previsão, os gráficos e os resumos do dia. Próprios da mão: "tamanho do plano",
+    "Prioridades agora", o aviso de questões novas, apagar o plano e os textos de como funciona. O que não existe na
+    mão (só TEOT, simulados, dia dos erros, assuntos em risco, balanço de ontem) não aparece.
