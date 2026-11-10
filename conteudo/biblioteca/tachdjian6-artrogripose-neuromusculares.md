@@ -452,12 +452,6 @@ A saída foram as **transferências divididas**, que funcionam como **alça din�
 | Inserção | inteira no 3º metatarsal | biomecânica: dividida no 4º metatarsal, inteira no 3º (Campbell, p. 1260) |
 !fim
 
-!questoes
-conceito: No equinovaro espástico, hemitransferência do tibial anterior para o cuboide com alongamento do tibial posterior é o procedimento RANCHO; a hemitransferência do tibial anterior isolada é de HOFFER e a do tibial posterior para o fibular curto é de GREEN (KAUFER no Campbell).
-como: O TARO 2024 descreveu a combinação no pé equinovaro da paralisia cerebral e pediu o nome, com HOFFER, TURCO e GREEN como distratores.
-armadilha: HOFFER é o distrator mais perigoso, porque o Campbell dá a ele a hemitransferência do tibial anterior; o nome RANCHO só aparece quando ela vem somada ao alongamento do tibial posterior.
-!fim
-
 # Fechamento {radar=fundamento}
 
 A artrogripose se entende por uma imagem: um feto que não se mexe. A cartilagem é normal e a lesão, quando procurada, está quase sempre no **corno anterior**, com **menos células**. A amioplasia, forma mais comum e esporádica, desenha a postura de **gorjeta do garçom**: ombro aduzido em **rotação interna**, cotovelo em **extensão**, punho em **flexão** e desvio ulnar, pé **equinovaro**, com **hemangioma na fronte**, **inteligência normal** e, em cerca de 10%, **gastrosquise ou atresia intestinal**.

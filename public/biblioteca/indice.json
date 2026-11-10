@@ -7695,15 +7695,15 @@
   },
   {
    "id": "campbell15-osteocondral-talus",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Lesões osteocondrais do tálus",
    "especialidade": "pe-tornozelo",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Rockwood and Green's Fractures in Adults, 10ª ed., e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed.",
    "capitulo": "Capítulo 34 · Osteochondrosis or Epiphysitis and Other Miscellaneous Affections",
-   "resumo": "Medial é mais comum, posterior, profunda em taça, pouco desviada e por inversão com flexão plantar e rotação externa; lateral é anterior, rasa em bolacha, desviada e por inversão com dorsiflexão, traumática em 98%; BERNDT e HARTY (radiografia, I a IV), FERKEL e SGAGLIONE (TC), ANDERSON, HEPPLE, DIPAOLA, TARANOW e MINTZ (RM), PRITSCH e CHENG (artroscopia); o tamanho decide o tratamento; conservador no I, II e III medial e na criança, cirurgia precoce no III lateral e no IV; estímulo medular nas pequenas, fixação nas agudas, OATS, mosaicoplastia e aloenxerto nas grandes; GATELLIER e CHASTANG para a lesão lateral.",
+   "resumo": "Medial é mais comum, posterior, profunda em taça, pouco desviada e por inversão com flexão plantar e rotação externa; lateral é anterior, rasa em bolacha, desviada e por inversão com dorsiflexão, traumática em 98%; BERNDT e HARTY (radiografia, I a IV), FERKEL e SGAGLIONE (TC), ANDERSON, HEPPLE, DIPAOLA, TARANOW e MINTZ (RM), PRITSCH e CHENG (artroscopia); o tamanho decide o tratamento; conservador no I, II e III medial e na criança, cirurgia precoce no III lateral e no IV; estímulo medular nas pequenas, fixação nas agudas, OATS, mosaicoplastia e aloenxerto nas grandes; GATELLIER e CHASTANG para a lesão lateral. Na prova, a osteocondrite da cúpula talar é a doença de KAPPIS (1922, origem traumático-mecânica da osteocondrite dissecante); ISELIN é a base do 5º metatarsal.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7781,6 +7781,11 @@
      "radar": "clinico"
     },
     {
+     "id": "o-nome-na-prova-osteocondrite-da-cupula-talar-e-",
+     "titulo": "O nome na prova: osteocondrite da cúpula talar e a doença de KAPPIS",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -7795,7 +7800,8 @@
     "pe-tornozelo-0240",
     "pe-tornozelo-0386",
     "pe-tornozelo-0280",
-    "pe-tornozelo-0085"
+    "pe-tornozelo-0085",
+    "pe-tornozelo-0376"
    ],
    "treino": [],
    "subtemas": [
@@ -17358,15 +17364,15 @@
   },
   {
    "id": "netter-anatomia-pe-tornozelo",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Anatomia da perna, do tornozelo e do pé",
    "especialidade": "pe-tornozelo",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
    "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª ed., e o Rockwood and Green's Fractures in Adults, 10ª ed.",
    "capitulo": "Capítulo 10 · Pé e tornozelo (com a perna do capítulo 9)",
-   "resumo": "Os quatro compartimentos da perna com músculos, nervos e artérias; o corredor atrás do maléolo medial (tibial posterior, flexor longo dos dedos, feixe tibial, flexor longo do hálux); inserções do fibular curto, do fibular longo, do tibial posterior e do tibial anterior; nervos sural, safeno, fibular superficial e profundo; tálus (irrigação pelo colo, necrose, ligamento mola, talocalcaneano interósseo); vias anterior do tornozelo e posterolateral.",
+   "resumo": "Os quatro compartimentos da perna com músculos, nervos e artérias; o corredor atrás do maléolo medial (tibial posterior, flexor longo dos dedos, feixe tibial, flexor longo do hálux); inserções do fibular curto, do fibular longo, do tibial posterior e do tibial anterior; nervos sural, safeno, fibular superficial e profundo; tálus (irrigação pelo colo, necrose, ligamento mola, talocalcaneano interósseo); vias anterior do tornozelo e posterolateral. Túnel do tarso (nervo tibial sob o retináculo dos flexores; proximal e distal sob o abdutor do hálux; liberação do retináculo, do abdutor e dos ramos, cirurgia de BAXTER) e túnel do tarso anterior (fibular profundo sob o retináculo extensor inferior, dor no 1º espaço, liberação parcial de MANN).",
    "acesso": "gratis",
-   "minutos": 26,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -17454,6 +17460,11 @@
      "radar": "oportunidade"
     },
     {
+     "id": "as-sindromes-compressivas-tunel-do-tarso-e-tunel",
+     "titulo": "As síndromes compressivas: túnel do tarso e túnel do tarso anterior",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -17501,7 +17512,9 @@
     "pe-tornozelo-0257",
     "pe-tornozelo-0351",
     "pe-tornozelo-0362",
-    "pe-tornozelo-0342"
+    "pe-tornozelo-0342",
+    "pe-tornozelo-0424",
+    "pe-tornozelo-0175"
    ],
    "treino": [
     "pe-tornozelo-0425",
@@ -17512,7 +17525,8 @@
     "pe-tornozelo-0427"
    ],
    "subtemas": [
-    "Anatomia do pé e tornozelo"
+    "Anatomia do pé e tornozelo",
+    "Outros temas do pé e tornozelo"
    ]
   },
   {
@@ -27877,15 +27891,15 @@
   },
   {
    "id": "tachdjian6-artrogripose-neuromusculares",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Artrogripose e doenças neuromusculares",
    "especialidade": "pediatria",
    "livro": "Tachdjian's Pediatric Orthopaedics",
    "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 36 e 37)",
    "capitulo": "Capítulo 37 · Orthopaedic-Related Syndromes (Arthrogryposis); Capítulo 32 · Disorders of the Spinal Cord; Capítulo 33 · Poliomyelitis",
-   "resumo": "Artrogripose é sintoma (acinesia fetal), 1 em 3.000 nascidos, amioplasia é a forma mais comum e esporádica; forma neuropática (93%) com DIMINUIÇÃO das células do corno anterior; postura em \"gorjeta do garçom\" (ombro em rotação interna, cotovelo em extensão, punho em flexão e desvio ulnar), hemangioma na fronte, inteligência normal, anomalias intestinais e de parede; GOLDBERG em quatro grupos (sinostoses: umerorradial e NIEVERGELT-PEARLMAN); FREEMAN-SHELDON = face de assobiador; no membro superior o primeiro objetivo é a flexão passiva do cotovelo, depois a rotação do úmero, depois punho e polegar; STEINDLER dá flexão ao cotovelo estendido mas piora o punho; quadril: redução aberta precoce, nunca fechada, contraindicada com arco muito limitado; AME tipo II senta mas não anda, sem reflexo patelar; mielomeningocele: quadríceps decide a marcha; FRIEDREICH: ataxia, arreflexia, BABINSKI.",
+   "resumo": "Artrogripose é sintoma (acinesia fetal), 1 em 3.000 nascidos, amioplasia é a forma mais comum e esporádica; forma neuropática (93%) com DIMINUIÇÃO das células do corno anterior; postura em \"gorjeta do garçom\" (ombro em rotação interna, cotovelo em extensão, punho em flexão e desvio ulnar), hemangioma na fronte, inteligência normal, anomalias intestinais e de parede; GOLDBERG em quatro grupos (sinostoses: umerorradial e NIEVERGELT-PEARLMAN); FREEMAN-SHELDON = face de assobiador; no membro superior o primeiro objetivo é a flexão passiva do cotovelo, depois a rotação do úmero, depois punho e polegar; STEINDLER dá flexão ao cotovelo estendido mas piora o punho; quadril: redução aberta precoce, nunca fechada, contraindicada com arco muito limitado; AME tipo II senta mas não anda, sem reflexo patelar; mielomeningocele: quadríceps decide a marcha; FRIEDREICH: ataxia, arreflexia, BABINSKI. Pé da pólio: fibulares e tibial anterior paralisados = equinovaro, transferência do tibial posterior pela membrana interóssea para a base do 3º metatarsal ou cuneiforme médio (BARR); na paralisia cerebral a transferência total dá calcaneovalgo, e o RANCHO soma hemitransferência do tibial anterior e alongamento do tibial posterior.",
    "acesso": "gratis",
-   "minutos": 37,
+   "minutos": 42,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -27978,6 +27992,11 @@
      "radar": "fundamento"
     },
     {
+     "id": "o-pe-paralitico-as-transferencias-da-polio-e-o-q",
+     "titulo": "O pé paralítico: as transferências da pólio e o que muda na paralisia cerebral",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -28001,7 +28020,8 @@
     "pediatria-0067",
     "pediatria-0341",
     "pediatria-0792",
-    "pediatria-0342"
+    "pediatria-0342",
+    "pe-tornozelo-0356"
    ],
    "treino": [],
    "subtemas": [
