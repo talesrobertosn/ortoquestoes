@@ -10,6 +10,18 @@ Referência executável: [`posts/2026-11-09-reimers-var/`](../posts/2026-11-09-r
 (7 slides de feed e 4 stories) e `LEGENDA.md`. Gere com
 `node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-09-reimers-var/campanha.html`.
 
+## Régua de qualidade: a Oficina do encaixe (10/11/2026)
+
+O Tales aprovou a [Oficina do encaixe](OFICINA-DO-ENCAIXE.md) e pediu que **todo post a partir dela tenha a mesma
+dedicação**: "que tudo seja extremamente bom assim e criativo". Na prática:
+
+- **Arte própria em pixel art, pintada por código, com luz** (cenário e objetos), como em
+  `posts/2026-11-10-oficina-encaixe/arte_oficina.py` e na skill `arte-hd2d`. Nada de fundo chapado com caixas de texto.
+- **Tema que explica o termo** e objetos do tema fazendo o papel de cada medida ou conceito.
+- **Imagens reais comparadas** (normal × alterada) e indicações sempre fora da radiografia.
+- **Acabamento de objeto real** em cada peça (placa, papel, fita, filme, carimbo) e revisão no tamanho real, várias
+  rodadas, até não sobrar nada sobreposto, cortado ou borrado. Não economize processamento nem tokens na arte.
+
 ## A ideia em uma frase
 
 Quem nunca estudou o assunto olha o post, **entende, aprende e consegue explicar** depois. O conteúdo é pensado para
@@ -42,7 +54,7 @@ A aula sobe um degrau por tela. Adapte à questão; não é molde fixo.
 7. **O que fazer com isso + convite.** Os números que caem na prova, num visual (régua, placar, tabela curta), e o
    convite "Treine grátis".
 
-**Stories: no máximo 4.** É o que mais gente vê, então são a aula condensada: o problema e a pergunta; a leitura da
+**Stories: de 4 a 6, conforme a aula pedir** (Tales, 10/11/2026). É o que mais gente vê, então são a aula condensada: o problema e a pergunta; a leitura da
 imagem; o raciocínio com a resposta; o que o número significa e o convite. Cada story com imagem ou gráfico.
 
 ## Quantidade de texto
