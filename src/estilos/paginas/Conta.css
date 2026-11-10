@@ -307,3 +307,24 @@
   .ct-sync--girando svg, .ct-carregando::before { animation: none; }
   .ct-nav a, .ct-links a, .ct-seg button, .ct-nav__icone { transition: none; }
 }
+
+/* ---------- Termos atualizados (reaceite, 16/10/2026) ----------------- */
+.aviso-termos { background: var(--verdete-veu); color: var(--texto); }
+.aviso-termos--faixa { border-bottom: 1px solid color-mix(in srgb, var(--verdete) 22%, var(--traco)); }
+.aviso-termos--cartao { border: 1px solid color-mix(in srgb, var(--verdete) 22%, var(--traco)); border-radius: var(--raio-cartao); }
+.aviso-termos__interno { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .75rem 1.25rem; padding-block: .9rem; }
+.aviso-termos--cartao .aviso-termos__interno { padding: 1rem 1.1rem; }
+.aviso-termos__texto { flex: 1 1 28rem; min-width: 0; }
+.aviso-termos h2 { display: flex; align-items: center; gap: .45rem; margin: 0 0 .3rem; font-size: 1.02rem; line-height: 1.3; }
+.aviso-termos h2 svg { flex: 0 0 auto; color: var(--verdete); }
+.aviso-termos p { margin: 0 0 .4rem; font-size: var(--corpo-menor); line-height: 1.5; }
+.aviso-termos__mudancas summary { cursor: pointer; font-size: var(--corpo-menor); font-weight: 700; color: var(--verdete); min-height: 32px; display: flex; align-items: center; }
+.aviso-termos__mudancas ul { margin: .35rem 0 0; padding-left: 1.2rem; font-size: var(--corpo-menor); line-height: 1.5; }
+.aviso-termos__mudancas li + li { margin-top: .25rem; }
+.aviso-termos__erro { color: var(--erro); font-weight: 650; }
+.aviso-termos__acoes { display: flex; flex-wrap: wrap; gap: .5rem; align-items: center; flex: 0 1 auto; }
+@media (max-width: 640px) {
+  .aviso-termos__acoes { width: 100%; }
+  .aviso-termos__acoes .botao { flex: 1 1 calc(50% - .5rem); justify-content: center; }
+}
+
