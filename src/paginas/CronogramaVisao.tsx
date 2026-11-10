@@ -58,7 +58,26 @@ export interface AcoesVisao {
   aoComecarCurto?: (n: number) => void
 }
 
-export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar, aoAdiantar, aoPuxar, pendente = null, hub = null, aoAjustar, ficticio = null, acoes }: {
+/**
+ * O que muda quando o painel mostra um cronograma da Mão (ingresso ou título): a cena é a deles, o acervo é o do plano
+ * da mão (com as grandes áreas no lugar dos temas) e os textos não falam de TEOT. O motor é o de dados/cronogramaMao.ts.
+ */
+export interface VarianteMao {
+  /** A cena do topo (a Oficina da Mão: a arte deles não muda). */
+  cena: ReactNode
+  /** As questões do plano como um índice próprio: cada grande área da mão é um "tema". */
+  indice: Indice
+  /** O botão do dia quando o plano está na reta final (a sessão é montada pelo motor da mão). */
+  acaoRetaFinal: { rotulo: string; detalhe?: string; aoClicar: () => void } | null
+  /** Caixas próprias da mão, no fim da grade (tamanho do plano, prioridades, apagar). */
+  extras?: ReactNode
+  /** Linhas a mais na caixa de ajustes. */
+  ajustes?: ReactNode
+}
+
+export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar, aoAdiantar, aoPuxar, pendente = null, hub = null, aoAjustar, ficticio = null, acoes, mao = null }: {
+  /** Cronograma da Mão: ver VarianteMao. */
+  mao?: VarianteMao | null
   plano: PlanoSalvo; calculo: CalculoPlano; indice: Indice; respondidas: Respondidas
   aberto?: boolean; detalheSemanas?: ReactNode
   aoComecar?: () => void; aoAdiantar?: (n: number) => void; aoPuxar?: (dia: string) => void
@@ -87,7 +106,8 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
   const podeAdiantar = !!aoAdiantar && conteudo && calculo.restante > 0
 
   // ── Dados (todos saem do histórico e do plano; nada é gravado aqui) ──
-  const indicePlano = useMemo(() => indiceDoPlano(indice, plano), [indice, plano])
+  const base = mao?.indice ?? indice
+  const indicePlano = useMemo(() => indiceDoPlano(base, plano), [base, plano])
   const biblioteca = usarIndiceBiblioteca()
   const { leituras } = usarBiblioteca()
   const diaLeitura = useMemo(() => {
@@ -97,10 +117,10 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
     return { ids: proximo?.itens.flatMap((i) => i.ids) ?? [], deHoje: false, data: proximo?.data ?? null }
   }, [calculo])
   const resumos = useMemo(() => resumosDoDia(biblioteca, indicePlano, diaLeitura.ids), [biblioteca, indicePlano, diaLeitura])
-  const erros = useMemo(() => errosDoCronograma(indice, respondidas, plano), [indice, respondidas, plano])
-  const balanco = useMemo(() => (conteudo ? balancoDiaAnterior(indice, respondidas, plano) : null), [indice, respondidas, plano, conteudo])
-  const historico = useMemo(() => historicoDosDias(indice, respondidas, plano), [indice, respondidas, plano])
-  const previsao = useMemo(() => previsaoDeTermino(indice, respondidas, plano, calculo), [indice, respondidas, plano, calculo])
+  const erros = useMemo(() => errosDoCronograma(base, respondidas, plano), [base, respondidas, plano])
+  const balanco = useMemo(() => (conteudo && !mao ? balancoDiaAnterior(indice, respondidas, plano) : null), [indice, respondidas, plano, conteudo, mao])
+  const historico = useMemo(() => historicoDosDias(base, respondidas, plano), [base, respondidas, plano])
+  const previsao = useMemo(() => previsaoDeTermino(base, respondidas, plano, calculo), [base, respondidas, plano, calculo])
   const { areas, media } = useMemo(() => areasParaMelhorar(calculo.temas), [calculo.temas])
   const diaErros = plano.opcoes?.diaErros ?? null
   const diaDosErrosHoje = diaErros !== null && hoje.getDay() === diaErros && erros.pendentes.length > 0
@@ -114,7 +134,8 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
       botao = { rotulo: calculo.faltaHoje === 0 ? `Continuar: faltam ${n} adiantadas` : calculo.feitasHoje > 0 ? `Continuar: faltam ${n} questões` : `Começar: ${n} questões`, detalhe: `cerca de ${formatarTempo(n * minutos)}`, aoClicar: aoComecar }
     } else if (calculo.miniHoje && !feitos.mini && hub) botao = { rotulo: 'Fazer o mini-simulado', detalhe: `${TAMANHO_MINI} questões, cerca de 45 min`, aoClicar: hub.aoMini }
     else if (proximoPuxar) botao = { rotulo: `Adiantar ${F_SEMANA.format(proximoPuxar.data)}: ${proximoPuxar.total} questões`, detalhe: `contam para ${curta(proximoPuxar.data)}, cerca de ${formatarTempo(proximoPuxar.total * minutos)}`, aoClicar: () => aoPuxar!(chaveCivil(proximoPuxar.data)) }
-  } else if (hub && naRetaFinal) {
+  } else if (mao && naRetaFinal) botao = mao.acaoRetaFinal
+  else if (hub && naRetaFinal) {
     const r = hub.retaFinal
     if (calculo.fase === 'revisao' && r.revisaoHoje?.n) botao = { rotulo: `Começar a revisão: ${r.revisaoHoje.n} questões`, detalhe: `cerca de ${formatarTempo(r.revisaoHoje.n * minutos)}`, aoClicar: r.aoRevisaoForte }
     else if (calculo.fase === 'prova') botao = { rotulo: 'Ir para o simulado cronometrado', href: href('/simulado-nacional') }
@@ -135,11 +156,11 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
 
     {/* ── 1. A cena, os dias que faltam e os indicadores ── */}
     <section className="cg-topo" aria-labelledby="cg-titulo">
-      <div className="cg-topo__cena"><CenaTorre /></div>
+      <div className="cg-topo__cena">{mao ? mao.cena : <CenaTorre />}</div>
       <div className="cg-topo__texto">
         <p className="cg-topo__selo">{ficticio ? 'Cenário fictício' : 'Cronograma'} · {plano.prova}{soTeot(plano) ? ' · só TEOT' : ''}</p>
         <h1 id="cg-titulo">{calculo.provaPassou ? (nome ? `${nome}, é o dia da prova` : 'Dia da prova') : <>{nome ? `${nome}, faltam` : 'Faltam'} <em>{calculo.diasAteProva}</em> {calculo.diasAteProva === 1 ? 'dia' : 'dias'}</>}</h1>
-        <p className="cg-topo__sub">Prova em {prova.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })} · semana {Math.min(calculo.semanaNumero, calculo.semanasTotal)} de {calculo.semanasTotal} · plano {ROTULO_INTENSIDADE[plano.intensidade].nome.toLowerCase()}</p>
+        <p className="cg-topo__sub">Prova em {prova.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long', year: 'numeric' })} · semana {Math.min(calculo.semanaNumero, calculo.semanasTotal)} de {calculo.semanasTotal}{mao ? '' : ` · plano ${ROTULO_INTENSIDADE[plano.intensidade].nome.toLowerCase()}`}</p>
         <div className="cg-topo__acoes">{Acao()}{aoAjustar && <button type="button" className="cg-btn cg-btn--vidro" onClick={aoAjustar}><Icone nome="lapis" tamanho={15} /> Ajustar plano</button>}</div>
       </div>
       <dl className="cg-indicadores">
@@ -150,7 +171,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
         <Indicador rotulo="Acerto" valor={media !== null ? `${media}%` : '—'} nota="média das áreas" />
         <Indicador rotulo="Erros a refazer" valor={`${erros.pendentes.length}`} nota={erros.resolvidos ? `${erros.resolvidos} já resolvidos` : 'últimos 14 dias'} tom={erros.pendentes.length > 30 ? 'aviso' : undefined} />
       </dl>
-      {!calculo.provaPassou && <Estrada plano={plano} calculo={calculo} />}
+      {!calculo.provaPassou && <Estrada plano={plano} calculo={calculo} mao={!!mao} />}
     </section>
 
     {primeiraVisita && <p className="cg-boasvindas"><span><strong>Primeira vez aqui?</strong> Em cima, onde você está na estrada até a prova. Em <b>Hoje</b>, o que fazer, na ordem. Depois, o mês, os gráficos e o seu desempenho por área. As regras estão em <a className="cg-link" href="#como-funciona">Como funciona</a>.</span><button type="button" className="cg-btn" onClick={() => { definirTourVisto(true); marcarAvisoNaConta(sessaoConta?.user.user_metadata, 'cronograma-tour') }}>Entendi</button></p>}
@@ -165,15 +186,15 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
 
         {balanco && balanco.faltou > 0 && !folgaHoje && <p className="cg-aviso" role="note"><Icone nome="relogio" tamanho={16} /><span><strong>{hoje.getTime() - balanco.data.getTime() <= DIA ? 'Ontem' : `Na ${F_SEMANA.format(balanco.data).replace('-feira', '')}`} {balanco.feitas === 0 ? `as ${balanco.meta} questões ficaram sem fazer` : `ficaram ${plural(balanco.faltou, 'questão', 'questões')} sem fazer`}.</strong> Nada se perdeu: voltaram para a fila e foram divididas pelos dias que faltam{calculo.projecao.tetoAtivo ? `; a meta parou no teto de ${Math.round((TETO_ATRASO - 1) * 100)}% acima do planejado` : `, por isso hoje são ${calculo.metaHojeSemAdiantar}`}.</span></p>}
 
-        {naRetaFinal && hub ? <RetaFinal calculo={calculo} hub={hub} minutos={minutos} /> : <div className="cg-passos">
+        {naRetaFinal && mao ? <p className="cg-nota">Reta final: a sessão de hoje traz os seus erros, os assuntos de prioridade máxima e as questões que você ainda não viu (inclusive as que entraram no acervo agora), para nenhuma ficar de fora.</p> : naRetaFinal && hub ? <RetaFinal calculo={calculo} hub={hub} minutos={minutos} /> : <div className="cg-passos">
           <div className="cg-passo">
             <h3><b>1</b>{diaLeitura.deHoje ? 'Leia antes' : `Leitura para ${diaLeitura.data ? F_SEMANA.format(diaLeitura.data) : 'o próximo dia'}`}<small>os resumos mais próximos das questões {diaLeitura.deHoje ? 'de hoje' : 'que vêm'}</small></h3>
-            <ResumosDoDia resumos={resumos} leituras={leituras} carregando={!biblioteca} total={diaLeitura.ids.length} deHoje={diaLeitura.deHoje} area={principal ?? calculo.dias.find((d) => d.itens.length)?.itens[0] ?? null} frasesLidas={false} />
+            <ResumosDoDia resumos={resumos} leituras={leituras} carregando={!biblioteca} total={diaLeitura.ids.length} deHoje={diaLeitura.deHoje} area={mao ? { slug: 'mao', nome: 'Cirurgia da mão' } : principal ?? calculo.dias.find((d) => d.itens.length)?.itens[0] ?? null} frasesLidas={false} />
           </div>
           <div className={'cg-passo cg-questoes' + (metaFeita ? ' cg-passo--feito' : '')}>
             <h3><b>{metaFeita ? <Icone nome="certo" tamanho={13} /> : 2}</b>{folgaHoje ? 'Sem questões hoje' : calculo.metaDiaria > 0 ? `${calculo.metaDiaria} questões novas` : 'Questões de hoje'}<small>{calculo.metaDiaria > 0 ? `${Math.min(calculo.feitasHoje, calculo.metaDiaria)} de ${calculo.metaDiaria} feitas · cerca de ${formatarTempo(calculo.metaDiaria * minutos)}` : calculo.adiantadoHoje > 0 ? fraseAdiantadoHoje(calculo) : 'nenhuma agendada'}</small></h3>
             {!metaFeita && itensDia.length > 0 && <ul className="cg-areas">{itensDia.map((i) => <li key={i.slug + String(i.mistura)} style={area(i.slug)}><b>{i.n}</b><span><strong>{i.nome}</strong>{i.mistura && <em>mistura</em>}<small>{i.assuntos.slice(0, 3).join(' · ')}{i.assuntos.length > 3 ? ` · +${i.assuntos.length - 3}` : ''}</small></span></li>)}</ul>}
-            <p className="cg-nota">{folgaHoje ? 'Dia de descanso: a meta foi espalhada pelos outros dias. Se quiser estudar, adiante o próximo dia.' : metaFeita ? 'Feito. O que vier agora sai dos próximos dias.' : `Só questões que você ainda não respondeu${soTeot(plano) ? ', do TEOT' : ''}${incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados' : ''}; o que mais cai vem primeiro.`}{calculo.miniHoje ? ` Hoje tem mini-simulado de ${TAMANHO_MINI} questões${feitos.mini ? ' (feito)' : ''}, por isso a meta é a metade.` : ''}</p>
+            <p className="cg-nota">{folgaHoje ? 'Dia de descanso: a meta foi espalhada pelos outros dias. Se quiser estudar, adiante o próximo dia.' : metaFeita ? 'Feito. O que vier agora sai dos próximos dias.' : `Só questões que você ainda não respondeu${soTeot(plano) ? ', do TEOT' : ''}${!mao && incluiSimulados(plano) ? ', com alguns OrtoQuestões Simulados' : ''}; o que mais cai vem primeiro.`}{calculo.miniHoje ? ` Hoje tem mini-simulado de ${TAMANHO_MINI} questões${feitos.mini ? ' (feito)' : ''}, por isso a meta é a metade.` : ''}</p>
             <div className="cg-linha">
               {Acao('cg-ir--claro')}
               {acoes?.aoComecarCurto && !metaFeita && !pendente && calculo.faltaHoje > DIA_MINIMO && <button type="button" className="cg-btn" onClick={() => acoes.aoComecarCurto!(DIA_MINIMO)} title="Abre só as 10 primeiras de hoje; mantém a sequência">Pouco tempo? Só {DIA_MINIMO}</button>}
@@ -213,7 +234,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
           <ul className="cg-extras">
             <li><Icone nome="reiniciar" tamanho={16} /><span><strong>{hub.revisoesHoje ? plural(hub.revisoesHoje, 'revisão do dia', 'revisões do dia') : 'Revisões em dia'}</strong><small>{hub.revisoesHoje ? `revisão espaçada · cerca de ${formatarTempo(hub.revisoesHoje * minutos)}` : 'nada vence hoje na revisão espaçada'}</small></span>{hub.revisoesHoje > 0 && <a className="cg-mini" href={href('/revisao')}>revisar</a>}</li>
             <li><Icone nome="raio" tamanho={16} /><span><strong>Flashcards{feitos.flashcards ? ' · feito' : ''}</strong><small>uma rodada curta, cerca de 5 min</small></span><a className="cg-mini" href={href('/flashcards')} onClick={() => hub.aoMarcar('flashcards')}>abrir</a></li>
-            {principal && <li><Icone nome="livro" tamanho={16} /><span><strong>Frases que caem{hub.resumaoLido.includes(principal.slug) ? ' · lidas' : ''}</strong><small>{principal.nome.toLowerCase()}, cerca de 4 min</small></span><a className="cg-mini" href={href(`/resumos/frases?tema=${principal.slug}`)}>ler</a></li>}
+            {principal && <li><Icone nome="livro" tamanho={16} /><span><strong>Frases que caem{hub.resumaoLido.includes(principal.slug) ? ' · lidas' : ''}</strong><small>{mao ? 'cirurgia da mão' : principal.nome.toLowerCase()}, cerca de 4 min</small></span><a className="cg-mini" href={href(`/resumos/frases?tema=${mao ? 'mao' : principal.slug}`)}>ler</a></li>}
             {hub.mostrarDiagnostico && <li><Icone nome="alvo" tamanho={16} /><span><strong>Diagnóstico inicial</strong><small>30 questões para calibrar o plano</small></span><button type="button" className="cg-mini" onClick={hub.aoDiagnostico}>fazer</button></li>}
             {hub.esquecidos.slice(0, 2).map((e) => <li key={e.slug}><Icone nome="relogio" tamanho={16} /><span><strong>{e.nome} está parado</strong><small>{e.dias} dias sem resposta · {e.erros} erros guardados</small></span><button type="button" className="cg-mini" onClick={() => hub.aoReativar(e.slug)}>reativar</button></li>)}
           </ul>
@@ -257,7 +278,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
         <TabelaAreas areas={areas} media={media} aoTreinar={hub ? hub.aoReativar : undefined} />
       </section>
       <div className="cg-col-5 cg-pilha">
-        {hub && <section className="cg-caixa" aria-labelledby="cg-risco-titulo">
+        {mao ? mao.extras : hub && <section className="cg-caixa" aria-labelledby="cg-risco-titulo">
           <h2 className="cg-caixa__titulo" id="cg-risco-titulo">Assuntos em risco <small>caem muito e você acerta menos de 65%</small></h2>
           {hub.riscos.length ? <ul className="cg-riscos">{hub.riscos.slice(0, 6).map((r) => <li key={r.area.id + r.foco.nome}>
             <span><strong>{r.foco.nome}</strong><small>{r.area.nome} · {r.respondidas} respondidas</small></span>
@@ -269,8 +290,8 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
       </div>
 
       {/* ── 7. Como funciona e os ajustes ── */}
-      <ComoFunciona plano={plano} calculo={calculo} minutos={minutos} />
-      <Ajustes plano={plano} calculo={calculo} hub={hub} acoes={acoes} aoAjustar={aoAjustar} ficticio={!!ficticio} />
+      <ComoFunciona plano={plano} calculo={calculo} minutos={minutos} mao={!!mao} />
+      <Ajustes plano={plano} calculo={calculo} hub={hub} acoes={acoes} aoAjustar={aoAjustar} ficticio={!!ficticio} mao={mao} />
     </div>
   </>
 }
@@ -301,7 +322,7 @@ function resumoDoDia(d: DiaPlano): string {
 
 // ─── A estrada: as etapas do plano, sem cortar nome nenhum ───────────────────
 
-function Estrada({ plano, calculo }: { plano: PlanoSalvo; calculo: CalculoPlano }) {
+function Estrada({ plano, calculo, mao }: { plano: PlanoSalvo; calculo: CalculoPlano; mao: boolean }) {
   const hoje = diaCivil()
   const prova = diaCivil(plano.data_prova)
   const criado = diaCivil(Date.parse(plano.criado_em))
@@ -315,8 +336,8 @@ function Estrada({ plano, calculo }: { plano: PlanoSalvo; calculo: CalculoPlano 
     if (ate > de) etapas.push({ id: `p${p}`, nome: ROTULO_PASSADA[p].nome, de, ate, texto: <>Questões novas: {ROTULO_PASSADA[p].texto}. {p === 1 ? 'Garante o que mais cai, mesmo se a rotina apertar depois.' : p === 2 ? 'Entra quando a prioridade máxima de todas as áreas já foi vista.' : 'Fecha o acervo do seu plano; se faltar tempo, é daqui que o plano corta.'}</> })
   })
   else etapas.push({ id: 'conteudo', nome: 'Conteúdo novo', de: criado, ate: calculo.inicioRetaFinal, texto: 'A fase de questões novas terminou.' })
-  if (calculo.diasRetaFinal > 7) etapas.push({ id: 'revisao', nome: 'Revisão forte', de: calculo.inicioRetaFinal, ate: calculo.inicioModoProva, texto: <>Sem questão nova. Cada dia traz uma fatia da prova (duas áreas) com cerca de <b>{calculo.metaMedia} questões que você já viu</b>: os seus erros, depois chutes e dúvidas e, por fim, o que mais cai e você não vê há mais tempo.</> })
-  etapas.push({ id: 'prova', nome: 'Modo prova', de: calculo.inicioModoProva, ate: prova, texto: <>A última semana, com menos volume. Três tarefas por dia: um <b>simulado cronometrado</b> no horário e na duração da prova, os <b>erros que importam</b> e as <b>frases que caem</b>. Na véspera ({curta(vespera)}), só aquecimento de 25 questões e descanso.</> })
+  if (calculo.diasRetaFinal > 7) etapas.push({ id: 'revisao', nome: 'Revisão forte', de: calculo.inicioRetaFinal, ate: calculo.inicioModoProva, texto: mao ? <>Revisão dos seus erros e dos assuntos de prioridade máxima. Se ainda houver questão que você não viu (o acervo da mão cresce toda semana), ela entra aqui, dividida pelos dias que faltam.</> : <>Sem questão nova. Cada dia traz uma fatia da prova (duas áreas) com cerca de <b>{calculo.metaMedia} questões que você já viu</b>: os seus erros, depois chutes e dúvidas e, por fim, o que mais cai e você não vê há mais tempo.</> })
+  etapas.push({ id: 'prova', nome: 'Modo prova', de: calculo.inicioModoProva, ate: prova, texto: mao ? <>A última semana: os seus erros, o que mais cai e o que ainda faltar ver. Na véspera ({curta(vespera)}), pouco volume e descanso.</> : <>A última semana, com menos volume. Três tarefas por dia: um <b>simulado cronometrado</b> no horário e na duração da prova, os <b>erros que importam</b> e as <b>frases que caem</b>. Na véspera ({curta(vespera)}), só aquecimento de 25 questões e descanso.</> })
   etapas.push({ id: 'dia', nome: 'Prova', de: prova, ate: new Date(prova.getTime() + DIA), texto: <>No dia ({prova.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })}) o cronograma não pede nada: só a prova. Depois dela você monta um plano novo quando quiser.</> })
   const inicio = etapas[0].de.getTime(), fim = prova.getTime()
   const pos = Math.min(100, Math.max(0, ((hoje.getTime() - inicio) / Math.max(1, fim - inicio)) * 100))
@@ -618,7 +639,6 @@ function FaltaPorArea({ calculo, minutos }: { calculo: CalculoPlano; minutos: nu
 // ─── Desempenho por área ─────────────────────────────────────────────────────
 
 function TabelaAreas({ areas, media, aoTreinar }: { areas: ReturnType<typeof areasParaMelhorar>['areas']; media: number | null; aoTreinar?: (slug: string) => void }) {
-  if (!areas.some((a) => a.acerto !== null)) return <p className="cg-nota">O desempenho aparece aqui depois das primeiras respostas (3 por área). Cada área ganha a sua barra de acerto, comparada com a sua média.</p>
   const rot = { melhorar: 'melhorar', 'na-media': 'na média', forte: 'forte', 'sem-dados': 'sem dados' } as const
   return (
     <div className="cg-tabela" role="table" aria-label="Desempenho por área">
@@ -638,10 +658,20 @@ function TabelaAreas({ areas, media, aoTreinar }: { areas: ReturnType<typeof are
 
 // ─── Como funciona ───────────────────────────────────────────────────────────
 
-function ComoFunciona({ plano, calculo, minutos }: { plano: PlanoSalvo; calculo: CalculoPlano; minutos: number }) {
+function ComoFunciona({ plano, calculo, minutos, mao }: { plano: PlanoSalvo; calculo: CalculoPlano; minutos: number; mao: boolean }) {
   const prova = diaCivil(plano.data_prova)
   const teto = Math.round((TETO_ATRASO - 1) * 100)
-  const perguntas: Array<{ p: string; r: ReactNode }> = [
+  const daMao: Array<{ p: string; r: ReactNode }> = [
+    { p: 'Quais questões eu faço hoje?', r: <>As do passo 2: <b>só questões da mão que você ainda não respondeu</b>, na ordem do que a prova mais cobra (prioridade máxima primeiro), com alguns dos seus erros antigos no meio. O botão abre exatamente essas.</> },
+    { p: 'Por que a meta do dia mudou?', r: <>A meta é tudo o que falta dividido pelos dias de estudo até a reta final. <b>Nenhuma questão fica de fora</b>: quando entram questões novas no acervo, ou quando um dia fica para trás, a diferença é dividida pelos dias que restam{calculo.projecao.tetoAtivo ? '; hoje isso passa do tempo que você marcou' : ''}.</> },
+    { p: 'E se entrarem questões novas?', r: <>Elas já entram no seu plano, mesmo que você tivesse fechado tudo: aparecem nos dias que faltam e, na reta final, junto com a revisão.</> },
+    { p: 'E se eu fizer a mais?', r: <>O que passar da meta sai do próximo dia de estudo. Em "Próximos dias" dá para fazer agora as questões de qualquer dia.</> },
+    { p: 'Onde entram os erros?', r: <>Em "Refaça o que errou": o que você errou nos últimos 14 dias do plano e ainda não acertou, com as alternativas em ordem nova. Acertou, sai da fila.</> },
+    { p: 'O que é o mini-simulado?', r: <>A cada duas semanas, {TAMANHO_MINI} questões de todos os assuntos do plano, na proporção do quanto caem, para fazer de uma vez.</> },
+    { p: 'Como é a reta final?', r: <>De {curta(calculo.inicioRetaFinal)} até a véspera ({curta(new Date(prova.getTime() - DIA))}): os seus erros, os assuntos de prioridade máxima e o que ainda faltar ver.</> },
+    { p: 'Folga e semana difícil?', r: <>Dia fora dos seus dias de estudo não tem meta. Na semana difícil a meta fica no mínimo de {DIA_MINIMO}, e o resto é redistribuído.</> },
+  ]
+  const perguntas: Array<{ p: string; r: ReactNode }> = mao ? daMao : [
     { p: 'Quais questões eu faço hoje?', r: <>As do passo 2: <b>só questões que você ainda não respondeu</b>, na quantidade da meta{calculo.metaDiaNormal > 0 ? <> (num dia normal, {calculo.metaDiaNormal}, cerca de {formatarTempo(calculo.metaDiaNormal * minutos)})</> : null}. Cerca de 70% da área em foco, que fica uns 3 dias, e 30% de outra, para misturar; o que mais cai vem primeiro. O botão abre exatamente essas, já na ordem.</> },
     { p: 'E se eu não terminar o dia?', r: <>Nada se perde. O que faltou volta para a fila e é dividido pelos dias que restam, não só no dia seguinte. A meta nunca passa de <b>{teto}% acima do planejado</b>; se o atraso for maior, o que não cabe sai do fim da fila (o que menos cai) e a previsão avisa. A sessão de ontem não reabre.</> },
     { p: 'E se eu fizer a mais?', r: <>Tudo o que passar da meta sai dos próximos dias, começando pelo seguinte. Com a meta feita, o botão passa a adiantar o próximo dia, e as questões contam para ele.</> },
@@ -662,13 +692,13 @@ function ComoFunciona({ plano, calculo, minutos }: { plano: PlanoSalvo; calculo:
 
 // ─── Ajustes ─────────────────────────────────────────────────────────────────
 
-function Ajustes({ plano, calculo, hub, acoes, aoAjustar, ficticio }: { plano: PlanoSalvo; calculo: CalculoPlano; hub: HubDados | null; acoes?: AcoesVisao; aoAjustar?: () => void; ficticio: boolean }) {
+function Ajustes({ plano, calculo, hub, acoes, aoAjustar, ficticio, mao }: { plano: PlanoSalvo; calculo: CalculoPlano; hub: HubDados | null; acoes?: AcoesVisao; aoAjustar?: () => void; ficticio: boolean; mao: VarianteMao | null }) {
   const hoje = diaCivil()
   const seg = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - ((hoje.getDay() + 6) % 7))
   const dificil = (plano.opcoes?.semanasDificeis ?? []).includes(chaveCivil(seg))
   const [hora, definirHora] = useState(7)
   const baixar = () => {
-    const url = URL.createObjectURL(new Blob([gerarIcs(calculo, plano, hora)], { type: 'text/calendar;charset=utf-8' }))
+    const url = URL.createObjectURL(new Blob([gerarIcs(calculo, plano, hora, Date.now(), mao ? location.hash.replace(/^#/, '').split('&')[0] || '/cronograma-mao' : '/cronograma')], { type: 'text/calendar;charset=utf-8' }))
     const a = document.createElement('a'); a.href = url; a.download = 'cronograma-orto-questoes.ics'; document.body.appendChild(a); a.click(); a.remove()
     setTimeout(() => URL.revokeObjectURL(url), 2000)
   }
@@ -678,17 +708,18 @@ function Ajustes({ plano, calculo, hub, acoes, aoAjustar, ficticio }: { plano: P
     <section className="cg-caixa cg-col-5" aria-labelledby="cg-ajustes-titulo">
       <h2 className="cg-caixa__titulo" id="cg-ajustes-titulo">Ajustes do plano <small>mudam na hora; o andamento continua</small></h2>
       <ul className="cg-ajustes">
-        {acoes && conteudo && <Chave ligado={soTeot(plano)} aoMudar={acoes.aoSoTeot} desabilitado={ocupado} titulo="Só questões do TEOT" texto="deixa de fora o TARO e as outras provas" />}
-        {hub && <Chave ligado={incluiSimulados(plano)} aoMudar={(v) => { void hub.aoTrocarSimulados(v) }} desabilitado={ocupado} titulo="OrtoQuestões Simulados" texto={`cerca de 1 a cada 5 no dia · ${hub.simulados.feitas} de ${hub.simulados.total} feitos${hub.simulados.acerto !== null ? ` · ${hub.simulados.acerto}%` : ''}`} />}
+        {acoes && conteudo && !mao && <Chave ligado={soTeot(plano)} aoMudar={acoes.aoSoTeot} desabilitado={ocupado} titulo="Só questões do TEOT" texto="deixa de fora o TARO e as outras provas" />}
+        {hub && !mao && <Chave ligado={incluiSimulados(plano)} aoMudar={(v) => { void hub.aoTrocarSimulados(v) }} desabilitado={ocupado} titulo="OrtoQuestões Simulados" texto={`cerca de 1 a cada 5 no dia · ${hub.simulados.feitas} de ${hub.simulados.total} feitos${hub.simulados.acerto !== null ? ` · ${hub.simulados.acerto}%` : ''}`} />}
         {hub && conteudo && <Chave ligado={dificil} aoMudar={hub.aoSemanaDificil} desabilitado={ocupado} titulo="Semana difícil" texto={`só ${DIA_MINIMO} por dia nesta semana; o resto é redistribuído`} />}
-        {acoes && conteudo && <li className="cg-ajuste"><span><strong>Dia dos erros</strong><small>o roteiro destaca os erros nesse dia</small></span>
+        {acoes && conteudo && !mao && <li className="cg-ajuste"><span><strong>Dia dos erros</strong><small>o roteiro destaca os erros nesse dia</small></span>
           <select value={plano.opcoes?.diaErros ?? ''} disabled={ocupado} aria-label="Dia dos erros" onChange={(e) => acoes.aoDiaErros(e.target.value === '' ? null : Number(e.target.value))}><option value="">nenhum</option>{[1, 2, 3, 4, 5, 6, 0].map((d) => <option key={d} value={d}>{SEMANA[d]}</option>)}</select></li>}
+        {mao?.ajustes}
         {!ficticio && !calculo.provaPassou && <li className="cg-ajuste"><span><strong>Levar para o calendário do celular</strong><small>cada dia vira um compromisso com lembrete</small></span>
           <span className="cg-linha"><select value={hora} aria-label="Horário do lembrete" onChange={(e) => definirHora(Number(e.target.value))}><option value={7}>7h</option><option value={12}>12h</option><option value={19}>19h</option></select><button type="button" className="cg-mini" onClick={baixar}>baixar</button></span></li>}
       </ul>
       <p className="cg-linha cg-linha--sep">
         {aoAjustar && <button type="button" className="cg-btn" onClick={aoAjustar}><Icone nome="lapis" tamanho={14} /> Data, ritmo e folgas</button>}
-        <a className="cg-btn" href={href('/temas-que-mais-caem')}><Icone nome="grafico" tamanho={14} /> Temas que mais caem</a>
+        <a className="cg-btn" href={href(mao ? '/temas-que-mais-caem?modalidade=mao' : '/temas-que-mais-caem')}><Icone nome="grafico" tamanho={14} /> Temas que mais caem</a>
         <a className="cg-btn" href={href('/resumos')}><Icone nome="livro" tamanho={14} /> Biblioteca</a>
         <a className="cg-btn" href={href('/desempenho')}><Icone nome="alvo" tamanho={14} /> Desempenho completo</a>
       </p>
