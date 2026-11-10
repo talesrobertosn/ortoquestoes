@@ -313,7 +313,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 994 | Comentários curtos, onda 1: 44 miniaulas refeitas com figuras (9 de neuropatias compressivas, 9 de fraturas e luxações da mão, 9 do pé torto congênito, 9 de Perthes, 8 do tálus e calcâneo) |
 | 995 | Comentários curtos, onda 1: 40 miniaulas refeitas com figuras (12 de temas variados do Campbell, 8 da coluna cervical da criança, 7 da pelve da criança, 7 da diáfise do fêmur, 6 de fraturas por estresse) |
 | 996 | Comentários curtos, onda 1: 41 miniaulas refeitas com figuras do Rockwood e do Campbell (11 do cotovelo, antebraço e coluna cervical; 11 do joelho, planalto e diáfise da tíbia; 10 da clavícula e úmero; 9 da coluna toracolombar, pelve, acetábulo e colo do fêmur) |
-| (este PR) | Comentários curtos, onda 1: 42 miniaulas refeitas com figuras do Rockwood, do Campbell, do Tachdjian e do Skeletal Trauma (9 do fêmur distal e patela, 9 da fise e mão da criança, 8 do pilão tibial, tornozelo e lesão medular, 8 da síndrome compartimental e escápula, 8 da clavícula e coluna da criança) |
+| 997 | Comentários curtos, onda 1: 42 miniaulas refeitas com figuras do Rockwood, do Campbell, do Tachdjian e do Skeletal Trauma (9 do fêmur distal e patela, 9 da fise e mão da criança, 8 do pilão tibial, tornozelo e lesão medular, 8 da síndrome compartimental e escápula, 8 da clavícula e coluna da criança) |
+| (este PR) | Comentários curtos, onda 1: 43 miniaulas refeitas com figuras (10 de displasias, mucopolissacaridoses, epifisiólise e escoliose; 10 de tendões extensores e flexores; 8 de úmero distal e pé da criança; 8 de anatomia do pé e tornozelo; 7 de marcha, paralisia cerebral e congênitas) |
 
 ## Próximo
 
