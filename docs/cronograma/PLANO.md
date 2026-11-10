@@ -236,3 +236,25 @@ Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoque
     - **Resumos do dia**: a mesma regra do TEOT (`resumosDoDia`), num bloco "Leia antes de começar" acima do cartão
       de hoje; a caixa lateral continua acompanhando o dia tocado no calendário.
     - Botões dourados chapados. Teste: `fixtures/testar_cronograma_mao.mjs`.
+
+### Painel de controle (10/11/2026, segunda versão da página)
+
+63. [x] O Tales recusou a primeira versão da página nova ("muito espaço vazio", nomes cortados na estrada, botão dourado
+    em degradê feio, parte de baixo reaproveitada, coruja perdida) e pediu um **painel de controle carregado de
+    informação, estatísticas e gráficos**. `CronogramaVisao.tsx` e `CronogramaNovo.css` foram reescritos do zero
+    (classes `cg-*`), sem usar as peças antigas (`CronogramaPainel`, `CronogramaHub`, `CronogramaCalendario` continuam
+    só nos cronogramas da Mão). Regras desta página:
+    - caixas pequenas e próximas (grade de 12 colunas, vão de 12 px), nada de área em branco;
+    - **nenhum nome cortado com reticências**: as etapas da estrada são pílulas que quebram de linha; no celular o mês
+      usa a forma curta e o texto inteiro fica no dia escolhido;
+    - **nenhum botão em degradê**: o botão do dia é marfim chapado sobre a cena e verdete chapado no papel;
+    - a coruja e o gato não visitam mais esta página (`VisitaCronograma` saiu daqui).
+    Ordem: cena com os dias que faltam + 6 indicadores (hoje, sequência, ritmo, plano feito, acerto, erros) + estrada;
+    Hoje (resumos, questões, erros, "Pouco tempo? Só 10"); próximos dias com "fazer" e adiantar +10/+20/+30; mais para
+    hoje; previsão; o mês com o dia escolhido (áreas, assuntos, resumos, fazer agora); gráficos (questões por dia,
+    progresso feito × planejado × projeção, acerto por dia, o que ainda vem por área); desempenho por área (onde
+    melhorar, com "treinar 15"); assuntos em risco e sem resposta; constância; como funciona; ajustes (só TEOT,
+    simulados, semana difícil, dia dos erros, calendário do celular).
+    Funções novas em `cronogramaRoteiro.ts`: `previsaoDeTermino` (quando o conteúdo acaba no ritmo real dos últimos 7
+    dias), `areasParaMelhorar` e `historicoDosDias`. Dia curto: `comecarHoje(..., limite)` abre só as 10 primeiras.
+    O andamento não muda: nenhuma dessas peças grava nada nem mexe na conta do plano.

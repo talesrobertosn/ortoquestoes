@@ -274,9 +274,9 @@ function Painel({ prova, config, premium, indice, respondidas, aoEstudar, aoConf
 
     {novasNoAcervo > 0 && <p className="cm-novas" role="status"><Icone nome="estrela" tamanho={18} /><span><strong>Entraram {num(novasNoAcervo)} {novasNoAcervo === 1 ? 'questão nova' : 'questões novas'} de cirurgia da mão no seu plano.</strong> Elas já foram distribuídas pelos dias que faltam, mesmo que você já tivesse fechado tudo: a meta dos próximos dias sobe para caberem todas.</span><button type="button" className="botao" onClick={() => definirAcervoVisto(mao.total)}>Entendi</button></p>}
 
-    {!mao.encerrado && diaDosResumos.ids.length > 0 && <section className="cn cn-hoje cm-leitura" aria-labelledby="cm-leitura-titulo">
-      <header className="cn-hoje__cabeca"><p className="cn-rotulo">Resumos do dia</p><h2 id="cm-leitura-titulo">{diaDosResumos.deHoje ? 'Leia antes de começar' : 'Leitura para o próximo dia de estudo'}</h2></header>
-      <ResumosDoDia resumos={resumosHoje} leituras={leituras} carregando={!biblioteca} total={diaDosResumos.ids.length} deHoje={diaDosResumos.deHoje} data={diaDosResumos.data} area={{ slug: 'mao', nome: 'Cirurgia da mão' }} frasesLidas={lidoHoje(resumaoHoje, 'mao')} />
+    {!mao.encerrado && diaDosResumos.ids.length > 0 && <section className="cg cg-caixa cm-leitura" aria-labelledby="cm-leitura-titulo">
+      <h2 className="cg-caixa__titulo" id="cm-leitura-titulo">{diaDosResumos.deHoje ? 'Leia antes de começar' : 'Leitura para o próximo dia de estudo'} <small>os resumos mais próximos das questões {diaDosResumos.deHoje ? 'de hoje' : 'que vêm'}</small></h2>
+      <ResumosDoDia resumos={resumosHoje} leituras={leituras} carregando={!biblioteca} total={diaDosResumos.ids.length} deHoje={diaDosResumos.deHoje} area={{ slug: 'mao', nome: 'Cirurgia da mão' }} frasesLidas={lidoHoje(resumaoHoje, 'mao')} />
     </section>}
 
     <div className="cp-colunas">
