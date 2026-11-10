@@ -335,3 +335,61 @@
 .cg-mes .cg-caixa__cabeca .cg-linha { flex: none; flex-wrap: nowrap; }
 @media (max-width: 30rem) { .cg-mes .cg-caixa__cabeca { flex-direction: column; } .cg-caixa { padding: 12px; } }
 @media (max-width: 40rem) { .cg-falta li { grid-template-columns: minmax(0, 1fr) 3rem; } .cg-falta strong { grid-column: 1 / -1; } }
+
+/* ── Ajustes de 10/11/2026 (Tales): cena maior no computador, Hoje largo, semana como vista de entrada, números legíveis ── */
+@media (min-width: 52rem) { .cg-topo__cena { height: 22rem; } .cg-topo__texto { min-height: 19rem; } }
+@media (min-width: 80rem) { .cg-topo__cena { height: 24rem; } .cg-topo__texto { min-height: 21rem; } }
+/* Números na fonte da marca (a fonte de pixel era difícil de ler). */
+.cg-ind b, .cg-anel b, .cg-areas li > b, .cg-erros b, .cg-previsao b, .cg-riscos__pct, .cg-diasel__num b, .cg-quadros b { font-family: var(--fonte-marca); font-weight: 800; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; }
+.cg-ind b { font-size: 1.5rem; } .cg-areas li > b { font-size: 1.375rem; } .cg-areas--mini li > b { font-size: 1.0625rem; } .cg-erros b { font-size: 1.125rem; } .cg-previsao b { font-size: 1.875rem; } .cg-riscos__pct { font-size: 1.125rem; } .cg-anel b { font-size: 1.125rem; } .cg-diasel__num b { font-size: 1.25rem; }
+/* Hoje: resumos e questões lado a lado, largos; os erros numa faixa própria embaixo. */
+@media (min-width: 46rem) {
+  .cg-hoje .cg-passos { grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 12px; }
+  .cg-hoje .cg-passos > .cg-questoes { grid-row: auto; }
+  .cg-hoje .cg-passo--erros { grid-column: 1 / -1; grid-template-columns: minmax(14rem, auto) minmax(0, 1fr) auto; align-items: center; column-gap: 16px; }
+  .cg-hoje .cg-passo { padding: 14px 16px; }
+  .cg-hoje .cg-resumo { padding: 8px 12px 8px 8px; }
+  .cg-hoje .cg-resumo__texto strong { font-size: 0.9375rem; }
+}
+/* A semana: sete colunas altas no computador; no celular, uma linha por dia, com o texto inteiro. */
+.cg-dia__sem { display: none; font-weight: 800; text-transform: capitalize; }
+.cg-dia__n em { color: var(--verdete); font-size: 0.6875rem; font-style: normal; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; }
+.cg-mes--mes .cg-dia__n em { display: none; }
+.cg-mes--semana .cg-dia { min-height: 11.5rem; grid-template-rows: auto 1fr auto; padding: 8px 9px 12px; }
+.cg-mes--semana .cg-dia__n { font-size: 0.9375rem; }
+.cg-mes--semana .cg-dia__area { display: grid; gap: 6px; align-content: start; padding: 4px 0 6px; }
+.cg-mes--semana .cg-dia__area > span { padding-left: 7px; border-left: 3px solid var(--cg-area); font-size: 0.8125rem; font-weight: 700; line-height: 1.2; overflow-wrap: anywhere; }
+.cg-mes--semana .cg-dia__area small { display: block; margin-top: 1px; color: var(--texto-2); font-size: 0.75rem; font-weight: 500; line-height: 1.25; }
+.cg-mes--semana .cg-dia__area > small { padding-left: 10px; }
+.cg-mes--semana .cg-dia__pe { font-size: 0.75rem; }
+.cg-mes--semana .cg-dia__faixa { height: 5px; }
+.cg-mes--semana .cg-largo { display: inline; } .cg-mes--semana .cg-estreito { display: none; }
+@media (max-width: 61.99rem) {
+  .cg-mes--semana .cg-mes__semana { display: none; }
+  .cg-mes--semana .cg-mes__grade { grid-template-columns: minmax(0, 1fr); }
+  .cg-mes--semana .cg-dia { min-height: 0; grid-template-columns: 5.5rem minmax(0, 1fr) auto; grid-template-rows: auto; align-items: start; column-gap: 10px; padding: 9px 10px 11px; }
+  .cg-mes--semana .cg-dia__sem { display: inline; }
+  .cg-mes--semana .cg-dia__n { display: grid; gap: 2px; }
+  .cg-mes--semana .cg-dia__area { padding: 0; }
+  .cg-mes--semana .cg-dia__pe { align-self: start; text-align: right; }
+}
+.cg-mes .cg-caixa__cabeca { flex-wrap: wrap; }
+.cg-mes .cg-caixa__cabeca .cg-linha { flex-wrap: wrap; }
+/* Quadros pequenos de números. */
+.cg-quadros { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+@media (min-width: 36rem) { .cg-quadros { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+.cg-quadros > div { display: grid; gap: 2px; padding: 8px 10px; border: 1px solid var(--traco); border-radius: 10px; background: var(--superficie-2); }
+.cg-quadros dt { color: var(--texto-2); font-size: 0.6875rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.cg-quadros dd { display: grid; gap: 1px; }
+.cg-quadros b { font-size: 1.25rem; line-height: 1.1; }
+.cg-quadros small { color: var(--texto-2); font-size: 0.75rem; line-height: 1.3; }
+
+/* Na semana o calendário usa a largura toda e o dia escolhido vem embaixo, em duas colunas. */
+@media (min-width: 62rem) {
+  .cg-grade > .cg-mes--semana { grid-column: 1 / -1; }
+  .cg-diasel--larga { display: block; columns: 2; column-gap: 24px; }
+  .cg-diasel--larga > * { break-inside: avoid; margin-bottom: 8px; }
+  .cg-diasel--larga > .cg-linha--sep { border-top: 0; padding-top: 0; }
+}
+.cg-diasel--larga .cg-rotulo { break-after: avoid; }
+.cg-mes--semana .cg-legenda::after { content: "toque num dia para ver os resumos e fazer as questões dele"; }
