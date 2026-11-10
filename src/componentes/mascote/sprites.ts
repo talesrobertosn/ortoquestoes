@@ -140,9 +140,9 @@ export function folhaGato(id: IdLinhaGato): Folha {
 }
 
 /**
- * O dragão do tesouro (10/11/2026, mascote novo pedido pelo Tales): scripts/gerar_dragao.py, 8 quadros de 160 x 112
+ * O dragão do tesouro (10/11/2026, mascote novo pedido pelo Tales): scripts/gerar_dragao.py, 12 quadros de 224 x 112
  * por linha. Ele olha para a esquerda e a esquerda do quadro fica livre para o jato de fogo.
  */
-export const SPRITE_DRAGAO = { src: '/pixel/mascote/dragao.png?v=1', quadros: 8 } as const
+export const SPRITE_DRAGAO = { src: '/pixel/mascote/dragao.png?v=2', quadros: 12 } as const
 export const LINHAS_DRAGAO = ['parado', 'voando', 'pousando', 'fogo', 'dormindo', 'rugindo'] as const
 export type IdLinhaDragao = (typeof LINHAS_DRAGAO)[number]

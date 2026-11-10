@@ -5,7 +5,7 @@ de distância, luz calculada, contorno e paletas): chibi de três quartos virado
 barriga em placas douradas, um chifre no nariz e dois para trás, espinhos no dorso, asas de membrana alaranjada, cauda
 em ponta de lança e olho âmbar de pupila em fenda.
 
-Gera public/pixel/mascote/dragao.png: quadros de 160 x 112, 8 por linha, uma linha por comportamento (ids em
+Gera public/pixel/mascote/dragao.png: quadros de 224 x 112, 12 por linha, uma linha por comportamento (ids em
 src/componentes/mascote/sprites.ts, LINHAS_DRAGAO): parado, voando, pousando, fogo, dormindo, rugindo.
 O dragão ocupa a direita do quadro; a esquerda fica livre para o jato de fogo.
 
@@ -24,8 +24,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import gerar_mascote as gm  # noqa: E402
 from gerar_mascote import Mat, Quadro2D, Tela, bezier, capsula, circulo, elipse, hx, poligono, rampa, ruido, traco  # noqa: E402
 
-DW, DH, DQ = 160, 112, 8
-OX = 34          # deslocamento do dragão no quadro (a esquerda é do fogo)
+DW, DH, DQ = 224, 112, 12
+OX = 98          # deslocamento do dragão no quadro (a esquerda é do fogo)
 CHAO = 104.0
 TAU = math.tau
 
@@ -264,9 +264,9 @@ def fumacinha(t: Tela, x: float, y: float, fase: float):
 def l_parado(t: Tela, k: int):
     f = k / DQ
     resp = math.sin(f * TAU)
-    q = dragao(t, k, resp=resp, cab_inc=-3 + resp * 2.0, cab_dy=-resp * 0.8, asa_ang=24 - resp * 3, asa_abre=0.5 + resp * 0.015, cauda_f=f, fechado=(k == 5), olhar=(-0.3 if k in (2, 3) else 0.0))
-    if k in (6, 7):
-        fumacinha(t, q.p(-18.0, 1.5)[0], q.p(-18.0, 1.5)[1], (k - 6) / 2.4)
+    q = dragao(t, k, resp=resp, cab_inc=-3 + resp * 2.0, cab_dy=-resp * 0.8, asa_ang=24 - resp * 3, asa_abre=0.5 + resp * 0.015, cauda_f=f, fechado=(0.6 <= f < 0.7), olhar=(-0.3 if 0.25 <= f < 0.5 else 0.0))
+    if f >= 0.75:
+        fumacinha(t, q.p(-18.0, 1.5)[0], q.p(-18.0, 1.5)[1], (f - 0.75) * 3.3)
 
 
 def l_voando(t: Tela, k: int):
@@ -282,17 +282,21 @@ def l_pousando(t: Tela, k: int):
     bat = math.sin(u * TAU * 1.6)
     abre = 1.08 - 0.58 * max(0.0, (u - 0.55) / 0.45)
     dragao(t, k, sobe=18 * desce ** 1.4, cab_inc=-8 * desce - 3 * (1 - desce), asa_ang=(-14 + bat * 36) * max(desce, 0.25) + 24 * (1 - max(desce, 0.25)), asa_abre=abre,
-           bate=bat * desce, cauda_f=u * 0.8, voo=desce, resp=(-1.6 if k in (5, 6) else 0.0))
+           bate=bat * desce, cauda_f=u * 0.8, voo=desce, resp=(-1.6 if 0.68 <= u <= 0.88 else 0.0))
 
 
 def l_fogo(t: Tela, k: int):
     """Inspira (cabeça para trás), abre a boca e solta o jato; fecha soltando fumaça."""
-    forca = (0.0, 0.0, 0.45, 0.9, 1.0, 0.95, 0.5, 0.0)[k]
-    recuo = (0.0, 1.0, 0.2, -0.6, -0.8, -0.7, -0.3, 0.0)[k]
-    boca = (0.0, 0.25, 0.8, 1.0, 1.0, 1.0, 0.7, 0.15)[k]
-    q = dragao(t, k, resp=(1.6 if k == 1 else -0.6 * forca), cab_inc=recuo * 13 + 4 * forca, cab_dx=recuo * 4.0, cab_dy=-recuo * 2.5 + forca * 2.5, boca=boca,
-               asa_ang=24 - 18 * max(forca, recuo * 0.6), asa_abre=0.5 + 0.34 * max(forca, recuo * 0.5), cauda_f=k / DQ, chama=forca, bravo=1.0 * (forca > 0 or k == 1))
-    if k == 7:
+    u = k / (DQ - 1)
+    chave = lambda vals: float(np.interp(u, np.linspace(0, 1, len(vals)), vals))
+    # inspira (0 a 0,2), o jato cresce, segura firme no meio e apaga aos poucos
+    forca = chave((0.0, 0.0, 0.0, 0.35, 0.75, 0.95, 1.0, 1.0, 0.97, 0.8, 0.45, 0.0))
+    recuo = chave((0.0, 0.6, 1.0, 0.3, -0.4, -0.7, -0.8, -0.8, -0.75, -0.55, -0.25, 0.0))
+    boca = chave((0.0, 0.15, 0.3, 0.75, 1.0, 1.0, 1.0, 1.0, 1.0, 0.9, 0.6, 0.15))
+    inspira = 0.08 < u < 0.22
+    q = dragao(t, k, resp=(1.6 if inspira else -0.6 * forca), cab_inc=recuo * 13 + 4 * forca, cab_dx=recuo * 4.0, cab_dy=-recuo * 2.5 + forca * 2.5, boca=boca,
+               asa_ang=24 - 18 * max(forca, recuo * 0.6), asa_abre=0.5 + 0.34 * max(forca, recuo * 0.5), cauda_f=k / DQ, chama=forca, bravo=1.0 * (forca > 0 or inspira))
+    if k == DQ - 1:
         fumacinha(t, q.p(-18.0, 2.0)[0], q.p(-18.0, 2.0)[1], 0.2)
 
 

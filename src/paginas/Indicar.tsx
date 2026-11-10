@@ -9,21 +9,14 @@ import { CorujaPixel } from '../biblioteca/sala/CorujaPixel'
 import { GatoPixel } from '../componentes/mascote/GatoPixel'
 import { DURACAO_DRAGAO, DragaoPixel } from '../componentes/mascote/DragaoPixel'
 import type { IdLinhaDragao } from '../componentes/mascote/sprites'
-import { Mascote } from '../componentes/mascote/Mascote'
 import { BotaoGoogle } from '../componentes/BotaoGoogle'
 import { IconeWhatsapp } from '../componentes/ConviteCompartilhar'
 import { Icone } from '../componentes/Icone'
 import { href } from '../util/rotas'
 import '../estilos/paginas/Indicar.css'
 
-type Quem = 'esqueleto' | 'gato' | 'coruja' | 'dragao'
+type Quem = 'gato' | 'coruja' | 'dragao'
 const FALAS_INDICAR: Record<Quem, readonly string[]> = {
-  esqueleto: [
-    'Estudar junto rende mais. E o tesouro cresce para os dois.',
-    'Cada amigo confirmado vale 7 dias para você e 7 para ele.',
-    'Manda no grupo da residência. Alguém sempre precisa de um empurrão.',
-    'Eu indicaria, mas meus amigos são todos esqueletos de museu.',
-  ],
   gato: [
     'Indiquei a coruja. Ela ainda não respondeu as 20 questões.',
     'Eu mandaria o link, mas o celular está longe. Uns dois metros.',
@@ -61,13 +54,13 @@ function ChuvaDeMoedas({ n, quantas = 16 }: { n: number; quantas?: number }) {
 
 /**
  * A Câmara do Tesouro (10/11/2026, "tom de ouro, como se a pessoa estivesse ganhando muito"): o cenário HD-2D de
- * scripts/gerar_cena_tesouro.py. Cada bicho tem o seu posto: o esqueleto é o cavaleiro no alto do monte, ao lado da
- * espada que fincou; a coruja faz a contabilidade em cima do baú; o gato dorme encostado nele. O flanco esquerdo do
- * monte é o ninho do dragão (DragaoViajante), que não fica preso à pintura.
+ * scripts/gerar_cena_tesouro.py. Só três bichos moram aqui (Tales, 10/11/2026: "pode tirar a caveira"): a coruja
+ * pousada na tampa aberta do baú, o gato dormindo em cima do ouro e o dragão, cujo ninho é o flanco esquerdo do
+ * monte (DragaoViajante), que não fica preso à pintura.
  */
-function Tesouro({ comemora, chuva, aoChover }: { comemora: boolean; chuva: number; aoChover: () => void }) {
+function Tesouro({ chuva, aoChover }: { chuva: number; aoChover: () => void }) {
   const [fala, definirFala] = useState<{ quem: Exclude<Quem, 'dragao'>; texto: string } | null>(null)
-  const voltas = useRef({ esqueleto: 0, gato: 0, coruja: 0 })
+  const voltas = useRef({ gato: 0, coruja: 0 })
   const toquesGato = useRef<number[]>([])
   useEffect(() => { if (!fala) return; const t = window.setTimeout(() => definirFala(null), 6500); return () => window.clearTimeout(t) }, [fala])
   const falar = (quem: Exclude<Quem, 'dragao'>) => {
@@ -88,7 +81,7 @@ function Tesouro({ comemora, chuva, aoChover }: { comemora: boolean; chuva: numb
   const tocarEspada = () => {
     guardarNoAlbum('tesouro-espada')
     aoChover()
-    definirFala({ quem: 'esqueleto', texto: 'Conhecimento vale ouro. E amigo que estuda junto vale mais ainda.' })
+    definirFala({ quem: 'coruja', texto: 'Conhecimento vale ouro. E amigo que estuda junto vale mais ainda.' })
   }
   return (
     <div className="ind-cena">
@@ -96,9 +89,6 @@ function Tesouro({ comemora, chuva, aoChover }: { comemora: boolean; chuva: numb
         <span className="ind-cena__cintila" aria-hidden="true">{[[62, 58], [70, 47], [77, 61], [84, 52], [91, 70], [58, 74], [73, 78], [88, 83], [66, 88], [81, 40]].map(([x, y], i) => <i key={i} style={{ left: `${x}%`, top: `${y}%`, '--d': `${i * 0.41}s` } as CSSProperties} />)}</span>
         <span className="ind-ninho" data-poleiro="ninho" aria-hidden="true" />
         <button type="button" className="ind-espada" onClick={tocarEspada} aria-label="Tocar na espada no alto do tesouro" />
-        <button type="button" className="ind-bicho ind-bicho--esqueleto" onClick={() => falar('esqueleto')} aria-label="Falar com o esqueleto">
-          <Mascote comportamento={comemora ? 'trofeu' : 'acenar'} falar={false} interativo={false} />
-        </button>
         <button type="button" className="ind-bicho ind-bicho--gato" onClick={() => falar('gato')} aria-label="Falar com o gato"><GatoPixel estado={fala?.quem === 'gato' ? 'acordado' : 'dormindo'} /></button>
         <button type="button" className="ind-bicho ind-bicho--coruja" onClick={() => falar('coruja')} aria-label="Falar com a coruja"><CorujaPixel estado={fala?.quem === 'coruja' ? 'acenando' : 'parada'} /></button>
         <ChuvaDeMoedas n={chuva} />
@@ -126,7 +116,7 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
   const relogios = useRef<number[]>([])
   const proxima = useRef(0)
   const falas = useRef(0)
-  const largura = () => (window.innerWidth < 700 ? 150 : 256)
+  const largura = () => (window.innerWidth < 700 ? 210 : 350)
 
   useEffect(() => {
     const base = raiz.current
@@ -135,7 +125,7 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
     const pontoDe = (el: Element, f: number) => {
       const r = el.getBoundingClientRect(), b = base.getBoundingClientRect(), w = largura()
       const ninho = (el as HTMLElement).dataset.poleiro === 'ninho'
-      const x = Math.min(b.width - w * 0.45, Math.max(w * 0.6, r.left - b.left + r.width * f))
+      const x = Math.min(b.width - w * 0.27, Math.max(w * 0.27, r.left - b.left + r.width * f))
       return { x: ninho ? r.left - b.left + r.width / 2 : x, y: (ninho ? r.bottom : r.top) - b.top }
     }
     const ninho = base.querySelector('[data-poleiro="ninho"]')
@@ -225,9 +215,10 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
   return (
     <div className={`ind-voador ind-voador--${linha}${virado ? ' ind-voador--virado' : ''}`} style={{ transform: `translate(${ponto.x}px, ${ponto.y}px)`, '--voo': `${voo}s` } as CSSProperties}>
       <span className="ind-voador__arco">
-        <button type="button" className="ind-voador__botao" onClick={tocar} aria-label="O dragão do tesouro: tocar para ele soltar fogo">
+        <span className="ind-voador__corpo">
           <DragaoPixel estado={linha} />
-        </button>
+          <button type="button" className="ind-voador__toque" onClick={tocar} aria-label="O dragão do tesouro: tocar para ele soltar fogo" />
+        </span>
       </span>
       {fala && <p className="ind-voador__fala" role="status" onClick={() => definirFala(null)}>{fala}</p>}
     </div>
@@ -236,8 +227,8 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
 
 /**
  * As margens da página (Tales, 10/11/2026: "até as bordas, o canto direito e o esquerdo, que costumam ficar vazios"):
- * em telas largas, um estandarte dourado pende de cada lado, moedas sobem devagar e um monte de ouro fecha cada canto
- * de baixo. Só enfeite: não recebe toque nem foco e some quando a tela não tem margem sobrando.
+ * em telas largas, uma tocha de parede arde de cada lado, moedas sobem devagar e um monte de ouro fecha cada canto
+ * de baixo, encostado na borda da tela e sumindo aos poucos para dentro e para cima. Só enfeite: não recebe toque nem foco e some quando a tela não tem margem sobrando.
  */
 function Margens() {
   return (
@@ -245,7 +236,7 @@ function Margens() {
       {(['esq', 'dir'] as const).map((lado) => (
         <div key={lado} className={`ind-margem ind-margem--${lado}`}>
           <div className="ind-margem__ar">
-            <span className="ind-estandarte"><i /></span>
+            <span className="ind-tocha" style={{ '--sprite-fogo': urlCss('pixel/inicio/fogo.png') } as CSSProperties}><i /></span>
             {Array.from({ length: 7 }, (_, i) => <b key={i} style={{ '--x': `${12 + ((i * 31) % 70)}%`, '--d': `${i * 1.7}s`, '--t': `${9 + (i % 4) * 2.5}s` } as CSSProperties} />)}
             <img src={recurso('pixel/paginas/tesouro-canto.png')} width={396} height={282} alt="" draggable={false} />
           </div>
@@ -401,12 +392,27 @@ function Amigos({ amigos }: { amigos: AmigoIndicado[] }) {
   )
 }
 
+/** O link num visor de pixel, com o botão de copiar colado nele. */
+function LinkCopiavel({ link }: { link: string }) {
+  const [copiado, definirCopiado] = useState(false)
+  async function copiar() {
+    try { await navigator.clipboard.writeText(link) } catch { window.prompt('Copie o seu link:', link) }
+    definirCopiado(true); window.setTimeout(() => definirCopiado(false), 2500)
+  }
+  return (
+    <div className="ind-visor">
+      <code>{link.replace(/^https?:\/\//, '')}</code>
+      <button type="button" className="ind-pixel ind-pixel--ouro" onClick={() => void copiar()}><Icone nome={copiado ? 'certo' : 'link'} tamanho={16} /> {copiado ? 'Copiado' : 'Copiar'}</button>
+    </div>
+  )
+}
+
 /** Os botões de envio (WhatsApp, copiar, mais opções); sem conta, levam a criar a conta para pegar o link. */
 function Acoes({ codigo, grande = false }: { codigo: string | null; grande?: boolean }) {
   const [copiado, definirCopiado] = useState(false)
   if (!codigo) return (
     <div className={grande ? 'ind-acoes ind-acoes--grande' : 'ind-acoes'}>
-      <a className="ind-acoes__ouro" href={href('/conta?modo=criar')}>Criar conta e pegar meu link</a>
+      <a className="ind-pixel ind-pixel--ouro" href={href('/conta?modo=criar')}>Criar conta e pegar meu link</a>
     </div>
   )
   const link = linkIndicacao(codigo)
@@ -419,9 +425,9 @@ function Acoes({ codigo, grande = false }: { codigo: string | null; grande?: boo
   }
   return (
     <div className={grande ? 'ind-acoes ind-acoes--grande' : 'ind-acoes'}>
-      <a className="ind-acoes__whatsapp" href={`https://wa.me/?text=${encodeURIComponent(textoIndicacao(codigo))}`} target="_blank" rel="noopener noreferrer"><IconeWhatsapp tamanho={18} /> Enviar no WhatsApp</a>
-      <button type="button" className="ind-acoes__ouro" onClick={() => void copiar()}><Icone nome={copiado ? 'certo' : 'link'} tamanho={16} /> {copiado ? 'Link copiado' : 'Copiar meu link'}</button>
-      {typeof navigator !== 'undefined' && 'share' in navigator && <button type="button" className="ind-acoes__mais" onClick={() => void compartilhar()}>Mais opções</button>}
+      <a className="ind-pixel ind-pixel--verde" href={`https://wa.me/?text=${encodeURIComponent(textoIndicacao(codigo))}`} target="_blank" rel="noopener noreferrer"><IconeWhatsapp tamanho={18} /> Enviar no WhatsApp</a>
+      <button type="button" className="ind-pixel ind-pixel--ouro" onClick={() => void copiar()}><Icone nome={copiado ? 'certo' : 'link'} tamanho={16} /> {copiado ? 'Link copiado' : 'Copiar meu link'}</button>
+      {typeof navigator !== 'undefined' && 'share' in navigator && <button type="button" className="ind-pixel ind-pixel--fantasma" onClick={() => void compartilhar()}>Mais opções</button>}
     </div>
   )
 }
@@ -449,7 +455,7 @@ export function Indicar() {
           <p>Ele entra pelo seu link e responde {QUESTOES_PARA_CONFIRMAR} questões. Pronto: {DIAS_POR_AMIGO} dias de plano completo para ele e {DIAS_POR_AMIGO} para você. Com {LIMITE_AMIGOS} amigos, são {LIMITE_AMIGOS * DIAS_POR_AMIGO} dias.</p>
           {sessao && !dados ? null : <Acoes codigo={dados?.codigo ?? null} grande />}
         </div>
-        <Tesouro comemora={(dados?.confirmados ?? 0) > 0} chuva={chuva} aoChover={chover} />
+        <Tesouro chuva={chuva} aoChover={chover} />
       </section>
 
       <Conta />
@@ -465,16 +471,23 @@ export function Indicar() {
       {sessao && carregado && !dados && <p className="aviso-formulario aviso-formulario--erro" role="alert">Não foi possível carregar o seu link agora. Recarregue a página em instantes.</p>}
 
       {dados && <div className="ind-grade">
-        <section data-poleiro="" className="folha ind-folha ind-folha--bilhete" aria-labelledby="ind-link-titulo">
-          <h2 id="ind-link-titulo">Seu link dourado</h2>
-          <p className="texto-2 ind-nota">É só mandar. A mensagem já vai escrita, e o seu amigo cai direto no convite.</p>
-          <div className="ind-link"><code>{link}</code></div>
-          <Acoes codigo={dados.codigo} />
+        <section data-poleiro="" className="ind-bilhete" aria-labelledby="ind-link-titulo">
+          <header className="ind-bilhete__cabeca">
+            <img src={recurso('pixel/planos.png')} width={56} height={56} alt="" draggable={false} />
+            <div>
+              <p className="ind-bilhete__selo">Passe dourado</p>
+              <h2 id="ind-link-titulo">Seu link</h2>
+            </div>
+            <span className="ind-bilhete__vale" aria-hidden="true">vale<b>{DIAS_POR_AMIGO}</b>dias</span>
+          </header>
+          <p className="ind-bilhete__texto">Mande para um colega. A mensagem já vai escrita e ele cai direto no convite.</p>
+          <LinkCopiavel link={link} />
+          <a className="ind-pixel ind-pixel--verde ind-pixel--largo" href={`https://wa.me/?text=${encodeURIComponent(textoIndicacao(dados.codigo))}`} target="_blank" rel="noopener noreferrer"><IconeWhatsapp tamanho={18} /> Enviar no WhatsApp</a>
           <details className="ind-previa">
             <summary>Ver a mensagem que vai junto</summary>
             <p>{textoIndicacao(dados.codigo)}</p>
           </details>
-          {dados.fui_convidado && !dados.minha_confirmada && <p className="texto-2 ind-nota">Você entrou por convite: ao chegar a {QUESTOES_PARA_CONFIRMAR} questões respondidas, os seus {DIAS_POR_AMIGO} dias são liberados.</p>}
+          {dados.fui_convidado && !dados.minha_confirmada && <p className="ind-bilhete__texto">Você entrou por convite: ao chegar a {QUESTOES_PARA_CONFIRMAR} questões respondidas, os seus {DIAS_POR_AMIGO} dias são liberados.</p>}
         </section>
 
         <section data-poleiro="" className="folha ind-folha ind-folha--ouro" aria-labelledby="ind-placar-titulo">
@@ -550,7 +563,7 @@ export function ConviteRecebido({ codigo }: { codigo: string }) {
             ? 'Este link de convite não existe ou foi digitado errado. Você ainda pode criar sua conta grátis e treinar normalmente.'
             : `Questões das provas oficiais (TEOT, TARO e outras), comentadas alternativa por alternativa. Crie sua conta grátis e responda ${QUESTOES_PARA_CONFIRMAR} questões: vocês dois ganham ${DIAS_POR_AMIGO} dias do plano completo.`}</p>
         </div>
-        <Tesouro comemora={false} chuva={chuva} aoChover={chover} />
+        <Tesouro chuva={chuva} aoChover={chover} />
       </section>
       {sessao
         ? <section data-poleiro="" className="folha ind-folha ind-folha--bilhete">
