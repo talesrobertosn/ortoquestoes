@@ -152,13 +152,20 @@
 
 .jn-colunas { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 0.45rem; margin: 0; padding: 0; list-style: none; }
 .jn-colunas li { display: grid; justify-items: center; gap: 0.3rem; }
-.jn-colunas__trilho { position: relative; display: block; width: 100%; height: 84px; border-radius: var(--raio-pequeno); background: var(--superficie-2, var(--porcelana)); }
-.jn-colunas__trilho > span { position: absolute; left: 0; right: 0; bottom: 0; height: var(--h); border-radius: var(--raio-pequeno); background: linear-gradient(180deg, #3fb39a, var(--verdete));
-  animation: hd-sobe 0.8s var(--curva) both; animation-delay: calc(var(--i) * 60ms); transform-origin: bottom; }
-.jn-colunas__trilho > b { position: absolute; left: 0; right: 0; top: 4px; color: var(--texto); font-size: 0.75rem; text-align: center; }
+/* As colunas da semana (10/11/2026, Tales: o degradê "é bem feinho"): blocos empilhados de cor chapada, como uma pilha
+ * de tijolos em pixel, numa coluna mais estreita, com o número em cima da pilha e linhas-guia discretas atrás. */
+.jn-colunas__trilho { position: relative; display: block; width: 100%; height: 92px;
+  background: repeating-linear-gradient(to top, transparent 0 calc(25% - 1px), var(--traco) calc(25% - 1px) 25%);
+  box-shadow: inset 0 -2px 0 var(--traco-forte); }
+.jn-colunas__trilho > span { position: absolute; left: 50%; bottom: 2px; width: min(70%, 2.6rem); height: calc((100% - 22px) * var(--h)); transform: translateX(-50%); border-radius: 3px 3px 0 0;
+  background: repeating-linear-gradient(to top, var(--verdete) 0 9px, transparent 9px 12px);
+  animation: jn-pilha 0.7s var(--curva) both; animation-delay: calc(var(--i) * 60ms); }
+@keyframes jn-pilha { from { clip-path: inset(100% 0 0 0); } to { clip-path: inset(0 0 0 0); } }
+.jn-colunas__trilho > b { position: absolute; left: 0; right: 0; bottom: calc((100% - 22px) * var(--h) + 5px); color: var(--texto); font-size: 0.75rem; font-weight: 800; text-align: center; }
 .jn-colunas small { color: var(--ardosia); font-size: 0.75rem; font-weight: 700; text-transform: capitalize; }
 .jn-colunas li.hoje small { color: var(--texto); text-decoration: underline; text-underline-offset: 3px; }
-.jn-colunas li.hoje .jn-colunas__trilho > span { background: linear-gradient(180deg, #ffd060, #c48218); }
+.jn-colunas li.hoje .jn-colunas__trilho > span { background: repeating-linear-gradient(to top, var(--mundo-ouro, #f0c46a) 0 9px, transparent 9px 12px); }
+.jn-colunas li.hoje .jn-colunas__trilho > b { color: var(--ouro-texto); }
 .jn-sessoes { display: grid; gap: 0.35rem; margin: 0; padding: 0.7rem 0 0; list-style: none; border-top: 1px solid var(--traco); }
 .jn-sessoes li { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr) auto; gap: 0.6rem; align-items: baseline; font-size: var(--meta); }
 .jn-sessoes__quando { color: var(--ardosia); }
@@ -316,7 +323,7 @@
 .jn-numeros dd { font-size: 2.6rem; }
 .jn-celula { gap: 1rem; padding: 1.6rem 1.75rem 1.75rem; }
 .jn-celula__titulo { font-size: var(--corpo); letter-spacing: -0.005em; }
-.jn-colunas__trilho { height: 76px; }
+.jn-colunas__trilho { height: 80px; }
 
 /* Conquistas: o emblema dentro de um anel que enche conforme o progresso (o número também aparece, não só a cor). */
 .jn-quase li { grid-template-columns: auto minmax(0, 1fr) auto; }
