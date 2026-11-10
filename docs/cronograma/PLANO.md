@@ -227,3 +227,12 @@ Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoque
     `planos_estudo.opcoes` (sem SQL novo) e nascem desligadas; `normalizarPlano` confere a linha guardada em qualquer
     formato antigo sem apagar nada. Teste: `fixtures/testar_cronograma_roteiro.mjs`, que compara seis planos em formato
     antigo com os números gravados pelo motor anterior (`fixtures/cronograma_formato_antigo.json`; não regravar).
+62. [x] **Cronogramas da Mão (ingresso e título), 10/11/2026** (pedido do Tales; a arte deles não mudou):
+    - **Todas as questões aparecem.** O acervo da mão cresce toda semana: o tempo por dia deixou de cortar o plano
+      (`metaNormal` é o que falta dividido pelos dias; `tetoAtivo` só avisa que o dia passa do tempo marcado). Quem já
+      tinha fechado o plano recebe as questões novas nos dias que faltam, e na **reta final** elas também são
+      distribuídas e entram inteiras na sessão do dia. Com a data da prova vencida, a página oferece as que faltam.
+    - Aviso "Entraram N questões novas no seu plano" (contagem guardada por prova e cobertura).
+    - **Resumos do dia**: a mesma regra do TEOT (`resumosDoDia`), num bloco "Leia antes de começar" acima do cartão
+      de hoje; a caixa lateral continua acompanhando o dia tocado no calendário.
+    - Botões dourados chapados. Teste: `fixtures/testar_cronograma_mao.mjs`.

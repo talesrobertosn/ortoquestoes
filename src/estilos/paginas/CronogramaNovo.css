@@ -243,3 +243,14 @@
   .cn-resumo__tempo { padding: 0 0.7rem; }
   .cn-hoje { border-radius: var(--raio-cartao); }
 }
+
+/* ── Cronogramas da Mão (10/11/2026): os resumos do dia, o aviso de questões novas e os botões chapados ── */
+.cm-leitura { gap: var(--e-3); }
+.cm-leitura .cn-hoje__cabeca h2 { font-size: clamp(1.25rem, 1.1rem + 0.8vw, 1.5rem); }
+.cm-novas { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: var(--e-3); margin: 0; padding: var(--e-3) var(--e-4); border-radius: var(--raio-cartao); background: var(--ouro-veu); color: var(--texto); font-size: var(--corpo-menor); line-height: 1.5; }
+.cm-novas svg { color: var(--ouro-texto); }
+@media (max-width: 34rem) { .cm-novas { grid-template-columns: auto minmax(0, 1fr); } .cm-novas .botao { grid-column: 1 / -1; justify-self: start; } }
+.cm-encerrado__acoes { display: flex; flex-wrap: wrap; gap: var(--e-3); margin: var(--e-3) 0 0; }
+.cr .cp-botao--ouro, .cr .cp-onde__rapida--ouro { background: var(--mundo-ouro, #f0c46a); color: #1b1208; box-shadow: none; }
+.cr .cp-adiantar--destaque { background: var(--ouro-veu); }
+.cr .cp-adiantar--destaque .cp-adiantar__icone { background: var(--mundo-ouro, #f0c46a); color: #1b1208; }

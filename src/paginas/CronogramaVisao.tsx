@@ -367,7 +367,7 @@ function fraseDaFase(calculo: CalculoPlano): ReactNode {
 
 type Leituras = Record<string, { progresso: number; concluidoEm?: number | null } | undefined>
 
-function ListaResumos({ resumos, leituras, total }: { resumos: ResumoDoDia[]; leituras: Leituras; total: number }) {
+export function ListaResumos({ resumos, leituras, total }: { resumos: ResumoDoDia[]; leituras: Leituras; total: number }) {
   return (
     <ul className="cn-resumos">
       {resumos.map(({ resumo: r, questoes, assuntos }) => {
@@ -391,7 +391,7 @@ function ListaResumos({ resumos, leituras, total }: { resumos: ResumoDoDia[]; le
   )
 }
 
-function ResumosDoDia({ resumos, leituras, carregando, total, deHoje, data, area, frasesLidas }: { resumos: ResumoDoDia[]; leituras: Leituras; carregando: boolean; total: number; deHoje: boolean; data: Date | null; area: { slug: string; nome: string } | null; frasesLidas: boolean }) {
+export function ResumosDoDia({ resumos, leituras, carregando, total, deHoje, data, area, frasesLidas }: { resumos: ResumoDoDia[]; leituras: Leituras; carregando: boolean; total: number; deHoje: boolean; data: Date | null; area: { slug: string; nome: string } | null; frasesLidas: boolean }) {
   if (!total) return <p className="cn-nota">Sem questões novas agendadas: aproveite para reler um resumo na <a href={href('/resumos')}>Biblioteca</a>.</p>
   if (carregando) return <p className="cn-nota" aria-busy="true">Procurando os resumos deste dia…</p>
   if (!resumos.length) return <>

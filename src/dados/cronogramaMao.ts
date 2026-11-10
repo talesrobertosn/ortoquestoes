@@ -204,7 +204,10 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   const naDificil = calendario.filter((d) => d.estudo && !d.reta && d.dificil).length * DIA_MINIMO
   const metaBase = antesDaReta ? Math.ceil(Math.max(0, pendentes - naDificil) / antesDaReta) : pendentes
   const teto = Math.round(capacidadeDia * 1.25)
-  const metaNormal = Math.max(Math.min(5, pendentes), Math.min(teto, metaBase || 0))
+  // Tales, 10/11/2026: o acervo da mão cresce toda semana e a pessoa tem de ver todas as questões possíveis, "mesmo que
+  // tenha várias no dia". O tempo escolhido deixou de cortar o plano: a meta é o que falta dividido pelos dias; quando
+  // isso passa do tempo marcado, `tetoAtivo` avisa a página, mas nada fica de fora.
+  const metaNormal = Math.max(Math.min(5, pendentes), metaBase || 0)
   const ehSimulado = (data: string, estudo: boolean) => estudo && diasEntre(config.criadoEm, data) > 0 && diasEntre(config.criadoEm, data) % INTERVALO_SIMULADO === 0
 
   // revisão: erros com pelo menos 3 dias, dos assuntos do plano, os mais importantes primeiro
@@ -218,10 +221,32 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   const inicioPassada: Partial<Record<PassadaMao, string>> = {}
   let idsHoje: string[] = [], revisaoHoje = 0, fimMaisCai: string | null = null
   let credito = creditoAnterior
+  /** Tira da fila as próximas `quantas` questões novas, na ordem das passadas e da prioridade. */
+  const tirarDaFila = (quantas: number, data: string): ParteDia[] => {
+    const partes: ParteDia[] = []
+    let falta = quantas
+    for (const f of filas) {
+      if (falta <= 0) break
+      if (!f.fila.length) continue
+      const pega = f.fila.splice(0, falta)
+      partes.push({ nome: f.nome, area: f.area, n: pega.length, passada: f.passada, ids: pega }); falta -= pega.length
+      if (!inicioPassada[f.passada]) inicioPassada[f.passada] = data
+      if (f.passada === 1 && !filas.some((x) => x.passada === 1 && x.fila.length)) fimMaisCai = fimMaisCai ?? data
+    }
+    return partes
+  }
   for (const c of calendario) {
     let dia: DiaMao
     if (!c.estudo) dia = { data: c.data, tipo: 'folga', n: 0, temas: [], partes: [] }
-    else if (c.reta) dia = { data: c.data, tipo: 'reta-final', n: capacidadeDia, temas: ['Erros e assuntos de prioridade máxima'], partes: [] }
+    else if (c.reta) {
+      // Reta final: revisão, mais as questões que ainda não foram vistas (as que entraram no acervo depois de a
+      // pessoa fechar o plano, ou o que sobrou), divididas pelos dias de estudo que restam. Nada fica sem aparecer.
+      const restam = filas.reduce((s2, f) => s2 + f.fila.length, 0)
+      const diasReta = calendario.filter((x) => x.estudo && x.reta && x.data >= c.data).length
+      const partes = restam && diasReta ? tirarDaFila(Math.ceil(restam / diasReta), c.data) : []
+      const novas = partes.reduce((s2, x) => s2 + x.n, 0)
+      dia = { data: c.data, tipo: 'reta-final', n: capacidadeDia + novas, temas: ['Erros e assuntos de prioridade máxima', ...partes.map((x) => x.nome)], partes }
+    }
     else if (ehSimulado(c.data, c.estudo)) dia = { data: c.data, tipo: 'simulado', n: TAMANHO_SIMULADO, temas: [`Mini-simulado de ${TAMANHO_SIMULADO} questões`], partes: [] }
     else {
       const metaCheia = c.dificil ? Math.min(DIA_MINIMO, metaNormal) : metaNormal
@@ -231,16 +256,8 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
       // hoje: só o que falta da meta (as já feitas hoje saíram da fila)
       const resta = c.data === hoje ? Math.max(0, metaDia - feitasHoje) : metaDia
       const revisao = c.data === hoje ? Math.min(erros.length, Math.floor(metaDia / 4), resta) : 0
-      let falta = resta - revisao
-      const partes: ParteDia[] = []
-      for (const f of filas) {
-        if (falta <= 0) break
-        if (!f.fila.length) continue
-        const pega = f.fila.splice(0, falta)
-        partes.push({ nome: f.nome, area: f.area, n: pega.length, passada: f.passada, ids: pega }); falta -= pega.length
-        if (!inicioPassada[f.passada]) inicioPassada[f.passada] = c.data
-        if (f.passada === 1 && !filas.some((x) => x.passada === 1 && x.fila.length)) fimMaisCai = fimMaisCai ?? c.data
-      }
+      const falta = resta - revisao
+      const partes = tirarDaFila(falta, c.data)
       const novas = partes.flatMap((x) => x.ids)
       dia = { data: c.data, tipo: 'estudo', n: c.data === hoje ? Math.min(metaDia, novas.length + revisao + feitasHoje) : novas.length + revisao, temas: partes.map((x) => x.nome), partes, dificil: c.dificil, adiantado }
       if (c.data === hoje) { idsHoje = intercalar(novas, erros.slice(0, revisao)); revisaoHoje = revisao }
@@ -253,7 +270,12 @@ export function calcularPlanoMao(indice: Indice, respondidas: Respondidas, confi
   const proximos = agenda.slice(diaHoje ? 1 : 0)
   // o simulado do dia é sorteado uma vez por dia (a semente é o dia) e o que já foi feito hoje sai da lista
   if (diaHoje?.tipo === 'simulado') { idsHoje = sortearSimulado(temas, (id) => !respondidas[id] || feitoHoje(id), inicioHoje).filter((id) => !feitoHoje(id)); revisaoHoje = 0 }
-  if (diaHoje?.tipo === 'reta-final') { idsHoje = [...erros.slice(0, Math.ceil(capacidadeDia / 2)), ...temas.filter((t) => t.nivel === 4).flatMap((t) => t.pendentes)].slice(0, Math.max(0, capacidadeDia - feitasHoje)); revisaoHoje = Math.min(erros.length, Math.ceil(capacidadeDia / 2), idsHoje.length) }
+  if (diaHoje?.tipo === 'reta-final') {
+    // As novas do dia entram inteiras, depois da revisão: a sessão não as corta pelo tempo.
+    const novasHoje = diaHoje.partes.flatMap((x) => x.ids)
+    const revisar = erros.slice(0, Math.max(0, Math.ceil(capacidadeDia / 2) - feitasHoje))
+    idsHoje = [...revisar, ...novasHoje]; revisaoHoje = revisar.length
+  }
   const cortadas = filas.reduce((s2, f) => s2 + f.fila.length, 0)
   const maisCai = temas.filter((t) => t.passada === 1).reduce((s2, t) => s2 + t.ids.length, 0)
   const maisCaiFeitas = temas.filter((t) => t.passada === 1).reduce((s2, t) => s2 + t.feitas, 0)

@@ -38,7 +38,27 @@ try {
   // data mais perto: a meta sobe, mas no máximo 25% acima do tempo da pessoa
   const perto = m.calcularPlanoMao(indice, {}, cfg({ dataProva: m.somarDias(hoje, 30) }), AGORA)
   assert.ok(perto.metaHoje > p.metaHoje)
-  assert.ok(perto.metaHoje <= Math.round(perto.capacidadeDia * 1.25), 'meta passou do teto')
+  // Tales, 10/11/2026: nada fica de fora. O tempo marcado não corta mais o plano; a meta cobre tudo o que falta.
+  assert.equal(perto.cortadas, 0, 'sobrou questão sem dia')
+  assert.equal(perto.projecaoAlvo, 100)
+  assert.equal(perto.agenda.reduce((s2, d) => s2 + d.partes.reduce((s3, x) => s3 + x.n, 0), 0), perto.total, 'o plano agenda todas as questões')
+  assert.ok(perto.tetoAtivo && perto.metaHoje > Math.round(perto.capacidadeDia * 1.25), 'com pouco prazo o dia passa do tempo marcado, e a página avisa')
+  // Quem já fechou o plano e recebe questões novas no acervo: elas aparecem, inclusive na reta final.
+  {
+    const todas = p.temas.flatMap((t) => t.ids)
+    const novas = todas.slice(-37)
+    const fechado = Object.fromEntries(todas.slice(0, -37).map((id) => [id, { c: true, q: AGORA - 20 * 86400000 }]))
+    const depois = m.calcularPlanoMao(indice, fechado, cfg(), AGORA)
+    const agendadas = depois.agenda.flatMap((d) => d.partes.flatMap((x) => x.ids))
+    assert.deepEqual([...agendadas].sort(), [...novas].sort(), 'as questões novas entram no plano de quem já tinha fechado')
+    assert.ok(novas.some((id) => depois.idsHoje.includes(id)) || depois.hoje.tipo !== 'estudo', 'e já aparecem hoje')
+    const naReta = m.calcularPlanoMao(indice, fechado, cfg({ dataProva: m.somarDias(hoje, 6), criadoEm: m.somarDias(hoje, -60) }), AGORA)
+    assert.equal(naReta.hoje.tipo, 'reta-final')
+    const daReta = naReta.agenda.flatMap((d) => d.partes.flatMap((x) => x.ids))
+    assert.deepEqual([...daReta].sort(), [...novas].sort(), 'na reta final as questões novas também são distribuídas')
+    assert.equal(naReta.cortadas, 0)
+    assert.ok(naReta.hoje.partes.every((x) => x.ids.every((id) => naReta.idsHoje.includes(id))), 'a sessão de hoje na reta final traz as novas do dia inteiras')
+  }
   assert.ok(perto.projecao <= 100)
 
   // dia sem estudo: folga, nenhuma questão
@@ -73,7 +93,8 @@ try {
 
   // atraso: plano criado há 40 dias sem nada feito não joga tudo no dia de hoje
   const atrasado = m.calcularPlanoMao(indice, {}, cfg({ criadoEm: m.somarDias(hoje, -40), dataProva: m.somarDias(hoje, 45) }), AGORA)
-  assert.ok(atrasado.metaHoje <= Math.round(atrasado.capacidadeDia * 1.25))
+  // (o atraso é dividido por igual pelos dias que faltam; nada é cortado)
+  assert.ok(atrasado.metaHoje === atrasado.metaNormal && atrasado.metaHoje < atrasado.total / 5 && atrasado.cortadas === 0, `meta ${atrasado.metaHoje} de ${atrasado.total}`)
 
   // simulado a cada 14 dias e reta final nas duas últimas semanas
   const sim = m.calcularPlanoMao(indice, {}, cfg({ criadoEm: m.somarDias(hoje, -14) }), AGORA)
