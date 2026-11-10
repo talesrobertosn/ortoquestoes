@@ -22828,6 +22828,278 @@
    ]
   },
   {
+   "id": "rockwood10-outros-conceitos-basicos",
+   "versao": 1,
+   "titulo": "Outros temas de conceitos básicos: biomecânica das fraturas, cartilagem, tendão e clássicos de prova",
+   "especialidade": "conceitos-basicos",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025)",
+   "capitulo": "Capítulo 1 · Biomechanics of Fractures and Fracture Fixation, com as partes de cartilagem e tendão do Capítulo 2 · Bone, Cartilage, and Tendon Healing",
+   "resumo": "Dobrar a espessura da placa multiplica a rigidez por 8 e dobrar o diâmetro do fio por 16; titânio tem metade do módulo do aço e resistência máxima semelhante; tração dá fratura transversa por avulsão e a asa de borboleta começa na cortical oposta à carga; colo femoral osteoporótico preserva osso inferior e perde no posterossuperior; orifício só enfraquece a torção acima de 10% do diâmetro; defeito condral até 1 mm, degrau acima de 1,5 mm, reparo com colágeno I e III; tendão cede aos 8%, cresce até 17 anos, colágeno III nas rupturas, epitendão dirige o reparo; ACVR1 na fibrodisplasia ossificante; TINEL avança em SUNDERLAND 2 e 3; MSIS maior é fístula ou duas culturas; lágrima supra-acetabular; PONSETI cavo, adução, varo, equino; PAVLIK anterior flete e posterior abduz; navicular é o último do tarso.",
+   "acesso": "gratis",
+   "minutos": 44,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "material-e-estrutura-modulo-resistencia-e-moment",
+     "titulo": "Material e estrutura: módulo, resistência e momento de inércia",
+     "radar": "clinico"
+    },
+    {
+     "id": "cargas-e-padroes-de-fratura",
+     "titulo": "Cargas e padrões de fratura",
+     "radar": "clinico"
+    },
+    {
+     "id": "osteoporose-e-concentradores-de-tensao",
+     "titulo": "Osteoporose e concentradores de tensão",
+     "radar": "clinico"
+    },
+    {
+     "id": "cartilagem-articular-por-que-nao-cicatriza-e-o-q",
+     "titulo": "Cartilagem articular: por que não cicatriza e o que tolera",
+     "radar": "clinico"
+    },
+    {
+     "id": "tendao-estrutura-mecanica-e-reparo",
+     "titulo": "Tendão: estrutura, mecânica e reparo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ossificacao-heterotopica-do-receptor-acvr1-ao-co",
+     "titulo": "Ossificação heterotópica: do receptor ACVR1 ao coma da criança",
+     "radar": "confirmado"
+    },
+    {
+     "id": "lesao-de-nervo-periferico-sunderland-e-o-sinal-d",
+     "titulo": "Lesão de nervo periférico: SUNDERLAND e o sinal de TINEL",
+     "radar": "confirmado"
+    },
+    {
+     "id": "infeccao-criterios-da-msis-paroniquia-cronica-e-",
+     "titulo": "Infecção: critérios da MSIS, paroníquia crônica e HIV na sala de cirurgia",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fixador-externo-supra-acetabular-e-o-sinal-da-la",
+     "titulo": "Fixador externo supra-acetabular e o sinal da lágrima",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coluna-angulo-de-escorregamento-e-parafusos-de-m",
+     "titulo": "Coluna: ângulo de escorregamento e parafusos de massa lateral",
+     "radar": "confirmado"
+    },
+    {
+     "id": "ortopedia-pediatrica-de-bolso-pe-torto-pavlik-e-",
+     "titulo": "Ortopedia pediátrica de bolso: pé torto, PAVLIK e ossificação do tarso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "articulacao-acromioclavicular-e-os-tipos-de-arti",
+     "titulo": "Articulação acromioclavicular e os tipos de articulação sinovial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "conceitos-basicos-0415",
+    "conceitos-basicos-0138",
+    "conceitos-basicos-0281",
+    "joelho-0191",
+    "mao-0466",
+    "conceitos-basicos-0412",
+    "trauma-0423",
+    "conceitos-basicos-0311",
+    "conceitos-basicos-0312",
+    "conceitos-basicos-0314",
+    "conceitos-basicos-0313",
+    "conceitos-basicos-0316",
+    "conceitos-basicos-0317",
+    "pediatria-0275",
+    "conceitos-basicos-0268"
+   ],
+   "treino": [
+    "conceitos-basicos-0324",
+    "conceitos-basicos-0326",
+    "conceitos-basicos-0327",
+    "conceitos-basicos-0328",
+    "conceitos-basicos-0333",
+    "conceitos-basicos-0337",
+    "conceitos-basicos-0352",
+    "conceitos-basicos-0350",
+    "conceitos-basicos-0351",
+    "conceitos-basicos-0358",
+    "conceitos-basicos-0354",
+    "conceitos-basicos-0355",
+    "conceitos-basicos-0356",
+    "conceitos-basicos-0359",
+    "conceitos-basicos-0343"
+   ],
+   "subtemas": [
+    "Outros temas de conceitos básicos"
+   ]
+  },
+  {
+   "id": "rockwood10-outros-trauma",
+   "versao": 1,
+   "titulo": "Outros temas de trauma: biomecânica e implantes, partes moles e projéteis, fratura patológica, periprotéticas",
+   "especialidade": "trauma",
+   "livro": "Rockwood and Green's Fractures in Adults",
+   "edicao": "10ª edição (2025)",
+   "capitulo": "Capítulo 12 · Principles and Biomechanics of Internal Fixation",
+   "resumo": "Osso cortical 50% mais resistente em compressão do que em tensão; parafuso de tração perpendicular ao traço, não à diáfise; haste canulada tem espaço morto e infecta mais; articular com estabilidade absoluta e metáfise em ponte; TSCHERNE fechada (abrasão profunda contaminada é grau II); projétil de baixa velocidade sem desbridamento formal e alta velocidade sem fechar a pele; GLASGOW com olhos, fala e motor; avulsão isolada do trocanter menor e fratura em banana são metástase até prova em contrário; Vancouver A com implante estável sem cirurgia; AOSpine B2; LACHMAN é o mais sensível.",
+   "acesso": "gratis",
+   "minutos": 44,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-osso-como-material-compressao-tensao-e-o-desen",
+     "titulo": "O osso como material: compressão, tensão e o desenho da fratura",
+     "radar": "confirmado"
+    },
+    {
+     "id": "parafuso-de-tracao-perpendicular-a-que",
+     "titulo": "Parafuso de tração: perpendicular a quê?",
+     "radar": "confirmado"
+    },
+    {
+     "id": "haste-intramedular-e-infeccao-solida-ou-canulada",
+     "titulo": "Haste intramedular e infecção: sólida ou canulada, aço ou titânio",
+     "radar": "confirmado"
+    },
+    {
+     "id": "estabilidade-absoluta-e-relativa-na-mesma-fratur",
+     "titulo": "Estabilidade absoluta e relativa na mesma fratura: o fêmur distal C2",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fixador-externo-quanto-de-rigidez-a-consolidacao",
+     "titulo": "Fixador externo: quanto de rigidez a consolidação tolera",
+     "radar": "confirmado"
+    },
+    {
+     "id": "partes-moles-na-fratura-fechada-a-classificacao-",
+     "titulo": "Partes moles na fratura fechada: a classificação de TSCHERNE",
+     "radar": "confirmado"
+    },
+    {
+     "id": "projetil-de-arma-de-fogo-a-energia-decide-a-cond",
+     "titulo": "Projétil de arma de fogo: a energia decide a conduta",
+     "radar": "confirmado"
+    },
+    {
+     "id": "amputacao-aberta-guilhotina-ou-retalhos-invertid",
+     "titulo": "Amputação aberta: guilhotina ou retalhos invertidos",
+     "radar": "confirmado"
+    },
+    {
+     "id": "escala-de-coma-de-glasgow",
+     "titulo": "Escala de coma de GLASGOW",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fratura-patologica-o-trocanter-menor-e-a-fratura",
+     "titulo": "Fratura patológica: o trocanter menor e a fratura em banana",
+     "radar": "confirmado"
+    },
+    {
+     "id": "femur-curvatura-parafuso-deslizante-no-lado-esqu",
+     "titulo": "Fêmur: curvatura, parafuso deslizante no lado esquerdo e diáfise segmentar",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fraturas-periproteticas-e-interproteticas",
+     "titulo": "Fraturas periprotéticas e interprotéticas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cotovelo-duas-placas-no-umero-distal-e-a-exposic",
+     "titulo": "Cotovelo: duas placas no úmero distal e a exposição do rádio proximal",
+     "radar": "confirmado"
+    },
+    {
+     "id": "antebraco-e-radio-distal-pseudartrose-haste-fios",
+     "titulo": "Antebraço e rádio distal: pseudartrose, haste, fios e o método de ULSON",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fratura-do-umero-proximal-com-luxacao-reduzir-se",
+     "titulo": "Fratura do úmero proximal com luxação: reduzir sem deslocar o colo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "exame-do-ligamento-cruzado-anterior-o-teste-de-l",
+     "titulo": "Exame do ligamento cruzado anterior: o teste de LACHMAN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coluna-toracolombar-a-classificacao-aospine-e-o-",
+     "titulo": "Coluna toracolombar: a classificação AOSpine e o tipo B2",
+     "radar": "confirmado"
+    },
+    {
+     "id": "placa-de-crescimento-o-que-cada-zona-faz",
+     "titulo": "Placa de crescimento: o que cada zona faz",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "trauma-0559",
+    "trauma-1157",
+    "trauma-1119",
+    "trauma-1112",
+    "trauma-1111",
+    "trauma-1135",
+    "trauma-1198",
+    "trauma-1143",
+    "trauma-1184",
+    "trauma-1186",
+    "trauma-1185",
+    "trauma-1164",
+    "tumores-0136",
+    "tumores-0264",
+    "trauma-1130",
+    "trauma-1127",
+    "trauma-1201",
+    "trauma-1203",
+    "trauma-1133",
+    "ombro-cotovelo-0304",
+    "trauma-1149",
+    "trauma-1189",
+    "trauma-1114",
+    "trauma-1180",
+    "trauma-1176",
+    "trauma-1054",
+    "trauma-1205",
+    "trauma-1199"
+   ],
+   "treino": [
+    "trauma-1235",
+    "trauma-1233"
+   ],
+   "subtemas": [
+    "Outros temas de trauma"
+   ]
+  },
+  {
    "id": "rockwood10-politrauma",
    "versao": 1,
    "titulo": "Politrauma e controle de danos",
