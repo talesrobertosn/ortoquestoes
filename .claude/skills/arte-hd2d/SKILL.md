@@ -22,6 +22,25 @@ Antes de pintar, leia `DESIGN.md` (raiz): a arte é a camada colorida; a interfa
    só quando ele autorizar ("pode subir").
 5. **Ele pediu brainstorm?** Apresente e espere. Senão, decida e faça (brainstorm interno, como em CLAUDE.md).
 
+## O padrão de riqueza (Tales, 10/11/2026: "a arte é o que nós vendemos; nunca preguiçosa")
+
+A página Indique e ganhe é a referência: `scripts/gerar_arte_indicar.py`, `scripts/gerar_cena_tesouro.py` e
+`scripts/gerar_dragao.py`. Toda arte nova do site segue o mesmo nível, em tudo, não só no elemento principal:
+
+1. **Nada simples.** Nenhum objeto é uma forma chapada com uma cor. Cada um tem estrutura (o que é, de que é feito,
+   como se prende), 5 a 7 tons, quina de luz e de sombra, textura do material (grão, veio, trançado, rebite) e
+   desgaste (rachadura, lasca, musgo). Um pilar é capitel, friso, relevo, fuste tijolo por tijolo e base.
+2. **A página inteira é a obra.** Fundo, margens, molduras, botões, contadores e ícones recebem arte no mesmo estilo.
+   Não sobra bloco liso, canto vazio nem enfeite feito só de degradê ou sombra de CSS.
+3. **Luz calculada.** Toda fonte de luz (tocha, fogo, ouro) ilumina o que está perto, na própria pintura.
+4. **Responsivo de verdade.** Peças que esticam são feitas para esticar (topo, miolo que se repete, base; moldura de
+   9 fatias). Conferir em tela estreita, 1440 e acima de 2000 de largura.
+5. **Personagem vivo.** Mascote novo nasce com 16 quadros por animação, entrada e saída próprias (decolar, pousar) e
+   gestos de espera encadeados; nunca fica parado num quadro só. Tudo o que ele usa no palco tem posto que faz
+   sentido (pousa em cima de algo, dorme em cima de algo), sem flutuar nem cobrir texto ou botão.
+6. **Olhar antes de entregar.** Ampliar a arte, criticar com honestidade e refazer o que estiver "meia boca". Se uma
+   peça parece feita em cinco minutos, ela não entra.
+
 ## O estilo (referências vivas)
 
 Leia os scripts antes de pintar qualquer coisa nova e copie a técnica (cada script é autossuficiente):
@@ -29,6 +48,7 @@ Leia os scripts antes de pintar qualquer coisa nova e copie a técnica (cada scr
 | Cenário | Script | Saída |
 |---|---|---|
 | Acampamento do topo (3 horas do dia) | `scripts/gerar_cena_inicio.py` | `public/pixel/inicio/cena-{manha,tarde,noite}[-960].webp` |
+| Praça do Pinheiro (cenário do topo, 3 horas, com um toque de Natal e a visita do dragão) | `scripts/cenarios/inicio_praca.py` | `public/pixel/inicio/cena-praca-{manha,tarde,noite}[-960].webp` |
 | Gabinete de anatomia (Atlas 3D) | `scripts/gerar_cena_atlas.py` | `secao-atlas[-960].webp` |
 | Salão da biblioteca (Resumos) | `scripts/gerar_cena_biblioteca.py` | `secao-biblioteca[-960].webp` |
 | Arena e salão dos troféus | `scripts/gerar_cena_arena.py` | `secao-arena`, `secao-trofeus` |

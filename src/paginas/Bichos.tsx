@@ -36,6 +36,7 @@ const RARIDADES: Raridade[] = [
   { id: 'meia-noite', nome: 'O gato da meia-noite', pista: 'Abra a página inicial entre meia-noite e uma da manhã.', de: 'gato' },
   { id: 'tesouro-espada', nome: 'A espada do tesouro', pista: 'Na página Indique e ganhe, toque na espada no alto do ouro.', de: 'esqueleto' },
   { id: 'dragao-fogo', nome: 'O fogo do dragão', pista: 'Na página Indique e ganhe, toque no dragão em cima do ouro.', de: 'esqueleto' },
+  { id: 'dragao-praca', nome: 'O dragão na praça', pista: 'Na Praça do Pinheiro da página inicial, o dragão pousa de vez em quando perto da fogueira.', de: 'esqueleto' },
   { id: 'gato-recrutador', nome: 'O gato recrutador', pista: 'Na página Indique e ganhe, toque três vezes no gato.', de: 'gato' },
 ]
 

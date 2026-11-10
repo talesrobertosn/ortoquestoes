@@ -2,7 +2,8 @@ import { createPortal } from 'react-dom'
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type CSSProperties, type RefObject } from 'react'
 import { recurso } from '../../../config'
 import { Mascote } from '../../mascote/Mascote'
-import { folhaGato, type IdLinhaGato } from '../../mascote/sprites'
+import { folhaGato, type IdLinhaDragao, type IdLinhaGato } from '../../mascote/sprites'
+import { DURACAO_DRAGAO, DragaoPixel } from '../../mascote/DragaoPixel'
 import { CorujaPixel, type EstadoCoruja } from '../../../biblioteca/sala/CorujaPixel'
 import { CONCEITOS_CORUJA, FALAS_ESPADA, FALAS_ESPADA_APAGADA, FALAS_GATO, proximaFala } from '../../mascote/falasBichos'
 import { FALAS_PAUSA_APAGADA, FALAS_PAUSA_FOGUEIRA } from '../../mascote/falas'
@@ -367,6 +368,61 @@ type PropsCena = {
 }
 
 /** A escolha muda só na virada da faixa; o palco novo reinicia bichos e balões sem coordenadas antigas. */
+/** Largura do quadro do dragão na pintura (px da arte de 480 x 200; o quadro é 2:1, pés a 93% da altura, corpo a 73% da largura). */
+const DRAGAO_W = 132
+
+/**
+ * A visita do dragão (Tales, 10/11/2026: "eventualmente o dragão aparece, mas não sempre"): numa visita em cada cinco
+ * às cenas que têm lugar para ele, o dragão do tesouro chega voando pelo alto, pousa no chão livre, olha em volta,
+ * sopra fogo na direção da fogueira, boceja e vai embora. Um toque e ele sopra de novo. Com "menos movimento" não
+ * vem. Prévia: ?dragao=1 no endereço.
+ */
+function DragaoDaCena({ ponto }: { ponto: { x: number; y: number } }) {
+  const [fase, definirFase] = useState<'longe' | 'chegando' | 'pousado' | 'saindo'>('longe')
+  const [linha, definirLinha] = useState<IdLinhaDragao>('voando')
+  const relogios = useRef<number[]>([])
+  useEffect(() => {
+    const depois = (f: () => void, ms: number) => { relogios.current.push(window.setTimeout(f, ms)) }
+    let forcado = false
+    try { forcado = /[?&]dragao=1/.test(location.search + location.hash) } catch { /* sem janela */ }
+    const parado = typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches
+    if (parado || !(forcado || Math.random() < 0.2)) return
+    let t = forcado ? 1200 : 6000
+    depois(() => { definirFase('chegando'); definirLinha('voando') }, t); t += 1700
+    depois(() => { definirFase('pousado'); definirLinha('pousando') }, t); t += DURACAO_DRAGAO.pousando * 1000
+    depois(() => {
+      definirLinha('parado')
+      try {
+        const album: string[] = JSON.parse(localStorage.getItem('bichos:album') ?? '[]')
+        if (!album.includes('dragao-praca')) localStorage.setItem('bichos:album', JSON.stringify([...album, 'dragao-praca']))
+      } catch { /* sem armazenamento */ }
+    }, t); t += 1600
+    for (const gesto of ['olhando', 'fogo', 'bocejando', 'olhando', 'rugindo'] as const) {
+      const dur = DURACAO_DRAGAO[gesto] * 1000
+      depois(() => definirLinha((l) => (l === 'parado' ? gesto : l)), t)
+      depois(() => definirLinha((l) => (l === gesto ? 'parado' : l)), t + dur + 150)
+      t += dur + 2600
+    }
+    depois(() => definirLinha('decolando'), t); t += DURACAO_DRAGAO.decolando * 1000
+    depois(() => { definirFase('saindo'); definirLinha('voando') }, t); t += 1700
+    depois(() => definirFase('longe'), t)
+    const todos = relogios.current
+    return () => todos.forEach((r) => window.clearTimeout(r))
+  }, [])
+  const tocar = () => {
+    if (fase !== 'pousado' || linha !== 'parado') return
+    definirLinha('fogo')
+    relogios.current.push(window.setTimeout(() => definirLinha((l) => (l === 'fogo' ? 'parado' : l)), DURACAO_DRAGAO.fogo * 1000 + 200))
+  }
+  if (fase === 'longe') return null
+  return (
+    <span className={`hd-dragao hd-dragao--${fase}`} style={{ left: `${((ponto.x - DRAGAO_W * 0.732) / 480) * 100}%`, top: `${((ponto.y - DRAGAO_W * 0.464) / 200) * 100}%`, width: `${(DRAGAO_W / 480) * 100}%` }}>
+      <DragaoPixel estado={linha} />
+      <button type="button" className="hd-dragao__toque" onClick={tocar} aria-label="O dragão do tesouro: tocar para ele soltar fogo" />
+    </span>
+  )
+}
+
 export function CenaDiorama(props: PropsCena) {
   const [cenario, definirCenario] = useState(() => cenarioDaHora())
   useEffect(() => {
@@ -770,6 +826,7 @@ function CenaNoPalco({ linhaFogo, periodo, descanso = false, festa = 0, cenario 
         {estrela > 0 && <span className="hd-estrela-cadente" aria-hidden="true" />}
         <DiretorDeCena palco={palco} periodo={periodo} cenario={cenario.id} controles={controles} />
         <CorujaDoAcampamento key={cenario.id} poleiros={cenario.coruja} luzes={luzes} periodo={periodo} />
+        {cenario.dragao && <DragaoDaCena key={`dragao-${cenario.id}`} ponto={cenario.dragao} />}
         <span className={`hd-particulas hd-particulas--${cenario.particulas}`} aria-hidden="true">{particulas.map((p, i) => <i key={i} style={{ left: `${p.x}%`, top: `${p.y}%`, '--t': `${p.t}s`, '--d': `${p.d}s` } as CSSProperties} />)}</span>
       </div>
     </div>

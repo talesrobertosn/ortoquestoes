@@ -126,7 +126,8 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
       const r = el.getBoundingClientRect(), b = base.getBoundingClientRect(), w = largura()
       const ninho = (el as HTMLElement).dataset.poleiro === 'ninho'
       const x = Math.min(b.width - w * 0.27, Math.max(w * 0.27, r.left - b.left + r.width * f))
-      return { x: ninho ? r.left - b.left + r.width / 2 : x, y: (ninho ? r.bottom : r.top) - b.top }
+      // Nos blocos, os pés ficam em cima da moldura de ouro, que passa 10 px da borda do bloco.
+      return { x: ninho ? r.left - b.left + r.width / 2 : x, y: (ninho ? r.bottom : r.top - 9) - b.top }
     }
     const ninho = base.querySelector('[data-poleiro="ninho"]')
     if (!ninho) return

@@ -10,7 +10,7 @@ import type { IdLinhaGato } from '../../mascote/sprites'
 export type PoseGato = 'repouso' | Extract<IdLinhaGato, 'sentado' | 'observando' | 'fogueira'>
 export type Particulas = 'vagalumes' | 'faiscas' | 'neve' | 'estrelas'
 export type Cenario = {
-  id: 'acampamento' | 'forja' | 'cais' | 'observatorio' | 'neve' | 'abrigo'
+  id: 'acampamento' | 'forja' | 'cais' | 'observatorio' | 'neve' | 'abrigo' | 'praca'
   /** Prefixo dos arquivos em public/pixel/inicio/: `${arquivo}-${periodo}[-960].webp`. */
   arquivo: string
   /** Cantos do chão por onde o gato passeia: canto de cima à esquerda da caixa do gato (36 x 22 px da arte). */
@@ -27,6 +27,8 @@ export type Cenario = {
   fogo?: readonly [number, number]
   mascote?: { x: number; y: number; w: number; h: number }
   posePadrao?: 'fogueira'
+  /** Onde o dragão pousa quando visita a cena (o ponto dos pés, em pixels da pintura); só os cenários que deixam esse chão livre. */
+  dragao?: { x: number; y: number }
 }
 
 export const CENARIOS: readonly Cenario[] = [
@@ -64,6 +66,14 @@ export const CENARIOS: readonly Cenario[] = [
     fogo: [274, 151], mascote: { x: 293, y: 103, w: 42, h: 60 }, posePadrao: 'fogueira',
     gato: [{ x: 222, y: 149, pose: 'fogueira' }, { x: 285, y: 170, pose: 'sentado' }, { x: 342, y: 169, pose: 'repouso' }],
     coruja: [{ x: 370, y: 101 }, { x: 207, y: 98 }, { x: 348, y: 132 }],
+  },
+  {
+    // A Praça do Pinheiro (10/11/2026, scripts/cenarios/inicio_praca.py): a praça de pedra da vila, com um toque de Natal.
+    id: 'praca', arquivo: 'cena-praca', particulas: 'vagalumes',
+    gato: [{ x: 222, y: 153, pose: 'fogueira' }, { x: 174, y: 139, pose: 'sentado' }, { x: 262, y: 170, pose: 'repouso' }, { x: 330, y: 164, pose: 'observando' }, { x: 204, y: 174, pose: 'repouso' }],
+    // O telhadinho do poço, o encosto do banco, o caixote, o presente e a pilha de lenha.
+    coruja: [{ x: 166, y: 102 }, { x: 198, y: 150 }, { x: 213, y: 114 }, { x: 396, y: 150 }, { x: 308, y: 162 }],
+    dragao: { x: 392, y: 174 },
   },
 ]
 
