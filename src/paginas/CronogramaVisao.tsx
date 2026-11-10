@@ -157,7 +157,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
 
     <div className="cg-grade">
       {/* ── 2. Hoje ── */}
-      <section className="cg-caixa cg-hoje cg-col-7" aria-labelledby="cg-hoje-titulo" style={area(principal?.slug ?? '')}>
+      <section className="cg-caixa cg-hoje" aria-labelledby="cg-hoje-titulo" style={area(principal?.slug ?? '')}>
         <header className="cg-caixa__cabeca">
           <div><p className="cg-rotulo">Hoje · {F_HOJE.format(hoje)}</p><h2 id="cg-hoje-titulo"><i className="cg-ponto" aria-hidden="true" />{tituloHoje}</h2></div>
           {conteudo && calculo.metaDiaria > 0 && <Anel pct={Math.min(100, (calculo.feitasHoje / calculo.metaDiaria) * 100)} rotulo={`${Math.min(calculo.feitasHoje, calculo.metaDiaria)} de ${calculo.metaDiaria} questões de hoje`}><b>{Math.min(calculo.feitasHoje, calculo.metaDiaria)}</b><small>de {calculo.metaDiaria}</small></Anel>}
@@ -193,9 +193,11 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
         </div>}
       </section>
 
-      {/* ── 3. Ao lado de hoje: próximos dias, extras e a previsão ── */}
-      <div className="cg-col-5 cg-pilha">
-        {conteudo && <section className="cg-caixa" aria-label="Próximos dias">
+      {/* ── 3. O calendário: a semana, com o mês a um toque ── */}
+      <Mes plano={plano} calculo={calculo} historico={historico} biblioteca={biblioteca} indice={indicePlano} leituras={leituras} minutos={minutos} botaoHoje={Acao('cg-ir--claro')} aoPuxar={podeAdiantar ? aoPuxar : undefined} salvando={hub?.salvandoOpcoes} />
+
+      {/* ── 4. Três caixas menores: próximos dias, extras e a previsão ── */}
+        {conteudo && <section className="cg-caixa cg-col-4" aria-label="Próximos dias">
           <p className="cg-rotulo">Próximos dias</p>
           <ol className="cg-proximos">{calculo.dias.slice(1, 6).map((d) => <li key={d.data.getTime()} className={d.tipo === 'folga' ? 'cg-proximos__folga' : ''}>
             <span className="cg-proximos__dia"><b>{SEM3[d.data.getDay()]}</b>{curta(d.data)}</span>
@@ -206,7 +208,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
           {podeAdiantar && <div className="cg-linha cg-linha--sep"><span className="cg-nota">Adiantar hoje:</span>{[10, 20, 30].map((n) => <button key={n} type="button" className="cg-mini" disabled={hub?.salvandoOpcoes} onClick={() => aoAdiantar!(n)}>+{n}</button>)}{calculo.adiantarFalta > 0 && hub && <button type="button" className="cg-mini" onClick={hub.aoCancelarAdiantar}>cancelar</button>}<span className="cg-nota">{calculo.extraHoje > 0 ? `${calculo.extraHoje} feitas a mais hoje` : 'sai dos próximos dias'}</span></div>}
         </section>}
 
-        {hub && conteudo && <section className="cg-caixa" aria-label="Mais para hoje">
+        {hub && conteudo && <section className="cg-caixa cg-col-4" aria-label="Mais para hoje">
           <p className="cg-rotulo">Mais para hoje <small>não conta na meta</small></p>
           <ul className="cg-extras">
             <li><Icone nome="reiniciar" tamanho={16} /><span><strong>{hub.revisoesHoje ? plural(hub.revisoesHoje, 'revisão do dia', 'revisões do dia') : 'Revisões em dia'}</strong><small>{hub.revisoesHoje ? `revisão espaçada · cerca de ${formatarTempo(hub.revisoesHoje * minutos)}` : 'nada vence hoje na revisão espaçada'}</small></span>{hub.revisoesHoje > 0 && <a className="cg-mini" href={href('/revisao')}>revisar</a>}</li>
@@ -217,14 +219,10 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
           </ul>
         </section>}
 
-        <section className="cg-caixa" aria-label="Previsão no seu ritmo">
+        <section className={"cg-caixa " + (conteudo ? "cg-col-4" : "")} aria-label="Previsão no seu ritmo">
           <p className="cg-rotulo">Previsão no seu ritmo</p>
           <Previsao previsao={previsao} calculo={calculo} minutos={minutos} />
         </section>
-      </div>
-
-      {/* ── 4. O mês ── */}
-      <Mes plano={plano} calculo={calculo} historico={historico} biblioteca={biblioteca} indice={indicePlano} leituras={leituras} minutos={minutos} botaoHoje={Acao('cg-ir--claro')} aoPuxar={podeAdiantar ? aoPuxar : undefined} salvando={hub?.salvandoOpcoes} />
 
       {/* ── 5. Os gráficos ── */}
       <section className="cg-caixa cg-col-6" aria-labelledby="cg-g-ritmo">
@@ -236,10 +234,18 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
         <GraficoProgresso historico={historico} plano={plano} calculo={calculo} previsao={previsao} />
       </section>
 
-      <section className="cg-caixa cg-col-6" aria-labelledby="cg-g-acerto">
+      <div className="cg-col-6 cg-pilha">
+      <section className="cg-caixa" aria-labelledby="cg-g-acerto">
         <h2 className="cg-caixa__titulo" id="cg-g-acerto">Acerto por dia <small>questões novas dos últimos 14 dias · a linha tracejada é a sua média</small></h2>
         <GraficoAcerto historico={historico} media={media} />
       </section>
+        <Resumo14 historico={historico} plano={plano} minutos={minutos} />
+        {hub && <section className="cg-caixa" aria-labelledby="cg-const-titulo">
+          <h2 className="cg-caixa__titulo" id="cg-const-titulo">Constância <small>{hub.constancia.aderencia !== null ? `${hub.constancia.aderencia}% dos dias de estudo cumpridos` : 'os últimos 14 dias'}</small></h2>
+          <ol className="cg-const">{hub.constancia.ultimos.map((d) => <li key={d.dia.getTime()} className={`cg-const--${d.estado}`} title={`${SEM3[d.dia.getDay()]} ${curta(d.dia)}: ${d.estado === 'folga' ? 'folga' : d.estado === 'antes' ? 'antes do plano' : `${d.n} questões`}`}><i aria-hidden="true" /><small>{SEM3[d.dia.getDay()][0]}</small><span className="so-leitor">{curta(d.dia)}: {d.estado === 'folga' ? 'folga' : `${d.n} questões`}</span></li>)}</ol>
+          <p className="cg-nota"><b>{hub.elogio.titulo}.</b> {hub.elogio.texto} Dia com {hub.constancia.minimo}+ questões conta; folga não quebra.</p>
+        </section>}
+      </div>
       <section className="cg-caixa cg-col-6" aria-labelledby="cg-g-falta">
         <h2 className="cg-caixa__titulo" id="cg-g-falta">O que ainda vem, por área <small>{calculo.restante} questões novas até a reta final · cerca de {formatarTempo(calculo.restante * minutos)} de estudo</small></h2>
         <FaltaPorArea calculo={calculo} minutos={minutos} />
@@ -259,11 +265,6 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
             <button type="button" className="cg-mini" onClick={() => hub.aoTreinarFoco(r.area, r.foco)}>treinar</button>
           </li>)}</ul> : <p className="cg-nota">Nenhum assunto de prioridade alta abaixo de 65% (com pelo menos 3 respostas). Continue.</p>}
           {hub.cegos.length > 0 && <p className="cg-nota cg-linha--sep"><b>Ainda sem nenhuma resposta:</b> {hub.cegos.slice(0, 4).map((c, i) => <span key={c.area.id + c.foco.nome}>{i > 0 && ' · '}<button type="button" className="cg-link" onClick={() => hub.aoTreinarFoco(c.area, c.foco)}>{c.foco.nome}</button></span>)}</p>}
-        </section>}
-        {hub && <section className="cg-caixa" aria-labelledby="cg-const-titulo">
-          <h2 className="cg-caixa__titulo" id="cg-const-titulo">Constância <small>{hub.constancia.aderencia !== null ? `${hub.constancia.aderencia}% dos dias de estudo cumpridos` : 'os últimos 14 dias'}</small></h2>
-          <ol className="cg-const">{hub.constancia.ultimos.map((d) => <li key={d.dia.getTime()} className={`cg-const--${d.estado}`} title={`${SEM3[d.dia.getDay()]} ${curta(d.dia)}: ${d.estado === 'folga' ? 'folga' : d.estado === 'antes' ? 'antes do plano' : `${d.n} questões`}`}><i aria-hidden="true" /><small>{SEM3[d.dia.getDay()][0]}</small><span className="so-leitor">{curta(d.dia)}: {d.estado === 'folga' ? 'folga' : `${d.n} questões`}</span></li>)}</ol>
-          <p className="cg-nota"><b>{hub.elogio.titulo}.</b> {hub.elogio.texto} Dia com {hub.constancia.minimo}+ questões conta; folga não quebra.</p>
         </section>}
       </div>
 
@@ -406,35 +407,46 @@ function Mes({ plano, calculo, historico, biblioteca, indice, leituras, minutos,
   const criado = diaCivil(Date.parse(plano.criado_em))
   const [mes, definirMes] = useState(() => new Date(hoje.getFullYear(), hoje.getMonth(), 1))
   const [escolhida, definirEscolhida] = useState(() => chaveCivil(hoje))
+  // A semana é a vista de entrada (cabe mais em cada dia); "Abrir o mês inteiro" mostra o mês (Tales, 10/11/2026).
+  const segundaDe = (d: Date) => new Date(d.getFullYear(), d.getMonth(), d.getDate() - ((d.getDay() + 6) % 7))
+  const [vista, definirVista] = usarArmazenado<'semana' | 'mes'>('cronograma:vista-calendario', 'semana')
+  const [semana, definirSemana] = useState(() => segundaDe(hoje))
   const primeiro = new Date(criado.getFullYear(), criado.getMonth(), 1), ultimo = new Date(prova.getFullYear(), prova.getMonth(), 1)
   const doPlano = useMemo(() => new Map(calculo.dias.map((d) => [chaveCivil(d.data), d])), [calculo.dias])
   const vespera = calculo.vespera
   const celulas = useMemo(() => {
-    const inicio = new Date(mes.getFullYear(), mes.getMonth(), 1 - ((mes.getDay() + 6) % 7))
+    const inicio = vista === 'semana' ? semana : new Date(mes.getFullYear(), mes.getMonth(), 1 - ((mes.getDay() + 6) % 7))
     const lista: CelulaMes[] = []
-    for (let i = 0; i < 42; i++) {
+    for (let i = 0; i < (vista === 'semana' ? 7 : 42); i++) {
       const data = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate() + i)
-      if (i >= 35 && data.getMonth() !== mes.getMonth()) break
+      if (vista === 'mes' && i >= 35 && data.getMonth() !== mes.getMonth()) break
       const chave = chaveCivil(data)
       const fase: CelulaMes['fase'] = data < criado ? 'antes' : data > prova ? 'depois' : data.getTime() === prova.getTime() ? 'dia' : data.getTime() === vespera.getTime() ? 'vespera' : data >= calculo.inicioModoProva ? 'prova' : data >= calculo.inicioRetaFinal ? 'revisao' : 'conteudo'
-      lista.push({ data, chave, fora: data.getMonth() !== mes.getMonth(), hoje: data.getTime() === hoje.getTime(), passado: data < hoje, plano: doPlano.get(chave) ?? null, feito: historico.get(chave) ?? null, fase, folga: plano.folgas.includes(data.getDay()) })
+      lista.push({ data, chave, fora: vista === 'mes' && data.getMonth() !== mes.getMonth(), hoje: data.getTime() === hoje.getTime(), passado: data < hoje, plano: doPlano.get(chave) ?? null, feito: historico.get(chave) ?? null, fase, folga: plano.folgas.includes(data.getDay()) })
     }
     return lista
-  }, [mes, doPlano, historico]) // eslint-disable-line react-hooks/exhaustive-deps
+  }, [vista, semana, mes, doPlano, historico]) // eslint-disable-line react-hooks/exhaustive-deps
   const sel = celulas.find((c) => c.chave === escolhida) ?? celulas.find((c) => c.hoje) ?? celulas.find((c) => !c.fora)!
   const doMes = celulas.filter((c) => !c.fora)
   const totais = { novas: doMes.reduce((s, c) => s + (c.passado ? 0 : c.plano?.total ?? 0), 0), feitas: doMes.reduce((s, c) => s + (c.feito?.n ?? 0), 0), estudo: doMes.filter((c) => c.fase === 'conteudo' && !c.folga && !c.passado).length }
   const resumosSel = useMemo(() => (sel.plano && !sel.passado ? resumosDoDia(biblioteca, indice, sel.plano.itens.flatMap((i) => i.ids)) : []), [biblioteca, indice, sel])
-  const ir = (n: number) => definirMes(new Date(mes.getFullYear(), mes.getMonth() + n, 1))
+  const naSemana = vista === 'semana'
+  const primeiraSemana = segundaDe(criado), ultimaSemana = segundaDe(prova)
+  const ir = (n: number) => naSemana ? definirSemana(new Date(semana.getFullYear(), semana.getMonth(), semana.getDate() + 7 * n)) : definirMes(new Date(mes.getFullYear(), mes.getMonth() + n, 1))
+  const fimSemana = new Date(semana.getFullYear(), semana.getMonth(), semana.getDate() + 6)
+  const tituloSemana = semana.getTime() === segundaDe(hoje).getTime() ? 'Esta semana' : `Semana de ${semana.getDate()}${semana.getMonth() !== fimSemana.getMonth() ? `/${String(semana.getMonth() + 1).padStart(2, '0')}` : ''} a ${fimSemana.toLocaleDateString('pt-BR', { day: 'numeric', month: 'long' })}`
+  const trocarVista = () => { if (naSemana) definirMes(new Date(semana.getFullYear(), semana.getMonth(), 1)); else definirSemana(segundaDe(sel.fora || sel.data.getMonth() !== mes.getMonth() ? new Date(Math.max(mes.getTime(), Math.min(hoje.getTime(), new Date(mes.getFullYear(), mes.getMonth() + 1, 0).getTime()))) : sel.data)); definirVista(naSemana ? 'mes' : 'semana') }
+  const nomeArea = (slug: string) => indice.temas.find((t) => t.slug === slug)?.nome ?? slug
   const rotuloFase: Record<string, string> = { revisao: 'revisão forte', prova: 'modo prova', vespera: 'véspera', dia: 'PROVA' }
   return <>
-    <section className="cg-caixa cg-col-8 cg-mes" id="calendario" aria-labelledby="cg-mes-titulo">
+    <section className={`cg-caixa cg-col-8 cg-mes cg-mes--${vista}`} id="calendario" aria-labelledby="cg-mes-titulo">
       <header className="cg-caixa__cabeca">
-        <h2 className="cg-caixa__titulo" id="cg-mes-titulo"><span className="cg-mes__nome">{F_MES.format(mes)}</span> <small>{totais.estudo} dias de estudo pela frente · {totais.novas} questões agendadas · {totais.feitas} feitas</small></h2>
+        <h2 className="cg-caixa__titulo" id="cg-mes-titulo"><span className="cg-mes__nome">{naSemana ? tituloSemana : F_MES.format(mes)}</span> <small>{totais.estudo} {totais.estudo === 1 ? 'dia' : 'dias'} de estudo pela frente · {totais.novas} questões agendadas · {totais.feitas} feitas</small></h2>
         <div className="cg-linha">
-          <button type="button" className="cg-mini" onClick={() => ir(-1)} disabled={mes <= primeiro} aria-label="Mês anterior"><Icone nome="esquerda" tamanho={14} /></button>
-          <button type="button" className="cg-mini" onClick={() => { definirMes(new Date(hoje.getFullYear(), hoje.getMonth(), 1)); definirEscolhida(chaveCivil(hoje)) }}>hoje</button>
-          <button type="button" className="cg-mini" onClick={() => ir(1)} disabled={mes >= ultimo} aria-label="Próximo mês"><Icone nome="direita" tamanho={14} /></button>
+          <button type="button" className="cg-mini" onClick={() => ir(-1)} disabled={naSemana ? semana <= primeiraSemana : mes <= primeiro} aria-label={naSemana ? 'Semana anterior' : 'Mês anterior'}><Icone nome="esquerda" tamanho={14} /></button>
+          <button type="button" className="cg-mini" onClick={() => { definirMes(new Date(hoje.getFullYear(), hoje.getMonth(), 1)); definirSemana(segundaDe(hoje)); definirEscolhida(chaveCivil(hoje)) }}>hoje</button>
+          <button type="button" className="cg-mini" onClick={() => ir(1)} disabled={naSemana ? semana >= ultimaSemana : mes >= ultimo} aria-label={naSemana ? 'Próxima semana' : 'Próximo mês'}><Icone nome="direita" tamanho={14} /></button>
+          <button type="button" className="cg-btn cg-mes__troca" onClick={trocarVista} aria-pressed={!naSemana}><Icone nome="calendario" tamanho={14} /> {naSemana ? 'Abrir o mês inteiro' : 'Voltar para a semana'}</button>
         </div>
       </header>
       <ol className="cg-mes__semana" aria-hidden="true">{[1, 2, 3, 4, 5, 6, 0].map((d) => <li key={d}>{SEM3[d]}</li>)}</ol>
@@ -449,8 +461,10 @@ function Mes({ plano, calculo, historico, biblioteca, indice, leituras, minutos,
           const curto = estado === 'vazio' ? '0' : estado === 'revisao' ? 'revisão' : estado === 'prova' ? 'prova' : n && c.passado ? String(n) : texto
           return <li key={c.chave} className={c.fora ? 'cg-dia--outro' : ''}><button type="button" className={`cg-dia cg-dia--${estado}${c.hoje ? ' cg-dia--hoje' : ''}`} aria-pressed={sel.chave === c.chave} disabled={estado === 'fora'} onClick={() => definirEscolhida(c.chave)}
             aria-label={`${c.data.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })}: ${texto || 'sem tarefa'}${topo ? `, ${topo.nome}` : ''}`}>
-            <span className="cg-dia__n">{c.data.getDate()}{c.plano?.mini && <i title="Mini-simulado">★</i>}</span>
-            {!c.passado && c.plano && c.plano.itens.length > 0 && <span className="cg-dia__area">{c.plano.itens.slice(0, 3).map((i) => <span key={i.slug + String(i.mistura)} style={area(i.slug)}>{i.nome}</span>)}</span>}
+            <span className="cg-dia__n"><span><b className="cg-dia__sem">{SEM3[c.data.getDay()]} </b>{c.data.getDate()}{c.hoje && <em> hoje</em>}</span>{c.plano?.mini && <i title="Mini-simulado">★</i>}</span>
+            {/* Na semana cada área traz os assuntos por extenso (o texto quebra de linha, nunca é cortado). */}
+            {!c.passado && c.plano && c.plano.itens.length > 0 && <span className="cg-dia__area">{c.plano.itens.slice(0, naSemana ? 4 : 3).map((i) => <span key={i.slug + String(i.mistura)} style={area(i.slug)}>{naSemana && <b>{i.n} </b>}{i.nome}{naSemana && i.assuntos.length > 0 && <small>{i.assuntos.slice(0, 2).join(' · ')}{i.assuntos.length > 2 ? ` · +${i.assuntos.length - 2}` : ''}</small>}</span>)}</span>}
+            {naSemana && c.passado && c.feito && <span className="cg-dia__area">{c.feito.areas.slice(0, 4).map((a) => <span key={a.slug} style={area(a.slug)}><b>{a.n} </b>{nomeArea(a.slug)}</span>)}{c.feito.validas > 0 && <small>{Math.round((100 * c.feito.certas) / c.feito.validas)}% de acerto</small>}</span>}
             <span className="cg-dia__pe"><span className="cg-largo">{texto}</span><span className="cg-estreito">{curto}</span></span>
             {itens.length > 0 && estado !== 'folga' && <span className="cg-dia__faixa" aria-hidden="true">{itens.map((i) => <i key={i.slug} style={{ flexGrow: i.n, background: corDaArea(i.slug) }} />)}</span>}
           </button></li>
@@ -459,7 +473,8 @@ function Mes({ plano, calculo, historico, biblioteca, indice, leituras, minutos,
       <p className="cg-legenda"><span className="cg-legenda--feito">feito</span><span className="cg-legenda--hoje">hoje</span><span className="cg-legenda--folga">folga</span><span className="cg-legenda--reta">reta final</span><span>★ mini-simulado</span><span>a faixa colorida mostra as áreas do dia</span></p>
     </section>
 
-    <section className="cg-caixa cg-col-4 cg-diasel" aria-live="polite" aria-label="O dia escolhido">
+    {/* Na semana, hoje já está inteiro na caixa "Hoje": o detalhe só abre para outro dia. */}
+    {!(naSemana && sel.hoje) && <section className={"cg-caixa cg-diasel " + (naSemana ? "cg-diasel--larga" : "cg-col-4")} aria-live="polite" aria-label="O dia escolhido">
       <p className="cg-rotulo">{sel.hoje ? 'Hoje' : sel.passado ? 'Dia que passou' : 'Dia escolhido'}</p>
       <h2 className="cg-caixa__titulo">{sel.data.toLocaleDateString('pt-BR', { weekday: 'long', day: 'numeric', month: 'long' })}</h2>
       {sel.fase === 'dia' ? <p className="cg-nota"><b>O dia da prova.</b> Sem tarefa: só a prova. Boa prova.</p>
@@ -478,7 +493,7 @@ function Mes({ plano, calculo, historico, biblioteca, indice, leituras, minutos,
             <div className="cg-linha cg-linha--sep">{sel.hoje ? botaoHoje : aoPuxar && sel.plano.total > 0 && <button type="button" className="cg-btn cg-btn--forte" disabled={salvando} onClick={() => aoPuxar(sel.chave)}>Fazer agora as questões deste dia</button>}</div>
             {!sel.hoje && aoPuxar && <p className="cg-nota">O que você fizer conta para este dia; o resto continua nele.</p>}
           </> : <p className="cg-nota">{sel.plano && sel.plano.adiantado > 0 ? 'Livre: você já adiantou as questões deste dia.' : 'Sem questões novas agendadas.'}</p>}
-    </section>
+    </section>}
   </>
 }
 
@@ -563,6 +578,27 @@ function GraficoAcerto({ historico, media }: { historico: Map<string, DiaFeito>;
     </svg>
     <p className="cg-leitura"><b>{SEM3[f.d.getDay()]} {curta(f.d)}</b>: {f.pct}% de acerto em {f.n} questões <span>· melhor dia: {melhor.pct}% ({curta(melhor.d)}) · mais difícil: {pior.pct}% ({curta(pior.d)})</span></p>
   </>
+}
+
+/** Os números dos últimos 14 dias, em quadros pequenos (preenche o lado do gráfico de acerto). */
+function Resumo14({ historico, plano, minutos }: { historico: Map<string, DiaFeito>; plano: PlanoSalvo; minutos: number }) {
+  const hoje = diaCivil()
+  const de = (ini: number, fim: number) => { let n = 0, c = 0, v = 0, dias = 0, estudo = 0; for (let k = ini; k < fim; k++) { const d = new Date(hoje.getFullYear(), hoje.getMonth(), hoje.getDate() - k); const f = historico.get(chaveCivil(d)); if (!plano.folgas.includes(d.getDay())) estudo++; if (f) { n += f.n; c += f.certas; v += f.validas; dias++ } } return { n, pct: v >= 5 ? Math.round((100 * c) / v) : null, dias, estudo, erros: v - c } }
+  const s1 = de(0, 7), s2 = de(7, 14)
+  const seta = (a: number | null, b: number | null) => a === null || b === null || a === b ? '' : a > b ? ` · subiu ${a - b}` : ` · caiu ${b - a}`
+  return (
+    <section className="cg-caixa" aria-label="Resumo dos últimos 14 dias">
+      <p className="cg-rotulo">Últimos 7 dias <small>comparados com os 7 anteriores</small></p>
+      <dl className="cg-quadros">
+        <div><dt>Questões novas</dt><dd><b>{s1.n}</b><small>antes: {s2.n}{seta(s1.n, s2.n)}</small></dd></div>
+        <div><dt>Acerto</dt><dd><b>{s1.pct !== null ? `${s1.pct}%` : '—'}</b><small>antes: {s2.pct !== null ? `${s2.pct}%` : '—'}{seta(s1.pct, s2.pct)}{s1.pct !== null && s2.pct !== null && s1.pct !== s2.pct ? ' pts' : ''}</small></dd></div>
+        <div><dt>Dias estudados</dt><dd><b>{s1.dias}</b><small>de {s1.estudo} dias de estudo</small></dd></div>
+        <div><dt>Tempo de estudo</dt><dd><b>{formatarTempo(s1.n * minutos)}</b><small>cerca de {String(Math.round(minutos * 10) / 10).replace('.', ',')} min por questão</small></dd></div>
+        <div><dt>Erros na semana</dt><dd><b>{s1.erros}</b><small>voltam em "Refaça o que errou"</small></dd></div>
+        <div><dt>Por dia estudado</dt><dd><b>{s1.dias ? Math.round(s1.n / s1.dias) : 0}</b><small>questões novas em média</small></dd></div>
+      </dl>
+    </section>
+  )
 }
 
 function FaltaPorArea({ calculo, minutos }: { calculo: CalculoPlano; minutos: number }) {
