@@ -34,11 +34,11 @@ button.mascote__corpo:hover .mascote__sprite { filter: brightness(1.08) drop-sha
 .gato-pixel--acordando, .gato-pixel--espreguicando { animation: gato-pixel-uma-vez 1.6s steps(5, jump-none) 1 forwards; }
 @keyframes gato-pixel-uma-vez { to { background-position-x: 100%; } }
 
-/* O dragão do tesouro (DragaoPixel.tsx): folha de 12 quadros por linha, 224 x 112. */
+/* O dragão do tesouro (DragaoPixel.tsx): folha de 16 quadros por linha, 224 x 112. */
 .dragao-pixel { display: inline-block; aspect-ratio: 224 / 112; image-rendering: pixelated;
-  background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / 1200% calc(var(--linhas) * 100%) no-repeat;
-  animation: dragao-pixel-quadros var(--dur, 1.9s) steps(12) infinite; }
-.dragao-pixel--uma-vez { animation: dragao-pixel-uma-vez var(--dur, 1s) steps(12, jump-none) 1 forwards; }
-@keyframes dragao-pixel-quadros { to { background-position-x: 109.0909%; } }
+  background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / 1600% calc(var(--linhas) * 100%) no-repeat;
+  animation: dragao-pixel-quadros var(--dur, 1.9s) steps(16) infinite; }
+.dragao-pixel--uma-vez { animation: dragao-pixel-uma-vez var(--dur, 1s) steps(16, jump-none) 1 forwards; }
+@keyframes dragao-pixel-quadros { to { background-position-x: 106.6667%; } }
 @keyframes dragao-pixel-uma-vez { to { background-position-x: 100%; } }
 @media (prefers-reduced-motion: reduce) { .dragao-pixel { animation: none; } }

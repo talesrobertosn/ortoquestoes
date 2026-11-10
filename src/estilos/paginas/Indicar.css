@@ -180,7 +180,7 @@
 .ind-bilhete .ind-previa p { margin: 0.6rem 0 0; padding: 0.75rem 0.9rem; background: #e7f6e0; color: #17301c; box-shadow: 0 0 0 3px #1b1208; font-size: var(--corpo-menor); line-height: 1.5; white-space: pre-line; overflow-wrap: anywhere; }
 
 /* ---------- A conta: 1, 4 e 12 amigos ---------- */
-.ind-conta { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--e-3); }
+.ind-conta { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: calc(var(--e-3) + 22px); }
 .ind-conta li { position: relative; display: grid; justify-items: center; gap: 0.1rem; padding: 1rem 0.6rem 0.9rem; text-align: center; border-radius: var(--mundo-raio, 14px); color: #fff6e2;
   background: radial-gradient(90% 120% at 50% 0%, rgba(244, 199, 90, 0.28), transparent 62%), linear-gradient(180deg, #24170a, #120b05); box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.5), 0 10px 22px -14px rgba(120, 80, 10, 0.7); }
 .ind-conta li:last-child { box-shadow: inset 0 0 0 2px #f4cf7c, 0 0 26px -4px rgba(244, 199, 90, 0.65); }
@@ -219,9 +219,9 @@
 .ind-fecho h2 { margin: 0 0 0.25rem; font-family: var(--fonte-marca); font-size: clamp(1.2rem, 0.9rem + 1.2vw, 1.6rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
 .ind-fecho p { margin: 0; color: #d9c9a6; font-size: var(--corpo-menor); line-height: 1.45; max-width: 44ch; }
 
-/* ---------- As margens: tochas de parede, moedas subindo e ouro nos cantos (só em telas com margem sobrando) ---------- */
-/* Cada margem vai do conteúdo até a borda da tela, em qualquer monitor. O monte encosta na borda de fora e some aos
-   poucos para dentro e para cima (máscara no próprio desenho), então não sobra corte reto de lado nenhum. */
+/* ---------- As margens: um pilar de pedra lavrada de cada lado (só em telas com margem sobrando) ---------- */
+/* Três peças de scripts/gerar_arte_indicar.py: o capitel com a arandela (a chama é a folha do fogo, na mesma escala de
+   pixel), o fuste que se repete até o chão em qualquer altura de tela e a base com o tesouro derramado. */
 .ind-margens { display: none; }
 @media (min-width: 80rem) {
   .ind-margens { display: block; position: absolute; inset: 0; pointer-events: none; }
@@ -229,26 +229,36 @@
   .ind-margem--esq { right: 100%; }
   .ind-margem--dir { left: 100%; }
   .ind-margem__ar { position: sticky; top: 0; height: 100vh; height: 100dvh; overflow: hidden; }
-  .ind-margem img { position: absolute; bottom: 0; width: clamp(15rem, 118%, 34rem); max-width: none; height: auto; image-rendering: pixelated; }
-  .ind-margem--esq img { left: 0; -webkit-mask-image: radial-gradient(farthest-side at 0 100%, #000 52%, transparent 100%); mask-image: radial-gradient(farthest-side at 0 100%, #000 52%, transparent 100%); }
-  .ind-margem--dir img { right: 0; transform: scaleX(-1); -webkit-mask-image: radial-gradient(farthest-side at 0 100%, #000 52%, transparent 100%); mask-image: radial-gradient(farthest-side at 0 100%, #000 52%, transparent 100%); }
-  /* A tocha de parede: suporte de ferro em pixel e a chama da folha do fogo. */
-  .ind-tocha { position: absolute; top: 6rem; left: 50%; width: 18px; height: 54px; margin-left: -9px; background: linear-gradient(90deg, #2a1a0c 0 4px, #6a4a22 4px 10px, #3a2812 10px 18px);
-    box-shadow: 0 0 0 3px #120b05, -9px -3px 0 0 #8a6a2e, 9px -3px 0 0 #8a6a2e, -9px -3px 0 3px #120b05, 9px -3px 0 3px #120b05; }
-  .ind-tocha::after { content: ""; position: absolute; left: 50%; top: -60px; width: 320px; height: 320px; margin: -100px 0 0 -160px; background: radial-gradient(closest-side, rgba(255, 170, 70, 0.3), rgba(255, 120, 40, 0.1) 55%, transparent); animation: ind-tocha-luz 1.9s ease-in-out infinite alternate; }
-  .ind-tocha i { position: absolute; left: 50%; bottom: calc(100% - 6px); width: 40px; height: 48px; margin-left: -20px; transform: scale(1.7); transform-origin: 50% 100%; image-rendering: pixelated; z-index: 1;
-    background: var(--sprite-fogo) 0 calc(4 / 7 * 100%) / 600% 800% no-repeat; animation: fogo-tocha 0.75s steps(6) infinite; }
-  .ind-margem--dir .ind-tocha i { animation-delay: -0.3s; }
-  @keyframes fogo-tocha { to { background-position-x: 120%; } }
-  @keyframes ind-tocha-luz { from { opacity: 0.7; transform: scale(0.96); } to { opacity: 1; transform: scale(1.05); } }
+  .ind-pilar { position: absolute; top: 0; bottom: 0; left: 50%; width: min(88%, 264px); margin-left: calc(min(88%, 264px) / -2); display: flex; flex-direction: column; filter: drop-shadow(0 0 22px rgba(0, 0, 0, 0.8)); }
+  .ind-margem--dir .ind-pilar { transform: scaleX(-1); }
+  .ind-pilar img { display: block; width: 100%; height: auto; image-rendering: pixelated; }
+  .ind-pilar__topo { position: relative; flex: none; display: block; }
+  .ind-pilar__fuste { flex: 1 1 auto; min-height: 0; background: var(--fuste) top center / 100% auto repeat-y; image-rendering: pixelated; }
+  .ind-pilar__base { flex: none; }
+  /* a chama no cesto da arandela (a borda do cesto fica a 44% da altura do capitel) e a luz dela na pedra */
+  .ind-pilar__chama { position: absolute; left: 50%; bottom: 55.4%; width: 30.3%; aspect-ratio: 40 / 48; margin-left: -15.15%; image-rendering: pixelated;
+    background: var(--sprite-fogo) 0 calc(4 / 7 * 100%) / 600% 800% no-repeat; animation: ind-chama 0.72s steps(6) infinite; }
+  .ind-margem--dir .ind-pilar__chama { animation-delay: -0.31s; }
+  @keyframes ind-chama { to { background-position-x: 120%; } }
+  .ind-pilar__luz { position: absolute; left: 50%; top: 36%; width: 240%; aspect-ratio: 1; margin: -120% 0 0 -120%; mix-blend-mode: screen; background: radial-gradient(closest-side, rgba(255, 170, 70, 0.32), rgba(255, 110, 30, 0.1) 50%, transparent); animation: ind-tocha-luz 1.9s ease-in-out infinite alternate; }
+  @keyframes ind-tocha-luz { from { opacity: 0.65; transform: scale(0.95); } to { opacity: 1; transform: scale(1.05); } }
   .ind-margem b { position: absolute; left: var(--x); bottom: 14%; width: 8px; height: 8px; opacity: 0; background: #f4c64a; box-shadow: inset 2px 2px 0 #fff6c0, inset -2px -2px 0 #a8661a, 0 0 0 2px #3d2804;
     animation: ind-sobe var(--t) var(--d) linear infinite; }
   @keyframes ind-sobe { 0% { transform: translateY(0) scaleX(1); opacity: 0; } 8% { opacity: 0.9; } 50% { transform: translateY(-34vh) scaleX(0.15); } 92% { opacity: 0.5; } 100% { transform: translateY(-68vh) scaleX(1); opacity: 0; } }
 }
 
+/* ---------- A parede da caverna no fundo e a moldura de ouro lavrado em todos os blocos ---------- */
+.ind::before { background: radial-gradient(70% 36rem at 50% 0, rgba(255, 170, 70, 0.22), transparent 70%), linear-gradient(90deg, rgba(0, 0, 0, 0.55), transparent 22%, transparent 78%, rgba(0, 0, 0, 0.55)), var(--parede) 0 0 / 312px 216px repeat, #0b0705; image-rendering: pixelated; }
+.ind .folha, .ind .ind-topo, .ind .ind-vitrine, .ind .ind-fecho, .ind .ind-conta li { border: 1px solid transparent; border-image: var(--moldura) 16 / 32px / 10px round; image-rendering: auto; box-shadow: 10px 10px 0 10px rgba(0, 0, 0, 0.5) !important; }
+.ind .ind-conta li { border-image-width: 32px; }
+.ind .ind-folha, .ind .ind-vitrine, .ind .ind-fecho { padding: clamp(1.6rem, 3.4vw, 2.1rem); }
+.ind .ind-conta li { padding: 1.5rem 0.9rem 1.3rem; }
+.ind .ind-topo__texto { padding: clamp(1.7rem, 3.4vw, 2.3rem); }
+.ind .ind-moedas i { background: var(--moedas) 100% 0 / 200% 100% no-repeat; image-rendering: pixelated; box-shadow: none; }
+.ind .ind-moedas .ind-moedas--cheia { background-position: 0 0; box-shadow: none; filter: drop-shadow(0 0 5px rgba(244, 199, 90, 0.8)); }
+
 /* ---------- A moldura em pixel dos blocos escuros e os títulos na fonte de jogo ---------- */
-.ind .ind-topo, .ind .ind-vitrine, .ind .ind-fecho, .ind .ind-conta li { box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.28), 0 0 0 3px #1b1208, 0 0 0 5px #7a5710, 0 0 0 8px #1b1208, 8px 8px 0 8px rgba(0, 0, 0, 0.45); }
-.ind .ind-conta li:last-child { box-shadow: inset 0 0 0 2px #f4cf7c, 0 0 0 3px #1b1208, 0 0 0 5px #f4c64a, 0 0 0 8px #1b1208, 8px 8px 0 8px rgba(0, 0, 0, 0.45); }
+.ind .ind-conta li:last-child { background: radial-gradient(90% 120% at 50% 0%, rgba(244, 199, 90, 0.5), transparent 62%), linear-gradient(180deg, #3a260c, #1a1006); }
 .ind .ind-beneficios li { box-shadow: inset 0 0 0 2px rgba(244, 207, 124, 0.3); }
 .ind .ind-beneficios li:hover { box-shadow: inset 0 0 0 3px #f4cf7c; }
 .ind .ind-topo h1, .ind .ind-vitrine h2, .ind .ind-fecho h2 { font-family: var(--fonte-pixel-titulo); font-weight: 400; letter-spacing: 0.01em; line-height: 0.95; }
@@ -260,8 +270,8 @@
 .ind .ind-conta strong, .ind .ind-cofre__numero { font-family: var(--fonte-pixel-titulo); font-weight: 400; letter-spacing: 0; }
 .ind .ind-beneficios strong { font-family: var(--fonte-pixel-titulo); font-size: 1.55rem; font-weight: 400; line-height: 1; letter-spacing: 0.02em; color: #f4cf7c; }
 .ind .ind-moedas i, .ind .ind-moeda, .ind .ind-moedinha, .ind .ind-amigo__inicial, .ind .ind-regras li::before { border-radius: 0; }
-.ind .ind-grade { gap: calc(var(--e-5) + 6px); }
-.ind { gap: calc(var(--e-5) + 8px); }
+.ind .ind-grade { gap: calc(var(--e-5) + 22px); }
+.ind { gap: calc(var(--e-5) + 22px); }
 
 /* ---------- Regras de uso ---------- */
 .ind-regras__abre { margin: 0; color: var(--texto-2); line-height: 1.5; }
@@ -271,7 +281,7 @@
 .ind-regras strong { color: var(--texto); }
 @media (max-width: 52rem) { .ind-regras { grid-template-columns: minmax(0, 1fr); } }
 
-@media (prefers-reduced-motion: reduce) { .ind-tocha i, .ind-tocha::after, .ind-voador__arco { animation: none !important; } .ind-voador { transition: none; } .ind-margem b { display: none; } .ind-topo h1 em, .ind-cena__cintila i, .ind-balao, .ind-moedas .ind-moedas--cheia { animation: none; } .ind-chuva { display: none; } .ind-bicho { transition: none; } }
+@media (prefers-reduced-motion: reduce) { .ind-pilar__chama, .ind-pilar__luz, .ind-voador__arco { animation: none !important; } .ind-voador { transition: none; } .ind-margem b { display: none; } .ind-topo h1 em, .ind-cena__cintila i, .ind-balao, .ind-moedas .ind-moedas--cheia { animation: none; } .ind-chuva { display: none; } .ind-bicho { transition: none; } }
 @media (max-width: 64rem) { .ind-beneficios { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 52rem) {
   .ind-grade { grid-template-columns: minmax(0, 1fr); }

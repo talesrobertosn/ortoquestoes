@@ -141,27 +141,32 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
         definirLinha('parado')
         const sorte = Math.random()
         if (noNinho() && sorte < 0.45) { depois(() => definirLinha((l) => (l === 'parado' ? 'dormindo' : l)), 2500); agendar(17000); return }
-        if (sorte < 0.6) {
-          const gesto: IdLinhaDragao = sorte < 0.42 ? 'fogo' : 'rugindo'
-          depois(() => definirLinha((l) => (l === 'parado' ? gesto : l)), 900)
-          depois(() => definirLinha((l) => (l === gesto ? 'parado' : l)), 900 + DURACAO_DRAGAO[gesto] * 1000 + 200)
+        // Pousado ele não fica parado: olha em volta, boceja, ruge ou sopra fogo, um gesto depois do outro.
+        const gestos: IdLinhaDragao[] = sorte < 0.3 ? ['olhando', 'fogo'] : sorte < 0.55 ? ['rugindo', 'olhando'] : sorte < 0.8 ? ['olhando', 'bocejando'] : ['bocejando', 'fogo']
+        let quando = 1100
+        for (const gesto of gestos) {
+          const dur = DURACAO_DRAGAO[gesto] * 1000
+          depois(() => definirLinha((l) => (l === 'parado' ? gesto : l)), quando)
+          depois(() => definirLinha((l) => (l === gesto ? 'parado' : l)), quando + dur + 150)
+          quando += dur + 1700
         }
         agendar(7000 + Math.random() * 5000)
       }, DURACAO_DRAGAO.pousando * 1000)
     }
-    const voarPara = (el: Element, f: number) => {
-      const b = base.getBoundingClientRect(), de = pouso.current ? pontoDe(pouso.current.el, pouso.current.f) : null
+    const voarPara = (el: Element, f: number, direto = false) => {
+      const de = pouso.current ? pontoDe(pouso.current.el, pouso.current.f) : null
       pouso.current = { el, f }
       const para = pontoDe(el, f)
       const dist = de ? Math.hypot(para.x - de.x, para.y - de.y) : 500
-      const dur = Math.min(2.6, Math.max(1.2, dist / 380))
+      const dur = Math.min(2.8, Math.max(1.3, dist / 340))
       if (de) definirVirado(para.x > de.x)
-      definirVoo(dur); definirLinha('voando'); definirPonto(para)
-      depois(pousar, dur * 1000)
-      void b
+      const sair = () => { definirVoo(dur); definirLinha('voando'); definirPonto(para); depois(pousar, dur * 1000) }
+      // Antes de sair do chão ele agacha, abre as asas e salta (a decolagem toca uma vez).
+      if (direto) sair()
+      else { definirLinha('decolando'); depois(sair, DURACAO_DRAGAO.decolando * 1000) }
     }
     function partir() {
-      if (document.hidden || fala) { agendar(3000); return }
+      if (document.hidden || fala || linhaRef.current !== 'parado' && linhaRef.current !== 'dormindo' && linhaRef.current !== 'olhando') { agendar(2500); return }
       const alto = window.innerHeight
       const todos = [...base!.querySelectorAll('[data-poleiro]')].filter((el) => el !== pouso.current?.el)
       const aVista = todos.filter((el) => { const r = el.getBoundingClientRect(); return r.top > 90 && r.top < alto - 40 })
@@ -181,7 +186,7 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
     // A chegada: vem de fora da tela, pelo alto, e pousa no ouro.
     const alvo = pontoDe(ninho, 0.5)
     definirVoo(0); definirPonto({ x: alvo.x + 420, y: alvo.y - 330 })
-    depois(() => voarPara(ninho, 0.5), 450)
+    depois(() => voarPara(ninho, 0.5, true), 450)
     const aoRedimensionar = () => { if (pouso.current && linhaRef.current !== 'voando') { definirVoo(0); definirPonto(pontoDe(pouso.current.el, pouso.current.f)) } }
     window.addEventListener('resize', aoRedimensionar)
     // A pessoa rolou e ele ficou para trás: vem atrás dela.
@@ -189,7 +194,7 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
     const aoRolar = () => {
       window.clearTimeout(rolou)
       rolou = window.setTimeout(() => {
-        if (!pouso.current || linhaRef.current === 'voando' || linhaRef.current === 'pousando') return
+        if (!pouso.current || linhaRef.current === 'voando' || linhaRef.current === 'pousando' || linhaRef.current === 'decolando') return
         const t = pouso.current.el.getBoundingClientRect().top
         if (t < 60 || t > window.innerHeight) agendar(500)
       }, 350)
@@ -201,7 +206,7 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
   useEffect(() => { if (!fala) return; const t = window.setTimeout(() => definirFala(null), 6500); return () => window.clearTimeout(t) }, [fala])
 
   const tocar = () => {
-    if (linha === 'voando' || linha === 'pousando' || linha === 'fogo' || linha === 'rugindo') return
+    if (linha === 'voando' || linha === 'pousando' || linha === 'decolando' || linha === 'fogo' || linha === 'rugindo') return
     guardarNoAlbum('dragao-fogo')
     const n = falas.current++
     definirFala(FALAS_INDICAR.dragao[n % FALAS_INDICAR.dragao.length])
@@ -227,18 +232,22 @@ function DragaoViajante({ raiz, aoSoprar }: { raiz: RefObject<HTMLDivElement | n
 
 /**
  * As margens da página (Tales, 10/11/2026: "até as bordas, o canto direito e o esquerdo, que costumam ficar vazios"):
- * em telas largas, uma tocha de parede arde de cada lado, moedas sobem devagar e um monte de ouro fecha cada canto
- * de baixo, encostado na borda da tela e sumindo aos poucos para dentro e para cima. Só enfeite: não recebe toque nem foco e some quando a tela não tem margem sobrando.
+ * em telas largas, um pilar de pedra lavrada sobe de cada lado (scripts/gerar_arte_indicar.py): capitel com friso de
+ * ouro e correntes, a arandela com a chama, o fuste que se repete até o chão e a base com o tesouro derramado. Só enfeite: não recebe toque nem foco e some quando a tela não tem margem sobrando.
  */
 function Margens() {
+  const arte = (nome: string) => recurso(`pixel/paginas/indicar/${nome}`)
   return (
     <div className="ind-margens" aria-hidden="true">
       {(['esq', 'dir'] as const).map((lado) => (
         <div key={lado} className={`ind-margem ind-margem--${lado}`}>
           <div className="ind-margem__ar">
-            <span className="ind-tocha" style={{ '--sprite-fogo': urlCss('pixel/inicio/fogo.png') } as CSSProperties}><i /></span>
+            <div className="ind-pilar" style={{ '--fuste': urlCss('pixel/paginas/indicar/pilar-meio.png'), '--sprite-fogo': urlCss('pixel/inicio/fogo.png') } as CSSProperties}>
+              <span className="ind-pilar__topo"><img src={arte('pilar-topo.png')} width={396} height={570} alt="" draggable={false} /><i className="ind-pilar__chama" /><i className="ind-pilar__luz" /></span>
+              <span className="ind-pilar__fuste" />
+              <img className="ind-pilar__base" src={arte('pilar-base.png')} width={396} height={450} alt="" draggable={false} />
+            </div>
             {Array.from({ length: 7 }, (_, i) => <b key={i} style={{ '--x': `${12 + ((i * 31) % 70)}%`, '--d': `${i * 1.7}s`, '--t': `${9 + (i % 4) * 2.5}s` } as CSSProperties} />)}
-            <img src={recurso('pixel/paginas/tesouro-canto.png')} width={396} height={282} alt="" draggable={false} />
           </div>
         </div>
       ))}
@@ -432,6 +441,9 @@ function Acoes({ codigo, grande = false }: { codigo: string | null; grande?: boo
   )
 }
 
+/** A arte que a página inteira usa: a parede da caverna e a moldura de ouro lavrado dos blocos. */
+const ARTE = { '--parede': urlCss('pixel/paginas/indicar/parede.webp'), '--moldura': urlCss('pixel/paginas/indicar/moldura.png') } as CSSProperties
+
 /** #/indicar: a página que vende o convite. O tesouro no topo, o que os 7 dias liberam, o link, o placar e os amigos. */
 export function Indicar() {
   const { sessao } = usarConta()
@@ -445,7 +457,7 @@ export function Indicar() {
   const chover = () => definirChuva((n) => n + 1)
 
   return (
-    <div className="ind" ref={raiz}>
+    <div className="ind" ref={raiz} style={ARTE}>
       <Margens />
       <DragaoViajante raiz={raiz} aoSoprar={chover} />
       <section data-poleiro="" className="ind-topo" aria-labelledby="ind-titulo">
@@ -502,7 +514,7 @@ export function Indicar() {
             <div><dt>Confirmados</dt><dd>{dados.confirmados}</dd></div>
           </dl>
           <div className="ind-limite">
-            <span className="ind-moedas" role="img" aria-label={`${dados.confirmados} de ${dados.limite} amigos que dão dias`}>
+            <span className="ind-moedas" style={{ '--moedas': urlCss('pixel/paginas/indicar/moedas.png') } as CSSProperties} role="img" aria-label={`${dados.confirmados} de ${dados.limite} amigos que dão dias`}>
               {Array.from({ length: dados.limite }, (_, i) => <i key={i} className={i < dados.confirmados ? 'ind-moedas--cheia' : ''} style={{ '--d': `${i * 60}ms` } as CSSProperties} />)}
             </span>
             <small>{faltam > 0 ? <>Ainda cabem <strong>{faltam} {faltam === 1 ? 'moeda' : 'moedas'}</strong> no seu monte: mais {faltam * DIAS_POR_AMIGO} dias esperando.</> : 'Monte cheio: você chegou ao máximo de amigos. Obrigado por espalhar o site.'}</small>
@@ -552,7 +564,7 @@ export function ConviteRecebido({ codigo }: { codigo: string }) {
   const chover = () => definirChuva((n) => n + 1)
 
   return (
-    <div className="ind" ref={raiz}>
+    <div className="ind" ref={raiz} style={ARTE}>
       <Margens />
       <DragaoViajante raiz={raiz} aoSoprar={chover} />
       <section data-poleiro="" className="ind-topo" aria-labelledby="ind-titulo">
