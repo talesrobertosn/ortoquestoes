@@ -315,7 +315,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 996 | Comentários curtos, onda 1: 41 miniaulas refeitas com figuras do Rockwood e do Campbell (11 do cotovelo, antebraço e coluna cervical; 11 do joelho, planalto e diáfise da tíbia; 10 da clavícula e úmero; 9 da coluna toracolombar, pelve, acetábulo e colo do fêmur) |
 | 997 | Comentários curtos, onda 1: 42 miniaulas refeitas com figuras do Rockwood, do Campbell, do Tachdjian e do Skeletal Trauma (9 do fêmur distal e patela, 9 da fise e mão da criança, 8 do pilão tibial, tornozelo e lesão medular, 8 da síndrome compartimental e escápula, 8 da clavícula e coluna da criança) |
 | 998 | Comentários curtos, onda 1: 43 miniaulas refeitas com figuras (10 de displasias, mucopolissacaridoses, epifisiólise e escoliose; 10 de tendões extensores e flexores; 8 de úmero distal e pé da criança; 8 de anatomia do pé e tornozelo; 7 de marcha, paralisia cerebral e congênitas) |
-| (este PR) | Fim da onda 1 (13 miniaulas: 7 da anatomia do ombro e braço, 6 do cotovelo da criança) e começo da onda 2, comentários de 1.200 a 1.800 caracteres refeitos (36 miniaulas dos tendões extensores da mão), com figuras do Green, do Campbell, do Rockwood e do HEBERT |
+| 999 | Fim da onda 1 (13 miniaulas: 7 da anatomia do ombro e braço, 6 do cotovelo da criança) e começo da onda 2, comentários de 1.200 a 1.800 caracteres refeitos (36 miniaulas dos tendões extensores da mão), com figuras do Green, do Campbell, do Rockwood e do HEBERT |
+| (este PR) | Onda 2: 44 miniaulas refeitas com figuras (33 da anatomia do quadril e coxa, com desenhos do Campbell, do Rockwood e do The Adult Hip; 11 dos tendões extensores da mão, Green) |
 
 ## Próximo
 
