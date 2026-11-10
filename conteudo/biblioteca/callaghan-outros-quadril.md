@@ -405,7 +405,7 @@ Para referência, a amplitude normal segundo o The Adult Hip (cap. 2, p. 43 apro
 conceito: Os três ligamentos capsulares apertam na extensão; o iliofemoral é o principal freio da hiperextensão, o pubofemoral limita abdução e rotação externa e, no Skeletal Trauma, é descrito como freio da extensão patológica; o isquiofemoral freia a rotação interna. Cerca de 70% da superfície articular da cabeça femoral participa da transferência de carga.
 como: O TARO de 2006 trouxe duas afirmativas de certo ou errado: o pubofemoral é restritor da hiperextensão e aproximadamente 70% da superfície da cabeça participa da transferência de carga.
 armadilha: Decorar um único ligamento para a hiperextensão e marcar errado para os outros; confundir os 70% da área de carga com os dois terços de superfície esférica da cabeça.
-alerta: As duas questões estão sem gabarito oficial. Em `quadril-0492`, o Skeletal Trauma (cap. 54) sustenta Certo. Em `quadril-0493`, o Skeletal Trauma (cap. 52) sustenta Certo; o The Adult Hip e o Rockwood dão o papel principal ao iliofemoral, sem negar que o pubofemoral fica tenso na extensão.
+alerta: As duas questões estão sem gabarito oficial. Em `quadril-0492`, o Skeletal Trauma (cap. 54) sustenta Certo. Em `quadril-0493`, a resposta provável é Errado, que é o gabarito pela bibliografia registrado no acervo e a leitura do The Adult Hip e do Rockwood (o iliofemoral é o freio principal da extensão; o pubofemoral limita a abdução e a rotação externa); o Skeletal Trauma (cap. 52) sustentaria Certo, de modo que a resposta depende do livro que a banca seguiu.
 !fim
 
 # O fêmur que envelhece: cortical fina, osso mais largo {radar=clinico}
