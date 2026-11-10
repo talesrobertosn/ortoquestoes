@@ -310,7 +310,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 986 | Comentários curtos, onda 1: 63 miniaulas refeitas com figuras (23 do exame da mão e do punho, 21 do carpo, 19 do tornozelo da criança); limpeza do resto de extração "Área livre PROVA APLICADA" em 14 questões e 4 flashcards |
 | 991 | Comentários curtos, onda 1: 48 miniaulas refeitas com figuras (19 de nervos periféricos, 16 de DDQ, 13 do ombro e úmero da criança); pendências: desenho no lugar da foto intraoperatória (mao-1562), imagens trocadas retiradas (conceitos-basicos-0312), gabarito provável da trauma-1127 trocado para C |
 | 993 | Comentários curtos, onda 1: 33 miniaulas refeitas com figuras do Rockwood (12 do colo do rádio e olécrano, 11 da diáfise do fêmur e 10 do quadril, todas na criança); 10 questões sem livro no acervo (9 de neurocirurgia e a classificação de EDWARDS e DeLEE) refeitas com artigos abertos e aviso de tema fora da bibliografia |
-| (este PR) | Comentários curtos, onda 1: 44 miniaulas refeitas com figuras (9 de neuropatias compressivas, 9 de fraturas e luxações da mão, 9 do pé torto congênito, 9 de Perthes, 8 do tálus e calcâneo) |
+| 994 | Comentários curtos, onda 1: 44 miniaulas refeitas com figuras (9 de neuropatias compressivas, 9 de fraturas e luxações da mão, 9 do pé torto congênito, 9 de Perthes, 8 do tálus e calcâneo) |
+| (este PR) | Comentários curtos, onda 1: 40 miniaulas refeitas com figuras (12 de temas variados do Campbell, 8 da coluna cervical da criança, 7 da pelve da criança, 7 da diáfise do fêmur, 6 de fraturas por estresse) |
 
 ## Próximo
 
