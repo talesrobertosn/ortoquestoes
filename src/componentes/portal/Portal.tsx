@@ -85,7 +85,7 @@ export default function Portal({ caminho, aoFechar, focarBusca }: { caminho: str
                 const fechado = bloqueado(p)
                 const destino = fechado && p.icone === 'relatorio' ? '/assinatura' : p.destino
                 return <li key={p.rotulo}>
-                  <a className="pt-item" href={ehExterno(destino) ? recurso(destino) : href(destino)} onClick={aoFechar} aria-current={atual === p.destino && p.icone !== 'relatorio' ? 'page' : undefined}
+                  <a className={p.icone === 'indicar' ? 'pt-item pt-item--fogo' : 'pt-item'} href={ehExterno(destino) ? recurso(destino) : href(destino)} onClick={aoFechar} aria-current={atual === p.destino && p.icone !== 'relatorio' ? 'page' : undefined}
                     style={{ '--atraso': `${g.itens.indexOf(p) * 18}ms` } as CSSProperties}>
                     <IconePixel nome={p.icone} tamanho={48} />
                     <span className="pt-item__texto"><strong>{p.rotulo}</strong><small>{p.texto}</small></span>
