@@ -166,9 +166,12 @@
 
 /* "Indique e ganhe" em chamas (Tales, 10/11/2026): um halo de fogo ao redor do botão para chamar a atenção. Só o botão
    leva fogo; o movimento é só em transform e opacity (e "menos movimento" desliga tudo, abaixo). */
-.pt-item--fogo { position: relative; isolation: isolate; margin-top: 1.5rem; border-radius: 14px; background: linear-gradient(180deg, rgba(255, 190, 70, 0.3), rgba(255, 96, 30, 0.16)); }
-.pt-item--fogo:hover { background: linear-gradient(180deg, rgba(255, 190, 70, 0.42), rgba(255, 96, 30, 0.24)); }
-.pt-item--fogo .pt-item__texto strong { color: var(--pt-tinta); }
+/* Indique e ganhe: o botão inteiro em chamas (BordaDeFogo); o texto claro com contorno escuro para ler por cima do fogo. */
+.pt-item--fogo { position: relative; isolation: isolate; margin-top: 1.3rem; border-radius: 0; background: #5a1206; box-shadow: 0 0 0 2px #2a0802; }
+.pt-item--fogo:hover { background: #6e1808; }
+.pt-item--fogo .pt-item__texto strong { color: #fff6e2; text-shadow: 0 2px 0 #2a0802, 0 0 6px #2a0802; }
+.pt-item--fogo .pt-item__texto small { color: #ffe9c4; font-weight: 650; text-shadow: 0 1px 0 #2a0802, 0 0 5px #2a0802; }
+.pt-item--fogo > svg { color: #fff6e2; }
 
 .pt-chao { position: relative; z-index: 3; display: flex; align-items: center; gap: 0.4rem 1.2rem; min-height: 50px; padding: 0 1.4rem; border-top: 1px solid var(--pt-linha); border-radius: 0 0 22px 22px;
   background: var(--pt-papel-2); font-size: 0.8125rem; }
@@ -178,12 +181,18 @@
 .pt-dragao { position: absolute; z-index: 6; right: 30%; bottom: 2px; pointer-events: none; filter: drop-shadow(0 0 10px rgba(255, 150, 60, 0.55)); }
 .pt-dragao__botao { display: block; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; pointer-events: auto; }
 .pt-dragao__botao:focus-visible { outline: 3px solid var(--pt-verde); outline-offset: 2px; border-radius: 8px; }
-.pt-dragao .dragao-pixel { display: block; width: 176px; }
+.pt-dragao .dragao-pixel { display: block; width: 100%; }
+.pt-dragao { width: 250px; }
+.pt-dragao__botao { width: 52%; margin-left: 48%; }
+.pt-dragao__botao .dragao-pixel { width: calc(100% / 0.52); margin-left: calc(-48% / 0.52); pointer-events: none; }
+/* Ao lado do botão ele fica virado para a direita, de frente para o botão. */
+.pt-dragao--no-botao { transform-origin: 50% 50%; }
+.pt-dragao--no-botao .pt-dragao__botao { transform: scaleX(-1); transform-origin: 3.85% 50%; }
 .pt-dragao--chegando { animation: pt-dragao-chega 1.3s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
 .pt-dragao--saindo { animation: pt-dragao-sai 1.3s ease-in both; }
-@keyframes pt-dragao-chega { from { opacity: 0; transform: translate(60%, -170%) scale(0.7); } 15% { opacity: 1; } }
-@keyframes pt-dragao-sai { to { opacity: 0; transform: translate(-70%, -190%) scale(0.7); } }
-@media (max-width: 48rem) { .pt-dragao .dragao-pixel { width: 136px; } .pt-dragao { right: 22%; bottom: 0; } }
+@keyframes pt-dragao-chega { from { opacity: 0; translate: 40% -170%; scale: 0.7; } 15% { opacity: 1; } }
+@keyframes pt-dragao-sai { to { opacity: 0; translate: -50% -190%; scale: 0.7; } }
+@media (max-width: 48rem) { .pt-dragao { width: 190px; right: 22%; bottom: 0; } }
 
 /* Os visitantes: a coruja pousa no alto (à esquerda do X); o gato passeia no rodapé. */
 .pt-coruja { position: absolute; z-index: 5; top: calc(1.1rem + 44px); right: 72px; transform: translateY(-94%); }

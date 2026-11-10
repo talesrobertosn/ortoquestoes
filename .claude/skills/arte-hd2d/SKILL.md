@@ -37,7 +37,8 @@ Leia os scripts antes de pintar qualquer coisa nova e copie a técnica (cada scr
 | Oficina da Mão (topo dos cronogramas da Mão, 3 horas; a praça da Torre com a oficina no lugar da torre, importando o script dela) | `scripts/gerar_cena_mao.py` | `public/pixel/cronograma/oficina-mao-{manha,tarde,noite}[-960].webp`, `oficina-mao-placa-*.png` |
 | Arquivo da Vila (topo dos Flashcards, 3 horas) e o assoalho | `scripts/gerar_cena_flashcards.py [piso]` | `public/pixel/flashcards/arquivo-{manha,tarde,noite}[-960].webp`, `arquivo-piso.webp` |
 | Câmara do Tesouro (topo do Indique e ganhe) e o monte dos cantos | `scripts/gerar_cena_tesouro.py` | `public/pixel/paginas/tesouro[-960].webp`, `tesouro-canto.png` |
-| Dragão do tesouro (mascote, 6 linhas de 8 quadros de 160 x 112; `DragaoPixel`) | `scripts/gerar_dragao.py` | `public/pixel/mascote/dragao.png` |
+| Arte da página Indique e ganhe: pilar de pedra em três peças, moldura de ouro de 9 fatias, parede da caverna e moedas | `scripts/gerar_arte_indicar.py` | `public/pixel/paginas/indicar/*` |
+| Dragão do tesouro (mascote, 9 linhas de 16 quadros de 224 x 112; `DragaoPixel`) | `scripts/gerar_dragao.py` | `public/pixel/mascote/dragao.png` |
 | Fogo da sequência e tochas | `scripts/gerar_sprites_inicio.py` | `fogo.png`, `tocha.png` |
 
 A técnica, em ordem:
