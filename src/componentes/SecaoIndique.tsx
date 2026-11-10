@@ -5,6 +5,7 @@ import { DIAS_POR_AMIGO, LIMITE_AMIGOS, QUESTOES_PARA_CONFIRMAR, linkIndicacao, 
 import { href } from '../util/rotas'
 import { IconeWhatsapp } from './ConviteCompartilhar'
 import { Icone } from './Icone'
+import { BordaDeFogo } from './BordaDeFogo'
 
 /**
  * Indique e ganhe, na página inicial (temporada RPG): o mensageiro leva a
@@ -29,14 +30,12 @@ export function SecaoIndique() {
         <h2 id="ig-titulo">Indique e ganhe <em>{DIAS_POR_AMIGO} dias grátis</em></h2>
         <p>O Orto Questões cresce no boca a boca. Chame um colega da residência: quando ele responder {QUESTOES_PARA_CONFIRMAR} questões, vocês dois ganham {DIAS_POR_AMIGO} dias do plano completo. Vale para até {LIMITE_AMIGOS} amigos.</p>
         {dados && dados.confirmados > 0 && <p className="ig__placar"><b>{dados.confirmados}</b> {dados.confirmados === 1 ? 'amigo confirmado' : 'amigos confirmados'} · <b>{dados.dias_ganhos}</b> dias ganhos</p>}
+        <p className="ig__destaque"><a className="ig__fogo" href={href('/indicar')}><BordaDeFogo chamas={8} />Indique e ganhe <Icone nome="direita" tamanho={15} /></a></p>
         <div className="ig__acoes">
           {dados ? <>
             <a className="ig__whatsapp" href={`https://wa.me/?text=${encodeURIComponent(textoIndicacao(dados.codigo))}`} target="_blank" rel="noopener noreferrer"><IconeWhatsapp tamanho={18} /> Chamar no WhatsApp</a>
             <button type="button" className="ig__copiar" onClick={() => void copiar()}><Icone nome={copiado ? 'certo' : 'link'} tamanho={16} /> {copiado ? 'Link copiado' : 'Copiar meu link'}</button>
-            <a className="ig__mais" href={href('/indicar')}>Minhas indicações <Icone nome="direita" tamanho={14} /></a>
-          </> : sessao
-            ? <a className="botao botao--ouro" href={href('/indicar')}>Pegar meu link</a>
-            : <a className="botao botao--ouro" href={href('/conta?modo=criar')}>Criar conta e pegar meu link</a>}
+          </> : !sessao && <a className="ig__copiar" href={href('/conta?modo=criar')}>Criar conta e pegar meu link</a>}
         </div>
       </div>
       <ol className="ig__trilha" aria-label="Como funciona">

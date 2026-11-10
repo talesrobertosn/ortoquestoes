@@ -33,3 +33,12 @@ button.mascote__corpo:hover .mascote__sprite { filter: brightness(1.08) drop-sha
    do laço, que fica fora da folha (vazio). */
 .gato-pixel--acordando, .gato-pixel--espreguicando { animation: gato-pixel-uma-vez 1.6s steps(5, jump-none) 1 forwards; }
 @keyframes gato-pixel-uma-vez { to { background-position-x: 100%; } }
+
+/* O dragão do tesouro (DragaoPixel.tsx): folha de 8 quadros por linha, 160 x 112. */
+.dragao-pixel { display: inline-block; aspect-ratio: 160 / 112; image-rendering: pixelated;
+  background: var(--sprite) 0 calc(var(--linha) / (var(--linhas) - 1) * 100%) / 800% calc(var(--linhas) * 100%) no-repeat;
+  animation: dragao-pixel-quadros var(--dur, 1.5s) steps(8) infinite; }
+.dragao-pixel--uma-vez { animation: dragao-pixel-uma-vez var(--dur, 1s) steps(8, jump-none) 1 forwards; }
+@keyframes dragao-pixel-quadros { to { background-position-x: 114.2857%; } }
+@keyframes dragao-pixel-uma-vez { to { background-position-x: 100%; } }
+@media (prefers-reduced-motion: reduce) { .dragao-pixel { animation: none; } }
