@@ -500,19 +500,27 @@
   "conferido": false
  },
  "coluna-0030": {
-  "conceito": "Este é um exercício de leitura de tabela. A pergunta junta duas variáveis, magnitude e maturidade, e a fonte é a tabela de LONSTEIN e CARLSON, reproduzida como Tabela 9.1 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 135).\n\n**A tabela.** Ela tem só quatro casas:\n- RISSER 0 ou 1, curva de 5 a 19 graus: **22%** de progressão;\n- RISSER 0 ou 1, curva de 20 a 29 graus: 68%;\n- RISSER 2, 3 ou 4, curva de 5 a 19 graus: 1,6%;\n- RISSER 2, 3 ou 4, curva de 20 a 29 graus: 23%.\n\nUma curva de 10 graus com RISSER 1 cai na primeira casa: 22%.\n\n**O que a tabela ensina.** A mesma curva pequena progride em 22% no imaturo e em 1,6% no maduro: o crescimento restante multiplica o risco mais de dez vezes. E a passagem de 19 para 20 graus triplica o risco no imaturo. Por isso o Tachdjian (p. 134) diz que curvas menores que 20 graus têm risco baixo, mas que o paciente muito imaturo com mais de 20 graus tem risco substancial. O Campbell's Operative Orthopaedics, 15ª ed. (p. 1538 aprox.), dá uma estimativa grosseira parecida: cerca de 20% de risco para uma curva de 20 graus e 90% para uma de 50.\n\nA tabela está na seção \"História natural: quem progride e quanto\" do resumo.",
-  "correta": "**B) 22%.** Curva entre 5 e 19 graus com RISSER 0 ou 1 progride em 22% pela tabela de LONSTEIN e CARLSON.",
+  "conceito": "Dez graus e RISSER 1: uma curva mínima num esqueleto que ainda tem quase todo o estirão pela frente. A questão pede uma porcentagem, e ela está escrita numa tabela de quatro casas. O trabalho é achar a casa e entender por que o número é tão maior do que a curva sugere.\n\n**O ponto de partida.** Pelo Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 9, p. 132 a 135), a progressão da escoliose idiopática do adolescente depende de quatro fatores: sexo, **crescimento restante**, **magnitude** e padrão da curva. O livro diz que curvas menores que 20 graus têm risco baixo, sobretudo perto da maturidade; e que o paciente imaturo (pré-menarca, RISSER 0) com mais de 20 graus tem risco substancial (p. 134).\n\n**Onde está o RISSER 1.** O RISSER é a ossificação da apófise ilíaca, de lateral para medial, em quatro quadrantes. Na figura abaixo (Fig. 9.2, p. 134), o grau 1 é o primeiro quarto, na ponta lateral da crista, marcado pelo número 1; o resto da crista ainda é cartilagem. Pelo livro, os graus 0 e 1 concentram o risco (p. 133). Na sequência da puberdade, o pico de crescimento e o fechamento da trirradiada vêm antes do RISSER 1, que marca o início da desaceleração (p. 134): o paciente ainda tem crescimento importante pela frente.\n\n**A tabela.** LONSTEIN e CARLSON cruzaram as duas variáveis (Tachdjian, Tabela 9.1, p. 135):\n\n| RISSER | 5 a 19 graus | 20 a 29 graus |\n|---|---|---|\n| 0 ou 1 | **22%** | 68% |\n| 2, 3 ou 4 | 1,6% | 23% |\n\nUma curva de 10 graus está na coluna de 5 a 19; RISSER 1 está na linha de cima. A resposta é **22%**.\n\n**O que a tabela ensina.** Leia em duas direções. Na horizontal, a mesma maturidade com curva maior triplica o risco no imaturo, de 22% para 68%. Na vertical, a mesma curva pequena progride em 22% no imaturo e em 1,6% no maduro: o crescimento restante multiplica o risco mais de dez vezes. É por isso que uma curva de 10 graus, quase a definição mínima de escoliose, não pode ser dispensada sem saber o RISSER. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 40, Box 40.2, p. 1538 aprox.), dá uma estimativa grosseira compatível: cerca de 20% para uma curva de 20 graus e 90% para uma de 50, e lembra que a melhora espontânea é rara (3%, quase sempre abaixo de 11 graus).\n\n> **Na prova:** RISSER 0 a 1: **22%** (5 a 19 graus) e 68% (20 a 29). RISSER 2 a 4: 1,6% e 23%.\n\nA tabela está na seção \"História natural: quem progride e quanto\" do resumo.",
+  "correta": "**B) 22%.** É a casa da Tabela 9.1 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 9, p. 135), que cruza RISSER 0 ou 1 com curva de 5 a 19 graus, segundo LONSTEIN e CARLSON. A curva é pequena, mas o RISSER 1, com só o primeiro quadrante lateral da apófise ilíaca ossificado (Fig. 9.2, p. 134), está na faixa que o livro chama de maior risco, e é o crescimento restante que eleva a chance de progressão a mais de um quinto.",
   "incorretas": {
-   "A": "**18%** não aparece na tabela; fica entre o 1,6% do maduro e o 22% do imaturo, sem corresponder a nenhuma casa.",
-   "C": "**26%** se aproxima do 23% da linha RISSER 2 a 4 com curva de 20 a 29 graus, que não é o caso de 10 graus com RISSER 1.",
-   "D": "**30%** não corresponde a nenhuma combinação da tabela; o salto real no imaturo é de 22% para 68% quando a curva passa de 20 graus."
+   "A": "**18%** não aparece na tabela de LONSTEIN e CARLSON. As quatro casas da Tabela 9.1 do Tachdjian (cap. 9, p. 135) são 22%, 68%, 1,6% e 23%; um valor entre o 1,6% do maduro e o 22% do imaturo não corresponde a nenhuma combinação de RISSER e magnitude. Serve para pegar quem lembra que o risco é \"perto de 20%\" sem saber o número.",
+   "C": "**26%** se aproxima do 23% da tabela, que é a casa de outro paciente: curva de 20 a 29 graus com RISSER 2, 3 ou 4 (Tachdjian, cap. 9, Tabela 9.1, p. 135). Para chegar a esse número seria preciso trocar a curva de 10 por uma de mais de 20 graus e o RISSER 1 por um mais maduro. Nenhuma das duas trocas cabe no enunciado.",
+   "D": "**30%** não corresponde a nenhuma casa da Tabela 9.1 do Tachdjian (cap. 9, p. 135). No imaturo, o salto real é de 22% para 68% quando a curva passa de 20 graus; não há degrau intermediário de 30%. O número lembra a ordem de grandeza da estimativa do Campbell para curvas de 20 graus (cerca de 20%, Box 40.2, p. 1538 aprox.), mas nem ela dá 30%."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), pp. 134 e 135, Tabela 9.1",
-   "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1538 aprox.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9 (Scoliosis), p. 132 a 135 (Fig. 9.2; Tabela 9.1)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), Box 40.2, p. 1538 aprox.",
    "Resumo OrtoQuestões: Escoliose idiopática"
   ],
-  "geradoEm": "2026-11-01",
+  "imagens": [
+   {
+    "arquivo": "coluna/tachdjian6-9-2.jpeg",
+    "legenda": "Fonte: Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9, Fig. 9.2, p. 134. Sinal de RISSER: a ossificação da apófise ilíaca avança de lateral para medial em quatro quadrantes (graus 1 a 4); no grau 5 a apófise já se fundiu ao ilíaco e o esqueleto está maduro.",
+    "largura": 1008,
+    "altura": 722
+   }
+  ],
+  "geradoEm": "2026-11-10",
   "conferido": false
  },
  "coluna-0031": {
@@ -3067,19 +3075,27 @@
   "conferido": false
  },
  "coluna-0243": {
-  "conceito": "O colete funciona empurrando as costelas e o tronco a partir de apoios abaixo da axila. Se o ápice da curva fica alto demais, os coxins não alcançam a deformidade, e é isso que a pergunta testa.\n\n**A regra.** Os coletes de perfil baixo (TLSO, ou OTLS na sigla em português) só são eficazes quando o **ápice da curva está em T7 ou abaixo** (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 147). O Campbell's Operative Orthopaedics, 15ª ed. (p. 1547 aprox.), confirma que os coletes infra-axilares, como o Boston, o Wilmington e o Miami, substituíram o MILWAUKEE e funcionam melhor com ápice em T7 ou abaixo. Felizmente, é o caso da maioria das AIS. Curvas torácicas altas e cervicotorácicas aparecem entre as contraindicações relativas (Tachdjian, p. 148).\n\n**Traduzindo para a questão.** \"Ápice inferior a T6\" significa ápice abaixo de T6, isto é, de T7 para baixo: exatamente a regra do livro. As outras opções liberariam o TLSO para ápices em T5, T6 ou mais altos, que ele não alcança.\n\n**O detalhe da juvenil.** Na escoliose juvenil, o Campbell 15 (p. 1529) usa T8 ou abaixo como limite do TLSO.\n\nO colete está na seção \"A indicação do colete\" do resumo.",
-  "correta": "**A) T6.** Ápice inferior a T6 equivale a ápice em T7 ou abaixo, onde o TLSO de perfil baixo consegue atuar.",
+  "conceito": "Um colete só corrige onde consegue apertar. A questão testa até que altura da coluna o colete de perfil baixo alcança a curva, e a resposta sai de uma regra anatômica que os dois livros repetem com a mesma vértebra.\n\n**Para que serve o colete.** Na escoliose idiopática do adolescente (AIS), o colete existe para impedir que a curva piore enquanto a criança cresce; não corrige de forma duradoura. Pelo Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 9, p. 147), está indicado nos adolescentes em crescimento, **RISSER 0, 1 ou 2**, com curvas de **25 a 45 graus**, ou nos muito imaturos que documentam progressão acima de 5 graus em curvas de 15 a 25.\n\n**O que é o OTLS.** A órtese toracolombossacral (TLSO, na sigla inglesa) de perfil baixo, ou axilar, é o colete mais usado hoje, feita sob medida, muitas vezes por CAD-CAM, e deve dar no colete uma correção de pelo menos 40% a 50% da curva (Tachdjian, p. 147 a 150). A figura abaixo (Fig. 9.19, p. 149) mostra um desses coletes de frente e de costas: repare que não há anel cervical, e a borda mais alta para na região axilar. O MILWAUKEE, de 1946, tinha o anel cervical e hoje é histórico para a AIS (p. 149).\n\n**A regra.** O limite do colete baixo é escrito com a mesma vértebra nos dois livros: a órtese de perfil baixo **só funciona se o ápice da curva estiver em T7 ou abaixo** (Tachdjian, p. 147; Campbell's Operative Orthopaedics, 15ª ed., cap. 40, p. 1547 aprox.). Felizmente é o caso da maioria das AIS. Curvas torácicas altas e cervicotorácicas respondem mal, e o Tachdjian põe a curva torácica alta entre as **contraindicações relativas** do colete, ao lado do sexo masculino (p. 148).\n\n**Traduzindo o enunciado.** \"Ápice inferior a T6\" quer dizer ápice abaixo de T6, isto é, de **T7 para baixo**. É a regra do livro escrita de outro jeito.\n\n**Os livros lado a lado.**\n\n| | Tachdjian (cap. 9) | Campbell 15 (cap. 40) |\n|---|---|---|\n| AIS | ápice em T7 ou abaixo (p. 147) | ápice em T7 ou abaixo (p. 1547 aprox.) |\n| Juvenil | (não dá vértebra) | ápice em T8 ou abaixo (p. 1528 e 1529) |\n| Contraindicação relativa | curva torácica alta, sexo masculino (p. 148) | (não detalha) |\n\nNa juvenil, que responde menos ao colete, o Campbell sobe a exigência uma vértebra: o TLSO serve para ápice em **T8 ou abaixo**. Se a pergunta fosse sobre a juvenil, o número mudaria.\n\n> **Na prova:** TLSO de perfil baixo = ápice em **T7 ou abaixo** (abaixo de T6). Ápice mais alto: o colete não alcança.\n\nA indicação está na seção \"A indicação do colete\" do resumo.",
+  "correta": "**A) T6.** Ápice inferior a T6 equivale a ápice em T7 ou abaixo, o limite que o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 9, p. 147), e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 40, p. 1547 aprox.), dão para os coletes de perfil baixo funcionarem na escoliose idiopática do adolescente. O colete da Fig. 9.19 sobe só até a região axilar; curvas com ápice mais alto, as torácicas altas, respondem mal a ele e são contraindicação relativa (Tachdjian, p. 148).",
   "incorretas": {
-   "B": "**Abaixo de T5** incluiria curvas com ápice em T6, alto demais para os coxins do TLSO.",
-   "C": "**Abaixo de T4** aceitaria ápices torácicos altos, que respondem mal à órtese infra-axilar.",
-   "D": "**Abaixo de T3** liberaria o TLSO quase para a coluna cervicotorácica, situação em que ele é relativamente contraindicado."
+   "B": "**Ápice inferior a T5** incluiria as curvas com ápice em T6, uma vértebra acima do limite do livro. O Tachdjian (cap. 9, p. 147) exige T7 ou abaixo; uma curva centrada em T6 já é torácica alta para o colete de perfil baixo, que o mesmo livro coloca entre as contraindicações relativas (p. 148). A diferença parece pequena, mas é exatamente a vértebra que a regra exclui.",
+   "C": "**Ápice inferior a T4** aceitaria ápices em T5 e T6, curvas torácicas altas que, pelo Tachdjian (cap. 9, p. 148), respondem mal à órtese e são contraindicação relativa ao colete. Seria a regra de um colete diferente, e o único com anel cervical que o livro descreve, o MILWAUKEE, hoje é de interesse histórico na AIS (p. 149).",
+   "D": "**Ápice inferior a T3** liberaria o colete de perfil baixo quase para a transição cervicotorácica, a região que o resumo, com o Tachdjian (cap. 9, p. 147 e 148), aponta como a que pior responde à órtese. É a opção mais distante da regra: três vértebras acima do limite de T7. Uma curva tão alta, se precisar de tratamento, não se resolve com TLSO."
   },
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), pp. 147 e 148",
-   "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), pp. 1529 e 1547 aprox.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9 (Scoliosis), p. 146 a 149 (Fig. 9.19)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1528, 1529 e 1547 aprox.",
    "Resumo OrtoQuestões: Escoliose idiopática"
   ],
-  "geradoEm": "2026-11-01",
+  "imagens": [
+   {
+    "arquivo": "coluna/tachdjian6-9-19.jpeg",
+    "legenda": "Fonte: Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9, Fig. 9.19, p. 149. Órtese toracolombossacral de perfil baixo, feita sob medida por CAD-CAM, vista de frente (A) e de trás (B): não tem anel cervical e sobe só até a região da axila.",
+    "largura": 1500,
+    "altura": 1040
+   }
+  ],
+  "geradoEm": "2026-11-10",
   "conferido": false
  },
  "coluna-0251": {
@@ -3140,19 +3156,27 @@
   "conferido": false
  },
  "coluna-0253": {
-  "conceito": "Uma curva infantil pequena pode desaparecer até os 3 anos ou virar uma deformidade grave com doença pulmonar restritiva. MEHTA, em 1972, encontrou na radiografia inicial um jeito de separar as duas.\n\n**O ângulo costovertebral.** No nível da vértebra apical, traça-se uma perpendicular à placa terminal e, de cada lado, uma linha que vai do colo à cabeça da costela. O ângulo entre elas é o RVA (Campbell's Operative Orthopaedics, 15ª ed., p. 1525). O que importa não é nenhum dos dois isoladamente, mas a **diferença**: RVA côncavo menos RVA convexo, o RVAD.\n\n**O valor de corte.** RVAD menor que 20 graus: 83% resolvem; maior que 20: 84% progridem (Campbell 15). O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 199), dá 80% de progressão na fase 1 com RVAD de 20 graus ou mais. A medida tem variabilidade acima de 10 graus em 18% dos pares, por isso o seguimento continua indispensável.\n\n**A pegadinha.** As alternativas falsas pegam um lado só, ou chamam de \"ângulo de MEHTA\" o próprio RVA, sem dizer que é a diferença.\n\nO método está na seção \"O método de MEHTA\" do resumo.",
-  "correta": "**D) a diferença entre o ângulo costovertebral da concavidade e o da convexidade da curva é maior que 20°.** O RVAD acima de 20 graus prediz progressão em 84%.",
+  "conceito": "Uma curva infantil pequena pode sumir sozinha até os 3 anos ou virar uma deformidade grave com doença pulmonar restritiva. MEHTA, em 1972, encontrou na primeira radiografia um jeito de separar uma da outra, e a questão pede exatamente o critério dele.\n\n**O que é a escoliose idiopática infantil.** É a escoliose estrutural antes dos 3 anos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 40, p. 1525), descreve o perfil que a separa da do adolescente: **mais frequente nos meninos** e com curva principalmente **torácica esquerda**. O dado mais importante é a história natural: **70% a 90% das curvas resolvem espontaneamente**. Algumas, porém, progridem depressa. O problema clínico é saber, cedo, em qual grupo a criança está.\n\n**Como se mede.** Na vértebra apical, traça-se uma perpendicular à placa terminal e, de cada lado, uma linha do colo à cabeça da costela; o ângulo entre elas é o **ângulo costovertebral** (RVA). O que importa não é nenhum dos lados isolado, mas a **diferença** entre o RVA da concavidade e o da convexidade: o **RVAD** (Campbell, p. 1525; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9, p. 199). Na figura abaixo (Fig. 9.72, p. 201), acompanhe em A as linhas pontilhadas: a perpendicular à placa da vértebra apical e as linhas das duas costelas, com 85 graus de um lado e 54 do outro; a conta 85 menos 54 dá **31 graus**, um RVAD acima do limite.\n\n**A segunda medida.** O método tem um segundo passo, a **fase da costela**, que olha a cabeça da costela do lado convexo em relação ao corpo da vértebra apical: em B, a cabeça da costela convexa não se sobrepõe ao corpo vertebral (**fase 1**); quando passa a se sobrepor (**fase 2**), a curva é progressiva e dispensa o RVAD.\n\n| Achado (Campbell 15, p. 1525; Tachdjian, p. 199) | Prognóstico |\n|---|---|\n| RVAD menor que 20 graus | 83% resolvem (Campbell) |\n| RVAD maior que 20 graus | 84% progridem (Campbell) |\n| Fase 1 com RVAD de 20 graus ou mais | 80% progressivas (Tachdjian) |\n| Fase 2 | progride independentemente do RVAD |\n\nOs dois livros chegam ao mesmo corte de 20 graus por números um pouco diferentes, 84% e 80%. A medida tem variabilidade de mais de 10 graus em 18% dos pares (Campbell), e por isso o seguimento continua indispensável.\n\n> **Na prova:** MEHTA = **diferença** côncavo menos convexo (RVAD) acima de **20 graus** progride; fase 2 progride sempre.\n\nO método está na seção \"O método de MEHTA\" do resumo.",
+  "correta": "**D) A diferença entre o ângulo costovertebral da concavidade e o da convexidade da curva é maior que 20 graus.** É o RVAD de MEHTA: acima de 20 graus, 84% das curvas infantis progridem, contra 83% de resolução abaixo desse valor (Campbell's Operative Orthopaedics, 15ª ed., cap. 40, p. 1525); o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 9, p. 199), dá 80% de progressão na fase 1 com RVAD de 20 graus ou mais. Nenhum dos dois livros usa o ângulo de um lado só como critério.",
   "incorretas": {
-   "A": "**Ângulo de MEHTA maior que 20 graus** é vago: não diz se é o RVA de um lado ou a diferença; o critério do livro é a diferença.",
-   "B": "**RVA da concavidade acima de 20 graus** isolado não é critério; ele só ganha valor quando comparado com o da convexidade.",
-   "C": "**RVA da convexidade acima de 20 graus** isolado também não prediz nada; é a subtração dos dois lados que separa curva resolutiva de progressiva."
+   "A": "**Ângulo de MEHTA maior que 20 graus** usa o nome do autor sem dizer o que se mede. O critério que os livros dão para a infantil é a diferença entre os dois ângulos costovertebrais, e não um ângulo único (Campbell, cap. 40, p. 1525; Tachdjian, cap. 9, p. 199). O resumo registra o ângulo de MEHTA também depois da maturidade, como fator de progressão da curva torácica quando passa de 30 graus (Campbell, Tabela 40.3, p. 1540), outro contexto e outro número. Sem a palavra diferença, a opção não descreve o método.",
+   "B": "**Ângulo costovertebral da concavidade maior que 20 graus** mede só um lado. O RVA da concavidade isolado não é critério de progressão: ele só ganha valor quando subtraído do RVA da convexidade (Campbell, cap. 40, p. 1525). Na Fig. 9.72 do Tachdjian (p. 201), por exemplo, os dois lados medem 85 e 54 graus, e o que importa é o resultado da conta, 31 graus.",
+   "C": "**Ângulo costovertebral da convexidade maior que 20 graus** repete o erro de medir um lado só, agora o outro. O lado convexo tem papel próprio no método, mas é outro: é ali que se avalia a fase da costela, com a cabeça da costela sobreposta ou não ao corpo vertebral. O número que o livro usa continua sendo a diferença entre os dois lados (Tachdjian, cap. 9, p. 199); um valor alto num lado só nada diz se o outro for parecido."
   },
   "referencias": [
-   "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1525",
-   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), p. 199",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1525 e 1540 (Tabela 40.3)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9 (Scoliosis), p. 199 e 201 (Fig. 9.72)",
    "Resumo OrtoQuestões: Escoliose idiopática"
   ],
-  "geradoEm": "2026-11-01",
+  "imagens": [
+   {
+    "arquivo": "coluna/tachdjian6-9-72.jpeg",
+    "legenda": "Fonte: Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9, Fig. 9.72, p. 201. Em A, a diferença dos ângulos costovertebrais (RVAD) medida na vértebra apical: 85 menos 54 dá 31 graus. Em B, costelas em fase 1, sem a cabeça da costela sobrepor o corpo vertebral.",
+    "largura": 743,
+    "altura": 1306
+   }
+  ],
+  "geradoEm": "2026-11-10",
   "conferido": false
  },
  "coluna-0254": {
@@ -4763,19 +4787,26 @@
   "conferido": false
  },
  "coluna-0342": {
-  "conceito": "A afirmação dá uma curva de 25 graus e um RISSER III e cobra uma porcentagem. É a tabela de LONSTEIN e CARLSON, e o erro de quem marca \"Certo\" é pegar o número da linha errada.\n\n**A tabela.** Reproduzida como Tabela 9.1 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 135), ela cruza RISSER e magnitude:\n\n| RISSER | 5 a 19 graus | 20 a 29 graus |\n|---|---|---|\n| 0 ou 1 | 22% | 68% |\n| 2, 3 ou 4 | 1,6% | 23% |\n\nUma curva de 25 graus está na coluna de 20 a 29 graus. RISSER III pertence à linha de baixo. A progressão esperada é de **23%**, não de mais de 60%. O número acima de 60% (68%) é o do imaturo, RISSER 0 ou 1.\n\n**O sentido clínico.** O RISSER III indica que três quadrantes da apófise ilíaca já ossificaram, de lateral para medial; o crescimento está em desaceleração. Na Tabela 9.2 do Tachdjian (p. 147), curvas de 30 a 40 graus em RISSER 3, 4 ou 5 vão para observação, sem colete. Uma curva de 25 graus nessa fase tem risco real, mas modesto.\n\nA tabela está na seção \"História natural: quem progride e quanto\" do resumo.",
-  "correta": "**B) Errado.** Resposta provável: curva de 20 a 29 graus com RISSER 2 a 4 progride em 23%; o valor acima de 60% é o do RISSER 0 ou 1.",
+  "conceito": "A afirmação dá dois números, 25 graus e RISSER III, e pergunta se o risco passa de 60%. É uma leitura da tabela de LONSTEIN e CARLSON, e o erro de quem marca \"Certo\" é ler a linha do paciente imaturo para um paciente que já está terminando de crescer.\n\n**Por que o crescimento manda.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 9, p. 132 a 135), organiza a progressão da escoliose idiopática do adolescente em quatro fatores: **sexo, crescimento restante, magnitude e padrão da curva**. A curva piora sobretudo no estirão. Por isso todo cálculo de risco começa por saber quanto falta crescer.\n\n**O que o RISSER III diz.** O sinal de RISSER é a ossificação da apófise ilíaca, que avança de **lateral para medial** em quatro quadrantes (p. 133). Na figura abaixo (Fig. 9.2, p. 134), acompanhe os números sobre a crista: o grau 1 é o primeiro quarto lateral, o 2 metade, o **3 três quartos**, o 4 a crista toda coberta, e o 5 a apófise já fundida ao ilíaco. Um RISSER III, portanto, tem três quadrantes ossificados: o crescimento já desacelerou. Na sequência do livro, o fechamento da cartilagem trirradiada vem depois do pico de crescimento e antes do RISSER 1 e da menarca (p. 134); no RISSER III, essas etapas já passaram.\n\n**A tabela.** LONSTEIN e CARLSON cruzaram magnitude e RISSER (Tachdjian, Tabela 9.1, p. 135):\n\n| RISSER | 5 a 19 graus | 20 a 29 graus |\n|---|---|---|\n| 0 ou 1 | 22% | **68%** |\n| 2, 3 ou 4 | 1,6% | **23%** |\n\nUma curva de 25 graus está na coluna de 20 a 29 graus. RISSER III pertence à linha de baixo. A progressão esperada é de **23%**, cerca de um em cada quatro, e não de mais de 60%. O número acima de 60% existe na tabela, mas é o do imaturo, RISSER 0 ou 1.\n\n**O que isso muda na conduta.** Na Tabela 9.2 do Tachdjian (p. 147), curvas de 30 a 40 graus em RISSER 3, 4 ou 5 vão para **observação**, e o colete fica para os RISSER 0 a 2. Uma curva de 25 graus em RISSER III tem risco real, mas modesto, e segue em acompanhamento. Depois da maturidade, curvas menores que 30 graus raramente progridem (p. 134 e 135).\n\n> **Na prova:** 20 a 29 graus = 68% no RISSER 0 a 1 e 23% no RISSER 2 a 4. RISSER III não é imaturo.\n\nA tabela está na seção \"História natural: quem progride e quanto\" do resumo.",
+  "correta": "**B) Errado.** Resposta provável, pela Tabela 9.1 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 9, p. 135): uma curva de 20 a 29 graus num paciente RISSER 2, 3 ou 4 progride em 23%. O RISSER III, com três quadrantes da apófise ilíaca ossificados (Fig. 9.2, p. 134), já está nessa linha. O valor acima de 60%, 68%, é o da mesma curva no RISSER 0 ou 1.",
   "incorretas": {
-   "A": "**Certo** usaria o 68% da linha do RISSER 0 a 1 para um paciente RISSER III, que está na linha de 23%."
+   "A": "**Certo** seria a resposta para o paciente imaturo: curva de 20 a 29 graus em RISSER 0 ou 1 progride em 68% pela Tabela 9.1 do Tachdjian (cap. 9, p. 135), e é desse número que a afirmação tira o \"mais de 60%\". Num RISSER III, porém, a mesma curva cai na linha de 23%. Quem marca Certo acerta a coluna da magnitude e erra a linha da maturidade."
   },
+  "provavel": "B",
+  "alerta": "Questão sem gabarito oficial; a letra B é o gabarito da bibliografia do acervo. Pela Tabela 9.1 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 9, p. 135), uma curva de 20 a 29 graus com RISSER 2 a 4 progride em 23%, então a afirmação é errada.",
   "referencias": [
-   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9 (Scoliosis), pp. 133, 135 e 147, Tabelas 9.1 e 9.2",
-   "Campbell's Operative Orthopaedics, 15ª ed., cap. 40 (Scoliosis), p. 1538 aprox.",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9 (Scoliosis), p. 132 a 135 e 147 (Fig. 9.2; Tabelas 9.1 e 9.2)",
    "Resumo OrtoQuestões: Escoliose idiopática"
   ],
-  "provavel": "B",
-  "alerta": "Questão sem gabarito oficial. Pela Tabela 9.1 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 135), uma curva de 20 a 29 graus com RISSER 2 a 4 progride em 23%, então a afirmação é errada.",
-  "geradoEm": "2026-11-01",
+  "imagens": [
+   {
+    "arquivo": "coluna/tachdjian6-9-2.jpeg",
+    "legenda": "Fonte: Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 9, Fig. 9.2, p. 134. Sinal de RISSER: a ossificação da apófise ilíaca avança de lateral para medial em quatro quadrantes (graus 1 a 4); no grau 5 a apófise já se fundiu ao ilíaco e o esqueleto está maduro.",
+    "largura": 1008,
+    "altura": 722
+   }
+  ],
+  "geradoEm": "2026-11-10",
   "conferido": false
  },
  "coluna-0343": {
