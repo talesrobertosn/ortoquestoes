@@ -231,7 +231,7 @@
 @media (min-width: 40.01rem) { .cn-estreito { display: none; } }
 /* ── Celular ── */
 @media (max-width: 40rem) {
-  .cn-etapa b { white-space: normal; line-height: 1.15; font-size: 0.75rem; }
+  .cn-etapa b { white-space: normal; line-height: 1.15; font-size: 0.6875rem; overflow-wrap: normal; word-break: normal; overflow: visible; }
   .cn-largo { display: none; }
   .cn-estrada__trilho { grid-template-columns: none !important; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
   .cn-estrada__voce { display: none; }

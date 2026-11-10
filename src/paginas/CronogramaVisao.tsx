@@ -177,7 +177,7 @@ export function VisaoCronograma({ plano, calculo, indice, respondidas, aoComecar
           </li>}
 
           {/* 2. As questões de hoje */}
-          <li className={'cn-passo' + (metaFeita ? ' cn-passo--feito' : '')}>
+          <li className={'cn-passo cn-passo--questoes' + (metaFeita ? ' cn-passo--feito' : '')}>
             <span className="cn-passo__n" aria-hidden="true">{metaFeita ? <Icone nome="check" tamanho={16} /> : 2}</span>
             <div className="cn-passo__corpo">
               <h3>{folgaHoje ? 'Sem questões hoje' : calculo.metaDiaria > 0 ? `As ${calculo.metaDiaria} questões de hoje` : calculo.adiantadoHoje > 0 ? 'As questões de hoje já foram feitas' : 'Questões de hoje'}

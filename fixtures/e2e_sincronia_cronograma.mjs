@@ -110,11 +110,11 @@ async function aparelho(nome, desvio) {
 }
 async function abrirCronograma(p) {
   await p.goto(BASE + '#/cronograma')
-  await p.waitForSelector('.cp-lista__item--novas', { timeout: 30_000 })
+  await p.waitForSelector('.cn-passo--questoes', { timeout: 30_000 })
   await p.waitForFunction(() => /Sincronizado/.test(document.querySelector('.indicador-sincronia')?.textContent ?? ''), null, { timeout: 30_000 })
 }
 const feitasNoCartao = async p => {
-  const t = await p.locator('.cp-lista__item--novas').innerText()
+  const t = await p.locator('.cn-passo--questoes').innerText()
   return Number(t.match(/(\d+) de (\d+) feitas/)?.[1] ?? 0)
 }
 async function responderNaSessao(p, n) {
@@ -144,14 +144,14 @@ try {
   const computador = await aparelho('computador', 9 * 60_000)
   const pc = await computador.abrir()
   await abrirCronograma(pc)
-  await pc.locator('.cp-hoje button:has-text("Começar"), .cp-hoje a:has-text("Começar"), button:has-text("Começar:")').first().click()
+  await pc.locator('.cn-hoje button:has-text("Começar"), .cn-hoje a:has-text("Começar"), button:has-text("Começar:")').first().click()
   await pc.waitForURL(/#\/sessao/)
   await responderNaSessao(pc, 2)
   await pc.waitForFunction(() => true)
   await pc.goto(BASE + '#/cronograma'); await abrirCronograma(pc)
   assert.equal(await feitasNoCartao(pc), 2)
   const continuarAntes = await pc.locator('text=/Continuar: faltam \\d+ questões/').first().innerText()
-  await pc.locator('.cp-hoje').screenshot({ path: join(capturas, '1-computador-antes.png') })
+  await pc.locator('.cn-hoje').screenshot({ path: join(capturas, '1-computador-antes.png') })
   await esconder(pc, true)
 
   // 2. MacBook: 7 min atrasado. Abre o cronograma (já vê as 2), responde 5 e lê o resumão.
@@ -165,8 +165,8 @@ try {
   const idsMac = Object.keys((await sessaoDe(mac)).respostas)
   assert.equal(idsMac.length, 5)
   await mac.goto(BASE + '#/cronograma'); await abrirCronograma(mac)
-  await mac.waitForFunction(() => /7 de \d+ feitas/.test(document.querySelector('.cp-lista__item--novas')?.textContent ?? ''), null, { timeout: 15_000 })
-  const area = await mac.locator('.cp-lista__item--resumao a').getAttribute('href')
+  await mac.waitForFunction(() => /7 de \d+ feitas/.test(document.querySelector('.cn-passo--questoes')?.textContent ?? ''), null, { timeout: 15_000 })
+  const area = await mac.locator('.cn-extras a[href*="resumos/frases"]').getAttribute('href')
   await mac.goto(BASE + area.replace(/^.*#/, '#'))
   await mac.locator('button:has-text("Li esta área")').first().click()
   await mac.waitForFunction(() => true)
@@ -179,16 +179,16 @@ try {
   // 3. Horas depois, a aba do computador volta ao primeiro plano. Sem recarregar.
   await pc.waitForTimeout(1600)
   await esconder(pc, false)
-  await pc.waitForFunction(() => /7 de \d+ feitas/.test(document.querySelector('.cp-lista__item--novas')?.textContent ?? ''), null, { timeout: 20_000 })
+  await pc.waitForFunction(() => /7 de \d+ feitas/.test(document.querySelector('.cn-passo--questoes')?.textContent ?? ''), null, { timeout: 20_000 })
   await pc.waitForSelector('.cp-lista__item--resumao.cp-lista__item--feito', { timeout: 70_000 })
   const sessaoPc = await sessaoDe(pc)
   for (const id of idsMac) {
     if (sessaoPc.ids.includes(id)) assert.ok(sessaoPc.respostas[id]?.outroAparelho, `a sessão do computador marca ${id} como feita no outro aparelho`)
   }
-  const continuarDepois = await pc.locator('.cp-hoje').innerText()
+  const continuarDepois = await pc.locator('.cn-hoje').innerText()
   console.log(`  computador antes: "${continuarAntes}"; depois: ${continuarDepois.match(/Continuar: faltam \d+[^\n]*/)?.[0] ?? continuarDepois.match(/Começar: \d+[^\n]*/)?.[0] ?? '(sem botão)'}`)
   assert.match(await pc.locator('.indicador-sincronia').innerText(), /Sincronizado/)
-  await pc.locator('.cp-hoje').screenshot({ path: join(capturas, '3-computador-depois.png') })
+  await pc.locator('.cn-hoje').screenshot({ path: join(capturas, '3-computador-depois.png') })
   // A sessão aberta no computador pula o que o MacBook fez.
   await pc.goto(BASE + '#/sessao')
   await pc.waitForSelector('.progresso, .sessao-palco', { timeout: 20_000 })
@@ -216,13 +216,13 @@ try {
   await novo.waitForSelector('.cp-lista__item--resumao.cp-lista__item--feito', { timeout: 15_000 })
 
   // Duas abas abertas no computador: responder na segunda chega à primeira e ao servidor uma vez só.
-  await pc2.locator('.cp-hoje :is(a, button):has-text("Continuar:")').first().click()
+  await pc2.locator('.cn-hoje :is(a, button):has-text("Continuar:")').first().click()
   await pc2.waitForURL(/#\/sessao/)
   await responderNaSessao(pc2, 1)
   await pc.goto(BASE + '#/cronograma'); await abrirCronograma(pc)
-  await pc.waitForFunction(() => /8 de \d+ feitas/.test(document.querySelector('.cp-lista__item--novas')?.textContent ?? ''), null, { timeout: 20_000 })
+  await pc.waitForFunction(() => /8 de \d+ feitas/.test(document.querySelector('.cn-passo--questoes')?.textContent ?? ''), null, { timeout: 20_000 })
   await novo.waitForTimeout(1600); await esconder(novo, true); await esconder(novo, false)
-  await novo.waitForFunction(() => /8 de \d+ feitas/.test(document.querySelector('.cp-lista__item--novas')?.textContent ?? ''), null, { timeout: 20_000 })
+  await novo.waitForFunction(() => /8 de \d+ feitas/.test(document.querySelector('.cn-passo--questoes')?.textContent ?? ''), null, { timeout: 20_000 })
   const unicas = new Set(respondidasNoServidor().map(l => l.item))
   assert.equal(unicas.size, respondidasNoServidor().length, 'nenhuma linha duplicada')
   assert.equal(unicas.size, 8)

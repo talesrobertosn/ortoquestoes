@@ -31,3 +31,11 @@
   .ct-cena__sino, .ct-cena__luz, .ct-cena__graos i { animation: none; }
   .ct-cena__graos { display: none; }
 }
+
+/* A estrada até a prova (10/11/2026): os estandartes do castelo tremulam e as chaminés da vila soltam fumaça. */
+.ct-cena__estandarte { position: absolute; image-rendering: pixelated; transform-origin: 0 50%; animation: ct-estandarte 3.6s ease-in-out infinite; }
+@keyframes ct-estandarte { 0%, 100% { transform: skewY(0) scaleX(1); } 35% { transform: skewY(-5deg) scaleX(0.94); } 70% { transform: skewY(4deg) scaleX(1.03); } }
+.ct-cena__fumaca { position: absolute; aspect-ratio: 1; margin: -1.2% 0 0 -0.6%; border-radius: 50%; background: rgba(240, 232, 220, 0.5); filter: blur(2px); opacity: 0; animation: ct-fumaca 6.5s ease-out infinite; }
+.ct-cena--noite .ct-cena__fumaca { background: rgba(170, 180, 210, 0.35); }
+@keyframes ct-fumaca { 0% { opacity: 0; transform: translate(0, 0) scale(0.6); } 15% { opacity: 0.7; } 100% { opacity: 0; transform: translate(140%, -420%) scale(2.2); } }
+@media (prefers-reduced-motion: reduce) { .ct-cena__estandarte { animation: none; } .ct-cena__fumaca { display: none; } }
