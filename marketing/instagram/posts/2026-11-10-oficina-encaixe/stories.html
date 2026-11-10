@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Oficina do encaixe (stories)</title>
+<!-- Stories "Oficina do encaixe" (padrão aula, marketing/instagram/estilos/PADRAO-AULA.md). Questão trauma-0187
+     (TEOT 2022), gabarito B: sobreposição tibiofibular e ângulo talocrural. Texto do comentário e do resumo
+     "Fraturas do tornozelo" (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65, tabela 65-2).
+     Radiografias normais e a Weber B: enviadas e liberadas pelo Tales em 10/11/2026 (img/). Arte em pixel art por
+     código: arte_oficina.py -> arte/. Sem desenho de anatomia; nas radiografias, só recorte e moldura.
+     node marketing/instagram/gerar.mjs marketing/instagram/posts/2026-11-10-oficina-encaixe/stories.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Caveat; src: url(../../fontes/caveat-latin-wght-normal.woff2) format('woff2'); font-weight: 400 700; }
+:root { --tinta: #2a1c12; --tinta2: #5a4636; --verde: #14655e; --verm: #b23a2a; --grafite: #3e4450; --azul: #2c4f98;
+  --papel: #f5ecd7; --latao: #d8a948; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #222; font-family: Inter, sans-serif; }
+section { position: relative; overflow: hidden; width: 1080px; height: 1920px; margin-bottom: 40px; color: var(--tinta);
+  background: url(arte/fundo.png) center / 1080px 1920px no-repeat; }
+.px { image-rendering: pixelated; }
+.abs { position: absolute; }
+
+/* placa de latão (cabeçalho) */
+.placa { position: absolute; left: 50%; top: 236px; transform: translateX(-50%); z-index: 5; display: flex; align-items: center; gap: 18px;
+  padding: 14px 34px 14px 20px; border-radius: 10px; white-space: nowrap;
+  background: linear-gradient(180deg, #fbe3a0 0%, #e2b45a 38%, #b98330 70%, #e9c271 100%);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.65), inset 0 -3px 0 rgba(90,52,16,.55), 0 0 0 3px #6a4416, 0 14px 26px rgba(0,0,0,.55); }
+.placa::before, .placa::after { content: ''; position: absolute; top: 50%; width: 12px; height: 12px; margin-top: -6px; border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff6d0, #a87a2c 60%, #5a3a10); box-shadow: inset 0 0 0 1px rgba(60,30,0,.5); }
+.placa::before { left: 8px; } .placa::after { right: 8px; }
+.placa .m { display: inline-flex; align-items: center; gap: 10px; margin-left: 10px; font: 800 28px Jakarta; letter-spacing: -.01em; color: #2a1a08; text-shadow: 0 1px 0 rgba(255,240,200,.7); }
+.placa .m img { width: 40px; height: 40px; border-radius: 9px; box-shadow: 0 0 0 2px rgba(60,30,0,.45); }
+.placa .m span { font-weight: 500; }
+.placa .sep { width: 2px; height: 34px; background: rgba(70,40,10,.45); box-shadow: 1px 0 0 rgba(255,240,200,.6); }
+.placa .t { font: 800 22px Inter; letter-spacing: .16em; text-transform: uppercase; color: #3a2408; text-shadow: 0 1px 0 rgba(255,240,200,.7); }
+
+/* folha de croqui presa com fita crepe */
+.folha { position: absolute; z-index: 3; padding: 46px 52px 40px;
+  background-color: var(--papel);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .45 0 0 0 0 .32 0 0 0 0 .18 0 0 0 .10 0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E"),
+    linear-gradient(rgba(44,79,152,.16) 1.5px, transparent 1.5px), linear-gradient(90deg, rgba(44,79,152,.16) 1.5px, transparent 1.5px),
+    linear-gradient(rgba(44,79,152,.07) 1px, transparent 1px), linear-gradient(90deg, rgba(44,79,152,.07) 1px, transparent 1px),
+    radial-gradient(ellipse at 30% 20%, #fbf5e6, transparent 70%);
+  background-size: 300px 300px, 120px 120px, 120px 120px, 24px 24px, 24px 24px, 100% 100%;
+  box-shadow: 0 2px 0 #d8c8a4, 0 26px 50px rgba(0,0,0,.55), inset 0 0 60px rgba(150,110,60,.18); border-radius: 3px; }
+.fita { position: absolute; z-index: 6; width: 150px; height: 46px; background: rgba(236,222,180,.86);
+  box-shadow: 0 2px 4px rgba(0,0,0,.2); clip-path: polygon(3% 0, 97% 4%, 100% 50%, 97% 100%, 2% 96%, 0 50%); }
+.fita::after { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(90deg, rgba(255,255,255,.12) 0 3px, transparent 3px 7px); }
+
+.rot { font: 700 38px Caveat; color: var(--azul); }
+.h { font: 800 66px/1.03 Jakarta; letter-spacing: -.035em; color: var(--tinta); }
+.h em { font-style: normal; color: var(--verde); }
+.txt { font: 500 30px/1.42 Inter; color: var(--tinta2); }
+.txt b { color: var(--tinta); font-weight: 750; }
+.txt .v { color: var(--verm); font-weight: 750; }
+.txt .g { color: var(--verde); font-weight: 750; }
+.nota { font: 700 34px/1.12 Caveat; color: var(--grafite); }
+.ref { font: 600 19px Inter; color: #8a7458; letter-spacing: .01em; }
+
+/* filme de raio X preso com grampo */
+.filme { position: absolute; z-index: 4; background: #07090b; padding: 12px; border-radius: 10px;
+  box-shadow: 0 0 0 2px #23282e, 0 18px 34px rgba(0,0,0,.45); }
+.filme { overflow: visible; }
+.filme .q { width: 100%; height: 100%; overflow: hidden; border-radius: 4px; background: #000; }
+.filme img.rx { display: block; width: 100%; height: 100%; object-fit: cover; }
+.filme.cab { padding-top: 62px; }
+.filme.cab::before { content: attr(data-id); position: absolute; left: 22px; right: 22px; top: 20px; font: 700 15px Inter; letter-spacing: .22em; color: #6e7880; text-transform: uppercase; text-align: right; }
+.filme .leg { position: absolute; left: 0; right: 0; text-align: center; font: 700 32px/1.05 Caveat; color: var(--grafite); }
+.grampo { position: absolute; z-index: 6; width: 60px; filter: drop-shadow(0 6px 5px rgba(0,0,0,.45)); }
+.obj { position: absolute; z-index: 6; filter: drop-shadow(0 10px 8px rgba(0,0,0,.42)); }
+
+.ficha { display: grid; grid-template-columns: 60px 1fr; gap: 16px; align-items: start; }
+.ficha .n { display: grid; place-items: center; width: 60px; height: 60px; border-radius: 12px; font: 800 30px Jakarta; color: #fff; }
+.ficha h4 { font: 800 33px/1.08 Jakarta; letter-spacing: -.02em; color: var(--tinta); }
+.ficha p { font: 500 27px/1.38 Inter; color: var(--tinta2); margin-top: 4px; }
+.ficha p b { color: var(--tinta); }
+.carimbo { position: absolute; z-index: 7; padding: 12px 22px; border: 5px solid var(--verm); border-radius: 12px; color: var(--verm);
+  font: 800 30px/1.1 Jakarta; letter-spacing: .02em; text-transform: uppercase; text-align: center; mix-blend-mode: multiply; opacity: .9; }
+.alt { display: flex; align-items: center; gap: 18px; padding: 16px 20px; border-radius: 12px; background: rgba(255,255,255,.55); border: 2px solid #cbb48a; }
+.alt b { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; flex: none; border: 3px dashed var(--verde); color: var(--verde); font: 800 28px Jakarta; }
+.alt span { font: 600 29px/1.25 Inter; color: var(--tinta); }
+.btn { display: inline-flex; align-items: center; gap: 16px; padding: 22px 46px; border-radius: 16px; font: 800 44px Jakarta; letter-spacing: -.02em; color: #2a1a08;
+  background: linear-gradient(180deg, #fbe3a0, #e2b45a 45%, #c08a36); box-shadow: inset 0 2px 0 rgba(255,255,255,.6), inset 0 -4px 0 rgba(90,52,16,.5), 0 0 0 3px #6a4416, 0 16px 30px rgba(0,0,0,.5); }
+.site { font: 800 42px Jakarta; letter-spacing: -.015em; color: #fbe3a0; text-shadow: 0 2px 8px rgba(0,0,0,.8); }
+</style></head><body>
+
+<!-- ═════════ STORY 1 · O ENCAIXE ═════════ -->
+<section id="s1-encaixe">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="sep"></span><span class="t">TEOT 2022 · Oficina do encaixe</span></div>
+  <div class="folha" style="left:48px;right:48px;top:340px;height:1230px;transform:rotate(-0.4deg)"></div>
+  <div class="fita" style="left:98px;top:320px;transform:rotate(-5deg)"></div>
+  <div class="fita" style="right:98px;top:318px;transform:rotate(4deg)"></div>
+  <div class="abs" style="z-index:5;left:100px;top:384px;width:540px">
+    <div class="rot">Lição 1 · o nome já explica</div>
+    <h1 class="h" style="margin-top:4px">O tornozelo é<br>um <em>encaixe.</em></h1>
+    <p class="txt" style="margin-top:18px">Na marcenaria, <b>mortalha</b> é o rasgo aberto na madeira, e <b>espiga</b> é a peça que entra nele.</p>
+    <p class="txt" style="margin-top:14px">No tornozelo, a <b>tíbia</b> (o teto e o maléolo medial) e a <b>fíbula</b> (o maléolo lateral) formam a <span class="g">mortalha</span>. O <b>tálus</b> é a <span class="g">espiga</span>.</p>
+  </div>
+  <img class="obj px" src="arte/encaixe.png" alt="" style="left:650px;top:470px;width:340px">
+  <div class="nota abs" style="z-index:7;left:690px;top:420px;transform:rotate(-4deg)">espiga ↓</div>
+  <div class="nota abs" style="z-index:7;left:540px;top:946px;transform:rotate(-3deg)">mortalha ↗</div>
+  <p class="txt abs" style="z-index:5;left:100px;top:1012px;width:880px">Para ver o encaixe inteiro, a radiografia de <b>mortalha</b> roda a perna <b>15° para dentro</b>: a fíbula sai de trás da tíbia e o espaço em volta do tálus aparece todo.</p>
+  <div class="filme cab" data-id="AP" style="left:96px;top:1232px;width:272px;height:255px;"><div class="q"><img class="rx" src="img/normal-ap.png" alt="" style=""></div></div>
+  <div class="fita" style="left:180px;top:1212px;width:110px;height:38px;transform:rotate(-3deg)"></div>
+  <div class="filme cab" data-id="Mortalha" style="left:404px;top:1222px;width:272px;height:255px;box-shadow:0 0 0 4px #e2b45a,0 18px 34px rgba(0,0,0,.45);transform:rotate(1deg)"><div class="q"><img class="rx" src="img/normal-mortalha.png" alt="" style=""></div></div>
+  <div class="fita" style="left:486px;top:1202px;width:110px;height:38px;transform:rotate(2deg)"></div>
+  <div class="filme cab" data-id="Perfil" style="left:712px;top:1232px;width:272px;height:255px;"><div class="q"><img class="rx" src="img/normal-perfil.png" alt="" style=""></div></div>
+  <div class="fita" style="left:796px;top:1212px;width:110px;height:38px;transform:rotate(3deg)"></div>
+  <div class="nota abs" style="z-index:7;left:96px;top:1490px;width:272px;text-align:center">AP</div>
+  <div class="nota abs" style="z-index:7;left:404px;top:1484px;width:272px;text-align:center;color:var(--verde)">mortalha · 15°</div>
+  <div class="nota abs" style="z-index:7;left:712px;top:1490px;width:272px;text-align:center">perfil</div>
+  <div class="ref abs" style="z-index:6;left:96px;top:1532px">Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65</div>
+</section>
+
+<!-- ═════════ STORY 2 · A QUESTÃO ═════════ -->
+<section id="s2-questao">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="sep"></span><span class="t">Caiu no TEOT 2022</span></div>
+  <div class="folha" style="left:48px;right:48px;top:340px;height:1230px;transform:rotate(0.35deg)"></div>
+  <div class="fita" style="left:98px;top:320px;transform:rotate(-5deg)"></div>
+  <div class="fita" style="right:98px;top:318px;transform:rotate(4deg)"></div>
+  <div class="abs" style="z-index:5;left:100px;top:384px;width:880px">
+    <div class="rot">A encomenda da banca</div>
+    <h2 class="h" style="margin-top:4px;font-size:44px;line-height:1.16;letter-spacing:-.025em">Os parâmetros da avaliação radiográfica do tornozelo representados nas imagens são, respectivamente,</h2>
+  </div>
+  <div class="filme cab" data-id="TEOT 2022 · questão" style="left:96px;top:640px;width:888px;height:492px;"><div class="q"><img class="rx" src="img/questao-3x.png" alt="" style="object-fit:contain"></div></div>
+  <div class="fita" style="left:72px;top:620px;width:120px;height:40px;transform:rotate(-35deg)"></div>
+  <div class="fita" style="left:888px;top:620px;width:120px;height:40px;transform:rotate(35deg)"></div>
+  <div class="nota abs" style="z-index:7;left:96px;top:1138px;width:444px;text-align:center">imagem 1</div>
+  <div class="nota abs" style="z-index:7;left:540px;top:1138px;width:444px;text-align:center">imagem 2</div>
+  <div class="abs" style="z-index:5;left:96px;top:1190px;width:888px;display:grid;gap:10px">
+    <div class="alt" style="padding:10px 18px"><b style="width:46px;height:46px">A</b><span style="font-size:27px">espaço livre lateral e ângulo talocrural.</span></div>
+    <div class="alt" style="padding:10px 18px"><b style="width:46px;height:46px">B</b><span style="font-size:27px">sobreposição tibiofibular e ângulo talocrural.</span></div>
+    <div class="alt" style="padding:10px 18px"><b style="width:46px;height:46px">C</b><span style="font-size:27px">espaço livre lateral e ângulo de inclinação maleolar.</span></div>
+    <div class="alt" style="padding:10px 18px"><b style="width:46px;height:46px">D</b><span style="font-size:27px">margem lateral do maléolo posterior e ângulo talocrural.</span></div>
+  </div>
+  <img class="obj px" src="arte/lapis.png" alt="" style="left:640px;top:560px;width:330px;transform:rotate(-5deg)">
+  <div class="nota abs" style="z-index:7;left:96px;top:1510px;width:888px;text-align:center;color:var(--verm)">Escolha a sua letra antes de passar.</div>
+</section>
+
+<!-- ═════════ STORY 3 · O PAQUÍMETRO NA SINDESMOSE ═════════ -->
+<section id="s3-sindesmose">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="sep"></span><span class="t">Imagem 1 · o paquímetro</span></div>
+  <div class="folha" style="left:48px;right:48px;top:340px;height:1230px;transform:rotate(-0.3deg)"></div>
+  <div class="fita" style="left:98px;top:320px;transform:rotate(-5deg)"></div>
+  <div class="fita" style="right:98px;top:318px;transform:rotate(4deg)"></div>
+  <div class="abs" style="z-index:5;left:100px;top:384px;width:880px">
+    <div class="rot">Lição 2 · a sindesmose</div>
+    <h2 class="h" style="margin-top:4px;font-size:56px">Dois jeitos de medir a<br><em>fíbula presa na tíbia.</em></h2>
+    <p class="txt" style="margin-top:12px;font-size:28px">A <b>sindesmose</b> são os ligamentos que seguram a fíbula na tíbia, logo acima do encaixe. As duas medidas são feitas no AP, <b>1 cm acima</b> da articulação.</p>
+  </div>
+  <img class="obj px" src="arte/paquimetro.png" alt="" style="left:700px;top:360px;width:300px;transform:rotate(-8deg)">
+  <div class="filme cab" data-id="Espaço claro" style="left:96px;top:770px;width:430px;height:430px;"><div class="q"><img class="rx" src="img/normal-espaco-tf-zoom.png" alt="" style=""></div></div>
+  <img class="grampo px" src="arte/grampo.png" alt="" style="left:281px;top:690px;transform:scaleY(-1)">
+  <div class="filme cab" data-id="Sobreposição" style="left:556px;top:770px;width:430px;height:430px;"><div class="q"><img class="rx" src="img/normal-sobreposicao-zoom.png" alt="" style=""></div></div>
+  <img class="grampo px" src="arte/grampo.png" alt="" style="left:741px;top:690px;transform:scaleY(-1)">
+  <div class="abs" style="z-index:6;left:96px;top:1214px;width:430px">
+    <h4 style="font:800 31px/1.1 Jakarta;letter-spacing:-.02em"><span style="color:#d8b010">▬</span> Espaço claro tibiofibular</h4>
+    <p class="txt" style="font-size:25px;line-height:1.36;margin-top:6px">o <b>vão escuro</b> entre a fíbula e a tíbia. Lesão: <span class="v">acima de 5 mm</span>. O <b>mais confiável</b>: muda pouco com a rotação.</p>
+  </div>
+  <div class="abs" style="z-index:6;left:556px;top:1214px;width:430px">
+    <h4 style="font:800 31px/1.1 Jakarta;letter-spacing:-.02em"><span style="color:#6ab020">▬</span> Sobreposição tibiofibular</h4>
+    <p class="txt" style="font-size:25px;line-height:1.36;margin-top:6px">quanto a fíbula <b>fica atrás</b> da tíbia. Lesão: <span class="v">menos de 5 mm</span> no AP (ou de 1 mm na mortalha). Muda muito com a rotação.</p>
+  </div>
+  <div class="abs" style="z-index:6;left:96px;top:1418px;width:888px;display:flex;gap:22px;align-items:center">
+    <div class="filme" style="position:relative;width:170px;height:112px;flex:none;padding:6px"><div class="q"><img class="rx" src="img/questao-esq-3x.png" alt="" style="object-position:28% 50%"></div></div>
+    <p class="nota" style="font-size:32px;color:var(--verm)">Na prova (imagem 1), as linhas vermelhas cercam o trecho em que os dois ossos <u>se sobrepõem</u>: é a sobreposição.</p>
+  </div>
+  <div class="ref abs" style="z-index:6;left:96px;top:1540px">Rockwood, 10ª ed., cap. 65, tabela 65-2 · algumas referências usam 6 mm como corte</div>
+</section>
+
+<!-- ═════════ STORY 4 · O TRANSFERIDOR NO ÂNGULO TALOCRURAL ═════════ -->
+<section id="s4-talocrural">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="sep"></span><span class="t">Imagem 2 · o transferidor</span></div>
+  <div class="folha" style="left:48px;right:48px;top:340px;height:1230px;transform:rotate(0.3deg)"></div>
+  <div class="fita" style="left:98px;top:320px;transform:rotate(-5deg)"></div>
+  <div class="fita" style="right:98px;top:318px;transform:rotate(4deg)"></div>
+  <div class="abs" style="z-index:5;left:100px;top:384px;width:880px">
+    <div class="rot">Lição 3 · o comprimento da fíbula</div>
+    <h2 class="h" style="margin-top:4px;font-size:56px">O ângulo <em>talocrural</em><br>confere a fíbula.</h2>
+  </div>
+  <div class="filme cab" data-id="Imagem 2 da prova" style="left:96px;top:652px;width:500px;height:540px;"><div class="q"><img class="rx" src="img/questao-dir-3x.png" alt="" style="object-fit:contain"></div></div>
+  <img class="grampo px" src="arte/grampo.png" alt="" style="left:150px;top:572px;transform:scaleY(-1)">
+  <img class="obj px" src="arte/transferidor.png" alt="" style="left:626px;top:600px;width:360px">
+  <div class="abs" style="z-index:6;left:630px;top:800px;width:356px;display:grid;gap:16px">
+    <p class="txt" style="font-size:26px;line-height:1.36">Normal: <b>cerca de 83°</b> e <b>igual ao outro lado</b>.</p>
+    <p class="txt" style="font-size:26px;line-height:1.36">Se a fíbula fica <span class="v">curta</span> (fratura que encurtou), o tálus vai <b>para fora e em valgo</b>.</p>
+    <p class="txt" style="font-size:26px;line-height:1.36">Mesma conferência no <b>sinal da bola</b>: o contorno da fíbula segue o do tálus; quebrou, a fíbula está curta.</p>
+  </div>
+  <div class="abs" style="z-index:6;left:96px;top:1226px;width:888px;padding:20px 26px;border-radius:16px;background:rgba(20,101,94,.10);border:3px solid var(--verde)">
+    <div style="font:800 40px Jakarta;letter-spacing:-.02em;color:var(--verde)">Resposta B</div>
+    <p class="txt" style="font-size:27px;margin-top:4px"><b>Sobreposição tibiofibular</b> (imagem 1) e <b>ângulo talocrural</b> (imagem 2).</p>
+    <p class="txt" style="font-size:23px;line-height:1.36;margin-top:8px"><b>A e C</b> chamam a imagem 1 de vão, mas ela marca ossos sobrepostos; <b>C</b> ainda troca o nome do ângulo. <b>D</b>: a borda de um maléolo, sozinha, não é uma medida.</p>
+  </div>
+  <div class="ref abs" style="z-index:6;left:96px;top:1532px">Rockwood, 10ª ed., cap. 65, tabela 65-2</div>
+</section>
+
+<!-- ═════════ STORY 5 · A FOLGA DE DENTRO ═════════ -->
+<section id="s5-medial">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="sep"></span><span class="t">A folga do lado de dentro</span></div>
+  <div class="folha" style="left:48px;right:48px;top:340px;height:1230px;transform:rotate(-0.35deg)"></div>
+  <div class="fita" style="left:98px;top:320px;transform:rotate(-5deg)"></div>
+  <div class="fita" style="right:98px;top:318px;transform:rotate(4deg)"></div>
+  <div class="abs" style="z-index:5;left:100px;top:384px;width:880px">
+    <div class="rot">Lição 4 · o espaço claro medial</div>
+    <h2 class="h" style="margin-top:4px;font-size:56px">Encaixe frouxo:<br><em>o tálus escorrega.</em></h2>
+    <p class="txt" style="margin-top:12px;font-size:28px">É o vão entre o <b>maléolo medial</b> e o <b>tálus</b>. Normal: <b>igual ao espaço de cima</b> (entre o tálus e o teto) e <b>menor que 5 mm</b>.</p>
+  </div>
+  <img class="obj px" src="arte/lapis.png" alt="" style="left:650px;top:410px;width:320px;transform:rotate(4deg)">
+  <div class="filme cab" data-id="Normal" style="left:96px;top:770px;width:430px;height:430px;"><div class="q"><img class="rx" src="img/normal-espaco-medial-zoom.png" alt="" style=""></div></div>
+  <img class="grampo px" src="arte/grampo.png" alt="" style="left:281px;top:690px;transform:scaleY(-1)">
+  <div class="filme cab" data-id="Weber B" style="left:556px;top:770px;width:430px;height:430px;box-shadow:0 0 0 4px var(--verm),0 18px 34px rgba(0,0,0,.45)"><div class="q"><img class="rx" src="img/weber-b-medial-aberto-zoom.png" alt="" style=""></div></div>
+  <img class="grampo px" src="arte/grampo.png" alt="" style="left:741px;top:690px;transform:scaleY(-1)">
+  <div class="nota abs" style="z-index:7;left:96px;top:1208px;width:430px;text-align:center;color:var(--verde);font-size:31px">normal: folga igual em cima e do lado</div>
+  <div class="nota abs" style="z-index:7;left:556px;top:1208px;width:430px;text-align:center;color:var(--verm)">Weber B: a folga de dentro abriu</div>
+  <div class="abs" style="z-index:7;left:986px;top:1008px;font:800 44px Jakarta;color:var(--verm);text-shadow:0 2px 0 #fff">◀</div>
+  <div class="abs" style="z-index:6;left:96px;top:1300px;width:888px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center">
+    <div style="padding:14px 20px;border-radius:14px;background:var(--verm);color:#fff;text-align:center;box-shadow:0 8px 16px rgba(0,0,0,.25)"><div style="font:800 52px/1 Jakarta">1 mm</div><div style="font:700 20px Inter;margin-top:6px">= 42% menos contato</div></div>
+    <p class="txt" style="font-size:26px;line-height:1.38">Na Weber B, espaço medial aberto quer dizer <b>deltoide roto</b>: a fratura é <span class="v">instável</span> (SER IV). E basta <b>1 mm</b> de tálus para fora para perder quase metade do contato (RAMSEY e HAMILTON).</p>
+  </div>
+  <div class="ref abs" style="z-index:6;left:96px;top:1532px">Rockwood, 10ª ed., cap. 65, tabela 65-2</div>
+</section>
+
+<!-- ═════════ STORY 6 · A FICHA DE TOLERÂNCIAS ═════════ -->
+<section id="s6-ficha">
+  <div class="placa"><span class="m"><img src="../../../../public/marca/simbolo.svg" alt="">Orto <span>Questões</span></span><span class="sep"></span><span class="t">Ficha do encaixe</span></div>
+  <img class="px abs" src="arte/etiqueta.png" alt="" style="z-index:3;left:100px;top:260px;width:880px;filter:drop-shadow(0 26px 30px rgba(0,0,0,.55));transform:rotate(-1deg)">
+  <div class="abs" style="z-index:5;left:150px;top:560px;width:780px;transform:rotate(-1deg)">
+    <div class="rot" style="color:#5a3a1a">Para colar na bancada</div>
+    <h2 class="h" style="font-size:58px;margin-top:2px">As medidas <em>do encaixe</em></h2>
+    <div style="display:grid;gap:22px;margin-top:26px">
+      <div class="ficha"><span class="n" style="background:var(--verde)">1</span><div><h4>Espaço claro medial</h4><p>igual ao de cima e <b>menor que 5 mm</b></p></div></div>
+      <div class="ficha"><span class="n" style="background:#b88a10">2</span><div><h4>Espaço claro tibiofibular</h4><p><b>até 5 mm</b>, a 1 cm da articulação; o mais confiável</p></div></div>
+      <div class="ficha"><span class="n" style="background:#5a8a20">3</span><div><h4>Sobreposição tibiofibular</h4><p><b>5 mm ou mais</b> no AP; 1 mm ou mais na mortalha</p></div></div>
+      <div class="ficha"><span class="n" style="background:var(--azul)">4</span><div><h4>Ângulo talocrural</h4><p><b>cerca de 83°</b> e igual ao outro lado</p></div></div>
+      <div class="ficha"><span class="n" style="background:#7a4a24">5</span><div><h4>Sinal da bola</h4><p><b>contínuo</b>: a fíbula está no comprimento certo</p></div></div>
+    </div>
+    <div class="ref" style="margin-top:22px;color:#7a5e3c">Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65, tabela 65-2</div>
+  </div>
+  <img class="obj px" src="arte/esquadro.png" alt="" style="left:772px;top:1410px;width:210px;transform:rotate(8deg)">
+  <img class="obj px" src="arte/maravalha.png" alt="" style="left:118px;top:1430px;width:190px;transform:rotate(-12deg)">
+  <div class="abs" style="z-index:7;left:0;right:0;top:1395px;text-align:center"><div class="btn">Treine grátis →</div></div>
+  <div class="nota abs" style="z-index:7;left:0;right:0;top:1300px;text-align:center;color:#5a3a1a;font-size:38px">Questões comentadas assim, com livro e página.</div>
+  <div class="abs" style="z-index:7;left:0;right:0;top:1512px;text-align:center"><span class="site" style="color:var(--verde);text-shadow:none">ortoquestoes.com.br</span></div>
+</section>
+</body></html>
