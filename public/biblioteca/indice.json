@@ -4674,15 +4674,15 @@
   },
   {
    "id": "campbell15-deformidades-alongamento",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Deformidades ósseas e alongamento",
    "especialidade": "conceitos-basicos",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026)",
    "capitulo": "Capítulo 63 · Malunited Fractures, com o Capítulo 31 · Congenital Anomalies of the Lower Extremity (seção Limb-Length Discrepancy), o Capítulo 58 · General Principles of Fracture Treatment (External Fixation) e o Capítulo 10 · Knee Preservation Surgery",
-   "resumo": "CORA é a intersecção dos eixos proximal e distal (anatômicos ou mecânicos, sem misturar); fora do ponto óbvio indica translação ou multiapical; mesmo nível no AP e perfil = plano oblíquo, níveis diferentes = translação; CORA, eixo de correção e osteotomia juntos = só angulação; eixo na cortical convexa = cunha de abertura; mLDFA e MPTA perto de 87 graus; GREEN-ANDERSON, MOSELEY (erro de 0,6 cm), MENELAUS e multiplicador de PALEY; epifisiodese para 2 a 5 cm; latência, 1 mm/dia em 0,25 × 4, consolidação de duas vezes a distração, cerca de 1 mês por cm; hemicalotasia de TURI no 7º dia; clamshell contraindicado na metáfise e acima de 3 cm.",
+   "resumo": "CORA é a intersecção dos eixos proximal e distal (anatômicos ou mecânicos, sem misturar); fora do ponto óbvio indica translação ou multiapical; mesmo nível no AP e perfil = plano oblíquo, níveis diferentes = translação; CORA, eixo de correção e osteotomia juntos = só angulação; eixo na cortical convexa = cunha de abertura; mLDFA e MPTA perto de 87 graus; GREEN-ANDERSON, MOSELEY (erro de 0,6 cm), MENELAUS e multiplicador de PALEY; epifisiodese para 2 a 5 cm; latência, 1 mm/dia em 0,25 × 4, consolidação de duas vezes a distração, cerca de 1 mês por cm; hemicalotasia de TURI no 7º dia; clamshell contraindicado na metáfise e acima de 3 cm. Causas: encurtam neuropatia, poliomielite, queimados, osteocondroma e RUSSELL-SILVER; alongam fratura diafisária do fêmur (7 a 10 mm), artrite inflamatória, KLIPPEL-TRENAUNAY, PROTEUS, BECKWITH-WIEDEMANN, hemangioma e abscesso de BRODIE.",
    "acesso": "gratis",
-   "minutos": 37,
+   "minutos": 43,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -4750,6 +4750,11 @@
      "radar": "clinico"
     },
     {
+     "id": "causas-da-discrepancia-o-que-encurta-e-o-que-alo",
+     "titulo": "Causas da discrepância: o que encurta e o que alonga",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -4765,11 +4770,15 @@
     "conceitos-basicos-0043",
     "conceitos-basicos-0241",
     "conceitos-basicos-0040",
-    "conceitos-basicos-0032"
+    "conceitos-basicos-0032",
+    "pediatria-0350",
+    "pediatria-1060",
+    "pediatria-1070"
    ],
    "treino": [],
    "subtemas": [
-    "Deformidades ósseas e alongamento"
+    "Deformidades ósseas e alongamento",
+    "Discrepância de comprimento dos membros"
    ]
   },
   {
@@ -4891,15 +4900,15 @@
   },
   {
    "id": "campbell15-entorse-tornozelo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Entorse e instabilidade lateral do tornozelo",
    "especialidade": "pe-tornozelo",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026)",
    "capitulo": "Capítulo 55 · Arthroscopy of the Foot and Ankle (seções Ankle Impingement Syndromes e Ankle Instability), com o Capítulo 94 · Sports Injuries of the Ankle (seções Acute Ligamentous Injuries, Chronic Instability After Injury e Internal Derangements) e o Capítulo 59 (avaliação da sindesmose)",
-   "resumo": "LTFA é o mais fraco e o mais lesado (gaveta anterior), LCF é o único lateral extracapsular e o LTFP o mais forte; tibiotalar profundo posterior é o componente mais forte do deltoide; LTFA com talocalcâneo interósseo muda a mobilidade subtalar; inclinação talar >10° acima do lado normal; tratamento funcional até no grau III; entorse alta pelos testes de compressão (squeeze) e de rotação externa; CHRISMAN-SNOOK com metade do fibular curto; BROSTRÖM-GOULD como escolha na crônica; primeiro raio flexionado e cavo predispõem; impacto anterior após entorses de repetição.",
+   "resumo": "LTFA é o mais fraco e o mais lesado (gaveta anterior), LCF é o único lateral extracapsular e o LTFP o mais forte; tibiotalar profundo posterior é o componente mais forte do deltoide; LTFA com talocalcâneo interósseo muda a mobilidade subtalar; inclinação talar >10° acima do lado normal; tratamento funcional até no grau III; entorse alta pelos testes de compressão (squeeze) e de rotação externa; CHRISMAN-SNOOK com metade do fibular curto; BROSTRÖM-GOULD como escolha na crônica; primeiro raio flexionado e cavo predispõem; impacto anterior após entorses de repetição. Diástase sem fratura: espaço claro tibiofibular acima de 5 mm, sobreposição abaixo de 5 mm no AP, estresse por gravidade, fixação 3 cm acima da articulação se a pinça segue alargada.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 41,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -4977,6 +4986,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "a-diastase-tibiofibular-sem-fratura-imagem-graus",
+     "titulo": "A diástase tibiofibular sem fratura: imagem, graus e EDWARDS e DeLEE",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -4999,11 +5013,13 @@
     "pe-tornozelo-0200",
     "pe-tornozelo-0302",
     "pe-tornozelo-0337",
-    "pe-tornozelo-0308"
+    "pe-tornozelo-0308",
+    "pe-tornozelo-0336"
    ],
    "treino": [],
    "subtemas": [
-    "Entorse e instabilidade lateral do tornozelo"
+    "Entorse e instabilidade lateral do tornozelo",
+    "Lesão da sindesmose"
    ]
   },
   {
@@ -15585,15 +15601,15 @@
   },
   {
    "id": "lw-osteocondroses",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Osteocondroses",
    "especialidade": "pediatria",
    "livro": "Lovell and Winter's Pediatric Orthopaedics",
    "edicao": "7ª edição (2014), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), caps. 19 e 40, o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 34, e o Rockwood and Wilkins' Fractures in Children, 10ª ed., caps. 23 e 31",
    "capitulo": "Capítulo 9 · Localized Disorders of Skin and Soft Tissue (seção The Osteochondroses), com o Capítulo 29 · The Foot e o Capítulo 31 · Sports Medicine in the Growing Child",
-   "resumo": "Osteocondrose é falha da ossificação endocondral de um núcleo que crescia normalmente, por isquemia nas articulares e por tração nas apofisárias; KÖHLER é o navicular do menino pequeno (4 vezes mais em meninos, abaixo de 6 a 7 anos, autolimitado, gesso curto); FREIBERG é a cabeça do 2º metatarso da adolescente, a única com predileção feminina; SEVER é a apófise do calcâneo (9 a 14 anos, bilateral, radiografia normal); ISELIN é a base do 5º metatarso (fibular curto, oblíqua); OSGOOD-SCHLATTER é o tubérculo tibial (patela alta e reto femoral encurtado); SINDING-LARSEN-JOHANSSON é o polo inferior da patela por tração; PANNER é o capítulo antes dos 10 anos, e a osteocondrite dissecante do capítulo é a da criança mais velha, do beisebol e da ginástica.",
+   "resumo": "Osteocondrose é falha da ossificação endocondral de um núcleo que crescia normalmente, por isquemia nas articulares e por tração nas apofisárias; KÖHLER é o navicular do menino pequeno (4 vezes mais em meninos, abaixo de 6 a 7 anos, autolimitado, gesso curto); FREIBERG é a cabeça do 2º metatarso da adolescente, a única com predileção feminina; SEVER é a apófise do calcâneo (9 a 14 anos, bilateral, radiografia normal); ISELIN é a base do 5º metatarso (fibular curto, oblíqua); OSGOOD-SCHLATTER é o tubérculo tibial (patela alta e reto femoral encurtado); SINDING-LARSEN-JOHANSSON é o polo inferior da patela por tração; PANNER é o capítulo antes dos 10 anos, e a osteocondrite dissecante do capítulo é a da criança mais velha, do beisebol e da ginástica. SEVER no capítulo do pé: média de 11,5 anos, sem dor noturna, diagnóstico clínico, tratamento sintomático com alongamento do tendão calcâneo e fortalecimento do compartimento anterior, sem cirurgia.",
    "acesso": "gratis",
-   "minutos": 35,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15695,6 +15711,7 @@
     "pediatria-0039",
     "pediatria-0937",
     "pediatria-0518",
+    "pe-tornozelo-0241",
     "pediatria-0512",
     "pediatria-0249",
     "joelho-0197",
@@ -15706,7 +15723,8 @@
    "treino": [],
    "subtemas": [
     "Osteocondroses",
-    "Joelho na criança"
+    "Joelho na criança",
+    "Osteocondroses do pé"
    ]
   },
   {
@@ -15826,15 +15844,15 @@
   },
   {
    "id": "lw-raquitismo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Raquitismo e osteomalácia",
    "especialidade": "osteometabolicas",
    "livro": "Lovell and Winter's Pediatric Orthopaedics",
    "edicao": "7ª edição (2014), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 38, o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 4 e 25, o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 34, e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 27",
    "capitulo": "Capítulo 6 · Metabolic and Endocrine Abnormalities",
-   "resumo": "Raquitismo (criança: fise alargada e borrada, metáfise em taça, rosário, HARRISON, genuvaro ou valgo, LOOSER) e osteomalácia (adulto: fraqueza proximal, pseudofraturas); nutricional = falta de vitamina D, 3 a 18 meses, amamentação exclusiva, fosfato baixo e PTH alto; tipo I = 25 normal e 1,25 baixo; tipo II = 1,25 muito alto e alopecia; ligado ao X = PHEX e FGF23, PTH normal, fosfato mais calcitriol; renal = fosfato e PTH altos; anticonvulsivantes; a fosfatase alcalina pode subir antes de cair.",
+   "resumo": "Raquitismo (criança: fise alargada e borrada, metáfise em taça, rosário, HARRISON, genuvaro ou valgo, LOOSER) e osteomalácia (adulto: fraqueza proximal, pseudofraturas); nutricional = falta de vitamina D, 3 a 18 meses, amamentação exclusiva, fosfato baixo e PTH alto; tipo I = 25 normal e 1,25 baixo; tipo II = 1,25 muito alto e alopecia; ligado ao X = PHEX e FGF23, PTH normal, fosfato mais calcitriol; renal = fosfato e PTH altos; anticonvulsivantes; a fosfatase alcalina pode subir antes de cair. Fosfato baixo é o denominador comum das formas não renais; atividade osteoblástica normal com osteoide abundante (Tachdjian).",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 40,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15932,6 +15950,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "o-fosforo-em-uma-pergunta-baixo-em-quase-todos-a",
+     "titulo": "O fósforo em uma pergunta: baixo em quase todos, alto no renal",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -15949,7 +15972,9 @@
     "osteometabolicas-0060",
     "osteometabolicas-0031",
     "osteometabolicas-0020",
-    "osteometabolicas-0022"
+    "osteometabolicas-0022",
+    "pediatria-0448",
+    "pediatria-0899"
    ],
    "treino": [
     "osteometabolicas-0111",
@@ -15957,7 +15982,8 @@
     "osteometabolicas-0112"
    ],
    "subtemas": [
-    "Raquitismo e osteomalácia"
+    "Raquitismo e osteomalácia",
+    "Raquitismo e doenças metabólicas na criança"
    ]
   },
   {

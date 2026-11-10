@@ -1,6 +1,6 @@
 ---
 id: lw-osteocondroses
-versao: 2
+versao: 3
 titulo: Osteocondroses
 especialidade: pediatria
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Lovell and Winter's Pediatric Orthopaedics
 edicao: 7ª edição (2014), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), caps. 19 e 40, o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 34, e o Rockwood and Wilkins' Fractures in Children, 10ª ed., caps. 23 e 31
 capitulo: Capítulo 9 · Localized Disorders of Skin and Soft Tissue (seção The Osteochondroses), com o Capítulo 29 · The Foot e o Capítulo 31 · Sports Medicine in the Growing Child
 autores: Haemish CRAWFORD (Lovell, cap. 9); Vincent S. MOSCA (Lovell, cap. 29); R. Baxter WILLIS, Mininder S. KOCHER e Theodore J. GANLEY (Lovell, cap. 31); Benjamin W. SHEFFER (Campbell, cap. 34)
-fonte: Livros conferidos localmente em 03/11/2026: Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 9, seção The Osteochondroses, p. 309 e 310 (Tabela 9-4), cap. 29, seções Freiberg Infraction e Kohler Disease, p. 1480, 1481, 1491 e 1492, e cap. 31, seções Overuse Injuries, Sever Disease e Elbow Problems in the Throwing Athlete, p. 1641 a 1643 e 1648 a 1652; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19, seção Osteochondroses, p. 689 a 691, cap. 40, p. 2001, 2004, 2005, 2010 a 2012 e Tabela 40.11 (p. 2043), cap. 12 (MADELUNG, p. aprox. 298) e cap. 7 (p. 79 e 80); Campbell's Operative Orthopaedics, 15ª ed., cap. 34, seção Osteochondrosis or Epiphysitis, p. 1201 a 1204, 1209 aprox. e 1211 aprox., cap. 38 (p. 1483 aprox.), cap. 57 (p. 2499) e cap. 74 (p. 3308 e 3309); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23 (sincondrose isquiopúbica) e cap. 31 (calcâneo), sem página impressa no cabeçalho. As páginas citadas são as impressas.
-subtemas: Osteocondroses; Joelho na criança
-resumo: Osteocondrose é falha da ossificação endocondral de um núcleo que crescia normalmente, por isquemia nas articulares e por tração nas apofisárias; KÖHLER é o navicular do menino pequeno (4 vezes mais em meninos, abaixo de 6 a 7 anos, autolimitado, gesso curto); FREIBERG é a cabeça do 2º metatarso da adolescente, a única com predileção feminina; SEVER é a apófise do calcâneo (9 a 14 anos, bilateral, radiografia normal); ISELIN é a base do 5º metatarso (fibular curto, oblíqua); OSGOOD-SCHLATTER é o tubérculo tibial (patela alta e reto femoral encurtado); SINDING-LARSEN-JOHANSSON é o polo inferior da patela por tração; PANNER é o capítulo antes dos 10 anos, e a osteocondrite dissecante do capítulo é a da criança mais velha, do beisebol e da ginástica.
+fonte: Livros conferidos localmente em 03/11/2026: Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 9, seção The Osteochondroses, p. 309 e 310 (Tabela 9-4), cap. 29, seções Freiberg Infraction e Kohler Disease, p. 1480, 1481, 1491 e 1492, e cap. 31, seções Overuse Injuries, Sever Disease e Elbow Problems in the Throwing Athlete, p. 1641 a 1643 e 1648 a 1652; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 19, seção Osteochondroses, p. 689 a 691, cap. 40, p. 2001, 2004, 2005, 2010 a 2012 e Tabela 40.11 (p. 2043), cap. 12 (MADELUNG, p. aprox. 298) e cap. 7 (p. 79 e 80); Campbell's Operative Orthopaedics, 15ª ed., cap. 34, seção Osteochondrosis or Epiphysitis, p. 1201 a 1204, 1209 aprox. e 1211 aprox., cap. 38 (p. 1483 aprox.), cap. 57 (p. 2499) e cap. 74 (p. 3308 e 3309); Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 23 (sincondrose isquiopúbica) e cap. 31 (calcâneo), sem página impressa no cabeçalho. As páginas citadas são as impressas. Acréscimo conferido em 10/11/2026 (SEVER): Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 29, seção Sever Apophysitis, p. 1499 e 1500, e cap. 4, p. 108.
+subtemas: Osteocondroses; Joelho na criança; Osteocondroses do pé
+resumo: Osteocondrose é falha da ossificação endocondral de um núcleo que crescia normalmente, por isquemia nas articulares e por tração nas apofisárias; KÖHLER é o navicular do menino pequeno (4 vezes mais em meninos, abaixo de 6 a 7 anos, autolimitado, gesso curto); FREIBERG é a cabeça do 2º metatarso da adolescente, a única com predileção feminina; SEVER é a apófise do calcâneo (9 a 14 anos, bilateral, radiografia normal); ISELIN é a base do 5º metatarso (fibular curto, oblíqua); OSGOOD-SCHLATTER é o tubérculo tibial (patela alta e reto femoral encurtado); SINDING-LARSEN-JOHANSSON é o polo inferior da patela por tração; PANNER é o capítulo antes dos 10 anos, e a osteocondrite dissecante do capítulo é a da criança mais velha, do beisebol e da ginástica. SEVER no capítulo do pé: média de 11,5 anos, sem dor noturna, diagnóstico clínico, tratamento sintomático com alongamento do tendão calcâneo e fortalecimento do compartimento anterior, sem cirurgia.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -220,6 +220,26 @@ O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 31, p. 1648 e 1649),
 conceito: SEVER é a apofisite da apófise do calcâneo do escolar que corre (9 a 14 anos no LW, 8 a 11 no Tachdjian), bilateral na maioria, com radiografia normal e resolução sempre com tempo e repouso.
 como: O ENARE R4 2024 descreveu um menino de 13 anos com dor posterior no calcâneo ao calçar a chuteira e osteocondrose da apófise do calcâneo, e pediu o epônimo entre SEVER, PANNER, FREIBERG, KIENBÖCK e THIEMANN.
 armadilha: Exigir fragmentação ou esclerose da apófise na radiografia, que é achado normal nessa idade.
+!fim
+
+## SEVER no capítulo do pé: o que o MOSCA acrescenta
+
+O Lovell and Winter's Pediatric Orthopaedics, 7ª ed., volta ao SEVER no capítulo do pé (cap. 29, p. 1499 e 1500), com mais números e com o tratamento que a prova copiou. É a **causa mais comum de dor no calcanhar do atleta imaturo**: idade média de **11,5 anos**, a maioria entre **10 e 12**, **duas a três vezes mais em meninos**, bilateral em cerca de **60%**. A causa é desconhecida; o capítulo a classifica como **osteocondrose não articular**, produto de microtrauma de repetição e sobrecarga em crianças constitucionalmente suscetíveis. O retrato é o menino de 10 a 12 anos, jogador assíduo de futebol, que passou por um estirão recente e continua jogando apesar da dor.
+
+**Exame.** Raramente há rubor, edema ou calor, e **não há dor noturna**. O achado clássico é a dor à **compressão da apófise de medial para lateral**, que o capítulo de exame físico do mesmo livro (cap. 4, p. 108) chama de **teste da compressão do calcanhar (heel-squeeze test)**; não há dor na inserção do tendão calcâneo nem na origem da fáscia plantar. A criança costuma ter **contratura leve do tendão calcâneo**. O cap. 4 lista o que precisa ser afastado quando a história foge do padrão: tumor, infecção, cisto ósseo, coalizão tarsal, leucemia, síndrome de REITER e artrite juvenil; dor matinal com rigidez sugere artrite, e dor noturna, tumor ou cisto.
+
+**Imagem.** O diagnóstico é **clínico**, porque **não existe achado radiográfico diagnóstico nem patognomônico**: irregularidade da ossificação, esclerose e fragmentação são o **aspecto normal** da apófise do calcâneo em crescimento. O perfil e a axial de HARRIS são dispensáveis no quadro clássico e servem para excluir outras causas quando há edema, rubor, calor ou dor noturna. A cintilografia ajuda a localizar a lesão quando nada fecha, sobretudo para afastar fratura por estresse; a **ressonância é uma alternativa mais cara que raramente deve ser pedida**.
+
+**Por que dói.** A apófise recebe **trações opostas do tendão calcâneo e da fáscia plantar** durante a carga e, em ângulo reto com elas, a compressão do toque do calcanhar. SIFFERT via microfraturas que não cicatrizam pelo trauma repetido; LIBERSON, estudando peças, descreveu uma remodelação por estresse que ocorre de forma subclínica em toda criança e só dói ou aparece na radiografia quando passa de certo ritmo.
+
+**Evolução e tratamento.** A doença é **autolimitada e limitada pela idade**: não existe depois do fechamento da apófise. O tratamento é **sintomático**: restringir as atividades que doem, **alongar o tendão calcâneo, fortalecer os músculos do compartimento anterior** e usar calcanheira macia com elevação do salto; anti-inflamatório ou **gesso curto** por pouco tempo se a dor for importante. O alívio vem em média em **2 meses (1 a 6)**, a recidiva é possível até a maturidade, não há prova de sequela em quem continua jogando com dor e **não há papel para a cirurgia**.
+
+Os dois capítulos do mesmo livro não usam os mesmos números: o de medicina esportiva (cap. 31) fala em 9 a 14 anos e bilateral na maioria; o do pé, em média de 11,5 anos e 60% de bilateralidade. Nenhum dos dois exige encurtamento acentuado do tríceps: a contratura descrita é leve.
+
+!questoes central=pe-tornozelo-0241
+conceito: O tratamento do SEVER é sintomático: restrição das atividades dolorosas, alongamento do tendão calcâneo (compartimento posterior), fortalecimento do compartimento anterior e calcanheira; o diagnóstico é clínico, sem achado de imagem patognomônico, e não há dor noturna.
+como: O TEPOP 2024 transcreveu o tratamento do capítulo do pé do Lovell and Winter e cercou a frase com três erros: dor noturna plantar, encurtamento marcado do tríceps sural e ressonância com hipersinal em STIR como confirmação obrigatória.
+armadilha: Aceitar a ressonância como confirmação: o livro diz que o diagnóstico é clínico e que a RM raramente deve ser pedida. E trocar a contratura leve do tendão calcâneo por encurtamento marcado.
 !fim
 
 # ISELIN: a base do 5º metatarso {radar=confirmado}
