@@ -42,6 +42,13 @@
 .bb-palco__mundo { position: absolute; inset: 0; }
 .bb-palco__arte, .bb-palco__arte img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
 .bb-palco__arte img { object-fit: cover; user-select: none; }
+/* A pintura e as peças fazem parte da arquitetura. Nem o hover nem as regras
+   globais de "pixel art viva" podem deslocar, ampliar ou animar essas imagens. */
+.bb-palco__arte img, .bb-obj__arte {
+  animation: none; transition: none; transform: none; translate: none;
+  rotate: none; scale: none; pointer-events: none; user-select: none;
+}
+.bb-obj__arte { display: block; width: 100%; height: 100%; image-rendering: pixelated; }
 .bb-palco__veu { position: absolute; inset: 0; pointer-events: none;
   background: linear-gradient(90deg, rgba(12, 7, 4, 0.86) 0%, rgba(12, 7, 4, 0.7) 30%, rgba(12, 7, 4, 0.18) 50%, transparent 60%),
     linear-gradient(0deg, rgba(12, 7, 4, 0.45), transparent 30%); }
@@ -53,20 +60,19 @@ button.bb-obj:disabled { cursor: default; }
 .bb-janela, .bb-cranio { width: var(--w); height: var(--h); border-radius: 30% 30% 4px 4px; }
 .bb-cranio { border-radius: 40%; }
 .bb-janela:hover, .bb-cranio:hover { box-shadow: inset 0 0 0 2px rgba(240, 196, 106, 0.35); }
-.bb-arandela { transform: translate(-50%, 0); line-height: 0; }
-.bb-arandela__luz { position: absolute; left: 50%; top: 40%; width: calc(var(--e) * 34); height: calc(var(--e) * 34); transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none;
+.bb-arandela { width: calc(var(--e) * 16); height: calc(var(--e) * 28); transform: translate(-50%, 0); line-height: 0; }
+.bb-arandela__luz { position: absolute; left: 50%; top: 60%; width: calc(var(--e) * 34); height: calc(var(--e) * 34); transform: translate(-50%, -50%); border-radius: 50%; pointer-events: none;
   background: radial-gradient(circle, rgba(255, 200, 110, 0.5) 0%, rgba(255, 170, 70, 0.18) 38%, transparent 68%); mix-blend-mode: screen; opacity: 0; transition: opacity 0.35s; }
 .bb-arandela--acesa .bb-arandela__luz { opacity: 1; animation: bb-chama-calma 7s ease-in-out infinite; }
 /* A luz das arandelas só treme de leve (01/11/2026, pedido do Tales: "se mexa menos"), sem mudar de tamanho. */
 @keyframes bb-chama-calma { 0%, 100% { opacity: 1; } 50% { opacity: 0.92; } }
 @keyframes bb-chama { 0%, 100% { opacity: 1; transform: translate(-50%, -50%) scale(1); } 45% { opacity: 0.86; transform: translate(-50%, -50%) scale(0.96); } 70% { opacity: 0.95; transform: translate(-50%, -50%) scale(1.03); } }
 
-/* O relógio: aro de madeira, mostrador de marfim, ponteiros de ferro (CSS em blocos, sem anatomia nem curvas finas). */
-.bb-relogio { width: calc(var(--e) * 20); height: calc(var(--e) * 20); transform: translate(-50%, -50%); border-radius: 50%;
-  background: radial-gradient(circle, #f6ead0 0 56%, #c9a55a 57% 62%, #5b3519 63% 100%); box-shadow: 0 0 0 calc(var(--e) * 0.7) #1b1208, 0 calc(var(--e) * 1.2) 0 rgba(0, 0, 0, 0.35); }
-.bb-relogio i { position: absolute; left: 50%; bottom: 50%; width: calc(var(--e) * 1); margin-left: calc(var(--e) * -0.5); background: #1b1208; transform-origin: 50% 100%; border-radius: 1px; }
+/* Aro entalhado e índices pintados; só os ponteiros recebem a hora real. */
+.bb-relogio { width: calc(var(--e) * 22); height: calc(var(--e) * 22); transform: translate(-50%, -50%); border-radius: 50%; }
+.bb-relogio i { position: absolute; left: 50%; bottom: 52%; width: calc(var(--e) * 0.7); margin-left: calc(var(--e) * -0.35); background: #30291e; box-shadow: 1px 0 #b79a60; transform-origin: 50% 100%; border-radius: 1px; }
 .bb-relogio__h { height: 22%; } .bb-relogio__m { height: 32%; }
-.bb-relogio::after { content: ""; position: absolute; left: 50%; top: 50%; width: calc(var(--e) * 1.6); height: calc(var(--e) * 1.6); transform: translate(-50%, -50%); border-radius: 50%; background: #9e2f2a; }
+.bb-relogio::after { content: ""; position: absolute; left: 50%; top: 48%; width: calc(var(--e) * 1.6); height: calc(var(--e) * 1.6); transform: translate(-50%, -50%); border-radius: 50%; background: #c7a064; box-shadow: inset 1px 1px #f1d49a; }
 .bb-relogio--gira i { animation: bb-gira 1.1s cubic-bezier(0.3, 0.6, 0.3, 1); }
 @keyframes bb-gira { to { transform: rotate(720deg); } }
 
@@ -98,7 +104,7 @@ button.bb-obj:disabled { cursor: default; }
 .bb-balao__acoes button:first-child:not([aria-label]) { background: var(--bb-tinta); color: var(--bb-pergaminho); }
 @keyframes bb-entra { from { opacity: 0; transform: translateY(4px); } }
 
-.bb-planta { transform: translate(-50%, -100%); line-height: 0; cursor: default; }
+.bb-planta { width: calc(var(--e) * 29); height: calc(var(--e) * 39.875); transform: translate(-50%, -100%); line-height: 0; cursor: default; }
 .bb-aboboras { position: absolute; left: 6%; bottom: 3%; display: flex; align-items: flex-end; gap: 4px; }
 .bb-morcegos { position: absolute; left: 50%; top: 8%; display: flex; gap: 2rem; animation: bb-morcego 16s ease-in-out infinite; }
 @keyframes bb-morcego { 50% { transform: translate(-14px, 4px); } }

@@ -227,6 +227,12 @@ O Tales **recusou**:
 - **Menu (Portal do Aventureiro):** pop-up branco, busca universal, "Continue sua jornada", os seis atalhos sem fogo
   (01/11/2026) e os visitantes.
 - **Biblioteca:** estante e lista, busca com sugestões, salão de leitura com a coruja e o gato.
+  - **Salão fixo (Tales, 10/11/2026):** a pintura do vitral não desloca, amplia nem treme ao passar o mouse ou tocar.
+    A regra local de `.bb-palco__arte img` também bloqueia a flutuação global de imagens pixel.
+  - Lanternas de latão com vidro facetado, relógio de nogueira com índices e plantas em vasos de cerâmica são
+    sprites originais de `scripts/gerar_objetos_salao.py`, exportados em WebP transparente, com luz de manhã,
+    tarde e noite. Manter as proporções e a geometria entre os estados aceso/apagado e normal/florido.
+    Os ponteiros continuam mostrando a hora real; luzes, janela e segredos continuam clicáveis.
 - **Entrar e criar conta (01/11/2026, "Portal do Conhecimento"):** o salão de leitura do castelo
   (`scripts/gerar_cena_portal.py`, dia no tema claro e noite no escuro) é o fundo do primeiro bloco: título à esquerda,
   o esqueleto de jaleco em tamanho de gente junto ao atril (comemora o acerto da ficha) e o painel de entrar inteiro à

@@ -5,7 +5,7 @@ import { GatoPixel } from '../../componentes/mascote/GatoPixel'
 import { LINHAS_GATO, type IdLinhaGato } from '../../componentes/mascote/sprites'
 import { href } from '../../util/rotas'
 import { Sprite } from '../salao/Sprite'
-import { ABOBORA, LAMPARINA, MORCEGO, PALETA_ABOBORA, PALETA_LAMPARINA, PALETA_LAMPARINA_APAGADA, PALETA_MORCEGO, PALETA_PLANTA, PLANTA, PLANTA_FLORIDA } from '../salao/sprites'
+import { ABOBORA, MORCEGO, PALETA_ABOBORA, PALETA_MORCEGO } from '../salao/sprites'
 import { CorujaPixel } from './CorujaPixel'
 import { somDisponivel } from './sons'
 import type { Periodo, Salao } from './usarSalao'
@@ -33,6 +33,12 @@ const caixa = (b: { x0: number; y0: number; x1: number; y1: number }) => ({
 
 const GATOS = new Set<string>(LINHAS_GATO.map((l) => l.id))
 const estadoGato = (e: string): IdLinhaGato => (GATOS.has(e) ? (e as IdLinhaGato) : 'dormindo')
+
+/** Peças pintadas na mesma luz do salão; a geometria fica fixa em todos os estados. */
+function ObjetoSalao({ nome, periodo, largura, altura }: { nome: string; periodo: Periodo; largura: number; altura: number }) {
+  return <img className="bb-obj__arte" src={recurso(`pixel/biblioteca/objetos/${nome}-${periodo}.webp`)}
+    alt="" aria-hidden="true" width={largura} height={altura} draggable={false} decoding="async" />
+}
 
 /** A pintura do salão na hora do dia (a mesma no carregamento e na página pronta: o navegador baixa uma vez só). */
 export function ArteSalao({ periodo }: { periodo: Periodo }) {
@@ -117,11 +123,12 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
           return <button key={i} type="button" className={`bb-obj bb-arandela${acesa ? ' bb-arandela--acesa' : ''}`} style={pos(p.x, p.y)} disabled={i > 1}
             onClick={() => i < 2 && s.acoes.tocarLampada(i)} aria-label={acesa ? 'Apagar a arandela' : 'Acender a arandela'} aria-pressed={acesa}>
             <span className="bb-arandela__luz" aria-hidden="true" />
-            <Sprite grade={LAMPARINA} paleta={acesa ? PALETA_LAMPARINA : PALETA_LAMPARINA_APAGADA} px={pxObj} />
+            <ObjetoSalao nome={acesa ? 'lanterna-acesa' : 'lanterna-apagada'} periodo={s.periodo} largura={96} altura={168} />
           </button>
         })}
         <button type="button" className={'bb-obj bb-relogio' + (s.relogioGira ? ' bb-relogio--gira' : '')} style={pos(PONTOS.relogio.x, PONTOS.relogio.y)} onClick={s.acoes.tocarRelogio}
           aria-label={`Relógio: ${s.agora.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`}>
+          <ObjetoSalao nome="relogio" periodo={s.periodo} largura={192} altura={192} />
           <i className="bb-relogio__h" style={{ transform: `rotate(${(s.agora.getHours() % 12) * 30 + s.agora.getMinutes() / 2}deg)` }} />
           <i className="bb-relogio__m" style={{ transform: `rotate(${s.agora.getMinutes() * 6}deg)` }} />
         </button>
@@ -149,7 +156,7 @@ export function CenaSalao({ salao: s, titulo, contagem, busca, acoes, aviso, aoA
         </div>
 
         {PONTOS.plantas.map((p, i) => <span key={i} className="bb-obj bb-planta" style={pos(p.x, p.y)} aria-hidden="true">
-          <Sprite grade={s.efeitos.has('garden') ? PLANTA_FLORIDA : PLANTA} paleta={PALETA_PLANTA} px={pxObj + 1} />
+          <ObjetoSalao nome={`planta-${i}${s.efeitos.has('garden') ? '-florida' : ''}`} periodo={s.periodo} largura={192} altura={264} />
         </span>)}
         {s.estacao === 'halloween' && <span className="bb-aboboras" aria-hidden="true"><Sprite grade={ABOBORA} paleta={PALETA_ABOBORA} px={pxObj + 1} /><Sprite grade={ABOBORA} paleta={PALETA_ABOBORA} px={pxObj} /></span>}
         {s.estacao === 'halloween' && <span className="bb-morcegos" aria-hidden="true"><Sprite grade={MORCEGO} paleta={PALETA_MORCEGO} px={3} /><Sprite grade={MORCEGO} paleta={PALETA_MORCEGO} px={2} /></span>}
