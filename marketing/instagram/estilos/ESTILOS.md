@@ -26,7 +26,7 @@ mencionar IA, não citar o número total de questões).
 
 ---
 
-**Padrão oficial desde 09/11/2026:** todo post de questão segue [PADRAO-AULA.md](PADRAO-AULA.md); os estilos deste catálogo entram como moldura da aula.
+**Padrão oficial desde 09/11/2026:** todo post de questão segue [PADRAO-AULA.md](PADRAO-AULA.md); os estilos deste catálogo entram como moldura da aula. A [Oficina do encaixe](OFICINA-DO-ENCAIXE.md) (stories, aprovada em 10/11/2026) é o modelo de acabamento: pixel art própria com luz, metáfora que explica o termo e radiografias comparadas.
 
 ## Regras permanentes (valem sobre qualquer instrução antiga deste guia)
 
