@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-pe-tornozelo
-versao: 2
+versao: 3
 titulo: Anatomia da perna, do tornozelo e do pé
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatom
 edicao: 2ª edição, com o Campbell's Operative Orthopaedics, 15ª ed., e o Rockwood and Green's Fractures in Adults, 10ª ed.
 capitulo: Capítulo 10 · Pé e tornozelo (com a perna do capítulo 9)
 autores: Jon C. Thompson (ilustrações de Frank H. Netter)
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulos 9 e 10, sobretudo compartimentos, nervos, músculos, osteologia do tálus e do mediopé e articulações. Vias de acesso conferidas no HOPPENFELD, Surgical Exposures in Orthopaedics (5ª ed., 2016). Sem página impressa no texto extraído. Ampliado em 01/11/2026 com o Netter relido por inteiro (cap. 9 na parte da perna e cap. 10, inclusive as tabelas em imagem), o Campbell's Operative Orthopaedics, 15ª ed., caps. 1, 53, 88, 92, 93 e 94, e o Rockwood and Green's Fractures in Adults, 10ª ed. (anatomia).
-subtemas: Anatomia do pé e tornozelo
-resumo: Os quatro compartimentos da perna com músculos, nervos e artérias; o corredor atrás do maléolo medial (tibial posterior, flexor longo dos dedos, feixe tibial, flexor longo do hálux); inserções do fibular curto, do fibular longo, do tibial posterior e do tibial anterior; nervos sural, safeno, fibular superficial e profundo; tálus (irrigação pelo colo, necrose, ligamento mola, talocalcaneano interósseo); vias anterior do tornozelo e posterolateral.
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês), capítulos 9 e 10, sobretudo compartimentos, nervos, músculos, osteologia do tálus e do mediopé e articulações. Vias de acesso conferidas no HOPPENFELD, Surgical Exposures in Orthopaedics (5ª ed., 2016). Sem página impressa no texto extraído. Ampliado em 01/11/2026 com o Netter relido por inteiro (cap. 9 na parte da perna e cap. 10, inclusive as tabelas em imagem), o Campbell's Operative Orthopaedics, 15ª ed., caps. 1, 53, 88, 92, 93 e 94, e o Rockwood and Green's Fractures in Adults, 10ª ed. (anatomia). Ampliado em 10/11/2026 com as síndromes compressivas do pé: Campbell's Operative Orthopaedics, 15ª ed., cap. 92 (Neurogenic Disorders, p. 4025 a 4032), e Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 21.1 (Talalgias) e cap. 21 (seção do tendão tibial anterior), sem página impressa no arquivo.
+subtemas: Anatomia do pé e tornozelo; Outros temas do pé e tornozelo
+resumo: Os quatro compartimentos da perna com músculos, nervos e artérias; o corredor atrás do maléolo medial (tibial posterior, flexor longo dos dedos, feixe tibial, flexor longo do hálux); inserções do fibular curto, do fibular longo, do tibial posterior e do tibial anterior; nervos sural, safeno, fibular superficial e profundo; tálus (irrigação pelo colo, necrose, ligamento mola, talocalcaneano interósseo); vias anterior do tornozelo e posterolateral. Túnel do tarso (nervo tibial sob o retináculo dos flexores; proximal e distal sob o abdutor do hálux; liberação do retináculo, do abdutor e dos ramos, cirurgia de BAXTER) e túnel do tarso anterior (fibular profundo sob o retináculo extensor inferior, dor no 1º espaço, liberação parcial de MANN).
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -387,6 +387,115 @@ alerta: A `pe-tornozelo-0362` atribui ao sóleo a ação excêntrica no médio a
 | **anterolateral** | lateral ao fibular terceiro | **fibular superficial** |
 | **posterolateral** | lateral ao tendão do calcâneo, 1 cm acima da ponta da fíbula | **sural** e safena parva |
 | anterocentral, posteromedial, posterocentral | | não recomendados |
+!fim
+
+# As síndromes compressivas: túnel do tarso e túnel do tarso anterior {radar=confirmado}
+
+A anatomia deste resumo explica as duas compressões nervosas que a prova mais nomeia no tornozelo. Atrás do maléolo medial, o **nervo tibial** passa num túnel fibro-ósseo com teto inelástico: é o **túnel do tarso**. Na frente do tornozelo, o **fibular profundo** passa sob o **retináculo extensor inferior**: é o **túnel do tarso anterior**. Os dois nomes se parecem, os nervos não. O exame dessas síndromes (TINEL, tripla compressão, dorsiflexão-eversão) está no resumo de exame do pé; aqui ficam a anatomia que comprime, as causas e o tratamento cirúrgico.
+
+## O túnel do tarso: teto, assoalho e conteúdo
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 92, p. 4025), define o túnel do tarso como um **túnel fibro-ósseo posteromedial do tornozelo e do retropé** por onde entram no pé o **nervo tibial**, a **artéria tibial posterior** com as veias e os tendões do **tibial posterior**, do **flexor longo dos dedos** e do **flexor longo do hálux**. O **teto é o retináculo dos flexores** (ligamento laciniado), que vai do **maléolo medial à face medial da tuberosidade do calcâneo**. O **assoalho é ósseo**: tíbia distal medial, tálus e calcâneo. Do teto descem **septos** até o calcâneo, separando os três tendões, e o feixe vasculonervoso corre **entre o flexor longo dos dedos e o flexor longo do hálux**.
+
+O HEBERT (Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 21.1, Talalgias) acrescenta detalhes que explicam por que o nervo sofre ali. O túnel é **inelástico**: assoalho ósseo e teto fibroso. O retináculo é uma extensão da **fáscia profunda da perna**, em forma de **leque**, da borda posterior do maléolo medial à tuberosidade posterossuperior do calcâneo; sua parte **mais espessa** cobre os tendões, e o **feixe passa sob a parte mais delgada**. Os septos separam o tibial posterior, o flexor longo dos dedos e o feixe, e a bainha do flexor longo do hálux fica mais profunda, formada pelo **ligamento talocalcâneo posterior**. Qualquer coisa que ocupe espaço dentro de uma caixa que não cede comprime o nervo.
+
+## Os ramos do tibial: três para o Campbell, cinco para o HEBERT
+
+Os livros contam os ramos de jeitos diferentes, e vale conhecer os dois. Para o Campbell (cap. 92, p. 4025), o tibial dá **três ramos terminais**, em geral **dentro do túnel**, logo proximal e profundo à borda superior do **abdutor do hálux**: o **calcâneo medial** (o primeiro, que vai para trás, ao subcutâneo do calcanhar), o **plantar lateral** e o **plantar medial**. O **primeiro ramo do plantar lateral** sai por trás, passa **sob o abdutor do hálux**, sobre a fáscia medial do **quadrado plantar**, profundo à fáscia plantar e sob o calcanhar, dá um ramo sensitivo à pele central do calcanhar e **termina no abdutor do dedo mínimo**; às vezes sai direto do tibial, mas segue com o plantar lateral sob o abdutor.
+
+O HEBERT (cap. 21.1), citando BAXTER e THIGPEN e SARRAFIAN, conta **cinco ramos**: **dois calcâneos mediais**, superficiais e só sensitivos, para o coxim do calcanhar, e **três terminais profundos e mistos**, que emergem logo abaixo do retináculo: o **nervo do abdutor do dedo mínimo**, o **plantar medial** e o **plantar lateral**. A diferença é de contagem, não de anatomia: o nervo do abdutor do dedo mínimo do HEBERT é o primeiro ramo do plantar lateral do Campbell, que o HEBERT trata como ramo próprio do tibial, e o calcâneo medial pode ser um tronco ou dois. Para a prova, o que importa é que esse ramo para o abdutor do dedo mínimo tem nome próprio na literatura: **nervo de BAXTER**.
+
+## Proximal e distal: onde o nervo fica preso
+
+Historicamente, síndrome do túnel do tarso era a compressão do tibial **sob o retináculo dos flexores**. Em 1987, HEIMKES e colaboradores descreveram a **síndrome do túnel do tarso distal**, em que os **ramos** são comprimidos ao entrar no pé; proximal e distal formam um espectro de compressão do tibial no canal do tarso (Campbell, cap. 92, p. 4025). O HEBERT dá a geografia: **retináculo dos flexores = túnel proximal**; **fáscia profunda do abdutor do hálux = túnel distal**; somam-se o assoalho ósseo, a hipertrofia dos flexores curtos e a bolsa adventícia subcalcânea. DELLON e MACKINNON lembram que, se o tibial se divide **antes** do túnel, os ramos ocupam mais volume e se comprimem junto com os vasos.
+
+!tabela Causas de compressão no túnel do tarso (Campbell 15, cap. 92, p. 4025 e 4027; HEBERT, cap. 21.1)
+| Grupo | Exemplos nos livros | Detalhe que cai |
+| --- | --- | --- |
+| Osso | fragmentos de fratura, exostoses, os trigonum, hipertrofia do tubérculo posterior do tálus | a radiografia mostra |
+| Coalizão | barra talocalcânea (posterior) | estreita o túnel; a figura do HEBERT mostra um caso bilateral |
+| Partes moles | tenossinovite, gânglio, cisto de bainha, rotura tendínea, artrite inflamatória | tenossinovite do tibial posterior aumenta o conteúdo |
+| Vascular | varicosidades, tortuosidade e duplicação arteriovenosa | hipertensão venosa é achado cirúrgico frequente (HEBERT) |
+| Tumor | neurilemoma, sarcoma sinovial | a RM acha; neurilemoma às vezes exige ressecar um ramo |
+| Músculo acessório | sóleo acessório, flexor longo dos dedos acessório | ocupam espaço no compartimento |
+| Alinhamento | valgo fixo do retropé; osteotomia do calcâneo com deslocamento lateral | neuropatia de tração |
+| Idiopática ou cicatriz | fibrose perineural, cicatriz pós-traumática | pior resultado cirúrgico |
+!fim
+
+## Como se confirma: clínica, eletroneuromiografia e RM
+
+O Campbell (p. 4025) manda pensar em túnel do tarso diante de **disestesia plantar, nos dedos ou na panturrilha medial distal sem explicação** (o **fenômeno de VALLEIX**, a irradiação para cima). Os sintomas lembram fascite plantar, mas **não melhoram rápido**; podem ser noturnos, ao exercício ou em repouso, e podem se restringir ao território do plantar lateral, do medial ou do calcâneo medial. O HEBERT descreve a dor neuropática (choque, queimor, ardor, dormência), lembra a **raiz L5-S1** como diferencial e diz que o quadro **bilateral** faz pensar em doença sistêmica (gota, lúpus, espondilite, artrite reumatoide, diabetes, mixedema).
+
+A **eletroneuromiografia** é onde os livros divergem no tom. O HEBERT coloca a ENMG entre os **três critérios de suspeita** (dor, TINEL e ENMG compatível), útil para medir **velocidade de condução e latência** e para separar a compressão no túnel da radiculopatia. O Campbell (p. 4027) indica estudo elétrico para **todo suspeito**, mas faz duas ressalvas: a revisão baseada em evidência recomenda a **condução nervosa** e acha **dados insuficientes para a eletromiografia**; e o exame pode ser **normal** no paciente com a síndrome, de modo que **ENMG negativa não contraindica a cirurgia**. Na imagem, o Campbell prefere a **RM** ao ultrassom: ela acha a causa em **até 88%** e planeja a cirurgia; o HEBERT a chama de **quase imprescindível**.
+
+## O tratamento: conservador primeiro, cirurgia com causa
+
+O Campbell (p. 4027) começa com **6 a 12 semanas** de imobilização noturna do tornozelo em tala, anti-inflamatório e **calçado largo e acolchoado**; no túnel distal, órtese com **canal de alívio no arco medial**, porque a palmilha comum, com arco longitudinal, pode piorar. O HEBERT usa analgésicos de ação central (tricíclicos, fenotiazínicos), anti-inflamatórios, órteses e fisioterapia, e diz que **a infiltração com corticoide não é comum**.
+
+A indicação cirúrgica tem duas portas: **lesão que ocupa espaço** (operar) e **falha do conservador**. O HEBERT é mais restritivo: a cirurgia se impõe quando a dor persiste, **desde que haja causa específica previamente identificada**. O Campbell pede **cautela** em quatro perfis: **60 a 80 anos**, **cicatriz pós-traumática** no canal, **sem causa objetiva** (idiopática) e **doença psiquiátrica prolongada**. Os números explicam a cautela: lesão definida responde melhor que a idiopática ou a traumática; sem causa identificada, **cerca de 25% têm pouco ou nenhum alívio**, e raramente o quadro piora; sintomas há **menos de 1 ano** predizem resultado melhor; e a evidência é **nível IV ou V**.
+
+## A liberação: o retináculo, o abdutor e os ramos
+
+A técnica 92.1 do Campbell (p. 4027 a 4029) tem uma lógica de três tempos. A incisão começa **1 cm plantar à tuberosidade do navicular** e sobe **bissetando o maléolo medial e a tuberosidade do calcâneo** até **1 cm anterior ao tendão calcâneo**, quase reta com o pé em equino pela gravidade. Primeiro, acha-se o feixe **acima** do retináculo e incluem-se **1 a 2 cm da fáscia profunda** proximal à borda do retináculo; o nervo às vezes está **aumentado** nessa borda. Depois, o retináculo é aberto **de proximal para distal** até as fibras do **abdutor do hálux**, poupando o **ramo calcâneo medial**, que pode perfurar o retináculo e, cortado, vira **neuroma doloroso**. Por fim, cada plantar é seguido **bem distal** à borda do retináculo, liberando parte da origem do abdutor, porque os ramos podem passar por **alças fasciais** ao entrar na planta: é aqui que mora o túnel distal. Epineuro espessado é incisado, um segmento do retináculo é removido, só pele e subcutâneo são fechados, e o pé fica em **leve equinovaro** por 10 a 14 dias; edema por semanas é comum e a recuperação completa leva **6 a 12 meses**.
+
+!figura 92.6 imagem=pe-tornozelo/campbell15-92-6.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 92, Fig. 92.6, p. 4029. A: incisão (linha verde) entre o maléolo medial e o calcanhar, sobre o retináculo dos flexores e o abdutor do hálux. B: ramos calcâneos mediais furando o retináculo e a linha para rebater o abdutor. C: abdutor rebatido para a planta e o segmento do retináculo a remover sobre o feixe.
+!fim
+
+O HEBERT descreve a mesma operação básica com uma via **ampla, de cerca de 12 cm, curvilínea**, a meia distância da ponta do maléolo medial e da tuberosidade posterossuperior do calcâneo: abre o retináculo, disseca o feixe, abre os septos se preciso e estende a descompressão ao **túnel distal**, com a liberação da **aponeurose do abdutor do hálux**. Para o **ramo do abdutor do dedo mínimo**, prolonga a incisão para a planta, adiante da zona de carga, liberando a fáscia plantar e a origem dos flexores curtos, com ou sem ressecção do esporão. E conta a história em uma frase: a cirurgia evoluiu da **técnica de STEINDLER** (fasciectomia plantar, excisão do esporão e liberação dos flexores curtos), que provavelmente **seccionava** o ramo do abdutor do mínimo, **até a cirurgia proposta por BAXTER**, cuja finalidade era **descomprimir o nervo e seus ramos**.
+
+!tabela Liberação do túnel do tarso nos dois livros (Campbell 15, cap. 92, p. 4027 a 4031; HEBERT, cap. 21.1)
+| Ponto | Campbell | HEBERT |
+| --- | --- | --- |
+| Quando operar | lesão que ocupa espaço ou falha do conservador; cautela no idoso, cicatriz, idiopático e psiquiátrico | dor persistente com causa específica já identificada |
+| Via | do navicular a 1 cm do tendão calcâneo, quase reta | curvilínea, cerca de 12 cm |
+| Proximal | 1 a 2 cm de fáscia acima do retináculo | abrir o retináculo dos flexores |
+| Distal | seguir os plantares sob o abdutor do hálux | aponeurose do abdutor do hálux (túnel distal) |
+| Ramo do abdutor do mínimo | técnica 92.3 de BAXTER, PFEFFER e WATSON, com metade medial da fáscia plantar | prolongar para a planta, fáscia plantar e flexores curtos |
+| Revisão | volta lenta = cicatriz, neurólise com envoltório de veia safena ou colágeno; piora imediata = lesão iatrogênica | não detalha |
+!fim
+
+## O nervo de BAXTER e o pé do corredor
+
+O **primeiro ramo do plantar lateral** é comprimido **entre a borda lateral do abdutor do hálux e a borda medial do quadrado plantar**, perto da origem da fáscia plantar, e dá **dor crônica no calcanhar** difícil de separar da fascite; as duas podem coexistir (Campbell, cap. 92, p. 4031). Diferente do túnel proximal, o paciente **em geral não refere dormência**; a dor é sobre o ramo, profundo ao abdutor; a atrofia do abdutor do mínimo na imagem é **inespecífica**, porque aparece em assintomáticos; o eletrodiagnóstico ajuda. A maioria melhora com taças de calcanhar, anti-inflamatório, repouso, gelo, fisioterapia ou infiltração; nos persistentes, a liberação aberta ou endoscópica dá **83% a 88%** de resultados bons a excelentes. A técnica 92.3 leva o nome de **BAXTER, PFEFFER, WATSON e colaboradores**: incisão oblíqua de **4 cm** distal ao maléolo medial, sobre o abdutor do hálux proximal; abre-se a fáscia superficial, rebate-se o ventre, libera-se a **fáscia profunda do abdutor** até o nível da fáscia plantar e secciona-se a **metade medial da fáscia plantar**.
+
+O **plantar medial** nasce no túnel como divisão anterior do tibial e é comprimido no **nó de HENRY**, onde cruza superficial ao flexor longo dos dedos e ao flexor longo do hálux: é o **pé do corredor** (jogger's foot), com dor no arco medial irradiando aos **três dedos mediais**, piorada por valgo excessivo e órtese rígida no arco (Campbell, p. 4031 e 4032). Cirurgia só depois do conservador.
+
+!questoes central=pe-tornozelo-0424
+conceito: Falhado o conservador, o túnel do tarso é tratado pela descompressão do tibial e dos ramos (abrir o retináculo dos flexores e a aponeurose do abdutor do hálux, com neurólise); o HEBERT atribui a BAXTER a cirurgia de descompressão do nervo e dos ramos, e o Campbell dá a BAXTER, PFEFFER e WATSON a liberação do primeiro ramo do plantar lateral.
+como: O ENARE de pré-requisito em Cirurgia da Mão de 2023 pediu a técnica para o túnel do tarso após falha do conservador, misturando epônimos de outras regiões: Chevron, MCCASH, PULVERTAFT e ROLAND.
+armadilha: Os distratores são técnicas reais de outro lugar: Chevron é osteotomia do hálux valgo (Campbell, cap. 87), MCCASH é a palma deixada aberta no DUPUYTREN (cap. 80, p. 3526) e PULVERTAFT é o entrelaçamento de tendões (cap. 35, p. 1260); ROLAND não aparece como técnica nos livros, e o nome parecido, ROLANDO, é fratura da base do 1º metacarpal (cap. 72, p. 3201).
+!fim
+
+## O túnel do tarso anterior: o fibular profundo sob o retináculo extensor inferior
+
+O **fibular profundo** desce com a artéria tibial anterior sobre a membrana interóssea e, no tornozelo, passa sob os **retináculos extensores**; o **inferior** tem ramos superior e inferior, e é sob ele que o nervo se divide em ramo **lateral motor** (extensor curto dos dedos e do hálux) e **medial sensitivo** (1º espaço). A **síndrome do túnel do tarso anterior** é a **compressão do fibular profundo sob o retináculo extensor inferior** (Campbell, cap. 92, p. 4029). O quadro segue o território: **dor e disestesia no dorso do pé e no 1º espaço**, **tato e dor diminuídos no 1º espaço**, **TINEL** sobre o nervo sob o retináculo e, **raramente**, atrofia do **extensor curto dos dedos**, quando o ramo motor nasce mais distal que o normal. A disestesia pode subir para o compartimento anterior. O exame compara o extensor curto dos dedos e o do hálux e a sensibilidade com o outro pé; quadro **bilateral** sugere **neuropatia periférica difusa**.
+
+!figura 92.9 imagem=pe-tornozelo/campbell15-92-9.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 92, Fig. 92.9, p. 4031. Os círculos marcam os pontos de compressão do fibular profundo: um na altura do retináculo extensor superior, um sob o retináculo extensor inferior (com seus ramos superior e inferior) e um mais distal, no dorso do mediopé, onde o nervo passa sob o extensor curto do hálux; estão indicados os ramos motor e sensitivo.
+!fim
+
+É mais comum em **corredores** e em **osteófitos dorsais** do tornozelo, da mediotársica ou da metatarsocuneiforme; também foram descritos hipertrofia do extensor curto do hálux em **bailarinas**, **sapato apertado**, prender os pés sob uma barra para fazer abdominais e **cistos ganglionares** (p. 4029). O HEBERT descreve o mesmo espaço como **síndrome do compartimento anterior do tornozelo**, com assoalho ósseo e teto retinacular, e acrescenta causas do próprio **tibial anterior** (tendinite, rotura degenerativa, cicatriz hipertrófica, ventre acessório baixo): a dor dorsomedial com caráter neuropático precisa ser separada da lesão do tendão (HEBERT, cap. 21, seção do tendão tibial anterior).
+
+A eletrofisiologia pode confirmar: fibrilações, ondas positivas e potencial motor reduzido no **extensor curto dos dedos**, com **latências distais aumentadas** e **velocidade de condução normal** do colo da fíbula ao tornozelo; a compressão costuma ficar **distal ao ramo motor** do extensor curto dos dedos (p. 4029 e 4030). O tratamento repete a regra do túnel medial: **conservador primeiro** (imobilização, tirar a pressão externa, como o cadarço apertado, gabapentina, infiltração ocasional), exceto lesão que ocupa espaço. Na falha, a cirurgia dá **80% a 100%** de bons resultados: ressecar osteófitos, excisar gânglios e liberar **parcialmente** o retináculo extensor ou o tendão do extensor curto do hálux, por via aberta ou endoscópica (p. 4030). Na técnica 92.2 (MANN), a incisão de **5 a 7 cm** vai da talonavicular ao 1º espaço, identifica o nervo e a **artéria dorsal do pé**, segue o nervo sob o extensor curto do hálux e, como recomendam **MANN e BAXTER**, libera **só a parte do retináculo que comprime** (p. 4031).
+
+!tabela Túnel do tarso e túnel do tarso anterior lado a lado (Campbell 15, cap. 92, p. 4025 a 4031; HEBERT, cap. 21)
+| Aspecto | Túnel do tarso | Túnel do tarso anterior |
+| --- | --- | --- |
+| Nervo | tibial e ramos (plantares, calcâneo medial) | fibular profundo |
+| Teto | retináculo dos flexores (laciniado) | retináculo extensor inferior |
+| Sintoma | disestesia plantar e nos dedos, VALLEIX | dor no dorso e no 1º espaço |
+| Sensibilidade | planta (território plantar medial ou lateral) | 1º espaço |
+| Motor | atrofia do abdutor do hálux ou do mínimo | raramente atrofia do extensor curto dos dedos |
+| Causas típicas | lesão que ocupa espaço, coalizão, varizes, valgo | corredor, osteófito dorsal, sapato, gânglio |
+| Cirurgia | liberar retináculo, abdutor e ramos | liberação parcial do retináculo, ressecar osteófito ou gânglio (MANN) |
+| Resultado | sem causa, cerca de 25% sem alívio | 80% a 100% bons |
+!fim
+
+!questoes central=pe-tornozelo-0175
+conceito: A síndrome do túnel do tarso anterior é a compressão do nervo fibular profundo sob o retináculo extensor inferior, com dor no dorso, hipoestesia do 1º espaço e, raramente, atrofia do extensor curto dos dedos.
+como: Uma prova da SBOT-SP perguntou qual nervo a síndrome acomete, com o fibular superficial, o "tibial anterior" e o "tibial posterior" como distratores.
+armadilha: Marcar tibial posterior pensando no túnel do tarso clássico, que é do nervo tibial atrás do maléolo medial, ou fibular superficial, que é comprimido onde fura a fáscia no terço distal da perna e não sob o retináculo.
 !fim
 
 # Fechamento {radar=fundamento}

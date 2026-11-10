@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-artrogripose-neuromusculares
-versao: 1
+versao: 2
 titulo: Artrogripose e doenças neuromusculares
 especialidade: pediatria
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 36 e 37)
 capitulo: Capítulo 37 · Orthopaedic-Related Syndromes (Arthrogryposis); Capítulo 32 · Disorders of the Spinal Cord; Capítulo 33 · Poliomyelitis
 autores: John A. Herring (editor; autor dos capítulos 33 e 37)
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 37 (artrogripose e FREEMAN-SHELDON, p. 1889 a 1906), cap. 12 (artrogripose no membro superior, p. 349 a 353), cap. 32 (mielomeningocele e atrofia muscular espinhal, p. 1530 a 1572), cap. 33 (poliomielite, p. 1582 a 1589), cap. 31 (FRIEDREICH, p. 1501 e 1502) e cap. 34 (CHARCOT-MARIE-TOOTH, p. 1680 a 1686 aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 36 (poliomielite, espinha bífida e artrogripose, p. 1276 a 1318) e cap. 37 (doenças neuromusculares, p. 1323 a 1352); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., caps. 35 e 36 (artrogripose, sem página impressa no arquivo); Green's Operative Hand Surgery, 7ª ed., cap. 39 (artrogripose, p. 1365 a 1377) e cap. 40 (p. 1415). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 37 (artrogripose e FREEMAN-SHELDON, p. 1889 a 1906), cap. 12 (artrogripose no membro superior, p. 349 a 353), cap. 32 (mielomeningocele e atrofia muscular espinhal, p. 1530 a 1572), cap. 33 (poliomielite, p. 1582 a 1589), cap. 31 (FRIEDREICH, p. 1501 e 1502) e cap. 34 (CHARCOT-MARIE-TOOTH, p. 1680 a 1686 aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 36 (poliomielite, espinha bífida e artrogripose, p. 1276 a 1318) e cap. 37 (doenças neuromusculares, p. 1323 a 1352); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., caps. 35 e 36 (artrogripose, sem página impressa no arquivo); Green's Operative Hand Surgery, 7ª ed., cap. 39 (artrogripose, p. 1365 a 1377) e cap. 40 (p. 1415). As páginas citadas são as impressas. Ampliado em 10/11/2026 com as transferências no pé paralítico: Tachdjian, cap. 33 (p. 1603 a 1609 aprox., Tabela 33.1) e cap. 31 (p. 1439 a 1441); Campbell, cap. 36 (p. 1278.e1, 1278.e2 e 1278.e10 a 1278.e12) e cap. 35 (p. 1258 a 1260).
 subtemas: Artrogripose e doenças neuromusculares
-resumo: Artrogripose é sintoma (acinesia fetal), 1 em 3.000 nascidos, amioplasia é a forma mais comum e esporádica; forma neuropática (93%) com DIMINUIÇÃO das células do corno anterior; postura em "gorjeta do garçom" (ombro em rotação interna, cotovelo em extensão, punho em flexão e desvio ulnar), hemangioma na fronte, inteligência normal, anomalias intestinais e de parede; GOLDBERG em quatro grupos (sinostoses: umerorradial e NIEVERGELT-PEARLMAN); FREEMAN-SHELDON = face de assobiador; no membro superior o primeiro objetivo é a flexão passiva do cotovelo, depois a rotação do úmero, depois punho e polegar; STEINDLER dá flexão ao cotovelo estendido mas piora o punho; quadril: redução aberta precoce, nunca fechada, contraindicada com arco muito limitado; AME tipo II senta mas não anda, sem reflexo patelar; mielomeningocele: quadríceps decide a marcha; FRIEDREICH: ataxia, arreflexia, BABINSKI.
+resumo: Artrogripose é sintoma (acinesia fetal), 1 em 3.000 nascidos, amioplasia é a forma mais comum e esporádica; forma neuropática (93%) com DIMINUIÇÃO das células do corno anterior; postura em "gorjeta do garçom" (ombro em rotação interna, cotovelo em extensão, punho em flexão e desvio ulnar), hemangioma na fronte, inteligência normal, anomalias intestinais e de parede; GOLDBERG em quatro grupos (sinostoses: umerorradial e NIEVERGELT-PEARLMAN); FREEMAN-SHELDON = face de assobiador; no membro superior o primeiro objetivo é a flexão passiva do cotovelo, depois a rotação do úmero, depois punho e polegar; STEINDLER dá flexão ao cotovelo estendido mas piora o punho; quadril: redução aberta precoce, nunca fechada, contraindicada com arco muito limitado; AME tipo II senta mas não anda, sem reflexo patelar; mielomeningocele: quadríceps decide a marcha; FRIEDREICH: ataxia, arreflexia, BABINSKI. Pé da pólio: fibulares e tibial anterior paralisados = equinovaro, transferência do tibial posterior pela membrana interóssea para a base do 3º metatarsal ou cuneiforme médio (BARR); na paralisia cerebral a transferência total dá calcaneovalgo, e o RANCHO soma hemitransferência do tibial anterior e alongamento do tibial posterior.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -396,6 +396,60 @@ A **CHARCOT-MARIE-TOOTH** é a mais comum das **neuropatias hereditárias sensit
 | Condução | motora quase normal, sensitiva reduzida | motora lenta (CMT-1) | normal |
 | CK | normal | normal | normal ou pouco elevada |
 | Coluna | escoliose frequente, com cifose | escoliose incomum | escoliose quase universal sem marcha |
+!fim
+
+# O pé paralítico: as transferências da pólio e o que muda na paralisia cerebral {radar=confirmado}
+
+O mesmo tendão, o do **tibial posterior**, é a solução clássica no pé flácido da pólio e uma armadilha no pé espástico da paralisia cerebral. Entender por quê resolve as duas questões do tema e ensina a regra que vale para qualquer transferência: primeiro descobrir quem está paralisado, quem está forte e quem está fora de fase.
+
+## O mapa do desequilíbrio
+
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 33, p. 1603), começa pela física: o **tríceps sural** trabalha **6,5 kg/m**, contra **1,4 kg/m** dos dorsiflexores (**4:1**). Em flexão plantar, quem segura o pé de lado são o **tibial posterior e os fibulares**; em dorsiflexão, o **tibial anterior e o extensor comum**. Na pólio, o músculo que sobra puxa sem oposição: a deformidade começa **flexível** e fica **fixa** com o crescimento, e é previsível pelo músculo que falta.
+
+!tabela Paralisia, deformidade e transferência no pé da pólio (Tachdjian, cap. 33, Tabela 33.1 e p. 1606 e 1607; Campbell 15, cap. 36, p. 1278.e1 e 1278.e2)
+| Paralisados | Deformidade | Transferência |
+| --- | --- | --- |
+| fibulares | varo do retropé; joanete dorsal pelo tibial anterior que eleva o 1º metatarsal | tibial anterior lateral para a base do 2º metatarsal |
+| fibulares e extensores dos dedos | equinovaro moderado | tibial anterior para a base do 3º metatarsal (Campbell: ou cuneiforme médio); no 4º ou 5º vira valgo |
+| tibial anterior | equinovalgo lento, dedos em "cock-up" pelos extensores | fibular longo para a base do 2º metatarsal, fibular curto no coto do longo |
+| tibial anterior e tibial posterior | equinovalgo rápido, que imita talo vertical | fibular longo para a base do 2º metatarsal e um flexor longo no lugar do tibial posterior |
+| tibial anterior, extensores dos dedos e fibulares | equinovaro progressivo pelo tibial posterior e tríceps | tibial posterior pela membrana interóssea para a base do 3º metatarsal ou o cuneiforme médio |
+| tríceps sural | calcâneo rapidamente progressivo | três ou quatro músculos para o calcâneo |
+!fim
+
+O **fibular longo** deprime o 1º metatarsal e o **tibial anterior** o eleva: sem o fibular longo vem o **joanete dorsal**, e o fibular longo transferido **nunca vai no 1º metatarsal** (Tachdjian, p. 1606 e 1607).
+
+## Fibulares e tibial anterior paralisados: o tibial posterior vai para a frente
+
+Quando caem **tibial anterior, extensores dos dedos e fibulares**, sobram o **tibial posterior** e o **tríceps**, sem ninguém do outro lado: o pé vai para o **equinovaro** (Tachdjian, p. 1607, Fig. 33.16). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 36, p. 1278.e2), detalha o mecanismo: o tibial posterior **aumenta o equino do antepé e o cavo**, deprimindo as cabeças dos metatarsais e encurtando o arco medial.
+
+A resposta dos dois livros é a mesma: **transferência anterior do tibial posterior pela membrana interóssea** para a **base do 3º metatarsal** ou o **cuneiforme médio** (o Tachdjian escreve "segundo cuneiforme"). Os cuidados também coincidem. A deformidade precisa estar **corrigida antes** (gesso de estiramento, liberação de partes moles no varo fixo, alongamento do tendão calcâneo, que o Campbell diz ser em geral necessário), porque transferência não corrige deformidade fixa. A força pode ser **reforçada** com o flexor longo dos dedos ou do hálux pelo mesmo caminho interósseo, ou com **tenodese anterior**, e o pós-operatório usa órtese de assistência à dorsiflexão de dia e tala à noite (Tachdjian, p. 1607).
+
+O Campbell (p. 1278.e10) é honesto sobre o limite: no equinovaro paralítico, em que os **fibulares estão paralisados** e o **tibial posterior em geral normal**, a transferência anterior **remove a força deformante e ajuda a dorsiflexão**, mas **sozinha raramente restaura a dorsiflexão ativa**. Redirecionar o tendão **na frente do maléolo medial** diminui a flexão plantar, mas **mantém o puxão em varo**; por isso o caminho é o **interósseo**, com o tendão inteiro no cuneiforme médio, ou dividido, com a metade lateral no cuboide.
+
+A técnica de **BARR** (p. 1278.e10 e 1278.e11) é a que a pergunta descreve: o tendão é solto do navicular por via medial; uma segunda incisão anterior, lateral ao tibial anterior, chega à membrana entre o **tibial anterior e o extensor longo do hálux**, preservando a **artéria dorsal do pé**; abre-se uma **janela generosa** na membrana interóssea sem descolar o periósteo; o tendão passa **sem dobra nem torção**; vai sob o ligamento cruzado ao **3º cuneiforme ou à base do 3º metatarsal**, fixo com fio de tração e botão plantar acolchoado; gesso em **calcaneovalgo** e órtese por **6 meses**.
+
+!questoes central=pe-tornozelo-0356
+conceito: Com fibulares e tibial anterior paralisados, tibial posterior e tríceps sem oposição fazem equinovaro; a transferência anterior do tibial posterior pela membrana interóssea para a base do 3º metatarsal ou o cuneiforme médio tira a força deformante e ajuda a dorsiflexão, desde que a deformidade esteja corrigida antes.
+como: O TARO 2006 afirmou, em certo ou errado, que no pé paralítico com paralisia dos fibulares e do tibial anterior a transferência indicada é a do tibial posterior pela membrana interóssea, citando o Tachdjian.
+armadilha: Confundir com a paralisia cerebral, em que a transferência total do tibial posterior para o dorso dá calcaneovalgo; ou com a paralisia só dos fibulares, em que quem vai é o tibial anterior, para a base do 2º metatarsal.
+alerta: Questão sem gabarito oficial. O Tachdjian (cap. 33, p. 1607 e Tabela 33.1) e o Campbell (cap. 36, p. 1278.e2 e 1278.e10) sustentam "Certo" (A), a mesma resposta do gabarito pela bibliografia de `pe-tornozelo-0356`; o Campbell ressalva que a transferência sozinha raramente restaura a dorsiflexão ativa.
+!fim
+
+## Na paralisia cerebral, o mesmo tendão vira armadilha
+
+Na paralisia cerebral o tibial posterior não está paralisado nem é apenas forte: está **hiperativo ou fora de fase**. O normal é ele trabalhar no **apoio** e calar no **balanço**; na criança com paralisia cerebral ele **contrai no balanço** e o pé chega ao chão em varo (Campbell, cap. 35, p. 1258). Transferir o tendão inteiro para o dorso troca um varo por outro problema. O Tachdjian (cap. 31, p. 1440) dá o número: **calcaneovalgo em até 68%**, e o serviço dos autores **não faz** a operação. O Campbell (p. 1259) conta **78% de maus resultados** num estudo, por quatro motivos: varo rígido não reconhecido, alongamento do tendão calcâneo junto levando ao **calcâneo**, implante lateral demais levando ao **valgo** e desinserção do tendão; a transferência total ao dorso **caiu em desuso**.
+
+A saída foram as **transferências divididas**, que funcionam como **alça dinâmica**. Para o tibial posterior, a hemitransferência da metade posterior, passada **por trás da tíbia e da fíbula** e entrelaçada no **fibular curto**: o Tachdjian a atribui a **GREEN** e o Campbell a ilustra como de **KAUFER** (Fig. 35.29); exige atividade no **balanço** no EMG. Para o tibial anterior, a hemitransferência da metade lateral para o **cuboide** (o Campbell a dá como técnica de **HOFFER** e colaboradores, p. 1260). Quando essa hemitransferência do tibial anterior é somada ao **alongamento do tibial posterior**, o nome é **procedimento RANCHO** (Tachdjian, p. 1440), indicado quando o tibial anterior hiperativo **supina** o antepé no teste da confusão. O Campbell (p. 1258) recomenda exatamente essa combinação, sem o nome, quando não há laboratório de marcha para saber qual tibial é o culpado, e relata **18 de 20** crianças com resultado excelente ou bom com alongamento intramuscular do tibial posterior, alongamento do calcâneo e hemitransferência do tibial anterior (p. 1260). Os maus resultados estavam no **retropé fixo** e no **tibial anterior fraco**, e o Tachdjian proíbe a hemitransferência do tibial anterior no pé caído.
+
+!tabela Tibial posterior na pólio e na paralisia cerebral (Tachdjian, caps. 31 e 33; Campbell 15, caps. 35 e 36)
+| Aspecto | Pólio | Paralisia cerebral |
+| --- | --- | --- |
+| O tibial posterior | normal e sem oposição | espástico ou fora de fase (contrai no balanço) |
+| O que falta | fibulares e tibial anterior paralisados | controle motor, não força |
+| Transferência total ao dorso | indicada, pela membrana interóssea | calcaneovalgo até 68% (Tachdjian), 78% de maus resultados (Campbell) |
+| Opção preferida | tendão inteiro no 3º metatarsal ou cuneiforme médio | hemitransferências: GREEN ou KAUFER (tibial posterior), HOFFER (tibial anterior), RANCHO |
+| Inserção | inteira no 3º metatarsal | biomecânica: dividida no 4º metatarsal, inteira no 3º (Campbell, p. 1260) |
 !fim
 
 # Fechamento {radar=fundamento}

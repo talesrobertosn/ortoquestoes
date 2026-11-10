@@ -7695,15 +7695,15 @@
   },
   {
    "id": "campbell15-osteocondral-talus",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Lesões osteocondrais do tálus",
    "especialidade": "pe-tornozelo",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Rockwood and Green's Fractures in Adults, 10ª ed., e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed.",
    "capitulo": "Capítulo 34 · Osteochondrosis or Epiphysitis and Other Miscellaneous Affections",
-   "resumo": "Medial é mais comum, posterior, profunda em taça, pouco desviada e por inversão com flexão plantar e rotação externa; lateral é anterior, rasa em bolacha, desviada e por inversão com dorsiflexão, traumática em 98%; BERNDT e HARTY (radiografia, I a IV), FERKEL e SGAGLIONE (TC), ANDERSON, HEPPLE, DIPAOLA, TARANOW e MINTZ (RM), PRITSCH e CHENG (artroscopia); o tamanho decide o tratamento; conservador no I, II e III medial e na criança, cirurgia precoce no III lateral e no IV; estímulo medular nas pequenas, fixação nas agudas, OATS, mosaicoplastia e aloenxerto nas grandes; GATELLIER e CHASTANG para a lesão lateral.",
+   "resumo": "Medial é mais comum, posterior, profunda em taça, pouco desviada e por inversão com flexão plantar e rotação externa; lateral é anterior, rasa em bolacha, desviada e por inversão com dorsiflexão, traumática em 98%; BERNDT e HARTY (radiografia, I a IV), FERKEL e SGAGLIONE (TC), ANDERSON, HEPPLE, DIPAOLA, TARANOW e MINTZ (RM), PRITSCH e CHENG (artroscopia); o tamanho decide o tratamento; conservador no I, II e III medial e na criança, cirurgia precoce no III lateral e no IV; estímulo medular nas pequenas, fixação nas agudas, OATS, mosaicoplastia e aloenxerto nas grandes; GATELLIER e CHASTANG para a lesão lateral. Na prova, a osteocondrite da cúpula talar é a doença de KAPPIS (1922, origem traumático-mecânica da osteocondrite dissecante); ISELIN é a base do 5º metatarsal.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7781,6 +7781,11 @@
      "radar": "clinico"
     },
     {
+     "id": "o-nome-na-prova-osteocondrite-da-cupula-talar-e-",
+     "titulo": "O nome na prova: osteocondrite da cúpula talar e a doença de KAPPIS",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -7795,7 +7800,8 @@
     "pe-tornozelo-0240",
     "pe-tornozelo-0386",
     "pe-tornozelo-0280",
-    "pe-tornozelo-0085"
+    "pe-tornozelo-0085",
+    "pe-tornozelo-0376"
    ],
    "treino": [],
    "subtemas": [
@@ -12523,6 +12529,271 @@
    "treino": [],
    "subtemas": [
     "Lesões de nervos periféricos"
+   ]
+  },
+  {
+   "id": "green-outros-mao-1",
+   "versao": 1,
+   "titulo": "Outros temas da mão (1): cotovelo traumático, leito ungueal, vias do rádio e anestesia local",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 19 · Fractures of the Radial Head (com os capítulos 1, 4, 9, 11, 14, 17, 18, 20, 21, 22, 32, 38, 43, 57 e 60)",
+   "resumo": "MEHNE e MATTA classificam o úmero distal por colunas e achados cirúrgicos; capítulo tipo III é a cominutiva; pseudoartrose do úmero distal é metadiafisária; aspiração do cotovelo no triângulo epicôndilo lateral, cabeça do rádio e ponta do olécrano; MASON II é marginal com desvio; tríade terrível se repara de dentro para fora (coronoide, cabeça do rádio, ligamento colateral lateral); faceta anteromedial do coronoide é do varo posteromedial nos livros; GALEAZZI instável quanto mais distal (até 7,5 cm); HENRY entre braquiorradial e flexor radial do carpo, em supinação; AMA: polegar 40%, indicador e médio 20%, anular e mínimo 10%; matriz germinativa faz 90% da unha; portal 3-4 é o primeiro; lidocaína 8 a 11 mg/kg; queimadura de 2º grau superficial tem bolha e dói; aneurisma da mão é traumático; VICKERS liga semilunar à metáfise do rádio; MASADA tipo 1 é o mais comum; paralisia cerebral é irreversível e não progressiva.",
+   "acesso": "gratis",
+   "minutos": 42,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "umero-distal-colunas-capitulo-e-pseudoartrose",
+     "titulo": "Úmero distal: colunas, capítulo e pseudoartrose",
+     "radar": "confirmado"
+    },
+    {
+     "id": "cabeca-do-radio-aspiracao-mason-e-a-decisao-ciru",
+     "titulo": "Cabeça do rádio: aspiração, MASON e a decisão cirúrgica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "coronoide-triade-terrivel-e-o-padrao-em-varo-pos",
+     "titulo": "Coronoide, tríade terrível e o padrão em varo posteromedial",
+     "radar": "confirmado"
+    },
+    {
+     "id": "antebraco-galeazzi-e-as-vias-de-henry-e-thompson",
+     "titulo": "Antebraço: GALEAZZI e as vias de HENRY e THOMPSON",
+     "radar": "confirmado"
+    },
+    {
+     "id": "membro-superior-grave-fratura-exposta-iiic-e-qua",
+     "titulo": "Membro superior grave: fratura exposta IIIC e quanto vale cada dedo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "leito-ungueal-anatomia-e-conduta-no-trauma",
+     "titulo": "Leito ungueal: anatomia e conduta no trauma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "base-do-polegar-qual-ligamento-estabiliza",
+     "titulo": "Base do polegar: qual ligamento estabiliza",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artroscopia-do-punho-os-portais",
+     "titulo": "Artroscopia do punho: os portais",
+     "radar": "confirmado"
+    },
+    {
+     "id": "anestesia-local-na-mao-doses-e-tecnica-sem-torni",
+     "titulo": "Anestesia local na mão: doses e técnica sem torniquete",
+     "radar": "confirmado"
+    },
+    {
+     "id": "queimaduras-reconhecer-a-profundidade",
+     "titulo": "Queimaduras: reconhecer a profundidade",
+     "radar": "confirmado"
+    },
+    {
+     "id": "aneurismas-e-trombose-arterial-na-mao",
+     "titulo": "Aneurismas e trombose arterial na mão",
+     "radar": "confirmado"
+    },
+    {
+     "id": "doenca-de-dupuytren-condicoes-associadas",
+     "titulo": "Doença de DUPUYTREN: condições associadas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "madelung-e-exostose-multipla-duas-deformidades-d",
+     "titulo": "MADELUNG e exostose múltipla: duas deformidades do antebraço",
+     "radar": "confirmado"
+    },
+    {
+     "id": "paralisia-cerebral-definicao-e-o-angulo-de-volkm",
+     "titulo": "Paralisia cerebral: definição e o ângulo de VOLKMANN",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1350",
+    "mao-1572",
+    "mao-1490",
+    "mao-1491",
+    "mao-1580",
+    "mao-1353",
+    "mao-1347",
+    "mao-1488",
+    "mao-0585",
+    "mao-1345",
+    "mao-1126",
+    "mao-0730",
+    "mao-0824",
+    "mao-1484",
+    "mao-0689",
+    "mao-0707",
+    "mao-0476",
+    "mao-0446",
+    "mao-0468",
+    "mao-1100",
+    "mao-0305",
+    "mao-1162",
+    "mao-1364",
+    "mao-1409"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Outros temas da mão"
+   ]
+  },
+  {
+   "id": "green-outros-mao-2",
+   "versao": 1,
+   "titulo": "Outros temas da mão (2): síndrome compartimental, VOLKMANN, aneurismas e trauma do cotovelo",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017)",
+   "capitulo": "Capítulo 20 · Fractures of the Proximal Ulna (com os capítulos 18, 19, 21, 22, 51, 54 e 60)",
+   "resumo": "Síndrome compartimental (adulto, rádio distal e dois ossos; criança, dois ossos e cotovelo flutuante; coagulopatia contraindica medir a pressão; mão com 10 compartimentos; fasciotomia nas primeiras 8 h); neonatal com lesão sentinela no braço; VOLKMANN pela classificação de TSUGE (leve, moderada com déficit sensitivo do mediano, grave com extensores) e pseudo-VOLKMANN; aneurismas raros, falsos, traumáticos e da artéria ulnar; SECRETAN como linfedema factício; capítulo do úmero (tipo IV e DUBBERLEY); cabeça do rádio (valgo e supinação, sinal da vela, zona segura de 110 graus, necrose assintomática); círculo de HORII; MONTEGGIA (alinhar a ulna, interósseo posterior).",
+   "acesso": "gratis",
+   "minutos": 42,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "sindrome-compartimental-aguda-o-que-e-e-quem-tem",
+     "titulo": "Síndrome compartimental aguda: o que é e quem tem",
+     "radar": "clinico"
+    },
+    {
+     "id": "diagnostico-clinico-e-medida-da-pressao",
+     "titulo": "Diagnóstico clínico e medida da pressão",
+     "radar": "clinico"
+    },
+    {
+     "id": "compartimentos-do-membro-superior",
+     "titulo": "Compartimentos do membro superior",
+     "radar": "clinico"
+    },
+    {
+     "id": "fasciotomia-prazo-tecnica-e-cuidados",
+     "titulo": "Fasciotomia: prazo, técnica e cuidados",
+     "radar": "clinico"
+    },
+    {
+     "id": "sindrome-compartimental-neonatal",
+     "titulo": "Síndrome compartimental neonatal",
+     "radar": "clinico"
+    },
+    {
+     "id": "contratura-isquemica-de-volkmann-e-a-classificac",
+     "titulo": "Contratura isquêmica de VOLKMANN e a classificação de TSUGE",
+     "radar": "clinico"
+    },
+    {
+     "id": "pseudo-volkmann",
+     "titulo": "Pseudo-VOLKMANN",
+     "radar": "clinico"
+    },
+    {
+     "id": "aneurismas-e-trombose-da-arteria-ulnar",
+     "titulo": "Aneurismas e trombose da artéria ulnar",
+     "radar": "clinico"
+    },
+    {
+     "id": "doenca-de-secretan",
+     "titulo": "Doença de SECRETAN",
+     "radar": "clinico"
+    },
+    {
+     "id": "umero-distal-fraturas-do-capitulo-e-o-nervo-ulna",
+     "titulo": "Úmero distal: fraturas do capítulo e o nervo ulnar",
+     "radar": "clinico"
+    },
+    {
+     "id": "cabeca-do-radio-mecanismo-imagem-zona-segura-e-n",
+     "titulo": "Cabeça do rádio: mecanismo, imagem, zona segura e necrose",
+     "radar": "clinico"
+    },
+    {
+     "id": "estabilidade-do-cotovelo-coronoide-circulo-de-ho",
+     "titulo": "Estabilidade do cotovelo, coronoide, círculo de HORII e rigidez",
+     "radar": "clinico"
+    },
+    {
+     "id": "lesao-de-monteggia-no-adulto",
+     "titulo": "Lesão de MONTEGGIA no adulto",
+     "radar": "clinico"
+    },
+    {
+     "id": "pseudoartrose-das-fraturas-diafisarias-do-antebr",
+     "titulo": "Pseudoartrose das fraturas diafisárias do antebraço",
+     "radar": "confirmado"
+    },
+    {
+     "id": "nervo-frenico-o-que-os-livros-de-mao-trazem",
+     "titulo": "Nervo frênico: o que os livros de mão trazem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-1617",
+    "mao-1628"
+   ],
+   "treino": [
+    "mao-2335",
+    "mao-2012",
+    "mao-2011",
+    "mao-2063",
+    "mao-2265",
+    "mao-2607",
+    "mao-2336",
+    "mao-2177",
+    "mao-2062",
+    "mao-2337",
+    "mao-2500",
+    "mao-2176",
+    "mao-2457",
+    "mao-2264",
+    "mao-2602",
+    "mao-2056",
+    "mao-2276",
+    "mao-2179",
+    "mao-2353",
+    "mao-2522",
+    "mao-2352",
+    "mao-2437",
+    "mao-2382",
+    "mao-2364",
+    "mao-2476",
+    "mao-2420",
+    "mao-2529",
+    "mao-2356",
+    "mao-2552",
+    "mao-2355",
+    "mao-2455",
+    "mao-2526",
+    "mao-2417"
+   ],
+   "subtemas": [
+    "Outros temas da mão"
    ]
   },
   {
@@ -17358,15 +17629,15 @@
   },
   {
    "id": "netter-anatomia-pe-tornozelo",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Anatomia da perna, do tornozelo e do pé",
    "especialidade": "pe-tornozelo",
    "livro": "Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy)",
    "edicao": "2ª edição, com o Campbell's Operative Orthopaedics, 15ª ed., e o Rockwood and Green's Fractures in Adults, 10ª ed.",
    "capitulo": "Capítulo 10 · Pé e tornozelo (com a perna do capítulo 9)",
-   "resumo": "Os quatro compartimentos da perna com músculos, nervos e artérias; o corredor atrás do maléolo medial (tibial posterior, flexor longo dos dedos, feixe tibial, flexor longo do hálux); inserções do fibular curto, do fibular longo, do tibial posterior e do tibial anterior; nervos sural, safeno, fibular superficial e profundo; tálus (irrigação pelo colo, necrose, ligamento mola, talocalcaneano interósseo); vias anterior do tornozelo e posterolateral.",
+   "resumo": "Os quatro compartimentos da perna com músculos, nervos e artérias; o corredor atrás do maléolo medial (tibial posterior, flexor longo dos dedos, feixe tibial, flexor longo do hálux); inserções do fibular curto, do fibular longo, do tibial posterior e do tibial anterior; nervos sural, safeno, fibular superficial e profundo; tálus (irrigação pelo colo, necrose, ligamento mola, talocalcaneano interósseo); vias anterior do tornozelo e posterolateral. Túnel do tarso (nervo tibial sob o retináculo dos flexores; proximal e distal sob o abdutor do hálux; liberação do retináculo, do abdutor e dos ramos, cirurgia de BAXTER) e túnel do tarso anterior (fibular profundo sob o retináculo extensor inferior, dor no 1º espaço, liberação parcial de MANN).",
    "acesso": "gratis",
-   "minutos": 26,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -17454,6 +17725,11 @@
      "radar": "oportunidade"
     },
     {
+     "id": "as-sindromes-compressivas-tunel-do-tarso-e-tunel",
+     "titulo": "As síndromes compressivas: túnel do tarso e túnel do tarso anterior",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -17501,7 +17777,9 @@
     "pe-tornozelo-0257",
     "pe-tornozelo-0351",
     "pe-tornozelo-0362",
-    "pe-tornozelo-0342"
+    "pe-tornozelo-0342",
+    "pe-tornozelo-0424",
+    "pe-tornozelo-0175"
    ],
    "treino": [
     "pe-tornozelo-0425",
@@ -17512,7 +17790,8 @@
     "pe-tornozelo-0427"
    ],
    "subtemas": [
-    "Anatomia do pé e tornozelo"
+    "Anatomia do pé e tornozelo",
+    "Outros temas do pé e tornozelo"
    ]
   },
   {
@@ -27877,15 +28156,15 @@
   },
   {
    "id": "tachdjian6-artrogripose-neuromusculares",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Artrogripose e doenças neuromusculares",
    "especialidade": "pediatria",
    "livro": "Tachdjian's Pediatric Orthopaedics",
    "edicao": "6ª edição (2021), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 36 e 37)",
    "capitulo": "Capítulo 37 · Orthopaedic-Related Syndromes (Arthrogryposis); Capítulo 32 · Disorders of the Spinal Cord; Capítulo 33 · Poliomyelitis",
-   "resumo": "Artrogripose é sintoma (acinesia fetal), 1 em 3.000 nascidos, amioplasia é a forma mais comum e esporádica; forma neuropática (93%) com DIMINUIÇÃO das células do corno anterior; postura em \"gorjeta do garçom\" (ombro em rotação interna, cotovelo em extensão, punho em flexão e desvio ulnar), hemangioma na fronte, inteligência normal, anomalias intestinais e de parede; GOLDBERG em quatro grupos (sinostoses: umerorradial e NIEVERGELT-PEARLMAN); FREEMAN-SHELDON = face de assobiador; no membro superior o primeiro objetivo é a flexão passiva do cotovelo, depois a rotação do úmero, depois punho e polegar; STEINDLER dá flexão ao cotovelo estendido mas piora o punho; quadril: redução aberta precoce, nunca fechada, contraindicada com arco muito limitado; AME tipo II senta mas não anda, sem reflexo patelar; mielomeningocele: quadríceps decide a marcha; FRIEDREICH: ataxia, arreflexia, BABINSKI.",
+   "resumo": "Artrogripose é sintoma (acinesia fetal), 1 em 3.000 nascidos, amioplasia é a forma mais comum e esporádica; forma neuropática (93%) com DIMINUIÇÃO das células do corno anterior; postura em \"gorjeta do garçom\" (ombro em rotação interna, cotovelo em extensão, punho em flexão e desvio ulnar), hemangioma na fronte, inteligência normal, anomalias intestinais e de parede; GOLDBERG em quatro grupos (sinostoses: umerorradial e NIEVERGELT-PEARLMAN); FREEMAN-SHELDON = face de assobiador; no membro superior o primeiro objetivo é a flexão passiva do cotovelo, depois a rotação do úmero, depois punho e polegar; STEINDLER dá flexão ao cotovelo estendido mas piora o punho; quadril: redução aberta precoce, nunca fechada, contraindicada com arco muito limitado; AME tipo II senta mas não anda, sem reflexo patelar; mielomeningocele: quadríceps decide a marcha; FRIEDREICH: ataxia, arreflexia, BABINSKI. Pé da pólio: fibulares e tibial anterior paralisados = equinovaro, transferência do tibial posterior pela membrana interóssea para a base do 3º metatarsal ou cuneiforme médio (BARR); na paralisia cerebral a transferência total dá calcaneovalgo, e o RANCHO soma hemitransferência do tibial anterior e alongamento do tibial posterior.",
    "acesso": "gratis",
-   "minutos": 37,
+   "minutos": 42,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -27978,6 +28257,11 @@
      "radar": "fundamento"
     },
     {
+     "id": "o-pe-paralitico-as-transferencias-da-polio-e-o-q",
+     "titulo": "O pé paralítico: as transferências da pólio e o que muda na paralisia cerebral",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -28001,7 +28285,8 @@
     "pediatria-0067",
     "pediatria-0341",
     "pediatria-0792",
-    "pediatria-0342"
+    "pediatria-0342",
+    "pe-tornozelo-0356"
    ],
    "treino": [],
    "subtemas": [
@@ -29912,6 +30197,103 @@
    "treino": [],
    "subtemas": [
     "Outras doenças congênitas"
+   ]
+  },
+  {
+   "id": "tachdjian6-outros-pediatria",
+   "versao": 1,
+   "titulo": "Outros temas de ortopedia pediátrica: tálus vertical, ossos acessórios do pé, hemofilia e osteotomia periacetabular",
+   "especialidade": "pediatria",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Lovell and Winter's Pediatric Orthopaedics, 7ª ed., o Campbell's Operative Orthopaedics, 15ª ed., e o HEBERT, Ortopedia e Traumatologia, 5ª ed.",
+   "capitulo": "Capítulo 39 · Hematologic Disorders (Hemophilia), com as seções Normal Variations e Vertical Talus do capítulo 19",
+   "resumo": "Tálus vertical congênito (luxação dorsal rígida da talonavicular com equino do retropé, contratura do tibial anterior, KITE aumentado no AP e no perfil, navicular que não reduz na flexão plantar, \"sapato persa\" nos paralíticos); navicular acessório como o osso acessório que mais dá sintoma; hemofilia (joelho é a articulação, quadríceps é o músculo); osteotomia periacetabular bernesa (centro-borda menor que 20 graus, TÖNNIS 0 ou 1, quadril congruente); mesoderma da placa lateral forma ossos, cartilagens e tendões; alfa-L-iduronidase é a mucopolissacaridose tipo I.",
+   "acesso": "gratis",
+   "minutos": 40,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "talus-vertical-congenito-o-que-e-de-onde-vem-e-c",
+     "titulo": "Tálus vertical congênito: o que é, de onde vem e com o que anda",
+     "radar": "confirmado"
+    },
+    {
+     "id": "talus-vertical-o-exame-o-sapato-persa-e-as-class",
+     "titulo": "Tálus vertical: o exame, o \"sapato persa\" e as classificações",
+     "radar": "confirmado"
+    },
+    {
+     "id": "talus-vertical-a-radiografia-e-o-angulo-de-kite",
+     "titulo": "Tálus vertical: a radiografia e o ângulo de KITE",
+     "radar": "confirmado"
+    },
+    {
+     "id": "talus-vertical-diagnostico-diferencial-e-tratame",
+     "titulo": "Tálus vertical: diagnóstico diferencial e tratamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "ossos-acessorios-do-pe-o-navicular-acessorio-e-o",
+     "titulo": "Ossos acessórios do pé: o navicular acessório e o os trigonum",
+     "radar": "confirmado"
+    },
+    {
+     "id": "hemofilia-onde-sangra-e-o-que-o-sangue-faz-na-ar",
+     "titulo": "Hemofilia: onde sangra e o que o sangue faz na articulação",
+     "radar": "confirmado"
+    },
+    {
+     "id": "displasia-residual-do-adolescente-e-a-osteotomia",
+     "titulo": "Displasia residual do adolescente e a osteotomia periacetabular bernesa",
+     "radar": "confirmado"
+    },
+    {
+     "id": "embriologia-do-membro-quem-forma-o-que",
+     "titulo": "Embriologia do membro: quem forma o quê",
+     "radar": "confirmado"
+    },
+    {
+     "id": "mucopolissacaridoses-a-enzima-de-cada-tipo",
+     "titulo": "Mucopolissacaridoses: a enzima de cada tipo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "artrite-septica-que-nao-responde-a-drenagem",
+     "titulo": "Artrite séptica que não responde: a drenagem",
+     "radar": "confirmado"
+    },
+    {
+     "id": "pseudoartrose-hipertrofica-oligotrofica-e-atrofi",
+     "titulo": "Pseudoartrose: hipertrófica, oligotrófica e atrófica",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0369",
+    "pediatria-1069",
+    "pediatria-0715",
+    "pe-tornozelo-0176",
+    "pediatria-0011",
+    "quadril-0006",
+    "ombro-cotovelo-0243",
+    "pediatria-0391",
+    "pediatria-0873",
+    "pediatria-0903",
+    "pediatria-0904"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Outros temas de ortopedia pediátrica",
+    "Outras deformidades do pé na criança"
    ]
   },
   {

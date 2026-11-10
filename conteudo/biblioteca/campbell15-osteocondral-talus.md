@@ -1,6 +1,6 @@
 ---
 id: campbell15-osteocondral-talus
-versao: 1
+versao: 2
 titulo: Lesões osteocondrais do tálus
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed., o Rockwood and Green's Fractures in Adults, 10ª ed., e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed.
 capitulo: Capítulo 34 · Osteochondrosis or Epiphysitis and Other Miscellaneous Affections
 autores: Benjamin W. Sheffer
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (p. 1202 e 1202.e1), cap. 94 (p. 4162 a 4174, com as páginas do eBook), cap. 55 (p. 2318 a 2321), cap. 38 (p. 1476 a 1478), cap. 1 (p. 17 a 21) e cap. 3 (p. 156 a 157); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (p. 2040 a 2042); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 64, 65 e 66 (páginas do PDF, sem página impressa); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 68, seção Fraturas osteocondrais (sem página impressa). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 34 (p. 1202 e 1202.e1), cap. 94 (p. 4162 a 4174, com as páginas do eBook), cap. 55 (p. 2318 a 2321), cap. 38 (p. 1476 a 1478), cap. 1 (p. 17 a 21) e cap. 3 (p. 156 a 157); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (p. 2040 a 2042); Rockwood and Green's Fractures in Adults, 10ª ed., caps. 64, 65 e 66 (páginas do PDF, sem página impressa); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 68, seção Fraturas osteocondrais (sem página impressa). As páginas citadas são as impressas. Ampliado em 10/11/2026 com o epônimo da prova: Campbell's Operative Orthopaedics, 13ª ed., cap. 89 (referências, p. 4392.e1), e Campbell 15, cap. 34 (p. 1202 e 1202.e1, ISELIN, FREIBERG e KÖHLER).
 subtemas: Lesões osteocondrais do tálus
-resumo: Medial é mais comum, posterior, profunda em taça, pouco desviada e por inversão com flexão plantar e rotação externa; lateral é anterior, rasa em bolacha, desviada e por inversão com dorsiflexão, traumática em 98%; BERNDT e HARTY (radiografia, I a IV), FERKEL e SGAGLIONE (TC), ANDERSON, HEPPLE, DIPAOLA, TARANOW e MINTZ (RM), PRITSCH e CHENG (artroscopia); o tamanho decide o tratamento; conservador no I, II e III medial e na criança, cirurgia precoce no III lateral e no IV; estímulo medular nas pequenas, fixação nas agudas, OATS, mosaicoplastia e aloenxerto nas grandes; GATELLIER e CHASTANG para a lesão lateral.
+resumo: Medial é mais comum, posterior, profunda em taça, pouco desviada e por inversão com flexão plantar e rotação externa; lateral é anterior, rasa em bolacha, desviada e por inversão com dorsiflexão, traumática em 98%; BERNDT e HARTY (radiografia, I a IV), FERKEL e SGAGLIONE (TC), ANDERSON, HEPPLE, DIPAOLA, TARANOW e MINTZ (RM), PRITSCH e CHENG (artroscopia); o tamanho decide o tratamento; conservador no I, II e III medial e na criança, cirurgia precoce no III lateral e no IV; estímulo medular nas pequenas, fixação nas agudas, OATS, mosaicoplastia e aloenxerto nas grandes; GATELLIER e CHASTANG para a lesão lateral. Na prova, a osteocondrite da cúpula talar é a doença de KAPPIS (1922, origem traumático-mecânica da osteocondrite dissecante); ISELIN é a base do 5º metatarsal.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -518,6 +518,37 @@ O Tachdjian é mais cauteloso: a maioria não está unida aos 6 meses, um terço
 ## A lesão que acompanha a fratura
 
 Lesões osteocondrais aparecem em **26% das fraturas WEBER B, 24% das WEBER C e 20% das fraturas isoladas do maléolo medial** (CHAN e colaboradores); DA CUNHA achou lesão condral em **78%** e da cúpula do tálus em **43%** das fraturas agudas (cap. 55, p. 2321, aprox.). Quando a lesão vem com a fratura, o acesso costuma ser fácil (cap. 94, eBook), e o fragmento agudo pode ser refixado.
+
+# O nome na prova: osteocondrite da cúpula talar e a doença de KAPPIS {radar=confirmado}
+
+A lesão deste resumo já teve muitos nomes, e uma banca recente cobrou mais um: o **epônimo**. O ENARE de 2025 perguntou como é conhecida a **osteocondrite da cúpula talar** e deu como resposta **doença de KAPPIS**. Vale saber de onde vem esse nome e o que os livros dizem sobre ele, porque a questão se resolve mais por eliminação dos distratores do que pela leitura do capítulo.
+
+## O que os livros trazem
+
+Nenhum dos livros conferidos chama a lesão de doença de KAPPIS no texto. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 94, p. 4162), abre a seção com os sinônimos lesão osteocondral, fratura osteocondral, fratura transcondral e fratura da cúpula do tálus, e o Tachdjian, o Lovell and Winter, o HEBERT e os dois Rockwood também não usam o epônimo. O único rastro está na bibliografia: o Campbell's Operative Orthopaedics, 13ª ed. (cap. 89, Sports Injuries of the Ankle, referências suplementares, p. 4392.e1), lista o trabalho de **KAPPIS** de **1922** (Deutsche Zeitschrift für Chirurgie, 171:13), cujo título trata da **origem traumático-mecânica** dos descolamentos "espontâneos" de cartilagem, **a chamada osteocondrite dissecante**.
+
+O título ajuda a lembrar o nome pelo raciocínio. Em 1922, KAPPIS já defendia que o descolamento chamado "espontâneo" tinha causa **mecânica e traumática**; em 1959, BERNDT e HARTY concluíram que a osteocondrite dissecante do tálus era na verdade uma **fratura transcondral causada por trauma** e criaram os quatro estágios (Campbell, cap. 94, p. 4162). Os dois nomes ficam na mesma linha da história: a lesão que parecia doença era trauma.
+
+## Os distratores
+
+!tabela Epônimos da questão e o que os livros dizem (Campbell 15, cap. 34, p. 1202 e 1202.e1; Campbell 13, cap. 89, p. 4392.e1)
+| Nome na alternativa | O que é | Onde está |
+| --- | --- | --- |
+| KAPPIS | gabarito; KAPPIS (1922) estudou a origem traumático-mecânica da osteocondrite dissecante | só na bibliografia do Campbell 13 |
+| ISELIN (grafado "Iselen") | apofisite de tração da base do 5º metatarsal, onde se insere o fibular curto; aparece por volta dos 10 anos nas meninas e 12 nos meninos e funde 2 anos depois; vista na oblíqua | Campbell 15, cap. 34, p. 1202 e 1202.e1 |
+| MOUCHET | não aparece nos livros locais | |
+| LANCE | não aparece nos livros locais | |
+| RENANDER (grafado "Rennande") | não aparece nos livros locais | |
+!fim
+
+ISELIN é o distrator que o aluno conhece, e por isso o mais fácil de eliminar com segurança: é **tração**, na **base do 5º metatarsal**, e o Campbell manda diferenciá-la do **os vesalianum** (sesamoide do fibular curto) e da fratura. Na mesma lista do capítulo 34 estão as outras osteocondroses do pé que as bancas trocam de lugar: **FREIBERG**, na **cabeça do 2º metatarsal** (às vezes 3º, 4º ou 5º), no adolescente, e **KÖHLER**, no **navicular** (Campbell, cap. 34, p. 1202 e 1202.e1). Nenhuma delas é do tálus.
+
+!questoes central=pe-tornozelo-0376
+conceito: A osteocondrite da cúpula talar (lesão osteocondral do tálus) é chamada pela banca de doença de KAPPIS, autor de 1922 sobre a origem traumático-mecânica da osteocondrite dissecante; ISELIN é a apofisite da base do 5º metatarsal.
+como: O ENARE R4 de Ortopedia de 2025 pediu o epônimo da osteocondrite da cúpula talar entre ISELIN, LANCE, KAPPIS, MOUCHET e RENANDER.
+armadilha: Marcar ISELIN por ser o único nome conhecido do pé, sem lembrar que ele é da base do 5º metatarsal.
+alerta: Gabarito oficial (C, KAPPIS) mantido, mas nenhum livro local usa o epônimo no texto; o Campbell 13 (cap. 89, p. 4392.e1) só cita KAPPIS (1922) na bibliografia sobre a origem traumática da osteocondrite dissecante. MOUCHET, LANCE e RENANDER não aparecem nos livros conferidos para `pe-tornozelo-0376`.
+!fim
 
 # Fechamento {radar=fundamento}
 
