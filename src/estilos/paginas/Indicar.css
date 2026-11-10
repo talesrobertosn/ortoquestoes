@@ -1,10 +1,21 @@
 /* Indique e ganhe (09/11/2026; em ouro desde 10/11/2026): o topo é a Câmara do Tesouro, cenário HD-2D com os três
    bichos em cima do ouro (cada toque, uma fala); o link dourado, o tesouro (dias ganhos e as 12 moedas), os amigos e
    as regras em folhas do atlas com filete de ouro. Títulos e números na fonte da marca. */
-.ind { position: relative; display: grid; gap: var(--e-5); max-width: 62rem; margin-inline: auto; padding-block: var(--e-4) var(--e-7); }
+/* A página inteira é a caverna do tesouro (Tales, 10/11/2026: "tudo coerente, tudo épico"): os blocos trocam o papel
+   claro pelo mesmo vidro escuro com filete de ouro, só redefinindo as cores do site aqui dentro. */
+.ind { --superficie: #17100a; --superficie-2: #241a0f; --traco: rgba(244, 207, 124, 0.22); --traco-forte: rgba(244, 207, 124, 0.42); --texto: #fff6e2; --texto-2: #d9c9a6;
+  --ouro: #e0b862; --ouro-veu: rgba(244, 199, 90, 0.14); --ouro-texto: #f4cf7c; --verdete: #5fd8c0; --verdete-tinta: #8fe6d4; --verdete-veu: rgba(95, 216, 192, 0.14);
+  --borda: 1px solid rgba(244, 207, 124, 0.3); --sombra-folha: 0 22px 44px -26px rgba(0, 0, 0, 0.9); color: var(--texto); }
+.ind::before { content: ""; position: absolute; z-index: 0; left: 50%; top: calc(-1 * var(--e-5)); bottom: 0; width: 100vw; transform: translateX(-50%); pointer-events: none;
+  background: radial-gradient(60% 34rem at 50% 0, rgba(244, 170, 70, 0.2), transparent 70%), radial-gradient(circle at 1px 1px, rgba(255, 220, 150, 0.05) 1px, transparent 0) 0 0 / 16px 16px, linear-gradient(180deg, #120b06, #0a0705 40%, #0d0906); }
+.ind > :not(.ind-margens, .ind-voador) { position: relative; z-index: 1; }
+.ind .folha { background: radial-gradient(90% 60% at 100% 0, rgba(244, 199, 90, 0.1), transparent 65%), linear-gradient(180deg, #1d1309, #110b06); }
+.ind .folha a:not([class]) { color: #f4cf7c; }
+.ind :is(.botao, .botao--principal) { border-color: rgba(244, 207, 124, 0.5); }
+.ind { position: relative; display: grid; gap: var(--e-5); max-width: 62rem; margin-inline: auto; padding-block: var(--e-3) var(--e-7); }
 
 /* ---------- Topo: a Câmara do Tesouro (cenário HD-2D de scripts/gerar_cena_tesouro.py) ---------- */
-.ind-topo { position: relative; isolation: isolate; display: grid; align-items: center; min-height: clamp(19rem, 33vw, 23rem); overflow: hidden;
+.ind-topo { position: relative; isolation: isolate; display: grid; align-items: center; min-height: clamp(16.5rem, 27vw, 20rem); overflow: hidden;
   border-radius: var(--mundo-raio); background: #070506; color: #fff6e2;
   box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.45), 0 0 0 1px #1b1208, 0 22px 48px -22px rgba(120, 80, 10, 0.55); }
 .ind-topo__texto { position: relative; z-index: 2; display: grid; align-content: center; gap: var(--e-2); width: min(100%, 31rem); padding: clamp(1.4rem, 3.6vw, 2.25rem); }
@@ -24,9 +35,9 @@
   filter: sepia(0.28) saturate(1.25) brightness(1.04) drop-shadow(0 0 7px rgba(255, 196, 90, 0.5)); }
 .ind-bicho:hover { transform: translateY(-3px); }
 .ind-bicho:focus-visible, .ind-espada:focus-visible { outline: 2px solid #f4cf7c; outline-offset: 4px; border-radius: 8px; }
-.ind-bicho--esqueleto { left: 78.5%; bottom: 13%; width: 9%; }
+.ind-bicho--esqueleto { left: 74.2%; bottom: 47%; width: 8.4%; }
 .ind-bicho--esqueleto .mascote { width: 100%; }
-.ind-bicho--gato { left: 66%; bottom: 7%; width: 10%; }
+.ind-bicho--gato { left: 79%; bottom: 9%; width: 9.5%; }
 .ind-bicho--gato .gato-pixel { width: 100%; height: auto; aspect-ratio: 4 / 3; }
 .ind-bicho--coruja { left: 90.2%; bottom: 43%; }
 .ind-bicho--coruja .coruja-pixel { --coruja-escala: 2; }
@@ -53,10 +64,10 @@
 .ind-folha h2 { display: flex; align-items: center; gap: 0.5rem; }
 .ind-folha h2::before { content: ""; flex: none; width: 9px; height: 9px; transform: rotate(45deg); background: #f4cf7c; box-shadow: 0 0 0 2px #7a5710; }
 /* O bilhete dourado do link. */
-.ind-folha--bilhete { background: linear-gradient(180deg, color-mix(in srgb, var(--ouro-veu) 70%, var(--superficie)), var(--superficie) 55%); border-color: color-mix(in srgb, var(--ouro) 55%, var(--traco)); }
+.ind .ind-folha--bilhete { background: radial-gradient(80% 70% at 0 0, rgba(244, 199, 90, 0.2), transparent 65%), linear-gradient(180deg, #24170a, #110b06); border-color: color-mix(in srgb, var(--ouro) 55%, var(--traco)); }
 .ind-folha--bilhete .ind-link { background: var(--superficie); border: 2px dashed color-mix(in srgb, var(--ouro) 70%, var(--traco-forte)); }
 /* O tesouro: dias ganhos em ouro, grande, com as 12 moedas. */
-.ind-folha--ouro { background: radial-gradient(120% 90% at 100% 0%, color-mix(in srgb, var(--ouro-veu) 90%, transparent), transparent 62%), var(--superficie); border-color: color-mix(in srgb, var(--ouro) 55%, var(--traco)); }
+.ind .ind-folha--ouro { background: radial-gradient(120% 90% at 100% 0%, rgba(244, 199, 90, 0.22), transparent 62%), linear-gradient(180deg, #24170a, #110b06); border-color: color-mix(in srgb, var(--ouro) 55%, var(--traco)); }
 .ind-cofre { display: grid; justify-items: start; gap: 0.1rem; }
 .ind-cofre__rotulo { font-size: var(--meta); font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ouro-texto); }
 .ind-cofre__numero { font-family: var(--fonte-marca); font-size: clamp(3rem, 2rem + 4vw, 4.2rem); font-weight: 800; line-height: 0.95; letter-spacing: -0.04em; font-variant-numeric: tabular-nums;
@@ -111,17 +122,23 @@
 .ind-passos span:not(.ind-moeda) { display: block; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.45; }
 
 
-/* ---------- O dragão do tesouro (mascote novo, DragaoPixel) ---------- */
-.ind-dragao { position: absolute; z-index: 3; left: 43%; bottom: 19%; width: 31%; padding: 0; border: 0; background: none; cursor: pointer; line-height: 0;
-  filter: drop-shadow(0 0 9px rgba(255, 170, 70, 0.45)); transition: transform 0.18s ease; }
-.ind-dragao .dragao-pixel { display: block; width: 100%; }
-.ind-dragao:hover { transform: translateY(-2px); }
-.ind-dragao:focus-visible { outline: 2px solid #f4cf7c; outline-offset: 2px; border-radius: 10px; }
-.ind-dragao--chegando { animation: ind-dragao-chega 1.5s cubic-bezier(0.2, 0.7, 0.3, 1) both; }
-@keyframes ind-dragao-chega { 0% { transform: translate(75%, -105%) scale(0.72); opacity: 0; } 12% { opacity: 1; } 70% { transform: translate(6%, -16%) scale(1); } 100% { transform: none; } }
-/* O clarão do fogo: a câmara esquenta enquanto ele sopra. */
-.ind-cena::after { content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none; opacity: 0; background: radial-gradient(60% 80% at 42% 62%, rgba(255, 150, 40, 0.5), rgba(255, 90, 20, 0.18) 45%, transparent 70%); mix-blend-mode: screen; transition: opacity 0.5s ease; }
-.ind-cena--fogo::after { opacity: 1; transition-duration: 0.15s; }
+/* ---------- O dragão que quebra a quarta parede (DragaoViajante): uma camada por cima da página ---------- */
+/* A âncora é o ponto dos pés; o desenho (160 x 112, pés em 104, corpo em 62,5% da largura) se arruma em volta. */
+.ind-ninho { position: absolute; left: 61%; bottom: 19%; width: 1px; height: 1px; }
+.ind-voador { --w: 256px; position: absolute; left: 0; top: 0; z-index: 6; width: 0; height: 0; pointer-events: none; transition: transform var(--voo, 0s) cubic-bezier(0.45, 0.05, 0.4, 1); will-change: transform; }
+.ind-voador__arco { position: absolute; left: 0; top: 0; display: block; }
+.ind-voador--voando .ind-voador__arco { animation: ind-arco var(--voo, 1.6s) ease-in-out both; }
+@keyframes ind-arco { 0% { transform: translateY(0) scale(1); } 45% { transform: translateY(-110px) scale(1.14); } 100% { transform: translateY(0) scale(1); } }
+.ind-voador__botao { position: absolute; left: calc(var(--w) * -0.625); top: calc(var(--w) * -0.65); width: var(--w); padding: 0; border: 0; background: none; cursor: pointer; line-height: 0; pointer-events: auto;
+  filter: drop-shadow(0 10px 6px rgba(0, 0, 0, 0.45)) drop-shadow(0 0 12px rgba(255, 150, 50, 0.5)); }
+.ind-voador--voando .ind-voador__botao { pointer-events: none; filter: drop-shadow(0 26px 10px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 14px rgba(255, 150, 50, 0.55)); }
+.ind-voador--virado .ind-voador__botao { left: calc(var(--w) * -0.375); transform: scaleX(-1); }
+.ind-voador__botao .dragao-pixel { display: block; width: 100%; }
+.ind-voador__botao:focus-visible { outline: 2px solid #f4cf7c; outline-offset: 2px; border-radius: 10px; }
+.ind-voador__fala { position: absolute; left: 0; bottom: calc(var(--w) * 0.66); width: 15rem; margin: 0 0 0 -7.5rem; padding: 0.55rem 0.75rem; pointer-events: auto; cursor: pointer;
+  background: #fbf3df; color: #1b1208; font-size: var(--corpo-menor); font-weight: 650; line-height: 1.4; text-align: center; border-radius: 10px;
+  box-shadow: 0 0 0 2px #1b1208, 0 0 0 4px #e0aa45, 3px 5px 0 4px rgba(0, 0, 0, 0.35); animation: ind-balao 0.25s steps(3); }
+@media (max-width: 43.75rem) { .ind-voador { --w: 150px; } .ind-voador__fala { width: 12rem; margin-left: -6rem; } }
 
 /* ---------- Os botões de envio ---------- */
 .ind-acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem; }
@@ -175,9 +192,8 @@
 .ind-javem img { image-rendering: pixelated; }
 
 /* ---------- O fecho: o dragão dorme no ouro até o link sair ---------- */
-.ind-fecho { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: 0.5rem 1.2rem; padding: clamp(1rem, 2.6vw, 1.5rem); border-radius: var(--mundo-raio, 14px); color: #fff6e2;
+.ind-fecho { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0.5rem 1.2rem; padding: clamp(1rem, 2.6vw, 1.5rem); border-radius: var(--mundo-raio, 14px); color: #fff6e2;
   background: radial-gradient(60% 140% at 0% 100%, rgba(255, 150, 40, 0.3), transparent 65%), linear-gradient(120deg, #2a1608, #120b05 70%); box-shadow: inset 0 0 0 1px rgba(244, 207, 124, 0.5), 0 0 30px -10px rgba(244, 160, 60, 0.6); }
-.ind-fecho__dragao { width: clamp(7.5rem, 16vw, 11rem); margin-block: -1.4rem -0.6rem; filter: drop-shadow(0 0 10px rgba(255, 170, 70, 0.5)); }
 .ind-fecho h2 { margin: 0 0 0.25rem; font-family: var(--fonte-marca); font-size: clamp(1.2rem, 0.9rem + 1.2vw, 1.6rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
 .ind-fecho p { margin: 0; color: #d9c9a6; font-size: var(--corpo-menor); line-height: 1.45; max-width: 44ch; }
 
@@ -185,7 +201,6 @@
 .ind-margens { display: none; }
 @media (min-width: 80rem) {
   .ind-margens { display: block; position: absolute; inset: 0; pointer-events: none; }
-  .ind > :not(.ind-margens) { position: relative; z-index: 1; }
   .ind-margem { position: absolute; top: calc(-1 * var(--e-4)); bottom: 0; width: calc((100vw - 62rem) / 2 - 0.9rem); max-width: 17rem; }
   .ind-margem--esq { right: calc(100% + 0.4rem); }
   .ind-margem--dir { left: calc(100% + 0.4rem); }
@@ -208,12 +223,19 @@
   @keyframes ind-sobe { 0% { transform: translateY(0) scaleX(1); opacity: 0; } 8% { opacity: 0.9; } 50% { transform: translateY(-34vh) scaleX(0.15); } 92% { opacity: 0.5; } 100% { transform: translateY(-68vh) scaleX(1); opacity: 0; } }
 }
 
-@media (prefers-reduced-motion: reduce) { .ind-estandarte, .ind-acoes__ouro::after, .ind-dragao--chegando { animation: none !important; } .ind-margem b { display: none; } .ind-topo h1 em, .ind-cena__cintila i, .ind-balao, .ind-moedas .ind-moedas--cheia { animation: none; } .ind-chuva { display: none; } .ind-bicho { transition: none; } }
+/* ---------- Regras de uso ---------- */
+.ind-regras__abre { margin: 0; color: var(--texto-2); line-height: 1.5; }
+.ind-regras { counter-reset: regra; list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem 1.4rem; }
+.ind-regras li { counter-increment: regra; position: relative; padding: 0.15rem 0 0.15rem 2.3rem; color: var(--texto-2); font-size: var(--corpo-menor); line-height: 1.5; }
+.ind-regras li::before { content: counter(regra); position: absolute; left: 0; top: 0.15rem; display: grid; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; font-family: var(--fonte-marca); font-size: 0.82rem; font-weight: 800; color: #f4cf7c; box-shadow: inset 0 0 0 1.5px rgba(244, 207, 124, 0.6); }
+.ind-regras strong { color: var(--texto); }
+@media (max-width: 52rem) { .ind-regras { grid-template-columns: minmax(0, 1fr); } }
+
+@media (prefers-reduced-motion: reduce) { .ind-estandarte, .ind-acoes__ouro::after, .ind-voador__arco { animation: none !important; } .ind-voador { transition: none; } .ind-margem b { display: none; } .ind-topo h1 em, .ind-cena__cintila i, .ind-balao, .ind-moedas .ind-moedas--cheia { animation: none; } .ind-chuva { display: none; } .ind-bicho { transition: none; } }
 @media (max-width: 64rem) { .ind-beneficios { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 52rem) {
   .ind-grade { grid-template-columns: minmax(0, 1fr); }
-  .ind-fecho { grid-template-columns: auto minmax(0, 1fr); }
-  .ind-fecho .ind-acoes { grid-column: 1 / -1; }
+  .ind-fecho { grid-template-columns: minmax(0, 1fr); }
   /* No celular a cena vai para cima (a metade direita da pintura) e o texto fica embaixo, no escuro. */
   .ind-topo { display: flex; flex-direction: column; align-items: stretch; min-height: 0; }
   .ind-cena { order: -1; flex: none; }
@@ -230,7 +252,6 @@
   .ind-conta li { padding: 0.75rem 0.3rem; }
   .ind-conta__nota { font-size: var(--meta); }
   .ind-fecho { grid-template-columns: minmax(0, 1fr); justify-items: start; }
-  .ind-fecho__dragao { margin-block: -0.6rem -0.4rem; }
   .ind-placar { gap: 0.4rem; }
   .ind-placar div { padding: 0.6rem 0.55rem; }
   .ind-placar dd { font-size: 1.5rem; }

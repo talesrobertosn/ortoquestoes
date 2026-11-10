@@ -72,7 +72,8 @@ export const GRUPOS: Grupo[] = [
 
 /** Conta e ajuda (montado na hora: depende de haver conta, assinatura e administrador). */
 export function grupoConta(o: { contas: boolean; logado: boolean; premium: boolean; administrador: boolean }): Grupo {
-  const itens: Pagina[] = []
+  // Indique e ganhe abre a coluna (Tales, 10/11/2026): no fim dela, ficava abaixo da dobra do menu.
+  const itens: Pagina[] = [{ destino: '/indicar', rotulo: 'Indique e ganhe', texto: 'Chame um amigo: 7 dias de tudo para os dois.', icone: 'indicar', chaves: 'indicar convidar amigo colega ganhar' }]
   if (o.contas) itens.push(o.logado
     ? { destino: '/conta', rotulo: 'Minha conta', texto: 'Perfil, preferências e informações pessoais.', icone: 'conta', chaves: 'perfil login senha preferencias' }
     : { destino: '/conta?modo=entrar', rotulo: 'Entrar ou criar conta', texto: 'Guarde o progresso em qualquer aparelho.', icone: 'entrar', chaves: 'login entrar cadastro criar conta senha' })
@@ -80,7 +81,6 @@ export function grupoConta(o: { contas: boolean; logado: boolean; premium: boole
     ? { destino: '/conta/assinatura', rotulo: 'Minha assinatura', texto: 'Consulte plano, renovação e pagamentos.', icone: 'assinatura', chaves: 'assinatura plano renovacao pagamento cartao pix' }
     : { destino: '/assinatura', rotulo: 'Planos e assinatura', texto: 'Cronograma, Simulado Nacional e o Atlas completo.', icone: 'assinatura', chaves: 'assinar preco pagar pix cartao plano planos' })
   itens.push(
-    { destino: '/indicar', rotulo: 'Indique e ganhe', texto: 'Compartilhe a plataforma e veja os benefícios.', icone: 'indicar', chaves: 'indicar convidar amigo colega ganhar' },
     { destino: '/contato', rotulo: 'Suporte e contato', texto: 'Envie dúvidas, sugestões e problemas.', icone: 'suporte', chaves: 'ajuda suporte duvida problema contato' },
     { destino: '/sobre', rotulo: 'O projeto', texto: 'Conheça a história e a proposta do OrtoQuestões.', icone: 'projeto', chaves: 'sobre historia quem faz' },
   )
