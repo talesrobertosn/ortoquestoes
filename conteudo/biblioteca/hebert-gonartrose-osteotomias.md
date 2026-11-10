@@ -1,6 +1,6 @@
 ---
 id: hebert-gonartrose-osteotomias
-versao: 1
+versao: 2
 titulo: Gonartrose e osteotomias
 especialidade: joelho
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e c
 edicao: 5ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 10, 8, 50, 52 e 34)
 capitulo: Capítulo 16 · Joelho do adulto (seções Osteoartrite, Tratamento conservador e Tratamento cirúrgico), com o Capítulo 10 · Knee Preservation Surgery (seções Osteoarthritis of the Knee, Proximal Tibial Osteotomy e Distal Femoral Osteotomy) do Campbell's Operative Orthopaedics, 15ª ed.
 autores: Wilson MELLO A. JR., Paulo César F. PENTEADO, Wander BRITO, Gustavo Constantino de CAMPOS e Xavier M. G. R. G. STUMP (HEBERT, cap. 16); Joseph D. LAMPLOT (Campbell, cap. 10)
-fonte: Livros conferidos localmente em 03/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017), cap. 16 (Joelho do adulto: distúrbio funcional, osteoartrite, critérios radiológicos com os Quadros 16.1 a 16.4, tratamento conservador, artroscopia, osteotomias, cálculo da correção, artroplastia total e unicompartimental) e cap. 15 (TAGT na instabilidade patelar), edição digital sem página impressa; Campbell's Operative Orthopaedics, 15ª ed., cap. 10, p. 497 a 512 (artrite reumatoide e osteotomia, osteoartrite do joelho, Tabela 10.4, desbridamento, Box 10.4, Box 10.5, osteotomia tibial proximal de fechamento lateral, abertura medial, cúpula e hemicalotaxia, Técnicas 10.10 a 10.14, osteotomia ou artroplastia, artroplastia total após osteotomia, osteotomia femoral distal), cap. 8, p. 404 a 406 e 443 a 448 (unicompartimental, pós-operatório e osteotomia tibial prévia), cap. 50, p. 2048 e 2060 a 2061 aprox. (triplo varo e instabilidade posterolateral com varo), cap. 52, p. 2197 a 2202 (TT-TG e FULKERSON) e cap. 34, p. 1218 (complicações neurovasculares da osteotomia). As páginas citadas são as impressas.
-subtemas: Gonartrose e osteotomias
-resumo: Artrose do joelho é falha do reparo de toda a articulação, mais comum acima de 60 anos e na mulher, com obesidade como fator modificável e o varo como deformidade mais comum; AHLBACK modificada por KEYES vai de redução do espaço (1) e obliteração (2) ao desgaste menor que 5 mm com platô posterior intacto (3), 5 a 10 mm com margem posterior gasta (4) e subluxação (5); KELLGREN-LAWRENCE de 0 a 4; o conservador que a AAOS sustenta é exercício, AINE e perda de peso com IMC acima de 25, e a artroscopia só vale com sintomas mecânicos; a osteotomia tibial valgizante pede artrose de um compartimento, sintomas concordantes e arco de 90 graus, é contraindicada com flexão menor que 90 graus, contratura acima de 15 graus, subluxação lateral acima de 1 cm, correção acima de 20 graus, artrite inflamatória e doença vascular significativa, hipercorrige para cerca de 10 graus de valgo, leva o eixo a 62,5% da interlinha, calcula a cunha pelo diâmetro da tíbia e pelo ângulo (1 mm por grau só com tíbia de 57 mm), abre medial para aumentar o slope no LCP deficiente e no canto posterolateral com varo; valgo acima de 12 a 15 graus ou interlinha inclinada acima de 10 graus vai para o fêmur; a unicompartimental pede LCA íntegro e deformidade corrigível; ATJ após osteotomia de fechamento corta pouco o platô lateral.
+fonte: Livros conferidos localmente em 03/11/2026: Sizínio HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed. (2017), cap. 16 (Joelho do adulto: distúrbio funcional, osteoartrite, critérios radiológicos com os Quadros 16.1 a 16.4, tratamento conservador, artroscopia, osteotomias, cálculo da correção, artroplastia total e unicompartimental) e cap. 15 (TAGT na instabilidade patelar), edição digital sem página impressa; Campbell's Operative Orthopaedics, 15ª ed., cap. 10, p. 497 a 512 (artrite reumatoide e osteotomia, osteoartrite do joelho, Tabela 10.4, desbridamento, Box 10.4, Box 10.5, osteotomia tibial proximal de fechamento lateral, abertura medial, cúpula e hemicalotaxia, Técnicas 10.10 a 10.14, osteotomia ou artroplastia, artroplastia total após osteotomia, osteotomia femoral distal), cap. 8, p. 404 a 406 e 443 a 448 (unicompartimental, pós-operatório e osteotomia tibial prévia), cap. 50, p. 2048 e 2060 a 2061 aprox. (triplo varo e instabilidade posterolateral com varo), cap. 52, p. 2197 a 2202 (TT-TG e FULKERSON) e cap. 34, p. 1218 (complicações neurovasculares da osteotomia). As páginas citadas são as impressas. Complemento conferido localmente em 09/11/2026 para a artroplastia unicompartimental: Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 401, 418, 419 e 446 (próteses unicompartimentais, candidatos, contraindicações, KOZINN e SCOTT, Técnica 8.12), e HEBERT, cap. 16 (artroplastia unicompartimental).
+subtemas: Gonartrose e osteotomias; Artroplastia unicompartimental
+resumo: Artrose do joelho é falha do reparo de toda a articulação, mais comum acima de 60 anos e na mulher, com obesidade como fator modificável e o varo como deformidade mais comum; AHLBACK modificada por KEYES vai de redução do espaço (1) e obliteração (2) ao desgaste menor que 5 mm com platô posterior intacto (3), 5 a 10 mm com margem posterior gasta (4) e subluxação (5); KELLGREN-LAWRENCE de 0 a 4; o conservador que a AAOS sustenta é exercício, AINE e perda de peso com IMC acima de 25, e a artroscopia só vale com sintomas mecânicos; a osteotomia tibial valgizante pede artrose de um compartimento, sintomas concordantes e arco de 90 graus, é contraindicada com flexão menor que 90 graus, contratura acima de 15 graus, subluxação lateral acima de 1 cm, correção acima de 20 graus, artrite inflamatória e doença vascular significativa, hipercorrige para cerca de 10 graus de valgo, leva o eixo a 62,5% da interlinha, calcula a cunha pelo diâmetro da tíbia e pelo ângulo (1 mm por grau só com tíbia de 57 mm), abre medial para aumentar o slope no LCP deficiente e no canto posterolateral com varo; valgo acima de 12 a 15 graus ou interlinha inclinada acima de 10 graus vai para o fêmur; a unicompartimental pede LCA íntegro e deformidade corrigível; ATJ após osteotomia de fechamento corta pouco o platô lateral; a unicompartimental pede LCA intacto, doença de um compartimento e deformidade corrigível, e é contraindicada com artrite inflamatória, contratura de 15 graus ou mais, arco menor que 90 graus, varo acima de 10 ou valgo acima de 5 graus e LCA deficiente.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -459,6 +459,39 @@ conceito: Sem displasia troclear, a osteotomia de realinhamento distal entra com
 como: O TEOT 2024 e uma prova de Ortopedia pediram o valor do TA-GT; outra prova pediu a faceta da artrose que indica FULKERSON.
 armadilha: Marcar 15 mm, que é o limite com displasia, ou a faceta medial, que contraindica.
 !fim
+
+# Artroplastia unicompartimental: quem é candidato {radar=clinico}
+
+As seções sobre a escolha entre osteotomia e unicompartimental já deram a comparação de função e sobrevida. Falta a lista que a banca cobra em separado: quem pode e quem não pode receber a prótese de um compartimento só.
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 8, p. 401), define a unicompartimental como a troca da superfície de **um côndilo femoral e do platô tibial adjacente**. Poupar os **cruzados**, o compartimento oposto e a patelofemoral daria uma cinemática mais próxima do normal, e as vantagens sobre a artroplastia total listadas na p. 419 são **reabilitação mais curta, arco de movimento maior, propriocepção dos cruzados preservada, menos sangramento** e a possibilidade de cirurgia ambulatorial. O preço é a sobrevida: a maioria dos estudos mostra resultado um pouco pior que o da total, com revisão mais frequente nos registros e resultados melhores nos centros de grande volume (89% em 10 anos em hospital comunitário contra 95% da total).
+
+## Os critérios clássicos e os atuais
+
+O Campbell (cap. 8, p. 446) lembra que, **se as indicações estritas delineadas em 1989 por KOZINN e SCOTT fossem seguidas, poucos pacientes seriam candidatos**; a p. 419 estima que só **6%** dos que precisam de artroplastia não têm nenhuma contraindicação. A 15ª edição cita os autores, mas não enumera os critérios originais; o que ela dá são os critérios de seleção atuais e as contraindicações. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 16), não cita KOZINN e SCOTT e dá números próprios.
+
+!tabela Unicompartimental: seleção e contraindicações (Campbell 15, cap. 8, p. 419 e 446; HEBERT, cap. 16)
+| Item | Campbell 15 | HEBERT |
+|---|---|---|
+| LCA | intacto; a deficiência é contraindicação | íntegro |
+| Doença | um compartimento; erosão significativa na área de carga do compartimento oposto contraindica | artrose localizada em um compartimento femorotibial |
+| Artrite inflamatória | contraindicação | não cita |
+| Contratura em flexão | contraindica com 15 graus ou mais | arco mínimo de 5 a 90 graus |
+| Arco de movimento | contraindica se menor que 90 graus | arco mínimo de 5 a 90 graus |
+| Deformidade angular | contraindica acima de 10 graus no varo ou de 5 graus no valgo; precisa ser passivamente corrigível | varo menor que 7 graus e valgo menor que 15 graus |
+| Peso | peso razoável; obesidade é contraindicação relativa | não cita |
+| Patelofemoral | discutida; doença prévia sem efeito deletério em 10 anos | não cita |
+!fim
+
+Os números não coincidem entre os livros, e a questão antiga do TARO 2006 (`joelho-0301`, ligada no resumo do LCA) usa um terceiro conjunto: contratura de 5 graus ou mais, arco menor que 90 graus, deformidade maior que 15 graus e deficiência do LCA. O arco e o LCA batem com o Campbell 15; a contratura (15 graus no Campbell 15) e a deformidade (10 graus no varo e 5 no valgo) não batem, e o HEBERT só se aproxima no limite de 5 graus de extensão e nos 15 graus de valgo. O que não muda em nenhuma fonte é o esqueleto: **LCA competente, doença de um compartimento, joelho que se move e deformidade pequena e corrigível**.
+
+## Por que o LCA e por que a deformidade corrigível
+
+A Técnica 8.12 do Campbell (p. 446) mostra a lógica na mesa. O cirurgião inspeciona os dois compartimentos que vai preservar antes de confirmar a indicação, retira os **osteófitos periféricos** (o que deve bastar para equilibrar o compartimento doente) e os **intercondilares**, que podem lesar os cruzados. Se for preciso liberar mais partes moles, o varo era grave demais para a unicompartimental ou a ressecção óssea foi insuficiente. A prótese não corrige eixo com liberação ligamentar, como faz a total: ela só preenche o espaço que o desgaste abriu.
+
+## Os dois candidatos
+
+O Campbell (p. 419) descreve dois grupos. O **idoso magro** com doença de um compartimento, que de outro modo receberia a total: a unicompartimental é menos invasiva e tem boa chance de durar o resto da vida (98% em 10 anos com seleção rigorosa); com artrose em mais de um compartimento, o idoso só a recebe se houver contraindicação clínica à total. E o **paciente mais jovem** com artrose medial isolada, em quem ela entra como "primeira artroplastia" no lugar da osteotomia tibial alta: há 92% de sobrevida em 11 anos abaixo dos 60 anos, com progressão do compartimento não operado em 22%. O HEBERT diz o mesmo em uma frase: no jovem é uma ponte para a total, no idoso é o tratamento definitivo. A Oxford medial de platô móvel chegou a **94% em 10 anos e 91% em 20 anos**; as séries atuais variam de 82% a 98% em 10 anos (p. 418, 419 e 446). A revisão de uma unicompartimental para total teve resultado um pouco pior que a conversão de uma osteotomia prévia, embora com os implantes atuais o enxerto estrutural seja raro.
 
 # Fechamento {radar=fundamento}
 

@@ -1,5 +1,5 @@
 {
- "geradoEm": "2026-11-09",
+ "geradoEm": "2026-11-10",
  "capitulos": [
   {
    "id": "ao-fixadores-externos",
@@ -1934,15 +1934,15 @@
   },
   {
    "id": "campbell14-anatomia-coluna",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Anatomia da coluna e vias de acesso",
    "especialidade": "coluna",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "14ª edição (2021)",
    "capitulo": "Capítulo 37 · Vias de acesso anatômicas à coluna, com os capítulos 39, 41, 42, 43 e 44 e o Netter, cap. 2",
-   "resumo": "33 vértebras e 24 segmentos móveis; a orientação das facetas define o movimento (semicoronal na cervical, sagital na lombar); referências do pescoço (hioide C3, tireoide C4-C5, cricoide C6, proeminente C7); disco com núcleo de água e proteoglicano e anel de 12 lamelas (colágeno I fora, II dentro), nutrido por difusão das placas; membrana tectória continua o LLP, alares do dente aos côndilos; cone em L1-L2; raízes C2 a C7 acima do pedículo, C8 entre C7 e T1, o resto abaixo; ramo dorsal medial inerva as facetas, sinuvertebral o disco; pedículo cervical com cortical lateral fina (artéria vertebral de C3 a C6), torácico mais estreito em T5; ADAMKIEWICZ à esquerda entre T9 e T11 (80%), zona crítica T4 a T9, espinal anterior irriga 2/3 anteriores; via anterior cervical pela esquerda, medial à bainha carótica, longus colli afastado; transesternal de C4 a T4; via posterior de C1 até 1,5 cm; WILTSE entre multífido e longuíssimo; zona de entrada de LEE.",
+   "resumo": "33 vértebras e 24 segmentos móveis; a orientação das facetas define o movimento (semicoronal na cervical, sagital na lombar); referências do pescoço (hioide C3, tireoide C4-C5, cricoide C6, proeminente C7); disco com núcleo de água e proteoglicano e anel de 12 lamelas (colágeno I fora, II dentro), nutrido por difusão das placas; membrana tectória continua o LLP, alares do dente aos côndilos; cone em L1-L2; raízes C2 a C7 acima do pedículo, C8 entre C7 e T1, o resto abaixo; ramo dorsal medial inerva as facetas, sinuvertebral o disco; pedículo cervical com cortical lateral fina (artéria vertebral de C3 a C6), torácico mais estreito em T5; ADAMKIEWICZ à esquerda entre T9 e T11 (80%), zona crítica T4 a T9, espinal anterior irriga 2/3 anteriores; via anterior cervical pela esquerda, medial à bainha carótica, longus colli afastado; transesternal de C4 a T4; via posterior de C1 até 1,5 cm; WILTSE entre multífido e longuíssimo; zona de entrada de LEE. Biomecânica: C1 roda sobre C2 80 a 88 graus (metade da rotação cervical), occipito-C1 faz flexoextensão e quase não roda, alares freiam a rotação; prumo de C7 perto do canto posterossuperior de S1, balanço positivo na frente do sacro; incidência pélvica fixa (52 ± 10 graus), versão pélvica e inclinação sacral variáveis; coluna média de DENIS: metade posterior do corpo e do anel com o ligamento longitudinal posterior.",
    "acesso": "gratis",
-   "minutos": 30,
+   "minutos": 43,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -2000,6 +2000,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "biomecanica-da-coluna-quanto-cada-nivel-move-o-p",
+     "titulo": "Biomecânica da coluna: quanto cada nível move, o prumo de C7 e as três colunas",
+     "radar": "confirmado"
+    },
+    {
      "id": "revisao-rapida",
      "titulo": "Revisão rápida",
      "radar": "fundamento"
@@ -2041,7 +2046,9 @@
     "coluna-0354",
     "coluna-0296",
     "coluna-0349",
-    "coluna-0337"
+    "coluna-0337",
+    "coluna-0562",
+    "coluna-0187"
    ],
    "treino": [
     "coluna-0401",
@@ -2094,7 +2101,8 @@
     "coluna-0487"
    ],
    "subtemas": [
-    "Anatomia da coluna"
+    "Anatomia da coluna",
+    "Biomecânica da coluna"
    ]
   },
   {
@@ -9828,15 +9836,15 @@
   },
   {
    "id": "dahlin-osteoma-osteoide",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Osteoma osteoide (e o osteoblastoma)",
    "especialidade": "tumores",
    "livro": "Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases",
    "edicao": "6ª edição (2010)",
    "capitulo": "Capítulo 9 · Osteoid Osteoma",
-   "resumo": "Lesão osteoblástica benigna de nicho pequeno (menor que 1,5 cm, raramente acima de 1 cm; osteoblastoma acima de 2 cm) cercado por esclerose reversível; masculino cerca de 3:1, 76% entre 5 e 24 anos; mais da metade em fêmur e tíbia, fêmur proximal com colo o local isolado mais comum; coluna nos elementos posteriores com escoliose dolorosa de concavidade para o lado da lesão; intra-articular sem esclerose, com sinovite que imita artrite; dor noturna aliviada por salicilatos e AINE pelas prostaglandinas e ciclo-oxigenases do nicho; TC é o exame de escolha para achar o nicho, cintilografia sempre positiva com foco intenso dentro de área maior, RM com edema que engana; trabéculas finas de osteoide orladas por osteoblastos em estroma fibrovascular; remissão espontânea em 3 a 4 anos; ablação por radiofrequência guiada por TC na maioria, burr-down ou curetagem do nicho sem ressecar toda a esclerose; recidiva baixa, nenhuma malignização; osteoblastoma maior, medular, coluna em 30% a 50%, menos dor e menos resposta ao AINE, comportamento às vezes agressivo.",
+   "resumo": "Lesão osteoblástica benigna de nicho pequeno (menor que 1,5 cm, raramente acima de 1 cm; osteoblastoma acima de 2 cm) cercado por esclerose reversível; masculino cerca de 3:1, 76% entre 5 e 24 anos; mais da metade em fêmur e tíbia, fêmur proximal com colo o local isolado mais comum; coluna nos elementos posteriores com escoliose dolorosa de concavidade para o lado da lesão; intra-articular sem esclerose, com sinovite que imita artrite; dor noturna aliviada por salicilatos e AINE pelas prostaglandinas e ciclo-oxigenases do nicho; TC é o exame de escolha para achar o nicho, cintilografia sempre positiva com foco intenso dentro de área maior, RM com edema que engana; trabéculas finas de osteoide orladas por osteoblastos em estroma fibrovascular; remissão espontânea em 3 a 4 anos; ablação por radiofrequência guiada por TC na maioria, burr-down ou curetagem do nicho sem ressecar toda a esclerose; recidiva baixa, nenhuma malignização; osteoblastoma maior, medular, coluna em 30% a 50%, menos dor e menos resposta ao AINE, comportamento às vezes agressivo; na prova do osteoblastoma, coluna é o local mais comum (40% a 50% no Campbell, mais de 40% com o sacro no Dahlin), 72% em homens, mais de 80% até a terceira década, e a pelve pode ser acometida.",
    "acesso": "gratis",
-   "minutos": 33,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -9914,6 +9922,11 @@
      "radar": "fundamento"
     },
     {
+     "id": "osteoblastoma-na-prova-onde-em-quem-e-quanto",
+     "titulo": "Osteoblastoma na prova: onde, em quem e quanto",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -9924,11 +9937,14 @@
     "tumores-0098",
     "tumores-0194",
     "tumores-0286",
-    "tumores-0351"
+    "tumores-0351",
+    "tumores-0209",
+    "tumores-0185"
    ],
    "treino": [],
    "subtemas": [
-    "Osteoma osteoide"
+    "Osteoma osteoide",
+    "Osteoblastoma"
    ]
   },
   {
@@ -14240,15 +14256,15 @@
   },
   {
    "id": "hebert-gonartrose-osteotomias",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Gonartrose e osteotomias",
    "especialidade": "joelho",
    "livro": "Ortopedia e Traumatologia: Princípios e Prática (Sizínio K. HEBERT e colaboradores)",
    "edicao": "5ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 10, 8, 50, 52 e 34)",
    "capitulo": "Capítulo 16 · Joelho do adulto (seções Osteoartrite, Tratamento conservador e Tratamento cirúrgico), com o Capítulo 10 · Knee Preservation Surgery (seções Osteoarthritis of the Knee, Proximal Tibial Osteotomy e Distal Femoral Osteotomy) do Campbell's Operative Orthopaedics, 15ª ed.",
-   "resumo": "Artrose do joelho é falha do reparo de toda a articulação, mais comum acima de 60 anos e na mulher, com obesidade como fator modificável e o varo como deformidade mais comum; AHLBACK modificada por KEYES vai de redução do espaço (1) e obliteração (2) ao desgaste menor que 5 mm com platô posterior intacto (3), 5 a 10 mm com margem posterior gasta (4) e subluxação (5); KELLGREN-LAWRENCE de 0 a 4; o conservador que a AAOS sustenta é exercício, AINE e perda de peso com IMC acima de 25, e a artroscopia só vale com sintomas mecânicos; a osteotomia tibial valgizante pede artrose de um compartimento, sintomas concordantes e arco de 90 graus, é contraindicada com flexão menor que 90 graus, contratura acima de 15 graus, subluxação lateral acima de 1 cm, correção acima de 20 graus, artrite inflamatória e doença vascular significativa, hipercorrige para cerca de 10 graus de valgo, leva o eixo a 62,5% da interlinha, calcula a cunha pelo diâmetro da tíbia e pelo ângulo (1 mm por grau só com tíbia de 57 mm), abre medial para aumentar o slope no LCP deficiente e no canto posterolateral com varo; valgo acima de 12 a 15 graus ou interlinha inclinada acima de 10 graus vai para o fêmur; a unicompartimental pede LCA íntegro e deformidade corrigível; ATJ após osteotomia de fechamento corta pouco o platô lateral.",
+   "resumo": "Artrose do joelho é falha do reparo de toda a articulação, mais comum acima de 60 anos e na mulher, com obesidade como fator modificável e o varo como deformidade mais comum; AHLBACK modificada por KEYES vai de redução do espaço (1) e obliteração (2) ao desgaste menor que 5 mm com platô posterior intacto (3), 5 a 10 mm com margem posterior gasta (4) e subluxação (5); KELLGREN-LAWRENCE de 0 a 4; o conservador que a AAOS sustenta é exercício, AINE e perda de peso com IMC acima de 25, e a artroscopia só vale com sintomas mecânicos; a osteotomia tibial valgizante pede artrose de um compartimento, sintomas concordantes e arco de 90 graus, é contraindicada com flexão menor que 90 graus, contratura acima de 15 graus, subluxação lateral acima de 1 cm, correção acima de 20 graus, artrite inflamatória e doença vascular significativa, hipercorrige para cerca de 10 graus de valgo, leva o eixo a 62,5% da interlinha, calcula a cunha pelo diâmetro da tíbia e pelo ângulo (1 mm por grau só com tíbia de 57 mm), abre medial para aumentar o slope no LCP deficiente e no canto posterolateral com varo; valgo acima de 12 a 15 graus ou interlinha inclinada acima de 10 graus vai para o fêmur; a unicompartimental pede LCA íntegro e deformidade corrigível; ATJ após osteotomia de fechamento corta pouco o platô lateral; a unicompartimental pede LCA intacto, doença de um compartimento e deformidade corrigível, e é contraindicada com artrite inflamatória, contratura de 15 graus ou mais, arco menor que 90 graus, varo acima de 10 ou valgo acima de 5 graus e LCA deficiente.",
    "acesso": "gratis",
-   "minutos": 34,
+   "minutos": 37,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -14331,6 +14347,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "artroplastia-unicompartimental-quem-e-candidato",
+     "titulo": "Artroplastia unicompartimental: quem é candidato",
+     "radar": "clinico"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -14363,7 +14384,8 @@
    ],
    "treino": [],
    "subtemas": [
-    "Gonartrose e osteotomias"
+    "Gonartrose e osteotomias",
+    "Artroplastia unicompartimental"
    ]
   },
   {
@@ -19892,15 +19914,15 @@
   },
   {
    "id": "rockwood10-60-patela-mecanismo-extensor",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
-   "resumo": "Retináculos e extensão ativa, axial de MERCHANT, carga salina, patela bipartida, 3 mm de incongruência, banda de tensão, patelectomia, luxação lateral aguda, idade e local das rupturas tendíneas, patela alta e baixa, cerclagem a 30 graus e CODIVILLA.",
+   "resumo": "Retináculos e extensão ativa, axial de MERCHANT, carga salina, patela bipartida, 3 mm de incongruência, banda de tensão, patelectomia, luxação lateral aguda, idade e local das rupturas tendíneas, patela alta e baixa, cerclagem a 30 graus e CODIVILLA; joelho do saltador no polo inferior da patela, fases de BLAZINA (a 4 é fratura por estresse da patela ou ruptura do extensor) e estágios 0 a 5 de FERRETTI.",
    "acesso": "gratis",
-   "minutos": 35,
+   "minutos": 40,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -19988,6 +20010,11 @@
      "radar": "clinico"
     },
     {
+     "id": "tendinopatia-patelar-e-do-quadriceps-o-joelho-do",
+     "titulo": "Tendinopatia patelar e do quadríceps: o joelho do saltador",
+     "radar": "confirmado"
+    },
+    {
      "id": "controversias-e-o-que-falta-saber",
      "titulo": "Controvérsias e o que falta saber",
      "radar": "fundamento"
@@ -20036,7 +20063,8 @@
     "joelho-0030",
     "trauma-1074",
     "joelho-0254",
-    "trauma-1058"
+    "trauma-1058",
+    "joelho-0088"
    ],
    "treino": [
     "trauma-1649",
@@ -20055,7 +20083,9 @@
    ],
    "subtemas": [
     "Fratura da patela e lesão do aparelho extensor",
-    "Ruptura dos tendões patelar e quadricipital"
+    "Ruptura dos tendões patelar e quadricipital",
+    "Fratura da patela",
+    "Tendinopatias do aparelho extensor"
    ]
   },
   {
@@ -26929,6 +26959,86 @@
    "treino": [],
    "subtemas": [
     "Cifose e doença de Scheuermann"
+   ]
+  },
+  {
+   "id": "tachdjian6-coluna-cervical-torcicolo",
+   "versao": 1,
+   "titulo": "Coluna cervical da criança e torcicolo",
+   "especialidade": "coluna",
+   "livro": "Tachdjian's Pediatric Orthopaedics",
+   "edicao": "6ª edição (2021), com o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 21), o Campbell's Operative Orthopaedics, 15ª ed. (caps. 33 e 39) e o HEBERT, 5ª ed. (cap. 2.1)",
+   "capitulo": "Capítulo 8 · Disorders of the Neck",
+   "resumo": "Torcicolo muscular congênito (cabeça inclinada para o esternocleidomastóideo doente e queixo para o lado oposto, oliva, plagiocefalia, quadril, alongamento em 90%, cirurgia bipolar e idade); nervo acessório junto ao mastoide; síndrome de GRISEL (luxação não traumática do atlas, dolorosa, torcicolo paradoxal); FIELDING e HAWKINS (I sem desvio, II até 5 mm, III mais de 5 mm, IV posterior); tratamento pelo tempo de evolução; KLIPPEL-FEIL (implantação baixa do cabelo, pescoço curto, fusão cervical; SPRENGEL, rim, ouvido, coração); linhas de McGREGOR e McRAE; DOWN e os odontoideum.",
+   "acesso": "gratis",
+   "minutos": 32,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "a-coluna-cervical-que-ainda-esta-crescendo",
+     "titulo": "A coluna cervical que ainda está crescendo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "torcicolo-um-sintoma-com-quatro-gavetas",
+     "titulo": "Torcicolo: um sintoma com quatro gavetas",
+     "radar": "clinico"
+    },
+    {
+     "id": "torcicolo-muscular-congenito",
+     "titulo": "Torcicolo muscular congênito",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-nervo-acessorio-e-a-cirurgia-do-torcicolo",
+     "titulo": "O nervo acessório e a cirurgia do torcicolo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "diagnostico-diferencial-quando-nao-e-o-musculo",
+     "titulo": "Diagnóstico diferencial: quando não é o músculo",
+     "radar": "clinico"
+    },
+    {
+     "id": "subluxacao-rotatoria-atlantoaxial-e-sindrome-de-",
+     "titulo": "Subluxação rotatória atlantoaxial e síndrome de GRISEL",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sindrome-de-klippel-feil",
+     "titulo": "Síndrome de KLIPPEL-FEIL",
+     "radar": "confirmado"
+    },
+    {
+     "id": "impressao-basilar-e-juncao-craniocervical",
+     "titulo": "Impressão basilar e junção craniocervical",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "instabilidade-atlantoaxial-down-e-os-odontoideum",
+     "titulo": "Instabilidade atlantoaxial: DOWN e os odontoideum",
+     "radar": "oportunidade"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "pediatria-0288",
+    "coluna-0558",
+    "coluna-0210",
+    "coluna-0062",
+    "coluna-0560"
+   ],
+   "treino": [],
+   "subtemas": [
+    "Coluna cervical da criança e torcicolo"
    ]
   },
   {

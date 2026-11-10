@@ -1,6 +1,6 @@
 ---
 id: campbell14-anatomia-coluna
-versao: 2
+versao: 3
 titulo: Anatomia da coluna e vias de acesso
 especialidade: coluna
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 14ª edição (2021)
 capitulo: Capítulo 37 · Vias de acesso anatômicas à coluna, com os capítulos 39, 41, 42, 43 e 44 e o Netter, cap. 2
 autores: Campbell Clinic (editores Frederick M. Azar e James H. Beaty)
-fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 37 (p. 1642 a 1677: vértebra, articulações, disco, medula, raízes, pedículos, irrigação, vias anterior cervical, cervicotorácica, posterior de C1 e paraespinhal); capítulo 39 (p. 1772 a 1774, estenose e zonas de LEE); capítulo 41 (p. 1869, classificação de ALLEN); capítulo 42 (p. 1932, tuberculose); capítulo 43 (p. 1957, sincondroses); capítulo 44 (p. 2000, 2094, 2115 e 2116, escoliose, malformações e SCHEUERMANN). Complementado pelo Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy), 2ª ed., cap. 2, em português. As páginas citadas são as impressas do Campbell.
-subtemas: Anatomia da coluna
-resumo: 33 vértebras e 24 segmentos móveis; a orientação das facetas define o movimento (semicoronal na cervical, sagital na lombar); referências do pescoço (hioide C3, tireoide C4-C5, cricoide C6, proeminente C7); disco com núcleo de água e proteoglicano e anel de 12 lamelas (colágeno I fora, II dentro), nutrido por difusão das placas; membrana tectória continua o LLP, alares do dente aos côndilos; cone em L1-L2; raízes C2 a C7 acima do pedículo, C8 entre C7 e T1, o resto abaixo; ramo dorsal medial inerva as facetas, sinuvertebral o disco; pedículo cervical com cortical lateral fina (artéria vertebral de C3 a C6), torácico mais estreito em T5; ADAMKIEWICZ à esquerda entre T9 e T11 (80%), zona crítica T4 a T9, espinal anterior irriga 2/3 anteriores; via anterior cervical pela esquerda, medial à bainha carótica, longus colli afastado; transesternal de C4 a T4; via posterior de C1 até 1,5 cm; WILTSE entre multífido e longuíssimo; zona de entrada de LEE.
+fonte: Livro conferido localmente em 31/10/2026 (original em inglês). Capítulo 37 (p. 1642 a 1677: vértebra, articulações, disco, medula, raízes, pedículos, irrigação, vias anterior cervical, cervicotorácica, posterior de C1 e paraespinhal); capítulo 39 (p. 1772 a 1774, estenose e zonas de LEE); capítulo 41 (p. 1869, classificação de ALLEN); capítulo 42 (p. 1932, tuberculose); capítulo 43 (p. 1957, sincondroses); capítulo 44 (p. 2000, 2094, 2115 e 2116, escoliose, malformações e SCHEUERMANN). Complementado pelo Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatomy), 2ª ed., cap. 2, em português. Complemento de 09/11/2026 (biomecânica): Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (p. 219), cap. 40 (p. 1543 a 1545), cap. 45 (p. 1764), cap. 47 (p. 1852 a 1857) e cap. 48 (p. 1896); Skeletal Trauma, 5ª ed., cap. 30 (p. 769), cap. 33 (p. 815 e 848), cap. 34 (p. 873) e cap. 35 (p. 911, 912, 938 e 955); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 3 (p. 30 e 31); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 39 (sem página impressa no PDF); Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo de coluna cervical consultado, sem o valor da rotação de C1-C2. As páginas citadas são as impressas do Campbell.
+subtemas: Anatomia da coluna; Biomecânica da coluna
+resumo: 33 vértebras e 24 segmentos móveis; a orientação das facetas define o movimento (semicoronal na cervical, sagital na lombar); referências do pescoço (hioide C3, tireoide C4-C5, cricoide C6, proeminente C7); disco com núcleo de água e proteoglicano e anel de 12 lamelas (colágeno I fora, II dentro), nutrido por difusão das placas; membrana tectória continua o LLP, alares do dente aos côndilos; cone em L1-L2; raízes C2 a C7 acima do pedículo, C8 entre C7 e T1, o resto abaixo; ramo dorsal medial inerva as facetas, sinuvertebral o disco; pedículo cervical com cortical lateral fina (artéria vertebral de C3 a C6), torácico mais estreito em T5; ADAMKIEWICZ à esquerda entre T9 e T11 (80%), zona crítica T4 a T9, espinal anterior irriga 2/3 anteriores; via anterior cervical pela esquerda, medial à bainha carótica, longus colli afastado; transesternal de C4 a T4; via posterior de C1 até 1,5 cm; WILTSE entre multífido e longuíssimo; zona de entrada de LEE. Biomecânica: C1 roda sobre C2 80 a 88 graus (metade da rotação cervical), occipito-C1 faz flexoextensão e quase não roda, alares freiam a rotação; prumo de C7 perto do canto posterossuperior de S1, balanço positivo na frente do sacro; incidência pélvica fixa (52 ± 10 graus), versão pélvica e inclinação sacral variáveis; coluna média de DENIS: metade posterior do corpo e do anel com o ligamento longitudinal posterior.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -274,6 +274,115 @@ alerta: Os livros lidos citam a fratura da apófise do anel só na bibliografia 
 conceito: A luxação facetária unilateral é a flexão-distração estágio 2 de ALLEN; a tuberculose começa no corpo anterior e se espalha sob os ligamentos longitudinais; a discite começa na placa terminal; SCHEUERMANN típico tem três vértebras acunhadas 5 graus ou mais.
 como: O TARO 2012 perguntou o estágio de ALLEN da luxação unifacetária; o TARO 2006, a luxação bifacetária, a discite e a falha de segmentação; o TARO 2025, a fratura da apófise; as provas de R4 de Coluna do SES-DF e de Joinville, escoliose, SCHEUERMANN, tuberculose, regra de SPENCE e anatomia geral.
 !fim
+
+# Biomecânica da coluna: quanto cada nível move, o prumo de C7 e as três colunas {radar=confirmado}
+
+Anatomia responde onde as estruturas estão; biomecânica responde quanto cada segmento move, o que segura esse movimento e como a coluna inteira se mantém em pé com o menor gasto de energia. A banca cobra três blocos: os **números da junção craniocervical** (a rotação entre C1 e C2 em graus e em percentual), o **equilíbrio sagital** (a linha de prumo de C7 e os parâmetros da pelve) e o **modelo das três colunas** de DENIS. Os números desta seção vêm do Campbell's Operative Orthopaedics, 15ª ed. (cap. 40, 47 e 48), do Skeletal Trauma, 5ª ed. (cap. 30, 33, 34 e 35), do Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 3) e do HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 39).
+
+## A unidade funcional: o segmento de movimento
+
+O Campbell (cap. 40, p. 1543) analisa o alinhamento em três escalas: **segmentar** (duas vértebras e o disco entre elas), **regional** (cervical, torácica, transição toracolombar, lombar e lombossacra) e **global**. A escala segmentar é a **unidade funcional da coluna**, o menor pedaço que reproduz o comportamento do todo; o capítulo 47 (p. 1854) define o equilíbrio global como a soma do alinhamento segmentar das unidades funcionais com o alinhamento regional. Cada unidade tem três articulações, o disco na frente e as duas facetas atrás, como o Campbell lembra ao discutir a artroplastia cervical (cap. 45, p. 1764), que trata só uma das três.
+
+O Skeletal Trauma (cap. 34, p. 873) distribui as tarefas dentro do segmento. O **disco** contribui de forma importante para a estabilidade. O **ligamento longitudinal anterior**, com as fibras verticais anteriores do anel, **freia a hiperextensão**, e o anel anterior costuma romper antes do ligamento, que é mais forte. O **ligamento longitudinal posterior** resiste à **flexão** com força parecida, mas afila para os lados, e o anel posterior é mais fraco que o anterior, o que ajuda a explicar a frequência das protrusões e hérnias nessa região. Tudo o que fica atrás do ligamento longitudinal posterior é **elemento posterior**: facetas, lâminas, processo espinhoso, ligamento amarelo, cápsulas e ligamentos interespinal e supraespinal. Na cervical subaxial as facetas se sobrepõem como **telhas** e as cápsulas são frouxas, só limitando o movimento no **extremo da flexão**.
+
+## A junção craniocervical: flexão em cima, rotação embaixo
+
+A junção entre o occipício, o atlas e o áxis não tem disco nem ligamento amarelo, e a estabilidade depende quase só de ligamentos (Skeletal Trauma, cap. 33, p. 815). O preço dessa arquitetura é a mobilidade: a junção faz cerca de **60% da rotação axial** de toda a coluna cervical, **40% da flexoextensão** e **45% do movimento global do pescoço**, números que o HEBERT (cap. 39) repete com as mesmas palavras.
+
+A divisão de trabalho entre as duas articulações é o que a prova explora. Na **occipito-C1**, as facetas superiores do atlas recebem os côndilos occipitais e o movimento é de **sim**: cerca de **15 graus de flexoextensão**, **8 de inclinação lateral** e **zero de rotação** no Skeletal Trauma. Na **C1-C2**, o atlas gira em torno do dente, que o HEBERT chama de pivô da articulação, e o movimento é de **não**: a excursão de rotação vai de **80 a 88 graus**, a flexoextensão de **20 a 30 graus** e a inclinação lateral soma cerca de **20 graus** de um lado ao outro.
+
+!tabela Movimento da junção craniocervical nos livros (Skeletal Trauma 5ª, cap. 33, p. 815 e 848; HEBERT, cap. 39; Campbell 15, cap. 48, p. 1896; Tachdjian, cap. 3, p. 31)
+| Dado | Skeletal Trauma, cap. 33A | Skeletal Trauma, cap. 33B | HEBERT | Campbell 15 | Tachdjian |
+| --- | --- | --- | --- | --- | --- |
+| rotação C1-C2 em graus | 80 a 88 (excursão) | cerca de 40 | cerca de 80 a 88 | não dá | não dá |
+| rotação C1-C2 em percentual da cervical | junção: 60% | pelo menos 50% | cerca de 50% (junção: 60%) | 50% | 55% a 60% |
+| flexoextensão C1-C2 | 20 a 30 graus | limitada a 20 graus | 20 a 30 graus | não dá | não dá |
+| flexoextensão occipito-C1 | cerca de 15 graus | não dá | 20 a 30 graus | não dá | não dá |
+| inclinação lateral C1-C2 | cerca de 20 graus no total | 5 graus | cerca de 20 graus | não dá | não dá |
+| rotação occipito-C1 | 0 | não dá | não dá | não dá | não dá |
+!fim
+
+A tabela mostra que o mesmo livro pode trazer dois números. No Skeletal Trauma, a parte A do capítulo 33 dá a **excursão de 80 a 88 graus**, e a parte B (p. 848) escreve que o atlas roda em torno do dente com amplitude de **cerca de 40 graus**, sem dizer se mede um lado só; lido como rotação para cada lado, o valor fecha com os 80 da excursão total, mas o texto não faz essa ressalva. O HEBERT traz a frase que a banca copiou: "o atlas roda sobre o áxis cerca de 80 a 88°". O Campbell, 15ª ed. (cap. 48, p. 1896) e o Tachdjian (Box 3.3, p. 31) só dão o percentual, **50%** e **55% a 60%**, e o capítulo de coluna cervical do Rockwood and Wilkins' Fractures in Children, 10ª ed., não traz a rotação em graus. Para o percentual, guarde **metade da rotação cervical em C1-C2**; para os graus, **80 a 88**.
+
+## Os ligamentos que seguram o giro
+
+Mobilidade desse tamanho exige freios. No Skeletal Trauma (cap. 33, p. 815), os **ligamentos alares**, que vão da ponta do dente aos côndilos occipitais, são os **restritores primários da rotação**: ficam frouxos com a cabeça em posição neutra e, quando a cabeça gira, tensiona o alar **contralateral** ao lado da rotação, enquanto o do mesmo lado afrouxa. O alar contralateral também limita a inclinação lateral; com a **membrana tectória**, os alares limitam a **flexão**, e nenhum deles limita a extensão, tarefa da membrana atlanto-occipital anterior. O **ligamento cruzado**, cuja parte transversa abraça o dente por trás, é o **estabilizador primário** do segmento atlantoaxial e mantém o intervalo atlantodental em **até 3 mm no adulto e 5 mm na criança** (cap. 33, p. 848). O HEBERT acrescenta um detalhe que explica o papel do atlas: a tectória e os alares correm do occipício ao áxis **sem se inserir em C1**, que fica como peça intermediária entre os dois. A carga de ruptura do alar, em torno de 210 N, é menos da metade da dos ligamentos cruzados do joelho.
+
+!questoes central=coluna-0562
+conceito: C1 roda sobre C2 cerca de 80 a 88 graus (excursão total), o que corresponde a cerca de metade da rotação cervical; a flexoextensão de C1-C2 é de 20 a 30 graus e a occipito-C1 quase não roda; os alares são os freios primários da rotação.
+como: O ENARE de Cirurgia da Mão de 2023 pediu a rotação do atlas sobre o áxis em graus, com cinco faixas (50 a 62, 60 a 68, 69 a 76, 80 a 88 e 90 a 100).
+armadilha: Marcar a faixa de 90 a 100 por lembrar que a cabeça roda 90 graus para cada lado (esse é o pescoço inteiro, no Tachdjian), ou a de 50 a 62 por confundir o percentual (50% a 60%) com os graus.
+alerta: O gabarito de `coluna-0562` (80 a 88 graus) é literal no HEBERT, cap. 39, e no Skeletal Trauma, cap. 33A; a parte B do mesmo capítulo do Skeletal Trauma diz cerca de 40 graus, sem especificar o lado; o Campbell 15 e o Tachdjian só dão percentuais (50% e 55% a 60%), e o Rockwood and Wilkins não traz o valor em graus.
+!fim
+
+## Abaixo de C2: o acoplamento e o que os livros não dão
+
+O Tachdjian (cap. 3, p. 30 e 31) dá a amplitude do pescoço inteiro: **inclinação lateral de cerca de 50 graus** e **rotação de 90 graus** para cada lado, flexão até o queixo tocar o esterno e **extensão de cerca de 70 graus**. O Box 3.3 descreve o **movimento acoplado**, isto é, o fato de a vértebra cervical não conseguir inclinar sem rodar: do occipício a C5 a **flexão vem acoplada à rotação**; de C5 a C7 é a **extensão** que se combina com a rotação; na cervical **alta** a inclinação lateral vai no sentido **oposto** ao da rotação, e na cervical **baixa** vai no **mesmo sentido**. No tronco, o mesmo capítulo dá cerca de **30 graus de extensão**, flexão suficiente para tocar os pés com os joelhos estendidos e rotação que leva os ombros um pouco além de 90 graus em relação à pelve; na flexão a cifose torácica aumenta e a lordose lombar diminui, e na extensão ocorre o inverso.
+
+Uma ressalva honesta: nenhum dos livros lidos para esta seção traz a tabela de graus por segmento da cervical subaxial, da torácica e da lombar. O que eles dão é a regra anatômica já vista na seção das articulações (a orientação das facetas decide o movimento que cada região permite), e é com ela que se responde quando a prova pergunta por região e não por nível.
+
+!tabela Quem faz o quê na coluna cervical (Skeletal Trauma 5ª, cap. 33 e 34; Tachdjian, cap. 3, p. 30 e 31; HEBERT, cap. 39)
+| Nível | Movimento principal | Freio principal |
+| --- | --- | --- |
+| occipito-C1 | flexoextensão (cerca de 15 graus); rotação nula | tectória e alares na flexão; membrana atlanto-occipital anterior na extensão |
+| C1-C2 | rotação (80 a 88 graus; metade da cervical) | alar contralateral na rotação; ligamento transverso na translação anterior |
+| occipício a C5 | flexão acoplada à rotação | ligamento longitudinal posterior e elementos posteriores |
+| C5 a C7 | extensão acoplada à rotação | ligamento longitudinal anterior e anel anterior |
+| cervical alta e baixa | inclinação oposta à rotação na alta; no mesmo sentido na baixa | cápsulas facetárias só no extremo da flexão |
+!fim
+
+## Equilíbrio sagital: de onde cai o prumo
+
+A seção das curvas definiu o eixo vertical sagital. O Campbell, 15ª ed. (cap. 40, p. 1543 e 1544) explica de onde vem a medida. O equilíbrio global verdadeiro seria dado por um prumo baixado do **dente do áxis**, que passa **à frente da coluna torácica, atrás da lombar e pelo canto posterossuperior de S1**. Como o dente é difícil de ver na radiografia panorâmica, o prumo é baixado do **meio do corpo de C7**. O eixo é **positivo** quando o prumo cai **à frente da face anterior de S1**, ou seja, na frente do sacro, e **negativo** quando passa atrás; a Figura 40.29 mede o eixo como a **distância horizontal do prumo de C7 ao canto anterior do sacro**, positiva para a frente e negativa "através ou atrás" dele. O balanço positivo é o tronco caído para a frente: a cabeça sai de cima da pelve e o paciente gasta músculo para não cair.
+
+O capítulo 47 (p. 1854) mostra como o corpo compensa. Quem ainda tem quadris e joelhos móveis traz a cabeça de volta com **flexão dos joelhos** e **retroversão da pelve**, o que pode mascarar um eixo patológico; com artrose e rigidez esses recursos se perdem e o eixo positivo aparece. A retroversão custa caro, porque aumenta o gasto de energia e atrapalha a marcha. É também a limitação do eixo vertical sagital: ele não enxerga a compensação e depende de radiografia panorâmica em pé.
+
+!questoes central=coluna-0187
+conceito: O prumo baixado do meio do corpo de C7 normalmente cai perto do canto posterossuperior de S1; o balanço sagital é positivo quando o prumo cai na frente do sacro e negativo quando cai atrás.
+como: Uma prova de serviço ofereceu quatro posições para o prumo (canto posterossuperior de S1, canto posterossuperior de L5, na frente do sacro e atrás do sacro) e pediu a do balanço positivo.
+armadilha: Marcar o canto posterossuperior de S1, que é a posição normal do prumo e não o balanço positivo, ou inverter o sinal (atrás do sacro é negativo).
+!fim
+
+## As curvas em números
+
+No Campbell (cap. 40, p. 1544), a **cifose torácica** normal do adolescente mede **30 a 40 graus**, começa em T1 e tem o máximo segmentar em **T6 ou T7**; como T1 raramente aparece no filme, mede-se de T5 a T12 e somam-se os **14 ± 8 graus** de T1 a T5. A **lordose lombar** tem ápice em **L3 ou L4** (ou no disco entre eles) e é **variável dependente** da cifose: para o equilíbrio se manter, a lordose deve medir **20 a 30 graus a mais** que a cifose. Dois terços da lordose estão embaixo: **L4-L5 e L5-S1 respondem por 60%**, e só **L5-S1 por 40%**; os **discos** fazem **47 graus (78%)** e os corpos vertebrais apenas 12. A consequência cirúrgica é direta: corrigir a lordose sem olhar a cifose, ou fixar os dois últimos segmentos retos, tira o paciente do equilíbrio (dorso plano).
+
+O capítulo 47 (Figura 47.4, de BERNHARDT e BRIDWELL, 102 radiografias normais) detalha os segmentos: cifose máxima de cerca de **15 graus em T6-T7**, transição toracolombar quase reta (**0 a 10 graus de lordose de T12 a L2**), primeiro disco lordótico em **L1-L2** e lordose máxima em L4-L5 e L5-S1. BRIDWELL resume com o **relógio sagital**: na radiografia lateral com o paciente de frente para a direita do cirurgião, a placa de **L3 aponta para as 3 horas, L4 para as 4 e L5 para as 5**.
+
+## A pelve: incidência, versão e inclinação sacral
+
+A coluna pousa sobre o sacro, e o sacro gira com a pelve sobre as cabeças femorais. Três ângulos descrevem essa base (Campbell, 15ª ed., cap. 47, Figuras 47.5 a 47.7, p. 1856 e 1857, e cap. 40, Figura 40.31).
+
+A **incidência pélvica** é o ângulo entre a perpendicular ao centro da placa de S1 e a linha que liga esse centro ao eixo bicoxofemoral (o centro das cabeças femorais). É um **parâmetro morfológico fixo**: não muda com a postura nem depois da maturidade esquelética, e a média no adulto é de **52 ± 10 graus**. O Campbell a chama de ângulo de decolagem da coluna lombar: quanto maior a incidência, mais lordose a pessoa precisa para ficar ereta. A **versão pélvica** é o ângulo entre a vertical que passa pelo eixo bicoxofemoral e a linha desse eixo ao centro da placa sacral; é **variável** e mede quanta **retroversão compensatória** o paciente está usando: **menor que 20 graus** é normal e **acima de 30** é muito aumentada. A **inclinação sacral** é o ângulo entre a horizontal e a placa superior do sacro, também posicional. Os três ângulos partilham a linha da placa sacral, e a versão e a inclinação sacral mudam em pé, sentado e deitado, enquanto a incidência não muda; quando a pelve retroverte, a versão sobe e a inclinação sacral cai na mesma medida.
+
+A forma da lordose acompanha a base: **inclinação sacral menor que 35 graus com incidência baixa** dá lordose **curta e plana**; **maior que 45 graus com incidência alta** dá lordose **longa e curva** (cap. 40, p. 1544). O capítulo 4 do mesmo livro (p. 219), ao tratar da artroplastia do quadril, usa a diferença entre incidência pélvica e lordose lombar: **acima de 10 graus** define deformidade sagital do tipo dorso plano.
+
+!tabela Parâmetros sagitais e os cortes de SCHWAB (Campbell 15, cap. 47, Tabelas 47.1 e 47.2, p. 1852 a 1855, e Figuras 47.5 a 47.7)
+| Parâmetro | Como se mede | Fixo ou variável | Normal ou meta | Modificador da SRS-SCHWAB |
+| --- | --- | --- | --- | --- |
+| eixo vertical sagital | prumo do centro de C7 em relação ao sacro | variável | +48 a −48 mm; meta menor que 50 mm | 0: menor que 4 cm; +: 4 a 9,5 cm; ++: maior que 9,5 cm |
+| incidência pélvica | perpendicular à placa de S1 e linha ao eixo bicoxofemoral | fixa | 52 ± 10 graus | entra como incidência menos lordose |
+| incidência menos lordose lombar | subtração | variável | meta menor que 9 graus | 0: até 10; +: 10 a 20; ++: maior que 20 graus |
+| versão pélvica | vertical pelo eixo bicoxofemoral e linha ao centro da placa sacral | variável | menor que 20 graus | 0: menor que 20; +: 20 a 30; ++: maior que 30 graus |
+| inclinação sacral | horizontal e placa superior do sacro | variável | menor que 35: lordose plana; maior que 45: lordose longa | não entra |
+| inclinação espinopélvica de T1 | centro de T1 ao eixo bicoxofemoral | variável | meta menor que 0 grau | não entra |
+!fim
+
+As metas de correção de SCHWAB que o Campbell lista (p. 1854 e 1855) saem dessa tabela: eixo vertical sagital **menor que 50 mm**, inclinação espinopélvica de T1 **menor que 0 grau**, incidência menos lordose **menor que 9 graus** e versão pélvica **menor que 20 graus**. No plano coronal, a medida equivalente é a distância entre o prumo de C7 e a linha vertical sacral central, e desvio **maior que 4 cm** se associa a pior qualidade de vida, embora pese menos que o desequilíbrio sagital.
+
+## As três colunas de DENIS
+
+O modelo que organiza a estabilidade das fraturas toracolombares nasceu por etapas, contadas no Skeletal Trauma, 5ª ed. (cap. 35, p. 911, 912, 938 e 955). HOLDSWORTH trabalhava com **duas colunas**. LOUIS, em 1977, passou a três, mas **uma anterior** (corpo e disco) **e duas posteriores** (as facetas e os ligamentos de cada lado). DENIS dividiu no sentido anteroposterior: **coluna anterior** (ligamento longitudinal anterior, metade anterior do corpo e do disco), **coluna média** (metade posterior do corpo e do disco, anel fibroso posterior e ligamento longitudinal posterior) e **coluna posterior** (facetas, ligamento amarelo e ligamentos interespinal e supraespinal). A coluna média é a peça nova e a que a prova pergunta.
+
+!tabela As três colunas de DENIS em dois capítulos do mesmo livro (Skeletal Trauma 5ª, cap. 30, p. 769, e cap. 35, p. 911, 912, 938 e 955)
+| Coluna | Capítulo 35 (fraturas toracolombares) | Capítulo 30 (imagem) | Lesão típica |
+| --- | --- | --- | --- |
+| anterior | ligamento longitudinal anterior, metade anterior do corpo e do disco | ligamento longitudinal anterior, dois terços anteriores do corpo e do disco, anel anterior | compressão em cunha: só ela falha |
+| média | metade posterior do corpo e do disco, ligamento longitudinal posterior | terço posterior do corpo e do disco, ligamento longitudinal posterior | explosão: anterior e média falham em compressão |
+| posterior | facetas, ligamento amarelo, interespinal e supraespinal | pedículos, lâminas e demais elementos posteriores | flexão com distração: posterior e média falham em tração |
+!fim
+
+O mesmo livro descreve a fronteira entre anterior e média de dois jeitos, **metade** no capítulo de fraturas e **dois terços e um terço** no capítulo de imagem; a formulação clássica das provas é a da metade posterior do corpo e do anel com o ligamento longitudinal posterior. A coluna média explica os padrões: na **compressão em cunha** ela fica íntegra e funciona como fulcro da flexão; na **explosão** falham a anterior e a média sob carga axial, com possível retropulsão de fragmento para o canal; na **flexão com distração**, a posterior e a média falham em tração, com a anterior servindo de dobradiça ou falhando em compressão. O Skeletal Trauma registra também a crítica: a coluna média **não é uma entidade anatômica**, e o sistema tem baixa reprodutibilidade. Por isso os autores seguintes voltaram ao conceito de **estabilidade** de WHITE e PANJABI (1990): a capacidade de a coluna resistir às cargas fisiológicas sem lesão neurológica, deformidade ou dor.
 
 # Revisão rápida {radar=fundamento}
 

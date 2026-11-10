@@ -496,7 +496,7 @@
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "2918b1e97c3804d5bb0586c7a49cd60b6ebae9ed700efe159693e802463faf3e"
     }
    ],
@@ -748,7 +748,7 @@
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "af957c79059e8f02d8def5ba29fb69c0bff23500f29b10f1bb9789a0ebeebd66"
     }
    ],
@@ -1021,7 +1021,7 @@
       "luxacao-aguda-da-patela-2f480558",
       "patela-bipartida-e-outros-simuladores-f0b1afd4"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "78377d23830cf274d36fa0d716c4383a2a985b6acb2e1c56c29175336b7c9c58"
     }
    ],
@@ -1457,7 +1457,7 @@
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
       "tratamento-das-rupturas-tendineas-c716bcf4"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "b8ed679665520369d0a9c714b41e1cb29359fd929cb17cf1d90754ecd639f650"
     }
    ],
@@ -1791,14 +1791,27 @@
   "conferido": false
  },
  "joelho-0106": {
+  "conceito": "Questão de reconhecer um desenho, e o desenho é sempre o mesmo: quem já viu a figura do Campbell acerta em segundos.\n\n**A imagem.** Um joelho visto pela frente e um pouco por dentro, com os contornos ósseos em pontilhado e a patela identificada. Ao lado da borda medial da patela e do tendão patelar há uma **incisão longitudinal curta**, a via anteromedial. Abaixo e medialmente a ela, a letra A aponta um **nervo amarelo** que surge da face posteromedial do joelho, cruza para a frente na altura da tíbia proximal e se abre em leque de ramos finos logo abaixo da patela, bem no caminho da ponta distal da incisão.\n\n**O que é.** É o **ramo infrapatelar do nervo safeno**. O safeno (L2 a L4) é o ramo sensitivo terminal do nervo femoral. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 32, Fig. 1.44), descreve o trajeto: desce **posterior ao sartório**, **perfura a fáscia lata entre os tendões do sartório e do grácil** e fica subcutâneo na face medial da perna, junto da veia safena. No **lado medial do joelho** ele solta o **grande ramo infrapatelar**, de **local e distribuição variáveis**, que dá a sensibilidade da **pele anteromedial do joelho**. Compare a figura do livro, reproduzida abaixo, com a da prova: o ramo amarelo sai de trás do sartório, cruza o tendão patelar e segue para a frente, abaixo da patela. É o mesmo nervo, visto de outro ângulo.\n\n**Por que a banca desenha a incisão junto.** Porque é ali que ele é cortado. O mesmo capítulo (p. 31) manda, em **qualquer via anteromedial, inclusive a da meniscectomia**, procurar e proteger esse ramo, e avisa que, como a posição varia, **nenhuma incisão anteromedial o evita com certeza**. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 9, aprox. p. 320 e 321), diz o mesmo de outro modo: o tronco do safeno corre risco no acesso medial ao menisco, e o **ramo infrapatelar** no acesso anteromedial e no mediano, como na reconstrução do cruzado anterior; na parapatelar medial, o risco citado é justamente o neuroma desse ramo (aprox. p. 346). O paciente fica com uma área dormente lateral à cicatriz ou com um neuroma doloroso.\n\n**Como eliminar os vizinhos pelo território.**\n\n| Nervo | Onde anda | Pele que inerva |\n|---|---|---|\n| Safeno (do femoral) | atrás do sartório; perfura a fáscia entre sartório e grácil | infrapatelar e face medial da perna |\n| Ramos cutâneos anteriores do femoral | frente da coxa, de cima para baixo | face anterior da coxa |\n| Obturatório | face medial da coxa, com os adutores | não chega à frente do joelho |\n| Tibial | profundo, entre as cabeças do gastrocnêmio | panturrilha, pelo cutâneo sural medial |\n\nSó o safeno chega ao joelho por trás do sartório e manda um ramo transversal para a frente, abaixo da patela. A direção do nervo no desenho já resolve: ele vem de **trás e de medial**, não de cima.\n\nA figura e o trajeto estão na seção \"O ramo infrapatelar desenhado sobre a via anteromedial\" do resumo.",
+  "correta": "**B) Safeno.** A estrutura assinalada é o ramo infrapatelar do nervo safeno. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 32, Fig. 1.44), descreve o safeno descendo atrás do sartório, perfurando a fáscia lata entre o sartório e o grácil e soltando, no lado medial do joelho, o grande ramo infrapatelar, que inerva a pele anteromedial. É o nervo em risco em toda via anteromedial (p. 31), e por isso a prova o desenha ao lado da incisão.",
   "incorretas": {
-   "A": "**O nervo tibial passa posteriormente pela fossa poplítea.** Seu trajeto profundo não corresponde ao pequeno ramo cutâneo anterior desenhado.",
-   "C": "**O obturatório não origina esse ramo infrapatelar.** Sua distribuição principal acompanha os adutores e a sensibilidade medial da coxa.",
-   "D": "**Há ramos cutâneos femorais anteriores na região da coxa, mas não é o ramo mostrado.** O curso infrapatelar medial para anterior caracteriza o safeno."
+   "A": "**Tibial** é nervo profundo e posterior: desce entre as cabeças do gastrocnêmio até o compartimento posterior profundo da perna (Netter, cap. 9, aprox. p. 322). Não tem ramo cutâneo na frente do joelho; o ramo de pele que ele dá, o cutâneo sural medial, desce pela panturrilha e é o guia da via posterior do joelho. Seria a resposta num desenho da fossa poplítea, não numa vista anteromedial.",
+   "C": "**Obturatório** é o nervo dos adutores, na face medial da coxa. Ele não desce até a região infrapatelar nem cruza a frente da tíbia. O que confunde é a posição medial do nervo desenhado; mas medial no joelho, saindo de trás do sartório, é safeno.",
+   "D": "**Cutâneo femoral anterior** é o distrator feito para quem raciocina só pela localização: o nervo está na frente do joelho, logo seria um cutâneo anterior. Esses ramos do femoral descem pela face anterior da coxa, de cima para baixo. O nervo do desenho faz outro caminho: vem de posteromedial e cruza transversalmente abaixo da patela. Tanto ele quanto o safeno são ramos do femoral, mas a pergunta pede o tronco de que o ramo assinalado sai diretamente."
   },
-  "conceito": "**O trajeto revela o nervo.** No desenho da face medial e anterior do joelho, o ramo amarelo sai medialmente e cruza a região abaixo da patela em direção anterior. É o ramo infrapatelar do nervo safeno. O safeno é ramo sensitivo do nervo femoral, passa pelo canal dos adutores e fornece sensibilidade à região medial da perna, além desse ramo para o joelho anterior.\n\n**Importância cirúrgica.** Incisões para artroplastia, portais mediais de artroscopia e retirada de tendões flexores podem atravessar os ramos infrapatelares, cujo trajeto varia entre pessoas. Hipoestesia na região anterior do joelho é uma consequência possível; lesão com neuroma pode produzir dor localizada ou choque à palpação.\n\n**Não confunda planos.** O nervo tibial percorre a fossa poplítea posteriormente e de modo profundo. O obturatório se relaciona sobretudo ao compartimento medial da coxa. Ramos cutâneos femorais anteriores existem na coxa, mas o nervo desenhado sob a patela segue a distribuição típica do safeno.",
-  "correta": "**É ramo do nervo safeno.** O ramo infrapatelar cruza superficialmente a face anterior do joelho a partir do lado medial, como mostra a figura.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 1, p. 31 e 32 (Fig. 1.44)",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho), aprox. p. 320, 321 e 346",
+   "Resumo OrtoQuestões: Anatomia do joelho"
+  ],
+  "imagens": [
+   {
+    "arquivo": "joelho/campbell15-1-44.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.44, p. 32. Face medial do joelho: o nervo safeno desce com a veia safena atrás do sartório e solta o ramo infrapatelar, que cruza para a frente abaixo da patela, sobre o caminho das incisões anteromediais.",
+    "largura": 770,
+    "altura": 565
+   }
+  ],
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "joelho-0107": {
@@ -2851,7 +2864,7 @@
       "tratamento-das-rupturas-tendineas-51da9e95",
       "patelectomia-parcial-e-total-ce27b267"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "7b4c10330f534d4b3664ea8584ea6be49afddf6b8c7dcb31b68d540648a0aec4"
     }
    ],
@@ -3036,7 +3049,7 @@
       "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "bea3a1ac6e515817bd0c0ca4e41f0acc7f29423fe6621e377e189003960e54cd"
     }
    ],
@@ -3301,14 +3314,20 @@
   "conferido": false
  },
  "joelho-0197": {
+  "conceito": "A doença de OSGOOD-SCHLATTER costuma ser apresentada como um problema que o tempo resolve, e quase sempre é. A banca quer o outro lado: o que pode sobrar quando ela segue o seu curso sem cuidado. As duas sequelas que os livros descrevem saem da anatomia do lugar onde a doença mora, e por isso dá para chegar à resposta sem decorar lista.\n\n**O que é.** O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 31, p. 1641), define a doença como **apofisite de tração do tubérculo tibial**, comum entre 10 e 15 anos, sobretudo em esportes de salto. O tendão patelar puxa repetidamente o centro secundário de ossificação da tuberosidade, e o livro fala em provável avulsão verdadeira ou fratura de estresse desse centro. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40, p. 2010), prefere falar em inflamação por tração do tendão e da cartilagem apofisária, e lembra que a RM mostrou tendinite patelar sem avulsão. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 34, p. 1202), dá o momento em que a apófise é vulnerável: quando **começou a ossificar, mas ainda não se fundiu** ao resto da tíbia.\n\n**Por que recurvato.** A tuberosidade não é um osso à parte: ela é a língua **anterior** da placa de crescimento da tíbia proximal. Se essa parte da frente se funde antes da hora, a frente da tíbia para de crescer enquanto a parte de trás da fise continua. O planalto passa a se inclinar para a frente, e o joelho entra em hiperextensão. O Tachdjian (p. 2012) descreve isso como fechamento do tubérculo com **recurvato grave**; o Campbell (p. 1203 aprox.), como **fusão prematura da parte anterior da epífise com genu recurvatum**. A direção do desvio decorre do endereço da parada: anterior dá recurvato; flexo seria o oposto; varo e valgo exigiriam parada medial ou lateral, onde a doença não está.\n\n**Por que pseudartrose.** A fragmentação da apófise pode deixar um **ossículo** que nunca se une à tíbia. É a pseudartrose do fragmento da tuberosidade, que os dois livros citam, e é ela que dói ao ajoelhar no adulto. Na série de 50 adultos do Lovell and Winter (p. 1642), 76% não tinham limitação, mas 60% sentiam dor ao ajoelhar e a maioria ficou com o tubérculo proeminente. No esqueleto maduro que continua sintomático, a retirada do ossículo resolve a maioria.\n\n**Os livros lado a lado.**\n\n| Livro | Sequelas descritas |\n|---|---|\n| Tachdjian, cap. 40, p. 2012 | raramente, sem tratamento: fechamento do tubérculo com recurvato grave ou pseudartrose do ossículo |\n| Campbell, cap. 34, p. 1203 aprox. | com ou sem cirurgia: subluxação da patela, patela alta, pseudartrose do fragmento, fusão anterior prematura com genu recurvatum |\n| Lovell and Winter, cap. 31, p. 1642 | tubérculo proeminente, dor ao ajoelhar; possível relação com fratura do tubérculo, sem causa e efeito demonstrados |\n\nUma ressalva de leitura: o enunciado diz \"principais complicações\", e o Tachdjian frisa que as duas são **raras**. O habitual é a doença durar meses a anos e acabar com o fechamento da apófise, deixando só a proeminência. A banca pediu as sequelas que os livros nomeiam, não as mais frequentes. E nenhum dos três livros fala em **instabilidade ligamentar** do joelho; o que o Campbell cita é subluxação da patela, outro assunto. É por medo da fusão anterior que o Campbell só opera com a apófise fundida ou quase, retirando apenas o ossículo.\n\n> **Na prova:** OSGOOD-SCHLATTER que deixa sequela = parada **anterior** da fise (genu **recurvatum**) e **ossículo não unido** (pseudartrose). Varo, valgo, flexo e instabilidade não estão nos livros.\n\nO raciocínio da parada anterior está na seção \"O que sobra de quem não trata\" do resumo.",
+  "correta": "**D) Geno recurvato e pseudartrose da tuberosidade anterior da tíbia.** São exatamente as duas sequelas que o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 40, p. 2012), atribui à doença sem tratamento: fechamento precoce do tubérculo com recurvato grave e pseudartrose do ossículo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 34, p. 1203 aprox.), repete o par (fusão prematura anterior com genu recurvatum e pseudartrose do fragmento) e soma subluxação da patela e patela alta. A tuberosidade é a parte anterior da fise tibial proximal: quando ela para, a parte posterior segue crescendo e o planalto tomba para a frente.",
   "incorretas": {
-   "A": "Joelho varo e instabilidade não são complicações da doença de Osgood-Schlatter.",
-   "B": "O valgo pós-traumático clássico da tíbia proximal é o fenômeno de Cozen, depois de fraturas da metáfise, e não uma complicação do Osgood-Schlatter.",
-   "C": "Com o fechamento da parte anterior da fise, a deformidade é em hiperextensão (recurvato), e não em flexão. A pseudartrose está certa, mas a deformidade não."
+   "A": "**Geno varo e instabilidade do joelho** erram duas vezes. O varo de origem fisária pede parada do lado medial da fise tibial proximal, e a doença está na língua anterior da placa, na linha média. A instabilidade não aparece em nenhum dos três livros como sequela: o OSGOOD-SCHLATTER é doença da inserção do tendão patelar, fora da articulação, e não toca ligamento. O que o Campbell lista de mais próximo é subluxação da patela, que não é instabilidade do joelho.",
+   "B": "**Geno valgo e instabilidade do joelho** repetem o erro de plano. Um desvio em valgo sairia de parada lateral da fise, e a apófise da tuberosidade é anterior e central; sua fusão precoce desvia o joelho no plano sagital, não no coronal. A segunda metade também não tem apoio: Lovell and Winter, Tachdjian e Campbell não descrevem frouxidão ligamentar depois da doença.",
+   "C": "**Geno flexo e pseudartrose da tuberosidade** acerta a metade óssea e erra a direção da deformidade, e é o distrator mais perigoso. O flexo vem à cabeça porque a criança sente dor na extensão contra resistência e evita esticar o joelho, mas isso é sintoma, não sequela. A parada do crescimento é anterior: a frente da tíbia fica curta, o planalto inclina para a frente e o joelho hiperestende. Flexo exigiria o contrário, uma parada posterior. A pseudartrose do ossículo, sim, está no Tachdjian (p. 2012) e no Campbell (p. 1203 aprox.)."
   },
-  "conceito": "A doença de **Osgood-Schlatter** é uma inflamação por tração na **tuberosidade anterior da tíbia**, onde o tendão patelar se prende. Durante o estirão de crescimento, essa região ainda é uma apófise, um centro de crescimento separado do resto da tíbia por cartilagem. O quadríceps, cada vez mais forte, puxa repetidamente o tendão patelar, especialmente em esportes com salto e corrida, e a apófise sofre microarrancamentos.\n\nO adolescente tem dor e um caroço na frente do joelho, logo abaixo da patela, que piora para ajoelhar, saltar e subir escadas. A doença é **autolimitada**: quando a apófise se funde ao resto da tíbia, no fim do crescimento, a dor some. O tratamento é conservador, com redução das atividades que causam dor, gelo e alongamento do quadríceps e dos isquiotibiais.\n\nAs complicações são poucas, mas existem. A mais conhecida é o **ossículo não unido**: um fragmento de osso que se formou dentro do tendão e nunca se juntou à tíbia. Ele funciona como uma **pseudartrose** da tuberosidade e pode doer por anos na vida adulta. O tratamento é retirar o ossículo, com bons resultados.\n\nA outra é o **joelho recurvato**, mais rara. Se a parte da frente da placa de crescimento da tíbia proximal se fecha antes da hora (o que acontece mais depois de trauma ou imobilização), a parte de trás continua crescendo, e a tíbia vai se inclinando para trás. O joelho passa a estender além do normal. Também podem ficar uma proeminência óssea residual e, menos frequentemente, uma patela alta.",
-  "correta": "Geno recurvato e pseudartrose da tuberosidade anterior da tíbia. O fechamento precoce da parte anterior da fise tibial causa o recurvato, e o ossículo não unido no tendão funciona como pseudartrose dolorosa.",
-  "geradoEm": "2026-10-02",
+  "referencias": [
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40, p. 2010 a 2012",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 34, p. 1202 a 1204",
+   "Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 31, p. 1641 e 1642",
+   "Resumo OrtoQuestões: Osteocondroses"
+  ],
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "joelho-0198": {
@@ -3527,7 +3546,7 @@
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2",
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "008513be947043edfb9593b0794f6b6c81c0d4055723fa10a4b2a46cd650743c"
     }
    ],
@@ -3870,7 +3889,7 @@
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "12fd85e036066a2e872ebfe202b215b4e7765a1d853e3a56300e690dc9ddaf1b"
     }
    ],
@@ -4611,7 +4630,7 @@
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7e44c9e6",
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "f42f3b65fa3d26ca8c6fa99e206fad2d888c87f66042dbcb548239980294b77c"
     }
    ],
@@ -4832,7 +4851,7 @@
       "luxacao-aguda-da-patela-727a6900",
       "luxacao-aguda-da-patela-2f480558"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "efbcfdcda1f771ea6d0a1460df404ec7100265340f69f844c5902cae28479e2c"
     }
    ],
@@ -5013,7 +5032,7 @@
       "fixacao-interna-8ce3f90e",
       "fixacao-interna-39781fe4"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "324ffbd5a2a73a228cd0d16fd74019c5dc61411b64fdce3413a43e05e55f044e"
     }
    ],
@@ -5449,7 +5468,7 @@
       "fixacao-interna-19754d8d",
       "fixacao-interna-8ce3f90e"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "4b273f6d358b61bfb10a1fe0bf33d32d0ec9169a73b2b24835284fc4b9e4253d"
     }
    ],
@@ -5458,17 +5477,19 @@
   }
  },
  "joelho-0315": {
+  "conceito": "O joelho luxou, a artéria poplítea rompeu, e o cirurgião vascular está com a fossa poplítea aberta. O ortopedista, ao lado, vê cápsula rasgada e ligamentos soltos. A afirmação a julgar é quanto disso ele deve consertar naquele momento. A resposta dos livros é: quase nada, só o que estiver à mão.\n\n**Por que a artéria manda.** A poplítea está presa em dois pontos, o hiato dos adutores em cima e o arco do sóleo embaixo, e entre eles não consegue fugir quando fêmur e tíbia se separam: é estirada na luxação anterior e contundida pela tíbia na posterior. O que decide o membro é o relógio. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2113), dá a escada:\n\n| Reparo arterial | Amputação |\n|---|---|\n| em até 6 horas | cerca de 6% |\n| em até 8 horas | 11% |\n| depois de 8 horas | 86% |\n| sem tratamento | 90% |\n\nO Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), usa a mesma ordem de grandeza: sem perfusão em 6 a 8 horas, até 86% de amputação.\n\n**O que o Campbell manda fazer com os ligamentos.** Quando a poplítea precisa de reparo, os autores em geral **não fazem reconstrução ligamentar extensa no mesmo tempo**. O que se justifica são **alguns pontos bem colocados nas estruturas capsulares enquanto a artéria está exposta**. O reparo dos colaterais e da cápsula e o reparo ou a reconstrução dos cruzados ficam **adiados**, e podem ser feitos com segurança **até 3 semanas depois** do reparo vascular, com a incisão cicatrizada, a artéria comprovadamente pérvia e o tecido ainda em bom estado. O garrote é evitado e só entra com a liberação do cirurgião vascular. É, com outras palavras, a frase do enunciado: limitar-se ao que a via vascular mostra.\n\n**O que o Rockwood diz.** É mais seco e vai na mesma direção: **nenhum reparo ou reconstrução ligamentar**, agudo ou tardio, **sem uma árvore arterial íntegra**; o **fixador externo** é colocado logo antes da ponte, para a anastomose cicatrizar sem episódios de subluxação; depois de revascularizar, examinam-se os compartimentos. Antes do reparo arterial, uma radioscopia rápida com estresse em varo, valgo e gaveta posterior registra o padrão de instabilidade para o planejamento. O Rockwood, pelo que o resumo traz do capítulo, não descreve os pontos capsulares do Campbell.\n\n**O raciocínio comum.** Reconstruir tudo no mesmo ato soma horas de cirurgia a um membro que acabou de sair da isquemia, pede outras incisões, manipulação e às vezes garrote, e põe a anastomose recém-feita em risco. O joelho frouxo espera três semanas sem prejuízo; a perna isquêmica não espera.\n\n**Sobre o gabarito.** A questão é do TARO 2006 e está sem gabarito oficial no acervo. A bibliografia indicada pela banca é o Campbell da época (p. 2303), e o gabarito pela bibliografia é **Certo**, que a 15ª edição continua sustentando.\n\n> **Na prova:** luxação com lesão da poplítea = revascularizar em até 6 a 8 horas, fixador externo, fasciotomia se preciso; nos ligamentos, só **alguns pontos capsulares** pela via vascular. O resto, **até 3 semanas depois**.\n\nA conduta está na seção \"Os ligamentos no dia do reparo arterial\" do resumo.",
+  "correta": "**A) Certo.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2113), diz que, quando a poplítea é reparada, não se faz reconstrução ligamentar extensa no mesmo tempo: justificam-se alguns pontos bem colocados nas estruturas capsulares enquanto a artéria está exposta, e o restante é adiado, podendo ser feito com segurança até 3 semanas depois. É o sentido da afirmação: reparar só o que a via de acesso vascular deixa ver. O tempo de isquemia decide o membro (6% de amputação com reparo em até 6 horas, 86% depois de 8 horas), e uma cirurgia longa ameaça a anastomose.",
   "incorretas": {
-   "B": "**Errado poderia valer se a limitação fosse definitiva.** Lesões não abordadas na via vascular ainda exigem avaliação e eventual reconstrução planejada depois da reperfusão."
+   "B": "**Errado** seria a resposta se os livros mandassem aproveitar a anestesia e reconstruir todos os ligamentos no mesmo ato, ou se proibissem tocar em qualquer estrutura. Nenhum dos dois é o caso. O Campbell (cap. 50, p. 2113) aceita poucos pontos capsulares com a artéria exposta e adia o reparo extenso por até 3 semanas; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), veda reparo e reconstrução sem árvore arterial íntegra e protege a anastomose com fixador externo. Quem lê o Rockwood ao pé da letra poderia achar que nem os pontos capsulares cabem, mas o enunciado fala em limitar, não em ampliar, e a ideia de contenção é a mesma nos dois livros."
   },
-  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. A resposta provável “Certo” foi mantida como princípio de não ampliar uma cirurgia vascular urgente para reconstrução ligamentar extensa. Isso não é regra absoluta: estabilização temporária, reparos acessíveis e planejamento de reconstrução precoce ou tardia variam conforme isquemia, partes moles, instabilidade e equipe disponível.",
-  "conceito": "**Prioridade é reperfundir.** Luxação tibiofemoral pode lesar a artéria poplítea e ameaçar o membro. Na presença de isquemia ou lesão vascular confirmada, redução, avaliação vascular e reparo rápido têm precedência. A estabilização do joelho protege a anastomose ou enxerto; em alguns casos usa-se fixador externo transarticular temporário.\n\n**Ligamentos em outro tempo.** Reconstruir todos os ligamentos imediatamente pela via aberta para o vaso pode prolongar isquemia, agravar tecidos moles e atrapalhar cuidado vascular. Reparos simples de estruturas claramente expostas podem ser feitos, enquanto a reconstrução definitiva costuma ser planejada após assegurar perfusão, controlar edema e avaliar os padrões ligamentares.\n\n**Não confundir acessos.** A incisão vascular é escolhida para abordar a artéria, não para visualizar todas as estruturas do joelho. O objetivo da frase é limitar a cirurgia ligamentar concomitante ao que pode ser tratado com segurança, não proibir para sempre abordagens adicionais quando a condição clínica exigir.",
-  "correta": "**Certo como estratégia prudente na cirurgia vascular urgente.** Prioriza-se salvar o membro e evita-se reconstrução ligamentar extensa naquele ato; reparos visíveis e seguros podem ser realizados.",
-  "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 2003, p. 2303."
-  ],
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "alerta": "Questão sem gabarito oficial no acervo (TARO 2006); o gabarito pela bibliografia da banca é Certo (A), e é a resposta provável. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2113), sustenta: só alguns pontos capsulares com a artéria exposta e o reparo extenso adiado por até 3 semanas. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), proíbe reparo ou reconstrução ligamentar sem árvore arterial íntegra e, pelo que o resumo registra do capítulo, não descreve os pontos capsulares.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2113",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 61",
+   "Resumo OrtoQuestões: Luxação do joelho e lesão multiligamentar"
+  ],
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "joelho-0316": {
@@ -5651,18 +5672,20 @@
   "conferido": false
  },
  "joelho-0327": {
+  "conceito": "Adolescente com febre, claudicação e dor há uma semana, depois de uma queda de bicicleta. O exame tem duas informações que valem mais que todo o resto: o **joelho mexe bem** e a dor está na **tíbia proximal**, não na interlinha. A radiografia veio normal. A questão pede a conduta, e para chegar a ela é preciso primeiro dizer onde está a infecção.\n\n**Onde está o problema.** A artrite séptica dói à mobilização passiva suave; a osteomielite isolada, pouco (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 975 e 976). Mobilidade preservada com metáfise dolorosa aponta para o **osso**. É o retrato da osteomielite hematogênica aguda: a bactéria pousa na metáfise da criança, onde as alças vasculares têm fluxo lento (TRUETA) e o endotélio tem falhas, e o mesmo livro (p. 945 e 946) registra que mais de um terço das crianças conta um trauma menor recente no local. O edema discreto do joelho, com o movimento livre, não basta para falar em articulação infectada.\n\n**Por que a radiografia normal não tranquiliza.** O osso só muda na radiografia em **10 a 14 dias**. Com 7 dias de história, radiografia normal é o esperado. O laboratório também engana: os leucócitos estão elevados em só 25% a 35% das crianças na admissão (p. 954).\n\n**Por que material antes do antibiótico.** O tratamento vai durar semanas, e a escolha do antibiótico depende de saber o germe. A hemocultura deve ser colhida sempre antes do antibiótico (Tachdjian, p. 955), mas identifica o agente em apenas cerca de 50% (Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 807). O que sobe o rendimento é o material do próprio foco. O Tachdjian (p. 947) apoia **aspirar o foco suspeito, sob fluoroscopia, antes de iniciar o antibiótico**, com agulha 11 G de biópsia de medula, que traz **osso para a histologia e líquido para a cultura**. A histologia não é detalhe: febre, dor óssea e claudicação em criança também são leucemia e sarcoma de EWING, e é o patologista quem separa.\n\n**Os dois livros não dizem a mesma coisa.**\n\n| | Tachdjian, cap. 23, p. 947 | Campbell, cap. 23, p. 807 e 808 |\n|---|---|---|\n| Aspirar o osso | pode ser necessário, antes do antibiótico, para identificar o germe | **não há consenso** sobre quem aspirar |\n| Quem | o foco suspeito | quem não tem abscesso aparente, **não respondeu ao antibiótico empírico** e tem hemocultura negativa |\n| Agulha | 11 G de biópsia de medula, sob fluoroscopia | 16 G ou 18 G no ponto de maior dor |\n| Passos | osso e líquido | primeiro o espaço subperiosteal; sem pus, atravessa a cortical e aspira a medula |\n\nA diferença muda a leitura da questão. Pelo Tachdjian, a punção antes do antibiótico é a conduta descrita, e é a que o gabarito premia. Pelo Campbell, um serviço que colhe hemocultura, começa o empírico e só aspira se a criança não melhorar em 24 a 48 horas também está dentro do livro. A prova seguiu o texto pediátrico; convém saber que a outra opção não é absurda, só não é a \"melhor conduta\" para essa banca.\n\n**Sobre o \"abscesso\" do enunciado.** A alternativa fala em drenar abscesso, mas o caso não mostrou abscesso nenhum: não há ultrassom nem RM. A punção é sobretudo **diagnóstica**. Se vier pus, ela já descomprime, e aí a cirurgia entra pelas indicações do Campbell (p. 808): abscesso que exige drenagem ou falha em melhorar com o antibiótico adequado.\n\nO caso típico está na seção \"Metáfise dolorosa, radiografia normal: puncionar antes do antibiótico\" do resumo.",
+  "correta": "**C) Realizar a punção transóssea da metáfise proximal da tíbia, para drenagem do abscesso e colher material para cultura e exame histopatológico antes de iniciar o antibiótico.** É a conduta que o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 947), descreve: aspirar o foco suspeito antes do antibiótico, com agulha de biópsia de medula que entrega osso para a histologia e líquido para a cultura. Ganha-se o germe, que a hemocultura sozinha só dá em cerca de metade dos casos, e afastam-se leucemia e EWING. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 807 e 808), é menos categórico e diz que não há consenso sobre quem aspirar.",
   "incorretas": {
-   "A": "**Antibiótico empírico sem coleta pode ser necessário se a criança estiver grave.** Num caso estável, porém, deixar de obter ao menos hemoculturas perde informação microbiológica. Se houver abscesso significativo, apenas aguardar evolução com antibiótico pode deixar o foco sem controle.",
-   "B": "**Hemocultura antes do antibiótico é uma conduta legítima e importante.** Pode ser suficiente como início em osteomielite sem coleção, com avaliação da necessidade de amostra óssea. A banca preferiu C presumindo um foco drenável; sem essa informação, não se pode declarar B universalmente errada.",
-   "D": "**Artrotomia é para o espaço articular.** Seria indicada em artrite séptica do joelho que exigisse drenagem. Dor localizada na metáfise e mobilidade articular preservada deslocam a suspeita principal para o osso, sem comprovar infecção intra-articular."
+   "A": "**Antibiótico parenteral empírico e aguardar** é tratar no escuro. Sem nenhuma cultura colhida, perde-se a chance de identificar o germe, e o tratamento de semanas segue sem alvo; se a criança não melhorar, a cultura tardia já virá sob efeito do antibiótico. O Tachdjian (cap. 23, p. 955) manda colher a hemocultura sempre antes da primeira dose. Nem o Campbell, que aceita começar pelo empírico, dispensa a cultura.",
+   "B": "**Hemocultura e antibiótico empírico** é a opção mais defensável entre as erradas, e pelo Campbell (cap. 23, p. 807 e 808) seria um caminho aceito, com a aspiração óssea guardada para quem não responde e tem hemocultura negativa. Ela perde porque a hemocultura só identifica o agente em cerca de 50% e não traz tecido para a histologia, que é o que separa infecção de leucemia e de EWING. O gabarito segue o Tachdjian (p. 947), que põe a punção do foco antes do antibiótico.",
+   "D": "**Artrotomia do joelho** trata artrite séptica, e o caso foi escrito para afastá-la: a mobilidade articular está preservada e a dor fica na metáfise da tíbia, e a artrite séptica dói à mobilização passiva suave (Tachdjian, cap. 23, p. 975 e 976). Vale a vigilância, porque o joelho é a articulação para onde a osteomielite vizinha mais vaza (31% no mesmo trecho); se o movimento passar a doer e o derrame crescer, a conduta muda. Hoje, abrir o joelho não colhe material do foco, que está no osso."
   },
-  "alerta": "A alternativa C foi mantida como gabarito da banca, mas o enunciado desta questão não informa tamanho de abscesso nem demonstra coleção drenável. Abri a única imagem relacionada, da questão joelho-0326: ela mostra alteração de sinal extensa na tíbia proximal, sem permitir confirmar com segurança um abscesso bem delimitado nesse recorte. A indicação de drenagem não deve ser deduzida de edema medular isolado. Em criança estável sem abscesso substancial documentado, hemoculturas, eventual amostra óssea e antibiótico podem ser individualizados; na criança grave, o antibiótico não deve esperar punção.",
+  "alerta": "O gabarito (C) segue o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 23, p. 947), que apoia aspirar o foco antes do antibiótico. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 23, p. 807 e 808), diz que não há consenso e reserva a aspiração óssea a quem não tem abscesso aparente, não respondeu ao antibiótico empírico e tem hemocultura negativa; por ele, colher hemocultura e iniciar o empírico também seria aceitável. O enunciado fala em drenar abscesso sem que o caso tenha mostrado um. O gabarito oficial foi mantido.",
   "referencias": [
-   "Pediatric Infectious Diseases Society e Infectious Diseases Society of America. Clinical Practice Guideline on Diagnosis and Management of Acute Hematogenous Osteomyelitis in Pediatrics. 2021. https://www.idsociety.org/practice-guideline/bone-and-joint-infections---osteomyelitis/"
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 23, p. 945 a 947, 954, 955, 975 e 976",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 23, p. 807 e 808",
+   "Resumo OrtoQuestões: Osteomielite e artrite séptica na criança"
   ],
-  "conceito": "**Separe confirmar a bactéria de drenar pus.** Na suspeita de osteomielite hematogênica da tíbia, colhem-se hemoculturas antes da antibioticoterapia quando isso não a atrasa perigosamente. Uma aspiração ou biópsia do foco pode aumentar a identificação do agente e permitir tratamento dirigido; material pode seguir para cultura e, quando o diagnóstico diferencial indicar, histopatologia. A punção diagnóstica não é sinônimo de uma coleção comprovadamente drenável.\n\n**Drenagem depende da gravidade e da imagem.** A ressonância delimita acometimento medular e pesquisa coleção intraóssea ou subperiosteal. As diretrizes recomendam desbridamento urgente diante de sepse ou evolução rápida e sugerem drenar abscesso substancial documentado, por exemplo acima de 2 cm, mesmo numa criança estável. Em apresentação não grave sem coleção definida, antibiótico e observação clínica podem bastar. Edema ósseo difuso sozinho não estabelece a necessidade de abrir a metáfise.\n\n**O momento do antibiótico muda com o estado da paciente.** Se ela está grave ou a infecção progride rapidamente, inicia-se terapia empírica imediatamente, após hemoculturas se factível, sem aguardar procedimento. Se está estável e a equipe planeja obter amostra do foco em tempo hábil, pode-se adiar brevemente o antibiótico sob observação para melhorar a documentação microbiológica. Não se deve postergar tratamento indefinidamente. A artrotomia do joelho é para infecção articular confirmada ou fortemente suspeita, não para foco ósseo isolado.",
-  "correta": "**C é a resposta indicada pela banca para coleta e drenagem transóssea.** Ela seria adequada se houvesse coleção metafisária drenável e paciente estável, permitindo obter material antes do antibiótico. Como a coleção não foi demonstrada de modo inequívoco no material disponível, a indicação obrigatória é discutível e fica registrada no alerta.",
-  "geradoEm": "2026-10-17",
+  "geradoEm": "2026-11-09",
   "conferido": false
  },
  "joelho-0328": {
@@ -6207,7 +6230,7 @@
      "blocos": [
       "anatomia-e-biomecanica-do-mecanismo-extensor-f2e65fc0"
      ],
-     "sha256": "1d69a36404a3968da4ac277367e5b2760226e1a68acb1486f7cdffcba04e90d8",
+     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
      "trechosSha256": "233c4564d0dc2d2eb9dcd6857c29695e6fecea2e6c49d5252c083ad92a4b8919"
     }
    ],
