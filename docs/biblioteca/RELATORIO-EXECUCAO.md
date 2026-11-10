@@ -303,7 +303,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 975 | Miscelâneas: outros temas da coluna (campbell15-outros-coluna), do joelho (campbell15-outros-joelho) e osteometabólicos (hebert-outros-osteometabolicos), resumos novos com uma seção por assunto; 7 miniaulas dos temas pequenos |
 | 976 | Miscelânea do quadril (callaghan-outros-quadril, The Adult Hip cap. 26: risco perioperatório, cápsula e ligamentos, luxação pura, artrodese e outros); 45 miniaulas das miscelâneas da coluna, do joelho, osteometabólicas e do quadril, com figuras |
 | 977 | Miscelâneas de conceitos básicos (rockwood10-outros-conceitos-basicos) e de trauma (rockwood10-outros-trauma), resumos novos com uma seção por assunto; 18 miniaulas da miscelânea do ombro e cotovelo, com figuras |
-| (este PR) | Miscelânea de ortopedia pediátrica e outras deformidades do pé na criança (tachdjian6-outros-pediatria, resumo novo); outros temas do pé e tornozelo (versão nova de 3 resumos: síndromes do túnel do tarso, pé paralítico, KAPPIS); outros temas da mão (green-outros-mao-1 e green-outros-mao-2, resumos novos); 13 miniaulas de conceitos básicos com figuras. Com este PR os 284 temas da cobertura têm resumo |
+| 981 | Miscelânea de ortopedia pediátrica e outras deformidades do pé na criança (tachdjian6-outros-pediatria, resumo novo); outros temas do pé e tornozelo (versão nova de 3 resumos: síndromes do túnel do tarso, pé paralítico, KAPPIS); outros temas da mão (green-outros-mao-1 e green-outros-mao-2, resumos novos); 13 miniaulas de conceitos básicos com figuras. Com este PR os 284 temas da cobertura têm resumo |
+| (este PR) | Fechamento da fila dos 284 temas: 34 miniaulas das últimas miscelâneas (25 da mão, 9 de pediatria e pé), com figuras |
 
 ## Próximo
 
