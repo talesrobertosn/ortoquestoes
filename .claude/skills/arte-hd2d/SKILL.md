@@ -48,6 +48,7 @@ Leia os scripts antes de pintar qualquer coisa nova e copie a técnica (cada scr
 | Cenário | Script | Saída |
 |---|---|---|
 | Acampamento do topo (3 horas do dia) | `scripts/gerar_cena_inicio.py` | `public/pixel/inicio/cena-{manha,tarde,noite}[-960].webp` |
+| Praça do Pinheiro (cenário do topo, 3 horas, com um toque de Natal e a visita do dragão) | `scripts/cenarios/inicio_praca.py` | `public/pixel/inicio/cena-praca-{manha,tarde,noite}[-960].webp` |
 | Gabinete de anatomia (Atlas 3D) | `scripts/gerar_cena_atlas.py` | `secao-atlas[-960].webp` |
 | Salão da biblioteca (Resumos) | `scripts/gerar_cena_biblioteca.py` | `secao-biblioteca[-960].webp` |
 | Arena e salão dos troféus | `scripts/gerar_cena_arena.py` | `secao-arena`, `secao-trofeus` |
