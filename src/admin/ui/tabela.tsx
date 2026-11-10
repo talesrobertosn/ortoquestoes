@@ -22,9 +22,10 @@ export interface Coluna<T> {
  * clicável (abre o detalhe), linha selecionada e, no celular, cada linha vira um bloco empilhado
  * (sem rolagem de lado na página). A página volta para 1 quando o conjunto muda.
  */
-export function Tabela<T>({ linhas, colunas, chave, aoAbrir, selecionada, porPagina = 25, ordemInicial, rotulo, vazio, compacta = false, rodape }: {
+export function Tabela<T>({ linhas, colunas, chave, aoAbrir, selecionada, porPagina = 25, ordemInicial, rotulo, vazio, compacta = false, rodape, classeLinha }: {
   linhas: T[]; colunas: Array<Coluna<T>>; chave: (l: T) => string; aoAbrir?: (l: T) => void; selecionada?: string | null
   porPagina?: number; ordemInicial?: { coluna: string; sentido: 'asc' | 'desc' }; rotulo: string; vazio?: ReactNode; compacta?: boolean; rodape?: ReactNode
+  classeLinha?: (linha: T) => string | undefined
 }) {
   const [ordem, definirOrdem] = useState(ordemInicial ?? null)
   const [pagina, definirPagina] = useState(0)
@@ -62,7 +63,7 @@ export function Tabela<T>({ linhas, colunas, chave, aoAbrir, selecionada, porPag
         })}</tr></thead>
         <tbody>{visiveis.map(l => {
           const k = chave(l)
-          return <tr key={k} className={aoAbrir ? 'clicavel' : undefined} aria-selected={selecionada === k ? true : undefined}
+          return <tr key={k} className={[aoAbrir && 'clicavel', classeLinha?.(l)].filter(Boolean).join(' ') || undefined} aria-selected={selecionada === k ? true : undefined}
             onClick={aoAbrir ? (e) => { if ((e.target as HTMLElement).closest('a,button,input,select,label')) return; aoAbrir(l) } : undefined}>
             {colunas.map((c, i) => <td key={c.id} className={(c.numero ? 'num ' : '') + (c.soLargo ? 'so-largo' : '')} data-rotulo={c.rotuloCelular}>
               {i === 0 && aoAbrir ? <button type="button" className="a3-tabela__abrir" onClick={() => aoAbrir(l)}>{c.celula(l)}</button> : c.celula(l)}

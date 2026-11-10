@@ -3,7 +3,7 @@ import { rotuloEtapa, rotuloProva } from '../../conta/perfilEstudo'
 import { acertoAposRevisao, acertoReal, baixarCsv, data as dataAntiga, rotuloPagina, somarAcertos } from '../../componentes/admin/formatos'
 import { rotuloPlano } from '../../componentes/admin/rotulos'
 import { servicoConhecido } from '../../componentes/admin/servicosConhecidos'
-import { planosEmDestaque, textoPlanos, viuPlanos } from '../../componentes/admin/sinais'
+import { indicacaoEmDestaque, planosEmDestaque, textoPlanos, viuPlanos } from '../../componentes/admin/sinais'
 import { usarPainel } from '../dados/painel'
 import { DICA_FILTRO, MINIMO_PARA_ACERTO, ROTULO_FILTRO, acertoDe, nomeDe, passaFiltro, type LinhaUsuario } from '../dados/pessoas'
 import { usarNav } from '../nav'
@@ -45,6 +45,7 @@ export default function Explorador() {
           <span className="a3-nome">{nomeDe(u)}</span>
           <span className="a3-sub">{u.email ?? 'conta sem e-mail'}</span>
           <span style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+            {indicacaoEmDestaque(s?.indicacao_ultima) && <span className="a3-tag a3-tag--indicacao" title={`Última visita: ${haQuanto(s?.indicacao_ultima)}`}>Viu Indique e ganhe em 24 h</span>}
             {u.administrador && <Selo solido>Admin</Selo>}
             {u.plano_vigente && <Selo tom="ok">{rotuloPlano(u.plano_vigente)}</Selo>}
             {s && viuPlanos(s) && !u.plano_vigente && !u.administrador && <Selo tom={planosEmDestaque(s.planos_ultima) ? 'aviso' : undefined}>{textoPlanos(s)}</Selo>}
@@ -89,6 +90,7 @@ export default function Explorador() {
       {DICA_FILTRO[filtro] && <div style={{ padding: '0 20px 14px' }}><Faixa>{DICA_FILTRO[filtro]}{filtro === 'planos' && !p.sinaisQ.dados ? ' Para ver quem abriu os planos, cole no Supabase a parte 25.' : ''}</Faixa></div>}
       {!usuarios ? <div style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="A lista de pessoas não carregou" texto={p.erroDados} /> : <Carregando linhas={8} texto="Carregando as pessoas…" />}</div> :
         <Tabela key={`${filtro}-${ordemInicial}`} rotulo="Pessoas" linhas={visiveis} colunas={colunas} chave={u => u.id_usuario} porPagina={50}
+          classeLinha={u => indicacaoEmDestaque(p.sinais.get(u.id_usuario)?.indicacao_ultima) ? 'a3-indicacao' : undefined}
           ordemInicial={{ coluna: ordemInicial, sentido: 'desc' }} aoAbrir={u => nav.abrirPessoa(u.id_usuario)}
           vazio={<div style={{ padding: 20 }}><Estado icone="pessoas" titulo="Ninguém neste recorte" texto={busca ? 'Tente outro nome, e-mail, serviço ou cidade.' : 'Nenhuma conta passa por este filtro agora.'} /></div>} />}
       {usuarios && <div className="a3-paginacao" style={{ borderTop: 0 }}><span><SeloQualidade q="confirmado" /> Inclui quem não aparece no ranking público. Acerto com menos de {MINIMO_PARA_ACERTO} respostas aparece apagado.</span></div>}

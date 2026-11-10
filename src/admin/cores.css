@@ -876,3 +876,12 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
   .cl__botoes { grid-column: 1 / -1; justify-content: stretch; }
   .cl__botoes .a3-botao { flex: 1; justify-content: center; }
 }
+
+/* Indique e ganhe: destaque durante 24 h da última visita (Tales, 10/11/2026).
+   Azul prevalece no fundo; o selo dos planos e o plano da pessoa continuam visíveis. */
+.a3 { --cor-indicacao: #2463a8; --cor-indicacao-veu: #edf5ff; --cor-indicacao-texto: #164f88; }
+:root[data-tema="escuro"] .a3 { --cor-indicacao: #8fc2ff; --cor-indicacao-veu: #172d45; --cor-indicacao-texto: #b6d8ff; }
+.a3-pessoas-lista > li.a3-indicacao, .a3-tabela tbody tr.a3-indicacao, .a3-tabela tbody tr.a3-indicacao:hover,
+.a3-gaveta__cabeca.a3-indicacao { --c: var(--cor-indicacao); background: var(--cor-indicacao-veu); }
+.a3-tag--indicacao { background: var(--cor-indicacao-veu); color: var(--cor-indicacao-texto); box-shadow: inset 0 0 0 1px var(--cor-indicacao); }
+li.a3-indicacao .a3-pessoa-linha .a3-avatar { background: var(--cor-indicacao-veu); color: var(--cor-indicacao-texto); box-shadow: inset 0 0 0 1.5px var(--cor-indicacao); }

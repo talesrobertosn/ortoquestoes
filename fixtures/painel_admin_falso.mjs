@@ -85,6 +85,7 @@ export const rpcs = {
   listar_usuarios_admin: () => usuarios,
   cobrancas_admin: () => cobrancasReais,
   serie_diaria_admin: (a) => serie.slice(-(a.p_dias ?? 30)),
+  visitas_indicacao_admin: () => [],
   sinais_usuarios_admin: () => [
     { id_usuario: u(1).id_usuario, planos_vezes: 3, planos_ultima: iso(agora - Math.min(2 * HORA, desdeMeiaNoiteSP / 2)), condicoes_ultima: null, flashcards_unicos: 0, flashcards_7d: 0, flashcards_ultima: null, cripta_andar: null, locais_trabalho: null },
     { id_usuario: u(2).id_usuario, planos_vezes: 0, planos_ultima: null, condicoes_ultima: null, flashcards_unicos: 40, flashcards_7d: 25, flashcards_ultima: iso(agora - 10 * MIN), cripta_andar: 7, locais_trabalho: null },

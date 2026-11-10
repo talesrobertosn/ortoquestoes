@@ -9,6 +9,8 @@ export interface SinalUsuario {
   /** Aberturas da página de planos (/assinatura) nos últimos 30 dias. */
   planos_vezes: number
   planos_ultima: string | null
+  /** Última visita a Indique e ganhe, consultada no histórico das últimas 24 h. */
+  indicacao_ultima?: string | null
   /** Última abertura das Condições da Assinatura (passo antes do checkout). */
   condicoes_ultima: string | null
   flashcards_unicos: number
@@ -58,8 +60,20 @@ export function textoPlanos(s: Pick<SinalUsuario, 'planos_ultima' | 'planos_veze
 }
 
 /** Mapa por id, para a lista consultar cada pessoa sem percorrer tudo. */
-export function indexarSinais(lista: SinalUsuario[] | null | undefined): Map<string, SinalUsuario> {
-  return new Map((lista ?? []).map((s) => [s.id_usuario, s]))
+export function indicacaoEmDestaque(ultima: string | null | undefined, agora = Date.now()): boolean {
+  const t = ultima ? new Date(ultima).getTime() : NaN
+  return Number.isFinite(t) && t <= agora && agora - t < PLANOS_DESTAQUE_MS
+}
+
+export interface VisitaIndicacao { id_usuario: string; indicacao_ultima: string }
+
+export function indexarSinais(lista: SinalUsuario[] | null | undefined, indicacoes: VisitaIndicacao[] = []): Map<string, SinalUsuario> {
+  const mapa = new Map((lista ?? []).map((s) => [s.id_usuario, { ...s }]))
+  for (const visita of indicacoes) {
+    const sinal = mapa.get(visita.id_usuario) ?? { id_usuario: visita.id_usuario, planos_vezes: 0, planos_ultima: null, condicoes_ultima: null, flashcards_unicos: 0, flashcards_7d: 0, flashcards_ultima: null, cripta_andar: null, locais_trabalho: null }
+    mapa.set(visita.id_usuario, { ...sinal, indicacao_ultima: visita.indicacao_ultima })
+  }
+  return mapa
 }
 
 /**
