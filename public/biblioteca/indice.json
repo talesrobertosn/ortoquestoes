@@ -12878,6 +12878,156 @@
    ]
   },
   {
+   "id": "green-tumores-mao",
+   "versao": 1,
+   "titulo": "Tumores da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 83), o Dahlin's Bone Tumors, 6ª ed. (2010), e o HEBERT, 5ª ed.",
+   "capitulo": "Capítulo 59 · Bone and Soft Tissue Tumors (com o capítulo 58, Skin Tumors of the Hand and Upper Extremity)",
+   "resumo": "Cisto sinovial é o tumor de partes moles mais comum e o tumor de células gigantes da bainha o segundo (recidiva maior na IFD, com artrose e erosão óssea); cisto mucoso se trata com excisão do cisto e do osteófito; tumor glômico é dor intensa, ponto doloroso e intolerância ao frio, subungueal, 1% a 5% dos tumores da mão; schwannoma se enuclea, neurofibroma é o da doença de VON RECKLINGHAUSEN, hamartoma lipofibromatoso é do mediano; encondroma é o tumor ósseo mais comum, na falange proximal; osteocondroma na região distal da falange proximal; lesão de NORA sem continuidade medular; cisto ósseo aneurismático no metacarpo; condrossarcoma é o maligno ósseo primário mais comum e vai ao pulmão; metástase acral vem do pulmão; ENNEKING IIA é alto grau intracompartimental e IIB extracompartimental; sarcoma na falange média pede ressecção do raio; sarcoma sinovial no carpo, calcificação em 20% a 30%; carcinoma espinocelular é o maligno de pele mais comum da mão e do perioníquio, no polegar, com a ceratose actínica de precursora; carcinoma basocelular agressivo no local e raramente metastático; melanoma lentiginoso acral, sinal de HUTCHINSON, biópsia após 2 meses, margem de 1 cm até 1 mm de BRESLOW.",
+   "acesso": "gratis",
+   "minutos": 42,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "estadiamento-a-classificacao-de-enneking",
+     "titulo": "Estadiamento: a classificação de ENNEKING",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avaliacao-e-biopsia-o-que-fazer-antes-de-cortar",
+     "titulo": "Avaliação e biópsia: o que fazer antes de cortar",
+     "radar": "clinico"
+    },
+    {
+     "id": "margens-na-mao-por-que-o-raio",
+     "titulo": "Margens na mão: por que o raio",
+     "radar": "clinico"
+    },
+    {
+     "id": "cisto-sinovial-e-cisto-mucoso",
+     "titulo": "Cisto sinovial e cisto mucoso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "outras-massas-benignas-de-partes-moles",
+     "titulo": "Outras massas benignas de partes moles",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumor-glomico",
+     "titulo": "Tumor glômico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumores-de-nervo",
+     "titulo": "Tumores de nervo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sarcomas-de-partes-moles",
+     "titulo": "Sarcomas de partes moles",
+     "radar": "clinico"
+    },
+    {
+     "id": "encondroma-e-as-encondromatoses",
+     "titulo": "Encondroma e as encondromatoses",
+     "radar": "confirmado"
+    },
+    {
+     "id": "osteocondroma-lesao-de-nora-e-as-lesoes-de-super",
+     "titulo": "Osteocondroma, lesão de NORA e as lesões de superfície",
+     "radar": "clinico"
+    },
+    {
+     "id": "osteoma-osteoide-cisto-osseo-aneurismatico-e-tum",
+     "titulo": "Osteoma osteoide, cisto ósseo aneurismático e tumor de células gigantes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumores-osseos-malignos-e-metastases",
+     "titulo": "Tumores ósseos malignos e metástases",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumores-de-pele-lesoes-pre-malignas-e-carcinomas",
+     "titulo": "Tumores de pele: lesões pré-malignas e carcinomas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "melanoma",
+     "titulo": "Melanoma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0459",
+    "mao-0737",
+    "mao-1864",
+    "mao-0725",
+    "mao-1128",
+    "mao-1866",
+    "mao-0638",
+    "mao-1203",
+    "mao-1551",
+    "mao-0754",
+    "mao-0951",
+    "mao-1021",
+    "mao-1554",
+    "mao-1468",
+    "mao-0801",
+    "mao-1340",
+    "mao-0851",
+    "mao-1122",
+    "mao-1404",
+    "mao-1070",
+    "mao-1358",
+    "mao-1392",
+    "mao-1408",
+    "mao-1309",
+    "mao-1600"
+   ],
+   "treino": [
+    "mao-2187",
+    "mao-2380",
+    "mao-1732",
+    "mao-2327",
+    "mao-2274",
+    "mao-2202",
+    "mao-2185",
+    "mao-2541",
+    "mao-2016",
+    "mao-2184",
+    "mao-2183",
+    "mao-2186",
+    "mao-1731",
+    "mao-2275",
+    "mao-2014",
+    "mao-2469",
+    "mao-2451",
+    "mao-2328",
+    "mao-2054",
+    "mao-2118",
+    "mao-2273",
+    "mao-2117",
+    "mao-2423",
+    "mao-2525"
+   ],
+   "subtemas": [
+    "Tumores da mão"
+   ]
+  },
+  {
    "id": "green-tunel-carpo",
    "versao": 1,
    "titulo": "Síndrome do túnel do carpo",
