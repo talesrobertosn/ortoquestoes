@@ -36,6 +36,7 @@ ROBOTS = f"""User-agent: *
 Allow: /
 
 Sitemap: {SITE}sitemap.xml
+Sitemap: {SITE}sitemap-imagens.xml
 """
 
 
