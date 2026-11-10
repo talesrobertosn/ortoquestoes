@@ -1,6 +1,6 @@
 ---
 id: rockwood10-36-umero-proximal
-versao: 1
+versao: 2
 titulo: Fratura do úmero proximal
 especialidade: trauma
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 36 · Proximal Humeral Fractures
 autores: Antonio M. Foruria, Natalia Martinez-Catalan e Joaquin Sanchez-Sotelo
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (umero_proximal.pdf, 58 páginas)
-subtemas: Fratura do úmero proximal; Fraturas do úmero proximal e da escápula
-resumo: Neer, Hertel e Mayo/FJD, irrigação da cabeça, placa bloqueada e calcar, haste, reversa e hemiartroplastia, e as complicações: o úmero proximal explicado pelo que a prova cobra.
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (umero_proximal.pdf, 58 páginas). Osteonecrose da cabeça conferida em 10/11/2026 no Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 13 (p. 604 a 607) e cap. 14 (p. 630 e 632), e no HEBERT, 5ª ed., cap. 45.
+subtemas: Fratura do úmero proximal; Fraturas do úmero proximal e da escápula; Osteonecrose da cabeça umeral
+resumo: Neer, Hertel e Mayo/FJD, irrigação da cabeça, placa bloqueada e calcar, haste, reversa e hemiartroplastia, e as complicações: o úmero proximal explicado pelo que a prova cobra. Osteonecrose: corticoide, falciforme e álcool; CRUESS III é o colapso subcondral; hemi com glenoide íntegra, total no V, reversa com grande dorsal sem tubérculo maior.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -601,3 +601,93 @@ A fratura do úmero proximal é **4% a 10%** de todas as fraturas e cerca de **m
 - Punho e mão desde o início; passivos do ombro por volta de **2 semanas** (deitado no começo) e **pendulares de Codman** (até cerca de 90° de elevação); **ativo-assistidos com 6 semanas**; fortalecimento com **3 meses**.
 
 Sem desvio, 80% a 90% vão bem. Nas desviadas, a elevação fica em geral entre 90° e 120°, mas a percepção de qualidade de vida pode ser parecida com a das sem desvio, sobretudo nos mais idosos.
+
+# Osteonecrose da cabeça umeral: causas, CRUESS e tratamento por estágio {radar=confirmado}
+
+Aqui a osteonecrose vira tema próprio, como as provas de ombro cobram: de onde vem, como se classifica pelo colapso e o que se faz em cada estágio. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36, seção Osteonecrosis), define a doença pelo mecanismo: a **irrigação da superfície articular e do osso subcondral falha**, esse osso sofre alterações involutivas e o resultado é **colapso articular e fibrose**. O colapso pode ser total ou parcial, e os sintomas variam muito.
+
+## O que os livros dizem da irrigação e de HERTEL
+
+O Rockwood e o HEBERT concordam no essencial: a cabeça depende da circunflexa anterior, com o ramo ascendente que vira **artéria arqueada**, e da **circunflexa posterior**. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 45, Fig. 45.45), acrescenta a contribuição das artérias **supraescapular, toracoacromial e subescapular** pelos músculos do manguito, e diz que a necrose é frequente nas fraturas cominutivas, sobretudo nas de **quatro partes com desvio medial da diáfise**.
+
+Onde eles se afastam é na leitura de HERTEL. O Rockwood (seção anterior) dá três preditores independentes de isquemia: extensão metafisária de **8 mm ou menos**, **dobradiça medial rompida** e traço no **colo anatômico**, e diz que a cabeça partida **não** foi preditor independente. O HEBERT (cap. 45) descreve outros três fatores: fratura que compromete o calcar ou a cortical medial **em mais de 8 mm** (risco de lesão da circunflexa posterior), o **número de fragmentos** e a **fratura da cabeça (head split)**.
+
+!tabela HERTEL em dois livros (Rockwood adulto, cap. 36; HEBERT, cap. 45)
+| Ponto | Rockwood adulto 10ª ed. | HEBERT 5ª ed. |
+| --- | --- | --- |
+| Medida do calcar | extensão metafisária presa à cabeça de 8 mm ou menos | comprometimento do calcar ou da cortical medial em mais de 8 mm |
+| Segundo fator | dobradiça medial rompida | número de fragmentos |
+| Terceiro fator | traço no colo anatômico | fratura da cabeça (head split) |
+| Cabeça partida | não foi preditor independente | é um dos três fatores |
+!fim
+
+O 8 mm aparece nos dois; muda o que se mede. "Extensão metafisária" é Rockwood; head split entre os fatores é HEBERT.
+
+## Causas: depois da fratura e sem trauma
+
+A **pós-traumática** é a forma que o capítulo de fraturas estuda. Na série de BOILEAU citada pelo Rockwood (203 sequelas de fratura tratadas com prótese), o **colapso ou a necrose da cabeça** foi a sequela mais comum: **137 casos (67,5%)**, contra 12,3% de luxações irredutíveis, 10,8% de pseudartroses e 9,4% de viciosas graves dos tubérculos.
+
+A **atraumática** está no Campbell's Operative Orthopaedics, 15ª ed. (cap. 13, Shoulder Arthroplasty, p. 604). As causas mais comuns são o **uso pesado de corticoide**, a **doença falciforme** e o **alcoolismo**; menos comuns, o **disbarismo**, a doença de GAUCHER e o **lúpus**. A forma **idiopática** também é bastante comum. O Campbell lembra que esses pacientes costumam ser **jovens e com bom osso**, o que pesa na escolha do implante.
+
+## A classificação de CRUESS
+
+CRUESS dividiu a osteonecrose da cabeça umeral em **cinco estágios de gravidade crescente** (Campbell, cap. 13, p. 604 e Fig. 13.14, p. 605). A lógica é a do colapso: primeiro o osso morre sem mudar de forma, depois **o osso subcondral cede**, depois a cartilagem e, por fim, a glenoide. A linha que separa o II do III é a mais cobrada: **no II a cabeça ainda é esférica; no III o osso subcondral colapsa ou fratura e a esfericidade se perde**.
+
+!tabela Estágios de CRUESS (Campbell 15, cap. 13, p. 604 e 605, Fig. 13.14)
+| Estágio | O que se vê | Forma da cabeça |
+| --- | --- | --- |
+| I | nada na radiografia nem no aspecto macroscópico | normal |
+| II | esclerose e sinais de remodelação óssea | forma e esfericidade mantidas |
+| III | **colapso ou fratura do osso subcondral** | perde a esfericidade |
+| IV | área da superfície articular colapsada; um fragmento pode se desviar para dentro da articulação | deformada |
+| V | alterações artrósicas na glenoide | artrose dos dois lados |
+!fim
+
+!figura 13.14 imagem=ombro-cotovelo/campbell15-13-14.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 13, Fig. 13.14, p. 605. Os cinco estágios de CRUESS: no II a área necrótica (rosa) está dentro de uma cabeça ainda redonda; no III a linha tracejada marca o contorno perdido pelo colapso subcondral; no IV a superfície colapsada encosta numa glenoide ainda lisa; no V a glenoide também está gasta.
+!fim
+
+Nem o Rockwood adulto (cap. 36) nem o HEBERT trazem a classificação de CRUESS; entre os livros conferidos, ela está só no Campbell.
+
+!questoes central=ombro-cotovelo-0553
+conceito: No CRUESS, o estágio III é o colapso ou a fratura do osso subcondral com perda da esfericidade; o II tem esclerose e remodelação com a cabeça ainda esférica; o IV tem superfície articular colapsada e pode ter fragmento desviado na articulação; o V tem artrose da glenoide.
+como: O CET-PR perguntou o que caracteriza o tipo 3 e pôs como alternativas as descrições dos outros estágios: esclerose e remodelação (II) e fragmento desviado intra-articular (IV), mais corpos livres.
+armadilha: Alterações escleróticas e remodelação óssea: é o estágio II, em que a cabeça ainda é redonda.
+armadilha: Fragmento desviado intra-articular: é o IV, quando a superfície já colapsou e um pedaço pode se soltar.
+!fim
+
+## Clínica e imagem
+
+A história e a radiografia já foram descritas acima (dor depois de um intervalo bom; da esclerose em placas ao colapso). O Rockwood (cap. 36) acrescenta que a **TC e a RM** mostram a extensão do acometimento, mas rendem menos quando há **material de síntese**. O Campbell (p. 604) dá o dado que orienta a conduta: nos estágios **IV e V a progressão sintomática é quase certa**.
+
+## Tratamento por estágio
+
+!tabela O que fazer em cada fase (Rockwood adulto, cap. 36; Campbell 15, cap. 13, p. 604 a 606)
+| Situação | Conduta | Fonte |
+| --- | --- | --- |
+| Pouco sintoma | acompanhar | Rockwood |
+| Alteração inicial | descompressão central, ocasionalmente | Rockwood |
+| Colapso com glenoide íntegra | hemiartroplastia | Rockwood; Campbell |
+| Glenoide gasta; estágio V | total anatômica | Rockwood; Campbell |
+| Tubérculos sem consolidar, viciosos ou reabsorvidos, no mais idoso | reversa | Rockwood; Campbell |
+| Depois de placa bloqueada | revisar cedo | Rockwood |
+| Sem tubérculo maior, sem elevação e sem rotação externa | reversa com grande dorsal | Rockwood |
+!fim
+
+Os dois livros olham pacientes diferentes. O Rockwood trata a necrose depois da fratura e elege a **hemiartroplastia** para a necrose isolada, sem problema nos tubérculos. O Campbell (p. 604 e 605) trata sobretudo a atraumática: total e hemi deram melhora subjetiva na maioria, a fixação **press-fit** do componente umeral é segura porque o osso é bom, e a glenoide entra conforme a cartilagem; com cartilagem glenoidal íntegra, **só a cabeça basta**, e a maioria dos casos em **estágio V precisa de glenoide** pela artrose bipolar. As séries comparativas não acharam diferença entre total e hemi na necrose atraumática, mas alguns autores viram **mais reoperação na total**. O Campbell não descreve a descompressão para o ombro; quem a cita, como exceção, é o Rockwood.
+
+## Tubérculo maior perdido: a reversa não basta
+
+Quando a necrose atinge o **tubérculo maior**, o problema deixa de ser só a cartilagem: some a inserção do manguito posterossuperior. O Rockwood (cap. 36) dá três salvamentos, um para cada déficit, e a lógica fica clara com o Campbell.
+
+A **reversa** devolve a **elevação** porque cria um fulcro fixo em que o deltoide trabalha mesmo sem manguito (Campbell, cap. 13, p. 606, Fig. 13.15); a lista de indicações inclui a **ausência dos tubérculos** e a viciosa do tubérculo maior. Mas ela não recria rotadores externos: o próprio Campbell (p. 607 aprox.) diz que a **infiltração gordurosa ou a ausência do redondo menor** compromete o resultado da reversa. A **transferência do grande dorsal**, sozinha, devolve **rotação externa ativa** (o tendão, inserido no assoalho do sulco bicipital e inervado pelo toracodorsal, age como depressor da cabeça ou como tenodese em rotação externa), mas o Campbell (cap. 14, p. 630) a indica isolada só **sem pseudoparalisia**, com pouca artrose e subescapular íntegro. O **trapézio inferior** (p. 632) também serve à rotação externa e não devolve elevação.
+
+Juntando: sem elevação e sem rotação externa, nenhum dos dois procedimentos isolados resolve, e o salvamento é a **reversa associada à transferência do grande dorsal**.
+
+!questoes relacionadas=trauma-0329
+conceito: Na necrose do tubérculo maior depois da fratura do úmero proximal, com perda da elevação e da rotação lateral ativas, o salvamento é a reversa associada à transferência do grande dorsal; a reversa sozinha devolve a elevação e o trapézio inferior sozinho, a rotação externa.
+como: O TEOT 2023 pôs os três salvamentos do Rockwood como alternativas, mais a hemiartroplastia. A mesma questão aparece no acervo de trauma (`trauma-0329`, na seção Necrose dos tubérculos).
+armadilha: Hemiartroplastia: depende da consolidação dos tubérculos; sem o tubérculo maior, o resultado é ruim e a elevação não volta.
+armadilha: Reversa isolada: devolve a elevação pelo deltoide, mas sem manguito posterior não há rotação externa ativa.
+armadilha: Trapézio inferior: devolve a rotação externa, mas não a elevação.
+!fim

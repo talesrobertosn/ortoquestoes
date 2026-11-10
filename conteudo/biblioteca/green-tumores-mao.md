@@ -1,0 +1,507 @@
+---
+id: green-tumores-mao
+versao: 1
+titulo: Tumores da mão
+especialidade: mao
+acesso: gratis
+livro: Green's Operative Hand Surgery
+edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 83), o Dahlin's Bone Tumors, 6ª ed. (2010), e o HEBERT, 5ª ed.
+capitulo: Capítulo 59 · Bone and Soft Tissue Tumors (com o capítulo 58, Skin Tumors of the Hand and Upper Extremity)
+autores: Edward A. Athanasian (cap. 59) e David T. Netscher (cap. 58)
+fonte: Livros conferidos localmente em 09/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 59 (Bone and Soft Tissue Tumors), p. 1987 a 2032, com as tabelas 59.1 a 59.4 e a figura 59.4; cap. 58 (Skin Tumors of the Hand and Upper Extremity), p. 1958 a 1985; cap. 9 (Perionychium), p. 334 a 336 (granuloma piogênico, tumor glômico, carcinoma espinocelular e melanoma da unha); cap. 60 (Vascular Disorders of the Hand), p. 2056 a 2058 (tumor glômico); Campbell's Operative Orthopaedics, 15ª ed., cap. 83 (Tumors and Tumorous Conditions of the Hand), p. 3567 a 3598, nas seções cobradas pelas questões (páginas "aprox." inferidas pelo deslocamento do capítulo); Dahlin's Bone Tumors, 6ª ed. (2010), cap. 2, p. 9, 18 e 19, cap. 3, p. 22 a 24, e cap. 6, p. 66 e 73; Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 7 (pág. PDF 567 a 575, sem página impressa no texto extraído). As páginas citadas são as impressas.
+subtemas: Tumores da mão
+resumo: Cisto sinovial é o tumor de partes moles mais comum e o tumor de células gigantes da bainha o segundo (recidiva maior na IFD, com artrose e erosão óssea); cisto mucoso se trata com excisão do cisto e do osteófito; tumor glômico é dor intensa, ponto doloroso e intolerância ao frio, subungueal, 1% a 5% dos tumores da mão; schwannoma se enuclea, neurofibroma é o da doença de VON RECKLINGHAUSEN, hamartoma lipofibromatoso é do mediano; encondroma é o tumor ósseo mais comum, na falange proximal; osteocondroma na região distal da falange proximal; lesão de NORA sem continuidade medular; cisto ósseo aneurismático no metacarpo; condrossarcoma é o maligno ósseo primário mais comum e vai ao pulmão; metástase acral vem do pulmão; ENNEKING IIA é alto grau intracompartimental e IIB extracompartimental; sarcoma na falange média pede ressecção do raio; sarcoma sinovial no carpo, calcificação em 20% a 30%; carcinoma espinocelular é o maligno de pele mais comum da mão e do perioníquio, no polegar, com a ceratose actínica de precursora; carcinoma basocelular agressivo no local e raramente metastático; melanoma lentiginoso acral, sinal de HUTCHINSON, biópsia após 2 meses, margem de 1 cm até 1 mm de BRESLOW.
+---
+
+# Como ler este capítulo {radar=fundamento}
+
+Este resumo é inspirado em dois capítulos vizinhos do Green's Operative Hand Surgery, 7ª edição (2017): o capítulo 59 (Bone and Soft Tissue Tumors, de Edward A. ATHANASIAN), que é o eixo, e o capítulo 58 (Skin Tumors of the Hand and Upper Extremity, de David T. NETSCHER). O tumor glômico e os tumores da unha foram lidos também nos capítulos 60 e 9 do mesmo livro. Onde as questões pedem, entram o capítulo 83 do Campbell's Operative Orthopaedics, 15ª ed. (Tumors and Tumorous Conditions of the Hand, de James H. CALANDRUCCIO), o Dahlin's Bone Tumors, 6ª ed. (encondroma, condrossarcoma e lesão de NORA), e o HEBERT, 5ª ed. As páginas citadas são as impressas.
+
+A ideia que organiza tudo está na primeira página do capítulo 59: tumor na mão é **incomum, quase sempre benigno, e por isso mesmo perigoso**. O cirurgião vê cem cistos sinoviais e, no dia em que aparece o sarcoma, trata como cisto. O Green escreve que em nenhuma outra área da cirurgia da mão a decisão desinformada custa tão caro, e que **a função vem depois da sobrevida**. Daí as três perguntas que o capítulo ensina a fazer diante de qualquer massa: o que é (diagnóstico, com biópsia bem planejada se a clínica e a imagem não bastarem), onde está (estadiamento) e com que margem sai.
+
+> **Na prova:** tumor glômico = **dor intensa, ponto doloroso e frio**; encondroma = **falange proximal**; condrossarcoma = **maligno ósseo primário mais comum**, metástase no **pulmão**; carcinoma espinocelular = **maligno de pele mais comum da mão e do perioníquio**; sarcoma na falange média = **ressecção do raio**; ENNEKING **IIB = alto grau extracompartimental**.
+
+# Estadiamento: a classificação de ENNEKING {radar=confirmado}
+
+## Grau, local e metástase
+
+O Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 1988), parte de três perguntas. A primeira é o **grau histológico (G)**: G0 é benigno; **G1 é baixo grau** (poucas células, muito estroma, pouca necrose, células maduras, menos de 5 mitoses por campo); **G2 é alto grau** (muitas células, pouco estroma, muita necrose, células imaturas, mais de 10 mitoses por campo). O baixo grau recidiva no local com frequência e metastatiza pouco; o alto grau dá metástases hematogênicas com frequência. O grau não sai só do microscópio: patologista e cirurgião o combinam olhando também a clínica e a radiografia, e o livro manda classificar o **sarcoma sinovial e o sarcoma epitelioide em grau mais alto** do que a histologia sugeriria, porque são excepcionalmente perigosos (p. 1989).
+
+A segunda pergunta é o **local (T)**. Compartimento é um espaço fechado por barreiras naturais que seguram o tumor por algum tempo. Um tumor intraósseo contido pelas corticais é **intracompartimental (T1)**; se perfurou para as partes moles, virou **extracompartimental (T2)**. Para as partes moles o conceito é menos limpo: um tumor que toca um tendão flexor no dedo já violou, em teoria, todo o compartimento dos extrínsecos, porque a bainha conduz o tumor para proximal como conduziria um hematoma (p. 1989). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3567), é mais concreto: na mão **cada raio é um compartimento** (as falanges com seus intrínsecos, o flexor até o espaço mediopalmar e o extensor até a metacarpofalângica) e **cada metacarpo é um compartimento**; tumor no espaço palmar ou no tecido frouxo do dorso é extracompartimental, porque nada o detém para proximal.
+
+A terceira é a **metástase (M)**. No sistema da Musculoskeletal Tumor Society (MSTS), proposto por ENNEKING na Universidade da Flórida e aceito em 1979, qualquer metástase, regional ou a distância, leva ao **estágio III**, não importam o grau e o local.
+
+!tabela Estágios cirúrgicos de ENNEKING para tumores malignos (Green 7, cap. 59, Tabela 59.1, p. 1988)
+| Estágio | Grau | Local | Metástase |
+| --- | --- | --- | --- |
+| IA | baixo (G1) | intracompartimental (T1) | não |
+| IB | baixo (G1) | extracompartimental (T2) | não |
+| IIA | alto (G2) | intracompartimental (T1) | não |
+| IIB | alto (G2) | extracompartimental (T2) | não |
+| III | qualquer | qualquer | regional ou a distância |
+!fim
+
+Os tumores **benignos** também têm três estágios (p. 1988): **1, latente** (não costuma precisar de tratamento); **2, ativo** (cresce contido por barreiras; excisão intralesional ou marginal resolve); **3, localmente agressivo** (ultrapassa as barreiras; pede margem ampla ou ressecção em bloco). O Campbell (p. 3567) dá os exemplos: cisto ósseo unicameral é latente, a maioria dos tumores benignos da mão é ativa, e o tumor de células gigantes do osso se comporta como agressivo.
+
+!questoes central=mao-0459 treino=mao-2187
+conceito: no ENNEKING o algarismo dá o grau e a letra dá o local: IA baixo grau intracompartimental, IB baixo grau extracompartimental, IIA alto grau (G2) intracompartimental (T1), IIB alto grau extracompartimental (T2), III qualquer um com metástase
+como: a SBCM 2022 pediu a definição do IIA; o Einstein 2026 pediu o estágio de alto grau e extracompartimental (IIB)
+armadilha: achar que o III é "alto grau e extracompartimental"; o III é definido só pela metástase, e o que separa A de B é a barreira anatômica, não o tamanho
+alerta: em `mao-2187` o enunciado fala em ENNEKING "modificado por STAHL"; no Green (p. 1988) STAHL aparece só como editor do livro de 1984 em que ENNEKING publicou a tabela, e a linha IB da Tabela 59.1 sai impressa com "T1" por erro tipográfico
+!fim
+
+## As quatro margens
+
+A linguagem de ENNEKING serve também para dizer por onde o bisturi passou. A Tabela 59.2 do Green (p. 1988) define quatro margens, e cada uma tem a versão com preservação do membro e a versão com amputação.
+
+!tabela Margens cirúrgicas para sarcomas das extremidades (Green 7, cap. 59, Tabela 59.2, p. 1988)
+| Margem | Por onde passa a dissecção | Preservando o membro | Amputando | O que o microscópio vê na margem |
+| --- | --- | --- | --- | --- |
+| intralesional | dentro do tumor | curetagem, ressecção aos pedaços | amputação através da lesão | tumor em todas as margens |
+| marginal | na zona reativa (pseudocápsula) | excisão marginal em bloco | amputação marginal | tecido reativo, às vezes com microextensões |
+| ampla | em tecido normal, dentro do compartimento | excisão ampla em bloco | amputação ampla através do osso | tecido normal, pode haver lesão saltada |
+| radical | em tecido normal, fora do compartimento | ressecção de todo o compartimento | desarticulação extra-articular | tecido normal |
+!fim
+
+# Avaliação e biópsia: o que fazer antes de cortar {radar=clinico}
+
+## A ordem dos exames
+
+O Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 1989 a 1991), insiste na ordem: **a biópsia é o último passo do diagnóstico**, depois de todos os exames não cirúrgicos (Figura 59.1). O motivo é prático: a biópsia altera a imagem (a ressonância perde valor numa região recém-operada) e contamina planos; quem biopsia sem estadiar pode ter de amputar o que seria poupado.
+
+## A técnica da biópsia
+
+!tabela Regras da biópsia aberta na mão e no antebraço (Green 7, cap. 59, p. 1991 e 1992, quadro Critical Points)
+| Passo | O que fazer | Por quê |
+| --- | --- | --- |
+| garrote | permitido; esvaziar o membro só por elevação, 1 a 2 minutos | a faixa de ESMARCH pode semear ou deslocar células |
+| anestesia | não usar bloqueio venoso de BIER | também exige exsanguinar o membro |
+| incisão | longitudinal, na linha da futura incisão de preservação ou do retalho de amputação | o trajeto está contaminado e sai em bloco com a peça |
+| o que evitar | incisão transversa, oblíqua e em zigue-zague de BRUNER | obrigam a ampliar a ressecção só para tirar a cicatriz |
+| planos | atravessar um só músculo ou plano, sem afastar | afastar contamina todos os planos vizinhos |
+| congelação | serve para confirmar que a amostra é adequada | raramente é segura para iniciar tratamento definitivo |
+| cultura | cultivar toda biópsia e mandar toda cultura para histologia | infecção e tumor se imitam |
+| fechamento | hemostasia perfeita; sem dreno, ou dreno na linha da incisão | hematoma leva células para longe |
+!fim
+
+A **biópsia excisional** (retirar a lesão inteira pela zona reativa) fica para lesões **muito pequenas, de menos de 1 a 2 cm**, como um tumor de células gigantes da bainha ou um lipoma típico; num tumor grande ela contamina um campo extenso e pode condenar o paciente à amputação.
+
+# Margens na mão: por que o raio {radar=clinico}
+
+## Os compartimentos não cabem na mão
+
+A ressecção radical de ENNEKING nem sempre se aplica à mão. O Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 1992 e 1993), explica: a maioria dos tumores da mão nasce em espaços, não em compartimentos; tirar "o compartimento" de um tumor que nasceu num flexor do dedo significaria ressecar toda a superfície flexora ou amputar acima do cotovelo. Por isso o livro aceita que uma **margem de 1 a 2 cm de tecido normal**, sobretudo em tumores sensíveis à adjuvância, pode ser segura e permitir reconstrução. A anatomia modula a decisão: a tenossinóvia flexora é **contínua no polegar e no mínimo** e não nos três dedos centrais, de modo que o tumor do flexor do mínimo tem caminho livre até o punho. E a reconstrução com tecido à distância só se faz por **transferência microcirúrgica**, porque um retalho pediculado pode carregar células pelo pedículo.
+
+## Nível por nível
+
+!tabela Nível de ressecção dos tumores malignos da mão (Green 7, cap. 59, p. 1993 a 1996; Campbell 15, cap. 83, p. 3568)
+| Local do tumor | Green | Campbell |
+| --- | --- | --- |
+| falange distal, partes moles | desarticulação na IFD ou mais proximal; se dorsal, palmar e osso, amputação pela falange média | amputação transdiafisária pela falange média |
+| falange distal, osso de baixo grau | manguito de 1 a 2 cm, o que exige corte pela falange média | amputação transdiafisária pela falange média |
+| falange distal com fratura patológica ou extensão extracompartimental | na IFP, proximal a ela ou ressecção do raio | sem equivalente |
+| falange média e região proximal à IFD | ressecção do raio; a desarticulação MF "raramente é segura, prática, funcional ou estética" | amputação transdiafisária pela falange proximal |
+| falange proximal | ressecção do raio | ressecção do raio |
+| polegar | distal à IF, amputação; na falange proximal, excisão ampla com reconstrução pode caber | sem equivalente |
+| metacarpos | 2º e 5º, ressecção do raio; com invasão de partes moles, também o raio vizinho | amputações adjacentes se grande e extracompartimental |
+| palma ou dorso, partes moles | amputação parcial da mão; centro da palma, três raios; borda, dois | IIB pode exigir amputação pelo terço distal do antebraço |
+| face volar do punho | em geral amputação; tentar poupar o mediano dentro do tumor só espalha a doença | sem equivalente |
+!fim
+
+O ponto que as bancas cobram é o da **falange média**. O raciocínio do Green (p. 1993): um tumor maligno e agressivo de partes moles nessa altura está encostado na bainha flexora e no aparelho extensor; a amputação teria de ser na metacarpofalângica ou no metacarpo. A desarticulação na metacarpofalângica até daria 2 a 3 cm de tecido normal, mas deixa um vão entre os dedos, perde objetos pequenos e fica feia; por isso **função e estética recomendam fortemente a ressecção do raio**, que leva o dedo e o metacarpo e fecha a mão. O livro repete a ideia na seção dos sarcomas (p. 2016): no dedo e na comissura **não se consegue margem ampla com facilidade**, e a amputação do dedo, do raio ou de vários raios costuma ser a melhor solução e funcionar melhor do que o salvamento do dedo.
+
+!figura 59.4 imagem=mao/green7-59-4.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 59, Fig. 59.4, p. 1993. Tumor maligno de partes moles na altura da falange média (área quadriculada) e o tecido que sai com ele (área pontilhada): o dedo inteiro e o metacarpo correspondente, ou seja, a ressecção do raio.
+!fim
+
+!questoes treino=mao-2380,mao-1732
+conceito: sarcoma de partes moles na falange média não permite margem ampla com excisão local; o Green indica amputação na MF ou no metacarpo e prefere a ressecção do raio por função e estética
+como: o SIMÃO 2022 perguntou o tratamento preferencial de um tumor maligno agressivo na falange média; o SIMÃO 2026 trouxe o caso de sarcoma de alto grau aderido à bainha flexora do anelar
+armadilha: escolher a excisão com 1 ou 2 cm de pele e retalho preservando tendões (margem contaminada pela bainha) ou a desarticulação na IFP (nível dentro da zona do tumor)
+alerta: o Campbell (cap. 83, p. 3568) aceita amputação transdiafisária pela falange proximal para tumor maligno da falange média; o gabarito de `mao-2380` e de `mao-1732` segue o Green (p. 1993)
+!fim
+
+# Cisto sinovial e cisto mucoso {radar=confirmado}
+
+## O tumor de partes moles mais comum
+
+O Green's Operative Hand Surgery, 7ª ed. (cap. 59, p. 1997 a 2001), abre as lesões benignas pelo **cisto sinovial (ganglion)**, o tumor de partes moles **mais comum da mão**. É um cisto cheio de mucina, preso à cápsula articular, ao tendão ou à bainha; predomina em **mulheres**, 70% entre a segunda e a quarta décadas; há um trauma identificável em pelo menos 10%. A parede é de colágeno comprimido com poucas células achatadas, **sem revestimento epitelial ou sinovial**; o conteúdo é mucina muito mais viscosa que o líquido articular, rica em ácido hialurônico. A artrografia mostra o contraste indo da articulação para o cisto e a cistografia não mostra o caminho inverso: daí a hipótese de uma **válvula de mão única**. **Nunca se relatou degeneração maligna**; o perigo é o contrário, o tumor maligno rotulado de cisto. Por isso o livro pede que o diagnóstico esteja firmado antes de uma incisão transversa, que não se incorpora a uma ressecção oncológica.
+
+!tabela Cistos sinoviais da mão e do punho (Green 7, cap. 59, p. 2001 a 2007)
+| Tipo | Frequência | Origem e posição | O que não esquecer |
+| --- | --- | --- | --- |
+| dorsal do punho | 60% a 70% | ligamento escafolunar; entre o extensor longo do polegar e o extensor comum | pedículo longo; excisar as inserções capsulares sem cortar o ligamento; não fechar a cápsula; flexão precoce |
+| dorsal oculto | variável | mesmo lugar, palpável só em flexão acentuada | dor desproporcional; ressonância ajuda |
+| volar do punho | 18% a 20% | radiocarpal ou escafotrapezial; entre o flexor radial do carpo e o abdutor longo | artéria radial colada ou envolvida; teste de ALLEN antes |
+| retinacular volar | 10% a 12% | polia A1; 3 a 8 mm, firme, na prega de flexão da MF | não se move com o tendão; punção e massagem antes de operar |
+| cisto mucoso | menos comum | IFD, entre a prega dorsal e o eponíquio | artrose e osteófitos; sulco na unha |
+| com bossa carpometacarpal | 30% das bossas | 2ª e 3ª carpometacarpais | a massa é óssea; o cisto é acompanhante |
+!fim
+
+## Cisto mucoso
+
+O **cisto mucoso** é um ganglion da **interfalângica distal**, da quinta à sétima décadas (Green, p. 2005 e 2006). O primeiro sinal pode ser um **sulco longitudinal na unha**, sem massa visível, pela pressão sobre a matriz. Depois aparece o cisto de 3 a 5 mm, de um lado do tendão extensor, com pele fina por cima. Quase sempre há **nódulos de HEBERDEN** e artrose na radiografia. A frase que decide a conduta é esta: **o cisto e os osteófitos devem ser tratados juntos** para um resultado satisfatório. O método preferido de ATHANASIAN é uma incisão transversa sobre a articulação, com excisão da base do cisto, dos osteófitos e da cápsula, deixando a porção distal e superficial, que involui em semanas (técnica de GINGRASS); assim se evitam os problemas de pele da excisão marginal clássica, que muitas vezes pedia retalho ou enxerto. A recidiva vem da excisão insuficiente das inserções capsulares e de extensões sob o tendão para o outro lado; a descompressão costuma **devolver a unha ao normal**.
+
+!questoes central=mao-0737
+conceito: cisto mucoso é o ganglion da IFD ligado à artrose; recidivado e com deformidade ungueal, trata-se com excisão cirúrgica do cisto junto com os osteófitos e a cápsula, o que alivia a matriz e normaliza a unha
+como: o IAUPE 2025 perguntou o tratamento de escolha do cisto mucoso recidivado com deformidade da unha
+armadilha: indicar aspiração e corticoide (a causa, o osteófito, continua lá) ou a artrodese da IFD, que não é o tratamento do cisto
+!fim
+
+# Outras massas benignas de partes moles {radar=confirmado}
+
+## Tumor de células gigantes da bainha tendínea
+
+É o **segundo tumor mais comum da mão**, depois do cisto sinovial (Green's Operative Hand Surgery, 7ª ed., cap. 59, p. 2012). O nome é ruim, admite o livro: a lesão nem sempre tem células gigantes e nem sempre nasce de uma bainha; os sinônimos são sinovite nodular localizada, xantoma fibroso e tenossinovite vilonodular pigmentada. Aparece na **face volar** dos dedos, com predileção pelos **três dedos radiais e pela região da interfalângica distal**. É firme, nodular, indolor e de crescimento lento; **não transilumina**, o que o separa do cisto. A radiografia pode mostrar a sombra da massa ou **erosão óssea por pressão**; invasão óssea verdadeira é rara e sugere algo mais agressivo.
+
+O tratamento é a **excisão marginal**, com recidiva de **5% a 50%** (o Green manda avisar o paciente de cerca de 30%), atribuída a lesões satélites ou a excisão incompleta. Os **fatores de risco estatisticamente significativos para recidiva** são três: **doença articular degenerativa, localização na interfalângica distal e erosão por pressão na radiografia**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3572), dá recidiva de 10% a 20%, chegando a 40%, e amplia a lista: artrose adjacente, localização na interfalângica distal dos dedos e na interfalângica do polegar, invasão óssea, doença multifocal e envolvimento do tendão. Os dois divergem no local típico: o Green fala em região da interfalângica distal e o Campbell em indicador e médio, muitas vezes junto à interfalângica proximal.
+
+!questoes treino=mao-2327
+conceito: tumor de células gigantes da bainha (tenossinovial) é o segundo tumor mais comum da mão; recidiva de 5% a 50% após excisão marginal, com três fatores de risco: artrose, localização na IFD e erosão óssea por pressão
+como: o SIMÃO 2024 pediu o achado que é fator de risco para recidiva local
+armadilha: marcar localização na palma, compressão do nervo digital ou tenossinovite associada, que não estão na lista do Green nem na do Campbell
+!fim
+
+## Cisto de inclusão epidermoide e lipoma
+
+O **cisto de inclusão epidermoide** nasce da implantação traumática de células epiteliais no subcutâneo ou no osso; cresce por meses ou anos e dá uma massa indolor, quase sempre na **ponta do dedo** (Green, p. 2009 e 2010). O perfil é o homem na terceira ou quarta década, com lesão na falange distal do médio esquerdo ou do polegar, às vezes depois de amputação da ponta. Quando entra no osso, a radiografia mostra lesão lítica bem demarcada na falange distal, que pode imitar tumor maligno ou infecção: **mais de um quarto dos casos relatados foi amputado antes do diagnóstico**. A lição é biopsiar toda lesão lítica da falange distal antes de qualquer cirurgia ablativa. Trata-se com excisão marginal, ou curetagem e enxerto se houver osso; não há malignização relatada.
+
+O **lipoma** é mole, indolor e **não transilumina**; pode estar no subcutâneo, no músculo, no túnel do carpo, no canal de GUYON ou no espaço palmar profundo, onde comprime nervo (Green, p. 2011). A ressonância mostra sinal igual ao da gordura subcutânea; lesão profunda deve ser estudada antes, e, se o sinal não for típico, faz-se biópsia incisional pequena. A excisão marginal costuma curar.
+
+## Granuloma piogênico
+
+O nome engana duas vezes: não é granuloma e não é infecção. O capítulo 58 do Green (p. 1970) o define como **proliferação de capilares no local de um trauma prévio**, muitas vezes banal; pode haver infecção associada, mas o processo não é infeccioso. A superfície é **friável e sangra ao menor toque**; é mais comum nas extremidades distais, e a resolução espontânea é rara. As lesões pequenas se tratam com **bastão de nitrato de prata** (Figura 58.19); as demais com excisão, eletrocirurgia ou laser, e a retirada incompleta recidiva. No capítulo 9 (p. 334 aprox.), a versão ungueal cresce através da unha depois de perfuração traumática ou iatrogênica; a cauterização repetida com nitrato de prata é o tratamento mais comum, e o diagnóstico diferencial inclui **carcinoma espinocelular e melanoma amelanótico**, de modo que a lesão persistente ou recidivante **precisa de biópsia**. O Campbell (p. 3598) diz que o nitrato de prata pode curar e que a excisão com a base vascular quase sempre resolve.
+
+## Fibroma digital da infância
+
+É uma lesão **benigna, mas muito agressiva**, vista quase só em dedos e artelhos, com **mais de 80% dos casos antes de 1 ano de idade** (Green, cap. 59, p. 2014). Fica na **região das articulações interfalângicas**; os nódulos são pequenos, em cúpula, da cor da pele e indolores. O microscópio mostra corpos de inclusão intracitoplasmáticos. Não há metástase, mas a recidiva após excisão é de cerca de **60%**, e há relatos de regressão espontânea; por isso o livro acha prudente observar até a resolução ou até os primeiros sinais de contratura ou desvio. O capítulo 58 (p. 1968) acrescenta que as lesões ficam nas pontas dos dedos, poupam o polegar e podem ser "em beijo" em dedos vizinhos.
+
+!questoes central=mao-1864 treino=mao-2274
+conceito: granuloma piogênico é proliferação capilar pós-trauma, friável e sangrante, tratada com nitrato de prata quando pequena; fibroma digital da infância é benigno e agressivo, surge antes de 1 ano na região das interfalângicas, pequeno e indolor, com recidiva de cerca de 60%
+como: o ENARE de Cirurgia da Mão 2023 descreveu tecido de granulação exuberante e sangrante na falange distal após ferida penetrante, tratado com nitrato de prata; a SBCM 2023 pediu a característica do fibroma digital da infância
+armadilha: no granuloma, esquecer que a lesão que persiste após cauterização pede biópsia (carcinoma espinocelular e melanoma amelanótico imitam); no fibroma, marcar "maligno pouco agressivo" ou "depois do primeiro ano"
+!fim
+
+# Tumor glômico {radar=confirmado}
+
+## O corpo glômico e a tríade
+
+O corpo glômico é uma anastomose arteriovenosa especializada da derme. O capítulo 60 do Green's Operative Hand Surgery, 7ª ed. (p. 2056), diz que ele participa da **termorregulação do fluxo microvascular**; o capítulo 9 (p. 334), que regula **fluxo e temperatura** no dedo; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3576), descreve um **receptor neuromioarterial** da derme reticular que funciona como derivação e regula a temperatura da pele. O tumor é a hiperplasia dessa estrutura. Como ela é rica em fibras nervosas amielínicas entre capilares de parede espessa, e como cresce no espaço inextensível entre a unha e a falange, o resultado é dor desproporcional ao tamanho: as lesões costumam ter poucos milímetros e quase sempre menos de 1 cm (Campbell, p. 3576 a 3578).
+
+A assinatura clínica é a tríade do Campbell: **dor, sensibilidade ao frio e dor em um ponto**. O Green (p. 2056) escreve que as lesões podem ser extremamente dolorosas, que qualquer pressão sobre elas dói e que pode haver **intensa sensibilidade ao frio**; todo paciente com dor na ponta do dedo ou no leito ungueal e unha muito dolorosa ao toque deve ser investigado. No capítulo 9, o Green acrescenta que pode haver uma **mancha azulada sob a unha** e que um cubo de gelo sobre o leito reproduz a dor.
+
+## Onde fica, quanto representa, como confirmar
+
+!tabela O que cada livro diz do tumor glômico (Green 7, cap. 60, p. 2056, e cap. 9, p. 334; Campbell 15, cap. 83, p. 3576 a 3578; HEBERT 5, cap. 7)
+| Ponto | Green, cap. 60 | Green, cap. 9 | Campbell | HEBERT |
+| --- | --- | --- | --- | --- |
+| frequência | 1% a 5% dos tumores da mão | não cita | "raro" | não cita |
+| localização | quase qualquer lugar; na mão, a mais comum é a subungueal | não se limita ao leito; 50% subungueais | 75% subungueais; até 25% fora da mão | na maioria das vezes subungueal |
+| sexo e idade | não cita | não cita | mulheres em 75%, média de 46 anos | mulheres na faixa dos 40 anos |
+| imagem | ressonância em geral diagnóstica, mas pode ser negativa | ultrassom e ressonância com muito sucesso | ressonância falso-negativa em 33% | pode haver erosão óssea por compressão |
+| tratamento | excisão, em geral curativa; enucleia-se sem deformidade | retirar a unha, incisão longitudinal no leito, enuclear; examinar todo o leito | excisão; mais de 2 cm sugere malignidade | ablação total, para evitar recidiva |
+!fim
+
+!questoes central=mao-0725 relacionadas=mao-1128,mao-1866,mao-0638
+conceito: tumor glômico é a tríade dor intensa, dor em um ponto à palpação e hipersensibilidade ao frio; nasce do corpo glômico (aparato neuromioarterial que regula temperatura e fluxo) e é subungueal na maioria dos casos da mão
+como: o IAUPE 2025 e o ENARE de Cirurgia da Mão 2023 pediram a tríade; a PUC-SP 2021 pediu a característica importante (sensibilidade ao frio); o TARO 2006 afirmou que a hiperalgesia é difusa no dedo
+armadilha: trocar frio por calor, ou dor em ponto por dor difusa; hiperemia, edema e parestesia não fazem parte do quadro
+alerta: `mao-0638` está sem gabarito; pelo Green (cap. 60, p. 2056), pelo Campbell (teste de LOVE, p. 3576) e pelo HEBERT a dor é bem localizada, logo a afirmativa de hiperalgesia difusa está errada. Em `mao-1866` o enunciado traz "sublingual" no lugar de subungueal
+!fim
+
+!questoes central=mao-1203 treino=mao-2202
+conceito: pelo Green, o tumor glômico representa 1% a 5% dos tumores da mão, pode estar em quase qualquer lugar (o mais comum é o subungueal), pode aparecer como mancha azulada sob a unha, e ultrassom e ressonância localizam bem a forma subungueal
+como: a SBCM 2023 pediu a afirmativa compatível com o Green (área azulada visível sob a lâmina ungueal); a PUC-SP 2023 montou quatro afirmativas sobre frequência, localização, sintomas e ressonância
+armadilha: "exclusivamente subungueal" e "obrigatoriamente sob a unha" são falsas; a sensibilidade é ao frio; a ressonância em geral é diagnóstica, embora possa ser negativa
+alerta: `mao-1203` está sem gabarito; a única afirmativa que o Green sustenta é a de 1% a 5% dos tumores das mãos (cap. 60, p. 2056), porque a alternativa dos sintomas troca frio por calor. Os livros divergem na proporção subungueal: 50% no cap. 9 do Green e 75% no Campbell
+!fim
+
+# Tumores de nervo {radar=confirmado}
+
+## Schwannoma
+
+O **schwannoma (neurilemoma)** é o **tumor benigno de nervo mais comum do membro superior** (Green's Operative Hand Surgery, 7ª ed., cap. 59, p. 2012). Nasce das células de SCHWANN e forma uma massa de crescimento lento, **bem circunscrita e excêntrica** em relação ao nervo. Aparece na face flexora do antebraço e da mão, da quarta à sexta décadas, como massa indolor; a percussão pode dar dor irradiada no território do nervo. O sinal clássico é a **mobilidade transversal sem mobilidade longitudinal**. É confundido com cisto sinovial com frequência, e a ressonância não o separa com segurança do neurofibroma nem do tumor maligno da bainha.
+
+Por ser excêntrico e encapsulado, o schwannoma **se enuclea** do nervo, com lupa ou microscópio, preservando os fascículos. O déficit neurológico pós-operatório fica entre **5% e 15%**, maior quando houve biópsia incisional prévia ou recidiva; a recidiva é incomum. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3580), descreve os dois padrões histológicos, **ANTONI A** (hipercelular, em paliçada, com os corpos de VEROCAY) e **ANTONI B** (hipocelular, mixoide), e avisa: se a massa não se solta do tronco nervoso ou está aderida aos tecidos vizinhos, pensar em outro diagnóstico ou em malignidade e fazer biópsia incisional.
+
+## Neurofibroma
+
+O **neurofibroma** nasce **dentro dos fascículos**, e por isso é mais difícil de tirar (Green, p. 2012). Pode ser solitário, mas os múltiplos são a marca da **neurofibromatose (doença de VON RECKLINGHAUSEN)**. Na operação vê-se um fascículo, ou um grupo, entrando e saindo da lesão: a excisão **exige seccionar esses fascículos**, e o déficit é mais comum que no schwannoma. Na neurofibromatose opera-se só o que cresce ou dá sintomas progressivos, porque o déficit pode progredir depois da cirurgia dos plexiformes e porque há **risco conhecido de degeneração maligna**: o Campbell (p. 3576) fala em 15% dos pacientes e o HEBERT em 10% a 15% quando o crescimento é rápido. O tumor maligno da bainha do nervo periférico tem 50% dos casos na neurofibromatose, cresce ao longo do nervo, recidiva mesmo após amputação e tem sobrevida de cerca de 40% em 5 anos (Green, p. 2019).
+
+## Hamartoma lipofibromatoso
+
+O **hamartoma lipofibromatoso (lipofibroma do nervo)** é um tumor raro de nervo periférico que, no membro superior, acomete **quase sempre o mediano**; o ulnar e o radial são exceções relatadas (Green, p. 2011 e 2012). Aparece na infância ou na adolescência como aumento lento do antebraço distal ou da palma, às vezes com sintomas compressivos. A **ressonância pode ser diagnóstica**: o Campbell (p. 3572) descreve feixes nervosos serpiginosos de baixo sinal mergulhados em gordura de alto sinal, e lembra que **um terço tem macrodactilia**. A conduta é conservadora: a dissecção interfascicular e a excisão parcial costumam deixar déficit permanente e devem ser evitadas; opera-se **só para descomprimir** o nervo (em regra, abrir o túnel do carpo), e, se a ressonância não fechar o diagnóstico, biopsia-se um ramo cutâneo.
+
+!questoes central=mao-1551 relacionadas=mao-0754 treino=mao-2185
+conceito: schwannoma é o tumor benigno de nervo mais comum do membro superior, lento, bem delimitado, excêntrico e enucleável; neurofibroma é o tumor da doença de VON RECKLINGHAUSEN, dentro dos fascículos; hamartoma lipofibromatoso acomete o nervo mediano
+como: a USP-SP 2026 pediu a afirmativa correta sobre schwannomas; o IAUPE 2025 pediu o tumor benigno de nervo ligado à doença de VON RECKLINGHAUSEN; a SBCM 2022 pediu o nervo mais acometido pelo hamartoma fibrolipomatoso
+armadilha: dizer que o schwannoma tem limites mal definidos ou que exige ressecção segmentar do nervo (isso descreve o neurofibroma); marcar neurilemoma ou schwannoma, que são o mesmo tumor, na pergunta da neurofibromatose
+alerta: em `mao-1551` a alternativa "não são descritos riscos de transformação maligna" repete a frase do HEBERT, mas o Green (p. 2012) registra raros relatos, o que sustenta o gabarito. Em `mao-2185` a expressão "cabo coaxial" não aparece no Green nem no Campbell; o nervo (mediano) está nos dois
+!fim
+
+# Sarcomas de partes moles {radar=clinico}
+
+## Quadro geral
+
+Os sarcomas de partes moles são raros na mão: só 15% deles ocorrem no membro superior (Green's Operative Hand Surgery, 7ª ed., cap. 59, p. 2015). O que prevê o comportamento é o **grau histológico**, mais do que a célula de origem. A apresentação é traiçoeira: **massa indolor**, presente há muito tempo, que cresceu recentemente; os diagnósticos errados mais comuns são **infecção, cisto sinovial e lipoma**. A regra do livro é que toda massa de partes moles sintomática, que cresce ou que o exame físico não explica deve ser biopsiada.
+
+Quais são os mais comuns na mão? O Green cita **sarcoma epitelioide, sarcoma sinovial e fibro-histiocitoma maligno**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3587 aprox.), põe na frente o fibro-histiocitoma maligno (sarcoma pleomórfico indiferenciado) e o epitelioide. O HEBERT (cap. 7) lista sarcoma sinovial, lipossarcoma, rabdomiossarcoma e fibrossarcoma, sem citar o epitelioide. Para a prova de mão, vale o Green.
+
+## Sarcoma epitelioide e sarcoma sinovial
+
+!tabela Os dois sarcomas de partes moles mais cobrados (Green 7, cap. 59, p. 2015 a 2017; Campbell 15, cap. 83, p. 3589 aprox.)
+| Aspecto | Sarcoma epitelioide | Sarcoma sinovial |
+| --- | --- | --- |
+| frequência | relatado como o sarcoma de partes moles mais comum do antebraço e da mão | entre os mais comuns da mão |
+| local | face volar dos dedos ou da palma | região do carpo; raro nos dedos |
+| apresentação | nódulo indolor que pode ulcerar | massa indolor no dorso ou na palma, às vezes há muitos anos |
+| ritmo de crescimento | insidioso | pode ser muito lento no início |
+| confunde-se com | infecção, nódulo de DUPUYTREN | lesão benigna |
+| radiografia | extensão local pouco evidente | calcificação de partes moles em 20% a 30% |
+| disseminação | proximal, por tendões, linfáticos e fáscias, sem respeitar barreiras | linfonodos em até 25% dos que desenvolvem metástase |
+| linfonodos | risco de até 42%; amostragem epitroclear e axilar | avaliar na estadia |
+| tratamento | excisão ampla verdadeira, radical ou amputação; marginal é inaceitável | o dos sarcomas em geral; quimioterapia intensiva tem papel |
+| detalhe | recidiva de 85% em 6 meses sem excisão adequada (Campbell) | tumor pequeno não garante prognóstico melhor na mão |
+!fim
+
+!questoes treino=mao-2541,mao-2016
+conceito: sarcoma sinovial é de alto grau, ocorre mais na região do carpo e raramente nos dedos, apresenta-se como massa indolor de crescimento inicial lento e mostra calcificação de partes moles em 20% a 30% das radiografias; até 25% dos que têm metástase a têm em linfonodos regionais
+como: o SIMÃO 2021 pediu a afirmativa de acordo com o Green (calcificações em 20% a 30%); o SIMÃO 2023 pediu a correta entre grau, local e ritmo de crescimento
+armadilha: "baixo grau", "crescimento rápido" e "massa dolorosa nos dedos" são o contrário do texto; os 25% são de linfonodos, não de rins; tumor pequeno na mão não significa sempre prognóstico melhor
+alerta: em `mao-2016` o gabarito fala em "metacarpos e carpo"; o Green (p. 2017) diz região do carpo, com massa no dorso da mão ou na palma, e raro nos dedos
+!fim
+
+# Encondroma e as encondromatoses {radar=confirmado}
+
+## O tumor ósseo mais comum da mão
+
+O **encondroma** é um tumor benigno de cartilagem hialina e o **tumor ósseo primário mais comum da mão**: cerca de **35% de todos os encondromas** estão na mão, e eles respondem por **até 90% dos tumores ósseos** vistos ali (Green's Operative Hand Surgery, 7ª ed., cap. 59, p. 2020). O Dahlin's Bone Tumors, 6ª ed. (cap. 3, p. 22 e 23), chega ao mesmo lugar por outro caminho: na série da Mayo Clinic, mais de 41% dos condromas estavam nos ossos pequenos das mãos e dos pés, sobretudo nas falanges, e 91% destes nas mãos; o condroma é "de longe" o tumor mais comum dos ossos pequenos da mão.
+
+O paciente típico está na quarta década (a maioria entre 10 e 40 anos) e chega por um de três caminhos: aumento localizado, às vezes indolor; **fratura patológica** depois de trauma mínimo; ou achado casual. A radiografia mostra lesão **lítica bem definida, às vezes lobulada, com calcificação pontilhada** da matriz. Extensão para partes moles **não é típica** e sugere tumor mais agressivo.
+
+## Em que osso
+
+!tabela Localização do encondroma na mão segundo cada livro (Green 7, cap. 59, p. 2020; Campbell 15, cap. 83, p. 3580; HEBERT 5, cap. 7; Dahlin 6, cap. 3, p. 22 a 24)
+| Livro | Osso mais acometido | Ordem seguinte | Detalhe |
+| --- | --- | --- | --- |
+| Green | falange proximal | metacarpo, depois falange média | carpo raro (escafoide, semilunar, capitato) |
+| Campbell | falange proximal | não ordena | metáfise proximal; lesão excêntrica e expansiva |
+| HEBERT | falange proximal | falange média, depois metacarpais | região metafisodiafisária; 2ª e 3ª décadas |
+| Dahlin | falanges | não ordena por falange | no osso tubular curto tende a ocupar a porção média |
+!fim
+
+Todos concordam no primeiro lugar, a **falange proximal**. A divergência está no segundo: o Green põe o **metacarpo** antes da falange média, e o HEBERT põe a **falange média** antes dos metacarpais. Há também diferença de idade (quarta década no Green; segunda e terceira no HEBERT) e de posição dentro do osso (metáfise proximal no Campbell, porção média no Dahlin).
+
+## Conduta
+
+Lesão **pequena, assintomática e de aspecto típico** pode ser apenas observada. Lesão grande, sintomática ou atípica pede **biópsia e curetagem** (Green, p. 2021). Na **fratura patológica**, o livro aceita tratar na fase aguda, mas cita dados de que o resultado é melhor quando se **espera a consolidação** e avisa o patologista, porque o osteoide do calo confunde a lâmina; o Campbell e o HEBERT também esperam a consolidação. A curetagem deve ser completa (a recidiva vem da curetagem insuficiente) e conferida com radiografia intraoperatória. O preenchimento **não muda a recidiva**, que é de **4,5% a 7%**: enxerto autólogo, aloenxerto, cimento de fosfato de cálcio e curetagem simples têm resultados semelhantes. ATHANASIAN prefere o **acesso lateral** às falanges, para poupar o aparelho extensor, e quase nunca tira enxerto do rádio ou da ulna do mesmo lado, pelo risco de contaminar a área doadora.
+
+!questoes central=mao-0951 relacionadas=mao-1021,mao-1554
+conceito: o encondroma é o tumor ósseo primário mais comum da mão (até 90% dos tumores ósseos da mão) e fica mais na falange proximal; depois vêm o metacarpo e a falange média, e o carpo é raro
+como: a UFG 2019 e a UFG 2021 perguntaram a localização mais comum; a USP-SP 2026 perguntou qual é o tumor ósseo primário mais comum da mão
+armadilha: marcar metacarpiano ou falange distal; e confundir o mais comum da mão (encondroma) com o mais comum do esqueleto em geral (osteocondroma)
+alerta: os livros divergem só no segundo lugar: metacarpo no Green (p. 2020) e falange média no HEBERT; os gabaritos de `mao-0951` e `mao-1021` (falange proximal) valem para os dois
+!fim
+
+## OLLIER e MAFFUCCI
+
+A **encondromatose múltipla (doença de OLLIER)** é rara, **não hereditária**, com vários encondromas nas metáfises e diáfises dos ossos longos e dos tubulares curtos, em geral **unilateral ou predominante de um lado**; as lesões podem ser enormes e deformar a mão (Green, p. 2021). Crescimento depois da maturidade, progressão radiográfica ou dor nova levantam a suspeita de malignização. O risco de transformação em condrossarcoma ou osteossarcoma é de cerca de **30%** no Green; o Dahlin (cap. 3, p. 22) estima condrossarcoma até os 40 anos em cerca de **25%**; o HEBERT fala em **50%**. São três números para a mesma doença, e a banca pode usar qualquer um.
+
+A **síndrome de MAFFUCCI** é raríssima e acomete as mãos na maioria dos casos: a radiografia óssea é idêntica à do OLLIER, mas há **hemangiomas múltiplos**, que aparecem como **flebólitos**. Esses pacientes têm **alto risco de sarcomas ósseos e de partes moles** (Green, p. 2021). O Dahlin considera a incidência de malignidade maior que no OLLIER, embora cite uma revisão com 23%.
+
+!questoes treino=mao-2184
+conceito: síndrome de MAFFUCCI é encondromatose múltipla com hemangiomas (flebólitos na radiografia) e traz alto risco de sarcomas ósseos e de partes moles
+como: a SBCM 2022 perguntou que risco têm os pacientes com MAFFUCCI
+armadilha: lembrar só do condrossarcoma; o Green fala em sarcomas de osso e também de partes moles
+!fim
+
+# Osteocondroma, lesão de NORA e as lesões de superfície {radar=clinico}
+
+## Osteocondroma
+
+O **osteocondroma** é das lesões ósseas mais comuns do esqueleto, mas **não é frequente na mão**, exceto nas **exostoses hereditárias múltiplas** (Green's Operative Hand Surgery, 7ª ed., cap. 59, p. 2022). É um crescimento ósseo com capa de cartilagem hialina, originado da fise ou de regiões de inserção tendínea. Na mão costuma aparecer na **região distal da falange proximal**, na segunda ou terceira década, e pode bloquear o movimento ou causar desvio angular e rotacional. Assintomático e típico, observa-se; com deformidade progressiva, dor ou perda de função, excisa-se. A transformação em condrossarcoma é conhecida no esqueleto em geral, mas **não foi relatada na mão**.
+
+A herança das exostoses múltiplas está no Dahlin's Bone Tumors, 6ª ed. (cap. 2, p. 9): doença **autossômica dominante**, responsável por cerca de 15% dos osteocondromas, com mutações germinativas nos genes supressores EXT em quase 90% dos pacientes. O Campbell's Operative Orthopaedics, 15ª ed. (Tabela 83.4, p. 3570), registra a mesma herança.
+
+## Proliferação osteocondromatosa parosteal bizarra (lesão de NORA)
+
+O Green (p. 2022) faz questão de separar: a lesão de NORA **não tem relação com o osteocondroma**. É uma proliferação benigna, grande, de osso e cartilagem, que **nasce da superfície cortical e não tem continuidade com a cavidade medular**. A radiografia e a histologia parecem agressivas, e ela se confunde com o **osteossarcoma parosteal**. Há **alto risco de recidiva** depois da excisão marginal, mas, como o curso é benigno, **não é preciso excisão ampla nem radical**.
+
+O Dahlin (cap. 2, p. 18 e 19) descreve o que o patologista vê. NORA e colaboradores descreveram a lesão como parecida com a exostose subungueal, mas fora do leito ungueal, muito mais comum nas **mãos** que nos pés. O paciente nota um aumento de volume raramente doloroso. A radiografia mostra massa mineralizada bem delimitada presa à cortical, **sem continuidade da cortical e da esponjosa** com o osso. O microscópio tem três componentes: **cartilagem, osso e células fusiformes**; a cartilagem é hipercelular com condrócitos aumentados, e a ossificação é irregular, com uma **tonalidade azulada peculiar**. Na série, mais da metade dos pacientes com seguimento recidivou, 20% mais de uma vez, e nenhum malignizou.
+
+!questoes treino=mao-2183,mao-2186,mao-1731
+conceito: na mão o osteocondroma aparece na região distal da falange proximal; as exostoses hereditárias múltiplas são autossômicas dominantes; a lesão de NORA nasce da cortical sem continuidade medular, tem cartilagem, osso e fibroblastos sem atipia com mineralização azulada, é benigna e recidiva com frequência após excisão
+como: a SBCM 2022 perguntou onde o osteocondroma se apresenta na mão e o padrão de herança da osteocondromatose múltipla; o SIMÃO 2026 trouxe o caso de massa dura de crescimento rápido na falange proximal, sem continuidade medular
+armadilha: chamar a lesão de NORA de osteocondroma (falta a continuidade medular) ou de osteossarcoma parosteal (não há atipia e não se indica ressecção ampla)
+alerta: a herança autossômica dominante de `mao-2186` não está no cap. 59 do Green; vem do Dahlin (cap. 2, p. 9) e do Campbell (Tabela 83.4). O detalhe histológico de `mao-1731` (osso azulado) também é do Dahlin (p. 19)
+!fim
+
+# Osteoma osteoide, cisto ósseo aneurismático e tumor de células gigantes {radar=confirmado}
+
+## Osteoma osteoide
+
+De 5% a 15% dos osteomas osteoides ocorrem na mão e no punho, mais na **falange proximal e no carpo**; a falange média é rara (Green's Operative Hand Surgery, 7ª ed., cap. 59, p. 2023). O paciente tem cerca de 20 anos e uma dor surda, profunda e constante, **aliviada por anti-inflamatórios**. A imagem clássica é a esclerose reativa em torno de um **nicho radiolucente menor que 1 cm**, mas na mão o quadro engana: há formas indolores, em que a queixa é o aumento de volume, e a lesão da **falange distal é atípica**, com aumento da polpa, deformidade da unha e imagem apenas lítica. A tomografia localiza o nicho, e o tratamento é a sua retirada completa, por curetagem ou em bloco; o HEBERT (cap. 7) diz que com curetagem a recidiva é quase certa.
+
+## Cisto ósseo aneurismático
+
+Só 3% a 5% dos cistos ósseos aneurismáticos estão na mão, na segunda década, sem predomínio de sexo. O dado de prova: **o metacarpo é mais acometido que as falanges, e o carpo é raro** (Green, p. 2024). A imagem pode lembrar a do tumor de células gigantes, mas costuma haver **deformidade expansiva com uma fina casca óssea** em volta de toda a lesão lítica; extensão a partes moles é incomum. É localmente agressivo, sem metástase. A recidiva após curetagem e enxerto chega a 60% nos ossos longos, e a **criocirurgia** adjuvante a reduz.
+
+## Tumor de células gigantes do osso
+
+Só 2% dos tumores de células gigantes ocorrem na mão, e ali eles são piores (Green, p. 2025 a 2027). São histologicamente benignos, mas na mão **recidivam mais** depois de tratamento intralesional (mais de **80% com curetagem, mesmo com fenol**), **metastatizam mais** para o pulmão do que em outros locais e tendem a ser **multicêntricos**. Aparecem no começo da quarta década, nos metacarpos e nas falanges. A radiografia mostra lesão **lítica, sem matriz, de bordas indistintas**, com expansão e destruição da cortical e extensão a partes moles; a posição epifisária e excêntrica dos ossos longos é menos evidente porque a lesão já ocupa grande parte do osso pequeno. A borda indistinta e a falta da casca fina ajudam a separar do cisto ósseo aneurismático; a falta de calcificação separa do encondroma.
+
+A conduta de ATHANASIAN: tratar o tumor de células gigantes da mão e do punho como um **maligno de baixo grau**; **estadiar** com imagem do tórax e cintilografia de corpo inteiro (metástase pulmonar e lesões multicêntricas); usar a ressonância para ver a contaminação de partes moles. **Curetagem isolada com enxerto, ou curetagem com fenol e enxerto, não pode ser defendida** na mão. Se a lesão **não perfurou** o osso e sobra estoque ósseo, ele considera **curetagem com criocirurgia** e enxerto ou cimentação; se perfurou a cortical ou invadiu partes moles, **amputação ou excisão ampla em bloco** com reconstrução. A radioterapia funciona, mas traz risco de transformação maligna de até 8,7% (o Campbell's Operative Orthopaedics, 15ª ed., cap. 83, p. 3584, fala em sarcoma de irradiação em 20% e a considera ineficaz). O seguimento dura 10 anos.
+
+!questoes central=mao-1468 treino=mao-2275
+conceito: na mão o cisto ósseo aneurismático acomete mais o metacarpo que as falanges; o tumor de células gigantes do osso é lítico, sem matriz, de bordas indistintas, e na mão não aceita curetagem simples: curetagem com criocirurgia e enxerto ou cimentação quando não perfurou, ressecção ampla quando perfurou
+como: a SBCM 2023 perguntou onde o cisto ósseo aneurismático aparece mais na mão; a USP-SP 2024 mostrou uma imagem e pediu diagnóstico e tratamento (tumor de células gigantes, curetagem com criocirurgia se disponível e enxertia ou cimentação)
+armadilha: tratar o tumor de células gigantes da mão como encondroma, com curetagem e enxerto; e trocar a criocirurgia de lugar, já que o Green também a usa no cisto ósseo aneurismático
+!fim
+
+# Tumores ósseos malignos e metástases {radar=confirmado}
+
+## Condrossarcoma
+
+O **condrossarcoma é o tumor ósseo maligno primário mais comum da mão** (Green's Operative Hand Surgery, 7ª ed., cap. 59, p. 2026). Pode nascer do nada ou de uma lesão benigna prévia, encondroma ou osteocondroma. O paciente tem em geral **mais de 60 anos**; os ossos são as **falanges proximais e os metacarpos**, quase nunca a falange distal ou o carpo. A massa é firme, **dolorosa e de crescimento lento**. A radiografia mostra matriz com calcificação pontilhada, áreas de lise e **bordas mal definidas**; o que o separa do encondroma é a **expansão extrema, a perfuração da cortical e a extensão para partes moles**. O Dahlin's Bone Tumors, 6ª ed. (cap. 6, p. 66 e 73), é mais rígido ainda: o encondroma do osso pequeno sempre erode a cortical e é celular, de modo que só a permeação através da cortical com massa em partes moles prova a malignidade.
+
+A maioria é de **baixo grau** e não metastatiza. O risco de metástase na mão é de cerca de **10%**, em geral depois de recidiva local que seguiu um tratamento intralesional, e o destino é o **pulmão**: por isso o estadiamento inclui tomografia de tórax. O tratamento é **excisão ampla em bloco ou amputação do dedo ou do raio**; quimioterapia não funciona na grande maioria e **a radioterapia não tem papel**. A metástase pode aparecer anos depois, e o seguimento é longo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3587 aprox.), traz os números da discussão atual: recidiva local de 7% com ressecção em bloco contra 38% com curetagem, sem diferença de sobrevida, o que abre espaço para cirurgia não ablativa em casos selecionados.
+
+## Osteossarcoma e sarcoma de EWING
+
+O Green (p. 2027) escreve que o **osteossarcoma** é o tumor ósseo primário mais comum da criança e do adolescente, **mas só raramente aparece como lesão primária da mão**; quando aparece, é em pacientes mais velhos, da quarta à sexta décadas, muitas vezes sobre lesão prévia, e pode ser de baixo grau. O Campbell dá idade média de 49 anos. O **sarcoma de EWING**, também raro na mão, **imita infecção** (p. 2028 a 2031).
+
+!questoes central=mao-0801 relacionadas=mao-1340,mao-0851
+conceito: condrossarcoma é o tumor ósseo maligno primário mais comum da mão, em maiores de 60 anos, na falange proximal e no metacarpo; metastatiza pouco (cerca de 10%) e para o pulmão
+como: o INTO 2023 pediu o maligno ósseo primário mais comum; a USP-SP 2025 pediu o local mais comum de metástase do condrossarcoma; o INTO 2026 perguntou o tumor ósseo mais comum da mão na criança, com gabarito osteossarcoma
+armadilha: "sarcoma osteogênico" e "osteossarcoma" são o mesmo tumor em alternativas diferentes; rabdomiossarcoma, lipossarcoma e sarcoma epitelioide são de partes moles
+alerta: `mao-0851` (gabarito osteossarcoma) reproduz a frase geral do Green de que o osteossarcoma é o tumor ósseo primário mais comum da criança e do adolescente, mas o próprio livro (p. 2027) diz que ele só raramente ocorre na mão, e em adultos de 40 a 60 anos; entre as alternativas, é o único tumor ósseo ao lado do EWING. Em `mao-1340` o enunciado chama o condrossarcoma de "tumor maligno mais comum na mão"; o correto é maligno ósseo primário (o maligno mais comum é o carcinoma espinocelular)
+!fim
+
+## Metástases acrais
+
+Metástase para os ossos da mão é incomum: as acrometástases aparecem em **menos de 0,3%** dos pacientes com câncer (Green, p. 2031 e 2032). Costuma ser evento **pré-terminal**, dentro de disseminação ampla, com sobrevida mediana de cerca de 6 meses; mas, em até **50%** dos casos, a lesão imita uma condição benigna ou é a **primeira manifestação** do câncer. O sítio clássico é a **falange distal**, embora as outras falanges e os metacarpos possam ser igualmente afetados; o carpo é raro e há predileção pela mão dominante. O primário é o **carcinoma broncogênico do pulmão em até 50%** dos casos; os demais são rim, esôfago, mama, cólon, próstata, tireoide e osso.
+
+!questoes central=mao-1122
+conceito: a metástase acral é rara (menos de 0,3% dos pacientes com câncer) e vem do pulmão em até metade dos casos; prefere a falange distal, simula infecção e pode ser a primeira manifestação do tumor
+como: a PUC-SP 2021 perguntou qual sítio primário mais produz metástase para as mãos
+armadilha: marcar mama ou rim, que estão na lista mas atrás do pulmão; e tratar como panarício uma lesão lítica da falange distal sem biopsiar
+!fim
+
+# Tumores de pele: lesões pré-malignas e carcinomas {radar=confirmado}
+
+## De onde nasce cada tumor
+
+## Ceratose actínica e doença de BOWEN
+
+A **ceratose actínica** (solar ou senil) é a **lesão pré-maligna cutânea mais frequente** (p. 1972). As lesões são **ásperas e escamosas, com borda eritematosa**, em áreas expostas ao sol, **mãos e antebraços**, tipicamente em homens idosos de pele clara. A histologia mostra hiperqueratose e paraqueratose, atipia e membrana basal espessada, mas **intacta**. O carcinoma espinocelular invasivo aparece em **menos de 10%** dos pacientes. Lesões isoladas se tratam com crioterapia ou eletrodissecção com curetagem; áreas extensas, com 5-fluoruracila tópica, e a lesão que resiste a ela pode esconder carcinoma invasivo. O diagnóstico diferencial é com eczema crônico, psoríase e doença de BOWEN. A **ceratose seborreica**, ao contrário, é uma lesão gordurosa, pigmentada, "colada" na pele, mais no braço e no tronco do que na mão (p. 1964).
+
+!questoes central=mao-1404 treino=mao-2014
+conceito: ceratose actínica é a lesão pré-maligna mais frequente da pele, áspera, escamosa e eritematosa, no dorso da mão e no antebraço do idoso exposto ao sol, e é a precursora do carcinoma espinocelular (que surge em menos de 10% dos pacientes)
+como: a USP-SP 2024 descreveu lesão descamativa e eritematosa de bordas mal definidas no dorso da mão de um paciente de 65 anos; o SIMÃO 2023 perguntou a lesão precursora do carcinoma de células escamosas
+armadilha: marcar ceratose seborreica (gordurosa, "colada", mais no tronco) ou granuloma piogênico (vermelho, friável, sangrante); a verruga é viral e o nevo melanocítico relaciona-se ao melanoma
+!fim
+
+## Carcinoma espinocelular
+
+Na mão, a ordem geral dos cânceres de pele se inverte. O Green (p. 1973) diz que o carcinoma basocelular é o câncer de pele mais comum, mas **relativamente raro na mão**, onde o **carcinoma espinocelular é muito mais comum**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 83, p. 3589 a 3592), quantifica: o espinocelular responde por **58% a 90% de todas as malignidades da mão**, é quatro vezes mais comum em homens, surge em torno dos 50 anos e supera o melanoma como malignidade mais comum do leito ungueal.
+
+O **perioníquio** merece atenção à parte. O capítulo 9 do Green (p. 334 e 335) diz que o carcinoma espinocelular, embora incomum, é o **tumor maligno mais comum do perioníquio**. Os fatores são radiação (as mãos dos dentistas de antigamente), trauma repetido, infecção, arsênico e **papilomavírus humano**; numa revisão da Cleveland Clinic, só duas causas ficaram claras, o papilomavírus e a radiação. Aparece como lesão elevada, vermelha, às vezes ulcerada e sangrante, ou só como deformidade da unha; cresce devagar e é confundido com paroníquia, com atraso médio de **4 anos**. É **mais comum em homens e costuma acometer o polegar**. Sem osso envolvido, ressecção com margem e enxerto; antigo, grande ou com osso, amputação na interfalângica distal ou mais proximal. O capítulo 58 completa com o prognóstico: o carcinoma espinocelular **paroniquial tem alta incidência de recidiva local e baixa taxa de metástase** (p. 1975). O Campbell acrescenta que na unha a forma mais comum é in situ, com 15% tornando-se invasivos.
+
+!questoes central=mao-1070 relacionadas=mao-1358 treino=mao-2469,mao-2451
+conceito: o carcinoma espinocelular é o tumor maligno de pele mais comum da mão e o mais comum do perioníquio; ali é mais frequente em homens, no polegar, ligado a radiação e papilomavírus, com alta recidiva local e baixa taxa de metástase
+como: o SIMÃO 2021 pediu o maligno de pele mais comum na mão; a PUC-SP 2019, o mais comum do perioníquio; a USP-SP 2025, a epidemiologia (acomete mais o polegar); o SIMÃO 2022, a afirmativa de acordo com o Green sobre os malignos de pele
+armadilha: responder carcinoma basocelular por ser o mais comum do corpo; dizer que não há relação com o papilomavírus ou que o perioníquio é raramente acometido; e, em `mao-2451`, as três erradas trocam fatos do melanoma (in situ não se amputa, confunde-se com hematoma, o dedo mais atingido é o polegar)
+!fim
+
+## Carcinoma basocelular
+
+O carcinoma basocelular **nasce sem lesão precursora**, é **localmente agressivo e recorrente, e a metástase é rara** (Green, p. 1973). A célula típica tem núcleo basofílico grande e pouco citoplasma, e as células da periferia de cada ninho se alinham em **paliçada**. O Campbell (p. 3592) sugere por que é raro no dorso da mão apesar do sol: nasceria em glândulas sebáceas, escassas ali.
+
+!tabela Subtipos do carcinoma basocelular (Green 7, cap. 58, Tabela 58.1 e p. 1974)
+| Grupo | Subtipo | O que o caracteriza |
+| --- | --- | --- |
+| circunscrito | nodular (sólido) | o mais comum; cúpula perolada com telangiectasias; pode ulcerar |
+| circunscrito | adenoide | cordões e ilhas de tumor em arranjo tubular, cercados por estroma mixoide |
+| circunscrito | cístico | lacunas por degeneração das células tumorais |
+| difuso | superficial | o segundo mais comum; tronco e membro superior; placa escamosa de borda perolada; focos conectados; recidiva mais |
+| difuso | morfeiforme (esclerosante) | raro na mão, mais na face; placa firme; extensão até 7 mm além da borda visível |
+| difuso | infiltrativo | margens mal definidas |
+!fim
+
+!questoes central=mao-1392 treino=mao-2328,mao-2054
+conceito: o carcinoma basocelular é raro na mão, nasce sem precursor, é agressivo e recorrente no local e raramente metastatiza; o nodular é o subtipo mais comum, o superficial recidiva mais, o esclerosante é raro na mão e o adenoide tem ilhas de tumor cercadas por estroma mixoide
+como: o SIMÃO 2024 perguntou como o basocelular se comporta na mão; a SBCM 2024 pediu a afirmativa correta sobre os subtipos; a USP-SP 2025 pediu a correta sobre os carcinomas não melanoma
+armadilha: inverter os subtipos (nodular "menos frequente", superficial "recidiva pouco", esclerosante "comum na mão"); e, nos não melanoma, tomar a cirurgia de MOHS como tratamento de escolha (o Green a reserva a lesões de alto risco, recidivadas ou de margem difícil) ou o linfonodo sentinela como rotina no espinocelular
+alerta: o gabarito de `mao-1392` (risco de 30% a 50% de nova lesão em 5 anos) não foi encontrado no Green nem no Campbell; os livros sustentam apenas que as outras três alternativas estão erradas: o Green diz que o espinocelular é "muito mais comum" que o basocelular na mão, sem dar a razão de quatro a cinco vezes, e no corpo em geral o mais comum é o basocelular
+!fim
+
+# Melanoma {radar=confirmado}
+
+## Subtipos
+
+!tabela Subtipos de melanoma (Green 7, cap. 58, p. 1978 a 1980)
+| Subtipo | Proporção | Onde e em quem | O que a prova cobra |
+| --- | --- | --- | --- |
+| disseminação superficial | 70% | qualquer local | o que mais nasce dentro ou ao lado de um nevo melanocítico; fase horizontal de 6 meses a 6 anos |
+| lentigo maligno (solar) | 4% a 10% | idosos; face extensora do antebraço | ligado à exposição solar prolongada; a forma in situ dura 1 a 2 décadas |
+| lentiginoso acral | 2% a 8% | palma e aparelho ungueal | sem relação com o sol; o mais comum em afro-americanos, asiáticos e hispânicos; diagnóstico tardio |
+| subungueal | parte do acral | polegar | confunde-se com hematoma |
+| nodular | 2% a 20% | qualquer local | nasce de novo; espesso ao diagnóstico; mais metástase |
+| amelanótico | raro | qualquer local | cinza ou rosa; confunde-se com nevo intradérmico e basocelular nodular |
+| desmoplásico | raro | às vezes nas mãos | invasão neural; sobrevida melhor que a de outros de mesma espessura |
+!fim
+
+Dois pontos de raciocínio. Primeiro, o nevo: é o componente juncional dos nevos que raramente se transforma, mas **a maioria dos melanomas não nasce de nevo** (p. 1966); quando nasce, o subtipo mais provável é o de disseminação superficial. Segundo, a etnia: o lentiginoso acral não depende de sol, então sua frequência não acompanha a cor da pele; por isso é o tipo mais comum justamente nas populações em que o melanoma em geral é incomum. O Green lembra que nevos palmares existem em 13% dos brancos e 29% dos negros, e não se excisam de rotina.
+
+!questoes central=mao-1408 treino=mao-2118,mao-2273
+conceito: disseminação superficial (70%) é o subtipo que mais nasce dentro ou junto de um nevo melanocítico; lentigo maligno é o do sol prolongado no idoso; lentiginoso acral é o da palma e da unha, sem relação com o sol, o mais comum em negros, asiáticos e hispânicos
+como: a SBCM 2022 perguntou o subtipo que surge dentro ou ao lado de um nevo; a SBCM 2023, o associado à exposição solar prolongada; a USP-SP 2024, o subtipo com predileção semelhante em caucasianos e pretos
+armadilha: trocar lentigo maligno (sol) por lentiginoso acral (sem sol); e achar que o nodular nasce de nevo, quando ele costuma nascer de novo
+alerta: em `mao-1408` o Green (p. 1978) não fala em predileção "semelhante" entre brancos e negros; diz que o lentiginoso acral não se relaciona ao sol e é o tipo mais comum nas populações em que o melanoma é incomum, o que sustenta o gabarito
+!fim
+
+## Melanoma da unha
+
+A **melanoníquia longitudinal** é a faixa escura da unha por melanina na lâmina. Em pessoas de pele escura é comum e benigna, em geral em vários dedos. O Green (cap. 58, p. 1966) lista o que torna uma faixa suspeita: paciente de **50 a 70 anos**, faixa com **mais de 3 mm** de largura, **mudança** de cor ou tamanho, **um só dedo**, **distrofia** da unha e **extensão do pigmento à pele periungueal, o sinal de HUTCHINSON**. O sinal é de suspeita, não de certeza: a Figura 58.14 mostra o melanoma subungueal com o pigmento avançando sobre o eponíquio, mas a lista é de "lesões suspeitas", e o diagnóstico é histológico. A biópsia é **longitudinal, de espessura total do leito**, depois de retirar a lâmina, com reparo do leito.
+
+O **melanoma subungueal** acomete mais o **polegar** e é confundido com **hematoma subungueal**. A regra do capítulo 58 (p. 1978): **biópsia formal para lesão pigmentada da unha que persiste por mais de 2 meses**. O capítulo 9 (p. 335) dá outro critério: a lesão pigmentada que **não avança com o crescimento da unha**, como faria um hematoma, é suspeita, e, se não mudou em **4 a 6 semanas**, biopsia-se. São dois prazos no mesmo livro; a questão da banca usa o de 2 meses. O capítulo 9 acrescenta que o diagnóstico atrasa 2 a 3 anos e que os **melanomas das mãos e dos pés têm prognóstico pior** que os de outras regiões, com sobrevida em 5 anos de 41% contra 72% numa série.
+
+O tratamento: o melanoma subungueal **in situ** se trata com **excisão de todo o leito e da região paroniquial e enxerto de pele total** sobre o periósteo; o **invasivo**, com **amputação proximal à articulação seguinte** (se a falange distal está acometida, proximal à interfalângica do polegar ou à interfalângica distal do dedo), e por razões funcionais o raio pode ser a melhor escolha (cap. 58, p. 1981).
+
+!questoes treino=mao-2117,mao-2423
+conceito: o sinal de HUTCHINSON é a extensão do pigmento da melanoníquia para a pele periungueal e levanta a suspeita de melanoma subungueal; lesão pigmentada da unha que persiste por mais de 2 meses pede biópsia formal
+como: a SBCM 2022 perguntou o que é o sinal de HUTCHINSON e o que ele sugere; o SIMÃO 2022, depois de quanto tempo de persistência se indica a biópsia
+armadilha: descrever o sinal como "faixa de ponta a ponta da unha" (isso é a própria melanoníquia) ou tomá-lo por sinal de benignidade
+alerta: em `mao-2423` o gabarito (mais de 2 meses) é o do cap. 58 do Green (p. 1978); o cap. 9 do mesmo livro (p. 335) manda biopsiar a lesão que não mudou em 4 a 6 semanas
+!fim
+
+## Biópsia, prognóstico e margens
+
+Na lesão pigmentada suspeita, a **biópsia por shave não serve** (não dá a espessura). O ideal é a excisional; quando a lesão é grande demais, faz-se a **incisional**, e o Green (p. 1961) é explícito: desde que a excisão definitiva venha em tempo hábil, **a biópsia incisional prévia não altera a história natural do melanoma**. A incisão é longitudinal.
+
+Os **fatores independentes de prognóstico** são três: **espessura de BRESLOW, ulceração e acometimento linfonodal** (p. 1980). O tipo morfológico, corrigido pela espessura, não influi. A espessura de BRESLOW, em milímetros, da membrana basal à célula tumoral mais profunda, substituiu os níveis descritivos de CLARK; na unha é difícil de medir, porque o leito está comprimido contra o periósteo.
+
+!tabela Margem periférica do melanoma pela espessura de BRESLOW (Green 7, cap. 58, p. 1980 e 1981)
+| Espessura | Margem recomendada | Sobrevida em 5 anos |
+| --- | --- | --- |
+| in situ | 2 a 5 mm | 95% a 100% |
+| menor que 1 mm | 1 cm | 95% a 100% |
+| 1 a 2 mm | 1 a 2 cm | 80% a 96% |
+| 2 a 4 mm | 2 a 3 cm | 60% a 75% |
+| maior que 4 mm | 3 cm | 50% |
+!fim
+
+!questoes central=mao-1309 relacionadas=mao-1600 treino=mao-2525
+conceito: a margem periférica do melanoma segue a espessura de BRESLOW (1 cm até 1 mm); a biópsia incisional não piora o prognóstico e pode ser usada em lesões extensas; os melanomas das mãos têm prognóstico pior que os de outras regiões
+como: o SIMÃO 2021 perguntou a margem para melanoma de até 1 mm; a USP-SP 2025 pediu a afirmativa correta sobre biópsia, congelação, dermatoscopia e sinal de HUTCHINSON; a USP-SP 2026 pediu a correta sobre os melanomas nas mãos
+armadilha: dar 0,5 cm (margem do in situ) ou 2 cm (de 1 a 4 mm) ao melanoma fino; tomar o sinal de HUTCHINSON por patognomônico; dizer que o tipo mais comum na mão é o nodular ou que o local mais comum é o dorso
+alerta: em `mao-1309` o Green não discute a sensibilidade da dermatoscopia nem a congelação das lesões pigmentadas; sustenta a biópsia incisional (p. 1961) e trata HUTCHINSON como sinal de suspeita (p. 1966). Em `mao-1600` o pior prognóstico está no cap. 9 (p. 335); sobre a ulceração, o cap. 58 (p. 1980) a lista como fator independente em geral, sem dizer que vale menos na mão
+!fim
+
+# Fechamento {radar=fundamento}
+
+O capítulo pede um modo de pensar, e as listas saem dele. Toda massa da mão é benigna até prova em contrário, e a prova é a história que não fecha: a massa que cresce, que dói sem motivo, que recidiva depois de "curetagem de encondroma", que ulcera na palma de um adulto jovem, que destrói a falange distal de quem nunca teve câncer. Nessas, a ordem é imagem primeiro, biópsia por último, incisão longitudinal, sem ESMARCH, e margem decidida pelo grau e pelo compartimento. Na mão o compartimento é o raio, e por isso o raio é a unidade da ressecção oncológica.
+
+As divergências entre os livros são poucas e cobradas: a proporção subungueal do tumor glômico (50% no capítulo 9 do Green, 75% no Campbell); o segundo osso do encondroma (metacarpo no Green, falange média no HEBERT); a malignização do OLLIER (30% no Green, 25% no Dahlin, 50% no HEBERT); a malignização do schwannoma (raros relatos no Green, nenhuma no HEBERT); o sarcoma de partes moles mais comum (epitelioide no Green, sinovial no HEBERT); o nível de amputação do tumor da falange média (raio no Green, falange proximal no Campbell); e o prazo para biopsiar a mancha da unha (2 meses no capítulo 58, 4 a 6 semanas no capítulo 9).
+
+> **Na prova:** cisto sinovial é o tumor mais comum e o **tumor de células gigantes da bainha** o segundo (recidiva na **IFD**, com artrose e erosão); **cisto mucoso** = excisar cisto e osteófito; **glômico** = dor, ponto doloroso e **frio**, subungueal, 1% a 5%; **schwannoma** enuclea, **neurofibroma** é da VON RECKLINGHAUSEN, hamartoma lipofibromatoso é do **mediano**; **encondroma** na **falange proximal**; osteocondroma na parte **distal da falange proximal**; **NORA** sem continuidade medular e com recidiva; cisto ósseo aneurismático no **metacarpo**; **condrossarcoma** é o maligno ósseo mais comum e vai ao **pulmão**; metástase acral vem do **pulmão**; ENNEKING **IIA alto grau intracompartimental**, **IIB extracompartimental**; sarcoma na falange média = **raio**; sarcoma sinovial no **carpo**, calcificação em **20% a 30%**; **carcinoma espinocelular** é o maligno de pele mais comum da mão e do perioníquio, no **polegar**, com a **ceratose actínica** de precursora; basocelular **agressivo no local e raramente metastático**; melanoma: **HUTCHINSON**, biópsia após **2 meses**, **1 cm** até 1 mm de BRESLOW.

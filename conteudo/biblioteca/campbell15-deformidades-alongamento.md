@@ -1,6 +1,6 @@
 ---
 id: campbell15-deformidades-alongamento
-versao: 1
+versao: 2
 titulo: Deformidades ósseas e alongamento
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 63 · Malunited Fractures, com o Capítulo 31 · Congenital Anomalies of the Lower Extremity (seção Limb-Length Discrepancy), o Capítulo 58 · General Principles of Fracture Treatment (External Fixation) e o Capítulo 10 · Knee Preservation Surgery
 autores: A. Paige WHITTLE (cap. 63)
-fonte: Livros conferidos localmente em 03/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (Limb-Length Discrepancy, p. 1101 a 1127), cap. 63 (Malunited Fractures, p. 2841 e 2854 a 2860), cap. 58 (External Fixation, p. 2552 a 2556) e cap. 10 (hemicalotasia, p. 501 e 507); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 31 (Principles of Malunion Treatment, BRINKER, O'CONNOR e WARNER; sem página impressa no PDF); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 20 (Limb Length Discrepancy, p. 815 a 862); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 28 (Limb-Length Discrepancy, p. 1341 a 1378); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 23 (Discrepância de comprimento dos membros inferiores; sem página impressa no PDF). As páginas citadas são as impressas.
-subtemas: Deformidades ósseas e alongamento
-resumo: CORA é a intersecção dos eixos proximal e distal (anatômicos ou mecânicos, sem misturar); fora do ponto óbvio indica translação ou multiapical; mesmo nível no AP e perfil = plano oblíquo, níveis diferentes = translação; CORA, eixo de correção e osteotomia juntos = só angulação; eixo na cortical convexa = cunha de abertura; mLDFA e MPTA perto de 87 graus; GREEN-ANDERSON, MOSELEY (erro de 0,6 cm), MENELAUS e multiplicador de PALEY; epifisiodese para 2 a 5 cm; latência, 1 mm/dia em 0,25 × 4, consolidação de duas vezes a distração, cerca de 1 mês por cm; hemicalotasia de TURI no 7º dia; clamshell contraindicado na metáfise e acima de 3 cm.
+fonte: Livros conferidos localmente em 03/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 31 (Limb-Length Discrepancy, p. 1101 a 1127), cap. 63 (Malunited Fractures, p. 2841 e 2854 a 2860), cap. 58 (External Fixation, p. 2552 a 2556) e cap. 10 (hemicalotasia, p. 501 e 507); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 31 (Principles of Malunion Treatment, BRINKER, O'CONNOR e WARNER; sem página impressa no PDF); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 20 (Limb Length Discrepancy, p. 815 a 862); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 28 (Limb-Length Discrepancy, p. 1341 a 1378); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 23 (Discrepância de comprimento dos membros inferiores; sem página impressa no PDF). As páginas citadas são as impressas. Acréscimo conferido em 10/11/2026 (causas da discrepância): Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 28, p. 1343 a 1346; Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 20, p. 806 e 807 (Box 20.1); HEBERT, 5ª ed., cap. 23, Quadro 23.1 (pág. PDF 1764).
+subtemas: Deformidades ósseas e alongamento; Discrepância de comprimento dos membros
+resumo: CORA é a intersecção dos eixos proximal e distal (anatômicos ou mecânicos, sem misturar); fora do ponto óbvio indica translação ou multiapical; mesmo nível no AP e perfil = plano oblíquo, níveis diferentes = translação; CORA, eixo de correção e osteotomia juntos = só angulação; eixo na cortical convexa = cunha de abertura; mLDFA e MPTA perto de 87 graus; GREEN-ANDERSON, MOSELEY (erro de 0,6 cm), MENELAUS e multiplicador de PALEY; epifisiodese para 2 a 5 cm; latência, 1 mm/dia em 0,25 × 4, consolidação de duas vezes a distração, cerca de 1 mês por cm; hemicalotasia de TURI no 7º dia; clamshell contraindicado na metáfise e acima de 3 cm. Causas: encurtam neuropatia, poliomielite, queimados, osteocondroma e RUSSELL-SILVER; alongam fratura diafisária do fêmur (7 a 10 mm), artrite inflamatória, KLIPPEL-TRENAUNAY, PROTEUS, BECKWITH-WIEDEMANN, hemangioma e abscesso de BRODIE.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -413,6 +413,54 @@ O Tachdjian (p. 844) mostra a dimensão do problema: complicações de **14% a 1
 | desvio axial | olivas mal postas; haste segue o eixo anatômico | planejamento; olivas como fulcros |
 | desaceleração do crescimento | pressão nas fises ou hiperemia | evitar excesso; adiar para a maturidade |
 | artrose do tornozelo | fixação tibial longa, dupla transportação | 50% a 70% com fixador tibial (cap. 58) |
+!fim
+
+# Causas da discrepância: o que encurta e o que alonga {radar=confirmado}
+
+## A lógica: fise que para e fise que recebe mais sangue
+
+A prova gosta de entregar uma lista de doenças e perguntar para que lado cada uma leva o membro. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 28, p. 1343 a 1345), organiza a etiologia exatamente assim, em duas direções, e dá o mecanismo de cada uma.
+
+**O membro fica curto** quando a fise cresce menos ou quando o osso perde comprimento de uma vez. As deficiências congênitas (fêmur curto congênito, hemimelia fibular, hemimelia tibial) aparecem ao nascer e **continuam inibindo o crescimento**, de modo que os casos leves só são notados mais tarde; o encurvamento posteromedial da tíbia, a pseudartrose congênita da tíbia e o pé torto (pé menor e tíbia mais curta) entram no mesmo grupo. A perda **aguda** vem da fratura consolidada com cavalgamento: a criança pequena recupera parte, mas a recuperação é improvável na criança mais velha e no adolescente com **mais de 2,5 cm de encurtamento no fêmur**. A necrose avascular (PERTHES, idiopática ou iatrogênica) tira altura e ainda lesa a fise proximal do fêmur. Mais frequente que tudo isso é a perda **gradual** por parada de crescimento: fratura fisária, sepse neonatal com osteomielite multifocal e artrite séptica, irradiação e tumores benignos ou malignos (**encondroma, osteocondroma e cisto ósseo unicameral**, pela lesão ou pelo tratamento), além da inibição mecânica do BLOUNT. O livro separa dois padrões: **infecção e isquemia dão disfunção difusa da fise; trauma e tumor dão barras ósseas localizadas**. Entram ainda a lesão vascular regional (cateterismo umbilical ou femoral) e as doenças neurológicas assimétricas, como a **paralisia cerebral hemiplégica e a poliomielite**, em que o membro acometido cresce menos e as contraturas de quadril e joelho somam um encurtamento aparente.
+
+**O membro fica longo** quando chega mais sangue à fise. O Lovell and Winter (p. 1345) distingue o aumento **transitório** do fluxo (hipercrescimento **pós-traumático e pós-infeccioso** do fêmur e da tíbia) do aumento **mais permanente**, cujos exemplos são a **artrite inflamatória** (reumatoide, psoriásica, lúpica) e as **malformações arteriovenosas**, como as da síndrome de KLIPPEL-TRENAUNAY. A osteomielite perto da fise também pode estimular o crescimento, e é por isso que a infecção aparece nas duas listas: destrói a fise e encurta, ou inflama a vizinhança e alonga. Por fim, o livro reúne as síndromes com **crescimento excessivo generalizado de um membro**, muitas vezes com malformação vascular: **PROTEUS, macrodactilia, PARKES WEBER e KLIPPEL-TRENAUNAY-WEBER**; a neurofibromatose tipo 1 também pode dar hemi-hipertrofia (e, pela pseudartrose congênita da tíbia, encurtamento).
+
+!tabela Causas de dismetria por direção (HEBERT, cap. 23, Quadro 23.1, pág. PDF 1764; Tachdjian, cap. 20, Box 20.1, p. 807)
+| Grupo | Encurtam o membro | Alongam o membro |
+| --- | --- | --- |
+| congênitas | deficiência do fêmur, da tíbia, hemimelia tibial ou fibular; pseudartrose congênita da tíbia; sequela de pé torto unilateral | hemi-hipertrofia idiopática |
+| neurológicas assimétricas | hemimielomeningocele, poliomielite, hemiparesia, **neuropatia periférica** | nenhuma |
+| trauma | lesão fisária; pseudartrose e **grandes queimados** (HEBERT); consolidação viciosa (Tachdjian) | **sobrecrescimento após fratura diafisária do fêmur ou da tíbia** |
+| infecção | destruição da fise | **osteomielite diafisária e abscesso de BRODIE metafisário** (só o HEBERT) |
+| tumor | **encondroma, osteocondroma**, cisto ósseo unicameral | **hemangioma e linfangioma** (só o HEBERT) |
+| outras adquiridas | irradiação, BLOUNT, LEGG-CALVÉ-PERTHES | **artrite inflamatória** |
+| síndromes | hemiatrofia idiopática e **RUSSELL-SILVER** | neurofibromatose com gigantismo, **KLIPPEL-TRENAUNAY, BECKWITH-WIEDEMANN e PROTEUS** |
+!fim
+
+Os dois quadros são quase iguais, porque o do HEBERT segue o do Tachdjian's Pediatric Orthopaedics, 6ª ed., mas há diferenças que viram alternativa. No trauma que encurta, o Tachdjian escreve **consolidação viciosa**, e o HEBERT, **pseudartrose** e **grandes queimados**. Na coluna do alongamento, o HEBERT acrescenta **tumor (hemangioma, linfangioma)** e **infecção (osteomielite diafisária, abscesso de BRODIE metafisário)**, que o Box 20.1 do Tachdjian não traz; o Tachdjian deixa tumor e infecção apenas do lado do encurtamento, como causas de lesão fisária. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31, p. 1101), usa outra divisão (adquiridas, estímulo do crescimento, hemi-hipoplasia e hemi-hiperplasia, congênitas) e põe a artrite idiopática juvenil e a hipervascularização após fratura no grupo do estímulo.
+
+## O hipercrescimento depois da fratura
+
+A fratura da diáfise do fêmur é o exemplo de causa que pode ir para os dois lados: encurta quando consolida cavalgada e alonga quando a hiperemia do reparo estimula a fise. Para o Lovell and Winter (p. 1345), o sobrecrescimento pós-traumático **ocorre tipicamente depois da fratura do fêmur**, mas também depois da fratura isolada da tíbia ou das duas juntas; é mais provável nas fraturas do **terço proximal e do terço médio**, entre **4 e 7 anos**, e o fêmur cresce em média **7 a 10 mm** a mais. A maior parte acontece nos **dois primeiros anos**, mas o livro manda acompanhar até a maturidade.
+
+O Tachdjian (p. 807) dá as séries. CORRY e NICOL acompanharam 50 crianças com menos de 10 anos tratadas com gesso pelvipodálico: **44 tiveram sobrecrescimento, em média 7 mm**, 5 cresceram menos e 1 não mudou, com o maior efeito dos 4 aos 7 anos. HOUGAARD, em 67 pacientes, encontrou média de **10 mm e máximo de 2,6 cm**, sem relação com idade, sexo ou padrão da fratura; quem terminou com encurtamento tendia a ser mais velho e a ter fratura angulada.
+
+!questoes central=pediatria-0350
+conceito: Crescimento excessivo generalizado de um membro aparece nas síndromes de PROTEUS e KLIPPEL-TRENAUNAY-WEBER; depois da fratura do fêmur o esperado é o sobrecrescimento (7 a 10 mm), e artrite inflamatória e malformação arteriovenosa alongam por aumento permanente do fluxo.
+como: O TEPOP 2024 montou quatro afirmações a partir do texto do Lovell and Winter: trocou sobrecrescimento por encurtamento pós-traumático, aumento por diminuição do fluxo sanguíneo, e negou o valor da escanometria e da panorâmica.
+armadilha: Ler depressa "artrite inflamatória e malformações arteriovenosas" e aceitar a frase inteira; as causas estão certas, o mecanismo foi invertido (o fluxo aumenta, não diminui).
+!fim
+
+## Hemiatrofia e hemi-hipertrofia: as síndromes
+
+O Tachdjian (p. 806 e 807) lembra que o limite entre a assimetria normal e a hemi-hipertrofia ou hemiatrofia não é nítido, salvo nos casos graves. Do lado curto, a variante com nome é a síndrome de **RUSSELL-SILVER: baixa estatura com hemiatrofia**. Do lado longo, os achados **cutâneos ou vasculares** permitem o diagnóstico específico: PROTEUS, KLIPPEL-TRENAUNAY, neurofibromatose e **BECKWITH-WIEDEMANN**.
+
+A síndrome de BECKWITH-WIEDEMANN reúne hipoglicemia neonatal, macroglossia, visceromegalia, onfalocele, hemi-hipertrofia e propensão a **tumores embrionários, sobretudo o tumor de WILMS**. Os dois livros citam os mesmos critérios: maiores (macroglossia, crescimento excessivo e defeito da parede anterior) e menores (pregas na orelha, nevo facial em chama, rim aumentado, hipoglicemia e hemi-hipertrofia). A maioria nasce acima do percentil 90, e há deleções e translocações no **cromossomo 11**, perto do locus do fator de crescimento semelhante à insulina II. O risco de tumor é de **7% a 9%**, e sobe para **24% a 27% quando há hemi-hipertrofia**. A hemi-hipertrofia idiopática não sindrômica também se associa ao WILMS, ao carcinoma de suprarrenal e ao hepatoblastoma. Por isso, Tachdjian e Lovell and Winter (p. 1345 e 1346) fazem **ultrassonografia abdominal a cada 6 meses até os 8 anos**, embora o Tachdjian admita que não há diretriz firme sobre frequência e idade de parada. No exame, o Lovell and Winter manda procurar hemangiomas, sardas axilares e manchas café com leite, e palpar o abdome.
+
+!questoes central=pediatria-1060 relacionadas=pediatria-1070
+conceito: Alongam o membro: fratura diafisária do fêmur ou da tíbia, artrite inflamatória, KLIPPEL-TRENAUNAY, BECKWITH-WIEDEMANN, PROTEUS e, no quadro do HEBERT, hemangioma, osteomielite diafisária e abscesso de BRODIE. Encurtam: neuropatia periférica, poliomielite, grandes queimados, osteocondroma, encondroma e a hemiatrofia de RUSSELL-SILVER.
+como: O ENARE de Cirurgia da Mão cobrou o mesmo quadro duas vezes: em 2022 pediu a causa de alongamento entre neuropatia, fratura diafisária do fêmur, poliomielite, grandes queimados e osteocondroma; em 2023 pediu a de encurtamento entre RUSSELL-SILVER, PROTEUS, hemangioma, abscesso de BRODIE e BECKWITH-WIEDEMANN.
+armadilha: Pôr todo tumor e toda infecção do lado do encurtamento: o osteocondroma encurta, mas o hemangioma e o abscesso de BRODIE estão na coluna do alongamento. E confundir as duas síndromes com epônimo duplo: RUSSELL-SILVER é a pequena e atrófica, BECKWITH-WIEDEMANN é a grande.
 !fim
 
 # Fechamento {radar=fundamento}

@@ -1,6 +1,6 @@
 ---
 id: campbell15-entorse-tornozelo
-versao: 1
+versao: 2
 titulo: Entorse e instabilidade lateral do tornozelo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026)
 capitulo: Capítulo 55 · Arthroscopy of the Foot and Ankle (seções Ankle Impingement Syndromes e Ankle Instability), com o Capítulo 94 · Sports Injuries of the Ankle (seções Acute Ligamentous Injuries, Chronic Instability After Injury e Internal Derangements) e o Capítulo 59 (avaliação da sindesmose)
 autores: Carson M. RIDER (cap. 55); David R. RICHARDSON (cap. 94)
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 94 (anatomia, diagnóstico, tratamento agudo, sindesmose, instabilidade crônica e técnicas 94.3 a 94.6, lesões ocultas, seio do tarso e impacto, p. 4135 a 4161, com as páginas de eBook 4148.e1 e 4152.e1), cap. 55 (diagnóstico, impacto anterior e posterior, fraturas, instabilidade, p. 2312, 2317, 2321, 2322 e 2324) e cap. 59 (lesão sindesmótica e teste de COTTON, p. 2568); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 Ankle Fractures (MAISONNEUVE, regras de OTTAWA e fratura isolada do maléolo lateral, p. 2910 a 2913) e cap. 68 Fractures and Dislocations of the Midfoot and Forefoot (5º metatarsal, p. 3135 a 3138 aprox.); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 69 Fraturas e lesões do tornozelo no adulto (pág. PDF 3892 a 3916), cap. 21.2 Tendões fibulares (pág. PDF 1542) e cap. 21.4 Pé cavo (pág. PDF 1583 a 1586), sem página impressa no texto extraído. As páginas citadas do Campbell e do Rockwood são as impressas.
-subtemas: Entorse e instabilidade lateral do tornozelo
-resumo: LTFA é o mais fraco e o mais lesado (gaveta anterior), LCF é o único lateral extracapsular e o LTFP o mais forte; tibiotalar profundo posterior é o componente mais forte do deltoide; LTFA com talocalcâneo interósseo muda a mobilidade subtalar; inclinação talar >10° acima do lado normal; tratamento funcional até no grau III; entorse alta pelos testes de compressão (squeeze) e de rotação externa; CHRISMAN-SNOOK com metade do fibular curto; BROSTRÖM-GOULD como escolha na crônica; primeiro raio flexionado e cavo predispõem; impacto anterior após entorses de repetição.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 94 (anatomia, diagnóstico, tratamento agudo, sindesmose, instabilidade crônica e técnicas 94.3 a 94.6, lesões ocultas, seio do tarso e impacto, p. 4135 a 4161, com as páginas de eBook 4148.e1 e 4152.e1), cap. 55 (diagnóstico, impacto anterior e posterior, fraturas, instabilidade, p. 2312, 2317, 2321, 2322 e 2324) e cap. 59 (lesão sindesmótica e teste de COTTON, p. 2568); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65 Ankle Fractures (MAISONNEUVE, regras de OTTAWA e fratura isolada do maléolo lateral, p. 2910 a 2913) e cap. 68 Fractures and Dislocations of the Midfoot and Forefoot (5º metatarsal, p. 3135 a 3138 aprox.); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 69 Fraturas e lesões do tornozelo no adulto (pág. PDF 3892 a 3916), cap. 21.2 Tendões fibulares (pág. PDF 1542) e cap. 21.4 Pé cavo (pág. PDF 1583 a 1586), sem página impressa no texto extraído. As páginas citadas do Campbell e do Rockwood são as impressas. Acréscimo conferido em 10/11/2026 (diástase tibiofibular): Campbell's Operative Orthopaedics, 15ª ed., cap. 94, p. 4140 e 4143 a 4146; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 65, Tabela 65-2 (pág. PDF 3304) e seção Syndesmotic Injuries (pág. PDF 3314); a classificação de EDWARDS e DeLEE não consta de nenhum dos livros conferidos.
+subtemas: Entorse e instabilidade lateral do tornozelo; Lesão da sindesmose
+resumo: LTFA é o mais fraco e o mais lesado (gaveta anterior), LCF é o único lateral extracapsular e o LTFP o mais forte; tibiotalar profundo posterior é o componente mais forte do deltoide; LTFA com talocalcâneo interósseo muda a mobilidade subtalar; inclinação talar >10° acima do lado normal; tratamento funcional até no grau III; entorse alta pelos testes de compressão (squeeze) e de rotação externa; CHRISMAN-SNOOK com metade do fibular curto; BROSTRÖM-GOULD como escolha na crônica; primeiro raio flexionado e cavo predispõem; impacto anterior após entorses de repetição. Diástase sem fratura: espaço claro tibiofibular acima de 5 mm, sobreposição abaixo de 5 mm no AP, estresse por gravidade, fixação 3 cm acima da articulação se a pinça segue alargada.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -364,6 +364,52 @@ Quando os testes de estresse são negativos e a dor persiste, o Campbell (p. 415
 conceito: Entorses de repetição com dor na interlinha articular anterior sugerem impacto anterior; o diagnóstico se firma com imagem (RM, que também mostra lesões associadas), e a artroscopia fica para o tratamento.
 como: O TARO 2026 descreveu paciente de 34 anos com entorses de repetição e dor na interlinha articular e pediu a hipótese e o exame confirmatório, opondo RM a artroscopia anterior.
 armadilha: Escolher a artroscopia como exame de confirmação; o Campbell diz que a artroscopia puramente diagnóstica tem baixo sucesso e que o diagnóstico deve vir antes.
+!fim
+
+# A diástase tibiofibular sem fratura: imagem, graus e EDWARDS e DeLEE {radar=confirmado}
+
+## O que a diástase significa
+
+A seção da entorse alta mostrou os quatro ligamentos, os dois testes clínicos e os três tipos do Campbell. Falta o passo seguinte: o que fazer quando a tíbia e a fíbula de fato se afastam sem que haja fratura para explicar. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 65, seção Syndesmotic Injuries, pág. PDF 3314), dá a dimensão da lesão: a sindesmose rompe por um **movimento de torção do tálus que força a tíbia e a fíbula para lados opostos**, ou por uma força de abdução intensa, e a diástase exige a **ruptura de três ligamentos fortes e da membrana interóssea**. É, portanto, uma agressão grande ao tornozelo, com resultado tardio muitas vezes ruim, operada ou não. Deixada sem tratamento, leva a instabilidade persistente, dor e artrose progressiva; PETTRONE mostrou resultado pior aos 5 anos nos tornozelos com alargamento radiográfico da sindesmose, e o livro conclui que **a diástase tem de ser reconhecida no início e estabilizada**. Como os ligamentos raramente são vistos, sua integridade é **presumida pela diástase na radiografia**.
+
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 94, p. 4143 e 4144), acrescenta o outro lado: **a diástase depois de uma lesão sindesmótica isolada é rara**, e por isso a entorse alta é subnotificada. Quando existe e não há fratura da fíbula nem do maléolo medial, a lesão associada a procurar é a **ruptura do deltoide**.
+
+## Como procurar na imagem
+
+!tabela Sindesmose na radiografia e nas incidências com estresse (Rockwood and Green 10, cap. 65, Tabela 65-2, pág. PDF 3304, e pág. PDF 3314; Campbell 15, cap. 94, p. 4140)
+| Recurso | Como se faz ou se mede | Leitura |
+|---|---|---|
+| espaço claro tibiofibular (sindesmose A) | 10 mm acima da linha articular | **mais de 5 mm** sugere ruptura; é a medida que menos muda com a rotação |
+| sobreposição tibiofibular (sindesmose B) | 10 mm acima da linha articular | **menos de 5 mm no AP ou de 1 mm na mortalha** sugere ruptura; muito variável com a rotação |
+| espaço claro medial | entre o maléolo medial e o tálus | alargado indica lesão do deltoide somada à da sindesmose |
+| estresse em rotação externa manual | mortalha com o pé rodado para fora | eficaz, mas doloroso |
+| estresse por gravidade | paciente em semidecúbito com o lado lesado para baixo, perna sobre um coxim, terço distal fora da mesa, raio horizontal | a gravidade roda o pé para fora e abre a pinça; **é o preferido do Campbell por doer menos** |
+| ressonância | cortes axiais | mostra o tibiofibular anterior roto; mais específica que sensível |
+!fim
+
+O Campbell resume em um de seus conceitos: **o espaço claro e a sobreposição tibiofibulares servem para a avaliação preliminar**; a ressonância é a mais acurada para os ligamentos, mas dispensável na maioria dos casos. Se a lesão não for evidente, a **mortalha com estresse** ajuda, lembrando que a posição do tornozelo altera as medidas (p. 4140). O Rockwood insiste que os valores são empíricos, que a sobreposição pode faltar em pessoas normais com incisura rasa e que a tomografia desmente parte do que a radiografia sugere.
+
+## Os graus e a classificação que os livros não trazem
+
+O Campbell (Fig. 94.14) classifica a lesão sindesmótica em três graus pela estabilidade: **1 estável, 2 parcialmente instável (radiografia aparentemente normal, testes provocativos positivos) e 3 completamente instável**. Os graus 1 e 2 são tratados sem cirurgia; a lesão do deltoide no grau 2 e o grau 3 levam à cirurgia.
+
+A prova, porém, já pediu outra classificação, a de **EDWARDS e DeLEE**, própria da diástase tibiofibular sem fratura. **Nenhum dos livros conferidos a descreve**: nem o Campbell 15 (caps. 94 e 59), nem o Rockwood and Green 10 (cap. 65), nem o HEBERT (cap. 69) citam os autores ou os tipos. O que os livros permitem dizer é mais simples: há lesões em que a radiografia parece normal e o afastamento só aparece nos testes provocativos ou nas incidências com estresse (o grau 2 do Campbell), e lesões em que todo o complexo rompeu e a pinça está aberta (o grau 3). A descrição dos tipos de EDWARDS e DeLEE fica, neste resumo, restrita ao alerta da questão, marcada como informação não conferida.
+
+## Tratamento da diástase
+
+O princípio do Campbell (p. 4144 a 4146) é simples: a maioria das rupturas se trata por métodos fechados, mas **se a pinça continua alargada depois da manipulação, a cirurgia é necessária**. Os detalhes que ainda não apareceram neste resumo:
+
+- **Redução:** aberta de preferência, quando o risco da incisão maior é aceitável. Se a pinça estava luxada ou muito subluxada, o Campbell abre também o lado medial, **limpa o espaço claro medial** e repara o deltoide, porque o deltoide avulsionado ou o **tendão tibial posterior** podem ficar interpostos entre o maléolo medial e o tálus e impedir a redução.
+- **Implante:** parafuso ou botão de sutura **3 cm acima e paralelo à superfície articular**, logo acima da incisura, **inclinado 20° a 30° para anteromedial**, entrando pela face posterolateral da fíbula. Titânio ou aço, três ou quatro corticais: sem diferença de resultado; o parafuso de 4,5 mm em quatro corticais resiste mais ao cisalhamento.
+- **Botão de sutura:** fixa sem rigidez e permite que a sindesmose se acomode mesmo com pequena má redução inicial; melhores escores e carga mais precoce na literatura recente. O serviço do Campbell prefere o botão sem nó no paciente ativo. Há relato de **fratura da fíbula ao redor do botão** colocado isoladamente; passá-lo por uma placa de dois furos reduz esse risco e aumenta a irritação pelo material.
+- **Retirada:** quando planejada, o parafuso sai com **3 a 4 meses**. As complicações mais citadas são quebra do parafuso, afundamento do botão e perda da redução, precoce ou tardia.
+- **Lesão crônica:** a reconstrução anatômica do tibiofibular anteroinferior com **tendão do grácil autólogo** tem bons resultados; na instabilidade crônica pode ser preciso a **artrodese da sindesmose**. A ossificação sintomática da sindesmose pode exigir ressecção.
+
+!questoes central=pe-tornozelo-0336
+conceito: A diástase tibiofibular sem fratura é rara, exige ruptura dos ligamentos da sindesmose e da membrana interóssea, mede-se pelo espaço claro tibiofibular (mais de 5 mm) e pela sobreposição (menos de 5 mm no AP) e precisa de fixação quando a pinça continua alargada depois da manipulação.
+como: O TARO 2008 pediu o tipo III de EDWARDS e DeLEE da lesão isolada da sindesmose, com luxação posterior da fíbula, subluxação superior do tálus, subluxação lateral com deformidade plástica da fíbula e luxação anterior da fíbula como alternativas.
+armadilha: Responder pelos três graus de estabilidade do Campbell (estável, parcialmente instável, instável), que são outra classificação; a de EDWARDS e DeLEE descreve para onde a fíbula e o tálus se deslocam na diástase sem fratura.
+alerta: Questão sem gabarito oficial em `pe-tornozelo-0336`. A resposta provável é a alternativa A (luxação posterior da fíbula), que é o gabarito pela bibliografia registrado no acervo. Nenhum livro conferido aqui (Campbell 15, caps. 94 e 59; Rockwood and Green 10, cap. 65; HEBERT, cap. 69) traz a classificação de EDWARDS e DeLEE, de modo que os livros locais não confirmam nem contradizem essa resposta.
 !fim
 
 # Fechamento {radar=fundamento}

@@ -3,15 +3,15 @@
  "capitulos": [
   {
    "id": "ao-fixadores-externos",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fixadores externos",
    "especialidade": "conceitos-basicos",
    "livro": "AO Principles of Fracture Management",
    "edicao": "3ª edição (2017)",
    "capitulo": "Capítulo 3.3.3 · External fixator",
-   "resumo": "Unilateral mais rígido com pinos afastados no fragmento, pinos perto do foco sem entrar no hematoma, barra perto do osso, pino mais grosso (6 mm = dobro da rigidez do 5 mm; no máximo um terço do diâmetro ósseo), mais pinos, duas barras e segundo plano; circular de ILIZAROV mais rígido com fio mais grosso e mais tenso, olivado, cruzamento perto de 90 graus, anel menor e mais fios, com rigidez axial menor que a do unilateral; pré-perfuração e baixa rotação contra a necrose térmica; CHECKETTS-OTTERBURN com seis graus; conversão em até 2 semanas; pino supra-acetabular guiado pela lágrima.",
+   "resumo": "Unilateral mais rígido com pinos afastados no fragmento, pinos perto do foco sem entrar no hematoma, barra perto do osso, pino mais grosso (6 mm = dobro da rigidez do 5 mm; no máximo um terço do diâmetro ósseo), mais pinos, duas barras e segundo plano; circular de ILIZAROV mais rígido com fio mais grosso e mais tenso, olivado, cruzamento perto de 90 graus, anel menor e mais fios, com rigidez axial menor que a do unilateral; pré-perfuração e baixa rotação contra a necrose térmica; CHECKETTS-OTTERBURN com seis graus; conversão em até 2 semanas; pino supra-acetabular guiado pela lágrima; pré-carga radial com broca um pouco menor que o núcleo do pino (descompasso de até 0,4 mm), pino cônico que não se recua, autoperfurante com 25% menos pega.",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 42,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -84,6 +84,11 @@
      "radar": "fundamento"
     },
     {
+     "id": "a-interface-pino-e-osso-pre-carga-radial-e-afrou",
+     "titulo": "A interface pino e osso: pré-carga radial e afrouxamento",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -98,14 +103,16 @@
     "conceitos-basicos-0282",
     "conceitos-basicos-0210",
     "conceitos-basicos-0137",
-    "trauma-0423"
+    "trauma-0423",
+    "trauma-1151"
    ],
    "treino": [
     "conceitos-basicos-0335",
     "conceitos-basicos-0334"
    ],
    "subtemas": [
-    "Fixadores externos"
+    "Fixadores externos",
+    "Fixação externa e princípios de tratamento"
    ]
   },
   {
@@ -563,6 +570,107 @@
    "subtemas": [
     "Soltura, osteólise e revisão",
     "Artroplastia total: componentes e fixação"
+   ]
+  },
+  {
+   "id": "callaghan-displasia-quadril-adulto",
+   "versao": 1,
+   "titulo": "Displasia do quadril no adulto",
+   "especialidade": "quadril",
+   "livro": "The Adult Hip: Hip Arthroplasty Surgery (Callaghan, Rosenberg, Rubash e colaboradores)",
+   "edicao": "Edição de 2017",
+   "capitulo": "Capítulo 71 · Total Hip Arthroplasty for Developmental Hip Dysplasia",
+   "resumo": "Acetábulo raso, pequeno e deficiente superolateral, antevertido nos graus leves e com anteversão decrescente até a retroversão no CROWE IV; fêmur com anteversão aumentada, canal estreito e trocânter posterior; cápsula alongada e em ampulheta, pulvinar, ligamento redondo e ligamento transverso hipertrofiados; WIBERG menor que 20, TÖNNIS maior que 10, SHENTON rompida na subluxação; CROWE pela linha interlágrimas e junção cabeça-colo sobre a cabeça oposta ou 20% da pelve (I menos de 50%, II 50 a 75%, III 75 a 100%, IV mais de 100%); HARTOFILAKIDIS em displasia, luxação baixa e luxação alta; cúpula no acetábulo verdadeiro, medializada, alta só se não lateral; osteotomia subtrocantérica de encurtamento no CROWE IV; ciático e alongamento de 3 a 4 cm.",
+   "acesso": "gratis",
+   "minutos": 38,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "o-que-e-a-displasia-do-adulto-e-como-ela-evolui",
+     "titulo": "O que é a displasia do adulto e como ela evolui",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-anatomia-do-quadril-displasico",
+     "titulo": "A anatomia do quadril displásico",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-paradoxo-da-versao-acetabular",
+     "titulo": "O paradoxo da versão acetabular",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-exame-do-paciente-displasico",
+     "titulo": "O exame do paciente displásico",
+     "radar": "clinico"
+    },
+    {
+     "id": "as-medidas-radiograficas-da-displasia",
+     "titulo": "As medidas radiográficas da displasia",
+     "radar": "fundamento"
+    },
+    {
+     "id": "as-classificacoes-de-crowe-e-de-hartofilakidis",
+     "titulo": "As classificações de CROWE e de HARTOFILAKIDIS",
+     "radar": "clinico"
+    },
+    {
+     "id": "antes-da-protese-a-osteotomia-periacetabular-em-",
+     "titulo": "Antes da prótese: a osteotomia periacetabular em visão curta",
+     "radar": "clinico"
+    },
+    {
+     "id": "planejamento-e-implantes-da-artroplastia",
+     "titulo": "Planejamento e implantes da artroplastia",
+     "radar": "clinico"
+    },
+    {
+     "id": "a-cupula-acetabulo-verdadeiro-centro-alto-e-cobe",
+     "titulo": "A cúpula: acetábulo verdadeiro, centro alto e cobertura",
+     "radar": "clinico"
+    },
+    {
+     "id": "o-femur-anteversao-haste-e-impacto",
+     "titulo": "O fêmur: anteversão, haste e impacto",
+     "radar": "clinico"
+    },
+    {
+     "id": "crowe-iv-osteotomia-subtrocanterica-de-encurtame",
+     "titulo": "CROWE IV: osteotomia subtrocantérica de encurtamento",
+     "radar": "confirmado"
+    },
+    {
+     "id": "o-nervo-ciatico-e-o-limite-de-alongamento",
+     "titulo": "O nervo ciático e o limite de alongamento",
+     "radar": "clinico"
+    },
+    {
+     "id": "complicacoes-proprias-e-avaliacao-na-mesa",
+     "titulo": "Complicações próprias e avaliação na mesa",
+     "radar": "clinico"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "quadril-0513"
+   ],
+   "treino": [
+    "quadril-0236",
+    "quadril-0241",
+    "quadril-0237",
+    "quadril-0238"
+   ],
+   "subtemas": [
+    "Displasia do quadril no adulto"
    ]
   },
   {
@@ -4674,15 +4782,15 @@
   },
   {
    "id": "campbell15-deformidades-alongamento",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Deformidades ósseas e alongamento",
    "especialidade": "conceitos-basicos",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026)",
    "capitulo": "Capítulo 63 · Malunited Fractures, com o Capítulo 31 · Congenital Anomalies of the Lower Extremity (seção Limb-Length Discrepancy), o Capítulo 58 · General Principles of Fracture Treatment (External Fixation) e o Capítulo 10 · Knee Preservation Surgery",
-   "resumo": "CORA é a intersecção dos eixos proximal e distal (anatômicos ou mecânicos, sem misturar); fora do ponto óbvio indica translação ou multiapical; mesmo nível no AP e perfil = plano oblíquo, níveis diferentes = translação; CORA, eixo de correção e osteotomia juntos = só angulação; eixo na cortical convexa = cunha de abertura; mLDFA e MPTA perto de 87 graus; GREEN-ANDERSON, MOSELEY (erro de 0,6 cm), MENELAUS e multiplicador de PALEY; epifisiodese para 2 a 5 cm; latência, 1 mm/dia em 0,25 × 4, consolidação de duas vezes a distração, cerca de 1 mês por cm; hemicalotasia de TURI no 7º dia; clamshell contraindicado na metáfise e acima de 3 cm.",
+   "resumo": "CORA é a intersecção dos eixos proximal e distal (anatômicos ou mecânicos, sem misturar); fora do ponto óbvio indica translação ou multiapical; mesmo nível no AP e perfil = plano oblíquo, níveis diferentes = translação; CORA, eixo de correção e osteotomia juntos = só angulação; eixo na cortical convexa = cunha de abertura; mLDFA e MPTA perto de 87 graus; GREEN-ANDERSON, MOSELEY (erro de 0,6 cm), MENELAUS e multiplicador de PALEY; epifisiodese para 2 a 5 cm; latência, 1 mm/dia em 0,25 × 4, consolidação de duas vezes a distração, cerca de 1 mês por cm; hemicalotasia de TURI no 7º dia; clamshell contraindicado na metáfise e acima de 3 cm. Causas: encurtam neuropatia, poliomielite, queimados, osteocondroma e RUSSELL-SILVER; alongam fratura diafisária do fêmur (7 a 10 mm), artrite inflamatória, KLIPPEL-TRENAUNAY, PROTEUS, BECKWITH-WIEDEMANN, hemangioma e abscesso de BRODIE.",
    "acesso": "gratis",
-   "minutos": 37,
+   "minutos": 43,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -4750,6 +4858,11 @@
      "radar": "clinico"
     },
     {
+     "id": "causas-da-discrepancia-o-que-encurta-e-o-que-alo",
+     "titulo": "Causas da discrepância: o que encurta e o que alonga",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -4765,11 +4878,15 @@
     "conceitos-basicos-0043",
     "conceitos-basicos-0241",
     "conceitos-basicos-0040",
-    "conceitos-basicos-0032"
+    "conceitos-basicos-0032",
+    "pediatria-0350",
+    "pediatria-1060",
+    "pediatria-1070"
    ],
    "treino": [],
    "subtemas": [
-    "Deformidades ósseas e alongamento"
+    "Deformidades ósseas e alongamento",
+    "Discrepância de comprimento dos membros"
    ]
   },
   {
@@ -4891,15 +5008,15 @@
   },
   {
    "id": "campbell15-entorse-tornozelo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Entorse e instabilidade lateral do tornozelo",
    "especialidade": "pe-tornozelo",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026)",
    "capitulo": "Capítulo 55 · Arthroscopy of the Foot and Ankle (seções Ankle Impingement Syndromes e Ankle Instability), com o Capítulo 94 · Sports Injuries of the Ankle (seções Acute Ligamentous Injuries, Chronic Instability After Injury e Internal Derangements) e o Capítulo 59 (avaliação da sindesmose)",
-   "resumo": "LTFA é o mais fraco e o mais lesado (gaveta anterior), LCF é o único lateral extracapsular e o LTFP o mais forte; tibiotalar profundo posterior é o componente mais forte do deltoide; LTFA com talocalcâneo interósseo muda a mobilidade subtalar; inclinação talar >10° acima do lado normal; tratamento funcional até no grau III; entorse alta pelos testes de compressão (squeeze) e de rotação externa; CHRISMAN-SNOOK com metade do fibular curto; BROSTRÖM-GOULD como escolha na crônica; primeiro raio flexionado e cavo predispõem; impacto anterior após entorses de repetição.",
+   "resumo": "LTFA é o mais fraco e o mais lesado (gaveta anterior), LCF é o único lateral extracapsular e o LTFP o mais forte; tibiotalar profundo posterior é o componente mais forte do deltoide; LTFA com talocalcâneo interósseo muda a mobilidade subtalar; inclinação talar >10° acima do lado normal; tratamento funcional até no grau III; entorse alta pelos testes de compressão (squeeze) e de rotação externa; CHRISMAN-SNOOK com metade do fibular curto; BROSTRÖM-GOULD como escolha na crônica; primeiro raio flexionado e cavo predispõem; impacto anterior após entorses de repetição. Diástase sem fratura: espaço claro tibiofibular acima de 5 mm, sobreposição abaixo de 5 mm no AP, estresse por gravidade, fixação 3 cm acima da articulação se a pinça segue alargada.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 41,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -4977,6 +5094,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "a-diastase-tibiofibular-sem-fratura-imagem-graus",
+     "titulo": "A diástase tibiofibular sem fratura: imagem, graus e EDWARDS e DeLEE",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -4999,11 +5121,13 @@
     "pe-tornozelo-0200",
     "pe-tornozelo-0302",
     "pe-tornozelo-0337",
-    "pe-tornozelo-0308"
+    "pe-tornozelo-0308",
+    "pe-tornozelo-0336"
    ],
    "treino": [],
    "subtemas": [
-    "Entorse e instabilidade lateral do tornozelo"
+    "Entorse e instabilidade lateral do tornozelo",
+    "Lesão da sindesmose"
    ]
   },
   {
@@ -5242,15 +5366,15 @@
   },
   {
    "id": "campbell15-espondiloartrites-artrites",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Espondiloartrites e outras artrites",
    "especialidade": "osteometabolicas",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021) e o Green's Operative Hand Surgery, 7ª ed. (2017)",
    "capitulo": "Capítulo 78 · Arthritic Hand",
-   "resumo": "AR é a artrite inflamatória idiopática mais comum, simétrica, de mãos e pés, com 4 de 7 critérios (rigidez matinal, 3 ou mais áreas, mão, simetria, nódulos, FR, erosões) e anti-CCP 98% específico; polegar de NALEBUFF tipo I (botoeira) é o mais comum; artrodese do punho com pino de STEINMANN saindo entre o 2º e o 3º metacarpos; prótese de cotovelo dá os melhores resultados na AR; soronegativas atacam a êntese, predominam em homens e se ligam ao HLA-B27 (88% a 96% na EA, que sobe de caudal para cefálico e poupa disco e ligamento longitudinal anterior); REITER é tríade com oligoartrite assimétrica de homem jovem; acro-osteólise e lápis na xícara são da psoriásica; gota é monoartrite súbita de homem, com cristal de birrefringência negativa; LYME acomete sobretudo o joelho; AIJ exige 6 semanas, oligoarticular em meninas de 2 a 4 anos, joelho, FAN e uveíte, e FR e FAN não diagnosticam.",
+   "resumo": "AR é a artrite inflamatória idiopática mais comum, simétrica, de mãos e pés, com 4 de 7 critérios (rigidez matinal, 3 ou mais áreas, mão, simetria, nódulos, FR, erosões) e anti-CCP 98% específico; polegar de NALEBUFF tipo I (botoeira) é o mais comum; artrodese do punho com pino de STEINMANN saindo entre o 2º e o 3º metacarpos; prótese de cotovelo dá os melhores resultados na AR; soronegativas atacam a êntese, predominam em homens e se ligam ao HLA-B27 (88% a 96% na EA, que sobe de caudal para cefálico e poupa disco e ligamento longitudinal anterior); REITER é tríade com oligoartrite assimétrica de homem jovem; acro-osteólise e lápis na xícara são da psoriásica; gota é monoartrite súbita de homem, com cristal de birrefringência negativa; LYME acomete sobretudo o joelho; AIJ exige 6 semanas, oligoarticular em meninas de 2 a 4 anos, joelho, FAN e uveíte, e FR e FAN não diagnosticam; na EA ossificam ânulo (ponte marginal), facetas e ligamentos interespinhosos, supraespinhosos e amarelo, poupando disco e ligamento longitudinal anterior.",
    "acesso": "gratis",
-   "minutos": 32,
+   "minutos": 35,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -5346,6 +5470,7 @@
     "mao-0454",
     "osteometabolicas-0081",
     "osteometabolicas-0093",
+    "coluna-0012",
     "osteometabolicas-0012",
     "osteometabolicas-0066",
     "osteometabolicas-0073",
@@ -5359,7 +5484,9 @@
    ],
    "treino": [],
    "subtemas": [
-    "Espondiloartrites e outras artrites"
+    "Espondiloartrites e outras artrites",
+    "Espondiloartrites",
+    "Artrite reumatoide"
    ]
   },
   {
@@ -7827,15 +7954,15 @@
   },
   {
    "id": "campbell15-outras-infeccoes",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Artrite séptica, tuberculose e outras infecções osteoarticulares",
    "especialidade": "conceitos-basicos",
    "livro": "Campbell's Operative Orthopaedics",
    "edicao": "15ª edição (2026)",
    "capitulo": "Capítulo 24 · Infectious Arthritis",
-   "resumo": "Artrite séptica (S. aureus em todas as idades, gonococo em 75% do adulto jovem sexualmente ativo, Kingella de 6 a 36 meses, metáfises intra-articulares de rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais, KOCHER, GÄCHTER), tuberculose (coluna 30% a 50%, POTT, cotovelo na ulna proximal), brucelose (quadril 53% no Tachdjian, axial no Campbell), Salmonella diafisária na falciforme, endocardite na espondilodiscite por enterococo, paroníquia crônica por Candida e gram-negativos, C. perfringens, biofilme exopolissacarídeo, sonicação, critérios de FRI e MSIS.",
+   "resumo": "Artrite séptica (S. aureus em todas as idades, gonococo em 75% do adulto jovem sexualmente ativo, Kingella de 6 a 36 meses, metáfises intra-articulares de rádio proximal, úmero proximal, fêmur proximal, tíbia e fíbula distais, KOCHER, GÄCHTER), tuberculose (coluna 30% a 50%, POTT, cotovelo na ulna proximal), brucelose (quadril 53% no Tachdjian, axial no Campbell), Salmonella diafisária na falciforme, endocardite na espondilodiscite por enterococo, paroníquia crônica por Candida e gram-negativos, C. perfringens, biofilme exopolissacarídeo, sonicação, critérios de FRI e MSIS; CRMO autoinflamatória de menina de 10 anos, tíbia, fêmur, clavícula, pé e corpo vertebral (pelve e costelas raras), cultura negativa, AINE e não antibiótico.",
    "acesso": "gratis",
-   "minutos": 34,
+   "minutos": 39,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -7928,6 +8055,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "osteomielite-cronica-multifocal-recorrente-e-sap",
+     "titulo": "Osteomielite crônica multifocal recorrente e SAPHO: a osteomielite sem germe",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -7952,11 +8084,13 @@
     "conceitos-basicos-0093",
     "joelho-0191",
     "conceitos-basicos-0118",
-    "conceitos-basicos-0200"
+    "conceitos-basicos-0200",
+    "conceitos-basicos-0192"
    ],
    "treino": [],
    "subtemas": [
-    "Outras infecções osteoarticulares"
+    "Outras infecções osteoarticulares",
+    "Doenças autoinflamatórias ósseas"
    ]
   },
   {
@@ -9329,15 +9463,15 @@
   },
   {
    "id": "dahlin-condroblastoma",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Condroblastoma (e o fibroma condromixoide)",
    "especialidade": "tumores",
    "livro": "Dahlin's Bone Tumors: General Aspects and Data on 10,165 Cases",
    "edicao": "6ª edição (2010)",
    "capitulo": "Capítulo 4 · Benign Chondroblastoma",
-   "resumo": "Tumor cartilaginoso benigno do centro de ossificação secundário (tumor de CODMAN): segunda década, fise aberta, 2:1 masculino; epífise ou apófise (úmero proximal o local isolado mais comum, joelho somando 34%, trocânter maior, tubérculo maior, patela); lítico, bem delimitado, halo esclerótico fino, calcificação em 30% a 50% (melhor na TC), edema abundante na RM, cruzar a fise aberta é quase diagnóstico; condroblastos poligonais em pedra de calçamento com núcleo em grão de café, células gigantes e calcificação em tela de galinheiro; ABC secundário em 20% a mais de 1/3; ENNEKING 2, raramente 3; curetagem estendida com broca e adjuvantes e enxerto ou cimento, curetagem adequada acima de poupar a fise; recidiva 10% a 32%; metástase pulmonar benigna em ~1%.",
+   "resumo": "Tumor cartilaginoso benigno do centro de ossificação secundário (tumor de CODMAN): segunda década, fise aberta, 2:1 masculino; epífise ou apófise (úmero proximal o local isolado mais comum, joelho somando 34%, trocânter maior, tubérculo maior, patela); lítico, bem delimitado, halo esclerótico fino, calcificação em 30% a 50% (melhor na TC), edema abundante na RM, cruzar a fise aberta é quase diagnóstico; condroblastos poligonais em pedra de calçamento com núcleo em grão de café, células gigantes e calcificação em tela de galinheiro; ABC secundário em 20% a mais de 1/3; ENNEKING 2, raramente 3; curetagem estendida com broca e adjuvantes e enxerto ou cimento, curetagem adequada acima de poupar a fise; recidiva 10% a 32%; metástase pulmonar benigna em ~1%; fibroma condromixoide metafisário, tíbia proximal (14 de 50 na Fig. 5.1 do Dahlin), dor longa, sem cálcio, diferencial com condrossarcoma pela hipercelularidade difusa.",
    "acesso": "gratis",
-   "minutos": 37,
+   "minutos": 43,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -9410,6 +9544,11 @@
      "radar": "fundamento"
     },
     {
+     "id": "fibroma-condromixoide-em-detalhe-o-mapa-da-mayo-",
+     "titulo": "Fibroma condromixoide em detalhe: o mapa da Mayo, a clínica e o diferencial",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -9423,11 +9562,13 @@
     "tumores-0071",
     "tumores-0390",
     "tumores-0347",
-    "tumores-0113"
+    "tumores-0113",
+    "tumores-0033"
    ],
    "treino": [],
    "subtemas": [
-    "Condroblastoma"
+    "Condroblastoma",
+    "Fibroma condromixoide"
    ]
   },
   {
@@ -12878,6 +13019,156 @@
    ]
   },
   {
+   "id": "green-tumores-mao",
+   "versao": 1,
+   "titulo": "Tumores da mão",
+   "especialidade": "mao",
+   "livro": "Green's Operative Hand Surgery",
+   "edicao": "7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 83), o Dahlin's Bone Tumors, 6ª ed. (2010), e o HEBERT, 5ª ed.",
+   "capitulo": "Capítulo 59 · Bone and Soft Tissue Tumors (com o capítulo 58, Skin Tumors of the Hand and Upper Extremity)",
+   "resumo": "Cisto sinovial é o tumor de partes moles mais comum e o tumor de células gigantes da bainha o segundo (recidiva maior na IFD, com artrose e erosão óssea); cisto mucoso se trata com excisão do cisto e do osteófito; tumor glômico é dor intensa, ponto doloroso e intolerância ao frio, subungueal, 1% a 5% dos tumores da mão; schwannoma se enuclea, neurofibroma é o da doença de VON RECKLINGHAUSEN, hamartoma lipofibromatoso é do mediano; encondroma é o tumor ósseo mais comum, na falange proximal; osteocondroma na região distal da falange proximal; lesão de NORA sem continuidade medular; cisto ósseo aneurismático no metacarpo; condrossarcoma é o maligno ósseo primário mais comum e vai ao pulmão; metástase acral vem do pulmão; ENNEKING IIA é alto grau intracompartimental e IIB extracompartimental; sarcoma na falange média pede ressecção do raio; sarcoma sinovial no carpo, calcificação em 20% a 30%; carcinoma espinocelular é o maligno de pele mais comum da mão e do perioníquio, no polegar, com a ceratose actínica de precursora; carcinoma basocelular agressivo no local e raramente metastático; melanoma lentiginoso acral, sinal de HUTCHINSON, biópsia após 2 meses, margem de 1 cm até 1 mm de BRESLOW.",
+   "acesso": "gratis",
+   "minutos": 42,
+   "secoes": [
+    {
+     "id": "como-ler-este-capitulo",
+     "titulo": "Como ler este capítulo",
+     "radar": "fundamento"
+    },
+    {
+     "id": "estadiamento-a-classificacao-de-enneking",
+     "titulo": "Estadiamento: a classificação de ENNEKING",
+     "radar": "confirmado"
+    },
+    {
+     "id": "avaliacao-e-biopsia-o-que-fazer-antes-de-cortar",
+     "titulo": "Avaliação e biópsia: o que fazer antes de cortar",
+     "radar": "clinico"
+    },
+    {
+     "id": "margens-na-mao-por-que-o-raio",
+     "titulo": "Margens na mão: por que o raio",
+     "radar": "clinico"
+    },
+    {
+     "id": "cisto-sinovial-e-cisto-mucoso",
+     "titulo": "Cisto sinovial e cisto mucoso",
+     "radar": "confirmado"
+    },
+    {
+     "id": "outras-massas-benignas-de-partes-moles",
+     "titulo": "Outras massas benignas de partes moles",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumor-glomico",
+     "titulo": "Tumor glômico",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumores-de-nervo",
+     "titulo": "Tumores de nervo",
+     "radar": "confirmado"
+    },
+    {
+     "id": "sarcomas-de-partes-moles",
+     "titulo": "Sarcomas de partes moles",
+     "radar": "clinico"
+    },
+    {
+     "id": "encondroma-e-as-encondromatoses",
+     "titulo": "Encondroma e as encondromatoses",
+     "radar": "confirmado"
+    },
+    {
+     "id": "osteocondroma-lesao-de-nora-e-as-lesoes-de-super",
+     "titulo": "Osteocondroma, lesão de NORA e as lesões de superfície",
+     "radar": "clinico"
+    },
+    {
+     "id": "osteoma-osteoide-cisto-osseo-aneurismatico-e-tum",
+     "titulo": "Osteoma osteoide, cisto ósseo aneurismático e tumor de células gigantes",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumores-osseos-malignos-e-metastases",
+     "titulo": "Tumores ósseos malignos e metástases",
+     "radar": "confirmado"
+    },
+    {
+     "id": "tumores-de-pele-lesoes-pre-malignas-e-carcinomas",
+     "titulo": "Tumores de pele: lesões pré-malignas e carcinomas",
+     "radar": "confirmado"
+    },
+    {
+     "id": "melanoma",
+     "titulo": "Melanoma",
+     "radar": "confirmado"
+    },
+    {
+     "id": "fechamento",
+     "titulo": "Fechamento",
+     "radar": "fundamento"
+    }
+   ],
+   "questoes": [
+    "mao-0459",
+    "mao-0737",
+    "mao-1864",
+    "mao-0725",
+    "mao-1128",
+    "mao-1866",
+    "mao-0638",
+    "mao-1203",
+    "mao-1551",
+    "mao-0754",
+    "mao-0951",
+    "mao-1021",
+    "mao-1554",
+    "mao-1468",
+    "mao-0801",
+    "mao-1340",
+    "mao-0851",
+    "mao-1122",
+    "mao-1404",
+    "mao-1070",
+    "mao-1358",
+    "mao-1392",
+    "mao-1408",
+    "mao-1309",
+    "mao-1600"
+   ],
+   "treino": [
+    "mao-2187",
+    "mao-2380",
+    "mao-1732",
+    "mao-2327",
+    "mao-2274",
+    "mao-2202",
+    "mao-2185",
+    "mao-2541",
+    "mao-2016",
+    "mao-2184",
+    "mao-2183",
+    "mao-2186",
+    "mao-1731",
+    "mao-2275",
+    "mao-2014",
+    "mao-2469",
+    "mao-2451",
+    "mao-2328",
+    "mao-2054",
+    "mao-2118",
+    "mao-2273",
+    "mao-2117",
+    "mao-2423",
+    "mao-2525"
+   ],
+   "subtemas": [
+    "Tumores da mão"
+   ]
+  },
+  {
    "id": "green-tunel-carpo",
    "versao": 1,
    "titulo": "Síndrome do túnel do carpo",
@@ -15435,15 +15726,15 @@
   },
   {
    "id": "lw-osteocondroses",
-   "versao": 2,
+   "versao": 3,
    "titulo": "Osteocondroses",
    "especialidade": "pediatria",
    "livro": "Lovell and Winter's Pediatric Orthopaedics",
    "edicao": "7ª edição (2014), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), caps. 19 e 40, o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 34, e o Rockwood and Wilkins' Fractures in Children, 10ª ed., caps. 23 e 31",
    "capitulo": "Capítulo 9 · Localized Disorders of Skin and Soft Tissue (seção The Osteochondroses), com o Capítulo 29 · The Foot e o Capítulo 31 · Sports Medicine in the Growing Child",
-   "resumo": "Osteocondrose é falha da ossificação endocondral de um núcleo que crescia normalmente, por isquemia nas articulares e por tração nas apofisárias; KÖHLER é o navicular do menino pequeno (4 vezes mais em meninos, abaixo de 6 a 7 anos, autolimitado, gesso curto); FREIBERG é a cabeça do 2º metatarso da adolescente, a única com predileção feminina; SEVER é a apófise do calcâneo (9 a 14 anos, bilateral, radiografia normal); ISELIN é a base do 5º metatarso (fibular curto, oblíqua); OSGOOD-SCHLATTER é o tubérculo tibial (patela alta e reto femoral encurtado); SINDING-LARSEN-JOHANSSON é o polo inferior da patela por tração; PANNER é o capítulo antes dos 10 anos, e a osteocondrite dissecante do capítulo é a da criança mais velha, do beisebol e da ginástica.",
+   "resumo": "Osteocondrose é falha da ossificação endocondral de um núcleo que crescia normalmente, por isquemia nas articulares e por tração nas apofisárias; KÖHLER é o navicular do menino pequeno (4 vezes mais em meninos, abaixo de 6 a 7 anos, autolimitado, gesso curto); FREIBERG é a cabeça do 2º metatarso da adolescente, a única com predileção feminina; SEVER é a apófise do calcâneo (9 a 14 anos, bilateral, radiografia normal); ISELIN é a base do 5º metatarso (fibular curto, oblíqua); OSGOOD-SCHLATTER é o tubérculo tibial (patela alta e reto femoral encurtado); SINDING-LARSEN-JOHANSSON é o polo inferior da patela por tração; PANNER é o capítulo antes dos 10 anos, e a osteocondrite dissecante do capítulo é a da criança mais velha, do beisebol e da ginástica. SEVER no capítulo do pé: média de 11,5 anos, sem dor noturna, diagnóstico clínico, tratamento sintomático com alongamento do tendão calcâneo e fortalecimento do compartimento anterior, sem cirurgia.",
    "acesso": "gratis",
-   "minutos": 35,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15545,6 +15836,7 @@
     "pediatria-0039",
     "pediatria-0937",
     "pediatria-0518",
+    "pe-tornozelo-0241",
     "pediatria-0512",
     "pediatria-0249",
     "joelho-0197",
@@ -15556,7 +15848,8 @@
    "treino": [],
    "subtemas": [
     "Osteocondroses",
-    "Joelho na criança"
+    "Joelho na criança",
+    "Osteocondroses do pé"
    ]
   },
   {
@@ -15676,15 +15969,15 @@
   },
   {
    "id": "lw-raquitismo",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Raquitismo e osteomalácia",
    "especialidade": "osteometabolicas",
    "livro": "Lovell and Winter's Pediatric Orthopaedics",
    "edicao": "7ª edição (2014), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 38, o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 4 e 25, o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 34, e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 27",
    "capitulo": "Capítulo 6 · Metabolic and Endocrine Abnormalities",
-   "resumo": "Raquitismo (criança: fise alargada e borrada, metáfise em taça, rosário, HARRISON, genuvaro ou valgo, LOOSER) e osteomalácia (adulto: fraqueza proximal, pseudofraturas); nutricional = falta de vitamina D, 3 a 18 meses, amamentação exclusiva, fosfato baixo e PTH alto; tipo I = 25 normal e 1,25 baixo; tipo II = 1,25 muito alto e alopecia; ligado ao X = PHEX e FGF23, PTH normal, fosfato mais calcitriol; renal = fosfato e PTH altos; anticonvulsivantes; a fosfatase alcalina pode subir antes de cair.",
+   "resumo": "Raquitismo (criança: fise alargada e borrada, metáfise em taça, rosário, HARRISON, genuvaro ou valgo, LOOSER) e osteomalácia (adulto: fraqueza proximal, pseudofraturas); nutricional = falta de vitamina D, 3 a 18 meses, amamentação exclusiva, fosfato baixo e PTH alto; tipo I = 25 normal e 1,25 baixo; tipo II = 1,25 muito alto e alopecia; ligado ao X = PHEX e FGF23, PTH normal, fosfato mais calcitriol; renal = fosfato e PTH altos; anticonvulsivantes; a fosfatase alcalina pode subir antes de cair. Fosfato baixo é o denominador comum das formas não renais; atividade osteoblástica normal com osteoide abundante (Tachdjian).",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 40,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -15782,6 +16075,11 @@
      "radar": "confirmado"
     },
     {
+     "id": "o-fosforo-em-uma-pergunta-baixo-em-quase-todos-a",
+     "titulo": "O fósforo em uma pergunta: baixo em quase todos, alto no renal",
+     "radar": "confirmado"
+    },
+    {
      "id": "fechamento",
      "titulo": "Fechamento",
      "radar": "fundamento"
@@ -15799,7 +16097,9 @@
     "osteometabolicas-0060",
     "osteometabolicas-0031",
     "osteometabolicas-0020",
-    "osteometabolicas-0022"
+    "osteometabolicas-0022",
+    "pediatria-0448",
+    "pediatria-0899"
    ],
    "treino": [
     "osteometabolicas-0111",
@@ -15807,7 +16107,8 @@
     "osteometabolicas-0112"
    ],
    "subtemas": [
-    "Raquitismo e osteomalácia"
+    "Raquitismo e osteomalácia",
+    "Raquitismo e doenças metabólicas na criança"
    ]
   },
   {
@@ -17435,15 +17736,15 @@
   },
   {
    "id": "rockwood10-36-umero-proximal",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Fratura do úmero proximal",
    "especialidade": "trauma",
    "livro": "Rockwood and Green's Fractures in Adults",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 36 · Proximal Humeral Fractures",
-   "resumo": "Neer, Hertel e Mayo/FJD, irrigação da cabeça, placa bloqueada e calcar, haste, reversa e hemiartroplastia, e as complicações: o úmero proximal explicado pelo que a prova cobra.",
+   "resumo": "Neer, Hertel e Mayo/FJD, irrigação da cabeça, placa bloqueada e calcar, haste, reversa e hemiartroplastia, e as complicações: o úmero proximal explicado pelo que a prova cobra. Osteonecrose: corticoide, falciforme e álcool; CRUESS III é o colapso subcondral; hemi com glenoide íntegra, total no V, reversa com grande dorsal sem tubérculo maior.",
    "acesso": "gratis",
-   "minutos": 40,
+   "minutos": 45,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -17519,6 +17820,11 @@
      "id": "tratamento-sem-cirurgia-e-epidemiologia",
      "titulo": "Tratamento sem cirurgia e epidemiologia",
      "radar": "clinico"
+    },
+    {
+     "id": "osteonecrose-da-cabeca-umeral-causas-cruess-e-tr",
+     "titulo": "Osteonecrose da cabeça umeral: causas, CRUESS e tratamento por estágio",
+     "radar": "confirmado"
     }
    ],
    "questoes": [
@@ -17570,7 +17876,8 @@
     "trauma-0778",
     "ombro-cotovelo-0045",
     "trauma-0686",
-    "trauma-1177"
+    "trauma-1177",
+    "ombro-cotovelo-0553"
    ],
    "treino": [
     "ombro-cotovelo-0600",
@@ -17601,7 +17908,8 @@
    ],
    "subtemas": [
     "Fratura do úmero proximal",
-    "Fraturas do úmero proximal e da escápula"
+    "Fraturas do úmero proximal e da escápula",
+    "Osteonecrose da cabeça umeral"
    ]
   },
   {
@@ -22055,15 +22363,15 @@
   },
   {
    "id": "rockwood10-pseudartrose",
-   "versao": 1,
+   "versao": 2,
    "titulo": "Pseudartrose e retardo de consolidação",
    "especialidade": "conceitos-basicos",
    "livro": "Rockwood and Green's Fractures in Adults",
    "edicao": "10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (2026)",
    "capitulo": "Capítulo 30 · Principles of Nonunion and Bone Defect Treatment",
-   "resumo": "Retardo (3 a 6 meses) e pseudartrose (não consolida sem nova intervenção; FDA 9 meses + 3 sem progressão); hipertrófica (falta estabilidade), oligotrófica (falta contato), atrófica (falta biologia) e sinovial (fenda fria entre duas áreas quentes); TC com sensibilidade de 100% e especificidade de 62%; nicotina e AINE (COX-2 e não seletivos) atrapalham; NURD com retalho valendo 5 pontos; haste fresada fechada na tíbia, placa no úmero; autoenxerto com as três propriedades, cerâmicas e vidro bioativo osteocondutores, homoenxerto vem de outro indivíduo, PRP de 2 a 6 vezes; MASQUELET (PMMA, membrana, enxerto em 4 a 8 semanas); ILIZAROV com compressão no foco e corticotomia metafisária com alongamento gradual.",
+   "resumo": "Retardo (3 a 6 meses) e pseudartrose (não consolida sem nova intervenção; FDA 9 meses + 3 sem progressão); hipertrófica (falta estabilidade), oligotrófica (falta contato), atrófica (falta biologia) e sinovial (fenda fria entre duas áreas quentes); TC com sensibilidade de 100% e especificidade de 62%; nicotina e AINE (COX-2 e não seletivos) atrapalham; NURD com retalho valendo 5 pontos; haste fresada fechada na tíbia, placa no úmero; autoenxerto com as três propriedades, cerâmicas e vidro bioativo osteocondutores, homoenxerto vem de outro indivíduo, PRP de 2 a 6 vezes; MASQUELET (PMMA, membrana, enxerto em 4 a 8 semanas); ILIZAROV com compressão no foco e corticotomia metafisária com alongamento gradual; PAPINEAU (enxerto esponjoso aberto em três tempos: desbridamento e estabilização, enxerto, pele) quando não há retalho.",
    "acesso": "gratis",
-   "minutos": 36,
+   "minutos": 38,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",
@@ -22179,6 +22487,7 @@
     "conceitos-basicos-0262",
     "conceitos-basicos-0073",
     "conceitos-basicos-0308",
+    "trauma-1197",
     "conceitos-basicos-0209"
    ],
    "treino": [],
@@ -23024,15 +23333,15 @@
   },
   {
    "id": "rockwoodcriancas10-04-gesso-tala",
-   "versao": 3,
+   "versao": 4,
    "titulo": "Tratamento conservador e imobilização",
    "especialidade": "pediatria",
    "livro": "Rockwood and Wilkins' Fractures in Children",
    "edicao": "10ª edição (2025)",
    "capitulo": "Capítulo 4 · Cast and Splint Immobilization",
-   "resumo": "Três princípios do gesso na fratura instável (dobradiça de partes moles, três pontos e pressão hidrostática: partes moles e diáfise não compressíveis ficam rígidas); dobradiça íntegra na baixa energia do jovem; cunha com dobradiça medial e varo no distal para a tíbia em valgo; BURKHALTER e JAMES com punho a 40 graus, MF a 70 a 90 e IF estendidas (colaterais estirados); PTB até o polo inferior da patela, longe do fibular comum; órtese de SARMIENTO por pressão hidrostática, contração muscular e gravidade; gesso pendente com alça curta em varo; tração 90-90 pelo iliopsoas e rigidez do joelho como pior complicação da tração; tenaz com 10 lb e 5 lb por segmento; halo acima do terço lateral da órbita; JEWETT de T6 a L3; gesso vence a órtese no paciente pouco colaborativo; na criança, regra do polegar, spica sem bota de tração, três As, queimadura acima de 50 °C e 24 camadas.",
+   "resumo": "Três princípios do gesso na fratura instável (dobradiça de partes moles, três pontos e pressão hidrostática: partes moles e diáfise não compressíveis ficam rígidas); dobradiça íntegra na baixa energia do jovem; cunha com dobradiça medial e varo no distal para a tíbia em valgo; BURKHALTER e JAMES com punho a 40 graus, MF a 70 a 90 e IF estendidas (colaterais estirados); PTB até o polo inferior da patela, longe do fibular comum; órtese de SARMIENTO por pressão hidrostática, contração muscular e gravidade; gesso pendente com alça curta em varo; tração 90-90 pelo iliopsoas e rigidez do joelho como pior complicação da tração; tenaz com 10 lb e 5 lb por segmento; halo acima do terço lateral da órbita; JEWETT de T6 a L3; gesso vence a órtese no paciente pouco colaborativo; na criança, regra do polegar, spica sem bota de tração, três As, queimadura acima de 50 °C e 24 camadas. No braço, só a órtese une os três princípios; VELPEAU e tala em U são provisórias, gesso pendente usa só a gravidade.",
    "acesso": "gratis",
-   "minutos": 38,
+   "minutos": 41,
    "secoes": [
     {
      "id": "como-ler-este-capitulo",

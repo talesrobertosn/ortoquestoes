@@ -1,6 +1,6 @@
 ---
 id: lw-raquitismo
-versao: 1
+versao: 2
 titulo: Raquitismo e osteomalácia
 especialidade: osteometabolicas
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Lovell and Winter's Pediatric Orthopaedics
 edicao: 7ª edição (2014), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 38, o Rockwood and Green's Fractures in Adults, 10ª ed. (2025), caps. 4 e 25, o Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 34, e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 27
 capitulo: Capítulo 6 · Metabolic and Endocrine Abnormalities
 autores: Andrew W. HOWARD e Benjamin A. ALMAN (Lovell, cap. 6); Harry K.W. KIM e Mouin G. SEIKALY (Tachdjian, cap. 38); Akira ISHIDA, José Antonio PINTO, Francesco Camara BLUMETTI, Henrique SODRÉ e Eiffel Tsuyoshi DOBASHI (HEBERT, cap. 27)
-fonte: Livros conferidos localmente em 03/11/2026: Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6, p. 140 a 152 (fisiologia do cálcio, fósforo e vitamina D, Tabela 6-1, placa de crescimento, raquitismo com as Tabelas 6-2 e 6-3, osteodistrofia renal); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 38, p. 1928 a 1941 (metabolismo da vitamina D, Tabelas 38.2, 38.3 e 38.4 extraídas do PDF, patologia, clínica, radiografia, raquitismo hipofosfatêmico, dependente de vitamina D, tratamento clínico e ortopédico, hipervitaminose D); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 4, seções Osteomalacia and Rickets e Primary Hyperparathyroidism, p. 100 a 104 aprox. (Tabela 4-5), e cap. 25, introdução, p. 765; Campbell's Operative Orthopaedics, 15ª ed., cap. 34, seção Rickets, Osteomalacia, and Renal Osteodystrophy, p. 1220.e1 e 1220.e2; Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 27 (Raquitismo, Osteodistrofia renal e Hiperparatireoidismo primário), edição digital sem página impressa. As páginas citadas são as impressas.
-subtemas: Raquitismo e osteomalácia
-resumo: Raquitismo (criança: fise alargada e borrada, metáfise em taça, rosário, HARRISON, genuvaro ou valgo, LOOSER) e osteomalácia (adulto: fraqueza proximal, pseudofraturas); nutricional = falta de vitamina D, 3 a 18 meses, amamentação exclusiva, fosfato baixo e PTH alto; tipo I = 25 normal e 1,25 baixo; tipo II = 1,25 muito alto e alopecia; ligado ao X = PHEX e FGF23, PTH normal, fosfato mais calcitriol; renal = fosfato e PTH altos; anticonvulsivantes; a fosfatase alcalina pode subir antes de cair.
+fonte: Livros conferidos localmente em 03/11/2026: Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 6, p. 140 a 152 (fisiologia do cálcio, fósforo e vitamina D, Tabela 6-1, placa de crescimento, raquitismo com as Tabelas 6-2 e 6-3, osteodistrofia renal); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 38, p. 1928 a 1941 (metabolismo da vitamina D, Tabelas 38.2, 38.3 e 38.4 extraídas do PDF, patologia, clínica, radiografia, raquitismo hipofosfatêmico, dependente de vitamina D, tratamento clínico e ortopédico, hipervitaminose D); Rockwood and Green's Fractures in Adults, 10ª ed., cap. 4, seções Osteomalacia and Rickets e Primary Hyperparathyroidism, p. 100 a 104 aprox. (Tabela 4-5), e cap. 25, introdução, p. 765; Campbell's Operative Orthopaedics, 15ª ed., cap. 34, seção Rickets, Osteomalacia, and Renal Osteodystrophy, p. 1220.e1 e 1220.e2; Sizínio HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 27 (Raquitismo, Osteodistrofia renal e Hiperparatireoidismo primário), edição digital sem página impressa. As páginas citadas são as impressas. Acréscimo conferido em 10/11/2026 (o fósforo por tipo e a atividade osteoblástica): Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 38, p. 1931 e Tabela 38.4 (p. 1933); HEBERT, 5ª ed., cap. 27 (pág. PDF 1944).
+subtemas: Raquitismo e osteomalácia; Raquitismo e doenças metabólicas na criança
+resumo: Raquitismo (criança: fise alargada e borrada, metáfise em taça, rosário, HARRISON, genuvaro ou valgo, LOOSER) e osteomalácia (adulto: fraqueza proximal, pseudofraturas); nutricional = falta de vitamina D, 3 a 18 meses, amamentação exclusiva, fosfato baixo e PTH alto; tipo I = 25 normal e 1,25 baixo; tipo II = 1,25 muito alto e alopecia; ligado ao X = PHEX e FGF23, PTH normal, fosfato mais calcitriol; renal = fosfato e PTH altos; anticonvulsivantes; a fosfatase alcalina pode subir antes de cair. Fosfato baixo é o denominador comum das formas não renais; atividade osteoblástica normal com osteoide abundante (Tachdjian).
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -462,6 +462,38 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 25, p. 765), manda, d
 conceito: Na fratura patológica não neoplásica, osteodistrofia renal, hiperparatireoidismo e osteomalácia (com a osteoporose por desuso) são corrigíveis; PAGET, osteogênese imperfeita e osteopetrose não.
 como: Uma prova de Ortopedia pediu o trio de condições corrigíveis da fratura patológica associada a doença esquelética não neoplásica.
 armadilha: Incluir a doença de PAGET, que o Rockwood põe entre as não corrigíveis.
+!fim
+
+# O fósforo em uma pergunta: baixo em quase todos, alto no renal {radar=confirmado}
+
+Duas questões de ortopedia pediátrica cobram o laboratório do raquitismo sem pedir a tabela inteira: uma quer saber em que tipo o fosfato sobe, a outra afirma que a marca do exame é a fosfatemia baixa. As duas se resolvem com o mesmo raciocínio, que vale a pena isolar.
+
+O HEBERT (cap. 27) dá a regra de uma linha: o **fósforo está reduzido em todos os tipos de raquitismo, exceto na osteodistrofia renal, em que está aumentado**. A Tabela 38.4 do Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 38, p. 1933), confirma: fosfato normal ou baixo no nutricional, baixo no resistente e nos dois dependentes, **alto só no renal**. O que muda de um tipo para outro é o caminho até a hipofosfatemia.
+
+!tabela Por que o fosfato cai ou sobe em cada tipo (Tachdjian, cap. 38, Tabela 38.4 e p. 1932 a 1939; Lovell and Winter, cap. 6, p. 148 a 150; HEBERT, cap. 27)
+| Tipo | Fosfato | O caminho |
+|---|---|---|
+| Nutricional (carencial) | normal ou baixo | falta vitamina D, o cálcio tende a cair, o PTH sobe e o rim perde fosfato |
+| Dependente de vitamina D, tipos I e II | baixo | falta o efeito do 1,25 (não é produzido ou o receptor não responde), o cálcio cai e o PTH alto elimina fosfato |
+| Resistente à vitamina D (hipofosfatêmico ligado ao X e afins) | baixo | o defeito primário é a perda renal de fosfato; cálcio e PTH normais |
+| Osteodistrofia renal | **alto** | o rim doente não elimina o fosfato; a hiperfosfatemia derruba o cálcio e o PTH sobe muito |
+!fim
+
+Por isso a hipofosfatemia é o denominador comum das formas não renais, e o cálcio não serve para esse papel: ele é normal nas hipofosfatêmicas e normal ou só levemente baixo no nutricional. A fosfatase alcalina está alta em todos os tipos e não separa nenhum.
+
+O segundo ponto é o osteoblasto. O Tachdjian (p. 1931) é textual: no raquitismo, **a atividade osteoblástica nas superfícies endosteal e periosteal é normal e forma-se osteoide abundante**; o que falha é a mineralização. O HEBERT lê a fosfatase alcalina alta como reflexo do turnover aumentado. Ou seja, pelos livros o osteoblasto do raquítico trabalha, e trabalha sobre uma matriz que não calcifica.
+
+!questoes central=pediatria-0448
+conceito: O fosfato sérico está baixo (ou normal baixo) em todas as formas de raquitismo e aumentado apenas na osteodistrofia renal, porque o rim insuficiente não o elimina.
+como: Uma prova de ortopedia pediu o tipo de raquitismo com fosfato aumentado, com o nutricional, o resistente e o dependente de vitamina D como distratores.
+armadilha: Marcar o resistente à vitamina D por ser a forma "do fosfato": ali o fosfato é o mais baixo de todos, pela perda renal.
+!fim
+
+!questoes central=pediatria-0899
+conceito: A fosfatemia baixa é o achado laboratorial comum às formas não renais de raquitismo (nutricional, dependentes e resistentes); só a osteodistrofia renal cursa com fosfato alto.
+como: A prova de R4 de Coluna da SES-DF 2022 deu como item certo que a característica principal do laboratório do raquitismo é a baixa fosfatemia e que a doença se caracteriza por redução da atividade osteoblástica.
+armadilha: Julgar o item pela fosfatase alcalina e esquecer que a primeira frase, a do fosfato, é a que a banca queria; e generalizar a fosfatemia baixa para a osteodistrofia renal.
+alerta: O gabarito de `pediatria-0899` é Certo. Os livros sustentam a primeira frase (HEBERT, cap. 27: fósforo reduzido em todos os tipos, exceto na osteodistrofia renal; Tachdjian, Tabela 38.4), mas não a segunda: o Tachdjian (p. 1931) diz que a atividade osteoblástica é normal, com osteoide abundante, e o HEBERT atribui a fosfatase alcalina alta ao turnover aumentado. Pelos livros, o defeito é de mineralização, não de atividade do osteoblasto.
 !fim
 
 # Fechamento {radar=fundamento}

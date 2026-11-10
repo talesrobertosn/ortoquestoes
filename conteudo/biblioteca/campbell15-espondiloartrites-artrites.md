@@ -1,6 +1,6 @@
 ---
 id: campbell15-espondiloartrites-artrites
-versao: 1
+versao: 2
 titulo: Espondiloartrites e outras artrites
 especialidade: osteometabolicas
 acesso: gratis
@@ -8,9 +8,9 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021) e o Green's Operative Hand Surgery, 7ª ed. (2017)
 capitulo: Capítulo 78 · Arthritic Hand
 autores: James H. CALANDRUCCIO
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 78 (Arthritic Hand, p. 3443 a 3449, 3470 a 3471 e 3494 a 3496), cap. 90 (Arthritis of the Foot, p. 3964 e 3965), cap. 46 (p. 1847 e 1848), cap. 45 (p. 1764 a 1769), cap. 25 (doença de LYME, p. 859 a 861), cap. 15 (artroplastia do cotovelo, p. 654 a 661) e cap. 4 (p. 245, 246 e 265); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 22 (Arthritis, p. 928 a 941) e cap. 23 (p. 956 a 958); Green's Operative Hand Surgery, 7ª ed. (2017), cap. 55 (p. 1865, 1866, 1894 e 1895) e cap. 56 (p. 1905). As páginas citadas são as impressas.
-subtemas: Espondiloartrites e outras artrites
-resumo: AR é a artrite inflamatória idiopática mais comum, simétrica, de mãos e pés, com 4 de 7 critérios (rigidez matinal, 3 ou mais áreas, mão, simetria, nódulos, FR, erosões) e anti-CCP 98% específico; polegar de NALEBUFF tipo I (botoeira) é o mais comum; artrodese do punho com pino de STEINMANN saindo entre o 2º e o 3º metacarpos; prótese de cotovelo dá os melhores resultados na AR; soronegativas atacam a êntese, predominam em homens e se ligam ao HLA-B27 (88% a 96% na EA, que sobe de caudal para cefálico e poupa disco e ligamento longitudinal anterior); REITER é tríade com oligoartrite assimétrica de homem jovem; acro-osteólise e lápis na xícara são da psoriásica; gota é monoartrite súbita de homem, com cristal de birrefringência negativa; LYME acomete sobretudo o joelho; AIJ exige 6 semanas, oligoarticular em meninas de 2 a 4 anos, joelho, FAN e uveíte, e FR e FAN não diagnosticam.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 78 (Arthritic Hand, p. 3443 a 3449, 3470 a 3471 e 3494 a 3496), cap. 90 (Arthritis of the Foot, p. 3964 e 3965), cap. 46 (p. 1847 e 1848), cap. 45 (p. 1764 a 1769), cap. 25 (doença de LYME, p. 859 a 861), cap. 15 (artroplastia do cotovelo, p. 654 a 661) e cap. 4 (p. 245, 246 e 265); Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 22 (Arthritis, p. 928 a 941) e cap. 23 (p. 956 a 958); Green's Operative Hand Surgery, 7ª ed. (2017), cap. 55 (p. 1865, 1866, 1894 e 1895) e cap. 56 (p. 1905). Complemento de 10/11/2026: Campbell cap. 45 (p. 1769) e cap. 46 (p. 1847) relidos no padrão de ossificação; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (coluna anquilosada, Figs. 48-56 e 48-57, PDF sem página impressa); HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 2.4 (osteotomias, edição digital sem página impressa). As páginas citadas são as impressas.
+subtemas: Espondiloartrites e outras artrites; Espondiloartrites; Artrite reumatoide
+resumo: AR é a artrite inflamatória idiopática mais comum, simétrica, de mãos e pés, com 4 de 7 critérios (rigidez matinal, 3 ou mais áreas, mão, simetria, nódulos, FR, erosões) e anti-CCP 98% específico; polegar de NALEBUFF tipo I (botoeira) é o mais comum; artrodese do punho com pino de STEINMANN saindo entre o 2º e o 3º metacarpos; prótese de cotovelo dá os melhores resultados na AR; soronegativas atacam a êntese, predominam em homens e se ligam ao HLA-B27 (88% a 96% na EA, que sobe de caudal para cefálico e poupa disco e ligamento longitudinal anterior); REITER é tríade com oligoartrite assimétrica de homem jovem; acro-osteólise e lápis na xícara são da psoriásica; gota é monoartrite súbita de homem, com cristal de birrefringência negativa; LYME acomete sobretudo o joelho; AIJ exige 6 semanas, oligoarticular em meninas de 2 a 4 anos, joelho, FAN e uveíte, e FR e FAN não diagnosticam; na EA ossificam ânulo (ponte marginal), facetas e ligamentos interespinhosos, supraespinhosos e amarelo, poupando disco e ligamento longitudinal anterior.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -248,6 +248,35 @@ conceito: A espondilite anquilosante predomina em homens jovens (20 a 40 anos), 
 como: O TARO 2007 pediu a afirmação correta entre predomínio feminino, progressão cefalocaudal, associação com HLA-B27 e deposição óssea no corpo vertebral; o TARO 2006 perguntou se o sítio primário de acometimento vertebral é a interface corpo-disco.
 armadilha: Inverter o sentido da progressão (é de caudal para cefálico) ou achar que o osso se deposita no corpo: o corpo sofre reabsorção na êntese, e quem ossifica é o anel fibroso.
 alerta: As duas questões estão sem gabarito oficial. Para `osteometabolicas-0081`, o Campbell (cap. 46, p. 1847) sustenta a alternativa C (HLA-B27 na grande maioria, 88% a 96%). Para `osteometabolicas-0093`, o livro sustenta "Certo": a lesão inicial é a reabsorção inflamatória na êntese onde o anel fibroso se prende ao canto do corpo vertebral, isto é, na junção corpo-disco (Campbell, cap. 45, p. 1769; cap. 46, p. 1847), embora o texto não use literalmente a expressão "interface corpo-disco".
+!fim
+
+## O mapa da ossificação: o que funde e o que fica livre
+
+A pergunta clássica pede o que a ossificação **poupa**, e a resposta sai da mesma frase do Campbell's Operative Orthopaedics, 15ª ed. (cap. 45, p. 1769; cap. 46, p. 1847), lida até o fim. Na frente da coluna, depois da reabsorção na êntese e do "squaring", **ossifica o ânulo fibroso**, e ficam **poupados o ligamento longitudinal anterior e o disco**. Atrás, o livro diz que os elementos posteriores são afetados **da mesma forma**: ossificam as **facetas articulares**, os **ligamentos interespinhosos e supraespinhosos** e o **ligamento amarelo**. O resultado é a coluna em bambu, com a fusão bilateral das sacroilíacas como primeira imagem.
+
+!tabela Estrutura por estrutura na espondilite anquilosante (Campbell, cap. 45, p. 1769; cap. 46, p. 1847)
+| Estrutura | Na espondilite anquilosante |
+|---|---|
+| Canto do corpo vertebral (êntese) | Reabsorção inflamatória, osteopenia e "squaring" |
+| Ânulo fibroso | **Ossifica** e forma a ponte da coluna em bambu |
+| Disco | **Poupado** |
+| Ligamento longitudinal anterior | **Poupado** |
+| Facetas articulares | **Ossificam** |
+| Ligamentos interespinhosos e supraespinhosos | **Ossificam** |
+| Ligamento amarelo | **Ossifica** |
+| Sacroilíacas | Fundem, caracteristicamente dos dois lados |
+!fim
+
+O nome que a prova costuma usar para a ponte, sindesmófito, não aparece nos trechos lidos. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, Figs. 48-56 e 48-57), chama a marca radiográfica da espondilite de **osteófitos em ponte marginais**, e a contrapõe ao DISH, em que as pontes são **não marginais**. "Marginal" é exatamente o que o Campbell descreve: a ponte nasce no ânulo, na margem do corpo vertebral, e não do ligamento que corre à frente dele.
+
+Há uma nuance que vale conhecer para não estranhar a imagem do trauma. Ao falar da fratura, o próprio Campbell (cap. 45, p. 1769) cita a **ossificação do disco**, o osso ectópico e a esclerose como causas da anatomia distorcida que esconde a fratura, e o Rockwood (Fig. 48-56) mostra na TC uma fratura **através do espaço discal ossificado**. A regra do padrão (disco e ligamento longitudinal anterior poupados) descreve como a ossificação da espondilite se instala; a coluna antiga, fundida, comporta-se como um bloco único, que o Rockwood compara a **um osso longo**, com fratura que atravessa os elementos anteriores e posteriores e é quase sempre instável. O Campbell (cap. 46, p. 1847) acrescenta que os segmentos fundidos ficam mais sujeitos a **fratura, pseudartrose e espondilodiscite**.
+
+O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 2.4, edição digital sem página impressa), não descreve o padrão de ossificação, mas mostra a consequência cirúrgica de um disco que continua sendo disco. A osteotomia de **SMITH-PETERSEN** (1945) foi criada para a espondilite anquilosante: uma **cunha de fechamento posterior** que alonga a coluna anterior pela **distração do disco**, com **10 a 15° de lordose por nível** (cada milímetro de correção rende 1°), e que **só pode ser feita com discos móveis**. A de PONTE (1984, para o SCHEUERMANN) só encurta atrás e dá 5 a 10° por nível; a **subtração pedicular** encurta as três colunas, corrige 30 a 40° por nível e equivale a três SMITH-PETERSEN.
+
+!questoes central=coluna-0012
+conceito: Na espondilite anquilosante ossificam o ânulo fibroso, as facetas articulares, os ligamentos interespinhosos e supraespinhosos e o ligamento amarelo; o disco e o ligamento longitudinal anterior são poupados (Campbell, cap. 45, p. 1769; cap. 46, p. 1847).
+como: O TARO 2018 perguntou o que o processo de ossificação poupa, entre ânulo fibroso, faceta articular, ligamento interespinhoso e ligamento longitudinal anterior.
+armadilha: Achar que a ponte da coluna em bambu é o ligamento longitudinal anterior ossificado; a ponte é o ânulo ossificado na margem do corpo (osteófito em ponte marginal), e as três outras alternativas ossificam.
 !fim
 
 ## O corpo inteiro

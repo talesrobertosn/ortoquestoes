@@ -1,6 +1,6 @@
 ---
 id: ao-fixadores-externos
-versao: 1
+versao: 2
 titulo: Fixadores externos
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,9 +8,9 @@ livro: AO Principles of Fracture Management
 edicao: 3ª edição (2017)
 capitulo: Capítulo 3.3.3 · External fixator
 autores: Dankward Höntzsch. Editores: Richard E Buckley, Christopher G Moran, Theerachai Apivatthakakul
-fonte: Livros conferidos localmente em 04/11/2026: AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.3.3 (External fixator, p. 253 a 268, lido por inteiro) e cap. 6.4 (pelve, p. 725 e 743); Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 11 (Principles of External Fixation, J. Tracy WATSON: tipos de montagem, biomecânica, pinos, fios, híbrido e hexápode, controle de danos, inserção, cuidados, retirada, complicações e Tabela 11-1) e cap. 50 (fixação externa anterior da pelve); o PDF do Rockwood não imprime a página e não traz índice remissivo, por isso ele é citado por capítulo e seção; Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 58 (General Principles of Fracture Treatment, p. 2552 a 2560) e cap. 61 (técnica do pino supra-acetabular, p. 2743 e 2744); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 55, 71 e 72. As páginas citadas são as impressas.
-subtemas: Fixadores externos
-resumo: Unilateral mais rígido com pinos afastados no fragmento, pinos perto do foco sem entrar no hematoma, barra perto do osso, pino mais grosso (6 mm = dobro da rigidez do 5 mm; no máximo um terço do diâmetro ósseo), mais pinos, duas barras e segundo plano; circular de ILIZAROV mais rígido com fio mais grosso e mais tenso, olivado, cruzamento perto de 90 graus, anel menor e mais fios, com rigidez axial menor que a do unilateral; pré-perfuração e baixa rotação contra a necrose térmica; CHECKETTS-OTTERBURN com seis graus; conversão em até 2 semanas; pino supra-acetabular guiado pela lágrima.
+fonte: Livros conferidos localmente em 04/11/2026: AO Principles of Fracture Management, 3ª ed. (2017), cap. 3.3.3 (External fixator, p. 253 a 268, lido por inteiro) e cap. 6.4 (pelve, p. 725 e 743); Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 11 (Principles of External Fixation, J. Tracy WATSON: tipos de montagem, biomecânica, pinos, fios, híbrido e hexápode, controle de danos, inserção, cuidados, retirada, complicações e Tabela 11-1) e cap. 50 (fixação externa anterior da pelve); o PDF do Rockwood não imprime a página e não traz índice remissivo, por isso ele é citado por capítulo e seção; Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 58 (General Principles of Fracture Treatment, p. 2552 a 2560) e cap. 61 (técnica do pino supra-acetabular, p. 2743 e 2744); HEBERT, Ortopedia e Traumatologia, 5ª ed., caps. 55, 71 e 72. Interface pino e osso conferida em 10/11/2026: Rockwood, cap. 11 (seções Pin Design e Pin Insertion Technique and Pin-Bone Interface Mechanics); AO, cap. 3.3.3 (p. 256 e 260) e cap. 3.2.1 (p. 175 aprox.); Campbell, cap. 59 (técnica 59.10, p. 2602). As páginas citadas são as impressas.
+subtemas: Fixadores externos; Fixação externa e princípios de tratamento
+resumo: Unilateral mais rígido com pinos afastados no fragmento, pinos perto do foco sem entrar no hematoma, barra perto do osso, pino mais grosso (6 mm = dobro da rigidez do 5 mm; no máximo um terço do diâmetro ósseo), mais pinos, duas barras e segundo plano; circular de ILIZAROV mais rígido com fio mais grosso e mais tenso, olivado, cruzamento perto de 90 graus, anel menor e mais fios, com rigidez axial menor que a do unilateral; pré-perfuração e baixa rotação contra a necrose térmica; CHECKETTS-OTTERBURN com seis graus; conversão em até 2 semanas; pino supra-acetabular guiado pela lágrima; pré-carga radial com broca um pouco menor que o núcleo do pino (descompasso de até 0,4 mm), pino cônico que não se recua, autoperfurante com 25% menos pega.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -399,6 +399,46 @@ O Rockwood (seção Dynamization) define a **dinamização**: transformar o fixa
 ## Outras complicações
 
 O Campbell (cap. 58, p. 2553 e 2554) completa o quadro: **síndrome compartimental** por pinos que atravessam um compartimento tenso; **quebra de fio** (trocar de lugar) e, rara mas grave, **quebra de anel**; **rigidez da articulação vizinha**, a **segunda complicação mais relatada**; e **artrose do tornozelo em 50 a 70%** dos fixadores de tíbia, com fatores de risco **idade acima de 45 anos, IMC acima de 25, osteoporose, fixador por mais de 50 dias e transporte em dois níveis**. Imobilização rígida articular por mais de **6 a 8 semanas** deve ser evitada pelo risco de anquilose. O fixador pode ser usado com segurança no paciente com TCE.
+
+# A interface pino e osso: pré-carga radial e afrouxamento {radar=confirmado}
+
+O pino é o ponto por onde a carga do membro passa para o fixador. Se a interface cede, vem o micromovimento, a reabsorção em volta da rosca, o afrouxamento e, com ele, o risco de infecção do trajeto. As seções anteriores trataram do calor e da hidroxiapatita; esta trata da outra arma, a **pré-carga**.
+
+## O que é a pré-carga radial
+
+O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 11, seção Pin Insertion Technique and Pin-Bone Interface Mechanics), abre a seção dizendo que **pré-carregar a interface implante e osso influi no afrouxamento**. A **pré-carga radial** pretensiona essa interface **em toda a circunferência do pino**, e não numa só direção. O jeito de obtê-la é simples: colocar o pino com um **leve descompasso** entre o **diâmetro do núcleo do pino** e o **diâmetro do furo piloto**, isto é, perfurar com uma **broca um pouco menor** que o núcleo. O osso em volta fica comprimido por igual, e o pino entra justo. O efeito medido é **maior torque de inserção e de remoção** e **menos sinais clínicos de afrouxamento**. Na técnica do mesmo capítulo, o furo piloto tem diâmetro **igual ou um pouco menor** que o núcleo, feito com broca muito afiada, e o pino entra **à mão**.
+
+Há um teto. Descompasso **acima de 0,4 mm** já causa **dano estrutural microscópico** no osso em volta do pino; pré-carga radial alta, ou descompasso grande, **passa o limite elástico da cortical** e leva à **fratura de estresse**. Por isso o capítulo diz que o uso de **pinos superdimensionados**, que produzem pré-carga excessiva, **deve ser questionado**. É a mesma razão do limite de um terço do diâmetro ósseo visto acima: o pino grosso demais não firma mais, só racha o osso.
+
+## Pino cônico, autoperfurante e osso fraco
+
+**Pino cônico.** A rosca aumenta de diâmetro da ponta para a haste, de modo que cada volta corta um trajeto um pouco maior e a **pré-carga radial cresce aos poucos**; o contato rosca e osso fica otimizado e some o micromovimento típico do pino cilíndrico (Rockwood, cap. 11, seção Pin Design). O preço é que **o pino cônico não pode ser recuado**: voltar a rosca afrouxa a pega. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 59, técnica 59.10, p. 2602), repete: o pino cônico cria pré-carga radial ao ser apertado, **não pode ser recuado** e **não deve entrar fundo demais**; pede ainda **pega bicortical** e pré-perfuração, que reduz a necrose térmica e o afrouxamento.
+
+**Autoperfurante.** Não serve para gerar pré-carga. Enquanto a ponta tenta cortar a cortical distante sem avançar, a rosca já presa na cortical próxima **espana**; há estudos com **25% a menos de pega** que o pino pré-perfurado, mais calor e a ponta que precisa sair 2 a 3 mm do outro lado (Rockwood). O AO Principles of Fracture Management, 3ª ed. (cap. 3.3.3, p. 256 e 260), reserva o autoperfurante e autorrosqueante para o **osso metafisário**, onde o calor pesa menos, e diz que o SCHANZ padrão, de ponta trocarte, **sempre** exige pré-perfuração. No capítulo dos parafusos (cap. 3.2.1, p. 175 aprox.), lembra que broca cega, ou fio e pino acima de 2 mm na cortical sem pré-perfuração, causam necrose térmica e afrouxamento.
+
+**Osso fraco.** Idade e doença pioram o osso e aumentam o afrouxamento. O Rockwood recomenda **três meios-pinos de cada lado** do foco, em vez de dois, e **fios finos tensionados** no osteopênico: quanto maior a tensão do fio, menor a reabsorção na interface, o que explica por que o anel de ILIZAROV segura até osso muito poroso. O titânio, de módulo menor, reduz a concentração de tensão na interface.
+
+!tabela Como cada escolha mexe na interface pino e osso (Rockwood adulto, cap. 11; AO, cap. 3.3.3; Campbell 15, cap. 59, p. 2602)
+| Escolha | Efeito na interface | Fonte |
+| --- | --- | --- |
+| Broca um pouco menor que o núcleo | pré-carga radial; mais torque; menos afrouxamento | Rockwood |
+| Descompasso acima de 0,4 mm | microlesão do osso | Rockwood |
+| Pino superdimensionado | pré-carga excessiva; fratura de estresse | Rockwood |
+| Pino cônico | pré-carga gradual; não recuar; não afundar | Rockwood; Campbell |
+| Autoperfurante | cerca de 25% menos pega; mais calor; uso metafisário | Rockwood; AO |
+| Pré-perfuração e pino à mão | menos necrose térmica e afrouxamento | AO; Campbell |
+| Hidroxiapatita | osseointegração; menos afrouxamento | AO; Rockwood |
+| Osso osteopênico | três meios-pinos por lado; fios tensionados | Rockwood |
+!fim
+
+!questoes central=trauma-1151
+conceito: A pré-carga radial é obtida com um leve descompasso entre o furo piloto e o núcleo do pino: perfura-se com broca de diâmetro um pouco menor, até cerca de 0,4 mm; acima disso, ou com pino grosso demais, a cortical sofre microlesão e fratura de estresse.
+como: O TARO 2009 perguntou a principal medida para obter o pré-tensionamento radial na montagem do fixador, ao lado de pino autoperfurante, pino maior que 30% da largura óssea e pinos convergentes.
+armadilha: Pino autoperfurante: perde cerca de 25% da pega por espanar a cortical próxima e esquenta mais; é para o osso metafisário.
+armadilha: Pino com mais de 30% da largura do osso: passa o limite de um terço e o Rockwood questiona a pré-carga excessiva dos pinos superdimensionados, que leva à fratura de estresse.
+armadilha: Pinos convergentes: mudam a geometria da montagem, não a compressão do osso em volta de cada pino.
+alerta: Questão sem gabarito oficial no acervo (`trauma-1151`); o Rockwood (cap. 11) e o gabarito pela bibliografia registrado no acervo sustentam a alternativa B, o orifício feito com broca de menor diâmetro.
+!fim
 
 # Fechamento {radar=fundamento}
 
