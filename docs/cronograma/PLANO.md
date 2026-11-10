@@ -258,3 +258,8 @@ Entrega da revisão 50–53: [PR #327](https://github.com/talesrobertosn/ortoque
     Funções novas em `cronogramaRoteiro.ts`: `previsaoDeTermino` (quando o conteúdo acaba no ritmo real dos últimos 7
     dias), `areasParaMelhorar` e `historicoDosDias`. Dia curto: `comecarHoje(..., limite)` abre só as 10 primeiras.
     O andamento não muda: nenhuma dessas peças grava nada nem mexe na conta do plano.
+64. [x] Ajustes do Tales no painel (10/11/2026): cena do topo mais alta no computador; "Hoje" na largura toda (resumos e
+    questões lado a lado, erros numa faixa própria); o calendário subiu e abre na **semana** (cada dia com as áreas e os
+    assuntos por extenso; no celular, uma linha por dia), com "Abrir o mês inteiro"; próximos dias, mais para hoje e
+    previsão viraram três caixas menores abaixo; ao lado do "que ainda vem por área" ficam o acerto por dia, os números
+    dos últimos 7 dias contra os 7 anteriores e a constância; números na fonte da marca (a de pixel era difícil de ler).
