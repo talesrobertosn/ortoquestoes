@@ -330,7 +330,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 1017 | Onda 2: 42 miniaulas refeitas com figuras (21 da fratura subtrocantérica, fim deste resumo; 11 do hálux valgo, fim deste resumo; 10 da anatomia do pé e tornozelo, fim deste resumo) |
 | 1018 | Onda 2: 41 miniaulas refeitas com figuras (21 das displasias esqueléticas e síndromes, fim deste resumo; 20 da anatomia do ombro e braço, fim deste resumo) |
 | 1019 | Onda 2: 44 miniaulas refeitas com figuras (18 do osteossarcoma, Campbell, Dahlin e Tachdjian, fim deste resumo; 18 da marcha, fim deste resumo; 8 da doença de Perthes) |
-| (este PR) | Onda 2: 39 miniaulas refeitas com figuras (16 da artrogripose e doenças neuromusculares, fim deste resumo; 15 do condrossarcoma, fim deste resumo; 8 da doença de Perthes, fim deste resumo) |
+| 1020 | Onda 2: 39 miniaulas refeitas com figuras (16 da artrogripose e doenças neuromusculares, fim deste resumo; 15 do condrossarcoma, fim deste resumo; 8 da doença de Perthes, fim deste resumo) |
+| (este PR) | Onda 2: 28 miniaulas refeitas com figuras (14 do carpo, fim deste resumo; 14 da pseudartrose e dos enxertos, fim deste resumo); 2 pendências resolvidas com fonte aberta (SEINSHEIMER na trauma-0813, MÖBIUS na pediatria-0202) |
 
 ## Próximo
 
