@@ -185,38 +185,7 @@
   "referencias": [
    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo; Quem segura o cotovelo; Instabilidade rotatória posterolateral crônica."
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Luxação simples do cotovelo",
-      "Quem segura o cotovelo",
-      "Instabilidade rotatória posterolateral crônica"
-     ],
-     "blocos": [
-      "luxacao-simples-do-cotovelo-d4159e35",
-      "luxacao-simples-do-cotovelo-5d25ae81",
-      "quem-segura-o-cotovelo-d2f0137f",
-      "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
-      "luxacao-simples-do-cotovelo-569d2234",
-      "luxacao-simples-do-cotovelo-2d8aeee9",
-      "luxacao-simples-do-cotovelo-4dc4fd08"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "fdbbd97cc68e7364c4be0d817609239e95243b4a991e9c6b7cfb2169c5ce5511"
-    }
-   ],
-   "questaoSha256": "e3240ed68ba2fa72a287cba68223bdf5875dcb1eb380bac89c171c3e1a584f7a",
-   "comentarioSha256": "0a6c61a4b03e05f0b268cd9e6416ebd11ee706b2ee4d8a5497ec79a773d8a863"
-  }
+  "geradoEm": "2026-10-21"
  },
  "ombro-cotovelo-0013": {
   "incorretas": {
@@ -290,7 +259,7 @@
       "quem-segura-o-cotovelo-d2f0137f",
       "quem-segura-o-cotovelo-2b1e3945"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "47e55b75db43801e4071a88e91e16138c68d3d6fcbb5b912b5f9ccf607e33852"
     }
    ],
@@ -411,7 +380,7 @@
       "luxacao-simples-do-cotovelo-dda581c3",
       "luxacao-simples-do-cotovelo-ec03078e"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "59f17828c4478536fd478b76e15599ce7cad5b8320a6c92b5a3b88c703e34896"
     }
    ],
@@ -480,7 +449,7 @@
       "quem-segura-o-cotovelo-e54d94bb",
       "quem-segura-o-cotovelo-d2f0137f"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "95a064cc6d5574218646a73ebf56f4b7a204836ebcb231a64ed66bcf7af13a97"
     }
    ],
@@ -1084,45 +1053,35 @@
   "conferido": false
  },
  "ombro-cotovelo-0064": {
-  "conceito": "A imagem mostra perda da congruência radiocapitelar, no padrão de **instabilidade rotatória posterolateral**. Nesse mecanismo, rádio e ulna giram juntos em supinação em relação ao úmero, e a cabeça do rádio subluxa para trás do capítulo. A banda cuja insuficiência é associada a esse padrão é o **colateral ulnar lateral** (Rockwood adultos, 10ª ed., cap. 40, complexo lateral e instabilidade crônica).\n\nA radiografia não mostra diretamente as fibras do ligamento. A identificação vem da relação entre o padrão de deslocamento e o estabilizador que o contém. O complexo lateral reúne colateral radial, anular e colateral ulnar lateral; este último chega à crista do supinador da ulna e é o componente destacado pelo capítulo na instabilidade posterolateral.\n\nO lado medial tem outra função dominante: o feixe anterior do colateral medial é o restritor-chave do valgo, e o posterior é secundário ao valgo e participa da restrição à rotação da ulna. Todos contribuem para estabilidade, mas contribuição não significa que qualquer banda possa ser usada como sinônimo da lesão posterolateral.\n\nA mecânica também explica a proteção pela pronação quando o complexo lateral está insuficiente. A supinação reproduz o movimento desestabilizador, enquanto a pronação pode ajudar a manter o alinhamento. Isso não substitui a avaliação da congruência e da estabilidade de cada caso.",
-  "correta": "**Correta: A (banda ulnar do colateral lateral).** É o colateral ulnar lateral, que passa por trás do colateral radial e alcança a ulna na crista do supinador. Sua falha está relacionada ao giro posterolateral do antebraço e à subluxação posterior da cabeça radial descritos.",
+  "conceito": "A figura não mostra ligamento nenhum; mostra o resultado de um ligamento que falhou. A banca quer que se leia o desenho do deslocamento e se chegue, por raciocínio, à banda que deveria impedi-lo.\n\n**A imagem.** É um perfil do cotovelo em radioscopia. O úmero distal, com o contorno redondo do capítulo e da tróclea, está no alto; o antebraço inteiro, ulna e cabeça do rádio juntos, escorregou para trás e para baixo, e a articulação perdeu a congruência. Não há fratura visível. É o retrato da **instabilidade rotatória posterolateral**: rádio e ulna giram juntos em supinação sobre o úmero e a cabeça do rádio subluxa para trás do capítulo, a forma mais comum de instabilidade crônica do cotovelo (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40, seção da instabilidade posterolateral).\n\n**Quem segura esse giro.** O complexo colateral lateral tem três peças, que o Campbell desenha lado a lado (cap. 15, Fig. 15.1B, p. 644, na primeira figura abaixo):\n- o **colateral radial**, do epicôndilo lateral até o ligamento anular, onde termina;\n- o **anular**, que abraça a cabeça do rádio e se prende nas bordas da incisura radial da ulna;\n- o **colateral ulnar lateral**, formado pelas fibras posteriores do colateral radial, que passam por cima do anular e chegam à **crista do supinador** da ulna.\n\nA diferença decisiva está no ponto de chegada. Só o colateral ulnar lateral liga o úmero à ulna pelo lado de fora; é ele que impede a ulna de rodar em supinação e escapar para trás. O Campbell diz que, dos componentes laterais, é **o mais importante para a estabilidade** (cap. 15, p. 643), e que a sua ruptura produz a instabilidade posterolateral (cap. 52, p. 2229). O Rockwood repete: é a banda que falha nessa instabilidade.\n\n**O mecanismo, passo a passo.** A segunda figura (Campbell, cap. 52, Fig. 52.38, p. 2230) mostra os estágios de O'DRISCOLL. Em A, sob compressão axial, valgo e supinação, o cotovelo reduzido (0) passa à instabilidade posterolateral (1), ao cotovelo empoleirado (2) e à luxação (3). Em B, o anel de lesão começa no **colateral ulnar lateral (1, LUCL)**, segue pela cápsula (2) e só no fim chega ao colateral medial (3). O estágio 1, o da imagem da questão, depende só da banda ulnar do lateral. No consultório, essa subluxação é reproduzida pelo teste do pivô lateral: braço ao lado do corpo, antebraço supinado, valgo e carga axial com o cotovelo a 20 a 30 graus; a subluxação reduz, visível e palpável, quando se flete mais (Campbell, cap. 52, Fig. 52.40, p. 2231).\n\n**Por que os mediais não explicam a figura.** O colateral medial é o freio do valgo, não do giro posterolateral, e no anel de O'DRISCOLL ele só rompe no fim, quando o cotovelo já está luxado.\n\n> **Na prova:** subluxação posterolateral = **colateral ulnar lateral** (epicôndilo lateral à crista do supinador). Colateral radial termina no anular e não segura a rotação.\n\nA anatomia está na seção \"O lado lateral\" do resumo.",
+  "correta": "**A) ulnar do ligamento colateral lateral.** É o colateral ulnar lateral, que sai do epicôndilo lateral, passa por cima do anular e se insere na crista do supinador da ulna (Campbell's Operative Orthopaedics, 15ª ed., cap. 15, p. 643). Por chegar à ulna, é a única banda lateral capaz de impedir que rádio e ulna girem juntos em supinação e escapem para trás do úmero, o deslocamento que a imagem mostra. O Rockwood (cap. 40) e o Campbell (cap. 52, p. 2229) apontam a sua falha como a causa da instabilidade rotatória posterolateral.",
   "incorretas": {
-   "B": "O colateral radial pertence ao mesmo complexo e se mistura ao ligamento anular, mas não é a banda que o capítulo destaca como falhando na instabilidade posterolateral. A distinção anatômica é que o colateral ulnar lateral alcança a crista do supinador da ulna, compondo a contenção do giro do antebraço.",
-   "C": "O feixe anterior do colateral medial é o estabilizador-chave contra o valgo, do epicôndilo medial ao tubérculo sublime. Essa função é importante, mas não identifica a banda lateral ligada à subluxação posterolateral mostrada. Confundir direção de estabilidade com um “ligamento mais importante” universal troca o mecanismo da questão.",
-   "D": "O feixe posterior é parte do colateral medial, com papel secundário no valgo e participação na rotação da ulna. Ele não corresponde ao colateral ulnar lateral que o capítulo associa ao padrão posterolateral. A localização no lado medial e sua função devem ser diferenciadas da banda lateral pedida."
+   "B": "**Radial do ligamento colateral lateral** é o colateral radial propriamente dito, a banda que nasce no epicôndilo lateral e se mistura ao ligamento anular, terminando nele (Campbell's Operative Orthopaedics, 15ª ed., cap. 15, p. 643). Como não chega à ulna, não consegue segurar a rotação do antebraço sobre o úmero. Pertence ao mesmo complexo e costuma estar lesado junto, mas não é a banda cuja insuficiência define a instabilidade posterolateral.",
+   "C": "**Anterior do ligamento colateral medial** é o feixe que vai do epicôndilo medial ao tubérculo sublime e é o principal freio do valgo, sobretudo com o cotovelo fletido (Rockwood, cap. 40; Campbell, cap. 52, p. 2229). Seria a resposta numa imagem de abertura do lado medial sob valgo, como no arremessador. No anel de O'DRISCOLL, o colateral medial é a última estrutura a romper, já na luxação completa, e não explica uma subluxação posterolateral isolada.",
+   "D": "**Posterior do ligamento colateral medial** é o feixe que fica tenso na flexão e funciona como freio secundário do valgo e da rotação da ulna (Campbell, cap. 15, p. 643; Rockwood, cap. 40). Ele aparece no estágio 3A de O'DRISCOLL, quando a lesão já deu a volta pelo lado lateral e pela cápsula e começa a atingir o medial. A subluxação da imagem acontece antes disso, com o lado medial ainda inteiro."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Quem segura o cotovelo; Instabilidade rotatória posterolateral crônica."
+   "Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 15 (Reconstructive Procedures of the Elbow), p. 643 e 644 (Fig. 15.1)",
+   "Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 52 (Recurrent Dislocations of the Shoulder and Elbow), p. 2229 a 2231 (Figs. 52.38 e 52.40)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40 (Elbow Dislocations and Terrible Triad Injuries), seções do complexo lateral e da instabilidade rotatória posterolateral",
+   "Resumo OrtoQuestões: Luxação do cotovelo, cabeça do rádio e tríade terrível"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Quem segura o cotovelo",
-      "Instabilidade rotatória posterolateral crônica"
-     ],
-     "blocos": [
-      "quem-segura-o-cotovelo-d2f0137f",
-      "quem-segura-o-cotovelo-2b1e3945",
-      "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
-      "quem-segura-o-cotovelo-7b7c7f11"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "8b5de920302bcdae46768b412931157b54af7db2131a461a993b6c0a7f870e36"
-    }
-   ],
-   "questaoSha256": "c68b5b83a2c54ee54c8695b79b0a40a8678a952ea390297ad38dab39bbb496bf",
-   "comentarioSha256": "2fccd3299719e635c05b3f1c6d0b470b2259156b6c059141ddd16293b7939eed"
-  }
+  "imagens": [
+   {
+    "arquivo": "ombro-cotovelo/campbell15-15-1-w82.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 15, Fig. 15.1, p. 644. Os ligamentos colaterais do cotovelo. A, face medial: feixe anterior, feixe posterior e ligamento transverso (o anel em volta do colo do rádio, à esquerda, não é nomeado). B, face lateral: colateral radial, ligamento anular, colateral acessório e colateral ulnar lateral, que segue até a ulna.",
+    "largura": 1316,
+    "altura": 593
+   },
+   {
+    "arquivo": "ombro-cotovelo/campbell15-52-38-w82.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 52, Fig. 52.38, p. 2230. Os estágios de O'DRISCOLL. A: cotovelo reduzido (0), instabilidade rotatória posterolateral (1), cotovelo empoleirado, perched (2), e luxado (3), com supinação, compressão axial e valgo. B: o anel de lesão de lateral (1, colateral ulnar lateral) para medial (3, colateral medial).",
+    "largura": 1340,
+    "altura": 568
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "ombro-cotovelo-0065": {
   "incorretas": {
@@ -1210,46 +1169,28 @@
   "conferido": false
  },
  "ombro-cotovelo-0071": {
-  "conceito": "**Reparar o lateral exige devolver a relação anatômica antes de tensionar a sutura.** O complexo lateral controla varo e rotação posterolateral. Depois da luxação, seu reparo pode usar túneis transósseos ou âncoras no ponto isométrico, situado no centro do arco do capítulo, correspondente ao eixo de flexão e extensão.\n\nO resumo descreve a amarração com **cotovelo a 90 graus, antebraço em pronação e carga axial**, evitando abrir o lado medial. A pronação é coerente com a proteção do lateral lesado: tende a estabilizar o padrão posterolateral, enquanto a supinação é usada para desafiar esse reparo durante o teste.\n\nTrês decisões não devem ser misturadas: onde colocar a fixação, em qual posição amarrar e como testar depois. O centro isométrico diz respeito ao trajeto do ligamento ao longo do arco; os 90 graus com pronação são a posição descrita para tensionar; a extensão por gravidade em supinação avalia se o reparo lateral contém a instabilidade.\n\nDepois do reparo lateral, reavalia-se a estabilidade. O medial só é reparado se necessário, e tensão excessiva no lateral com medial insuficiente pode piorar um padrão posteromedial. Portanto, “apertar mais” não substitui redução adequada nem avaliação de todas as contenções.\n\n**Na Biblioteca, leia “Quando operar”, dentro de “Luxação simples”, até o parágrafo da amarração e do teste.** A leitura separa uma posição protetora de uma posição de provocação, evitando inverter pronação e supinação.",
-  "correta": "**B: 90 graus de flexão e antebraço pronado.** É a posição expressamente descrita para dar a tensão ao reparo. Ela deve acompanhar uma fixação anatômica no centro isométrico e manutenção da congruência, não funcionar como uma fórmula isolada que dispensa esses cuidados.\n\nA resposta também difere da posição de teste: a supinação pode ser usada para avaliar a estabilidade do reparo lateral, mas não é a rotação indicada para a amarração na fonte.",
+  "conceito": "A pergunta parece um detalhe de técnica, mas cada número da resposta tem um porquê. O colateral lateral é reparado na posição em que o cotovelo já está fechado e protegido, para que a sutura seja amarrada sem tensão errada.\n\n**Quando se repara.** A maioria das luxações simples não opera. A indicação principal é não conseguir manter a articulação concêntrica ou a reluxação, além das expostas, das com lesão vascular e das irredutíveis (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40, seção do tratamento cirúrgico). A ordem é fixa: via de KOCHER, entre o ancôneo e o extensor ulnar do carpo, e **lado lateral primeiro**, porque é por ele que a luxação começa.\n\n**Onde se fixa.** O colateral lateral costuma estar arrancado do epicôndilo. Recebe pontos de KRACKOW e volta ao osso por túneis transósseos ou âncoras, com um furo no **centro do capítulo**, o centro do eixo de flexão e extensão. É o ponto isométrico: ali o ligamento tem o mesmo comprimento em todo o arco, sem frouxidão na flexão nem estiramento na extensão. A figura do Rockwood (Fig. 40-4) mostra a sequência: em A, o colateral ulnar lateral e o colateral radial soltos do epicôndilo; em B e C, os pontos no ligamento e os túneis saindo do centro do capítulo; em D a F, a origem dos extensores também reparada e os fios amarrados sobre a ponte óssea.\n\n**Em que posição se amarra.** O Rockwood é explícito: os pontos são amarrados com o antebraço em **pronação**, o cotovelo a **90 graus** e uma **carga axial**, de modo que o lado medial não abra. Cada elemento tem a sua razão:\n- **pronação**: tensiona as estruturas mediais e os extensores e fecha o lado lateral; é a posição que protege o lateral lesado em todo o capítulo, da tala à reabilitação;\n- **90 graus**: a articulação está encaixada no meio do arco, onde a redução é mais estável;\n- **carga axial sem abrir o medial**: garante que a ulna esteja assentada na tróclea quando o ligamento ganha tensão.\n\nO capítulo faz um alerta: se o medial estiver insuficiente, tensionar demais o lateral pode piorar a instabilidade posteromedial.\n\n**Amarrar não é testar.** Depois do reparo, a extensão por gravidade em **supinação** testa o lateral, e a extensão em pronação procura instabilidade posteromedial e insuficiência do medial. Se o cotovelo continuar instável, repara-se o medial; se ainda assim não bastar, fixador externo estático ou estabilizador interno.\n\n> **Na prova:** reparo do colateral lateral = **90 graus + pronação** (+ carga axial), no **centro do capítulo**. Supinação é para testar, não para amarrar.\n\nA técnica está na seção \"Quando operar\" do resumo.",
+  "correta": "**B) 90º e o antebraço pronado.** É a posição que o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 40, tratamento cirúrgico da luxação), descreve para amarrar os pontos do colateral lateral: antebraço em pronação, cotovelo a 90 graus e carga axial, sem abrir o lado medial. A pronação fecha o lado lateral e protege o ligamento reparado; os 90 graus deixam a articulação encaixada no meio do arco. O reparo vai ao centro do capítulo, o ponto isométrico.",
   "incorretas": {
-   "A": "**A pronação está correta; o ângulo de 45 graus não é o descrito.** O resumo fixa 90 graus como referência para tensionar o reparo. Não há sustentação para substituir esse ângulo por 45 apenas porque ambos mantêm alguma flexão. Em uma pergunta técnica, acertar a rotação não torna correta toda a combinação.",
-   "C": "**As duas referências foram trocadas.** A fonte usa 90 graus e pronação, enquanto a opção oferece 45 graus e neutro. A posição neutra tem papel em alguns protocolos de reabilitação de lesões combinadas, mas isso não a torna automaticamente a posição de amarração do lateral. É necessário identificar a etapa cirúrgica solicitada.",
-   "D": "**Os 90 graus estão corretos, mas a rotação neutra não corresponde ao par descrito para o reparo.** Ela pode aparecer na proteção de outras combinações de lesão, especialmente quando ambos os lados estão comprometidos. Aqui, o alvo é tensionar o lateral conforme a técnica do resumo, que escolhe pronação."
+   "A": "**45º e o antebraço pronado** acerta a rotação, mas não o ângulo. O capítulo amarra a 90 graus, e nenhum dos livros descreve 45 graus como posição de reparo. O número mais próximo no texto é outro: na redução fechada, o cotovelo é fletido a cerca de 30 graus para ser tracionado, e reluxar com mais de 30 graus de flexão pesa a favor da cirurgia (Rockwood, cap. 40). Em flexão pequena o cotovelo está mais perto da posição em que volta a sair, o pior momento para dar tensão ao ponto.",
+   "C": "**45º e o antebraço em neutro** erra os dois elementos. O neutro tem lugar no capítulo, mas em outras situações: na reabilitação, quando os dois colaterais estão lesados, e na tala da fratura anteromedial do coronoide, em que pronação protege o lateral e supinação protege o coronoide (Rockwood, cap. 40). No reparo do lateral isolado, o neutro abre mão da proteção que a pronação dá ao lado que acabou de ser suturado.",
+   "D": "**90º e o antebraço em neutro** acerta o ângulo e erra a rotação. O Rockwood (cap. 40) amarra em pronação, porque é ela que tensiona as estruturas mediais e os extensores e fecha o lado lateral. Em neutro, essa compensação se perde e o ligamento pode ficar com tensão diferente da que terá quando o cotovelo for protegido em pronação no pós-operatório."
   },
-  "conferido": false,
+  "alerta": "O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 40), não traz 45 graus de flexão em nenhum ponto da técnica; as opções com 45 graus foram explicadas pelo que o capítulo diz sobre os 30 graus da redução e da reluxação.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo; Quem segura o cotovelo."
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40 (Elbow Dislocations and Terrible Triad Injuries), seção Operative Treatment of Elbow Dislocations (Fig. 40-4)",
+   "Resumo OrtoQuestões: Luxação do cotovelo, cabeça do rádio e tríade terrível"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Luxação simples do cotovelo",
-      "Quem segura o cotovelo"
-     ],
-     "blocos": [
-      "luxacao-simples-do-cotovelo-ce2e0d90",
-      "quem-segura-o-cotovelo-7b7c7f11",
-      "luxacao-simples-do-cotovelo-ec03078e",
-      "luxacao-simples-do-cotovelo-4dc4fd08",
-      "luxacao-simples-do-cotovelo-dda581c3"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "bb01a064f8148305df3494bddd68faa46e4eda58a230f69d34c34fa15cdaa10a"
-    }
-   ],
-   "questaoSha256": "0ecd9d1c98c02dfe42350afddfea0eca699c88cb4039ff2195f03367d4ace191",
-   "comentarioSha256": "e4ac818c3e8ac67e3b52b0cf2787f3cd2f23ad5adfc399b7f4e404634f2abc02"
-  }
+  "imagens": [
+   {
+    "arquivo": "ombro-cotovelo/rwa10-40-4-t01.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40, Fig. 40-4, seção do tratamento cirúrgico da luxação (arquivo sem página impressa). Reparo do colateral lateral pela via de KOCHER: em A, o colateral ulnar lateral e o colateral radial arrancados do epicôndilo, com o anular e o ancôneo; em B e C, pontos de KRACKOW no ligamento e túneis que partem do centro do capítulo; em D a F, a origem dos extensores reparada e os fios passados e amarrados sobre a ponte óssea.",
+    "largura": 1138,
+    "altura": 1231
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "ombro-cotovelo-0072": {
   "conceito": "O musculocutâneo vive duas vidas: no braço é só motor, e no antebraço é só sensitivo. A questão pergunta onde fica a pele dele, num mapa de territórios sensitivos numerados, e a resposta sai do ponto em que o nervo emerge no cotovelo.\n\n**A imagem.** Antebraço e mão em vista anterior, com as áreas sensitivas pintadas: **1** é a faixa verde da **face lateral** do antebraço; **2**, a faixa lilás da **face medial** do antebraço; **3**, a borda **ulnar** da mão, em azul; **4**, a face palmar dos **dedos radiais**, em amarelo.\n\n**O trajeto do nervo** (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 4). O musculocutâneo sai do **fascículo lateral**, perfura o **coracobraquial** cerca de 6 a 8 cm abaixo do coracoide, corre entre o **bíceps** e o **braquial** e inerva os três. Por todo o braço ele **não tem território sensitivo**. No cotovelo, o ramo terminal emerge entre o bíceps e o braquial, do lado lateral do tendão do bíceps, já como **nervo cutâneo lateral do antebraço**, que dá a sensibilidade da **face lateral do antebraço**: a área 1.\n\n**Onde ele aparece de verdade.** A figura do Green, abaixo, é uma incisão na fossa cubital: o nervo cutâneo lateral do antebraço (seta curta) corre colado ao tendão do bíceps (seta longa), do lado lateral. É por isso que ele é o nervo mais ameaçado nas vias anteriores do cotovelo e no reparo do bíceps distal, e por isso o Campbell's Operative Orthopaedics, 15ª ed. (cap. 62), manda protegê-lo no intervalo entre o bíceps e o braquial nas vias do úmero distal.\n\n**As outras áreas e os seus donos.**\n- A face medial do antebraço (2) é do **cutâneo medial do antebraço**, ramo direto do **fascículo medial** (resumo, seção do plexo). Ele corre logo sobre a fáscia, na face medial do cotovelo, e a lesão dele deixa uma área dormente ou um neuroma doloroso (Green's Operative Hand Surgery, 7ª ed., cap. 25).\n- A borda ulnar da mão (3) é do **ulnar**.\n- A face palmar dos dedos radiais (4) é do **mediano**, cujo território sensitivo o Green descreve nos dedos da compressão do túnel do carpo (cap. 28).\n\n**A pegadinha.** Muita gente imagina que o \"cutâneo\" do nome signifique pele do braço. Não: no braço, a pele lateral é do axilar (cutâneo lateral superior do braço) e, mais abaixo, do cutâneo lateral inferior do braço, ramo do radial; o musculocutâneo só ganha pele no antebraço.\n\n> **Na prova:** musculocutâneo = **motor no braço** (coracobraquial, bíceps, braquial) e **sensitivo no antebraço lateral** (cutâneo lateral do antebraço, ao lado do tendão do bíceps).\n\nOs nervos estão na seção \"Os nervos no braço e as distâncias que protegem\" do resumo.",
@@ -1601,7 +1542,7 @@
       "luxacao-simples-do-cotovelo-877efcd2",
       "luxacao-simples-do-cotovelo-ec03078e"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "128f24efba202a19007817f2c38d4658646f4d328a4d96240c427cf4645714dc"
     }
    ],
@@ -1646,7 +1587,7 @@
       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
       "luxacao-simples-do-cotovelo-b7ff25a2"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "eb3068dd6d8887433ca9f73f0f6c3b63eb9841618cc94d72240e9417f939d656"
     }
    ],
@@ -1770,46 +1711,27 @@
   "conferido": false
  },
  "ombro-cotovelo-0106": {
-  "conceito": "**Depois de reduzir, é necessário descobrir em que posição a articulação permanece estável.** O cotovelo deve percorrer flexão e extensão em pronação, neutro e supinação. Na luxação posterolateral simples, a deficiência lateral costuma predominar; por isso, flexão com **pronação** é o par protetor descrito para a pergunta.\n\nA pronação tende a tensionar estruturas que compensam parcialmente o lateral e fecha esse lado. A supinação reproduz o componente rotatório da instabilidade posterolateral. A flexão ajuda a manter uma posição protegida, enquanto a extensão progressiva pode revelar a instabilidade residual. O teste deve confirmar isso no indivíduo, em vez de presumir estabilidade por ter escolhido uma posição tradicional de tala.\n\nO resumo recomenda considerar cirurgia se o cotovelo reluxa ainda com mais de 30 graus de flexão. Laxidão em varo ou valgo isolada após o trauma não equivale automaticamente a essa perda de congruência. O objetivo do exame é identificar um arco seguro e uma articulação que permaneça concêntrica.\n\nA tala costuma ser a 90 graus e na rotação que mais estabiliza, seguida de reavaliação em até uma semana e movimento ativo protegido. Prolongar a imobilização por segurança presumida aumenta o risco de rigidez. Em outros padrões, como medial lesado com lateral competente, a rotação de proteção pode ser diferente.\n\n**Na Biblioteca, leia “Tratamento sem cirurgia: reduzir, testar e mexer cedo”.** O trecho mostra que a posição protetora responde ao tipo de lesão e ao teste dinâmico, e não substitui a confirmação da redução.",
-  "correta": "**A: flexão e pronação.** É a combinação que favorece estabilidade no padrão posterolateral com lesão lateral predominante. A flexão mantém uma posição protegida e a pronação se opõe ao mecanismo rotatório desestabilizador.\n\nA resposta não é uma ordem para manter todo cotovelo imóvel nessa posição por semanas. É o ponto de partida para proteger a redução e definir, pelos testes e pelo seguimento, um arco de movimento seguro.",
+  "conceito": "Depois de reduzir uma luxação, a pergunta prática é: em que posição o cotovelo fica no lugar? A resposta sai de saber qual lado rompeu primeiro.\n\n**O que rompeu.** Na luxação posterolateral, as partes moles cedem em anel, de lateral para medial: o **colateral lateral primeiro**, depois a cápsula e, por último, o colateral medial, que às vezes nem chega a romper (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40, seção do mecanismo). A figura do Rockwood (Fig. 40-1) mostra as duas metades da ideia: em A, o anel numerado na ordem em que cede (1 colateral lateral, 2 cápsula, 3 colateral medial); em B, ulna e rádio girando em **supinação** sob valgo e compressão axial, do cotovelo reduzido à instabilidade posterolateral, ao empoleirado e à luxação. A supinação é o próprio movimento da luxação.\n\n**Por que pronar.** Se o lado lateral é o mais lesado, a posição estável é a que desfaz o movimento da lesão. A **pronação** tensiona as estruturas mediais e os extensores e fecha o lado lateral; a supinação reproduz a luxação posterolateral. O capítulo diz que, como a lesão lateral costuma ser a maior, **a pronação geralmente estabiliza**.\n\n**Por que fletir.** A instabilidade aparece na extensão. O teste depois da redução leva o cotovelo pelo arco de flexão e extensão em pronação, neutro e supinação, procurando o ponto em que ele volta a sair. Se o cotovelo **reluxa com mais de 30 graus de flexão**, a cirurgia deve ser considerada. A flexão mantém a ulna encaixada na tróclea; a extensão é onde o cotovelo escapa.\n\n**O que se faz com essa informação.** A tala é leve, com o cotovelo a 90 graus e o antebraço na rotação de maior estabilidade. O paciente é revisto em até uma semana, quando começa o movimento ativo; um protocolo com o braço elevado acima da cabeça deixa mexer cedo numa posição protegida, e o bloqueio de extensão cai 10 graus por semana nas primeiras 3 semanas. **Imobilizar mais de 3 semanas** aumenta a rigidez e piora o resultado. A instabilidade em varo e valgo existe em quase todos depois da luxação e, sozinha, não indica cirurgia.\n\n**A exceção que explica a regra.** A rotação protetora depende de qual lado está lesado. Com o medial íntegro e o lateral a proteger, pronação; com o lateral competente e o medial lesado, supinação; com os dois lesados, neutro (Rockwood, cap. 40, reabilitação). A pergunta fala da luxação posterolateral simples, o padrão em que o lateral é o mais lesado.\n\n> **Na prova:** luxação posterolateral reduzida = **flexão + pronação**. Extensão + supinação é a posição em que ela volta.\n\nO assunto está na seção \"Tratamento sem cirurgia: reduzir, testar e mexer cedo\" do resumo.",
+  "correta": "**A) flexão e pronação.** Na luxação posterolateral, a lesão começa e é maior no colateral lateral, e a pronação fecha o lado lateral, tensionando as estruturas mediais e os extensores (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40). A flexão mantém a ulna encaixada, longe da extensão em que o cotovelo reluxa. É a posição usada na tala, a 90 graus, até o movimento ativo da primeira semana.",
   "incorretas": {
-   "B": "**A flexão pode ajudar, mas a supinação desafia o complexo lateral deficiente.** Ela participa do mecanismo posterolateral e pode evidenciar subluxação residual. Supinação pode proteger outra combinação, com medial lesionado e lateral competente, mas essa regra não deve ser transportada para a luxação posterolateral simples da questão.",
-   "C": "**A pronação está correta, porém a extensão reduz a proteção oferecida pela flexão.** A articulação é testada progressivamente nesse sentido para reconhecer em que ponto perde congruência. Escolher extensão apenas porque a rotação é favorável ignora a necessidade de um arco estável. O par mais protetor descrito no enunciado é flexão com pronação.",
-   "D": "**A combinação reúne duas condições que podem revelar a instabilidade lateral residual.** A extensão aproxima o cotovelo da região do arco em que pode subluxar, e a supinação favorece a rotação posterolateral. Essas posições têm utilidade de teste controlado, mas não constituem o par de maior proteção após reduzir o padrão descrito."
+   "B": "**Flexão e supinação** mantém a flexão protetora, mas a supinação é o movimento da própria luxação posterolateral, mostrado na Fig. 40-1 do Rockwood. Ela protege outra situação: a do colateral lateral competente com o medial lesado, em que o capítulo faz a reabilitação em supinação (Rockwood, cap. 40). Na luxação posterolateral simples, com o lateral roto, supinar abre o lado que precisa ficar fechado.",
+   "C": "**Extensão e pronação** é, no capítulo, uma posição de teste, não de proteção. Depois do reparo, o cotovelo é examinado em pronação e extensão para procurar incongruência por instabilidade posteromedial e insuficiência do colateral medial (Rockwood, cap. 40). A pronação ajuda o lateral, mas a extensão é exatamente o arco em que o cotovelo luxado volta a sair; reluxar acima de 30 graus de flexão já é critério para pensar em cirurgia.",
+   "D": "**Extensão e supinação** é a pior combinação: a supinação recria o giro posterolateral e a extensão tira a ulna do encaixe. É a posição em que o cotovelo reluxa, e é usada justamente para isso, para desafiar o reparo lateral no intraoperatório, com a extensão por gravidade em supinação (Rockwood, cap. 40). Serve para descobrir a instabilidade, não para tratá-la."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo; Quem segura o cotovelo."
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40 (Elbow Dislocations and Terrible Triad Injuries), seções do mecanismo e do tratamento não cirúrgico da luxação (Fig. 40-1)",
+   "Resumo OrtoQuestões: Luxação do cotovelo, cabeça do rádio e tríade terrível"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Luxação simples do cotovelo",
-      "Quem segura o cotovelo"
-     ],
-     "blocos": [
-      "luxacao-simples-do-cotovelo-877efcd2",
-      "luxacao-simples-do-cotovelo-3e95d9b4",
-      "quem-segura-o-cotovelo-7b7c7f11",
-      "luxacao-simples-do-cotovelo-5adb2600",
-      "luxacao-simples-do-cotovelo-dda581c3"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "28e93f10b94dd30a6a00f660cc190f35a8c0668de29533e51013c73a50fee5fa"
-    }
-   ],
-   "questaoSha256": "e08c058d38ed97455a19ab9ec3b9fe80b5e04fb971f035361f77dbca7602114f",
-   "comentarioSha256": "df1094b29f37f4ce3da2304547aaa8e0e0e09a137bbdb6731b39d45c3c04e9f1"
-  }
+  "imagens": [
+   {
+    "arquivo": "ombro-cotovelo/rwa10-40-1.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40, Fig. 40-1. A: o anel de lesões da luxação do cotovelo, numerado na ordem em que cede: 1 colateral lateral, 2 cápsula, 3 colateral medial. B: a ulna e o rádio giram em supinação sob valgo e compressão axial, do cotovelo reduzido à instabilidade rotatória posterolateral, ao cotovelo empoleirado (perched) e à luxação completa.",
+    "largura": 930,
+    "altura": 905
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "ombro-cotovelo-0107": {
   "conceito": "A conduta na instabilidade posterior com defeito ósseo anteromedial da cabeça umeral (a **lesão de McLaughlin**, ou Hill-Sachs reverso) é decidida pelo tamanho do defeito e pelo tempo de evolução.\n\nA regra geral, com a ressalva de que os limites variam um pouco entre autores:\n\n- Defeitos **até cerca de 20% a 25%** da superfície articular podem ser tratados sem enxertia nem transferência, com redução e imobilização em rotação externa mais reabilitação.\n- **Entre cerca de 25% e 50%**, indica-se o procedimento de **McLaughlin** (transferência do tendão do subescapular para dentro do defeito, preenchendo-o com tecido e impedindo que ele volte a engatar no rebordo posterior da glenoide) ou a sua modificação de Neer e Hawkins, que transfere o troquim com o tendão, transformando a fixação tendínea em consolidação óssea.\n- **Acima de 50%**, ou quando a cabeça está colapsada e a lesão é antiga, discutem-se as opções de reconstrução com enxerto osteocondral, desimpactação com enxerto ou artroplastia.\n\nUm defeito de 25%, portanto, cai exatamente na faixa da transferência do subescapular.\n\nVale lembrar que a luxação posterior é subdiagnosticada em mais da metade dos casos e que o contexto clássico é a crise convulsiva ou a eletrocussão, com o braço travado em rotação interna.",
@@ -1920,7 +1842,7 @@
       "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b",
       "anatomia-aplicada-e-vias-de-acesso-f121538c"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "62492b977b643a492e716f8aca45731b9016c160c392822dc7a714d4341811ee"
     },
     {
@@ -1935,7 +1857,7 @@
      "blocos": [
       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
      ],
-     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "sha256": "699fa070c7c0f4fd68ef96baef92e886f8a4c357b9322fb6395df43172a4eaac",
      "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
     },
     {
@@ -1950,7 +1872,7 @@
      "blocos": [
       "vias-de-acesso-e-os-nervos-em-risco-187b9899"
      ],
-     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "sha256": "6e4b788fdf92b4b52457f8ef78cf2a665b0623f845c37d0b061e46a48e87bde3",
      "trechosSha256": "c81922c2374078b73ea58169bbb32314dea58fa5c5ed2f9b1fd5ccb188ac5c5a"
     }
    ],
@@ -2062,42 +1984,29 @@
   "conferido": false
  },
  "ombro-cotovelo-0121": {
-  "conceito": "A seta aponta o **feixe anterior do ligamento colateral ulnar**, também chamado colateral medial. A faixa se abre do epicôndilo medial para a ulna proximal, na região do **tubérculo sublime**. Essa relação entre dois pontos ósseos permite reconhecer o feixe; não basta escolher a estrutura que parece mais espessa no desenho (Rockwood adultos, 10ª ed., cap. 40, lado medial).\n\nO feixe anterior é o principal restritor ligamentar ao **valgo**, movimento que tende a abrir o lado medial da articulação. Sua origem na face anteroinferior do epicôndilo medial e sua inserção ulnar estabelecem uma ponte através da articulação. Quando o valgo tenta afastar essas regiões, o ligamento é tensionado e limita a abertura.\n\nO feixe posterior pertence ao mesmo complexo, mas o resumo lhe atribui papel secundário no valgo e participação na contenção da rotação da ulna. Portanto, dizer apenas “colateral ulnar” não resolve a identificação: é preciso seguir o trajeto da faixa apontada. No desenho, ela se dirige anteriormente na ulna; o leque posterior fica mais próximo do olécrano.\n\nEssa função não torna o feixe anterior o estabilizador mais importante em qualquer direção. O complexo lateral tem papel dominante contra varo e rotação posterolateral. Em atividades que impõem valgo repetido, como o arremesso, a integridade do feixe anterior medial ganha especial importância. A anatomia deve ser ligada à direção da força que se pretende conter.",
-  "correta": "**Correta: B (porção anterior do ligamento colateral ulnar).** A faixa indicada une o epicôndilo medial à região anterior da ulna proximal, correspondente ao tubérculo sublime. O trajeto concorda com o feixe que o resumo identifica como estabilizador-chave contra o valgo.",
+  "conceito": "Questão de anatomia em desenho: a seta cai sobre uma faixa do lado medial do cotovelo, e as quatro opções são \"porções\" do colateral ulnar. Para acertar, é preciso saber quantas porções existem de verdade e onde cada uma passa.\n\n**A imagem.** É um desenho do cotovelo visto pelo lado medial, com o úmero subindo à direita e o antebraço à esquerda. A seta amarela aponta uma faixa espessa em leque que parte do epicôndilo medial e desce para a frente, até a base do coronoide. Atrás dela, perto do olécrano, há outro leque mais fino; embaixo, uma faixa corre ao longo da própria ulna.\n\n**As três porções.** O complexo colateral medial tem **três componentes: anterior, posterior e transverso** (Campbell's Operative Orthopaedics, 15ª ed., cap. 15, p. 643). A figura do Campbell, abaixo (Fig. 15.1A, p. 644), desenha o mesmo cotovelo em vista medial e dá nome a cada um:\n- **feixe anterior** (anterior bundle): o mais fácil de identificar e a parte principal do complexo; insere-se na face medial do coronoide, no **tubérculo sublime**, e fica tenso na flexão e na extensão;\n- **feixe posterior** (posterior bundle): leque que vai para o olécrano e fica tenso na flexão;\n- **ligamento transverso** (transverse ligament): a faixa que corre embaixo, sobre a própria ulna.\n\nO painel B da mesma figura mostra o lado lateral, para comparar: colateral radial, anular, colateral acessório e colateral ulnar lateral.\n\n**Por que o feixe anterior importa.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 40, seção do lado medial), o chama de **estabilizador-chave contra o valgo**: nasce na face anteroinferior do epicôndilo medial e se insere no tubérculo sublime. O Campbell dá o número: a 90 graus de flexão, o colateral ulnar responde por **55% da estabilidade ao valgo**, com o feixe anterior como estabilizador primário (cap. 52, p. 2229). O mesmo trecho divide o feixe anterior em duas bandas não isométricas, uma tensa de 0 a 60 graus e outra de 60 a 120 graus, e lembra que a lesão por atrito desse feixe é, de longe, a forma mais comum de instabilidade recorrente em valgo. O Rockwood acrescenta que o medial só é o ligamento mais importante para quem vive em valgo, como o arremessador; no dia a dia o cotovelo sofre mais varo.\n\n**Como reconhecer na figura.** A pista é o trajeto: a faixa da seta é a mais grossa, vai do epicôndilo à base do coronoide, à frente. O posterior fica atrás, rumo ao olécrano; o transverso não sai do úmero.\n\n> **Na prova:** colateral medial = **anterior, posterior e transverso**. Anterior: epicôndilo medial ao **tubérculo sublime**, freio do valgo. \"Superior\" não existe.\n\nA anatomia está na seção \"O lado medial\" do resumo.",
+  "correta": "**B) porção anterior do ligamento colateral ulnar.** A seta está na faixa espessa que vai da face anteroinferior do epicôndilo medial até o tubérculo sublime, na base do coronoide: é o feixe anterior, a parte principal do complexo medial e o freio primário do valgo (Campbell's Operative Orthopaedics, 15ª ed., cap. 15, p. 643, Fig. 15.1A; Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40). A 90 graus, o colateral ulnar dá 55% da estabilidade ao valgo, e o feixe anterior é o estabilizador primário (Campbell, cap. 52, p. 2229).",
   "incorretas": {
-   "A": "“Superior” não é a divisão que identifica o feixe apontado na descrição do complexo medial consultada. A origem está no úmero, mas isso não transforma toda faixa que parte de um ponto mais alto em uma porção superior. A diferenciação necessária é anterior versus posterior, seguindo sua inserção na ulna.",
-   "C": "O feixe posterior aparece no leque mais próximo do olécrano, atrás da faixa para a qual a seta se dirige. O resumo o distingue funcionalmente como contenção secundária ao valgo e participante da restrição rotacional. A seta está na faixa anterior que chega ao tubérculo sublime, não nesse leque posterior.",
-   "D": "A faixa transversa visível na parte inferior do complexo segue entre regiões da própria ulna. A seta, em contraste, está na ponte oblíqua que parte do epicôndilo medial e atravessa a articulação até a ulna. Seguir as extremidades da estrutura evita confundir a faixa inferior com o feixe anterior umeroulnar."
+   "A": "**Porção superior do ligamento colateral ulnar** não existe nas descrições dos livros. O Campbell (cap. 15, p. 643) divide o complexo medial em anterior, posterior e transverso, e o Rockwood (cap. 40) fala em feixe anterior e posterior. Todas as porções que vêm do úmero nascem no epicôndilo medial; o que as separa é para onde vão na ulna, para a frente ou para trás, e não a altura de origem.",
+   "C": "**Porção posterior do ligamento colateral ulnar** é o leque que sai do epicôndilo medial e vai para trás, em direção ao olécrano, tenso na flexão (Campbell, cap. 15, p. 643). Na figura da questão, ele está atrás da faixa apontada. Funciona como freio secundário do valgo e da rotação da ulna (Rockwood, cap. 40) e seria a resposta se a seta caísse sobre o leque próximo do olécrano.",
+   "D": "**Porção transversa do ligamento colateral ulnar** existe: é o terceiro componente do complexo, desenhado pelo Campbell como a faixa que corre na parte de baixo, sobre a própria ulna (cap. 15, Fig. 15.1A, p. 644). Como não sai do úmero, não cruza a articulação umeroulnar como os outros dois feixes. Os livros não lhe atribuem papel na estabilidade, e ela não é a faixa espessa que a seta marca."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Quem segura o cotovelo."
+   "Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 15 (Reconstructive Procedures of the Elbow), p. 643 e 644 (Fig. 15.1)",
+   "Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 52 (Recurrent Dislocations of the Shoulder and Elbow), p. 2229",
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40 (Elbow Dislocations and Terrible Triad Injuries), seção do lado medial",
+   "Resumo OrtoQuestões: Luxação do cotovelo, cabeça do rádio e tríade terrível"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Quem segura o cotovelo"
-     ],
-     "blocos": [
-      "quem-segura-o-cotovelo-2b1e3945",
-      "quem-segura-o-cotovelo-49b9c486"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "f26a2e9a99f165c145dd79ddc33c2c36895972d360e74f8c790d708a7fb3402d"
-    }
-   ],
-   "questaoSha256": "f4254a0cb81f91a615dc264311cba582e50650c2cbc70c6749fcacb1cdadd549",
-   "comentarioSha256": "f64e711d64fdef8ae57c456cb80e7f72a4c735a9802299b9f195f4291c3cec9e"
-  }
+  "imagens": [
+   {
+    "arquivo": "ombro-cotovelo/campbell15-15-1-w82.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 15, Fig. 15.1, p. 644. Os ligamentos colaterais do cotovelo. A, face medial: feixe anterior, feixe posterior e ligamento transverso (o anel em volta do colo do rádio, à esquerda, não é nomeado). B, face lateral: colateral radial, ligamento anular, colateral acessório e colateral ulnar lateral, que segue até a ulna.",
+    "largura": 1316,
+    "altura": 593
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "ombro-cotovelo-0122": {
   "incorretas": {
@@ -2182,7 +2091,7 @@
       "placa-tecnica-numeros-e-resultados-40bc40ff",
       "placa-tecnica-numeros-e-resultados-7281e01c"
      ],
-     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "sha256": "6e4b788fdf92b4b52457f8ef78cf2a665b0623f845c37d0b061e46a48e87bde3",
      "trechosSha256": "ee657bd1d417c37984de7d3eb3d0ee18ad8d048639cf4d618d0c32917dd3f237"
     }
    ],
@@ -2261,7 +2170,7 @@
       "irrigacao-da-cabeca-hertel-e-osteonecrose-40a7cd70",
       "irrigacao-da-cabeca-hertel-e-osteonecrose-42b18f77"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "1afda1d2655941a9a34ef925675ba38eac56ab32255c53f4288f1a14c858f9eb"
     },
     {
@@ -2276,7 +2185,7 @@
      "blocos": [
       "vias-de-acesso-e-os-nervos-em-risco-187b9899"
      ],
-     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "sha256": "6e4b788fdf92b4b52457f8ef78cf2a665b0623f845c37d0b061e46a48e87bde3",
      "trechosSha256": "c81922c2374078b73ea58169bbb32314dea58fa5c5ed2f9b1fd5ccb188ac5c5a"
     }
    ],
@@ -3367,47 +3276,27 @@
   "conferido": false
  },
  "ombro-cotovelo-0239": {
-  "conceito": "**Posteromedial e posterolateral são padrões diferentes de falha do cotovelo.** Na instabilidade rotatória posteromedial em varo, a carga axial se combina com **varo e pronação**. A tróclea comprime a faceta anteromedial do coronoide, e o padrão costuma incluir avulsão do colateral lateral e do feixe posterior medial.\n\nA fratura anteromedial pode ser pequena e passar despercebida. Muitas vezes o paciente não chega com uma luxação evidente: houve estalo, subluxação ou redução espontânea. O capítulo orienta suspeitar especialmente quando existe coronoide fraturado sem fratura da cabeça radial; a tomografia com reconstrução 3D ajuda a definir o padrão e a congruência.\n\nO espelho útil é a instabilidade **posterolateral**, associada a supinação, valgo e carga axial, que pode produzir a tríade terrível. Compartilhar carga axial não torna os dois mecanismos iguais; a rotação e a direção angular definem qual contenção óssea e ligamentar fica mais exigida.\n\nA diferença muda o tratamento do coronoide. A borda anteromedial precisa de suporte para não colapsar em varo, e o resumo descreve placa de suporte na maioria das lesões operadas. Isso difere da sutura capsular usada para certas pontas pequenas e cominutivas da tríade.\n\n**Na Biblioteca, leia “Mecanismo” da instabilidade posteromedial e compare com o mecanismo da tríade terrível.** Use a localização da fratura como consequência das forças, em vez de memorizar pronação e varo sem entender o que elas fazem.",
-  "correta": "**A: pronação e varo.** São os componentes que, somados à carga axial já informada, correspondem ao padrão posteromedial descrito. A compressão da tróclea sobre a faceta anteromedial explica a fratura característica.\n\nO nome “posteromedial” descreve a instabilidade; “anteromedial” localiza o fragmento do coronoide. As duas expressões não são contraditórias nem devem ser trocadas.",
+  "conceito": "A instabilidade posteromedial é o espelho da posterolateral, e a banca testa justamente se o aluno sabe virar o espelho. As duas têm carga axial; o que muda é a rotação e o lado para onde o cotovelo é forçado.\n\n**O que é.** A instabilidade rotatória posteromedial em varo foi descrita por O'DRISCOLL em 2003. É menos comum que a tríade terrível, mas **discreta e fácil de passar despercebida**, e evolui mal sem tratamento (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40). A lesão-chave é uma fratura da **faceta anteromedial do coronoide**, que pode ser pequena.\n\n**O mecanismo.** O Rockwood descreve a fratura como produzida por **pronação, varo e carga axial**. O úmero roda sobre a ulna em varo, e a tróclea esmaga a faceta anteromedial. Vem quase sempre com **avulsão do colateral lateral** e do feixe posterior do medial, às vezes do anterior também. O raciocínio é mecânico: o varo fecha o lado medial e concentra a carga na borda medial do coronoide; a pronação gira a ulna de modo a apresentar essa faceta à tróclea; e, do outro lado, o varo abre o lateral e arranca o colateral.\n\n**A pista que denuncia.** Diferente da tríade, **a cabeça do rádio quase nunca fratura** aqui, e o capítulo diz que é isso que deve levantar a suspeita: coronoide fraturado sem fratura da cabeça do rádio. A figura do Rockwood (Fig. 40-17) é o caso típico: mulher de 39 anos que caiu no gelo; em A e B, frente e perfil com uma fratura discreta do coronoide e a cabeça do rádio inteira. Ela tinha crepitação e dor ao mexer o cotovelo com o braço afastado do corpo, gesto que faz varo. Em C, a tomografia em 3D mostra a fratura da faceta anteromedial; em D e E, um ano depois do reparo do colateral lateral e da placa de suporte na faceta. A tomografia com reconstrução 3D é recomendada de rotina.\n\n**O espelho.**\n\n| | Posterolateral (tríade) | Posteromedial em varo |\n|---|---|---|\n| Forças, além da carga axial | **supinação e valgo** | **pronação e varo** |\n| Coronoide | ponta (O'DRISCOLL I) | faceta anteromedial (O'DRISCOLL II) |\n| Cabeça do rádio | fratura | quase sempre inteira |\n| Fixação do coronoide | sutura da cápsula nas pontas pequenas | placa de suporte |\n\n**Por que o mecanismo muda o tratamento.** Mesmo fragmentos pequenos mudam a cinemática em varo: reparar só o lateral não devolveu a estabilidade com fragmentos de 5 mm ou mais. Na maioria, opera-se pela via medial com **placa de suporte** na faceta, porque sutura não segura uma borda que tende a colapsar em varo, e depois repara-se o colateral lateral.\n\n> **Na prova:** posteromedial = **varo + pronação** + carga axial. Posterolateral = valgo + supinação. Trocar um termo de cada lado é a armadilha.\n\nO mecanismo está na seção \"Mecanismo\" da instabilidade rotatória posteromedial em varo, no resumo.",
+  "correta": "**A) pronação e varo.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 40), atribui a fratura da faceta anteromedial do coronoide, a lesão que define a instabilidade rotatória posteromedial, a pronação, varo e carga axial. O varo fecha o lado medial e faz a tróclea esmagar a faceta anteromedial, enquanto abre o lado lateral e arranca o colateral lateral, que vai quase sempre junto. A cabeça do rádio, poupada pelo varo, quase nunca fratura.",
   "incorretas": {
-   "B": "**A pronação está correta, mas o valgo não compõe o mecanismo pedido.** O resumo descreve varo, que comprime a faceta anteromedial. Trocar a direção angular altera a distribuição de forças e mistura o padrão com elementos do mecanismo posterolateral. O par deve ser mantido completo para explicar a lesão óssea.",
-   "C": "**O varo está correto, mas a supinação foi trocada pela pronação.** Supinação participa do mecanismo posterolateral clássico, enquanto a pergunta delimita o posteromedial. A opção combina um elemento de cada padrão e perde a coerência entre força e local da fratura.",
-   "D": "**Supinação e valgo é a combinação posterolateral.** Somada à carga axial, pode produzir a luxação com fraturas da cabeça radial e da ponta do coronoide. A pergunta procura o mecanismo que esmaga a faceta anteromedial, em varo e pronação; reconhecer esse contraste impede tratar as duas lesões como equivalentes."
+   "B": "**Pronação e valgo** acerta a rotação e erra o plano. O valgo abre o lado medial em vez de comprimi-lo, e é a força do mecanismo posterolateral, o da luxação simples e da tríade terrível (Rockwood, cap. 40). Sob valgo, quem recebe a carga é a radiocapitelar, não a faceta anteromedial; por isso a tríade fratura a cabeça do rádio, e a lesão posteromedial, não.",
+   "C": "**Supinação e varo** acerta o plano e erra a rotação. A supinação é o giro da luxação posterolateral: rádio e ulna rodam juntos para fora e escapam para trás do capítulo (Rockwood, cap. 40). O resumo registra essa mistura como armadilha também no exame da instabilidade posterolateral crônica, em que a manobra correta é valgo com supinação. No mecanismo posteromedial, a rotação é a pronação.",
+   "D": "**Supinação e valgo** é o mecanismo inteiro do outro lado do espelho: com carga axial, produz a luxação posterolateral e, quando a energia é maior, a tríade terrível, com fratura da ponta do coronoide e da cabeça do rádio (Rockwood, cap. 40). Seria a resposta se a pergunta fosse sobre a instabilidade rotatória posterolateral ou sobre a tríade."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Instabilidade rotatória posteromedial em varo; Tríade terrível."
+   "Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40 (Elbow Dislocations and Terrible Triad Injuries), seção Posteromedial Rotatory Instability of the Elbow (Fig. 40-17)",
+   "Resumo OrtoQuestões: Luxação do cotovelo, cabeça do rádio e tríade terrível"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Instabilidade rotatória posteromedial em varo",
-      "Tríade terrível"
-     ],
-     "blocos": [
-      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
-      "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
-      "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
-      "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
-      "triade-terrivel-1483748a",
-      "triade-terrivel-fc91076c"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "2c0c522bc777229dc766139d5b93f78b4333c666515e9b0e89c75e0ef983ceb5"
-    }
-   ],
-   "questaoSha256": "7917577e8614f73d938270338ef129df3b79539713875753db9e113a3b8fdf78",
-   "comentarioSha256": "1a869350425625d1886774707a25908cf6eba36e699a7625186981aeb416b9cb"
-  }
+  "imagens": [
+   {
+    "arquivo": "ombro-cotovelo/rwa10-40-17-t01.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40, Fig. 40-17, seção da instabilidade rotatória posteromedial (arquivo sem página impressa). Mulher de 39 anos que caiu no gelo: em A e B, frente e perfil com fratura discreta do coronoide sem fratura da cabeça do rádio; em C, a tomografia em 3D com a fratura da faceta anteromedial; em D e E, um ano depois do reparo transósseo do colateral lateral e da placa de suporte na faceta.",
+    "largura": 1128,
+    "altura": 907
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "ombro-cotovelo-0240": {
   "conceito": "Um cotovelo pode ter menos movimento do que o normal e ainda servir para quase tudo. Essa é a ideia por trás do arco funcional: não é o arco do cotovelo sadio, é o mínimo que permite comer, beber, pentear-se, abrir uma porta e cuidar da higiene. A questão cobra os números desse mínimo, e a banca construiu as alternativas trocando um pedaço de cada vez.\n\n**O normal e o funcional são coisas diferentes.** O arco normal da flexoextensão vai de **0 a cerca de 150 graus** (Campbell, cap. 15, p. 644; cap. 51, p. 2184). Na rotação, o HEBERT dá **75 graus de pronação e 85 de supinação** no capítulo do trauma (HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed., cap. 48 (Traumatismos do cotovelo no adulto)) e **80 a 85** para cada lado no da reabilitação (HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed., cap. 54 (Reabilitação nas lesões traumáticas do membro superior)). O arco funcional, definido por MORREY, é bem menor: **flexoextensão de 30 a 130 graus**, cerca de 100 graus de arco, **com 50 graus de pronação e 50 de supinação**.\n\n**Os livros lado a lado.** É raro um número em que todos concordam, e este é um deles; cada livro o usa num contexto diferente, e esse contexto ajuda a entender para que o número serve:\n\n| Livro | Como descreve o arco funcional | Contexto |\n|---|---|---|\n| Campbell 15, cap. 51, p. 2184 | 30 a 130, com 50 de pronação e 50 de supinação | contraturas do cotovelo |\n| Green 7, cap. 18, p. 727 | cerca de 100 graus (30 a 130) e rotação de 50 a 50 (MORREY) | resultado das fraturas do úmero distal |\n| Green 7, cap. 21, p. 826 aprox. | MORREY definiu a rotação funcional como 50 e 50 | eixo do antebraço |\n| HEBERT 5, caps. 48 e 54 | 30 a 130, 50 de pronação e 50 de supinação | anatomia e reabilitação |\n| Rockwood and Green 10, cap. 42 | 50 a 50 como arco mínimo de rotação, hoje considerado pequeno para algumas tarefas | fraturas da diáfise do antebraço |\n\nA única nota dissonante vem do Rockwood: ele usa o 50 e 50 como meta depois da fixação das fraturas do antebraço, mas registra que medições com tecnologia recente mostram que tarefas ocupacionais e de higiene exigem um arco maior (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42 (Diaphyseal Fractures of the Radius and Ulna)). Isso não muda a resposta da prova, que pede a definição clássica; muda a leitura clínica: 50 e 50 é piso, não alvo.\n\n**Normal assimétrico, funcional simétrico.** O arco normal de rotação tem mais supinação que pronação no HEBERT 48 (85 contra 75), mas a definição de MORREY, repetida em todos os livros, é simétrica: **50 e 50**. O arco funcional não é uma fração proporcional do normal; é o mínimo medido nas tarefas do dia a dia, e por isso não herda a assimetria do cotovelo sadio. Essa diferença é exatamente o que a banca explora.\n\n**Por que as duas pontas do arco não pesam igual.** O HEBERT traz um detalhe de MORREY que explica as condutas na rigidez: o déficit de extensão é o mais comum depois do trauma, mas a **perda da flexão limita muito mais**, e clinicamente a flexão vale **2 para 1** em relação à extensão (HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed., cap. 54 (Reabilitação nas lesões traumáticas do membro superior)). Sem os últimos graus de flexão, a mão não alcança a boca nem a cabeça; sem os primeiros graus de extensão, perde-se um pouco do alcance. O Campbell dá o limite do outro lado: contratura em flexão **acima de 45 graus** prejudica muito o posicionamento da mão (cap. 51, p. 2184).\n\nOs números e a tabela por livro estão na seção \"O arco funcional de MORREY\" do resumo.",
@@ -3529,7 +3418,7 @@
       "dissociacao-escapulotoracica-8b999d6b",
       "dissociacao-escapulotoracica-2b65a722"
      ],
-     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "sha256": "699fa070c7c0f4fd68ef96baef92e886f8a4c357b9322fb6395df43172a4eaac",
      "trechosSha256": "2c5af8b694c231e7cf817934ef4bef831b01e9df19eeca5bf6946e1ba198e2fb"
     }
    ],
@@ -3946,7 +3835,7 @@
       "luxacao-simples-do-cotovelo-4dc4fd08",
       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "4b530a128c87850ab88af2124cccbc41ca6ebf6fcadf6d1ce36df0fc6fd09baf"
     }
    ],
@@ -4119,7 +4008,7 @@
      "blocos": [
       "fratura-da-cabeca-do-radio-9e1dbc64"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "b14621ab715a02050924eeffac86f037109bbc8e871f1cbd2958a9f8eecf5b26"
     }
    ],
@@ -4186,7 +4075,7 @@
       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d",
       "haste-intramedular-9f3a7a30"
      ],
-     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "sha256": "6e4b788fdf92b4b52457f8ef78cf2a665b0623f845c37d0b061e46a48e87bde3",
      "trechosSha256": "1426d78736268011e2a94e4410ce140d2da0cbbf95ea5465095785f95e882a01"
     }
    ],
@@ -4467,7 +4356,7 @@
       "luxacao-simples-do-cotovelo-e9cc7169",
       "fratura-da-cabeca-do-radio-109bc9e4"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "d743fef0cebb1ca324e8a690644e75e5d382693c29b6bbf98bd0acbccbcd96de"
     }
    ],
@@ -4552,7 +4441,7 @@
       "ulna-proximal-olecrano-e-monteggia-posterior-13cd0e0b",
       "fratura-da-cabeca-do-radio-8dbbe2b9"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "305874eeea6af46cf165b7098a796ef9899b02aec13cca117e46f6bcb05cedb2"
     }
    ],
@@ -4696,7 +4585,7 @@
       "mecanismo-e-exame-da-luxacao-posterior-a935d2bf",
       "mecanismo-e-exame-da-luxacao-posterior-12e22a02"
      ],
-     "sha256": "815fd22160a13e0bd820f30ad8a2c334771c9d656525be0eace87e6169423eb7",
+     "sha256": "6b26faf20b2dfd7403bc1d001e622479b31ec01a383135f963b69651c2cfd43e",
      "trechosSha256": "28f2ddf94a247dba9bdfe626ba27c727612029c415f33ce53963a6fed0fa4feb"
     }
    ],
@@ -4844,35 +4733,7 @@
   "referencias": [
    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo; Quem segura o cotovelo; Instabilidade rotatória posteromedial em varo."
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Luxação simples do cotovelo",
-      "Quem segura o cotovelo",
-      "Instabilidade rotatória posteromedial em varo"
-     ],
-     "blocos": [
-      "luxacao-simples-do-cotovelo-d4159e35",
-      "luxacao-simples-do-cotovelo-5d25ae81",
-      "quem-segura-o-cotovelo-7b7c7f11",
-      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "3fe79b00bb1947df21da1f05b0937fdea33b0d9ce8306105a9fec22ab845e346"
-    }
-   ],
-   "questaoSha256": "f6de7457c5537a8ea2dc93d36abed97edc9cb9a7bf7a13ef669d33357fabc050",
-   "comentarioSha256": "668b1c87c7a3769f5c2dce4b24d9e43d27580cde87687dbdd81cb3437f62d04a"
-  }
+  "geradoEm": "2026-10-21"
  },
  "ombro-cotovelo-0349": {
   "conceito": "Dois extensores radiais do carpo saem do lado lateral do cotovelo, com nomes quase iguais, e só um deles é o doente. Esta questão do TARO 2010 é, no fundo, uma pergunta de anatomia disfarçada de pergunta de ressonância: saber que o sinal sobe ajuda, mas não basta se o aluno trocar o curto pelo longo.\n\n**Curto e longo não nascem no mesmo lugar.** O Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., seção Epicondilite lateral (pág. PDF 377) é preciso: o **extensor radial longo do carpo (ERLC)** e o braquiorradial se originam **mais acima, na crista supracondilar**, e **não estão envolvidos** na doença. O **extensor radial curto (ERCC)** nasce no aspecto anterior do próprio epicôndilo, inferior ao longo e profundo ao extensor dos dedos. COHEN, em cadáver, desenhou a pegada do ERCC como um losango que vai do topo do capítulo até o ponto médio da articulação radiocapitelar (Green's Operative Hand Surgery, 7ª ed., cap. 25 (Elbow Tendinopathies and Tendon Ruptures), p. 866). O ERLC só adoece raramente.\n\nA cirurgia confirma essa hierarquia. Na técnica aberta do Green (p. 867), o cirurgião incisa a interface entre ERLC e extensor dos dedos e **afasta o ERLC para a frente** para chegar ao tecido branco-acinzentado e friável do ERCC. Na artroscopia, depois de ressecada a cápsula, aparece a face profunda branca do tendão conjunto ERCC e extensor dos dedos, claramente separada do **ERLC, muscular e mais anterior** (p. 868). O ERLC é o vizinho que se afasta, não o que se resseca.\n\n**O que o T2 mostra.** A tendinose troca colágeno alinhado por fibroblastos, vasos imaturos e degeneração mucoide. Tudo isso carrega água, e água brilha em T2. O Campbell's Operative Orthopaedics, 15ª ed., cap. 51 (Shoulder and Elbow Injuries, seção Elbow Tendinopathies) (p. 2181) descreve espessamento do tendão com **aumento de sinal em T1 e T2** e traz um dado prognóstico curioso: um estudo encontrou **melhor resultado cirúrgico** quando havia um foco de alto sinal em T2 no ERCC junto ao epicôndilo. O SIZÍNIO (pág. PDF 379) diz que a RM em T2 é a que melhor mostra as alterações e que ela é mais sensível que o ultrassom (90% a 100%), com especificidade semelhante, de 80% a 100%.\n\n**Como pensar diante das quatro opções.** A pergunta se resolve em dois cortes. Primeiro, o tendão: só o curto é a sede. Segundo, o sinal: tendão normal é escuro; tendão degenerado clareia. Hipossinal no ERCC seria um ERCC saudável; qualquer sinal no ERLC fala do músculo errado. O Green (cap. 25, p. 864) ainda lembra que o sinal pode persistir depois da melhora clínica e aparecer em assintomáticos, por isso a RM complementa, mas não substitui, o exame.\n\nOs achados de imagem e o papel de cada exame estão na seção \"A imagem: radiografia, ultrassom e ressonância\" do resumo; a anatomia dos dois radiais, em \"A anatomia que explica a doença\".",
@@ -4919,34 +4780,7 @@
   "referencias": [
    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Luxação simples do cotovelo."
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Luxação simples do cotovelo"
-     ],
-     "blocos": [
-      "luxacao-simples-do-cotovelo-d4159e35",
-      "luxacao-simples-do-cotovelo-5d25ae81",
-      "luxacao-simples-do-cotovelo-569d2234",
-      "luxacao-simples-do-cotovelo-2d8aeee9",
-      "luxacao-simples-do-cotovelo-4dc4fd08"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "07725ef7a409c7e01d28187387d792c4769e65a7bdf1e749bb502efee2ba8d18"
-    }
-   ],
-   "questaoSha256": "f15a6c36aaa1dfc78eedd86fae90c5b2687b30fc7e12fde6160e5eedc122ac0a",
-   "comentarioSha256": "6c1cd13dab19e74a829c0872aad36a481a83af29963a6a2e6f48ca9b37c7fb8f"
-  }
+  "geradoEm": "2026-10-21"
  },
  "ombro-cotovelo-0352": {
   "alerta": "O Campbell cita BENNETT apenas pelo nome, entre os autores que descreveram a subluxação do bíceps, e reproduz a classificação de LAFOSSE (Box 48.7); os tipos da classificação de BENNETT não estão descritos nos capítulos lidos. O gabarito oficial foi preservado; a explicação usa a anatomia da polia descrita no Campbell e no Netter.",
@@ -5165,7 +4999,7 @@
       "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
       "vias-de-acesso-e-o-nervo-interosseo-posterior-fa2b44fd"
      ],
-     "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
      "trechosSha256": "58830ff3e06a8ebe8355537d6c97e0ce0b35009bcaf166322f97abc86ba17c55"
     }
    ],
@@ -5392,7 +5226,7 @@
       "quem-segura-o-cotovelo-7b7c7f11",
       "luxacao-simples-do-cotovelo-4dc4fd08"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "27bc41bea80dcc0232aad12fab47481f53b21e53e44d1061f6028b420ebcacf7"
     }
    ],
@@ -6316,7 +6150,7 @@
       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "13836b7c2f43e59b16a4e0656b6776150aa73906e2192d41026ad57164de83d6"
     }
    ],
@@ -6742,7 +6576,7 @@
       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
       "quem-segura-o-cotovelo-7b7c7f11"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "ff0c043396cf44f89e0a2c8bbd95e6789afcd97caa4461905f6bc89a60561c3e"
     }
    ],
@@ -6996,35 +6830,7 @@
   "referencias": [
    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 40: Elbow Dislocations and Terrible Triad Injuries. Conteúdo consultado no resumo Luxação do cotovelo, cabeça do rádio e tríade terrível, Biblioteca OrtoQuestões. Seções: Fratura da cabeça do rádio."
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Fratura da cabeça do rádio"
-     ],
-     "blocos": [
-      "fratura-da-cabeca-do-radio-da237d59",
-      "fratura-da-cabeca-do-radio-5a247e61",
-      "fratura-da-cabeca-do-radio-ea450acb",
-      "fratura-da-cabeca-do-radio-f43297ab",
-      "fratura-da-cabeca-do-radio-ac256d11",
-      "fratura-da-cabeca-do-radio-ffb10ce8"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "7ed255417000eec3fe6ec247a0dd7d7d3826c6eeda69704edd72bd24701fc50d"
-    }
-   ],
-   "questaoSha256": "a66167dc7011a15a5cbddc91df64fc45cb5666bcb94fd820399aca107dc7090c",
-   "comentarioSha256": "b8b2f04035d5bc2ce9ea89b7fddd62fda3d443311e0b72c762b73ff817fb17d8"
-  }
+  "geradoEm": "2026-10-21"
  },
  "ombro-cotovelo-0466": {
   "conceito": "Quando o subescapular rompe e se retrai, ele some do campo artroscópico: o tendão recua para medial, em direção ao coracoide, e quem olha pelo portal posterior vê só o tubérculo menor descoberto. A questão cobra a pista que denuncia onde ele foi parar, o **sinal da vírgula** (Campbell's Operative Orthopaedics, 15ª ed., cap. 57 (Arthroscopy of the Upper Extremity), p. 2478 e 2479).\n\n**O que forma a vírgula.** O tendão da cabeça longa do bíceps entra no sulco intertubercular passando por uma polia, o **arco bicipital**. O Campbell descreve essa polia como o **glenoumeral superior e o coracoumeral** no sulco superior, reforçados pelo **subescapular** e pelo **supraespinal** (p. 2435). A parte medial dessa bainha, a **alça medial**, está grudada na borda superolateral do subescapular. Quando o tendão se retrai, ele arrasta essa alça junto. Na imagem artroscópica, a faixa de tecido curva presa ao canto do tendão retraído desenha uma vírgula: é o **\"tecido da vírgula\"** (comma tissue), alça medial da bainha do bíceps formada pelo **coracoumeral** e pelo **glenoumeral superior** (fig. 57.53A).\n\n**Por que ela importa na cirurgia.** A vírgula é um mapa e uma alça de puxar:\n- segue o subescapular para dentro, então **achar a vírgula é achar a borda superior do tendão retraído**;\n- uma **sutura de tração** passada nela ou no canto superolateral do tendão, por um portal anterolateral acessório, ajuda a mobilizá-lo de volta ao tubérculo menor;\n- os autores preferem **preservá-la**, embora um estudo tenha mostrado que desbridá-la não piorou a integridade nem o resultado.\n\n**Como se chega até lá.** Para ver o subescapular, o braço vai em flexão anterior e rotação interna com o posicionador; a óptica de 30 graus basta nas rupturas pequenas e médias, e passa-se à de 70 graus ou a um portal anterolateral subacromial quando necessário. Na técnica de BURKHART e TEHRANY, o intervalo rotador é aberto primeiro para mostrar a borda superior, e o **subescapular é reparado antes do posterossuperior**, para aproveitar o pouco espaço sob o coracoide. As liberações bursais respeitam as estruturas neurovasculares mediais ao coracoide.\n\n**Onde a banca tenta enganar.** O supraespinal é o tendão que mais rompe, e também participa do arco bicipital, por isso atrai a marcação. Mas a vírgula é a alça **medial**, e o lado medial da polia pertence ao subescapular. O sinal só existe porque um tendão anterior se retraiu levando a bainha consigo.\n\nO tecido da vírgula e o reparo do subescapular estão na seção \"Subescapular e o sinal da vírgula\" do resumo.",
@@ -7218,7 +7024,7 @@
       "fratura-da-cabeca-do-radio-702c1386",
       "fratura-da-cabeca-do-radio-510692ed"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "861c0ab66a361f9a15d16b147d06a8dea48361368901fc55ddacf5489459242d"
     }
    ],
@@ -7289,7 +7095,7 @@
       "fraturas-do-coronoide-67ec539b",
       "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "078bbf43fdbde5dd6c343cd8bdfd51edee9632d17cbb90338637c28b314affcf"
     }
    ],
@@ -7333,7 +7139,7 @@
       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
       "fraturas-do-coronoide-67ec539b"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "3333ccdf6bce58ae05b03326b13cbdb182b5d78831cd9465608754290d40d288"
     }
    ],
@@ -7506,7 +7312,7 @@
       "anatomia-aplicada-e-vias-de-acesso-f121538c",
       "anatomia-aplicada-e-vias-de-acesso-e632af2f"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "9dd395d6a7930acc74084dd22dc986972b4f20135acd6879ab2560a355936052"
     },
     {
@@ -7521,7 +7327,7 @@
      "blocos": [
       "vias-de-acesso-e-os-nervos-em-risco-9d8cd45d"
      ],
-     "sha256": "bda2c10c6642acc6dfb6ddafb1c962e278803b00e3a021c303d2794c92d4ed63",
+     "sha256": "6e4b788fdf92b4b52457f8ef78cf2a665b0623f845c37d0b061e46a48e87bde3",
      "trechosSha256": "f9399e89d4315846bfb2f4418327830fc2b4b9695a65823e574cd58c3d4cdcec"
     }
    ],
@@ -7994,7 +7800,7 @@
       "nervos-e-arteria-na-luxacao-584aebf5",
       "nervos-e-arteria-na-luxacao-0d677891"
      ],
-     "sha256": "815fd22160a13e0bd820f30ad8a2c334771c9d656525be0eace87e6169423eb7",
+     "sha256": "6b26faf20b2dfd7403bc1d001e622479b31ec01a383135f963b69651c2cfd43e",
      "trechosSha256": "ab20f38c8f15fb27947a6342fe8eb21a5a56fe0e26da34ba9c898611ec17e24d"
     }
    ],
@@ -8037,7 +7843,7 @@
       "fratura-da-cabeca-do-radio-8dbbe2b9",
       "fratura-da-cabeca-do-radio-a6880686"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "30fe8b1bf50f2ad9ae553261263563ae2a4b64c28055b609e37152c790a83fb9"
     }
    ],
@@ -8086,7 +7892,7 @@
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-baf0c01e",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-e22633cf"
      ],
-     "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
      "trechosSha256": "e14d2643e3b3e2dd69a4dccda5544a9ff22d00d6f3074d0442a3ab1a9c6faae1"
     }
    ],
@@ -8399,7 +8205,7 @@
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
      ],
-     "sha256": "ea8e1b75083ed75693f1c7d2ae7fcd2e079de1ffd34e36419a4b2003a84ad128",
+     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
      "trechosSha256": "22b5d050e3057524643ddf5c80ff2abc1d6772144af25b7c50fa6e30dba5b458"
     }
    ],
@@ -8442,7 +8248,7 @@
       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "ea7ee8b7504f86dc59bd5ff6163b41f824dcf093ff5613960361cd227e7c308a"
     }
    ],
@@ -8610,7 +8416,7 @@
       "quando-operar-padrao-desvio-e-o-profher-e2ac6522",
       "artroplastia-hemiartroplastia-e-reversa-d059acac"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "2d0885abc5be2ead98a429984c8bf3e1f0d9736955fdbf501d282f1c4adf1be9"
     }
    ],
@@ -8723,7 +8529,7 @@
       "ulna-proximal-olecrano-e-monteggia-posterior-f5dedde1",
       "ulna-proximal-olecrano-e-monteggia-posterior-e821e601"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "b9d11b33d59241cd343afb8c79d7e4631c1128aa224bfe30c87d2d99e8597756"
     }
    ],
@@ -8905,7 +8711,7 @@
       "radiografias-e-tomografia-78d8ddd2",
       "radiografias-e-tomografia-2edd0b47"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "437ae27541fc47f4b21bdca92e4f7a1f5447ff4947701b8aae42dd41649d0f5b"
     }
    ],
@@ -9762,7 +9568,7 @@
       "mecanismo-de-trauma-53c08b2e",
       "mecanismo-de-trauma-9ac9b553"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "865abae720708c461fc661af9d9da2c8739ec2b215a6cf79bcf4a56ddfc6374a"
     }
    ],
@@ -9805,7 +9611,7 @@
       "fratura-isolada-dos-tuberculos-e-fratura-luxacao-607aab2c",
       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "1c19ef3956529ae053bee16a9112f90d631b8e2f9de185bb0eff2dfb41e0c3ce"
     }
    ],
@@ -9845,7 +9651,7 @@
       "neer-ao-e-os-padroes-de-fratura-992e5d4d",
       "neer-ao-e-os-padroes-de-fratura-defcf4d3"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "c767d21d310e4f1526840173f88ddf243e266adb6d666e192c4ff4bb6144ed24"
     }
    ],
@@ -9885,7 +9691,7 @@
       "lesoes-associadas-nervos-arteria-manguito-e-outr-02a89ef5",
       "anatomia-aplicada-e-vias-de-acesso-e632af2f"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "024c6d73f25e48b57f233df92615c8cc8e49fde8580f14b06b89ef12bebe7e7e"
     }
    ],
@@ -9924,7 +9730,7 @@
       "neer-ao-e-os-padroes-de-fratura-23f72b4b",
       "neer-ao-e-os-padroes-de-fratura-3d9e75c3"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "f2f5fedb9ae3877d4f791a49c26430aa6d85c91b449526f9d79344e4a8e873ba"
     }
    ],
@@ -9963,7 +9769,7 @@
       "neer-ao-e-os-padroes-de-fratura-f472f79e",
       "neer-ao-e-os-padroes-de-fratura-54eebd91"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "39455daeccc2e776f549e419d45badf2166c6bcd3caffd915f8eeca69dba40b2"
     }
    ],
@@ -10011,7 +9817,7 @@
       "irrigacao-da-cabeca-hertel-e-osteonecrose-e4c48120",
       "quando-operar-padrao-desvio-e-o-profher-fd48d5e5"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "e9ccebf8781595d8dc2998e1bd6867bd3db7ccf99556f61f85af34d8141864b7"
     }
    ],
@@ -10054,7 +9860,7 @@
       "irrigacao-da-cabeca-hertel-e-osteonecrose-a87e5d83",
       "irrigacao-da-cabeca-hertel-e-osteonecrose-8076297b"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "59099e7fcb93b16f002f6e3f91bacf0ad0a23c15aa6d020c68c1786d565bcf37"
     }
    ],
@@ -10096,7 +9902,7 @@
       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9",
       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-9587f83e"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "dd429cced20ebf183577d5fd47e1c6c2038b090264c8856d9dae6648407213fc"
     }
    ],
@@ -10136,7 +9942,7 @@
       "radiografias-e-tomografia-190db996",
       "radiografias-e-tomografia-413850ca"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "41e4ec7e88e38b2901260e0ed38d10ce86de0c016cc0fc41e4657cbe65804efa"
     }
    ],
@@ -10176,7 +9982,7 @@
       "anatomia-aplicada-e-vias-de-acesso-f121538c",
       "anatomia-aplicada-e-vias-de-acesso-e632af2f"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "101717254c6b04e4942026288f44f5650cd5c541c5636cb7481b1ec0198710c0"
     },
     {
@@ -10191,7 +9997,7 @@
      "blocos": [
       "anatomia-aplicada-arquitetura-musculos-e-nervo-s-a42691ef"
      ],
-     "sha256": "9d13b23c7cab87e526e77061eb8658d808af70197f4eb340b9992cca5cdb4e58",
+     "sha256": "699fa070c7c0f4fd68ef96baef92e886f8a4c357b9322fb6395df43172a4eaac",
      "trechosSha256": "45a0fd6f4ac398f68d4e2e126ac122d5f4563e1751d4433611af8a14fddb95e0"
     }
    ],
@@ -10230,7 +10036,7 @@
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-f402d68e",
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "fd6764f3bdfdf4814383fc2e6576174c86f843d3b832847fe984ae77873ccf45"
     }
    ],
@@ -10274,7 +10080,7 @@
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-a825d3db",
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "15c5a0dfe4d01085f5c713b93e99814fa5bd882c637658e71e180a782b3555e3"
     }
    ],
@@ -10313,7 +10119,7 @@
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-38a4d747",
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "80ea544bde2dc6b5f59e6836b55f150103d70306d36aea87f670c4029d31a8ca"
     }
    ],
@@ -10358,7 +10164,7 @@
       "anatomia-aplicada-e-vias-de-acesso-f23bbbb5",
       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-9587f83e"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "3bd2391cffb5537664622d84e4a4d3c7114d83a1c9b119b0a1c884b58387018a"
     }
    ],
@@ -10400,7 +10206,7 @@
       "fratura-isolada-dos-tuberculos-e-fratura-luxacao-980c36a8",
       "quando-operar-padrao-desvio-e-o-profher-1c41a47b"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "fdafa168978748f77efd62da5134a4b8114e6d26c838bf42e01481b5526c4103"
     }
    ],
@@ -10442,7 +10248,7 @@
       "fratura-isolada-dos-tuberculos-e-fratura-luxacao-980c36a8",
       "radiografias-e-tomografia-c855536c"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "d6c2f842e8f1e0d07b7b5d7c2a6caa9dbbc7437ec39a7dfc54749b24cd3880fe"
     }
    ],
@@ -10486,7 +10292,7 @@
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-2348b9f5",
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-9c3d36c0"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "504cab7600c0ff62554175e88f5beee8abe025dc0887f0898e62be5eaa05029e"
     }
    ],
@@ -10528,7 +10334,7 @@
       "neer-ao-e-os-padroes-de-fratura-defcf4d3",
       "lesoes-associadas-nervos-arteria-manguito-e-outr-02a89ef5"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "fbdc5f1ea1d144e51dfceb5f37f9371c371ae50e8d5e0b2e06d2b1b85d183324"
     }
    ],
@@ -10570,7 +10376,7 @@
       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-5e438d7e",
       "artroplastia-hemiartroplastia-e-reversa-b0de9bbb"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "3178549badbde3af2b26de239d9cc8187aeabe17c63f7e5c62f7692b2cdc08b3"
     }
    ],
@@ -10614,7 +10420,7 @@
       "irrigacao-da-cabeca-hertel-e-osteonecrose-3b5021d6",
       "irrigacao-da-cabeca-hertel-e-osteonecrose-74214e8d"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "5b674708358cf7da9cf50302daa33f6356ed61492cc4f6971e459e7fb0185063"
     }
    ],
@@ -10656,7 +10462,7 @@
       "irrigacao-da-cabeca-hertel-e-osteonecrose-bbebb317",
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "72a482072e4fb857de709ea3f50187fef8c111ecbc724f3b4b93a0f273a73edc"
     }
    ],
@@ -10698,7 +10504,7 @@
       "placa-bloqueada-o-parafuso-o-calcar-e-a-tecnica-e6a72df1",
       "fratura-isolada-dos-tuberculos-e-fratura-luxacao-607aab2c"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "1df69905690fe38edb6ce776f3635f349fb3c56e2cc94fa83775eb61db485cb2"
     }
    ],
@@ -10736,7 +10542,7 @@
       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-b25f6ff9",
       "complicacoes-rigidez-viciosa-pseudartrose-e-tube-7c681893"
      ],
-     "sha256": "7a4a239bca98bc6f58cbb371246a1e6f530041f07457ba1d6f7df0034ae9028e",
+     "sha256": "11540030bba28ff4e130c7060c94c383842356de2131afefcd0f681b3268330a",
      "trechosSha256": "e105f99fe90684deddae18a4b7bd4b7e3aabfc05593076346ae2e643dacd56fd"
     }
    ],
@@ -11147,7 +10953,7 @@
       "triade-terrivel-499f49dc",
       "triade-terrivel-2c2c5123"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "c8da7a939fc9be28b31656577470ad5b18171236bab11fc0aabb69af5533df18"
     }
    ],
@@ -11188,7 +10994,7 @@
       "quem-segura-o-cotovelo-7b7c7f11",
       "quem-segura-o-cotovelo-2b1e3945"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "e225cae551bfe0d6b3af7208b1048aa8608ea41ee88292901de90d7fb1a0cc51"
     }
    ],
@@ -11228,7 +11034,7 @@
       "fraturas-do-coronoide-261ac45a",
       "quem-segura-o-cotovelo-e54d94bb"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "810629c1d18b709a792b79ba69ceeb7ac16a52ff5168e91d7857bfbd2f956973"
     }
    ],
@@ -11410,7 +11216,7 @@
       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
       "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "15c113b3bfe37dfc76ec1e458129f4936fde209c1b59b35b73227648341dfa25"
     }
    ],
@@ -11430,35 +11236,7 @@
    "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Luxação simples do cotovelo; Tríade terrível; Instabilidade rotatória posteromedial em varo."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Luxação simples do cotovelo",
-      "Tríade terrível",
-      "Instabilidade rotatória posteromedial em varo"
-     ],
-     "blocos": [
-      "luxacao-simples-do-cotovelo-d4159e35",
-      "triade-terrivel-1483748a",
-      "luxacao-simples-do-cotovelo-5d25ae81",
-      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "3796948ed9a22ec0cdf5a45aac0f83df489b47ad16ea2f2af9c9b2dc8637260e"
-    }
-   ],
-   "questaoSha256": "92a7d52bbde149b848f4d2c5f0d22604fab3b31c1b5c70084fceeee7d954f628",
-   "comentarioSha256": "0d05b929007711753a4dbfa457e806704fc1f937d5cfe8fcf65bc7cd55bab2a6"
-  }
+  "geradoEm": "2026-10-28"
  },
  "ombro-cotovelo-0662": {
   "conceito": "**O que é a Monteggia posterior.** É a fratura da ulna proximal com luxação ou subluxação posterior da cabeça do rádio, o tipo II de Bado. O Green observa que, quando a lesão envolve o olécrano e a cabeça do rádio sem perder a relação radioulnar, chamá-la de Monteggia posterior confunde, porque, como sugeriram Jupiter e colegas, esse padrão tem mais em comum com as fraturas-luxações posteriores do olécrano (cap. 20, p. 939).\n\n**A classificação de Jupiter.** A Fig. 20.4 do Green ilustra o espectro das lesões posteriores de Monteggia (cap. 20, p. 939):\n\n| Tipo | Nível da lesão da ulna |\n|---|---|\n| A | Articulação ulnoumeral, com fraturas do olécrano e do coronoide |\n| B | Metáfise ulnar proximal, o local mais comum |\n| C | Diáfise |\n| D | Fraturas complexas em vários níveis |\n\nA legenda é explícita: o tipo B é a \"lesão no local mais comum, a metáfise ulnar proximal\" (Green, cap. 20, p. 939).\n\n**Por que importa.** As Monteggias posteriores são lesões de alta energia, frequentemente com fratura do coronoide e da cabeça do rádio e lesão ligamentar (Green, cap. 20, Fig. 20.8). O tratamento exige reconstruir o comprimento e o contorno da ulna, inclusive a angulação dorsal da metáfise proximal, porque é a ulna bem alinhada que reduz e mantém a cabeça do rádio. Ulna mal reduzida, cabeça do rádio que não fica no lugar.\n\n**Por que esta questão foi criada.** Inspirada na questão 48 do SIMÃO 2023, que perguntou o padrão mais comum da Monteggia posterior. A mesma pergunta volta com os quatro tipos de Jupiter em outra ordem.\n\n> **Na prova:** Monteggia posterior (JUPITER) = A ulnoumeral, B metáfise (o mais comum), C diáfise, D vários níveis.",
@@ -11538,7 +11316,7 @@
       "ulna-proximal-olecrano-e-monteggia-posterior-6bc1603b",
       "ulna-proximal-olecrano-e-monteggia-posterior-3639bc52"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "b006b467e254575bd0af1af11ce3d81add99915d6042d62d8661b4dfd96daa8b"
     }
    ],
@@ -11624,7 +11402,7 @@
       "quem-segura-o-cotovelo-7b7c7f11",
       "quem-segura-o-cotovelo-e5d8f9c3"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "27b85ee15745e9c56d2ef0602a94ddca8c5212649f3333e639f905c06ada774b"
     }
    ],
@@ -11664,7 +11442,7 @@
       "quem-segura-o-cotovelo-e5d8f9c3",
       "quem-segura-o-cotovelo-e54d94bb"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "a97d9643175dfafc8e1c93488c7ec10775cd48d897fe2eb223f1efb9d331fc9c"
     }
    ],
@@ -11729,31 +11507,7 @@
    "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fratura da cabeça do rádio."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-28",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Fratura da cabeça do rádio"
-     ],
-     "blocos": [
-      "fratura-da-cabeca-do-radio-c4d889b2",
-      "fratura-da-cabeca-do-radio-3e116d65"
-     ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
-     "trechosSha256": "29e91f7087e7009695c52008a2402522484e86e3e6d56ef1c663e9575d68eefa"
-    }
-   ],
-   "questaoSha256": "52607e4fddf631f9e74909510f330052305f4b077d88f05719c2189ce61e83ac",
-   "comentarioSha256": "682c4457272e4922f98b1a53736666b494d40b0d09e85afda19401fe1a8650d2"
-  }
+  "geradoEm": "2026-10-28"
  },
  "ombro-cotovelo-0675": {
   "conceito": "**Duas formas de chegar à tuberosidade.** A tuberosidade do rádio, onde o bíceps se insere, fica na face posteromedial do rádio proximal, entre estruturas nobres. Pela incisão única anterior, o cirurgião chega a ela pela fossa cubital, perto do nervo cutâneo lateral do antebraço, do ramo sensitivo do radial e do interósseo posterior. Pela técnica de duas incisões, uma incisão anterior pequena recupera o tendão e uma segunda, posterolateral, expõe a tuberosidade por trás, longe dessas estruturas.\n\n**O que o Green compara.** As técnicas de duas incisões \"oferecem a capacidade de limitar o tamanho da exposição anterior e diminuir o risco de lesão neurovascular\", e, com abordagem de divisão muscular, não há risco maior de sinostose radioulnar (cap. 25, p. 1035). Numa série comparativa, as taxas de complicações foram de 44% na incisão única e 10% nas duas incisões, com recuperação um pouco mais rápida da força de flexão nas duas incisões e diferenças mínimas no seguimento final (p. 1036).\n\n**E a ossificação heterotópica?** É o problema clássico das duas incisões: outras séries relataram sinostose em 7% com essa técnica, e \"Embora se diga que uma técnica de duas incisões está associada à ossificação heterotópica, uma técnica de incisão única também pode ser complicada por esse problema\" (Green, cap. 25, p. 1036). Ou seja, ossificação e sinostose pesam contra as duas incisões; a lesão nervosa pesa contra a incisão única.\n\n| Técnica | Complicação típica (Green, cap. 25) |\n|---|---|\n| Incisão única anterior | Lesão nervosa; complicações mais frequentes (44% numa série) |\n| Duas incisões | Ossificação heterotópica e sinostose (7% em séries antigas) |\n\n**Por que esta questão foi criada.** Inspirada na questão 80 da SBCM 2022, que perguntou a complicação mais frequente da reinserção do bíceps distal por incisão única.\n\n> **Na prova:** bíceps distal: incisão única = lesão nervosa (cutâneo lateral do antebraço, interósseo posterior); duas incisões = ossificação heterotópica e sinostose.",
@@ -11845,7 +11599,7 @@
       "ulna-proximal-olecrano-e-monteggia-posterior-79b0260b",
       "ulna-proximal-olecrano-e-monteggia-posterior-f5dedde1"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "b34e984de68863d7d582fa8b62cf29f84e36ac4d6b215bc207deeea800e8ffbe"
     }
    ],
@@ -11883,7 +11637,7 @@
       "fratura-da-cabeca-do-radio-8dbbe2b9",
       "fratura-da-cabeca-do-radio-a6880686"
      ],
-     "sha256": "88e8a82e7efb9f44b0cd0e7d5a3b1882f04081a691edb78496021eaffd924d92",
+     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
      "trechosSha256": "a88b96d28e11af69f39be393d30bf725dfb6eb34f72feb2c0334ef975f923523"
     }
    ],

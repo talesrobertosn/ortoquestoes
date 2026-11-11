@@ -1,6 +1,6 @@
 ---
 id: rockwood10-24-fraturas-estresse
-versao: 1
+versao: 2
 titulo: Fraturas por estresse
 especialidade: trauma
 acesso: gratis
@@ -408,7 +408,7 @@ O paciente chega com **dor localizada e edema**, sem trauma, depois de aumentar 
 conceito: As fraturas por estresse do primeiro ao quarto metatarsos são de baixo risco, mais no segundo ao quarto e na diáfise distal do corredor; o pé plano sobrecarrega os metatarsos; a base do segundo metatarso da bailarina é a exceção que vai para gesso até consolidar.
 como: O TARO 2011 perguntou como evoluem a dor e o edema na fratura por estresse do colo do segundo metatarso. O TEOT 2023 pediu, em par, onde o pé cavo e o pé plano favorecem a fratura por estresse (calcâneo e metatarso). O TARO 2015 perguntou o local mais comum de fratura por estresse no pé da criança (colo do segundo metatarso).
 armadilha: Diáfise distal na bailarina: na bailarina, a fratura típica é proximal, na base do segundo metatarso.
-alerta: No TARO 2011 (trauma-0869), o gabarito foi dor aguda e difusa, com edema ausente. O capítulo 24 descreve o contrário no quadro estabelecido: dor localizada e edema, sem trauma, com dor pontual sobre o metatarso. A resposta da banca só se sustenta como fase muito inicial da lesão; para outras perguntas, guarde o quadro do livro.
+alerta: No TARO 2011 (trauma-0869), o gabarito foi dor aguda e difusa, com edema ausente. O capítulo 24 descreve o contrário no quadro estabelecido: dor localizada e edema, sem trauma, com dor pontual sobre o metatarso. O Campbell 15 (cap. 93, p. 4124) confirma: a dor começa de forma gradual, bem sobre o colo do segundo metatarso, 2 a 4 semanas depois de iniciar corrida ou aeróbica, e em geral há edema no local. Os dois livros contrariam o gabarito; guarde o quadro dos livros.
 alerta: Do TEOT 2023 (trauma-0323), o capítulo sustenta a metade do pé plano (o pé plano aumenta o impacto nos metatarsos mediais); a associação do pé cavo com o calcâneo não está no capítulo 24. O colo do segundo metatarso como sítio mais comum na criança (TARO 2015) também não está no capítulo, que é de adultos.
 !fim
 

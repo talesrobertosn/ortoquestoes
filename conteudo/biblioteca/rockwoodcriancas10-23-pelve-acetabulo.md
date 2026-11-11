@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-23-pelve-acetabulo
-versao: 2
+versao: 3
 titulo: Fraturas da pelve e do acetábulo na criança
 especialidade: pediatria
 acesso: gratis
@@ -148,7 +148,7 @@ armadilha: Trocar a entrada pela saída: a saída mostra o desvio vertical.
 
 # A classificação de TORODE e ZIEG {radar=confirmado}
 
-É a classificação mais usada na criança. TORODE e ZIEG revisaram 141 crianças e agruparam as fraturas pelo padrão e pelo prognóstico; 27 anos depois, a mesma instituição (SHORE e colaboradores) a modificou com a tomografia, dividindo o tipo III em **IIIA** e **IIIB**.
+É a classificação mais usada na criança. TORODE e ZIEG revisaram 141 crianças e agruparam as fraturas pelo padrão e pelo prognóstico; 27 anos depois, a mesma instituição (SHORE e colaboradores) a modificou com a tomografia, dividindo o tipo III em **IIIA** e **IIIB**. Os outros livros dizem o mesmo: o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 30, p. 1275 e Fig. 30.3, p. 1277), define o IIIB como fraturas **estáveis** dos segmentos anterior e posterior do anel, com chance maior de transfusão que o IIIA (razão de chances 3,58), e reserva a palavra instável para o tipo IV; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, Tabela 38.6, p. 1412), também chama o IIIB de fratura **estável** do anel anterior e posterior, associada a mais hemoderivados, UTI e internação.
 
 !figura 23-7 imagem=pediatria/rwc10-23-7.jpeg
 Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23, Fig. 23-7. Classificação de TORODE e ZIEG modificada: I avulsão; II asa do ilíaco; III-A anel anterior; III-B anéis anterior e posterior estáveis; IV anel instável.
@@ -177,7 +177,7 @@ Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 23, Fi
 conceito: TORODE e ZIEG modificada: I avulsão, II asa, IIIA anel anterior, IIIB anterior e posterior estável (com mais morbidade), IV instável (IVa straddle, ramos bilaterais; IVb anterior com elemento posterior; IVc segmento até o acetábulo).
 como: O TARO 2017 e o TARO 2019 perguntaram o tipo da fratura bilateral dos ramos (IV, IVa); o TARO 2012, o anel anterior com elemento posterior (IVb); o TARO 2022, quais tipos são instáveis.
 armadilha: Classificar a straddle como III porque só pega o anel anterior: ela é IVa.
-alerta: O TARO 2022 (`pediatria-0567`) marcou os tipos III-B e IV como instáveis; o capítulo define o III-B como estável, embora com morbidade maior, e só o IV como instável.
+alerta: O TARO 2022 (`pediatria-0567`) marcou os tipos III-B e IV como instáveis; o capítulo define o III-B como estável, embora com morbidade maior, e só o IV como instável, e o Tachdjian (cap. 30, pp. 1275 e 1277) e o Campbell 15 (Tabela 38.6, p. 1412) também chamam o III-B de estável. Nenhum livro local sustenta o III-B instável.
 !fim
 
 # Avulsões e asa do ilíaco (tipos I e II) {radar=clinico}

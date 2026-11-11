@@ -461,34 +461,7 @@
    "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Complicações."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Cruzado posterior: a pedra fundamental",
-      "Complicações"
-     ],
-     "blocos": [
-      "cruzado-posterior-a-pedra-fundamental-cd462063",
-      "cruzado-posterior-a-pedra-fundamental-ed726e98",
-      "complicacoes-986062f8",
-      "complicacoes-8ad9dbaf"
-     ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
-     "trechosSha256": "8dcf913fad62b7387390b6a3e5013a182da681e5cf93946cb98de453efa2f2a2"
-    }
-   ],
-   "questaoSha256": "c0bcb1752968acd2f16c8e087728cab1dabfc96de4572297e1347b26816b01b1",
-   "comentarioSha256": "e5a3158f4fa2e04a2ac788a0045cde089261c7353bc20e1578d872ec2d2a6c79"
-  }
+  "geradoEm": "2026-10-24"
  },
  "joelho-0028": {
   "conceito": "O tendão patelar rompe mais frequentemente **abaixo dos 40 anos e na inserção no polo inferior da patela**. É a alternativa D. Idade e localização formam duas pistas independentes; reconhecer apenas uma delas deixa metade da pergunta sem resposta.\n\nO tendão liga o ápice da patela à tuberosidade da tíbia. A ruptura proximal é a mais comum na descrição, como avulsão, associada à menor rigidez das fibras na inserção e à maior deformação no polo inferior. A ruptura distal na tuberosidade é a menos comum (resumo do Rockwood, 10ª ed., cap. 60, “Rupturas tendíneas” e “Tendão patelar agudo”).\n\nA comparação com o quadricipital ajuda: ele rompe mais acima dos 40 anos, em degeneração ou doença sistêmica. São distribuições habituais, não barreiras que impeçam uma ruptura patelar num paciente mais velho. A frequência deve orientar a hipótese, enquanto o exame confirma onde o mecanismo perdeu continuidade.\n\nNa ruptura completa do patelar, os retináculos costumam também se romper e a extensão ativa se perde. O quadríceps pode puxar a patela para cima sem a oposição do tendão, produzindo patela alta na radiografia. Localização da dor, defeito, extensão e imagem precisam ser relacionados, em vez de usar idade como diagnóstico.\n\nNo resumo da Biblioteca, compare os dois tendões e depois a inserção patelar. A diferença anatômica explica tanto o local de falha quanto a direção da alteração da altura.",
@@ -502,36 +475,7 @@
    "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar; Tratamento das rupturas tendíneas; Anatomia e biomecânica do mecanismo extensor."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-60-patela-mecanismo-extensor",
-     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
-     "secoes": [
-      "Rupturas do tendão quadricipital e do tendão patelar",
-      "Tratamento das rupturas tendíneas",
-      "Anatomia e biomecânica do mecanismo extensor"
-     ],
-     "blocos": [
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
-      "tratamento-das-rupturas-tendineas-d3a3a37d",
-      "anatomia-e-biomecanica-do-mecanismo-extensor-f2e65fc0",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
-     ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
-     "trechosSha256": "2918b1e97c3804d5bb0586c7a49cd60b6ebae9ed700efe159693e802463faf3e"
-    }
-   ],
-   "questaoSha256": "ff325682d4f4e801c15e82d665d2446c832f77be30864627582c1cabe63a5d44",
-   "comentarioSha256": "067ef42b4e1f5f5852ffcccc54c1f1c22e87d7450413e3519b7c2b924233bc26"
-  }
+  "geradoEm": "2026-10-23"
  },
  "joelho-0029": {
   "conceito": "Esta questão usa algarismos romanos para a tróclea, e isso já é uma pista de que ela vem de uma versão antiga da classificação de DEJOUR. Vale separar o que os livros garantem do que eles não trazem.\n\n**O que é o sinal do cruzamento.** No perfil verdadeiro do joelho, com os contornos condilares posteriores superpostos (o Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2037, aceita menos de 5 mm de separação), traçam-se duas linhas: a cortical anterior dos côndilos e o fundo do sulco troclear. Na tróclea normal, o fundo fica sempre atrás da cortical. Na displásica, ele sobe e **cruza** a cortical em algum ponto da sua porção proximal. O Campbell's Operative Orthopaedics, 15ª ed., cap. 52 (Recurrent Dislocations) (p. 2195) chama esse cruzamento de **melhor indicador de displasia troclear** e acrescenta um detalhe de gravidade: **quanto mais precoce, isto é, mais distal, o cruzamento, maior a displasia**. A profundidade troclear medida 1 cm abaixo do topo do sulco completa a avaliação: normal de 5 mm ou mais, displasia significativa abaixo de 3 mm (Tabela 52.2).\n\n**A classificação moderna.** DAVID DEJOUR modificou a classificação original de HENRI DEJOUR e criou quatro tipos com letras, de A a D (SIZÍNIO HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 16 (Joelho do adulto), PDF 1179). Nela, o sinal do cruzamento está presente **em todos os quatro tipos**; o que separa os tipos são os sinais adicionais (esporão supratroclear em B e D, duplo contorno em C e D) e a forma no axial.\n\n**O problema da questão.** A banca pergunta em que tipo, numerado de I a IV, se observa o cruzamento, e o gabarito oficial é o tipo II. Os livros consultados (Campbell, Tachdjian, SIZÍNIO HEBERT) **não descrevem a classificação original em algarismos romanos**, e por isso não permitem confirmar por que o cruzamento seria marca de um tipo específico. O que se pode afirmar com segurança é que, na versão atual, o cruzamento não distingue tipo nenhum, porque está em todos.\n\n**Uma pegadinha paralela.** Os algarismos romanos de I a IV aparecem nos livros, mas para outra estrutura: a classificação de WIBERG da **forma da patela**, pela posição da crista longitudinal, do tipo I, com crista central, ao IV, em que a crista quase não existe (SIZÍNIO HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 16 (Joelho do adulto), PDF 1179 e 1180). Não se deve confundir a numeração da patela com a da tróclea.\n\n**Conduta.** Qualquer que seja a numeração, o cruzamento põe o paciente na linha da displasia troclear da Tabela 52.3 do Campbell, tratada com reconstrução do MPFL e, nos casos graves, trocleoplastia.\n\nO sinal do cruzamento e os tipos de DEJOUR estão na seção \"Imagem: displasia troclear e a classificação de DEJOUR\" do resumo.",
@@ -794,33 +738,7 @@
    "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-60-patela-mecanismo-extensor",
-     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
-     "secoes": [
-      "Rupturas do tendão quadricipital e do tendão patelar"
-     ],
-     "blocos": [
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-d70ea892",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
-     ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
-     "trechosSha256": "af957c79059e8f02d8def5ba29fb69c0bff23500f29b10f1bb9789a0ebeebd66"
-    }
-   ],
-   "questaoSha256": "6c76f816b7a1d38cb0f4f4464101f917a4b534c77419c59d50545758cb3f4359",
-   "comentarioSha256": "e2be54da7822b5ee04234ab4ccae8e7bb0c7ee5fe17997464abf7a1d3e2aeb30"
-  }
+  "geradoEm": "2026-10-23"
  },
  "joelho-0043": {
   "incorretas": {
@@ -873,47 +791,29 @@
   "conferido": false
  },
  "joelho-0047": {
-  "conceito": "Na reconstrução do **LCP em duplo feixe**, o anterolateral é fixado ou tensionado em **flexão**, e o posteromedial em **extensão**. A resposta é A; no protocolo descrito no resumo, os ângulos são 90 graus e extensão completa, respectivamente.\n\nA figura foi conferida: mostra uma visão artroscópica com dois orifícios assinalados na área circundada. Ela acompanha a reconstrução em duplo feixe informada pelo enunciado, mas uma imagem estática desses orifícios não determina, sozinha, em que posição o joelho deve estar durante a tensão de cada enxerto. Essa informação vem da técnica descrita na fonte (Rockwood, 10ª ed., cap. 61, “Cruzado posterior: a pedra fundamental”).\n\nOs nomes dos feixes do LCP seguem a inserção femoral: anterolateral e posteromedial. O anterolateral é o maior; o posteromedial é menor e tem participação própria ao longo do movimento. Reconstruir os dois procura reproduzir componentes com orientações e solicitações diferentes, sem tratar o ligamento como uma corda única de tensão invariável.\n\n**Não transfira os nomes do LCA para o LCP.** Anteromedial e posterolateral são as bandas do cruzado anterior, nomeadas pela inserção tibial. Um par pode parecer familiar e ainda pertencer ao ligamento errado.\n\nO capítulo prefere a reconstrução em duplo feixe, mas distingue evidência de laboratório e evidência clínica ao comparar com feixe único. A pergunta não exige declarar uma técnica universalmente superior; exige conhecer os feixes e a sequência de tensão do procedimento escolhido.",
-  "correta": "**A.** Os feixes pertencem ao LCP e as posições estão corretas: anterolateral a 90 graus de flexão e posteromedial em extensão completa na técnica descrita. A imagem não substitui essa informação técnica.",
+  "conceito": "A pergunta junta duas coisas que costumam ser decoradas separadas e acabam trocadas na hora da prova: o nome dos feixes do cruzado posterior e o ângulo em que cada um é tensionado. As duas se resolvem pela mesma ideia, a de que cada feixe trabalha numa parte do arco de movimento.\n\n**A imagem.** É uma visão artroscópica da parede lateral do côndilo femoral medial. A elipse vermelha cerca dois orifícios, apontados pelas setas: os dois túneis femorais da reconstrução em duplo feixe. A linha amarela acompanha a borda da cartilagem. É a mesma vista da figura do Rockwood, abaixo.\n\n**Os dois feixes e de onde vêm os nomes.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61, seção sobre o cruzado posterior), descreve o ligamento como o maior do joelho, com cerca de 38 mm de comprimento e área de secção 120% a 150% maior que a do cruzado anterior. Os feixes recebem o nome pela **inserção femoral**:\n\n| Feixe | Tamanho | Quando trabalha mais | Tensão na reconstrução |\n|---|---|---|---|\n| **Anterolateral** | o maior, cerca de 85% da área, 1.620 N | em flexão | **90° de flexão** |\n| **Posteromedial** | menor, 258 N | em extensão e na flexão acima de 120° | **extensão completa (0°)** |\n\nO Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2094 aprox.), descreve o mesmo comportamento: com a flexão, a maior parte do ligamento fica tensa e a banda menor relaxa. Por isso cada enxerto é fixado na posição em que o feixe original está esticado. Fixar o anterolateral em extensão o deixaria frouxo na flexão, onde ele é mais exigido.\n\n**A técnica, para acompanhar na figura.** No Rockwood (Fig. 61-33), o túnel do feixe anterolateral é feito primeiro, junto à cartilagem; o do posteromedial fica logo abaixo, com 7 a 8 mm de diâmetro e uma ponte óssea de pelo menos 4 mm entre os dois. O enxerto é de tendão calcâneo, com fixação suspensória. A ordem final é a da questão: com o joelho a **90° de flexão**, aperta-se o botão tibial e tensiona-se o **anterolateral**; depois o joelho vai para a **extensão completa** e tensiona-se o **posteromedial**. Os autores dizem seguir a ideia de função codominante dos feixes descrita por LAPRADE.\n\n**Dois livros, a mesma regra.** O Campbell (cap. 56, Técnica 56.25, p. 2390 a 2392) usa outro enxerto (tendão calcâneo para o anterolateral, tibial anterior para o posteromedial) e outra fixação (parafusos de interferência), mas chega aos mesmos ângulos: anterolateral fixado primeiro, a 90°, com gaveta anterior para recriar o degrau tibiofemoral normal; posteromedial a 0°.\n\n**A pegadinha.** Anteromedial e posterolateral são os feixes do **cruzado anterior**. Quem troca os ligamentos cai nessas duas alternativas; quem acerta os nomes ainda precisa não inverter os ângulos.\n\n> **Na prova:** cruzado posterior = **anterolateral em flexão** (90°) e **posteromedial em extensão** (0°). Anteromedial e posterolateral são do cruzado anterior.\n\nA técnica está na seção \"A técnica preferida e o killer turn\" do resumo, e os feixes em \"Cruzado posterior: a pedra fundamental\".",
+  "correta": "**A) anterolateral em flexão e posteromedial em extensão.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), tensiona o feixe anterolateral com o joelho a 90° de flexão e o posteromedial em extensão completa, e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 56, Técnica 56.25), faz o mesmo (90° e 0°). A regra reproduz o ligamento original: o anterolateral, maior, fica tenso na flexão; o posteromedial, menor, na extensão.",
   "incorretas": {
-   "B": "**B.** Os nomes são do LCP, mas as posições estão invertidas. Fixar o anterolateral em extensão e o posteromedial em flexão não reproduz a regra de tensão apresentada no resumo.",
-   "C": "**C.** Usa os nomes dos feixes do LCA. Mesmo que a relação flexão/extensão lembre a função desse outro ligamento, o caso pede reconstrução do cruzado posterior, cujo par é anterolateral e posteromedial.",
-   "D": "**D.** Também troca os feixes pelos do LCA e não corresponde à técnica de LCP descrita. A seleção do ligamento correto precisa preceder a associação entre posição e tensão."
+   "B": "**Anterolateral em extensão e posteromedial em flexão** acerta os nomes e inverte os ângulos. O anterolateral, que responde por cerca de 85% da área do ligamento, é o feixe tenso na flexão (Rockwood, cap. 61); fixado em extensão, ficaria frouxo justamente onde mais trabalha, e a tíbia voltaria a cair para trás com o joelho dobrado. O posteromedial fixado em flexão, por sua vez, ficaria sem tensão na extensão.",
+   "C": "**Anteromedial em flexão e posterolateral em extensão** troca o ligamento: anteromedial e posterolateral são os feixes do cruzado anterior. O cruzado posterior não tem esses feixes; os seus são anterolateral e posteromedial, nomeados pela inserção femoral (Rockwood, cap. 61). Seria a combinação a pensar numa reconstrução em duplo feixe do cruzado anterior, não do posterior.",
+   "D": "**Anteromedial em extensão e posterolateral em flexão** comete os dois erros de uma vez: usa os nomes dos feixes do cruzado anterior e põe o feixe de nome anterior em extensão, ao contrário da regra do cruzado posterior, em que o feixe anterior (anterolateral) é o da flexão. Nenhum dos dois livros descreve essa combinação; no Rockwood (cap. 61) e no Campbell (cap. 56), o feixe maior vai a 90° e o menor a 0°."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Cruzado anterior."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 61 (Knee Dislocations), seções Posterior Cruciate Ligament e técnica dos autores (Fig. 61-33)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2094 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 56 (Arthroscopy of the Lower Extremity), Técnica 56.25, p. 2390 a 2392",
+   "Resumo OrtoQuestões: Luxação do joelho e lesão multiligamentar"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Cruzado posterior: a pedra fundamental",
-      "Cruzado anterior"
-     ],
-     "blocos": [
-      "cruzado-posterior-a-pedra-fundamental-ae278a04",
-      "cruzado-posterior-a-pedra-fundamental-b7927840",
-      "cruzado-posterior-a-pedra-fundamental-33692257",
-      "cruzado-posterior-a-pedra-fundamental-075e0a72",
-      "cruzado-posterior-a-pedra-fundamental-34e1e8db",
-      "cruzado-anterior-d3582e20"
-     ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
-     "trechosSha256": "99c3917455083781aea517f07c0a456cdde5031d6d8378cbf9836be9f4ad9913"
-    }
-   ],
-   "questaoSha256": "0ab6108e9c8e4ee9c4ca96bad901beb093559697714418b34fb19463f28881a4",
-   "comentarioSha256": "b9c2e510a364586068c1d58221a07dd2431e2c7d32f46014553ec9c0a51b0129"
-  }
+  "imagens": [
+   {
+    "arquivo": "joelho/rwa10-61-33-t04.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 61, Fig. 61-33 (arquivo sem página impressa). Visão artroscópica dos dois túneis cegos femorais da reconstrução do cruzado posterior em duplo feixe, na parede lateral do côndilo femoral medial: o maior, do feixe anterolateral, junto à cartilagem, e logo abaixo dele o menor, do posteromedial, separados por uma ponte óssea.",
+    "largura": 1094,
+    "altura": 940
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "joelho-0048": {
   "conceito": "**A imagem.** A fotografia mostra o paciente em **decúbito ventral** numa maca, com a coxa apoiada e o joelho fletido a cerca de **90°**, a perna na vertical. O examinador, em pé ao lado da maca, segura o pé e o tornozelo com as duas mãos, numa pegada que permite empurrar a perna para baixo ou puxá-la para cima e, ao mesmo tempo, girá-la. Essa combinação de decúbito, ângulo e pegada é a assinatura de um único teste da lista.\n\n**O caso.** Um homem de 45 anos com entorse há um ano e episódios de dor e sinovite. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2014, Box 50.3), ensina a ler esse derrame: derrame **não sanguinolento** sugere sinovite irritativa por menisco degenerado ou processo crônico; e, na meia-idade, a lesão meniscal muitas vezes surge sem trauma marcante, numa torção com carga (p. 2000). O caso pede um teste meniscal.\n\n**O teste de APLEY.** O Campbell (p. 2002, Fig. 50.29) descreve a manobra de compressão (grinding) de APLEY: paciente **em prono**, joelho a **90°**, a face anterior da coxa fixada à mesa (o examinador pode apoiar o joelho sobre ela). Primeiro, o pé e a perna são **tracionados para cima** e rodados: a distração tira a carga do menisco e tensiona os ligamentos, e dor nessa fase indica **lesão ligamentar**. Depois, o pé e a perna são **comprimidos para baixo** e rodados enquanto o joelho é fletido e estendido devagar: estalo e dor **na interlinha** indicam **lesão meniscal**. O teste se explica pela comparação das duas fases: na distração o menisco fica livre; na compressão ele é esmagado entre o côndilo e o platô.\n\n**Os limites.** O APLEY tem sensibilidade de 60% e especificidade de 70% (Campbell, p. 2002), menor que o McMURRAY, e a combinação de testes melhora a acurácia. Uma foto parada mostra a posição, não a fase: a pegada serve tanto à compressão quanto à distração. O HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 61) lembra que APLEY e McMURRAY são pouco confiáveis em crianças pequenas.\n\nA manobra está na seção \"APLEY\" do resumo.",
@@ -1052,48 +952,30 @@
   "conferido": false
  },
  "joelho-0057": {
-  "alerta": "A luxação lateral da patela é a causa clássica de fratura osteocondral e acomete sobretudo adolescentes; o capítulo 60 do Rockwood and Green mostra a incidência de 29 por 100.000 entre 10 e 17 anos, contra 5,8 na população geral. Mas o capítulo também cita fraturas osteocondrais da patela e do fêmur na fratura estrelada de alta energia, e não compara a frequência por idade em todas as fraturas osteocondrais do joelho. A alternativa B é o cenário clássico escolhido pela banca, não uma distribuição etária universal.",
-  "conceito": "Imagine uma adolescente que, ao girar o corpo no vôlei com o pé fixo no chão, sente o joelho sair do lugar e voltar. Chega com o joelho inchado e cheio de sangue. A radiografia pode estar quase normal, mas há grande chance de que um pedaço de cartilagem com osso tenha se soltado. A questão pergunta em quem e em que lesão isso mais acontece.\n\n**Quem luxa a patela.** O Rockwood and Green (10ª ed., cap. 60) dá a incidência anual de luxação aguda da patela em **5,8 por 100.000**, mas de **29 por 100.000 entre 10 e 17 anos**: cinco vezes mais no adolescente. A direção é quase sempre **lateral**; a medial traumática é excepcional.\n\n**Como a luxação quebra a cartilagem.** Quando a patela salta para fora da tróclea, a faceta medial dela passa por cima da borda do côndilo femoral lateral. Na volta, quando o quadríceps relaxa e a patela retorna ao sulco, a **faceta medial bate de novo no côndilo lateral**. São dois golpes de cisalhamento no mesmo trajeto. O resultado típico são as **fraturas osteocondrais na borda medial inferior da patela**, altamente sugestivas, e fragmentos que se soltam do **côndilo femoral lateral**. A ressonância mostra a assinatura da lesão mesmo quando a patela reduziu sozinha: contusão do côndilo femoral lateral e da faceta medial, ruptura do ligamento patelofemoral medial e do retináculo, corpos livres. Lesão de cartilagem aparece em até **95%** dos primeiros episódios.\n\n**Por que a radiografia engana.** O fragmento é em boa parte cartilagem, e a radiografia pode não mostrá-lo. A pista clínica é a **hemartrose**: ela aumenta a chance de fratura osteocondral, e o grupo internacional de patelofemoral recomenda RM nos casos de alto risco. A maioria dos autores fixa a fratura osteocondral grande e desviada, porque um fragmento solto destrói a articulação.\n\n> **Na prova:** fratura osteocondral do joelho é a lesão do adolescente que luxou a patela: borda inferomedial da patela e côndilo femoral lateral.\n\nNo resumo do capítulo 60, a seção de luxação aguda da patela descreve o padrão de lesão e quando pedir a ressonância.",
-  "correta": "**B: adolescentes e nas luxações patelares.** A luxação aguda da patela é cinco vezes mais frequente entre 10 e 17 anos, e o mecanismo, a faceta medial da patela cisalhando contra o côndilo femoral lateral na saída e na volta, produz as fraturas osteocondrais típicas da borda inferomedial da patela e do côndilo lateral.",
+  "conceito": "A questão pede dois cruzamentos ao mesmo tempo: em que idade e em que lesão a fratura osteocondral do joelho é mais frequente. As duas metades têm explicação, e a da idade é a mais bonita, porque sai da biologia da cartilagem.\n\n**Por que o adolescente.** O HEBERT (cap. 61) abre o capítulo com a resposta: as fraturas osteocondrais são **mais frequentes em adolescentes do que em adultos**, porque a resistência do conjunto osteocondral do adulto é maior que a do esqueleto imaturo. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 28), mostra o porquê no nível da junção entre cartilagem e osso:\n\n| Idade | Como a cartilagem se prende ao osso | Onde falha sob cisalhamento |\n|---|---|---|\n| Criança pequena | dedos de cartilagem não calcificada fincados fundo no osso subcondral | no osso trabecular, abaixo da junção |\n| **Adolescente** | camada calcificada só **parcialmente formada** | na **interface cartilagem e osso**: fratura osteocondral |\n| Adulto | camada de cartilagem calcificada bem definida | no **tidemark**: a lesão tende a ser só condral |\n\nNo adolescente, a transição ainda está acontecendo, e a interface vira uma zona de fraqueza. O mesmo cisalhamento que no adulto descola só cartilagem, nele arranca cartilagem com osso.\n\n**Por que a luxação da patela.** É a causa mais frequente (HEBERT, cap. 61). Quando a patela salta para fora, o retináculo medial e o ligamento patelofemoral medial rompem, mas o resto do aparelho extensor continua comprimindo a patela contra a tróclea; a **faceta medial da patela** bate na borda do **côndilo femoral lateral** ao sair e de novo ao voltar. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, p. 1460), registra fratura osteocondral em **mais da metade** das luxações agudas da patela (o HEBERT, 30% a 50%), e a figura do mesmo capítulo, dedicado às fraturas da criança, desenha os três tipos mais comuns (Fig. 38.161, p. 1461): **A**, avulsão da margem medial da patela; **B**, fratura da **faceta inferomedial**; **C**, fratura do **côndilo femoral lateral**.\n\nO Rockwood crianças acrescenta dois detalhes que reforçam o mecanismo: a fratura é **incomum na luxação recorrente crônica**, porque o retináculo medial já está frouxo e a compressão é menor, e a **patela alta protege** (índice de INSALL acima de 1,3).\n\n**O que isso muda na prática.** O derrame é **hemartrose**, porque o traço passa pelo osso subcondral, que sangra; a lesão só condral não sangraria. A radiografia engana: falhou em **36%** das crianças com fragmento achado na cirurgia (Campbell, cap. 38, p. 1461), e diante de hemartrose volumosa pede-se ressonância. Na primeira luxação, o tratamento clássico é conservador, e a **fratura osteocondral é a principal exceção** que leva à cirurgia: fragmento de 5 mm ou mais, em área de carga e com osso, é reduzido e fixado; pequeno ou só de cartilagem fora da carga, retirado por artroscopia.\n\nO tema está na seção \"Fratura osteocondral do adolescente e a luxação da patela\" do resumo.",
+  "correta": "**B) adolescentes e nas luxações patelares.** O HEBERT (cap. 61) diz que a fratura osteocondral é mais frequente no adolescente que no adulto e que a luxação da patela é a causa mais comum; o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 28), explica a idade pela junção osteocondral ainda em formação. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, p. 1460 e 1461), encontra a fratura em mais da metade das luxações agudas da patela.",
   "incorretas": {
-   "A": "**A lesão certa na idade errada.** A luxação patelar é mesmo o mecanismo clássico, mas a incidência dela se concentra na adolescência (29 por 100.000 entre 10 e 17 anos, contra 5,8 na população geral). No adulto, a luxação é menos frequente, e com ela as fraturas osteocondrais que produz.",
-   "C": "**Mecanismo que não gera o cisalhamento.** A lesão do colateral medial nasce de uma força em valgo que estira o ligamento; ela não faz uma superfície articular deslizar com violência sobre a outra. A fratura osteocondral típica precisa desse cisalhamento, que é o que a patela faz ao sair e voltar sobre o côndilo lateral.",
-   "D": "**Idade certa, lesão errada.** O adolescente é mesmo o paciente típico, mas a associação é com a luxação da patela, não com o colateral medial. O ligamento medial que importa aqui é outro, o patelofemoral medial, que se rompe na luxação; trocar um pelo outro é a armadilha."
+   "A": "**Adultos e nas luxações patelares** acerta o mecanismo e erra a idade. No adulto, a cartilagem se prende ao osso por uma camada calcificada bem formada, e o cisalhamento descola a cartilagem no tidemark, poupando o osso (Rockwood crianças, cap. 28). Por isso o HEBERT (cap. 61) afirma que o conjunto osteocondral do adulto é mais resistente e que a fratura osteocondral é mais frequente no adolescente.",
+   "C": "**Adultos e nas lesões do ligamento colateral medial** erra as duas metades. A lesão do colateral medial não traz o cisalhamento da patela contra o côndilo lateral, que é o que arranca o fragmento. Quando o Campbell (cap. 38, p. 1460) lista as lesões ligamentares que acompanham a fratura osteocondral, cita a luxação da patela e a ruptura do cruzado anterior, não o colateral medial. E a idade, como na opção do adulto com luxação, também não é a mais suscetível.",
+   "D": "**Adolescentes e nas lesões do ligamento colateral medial** acerta a idade e troca a lesão. O que expõe a junção osteocondral frágil do adolescente ao cisalhamento é a patela saltando sobre a borda do côndilo lateral, causa mais frequente segundo o HEBERT (cap. 61). O colateral medial não aparece nos livros consultados entre as causas de fratura osteocondral; confundi-lo com o ligamento patelofemoral medial, que rompe na luxação, é a armadilha."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Luxação aguda da patela; Patela bipartida e outros simuladores."
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 61 (Fraturas osteocondrais)",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 15 (Instabilidade femoropatelar)",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 28 (fraturas osteocondrais)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 38 (Fractures and Dislocations in Children), p. 1460 e 1461 (Figs. 38.159 a 38.161)",
+   "Resumo OrtoQuestões: Lesões condrais do joelho"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-60-patela-mecanismo-extensor",
-     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
-     "secoes": [
-      "Luxação aguda da patela",
-      "Patela bipartida e outros simuladores"
-     ],
-     "blocos": [
-      "luxacao-aguda-da-patela-e8514392",
-      "luxacao-aguda-da-patela-dae642d9",
-      "luxacao-aguda-da-patela-541ed1a4",
-      "luxacao-aguda-da-patela-727a6900",
-      "luxacao-aguda-da-patela-2f480558",
-      "patela-bipartida-e-outros-simuladores-f0b1afd4"
-     ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
-     "trechosSha256": "78377d23830cf274d36fa0d716c4383a2a985b6acb2e1c56c29175336b7c9c58"
-    }
-   ],
-   "questaoSha256": "26559470248a2841a962fb98a91d2148839d4d9856283dd851653f404ce94729",
-   "comentarioSha256": "a6dcb991c15a6bcd82c7c6c36d5388388660026299063ce09cf5e5d122af6875"
-  }
+  "imagens": [
+   {
+    "arquivo": "joelho/campbell15-38-161-t02.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 38 (fraturas e luxações na criança), Fig. 38.161, p. 1461. Os três tipos mais comuns de fratura osteocondral na luxação aguda da patela, vistos de cima: A, avulsão da margem medial da patela; B, faceta inferomedial da patela; C, côndilo femoral lateral.",
+    "largura": 1031,
+    "altura": 376
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "joelho-0058": {
   "conceito": "Esta questão é de geometria pura. Um portal anterior é um ponto de entrada fixo na pele, e tudo o que o artroscópio ou a pinça conseguem alcançar depende do ângulo com que eles atravessam a articulação a partir dali. Mude a altura do ponto e muda a reta: a banca quer saber o que se perde quando o portal sobe demais.\n\n**Onde o portal deveria estar.** O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 64, Portais artroscópicos), põe o anterolateral **1 cm lateral ao ligamento da patela e 1 cm acima da interlinha**, mais ou menos na altura do **polo inferior da patela**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 56, p. 2334 e 2335), dá as mesmas medidas e acrescenta **1 cm abaixo da ponta da patela**; o anteromedial é o espelho, 1 cm acima da interlinha medial e 1 cm medial ao tendão, testado antes com uma agulha vista pelo anterolateral. A Figura 54.10 (cap. 54, p. 2307) resume o alvo: a cânula deve entrar **exatamente na fenda entre o fêmur e a tíbia**.\n\n**Por que o portal alto não enxerga atrás.** Os cornos posteriores ficam no fundo do compartimento, escondidos sob a convexidade posterior do côndilo femoral. Para chegar lá, o instrumento precisa entrar quase paralelo ao planalto tibial e deslizar por baixo do côndilo. Se o portal fica alto, o instrumento desce de cima para baixo com obliquidade grande; ao tentar ir para trás, ele bate no côndilo e não mergulha sob ele. O Campbell diz que a ótica, nesse caso, entra entre os côndilos e **impede ver os cornos posteriores e as outras estruturas posteriores** (cap. 56, p. 2335), e a legenda da Figura 54.10 repete: cânula alta demais, a obliquidade não deixa ver o corno posterior. O HEBERT chega à mesma conclusão: **portais muito altos dificultam a visualização das estruturas posteriores dos compartimentos medial e lateral**. Pelo portal medial, como na questão, a pinça e o probe não alcançam o corno posterior; se a ótica foi trocada para esse portal, é a imagem que não chega.\n\n**O portal alto tem vantagens, e é isso que engana.** A Figura 56.5 (p. 2335) mostra o dilema: o portal alto fica **acima da gordura de HOFFA**, é fácil de manobrar e facilita a triangulação, mas tem dificuldade em alcançar a parte posterior, **onde está a maioria das lesões**. O portal baixo faz o contrário: chega atrás com facilidade, mas atravessa a gordura e ameaça o menisco. O cirurgião escolhe um meio-termo conforme a lesão e o joelho.\n\n| Altura do portal | O que ganha | O que perde |\n|---|---|---|\n| Alta demais | Livre da gordura de HOFFA; boa manobra | Não alcança os cornos posteriores |\n| Baixa demais | Acesso posterior mais fácil | Corno anterior lesado; bate nas espinhas tibiais |\n| Colada ao tendão | Visão da impressão femoral do LCA | Atravessa a gordura: edema, sangramento, fibrose |\n\n**Onde os dois livros descrevem o portal baixo de jeitos diferentes.** O Campbell fala da lesão: o portal muito perto da interlinha **corta o corno anterior** do menisco ou passa por baixo dele (cap. 54, p. 2307; cap. 56, p. 2335). O HEBERT fala da manobra: ótica e instrumento **batem nas espinhas tibiais** e a triangulação fica difícil, e resolve com o marco do polo inferior da patela. Os dois se completam, e nenhum dos dois põe a lesão do corno anterior no portal alto.\n\nSe o portal saiu mal posicionado, o Campbell aconselha **trocar o portal ou abrir um acessório** em vez de forçar a ótica, que arranha a cartilagem (cap. 54, p. 2307). A regra da altura e as consequências de cada erro estão na seção \"Portais anteriores e a altura certa\" do resumo.",
@@ -1125,47 +1007,28 @@
   "conferido": false
  },
  "joelho-0060": {
-  "conceito": "Na lesão combinada do LCP e do canto posterolateral, o nervo mais vulnerável é o **fibular comum**, alternativa B. O ponto importante é reconhecer o tronco que passa junto à região lateral do joelho, em vez de escolher um de seus ramos mais distais.\n\nO fibular comum está profundo e posterior ao tendão do bíceps e contorna o colo da fíbula, cerca de 1,5 a 2 cm abaixo da ponta do estiloide. O capítulo descreve sua vulnerabilidade à tração por ter pouca liberdade para acompanhar o deslocamento traumático e associa a lesão principalmente ao canto posterolateral (Rockwood, 10ª ed., cap. 61, “O nervo fibular comum”).\n\n**Uma luxação pode já estar reduzida e ainda deixar lesão nervosa.** O exame deve registrar a função antes da cirurgia e ser repetido conforme a evolução. Na abordagem lateral, o nervo é a primeira estrutura a identificar e proteger pela janela posterior ao bíceps. A atenção anatômica serve tanto para reconhecer a lesão do trauma quanto para evitar acrescentar dano cirúrgico.\n\nAs lesões parciais têm prognóstico melhor que as paralisias completas nas séries citadas. Isso não permite prometer recuperação individual: a extensão do dano e o exame seriado importam. Desde o início, órtese e mobilização do pé e tornozelo procuram impedir o equino, que pode prejudicar a marcha e dificultar procedimentos reconstrutivos futuros.\n\nO nervo tibial também exige cuidado no joelho, especialmente na região do túnel tibial do LCP. Esse risco operatório não muda o nervo tipicamente associado ao trauma do canto posterolateral.",
-  "correta": "**B.** O fibular comum contorna o colo da fíbula e é particularmente exposto à tração na lesão lateral. É o tronco descrito pelo capítulo como associado à lesão do canto posterolateral, antes de se pensar em comprometimento isolado dos ramos.",
+  "conceito": "O enunciado dá a pista mais forte logo de saída: **canto posterolateral**. Lesão do lado de fora do joelho, com o joelho aberto em varo, estira o que passa por fora. E o nervo que passa por fora, colado ao osso, é um só.\n\n**O que o livro descreve.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61, seção sobre o nervo fibular comum), explica por que esse nervo sofre tanto: ele é **preso em dois pontos**, em cima no **colo da fíbula** e embaixo no **septo intermuscular**. Fica profundo e posterior ao tendão do **bíceps femoral** e contorna o colo da fíbula 1,5 a 2 cm abaixo da ponta do estiloide. Quando o joelho abre em varo e o canto posterolateral se rompe, o nervo não tem folga para acompanhar o deslocamento e é **estirado** num segmento longo. A lesão é de **tração**, e o capítulo a associa sobretudo à lesão do canto posterolateral.\n\n**O trajeto na figura.** Na Fig. 50.3 do Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1986), abaixo, o fibular comum desce atrás do bíceps e só **junto à fíbula** se divide em fibular superficial e fibular profundo. Isso decide a questão: a tração acontece no ponto de fixação, no colo, onde o nervo ainda é um tronco único.\n\n**Os números do capítulo.**\n- Paralisia fibular em cerca de **25%** nas grandes séries; lesão neurológica em geral **até 40%**; lesão motora e sensitiva completa em **19%** em algumas séries.\n- Fatores de risco: **sexo masculino**, **índice de massa corporal alto** e **fratura da cabeça da fíbula**.\n- Recuperação em cerca de **metade**; na série da Mayo, 38% das paralisias completas recuperaram a dorsiflexão contra a gravidade, contra 83% das parciais. A **idade mais jovem** foi o único fator preditivo de recuperação.\n\nO que não pode faltar desde o primeiro dia é a **órtese tornozelo-pé** e a mobilização do tornozelo, porque o equino instalado atrapalha a marcha e pode impedir uma transferência tendínea no futuro.\n\n**Por que não o tibial.** O nervo tibial corre no centro da fossa poplítea, junto aos vasos, longe do lado que abre no varo. No capítulo, o feixe neurovascular posterior corre risco na **perfuração do túnel tibial** do cruzado posterior, a 7 a 10 mm da face posterior do ligamento, um risco cirúrgico, não o da lesão traumática do canto.\n\n> **Na prova:** cruzado posterior + canto posterolateral = **fibular comum**, por tração, no colo da fíbula. Os ramos profundo e superficial nascem depois do ponto lesado.\n\nO nervo está na seção \"O nervo fibular comum\" do resumo.",
+  "correta": "**B) fibular comum.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61), associa a lesão nervosa da luxação do joelho sobretudo ao canto posterolateral e descreve o mecanismo: o fibular comum, preso no colo da fíbula e no septo intermuscular, é estirado quando o joelho abre em varo. A paralisia fibular aparece em cerca de 25% das grandes séries. A tração pega o tronco antes de ele se dividir.",
   "incorretas": {
-   "A": "**A.** O tibial integra o feixe posterior e merece proteção, mas não é o nervo mais caracteristicamente associado ao trauma do canto posterolateral. Confundir risco na perfuração do túnel do LCP com frequência de lesão no trauma muda o contexto da pergunta.",
-   "C": "**C.** Fibular profundo é um ramo, e não o tronco comum vulnerável junto ao colo da fíbula. A lesão descrita no capítulo é do fibular comum; escolher apenas um ramo reduziria indevidamente o nível anatômico do comprometimento.",
-   "D": "**D.** Fibular superficial também é um ramo. O padrão de tração lateral próximo ao joelho envolve o tronco comum descrito no resumo, e não uma lesão isolada distal desse ramo."
+   "A": "**Tibial** faz parte do feixe neurovascular posterior, no centro da fossa poplítea, longe do lado lateral que abre na lesão do canto posterolateral. No Rockwood (cap. 61), o que ameaça o feixe neurovascular posterior é a perfuração do túnel tibial na reconstrução do cruzado posterior, risco que se controla com o joelho a 90° e guia na broca. Seria a resposta numa pergunta sobre a complicação da cirurgia, não sobre a lesão traumática.",
+   "C": "**Fibular profundo** é um dos ramos terminais do fibular comum, que nasce na divisão junto ao colo da fíbula e segue para a frente com a artéria tibial anterior, como mostra a Fig. 50.3 do Campbell (cap. 50, p. 1986). O estiramento descrito pelo Rockwood acontece no ponto de fixação do nervo, onde ele ainda é um tronco único; a perda da dorsiflexão vem da lesão do tronco, não de um ramo isolado.",
+   "D": "**Fibular superficial** é o outro ramo terminal do fibular comum, que na Fig. 50.3 do Campbell (cap. 50, p. 1986) segue pela face lateral da perna depois da divisão junto à fíbula. Como o profundo, ele nasce abaixo do ponto em que o Rockwood (cap. 61) situa a tração, o colo da fíbula. A lesão da luxação pega o tronco antes de ele se dividir, e por isso o capítulo fala em paralisia fibular, não de um ramo."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: O nervo fibular comum; Canto posterolateral; Cruzado posterior: a pedra fundamental."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 61 (Knee Dislocations), seções Peroneal Nerve e Posterior Cruciate Ligament",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 1986 (Fig. 50.3)",
+   "Resumo OrtoQuestões: Luxação do joelho e lesão multiligamentar"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "O nervo fibular comum",
-      "Canto posterolateral",
-      "Cruzado posterior: a pedra fundamental"
-     ],
-     "blocos": [
-      "o-nervo-fibular-comum-8a85bf5b",
-      "o-nervo-fibular-comum-6c2619c5",
-      "o-nervo-fibular-comum-05d3e14c",
-      "canto-posterolateral-206b3f52",
-      "cruzado-posterior-a-pedra-fundamental-199d4dab"
-     ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
-     "trechosSha256": "7a21e920d6edae68d4868f8c9dbddcf210227c64a02e4f4899f7b46e5773b291"
-    }
-   ],
-   "questaoSha256": "46d0b2424224b46418f08659805002deb724a88da9dfad7b23ba6b94cc0f95f8",
-   "comentarioSha256": "bfc7f0b1349d8e235ded512cc8445e8a7f15c2a75c75f74541f67950e4057022"
-  }
+  "imagens": [
+   {
+    "arquivo": "joelho/campbell15-50-3-w31.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.3, p. 1986. Lado lateral do joelho direito com a frente à direita: o nervo fibular comum desce atrás do bíceps e do plantar, solta o cutâneo sural lateral para trás e se divide junto à fíbula em fibular superficial e fibular profundo, que segue para a frente ao lado da artéria tibial anterior; acima da cabeça lateral do gastrocnêmio aparece o ventre do plantar.",
+    "largura": 835,
+    "altura": 865
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "joelho-0061": {
   "conceito": "A questão testa um intervalo cirúrgico: por onde se chega ao platô tibial posteromedial sem atravessar o feixe poplíteo. A resposta sai de saber quem fica de cada lado da janela.\n\n**A imagem.** Desenho do joelho visto por trás, com três afastadores metálicos. Dois, horizontais, abrem a janela na altura da linha articular, um puxando o ventre muscular para um lado e outro puxando o tendão para o lado oposto; o terceiro, vertical, segura a massa muscular da panturrilha para baixo. No fundo aparece o osso claro do platô posteromedial; os vasos e o nervo, coloridos no alto da fossa, ficam fora do campo, do outro lado do músculo afastado.\n\n**A técnica** (Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (Surgical Techniques, vias de acesso ao joelho), p. 25 e 26). A via de GALLA e LOBENHOFFER, na forma publicada por FAKLER, começa com uma incisão longitudinal reta de 6 a 8 cm sobre a **borda medial da cabeça medial do gastrocnêmio**, a partir da linha articular. Abre-se a fáscia poplítea, libera-se a **cabeça medial do gastrocnêmio** e afasta-se ela **lateralmente**; o **complexo do semimembranáceo** vai **medialmente**. Acha-se a borda superior do músculo poplíteo, descola-se subperiostealmente e o platô posteromedial aparece.\n\n**Por que esse intervalo é seguro.** O feixe neurovascular poplíteo fica atrás da cabeça medial do gastrocnêmio. Quando o cirurgião afasta essa cabeça para fora, ela própria protege o feixe, e não é preciso dissecá-lo. O Campbell lembra que a via posterior direta usa o mesmo sulco, entre gastrocnêmio medial e semimembranáceo, descrito como abordagem segura e pouco vascular ao compartimento medial.\n\n**A via vizinha que confunde.** BANKS e LAUFMAN, com o paciente em prono, entram entre o **semitendíneo** e a cabeça medial do gastrocnêmio. A diferença é de um tendão, e é ela que a banca explora.\n\nA técnica está na seção \"A via posteromedial de GALLA e LOBENHOFFER\" do resumo.",
@@ -1518,35 +1381,7 @@
    "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar; Tratamento das rupturas tendíneas."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-60-patela-mecanismo-extensor",
-     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
-     "secoes": [
-      "Rupturas do tendão quadricipital e do tendão patelar",
-      "Tratamento das rupturas tendíneas"
-     ],
-     "blocos": [
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-d70ea892",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
-      "tratamento-das-rupturas-tendineas-c716bcf4"
-     ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
-     "trechosSha256": "b8ed679665520369d0a9c714b41e1cb29359fd929cb17cf1d90754ecd639f650"
-    }
-   ],
-   "questaoSha256": "da6e5dff097e2abad04ec698e562da6aebb10e8bb861caea9ebef963755278e6",
-   "comentarioSha256": "463e69ab94b7082390f1656be71af1521b3c4e5ab806ebb22a1519a64e5134ed"
-  }
+  "geradoEm": "2026-10-23"
  },
  "joelho-0084": {
   "conceito": "Pegue um fêmur e uma tíbia de esqueleto e tente dobrar o joelho fazendo o côndilo apenas rolar sobre o platô, como uma roda no chão. Muito antes do fim da flexão, o côndilo teria rolado para fora da borda posterior da tíbia. O joelho real não luxa porque, a partir de certo ponto, o côndilo para de avançar e passa a girar no lugar, escorregando sobre a cartilagem. É isso que a questão cobra: a flexo-extensão é uma **combinação de balanço (rolamento) e deslizamento**.\n\n**Por que a forma obriga os dois movimentos.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1983), descreve côndilos femorais curvos de modo excêntrico, achatados na frente, onde transmitem o peso em pé, e muito projetados para trás. Embaixo deles estão platôs quase planos: o medial com uma concavidade sutil, o lateral com uma convexidade sutil (p. 1984). Uma superfície longa e muito curva apoiada numa superfície curta e quase plana não cabe numa dobradiça simples. Os livros do acervo não medem o comprimento das duas superfícies, mas a geometria que descrevem só funciona porque elas não são equivalentes.\n\n**Quando cada um predomina.** O Campbell (p. 1983) dá a divisão que vale guardar: o **rolamento** se demonstra nos **primeiros 20 graus de flexão**; depois disso o movimento é **predominantemente de deslizamento**, numa transição gradual. A lógica é funcional. Perto da extensão, onde o joelho carrega peso, o rolamento mantém o contato estável; à medida que a articulação \"desenrosca\", o deslizamento libera **mais rotação**. Por isso o joelho estendido é firme e o fletido é móvel.\n\n**O eixo também não é fixo.** O cap. 8 do Campbell (p. 407) acrescenta que a flexão gira em torno de um eixo transverso que muda o tempo todo, desenhando uma curva em J nos côndilos, e que esse eixo varia de forma **helicoidal**. O lado medial quase gira no lugar (o côndilo medial recua em média **2 mm** na flexão) enquanto o lateral corre para trás (**21 mm**). É o pivô medial, e é ele que acopla rotações à flexo-extensão.\n\n**O que não acontece em extensão.** O joelho tem características de **gínglimo** e de **trocoide**, mas a rotação só existe com o joelho fletido: a 90 graus a tíbia roda passivamente até 25 a 30 graus, com a interna sempre maior que a externa, e em **extensão completa nenhuma rotação é possível** (Campbell, cap. 50, p. 1983).\n\n**E os meniscos?** Eles acompanham o movimento, indo um pouco para frente na extensão e para trás na flexão, mas não com a mesma liberdade. A ancoragem do **menisco medial permite menos mobilidade** que a do lateral, o que ajuda a explicar por que o medial se lesa mais, sobretudo no joelho sem LCA (Campbell, p. 1983). O HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 63) diz o mesmo pelo compartimento: o medial é o mais estável e menos móvel; o lateral, esférico sobre um platô convexo, percorre a tíbia como um limpador de para-brisa.\n\n| Afirmativa da prova | O que o livro diz |\n|---|---|\n| Rotação em extensão total | nenhuma rotação em extensão completa |\n| Menisco medial mais móvel | o medial é o menos móvel; o lateral é o móvel |\n| Superfícies de comprimento similar | côndilos muito projetados para trás sobre platôs quase planos |\n| Balanço e deslizamento | rolamento até 20 graus, depois deslizamento |\n\nO rolamento, o deslizamento e o eixo helicoidal estão na seção \"Rolamento, deslizamento e o eixo helicoidal\" do resumo.",
@@ -3112,7 +2947,7 @@
       "tratamento-das-rupturas-tendineas-51da9e95",
       "patelectomia-parcial-e-total-ce27b267"
      ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
+     "sha256": "e0e7fd5890c1441d4405d01e2aa7678ee533571bdca736e3fb72c69e69f78a7f",
      "trechosSha256": "7b4c10330f534d4b3664ea8584ea6be49afddf6b8c7dcb31b68d540648a0aec4"
     }
    ],
@@ -3132,36 +2967,7 @@
    "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; Cruzado anterior."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Cruzado posterior: a pedra fundamental",
-      "Cruzado anterior"
-     ],
-     "blocos": [
-      "cruzado-posterior-a-pedra-fundamental-ae278a04",
-      "cruzado-posterior-a-pedra-fundamental-b7927840",
-      "cruzado-posterior-a-pedra-fundamental-33692257",
-      "cruzado-posterior-a-pedra-fundamental-cd462063",
-      "cruzado-posterior-a-pedra-fundamental-075e0a72",
-      "cruzado-anterior-d3582e20"
-     ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
-     "trechosSha256": "9ffaf2ec6037acc2fb509f93f6cfb7ceb4cb98746677af0151846bcec03cef6c"
-    }
-   ],
-   "questaoSha256": "e7dab8cb00caee3ea8a26aa704a6d2308cd1ede935f26273f92d0e880cf42c1f",
-   "comentarioSha256": "69eb1ea1462fe3422917717ac69a42355ffa60c14d11e2a78e5f335758a630a1"
-  }
+  "geradoEm": "2026-10-23"
  },
  "joelho-0175": {
   "conceito": "A SBOT-SP pergunta onde a osteocondrite dissecante do joelho é mais frequente e coloca como distratores todos os outros lugares em que ela realmente aparece: a tróclea, a patela e o côndilo lateral. Ninguém está inventando locais; a questão testa se o aluno sabe a ordem de frequência.\n\n**O que está acontecendo no osso.** A OCD é uma alteração focal do osso subcondral que perde vitalidade; a cartilagem que o cobre pode ficar instável, rachar e, com o osso, se soltar como corpo livre (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2016). O Campbell resume a consequência prática: a OCD é a **fonte mais comum de corpos livres no joelho** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2123). Onde a carga e o impacto se concentram, a lesão aparece mais.\n\n**A ordem dos locais.** O Campbell traz duas séries que contam a mesma hierarquia:\n\n| Local | Série clássica (p. 2123) | Série epidemiológica (p. 2124) |\n|---|---|---|\n| côndilo medial, face lateral | **80%** | 66,2% (côndilo medial) |\n| côndilo lateral | 15% (posterolateral) | 18,1% |\n| tróclea | não citada | 9,5% |\n| patela | 5% (inferomedial) | 6,0% |\n| tíbia | não citada | 0,2% |\n\nO Tachdjian concorda em palavras: a maioria das lesões fica no lado lateral do côndilo femoral medial; também podem ocorrer no côndilo lateral, na tróclea ou na patela, e raramente no planalto tibial (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2016).\n\n**Por que a face lateral do côndilo medial.** É a parte do côndilo que olha para o intercôndilo e fica de frente para a espinha tibial medial, perto da inserção do cruzado posterior. Os modelos de elementos finitos mostram estresse subcondral maior no côndilo medial (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2016), e o impacto da espinha tibial entra entre os mecanismos de fratura osteocondral do côndilo. O Campbell cita ainda um intercôndilo mais estreito na RM de imaturos com OCD medial (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2124).\n\nA localização tem consequência na prática: a lesão olha para o intercôndilo, por isso aparece melhor na incidência do túnel. A tabela de locais está na seção \"A localização clássica: face lateral do côndilo femoral medial\" do resumo.",
@@ -3265,45 +3071,28 @@
   "conferido": false
  },
  "joelho-0181": {
-  "conceito": "O padrão mais frequente da ruptura do tendão patelar é **paciente com menos de 40 anos, ruptura que se estende aos retináculos e perda completa da extensão**. É a alternativa B.\n\nA continuidade do mecanismo não depende só do tendão central. Os retináculos são extensores secundários que podem manter alguma transmissão de força. Na ruptura patelar completa, porém, a lesão costuma atravessar também essa manga, explicando a perda de extensão ativa. No quadricipital, parte dela pode ser poupada e algum movimento persistir (resumo do Rockwood, 10ª ed., cap. 60, “Rupturas tendíneas”).\n\nA distribuição etária também difere: patelar abaixo dos 40, quadricipital acima dos 40 e mais associado à degeneração ou doença sistêmica. A idade é uma tendência, não um requisito que permita dispensar o exame de um paciente fora desse padrão.\n\nO quadríceps passa a puxar a patela sem a oposição do tendão rompido, podendo produzir patela alta. O exame procura defeito, incapacidade de elevar a perna estendida e de manter extensão contra a gravidade. Dor e hematoma podem dificultar a avaliação, de modo que clínica e imagem devem ser relacionadas.\n\nNa Biblioteca, compare idade, retináculos, função e altura patelar nos dois tendões. A resposta reúne elementos que se explicam mutuamente, em vez de três fatos soltos.",
-  "correta": "**B: menos de 40 anos, extensão aos retináculos e perda completa da extensão.** É a combinação predominante descrita para o tendão patelar.\n\nA perda funcional é coerente com a interrupção do tendão e da via extensora secundária.",
+  "conceito": "O aparelho extensor do joelho é uma corrente: quadríceps, tendão quadricipital, patela, tendão patelar e tuberosidade da tíbia, com os retináculos medial e lateral correndo ao lado como um segundo cabo. A questão cobra os três traços que o Rockwood usa para descrever a ruptura do elo de baixo, e todos se explicam pela anatomia.\n\n**Quem rompe.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 60), separa os dois tendões pela idade: o **patelar** rompe mais em pacientes com **menos de 40 anos**; o **quadricipital**, acima dos 40. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2272), concorda e acrescenta que o patelar rompe sobretudo em atletas, enquanto o quadricipital se associa a doenças sistêmicas (lúpus, diabetes, gota, hiperparatireoidismo, uremia, obesidade). O mecanismo é o mesmo nos dois: contração forte do quadríceps contra o peso do corpo, com o joelho fletido, uma carga **excêntrica**.\n\n**Por que o tendão saudável quase não rompe.** O Rockwood lembra que, sob sobrecarga, o elo mais fraco é a patela, que quebra antes; em modelos animais, é preciso cortar 50% a 75% das fibras para o tendão ceder. As rupturas são o fim de uma degeneração crônica, e os pródromos são comuns: dor, sensibilidade junto ao polo inferior, história de joelho do saltador; estavam presentes em 46% dos jogadores profissionais de futebol americano antes da ruptura do patelar.\n\n**Por que o retináculo e a extensão andam juntos.** Os retináculos são **extensores secundários**: continuam a fáscia lata, recebem fibras dos vastos e se inserem direto na tíbia proximal. Enquanto eles estiverem inteiros, o joelho ainda consegue estender, mesmo com o elo central partido. O Rockwood descreve que a ruptura do **patelar** costuma atravessar **todo o tecido retinacular**, com **perda completa da extensão**; a do **quadricipital** pode poupar parte dele, e alguma extensão ainda é possível, quase sempre com déficit em relação ao lado sadio.\n\n| | Patelar | Quadricipital |\n|---|---|---|\n| idade mais comum | abaixo de 40 anos | acima de 40 anos |\n| retináculo | em geral roto por completo | pode ser poupado em parte |\n| extensão ativa | perdida | pode restar alguma, com déficit |\n| radiografia em perfil | patela alta | patela baixa |\n\n**O sinal na radiografia.** Sem o tendão patelar, o quadríceps puxa a patela para cima sem oposição. A figura abaixo (Rockwood, cap. 60, Fig. 60-3) mostra os critérios: no perfil, o tendão com mais de 1,2 vezes o comprimento da patela e o polo inferior acima da linha de BLUMENSAAT com o joelho a 30 graus indicam **patela alta**. É o achado mais barato para confirmar a ruptura do patelar.\n\n> **Na prova:** patelar = **jovem**, polo inferior, **retináculo roto**, **sem extensão**, patela **alta**. Quadricipital = acima dos 40, doença sistêmica, pode sobrar extensão, patela **baixa**.\n\nA comparação está na seção \"Quem rompe e por quê\" e na tabela da seção \"Exame\" do resumo.",
+  "correta": "**B) Menos de 40 anos, com extensão para o tecido retinacular e perda completa da extensão do joelho.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 60), diz que a ruptura do tendão patelar é mais comum abaixo dos 40 anos e que costuma atravessar todo o tecido retinacular, com perda completa da extensão. Sem os retináculos, o joelho perde também a via extensora secundária; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2272), confirma a faixa etária e o predomínio em atletas.",
   "incorretas": {
-   "A": "**Mantém a lesão retinacular e a perda funcional, mas troca a faixa etária habitual.** Mais de 40 é o padrão mais associado ao quadricipital na comparação.\n\nUma ruptura patelar nessa idade pode ocorrer; a alternativa não descreve o grupo de maior frequência perguntado.",
-   "C": "**Troca a idade e preserva justamente a manga que costuma romper no patelar.** Alguma extensão mantida por retináculo poupado é uma possibilidade destacada na ruptura quadricipital.\n\nNão é a combinação mais comum do tendão patelar completo.",
-   "D": "**Reconhece o grupo mais jovem, mas mantém retináculos e extensão.** A fonte descreve a ruptura patelar habitual atravessando a manga e interrompendo a extensão ativa.\n\nA idade correta não valida a anatomia e a consequência funcional trocadas."
+   "A": "**Mais de 40 anos, com retináculo roto e sem extensão** traz a lesão completa com a idade do outro tendão. Acima dos 40 rompe mais o **quadricipital**, em geral sobre doença sistêmica ou degeneração (Rockwood, cap. 60; Campbell, cap. 53, p. 2272). A ruptura do patelar pode ocorrer nessa idade, mas não é a apresentação mais frequente que a pergunta pede.",
+   "C": "**Mais de 40 anos, sem extensão retinacular e sem perda completa da extensão** descreve, quase palavra por palavra, a ruptura do **quadricipital**: paciente mais velho, parte do retináculo poupada e alguma extensão ainda possível, com déficit (Rockwood, cap. 60). É o retrato do tendão de cima, não do patelar.",
+   "D": "**Menos de 40 anos, sem extensão retinacular e sem perda completa da extensão** acerta a idade e erra a lesão. O Rockwood (cap. 60) diz que a ruptura do patelar costuma atravessar todo o retináculo, e é por isso que o joelho não estende. Um retináculo íntegro com extensão preservada é o cenário em que o diagnóstico de ruptura completa do patelar fica difícil, e o que ele lembra é a ruptura parcial, tratável sem cirurgia quando a extensão ativa está completa."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar; Anatomia e biomecânica do mecanismo extensor."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 60 (Patellar Fractures and Dislocations and Extensor Mechanism Injuries) (Fig. 60-3)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (Traumatic Disorders), p. 2272",
+   "Resumo OrtoQuestões: Fratura da patela, luxação aguda da patela e lesões do aparelho extensor"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-60-patela-mecanismo-extensor",
-     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
-     "secoes": [
-      "Rupturas do tendão quadricipital e do tendão patelar",
-      "Anatomia e biomecânica do mecanismo extensor"
-     ],
-     "blocos": [
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
-      "anatomia-e-biomecanica-do-mecanismo-extensor-add1ac32",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
-     ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
-     "trechosSha256": "bea3a1ac6e515817bd0c0ca4e41f0acc7f29423fe6621e377e189003960e54cd"
-    }
-   ],
-   "questaoSha256": "9aaee91989bbff184445146d9cc6eacdbd06c0939953fb6d1d46e166455d18ba",
-   "comentarioSha256": "c6e1144b697f5050c09d9c39c63c3d813eb3d84ee727758e24415927ddc0ab69"
-  }
+  "imagens": [
+   {
+    "arquivo": "joelho/rwa10-60-3-z05.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 60, Fig. 60-3 (A e B). Altura da patela: em A, perfil com o método de INSALL (tendão maior que 1,2 vezes a patela sugere lesão do tendão patelar) e o polo inferior na linha de BLUMENSAAT, com a patela alta em vermelho; em B, no AP, o polo inferior deve ficar a até 2 cm da linha dos côndilos.",
+    "largura": 910,
+    "altura": 580
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "joelho-0182": {
   "conceito": "O TEOT descreve um paciente que caminha com a perna rodada para fora e pede o nome do sinal. A descrição é a do Campbell, e o nome é WILSON; o que vale aprender é por que alguém andaria assim.\n\n**A geometria do conflito.** A lesão clássica da OCD fica na face lateral do côndilo femoral medial, a face que olha para o intercôndilo (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2016; Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2123). Logo abaixo dela, no planalto tibial, sobe a **espinha tibial medial**. Quando a tíbia roda internamente, essa espinha se desloca em direção à face lateral do côndilo medial; na extensão do joelho, ela passa sobre a lesão e comprime o fragmento doente. Se a tíbia roda para fora, a espinha se afasta.\n\n**Duas descrições, um mesmo sinal.** O Tachdjian descreve a **manobra**: joelho a **90°** de flexão, tíbia em **rotação medial completa** e extensão gradual; o teste é positivo quando a dor surge a cerca de **30° de flexão**, na parte anterior do côndilo medial (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2017). O Campbell descreve o **comportamento** que nasce dessa dor: o paciente pode andar com a perna em **rotação externa** para evitar o contato do côndilo femoral medial com a espinha tibial medial, e é isso que ele chama de sinal de WILSON (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2124). É o mesmo mecanismo visto de dois lados: a rotação interna provoca, a rotação externa protege.\n\n**Quanto vale o sinal.** O Tachdjian diz que ele é tido como específico, mas tem **baixo valor diagnóstico**, porque muitas vezes é negativo em quem tem a lesão; quando positivo, serve para **acompanhar a cicatrização** (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 40 (Pediatric Sports Medicine), p. 2017). Os achados do exame costumam ser mínimos: dor à palpação na borda medial da patela com o joelho fletido, derrame, atrofia do quadríceps e, nos casos com fragmento solto, estalos e travamento que imitam lesão meniscal (Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2124).\n\n| Aspecto | Manobra (Tachdjian) | Marcha (Campbell) |\n|---|---|---|\n| rotação | interna, para provocar | externa, para evitar |\n| posição | 90°, depois extensão | ao caminhar |\n| achado | dor a cerca de 30° | perna rodada para fora |\n\nAs duas versões estão lado a lado na seção \"O sinal de WILSON\" do resumo.",
@@ -3850,7 +3639,7 @@
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2",
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
      ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
+     "sha256": "e0e7fd5890c1441d4405d01e2aa7678ee533571bdca736e3fb72c69e69f78a7f",
      "trechosSha256": "008513be947043edfb9593b0794f6b6c81c0d4055723fa10a4b2a46cd650743c"
     }
    ],
@@ -4231,7 +4020,7 @@
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
       "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b"
      ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
+     "sha256": "e0e7fd5890c1441d4405d01e2aa7678ee533571bdca736e3fb72c69e69f78a7f",
      "trechosSha256": "12fd85e036066a2e872ebfe202b215b4e7765a1d853e3a56300e690dc9ddaf1b"
     }
    ],
@@ -4984,7 +4773,7 @@
       "cruzado-posterior-a-pedra-fundamental-ed726e98",
       "complicacoes-986062f8"
      ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
+     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
      "trechosSha256": "beeb2b26de7cbdd55197822a13ecdf8620619a7651639a34894915a770b821a3"
     }
    ],
@@ -5043,7 +4832,7 @@
       "o-lado-medial-3dfbb38a",
       "imagem-bfe4fe1f"
      ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
+     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
      "trechosSha256": "423b08b0333184568a09e13715fe94ffc0a92b6a39b6258446186e75996b7d3d"
     }
    ],
@@ -5078,36 +4867,7 @@
    "Conteúdo consultado no resumo “Fratura da patela, luxação aguda da patela e lesões do aparelho extensor”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries. Seções: Rupturas do tendão quadricipital e do tendão patelar."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-60-patela-mecanismo-extensor",
-     "titulo": "Fratura da patela, luxação aguda da patela e lesões do aparelho extensor",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 60 · Patellar Fractures and Dislocations and Extensor Mechanism Injuries",
-     "secoes": [
-      "Rupturas do tendão quadricipital e do tendão patelar"
-     ],
-     "blocos": [
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7ae1faeb",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-864a01e3",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-d70ea892",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-a8f6f3a0",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-204c455b",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-7e44c9e6",
-      "rupturas-do-tendao-quadricipital-e-do-tendao-pat-e06a9ac2"
-     ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
-     "trechosSha256": "f42f3b65fa3d26ca8c6fa99e206fad2d888c87f66042dbcb548239980294b77c"
-    }
-   ],
-   "questaoSha256": "208de4b0dc78f820f25f8ad91000055238e72a0d3754ecfba7368f08beffdea2",
-   "comentarioSha256": "b7f2cdb147be6fda18807c9662e684ddf1f2de287d71491aa3f5b637ebc654c5"
-  }
+  "geradoEm": "2026-10-24"
  },
  "joelho-0274": {
   "conceito": "Aqui a banca inverte o ângulo: em vez de pedir o retrato de uma das osteonecroses, pede a comparação, e cada alternativa testa um traço da outra doença. Quem decorou as duas fichas separadas tropeça; quem entendeu de onde cada uma vem responde sem esforço.\n\n**De onde vem cada uma.** A osteonecrose secundária, para o SIZÍNIO HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 16), é necrose avascular verdadeira produzida por uma doença ou agente que age no corpo inteiro: **corticoide, alcoolismo, hiperuricemia, lúpus, hemoglobinopatias e HIV**. Se a causa é sistêmica, o osso ameaçado não é só o de um côndilo. O livro descreve isquemia em **ambos os côndilos femorais ou platôs**, mais frequente nas metáfises e diáfises, e lembra que o joelho é só a **terceira** articulação mais atingida, **depois do quadril e do ombro**. Já a espontânea nasce de uma sobrecarga mecânica local, a fratura por insuficiência do osso subcondral, e por isso fica onde a carga é maior: **um joelho, área de carga do côndilo medial (90%)**.\n\n**O que o livro do quadril acrescenta.** O The Adult Hip (CALLAGHAN, cap. 37, p. 513 e 514) reforça a ideia de doença que se espalha: o quadril é o local mais comum, mas joelho, ombro, punho e tornozelo também adoecem, e o capítulo reserva o termo **multifocal** para o acometimento de três ou mais articulações. Esse é um conceito que só existe na forma secundária.\n\n**A comparação, traço por traço.**\n\n| Traço | Espontânea | Secundária |\n|---|---|---|\n| Idade | após a sexta década | quarta a quinta década |\n| Sexo | mulheres 3:1 | segue a doença de base |\n| Lado | em geral um joelho | ambos os côndilos ou platôs |\n| Outras articulações | não | quadril e ombro à frente; pode ser multifocal |\n| Início | súbito | tardio e gradual |\n\nLida assim, a tabela resolve a questão: a secundária tem mais acometimento em vários sítios, é mais jovem e não tem predomínio feminino próprio. Bilateralidade é a consequência natural de uma causa sistêmica.\n\n**Um cuidado com a letra do livro.** O HEBERT não usa a palavra \"bilateral\". A resposta se apoia no contraste que ele constrói: a espontânea acomete em geral um joelho; a secundária, os dois côndilos e platôs e outras articulações. A distribuição difusa de uma doença sistêmica é o que a banca chamou de maior bilateralidade.\n\nA comparação entre as duas formas está na seção \"Osteonecrose do joelho: espontânea, secundária e pós-artroscópica\" do resumo.",
@@ -5345,7 +5105,7 @@
       "luxacao-aguda-da-patela-727a6900",
       "luxacao-aguda-da-patela-2f480558"
      ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
+     "sha256": "e0e7fd5890c1441d4405d01e2aa7678ee533571bdca736e3fb72c69e69f78a7f",
      "trechosSha256": "efbcfdcda1f771ea6d0a1460df404ec7100265340f69f844c5902cae28479e2c"
     }
    ],
@@ -5560,7 +5320,7 @@
       "fixacao-interna-8ce3f90e",
       "fixacao-interna-39781fe4"
      ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
+     "sha256": "e0e7fd5890c1441d4405d01e2aa7678ee533571bdca736e3fb72c69e69f78a7f",
      "trechosSha256": "324ffbd5a2a73a228cd0d16fd74019c5dc61411b64fdce3413a43e05e55f044e"
     }
    ],
@@ -5606,7 +5366,7 @@
       "canto-posterolateral-e1623413",
       "canto-posterolateral-5cf8f764"
      ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
+     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
      "trechosSha256": "d990e531d7e12680683f8b68b218a51e791bf44492cea64cb307342ce5d36cbf"
     }
    ],
@@ -5858,7 +5618,7 @@
       "canto-posterolateral-1d24e09d",
       "canto-posterolateral-04216df0"
      ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
+     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
      "trechosSha256": "93b2a2d34c57d8f1e14dc404f37bca2a57d435cd8253a96793752e6541d68055"
     }
    ],
@@ -5898,7 +5658,7 @@
       "classificacao-de-schenck-6a3443c0",
       "a-arteria-poplitea-b9951f36"
      ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
+     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
      "trechosSha256": "6e7ce3bfbf8e86a3e55b71fbb92f1195fd933d68950ed7824b222d944bd2831f"
     }
    ],
@@ -6000,7 +5760,7 @@
       "fixacao-interna-19754d8d",
       "fixacao-interna-8ce3f90e"
      ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
+     "sha256": "e0e7fd5890c1441d4405d01e2aa7678ee533571bdca736e3fb72c69e69f78a7f",
      "trechosSha256": "4b273f6d358b61bfb10a1fe0bf33d32d0ec9169a73b2b24835284fc4b9e4253d"
     }
    ],
@@ -6501,7 +6261,7 @@
       "tratamento-do-lado-lateral-520ed298",
       "anatomia-aplicada-5e5d989d"
      ],
-     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "sha256": "543be57160a9fe4a8020d2f3ad45006504ba5d1f2c94da54fbf745421a08066a",
      "trechosSha256": "9c5c231d815c5990559230a2c358f737712759fd0efb138cb882913c73e90062"
     },
     {
@@ -6516,7 +6276,7 @@
      "blocos": [
       "anatomia-aplicada-a-fixacao-d4331410"
      ],
-     "sha256": "362dc694866a7783eba5064efda2356f980ab46ff150ac01d76e476724811b9b",
+     "sha256": "e4dd17bbb3f9dcea5799704993b9a1c5df9a0b70624a052a58cb1969e283863a",
      "trechosSha256": "853645e7e00da2d2af56d0f8c55bb6ded0fb71f05f09f1dfdc7a7f244a34672c"
     }
    ],
@@ -6653,7 +6413,7 @@
       "lesoes-associadas-menisco-ligamentos-e-o-colater-ab946ccd",
       "anatomia-aplicada-df446291"
      ],
-     "sha256": "2cc6a898a3afd3cd2be8528ed6719e66827c9b29bdb4ac4c89c412cd9239bac8",
+     "sha256": "543be57160a9fe4a8020d2f3ad45006504ba5d1f2c94da54fbf745421a08066a",
      "trechosSha256": "fedfaaa32ecf7ceec593c3a8ed9bda605d408c0cc53a817aa405681fa2f5c59a"
     }
    ],
@@ -6726,7 +6486,7 @@
       "canto-posterolateral-474af362",
       "cruzado-posterior-a-pedra-fundamental-6c39d4e8"
      ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
+     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
      "trechosSha256": "7150bbf18861a1b1ba1e6e50c013ded6a22af4b8296ac98b62cfbf13ebc7ec74"
     }
    ],
@@ -6768,7 +6528,7 @@
       "canto-posterolateral-474af362",
       "cruzado-anterior-d3582e20"
      ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
+     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
      "trechosSha256": "b29599f0361d0ea5c241b07bea1db22c4355e4a9342dd29c933e95bdf3e5a5c9"
     },
     {
@@ -6783,7 +6543,7 @@
      "blocos": [
       "anatomia-e-biomecanica-do-mecanismo-extensor-f2e65fc0"
      ],
-     "sha256": "79706e3e69a04aa01d387c2d03c5c67aed6e763d2cfc486bff9a24e247c6b085",
+     "sha256": "e0e7fd5890c1441d4405d01e2aa7678ee533571bdca736e3fb72c69e69f78a7f",
      "trechosSha256": "233c4564d0dc2d2eb9dcd6857c29695e6fecea2e6c49d5252c083ad92a4b8919"
     }
    ],
@@ -6831,36 +6591,7 @@
    "Conteúdo consultado no resumo “Luxação do joelho e lesão multiligamentar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 61 · Knee Dislocations. Seções: Cruzado posterior: a pedra fundamental; O lado medial; Canto posterolateral."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-61-luxacao-joelho",
-     "titulo": "Luxação do joelho e lesão multiligamentar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 61 · Knee Dislocations",
-     "secoes": [
-      "Cruzado posterior: a pedra fundamental",
-      "O lado medial",
-      "Canto posterolateral"
-     ],
-     "blocos": [
-      "cruzado-posterior-a-pedra-fundamental-cc74f408",
-      "o-lado-medial-b8a9097e",
-      "cruzado-posterior-a-pedra-fundamental-cd462063",
-      "o-lado-medial-5c9f047e",
-      "canto-posterolateral-a39e9622"
-     ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
-     "trechosSha256": "15db59c7720aff70548c765a4ec6d55c8b28106f6a58aa8f3a79caaf01e051d4"
-    }
-   ],
-   "questaoSha256": "71c408b7bb510685e84d7e740937ec477da32f5b438f5e0c3779b4877e847c21",
-   "comentarioSha256": "dc5f932f380c0b052a794b3002bcbc572b29dfa4d4a1a92fe12516f0ea281d79"
-  }
+  "geradoEm": "2026-10-23"
  },
  "joelho-0359": {
   "conceito": "**O compartimento posterior superficial contém gastrocnêmio, sóleo e plantar.** Os três recebem o nervo tibial. Gastrocnêmio e sóleo formam a principal massa da panturrilha e convergem para o tendão calcâneo, que se fixa no calcâneo. O plantar possui um ventre pequeno e um tendão longo e fino, que não deve ser confundido com o largo tendão calcâneo.\n\nO gastrocnêmio tem duas cabeças relacionadas aos côndilos femorais. Cruza joelho e tornozelo: participa da flexão da perna e da flexão plantar. O sóleo tem origem na tíbia e na fíbula, abaixo da articulação do joelho, e atua na flexão plantar sem atravessar essa articulação. A ação no tornozelo é semelhante, mas a anatomia proximal é diferente.\n\n| Músculo | Origem proximal | Característica anatômica |\n|---|---|---|\n| Gastrocnêmio | Região dos côndilos femorais | Duas cabeças superficiais; cruza o joelho |\n| Sóleo | Cabeça e região proximal posterior da fíbula; linha do sóleo na tíbia | Profundo ao gastrocnêmio; não cruza o joelho |\n| Plantar | Região supracondilar lateral do fêmur | Ventre curto e tendão longo e delgado |\n\nNa vista posterior, a cabeça medial do gastrocnêmio costuma se estender mais distalmente. Na vista lateral, o sóleo aparece profundo à massa do gastrocnêmio e posterior aos fibulares. O septo transversal profundo separa essa camada dos flexores longos e do tibial posterior. Receber o mesmo nervo não torna esses músculos integrantes do mesmo plano que o feixe neurovascular posterior profundo.",
@@ -7090,7 +6821,7 @@
       "o-nervo-fibular-comum-05d3e14c",
       "cruzado-posterior-a-pedra-fundamental-ad28ed59"
      ],
-     "sha256": "83602d8600d101fef7dc77494d9b69d2207bcaeccb54dd5352327f8cef29359d",
+     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
      "trechosSha256": "017161d99411bcb85803677c0c94594ef19e377c21e37d6e4d1ef68e71773bd3"
     }
    ],

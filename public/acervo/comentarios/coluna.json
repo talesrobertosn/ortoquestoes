@@ -1,41 +1,21 @@
 {
  "coluna-0001": {
-  "conceito": "Um paciente com lesão medular cervical chega hipotenso. A primeira reação seria dar volume, como num politraumatizado sangrando. O Rockwood and Green (10ª ed., cap. 48) explica por que isso pode dar errado e o que a pressão desse paciente realmente precisa.\n\n**O que a lesão desliga.** A medula cervical carrega as vias **simpáticas**. Quando ela é lesada, perde-se ao mesmo tempo o **tônus dos vasos**, que se dilatam, e o estímulo que aceleraria o coração. O resultado é o **choque neurogênico**: **hipotensão com bradicardia**, não por falta de volume, mas por falta de comando simpático.\n\n**Por que só volume não serve.** Encher de líquido um sistema que perdeu o tônus pode causar **edema pulmonar**. O tratamento descrito no capítulo é **vasopressor**, posição de Trendelenburg e uso **criterioso** de líquidos, mantendo a **pressão sistólica acima de 100 mmHg** e a **média acima de 85 mmHg**, porque a perfusão da medula lesada depende da pressão.\n\n**Por que alfa e beta.** O defeito tem duas metades: a vasodilatação (que pede efeito **alfa**, para contrair os vasos) e a bradicardia (que pede efeito **beta**, para acelerar o coração). O resumo registra esta questão do TARO 2020 justamente com essa leitura: o vasopressor com ação **alfa e beta-agonista** trata as duas metades do defeito.\n\n> **Na prova:** choque neurogênico é hipotensão com bradicardia; vasopressor com ação alfa e beta, volume com critério e pressão média acima de 85 mmHg.",
-  "correta": "**D: alfa e beta-agonista.** A ação alfa devolve o tônus vascular perdido e a ação beta corrige a bradicardia; juntas tratam as duas metades do choque neurogênico.",
+  "conceito": "A pergunta parece de farmacologia, mas a resposta sai da fisiologia do trauma raquimedular. Quem entende o que a medula cervical lesada deixa de fazer escolhe o vasopressor sem decorar nome de droga.\n\n**O que a lesão desliga.** A medula cervical e a torácica alta carregam o efluxo simpático central (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14, p. 472). Lesada essa via, somem ao mesmo tempo duas coisas: o **tônus dos vasos**, que se dilatam e baixam a resistência periférica, e o **estímulo simpático ao coração**, que deixaria de acelerar. É o **choque neurogênico**: **hipotensão com bradicardia**, extremidades quentes e secas, sem perda de volume (cap. 14, p. 472). O cap. 47 do mesmo livro (p. 1886) dá a frequência, cerca de **20%** das lesões medulares cervicais, mais comum na lesão completa e mais rara quanto mais baixa a lesão; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1875), acrescenta a **hipotermia** pela perda da termorregulação.\n\n**Por que volume não basta.** O capítulo 48 do Rockwood, na seção de atendimento inicial, é direto: tratar esse paciente como se estivesse sangrando, só com líquido, pode causar **edema pulmonar** com risco de vida. A conduta é **vasopressor**, posição de TRENDELENBURG e líquido com critério, mantendo a **sistólica acima de 100 mmHg** e a **média acima de 85 mmHg**, porque a medula lesada perdeu a autorregulação e a sua perfusão passa a depender da pressão sistêmica.\n\n**Por que alfa e beta.** O defeito tem duas metades, e cada receptor cuida de uma:\n\n| Metade do defeito | O que falta | Receptor que corrige |\n|---|---|---|\n| Vasodilatação | tônus arteriolar | **alfa** (vasoconstrição) |\n| Bradicardia | estímulo cronotrópico | **beta** (frequência e contratilidade) |\n\nO Campbell (cap. 48, p. 1876) transforma isso em regra: quando a hipotensão persiste com pressão venosa central normal, preferem-se os vasopressores com ação **alfa e beta**, como **dopamina, dobutamina e noradrenalina**, aos **alfa puros**, como a **fenilefrina**, que pode provocar **bradicardia reflexa**: a pressão sobe, o barorreflexo freia o coração, e num paciente sem simpático para compensar a frequência cai ainda mais. A meta do Campbell é média de **75 a 95 mmHg por 3 a 7 dias**.\n\n**Os livros lado a lado.** Na ordem das condutas eles diferem. O Rockwood, no cap. 48, vai direto ao vasopressor e à média acima de 85 mmHg; no cap. 47 (p. 1886) fala em **1 semana** com **noradrenalina** nas lesões cervicais e torácicas altas. O Campbell trata a hipotensão primeiro como **hemorrágica**, com cristaloide e, se preciso, sangue, e só então o vasopressor; o próprio Rockwood, no cap. 14 (p. 472), também manda afastar a hipovolemia antes de presumir o choque neurogênico. No que a questão cobra, os dois convergem: a noradrenalina do Rockwood tem ação alfa e beta, e o Campbell recomenda exatamente essa classe.\n\n> **Na prova:** choque neurogênico = hipotensão + bradicardia + pele quente. Volume com critério, vasopressor **alfa e beta**, média acima de 85 mmHg. Alfa puro = risco de bradicardia reflexa.\n\nO mecanismo e as metas estão na seção \"Choque neurogênico\" do resumo.",
+  "correta": "**D) alfa e beta-agonista.** A ação alfa devolve o tônus vascular que a perda do simpático tirou, e a ação beta corrige a bradicardia que acompanha o choque neurogênico. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1876), prefere expressamente essa classe (dopamina, dobutamina, noradrenalina) aos alfa puros, e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 47, p. 1886), indica a noradrenalina para manter a média acima de 85 mmHg.",
   "incorretas": {
-   "A": "**Trata só metade.** O efeito alfa contrai os vasos e sobe a resistência, mas não corrige a bradicardia, que é parte do mesmo defeito simpático.",
-   "B": "**Também trata só metade.** O efeito beta acelera o coração, mas sem efeito alfa os vasos continuam dilatados e a pressão não se sustenta.",
-   "C": "**Agrava o problema.** Um betabloqueador reduz ainda mais a frequência num paciente que já está bradicárdico pela perda do simpático."
+   "A": "**alfa-agonista** é o distrator mais forte, porque contrai os vasos e de fato sobe a pressão. O problema é a outra metade do defeito: sem ação beta, a bradicardia fica sem tratamento, e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1876), avisa que o alfa puro, como a fenilefrina, pode piorar a frequência por **bradicardia reflexa**. Seria uma escolha razoável num choque distributivo com frequência normal ou alta, não no paciente que já chega bradicárdico.",
+   "B": "**beta-agonista** trata só a frequência: acelera o coração e aumenta a contratilidade, mas não devolve o tônus dos vasos, que continuam dilatados pela perda do simpático. Com a resistência periférica baixa, o débito maior não se converte em pressão suficiente para perfundir a medula, cuja meta no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), é a média acima de 85 mmHg.",
+   "C": "**beta-antagonista** faz o contrário do que o paciente precisa. O betabloqueador reduz a frequência e a contratilidade, e o paciente em choque neurogênico já tem bradicardia por falta do estímulo simpático ao coração (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14, p. 472). Dar a ele um betabloqueador aprofundaria a bradicardia e a hipotensão; é droga de taquiarritmia e de hipertensão, nunca de choque."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seção de atendimento inicial (choque neurogênico)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14, p. 472",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 47, p. 1886",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1875 e 1876",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atendimento inicial e exame neurológico"
-     ],
-     "blocos": [
-      "atendimento-inicial-e-exame-neurologico-cef312c6",
-      "atendimento-inicial-e-exame-neurologico-ca374b67"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "68e272d6ea3e8e7e4980162d51817d687826a727492a894782932ea5341bbea7"
-    }
-   ],
-   "questaoSha256": "f1402b0b3e7414f40bec7a156c4795a17cdadf3d31437459528b26f230b2a94b",
-   "comentarioSha256": "5ad8a410c1a92bc63b5da765b310371fdd8e1d754dcbb49fe34b580bb1c345dc"
-  }
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0002": {
   "conceito": "### Glúteo médio e L5\n- **Nervo:** glúteo superior (L4, L5, S1), com ==predomínio de L5==.\n- **Função:** principal **abdutor** do quadril e **estabilizador da pelve** no apoio unipodal.\n- **Déficit:** **Trendelenburg**, marcha em báscula. Por isso a radiculopatia L5 pode dar Trendelenburg, não só pé caído.\n\n### Diferenciar L5 do nervo fibular (pé caído)\n| | Radiculopatia L5 | Nervo fibular |\n|---|---|---|\n| Dorsiflexão / hálux | fraca | fraca |\n| **Inversão** (tibial posterior, L5 via tibial) | ==fraca== | **preservada** |\n| **Abdução do quadril** (glúteo médio) | ==fraca== | preservada |\n| Dor lombar ou ciatalgia | sim | não |\n\n### Miótomos\n| Raiz | Motor | Reflexo |\n|---|---|---|\n| L3 | flexão do quadril, extensão do joelho | patelar (parcial) |\n| L4 | quadríceps, **tibial anterior** | **patelar** |\n| ==L5== | ==glúteo médio==, **extensor longo do hálux**, tibial anterior | nenhum |\n| S1 | **tríceps sural**, glúteo máximo, fibulares | **aquileu** |\n\n> **Na prova:** glúteo médio = ==L5==.",
@@ -309,7 +289,7 @@
       "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
       "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "c4ea1066421801a0bcd384f61f448282464cb0bc7b2f0f8f91af052f18448232"
     }
    ],
@@ -2243,59 +2223,28 @@
   "conferido": false
  },
  "coluna-0159": {
-  "conceito": "O paciente mantém força e percebe dor, mas não reconhece adequadamente a posição de uma articulação sem olhar para ela. Essa dissociação aponta para **síndrome medular posterior**, porque a propriocepção percorre as colunas dorsais.\n\nAs vias não transportam toda a sensibilidade por um único caminho. As colunas dorsais conduzem posição articular, vibração e tato discriminativo; dor e temperatura sobem pelo espinotalâmico. Por isso uma lesão posterior pode comprometer a noção da posição sem reproduzir a perda de força, dor e temperatura da síndrome anterior (Rockwood, 10ª ed., cap. 48, “As síndromes anterior e posterior”).\n\n**“Tato preservado” não deve ser transformado em toda sensibilidade posterior normal.** O enunciado usa tato de forma genérica. A pista que localiza a síndrome é a perda proprioceptiva com força e dor preservadas; modalidades como tato discriminativo pertencem ao sistema dorsal e precisam ser testadas separadamente.\n\nO cone medular envolve outro conjunto: sinais mistos motores nos membros inferiores, disfunção esfincteriana e anestesia em sela, descritos no capítulo toracolombar. Não é a síndrome definida pela perda proprioceptiva isolada da questão.\n\n> **Na prova:** propriocepção comprometida com força e dor preservadas remete à síndrome posterior.",
-  "correta": "**D: medular posterior.** A dissociação sugere comprometimento das colunas dorsais com preservação relativa das vias motoras e dolorosas. É preciso diferenciar tato genérico de tato discriminativo ao examinar.",
+  "conceito": "O enunciado descreve um paciente que mexe tudo e sente dor, mas não sabe dizer, de olhos fechados, em que posição está o próprio pé. Para localizar a lesão, basta perguntar qual trato carrega só essa informação.\n\n**Os três tratos que resolvem qualquer síndrome incompleta.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, seção de anatomia da medula), organiza assim:\n- **colunas dorsais** (fascículos grácil e cuneiforme), na parte **posterior** da medula: **propriocepção, vibração, pressão e tato discriminativo**; cruzam acima do forame magno;\n- **trato espinotalâmico lateral**, na porção **anterolateral**: **dor e temperatura**; cruza no nível em que entra;\n- **tratos corticoespinhais**, laterais e ventral: **motricidade**; cruzam no bulbo.\n\nNa figura do Rockwood, os fascículos grácil e cuneiforme ocupam a faixa de trás, entre os cornos posteriores; o azul marca a área da síndrome anterior, o círculo central a centromedular e a hachura a hemissecção de BROWN-SÉQUARD. Repare que a área azul, território da **artéria espinal anterior**, poupa justamente as colunas dorsais, irrigadas pelas duas artérias posteriores.\n\n**A síndrome posterior.** É o espelho da anterior: lesão restrita às colunas dorsais, com **força, dor e tato preservados e propriocepção alterada**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1880), descreve com as mesmas peças: perda da **propriocepção e da vibração**, com as outras modalidades sensitivas e a motricidade **preservadas**. É **rara**, em geral causada por tumor, mas pode ocorrer num trauma em **extensão**. O Rockwood não a descreve como entidade separada; ele dá a anatomia, e ela sai da anatomia.\n\n**As quatro síndromes do enunciado, lado a lado.**\n\n| Síndrome | O que se perde | O que se preserva | Fonte |\n|---|---|---|---|\n| Central | força, mais nos membros superiores e nas mãos | sensibilidade sacral em geral | Campbell, p. 1878; Rockwood |\n| Anterior | força, dor e temperatura | propriocepção, vibração, tato profundo | Campbell, p. 1880 |\n| Posterior | propriocepção e vibração | força e as outras sensibilidades | Campbell, p. 1880 |\n| Cone medular | bexiga e intestino arreflexos, fraqueza dos membros inferiores | (lesão de T11 a L2) | Campbell, p. 1880 |\n\nUm cuidado com a palavra \"tato\". As colunas dorsais carregam o tato **discriminativo**; o enunciado usa \"tato\" de modo genérico, como o resumo, e a pista que decide é a propriocepção isolada.\n\n> **Na prova:** força e dor normais com propriocepção perdida = colunas dorsais = síndrome posterior. Propriocepção normal com força, dor e temperatura perdidas = anterior.\n\nAs síndromes estão na seção \"As síndromes anterior e posterior\" do resumo.",
+  "correta": "**D) medular posterior.** A lesão das colunas dorsais tira a propriocepção (e a vibração) e deixa intactos os corticoespinhais e os espinotalâmicos, que ficam mais à frente: força, dor e tato preservados (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1880), define a síndrome posterior exatamente assim e a chama de rara.",
   "incorretas": {
-   "A": "**Destaca a distribuição motora errada para o caso.** Na síndrome central clássica, braços e mãos ficam mais fracos que as pernas. A pergunta informa força preservada e destaca uma modalidade sensitiva posterior, não predomínio braquial de fraqueza.",
-   "B": "**Inverte o sistema preservado.** A síndrome anterior compromete motor, dor e temperatura e preserva propriocepção. Aqui o padrão é o oposto: a propriocepção está alterada e as funções motoras e dolorosas permanecem.",
-   "C": "**É um quadro da terminação da medula com outros sinais.** O cone pode produzir alterações motoras de primeiro e segundo neurônio, anestesia em sela e disfunção vesical/intestinal/sexual. Esses achados não foram descritos; a pista dada localiza as colunas posteriores."
+   "A": "**Medular central** é a síndrome incompleta mais comum e a de melhor prognóstico (Campbell, cap. 48, p. 1878): o idoso com canal estreito que sofre hiperextensão perde força mais nos membros superiores que nos inferiores, porque as fibras dos segmentos altos ficam mais centrais. O achado que a define é motor, e o paciente do enunciado tem a força preservada.",
+   "B": "**Medular anterior** é o território da artéria espinal anterior, os dois terços da frente da medula: perde-se a força e a dor e a temperatura, e a **propriocepção fica preservada** (Campbell, cap. 48, p. 1880). É o oposto exato do enunciado. Costuma vir de hiperflexão com fragmento de osso ou disco comprimindo a artéria, e o prognóstico de recuperação é ruim.",
+   "C": "**Do cone medular** é a lesão da medula sacral e das raízes lombares, em geral entre T11 e L2: bexiga e intestino arreflexos, com retenção e incontinência por transbordamento, e fraqueza dos membros inferiores (Campbell, cap. 48, p. 1880). É lesão toracolombar, com quadro esfincteriano dominante, e não explica perda isolada da propriocepção."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas.",
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations. Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seção Cervical Spinal Cord Anatomy (Fig. 48-22)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1878 a 1880 (síndromes medulares incompletas)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "A medula cervical e as síndromes incompletas"
-     ],
-     "blocos": [
-      "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
-      "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
-      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "3e210b1bdde6ecf64cab339fbda9a754abd1d5c1a41d074219262f6f683accfb"
-    },
-    {
-     "resumo": "rockwood10-49-fratura-toracolombar",
-     "titulo": "Fraturas e luxações da coluna toracolombar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
-     "secoes": [
-      "Exame neurológico: choque neurogênico, choque medular e ASIA"
-     ],
-     "blocos": [
-      "exame-neurologico-choque-neurogenico-choque-medu-8ef645cd"
-     ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
-     "trechosSha256": "42decc5b92cbd321b2de733438075f2b17d65953b31a663790c827afef700b9d"
-    }
-   ],
-   "questaoSha256": "98cc693debf3432156911c603f66517e06ca04ef7d8b4b4d3ab18fa5e9e18cb1",
-   "comentarioSha256": "119b6d9adeb320ebbc7e36fedf837e9a39bf41c98575527f0caaf56268e933fa"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/rwa10-48-22-w87.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48, Fig. 48-22, p. 1931. Corte transversal da medula com as áreas das síndromes incompletas: a hachura cobre a metade lesada na BROWN-SÉQUARD (fascículos grácil e cuneiforme, corticoespinhal e espinotalâmico lateral do mesmo lado), o azul marca a medular anterior e o círculo central, a centromedular.",
+    "largura": 900,
+    "altura": 794
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0161": {
   "conceito": "O TEOT 2024 descreve uma hérnia cervical foraminal com parestesia na face lateral do antebraço e no polegar e fraqueza do extensor radial longo do carpo, e pede a raiz e o segmento. A sensibilidade e o músculo apontam para C6, e o segmento é o C5-C6.\n\n**A raiz de C6 no Campbell.** A ruptura do disco C5-C6 com compressão de C6 pode dar **fraqueza do bíceps e dos extensores radiais longo e curto do carpo**; os **reflexos braquiorradial e bicipital podem diminuir**; e a sensibilidade costuma estar diminuída na **face lateral proximal do antebraço, no polegar e no indicador** (cap. 38, p. 1692, Box 38.3).\n\n**Lendo os achados.** A face lateral do antebraço e o polegar são o dermátomo de C6. O extensor radial longo do carpo tem inervação de C6 e C7, mas, combinado com o dermátomo do polegar, aponta C6. Juntos, sensibilidade e força dão a raiz.\n\n**Hérnia foraminal e hérnia central.** ODOM dividiu a doença discal cervical em quatro grupos: hérnia mole unilateral com compressão de raiz; osteófito foraminal (disco duro) com compressão de raiz; hérnia mole medial com compressão medular; e barra transversa, a espondilose, com compressão medular. **As lesões centrais costumam dar sintomas de compressão medular, e as laterais, sintomas radiculares** (Campbell, cap. 38, p. 1693). Na coluna cervical, a hérnia foraminal comprime a mesma raiz que a posterolateral, a raiz que sai por aquele forame, a de número maior; diferente da lombar, em que a foraminal e a posterolateral pegam raízes diferentes.\n\n**A regra da numeração cervical.** Na coluna cervical há oito raízes e sete vértebras: a raiz de C1 sai entre o occipital e o atlas, e cada raiz cervical sai **acima** do pedículo da vértebra de mesmo número, até C8, que sai entre C7 e T1. A Fig. 38.6 do Campbell compara os pontos de saída das raízes cervicais e lombares e mostra, no corte axial, que o processo uncinado forma a parede ventral do forame e que a raiz sai por trás da artéria vertebral (cap. 38, p. 1691). Por isso, **o disco cervical comprime a raiz de número maior**: o disco C4-C5 pega C5; o C5-C6, C6; o C6-C7, C7; e o C7-T1, C8. Na coluna lombar, ao contrário, a raiz sai abaixo do pedículo, e a hérnia posterolateral pega a raiz que desce.\n\n**Aplicando.** A raiz de C6 sai acima do pedículo de C6, pelo forame entre C5 e C6. A hérnia foraminal desse nível, o disco C5-C6, comprime C6. A alternativa \"C6 e C6-C7\" erra o segmento: o disco C6-C7 comprime C7.\n\n**A inervação dupla, a fonte da confusão.** O Campbell avisa que a ruptura do disco C5-C6 com compressão de C6 pode ser confundida com outras raízes **pela inervação dupla das estruturas**: o **bíceps** é inervado por C5 e C6, e os **extensores radiais longos** do carpo por C6 e C7. Por isso, a fraqueza do bíceps pode vir de C5 ou de C6, e o reflexo bicipital tem componentes das duas raízes. O livro conclui que a inervação múltipla dos músculos às vezes confunde a determinação da raiz exata, e que a ressonância ou outros exames de imagem ajudam a confirmar o nível (cap. 38, p. 1691 e 1692). Avaliando vários grupos musculares, vários reflexos e a sensibilidade, o nível pode ser localizado com a mesma precisão de qualquer outra lesão do sistema nervoso (p. 1691).\n\n| Raiz (disco) | Sensibilidade | Força | Reflexo |\n|---|---|---|---|\n| C5 (C4-C5) | face lateral do BRAÇO | DELTOIDE, bíceps (variável) | bicipital (variável) |\n| C6 (C5-C6) | face lateral do ANTEBRAÇO, POLEGAR e INDICADOR | BÍCEPS, EXTENSORES RADIAIS do carpo | BICIPITAL e BRAQUIORRADIAL |\n| C7 (C6-C7) | DEDO MÉDIO | TRÍCEPS, FLEXOR RADIAL do carpo, extensores dos dedos | TRICIPITAL |\n| C8 (C7-T1) | ANULAR, MÍNIMO, borda ulnar | INTERÓSSEOS, flexores dos dedos | nenhum |\n\n**O teste que ajuda.** O SPURLING, com extensão, rotação para o lado afetado e compressão da cabeça, fecha ainda mais o forame e reproduz a dor no dermátomo; é 95% sensível e 94% específico para a doença da raiz cervical (Campbell, p. 1692). Na hérnia foraminal, ele costuma ser bem positivo.\n\n**O que a banca quis testar.** Reconhecer C6 e o segmento que a comprime.\n\n> **Na prova:** antebraço lateral + polegar + extensor radial do carpo = C6 = segmento C5-C6.",
@@ -2313,42 +2262,29 @@
   "conferido": false
  },
  "coluna-0162": {
-  "conceito": "Numa fratura por explosão do atlas, as massas laterais de C1 podem se afastar para os lados. O ligamento transverso une essas massas passando por trás do dente; se o anel abre, essa faixa é tensionada. A regra de **Spence procura inferir lesão do transverso na fratura de C1**.\n\nNa incidência transoral, mede-se quanto a massa lateral de C1 ultrapassa C2 de cada lado e somam-se os dois deslocamentos. O valor clássico é maior que **6,9 mm**; o resumo também discute 8,1 mm após correção da ampliação radiográfica e o uso aproximado de 7 mm. Não é a medida do espaço anterior entre o arco de C1 e o dente, que é o ADI (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**A regra é um indício, não uma visualização do ligamento.** O próprio capítulo relata ruptura com deslocamentos menores e estudos sem correlação adequada entre deslocamento e integridade. Por isso uma soma pequena não exclui lesão; a ressonância complementa a avaliação mostrando diretamente o transverso.\n\nO alvo é importante porque a integridade do transverso muda a avaliação de estabilidade de C1. A presença de C2 como referência na medida não transforma o método numa regra para fratura do áxis.\n\n> **Na prova:** Spence relaciona afastamento das massas laterais de C1 à integridade do ligamento transverso.",
-  "correta": "**C: transverso na fratura de C1.** A explosão do anel afasta as massas laterais e tensiona o ligamento entre elas. A medida indireta deve ser integrada à avaliação ligamentar, e não usada isoladamente para excluir ruptura.",
+  "conceito": "As quatro opções cruzam dois ligamentos com duas vértebras, e só uma combinação faz sentido mecânico. A regra de SPENCE mede o afastamento das massas laterais do **atlas**, e o único ligamento que se estica entre elas é o **transverso**.\n\n**O que é o ligamento e por que ele decide.** O transverso é a faixa horizontal da cruz que prende o dente do áxis contra o arco anterior de C1: vai de uma massa lateral à outra **por trás do dente**. É ele que separa a fratura do atlas **estável** da **instável** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48). A figura do Campbell mostra as duas situações vistas de cima: em A, uma fratura de JEFFERSON com o transverso inteiro, e as massas no lugar; em B, o transverso partido, e as massas livres para se afastar (Campbell's Operative Orthopaedics, 15ª ed., cap. 48, Fig. 48.13, p. 1887).\n\n**De onde vem a força.** A **carga axial** gera forças de expansão radial no anel de C1. O anel, que precisa quebrar em pelo menos dois pontos, abre, e as massas laterais vão para fora; se a abertura passa do que o transverso aguenta, ele rompe por tração. É a JEFFERSON clássica, com traços nos arcos anterior e posterior. O Campbell (cap. 48, Fig. 48.15, p. 1888) dá a classificação de GEHWEILER, que embute exatamente essa ideia: o tipo 3, arco anterior e posterior juntos, é a JEFFERSON clássica, **3A** com o transverso íntegro (estável) e **3B** com o transverso lesado (instável).\n\n**A regra.** Na incidência **transoral**, soma-se quanto as massas laterais de C1 ultrapassam as de C2 dos dois lados; acima de **6,9 mm** (7 mm no HEBERT, cap. 39), infere-se a ruptura do transverso. O Rockwood lembra que é inferência: corrigida a ampliação da radiografia, propôs-se 8,1 mm; num estudo biomecânico o ligamento rompeu com só 3,8 mm; e por isso a **ressonância**, que mostra o ligamento no corte axial, complementa a medida.\n\n**Duas medidas que a banca gosta de misturar.**\n\n| | SPENCE | ADI |\n|---|---|---|\n| Incidência | transoral (boca aberta) | perfil |\n| O que mede | afastamento lateral das massas de C1 sobre C2 | distância entre o arco anterior de C1 e o dente |\n| Lesão | fratura de C1 (JEFFERSON) | instabilidade C1-C2, com ou sem fratura |\n| Limites | 6,9 mm: transverso roto | até 3 mm normal; até 5 mm só o transverso; acima de 5 mm, também os alares |\n\n> **Na prova:** SPENCE = transverso = fratura de C1. Alar aparece no ADI acima de 5 mm e na avulsão da ponta do dente.\n\nA regra está na seção \"O ligamento transverso decide a estabilidade\" do resumo.",
+  "correta": "**C) transverso na fratura de C1.** A regra de SPENCE soma o deslocamento lateral das massas de C1 sobre C2 na transoral; acima de 6,9 mm, infere-se a ruptura do transverso e a fratura do atlas é instável (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48; Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1887). É um sinal indireto, que a ressonância confirma.",
   "incorretas": {
-   "A": "**Mantém C1 e troca o ligamento que a medida procura avaliar.** O transverso passa de uma massa lateral à outra atrás do dente e é tensionado pela abertura do anel. A regra não foi construída como teste direto dos alares.",
-   "B": "**Troca tanto a estrutura quanto a fratura-alvo.** A medida usa C2 como apoio de referência para o deslocamento de C1. Isso não significa que investigue o alar numa fratura de C2.",
-   "D": "**Acerta o ligamento e muda o osso lesionado.** A relação entre abertura das massas e transverso pertence à fratura do atlas, C1. A comparação com as massas de C2 é apenas o modo de medir a abertura."
+   "A": "**Alar na fratura de C1** acerta a vértebra e erra o ligamento. Os alares vão da ponta do dente à borda anterior do forame magno e freiam a rotação; na JEFFERSON costumam ficar íntegros, porque o dente não se desloca em relação ao forame magno (Rockwood, cap. 48). O afastamento das massas laterais estica o transverso, não eles.",
+   "B": "**Alar na fratura de C2** lembra a avulsão da ponta do dente, o tipo I de ANDERSON e D'ALONZO, que o Campbell (cap. 48, p. 1895) atribui à tração do alar ou do apical. É uma lesão rara, que pode ser sinal de dissociação occipitocervical, e não se mede pela transoral do atlas. Nenhum dos dois termos pertence à regra de SPENCE.",
+   "D": "**Transverso na fratura de C2** acerta o ligamento e erra a fratura. O transverso pesa também no odontoide (fratura associada a lesão do transverso é indicação de cirurgia numa grande série citada pelo Rockwood), e a sua ruptura sem fratura se mede pelo ADI no perfil. A regra de SPENCE, porém, nasceu da explosão do anel de C1: usa C2 só como referência para ver quanto as massas do atlas passaram."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções da fratura do atlas, do ligamento transverso e do ADI",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Figs. 48.13 a 48.15, p. 1887 e 1888; p. 1895",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 39 (coluna cervical alta)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atlas, ligamento transverso e instabilidade C1–C2"
-     ],
-     "blocos": [
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "97abb481cb5ef0e0be96d03213a6737928eccb470083fd0fb60cadd98d2b4efe"
-    }
-   ],
-   "questaoSha256": "c2aed8d00935ae68eef15bae53fc04b026d1ee9039ee2b9c0968e19f113f1041",
-   "comentarioSha256": "2918d675f620c33e83aa6f33ef929f3c582d36c36fdfdd9cfc1312e1313a03ea"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/campbell15-48-13-t02.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 48, Fig. 48.13, p. 1887. Fratura de JEFFERSON vista de cima: em A, estável, com o ligamento transverso íntegro atrás do dente; em B, instável, com o transverso roto e as massas laterais afastadas.",
+    "largura": 1031,
+    "altura": 369
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0163": {
   "alerta": "Os livros lidos não trazem a porcentagem da lordose lombar feita pelos discos L4-L5 e L5-S1. O gabarito oficial (D) foi preservado; a explicação usa a anatomia descrita no Campbell e no Netter.",
@@ -2368,45 +2304,30 @@
   "conferido": false
  },
  "coluna-0164": {
-  "conceito": "A seta aponta para a faixa horizontal que cruza **por trás do dente**, conectando as massas laterais de C1. É o **ligamento transverso do atlas**, alternativa C. O formato e a relação com o dente permitem identificá-lo antes de pensar na lista de nomes.\n\nEssa faixa contém a relação entre atlas e áxis. Quando as massas laterais se afastam na fratura de Jefferson, o transverso é tensionado e pode romper; quando falha na instabilidade sagital, o intervalo anterior entre C1 e o dente pode aumentar (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade” e “O intervalo atlanto-odontoide”).\n\n**O dente é o marco ósseo, não a faixa apontada.** Reconhecer essa diferença separa o ligamento de um rótulo associado ao processo odontoide. A membrana tectória é outra estrutura: o resumo a descreve como continuação superior do ligamento longitudinal posterior, sem confundi-la com o feixe transversal curto entre as massas.\n\nO papel estabilizador explica a relevância clínica da identificação, mas a figura anatômica não demonstra uma ruptura. Aqui se pede nomear uma estrutura íntegra do desenho, não diagnosticar instabilidade apenas por ela estar visível.\n\n> **Na prova:** faixa horizontal atrás do dente, entre massas de C1: transverso.",
-  "correta": "**C: transverso do atlas.** A seta se dirige ao feixe horizontal posterior ao dente que une as massas laterais, exatamente o trajeto descrito na fonte.",
+  "conceito": "Questão de anatomia pura: a prova mostra a junção craniocervical vista por trás, com o arco posterior e a membrana tectória retirados, e aponta uma faixa. Para nomear, olhe a direção das fibras e o que fica na frente delas.\n\n**A imagem.** No centro, um feixe em forma de cruz. A haste vertical sobe até a borda do forame magno e desce até o corpo de C2; a barra horizontal, larga e branca, atravessa de um lado ao outro, presa nas massas laterais do atlas. A seta amarela aponta essa **barra horizontal**, que passa **por trás do dente** (o dente fica escondido logo à frente dela). Acima, partindo de perto da ponta do dente, dois feixes curtos e oblíquos sobem para os lados, em direção aos côndilos do occipital: são os alares. A barra apontada é o **ligamento transverso do atlas**, o braço horizontal do ligamento cruciforme.\n\n**A mesma estrutura na ressonância.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, Fig. 48-15), mostra o transverso num corte axial em T2 no anel de C1: as pontas de seta marcam uma faixa escura, de uma massa lateral à outra, passando atrás do processo odontoide (O). O capítulo diz que, no axial em C1, a ressonância avalia o transverso e os alares.\n\n**Para que serve cada estrutura vizinha.**\n\n| Estrutura | Trajeto | Função | Fonte |\n|---|---|---|---|\n| **Transverso** | massa lateral a massa lateral de C1, atrás do dente | prende o dente ao arco anterior; até 5 mm de ADI se rompe sozinho | Rockwood, cap. 48 |\n| Alares | ponta do dente à borda anterior do forame magno | limitam a rotação (o esquerdo freia a rotação para a direita) e o ADI além de 5 mm | HEBERT, cap. 39; Rockwood |\n| Membrana tectória | continuação do ligamento longitudinal posterior, do forame magno para baixo | cobre por trás o cruciforme; rota, indica dissociação occipitocervical | Rockwood, cap. 48 |\n| Cruciforme (o conjunto) | transverso mais as hastes verticais | estabiliza a flexão da cervical alta | HEBERT, cap. 39 |\n\n**Por que o transverso é o mais cobrado.** Ele decide a estabilidade de C1. Na fratura de JEFFERSON, as massas laterais se afastam e o rompem por tração (regra de SPENCE, mais de 6,9 mm na transoral); sem fratura, a sua ruptura aparece no perfil como ADI acima de 3 mm. Os alares seguram o resto: sozinho, o transverso roto deixa o ADI chegar a 5 mm, e acima disso caíram também os alares.\n\nO ligamento está na seção \"O ligamento transverso decide a estabilidade\" do resumo.",
+  "correta": "**C) transverso do atlas.** A seta aponta a barra horizontal do cruciforme, que vai de uma massa lateral de C1 à outra passando atrás do dente, o trajeto que o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, Fig. 48-15), mostra na ressonância axial. É o ligamento que decide a estabilidade da fratura do atlas e da articulação C1-C2.",
   "incorretas": {
-   "A": "**Escolhe outro estabilizador sem acompanhar a seta.** Os alares participam da contenção atlantoaxial, mas o alvo mostrado é o feixe transversal entre as massas. Reconhecer a função de estabilização de um nome não basta para identificar qualquer ligamento de C1–C2.",
-   "B": "**Confunde o marco ósseo com o tecido apontado.** O odontoide é a projeção de C2 que aparece à frente da faixa. A seta não aponta para o dente, e sim para o ligamento que passa atrás dele.",
-   "D": "**Troca uma continuidade longitudinal por uma faixa transversal.** A membrana tectória continua superiormente o longitudinal posterior. O alvo da seta é o transverso do atlas, definido pelo trajeto de uma massa lateral à outra."
+   "A": "**Alar** é par e oblíquo: cada um sai da ponta do dente e sobe para a borda anterior do forame magno, junto ao côndilo occipital (HEBERT, cap. 39). Na figura, são os feixes curtos acima e dos lados da cruz, não a barra horizontal apontada. Limitam a rotação da cabeça, e o ADI acima de 5 mm indica que também romperam.",
+   "B": "**Odontoide** não é o nome de um ligamento nos livros consultados. Os ligamentos que se prendem ao dente são o apical e os alares, que o Campbell (cap. 48, p. 1895) cita como os que avulsionam a ponta no tipo I de ANDERSON e D'ALONZO. Na figura, o processo odontoide é o osso escondido na frente da faixa apontada, não a faixa.",
+   "D": "**Atlantoaxial (membrana tectória)** é a continuação do ligamento longitudinal posterior acima de C2 (Rockwood, cap. 48). É uma lâmina larga que cobre o cruciforme por trás, e na peça da prova foi retirada para mostrar a cruz. Além disso, prende o occipital ao áxis, não só o atlas ao áxis; a sua ruptura na ressonância indica dissociação occipitocervical."
   },
+  "alerta": "A alternativa \"odontoide\" não corresponde a nenhum ligamento descrito no resumo nem nos livros locais (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48; Campbell's Operative Orthopaedics, 15ª ed., cap. 48; HEBERT, cap. 39), que só citam o apical e os alares presos ao dente; ela foi explicada pelo que os livros dizem dessas estruturas. O gabarito oficial (C) é sustentado pelo Rockwood.",
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Anatomia aplicada e biomecânica."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções de imagem (Fig. 48-15), do ligamento transverso e da anatomia occipitocervical",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 39 (coluna cervical alta) (anatomia e biomecânica da cervical alta)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1895",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atlas, ligamento transverso e instabilidade C1–C2",
-      "Anatomia aplicada e biomecânica"
-     ],
-     "blocos": [
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
-      "anatomia-aplicada-e-biomecanica-bb0e36ca",
-      "anatomia-aplicada-e-biomecanica-b1c9d54b"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "186e191ca4416da4c2fc55bc80e054cb2f7b80cc29e641fba0b58023f83e1867"
-    }
-   ],
-   "questaoSha256": "ffcf59ff85816906f2fce046bc0cc6e4dd52d19eca500343bc3f2deb51a81d86",
-   "comentarioSha256": "aa0b346435cd60cdcbac71e3f7d0b2d21e8ff174a70ce83bb1a6dd75d885e98a"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/rwa10-48-15-t02.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48, Fig. 48-15, seção de imagem (PDF sem página impressa). Ressonância axial em T2 no anel de C1: as pontas de seta marcam o ligamento transverso íntegro, que vai de uma massa lateral à outra passando atrás do processo odontoide (O).",
+    "largura": 1157,
+    "altura": 808
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0165": {
   "conceito": "**A imagem.** É uma dissecção da parte baixa do pescoço vista de frente. No centro, a **traqueia**, com os anéis cartilaginosos bem marcados, desce até a altura da clavícula, que aparece cortada embaixo. Acima dela vê-se a musculatura da faringe e da laringe. À direita do desenho correm os **grandes vasos vermelhos** do pescoço, longe da traqueia. A seta amarela aponta um **nervo fino, amarelo, que sobe colado à parede lateral da traqueia**, no ângulo entre ela e o esôfago, e desaparece para dentro da laringe. Esse trajeto, rente à via aérea e separado da bainha dos vasos, é o do **nervo laríngeo recorrente**.\n\n**De onde vem o nome.** O recorrente é ramo do vago que desce até o tórax e \"volta\" para o pescoço. O HOPPENFELD (p. 340 e 351) descreve a assimetria que interessa ao cirurgião:\n- o **esquerdo** sai do vago no **arco da aorta**, contorna-o e sobe protegido **entre a traqueia e o esôfago**, num trajeto longo e vertical;\n- o **direito** contorna a **artéria subclávia direita**, sobe ao lado da traqueia e, na parte inferior do pescoço, **cruza de lateral para medial** para chegar a ela; por isso é **um pouco mais vulnerável**;\n- em raras ocasiões o direito é **não recorrente**: sai alto da bainha carótica e atravessa o campo na altura da tireoide.\n\n**Por que o lado esquerdo protege.** Na via anterior, o plano passa exatamente entre a bainha carótica, levada para lateral, e o bloco traqueia e esôfago, levado para medial (HOPPENFELD, p. 343). Um nervo que atravessa esse corredor em diagonal, como o direito, fica no caminho das lâminas e da tesoura; um nervo que corre dentro do sulco traqueoesofágico, como o esquerdo, vai junto com o bloco medial e sai do caminho. Daí a frase do livro: o acesso pelo lado esquerdo é, com frequência, o preferido, e o recorrente é a **estrutura de risco mais importante** da via (p. 340). Em qualquer lado, os nervos ficam seguros com os afastadores embaixo da borda medial dos longos do pescoço (p. 346 e 351).\n\n**O outro livro discorda do benefício.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 44, p. 1708 e 1709), confirma a mesma anatomia e acrescenta a artéria tireóidea inferior: à direita, o nervo tem relação variável com ela e fica muito exposto se esses vasos não forem ligados o mais lateralmente possível. Mas conclui de outro jeito: muitos cirurgiões operam pela direita com baixa incidência de paralisia sintomática, e **a redução do risco pela esquerda não foi demonstrada na literatura**; na Campbell Clinic, o lado é escolhido pela **mão dominante** do cirurgião. O capítulo 45 (p. 1758) dá a única regra de lado que não se discute: se uma corda vocal já está paralisada, opera-se **do mesmo lado**, para não arriscar o nervo que ainda funciona.\n\nPara a prova, o enunciado já assume a premissa do HOPPENFELD (\"diminui o risco\"), e o nervo que ela protege é o recorrente. A comparação entre os dois lados, com a tabela, está na seção \"O laríngeo recorrente e a escolha do lado\" do resumo.",
@@ -3419,44 +3340,29 @@
   "conferido": false
  },
  "coluna-0251": {
-  "conceito": "Imagine um idoso com estenose cervical que cai e bate a testa. Ele chega com as mãos e os braços muito fracos e as pernas relativamente boas, e a tomografia não mostra fratura nem luxação. Por que os braços sofrem mais?\n\n**A organização dentro da medula.** O Rockwood and Green (10ª ed., cap. 48) explica que, na substância cinzenta, as fibras que servem os **segmentos mais altos** ficam mais **centrais**. É essa organização que faz a **síndrome medular central** atingir mais os **membros superiores** que os inferiores: a lesão que começa no centro pega primeiro as fibras dos braços.\n\n**Quem tem e como acontece.** O paciente típico é o **idoso com canal estreito** (espondilose ou canal congenitamente estreito) que sofre **hiperextensão**, muitas vezes batendo a testa numa queda. O déficit motor e sensitivo é pior nos braços e nas mãos, às vezes com alteração das pernas, da bexiga e do intestino, sem fratura, luxação ou lesão ligamentar na imagem.\n\n**O prognóstico.** Muitos recuperam boa parte só com observação. O capítulo cita a idade jovem, boa função motora na chegada e ausência de alteração de sinal na medula como fatores favoráveis.\n\n> **Na prova:** braços mais fracos que as pernas, idoso com estenose e hiperextensão: síndrome medular central.",
-  "correta": "**C: síndrome medular central.** As fibras dos segmentos cervicais ficam mais centrais na medula; a lesão central as atinge primeiro, e os membros superiores ficam mais fracos que os inferiores.",
+  "conceito": "Fraqueza maior nos braços que nas pernas depois de um trauma cervical é a assinatura da **síndrome medular central**. A banca, porém, colocou entre as opções a única outra síndrome que também pega mais os braços, a paralisia cruzada de BELL, e por isso vale entender o porquê e não só o nome.\n\n**A anatomia que explica o padrão.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, seção sobre a medula cervical), descreve a organização somatotópica: na **substância cinzenta**, as fibras dos segmentos **mais altos** ficam mais **centrais**, e nos tratos corticoespinhais as fibras dos níveis cervicais também ficam na porção **interna, anteromedial**, com as lombares e sacrais por fora. O livro diz que essa disposição é a explicação fisiológica do predomínio nos membros superiores. Na figura do Rockwood, o círculo central marca a área da síndrome central: ela abraça a substância cinzenta e a parte interna dos tratos motores, justamente onde passam as fibras das mãos e dos braços. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1878), detalha que os neurônios motores dos membros superiores, centrais no corticoespinhal lateral, são os mais atingidos, e que o déficit costuma ser **maior na parte distal** do membro (a mão) que na proximal; a sensibilidade sacral ao alfinete em geral fica preservada.\n\n**Quem tem e como acontece.** O paciente típico é o **idoso com estenose cervical** (espondilose ou canal congenitamente estreito) que sofre **hiperextensão**, muitas vezes numa queda batendo a testa, e chega sem fratura, luxação ou lesão ligamentar na imagem. Pelo Rockwood, é a forma mais comum de lesão medular sem instabilidade na coluna espondilótica; pelo Campbell (p. 1878), é a **síndrome incompleta mais comum**, até **70%** dos casos, e a de **melhor prognóstico**: mais de 50% recuperam bexiga e intestino, voltam a andar e melhoram a mão.\n\n**As outras síndromes, pelo mesmo raciocínio.**\n\n| Síndrome | Onde está a lesão | O que se perde |\n|---|---|---|\n| Central | centro da medula | braços mais que pernas, mão mais que ombro |\n| Anterior | dois terços anteriores (artéria espinal anterior) | força, dor e temperatura; propriocepção preservada |\n| BROWN-SÉQUARD | metade da medula | força e propriocepção do mesmo lado; dor e temperatura do lado oposto |\n| Cruzada de BELL | junção do bulbo com a medula | braços mais que pernas, ombro mais que mão |\n\n**A pegadinha de BELL.** O Skeletal Trauma, 5ª ed. (cap. 33, p. 815), descreve a paralisia cruzada de BELL entre as síndromes cervicomedulares, raras, causadas pela anatomia peculiar dos tratos na **junção do tronco cerebral com a medula**, nas lesões craniocervicais. Ela pode imitar a síndrome central, mas atinge mais a parte **proximal** do membro superior. A diferença decide: no trauma raquimedular cervical comum, a resposta é a central; a cruzada pertence às lesões do occipital, do atlas e do áxis.\n\n> **Na prova:** braços piores que pernas no idoso com estenose que bateu a testa = **síndrome central**, a incompleta mais comum e a de melhor prognóstico.\n\nA anatomia dos tratos e as síndromes estão na seção \"Síndrome medular central\" do resumo.",
+  "correta": "**C) síndrome medular central.** No Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), as fibras dos segmentos cervicais ocupam o centro da substância cinzenta e a porção interna dos tratos corticoespinhais; a lesão que começa no centro da medula as atinge primeiro, e os membros superiores ficam mais fracos que os inferiores. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1878), confirma o padrão e acrescenta que é a síndrome incompleta mais comum, com até 70% dos casos.",
   "incorretas": {
-   "A": "**Não é a síndrome descrita pelo capítulo para este quadro.** O resumo atribui a fraqueza maior nos membros superiores à síndrome medular central, pela posição central das fibras dos segmentos altos; a paralisia cruzada não está entre as síndromes que ele deduz dos tratos.",
-   "B": "**A anterior separa força de propriocepção.** Na síndrome anterior perdem-se força, dor e temperatura, com propriocepção preservada, sem a predominância nos braços.",
-   "D": "**A hemissecção divide por lados.** Na BROWN-SÉQUARD o déficit motor e proprioceptivo é de um lado e a perda de dor e temperatura, do outro; não há o padrão braço maior que perna."
+   "A": "**paralisia cruzada de BELL** é a armadilha da questão, porque é a outra síndrome que enfraquece mais os braços que as pernas. O Skeletal Trauma, 5ª ed. (cap. 33, p. 815), a descreve como síndrome cervicomedular rara, da junção do bulbo com a medula, que pode imitar a síndrome central mas atinge mais a parte proximal do membro superior. Seria a resposta numa lesão craniocervical (côndilo occipital, atlas, odontoide); como fraqueza dos braços no trauma raquimedular em geral, a resposta é a central, muito mais comum.",
+   "B": "**síndrome medular anterior** é a lesão dos dois terços anteriores da medula, território da artéria espinal anterior: perdem-se a força e a dor e a temperatura, com a propriocepção preservada pelas colunas dorsais, irrigadas pelas artérias posteriores (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48). A perda motora atinge braços e pernas sem o predomínio nos membros superiores. Seria a resposta se o enunciado descrevesse paralisia com propriocepção preservada.",
+   "D": "**síndrome de BROWN-SÉQUARD** é a hemissecção da medula, com o ferimento por arma branca como exemplo clássico. O déficit se divide por lados, não por altura: força e propriocepção somem do mesmo lado da lesão, porque esses tratos já cruzaram acima do forame magno, e dor e temperatura somem do lado oposto, porque o espinotalâmico cruza logo ao entrar (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48). Seria a resposta para um membro superior e um inferior fracos do mesmo lado."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seção sobre a medula cervical e as síndromes incompletas (Fig. 48-22)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1878",
+   "Skeletal Trauma: Basic Science, Management and Reconstruction, 5ª ed., cap. 33 (Craniocervical Injuries), p. 815",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "A medula cervical e as síndromes incompletas"
-     ],
-     "blocos": [
-      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
-      "a-medula-cervical-e-as-sindromes-incompletas-568b3953",
-      "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
-      "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "ad1e9df069b56836bf4761da00526200fd42462393773634911dc2f7d386d834"
-    }
-   ],
-   "questaoSha256": "1fde239c90e33a36132c6f957189df1f5123d472ae97dce3307bab91ae49546a",
-   "comentarioSha256": "b97f40846f01e313d19fd393cdccb54e17b672f55fb958eb630644d64ed7a98b"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/rwa10-48-22-w87.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48, Fig. 48-22, p. 1931. Corte transversal da medula com as áreas das síndromes incompletas: a hachura cobre a metade lesada na BROWN-SÉQUARD (fascículos grácil e cuneiforme, corticoespinhal e espinotalâmico lateral do mesmo lado), o azul marca a medular anterior e o círculo central, a centromedular.",
+    "largura": 900,
+    "altura": 794
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0252": {
   "conceito": "Na criança, o tipo de espondilolistese mais frequente não é o mais perigoso, e a banca vive dessa diferença. O ístmico (II) aparece mais; o displásico (I) é o que mais ameaça os nervos e o que mais progride. A explicação está em para onde vai o arco posterior quando L5 escorrega.\n\n**O que é o tipo I.** No displásico, a pars está intacta, mas as facetas superiores do sacro ou as inferiores de L5 são malformadas desde o nascimento (Campbell's Operative Orthopaedics, 15ª ed., cap. 42, Box 42.1, p. 1667). O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 11, p. 270), acrescenta que ele ocorre só em L5-S1, se associa com frequência a espinha bífida oculta de L5 e do sacro e é mais comum no sexo feminino.\n\n**Por que os nervos sofrem.** Com a faceta incompetente, L5 escorrega levando junto todo o arco, porque não há fratura que o separe do corpo. O arco intacto avança e estrangula o saco dural. O Tachdjian (p. 270) diz que, sem lise nem alongamento da pars, um escorregamento **acima de 25%** quase certamente produz déficit neurológico. O Campbell (cap. 42, p. 1667) diz o mesmo com outro número: o displásico tem maior risco de lesão neural porque o arco intacto cria estenose do canal com cerca de **50%** de escorregamento. No ístmico acontece o oposto: os elementos posteriores ficam no lugar (Tachdjian, Tabela 11.1, p. 271), o canal se alarga e o deslocamento pode ficar grande sem déficit. Quando o displásico também tem a pars alongada ou quebrada, ele ganha essa folga e pode escorregar muito sem sequela neurológica (p. 270).\n\n**A figura.** Na radiografia do Tachdjian (Fig. 11.2, p. 272), A é um displásico de alto grau: L5 bem à frente do sacro, com a pars posterior **alongada e intacta**. Em B, no AP, o corpo de L5 inclinado aparece visto de cima e desenha o chapéu de NAPOLEÃO invertido (setas).\n\n**Por que progride mais.** O capítulo 46 do Campbell (p. 1828) diz que a espondilolistese com displasia progride mais que a espondilolítica, e que a displasia da parte anterior do sacro é o que melhor se correlaciona com a progressão. Na linguagem de MARCHETTI e BARTOLOZZI, é a alta displasia, com risco diretamente proporcional ao grau de displasia (p. 1826). O Tachdjian completa: os displásicos mais graves se apresentam mais cedo, pela maior instabilidade lombossacra (p. 274), e o risco é maior abaixo dos 10 anos (p. 281).\n\n| Na criança | Displásico (I) | Ístmico (II) |\n|---|---|---|\n| Frequência | menor | a forma mais comum |\n| Pars | intacta (ou alongada) | lise por estresse |\n| Arco ao escorregar | vai junto e aperta a dura | fica para trás; canal alarga |\n| Déficit | quase certo acima de 25% sem lise | raro |\n| Progressão | maior | rara |\n\nO tipo I está na seção \"Tipo I, displásico: o mais perigoso para os nervos\" do resumo.",
@@ -4116,7 +4022,7 @@
       "a-medula-cervical-e-as-sindromes-incompletas-a692e1e8",
       "a-medula-cervical-e-as-sindromes-incompletas-86444940"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "2066394b670ccfbacec63d171d0ac5a045ee723fcc2d6a28f7136f4b8a7d60d2"
     }
    ],
@@ -4318,7 +4224,7 @@
       "compressao-explosao-e-teardrop-a3e0c6bc",
       "coluna-subaxial-classificacoes-e-estabilidade-8a83b113"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "df3152a68f4658de7f42989942558a2366f84c7518a99a99f7b3ba2ff3ddf45f"
     }
    ],
@@ -4362,7 +4268,7 @@
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "3f42ebb4bf49f4f463a1dd34b6914c9223ea20a56c592bf2a994f19fda8f6725"
     }
    ],
@@ -4511,7 +4417,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
     }
    ],
@@ -4553,7 +4459,7 @@
       "fratura-em-explosao-a3-e-a4-0ee57d4b",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "164ceb454cc03cbe5c800b7fd6c61de948fb8f2cc71e22a3f37fa2b0bcb73382"
     }
    ],
@@ -4655,7 +4561,7 @@
      "blocos": [
       "imagem-rastreio-radiografia-tomografia-e-ressona-f29e4abe"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "2ba91ede9a8f6ee2c7bc4be1215d9d8688e8b7190a6629efe49fad9e2cf226ee"
     }
    ],
@@ -4929,7 +4835,7 @@
       "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
       "anatomia-aplicada-e-biomecanica-cafff61f"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "35acf736991968e6e396f28c24f5ade2e06af2adef1822cd4a66b9fc9aba3ade"
     }
    ],
@@ -4969,7 +4875,7 @@
       "coluna-subaxial-classificacoes-e-estabilidade-a450a4bb",
       "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "d5ee803e01c84281ca14d5a55faf54ed41b30d8b3a5fd090ae0295908894274b"
     }
    ],
@@ -5164,7 +5070,7 @@
       "atlas-ligamento-transverso-e-instabilidade-c1-c2-0c61dc67",
       "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "54d53967ba26166a9739dfecd911d33add4611b43b3355cc5037200661c6864b"
     }
    ],
@@ -5514,7 +5420,7 @@
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "217885a50251a6a480299c9596940c11a3f2a2c0252581622d7bf7160743f5bd"
     }
    ],
@@ -5556,33 +5462,7 @@
   ],
   "conferido": false,
   "provavel": "A",
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Fratura do odontoide (C2)"
-     ],
-     "blocos": [
-      "fratura-do-odontoide-c2-623f1b6d",
-      "fratura-do-odontoide-c2-bc203da4",
-      "fratura-do-odontoide-c2-e392c5c7",
-      "fratura-do-odontoide-c2-b73258e7"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "11709a14e53090f7f2afc0daca485a03c85342e70429750202361a3e8df9885e"
-    }
-   ],
-   "questaoSha256": "aa799684b75f0915a6391d399127d6686669608cdd0f4637583b9ccf34a163ac",
-   "comentarioSha256": "eeb2246c455e872bd55b278295a98aa77f59865a4f47d493ddddf47df8c262b7"
-  }
+  "geradoEm": "2026-10-24"
  },
  "coluna-0353": {
   "conceito": "A frase da banca mistura duas verdades e uma conclusão errada. É verdade que o traumatizado de coluna deve ser examinado cedo; é verdade que o exame neurológico define o prognóstico. O erro está em juntar as duas: o exame das primeiras 24 horas, feito em pleno choque medular, é justamente o que não serve para prever a recuperação.\n\n**O que é o choque medular.** Não é choque hemodinâmico. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 47, p. 1887), descreve a perda de função **motora, sensitiva, reflexa e autonômica** abaixo da lesão, explicada pela perda do impulso aferente que mantém o arco reflexo funcionando; o capítulo 14 (p. 472) insiste que não é choque verdadeiro. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1875), fala em disfunção temporária com **paralisia flácida** e **ausência do reflexo anal e do bulbocavernoso**. Durante esse período, a medula abaixo da lesão fica silenciosa por inteiro, e uma lesão incompleta pode parecer completa. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 22, na parte sobre o prognóstico da lesão medular), diz isso com todas as letras: o choque medular pode durar 24 horas e **mascarar uma lesão incompleta**.\n\n**Quanto dura.** Os livros divergem, e a divergência reforça a resposta. O Campbell (p. 1873 e 1875) diz que termina em geral em **24 a 48 horas**; o Rockwood and Green (cap. 47, p. 1888) põe o fim **entre 48 horas e 2 semanas** e considera os padrões ASIA **pouco confiáveis nas primeiras 72 horas**. Pelos dois relógios, as primeiras 24 horas caem dentro do choque.\n\n**Como saber que acabou.** Pela volta do **bulbocavernoso**. Na figura, a compressão da glande dispara um arco que entra e sai pelos segmentos sacrais da medula e termina na contração do esfíncter anal. Como esse arco fica no ponto mais caudal da medula, no cone, e avalia **S2 a S4** (Rockwood and Green, cap. 47, p. 1888), ele é o relógio do choque. Pelo estudo de KO, os reflexos voltam numa ordem: plantar profundo, bulbocavernoso, cremastérico, aquileu, BABINSKI e patelar. O capítulo 49 (p. 2013 e 2014) acrescenta que bulbocavernoso de volta **hiperativo**, sem nenhuma outra função, sugere lesão **completa**.\n\n**Examinar cedo, sim; prever cedo, não.** O Campbell (cap. 48, p. 1873) pede o exame ASIA seriado **a cada 4 a 6 horas nas primeiras 24 horas**, para flagrar piora e orientar a conduta. E o mesmo livro (p. 1878) diz que nesse período o paciente costuma ainda estar em choque e que a classificação **AIS só pode ser definida depois que ele passa**. A previsão vem das generalizações do Campbell (p. 1878): quanto **maior a preservação** abaixo da lesão, melhor; quanto **mais cedo** a recuperação começa e mais rápido progride, melhor; **menos de 50 anos** vai melhor; e a melhora pode seguir por **12 a 15 meses**. Todas pressupõem um exame feito fora do choque e repetido no tempo.\n\nO tema está na seção \"Choque medular e o reflexo bulbocavernoso\" do resumo.",
@@ -5684,7 +5564,7 @@
       "fratura-do-enforcado-espondilolistese-traumatica-39545179",
       "fratura-do-enforcado-espondilolistese-traumatica-e49447e8"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "f26dcd8564a3eddacf653e7a306f4fdd15258bb7aefbbc482239c9d21f7a3700"
     }
    ],
@@ -5725,7 +5605,7 @@
       "compressao-explosao-e-teardrop-13a89876",
       "compressao-explosao-e-teardrop-a3e0c6bc"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "97a5dbaedc37695bd83b58fa2a92abec47de6f640a95d11e26564e46763e7e92"
     }
    ],
@@ -5870,7 +5750,7 @@
       "atendimento-inicial-e-exame-neurologico-a0387c5a",
       "atendimento-inicial-e-exame-neurologico-da838d62"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "9db9cd32e286721218ab51126e90e6fb616ff13c5fc12192d12c7e98a565e115"
     }
    ],
@@ -7386,7 +7266,7 @@
       "atlas-ligamento-transverso-e-instabilidade-c1-c2-0c61dc67",
       "coluna-subaxial-classificacoes-e-estabilidade-e46c437b"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "2b33ae6ebad91b4de523eb176e6e6919fb46dc46958f57bffd68090cfc6e60ee"
     }
    ],
@@ -7649,7 +7529,7 @@
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "a2803211da029d5a24d497a4a5ae4a70f7eeb17ff8f1c9627e38192f649bd3f5"
     }
    ],
@@ -7759,7 +7639,7 @@
       "fratura-do-odontoide-c2-bc203da4",
       "fratura-do-odontoide-c2-3622166b"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "8ed0e1b8b9bf20d3ab0f4a823e64b3903b3451776b264477293ef09b775b5ff1"
     }
    ],
@@ -7777,34 +7657,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Fratura do odontoide (C2)"
-     ],
-     "blocos": [
-      "fratura-do-odontoide-c2-623f1b6d",
-      "fratura-do-odontoide-c2-bc203da4",
-      "fratura-do-odontoide-c2-e392c5c7",
-      "fratura-do-odontoide-c2-b73258e7",
-      "fratura-do-odontoide-c2-3622166b"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "24dda99949704a52ac224f1f647a4c90aec2a30f0842764b079ba118039890c7"
-    }
-   ],
-   "questaoSha256": "7227f16d10de8944ea1bea39c77c7337e1bf8b8aa1fa10fe8390ec569bea0fcf",
-   "comentarioSha256": "641b1fe570fa1aaec28ece403aa1f4b68aba5b4492578afc4efb74282c6b9fe3"
-  }
+  "geradoEm": "2026-10-25"
  },
  "coluna-0465": {
   "conceito": "Este item junta um número e uma explicação, e os dois vêm do mesmo parágrafo do HEBERT (cap. 39, Fraturas do odontoide): com tratamento conservador, a pseudoartrose do tipo II varia de 26% a 80% na literatura, e esse risco elevado é atribuído à instabilidade da fratura. Para julgar o item é preciso entender por que justamente o tipo II, entre os três de ANDERSON e D'ALONZO, é o que não consolida.\n\n**Onde fica o traço.** Na figura do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, Fig. 48-39), a linha azul do tipo I corta só a ponta do dente; a do tipo II passa na **cintura**, a junção estreita entre o dente e o corpo de C2; a do tipo III desce para o **osso esponjoso do corpo**, larga, de um lado a outro. O tipo II é o pior lugar possível para consolidar: a superfície de contato é pequena, e o HEBERT situa o tipo II entre o ligamento transverso e o corpo do áxis, numa fratura que ele chama de relativamente instável.\n\n**As duas explicações dos livros, lado a lado.**\n\n| Livro | Por que o tipo II não consolida |\n|---|---|\n| HEBERT (cap. 39) | O risco elevado de pseudoartrose é atribuído à **instabilidade** da fratura; o tipo II é \"relativamente instável\" e fica numa **região de menor vascularização** |\n| Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1895) | A má capacidade de consolidação se deve à **pobre vascularização da base do dente** |\n| Rockwood (cap. 48, Odontoid Fractures) | Não discute a causa; mostra o resultado: o tipo III consolida bem imobilizado, o tipo II não |\n\nAs explicações se somam, e o HEBERT cita as duas. O item reproduz a do HEBERT, que é a fonte da questão.\n\n**Os números do Rockwood.** No halo, CLARK e WHITE viram **87%** de consolidação no tipo III e **66%** no tipo II; GREENE chegou perto de 100% no tipo III; na série de KOIVIKKO, o tipo II consolidou em **menos de 50%**. Numa série de 340 fraturas de C2, a pseudoartrose do tipo II se aproximou de **30%**. No idoso, KOECH viu consolidação óssea em 50%, mas estabilidade radiográfica em 90%: a pseudoartrose fibrosa estável muitas vezes basta. O Campbell (p. 1896) diz que, com redução anatômica mantida, a consolidação com preservação do movimento pode ser esperada em 50% a 60%, e que a pseudoartrose é o resultado mais comum do tratamento sem cirurgia no idoso, mas frequente também no jovem.\n\n**A faixa larga.** Nenhum dos três livros traz o intervalo de 26% a 80% fora do HEBERT, mas os números que eles citam cabem nele: 34% de falha no halo de CLARK e WHITE, mais de 50% na série de KOIVIKKO. A amplitude reflete séries com idades, desvios e imobilizações diferentes.\n\nA diferença entre o tipo II e o tipo III está na seção \"Por que o tipo II não consolida, e o tratamento sem cirurgia\" do resumo.",
@@ -8546,7 +8399,7 @@
       "atendimento-inicial-e-exame-neurologico-cef312c6",
       "atendimento-inicial-e-exame-neurologico-bcf22ac5"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "8ed3338738e8fb97c12268c4eff2d18838ff708f1e2d717eafc5cf1280e13a10"
     },
     {
@@ -8564,7 +8417,7 @@
       "exame-neurologico-choque-neurogenico-choque-medu-63c9c09c",
       "exame-neurologico-choque-neurogenico-choque-medu-717b321e"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "d6b801adec1583097d168393182c51b833ba58660584fd49e613a072e3d20371"
     }
    ],
@@ -8604,7 +8457,7 @@
       "exame-neurologico-choque-neurogenico-choque-medu-acb3781c",
       "exame-neurologico-choque-neurogenico-choque-medu-cc51fb25"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "9c74e979ea800d430c624e5fa412ef04a6852d17f68dd786218804d73d34ec18"
     }
    ],
@@ -8645,7 +8498,7 @@
       "exame-neurologico-choque-neurogenico-choque-medu-2a5de0df",
       "exame-neurologico-choque-neurogenico-choque-medu-e152ac2d"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "807cc6a0cc4e0bdc48b6b0dc367e63ecdb82a5c607b173c36c8c41e34c091cec"
     }
    ],
@@ -8697,7 +8550,7 @@
       "corticoide-e-o-momento-da-cirurgia-8146bd9a",
       "corticoide-e-o-momento-da-cirurgia-56b99beb"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "7e76d1df76f21851a3023b18b69cc8c49c2bdddc0ef1d3517dcfc8f334978454"
     }
    ],
@@ -8735,7 +8588,7 @@
       "corticoide-e-o-momento-da-cirurgia-ae16a777",
       "corticoide-e-o-momento-da-cirurgia-66097675"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "6090220c491e182deaf09c4a93aec9bafe17ea07f4844848b6664a4000544bec"
     }
    ],
@@ -8791,7 +8644,7 @@
       "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
       "imagem-rastreio-radiografia-tomografia-e-ressona-be0401de"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "6bf179c41734e977201ba357483beaeb214260be8aa9db925fc87da9282b72fd"
     }
    ],
@@ -8833,7 +8686,7 @@
       "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
       "juncao-occipitocervical-e-condilo-occipital-37f370ae"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "1197443e949925e9ffc08df19ae6de0597c7fecee1c34981174f1d45f4a40822"
     }
    ],
@@ -8872,7 +8725,7 @@
       "coluna-subaxial-classificacoes-e-estabilidade-a450a4bb",
       "compressao-explosao-e-teardrop-c61e3e01"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "eb50a5f1fbe9d068bba74a3aec925c0998316b27ded85450f975c2eb1d87ca29"
     }
    ],
@@ -8914,7 +8767,7 @@
       "luxacao-facetaria-reducao-fechada-e-cirurgia-297fff2e",
       "luxacao-facetaria-reducao-fechada-e-cirurgia-1fc63b34"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "444fca4c9f165ae9a8910ad2fea92ed212eaad79a8890a12e4014699a4c5506f"
     }
    ],
@@ -8952,7 +8805,7 @@
       "juncao-occipitocervical-e-condilo-occipital-936e270d",
       "juncao-occipitocervical-e-condilo-occipital-dc39d9e1"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "56cd19719c5813e49b6344c41ad2b348e8c01a7d1f482a8d266f98d18d21e775"
     }
    ],
@@ -8991,7 +8844,7 @@
       "orteses-halo-e-tracao-9034234b",
       "luxacao-facetaria-reducao-fechada-e-cirurgia-a24fa746"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "5e108b0a6efd50696f771c6d5d3d4038eaf4e182750439683397511d819880f5"
     }
    ],
@@ -9028,7 +8881,7 @@
      "blocos": [
       "lesao-da-arteria-vertebral-e72216c9"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "4ce714ebe309b3bd57bb3bfda2287dea32a01234b31f83e1c0bf99ecb986202c"
     }
    ],
@@ -9069,7 +8922,7 @@
       "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc",
       "a-medula-cervical-e-as-sindromes-incompletas-0d50e411"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "6745d148efa2640fef7b88b00e9626fc1488c6bb67f1863eb48da5101e5c0530"
     }
    ],
@@ -9110,7 +8963,7 @@
       "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
       "juncao-occipitocervical-e-condilo-occipital-37f370ae"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "83d5ca55eace1574e0a0dc489a8e140257f0beb70e902852a6aa1fa3ae0bb9af"
     }
    ],
@@ -9150,7 +9003,7 @@
       "atlas-ligamento-transverso-e-instabilidade-c1-c2-7236e480",
       "juncao-occipitocervical-e-condilo-occipital-dc39d9e1"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "52f8f5b6a9e7d9e318767941707fcb03aa0e405a5d6f66f591979c2ba4085324"
     }
    ],
@@ -9170,35 +9023,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Fratura do odontoide (C2)"
-     ],
-     "blocos": [
-      "fratura-do-odontoide-c2-4660967c",
-      "fratura-do-odontoide-c2-b60ceadc",
-      "fratura-do-odontoide-c2-dd277a76",
-      "fratura-do-odontoide-c2-95546c7a",
-      "fratura-do-odontoide-c2-e392c5c7",
-      "fratura-do-odontoide-c2-feeecbd6"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "7d2a7c002edb30582ba7d56d29d551e8aacc7c07b602dac0b4436d1fc7953588"
-    }
-   ],
-   "questaoSha256": "4f4f7018a1f19a63d26b897c71e15ea14f765c242ac42190b247b6d4444eb674",
-   "comentarioSha256": "60d3d97f9a23bdba1319b96a7a74f952de349c540709c26d268974b8ea0cef35"
-  }
+  "geradoEm": "2026-10-25"
  },
  "coluna-0526": {
   "conceito": "A paciente tem 84 anos, várias comorbidades e baixa demanda funcional, mas não tem déficit neurológico. A decisão não pode ser tomada apenas porque a fratura do odontoide é tipo II e está desviada. **No algoritmo dos autores, acima de 80 anos prefere-se imobilização externa, salvo déficit neurológico**, aceitando em casos selecionados uma pseudartrose estável.\n\nO objetivo não é buscar união óssea a qualquer custo. O resumo descreve idosos que não consolidaram completamente, mas alcançaram estabilidade radiográfica, e ressalta os riscos do halo e da cirurgia nessa população. Uma união fibrosa estável pode ser um resultado útil num paciente de baixa demanda, desde que não seja confundida com instabilidade progressiva ou comprometimento neurológico (Rockwood, 10ª ed., cap. 48, “O idoso e o algoritmo dos autores”).\n\n**Imobilização externa também não significa escolher automaticamente halo.** O capítulo associa o halo no idoso a complicações respiratórias e de deglutição e descreve resultados aceitáveis com colar. Os estudos são heterogêneos, e não fornecem uma taxa universal para toda pessoa de 84 anos.\n\nA alternativa B traduz a preferência dos autores para o perfil do caso. Essa preferência não deve ser estendida a um paciente com déficit, perda de alinhamento ou outra condição que mude o balanço entre proteção e risco terapêutico.\n\n> **Na prova:** idoso muito avançado, baixa demanda e sem déficit: o algoritmo favorece tratamento externo, sem exigir consolidação a qualquer custo.\n\n**Por que esta questão foi criada.** Treina a distinção entre união óssea e estabilidade útil, incluindo como fragilidade e demanda mudam a conduta.",
@@ -9233,7 +9058,7 @@
       "fratura-do-odontoide-c2-4660967c",
       "fratura-do-odontoide-c2-7b5d651c"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "cf4303b7116fdbda9b7a1df74267a555d5d4035392aedea796255a49d2683198"
     }
    ],
@@ -9275,7 +9100,7 @@
       "fratura-do-enforcado-espondilolistese-traumatica-39545179",
       "fratura-do-enforcado-espondilolistese-traumatica-e49447e8"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "d2a0ea46d772bbd3ff5bfedd09aad9273fc7430ff658c3149291ac3640b4c65d"
     }
    ],
@@ -9318,7 +9143,7 @@
       "fratura-do-enforcado-espondilolistese-traumatica-39545179",
       "fratura-do-odontoide-c2-623f1b6d"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "b2356061b20c452c2e09d865ea79ddd92336f34e6f4734653168d56926644695"
     }
    ],
@@ -9359,7 +9184,7 @@
       "compressao-explosao-e-teardrop-a3e0c6bc",
       "compressao-explosao-e-teardrop-67661639"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "4e3e890d7412f23b3fdaedc8c6b8a81adb1c3efce796fbb65e7702fb38ef6d4c"
     }
    ],
@@ -9400,7 +9225,7 @@
       "coluna-subaxial-classificacoes-e-estabilidade-c01dd9e0",
       "compressao-explosao-e-teardrop-fdb87144"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "030924c8a979a679183a73960c68b881794ce114c4bd4479ca020a0f75e6998e"
     }
    ],
@@ -9439,7 +9264,7 @@
       "coluna-anquilosada-e-outras-lesoes-6a639f02",
       "imagem-rastreio-radiografia-tomografia-e-ressona-28ea5f3c"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "505dd063c22a8041c8383a4a4ff870eb417a22113fa52aa9ddb19cc350af3ab6"
     }
    ],
@@ -9448,45 +9273,28 @@
   }
  },
  "coluna-0532": {
-  "conceito": "O caso é o retrato da síndrome medular central: idoso com estenose degenerativa, queda batendo a testa (hiperextensão), tomografia sem fratura nem luxação e mãos e braços muito mais fracos que as pernas. A banca não pergunta o nome, pergunta o porquê.\n\n**Onde ficam as fibras.** O Rockwood and Green (10ª ed., cap. 48) explica que, na **substância cinzenta**, as fibras que servem os **segmentos mais altos** ficam mais **centrais**. Uma lesão que nasce no centro da medula, como a da hiperextensão sobre um canal estreito, atinge primeiro as fibras dos braços e das mãos. As fibras dos segmentos lombares e sacrais ficam mais para fora e são relativamente poupadas.\n\n**Por que o canal estreito importa.** No idoso espondilótico, o canal já tem pouco espaço; a hiperextensão aperta a medula entre os osteófitos na frente e o ligamento amarelo atrás, sem precisar quebrar osso. É a forma mais comum de lesão medular sem instabilidade na coluna espondilótica.\n\n**Como a anatomia elimina as outras explicações.** A oclusão da artéria espinal anterior produz a síndrome anterior, com perda de força e dor e propriocepção preservada, sem predomínio nos braços. E o quadro não é radicular: há uma lesão medular, com distribuição pelos segmentos dentro da medula.\n\n> **Na prova:** braços piores que pernas porque as fibras dos segmentos altos ficam no centro da medula; idoso, estenose e hiperextensão.",
-  "correta": "**A: as fibras dos membros superiores ficam mais centrais na medula.** É a organização descrita no capítulo que explica a síndrome central: a lesão por hiperextensão sobre o canal estreito começa no centro e pega primeiro as fibras dos braços.",
+  "conceito": "O caso clínico é a síndrome medular central sem tirar nem pôr, e a banca nem pede o nome: pede o porquê do padrão. Quem souber onde ficam as fibras das mãos dentro da medula, e o que a hiperextensão faz com um canal estreito, responde sem hesitar.\n\n**O cenário.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), descreve a lesão medular sem instabilidade na coluna espondilótica ou congenitamente estreita como, quase sempre, síndrome central: déficit motor e sensitivo **maior nos membros superiores**, às vezes com alteração das pernas, da bexiga e do intestino, e **sem fratura, luxação nem lesão ligamentar** na imagem. A estenose prévia aumenta o risco de lesão neural com movimentos bruscos do pescoço que não bastariam para quebrar osso ou romper ligamento.\n\n**Como a medula é ferida sem fratura.** A figura do Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, Fig. 48.7, p. 1879), mostra o mecanismo em A: no idoso com artrose, a hiperextensão **pinça a medula** entre o complexo de disco e osteófitos na frente e o **ligamento amarelo dobrado** e a lâmina atrás (p. 1878). O canal disponível importa: na série de KANG citada pelo Rockwood, o espaço para a medula media em média **10,5 mm** nas lesões completas, **13 mm** nas incompletas e perto de **17 mm** sem déficit.\n\n**Por que as mãos.** Em B, a mesma figura marca a zona central lesada. O Rockwood explica a somatotopia: na substância cinzenta, as fibras dos segmentos **mais altos** ficam no **centro**; nos tratos corticoespinhais, as cervicais ficam na porção **interna, anteromedial**, e as lombares e sacrais, por fora. A lesão que nasce no centro pega primeiro as fibras dos braços e das mãos, e as das pernas, periféricas, sofrem menos. O Campbell (p. 1878) completa: o déficit é maior **distal** que proximal, e a sensibilidade sacral costuma ficar preservada, porque as fibras sacrais são as mais externas.\n\n**Como a anatomia elimina as outras explicações.** Em D, a figura mostra a síndrome anterior: os dois terços anteriores, território da **artéria espinal anterior**, com as colunas dorsais poupadas pelas duas artérias posteriores. É outro quadro, com perda de força, dor e temperatura nos quatro membros e propriocepção preservada. E a inversão da somatotopia, com as fibras das pernas no centro, levaria ao padrão oposto ao do enunciado.\n\n**O que esperar.** Pelo Campbell (p. 1878), é a síndrome incompleta mais comum e a de melhor prognóstico. O Rockwood lista como favoráveis a **idade jovem**, a boa função motora na chegada e a ausência de alteração de sinal na medula; os autores observam 2 a 3 dias depois do fim do choque medular e só descomprimem se não houver recuperação.\n\n**Por que esta questão foi criada.** As provas cobram a síndrome central pelo nome; esta questão força o passo seguinte, a somatotopia, que é o que permite reconhecer a síndrome mesmo quando o enunciado troca as palavras ou inverte a organização das fibras.\n\n> **Na prova:** idoso + estenose + testa batida + mãos fracas = **síndrome central**; fibras cervicais no centro, sacrais por fora.\n\nA organização dos tratos está nas seções \"Os tratos e para que lado cada um cruza\" e \"Síndrome medular central\" do resumo.",
+  "correta": "**A) as fibras dos membros superiores ficam mais centrais na medula, mais expostas à lesão central por hiperextensão.** É a explicação do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48): na substância cinzenta e nos tratos corticoespinhais, as fibras dos segmentos cervicais são centrais e anteromediais. A hiperextensão sobre o canal estreito lesa o centro da medula, pinçada entre osteófitos e ligamento amarelo (Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1878), e as mãos e os braços sofrem mais que as pernas.",
   "incorretas": {
-   "B": "**Inverte a somatotopia.** As fibras dos membros inferiores ficam por fora, e não no centro. Elas são poupadas justamente por estarem mais periféricas.",
-   "C": "**Não é lesão de raiz.** O quadro é medular, de síndrome central, sem fratura nem luxação; uma lesão radicular bilateral de C5 a T1 não explica a apresentação típica descrita no capítulo.",
-   "D": "**É a síndrome anterior.** A oclusão da artéria espinal anterior tira força, dor e temperatura e poupa as colunas dorsais, mas não produz o padrão de braços mais fracos que pernas."
+   "B": "**as fibras dos membros inferiores ficam no centro da medula e são poupadas pela compressão periférica** inverte a somatotopia que o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), descreve: as fibras lombares e sacrais ficam **por fora** no corticoespinhal, e é por isso que a sensibilidade sacral costuma sobrar na síndrome central (Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1878). Além disso, a lesão por hiperextensão no canal estreito é central, não periférica; se as fibras das pernas estivessem no centro, elas é que ficariam mais fracas.",
+   "C": "**a lesão compromete as raízes de C5 a T1 dos dois lados, sem lesão medular** não explica o quadro. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), descreve nesse cenário uma lesão da medula, que pode atingir também as pernas, a bexiga e o intestino, o que nenhuma lesão de raiz cervical produz. Uma radiculopatia bilateral dessa extensão exigiria compressão foraminal em vários níveis, e os livros não a descrevem como consequência da queda com hiperextensão.",
+   "D": "**a oclusão da artéria espinal anterior poupa as colunas dorsais** é uma frase verdadeira, mas descreve a síndrome medular anterior: perda de força, dor e temperatura nos dois terços anteriores, com propriocepção preservada pelas artérias posteriores (Campbell's Operative Orthopaedics, 15ª ed., cap. 48, Fig. 48.7 D). Esse quadro atinge braços e pernas sem predomínio dos membros superiores, e o mecanismo é vascular ou de flexão, não a hiperextensão sobre a estenose do enunciado."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções sobre a medula cervical e a lesão sem instabilidade na coluna espondilótica",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1878 e 1879 (Fig. 48.7)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "A medula cervical e as síndromes incompletas"
-     ],
-     "blocos": [
-      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
-      "a-medula-cervical-e-as-sindromes-incompletas-568b3953",
-      "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
-      "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
-      "a-medula-cervical-e-as-sindromes-incompletas-5cd2ecb0"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "18fc1957f04e2277cf605e95e5fd5c2b49338a58e15d175f32c18246502f4317"
-    }
-   ],
-   "questaoSha256": "1562e5a9d5c65ed9dc8d1468e9033bb9575e01126aa4461b604ebd51caa17b46",
-   "comentarioSha256": "1a75b59a9afd80f829079d8eac2c5fbf5d2402601ed365ae81afb3d47d6c0d97"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/campbell15-48-7-w32.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 48, Fig. 48.7, p. 1879. Lesões da medula cervical: em A, a medula do idoso pinçada entre o disco e os osteófitos na frente e o ligamento amarelo dobrado atrás; em B, o centro da medula lesado na síndrome central; em C, a hemissecção de BROWN-SÉQUARD; em D, a síndrome anterior, no território da artéria espinal anterior.",
+    "largura": 935,
+    "altura": 854
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0533": {
   "conceito": "A fratura está em T12–L1 e o paciente tem anestesia em sela, retenção urinária e sinais motores mistos nos membros inferiores. O conjunto aponta para o **cone medular**, na transição entre medula e raízes.\n\nNo adulto, o resumo situa o afilamento final da medula entre T11 e L1 e a terminação medular em L1. A lesão nessa região pode combinar sinais de primeiro e segundo neurônio motor, déficits nos membros inferiores e alterações vesicais, intestinais e sexuais. É essa combinação, e não apenas o número de uma vértebra, que localiza o caso (Rockwood, 10ª ed., cap. 49, “O cone medular e a cauda equina”).\n\n**A cauda equina contém raízes, não medula.** Por isso chamá-la de lesão isolada não explica tão bem os sinais mistos apresentados. Os sintomas esfincterianos precisam ser pesquisados ativamente; o capítulo adverte que uma disfunção vesical pode passar despercebida quando o paciente já chega sondado.\n\nAs síndromes central e anterior são padrões de lesão medular incompleta definidos por outras dissociações: predomínio de fraqueza nos braços na central e perda motora/dolorosa/térmica com propriocepção preservada na anterior. Não são a melhor localização para o conjunto em sela e esfincteriano descrito.\n\n> **Na prova:** transição toracolombar, sinais mistos e anestesia em sela com disfunção vesical: cone medular.\n\n**Por que esta questão foi criada.** Treina a localização pela associação de achados, incluindo uma função vesical que pode ficar oculta pela sondagem.",
@@ -9519,7 +9327,7 @@
       "exame-neurologico-choque-neurogenico-choque-medu-8ef645cd",
       "exame-neurologico-choque-neurogenico-choque-medu-e82f8763"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "193386c115032948d7cabea6f59b1371391145f1936d659336d3f36b78af7750"
     },
     {
@@ -9535,7 +9343,7 @@
       "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
       "a-medula-cervical-e-as-sindromes-incompletas-0d50e411"
      ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
+     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
      "trechosSha256": "c3910fbc80a98b1ff34417f19674ea8463ee5d5672a8f961b97b3dacfcee319b"
     }
    ],
@@ -9574,7 +9382,7 @@
       "fratura-em-explosao-a3-e-a4-c49f544e",
       "fratura-em-explosao-a3-e-a4-b87f9844"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "1676a22753aded736973a81df067a470f86091a8354e3f3bb87d49caf1ff5f47"
     }
    ],
@@ -9616,7 +9424,7 @@
       "fratura-em-explosao-a3-e-a4-0ee57d4b",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "180a13a263b93a6bc1fe831c48dab5b9efec1f9f5d9daa09ef22fb5613fc3da5"
     }
    ],
@@ -9657,7 +9465,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-6c104b05",
       "fratura-em-explosao-a3-e-a4-0ee57d4b"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "6930f588b46c7253d1562cc1aa97deb163312f64486c36a7d46f7e7df8618f7e"
     }
    ],
@@ -9696,7 +9504,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
     }
    ],
@@ -9737,7 +9545,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e",
       "imagem-radiografia-tomografia-e-ressonancia-00da61c5"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "8387f9dec68ba4696aee5f59894a0d38b36218d64062568647a1ad8091d380f3"
     }
    ],
@@ -9776,7 +9584,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-7386528b",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-23ee6f2e"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "c2cfb1ee2448422a5c90116d10ca95770c2a5e41347e3ee6a0bb58b66bcad48f"
     }
    ],
@@ -9814,7 +9622,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "7ad571ac8b71f84b6a5dd0ee74556e3b48dc5991c1385bd16cb40eef81ded072"
     }
    ],
@@ -9855,7 +9663,7 @@
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-98583230",
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "d7f8fbea10b5401920c4da26c023d20e67897f28d83db4baa82c90ceb089faea"
     }
    ],
@@ -9893,7 +9701,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-75adfcad",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-0befb28f"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "7ad571ac8b71f84b6a5dd0ee74556e3b48dc5991c1385bd16cb40eef81ded072"
     }
    ],
@@ -9934,7 +9742,7 @@
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bfb780b2",
       "exame-neurologico-choque-neurogenico-choque-medu-544e5be0"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "3f9ddbae7a45c656a81e553612ced37ef143c78f1b46f8488e2d2e7bde827441"
     }
    ],
@@ -9974,7 +9782,7 @@
       "fratura-em-explosao-a3-e-a4-9340101a",
       "fratura-em-explosao-a3-e-a4-ff3a6d02"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "c979e964f2a319b0e6e599a93d9523e96caa700441dfa3aee68bebeec6613711"
     }
    ],
@@ -10013,7 +9821,7 @@
       "fratura-em-explosao-a3-e-a4-cdbe316d",
       "fratura-em-explosao-a3-e-a4-2ee7fe69"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "472784355d2ead7d006d9a326942aac3fff0babe1077968a28016cc0bf4496e0"
     }
    ],
@@ -10050,7 +9858,7 @@
      "blocos": [
       "fratura-em-explosao-a3-e-a4-7ed529c3"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "245f6a3b3edd4edb77ea7cb88bff6ee14f41c28f11df9b0f604587fe4f389c78"
     }
    ],
@@ -10090,7 +9898,7 @@
       "classificacoes-estabilidade-denis-ao-spine-e-tli-9bbe9701",
       "classificacoes-estabilidade-denis-ao-spine-e-tli-e679772b"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "19eb5efcd4905b171c04292bf3a3144db9b22b343e2c2a3b2942bc715397fea6"
     }
    ],
@@ -10130,7 +9938,7 @@
       "vias-de-acesso-e-a-arteria-de-adamkiewicz-ee713415",
       "vias-de-acesso-e-a-arteria-de-adamkiewicz-6062370a"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "12292a553af8d2600c60b11bc64d23aa3ace0105de6a9c7c10d6ec0cf7e96927"
     }
    ],
@@ -10170,7 +9978,7 @@
       "fratura-em-explosao-a3-e-a4-2ee7fe69",
       "fratura-em-explosao-a3-e-a4-0266d7dc"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "0f6f1bf19275cf28b8d372319e3c617442c55338d427d07657140887ef12dfbc"
     }
    ],
@@ -10208,7 +10016,7 @@
       "fratura-em-explosao-a3-e-a4-83eadb46",
       "fratura-em-explosao-a3-e-a4-94baf03f"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "ea15694aee2e8a7820d4320b2b8db1e2bb1bc119584257896d844c441d8e156f"
     }
    ],
@@ -10247,7 +10055,7 @@
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-a4dcbec6",
       "flexao-distracao-e-fratura-de-chance-tipo-b1-e-b-14966667"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "3742aeb7b1da840b08dc87b11e028825df578099b8e8565d858f6ba495dc7bad"
     }
    ],
@@ -10288,7 +10096,7 @@
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-75675a14",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-8a7ae7fd"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "467cb26146cab2ee8de00a1476adc3c2982f09022605c8c541942d38de6c75ab"
     }
    ],
@@ -10326,7 +10134,7 @@
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-bc9923f1",
       "hiperextensao-na-coluna-anquilosada-b3-e-fratura-55b5ca1f"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "0d21661c066907981d016ca72f69311ca1560da48380f2c611bf074d1c098b9b"
     }
    ],
@@ -10368,7 +10176,7 @@
       "fratura-vertebral-osteoporotica-e-cimentacao-6bf668dc",
       "fratura-vertebral-osteoporotica-e-cimentacao-80a53563"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "cc87f4ff77a2eacacb1eea0e9643eb9ccfddcccd5e3769b3bac2409304416897"
     }
    ],
@@ -10410,7 +10218,7 @@
       "fratura-vertebral-osteoporotica-e-cimentacao-98a46ecf",
       "fratura-vertebral-osteoporotica-e-cimentacao-2ddf7fb9"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "5651d909a4568e4ca74ea15d2005d2a0d9fc30ded9c1afd01c0a5f8934adf867"
     }
    ],
@@ -10448,7 +10256,7 @@
       "ferimento-da-coluna-por-arma-de-fogo-0b91ee1f",
       "ferimento-da-coluna-por-arma-de-fogo-0722ff3c"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "0f57e620408ef490a91c3edbfd78ddba96a8aba4e07d0210aceeec1ba1bfa786"
     }
    ],
@@ -10485,7 +10293,7 @@
      "blocos": [
       "complicacoes-e-deformidade-tardia-101042d6"
      ],
-     "sha256": "5a123e1ad509fe4d13680308c3e2bd64a3d00e6ddb84c89d0e817d67c9cc5699",
+     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
      "trechosSha256": "e2dfa1034d5a9b0541163c12c19aa12e589c5fed7dd7035448396938ac744e92"
     }
    ],

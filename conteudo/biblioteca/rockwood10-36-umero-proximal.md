@@ -1,6 +1,6 @@
 ---
 id: rockwood10-36-umero-proximal
-versao: 2
+versao: 3
 titulo: Fratura do úmero proximal
 especialidade: trauma
 acesso: gratis
@@ -296,6 +296,8 @@ armadilha: Tubérculo maior: o problema dele é consolidar desviado, não deixar
 O **tubérculo maior** consolidado para **trás e medial** bloqueia a **rotação externa**; para **cima**, bloqueia a abdução e causa impacto. O **tubérculo menor** desviado bloqueia a **rotação interna**, enfraquece o subescapular e pode instabilizar o ombro para frente. A viciosa entre cabeça e diáfise do **colo cirúrgico** raramente incapacita; a dos padrões varo e valgo pode causar impacto.
 
 No tratamento, o capítulo é direto: a **osteotomia do tubérculo** deve ser evitada sempre que possível, porque o fragmento pode não consolidar, e a necessidade de osteotomia na prótese anatômica está associada a **mau prognóstico**. No idoso com osso fraco, a **reversa** é considerada.
+
+O Campbell 15 (cap. 63, p. 2878-2879) dá a escada pelo desvio do tubérculo maior. Se a queixa principal é dor e impacto com pouca perda de movimento, retiram-se as saliências ósseas: **acromioplastia** e **tuberculoplastia** (que podem ser artroscópicas) para desvio de **1,0 a 1,5 cm**; acima de **1,5 cm**, **osteotomia e redução do tubérculo**. Na artroplastia por sequela, a osteotomia do tubérculo maior piora o resultado: numa série, **41%** evoluíram com pseudartrose, viciosa ou reabsorção do tubérculo, e em outra nenhum paciente osteotomizado passou de 90 graus de elevação ativa. A **reversa** tem lugar na viciosa dos tubérculos com ou sem insuficiência do manguito, com aumento do Constant, da flexão e da rotação externa nas sequelas tipo IV de BOILEAU, mas com luxações que exigiram revisão; a viciosa do tubérculo maior está na lista de indicações da reversa (Campbell 15, cap. 13, p. 606).
 
 !questoes central=trauma-0785 treino=ombro-cotovelo-0622
 conceito: Na viciosa do tubérculo maior, a osteotomia do tubérculo associada à prótese anatômica tem pior prognóstico; a reversa é opção, sobretudo no idoso.

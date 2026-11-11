@@ -1,6 +1,6 @@
 ---
 id: rockwood10-66-talus
-versao: 2
+versao: 3
 titulo: Fraturas do tálus e do calcâneo
 especialidade: trauma
 acesso: gratis
@@ -351,7 +351,7 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67), pede de saída o
 !tabela O que cada incidência mostra no calcâneo
 | Incidência | Técnica | O que mostra |
 | --- | --- | --- |
-| Perfil | do retropé | perda de altura, depressão e rotação da faceta; **BÖHLER** (normal **25 a 40 graus**) cai e **GISSANE** aumenta; separa língua de depressão |
+| Perfil | do retropé | perda de altura, depressão e rotação da faceta; **BÖHLER** (normal **25 a 40 graus** no Rockwood, cap. 67; **20 a 40 graus** na Fig. 93.4 do Campbell, cap. 93) cai e **GISSANE** aumenta; separa língua de depressão |
 | Axial de HARRIS | do calcanhar | **perda de altura, aumento da largura, rotação do fragmento sustentacular, angulação da tuberosidade** (varo) |
 | AP e oblíqua do pé | padrão | processo anterior e **calcaneocubóidea** (traço chega a ela em até 48%) |
 | BRODEN | perna em rotação interna (Rockwood: 30 a 40 graus, raio a 40, 30, 20 e 10 graus cranial; Campbell: 40 graus, raio 10 a 15 graus cefálico) | **faceta posterior da subtalar** |

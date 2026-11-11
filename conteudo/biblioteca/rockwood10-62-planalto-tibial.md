@@ -1,6 +1,6 @@
 ---
 id: rockwood10-62-planalto-tibial
-versao: 1
+versao: 2
 titulo: Fratura do planalto tibial
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 62 · Tibial Plateau Fractures
 autores: Hemil Maniar e Daniel S. Horwitz
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (plato_tibial.pdf, 34 páginas, todas do capítulo 62)
+fonte: Capítulo enviado pelo Tales em 17/10/2026 (plato_tibial.pdf, 34 páginas, todas do capítulo 62); consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (p. 28 e 29, Fig. 1.40). As páginas citadas são as impressas.
 subtemas: Fratura do planalto tibial
 resumo: Menisco lateral e LCA, SCHATZKER (IV como luxação), LUO, HOHL e MOORE, cisalhamento posteromedial com placa antideslizante, vias anterolateral, posteromedial e posterolateral, preenchimento da falha, duas placas e fixador em etapas.
 ---
@@ -192,12 +192,13 @@ armadilha: Uma coluna para a depressão lateral pura: LUO conta a cortical rompi
 
 ## KFURI e SCHATZKER: fora do capítulo
 
-O TARO 2020 e o TARO 2024 perguntaram, com quase o mesmo texto, os dois marcos que KFURI e SCHATZKER usaram para dividir o planalto em zona anterior e posterior no plano coronal (limite posterior da cabeça da fíbula e limite posterior da inserção do LCM). **O capítulo 62 não traz essa atualização.** O que ele traz é a mesma preocupação: a visão axial da tomografia e o lado posterior do planalto, pelo conceito de LUO.
+O TARO 2020 e o TARO 2024 perguntaram, com quase o mesmo texto, os dois marcos que KFURI e SCHATZKER usaram para dividir o planalto em zona anterior e posterior no plano coronal; o gabarito oficial das duas provas foi o **limite anterior da cabeça da fíbula** e o **limite posterior da inserção do LCM**. **O capítulo 62 não traz essa atualização**, e nenhum dos livros do acervo (Rockwood, Campbell 15, Skeletal Trauma, HEBERT) a descreve; o dado vem só das provas. O que ele traz é a mesma preocupação: a visão axial da tomografia e o lado posterior do planalto, pelo conceito de LUO.
 
 !questoes central=trauma-1036,trauma-0018
-conceito: KFURI e SCHATZKER dividem o planalto em zonas anterior e posterior pelos limites posteriores da cabeça da fíbula e da inserção do LCM (dado fora do capítulo 62).
-como: Par cruzado nas duas provas: limite anterior ou posterior da cabeça da fíbula com limite anterior ou posterior da inserção do LCM; a resposta foi a mesma (posterior e posterior) em 2020 e 2024.
-armadilha: Posterior da fíbula com anterior do LCM: mistura os dois limites.
+conceito: KFURI e SCHATZKER dividem o planalto em zonas anterior e posterior pelo limite anterior da cabeça da fíbula e pelo limite posterior da inserção do LCM, segundo o gabarito oficial do TARO 2020 e do TARO 2024 (dado fora do capítulo 62 e dos livros do acervo).
+como: Par cruzado nas duas provas: limite anterior ou posterior da cabeça da fíbula com limite anterior ou posterior da inserção do LCM; a resposta foi a mesma (anterior da fíbula e posterior do LCM) em 2020 e 2024.
+armadilha: Posterior da fíbula com posterior do LCM: troca o marco lateral; o gabarito usa a borda anterior da cabeça da fíbula.
+armadilha: Posterior da fíbula com anterior do LCM: inverte os dois limites.
 !fim
 
 ## HOHL e MOORE: as fraturas-luxações
@@ -447,10 +448,13 @@ alerta: Na questão sem ano de LOBENHOFFER (trauma-0910), o gabarito é a osteot
 
 O TEOT 2021 perguntou o que a via anterolateral estendida inclui para ampliar a visão articular (osteotomia do epicôndilo lateral com o LCL e o tendão do poplíteo). **O capítulo 62 não descreve essa via**; ele descreve a anterolateral com artrotomia submeniscal e distrator femoral e as vias posteriores. A osteotomia do tubérculo de GERDY e a da cabeça da fíbula, distratores da questão, aparecem em outros contextos (o tubérculo é marco da incisão anterolateral; a cabeça da fíbula, das vias transfibulares).
 
+O Campbell 15 (cap. 1) descreve as duas ampliações laterais. Na p. 29, para chegar ao canto posterolateral do planalto, a opção de **YOON** é soltar o **ligamento colateral lateral com um fragmento do epicôndilo lateral do fêmur**, grande o bastante para ser refixado com parafuso grosso e arruela; é a osteotomia que a banca chamou de anterolateral estendida. Na p. 28 (Fig. 1.40), a via extensível de **TSCHERNE-JOHNSON**, indicada para as fraturas com afundamento do planalto lateral, faz duas osteotomias a 90 graus em volta do **tubérculo de GERDY**, que gira para trás preso pela inserção posterior do trato iliotibial e expõe a face inferior do planalto lateral; no fechamento, a osteotomia é fixada com a placa e um dos parafusos.
+
 !questoes relacionadas=trauma-0223
 conceito: A via anterolateral estendida com osteotomia do epicôndilo lateral (com LCL e poplíteo) foi cobrada no TEOT 2021, mas não está no capítulo 62.
 como: Alternativas com quatro osteotomias ou desinserções laterais diferentes.
 armadilha: Osteotomia da cabeça da fíbula: é a das vias posterolaterais transfibulares, não a da anterolateral estendida.
+armadilha: Osteotomia do tubérculo de GERDY com o trato iliotibial: existe, mas é a via extensível de TSCHERNE-JOHNSON (Campbell 15, cap. 1, p. 28, Fig. 1.40); a do epicôndilo lateral com o LCL é a de YOON (p. 29).
 !fim
 
 # Bicondilares e dissociadas: duas placas, placa bloqueada ou fixador {radar=confirmado}

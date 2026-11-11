@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-22-coluna-toracolombar
-versao: 2
+versao: 3
 titulo: Fraturas da coluna toracolombar na criança
 especialidade: pediatria
 acesso: gratis
@@ -167,6 +167,8 @@ armadilha: Dar mais pontos à lesão completa que à incompleta na TLICS, ou cha
 
 **Com cirurgia.** Quando a cifose altera muito o perfil sagital, por exemplo **30 a 40 graus a mais** que o esperado para a região, o que é mais comum com **várias compressões vizinhas**; a fratura única raramente é operada. Os autores consideram a correção cirúrgica quando a **perda da altura anterior passa de 50%**, sobretudo com cifose aguda importante, e operam a compressão rara **com déficit**, para reabilitar cedo. A técnica é **posterior**, em **compressão**, com **parafusos pediculares** um ou dois níveis acima e abaixo, com artrodese; o muro posterior íntegro serve de fulcro para corrigir a cifose. A via anterior raramente é necessária. A **vertebroplastia** com cimento, discutida no adulto, **não é recomendada** pelos autores na criança.
 
+**O limite do Lovell and Winter é outro.** O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 34, p. 1774), escalona por graus de cunha: abaixo de **10 graus**, tratamento sintomático e retorno gradual; acima de **10 graus** com **RISSER abaixo de 3**, imobilização em hiperextensão por **2 a 3 meses**; **estabilização cirúrgica** quando a compressão passa de **15 graus**, ou cerca de **50%** de perda da altura anterior em relação à posterior, e também na compressão **lateral** acima de 15 graus. Os autores do Lovell and Winter dizem seguir essas regras, mas evitam órtese prolongada. O mesmo texto registra remodelação com recuperação da altura anterior abaixo dos **13 anos** e lembra que a maioria das compressões da criança é **torácica**, e que trauma mínimo deve levantar suspeita de fragilidade óssea, como na leucemia. Os 50% coincidem com o Rockwood and Wilkins; os graus, não (15 no Lovell and Winter, 30 de cifose no Rockwood and Wilkins).
+
 **A preferência dos autores.** TLSO de prateleira na quase totalidade; fraturas **acima de T6** pedem **órtese cervicotorácica**, com extensão ao queixo e ao occipital. Imobilização por 4 a 6 semanas e mais 4 a 6 semanas de atividade limitada.
 
 **Osteoporose.** Fraturas por insuficiência, em geral por compressão e em vários níveis, podem levar à cifose; a ressonância data as fraturas pelo edema. Órtese por mais tempo, tratamento da causa, avaliação com o **endocrinologista pediátrico** e **densitometria (DEXA)** (Fig. 22-17).
@@ -174,7 +176,7 @@ armadilha: Dar mais pontos à lesão completa que à incompleta na TLICS, ou cha
 !questoes central=coluna-0302 treino=pediatria-1258,pediatria-1459
 conceito: A compressão vai sem cirurgia com partes moles posteriores íntegras e cifose menor que 30 graus; a cirurgia se considera com perda de altura anterior acima de 50% ou cifose regional acima do esperado, em geral por várias compressões vizinhas.
 como: TARO 2022 perguntou a partir de quanto se recomenda a estabilização cirúrgica da fratura por compressão (30 graus de angulação e 50% de acunhamento).
-armadilha: Marcar 15 graus ou 30% de acunhamento.
+armadilha: Marcar 30% de acunhamento, ou 15 graus sem saber de onde vem: 15 graus é o limite do Lovell and Winter (cap. 34, p. 1774), e o gabarito seguiu os 30 graus.
 !fim
 
 # Fratura por explosão {radar=oportunidade}

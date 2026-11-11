@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-16-condilo-lateral
-versao: 2
+versao: 3
 titulo: Fraturas do côndilo lateral e do capítulo na criança
 especialidade: pediatria
 acesso: gratis
@@ -412,10 +412,12 @@ O edema costuma ser pequeno e o fragmento **bloqueia a flexão**. O fragmento gr
 
 **Complicação principal: osteonecrose**, que só ocorre quando o fragmento é **mantido**. A artrose pós-traumática pode ocorrer com o fragmento mantido ou excisado. Muitos perdem algum movimento, com ou sem cirurgia, nem sempre com importância funcional; os pais devem ser avisados antes.
 
+**No adulto, o peso vai para a limitação de movimento.** O Skeletal Trauma (5ª edição, capítulo 46, p. 1362) explica o mecanismo: o fragmento do capítulo consolidado mais para cima oblitera a fossa radial, a cabeça do rádio bate nele e a **flexão fica bloqueada**; como rádio e ulna andam juntos, a restrição de um afeta o outro. Na p. 1375, o mesmo livro conta que os maus resultados da imobilização prolongada e da excisão levaram à fixação, que permite movimento precoce, com arcos médios de flexão e extensão de 96 a 132 graus nas séries operadas. O Rockwood and Green (10ª edição, capítulo 39) lembra que o cotovelo traumatizado é particularmente propenso à rigidez, por isso o movimento precoce é vital; que o tratamento não cirúrgico das fraturas do úmero distal frequentemente leva à perda de movimento; e que, mesmo operado, quem tem fratura articular isolada do úmero distal pode esperar alguma perda de movimento, embora em geral alcance o arco funcional (3 a 130 graus).
+
 !questoes central=trauma-0812 relacionadas=trauma-1122,trauma-0987,trauma-1132 treino=pediatria-1007
 conceito: A fratura do capítulo é do adolescente; HAHN-STEINTHAL, a mais comum, leva osso esponjoso e pode ser reinserida com parafusos; KOCHER-LORENZ é quase só cartilagem; a complicação principal é a osteonecrose do fragmento mantido.
 como: O TARO 2012 e o TARO 2007 (este sem gabarito no acervo) pediram a complicação mais frequente do tratamento da fratura do capítulo, com necrose avascular, pseudartrose, limitação articular e instabilidade entre as opções. O TARO 2026 cobrou, em fratura do adulto, a classificação de BRYAN e MORREY, que tem HAHN-STEINTHAL e KOCHER-LORENZ como tipos I e II. O TARO 2008, sem gabarito, perguntou a fratura do capítulo na classificação AO.
 armadilha: Limitação articular: é frequente e os pais devem ser avisados, mas o capítulo chama a osteonecrose de complicação principal.
 armadilha: KOCHER-LORENZ como o tipo mais comum: é raro na criança; o comum é HAHN-STEINTHAL.
-alerta: O capítulo 16 é pediátrico e não traz a classificação AO nem a de BRYAN e MORREY com o tipo III cominutivo (TARO 2008 e TARO 2026); esses dados são do capítulo de úmero distal do adulto. A complicação de maior peso coincide nos dois livros: a osteonecrose do fragmento mantido.
+alerta: O capítulo 16 é pediátrico e não traz a classificação AO nem a de BRYAN e MORREY com o tipo III cominutivo (TARO 2008 e TARO 2026); esses dados são do capítulo de úmero distal do adulto. A complicação de maior peso muda com o livro: o capítulo pediátrico chama de principal a osteonecrose do fragmento mantido (gabarito do TARO 2012), e os livros do adulto destacam a limitação de movimento (Skeletal Trauma 5ª edição, capítulo 46, p. 1362 e 1375; Rockwood and Green 10ª edição, capítulo 39), resposta provável do TARO 2007.
 !fim

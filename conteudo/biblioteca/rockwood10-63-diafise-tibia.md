@@ -1,6 +1,6 @@
 ---
 id: rockwood10-63-diafise-tibia
-versao: 1
+versao: 2
 titulo: Fratura da diáfise da tíbia e da fíbula
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 63 · Tibia and Fibula Shaft Fractures
 autores: Bennet Butler, Christina L. Boulton e Robert V. O'Toole
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (3_temas_tibia_sht_pilon_ankle-1-50.pdf, páginas 1 a 38 do capítulo 63; as páginas seguintes são o capítulo 64, pilão tibial)
+fonte: Capítulo enviado pelo Tales em 17/10/2026 (3_temas_tibia_sht_pilon_ankle-1-50.pdf, páginas 1 a 38 do capítulo 63; as páginas seguintes são o capítulo 64, pilão tibial); consultas ao Campbell's Operative Orthopaedics, 15ª ed., cap. 58 (Tabela 58.2 e Box 58.2, p. 2516), ao HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 71 (Quadros 71.2 e 71.3), e ao próprio Rockwood, cap. 37 (Tabela 37-2) e cap. 30 (MASQUELET, Fig. 30-29, p. 911 e 912 pelo índice remissivo). As páginas citadas são as impressas.
 subtemas: Fratura da diáfise da tíbia; Fraturas expostas; Síndrome compartimental
 resumo: Ponto de entrada logo medial à espinha lateral, valgo e ápice anterior na fratura proximal, suprapatelar, parafusos de bloqueio (KRETTEK), maléolo posterior na espiral distal, GUSTILO aplicado à tíbia, SARMIENTO com fíbula íntegra, joelho flutuante, síndrome compartimental, dor anterior do joelho e fíbula isolada.
 ---
@@ -296,7 +296,7 @@ armadilha: Espiral com fíbula intacta: é a A1.1; a B2.1 é cunha.
 
 ## TSCHERNE, GUSTILO e OTA-OFC
 
-**TSCHERNE** classifica as partes moles das fechadas: **C0** fratura simples com pouca ou nenhuma lesão; **C1** escoriação superficial; **C2** contaminação profunda com contusão local de pele ou músculo; **C3** contusão extensa, esmagamento de pele ou destruição muscular, fratura grave (figura 63-4). Ela se relaciona com o tempo de volta a andar e ao esporte, e a consolidação levou em média **12,5 semanas na C0 e 23,7 na C3**.
+**TSCHERNE** classifica as partes moles das fechadas: **C0** fratura simples com pouca ou nenhuma lesão; **C1** escoriação superficial; **C2** contaminação profunda com contusão local de pele ou músculo; **C3** contusão extensa, esmagamento de pele ou destruição muscular, fratura grave (figura 63-4). Ela se relaciona com o tempo de volta a andar e ao esporte, e a consolidação levou em média **12,5 semanas na C0 e 23,7 na C3**. A classificação original também tem um lado para as **expostas** (graus 1 a 4), que o capítulo 63 não traz: pelo Campbell 15 (cap. 58, Tabela 58.2, p. 2516) e pelo HEBERT (cap. 71, Quadro 71.2), o **grau 3 da exposta** reúne a lesão grave de partes moles, com frequente lesão de vaso ou nervo, isquemia, cominução grave e **síndrome compartimental**; o grau 4 é a amputação subtotal ou total. Nas fechadas, o HEBERT e a Tabela 37-2 do Rockwood (cap. 37) também põem a síndrome compartimental iminente no grau 2 e a síndrome compartimental instalada no grau 3. O Campbell destaca que a classificação de TSCHERNE e a do grupo AO incluem a síndrome compartimental, o que as outras não fazem. A **pontuação AO de partes moles** (Campbell 15, Box 58.2, p. 2516; HEBERT, Quadro 71.3) dá notas separadas à pele fechada (**IC** 1 a 5) ou aberta (**IO** 1 a 4), à unidade musculotendínea (**MT** 1 a 5, com MT 5 para síndrome compartimental ou esmagamento) e às estruturas neurovasculares (**NV** 1 a 5).
 
 **GUSTILO** é o sistema mais usado nas expostas:
 
@@ -319,10 +319,9 @@ armadilha: IIIC: exige reparo para revascularizar, não apenas lesão arterial.
 !fim
 
 !questoes relacionadas=trauma-0116,trauma-1131
-conceito: TSCHERNE classifica as partes moles; o grau mais alto das fechadas (C3) é a contusão extensa com destruição muscular.
+conceito: TSCHERNE classifica as partes moles; o grau mais alto das fechadas (C3) é a contusão extensa com destruição muscular, e o grau 3 das expostas inclui a síndrome compartimental (Campbell 15, cap. 58, Tabela 58.2, p. 2516).
 como: O TARO 2016 perguntou o grau de TSCHERNE da síndrome compartimental após fratura exposta (3). O TARO 2007 pediu a pontuação AO de partes moles (IO, MT, NV) de uma exposta com esmagamento; está sem gabarito no acervo.
-armadilha: Grau 4: as fechadas vão de 0 a 3.
-alerta: O capítulo descreve TSCHERNE só para as fraturas fechadas e não cita a síndrome compartimental na legenda do grau C3; a associação do grau 3 com a síndrome compartimental, usada pelo TARO 2016 numa fratura exposta, vem da descrição clássica da classificação, fora deste capítulo. A pontuação AO de partes moles do TARO 2007 também não está no capítulo.
+armadilha: Grau 4: as fechadas vão de 0 a 3; nas expostas, o grau 4 é a amputação subtotal ou total, e a síndrome compartimental está no grau 3 (Campbell 15, cap. 58, Tabela 58.2, p. 2516; HEBERT, cap. 71, Quadro 71.2).
 !fim
 
 # Tratamento não cirúrgico: SARMIENTO e os limites {radar=confirmado}
@@ -543,13 +542,13 @@ A tíbia tem a **maior taxa de pseudartrose entre os ossos (cerca de 5%)**, e a 
 
 **Fatores de risco:** exposta, infecção profunda, **falha no foco** pós-operatória, fratura **distal** e **fumo**. O **NURD** (O'HALLORAN, 2016, 382 fraturas com haste) soma pontos por retalho, síndrome compartimental, exposta, sexo masculino, ASA, porcentagem de contato cortical e doenças crônicas, e tira pontos por baixa energia e traço espiral: **0 a 5 pontos, 2%** de pseudartrose; **acima de 12, 61%**. No **SPRINT**, muitas fraturas que seriam enxertadas profilaticamente consolidaram sozinhas; os preditores de reoperação em 1 ano foram **alta energia, falha no foco, reconstrução complexa de partes moles e carga total depois da cirurgia** (AINE, fumo e o momento da cirurgia não pesaram). A reoperação ou autodinamização foi de **26,5% nas expostas e 13,7% nas fechadas**; defeito crítico (maior que 1 cm e mais de 50% da circunferência) teve pior função e 53% de cirurgia secundária, menos se a haste inicial foi fresada. **Operar antes de 6 meses pode ser cirurgia desnecessária**, e na exposta grave vale esperar mais.
 
-**Tratamento:** a pseudartrose ou o retardo **sem infecção** de uma tíbia com haste pode ser tratada com **troca de haste** (COURT-BROWN). Na exposta com defeito, espaçador com antibiótico e enxerto maciço semanas depois (figura 63-11), ou transporte ósseo com fixador circular (figura 63-34).
+**Tratamento:** a pseudartrose ou o retardo **sem infecção** de uma tíbia com haste pode ser tratada com **troca de haste** (COURT-BROWN). Na exposta com defeito, espaçador com antibiótico e enxerto maciço semanas depois (figura 63-11), ou transporte ósseo com fixador circular (figura 63-34). O espaçador seguido de enxerto é a técnica da **membrana induzida de MASQUELET**, que o capítulo 63 descreve sem o epônimo e o capítulo 30 do Rockwood nomeia (p. 911 e 912, Fig. 30-29, a figura da questão do TEOT 2021): o defeito é preenchido com cimento (PMMA), e com **4 a 6 semanas**, formada a membrana osteogênica em volta, ela é reaberta, o cimento sai e entra enxerto esponjoso abundante, com haste bloqueada nos defeitos diafisários ou placa bloqueada nos metafisários. O espaçador mantém o espaço contra o crescimento fibroso e induz a membrana, que produz fatores de crescimento como a BMP-2, no máximo por volta de 4 semanas.
 
 !questoes central=conceitos-basicos-0067 relacionadas=conceitos-basicos-0073,trauma-1168 treino=conceitos-basicos-0376
 conceito: A pseudartrose da tíbia é definida em geral aos 6 meses; a da tíbia com haste, sem infecção, trata-se com troca de haste, feita fechada.
 como: O TEOT 2022 perguntou duas vezes, com o mesmo texto, o tratamento preferencial da pseudartrose diafisária da tíbia (haste intramedular fresada fechada, contra placa, osteotomia da fíbula com enxerto e haste aberta com enxerto). O TEOT 2021 pediu o nome da técnica da membrana induzida (MASQUELET).
 armadilha: Haste aberta com enxerto: a troca de haste é feita fechada; abrir o foco não é o padrão.
-alerta: O capítulo não usa o epônimo MASQUELET: descreve o espaçador com antibiótico seguido de enxerto maciço 6 semanas depois. A afirmação do TARO 2006 de que a neuropatia é um dos fatores causadores da pseudartrose da tíbia (certo ou errado, sem gabarito) não é sustentada pelo capítulo, que lista exposta, infecção, falha no foco, fratura distal e fumo.
+alerta: A afirmação do TARO 2006 de que a neuropatia é um dos fatores causadores da pseudartrose da tíbia (certo ou errado, sem gabarito) não é sustentada pelo capítulo, que lista exposta, infecção, falha no foco, fratura distal e fumo.
 !fim
 
 ## Infecção profunda

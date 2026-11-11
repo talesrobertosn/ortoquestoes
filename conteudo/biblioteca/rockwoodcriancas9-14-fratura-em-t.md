@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-14-fratura-em-t
-versao: 2
+versao: 3
 titulo: Fratura em T (intercondiliana) do úmero distal na criança
 especialidade: pediatria
 acesso: gratis
@@ -109,6 +109,8 @@ Clinicamente, a fratura em T é confundida sobretudo com a **supracondiliana em 
 ## A chave: o traço até o ápice da tróclea
 
 O diagnóstico tem de excluir os padrões comuns: a fratura **isolada do côndilo lateral ou do medial** e a **separação completa da fise distal**. Nessas, um sinal importante é o fragmento metafisário de **THURSTON-HOLLAND**, medial ou lateral. A **chave da fratura em T** é outra: o **traço vertical que desce até o ápice da tróclea**.
+
+Esse fragmento só se entende com a classificação de **SALTER-HARRIS** das lesões da fise (10ª edição, capítulo 2, figuras 2-11 a 2-15). No **tipo I** o traço atravessa só a fise, sem metáfise nem epífise, e a radiografia pode parecer normal. No **tipo II** o traço começa numa borda da fise, corre por parte dela e sai pela metáfise, deixando o **fragmento de THURSTON-HOLLAND**; poupa a camada germinativa e o risco de distúrbio de crescimento é mínimo. No **tipo III** o traço começa na epífise, corta a superfície articular e sai pela fise na periferia. O **tipo IV** é um cisalhamento vertical que rompe a superfície articular e cruza todas as camadas da fise. Os tipos III e IV ameaçam a irrigação epifisária, deixam barra fisária com frequência e pedem redução anatômica. O **tipo V** é a compressão da fise, que pode não aparecer na radiografia inicial e se revela pelo fechamento precoce. No cotovelo, o descolamento total da fise distal do úmero costuma ser tipo I no lactente e tipo II quando leva uma lasca metafisária (10ª edição, capítulo 18), e SALTER e HARRIS classificaram a fratura do côndilo lateral como tipo IV, com traços do II e do IV (10ª edição, capítulo 17).
 
 !tabela Diagnóstico diferencial na radiografia
 | Lesão | O que a radiografia mostra |
@@ -296,6 +298,8 @@ Todas as vias usam a mesma pele: incisão posterior longa e curvilínea, que pas
 
 **O que dizem as séries.** RE e colaboradores encontraram mais extensão com BRYAN-MORREY e com a osteotomia do que com a divisão do tríceps; REMIA, em nove fraturas em T operadas por BRYAN-MORREY, não encontrou diferença significativa de função ou movimento em relação à divisão.
 
+**Onde o TACHDJIAN diverge.** No TACHDJIAN (6ª edição, 2021, capítulo 29, p. 1244), os autores reconhecem que a divisão do tríceps é a via mais discutida na literatura e que a via posteromedial que poupa o tríceps ganhou espaço, mas **preferem a via posterior com osteotomia do olécrano** como rotina, para ver diretamente a superfície articular: ela dá exposição ampla, permite fixação rígida e movimento precoce. Como quase toda a experiência deles é com adolescentes mais velhos, dizem não ter tido problema com a **apófise proximal da ulna**. Citam o mesmo estudo de RE, com mais movimento, sobretudo extensão, depois da via posteromedial ou da osteotomia. É o contrário do Rockwood, que guarda a osteotomia para a C3 cominuta; na prova, vale lembrar que as duas condutas têm defesa e que a apófise do olécrano só preocupa no paciente mais novo.
+
 !questoes relacionadas=trauma-0211 treino=pediatria-1026,pediatria-1027
 conceito: No adolescente, os autores usam a divisão do tríceps na C1, BRYAN-MORREY na C2 e reservam a osteotomia do olécrano para a C3 cominuta; BRYAN-MORREY é contraindicada na fratura exposta, em que o tríceps pode estar desvascularizado.
 como: O TEOT 2021 cobrou a indicação da via de BRYAN-MORREY no úmero distal do adulto, com fratura coronal do capítulo, osteotomia prévia do olécrano e lesão prévia do tríceps como distratores; a resposta foi a artroplastia total do cotovelo.
@@ -344,6 +348,8 @@ O que decide entre fios e placas é **a importância do movimento precoce**. Na 
 - o melhor é pôr as placas **a 90 graus uma da outra**, para uma montagem mais estável (figura 14-12: parafuso transcondilar e duas placas de reconstrução pélvica a 90 graus num menino de 16 anos);
 - as placas próprias do úmero distal do adulto muitas vezes não cabem ou ficam proeminentes na criança; no adolescente grande e maduro, podem ser usadas, com possível retirada depois.
 
+O TACHDJIAN (capítulo 29, p. 1244) acrescenta dois detalhes: as placas devem ter **comprimentos diferentes**, para que as pontas não terminem na mesma altura da diáfise e criem um **ponto de concentração de tensão**; e as placas **terço de tubo finas** foram consideradas **inadequadas**. Sobre as placas anatômicas bloqueadas do adulto, confirma que raramente se ajustam ao úmero distal do adolescente, pedem moldagem e com frequência incomodam por proeminência, o que leva à **retirada do material**.
+
 !questoes treino=pediatria-1031
 conceito: No adolescente, as colunas são fixadas com placas fortes, em geral de reconstrução pélvica, colocadas a 90 graus uma da outra; semitubulares finas podem quebrar.
 armadilha: Placa semitubular fina: é a placa que o capítulo diz poder falhar.
@@ -370,6 +376,8 @@ Nos esportes radicais, há fraturas tão cominutas que o osso não aceita parafu
 ## Depois da placa
 
 Curativo macio bem acolchoado e **órtese articulada**. A **movimentação passiva contínua**, no hospital e depois em casa, ajuda a recuperar o movimento mais cedo nas fraturas complexas tratadas com redução aberta. A fisioterapia ativa é feita na órtese articulada com movimento livre. Mesmo nos melhores resultados, espera-se uma **contratura em extensão leve, de cerca de 10 graus**.
+
+O TACHDJIAN (capítulo 29, p. 1244) pensa diferente sobre o tipo de movimento. Para ele, a **rigidez** é a complicação mais comum, sobretudo depois da redução aberta, e a perda permanente de algum movimento é tão provável que os pais ouvem antes da cirurgia que **o objetivo é diminuir a rigidez**, não evitá-la. Isso se consegue com fixação rígida e pouca imobilização, mas, como na luxação do cotovelo, o movimento precoce deve ser **ativo, e não passivo**, porque a fisioterapia agressiva demais pode piorar a rigidez. Os mesmos autores listam ainda falha da fixação, pseudartrose, lesão nervosa iatrogênica, retirada do material e osteonecrose da tróclea.
 
 ## O que mostram as séries
 

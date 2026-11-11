@@ -1,6 +1,6 @@
 ---
 id: rockwood10-33-fratura-escapula
-versao: 1
+versao: 2
 titulo: Fratura da escápula
 especialidade: trauma
 acesso: gratis
@@ -141,7 +141,7 @@ armadilha: Ângulo glenopolar de 40° (TECOC): está dentro da faixa normal (35�
 armadilha: Encurtamento da clavícula de 1,5 cm: o capítulo não usa a clavícula como critério para operar a escápula.
 alerta: No TARO 2019 (trauma-0023), o gabarito oficial foi "clavícula e colo da escápula". O capítulo não diz qual lesão dupla é a mais frequente e mostra que a fratura verdadeira do colo com fratura da clavícula é raríssima (uma vez em 519); o que é comum é a clavícula com a fratura do **corpo**, lida como colo. Na prova, responda o conceito clássico.
 alerta: No TECOC (trauma-0782), o gabarito oficial foi a anteversão da glenoide de 45°. O capítulo não traz nenhum critério de versão da glenoide; os critérios que ele usa são ângulo glenopolar, angulação e translação da borda lateral (seção seguinte).
-alerta: No TARO 2008 (trauma-1139), sem gabarito registrado: o capítulo não considera o ombro flutuante indicação absoluta de fixar a clavícula; diz que fixar só a clavícula pouco corrige a escápula e que os resultados das várias estratégias quase não diferiram.
+alerta: No TARO 2008 (trauma-1139), sem gabarito registrado: o capítulo não considera o ombro flutuante indicação absoluta de fixar a clavícula; diz que fixar só a clavícula pouco corrige a escápula e que os resultados das várias estratégias quase não diferiram. O capítulo 34 do mesmo Rockwood (fraturas da clavícula), porém, põe o "ombro flutuante" entre as indicações **mais absolutas** de fixar a fratura da diáfise da clavícula, no quadro de indicações absolutas e relativas. Os dois capítulos do mesmo livro divergem; saiba os dois.
 !fim
 
 ## Tratar o ombro flutuante
@@ -196,7 +196,7 @@ armadilha: Desvio mediolateral de 3 mm ou 5 mm: muito abaixo dos 15 a 20 mm do c
 alerta: No SBOT-SP (trauma-0530), o gabarito oficial foi translação de **100%** dos fragmentos da borda lateral. O capítulo não usa porcentagem: o critério dele é translação **maior que 20 mm**.
 alerta: No TECOC (trauma-0687 e trauma-0779), o gabarito é a angulação de 45°; o corte do capítulo é **maior que 40°**. Entre as alternativas (15°, 30°, 45°, 60°), 45° é a primeira acima do limite, e o gabarito é compatível.
 alerta: No TECOC (trauma-0967), a medialização de 17 mm (alternativa C) cai dentro da faixa de 15 a 20 mm do algoritmo 33-1, mas abaixo dos 20 mm da Figura 33-19; o gabarito oficial (angulação de 45°) é o único critério que o capítulo sustenta sem ambiguidade.
-alerta: No TARO 2006 (trauma-1178), sem gabarito registrado, a frase diz que angulação acima de 40° converte a compressão do manguito em cisalhamento. O capítulo usa 40° como critério, mas não descreve esse mecanismo; ele fala em restaurar o trajeto dos músculos do manguito e o ritmo escapuloumeral.
+alerta: No TARO 2006 (trauma-1178), sem gabarito registrado, a frase diz que angulação acima de 40° converte a compressão do manguito em cisalhamento. O capítulo usa 40° como critério, mas não descreve esse mecanismo; ele fala em restaurar o trajeto dos músculos do manguito e o ritmo escapuloumeral. O mecanismo está no Skeletal Trauma (cap. 50, p. 1521): com a medialização da glenoide o manguito encurta e as forças musculares de compressão passam a cisalhamento, citando ADA e MILLER; e são ADA e MILLER que propõem operar com angulação maior que 40° (ou medialização maior que 1 cm) (cap. 50, p. 1543). A frase é compatível com essa fonte.
 !fim
 
 ## Quando não operar e como conduzir
@@ -389,7 +389,7 @@ Não há consenso. Os únicos critérios exatos são os de **Anavian** e **Hill*
 conceito: As fraturas dos processos quase sempre vêm de impacto direto e comprometem o complexo suspensor; opera-se com desvio maior que 1 cm ou lesão dupla do anel, e na fratura do coracoide com luxação acromioclavicular a fixação da acromioclavicular reduz indiretamente o coracoide.
 como: O TEOT 2022 pediu o tipo de Kuhn da fratura do acrômio com desvio inferior que estreita o espaço subacromial (III). O SBOT-SP pediu a classificação de Ogawa do coracoide (sem gabarito oficial registrado no acervo). O TARO 2015 perguntou em que fratura a luxação acromioclavicular tipo III mantém os coracoclaviculares íntegros (coracoide). O TARO 2011 e o TARO 2018 perguntaram a incidência que mostra a base do coracoide (Stryker).
 armadilha: Fratura do coracoide como avulsão pelo tendão conjunto, pelo peitoral menor ou pelos coracoclaviculares: o autor mostra que a maioria vem de impacto direto.
-alerta: No TEOT 2022 (trauma-0200), o gabarito oficial usa a classificação de **Kuhn**, que o capítulo não apresenta; ele usa a de Ogawa modificada (acrômio, ângulo acromial, espinha lateral), que é pelo traço e não pelo efeito no espaço subacromial.
+alerta: No TEOT 2022 (trauma-0200), o gabarito oficial usa a classificação de **KUHN**, que o capítulo não apresenta; ele usa a de OGAWA modificada (acrômio, ângulo acromial, espinha lateral), que é pelo traço e não pelo efeito no espaço subacromial. A fonte do gabarito é o HEBERT (cap. 43, Fig. 43.13): tipo 1, pequeno desvio; tipo 2, desviada sem redução do espaço subacromial; tipo 3, desviada com redução do espaço subacromial, em que se indicam redução e fixação.
 alerta: No SBOT-SP (trauma-1293), sem gabarito registrado: pelo capítulo, o tipo I de Ogawa é o mais frequente (78% na revisão de Van Doesburg) e é o que mais se associa a lesão do complexo suspensor, o que só faz sentido com o traço atrás (proximal) da inserção dos coracoclaviculares; a alternativa A é a compatível. O capítulo, porém, não define os tipos de Ogawa pela posição do traço.
 alerta: No TARO 2011 (ombro-cotovelo-0341) e no TARO 2018 (trauma-0058), o gabarito oficial foi a incidência de **Stryker**. O capítulo não cita a Stryker: diz que alguns autores recomendam a axilar e outras incidências especiais para coracoide e acrômio, mas que elas **não substituem a tomografia**, que mostra também as fraturas sem desvio dos processos.
 !fim

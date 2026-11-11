@@ -1,6 +1,6 @@
 ---
 id: rockwood10-45-fraturas-mao
-versao: 1
+versao: 2
 titulo: Fraturas e luxações da mão
 especialidade: mao
 acesso: gratis
@@ -85,7 +85,7 @@ conceito: A Rolando é a fratura intra-articular cominutiva da base do primeiro 
 como: IAUPE 2025 e UFG 2019 pediram a definição; a UFG pôs como distratores a diáfise em abdução e o fragmento medial "instável" da Bennett.
 armadilha: "Na Bennett, a diáfise se desloca em abdução": ela aduz, pelo adutor do polegar.
 armadilha: "O fragmento medial é o elemento instável": é o contrário, o fragmento volar-ulnar fica no lugar e a diáfise é que foge.
-alerta: O TEOT 2022 (trauma-0177) pediu o tipo pela classificação de Green. O capítulo não usa essa classificação: descreve só Bennett (parcial) e Rolando (completa, em Y ou T). A questão depende de uma fonte que o Rockwood não traz aqui.
+alerta: O TEOT 2022 (trauma-0177) pediu o tipo pela classificação de GREEN. O capítulo do Rockwood não usa essa classificação: descreve só Bennett (parcial) e Rolando (completa, em Y ou T). Ela está no HEBERT (cap. 53, Fig. 53.54): tipo I Bennett, tipo II Rolando, tipo III extra-articular da base (na legenda da figura, IIIA transversa e IIIB oblíqua) e a fratura epifisária (tipo IV no texto, IIIC na legenda).
 !fim
 
 !figura 45-69
@@ -104,7 +104,7 @@ A via aberta é a de **Wagner**: volar, na borda radial do polegar, na transiç�
 
 !questoes relacionadas=trauma-0730
 conceito: Na fratura de Bennett com fragmento pequeno, a redução fechada com fios do primeiro ao segundo metacarpo e ao trapézio funciona bem; fragmentos maiores que 20% a 25% vão para parafuso de tração.
-alerta: O SBOT-SP (trauma-0730) atribuiu a Wagner a técnica de redução fechada e fixação percutânea com fio. No capítulo, o nome de Wagner aparece na **via de acesso** volar à CMC do polegar, não na técnica percutânea. Guarde a resposta da banca para essa questão e saiba que, no Rockwood, "Wagner" é a via.
+alerta: O SBOT-SP (trauma-0730) atribuiu a WAGNER a técnica de redução fechada e fixação percutânea com fio, e o Campbell 15 confirma (cap. 72, Técnica 72.1, Fig. 72.9, p. 3198): na técnica de WAGNER, com tração, abdução, pronação e extensão do polegar, um fio de Kirschner atravessa a base do metacarpo e a articulação até o trapézio, seguido de tala gessada com a IF livre. No Rockwood, o nome de WAGNER aparece na **via de acesso** volar à CMC; o Campbell usa o nome nos dois sentidos (a técnica percutânea e a via "tipo Wagner" para a redução aberta).
 !fim
 
 ## Ligamentos da CMC e a luxação pura
@@ -303,7 +303,7 @@ Na lesão **crônica**, quase sempre há tecido para reparo direto; se não, enx
 !questoes central=mao-0770 relacionadas=mao-0233,mao-1221
 conceito: Na via de acesso ao LCU do polegar, o ramo sensitivo dorsal do nervo radial cruza o campo e precisa ser identificado e afastado; a aponeurose do adutor é aberta e depois reparada.
 como: O INTO 2023 perguntou a complicação mais comum do reparo (neuropraxia do ramo sensitivo radial); a UERJ 2023, em questão dissertativa, pediu a definição de Stener, o local da avulsão e a estrutura em risco. O capítulo não ranqueia as complicações, mas destaca esse nervo em todos os passos.
-alerta: Na prova de Ortopedia (mao-0233), Stener com fragmento de 10% da superfície, o gabarito foi ressecar o fragmento e reinserir o ligamento com miniâncora. O capítulo defende operar as avulsões do LCU, mesmo as pouco desviadas, e repara com âncoras, mas não discute ressecar o fragmento; essa escolha vem de outra fonte.
+alerta: Na prova de Ortopedia (mao-0233), Stener com fragmento de 10% da superfície, o gabarito foi ressecar o fragmento e reinserir o ligamento com miniâncora. O capítulo do Rockwood defende operar as avulsões do LCU, mesmo as pouco desviadas, e repara com âncoras, mas não discute ressecar o fragmento. O Green 7 sustenta o gabarito (cap. 7, p. 271): avulsão da base ulnar da falange proximal desviada mais de 2 mm com MCF instável vai para cirurgia, e o fragmento **pequeno** (ou que quebra na fixação) pode ser retirado, com o ligamento reinserido por fio de pull-out ou âncora; fragmentos maiores são fixados com fios ou parafuso pequeno.
 !fim
 
 # Falange distal: tufo, martelo ósseo, jersey e Seymour {radar=confirmado}
@@ -384,7 +384,7 @@ As luxações da IFP são as **mais frequentes da mão e do membro superior**, q
 
 ## A caixa que segura a IFP
 
-A IFP é uma **dobradiça**: cabeça convexa da falange proximal contra a base bicôncava da média. A congruência dá a estabilidade axial. Dos lados ficam os **colaterais próprios**, que vão da face lateral da cabeça da falange proximal à base da média, volares ao eixo de rotação; eles são os **estabilizadores primários no plano coronal**. Os **colaterais acessórios** se inserem na placa volar e na polia A3. A **placa volar** vai do colo da falange proximal à base da média, mistura suas bordas aos colaterais e, com as duas extensões proximais (**ligamentos checkrein**), segura a hiperextensão. Por cima, a **banda central** se insere na base dorsal da falange média.
+A IFP é uma **dobradiça**: cabeça convexa da falange proximal contra a base bicôncava da média. A congruência dá a estabilidade axial. Dos lados ficam os **colaterais próprios**, que vão da face lateral da cabeça da falange proximal à base da média, volares ao eixo de rotação; eles são os **estabilizadores primários no plano coronal**. Os **colaterais acessórios** se inserem na placa volar e na polia A3. A **placa volar** vai do colo da falange proximal à base da média, mistura suas bordas aos colaterais e, com as duas extensões proximais (**ligamentos checkrein**), segura a hiperextensão. Por cima, a **banda central** se insere na base dorsal da falange média. O Green 7 (cap. 8, p. 278) completa o desenho: para a falange média se deslocar, essa caixa precisa romper em pelo menos dois planos, e em geral os **colaterais falham proximalmente** enquanto a **placa volar se solta distalmente** (da base da falange média), embora haja padrões variáveis.
 
 !questoes central=mao-0111 relacionadas=mao-1342,mao-1069,mao-1131
 conceito: Na IFP, os colaterais próprios são os estabilizadores primários no plano coronal; a placa volar, reforçada pelos checkreins, segura a hiperextensão.

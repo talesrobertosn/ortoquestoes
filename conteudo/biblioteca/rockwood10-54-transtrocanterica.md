@@ -1,6 +1,6 @@
 ---
 id: rockwood10-54-transtrocanterica
-versao: 2
+versao: 3
 titulo: Fratura transtrocantérica
 especialidade: trauma
 acesso: gratis
@@ -27,10 +27,12 @@ A fratura transtrocantérica é **extracapsular**: fica entre a inserção da c�
 
 O impacto é grande: **30% a 50%** perdem algum grau de independência e a mortalidade em um ano gira em torno de **20% a 25%** (em outro trecho do capítulo, 28% a 38% em um ano e cerca de 8% em 30 dias, com mais da metade tendo ao menos uma complicação perioperatória). Só um quarto das mortes no primeiro ano é atribuída à fratura em si; o resto reflete as doenças do envelhecimento. A reabilitação leva de 6 a 12 meses e costuma deixar alguma limitação.
 
+O Skeletal Trauma, 5ª ed. (cap. 21, p. 563 e 564), dá os números do prognóstico das fraturas do quadril do idoso. Numa série prospectiva de 336 pacientes que andavam na comunidade antes da fratura, só **41%** recuperaram a marcha prévia; os outros **59%** perderam algum grau dela, e até **22%** não andam mais com 1 ano. Recuperam a independência nas atividades básicas da vida diária de **33% a 73%**, e nas instrumentais (compras, cozinha, transporte) de **21% a 48%**. Voltam para casa na alta de **24% a 72%**. A mortalidade em 1 ano continua perto de **24%** (20% a 24% em muitos estudos) e a de 30 dias se aproxima de **10%**; a readmissão chega a **14,5%**, a mais alta de qualquer diagnóstico ortopédico, e **3% a 10%** precisam de nova cirurgia por falha do implante ou da fixação. Recuperam menos a marcha os pacientes com **85 anos ou mais**, ASA III ou IV, fratura do colo e cirurgia atrasada; o padrão **intertrocantérico** tem prognóstico de marcha melhor que o do colo. O tipo de implante e de anestesia não mudou a recuperação da marcha em 1 ano.
+
 !questoes relacionadas=trauma-0476
 conceito: O prognóstico funcional do idoso com fratura do fêmur proximal é reservado.
 como: A banca pede a proporção de idosos que recupera a função prévia. O capítulo dá o outro lado da mesma moeda: de 30% a 50% perdem algum grau de independência.
-alerta: No ENARE R4 2023 (trauma-0476), o gabarito oficial foi "apenas um terço recupera a condição funcional prévia". O Rockwood não traz esse número; ele diz que 30% a 50% perdem algum grau de independência, o que sugere uma recuperação maior. Guarde o gabarito da banca para essa prova e o conceito do livro: a recuperação completa é a exceção, e não a regra.
+alerta: No ENARE R4 2023 (trauma-0476), o gabarito oficial foi "apenas um terço recupera a condição funcional prévia". O Rockwood não traz esse número; ele diz que 30% a 50% perdem algum grau de independência, o que sugere uma recuperação maior. O Skeletal Trauma, 5ª ed. (cap. 21, p. 563), chega mais perto da banca: só 41% recuperam a marcha prévia, e de 33% a 73% recuperam as atividades básicas. Guarde o gabarito da banca para essa prova e o conceito dos livros: a recuperação completa é a exceção, e não a regra.
 !fim
 
 ## A fratura sentinela
@@ -103,7 +105,7 @@ Nomes como pertrocantérica e intertrocantérica têm definições variadas; o c
 
 !questoes central=trauma-0544 relacionadas=trauma-0887 treino=trauma-1568,trauma-1569
 conceito: AO 31A1 simples e estável, 31A2 multifragmentária, 31A3 de traço reverso ou transverso com parede lateral rompida.
-como: A banca mostra o desenho e pede o código, ou usa outra classificação (como a de Tronzo, em que o tipo V é a obliquidade reversa) para chegar ao mesmo ponto: traço reverso pede haste cefalomedular.
+como: A banca mostra o desenho e pede o código, ou usa outra classificação (como a de TRONZO, em que o tipo V é o traço invertido, equivalente à AO 31-A3 segundo o HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 58) para chegar ao mesmo ponto: traço reverso pede haste cefalomedular.
 !fim
 
 ## Por que a parede lateral importa
@@ -149,7 +151,7 @@ O **parafuso deslizante do quadril** (DHS, parafuso de compressão) foi por déc
 
 Variações: a **placa de estabilização trocantérica** se encaixa no DHS e faz o papel da parede lateral, resistindo à medialização (ainda usada, mas a haste é hoje o padrão nas instáveis); a **placa de Medoff** desliza também no eixo do fêmur, útil nas A3; a **placa de compressão percutânea** (Gottfried) tem resultados semelhantes em séries limitadas.
 
-**Placa-lâmina e parafuso condilar de 95°** dão fixação rígida, sem colapso controlado: **alta taxa de falha** nas A3, foram substituídos pela haste. A **placa bloqueada do fêmur proximal** também é estática e falha muito como tratamento primário; talvez sirva no jovem com fratura complexa e bom osso ou em fraturas periprotéticas.
+**Placa-lâmina e parafuso condilar de 95°** dão fixação rígida, sem colapso controlado: **alta taxa de falha** nas A3, foram substituídos pela haste. Aqui os livros divergem: o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54, figura 54-18, pág. PDF 2709), diz que a placa condilar de 95° no traço reverso **não pode ser recomendada**; o HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 58), considera a haste bloqueada melhor no traço invertido, mas aceita as **placas de 95° do sistema DCS** como outra opção. A **placa bloqueada do fêmur proximal** também é estática e falha muito como tratamento primário; talvez sirva no jovem com fratura complexa e bom osso ou em fraturas periprotéticas.
 
 ## Haste cefalomedular
 
@@ -297,6 +299,8 @@ Os dois livros descrevem a AO com palavras um pouco diferentes, e vale juntar as
 | 31A3 | Traço reverso ou horizontal do trocânter menor à cortical lateral; forma em cunha com cominuição de A2 | Obliquidade reversa, transversa ou extensão subtrocantérica; traço pela cortical lateral abaixo da crista do vasto |
 !fim
 
+A classificação de **TRONZO**, que o HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 58), lista ao lado de Evans e BOYD-GRIFFIN, não é detalhada em nenhum livro do acervo. A descrição vem de OLIVEIRA e colaboradores (Revista Brasileira de Ortopedia, 2014;49(6):581-585), que a apresentam como modificação da de BOYD e GRIFFIN em cinco tipos. Estáveis: o **tipo I** é a fratura incompleta; o **tipo II** é completa e pode ter fratura do trocânter menor, mas **sem cominuição posteromedial**. Instáveis: no **tipo III** há cominuição posteromedial e a diáfise vai para medial, com o calcar proximal encaixado nela; se o trocânter maior também está fraturado, é a **variante do tipo III**; no **tipo IV** a diáfise vai para **lateral**, o traço é mais vertical e a cominuição costuma ser maior; o **tipo V** tem **traço invertido**, de lateral para medial e de distal para proximal. No mesmo estudo, com 12 observadores, a concordância da classificação completa foi apenas moderada (kappa de 0,44), e os autores a consideraram inadequada para a prática clínica.
+
 ## A basocervical, vizinha que engana
 
 A basocervical (31B2.1) corre ao longo da linha intertrocantérica e se confunde com a A1. O Rockwood lembra que as duas podem cruzar a inserção da cápsula, sendo ao mesmo tempo intra e extracapsulares, e que o tratamento é parecido, com **taxa um pouco maior de colapso** na basocervical. O Campbell é mais duro: ela é **extracapsular**, rara (estimativas de **1,6%** das fraturas do quadril), frequentemente mal classificada e **mais instável** que a intertrocantérica; **parafusos canulados não são ideais**. Numa série de WATSON, **6 de 11** basocervicais tratadas com haste falharam, 5 por cut-out, apesar de distância ponta-ápice abaixo de 22 mm (média de 17,4 mm), e nenhuma tinha parafuso antirrotacional. A lição: a regra dos 25 mm não protege uma fratura que roda em torno do parafuso.
@@ -320,23 +324,23 @@ Três consequências práticas saem daí. Primeiro, a parede lateral quase sempr
 
 A medida da espessura, que o resumo atribuiu à literatura do comentário, está no Campbell (figura de PRADEEP): parte de um ponto **3 cm abaixo do tubérculo inominado** do trocânter maior, sobe **angulada a 135°** e termina no **traço de fratura do fragmento distal**, no AP.
 
-O Rockwood mostra o que acontece quando o DHS é usado sem parede: o parafuso entra **direto no foco**, desliza demais e o fêmur medializa (um caso da figura do capítulo chegou a **75%** de medialização, com parafuso de 80 mm e tubo curto). Se todo o curso de deslizamento acaba antes da consolidação, há dois finais: o parafuso mal posicionado **corta a cabeça**; o bem posicionado transfere a falha para baixo e a **placa se solta do fêmur**. A haste resiste melhor porque sua parte proximal se apoia contra o colo superior, embora alguma medialização ainda possa ocorrer. Placas de 95° e placas-lâmina, estáticas, falham muito e o Rockwood diz que **não podem ser recomendadas** nesse traço. A tabela de diretrizes da AAOS reproduzida no Campbell resume: **subtrocantérica ou obliquidade reversa, dispositivo cefalomedular**.
+O Rockwood mostra o que acontece quando o DHS é usado sem parede: o parafuso entra **direto no foco**, desliza demais e o fêmur medializa (um caso da figura do capítulo chegou a **75%** de medialização, com parafuso de 80 mm e tubo curto). Se todo o curso de deslizamento acaba antes da consolidação, há dois finais: o parafuso mal posicionado **corta a cabeça**; o bem posicionado transfere a falha para baixo e a **placa se solta do fêmur**. A haste resiste melhor porque sua parte proximal se apoia contra o colo superior, embora alguma medialização ainda possa ocorrer. Placas de 95° e placas-lâmina, estáticas, falham muito e o Rockwood diz que **não podem ser recomendadas** nesse traço; o HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 58), diverge e aceita a placa de 95° do sistema DCS como opção à haste bloqueada na fratura de traço invertido (AO 31-A3 ou TRONZO V). A tabela de diretrizes da AAOS reproduzida no Campbell resume: **subtrocantérica ou obliquidade reversa, dispositivo cefalomedular**.
 
 !questoes central=trauma-1141
 conceito: No traço reverso (31A3) falta a parede lateral; o DHS isolado deixa o fêmur medializar e implantes estáticos (placa de 95°, lâmina) falham; a AAOS indica haste cefalomedular.
 como: O TARO 2008 perguntou qual implante é contraindicado na transtrocantérica de traço reverso.
 armadilha: Placa de estabilização trocantérica com DHS: ainda aceitável segundo o Rockwood, embora a haste seja hoje o padrão.
-alerta: O gabarito de `trauma-1141` não está registrado no acervo. Os livros não usam a palavra "contraindicado": o Rockwood diz que placa de 95° e lâmina "não podem ser recomendadas" e que o DHS só é aceitável com placa de estabilização; a AAOS (no Campbell) indica a haste. Confira a alternativa oficial antes de fixar a resposta.
+alerta: O gabarito de `trauma-1141` não está registrado no acervo. Os livros não usam a palavra "contraindicado": o Rockwood diz que placa de 95° e lâmina "não podem ser recomendadas" e que o DHS só é aceitável com placa de estabilização; a AAOS (no Campbell) indica a haste. Já o HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 58), aceita a placa de 95° (DCS) nesse traço, então ela dificilmente seria a contraindicada numa prova brasileira; o DHS isolado é o implante que todos os livros desaconselham. Confira a alternativa oficial antes de fixar a resposta.
 !fim
 
 ## E a osteotomia de SARMIENTO?
 
-Provas antigas cobravam as osteotomias que buscavam estabilidade mecânica antes da era da haste, como a de SARMIENTO. Nenhum dos dois livros atuais descreve essa osteotomia para a fratura transtrocantérica: o Rockwood e o Campbell resolvem a instabilidade pela **escolha do implante** (haste nas instáveis, placa de estabilização quando se usa DHS) e pela **redução em valgo leve**, nunca em varo. Saiba que a questão existe e trate-a como fato histórico.
+Provas antigas cobravam os métodos que buscavam estabilidade mecânica antes da era da haste, como os de SARMIENTO e de DIMON-HUGHSTON. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 58), cita os dois pelo nome: na mesa ortopédica, a **redução anatômica** foi superior a esses métodos, que priorizam teoricamente a estabilidade, mas demandam **mais tempo cirúrgico**, **mais sangramento** e têm **mais falha de consolidação**. O Skeletal Trauma, 5ª ed. (cap. 55, p. 1695 e 1696), descreve as duas osteotomias da época dos implantes de ângulo fixo: a **osteotomia de deslocamento medial**, que impacta a ponta medial do fragmento proximal no canal medular do distal medializado, e a **osteotomia em valgo** do fêmur proximal, que deixa o traço mais transverso. Os estudos não mostraram benefício clínico, mostraram mais morbidade e mais falha da fixação; hoje elas têm valor histórico na fratura aguda e podem servir na falha da fixação e na pseudartrose. O Rockwood e o Campbell nem as descrevem e resolvem a instabilidade pela **escolha do implante** (haste nas instáveis, placa de estabilização quando se usa DHS) e pela **redução em valgo leve**, nunca em varo. Saiba que a questão existe e trate-a como fato histórico.
 
 !questoes relacionadas=trauma-1154
 conceito: As osteotomias de estabilização da transtrocantérica são históricas; os livros atuais tratam a instabilidade com haste cefalomedular e redução sem varo.
 como: O TARO 2009 perguntou com que angulação se faz a osteotomia de SARMIENTO.
-alerta: Nem o Rockwood and Green's Fractures in Adults, 10ª ed., nem o Campbell's Operative Orthopaedics, 15ª ed., descrevem a osteotomia de SARMIENTO, e o gabarito de `trauma-1154` não está registrado no acervo. Não há como sustentar o ângulo por estas fontes.
+alerta: O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 58), cita o método de SARMIENTO sem dar o ângulo, o Skeletal Trauma, 5ª ed. (cap. 55, p. 1696), descreve a osteotomia em valgo sem número, e o Rockwood and Green's Fractures in Adults, 10ª ed., e o Campbell's Operative Orthopaedics, 15ª ed., não a descrevem; o gabarito de `trauma-1154` não está registrado no acervo. Não há como sustentar o ângulo por estas fontes.
 !fim
 
 # DHS ou haste: o que os estudos mostram {radar=fundamento}

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-61-luxacao-joelho
-versao: 3
+versao: 4
 titulo: Luxação do joelho e lesão multiligamentar
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 61 · Knee Dislocations
 autores: James P. Stannard e Jarod A. Richards
-fonte: Capítulo enviado pelo Tales em 16/10/2026 (joelho_dislocation.pdf, 63 páginas)
+fonte: Capítulo enviado pelo Tales em 16/10/2026 (joelho_dislocation.pdf, 63 páginas); consultas ao Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (p. 2095 e 2110). As páginas citadas são as impressas.
 subtemas: Luxação do joelho e lesões ligamentares; Luxação do joelho; Canto posterolateral; Lesão do ligamento cruzado posterior; Ligamento colateral medial; Vias de acesso ao joelho
 resumo: Artéria poplítea e índice tornozelo-braquial, Schenck, canto posterolateral, cruzado posterior, nervo fibular, luxação irredutível e a ordem da reconstrução: o joelho luxado explicado pelo que a prova cobra.
 ---
@@ -28,7 +28,7 @@ A luxação do joelho é rara de ver, mas não de acontecer: **quase sempre cheg
 - **luxação anterior** (o fêmur vai para trás da tíbia): a artéria é **estirada**, uma lesão por **tração**;
 - **luxação posterior** (a tíbia vai para trás): a artéria é **comprimida diretamente** pela tíbia, uma lesão **contusa**.
 
-A gravidade vai de uma pequena lesão da íntima até a secção completa. As estimativas de frequência variam muito (**5% a 50%** conforme o exame usado e a série); historicamente se falava em 7% a 40%, e estudos mais recentes apontam **7% a 15%**. No grande banco americano citado (6.454 luxações), houve lesão vascular em **15%**, e **10,8%** precisaram de procedimento vascular.
+A gravidade vai de uma pequena lesão da íntima até a secção completa. As estimativas de frequência variam muito (**5% a 50%** conforme o exame usado e a série); historicamente se falava em 7% a 40%, e estudos mais recentes apontam **7% a 15%**. No grande banco americano citado (6.454 luxações), houve lesão vascular em **15%**, e **10,8%** precisaram de procedimento vascular. O Campbell 15 (cap. 50, p. 2110) vai além do Rockwood na direção: a lesão da poplítea é comum na luxação do joelho, **especialmente na anterior**, porque a artéria relativamente fixa é estirada, com ruptura da íntima e possível oclusão.
 
 !figura 61-19
 Trajeto da artéria poplítea atrás do joelho, com os pontos de fixação no hiato dos adutores e no arco do sóleo que a expõem na luxação, e a proximidade da artéria com a face posterior da tíbia durante a cirurgia do cruzado posterior.
@@ -72,7 +72,7 @@ A **angiotomografia** virou o exame de triagem: o contraste entra por uma veia d
 !questoes central=trauma-0802 treino=trauma-1620
 conceito: A lesão da poplítea na luxação anterior é por tração (estiramento da artéria fixa); na posterior, por compressão direta da tíbia.
 como: O TARO 2025 perguntou em que direção de luxação a lesão da poplítea é mais comum, com as quatro direções como alternativas.
-alerta: O gabarito oficial do TARO 2025 foi a luxação anterior. O Rockwood não diz qual direção lesa mais a poplítea; ele explica que a tração se associa à luxação anterior e a compressão, à posterior. A resposta da banca segue a ideia clássica de que a hiperextensão (luxação anterior) estira a artéria fixa; guarde o gabarito e o mecanismo do livro.
+armadilha: Luxação posterior: a compressão direta pela tíbia também lesa a artéria, mas o Campbell 15 (cap. 50, p. 2110) diz que a lesão da poplítea é especialmente comum na luxação anterior, pelo estiramento da artéria fixa; foi o gabarito oficial do TARO 2025.
 !fim
 
 ## Tempo, fixador e fasciotomia
@@ -241,12 +241,11 @@ armadilha: Sóleo: não entra no defeito capsular que o capítulo descreve, que 
 
 ## Função
 
-O cruzado posterior dá a maior parte da restrição à translação posterior em todos os ângulos e **95%** dela entre 30° e 90°. É restritor **secundário** do varo (só aumenta o varo se o canto também estiver cortado), do valgo e das rotações. Um detalhe que a prova pode usar: num estudo em cadáver, o **ligamento poplíteo oblíquo** foi o principal restritor ligamentar da **hiperextensão**; cortá-lo aumentou a hiperextensão tanto quanto, ou mais que, cortar os dois cruzados juntos.
+O cruzado posterior dá a maior parte da restrição à translação posterior em todos os ângulos e **95%** dela entre 30° e 90°. É restritor **secundário** do varo (só aumenta o varo se o canto também estiver cortado), do valgo e das rotações. Um detalhe que a prova pode usar: num estudo em cadáver, o **ligamento poplíteo oblíquo** foi o principal restritor ligamentar da **hiperextensão**; cortá-lo aumentou a hiperextensão tanto quanto, ou mais que, cortar os dois cruzados juntos. A ordem entre os cruzados está no Campbell 15 (cap. 50, p. 2095): o posterior só freia a hiperextensão **depois da ruptura do cruzado anterior**.
 
 !questoes relacionadas=joelho-0186 treino=joelho-0358
-conceito: Na hiperextensão, o cruzado posterior é restritor secundário; o capítulo destaca o ligamento poplíteo oblíquo, expansão do semimembranáceo, como o principal restritor ligamentar.
-como: O TEOT 2025 perguntou quando o cruzado posterior passa a segurar a hiperextensão.
-alerta: O gabarito oficial do TEOT 2025 foi que o cruzado posterior age como restritor depois da ruptura do cruzado anterior. O Rockwood não trata da ordem entre os dois cruzados na hiperextensão; ele mostra que o poplíteo oblíquo pesa tanto quanto os dois cruzados juntos. Não há conflito, mas a resposta da banca usa uma informação que este capítulo não traz.
+conceito: Na hiperextensão, o cruzado posterior é restritor secundário: pelo Campbell 15 (cap. 50, p. 2095), ele só passa a segurar a hiperextensão depois da ruptura do cruzado anterior; o Rockwood destaca o ligamento poplíteo oblíquo, expansão do semimembranáceo, como o principal restritor ligamentar.
+como: O TEOT 2025 perguntou quando o cruzado posterior passa a segurar a hiperextensão; o gabarito oficial, depois da ruptura do cruzado anterior, é o que diz o Campbell 15 (cap. 50, p. 2095), que também lhe dá 89% da resistência à translação posterior.
 !fim
 
 ## Como se rompe e a via inlay

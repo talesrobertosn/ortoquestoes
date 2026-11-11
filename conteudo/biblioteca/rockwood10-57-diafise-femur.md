@@ -1,6 +1,6 @@
 ---
 id: rockwood10-57-diafise-femur
-versao: 1
+versao: 2
 titulo: Fratura da diáfise do fêmur
 especialidade: trauma
 acesso: gratis
@@ -316,7 +316,7 @@ O objetivo da haste é restaurar **comprimento, alinhamento e rotação**, sem r
 
 **Comprimento.** Na fratura cominutiva, o traço não diz o comprimento: radiografe o **fêmur contralateral** antes de começar e meça com régua radiopaca do **trocanter maior à cicatriz fisária** do lado sadio. Na bilateral, comece pelo lado mais simples e iguale o outro. Para ganhar comprimento: paralisia muscular, mesa de tração, pino femoral distal, distrator femoral e pinos de SCHANZ como manipuladores. Numa série de 28 cominutivas, 36% ficaram com mais de 10 mm de diferença.
 
-**Rotação.** A má rotação acima de **10 graus** pode chegar a **40%**, e acima de **15 graus**, a **19%**. Tolera-se tradicionalmente até 15 graus: 38% dos pacientes com mais de 15 graus tinham sintomas, 12% entre 10 e 15 e nenhum abaixo de 10; a rotação **externa** é a menos tolerada, e mais de 10 graus na TC piorou os escores e a dor anterior no joelho. Diferença acima de **15 graus** indica trocar os parafusos de bloqueio.
+**Rotação.** A má rotação acima de **10 graus** pode chegar a **40%**, e acima de **15 graus**, a **19%**. Tolera-se tradicionalmente até 15 graus: 38% dos pacientes com mais de 15 graus tinham sintomas, 12% entre 10 e 15 e nenhum abaixo de 10; a rotação **externa** é a menos tolerada, e mais de 10 graus na TC piorou os escores e a dor anterior no joelho. Diferença acima de **15 graus** indica trocar os parafusos de bloqueio. O capítulo 55 (subtrocantérica) dá os limites para revisar antes de acordar o paciente: radiografia em rotação interna máxima para afastar fratura do colo, conferência de comprimento, rotação e estabilidade do joelho e **revisão na mesma anestesia** se a má rotação passar de **15 graus** ou a discrepância de comprimento passar de **2 cm**.
 
 !tabela Como controlar a rotação
 | Método | Como | Limite |
@@ -405,6 +405,6 @@ Pseudartrose após placa: haste fresada, com consolidação em todos (4 a 8 mese
 conceito: A pseudartrose após haste fresada é rara; exposta e não fresada são os preditores; a troca por haste fresada funciona no istmo, e fora dele a placa de aumento com a haste mantida tem os melhores resultados.
 como: O TARO 2013 perguntou um fator relacionado à pseudartrose após haste (anti-inflamatório não hormonal, contra obesidade, sol e cálcio); o TARO 2006, sem gabarito no acervo, afirmou que a primeira indicação seria a troca por haste mais grossa.
 armadilha: Troca de haste para toda pseudartrose: na não ístmica, consolidou só 50%.
-alerta: O capítulo 57 não discute anti-inflamatórios (TARO 2013, trauma-1095); para ele, os preditores de pseudartrose são a fratura exposta e a haste não fresada, além da carga tardia e da distração.
+alerta: O capítulo 57 não discute anti-inflamatórios (TARO 2013, trauma-1095); para ele, os preditores de pseudartrose são a fratura exposta e a haste não fresada, além da carga tardia e da distração. O capítulo 30 (pseudartrose) responde: os AINEs foram implicados na pseudartrose (metanálise com mais de 10.000 pacientes, razão de chances de 3, e de 4,4 só nos estudos de osso longo de qualidade moderada), embora o uso curto no pós-operatório pareça trazer pouco risco; o mesmo capítulo lista obesidade, estado nutricional e deficiência de vitamina D entre os fatores do paciente, e achou deficiência de vitamina D em 25 de 37 pseudartroses (68%). A obesidade, um dos distratores, também aparece como fator no capítulo 30; o gabarito da banca é o AINE.
 alerta: O simulado conceitos-basicos-0376, feito de outro capítulo, aumenta a nova haste em 1 a 2 mm; o capítulo 57 recomenda 1 a 3 mm.
 !fim
