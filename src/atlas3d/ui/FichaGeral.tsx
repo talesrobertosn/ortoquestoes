@@ -4,12 +4,17 @@ import type { Area, Estrutura } from '../tipos'
 import { nomeDe, temNomePt } from '../dados/nomes'
 import { CORES_RELACAO, ROTULO_RELACAO, type Relacao } from '../dados/relacoes'
 
-/** Onde a estrutura fica na anatomia sistemática: "Sistema muscular › Músculos do membro superior › …". */
-export function Trilha({ passos }: { passos: string[] }) {
+/**
+ * Onde a estrutura fica na anatomia sistemática: "Sistema muscular › Músculos do membro superior › …".
+ * Cada passo é um botão que abre aquele grupo inteiro no modelo (navegar por sistema).
+ */
+export function Trilha({ passos, aoAbrir }: { passos: { nome: string; no: number }[]; aoAbrir?: (no: number) => void }) {
   if (!passos.length) return null
   return (
     <nav className="at-trilha" aria-label="Onde fica">
-      <ol>{passos.map((p, i) => <li key={`${i}-${p}`}>{p}</li>)}</ol>
+      <ol>{passos.map((p) => (
+        <li key={p.no}>{aoAbrir ? <button type="button" onClick={() => aoAbrir(p.no)} title={`Ver todo o grupo: ${p.nome}`}>{p.nome}</button> : p.nome}</li>
+      ))}</ol>
     </nav>
   )
 }

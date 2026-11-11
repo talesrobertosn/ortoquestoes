@@ -29,7 +29,7 @@ export const GRUPOS: Record<Grupo, DefGrupo> = {
   encefalo: { rotulo: 'Encéfalo', camada: 'brain', cor: 0xd5a2a8, opacidade: 1, deslocamento: -0.7, secundario: true },
   dente: { rotulo: 'Dentes', camada: 'tooth', cor: 0xf0ead6, opacidade: 1, deslocamento: -1.1, secundario: true },
   // útero, colo, ovários e tubas (HuBMAP) encaixados na pelve do modelo; ligar esconde os órgãos masculinos
-  feminino: { rotulo: 'Pelve feminina', camada: 'female', cor: 0xc9727e, opacidade: 1, deslocamento: -0.8, secundario: true },
+  feminino: { rotulo: 'Útero e ovários', camada: 'female', cor: 0xc9727e, opacidade: 1, deslocamento: -0.8, secundario: true },
   // superfície do corpo dividida em regiões topográficas: translúcida por cima de tudo
   regiao: { rotulo: 'Regiões do corpo', camada: 'region', cor: 0xd9a98c, opacidade: 0.35, deslocamento: -0.5, secundario: true },
 }

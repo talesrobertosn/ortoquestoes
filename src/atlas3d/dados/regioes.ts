@@ -6,6 +6,7 @@ import { Box3, Vector3 } from 'three'
  * região mostra tudo o que cruza a caixa (nervos e vasos longos inclusive).
  */
 export type IdRegiao = 'ombro' | 'braco' | 'cotovelo' | 'antebraco' | 'punho-mao' | 'coluna' | 'pelve-quadril' | 'coxa' | 'joelho' | 'perna' | 'tornozelo-pe'
+  | 'cabeca-pescoco' | 'torax' | 'abdome' | 'pelve'
 export type Lateralidade = 'ambos' | 'd' | 'e'
 
 export interface Regiao {
@@ -40,7 +41,18 @@ export const REGIOES: Regiao[] = [
   { id: 'perna', area: 'trauma', nome: 'Perna', resumo: 'Diáfises da tíbia e da fíbula', caixa: [20, -100, 60, 180, 120, 460], membro: true, subtemas: [] },
 ]
 
-export function regiaoPorId(id: string | null | undefined) { return REGIOES.find((r) => r.id === id) }
+/**
+ * Regiões do Corpo inteiro: cabeça e pescoço, tórax, abdome e pelve, medidas nas caixas do modelo
+ * (C1 em ~1540 mm, esterno de 1240 a 1360, sacro de 865 a 980).
+ */
+export const REGIOES_CORPO: Regiao[] = [
+  { id: 'cabeca-pescoco', area: 'coluna', nome: 'Cabeça e pescoço', resumo: 'Crânio, face, encéfalo, faringe e laringe', caixa: [-130, -170, 1420, 130, 150, 1760], membro: false, subtemas: [] },
+  { id: 'torax', area: 'coluna', nome: 'Tórax', resumo: 'Coração, pulmões, mediastino e parede', caixa: [-190, -170, 1180, 190, 150, 1450], membro: false, subtemas: [] },
+  { id: 'abdome', area: 'coluna', nome: 'Abdome', resumo: 'Fígado, estômago, intestinos, rins', caixa: [-190, -170, 930, 190, 150, 1240], membro: false, subtemas: [] },
+  { id: 'pelve', area: 'quadril', nome: 'Pelve e períneo', resumo: 'Bexiga, reto e órgãos genitais', caixa: [-160, -130, 760, 160, 140, 990], membro: false, subtemas: [] },
+]
+
+export function regiaoPorId(id: string | null | undefined) { return REGIOES.find((r) => r.id === id) ?? REGIOES_CORPO.find((r) => r.id === id) }
 
 /** Caixas da região conforme o lado escolhido (direito do paciente = −X). */
 export function caixasDaRegiao(r: Regiao, lado: Lateralidade): Box3[] {

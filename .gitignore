@@ -36,6 +36,7 @@ tsconfig.tsbuildinfo
 /public/resumos/
 /public/sitemap.xml
 /public/sitemap-imagens-questoes.xml
+/public/sitemap-imagens-atlas.xml
 # Páginas de destino e textos para assistentes de IA (scripts/gerar_paginas_destino.py).
 /public/banco-de-questoes-ortopedia/
 /public/teot/
@@ -49,6 +50,7 @@ tsconfig.tsbuildinfo
 /public/sobre/
 /public/licenca-de-imagens/
 /public/atlas-3d/
+/public/atlas-3d-online/
 /public/esqueleto-humano-3d/
 /public/musculos-do-corpo-humano-3d/
 /public/llms.txt

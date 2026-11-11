@@ -42,6 +42,13 @@ const MANUAL = {
   'ureter': 'Ureter', 'fascia lata': 'Fáscia lata', 'linea alba': 'Linha alba', 'cauda equina': 'Cauda equina', 'chorda tympani': 'Corda do tímpano',
   'nervous system & sense organs': 'Sistema nervoso e órgãos dos sentidos', 'palm': 'Palma da mão', 'semimembranosus bursa': 'Bolsa do semimembranáceo',
   'middle genicular artery': 'Artéria média do joelho', 'extensor carpi ulnaris': 'Extensor ulnar do carpo', 'uterine tube': 'Tuba uterina', 'levator ani': 'Levantador do ânus', 'subfacial prepatellar bursa': 'Bolsa pré-patelar subfascial',
+  // nós da hierarquia que a TA2 deixa em inglês ou em latim (11/11/2026)
+  'teeth': 'Dentes', 'anterior teeth': 'Dentes anteriores', 'posterior teeth': 'Dentes posteriores', 'sense organs': 'Órgãos dos sentidos',
+  'adductor hallucis': 'Adutor do hálux', 'adductor hallucis muscle': 'Adutor do hálux', 'adductor magnus': 'Adutor magno', 'adductor magnus muscle': 'Adutor magno',
+  'flexor hallucis brevis': 'Flexor curto do hálux', 'flexor hallucis brevis muscle': 'Flexor curto do hálux', 'gluteal nodes': 'Linfonodos glúteos',
+  'grey matter of medulla oblongata': 'Substância cinzenta do bulbo', 'insular branches of middle cerebral artery m2-segment': 'Ramos insulares da artéria cerebral média (M2)',
+  'middle cerebral artery m3 segment': 'Artéria cerebral média (segmento M3)', 'prefrontal artery': 'Artéria pré-frontal',
+  'superior deep lateral nodes': 'Linfonodos cervicais laterais profundos superiores', 'temporo-occipital branch': 'Ramo temporoccipital',
 }
 /** Acabamento: grafia brasileira e erros conhecidos da coluna portuguesa da TA2. */
 function polir(pt) {
@@ -166,7 +173,8 @@ function no(nome) {
   const o = porNome.get(nome)
   let pai = o?.pai ? no(o.pai) : -1
   const en = semSufixo(nome)
-  const pt = polir(ptDe(en, undefined, '') ?? en)
+  const bruto = polir(ptDe(en, undefined, '') ?? en)
+  const pt = MANUAL[norm(bruto)] ?? bruto
   // "Região posterior do joelho" (lado) › "Região posterior do joelho" (grupo): um só degrau
   if (pai >= 0 && nos[pai][0] === pt) { indiceNo.set(nome, pai); return pai }
   const i = nos.length

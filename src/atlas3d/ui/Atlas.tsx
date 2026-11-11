@@ -3,8 +3,8 @@ import { Motor, type Corte, type EixoCorte, type Passagem, type Vista } from '..
 import { carregarAreas, carregarArvore, carregarCatalogo, carregarNomesTa2, carregarPontos } from '../motor/carregador'
 import { GRUPOS, ORDEM_GRUPOS, grupoDe } from '../config'
 import type { Arvore, Catalogo, Estrutura, Grupo, Ponto, Selecao } from '../tipos'
-import { REGIOES, caixasDaRegiao, regiaoPorId, type Lateralidade } from '../dados/regioes'
-import { LADO, nomeCompleto, nomeDe, registrarNomes, registrarNomesTa2 } from '../dados/nomes'
+import { REGIOES, REGIOES_CORPO, caixasDaRegiao, regiaoPorId, type Lateralidade } from '../dados/regioes'
+import { nomeCompleto, nomeDe, registrarNomes, registrarNomesTa2 } from '../dados/nomes'
 import { fichaDe, carregarVinculos, type Vinculo } from '../dados/fichas'
 import { buscar } from '../dados/busca'
 import { Icone } from '../../componentes/Icone'
@@ -26,19 +26,25 @@ import { CORES_RELACAO, areasDoMusculo, areasNoOsso, fixadosNoOsso, idsDoRegistr
 import { AreasDoOsso, FichaGeral, Trilha } from './FichaGeral'
 import { faixaPorAltura } from '../dados/faixas'
 import { CORES_PRESET, PRESETS, type Preset } from '../dados/presets'
-import { corDaArea } from '../../dados/coresAreas'
+import { GRUPOS_DO_MODO, SISTEMAS, SO_CORPO, caminhoDoNo, indexarArvore, nosDoSistema, type Modo, type Sistema } from '../dados/modos'
+import { PainelExplorar } from './PainelExplorar'
+import { Navegador } from './Navegador'
+import { ModoEstudo } from './ModoEstudo'
+import { Rotulos } from './Rotulos'
+import { hex } from './cor'
 import '../../estilos/paginas/Atlas3D.css'
 
 /** Na conta grátis: ossos e músculos. O resto, para assinantes (aparece por alguns segundos e convida). */
 const GRATIS = new Set<Grupo>(['osso', 'musculo'])
 const PREVIA_MS = 3000
-interface Preferencias { recentes: string[]; favoritos: string[]; dicasVistas: boolean }
+interface Preferencias { recentes: string[]; favoritos: string[]; dicasVistas: boolean; rotulos?: boolean }
 const PREF_PADRAO: Preferencias = { recentes: [], favoritos: [], dicasVistas: false }
-
+/** Um sistema aberto (ou uma parte dele): os nós da hierarquia e como mostrar. */
+interface Aberto { nos: number[]; titulo: string; cor?: string; sistema?: string }
 
 /**
- * Atlas Ortopédico 3D. Abre como pop-up por cima do site (como os flashcards) e
- * também pelo endereço #/atlas/<região>?e=<estrutura>&f=<faixa>&lado=d|e.
+ * Atlas 3D. Abre como pop-up por cima do site (como os flashcards) e também pelo endereço
+ * #/atlas/<região>?e=<estrutura>&f=<faixa>&lado=d|e&m=corpo. Dois modos: Ortopedia (a casa) e Corpo inteiro.
  */
 export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; consulta: URLSearchParams; aoFechar: () => void }) {
   const palco = useRef<HTMLDivElement>(null)
@@ -69,11 +75,14 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const [vinculos, definirVinculos] = useState<Record<string, Vinculo> | null>(null)
   const [isolado, definirIsolado] = useState(false)
   const [pref, definirPref] = usarArmazenado<Preferencias>('atlas3d:preferencias', PREF_PADRAO)
+  // sempre abre na Ortopedia (Tales, 11/11/2026); o Corpo inteiro de entrada só por link que peça (m=corpo)
+  const [modo, definirModo] = useState<Modo>(() => (consulta.get('m') === 'corpo' ? 'corpo' : 'ortopedia'))
   const { sessao } = usarConta()
   const { premium } = usarPremium()
   const nivel: 'visitante' | 'conta' | 'assinante' = !sessao ? 'visitante' : premium ? 'assinante' : 'conta'
   const [convite, definirConvite] = useState<TipoConvite | null>(null)
   const [guia, definirGuia] = useState(false)
+  const [aviso, definirAviso] = useState<string | null>(null)
   // banco anatômico e pontos do modelo: baixados uma vez, quando o atlas abre
   const [indice, definirIndice] = useState<IndiceAnatomico | null>(null)
   const [pontos, definirPontos] = useState<Map<string, Ponto> | null>(null)
@@ -81,6 +90,8 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const [contexto, definirContexto] = useState(false)
   const [pontosOsso, definirPontosOsso] = useState(false)
   const [preset, definirPreset] = useState<Preset | null>(null)
+  const [aberto, definirAberto] = useState<Aberto | null>(null)
+  const [estudo, definirEstudo] = useState(false)
   // do Z-Anatomy: áreas de origem e inserção, hierarquia (sistema › parte) e nomes da TA2
   const [idxAreas, definirIdxAreas] = useState<IndiceAreas | null>(null)
   const [arvore, definirArvore] = useState<Arvore | null>(null)
@@ -88,10 +99,12 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const toque = typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches
   const previa = useRef<ReturnType<typeof setTimeout> | null>(null)
   useEffect(() => () => { if (previa.current) clearTimeout(previa.current) }, [])
+  useEffect(() => { if (!aviso) return; const t = setTimeout(() => definirAviso(null), 2600); return () => clearTimeout(t) }, [aviso])
 
   const motor = motorRef.current
   const regiao = regiaoPorId(regiaoId)
   const estrutura = selecao && catalogo ? catalogo.estruturas.find((e) => e.id === selecao.id) : undefined
+  const idxArvore = useMemo(() => (arvore && catalogo ? indexarArvore(arvore, catalogo.estruturas) : null), [arvore, catalogo])
 
   // ---------- montar o motor ----------
   useEffect(() => {
@@ -117,8 +130,10 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       const e = consulta.get('e')
       const alvo = e ? cat.estruturas.find((x) => x.id === e) : undefined
       if (alvo) {
-        // link direto para um músculo: liga a camada (grátis); camadas de assinante seguem as regras do plano
+        // link direto: liga a camada grátis; camadas de assinante entram pelo efeito do plano (abaixo)
         const g = grupoDe(alvo)
+        // link de um órgão (ou outra camada do corpo inteiro): é o único caso em que o atlas abre fora da Ortopedia
+        if (SO_CORPO.has(g)) definirModo('corpo')
         if (!iniciais.includes(g) && GRATIS.has(g)) { definirLigados((atual) => new Set([...atual, g])); await m.ligarGrupo(g, true) }
         if (!vivo) return
         const f = (consulta.get('f') as Selecao['faixa']) || undefined
@@ -142,9 +157,39 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
+  // link direto para uma estrutura de camada de assinante (órgão, vaso…): quem assina já chega com a camada ligada
+  useEffect(() => {
+    const m = motorRef.current
+    if (!m || !estrutura || nivel !== 'assinante') return
+    const g = grupoDe(estrutura)
+    if (!ligados.has(g)) { definirLigados((a) => new Set([...a, g])); m.ligarGrupo(g, true) }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [estrutura?.id, nivel])
+
+  // aberto já no Corpo inteiro (link ou último modo usado): quem assina chega vendo os órgãos
+  const orgaosIniciais = useRef(false)
+  useEffect(() => {
+    if (orgaosIniciais.current || !catalogo || modo !== 'corpo' || nivel !== 'assinante') return
+    orgaosIniciais.current = true
+    if (!ligados.has('orgao')) mudarGrupoRef.current?.('orgao', true)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [catalogo, modo, nivel])
+  const mudarGrupoRef = useRef<((g: Grupo, ligar: boolean) => void) | null>(null)
+
+  // ---------- endereço: o que está aberto vira link ----------
+  const endereco = useCallback((extra?: (q: URLSearchParams) => void, regiaoNova: string | null = regiaoId) => {
+    const q = new URLSearchParams()
+    if (selecao) { q.set('e', selecao.id); if (selecao.faixa) q.set('f', selecao.faixa) }
+    if (lado !== 'ambos' && regiaoNova) q.set('lado', lado)
+    if (modo === 'corpo') q.set('m', 'corpo')
+    extra?.(q)
+    const s = q.toString()
+    return `/atlas${regiaoNova ? `/${regiaoNova}` : ''}${s ? `?${s}` : ''}`
+  }, [selecao, lado, modo, regiaoId])
+
   // ---------- seleção → ficha, endereço, recentes ----------
   useEffect(() => {
-    if (!selecao) { definirQuestoes(null); if (!larga) definirDetalhes(false); return }
+    if (!selecao) { definirQuestoes(null); if (!larga) definirDetalhes(false); navegar(endereco(), true); return }
     if (andandoNaTrilha.current) andandoNaTrilha.current = false
     else {
       const atual = trilha.current[posTrilha]
@@ -155,10 +200,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     }
     definirPref((p) => ({ ...p, recentes: [selecao.id, ...p.recentes.filter((r) => r !== selecao.id)].slice(0, 12) }))
     definirQuestoes(null)
-    const q = new URLSearchParams(consulta)
-    q.set('e', selecao.id)
-    if (selecao.faixa) q.set('f', selecao.faixa); else q.delete('f')
-    navegar(`/atlas${regiaoId ? `/${regiaoId}` : ''}?${q}`, true)
+    navegar(endereco(), true)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selecao?.id, selecao?.faixa])
 
@@ -171,23 +213,23 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       // no celular, o modal fica por cima sem mexer na câmera: só o cartão compacto conta
       if (!larga && detalhes) return
       const ficha = raiz?.querySelector<HTMLElement>('.atlas__ficha')
-      const cartao = raiz?.querySelector<HTMLElement>('.at-rapido')
+      const cartao = raiz?.querySelector<HTMLElement>('.at-rapido, .at-estudo, .at-nav')
       const direita = larga && ficha ? ficha.offsetWidth * 0.55 : 0
-      const inferior = !larga && cartao ? Math.min(cartao.offsetHeight, (raiz?.clientHeight ?? 0) * 0.3) * 0.8 : 0
+      const inferior = !larga && cartao ? Math.min(cartao.offsetHeight, (raiz?.clientHeight ?? 0) * 0.46) * 0.85 : 0
       m.definirMargens(direita, inferior)
     }
     medir()
     const t = setTimeout(medir, 260) // depois da transição de entrada do cartão e do painel
     return () => clearTimeout(t)
-  }, [estrutura?.id, larga, detalhes, questoes])
+  }, [estrutura?.id, larga, detalhes, questoes, estudo, aberto])
 
-  // ---------- ações ----------
+  // ---------- camadas e plano ----------
   /** Liga ou desliga uma camada respeitando o plano: sem conta, convida a criar a conta;
    * na conta grátis, camada de assinante aparece por alguns segundos e depois convida. */
   const mudarGrupo = useCallback(async (g: Grupo, ligar: boolean, depois?: () => void) => {
     const m = motorRef.current
     if (!m) return
-    if (nivel === 'visitante') { definirConvite({ tipo: 'conta' }); return }
+    if (nivel === 'visitante' && !(ligar && g === 'osso')) { definirConvite({ tipo: 'conta' }); return }
     definirLigados((atual) => { const novo = new Set(atual); if (ligar) novo.add(g); else novo.delete(g); return novo })
     await m.ligarGrupo(g, ligar)
     depois?.()
@@ -200,8 +242,12 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       }, PREVIA_MS)
     }
   }, [nivel])
+  mudarGrupoRef.current = mudarGrupo
   const alternarGrupo = useCallback((g: Grupo) => mudarGrupo(g, !ligados.has(g)), [ligados, mudarGrupo])
+  const podeLigar = (g: Grupo) => nivel === 'assinante' || (nivel === 'conta' && GRATIS.has(g))
+  const fechado = (g: Grupo) => nivel !== 'assinante' && !GRATIS.has(g)
 
+  // ---------- regiões ----------
   const escolherRegiao = useCallback((id: string | null, novoLado: Lateralidade = lado) => {
     const m = motorRef.current
     if (!m) return
@@ -214,18 +260,84 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     if (caixas) m.focar(caixas.reduce((a, b) => a.clone().union(b)), undefined)
     else m.enquadrarTudo()
     if (r?.vista) setTimeout(() => m.vista(r.vista!), 700)
-    navegar(`/atlas${id ? `/${id}` : ''}${novoLado !== 'ambos' ? `?lado=${novoLado}` : ''}`, true)
+    const q = new URLSearchParams()
+    if (novoLado !== 'ambos' && id) q.set('lado', novoLado)
+    if (modo === 'corpo') q.set('m', 'corpo')
+    navegar(`/atlas${id ? `/${id}` : ''}${q.toString() ? `?${q}` : ''}`, true)
     if (!larga) definirExplorar(false)
-  }, [lado, larga])
+  }, [lado, larga, modo])
 
+  // ---------- isolamentos: visualização pronta, sistema aberto, relações ----------
+  const soltarIsolamento = useCallback(() => {
+    motorRef.current?.isolar(null)
+    definirIsolado(false); definirPreset(null); definirAberto(null); definirContexto(false)
+  }, [])
+
+  /** Abre um sistema ou uma parte dele: liga as camadas, isola e enquadra. Quem não assina recebe o convite. */
+  const abrir = useCallback(async (a: Aberto) => {
+    const m = motorRef.current
+    if (!m || !idxArvore) return
+    const ids = [...new Set(a.nos.flatMap((n) => idxArvore.ids.get(n) ?? []))]
+    const grupos = [...new Set(ids.map((id) => m.grupoDe(id)).filter(Boolean) as Grupo[])]
+    const travado = grupos.find((g) => !podeLigar(g))
+    if (travado && nivel !== 'conta') { definirConvite(nivel === 'visitante' ? { tipo: 'conta' } : { tipo: 'assinante', grupo: travado }); return }
+    definirPreset(null); definirContexto(false)
+    m.selecionar(null)
+    // região de membro escondia o tronco: o sistema mostra onde ele estiver
+    if (regiaoId) { definirRegiaoId(null); m.definirRegiao(null) }
+    definirAberto(a)
+    m.isolar(ids)
+    definirIsolado(true)
+    await Promise.all(grupos.filter((g) => !ligados.has(g)).map((g) => mudarGrupo(g, true)))
+    const visiveis = ids.filter((id) => m.estaVisivel(id))
+    if (visiveis.length) m.focar(visiveis)
+    // o navegador do sistema assume o lugar do Explorar (o nome do sistema fica no botão do topo)
+    definirExplorar(false)
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [idxArvore, ligados, mudarGrupo, nivel, regiaoId, larga])
+  const abrirSistema = (s: Sistema) => { if (!idxArvore) return; abrir({ nos: nosDoSistema(idxArvore, s), titulo: s.nome, cor: s.cor, sistema: s.id }) }
+  const abrirNo = (no: number) => {
+    if (!idxArvore) return
+    const raiz = caminhoDoNo(idxArvore, no)[0]
+    const s = SISTEMAS.find((x) => nosDoSistema(idxArvore, x).some((n) => caminhoDoNo(idxArvore, no).includes(n)))
+    abrir({ nos: [no], titulo: idxArvore.arvore.n[no][0], cor: s?.cor, sistema: s?.id ?? String(raiz) })
+  }
+
+  // ---------- modo ----------
+  const trocarModo = useCallback((novo: Modo) => {
+    const m = motorRef.current
+    if (!m || novo === modo) return
+    definirModo(novo)
+    soltarIsolamento()
+    m.selecionar(null)
+    if (novo === 'ortopedia') {
+      // as camadas do corpo inteiro saem; a região do tronco volta ao corpo todo
+      for (const g of ligados) if (SO_CORPO.has(g)) { m.ligarGrupo(g, false) }
+      definirLigados((a) => new Set([...a].filter((g) => !SO_CORPO.has(g))))
+      if (regiaoId && REGIOES_CORPO.some((r) => r.id === regiaoId)) { definirRegiaoId(null); m.definirRegiao(null) }
+      m.enquadrarTudo()
+    } else {
+      if (regiaoId && REGIOES.some((r) => r.id === regiaoId)) { definirRegiaoId(null); m.definirRegiao(null) }
+      m.enquadrarTudo()
+      // quem assina já entra vendo os órgãos no lugar
+      if (nivel === 'assinante' && !ligados.has('orgao')) mudarGrupo('orgao', true)
+    }
+    if (larga) definirExplorar(true)
+    const q = new URLSearchParams()
+    if (novo === 'corpo') q.set('m', 'corpo')
+    navegar(`/atlas${q.toString() ? `?${q}` : ''}`, true)
+  }, [modo, ligados, regiaoId, nivel, larga, mudarGrupo, soltarIsolamento])
+
+  // ---------- ações da seleção ----------
   const focarSelecao = () => { if (selecao) motorRef.current?.focar([selecao.id], selecao.faixa) }
   const isolarSelecao = () => {
     const m = motorRef.current
     if (!m || !selecao) return
-    if (m.estaIsolado) { m.isolar(null); definirIsolado(false) } else { m.isolar([selecao.id]); definirIsolado(true); m.focar([selecao.id], selecao.faixa) }
+    if (m.estaIsolado) soltarIsolamento()
+    else { definirAberto(null); definirPreset(null); m.isolar([selecao.id]); definirIsolado(true); m.focar([selecao.id], selecao.faixa) }
   }
   const ocultarSelecao = () => { if (selecao) motorRef.current?.ocultar(selecao.id) }
-  const restaurar = () => { const m = motorRef.current; if (!m) return; definirPreset(null); m.isolar(null); m.mostrarTodas(); definirIsolado(false); m.definirCorte(null); definirCorteUI(null) }
+  const restaurar = () => { const m = motorRef.current; if (!m) return; soltarIsolamento(); m.mostrarTodas(); m.definirCorte(null); definirCorteUI(null) }
   const alternarFavorito = () => { if (!selecao) return; definirPref((p) => ({ ...p, favoritos: p.favoritos.includes(selecao.id) ? p.favoritos.filter((f) => f !== selecao.id) : [selecao.id, ...p.favoritos] })) }
 
   const irPara = (e: Estrutura) => {
@@ -233,8 +345,9 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     if (!m) return
     const g = grupoDe(e)
     const continuar = () => { m.selecionar({ id: e.id }); m.focar([e.id]) }
-    // a estrutura pode estar fora da região atual ou numa camada desligada
+    // a estrutura pode estar fora da região atual ou numa camada desligada; ir para um órgão leva ao Corpo inteiro
     if (regiao && !caixasDaRegiao(regiao, lado).some((c) => c.intersectsBox(m.caixaDe([e.id])))) { definirRegiaoId(null); m.definirRegiao(null) }
+    if (modo === 'ortopedia' && !ehOrtopedica(e)) definirModo('corpo')
     if (!ligados.has(g)) mudarGrupo(g, true, continuar); else continuar()
     definirBusca('')
     if (!larga) definirExplorar(false)
@@ -242,16 +355,59 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
 
   const mudarCorte = (c: Corte | null) => { definirCorteUI(c); motorRef.current?.definirCorte(c) }
 
+  // ---------- ferramentas ----------
+  const salvarImagem = () => {
+    const m = motorRef.current
+    if (!m) return
+    const dados = m.capturarImagem()
+    const img = new Image()
+    img.onload = () => {
+      // fundo claro e assinatura discreta: a imagem serve para slide e resumo
+      const c = document.createElement('canvas')
+      c.width = img.width; c.height = img.height
+      const g = c.getContext('2d')!
+      const escuro = document.documentElement.dataset.tema === 'escuro'
+      g.fillStyle = escuro ? '#101a19' : '#f4f6f4'
+      g.fillRect(0, 0, c.width, c.height)
+      g.drawImage(img, 0, 0)
+      const k = Math.max(1, c.width / 1200)
+      g.font = `600 ${Math.round(14 * k)}px system-ui, sans-serif`
+      g.fillStyle = escuro ? 'rgba(230,251,245,0.7)' : 'rgba(18,24,26,0.55)'
+      g.textAlign = 'right'
+      const nome = estrutura ? `${nomeCompleto(estrutura, selecao?.faixa)} · ` : ''
+      g.fillText(`${nome}Atlas 3D · Orto Questões`, c.width - 16 * k, c.height - 16 * k)
+      const a = document.createElement('a')
+      a.href = c.toDataURL('image/png')
+      a.download = `atlas3d-${(estrutura ? nomeDe(estrutura) : 'vista').toLowerCase().normalize('NFD').replace(/[^a-z0-9]+/g, '-')}.png`
+      a.click()
+      definirAviso('Imagem salva')
+    }
+    img.src = dados
+  }
+  const copiarLink = async () => {
+    try { await navigator.clipboard.writeText(location.href); definirAviso('Link copiado: quem abrir vê esta mesma estrutura') } catch { definirAviso('Não deu para copiar o link aqui') }
+  }
+
+  // ---------- busca ----------
   // nomes do banco anatômico entram na busca ("Deltoide", "Ligamento de Lisfranc", "LCA")
   const extrasBusca = useMemo(() => {
     const m = new Map<string, string[]>()
     for (const r of indice?.registros ?? []) for (const id of r.ids) m.set(id, [...(m.get(id) ?? []), r.nome, r.en])
     return m
   }, [indice])
-  const resultados = useMemo(() => (catalogo && busca.trim().length >= 2 ? buscar(catalogo.estruturas, busca, 30, extrasBusca) : []), [catalogo, busca, extrasBusca])
+  const todosResultados = useMemo(() => (catalogo && busca.trim().length >= 2 ? buscar(catalogo.estruturas, busca, 60, extrasBusca) : []), [catalogo, busca, extrasBusca])
+  // estruturas que o banco põe numa região ortopédica (medula, raízes, cauda equina) contam como Ortopedia
+  const ortoPeloBanco = useMemo(() => {
+    const regioesOrto = new Set<string>(REGIOES.map((r) => r.id))
+    return new Set((indice?.registros ?? []).filter((r) => regioesOrto.has(r.regiao)).flatMap((r) => r.ids))
+  }, [indice])
+  const ehOrtopedica = (e: Estrutura) => !SO_CORPO.has(grupoDe(e)) || ortoPeloBanco.has(baseDoId(e.id))
+  const doModo = (e: Estrutura) => modo === 'corpo' || ehOrtopedica(e)
+  const resultados = todosResultados.filter(doModo).slice(0, 30)
+  const noOutroModo = modo === 'ortopedia' ? todosResultados.filter((e) => !doModo(e)).length : 0
   const normalBusca = busca.trim().normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
   const semAcento = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase()
-  const regioesAchadas = normalBusca.length >= 2 ? REGIOES.filter((r) => semAcento(r.nome).includes(normalBusca)) : []
+  const regioesAchadas = normalBusca.length >= 2 ? (modo === 'corpo' ? [...REGIOES_CORPO, ...REGIOES] : REGIOES).filter((r) => semAcento(r.nome).includes(normalBusca)) : []
   const presetsAchados = normalBusca.length >= 2 ? PRESETS.filter((p) => semAcento(`${p.nome} ${p.resumo}`).includes(normalBusca)) : []
   const ficha = estrutura ? fichaDe(estrutura, selecao?.faixa) : undefined
   const vinculo = ficha && vinculos ? vinculos[ficha.chave] : undefined
@@ -259,21 +415,30 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   // O que está aberto, para o "online agora" do painel do administrador (conta/aparelho.ts lê ao mandar o sinal).
   useEffect(() => {
     const e = selecao && catalogo ? catalogo.estruturas.find((x) => x.id === selecao.id) : undefined
-    const vendo = questoes ? `respondendo: ${questoes.titulo}` : e ? nomeCompleto(e, selecao?.faixa) : ''
+    const vendo = questoes ? `respondendo: ${questoes.titulo}` : estudo ? 'Teste-se' : e ? nomeCompleto(e, selecao?.faixa) : ''
     try { if (vendo) sessionStorage.setItem('oq-atlas-vendo', vendo.slice(0, 80)); else sessionStorage.removeItem('oq-atlas-vendo') } catch { /* sem armazenamento: o painel mostra só a região */ }
-  }, [selecao, catalogo, questoes])
+  }, [selecao, catalogo, questoes, estudo])
   useEffect(() => () => { try { sessionStorage.removeItem('oq-atlas-vendo') } catch { /* idem */ } }, [])
 
-  // Esc limpa a seleção; F foca; I isola; H esconde
+  // ---------- teclado ----------
   useEffect(() => {
     const tecla = (ev: KeyboardEvent) => {
       if ((ev.target as HTMLElement)?.closest('input, textarea, [contenteditable]')) return
       const m = motorRef.current
       if (!m) return
-      if (ev.key === 'Escape') { if (!larga && detalhes) definirDetalhes(false); else if (questoes) definirQuestoes(null); else m.selecionar(null) }
+      if (ev.key === 'Escape') {
+        if (!larga && detalhes) definirDetalhes(false)
+        else if (questoes) definirQuestoes(null)
+        else if (estudo) definirEstudo(false)
+        else if (selecao) m.selecionar(null)
+        else if (isolado) soltarIsolamento()
+      }
+      else if (estudo) return // o Teste-se usa os números
       else if (ev.key === 'f' || ev.key === 'F') focarSelecao()
       else if (ev.key === 'i' || ev.key === 'I') isolarSelecao()
       else if (ev.key === 'h' || ev.key === 'H') ocultarSelecao()
+      else if (ev.key === 't' || ev.key === 'T') iniciarEstudo()
+      else if (ev.key === '/') { ev.preventDefault(); definirExplorar(true); setTimeout(() => document.querySelector<HTMLInputElement>('.at-busca input')?.focus(), 30) }
       else if (['1', '2', '3', '4', '5', '6'].includes(ev.key)) m.vista((['anterior', 'posterior', 'direita', 'esquerda', 'superior', 'inferior'] as Vista[])[Number(ev.key) - 1])
     }
     window.addEventListener('keydown', tecla)
@@ -316,17 +481,15 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const areasOsso = useMemo(() => (estrutura && idxAreas && grupoDe(estrutura) === 'osso'
     ? areasNoOsso(idxAreas, estrutura, selecao?.faixa, (z) => faixaPorAltura(estrutura, z)) : []
   ), [estrutura, idxAreas, selecao?.faixa])
-  // onde a estrutura fica, da raiz (sistema) até a parte imediatamente acima
+  // onde a estrutura fica, da raiz (sistema) até a parte imediatamente acima; cada passo abre o grupo
   const passosArvore = useMemo(() => {
-    if (!arvore || !estrutura) return [] as string[]
-    const passos: string[] = []
-    let i: number | undefined = arvore.e[estrutura.id]
-    while (i !== undefined && i >= 0 && passos.length < 12) { const no: [string] | [string, number] = arvore.n[i]; passos.unshift(no[0]); i = no[1] }
-    return passos
-  }, [arvore, estrutura])
+    if (!idxArvore || !estrutura) return [] as { nome: string; no: number }[]
+    const i = idxArvore.arvore.e[estrutura.id]
+    return i === undefined ? [] : caminhoDoNo(idxArvore, i).map((no) => ({ nome: idxArvore.arvore.n[no][0], no }))
+  }, [idxArvore, estrutura])
   useEffect(() => {
     const m = motorRef.current
-    if (!m) return
+    if (!m || estudo) return // o Teste-se pinta o próprio destaque
     if (montagem) m.mostrarRelacoes(montagem.destaques, montagem.marcos, montagem.linhas, montagem.areas)
     else if (pontosOsso && estrutura && (fixados.length || areasOsso.length)) {
       // a área desenhada no osso é mais exata que o ponto: com áreas, os pontos ficam de fora
@@ -334,7 +497,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       m.mostrarRelacoes([], !areas.length && pontos ? marcosNoOsso(fixados, estrutura, pontos) : [], [], areas)
     } else m.mostrarRelacoes(preset ? destaquesPreset : [])
     // as camadas recém-carregadas entram no desenho: depende de ligados e do progresso
-  }, [montagem, fixados, areasOsso, pontosOsso, estrutura, pontos, ligados, progresso, preset, destaquesPreset])
+  }, [montagem, fixados, areasOsso, pontosOsso, estrutura, pontos, ligados, progresso, preset, destaquesPreset, estudo])
 
   const alternarRelacao = (x: Relacao) => {
     const novo = new Set(ativas)
@@ -350,10 +513,11 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const alternarContexto = () => {
     const m = motorRef.current
     if (!m || !registro || !indice || !mundo || !estrutura || !selecao) return
-    if (contexto) { m.isolar(null); definirIsolado(false); definirContexto(false); return }
+    if (contexto) { soltarIsolamento(); return }
     const ids = new Set<string>([selecao.id, ...relacionadosDe(registro, indice).flatMap((x) => idsDoRegistro(x, estrutura.s, mundo))])
     for (const d of montagem?.destaques ?? []) ids.add(d.id)
     for (const k of ['origem', 'insercao'] as const) for (const mk of registro[k]?.m ?? []) { const id = idNoLado(mk.split(':')[0], estrutura.s, mundo.existe); if (id) ids.add(id) }
+    definirAberto(null); definirPreset(null)
     m.isolar([...ids])
     definirIsolado(true)
     definirContexto(true)
@@ -371,7 +535,9 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const aplicarPreset = (p: Preset) => {
     const m = motorRef.current
     if (!m || !indice) return
+    if (modo !== 'ortopedia') trocarModo('ortopedia')
     escolherRegiao(p.regiao, lado === 'ambos' ? 'd' : lado)
+    definirAberto(null); definirContexto(false)
     definirPreset(p)
     const existe = (id: string) => m.existe(id)
     const lado1: Estrutura['s'] = lado === 'e' ? 'e' : 'd'
@@ -381,10 +547,31 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     for (const g of grupos) if (!ligados.has(g) && podeLigar(g)) mudarGrupo(g, true)
     m.isolar(ids)
     definirIsolado(true)
+    // a legenda assume; o modelo ganha o espaço do Explorar (que volta pelo botão do topo)
+    definirExplorar(false)
   }
-  const podeLigar = (g: Grupo) => nivel === 'assinante' || (nivel === 'conta' && GRATIS.has(g))
-  const sairDoPreset = () => { motorRef.current?.isolar(null); definirIsolado(false); definirPreset(null) }
 
+  // ---------- Teste-se ----------
+  const iniciarEstudo = () => {
+    const m = motorRef.current
+    if (!m || !catalogo) return
+    m.selecionar(null)
+    soltarIsolamento()
+    definirPersonalizar(false)
+    definirExplorar(false)
+    definirEstudo(true)
+  }
+  const gruposEstudo = useMemo(() => new Set([...ligados].filter((g) => modo === 'corpo' || !SO_CORPO.has(g))), [ligados, modo])
+
+  // ---------- rótulos no modelo (o que está isolado, quando é um conjunto pequeno) ----------
+  const idsRotulos = useMemo(() => {
+    if (pref.rotulos === false || !isolado || !motor || estudo) return null
+    const ids = motor.idsIsolados
+    return ids && ids.length <= 40 ? ids : null
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [pref.rotulos, isolado, motor, estudo, preset, aberto, contexto, ligados, progresso, selecao?.id])
+
+  // ---------- fichas ----------
   const anatomia = registro && indice ? (
     <FichaAnatomica registro={registro} indice={indice} ativas={ativas} semGeometria={montagem?.semGeometria ?? []} contexto={contexto}
       aoAlternar={alternarRelacao} aoContexto={alternarContexto} aoIr={irParaChave} />
@@ -408,8 +595,9 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const painelDireito = estrutura ? (
     questoes
       ? <PainelQuestoes titulo={questoes.titulo} ids={questoes.ids} aoVoltar={() => definirQuestoes(null)} />
-      : <PainelFicha key={`${estrutura.id}|${selecao?.faixa ?? ''}`} anatomia={anatomia} fixacoes={fixacoes} geral={geral} trilha={<Trilha passos={passosArvore} />} estrutura={estrutura} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} favorita={pref.favoritos.includes(estrutura.id)}
-          isolada={isolado} aoFocar={focarSelecao} aoIsolar={isolarSelecao} aoOcultar={ocultarSelecao} aoFavoritar={alternarFavorito}
+      : <PainelFicha key={`${estrutura.id}|${selecao?.faixa ?? ''}`} anatomia={anatomia} fixacoes={fixacoes} geral={geral}
+          trilha={<Trilha passos={passosArvore} aoAbrir={abrirNo} />} estrutura={estrutura} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} favorita={pref.favoritos.includes(estrutura.id)}
+          isolada={isolado} aoFocar={focarSelecao} aoIsolar={isolarSelecao} aoOcultar={ocultarSelecao} aoFavoritar={alternarFavorito} aoCompartilhar={copiarLink}
           aoFechar={larga ? () => motorRef.current?.selecionar(null) : () => definirDetalhes(false)} aoRecolher={larga ? () => definirDetalhes(false) : undefined}
           aoResponder={(titulo, ids) => { definirQuestoes({ titulo, ids }); definirDetalhes(true) }} />
   ) : null
@@ -425,82 +613,61 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     if (g && !ligados.has(g)) mudarGrupo(g, true, ir); else ir()
   }
   const cartao = estrutura ? (
-    <CartaoRapido estrutura={estrutura} ondeFica={passosArvore[passosArvore.length - 1]} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} registro={registro} indice={indice} isolada={isolado}
+    <CartaoRapido estrutura={estrutura} ondeFica={passosArvore[passosArvore.length - 1]?.nome} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} registro={registro} indice={indice} isolada={isolado}
       podeVoltar={posTrilha > 0} podeAvancar={posTrilha < trilha.current.length - 1}
       aoDetalhes={() => definirDetalhes(true)} aoFocar={focarSelecao} aoIsolar={isolarSelecao}
       aoVoltar={() => irNaTrilha(-1)} aoAvancar={() => irNaTrilha(1)}
       aoFechar={() => motorRef.current?.selecionar(null)} aoIr={irParaChave} />
   ) : null
 
+  const gruposBarra = GRUPOS_DO_MODO[modo]
+  const corpo = modo === 'corpo'
+  const sistemaAtual = aberto?.sistema ? SISTEMAS.find((s) => s.id === aberto.sistema) : undefined
+  const tituloExplorar = regiao ? `${regiao.nome}${regiao.membro && lado !== 'ambos' ? ` · ${lado === 'd' ? 'direito' : 'esquerdo'}` : ''}` : sistemaAtual ? sistemaAtual.nome : corpo ? 'Sistemas' : 'Regiões'
+
   return (
-    <div className={`atlas${larga ? ' atlas--larga' : ' atlas--estreita'}${questoes && larga ? ' atlas--questoes' : ''}${estrutura ? ' atlas--selecao' : ''}`} role="dialog" aria-modal="true" aria-label="Atlas Ortopédico 3D">
+    <div className={`atlas${larga ? ' atlas--larga' : ' atlas--estreita'}${questoes && larga ? ' atlas--questoes' : ''}${estrutura && !estudo ? ' atlas--selecao' : ''}${corpo ? ' atlas--corpo' : ''}${estudo ? ' atlas--estudo' : ''}`} role="dialog" aria-modal="true" aria-label="Atlas 3D">
       <div className="atlas__palco" ref={palco} />
 
-      {/* topo */}
+      {/* topo: explorar · modo · ferramentas */}
       <header className="atlas__topo">
-        <button type="button" className={`at-chip${explorar ? ' at-chip--ativo' : ''}`} onClick={() => definirExplorar((v) => !v)} aria-expanded={explorar}>
-          <Icone nome="mapa" tamanho={17} /><span>{regiao ? regiao.nome : 'Corpo inteiro'}{regiao?.membro && lado !== 'ambos' ? ` · ${lado === 'd' ? 'direito' : 'esquerdo'}` : ''}</span>
+        <button type="button" className={`at-chip at-chip--explorar${explorar ? ' at-chip--ativo' : ''}`} onClick={() => definirExplorar((v) => !v)} aria-expanded={explorar}>
+          <Icone nome={corpo ? 'cubo' : 'mapa'} tamanho={17} /><span>{tituloExplorar}</span>
         </button>
-        <p className="atlas__marca tr-heroi__selo">Atlas 3D · Beta</p>
+        <div className="at-modo" role="radiogroup" aria-label="Modo do atlas">
+          <button type="button" role="radio" aria-checked={!corpo} onClick={() => trocarModo('ortopedia')}><Icone nome="osso" tamanho={16} /><span className="at-modo__longo">Ortopedia</span><span className="at-modo__curto">Orto</span></button>
+          <button type="button" role="radio" aria-checked={corpo} onClick={() => trocarModo('corpo')}><Icone nome="cubo" tamanho={16} /><span className="at-modo__longo">Corpo inteiro</span><span className="at-modo__curto">Corpo</span>{nivel !== 'assinante' && <Icone nome="cadeado" tamanho={11} />}</button>
+          <i className="at-modo__marca" aria-hidden="true" />
+        </div>
         <div className="atlas__acoes-topo">
-          <button type="button" className={`at-chip at-ajuda${guia || !pref.dicasVistas ? ' at-chip--ativo' : ''}`} onClick={() => definirGuia((v) => !v)} aria-expanded={guia || !pref.dicasVistas} title="Como usar o atlas"><Icone nome="interrogacao" tamanho={17} /><span>Como usar</span></button>
-          <button type="button" className={`at-botao-icone${personalizar ? ' at-botao-icone--ativo' : ''}`} onClick={() => { definirPersonalizar((v) => !v); if (guia || !pref.dicasVistas) { definirGuia(false); definirPref((p) => ({ ...p, dicasVistas: true })) } }} aria-label="Personalizar" title="Personalizar"><Icone nome="ajustes" tamanho={19} /></button>
+          <button type="button" className={`at-chip at-chip--estudo${estudo ? ' at-chip--ativo' : ''}`} onClick={() => (estudo ? definirEstudo(false) : iniciarEstudo())} aria-pressed={estudo} title="Teste-se (T)"><Icone nome="alvo" tamanho={17} /><span>Teste-se</span></button>
+          {larga && <button type="button" className={`at-botao-icone at-ajuda${guia || !pref.dicasVistas ? ' at-botao-icone--ativo' : ''}`} onClick={() => definirGuia((v) => !v)} aria-expanded={guia || !pref.dicasVistas} aria-label="Como usar" title="Como usar"><Icone nome="interrogacao" tamanho={18} /></button>}
+          <button type="button" className={`at-botao-icone${personalizar ? ' at-botao-icone--ativo' : ''}`} onClick={() => { definirPersonalizar((v) => !v); if (guia || !pref.dicasVistas) { definirGuia(false); definirPref((p) => ({ ...p, dicasVistas: true })) } }} aria-label="Ferramentas e ajustes" title="Ferramentas e ajustes"><Icone nome="ajustes" tamanho={19} /></button>
           <button type="button" className="at-botao-icone" onClick={aoFechar} aria-label="Fechar o atlas" title="Fechar (volta à página anterior)"><Icone nome="fechar" tamanho={19} /></button>
         </div>
       </header>
 
-      {/* explorar: regiões, busca, recentes */}
       {explorar && (
-        <aside className="atlas__explorar" aria-label="Explorar">
-          <label className="at-busca"><Icone nome="busca" tamanho={17} /><input type="search" value={busca} onChange={(e) => definirBusca(e.target.value)} placeholder="Buscar: fêmur, nervo radial, ulnar…" aria-label="Buscar estrutura" /></label>
-          {busca.trim().length >= 2 ? (
-            <ul className="at-resultados">
-              {regioesAchadas.map((r) => <li key={`r-${r.id}`}><button type="button" onClick={() => { escolherRegiao(r.id); definirBusca('') }}><Icone nome="mapa" tamanho={14} />{r.nome}<small>região</small></button></li>)}
-              {presetsAchados.map((p) => <li key={`p-${p.id}`}><button type="button" onClick={() => { aplicarPreset(p); definirBusca('') }}><Icone nome="olho" tamanho={14} />{p.nome}<small>visualização</small></button></li>)}
-              {resultados.length ? resultados.map((e) => (
-                <li key={e.id}><button type="button" onClick={() => irPara(e)}><span className="at-ponto" style={{ background: hex(GRUPOS[grupoDe(e)].cor) }} />{nomeDe(e)}{e.s !== 'm' && <small>{LADO[e.s]}</small>}</button></li>
-              )) : !regioesAchadas.length && !presetsAchados.length && <li className="at-vazio">Nada encontrado com esse nome.</li>}
-            </ul>
-          ) : (
-            <>
-              <h2 className="at-titulo-secao"><Icone nome="mapa" tamanho={14} /> Regiões ortopédicas</h2>
-              <div className="at-regioes">
-                <button type="button" className={`at-regiao${!regiao ? ' at-regiao--ativa' : ''}`} style={{ ['--at-area' as string]: 'var(--verdete)' }} onClick={() => escolherRegiao(null)}><strong>Corpo inteiro</strong><small>Visão geral do esqueleto</small></button>
-                {REGIOES.map((r) => (
-                  <button type="button" key={r.id} className={`at-regiao${regiao?.id === r.id ? ' at-regiao--ativa' : ''}`} style={{ ['--at-area' as string]: corDaArea(r.area) }} onClick={() => escolherRegiao(r.id)}>
-                    <strong>{r.nome}</strong><small>{r.resumo}</small>
-                  </button>
-                ))}
-              </div>
-              {regiao?.membro && (
-                <div className="at-segmentos" role="group" aria-label="Lado">
-                  {(['ambos', 'd', 'e'] as Lateralidade[]).map((l) => <button key={l} type="button" aria-pressed={lado === l} onClick={() => escolherRegiao(regiao.id, l)}>{l === 'ambos' ? 'Ambos' : l === 'd' ? 'Direito' : 'Esquerdo'}</button>)}
-                </div>
-              )}
-              {indice && (
-                <>
-                  <h2 className="at-titulo-secao"><Icone nome="olho" tamanho={14} /> Visualizações prontas{regiao ? ` · ${regiao.nome}` : ''}</h2>
-                  <div className="at-presets">
-                    {(regiao ? PRESETS.filter((p) => p.regiao === regiao.id) : PRESETS).map((p) => (
-                      <button type="button" key={p.id} className={`at-preset${preset?.id === p.id ? ' at-preset--ativo' : ''}`} onClick={() => aplicarPreset(p)}>
-                        <span className="at-preset__cores" aria-hidden="true">{p.chaves.slice(0, 4).map((c, i) => <i key={c} style={{ background: CORES_PRESET[i] }} />)}</span>
-                        <strong>{p.nome}</strong><small>{p.resumo}</small>
-                      </button>
-                    ))}
-                    {regiao && !PRESETS.some((p) => p.regiao === regiao.id) && <p className="at-nota">Ainda não há visualização pronta para esta região.</p>}
-                  </div>
-                </>
-              )}
-              {catalogo && pref.favoritos.length > 0 && <ListaRapida titulo="Favoritas" ids={pref.favoritos} catalogo={catalogo} aoIr={irPara} />}
-              {catalogo && pref.recentes.length > 0 && <ListaRapida titulo="Recentes" ids={pref.recentes} catalogo={catalogo} aoIr={irPara} />}
-            </>
-          )}
-        </aside>
+        <PainelExplorar modo={modo} aoTrocarModo={trocarModo} busca={busca} aoBuscar={definirBusca} resultados={resultados} noOutroModo={noOutroModo}
+          regioesAchadas={regioesAchadas} presetsAchados={presetsAchados} regiao={regiao} lado={lado} aoRegiao={escolherRegiao}
+          preset={preset} temBanco={!!indice} aoPreset={aplicarPreset} sistemaAtivo={aberto?.sistema} aoSistema={abrirSistema}
+          fechado={fechado} assinante={nivel === 'assinante'} favoritos={pref.favoritos} recentes={pref.recentes} catalogo={catalogo} aoIr={irPara} />
       )}
 
-      {/* personalizar: cortes, opacidade, restaurar */}
+      {/* ferramentas e ajustes */}
       {personalizar && motor && (
-        <aside className="atlas__personalizar" aria-label="Personalizar">
+        <aside className="atlas__personalizar" aria-label="Ferramentas e ajustes">
+          <h2 className="at-titulo-secao"><Icone nome="ajustes" tamanho={14} /> Ferramentas</h2>
+          <div className="at-ferramentas">
+            <button type="button" onClick={iniciarEstudo}><Icone nome="alvo" tamanho={18} /><span>Teste-se<small>Que estrutura é esta?</small></span></button>
+            <button type="button" onClick={salvarImagem}><Icone nome="imagem" tamanho={18} /><span>Salvar imagem<small>PNG da vista atual</small></span></button>
+            <button type="button" onClick={copiarLink}><Icone nome="link" tamanho={18} /><span>Copiar link<small>Abre nesta mesma vista</small></span></button>
+            <button type="button" onClick={() => { definirPersonalizar(false); definirGuia(true) }}><Icone nome="interrogacao" tamanho={18} /><span>Como usar<small>Mouse, dedos e atalhos</small></span></button>
+          </div>
+          <label className="at-alternador">
+            <input type="checkbox" checked={pref.rotulos !== false} onChange={(e) => definirPref((p) => ({ ...p, rotulos: e.target.checked }))} />
+            <span><strong>Nomes no modelo</strong><small>Rótulos sobre o que estiver isolado</small></span>
+          </label>
           <h2 className="at-titulo-secao"><Icone nome="olho" tamanho={14} /> Transparência das camadas</h2>
           {ORDEM_GRUPOS.filter((g) => ligados.has(g)).map((g) => (
             <label key={g} className="at-faixa-opacidade"><span><i className="at-ponto" style={{ background: hex(GRUPOS[g].cor) }} />{GRUPOS[g].rotulo}</span>
@@ -518,8 +685,8 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
             <p className="at-nota">O corte é geométrico e educativo: não substitui tomografia nem ressonância.</p>
           </>}
           <button type="button" className="botao" onClick={restaurar}><Icone nome="reiniciar" tamanho={16} /> Restaurar a visualização{motor.quantasOcultas ? ` (${motor.quantasOcultas} ocultas)` : ''}</button>
-          <p className="at-nota">Atalhos: F foca · I isola · H esconde · 1 a 6 trocam a vista · Esc limpa. Clicar de novo no mesmo ponto pega a estrutura de baixo.</p>
-          <a className="at-nota at-nota--link" href={`${import.meta.env.BASE_URL}atlas3d/v1/LICENCAS.md`} target="_blank" rel="noreferrer">Modelos: BodyParts3D (DBCLS, CC BY-SA 2.1 JP) e Z-Anatomy (CC BY-SA 4.0), via Anatomy Atlas 3D</a>
+          <p className="at-nota">Atalhos: / busca · T Teste-se · F foca · I isola · H esconde · 1 a 6 trocam a vista · Esc volta. Clicar de novo no mesmo ponto pega a estrutura de baixo.</p>
+          <a className="at-nota at-nota--link" href={`${import.meta.env.BASE_URL}atlas3d/v1/LICENCAS.md`} target="_blank" rel="noreferrer">Modelos: BodyParts3D (DBCLS, CC BY-SA 2.1 JP), Z-Anatomy (CC BY-SA 4.0) e Human Reference Atlas (HuBMAP, CC BY 4.0)</a>
         </aside>
       )}
 
@@ -533,50 +700,74 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
         <button type="button" onClick={() => motor?.enquadrarTudo()} aria-label="Enquadrar" title="Enquadrar"><Icone nome="alvo" tamanho={17} /></button>
       </nav>
 
-      {/* camadas */}
+      {/* camadas do modo */}
       <div className="atlas__camadas" role="group" aria-label="Camadas">
-        {ORDEM_GRUPOS.filter((g) => !GRUPOS[g].secundario || ligados.has(g) || personalizar).map((g) => (
-          <button key={g} type="button" aria-pressed={ligados.has(g)} onClick={() => alternarGrupo(g)} title={GRUPOS[g].rotulo}>
+        {corpo && (
+          <div className="at-sexo" role="radiogroup" aria-label="Sexo do modelo">
+            <button type="button" role="radio" aria-checked={!ligados.has('feminino')} onClick={() => ligados.has('feminino') && mudarGrupo('feminino', false)} title="Pelve masculina">Masculino</button>
+            <button type="button" role="radio" aria-checked={ligados.has('feminino')} onClick={() => { if (!ligados.has('feminino')) { mudarGrupo('feminino', true); if (!ligados.has('orgao') && podeLigar('orgao')) mudarGrupo('orgao', true) } }} title="Pelve feminina: útero, colo, ovários e tubas">Feminino{fechado('feminino') && <Icone nome="cadeado" tamanho={11} />}</button>
+          </div>
+        )}
+        {gruposBarra.map((g, i) => (
+          <button key={g} type="button" aria-pressed={ligados.has(g)} onClick={() => alternarGrupo(g)} title={GRUPOS[g].rotulo}
+            className={corpo && SO_CORPO.has(g) && !SO_CORPO.has(gruposBarra[i - 1]) ? 'at-camada--inicio-corpo' : undefined}>
             <span className="at-ponto" style={{ background: hex(GRUPOS[g].cor) }} />
             <span className="at-camada-rotulo">{GRUPOS[g].rotulo.split(' ')[0]}</span>
-            {nivel !== 'assinante' && !GRATIS.has(g) && <span className="at-cadeado" aria-label="para assinantes"><Icone nome="cadeado" tamanho={12} /></span>}
+            {fechado(g) && <span className="at-cadeado" aria-label="para assinantes"><Icone nome="cadeado" tamanho={12} /></span>}
             {ligados.has(g) && (progresso[g] ?? 0) < 1 && <span className="at-mini-progresso" style={{ ['--p' as string]: `${Math.round((progresso[g] ?? 0) * 100)}%` }} />}
           </button>
         ))}
       </div>
 
       {/* legenda da visualização pronta */}
-      {preset && indice && !estrutura && (
+      {preset && indice && !estrutura && !estudo && (
         <aside className="atlas__preset" aria-label={`Visualização: ${preset.nome}`}>
-          <header><p className="tr-heroi__selo">Visualização</p><button type="button" className="at-botao-icone" onClick={sairDoPreset} aria-label="Sair da visualização" title="Sair da visualização"><Icone nome="fechar" tamanho={16} /></button></header>
+          <header><p className="tr-heroi__selo">Visualização</p><button type="button" className="at-botao-icone" onClick={soltarIsolamento} aria-label="Sair da visualização" title="Sair da visualização"><Icone nome="fechar" tamanho={16} /></button></header>
           <h2>{preset.nome}</h2>
           <ul>{preset.chaves.map((c, i) => {
             const r = indice.porChave.get(c)
             if (!r) return null
             const g = r.ids[0] && motor ? motor.grupoDe(idNoLado(r.ids[0], ladoPreset, (x) => motor.existe(x)) ?? '') : undefined
-            const fechado = !!g && !ligados.has(g)
-            return <li key={c}><button type="button" onClick={() => irParaChave(c)} className={fechado ? 'atlas__preset-fechado' : undefined}><i style={{ background: CORES_PRESET[i % CORES_PRESET.length] }} />{r.nome}{fechado && <Icone nome="cadeado" tamanho={12} />}</button></li>
+            const fora = !!g && !ligados.has(g)
+            return <li key={c}><button type="button" onClick={() => irParaChave(c)} className={fora ? 'atlas__preset-fechado' : undefined}><i style={{ background: CORES_PRESET[i % CORES_PRESET.length] }} />{r.nome}{fora && <Icone nome="cadeado" tamanho={12} />}</button></li>
           })}</ul>
           <p className="at-nota">{(() => {
-            const fechados = new Set(preset.chaves.flatMap((c) => { const r = indice.porChave.get(c); const id = r?.ids[0] && motor ? idNoLado(r.ids[0], ladoPreset, (x) => motor.existe(x)) : undefined; const g = id ? motor?.grupoDe(id) : undefined; return g && !ligados.has(g) ? [g] : [] }))
-            if (!fechados.size) return 'Toque num nome para abrir a ficha.'
-            if (nivel === 'visitante' && [...fechados].some((g) => GRATIS.has(g))) return 'Com a conta grátis, os músculos também aparecem aqui. Toque num nome para abrir a ficha.'
+            const fora = new Set(preset.chaves.flatMap((c) => { const r = indice.porChave.get(c); const id = r?.ids[0] && motor ? idNoLado(r.ids[0], ladoPreset, (x) => motor.existe(x)) : undefined; const g = id ? motor?.grupoDe(id) : undefined; return g && !ligados.has(g) ? [g] : [] }))
+            if (!fora.size) return 'Toque num nome para abrir a ficha.'
+            if (nivel === 'visitante' && [...fora].some((g) => GRATIS.has(g))) return 'Com a conta grátis, os músculos também aparecem aqui. Toque num nome para abrir a ficha.'
             return 'Os itens com cadeado ficam nas camadas de assinante.'
           })()}</p>
         </aside>
       )}
 
+      {/* sistema aberto: navegar pelas partes */}
+      {aberto && idxArvore && !estrutura && !estudo && (
+        <Navegador idx={idxArvore} nos={aberto.nos} titulo={aberto.titulo} cor={aberto.cor} estruturaDe={estruturaDe}
+          aoAbrir={abrirNo} aoSubir={sistemaAtual && aberto.nos.length === 1 && caminhoDoNo(idxArvore, aberto.nos[0]).length > 1 ? () => abrirSistema(sistemaAtual) : undefined}
+          aoEstrutura={irPara} aoSair={soltarIsolamento} />
+      )}
+
+      {/* nomes sobre o modelo */}
+      {motor && idsRotulos && <Rotulos motor={motor} ids={idsRotulos} nome={(id) => { const e = motor.estrutura(id); return e ? nomeDe(e) : id }} />}
+
       {/* nome sob o cursor (só no computador, sem redesenhar o atlas a cada movimento) */}
-      {larga && catalogo && !selecao && <DicaPassagem catalogo={catalogo} registrar={registrarPassagem} />}
+      {larga && catalogo && !selecao && !estudo && <DicaPassagem catalogo={catalogo} registrar={registrarPassagem} />}
+
+      {/* Teste-se */}
+      {estudo && motor && catalogo && (
+        <ModoEstudo motor={motor} estruturas={catalogo.estruturas} grupos={gruposEstudo} aoFechar={() => definirEstudo(false)}
+          aoVerFicha={(e) => { definirEstudo(false); setTimeout(() => { motor.selecionar({ id: e.id }); if (larga) definirDetalhes(true) }, 0) }} />
+      )}
 
       {/* seleção: cartão compacto; detalhes no painel lateral (computador) ou num modal (celular) */}
-      {estrutura && (larga
+      {estrutura && !estudo && (larga
         ? (detalhes ? <aside className="atlas__ficha" aria-label="Ficha da estrutura">{painelDireito}</aside> : cartao)
         : <>{cartao}{detalhes && <ModalDetalhes rotulo={questoes ? questoes.titulo : `Ficha: ${nomeCompleto(estrutura, selecao?.faixa)}`} alto={!!questoes} aoFechar={() => definirDetalhes(false)}>{painelDireito}</ModalDetalhes>}</>)}
 
       {/* estados */}
       {!catalogo && !erro && <div className="atlas__carregando"><EsperaPixel rotulo="Montando o esqueleto" /></div>}
       {catalogo && carregando.length > 0 && <div className="atlas__aviso-carga">Carregando {carregando.map((g) => GRUPOS[g].rotulo.toLowerCase()).join(', ')}… {Math.round(Math.min(...carregando.map((g) => progresso[g] ?? 0)) * 100)}%</div>}
+      {aviso && <div className="atlas__aviso" role="status">{aviso}</div>}
       {convite && <ConviteAtlas convite={convite} aoFechar={() => definirConvite(null)} />}
       {erro && <div className="atlas__carregando"><p>{erro}</p><button type="button" className="botao botao--principal" onClick={() => location.reload()}>Tentar de novo</button></div>}
       {catalogo && (guia || !pref.dicasVistas) && (
@@ -586,22 +777,11 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   )
 }
 
-function ListaRapida({ titulo, ids, catalogo, aoIr }: { titulo: string; ids: string[]; catalogo: Catalogo; aoIr: (e: Estrutura) => void }) {
-  const lista = ids.map((id) => catalogo.estruturas.find((e) => e.id === id)).filter(Boolean).slice(0, 8) as Estrutura[]
-  if (!lista.length) return null
-  return (
-    <>
-      <h2 className="at-titulo-secao"><Icone nome={titulo === 'Favoritas' ? 'estrela' : 'relogio'} tamanho={14} /> {titulo}</h2>
-      <ul className="at-resultados at-resultados--curta">{lista.map((e) => <li key={e.id}><button type="button" onClick={() => aoIr(e)}><span className="at-ponto" style={{ background: hex(GRUPOS[grupoDe(e)].cor) }} />{nomeDe(e)}{e.s !== 'm' && <small>{LADO[e.s]}</small>}</button></li>)}</ul>
-    </>
-  )
-}
-
 function lerCamadas(consulta: URLSearchParams): Grupo[] {
   const c = consulta.get('c')?.split(',').filter((g): g is Grupo => g in GRUPOS && GRATIS.has(g as Grupo))
   return c?.length ? c : ['osso']
 }
-export const hex = (n: number) => `#${n.toString(16).padStart(6, '0')}`
+export { hex }
 
 /** O nome da estrutura sob o cursor, com estado próprio: só este rótulo muda quando o mouse passa. */
 function DicaPassagem({ catalogo, registrar }: { catalogo: Catalogo; registrar: (f: ((p: Passagem | null) => void) | null) => void }) {

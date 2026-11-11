@@ -59,9 +59,30 @@ Estudar, "Atlas 3D · Beta". Código em `src/atlas3d/` (motor, carregador, dados
   sínfise sacrococcígea, ligamento transverso inferior da escápula, o oponente do dedo mínimo do pé, o temporoparietal,
   o arco iliopectíneo e o nervo do quadrado femoral que o modelo põe na camada do encéfalo.
 
+## Experiência nova (11/11/2026, pedido do Tales)
+- **Dois modos** no topo (`ui/Atlas.tsx`, `dados/modos.ts`): **Ortopedia** (sempre o modo de abertura) e **Corpo inteiro**.
+  O Corpo inteiro de entrada só por link `?m=corpo` ou link de estrutura de camada do corpo. A busca da Ortopedia
+  inclui o que o banco põe em região ortopédica (medula, raízes, cauda equina) e avisa quando há resultados no outro modo.
+- **Sistemas** (`SISTEMAS`) e **navegador por partes** (`ui/Navegador.tsx`): abre o sistema, isola, enquadra e desce
+  pela hierarquia; a trilha da ficha também abre o grupo.
+- **Teste-se** (`ui/ModoEstudo.tsx`, tecla T): alvo em dourado com o resto translúcido, quatro opções da mesma camada,
+  placar e sequência.
+- **Nomes no modelo** (`ui/Rotulos.tsx`): rótulos sobre o que está isolado (até 40), sem sobreposição.
+- **Ferramentas**: salvar imagem (PNG com assinatura), copiar link, como usar; botão de link na ficha.
+- Plano: ossos e músculos para todos; o resto (inclusive todo o Corpo inteiro) para assinantes, com convite gentil.
+- Visualizações prontas novas: plexo braquial, túnel do carpo, disco-ligamentos-raízes.
+
 ## Pendências
 - Vasos (artérias e veias) no banco anatômico; músculos do tronco e da cabeça (fora do livro de referência ortopédico).
 - Conflitos e pendências do banco: ver COBERTURA-ANATOMIA.md.
 - Nomes em português de vasos e de estruturas fora do foco ortopédico (ver NOMES.md).
 - Modo estudo ("o que é isso?"), comparação lado a lado, comparação de lados.
 - Rádio distal do adulto: falta o capítulo do Rockwood na Biblioteca; hoje a ficha usa o resumo pediátrico.
+
+## 11/11/2026: Corpo inteiro, chave de sexo e páginas de SEO com imagens
+
+- Dois modos: **Ortopedia** (abertura, sempre) e **Corpo inteiro** (sistemas, órgãos, encéfalo, dentes, linfáticos e regiões; só assinante). A chave **Masculino | Feminino** fica na barra de camadas do Corpo inteiro e troca a pelve masculina pela feminina (HuBMAP).
+- Navegador por sistema (12 sistemas), Teste-se (quiz no modelo), nomes no modelo, salvar imagem e copiar link.
+- Nós da hierarquia que a TA2 deixava em inglês ganharam português no `MANUAL` de `preparar_extras.mjs` (dentes, órgãos dos sentidos, ramos da cerebral média etc.).
+- Imagens das páginas públicas: `scripts/atlas3d/capturas_seo.mjs` grava 20 capturas em `public/atlas3d/telas/` (rodar de novo quando a tela mudar; `CENAS=a,b` refaz só algumas).
+- Página nova `atlas-3d-online/` (corpo humano completo, galerias por sistema, sem o sistema reprodutor) e galerias nas páginas atlas-3d, esqueleto e músculos; cada imagem com alt, legenda e `ImageObject`; `sitemap-imagens-atlas.xml` listado no robots.txt.

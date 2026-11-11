@@ -537,3 +537,185 @@ body:has(.atlas) { overflow: hidden; }
 /* celular estreito: o selo "Atlas 3D" sai do topo para o X de fechar o atlas nunca ficar fora da tela */
 @media (max-width: 26rem) { .atlas--estreita .atlas__topo .atlas__marca { display: none; } .atlas--estreita .atlas__topo { grid-template-columns: auto 1fr auto; } }
 @media (orientation: landscape) and (max-height: 32rem) { .atlas--estreita .at-rapido { width: min(25rem, 58vw); } }
+
+/* ================= Dois modos, sistemas, Teste-se e rótulos (11/11/2026) =================
+   Ortopedia é a casa; o Corpo inteiro abre os sistemas sem mudar de lugar. O modo vive no topo, no centro,
+   como uma chave de duas posições com um marcador que desliza. */
+.atlas__topo { grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); }
+.at-chip--explorar { max-width: 100%; }
+.at-chip--explorar span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+.at-modo {
+  position: relative; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 0.22rem;
+  border: 1px solid var(--at-borda); border-radius: var(--raio-pill); background: var(--at-vidro); box-shadow: var(--at-sombra);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3); backdrop-filter: blur(16px) saturate(1.3); isolation: isolate;
+}
+.at-modo button {
+  position: relative; z-index: 1; display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; min-height: 2.25rem; padding: 0 0.95rem;
+  border: 0; border-radius: var(--raio-pill); background: none; color: var(--texto-2); font: inherit; font-weight: 700; cursor: pointer; white-space: nowrap;
+  transition: color 0.2s ease;
+}
+.at-modo button[aria-checked="true"] { color: var(--sobre-destaque); }
+.at-modo button svg:last-child:not(:first-child) { opacity: 0.7; }
+.at-modo button:focus-visible { outline: 2px solid var(--foco); outline-offset: 1px; }
+.at-modo__marca {
+  position: absolute; z-index: 0; top: 0.22rem; bottom: 0.22rem; left: 0.22rem; width: calc(50% - 0.22rem); border-radius: var(--raio-pill);
+  background: var(--verdete); box-shadow: 0 4px 14px -4px color-mix(in srgb, var(--verdete) 70%, transparent);
+  transition: transform 0.32s cubic-bezier(0.3, 0.8, 0.25, 1), background 0.3s ease;
+}
+.atlas--corpo .at-modo__marca { transform: translateX(100%); background: #8a4b5a; box-shadow: 0 4px 14px -4px rgba(138, 75, 90, 0.7); }
+.atlas--corpo .at-modo button[aria-checked="true"] svg:last-child:not(:first-child) { display: none; }
+
+/* no Corpo inteiro, o palco ganha um leve tom quente para a pessoa sentir que mudou de lugar */
+.atlas--corpo { --at-palco: radial-gradient(70% 60% at 50% 38%, #ffffff 0%, #f6f2f1 45%, #ebe4e3 100%); }
+:root[data-tema="escuro"] .atlas--corpo { --at-palco: radial-gradient(70% 60% at 50% 38%, #322a2c 0%, #201a1c 55%, #130f10 100%); }
+@media (prefers-color-scheme: dark) { :root:not([data-tema="claro"]) .atlas--corpo { --at-palco: radial-gradient(70% 60% at 50% 38%, #322a2c 0%, #201a1c 55%, #130f10 100%); } }
+.atlas--corpo .at-chip--explorar svg { color: #8a4b5a; }
+
+.at-chip--estudo svg { color: var(--ouro-texto, #7a5710); }
+.at-chip--estudo.at-chip--ativo { background: color-mix(in srgb, var(--px-ouro, #f4cf7c) 35%, var(--superficie)); color: var(--texto); border-color: color-mix(in srgb, var(--px-ouro, #f4cf7c) 70%, transparent); }
+
+/* camadas: um respiro antes das camadas do corpo inteiro */
+.atlas__camadas .at-camada--inicio-corpo { margin-left: 0.55rem; }
+.atlas__camadas .at-camada--inicio-corpo::before { content: ""; position: absolute; left: -0.4rem; top: 25%; bottom: 25%; width: 1px; background: var(--at-borda); }
+
+/* explorar no corpo inteiro: sistemas com o filete de cor */
+.at-sistemas { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem; }
+.at-sistema {
+  position: relative; display: grid; gap: 0.1rem; align-content: start; text-align: left; padding: 0.55rem 0.6rem 0.55rem 0.8rem; min-height: 4.2rem;
+  border: 1px solid transparent; border-radius: 12px; background: color-mix(in srgb, var(--superficie) 72%, transparent); color: var(--texto);
+  font: inherit; cursor: pointer; transition: background 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.at-sistema i { position: absolute; left: 0; top: 0.6rem; bottom: 0.6rem; width: 3px; border-radius: 0 3px 3px 0; background: var(--at-area); }
+.at-sistema strong { font-size: 0.92rem; line-height: 1.2; padding-right: 0.9rem; }
+.at-sistema small { color: var(--texto-2); font-size: 0.74rem; line-height: 1.3; }
+.at-sistema:hover { background: var(--superficie); border-color: var(--at-borda); box-shadow: var(--at-sombra); }
+.at-sistema--ativo { background: color-mix(in srgb, var(--at-area) 10%, var(--superficie)); border-color: color-mix(in srgb, var(--at-area) 40%, transparent); }
+.at-sistema__cadeado { position: absolute; top: 0.5rem; right: 0.5rem; color: var(--ouro-texto, #7a5710); }
+.at-faixa-plano { display: grid; gap: 0.55rem; justify-items: start; padding: 0.75rem 0.8rem; border: 1px solid color-mix(in srgb, var(--px-ouro, #f4cf7c) 60%, transparent); border-radius: 12px; background: color-mix(in srgb, var(--px-ouro, #f4cf7c) 14%, var(--superficie)); }
+.at-faixa-plano p { margin: 0; font-size: var(--meta); line-height: 1.45; }
+.at-faixa-plano .at-ouro { text-decoration: none; min-height: 2.4rem; font-size: 0.9rem; }
+
+/* convite discreto para o corpo inteiro, no fim do explorar da Ortopedia */
+.at-convite-corpo { display: flex; align-items: center; gap: 0.6rem; margin-top: var(--e-2); padding: 0.75rem 0.85rem; border: 1px dashed color-mix(in srgb, #8a4b5a 40%, var(--at-borda)); border-radius: 12px; background: none; color: var(--texto); font: inherit; text-align: left; cursor: pointer; }
+.at-convite-corpo span { flex: 1; display: grid; gap: 0.1rem; }
+.at-convite-corpo small { color: var(--texto-2); font-size: var(--meta); line-height: 1.35; }
+.at-convite-corpo svg { color: #8a4b5a; }
+.at-convite-corpo:hover { background: color-mix(in srgb, #8a4b5a 6%, var(--superficie)); }
+.at-resultados__outro { color: var(--verdete) !important; font-weight: 700 !important; }
+.at-resultados li button > svg:last-child:not(:first-child) { margin-left: auto; color: var(--ouro-texto, #7a5710); }
+
+/* ferramentas */
+.at-ferramentas { display: grid; grid-template-columns: 1fr 1fr; gap: 0.35rem; }
+.at-ferramentas button { display: flex; align-items: flex-start; gap: 0.5rem; padding: 0.55rem 0.6rem; border: 1px solid var(--at-borda); border-radius: 12px; background: var(--superficie); color: var(--texto); font: inherit; text-align: left; cursor: pointer; transition: border-color 0.15s ease, box-shadow 0.15s ease; }
+.at-ferramentas button > svg { flex: none; margin-top: 0.1rem; color: var(--verdete); }
+.at-ferramentas span { display: grid; gap: 0.05rem; font-size: 0.86rem; font-weight: 700; line-height: 1.2; }
+.at-ferramentas small { color: var(--texto-2); font-size: 0.72rem; font-weight: 500; }
+.at-ferramentas button:hover { border-color: color-mix(in srgb, var(--verdete) 40%, transparent); box-shadow: var(--at-sombra); }
+.at-alternador { display: flex; align-items: center; gap: 0.6rem; padding: 0.55rem 0.65rem; border: 1px solid var(--at-borda); border-radius: 12px; background: var(--superficie); cursor: pointer; }
+.at-alternador input { width: 1.1rem; height: 1.1rem; accent-color: var(--verdete); }
+.at-alternador span { display: grid; gap: 0.05rem; }
+.at-alternador strong { font-size: 0.88rem; }
+.at-alternador small { color: var(--texto-2); font-size: 0.72rem; }
+
+/* navegador por sistema (mesma caixa da legenda das visualizações) */
+.at-nav { border-top: 3px solid var(--at-area, var(--verdete)); }
+.at-nav__trilha { display: flex; flex-wrap: wrap; gap: 0.1rem 0.15rem; }
+.at-nav__trilha button { display: inline-flex; align-items: center; gap: 0.2rem; padding: 0.15rem 0.35rem; border: 0; border-radius: 6px; background: none; color: var(--texto-2); font: inherit; font-size: 0.74rem; cursor: pointer; }
+.at-nav__trilha button + button::before { content: "›"; margin-right: 0.3rem; opacity: 0.6; }
+.at-nav__trilha button:hover { color: var(--verdete); background: var(--verdete-veu); }
+.at-nav__filhos button { justify-content: space-between; }
+.at-nav__filhos button span { flex: 1; min-width: 0; }
+.at-nav__filhos button small { color: var(--texto-2); font-size: 0.74rem; font-variant-numeric: tabular-nums; }
+.at-nav__filhos button svg { color: var(--texto-2); }
+.at-nav__estruturas small { margin-left: auto; color: var(--texto-2); font-size: 0.72rem; }
+.atlas__preset.at-nav { max-height: calc(100% - 9rem); }
+.atlas--larga .atlas__preset.at-nav { width: min(19rem, 30vw); }
+
+/* trilha da ficha: cada passo abre o grupo */
+.at-trilha button { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-align: left; cursor: pointer; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 2px; transition: text-decoration-color 0.15s ease, color 0.15s ease; }
+.at-trilha button:hover { color: #fff; text-decoration-color: currentColor; }
+
+/* rótulos que acompanham o modelo */
+.at-rotulos { position: absolute; inset: 0; z-index: 2; pointer-events: none; overflow: hidden; }
+.at-rotulo {
+  position: absolute; left: 0; top: 0; max-width: 11rem; padding: 0.18rem 0.5rem; border-radius: 999px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  background: color-mix(in srgb, var(--superficie) 88%, transparent); color: var(--texto); font-size: 0.72rem; font-weight: 700; line-height: 1.3;
+  box-shadow: 0 1px 2px rgba(16, 28, 26, 0.12), inset 0 0 0 1px var(--at-borda); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  transition: opacity 0.18s ease; will-change: transform;
+}
+.at-rotulo[data-fora="1"] { opacity: 0 !important; }
+
+/* Teste-se */
+.at-estudo {
+  position: absolute; z-index: 6; left: 50%; bottom: 4.6rem; transform: translateX(-50%); width: min(30rem, calc(100% - 2 * var(--e-3)));
+  display: grid; gap: 0.7rem; padding: 0.9rem 1rem 1rem; border: 1px solid color-mix(in srgb, var(--px-ouro, #f4cf7c) 55%, var(--at-borda)); border-radius: 18px;
+  background: color-mix(in srgb, var(--superficie) 94%, transparent); box-shadow: var(--at-sombra-forte); -webkit-backdrop-filter: blur(20px); backdrop-filter: blur(20px);
+  animation: at-entrar 0.22s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+}
+.at-estudo__topo { display: flex; align-items: center; gap: 0.75rem; }
+.at-estudo__selo { display: inline-flex; align-items: center; gap: 0.35rem; margin: 0; padding: 0.2rem 0.55rem; border-radius: 999px; background: var(--px-ouro, #f4cf7c); color: var(--px-tinta, #1b1208); font-size: 0.72rem; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; }
+.at-estudo__placar { flex: 1; display: flex; gap: 0.9rem; margin: 0; }
+.at-estudo__placar div { display: grid; }
+.at-estudo__placar dt { color: var(--texto-2); font-size: 0.66rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.at-estudo__placar dd { margin: 0; font-family: var(--fonte-pixel-titulo, "Jersey 10"), monospace; font-size: 1.45rem; line-height: 1; }
+.at-estudo__fechar { display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border: 0; border-radius: 50%; background: color-mix(in srgb, var(--texto) 6%, transparent); color: var(--texto-2); cursor: pointer; }
+.at-estudo__pergunta { display: grid; gap: 0.15rem; margin: 0; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.2rem; line-height: 1.2; }
+.at-estudo__pergunta small { color: var(--texto-2); font-family: system-ui, sans-serif; font-size: 0.74rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.at-estudo__opcoes { display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; margin: 0; padding: 0; list-style: none; }
+.at-estudo__opcao { display: flex; align-items: center; gap: 0.5rem; width: 100%; min-height: 3rem; padding: 0.45rem 0.6rem; border: 1px solid var(--at-borda); border-radius: 12px; background: var(--superficie); color: var(--texto); font: inherit; font-size: 0.9rem; font-weight: 650; line-height: 1.25; text-align: left; cursor: pointer; transition: border-color 0.15s ease, background 0.15s ease, transform 0.1s ease; }
+.at-estudo__opcao:hover:not(:disabled) { border-color: color-mix(in srgb, var(--verdete) 45%, transparent); background: var(--verdete-veu); }
+.at-estudo__opcao:active:not(:disabled) { transform: scale(0.98); }
+.at-estudo__opcao kbd { flex: none; display: grid; place-items: center; width: 1.4rem; height: 1.4rem; border-radius: 6px; background: var(--superficie-2); color: var(--texto-2); font: 700 0.72rem system-ui, sans-serif; box-shadow: inset 0 0 0 1px var(--at-borda); }
+.at-estudo__opcao span { flex: 1; }
+.at-estudo__opcao:disabled { cursor: default; color: var(--texto); }
+.at-estudo__opcao--certa { border-color: #1f9d63; background: color-mix(in srgb, #1f9d63 12%, var(--superficie)); }
+.at-estudo__opcao--certa svg { color: #1f9d63; }
+.at-estudo__opcao--errada { border-color: #d64541; background: color-mix(in srgb, #d64541 10%, var(--superficie)); }
+.at-estudo__opcao--errada svg { color: #d64541; }
+.at-estudo__opcao--apagada { opacity: 0.55; }
+.at-estudo__acoes { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.at-estudo__proxima { display: inline-flex; align-items: center; gap: 0.35rem; min-height: 2.6rem; padding: 0 1.1rem; border: 0; border-radius: 12px; background: var(--verdete); color: var(--sobre-destaque); font: inherit; font-weight: 750; cursor: pointer; }
+.at-estudo__proxima:hover { background: var(--verdete-tinta); }
+.at-estudo__vazio { margin: 0; color: var(--texto-2); line-height: 1.5; }
+.atlas--estudo .atlas__vistas { display: none; }
+
+/* aviso curto (imagem salva, link copiado) */
+.atlas__aviso { position: absolute; z-index: 9; left: 50%; top: 4rem; transform: translateX(-50%); padding: 0.45rem 0.9rem; border-radius: 999px; background: rgba(11, 43, 39, 0.94); color: #e6fbf5; font-size: var(--meta); font-weight: 700; box-shadow: var(--at-sombra); animation: at-esmaecer 0.2s ease both; white-space: nowrap; }
+
+/* ficha: cinco ações (focar, isolar, esconder, salvar, link) */
+.at-ficha__acoes { grid-template-columns: repeat(5, 1fr); }
+
+/* ---------- celular ---------- */
+.atlas--estreita .atlas__topo { grid-template-columns: auto minmax(0, 1fr) auto; gap: 0.35rem; }
+.atlas--estreita .at-chip--explorar { width: 2.5rem; padding: 0; justify-content: center; }
+.atlas--estreita .at-chip--explorar span, .atlas--estreita .at-chip--estudo span { display: none; }
+.atlas--estreita .at-chip--estudo { width: 2.5rem; padding: 0; justify-content: center; }
+.atlas--estreita .at-modo { justify-self: center; width: 100%; max-width: 15rem; }
+.atlas--estreita .at-modo button { padding: 0 0.45rem; font-size: 0.8rem; gap: 0.3rem; }
+.atlas--estreita .atlas__acoes-topo { gap: 0.3rem; }
+@media (max-width: 24rem) { .atlas--estreita .at-modo button svg:first-child { display: none; } }
+.atlas--estreita .at-estudo { left: var(--e-2); right: var(--e-2); width: auto; transform: none; bottom: calc(3.7rem + env(safe-area-inset-bottom)); padding: 0.75rem 0.8rem 0.85rem; gap: 0.55rem; }
+.atlas--estreita .at-estudo__opcoes { grid-template-columns: 1fr; }
+.atlas--estreita .at-estudo__opcao { min-height: 2.6rem; }
+.atlas--estreita .atlas__preset.at-nav { max-height: 46vh; }
+@media (prefers-reduced-motion: reduce) { .at-modo__marca, .at-estudo, .atlas__aviso { transition: none; animation: none; } }
+.atlas--corpo .at-modo button[aria-checked="true"] { color: #fff; }
+/* sistemas em uma coluna: nome e resumo lado a lado, leitura rápida */
+.at-sistemas { grid-template-columns: 1fr; gap: 0.25rem; }
+.at-sistema { min-height: 0; padding: 0.5rem 0.7rem 0.5rem 0.85rem; }
+.at-sistema small { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.at-modo__curto { display: none; }
+.atlas--estreita .at-modo__longo { display: none; }
+.atlas--estreita .at-modo__curto { display: inline; }
+/* celular: com um painel aberto, as vistas saem do caminho */
+.atlas--estreita:has(.atlas__explorar, .atlas__personalizar) .atlas__vistas { display: none; }
+/* a seta do tutorial aponta para o botão "?" (computador) ou para Ferramentas (celular) */
+.gc::before { right: 6.8rem; }
+.atlas--estreita .gc::before { right: 3.6rem; }
+/* chave Masculino | Feminino no começo da barra do Corpo inteiro */
+.at-sexo { flex: none; display: inline-flex; align-items: center; gap: 0.1rem; margin-right: 0.45rem; padding: 0.15rem; border-radius: 999px; background: color-mix(in srgb, var(--texto) 6%, transparent); }
+.at-sexo button { min-height: 2rem !important; padding: 0 0.7rem !important; font-size: 0.82rem; }
+.at-sexo button[aria-checked="true"] { background: var(--superficie); color: var(--texto); box-shadow: 0 1px 2px rgba(16, 28, 26, 0.12), inset 0 0 0 1px var(--at-borda); }
+.at-sexo button[aria-checked="false"] { background: none; color: var(--texto-2); box-shadow: none; }
+.at-sexo button[aria-checked="true"] { background: #8a4b5a !important; color: #fff !important; box-shadow: 0 3px 10px -4px rgba(138, 75, 90, 0.8) !important; }

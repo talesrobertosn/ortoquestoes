@@ -107,7 +107,7 @@ PAGINAS_EXTRAS = [("sobre", "Sobre o Orto Questões"),
                   # ImageObject das imagens do blog (Metadados de imagens no Search Console); os dois apontam para cá.
                   ("licenca-de-imagens", "Licença das imagens"),
                   # Atlas 3D (25/10/2026): páginas próprias em paginas_atlas_seo.py, para quem busca "atlas 3D" e "anatomia 3D"
-                  ("atlas-3d", "Atlas 3D"), ("esqueleto-humano-3d", "Esqueleto humano 3D"), ("musculos-do-corpo-humano-3d", "Músculos em 3D")]
+                  ("atlas-3d-online", "Atlas 3D online"), ("atlas-3d", "Atlas 3D"), ("esqueleto-humano-3d", "Esqueleto humano 3D"), ("musculos-do-corpo-humano-3d", "Músculos em 3D")]
 
 CRIAR_CONTA = "../#/conta?modo=criar&amp;voltar=%2Ftreinar"
 

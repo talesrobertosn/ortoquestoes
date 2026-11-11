@@ -32,8 +32,8 @@ export function ConviteAtlas({ convite, aoFechar }: { convite: TipoConvite; aoFe
           </>
         ) : (
           <>
-            <h2 id="at-convite-titulo">Gostou de ver os {nomeCamada}?</h2>
-            <p>Os {nomeCamada}, e também as outras camadas além de ossos e músculos, ficam abertos para quem assina o OrtoQuestões, junto com o cronograma até a prova e o Simulado Nacional.</p>
+            <h2 id="at-convite-titulo">O corpo inteiro está te esperando</h2>
+            <p>A camada <strong>{nomeCamada}</strong> e tudo o que vai além de ossos e músculos (ligamentos, nervos, vasos, órgãos, encéfalo e os sistemas do corpo inteiro) ficam abertos para quem assina o OrtoQuestões, junto com o cronograma até a prova e o Simulado Nacional.</p>
             <p className="at-convite__nota">Os ossos, os músculos e as questões de cada estrutura continuam liberados na sua conta, do jeitinho que estão.</p>
             <div className="at-convite__acoes">
               <a className="at-ouro at-ouro--curto" href={href('/assinatura')}>Conhecer os planos</a>
