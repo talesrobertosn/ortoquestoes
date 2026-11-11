@@ -120,7 +120,7 @@ como: A SES-DF 2022 usou o caso do lutador com bloqueios e pediu o julgamento de
 armadilha: Aceitar o item da ressonância porque a primeira metade está certa; prever a reparabilidade é o que o Campbell nega.
 !fim
 
-!questoes central=joelho-0149
+!questoes central=joelho-0149 relacionadas=joelho-0059
 conceito: A ruptura da raiz posterior do menisco medial aparece como defeito com líquido no corno posterior, melhor vista nos coronais posteriores, e permite a extrusão.
 como: Uma prova de Ortopedia mostrou coronal, sagital e axial e pediu o tipo de lesão entre raiz, vertical, rampa e alça de balde.
 armadilha: Chamar de alça de balde, que desloca um fragmento para o intercôndilo, ou de rampa, que é longitudinal na junção meniscocapsular.

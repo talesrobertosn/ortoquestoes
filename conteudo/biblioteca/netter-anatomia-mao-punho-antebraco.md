@@ -124,7 +124,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 73, Fig. 73.16, 
 
 Os pontos de compressão que o livro marca: no mediano, aponeurose do bíceps, cabeças do pronador redondo, arco do FSD e túnel do carpo; no radial, o tendão do braquiorradial (superficial), HENRY, ERCC, FROHSE e a borda distal do supinador; no ulnar, túnel cubital, cabeças do FUC e GUYON.
 
-!questoes central=mao-0497 relacionadas=mao-0344,mao-0170,mao-0165,mao-0403,mao-0315,mao-0533,mao-0535,mao-0627,mao-0097,ombro-cotovelo-0116,mao-0173 treino=mao-2561,mao-2562,mao-2566,mao-2571,mao-1264,mao-1272,mao-1274,mao-1275,mao-1278,mao-1279
+!questoes central=mao-0497 relacionadas=mao-0344,mao-0170,mao-0165,mao-0403,mao-0315,mao-0533,mao-0535,mao-0627,mao-0097,ombro-cotovelo-0116,mao-0173,ombro-cotovelo-0247 treino=mao-2561,mao-2562,mao-2566,mao-2571,mao-1264,mao-1272,mao-1274,mao-1275,mao-1278,mao-1279
 conceito: No antebraço, tudo o que é anterior é do mediano, menos o FUC e o FPD do anular e do mínimo; o interósseo anterior é motor puro (FPD 2 e 3, FLP, pronador quadrado); o radial inerva o braquiorradial e o ERLC antes de virar interósseo posterior; na mão, o ulnar fica com quase todos os intrínsecos.
 como: O TARO 2012 perguntou os flexores afetados na síndrome do interósseo anterior, e duas imagens da Ortopedia mostraram o interósseo anterior e pediram a fraqueza do flexor profundo do indicador e do médio; o CET-PR, o nervo do pronador redondo; o TARO 2021 e a Ortopedia, músculos do ulnar; TEOT 2023, TARO 2021 e as imagens da SBOT-SP e da Ortopedia pediram o nervo de músculos apontados; a Ortopedia mostrou a arcada de FROHSE.
 armadilha: Pôr o flexor ulnar do carpo no mediano, ou esperar perda sensitiva cutânea nas lesões dos interósseos.
