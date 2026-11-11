@@ -1,0 +1,797 @@
+{
+  "lote": "90-ligamentos-fascias-e-bolsas",
+  "fonte": "netter-6",
+  "paginas_lidas": [
+    53,
+    55,
+    172,
+    202,
+    204,
+    273,
+    451,
+    456,
+    467,
+    484,
+    485,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    532,
+    547,
+    565,
+    591,
+    592,
+    596,
+    606,
+    628,
+    630,
+    631,
+    635,
+    648,
+    651,
+    669,
+    671,
+    693,
+    697,
+    698,
+    708,
+    713,
+    718
+  ],
+  "registros": [
+    {
+      "chave": "discos-intervertebrais",
+      "tipo": "ligamento",
+      "nome": "Discos intervertebrais",
+      "en": "Intervertebral discs",
+      "ids": [
+        "intervertebral_disc_c2_c3",
+        "intervertebral_disc_c3_c4",
+        "intervertebral_disc_c4_c5",
+        "intervertebral_disc_c5_c6",
+        "intervertebral_disc_c6_c7",
+        "intervertebral_disc_c7_t1",
+        "intervertebral_disc_l1_l2",
+        "intervertebral_disc_l2_l3",
+        "intervertebral_disc_l3_l4",
+        "intervertebral_disc_l4_l5",
+        "intervertebral_disc_l5_s1",
+        "intervertebral_disc_t10_t11",
+        "intervertebral_disc_t11_t12",
+        "intervertebral_disc_t12_l1",
+        "intervertebral_disc_t1_t2",
+        "intervertebral_disc_t2_t3",
+        "intervertebral_disc_t3_t4",
+        "intervertebral_disc_t4_t5",
+        "intervertebral_disc_t5_t6",
+        "intervertebral_disc_t6_t7",
+        "intervertebral_disc_t7_t8",
+        "intervertebral_disc_t8_t9",
+        "intervertebral_disc_t9_t10",
+        "nucleus_pulposus_c2_c3",
+        "nucleus_pulposus_c3_c4",
+        "nucleus_pulposus_c4_c5",
+        "nucleus_pulposus_c5_c6",
+        "nucleus_pulposus_c6_c7",
+        "nucleus_pulposus_c7_t1",
+        "nucleus_pulposus_l1_l2",
+        "nucleus_pulposus_l2_l3",
+        "nucleus_pulposus_l3_l4",
+        "nucleus_pulposus_l4_l5",
+        "nucleus_pulposus_l5_s1",
+        "nucleus_pulposus_t10_t11",
+        "nucleus_pulposus_t11_t12",
+        "nucleus_pulposus_t12_l1",
+        "nucleus_pulposus_t1_t2",
+        "nucleus_pulposus_t2_t3",
+        "nucleus_pulposus_t3_t4",
+        "nucleus_pulposus_t4_t5",
+        "nucleus_pulposus_t5_t6",
+        "nucleus_pulposus_t6_t7",
+        "nucleus_pulposus_t7_t8",
+        "nucleus_pulposus_t8_t9",
+        "nucleus_pulposus_t9_t10"
+      ],
+      "regiao": "coluna",
+      "articulacao": "Sínfises intervertebrais (articulações cartilagíneas secundárias entre os corpos, exceto C1–C2)",
+      "funcao": "Anel fibroso resistente em volta do núcleo pulposo gelatinoso e avascular; amortecem a carga e funcionam como rolamentos semilíquidos que permitem pequenos movimentos entre as vértebras.",
+      "clinica": "Hérnia de disco: o núcleo pulposo atravessa o anel fibroso, 95% em L4–L5 ou L5–S1, quase sempre posterolateral (onde o anel é mais fino), comprimindo a raiz de baixo. Com a idade o núcleo desidrata, o disco perde altura e os forames estreitam.",
+      "ver": [
+        "raizes-dos-nervos-espinais",
+        "ligamentos-da-coluna"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            628,
+            630
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ligamentos-da-coluna",
+      "tipo": "ligamento",
+      "nome": "Ligamentos da coluna vertebral",
+      "en": "Vertebral ligaments",
+      "ids": [
+        "anterior_longitudinal_ligament",
+        "intercornual_ligament",
+        "interspinous_ligaments",
+        "intertransverse_ligaments",
+        "ligamenta_flava",
+        "nuchal_ligament",
+        "posterior_longitudinal_ligament",
+        "supraspinous_ligament"
+      ],
+      "regiao": "coluna",
+      "funcao": "Longitudinal anterior: limita a extensão e estabiliza os discos. Longitudinal posterior: limita a flexão e ajuda a conter a herniação do disco. Amarelos: limitam a flexão, preservam a curvatura e protegem os discos. Interespinais e supraespinal: limitam a flexão. Intertransversários: limitam a inclinação lateral. Nucal: impede a hiperflexão cervical e dá fixação ao trapézio e ao romboide menor.",
+      "clinica": "O ligamento amarelo hipertrofiado e os discos abaulados estreitam o canal na estenose lombar, que pode exigir laminectomia.",
+      "ver": [
+        "discos-intervertebrais"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            628
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "articulacao-sacroiliaca",
+      "tipo": "ligamento",
+      "nome": "Ligamentos sacroilíacos",
+      "en": "Sacro-iliac ligaments",
+      "ids": [
+        "anterior_sacro_iliac_ligament",
+        "interosseous_sacro_iliac_ligament",
+        "posterior_sacro_iliac_ligament"
+      ],
+      "regiao": "pelve-quadril",
+      "articulacao": "Sacroilíaca: entre as faces auriculares do sacro e do ílio; sinovial atípica, com fibrocartilagem, e de movimento muito pequeno.",
+      "funcao": "Os ligamentos interósseo, sacroilíaco anterior e posterior estabilizam a articulação.",
+      "ver": [
+        "ligamentos-da-pelve"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            669
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ligamentos-da-pelve",
+      "tipo": "ligamento",
+      "nome": "Ligamentos iliolombar, sacroespinal e sacrotuberal e membrana obturadora",
+      "en": "Pelvic ligaments",
+      "ids": [
+        "iliolumbar_ligament",
+        "obturator_membrane",
+        "sacrospinous_ligament",
+        "sacrotuberous_ligament"
+      ],
+      "regiao": "pelve-quadril",
+      "funcao": "O sacroespinal (da borda lateral do sacro à espinha isquiática) e o sacrotuberal (do sacro e do ílio posterior ao túber isquiático) impedem que a parte inferior do sacro gire para trás sob o peso do corpo e transformam as incisuras isquiáticas nos forames isquiáticos maior e menor. Os iliolombares reforçam a junção lombossacral. A membrana obturadora fecha o forame obturado e dá origem ao obturador interno.",
+      "ver": [
+        "articulacao-sacroiliaca"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            669,
+            671
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "sinfise-pubica",
+      "tipo": "ligamento",
+      "nome": "Sínfise púbica",
+      "en": "Pubic symphysis",
+      "ids": [
+        "inferior_pubic_ligament",
+        "interpubic_disc",
+        "pubic_symphysis",
+        "superior_pubic_ligament"
+      ],
+      "regiao": "pelve-quadril",
+      "articulacao": "Articulação cartilagínea secundária entre os corpos dos púbis, com o disco interpúbico de fibrocartilagem.",
+      "funcao": "Estabilizada pelos ligamentos púbicos superior e inferior. Na gestação a relaxina deixa a articulação mais móvel para aumentar o diâmetro da pelve.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            648,
+            669
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "articulacoes-costovertebrais",
+      "tipo": "ligamento",
+      "nome": "Ligamentos costovertebrais e membranas intercostais",
+      "en": "Costovertebral ligaments and intercostal membranes",
+      "ids": [
+        "costotransverse_ligament",
+        "external_intercostal_membrane",
+        "internal_intercostal_membrane",
+        "intra_articular_ligament_of_head_of_rib",
+        "radiate_ligament_of_head_of_rib"
+      ],
+      "regiao": "torax",
+      "funcao": "Os ligamentos radiado e intra-articular da cabeça da costela e o costotransversário prendem cada costela à coluna. As membranas intercostais externa e interna continuam os músculos intercostais de mesmo nome perto do esterno e da coluna.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            202,
+            204,
+            273
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "cartilagens-costais",
+      "tipo": "ligamento",
+      "nome": "Cartilagens costais",
+      "en": "Costal cartilages",
+      "ids": [
+        "costal_cartilage_of_eighth_rib",
+        "costal_cartilage_of_fifth_rib",
+        "costal_cartilage_of_first_rib",
+        "costal_cartilage_of_fourth_rib",
+        "costal_cartilage_of_ninth_rib",
+        "costal_cartilage_of_second_rib",
+        "costal_cartilage_of_seventh_rib",
+        "costal_cartilage_of_sixth_rib",
+        "costal_cartilage_of_tenth_rib",
+        "costal_cartilage_of_third_rib"
+      ],
+      "regiao": "torax",
+      "funcao": "Prendem as costelas ao esterno e completam a caixa torácica. A margem costal é formada pelas bordas mediais das cartilagens 7 a 10; a 2ª cartilagem se articula no ângulo do esterno (T4–T5), referência para contar as costelas.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            635
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "articulacao-temporomandibular",
+      "tipo": "ligamento",
+      "nome": "Articulação temporomandibular e ligamentos",
+      "en": "Temporomandibular joint",
+      "ids": [
+        "articular_capsule_of_temporomandibular_joint",
+        "articular_disc_of_temporomandibular_joint",
+        "lateral_temporomandibular_ligament",
+        "pterygospinous_ligament",
+        "sphenomandibular_ligament",
+        "stylohyoid_ligament",
+        "stylomandibular_ligament"
+      ],
+      "regiao": "cabeca-pescoco",
+      "articulacao": "Temporomandibular, com disco articular entre o côndilo da mandíbula e a fossa do temporal.",
+      "funcao": "O ligamento lateral (espessamento lateral da cápsula) impede a luxação posterior; o esfenomandibular, da espinha do esfenoide à língula da mandíbula, é o principal suporte passivo; o estilomandibular é um espessamento da cápsula da parótida, do processo estiloide ao ângulo da mandíbula. O estilo-hióideo dá origem ao constritor médio da faringe.",
+      "ver": [
+        "masseter",
+        "temporal-musculo",
+        "pterigoideo-lateral"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172,
+            591
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "cartilagens-da-laringe",
+      "tipo": "ligamento",
+      "nome": "Cartilagens e ligamentos da laringe",
+      "en": "Laryngeal cartilages",
+      "ids": [
+        "arytenoid_cartilage",
+        "corniculate_cartilage",
+        "cricoid_cartilage",
+        "cricopharyngeal_ligament",
+        "lateral_thyrohyoid_ligament",
+        "median_cricothyroid_ligament",
+        "median_thyrohyoid_ligament",
+        "quadrangular_membrane",
+        "thyroid_cartilage"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Esqueleto da laringe: três cartilagens ímpares (tireóidea, cricóidea e epiglótica) e três pares (aritenóideas, corniculadas e cuneiformes). A membrana quadrangular vai da epiglote às aritenóideas; sua borda livre forma a prega ariepiglótica. A membrana e os ligamentos tíreo-hióideos prendem a laringe ao hioide.",
+      "clinica": "Na emergência, a cricotireotomia por agulha atravessa a membrana cricotireóidea para oxigenar o paciente com obstrução alta.",
+      "ver": [
+        "epiglote",
+        "cricotireoideo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            606
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "cartilagens-nasais",
+      "tipo": "ligamento",
+      "nome": "Cartilagens do nariz",
+      "en": "Nasal cartilages",
+      "ids": [
+        "lateral_process_of_nasal_septal_cartilage",
+        "major_alar_cartilage",
+        "nasal_septal_cartilage"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "A cartilagem do septo nasal (com seu processo lateral) e as cartilagens alares maiores formam o esqueleto móvel da parte anterior do nariz.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            53,
+            55
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ligamentos-do-punho-acessorios",
+      "tipo": "ligamento",
+      "nome": "Cápsula e ligamentos acessórios do punho e do carpo",
+      "en": "Accessory wrist ligaments",
+      "ids": [
+        "articular_capsule_of_radiocarpal_joint",
+        "dorsal_carpometacarpal_ligaments",
+        "dorsal_metacarpal_ligaments",
+        "dorsal_scaphotriquetral_ligament",
+        "dorsal_ulnocarpal_ligament",
+        "interosseous_metacarpal_ligaments",
+        "palmar_carpometacarpal_ligaments",
+        "palmar_metacarpal_ligaments",
+        "palmar_scaphotriquetral_ligament",
+        "pisotriquetral_ligament",
+        "radial_collateral_ligament_of_wrist_joint",
+        "ulnar_collateral_ligament_of_wrist_joint",
+        "ulnopisiform_ligament"
+      ],
+      "regiao": "punho-mao",
+      "articulacao": "Radiocarpal, intercarpais, carpometacarpais e intermetacarpais.",
+      "funcao": "Cápsula radiocarpal reforçada pelos colaterais radial e ulnar do punho e pelos ligamentos ulnocarpais; o pisotriquetral e o ulnopisiforme fixam o pisiforme; os carpometacarpais e intermetacarpais (dorsais, palmares e interósseos) unem a fileira distal aos metacarpos.",
+      "ver": [
+        "retinaculos-e-fascias-do-membro-superior"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            484,
+            485,
+            697
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "articulacoes-dos-dedos-da-mao",
+      "tipo": "ligamento",
+      "nome": "Cápsulas e ligamentos dos dedos da mão",
+      "en": "Finger joint ligaments",
+      "ids": [
+        "articular_capsules_of_distal_interphalangeal_joints",
+        "articular_capsules_of_metacarpophalangeal_joints",
+        "articular_capsules_of_proximal_interphalangeal_joints",
+        "collateral_interphalangeal_ligaments_of_hand",
+        "collateral_metacarpophalangeal_ligaments",
+        "deep_transverse_metacarpal_ligament",
+        "palmar_interphalangeal_ligaments"
+      ],
+      "regiao": "punho-mao",
+      "articulacao": "Metacarpofalângicas e interfalângicas proximais e distais.",
+      "funcao": "Cada articulação tem cápsula, ligamentos colaterais e uma placa palmar; o ligamento metacarpal transverso profundo une as placas palmares do 2º ao 5º dedo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            494,
+            495,
+            698
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bainhas-tendineas-da-mao",
+      "tipo": "fascia",
+      "nome": "Bainhas dos tendões do punho e dos dedos",
+      "en": "Tendon sheaths of wrist and hand",
+      "ids": [
+        "common_flexor_tendon_sheath",
+        "cruciform_part_of_fibrous_sheath_of_digit_of_hand",
+        "synovial_sheaths_of_digits_of_hand",
+        "tendon_sheath_abd_pollicis_longus_ext_pollicis_brevis",
+        "tendon_sheath_of_extensor_carpi_ulnaris",
+        "tendon_sheath_of_extensor_digiti_minimi_manus",
+        "tendon_sheath_of_extensor_digitorum_and_extensor_indicis",
+        "tendon_sheath_of_extensor_pollicis_longus",
+        "tendon_sheath_of_extensors_carpi_radialis",
+        "tendon_sheath_of_flexor_carpi_radialis",
+        "tendon_sheath_of_flexor_pollicis_longus"
+      ],
+      "regiao": "punho-mao",
+      "partes": "Bainhas sinoviais dos extensores sob o retináculo dorsal (abdutor longo e extensor curto do polegar; extensores radiais; extensor longo do polegar; extensor dos dedos e do indicador; extensor do dedo mínimo; extensor ulnar do carpo) e dos flexores no túnel do carpo (bainha comum dos flexores, do flexor longo do polegar e do flexor radial do carpo). Nos dedos, as bainhas fibrosas (com as partes anulares e cruciformes) envolvem as bainhas sinoviais dos flexores superficial e profundo.",
+      "ver": [
+        "retinaculos-e-fascias-do-membro-superior"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            490,
+            491,
+            492,
+            493,
+            698
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bainha-intertubercular",
+      "tipo": "fascia",
+      "nome": "Bainha do tendão da cabeça longa do bíceps",
+      "en": "Intertubercular tendon sheath",
+      "ids": [
+        "intertubercular_tendon_sheath"
+      ],
+      "regiao": "ombro",
+      "localizacao": "Bainha sinovial que acompanha o tendão da cabeça longa do bíceps no sulco intertubercular do úmero, prolongamento da membrana sinovial do ombro.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            451,
+            456
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bolsas-do-membro-superior",
+      "tipo": "fascia",
+      "nome": "Bolsas do ombro e do cotovelo",
+      "en": "Bursae of upper limb",
+      "ids": [
+        "bicipitoradial_bursa",
+        "coracobrachial_bursa",
+        "subacromial_bursa",
+        "subcutaneous_acromial_bursa",
+        "subdeltoid_bursa",
+        "subtendinous_bursa_of_infraspinatus_muscle",
+        "subtendinous_bursa_of_teres_major_muscle",
+        "subtendinous_bursa_of_trapezius_muscle",
+        "subtendinous_bursa_of_triceps_brachii_muscle"
+      ],
+      "regiao": "ombro",
+      "partes": "Subacromial e subdeltóidea (entre o acrômio e o deltoide por cima e o manguito por baixo), subcutânea acromial, coracobraquial, subtendíneas do infraespinal, do redondo maior, do trapézio e do tríceps, e bicipitorradial (no cotovelo).",
+      "clinica": "Na tendinite calcária do supraespinal, a bolsa subacromial inflama e calcifica: dor, sensibilidade e limitação, sobretudo no arco doloroso de 50° a 130° de abdução, quando o tendão encosta na face inferior do acrômio.",
+      "ver": [
+        "supraespinal"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            451,
+            467,
+            693
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "retinaculos-e-fascias-do-membro-superior",
+      "tipo": "fascia",
+      "nome": "Retináculos, aponeurose palmar e fáscias do membro superior",
+      "en": "Retinacula and fasciae of upper limb",
+      "ids": [
+        "antebrachial_fascia",
+        "brachial_fascia",
+        "deltoid_fascia",
+        "dorsal_fascia_of_hand",
+        "extensor_retinaculum_of_wrist",
+        "flexor_retinaculum_of_wrist",
+        "lateral_intermuscular_septum_of_arm",
+        "medial_intermuscular_septum_of_arm",
+        "palmar_aponeurosis"
+      ],
+      "regiao": "punho-mao",
+      "funcao": "A fáscia do antebraço forma atrás o retináculo dos extensores e, à frente, o ligamento carpal palmar e, mais profundo e distal, o retináculo dos flexores (ligamento transverso do carpo). O túnel do carpo fica entre o retináculo dos flexores (dos tubérculos do escafoide e do trapézio ao pisiforme e ao hâmulo do hamato) e a concavidade anterior do carpo. A aponeurose palmar, espessamento central da fáscia da palma, manda quatro extensões às bases dos dedos e continua com as bainhas fibrosas; septos medial e lateral criam os compartimentos da palma. Os septos intermusculares do braço separam os compartimentos anterior e posterior.",
+      "clinica": "Na síndrome do túnel do carpo, qualquer processo que diminua o túnel (inflamação das bainhas sinoviais, retenção de líquido, infecção) comprime o nervo mediano sob o retináculo dos flexores.",
+      "ver": [
+        "mediano",
+        "bainhas-tendineas-da-mao"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            697,
+            698
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ligamentos-do-pe-acessorios",
+      "tipo": "ligamento",
+      "nome": "Ligamentos intertarsais, tarsometatarsais e dos dedos do pé",
+      "en": "Accessory ligaments of foot",
+      "ids": [
+        "articular_capsule_of_interphalangeal_joint_of_great_toe",
+        "articular_capsules_of_distal_interphalangeal_joints_of_foot",
+        "articular_capsules_of_metatarsophalangeal_joints",
+        "articular_capsules_of_proximal_interphalangeal_joints_of_foot",
+        "collateral_interphalangeal_ligaments_of_foot",
+        "cuneocuboid_interosseous_ligament",
+        "dorsal_cuboideonavicular_ligament",
+        "dorsal_cuneocuboid_ligament",
+        "dorsal_cuneonavicular_ligaments",
+        "dorsal_intercuneiform_ligaments",
+        "dorsal_metatarsal_ligaments",
+        "dorsal_tarsometatarsal_ligaments",
+        "intercuneiform_interosseous_ligaments",
+        "metatarsal_interosseous_ligaments",
+        "plantar_cuboideonavicular_ligament",
+        "plantar_cuneocuboid_ligament",
+        "plantar_cuneonavicular_ligaments",
+        "plantar_intercuneiform_ligaments",
+        "plantar_interphalangeal_ligaments",
+        "plantar_metatarsal_ligaments",
+        "plantar_tarsometatarsal_ligaments"
+      ],
+      "regiao": "tornozelo-pe",
+      "articulacao": "Intertarsais, tarsometatarsais, intermetatarsais, metatarsofalângicas e interfalângicas do pé.",
+      "funcao": "Ligamentos dorsais, plantares e interósseos que unem os ossos do tarso e do metatarso; com a aponeurose plantar e os músculos, mantêm os arcos do pé.",
+      "ver": [
+        "fascias-do-membro-inferior"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            718
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bainhas-tendineas-do-tornozelo",
+      "tipo": "fascia",
+      "nome": "Bainhas dos tendões do tornozelo",
+      "en": "Tendon sheaths of ankle",
+      "ids": [
+        "common_tendon_sheath_of_fibularis_muscles",
+        "plantar_tendon_sheath_of_fibularis_longus_muscle",
+        "tendon_sheath_of_extensor_digitorum_longus",
+        "tendon_sheath_of_extensor_hallucis_longus",
+        "tendon_sheath_of_flexor_digitorum_longus",
+        "tendon_sheath_of_flexor_hallucis_longus",
+        "tendon_sheath_of_tibialis_anterior",
+        "tendon_sheath_of_tibialis_posterior_muscle"
+      ],
+      "regiao": "tornozelo-pe",
+      "partes": "Anteriores, sob os retináculos dos extensores: tibial anterior, extensor longo do hálux e extensor longo dos dedos. Mediais, atrás do maléolo medial e sob o retináculo dos flexores: tibial posterior, flexor longo dos dedos e flexor longo do hálux. Laterais: bainha comum dos fibulares, sob os retináculos fibulares, e a bainha plantar do fibular longo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            565
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bolsas-do-membro-inferior",
+      "tipo": "fascia",
+      "nome": "Bolsas do quadril, do joelho e do tornozelo",
+      "en": "Bursae of lower limb",
+      "ids": [
+        "anserine_bursa",
+        "bursa_of_piriformis_muscle",
+        "deep_infrapatellar_bursa",
+        "iliopectineal_bursa",
+        "inferior_subtendinous_bursa_of_biceps_femoris_muscle",
+        "lateral_subtendinous_bursa_of_gastrocnemius_muscle",
+        "medial_subtendinous_bursa_of_gastrocnemius_muscle",
+        "sciatic_bursa_of_gluteus_maximus_muscle",
+        "sciatic_bursa_of_obturator_internus",
+        "semimembranosus_bursa",
+        "subcutaneous_bursa_of_lateral_malleolus",
+        "subcutaneous_bursa_of_medial_malleolus",
+        "subcutaneous_bursa_of_tuberosity_of_tibia",
+        "subcutaneous_calcaneal_bursa",
+        "subcutaneous_infrapatellar_bursa",
+        "subcutaneous_prepatellar_bursa",
+        "subcutaneous_trochanteric_bursa",
+        "subfacial_prepatellar_bursa",
+        "subtendinous_bursa_of_iliacus_muscle",
+        "subtendinous_bursa_of_obturator_internus",
+        "subtendinous_bursa_of_sartorius_muscle",
+        "subtendinous_bursa_of_tibialis_anterior",
+        "subtendinous_calcaneal_bursa",
+        "subtendinous_prepatellar_bursa",
+        "superior_bursa_of_biceps_femoris_muscle",
+        "suprapatellar_bursa",
+        "trochanteric_bursa_of_gluteus_maximus_muscle",
+        "trochanteric_bursa_of_gluteus_medius_muscle",
+        "trochanteric_bursa_of_gluteus_minimus_muscle"
+      ],
+      "regiao": "joelho",
+      "partes": "Quadril: iliopectínea, isquiáticas do glúteo máximo e do obturador interno, do piriforme. Joelho: suprapatelar, pré-patelares, infrapatelares, anserina, do semimembranáceo, subtendíneas do gastrocnêmio e do bíceps femoral. Tornozelo: subcutâneas dos maléolos e da tuberosidade da tíbia.",
+      "clinica": "Quatro bolsas se comunicam com a cavidade sinovial do joelho (suprapatelar, do poplíteo, anserina e do gastrocnêmio). A suprapatelar é vulnerável à infecção após ferimento penetrante, que se espalha direto para o joelho.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            532,
+            547,
+            713
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "fascias-do-membro-inferior",
+      "tipo": "fascia",
+      "nome": "Fáscia lata, trato iliotibial, retináculos e aponeurose plantar",
+      "en": "Fasciae and retinacula of lower limb",
+      "ids": [
+        "anterior_intermuscular_septum_of_leg",
+        "crural_fascia",
+        "fascia_lata",
+        "flexor_retinaculum_of_ankle",
+        "iliotibial_tract",
+        "inferior_extensor_retinaculum_of_ankle",
+        "inferior_fibular_retinaculum",
+        "lateral_femoral_intermuscular_septum",
+        "lateral_patellar_retinaculum",
+        "medial_femoral_intermuscular_septum",
+        "medial_patellar_retinaculum",
+        "piriformis_fascia",
+        "plantar_aponeurosis",
+        "popliteal_fascia",
+        "posterior_intermuscular_septum_of_leg",
+        "superior_extensor_retinaculum_of_ankle",
+        "superior_fibular_retinaculum",
+        "transverse_intermuscular_septum_of_leg"
+      ],
+      "regiao": "coxa",
+      "funcao": "A fáscia lata é uma camada densa e forte sob o tecido subcutâneo; seus septos dividem a coxa em compartimentos anterior, medial e posterior, e ela impede o abaulamento dos músculos, ajudando o bombeamento venoso. O trato iliotibial é o espessamento lateral da fáscia lata, aponeurose conjunta do tensor da fáscia lata e do glúteo máximo, e se fixa no tubérculo de Gerdy. Na perna, a fáscia crural forma os retináculos dos extensores, dos flexores e dos fibulares no tornozelo. A aponeurose plantar ajuda a manter os arcos do pé.",
+      "clinica": "O hiato safeno, abaixo da parte medial do ligamento inguinal, é a falha da fáscia lata por onde a safena magna chega à femoral.",
+      "ver": [
+        "tensor-da-fascia-lata",
+        "gluteo-maximo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            565,
+            708,
+            718
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "fascias-do-tronco",
+      "tipo": "fascia",
+      "nome": "Fáscias do tronco e linha alba",
+      "en": "Fasciae of trunk",
+      "ids": [
+        "anterior_layer_of_thoracolumbar_fascia",
+        "clavipectoral_fascia",
+        "diaphragmatic_fascia",
+        "iliopsoas_fascia",
+        "investing_abdominal_fascia",
+        "linea_alba",
+        "middle_layer_of_thoracolumbar_fascia",
+        "pectoral_fascia",
+        "posterior_layer_of_thoracolumbar_fascia",
+        "tendinous_arch_of_levator_ani",
+        "transversalis_fascia"
+      ],
+      "regiao": "abdome",
+      "funcao": "A fáscia toracolombar envolve os músculos profundos do dorso e dá origem ao latíssimo do dorso, ao oblíquo interno e ao transverso. A linha alba é a rafe fibrosa onde as aponeuroses dos três músculos largos do abdome se encontram, do xifoide à sínfise. A fáscia transversal forra por dentro o transverso do abdome. A fáscia peitoral envolve o peitoral maior; a clavipeitoral envolve o subclávio e o peitoral menor e é perfurada pelo nervo peitoral lateral. O arco tendíneo do levantador do ânus, na fáscia do obturador interno, é origem do levantador.",
+      "ver": [
+        "reto-do-abdome",
+        "levantador-do-anus"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            365,
+            631,
+            648,
+            651,
+            671,
+            693
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "fascias-da-cabeca-e-pescoco",
+      "tipo": "fascia",
+      "nome": "Fáscias da cabeça e do pescoço",
+      "en": "Fasciae of head and neck",
+      "ids": [
+        "epicranial_aponeurosis",
+        "masseteric_fascia",
+        "superficial_investing_cervical_fascia",
+        "superficial_layer_of_temporal_fascia"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "A lâmina superficial (de revestimento) da fáscia cervical envolve o pescoço e forma o teto do trígono posterior. A aponeurose epicrânica une os ventres frontal e occipital do occipitofrontal; a fáscia temporal cobre o temporal e a massetérica, o masseter.",
+      "ver": [
+        "frontal-musculo",
+        "occipital-musculo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            592,
+            596
+          ]
+        }
+      ],
+      "status": "verificado"
+    }
+  ]
+}
