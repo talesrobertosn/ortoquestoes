@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-13-supracondiliana
-versao: 2
+versao: 3
 titulo: Fratura supracondiliana do úmero na criança
 especialidade: pediatria
 acesso: gratis
@@ -234,7 +234,7 @@ Na fratura em extensão, o periósteo **anterior** rompe e a **dobradiça poster
 | Posterolateral | Medial | Supinação |
 !fim
 
-Flexão com pronação tensiona o periósteo medial e posterior e corrige o varo e a extensão do desvio posteromedial. No posterolateral, o medial está roto e pronar pode atrapalhar; a supinação tensiona o lateral íntegro. O capítulo frisa que **pronar não deve ser automático**.
+Flexão com pronação tensiona o **periósteo posterior e as partes moles laterais** e corrige o varo e a extensão do desvio posteromedial (10ª edição, capítulo 14, tabela 14-2). No posterolateral, o anterior e o medial estão rotos e pronar pode atrapalhar; a supinação tensiona o lateral íntegro. O capítulo frisa que **pronar não deve ser automático**.
 
 !figura 13-30
 Periósteo roto do lado lateral numa fratura supracondiliana com desvio posteromedial.

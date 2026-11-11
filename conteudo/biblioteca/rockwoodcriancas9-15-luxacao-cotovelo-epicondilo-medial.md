@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial
-versao: 2
+versao: 3
 titulo: Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança
 especialidade: pediatria
 acesso: gratis
@@ -463,11 +463,13 @@ O capítulo trata pouco desse assunto, e é importante saber exatamente o que el
 
 A banca pergunta da luxação **congênita da cabeça do rádio** dados que o capítulo 15 não traz (direção mais comum, bilateralidade, associações, conduta). As questões ficam citadas aqui para o leitor saber onde está a fronteira; os números delas devem ser estudados no capítulo de malformações.
 
+Esses dados estão nos outros livros do acervo. No Lovell and Winter (7ª edição, capítulo 22, p. 923 e 924), a luxação congênita da cabeça do rádio é rara, em geral isolada, mas pode vir com artrogripose, CORNELIA DE LANGE, LARSEN, unha-patela e sinostose radioulnar; pode ser **bilateral ou unilateral**; a maioria é **posterior ou posterolateral**. Os critérios radiográficos são cabeça **pequena e em cúpula**, capítulo hipoplásico, ulna arqueada (convexidade dorsal na posterior) e eixo do rádio que não cruza o capítulo. A queixa mais comum é a **limitação da extensão**, em geral de menos de 30 graus, e a supinação perde mais que a pronação. Não reduz por manipulação, e na maioria dos casos o certo é **diagnosticar e observar**, deixando a cirurgia para dor ou limitação progressiva. O HEBERT (capítulo 6) a chama de alteração congênita mais comum do cotovelo, com **60% de associação** a outras alterações esqueléticas, maioria posterior ou posterolateral (30% anterior) e **maioria bilateral**, o que ajuda a separá-la da pós-traumática; a cabeça é **hipoplásica e achatada**, e a cirurgia fica para o sintomático. O Tachdjian (6ª edição, p. 1248) também a dá como em geral **bilateral e posterior**, mas descreve a cabeça luxada como **aumentada**, elíptica e um pouco irregular; o Lovell and Winter, o HEBERT e este capítulo do Rockwood a descrevem pequena ou hipoplásica.
+
 !questoes central=pediatria-0091,pediatria-0280 relacionadas=pediatria-0047,pediatria-0061,pediatria-0656,pediatria-0014,pediatria-0147,pediatria-0794,ombro-cotovelo-0529,ombro-cotovelo-0512
 conceito: Na luxação crônica, cabeça do rádio hipoplásica e em cúpula, côndilos atróficos, síndrome associada e anatomia idêntica no cotovelo contralateral apontam para origem congênita; a luxação isolada traumática da cabeça do rádio deve ser separada dela.
 como: A banca cobra a direção da luxação congênita da cabeça do rádio (TEOT 2022, TARO 2012, 2016, 2017 e 2024: posterior), o tamanho da cabeça (TARO 2024: menor), a bilateralidade e as associações (TARO 2019), a conduta (sem ano: conservadora) e, no TARO 2006, a reconstrução do anular na luxação aguda.
 armadilha: Cabeça do rádio de tamanho normal e côncava: é o aspecto da luxação traumática; na congênita a cabeça é hipoplásica e em cúpula.
-alerta: O capítulo 15 não dá a direção da luxação congênita da cabeça do rádio, sua bilateralidade nem sua conduta; esses gabaritos (posterior, bilateral e associada, tratamento conservador) vêm de outra fonte. Sem gabarito no acervo: TARO 2006 (pediatria-0794, associação com outras anomalias; ombro-cotovelo-0512, reconstrução do anular na luxação aguda da cabeça do rádio) e PUC-SP 2023 (ombro-cotovelo-0529), que o capítulo não discute.
+alerta: O capítulo 15 não dá a direção da luxação congênita da cabeça do rádio, sua bilateralidade nem sua conduta; esses gabaritos (posterior, bilateral e associada, tratamento conservador) têm fonte local no Lovell and Winter 7ª edição (capítulo 22, p. 923 e 924: posterior ou posterolateral, limitação da extensão, observação na maioria) e no HEBERT (capítulo 6: maioria bilateral, 60% com associações). No tamanho da cabeça os livros divergem: o Tachdjian (p. 1248) a descreve aumentada; o Lovell and Winter, o HEBERT e o Rockwood, menor ou hipoplásica. Sem gabarito no acervo: TARO 2006 (pediatria-0794, associação com outras anomalias; ombro-cotovelo-0512, reconstrução do anular na luxação aguda da cabeça do rádio) e PUC-SP 2023 (ombro-cotovelo-0529), que o capítulo não discute.
 !fim
 
 # Outras luxações: anterior, medial e lateral, divergente e translocação {radar=fundamento}

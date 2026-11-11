@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-14-fratura-em-t
-versao: 2
+versao: 3
 titulo: Fratura em T (intercondiliana) do úmero distal na criança
 especialidade: pediatria
 acesso: gratis
@@ -109,6 +109,8 @@ Clinicamente, a fratura em T é confundida sobretudo com a **supracondiliana em 
 ## A chave: o traço até o ápice da tróclea
 
 O diagnóstico tem de excluir os padrões comuns: a fratura **isolada do côndilo lateral ou do medial** e a **separação completa da fise distal**. Nessas, um sinal importante é o fragmento metafisário de **THURSTON-HOLLAND**, medial ou lateral. A **chave da fratura em T** é outra: o **traço vertical que desce até o ápice da tróclea**.
+
+Esse fragmento só se entende com a classificação de **SALTER-HARRIS** das lesões da fise (10ª edição, capítulo 2, figuras 2-11 a 2-15). No **tipo I** o traço atravessa só a fise, sem metáfise nem epífise, e a radiografia pode parecer normal. No **tipo II** o traço começa numa borda da fise, corre por parte dela e sai pela metáfise, deixando o **fragmento de THURSTON-HOLLAND**; poupa a camada germinativa e o risco de distúrbio de crescimento é mínimo. No **tipo III** o traço começa na epífise, corta a superfície articular e sai pela fise na periferia. O **tipo IV** é um cisalhamento vertical que rompe a superfície articular e cruza todas as camadas da fise. Os tipos III e IV ameaçam a irrigação epifisária, deixam barra fisária com frequência e pedem redução anatômica. O **tipo V** é a compressão da fise, que pode não aparecer na radiografia inicial e se revela pelo fechamento precoce. No cotovelo, o descolamento total da fise distal do úmero costuma ser tipo I no lactente e tipo II quando leva uma lasca metafisária (10ª edição, capítulo 18), e SALTER e HARRIS classificaram a fratura do côndilo lateral como tipo IV, com traços do II e do IV (10ª edição, capítulo 17).
 
 !tabela Diagnóstico diferencial na radiografia
 | Lesão | O que a radiografia mostra |
