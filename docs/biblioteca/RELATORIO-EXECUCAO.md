@@ -346,7 +346,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | #1043 | Fase TARO: 60 questões em miniaula com figuras (coluna cervical, carpo, diáfise da tíbia, síndrome compartimental, fraturas por estresse e compartimentos da perna) |
 | #1044 | Fase TARO: 70 questões em miniaula com figuras (estresse, úmero proximal, anel pélvico, sacro, diáfise do fêmur, rádio e ulna, toracolombar, escápula); fotos de livro com rosto de paciente retiradas de 12 miniaulas e trocadas por recortes sem rosto |
 | #1045 | Fase TARO: 50 questões em miniaula com figuras (acetábulo, fraturas e luxações da mão, clavícula, antebraço e punho da criança); foto com rosto parcial trocada na pediatria-0643 |
-| (este PR) | Fase TARO: 50 questões em miniaula com figuras (patela e mecanismo extensor, planalto tibial, cotovelo infantil e pronação dolorosa, tornozelo, colo do fêmur, supracondiliana) |
+| #1046 | Fase TARO: 50 questões em miniaula com figuras (patela e mecanismo extensor, planalto tibial, cotovelo infantil e pronação dolorosa, tornozelo, colo do fêmur, supracondiliana) |
+| (este PR) | Fase TARO: 64 questões em miniaula com figuras (cotovelo infantil e fises, tálus, calcâneo, pilão, tornozelo, côndilo lateral, maus-tratos, patela, diáfise do fêmur e do úmero, transtrocantérica, fêmur distal); fecha as listas do TARO ligadas a resumo, menos a a035 |
 
 ## Próximo
 
