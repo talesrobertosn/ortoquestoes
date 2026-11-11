@@ -1,6 +1,6 @@
 ---
 id: rockwood10-44-carpo
-versao: 2
+versao: 3
 titulo: Fraturas e luxações do carpo
 especialidade: mao
 acesso: gratis
@@ -23,7 +23,7 @@ O capítulo trata de três grupos de lesão que conversam o tempo todo: as **fra
 
 ## Panorama em números
 
-As fraturas do carpo são **2% a 3% de todas as fraturas**. A idade média fica entre 35 e 40 anos, com predomínio masculino e distribuição bimodal (homens jovens e mulheres idosas); a queda da própria altura responde por quase dois terços. **Escafoide e piramidal somam mais de 90%** das fraturas do carpo; hamato, pisiforme, semilunar, capitato, trapézio e trapezoide são raros. O piramidal foge do padrão: média de 51 anos e distribuição parecida entre os sexos.
+As fraturas do carpo são **2% a 3% de todas as fraturas**. A idade média fica entre 35 e 40 anos, com predomínio masculino e distribuição bimodal (homens jovens e mulheres idosas); a queda da própria altura responde por quase dois terços. **Escafoide e piramidal somam mais de 90%** das fraturas do carpo; hamato, pisiforme, semilunar, capitato, trapézio e trapezoide são raros. No estudo epidemiológico do Rockwood (cap. 10), **73,8%** das fraturas do carpo foram do escafoide e **23,0%** do piramidal, a segunda mais comum. O Green 7 (cap. 16, p. 624) traz a série de GARCIA-ELIAS (10.400 lesões do punho, 249 fraturas do carpo): 153 do escafoide e 64 do piramidal; o texto da página dá 15 ao trapezoide, mas a Tabela 16.6 (p. 625), com os mesmos dados, dá **15 ao trapézio e 1 ao trapezoide**, o que bate com o trapézio em terceiro lugar na maioria das séries (p. 626). O piramidal foge do padrão: média de 51 anos e distribuição parecida entre os sexos.
 
 O mecanismo comum é a **carga axial com o punho em hiperextensão**: os ligamentos palmares ficam sob tensão e as articulações dorsais sofrem cisalhamento. A posição do punho e a energia decidem se quebra osso, se rompe ligamento ou as duas coisas. As instabilidades graves, sobretudo a luxação perilunar, vêm de **alta energia** (queda de altura, acidente de carro).
 
@@ -48,7 +48,7 @@ A pseudartrose do escafoide tem uma segunda explicação, mais famosa: a **irrig
 - **ramo dorsal:** entra pelos pequenos forames do **sulco espiral e da crista dorsal** e irriga **70% a 80%** do osso, **incluindo o polo proximal**;
 - **ramo volar:** entra pelo **tubérculo** e irriga os **20% a 30%** distais.
 
-A **cintura tem pouca ou nenhuma perfuração vascular**, e não entra vaso pela cartilagem dorsal proximal nem pelo ligamento escafossemilunar. O sangue que chega ao polo proximal entrou longe dele e caminha por dentro do osso. Uma fratura proximal corta esse caminho: a interrupção, pelo menos temporária, é praticamente certa.
+A **cintura tem pouca ou nenhuma perfuração vascular**, e não entra vaso pela cartilagem dorsal proximal nem pelo ligamento escafossemilunar. O sangue que chega ao polo proximal entrou longe dele e caminha por dentro do osso. Uma fratura proximal corta esse caminho: a interrupção, pelo menos temporária, é praticamente certa. Aqui o Green 7 (cap. 16, p. 590) diverge em parte: com os mesmos 70% a 80% pela crista dorsal e 20% a 30% pelo tubérculo, ele acrescenta que o polo proximal também recebe sangue pelo **ligamento radioescafossemilunar (de TESTUT)**, um conduto neurovascular, e por ramos escafossemilunares diretos dos arcos carpais transversos palmar e dorsal. Na mesma página, a fratura do polo proximal tem necrose avascular relatada de **13% a 50%**.
 
 O capítulo agrupa os ossos do carpo pelo risco de necrose. **Escafoide, capitato e semilunar** têm o risco maior: dependem de um vaso único, e escafoide e capitato têm, além disso, irrigação **retrógrada** dos polos proximais. **Trapézio, piramidal, pisiforme e a maioria dos semilunares** recebem vasos por pelo menos duas faces não articulares com anastomoses constantes e têm risco baixo. **Trapezoide e hamato** ficam no meio, por falta de anastomose intraóssea. O semilunar aparece nos dois grupos porque cerca de 80% recebem vasos pelas faces palmar e dorsal e cerca de 20% só pela palmar.
 
@@ -249,7 +249,7 @@ Na sem desvio fixada: tala com polegar por 2 semanas e depois órtese removível
 
 ## Por que o escafoide colapsa em flexão
 
-Na fratura instável, o **trapézio** cisalha o polo distal e a articulação capitossemilunar gera um momento de rotação. Resultado: o **fragmento distal flete** e o **fragmento proximal estende** (acompanhando o semilunar). O escafoide fica curvado, a **deformidade em corcunda (humpback)**, com ângulo intraescafoide acima de cerca de 30°. O semilunar e o piramidal, sem o escafoide para frear, vão para **extensão**: é o **DISI**. Com o tempo, esse desarranjo produz a artrose em padrão fixo, o **SNAC**.
+Na fratura instável, o **trapézio** cisalha o polo distal e a articulação capitossemilunar gera um momento de rotação. Resultado: o **fragmento distal flete** e o **fragmento proximal estende** (acompanhando o semilunar). O escafoide fica curvado, a **deformidade em corcunda (humpback)**, com ângulo intraescafoide acima de cerca de 30° pelo Rockwood. O Green 7 (cap. 16, p. 590) usa outro corte: humpback é o escafoide fletido com ângulo intraescafoide **acima de 45°**, sendo **24°** o normal. O semilunar e o piramidal, sem o escafoide para frear, vão para **extensão**: é o **DISI**. Com o tempo, esse desarranjo produz a artrose em padrão fixo, o **SNAC**.
 
 A consolidação viciosa costuma ser em humpback (pronação ou translação ulnar do fragmento distal são menos comuns). A perda de **extensão do punho** é proporcional à angulação; a força de preensão também cai. Mesmo assim, as consequências clínicas são incertas: estudos não acharam correlação entre o grau de deformidade e o resultado, e um seguimento de 21 anos não mostrou diferença entre operados e não operados. A osteotomia (Lynch e Linscheid, que corrige o ângulo, devolve o comprimento palmar e reduz o DISI) é considerada quando a falta de extensão vem claramente da deformidade.
 
@@ -279,10 +279,12 @@ O diagnóstico é clínico (dor radial, perda de movimento e de força) e por im
 
 É a pergunta mais difícil. A **esclerose do polo proximal na tomografia** tem especificidade de 100%, mas sensibilidade de 60%. A ressonância não diagnostica necrose de forma confiável e seus achados não têm valor prognóstico. O **padrão-ouro é intraoperatório**: a **ausência de sangramento puntiforme no polo proximal ao soltar o garrote**.
 
+A irrigação muda o resultado do enxerto. Na série de GREEN com enxerto de RUSSE, citada no Green 7 (cap. 16, p. 608), consolidaram **92%** dos escafoides com boa irrigação, **71%** com irrigação diminuída e **nenhum** com o polo proximal avascular.
+
 !questoes central=mao-0782 relacionadas=trauma-1108,mao-0832 treino=mao-1679
 conceito: A viabilidade do polo proximal se decide no intraoperatório, pelo sangramento puntiforme ao soltar o garrote; a tomografia é o exame para acompanhar a consolidação.
 como: O INTO 2023 pediu o exame padrão-ouro para controle da consolidação depois da cirurgia de pseudartrose (tomografia). O TEOT 2024 e o INTO 2026 pediram a porcentagem de necrose no polo proximal.
-alerta: O TEOT 2024 (trauma-1108) deu **35%** como prevalência da necrose do polo proximal no adulto, e o INTO 2026 (mao-0832) deu **50%** para a fratura desviada do polo proximal. O Rockwood **não traz nenhum percentual**: diz que a interrupção temporária da irrigação do fragmento é praticamente certa e que, estabilizado, ele pode revascularizar. Os números são das bancas, e as duas provas usaram valores diferentes.
+alerta: O TEOT 2024 (trauma-1108) deu **35%** como prevalência da necrose do polo proximal no adulto, e o INTO 2026 (mao-0832) deu **50%** para a fratura desviada do polo proximal. O Rockwood **não traz nenhum percentual**: diz que a interrupção temporária da irrigação do fragmento é praticamente certa e que, estabilizado, ele pode revascularizar. O Green 7 (cap. 16, p. 590) dá necrose avascular de **13% a 50%** nas fraturas do polo proximal: os 35% do TEOT cabem na faixa, e os 50% do INTO são o teto dela.
 armadilha: Esclerose na tomografia: é muito específica, mas deixa passar 40% das necroses.
 !fim
 
@@ -291,7 +293,7 @@ armadilha: Esclerose na tomografia: é muito específica, mas deixa passar 40% d
 Os objetivos são aliviar a dor, **corrigir a deformidade**, consolidar e talvez retardar a artrose. Os princípios dos autores: entender o alinhamento do escafoide e do carpo antes; ressecar até osso que sangra dos dois lados; **devolver o comprimento e corrigir o humpback**; corrigir o carpo; preservar a irrigação; preencher o defeito com enxerto; e estabilizar (parafuso, fios ou placa). Mau prognóstico: pseudartrose antiga, cirurgia prévia, **polo proximal** e **ausência de sangramento puntiforme**. O tabagismo aparece em dois estudos como causa de falha.
 
 - **Enxerto estrutural** dá estabilidade e serve para corrigir a **deformidade mecânica**; **esponjoso** (ou corticoesponjoso) tem mais poder de regeneração e serve para a pseudartrose **estável**. Numa revisão, o esponjoso consolidou mais rápido (11 contra 16 semanas) e o corticoesponjoso corrigiu melhor o alinhamento.
-- **Matti-Russe:** enxerto **não vascularizado por via volar**: o texto fala num enxerto cortical volar em escora, e a legenda da figura descreve enxerto corticoesponjoso socado num sulco escavado na cortical volar dos dois fragmentos, sozinho ou com fios. Como a cortical volar costuma estar encurtada, **é difícil corrigir o comprimento** sem um enxerto cortical: a técnica clássica serve quando não há encurtamento. O enxerto "alado" de Russe modificado tenta alongar.
+- **Matti-Russe:** enxerto **não vascularizado por via volar**: o texto fala num enxerto cortical volar em escora, e a legenda da figura descreve enxerto corticoesponjoso socado num sulco escavado na cortical volar dos dois fragmentos, sozinho ou com fios. Como a cortical volar costuma estar encurtada, **é difícil corrigir o comprimento** sem um enxerto cortical: a técnica clássica serve quando não há encurtamento. O enxerto "alado" de Russe modificado tenta alongar. O Green 7 (cap. 16, p. 610) separa as técnicas: a de **MATTI original usava só osso esponjoso** e é a ideal na **pseudartrose da cintura sem humpback e sem colapso do carpo**; a de MATTI-RUSSE e a modificação de GREEN do RUSSE têm muito mais osso cortical que esponjoso. No algoritmo do Green (Tabela 16.4, p. 609), a pseudartrose estabelecida da cintura sem deformidade vai por via volar com enxerto corticoesponjoso de RUSSE ou de MATTI-RUSSE, cunha intercalada ou RUSSE híbrido.
 - **Fisk-Fernandez:** cunha volar do rádio distal feita sob medida para corrigir o desalinhamento do escafoide e do carpo.
 - **Enxerto vascularizado:** estrutural e vascular; usado na pseudartrose da cintura com suspeita de necrose ou no polo proximal com pouca capacidade de cura. Opções: retalhos pediculados do rádio distal (dorsais ou volares), da ulna distal, do pronador quadrado, ou livres do **côndilo femoral medial** e da crista ilíaca. Os pediculados do rádio deram união de 27% a 100%, pior na necrose; o côndilo femoral medial tem tendência a resultado melhor.
 - **Vascularizado ou não:** um ensaio randomizado deu 100% de união com crista ilíaca não vascularizada e 85% com rádio vascularizado (sem diferença significativa); metanálises recentes acham taxas parecidas. A necessidade do vascularizado na necrose continua em debate.
@@ -620,7 +622,7 @@ armadilha: Impacção: existe (estiloide da ulna ou hamato contra o piramidal), 
 
 ## Semilunar
 
-Menos de 1% das fraturas do carpo, quase sempre dentro de uma perilunar ou como avulsão. O semilunar é a **pedra angular** da fileira proximal. A fratura do corpo vem de hiperextensão: o capitato é empurrado contra a fossa e o semilunar quebra em plano sagital ou coronal. As **avulsões** contam a lesão ligamentar: **polo dorsal** pela tensão do **escafossemilunar** (dissociação escafossemilunar); **polo volar** pelo **lunopiramidal** (perilunar). Aqui os livros divergem: para o Green 7 (cap. 16, p. 638), a fratura palmar do semilunar vem da extensão do punho, com o polo arrancado pelo **radiolunar curto**.
+Menos de 1% das fraturas do carpo pelo Rockwood, quase sempre dentro de uma perilunar ou como avulsão. O Green 7 (cap. 16, p. 624) avisa que a frequência relativa de cada osso do carpo é controversa, e a Tabela 16.6 (p. 625) mostra por quê: o semilunar foi 2 de 249 fraturas na série de GARCIA-ELIAS, mas 11 de 170 na de SNODGRASS e 13 de 122 na de FRANZ. O semilunar é a **pedra angular** da fileira proximal. A fratura do corpo vem de hiperextensão: o capitato é empurrado contra a fossa e o semilunar quebra em plano sagital ou coronal. As **avulsões** contam a lesão ligamentar: **polo dorsal** pela tensão do **escafossemilunar** (dissociação escafossemilunar); **polo volar** pelo **lunopiramidal** (perilunar). Aqui os livros divergem: para o Green 7 (cap. 16, p. 638), a fratura palmar do semilunar vem da extensão do punho, com o polo arrancado pelo **radiolunar curto**.
 
 Teisen e Hjarbaek classificaram em cinco grupos: frontal do polo palmar (com as artérias nutrícias palmares), osteocondral da superfície proximal, frontal do polo dorsal, transversal do corpo e frontal transarticular do corpo. A radiografia engana (o traço transversal fica escondido sob as bordas do rádio, e o corno volar sob o pisiforme e o escafoide); a **tomografia** é essencial. Sem desvio: gesso por cerca de 6 semanas. Desvio ou instabilidade associada: fixação; se o capitato separa os fragmentos, não consolida e o risco de necrose sobe. A pseudartrose do corpo é rara porque a maioria evolui para **Kienböck**.
 
@@ -669,7 +671,7 @@ armadilha: "Fratura do escafoide e luxação do capitato": a síndrome é de dua
 
 ## Trapézio e trapezoide
 
-O **trapézio** responde por 1% a 5%: corpo (vertical), tuberosidade (crista, avulsão pelo retináculo dos flexores, às vezes com o hâmulo) e fraturas-luxações do 1º carpometacarpal. Sem desvio, gesso de escafoide; desviada, fixação; a crista desviada ou com pseudartrose pode ser **excisada**. O **trapezoide** é a fratura **menos comum** (menos de 1%): protegido no meio da fileira distal, só quebra com **alta energia** e muitas vezes junto com luxação carpometacarpal, que deve ser estabilizada. A tomografia ou ressonância faz o diagnóstico em mais de 80%.
+O **trapézio** responde por 1% a 5% e, pelo Green 7 (cap. 16, p. 626), é a **terceira fratura mais comum do carpo** na maioria das séries: corpo (vertical), tuberosidade (crista, avulsão pelo retináculo dos flexores, às vezes com o hâmulo) e fraturas-luxações do 1º carpometacarpal. Sem desvio, gesso de escafoide; desviada, fixação; a crista desviada ou com pseudartrose pode ser **excisada**. O **trapezoide** é a fratura **menos comum** (menos de 1%): protegido no meio da fileira distal, só quebra com **alta energia** e muitas vezes junto com luxação carpometacarpal, que deve ser estabilizada. A tomografia ou ressonância faz o diagnóstico em mais de 80%.
 
 # Dissociação lunopiramidal {radar=confirmado}
 

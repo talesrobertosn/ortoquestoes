@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-13-supracondiliana
-versao: 3
+versao: 4
 titulo: Fratura supracondiliana do úmero na criança
 especialidade: pediatria
 acesso: gratis
@@ -173,6 +173,8 @@ armadilha: Cominuição medial com perfil normal tratada com gesso: 57% de cúbi
 
 A fratura desviada é imobilizada numa tala confortável com o cotovelo em **20 a 40 graus de flexão**, sem enfaixamento apertado, e elevada acima do coração. No braço sem pulso, **tração suave e flexão leve** muitas vezes devolvem o pulso; flexão ou extensão excessivas pioram a circulação e a pressão compartimental.
 
+Os números da 10ª edição não são iguais em dois lugares do mesmo capítulo: o texto fala em cerca de **20 a 40 graus** de flexão na tala da urgência, e o algoritmo da fratura sem pulso (figura 14-46) escreve **tração suave e flexão de 30 a 45 graus** no pronto-socorro. A ideia é a mesma, flexão leve que alivia o feixe sem fechar o cotovelo.
+
 ## Quanto pode esperar
 
 Estudos retrospectivos não mostraram prejuízo em operar depois de 24 horas, mas com o viés de cirurgiões experientes escolhendo quem operar logo. Numa pesquisa com 309 membros da sociedade norte-americana de ortopedia pediátrica, **81%** imobilizariam um tipo III que chega à noite e operariam na manhã seguinte, se não houvesse motivo para urgência. No tipo II, Larson (399 casos, 52% operados depois de 24 horas) não viu diferença. Mas **não se deve atrasar** quando há má perfusão, falta de pulso, fratura do antebraço desviada, compartimento tenso, ruga, equimose anterior ou edema muito importante.
@@ -234,7 +236,9 @@ Na fratura em extensão, o periósteo **anterior** rompe e a **dobradiça poster
 | Posterolateral | Medial | Supinação |
 !fim
 
-Flexão com pronação tensiona o **periósteo posterior e as partes moles laterais** e corrige o varo e a extensão do desvio posteromedial (10ª edição, capítulo 14, tabela 14-2). No posterolateral, o anterior e o medial estão rotos e pronar pode atrapalhar; a supinação tensiona o lateral íntegro. O capítulo frisa que **pronar não deve ser automático**.
+Flexão com pronação tensiona o **periósteo posterior e as partes moles laterais** e corrige o varo e a extensão do desvio posteromedial (10ª edição, capítulo 14, figura 14-30; a rotação conforme o desvio está na tabela 14-2). No posterolateral, o anterior e o medial estão rotos e pronar pode atrapalhar; a supinação tensiona o lateral íntegro. O capítulo frisa que **pronar não deve ser automático**.
+
+O Tachdjian (6ª edição, capítulo 29, p. 1194 e figura 29.31, p. 1195) concorda que o periósteo íntegro fica do lado para onde o fragmento distal foi, mas explica a pronação de outro jeito: no desvio posteromedial, a manga periosteal **medial** está íntegra e a pronação a **aperta**, e a pronação aperta a manga medial mais do que a supinação aperta a lateral, por isso a posteromedial costuma ficar mais estável depois de reduzida e a posterolateral é mais difícil de manter. O Rockwood da 10ª edição diz que a flexão com pronação põe em tensão o **periósteo posterior e as partes moles laterais**. Na prova, a regra prática é a mesma nos dois livros: posteromedial reduz com pronação, posterolateral com supinação.
 
 !figura 13-30
 Periósteo roto do lado lateral numa fratura supracondiliana com desvio posteromedial.
@@ -417,16 +421,20 @@ alerta: O estudo de SONI sobre o cotovelo flutuante, base da questão do TARO 20
 
 O **cúbito varo** (deformidade em coronha de espingarda, gunstock) é a sequela clássica. Tem **varo** no plano frontal, que é o componente mais importante, mais **hiperextensão** (mais extensão e menos flexão do cotovelo) e **rotação** do fragmento distal. Na radiografia: no AP, a fise do côndilo lateral fica mais horizontal e o **BAUMANN diminui**; no perfil, o capítulo fica **atrás da linha umeral anterior** e o úmero distal sobreposto ao olécrano forma o **sinal do crescente** (figura 13-58).
 
+O Tachdjian (p. 1215) resume como deformidade combinada de **varo, extensão e rotação interna**, em graus variados, e a 10ª edição do Rockwood (capítulo 14) diz que a consolidação viciosa típica traz, além do varo, extensão e rotação interna do segmento metafisário e epifisário distal.
+
 ## A causa é consolidação viciosa
 
 O capítulo é direto: a causa mais comum é **consolidação viciosa**, não crescimento assimétrico. A extremidade distal faz só **20%** do crescimento do úmero, cerca de **2 mm por ano aos 5 anos**, pouco demais para criar um varo nos 6 a 12 meses em que ele aparece. A necrose da tróclea ou da parte medial do fragmento distal pode dar varo progressivo, mas é rara (4 de 36 deformidades em Voss). Na figura 13-51, a combinação de rotação horizontal com inclinação coronal produz o varo. A prevenção é garantir o **BAUMANN na redução** e mantê-lo com **fixação estável**: Pirone viu varo em **7,9% com gesso contra 1,9% com fios**.
+
+O **cúbito valgo** é o lado menos lembrado. O Campbell 15 (capítulo 38, p. 1371) diz que o varo é a deformidade angular mais comum depois da supracondiliana e que o cúbito valgo é raro e costuma vir da **pseudartrose do côndilo lateral**; para ele, a inclinação em varo do fragmento distal é a causa mais importante da mudança do ângulo de carregamento. O Tachdjian (p. 1214) é menos taxativo: põe o varo e o valgo como as complicações mais comuns, o desvio posteromedial tendendo ao varo e o posterolateral ao valgo, e atribui a predominância do varo a ser o desvio posteromedial mais comum e a deformidade mais visível.
 
 !questoes central=pediatria-0652,pediatria-0532,pediatria-0843 relacionadas=pediatria-0521 treino=pediatria-1034,pediatria-1045
 conceito: O cúbito varo após supracondiliana vem de consolidação viciosa (varo, hiperextensão e rotação do fragmento distal), não de crescimento assimétrico; aparece com BAUMANN diminuído e capítulo atrás da linha umeral anterior.
 como: O TARO 2011 e o TARO 2025 perguntaram a causa (consolidação viciosa, contra lesão fisária, pseudartrose, necrose e crescimento assimétrico); o TEOT 2021 pediu a deformidade combinada (varo, extensão e rotação interna). O TARO 2026 cobrou o fator que favorece a fratura do côndilo lateral em vez da supracondiliana (ângulo de carregamento mais valgo), dado que é do capítulo 16.
 armadilha: Crescimento assimétrico por osteonecrose da tróclea: existe, mas é causa rara de varo progressivo.
 armadilha: Valgo, flexão e rotação externa: é o espelho da deformidade; a supracondiliana em extensão consolida em varo, extensão e rotação interna.
-alerta: No TARO 2025 (pediatria-0532), o gabarito foi "consolidação viciosa por desvio medial e rotação da epífise umeral distal" (D), e não "consolidação viciosa por desvio em varo da epífise distal" (C). O capítulo concorda que a causa é a consolidação viciosa, mas diz que rotação e hiperextensão contribuem e que o varo é o fator mais importante da deformidade, o que favoreceria a C. A banca seguiu a ideia de que o desvio medial com rotação do fragmento (figura 13-51D) é o que produz o varo. Gabarito oficial preservado. Sobre o TARO 2026 (pediatria-0521): o capítulo 13 não trata do ângulo de carregamento normal; ele só diz que o cúbito varo já instalado aumenta o risco de fratura do côndilo lateral. As duas ideias não se contradizem, mas não confunda: a resposta da banca vem do capítulo do côndilo lateral.
+alerta: No TARO 2025 (pediatria-0532), o gabarito foi "consolidação viciosa por desvio medial e rotação da epífise umeral distal" (D), e não "consolidação viciosa por desvio em varo da epífise distal" (C). A 10ª edição do Rockwood (capítulo 14, junto da figura 14-7) apoia a D: a fratura em extensão com desvio medial do fragmento distal costuma vir com rotação interna obrigatória, o que explica a rotação interna do cúbito "varo". O Campbell 15 (capítulo 38, p. 1371) apoia a C: a inclinação em varo do fragmento distal é a causa mais importante da mudança do ângulo de carregamento. Gabarito oficial preservado. Sobre o TARO 2026 (pediatria-0521): o capítulo 13 não trata do ângulo de carregamento normal; ele só diz que o cúbito varo já instalado aumenta o risco de fratura do côndilo lateral. As duas ideias não se contradizem, mas não confunda: a resposta da banca vem do capítulo do côndilo lateral.
 !fim
 
 ## Por que tratar

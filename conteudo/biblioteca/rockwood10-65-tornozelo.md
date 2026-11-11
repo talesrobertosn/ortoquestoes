@@ -1,6 +1,6 @@
 ---
 id: rockwood10-65-tornozelo
-versao: 2
+versao: 3
 titulo: Fraturas do tornozelo
 especialidade: trauma
 acesso: gratis
@@ -39,6 +39,8 @@ O capítulo apresenta quatro sistemas. **POTT** (na verdade talvez descrito ante
 
 Proposta por ASHHURST e BROMER em 1922 e ampliada por LAUGE-HANSEN em 1950 a partir de experimentos em cadáver. A **primeira palavra** é a posição do pé no trauma (**supinação** ou **pronação**); a **segunda**, a força deformante (adução, abdução ou rotação externa); o **número** é o estágio de progressão da lesão óssea e ligamentar.
 
+Um detalhe de texto que a banca pode usar: ao listar as forças deformantes, o capítulo 65 cita quatro, **abdução, adução, rotação interna e rotação externa**, mas as classes que resultam são só quatro, nenhuma delas com rotação interna (SER, PER, SAD e PAB). A rotação interna aparece também no Campbell (cap. 59), não em LAUGE-HANSEN, mas na legenda da Fig. 59.1 (p. 2566), que atribui o **WEBER A** a **rotação interna e adução**, com fratura transversa do maléolo lateral no nível do plafond ou abaixo e, às vezes, fratura **oblíqua** do maléolo medial. No Box 59.1 do mesmo capítulo (p. 2565), a supinação-adução de LAUGE-HANSEN tem o maléolo medial **vertical**, como no Rockwood. Para a prova, "supinação-rotação interna" não é uma classe de LAUGE-HANSEN; e o maléolo medial do padrão em adução é vertical, com a legenda do Campbell como exceção.
+
 !tabela Frequência dos mecanismos de LAUGE-HANSEN (capítulo 65)
 | Mecanismo | Sigla | Frequência |
 | --- | --- | --- |
@@ -72,7 +74,7 @@ Com o pé supinado, o tálus roda para fora dentro do encaixe, afasta a tíbia d
 !questoes central=trauma-0186 relacionadas=trauma-0716,pe-tornozelo-0331,pe-tornozelo-0368 treino=trauma-1683
 conceito: Na SER, a sequência é tibiofibular anteroinferior, fíbula oblíqua no nível da sindesmose, tibiofibular posteroinferior ou maléolo posterior e, no estágio IV, deltoide ou maléolo medial; o tornozelo fica instável no IV, que é uma fratura WEBER B.
 como: O TEOT 2022 classificou uma fratura em imagem por LAUGE-HANSEN e DANIS-WEBER (supinação-rotação externa do 4º estágio e tipo B trans-sindesmal). O CET-PR mostrou uma SER II. O TARO 2007 pediu a ordem das lesões e o TARO 2006, o primeiro elemento a falhar (o tibiofibular anterior); os dois estão sem gabarito no acervo, e o capítulo sustenta a sequência que começa pela sindesmose anterior e termina no deltoide.
-armadilha: Supinação-rotação interna: o mecanismo não existe na classificação de LAUGE-HANSEN, que só usa adução, abdução e rotação externa.
+armadilha: Supinação-rotação interna: não é uma das quatro classes de LAUGE-HANSEN, que combinam a posição do pé com adução, abdução ou rotação externa; o capítulo cita a rotação interna entre as forças possíveis, mas nenhuma classe a usa.
 armadilha: Tipo C: o traço suprassindesmal é da pronação-rotação externa, não da SER, mesmo no estágio IV.
 !fim
 
@@ -92,6 +94,8 @@ armadilha: Supinação-rotação lateral: a SER não chega ao plafond medial; su
 ## Pronação-abdução: a fíbula cominuta
 
 Com o pé pronado e abduzido, a lesão começa pelo lado medial, que falha por tração: no estágio I, **avulsão transversa do maléolo medial** ou ruptura do deltoide; no II, ruptura do tibiofibular anteroinferior ou avulsão do **tubérculo de CHAPUT**; no III, a fíbula quebra por **compressão e flexão**, num traço **cominutivo no nível do plafond ou acima** (figura 65-11). A cominuição impede o parafuso de tração, e a fíbula precisa de **placa em ponte** (de compressão dinâmica de pequenos fragmentos, mais forte que a um terço de tubo) ou haste. O maléolo medial vai com parafusos perpendiculares ou banda de tensão se pequeno, e a sindesmose deve ser testada.
+
+A cominuição da fíbula não é unânime. O Skeletal Trauma, 5ª ed. (cap. 66, p. 2208), concorda com o Rockwood: fíbula no nível do plafond, com traço **transverso e cominuto do lado lateral**, porque a flexão traciona a face medial e comprime a lateral; o mesmo trecho dá a pronação-abdução como **5% a 21%** das fraturas maleolares. O Campbell (cap. 59, p. 2565) descreve outra fíbula: no Box 59.1, fratura **curta, horizontal e oblíqua acima do nível da articulação**, e no texto, oblíqua curta que parece **relativamente horizontal no perfil**, sem falar em cominuição. Se a questão disser "cominuta", é a pronação-abdução do Rockwood e do Skeletal Trauma; se disser "oblíqua curta e horizontal", é a do Campbell.
 
 !questoes central=trauma-0823 relacionadas=pe-tornozelo-0335 treino=trauma-1685
 conceito: Na pronação-abdução, a lesão medial é por tração (avulsão transversa do maléolo medial ou deltoide) e a fíbula quebra por compressão e flexão, cominuta, no plafond ou acima; por isso a fíbula vai em ponte.

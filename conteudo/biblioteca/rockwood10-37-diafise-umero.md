@@ -1,6 +1,6 @@
 ---
 id: rockwood10-37-diafise-umero
-versao: 2
+versao: 3
 titulo: Fratura da diáfise do úmero
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 37 · Humeral Shaft Fractures
 autores: Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (diafise_umero.pdf, 34 páginas; capítulo 37 nas pp. 1 a 33, a p. 34 é o início do capítulo 38 e foi ignorada); consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 13 (Fig. 13.21, p. 613). As páginas citadas são as impressas.
+fonte: Capítulo enviado pelo Tales em 17/10/2026 (diafise_umero.pdf, 34 páginas; capítulo 37 nas pp. 1 a 33, a p. 34 é o início do capítulo 38 e foi ignorada); consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 1 (Fig. 1.117, p. 105), cap. 13 (Fig. 13.21, p. 613) e cap. 62 (p. 2785.e1 e 2788). As páginas citadas são as impressas.
 subtemas: Fratura da diáfise do úmero
 resumo: Nervo radial e HOLSTEIN-LEWIS, órtese funcional de SARMIENTO, tolerâncias (20 graus, 30 graus de rotação, 3 cm), indicações de cirurgia e cotovelo flutuante, vias anterolateral e posterior, placa de 4,5 mm com oito corticais, MIPO e o musculocutâneo, haste com bloqueio distal aberto e pseudartrose atrófica.
 ---
@@ -270,6 +270,8 @@ armadilha: Radial no bloqueio proximal: o radial corre risco no bloqueio distal 
 
 O risco ao radial gerou modificações da via, ainda por validar.
 
+O Campbell 15 (cap. 1, p. 104, e Fig. 1.117, p. 105) mostra a variante para a **junção dos terços médio e distal**: o intervalo fica entre o **bíceps e o braquial, mediais**, e o **braquiorradial, lateral**; os músculos são afastados, o **nervo radial é identificado e afastado** e só então o braquiorradial e o braquial são separados para expor a diáfise. É esse o desenho da imagem da TEOT 2023 (ombro-cotovelo-0125), em que a estrutura assinalada no intervalo é o radial. O mesmo capítulo do Campbell (p. 104) repete a regra do terço médio: a **metade lateral do braquial protege o radial**, mas o nervo deve ser identificado quando a placa anterolateral chega perto da fossa coronoide.
+
 !figura 37-12
 Via anterolateral do úmero direito. A: incisão. B: deltoide para lateral e cabeça longa do bíceps para medial mostram o tendão do peitoral maior em cima e o braquial embaixo. C: desinserção parcial do peitoral maior e divisão do braquial expõem a diáfise anterolateral.
 !fim
@@ -338,7 +340,9 @@ armadilha: Suporte: é a placa de borda metafisária e articular (antideslizante
 
 ## Minifragmentos como auxiliares de redução
 
-O TARO 2024 cobrou a técnica de EGLSEDER: o uso **auxiliar de miniplacas** para segurar fragmentos (borboletas, cunhas) enquanto se aplica a placa principal. **O capítulo não usa esse nome**, mas mostra a mesma ideia: na figura 37-17, uma **placa de 2,4 mm segura o fragmento em borboleta** de uma fratura transversa médio-distal fixada pela via posterior, e o quadro técnico admite **miniplacas bloqueadas** em configuração dupla.
+O TARO 2024 cobrou a técnica de EGLSEDER: o uso **auxiliar de miniplacas** para segurar fragmentos (borboletas, cunhas) enquanto se aplica a placa principal. **O capítulo do Rockwood não usa esse nome**, mas mostra a mesma ideia: na figura 37-17, uma **placa de 2,4 mm segura o fragmento em borboleta** de uma fratura transversa médio-distal fixada pela via posterior, e o quadro técnico admite **miniplacas bloqueadas** em configuração dupla.
+
+O nome aparece no Campbell 15 (cap. 62, p. 2785.e1, eFig. 62.6, e técnica da via posterior, p. 2788). A regra de fixação vem pelo traço: **espiral ou oblíqua, parafuso de tração com placa de neutralização; transversa, placa de compressão**. A redução provisória com **parafuso de tração ou placa de minifragmentos (técnica de EGLSEDER)** deixa ver a redução diretamente, torna simples aplicar a placa no úmero já reduzido e poupa o periósteo do descolamento pelas pinças. Na técnica da via posterior, quando o traço transverso dificulta o parafuso de tração, a placa de minifragmentos faz a fixação provisória e depois vem a placa de grandes fragmentos, em neutralização, compressão ou ponte.
 
 !figura 37-17
 A: fratura transversa da diáfise médio-distal. B, C: fixação com placa convencional pela via posterior; uma placa de 2,4 mm foi usada para o fragmento em borboleta.

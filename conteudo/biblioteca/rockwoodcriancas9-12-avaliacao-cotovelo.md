@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-12-avaliacao-cotovelo
-versao: 2
+versao: 3
 titulo: Avaliação do cotovelo da criança traumatizada
 especialidade: pediatria
 acesso: gratis
@@ -113,6 +113,8 @@ O marco principal do AP é a inclinação da fise entre o centro do côndilo lat
 - CAMP mostrou, em cadáver, que a **rotação** do fragmento distal ou do úmero inteiro altera a projeção: o úmero precisa estar paralelo ao chassi e o raio, perpendicular a ele. Assim, inclusive na incidência de JONES, o BAUMANN é uma boa medida.
 - Não é igual ao ângulo de carregamento nas crianças mais velhas e fica difícil de medir no adolescente, quando o côndilo lateral começa a se fundir com os outros centros.
 
+O TACHDJIAN (6ª edição, capítulo 29, p. 1198, 1214 e 1215) completa a técnica e os valores. O AP verdadeiro do cotovelo exige extensão completa, que a criança machucada raramente consegue; a saída é o AP do úmero distal, com o braço apoiado no chassi em qualquer grau de flexão. O BAUMANN normal varia de 8 a 28 graus de uma criança para outra, mas quase não difere entre os dois lados da mesma criança, e por isso a radiografia do lado sadio ajuda a decidir nas fraturas pouco desviadas. Translação do fragmento distal no AP só acontece com as corticais anterior e posterior rompidas e indica fratura instável, mesmo quando o perfil parece alinhado. O ângulo de carregamento clínico (antebraço supinado contra o eixo do úmero, cotovelo estendido, por volta de 5 a 10 graus) varia muito entre as pessoas e deve ser comparado com o outro lado; a hiperextensão acentua o varo, e a contratura em flexão pode simular valgo.
+
 Os outros dois ângulos do AP servem para o alinhamento e o ângulo de carregamento.
 
 !tabela Os três ângulos do AP do cotovelo da criança
@@ -217,6 +219,8 @@ O descolamento transfisário do úmero distal nos muito pequenos (**menos de 2 a
 
 Essas crianças muitas vezes são vítimas de **trauma não acidental** e correm risco não só de consolidação viciosa, mas de agressões mais graves no futuro. O diagnóstico preciso, o tratamento da fratura e a avaliação dos fatores humanos e sociais da lesão são essenciais.
 
+O capítulo 18 da 10ª edição, que trata das fraturas de todo o úmero distal, dá os números do problema. A lesão costuma passar despercebida na primeira avaliação: num estudo com ultrassonografia, **56%** (9 de 16) não foram reconhecidas na radiografia simples, e abaixo de 3 anos o radiologista que lê a radiografia da urgência erra o diagnóstico em até **78%**. CROWE achou risco de trauma não acidental **13 vezes maior** abaixo de 3 anos no descolamento transfisário desviado do que na supracondiliana desviada, e até **50%** dessas fraturas abaixo de 2 anos podem ser trauma não acidental. Na dúvida, a investigação de maus-tratos é obrigatória.
+
 !questoes central=pediatria-0525 treino=pediatria-0992,pediatria-1010
 conceito: Lactente com cotovelo inchado e rádio e ulna desviados juntos para posteromedial em relação ao úmero: descolamento transfisário do úmero distal, confirmado por ultrassonografia ou ressonância; investigar maus-tratos.
 como: O TARO 2025 trouxe uma criança de 12 meses sem história clara de trauma, sem febre, com edema e pseudoparalisia, e a radiografia do cotovelo; os distratores eram pronação dolorosa, luxação do cotovelo e artrite séptica.
@@ -240,6 +244,8 @@ O côndilo lateral só é não articular nas origens dos músculos e dos ligamen
 ## Côndilo lateral
 
 HARALDSSON mostrou dois tipos de vasos no côndilo lateral em desenvolvimento. Eles entram na **face posterior**, logo lateral à origem da cápsula e proximal à cartilagem articular, **perto da origem do ancôneo**, e atravessam a cartilagem não ossificada até o núcleo, num trajeto longo na criança pequena (figura 13-12A). Comunicam-se entre si dentro do núcleo, mas não com a metáfise nem com a cartilagem: na prática, são **vasos terminais**. A consequência prática é a regra da cirurgia do côndilo lateral: evitar a dissecção posterior, que destrói a única porta de entrada do sangue do fragmento.
+
+O capítulo 17 da 10ª edição (côndilo lateral) mostra o preço do erro: a osteonecrose do fragmento costuma ser iatrogênica e se liga sobretudo à perda da irrigação posterior do côndilo lateral em desenvolvimento, e a recomendação é **evitar toda dissecção posterior** do fragmento desviado. Nas séries de redução aberta e fixação, a osteonecrose ficou em cerca de **1%**, a mesma taxa do retardo de consolidação e da pseudartrose. A redução aberta tardia, depois de 3 semanas, aumenta esse risco.
 
 ## Tróclea
 
@@ -314,6 +320,8 @@ A ressalva vem de BAKER e BORLAND: na criança com trauma fechado, movimento nor
 
 Um dado de anatomia do mesmo capítulo completa o quadro da extensão: as fibras longitudinais da **cápsula anterior** são fortes e ficam tensas com o cotovelo estendido. Na hiperextensão, essa cápsula força a ulna contra o úmero e transfere o fulcro da rotação para a ponta do olécrano, na região supracondiliana, um fator importante na gênese da fratura supracondiliana.
 
+O TACHDJIAN (6ª edição, capítulo 29, p. 1195 a 1197) acrescenta o roteiro do exame à beira do leito. A palpação cuidadosa localiza a lesão: dor medial e lateral sobre as cristas supracondilianas sugere fratura supracondiliana; dor só lateral, côndilo lateral; só medial, epicôndilo medial; posterolateral sobre o colo do rádio, fratura do colo. Há lesão neurológica em 10% a 15% das supracondilianas e fratura ipsilateral em 5% (em geral no rádio distal), por isso a mão e o resto do membro precisam ser examinados; a partir dos 3 ou 4 anos, com calma, a maioria das crianças colabora com a sensibilidade de dois pontos e o exame motor dirigido, e examinar antes a mão sadia ajuda a ganhar a confiança da criança. Quando o exame neurológico não é possível, o vascular sempre é. E quando a radiografia não mostra fratura, a história decide: se a dor não começou logo depois de uma queda testemunhada, pedir hemograma, VHS e PCR, porque a infecção também dá cotovelo inchado e doloroso, muitas vezes com relato de trauma.
+
 !questoes treino=pediatria-0995
 conceito: A incapacidade de estender totalmente o cotovelo tem sensibilidade de 91% a 97% para fratura; extensão completa torna a fratura improvável, com a ressalva da fratura do olécrano e da reavaliação em 7 a 10 dias.
 como: Ainda não caiu nas provas do acervo; os números do capítulo são fortes e repetidos.
@@ -336,7 +344,7 @@ O capítulo fecha a epidemiologia com uma observação sobre o alinhamento: o â
 conceito: O ângulo de carregamento individual influencia o tipo de fratura na queda com o braço estendido; para este capítulo, varo favorece o côndilo lateral e valgo favorece o colo do rádio.
 como: O TARO 2026 perguntou o fator de risco para fratura do côndilo lateral em vez da supracondiliana, com obesidade, hipotireoidismo, idade mais precoce e ângulo de carregamento mais valgo como alternativas.
 armadilha: Idade mais precoce: as duas fraturas têm picos de idade parecidos; a supracondiliana tem mediana por volta dos 6 anos.
-alerta: O gabarito oficial do TARO 2026 é "ângulo de carregamento mais valgo". O capítulo 13 da 10ª edição, como o 12 da 9ª, diz o contrário: o alinhamento em varo resulta mais comumente em fratura do côndilo lateral, e o valgo, em fratura do colo do rádio; o capítulo não compara diretamente com a supracondiliana. O capítulo 16 da 9ª edição (côndilo lateral) também cita a obesidade e o carregamento em varo como indicadores de fratura do côndilo lateral em vez da supracondiliana. O comentário da questão no acervo cita estudos que encontraram carregamento mais valgo nas crianças com fratura do côndilo lateral. Preserve a letra da banca na prova e saiba que este livro descreve a associação inversa.
+alerta: O gabarito oficial do TARO 2026 é "ângulo de carregamento mais valgo". O capítulo 13 da 10ª edição, como o 12 da 9ª, diz o contrário: o alinhamento em varo resulta mais comumente em fratura do côndilo lateral, e o valgo, em fratura do colo do rádio; o capítulo não compara diretamente com a supracondiliana. O capítulo 17 da 10ª edição (côndilo lateral; capítulo 16 na 9ª) também cita a obesidade e o carregamento em varo maior como indicadores de fratura do côndilo lateral em vez da supracondiliana. O comentário da questão no acervo cita estudos que encontraram carregamento mais valgo nas crianças com fratura do côndilo lateral. Preserve a letra da banca na prova e saiba que este livro descreve a associação inversa.
 !fim
 
 # A articulação: cápsula e estruturas intra-articulares {radar=fundamento}

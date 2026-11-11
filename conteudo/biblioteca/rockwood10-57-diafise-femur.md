@@ -1,6 +1,6 @@
 ---
 id: rockwood10-57-diafise-femur
-versao: 2
+versao: 3
 titulo: Fratura da diáfise do fêmur
 especialidade: trauma
 acesso: gratis
@@ -80,6 +80,8 @@ A demora no colo tem consequências piores que a demora na diáfise (necrose, ar
 - COLLINGE propôs haste **cefalomedular de rotina** em toda diáfise para não perder colo oculto (61 casos sem complicação), mas não foi custo-efetiva; no idoso com osso ruim, a cefalomedular fresada protege um colo íntegro.
 
 Na combinação raríssima de colo, diáfise e fêmur distal (0,5%), a ordem é colo, depois a superfície articular distal e por último a diáfise, com o método que não desvie as outras duas.
+
+**O capítulo 53 (colo do fêmur) conta a mesma combinação de outro jeito.** Lá (p. 2358 e 2359), a combinação hoje mais usada é a **haste retrógrada** com fixação separada do colo (parafusos canulados ou parafuso deslizante com placa curta): OSTRUM, em 95 casos, teve consolidação de 98% no colo e 91,3% na diáfise, com 5% de consolidação viciosa proximal. Uma vantagem citada é que a retrógrada **pode ser feita primeiro**, porque a diáfise estabilizada facilita a redução fechada do colo; a placa na diáfise fica, em geral, para a fratura do **terço distal**, e as opções com haste são consideradas provavelmente mais seguras, porque a placa aberta tem mais pseudartrose. A haste cefalomedular única tem mais má redução do colo e só serve se o colo estiver sem desvio ou perfeitamente reduzido antes. O capítulo 57 (p. 2501 a 2503), que este resumo segue, mantém o colo primeiro, com placa ou retrógrada na diáfise.
 
 !questoes central=trauma-0022,trauma-0671,trauma-0280,trauma-0130 treino=trauma-1656,trauma-1657,trauma-1554,trauma-1555
 conceito: O colo associado é basocervical, vertical e sem desvio, passa despercebido e tem prioridade; trata-se com dois implantes (parafuso no colo, retrógrada ou placa na diáfise), e não com uma haste de reconstrução.
@@ -177,6 +179,7 @@ A placa perdeu espaço para a haste, mas tem indicações claras: **canal muito 
 - **Via lateral**, que se estende por todo o fêmur: banda iliotibial, vasto lateral elevado da linha áspera, **perfurantes ligadas**. A via **minimamente invasiva** (placa submuscular em ponte) preserva circulação, mas tem mais **má redução** (29% contra nenhuma na aberta, numa série de 40; noutra, seis rotações externas e seis valgos em 54).
 - **Placa**: 4,5 mm estreita ou larga (larga no paciente grande), pelo menos **10 furos** no traço simples, compressão no transverso, parafuso de tração no oblíquo, ponte no cominutivo. Regra geral de **quatro parafusos ou oito corticais** de cada lado; com placa longa, três parafusos (seis corticais) bem distribuídos (um longe, um perto e um no meio) podem bastar.
 - Sem gesso; movimento imediato; carga quando há sinal de consolidação, entre **6 e 12 semanas**. Retirar raramente; se for, depois de consolidada e remodelada (consolidação primária pode pedir 12 a 24 meses).
+- **Duas placas a 90 graus** (Campbell 15, cap. 59, p. 2636): não se tiram as duas no mesmo tempo, porque o osso fica duplamente fraco e a refratura é provável; a segunda sai **6 meses** depois da primeira, e o osso é protegido de esforço excessivo por pelo menos 6 semanas após cada retirada.
 
 ## O politraumatizado: quando fixar
 
@@ -314,7 +317,7 @@ armadilha: Menor dificuldade de fluoroscopia ou menos trombose no obeso: a vanta
 
 O objetivo da haste é restaurar **comprimento, alinhamento e rotação**, sem redução anatômica do foco.
 
-**Comprimento.** Na fratura cominutiva, o traço não diz o comprimento: radiografe o **fêmur contralateral** antes de começar e meça com régua radiopaca do **trocanter maior à cicatriz fisária** do lado sadio. Na bilateral, comece pelo lado mais simples e iguale o outro. Para ganhar comprimento: paralisia muscular, mesa de tração, pino femoral distal, distrator femoral e pinos de SCHANZ como manipuladores. Numa série de 28 cominutivas, 36% ficaram com mais de 10 mm de diferença.
+**Comprimento.** Na fratura cominutiva, o traço não diz o comprimento: radiografe o **fêmur contralateral** antes de começar e meça com régua radiopaca do **trocanter maior à cicatriz fisária** do lado sadio. O capítulo descreve essa régua em dois lugares: no planejamento da haste (sobre o fêmur sadio, para escolher o comprimento da haste; p. 2470 e 2471) e, na sala, sobre a face anterior do membro sadio, na técnica da placa minimamente invasiva (p. 2469). Na bilateral, comece pelo lado mais simples e iguale o outro. Para ganhar comprimento: paralisia muscular, mesa de tração, pino femoral distal, distrator femoral e pinos de SCHANZ como manipuladores. Numa série de 28 cominutivas, 36% ficaram com mais de 10 mm de diferença.
 
 **Rotação.** A má rotação acima de **10 graus** pode chegar a **40%**, e acima de **15 graus**, a **19%**. Tolera-se tradicionalmente até 15 graus: 38% dos pacientes com mais de 15 graus tinham sintomas, 12% entre 10 e 15 e nenhum abaixo de 10; a rotação **externa** é a menos tolerada, e mais de 10 graus na TC piorou os escores e a dor anterior no joelho. Diferença acima de **15 graus** indica trocar os parafusos de bloqueio. O capítulo 55 (subtrocantérica) dá os limites para revisar antes de acordar o paciente: radiografia em rotação interna máxima para afastar fratura do colo, conferência de comprimento, rotação e estabilidade do joelho e **revisão na mesma anestesia** se a má rotação passar de **15 graus** ou a discrepância de comprimento passar de **2 cm**.
 
@@ -355,11 +358,12 @@ armadilha: Avaliar a congruência e o diâmetro das corticais no foco: é o sina
 
 **Joelho flutuante e outras combinações.** Tíbia e fêmur pela mesma incisão retrógrada, fêmur primeiro. Fêmur distal articular: no estável, a articular primeiro (atenção aos parafusos no caminho da haste; parafusos sozinhos desviaram 40% numa série); no grave, a diáfise primeiro. Diáfise com aparelho extensor (trauma do painel): haste, de preferência retrógrada, e depois o extensor.
 
+**Os números do joelho flutuante** estão no capítulo 63 (diáfise da tíbia, p. 2792): fêmur e tíbia fraturados do mesmo lado; no tipo **I** as duas fraturas são diafisárias, no **IIA** uma entra no joelho e no **IIB** no quadril ou no tornozelo. É lesão de alta energia, com taxas de **lesão vascular (21%)** e de **exposição (62%)** maiores do que a soma das duas fraturas isoladas faria esperar, e instabilidade ligamentar do joelho em quase **um terço**. Os resultados antigos eram ruins, mas a haste nas duas fraturas dá resultados bons a excelentes; os fatores de **pior evolução** são o comprometimento **intra-articular do joelho (tipo IIA)** e a **exposta grave da tíbia**.
+
 !questoes central=trauma-0568 relacionadas=trauma-0748,trauma-0115,trauma-1158
-conceito: Na fratura por projétil de baixa velocidade, a haste intramedular é o tratamento de escolha e a ferida é tratada como fechada; alta velocidade e espingarda pedem desbridamentos seriados antes da haste.
+conceito: Na fratura por projétil de baixa velocidade, a haste intramedular é o tratamento de escolha e a ferida é tratada como fechada; alta velocidade e espingarda pedem desbridamentos seriados antes da haste. No joelho flutuante, o capítulo 57 só orienta fixar o fêmur primeiro, pela mesma incisão; a exposição em 62% (TARO 2016, trauma-0115) e a pior evolução com a fratura intra-articular do joelho e a exposta grave da tíbia (TEOT 2025, trauma-0748) estão no Rockwood cap. 63, p. 2792 (resumo rockwood10-63-diafise-tibia).
 como: O TEOT 2024 perguntou o método preferencial de estabilização definitiva na fratura por projétil de baixa energia (haste intramedular, contra placa em ponte e fixadores). O TEOT 2025 e o TARO 2016 cobraram o joelho flutuante (lesões de pior evolução; frequência de exposição).
 armadilha: Fixador externo na arma de fogo de baixa energia: é para a alta velocidade, até os desbridamentos terminarem.
-alerta: O capítulo 57 não traz a frequência de exposição no joelho flutuante (TARO 2016, trauma-0115) nem as lesões de pior evolução (TEOT 2025, trauma-0748); ele só orienta fixar o fêmur primeiro, pela mesma incisão. Essas respostas vêm de outra bibliografia.
 !fim
 
 # Complicações {radar=confirmado}

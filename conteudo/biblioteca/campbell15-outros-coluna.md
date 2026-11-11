@@ -1,6 +1,6 @@
 ---
 id: campbell15-outros-coluna
-versao: 2
+versao: 3
 titulo: Outros temas de coluna: SCIWORA, choque neurogênico, SPRENGEL e escolioses especiais
 especialidade: coluna
 acesso: gratis
@@ -278,6 +278,8 @@ A escoliose é a manifestação esquelética mais comum da neurofibromatose do t
 | Cirurgia | fusão posterior acima de 40 a 45 graus | precoce; a escolha depende de haver cifose e déficit; com cifose, fusão anterior e posterior |
 | Risco neurológico | não destacado pelos livros | presente na cifoescoliose grave |
 !fim
+
+O desenho da curva distrófica tem endereço e tamanho certos. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 8, p. 230, Fig. 8-10) descreve uma curva **torácica única, curta e aguda, que costuma abranger 4 a 6 segmentos**, com deformidade das costelas e das vértebras, início precoce e progressão implacável. O Tachdjian diz o mesmo nos dois capítulos em que trata do assunto (cap. 9, p. 220, e cap. 37, p. 1873): curva **na coluna torácica**, de angulação aguda, envolvendo **4 a 6 vértebras**. A maioria das curvas da neurofibromatose, porém, se parece com a da escoliose idiopática e é conduzida como ela (Lovell and Winter, p. 230).
 
 O mecanismo dos sinais distróficos é em parte mecânico: neurofibromas intraespinais e paraespinais e a **ectasia dural** (alargamento do saco dural) erodem o osso por dentro. Por isso, antes de operar, o Campbell exige excluir lesão intraespinal. O Tachdjian chama a atenção para a modulação: uma curva não distrófica em criança pequena pode adquirir sinais distróficos com o tempo, e o acompanhamento precisa procurar por eles.
 

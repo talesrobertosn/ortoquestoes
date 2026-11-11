@@ -1,6 +1,6 @@
 ---
 id: rockwood10-51-acetabulo
-versao: 1
+versao: 2
 titulo: Fraturas do acetábulo
 especialidade: trauma
 acesso: gratis
@@ -247,9 +247,9 @@ Duas regras resumem a tabela 51-1:
 | --- | --- | --- | --- |
 | Eixo do colo (trocanter) | neutra | neutra | coluna anterior com hemitransversa posterior |
 | Eixo do colo | neutra | **25 graus de rotação externa** | **coluna anterior** |
-| Eixo do colo | neutra | **cerca de 50 graus de rotação externa** | **parede anterior** |
+| Eixo do colo | neutra | **51 graus de rotação externa** | **parede anterior** |
 | Eixo do colo | neutra | 20 graus de rotação interna | variável: transversa, T ou ambas as colunas |
-| Eixo do colo | neutra | cerca de 50 graus de rotação interna | coluna posterior com traço transverso |
+| Eixo do colo | neutra | 51 graus de rotação interna | coluna posterior com traço transverso |
 | Eixo do colo | adução / abdução | 20 graus de rotação interna | transversa transtectal / justa ou infratectal |
 | Eixo da diáfise, quadril a 90 graus | neutra | qualquer | **parede posterior**, com ou sem luxação |
 | Eixo da diáfise, quadril a 90 graus | abdução de 50 / de 15 graus | qualquer | transversa / coluna posterior |
@@ -262,11 +262,11 @@ Com a força aplicada ao longo do colo, a rotação externa produz fratura anter
 !fim
 
 !questoes central=trauma-0124,trauma-0045 relacionadas=trauma-0077,trauma-0215 treino=trauma-1524
-conceito: Força no trocanter, pelo eixo do colo, com o quadril em rotação externa gera fratura anterior (coluna com cerca de 25 graus, parede com cerca de 50); com o quadril fletido e a força pelo fêmur, a parede posterior quebra, e quanto mais adução, mais luxação.
+conceito: Força no trocanter, pelo eixo do colo, com o quadril em rotação externa gera fratura anterior (coluna com 25 graus, parede com 51); com o quadril fletido e a força pelo fêmur, a parede posterior quebra, e quanto mais adução, mais luxação.
 como: O TARO 2016 perguntou por que eixo passa a energia na fratura da parede anterior (colo, em rotação lateral). O TARO 2018 pediu a posição do quadril, com força no trocanter, que produz a fratura da parede anterior. O TARO 2021 perguntou como o fêmur deve estar para a luxação posterior quebrar a borda ou cisalhar a cabeça (menos aduzido), e o TEOT 2021, a posição da fratura-luxação posterior (adução e flexão).
 armadilha: Diáfise em rotação lateral para a parede anterior: força pela diáfise com o quadril fletido vai para trás; a fratura anterior vem pelo colo.
 armadilha: Mais aduzido para quebrar a borda: a adução favorece a luxação pura; menos adução faz a cabeça bater na borda.
-alerta: No TARO 2018 (trauma-0045), o gabarito descreve a parede anterior com rotação lateral de 20 graus e adução e abdução neutras. A tabela 51-1 do capítulo dá, com a força no trocanter e o quadril neutro, cerca de 25 graus de rotação externa para a coluna anterior e cerca de 50 graus para a parede anterior. A direção (rotação lateral, sem adução nem abdução) é a mesma; o número do gabarito é menor que o do livro.
+alerta: No TARO 2018 (trauma-0045), o gabarito descreve a parede anterior com rotação lateral de 20 graus e adução e abdução neutras. A tabela 51-1 do capítulo dá, com a força no trocanter e o quadril neutro, 25 graus de rotação externa para a coluna anterior e 51 graus para a parede anterior. A direção (rotação lateral, sem adução nem abdução) é a mesma; o número do gabarito é menor que o do livro.
 !fim
 
 # Avaliação inicial e lesões associadas {radar=confirmado}
@@ -346,6 +346,8 @@ Os **arcos do teto (roof arc) de MATTA** medem se o traço violou a cúpula e se
 - Arco **acima** do critério significa teto preservado: pode ficar sem cirurgia. A figura 51-36 mostra uma transversa com arcos de 50 graus em todas as incidências que subluxou em 3 semanas, como os critérios de VRAHAS teriam previsto.
 - **Não se aplica às fraturas de ambas as colunas** (não há acetábulo intacto para medir; vale a congruência secundária) **nem às da parede posterior** (vale a estabilidade, julgada à parte, de preferência pelo exame sob anestesia).
 - Os critérios da carga de sentar e levantar são muito mais exigentes e ainda não têm implicação clínica definida.
+
+O HEBERT (cap. 56, tratamento conservador, Fig. 56.15) usa o critério antigo de MATTA: com o paciente sem tração e a cabeça congruente, os arcos anterior, posterior e medial devem passar de **45 graus**, medidos no AP, na alar e na obturatriz ou na TC. Na lista de exceções a redação muda: o HEBERT diz que o arco não serve para as fraturas de **ambas as colunas e da coluna posterior**, enquanto o Rockwood (cap. 51) exclui ambas as colunas e a **parede posterior**. O próprio HEBERT, logo depois, manda avaliar a parede posterior em separado, porque essa área fica fora do arco. Se a alternativa falar em coluna posterior, é a redação do HEBERT; em parede posterior, a do Rockwood.
 
 !questoes central=trauma-0235,trauma-0217 relacionadas=trauma-1175 treino=trauma-1526,trauma-1527,quadril-0270
 conceito: O arco do teto é medido sem tração nas três incidências e não vale para ambas as colunas nem para a parede posterior, avaliada à parte; arcos acima de 45 graus no AP, 25 na obturatriz e 70 na ilíaca (VRAHAS) indicam teto suficiente; transversas, T e colunas anteriores baixas, estáveis e congruentes podem ficar sem cirurgia.

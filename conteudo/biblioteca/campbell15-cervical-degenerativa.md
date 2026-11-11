@@ -1,6 +1,6 @@
 ---
 id: campbell15-cervical-degenerativa
-versao: 1
+versao: 2
 titulo: Hérnia de disco e mielopatia cervical
 especialidade: coluna
 acesso: gratis
@@ -178,9 +178,25 @@ Não existe na cervical um equivalente exato do LASÈGUE, mas o Campbell (p. 175
 
 O Campbell ainda ensina a ler a **posição de conforto**: alívio com o pescoço em **extensão** sugere lesão ligamentar posterior por hiperextensão; alívio com **distração e flexão** sugere compressão de raiz por disco mole ou, mais provavelmente, por **osteófito no forame**. A compressão piora a dor em qualquer condição, e antes de comprimir ou tracionar é preciso afastar instabilidade e fratura; a distração também dói na articulação temporomandibular doente.
 
+O SPURLING gira a cabeça para o lado afetado, **estende** o pescoço e comprime para baixo (Campbell, Tabela 45.3, p. 1750). O Sizínio Hebert, Ortopedia e Traumatologia, 5ª ed. (cap. 2.1, Cervicobraquialgia) explica por que a extensão dói: na estenose foraminal, a compressão e a tração da raiz são acentuadas pelo movimento cervical, e a **hiperextensão reduz a dimensão dos forames** e exacerba a braquialgia. É o espelho da posição de conforto do parágrafo anterior, em que a flexão com distração alivia a raiz presa pelo osteófito do forame.
+
+!questoes relacionadas=coluna-0048
+conceito: Na estenose foraminal cervical, a extensão diminui o forame e exacerba a dor radicular; por isso o SPURLING estende, gira para o lado afetado e comprime, e a flexão com distração alivia.
+como: O TEOT 2022 perguntou qual movimento pode exacerbar a dor radicular na estenose foraminal cervical.
+armadilha: Marcar a flexão, que é justamente a posição de alívio da raiz comprimida no forame.
+!fim
+
 ## O diferencial
 
 Diante de uma radiculopatia, examine o membro inteiro atrás das compressões distais: **desfiladeiro torácico, túnel do carpo e túnel cubital**; e examine os membros inferiores atrás de **sinais de trato longo** (p. 1750). O Campbell divide o diferencial em **extrínseco** (tumores do tórax, compressões nervosas distais, artrose do ombro, disfunção temporomandibular, lesões do manguito e impacto) e **intrínseco** (degeneração com hérnia ou artrose, estenose congênita, tumores primários e secundários, fraturas) (p. 1751). O Sizínio lembra que a ENMG é útil quando há dúvida entre raiz cervical e nervo periférico.
+
+Entre os tumores do tórax que imitam doença cervical, o nome que as provas cobram é o **tumor de PANCOAST**, o tumor do sulco pulmonar superior. O Campbell o cita entre as causas de dor referida ao ombro que vêm da cavidade torácica, ao lado da pneumonia do lobo superior (cap. 51, Box 51.1, p. 2146). O Green's Operative Hand Surgery, 7ª ed. mostra o mesmo disfarce no membro superior: o tumor de PANCOAST pode vir com sintomas do nervo ulnar e imitar a síndrome do túnel cubital (cap. 28, p. 955), e foi um dos diagnósticos perdidos numa série de cirurgias que falharam para síndrome do desfiladeiro torácico (cap. 29, p. 975).
+
+!questoes relacionadas=coluna-0314
+conceito: O tumor de PANCOAST, no sulco superior do pulmão, é tumor do tórax que imita cervicobraquialgia e compressões nervosas do membro superior; entra no diferencial extrínseco da doença cervical (Campbell, cap. 45, p. 1751, e cap. 51, p. 2146; Green, cap. 28, p. 955, e cap. 29, p. 975).
+como: O TEOT 2024 perguntou qual tumor é diagnóstico diferencial da estenose cervical com cervicobraquialgia.
+armadilha: Marcar outro epônimo de tumor; dos quatro, só o PANCOAST aparece nos livros como diferencial da dor cervical e do membro superior.
+!fim
 
 # Mielopatia espondilótica: quadro, sinais e a hérnia central {radar=confirmado}
 

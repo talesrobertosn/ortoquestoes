@@ -1,6 +1,6 @@
 ---
 id: wilkins9-08-radio-ulna-distal-crianca
-versao: 2
+versao: 3
 titulo: Fraturas do rádio e da ulna distais na criança
 especialidade: pediatria
 acesso: gratis
@@ -16,6 +16,8 @@ resumo: Toro, galho verde e baioneta; a rotação de cada ápice; periósteo ín
 # Como ler este capítulo {radar=fundamento}
 
 Este resumo foi escrito a partir do capítulo 8 do Rockwood and Wilkins' Fractures in Children, de Hennrikus e Bae, na ordem em que as provas cobram o tema. Ele reorganiza as ideias do capítulo em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo sobre cada ponto. Os números são os do capítulo. A edição não aparece impressa nas páginas enviadas; pela numeração (capítulo 8, páginas 385 a 466) e pela bibliografia, trata-se muito provavelmente da 9ª edição. Em 28/10/2026, o resumo foi atualizado com o capítulo 9 da 10ª edição (2025), agora de Apurva S. Shah, que acrescenta os números de um registro multicêntrico, a remodelação coronal e a parada do crescimento nas fisárias articulares.
+
+As figuras citadas no texto (figura 8-1, 8-2 e assim por diante) seguem a numeração do capítulo 8 da 9ª edição. Na 10ª edição o capítulo passou a ser o 9 e a numeração mudou, nem sempre com o mesmo número: o galho verde com falha da cortical volar é a figura 9-1, a baioneta reversa a 9-2, o Galeazzi de supinação a 9-4, a baioneta dorsal a 9-8, os padrões metafisários a 9-15, a estabilidade da radioulnar distal em pronação e supinação a 9-21, a manobra de redução da baioneta a 9-25, o molde em três pontos a 9-26, o índice do gesso a 9-27, a perda de redução na segunda semana a 9-28 e o braquiorradial como força deformante a 9-59.
 
 O punho da criança cai quase todo ano no TARO e no TEOT, e a banca gira em poucos blocos: **a rotação que produz cada galho verde** (ápice volar com supinação, ápice dorsal com pronação) e a manobra que a desfaz; **o periósteo** (qual lado fica íntegro na baioneta e o que se interpõe na fratura irredutível); **a fise distal do rádio** (SALTER-HARRIS II, THURSTON-HOLLAND, a redução que não se força depois de 7 dias); **as complicações** (a perda de redução e a consolidação viciosa); **o Galeazzi da criança**, que, ao contrário do adulto, é tratado sem cirurgia; e **a lesão fisária por estresse da ginasta**. Por baixo de tudo está uma ideia só: o rádio distal da criança tem uma fise muito ativa ao lado e um periósteo grosso em volta, e por isso remodela muito, reduz bem e quase nunca precisa de placa.
 
@@ -35,6 +37,8 @@ armadilha: Achar que o galho verde é o padrão mais comum do rádio distal.
 
 As fraturas do antebraço são as fraturas de ossos longos **mais comuns da criança**: incidência anual de cerca de **1,5 por 100 crianças** e até **40%** de todas as fraturas pediátricas. Dentro do antebraço, o **rádio e a ulna distais** são os mais acometidos, e a **metáfise distal do rádio** é o local de fratura mais comum do antebraço na criança e no adolescente. Os picos de incidência ocorrem no **estirão de crescimento pré-adolescente**, e o membro mais atingido é o **não dominante, no sexo masculino**.
 
+O lado não dominante vem do capítulo 8 da 9ª edição; o HEBERT (capítulo 49) também diz que, em geral, o membro não dominante é o mais acometido nas fraturas do antebraço da criança.
+
 Por que ali e por que nessa idade. Os estudos de carga sobre resistência mostram que, no estirão, o **crescimento longitudinal anda mais rápido que a mineralização**, e o osso fica temporariamente mais fraco. A fise distal do rádio faz a maior parte do crescimento do rádio e recebe cerca de **70% da carga** do punho; a cortical da metáfise é **fina e porosa**. Por isso a fratura mais comum é a **metafisária**, seguida da **fisária**. O rádio quebra muito mais que a ulna, e a fratura da ulna distal costuma vir junto com a do rádio.
 
 Os outros fatores que o capítulo lista:
@@ -50,7 +54,7 @@ como: O TARO 2023 cruzou sexo e lado em pares 2 por 2 (feminino ou masculino com
 armadilha: Feminino: as meninas têm até osso de qualidade pior em parte da puberdade, mas a fratura é cerca de três vezes mais comum nos meninos.
 armadilha: Pico entre 6 e 9 anos (PUC-SP 2019): o capítulo põe o pico no estirão pré-adolescente.
 armadilha: Fraturas ipsilaterais associadas em até 43% (PUC-SP 2019): o capítulo dá 3% a 13%.
-alerta: No TARO 2023 (pediatria-0554), o gabarito oficial é B, masculino e lado dominante. O capítulo 8 diz que o braço mais acometido é o não dominante, no sexo masculino, o que corresponderia à alternativa D. O gabarito oficial está preservado; para o capítulo, o lado é o não dominante.
+alerta: No TARO 2023 (pediatria-0554), o gabarito oficial é B, masculino e lado dominante. O capítulo 8 da 9ª edição diz que o braço mais acometido é o não dominante, no sexo masculino, e o HEBERT (capítulo 49) também põe o membro não dominante como o mais acometido nas fraturas do antebraço da criança, o que corresponderia à alternativa D. O gabarito oficial está preservado; para os dois livros, o lado é o não dominante.
 alerta: Na PUC-SP 2019 (mao-1056), o gabarito é C (não se recomenda ressonância imediata quando a clínica é positiva e a radiografia negativa). O capítulo não discute a ressonância imediata nesse cenário: diz que a ultrassonografia é útil na suspeita de fratura sem alteração radiográfica e na criança pequena, e que a tomografia e a ressonância ficam para fraturas articulares ou lesões do carpo. As outras alternativas contrariam o capítulo (pico no estirão; associadas em 3% a 13%).
 !fim
 
@@ -147,7 +151,7 @@ conceito: A fratura fisária do rádio distal é quase sempre SALTER-HARRIS II, 
 como: O ENARE 2023 pediu o tipo de SALTER-HARRIS do fragmento de THURSTON-HOLLAND; o TARO 2018 cruzou rotação ou compressão com avulsão volar ou dorsal no tipo III. O TARO 2014 perguntou onde o descolamento epifisário é mais comum, e o CET-PR testou definições gerais de SALTER-HARRIS.
 armadilha: Avulsão radiocárpica dorsal no tipo III (TARO 2018): os ligamentos arrancados são os volares, que o capítulo chama de estabilizadores principais.
 armadilha: Rotação no tipo III: o capítulo cita compressão, cisalhamento e avulsão, não rotação.
-alerta: O TARO 2014 (pediatria-0689) deu o terço distal do rádio como o local mais comum de descolamento epifisário. O capítulo 8 não traz esse ranking do corpo inteiro: diz que, no antebraço distal, a fratura metafisária é a mais comum e a fisária vem a seguir, e que a maioria das fisárias é SALTER-HARRIS II. O dado da banca vem da literatura das lesões fisárias.
+alerta: O TARO 2014 (pediatria-0689) deu o terço distal do rádio como o local mais comum de descolamento epifisário. O capítulo do punho não traz esse ranking do corpo inteiro, mas outros livros trazem: o capítulo 1 da 10ª edição do Rockwood infantil diz que as fraturas fisárias do rádio distal são as fraturas fisárias mais comuns, e o HEBERT (capítulo 37) põe o rádio distal como o local mais acometido, com 44% das lesões fisárias, segundo NEER e HOROWITZ, seguido do úmero distal. O Tachdjian (p. 1133) dá outro número: as lesões fisárias das falanges passam de 30% de todas as fraturas fisárias, nas séries de MIZUTA e de PETERSON. O gabarito da banca segue o Rockwood e o HEBERT.
 !fim
 
 # Anatomia que explica as regras {radar=confirmado}
@@ -308,7 +312,7 @@ armadilha: Pseudartrose: na criança é rara e ligada a doença do osso ou da va
 
 # Fise: a redução tardia e a parada do crescimento {radar=confirmado}
 
-Os descolamentos fisários costumam ficar estáveis depois da redução. Se a redução se perde **depois de 7 dias**, o capítulo manda desconfiar de nova manipulação: a remanipulação forçada aumenta o risco de **parada iatrogênica do crescimento**. A recomendação atual é a redução **atraumática antes de 7 dias** da lesão. Felizmente, a deformidade em extensão remodela com frequência se a criança tem **mais de 2 anos de crescimento** e a deformidade é **menor que 20 graus**, e até deformidades grandes remodelam no plano de movimento do punho. A tabela de contraindicações da cirurgia traz a "fise com mais de 5 dias depois da redução inicial que perdeu a redução" e a criança com mais de 2 anos de crescimento, fratura extra-articular e desvio menor que 20 graus no plano de movimento.
+Os descolamentos fisários costumam ficar estáveis depois da redução. Se a redução se perde **depois de 7 dias**, o capítulo manda desconfiar de nova manipulação: a remanipulação forçada aumenta o risco de **parada iatrogênica do crescimento**. A recomendação atual é a redução **atraumática antes de 7 dias** da lesão. Felizmente, a deformidade em extensão remodela com frequência se a criança tem **mais de 2 anos de crescimento** e a deformidade é **menor que 20 graus**, e até deformidades grandes remodelam no plano de movimento do punho. A tabela de contraindicações da cirurgia da 10ª edição traz a "fise com mais de 5 a 7 dias depois da redução inicial que perdeu a redução", **salvo quando resta pouco crescimento**, e a criança com mais de 2 anos de crescimento, fratura extra-articular e desvio menor que 20 graus no plano de movimento.
 
 ## Parada do crescimento do rádio
 
@@ -327,7 +331,7 @@ Com o rádio parado, a ulna cresce: **incongruência da radioulnar distal, impac
 conceito: A fise distal do rádio é reduzida de forma atraumática antes de 7 dias; depois disso não se força nova redução, porque a remodelação é provável e a manipulação tardia arrisca a parada. A parada é de cerca de 4% no rádio e de 10% a 55% na ulna.
 como: O TARO 2008 perguntou a partir de quantos dias a redução do descolamento epifisário distal do rádio põe a placa em risco (7, 14, 21 ou 28 dias).
 armadilha: 14 ou 21 dias: são prazos de outras fises e de consolidação; o capítulo fala em 7 dias.
-alerta: O TARO 2008 (pediatria-0750) está sem gabarito oficial no acervo; o capítulo sustenta 7 dias (alternativa A). O próprio capítulo traz também 5 dias na tabela de contraindicações da cirurgia (fise que perdeu a redução depois de 5 dias da redução inicial); o texto e a recomendação atual falam em 7 dias.
+alerta: O TARO 2008 (pediatria-0750) está sem gabarito oficial no acervo; o capítulo sustenta 7 dias (alternativa A). A tabela de contraindicações da cirurgia da 10ª edição fala em 5 a 7 dias (fise que perdeu a redução depois de 5 a 7 dias da redução inicial, salvo pouco crescimento restante); o texto e a recomendação atual falam em 7 dias.
 !fim
 
 # O Galeazzi da criança {radar=confirmado}
@@ -352,7 +356,7 @@ conceito: O Galeazzi da criança é raro (3%), em geral rádio metafisário com 
 como: O TEPOP 2024 cruzou a rotação do gesso axilopalmar (pronação ou supinação) com a frequência da cirurgia (rara ou frequente). O TARO 2025 perguntou quando suspeitar do Galeazzi a partir da combinação de fraturas distais do rádio e da ulna.
 armadilha: Frequentemente cirúrgico: é o Galeazzi do adulto, a "fratura da necessidade"; na criança a cirurgia é a exceção.
 armadilha: Fratura metafisária distal da ulna como par do Galeazzi: o capítulo descreve a fratura da fise distal da ulna (o equivalente) e a luxação da radioulnar distal (o verdadeiro).
-alerta: No TEPOP 2024 (pediatria-0940), o gabarito oficial é B, supinação e raramente cirúrgico. O capítulo concorda que a cirurgia é a exceção, mas não fixa uma rotação única: a imobilização é na posição de estabilidade, pronação no tipo de supinação (ápice volar, ulna volar) e supinação no tipo de pronação (ápice dorsal, ulna dorsal).
+alerta: No TEPOP 2024 (pediatria-0940), o gabarito oficial é B, supinação e raramente cirúrgico. O capítulo concorda que a cirurgia é a exceção, mas não fixa uma rotação única, e a 10ª edição se contradiz no Galeazzi de supinação. O texto do tratamento manda reduzir o tipo de supinação (ápice volar, ulna volar) com pronação e imobilizar no gesso axilopalmar na posição rotatória de estabilidade, pronação ou supinação conforme o caso, o que sugere pronação nesse tipo. A legenda da figura 9-4, que mostra justamente um Galeazzi de supinação num menino de 11 anos, diz que a fratura foi reduzida com flexão e pronação do fragmento distal e que o paciente ficou imobilizado em supinação por 6 semanas, com retorno da rotação completa. A legenda apoia a supinação do gabarito; o texto, a pronação no tipo de supinação.
 alerta: No TARO 2025 (pediatria-0528), o gabarito oficial é B, fratura do rádio com fratura do estiloide da ulna. O capítulo 8 não trata a fratura do estiloide como sinal do Galeazzi: descreve a avulsão do estiloide como lesão da inserção da fibrocartilagem triangular, comum junto das fraturas do rádio distal e raramente ligada a problemas de crescimento, e define o Galeazzi da criança pela fratura do rádio com luxação da radioulnar distal ou com fratura da fise distal da ulna. A resposta oficial segue o raciocínio do adulto (fratura da base do estiloide como sinal de instabilidade da radioulnar distal).
 !fim
 
@@ -372,7 +376,7 @@ armadilha: Antebraço do jogador de beisebol: o osso está certo, o esporte não
 
 # Tratamento cirúrgico: quando e como {radar=fundamento}
 
-Indicações do capítulo: **fratura exposta**, **irredutível**, **cotovelo flutuante**, fratura **articular desviada**, adolescente com **menos de 2 anos de crescimento** com fratura irredutível ou que perdeu a redução, fratura com **neuropatia do mediano** e Galeazzi completo do adolescente. Contraindicações: criança com mais de 2 anos de crescimento, fratura extra-articular com desvio menor que 20 graus no plano de movimento; fise com mais de 5 dias que perdeu a redução. As fraturas irredutíveis vêm do periósteo ou do pronador quadrado presos.
+Indicações do capítulo: **fratura exposta**, **irredutível**, **cotovelo flutuante**, fratura **articular desviada**, adolescente com **menos de 2 anos de crescimento** com fratura irredutível ou que perdeu a redução, fratura com **neuropatia do mediano** e Galeazzi completo do adolescente. Contraindicações: criança com mais de 2 anos de crescimento, fratura extra-articular com desvio menor que 20 graus no plano de movimento; fise com mais de 5 a 7 dias que perdeu a redução, salvo pouco crescimento restante. As fraturas irredutíveis vêm do periósteo ou do pronador quadrado presos.
 
 ## Neuropatia, edema e cotovelo flutuante
 

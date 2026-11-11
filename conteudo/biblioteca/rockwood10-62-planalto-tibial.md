@@ -1,6 +1,6 @@
 ---
 id: rockwood10-62-planalto-tibial
-versao: 2
+versao: 3
 titulo: Fratura do planalto tibial
 especialidade: trauma
 acesso: gratis
@@ -37,6 +37,8 @@ A incidência de lesão meniscal e ligamentar é **alta**, e os estudos de resso
 | STANNARD | fraturas em geral | ligamento em 71%, mais na alta energia |
 | DELAMARTER | 39 fraturas, radiografias sob estresse e cirurgia | 22 LCM, 8 LCL, 1 LCA, 8 combinadas |
 !fim
+
+**O Campbell dá outra ordem.** O Campbell 15 (cap. 59, p. 2612) cita uma análise de ressonância de 29 fraturas do planalto em que o **colateral medial** (tibial) foi o mais lesado, em **55%**, à frente do **menisco lateral, 45%**; vieram depois o LCA (41%), o colateral fibular (34%), o LCP (28%) e o menisco medial (21%), e os pacientes com lesão meniscal tendiam a ter lesão instável (88%). Na série de GARDNER do Rockwood, com 103 fraturas, o menisco lateral lidera com 91%. Os dois livros divergem; a banca, nas questões do acervo, segue o Rockwood (menisco lateral).
 
 A lógica é mecânica. A maioria das fraturas é lateral, por valgo com carga axial: o côndilo femoral lateral desce sobre o planalto lateral, e o menisco lateral, que cobre uma parte maior do planalto lateral do que o medial cobre do seu lado, fica preso entre os ossos ou cai no traço. A lesão meniscal acompanha o grau de afundamento e o alargamento do côndilo. O LCA, preso à eminência intercondilar à frente da espinha medial, sofre com a rotação e com as fraturas que sobem pelas espinhas.
 
@@ -108,7 +110,7 @@ alerta: O capítulo 62 não descreve o sentido da subluxação da tíbia no cisa
 !questoes central=trauma-0204 treino=trauma-1672
 conceito: No osso osteoporótico predomina a compressão: o côndilo femoral afunda o planalto sem abrir a parede lateral (depressão central, SCHATZKER III).
 como: O TEOT 2022 perguntou o padrão do osso osteoporótico contra bicondilar, dissociação metáfise-diáfise e afundamento do côndilo medial.
-armadilha: Bicondilar: é o padrão da carga axial de alta energia, típico do jovem.
+armadilha: Bicondilar: é o padrão em que predomina a carga axial, mas não é exclusivo do jovem: o capítulo lembra que, no idoso, a queda simples de baixa energia também produz fraturas uni ou bicondilares. O que caracteriza o osso osteoporótico é o predomínio da compressão, com fragmento de separação menor.
 !fim
 
 # Classificação de SCHATZKER {radar=confirmado}

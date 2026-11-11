@@ -1,6 +1,6 @@
 ---
 id: rockwood10-60-patela-mecanismo-extensor
-versao: 3
+versao: 4
 titulo: Fratura da patela, luxação aguda da patela e lesões do aparelho extensor
 especialidade: trauma
 acesso: gratis
@@ -86,10 +86,12 @@ A competência do mecanismo extensor se testa com a **elevação da perna estend
 
 **Ferida sobre a patela.** Laceração ou escoriação pode ser fratura exposta oculta ou artrotomia traumática. Faz-se o **teste de carga salina**: aspiração da articulação e infusão de **150 mL de soro**, com azul de metileno opcional; a saída pela ferida confirma a comunicação, e o caso vai para irrigação e desbridamento urgentes. Depois do exame, tala em leve flexão, gelo e elevação.
 
+A tomografia é a outra via para a mesma pergunta. O capítulo de imagem do Rockwood (cap. 7) diz que a TC identifica artrotomia traumática e fratura exposta com **acurácia excelente**, pelo **ar intra-articular**, e que vem sendo usada cada vez mais no lugar do teste salino: na série de KONDA, com 37 pacientes que fizeram os dois exames, a TC teve **100%** de sensibilidade e especificidade, contra **92%** do teste de carga salina. O Campbell (cap. 59, p. 2620) mantém o teste salino para a dúvida e avisa que ele pode falhar nas artrotomias muito pequenas.
+
 !questoes central=trauma-0069,trauma-0240 treino=trauma-1643,trauma-1645,trauma-1234
 conceito: Pouco derrame com defeito palpável indica ruptura retinacular; a extensão ativa testa os retináculos, e a dor da hemartrose se contorna com punção e anestésico; ferida sobre a patela pede teste de carga salina com 150 mL.
 como: O TARO 2021 perguntou o que sugere a ausência de derrame significativo com defeito ósseo palpável (lesão retinacular, contra ligamento patelar, tendão quadricipital e colateral fibular). O TARO 2022 pediu a conduta diante de ferida que pode ser fratura exposta oculta: aspirar o derrame e injetar soro para ver a saída pelo ferimento, contra exploração no pronto-socorro, contraste e tomografia.
-armadilha: Tomografia para ver a comunicação com o meio externo: o teste é clínico, à beira do leito.
+armadilha: Tomografia para ver a comunicação com o meio externo: a conduta que o capítulo 60 descreve é o teste de carga salina, à beira do leito. A TC com ar intra-articular não está errada em si: o Rockwood (cap. 7) dá a ela acurácia excelente (100% contra 92% do teste salino na série de KONDA).
 !fim
 
 # Imagem {radar=confirmado}
@@ -101,6 +103,8 @@ AP, perfil e **axial (tangencial)** da patelofemoral, e o joelho contralateral p
 - **AP:** maior chassi possível, perna rodada até a patela apontar para cima; a patela deve ficar no meio do sulco, com o polo distal **até 20 mm** acima da linha dos côndilos. O AP subestima a cominução; olhe o fêmur distal e o planalto.
 - **Perfil:** define o padrão e a separação dos fragmentos e é a melhor vista do traço transverso; precisa ser verdadeiro (rotação controlada). Incidências em rotação interna e externa mostram melhor as facetas e servem no intra e no pós-operatório. Olhe o polo distal e a tuberosidade atrás de avulsões sutis.
 - **Axial:** joelhos **fletidos 45 graus** na borda da mesa, raio **30 graus abaixo da horizontal**, chassi perpendicular, 6 a 12 polegadas abaixo dos joelhos. Só nela aparecem os **traços verticais e marginais** e os defeitos osteocondrais. É confortável no joelho com hemartrose.
+
+O capítulo 60 descreve a axial sem dar nome a ela. O nome que as provas usam vem do Campbell (cap. 59, p. 2620): a fratura da patela se avalia com AP, perfil e **axial de MERCHANT**; a transversa aparece melhor no perfil, e a vertical, a osteocondral e a incongruência articular, na axial. O mesmo trecho lembra que a radiografia do outro joelho às vezes é necessária para separar a fratura aguda da patela bipartida.
 
 ## Altura da patela
 
@@ -123,6 +127,8 @@ armadilha: AP para o traço vertical: ele se sobrepõe ao fêmur e passa desperc
 # Patela bipartida e outros simuladores {radar=confirmado}
 
 A patela **bipartida** (ou tripartida) é **variante normal**, de fusão incompleta dos centros de ossificação. Incidência de cerca de **8%**, **quase sempre bilateral**; o fragmento fica na região **superolateral**, com bordas **lisas e corticalizadas** (figura 60-2), sem dor, sem sensibilidade e com extensor normal. A radiografia do **outro joelho** confirma. A bipartida verdadeiramente **unilateral** é extremamente rara e pode ser **avulsão antiga**.
+
+Os outros livros dão números diferentes para a bilateralidade e para a frequência. O Campbell (cap. 50, p. 2127) diz que a bipartida é bilateral em **cerca de 40%** dos pacientes e traz a classificação mais usada, em três tipos: **tipo I, 5%**, no polo inferior, às vezes associado à SINDING-LARSEN-JOHANSSON; **tipo II, 20%**, ao longo de toda a borda lateral, que pode corresponder a pseudartrose de fratura; **tipo III, 75%**, a forma elíptica superolateral, a mais comum. No capítulo das fraturas da criança (cap. 38, p. 1453), o Campbell fala em bilateral em **cerca de 50%** das crianças. O HEBERT (cap. 16) repete os três tipos com as mesmas porcentagens e dá **50% bilateral** e predomínio masculino de 9 para 1; quanto à frequência, diz que a patela ossifica por um único centro em 77% dos casos e que, dos núcleos múltiplos, **2 a 3% ficam separados**, número bem abaixo dos cerca de 8% do Rockwood. Para a prova, guarde "superolateral, bilateral com frequência"; o "quase sempre" é do Rockwood.
 
 Outras situações próprias: a **fratura em manga** (sleeve) do esqueleto imaturo, avulsão do polo distal com grande parte da cartilagem articular; a **fratura osteocondral** do fêmur ou da patela, na estrelada de alta energia ou na luxação, que a radiografia pode não mostrar (RM com sequências de cartilagem); e a **fratura após retirada de enxerto osso-tendão-osso** para o LCA, de 0,2% numa série de mais de 1.700 reconstruções, em geral por queda ou reabilitação agressiva no pós-operatório, com fixação rígida recomendada mesmo com pouco desvio.
 
@@ -235,6 +241,8 @@ TC quando há suspeita de múltiplos fragmentos ou a radiografia não mostra bem
 Incidência anual de **5,8 por 100.000**, **29 por 100.000 entre 10 e 17 anos**. A **lateral** é a mais comum; a medial traumática é excepcionalmente rara. A maioria não volta a luxar: recidiva de **15% a 44%** com tratamento conservador.
 
 **O padrão de lesão.** As **fraturas osteocondrais na borda medial inferior da patela** são altamente sugestivas; fragmentos também se soltam do **côndilo femoral lateral**. A ressonância confirma a luxação mesmo depois da redução espontânea: derrame, **contusão do côndilo femoral lateral e da faceta medial da patela**, ruptura do LPFM e do retináculo, corpos livres. Lesão da cartilagem ocorre em até **95%** dos primeiros episódios (26,5% do lado da patela e 15% no fêmur, numa revisão).
+
+**Luxação intra-articular.** O capítulo 60 não trata dela; o Campbell (cap. 65, p. 2941) descreve dois tipos, ambos raros. O **mais comum é a luxação horizontal**, com a patela solta do tendão quadricipital e a superfície articular voltada para a superfície articular da tíbia; no outro, também horizontal, o polo inferior se solta do tendão patelar e a superfície articular olha para proximal. A patela costuma ficar presa no intercôndilo, a redução fechada é difícil, e em geral se faz redução aberta com reparo do mecanismo extensor. Há uma contradição dentro do próprio Campbell: o texto fala em desinserção do quadricipital no tipo horizontal, e a legenda da Fig. 65.3 diz que o mecanismo do quadríceps em geral fica íntegro.
 
 **Conduta.** Redução e imobilização em extensão (órtese ou gesso por 3 semanas na descrição clássica), carga imediata, flexão liberada ao longo de 3 a 4 semanas. No protocolo de ATKIN, imobilizador só para conforto, órtese estabilizadora e retorno ao esporte com movimento completo, sem derrame e com quadríceps a 80% do outro lado, sem recidiva em 6 meses. A **hemartrose** aumenta a chance de fratura osteocondral; o International Patellofemoral Study Group (2007) recomenda **RM** nos de alto risco (hemartrose grande), também para ver o retináculo medial, o LPFM e o VMO. A maioria dos autores **fixa a fratura osteocondral grande e desviada**.
 

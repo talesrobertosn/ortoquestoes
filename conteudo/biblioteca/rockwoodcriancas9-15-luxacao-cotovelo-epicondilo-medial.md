@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-15-luxacao-cotovelo-epicondilo-medial
-versao: 3
+versao: 4
 titulo: Luxação do cotovelo, fratura do epicôndilo medial e pronação dolorosa na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 16 · Medial Epicondyle Fractures and Dislocations of the Elbow
 autores: Benjamin R. Wilson e Vishwas Talwalkar (10ª edição); Anthony Stans e Todd Milbrandt (9ª edição)
-fonte: Escrito com o capítulo 15 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 16 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 9ª edição.
+fonte: Escrito com o capítulo 15 da 9ª edição (enviado pelo Tales em 19/10/2026) e atualizado em 28/10/2026 com o capítulo 16 da 10ª edição, conferido localmente; as figuras citadas seguem a numeração da 10ª edição, salvo as marcadas como da 9ª, que não têm correspondente na 10ª.
 subtemas: Côndilo lateral, epicôndilo medial e rádio proximal na criança
 resumo: Epicôndilo medial como a fratura que mais acompanha a luxação, ulnar o nervo mais lesado e mediano o mais grave (FOURRIER, MATEV), encarceramento como única indicação absoluta, ROBERTS, PARVIN, rigidez e imobilização curta, e a pronação dolorosa do ligamento anular (2 a 3 anos, hiperpronação).
 ---
@@ -44,7 +44,7 @@ A regra do capítulo é que a luxação do cotovelo da criança **raramente vem 
 | Epicôndilo lateral, côndilo lateral, olécrano, capítulo e tróclea | menos frequentes |
 !fim
 
-Vista do outro lado, a associação é a mesma: **quase 60% das fraturas do epicôndilo medial** nessa faixa etária vêm com luxação (a tabela 15-1 dá cerca de 50%, e as séries variam de 30% a 60%). Por isso, toda vez que houver fratura do epicôndilo medial, do coronoide ou do rádio proximal (especialmente colo muito desviado), é preciso testar a estabilidade do cotovelo; e toda vez que houver luxação, é preciso **localizar o epicôndilo medial** na radiografia de controle.
+Vista do outro lado, a associação é a mesma: **quase 60% das fraturas do epicôndilo medial** nessa faixa etária vêm com luxação (a tabela 15-1 da 9ª edição dá cerca de 50%, e as séries variam de 30% a 60%). Por isso, toda vez que houver fratura do epicôndilo medial, do coronoide ou do rádio proximal (especialmente colo muito desviado), é preciso testar a estabilidade do cotovelo; e toda vez que houver luxação, é preciso **localizar o epicôndilo medial** na radiografia de controle.
 
 !questoes central=pediatria-0572,pediatria-0846 relacionadas=pediatria-0906 treino=pediatria-1046
 conceito: Na luxação do cotovelo da criança, a fratura associada mais comum é a do epicôndilo medial (55% a 60% das fraturas associadas); a fratura do epicôndilo, por sua vez, vem com luxação em cerca de metade dos casos.
@@ -59,7 +59,7 @@ armadilha: Côndilo lateral: é a fratura fisária mais comum do cotovelo, não 
 
 ## Quem tem
 
-- Idade média de **2 a 3 anos**; o mais novo descrito tinha **2 meses**; **rara depois dos 7 anos**.
+- Idade média de **2 a 3 anos**; o mais novo descrito tinha **2 meses**; **rara depois dos 7 anos** (10ª edição, PDF 1573). Os outros livros põem o limite antes: o HEBERT (capítulo 47) a dá como muito rara depois dos **5 anos**, e o Tachdjian (6ª edição, p. 1247), como rara ou ausente acima dos 5, com pico entre 1 e 3 anos.
 - **Meninas em 60% a 65%**; cotovelo **esquerdo em cerca de 70%**.
 - A incidência real é desconhecida, porque muitos casos são reduzidos no consultório, pelos pais, ou se resolvem sozinhos.
 
@@ -67,9 +67,9 @@ Por que é da criança pequena: depois dos **5 anos**, as inserções distais da
 
 ## O mecanismo e a anatomia da pronação
 
-A lesão vem da **tração longitudinal com o cotovelo estendido e o antebraço pronado**: levantar ou balançar a criança pelo antebraço, ou segurar a mão dela quando ela desce de repente de um degrau. A pronação importa por geometria: nessa posição, a borda lateral da cabeça do rádio voltada para a parte principal do ligamento é **estreita e arredondada**, e o ligamento passa; em **supinação**, a borda é **larga e quadrada** e segura o ligamento. MCRAE e FREEMAN mostraram que a pronação **mantém** o deslocamento. O ligamento desliza para **proximal**, sobre a cabeça, para dentro da radiocapitelar. Em lactentes de menos de 6 meses, NEWMAN descreveu o mecanismo ao rolar na cama com o braço estendido preso sob o corpo.
+A lesão vem da **tração longitudinal com o cotovelo estendido e o antebraço pronado**: levantar ou balançar a criança pelo antebraço, ou segurar a mão dela quando ela desce de repente de um degrau. A pronação importa por geometria: nessa posição, a borda lateral da cabeça do rádio voltada para a parte principal do ligamento é **estreita e arredondada**, e o ligamento passa; em **supinação**, a borda é **larga e quadrada** e segura o ligamento. MCRAE e FREEMAN mostraram que a pronação **mantém** o deslocamento. O ligamento desliza para **proximal**, sobre a cabeça, para dentro da radiocapitelar. Em lactentes de menos de 6 meses, NEWMAN descreveu o mecanismo ao rolar na cama com o braço estendido preso sob o corpo. O Tachdjian (6ª edição, p. 1247) e o HEBERT (capítulo 47) também dão a tração com o antebraço em **pronação**; o Campbell 15 (capítulo 38, p. 1398) diverge e descreve a tração com o cotovelo estendido e o antebraço **supinado**.
 
-!figura 15-46
+!figura 16-34
 A lesão ocorre mais comumente quando se aplica tração longitudinal ao membro superior, geralmente com o antebraço pronado; pode haver rotura parcial da membrana subanular, permitindo que o ligamento anular subluxe para dentro da articulação radiocapitelar.
 !fim
 
@@ -92,7 +92,7 @@ conceito: A criança com pronação dolorosa segura o membro junto ao corpo com 
 como: O TEOT 2025 cruzou a posição do cotovelo (extensão ou discreta flexão) com a do antebraço (pronação ou supinação). O TARO 2025 mostrou um lactente de 12 meses com edema e pseudoparalisia, sem trauma conhecido, e a radiografia era de fratura fisária do úmero distal, com pronação dolorosa, luxação e artrite séptica como distratores.
 armadilha: Antebraço supinado: a supinação é justamente o movimento que dói.
 armadilha: No TARO 2025, chamar de pronação dolorosa um cotovelo com edema: a pronação dolorosa não tem derrame nem deformidade, e a idade e a falta de história pedem radiografia.
-alerta: O gabarito do TEOT 2025 (pediatria-0911) é "discreta flexão e pronação". O capítulo concorda com a pronação, mas descreve o membro junto ao corpo e, nos passos-chave, o cotovelo mantido em extensão; a flexão discreta não está no texto. Guarde a pronação como o dado firme e saiba que a banca aceitou a flexão leve.
+alerta: O gabarito do TEOT 2025 (pediatria-0911) é "discreta flexão e pronação", e tem fonte: o Tachdjian (6ª edição, capítulo 29, p. 1247) descreve a criança segurando o cotovelo junto ao corpo em discreta flexão, com o antebraço pronado. O Rockwood concorda com a pronação e, nos passos-chave, fala em cotovelo mantido em extensão.
 !fim
 
 ## Imagem: quando pedir e o que se vê
@@ -104,24 +104,26 @@ Se a história de tração é confiável, a criança tem **5 anos ou menos** e a
 - **Ultrassonografia**: aumento da área anecoica entre o capítulo e a cabeça do rádio. KOSUWON mediu cerca de **3,8 mm** de distância radiocapitelar normal em pronação contra **7,2 mm** na subluxação; diferença de **3 mm** entre os lados sugere o diagnóstico (nem sempre confiável).
 - **RM** raramente; útil quando se pensa em fratura ou infecção. Há relato de redução feita sob sedação dentro do aparelho.
 
-## Redução: hiperpronação primeiro
+## Redução: supinação primeiro, hiperpronação como alternativa
 
-Praticamente todas as subluxações reduzem fechadas. A manobra tradicional é a **supinação** (com o cotovelo fletido para alguns, estendido para outros), com o polegar sobre a cabeça do rádio sentindo o estalo. Nos últimos anos ganhou força a **hiperpronação**: MACIAS teve **98% (40 de 41)** de sucesso com hiperpronação contra **86% (38 de 44)** com supinação, com menos tentativas e eficácia quando a supinação falhou, e mais de um ensaio randomizado prospectivo concordou.
+Praticamente todas as subluxações reduzem fechadas. A manobra tradicional é a **supinação** (com o cotovelo fletido para alguns, estendido para outros), com o polegar sobre a cabeça do rádio sentindo o estalo. A **hiperpronação** é a alternativa: MACIAS teve **98% (40 de 41)** de sucesso com hiperpronação contra **86% (38 de 44)** com supinação, com menos tentativas e eficácia quando a supinação falhou.
 
-O roteiro dos autores:
+O roteiro dos autores na 10ª edição (PDF 1579):
 
 - explicar aos pais que haverá uma dor breve seguida de alívio; criança no colo;
-- **hiperpronar o antebraço com o cotovelo estendido**, polegar na face lateral do cotovelo; pequenos movimentos de pronação e supinação nessa posição ajudam; sente-se ou ouve-se um clique;
-- **sem melhora em 10 minutos**, fazer a alternativa: **supinação com flexão** do cotovelo (figura 15-47).
+- com o cotovelo estendido e o polegar na face lateral do cotovelo, **supinar o antebraço e levar o cotovelo à hiperflexão** (figura 16-35); pequenos movimentos de pronação e supinação nessa posição ajudam; sente-se ou ouve-se um clique;
+- **sem melhora em 10 minutos**, fazer a alternativa: **hiperpronação com o cotovelo estendido**.
 
-!figura 15-47
+O Tachdjian (6ª edição, p. 1247) descreve só a supinação: cotovelo fletido a 90 graus e rotação rápida e firme do antebraço até a supinação total.
+
+!figura 16-35
 Técnica de redução por supinação: primeiro se supina o antebraço e depois se hiperflexiona o cotovelo, com o polegar sobre a cabeça do rádio para sentir o estalo do ligamento voltando.
 !fim
 
 Se a criança não volta a usar o braço: com mais de **12 a 24 horas** de evolução, uma sinovite leve pode atrasar a melhora. Confirma-se o diagnóstico (radiografia, se ainda não feita, e reexame do membro todo); radiografia normal com flexão completa e prono-supinação livre garante que o ligamento voltou, e reavalia-se em 5 a 10 dias.
 
 !questoes treino=pediatria-1054
-conceito: A manobra inicial preferida é a hiperpronação com o cotovelo estendido (98% contra 86% de sucesso em MACIAS); se não houver melhora em 10 minutos, faz-se a supinação com flexão.
+conceito: Na 10ª edição, a manobra inicial é a supinação com hiperflexão do cotovelo; se não houver melhora em 10 minutos, faz-se a hiperpronação com o cotovelo estendido, que teve mais sucesso em MACIAS (98% contra 86%).
 armadilha: Gesso logo após a manobra que não funcionou: imobilização não faz parte do primeiro episódio; o gesso de 2 a 3 semanas é para recidivas que atrapalham a vida.
 !fim
 
@@ -137,7 +139,7 @@ No primeiro episódio, se a criança está confortável e usando o braço, **nã
 conceito: A pronação dolorosa tem idade média de 2 a 3 anos, predomina em meninas e no lado esquerdo, é rara depois dos 7 anos, e a recidiva é mais comum até os 2 anos, cessando por volta dos 4 a 5.
 como: O TARO 2014 perguntou a faixa da pronação dolorosa recorrente (1 a 2 anos, contra 3 a 4, 5 a 6 e 7 a 8). O TARO 2006 afirmou, em certo ou errado, maior incidência entre 6 e 8 anos.
 armadilha: 3 a 4 anos para a recorrente: a média do primeiro episódio é 2 a 3 anos, mas o risco de recidiva é maior até os 2.
-alerta: O TARO 2006 (pediatria-0812) não tem gabarito no acervo; pelo capítulo, a afirmação é falsa: a idade média é 2 a 3 anos e a lesão é rara depois dos 7.
+alerta: O TARO 2006 (pediatria-0812) não tem gabarito no acervo; pelo capítulo, a afirmação é falsa: a idade média é 2 a 3 anos e a lesão é rara depois dos 7 (depois dos 5 no HEBERT, capítulo 47, e no Tachdjian, p. 1247).
 !fim
 
 # O epicôndilo medial: anatomia, ossificação e estabilidade {radar=confirmado}
@@ -147,8 +149,8 @@ alerta: O TARO 2006 (pediatria-0812) não tem gabarito no acervo; pelo capítulo
 A estabilidade do cotovelo vem pouco dos músculos (ao contrário do ombro) e muito das **restrições estáticas**, ósseas e ligamentares. O coronoide e o olécrano formam um semicírculo de cerca de **180 graus** que abraça a tróclea, um encaixe em dobradiça bem contido; a cabeça do rádio, côncava, encaixa no capítulo, convexo. A ulnoumeral resiste à translação medial, lateral e longitudinal; a radiocapitelar, à compressão axial.
 
 - **Lateral:** o **ligamento anular**, preso à ulna proximal e em volta do colo do rádio, e o **complexo colateral lateral**, do epicôndilo lateral até o anular e a face lateral da ulna. Resistem ao **varo** e estabilizam a radiocapitelar e a radioulnar proximal.
-- **Medial:** o **colateral ulnar (medial)**, principal restrição ligamentar ao **valgo**, nasce na **face inferior do epicôndilo medial**. Tem feixe **anterior** (o mais importante, para WOODS e TULLOS), posterior (em leque, até o olécrano) e transverso (pouca função). O feixe anterior tem fibras tensas em extensão e outras em flexão (figura 15-4).
-- **Posições:** **flexão e supinação** são as posições de estabilidade; **extensão e pronação**, de instabilidade relativa (figura 15-7).
+- **Medial:** o **colateral ulnar (medial)**, principal restrição ligamentar ao **valgo**, nasce na **face inferior do epicôndilo medial**. Tem feixe **anterior** (o mais importante, para WOODS e TULLOS), posterior (em leque, até o olécrano) e transverso (pouca função). O feixe anterior tem fibras tensas em extensão e outras em flexão (figura 16-15).
+- **Posições:** **flexão e supinação** são as posições de estabilidade; **extensão e pronação**, de instabilidade relativa (figura 15-7 da 9ª edição).
 
 !questoes relacionadas=ombro-cotovelo-0032
 conceito: O feixe anterior do colateral ulnar, que nasce na face inferior do epicôndilo medial, é o principal estabilizador ligamentar contra o valgo.
@@ -159,17 +161,17 @@ alerta: O capítulo descreve a origem do colateral ulnar no epicôndilo medial e
 
 ## A apófise e o que nasce nela
 
-O epicôndilo medial é uma **apófise de tração**: as forças na fise dele são de **tensão**, e não de compressão como nas fises condilares. Ele nasce na **face posterior** da metáfise medial do úmero distal. Na parte **anterior** da apófise nasce, superficialmente, a **massa flexora-pronadora** (flexor radial do carpo, flexor ulnar do carpo, flexor superficial dos dedos, palmar longo e parte do pronador redondo); parte do flexor ulnar do carpo nasce também atrás. Mais fundo nasce o **colateral ulnar**, cuja origem fica **fora da cápsula** (figura 15-6). Nas crianças pequenas, parte da cápsula chega à linha da fise do epicôndilo; nas maiores e nos adolescentes, à medida que o epicôndilo migra para proximal, a cápsula se prende só à **crista medial da tróclea**.
+O epicôndilo medial é uma **apófise de tração**: as forças na fise dele são de **tensão**, e não de compressão como nas fises condilares. Ele nasce na **face posterior** da metáfise medial do úmero distal. Na parte **anterior** da apófise nasce, superficialmente, a **massa flexora-pronadora** (flexor radial do carpo, flexor ulnar do carpo, flexor superficial dos dedos, palmar longo e parte do pronador redondo); parte do flexor ulnar do carpo nasce também atrás. Mais fundo nasce o **colateral ulnar**, cuja origem fica **fora da cápsula** (figura 16-2). Nas crianças pequenas, parte da cápsula chega à linha da fise do epicôndilo; nas maiores e nos adolescentes, à medida que o epicôndilo migra para proximal, a cápsula se prende só à **crista medial da tróclea**.
 
 Essa anatomia tem duas consequências que voltam ao longo do capítulo. Uma avulsão **muscular pura** na criança maior pode deixar a cápsula e parte do complexo ligamentar presos à tróclea, com o cotovelo relativamente estável; já a avulsão **pelo colateral ulnar** costuma deixar o cotovelo instável. E a lesão do epicôndilo é em boa parte **extra-articular**: pode não dar derrame nem sinal do coxim gorduroso.
 
-!figura 15-6
+!figura 16-2
 Inserções de partes moles: no AP do úmero distal, a relação da apófise com as origens dos músculos mediais do antebraço; a origem do colateral ulnar fica fora da cápsula, cujo limite aparece pontilhado.
 !fim
 
 ## A ossificação
 
-O núcleo começa a ossificar entre **4 e 6 anos**, como um pequeno núcleo oval excêntrico, e **funde-se por volta dos 15 anos**, o que faz dele o **último centro secundário a se fundir com a metáfise do úmero distal**. Ao amadurecer, desenvolve margens escleróticas paralelas dos dois lados da fise. Três armadilhas de imagem (figura 15-5):
+O núcleo começa a ossificar entre **4 e 6 anos**, como um pequeno núcleo oval excêntrico, e **funde-se por volta dos 15 anos**, o que faz dele o **último centro secundário a se fundir com a metáfise do úmero distal**. Ao amadurecer, desenvolve margens escleróticas paralelas dos dois lados da fise. Três armadilhas de imagem (figura 16-1):
 
 - a ossificação pode ser **irregular e parecer fragmentada**, e ser lida como fratura;
 - por ser posterior, num AP levemente oblíquo o núcleo **se esconde atrás da metáfise**;
@@ -177,7 +179,7 @@ O núcleo começa a ossificar entre **4 e 6 anos**, como um pequeno núcleo oval
 
 A regra prática que fecha o raciocínio está no quadro de armadilhas: **toda criança com mais de 5 anos tem o núcleo do epicôndilo medial**, e ele precisa ser visto no lugar depois de reduzir uma luxação.
 
-!figura 15-5
+!figura 16-1
 Ossificação do epicôndilo medial: o núcleo oval excêntrico, as margens escleróticas paralelas que surgem com a maturação, o núcleo escondido atrás da metáfise num AP levemente oblíquo, a posição posterior vista num perfil oblíquo e a linha da metáfise que imita um traço de fratura no AP.
 !fim
 
@@ -191,9 +193,9 @@ alerta: O TARO 2008 (pediatria-0839) não tem gabarito no acervo; pelo capítulo
 
 # Nervos e artéria na luxação {radar=confirmado}
 
-Na luxação posterolateral, a face medial do úmero distal sai entre o **pronador redondo** (atrás) e o **braquial** (na frente); o braquial, com pouco tendão distal, rompe fácil, e a rotura da cápsula anterior fica no mesmo lugar. O **nervo mediano e a artéria braquial** passam a correr diretamente sobre o úmero distal, no subcutâneo, presos pelo lacerto fibroso (figura 15-9). O **ulnar** fica em risco atrás do epicôndilo medial.
+Na luxação posterolateral, a face medial do úmero distal sai entre o **pronador redondo** (atrás) e o **braquial** (na frente); o braquial, com pouco tendão distal, rompe fácil, e a rotura da cápsula anterior fica no mesmo lugar. O **nervo mediano e a artéria braquial** passam a correr diretamente sobre o úmero distal, no subcutâneo, presos pelo lacerto fibroso (figura 16-17). O **ulnar** fica em risco atrás do epicôndilo medial.
 
-!figura 15-9
+!figura 16-17
 Lesões associadas à luxação do cotovelo: cabeça do rádio e olécrano desviados para posterolateral; braquial estirado sobre a superfície articular do úmero; origens flexoras rotas ou arrancadas com o epicôndilo medial; mediano e artéria braquial estirados sobre o côndilo medial e presos pelo lacerto fibroso; côndilo medial no subcutâneo entre braquial e pronador redondo; colaterais laterais arrancando cartilagem ou osso do côndilo lateral.
 !fim
 
@@ -214,7 +216,7 @@ armadilha: Interósseos anterior ou posterior: o capítulo não os cita entre as
 
 ## O mediano encarcerado
 
-FOURRIER descreveu três tipos (figura 15-21), e AL-QATTAN acrescentou um quarto:
+FOURRIER descreveu três tipos (figura 16-23), e AL-QATTAN acrescentou um quarto:
 
 !tabela Encarceramento do nervo mediano na luxação do cotovelo
 | Tipo | O que acontece | Tratamento |
@@ -230,7 +232,7 @@ No tipo 1, a tróclea funciona como um **gancho**: se o desvio lateral do rádio
 Quando suspeitar: piora do mediano depois da redução, redução incongruente, dor intensa e resistência no arco de flexão e extensão, disestesia dolorosa com o movimento. Para RAO e CRAWFORD, **fratura do epicôndilo medial com disfunção importante do mediano** é indicação absoluta de explorar o nervo; a RM ajuda a ver o trajeto.
 
 !figura 15-22
-Sinal de MATEV: depressão de margens escleróticas na face posterior do côndilo medial, onde o mediano encarcerado foi pressionado contra o osso.
+Figura da 9ª edição; a 10ª descreve o sinal de MATEV no texto, sem figura (PDF 1547). Sinal de MATEV: depressão de margens escleróticas na face posterior do côndilo medial, onde o mediano encarcerado foi pressionado contra o osso.
 !fim
 
 ## A artéria braquial
@@ -254,9 +256,9 @@ alerta: O TARO 2006 (ombro-cotovelo-0508) não tem gabarito no acervo; pelo cap�
 
 ## Duas teorias para o mesmo resultado
 
-O'DRISCOLL propôs que a maioria das luxações posteriores começa pela **rotura dos ligamentos laterais** e progride pela cápsula anterior até os **ligamentos mediais**, a última etapa. O capítulo aceita essa sequência para a rara luxação **posteromedial**, mas lembra que estudos clínicos e de RM mostram lesão do colateral **medial** mais frequente que a do lateral, o que levou a uma teoria concorrente: a luxação posterior e posterolateral começa por um **valgo** que rompe o colateral medial ou arranca a apófise do epicôndilo; o rádio e a ulna desviam para lateral, o coronoide se desencaixa e o antebraço gira usando o **tendão do bíceps como eixo**; com abdução, extensão e rotação externa do antebraço e rotura das partes moles anteriores, completa-se a luxação (figura 15-8). Por outro lado, MCKEE achou lesão do complexo colateral lateral em todos os 62 cotovelos operados de adultos e adolescentes com luxação.
+O'DRISCOLL propôs que a maioria das luxações posteriores começa pela **rotura dos ligamentos laterais** e progride pela cápsula anterior até os **ligamentos mediais**, a última etapa. O capítulo aceita essa sequência para a rara luxação **posteromedial**, mas lembra que estudos clínicos e de RM mostram lesão do colateral **medial** mais frequente que a do lateral, o que levou a uma teoria concorrente: a luxação posterior e posterolateral começa por um **valgo** que rompe o colateral medial ou arranca a apófise do epicôndilo; o rádio e a ulna desviam para lateral, o coronoide se desencaixa e o antebraço gira usando o **tendão do bíceps como eixo**; com abdução, extensão e rotação externa do antebraço e rotura das partes moles anteriores, completa-se a luxação (figura 16-16). Por outro lado, MCKEE achou lesão do complexo colateral lateral em todos os 62 cotovelos operados de adultos e adolescentes com luxação.
 
-!figura 15-8
+!figura 16-16
 Mecanismo da luxação posterior: a extensão forçada rompe os colaterais mediais, com o valgo natural acentuando a força; a inclinação lateral da crista medial da tróclea empurra a ulna para posterolateral, com o bíceps como fulcro; o rádio e a ulna ficam impactados atrás, presos pela contração do bíceps e do tríceps.
 !fim
 
@@ -293,7 +295,7 @@ Antes das forças principais, o antebraço é **hipersupinado** para soltar o co
 
 Vários autores condenam a **hiperextensão** antes de reduzir. LOOMIS mostrou que, com o coronoide travado atrás do úmero, estender o cotovelo **multiplica até cinco vezes** a força sobre os músculos anteriores; o braquial pode se romper e as estruturas da fossa antecubital sofrem. A hiperextensão, sobretudo com **pronação**, também favorece o encarceramento do mediano. Com o cotovelo fletido, a força sobre os músculos é igual à de tração.
 
-!figura 15-13
+!figura 16-19
 Forças para reduzir a luxação posterior: hipersupinação do antebraço para destravar a cabeça do rádio; forças simultâneas ao longo do úmero e do antebraço; flexão do cotovelo para estabilizar quando o coronoide passa para distal do úmero.
 !fim
 
@@ -308,7 +310,7 @@ Forças para reduzir a luxação posterior: hipersupinação do antebraço para 
 
 Em qualquer técnica, o antebraço fica **supinado**, a estabilidade é testada (radioscopia ajuda a ver a congruência de forma dinâmica e a achar fraturas que a sobreposição escondia), e radiografias formais confirmam a redução. Sem relaxamento suficiente no pronto-socorro, a redução vai para o centro cirúrgico com anestesia geral.
 
-!figura 15-15
+!figura 16-20
 Redução pelas técnicas de empurrar: no método de LAVINE, a criança fica no colo dos pais com o cotovelo sobre o encosto da cadeira, o polegar empurra o olécrano e a outra mão traciona o antebraço; na técnica de MEYN, o paciente fica em decúbito ventral com o braço pendente.
 !fim
 
@@ -316,7 +318,7 @@ Redução pelas técnicas de empurrar: no método de LAVINE, a criança fica no 
 conceito: A tração de PARVIN é feita com o cotovelo fletido perto de 90 graus, tração no eixo do úmero e do antebraço e contraforça; o capítulo a prefere a partir dos 10 anos e reserva a técnica de empurrar o olécrano, com a criança no colo dos pais, para os de 9 anos ou menos.
 como: A prova Ortopedia sem ano cruzou decúbito dorsal ou ventral com cotovelo em flexão ou extensão para a manobra de PARVIN (gabarito: ventral e flexão).
 armadilha: Cotovelo em extensão: a hiperextensão é proibida; multiplica a força sobre o braquial e expõe o mediano.
-alerta: O gabarito (trauma-0959) põe a manobra de PARVIN em decúbito ventral. O capítulo diz que a técnica de tração pode ser feita em supino ou em prono e desenha a de PARVIN em supino, com contraforça por lençol na axila (figura 15-20). A flexão do cotovelo é ponto comum; a posição do paciente não é exclusiva no livro.
+alerta: O gabarito (trauma-0959) põe a manobra de PARVIN em decúbito ventral. O capítulo diz que a técnica de tração pode ser feita em supino ou em prono e desenha a de PARVIN em supino, com contraforça por lençol na axila (figura 16-21). A flexão do cotovelo é ponto comum; a posição do paciente não é exclusiva no livro.
 !fim
 
 ## Quando operar
@@ -375,20 +377,20 @@ A fratura da apófise do epicôndilo medial é cerca de **14% das fraturas do ú
 Na luxação, a deformidade e a dor distraem e o epicôndilo **passa despercebido**: procure ativamente (dor à palpação medial). O **teste de estresse em valgo pela gravidade** (WOODS e TULLOS, SCHWAB): paciente em supino, braço abduzido 90 graus, ombro e braço em rotação externa de 90 graus, cotovelo fletido **pelo menos 15 graus** para tirar o olécrano da fossa; se instável, o peso do antebraço abre o lado medial. **Documente a função do ulnar** antes de tratar.
 
 - AP e perfil de boa qualidade; **oblíquas e comparativas** quando a imagem é duvidosa.
-- Sem desvio: alargamento ou irregularidade da linha apofisária pode ser a única pista. Com desvio: perda do **paralelismo das margens escleróticas** (figura 15-39). Muito desviado: o fragmento roda para medial, o desvio costuma passar de 5 mm, e ele continua acima da interlinha.
+- Sem desvio: alargamento ou irregularidade da linha apofisária pode ser a única pista. Com desvio: perda do **paralelismo das margens escleróticas** (figura 16-6). Muito desviado: o fragmento roda para medial, o desvio costuma passar de 5 mm, e ele continua acima da interlinha.
 - **Encarcerado:** pode ficar escondido pela ulna ou pelo úmero; a pista é a **ausência do epicôndilo** no lugar (atrás e medial à metáfise). Fragmento na altura da articulação é **intra-articular até prova em contrário**; o cotovelo costuma estar incompletamente reduzido, a extensão bloqueada e, se antigo, o fragmento funde ao coronoide e só o alargamento medial denuncia. **Tomografia** resolve os casos confusos.
 - **Coxim gorduroso:** pode ser negativo mesmo com desvio: na avulsão pouco desviada, os tecidos lesados são extra-articulares; na luxação, a cápsula rota não contém a hemartrose.
 - **A medida engana:** PAPPAS mostrou baixa concordância entre observadores; EDMONDS achou na tomografia desvios bem maiores que na radiografia (seis com mais de 10 mm em fraturas tidas como pouco desviadas). KLATT e AOKI deram referências: no AP, o centro do epicôndilo fica 0,5 mm abaixo da linha da parte inferior da fossa do olécrano; no perfil, 1,2 mm à frente da linha umeral posterior.
 
 ## Diagnóstico diferencial
 
-O principal é a **fratura da fise do côndilo medial** (capítulo 17), intra-articular, especialmente quando os centros secundários ainda não ossificaram. **Hemartrose importante** ou **fragmento metafisário grande** junto do "epicôndilo" pedem artrografia ou RM (figura 15-38: menina de 7 anos com suposta fratura do epicôndilo que era do côndilo medial). Podem acompanhar: colo do rádio, olécrano, coronoide.
+O principal é a **fratura da fise do côndilo medial** (capítulo 17), intra-articular, especialmente quando os centros secundários ainda não ossificaram. **Hemartrose importante** ou **fragmento metafisário grande** junto do "epicôndilo" pedem artrografia ou RM (figura 15-38 da 9ª edição: menina de 7 anos com suposta fratura do epicôndilo que era do côndilo medial). Podem acompanhar: colo do rádio, olécrano, coronoide.
 
-!figura 15-41
+!figura 16-8
 Luxação com encarceramento: no AP, luxação posterolateral com o epicôndilo medial dentro da articulação impedindo a redução fechada; no perfil, o fragmento entre o úmero e o olécrano.
 !fim
 
-!figura 15-43
+!figura 16-10
 Menino de 13 anos com luxação posterolateral: no AP e no perfil a fratura não aparece, mas o núcleo do epicôndilo medial falta no lugar; a tomografia mostra o fragmento na articulação; após retirada e fixação com um parafuso com arruela na coluna medial, consolidação e retorno às atividades.
 !fim
 
@@ -397,7 +399,7 @@ conceito: O fragmento do epicôndilo medial encarcerado na articulação é a ú
 como: A TEPOP 2024 pôs como certa a afirmação de que há consenso de cirurgia no encarceramento, com distratores sobre pseudartrose sintomática, desvio de 2 cm e instabilidade tardia por não excisar o fragmento. O TARO 2006 afirmou, em certo ou errado, que a manobra de redução é a causa da interposição intra-articular do fragmento.
 armadilha: "Redução aberta reservada para desvio acima de 2 cm": não há esse corte; o consenso é abaixo de 2 mm (sem cirurgia) e no encarceramento (cirurgia).
 armadilha: "Pseudartrose frequente e muito sintomática": a pseudartrose é comum no tratamento sem cirurgia, mas quase sempre pouco sintomática.
-alerta: O TARO 2006 (pediatria-0817) não tem gabarito no acervo. O capítulo descreve o fragmento preso tanto antes da manobra (impedindo a redução, figura 15-41) quanto depois dela (figura 15-18), e até sem luxação franca (teoria do vácuo de PATRICK); não sustenta a redução como "a" causa do encarceramento.
+alerta: O TARO 2006 (pediatria-0817) não tem gabarito no acervo. O capítulo descreve o fragmento preso tanto antes da manobra (impedindo a redução, figura 16-8) quanto depois dela (figura 15-18 da 9ª edição), e até sem luxação franca (teoria do vácuo de PATRICK); não sustenta a redução como "a" causa do encarceramento.
 !fim
 
 # Fratura do epicôndilo medial: indicações, técnica e complicações {radar=oportunidade}
@@ -430,7 +432,7 @@ armadilha: Tratar sem cirurgia o epicôndilo desviado do arremessador de alta de
 
 ## A técnica dos autores
 
-- Decúbito **ventral** (ou "lateral solto"), braço em **figura de 4** com o antebraço sobre as costas: o cotovelo fica em **varo**, o que facilita a redução e dá acesso medial direto (figura 15-42).
+- Decúbito **ventral** (ou "lateral solto"), braço em **figura de 4** com o antebraço sobre as costas: o cotovelo fica em **varo**, o que facilita a redução e dá acesso medial direto (figura 16-9).
 - Incisão longitudinal de **5 cm** logo atrás do epicôndilo; o fragmento costuma estar **desviado para distal e rodado para anterior**.
 - **Expor o ulnar** e abrir a fáscia sobre ele (retináculo do túnel cubital); **sem transposição** de rotina; proteger os cutâneos mediais do antebraço.
 - Reduzir puxando a **fáscia e a origem tendínea** dos flexores e pronadores (não o osso, que fragmenta), com o cotovelo **fletido** e o antebraço **pronado**.
@@ -438,7 +440,7 @@ armadilha: Tratar sem cirurgia o epicôndilo desviado do arremessador de alta de
 - **Não buscar a cortical lateral:** o **nervo radial** passa ali; MARCU relatou dois casos de lesão com parafuso canulado.
 - Tala posterior por **5 a 10 dias**, depois tala removível ou órtese articulada e movimento ativo precoce. Epicôndilo cominuto: arruela com espículas ou excisão com reinserção do ligamento.
 
-!figura 15-42
+!figura 16-9
 Paciente em decúbito ventral com o ombro em rotação interna, braço sobre mesa de mão ou mesa radiotransparente; fio-guia canulado mantendo a redução com o nervo ulnar próximo; parafuso canulado de 4,5 mm com arruela fixando o epicôndilo.
 !fim
 
@@ -478,17 +480,17 @@ alerta: O capítulo 15 não dá a direção da luxação congênita da cabeça d
 
 Rara: **5 de 317 (pouco mais de 1%)**, com **mais complicações** que a posterior (rotura ou trombose da braquial, fraturas). Vem de **golpe direto na face posterior do cotovelo fletido** (hiperextensão foi implicada num estudo). Fraturas associadas são comuns: avulsão do tríceps com lasca do olécrano ou fratura do olécrano (que pode não aparecer abaixo de 10 anos), tróclea, capítulo, epicôndilo lateral. O cotovelo chega **em extensão**, com plenitude na fossa antecubital e edema marcado; o rádio e a ulna vão, em geral, para **anteromedial**. Redução: tração no eixo do úmero com o cotovelo semifletido, depois força do antebraço em direção ao cotovelo, empurrando o úmero distal para a frente; imobilizar **em alguma extensão** por 1 a 3 semanas.
 
-!figura 15-31
+!figura 16-30
 Redução da luxação anterior: tração longitudinal no eixo do úmero com o cotovelo semifletido; com o olécrano distal ao úmero, o úmero é empurrado para a frente enquanto se aplica força proximal no eixo do antebraço; imobilização em alguma extensão.
 !fim
 
 ## Luxações medial e lateral
 
-Raras (MURPHY: 10 mediais e nenhuma lateral em 145). Na lateral **incompleta**, a incisura semilunar articula com o sulco capitulotroclear, a cabeça do rádio fica saliente e a **flexão e a extensão podem estar boas**, o que faz a lesão passar. O **AP é diagnóstico**; no perfil o cotovelo pode parecer reduzido. Redução fechada em quase todos (tração e pressão contrária ao desvio); a figura 15-32 mostra uma lateral com epicôndilo medial encarcerado que exigiu redução aberta.
+Raras (MURPHY: 10 mediais e nenhuma lateral em 145). Na lateral **incompleta**, a incisura semilunar articula com o sulco capitulotroclear, a cabeça do rádio fica saliente e a **flexão e a extensão podem estar boas**, o que faz a lesão passar. O **AP é diagnóstico**; no perfil o cotovelo pode parecer reduzido. Redução fechada em quase todos (tração e pressão contrária ao desvio); a figura 16-31 mostra uma lateral com epicôndilo medial encarcerado que exigiu redução aberta.
 
 ## Luxação divergente
 
-Luxação posterior com rotura da membrana interóssea, **cabeça do rádio para lateral e ulna para medial** (figura 15-33). Rara, por alta energia; associa-se a fraturas do colo do rádio, da ulna proximal e do coronoide. Em cadáver, só se reproduziu soltando todos os estabilizadores e a membrana até o terço distal do antebraço. Redução fechada fácil sob anestesia geral: **tração longitudinal com o cotovelo semiestendido, apertando o rádio e a ulna um contra o outro**; imobilizar a 90 graus em neutro e mover em 2 a 3 semanas. Cirurgia se a redução falhar (NANNO achou o feixe anterior do colateral medial interposto) ou houver fratura desviada.
+Luxação posterior com rotura da membrana interóssea, **cabeça do rádio para lateral e ulna para medial** (figura 16-32). Rara, por alta energia; associa-se a fraturas do colo do rádio, da ulna proximal e do coronoide. Em cadáver, só se reproduziu soltando todos os estabilizadores e a membrana até o terço distal do antebraço. Redução fechada fácil sob anestesia geral: **tração longitudinal com o cotovelo semiestendido, apertando o rádio e a ulna um contra o outro**; imobilizar a 90 graus em neutro e mover em 2 a 3 semanas. Cirurgia se a redução falhar (NANNO achou o feixe anterior do colateral medial interposto) ou houver fratura desviada.
 
 ## Translocação radioulnar proximal
 
@@ -504,8 +506,8 @@ O **cotovelo da liga infantil** (Little League elbow) é a lesão crônica por t
 - **Tratamento:** parar de arremessar até o epicôndilo e os flexores ficarem indolores, anti-inflamatórios, fortalecimento, correção da técnica e retorno gradual com contagem. Pseudartrose crônica por fratura de estresse no arremessador mais velho pode exigir **parafuso com arruela**.
 - **Fratura através da apófise:** rara, por golpe direto ou avulsão parcial, vista sobretudo em arremessadores (SILBERSTEIN).
 
-!figura 15-37
-Avulsão muscular: avulsão isolada do epicôndilo medial que ocorreu de repente num arremessador de 14 anos da liga infantil ao lançar uma bola com efeito.
+!figura 16-5
+Avulsão muscular: avulsão isolada do epicôndilo medial que ocorreu de repente num quarterback de 13 anos depois de um passe longo (10ª edição, PDF 1485).
 !fim
 
 !questoes relacionadas=pediatria-0123
@@ -522,5 +524,5 @@ alerta: O capítulo descreve a osteocondrite por compressão do côndilo lateral
 - **Complicações:** **rigidez** é a regra (até 10 graus de extensão); recidiva **0,6%**; sinostose com fratura do colo do rádio.
 - **Epicôndilo medial:** apófise de tração, posterior, origem do colateral ulnar fora da cápsula; ossifica aos **4 a 6 anos**, funde aos **15** (**último**); **acima de 5 anos o núcleo tem de estar lá**; pico de fratura aos **11 e 12**, meninos, metade com luxação.
 - **Tratamento do epicôndilo:** menos de 2 mm sem cirurgia; **encarceramento = única indicação absoluta**; ROBERTS (valgo, supinação, extensão do punho e dedos, 24 h, cerca de 40%); parafuso único na coluna medial, **sem cortical lateral (radial)**.
-- **Pronação dolorosa:** **ligamento anular**, **pronação + extensão + tração**, **2 a 3 anos**, meninas, esquerdo; recidiva até 2 anos; **hiperpronação primeiro**, supinação com flexão depois de 10 minutos; sem radiografia na história típica até 5 anos; sem imobilização no primeiro episódio.
+- **Pronação dolorosa:** **ligamento anular**, **pronação + extensão + tração**, **2 a 3 anos**, meninas, esquerdo; recidiva até 2 anos; **supinação com hiperflexão primeiro**, hiperpronação com o cotovelo estendido depois de 10 minutos (MACIAS: 98% contra 86%); sem radiografia na história típica até 5 anos; sem imobilização no primeiro episódio.
 - **Congênita:** cabeça do rádio **hipoplásica e em cúpula**, côndilos atróficos, contralateral igual.
