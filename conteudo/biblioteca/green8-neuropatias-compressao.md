@@ -1,6 +1,6 @@
 ---
 id: green8-neuropatias-compressao
-versao: 2
+versao: 3
 titulo: Neuropatias de compressão no membro superior
 especialidade: mao
 acesso: gratis
@@ -62,7 +62,7 @@ armadilha: Inverter CHOW e AGEE.
 # Mediano proximal e interósseo anterior {radar=confirmado}
 
 - **Acima do cotovelo:** **ligamento de STRUTHERS**, com processo supracondilar. O mediano fica profundo, e a artéria braquial, superficial ao ligamento, que forma uma origem acessória do pronador redondo (Fig. 28.10).
-- **No antebraço:** é o local mais comum de compressão proximal.
+- **No antebraço:** é o local mais comum de compressão proximal. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, p. 3558), lista os sítios da síndrome do pronador: pronador redondo, lacerto fibroso e arco fibroso do flexor superficial, além de anomalias (pronador hipertrófico ou de origem alta, bandas fibrosas dentro dele, mediano passando atrás das duas cabeças, arco tendíneo acessório do flexor radial do carpo vindo da ulna); os testes de cada sítio estão na p. 3559.
   - **Pronador redondo:** na intersecção das cabeças, a 3 a 7,5 cm da linha epicondilar.
   - **Lacertus fibroso.**
   - **Arco do flexor superficial dos dedos:** a 6,5 cm da linha epicondilar.
@@ -92,7 +92,7 @@ armadilha: Atribuir à síndrome do pronador o quadro motor puro da pinça, que 
 !fim
 
 - **O ponto mais significativo** de aprisionamento, pelo teste do colapso sensorial, é a **fáscia distal do antebraço espessada**.
-- **O dorso:** parestesia dorsal e palmar no anular e no mínimo indica compressão **acima do punho**, porque o **ramo cutâneo dorsal sai vários centímetros proximal à prega**.
+- **O dorso:** parestesia dorsal e palmar no anular e no mínimo indica compressão **acima do punho**, porque o **ramo cutâneo dorsal sai vários centímetros proximal à prega**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 82, p. 3553), diz o mesmo: com queixa **palmar e dorsal juntas**, o ulnar em geral está comprometido **proximal à saída do ramo dorsal**.
 - **A garra:** a da compressão distal é **pior**, porque o flexor profundo, poupado, puxa sem oposição; há FROMENT e atrofia interóssea.
 - **Tratamento não operatório:** nos casos leves e com causa precipitante, como o ciclismo de longa distância, tala em posição neutra e luva acolchoada.
 
@@ -223,21 +223,23 @@ alerta: O Campbell 15 não descreve resposta à infiltração por sexo e idade (
 | compressão com o polegar **proximal e lateral** à borda proximal do pronador | positivo com dor e parestesia em **30 segundos** |
 !fim
 
+O Green's Operative Hand Surgery, 7ª edição (cap. 28, p. 936), descreve a pronação resistida de outro modo: **antebraço em supinação total e cotovelo estendido**, às vezes com flexão resistida do cotovelo ou do flexor do dedo médio. As duas versões aparecem nas provas; a do cotovelo fletido e estendido aos poucos é a do Campbell.
+
 O pronador pode estar tenso ou aumentado, com TINEL na massa proximal e, às vezes, uma **depressão no contorno** do antebraço sobre o lacerto. A condução costuma ser **normal**, e a infiltração guiada por ultrassom na borda do pronador ajuda. A descompressão do caso refratário alivia **80% a 92%**, mas algum sintoma persiste em **66%**. Com túnel do carpo e pronador juntos, a condução decide: **positiva para o carpo**, libera-se o carpo esperando a melhora proximal; **negativa**, explora-se o antebraço (cap. 67, p. 3011); no algoritmo 82.16, alívio transitório com a infiltração guiada indica a descompressão do pronador (cap. 82, p. 3560).
 
 **O interósseo anterior.** Quadro motor puro: dificuldade em escrever e pinçar, **sem perda sensitiva**, porque suas fibras sensitivas são só articulares (Green, cap. 28, p. 936 a 937). PARSONAGE e TURNER descreveram a paralisia espontânea, a amiotrofia nevrálgica, que vem depois de virose, com **dor intensa por dias ou semanas**; o tratamento precoce usa corticoide em dose alta e antivirais, a recuperação pode levar **até 1 ano**, e sem reinervação considera-se exploração ou transferência aos **7 a 10 meses**. O plano de SPINNER (Campbell, cap. 82, p. 3559): paralisia espontânea, não operatório; **sem melhora clínica ou eletromiográfica em 12 semanas**, exploração; ferida penetrante, reparo primário; lesão irreparável, transferências.
 
 !questoes central=mao-0012 relacionadas=mao-0308,ombro-cotovelo-0116
-conceito: Pronação resistida com cotovelo fletido e estendido aos poucos localiza no pronador; flexão do FSD do médio, no arco do FSD; flexão e supinação do cotovelo, no lacerto; a compressão do pronador é proximal e lateral à borda do músculo por 30 s; o interósseo anterior enfraquece FPD do indicador e do médio, FLP e PQ.
+conceito: Pronação resistida com cotovelo fletido e estendido aos poucos (Campbell; no Green, supinação total e cotovelo estendido) localiza no pronador; flexão do FSD do médio, no arco do FSD; flexão e supinação do cotovelo, no lacerto; a compressão do pronador é proximal e lateral à borda do músculo por 30 s; o interósseo anterior enfraquece FPD do indicador e do médio, FLP e PQ.
 como: O TARO 2019 pediu a manobra que detecta compressão no pronador redondo; o TEOT 2024, onde pôr o polegar no teste de compressão do pronador; uma prova de Ortopedia, com seta no interósseo anterior, os músculos que enfraquecem.
-armadilha: Fazer a pronação resistida com o cotovelo já estendido, apertar distal e medial ao pronador, ou marcar os flexores superficiais como músculos do interósseo anterior.
+armadilha: Misturar as duas versões da pronação resistida (Campbell, cotovelo fletido e estendido aos poucos; Green, supinação total e cotovelo estendido), apertar distal e medial ao pronador, ou marcar os flexores superficiais como músculos do interósseo anterior.
 !fim
 
 # Túnel cubital: exame, eletrodiagnóstico e cirurgia {radar=confirmado}
 
 **Por que o cotovelo.** O Green's Operative Hand Surgery, 7ª edição (cap. 28, p. 942), explica: o nervo é **superficial** e passa **atrás do eixo do cotovelo**, então a flexão o alonga e fecha o túnel; em teoria, **só a transposição muda a tensão com a flexão**. A arcada de STRUTHERS fica cerca de **8 cm acima do epicôndilo medial**, e o **cutâneo medial do antebraço** cruza o campo em **90%** dos casos, com o ramo distal cerca de **3,5 cm abaixo** do epicôndilo (p. 941 e 944). A subluxação ou luxação recorrente do ulnar aparece em **16,2% de 2000 cotovelos**, e a subluxação é mais lesiva (Campbell's Operative Orthopaedics, 15ª ed., cap. 67, p. 3007).
 
-**Os testes.** No teste de flexão do Campbell (cap. 67, p. 3008), com o cotovelo totalmente fletido o paciente refere dormência no mínimo e no anular, muitas vezes **em 1 minuto**; somado à percussão positiva no epicôndilo, sugere fortemente compressão significativa. O Green prefere flexão total com antebraço e punho neutros e **pressão digital proximal ao túnel**, checando a **subluxação** (p. 927 e 940). O **teste de OCHI** (ombro a 90 graus de abdução e rotação interna máxima, cotovelo a 90 graus) é **mais sensível** que a flexão, com **80%** sintomáticos em **10 segundos**. O teste de arranhadura com colapso de MACKINNON localiza a **banda de OSBORNE** como ponto de compressão máxima (Campbell, p. 3008; Green, p. 956).
+**Os testes.** No teste de flexão do Campbell (cap. 67, p. 3008), com o cotovelo totalmente fletido o paciente refere dormência no mínimo e no anular, muitas vezes **em 1 minuto**; somado à percussão positiva no epicôndilo, sugere fortemente compressão significativa. O Green prefere flexão total com antebraço e punho neutros e **pressão digital proximal ao túnel**, checando a **subluxação** (p. 927 e 940). O **teste de OCHI** (ombro a 90 graus de abdução e rotação interna máxima, cotovelo a 90 graus) é **mais sensível** que a flexão, com **80%** sintomáticos em **10 segundos**. O Campbell (p. 3008) só descreve o teste de arranhadura com colapso de MACKINNON: arranha-se de leve a pele sobre o ponto suspeito enquanto o paciente faz rotação externa resistida dos dois ombros, e uma perda breve da resistência indica a alodinia da compressão. A localização da **banda de OSBORNE** como ponto de compressão máxima vem do estudo de BROWN e colaboradores, citado pelo Green (cap. 28, p. 927), que considera o teste útil sobretudo com sintomas difusos, vários níveis de compressão e condução normal.
 
 **Duas escalas.** Além da McGOWAN motora do Green, a Tabela 82.3 do Campbell (McGOWAN e DELLON, cap. 82, p. 3554) junta sensibilidade e força: **leve**, parestesia intermitente e fraqueza subjetiva; **moderada**, parestesia intermitente e fraqueza mensurável; **grave**, parestesia **persistente** e fraqueza mensurável. É esta versão que explica gabaritos com parestesia no grau III.
 
@@ -275,6 +277,7 @@ O Green's Operative Hand Surgery, 7ª edição (cap. 31, p. 1046 a 1047), reúne
 | **BOUVIER** | bloquear a hiperextensão da MF em leve flexão e a extensão ativa estende as IF | bandeleta central e laterais íntegras; basta corrigir a MF |
 | **FROMENT** | flexão forte da IF do polegar ao pinçar papel | adutor e 1º interósseo dorsal parados; o flexor longo do polegar compensa |
 | **WARTENBERG** | mínimo estendido não aduz até o anular | 3º interósseo palmar parado; o extensor do mínimo abduz sem oposição |
+| PITRES-TESTUT | mão espalmada na mesa, dedos abduzidos; o médio é desviado de um lado para o outro | testa o 2º e o 3º interósseos dorsais; feito o mais rápido possível e comparado com a outra mão, revela perdas motoras sutis |
 | RICHE-CANNIEU | garra ausente apesar de lesão completa | conexão motora entre ulnar e mediano na mão |
 !fim
 
@@ -379,7 +382,7 @@ alerta: O Campbell 15 associa o cisto espinoglenoidal à lesão labral posterior
 | neurogênico eletricamente negativo | **mais de 95%** | dormência na mão, dor no ombro e pescoço, piora posicional |
 !fim
 
-**As causas da clavícula.** Além da costela cervical, causam a forma arterial a **pseudartrose e a consolidação viciosa da clavícula**, a **subluxação pós-traumática da esternoclavicular** e as fraturas de costela (Green, cap. 29, p. 960). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 63, p. 2873), põe o desfiladeiro entre os sintomas da consolidação viciosa da clavícula. Na **PAGET-SCHROETTER**, arremessadores e nadadores estão em risco, e a **inserção hipertrofiada do subclávio** comprime especificamente a veia. Dormência ulnar com clínica de desfiladeiro e eletrodiagnóstico negativo é **desfiladeiro até prova em contrário** (Green, p. 960 a 964).
+**As causas da clavícula.** Além da costela cervical, causam a forma arterial a **pseudartrose e a consolidação viciosa da clavícula**, a **subluxação pós-traumática da esternoclavicular** e as fraturas de costela (Green, cap. 29, p. 960). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 63, p. 2873), põe o desfiladeiro entre os sintomas da consolidação viciosa da clavícula. Na **PAGET-SCHROETTER**, arremessadores e nadadores estão em risco, e a **inserção hipertrofiada do subclávio** comprime especificamente a veia. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 32, p. 987 aprox.; o PDF não imprime a página), acrescenta a **luxação esternoclavicular posterior não reduzida**: entre suas complicações estão o **desfiladeiro torácico tardio**, problemas vasculares tardios, comprometimento respiratório e dispneia aos esforços; os autores trataram com ressecção da clavícula medial e reconstrução pacientes com edema e descoloração do braço, sinais de **trombose de esforço** e disfagia causados pela clavícula medial deslocada para trás. A lista de complicações do capítulo (p. 1007 aprox.) inclui ainda obstrução da veia subclávia por lesão fisária SALTER-HARRIS II não reduzida e desfiladeiro grave com edema e cianose do membro. Dormência ulnar com clínica de desfiladeiro e eletrodiagnóstico negativo é **desfiladeiro até prova em contrário** (Green, p. 960 a 964).
 
 !tabela Os três espaços do desfiladeiro (Green, cap. 29, p. 962 a 964)
 | Espaço | Paredes | O que importa |
@@ -414,4 +417,4 @@ Para cada formigamento ou fraqueza, três perguntas: **qual território** (palma
 
 > **Na prova:** **zona II** = motor puro; **dorso** = acima do punho; **cubital** = FUC e OSBORNE, flexão fecha; **pronador** = FSD, lacertus, GANTZER; **interósseo posterior** = supinador; **WARTENBERG** = braquiorradial e ERLC.
 
-> **Na prova, o que a versão 2 acrescenta:** **DURKAN** (30 s, 87% e 90%) vence PHALEN (até 60 s) e TINEL; epineuro sofre com **20 a 30 mmHg**; ultrassom **acima de 10 mm²** no pisiforme; **três fatores** do Box 82.3 preveem falha do não operatório; endoscópica = **retorno 2 semanas antes**, mais lesão nervosa e revisão; pronação resistida com cotovelo **fletido e estendido aos poucos** localiza o pronador, compressão **proximal e lateral**; revisão do ulnar in situ em **menores de 50 anos com sintomas leves**; BOUVIER corrige a garra, DUCHENNE é a garra; GUYON **mais complacente**; túnel radial dói **3 a 4 cm** abaixo do epicôndilo; cisto espinoglenoidal = **infraespinal isolado**; quadrangular = **axilar + circunflexa posterior**; desfiladeiro = **interescalênico**, PAGET-SCHROETTER = **veia subclávia**, ROOS **3 minutos**.
+> **Na prova, o que a versão 2 acrescenta:** **DURKAN** (30 s, 87% e 90%) vence PHALEN (até 60 s) e TINEL; epineuro sofre com **20 a 30 mmHg**; ultrassom **acima de 10 mm²** no pisiforme; **três fatores** do Box 82.3 preveem falha do não operatório; endoscópica = **retorno 2 semanas antes**, mais lesão nervosa e revisão; pronação resistida com cotovelo **fletido e estendido aos poucos** localiza o pronador (Campbell; no Green, cotovelo estendido), compressão **proximal e lateral**; revisão do ulnar in situ em **menores de 50 anos com sintomas leves**; BOUVIER corrige a garra, DUCHENNE é a garra; GUYON **mais complacente**; túnel radial dói **3 a 4 cm** abaixo do epicôndilo; cisto espinoglenoidal = **infraespinal isolado**; quadrangular = **axilar + circunflexa posterior**; desfiladeiro = **interescalênico**, PAGET-SCHROETTER = **veia subclávia**, ROOS **3 minutos**.

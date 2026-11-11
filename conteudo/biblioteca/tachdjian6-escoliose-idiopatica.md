@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-escoliose-idiopatica
-versao: 1
+versao: 2
 titulo: Escoliose idiopática
 especialidade: coluna
 acesso: gratis
@@ -29,7 +29,7 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 132) define escoliose como o d
 
 A escoliose idiopática, de causa não estabelecida, é a mais comum (cerca de **80% das estruturais**) e só se diagnostica depois de excluir causas neurológicas, síndromes e anomalias congênitas. A do adolescente (AIS) é reconhecida depois dos 10 anos e antes da maturidade; a infantil (antes dos 3 anos) e a juvenil (3 a 10 anos) entram hoje na escoliose de início precoce. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 40, p. 1524), pela SRS, põe a juvenil entre 4 e 10 anos.
 
-As bancas gostam do Box 9.1 do Tachdjian, que define os termos descritivos. Os detalhes que viram pegadinha são três. Curva **dupla** é aquela com duas curvas laterais no **mesmo** segmento da coluna. Curva **dupla maior** tem duas curvas estruturais de tamanho e rotação **semelhantes**. Curva **dupla torácica** tem uma torácica superior estrutural, uma torácica inferior maior e mais deformante e uma lombar relativamente não estrutural. As regiões também caem: torácica é a curva com ápice entre **T2 e T11**, toracolombar em **T12, L1 ou no disco T12-L1**, lombar entre **L1 e L4**, lombossacra em L5 ou abaixo, cervicotorácica em C7 ou T1.
+As bancas gostam do Box 9.1 do Tachdjian, que define os termos descritivos. Os detalhes que viram pegadinha são três. Curva **dupla** é aquela com duas curvas laterais no **mesmo** segmento da coluna. Curva **dupla maior** tem duas curvas estruturais de tamanho e rotação **semelhantes**. Curva **dupla torácica** tem uma torácica superior estrutural, uma torácica inferior maior e mais deformante e uma lombar relativamente não estrutural. As regiões também caem: torácica é a curva com ápice entre **T2 e T11**, toracolombar em **T12, L1 ou no disco T12-L1**, lombar entre **L1 e L4**, lombossacra em L5 ou abaixo, cervicotorácica em C7 ou T1. O limite de cima da curva lombar muda conforme a fonte: o Tachdjian (Box 9.1, p. 133) diz ápice entre **L1 e L4**; a classificação de PONSETI e FRIEDMAN, no Campbell's Operative Orthopaedics, 13ª ed. (cap. 44, p. 1925), põe o ápice lombar entre o **disco L1-L2 e L4** e o toracolombar em **T12 ou L1**.
 
 !tabela Termos que descrevem as curvas (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 9, Box 9.1, p. 133)
 | Termo | Definição do livro |
@@ -62,13 +62,13 @@ As bancas gostam do Box 9.1 do Tachdjian, que define os termos descritivos. Os d
 | Crankshaft | Alto | Alto | Baixo |
 !fim
 
-Sobre a palavra adulto: o Tachdjian chama de escoliose do adulto qualquer curvatura após a maturidade; o Campbell 15 (p. 1539 aprox.) separa a AIS que chega à vida adulta das curvas lombares degenerativas que surgem no adulto. Nenhum dos dois usa os termos "de novo" ou "idiopática do adulto".
+Sobre a palavra adulto: o Tachdjian chama de escoliose do adulto qualquer curvatura após a maturidade (Box 9.1, p. 133). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 47, p. 1851 e 1852), separa as curvas do adulto em três grupos: a **AIS não tratada ou mal tratada que progride**, com curvas longas torácicas ou toracolombares; a **escoliose "de novo"**, que é a **degenerativa primária**, nascida do disco assimétrico, com curvas lombares ou toracolombares curtas e agudas de ápice em L2-L3 ou L3-L4; e a deformidade secundária a curva idiopática vizinha, doença óssea metabólica, tumor ou fratura. A degenerativa surge **depois dos 40 anos em coluna antes reta**, na coluna lombar, com hipolordose, olistese lateral e estenose; atinge 6% a 30% dos idosos, quase igual nos dois sexos (60% a 70% mulheres), e pega 2 a 5 segmentos, contra 7 a 11 na idiopática do adulto, definida como deformidade coronal acima de 10 graus com alterações estruturais.
 
 !questoes central=coluna-0293 relacionadas=coluna-0184
 conceito: Curva dupla tem duas curvas no mesmo segmento; dupla maior, duas estruturais de tamanho e rotação semelhantes; dupla torácica, torácica superior estrutural, torácica inferior maior e lombar não estrutural; torácica tem ápice de T2 a T11 e lombar de L1 a L4.
 como: O ENARE R4 Ortopedia 2024 deu cinco definições e só a de curva dupla torácica estava correta; o TARO 2024 perguntou o nome da curva que surge depois dos 40 anos numa coluna antes reta.
 armadilha: Aceitar ápice torácico "entre T5 e T7" ou lombar "entre L2 e L3", ou trocar "mesmo segmento" por "segmentos diferentes" e "semelhantes" por "diferentes".
-alerta: Em `coluna-0184` o gabarito oficial é "idiopática do adulto"; o Tachdjian (p. 133) chama de escoliose do adulto qualquer curva presente após a maturidade, e o Campbell 15 (p. 1539 aprox.) descreve como degenerativas as curvas lombares que surgem na vida adulta; nenhum dos dois usa os termos "de novo" ou "idiopática do adulto", então o gabarito não tem apoio direto nos livros lidos.
+alerta: Em `coluna-0184` o gabarito oficial é D ("idiopática do adulto"), mas pelo Campbell 15 (cap. 47, p. 1851 e 1852) a curva que surge depois dos 40 anos numa coluna antes reta é a degenerativa, e a escoliose "de novo" é a degenerativa primária; pelo livro, a resposta seria A ("de novo"). O gabarito oficial foi mantido com este alerta.
 !fim
 
 # Prevalência, etiologia e a anatomia da curva {radar=confirmado}
@@ -337,7 +337,7 @@ O **modificador sagital torácico** é medido de **T5 a T12**: hipocifótico (si
 conceito: LENKE tem tipo de curva (1 a 6), modificador lombar pela CSVL (A, B, C) e modificador sagital de T5 a T12, hipercifótico acima de 40 graus; estrutural é a curva de 25 graus ou mais no bending ou com cifose juncional acima de 20 graus.
 como: O R4 Coluna SES-DF 2022 afirmou que o modificador sagital é hipercifótico acima de 30 graus; o TARO 2021 deu uma radiografia para classificar; o R4 Coluna SES-DF 2024 pediu a classificação de LENKE num caso clínico de um rapaz de 15 anos.
 armadilha: Usar 30 graus como limite do hipercifótico (o limite é 40) ou medir o modificador em T2-T5, que é o critério juncional da torácica proximal.
-alerta: A `coluna-0022` e a `coluna-0410` dependem de imagens que não acompanham a lista; os gabaritos oficiais (1AN e 6CN) foram mantidos sem conferência visual.
+alerta: A imagem da `coluna-0022` está no acervo e se lê como 1AN, o gabarito oficial. A `coluna-0410` (gabarito oficial D, 1B+) depende da imagem do caso, que não está no acervo; o gabarito foi mantido sem conferência visual.
 !fim
 
 ## Vértebras de referência e níveis de fusão
@@ -348,11 +348,23 @@ Nos níveis, o Tachdjian (pp. 155 a 158) lembra que, nas curvas 1A e 1B, a vért
 
 O Campbell 15 (p. 1561) acrescenta: incluir todas as curvas estruturais, não terminar num disco cifótico e, nos modificadores B e C, parar na **vértebra estável toracolombar**.
 
+Os cinco tipos de KING, que ainda caem em radiografia, estão no Campbell's Operative Orthopaedics, 13ª ed. (cap. 44, p. 1925), que lembra a grande variação entre observadores da classificação:
+
+!tabela Os cinco tipos de KING (Campbell's Operative Orthopaedics, 13ª ed., cap. 44, p. 1925)
+| Tipo | Curvas | O que decide |
+|---|---|---|
+| I | torácica e lombar | a **lombar é maior** que a torácica, ou igual e menos flexível no bending; a giba lombar supera a costal |
+| II | torácica e lombar | a **torácica é maior ou igual**, a lombar **cruza a linha sacral central** e é **mais flexível** no bending; a giba costal supera a lombar |
+| III | torácica | a lombar **não cruza a linha média** e é muito flexível |
+| IV | torácica longa única | **L4 inclinada para dentro da curva** e L5 equilibrada sobre a pelve |
+| V | dupla torácica estrutural | **T1 inclinada** para a concavidade da curva superior, estrutural no bending; ombro esquerdo elevado |
+!fim
+
 !questoes central=coluna-0417 relacionadas=coluna-0412
 conceito: Vértebra estável é a mais proximal, torácica baixa ou lombar, mais bem bissectada pela linha vertical sacral central; a classificação de KING foi substituída pela de LENKE, cujos modificadores lombares englobam os tipos de KING.
 como: O R4 Coluna SES-DF 2024 pediu, num caso clínico, a vértebra estável e, numa radiografia, o tipo de KING.
 armadilha: Confundir vértebra estável (bissectada pela CSVL) com vértebra neutra (sem rotação) ou com vértebra terminal (a mais inclinada, usada no COBB).
-alerta: As duas questões dependem de imagens que não acompanham a lista; os gabaritos oficiais (L2 e KING II) foram mantidos sem conferência visual. O Tachdjian e o Campbell 15 não descrevem os cinco tipos de KING; o Tachdjian só os cita dentro dos modificadores lombares de LENKE (p. 154) e associa a KING 4 à curva 1A-R (p. 155). O enunciado de `coluna-0417` fala em escoliose "juvenil" num paciente de 15 anos, que pela idade seria do adolescente.
+alerta: As duas questões dependem de imagens que não acompanham a lista; os gabaritos oficiais (L2 e KING II) foram mantidos sem conferência visual. O Tachdjian e o Campbell 15 só citam KING dentro dos modificadores lombares de LENKE (Tachdjian, p. 154) e na curva 1A-R (p. 155); os cinco tipos estão no Campbell 13ª ed. (cap. 44, p. 1925). O enunciado de `coluna-0417` fala em escoliose "juvenil" num paciente de 15 anos, que pela idade seria do adolescente.
 !fim
 
 # A cirurgia moderna: parafusos pediculares e manobras {radar=confirmado}

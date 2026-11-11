@@ -1,6 +1,6 @@
 ---
 id: rockwood10-pseudartrose
-versao: 2
+versao: 3
 titulo: Pseudartrose e retardo de consolidação
 especialidade: conceitos-basicos
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (2026)
 capitulo: Capítulo 30 · Principles of Nonunion and Bone Defect Treatment
 autores: William M. Ricci e Benjamin J. Ollivere
-fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 30 (Principles of Nonunion and Bone Defect Treatment) lido por inteiro, p. 873 a 920 aprox. (o PDF não imprime a página no cabeçalho; páginas inferidas pelo índice remissivo e marcadas como aproximadas), com consultas ao cap. 3 (Biologic and Biophysical Technologies, p. 65 a 77 aprox.), ao cap. 16 (perda óssea aguda na fratura exposta) e ao cap. 31 (consolidação viciosa); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 64 (Delayed Union and Nonunion of Fractures, John C. Weinlein) lido por inteiro, p. 2902 a 2936, com o cap. 2 (enxertos, p. 150 a 150.e2) e o cap. 23 (osteomielite, p. 814 e 815). Em 10/11/2026, conferidos ainda o Campbell, cap. 23 (técnica e23.1 de PAPINEAU, p. 814.e1 aprox.), e o Rockwood, cap. 11 (história do fixador de HOFFMANN) e cap. 42 (GALEAZZI). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 30 (Principles of Nonunion and Bone Defect Treatment) lido por inteiro, p. 873 a 920 aprox. (o PDF não imprime a página no cabeçalho; páginas inferidas pelo índice remissivo e marcadas como aproximadas), com consultas ao cap. 3 (Biologic and Biophysical Technologies, p. 65 a 77 aprox.), ao cap. 16 (perda óssea aguda na fratura exposta) e ao cap. 31 (consolidação viciosa); Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 64 (Delayed Union and Nonunion of Fractures, John C. Weinlein) lido por inteiro, p. 2902 a 2936, com o cap. 2 (Perioperative Patient Optimization and Overview of Tendon-to-Bone Fixation and Bone Grafting; enxertos, p. 150 a 150.e2) e o cap. 23 (osteomielite, p. 814 e 815). Em 10/11/2026, conferidos ainda o Campbell, cap. 23 (técnica e23.1 de PAPINEAU, p. 814.e1 aprox.), e o Rockwood, cap. 11 (história do fixador de HOFFMANN) e cap. 42 (GALEAZZI). As páginas citadas são as impressas.
 subtemas: Pseudartrose e retardo de consolidação
 resumo: Retardo (3 a 6 meses) e pseudartrose (não consolida sem nova intervenção; FDA 9 meses + 3 sem progressão); hipertrófica (falta estabilidade), oligotrófica (falta contato), atrófica (falta biologia) e sinovial (fenda fria entre duas áreas quentes); TC com sensibilidade de 100% e especificidade de 62%; nicotina e AINE (COX-2 e não seletivos) atrapalham; NURD com retalho valendo 5 pontos; haste fresada fechada na tíbia, placa no úmero; autoenxerto com as três propriedades, cerâmicas e vidro bioativo osteocondutores, homoenxerto vem de outro indivíduo, PRP de 2 a 6 vezes; MASQUELET (PMMA, membrana, enxerto em 4 a 8 semanas); ILIZAROV com compressão no foco e corticotomia metafisária com alongamento gradual; PAPINEAU (enxerto esponjoso aberto em três tempos: desbridamento e estabilização, enxerto, pele) quando não há retalho.
 ---
@@ -39,7 +39,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 64, p. 2902 e 2903), coloca 
 | **Pseudartrose temporal** | **6 a 8 meses** (arbitrário) | FDA: **9 meses** + **3 meses** sem progressão |
 !fim
 
-O peso do problema também cai. A taxa global de pseudartrose é de **4,9%**, e retardo mais pseudartrose somam **6,9%** (Rockwood, p. 873 e 874 aprox.). A pseudartrose do fêmur afeta a saúde física como a **artrose terminal do quadril**; o escore de utilidade médio dos pacientes com pseudartrose de osso longo é **0,68**, pior que diabetes tipo I (0,88), AVC (0,81) e AIDS (0,79), e **os pacientes com pseudartrose do antebraço tiveram os menores escores**. O Campbell (p. 2902) acrescenta que a pseudartrose da tíbia custa mais que o dobro da fratura que consolida, que cerca de **30%** dos tratados têm resultado funcional ruim e que mais de 90% da literatura é nível IV.
+O peso do problema também cai. A taxa global de pseudartrose é de **4,9%**, e retardo mais pseudartrose somam **6,9%** (Rockwood, p. 873 e 874 aprox.). A pseudartrose da diáfise do fêmur afeta a saúde física de forma comparável à **artrose terminal do quadril** e à pseudartrose da tíbia, e pior que muitas outras doenças (Rockwood, cap. 30, p. 873 aprox.; o capítulo da diáfise do fêmur repete o dado com a Tabela 57-4); o escore de utilidade médio dos pacientes com pseudartrose de osso longo é **0,68**, pior que diabetes tipo I (0,88), AVC (0,81) e AIDS (0,79), e **os pacientes com pseudartrose do antebraço tiveram os menores escores**. O Campbell (p. 2902) acrescenta que a pseudartrose da tíbia custa mais que o dobro da fratura que consolida, que cerca de **30%** dos tratados têm resultado funcional ruim e que mais de 90% da literatura é nível IV.
 
 !questoes central=conceitos-basicos-0099
 conceito: A pseudartrose de osso longo derruba a qualidade de vida (utilidade média 0,68); o antebraço teve os menores escores de utilidade.
@@ -177,13 +177,14 @@ A **cintilografia com tecnécio** é inespecífica, porque quase toda pseudartro
 | **Radiografia** | ponte de calo; implante solto ou quebrado | fora do plano esconde o traço |
 | **TC** | **sensibilidade 100%**; % de ponte; rotação | **especificidade 62%** |
 | **Cintilografia** | **fenda fria** na sinovial; oligotrófica capta, atrófica fria | inespecífica; não prova infecção |
+| **RM** | **dependente do caso** (Campbell, Tabela 64.3, junto com a medicina nuclear) | o implante gera artefato, embora haja técnicas de supressão (Rockwood, cap. 29, p. 847 aprox.) |
 | **Laboratório** | infecção (leucócitos, VHS, PCR); vitamina D, albumina | não prevê a pseudartrose |
 !fim
 
 !questoes central=conceitos-basicos-0051
 conceito: A TC é o exame mais sensível para pseudartrose após haste (100% na tíbia), embora pouco específica (62%).
-como: O TEOT 2015 perguntou o exame de maior sensibilidade na pseudartrose após osteossíntese intramedular.
-armadilha: Escolher ressonância (artefato do implante) ou planigrafia.
+como: O TARO 2015 perguntou o exame de maior sensibilidade na pseudartrose após osteossíntese intramedular.
+armadilha: Escolher ressonância ou planigrafia; na Tabela 64.3 do Campbell a RM é exame dependente do caso, e a TC é a altamente sensível.
 !fim
 
 No laboratório, o papel principal é **investigar infecção**. O Campbell (p. 2905) traz o estudo de STUCKEN com leucócitos, VHS e PCR: **os três positivos** dão **100%** de probabilidade de infecção (dois, 56%; um, 18,8%); **os três negativos** dão **81,6%** de probabilidade de não haver infecção, ou seja, ainda deixam cerca de 1 em 5 infectados. Albumina baixa se associa à pseudartrose séptica.
@@ -321,16 +322,16 @@ armadilha: Escolher xenoenxerto ou heteroenxerto (outra espécie) ou achar que o
 
 Sobre o que o aloenxerto faz, os livros divergem. O Rockwood (cap. 3, p. 67 aprox.) diz que o processamento o deixa **essencialmente osteocondutor**, e que o **DBM** retém **osteoindução variável** entre lotes; no capítulo 30 (p. 909 aprox.), aloenxerto e cerâmicas não têm osteoindução nem osteogênese e servem de extensores. O texto do Campbell (cap. 2) chama o aloenxerto esponjoso de osteocondutor e "não osteoindutor", mas a Tabela 2.8 do mesmo capítulo, tirada de KHAN, marca o **esponjoso alógeno** com **osteocondução forte e osteoindução fraca**, como o esponjoso autógeno nesse quesito.
 
-!tabela Propriedades dos enxertos (Campbell 15, cap. 2, Tabela 2.8, p. 150, segundo KHAN; + fraco, ++ forte, +++ muito forte, "não" = ausente)
-| Enxerto | Osteogênese | Osteocondução | Osteoindução | Resistência mecânica |
-| --- | --- | --- | --- | --- |
-| Medula óssea | ++ | | + | não |
-| **Esponjoso autógeno** | **++** | **++** | **+** | + |
-| Cortical autógeno | + | + | | ++ |
-| Vascularizado autógeno | ++ | ++ | + | ++ |
-| **Esponjoso alógeno** | não | **++** | **+** | + |
-| Cortical alógeno | não | | | ++ |
-| DBM | não | ++ | +++ | não |
+!tabela Propriedades dos enxertos (Campbell 15, cap. 2, Tabela 2.8, p. 150, segundo KHAN; + fraco, ++ forte, +++ muito forte, ± como no original, "não" = ausente)
+| Enxerto | Osteogênese | Osteocondução | Osteoindução | Resistência mecânica | Vascularização |
+| --- | --- | --- | --- | --- | --- |
+| Medula óssea | ++ | ± | + | não | não |
+| **Esponjoso autógeno** | **++** | **++** | **+** | + | não |
+| Cortical autógeno | + | + | ± | ++ | não |
+| Vascularizado autógeno | ++ | ++ | + | ++ | ++ |
+| **Esponjoso alógeno** | não | **++** | **+** | + | não |
+| Cortical alógeno | não | ± | ± | ++ | não |
+| DBM | não | ++ | +++ | não | não |
 !fim
 
 A tabela responde à pergunta clássica: o que o esponjoso **autólogo** e o **homólogo** têm em comum é **osteocondução e osteoindução**; a **osteogênese** é só do autólogo, porque só ele traz células vivas.
@@ -420,7 +421,7 @@ alerta: A classificação de PALEY não está no Rockwood nem no Campbell; o gab
 
 # Defeitos ósseos e a técnica de MASQUELET {radar=confirmado}
 
-O capítulo 16 do Rockwood and Green's Fractures in Adults, 10ª ed. (fratura exposta, perda óssea aguda), dá a escala do membro inferior. Perda **menor que 2 cm** é bem tolerada e se encurta primariamente. Perda circunferencial **menor que 3 cm** pode ser resolvida com **autoenxerto** em segundo tempo. **Quando a perda passa de 4 cm, as opções ficam mais difíceis**, porque o membro precisa suportar carga: a fíbula vascularizada falha mais na perna (fraturas de estresse), e entram a **distração osteogênica** (encurtar e realongar, ou fixar no comprimento e **transportar**) e a membrana induzida. No membro superior, o úmero tolera até cerca de 5 cm de encurtamento.
+O capítulo 16 do Rockwood and Green's Fractures in Adults, 10ª ed. (fratura exposta, perda óssea aguda), dá a escala do membro inferior. Perda **menor que 2 cm** é bem tolerada e se encurta primariamente. Perda circunferencial **menor que 3 cm** pode ser resolvida com **autoenxerto** em segundo tempo. **Quando a perda passa de 4 cm, as opções ficam mais difíceis**, porque o membro precisa suportar carga, e a legenda da Fig. 16-20 é direta: falhas de **mais de 4 cm** não admitem encurtamento agudo e são tratadas **idealmente com transporte ósseo**; a fíbula vascularizada falha mais na perna (fraturas de estresse), e entram a **distração osteogênica** (encurtar e realongar, ou fixar no comprimento e **transportar**) e a membrana induzida. No membro superior, o úmero tolera até cerca de 5 cm de encurtamento.
 
 !tabela Defeito segmentar no membro inferior (Rockwood 10, cap. 16, e cap. 30, p. 905 e 911 a 913 aprox.)
 | Defeito | Opção |
@@ -435,7 +436,7 @@ O capítulo 16 do Rockwood and Green's Fractures in Adults, 10ª ed. (fratura ex
 conceito: No membro inferior, até cerca de 2 cm se encurta e até 3 cm se enxerta; acima de 4 cm as opções se complicam e entra o transporte ósseo.
 como: O TARO 2010 perguntou a partir de quantos centímetros de defeito o transporte ósseo é indicado na fratura diafisária aguda da tíbia.
 armadilha: Escolher 2 ou 3 cm, valores em que encurtamento e enxerto ainda resolvem.
-alerta: O Rockwood (cap. 16) diz que acima de 4 cm "as opções ficam mais difíceis" e inclui a distração osteogênica entre elas, sem fixar um número para indicar o transporte; o gabarito de `conceitos-basicos-0228` (4 cm) foi mantido.
+alerta: O número muda com a fonte. O Rockwood (cap. 16, Fig. 16-20, p. 549 a 557 aprox.) diz que falhas de **mais de 4 cm** não se resolvem com encurtamento agudo e são tratadas idealmente com **transporte ósseo**, o que apoia o gabarito de `conceitos-basicos-0228` (4 cm). O AO Principles of Fracture Management usa **mais de 6 cm** para o transporte (cap. 4.2, p. 353) e **mais de 4 a 6 cm** para as técnicas especiais, entre elas o transporte (cap. 5.2, p. 526).
 !fim
 
 ## A membrana induzida

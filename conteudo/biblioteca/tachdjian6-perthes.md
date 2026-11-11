@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-perthes
-versao: 1
+versao: 2
 titulo: Doença de Legg-Calvé-Perthes
 especialidade: pediatria
 acesso: gratis
@@ -153,14 +153,19 @@ O achado que a prova cobra é a **limitação da abdução e da rotação intern
 
 LEGG descreveu **encurtamento mínimo ou ausente** no início da doença (p. 527), e o exame inicial não costuma mostrá-lo. O encurtamento aparece depois, pela própria doença e pelas sequelas: o achatamento reduz a altura da cabeça, a **lesão da fise proximal** com fechamento precoce encurta o colo e deixa o trocânter alto (p. 548), e o Campbell (p. 1189) lembra que a osteotomia inominada **alonga um membro possivelmente encurtado pelo processo avascular**, enquanto a osteotomia femoral em varo encurta mais. Por isso PERTHES entra nas listas de causas de **encurtamento** de membro, ao lado de outras doenças que lesam a fise.
 
+A lista está escrita no próprio Tachdjian, no capítulo de discrepância de comprimento (cap. 20, Box 20.1, p. 806 e 807). Entre as **causas de diminuição do comprimento**, LEGG-CALVÉ-PERTHES aparece no grupo das **outras causas adquiridas de distúrbio do crescimento fisário**, junto de **infecção**, **tumor** (encondroma, osteocondroma, cisto ósseo unicameral), **irradiação** e doença de BLOUNT infantil e do adolescente; o mesmo lado da lista traz as deficiências congênitas (femoral, fibular, hemimelia tibial), as doenças neurológicas assimétricas, o trauma (consolidação viciosa e parada fisária), a hemiatrofia, o pé torto unilateral e a pseudartrose congênita da tíbia. Do outro lado, entre as **causas de aumento do comprimento**, estão o **supercrescimento pós-traumático** das fraturas diafisárias de fêmur e tíbia, as **síndromes de supercrescimento de partes moles** (gigantismo da neurofibromatose, **KLIPPEL-TRÉNAUNAY**, **BECKWITH-WIEDEMANN**, PROTEUS e hemi-hipertrofia idiopática) e a **artrite inflamatória**. O Box não cita o abscesso de BRODIE nem o hemangioma.
+
 ## A menina de 8 anos
 
 A doença é menos frequente em meninas, mas não rara, e uma menina de 8 anos com dor e claudicação de dois meses está dentro da faixa típica. A imagem decide entre PERTHES e os diferenciais (epifisiólise, displasias, osteomielite); o que favorece PERTHES é uma epífise densa, fragmentada ou achatada, unilateral, com alterações metafisárias.
 
+O caso clássico desse perfil está no Tachdjian (Fig. 14.27, p. 551): uma **menina de 8 anos com dor no quadril direito ligada à atividade havia 2 meses**. Em A, a **RM em T1 sem contraste** mostra sinal diminuído na epífise, sem deixar claro quanto dela está acometido; em B, a **imagem de subtração com contraste** mostra **ausência de realce na maior parte da epífise**. As áreas hipoperfundidas aparecem pretas porque o gadolínio não chega, e na fase inicial a RM sem contraste pode **subestimar a extensão da necrose** (p. 551). O Campbell lembra que a radiografia só se altera 6 semanas ou mais depois do início clínico e que a RM faz o diagnóstico mais cedo (p. 1188).
+
 !questoes central=pediatria-0103 relacionadas=pediatria-0287,pediatria-0205
 conceito: A perda é de abdução e rotação interna, com flexão e extensão preservadas; o encurtamento é sequela tardia, pela cabeça achatada e pela lesão da fise.
 como: O TEOT 2021 perguntou os movimentos limitados; o TARO 2024 mostrou o exame de uma menina de 8 anos com dor e claudicação; o ENARE R4 de Ortopedia 2023 listou PERTHES entre causas de encurtamento.
-armadilha: Marcar adução e rotação externa, que são justamente as posições em que o quadril se esconde nos casos graves (contratura em adução e rotação externa na flexão).
+armadilha: Marcar adução e rotação externa, que são justamente as posições em que o quadril se esconde nos casos graves (contratura em adução e rotação externa na flexão). Na lista de encurtamento, KLIPPEL-TRÉNAUNAY e BECKWITH-WIEDEMANN estão entre as causas de aumento do comprimento (Tachdjian, Box 20.1, p. 807).
+alerta: A imagem da `pediatria-0287` é a Fig. 14.27 B do Tachdjian (p. 551), RM de subtração com contraste de uma menina de 8 anos, com falta de realce na maior parte da epífise femoral direita; o gabarito oficial (LEGG-CALVÉ-PERTHES) é sustentado.
 !fim
 
 # As fases de WALDENSTRÖM {radar=confirmado}
@@ -254,7 +259,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (p. 1186), é mais prático: a dis
 
 ## Bilateral: PERTHES ou displasia
 
-O raciocínio do diferencial bilateral é o mais cobrado (Tachdjian, p. 561 a 563). No PERTHES bilateral, os quadris adoecem em **sequência**, um ano ou mais de intervalo, com acometimento **assimétrico** e **alterações metafisárias**. Nas **displasias epifisárias** (múltipla, espondiloepifisária, MORQUIO), os dois quadris são atingidos **ao mesmo tempo e de forma simétrica**, com achatamento, fragmentação e esclerose uniformes, **sem alterações metafisárias**; a criança é baixa e tem outras epífises alteradas, sobretudo a **femoral distal achatada**. O **hipotireoidismo** também dá alterações **bilaterais e simétricas**, com pseudofragmentação. O Campbell (p. 1187) acrescenta que radiografias de outras articulações e a **idade óssea** (atrasada no PERTHES) ajudam a separar o PERTHES bilateral da displasia epifisária múltipla.
+O raciocínio do diferencial bilateral é o mais cobrado (Tachdjian, p. 561 a 563). No PERTHES bilateral, os quadris adoecem em **sequência**, um ano ou mais de intervalo, com acometimento **assimétrico** e **alterações metafisárias**. Nas **displasias epifisárias** (múltipla, espondiloepifisária, MORQUIO), os dois quadris são atingidos **ao mesmo tempo e de forma simétrica**, com achatamento, fragmentação e esclerose uniformes, **sem alterações metafisárias**; a criança é baixa e tem outras epífises alteradas, sobretudo a **femoral distal achatada**. O **hipotireoidismo** também dá alterações **bilaterais e simétricas**, com pseudofragmentação. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 24, p. 1138), segue a mesma linha: no acometimento bilateral, considerar **hipotireoidismo e displasia epifisária múltipla**, colher história familiar, medir altura e peso e pedir inventário esquelético; e, **abaixo de 4 anos, considerar a displasia de MEYER**, condição benigna que se resolve sozinha. A Tabela 24-6 do mesmo livro lista como diferenciais condrólise, GAUCHER, hemofilia, hipotireoidismo, artrite reumatoide juvenil, linfoma, mucopolissacaridose, displasia epifisária múltipla, displasia de MEYER, neoplasia, sequela de displasia do quadril, osteomielite do fêmur proximal, artrite séptica, anemia falciforme, displasia espondiloepifisária, sinovite transitória e necrose asséptica traumática (p. 1138). O Campbell (p. 1187) acrescenta que radiografias de outras articulações e a **idade óssea** (atrasada no PERTHES) ajudam a separar o PERTHES bilateral da displasia epifisária múltipla.
 
 !tabela Diagnóstico diferencial (Tachdjian, cap. 14, Box 14.6, p. 561 a 563; Campbell 15, cap. 34, p. 1186 e 1187)
 | Grupo | Doenças | Pista |
@@ -269,7 +274,7 @@ O raciocínio do diferencial bilateral é o mais cobrado (Tachdjian, p. 561 a 56
 !questoes central=pediatria-0192
 conceito: Em criança pequena com alterações bilaterais, pensar em displasia de MEYER: meninos menores de 4 anos, frequentemente bilateral, ossificação irregular sem fragmentação nem deformação.
 como: O TARO 2023 perguntou o diferencial do PERTHES bilateral em crianças de baixa idade.
-armadilha: Escolher raquitismo hipofosfatêmico ou artrogripose, que não imitam a necrose epifisária; o diferencial bilateral clássico de idade maior é a displasia epifisária múltipla.
+armadilha: Escolher artrogripose, síndrome unha-patela ou raquitismo hipofosfatêmico; nenhuma das três está no Box 14.6 do Tachdjian (p. 561) nem na Tabela 24-6 do Lovell and Winter (p. 1138), que traz a displasia de MEYER para menores de 4 anos; o diferencial bilateral da criança maior é a displasia epifisária múltipla (e o hipotireoidismo).
 !fim
 
 # Classificações de gravidade: CATTERALL e a cabeça em risco {radar=confirmado}
@@ -300,7 +305,6 @@ As críticas são importantes para a prova: os grupos são difíceis de definir,
 conceito: CATTERALL IV é a cabeça toda acometida; a classificação foi feita com radiografias da fragmentação, e por isso a imagem típica do grupo IV mostra a epífise inteira fragmentada.
 como: O TARO 2021 mostrou uma radiografia e pediu o grupo de CATTERALL e a fase.
 armadilha: Confundir III (sobram fragmentos medial e lateral sãos) com IV (nada se salva), ou chamar de reossificação uma cabeça ainda fragmentada.
-alerta: A imagem da `pediatria-0038` não foi conferida; o gabarito oficial (IV com fragmentação) foi mantido.
 !fim
 
 # SALTER-THOMPSON: a fratura subcondral {radar=confirmado}
@@ -308,6 +312,8 @@ alerta: A imagem da `pediatria-0038` não foi conferida; o gabarito oficial (IV 
 A classificação de SALTER e THOMPSON se baseia na **extensão da fratura subcondral** nas incidências AP e perfil (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 554). É um sistema de **dois grupos**: **A**, fratura em **menos da metade** da cabeça; **B**, em **mais da metade**. A ideia por trás é que a fratura subcondral corre sobre o osso necrótico, então **o comprimento da fratura desenha a extensão da necrose**. A vantagem é o tempo: a fratura aparece cedo, antes que CATTERALL ou o pilar lateral possam ser aplicados. A limitação é que ela só está presente em **cerca de 30%** dos pacientes.
 
 O Campbell's Operative Orthopaedics, 15ª ed. (p. 1186.e1, eTabela 34.2), descreve a fratura no **domo superolateral**, baseia a classificação no **sinal do crescente**, espera **bons resultados no tipo A** e resultados **regulares ou maus no tipo B**, diz que a extensão total da fratura é vista em média **8,1 meses antes** dos sinais de CATTERALL e registra que SALTER e THOMPSON recomendavam cirurgia, como a **osteotomia inominada**, para o tipo B.
+
+O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 24, p. 1130), faz a ponte com CATTERALL: o grupo **A** (menos da metade da cabeça) corresponde aos **grupos I e II de CATTERALL**, e o grupo **B** (mais da metade) aos **grupos III e IV**. O que separa A de B, diz o livro, é a **presença ou ausência de uma coluna lateral viável** da epífise; a coluna lateral intacta (CATTERALL II, SALTER-THOMPSON A) pode proteger a epífise do colapso e da deformidade, e é logo em seguida que o livro apresenta a classificação do pilar lateral de HERRING (p. 1130).
 
 !questoes central=pediatria-0683
 conceito: A fratura subcondral corre sobre o osso morto; sua extensão mostra a extensão da necrose, base da classificação de SALTER-THOMPSON (A menor e B maior que metade da cabeça).
@@ -322,6 +328,8 @@ armadilha: Achar que ela indica necessidade de cirurgia por si só ou evolução
 A classificação do **pilar lateral** usa as alterações da **porção lateral da cabeça** no início da **fragmentação**, vistas na radiografia **anteroposterior** (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 554). Nessa fase a cabeça costuma se dividir em pilares medial, central e lateral. O raciocínio é mecânico: enquanto o **pilar lateral** está íntegro, ele **sustenta a carga e protege o segmento central** avascular do colapso; quando a necrose toma o pilar lateral, essa proteção some e a cabeça desaba (p. 557).
 
 A proposta de **1992** tinha três grupos (A, B e C); em **2004**, HERRING e colaboradores acrescentaram o **limite B/C** (p. 555).
+
+O tamanho de cada pilar na AP vem do Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 24, p. 1130): o **pilar lateral** ocupa os **15% a 30% laterais** da largura da cabeça, o **central** cerca de **50%** e o **medial** de **20% a 35%** do lado medial. O mesmo livro lembra que pacientes SALTER-THOMPSON A e CATTERALL I e II têm a coluna lateral intacta (p. 1131).
 
 !tabela Classificação do pilar lateral (Tachdjian, cap. 14, Tabela 14.3, p. 555 a 557; Campbell 15, cap. 34, Tabela 34.3, p. 1188)
 | Grupo | Pilar lateral na AP | Evolução |
@@ -386,7 +394,9 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed., separa duas perguntas. A primeira
 
 A segunda pergunta é **o que prediz o quadril do adulto**, e a resposta é a **forma da cabeça curada e sua congruência com o acetábulo**, os preditores mais importantes do resultado em longo prazo (p. 579). Por isso a meta de todo tratamento é evitar a deformidade. Os fatores associados à artrose tardia incluem idade de início, calcificação lateral, perda de esfericidade e inclinação do acetábulo; o melhor resultado veio com diagnóstico **antes dos 9 anos**, articulação congruente e acometimento mínimo. Em 35 pacientes tratados entre 1920 e 1940 e revistos com média de 48 anos, quase **metade** tinha feito artroplastia; a artrose se associou a **dois ou mais sinais de CATTERALL**, início **após 8 anos** e **coxa magna**. **Fechamento precoce da fise** e cabeça em **cogumelo** também pioram o prognóstico (p. 580).
 
-!tabela Fatores prognósticos (Tachdjian, cap. 14, Box 14.5, p. 543, 561, 579 e 580; Campbell 15, cap. 34, p. 1187)
+O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 24, Tabela 24-2, p. 1130, e p. 1133 e 1134), lista como fatores prognósticos a deformidade da cabeça, a incongruência, a idade de início, a extensão do acometimento, o distúrbio de crescimento por fechamento precoce da fise, o **curso prolongado**, o potencial de remodelação, o tipo de tratamento e a fase em que ele começa. E traz um dado sobre sexo que os outros dois livros não dão: os resultados são piores com **doença de duração prolongada**, e **as meninas têm prognóstico pior que os meninos**, porque a extensão do acometimento se relaciona com o sexo; a explicação proposta é que há mais meninas (esqueleticamente mais maduras que meninos da mesma idade, e com menos potencial de remodelação) nos grupos III e IV de CATTERALL (p. 1133 e 1134). Para o mesmo livro, a idade de início é o segundo fator mais importante, atrás só da deformidade (p. 1134). Aqui os livros divergem: o Campbell diz que meninos e meninas **com o mesmo grupo de pilar lateral** têm resultados semelhantes (p. 1188); o Lovell and Winter fala do conjunto das meninas, que concentram mais casos graves.
+
+!tabela Fatores prognósticos (Tachdjian, cap. 14, Box 14.5, p. 543, 561, 579 e 580; Campbell 15, cap. 34, p. 1187; Lovell and Winter, 7ª ed., cap. 24, p. 1133 e 1134)
 | Fator | Efeito |
 | --- | --- |
 | idade de início | o mais consistente; antes de 6 anos melhor; depois de 9 pior; depois de 12 péssimo |
@@ -395,14 +405,14 @@ A segunda pergunta é **o que prediz o quadril do adulto**, e a resposta é a **
 | forma final da cabeça e congruência | preditores mais importantes do resultado em longo prazo |
 | sinais radiográficos | lateralização, descobertura, calcificação lateral, cabeça alargada antes da fragmentação, SATURNO, colo alargado, cisto metafisário |
 | fise | fechamento precoce e cabeça em cogumelo pioram |
-| sexo | Campbell: mesmo grupo de pilar, mesmo resultado em meninos e meninas |
+| sexo | Lovell and Winter: meninas com prognóstico pior (mais CATTERALL III e IV); Campbell: mesmo grupo de pilar, mesmo resultado em meninos e meninas |
 !fim
 
 !questoes central=pediatria-0938 relacionadas=pediatria-0739,pediatria-0796,pediatria-0135
 conceito: A idade de início é o fator prognóstico mais consistente; a forma final da cabeça e a congruência predizem o quadril adulto; extensão do acometimento, duração e fechamento precoce da fise também pesam.
 como: A SBOT-SP perguntou o melhor fator prognóstico; o TARO 2007, o fator de pior prognóstico; o TARO 2006 listou idade, fechamento da fise e grau de acometimento para certo ou errado; uma prova de Ortopedia pediu a combinação de fatores de mau prognóstico.
 armadilha: Achar que início muito precoce piora; a criança pequena tem mais tempo para remodelar.
-alerta: Sem gabarito oficial em `pediatria-0938`, `pediatria-0739` e `pediatria-0796`. O Tachdjian sustenta idade (A) na 0938; na 0739, aponta a deformidade residual da cabeça (A) como preditor mais importante do resultado tardio, embora a idade seja o fator mais consistente do curso; na 0796, sustenta Certo. Na `pediatria-0135` (gabarito A: baixa estatura, duração prolongada, sexo feminino e hipotrofia), só a duração prolongada é sustentada; nenhum dos livros dá sexo feminino, baixa estatura ou hipotrofia como fator prognóstico, e o Campbell diz que meninos e meninas com o mesmo pilar evoluem igual. Gabarito oficial mantido.
+alerta: Sem gabarito oficial em `pediatria-0938`, `pediatria-0739` e `pediatria-0796`. O Tachdjian sustenta idade (A) na 0938; na 0739, aponta a deformidade residual da cabeça (A) como preditor mais importante do resultado tardio, embora a idade seja o fator mais consistente do curso; na 0796, sustenta Certo. Na `pediatria-0135` (gabarito A: baixa estatura, duração prolongada, sexo feminino e hipotrofia), a duração prolongada e o sexo feminino são sustentados pelo Lovell and Winter (cap. 24, p. 1133 e 1134: meninas com prognóstico pior que meninos; pior resultado com doença prolongada); as outras três alternativas trazem idade de início mais baixa, que é fator de bom prognóstico. Baixa estatura e hipotrofia não aparecem nas listas de fatores prognósticos do Tachdjian (Box 14.5) nem do Lovell and Winter (Tabela 24-2), e o Campbell diz que meninos e meninas com o mesmo pilar evoluem igual. Gabarito oficial (A) mantido.
 !fim
 
 # Tratamento: o princípio da contenção {radar=confirmado}

@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-paralisia-cerebral
-versao: 1
+versao: 2
 titulo: Paralisia cerebral
 especialidade: pediatria
 acesso: gratis
@@ -293,11 +293,11 @@ O equino é a deformidade mais comum do pé na paralisia cerebral: atinge 70% da
 
 ## As três zonas
 
-Os procedimentos se agrupam pela zona em que alongam (Tachdjian p. 1436). **Zona 1** vai da origem do gastrocnêmio até o fim do gastrocnêmio medial. **Zona 2** vai do fim da zona 1 até o fim do ventre muscular do sóleo. **Zona 3** é o tendão de AQUILES. O **STRAYER é na zona 1**; o **VULPIUS e o BAKER são na zona 2** (Tachdjian p. 1436). O Campbell traz a mesma divisão em três zonas, da revisão sistemática de SHORE, que concluiu que o subtipo (hemiplegia ou diplegia) e a idade pesam mais no resultado que a escolha do procedimento (p. 1257).
+Os procedimentos se agrupam pela zona em que alongam (Tachdjian p. 1436). **Zona 1** vai da origem do gastrocnêmio até o fim do gastrocnêmio medial. **Zona 2** vai do fim da zona 1 até o fim do ventre muscular do sóleo. **Zona 3** é o tendão de AQUILES. O **STRAYER é na zona 1**; o **VULPIUS e o BAKER são na zona 2** (Tachdjian p. 1436). O HEBERT (cap. 31) diz o mesmo com a anatomia da perna: no encurtamento só do gastrocnêmio, o alongamento no **terço proximal (zona I)** isola o gastrocnêmio e deixa o sóleo intacto, pelas técnicas de **STRAYER e de BAUMAN**; quando o tríceps sural inteiro está curto, alongam-se as fáscias no **terço médio (zona II)**, preservando o ventre do sóleo (**VULPIUS**), ou o tendão na **zona III** (HOKE percutâneo ou em Z). O Campbell traz a mesma divisão em três zonas, da revisão sistemática de SHORE, que concluiu que o subtipo (hemiplegia ou diplegia) e a idade pesam mais no resultado que a escolha do procedimento (p. 1257).
 
-O que muda entre elas é quanto do sóleo se alonga. O **STRAYER** faz um corte transverso, mais proximal, no gastrocnêmio, e **não alonga o sóleo** (Tachdjian p. 1437). O **VULPIUS** divide a aponeurose do gastrocsóleo em V invertido e o septo fibroso mediano do sóleo, sem tocar nas fibras musculares do sóleo; o **BAKER** faz o corte em língua e ranhura (Tachdjian p. 1436 e 1437). No alongamento do AQUILES (zona 3), aberto em Z ou percutâneo, o tendão inteiro, sóleo incluído, fica mais longo: WHITE usa dois cortes, HOKE usa três, e o gesso fica 6 semanas (Tachdjian p. 1436).
+O que muda entre elas é quanto do sóleo se alonga. O **STRAYER** faz um corte transverso, mais proximal, no gastrocnêmio, e **não alonga o sóleo** (Tachdjian p. 1437). O **VULPIUS** divide a aponeurose do gastrocsóleo em V invertido e o septo fibroso mediano do sóleo, sem tocar nas fibras musculares do sóleo, e a fáscia desliza sobre o sóleo (Tachdjian Fig. 31.20, p. 1436; é a imagem de `pediatria-0089`); o **BAKER** faz o corte em língua e ranhura (Tachdjian p. 1436 e 1437). No alongamento do AQUILES (zona 3), aberto em Z ou percutâneo, o tendão inteiro, sóleo incluído, fica mais longo: WHITE usa dois cortes, HOKE usa três, e o gesso fica 6 semanas (Tachdjian p. 1436).
 
-Daí a lógica de prova. Quanto mais proximal, mais seletivo: os defensores da recessão do gastrocnêmio dizem que ela **preserva ou até aumenta a potência de impulsão**, porque não envolve o sóleo, e o risco de hipercorreção para calcâneo é desprezível; o preço é **mais recorrência**, até 48% em algumas séries (Tachdjian p. 1435 e 1436). Quanto mais distal, mais potente e mais arriscado: DIETZ achou marcha agachada em 41% dos diplégicos e 50% dos quadriplégicos após alongamento do AQUILES, nenhum nos hemiplégicos; VUILLERMIN viu o agachamento cair quando a recessão do gastrocnêmio substituiu o alongamento do AQUILES, e no seguimento longo só 2,5% desenvolveram calcâneo (Tachdjian p. 1436).
+Daí a lógica de prova. Quanto mais proximal, mais seletivo: os defensores da recessão do gastrocnêmio dizem que ela **preserva ou até aumenta a potência de impulsão**, porque não envolve o sóleo, e o risco de hipercorreção para calcâneo é desprezível; o preço é **mais recorrência**, até 48% em algumas séries (Tachdjian p. 1435). Quanto mais distal, mais potente e mais arriscado: depois da recessão aponeurótica do gastrocsóleo, só 10% de 44 diplégicos tinham marcha em calcâneo aos 9 anos de seguimento; DIETZ, em 79 crianças com alongamento do AQUILES, achou marcha com flexão excessiva do joelho e dorsiflexão do tornozelo em 41% dos diplégicos e 50% dos quadriplégicos, nenhum nos hemiplégicos; VUILLERMIN viu o agachamento cair quando a recessão do gastrocnêmio substituiu o alongamento do AQUILES, e no seguimento longo do mesmo grupo só 2,5% desenvolveram calcâneo (Tachdjian p. 1435).
 
 !tabela Zonas do gastrocsóleo (Tachdjian p. 1436 e 1437; Campbell p. 1256 e 1257)
 | Zona | Limites | Técnicas | Força de flexão plantar | Risco de calcâneo e agachamento | Recidiva |
@@ -393,7 +393,7 @@ armadilha: Marcar equino no agachamento (o tornozelo está em dorsiflexão, às 
 
 # Rotação: anteversão e hemipelve {radar=confirmado}
 
-A espasticidade, com o tempo, produz deformidades rotacionais. A anteversão femoral persiste nos diplégicos e em alguns hemiplégicos graves e aparece como marcha com os pés para dentro; somada à tesoura e ao joelho fletido, a perna rodada obstrui o balanço (Tachdjian p. 1459). Anteversão femoral e torção tibial externa formam a "doença do braço de alavanca", que piora o agachamento (Tachdjian p. 1459).
+A espasticidade, com o tempo, produz deformidades rotacionais. A anteversão femoral persiste nos diplégicos e em alguns hemiplégicos graves e aparece como marcha com os pés para dentro; somada à tesoura e ao joelho fletido, a perna rodada obstrui o balanço (Tachdjian p. 1459). Anteversão femoral e torção tibial externa formam a "doença do braço de alavanca", que piora o agachamento (Tachdjian p. 1459). O Campbell (p. 1264 e 1265) traz a análise de marcha de 412 crianças: a causa mais comum da marcha com rotação interna é a anteversão femoral excessiva, seguida da torção tibial interna, com vários níveis em quase metade dos membros; nos diplégicos, a rotação interna está no quadril em 57%, na tíbia em 52% e na **pelve em 19%**, enquanto nos hemiplégicos pesa o pé (varo em 42%, metatarso aduto em 24%). Órtese não corrige; as deformidades estruturais vão para a osteotomia derrotativa dentro do plano multinível.
 
 O detalhe da prova está na hemiplegia. O Tachdjian descreve que, no lado acometido, **a hemipelve retrai e fica rodada externamente**, o que mascara a anteversão femoral; a análise da marcha mostra hemipelve em rotação externa, anteversão excessiva e pé rodado internamente pelo equinovaro (p. 1426 e 1459). Depois da osteotomia femoral, a rotação pélvica tende a se neutralizar e, se não for prevista, sobra marcha com os pés para dentro (Tachdjian p. 1460). Na osteotomia derrotativa, a meta é o dobro de rotação externa em relação à interna, por exemplo 30 graus de interna e 60 de externa (Tachdjian p. 1460).
 
@@ -423,19 +423,21 @@ alerta: `pediatria-0797` está sem gabarito oficial; o Tachdjian (p. 1469) e o C
 
 O quadril espástico não é a DDQ. Não há frouxidão: os adutores e flexores espásticos vencem extensores e abdutores e **arrancam a cabeça do acetábulo** com forças até 6 vezes maiores; a anteversão não remodela, vem a coxa valga, **o trocânter menor se alonga pela tração do iliopsoas**, o acetábulo fica raso e erodido lateralmente, e a cabeça se achata (Tachdjian p. 1463 e 1464). A luxação é superior e posterior (Tachdjian p. 1465). A incidência segue o GMFCS (SOO): **0% no nível 1, 15% no 2, 41% no 3, 69% no 4 e 90% no 5** (Tachdjian p. 1463); o Campbell diz quase 0% no I e 90% no V (p. 1240).
 
-O primeiro sinal radiográfico é uma quebra sutil de SHENTON (Tachdjian p. 1465). A medida-padrão é o **índice de migração de REIMERS**: a porcentagem do diâmetro transverso da cabeça lateral à linha de PERKINS (Tachdjian p. 1466). A vigilância australiana começa aos 12 meses e encaminha com índice de 30% (Tachdjian p. 1466). Na história natural (MILLER e BAGG), abaixo de 30% cerca de 75% não progridem e acima de 60% todos luxam (Tachdjian p. 1466). BAGG achou **mais dor nos quadris luxados que nos subluxados** (Tachdjian p. 1467).
+O primeiro sinal radiográfico é uma quebra sutil de SHENTON (Tachdjian p. 1465). A medida-padrão é o **índice de migração de REIMERS**: a porcentagem do diâmetro transverso da cabeça lateral à linha de PERKINS (Tachdjian p. 1466). A vigilância australiana começa aos 12 meses e encaminha com índice de 30% (Tachdjian p. 1466). Na história natural (MILLER e BAGG), abaixo de 30% cerca de 75% não progridem e acima de 60% todos luxam (Tachdjian p. 1466). BAGG achou **mais dor nos quadris luxados que nos subluxados**, mas quase 25% dos quadris reduzidos também doíam (Tachdjian p. 1467). A frase pede ressalva, porque outras séries acharam a maioria dos luxados sem dor: 71% de 38 quadris luxados em adultos aos 34 anos (KNAPP e CORTES, p. 1466) e 57% aos 26 anos (COOPERMAN, p. 1468); NOONAN achou só 18% de 154 quadris claramente dolorosos aos 40 anos (p. 1466).
 
 !tabela ROBIN e GRAHAM pelo índice de REIMERS (Tachdjian p. 1466)
-| Grau | Índice de migração |
-|---|---|
-| I | Menor que 10% |
-| II | 10% a 15% |
-| III | 15% a 30% |
-| IV | 30% a 60% |
-| V | 60% a 100% |
-| VI | Luxado |
-| VII | Após salvamento |
+| Grau | Original (2 a 7 anos) | Versão ampliada |
+|---|---|---|
+| I | Menor que 10% | Menor que 10% |
+| II | 10% a 15% | 10% a 15% |
+| III | 15% a 30% | 15% a 30% |
+| IV | 30% a 100% | 30% a 60% |
+| V | Luxado, índice acima de 100% | 60% a 100% |
+| VI | Não existe | Luxado |
+| VII | Não existe | Após cirurgia de salvamento |
 !fim
+
+A classificação original de ROBIN e GRAHAM, para crianças de 2 a 7 anos, tinha cinco graus e terminava no quadril luxado; a versão ampliada partiu o grau IV em dois e acrescentou o luxado (VI) e o operado por salvamento (VII). MURNAGHAN mostrou que ela é bem reprodutível (Tachdjian p. 1466).
 
 A reconstrução usa a osteotomia varizante e derrotativa do fêmur com liberações, e acrescenta osteotomia pélvica quando o índice passa de 50%; a DEGA exige trirradiada aberta (MUBARAK: índice acetabular acima de 25 graus e migração acima de 40%), e a deficiência costuma ser posterior, o que desaconselha a SALTER (Tachdjian p. 1470 a 1474). Para a luxação antiga e dolorosa, ressecção proximal do fêmur (3 cm abaixo do trocânter menor), osteotomia valgizante, artrodese ou artroplastia (Tachdjian p. 1478 a 1481).
 
