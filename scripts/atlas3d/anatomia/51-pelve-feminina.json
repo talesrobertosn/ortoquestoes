@@ -1,0 +1,49 @@
+{
+  "lote": "51-pelve-feminina",
+  "fonte": "netter-6",
+  "paginas_lidas": [669, 672, 673, 674, 675, 676],
+  "registros": [
+    {
+      "chave": "utero", "tipo": "orgao", "nome": "Útero", "en": "Uterus",
+      "ids": ["fem_utero"], "regiao": "pelve-perineo",
+      "localizacao": "Na pelve, entre a bexiga (à frente, separada pela escavação vesicouterina) e o reto (atrás, separado pela escavação retouterina, de Douglas); o peritônio cobre suas faces posterior, superior e anterior antes de passar à face superior da bexiga.",
+      "partes": "Fundo, corpo e colo. Os ligamentos largos o prendem às paredes laterais da pelve; o ligamento redondo sai logo abaixo da entrada da tuba, cruza os vasos ilíacos externos e passa pelo canal inguinal até o lábio maior.",
+      "irriga": "Artérias uterinas, ramos das ilíacas internas, que chegam à base do útero pelo ligamento largo.",
+      "drenagem": "Plexo venoso uterino para as ilíacas internas. Linfa para os linfonodos ilíacos externos, ilíacos internos e sacrais e, pelo ligamento redondo, para os inguinais superficiais.",
+      "clinica": "Coleções de sangue ou pus na escavação retouterina formam abscessos pélvicos. Depois da menopausa o útero e a vagina atrofiam.",
+      "notas": "Modelo 3D da Human Reference Atlas (HuBMAP, Visible Human Female, CC BY 4.0), encaixado na pelve do modelo masculino do atlas: a posição é aproximada.",
+      "ver": ["colo-do-utero", "tubas-uterinas", "ovarios", "bexiga"],
+      "fonte": [{ "l": "netter-6", "p": [672, 673, 675, 676] }], "status": "verificado"
+    },
+    {
+      "chave": "colo-do-utero", "tipo": "orgao", "nome": "Colo do útero", "en": "Cervix of uterus",
+      "ids": ["fem_colo_do_utero"], "regiao": "pelve-perineo",
+      "localizacao": "Parte inferior e estreita do útero, que se projeta na vagina; faz parte do canal do parto, com a abertura superior da pelve, a pelve verdadeira, a vagina e a abertura inferior.",
+      "irriga": "Artérias uterinas e vaginais (ramos das uterinas, com anastomoses com as pudendas internas).",
+      "notas": "Modelo 3D da HuBMAP (CC BY 4.0), em posição aproximada.",
+      "ver": ["utero"],
+      "fonte": [{ "l": "netter-6", "p": [669, 675] }], "status": "verificado"
+    },
+    {
+      "chave": "ovarios", "tipo": "orgao", "nome": "Ovário", "en": "Ovary",
+      "ids": ["fem_ovario"], "regiao": "pelve-perineo",
+      "localizacao": "Na parede lateral da pelve, preso à face posterior do ligamento largo pelo mesovário; o ligamento próprio do ovário vai do seu polo medial à parede lateral do útero, e o ligamento suspensor leva os vasos ováricos.",
+      "funcao": "Produz os óvulos. É coberto só por uma fina camada de mesotélio, o que permite a ovulação para a cavidade peritoneal.",
+      "clinica": "Por isso a gravidez ectópica pode ocorrer no ovário (rara) ou no peritônio (muito rara).",
+      "notas": "Modelo 3D da HuBMAP (CC BY 4.0), em posição aproximada.",
+      "ver": ["tubas-uterinas", "utero"],
+      "fonte": [{ "l": "netter-6", "p": [675, 676] }], "status": "verificado"
+    },
+    {
+      "chave": "tubas-uterinas", "tipo": "orgao", "nome": "Tuba uterina", "en": "Uterine tube",
+      "ids": ["fem_tuba_uterina"], "regiao": "pelve-perineo",
+      "localizacao": "Cerca de 10 cm, do corno do útero até a cavidade peritoneal junto ao ovário, na borda livre superior do ligamento largo (mesossalpinge).",
+      "partes": "Istmo, ampola (a parte mais larga) e infundíbulo com as fímbrias, aberto na cavidade peritoneal.",
+      "funcao": "Leva o óvulo do ovário à cavidade do útero; a fecundação costuma ocorrer na ampola.",
+      "clinica": "A gravidez tubária é a forma mais comum de gravidez ectópica; a obstrução das tubas causa infertilidade.",
+      "notas": "Modelo 3D da HuBMAP (CC BY 4.0), em posição aproximada.",
+      "ver": ["ovarios", "utero"],
+      "fonte": [{ "l": "netter-6", "p": [675, 676] }], "status": "verificado"
+    }
+  ]
+}

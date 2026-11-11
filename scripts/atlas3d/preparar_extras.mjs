@@ -3,6 +3,7 @@
 //   modelos/regions.glb + camada "region"   regiões topográficas da superfície (fossa poplítea, região deltóidea…)
 //   nomes-ta2.json                          nome em português da Terminologia Anatômica (TA2) para cada estrutura
 //   arvore.json                             onde cada estrutura fica na hierarquia do Z-Anatomy (sistema › parte › …)
+//   modelos/female.glb + camada "female"   pelve feminina (útero, colo, ovários, tubas) da HuBMAP, se <z>/feminino/female.glb existir
 //
 // Antes, no Blender 3.6 (fora do git, ver docs/atlas3d/ANDAMENTO.md):
 //   blender --background --factory-startup --disable-autoexec Startup.blend --python scripts/atlas3d/blender/inventario.py -- <z>/trabalho/inventario.json
@@ -40,7 +41,7 @@ const MANUAL = {
   'testis': 'Testículo', 'ductus deferens': 'Ducto deferente', 'glans penis': 'Glande do pênis', 'pleura': 'Pleura', 'retina': 'Retina',
   'ureter': 'Ureter', 'fascia lata': 'Fáscia lata', 'linea alba': 'Linha alba', 'cauda equina': 'Cauda equina', 'chorda tympani': 'Corda do tímpano',
   'nervous system & sense organs': 'Sistema nervoso e órgãos dos sentidos', 'palm': 'Palma da mão', 'semimembranosus bursa': 'Bolsa do semimembranáceo',
-  'middle genicular artery': 'Artéria média do joelho', 'extensor carpi ulnaris': 'Extensor ulnar do carpo', 'levator ani': 'Levantador do ânus', 'subfacial prepatellar bursa': 'Bolsa pré-patelar subfascial',
+  'middle genicular artery': 'Artéria média do joelho', 'extensor carpi ulnaris': 'Extensor ulnar do carpo', 'uterine tube': 'Tuba uterina', 'levator ani': 'Levantador do ânus', 'subfacial prepatellar bursa': 'Bolsa pré-patelar subfascial',
 }
 /** Acabamento: grafia brasileira e erros conhecidos da coluna portuguesa da TA2. */
 function polir(pt) {
@@ -127,6 +128,25 @@ for (const r of regs) {
 for (const no of gltf.nodes) if (novoNome.has(no.name)) no.name = novoNome.get(no.name); else if (no.mesh !== undefined) delete no.mesh
 writeFileSync(join(SAIDA, 'modelos', 'regions.glb'), regravarGlb(glbReg, gltf))
 catalogo.camadas.region = { estruturas: nRegioes, arquivo: 'regions.glb', kb: Math.round(readFileSync(join(SAIDA, 'modelos', 'regions.glb')).length / 1024) }
+
+// ---------- pelve feminina (HuBMAP, CC BY 4.0; ver scripts/atlas3d/blender/exportar_feminino.py) ----------
+catalogo.estruturas = catalogo.estruturas.filter((e) => e.k !== 'female')
+delete catalogo.camadas.female
+const FEM = {
+  fem_utero: ['Uterus', 'Uterus'], fem_colo_do_utero: ['Cervix of uterus', 'Cervix uteri'],
+  fem_ovario_l: ['Ovary', 'Ovarium'], fem_ovario_r: ['Ovary', 'Ovarium'],
+  fem_tuba_uterina_l: ['Uterine tube', 'Tuba uterina'], fem_tuba_uterina_r: ['Uterine tube', 'Tuba uterina'],
+}
+const femJson = join(z, 'feminino', 'female.json')
+if (existsSync(femJson)) {
+  const fem = ler(femJson)
+  for (const p of fem.pecas) {
+    const [en, la] = FEM[p.id]
+    catalogo.estruturas.push({ id: p.id, k: 'female', s: p.id.endsWith('_l') ? 'e' : p.id.endsWith('_r') ? 'd' : 'm', en, la, b: p.b })
+  }
+  copyFileSync(join(z, 'feminino', 'female.glb'), join(SAIDA, 'modelos', 'female.glb'))
+  catalogo.camadas.female = { estruturas: fem.pecas.length, arquivo: 'female.glb', kb: Math.round(readFileSync(join(SAIDA, 'modelos', 'female.glb')).length / 1024) }
+}
 writeFileSync(join(SAIDA, 'estruturas.json'), JSON.stringify(catalogo))
 
 // ---------- nomes em português (TA2) ----------
@@ -163,6 +183,13 @@ for (const e of catalogo.estruturas) {
   if (!o?.pai) continue
   arvore[e.id] = no(o.pai)
   comArvore++
+}
+// a pelve feminina não vem do Z-Anatomy: entra na mesma árvore, em "Sistemas viscerais"
+const visc = nos.findIndex((n) => n[0] === 'Sistemas viscerais')
+if (visc >= 0) {
+  const gen = nos.length
+  nos.push(['Órgãos genitais femininos internos', visc])
+  for (const e of catalogo.estruturas) if (e.k === 'female') arvore[e.id] = gen
 }
 writeFileSync(join(SAIDA, 'arvore.json'), JSON.stringify({ n: nos, e: arvore }))
 

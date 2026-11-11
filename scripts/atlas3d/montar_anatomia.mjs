@@ -29,7 +29,7 @@ const FONTES = {
 // tipo → camada(s) do modelo onde as malhas do registro podem estar
 const TIPOS = {
   musculo: 'muscle', nervo: 'nerve', ligamento: 'connective', osso: 'bone', arteria: 'vessel', veia: 'vessel', fascia: 'fascia',
-  orgao: 'organ', encefalo: 'brain', linfatico: 'lymph', dente: 'tooth',
+  orgao: ['organ', 'female'], encefalo: 'brain', linfatico: 'lymph', dente: 'tooth',
 }
 // regiões ortopédicas (as primeiras) e as do resto do corpo
 const REGIOES = ['coluna', 'ombro', 'braco', 'cotovelo', 'antebraco', 'punho-mao', 'pelve-quadril', 'coxa', 'joelho', 'perna', 'tornozelo-pe',
@@ -104,7 +104,7 @@ for (const r of registros) {
   for (const id of r.ids ?? []) {
     const k = camadaDaBase.get(id)
     if (!k) erros.push(`${onde}: id inexistente no catálogo "${id}"`)
-    else if (k !== TIPOS[r.tipo]) erros.push(`${onde}: "${id}" é da camada ${k}, não ${TIPOS[r.tipo]}`)
+    else if (![TIPOS[r.tipo]].flat().includes(k)) erros.push(`${onde}: "${id}" é da camada ${k}, não ${TIPOS[r.tipo]}`)
     if (donoDoId.has(id)) erros.push(`${onde}: "${id}" já pertence a ${donoDoId.get(id)}`)
     donoDoId.set(id, r.chave)
   }

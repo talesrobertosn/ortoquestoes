@@ -79,5 +79,5 @@ export function nomeCompleto(e: Estrutura, faixa?: Faixa) {
 
 export const SINGULAR: Record<string, string> = {
   osso: 'Osso', musculo: 'Músculo', ligamento: 'Ligamento ou cápsula', nervo: 'Nervo', arteria: 'Artéria', veia: 'Veia',
-  fascia: 'Fáscia ou bolsa', linfatico: 'Linfático', orgao: 'Órgão', encefalo: 'Encéfalo', dente: 'Dente', regiao: 'Região do corpo',
+  fascia: 'Fáscia ou bolsa', linfatico: 'Linfático', orgao: 'Órgão', encefalo: 'Encéfalo', dente: 'Dente', regiao: 'Região do corpo', feminino: 'Órgão genital feminino',
 }
