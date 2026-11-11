@@ -318,7 +318,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 999 | Fim da onda 1 (13 miniaulas: 7 da anatomia do ombro e braço, 6 do cotovelo da criança) e começo da onda 2, comentários de 1.200 a 1.800 caracteres refeitos (36 miniaulas dos tendões extensores da mão), com figuras do Green, do Campbell, do Rockwood e do HEBERT |
 | 1000 | Onda 2: 44 miniaulas refeitas com figuras (33 da anatomia do quadril e coxa, com desenhos do Campbell, do Rockwood e do The Adult Hip; 11 dos tendões extensores da mão, Green) |
 | 1001 | Onda 2: 51 miniaulas refeitas com figuras (30 da anatomia da mão, punho e antebraço; 11 da anatomia do quadril e coxa; 10 da paralisia cerebral) |
-| (este PR) | Fim da onda 1 confirmado (nenhuma das 429 abaixo de 1.200 caracteres). Onda 2: 48 miniaulas refeitas com figuras (27 da paralisia cerebral, 12 da doença de BLOUNT, 9 da anatomia da mão) |
+| 1002 | Fim da onda 1 confirmado (nenhuma das 429 abaixo de 1.200 caracteres). Onda 2: 48 miniaulas refeitas com figuras (27 da paralisia cerebral, 12 da doença de BLOUNT, 9 da anatomia da mão) |
+| (este PR) | Onda 2: 45 miniaulas refeitas com figuras (24 de alinhamento, torções, BLOUNT e coxa vara; 11 de nervos periféricos; 10 de escoliose idiopática) |
 
 ## Próximo
 
