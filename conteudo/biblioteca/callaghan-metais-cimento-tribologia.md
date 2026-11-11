@@ -1,6 +1,6 @@
 ---
 id: callaghan-metais-cimento-tribologia
-versao: 1
+versao: 2
 titulo: Metais, cimento ósseo, tribologia e metal contra metal na artroplastia do quadril
 especialidade: quadril
 acesso: gratis
@@ -243,6 +243,16 @@ como: Os simulados perguntam a composição de cada parte, o motivo do pó pré-
 - Aplicar o cimento com **pressão contínua** (pressurizador ou uma esponja dentro de uma luva estéril). A pressão deve **exceder 5 kPa**, o limiar que **impede o sangue de laminar** entre o osso e o cimento.
 - A pressurização deve estar **completa antes de inserir a cúpula**; a cúpula não é o pressurizador.
 - As **cúpulas flangeadas** (desde 1976; a Ogee em 1981) foram feitas para aumentar a pressão de injeção e orientar a cúpula; estudos mais recentes mostraram que elas **não geram, de forma consistente, pressões maiores** que as sem flange. A sobrevida em longo prazo da cúpula flangeada cimentada foi de 77% em 21 anos.
+
+**A síndrome de implantação do cimento.** O capítulo 56 (Cemented Femoral Component, p. 723 e 724) trata do risco que a pressurização traz. A **"síndrome de implantação do osso e cimento"**, descrita há mais de 40 anos, caracteriza-se pela **queda súbita da pressão arterial no momento da inserção do cimento**: a gordura e o sangue empurrados para a circulação chegam ao pulmão pelo coração direito e têm efeito bioquímico sobre o tônus vascular, a coagulação e a contratilidade do miocárdio. Idosos, pacientes com pouca reserva cardíaca e os hipovolêmicos compensam pior a queda por vasoconstrição. O risco é maior na artroplastia por fratura do fêmur proximal, sobretudo na **hemiartroplastia**, em que a mortalidade relatada é **mais de 10 vezes maior**. PARVIZI, na Mayo Clinic, encontrou morte súbita em **0,05%** (11 em 22.666 artroplastias), sem nenhuma morte nas próteses não cimentadas; três pacientes morreram no momento da cimentação do fêmur.
+
+A prevenção é dividida entre o cirurgião e o anestesista (p. 724). O cirurgião reduz a quantidade de êmbolos com **lavagem e aspiração do canal** antes de instrumentar e cimentar, repetidas durante a cimentação, e com um tubo de aspiração para ventilar o canal. O **anestesista** monitora a pressão durante a cimentação (linha arterial nos pacientes de alto risco), faz **reposição volêmica antes de cimentar** com coloide ou cristaloide e deixa **inotrópicos e vasoconstritores** à mão. Nos pacientes de alto risco, cardiopatas, pneumopatas e fraturados, pode valer evitar a sobrepressurização e a compactação do cimento com os dedos.
+
+!questoes relacionadas=quadril-0016
+conceito: A síndrome de implantação do cimento é a queda súbita da pressão arterial na inserção do cimento, por gordura e sangue lançados à circulação; diminuiu com a lavagem e a aspiração do canal e com o cuidado anestésico (monitoração, volume antes de cimentar, inotrópicos e vasoconstritores à mão), segundo o The Adult Hip, cap. 56, p. 724.
+como: O TARO 2017 perguntou qual complicação da cimentação diminuiu com a melhora das técnicas de anestesia, com broncoespasmo, queda da pressão arterial, trombose venosa profunda e tromboembolismo pulmonar.
+armadilha: Marcar o tromboembolismo pulmonar: o que a gordura e o sangue causam na hora da cimentação é a hipotensão súbita, e é ela que o anestesista previne com volume e drogas vasoativas.
+!fim
 
 !questoes relacionadas=quadril-0016 treino=quadril-0542,quadril-0549
 conceito: Fêmur: preservar 2 a 3 mm de esponjoso forte (fresar agressivo reduz o cisalhamento), lavagem pulsátil, restritor, cimento a vácuo retrógrado pela pistola e pressurização (o restritor não a dispensa). Acetábulo: orifícios de ancoragem, lavagem, pressão contínua acima de 5 kPa (impede o sangue de laminar), pressurizar antes de pôr a cúpula; flange não gera pressão maior de forma consistente.

@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-21-coluna-cervical
-versao: 3
+versao: 4
 titulo: Lesões da coluna cervical na criança
 especialidade: pediatria
 acesso: gratis
@@ -133,6 +133,18 @@ A coluna da criança tem centros de ossificação, sincondroses e uma mobilidade
 
 A ausência da lordose cervical, o aumento das partes moles pré-vertebrais e a subluxação de C2 sobre C3 podem ser **normais** na criança. A sincondrose da base do odontoide se distingue de uma fratura pela **idade** e pela posição, **bem abaixo das facetas**.
 
+**O calendário de ossificação de C1 e C2.** O Rockwood não dá as idades de cada centro; o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 8, p. 89 e 90), dá. O **atlas** tem **três centros**: um para cada massa lateral e um para o corpo (o arco anterior), que **só aparece por volta de 1 ano**. Os **arcos posteriores fundem-se aos 3 a 4 anos**, e as massas laterais fundem-se ao corpo nas **sincondroses neurocentrais aos 7 anos** (Fig. 8.1); por isso o diâmetro interno definitivo do atlas está pronto aos 7 anos, e um traço nessa região depois dessa idade é fratura, não sincondrose. O **áxis** tem **cinco centros primários**: o corpo, os dois arcos neurais (massas laterais) e as **duas metades do dente**; a persistência das duas metades chama-se **dens bicornis**. O corpo liga-se às massas laterais pelas sincondroses neurocentrais e ao dente pela **sincondrose dentocentral**, que **fecha na maioria das crianças aos 6 anos** (todas as sincondroses de C2 fechadas aos 6 anos, Fig. 8.2). A **ponta do odontoide** aparece **entre 3 e 6 anos** e funde-se ao resto do dente **por volta dos 12 anos**; quando não se funde, é o **ossiculum terminale persistens**, variante normal sem instabilidade, às vezes confundida com o os odontoideum.
+
+!tabela Ossificação de C1 e C2 (Tachdjian 6, cap. 8, p. 89 e 90)
+| Vértebra | Centro ou sincondrose | Idade |
+| --- | --- | --- |
+| C1 | centro do corpo (arco anterior) | aparece por volta de 1 ano |
+| C1 | arcos posteriores | fundem-se aos 3 a 4 anos |
+| C1 | sincondroses neurocentrais (massas laterais com o corpo) | fecham aos 7 anos |
+| C2 | sincondrose dentocentral e neurocentrais | fecham na maioria aos 6 anos |
+| C2 | ponta do odontoide | aparece de 3 a 6 anos; funde-se por volta dos 12 |
+!fim
+
 **A pseudossubluxação.** Um deslocamento anterior de **C2 sobre C3** (ou de C3 sobre C4) de **até 3 mm** é comum nas radiografias da criança, estáticas ou dinâmicas, e pode existir até cerca de **11 anos**; a prevalência da pseudossubluxação fisiológica em C2-C3 chega a **20%**. Ela vem da mesma hipermobilidade (facetas horizontais e frouxidão) que leva as lesões para o alto.
 
 **A linha de SWISCHUK e ROWE** separa o fisiológico do patológico. Traça-se uma linha da **cortical anterior do processo espinhoso de C1** à do **processo espinhoso de C3**. A cortical anterior do espinhoso de **C2** deve ficar **a até 3 mm** dessa linha; se ficar mais longe, suspeita-se de **subluxação verdadeira**. Na pseudossubluxação, o corpo de C2 parece deslizado sobre C3, mas o arco posterior de C2 continua alinhado com os de C1 e C3 (Fig. 21-1). Um afastamento dos espinhosos de **C1 e C2 maior que 10 mm** também indica lesão ligamentar e pede ressonância.
@@ -239,7 +251,7 @@ alerta: O TARO 2009 (`pediatria-0770`) está sem gabarito oficial; o capítulo s
 
 O odontoide é uma fratura **relativamente comum** na coluna cervical da criança, com idade média de **4 anos**, e corresponde a cerca de **10%** das fraturas e luxações cervicais pediátricas (seção Odontoid Fracture).
 
-**A sincondrose dentocentral.** Uma linha de cartilagem na **base do dente**, entre ele e o corpo de C2, que **ossifica por volta dos 7 a 9 anos**. Antes disso, a fratura costuma passar **pela própria sincondrose**, e a lesão é **análoga a uma fise**, equivalente a uma **SALTER-HARRIS I**. A sincondrose fica **bem abaixo das facetas**, o que ajuda a distingui-la de uma fratura no nível delas.
+**A sincondrose dentocentral.** Uma linha de cartilagem na **base do dente**, entre ele e o corpo de C2, que **ossifica por volta dos 7 a 9 anos**. O Tachdjian (6ª ed., cap. 8, p. 90) dá uma idade menor: a sincondrose dentocentral **fecha na maioria das crianças aos 6 anos**. Antes disso, a fratura costuma passar **pela própria sincondrose**, e a lesão é **análoga a uma fise**, equivalente a uma **SALTER-HARRIS I**. A sincondrose fica **bem abaixo das facetas**, o que ajuda a distingui-la de uma fratura no nível delas.
 
 **Mecanismo.** Associa-se a trauma craniano; acidentes de carro, quedas de altura e esporte. ODENT relatou **8 de 15** fraturas em acidentes de carro com a criança presa em **cadeirinha voltada para a frente**. Os movimentos são **hiperflexão ou hiperextensão**, facilitados pela cabeça grande.
 
