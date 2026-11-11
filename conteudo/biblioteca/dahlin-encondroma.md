@@ -88,7 +88,7 @@ O Campbell (cap. 27, p. 928) diz o mesmo: as **falanges da mão** são o local m
 
 As alternativas que acompanham essa pergunta não competem: o Green (p. 2023 e 2024) põe na mão e no punho apenas 5% a 15% dos osteomas osteoides e 3% a 5% dos cistos ósseos aneurismáticos.
 
-!questoes central=tumores-0210
+!questoes central=tumores-0210 relacionadas=tumores-0334
 conceito: O encondroma é o tumor ósseo primário mais comum da mão (até 90% dos tumores ósseos da mão) e, de longe, o tumor mais comum dos ossos pequenos de mãos e pés.
 como: O CET-PR perguntou o tumor ósseo primário mais comum da mão, contra osteoma osteoide, cisto ósseo aneurismático e sarcoma de EWING.
 armadilha: Escolher o osteoma osteoide ou o cisto aneurismático, que aparecem na mão mas são muito menos frequentes.

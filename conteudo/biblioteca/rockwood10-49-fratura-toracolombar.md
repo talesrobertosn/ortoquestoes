@@ -486,7 +486,7 @@ As lesões vasculares e intra-abdominais acompanham **até 40%** das flexões-di
 
 > Na prova: **Chance (B1)** é a fratura toracolombar mais associada a **lesão abdominal**, porque o eixo fica à frente do corpo, onde está o cinto.
 
-!questoes central=coluna-0298 relacionadas=trauma-1113 treino=coluna-0551
+!questoes central=coluna-0298 relacionadas=trauma-1113,coluna-0350 treino=coluna-0551
 conceito: Na flexão-distração tipo Chance o eixo de rotação fica à frente do corpo vertebral, sob o cinto abdominal, o que explica a alta associação com lesões viscerais e vasculares.
 como: O TARO 2023 pediu o tipo de fratura toracolombar mais associado a lesões abdominais, com explosão, fratura-luxação e hiperextensão como distratores. O TARO 2007 perguntou onde fica o fulcro na flexão-distração; o acervo não registra o gabarito oficial, e pelo capítulo, na B1, o eixo fica à frente do corpo vertebral (na B2, costuma ficar dentro do corpo).
 armadilha: Explosão: também pode trazer lesão vascular e visceral, mas o intestino é lesado sobretudo na flexão-distração.

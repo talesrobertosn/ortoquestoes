@@ -294,7 +294,7 @@ conceito: Pseudartrose de cerca de 7% e necrose de cerca de 6% após fixação d
 
 Reduzir e fixar a fratura desviada do idoso falha muito. Nos ensaios randomizados com maiores de 60 anos, **pseudartrose ou falha da fixação** levam à reoperação em **30% a 50%** dos casos; no registro norueguês (55 a 70 anos), a reoperação maior foi de 27% após fixação, contra 3,8% após hemiartroplastia e 2,8% após artroplastia total. A principal causa de reoperação é a **falha da osteossíntese** (o osso osteoporótico segura mal o implante, a fratura colapsa e não consolida), que aparece nos primeiros meses; a necrose aparece mais tarde e nem sempre exige cirurgia.
 
-!questoes central=trauma-0340 treino=trauma-1558
+!questoes central=trauma-0340 relacionadas=quadril-0505 treino=trauma-1558
 conceito: No idoso fixado, a principal causa de reoperação é a falha da osteossíntese, não a necrose.
 como: A banca aposta que você vai escolher a necrose avascular, a complicação mais "famosa". O raciocínio cronológico resolve: a falha da fixação e a pseudartrose aparecem cedo e são mais frequentes; a necrose aparece depois da consolidação e muitos casos são assintomáticos.
 armadilha: Marcar necrose avascular.

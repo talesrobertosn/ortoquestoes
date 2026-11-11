@@ -142,7 +142,7 @@ alerta: A `joelho-0282` está sem gabarito oficial; a resposta provável segue o
 
 **A inclinação posterior da tíbia.** Um slope posterior maior desloca para a frente a posição de repouso da tíbia e aumenta a força no LCA, e se correlaciona com mais translação anterior. Num estudo de falhas precoces da reconstrução, o slope lateral médio foi de 8,4 graus, contra 6,5 nos controles; cada 2 graus a mais aumentaram o risco de falha (razão de chances de 1,6, chegando a 3,8 com 6 graus). Um slope 5 graus maior produz cerca de 2 mm a mais de translação anterior na marcha (p. 2286).
 
-!questoes central=joelho-0032 treino=joelho-0386
+!questoes central=joelho-0032 relacionadas=trauma-1038 treino=joelho-0386
 conceito: Mulheres atletas têm de 2 a 8 vezes mais lesões do LCA; têm fossa intercondilar mais estreita (índice menor), e a fossa estreita se associa à lesão sem contato.
 como: O TARO 2015 perguntou em que sexo a fossa é menor e se isso interfere na lesão.
 armadilha: Dizer que a fossa estreita não interfere: as lesões sem contato foram mais frequentes com índice baixo.

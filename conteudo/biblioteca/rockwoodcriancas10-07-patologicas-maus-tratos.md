@@ -98,7 +98,7 @@ Inventário **obrigatório abaixo de 2 anos** com suspeita, individualizado de 2
 
 Conduta: **internar** (ambiente seguro e avaliação social), acionar a equipe de proteção e **notificar a suspeita** (falso positivo é preferível; boa-fé protege o médico). No tribunal, o ortopedista pode ser testemunha de fato ou perito.
 
-!questoes treino=pediatria-1205,pediatria-1210
+!questoes relacionadas=conceitos-basicos-0307 treino=pediatria-1205,pediatria-1210
 conceito: Inventário abaixo de 2 anos, repetido em 2 semanas e estendido aos irmãos; suspeita = internar e notificar.
 como: Questões de projeção.
 armadilha: Dar alta sem notificar por falta de certeza.

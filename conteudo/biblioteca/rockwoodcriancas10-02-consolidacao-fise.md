@@ -121,7 +121,7 @@ O distúrbio do crescimento é a complicação típica da lesão fisária: costu
 
 **Tratamento.** Alteração estável: observar com regularidade. Deformidade presente ou progressiva: **hemiepifisiodese** ou **guia de crescimento** (grampos, parafusos, placas de tensão) e **osteotomia**, com ou sem epifisiodese completa. **Sem parada clara**, o guia no **lado convexo** corrige aos poucos (no valgo do fêmur distal, grampos mediais, Fig. 2-19); depois, completar a epifisiodese (às vezes também a do outro lado) ou retirar o guia e vigiar. **Nenhum método** de guia tem evidência de superioridade. A **ponte parcial** dá deformidade angular, distorção articular ou discrepância, conforme o local, o crescimento restante e a saúde da fise.
 
-!questoes central=pediatria-0538 relacionadas=pediatria-0641 treino=pediatria-1396,pediatria-1398,pediatria-1103
+!questoes central=pediatria-0538 relacionadas=pediatria-0641,conceitos-basicos-0042 treino=pediatria-1396,pediatria-1398,pediatria-1103
 conceito: A linha de HARRIS ou PARK marca um retardo temporário do crescimento; convergindo para a fise indica ponte, assimétrica sem convergir indica crescimento assimétrico, tratável com guia no lado convexo.
 como: O TARO 2024 perguntou o que as linhas de PARK e HARRIS significam nas fraturas fisárias (distúrbio de crescimento por retardo temporário); o TARO 2019, a causa de ponte com melhor resultado após a ressecção (trauma).
 armadilha: Ler toda linha de HARRIS como ponte formada, ou ressecar uma ponte que não existe.

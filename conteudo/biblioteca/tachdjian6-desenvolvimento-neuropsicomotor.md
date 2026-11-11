@@ -88,7 +88,7 @@ O **MORO**, descrito por MORO em 1918, continua um dos reflexos primitivos mais 
 
 O **reflexo do susto** (startle) é outro (p. 42). É provocado por um **ruído alto súbito** ou por um **toque no esterno**, que faz o bebê **fletir os cotovelos e os joelhos**. O livro o diferencia do MORO justamente pela direção: no MORO os membros **estendem**. O reflexo do susto está presente ao nascer e **nunca desaparece**.
 
-!questoes central=pediatria-0514
+!questoes central=pediatria-0514 relacionadas=pediatria-0756
 conceito: O toque no esterno (ou um ruído súbito) que faz o bebê fletir cotovelos e joelhos é o reflexo do susto; no MORO os membros estendem e abduzem primeiro; o susto nunca desaparece, o MORO some entre 3 e 6 meses.
 como: O ENARE R4 Ortopedia 2024 descreveu o estímulo e a resposta e pediu o nome do reflexo, com MORO, GALANT, retirada e paraquedas como distratores.
 armadilha: Marcar MORO porque é o reflexo "de susto" mais famoso; o MORO tem extensão e abdução na primeira fase e é provocado pela queda da cabeça.

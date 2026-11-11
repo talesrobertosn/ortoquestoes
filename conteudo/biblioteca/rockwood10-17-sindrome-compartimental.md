@@ -31,7 +31,7 @@ O capítulo separa três situações que a prova gosta de confundir:
 
 A história explica de onde vêm alguns números que a banca usa. **Volkmann**, em 1882, descreveu paralisia e contratura depois de enfaixamento apertado do antebraço e da mão, de natureza isquêmica; ele achava que o músculo **não sobrevivia mais de 6 horas** sem fluxo e que 12 horas de enfaixamento apertado podiam bastar para uma incapacidade permanente. Na Segunda Guerra, a culpa passou para a lesão arterial com espasmo; **Seddon**, em 1966, desmontou essa ideia ao notar edema precoce em todos os casos e **pulsos palpáveis em metade** deles. **McQuillan e Nolan** descreveram o ciclo vicioso (a tensão no compartimento fechado obstrui as veias e depois reduz a entrada de sangue) e concluíram que **o atraso na fasciotomia** era a principal causa de fracasso.
 
-!questoes relacionadas=trauma-0432,trauma-0046
+!questoes relacionadas=trauma-0432,trauma-0046,trauma-0151
 conceito: A síndrome de esforço é a elevação da pressão durante o exercício, que melhora com o repouso; a aguda é a que causa necrose sem descompressão; Volkmann é a sequela da aguda negligenciada.
 como: O TARO cobrou a síndrome crônica de esforço pela causa (exercício, 2018) e pelos compartimentos mais acometidos (anterior e lateral, 2023). O capítulo 17 só define a síndrome de esforço; o detalhe clínico dela não está aqui.
 armadilha: Aparelho gessado: é causa de síndrome aguda (envoltório externo), não da crônica.
@@ -201,7 +201,7 @@ Saber o conteúdo de cada compartimento é o que permite ler o exame: dor ao **e
 
 Três compartimentos, **anterior, posterior e adutor (medial)**, envolvidos pela fáscia lata e separados pelos septos intermusculares **medial e lateral**. O **anterior** (quadríceps, sartório, nervo femoral) é o mais acometido: dor à flexão passiva do joelho, dormência na face medial da perna e do pé, fraqueza da extensão do joelho. O **posterior** (isquiotibiais, nervo isquiático) dá dor à extensão passiva do joelho e fraqueza da flexão, com alteração sensitiva rara; há casos isolados documentados. O **adutor** (adutores, nervo obturatório) é raro.
 
-!questoes central=trauma-0767,trauma-0099,trauma-0419 relacionadas=trauma-0816,trauma-0916
+!questoes central=trauma-0767,trauma-0099,trauma-0419 relacionadas=trauma-0816,trauma-0916,trauma-0433
 conceito: A coxa tem três compartimentos (anterior, posterior e adutor), e o anterior é o mais acometido e o local do cateter.
 como: A pergunta do compartimento mais acometido da coxa caiu no TARO 2017 (fratura da diáfise do fêmur), no TEOT 2025 e no SBOT-SP; o TARO 2023 pediu a lista dos compartimentos, e o TARO 2012, qual septo separa medial e posterior (o capítulo só nomeia os septos medial e lateral, e nenhum livro local nomeia um septo posterior da coxa: o Campbell 15, cap. 1 p. 48 e cap. 53 p. 2246, e o Skeletal Trauma 5ª ed., cap. 16 p. 458, só citam o septo intermuscular lateral, que se abre para descomprimir o compartimento posterior).
 armadilha: Compartimento lateral da coxa: não existe como compartimento separado; a incisão lateral é só o acesso.

@@ -793,14 +793,26 @@
   "conferido": false
  },
  "conceitos-basicos-0042": {
+  "conceito": "A linha de HARRIS é uma cicatriz do tempo gravada na metáfise. Entender como ela se forma responde à questão e ainda ensina a usá-la, porque é uma das poucas ferramentas que a radiografia simples dá para vigiar uma fise lesada.\n\n**O que é.** O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 2, pág. PDF 112), descreve faixas de **trabeculado denso, transversais**, dentro da metáfise, chamadas linhas de HARRIS ou de PARK de **desaceleração ou parada do crescimento**. Surgem depois de eventos que **retardam temporariamente o crescimento** ou aumentam a mineralização: doença, bisfosfonato, infecção e trauma da fise. O mecanismo é simples: enquanto a fise anda devagar, a camada de osso que ela deixa na metáfise fica mais densa; quando o crescimento volta, a fise se afasta dessa faixa, e a distância entre as duas mede quanto o osso cresceu depois do evento. Com a remodelação, a linha fica para trás e acaba sumindo.\n\n**Como ler a linha depois de uma lesão fisária.** O capítulo transforma a linha em diagnóstico:\n\n| Aspecto da linha | O que significa |\n|---|---|\n| simétrica, paralela à fise | o crescimento voltou por igual |\n| simétrica em vários ossos | causa sistêmica |\n| **afilando até encostar na fise** | parada localizada, **ponte óssea**, risco de deformidade angular |\n| assimétrica, sem tocar a fise | crescimento assimétrico, mas sem parada |\n\nA figura é o exemplo do livro (Fig. 2-20): tíbia distal depois de uma SALTER-HARRIS IV. Em A, as setas marcam a linha atravessando a metáfise e descendo até tocar a fise do lado medial, onde se formou a ponte; a parte lateral continuou crescendo e se afastou dela. Em B, a mesma linha na tomografia. A ponte verdadeira costuma vir com **esclerose** e perda do contorno da fise; a tomografia com reconstruções e a ressonância mostram o tamanho dela (cap. 2, Fig. 2-20 e 2-21).\n\n**A pegadinha da aceleração.** O mesmo capítulo usa as linhas de HARRIS para **confirmar o hipercrescimento** do fêmur e da tíbia proximal medial depois de fraturas em crianças pequenas. Mas aí a linha é a régua, não o fenômeno: ela marca o momento em que o crescimento foi freado, e a distância maior até a fise mostra que depois houve aceleração. O nascimento da linha continua sendo um retardo.\n\n> **Na prova:** linha de HARRIS ou PARK = **retardo ou parada temporária do crescimento**. Convergindo para a fise = ponte. Paralela = crescimento retomado por igual.\n\nO tema está na seção \"Distúrbio de crescimento e linhas de HARRIS\" do resumo.",
+  "correta": "**D) Retardo ou parada do crescimento.** Pelo Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 2, pág. PDF 112), as linhas de HARRIS ou PARK aparecem depois de eventos que retardam temporariamente o crescimento, como o trauma da fise. A faixa densa é o osso deixado pela fise enquanto ela andava devagar; quando a linha afila até a fise, indica parada localizada com ponte óssea (Fig. 2-20).",
   "incorretas": {
-   "A": "A consolidação viciosa é um desvio do alinhamento de uma fratura e não produz essas linhas.",
-   "B": "O retardo de consolidação é um fenômeno do foco da fratura, e não da placa de crescimento.",
-   "C": "É o oposto: a linha marca uma interrupção do crescimento, e não uma aceleração."
+   "A": "**Consolidação viciosa** é um defeito de alinhamento do foco da fratura, um problema da diáfise ou da metáfise que consolidou torta, e não deixa uma faixa transversal densa paralela à fise. A deformidade que a lesão fisária pode causar vem por outro caminho: a ponte trava um lado da fise e o osso entorta ao crescer, e aí a linha de HARRIS é a pista, convergindo para a ponte (Rockwood and Wilkins, cap. 2).",
+   "B": "**Retardo de consolidação** é um atraso na união do foco da fratura, que se avalia pelo calo e pelo traço, não pela fise. A palavra \"retardo\" é a isca: o que a linha de HARRIS registra é o retardo do **crescimento** longitudinal, um fenômeno da placa fisária, e não da cicatrização do osso fraturado.",
+   "C": "**Aceleração do crescimento** é o inverso do que a linha marca, embora apareça no mesmo capítulo. O Rockwood and Wilkins (cap. 2) usa as linhas de HARRIS para confirmar o hipercrescimento do fêmur e da tíbia proximal medial, mas como régua: a linha nasce do freio e, depois dela, a distância maior até a fise denuncia que o osso cresceu mais. A formação da linha é sempre um retardo."
   },
-  "conceito": "As **linhas de Harris** são faixas brancas finas, densas, que aparecem na radiografia atravessando a metáfise, **paralelas à placa de crescimento** (fise). Também são chamadas de linhas de parada de crescimento.\n\nElas se formam assim: por algum motivo (doença grave, desnutrição, quimioterapia, imobilização prolongada ou um trauma na fise), o crescimento do osso em comprimento **para ou fica mais lento** por um período. Quando o crescimento volta, a camada de osso formada durante a pausa fica registrada como uma faixa mais densa. É como os anéis de uma árvore. Ou seja, as linhas de Harris representam um **retardo ou parada do crescimento** que depois foi retomado.\n\nElas são muito úteis no acompanhamento das **fraturas da placa de crescimento**:\n\nSe a linha aparece **paralela** à fise, o crescimento voltou de forma simétrica, um bom sinal.\n\nSe a linha **converge** para um lado ou termina encostada na fise, é sinal de que se formou uma **ponte óssea** naquele ponto, travando o crescimento só de um lado. Com o tempo, isso causa um desvio angular do osso.\n\nSe nenhuma linha aparece meses depois, deve-se suspeitar de parada completa do crescimento.",
-  "correta": "Retardo ou parada do crescimento. A linha é o registro de uma pausa no crescimento que depois foi retomado.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 2 (Fracture Repair in Children), pág. PDF 110 a 114, Fig. 2-20",
+   "Resumo OrtoQuestões: Consolidação, fise e remodelação na criança"
+  ],
+  "imagens": [
+   {
+    "arquivo": "conceitos-basicos/rwc10-2-20-v11.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 2, Fig. 2-20 A e B (pág. PDF 111; arquivo sem página impressa). Tíbia distal depois de uma fratura SALTER-HARRIS IV: em A, na radiografia, a linha de HARRIS (setas) corre pela metáfise e afila até encostar na fise do lado medial, onde se formou a ponte; em B, a mesma linha na tomografia.",
+    "largura": 724,
+    "altura": 430
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "conceitos-basicos-0043": {
@@ -873,14 +885,26 @@
   "conferido": false
  },
  "conceitos-basicos-0047": {
+  "conceito": "A serra de gesso tem fama de não cortar pele, e é verdade: a lâmina **oscila**, não gira, e corta o material duro sem cortar o macio, que acompanha o vaivém. O perigo dela é outro, e é dele que a questão trata: o **calor**.\n\n**Por que a serra queima.** O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 4, pág. PDF 177), dá o tamanho do problema: numa série, **0,72%** das retiradas de gesso terminaram em queimadura pela serra. O atrito aquece a lâmina, e três fatores a deixam mais quente: **gesso grosso**, **pouco acolchoamento** e **lâmina gasta**. A lâmina cega esfrega em vez de cortar e acumula calor a cada passada. A figura do livro (Fig. 4-10) mostra o resultado: queimaduras lineares na perna de uma criança, desenhando a trilha do corte, depois as cicatrizes, e uma terceira lesão no pé.\n\n**A técnica certa.** O livro aponta o erro mais comum: **deslizar a serra ao longo do gesso**, o que aumenta a chance de corte ou queimadura. O correto é **pressionar com firmeza, relaxar, retirar a lâmina e recolocá-la em outro ponto**, avançando aos saltos; o operador deve **tocar a lâmina de tempos em tempos** e **pausar para esfriar** quando preciso. Tiras de proteção de plástico, deslizadas entre a pele e o algodão na hora da retirada ou incorporadas ao gesso na aplicação, tornam a queimadura excepcional, desde que a serra só corra sobre elas.\n\n**O que mais esquenta.** O resumo reúne outros detalhes do mesmo capítulo: cortar em curva, como numa janela, aquece a lâmina; o gesso de paris coberto por fibra de vidro, além de reter calor na presa, dificulta sentir a lâmina na retirada; abrir um gesso de paris ainda morno e mole, antes de uns 10 minutos, expõe a pele. Quem tem a sensibilidade diminuída, ou a criança pequena, não avisa que está quente, e o protetor de ouvido diminui a ansiedade.\n\n| Fator | Efeito na lâmina |\n|---|---|\n| lâmina afiada | corta, aquece menos |\n| lâmina gasta | esfrega, aquece mais |\n| movimento intermitente | contato curto, tempo para esfriar |\n| deslizar continuamente | contato longo, corte ou queimadura |\n\n> **Na prova:** retirada do gesso = **lâmina afiada + pressionar e retirar**, nunca deslizar. Lâmina gasta, gesso grosso e pouco algodão esquentam a serra.\n\nO assunto está na seção \"Abrir, janela, cunha e retirada\" do resumo.",
+  "correta": "**B) Afiadas, movendo-se a lâmina de forma intermitente.** O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 4, pág. PDF 177), atribui a temperatura maior da lâmina ao gesso grosso, ao pouco algodão e à **lâmina gasta**, e descreve a técnica correta: pressão firme alternada com relaxamento, retirada e recolocação em outro ponto, com pausas para esfriar. Lâmina afiada e contato curto são as duas metades da prevenção da queimadura.",
   "incorretas": {
-   "A": "A lâmina afiada está certa, mas o movimento contínuo prolonga o contato e aquece a pele.",
-   "C": "Erra os dois: a lâmina cega e o movimento contínuo aumentam o calor.",
-   "D": "O movimento intermitente está certo, mas a lâmina pouco afiada esquenta por atrito."
+   "A": "**Afiadas, movendo-se a lâmina de forma contínua** acerta a lâmina e erra o gesto. Deslizar a serra ao longo do gesso é o erro mais comum apontado pelo Rockwood and Wilkins (cap. 4, pág. PDF 177): o contato prolongado esquenta a lâmina e aumenta a chance de corte ou queimadura, mesmo com lâmina boa. O movimento contínuo só é seguro com a tira de proteção por baixo, e ainda assim a técnica recomendada é a intermitente.",
+   "C": "**Pouco afiadas, movendo-se a lâmina de forma contínua** junta os dois fatores de risco. A lâmina gasta está na lista do Rockwood and Wilkins (cap. 4, pág. PDF 177) entre as causas de temperatura maior, porque esfrega em vez de cortar, e o deslizamento contínuo é o erro técnico que o livro manda evitar. É a pior combinação possível, a que produz as queimaduras lineares da Fig. 4-10.",
+   "D": "**Pouco afiadas, movendo-se a lâmina de forma intermitente** acerta o movimento e erra a lâmina. A ideia de que a lâmina cega seria mais \"segura\" para a pele é intuitiva, mas o problema da serra oscilante não é o corte, é o calor, e o Rockwood and Wilkins (cap. 4, pág. PDF 177) mostra que a lâmina gasta aquece mais. O movimento intermitente ajuda, mas não compensa o atrito de uma lâmina sem fio."
   },
-  "conceito": "A serra usada para retirar gesso não gira como uma serra comum: a lâmina **oscila**, vai e volta muito rápido numa pequena amplitude. Isso permite cortar o gesso, que é rígido, sem cortar a pele, que é elástica e acompanha o movimento da lâmina.\n\nO que pode machucar o paciente é o **calor**. A lâmina esquenta por atrito, e uma lâmina quente encostada na pele causa **queimadura**. Duas coisas aumentam esse calor:\n\nUma lâmina **cega**, que esfrega em vez de cortar.\n\nO **contato prolongado** da lâmina num mesmo ponto ou deslizando ao longo do gesso.\n\nPor isso as regras são:\n\nUsar lâmina **afiada**.\n\nUsar **movimento intermitente**: apoiar a lâmina, cortar, retirar, e avançar para o ponto seguinte, em vez de arrastar a lâmina continuamente ao longo do gesso.\n\nEvitar cortar sobre proeminências ósseas (como os tornozelos), onde há pouco tecido protegendo a pele.\n\nTer mais cuidado com gesso de fibra de vidro (que esquenta mais), com acolchoamento fino, com crianças e com pacientes que têm a sensibilidade diminuída e não avisam que está quente.",
-  "correta": "Afiadas, movendo-se a lâmina de forma intermitente. A lâmina afiada corta sem atrito, e o movimento de entrar e sair evita o aquecimento num só ponto.",
-  "geradoEm": "2026-10-03",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 4 (Cast and Splint Immobilization), pág. PDF 177 e 178, Fig. 4-10",
+   "Resumo OrtoQuestões: Tratamento conservador e imobilização"
+  ],
+  "imagens": [
+   {
+    "arquivo": "conceitos-basicos/rwc10-4-10-v11.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 4, Fig. 4-10 (pág. PDF 178; arquivo sem página impressa). Queimaduras pela serra de gesso: à esquerda, as lesões lineares recentes ao longo da perna, na trilha do corte; ao centro, as mesmas cicatrizadas; à direita, outra queimadura, no pé.",
+    "largura": 710,
+    "altura": 360
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "conceitos-basicos-0048": {
@@ -4544,17 +4568,27 @@
   "conferido": false
  },
  "conceitos-basicos-0301": {
+  "conceito": "O pé SACH (solid ankle cushion heel) é o pé protético mais simples que existe, e a banca descreveu o seu candidato ideal pelo avesso. Para perceber a troca é preciso entender o que um pé sem articulação faz com o joelho.\n\n**Como ele é.** O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 30, p. 1585), divide os pés protéticos em cinco grupos: SACH, eixo único, multiaxial, quilha elástica e resposta dinâmica. O SACH **não tem partes articuladas**: o movimento entre o toque do calcanhar e a saída dos dedos depende só da compressão dos materiais. Na figura (Fig. 30-52A, p. 1586), o **calcanhar compressível** (heel cushion) amortece o toque e simula a flexão plantar; a **quilha rígida** (keel), dentro da espuma, sustenta o apoio. A legenda do livro dá a chave: o **comprimento da quilha controla o braço de alavanca dos dedos e, portanto, o momento de hiperextensão no joelho**.\n\n**Por que isso estabiliza o joelho.** No fim do apoio, a quilha rígida mantém a força de reação do solo à frente do joelho e o empurra em extensão. Quem tem quadríceps forte não precisa dessa ajuda; quem não tem, precisa. Por isso o Lovell and Winter (p. 1585) indica o SACH **quando o amputado precisa de estabilidade máxima no apoio tardio por extensores do joelho fracos, contratura em flexão do joelho ou equilíbrio ruim** no meio e no fim do apoio. É exatamente o contrário do enunciado.\n\n**Os outros pés.** O de **eixo único** tem batentes de borracha que permitem dorsiflexão e flexão plantar passivas; serve melhor ao **transfemoral**, que precisa de contato total do pé com o chão para estabilidade, e não existe em tamanho infantil. O **multiaxial** permite inversão e eversão e absorve forças em terreno irregular; o de **resposta dinâmica** tem uma mola na quilha e serve ao ativo e esportista. Em marcha lenta, a diferença entre o dinâmico e o SACH é pequena (p. 1586). Na criança, o SACH é usado quando o pé tem **menos de 12 cm**.\n\n| Pé | Indicação no Lovell and Winter |\n|---|---|\n| SACH | estabilidade tardia: quadríceps fraco, contratura em flexão, equilíbrio ruim |\n| Eixo único | transfemoral que precisa de contato total do pé |\n| Multiaxial | terreno irregular, absorção de forças |\n| Resposta dinâmica | ativo, esportes |\n\nO Campbell's Operative Orthopaedics, 15ª ed. (cap. 17, p. 697), lembra outro uso clássico: a prótese do SYME, com janela medial removível e pé SACH, porque o coto longo deixa pouco espaço para um tornozelo articulado.\n\n> **Na prova:** SACH = sem articulação, quilha que estende o joelho; indicado para **quadríceps fraco ou contratura em flexão**. Joelho forte e livre não é o que o indica.\n\nO resumo trata da prótese na seção \"Do curativo rígido à prótese\"; a indicação do pé SACH vem do Lovell and Winter.",
+  "correta": "**B) Errado.** O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 30, p. 1585), indica o pé SACH justamente quando o amputado precisa de estabilidade máxima no apoio tardio por **extensores do joelho fracos, contratura em flexão do joelho** ou equilíbrio ruim. A quilha rígida gera um momento de hiperextensão que trava o joelho (Fig. 30-52A, p. 1586). Quadríceps forte e joelho sem contratura descrevem o paciente que menos depende dessa ajuda.",
   "incorretas": {
-   "A": "**Certo seria possível em um caso individual bem selecionado.** Um adulto com essas características e marcha de baixa demanda pode usar SACH; a ressalva é que as duas características citadas não estabelecem indicação universal."
+   "A": "**Certo** seria a resposta se o SACH fosse um pé para o usuário de alta demanda, que ganha com um joelho forte e livre. É o contrário: o Lovell and Winter (cap. 30, p. 1585) reserva o SACH para quem precisa que a prótese estabilize o joelho, com quadríceps fraco ou contratura em flexão. O paciente forte, ativo e sem contratura é o candidato aos pés multiaxiais e de resposta dinâmica, que dão mais movimento e impulsão."
   },
-  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. A resposta provável “Errado” foi mantida. Contudo, força do quadríceps e ausência de contratura não contraindicam o pé SACH: apenas não são critérios suficientes nem específicos para prescrevê-lo. A redação permite uma leitura mais ampla e, por isso, não sustenta uma exclusão absoluta.",
-  "conceito": "**Como funciona o SACH.** O pé SACH tem tornozelo sólido e calcanhar compressível. A deformação do calcanhar simula a flexão plantar após o contato inicial; a quilha rígida oferece apoio na fase de suporte. É uma opção simples, leve e durável, mas tem pouca adaptação a terreno irregular e não oferece resposta dinâmica significativa.\n\n**Escolha funcional.** A prescrição considera nível e causa da amputação, velocidade e terreno de marcha, equilíbrio, estabilidade do joelho e objetivos do usuário. O SACH costuma servir melhor à marcha de menor demanda. Um pé de eixo único pode alcançar o apoio plantar mais cedo e favorecer a estabilidade inicial do joelho em quem tem extensores fracos.\n\n**O que a frase omite.** Quadríceps forte e joelho sem contratura favorecem a reabilitação, porém não definem, por si só, o tipo de pé protético. Também não tornam o SACH proibido. A distinção relevante é entre um dispositivo básico, sem articulação de tornozelo, e alternativas escolhidas conforme demanda funcional e controle da marcha.",
-  "correta": "**Errado é a resposta provável cadastrada pela falta de indicação específica.** Força do quadríceps e ausência de contratura, isoladamente, não bastam para indicar o SACH em todo adulto.",
-  "referencias": [
-   "Morrissy RT, Weinstein SL. Lovell and Winter’s pediatric orthopaedics. Philadelphia: Lippincott Manole. 5ª edição, p. 1262."
-  ],
   "provavel": "B",
-  "geradoEm": "2026-09-30",
+  "alerta": "A banca não divulgou o gabarito desta prova; a resposta foi definida pelo Orto Questões pela bibliografia e conta no seu desempenho. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 30, p. 1585), a mesma obra citada pela banca em edição anterior, indica o pé SACH para extensores do joelho fracos e contratura em flexão do joelho, o que torna a afirmação errada. O resumo de amputações do Campbell não discute a indicação dos pés protéticos.",
+  "referencias": [
+   "Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 30 (The Child with a Limb Deficiency), p. 1585 e 1586, Fig. 30-52",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 17, p. 697",
+   "Resumo OrtoQuestões: Amputações e próteses"
+  ],
+  "imagens": [
+   {
+    "arquivo": "conceitos-basicos/lw7-30-52a-v11.jpeg",
+    "legenda": "Fonte: Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (2014), cap. 30, Fig. 30-52A, p. 1586. Pé SACH em corte: a quilha rígida (keel) dentro da espuma, o calcanhar compressível (heel cushion) e a cinta plantar (belting); o comprimento da quilha define o braço de alavanca dos dedos e, com ele, o momento de hiperextensão no joelho.",
+    "largura": 1050,
+    "altura": 330
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "conceitos-basicos-0302": {
@@ -4643,16 +4677,20 @@
   "conferido": false
  },
  "conceitos-basicos-0307": {
+  "conceito": "Esta não é uma questão de ortopedia pura, e por isso vale começar pelo que ela cobra. O **Estatuto da Criança e do Adolescente** (ECA, Lei nº 8.069, de 1990) é a lei brasileira que organiza a proteção da criança e do adolescente; o **Conselho Tutelar** é o órgão municipal que recebe as comunicações e aciona a rede de proteção. O ortopedista entra nessa história porque atende uma parte grande das crianças maltratadas: o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), estima que ele participe do cuidado de **30% a 50%** delas.\n\n**O que a lei diz.** O artigo 13 do ECA, na redação da Lei nº 13.010, de 2014, determina que os casos de **suspeita ou confirmação** de castigo físico, de tratamento cruel ou degradante e de maus-tratos contra criança ou adolescente sejam **obrigatoriamente comunicados ao Conselho Tutelar**. O artigo 245 transforma a omissão em infração: o médico, o professor ou o responsável por estabelecimento de saúde ou de ensino que deixar de comunicar os casos de que tenha conhecimento, **envolvendo suspeita ou confirmação**, fica sujeito a multa de três a vinte salários de referência, em dobro na reincidência. A palavra \"somente\" do enunciado inverte a regra.\n\n**Por que a lei pede a suspeita.** O Rockwood and Wilkins (cap. 7) explica a lógica médica: a notificação funciona como **teste de triagem**, e o falso positivo é muito preferível ao falso negativo, que pode ser fatal. A criança devolvida sem diagnóstico sofre nova lesão grave em **25%** dos casos e morre em **5%**; o Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 1154 e 1218), dá **30% a 50%** de nova lesão e **5% a 10%** de morte. Mesmo assim, os médicos deixaram de notificar **27%** das lesões tidas como prováveis e **76%** das possíveis. Quem notifica de **boa-fé**, com crença razoável, tem imunidade; o médico não precisa provar nada, só não pode calar.\n\n**Na prática.** Reconhecida a suspeita, o primeiro passo é **internar**: protege a criança, permite completar a investigação (inventário esquelético abaixo de 2 anos, repetido em 2 semanas) e abre espaço para a avaliação social. O Tachdjian (p. 1154 e 1155) ensina a conversar com a família **explicando o dever legal sem acusar**; o cuidador que reage com indignação ou ameaça aumenta a suspeita. A confirmação é tarefa da equipe e das autoridades, depois.\n\n> **Na prova:** suspeita **ou** confirmação, sempre comunicadas ao Conselho Tutelar (ECA, art. 13); omitir é infração (art. 245). Notificar é triagem, não acusação.\n\nA conduta está na seção \"Internar, notificar e depor\" do resumo.",
+  "correta": "**B) Errado.** O artigo 13 do Estatuto da Criança e do Adolescente manda comunicar ao Conselho Tutelar os casos de **suspeita ou confirmação** de maus-tratos, e o artigo 245 pune com multa o médico que deixa de comunicá-los. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 7), dá a razão clínica: a notificação é uma triagem em que o falso positivo é preferível ao falso negativo, porque a criança devolvida sem diagnóstico volta a se ferir em 25% dos casos e morre em 5%.",
   "incorretas": {
-   "A": "**Certo seria a obrigação de comunicar suspeitas e confirmações.** A alternativa só se sustentaria se retirasse “somente casos confirmados” e incluísse os casos suspeitos."
+   "A": "**Certo** exigiria que o médico esperasse a prova do abuso antes de agir, e a lei diz o oposto: o ECA (art. 13) inclui expressamente a suspeita, e o art. 245 pune quem a cala. A confirmação não cabe ao médico, cabe à investigação. O Rockwood and Wilkins (cap. 7) mostra o custo da espera: entre médicos, 76% das lesões possíveis ficaram sem notificação, e é nesses casos que a criança volta ferida ou morta."
   },
-  "conceito": "**Dever de comunicação.** O Estatuto da Criança e do Adolescente exige comunicação ao Conselho Tutelar tanto de suspeita quanto de confirmação de maus-tratos, castigo físico ou tratamento cruel ou degradante. O profissional de saúde não precisa produzir prova definitiva nem esperar conclusão policial ou judicial para acionar a proteção.\n\n**Atendimento e registro.** A prioridade clínica é cuidar da criança ou adolescente, documentar objetivamente achados e relato, preservar a segurança e articular a rede de proteção. Comunicação responsável não é acusação automática: separa-se o que foi observado, o que foi relatado e o que ainda depende de apuração.\n\n**Armadilha da frase.** A palavra “somente” inverte a regra legal. Exigir confirmação prévia atrasaria a intervenção justamente nos casos em que a suspeita fundamentada precisa ser investigada e a vítima protegida.",
-  "correta": "**Errado: a suspeita também deve ser comunicada.** O artigo 13 do ECA abrange expressamente suspeita ou confirmação de maus-tratos contra criança ou adolescente.",
-  "referencias": [
-   "Código de Ética Médica. Artigo 102 e Estatuto da Criança e do Adolescente."
-  ],
   "provavel": "B",
-  "geradoEm": "2026-09-30",
+  "alerta": "A banca não divulgou o gabarito desta prova; a resposta foi definida pelo Orto Questões e conta no seu desempenho. O fato decisivo é legal e não está nos livros de ortopedia locais: vem do texto oficial da Lei nº 8.069/1990 (Estatuto da Criança e do Adolescente), arts. 13 e 245, na versão compilada da Presidência da República, que incluem a suspeita entre os casos de comunicação obrigatória. A banca citou também o Código de Ética Médica, não consultado aqui.",
+  "referencias": [
+   "Brasil. Lei nº 8.069, de 13 de julho de 1990 (Estatuto da Criança e do Adolescente), arts. 13 e 245, texto compilado em planalto.gov.br",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 7 (Pathologic Fractures and Nonaccidental Injuries)",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 27, p. 1154 e 1155",
+   "Resumo OrtoQuestões: Fraturas patológicas e maus-tratos na criança"
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "conceitos-basicos-0308": {
@@ -5675,7 +5713,7 @@
       "complicacoes-7635955c",
       "complicacoes-ea697358"
      ],
-     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
+     "sha256": "ee3712fb0ac31ef49be5fbfe6e4f72ebabd64cadc1b010ad709654745a8f4535",
      "trechosSha256": "be44ccd0a3aac551f040a6c2f181b186c39f37e483590310fa5a6d849305f0d3"
     }
    ],

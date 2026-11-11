@@ -44,7 +44,7 @@ O raciocínio é geométrico. Com o retropé em valgo, se o antepé o acompanhas
 | reverso | cavovaro: retropé varo, antepé pronado | arco alto |
 !fim
 
-!questoes central=pe-tornozelo-0007 relacionadas=pe-tornozelo-0224
+!questoes central=pe-tornozelo-0007 relacionadas=pe-tornozelo-0224,pediatria-0727
 conceito: No pé plano flexível o retropé está em valgo e o antepé está supinado em relação ao retropé; o aspecto de pé pronado em carga é enganoso.
 como: O TARO 2020 perguntou as deformidades do retropé e do antepé, respectivamente, e marcou valgismo e supinação; a SBOT-SP repetiu a pergunta com valgo e supinado.
 armadilha: Marcar valgo e pronação porque o pé em carga parece pronado; corrigido o calcanhar, aparece a supinação do antepé.

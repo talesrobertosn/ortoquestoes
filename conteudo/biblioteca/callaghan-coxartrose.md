@@ -150,7 +150,7 @@ O CALLAGHAN (cap. 75, p. 970) lê a mesma entidade de outro ângulo: chama a **a
 
 A protrusão traz **contraturas em flexão e adução** (às vezes tenotomia dos adutores na ATQ) e **pouco offset**, com o **ciático mais perto** do acetábulo (The Adult Hip, cap. 75, p. 970 e 971). A cirurgia é por **dor e limitação**: **ATQ** em geral, **valgizante intertrocantérica no adulto jovem** (Campbell, cap. 7, p. 392). A reconstrução **leva o centro ao lugar anatômico**, **apoia a taça no rebordo periférico** e **enxerta os defeitos mediais**; a parede medial **não deve ser fresada**, e a cabeça encarcerada pode exigir **osteotomia do colo in situ** (cap. 4, p. 246 e 247).
 
-!questoes central=quadril-0498
+!questoes central=quadril-0498 relacionadas=quadril-0028
 conceito: A protrusão acetabular primária (artrocatádise, pelve de OTTO) é tipicamente bilateral e mais comum em mulheres jovens; a secundária vem de AR, espondilite, PAGET, MARFAN, osteomalácia, infecção, fratura ou prótese.
 como: O TARO 2006 afirmou, para certo ou errado, que a coxartrose secundária ao acetábulo protruso (pelve de OTTO) ocorre com mais frequência bilateralmente e em mulheres jovens.
 armadilha: Confundir com o dado do Campbell de que dois terços das protrusões (no conjunto) são unilaterais, ou achar que a protrusão é coisa de homem idoso.

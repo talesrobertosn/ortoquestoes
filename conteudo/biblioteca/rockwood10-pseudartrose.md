@@ -432,7 +432,7 @@ O capítulo 16 do Rockwood and Green's Fractures in Adults, 10ª ed. (fratura ex
 | **mais de 4 cm** | **transporte ósseo**, encurtar e realongar, MASQUELET, fíbula vascularizada |
 !fim
 
-!questoes central=conceitos-basicos-0228
+!questoes central=conceitos-basicos-0228 relacionadas=trauma-1188
 conceito: No membro inferior, até cerca de 2 cm se encurta e até 3 cm se enxerta; acima de 4 cm as opções se complicam e entra o transporte ósseo.
 como: O TARO 2010 perguntou a partir de quantos centímetros de defeito o transporte ósseo é indicado na fratura diafisária aguda da tíbia.
 armadilha: Escolher 2 ou 3 cm, valores em que encurtamento e enxerto ainda resolvem.

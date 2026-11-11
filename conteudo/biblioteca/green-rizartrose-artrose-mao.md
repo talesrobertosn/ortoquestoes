@@ -503,7 +503,7 @@ O Campbell (p. 3468 e 3469) dá valores menores (IFP de **25 graus no indicador 
 | MCF do polegar | Banda, fios, placa 2,0, parafuso sem cabeça | BREYER 92,8% x 85,7%; 25% de retirada com banda |
 !fim
 
-!questoes central=mao-1317 treino=mao-2323
+!questoes central=mao-1317 relacionadas=trauma-0864 treino=mao-2323
 conceito: Na IFP, a flexão da artrodese cresce do radial para o ulnar (30 a 40 graus no indicador e no médio, 50 a 60 no anelar e no mínimo); os colaterais são liberados; a IFD é fundida em extensão ou leve flexão; banda de tensão e parafuso sem cabeça dão consolidação alta.
 como: O SIMÃO 2024 testou indicação da IFD, ângulos da IFP, colaterais e artrodese da MCF do polegar; a USP-SP 2025, posição da IFD do indicador, via da IFP, ângulo da IFP do indicador e fixação.
 armadilha: Dar 50 graus ao indicador (é o ângulo do anelar), achar que a via volar é a padrão (é dorsal), preservar os colaterais na artrodese ou dizer que a principal indicação da IFD é o dedo em martelo crônico (é a artrose).

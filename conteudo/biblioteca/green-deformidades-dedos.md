@@ -479,7 +479,7 @@ A **camptodactilia** é a **flexão da IFP**, não traumática, frequentemente b
 
 O Green trata a camptodactilia no capítulo de **artrogripose** (cap. 39, p. 1387 a 1390): quase todas as crianças com artrogripose do membro superior têm contratura dos dedos, e a camptodactilia é **mais comum nas artrogriposes distais**, definindo síndromes como BEALS. A radiografia **não é útil na criança pequena**; mais tarde mostra côndilos hipotróficos, e quanto maior a hipoplasia, menor a correção. O tratamento começa com mobilização passiva e **tala noturna**, com ganhos até cerca de 5 anos. A cirurgia é a **Z-plastia volar** sobre o pterígio e a **tenotomia do FDS** quando o FDP funciona; o FDS pode ser transferido em casos selecionados. Os resultados são **imprevisíveis**, a família costuma se decepcionar, e a **complicação mais comum é a rigidez**. O Campbell concorda: a cirurgia pode trazer **perda de flexão**, anquilose e recidiva; só 35% melhoram com cirurgia e 20% sem ela; abaixo de 30 graus, melhor não operar.
 
-!questoes central=mao-1423 treino=mao-2010,mao-2402,mao-2374
+!questoes central=mao-1423 relacionadas=pe-tornozelo-0252 treino=mao-2010,mao-2402,mao-2374
 conceito: Camptodactilia: o tipo III é o sindrômico; aparece com frequência na artrogripose, sobretudo nas formas distais; radiografia inútil na criança pequena; tala ajuda; a complicação típica da cirurgia é a rigidez com perda de flexão.
 como: O SIMÃO 2023 pediu a afirmação correta sobre camptodactilia na artrogripose; o SIMÃO 2022, a condição mais associada; o USP-SP 2024, o tipo III; o SIMÃO 2024, o resultado desfavorável a avisar à família.
 armadilha: Atribuir o tipo III às meninas adolescentes (isso é o tipo II) ou dizer que órteses não funcionam.

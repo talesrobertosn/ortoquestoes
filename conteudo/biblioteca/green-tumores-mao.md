@@ -202,7 +202,7 @@ A assinatura clínica é a tríade do Campbell: **dor, sensibilidade ao frio e d
 | tratamento | excisão, em geral curativa; enucleia-se sem deformidade | retirar a unha, incisão longitudinal no leito, enuclear; examinar todo o leito | excisão; mais de 2 cm sugere malignidade | ablação total, para evitar recidiva |
 !fim
 
-!questoes central=mao-0725 relacionadas=mao-1128,mao-1866,mao-0638
+!questoes central=mao-0725 relacionadas=mao-1128,mao-1866,mao-0638,tumores-0004
 conceito: tumor glômico é a tríade dor intensa, dor em um ponto à palpação e hipersensibilidade ao frio; nasce do corpo glômico (aparato neuromioarterial que regula temperatura e fluxo) e é subungueal na maioria dos casos da mão
 como: o IAUPE 2025 e o ENARE de Cirurgia da Mão 2023 pediram a tríade; a PUC-SP 2021 pediu a característica importante (sensibilidade ao frio); o TARO 2006 afirmou que a hiperalgesia é difusa no dedo
 armadilha: trocar frio por calor, ou dor em ponto por dor difusa; hiperemia, edema e parestesia não fazem parte do quadro

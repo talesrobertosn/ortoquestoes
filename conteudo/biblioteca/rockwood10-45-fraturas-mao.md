@@ -1,6 +1,6 @@
 ---
 id: rockwood10-45-fraturas-mao
-versao: 2
+versao: 3
 titulo: Fraturas e luxações da mão
 especialidade: mao
 acesso: gratis
@@ -203,8 +203,7 @@ A tala imobiliza o **punho em 30° de extensão** e as **MCF em 70° a 90°**, d
 
 !questoes central=mao-0743,trauma-0091 relacionadas=trauma-0328,conceitos-basicos-0140 treino=mao-1709
 conceito: Na imobilização da mão, as MCF ficam em 70° a 90° de flexão (intrínseca plus) para manter os colaterais esticados e evitar contratura em extensão.
-como: O TARO 2017 e o IAUPE 2025 pediram o ângulo das MCF; o TEOT 2023 e o SBOT-SP pediram o punho do gesso de Burkhalter.
-alerta: Para o gesso de Burkhalter, os gabaritos do TEOT 2023 (trauma-0328) e do SBOT-SP (conceitos-basicos-0140) põem o punho em **40°** de extensão. O capítulo não cita Burkhalter e descreve a posição intrínseca plus com o punho em **30°** de extensão. As MCF a 70° a 90° são iguais nas duas fontes.
+como: O TARO 2017 e o IAUPE 2025 pediram o ângulo das MCF; o TEOT 2023 (trauma-0328) e o SBOT-SP (conceitos-basicos-0140) pediram o punho do gesso de Burkhalter, e o gabarito de **40°** de extensão é confirmado pelo próprio Rockwood no capítulo de gessos (cap. 10, Fig. 10-17, p. 296): punho em 40° de dorsiflexão e MCF em 70° a 90° de flexão, com tala dorsal que deixa os dedos fletirem. Os 30° de extensão deste capítulo são os da posição intrínseca plus em geral, não os do gesso de Burkhalter.
 !fim
 
 ## Quando operar e com quê
@@ -275,14 +274,15 @@ armadilha: "Pequena avulsão com desvio menor que 2 mm indica Stener": não indi
 - **Grau II:** alguma frouxidão, com **ponto final firme** (ruptura parcial).
 - **Grau III:** frouxidão importante **sem ponto final** (ruptura completa).
 
-O estresse radial é feito com a MCF em **30° a 40° de flexão**, sempre **comparando com o outro polegar**; se o paciente trava de dor, faz-se bloqueio. Uma diferença de **15° a mais** que o lado normal já é significativa; os autores operam quando **não há ponto final firme e o desvio passa de 20°**. A radioscopia mostra a articulação ficando incongruente. Com suspeita de ruptura completa, **ultrassom ou ressonância** ajudam a procurar a Stener, mas nenhum tem 100% de acerto (a ressonância tende a subestimar a lesão) e o exame clínico continua sendo o padrão para decidir.
+O estresse radial é feito com a MCF em **30° a 40° de flexão**, sempre **comparando com o outro polegar**; se o paciente trava de dor, faz-se bloqueio. Uma diferença de **15° a mais** que o lado normal já é significativa (o Green 7, cap. 8, p. 302, usa o mesmo corte, junto com **30°** de frouxidão absoluta em extensão e em 40° de flexão); o Campbell 15 (cap. 72, p. 3208) é mais exigente e só chama de ruptura completa a radiografia sob estresse com **mais de 30°** de instabilidade comparada ao lado sadio. Os autores operam quando **não há ponto final firme e o desvio passa de 20°**. A radioscopia mostra a articulação ficando incongruente. Com suspeita de ruptura completa, **ultrassom ou ressonância** ajudam a procurar a Stener, mas nenhum tem 100% de acerto (a ressonância tende a subestimar a lesão) e o exame clínico continua sendo o padrão para decidir.
 
 !questoes central=mao-0136,mao-1029,mao-1138,mao-1543 relacionadas=mao-1080
 conceito: O colateral ulnar próprio é testado em 30° a 40° de flexão da MCF, comparando com o lado oposto; ausência de ponto final firme indica ruptura completa.
 como: A banca cobra a posição do teste (Ortopedia, UFG 2021) e o porquê (PUC-SP 2021: em extensão a placa volar dá estabilidade). A USP 2026 pôs "30° a mais que o outro lado" como distrator.
 armadilha: Exame só em extensão: a placa volar e o colateral acessório estabilizam a MCF e escondem a ruptura do próprio.
 armadilha: "Os exames de imagem são essenciais para o diagnóstico": o capítulo mantém o exame clínico como padrão e usa a imagem como complemento.
-alerta: A PUC-SP 2019 (mao-1080) deu como gabarito o critério de 30° em extensão e 15° em flexão, a mais que o lado normal. O capítulo dá só o critério em flexão (15° a mais é significativo; os autores operam acima de 20° sem ponto final) e não traz o número para extensão.
+alerta: A PUC-SP 2019 (mao-1080) deu como gabarito o critério de 30° em extensão e 15° em flexão, a mais que o lado normal. O capítulo dá só o critério em flexão (15° a mais é significativo; os autores operam acima de 20° sem ponto final) e não traz o número para extensão; o Green 7 (cap. 8, p. 302) traz os 30° de frouxidão em extensão e em flexão e os 15° a mais que o outro polegar.
+alerta: O distrator da USP 2026 ("30° a mais que o outro lado") é o critério do Campbell 15 (cap. 72, p. 3208: mais de 30° de instabilidade comparada ao lado sadio na radiografia sob estresse). Rockwood e Green usam 15° a mais; para a USP, a resposta segue os 15°.
 !fim
 
 !figura 45-52
@@ -294,6 +294,7 @@ Radiografias sob estresse do LCU do polegar lesado comparadas com as do lado nor
 Graus **I e II** vão bem sem cirurgia: tala no polegar por **4 semanas** e depois terapia. A ruptura **completa** do LCU costuma ser **operada**, pelo risco de Stener; quem preferir tratar sem cirurgia precisa antes **excluir a Stener** com ultrassom ou ressonância. Duas séries pesam a favor da cirurgia:
 
 - Em **nove** pacientes com **avulsão óssea do LCU desviada menos de 2 mm** tratados com gesso por pelo menos 6 semanas, **todos continuaram com dor** e foram operados (a pinça voltou a 89% do outro lado). Conclusão: mesmo a avulsão pouco desviada deve ser reparada, porque o fragmento roda.
+- O Campbell 15 diverge (cap. 72, p. 3207): para ele, a avulsão pouco desviada (**menos de 2 mm**) pode significar ruptura completa **sem** Stener e em geral **consolida com gesso**; antes de estressar a articulação faz-se a radiografia simples, porque o estresse pode criar a Stener.
 - Uma revisão sistemática confirmou que o tratamento fechado falha com frequência e que o reparo (agudo ou depois da falha) dá resultados excelentes.
 
 A técnica: incisão em **S suave no lado ulnar**, identificando e afastando o **ramo sensitivo dorsal do nervo radial**; abertura da **aponeurose do adutor** em linha com a falange (é aí que a Stener aparece), deixando borda para fechar depois; identificação do ponto de ruptura (o mais comum é o distal); reinserção com **uma ou duas âncoras** (ou ponto com botão); um **fio de Kirschner** pela articulação ajuda a dar a tensão certa; a fita de sutura de reforço, se usada, entra **primeiro distalmente**. Cápsula e aponeurose são fechadas em camadas separadas. Imobilização de **4 a 6 semanas** (mais longa nas crônicas).
@@ -302,7 +303,7 @@ Na lesão **crônica**, quase sempre há tecido para reparo direto; se não, enx
 
 !questoes central=mao-0770 relacionadas=mao-0233,mao-1221
 conceito: Na via de acesso ao LCU do polegar, o ramo sensitivo dorsal do nervo radial cruza o campo e precisa ser identificado e afastado; a aponeurose do adutor é aberta e depois reparada.
-como: O INTO 2023 perguntou a complicação mais comum do reparo (neuropraxia do ramo sensitivo radial); a UERJ 2023, em questão dissertativa, pediu a definição de Stener, o local da avulsão e a estrutura em risco. O capítulo não ranqueia as complicações, mas destaca esse nervo em todos os passos.
+como: O INTO 2023 perguntou a complicação mais comum do reparo (neuropraxia do ramo sensitivo radial); a UERJ 2023, em questão dissertativa, pediu a definição de Stener, o local da avulsão e a estrutura em risco. O capítulo não ranqueia as complicações, mas destaca esse nervo em todos os passos; o Green 7 (cap. 8, p. 306) ranqueia: a complicação mais comum do reparo do LCU é a neuropraxia dos ramos do sensitivo dorsal do radial que cruzam o campo (dormência no lado dorsoulnar do polegar em **10% a 15%**, em geral passageira), e outra é a **rigidez** quando o ligamento é reinserido fora do ponto anatômico, sobretudo dorsal demais.
 alerta: Na prova de Ortopedia (mao-0233), Stener com fragmento de 10% da superfície, o gabarito foi ressecar o fragmento e reinserir o ligamento com miniâncora. O capítulo do Rockwood defende operar as avulsões do LCU, mesmo as pouco desviadas, e repara com âncoras, mas não discute ressecar o fragmento. O Green 7 sustenta o gabarito (cap. 7, p. 271): avulsão da base ulnar da falange proximal desviada mais de 2 mm com MCF instável vai para cirurgia, e o fragmento **pequeno** (ou que quebra na fixação) pode ser retirado, com o ligamento reinserido por fio de pull-out ou âncora; fragmentos maiores são fixados com fios ou parafuso pequeno.
 !fim
 
@@ -394,7 +395,7 @@ armadilha: Placa volar: estabiliza contra a hiperextensão, não no plano corona
 
 ## Luxação dorsal
 
-Nasce da **hiperextensão** com translação dorsal da falange média; rompe **placa volar e colateral**. Redução sob bloqueio: **leve tração, extensão e empurrão volar** na base da falange média. Depois da redução, placa volar e colaterais voltam ao lugar, e a articulação quase sempre fica estável. O tratamento é **mexer logo**: esparadrapo no dedo vizinho por 4 a 6 semanas ou tala em oito de bloqueio da extensão. Os números justificam: movimento imediato deu arco normal em **23 de 25**, contra **9 de 25** com gesso por 4 semanas; a tala em oito deu cerca de **90°**, contra 60° a 66° nas outras formas.
+Nasce da **hiperextensão** com translação dorsal da falange média; rompe **placa volar e colateral**. Redução sob bloqueio: **leve tração, extensão e empurrão volar** na base da falange média. A tração longitudinal pura deve ser evitada: na luxação em baioneta ela prende os côndilos pelos colaterais e **puxa a placa volar para dentro da articulação**, transformando uma luxação redutível em irredutível (Green 7, cap. 8, p. 279). Depois da redução, placa volar e colaterais voltam ao lugar, e a articulação quase sempre fica estável. O tratamento é **mexer logo**: esparadrapo no dedo vizinho por 4 a 6 semanas ou tala em oito de bloqueio da extensão. Os números justificam: movimento imediato deu arco normal em **23 de 25**, contra **9 de 25** com gesso por 4 semanas; a tala em oito deu cerca de **90°**, contra 60° a 66° nas outras formas.
 
 Irredutível ou exposta, vai para cirurgia, de preferência por **via dorsal**; o que bloqueia pode ser um fragmento osteocondral, a **banda lateral** ou o **tendão flexor**. Na exposta dorsal, a pele rompe na **prega de flexão volar**. O colateral não precisa ser reparado. Luxação com **mais de 3 semanas** exige liberar os dois colaterais para reduzir.
 
@@ -480,8 +481,8 @@ conceito: Na fratura-luxação dorsal instável da IFP com borda volar cominutiv
 armadilha: Artroplastia com placa volar: é a outra opção, mas fica menos previsível quando o fragmento passa da metade da superfície.
 !fim
 
-!figura 45-11
-Estabilidade da IFP: com fragmentos maiores da base volar, a estabilidade dorsal se perde; fragmentos com mais de 40% da superfície correm risco crescente de instabilidade dorsal que exige cirurgia.
+!figura 45-11 imagem=trauma/rwa10-45-11-a020.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 45, Fig. 45-11. Estabilidade da IFP: com fragmentos maiores da base volar, a estabilidade dorsal se perde; fragmentos com mais de 40% da superfície correm risco crescente de instabilidade dorsal que exige cirurgia.
 !fim
 
 ## Fratura em pilão
@@ -508,7 +509,11 @@ A luxação da MCF dos dedos é **rara** e acontece nos **dedos de borda**: **in
 - **Simples (incompleta, subluxação):** a falange fica apoiada no dorso da cabeça, ainda em contato; o dedo parece **mais hiperestendido**. Reduz-se fechado com facilidade.
 - **Complexa (completa):** a cabeça atravessa os tecidos volares e a **placa volar fica interposta** atrás dela. O dedo fica hiperestendido, **desviado para o centro da mão** (indicador para ulnar, mínimo para radial), com IFP e IFD levemente fletidas e uma **covinha na pele da palma** (tração do ligamento natatório e do transverso superficial).
 
+A postura do dedo diverge entre os livros. Para o Rockwood, o dedo da luxação complexa fica hiperestendido, e o da incompleta parece ainda mais hiperestendido. O Green 7 (cap. 8, p. 299) descreve a complexa com a MCF em **leve extensão**, sem conseguir fletir, e reserva os **60° a 80° de hiperextensão** para a subluxação simples, em que a placa volar fica apoiada sobre a cabeça em vez de presa na articulação.
+
 Kaplan descreveu o **laço** que estrangula o colo do metacarpo do indicador: **lumbrical** de um lado, **tendão flexor** do outro, **ligamento natatório** distal e **ligamento transverso superficial do metacarpo** proximal. A **placa volar** fica dorsal à cabeça, entre ela e a falange, muitas vezes com um **sesamoide** dentro. Na radiografia, o sinal típico é o **sesamoide dentro do espaço articular**, além da sobreposição da cabeça e do espaço articular alargado.
+
+O Green 7 (cap. 8, p. 298 e 300) explica por que a tração não reduz: se a placa volar fosse o único obstáculo, a tração bastaria para trazê-la de volta sobre a cabeça, mas o **laço de tendões** em volta do colo aperta ainda mais quando se puxa o dedo. Na via volar, os autores do Green chamam a tensão desse laço de principal obstáculo à redução e a aliviam abrindo a **polia A1**.
 
 !questoes central=mao-0601,mao-0625,mao-0896,mao-0996,mao-1030 relacionadas=mao-1508 treino=mao-1712
 conceito: Na luxação dorsal complexa da MCF do indicador, a placa volar interposta entre a cabeça do metacarpo e a falange é o principal bloqueio à redução; o sesamoide dentro da articulação é o sinal radiográfico.
@@ -549,10 +554,12 @@ armadilha: "O colateral radial interposto impede a redução": quem se interpõe
 
 A MCF do polegar luxa por **hiperextensão** (e o colateral radial rompe por força ulnar). A lesão associada mais comum é a **fratura articular**, sobretudo avulsões e cisalhamentos da base da falange; também há ruptura de cápsula, fratura de sesamoide e ruptura de tendões vizinhos. Como nos dedos, a redução é fechada sempre que possível e aberta se houver interposição.
 
+O que bloqueia a redução da luxação dorsal da MCF do polegar é, tipicamente, a **placa volar** e, menos vezes, o **flexor longo do polegar**, que desvia para o lado ulnar da cabeça e forma com a musculatura tenar um laço em volta do colo (Green 7, cap. 8, p. 311). O Campbell 15 (cap. 72, p. 3206) também chama a placa volar, presa sobre a cabeça e o colo, de principal obstáculo à redução e a divide longitudinalmente pela via dorsal. Os dois desaconselham a tração longitudinal simples, que pode transformar a luxação simples em complexa.
+
 !questoes central=trauma-1102,trauma-0664 relacionadas=mao-0911,trauma-0871
 conceito: Na luxação da MCF do polegar, a lesão associada mais comum é a fratura articular da base da falange proximal; na luxação complexa da MCF, o capítulo descreve a placa volar como a estrutura interposta.
 como: O TEOT 2022 pediu a lesão associada; o TARO 2024 pediu o bloqueio à redução da luxação dorsal, e a UFG 2019 pediu o que não participa dele (a aponeurose do abdutor curto).
-alerta: Para a mesma pergunta (o que impede a redução fechada da luxação dorsal da MCF do polegar), o TARO 2024 (trauma-0664) deu **placa volar** e o TARO 2011 (trauma-0871) deu **tendão flexor longo**. O capítulo não trata a irredutibilidade do polegar à parte; na MCF, descreve a placa volar como a estrutura interposta, em linha com o TARO 2024.
+alerta: Para a mesma pergunta (o que impede a redução fechada da luxação dorsal da MCF do polegar), o TARO 2024 (trauma-0664) deu **placa volar** e o TARO 2011 (trauma-0871) deu **tendão flexor longo**. O capítulo não trata a irredutibilidade do polegar à parte; na MCF, descreve a placa volar como a estrutura interposta, em linha com o TARO 2024. O Green 7 (cap. 8, p. 311) e o Campbell 15 (cap. 72, p. 3206) confirmam a placa volar como obstáculo principal no polegar; o flexor longo do polegar é a causa menos comum (Green), que foi a escolhida pelo TARO 2011.
 !fim
 
 ## Colateral radial do indicador

@@ -271,7 +271,7 @@ Fonte: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (2017), cap. 2, Fig. 2.5
 
 Entre o iliofemoral e o pubofemoral fica a **bolsa iliopectínea**. Na frente a cápsula desce até a **linha intertrocantérica**; atrás, prende-se no colo, de modo que **a metade lateral do colo posterior é extracapsular** (Rockwood and Green, cap. 53). A parte intracapsular **não tem camada câmbio**: consolida **só por via endosteal**. A cápsula fica **tensa em extensão e rotação interna** e tem **volume máximo em leve flexão e rotação externa**, a posição do derrame. Inervação: **obturatório** anteromedial, **femoral** anterior, **isquiático** posterior e **glúteo superior** posterolateral. A força de reação é **um terço do peso** no apoio bipodal, **6 vezes** na marcha e **mais de 2 vezes** ao subir na comadre (cap. 52).
 
-!questoes central=quadril-0087
+!questoes central=quadril-0087 relacionadas=quadril-0020
 conceito: O pubofemoral vai do ramo superior do púbis à linha intertrocantérica, profundo ao Y de BIGELOW, e controla a rotação externa em extensão; o iliofemoral, da espinha anteroinferior, limita a hiperextensão.
 como: Uma prova de Ortopedia apontou o pubofemoral numa vista anterior da cápsula.
 armadilha: Chamar de iliofemoral toda a cápsula anterior; a faixa que vem do púbis, medial e inferior, é o pubofemoral.

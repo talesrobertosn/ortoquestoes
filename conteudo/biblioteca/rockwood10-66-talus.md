@@ -275,7 +275,7 @@ Qualquer tensão de pele pede **redução imediata** e tala; atraso na redução
 - **Artrose pós-traumática:** **46% a 97%** após fratura do colo, com ou sem necrose; a rigidez do tornozelo e da subtalar é esperada. Tratamento inicial conservador; infiltrações guiadas apontam a articulação doente. Artrodese isolada do tornozelo, da subtalar ou da talonavicular, ou **tibiotalocalcaneana** quando tornozelo e subtalar estão comprometidos, com aloenxerto de cabeça femoral e haste retrógrada nos colapsos; a artrodese de **BLAIR** (enxerto deslizante da tíbia distal no colo e cabeça) é uma alternativa; espaçadores de tântalo e a **prótese total do tálus** são opções de salvamento ainda sem seguimento longo.
 - **Resultados:** SANDERS mostrou **25% de reoperação em 1 ano e 50% em 10 anos** após a fixação das fraturas desviadas; as cirurgias secundárias mais comuns são a artrodese subtalar ou tríplice, e o motivo mais comum é a artrose, ligada à cominução, aos tipos III e IV e às lesões ipsilaterais.
 
-!questoes relacionadas=pe-tornozelo-0063
+!questoes relacionadas=pe-tornozelo-0063,pe-tornozelo-0367
 conceito: Necrose do tálus não contraindica a artrodese: o capítulo usa a artrodese do tornozelo e a tibiotalocalcaneana justamente no colapso por necrose.
 como: O TEOT 2022 perguntou a contraindicação da artrodese do tornozelo (comprometimento vascular), com a osteonecrose do tálus entre os distratores.
 !fim

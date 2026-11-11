@@ -59,7 +59,7 @@ O nervo radial cruza o cotovelo num sulco entre braquial, braquiorradial e ERLC,
 | LCL e LUCL | Base do epicôndilo e face lateral do capítulo; LUCL na crista do supinador | Estabilizador primário; lesá-lo causa instabilidade posterolateral |
 !fim
 
-!questoes central=ombro-cotovelo-0034
+!questoes central=ombro-cotovelo-0034 relacionadas=mao-0655
 conceito: A tendinose da epicondilite lateral envolve principalmente a origem do extensor radial curto do carpo, que fica no aspecto anterior do epicôndilo, profundamente ao extensor comum dos dedos.
 como: O TARO 2016 perguntou qual origem muscular é a sede principal das alterações patológicas.
 armadilha: Marcar o extensor comum dos dedos, que é acometido em cerca de um terço dos casos, ou o extensor radial longo, que nasce mais acima e raramente adoece.
