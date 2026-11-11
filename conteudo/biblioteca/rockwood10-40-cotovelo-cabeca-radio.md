@@ -1,6 +1,6 @@
 ---
 id: rockwood10-40-cotovelo-cabeca-radio
-versao: 2
+versao: 3
 titulo: Luxação do cotovelo, cabeça do rádio e tríade terrível
 especialidade: trauma
 acesso: gratis
@@ -127,6 +127,8 @@ armadilha: Extensão e supinação: é exatamente a posição em que o cotovelo 
 
 Alguns pacientes ficam com uma leve subluxação posterolateral depois da redução. Coonrad descreveu o **drop sign**: aumento da distância umeroulnar no perfil sem estresse. A conduta é um **protocolo de movimento ativo** que evita o varo o tempo todo (exercícios com o braço junto ao corpo, antebraço pronado na flexão e extensão, rotação só com o cotovelo a 90° ou mais), aproveitando os estabilizadores dinâmicos. Depois da cirurgia, o drop sign pode ser só atraso na volta do tônus muscular e costuma **melhorar sozinho**.
 
+O Campbell (15ª ed., cap. 52, p. 2231) lê o mesmo sinal com mais peso: depois de uma luxação ou subluxação recente, o alargamento umeroulnar pode representar **ruptura capsular importante com subluxação persistente**. São duas leituras: o Rockwood trata o sinal pós-operatório como falta de tônus que se resolve; o Campbell, como alerta de instabilidade.
+
 !questoes central=ombro-cotovelo-0296 treino=trauma-1412
 conceito: O drop sign no pós-operatório imediato pede observação e movimento ativo protegido, porque costuma refletir apenas a falta de tônus muscular.
 armadilha: Reconstruir o colateral ulnar lateral: é tratamento da instabilidade crônica estabelecida, não de um sinal radiográfico precoce.
@@ -209,7 +211,7 @@ AP e perfil bastam para a maioria. A fratura sem desvio pode só aparecer como *
 - **Mason I:** fissura ou fratura marginal sem desvio.
 - **Mason II:** fratura marginal com desvio.
 - **Mason III:** cominutiva, de toda a cabeça.
-- **Tipo IV** (acrescentado por **JOHNSTON**, em 1962): qualquer fratura da cabeça com **luxação do cotovelo**. O capítulo 40 só diz que o tipo veio depois; quem dá o nome de JOHNSTON são o capítulo 41 do mesmo Rockwood e o Skeletal Trauma (5ª ed., cap. 46A, Fig. 46A-2, p. 1348).
+- **Tipo IV** (acrescentado por **JOHNSTON**, em 1962): qualquer fratura da cabeça com **luxação do cotovelo**. O capítulo 40 só diz que o tipo veio depois; quem dá o nome de JOHNSTON são o capítulo 41 do mesmo Rockwood e o Skeletal Trauma (5ª ed., cap. 46A, p. 1348, com a Fig. 46A-2 na p. 1349).
 
 **Broberg e Morrey** modificaram Mason com números: tipo I sem desvio ou com desvio **menor que 2 mm** e menos de **30%** da superfície; tipo II com desvio **maior que 2 mm** e mais de **30%**; tipo III cominutiva.
 
@@ -255,7 +257,7 @@ armadilha: Desvio maior que 2 mm ou mais de 30%: é a regra antiga que o estudo 
 Operam-se as desviadas com **bloqueio**, as que fazem parte de uma **fratura-luxação instável** e as com **corpo livre** retido. As opções são retirar o fragmento, retirar a cabeça, fixar (RAFI) ou colocar prótese.
 
 - **Retirar o fragmento:** só se for **pequeno (menos de 25% do diâmetro)**, irreparável e estiver bloqueando. Tirar fragmentos grandes causa estalido doloroso e instabilidade, porque a radiocapitelar perde a sua concavidade.
-- **Retirar a cabeça inteira:** pouco feito no trauma agudo, porque as cominutivas quase sempre vêm com lesão ligamentar. Exige exame sob anestesia (varo, valgo, rotação e carga axial) **antes e depois**, com uma prótese disponível. Como a ressecção tardia costuma ir bem, a ressecção precoce deve ser evitada.
+- **Retirar a cabeça inteira:** pouco feito no trauma agudo, porque as cominutivas quase sempre vêm com lesão ligamentar. Exige exame sob anestesia (varo, valgo, rotação e carga axial) **antes e depois**, com uma prótese disponível. Um estudo recente com 15 pacientes teve resultados **semelhantes** com a ressecção artroscópica precoce ou tardia; ainda assim, como a tardia costuma ir bem, o capítulo diz que a precoce **provavelmente** deve ser evitada.
 - **Fixar:** os melhores candidatos são **jovens, com bom osso e até três fragmentos**. Fraturas parciais vão melhor que as completas (cabeça e colo). No colo sem cominuição, parafusos canulados cruzados ("tripé") dão menos rigidez que placa.
 - **Prótese:** é a preferida na cominutiva **irreparável**, pela alta taxa de lesões associadas. Não se usa com contaminação grosseira, rádio proximal que não aceita implante ou capítulo artrósico, deficiente ou ausente.
 
@@ -314,9 +316,9 @@ armadilha: Material de síntese saliente: é causa mecânica possível, menos co
 
 ## Lesão de Essex-Lopresti
 
-É a **instabilidade longitudinal do antebraço**: fratura da cabeça do rádio com ruptura da **membrana interóssea** e da **articulação radioulnar distal**. Com o anel rompido em dois pontos, o rádio sobe. O diagnóstico precoce depende de **examinar o punho** em toda fratura da cabeça do rádio (dor na radioulnar distal) e de testar a instabilidade longitudinal na cirurgia, porque a reconstrução tardia é difícil e muitas vezes insatisfatória.
+É a **instabilidade longitudinal do antebraço**: fratura da cabeça do rádio com ruptura da **membrana interóssea** e da **articulação radioulnar distal**. O Campbell (15ª ed., cap. 62, p. 2816) fala em fratura da **cabeça ou do colo** do rádio. Com o anel rompido em dois pontos, o rádio sobe. O diagnóstico precoce depende de **examinar o punho** em toda fratura da cabeça do rádio (dor na radioulnar distal) e de testar a instabilidade longitudinal na cirurgia, porque a reconstrução tardia é difícil e muitas vezes insatisfatória.
 
-Na fase aguda, fixa-se ou troca-se a cabeça e prende-se temporariamente a radioulnar distal com fios, com ou sem reconstrução da membrana ou reparo da fibrocartilagem triangular. Depois de uma ressecção, 2 a 3 mm de migração proximal são esperados; muito mais que isso indica as estruturas distais rotas. Na **lesão crônica**, as opções são antebraço de um osso só, **prótese da cabeça com encurtamento da ulna** (imediato ou em segundo tempo) ou reconstrução da membrana com prótese.
+Na fase aguda, fixa-se ou troca-se a cabeça e prende-se temporariamente a radioulnar distal com fios, com ou sem reconstrução da membrana ou reparo da fibrocartilagem triangular. Depois de uma ressecção, 2 a 3 mm de migração proximal são esperados; muito mais que isso indica as estruturas distais rotas. Na **lesão crônica**, as opções são antebraço de um osso só, **prótese da cabeça com encurtamento da ulna** (imediato ou em segundo tempo) ou reconstrução da membrana com prótese. O capítulo 41 do mesmo Rockwood chama de **tratamento ideal** da Essex-Lopresti crônica a **troca da cabeça do rádio com encurtamento da ulna**, imediato ou em segundo tempo, ou com reconstrução da membrana interóssea.
 
 !questoes central=trauma-0271,trauma-0819,trauma-0028,trauma-0431,trauma-0106 relacionadas=ombro-cotovelo-0474 treino=trauma-1419
 conceito: Essex-Lopresti é a fratura da cabeça do rádio com lesão da membrana interóssea e da radioulnar distal; a pista clínica é a dor no punho, e a crônica se trata com prótese da cabeça e encurtamento da ulna.
@@ -352,8 +354,8 @@ como: O TARO pergunta a associação de cada tipo, trocando base e faceta; o TEO
 armadilha: Faceta anteromedial com tríade terrível: a tríade leva a ponta.
 !fim
 
-!figura 40-13
-Classificação de O'Driscoll das fraturas do coronoide: tipo I na ponta (tríade terrível), tipo II na faceta anteromedial (instabilidade posteromedial em varo) e tipo III na base (fraturas-luxações do olécrano e da ulna proximal).
+!figura 40-13 imagem=trauma/rwa10-40-13-t01.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40, Fig. 40-13. Classificação de O'Driscoll das fraturas do coronoide: tipo I na ponta (tríade terrível), tipo II na faceta anteromedial (instabilidade posteromedial em varo) e tipo III na base (fraturas-luxações do olécrano e da ulna proximal).
 !fim
 
 # Tríade terrível {radar=confirmado}
@@ -362,7 +364,7 @@ Classificação de O'Driscoll das fraturas do coronoide: tipo I na ponta (tríad
 
 ## Mecanismo e o que vem junto
 
-A ulna sofre um **deslocamento rotatório posterolateral**: queda com a mão espalmada, com **supinação, valgo e carga axial**, o cotovelo quase estendido. A tróclea cisalha a ponta do coronoide, e o colateral lateral rompe ou a cabeça do rádio fratura. Lesões do mesmo membro aparecem em 10% a 20% das fraturas-luxações do cotovelo, sobretudo no punho. Lesões neurovasculares são incomuns.
+A ulna sofre um **deslocamento rotatório posterolateral**: queda sobre o **braço estendido**, com **supinação, valgo e carga axial**. A tróclea cisalha a ponta do coronoide, e o colateral lateral rompe ou a cabeça do rádio fratura. Lesões do mesmo membro aparecem em 10% a 20% das fraturas-luxações do cotovelo, sobretudo no punho. Lesões neurovasculares são incomuns.
 
 !questoes central=trauma-0059,trauma-0966
 conceito: A tríade terrível vem de queda com o cotovelo em extensão, valgo e antebraço supinado, num padrão de instabilidade posterolateral.
@@ -404,6 +406,8 @@ A cirurgia segue um roteiro sistemático, de dentro para fora:
 - testar de novo em pronação, neutro e supinação;
 - **colateral medial só se continuar instável** (via medial, entre as duas cabeças do flexor ulnar do carpo, protegendo o nervo ulnar);
 - se ainda instável, fixador externo estático, fixador interno articulado ou placa-ponte temporária.
+
+A sutura da cápsula anterior também é feita pela via lateral. O Green (7ª ed., cap. 22, p. 821) detalha: dois túneis da borda subcutânea da ulna até a base do coronoide, fio inabsorvível grosso (**n.º 2 ou n.º 5**) passado pela **cápsula anterior** ou pela inserção do braquial e trazido pelos túneis; a redução anatômica do fragmento não é necessária, o objetivo é devolver a inserção da cápsula à ulna. O fio só é **amarrado depois de tratar a cabeça do rádio** (a prótese), para não desfazer a fixação do coronoide.
 
 > Na prova: **coronoide, cabeça do rádio, colateral lateral e, se precisar, colateral medial.** E um cotovelo **rígido e estável** é preferível a um frouxo e incongruente.
 
@@ -476,8 +480,8 @@ como: O TARO 2011 pediu os três critérios; TEOT 2025 e TARO 2010 pediram o tra
 armadilha: Banda de tensão no 2B: a banda precisa de traço simples para comprimir; com cominuição, ela encurta e desaba a incisura.
 !fim
 
-!figura 40-20
-Classificação de Mayo das fraturas do olécrano, pelo desvio, pela subluxação da articulação e pela cominuição.
+!figura 40-20 imagem=trauma/rwa10-40-20-t01.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40, Fig. 40-20. Classificação de Mayo das fraturas do olécrano, pelo desvio, pela subluxação da articulação e pela cominuição.
 !fim
 
 ## Sem cirurgia e excisão
@@ -498,6 +502,8 @@ Serve para fraturas **simples, sem cominuição, proximais ao coronoide**, com c
 - Fios **laterais** demais irritam a **tuberosidade do rádio**: rigidez da rotação e sinostose.
 - Fios **mediais** longos demais lesam o nervo **ulnar ou o mediano**.
 - O problema mais comum é o **material saliente** que precisa sair (mais da metade numa série).
+
+O AO (Principles of Fracture Management, 3ª ed., cap. 6.3.1, p. 645) indica os dois fios com cerclagem em oito para as fraturas simples **transversas e oblíquas**; no traço **oblíquo** que tende a escorregar quando se aperta o fio, acrescenta-se um **parafuso de compressão de 4 mm**, junto com os fios ou no lugar deles, e a placa é alternativa (Fig. 6.3.1-15, p. 646).
 
 !questoes central=trauma-0135 relacionadas=trauma-1125
 conceito: Na banda de tensão do olécrano, fios de Kirschner laterais demais batem na tuberosidade do bíceps e podem causar sinostose.
@@ -521,13 +527,15 @@ conceito: Na fratura-luxação transolecraniana, a luxação é anterior e a rad
 As fraturas-luxações **posteriores** do olécrano costumam ser **Monteggia posteriores (Bado tipo II)**. Jupiter as subdividiu pelo nível da fratura da ulna:
 
 - **IIA:** no nível do coronoide, com o coronoide como fragmento separado;
-- **IIB:** distal ao coronoide;
+- **IIB:** distal ao coronoide; o capítulo 42 do mesmo Rockwood descreve o mesmo tipo como fratura na **junção da metáfise proximal com a diáfise** da ulna (o capítulo 41 diz metadiafisária, sem pegar o coronoide);
 - **IIC:** na diáfise;
 - **IID:** fratura complexa do olécrano à diáfise.
 
 As IIA e IID entram na articulação e trazem angulação posterior da ulna proximal, **fratura da cabeça do rádio (68%)**, fratura do **coronoide (26%)** e lesão dos colaterais. Quando há luxação umeroulnar junto, o resultado é pior.
 
 Na cirurgia (IIA e IID), o roteiro do capítulo é: **cabeça do rádio** (fixar ou medir a prótese com a ulna reduzida provisoriamente, para acertar a altura), **diáfise da ulna** (reduzir o fragmento anterior oblíquo, que se alinha com o coronoide), **coronoide** (placa, parafusos ou sutura), **placa forte dorsal** do olécrano à diáfise (reconstrução e tubular não bastam; banda de tensão não serve) e, no fim, os **colaterais**. Restaurar o **comprimento, a angulação dorsal e a forma sinuosa da ulna** é obrigatório: placas retas sem moldar podem deixar a radiocapitelar mal reduzida.
+
+O capítulo 41 do mesmo Rockwood fecha a ideia: a causa **mais comum** da cabeça do rádio que continua subluxada depois da fixação é a **má redução da ulna**. Só quando a ulna está anatômica é que se procura partes moles interpostas (ligamento anular, colateral lateral, cápsula, bíceps ou braquial) e se as retira para reduzir a cabeça.
 
 !questoes central=trauma-1094,trauma-0696,trauma-0761,ombro-cotovelo-0325 relacionadas=trauma-0804,trauma-0964,trauma-0089 treino=trauma-1430,trauma-1433,trauma-1434
 conceito: A Monteggia que o capítulo trata é a posterior (Bado II), a que as provas apontam como a do adulto; Jupiter a subdivide pelo nível da fratura, e a cabeça do rádio só fica no lugar com a ulna anatômica.

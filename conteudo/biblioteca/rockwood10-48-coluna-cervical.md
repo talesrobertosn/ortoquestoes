@@ -1,6 +1,6 @@
 ---
 id: rockwood10-48-coluna-cervical
-versao: 2
+versao: 3
 titulo: Fraturas e luxações da coluna cervical
 especialidade: coluna
 acesso: gratis
@@ -55,6 +55,8 @@ Na substância cinzenta, as fibras que servem os segmentos **mais altos** ficam 
 
 O Campbell 15 (cap. 48, p. 1878) dá a frequência que o Rockwood não traz: a síndrome central é a **síndrome medular incompleta mais comum** e a de **melhor prognóstico**, e a forma aguda traumática responde por **até 70%** dos casos, nos graus B a E da ASIA. Para a recuperação, o mesmo capítulo dá dois números: na p. 1878, **mais de 50%** dos pacientes recuperam o controle vesical e intestinal, voltam a andar e melhoram a função da mão; na p. 1879, operados ou não, **70% a 80%** recuperam o controle vesical e a marcha, com melhora da mão, embora a recuperação completa seja incomum.
 
+O mesmo Campbell (p. 1878) acrescenta a distribuição dentro do membro: a tetraparesia pega mais os membros superiores que os inferiores e, em cada membro, mais a porção **distal** que a **proximal**; por isso as **mãos** são o que mais sofre. Há uma síndrome que imita a central e engana justamente nesse ponto: a **paralisia cruzada de BELL**, uma das síndromes cervicomedulares raras, da junção entre o tronco cerebral e a medula, que o Skeletal Trauma (5ª ed., cap. 33, p. 815) descreve como parecida com a central, mas atingindo mais a função **proximal** que a distal do membro superior.
+
 !figura 48-57
 Ressonância de um homem de 55 anos com fraqueza maior nos membros superiores que nos inferiores, compatível com síndrome medular central; a tomografia não mostrou lesão óssea nem desalinhamento; depois de um período de observação, com a recuperação estabilizada, foi feita laminectomia e artrodese posterior para acelerar a melhora.
 !fim
@@ -76,7 +78,7 @@ Os autores **adiam**: depois do fim do choque medular, observam **2 a 3 dias**; 
 !questoes relacionadas=coluna-0288
 conceito: Na síndrome medular central, a idade jovem é fator de bom prognóstico; a cirurgia acelera a recuperação em algumas séries, mas o capítulo não mostra benefício no resultado final.
 como: O TARO 2026 cruzou idade (jovem ou idoso) com tratamento (cirúrgico ou não) e deu como gabarito o paciente jovem operado.
-alerta: O capítulo sustenta a metade da idade (jovem tem melhor prognóstico), mas não a da cirurgia: a série citada mostra recuperação mais rápida com cirurgia precoce e nenhuma diferença aos 2 anos, e os próprios autores adiam a operação. O gabarito oficial (jovens, cirúrgico) foi mantido; para a prova, guarde que jovem é o fator favorável.
+alerta: Os dois livros, lado a lado. O Rockwood sustenta a metade da idade (jovem tem melhor prognóstico), mas não a da cirurgia: a série citada mostra recuperação mais rápida com cirurgia precoce e nenhuma diferença aos 2 anos, e os próprios autores adiam a operação. O Campbell 15 (cap. 48, p. 1879) pende um pouco para a cirurgia: a revisão sistemática de KUMAR achou evidência fraca de melhor recuperação neurológica com a operação, com ganho funcional pequeno, e a cirurgia em 24 horas teve resultados um pouco melhores; a conduta dos autores do Campbell é operar em menos de 24 horas o paciente instável e operar cedo, mesmo sem instabilidade, o déficit grave (ASIA B e C), deixando os mais leves em observação. O gabarito oficial (jovens, cirúrgico) foi mantido; para a prova, guarde que jovem é o fator favorável e que o benefício da cirurgia é pequeno no Campbell e não demonstrado no Rockwood.
 !fim
 
 ## BROWN-SÉQUARD: a hemissecção
@@ -93,6 +95,8 @@ armadilha: Trocar propriocepção por sensibilidade térmica no mesmo grupo: a t
 ## As síndromes anterior e posterior
 
 A **síndrome medular anterior** atinge os dois terços anteriores da medula, território da **artéria espinal anterior**: perde-se a **força** (corticoespinhais) e a **dor e a temperatura** (espinotalâmicos), com **propriocepção preservada** (colunas dorsais, irrigadas pelas posteriores). A **síndrome posterior**, rara, é o espelho: força, dor e tato preservados, **propriocepção alterada**. O capítulo não descreve as síndromes uma a uma; ele dá a anatomia dos tratos e da irrigação, e elas saem dela.
+
+O Campbell 15 (cap. 48, p. 1880) descreve as duas. A **anterior** costuma vir de **hiperflexão**, em que fragmentos de osso ou de disco comprimem a artéria espinal anterior e a medula: perda motora **completa** e perda de dor e temperatura abaixo da lesão, com as colunas posteriores poupadas em grau variável (tato profundo, posição e vibração preservados); o prognóstico de recuperação importante é **ruim**. A **posterior** atinge as colunas dorsais e tira a **propriocepção** e a **vibração**, preservando as demais funções sensitivas e motoras; é **rara**, em geral causada por **tumor**, mas pode ocorrer numa lesão em **extensão**.
 
 !questoes central=coluna-0015,coluna-0260,coluna-0159
 conceito: A síndrome anterior tira força, dor e temperatura e preserva a propriocepção; a posterior preserva força, dor e tato e altera a propriocepção.
@@ -210,7 +214,7 @@ conceito: No STASCIS, a descompressão em até 24 horas aumentou 2,8 vezes a cha
 
 O mecanismo não é claro. Um estudo em cadáver sugeriu forças laterais ou oblíquas para o tipo II e extensão para o tipo III; outro mostrou que a direção da carga pouco importa e que a **densidade óssea** decide. A fratura, antes vista no jovem de alta energia, é cada vez mais a **fratura isolada do idoso que cai da própria altura**, em geral batendo a **testa** (lacerações frontais e equimose periocular são comuns) e hiperestendendo o pescoço.
 
-Os números epidemiológicos que as provas copiam estão no HEBERT (cap. 39): a fratura do odontoide é **9% a 15%** das fraturas cervicais do adulto, é a **fratura cervical mais comum acima dos 70 anos**, e a lesão neurológica associada varia de **2% a 27%**, grave ou até fatal quando presente. O tipo I fica acima do ligamento transverso, por avulsão do apical ou do alar; o tipo II fica entre o transverso e o corpo do áxis, sem chegar às facetas de C2, e é o mais comum.
+Os números epidemiológicos que as provas copiam estão no HEBERT (cap. 39): a fratura do odontoide é **9% a 15%** das fraturas cervicais do adulto, é a **fratura cervical mais comum acima dos 70 anos**, e a lesão neurológica associada varia de **2% a 27%**, grave ou até fatal quando presente. O tipo I fica acima do ligamento transverso, por avulsão do apical ou do alar; o tipo II fica entre o transverso e o corpo do áxis, sem chegar às facetas de C2, e é o mais comum. O Campbell 15 (cap. 48, p. 1886) põe o odontoide dentro do áxis: o áxis é a vértebra cervical mais fraturada, a fratura do **odontoide** (sobretudo o tipo II) é a mais frequente do áxis, e a do **enforcado** (istmo) vem em **segundo** lugar.
 
 A classificação de **ANDERSON e D'ALONZO** continua a mais aceita. É só descritiva: não define tratamento nem prevê resultado.
 
@@ -274,13 +278,13 @@ armadilha: "Os resultados cirúrgicos são melhores nos idosos" e "a imobilizaç
 alerta: O ENARE R4 de 2025 repetiu quase palavra por palavra a pergunta do TARO 2011, mas com gabarito oficial no traço de anteroinferior para posterossuperior como indicação. O capítulo diz o oposto: esse traço é o IIc de GRAUER, em que o parafuso é contraindicado. O gabarito do ENARE foi mantido no acervo; para TEOT e TARO, que repetiram três vezes a versão do livro, fique com o capítulo.
 !fim
 
-## Artrodese posterior C1–C2
+## Artrodese posterior C1-C2
 
 Pode ser feita em **qualquer** caso cirúrgico de odontoide. As técnicas com **fios sublaminares** (BROOKS, GALLIE) têm menos complicações, mas exigem halo depois e podem **acentuar** as fraturas desviadas para trás. Os **parafusos transarticulares** exigem redução razoável, para que as massas laterais de C1 e C2 se sobreponham por onde o parafuso passa. A montagem com **parafuso de massa lateral em C1 e parafuso em C2** é a **mais versátil**: não exige redução anatômica e ainda ajuda a reduzir, ao custo de mais complicações e de técnica exigente. Em C2, o parafuso pode ser de pedículo, de istmo (pars) ou intralaminar; num estudo biomecânico, o **pedicular** foi o mais forte, seguido do **intralaminar** e do de **pars**. As artrodeses posteriores consolidam **acima de 90%** (93% numa revisão, 100% numa série com C1–C2 instrumentado).
 
 !questoes relacionadas=trauma-0763
 conceito: Na artrodese C1–C2, a montagem com parafuso de massa lateral em C1 e parafuso em C2 (pedicular, de pars ou translaminar) é a mais versátil e não exige redução anatômica.
-como: O TEOT 2025 mostrou na imagem parafusos de massa lateral em C1 e translaminares em C2 e pediu o epônimo; o gabarito foi WRIGHT. O capítulo descreve a montagem com parafusos intralaminares em C2, mas não usa os epônimos (HARMS para o parafuso pedicular em C2, WRIGHT para o translaminar).
+como: O TEOT 2025 mostrou na imagem parafusos de massa lateral em C1 e translaminares em C2 e pediu o epônimo; o gabarito foi WRIGHT. O capítulo descreve a montagem com parafusos intralaminares em C2, mas não usa os epônimos (HARMS para o parafuso pedicular em C2, WRIGHT para o translaminar). Os três epônimos estão no HEBERT (cap. 39): MAGERL para os parafusos transarticulares, HARMS para o pedicular de C2 com massa lateral de C1 e WRIGHT para o translaminar de C2 com massa lateral de C1.
 armadilha: GALLIE: é a técnica com fio sublaminar e enxerto, não com parafusos.
 armadilha: MAGERL (escrito "Margel" na prova): é o parafuso transarticular C1–C2.
 !fim
@@ -320,6 +324,8 @@ A diferença entre fratura do atlas **estável e instável** é a integridade do
 
 O próprio capítulo relativiza a regra: num estudo biomecânico, o ligamento rompeu com deslocamento médio de só **3,8 mm**, e outra série não achou correlação entre o deslocamento e a integridade do ligamento. Por isso a medida serve como **complemento da ressonância**, que mostra o ligamento diretamente nos cortes axiais.
 
+O Campbell 15 (cap. 48, p. 1886) vai além: dá os mesmos 6,9 mm e a correção para 8,1 mm, mas diz que a **ressonância substituiu** essas medidas, por ser muito sensível para a ruptura do transverso, e que aplicar a regra de SPENCE **perderia 61%** das lesões. O HEBERT (cap. 39) escreve "**método de SPENCER**" e usa **7 mm**: afastamento maior que 7 mm, em estudos em cadáver, indica ruptura do ligamento. É dali que vem o número do TEOT 2021.
+
 !figura 48-15
 Ressonância axial ponderada em T2 no nível do anel de C1, mostrando o ligamento transverso íntegro entre as massas laterais, passando atrás do processo odontoide.
 !fim
@@ -353,7 +359,7 @@ como: Uma prova sem ano pediu o limite do intervalo anterior entre o atlas e o d
 armadilha: 5 mm como limite normal: é o teto da lesão isolada do transverso, não o normal.
 !fim
 
-## Luxação rotatória C1–C2
+## Luxação rotatória C1-C2
 
 É **rara no adulto** e quase sempre **perdida**: numa série, o diagnóstico demorou de **4 semanas a 2,5 anos**. Vem de inclinação lateral com rotação forçada; há associação descrita com fratura da clavícula numa queda sobre o ombro. Dá mais neuralgia occipital que déficit. A assimetria de C1–C2 na tomografia inicial costuma ser atribuída à posição da cabeça; o exame que confirma é a **tomografia dinâmica**, com cortes axiais com a cabeça rodada ao máximo para a direita e para a esquerda.
 
@@ -409,7 +415,7 @@ armadilha: 20 graus: é a flexoextensão média de C4–C5 e C5–C6, não um li
 
 O **SLIC** (Subaxial Cervical Injury Classification, de Vaccaro, Dvorak e o Spine Trauma Study Group) classifica e pontua em **três domínios**: **morfologia** (compressão ou explosão, distração, rotação ou translação), **complexo discoligamentar** (íntegro, indeterminado, roto) e **estado neurológico** (intacto, lesão de raiz, lesão medular completa, lesão medular incompleta), com **mais 1 ponto** se houver **compressão medular contínua com déficit**. A coluna normal vale **0**; a lesão mais grave (translação, complexo roto, lesão incompleta com compressão contínua) vale **10**. Com **3 ou menos**, o tratamento costuma ser **não cirúrgico**; com **4**, decidem os fatores associados (lesões, comorbidades, déficit); acima disso, **cirúrgico**. Os cirurgiões concordaram com a recomendação do sistema em **93%** dos casos, mas ele ainda não foi validado prospectivamente.
 
-O capítulo não imprime a pontuação de cada item; ele dá os domínios, o teto de 10, os cortes e um exemplo: a **explosão isolada vale 2** e não pede cirurgia. A distribuição abaixo é a da classificação original, a que as provas usam, e fecha com esses números. Note que o texto do capítulo escreve "acima de 5" para a faixa cirúrgica; na proposta original e nas provas, **5 já é cirúrgico**.
+O capítulo não imprime a pontuação de cada item; ele dá os domínios, o teto de 10, os cortes e um exemplo: a **explosão isolada vale 2** e não pede cirurgia. A pontuação item a item está na **Tabela 48.6 do Campbell 15** (cap. 48, p. 1901). A distribuição abaixo é a da classificação original, a que as provas usam, e fecha com esses números. Note que o texto do capítulo escreve "acima de 5" para a faixa cirúrgica; na proposta original e nas provas, **5 já é cirúrgico**.
 
 !tabela SLIC (pontuação da classificação original)
 | Domínio | Achado | Pontos |
@@ -444,6 +450,7 @@ A **classificação AO Spine subaxial** segue a lógica da toracolombar: **tipo 
 conceito: Nas classificações da AO para a subaxial, a lesão com desalinhamento ou rotação (tipo C) é a mais grave; a banca usa a mesma progressão de gravidade da toracolombar.
 como: O TARO 2014 perguntou, na classificação de MAGERL (AO) da cervical baixa, quais são as lesões mais graves (rotação, o tipo C da versão antiga). A SES-DF 2024 mostrou uma fratura de C6 em flexão-compressão com desalinhamento e pediu o tipo AO (C).
 armadilha: Distração: é o tipo B, intermediário; o C, com translação ou rotação, é o mais instável.
+alerta: A classificação de MAGERL citada pelo TARO 2014 não está no Rockwood; vem do HEBERT (cap. 40, Quadro 40.1), no capítulo da toracolombar: tipo A por compressão, B por distração e C por rotação, com gravidade crescente do A para o C. O gabarito (rotação) segue essa progressão.
 !fim
 
 As descrições sem mecanismo, que o capítulo prefere para conversar, ajudam a ler a imagem:
@@ -483,6 +490,8 @@ Classificação das fraturas do enforcado (espondilolistese traumática de C2) d
 ## O tratamento por tipo
 
 A maioria sem déficit trata sem cirurgia. O **tipo I** e o **Ia** vão para **colar rígido** (o Ia, salvo lesão medular). O **tipo II** é **reduzido com tração** e mantido em **halo-colete**; numa série, as falhas no halo tinham angulação inicial acima de **12 graus**, e a nova tração resolveu todas. O **tipo IIa não vai para tração**, porque ela **acentua** a deformidade: a redução é por **extensão e compressão** no próprio halo. O **tipo III**, pela luxação facetária, e o déficit neurológico contraindicam o tratamento conservador.
+
+O Campbell 15 (cap. 48, p. 1899) diverge em dois pontos. Para ele, os padrões **mais comuns** são os **tipos I e III**, e não só o tipo I, como no Rockwood. E a fratura que **precisa de tração** para ficar reduzida **não fica estável** nem no halo-colete, porque nem o colar nem o halo mantêm a tração; se a redução não se mantém, a indicação é cirúrgica. O tipo III, nos dois livros, é cirúrgico.
 
 Na cirurgia, há três caminhos: **posterior** (em geral de C1 a C3, mais forte em estudo biomecânico), **anterior** (discectomia e artrodese C2–C3, que preserva C1–C2) e **osteossíntese direta** da pars com parafuso, para II e IIa redutíveis. O **tipo III** pede **redução aberta e artrodese posterior de C1 a C3**, porque as facetas de C2 não estão em continuidade com o corpo e a redução pela frente é difícil; se o disco C2–C3 seguir deformado, os autores acrescentam artrodese anterior em segundo tempo.
 
@@ -660,7 +669,7 @@ Medidas de HARRIS, a "regra dos 12": intervalo básio-áxis (do básio a uma per
 !questoes central=trauma-0662 treino=coluna-0515
 conceito: Pela regra dos 12 de HARRIS, os intervalos básio-áxis e básio-dente devem medir menos de 12 mm; valores maiores sugerem dissociação occipitocervical.
 como: O TARO 2024 pediu o limite das medidas de HARRIS nas lesões occipitocervicais (12 mm), com 14, 16 e 18 mm como distratores.
-alerta: O enunciado do TARO 2024 fala na soma dos dois espaços abaixo de 12 mm. O capítulo diz outra coisa: cada intervalo, separadamente, deve medir menos de 12 mm. O gabarito (12 mm) foi mantido; o número está certo, mas não some as medidas.
+alerta: O enunciado do TARO 2024 fala na soma dos dois espaços abaixo de 12 mm. O capítulo diz outra coisa, e o Campbell 15 (cap. 48, p. 1883) concorda: cada intervalo, separadamente, deve medir menos de 12 mm. O gabarito (12 mm) foi mantido; o número está certo, mas não some as medidas.
 !fim
 
 A classificação mais usada é a de **TRAYNELIS**, descritiva: **tipo I**, deslocamento **anterior** do occipital sobre C1; **tipo II**, separação **axial** (o IIb é a distração axial passando por **C1–C2**); **tipo III**, deslocamento **posterior**. O tratamento não cirúrgico **quase não tem papel**: o halo só imobiliza até a cirurgia, e a **tração longitudinal é contraindicada**. A **artrodese occipitocervical** é o tratamento de escolha; os autores usam placa occipital ligada por hastes a parafusos de istmo em C2, com enxerto tricortical do ilíaco, e põem os parafusos occipitais na linha média, **abaixo do ínion**, que é o ponto mais grosso do osso e marca a altura do **seio transverso**. Mesmo assim, a mortalidade pós-operatória chegou a **22%** numa série, maior com traumatismo craniano associado.
