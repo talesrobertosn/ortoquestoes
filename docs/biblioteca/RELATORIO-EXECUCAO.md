@@ -324,7 +324,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 1005 | Onda 2: 45 miniaulas refeitas com figuras (27 dos princípios de osteossíntese, AO, Rockwood e Campbell, fim deste resumo; 18 da anatomia do joelho, Campbell, Rockwood e Skeletal Trauma) |
 | 1006 | Onda 2: 54 miniaulas refeitas com figuras (27 da coluna cervical e lesão medular, fim deste resumo; 18 da espondilolistese; 9 da anatomia do joelho, fim deste resumo) |
 | 1013 | Onda 2: 32 miniaulas refeitas com figuras (25 de outras doenças congênitas, fim deste resumo; 7 da espondilolistese, fim deste resumo); 7 pendências de gabarito e imagem resolvidas (SCHROTH, QUÉNU e KÜSS, SCAGLIETTI e outras); trauma-0720 com figura pendente; imagem de outra questão retirada da pe-tornozelo-0295 |
-| (este PR) | Onda 2: 48 miniaulas refeitas com figuras (24 da artroplastia total do joelho, Campbell e HEBERT, fim deste resumo; 24 das neuropatias compressivas e do desfiladeiro torácico, Green e Campbell, fim deste resumo) |
+| 1014 | Onda 2: 48 miniaulas refeitas com figuras (24 da artroplastia total do joelho, Campbell e HEBERT, fim deste resumo; 24 das neuropatias compressivas e do desfiladeiro torácico, Green e Campbell, fim deste resumo) |
+| (este PR) | Onda 2: 48 miniaulas refeitas com figuras (24 da displasia do desenvolvimento do quadril, fim deste resumo; 24 do pé torto congênito, fim deste resumo), com Tachdjian, Campbell e Lovell and Winter lado a lado |
 
 ## Próximo
 
