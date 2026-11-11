@@ -4208,46 +4208,22 @@
   }
  },
  "trauma-0150": {
-  "conceito": "**Delta P estima a margem entre a pressão que perfunde o tecido e a pressão dentro do compartimento.** A fórmula usada pelo capítulo é **pressão arterial diastólica menos pressão intracompartimental**. Quando a pressão do compartimento sobe ou a diastólica cai, a diferença diminui e a perfusão fica ameaçada.\n\nUm exemplo apenas didático: diastólica de 70 mmHg e pressão de compartimento de 45 mmHg dão delta P de 25 mmHg. Não se trata de uma pressão absoluta de 25 no compartimento. A mesma pressão tecidual pode ter consequências distintas em um paciente hipertenso e em outro hipotenso, razão pela qual a pressão arterial precisa ser documentada.\n\nO protocolo de Edimburgo descrito indica fasciotomia com delta P abaixo de 30 mmHg por mais de duas horas, acompanhando a tendência. Esse critério de monitorização não obriga esperar duas horas diante de sinais clínicos claros e múltiplos, para os quais o algoritmo orienta descompressão urgente. Também não equivale a operar qualquer leitura isolada de pressão absoluta acima de 30.\n\n**Na Biblioteca, leia “O limiar: delta P abaixo de 30 mmHg por mais de 2 horas”.** Separe fórmula, tendência e cenário clínico. A ordem da subtração explica por que piorar a perfusão diminui, em vez de aumentar, o delta.",
-  "correta": "**D: subtrair a pressão intracompartimental da diastólica.** A redação equivale a diastólica − compartimento. O resultado acompanha a margem de perfusão: quanto menor, maior a preocupação no contexto adequado.\n\nA medida precisa ser interpretada ao longo do tempo e junto da situação clínica, sem confundir delta com pressão absoluta.",
+  "conceito": "A questão inteira mora numa frase de português: \"subtrair a pressão X da pressão Y\" quer dizer **Y menos X**. A banca troca a pressão arterial (sistólica ou diastólica) e inverte a ordem, e só acerta quem entende o que o delta P mede e por que ele tem de ser um número que **diminui** quando o músculo piora.\n\n**O que o delta P mede.** O músculo dentro de um compartimento fechado recebe sangue enquanto a pressão que chega pelos vasos vence a pressão do tecido em volta. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17, seção sobre a fisiopatologia), põe números nisso: o tecido entra em sofrimento quando a pressão do compartimento chega a **10 a 20 mmHg abaixo da diastólica** ou **25 a 30 mmHg abaixo da pressão arterial média**. O que importa, portanto, não é a pressão do compartimento sozinha, e sim **a folga** entre ela e a pressão que perfunde. Foi WHITESIDES quem propôs medir essa folga: **delta P = pressão diastólica menos pressão do compartimento** (mesmo capítulo, seção da medida da pressão). Quanto menor o resultado, menor a margem de perfusão.\n\n**Por que a diastólica.** É a pressão mais baixa do ciclo, a que sustenta o fluxo capilar o tempo todo; a sistólica, alta, continua empurrando sangue pelas artérias grandes enquanto o músculo morre, e é por isso que o pulso fica presente na síndrome confirmada. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 50, complicações precoces), usa exatamente o nome da questão, **coeficiente delta-P**: com a diastólica, valores **abaixo de 30 mmHg** indicam síndrome; com a pressão arterial média, o corte sobe para **40 mmHg**.\n\n**A conta, com números.** Imagine pressão arterial de 120 por 80 mmHg e compartimento a 55 mmHg:\n\n| Redação | Conta | Resultado |\n|---|---|---|\n| intracompartimental da diastólica | 80 menos 55 | **25 mmHg**: abaixo de 30, perfusão ameaçada |\n| intracompartimental da sistólica | 120 menos 55 | 65 mmHg: parece tranquilo e engana |\n| diastólica da intracompartimental | 55 menos 80 | número negativo, sem limiar descrito |\n| sistólica da intracompartimental | 55 menos 120 | número negativo, sem limiar descrito |\n\nSó a primeira linha produz um valor comparável ao **limiar de 30 mmHg** que os livros usam.\n\n**O que fazer com o número.** O protocolo de Edimburgo (Rockwood, cap. 17) indica fasciotomia com **delta P abaixo de 30 mmHg mantido por mais de 2 horas**; em 850 fraturas da tíbia, o critério teve **sensibilidade de 94% e especificidade de 98,4%**. Leitura única não basta (35% de falso-positivos), e a diastólica cai na anestesia, por isso a tendência decide. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2244), registra a mesma regra na diretriz da AAOS: corte em **menos de 30 mmHg de diferença** entre a diastólica e o compartimento. Na criança, com diastólica baixa, o Rockwood cita MARS e HADLEY para usar a pressão arterial média.\n\n**Um tropeço do livro infantil.** O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6, seção do diagnóstico), escreve que o delta P é \"a pressão absoluta do compartimento menos a diastólica\", e logo depois diz que ele é diagnóstico **abaixo de 30**. As duas frases não cabem juntas: compartimento menos diastólica é quase sempre negativo e nunca \"cai abaixo de 30\" quando o músculo piora. O resumo pediátrico registra a ordem certa, diastólica menos compartimento.\n\n> **Na prova:** delta P = **diastólica menos compartimento**; fasciotomia com **menos de 30 mmHg por mais de 2 horas**; se a redação usar a média, o HEBERT dá 40.\n\nA fórmula e o protocolo estão na seção \"O limiar: delta P abaixo de 30 mmHg por mais de 2 horas\" do resumo.",
+  "correta": "**D) intracompartimental da pressão arterial diastólica.** Subtrair a intracompartimental da diastólica é fazer diastólica menos compartimento, a fórmula de WHITESIDES que o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), adota e que o HEBERT (cap. 50) chama de coeficiente delta-P. O resultado mede a folga de perfusão e encolhe quando a pressão do compartimento sobe ou a diastólica cai; abaixo de 30 mmHg por mais de 2 horas, indica-se a fasciotomia.",
   "incorretas": {
-   "A": "**Usa sistólica e inverte a subtração.** O coeficiente descrito não é compartimento menos sistólica. Essa troca perde tanto a referência arterial escolhida quanto o sentido em que a margem diminui quando a pressão tecidual sobe.",
-   "B": "**Mantém o sentido arterial menos compartimento, mas troca diastólica por sistólica.** A sistólica produz outra diferença e não pode receber automaticamente o mesmo limiar de 30 mmHg do delta apresentado. Fórmula e valor de corte precisam pertencer ao mesmo método.",
-   "C": "**Usa a diastólica correta, porém subtraída da pressão do compartimento.** É a ordem inversa da fórmula. No exemplo didático, 45 − 70 daria −25, enquanto o delta de perfusão é 70 − 45 = 25 mmHg; o sinal não é um detalhe dispensável."
+   "A": "**Arterial sistólica da pressão intracompartimental** junta os dois erros possíveis: usa a sistólica e inverte a conta, que vira compartimento menos sistólica. Com pressão arterial normal, o resultado é sempre um número negativo grande, e nenhum livro descreve limiar para ele. Não serviria nem como pressão absoluta nem como diferencial.",
+   "B": "**Intracompartimental da pressão arterial sistólica** acerta a direção (pressão arterial menos compartimento), mas escolhe a pressão errada. A sistólica fica alta mesmo quando o capilar já fechou, e o resultado parece folgado num músculo em sofrimento. O Rockwood (cap. 17) usa a diastólica, e o HEBERT (cap. 50) aceita como alternativa a pressão arterial média, com corte de 40 mmHg; a sistólica não aparece em nenhuma das fórmulas.",
+   "C": "**Arterial diastólica da pressão intracompartimental** tem a pressão certa na ordem invertida: compartimento menos diastólica. É a redação literal do Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6), mas o próprio capítulo diz que o valor diagnóstico é abaixo de 30, o que só faz sentido com diastólica menos compartimento. Feita assim, a conta dá número negativo justamente quando a perfusão ainda está boa."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; O tratamento preferido dos autores."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seções da fisiopatologia e da medida da pressão",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 50 (Fraturas dos ossos do antebraço no adulto), complicações precoces",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (Traumatic Disorders), p. 2244",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6 (Compartment Syndrome in Children), seção do diagnóstico",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Medida da pressão e o delta P",
-      "O tratamento preferido dos autores"
-     ],
-     "blocos": [
-      "medida-da-pressao-e-o-delta-p-d654f7b7",
-      "medida-da-pressao-e-o-delta-p-1312eae8",
-      "medida-da-pressao-e-o-delta-p-f94386d5",
-      "o-tratamento-preferido-dos-autores-930f2a36",
-      "o-tratamento-preferido-dos-autores-cb26ab73"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "be4cebcef1d15e8ca01dbbfbf2f9dad42120d320bb2c332bc1a78862d1c82047"
-    }
-   ],
-   "questaoSha256": "5546ac041986f9d062777217570ed6e635ae79f9285e13455b5f5201c3afdf6f",
-   "comentarioSha256": "9708036a4765896bdd86ce0729d16cc192f72a1e071de01107fb47bf679a4467"
-  }
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0151": {
   "incorretas": {
@@ -5956,45 +5932,28 @@
   }
  },
  "trauma-0229": {
-  "conceito": "**Após fratura diafisária tibial, o anterior é o compartimento mais frequentemente acometido.** Ele contém tibial anterior, extensores longos dos dedos e do hálux, fibular terceiro, nervo fibular profundo e vasos tibiais anteriores. Seu território sensitivo característico é o primeiro espaço interdigital, e a fraqueza afeta extensão do tornozelo e dos dedos.\n\nA dor ao estiramento desse grupo ocorre em flexão plantar. O resumo também relaciona sua vulnerabilidade ao predomínio de fibras tipo I, oxidativas, mais dependentes de oxigênio. Essas relações ajudam a compreender o exame, mas não exigem que todos os sinais estejam presentes para suspeitar da síndrome.\n\nO anterior é o local habitual do cateter na perna por ser mais acometido e acessível. Se a clínica sugerir posterior profundo não explicado pela medida anterior, ele também deve ser investigado. Uma localização mais comum não elimina avaliação dos demais espaços nem autoriza fasciotomia incompleta.\n\n**Leia “Perna” e “Onde colocar o cateter”, na Biblioteca.** Compare território nervoso, função muscular e monitorização para transformar a resposta em um mapa clínico útil.",
-  "correta": "**B: anterior.** A frequência de acometimento e a acessibilidade justificam sua escolha habitual para monitorização. Os extensores e o nervo fibular profundo explicam os achados associados.\n\nA hipótese de síndrome não pode depender de aparecer dormência ou paresia, que têm limitações diagnósticas importantes.",
+  "conceito": "Fratura da diáfise da tíbia e síndrome compartimental: qual dos quatro compartimentos da perna sofre primeiro e com mais frequência? A resposta, o anterior, sai da anatomia e da fisiologia do músculo, e é a mesma razão pela qual o cateter de pressão vai nele.\n\n**A perna tem quatro compartimentos.** Na figura, um corte da perna do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17, Fig. 17-8), acompanhe as letras:\n- **A**, anterior: à frente da membrana interóssea, entre a tíbia e a fíbula; tibial anterior, extensores longos dos dedos e do hálux, fibular terceiro, nervo fibular profundo e vasos tibiais anteriores;\n- **L**, lateral: colado à fíbula; fibulares longo e curto e nervo fibular superficial;\n- **DP**, posterior profundo: logo atrás da membrana; tibial posterior, flexores longos dos dedos e do hálux, nervo tibial;\n- **SP**, posterior superficial: o maior, com gastrocnêmio, sóleo, plantar e nervo sural.\nAs setas mostram as duas incisões da fasciotomia.\n\n**Por que o anterior.** Três razões se somam. Primeiro, as **paredes**: o anterior fica fechado pela tíbia, pela fíbula, pela membrana e por uma fáscia firme, sem folga para inchar. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242), diz que os compartimentos de paredes pouco complacentes são os mais acometidos, sobretudo o anterior e o posterior profundo. Segundo, o **tipo de fibra**: o anterior é rico em **fibras tipo I**, vermelhas e oxidativas, que dependem de oxigênio e morrem antes das tipo II, anaeróbias, que predominam no gastrocnêmio (Rockwood, cap. 17). Terceiro, a **posição**: a fratura da diáfise da tíbia, que responde por 36% dos casos, sangra e incha justamente junto a esse espaço. O Rockwood conclui que o anterior é o compartimento **mais acometido e o mais acessível**, e é nele que se mede a pressão.\n\n**Como o anterior se manifesta.** Pela Tabela 17-7 do Rockwood: dor ao **estiramento passivo em flexão plantar** do tornozelo e dos dedos, dormência no **primeiro espaço interdigital** (nervo fibular profundo) e fraqueza da dorsiflexão do tornozelo e da extensão dos dedos. Esses sinais chegam tarde (a parestesia tem sensibilidade de 13%), e por isso o paciente de risco é monitorado.\n\n> **Na prova:** perna = **anterior** (mais acometido e local do cateter); coxa = anterior também; antebraço = volar.\n\nO conteúdo de cada compartimento está na seção \"Perna\" do resumo.",
+  "correta": "**B) anterior.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), aponta o anterior como o compartimento mais acometido e o mais acessível, por isso escolhido para o cateter. Suas paredes rígidas (tíbia, fíbula, membrana interóssea e fáscia) e o predomínio de fibras tipo I, dependentes de oxigênio, explicam a vulnerabilidade; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242), também o põe à frente.",
   "incorretas": {
-   "A": "**Lateral é um dos quatro compartimentos e pode acompanhar o anterior, mas não é a resposta de maior frequência nesta pergunta.** Contém fibulares e nervo fibular superficial, com alteração de eversão e sensibilidade dorsal. A proximidade funcional e de pressão não torna seus territórios idênticos.",
-   "C": "**Posterior profundo contém flexores longos, tibial posterior e nervo tibial.** Sensibilidade plantar e fraqueza de flexão/inversão orientam para ele. É um espaço importante, inclusive na avaliação dirigida, mas a referência de maior frequência e cateter de rotina é anterior.",
-   "D": "**Posterior superficial contém gastrocnêmio, sóleo e nervo sural.** Seu padrão inclui dor à dorsiflexão, fraqueza de flexão plantar e alteração dorsolateral. A alternativa não corresponde ao grupo anterior destacado como mais frequentemente acometido."
+   "A": "**Lateral** é o vizinho que acompanha o anterior: o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), diz que os dois variam de pressão como se fossem um só, e por isso a mesma incisão lateral abre os dois. Contém os fibulares e o nervo fibular superficial (dormência no dorso do pé, fraqueza da eversão). Acompanha, mas não lidera.",
+   "C": "**Posterior profundo** é o segundo citado pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242), entre os mais acometidos, e é o compartimento que mais se perde no exame, porque fica escondido sob o tríceps sural e só tem pele e fáscia por cima no terço distal. O Rockwood (cap. 17) o mede apenas quando há sinais que a pressão do anterior não explica (dor à extensão dos dedos, dormência plantar). Importante, mas não o mais frequente.",
+   "D": "**Posterior superficial** é o maior compartimento, com gastrocnêmio, sóleo e plantar, e é o menos citado entre os acometidos. O gastrocnêmio é rico em fibras tipo II, de metabolismo principalmente anaeróbio, mais resistentes à falta de oxigênio (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17). Seus sinais são dor à dorsiflexão passiva e dormência dorsolateral do pé (nervo sural)."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; Por que a pressão mata o músculo; Os compartimentos de cada região."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), Fig. 17-8, Tabela 17-7 e seção da medida da pressão",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (Traumatic Disorders), p. 2242",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Medida da pressão e o delta P",
-      "Por que a pressão mata o músculo",
-      "Os compartimentos de cada região"
-     ],
-     "blocos": [
-      "medida-da-pressao-e-o-delta-p-13e06142",
-      "por-que-a-pressao-mata-o-musculo-1a07d757",
-      "os-compartimentos-de-cada-regiao-222f4f26"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "fd3e2bd71bf4ee40c0ad479ff37b7218d85a8d8be0d1d34cb18a450356649166"
-    }
-   ],
-   "questaoSha256": "92ba81bfb4ae3fb952eaa923a8ba678732b9cc91e368377e017948056183c4d4",
-   "comentarioSha256": "b9eae80250af98a1475b309b676f6976ecb99a0caf66ffcdd83b1bbb8d29d00f"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-17-8.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 17, Fig. 17-8, p. 585 aprox. Corte transversal da perna com os quatro compartimentos: anterior (A), lateral (L), posterior superficial (SP) e posterior profundo (DP); as setas mostram as duas vias da fasciotomia por dupla incisão.",
+    "largura": 715,
+    "altura": 670
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0231": {
   "conceito": "**A prova combina dois marcadores históricos de suspeita de lesão da radioulnar distal: encurtamento radial maior que 5 mm e traço a até 7,5 cm da articulação.** Eles sinalizam que uma fratura radial aparentemente isolada pode integrar uma Galeazzi. Não representam, sozinhos, confirmação de instabilidade.\n\nA relação de comprimento entre os ossos importa no punho. O resumo recomenda comparar a variância ulnar com o lado oposto e procurar também fratura da base do estiloide, alargamento distal e luxação no perfil. A distância do traço identifica o grupo distal, mais associado à instabilidade do que fraturas mais proximais.\n\nHá um contraponto explícito na fonte: estudos posteriores consideraram as medidas de 5 mm e 7,5 cm pouco confiáveis como critérios isolados de decisão. O exame de estabilidade no intraoperatório, depois de fixar anatomicamente o rádio, é o método recomendado para orientar o tratamento da articulação.\n\n**Leia “Quem tem a radioulnar distal lesada”, na Biblioteca, incluindo a crítica aos números.** A questão pede reconhecer quando suspeitar; não se deve transformar os mesmos números em autorização para dispensar teste ou indicar reparo automaticamente.",
@@ -9022,46 +8981,29 @@
   "conferido": false
  },
  "trauma-0420": {
-  "conceito": "**Os compartimentos posteriores superficial e profundo da perna são liberados pelo acesso posteromedial na técnica de dupla incisão.** A pele é aberta cerca de 1 a 2 cm atrás da borda medial tibial, com ponte cutânea suficiente e cuidado com safenos e feixe tibial posterior.\n\nPrimeiro se abre o superficial e, afastando-o, alcança-se o profundo. A segunda liberação precisa ser confirmada, porque uma abertura superficial satisfatória não prova que a pressão profunda foi resolvida. O resumo favorece abrir os quatro compartimentos quando há indicação, avaliando a musculatura e desbridando o que não é viável.\n\nA via anterolateral, próxima da fíbula, responde pelos compartimentos anterior e lateral. Uma técnica de incisão única sem fibulectomia pode alcançar o profundo atrás da fíbula, mas isso é uma estratégia diferente, não motivo para trocar o acesso posteromedial da técnica mais usada pelo nome de outra via.\n\n**Na Biblioteca, leia “Perna: dupla incisão, quatro compartimentos”.** Localize a incisão em relação à borda tibial e acompanhe como ela passa do superficial ao profundo.",
-  "correta": "**D: posteromedial.** É o acesso que libera os dois posteriores na técnica de dupla incisão descrita. O profundo pode exigir exposição adicional, sem presumir liberação apenas por ter aberto o superficial.\n\nA identificação de estruturas em risco acompanha a descompressão completa.",
+  "conceito": "Depois de decidir pela fasciotomia da perna, o cirurgião precisa abrir os quatro compartimentos, e a técnica mais usada faz isso por duas incisões. A questão pede o nome da que alcança os dois posteriores. A figura resolve melhor que qualquer frase, porque o nome de cada via diz onde ela fica em relação à tíbia.\n\n**Por que duas incisões e quatro compartimentos.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17, seção da fasciotomia da perna), manda liberar **os quatro**: houve quem defendesse liberação limitada, porque o anterior e o lateral funcionam como um só (e um estudo em cadáver sugeriu o mesmo para os dois posteriores), mas sem comprovação clínica. A dupla incisão é mais rápida e provavelmente mais segura que a incisão única, porque todas as aberturas são superficiais.\n\n**A técnica de MUBARAK e HARGENS, na figura** (Campbell's Operative Orthopaedics, 15ª ed., cap. 53, Técnica 53.3 e Fig. 53.8, p. 2247 e 2248):\n- **A, incisão anterolateral**: 20 a 25 cm, a meio caminho entre a diáfise da fíbula e a crista da tíbia, sobre o **septo intermuscular anterior**. Abre-se a fáscia do **anterior**, na linha do tibial anterior, e a do **lateral**, na linha da fíbula. O cuidado é o **nervo fibular superficial**, que corre logo atrás do septo e atravessa a fáscia cerca de 10 cm acima do maléolo lateral (Rockwood).\n- **B, incisão posteromedial**: **2 cm atrás da margem posterior da tíbia**. A **veia e o nervo safenos** são afastados para a frente. Abre-se a fáscia sobre o gastrocnêmio e o sóleo (**posterior superficial**) e, numa segunda abertura sobre o flexor longo dos dedos, o **posterior profundo**. Se a ponte do sóleo descer além da metade da tíbia, solta-se essa origem.\n- **C**: o corte da perna com as duas setas, a anterolateral chegando ao anterior e ao lateral, a posteromedial ao superficial e ao profundo.\n\nO Rockwood acrescenta dois detalhes da incisão medial: manter uma **ponte de pele generosa** e passar **à frente da artéria tibial posterior**, para preservar os perfurantes que nutrem os retalhos fasciocutâneos. O posterior profundo é mais fácil de achar no **terço distal**, onde só pele e fáscia o cobrem. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 73, Tratamento e Fig. 73.4), usa os mesmos nomes: a abordagem mais comum tem uma incisão **anterolateral** e outra **posteromedial**.\n\n**A ferida.** Nenhuma das incisões é fechada no primeiro tempo; revisão em cerca de 48 horas e fechamento só com todo o músculo viável, em geral possível na medial.\n\n> **Na prova:** anterolateral = anterior + lateral (cuidado com o fibular superficial); **posteromedial** = posterior superficial + profundo (cuidado com os safenos).\n\nA técnica está na seção \"Perna: dupla incisão, quatro compartimentos\" do resumo.",
+  "correta": "**D) posteromedial.** É a segunda incisão da técnica de MUBARAK e HARGENS, 2 cm atrás da margem posterior da tíbia (Campbell's Operative Orthopaedics, 15ª ed., cap. 53, p. 2248, Fig. 53.8B): afastam-se os safenos, abre-se o posterior superficial e, sobre o flexor longo dos dedos, o posterior profundo. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), descreve a mesma incisão a 1 a 2 cm da borda medial da tíbia, e o HEBERT (cap. 73) a chama de posteromedial.",
   "incorretas": {
-   "A": "**Anterolateral libera anterior e lateral.** É a incisão próxima ao septo junto da fíbula, com atenção ao fibular superficial. Trocar por ela deixa sem resposta o acesso aos dois posteriores solicitado.",
-   "B": "**A incisão da fonte fica posterior à borda medial tibial, não anterior.** A posição permite abordar os planos posteriores e respeitar a ponte cutânea e os perfurantes. “Medial” sozinho é insuficiente se o lado da borda foi invertido.",
-   "C": "**Posterolateral não é o acesso padrão pedido na dupla incisão.** O resumo menciona abrir o profundo junto à borda posterolateral da fíbula em uma técnica de incisão única, mas não confunde essa alternativa técnica com a via posteromedial que alcança superficial e profundo na operação usual."
+   "A": "**Anterolateral** é a outra metade da dupla incisão: sobre o septo intermuscular anterior, entre a fíbula e a crista da tíbia, ela abre o anterior e o lateral (Campbell's Operative Orthopaedics, 15ª ed., cap. 53, Fig. 53.8A). Seu risco é o nervo fibular superficial. Seria a resposta se a pergunta fosse sobre os compartimentos anterior e lateral.",
+   "B": "**Anteromedial** cai sobre a face medial subcutânea da tíbia, que não cobre compartimento nenhum: ali há só pele, periósteo e osso. Nenhum dos livros consultados descreve uma via anteromedial para fasciotomia da perna; a incisão medial do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), fica de propósito atrás da borda medial da tíbia, justamente para entrar nos posteriores.",
+   "C": "**Posterolateral** lembra a fasciotomia por incisão única perifibular, a técnica de DAVEY no Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, Técnica 53.2): uma incisão lateral sobre a fíbula alcança os quatro compartimentos, e o posterior profundo é aberto logo atrás da borda posterolateral da fíbula. É uma estratégia diferente, com uma incisão só, e o Rockwood (cap. 17) a considera menos segura que a dupla; não é o acesso posterior da técnica de duas incisões."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Fasciotomia."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (Traumatic Disorders), p. 2246 a 2248 (Técnicas 53.2 e 53.3, Fig. 53.8)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seção da fasciotomia da perna",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 73 (Síndrome compartimental), Tratamento e Fig. 73.4",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Fasciotomia"
-     ],
-     "blocos": [
-      "fasciotomia-f108fecb",
-      "fasciotomia-8b2413f2",
-      "fasciotomia-236fb661",
-      "fasciotomia-767d74b9",
-      "fasciotomia-8bb6fb73",
-      "fasciotomia-7e6b6436"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "1a7557290cc4c1922eb9f86816b796fca2b0b14e4b505969b024ec5ae45faa7e"
-    }
-   ],
-   "questaoSha256": "30e3c46b79150027c2e01e428f5d143824222670995927e4161085fe3961d6bd",
-   "comentarioSha256": "1f827afdb14254ddef4e1962db76e0c58f8b90b5296f0b515bef711bae533d06"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/campbell15-53-8-a010.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 53, Fig. 53.8, p. 2248. Fasciotomia de MUBARAK e HARGENS por dupla incisão: em A, a incisão anterolateral sobre o septo intermuscular anterior, que abre o anterior e o lateral, com o nervo fibular superficial logo atrás do septo; em B, a incisão posteromedial atrás da borda da tíbia, junto à veia e ao nervo safenos, que abre o posterior superficial e o profundo; em C, o corte da perna com as setas das duas vias.",
+    "largura": 700,
+    "altura": 1000
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0421": {
   "conceito": "A reconstrução de MAZZOCCA é chamada de anatômica porque devolve à clavícula os dois coracoclaviculares no lugar onde eles se prendiam. A questão pede, portanto, um mapa: a que distância da ponta da clavícula ficam as pegadas do conoide e do trapezoide.\n\n**O que a técnica faz.** Pelo Rockwood and Green's Fractures in Adults, 10ª ed., cap. 32 (Acromioclavicular and Sternoclavicular Joint Injuries), seção Anatomic CC Ligament Reconstruction, um enxerto de tendão (de preferência **semitendíneo autólogo**) passa em oito por baixo do coracoide e sobe por **dois túneis na clavícula**, um para cada ligamento; o ramo que sobra recria os acromioclaviculares superior e anterior. Diferentemente do WEAVER-DUNN, que transfere o coracoacromial para a ponta ressecada, aqui os dois feixes voltam ao seu ponto de inserção.\n\n**Por que as distâncias são essas.** O conoide é o feixe **medial**: a base do cone se prende no tubérculo conoide, na face posteroinferior da clavícula, onde o terço lateral achatado encontra os dois terços mediais, a cerca de **46 mm (mais ou menos 5)** da ponta. O trapezoide é **lateral** e sobe para uma linha rugosa mais perto da AC. Daí as regras do livro:\n\n- **túnel do conoide:** **45 mm** medial à clavícula distal, **posterior** à linha média; na dúvida, ir para medial, onde o osso é melhor;\n- **túnel do trapezoide:** **15 mm lateral ao conoide**, ou seja, cerca de **30 mm** da ponta, logo **anterior** à linha média, e **nunca a menos de 25 mm** da extremidade.\n\n**A segurança dos túneis.** Dois buracos numa clavícula fina são um ponto fraco. O Rockwood pede pelo menos **3 mm** de cortical em volta, túneis de no máximo **5,5 mm** e macheados antes dos parafusos de interferência de PEEK; a fratura da clavícula pelo túnel é complicação real. O Campbell's Operative Orthopaedics, 15ª ed., cap. 65 (Acute Dislocations, seções Sternoclavicular Joint e Acromioclavicular Joint) (p. 2949 e 2950, técnica 65.5) descreve a mesma operação com ressecção dos últimos 10 mm da clavícula e conferência com ZANCA, e conta que a clínica Campbell abandonou os túneis ósseos depois de fraturas raras, mas catastróficas (PANARELLO).\n\n**Um detalhe que destoa.** A legenda da Fig. 32-42 do Rockwood fala em pelo menos 25 mm de ponte entre os túneis e em 20 a 25 mm da clavícula distal para o trapezoide, o que não fecha exatamente com o texto (45 menos 15, cerca de 30 mm). A banca seguiu o texto: 30 e 45 mm.\n\nAs medidas estão na seção \"A reconstrução anatômica de MAZZOCCA\" do resumo.",
@@ -9372,51 +9314,25 @@
   "conferido": false
  },
  "trauma-0434": {
-  "conceito": "**A resposta oficial é oito horas, mas o resumo consultado usa seis horas em contextos que precisam ser diferenciados.** O capítulo afirma que atraso até a fasciotomia superior a seis horas provavelmente produz sequelas significativas. Também relata a estimativa histórica de Volkmann de que o músculo não sobreviveria mais de seis horas sem fluxo.\n\nIsso não estabelece uma fronteira universal em que todo nervo e músculo passam simultaneamente de viáveis a mortos. Intensidade e duração da pressão, perfusão arterial e lesão prévia influenciam o dano; o resumo enfatiza que os limiares de alteração nervosa variam. “Tempo de isquemia irreversível” e “atraso até a fasciotomia” não são expressões intercambiáveis.\n\nO objetivo clínico é evitar atraso, sem aguardar seis ou oito horas. A síndrome reconhecida exige descompressão urgente, avaliação muscular e desbridamento do que não for viável. A passagem do relógio aumenta o risco de necrose, contraturas e lesão neurológica, não cria um período inicial livre de consequências.\n\n**Leia “Complicações, atraso e paciente encontrado caído” e “O músculo é o tecido mais vulnerável”, na Biblioteca.** Separe a letra histórica da banca do que a fonte efetivamente informa sobre atraso e viabilidade.",
-  "correta": "**D: oito horas, conforme o gabarito oficial.** Essa letra foi preservada, mas o resumo não demonstra oito horas como limiar universal de dano neurológico ou muscular irreversível. Ele enfatiza atraso superior a seis horas como associado a sequelas significativas.\n\nA leitura segura guarda a resposta da prova junto com essa limitação, sem transformá-la em autorização para observar uma síndrome diagnosticada.",
+  "conceito": "Quanto tempo o músculo aguenta? A pergunta parece pedir um número decorado, mas há dois relógios diferentes nos livros, e confundir os dois é a pegadinha. Um conta o fluxo **totalmente interrompido**; o outro, a pressão do compartimento **elevada com algum fluxo ainda passando**, que é o que acontece na síndrome compartimental.\n\n**O que acontece no músculo.** O músculo esquelético é o tecido do membro mais sensível à isquemia, e a necrose depende da **intensidade e da duração** da pressão elevada; ela é maior no centro do músculo, onde não se vê por fora (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17, seção da fisiopatologia). As fibras **tipo I**, oxidativas, morrem primeiro, e o compartimento anterior da perna é rico nelas. Na síndrome compartimental, o capilar fecha, mas a artéria continua aberta: o pulso está presente e o fluxo cai sem chegar a zero. Por isso o músculo resiste um pouco mais do que no torniquete ou na artéria cortada.\n\n**Os números, livro a livro.**\n\n| Livro | Número | Contexto |\n|---|---|---|\n| HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 50, complicações precoces) | **8 horas** | \"instalada a síndrome, oito horas já são suficientes para causar lesões irreversíveis\" |\n| HEBERT (cap. 73, Fisiopatologia) | **8 horas** | pressão 25 a 30 mmHg abaixo da média e oito horas indicam necrose |\n| Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242) | **8 horas** | necrose significativa com pressão acima de 30 mmHg por mais de 8 horas |\n| Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6, prognóstico) | **8 horas** no adulto; **6 a 8** na criança | isquemia muscular prolongada aumenta o risco de sequela permanente |\n| Rockwood adulto (cap. 17) | **6 horas** | atraso até a fasciotomia que provavelmente deixa sequela; VOLKMANN, músculo sem fluxo nenhum |\n\n**Juntando os dois relógios.** VOLKMANN, em 1882, achava que o músculo **não sobrevivia mais de 6 horas com o fluxo completamente interrompido** (Rockwood, cap. 17, seção histórica). A síndrome compartimental é isquemia parcial, e os livros que falam dela como fenômeno de pressão dão **8 horas** para a lesão irreversível. O Rockwood adulto usa as 6 horas em outro sentido: o tempo **desde a admissão até a fasciotomia** acima do qual as sequelas ficam prováveis, um alvo de serviço, mais conservador. O Campbell (cap. 53, p. 2245 e 2246) reforça a ideia de que o relógio pesa: na coxa, os melhores resultados vêm com descompressão em até 8 horas, e na perna, operar antes de 12 horas deu 68% de bons resultados contra 8% depois.\n\n**O recado prático.** Nenhum desses números autoriza esperar. O capítulo 17 lembra que a pressão mais alta encurta a janela e que o atraso é a causa isolada de fracasso; a indenização nos processos cresce com cada hora.\n\n> **Na prova:** lesão **irreversível** de músculo e nervo: **8 horas** (HEBERT, Campbell, Rockwood infantil). **6 horas**: VOLKMANN (fluxo zero) e o atraso até a fasciotomia no Rockwood adulto.\n\nO relógio está na seção \"Complicações, atraso e paciente encontrado caído\" do resumo.",
+  "correta": "**D) 8h.** O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 50), diz que, instalada a síndrome, oito horas bastam para lesões irreversíveis, e repete o número na fisiopatologia do cap. 73. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242), descreve necrose muscular significativa com pressão acima de 30 mmHg por mais de 8 horas, e o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6), dá as mesmas 8 horas para o adulto. É isquemia parcial: o fluxo cai sem parar, e o músculo resiste mais do que com a artéria fechada.",
   "incorretas": {
-   "A": "**Duas horas correspondem a outro critério do capítulo.** No paciente monitorado sem sinais claros, delta P abaixo de 30 mmHg por mais de duas horas integra o protocolo de indicação de fasciotomia. Esse intervalo não é um limiar de morte de todo músculo e nervo e não justifica retardar cirurgia diante de sinais clínicos claros.",
-   "B": "**Quatro horas não é apresentado pelo resumo como o limiar solicitado.** O dano é progressivo e depende da perfusão e da agressão tecidual; não há, na fonte consultada, uma regra que declare o tecido preservado antes ou morto depois desse valor. O fato de a banca não escolher quatro não torna aceitável acrescentar quatro horas de espera.",
-   "C": "**Seis horas é um número efetivamente presente no resumo, mas com outro enquadramento.** Refere-se ao atraso até a fasciotomia associado a sequelas e à estimativa histórica de sobrevivência muscular sem fluxo. É uma alternativa bibliograficamente relevante, embora não seja a letra oficial desta redação, que foi D."
+   "A": "**2h** é outro relógio: o tempo que o delta P precisa ficar abaixo de 30 mmHg para indicar a fasciotomia no protocolo de Edimburgo (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17). Esse prazo existe para não operar por leitura isolada, e não marca lesão irreversível; nas 2 horas de monitoração o músculo ainda é salvável.",
+   "B": "**4h** aparece nos livros só como gatilho de prevenção. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 16, fraturas expostas), recomenda fasciotomia profilática depois do reparo vascular quando a isquemia passou de 3 a 4 horas, porque a reperfusão incha o compartimento. É um limite para agir antes do dano, não o ponto em que a lesão se torna irreversível.",
+   "C": "**6h** é o número do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), em dois sentidos: o atraso até a fasciotomia acima do qual as sequelas ficam prováveis e a estimativa de VOLKMANN para o músculo com o fluxo totalmente interrompido. Na criança, o Rockwood infantil (cap. 6) fala em risco a partir de 6 a 8 horas. Para a lesão irreversível da síndrome compartimental do adulto, HEBERT, Campbell e Rockwood infantil dão 8 horas."
   },
-  "conferido": false,
+  "alerta": "O gabarito (8 horas) é sustentado pelo HEBERT (caps. 50 e 73), pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242), e pelo Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6, para o adulto). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), não traz 8 horas: usa 6 horas para o atraso até a fasciotomia e na estimativa histórica de VOLKMANN. O gabarito oficial foi mantido.",
   "referencias": [
-   "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Complicações, atraso e paciente encontrado caído; Por que a pressão mata o músculo; Definições e história; O tratamento preferido dos autores; Medida da pressão e o delta P."
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 50 (Fraturas dos ossos do antebraço no adulto), complicações precoces",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 73 (Síndrome compartimental), Fisiopatologia",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (Traumatic Disorders), p. 2242, 2245 e 2246",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6 (Compartment Syndrome in Children), seção do prognóstico",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seções histórica e de complicações",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 16 (Classification and Initial Management of Open Fractures)",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "alerta": "Gabarito oficial D preservado. O resumo do Rockwood, 10ª edição, não estabelece oito horas como limiar universal de lesão irreversível. Ele informa que atraso até a fasciotomia superior a seis horas provavelmente causa sequelas significativas, e que a tolerância nervosa é variável. São conceitos diferentes; síndrome diagnosticada exige tratamento urgente.",
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Complicações, atraso e paciente encontrado caído",
-      "Por que a pressão mata o músculo",
-      "Definições e história",
-      "O tratamento preferido dos autores",
-      "Medida da pressão e o delta P"
-     ],
-     "blocos": [
-      "complicacoes-atraso-e-paciente-encontrado-caido-70a47584",
-      "por-que-a-pressao-mata-o-musculo-1a07d757",
-      "por-que-a-pressao-mata-o-musculo-0bba6145",
-      "definicoes-e-historia-0e7c3cc4",
-      "o-tratamento-preferido-dos-autores-930f2a36",
-      "medida-da-pressao-e-o-delta-p-1312eae8"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "205c4327fbffde2683b4f196f12ce6ad0601430efb718e1fd2e5c54ffdc37abc"
-    }
-   ],
-   "questaoSha256": "e682a957da421789abc66cb399d3bd0f411fe991ecc9688924e1d28a4f5fedad",
-   "comentarioSha256": "530783ffe3ebe82728ac3a42f6ddafc22185bf061203e58c350762171658a00f"
-  }
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0435": {
   "conceito": "O MESS é a régua mais conhecida para a decisão mais dura da exposta grave: salvar ou amputar. A banca não pergunta o ponto de corte; pergunta o que entra na soma. São quatro grupos, dois do membro e dois do paciente.\n\n**De onde vem.** O Mangled Extremity Severity Score foi proposto em 1990 por JOHANSEN e por HELFET, a partir da revisão retrospectiva de casos, com base em quatro critérios clínicos: lesão óssea e de partes moles, choque, isquemia e idade (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 18, Tabela 18-4). A ideia é somar o que destrói o membro (energia e falta de sangue) e o que limita a capacidade do doente de aguentar a reconstrução (choque e idade).\n\n**A tabela, para conferir cada grupo** (Campbell's Operative Orthopaedics, 15ª ed., cap. 16, Tabela 16.1, p. 670):\n\n| Grupo | Faixas e pontos |\n| --- | --- |\n| Lesão esquelética e de partes moles (energia) | baixa energia, como facada ou fratura fechada simples: 1; média, como exposta ou fratura em vários níveis e luxação: 2; alta, como projétil de alta velocidade: 3; esmagamento maciço: 4 |\n| Choque | pressão estável no local e no centro cirúrgico: 0; hipotensão transitória que responde a volume: 1; sistólica abaixo de 90 mm Hg que só responde no centro cirúrgico: 2 |\n| **Isquemia** | membro com pulso, sem isquemia: 0; pulsos diminuídos: 1; sem pulso ao Doppler, enchimento lento, parestesia: 2; sem pulso, frio, paralisado e insensível: 3; **pontos dobrados se a isquemia passa de 6 horas** |\n| **Idade** | menos de 30 anos: 0; de 30 a 50: 1; mais de 50: 2 |\n\n**O que fazer com o número: os dois livros lado a lado.**\n- Campbell (cap. 16, p. 669 e 670): nos estudos retrospectivos e prospectivos, 6 pontos ou menos foi compatível com membro salvável e 7 ou mais terminou em amputação. Os autores dizem que não seguem a regra à risca, mas calculam e registram o MESS no prontuário sempre que pensam em amputação primária, e lembram que nenhum escore substitui a experiência e o bom julgamento clínico.\n- Rockwood (cap. 63, seção de amputação, p. 2802): mais de 7 foi o limiar proposto, mas acima dele o salvamento variou de **0% a 93%** nas séries; o escore só se correlacionou bem com a amputação em um quarto das publicações. BOSSE (556 pacientes, cinco escores) mostrou que **escore baixo prevê o salvamento, mas escore alto não prevê a amputação**, e o capítulo conclui que esses escores não são usados na prática atual para decidir.\n\nAs indicações absolutas de amputação da exposta da tíbia, no Rockwood, não são números de escore: isquemia quente acima de 6 horas, membro distal preso só por ponte de pele e reconstrução que põe a vida em risco.\n\n> **Na prova:** MESS = **energia + choque + isquemia (dobra acima de 6 horas) + idade**. Escore alto não decide sozinho a amputação.\n\nA discussão dos escores está na seção \"Amputação\" do resumo.",
@@ -11779,66 +11695,34 @@
   }
  },
  "trauma-0668": {
-  "conceito": "**A síndrome compartimental do antebraço ameaça a perfusão muscular e exige descompressão adequada de todos os espaços que permanecem sob pressão.** O resumo de fraturas do antebraço informa ocorrência em cerca de **3%** das fraturas, com predominância em homens jovens, e recomenda em geral liberar os quatro compartimentos: volar superficial, volar profundo, dorsal e coxim móvel.\n\nO capítulo específico de síndrome compartimental organiza o antebraço em três grupos, volar, dorsal e coxim móvel, e descreve que a liberação volar costuma bastar, abrindo o dorsal se sua pressão continuar elevada. A contagem difere porque o volar pode ser subdividido; a decisão técnica também depende da suficiência da descompressão. Não se deve esconder essa diferença como se os dois textos dessem uma única ordem sem ressalvas.\n\nNa via volar, o capítulo de fraturas descreve abertura do lacerto e do túnel do carpo de rotina. Por isso, a alternativa D também tem apoio na fonte e não deve ser ensinada como falsa para defender C. O gabarito seleciona a regra geral de descompressão completa; a anatomia e a pressão residual orientam como alcançá-la.\n\n**Leia as seções de síndrome compartimental nos resumos dos capítulos 17 e 42, na Biblioteca.** Compare divisão anatômica e extensão da liberação. O princípio comum é não deixar tecido ameaçado sem descompressão, e não apenas contar incisões ou decorar um número.",
-  "correta": "**C é o gabarito oficial e corresponde à recomendação geral do capítulo 42.** A descompressão deve ser suficiente para não manter um compartimento com pressão elevada. O capítulo 17, porém, descreve começar pelo volar e complementar se necessário.\n\nEssa resposta não torna D falsa nem dispensa verificar se os demais espaços foram adequadamente descomprimidos.",
+  "conceito": "A questão reúne quatro afirmações sobre a síndrome compartimental na fratura dos ossos do antebraço: uma de frequência, uma de sexo e duas de técnica. As duas primeiras se resolvem com os números do livro; as duas de técnica exigem saber o que o Rockwood recomenda e por que a banca ficou com a regra mais ampla.\n\n**O que se sabe sobre o antebraço.** É o **segundo lugar** mais frequente de síndrome compartimental aguda pós-traumática, atrás da perna (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42, seção da síndrome compartimental; o HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 73, diz o mesmo para adultos e crianças). Aparece em **3%** das fraturas do antebraço, mais em **homens com menos de 35 anos**, e pode surgir em traumas que parecem leves. O teste clínico mais sensível é a **dor desproporcional à extensão passiva dos dedos**, e uma pressão a até 30 mmHg da diastólica confirma o diagnóstico. O compartimento mais atingido é o volar, e dentro dele o **flexor profundo**, o primeiro e o mais afetado, segundo o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6).\n\n**Quantos compartimentos.** O capítulo 42 conta **quatro**: volar superficial, volar profundo, dorsal e coxim móvel (braquiorradial e extensores radiais do carpo). O capítulo 17 conta três (volar, dorsal e coxim móvel), sem separar o volar. Na figura (Rockwood, cap. 17, Fig. 17-12), um corte do terço médio do antebraço, veja o volar (V), grande, à frente do rádio e da ulna, e o dorsal (D), atrás; as setas são as incisões volar e dorsal.\n\n**A técnica.** A incisão volar começa lateral ao tendão do bíceps, curva para medial no meio do antebraço e volta à linha média no punho; abre-se o **lacerto fibroso**, a fáscia entre o flexor ulnar do carpo e o flexor superficial dos dedos, e, de rotina, o **túnel do carpo**. A incisão dorsal, reta, de 2 cm abaixo do epicôndilo lateral em direção ao tubérculo de LISTER, abre o dorsal e o coxim móvel. As feridas ficam abertas; dois terços precisam de enxerto, e há complicação em **42%** mesmo com tratamento rápido.\n\n**Onde os capítulos se separam.** O capítulo 42 recomenda, em geral, **liberar os quatro compartimentos**. O capítulo 17 diz que, na maioria dos casos, a volar basta, e o dorsal é aberto se a pressão dele continuar alta. O HEBERT (cap. 73) descreve a fasciotomia do antebraço com duas incisões, anterior e posterior, e no cap. 50 fala em fasciotomias amplas. O ponto comum, que a banca escolheu como regra: **nenhum compartimento sob pressão pode ficar fechado**.\n\n> **Na prova:** antebraço = **3%**, **homem jovem**, segundo local mais frequente; liberar **todos os compartimentos**; a incisão volar inclui lacerto e túnel do carpo.\n\nA técnica está na seção \"Síndrome compartimental do antebraço\" do resumo de fraturas do antebraço e na seção \"Antebraço e mão\" do resumo de síndrome compartimental aguda.",
+  "correta": "**C) exige descompressão de todos os compartimentos do antebraço.** É a recomendação geral do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 42): liberar o volar superficial, o volar profundo, o dorsal e o coxim móvel, por uma incisão volar e outra dorsal. O HEBERT (caps. 50 e 73) segue a mesma linha, com fasciotomias amplas por duas incisões. A regra protege o flexor profundo, o primeiro a sofrer, e qualquer compartimento que continue tenso depois da primeira abertura.",
   "incorretas": {
-   "A": "**Dez por cento não é a incidência descrita para as fraturas do antebraço no resumo.** O valor apresentado é cerca de 3%. O denominador importa: frequência entre tipos de fratura e participação do antebraço em todas as síndromes são medidas diferentes e não podem ser trocadas.",
-   "B": "**O predomínio é masculino, particularmente em jovens, não feminino.** O capítulo geral relaciona juventude a maior volume muscular em um continente de tamanho limitado. Isso é uma associação de risco e não motivo para ignorar a síndrome em mulheres.",
-   "D": "**A afirmação tem apoio no capítulo de fraturas do antebraço, que descreve abertura do lacerto e descompressão rotineira do túnel do carpo.** Portanto, não é correto negá-la em bloco. A banca preferiu C como regra geral, mas D também representa parte da técnica descrita, tornando o item discutível quanto à exclusividade da resposta."
+   "A": "**Ocorre em 10% dos casos** triplica o número do livro. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 42), dá **3%** das fraturas do antebraço. Os 10% aparecem no mesmo livro em outro contexto: o cap. 18, sobre o membro gravemente lesado, registra síndrome compartimental em até 10% das fraturas expostas em geral.",
+   "B": "**É mais comum no sexo feminino** inverte o perfil. O Rockwood and Green's Fractures in Adults, 10ª ed., descreve predomínio em **homens com menos de 35 anos** no antebraço (cap. 42) e, na síndrome como um todo, homens 10 vezes mais que mulheres (cap. 17). O jovem musculoso tem pouco espaço para o músculo inchar dentro da fáscia.",
+   "D": "**Exige descompressão tanto do túnel do carpo como do lacerto fibroso** descreve gestos verdadeiros: na incisão volar do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 42), o lacerto é aberto para descomprimir o flexor ulnar do carpo e o túnel do carpo é liberado de rotina. Mas esses gestos fazem parte da liberação volar, não a resumem: sem abrir a fáscia profunda dos flexores e, quando tenso, o dorsal, o antebraço fica mal descomprimido. Por isso a banca preferiu a regra ampla."
   },
-  "conferido": false,
+  "alerta": "O gabarito (descompressão de todos os compartimentos) segue o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 42), que recomenda em geral liberar os quatro. O cap. 17 do mesmo livro diz que, na maioria dos casos, a fasciotomia volar basta e que o dorsal é aberto se a pressão continuar elevada; e o cap. 42 descreve a abertura do lacerto fibroso e do túnel do carpo como rotina, o que dá algum apoio à alternativa do túnel do carpo e do lacerto. O gabarito oficial foi mantido.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Os compartimentos de cada região; Fasciotomia; Quem tem síndrome compartimental.",
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi. Seção: Síndrome compartimental do antebraço."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42 (Diaphyseal Fractures of the Radius and Ulna), seção da síndrome compartimental",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seções dos compartimentos e da fasciotomia do antebraço (Fig. 17-12)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 18 (Principles of Mangled Extremity Management)",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 73 (Síndrome compartimental), Tratamento",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 50 (Fraturas dos ossos do antebraço no adulto), complicações precoces",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6 (Compartment Syndrome in Children), seção do membro superior",
+   "Resumo OrtoQuestões: Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "alerta": "Gabarito C preservado. O capítulo 42 recomenda em geral liberar os quatro compartimentos e também descreve abertura do lacerto e túnel do carpo, dando apoio a D. O capítulo 17 descreve liberação volar inicialmente, com dorsal se a pressão continuar alta. D também tem apoio na bibliografia; a diferença entre os capítulos exige avaliar a suficiência da descompressão, sem deixar compartimento com pressão elevada fechado.",
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Os compartimentos de cada região",
-      "Fasciotomia",
-      "Quem tem síndrome compartimental"
-     ],
-     "blocos": [
-      "os-compartimentos-de-cada-regiao-6968671a",
-      "fasciotomia-90ee7ca5",
-      "quem-tem-sindrome-compartimental-4b3a771a",
-      "quem-tem-sindrome-compartimental-5ca80c99"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "3888386fcea4c667e69f4f5213e8779840b00efcd636172de54bb20194205edc"
-    },
-    {
-     "resumo": "rockwood10-42-diafise-radio-ulna",
-     "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
-     "secoes": [
-      "Síndrome compartimental do antebraço"
-     ],
-     "blocos": [
-      "sindrome-compartimental-do-antebraco-b4aee409",
-      "sindrome-compartimental-do-antebraco-408a137e",
-      "sindrome-compartimental-do-antebraco-d130faa9",
-      "sindrome-compartimental-do-antebraco-9723cec1"
-     ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
-     "trechosSha256": "482a63b7745b0178153ff656890de32e2fbcaf61b460076af10aa6cfbd73a857"
-    }
-   ],
-   "questaoSha256": "fbd45148dd411500297bb87a0cda1db7b276266c524329f2b409b009542a9e8d",
-   "comentarioSha256": "03134b7b081baa30296029173f0a0101209c56cbf4fb6c24c60652863c403845"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-17-12.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 17, Fig. 17-12, p. 587 aprox. Corte transversal do terço médio do antebraço com os compartimentos volar (V) e dorsal (D) e as setas das incisões volar e dorsal da fasciotomia; o compartimento do pronador quadrado, mais distal, não aparece neste nível.",
+    "largura": 740,
+    "altura": 665
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0670": {
   "conceito": "Depois da primeira fratura de quadril, o risco não desaparece com a consolidação. O capítulo descreve nova fratura em dois anos em cerca de **5% dos homens e 10% das mulheres**; em **mais de 70%** das segundas fraturas, o tipo é o mesmo da primeira. O par pedido no homem é, portanto, 5% e mais de 70%.\n\nEsses números são estimativas do material consultado, não uma previsão individual. A primeira fratura funciona como sinal de alarme porque fragilidade óssea e fatores de queda continuam presentes. Daí a importância de abordar osteoporose e o risco de novas quedas durante a internação, em vez de tratar apenas o episódio atual (resumo do Rockwood, 10ª ed., cap. 53, “A segunda fratura” e “Quem sofre e por quê”).\n\nA alternativa precisa acertar tanto o risco por sexo quanto a repetição do padrão. O valor maior de 10% não deve ser transferido da mulher para o homem, e “mesmo tipo” não significa obrigatoriamente o mesmo lado.\n\nLeia essa seção no resumo da Biblioteca para relacionar o dado à prevenção secundária.",
@@ -15656,46 +15540,23 @@
   "conferido": false
  },
  "trauma-0818": {
-  "conceito": "**O gabarito oficial usa 30 mmHg de pressão intracompartimental absoluta, mas o resumo prioriza uma diferença de pressão.** Delta P é diastólica menos pressão compartimental. Quanto menor essa margem, mais ameaçada fica a perfusão. Uma mesma pressão no compartimento pode ter significados diferentes em pessoas normotensas e hipotensas.\n\nO resumo cita pressão muscular de repouso em torno de 10 mmHg e valores absolutos críticos de 30 a 50 mmHg já relatados. Entretanto, esses números não são equivalentes a um gatilho absoluto universal. Na validação do protocolo, pacientes com pressão acima de 30 mmHg e delta P normal não apresentaram pior função no acompanhamento descrito.\n\nPara monitorização sem quadro clínico claro, o protocolo de Edimburgo indica fasciotomia com delta P abaixo de 30 mmHg mantido por mais de duas horas, considerando a tendência. Sinais claros e múltiplos exigem descompressão urgente, sem esperar completar uma janela de monitorização.\n\n**Leia “O limiar: delta P abaixo de 30 mmHg por mais de 2 horas”, na Biblioteca.** Observe se a pergunta usa pressão absoluta ou diferencial: ambos podem conter o número 30 e ainda representar grandezas distintas.",
-  "correta": "**B: 30 mmHg, gabarito oficial da questão de pressão absoluta.** A letra foi preservada. A ressalva é que o protocolo apresentado no resumo usa principalmente **delta P**, e não pressão absoluta isolada, para decidir no paciente monitorado.\n\nO número não deve ser transportado de uma grandeza para outra sem escrever a fórmula.",
+  "conceito": "A pergunta é sobre pressão **absoluta**: a partir de quantos mmHg dentro do compartimento a fasciotomia passa a ser indicada. É um número antigo, que os livros brasileiros e americanos ainda trazem, e que o capítulo mais novo do Rockwood questiona. Para responder bem, vale saber de onde ele vem e o que o substituiu.\n\n**O ponto de partida.** A pressão de repouso do músculo adulto é de cerca de **10 mmHg** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17, seção do limiar); o HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 73, Monitoração), dá cerca de 8 mmHg no adulto e **13 a 16 mmHg** na criança. A partir daí, cada livro marca onde começa o perigo:\n\n| Livro | O que diz sobre a pressão absoluta |\n|---|---|\n| Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242) | necrose muscular significativa com pressão **acima de 30 mmHg por mais de 8 horas**, mesmo com fluxo normal |\n| Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6, diagnóstico) | **30 mmHg ou mais** é o valor \"geralmente aceito\"; historicamente, o limiar da fasciotomia da perna, no adulto e na criança, era **acima de 30 mmHg** |\n| HEBERT (cap. 73, Monitoração) | uns usam 30, outros 40; na conduta de LOURENÇO, 0 a 10 é normal, **20 a 30** é compartimento em risco (monitorar), **mais de 30**, fasciotomia de urgência |\n| Rockwood adulto (cap. 17) | níveis críticos de **30 a 50 mmHg** já relatados, mas a pressão absoluta **não é o gatilho** adequado |\n\nOs três primeiros sustentam o gabarito: **30 mmHg** é o limite inferior.\n\n**Por que o Rockwood abandonou o número.** A mesma pressão significa coisas diferentes em pessoas diferentes. O que fecha o capilar é a folga entre a pressão do tecido e a diastólica, e um hipertenso tolera mais pressão no compartimento que um paciente chocado. O capítulo 17 conta a validação do protocolo de Edimburgo: **41 pacientes** ficaram com pressão absoluta acima de 30 mmHg por mais de 6 horas, com delta P normal, e não tiveram pior função em um ano. Se o 30 absoluto fosse o gatilho, todos teriam sido operados sem necessidade. Por isso o livro indica a fasciotomia pelo **delta P abaixo de 30 mmHg por mais de 2 horas**, e a criança tem ainda o problema da pressão basal mais alta (o Rockwood infantil conta que, de 15 antebraços com mais de 30 mmHg, só 1 fez a síndrome).\n\n**Como ler o 30 em cada contexto.** Na redação da questão, pressão intracompartimental sozinha, a resposta é 30. Diante de um caso clínico com pressão arterial informada, o raciocínio moderno é o delta P. E sinais clínicos claros e múltiplos dispensam número nenhum: a fasciotomia é urgente.\n\n> **Na prova:** pressão **absoluta**: 30 mmHg; **delta P** (diastólica menos compartimento): abaixo de 30 por mais de 2 horas. O mesmo número em duas grandezas diferentes.\n\nO limiar e a validação de Edimburgo estão na seção \"O limiar: delta P abaixo de 30 mmHg por mais de 2 horas\" do resumo.",
+  "correta": "**B) 30 mm de Hg.** É o limite absoluto que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242), associa à necrose muscular quando mantido por mais de 8 horas, o valor geralmente aceito no Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6), e o ponto a partir do qual a conduta de LOURENÇO, no HEBERT (cap. 73), indica fasciotomia de urgência. O Rockwood adulto (cap. 17) prefere o delta P, com o mesmo número 30 como limiar da diferença.",
   "incorretas": {
-   "A": "**Vinte mmHg não é o limite escolhido pela banca nem um corte absoluto universal no resumo.** Em um paciente com diastólica baixa, até uma pressão menos elevada pode ameaçar perfusão. É justamente essa dependência da pressão arterial que impede adotar um único número tecidual para todos.",
-   "C": "**Quarenta mmHg pode estar entre valores absolutos descritos como críticos em trabalhos históricos, mas não é a letra oficial.** O significado clínico depende da diastólica e da evolução. Não se deve aguardar que o compartimento atinja 40 quando a margem de perfusão já está comprometida.",
-   "D": "**Cinquenta mmHg também não é uma condição obrigatória para descomprimir.** Uma pessoa hipotensa pode sofrer isquemia com pressão menor; outra pode manter delta P adequado apesar de uma pressão absoluta elevada. A alternativa troca a avaliação da perfusão por um valor fixo mais alto."
+   "A": "**20 mm de Hg** é a faixa de alerta, não a de cirurgia. No HEBERT (cap. 73), 20 a 30 mmHg é o compartimento em risco, que pede monitoração contínua ou medida a cada 2 horas; o mesmo capítulo cita WHITESIDES, que operava quando a pressão chegava a 20 mmHg abaixo da diastólica, o que é uma diferença e não uma pressão absoluta. Seria resposta numa questão sobre quando começar a vigiar.",
+   "C": "**40 mm de Hg** é o corte de uma minoria de autores, citada pelo HEBERT (cap. 73) ao lado do 30, e o valor que o mesmo livro usa para a diferença entre a pressão arterial média e o compartimento no músculo já traumatizado. Como limite inferior, perde para o 30, que é o valor mais citado nos três livros que trazem pressão absoluta.",
+   "D": "**50 mm de Hg** é o teto da faixa de 30 a 50 mmHg que o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), lista como níveis críticos já relatados. Esperar 50 mmHg para operar deixaria o músculo exposto durante horas a uma pressão que, segundo o Campbell (cap. 53, p. 2242), já necrosa a partir de 30. Não é limite inferior em nenhum livro."
   },
-  "conferido": false,
+  "alerta": "O gabarito (30 mmHg de pressão absoluta) é sustentado pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242), pelo Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6) e pelo HEBERT (cap. 73). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), usa o 30 como limite do delta P e afirma que a pressão absoluta não é o gatilho adequado. O gabarito oficial foi mantido.",
   "referencias": [
-   "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 17 · Acute Compartment Syndrome. Seções: Medida da pressão e o delta P; O tratamento preferido dos autores."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (Traumatic Disorders), p. 2242 e 2244",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6 (Compartment Syndrome in Children), seção do diagnóstico",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 73 (Síndrome compartimental), Monitoração",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seção do limiar de pressão",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "alerta": "Gabarito oficial B preservado para a redação de pressão intracompartimental absoluta. O resumo consultado afirma que a pressão absoluta isolada não é o gatilho adequado: o protocolo usa delta P = diastólica − compartimental abaixo de 30 mmHg por mais de duas horas no paciente monitorado. Quadro clínico claro exige fasciotomia urgente.",
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Medida da pressão e o delta P",
-      "O tratamento preferido dos autores"
-     ],
-     "blocos": [
-      "medida-da-pressao-e-o-delta-p-d654f7b7",
-      "medida-da-pressao-e-o-delta-p-1312eae8",
-      "medida-da-pressao-e-o-delta-p-f94386d5",
-      "o-tratamento-preferido-dos-autores-930f2a36"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "b76927ab5fef5e18601522fc425b6fbbfef668773e7ada01b6319e93054b7439"
-    }
-   ],
-   "questaoSha256": "c8e20c38b41e1a04f1e3ecabf1374e604399c6bf6a04b4792288c90f928531b9",
-   "comentarioSha256": "7397b9c8ad73005c3418f1e74e572ad8d7e51c9a13464f6dab4f50b8b2a2f14a"
-  }
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0819": {
   "conceito": "As fraturas-luxações do antebraço viraram uma lista de epônimos que a banca embaralha: um osso quebrado de um lado, uma articulação perdida do outro. Para acertar é preciso saber, em cada uma, **qual osso quebra** e **qual articulação sai**.\n\n**O antebraço é um anel.** O rádio gira em volta da ulna preso em cima pela radioulnar proximal, embaixo pela radioulnar distal e, no meio, pela membrana interóssea (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42). Como num anel, uma lesão num ponto costuma ter outra em outro ponto. Os três nomes descrevem os três jeitos de isso acontecer:\n\n| Lesão | O que quebra | O que perde a relação |\n|---|---|---|\n| MONTEGGIA | **ulna** | cabeça do rádio luxada (em cima) |\n| GALEAZZI | **diáfise do rádio**, em geral no terço distal | radioulnar distal (embaixo) |\n| ESSEX-LOPRESTI | **cabeça do rádio** | membrana interóssea e radioulnar distal |\n\n**O mecanismo da ESSEX-LOPRESTI.** É a **carga axial**: a cabeça do rádio impacta no capítulo e, com mais energia, a força rompe a **membrana interóssea** e a **radioulnar distal** (Rockwood, cap. 40, seção dos mecanismos). Com o anel rompido em dois pontos, o rádio sobe: é a **instabilidade longitudinal do antebraço**. Diferente de GALEAZZI, o rádio não quebra no meio; quebra na ponta de cima, e a membrana inteira se rompe entre os dois extremos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, p. 2816), descreve a lesão a partir de uma queda forte sobre a mão espalmada e amplia um pouco a definição: a fratura proximal pode ser da **cabeça ou do colo** do rádio, sempre com a radioulnar distal rota e a membrana rasgada.\n\n**A figura.** O caso do capítulo mostra os dois extremos do anel: a cabeça cominutiva no cotovelo (A, B e a tomografia em E) e, nos punhos comparados (C e D), o rádio encurtado com a radioulnar distal alargada. Nas radiografias com empurrar e puxar (F e G), o rádio sobe e desce. O tratamento (H a K) cuida dos dois pontos: prótese da cabeça e fios na radioulnar distal.\n\n**Por que importa.** A cabeça é a escora que impede o rádio de subir. Retirá-la sem repor, numa ESSEX-LOPRESTI não reconhecida, deixa a migração livre; depois de uma ressecção com o punho íntegro, 2 a 3 mm de migração são esperados, mas com membrana e radioulnar distal rotas a migração é acentuada (cap. 40). Por isso o exame do punho é obrigatório em toda fratura da cabeça do rádio.\n\n> **Na prova:** cabeça do rádio + radioulnar distal = ESSEX-LOPRESTI. Diáfise do rádio + radioulnar distal = GALEAZZI. Ulna + cabeça do rádio luxada = MONTEGGIA.\n\nA definição está na seção \"Lesão de Essex-Lopresti\" do resumo.",
@@ -16630,46 +16491,29 @@
   "conferido": false
  },
  "trauma-0872": {
-  "conceito": "**Anterior e lateral formam o par destacado nesta pergunta sobre a perna.** A perna possui quatro compartimentos: anterior, lateral, posterior superficial e posterior profundo. Saber qual grupo é mais frequentemente envolvido ajuda a orientar a vigilância, mas não determina quais espaços podem ser deixados sem avaliação.\n\nO resumo destaca o anterior como o mais acometido e acessível à medida de pressão. Ele contém extensores e nervo fibular profundo, com pista sensitiva no primeiro espaço interdigital. As pressões anterior e lateral tendem a variar juntas; o lateral contém fibulares e nervo fibular superficial, relacionados à eversão e ao dorso do pé.\n\nOs posteriores têm mapas diferentes: o superficial contém gastrocnêmio e sóleo, associado à flexão plantar e à sensibilidade dorsolateral; o profundo contém tibial posterior e flexores longos, com nervo tibial e sensibilidade plantar. A existência de um par mais frequente não torna esses grupos protegidos da isquemia. Na fasciotomia da perna descrita, liberam-se os quatro compartimentos.\n\n**Leia “Perna” e “Onde colocar o cateter”, na Biblioteca.** Relacione frequência, território nervoso e local de monitorização, sem confundir o cateter habitual com uma autorização para ignorar sintomas posteriores.",
-  "correta": "**A: anterior e lateral.** O anterior é a principal referência de acometimento e monitorização, e o lateral acompanha sua variação de pressão. Esse é o par apresentado pelo resumo para a cobrança do TARO 2011.\n\nA liberação indicada continua sendo completa, contemplando os quatro espaços.",
+  "conceito": "Desta vez a banca quer um par, e não um compartimento só. O primeiro termo ninguém discute, o anterior; a dúvida está no segundo, e aqui os livros não falam com a mesma voz. Vale conhecer as duas versões para entender por que o gabarito ficou com o lateral.\n\n**Os quatro espaços, na figura.** O corte da perna do Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, Fig. 53.1, p. 2243), mostra o **anterior** à frente da membrana interóssea, o **lateral** colado à fíbula, o **posterior profundo** logo atrás da membrana, junto aos vasos tibiais posteriores, e o **posterior superficial**, o maior, embaixo. Repare que o anterior e o lateral são vizinhos, separados apenas pelo septo intermuscular anterior.\n\n**O que cada compartimento dá no exame** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17, Tabela 17-7):\n\n| Compartimento | Dor ao estiramento passivo | Dormência | Fraqueza |\n|---|---|---|---|\n| Anterior | flexão plantar | primeiro espaço interdigital | extensão do tornozelo e dos dedos |\n| Lateral | inversão do pé | dorso do pé | eversão |\n| Posterior superficial | dorsiflexão do tornozelo | face dorsolateral do pé | flexão plantar |\n| Posterior profundo | extensão do tornozelo e dos dedos, eversão | planta do pé | flexão dos dedos e do tornozelo, inversão |\n\n**A versão do Rockwood: anterior e lateral andam juntos.** O capítulo 17 diz que o anterior é o mais acometido e que **o anterior e o lateral acompanham as mudanças de pressão como um compartimento só**. É por isso que uma única incisão lateral, sobre o septo entre os dois, abre ambos, e que alguns autores chegaram a propor liberação limitada (o livro recomenda abrir os quatro). Se um sobe, o outro sobe junto: o par anterior e lateral é o que mais aparece acometido.\n\n**A versão do Campbell: anterior e posterior profundo.** O Campbell (cap. 53, p. 2242) diz que os compartimentos de paredes pouco complacentes são os mais acometidos, **especialmente o anterior e o posterior profundo** da perna. O posterior profundo é estreito, preso entre tíbia, fíbula, membrana e o septo do superficial. Na síndrome crônica de esforço, o mesmo livro (p. 2249) aponta o anterior e o lateral como os mais afetados, e o TARO cobrou esse par também na forma crônica.\n\n**Como decidir na prova.** As duas leituras concordam no anterior. Quando o par vem com o lateral, a banca segue a lógica do Rockwood (os dois sobem juntos e saem pela mesma incisão). Nenhum livro tira o posterior profundo do mapa: ele é o que mais se esconde no exame e é medido sempre que a clínica aponta para ele.\n\n> **Na prova:** um compartimento = **anterior**; dois = **anterior e lateral** (variam juntos, mesma incisão); o posterior profundo é o que mais escapa ao exame.\n\nO mapa dos compartimentos está na seção \"Perna\" do resumo.",
+  "correta": "**A) anterior e o lateral.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), põe o anterior como o compartimento mais acometido e diz que o anterior e o lateral acompanham as variações de pressão como se fossem um só, o que explica o par e a incisão lateral única que libera os dois. Na síndrome crônica de esforço, o Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2249), também aponta esse par como o mais afetado.",
   "incorretas": {
-   "B": "**O anterior pertence ao par correto, mas foi associado ao posterior profundo.** O profundo exige atenção própria quando a clínica não é explicada pela medida anterior, especialmente com sinais plantares e de flexores. Essa importância clínica não o transforma no substituto do lateral nesta comparação de frequência.",
-   "C": "**Inclui o lateral, mas exclui o anterior, que é o mais acometido.** O posterior superficial tem gastrocnêmio, sóleo e nervo sural, com sinais próprios. Não há motivo para trocar o compartimento principal por ele apenas por ambos produzirem sintomas no pé.",
-   "D": "**Reúne somente os posteriores e deixa de fora o principal compartimento acometido.** Superficial e profundo são espaços distintos e ambos podem precisar de liberação, mas a indicação de avaliá-los não equivale a dizer que formam o par mais frequente."
+   "B": "**Anterior e o posterior profundo** é o par que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242), descreve como o mais acometido na síndrome aguda, por serem os compartimentos de paredes menos complacentes. É a alternativa mais defensável depois do gabarito. A banca ficou com a leitura do Rockwood (cap. 17), em que o lateral acompanha a pressão do anterior e o profundo só é medido quando há sinais que o anterior não explica.",
+   "C": "**Posterior superficial e o lateral** deixa de fora justamente o anterior, o compartimento que todos os livros põem em primeiro lugar. O posterior superficial, com o gastrocnêmio rico em fibras tipo II, mais resistentes à isquemia, é o menos citado (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17); seus sinais são dor à dorsiflexão passiva e dormência dorsolateral do pé, pelo nervo sural.",
+   "D": "**Posterior superficial e o posterior profundo** é o par posterior, que um estudo em cadáver sugeriu funcionar como unidade, à semelhança do anterior e do lateral (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17). Os dois saem pela mesma incisão posteromedial, mas não formam o par mais acometido: falta o anterior, o primeiro em frequência."
   },
-  "conferido": false,
+  "alerta": "O gabarito (anterior e lateral) segue o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), que põe o anterior como o mais acometido e diz que anterior e lateral variam juntos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2242), aponta o anterior e o posterior profundo como os mais acometidos na síndrome aguda e reserva o par anterior e lateral para a síndrome crônica de esforço (p. 2249). O gabarito oficial foi mantido.",
   "referencias": [
-   "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Medida da pressão e o delta P; Os compartimentos de cada região; Fasciotomia."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), Tabela 17-7 e seções da medida da pressão e da fasciotomia",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (Traumatic Disorders), p. 2242, 2243 e 2249 (Fig. 53.1)",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Medida da pressão e o delta P",
-      "Os compartimentos de cada região",
-      "Fasciotomia"
-     ],
-     "blocos": [
-      "medida-da-pressao-e-o-delta-p-13e06142",
-      "os-compartimentos-de-cada-regiao-222f4f26",
-      "fasciotomia-f108fecb",
-      "os-compartimentos-de-cada-regiao-991d4b36"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "f46edddde74d79f2ed2fd04381440a82d89a4c752be64422b696288d0d337f03"
-    }
-   ],
-   "questaoSha256": "9d8a096ca3245ba317b649a7aab8c2c8e9eb3967717fe0e68fd9a3c050479004",
-   "comentarioSha256": "ad9841f1cba01569301fa6794d33bf01edf9199a7266205e7df868d21e1a88b6"
-  }
+  "imagens": [
+   {
+    "arquivo": "joelho/campbell15-53-1-w31.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 53, Fig. 53.1, p. 2243. Corte transversal do terço médio da perna esquerda com os quatro compartimentos: anterior, à frente da membrana interóssea; lateral, junto à fíbula; posterior profundo, logo atrás da membrana, com os vasos tibiais posteriores; e posterior superficial, o maior, com o tríceps sural.",
+    "largura": 755,
+    "altura": 530
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0873": {
   "conceito": "**O gabarito oficial prefere fixador monolateral; o resumo consultado prefere placa imediata para a maioria das expostas do antebraço.** A divergência é clínica e precisa ser preservada. O caráter exposto exige desbridamento, avaliação de contaminação e viabilidade e antibiótico; não implica automaticamente postergar a fixação interna.\n\nO capítulo descreve lavagem, placa e possível fechamento no mesmo tempo nos tipos I, II e IIIA, desde que as condições permitam. No IIIB, a placa pode ser imediata, com desbridamentos e cobertura planejada. O fixador externo fica para cenários selecionados de perda maciça de partes moles e contaminação grosseira, com pinos fora do trajeto da futura placa.\n\nO enunciado não especifica esse cenário grave para justificar a preferência geral pelo fixador. Assim, a resposta registrada D é uma informação da prova, enquanto a escolha terapêutica segundo a fonte depende da situação do ferimento e favorece placa na maioria.\n\n**Leia “Fraturas expostas e por projétil”, na Biblioteca, incluindo o alerta sobre o TARO 2011.** Separe a indicação de controle de danos em partes moles ruins da regra geral de reconstrução anatômica dos dois ossos.",
@@ -19706,46 +19550,29 @@
   }
  },
  "trauma-0983": {
-  "conceito": "**O paciente inconsciente não fornece um exame doloroso confiável, e a fratura segmentar com esmagamento exige vigilância objetiva.** O anterior é o compartimento mais frequentemente acometido da perna e o local habitual do cateter. Por isso, o par é **anterior e anterior**.\n\nO resumo destaca que a pressão pode subir antes dos sinais clínicos. Em risco elevado e consciência rebaixada, monitorizar continuamente permite acompanhar a tendência e o delta P, documentando a pressão arterial. Pulso presente não garante perfusão muscular e não substitui essa vigilância.\n\nO anterior e o lateral podem variar juntos, e estudos citados mostram que elevação posterior pode aparecer na leitura anterior. Se houver suspeita de um profundo não explicado pela medida, ele também deve ser avaliado. A ponta é colocada a até 5 cm do foco para captar o pico, com atenção à técnica; não se deve medir um local distante e presumir que represente todo o segmento.\n\n**Leia “Onde colocar o cateter” e “Clínica ou monitorização?”, na Biblioteca.** O Glasgow 3 é decisivo para entender por que não se pode depender de dor relatada ou de esperar parestesia.",
-  "correta": "**A: anterior e anterior.** O primeiro termo identifica o padrão mais comum e o segundo o espaço de monitorização recomendado. A escolha se ajusta à impossibilidade de obter um exame clínico confiável no caso.\n\nA interpretação acompanha tendência, pressão arterial e eventuais sinais de outro compartimento, sem transformar um único sensor em garantia absoluta.",
+  "conceito": "Um paciente com GLASGOW 3 não diz que dói, não estica o pé quando pedem e não conta que o dedão está dormente. Todo o exame clínico da síndrome compartimental depende de um paciente acordado, e o caso foi montado para tirar essa ferramenta da mão do ortopedista. Sobra medir a pressão, e a questão quer saber onde.\n\n**Por que medir aqui.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17, Tabela 17-2), lista entre os fatores de **diagnóstico tardio** o nível de consciência rebaixado, a lesão neurológica associada e o politrauma. Mesmo no paciente acordado, os sinais falham: sensibilidade de 13% a 19% para dor, parestesia e paresia, contra **94%** da monitorização da pressão (Tabela 17-5). A conclusão do capítulo é que o paciente acordado pode ser examinado, mas **o obnubilado precisa de monitorização**. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 50, complicações precoces), dá o mesmo exemplo: na vítima de traumatismo craniencefálico, o parâmetro clínico está comprometido, e a decisão passa ao delta P. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2243), também manda medir quando o exame não pode ser feito.\n\n**O paciente é de alto risco.** Esmagamento e fratura segmentar da tíbia, alta energia, inconsciência: o algoritmo 17-1 do Rockwood lista todos entre os pacientes de risco e lembra que, na prática, quase toda fratura da tíbia deve ser monitorada.\n\n**Onde vai o cateter.** Pela Tabela 17-4 do Rockwood, na perna o cateter vai no **anterior**, e no posterior profundo só se houver suspeita clínica. O motivo é duplo: o anterior é o **mais acometido** e o **mais acessível**. Na figura (Fig. 17-8), o anterior (A) fica logo abaixo da pele, ao lado da crista da tíbia, enquanto o posterior profundo (DP) está escondido atrás da membrana e sob o posterior superficial (SP). Além disso, o anterior e o lateral (L) sobem juntos, e estudos recentes mostraram que a elevação do posterior aparece também na medida do anterior.\n\n**A técnica.** A ponta fica **a até 5 cm do nível da fratura**, para captar o pico; na tíbia, a entrada é proximal à fratura e **1 a 2 cm lateral à borda subcutânea** da tíbia. O cateter digital, com transdutor na ponta, não depende de coluna de líquido e mostra a tendência; o capítulo cita um aparelho seis vezes mais preciso que os anteriores. A fasciotomia vem com **delta P abaixo de 30 mmHg por mais de 2 horas**, registrando a pressão arterial junto.\n\n> **Na prova:** perna = **anterior** para as duas perguntas (mais acometido e local do cateter); posterior profundo só com clínica sugestiva; inconsciente = **monitorizar**, não esperar sinais.\n\nO local do cateter está na seção \"Onde colocar o cateter\" do resumo.",
+  "correta": "**A) anterior e anterior.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), aponta o anterior como o compartimento mais acometido da perna e o recomenda para o cateter (Tabela 17-4), por ser também o mais acessível: a entrada fica 1 a 2 cm lateral à borda subcutânea da tíbia, com a ponta a até 5 cm da fratura. No paciente com GLASGOW 3, sem exame confiável, a monitorização contínua desse compartimento substitui a clínica.",
   "incorretas": {
-   "B": "**Acerta o mais acometido, mas desloca o cateter de rotina para posterior.** O resumo indica anterior, reservando investigação profunda dirigida quando o quadro a sugerir. O enunciado não oferece uma localização posterior específica para substituir a recomendação habitual.",
-   "C": "**O cateter anterior está correto, mas o lateral foi colocado como o mais comum.** A proximidade e a variação conjunta de pressão não apagam a predominância anterior descrita. O par precisa manter tanto o risco anatômico quanto a recomendação de medida.",
-   "D": "**Troca a predominância para lateral e a medida habitual para posterior.** Nenhuma das duas partes reproduz o algoritmo apresentado. A possibilidade de outros espaços estarem envolvidos exige avaliação, mas não redefine a combinação inicial da fonte."
+   "B": "**Anterior e posterior** acerta o compartimento mais acometido, mas manda o cateter para o posterior. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17, Tabela 17-4), reserva o posterior profundo para quando há suspeita clínica que o anterior não explica; a medida ali é difícil e incômoda, e estudos recentes mostram que a elevação posterior aparece também na leitura do anterior. Seria um segundo cateter, não o primeiro.",
+   "C": "**Lateral e anterior** troca o compartimento mais acometido. O lateral, com os fibulares e o nervo fibular superficial, acompanha a pressão do anterior, mas não é o primeiro em frequência no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17). O local do cateter, anterior, está certo; o primeiro termo, não.",
+   "D": "**Lateral e posterior** erra as duas metades. Nem o lateral é o mais acometido, nem o posterior é o local de rotina do cateter: pela Tabela 17-4 do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), mede-se o anterior, e o posterior profundo entra só com suspeita clínica."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17 · Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Medida da pressão e o delta P; Quem tem síndrome compartimental."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), Tabelas 17-2, 17-4 e 17-5, Fig. 17-8 e algoritmo 17-1",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 50 (Fraturas dos ossos do antebraço no adulto), complicações precoces",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (Traumatic Disorders), p. 2243",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Medida da pressão e o delta P",
-      "Quem tem síndrome compartimental"
-     ],
-     "blocos": [
-      "medida-da-pressao-e-o-delta-p-13e06142",
-      "quem-tem-sindrome-compartimental-c9e21614",
-      "medida-da-pressao-e-o-delta-p-491de05b",
-      "medida-da-pressao-e-o-delta-p-44efd7f7",
-      "medida-da-pressao-e-o-delta-p-6e9747e1"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "b4d5c5d7f13430fb4bcd3d88d989d093e818f470ca38538b650403b5eb3277cd"
-    }
-   ],
-   "questaoSha256": "1a71531d7310853c3d477ebbfc4d62006d8fa4030585e4cd5b8bc7e6335d4c5b",
-   "comentarioSha256": "25825e4aec14889a304e6ab8b3c0de05995e0c74470a8547a3179111b6773dbc"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-17-8.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 17, Fig. 17-8, p. 585 aprox. Corte transversal da perna com os quatro compartimentos: anterior (A), lateral (L), posterior superficial (SP) e posterior profundo (DP); as setas mostram as duas vias da fasciotomia por dupla incisão.",
+    "largura": 715,
+    "altura": 670
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0984": {
   "conceito": "As duas bolhas resultam de lesão na junção dermoepidérmica. O que as diferencia é a **retenção de células epidérmicas na flictena serosa**, alternativa B; na hemorrágica, a derme fica sem essas células e a lesão é mais profunda.\n\nA tensão produzida pelo trauma separa as camadas da pele. A bolha pode aparecer em horas ou apenas após dois a três dias, de modo que uma inspeção inicial sem flictenas não encerra a avaliação das partes moles. Na descrição de Giordano citada pelo resumo, a forma hemorrágica envolve dano da vasculatura papilar e tem maior risco de escara e perda cutânea (Rockwood, 10ª ed., cap. 64, “Flictenas”).\n\n**A diferença microscópica muda o cuidado com a pele.** Na serosa, o capítulo orienta drenagem com agulha e curativo não aderente. Na hemorrágica, orienta preservar o teto, deixar a evolução da escara e evitar incisão através da área. Não se deve resumir as duas a “bolhas de edema” que podem receber a mesma manipulação.\n\nO momento do definitivo depende da recuperação do envelope, com reepitelização e retorno das rugas. Esses sinais se relacionam, mas não são sinônimos: a bolha precisa recuperar sua cobertura e o edema precisa permitir uma incisão segura. O aspecto do osso na radiografia não substitui o exame da pele.\n\n> **Na prova:** serosa conserva células epidérmicas; hemorrágica representa dano mais profundo e maior vulnerabilidade cutânea.",
@@ -20128,44 +19955,35 @@
   }
  },
  "trauma-0999": {
-  "conceito": "**A combinação cobrada é duas incisões dorsais, sobre o segundo e o quarto metatarsos, e nove compartimentos.** Manoli e Weber descrevem medial, lateral, central superficial, central profundo ou calcâneo, adutor do hálux e quatro interósseos. São cinco grupos nomeados mais quatro interósseos, totalizando nove.\n\nAs incisões dorsais permitem alcançar interósseos e região central; os espaços medial e lateral são alcançados contornando as faces profundas do primeiro e do quinto metatarsos. A distribuição de duas vias acompanha a anatomia do antepé, em vez de concentrar o acesso sobre o terceiro metatarso.\n\n**O retropé exige uma ressalva.** O compartimento calcâneo contém o quadrado plantar e se comunica com o posterior profundo da perna. Nas lesões do retropé, especialmente fratura do calcâneo, pode ser necessária uma incisão medial separada. Portanto, escolher D não significa que duas incisões dorsais garantam, em qualquer lesão, descompressão suficiente de todos os espaços.\n\nO enunciado é pediátrico, enquanto a fonte consultada é o resumo do capítulo de adultos. A anatomia e as vias descritas sustentam a combinação das alternativas; o resumo não fornece limiares de pressão específicos para crianças.\n\n**Leia “Pé” e “Coxa, pé e braço” na Biblioteca.** Distinguir antepé de retropé é o passo que evita transformar uma resposta de prova em técnica universal.",
-  "correta": "**D: duas incisões dorsais sobre o segundo e o quarto metatarsos; nove compartimentos.** É a combinação anatômica e de vias descrita no resumo. A soma dos compartimentos inclui os quatro interósseos, não apenas os grupos plantares maiores.\n\nEm lesão calcânea, a necessidade de uma via medial adicional deve ser avaliada: a opção resume o padrão de acesso, não dispensa liberação dirigida do retropé.",
+  "conceito": "Síndrome compartimental do pé é rara em qualquer idade e mais ainda na criança, por isso vale começar pelo que ela é. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6, seção do pé), descreve um quadro **raro**, quase sempre por **esmagamento**, como o pneu de carro que passa por cima do pé; associa-se à **fratura-luxação de LISFRANC** e às fraturas dos metatarsos e das falanges, mas pode aparecer sem fratura, depois de extravasamento de soro na veia ou num hemangioma. Numa revisão sistemática de 12 anos, **62 crianças** de 7 meses a 18 anos tiveram o diagnóstico, e todas foram operadas. O livro defende um **limiar baixo** para a fasciotomia na criança, que ainda tem crescimento a fazer e corre risco de **parada fisária**. No adulto existe uma tendência, que o próprio capítulo chama de controversa, de não operar o pé, porque a contratura com dedos em martelo é vista como menos mórbida que as sequelas da fasciotomia; o Rockwood adulto (cap. 17) lembra o preço da síndrome ignorada: dedos em garra, cirurgias repetidas, palmilhas e dor crônica.\n\n**Quantos compartimentos.** O pé tem **nove**, segundo o Rockwood infantil (Tabela 6-5) e MANOLI e WEBER, citados no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17): os **quatro interósseos**, o **adutor do hálux**, dois **centrais** (superficial, com o flexor curto dos dedos, e profundo ou **calcâneo**, com o quadrado plantar), o **medial** (intrínsecos do hálux) e o **lateral** (músculos do dedo mínimo). Antes se falava em quatro (medial, lateral, central e interósseo).\n\n**A técnica, na figura** (Rockwood infantil, cap. 6, Fig. 6-11), num corte do antepé visto de frente:\n- duas **incisões dorsais longitudinais**, uma sobre o **segundo** e outra sobre o **quarto metatarso**; cada uma serve a dois espaços intermetatarsais, um de cada lado do osso;\n- abre-se a fáscia superficial sobre cada espaço e liberam-se os **quatro interósseos (I)**; cuidado no primeiro espaço, com as veias interósseas e os ramos distais da artéria dorsal do pé;\n- pelos mesmos espaços, mais fundo, chega-se ao **adutor**, ao **central** e, contornando o primeiro e o quinto metatarsos, ao **medial** e ao **lateral**;\n- a seta horizontal à esquerda é a **terceira incisão, medial**, que muitos autores recomendam para o compartimento medial e o calcâneo.\n\n**O retropé.** O Rockwood adulto (cap. 17) diz o mesmo para o antepé e acrescenta que, na lesão do retropé, sobretudo na **fratura do calcâneo**, o compartimento calcâneo pode exigir a **incisão medial separada**, porque se comunica com o posterior profundo da perna (Fig. 17-10). O livro também relata a barreira entre o central superficial e o calcâneo cedendo com só 10 mmHg, o que relativiza a contagem fina.\n\n> **Na prova:** pé = **9 compartimentos**; **duas incisões dorsais sobre o 2º e o 4º metatarsos**; incisão medial no retropé ou no calcâneo; criança = limiar baixo pela fise.\n\nA técnica do adulto está na seção \"Coxa, pé e braço\" do resumo de síndrome compartimental aguda, e a da criança, na seção \"Membro inferior\" do resumo pediátrico.",
+  "correta": "**D) duas incisões dorsais sobre o 2º e 4º metatarsos para liberação dos 9 compartimentos.** É a técnica do Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6, Fig. 6-11 e Tabela 6-5): duas incisões longitudinais, centradas no segundo e no quarto metatarsos, permitem descomprimir os quatro interósseos e, pelos espaços, o adutor, os dois centrais, o medial e o lateral. Muitos autores somam uma incisão medial; o Rockwood adulto (cap. 17) a indica sobretudo no retropé.",
   "incorretas": {
-   "A": "**Erra o número e o acesso.** A divisão de Manoli e Weber usada aqui soma nove, não sete. Uma via única sobre o terceiro metatarso também não corresponde às duas incisões dorsais descritas para alcançar os diferentes espaços do antepé.",
-   "B": "**Acerta nove compartimentos, mas mantém uma via dorsal única sobre o terceiro metatarso.** Reconhecer a contagem não resolve o planejamento de acesso. O resumo distribui as incisões sobre segundo e quarto metatarsos e ainda ressalva o retropé.",
-   "C": "**Acerta as duas incisões e erra a soma dos espaços.** Os quatro interósseos precisam ser contados junto com medial, lateral, central superficial, calcâneo e adutor. A técnica correta não torna a classificação de sete adequada para esta questão."
+   "A": "**Incisão dorsal única sobre o 3º metatarso para 7 compartimentos** erra a técnica e a contagem. Uma só incisão central serve, no máximo, aos dois espaços vizinhos ao terceiro metatarso e não alcança o primeiro e o quarto espaços nem os compartimentos medial e lateral; nenhum dos livros consultados a descreve. E sete não é número de nenhuma das divisões citadas: a clássica tinha quatro, e MANOLI e WEBER descreveram nove.",
+   "B": "**Incisão dorsal única sobre o 3º metatarso para 9 compartimentos** acerta a contagem, mas não a via. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 6), e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), usam duas incisões, no segundo e no quarto metatarsos, justamente para que cada uma alcance dois espaços intermetatarsais e as bordas medial e lateral do pé. Uma incisão sobre o terceiro deixaria os espaços das pontas sem acesso.",
+   "C": "**Duas incisões dorsais sobre o 2º e 4º metatarsos para 7 compartimentos** acerta a técnica e erra a anatomia. O pé tem nove compartimentos (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6, Tabela 6-5): quatro interósseos, adutor, central superficial, calcâneo, medial e lateral. O número sete não aparece em nenhuma das classificações dos livros consultados."
   },
-  "conferido": false,
   "referencias": [
-   "Conteúdo consultado no resumo “Síndrome compartimental aguda”, Biblioteca do OrtoQuestões, a partir de Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 17 (Acute Compartment Syndrome). Seções: Fasciotomia; Os compartimentos de cada região."
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6 (Compartment Syndrome in Children), seção do pé (Fig. 6-11 e Tabela 6-5)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seções do pé e da fasciotomia (Fig. 17-10)",
+   "Resumo OrtoQuestões: Síndrome compartimental na criança",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "alerta": "A alternativa D é a resposta oficial, mas não implica que as duas vias dorsais descomprimam adequadamente todo retropé. O resumo ressalva incisão medial separada para o compartimento calcâneo quando necessária. A fonte utilizada é o resumo de adultos; não foi conferido neste fluxo um capítulo pediátrico com limiares de pressão próprios.",
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Fasciotomia",
-      "Os compartimentos de cada região"
-     ],
-     "blocos": [
-      "fasciotomia-029870c3",
-      "os-compartimentos-de-cada-regiao-110fac19"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "97ab96c39f455f31014466c6142b291c50227b82bb65ccea712f416cb867fe95"
-    }
-   ],
-   "questaoSha256": "e7b26e310b21e8ed41c0139c7809f228525b2e6425d58301dbbaa0040d8a2b61",
-   "comentarioSha256": "9ebe4849d283a4b3f0182497958a71973d2de25984df5e1fc25337c77426d409"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwc10-6-11-a010.jpeg",
+    "legenda": "Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 6, Fig. 6-11 (arquivo sem página impressa). Corte transversal do antepé com as duas incisões dorsais longitudinais, sobre o segundo e o quarto metatarsos: as setas descem pelos espaços entre os metatarsos, abrem os quatro interósseos (I) e alcançam o adutor, o central, o medial e o lateral; a seta horizontal à esquerda marca a terceira incisão, medial, que muitos autores acrescentam.",
+    "largura": 742,
+    "altura": 452
+   },
+   {
+    "arquivo": "pe-tornozelo/rwa10-17-10-w53.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 17, Fig. 17-10. Corte do retropé com os compartimentos medial, superficial e calcâneo (central profundo, o do quadrado plantar), logo abaixo do tendão do flexor longo do hálux e do feixe plantar; a seta mostra o acesso medial para liberar o compartimento calcâneo.",
+    "largura": 1150,
+    "altura": 1230
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-1000": {
   "conceito": "**Os meniscos.** São fibrocartilagens em forma de **C** (o **medial**, mais aberto e em forma de meia-lua, maior atrás) e de **O** (o **lateral**, mais circular e mais móvel). Distribuem a carga, aumentam a **área de contato** entre fêmur e tíbia, absorvem impacto, contribuem para a **estabilidade** e a propriocepção. A **vascularização** vem da periferia (zona vermelha, o terço externo), e a zona branca, interna, não cicatriza bem.\n\n**As estruturas acessórias.** O corno posterior do menisco lateral costuma ter ancoragem ao fêmur pelos ligamentos de Wrisberg e de Humphry (Campbell, cap. 45, p. 2213). Esses **ligamentos meniscofemorais** vão até o **côndilo femoral medial**, junto ao LCP. O de **Humphry** passa **anterior** ao LCP; o de **Wrisberg**, **posterior** a ele. Estão presentes em boa parte dos joelhos e podem simular uma lesão ou um LCP duplo na ressonância. O **ligamento transverso** (intermeniscal) liga os **cornos anteriores** dos dois meniscos. O **corno posterior do medial** é **maior** (mais largo) que o anterior e é firmemente preso à tíbia.\n\n**A função biomecânica.** A meniscectomia medial diminui a área de contato em **50 a 70%** e aumenta o estresse de contato em 100%; a lateral diminui em **40 a 50%**, mas aumenta o estresse em 200 a 300% (Campbell, cap. 45, p. 2212). O **corno posterior do menisco medial** é um estabilizador **secundário** importante contra a **translação anterior** da tíbia no joelho **sem LCA**; por isso, joelhos com LCA roto desenvolvem lesões do medial com o tempo, e a reconstrução do LCA protege o menisco. O **menisco lateral** contribui para o controle **rotacional** (pivot shift).\n\n**Na prática.** Preservar o menisco sempre que possível: **sutura** das lesões periféricas, verticais e das raízes, e **meniscectomia parcial** mínima nas lesões irreparáveis. Lesões da **raiz** posterior do medial equivalem funcionalmente a uma meniscectomia total e devem ser reparadas quando possível.\n\n**Na prova:** Humphry **anterior** ao LCP, Wrisberg **posterior**; transverso liga os cornos **anteriores**; corno posterior do **medial** é estabilizador secundário sem LCA.",
@@ -22375,46 +22193,22 @@
   }
  },
  "trauma-1092": {
-  "conceito": "**Na distribuição geral dos casos, a fratura da diáfise da tíbia é a associação mais frequente entre as alternativas.** A tabela do resumo atribui a ela cerca de 36% dos casos de síndrome compartimental; fraturas como um todo participam de aproximadamente 69%. Esses percentuais descrevem a origem dos casos, não a probabilidade de cada fratura individual evoluir com a síndrome.\n\nEssa distinção evita uma confusão importante: o capítulo também apresenta séries com taxa proporcional alta no planalto tibial. Uma fratura pode ter risco individual elevado e ser menos frequente no conjunto, enquanto uma lesão comum responde por mais casos. O enunciado desta prova corresponde à associação geral destacada na tabela.\n\nHomens jovens são o grupo de maior risco. O volume muscular relativamente grande dentro de um espaço fixo deixa menos margem para edema. Entretanto, a síndrome pode surgir em outras idades, regiões e sem fratura; pulso palpável também não afasta o diagnóstico.\n\n**Leia “Quem tem síndrome compartimental”, na Biblioteca, comparando a tabela de lesões com a seção de planalto tibial.** Sempre identifique o denominador antes de transformar um percentual em regra de risco.",
-  "correta": "**B: fratura diafisária da tíbia.** É a lesão que domina a distribuição geral descrita e a resposta esperada entre as opções. O reconhecimento deve levar à vigilância apropriada, sobretudo no jovem de risco.\n\nIsso não significa que todas as síndromes ocorram na tíbia ou que os outros sítios possam ser ignorados.",
+  "conceito": "Para responder qual fratura do adulto mais se associa à síndrome compartimental, é preciso olhar a lista de casos pelo denominador certo: a pergunta é de onde vêm os casos, e a fratura que mais aparece é a que junta três coisas, frequência alta, paciente jovem e um compartimento apertado.\n\n**O que os números mostram.** A Tabela 17-1 do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17, seção da epidemiologia), distribui os casos de síndrome compartimental aguda pela lesão de origem. Para as quatro alternativas:\n\n| Lesão | % dos casos (Tabela 17-1) |\n|---|---|\n| Diáfise da tíbia | **36** |\n| Diáfise do antebraço (rádio e ulna) | 7,9 |\n| Diáfise do fêmur | 3,0 |\n| Fratura-luxação do cotovelo e diáfise do úmero | 0,6 cada |\n\nA fratura é a causa em **69%** dos casos, e a da diáfise da tíbia responde por cerca de um terço. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2246), dá os mesmos **36%** para as fraturas proximais e diafisárias da tíbia, e o HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 73), escreve que a fratura com associação mais frequente no adulto é a da diáfise da tíbia. Três livros, a mesma resposta.\n\n**Por que a tíbia.** A juventude é o fator de risco mais importante: o jovem tem muito músculo num compartimento de tamanho fixo e pouca folga para inchar, e o risco cai cerca de 1% por ano de idade. A incidência é de **3,1 por 100.000** por ano, com homens 10 vezes mais que mulheres e idade média de 32 anos. Na tíbia, a síndrome é três vezes mais comum abaixo dos 35 anos; na série de Edimburgo, com 1.388 fraturas diafisárias, a taxa foi de **11,5%**. O compartimento anterior, cercado por tíbia, fíbula, membrana interóssea e fáscia, é o mais acometido.\n\n**Frequência no conjunto não é risco individual.** O mesmo capítulo traz dados recentes com síndrome em **12% das fraturas do planalto tibial contra 3% da diáfise**, sobretudo no SCHATZKER VI, e o algoritmo dos autores põe o planalto desviado como a principal preocupação. Não há contradição: o planalto é proporcionalmente mais perigoso, mas a diáfise é muito mais comum e, por isso, gera mais casos. A pergunta, \"mais frequente na fratura\", fica com a diáfise.\n\n> **Na prova:** origem mais comum dos casos = **diáfise da tíbia** (36%); maior taxa proporcional = **planalto tibial** (12%); fratura muito comum com pouca síndrome = **rádio distal** (0,25%).\n\nA tabela está na seção \"Quem tem síndrome compartimental\" do resumo.",
+  "correta": "**B) diafisária da tíbia.** Responde por **36%** dos casos de síndrome compartimental aguda na Tabela 17-1 do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17), número repetido pelo Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2246); o HEBERT (cap. 73) a chama de fratura com associação mais frequente no adulto. Junta o paciente típico, homem jovem, ao compartimento anterior, apertado e rico em fibras sensíveis à isquemia.",
   "incorretas": {
-   "A": "**Úmero distal não é a associação que predomina na distribuição apresentada.** O membro superior também pode desenvolver síndrome, mas a fonte destaca a diáfise tibial como principal origem dos casos. Não se deve atribuir ao úmero distal um percentual de outra localização umeral só para comparar as opções.",
-   "C": "**O antebraço diafisário é uma associação reconhecida, porém não supera a tíbia na distribuição geral.** A tabela agrupa fraturas da diáfise do antebraço, sem separar ali rádio isolado como se tivesse uma taxa própria. O fato de a região exigir atenção não a torna a resposta de maior frequência.",
-   "D": "**Fratura diafisária do fêmur pode cursar com síndrome da coxa, mas participa menos dos casos que a diáfise tibial.** A fonte atribui cerca de 3% dos casos a essa fratura na tabela. Esse percentual não deve ser confundido com incidência de síndrome entre todas as fraturas femorais."
+   "A": "**Distal do úmero** lembra a supracondiliana da criança, a grande causa de síndrome do antebraço e de contratura de VOLKMANN na pediatria (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 6). O enunciado fala do adulto, e na Tabela 17-1 do Rockwood adulto a fratura-luxação do cotovelo e a diáfise do úmero ficam entre as menos associadas, com **0,6%** cada.",
+   "C": "**Diafisária do rádio** leva ao antebraço, o segundo lugar mais frequente de síndrome pós-traumática, com síndrome em cerca de **3%** das fraturas diafisárias (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42). Na Tabela 17-1, a diáfise do antebraço soma **7,9%** dos casos, bem abaixo dos 36% da tíbia. Seria a resposta se a pergunta fosse o membro superior.",
+   "D": "**Diafisária do fêmur** responde por só **3%** dos casos na Tabela 17-1 do Rockwood adulto. O Campbell (cap. 53, p. 2244 e 2245) explica por quê: os compartimentos da coxa têm volume e capacidade muito maiores que os da perna e do antebraço, e a síndrome da coxa é bem menos frequente, embora grave quando ocorre."
   },
-  "conferido": false,
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 17: Acute Compartment Syndrome. Conteúdo consultado no resumo Síndrome compartimental aguda, Biblioteca OrtoQuestões. Seções: Quem tem síndrome compartimental; Diagnóstico clínico: por que os sinais chegam tarde."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 17 (Acute Compartment Syndrome), seção da epidemiologia (Tabela 17-1)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 53 (Traumatic Disorders), p. 2244 a 2246",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 73 (Síndrome compartimental)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42 (Diaphyseal Fractures of the Radius and Ulna)",
+   "Resumo OrtoQuestões: Síndrome compartimental aguda"
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-17-sindrome-compartimental",
-     "titulo": "Síndrome compartimental aguda",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 17 · Acute Compartment Syndrome",
-     "secoes": [
-      "Quem tem síndrome compartimental",
-      "Diagnóstico clínico: por que os sinais chegam tarde"
-     ],
-     "blocos": [
-      "quem-tem-sindrome-compartimental-4b3a771a",
-      "quem-tem-sindrome-compartimental-5ca80c99",
-      "quem-tem-sindrome-compartimental-c9a33825",
-      "diagnostico-clinico-por-que-os-sinais-chegam-tar-b90720d4",
-      "quem-tem-sindrome-compartimental-b7787f07"
-     ],
-     "sha256": "5a414e5b060ced2f5672fbd98e939a7a21804a44ed5f6816bad7f2a59ef6ebc4",
-     "trechosSha256": "6c37eb68b868c56a1b2ccaa2d8b478ac479c9e4499b152a941ff57c220461711"
-    }
-   ],
-   "questaoSha256": "6a76c1950ac166086a4849ec5ecbc89e202025ce78fabb2d719b474ce81ecee2",
-   "comentarioSha256": "d9941d346d692f795a8f132d36ab01db53b0d3e70b0e0bb52619b2039b58320e"
-  }
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-1093": {
   "conceito": "Amputar ou salvar uma perna com fratura exposta grave é uma das decisões mais difíceis do trauma, e por décadas se procuraram regras que a tornassem automática. A questão pede a única que sobreviveu com o rótulo de absoluta: o tempo de isquemia.\n\n**As indicações absolutas do capítulo.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 63, seção sobre amputação), dá três: **isquemia quente maior que 6 horas**; membro distal ligado só por **ponte de pele**; reconstrução que **põe a vida em risco**. O cap. 18 do mesmo livro (Principles of Mangled Extremity Management, seção Survivability) diz o mesmo com outras palavras: a amputação costuma ser a única opção diante de lesão vascular **irreparável** ou de isquemia quente prolongada, **mais de 6 horas no membro inferior e mais de 8 no superior**.\n\n**Por que o relógio pesa tanto.** O músculo é o tecido mais sensível à falta de sangue. Depois de **4 a 6 horas** de isquemia quente, sobem a infecção, a desvitalização e a perda muscular (cap. 18). Numa série multicêntrica citada ali, a isquemia média dos salvamentos bem-sucedidos foi de **5,3 horas**, contra **7,5 horas** nos que falharam, e há relatos de amputação em até **78%** com isquemia prolongada. Por isso se usa shunt intraluminal temporário quando o tempo já passou, e se faz fasciotomia depois de toda revascularização: a síndrome compartimental aparece em até **59%** das IIIC.\n\n**Leitura atenta da alternativa.** \"Lesão vascular com seis horas de evolução\" só equivale à indicação do livro quando a lesão deixa a perna **sem perfusão**. Uma artéria lesada com o pé bem perfundido pelas outras duas não é nem IIIC, pelo GUSTILO como o capítulo o apresenta (IIIC = precisa de reparo vascular para revascularizar a perna). E a diretriz da AAOS de 2019, reproduzida no cap. 18 (Tabela 18-1), lembra que nem os sinais duros de lesão vascular nem a duração da isquemia são fatores absolutos isolados; o tempo até reperfundir deve ser o menor possível.\n\n**O que caiu com o tempo.** Os escores (MESS, LSI, PSI, NISSSA, HFS-97) e a sensibilidade plantar foram tratados como regra e perderam esse lugar, como mostram as alternativas erradas. A mesma banca, em 2012, deu como gabarito o MESS igual ou maior que 7; o livro atual não sustenta isso, e em 2013 a resposta passou a ser a isquemia.\n\nAs indicações e os escores estão na seção \"Amputação\" do resumo.",
