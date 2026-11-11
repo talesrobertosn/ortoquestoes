@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-24-quadril
-versao: 2
+versao: 3
 titulo: Fraturas do colo do fêmur e luxação traumática do quadril na criança
 especialidade: pediatria
 acesso: gratis
@@ -173,6 +173,8 @@ Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24, Fi
 | III | o **colo**, da linha de fratura até a fise | lesão dos vasos metafisários superiores | **raro**, **bom** prognóstico se a fratura consolida |
 !fim
 
+**Os números do Tachdjian.** O Tachdjian (6ª ed., cap. 30, p. 1312 e 1313) descreve os três tipos do mesmo modo no texto (o III vai da linha de fratura do colo até a fise, poupando a cabeça), mas dá outra frequência: o I passa de **50%** dos casos, e o II e o III ficam em cerca de **25% cada**, o III com os melhores resultados; o Rockwood chama o III de raro. O Campbell 15 (Fig. 38.103, p. 1419) também põe o III no colo, da fratura até a fise.
+
 **Quando aparece.** Em geral no **primeiro ano** (média de pouco mais de 11 meses), mas pode demorar até **2 anos**. Alguns usam cintilografia precoce para orientar a família: num estudo de 28 pacientes com alterações precoces (de escorregamento ou de fratura do colo), bisfosfonato venoso por cerca de 20 meses melhorou muito o resultado em 3 anos.
 
 **Depois de instalada.** O resultado é ruim em mais de **60%**; não há tratamento claramente eficaz; crianças acima de 10 anos vão pior. Osteotomias de redirecionamento, artrodiastase com fixador, descompressão, enxerto vascularizado de fíbula, concentrado de medula: tudo em estudo.
@@ -181,7 +183,7 @@ Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 24, Fi
 conceito: A necrose é a complicação mais grave e frequente (cerca de 30%); depende do tipo, do desvio e da idade; a qualidade da redução é o fator modificável mais importante. RATLIFF I toda a cabeça (pior e mais comum), II parcial, III colo (raro, bom se consolida).
 como: O TEOT 2023 perguntou a região do RATLIFF III (o colo, metáfise); o TARO 2006, se o III tem o pior prognóstico e se a necrose é maior na criança que no adulto.
 armadilha: Achar que o III é o pior, porque é o último número.
-alerta: O TEOT 2023 (`pediatria-0581`) marcou epifisária parcial para o RATLIFF III; o capítulo descreve o III como necrose do colo, da linha de fratura até a fise. O TARO 2006 (`pediatria-0814`) está sem gabarito, e o capítulo não dá a taxa do adulto para comparar.
+alerta: O TEOT 2023 (`pediatria-0581`) marcou epifisária parcial para o RATLIFF III. O Rockwood (Fig. 24-19), o Campbell 15 (Fig. 38.103, p. 1419) e o texto do Tachdjian (p. 1312 e 1313) descrevem o III como necrose do colo, da linha de fratura até a fise; mas o próprio Tachdjian se contradiz: a Fig. 30.50 (p. 1312) e as legendas das Fig. 30.52 e 30.53 (p. 1313) trocam o II e o III, chamando o II de metafisário e o III de epifisário parcial. É essa leitura da figura do Tachdjian que sustenta o gabarito, mantido. O TARO 2006 (`pediatria-0814`) está sem gabarito, e o capítulo não dá a taxa do adulto para comparar.
 !fim
 
 # Coxa vara, fechamento fisário e pseudartrose {radar=confirmado}
@@ -225,7 +227,7 @@ armadilha: Tratar o tipo tensão como o compressão.
 
 # A luxação traumática do quadril {radar=confirmado}
 
-**Quem e como.** Menos de **5%** das luxações da criança. O caráter muda com a idade: **abaixo de 6 anos**, luxação isolada com **pouca energia** (uma queda brincando), muitas vezes com fatores predisponentes como **hiperfrouxidão, coxa valga ou cobertura acetabular menor**; **acima de 6 anos**, alta energia e lesões associadas (futebol americano e trânsito são mais da metade nos adolescentes). A **posterior** é a mais comum, **mais de 90%**, por força no membro com o quadril **fletido e um pouco aduzido**; a **anterior** é menos de 10%, por abdução e rotação externa forçadas (superior se o quadril está estendido, inferior se fletido); a inferior pura (luxatio erecta) é raríssima, mas mais comum na criança.
+**Quem e como.** Menos de **5%** das luxações da criança. O caráter muda com a idade: **abaixo de 6 anos**, luxação isolada com **pouca energia** (uma queda brincando), muitas vezes com fatores predisponentes como **hiperfrouxidão, coxa valga ou cobertura acetabular menor**; **acima de 6 anos**, alta energia e lesões associadas (futebol americano e trânsito são mais da metade nos adolescentes). O Tachdjian (6ª ed., cap. 30, p. 1294) põe o corte em **5 anos**: abaixo disso, queda ou escorregão banal luxa o quadril pela frouxidão e pelo acetábulo cartilaginoso, e manda pensar em maus-tratos. A **posterior** é a mais comum, **mais de 90%** no Rockwood (a anterior fica abaixo de 10%); o Tachdjian dá **75 a 90%** (p. 1295) e diz que a posterior é cerca de oito a nove vezes mais comum que a anterior (p. 1294); por força no membro com o quadril **fletido e um pouco aduzido**; a **anterior** é menos de 10%, por abdução e rotação externa forçadas (superior se o quadril está estendido, inferior se fletido); a inferior pura (luxatio erecta) é raríssima, mas mais comum na criança.
 
 **O que vem junto.** No mais velho, fraturas associadas, sobretudo da **parede posterior do acetábulo**, que radiografia e tomografia **subestimam** na criança: a **ressonância** mede a parede cartilaginosa. **Isquiático** lesado em cerca de 5% das crianças (10% dos adultos), com recuperação parcial em 60 a 70%: testá-lo antes e depois da redução. Na anterior, o feixe **femoral** (compressão vascular em até 25%). Rupturas da cápsula e do lábio podem impedir a redução concêntrica. Lesão do joelho no mesmo lado é comum no adulto de alta energia.
 
@@ -242,7 +244,7 @@ armadilha: Tratar o tipo tensão como o compressão.
 | IV | fratura da cabeça ou do colo | 4 | fratura do colo e do acetábulo |
 !fim
 
-**A redução.** É **urgência ortopédica**. A redução fechada costuma funcionar com sedação, mas há o risco de **separar a epífise** do colo: por isso o ideal é o centro cirúrgico, com **anestesia geral, relaxamento muscular e radioscopia**, sobretudo **acima de 12 anos** com fise aberta (o capítulo fala de 12 a 16 anos). Manobras agressivas sem relaxante, nunca. Dois métodos descritos: com o paciente em **decúbito dorsal**, o cirurgião **acima** dele (no chão ou subindo na maca), joelho fletido para relaxar os isquiotibiais, assistente fixando a pelve e **tração longitudinal** no eixo do fêmur com manipulação suave da cabeça sobre a borda (o método conhecido como de ALLIS); e o **método da gravidade**, em **decúbito ventral** com o membro pendente, quadril e joelho a 90 graus e pressão suave para baixo (conhecido como de STIMSON). Redução aberta se não reduz ou se fica não concêntrica: via posterior (KOCHER-LANGENBECK) para a posterior, com o isquiático identificado sobre os rotadores; via anterior (biquíni, sartório e tensor) para a anterior; ou luxação cirúrgica; a artroscopia retira fragmentos.
+**A redução.** É **urgência ortopédica**. A redução fechada costuma funcionar com sedação, mas há o risco de **separar a epífise** do colo: por isso o ideal é o centro cirúrgico, com **anestesia geral, relaxamento muscular e radioscopia**, sobretudo **acima de 12 anos** com fise aberta (o capítulo fala de 12 a 16 anos). Manobras agressivas sem relaxante, nunca. Dois métodos descritos: com o paciente em **decúbito dorsal**, o cirurgião **acima** dele (no chão ou subindo na maca), joelho fletido para relaxar os isquiotibiais, assistente fixando a pelve e **tração longitudinal** no eixo do fêmur com manipulação suave da cabeça sobre a borda (o método conhecido como de ALLIS); e o **método da gravidade**, em **decúbito ventral** com o membro pendente, quadril e joelho a 90 graus e pressão suave para baixo (conhecido como de STIMSON). O Tachdjian (cap. 30, p. 1297 e 1298, Fig. 30.29) dá os nomes: o de **ALLIS** é o mais fácil, comum e eficaz (decúbito dorsal, assistente fixando a pelve pelas espinhas ilíacas anterossuperiores, quadril e joelho a 90 graus em leve adução e rotação interna, antebraço do cirurgião atrás do joelho puxando a coxa para a frente); o de BIGELOW é a circundução (Fig. 30.30); o de **STIMSON**, em decúbito ventral pela gravidade, é difícil na criança maior e serve na menor (Fig. 30.31, p. 1299). Todos usam a flexão do quadril para relaxar o ligamento iliofemoral, principal obstáculo à redução da posterior (p. 1294). Na anterior, uma modificação do ALLIS: tração no eixo do fêmur com o quadril abduzido e fletido, pressão do assistente sobre a cabeça e adução com rotação interna (Fig. 30.32, p. 1300). Redução aberta se não reduz ou se fica não concêntrica: via posterior (KOCHER-LANGENBECK) para a posterior, com o isquiático identificado sobre os rotadores; via anterior (biquíni, sartório e tensor) para a anterior; ou luxação cirúrgica; a artroscopia retira fragmentos.
 
 **Depois de reduzir.** **Sempre imagem**: o espaço alargado aparece em até **26%** das reduções; um pouco de alargamento por hemartrose melhora em poucos dias, mas o que persiste pede **ressonância** (ou tomografia) atrás de **lábio, cápsula ou fragmento osteocondral interposto**, e a retirada aberta ou artroscópica. Imobilização curta: gesso por 4 a 6 semanas na criança pequena, órtese no maior; cintilografia em 4 a 6 semanas pode mostrar a perfusão.
 
@@ -264,7 +266,7 @@ armadilha: Tratar o tipo tensão como o compressão.
 conceito: A luxação posterior é a mais comum (mais de 90%); abaixo de 6 anos acontece com baixa energia; reduzir com urgência, com anestesia geral e radioscopia no adolescente; ressonância depois da redução se o espaço ficar alargado ou para medir a parede posterior; a necrose depende do tempo até a redução; isquiático paralisado antes da redução não se explora.
 como: O TARO 2024 perguntou a direção mais comum e a energia abaixo de 5 anos; o TEOT 2024 mostrou a manobra de redução da luxação.
 armadilha: Achar que a luxação da criança pequena exige grande trauma, ou explorar de rotina o isquiático que já estava paralisado.
-alerta: O capítulo descreve os métodos de redução sem os epônimos; a correspondência com ALLIS (decúbito dorsal, tração longitudinal com o cirurgião acima do paciente) e STIMSON (decúbito ventral, gravidade) é a usada pela banca em `pediatria-0561`.
+alerta: O capítulo do Rockwood descreve os métodos de redução sem os epônimos; os nomes estão no Tachdjian (cap. 30, Fig. 30.29, p. 1298, ALLIS na posterior; Fig. 30.31, p. 1299, STIMSON; Fig. 30.32, p. 1300, ALLIS na anterior), que sustenta a correspondência usada pela banca em `pediatria-0561`. O TARO 2024 usou o corte de 5 anos do Tachdjian (p. 1294); o Rockwood fala em 6.
 !fim
 
 # A idade muda tudo {radar=fundamento}
@@ -315,13 +317,13 @@ O mesmo quadril se comporta de jeitos diferentes ao longo da infância, e o cap�
 | redução fechada | tração, **abdução e rotação interna** | cap. 24 |
 | princípio | redução **anatômica**, aberta se sobrar desvio; estabilidade antes da fise | cap. 24 |
 | gesso | abaixo de 10 anos, gesso; acima de 12, fixação cruzando a fise sem gesso | cap. 24 |
-| RATLIFF | **I toda a cabeça** (pior, mais comum); II parcial; **III colo** (raro, bom) | cap. 24, Fig. 24-19 |
+| RATLIFF | **I toda a cabeça** (pior, mais comum); II parcial; **III colo** (raro, bom); no Tachdjian, II e III cerca de 25% cada, e a Fig. 30.50 troca II e III | cap. 24, Fig. 24-19; Tachdjian p. 1312 e 1313 |
 | fatores de necrose | tipo, desvio, idade acima de 10; **qualidade da redução**; atraso acima de 24 horas (razão 4,2) | cap. 24 |
 | coxa vara | 20 a 30%; remodela abaixo de 8 anos ou acima de 110 graus; osteotomia valgizante | cap. 24 |
 | fise proximal | 13% do membro, 3 mm por ano; parada só pesa na criança pequena | cap. 24 |
 | pseudartrose | 7%, II e III; osteotomia valgizante subtrocantérica se a fixação era estável | cap. 24 |
 | estresse | compressão inferior = sem carga; **tensão superior = fixar** | cap. 24, Fig. 24-25 |
-| luxação | **posterior** mais de 90%; **abaixo de 6 anos baixa energia**; necrose 10%, ligada ao **tempo** (mais de 6 horas) | cap. 24 |
+| luxação | **posterior** mais de 90%; **abaixo de 6 anos baixa energia**; necrose 10%, ligada ao **tempo** (mais de 6 horas); no Tachdjian, posterior 75 a 90% e corte em 5 anos | cap. 24; Tachdjian p. 1294 e 1295 |
 | redução da luxação | anestesia geral, relaxamento e **radioscopia** no adolescente | cap. 24 |
 | depois da redução | espaço alargado = **ressonância** (lábio, cápsula, fragmento) | cap. 24 |
 | isquiático | paralisado antes = observar; piorou na manobra = explorar | cap. 24 |

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-umero-distal
-versao: 1
+versao: 2
 titulo: Fratura do úmero distal no adulto
 especialidade: trauma
 acesso: gratis
@@ -78,7 +78,7 @@ O mapeamento por tomografia de WANG (102 fraturas) mostrou zonas quentes em torn
 
 ## Carga: quem recebe mais peso
 
-O Campbell traz o número que a banca pede: com o cotovelo estendido e carga axial, **cerca de 40% da carga passa pela articulação ulnoumeral e 60% pela radiocapitelar** (Campbell's Operative Orthopaedics, 15ª ed., cap. 15, p. 645). A face radial (capítulo) recebe mais carga em extensão. Isso ajuda a entender por que o capítulo sofre na queda com o braço estendido.
+O Campbell traz o número que a banca pede: com o cotovelo estendido e carga axial, **cerca de 40% da carga passa pela articulação ulnoumeral e 60% pela radiocapitelar** (Campbell's Operative Orthopaedics, 15ª ed., cap. 15, p. 645). A face radial (capítulo) recebe mais carga em extensão. Na mesma página, com o cotovelo a 90 graus e força aplicada na mão de lado, surge um torque rotatório grande no úmero distal: a **tração no colateral medial** pode chegar a **duas vezes o peso do corpo**, e a **compressão na cabeça do rádio**, a **três vezes o peso do corpo** (p. 645). Isso ajuda a entender por que o capítulo sofre na queda com o braço estendido.
 
 ## Ligamentos, nervos e vasos
 
@@ -96,6 +96,7 @@ O **nervo ulnar** perfura o septo intermuscular medial no terço médio do braç
 | Ângulo de carregamento | 10 a 17° de valgo em extensão |
 | Arco articular | Capítulo cerca de 180°; tróclea quase 270° |
 | Carga axial em extensão | Ulnoumeral cerca de 40%; radiocapitelar cerca de 60% |
+| Cotovelo a 90° com força lateral na mão | Tração no colateral medial até 2 vezes o peso do corpo; compressão na cabeça do rádio até 3 vezes |
 | Arcada de STRUTHERS | 70% da população; cerca de 8 cm proximal ao epicôndilo medial |
 | Nervo radial | Perfura o septo lateral cerca de 10 cm proximal ao epicôndilo lateral |
 !fim
@@ -130,7 +131,7 @@ A AO/OTA atribui ao úmero distal os dígitos **13** e divide pela localização
 - **Tipo B, parcial articular**: há continuidade entre a diáfise e parte do segmento articular. A coluna lateral é **B1** e a medial **B2** (juntas, cerca de **15%**); as fraturas de **cisalhamento do capítulo, da tróclea ou de ambos** são **B3**, subdivididas em capitelares (**B3.1**), trocleares (**B3.2**) e combinadas (**B3.3**) (PDF 1574, 1577, 1588 e 1611 a 1613).
 - **Tipo C, articular completa**: sem continuidade; **C1** simples, **C2** articular simples com metáfise fragmentada, **C3** articular e metafisária fragmentadas (PDF 1574 a 1575).
 
-O Campbell lembra que a AO define **61 tipos e subtipos** no úmero distal (Campbell's Operative Orthopaedics, 15ª ed., cap. 62, p. 2794). Os subgrupos finos do tipo A estão na figura 39-3 do Rockwood, que é imagem; o texto não os descreve. A AO não considera a altura do fragmento distal nem o desvio e ajuda pouco a escolher entre fixar e substituir, mas os autores a preferem por ser intuitiva e oficial (PDF 1575).
+O Campbell lembra que a AO define **61 tipos e subtipos** no úmero distal (Campbell's Operative Orthopaedics, 15ª ed., cap. 62, p. 2794). Os subgrupos finos não estão no texto, mas estão desenhados e nomeados na figura 39-3 do Rockwood (PDF 1571 a 1573), que reproduz o compêndio OTA de 2007. No tipo A: **A1** avulsão apofisária (A1.1 epicôndilo lateral; A1.2 epicôndilo medial não encarcerado; A1.3 epicôndilo medial encarcerado); **A2** metafisária simples, com **A2.1 oblíqua para baixo e para dentro**, **A2.2 oblíqua para baixo e para fora** e **A2.3 transversa** (transmetafisária, ou justaepifisária com desvio posterior, KOCHER I, ou anterior, KOCHER II); **A3** metafisária multifragmentar (A3.1 cunha intacta, A3.2 cunha fragmentada, A3.3 complexa). No tipo B, a coluna lateral sagital (**B1**) tem **B1.1 capítulo** (traço pelo capítulo, MILCH I, ou entre o capítulo e a tróclea), B1.2 transtroclear simples e B1.3 transtroclear multifragmentar; a coluna medial (B2) tem B2.1 transtroclear simples pelo lado medial (MILCH I), B2.2 pelo sulco e B2.3 multifragmentar. No **B3** frontal, a B3.1 do capítulo se divide em incompleta (KOCHER-LORENZ), completa (HAHN-STEINTHAL 1), com componente troclear (HAHN-STEINTHAL 2) e fragmentada; B3.2 é a tróclea (simples ou fragmentada) e B3.3, capítulo e tróclea (McKEE) (PDF 1573). A AO não considera a altura do fragmento distal nem o desvio e ajuda pouco a escolher entre fixar e substituir, mas os autores a preferem por ser intuitiva e oficial (PDF 1575).
 
 ## MILCH nas fraturas de uma coluna
 
@@ -144,7 +145,7 @@ MEHNE e MATTA partem do modelo de JUPITER e dividem em **intra-articular** (bico
 | Tipo | Definição | Exemplos no capítulo |
 |---|---|---|
 | 13A | Extra-articular: epicôndilos ou metáfise | A2 e A3 transcolunares; um quarto das fraturas |
-| 13B1 | Parcial articular, coluna lateral | Via de KOCHER estendida |
+| 13B1 | Parcial articular, coluna lateral (sagital) | B1.1 capítulo (sagital, MILCH I); via de KOCHER estendida |
 | 13B2 | Parcial articular, coluna medial | Via de HOTCHKISS estendida |
 | 13B3 | Parcial articular de cisalhamento (plano frontal) | B3.1 capítulo com ou sem crista lateral da tróclea; B3.2 tróclea; B3.3 capítulo e tróclea |
 | 13C1 | Articular completa, articular e metafisária simples | Paratricipital possível |
@@ -155,8 +156,8 @@ MEHNE e MATTA partem do modelo de JUPITER e dividem em **intra-articular** (bico
 !questoes central=trauma-0109 relacionadas=trauma-1012
 conceito: Na AO 13, A é extra-articular, B é parcial articular (B1 coluna lateral, B2 coluna medial, B3 cisalhamento do capítulo, da tróclea ou de ambos) e C é articular completa; a fratura do capítulo é B3.
 como: O TARO 2016 perguntou como a AO classifica a fratura do capítulo (B3); o ENARE R4 2024 descreveu uma fratura extra-articular de traço simples em espiral em jovem de 22 anos e pediu o código AO (13A2.1).
-armadilha: Achar que o capítulo, por ser "lateral", é B1; B1 é a fratura da coluna lateral, e o cisalhamento articular é B3. Na extra-articular, marcar B ou C só porque a fratura é perto da articulação.
-alerta: Para `trauma-1012`, o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39, PDF 1570) sustenta que a fratura extra-articular é tipo 13A, mas os subgrupos (A2.1 para o traço espiral) estão só na figura 39-3, que é imagem sem texto; o Campbell (p. 2794) também não os descreve. O gabarito oficial (A, 13A2.1) foi mantido.
+armadilha: Achar que toda fratura do capítulo, por ser "lateral", é B1. A figura 39-3 chama o B1.1 de "capítulo", mas é o traço sagital da coluna lateral que passa pelo capítulo (MILCH I); o cisalhamento coronal do capítulo, a fratura do capítulo das provas, é B3.1. Na extra-articular, marcar B ou C só porque a fratura é perto da articulação.
+alerta: Para `trauma-1012`, o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 39, PDF 1570) sustenta que a fratura extra-articular é tipo 13A, e a figura 39-3 (PDF 1572) traz os subgrupos A2.1 a A2.3; mas nela, que segue o compêndio de 2007, o A2.1 é a oblíqua para baixo e para dentro, e não há subgrupo chamado espiral; o Campbell (p. 2794) não descreve os subgrupos. O gabarito oficial (A, 13A2.1) foi mantido.
 !fim
 
 # Capítulo e tróclea: as classificações das fraturas de cisalhamento {radar=confirmado}
