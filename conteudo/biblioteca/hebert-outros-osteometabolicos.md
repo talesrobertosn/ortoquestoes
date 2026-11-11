@@ -293,7 +293,7 @@ Há quatro divergências que valem a leitura atenta. **Qual é a mais comum:** o
 
 O HEBERT resume o que existe: **reposição enzimática** (laronidase na MPS I, idursulfase na II, galsulfase na VI) e **transplante de medula óssea**, que na síndrome de HURLER aumenta a sobrevida, mas **não melhora as manifestações esqueléticas**. O Lovell (p. 255) explica o porquê provável: a enzima dos leucócitos transplantados penetra mal nas células do osso. Ao ortopedista cabem as deformidades angulares (crescimento guiado ou osteotomia, com recidiva frequente), as contraturas, o túnel do carpo e, acima de tudo, a **coluna cervical alta**.
 
-!questoes central=pediatria-0155
+!questoes central=pediatria-0155 relacionadas=osteometabolicas-0057
 conceito: Nas mucopolissacaridoses o depósito periarticular causa rigidez, exceto na MPS IV (síndrome de MORQUIO), em que predomina a frouxidão ligamentar, com inteligência normal, platispondilia, joelho valgo, queratam sulfato na urina e instabilidade atlantoaxial.
 como: Uma prova de ortopedia perguntou em qual mucopolissacaridose predomina a frouxidão ligamentar, entre HURLER, SCHEIE, HUNTER e MORQUIO.
 armadilha: Escolher SCHEIE por ser a forma branda; ela é branda na inteligência e na estatura, mas tem rigidez e mão em garra.

@@ -155,7 +155,7 @@ O Campbell (p. 2230) considera o **moving valgus o teste mais acurado para o col
 
 O **milking (ordenha)** tem esse nome porque o examinador **puxa o polegar do paciente**: o Campbell (p. 2230) faz o valgo assim enquanto o cotovelo vai de **30 a 120°**; o Green (cap. 23, p. 835), estático, com o cotovelo **além de 90°** e o **ombro em rotação externa**. O HEBERT (cap. 48) usa o milking para **complementar o teste em valgo**. Positivo, indica lesão do **colateral medial**.
 
-!questoes central=ombro-cotovelo-0555
+!questoes central=ombro-cotovelo-0555 relacionadas=ombro-cotovelo-0319
 conceito: O milking (ordenha) aplica valgo puxando o polegar do paciente com o cotovelo fletido e o ombro em rotação externa; dor ou abertura medial indica insuficiência do ligamento colateral medial (feixe anterior).
 como: A CET-PR perguntou o que o teste da ordenha positivo indica.
 armadilha: Colateral lateral: o milking é manobra de valgo, e o valgo abre o lado medial; o lateral se testa em varo e nas manobras rotatórias em supinação.

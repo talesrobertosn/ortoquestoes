@@ -325,7 +325,7 @@ O Campbell (p. 278) traz a voz dissonante que as provas mais novas podem explora
 | Cimento em cimento | B2 selecionada, manto bom, baixa demanda | cirurgia menor | indicação estreita |
 !fim
 
-!questoes central=quadril-0023 relacionadas=quadril-0078,quadril-0002
+!questoes central=quadril-0023 relacionadas=quadril-0078,quadril-0002,quadril-0487
 conceito: Na B2 a haste está solta e o osso é razoável; o tratamento é revisão com haste femoral mais longa, de preferência não cimentada com fixação distal no istmo, e os fragmentos são cerclados ao redor dela.
 como: O TARO 2016 e o TEOT 2023 pediram o tratamento preferencial da B2 (no TEOT, a escolha entre haste longa cimentada e não cimentada); o TARO 2020 mostrou uma imagem de fratura periprotética e pediu a melhor conduta, com gabarito na revisão do componente femoral.
 armadilha: Fixar com placa bloqueada mantendo a haste (é a conduta da B1) ou escolher a haste longa cimentada, que o The Adult Hip diz ter maus resultados e não recomenda.

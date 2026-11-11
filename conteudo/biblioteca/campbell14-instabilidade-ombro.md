@@ -41,7 +41,7 @@ O subtema tem mais de setenta questões, em cinco blocos:
 
 **A luxação crônica.** O Campbell classifica a luxação como **crônica quando a cabeça fica luxada por mais de 6 semanas** (p. 2441).
 
-!questoes central=ombro-cotovelo-0354 relacionadas=ombro-cotovelo-0295,ombro-cotovelo-0331,ombro-cotovelo-0347,ombro-cotovelo-0572,ombro-cotovelo-0448,ombro-cotovelo-0552 treino=ombro-cotovelo-0712,ombro-cotovelo-0713,ombro-cotovelo-0584,ombro-cotovelo-0586
+!questoes central=ombro-cotovelo-0354 relacionadas=ombro-cotovelo-0295,ombro-cotovelo-0331,ombro-cotovelo-0347,ombro-cotovelo-0572,ombro-cotovelo-0448,ombro-cotovelo-0552,ombro-cotovelo-0446 treino=ombro-cotovelo-0712,ombro-cotovelo-0713,ombro-cotovelo-0584,ombro-cotovelo-0586
 conceito: A idade é o maior fator de recidiva (90% abaixo de 20 anos, 60% de 20 a 40, 10% acima de 40), seguida do esporte de contato, da hiperfrouxidão e do defeito ósseo; a imobilização longa ou em rotação externa não reduz a recidiva; acima de 40, rotura do manguito em 30% e em mais de 80% acima de 60.
 como: O TARO de 2010, 2012 e 2024 perguntou o principal fator de recidiva; o TARO 2011, a lesão frequente acima dos 40; o SBOT-SP, a epidemiologia; o TARO 2026 e o CET-PR, a luxação inveterada.
 !fim
