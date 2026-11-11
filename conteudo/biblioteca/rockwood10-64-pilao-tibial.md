@@ -1,6 +1,6 @@
 ---
 id: rockwood10-64-pilao-tibial
-versao: 1
+versao: 2
 titulo: Fratura do pilão tibial
 especialidade: trauma
 acesso: gratis
@@ -218,6 +218,8 @@ Baseada no **desvio** e na **cominuição** da superfície articular (figura 64-
 
 Não existe tipo IV. O capítulo faz a ponte com a AO no tratamento: a **RÜEDI II / 43C1** é de menor energia, com fragmentos grandes, e pode ter resultado excelente; a **RÜEDI III / 43C3** é das fraturas mais complexas, e, quanto maior a cominuição, mais difícil a cirurgia e muitas vezes pior o resultado.
 
+No tipo III, os livros divergem no detalhe. O Rockwood (figura 64-6) descreve impacção e cominuição **da superfície articular**; o Campbell 15 (cap. 59, Box 59.4, p. 2579) define o tipo III como **cominuição metafisária e articular** associadas, e o tipo II como traços de clivagem com desvio da superfície articular e cominuição mínima. O Campbell (p. 2578) lembra ainda que a AO e a RÜEDI e ALLGÖWER têm concordância apenas moderada entre observadores, mas algum valor prognóstico: as fraturas com pouco desvio ou cominuição (RÜEDI e ALLGÖWER I e II) têm resultado funcional muito melhor e menos complicações que os padrões graves (RÜEDI e ALLGÖWER III, AO B3 e C3).
+
 !figura 64-6
 Classificação de RÜEDI e ALLGÖWER: tipo I, fratura de clivagem sem desvio importante; tipo II, desvio importante da superfície articular sem cominuição; tipo III, impacção e cominuição da superfície articular.
 !fim
@@ -258,6 +260,8 @@ alerta: O capítulo 64 não detalha os grupos B1, B2 e B3; ele diz só que os su
 Muitos autores consideram a **gravidade da lesão articular** o determinante mais importante do resultado. DECOSTER, porém, mostrou que nem a gravidade nem a qualidade da redução se correlacionaram de forma consistente com os escores clínicos; a qualidade da redução se correlacionou com a **artrose**. A interpretação: os piores resultados atribuídos à redução ruim podem refletir o fato de que as reduções ruins acontecem nas lesões mais graves. CHEN mostrou que a **lesão de partes moles** pior na chegada também piora o resultado. E fatores sociais pesam: renda e escolaridade mais baixas pioram os escores (POLLAK).
 
 O capítulo resume a literatura: fraturas **simples, fechadas, de menor energia**, em pacientes com mais escolaridade, tratadas com redução articular anatômica, alinhamento correto e placas que poupam as partes moles, vão melhor; **43C de alta energia**, com dano de partes moles e impacção articular, vão pior. Em qualquer caso, a cicatriz das partes moles e o dano articular definem a dor e a limitação, muitas vezes apesar da radiografia.
+
+O Campbell 15 (cap. 59, p. 2579) dá a lista dos indicadores de mau prognóstico: **cominuição articular** (AO C3, RÜEDI e ALLGÖWER III), **lesão do tálus**, **lesão grave de partes moles**, redução ruim da superfície articular, fixação instável, infecção da ferida operatória e, mais recentemente, **lesão da sindesmose**. Os três primeiros são ditados pela lesão; nos outros, o cirurgião tem alguma influência. Na página seguinte (p. 2580), numa série de 37 fraturas AO B3 e C3 tratadas com fixador externo e fixação articular retardada, **38%** dos pacientes com cominuição em **"vidro moído"** (mais de três fragmentos da superfície articular menores que 2 mm na tomografia) desenvolveram artrose pós-traumática, contra **nenhum** dos tornozelos sem esse padrão; no conjunto, 17% das reduções anatômicas (5 de 29) e 5 de 7 das reduções não anatômicas evoluíram com artrose.
 
 !questoes central=trauma-1104 relacionadas=trauma-1089 treino=trauma-1697,trauma-1696
 conceito: O indicador de maior relevância para mau prognóstico na fratura distal da tíbia é a cominuição articular (a gravidade da lesão articular), e a artrose do pilão é comum, mais que a do planalto.

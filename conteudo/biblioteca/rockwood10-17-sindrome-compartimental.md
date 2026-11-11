@@ -1,6 +1,6 @@
 ---
 id: rockwood10-17-sindrome-compartimental
-versao: 2
+versao: 3
 titulo: Síndrome compartimental aguda
 especialidade: trauma
 acesso: gratis
@@ -31,9 +31,11 @@ O capítulo separa três situações que a prova gosta de confundir:
 
 A história explica de onde vêm alguns números que a banca usa. **Volkmann**, em 1882, descreveu paralisia e contratura depois de enfaixamento apertado do antebraço e da mão, de natureza isquêmica; ele achava que o músculo **não sobrevivia mais de 6 horas** sem fluxo e que 12 horas de enfaixamento apertado podiam bastar para uma incapacidade permanente. Na Segunda Guerra, a culpa passou para a lesão arterial com espasmo; **Seddon**, em 1966, desmontou essa ideia ao notar edema precoce em todos os casos e **pulsos palpáveis em metade** deles. **McQuillan e Nolan** descreveram o ciclo vicioso (a tensão no compartimento fechado obstrui as veias e depois reduz a entrada de sangue) e concluíram que **o atraso na fasciotomia** era a principal causa de fracasso.
 
+O quadro clínico da síndrome crônica de esforço, que o capítulo 17 apenas define, está no Campbell 15 (cap. 53, p. 2249): é uma isquemia reversível de um compartimento osteofascial que não acomoda o aumento de volume do músculo no exercício (o músculo cresce até 20% do tamanho de repouso). É mais comum em corredores recreativos adultos jovens, atletas de elite e recrutas militares; os compartimentos **anterior e lateral** são os mais acometidos, e os sintomas são bilaterais em cerca de **75%**, com atraso típico de 2 anos no diagnóstico. A dor e a sensação de aperto começam depois de **20 a 30 minutos** de corrida e cedem **15 a 30 minutos** depois de parar; pode haver parestesia no território do nervo do compartimento e hérnia muscular palpável, mas o exame em repouso costuma ser pobre. O diagnóstico se firma pela medida da pressão com o exercício (critérios do Box 53.4: pressão de repouso de 15 mmHg ou mais, 30 mmHg ou mais 1 minuto depois ou 20 mmHg ou mais 5 minutos depois do exercício). Sem melhora com o tratamento conservador, faz-se a fasciotomia, com sucesso de 80% a 90% no compartimento anterior e de 50% a 70% no posterior profundo. Em outra página do mesmo capítulo (p. 2242), o Campbell escreve que a forma crônica acomete mais o anterior ou o posterior profundo; o HEBERT (cap. 73) define a forma crônica do mesmo jeito que o Rockwood, com isquemia e dor que melhoram ao parar a atividade.
+
 !questoes relacionadas=trauma-0432,trauma-0046,trauma-0151
 conceito: A síndrome de esforço é a elevação da pressão durante o exercício, que melhora com o repouso; a aguda é a que causa necrose sem descompressão; Volkmann é a sequela da aguda negligenciada.
-como: O TARO cobrou a síndrome crônica de esforço pela causa (exercício, 2018) e pelos compartimentos mais acometidos (anterior e lateral, 2023). O capítulo 17 só define a síndrome de esforço; o detalhe clínico dela não está aqui.
+como: O TARO cobrou a síndrome crônica de esforço pela causa (exercício, 2018) e pelos compartimentos mais acometidos (anterior e lateral, 2023). O capítulo 17 só define a síndrome de esforço; o quadro clínico, com anterior e lateral como os mais acometidos, vem do Campbell 15 (cap. 53, p. 2249).
 armadilha: Aparelho gessado: é causa de síndrome aguda (envoltório externo), não da crônica.
 !fim
 
@@ -99,10 +101,12 @@ A alta energia não é obrigatória: na tíbia, a baixa energia apareceu em 59% 
 
 A grande exceção à juventude é a **síndrome sem fratura**: esses pacientes são mais velhos, têm mais comorbidades, usam com frequência **anticoagulantes** e a razão homem para mulher cai para **5 para 1**. Na criança, 61% das síndromes sem fratura são **iatrogênicas**.
 
+Dentro da própria diáfise da tíbia, o capítulo 63 do mesmo livro (Tibia and Fibula Shaft Fractures) dá taxa de 1,5% a 11% e lista como fatores de risco independentes o **sexo masculino**, a **idade mais jovem**, a **localização proximal** da fratura, os traços mais longos e a lesão esportiva de baixa energia; as fraturas balísticas isoladas da tíbia e da fíbula, sobretudo do **terço proximal**, também têm taxa acima do esperado. O mesmo capítulo lembra que a haste não aumenta o risco e que a síndrome também ocorre na fratura exposta.
+
 !questoes central=trauma-0746 treino=trauma-1598
-conceito: Na tíbia, a síndrome é proporcionalmente mais frequente no planalto (12% contra 3% na diáfise), sobretudo no Schatzker VI.
+conceito: Na fratura da diáfise da tíbia, sexo masculino, idade jovem e localização proximal são fatores de risco independentes (capítulo 63); no conjunto da tíbia, o planalto tem taxa ainda maior que a diáfise (12% contra 3%).
 como: O TEOT 2025 combinou o terço da fratura com o sexo e deu como resposta o terço proximal e o sexo masculino.
-armadilha: Terço distal: o capítulo destaca a região proximal (planalto) e a diáfise, não o pilão.
+armadilha: Terço distal: na diáfise, o fator de risco é a localização proximal (capítulo 63), não a distal.
 !fim
 
 ## Quem tem diagnóstico atrasado
@@ -186,7 +190,7 @@ conceito: Delta P é a pressão diastólica menos a pressão do compartimento; f
 como: O TARO 2015 e o ENARE R4 2025 pediram a ordem da subtração (a banca troca diastólica por sistólica e inverte os termos); o TARO 2012, o limite de 30 mmHg; uma prova sem ano, o valor no paciente hipotenso.
 armadilha: Pressão sistólica: o delta P do capítulo usa a diastólica.
 armadilha: Uma única medida abaixo de 30: o critério exige 2 horas e a leitura da tendência.
-alerta: O TARO 2012 (trauma-0818) deu 30 mmHg como limite da pressão intracompartimental absoluta para indicar fasciotomia, e uma prova sem ano (trauma-0274) deu 20 mmHg no paciente hipotenso. O capítulo usa o 30 como limite do delta P e afirma que a pressão absoluta não é o gatilho adequado; ele não traz o valor de 20 mmHg. No hipotenso, o capítulo manda corrigir a hipotensão, porque ela reduz a perfusão.
+alerta: O TARO 2012 (trauma-0818) deu 30 mmHg como limite da pressão intracompartimental absoluta para indicar fasciotomia, e outros livros locais sustentam esse gabarito: o Rockwood and Wilkins 10ª ed. (cap. 6) diz que o critério geralmente aceito é pressão de 30 mmHg ou mais no compartimento afetado, com o delta P abaixo de 30 como alternativa; o Campbell 15 (cap. 53, p. 2242) liga a necrose muscular a pressão acima de 30 mmHg por mais de 8 horas; o HEBERT (cap. 73) registra 30 mmHg como nível crítico para alguns autores (40 para outros) e a conduta de LOURENÇO, com fasciotomia de urgência acima de 30 mmHg. O capítulo 17 usa o 30 como limite do delta P e afirma que, no adulto monitorado, a pressão absoluta não é o gatilho adequado. Uma prova sem ano (trauma-0274) deu 20 mmHg no paciente hipotenso; nenhum desses livros traz o valor de 20 mmHg. No hipotenso, o capítulo manda corrigir a hipotensão, porque ela reduz a perfusão.
 !fim
 
 ## Clínica ou monitorização?
@@ -369,7 +373,7 @@ O tema tem peso judicial: numa revisão de 1998 a 2008, 55% dos processos tivera
 !questoes central=trauma-0434 treino=trauma-1606
 conceito: Atraso até a fasciotomia acima de 6 horas provavelmente causa sequelas significativas; Volkmann já estimava 6 horas de sobrevida do músculo sem fluxo.
 como: O TARO 2023 pediu o tempo de isquemia a partir do qual a lesão neurológica ou muscular fica irreversível (2, 4, 6 ou 8 horas).
-alerta: No TARO 2023 (trauma-0434), o gabarito foi 8 horas. O capítulo 17 não traz esse número: ele usa 6 horas, tanto para o atraso até a fasciotomia que causa sequelas quanto na estimativa histórica de Volkmann. Guarde o gabarito da banca para essa redação (tempo de isquemia irreversível) e o número do livro para o atraso até a cirurgia.
+alerta: No TARO 2023 (trauma-0434), o gabarito foi 8 horas, e outros livros locais sustentam esse número: o Campbell 15 (cap. 53, p. 2242) diz que pode haver necrose muscular significativa, mesmo com fluxo normal, se a pressão passar de 30 mmHg por mais de 8 horas; o HEBERT dá oito horas como tempo indicativo de necrose (cap. 73) e diz que, instalada a síndrome, oito horas bastam para lesões irreversíveis (cap. 50); o Rockwood and Wilkins 10ª ed. (cap. 6) registra que, no adulto, a isquemia do compartimento por mais de 8 horas aumenta o risco de sequela permanente, e na criança fala em 6 a 8 horas. O capítulo 17 usa 6 horas para outra pergunta: o atraso até a fasciotomia que provavelmente causa sequelas (e a estimativa histórica de Volkmann). Tempo de isquemia irreversível: 8 horas; atraso tolerável até a cirurgia: 6 horas.
 !fim
 
 ## O paciente encontrado caído
