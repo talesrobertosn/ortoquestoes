@@ -8,7 +8,8 @@ import { REGIOES, REGIOES_CORPO, type Lateralidade, type Regiao } from '../dados
 import { CORES_PRESET, PRESETS, type Preset } from '../dados/presets'
 import { SISTEMAS, type Modo, type Sistema } from '../dados/modos'
 import { hex } from './cor'
-import { temasDaRegiao, type TemaEstudo } from '../dados/temasEstudo'
+import { useEffect, useState } from 'react'
+import type { TemaEstudo } from '../dados/temasEstudo'
 
 interface Props {
   modo: Modo
@@ -49,6 +50,14 @@ export function PainelExplorar(p: Props) {
   const buscando = p.busca.trim().length >= 2
   const corpo = p.modo === 'corpo'
   const regioes = corpo ? REGIOES_CORPO : REGIOES
+  // os grupos do Teste-se vêm no mesmo pacote do Teste-se (baixado depois que o Explorar abre)
+  const [atalhos, definirAtalhos] = useState<TemaEstudo[]>([])
+  const idRegiao = p.regiao?.id
+  useEffect(() => {
+    let vivo = true
+    import('../dados/temasEstudo').then((m) => { if (vivo) definirAtalhos(m.temasDaRegiao(idRegiao)) }).catch(() => { /* sem atalhos: o botão Todos os grupos continua */ })
+    return () => { vivo = false }
+  }, [idRegiao])
   return (
     <aside className={`atlas__explorar${corpo ? ' atlas__explorar--corpo' : ''}`} aria-label="Explorar">
       <label className="at-busca"><Icone nome="busca" tamanho={17} />
@@ -102,7 +111,7 @@ export function PainelExplorar(p: Props) {
               </div>
               <p>{p.regiao ? `Treine os nomes de ${p.regiao.nome.toLowerCase()}: o atlas acende, você responde.` : 'Escolha um grupo e treine os nomes: o atlas acende, você responde.'}</p>
               <div className="at-cartao-estudo__temas">
-                {temasDaRegiao(p.regiao?.id).map((t) => (
+                {atalhos.map((t) => (
                   <button key={t.id} type="button" onClick={() => p.aoEstudar(t.id)} style={{ ['--at-tema' as string]: hex(GRUPOS[t.grupos[0]].cor) }}>
                     <i aria-hidden="true" />{t.nome}{p.temaFechado(t) && <Icone nome="cadeado" tamanho={11} />}
                   </button>

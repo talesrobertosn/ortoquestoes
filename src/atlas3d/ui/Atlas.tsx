@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Motor, type Corte, type EixoCorte, type Passagem, type Vista } from '../motor/Motor'
 import { carregarAreas, carregarArvore, carregarCatalogo, carregarNomesTa2, carregarPontos } from '../motor/carregador'
 import { GRUPOS, ORDEM_GRUPOS, grupoDe } from '../config'
@@ -29,11 +29,13 @@ import { CORES_PRESET, PRESETS, type Preset } from '../dados/presets'
 import { GRUPOS_DO_MODO, SISTEMAS, SO_CORPO, caminhoDoNo, indexarArvore, nosDoSistema, type Modo, type Sistema } from '../dados/modos'
 import { PainelExplorar } from './PainelExplorar'
 import { Navegador } from './Navegador'
-import { ModoEstudo } from './ModoEstudo'
-import { TEMAS_ORTOPEDIA, estruturasDoTema, temasDoCorpo, type TemaEstudo } from '../dados/temasEstudo'
+import type { TemaEstudo } from '../dados/temasEstudo'
 import { Rotulos } from './Rotulos'
 import { hex } from './cor'
 import '../../estilos/paginas/Atlas3D.css'
+
+// o Teste-se (e a lista de grupos) só baixa quando a pessoa abre: o atlas abre mais leve
+const ModoEstudo = lazy(() => import('./ModoEstudo').then((m) => ({ default: m.ModoEstudo })))
 
 /** Na conta grátis: ossos e músculos. O resto, para assinantes (aparece por alguns segundos e convida). */
 const GRATIS = new Set<Grupo>(['osso', 'musculo'])
@@ -593,23 +595,22 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     // de um grupo para outro: o Teste-se remonta já no grupo novo
     if (estudo) { definirEstudo(false); setTimeout(() => definirEstudo(true), 0) } else definirEstudo(true)
   }
-  const temasEstudo = useMemo(() => (modo === 'corpo' ? [...TEMAS_ORTOPEDIA, ...temasDoCorpo()] : TEMAS_ORTOPEDIA), [modo])
-  const gruposDoTema = (t: TemaEstudo, lista?: Estrutura[]) => (t.grupos.length ? t.grupos : [...new Set((lista ?? []).map(grupoDe))])
+  const gruposDoTema = (t: TemaEstudo, lista: Estrutura[]) => (t.grupos.length ? t.grupos : [...new Set(lista.map(grupoDe))])
   /** cadeado no tema: camada que esta pessoa não pode ligar (os sistemas do Corpo inteiro são da assinatura) */
   const temaFechado = (t: TemaEstudo) => (t.grupos.length ? t.grupos.some((g) => !ligados.has(g) && !podeLigar(g)) : nivel !== 'assinante')
-  const prepararTema = async (t: TemaEstudo) => {
+  /** liga as camadas do grupo e tira o recorte de região; false quando o grupo pede conta ou assinatura */
+  const prepararTema = async (t: TemaEstudo, lista: Estrutura[]) => {
     const m = motorRef.current
-    if (!m || !catalogo) return null
-    const lista = estruturasDoTema(t, catalogo.estruturas, idxArvore, grupoDe).filter((e) => m.existe(e.id))
+    if (!m) return false
     const gs = gruposDoTema(t, lista)
     const travado = gs.find((g) => !ligados.has(g) && !podeLigar(g))
-    if (travado) { definirConvite(nivel === 'visitante' ? { tipo: 'conta' } : { tipo: 'assinante', grupo: travado }); return null }
+    if (travado) { definirConvite(nivel === 'visitante' ? { tipo: 'conta' } : { tipo: 'assinante', grupo: travado }); return false }
     // um recorte de região esconderia o grupo: o teste usa o corpo todo
     if (regiaoId) { definirRegiaoId(null); m.definirRegiao(null) }
     await Promise.all(gs.filter((g) => !ligados.has(g)).map((g) => mudarGrupo(g, true)))
     // nervo, vaso, ligamento ou osso: o músculo translúcido tamparia o alvo; o osso fica como referência
     if (t.grupos.length && !t.grupos.includes('musculo') && ligados.has('musculo')) void mudarGrupo('musculo', false)
-    return lista
+    return true
   }
   const gruposEstudo = useMemo(() => new Set([...ligados].filter((g) => modo === 'corpo' || !SO_CORPO.has(g))), [ligados, modo])
 
@@ -807,9 +808,9 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
 
       {/* Teste-se */}
       {estudo && motor && catalogo && (
-        <ModoEstudo motor={motor} estruturas={catalogo.estruturas} grupos={gruposEstudo} temas={temasEstudo} temaInicial={temaEstudo}
+        <Suspense fallback={null}><ModoEstudo motor={motor} estruturas={catalogo.estruturas} grupos={gruposEstudo} modo={modo} arvore={idxArvore} temaInicial={temaEstudo}
           prepararTema={prepararTema} fechado={temaFechado} aoFechar={() => definirEstudo(false)}
-          aoVerFicha={(e) => { definirEstudo(false); setTimeout(() => { motor.selecionar({ id: e.id }); if (larga) definirDetalhes(true) }, 0) }} />
+          aoVerFicha={(e) => { definirEstudo(false); setTimeout(() => { motor.selecionar({ id: e.id }); if (larga) definirDetalhes(true) }, 0) }} /></Suspense>
       )}
 
       {/* seleção: cartão compacto; detalhes no painel lateral (computador) ou num modal (celular) */}

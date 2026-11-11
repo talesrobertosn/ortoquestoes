@@ -5,7 +5,8 @@ import type { Motor } from '../motor/Motor'
 import type { Estrutura, Grupo } from '../tipos'
 import { GRUPOS, grupoDe } from '../config'
 import { nomeDe, temNomePt, SINGULAR } from '../dados/nomes'
-import { SECOES_ESTUDO, type TemaEstudo } from '../dados/temasEstudo'
+import { SECOES_ESTUDO, TEMAS_ORTOPEDIA, estruturasDoTema, temasDoCorpo, type TemaEstudo } from '../dados/temasEstudo'
+import type { IndiceArvore, Modo } from '../dados/modos'
 import { hex } from './cor'
 
 interface Props {
@@ -13,11 +14,12 @@ interface Props {
   estruturas: Estrutura[]
   /** camadas que o teste "o que está na tela" pode usar (as ligadas, no modo atual) */
   grupos: Set<Grupo>
-  temas: TemaEstudo[]
+  modo: Modo
+  arvore: IndiceArvore | null
   /** tema já escolhido ao abrir (atalho do Explorar); sem ele, o Teste-se começa pela escolha */
   temaInicial?: string | null
-  /** liga as camadas do tema, tira o recorte de região e devolve as estruturas; null quando pede conta ou assinatura */
-  prepararTema: (t: TemaEstudo) => Promise<Estrutura[] | null>
+  /** liga as camadas do tema e tira o recorte de região; false quando pede conta ou assinatura */
+  prepararTema: (t: TemaEstudo, lista: Estrutura[]) => Promise<boolean>
   fechado: (t: TemaEstudo) => boolean
   aoFechar: () => void
   aoVerFicha: (e: Estrutura) => void
@@ -41,7 +43,8 @@ const PLACAR_ZERO: Placar = { acertos: 0, total: 0, seguidas: 0, melhor: 0 }
  * estrutura do tema em dourado e pergunta o nome, com quatro opções tiradas do mesmo tema (a confusão que cai na
  * prova é entre vizinhos). Teclas 1 a 4 respondem, Enter avança.
  */
-export function ModoEstudo({ motor, estruturas, grupos, temas, temaInicial, prepararTema, fechado, aoFechar, aoVerFicha }: Props) {
+export function ModoEstudo({ motor, estruturas, grupos, modo, arvore, temaInicial, prepararTema, fechado, aoFechar, aoVerFicha }: Props) {
+  const temas = useMemo(() => (modo === 'corpo' ? [...TEMAS_ORTOPEDIA, ...temasDoCorpo()] : TEMAS_ORTOPEDIA), [modo])
   const [tema, definirTema] = useState<TemaEstudo | 'na-tela' | null>(null)
   const [candidatas, definirCandidatas] = useState<Estrutura[]>([])
   const [carregando, definirCarregando] = useState<string | null>(null)
@@ -87,12 +90,13 @@ export function ModoEstudo({ motor, estruturas, grupos, temas, temaInicial, prep
       // o que está na tela: camadas e região de agora, só o que dá para ver de longe
       lista = estruturas.filter((e) => grupos.has(grupoDe(e)) && motor.estaVisivel(e.id) && temNomePt(e) && tamanho(e) >= 14)
     } else {
+      const doTema = estruturasDoTema(t, estruturas, arvore, grupoDe).filter((e) => motor.existe(e.id))
       definirCarregando(t.id)
-      const r = await prepararTema(t)
+      const pode = await prepararTema(t, doTema)
       definirCarregando(null)
-      if (!r) return
+      if (!pode) return
       // no tema, o alvo é focado de perto: ossos do carpo e músculos da mão também entram
-      lista = r.filter((e) => motor.existe(e.id) && temNomePt(e) && tamanho(e) >= 3)
+      lista = doTema.filter((e) => temNomePt(e) && tamanho(e) >= 3)
       guardar(t.id)
     }
     recentes.current = []
@@ -100,7 +104,7 @@ export function ModoEstudo({ motor, estruturas, grupos, temas, temaInicial, prep
     definirCandidatas(lista)
     definirTema(t)
     nova(lista)
-  }, [estruturas, grupos, motor, prepararTema, nova])
+  }, [estruturas, grupos, motor, prepararTema, nova, arvore])
 
   useEffect(() => {
     const t = temaInicial ? temas.find((x) => x.id === temaInicial) : null
