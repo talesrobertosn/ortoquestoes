@@ -7,7 +7,7 @@ import { perfilDaFicha, type EnvioHistorico } from '../../componentes/admin/mode
 import { PARTE_COBRANCAS, codigoDaFalha, funcaoAusente, linkDoEvento, linkMercadoPago, reprocessarEvento, type EventoPagamento } from '../../componentes/admin/pagamentos'
 import { CORTESIA_ADMIN, STATUS_PIX, motivoRecusa, proximaData, rotuloMeio, rotuloPlano, situacaoAssinatura } from '../../componentes/admin/rotulos'
 import { diasDesde, indicacaoEmDestaque, planosEmDestaque } from '../../componentes/admin/sinais'
-import { CINCO_MIN, rpcInexistente, usarRpc } from '../../componentes/admin/usarRpc'
+import { CINCO_MIN, UM_MIN, rpcInexistente, usarRpc } from '../../componentes/admin/usarRpc'
 import { usarPainel } from '../dados/painel'
 import { estaOnline, nomeDe, type LinhaUsuario } from '../dados/pessoas'
 import type { AbaFicha } from '../nav'
@@ -79,7 +79,8 @@ function FichaPessoa({ u, aba, definirAba, aoFechar }: { u: LinhaUsuario; aba: A
   const { indice } = usarIndice()
   const args = useMemo(() => ({ p_id: u.id_usuario }), [u.id_usuario])
   const detalheQ = usarRpc<Detalhe>(conta, 'detalhe_usuario_admin', args)
-  const atividadeQ = usarRpc<Atividade>(conta, 'atividade_usuario_admin', args, { atualizarCada: CINCO_MIN })
+  // Minuto a minuto só aqui, com a ficha aberta (uma pessoa, consulta leve); fechou a ficha, parou.
+  const atividadeQ = usarRpc<Atividade>(conta, 'atividade_usuario_admin', args, { atualizarCada: UM_MIN, validadeMs: UM_MIN })
   const extraQ = usarRpc<FichaExtra>(conta, 'ficha_extra_usuario_admin', args, { atualizarCada: CINCO_MIN })
   const detalhe = detalheQ.dados ?? null
   const bruta = atividadeQ.dados ?? null

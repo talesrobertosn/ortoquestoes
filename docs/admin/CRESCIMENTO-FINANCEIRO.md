@@ -85,3 +85,13 @@ Pedido do Tales: "quero ver com clareza quanto recebi este mês, no mês anterio
 - **Início:** topo claro "ao vivo" (quem está online primeiro, com as iniciais de cada pessoa) no lugar da faixa verde com horizonte; placar de comparações em quatro blocos logo abaixo da lista de pessoas; o acerto mostrado é o real (primeira tentativa).
 
 Fotos e verificação com dados fictícios parecidos com os reais: `node scripts/capturar_telas.mjs '/admin?aba=financeiro' hub --admin --sem-cracha --producao --roteiro fixtures/e2e_hub.mjs --pasta <pasta> --agora 2026-11-11T22:20:00Z` (com `--escuro` e `--estreito`).
+
+## Atualização automática mais leve (11/11/2026)
+
+Pedido do Tales: "minuto a minuto só quando eu abrir a página; atualização sempre a cada 5 minutos; sem sobrecarregar o Supabase".
+
+- O painel atualiza sozinho a cada 5 minutos, e só com a aba visível e alguém mexendo nele: depois de 10 minutos sem mouse, teclado, toque ou rolagem, as atualizações param (`OCIOSO_MS` em `src/componentes/admin/usarRpc.ts`). Ao mexer de novo, o que estiver velho se atualiza na hora. O botão Atualizar continua buscando tudo na hora.
+- A lista de pessoas (a leitura mais pesada) passou de 3 para 5 minutos, e as visitas ao Indique e ganhe, de 1 para 5 minutos. "Online" continua sendo refeito a cada 10 s pelo último sinal, sem ir ao banco.
+- Minuto a minuto só na ficha de uma pessoa, enquanto ela está aberta (`atividade_usuario_admin`, uma pessoa só).
+- No site dos alunos, o sinal de vida passou de 40 s para 1 minuto e continua só com a aba visível; trocar de página manda o sinal na hora.
+- A taxa do Pix escolhida no Financeiro vale para o Resumo, as Metas e a faixa de metas (`src/admin/modulos/taxaPix.ts`).

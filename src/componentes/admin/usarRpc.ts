@@ -8,7 +8,8 @@ import { ErroRpc, chamarRpc, type OpcoesRpc } from '../../servicos/supabase'
  * - Um pedido por chave de cada vez: dois componentes (ou um clique duplo) pedindo a
  *   mesma coisa recebem a mesma resposta, sem disparar outra RPC.
  * - Quem sai da tela para de ouvir; se ninguém mais ouve, o pedido em voo é cancelado.
- * - Atualização periódica só enquanto a seção está montada e a aba do navegador visível.
+ * - Atualização periódica só enquanto a seção está montada, a aba do navegador visível e alguém
+ *   mexeu no painel nos últimos 10 minutos (OCIOSO_MS).
  */
 interface Estado { dados: unknown; erro: unknown; em: number }
 interface Voo { controle: AbortController; promessa: Promise<unknown> }
@@ -41,7 +42,7 @@ export function buscarConsulta<T>(chave: string, buscador: Buscador<T>): Promise
 }
 
 export interface OpcoesConsulta {
-  /** Atualiza sozinho a cada N ms, só com a aba do navegador visível. */
+  /** Atualiza sozinho a cada N ms, só com a aba visível e o painel em uso. */
   atualizarCada?: number
   /** Ao montar, dados mais novos que isto são usados sem pedir de novo. */
   validadeMs?: number
@@ -61,6 +62,30 @@ export interface Consulta<T> {
  * botão Atualizar. As leituras do painel são pesadas para o banco; de 10 em 10 s elas o sobrecarregavam.
  */
 export const CINCO_MIN = 300_000
+/** Ficha aberta de uma pessoa: a atividade dela se atualiza minuto a minuto, só enquanto a ficha está na tela. */
+export const UM_MIN = 60_000
+
+/**
+ * Painel aberto sem ninguém usando (Tales, 11/11/2026: "minuto a minuto só quando eu abrir a página, sem
+ * sobrecarregar o Supabase"): depois de 10 minutos sem mexer (mouse, teclado, toque ou rolagem), as
+ * atualizações automáticas param. Ao mexer de novo, o que estiver velho se atualiza na hora.
+ */
+export const OCIOSO_MS = 10 * 60_000
+let ultimoUso = Date.now()
+let vigiando = false
+const aoVoltarDoOcio = new Set<() => void>()
+function vigiarUso() {
+  if (vigiando || typeof window === 'undefined') return
+  vigiando = true
+  const marcar = () => {
+    const estavaOcioso = Date.now() - ultimoUso >= OCIOSO_MS
+    ultimoUso = Date.now()
+    if (estavaOcioso) aoVoltarDoOcio.forEach(f => f())
+  }
+  for (const ev of ['pointerdown', 'pointermove', 'keydown', 'wheel', 'touchstart', 'scroll'] as const) window.addEventListener(ev, marcar, { passive: true, capture: true })
+}
+/** Alguém está usando o painel agora (aba visível e mexeu nos últimos 10 minutos). */
+export const painelEmUso = () => document.visibilityState === 'visible' && Date.now() - ultimoUso < OCIOSO_MS
 
 /**
  * Consulta com cache. `chave` null deixa a consulta parada (seção que ainda não precisa
@@ -87,12 +112,14 @@ export function usarConsulta<T>(chave: string | null, buscador: Buscador<T>, { a
 
   useEffect(() => {
     if (!chave || !atualizarCada) return
-    const tique = () => { if (document.visibilityState === 'visible') void buscarConsulta(chave, s => ref.current(s)).catch(() => undefined) }
+    vigiarUso()
+    const tique = () => { if (painelEmUso()) void buscarConsulta(chave, s => ref.current(s)).catch(() => undefined) }
     const t = window.setInterval(tique, atualizarCada)
-    // Voltando à aba do navegador depois de um tempo fora: atualiza já, sem esperar o próximo tique.
+    // Voltando à aba (ou a mexer, depois de um tempo parado): atualiza já o que estiver velho, sem esperar o próximo tique.
     const aoVoltar = () => { if (Date.now() - entradaDe(chave).estado.em >= atualizarCada) tique() }
     document.addEventListener('visibilitychange', aoVoltar)
-    return () => { window.clearInterval(t); document.removeEventListener('visibilitychange', aoVoltar) }
+    aoVoltarDoOcio.add(aoVoltar)
+    return () => { window.clearInterval(t); document.removeEventListener('visibilitychange', aoVoltar); aoVoltarDoOcio.delete(aoVoltar) }
   }, [chave, atualizarCada])
 
   const recarregar = useCallback(async () => {

@@ -15,7 +15,9 @@ import { ler } from '../estado/armazenamento'
 const CHAVE_ID = 'oq-aparelho'
 /** Conta para a qual este aparelho já se registrou: sem ela, é um login novo aqui. */
 const CHAVE_REGISTRO = 'oq-aparelho-conta'
-const INTERVALO_MS = 40_000
+// Um sinal por minuto com a aba visível (11/11/2026: era 40 s). "Online" no painel olha os últimos 5 minutos e trocar
+// de página manda o sinal na hora, então nada se perde; o banco recebe um terço a menos de escritas.
+const INTERVALO_MS = 60_000
 /** De quanto em quanto tempo olha se a página ou a questão mudou (só manda sinal se mudou). */
 const OLHAR_PAGINA_MS = 4_000
 
