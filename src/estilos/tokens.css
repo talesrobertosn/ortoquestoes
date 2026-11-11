@@ -144,6 +144,15 @@
   --bronze: #9a5b2e;
   --bronze-veu: #f5e9df;
 
+  /* Paleta padrão da marca (Tales, 11/11/2026): fixa nos dois temas, para logos, posts e peças novas.
+     Não repinta o site; use-a quando uma peça precisar das cores da marca. */
+  --paleta-marca-verdete: #14655e;
+  --paleta-marca-noite: #0e2e2a;
+  --paleta-marca-creme: #f6eedb;
+  --paleta-marca-creme-claro: #fbf7ec;
+  --paleta-marca-grafite: #2e3638;
+  --paleta-marca-ouro: #f4cf7c;
+
   /* Símbolo da marca (src/marca/Simbolo.tsx): ladrilho, vértebras e a certa. */
   --marca-ladrilho: #14655e;
   --marca-contorno: none;

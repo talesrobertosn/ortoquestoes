@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Marca Orto Questões: acervo e posts</title>
+<!-- Acervo da marca (11/11/2026). Gera os PNGs em saida/ com:
+     node marketing/instagram/gerar.mjs marketing/instagram/marca/marca.html
+     O brasão em pixel art vem de docs/design/marca-2026/brasao_rt.py (brasao-perfil.png e brasao-post.png). -->
+<style>
+@font-face { font-family: Jakarta; src: url(../fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Playfair; src: url(../fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+:root { --verde:#14655E; --noite:#0E2E2A; --creme:#F6EEDB; --creme2:#FBF7EC; --ouro:#F4CF7C; --grafite:#2E3638; --cinza:#6B7775; --linha:#E2DAC6; }
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#444;font-family:Inter,sans-serif;color:var(--grafite)}
+section{position:relative;overflow:hidden;margin-bottom:40px;background:var(--creme2)}
+.painel{width:1600px}
+.pad{padding:72px 80px}
+.rot{font:700 15px Inter;letter-spacing:.22em;text-transform:uppercase;color:var(--verde)}
+h1{font:800 60px/1.02 Jakarta;letter-spacing:-.04em;color:var(--noite)}
+h2{font:800 28px/1.1 Jakarta;letter-spacing:-.03em;color:var(--noite)}
+p.l{font:500 19px/1.5 Inter;color:var(--cinza);max-width:760px}
+.ficha{font:500 16px/1.5 Inter;color:var(--cinza)}
+.ficha b{color:var(--noite)}
+.grid{display:grid;gap:22px}
+.cel{position:relative;border-radius:18px;display:grid;place-items:center;overflow:hidden}
+.cel .tag{position:absolute;left:22px;top:18px;font:700 13px Inter;letter-spacing:.18em;text-transform:uppercase;opacity:.7}
+.claro{background:#fff;box-shadow:inset 0 0 0 1px var(--linha)} .creme{background:var(--creme)}
+.verde{background:var(--verde);color:var(--creme)} .noite{background:var(--noite);color:var(--creme)}
+.n{font:800 56px/1 Jakarta;letter-spacing:-.035em} .n span{font-weight:500}
+.sub{font:600 14px Inter;letter-spacing:.32em;text-transform:uppercase}
+.wm{display:flex;align-items:center;gap:22px}
+.sw{border-radius:16px;padding:18px;height:190px;display:flex;flex-direction:column;justify-content:flex-end;font:600 14px/1.45 Inter}
+.sw b{font:800 22px Jakarta;letter-spacing:-.02em;display:block}
+/* posts */
+.post{width:1080px;height:1350px} .quad{width:1080px;height:1080px}
+.post .rodape{position:absolute;left:0;right:0;bottom:70px;text-align:center;font:600 22px Inter;letter-spacing:.3em;text-transform:uppercase}
+.grao{position:absolute;inset:0;pointer-events:none;opacity:.5;background-image:radial-gradient(rgba(0,0,0,.05) 1px,transparent 1.2px);background-size:5px 5px}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+  <!-- A · Ladrilho das alternativas (símbolo principal) -->
+  <symbol id="sA" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="24" fill="var(--fundo, #14655E)"/>
+    <g fill="var(--tinta, #F6EEDB)" opacity=".5"><circle cx="30" cy="30" r="6.5"/><rect x="43" y="25.5" width="34" height="9" rx="4.5"/><circle cx="30" cy="70" r="6.5"/><rect x="43" y="65.5" width="26" height="9" rx="4.5"/></g>
+    <circle cx="30" cy="50" r="9" fill="#F4CF7C"/><path d="M25.8 50.2l2.9 3 5.6-6" fill="none" stroke="var(--fundo, #14655E)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="43" y="45" width="40" height="10" rx="5" fill="#F4CF7C"/>
+  </symbol>
+  <!-- A, versão de favicon: sem visto (some abaixo de 32 px) e traços mais grossos -->
+  <symbol id="sA-mini" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="24" fill="var(--fundo, #14655E)"/>
+    <g fill="var(--tinta, #F6EEDB)" opacity=".55"><circle cx="28" cy="27" r="9"/><rect x="44" y="20" width="36" height="14" rx="7"/><circle cx="28" cy="73" r="9"/><rect x="44" y="66" width="26" height="14" rx="7"/></g>
+    <circle cx="28" cy="50" r="11" fill="#F4CF7C"/><rect x="44" y="42" width="40" height="16" rx="8" fill="#F4CF7C"/>
+  </symbol>
+  <symbol id="sA-mono" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="24" fill="currentColor"/>
+    <g fill="var(--vazado, #fff)"><circle cx="30" cy="30" r="6.5" opacity=".45"/><rect x="43" y="25.5" width="34" height="9" rx="4.5" opacity=".45"/><circle cx="30" cy="70" r="6.5" opacity=".45"/><rect x="43" y="65.5" width="26" height="9" rx="4.5" opacity=".45"/><circle cx="30" cy="50" r="9"/><rect x="43" y="45" width="40" height="10" rx="5"/></g>
+    <path d="M25.8 50.2l2.9 3 5.6-6" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <!-- B original (referência, parecido demais com outro curso) -->
+  <symbol id="sB" viewBox="0 0 100 100">
+    <circle cx="47" cy="47" r="30" fill="none" stroke="var(--tinta, #F6EEDB)" stroke-width="13"/>
+    <path d="M52 63 L65 76 L90 47" fill="none" stroke="var(--rec, #0E2E2A)" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M52 63 L65 76 L90 47" fill="none" stroke="#F4CF7C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <!-- B2 · Q de ladrilho: o contorno do ladrilho (a mesma forma do símbolo A) vira o Q quando o visto sai pelo canto -->
+  <symbol id="sB2" viewBox="0 0 100 100">
+    <rect x="12" y="12" width="66" height="66" rx="22" fill="none" stroke="var(--tinta, #F6EEDB)" stroke-width="12"/>
+    <circle cx="45" cy="45" r="7" fill="var(--tinta, #F6EEDB)" opacity=".45"/>
+    <path d="M53 64 L65 76 L91 46" fill="none" stroke="var(--rec, #0E2E2A)" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M53 64 L65 76 L91 46" fill="none" stroke="#F4CF7C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <!-- B3 · Q de três arcos: o anel partido em três alternativas; o visto ocupa a quarta, a certa -->
+  <symbol id="sB3" viewBox="0 0 100 100">
+    <g transform="rotate(96 46 46)"><circle cx="46" cy="46" r="31" fill="none" stroke="var(--tinta, #F6EEDB)" stroke-width="12" stroke-linecap="round" stroke-dasharray="34.9 20 34.9 20 34.9 50"/></g>
+    <path d="M51 63 L63 75 L89 45" fill="none" stroke="#F4CF7C" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <!-- B4 · Q marcado: o botão de opção de uma alternativa, com o miolo marcado em ouro e a perna do Q saindo dele -->
+  <symbol id="sB4" viewBox="0 0 100 100">
+    <circle cx="46" cy="46" r="33" fill="none" stroke="var(--tinta, #F6EEDB)" stroke-width="8"/>
+    <path d="M46 46 L84 84" stroke="var(--rec, #0E2E2A)" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="46" cy="46" r="16" fill="#F4CF7C"/>
+    <path d="M52 52 L82 82" stroke="#F4CF7C" stroke-width="11" stroke-linecap="round"/>
+  </symbol>
+  <!-- Selo -->
+  <symbol id="sE" viewBox="0 0 200 200">
+    <circle cx="100" cy="100" r="96" fill="var(--fundo, #14655E)"/>
+    <circle cx="100" cy="100" r="86" fill="none" stroke="#F4CF7C" stroke-width="2"/>
+    <circle cx="100" cy="100" r="58" fill="none" stroke="var(--tinta, #F6EEDB)" stroke-width="1.5" opacity=".5"/>
+    <path id="arcoE" d="M100 100 m-72 0 a72 72 0 1 1 144 0 a72 72 0 1 1 -144 0" fill="none"/>
+    <text font-family="Inter" font-weight="800" font-size="13.5" letter-spacing="3.1" fill="var(--tinta, #F6EEDB)"><textPath href="#arcoE" textLength="446" lengthAdjust="spacing">ORTO QUESTÕES · QUESTÕES DE PROVA COMENTADAS ·</textPath></text>
+    <use href="#sA" x="62" y="62" width="76" height="76"/>
+  </symbol>
+</defs></svg>
+
+<!-- ═══ 1 · O QUE VIRA Q: três saídas para se afastar do anel com perna ═══ -->
+<section id="01-q-variacoes" class="painel" style="height:1060px;background:var(--noite);color:var(--creme)">
+  <div class="pad" style="padding-bottom:40px">
+    <div class="rot" style="color:var(--ouro)">Caminho B · nova rodada</div>
+    <h1 style="margin-top:10px;color:var(--creme)">O que vira Q, sem parecer anel com perna</h1>
+    <p class="l" style="margin-top:12px;color:rgba(246,238,219,.7)">O original (à esquerda, pequeno) é um anel fechado com um traço na base, desenho comum a outros cursos. As três saídas mudam a forma do O, não só a perna.</p>
+  </div>
+  <div class="grid" style="grid-template-columns:.62fr 1fr 1fr 1fr;padding:0 80px;gap:20px">
+    <div><div class="cel" style="height:300px;background:rgba(246,238,219,.06)"><span class="tag">Original</span><svg width="120" height="120" style="opacity:.55"><use href="#sB"/></svg></div>
+      <p class="ficha" style="margin-top:14px;color:rgba(246,238,219,.55)">Fica como referência; não segue.</p></div>
+    <div><div class="cel" style="height:300px;background:var(--noite);box-shadow:inset 0 0 0 1px rgba(246,238,219,.14)"><span class="tag">B2</span><svg width="190" height="190"><use href="#sB2"/></svg></div>
+      <div class="cel creme" style="height:150px;margin-top:14px;--tinta:#14655E;--rec:#F6EEDB"><svg width="96" height="96"><use href="#sB2"/></svg></div>
+      <h2 style="margin-top:18px;color:var(--creme)">Q de ladrilho</h2>
+      <p class="ficha" style="margin-top:6px;color:rgba(246,238,219,.7)">O O é o próprio ladrilho do símbolo A; dentro, a bolinha de uma alternativa. <b style="color:var(--ouro)">Liga os dois caminhos numa família só.</b></p></div>
+    <div><div class="cel" style="height:300px;background:var(--noite);box-shadow:inset 0 0 0 1px rgba(246,238,219,.14)"><span class="tag">B3</span><svg width="190" height="190"><use href="#sB3"/></svg></div>
+      <div class="cel creme" style="height:150px;margin-top:14px;--tinta:#14655E"><svg width="96" height="96"><use href="#sB3"/></svg></div>
+      <h2 style="margin-top:18px;color:var(--creme)">Q de três arcos</h2>
+      <p class="ficha" style="margin-top:6px;color:rgba(246,238,219,.7)">O anel partido em três alternativas; o visto dourado ocupa a quarta, a certa. <b style="color:var(--ouro)">Ritmo próprio, nada de anel liso.</b></p></div>
+    <div><div class="cel" style="height:300px;background:var(--noite);box-shadow:inset 0 0 0 1px rgba(246,238,219,.14)"><span class="tag">B4</span><svg width="190" height="190"><use href="#sB4"/></svg></div>
+      <div class="cel creme" style="height:150px;margin-top:14px;--tinta:#14655E;--rec:#F6EEDB"><svg width="96" height="96"><use href="#sB4"/></svg></div>
+      <h2 style="margin-top:18px;color:var(--creme)">Q marcado</h2>
+      <p class="ficha" style="margin-top:6px;color:rgba(246,238,219,.7)">O botão de opção de uma prova, marcado em ouro; a perna do Q sai do miolo. <b style="color:var(--ouro)">Lê-se “alternativa escolhida”.</b></p></div>
+  </div>
+</section>
+
+<!-- ═══ 2 · LADRILHO: kit final ═══ -->
+<section id="02-ladrilho-kit" class="painel" style="height:1080px">
+  <div class="pad" style="padding-bottom:34px"><div class="rot">Caminho A · pronto para uso</div><h1 style="margin-top:8px">Ladrilho das alternativas: o kit</h1>
+    <p class="l" style="margin-top:12px">O desenho está fechado. O que faltava era o uso: a versão de favicon (sem o visto, que some abaixo de 32 px), a área de respiro e as combinações de fundo permitidas.</p></div>
+  <div class="grid" style="grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:300px 300px;padding:0 80px">
+    <div class="cel claro" style="grid-row:span 2"><span class="tag">Marca horizontal · respiro = meio ladrilho</span>
+      <div style="position:relative;padding:44px;white-space:nowrap;outline:2px dashed #E2DAC6;outline-offset:-2px">
+        <div class="wm"><svg width="104" height="104"><use href="#sA"/></svg><div><div class="n" style="color:var(--noite);font-size:46px">Orto <span>Questões</span></div><div class="sub" style="margin-top:10px;color:var(--verde);font-size:12px;letter-spacing:.26em">Questões de prova, comentadas</div></div></div></div></div>
+    <div class="cel creme" style="display:flex;justify-content:center;gap:22px;align-items:center"><span class="tag">Favicon · 64 · 32 · 16</span>
+      <svg width="64" height="64"><use href="#sA-mini"/></svg><svg width="32" height="32"><use href="#sA-mini"/></svg><svg width="16" height="16"><use href="#sA-mini"/></svg>
+      <span style="width:1px;height:64px;background:#d8cfb8"></span>
+      <svg width="64" height="64"><use href="#sA"/></svg><svg width="32" height="32"><use href="#sA"/></svg><svg width="16" height="16"><use href="#sA"/></svg>
+      <span style="position:absolute;bottom:34px;font:600 13px Inter;color:var(--cinza)">versão mini · versão cheia</span></div>
+    <div class="cel noite"><span class="tag">Ícone de app</span><svg width="150" height="150"><use href="#sA"/></svg></div>
+    <div class="cel verde"><span class="tag">Sobre verdete: ladrilho creme</span><div class="wm"><svg width="76" height="76" style="--fundo:#F6EEDB;--tinta:#14655E"><use href="#sA"/></svg><div class="n" style="font-size:36px">Orto <span>Questões</span></div></div></div>
+    <div class="cel claro" style="display:flex;justify-content:center;gap:30px"><span class="tag">Uma cor (carimbo, bordado, gravação)</span>
+      <svg width="84" height="84" style="color:#14655E"><use href="#sA-mono"/></svg><svg width="84" height="84" style="color:#2E3638"><use href="#sA-mono"/></svg><svg width="84" height="84" style="color:#0E2E2A;--vazado:#F4CF7C"><use href="#sA-mono"/></svg></div>
+  </div>
+</section>
+
+<!-- ═══ 3 · PALETA PADRÃO ═══ -->
+<section id="03-paleta" class="painel" style="height:760px">
+  <div class="pad" style="padding-bottom:34px"><div class="rot">Cores padrão da marca · 11/11/2026</div><h1 style="margin-top:8px">Seis cores, um ouro só</h1>
+    <p class="l" style="margin-top:12px">Gravadas no site como <b>--paleta-marca-*</b> (src/estilos/tokens.css) e no DESIGN.md. Proporção de uso: verdes e cremes na frente, grafite no texto, ouro só na resposta certa.</p></div>
+  <div class="grid" style="grid-template-columns:2fr 1.5fr 1.5fr 1.2fr 1fr .6fr;padding:0 80px;gap:14px">
+    <div class="sw" style="background:#14655E;color:#F6EEDB"><b>Verdete</b>#14655E · a cor da marca</div>
+    <div class="sw" style="background:#0E2E2A;color:#F6EEDB"><b>Verde-noite</b>#0E2E2A · fundos fortes</div>
+    <div class="sw" style="background:#F6EEDB;color:#0E2E2A"><b>Creme</b>#F6EEDB · papel quente</div>
+    <div class="sw" style="background:#FBF7EC;color:#0E2E2A;box-shadow:inset 0 0 0 1px #E2DAC6"><b>Creme claro</b>#FBF7EC · fundo de leitura</div>
+    <div class="sw" style="background:#2E3638;color:#F6EEDB"><b>Grafite</b>#2E3638 · texto</div>
+    <div class="sw" style="background:#F4CF7C;color:#0E2E2A"><b>Ouro</b>#F4CF7C · a certa</div>
+  </div>
+</section>
+
+<!-- ═══ POSTS DE RODÍZIO (feed 1080 x 1350) ═══ -->
+<section id="post-1-ladrilho" class="post" style="background:var(--verde);color:var(--creme)">
+  <div class="grao"></div>
+  <div style="position:absolute;left:0;right:0;top:250px;display:grid;place-items:center">
+    <svg width="420" height="420" style="--fundo:#F6EEDB;--tinta:#14655E;filter:drop-shadow(0 30px 50px rgba(0,0,0,.25))"><use href="#sA"/></svg></div>
+  <div style="position:absolute;left:0;right:0;top:760px;text-align:center">
+    <div class="n" style="font-size:96px">Orto <span>Questões</span></div>
+    <div class="sub" style="margin-top:26px;font-size:22px;color:var(--ouro)">Questões de prova, comentadas</div></div>
+  <div class="rodape" style="color:rgba(246,238,219,.6)">@ortoquestoes</div>
+</section>
+
+<section id="post-2-ladrilho-creme" class="post" style="background:var(--creme)">
+  <div class="grao"></div>
+  <div style="position:absolute;left:110px;top:150px" class="rot">Três linhas, uma certa</div>
+  <div style="position:absolute;left:110px;top:200px;right:110px"><div style="font:700 74px/1.04 Playfair;color:var(--noite);letter-spacing:-.01em">Cada questão tem uma resposta certa. Cada comentário diz por quê.</div></div>
+  <div style="position:absolute;left:110px;right:110px;top:600px;height:440px;border-radius:30px;background:#fff;box-shadow:0 30px 60px rgba(14,46,42,.12);display:flex;align-items:center;gap:56px;padding:0 70px">
+    <svg width="260" height="260" style="flex:none"><use href="#sA"/></svg>
+    <div style="font:500 26px/1.5 Inter;color:var(--grafite)">O ladrilho é uma questão vista de cima: <b style="color:var(--noite)">as alternativas em fila</b> e a certa marcada em <b style="color:#9a6b12">ouro</b>, com o livro e a página logo abaixo.</div></div>
+  <div style="position:absolute;left:110px;bottom:110px" class="wm"><svg width="60" height="60"><use href="#sA"/></svg><div class="n" style="font-size:40px;color:var(--noite)">Orto <span>Questões</span></div></div>
+  <div style="position:absolute;right:110px;bottom:126px;font:600 20px Inter;letter-spacing:.3em;color:var(--cinza)">@ORTOQUESTOES</div>
+</section>
+
+<section id="post-3-selo" class="post" style="background:var(--noite);color:var(--creme)">
+  <div class="grao" style="opacity:.25"></div>
+  <div style="position:absolute;left:0;right:0;top:220px;display:grid;place-items:center">
+    <svg width="560" height="560" style="--fundo:#14655E;filter:drop-shadow(0 30px 60px rgba(0,0,0,.4))"><use href="#sE"/></svg></div>
+  <div style="position:absolute;left:0;right:0;top:860px;text-align:center">
+    <div style="font:700 64px/1.1 Playfair">Estudo com selo de qualidade</div>
+    <div style="font:500 26px/1.5 Inter;color:rgba(246,238,219,.7);margin-top:20px">Comentários com o livro e a página de cada fato.</div></div>
+  <div class="rodape" style="color:rgba(246,238,219,.5)">@ortoquestoes</div>
+</section>
+
+<section id="post-4-noite" class="post" style="background:radial-gradient(120% 80% at 50% 35%,#16433d 0%,#0E2E2A 55%,#0A221F 100%);color:var(--creme)">
+  <div style="position:absolute;left:0;right:0;top:330px;display:grid;place-items:center">
+    <div style="position:absolute;width:640px;height:640px;border-radius:50%;background:radial-gradient(circle,rgba(244,207,124,.22),transparent 65%);top:-110px"></div>
+    <svg width="420" height="420" style="filter:drop-shadow(0 40px 60px rgba(0,0,0,.5))"><use href="#sA"/></svg></div>
+  <div style="position:absolute;left:0;right:0;top:850px;text-align:center">
+    <div class="n" style="font-size:88px">Orto <span>Questões</span></div>
+    <div style="font:500 28px/1.5 Inter;color:rgba(246,238,219,.72);margin-top:24px">Entre as alternativas, a certa brilha.</div></div>
+  <div class="rodape" style="color:rgba(246,238,219,.5)">@ortoquestoes</div>
+</section>
+
+<!-- Foto de perfil (1080 x 1080, recorte circular do Instagram: tudo dentro do círculo central) -->
+<section id="perfil-ladrilho" class="quad" style="background:var(--verde);display:grid;place-items:center">
+  <svg width="600" height="600" style="--fundo:#F6EEDB;--tinta:#14655E"><use href="#sA"/></svg>
+</section>
+<section id="perfil-ladrilho-noite" class="quad" style="background:var(--noite);display:grid;place-items:center">
+  <svg width="600" height="600"><use href="#sA"/></svg>
+</section>
+</body></html>

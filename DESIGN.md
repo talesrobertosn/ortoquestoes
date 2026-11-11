@@ -161,6 +161,10 @@ Ideia em estudo (não aplicada): interface monocromática estilo shadcn com a ar
 - **Metais dos emblemas**: ouro `#a87a1f`, prata `#6f7d82`, bronze `#9a5b2e`, só em ranking e conquistas.
 - **Escuro** é desenhado à parte (`:root[data-tema="escuro"]`): superfícies com leve viés verde, destaque mais claro.
 
+- **Paleta padrão da marca (Tales, 11/11/2026)**: verdete `#14655e`, verde-noite `#0e2e2a`, creme `#f6eedb`, creme
+  claro `#fbf7ec`, grafite `#2e3638` e ouro `#f4cf7c` (só a alternativa certa). Tokens `--paleta-marca-*`, iguais nos
+  dois temas. É a base de logos, posts e peças novas; acervo e símbolos em `marketing/instagram/marca/`.
+
 ## Typography
 
 - **Corpo e interface:** fonte do sistema, 17px (1.0625rem), entrelinha 1.6, coluna de leitura até 76ch.
