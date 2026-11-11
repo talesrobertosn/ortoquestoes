@@ -179,7 +179,7 @@ Por isso o inferior é o **mais importante**: ele é o que segura a cabeça just
 | cápsula inferior | abdução de 90 graus | translação inferior | volumosa e frouxa na MDI |
 !fim
 
-!questoes relacionadas=ombro-cotovelo-0497 treino=ombro-cotovelo-0699
+!questoes relacionadas=ombro-cotovelo-0497,ombro-cotovelo-0496 treino=ombro-cotovelo-0699
 conceito: O complexo glenoumeral inferior, uma rede com banda anterior, bolsa axilar e banda posterior, é o principal estabilizador a partir de 45 graus de abdução e, em abdução com rotação externa, passa por baixo da cabeça e impede a luxação anterior; o superior trava em adução e o médio em abdução média.
 como: Questão direta pedindo o ligamento glenoumeral mais importante para a estabilidade, com superior, médio, inferior e coracoumeral.
 armadilha: Escolher o superior (é primário só no braço aduzido, contra a translação inferior) ou o coracoumeral (fica no intervalo rotador e trabalha com o superior).
