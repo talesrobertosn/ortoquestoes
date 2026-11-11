@@ -1,46 +1,59 @@
 # Cobertura do banco anatômico do Atlas 3D
 
-Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 14 lote(s). Não editar à mão.
+Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 24 lote(s). Não editar à mão.
 
 ## Totais
 
 | Tipo | Registros | Verificados | Pendentes | Conflitos | Com malha 3D |
 |---|---|---|---|---|---|
-| musculo | 131 | 130 | 0 | 1 | 131 |
-| nervo | 63 | 61 | 0 | 2 | 55 |
-| ligamento | 84 | 82 | 1 | 1 | 84 |
-| arteria | 38 | 37 | 0 | 1 | 38 |
+| musculo | 193 | 192 | 0 | 1 | 193 |
+| nervo | 92 | 90 | 0 | 2 | 84 |
+| ligamento | 97 | 95 | 1 | 1 | 97 |
+| osso | 8 | 8 | 0 | 0 | 8 |
+| arteria | 53 | 52 | 0 | 1 | 53 |
+| veia | 10 | 10 | 0 | 0 | 10 |
+| fascia | 9 | 9 | 0 | 0 | 9 |
+| orgao | 62 | 62 | 0 | 0 | 62 |
+| encefalo | 25 | 25 | 0 | 0 | 25 |
+| linfatico | 12 | 12 | 0 | 0 | 12 |
+| dente | 2 | 2 | 0 | 0 | 2 |
 
 ## Por região
 
 | Região | Músculos | Nervos | Ligamentos | Artérias |
 |---|---|---|---|---|
-| coluna | 30 | 8 | 0 | 0 |
-| ombro | 15 | 11 | 17 | 10 |
+| coluna | 35 | 9 | 2 | 0 |
+| ombro | 15 | 16 | 17 | 10 |
 | braco | 4 | 8 | 0 | 5 |
 | cotovelo | 0 | 0 | 6 | 0 |
 | antebraco | 20 | 6 | 1 | 4 |
-| punho-mao | 10 | 7 | 18 | 2 |
-| pelve-quadril | 12 | 14 | 7 | 8 |
-| coxa | 14 | 0 | 0 | 2 |
+| punho-mao | 10 | 8 | 20 | 3 |
+| pelve-quadril | 13 | 14 | 10 | 8 |
+| coxa | 14 | 0 | 0 | 3 |
 | joelho | 1 | 0 | 14 | 2 |
 | perna | 13 | 7 | 1 | 3 |
-| tornozelo-pe | 12 | 2 | 20 | 2 |
+| tornozelo-pe | 12 | 2 | 21 | 2 |
+| cabeca-pescoco | 43 | 21 | 3 | 3 |
+| torax | 5 | 0 | 2 | 4 |
+| abdome | 5 | 0 | 0 | 4 |
+| pelve-perineo | 3 | 0 | 0 | 1 |
+| sistema-nervoso-central | 0 | 0 | 0 | 1 |
+| corpo-inteiro | 0 | 1 | 0 | 0 |
 
 ## Campos preenchidos (músculos)
 
 | Campo | Músculos |
 |---|---|
-| origem | 128 de 131 |
-| inserção | 129 de 131 |
-| inervação | 130 de 131 |
-| ação | 129 de 131 |
-| importância ortopédica | 89 de 131 |
-| relações | 14 de 131 |
-| marco 3D da origem | 79 de 131 |
-| marco 3D da inserção | 56 de 131 |
-| origem marcada no modelo (marco ou osso) | 112 de 131 |
-| inserção marcada no modelo (marco ou osso) | 112 de 131 |
+| origem | 188 de 193 |
+| inserção | 189 de 193 |
+| inervação | 180 de 193 |
+| ação | 188 de 193 |
+| importância ortopédica | 93 de 193 |
+| relações | 18 de 193 |
+| marco 3D da origem | 80 de 193 |
+| marco 3D da inserção | 56 de 193 |
+| origem marcada no modelo (marco ou osso) | 126 de 193 |
+| inserção marcada no modelo (marco ou osso) | 121 de 193 |
 
 ## Pendentes e conflitos
 
@@ -51,11 +64,11 @@ Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 14 lote(s). Não ed
 - **Ligamentos radiossemilunares longo e curto** (pendente): O modelo 3D não separa esses dois ligamentos; o id ligado ('radiate_carpal_ligament', ligamento radiado do carpo) é a melhor aproximação disponível e precisa de conferência visual antes de virar 'verificado'.
 - **Artéria circunflexa anterior do úmero** (conflito): O Netter traz as duas afirmações na mesma tabela: a circunflexa anterior (ramo ascendente) como suprimento primário da cabeça e a posterior como a que supre a maior parte da cabeça. Estudos de perfusão mais recentes dão a maior parte à circunflexa posterior.
 
-## Malhas de músculo ainda sem registro (78)
+## Malhas de músculo ainda sem registro (6)
 
 Músculos da cabeça, face, laringe e faringe ficam fora do foco ortopédico do livro de referência.
 
-`opponens_digiti_minimi_muscle_of_foot`, `ary_epiglottic_part_of_oblique_arytenoid_muscle`, `bucinator`, `coccygeus_muscle`, `common_tendinous_ring`, `corrugator_supercilii`, `deep_part_of_masseter`, `depressor_anguli_oris`, `depressor_labii_inferioris`, `depressor_septi_nasi`, `diaphragm`, `external_abdominal_oblique_muscle`, `external_anal_sphincter`, `external_intercostal_muscles`, `external_part_of_thyro_arytenoid_muscle`, `frontalis_muscle`, `genioglossus_muscle`, `hyoglossus_muscle`, `iliococcygeus_muscle`, `iliopectineal_arch`, `inferior_head_of_lateral_pterygoid_muscle`, `inferior_oblique_muscle`, `inferior_pharyngeal_constrictor`, `inferior_rectus_muscle`, `inferior_tarsus`, `inguinal_ligament`, `innermost_intercostal_muscles`, `intermuscular_gluteal_bursae`, `internal_abdominal_oblique_muscle`, `internal_intercostal_muscles`, `lateral_crico_arytenoid_muscle`, `lateral_rectus_muscle`, `levator_anguli_oris`, `levator_labii_superioris`, `levator_nasolabialis`, `levator_palpebrae_superioris`, `longus_capitis_muscle`, `longus_colli_muscle`, `medial_pterygoid_muscle`, `medial_rectus_muscle`, `mentalis_muscle`, `middle_pharyngeal_constrictor`, `nasalis_muscle`, `oblique_part_of_cricothyroid_muscle`, `occipitalis_muscle`, `orbicularis_oris_muscle`, `orbital_part_of_orbicularis_oculi`, `palatopharyngeus_muscle`, `palpebral_part_of_orbicularis_oculi`, `posterior_crico_arytenoid_muscle`, `procerus_muscle`, `pubo_analis_muscle`, `pubococcygeus_muscle`, `pyramidalis_muscle`, `quadratus_lumborum_muscle`, `rectus_abdominis_muscle`, `rectus_anterior_capitis_muscle`, `rectus_lateralis_capitis_muscle`, `risorius_muscle`, `straight_part_of_cricothyroid_muscle`, `stylopharyngeus_muscle`, `superficial_part_of_masseter`, `superficial_transverse_metacarpal_ligament`, `superficial_transverse_metatarsal_ligament`, `superior_head_of_lateral_pterygoid_muscle`, `superior_oblique_muscle`, `superior_pharyngeal_constrictor`, `superior_rectus_muscle`, `superior_tarsus`, `temporalis_muscle`, `temporoparietalis_muscle`, `thyro_epiglottic_part_of_thyro_arytenoid_muscle`, `transverse_arytenoid_muscle`, `transversus_abdominis_muscle`, `transversus_thoracis_muscle`, `trochlea_of_superior_oblique_muscle`, `zygomaticus_major_muscle`, `zygomaticus_minor_muscle`
+`opponens_digiti_minimi_muscle_of_foot`, `iliopectineal_arch`, `intermuscular_gluteal_bursae`, `superficial_transverse_metacarpal_ligament`, `superficial_transverse_metatarsal_ligament`, `temporoparietalis_muscle`
 
 ## Avisos
 
@@ -68,3 +81,6 @@ Músculos da cabeça, face, laringe e faringe ficam fora do foco ortopédico do 
 - 06-quadril-coxa.json › nervo-do-obturador-interno: sem malha no modelo 3D (só texto)
 - 06-quadril-coxa.json › nervo-do-quadrado-femoral: sem malha no modelo 3D (só texto)
 - 07-perna.json › tendao-do-calcaneo: músculo sem nervo
+- 30-musculos-cabeca-pescoco.json › anel-tendineo-comum: músculo sem nervo
+- 30-musculos-cabeca-pescoco.json › tarsos-das-palpebras: músculo sem nervo
+- 31-musculos-tronco.json › ligamento-inguinal: músculo sem nervo

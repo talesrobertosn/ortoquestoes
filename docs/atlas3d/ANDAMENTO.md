@@ -48,6 +48,17 @@ Estudar, "Atlas 3D · Beta". Código em `src/atlas3d/` (motor, carregador, dados
   `pdftotext -layout` em `OrtoQuestoes-Biblioteca\netter6-texto\netter6.txt` (página = posição no PDF). Tem as tabelas
   de músculos (origem, inserção, inervação, ação, irrigação) e textos por região: fonte das fichas não ortopédicas.
 
+## Fichas de todo o corpo e pelve feminina (11/11/2026)
+- Lotes 30, 31, 40, 50, 51, 60, 70, 80, 90 e 95 em `scripts/atlas3d/anatomia/`: 563 registros, 1.586 malhas com ficha.
+  Fonte principal das partes não ortopédicas: Netter 6ª (tabelas de músculos nas pp. 170–175, 205–206, 273, 365, 438;
+  guia de estudo nas pp. 588–723). A medula usa o Netter ortopédico (pp. 76–77, tratos e síndromes).
+- Pelve feminina: `scripts/atlas3d/blender/exportar_feminino.py` (HuBMAP CCF v1.2, CC BY 4.0) → `modelos/female.glb`,
+  camada `female`/grupo `feminino`; ligar esconde os órgãos masculinos (`SO_MASCULINO` no Motor). A posição é aproximada
+  (encaixe pela pelve + ajuste de 40 mm para trás e 8 mm para cima). Não há vagina nem genitália externa feminina.
+- Sem ficha ainda: as regiões do corpo (só a trilha e o nome), frênulos da cápsula do quadril, cartilagem trirradiada,
+  sínfise sacrococcígea, ligamento transverso inferior da escápula, o oponente do dedo mínimo do pé, o temporoparietal,
+  o arco iliopectíneo e o nervo do quadrado femoral que o modelo põe na camada do encéfalo.
+
 ## Pendências
 - Vasos (artérias e veias) no banco anatômico; músculos do tronco e da cabeça (fora do livro de referência ortopédico).
 - Conflitos e pendências do banco: ver COBERTURA-ANATOMIA.md.

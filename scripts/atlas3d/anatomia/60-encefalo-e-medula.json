@@ -1,0 +1,190 @@
+{
+  "lote": "60-encefalo-e-medula",
+  "fonte": "netter-6",
+  "paginas_lidas": [76, 77, 119, 124, 125, 126, 127, 129, 130, 131, 133, 140, 142, 143, 144, 145, 173, 175, 604, 611, 617, 618, 626, 628, 629, 630],
+  "registros": [
+    {
+      "chave": "substancia-cinzenta-da-medula", "tipo": "encefalo", "nome": "Substância cinzenta da medula espinal", "en": "Grey matter of spinal cord",
+      "ids": ["anterior_horn_of_spinal_cord", "posterior_horn_of_spinal_cord", "nucleus_proprius", "spinal_reticular_process", "intermediolateral_nucleus", "intermediomedial_nucleus", "lateral_intermediate_substance", "central_canal", "nucleus_of_accessory_nerve"], "regiao": "coluna",
+      "localizacao": "Núcleo em forma de H no centro da medula, envolvido pela substância branca; no meio corre o canal central, com liquor.",
+      "partes": "Corno anterior (corpos dos neurônios motores; na medula cervical alta, o núcleo do acessório), corno posterior (sensitivo) e zona intermédia (com a coluna intermediolateral, de onde saem as fibras simpáticas de T1 a L2 e parassimpáticas de S2 a S4).",
+      "clinica": "A medula termina no cone medular, perto de L1; abaixo dele só há raízes (cauda equina).",
+      "ver": ["raizes-dos-nervos-espinais", "cauda-equina", "tratos-corticoespinais"],
+      "fonte": [{ "l": "netter-6", "p": [629, 630] }, { "l": "netter-ao2", "p": [76, 77] }], "status": "verificado"
+    },
+    {
+      "chave": "tratos-corticoespinais", "tipo": "encefalo", "nome": "Tratos corticoespinais", "en": "Corticospinal tracts",
+      "ids": ["lateral_corticospinal_tract", "anterior_corticospinal_tract"], "regiao": "coluna",
+      "funcao": "Vias descendentes motoras do movimento voluntário, até os neurônios motores do corno anterior. O lateral é a via motora principal; o anterior, a menor.",
+      "clinica": "O lateral é lesado na síndrome de Brown-Séquard; o anterior, na síndrome medular anterior.",
+      "ver": ["tratos-espinotalamicos", "colunas-dorsais"],
+      "fonte": [{ "l": "netter-ao2", "p": [76, 77] }], "status": "verificado"
+    },
+    {
+      "chave": "tratos-espinotalamicos", "tipo": "encefalo", "nome": "Tratos espinotalâmicos", "en": "Spinothalamic tracts",
+      "ids": ["lateral_spinothalamic_tract", "anterior_spinothalamic_tract", "spinotectal_tract"], "regiao": "coluna",
+      "funcao": "Vias ascendentes do funículo anterolateral: o lateral leva dor e temperatura; o anterior, o tato. O espinotectal segue com eles até o teto do mesencéfalo.",
+      "clinica": "O lateral é lesado na síndrome de Brown-Séquard; o anterior, na síndrome medular anterior.",
+      "fonte": [{ "l": "netter-ao2", "p": [76, 77] }], "status": "verificado"
+    },
+    {
+      "chave": "colunas-dorsais", "tipo": "encefalo", "nome": "Colunas dorsais (fascículos grácil e cuneiforme)", "en": "Dorsal columns",
+      "ids": ["gracile_fasciculus", "cuneate_fasciculus", "posterior_fasciculus_proprius"], "regiao": "coluna",
+      "funcao": "Vias ascendentes da propriocepção e da sensibilidade vibratória.",
+      "clinica": "Costumam ser preservadas, mas são lesadas na síndrome medular posterior.",
+      "fonte": [{ "l": "netter-ao2", "p": [76, 77] }], "status": "verificado"
+    },
+    {
+      "chave": "outros-tratos-da-medula", "tipo": "encefalo", "nome": "Substância branca da medula espinal (demais tratos)", "en": "White matter of spinal cord",
+      "ids": ["white_matter_of_spinal_cord", "anterior_spinocerebellar_tract", "posterior_spinocerebellar_tract", "rubrospinal_tract", "lateral_reticulospinal_tract", "medial_reticulospinal_tract", "lateral_vestibulospinal_tract", "medial_vestibulospinal_tract", "tectospinal_tract", "anterior_fasciculus_proprius", "lateral_fasciculus_proprius", "posterolateral_tract"], "regiao": "coluna",
+      "localizacao": "A substância branca envolve o H de substância cinzenta e é dividida em funículos anterior, lateral e posterior, formados por tratos ascendentes (sensitivos) e descendentes (motores).",
+      "partes": "Além das vias principais (corticoespinais, espinotalâmicas e colunas dorsais), o modelo mostra os tratos espinocerebelares, rubroespinal, reticuloespinais, vestibuloespinais e tectoespinal, os fascículos próprios e o trato posterolateral.",
+      "ver": ["tratos-corticoespinais", "tratos-espinotalamicos", "colunas-dorsais"],
+      "fonte": [{ "l": "netter-6", "p": [629] }, { "l": "netter-ao2", "p": [76] }], "status": "verificado"
+    },
+    {
+      "chave": "raizes-dos-nervos-espinais", "tipo": "encefalo", "nome": "Raízes anterior e posterior dos nervos espinais", "en": "Roots of spinal nerve",
+      "ids": ["anterior_root_of_spinal_nerve", "posterior_root_of_spinal_nerve"], "regiao": "coluna",
+      "funcao": "A raiz anterior é motora (corpos celulares no corno anterior); a posterior é sensitiva (corpos celulares no gânglio da raiz posterior). Juntas formam o nervo espinal, que sai pelo forame intervertebral e logo se divide em ramos anterior e posterior.",
+      "partes": "31 pares: 8 cervicais, 12 torácicos, 5 lombares, 5 sacrais e 1 coccígeo. C1 a C7 saem acima da vértebra de mesmo número; C8 sai abaixo de C7; de T1 para baixo, abaixo da vértebra correspondente.",
+      "clinica": "A hérnia de disco (95% em L4–L5 ou L5–S1, quase sempre posterolateral) comprime a raiz de baixo e dá dor no dermátomo dela. Osteófitos e o ligamento amarelo hipertrofiado também comprimem as raízes.",
+      "ver": ["ganglio-espinal", "cauda-equina"],
+      "fonte": [{ "l": "netter-6", "p": [629, 630] }, { "l": "netter-ao2", "p": [77] }], "status": "verificado"
+    },
+    {
+      "chave": "cauda-equina", "tipo": "encefalo", "nome": "Cauda equina", "en": "Cauda equina",
+      "ids": ["cauda_equina"], "regiao": "coluna",
+      "localizacao": "Raízes lombares e sacrais abaixo do cone medular (no adulto, perto do disco L1–L2), descendo oblíquas no saco dural, que vai até S2.",
+      "clinica": "Pode ser comprimida no deslizamento de L5 sobre S1 (espondilolistese) e no estreitamento do canal (estenose lombar).",
+      "ver": ["raizes-dos-nervos-espinais", "dura-mater-espinal"],
+      "fonte": [{ "l": "netter-6", "p": [626, 628, 629, 630] }, { "l": "netter-ao2", "p": [76] }], "status": "verificado"
+    },
+    {
+      "chave": "dura-mater-espinal", "tipo": "encefalo", "nome": "Dura-máter espinal", "en": "Spinal dura",
+      "ids": ["spinal_dura"], "regiao": "coluna",
+      "localizacao": "Bainha fibroelástica resistente, contínua com a camada meníngea da dura craniana; presa à margem do forame magno e ao ligamento longitudinal posterior; separada do periósteo pelo espaço epidural. Forma um saco até S2.",
+      "clinica": "Na anestesia peridural o anestésico vai ao espaço epidural (efeito em até 20 minutos); na raquianestesia, ao liquor do espaço subaracnóideo (efeito em menos de 1 minuto).",
+      "fonte": [{ "l": "netter-6", "p": [626, 629, 631] }], "status": "verificado"
+    },
+    {
+      "chave": "lobo-frontal", "tipo": "encefalo", "nome": "Lobo frontal", "en": "Frontal lobe",
+      "ids": ["superior_frontal_gyrus", "middle_frontal_gyrus", "superior_frontal_sulcus", "inferior_frontal_sulcus", "opercular_part_of_inferior_frontal_gyrus", "triangular_part_of_inferior_frontal_gyrus", "orbital_part_of_inferior_frontal_gyrus", "precentral_gyrus", "precentral_sulcus_superior_part", "precentral_sulcus_inferior_part", "paracentral_gyrus_and_sulcus", "paracentral_sulcus", "orbital_gyri", "orbital_gyri_frontomarginal_gyrus_and_sulcus", "orbital_sulci_h_shaped_orbital_sulci", "orbital_sulci_lateral_orbital_sulcus", "olfactory_sulcus", "straight_gyrus_gyrus_rectus", "transverse_frontopolar_gyrus_and_sulcus", "lat_fis_ant_horizont", "lat_fis_ant_vertical"], "regiao": "sistema-nervoso-central",
+      "localizacao": "Parte anterior do hemisfério, à frente do sulco central, na fossa anterior do crânio.",
+      "funcao": "Funções mentais superiores; contém os centros da fala e da linguagem.",
+      "partes": "Giros frontais superior, médio e inferior (partes opercular, triangular e orbital), giro pré-central, lóbulo paracentral e giros orbitais na face inferior.",
+      "fonte": [{ "l": "netter-6", "p": [124, 125, 126, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "lobo-parietal", "tipo": "encefalo", "nome": "Lobo parietal", "en": "Parietal lobe",
+      "ids": ["postcentral_gyrus", "postcentral_sulcus", "superior_parietal_lobule", "intraparietal_sulcus", "supramarginal_gyrus", "angular_gyrus", "precuneus"], "regiao": "sistema-nervoso-central",
+      "localizacao": "Atrás do sulco central e acima do sulco lateral.",
+      "funcao": "Inicia o movimento e participa da percepção.",
+      "partes": "Giro pós-central, lóbulos parietais superior e inferior (giros supramarginal e angular) e pré-cúneo na face medial.",
+      "fonte": [{ "l": "netter-6", "p": [124, 125, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "lobo-occipital", "tipo": "encefalo", "nome": "Lobo occipital", "en": "Occipital lobe",
+      "ids": ["occipital_pole", "cuneus", "lingual_gyrus", "calcarine_sulcus", "superior_occipital_gyri", "lateral_occipital_gyrus_middle_occipital_gyrus", "inferior_occipital_gyrus_and_sulcus", "lunate_sulcus", "transverse_occipital_sulcus"], "regiao": "sistema-nervoso-central",
+      "localizacao": "Parte posterior do hemisfério, atrás do sulco parieto-occipital.",
+      "funcao": "Contém o córtex visual, em volta do sulco calcarino.",
+      "fonte": [{ "l": "netter-6", "p": [124, 125, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "lobo-temporal", "tipo": "encefalo", "nome": "Lobo temporal", "en": "Temporal lobe",
+      "ids": ["temporal_pole", "superior_temporal_gyrus_lateral_part", "superior_temporal_sulcus", "middle_temporal_gyrus", "inferior_temporal_sulcus", "inferior_temporal_gyrus", "transverse_temporal_gyri", "temporal_plane", "lateral_occipitotemporal_gyrus", "medial_occipitotemporal_gyrus_parahippocampal", "occipitotemporal_sulcus_lateral_part"], "regiao": "sistema-nervoso-central",
+      "localizacao": "Abaixo do sulco lateral, na fossa média do crânio.",
+      "funcao": "Memória, audição e fala.",
+      "fonte": [{ "l": "netter-6", "p": [124, 126, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "insula", "tipo": "encefalo", "nome": "Ínsula", "en": "Insula",
+      "ids": ["insula_subcentral_gyrus_and_ant_and_post_sulci"], "regiao": "sistema-nervoso-central",
+      "localizacao": "Lobo escondido no fundo do sulco lateral, coberto pelos opérculos frontal, parietal e temporal e contornado pelo sulco circular.",
+      "fonte": [{ "l": "netter-6", "p": [124] }], "status": "verificado"
+    },
+    {
+      "chave": "lobo-limbico", "tipo": "encefalo", "nome": "Giro do cíngulo e hipocampo", "en": "Cingulate gyrus and hippocampus",
+      "ids": ["cingulate_gyrus_posteroventral_part", "cingulate_gyrus_and_sulcus_middle_anterior_part", "cingulate_gyrus_and_sulcus_middle_posterior_part", "cingulate_gyrus_and_sulcus_posterior_dorsal_part", "cingulate_sulcus_marginal_part", "hippocampus", "amygdaloid_body", "septal_nuclei"], "regiao": "sistema-nervoso-central",
+      "localizacao": "Face medial do hemisfério: o giro do cíngulo contorna o corpo caloso; o hipocampo fica no assoalho do corno temporal do ventrículo lateral e continua no fórnice; o corpo amigdaloide fica à frente dele, no lobo temporal.",
+      "ver": ["comissuras-e-fornice"],
+      "fonte": [{ "l": "netter-6", "p": [125, 131] }], "status": "verificado"
+    },
+    {
+      "chave": "sulcos-interlobares", "tipo": "encefalo", "nome": "Sulcos que separam os lobos", "en": "Interlobar sulci",
+      "ids": ["central_sulcus", "parieto_occipital_sulcus", "lat_fis_post", "circular_sulcus_of_insula", "collateral_sulcus", "subparietal_sulcus", "anterior_occipital_sulcus", "sulcus_interm_prim_jensen", "posterior_transverse_collateral_sulcus"], "regiao": "sistema-nervoso-central",
+      "partes": "Sulco central (entre o frontal e o parietal), sulco lateral (acima do temporal), parieto-occipital (entre o parietal e o occipital, na face medial), sulco circular (contorno da ínsula) e sulco colateral (na face inferior).",
+      "funcao": "Cada lobo é marcado por dobras (giros) e sulcos.",
+      "fonte": [{ "l": "netter-6", "p": [124, 125, 126, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "comissuras-e-fornice", "tipo": "encefalo", "nome": "Corpo caloso, comissuras e fórnice", "en": "Commissures and fornix",
+      "ids": ["corpus_callosum", "anterior_commissure", "posterior_commissure", "hippocampal_commissure", "fornix", "stria_terminalis", "stria_medullaris_thalami", "white_matter_of_telencephalon"], "regiao": "sistema-nervoso-central",
+      "funcao": "O corpo caloso é o grande feixe transversal, no fundo da fissura longitudinal, que une os dois hemisférios; as comissuras anterior, posterior e do hipocampo também cruzam a linha média. O fórnice leva as fibras do hipocampo aos corpos mamilares.",
+      "fonte": [{ "l": "netter-6", "p": [125, 131, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "nucleos-da-base", "tipo": "encefalo", "nome": "Núcleos da base", "en": "Basal nuclei",
+      "ids": ["caudate_nucleus", "putamen", "globus_pallidus", "lentiform_nucleus"], "regiao": "sistema-nervoso-central",
+      "partes": "Núcleo caudado (acompanha a parede do ventrículo lateral) e núcleo lentiforme, formado pelo putame (lateral) e pelo globo pálido (medial); caudado e putame formam o estriado.",
+      "fonte": [{ "l": "netter-6", "p": [129] }], "status": "verificado"
+    },
+    {
+      "chave": "diencefalo", "tipo": "encefalo", "nome": "Diencéfalo", "en": "Diencephalon",
+      "ids": ["thalamus", "hypothalamus", "habenula", "mamillary_body", "lateral_geniculate_body", "medial_geniculate_body", "optic_chiasm", "optic_tract"], "regiao": "sistema-nervoso-central",
+      "localizacao": "Entre as duas metades do cérebro, em volta do terceiro ventrículo.",
+      "partes": "Epitálamo (habênula e pineal), tálamo (com os corpos geniculados lateral, visual, e medial, auditivo) e hipotálamo (com os corpos mamilares e o quiasma óptico na base).",
+      "fonte": [{ "l": "netter-6", "p": [125, 126, 127, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "tronco-encefalico", "tipo": "encefalo", "nome": "Tronco encefálico", "en": "Brainstem",
+      "ids": ["midbrain", "base_of_peduncle", "interpeduncular_fossa", "superior_colliculus", "inferior_colliculus", "red_nucleus", "pons", "medulla_oblongata", "olive", "pyramid_of_medulla_oblongata"], "regiao": "sistema-nervoso-central",
+      "partes": "Mesencéfalo (na junção das fossas média e posterior, com o aqueduto, os pedúnculos e os colículos), ponte (na parte anterior da fossa posterior) e bulbo (continua com a medula espinal; tem as pirâmides e as olivas).",
+      "funcao": "Contém massas de substância cinzenta que são os núcleos sensitivos e motores dos nervos cranianos.",
+      "ver": ["nucleos-dos-nervos-cranianos", "cerebelo"],
+      "fonte": [{ "l": "netter-6", "p": [125, 126, 133, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "nucleos-dos-nervos-cranianos", "tipo": "encefalo", "nome": "Núcleos dos nervos cranianos", "en": "Cranial nerve nuclei",
+      "ids": ["nucleus_of_oculomotor_nerve", "accessory_nucleus_of_oculomotor_nerve", "nucleus_of_abducens_nerve", "motor_nucleus_of_facial_nerve", "superior_salivatory_nucleus", "inferior_salivatory_nucleus", "vestibular_nuclei", "anterior_cochlear_nucleus", "nucleus_ambiguus", "nucleus_of_solitary_tract"], "regiao": "sistema-nervoso-central",
+      "partes": "Mesencéfalo: núcleo do oculomotor e o acessório (Edinger-Westphal, parassimpático). Ponte: abducente, motor do facial, salivatório superior, vestibulares e cocleares. Bulbo: salivatório inferior (glossofaríngeo), ambíguo (motor da faringe e da laringe) e do trato solitário (aferências viscerais e paladar).",
+      "ver": ["oculomotor", "facial", "vago"],
+      "fonte": [{ "l": "netter-6", "p": [140, 142, 143, 144, 145] }], "status": "verificado"
+    },
+    {
+      "chave": "cerebelo", "tipo": "encefalo", "nome": "Cerebelo", "en": "Cerebellum",
+      "ids": ["anterior_quadrangular_lobule", "posterior_quadrangular_lobule", "superior_semilunar_lobule", "inferior_semilunar_lobule", "gracile_lobule", "biventral_lobule", "tonsil_of_cerebellum", "flocculus", "peduncle_of_flocculus", "central_lobule", "wing_of_central_lobule", "lingula_of_cerebellum", "culmen", "declive", "folium_of_vermis", "tuber_of_vermis", "pyramis_of_vermis", "uvula_of_vermis", "nodule_of_vermis", "superior_cerebellar_peduncle"], "regiao": "sistema-nervoso-central",
+      "localizacao": "Atrás da ponte e do bulbo, sob a parte posterior do cérebro, na fossa posterior do crânio.",
+      "partes": "Dois hemisférios ligados pelo verme na linha média; ligado ao tronco pelos pedúnculos cerebelares.",
+      "funcao": "Equilíbrio, postura e coordenação; ajusta o momento e a força da contração muscular.",
+      "fonte": [{ "l": "netter-6", "p": [130, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "sistema-ventricular", "tipo": "encefalo", "nome": "Ventrículos e plexo corioide", "en": "Ventricular system",
+      "ids": ["lateral_ventricle", "third_ventricle", "fourth_ventricle", "aqueduct_of_midbrain", "septum_pellucidum", "choroid_plexus"], "regiao": "sistema-nervoso-central",
+      "partes": "Um ventrículo lateral em cada hemisfério (separados pelo septo pelúcido), terceiro ventrículo no diencéfalo, aqueduto do mesencéfalo e quarto ventrículo entre a ponte, o bulbo e o cerebelo. O plexo corioide produz o liquor.",
+      "fonte": [{ "l": "netter-6", "p": [127, 617] }], "status": "verificado"
+    },
+    {
+      "chave": "dura-mater-craniana", "tipo": "encefalo", "nome": "Foice do cérebro e tenda do cerebelo", "en": "Falx cerebri and tentorium cerebelli",
+      "ids": ["falx_cerebri", "tentorium_cerebelli"], "regiao": "sistema-nervoso-central",
+      "localizacao": "Pregas da camada meníngea da dura craniana: a foice desce entre os hemisférios na fissura longitudinal; a tenda separa o cérebro do cerebelo.",
+      "partes": "A dura craniana tem duas camadas (periosteal e meníngea), ao contrário da espinal; abaixo dela ficam a aracnoide e a pia-máter.",
+      "fonte": [{ "l": "netter-6", "p": [119, 618] }], "status": "verificado"
+    },
+    {
+      "chave": "meios-do-olho", "tipo": "encefalo", "nome": "Córnea, esclera, lente e corpo vítreo", "en": "Cornea, sclera, lens and vitreous body",
+      "ids": ["cornea", "sclera", "lens", "vitreous_body", "zonular_fibres"], "regiao": "cabeca-pescoco",
+      "partes": "Túnica fibrosa: esclera (opaca) e córnea (transparente). Por dentro, a lente, presa ao corpo ciliar pelas fibras zonulares, e o corpo vítreo, atrás dela.",
+      "funcao": "O músculo ciliar contrai e arredonda a lente para perto (acomodação); relaxado, ela se achata para longe.",
+      "ver": ["bulbo-do-olho"],
+      "fonte": [{ "l": "netter-6", "p": [170, 611] }], "status": "verificado"
+    },
+    {
+      "chave": "tuba-auditiva", "tipo": "encefalo", "nome": "Tuba auditiva", "en": "Auditory tube",
+      "ids": ["auditory_tube"], "regiao": "cabeca-pescoco",
+      "localizacao": "Liga a orelha média à nasofaringe, onde a tonsila tubária fica junto da sua abertura.",
+      "funcao": "Iguala a pressão da orelha média; o tensor do véu palatino a abre ao engolir e bocejar.",
+      "fonte": [{ "l": "netter-6", "p": [173, 175, 604] }], "status": "verificado"
+    }
+  ]
+}

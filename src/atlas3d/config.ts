@@ -28,6 +28,8 @@ export const GRUPOS: Record<Grupo, DefGrupo> = {
   orgao: { rotulo: 'Órgãos', camada: 'organ', cor: 0xb97a5c, opacidade: 1, deslocamento: -0.8, secundario: true },
   encefalo: { rotulo: 'Encéfalo', camada: 'brain', cor: 0xd5a2a8, opacidade: 1, deslocamento: -0.7, secundario: true },
   dente: { rotulo: 'Dentes', camada: 'tooth', cor: 0xf0ead6, opacidade: 1, deslocamento: -1.1, secundario: true },
+  // útero, colo, ovários e tubas (HuBMAP) encaixados na pelve do modelo; ligar esconde os órgãos masculinos
+  feminino: { rotulo: 'Pelve feminina', camada: 'female', cor: 0xc9727e, opacidade: 1, deslocamento: -0.8, secundario: true },
   // superfície do corpo dividida em regiões topográficas: translúcida por cima de tudo
   regiao: { rotulo: 'Regiões do corpo', camada: 'region', cor: 0xd9a98c, opacidade: 0.35, deslocamento: -0.5, secundario: true },
 }
@@ -47,6 +49,7 @@ export function grupoDe(e: Estrutura): Grupo {
     case 'brain': return 'encefalo'
     case 'tooth': return 'dente'
     case 'region': return 'regiao'
+    case 'female': return 'feminino'
   }
 }
 

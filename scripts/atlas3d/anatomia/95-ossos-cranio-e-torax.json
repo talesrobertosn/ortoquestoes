@@ -1,0 +1,68 @@
+{
+  "lote": "95-ossos-cranio-e-torax",
+  "fonte": "netter-6",
+  "paginas_lidas": [588, 589, 590, 591, 595, 635, 637],
+  "registros": [
+    {
+      "chave": "neurocranio", "tipo": "osso", "nome": "Ossos do neurocrânio", "en": "Bones of neurocranium",
+      "ids": ["frontal_bone", "parietal_bone", "occipital_bone", "temporal_bone", "sphenoid_bone", "ethmoid_bone"], "regiao": "cabeca-pescoco",
+      "localizacao": "Oito ossos (frontal, dois parietais, occipital, dois temporais, esfenoide e etmoide) formam a calvária e a base do crânio, unidos por suturas: coronal (frontal/parietais), sagital (entre os parietais), lambdóidea (parietais e temporais/occipital) e escamosa (temporal/parietal).",
+      "partes": "Base com três fossas: anterior (lobos frontais), média (lobos temporais, hipotálamo e hipófise na sela turca do esfenoide) e posterior (cerebelo, ponte e bulbo). O forame magno, no occipital, dá passagem à medula; o forame jugular, ao seio sigmoide e aos nervos IX, X e XI; o meato acústico interno, ao VII e ao VIII.",
+      "funcao": "Envolve, sustenta e protege o encéfalo e as meninges.",
+      "fonte": [{ "l": "netter-6", "p": [588, 589] }], "status": "verificado"
+    },
+    {
+      "chave": "seios-paranasais", "tipo": "osso", "nome": "Seios paranasais (frontal, esfenoidal e células etmoidais)", "en": "Paranasal sinuses",
+      "ids": ["sinus_of_frontal_bone", "sinus_of_sphenoid_bone", "anterior_cells_of_ethmoid_bone", "middle_cells_of_ethmoid_bone", "posterior_cells_of_ethmoid_bone"], "regiao": "cabeca-pescoco",
+      "localizacao": "Cavidades com ar dentro do frontal, do esfenoide e do etmoide, abertas na cavidade nasal. As células etmoidais ficam na parede medial da órbita.",
+      "clinica": "Fraturas da parede medial da órbita podem atingir as células etmoidais e o seio esfenoidal.",
+      "fonte": [{ "l": "netter-6", "p": [589, 614] }], "status": "verificado"
+    },
+    {
+      "chave": "ossos-da-face", "tipo": "osso", "nome": "Ossos da face", "en": "Facial bones",
+      "ids": ["maxilla", "zygomatic_bone", "nasal_bone", "lacrimal_bone", "palatine_bone", "inferior_nasal_concha_bone", "vomer"], "regiao": "cabeca-pescoco",
+      "localizacao": "O viscerocrânio tem 14 ossos que envolvem as órbitas, o nariz, os seios, a boca e a faringe; as maxilas formam a arcada superior e alojam os dentes de cima.",
+      "clinica": "O arco zigomático, que faz a saliência da bochecha, fratura com frequência no trauma da face. Nas fraturas de Le Fort, a maxila e o zigomático se separam do crânio, com risco para a via aérea, obstrução do aparelho nasolacrimal e fístula liquórica.",
+      "fonte": [{ "l": "netter-6", "p": [588, 589, 591] }], "status": "verificado"
+    },
+    {
+      "chave": "mandibula", "tipo": "osso", "nome": "Mandíbula", "en": "Mandible",
+      "ids": ["mandible"], "regiao": "cabeca-pescoco",
+      "localizacao": "Osso ímpar da arcada inferior, o maior e mais forte da face; articula-se com o temporal na articulação temporomandibular.",
+      "partes": "Corpo (base e parte alveolar, com a protuberância e a espinha mentual e o forame mentual abaixo do 2º pré-molar) e ramos, que terminam nos processos coronoide (inserção do temporal) e condilar. Na face interna, o forame da mandíbula e o sulco milo-hióideo.",
+      "ver": ["articulacao-temporomandibular", "alveolar-inferior", "mentual"],
+      "fonte": [{ "l": "netter-6", "p": [589, 590] }], "status": "verificado"
+    },
+    {
+      "chave": "ossiculos-da-audicao", "tipo": "osso", "nome": "Ossículos da audição", "en": "Auditory ossicles",
+      "ids": ["malleus", "incus", "stapes"], "regiao": "cabeca-pescoco",
+      "localizacao": "Martelo, bigorna e estribo atravessam a cavidade timpânica, da membrana do tímpano à janela do vestíbulo. São os primeiros ossos a se ossificar por completo.",
+      "funcao": "Transmitem a vibração do tímpano à orelha interna. O tensor do tímpano se prende ao martelo e o estapédio, ao estribo.",
+      "fonte": [{ "l": "netter-6", "p": [174, 175, 589] }], "status": "verificado"
+    },
+    {
+      "chave": "osso-hioide", "tipo": "osso", "nome": "Osso hioide", "en": "Hyoid bone",
+      "ids": ["hyoid_bone"], "regiao": "cabeca-pescoco",
+      "localizacao": "No pescoço, acima da laringe; um dos ossos onde se prendem os músculos do pescoço.",
+      "funcao": "Ponto fixo dos músculos supra-hióideos (digástrico, milo-hióideo, gênio-hióideo, estilo-hióideo) e infra-hióideos, e da língua.",
+      "ver": ["hioglosso"],
+      "fonte": [{ "l": "netter-6", "p": [170, 171, 172, 595] }], "status": "verificado"
+    },
+    {
+      "chave": "esterno", "tipo": "osso", "nome": "Esterno", "en": "Sternum",
+      "ids": ["manubrium_of_sternum", "body_of_sternum", "xiphoid_process"], "regiao": "torax",
+      "partes": "Manúbrio (a incisura jugular fica na altura da borda inferior de T2), corpo e processo xifoide. O ângulo do esterno, na junção manubriesternal, fica na altura do disco T4–T5 e recebe a 2ª cartilagem costal.",
+      "clinica": "O esterno pode ser dividido para acessar o tórax (esternotomia mediana).",
+      "ver": ["cartilagens-costais", "costelas"],
+      "fonte": [{ "l": "netter-6", "p": [635] }], "status": "verificado"
+    },
+    {
+      "chave": "costelas", "tipo": "osso", "nome": "Costelas", "en": "Ribs",
+      "ids": ["first_rib", "second_rib", "third_rib", "fourth_rib", "fifth_rib", "sixth_rib", "seventh_rib", "eighth_rib", "ninth_rib", "tenth_rib", "eleventh_rib", "twelfth_rib"], "regiao": "torax",
+      "localizacao": "Com as vértebras, o esterno e as cartilagens costais, formam a caixa torácica, que protege o conteúdo do tórax. Contar as costelas (a 2ª no ângulo do esterno) localiza os órgãos internos.",
+      "clinica": "As costelas médias são as que mais fraturam; várias fraturas seguidas podem dar o tórax instável, em que a parte solta se move ao contrário (para dentro na inspiração, para fora na expiração).",
+      "ver": ["esterno", "cartilagens-costais", "articulacoes-costovertebrais"],
+      "fonte": [{ "l": "netter-6", "p": [635] }], "status": "verificado"
+    }
+  ]
+}

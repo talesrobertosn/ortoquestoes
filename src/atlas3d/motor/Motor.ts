@@ -211,6 +211,8 @@ export class Motor {
       if (!m) continue
       const id = reg.estrutura.id
       let vis = this.ligados.has(reg.grupo) && !this.ocultas.has(id) && this.dentroDaRegiao(reg.estrutura)
+      // com a pelve feminina ligada, os órgãos genitais masculinos (e seus vasos) saem de cena
+      if (vis && this.ligados.has('feminino') && SO_MASCULINO.test(id)) vis = false
       let estado: Estado = 'base'
       if (vis && this.isoladas && !this.isoladas.has(id)) {
         if (this.fantasma) estado = 'fantasma'
@@ -605,10 +607,12 @@ export class Motor {
   }
 }
 
+const SO_MASCULINO = /prostate|seminal_gland|ductus_deferens|ejaculatory|testi(s|cular)|epididym|penis/
+
 function arquivoDe(camada: string) {
   const mapa: Record<string, string> = {
     bone: 'bones.glb', muscle: 'muscles.glb', connective: 'connective.glb', fascia: 'fascia.glb', nerve: 'nerves.glb',
-    vessel: 'vessels.glb', lymph: 'lymph.glb', organ: 'organs.glb', brain: 'brain.glb', tooth: 'teeth.glb', region: 'regions.glb',
+    vessel: 'vessels.glb', lymph: 'lymph.glb', organ: 'organs.glb', brain: 'brain.glb', tooth: 'teeth.glb', region: 'regions.glb', female: 'female.glb',
   }
   return mapa[camada]
 }

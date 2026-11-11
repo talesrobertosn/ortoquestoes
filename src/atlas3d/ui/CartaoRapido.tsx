@@ -90,8 +90,10 @@ function linhaDeContexto({ registro: r, indice, vinculo, ficha }: Props): string
     if (r.tipo === 'nervo' && r.raizes) return `Raízes: ${r.raizes}`
     if (r.restringe) return `Restringe: ${r.restringe}`
     if (r.funcao) return r.funcao
-    if (r.irriga) return `Irriga: ${r.irriga}`
+    if (r.irriga && r.tipo === 'arteria') return `Irriga: ${r.irriga}`
     if (r.acao) return r.acao
+    if (r.localizacao) return r.localizacao
+    if (r.inervacao) return `Inervação: ${r.inervacao}`
   }
   if (ficha && vinculo) {
     const a = vinculo.a.length, l = vinculo.l.length

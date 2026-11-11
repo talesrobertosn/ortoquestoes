@@ -29,6 +29,14 @@ Exportados do arquivo completo do Z-Anatomy (`Startup.blend`, CC BY-SA 4.0) por
 - `nomes-ta2.json`: nomes em português da coluna portuguesa do `TA2.csv` do Z-Anatomy (Terminologia Anatômica 2,
   FIPAT), com acabamento de grafia descrito em docs/atlas3d/NOMES.md.
 
+## Pelve feminina (desde 11/11/2026)
+
+`modelos/female.glb` (útero, colo do útero, ovários e tubas uterinas) vem da **Human Reference Atlas** do
+HuBMAP (CCF 3D Reference Object Library v1.2, modelos da Visible Human Female,
+https://github.com/hubmapconsortium/ccf-releases), licença **Creative Commons Atribuição 4.0 (CC BY 4.0)**.
+Os modelos foram encaixados na pelve do modelo do atlas (escala uniforme e translação, por
+`scripts/atlas3d/blender/exportar_feminino.py`); a posição é aproximada.
+
 ## Nomes e dados
 
 - Identificadores e nomes em inglês: catálogos do Anatomy Atlas 3D (código MIT).

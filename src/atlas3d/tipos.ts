@@ -1,7 +1,7 @@
 /** Camadas dos arquivos GLB (uma malha por estrutura, nó = id estável). */
-export type Camada = 'bone' | 'muscle' | 'connective' | 'fascia' | 'nerve' | 'vessel' | 'lymph' | 'organ' | 'brain' | 'tooth' | 'region'
+export type Camada = 'bone' | 'muscle' | 'connective' | 'fascia' | 'nerve' | 'vessel' | 'lymph' | 'organ' | 'brain' | 'tooth' | 'region' | 'female'
 /** Camadas que a pessoa liga e desliga. Os vasos se dividem em artérias e veias pelo nome. */
-export type Grupo = 'osso' | 'musculo' | 'ligamento' | 'fascia' | 'nervo' | 'arteria' | 'veia' | 'linfatico' | 'orgao' | 'encefalo' | 'dente' | 'regiao'
+export type Grupo = 'osso' | 'musculo' | 'ligamento' | 'fascia' | 'nervo' | 'arteria' | 'veia' | 'linfatico' | 'orgao' | 'encefalo' | 'dente' | 'regiao' | 'feminino'
 export type Lado = 'e' | 'd' | 'm'
 
 /** Uma estrutura do catálogo (public/atlas3d/v1/estruturas.json). */
