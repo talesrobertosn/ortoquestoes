@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useMemo, useState, type ReactNode } from 'react'
 import { taxaPixSugerida } from '../../componentes/admin/financeiro'
 import { baixarCsv, porcentagem } from '../../componentes/admin/formatos'
 import { calcularGanhos } from '../../componentes/admin/ganhos'
@@ -18,6 +18,7 @@ import { Tabela } from '../ui/tabela'
 import { Composicao, Torres, Variacao, type PontoTorre } from '../ui/torres'
 import { Calendario } from './calendario'
 import { FaixaMetas } from './metasResumo'
+import { usarTaxaPix } from './taxaPix'
 import './hub.css'
 
 /**
@@ -82,14 +83,6 @@ export const CENARIOS: Array<{ taxa: number; nome: string }> = [
   { taxa: 0.3, nome: 'Pessimista' }, { taxa: 0.5, nome: 'Metade' }, { taxa: 0.6, nome: '60%' }, { taxa: 0.7, nome: '70%' },
   { taxa: 0.8, nome: '80%' }, { taxa: 0.9, nome: '90%' }, { taxa: 1, nome: 'Todos' },
 ]
-
-const CHAVE_TAXA = 'oq-admin-taxa-pix'
-/** A taxa escolhida na página (guardada no navegador; some quando volta para a sugerida). */
-export function usarTaxaPix(sugerida: number) {
-  const [escolhida, definir] = useState<number | null>(() => { try { const v = Number(localStorage.getItem(CHAVE_TAXA)); return v > 0 && v <= 1 ? v : null } catch { return null } })
-  useEffect(() => { try { if (escolhida === null) localStorage.removeItem(CHAVE_TAXA); else localStorage.setItem(CHAVE_TAXA, String(escolhida)) } catch { /* sem armazenamento */ } }, [escolhida])
-  return { taxa: escolhida ?? sugerida, escolhida, escolher: (t: number | null) => definir(t === null || Math.abs(t - sugerida) < 0.001 ? null : Math.round(t * 100) / 100) }
-}
 
 function Financeiro({ assinaturas }: { assinaturas: LinhaAssinatura[] }) {
   const p = usarPainel()

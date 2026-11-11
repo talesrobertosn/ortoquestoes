@@ -37,7 +37,6 @@ const MIGRACAO = '202609290100_painel_admin.sql'
 const COM_USUARIOS: Parte[] = ['comando', 'agora', 'pendencias', 'usuarios', 'financeiro', 'crescimento', 'metas', 'cartas', 'assinaturas', 'cobrancas', 'pagamentos']
 const COM_COBRANCAS: Parte[] = ['comando', 'agora', 'financeiro', 'metas', 'cobrancas', 'crescimento', 'assinaturas']
 /** Intervalo da lista de pessoas nas telas ao vivo. */
-const TRES_MIN = 180_000
 const AO_VIVO: Parte[] = ['comando', 'agora', 'usuarios']
 
 export interface DadosPainel {
@@ -97,13 +96,14 @@ export function ProvedorPainel({ parte, children }: { parte: Parte; children: Re
   const contadoresQ = usarContadoresAdmin(conta)
   const semContadores = !!contadoresQ.erro || !!contadoresQ.dados?.derivado
   const usuariosQ = usarRpc<LinhaUsuario[]>(conta, 'listar_usuarios_admin', {}, {
-    // A linha das pessoas (quem está online, questões de hoje) se atualiza a cada 3 minutos (Tales, 02/11/2026);
-    // o resto, a cada 5. "Online" continua sendo sinal nos últimos 5 minutos. O botão Atualizar busca na hora.
-    ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: AO_VIVO.includes(parte) ? TRES_MIN : undefined, validadeMs: TRES_MIN, prazoMs: 20_000,
+    // Tudo a cada 5 minutos (Tales, 11/11/2026: "atualização sempre a cada 5 minutos, sem sobrecarregar o Supabase").
+    // A lista de pessoas é a leitura mais pesada do painel. "Online" é refeito a cada 10 s pelo último sinal, sem
+    // ir ao banco, e o botão Atualizar busca na hora.
+    ativo: COM_USUARIOS.includes(parte) || semContadores, atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined, validadeMs: CINCO_MIN, prazoMs: 20_000,
   })
   const cobrancasQ = usarRpc<CobrancaReal[]>(conta, 'cobrancas_admin', {}, { ativo: COM_COBRANCAS.includes(parte) })
   const sinaisQ = usarRpc<SinalUsuario[]>(conta, 'sinais_usuarios_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
-  const indicacoesQ = usarRpc<VisitaIndicacao[]>(conta, 'visitas_indicacao_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? 60_000 : undefined })
+  const indicacoesQ = usarRpc<VisitaIndicacao[]>(conta, 'visitas_indicacao_admin', {}, { ativo: COM_USUARIOS.includes(parte), atualizarCada: AO_VIVO.includes(parte) ? CINCO_MIN : undefined })
   const lidosPagamento = usarLidos('pagamento')
   // Cortesias valendo (parte 37): no painel contam como assinantes, com o selo "Cortesia" (Tales, 02/11/2026).
   // Sem a parte colada, a consulta falha e ninguém vira cortesia (o painel segue como antes). Com a parte 40 a lista

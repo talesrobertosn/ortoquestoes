@@ -6,6 +6,7 @@ import { usarPainel } from '../dados/painel'
 import { META_OFICIAL, ROTULO_SITUACAO, esperadoAteHoje, metasVigentes, projetarMes, realizadoPorMes, situacao, type LinhaMetaBanco, type MetaMes } from '../dados/metas'
 import { usarNav } from '../nav'
 import { Icone } from '../ui/Icone'
+import { usarTaxaPix } from './taxaPix'
 import { inteiro, reais } from '../ui/formato'
 
 type Chave = 'faturamento' | 'cadastros' | 'novosPagantes' | 'ativosFim' | 'receitaEquivalente'
@@ -21,6 +22,8 @@ export function FaixaMetas({ chaves, titulo = 'Metas do mês' }: { chaves: Chave
   const p = usarPainel()
   const nav = usarNav()
   const metasQ = usarRpc<LinhaMetaBanco[]>(p.conta, 'listar_metas_comerciais_admin')
+  const sugerida = useMemo(() => p.reais ? taxaPixSugerida(p.reais).taxa : 0.8, [p.reais])
+  const { taxa } = usarTaxaPix(sugerida)
   const d = useMemo(() => {
     if (!p.reais || !p.usuariosReais) return null
     const atual = MES(new Date())
@@ -30,9 +33,9 @@ export function FaixaMetas({ chaves, titulo = 'Metas do mês' }: { chaves: Chave
     const todas = cobrancasDe(p.reais, p.cobrancas)
     const cadastros = p.usuariosReais.map(u => new Date(u.criado_em)).filter(x => Number.isFinite(x.getTime()))
     const [real] = realizadoPorMes([atual], cadastros, todas, new Map())
-    const proj = projetarMes({ cadastros, cobrancas: todas, assinaturas: p.reais, taxaPix: taxaPixSugerida(p.reais).taxa, meta })
+    const proj = projetarMes({ cadastros, cobrancas: todas, assinaturas: p.reais, taxaPix: taxa, meta })
     return { meta, real, proj }
-  }, [p.reais, p.usuariosReais, p.cobrancas, metasQ.dados])
+  }, [p.reais, p.usuariosReais, p.cobrancas, metasQ.dados, taxa])
   if (!d) return null
   const { meta, real, proj } = d
   return <a className="mt-faixa" href={nav.link('metas')} onClick={e => { e.preventDefault(); nav.ir('metas') }} aria-label={`${titulo}: abrir Metas`}>

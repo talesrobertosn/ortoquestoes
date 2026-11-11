@@ -14,7 +14,7 @@ import { Linhas } from '../ui/linhas'
 import { Carregando, Estado, Segmento, Faixa as FaixaAviso } from '../ui/kit'
 import { avisoRapido } from '../ui/sobreposicoes'
 import { Torres, type PontoTorre } from '../ui/torres'
-import { usarTaxaPix } from './Receita'
+import { usarTaxaPix } from './taxaPix'
 import { SemanaTipica } from './semanaTipica'
 import './hub.css'
 
