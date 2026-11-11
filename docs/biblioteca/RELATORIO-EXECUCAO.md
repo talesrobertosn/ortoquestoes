@@ -328,7 +328,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 1015 | Onda 2: 48 miniaulas refeitas com figuras (24 da displasia do desenvolvimento do quadril, fim deste resumo; 24 do pé torto congênito, fim deste resumo), com Tachdjian, Campbell e Lovell and Winter lado a lado |
 | 1016 | Onda 2: 45 miniaulas refeitas com figuras (23 da epifisiólise, fim deste resumo; 11 do hálux valgo; 11 da anatomia do pé e tornozelo) |
 | 1017 | Onda 2: 42 miniaulas refeitas com figuras (21 da fratura subtrocantérica, fim deste resumo; 11 do hálux valgo, fim deste resumo; 10 da anatomia do pé e tornozelo, fim deste resumo) |
-| (este PR) | Onda 2: 41 miniaulas refeitas com figuras (21 das displasias esqueléticas e síndromes, fim deste resumo; 20 da anatomia do ombro e braço, fim deste resumo) |
+| 1018 | Onda 2: 41 miniaulas refeitas com figuras (21 das displasias esqueléticas e síndromes, fim deste resumo; 20 da anatomia do ombro e braço, fim deste resumo) |
+| (este PR) | Onda 2: 44 miniaulas refeitas com figuras (18 do osteossarcoma, Campbell, Dahlin e Tachdjian, fim deste resumo; 18 da marcha, fim deste resumo; 8 da doença de Perthes) |
 
 ## Próximo
 
