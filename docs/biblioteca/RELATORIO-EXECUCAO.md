@@ -334,7 +334,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 1021 | Onda 2: 28 miniaulas refeitas com figuras (14 do carpo, fim deste resumo; 14 da pseudartrose e dos enxertos, fim deste resumo); 2 pendências resolvidas com fonte aberta (SEINSHEIMER na trauma-0813, MÖBIUS na pediatria-0202) |
 | 1024 | Onda 2: 46 miniaulas refeitas com figuras (12 do exame físico da mão e do punho; 12 dos tendões flexores; 11 do úmero distal; 11 das deficiências de membros), todos fim de resumo |
 | #1025 | Onda 2: 43 miniaulas refeitas com figuras (8 da coluna toracolombar, 7 de outras infecções, 7 das malformações congênitas da mão, 7 da transtrocantérica, 7 da cabeça do rádio, 7 das fraturas da mão) |
-| (este PR) | Onda 2: 47 miniaulas refeitas com figuras (6 da escápula, 6 da diáfise da tíbia, 6 da lesão medular, 6 do quadril da criança, 10 da tíbia e da cabeça do rádio congênita na criança, 10 da fise e do trauma infantil) e 3 pendências resolvidas com fonte aberta citada (PALEY, paracoccidioidomicose, TRONZO) |
+| #1026 | Onda 2: 47 miniaulas refeitas com figuras (6 da escápula, 6 da diáfise da tíbia, 6 da lesão medular, 6 do quadril da criança, 10 da tíbia e da cabeça do rádio congênita na criança, 10 da fise e do trauma infantil) e 3 pendências resolvidas com fonte aberta citada (PALEY, paracoccidioidomicose, TRONZO) |
+| (este PR) | Onda 2 concluída: 52 miniaulas refeitas com figuras (7 do trauma infantil e da coluna da criança, 10 do mecanismo extensor e do calcâneo, 8 da síndrome compartimental e das fraturas por estresse, 8 da diáfise do úmero e da luxação do joelho, 10 do fêmur distal, úmero proximal, clavícula e pelve, 9 de diáfise do fêmur, pilão, colo, planalto, tornozelo, antebraço e retalhos) |
 
 ## Próximo
 
