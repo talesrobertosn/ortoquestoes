@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-joelho
-versao: 2
+versao: 3
 titulo: Anatomia do joelho
 especialidade: joelho
 acesso: gratis
@@ -33,6 +33,12 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 1983), acrescenta a g
 
 O ponto mais cobrado dos ossos é a forma dos platôs. O Netter (cap. 9, aprox. p. 271) diz em uma linha: **faceta medial côncava, faceta lateral convexa**, com **7 a 10 graus de inclinação posterior**. O Campbell (cap. 50, p. 1983 e 1984) chama de "sutil concavidade" medial e "sutil convexidade" lateral e resume com uma imagem que ajuda a lembrar: no lado medial, o fêmur é uma **roda sobre superfície plana**; no lateral, uma **roda sobre uma cúpula**. Como as superfícies não são congruentes, quem dá estabilidade são os ligamentos e os meniscos. O mesmo raciocínio explica por que a meniscectomia lateral é tão mais danosa que a medial (ver a seção dos meniscos): tirar o calço de um platô convexo concentra a carga num ponto.
 
+O Rockwood and Green's Fractures in Adults, 10ª ed. (2025), na anatomia aplicada das fraturas do platô (cap. 62), confirma a forma e acrescenta a altura: a superfície do **platô lateral é plana ou levemente convexa**, a do **medial é côncava** e mais congruente com o côndilo, e o **platô lateral é também mais alto que o medial**, o que responde pelos poucos graus de varo do platô em relação à diáfise. O mesmo capítulo lembra que o platô medial resiste mais à fratura que o lateral e que essa diferença de forma deixa ver os dois platôs separados na radiografia de perfil.
+
+!figura 62-21 imagem=joelho/rwa10-62-21-w29.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 62, Fig. 62-21 (arquivo sem página impressa). Radiografia do joelho em perfil: os contornos dos dois platôs se sobrepõem, o medial côncavo e o lateral levemente convexo.
+!fim
+
 Os outros marcos da tíbia proximal estão na tabela abaixo. O Netter lembra ainda que as fraturas do **platô lateral** são as mais comuns e que a avulsão dos tubérculos intercondilares na criança envolve o **LCA**.
 
 ## A patela e a fíbula proximal
@@ -55,10 +61,9 @@ A **patela** é o **maior sesamoide**, com **faceta lateral maior** e **medial m
 !fim
 
 !questoes central=joelho-0212
-conceito: O platô medial é côncavo e o lateral é convexo; no lado medial o fêmur é uma roda no plano, no lateral uma roda sobre cúpula, por isso a estabilidade depende de ligamentos e meniscos.
+conceito: O platô medial é côncavo e o lateral é convexo e mais alto (Rockwood, cap. 62); no lado medial o fêmur é uma roda no plano, no lateral uma roda sobre cúpula, por isso a estabilidade depende de ligamentos e meniscos.
 como: O TARO 2012 comparou o platô lateral com o medial pedindo altura e curvatura.
 armadilha: Inverter a curvatura e marcar o lateral como côncavo, pensando no menisco lateral, que cria a concavidade sobre o platô convexo.
-alerta: O Netter e o Campbell sustentam o "convexo" do gabarito, mas nenhum dos dois diz que o platô lateral é "mais alto"; o Campbell só diz que o côndilo femoral medial se projeta mais distalmente. Gabarito oficial mantido em `joelho-0212`.
 !fim
 
 # Eixos, alinhamento e o ângulo Q {radar=confirmado}
@@ -72,7 +77,11 @@ O Netter (cap. 9, aprox. p. 272 e 273) define cada linha com precisão, e a prov
 - **Eixo mecânico da tíbia**: do **centro do joelho ao centro da mortalha** do tornozelo; normalmente coincide com o eixo anatômico da tíbia, salvo deformidade.
 - **Eixo do joelho**: linha pela face inferior dos dois côndilos, **paralela ao solo**.
 
-As relações estão na tabela. O Netter completa (aprox. p. 283) que o eixo mecânico do fêmur fica em **3 graus de valgo** em relação ao vertical e o da tíbia em **3 graus de varo**. O Campbell (cap. 50, p. 1983) dá **5 a 7 graus** entre mecânico e anatômico, diferença compensada pela **projeção distal do côndilo medial**. O alinhamento radiográfico normal é de **6 graus de valgo**, com carga (Netter, aprox. p. 303).
+As relações estão na tabela. O Netter completa (aprox. p. 283) que o eixo mecânico do fêmur fica em **3 graus de valgo** em relação ao vertical e o da tíbia em **3 graus de varo**. O Campbell (cap. 50, p. 1983) dá **5 a 7 graus** entre mecânico e anatômico, diferença compensada pela **projeção distal do côndilo medial**. O alinhamento radiográfico normal é de **6 graus de valgo**, com carga, no Netter (aprox. p. 303); o Campbell (cap. 10, p. 501) dá **5 a 8 graus de valgo** no ângulo tibiofemoral medido na radiografia com carga.
+
+!figura 8.14 imagem=joelho/campbell15-8-14-w41.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 8, Fig. 8.14, p. 410. Eixos do membro inferior: o eixo mecânico, da cabeça femoral ao centro do tornozelo, fica a 3 graus de valgo da vertical; o eixo diafisário do fêmur fica 6 graus em valgo em relação ao mecânico (9 graus da vertical); a linha articular do joelho é perpendicular à vertical.
+!fim
 
 !tabela Eixos e ângulos do joelho (Netter cap. 9, aprox. p. 272, 273 e 283)
 | Medida | Valor |
@@ -82,13 +91,17 @@ As relações estão na tabela. O Netter completa (aprox. p. 283) que o eixo mec
 | eixo mecânico da tíbia x vertical | cerca de 3 graus (varo) |
 | ângulo lateral distal do fêmur | 81 graus (anatômico) e 87 (mecânico) |
 | ângulo medial proximal da tíbia | 87 graus (mecânico) |
-| alinhamento radiográfico normal | 6 graus de valgo, com carga |
+| alinhamento radiográfico normal | 6 graus de valgo, com carga (Campbell, cap. 10, p. 501: 5 a 8) |
 | inclinação posterior do platô | 7 a 10 graus |
 !fim
 
 ## O ângulo Q
 
 O ângulo Q é a pergunta clássica de figura: duas linhas que se cruzam no centro da patela. O Netter (aprox. p. 303 e 304) o define pela **espinha ilíaca anterossuperior ao ponto central da patela** e do **centro da patela à tuberosidade da tíbia**, com normal de **até 10 graus no homem** e **até 15 na mulher**; o aumento predispõe à subluxação da patela e aos sintomas patelofemorais. O Campbell (cap. 8, p. 413), citando HVID, define-o como o ângulo entre o **eixo anatômico estendido do fêmur** e a linha **centro da patela e tubérculo tibial**, desenhando as mesmas duas linhas (EIAS ao centro da patela e tubérculo ao centro da patela). Os limites divergem: no Campbell (p. 421), é anormal acima de **15 graus no homem e 20 na mulher**. A ideia que não muda: quanto maior o ângulo Q, maior o vetor que puxa a patela para fora.
+
+!figura 8.19 imagem=joelho/campbell15-8-19-w42.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 8, Fig. 8.19, p. 413. Ângulo Q de HVID: entre a linha da espinha ilíaca anterossuperior ao centro da patela e a linha do centro da patela à tuberosidade da tíbia.
+!fim
 
 !questoes central=joelho-0151
 conceito: Ângulo Q: linha da espinha ilíaca anterossuperior ao centro da patela e linha do centro da patela à tuberosidade da tíbia; o aumento favorece a subluxação lateral.
@@ -99,6 +112,10 @@ armadilha: Chamar de ângulo anatômico ou mecânico, que são eixos de fêmur e
 ## A osteotomia tibial alta segundo COVENTRY
 
 Os eixos explicam a osteotomia. No joelho varo com artrose medial, a osteotomia tibial proximal valgizante transfere a carga para o compartimento lateral (Netter, aprox. p. 337). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 10, p. 501), descreve a osteotomia em **cunha de fechamento de COVENTRY**, proximal à tuberosidade, e registra que a falha aumenta se o alinhamento **não for hipercorrigido a pelo menos 8 graus de valgo** e se o paciente tiver obesidade importante; o planejamento soma **3 a 5 graus de hipercorreção** à correção para o normal, chegando a **cerca de 10 graus de valgo**. Daí a resposta "8 a 10 graus".
+
+!figura 10.13 imagem=joelho/campbell15-10-13-w29.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 10, Fig. 10.13, p. 501. Cálculo da cunha da osteotomia tibial alta: em A, o ângulo do ápice é a correção desejada, e a altura da base cresce com a largura da tíbia; em B, o cálculo levado ao osso, com o corte transverso cerca de 2 cm abaixo da linha articular e a cunha de base lateral.
+!fim
 
 !questoes central=joelho-0252
 conceito: Na osteotomia tibial alta de COVENTRY para o joelho varo, o eixo anatômico deve ficar hipercorrigido a pelo menos 8 graus de valgo, cerca de 10 graus, porque a subcorreção é causa de falha.
@@ -207,6 +224,10 @@ O **medial**, preso à cápsula e ao LCT profundo, não foge do côndilo na rota
 
 A figura do platô visto de cima, com as áreas de fixação pintadas, é uma pergunta clássica. Da frente para trás, na linha média: **raiz anterior do menisco medial**, bem à frente; **LCA** e **raiz anterior do menisco lateral**, lado a lado à frente da eminência; a **eminência**; **raiz posterior do menisco lateral**; **raiz posterior do menisco medial**; e, mais atrás e mais baixo, na borda posterior, o **LCP** (Campbell, p. 1996; Netter, aprox. p. 270). Quem orienta é o LCP: ele é a fixação **mais posterior** e desce abaixo da linha articular.
 
+!figura 61-4 imagem=joelho/skeletal5-61-4-w29.jpeg
+Fonte: Skeletal Trauma: Basic Science, Management, and Reconstruction, 5ª ed. (2015), cap. 61, Fig. 61-4, p. 1908. Platô tibial visto de cima, com a frente no alto: inserções do menisco medial (MM, na frente e atrás), do LCA, do menisco lateral (LM) e do LCP na borda posterior; na periferia, os colaterais, o bíceps e o semimembranáceo; em verde, a parte do platô lateral que o menisco não cobre.
+!fim
+
 !questoes central=joelho-0240
 conceito: Na vista superior do platô, o LCP é a fixação mais posterior, abaixo da linha articular; o LCA e a raiz anterior do menisco lateral ficam lado a lado à frente da eminência; as raízes do medial são as mais anterior e a mais posterior entre os meniscos.
 como: A prova mostrou a vista superior da tíbia com duas setas e pediu as estruturas que se inserem em cada área.
@@ -240,6 +261,10 @@ O oblíquo posterior (LOP) é a estrutura mais importante do **canto posteromedi
 
 Por isso o canto dá estabilidade estática e dinâmica mesmo com o joelho fletido. O último componente do canto posteromedial é o **corno posterior do menisco medial** (Campbell, p. 1989).
 
+!figura 50.1 imagem=joelho/campbell15-50-1-w29.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.1, p. 1984. Lado medial do joelho: o ligamento capsular medial dividido em terço anterior, terço médio (o colateral tibial profundo) e terço posterior, rotulado como ligamento oblíquo posterior; o semimembranáceo chega por trás, e as setas 1 a 5 marcam as suas cinco expansões.
+!fim
+
 !questoes central=joelho-0094 relacionadas=joelho-0260
 conceito: O ligamento oblíquo posterior é, na descrição de HUGHSTON, um espessamento do ligamento capsular medial, do tubérculo do adutor à tíbia posterior e à cápsula; não é inserção do semimembranáceo nem um dos meniscofemorais.
 como: A mesma afirmação sobre o oblíquo posterior aparece duas vezes no acervo, com WRISBERG e HUMPHREY como distratores.
@@ -261,6 +286,10 @@ O semimembranáceo é o grande estabilizador dinâmico posteromedial. O Campbell
 !fim
 
 A **primeira expansão** é o **ligamento poplíteo oblíquo** (LPO): sobe da inserção do semimembranáceo, cruza a face posterior do joelho em direção ao lado lateral e se prende à cápsula e à **fabela**. A contração do semimembranáceo o tensiona e, com ele, a cápsula posterior; no reparo, puxá-lo para a frente e para dentro retensiona o canto (Campbell). O Netter (aprox. p. 286 e 287) rotula o LPO na figura como **expansão tendínea do semimembranáceo**, parte do canto posteromedial.
+
+!figura 50.2 imagem=joelho/campbell15-50-2-w30.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.2, p. 1985. Face posterior do joelho: o poplíteo (Po), em vermelho, cruza obliquamente a tíbia proximal; no lado medial, o semimembranáceo (Sm) solta o ligamento poplíteo oblíquo (OPL), que sobe para o lado lateral; no lateral aparecem o ligamento arqueado (AL), o tendão poplíteo (PT), o LCL e as cabeças do gastrocnêmio (MG e LG).
+!fim
 
 A inserção do semimembranáceo na tíbia é **posteromedial**, no sulco da face posterior do côndilo medial, e é o que a figura com a área pintada pergunta. Semitendíneo e semimembranáceo nascem do **túber isquiático** e são inervados pela porção tibial do isquiático; o semitendíneo vai à pata de ganso e é usado nas reconstruções do LCA (Netter, cap. 8, aprox. p. 240).
 
@@ -300,6 +329,10 @@ O Netter (aprox. p. 287 a 289) também divide o lado lateral em três camadas, a
 | 3, lâmina profunda | tendão poplíteo; popliteofibular; ligamento arqueado; cápsula | rotação externa, varo e translação posterior |
 !fim
 
+!figura 50.12 imagem=joelho/campbell15-50-12-w30.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.12, p. 1990. Face lateral do joelho direito: em A, a camada I (trato iliotibial e bíceps), com a cabeça curta do bíceps entre a cabeça longa e o trato; em B, a camada I aberta mostra a camada II, com o vasto lateral e o retináculo patelar.
+!fim
+
 ## O trato iliotibial e o bíceps
 
 O **trato iliotibial** insere-se no **tubérculo de GERDY**, na face anterolateral do côndilo lateral da tíbia; o Netter (aprox. p. 271 e 288) o chama de "ligamento anterolateral acessório". O Campbell (cap. 50, p. 1986) descreve as **fibras de KAPLAN**, que restringem a **rotação interna** da tíbia; o trato vai para a frente na extensão e para trás na flexão.
@@ -319,6 +352,10 @@ O Netter (aprox. p. 289) dá a frase que resolve a pergunta do canto: **o ligame
 O **LCF**, do epicôndilo lateral à cabeça da fíbula, com cerca de 70 mm, é o **estabilizador estático primário contra o varo entre 0 e 30 graus** e resiste à rotação externa perto da extensão (Campbell, p. 1990).
 
 O **poplíteo** tem **três origens** (Campbell, p. 1986): a principal no **côndilo lateral do fêmur**, **anterior e distal** à inserção do LCF; a **fíbula**, pelo popliteofibular; e o **corno posterior do menisco lateral**. Insere-se na **face posterior da tíbia proximal**, acima da linha do sóleo. O tendão passa pelo **hiato poplíteo** e se torna **intra-articular**. O **ligamento arqueado** é a condensação das fibras da origem do poplíteo em Y.
+
+!figura 50.4 imagem=joelho/campbell15-50-4-w30.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.4, p. 1986. As três origens do poplíteo, em Y, no joelho visto por trás: o tendão principal no côndilo lateral do fêmur (A), o corno posterior do menisco lateral (B) e a cabeça da fíbula (C); o ventre desce em diagonal até a face posteromedial da tíbia.
+!fim
 
 A função tem duas faces que a prova opõe. Como **músculo**, é o **rotador medial da tíbia** no início da flexão, quem **destrava** o joelho. Como **estabilizador**, segura a **rotação externa da tíbia**: o Netter (aprox. p. 288 e 319) o chama de **restritor primário da rotação lateral do joelho**, que resiste também ao varo e à translação posterior. Quem roda para dentro é quem impede de rodar para fora. O **popliteofibular**, da junção musculotendínea à cabeça da fíbula, é o **restritor estático primário da rotação lateral** (Netter); a sua divisão posterior é a reconstruída.
 
@@ -340,6 +377,10 @@ armadilha: Responder rotação lateral (que ele impede) ou confundir com o sóle
 ## O ligamento anterolateral
 
 O Campbell (cap. 50, p. 1989 a 1992) descreve o ligamento anterolateral (LAL) como ligamento distinto, presente em 97% dos cadáveres. É **extra-articular**; nasce na **região do epicôndilo lateral** (com variantes posterior e proximal, ou anterior e distal, ao LCF) e corre anteroinferiormente até a **tíbia proximal, a meio caminho entre o tubérculo de GERDY e a cabeça da fíbula**. Dá **estabilidade anterolateral**, impedindo a subluxação anterior do platô lateral, com efeito **mais significativo a 30 e 90 graus de flexão**, e é implicado nas **fraturas de SEGOND**, patognomônicas de lesão do LCA. Na figura lateral, é a faixa fina que desce para a frente, superficial ao tendão poplíteo, enquanto o LCF desce vertical até a fíbula.
+
+!figura 50.13 imagem=joelho/campbell15-50-13-w30.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.13, p. 1992. Face lateral do joelho direito sem o trato iliotibial: o ligamento anterolateral desce para a frente até a tíbia, entre o tubérculo de GERDY e a cabeça da fíbula; o colateral lateral desce quase vertical até a fíbula, e o tendão poplíteo nasce à frente e abaixo dele.
+!fim
 
 !questoes central=trauma-1047 relacionadas=joelho-0144
 conceito: O ligamento anterolateral é extra-articular, vai da região do epicôndilo lateral à tíbia entre GERDY e a cabeça da fíbula, controla a subluxação anterolateral com efeito maior a 30 e 90 graus e se associa à fratura de SEGOND.
@@ -397,6 +438,10 @@ alerta: A `quadril-0137` cita "a figura a seguir", mas a imagem não está no ac
 | posterior profundo | poplíteo, tibial posterior, flexor longo dos dedos, flexor longo do hálux | tibial | tibiais posteriores e fibulares |
 !fim
 
+!figura 63-5 imagem=joelho/rwa10-63-5-w31.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 63, Fig. 63-5 (arquivo sem página impressa). Os quatro compartimentos da perna em corte transversal: anterior em azul, à frente da membrana interóssea; lateral em verde, junto à fíbula; posterior profundo em amarelo, logo atrás da membrana; posterior superficial em vermelho, o mais posterior.
+!fim
+
 Os músculos que a prova aponta ao redor do joelho (Netter, aprox. p. 316 a 319):
 
 - **Tibial anterior**: face lateral da tíbia e GERDY; flexão dorsal e inversão; **fibular profundo**; testa L4.
@@ -422,10 +467,14 @@ O **safeno** (L2 a L4), ramo sensitivo do femoral, desce superficial à fáscia 
 O **tibial** (L4 a S3) desce **entre as cabeças do gastrocnêmio** até o compartimento posterior profundo e inerva os músculos posteriores, inclusive o **poplíteo**. O **fibular comum** (L4 a S2) corre **atrás do bíceps** e contorna o **colo da fíbula**, onde é lesado; o Campbell (cap. 50, p. 1985) o coloca **1,5 a 2 cm distal à estiloide da fíbula**, profundo e posterior ao tendão do bíceps. Antes de se dividir, só dá o **cutâneo sural lateral**, sensitivo da face lateral proximal da perna (Netter, aprox. p. 322). Depois:
 
 - **Fibular profundo**: no **compartimento anterior**, junto da **artéria tibial anterior**, sobre a **membrana interóssea**; inerva tibial anterior, extensores e fibular terceiro (Netter, aprox. p. 323).
-- **Fibular superficial**: no **compartimento lateral**, entre os fibulares e o extensor longo dos dedos; inerva os fibulares e **cruza para a frente cerca de 12 cm acima do maléolo lateral**.
+- **Fibular superficial**: no **compartimento lateral**, entre os fibulares e o extensor longo dos dedos; inerva os fibulares e **cruza para a frente cerca de 12 cm acima do maléolo lateral** (Netter); na fasciotomia por duas mini-incisões de MOUHSINE, o Campbell (cap. 53, p. 2250) acha o nervo pela incisão distal, a **10 a 12 cm** do maléolo lateral.
 - **Sural**: une o cutâneo sural medial (do tibial) e o lateral (do fibular), corre **subcutâneo** na face posterolateral e cruza o tendão do calcâneo cerca de 10 cm acima da inserção.
 
 A figura 50.3 do Campbell (p. 1986) mostra a face lateral do joelho com o fibular comum, o **cutâneo sural lateral** (superficial e posterior), o fibular superficial e o **fibular profundo**, que mergulha para o compartimento anterior: é a figura que a prova copia quando numera dois nervos ali.
+
+!figura 50.3 imagem=joelho/campbell15-50-3-w31.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 50, Fig. 50.3, p. 1986. Lado lateral do joelho direito com a frente à direita: o fibular comum desce atrás do bíceps, solta o cutâneo sural lateral para trás e se divide junto à fíbula em fibular superficial e fibular profundo, que segue para a frente ao lado da artéria tibial anterior.
+!fim
 
 !tabela Nervos do joelho e da perna (Netter cap. 9, aprox. p. 307 e 320 a 323)
 | Nervo | Raízes | Trajeto | Motor | Sensitivo |
@@ -434,7 +483,7 @@ A figura 50.3 do Campbell (p. 1986) mostra a face lateral do joelho com o fibula
 | tibial | L4 a S3 | entre as cabeças do gastrocnêmio; posterior profundo | posteriores superficial e profundo, poplíteo | via cutâneo sural medial |
 | fibular comum | L4 a S2 | atrás do bíceps, em volta do colo da fíbula | nenhum antes de dividir | via cutâneo sural lateral |
 | fibular profundo | ramo do comum | compartimento anterior, com a tibial anterior, sobre a membrana | tibial anterior, extensores, fibular terceiro | nenhum na perna |
-| fibular superficial | ramo do comum | compartimento lateral; cruza para a frente 12 cm acima do maléolo | fibulares longo e curto | anterolateral da perna |
+| fibular superficial | ramo do comum | compartimento lateral; cruza para a frente 12 cm acima do maléolo (Campbell, cap. 53, p. 2250: 10 a 12 cm) | fibulares longo e curto | anterolateral da perna |
 | sural | medial + lateral | subcutâneo posterolateral | nenhum | posterolateral distal e região lateral do calcanhar |
 !fim
 
@@ -477,7 +526,11 @@ A **artéria poplítea** começa no **hiato dos adutores**, segue pela fossa pop
 | recorrente tibial anterior e posterior | tibiais | anastomose em volta do joelho |
 !fim
 
-As quatro geniculares, superiores e inferiores, anastomosam-se em volta do joelho e da patela e alimentam o plexo perimeniscal (Netter). Na figura medial do joelho, a artéria que contorna o fêmur logo **acima do côndilo medial**, saindo da poplítea por baixo dos isquiotibiais, é a **genicular superior medial**; a **descendente do joelho** vem de cima, da femoral, mais anterior, junto ao safeno; a **femoral profunda** e a **circunflexa femoral medial** ficam no alto da coxa. O Campbell (cap. 1, p. 31 e 46) lembra que o acesso subvasto preserva o ramo articular da descendente do joelho e que, na via posterior direta, as geniculares superolateral e superomedial passam por baixo dos isquiotibiais logo acima das cabeças do gastrocnêmio.
+As quatro geniculares, superiores e inferiores, anastomosam-se em volta do joelho e da patela e alimentam o plexo perimeniscal (Netter). Na figura medial do joelho, a artéria que contorna o fêmur logo **acima do côndilo medial**, saindo da poplítea por baixo dos isquiotibiais, é a **genicular superior medial**; a **descendente do joelho** vem de cima, da femoral, mais anterior, junto ao safeno; a **femoral profunda** e a **circunflexa femoral medial** ficam no alto da coxa. O Campbell lembra que o acesso subvasto preserva o ramo articular da descendente do joelho (cap. 1, p. 32) e que, na via posterior direta, as geniculares superolateral e superomedial passam por baixo dos isquiotibiais logo acima das cabeças do gastrocnêmio (cap. 1, p. 45, Técnica 1.54).
+
+!figura 1.58 imagem=joelho/campbell15-1-58-w31.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.58, p. 45. Circulação colateral do joelho vista por trás: a poplítea, no centro, solta as geniculares superiores medial e lateral acima dos côndilos, a genicular média para dentro da cápsula e as geniculares inferiores medial e lateral abaixo da interlinha; o nervo tibial desce ao lado e o fibular comum segue o bíceps.
+!fim
 
 !questoes central=joelho-0187
 conceito: A genicular superior medial sai da poplítea e contorna o fêmur logo acima do côndilo medial, por baixo dos isquiotibiais; a descendente do joelho vem da femoral no canal dos adutores, mais anterior e proximal.
