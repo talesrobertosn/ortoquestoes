@@ -45,6 +45,8 @@ DIR_COMENTARIOS = DIR_ACERVO / "comentarios"
 # Quantas questões entram em cada página. Acima disso a página fica pesada para
 # celular sem ganhar nada: o buscador já entendeu do que ela trata.
 POR_PAGINA = 25
+# Questões completas na página de cada assunto (Tales, 11/11/2026: amostra pequena; o resto é para responder no site).
+VITRINE = 5
 
 # Uma página pública por questão comentada, para o Google indexar e para quem
 # chega pela busca ler a questão e o comentário sem conta. Com False, as
@@ -97,7 +99,7 @@ h4 { font-size: 1rem; margin: 1rem 0 0.4rem; color: var(--destaque); }
 figure { margin: 0 0 1rem; }
 figure img { max-width: 100%; height: auto; max-height: 26rem; border-radius: 10px; border: 1px solid var(--traco); }
 figcaption { font-size: 0.85rem; color: var(--texto-2); }
-.comentario { border-top: 1px solid var(--traco); padding-top: 1rem; display: grid; gap: 0.75rem; }
+.comentario { border-top: 1px solid var(--traco); padding-top: 1rem; display: grid; grid-template-columns: minmax(0, 1fr); gap: 0.75rem; }
 .conceito { padding: 1rem 1.1rem; border-radius: 14px; background: var(--veu); }
 .alt { padding: 0.9rem 1rem; border-radius: 14px; border: 1px solid var(--traco); }
 .alt.certa { background: var(--acerto-veu); border-color: transparent; }
@@ -406,7 +408,7 @@ def descricao_questao(questao: dict, tema: dict, desempate: bool = False) -> str
     """Descrição com a origem e o começo do enunciado; o id só desempata."""
     origem = origem_da_questao(questao)
     fim = f" Questão {questao['id']}." if desempate else ""
-    oferta = "comentada alternativa por alternativa, com a imagem e o gabarito" if questao["id"] in COMPLETAS else "com gabarito e conceito-chave"
+    oferta = "comentada alternativa por alternativa, com a imagem e o gabarito" if questao["id"] in COMPLETAS else "para responder no Orto Questões"
     return resumir(
         f"Questão de {tema['nome'].lower()}{' (' + origem + ')' if origem else ''} {oferta}: {questao['enunciado']}",
         158 - len(fim),
@@ -415,7 +417,7 @@ def descricao_questao(questao: dict, tema: dict, desempate: bool = False) -> str
 
 def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict | None, proxima: dict | None,
                    nivel_titulo: int = 0, desempatar_descricao: bool = False) -> str:
-    """Uma página por questão: enunciado, alternativas, gabarito e conceito-chave.
+    """Uma página por questão: enunciado e alternativas; o gabarito e o comentário só na amostra aberta (COMPLETAS).
     A explicação alternativa por alternativa fica no site, a um clique."""
     raiz = "../../"
     slug = tema["slug"]
@@ -465,20 +467,16 @@ def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict |
         corpo.append(navegacao_questao(questao, slug, tema, anterior, proxima, raiz))
         corpo.append(rodape(raiz))
         return "\n".join(corpo)
+    # Fora da amostra aberta, a página mostra a questão e não entrega a resposta (Tales, 11/11/2026: as páginas
+    # públicas entregavam o gabarito de todo o acervo e a assinatura perdia o sentido). O gabarito, o conceito e o
+    # comentário de cada alternativa ficam no site, a um clique.
+    prova_toda = (f"A prova {esc(origem)} completa também está no site, para fazer no tempo. "
+                  if questao.get("prova") and questao.get("ano") and not questao.get("simulado") else "")
     corpo.append(
-        f'<a class="acao" href="{raiz}#/questao/{esc(questao["id"])}">Responder no Orto Questões</a>'
+        '<div class="convite"><p><strong>Qual é a resposta?</strong> Responda no Orto Questões para ver o gabarito da banca '
+        f"e o comentário de cada alternativa. {prova_toda}A conta é grátis.</p>"
+        f'<a class="acao" href="{raiz}#/questao/{esc(questao["id"])}">Responder e ver o gabarito</a></div>'
     )
-    corpo.append("<details class=\"resposta\"><summary>Ver gabarito e conceito-chave</summary>")
-    corpo.append(f'<p class="gabarito">Gabarito: <strong>{esc(gabarito or "–")}</strong>{" · " + esc(textos.get(gabarito or "", "")) if gabarito else ""}</p>')
-    if comentario.get("conceito"):
-        corpo.append('<div class="conceito"><p class="rotulo">Conceito-chave</p>' + editorial(comentario["conceito"]) + "</div>")
-    corpo.append(
-        '<div class="convite"><p><strong>Por que cada alternativa está certa ou errada?</strong> '
-        "O comentário completo, alternativa por alternativa, está no site, junto com revisão "
-        "espaçada e desempenho por tema.</p>"
-        f'<a class="acao" href="{raiz}#/questao/{esc(questao["id"])}">Ver o comentário completo</a></div>'
-    )
-    corpo.append("</details>")
     corpo.append("</article>")
     corpo.append(navegacao_questao(questao, slug, tema, anterior, proxima, raiz))
     corpo.append(rodape(raiz))
@@ -675,8 +673,8 @@ def principal() -> int:
         if PAGINAS_DE_QUESTAO:
             total_paginas += len(publicaveis)
 
-        # Vitrine: as primeiras questões completas, sem figura, na página do assunto.
-        vitrine = [q for q in publicaveis if not q.get("imagens")][:POR_PAGINA] if PAGINAS_DE_QUESTAO else []
+        # Vitrine: só questões da amostra aberta (as mesmas que abrem o comentário na página própria), poucas.
+        vitrine = [q for q in publicaveis if q["id"] in COMPLETAS][:VITRINE] if PAGINAS_DE_QUESTAO else []
         itens = [(q, comentarios[q["id"]]) for q in vitrine]
         titulo = f"{titulo_pagina} comentadas | Orto Questões"
         caminho = f"questoes/{slug}.html"
@@ -688,9 +686,8 @@ def principal() -> int:
         if PAGINAS_DE_QUESTAO:
             corpo.append(
                 f'<p>O acervo tem <strong>{sum(1 for q in dados["questoes"] if not q.get("duplicataDe"))}</strong> questões de '
-                f"{esc(tema['nome']).lower()}, e <strong>{len(publicaveis)}</strong> têm página própria "
-                "com gabarito e conceito-chave. Abaixo, "
-                f"{len(vitrine)} delas com o comentário completo e, no fim, a lista de todas.</p>"
+                f"{esc(tema['nome']).lower()}, com o gabarito da banca e o comentário de cada alternativa no site. Abaixo, "
+                f"{len(vitrine)} delas com o comentário completo, de amostra, e, no fim, a lista das questões para responder.</p>"
             )
             corpo.append(
                 f'<a class="acao" href="../#/treinar?temas={slug}">'
@@ -750,10 +747,10 @@ def principal() -> int:
         gerados.append((slug, tema["nome"], len(publicaveis), len(dados["questoes"])))
 
     # Índice das páginas por assunto.
-    titulo = "Questões de ortopedia comentadas por assunto, com gabarito | Orto Questões"
+    titulo = "Questões de ortopedia comentadas por assunto | Orto Questões"
     resumo = (
         "Questões de ortopedia e traumatologia separadas por assunto, do trauma à coluna: provas anteriores do TEOT, "
-        "do TARO e do ENARE R4, cada uma com o gabarito da banca e o conceito-chave, para ler sem conta."
+        "do TARO e do ENARE R4, com uma amostra comentada; o gabarito da banca e o comentário de todas ficam no site."
     )
     lista_temas = {
         "@context": "https://schema.org",

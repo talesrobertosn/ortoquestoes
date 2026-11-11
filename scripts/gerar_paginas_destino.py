@@ -802,8 +802,8 @@ def pagina_provas(d: dict) -> tuple[str, dict]:
             f'<span>{esc(resumir(q["enunciado"], 130))}</span></a></li>'
             for q in d["exemplos"]
         )
-        corpo.append(f'<section><h2>Algumas questões das provas mais recentes</h2><p class="sub">Abra para ver o enunciado, '
-                     f'as alternativas, o gabarito e o conceito-chave, sem conta.</p><ul class="relacionados">{itens}</ul></section>')
+        corpo.append(f'<section><h2>Algumas questões das provas mais recentes</h2><p class="sub">Abra para ver o enunciado e as '
+                     f'alternativas e responda no site, com o gabarito e o comentário.</p><ul class="relacionados">{itens}</ul></section>')
     corpo.append(faq_html(faq))
     corpo.append(chamada("Escolha um ano e comece", "A conta é grátis. Faça a prova no modo estudo, com o comentário depois de cada questão, ou no modo prova, com tempo."))
     corpo.append(relacionados(pasta, [
@@ -1625,7 +1625,7 @@ def llms(d: dict, paginas: list[dict], completo: bool) -> str:
     for p in paginas:
         linhas.append(f"- [{p['titulo'].split(' | ')[0]}]({SITE}{p['pasta']}/): {p['descricao']}")
     linhas += [
-        f"- [Questões comentadas por assunto]({SITE}questoes/): páginas públicas com questões, gabarito e conceito-chave, uma por assunto e uma por questão.",
+        f"- [Questões comentadas por assunto]({SITE}questoes/): páginas públicas com os enunciados das questões, uma por assunto e uma por questão; uma amostra traz o gabarito e o comentário completo, e o resto se responde no site.",
         "",
         "## Guias de estudo",
         "",
