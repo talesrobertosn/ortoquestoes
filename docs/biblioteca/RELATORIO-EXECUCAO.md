@@ -342,7 +342,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | #1036 | Fase TEOT: 52 questões em miniaula com figuras do Rockwood e do Campbell (escápula, pelve, tálus, diáfise do úmero, fraturas da mão, toracolombar, côndilo lateral, anatomia do ombro, síndrome compartimental, diáfise da tíbia, maus-tratos, supracondiliana, cotovelo infantil, diáfise do fêmur, acetábulo, clavícula, antebraço, carpo, planalto, punho da criança) |
 | #1038 | Fase TEOT e comentários sem selo: 45 miniaulas com figuras (5 TEOT de transtrocantérica, estresse, pilão e antebraço infantil; 30 comentários que perderam o selo baseResumo, de cotovelo, coluna cervical, mecanismo extensor, joelho e mão; 10 TEOT que não estavam em nenhum resumo, agora ligadas ao resumo certo, sem as duplicatas) |
 | #1041 | Fecha a fase TEOT: 47 miniaulas com figuras (21 questões do TEOT que não estavam em nenhum resumo, agora ligadas ao bloco certo, sem duplicatas; 26 comentários que perderam o selo baseResumo); assunto incomum abre com explicação curta do que é |
-| (este PR) | Fase TARO começou: 50 questões em miniaula com figuras do Rockwood, do Campbell, do Green e da AO (ombro, cotovelo, cabeça do rádio, ESSEX-LOPRESTI, MONTEGGIA, olécrano, escafoide, carpo e instabilidades); assunto incomum abre com explicação curta |
+| #1042 | Fase TARO começou: 50 questões em miniaula com figuras do Rockwood, do Campbell, do Green e da AO (ombro, cotovelo, cabeça do rádio, ESSEX-LOPRESTI, MONTEGGIA, olécrano, escafoide, carpo e instabilidades); assunto incomum abre com explicação curta |
+| (este PR) | Fase TARO: 60 questões em miniaula com figuras (coluna cervical, carpo, diáfise da tíbia, síndrome compartimental, fraturas por estresse e compartimentos da perna) |
 
 ## Próximo
 
