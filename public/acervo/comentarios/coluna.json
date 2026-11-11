@@ -2223,59 +2223,28 @@
   "conferido": false
  },
  "coluna-0159": {
-  "conceito": "O paciente mantém força e percebe dor, mas não reconhece adequadamente a posição de uma articulação sem olhar para ela. Essa dissociação aponta para **síndrome medular posterior**, porque a propriocepção percorre as colunas dorsais.\n\nAs vias não transportam toda a sensibilidade por um único caminho. As colunas dorsais conduzem posição articular, vibração e tato discriminativo; dor e temperatura sobem pelo espinotalâmico. Por isso uma lesão posterior pode comprometer a noção da posição sem reproduzir a perda de força, dor e temperatura da síndrome anterior (Rockwood, 10ª ed., cap. 48, “As síndromes anterior e posterior”).\n\n**“Tato preservado” não deve ser transformado em toda sensibilidade posterior normal.** O enunciado usa tato de forma genérica. A pista que localiza a síndrome é a perda proprioceptiva com força e dor preservadas; modalidades como tato discriminativo pertencem ao sistema dorsal e precisam ser testadas separadamente.\n\nO cone medular envolve outro conjunto: sinais mistos motores nos membros inferiores, disfunção esfincteriana e anestesia em sela, descritos no capítulo toracolombar. Não é a síndrome definida pela perda proprioceptiva isolada da questão.\n\n> **Na prova:** propriocepção comprometida com força e dor preservadas remete à síndrome posterior.",
-  "correta": "**D: medular posterior.** A dissociação sugere comprometimento das colunas dorsais com preservação relativa das vias motoras e dolorosas. É preciso diferenciar tato genérico de tato discriminativo ao examinar.",
+  "conceito": "O enunciado descreve um paciente que mexe tudo e sente dor, mas não sabe dizer, de olhos fechados, em que posição está o próprio pé. Para localizar a lesão, basta perguntar qual trato carrega só essa informação.\n\n**Os três tratos que resolvem qualquer síndrome incompleta.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, seção de anatomia da medula), organiza assim:\n- **colunas dorsais** (fascículos grácil e cuneiforme), na parte **posterior** da medula: **propriocepção, vibração, pressão e tato discriminativo**; cruzam acima do forame magno;\n- **trato espinotalâmico lateral**, na porção **anterolateral**: **dor e temperatura**; cruza no nível em que entra;\n- **tratos corticoespinhais**, laterais e ventral: **motricidade**; cruzam no bulbo.\n\nNa figura do Rockwood, os fascículos grácil e cuneiforme ocupam a faixa de trás, entre os cornos posteriores; o azul marca a área da síndrome anterior, o círculo central a centromedular e a hachura a hemissecção de BROWN-SÉQUARD. Repare que a área azul, território da **artéria espinal anterior**, poupa justamente as colunas dorsais, irrigadas pelas duas artérias posteriores.\n\n**A síndrome posterior.** É o espelho da anterior: lesão restrita às colunas dorsais, com **força, dor e tato preservados e propriocepção alterada**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1880), descreve com as mesmas peças: perda da **propriocepção e da vibração**, com as outras modalidades sensitivas e a motricidade **preservadas**. É **rara**, em geral causada por tumor, mas pode ocorrer num trauma em **extensão**. O Rockwood não a descreve como entidade separada; ele dá a anatomia, e ela sai da anatomia.\n\n**As quatro síndromes do enunciado, lado a lado.**\n\n| Síndrome | O que se perde | O que se preserva | Fonte |\n|---|---|---|---|\n| Central | força, mais nos membros superiores e nas mãos | sensibilidade sacral em geral | Campbell, p. 1878; Rockwood |\n| Anterior | força, dor e temperatura | propriocepção, vibração, tato profundo | Campbell, p. 1880 |\n| Posterior | propriocepção e vibração | força e as outras sensibilidades | Campbell, p. 1880 |\n| Cone medular | bexiga e intestino arreflexos, fraqueza dos membros inferiores | (lesão de T11 a L2) | Campbell, p. 1880 |\n\nUm cuidado com a palavra \"tato\". As colunas dorsais carregam o tato **discriminativo**; o enunciado usa \"tato\" de modo genérico, como o resumo, e a pista que decide é a propriocepção isolada.\n\n> **Na prova:** força e dor normais com propriocepção perdida = colunas dorsais = síndrome posterior. Propriocepção normal com força, dor e temperatura perdidas = anterior.\n\nAs síndromes estão na seção \"As síndromes anterior e posterior\" do resumo.",
+  "correta": "**D) medular posterior.** A lesão das colunas dorsais tira a propriocepção (e a vibração) e deixa intactos os corticoespinhais e os espinotalâmicos, que ficam mais à frente: força, dor e tato preservados (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1880), define a síndrome posterior exatamente assim e a chama de rara.",
   "incorretas": {
-   "A": "**Destaca a distribuição motora errada para o caso.** Na síndrome central clássica, braços e mãos ficam mais fracos que as pernas. A pergunta informa força preservada e destaca uma modalidade sensitiva posterior, não predomínio braquial de fraqueza.",
-   "B": "**Inverte o sistema preservado.** A síndrome anterior compromete motor, dor e temperatura e preserva propriocepção. Aqui o padrão é o oposto: a propriocepção está alterada e as funções motoras e dolorosas permanecem.",
-   "C": "**É um quadro da terminação da medula com outros sinais.** O cone pode produzir alterações motoras de primeiro e segundo neurônio, anestesia em sela e disfunção vesical/intestinal/sexual. Esses achados não foram descritos; a pista dada localiza as colunas posteriores."
+   "A": "**Medular central** é a síndrome incompleta mais comum e a de melhor prognóstico (Campbell, cap. 48, p. 1878): o idoso com canal estreito que sofre hiperextensão perde força mais nos membros superiores que nos inferiores, porque as fibras dos segmentos altos ficam mais centrais. O achado que a define é motor, e o paciente do enunciado tem a força preservada.",
+   "B": "**Medular anterior** é o território da artéria espinal anterior, os dois terços da frente da medula: perde-se a força e a dor e a temperatura, e a **propriocepção fica preservada** (Campbell, cap. 48, p. 1880). É o oposto exato do enunciado. Costuma vir de hiperflexão com fragmento de osso ou disco comprimindo a artéria, e o prognóstico de recuperação é ruim.",
+   "C": "**Do cone medular** é a lesão da medula sacral e das raízes lombares, em geral entre T11 e L2: bexiga e intestino arreflexos, com retenção e incontinência por transbordamento, e fraqueza dos membros inferiores (Campbell, cap. 48, p. 1880). É lesão toracolombar, com quadro esfincteriano dominante, e não explica perda isolada da propriocepção."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas.",
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna toracolombar”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations. Seções: Exame neurológico: choque neurogênico, choque medular e ASIA."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seção Cervical Spinal Cord Anatomy (Fig. 48-22)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1878 a 1880 (síndromes medulares incompletas)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "A medula cervical e as síndromes incompletas"
-     ],
-     "blocos": [
-      "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
-      "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
-      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa"
-     ],
-     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
-     "trechosSha256": "3e210b1bdde6ecf64cab339fbda9a754abd1d5c1a41d074219262f6f683accfb"
-    },
-    {
-     "resumo": "rockwood10-49-fratura-toracolombar",
-     "titulo": "Fraturas e luxações da coluna toracolombar",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 49 · Thoracolumbar Spine Fractures and Dislocations",
-     "secoes": [
-      "Exame neurológico: choque neurogênico, choque medular e ASIA"
-     ],
-     "blocos": [
-      "exame-neurologico-choque-neurogenico-choque-medu-8ef645cd"
-     ],
-     "sha256": "199a2c2cfc10055b9c76999139ff5dc4106177a111f17062d0ce605996d31517",
-     "trechosSha256": "42decc5b92cbd321b2de733438075f2b17d65953b31a663790c827afef700b9d"
-    }
-   ],
-   "questaoSha256": "98cc693debf3432156911c603f66517e06ca04ef7d8b4b4d3ab18fa5e9e18cb1",
-   "comentarioSha256": "119b6d9adeb320ebbc7e36fedf837e9a39bf41c98575527f0caaf56268e933fa"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/rwa10-48-22-w87.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48, Fig. 48-22, p. 1931. Corte transversal da medula com as áreas das síndromes incompletas: a hachura cobre a metade lesada na BROWN-SÉQUARD (fascículos grácil e cuneiforme, corticoespinhal e espinotalâmico lateral do mesmo lado), o azul marca a medular anterior e o círculo central, a centromedular.",
+    "largura": 900,
+    "altura": 794
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0161": {
   "conceito": "O TEOT 2024 descreve uma hérnia cervical foraminal com parestesia na face lateral do antebraço e no polegar e fraqueza do extensor radial longo do carpo, e pede a raiz e o segmento. A sensibilidade e o músculo apontam para C6, e o segmento é o C5-C6.\n\n**A raiz de C6 no Campbell.** A ruptura do disco C5-C6 com compressão de C6 pode dar **fraqueza do bíceps e dos extensores radiais longo e curto do carpo**; os **reflexos braquiorradial e bicipital podem diminuir**; e a sensibilidade costuma estar diminuída na **face lateral proximal do antebraço, no polegar e no indicador** (cap. 38, p. 1692, Box 38.3).\n\n**Lendo os achados.** A face lateral do antebraço e o polegar são o dermátomo de C6. O extensor radial longo do carpo tem inervação de C6 e C7, mas, combinado com o dermátomo do polegar, aponta C6. Juntos, sensibilidade e força dão a raiz.\n\n**Hérnia foraminal e hérnia central.** ODOM dividiu a doença discal cervical em quatro grupos: hérnia mole unilateral com compressão de raiz; osteófito foraminal (disco duro) com compressão de raiz; hérnia mole medial com compressão medular; e barra transversa, a espondilose, com compressão medular. **As lesões centrais costumam dar sintomas de compressão medular, e as laterais, sintomas radiculares** (Campbell, cap. 38, p. 1693). Na coluna cervical, a hérnia foraminal comprime a mesma raiz que a posterolateral, a raiz que sai por aquele forame, a de número maior; diferente da lombar, em que a foraminal e a posterolateral pegam raízes diferentes.\n\n**A regra da numeração cervical.** Na coluna cervical há oito raízes e sete vértebras: a raiz de C1 sai entre o occipital e o atlas, e cada raiz cervical sai **acima** do pedículo da vértebra de mesmo número, até C8, que sai entre C7 e T1. A Fig. 38.6 do Campbell compara os pontos de saída das raízes cervicais e lombares e mostra, no corte axial, que o processo uncinado forma a parede ventral do forame e que a raiz sai por trás da artéria vertebral (cap. 38, p. 1691). Por isso, **o disco cervical comprime a raiz de número maior**: o disco C4-C5 pega C5; o C5-C6, C6; o C6-C7, C7; e o C7-T1, C8. Na coluna lombar, ao contrário, a raiz sai abaixo do pedículo, e a hérnia posterolateral pega a raiz que desce.\n\n**Aplicando.** A raiz de C6 sai acima do pedículo de C6, pelo forame entre C5 e C6. A hérnia foraminal desse nível, o disco C5-C6, comprime C6. A alternativa \"C6 e C6-C7\" erra o segmento: o disco C6-C7 comprime C7.\n\n**A inervação dupla, a fonte da confusão.** O Campbell avisa que a ruptura do disco C5-C6 com compressão de C6 pode ser confundida com outras raízes **pela inervação dupla das estruturas**: o **bíceps** é inervado por C5 e C6, e os **extensores radiais longos** do carpo por C6 e C7. Por isso, a fraqueza do bíceps pode vir de C5 ou de C6, e o reflexo bicipital tem componentes das duas raízes. O livro conclui que a inervação múltipla dos músculos às vezes confunde a determinação da raiz exata, e que a ressonância ou outros exames de imagem ajudam a confirmar o nível (cap. 38, p. 1691 e 1692). Avaliando vários grupos musculares, vários reflexos e a sensibilidade, o nível pode ser localizado com a mesma precisão de qualquer outra lesão do sistema nervoso (p. 1691).\n\n| Raiz (disco) | Sensibilidade | Força | Reflexo |\n|---|---|---|---|\n| C5 (C4-C5) | face lateral do BRAÇO | DELTOIDE, bíceps (variável) | bicipital (variável) |\n| C6 (C5-C6) | face lateral do ANTEBRAÇO, POLEGAR e INDICADOR | BÍCEPS, EXTENSORES RADIAIS do carpo | BICIPITAL e BRAQUIORRADIAL |\n| C7 (C6-C7) | DEDO MÉDIO | TRÍCEPS, FLEXOR RADIAL do carpo, extensores dos dedos | TRICIPITAL |\n| C8 (C7-T1) | ANULAR, MÍNIMO, borda ulnar | INTERÓSSEOS, flexores dos dedos | nenhum |\n\n**O teste que ajuda.** O SPURLING, com extensão, rotação para o lado afetado e compressão da cabeça, fecha ainda mais o forame e reproduz a dor no dermátomo; é 95% sensível e 94% específico para a doença da raiz cervical (Campbell, p. 1692). Na hérnia foraminal, ele costuma ser bem positivo.\n\n**O que a banca quis testar.** Reconhecer C6 e o segmento que a comprime.\n\n> **Na prova:** antebraço lateral + polegar + extensor radial do carpo = C6 = segmento C5-C6.",
@@ -2293,42 +2262,29 @@
   "conferido": false
  },
  "coluna-0162": {
-  "conceito": "Numa fratura por explosão do atlas, as massas laterais de C1 podem se afastar para os lados. O ligamento transverso une essas massas passando por trás do dente; se o anel abre, essa faixa é tensionada. A regra de **Spence procura inferir lesão do transverso na fratura de C1**.\n\nNa incidência transoral, mede-se quanto a massa lateral de C1 ultrapassa C2 de cada lado e somam-se os dois deslocamentos. O valor clássico é maior que **6,9 mm**; o resumo também discute 8,1 mm após correção da ampliação radiográfica e o uso aproximado de 7 mm. Não é a medida do espaço anterior entre o arco de C1 e o dente, que é o ADI (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**A regra é um indício, não uma visualização do ligamento.** O próprio capítulo relata ruptura com deslocamentos menores e estudos sem correlação adequada entre deslocamento e integridade. Por isso uma soma pequena não exclui lesão; a ressonância complementa a avaliação mostrando diretamente o transverso.\n\nO alvo é importante porque a integridade do transverso muda a avaliação de estabilidade de C1. A presença de C2 como referência na medida não transforma o método numa regra para fratura do áxis.\n\n> **Na prova:** Spence relaciona afastamento das massas laterais de C1 à integridade do ligamento transverso.",
-  "correta": "**C: transverso na fratura de C1.** A explosão do anel afasta as massas laterais e tensiona o ligamento entre elas. A medida indireta deve ser integrada à avaliação ligamentar, e não usada isoladamente para excluir ruptura.",
+  "conceito": "As quatro opções cruzam dois ligamentos com duas vértebras, e só uma combinação faz sentido mecânico. A regra de SPENCE mede o afastamento das massas laterais do **atlas**, e o único ligamento que se estica entre elas é o **transverso**.\n\n**O que é o ligamento e por que ele decide.** O transverso é a faixa horizontal da cruz que prende o dente do áxis contra o arco anterior de C1: vai de uma massa lateral à outra **por trás do dente**. É ele que separa a fratura do atlas **estável** da **instável** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48). A figura do Campbell mostra as duas situações vistas de cima: em A, uma fratura de JEFFERSON com o transverso inteiro, e as massas no lugar; em B, o transverso partido, e as massas livres para se afastar (Campbell's Operative Orthopaedics, 15ª ed., cap. 48, Fig. 48.13, p. 1887).\n\n**De onde vem a força.** A **carga axial** gera forças de expansão radial no anel de C1. O anel, que precisa quebrar em pelo menos dois pontos, abre, e as massas laterais vão para fora; se a abertura passa do que o transverso aguenta, ele rompe por tração. É a JEFFERSON clássica, com traços nos arcos anterior e posterior. O Campbell (cap. 48, Fig. 48.15, p. 1888) dá a classificação de GEHWEILER, que embute exatamente essa ideia: o tipo 3, arco anterior e posterior juntos, é a JEFFERSON clássica, **3A** com o transverso íntegro (estável) e **3B** com o transverso lesado (instável).\n\n**A regra.** Na incidência **transoral**, soma-se quanto as massas laterais de C1 ultrapassam as de C2 dos dois lados; acima de **6,9 mm** (7 mm no HEBERT, cap. 39), infere-se a ruptura do transverso. O Rockwood lembra que é inferência: corrigida a ampliação da radiografia, propôs-se 8,1 mm; num estudo biomecânico o ligamento rompeu com só 3,8 mm; e por isso a **ressonância**, que mostra o ligamento no corte axial, complementa a medida.\n\n**Duas medidas que a banca gosta de misturar.**\n\n| | SPENCE | ADI |\n|---|---|---|\n| Incidência | transoral (boca aberta) | perfil |\n| O que mede | afastamento lateral das massas de C1 sobre C2 | distância entre o arco anterior de C1 e o dente |\n| Lesão | fratura de C1 (JEFFERSON) | instabilidade C1-C2, com ou sem fratura |\n| Limites | 6,9 mm: transverso roto | até 3 mm normal; até 5 mm só o transverso; acima de 5 mm, também os alares |\n\n> **Na prova:** SPENCE = transverso = fratura de C1. Alar aparece no ADI acima de 5 mm e na avulsão da ponta do dente.\n\nA regra está na seção \"O ligamento transverso decide a estabilidade\" do resumo.",
+  "correta": "**C) transverso na fratura de C1.** A regra de SPENCE soma o deslocamento lateral das massas de C1 sobre C2 na transoral; acima de 6,9 mm, infere-se a ruptura do transverso e a fratura do atlas é instável (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48; Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1887). É um sinal indireto, que a ressonância confirma.",
   "incorretas": {
-   "A": "**Mantém C1 e troca o ligamento que a medida procura avaliar.** O transverso passa de uma massa lateral à outra atrás do dente e é tensionado pela abertura do anel. A regra não foi construída como teste direto dos alares.",
-   "B": "**Troca tanto a estrutura quanto a fratura-alvo.** A medida usa C2 como apoio de referência para o deslocamento de C1. Isso não significa que investigue o alar numa fratura de C2.",
-   "D": "**Acerta o ligamento e muda o osso lesionado.** A relação entre abertura das massas e transverso pertence à fratura do atlas, C1. A comparação com as massas de C2 é apenas o modo de medir a abertura."
+   "A": "**Alar na fratura de C1** acerta a vértebra e erra o ligamento. Os alares vão da ponta do dente à borda anterior do forame magno e freiam a rotação; na JEFFERSON costumam ficar íntegros, porque o dente não se desloca em relação ao forame magno (Rockwood, cap. 48). O afastamento das massas laterais estica o transverso, não eles.",
+   "B": "**Alar na fratura de C2** lembra a avulsão da ponta do dente, o tipo I de ANDERSON e D'ALONZO, que o Campbell (cap. 48, p. 1895) atribui à tração do alar ou do apical. É uma lesão rara, que pode ser sinal de dissociação occipitocervical, e não se mede pela transoral do atlas. Nenhum dos dois termos pertence à regra de SPENCE.",
+   "D": "**Transverso na fratura de C2** acerta o ligamento e erra a fratura. O transverso pesa também no odontoide (fratura associada a lesão do transverso é indicação de cirurgia numa grande série citada pelo Rockwood), e a sua ruptura sem fratura se mede pelo ADI no perfil. A regra de SPENCE, porém, nasceu da explosão do anel de C1: usa C2 só como referência para ver quanto as massas do atlas passaram."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções da fratura do atlas, do ligamento transverso e do ADI",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Figs. 48.13 a 48.15, p. 1887 e 1888; p. 1895",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 39 (coluna cervical alta)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atlas, ligamento transverso e instabilidade C1–C2"
-     ],
-     "blocos": [
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1"
-     ],
-     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
-     "trechosSha256": "97abb481cb5ef0e0be96d03213a6737928eccb470083fd0fb60cadd98d2b4efe"
-    }
-   ],
-   "questaoSha256": "c2aed8d00935ae68eef15bae53fc04b026d1ee9039ee2b9c0968e19f113f1041",
-   "comentarioSha256": "2918d675f620c33e83aa6f33ef929f3c582d36c36fdfdd9cfc1312e1313a03ea"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/campbell15-48-13-t02.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 48, Fig. 48.13, p. 1887. Fratura de JEFFERSON vista de cima: em A, estável, com o ligamento transverso íntegro atrás do dente; em B, instável, com o transverso roto e as massas laterais afastadas.",
+    "largura": 1031,
+    "altura": 369
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0163": {
   "alerta": "Os livros lidos não trazem a porcentagem da lordose lombar feita pelos discos L4-L5 e L5-S1. O gabarito oficial (D) foi preservado; a explicação usa a anatomia descrita no Campbell e no Netter.",
@@ -2348,45 +2304,30 @@
   "conferido": false
  },
  "coluna-0164": {
-  "conceito": "A seta aponta para a faixa horizontal que cruza **por trás do dente**, conectando as massas laterais de C1. É o **ligamento transverso do atlas**, alternativa C. O formato e a relação com o dente permitem identificá-lo antes de pensar na lista de nomes.\n\nEssa faixa contém a relação entre atlas e áxis. Quando as massas laterais se afastam na fratura de Jefferson, o transverso é tensionado e pode romper; quando falha na instabilidade sagital, o intervalo anterior entre C1 e o dente pode aumentar (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade” e “O intervalo atlanto-odontoide”).\n\n**O dente é o marco ósseo, não a faixa apontada.** Reconhecer essa diferença separa o ligamento de um rótulo associado ao processo odontoide. A membrana tectória é outra estrutura: o resumo a descreve como continuação superior do ligamento longitudinal posterior, sem confundi-la com o feixe transversal curto entre as massas.\n\nO papel estabilizador explica a relevância clínica da identificação, mas a figura anatômica não demonstra uma ruptura. Aqui se pede nomear uma estrutura íntegra do desenho, não diagnosticar instabilidade apenas por ela estar visível.\n\n> **Na prova:** faixa horizontal atrás do dente, entre massas de C1: transverso.",
-  "correta": "**C: transverso do atlas.** A seta se dirige ao feixe horizontal posterior ao dente que une as massas laterais, exatamente o trajeto descrito na fonte.",
+  "conceito": "Questão de anatomia pura: a prova mostra a junção craniocervical vista por trás, com o arco posterior e a membrana tectória retirados, e aponta uma faixa. Para nomear, olhe a direção das fibras e o que fica na frente delas.\n\n**A imagem.** No centro, um feixe em forma de cruz. A haste vertical sobe até a borda do forame magno e desce até o corpo de C2; a barra horizontal, larga e branca, atravessa de um lado ao outro, presa nas massas laterais do atlas. A seta amarela aponta essa **barra horizontal**, que passa **por trás do dente** (o dente fica escondido logo à frente dela). Acima, partindo de perto da ponta do dente, dois feixes curtos e oblíquos sobem para os lados, em direção aos côndilos do occipital: são os alares. A barra apontada é o **ligamento transverso do atlas**, o braço horizontal do ligamento cruciforme.\n\n**A mesma estrutura na ressonância.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, Fig. 48-15), mostra o transverso num corte axial em T2 no anel de C1: as pontas de seta marcam uma faixa escura, de uma massa lateral à outra, passando atrás do processo odontoide (O). O capítulo diz que, no axial em C1, a ressonância avalia o transverso e os alares.\n\n**Para que serve cada estrutura vizinha.**\n\n| Estrutura | Trajeto | Função | Fonte |\n|---|---|---|---|\n| **Transverso** | massa lateral a massa lateral de C1, atrás do dente | prende o dente ao arco anterior; até 5 mm de ADI se rompe sozinho | Rockwood, cap. 48 |\n| Alares | ponta do dente à borda anterior do forame magno | limitam a rotação (o esquerdo freia a rotação para a direita) e o ADI além de 5 mm | HEBERT, cap. 39; Rockwood |\n| Membrana tectória | continuação do ligamento longitudinal posterior, do forame magno para baixo | cobre por trás o cruciforme; rota, indica dissociação occipitocervical | Rockwood, cap. 48 |\n| Cruciforme (o conjunto) | transverso mais as hastes verticais | estabiliza a flexão da cervical alta | HEBERT, cap. 39 |\n\n**Por que o transverso é o mais cobrado.** Ele decide a estabilidade de C1. Na fratura de JEFFERSON, as massas laterais se afastam e o rompem por tração (regra de SPENCE, mais de 6,9 mm na transoral); sem fratura, a sua ruptura aparece no perfil como ADI acima de 3 mm. Os alares seguram o resto: sozinho, o transverso roto deixa o ADI chegar a 5 mm, e acima disso caíram também os alares.\n\nO ligamento está na seção \"O ligamento transverso decide a estabilidade\" do resumo.",
+  "correta": "**C) transverso do atlas.** A seta aponta a barra horizontal do cruciforme, que vai de uma massa lateral de C1 à outra passando atrás do dente, o trajeto que o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, Fig. 48-15), mostra na ressonância axial. É o ligamento que decide a estabilidade da fratura do atlas e da articulação C1-C2.",
   "incorretas": {
-   "A": "**Escolhe outro estabilizador sem acompanhar a seta.** Os alares participam da contenção atlantoaxial, mas o alvo mostrado é o feixe transversal entre as massas. Reconhecer a função de estabilização de um nome não basta para identificar qualquer ligamento de C1–C2.",
-   "B": "**Confunde o marco ósseo com o tecido apontado.** O odontoide é a projeção de C2 que aparece à frente da faixa. A seta não aponta para o dente, e sim para o ligamento que passa atrás dele.",
-   "D": "**Troca uma continuidade longitudinal por uma faixa transversal.** A membrana tectória continua superiormente o longitudinal posterior. O alvo da seta é o transverso do atlas, definido pelo trajeto de uma massa lateral à outra."
+   "A": "**Alar** é par e oblíquo: cada um sai da ponta do dente e sobe para a borda anterior do forame magno, junto ao côndilo occipital (HEBERT, cap. 39). Na figura, são os feixes curtos acima e dos lados da cruz, não a barra horizontal apontada. Limitam a rotação da cabeça, e o ADI acima de 5 mm indica que também romperam.",
+   "B": "**Odontoide** não é o nome de um ligamento nos livros consultados. Os ligamentos que se prendem ao dente são o apical e os alares, que o Campbell (cap. 48, p. 1895) cita como os que avulsionam a ponta no tipo I de ANDERSON e D'ALONZO. Na figura, o processo odontoide é o osso escondido na frente da faixa apontada, não a faixa.",
+   "D": "**Atlantoaxial (membrana tectória)** é a continuação do ligamento longitudinal posterior acima de C2 (Rockwood, cap. 48). É uma lâmina larga que cobre o cruciforme por trás, e na peça da prova foi retirada para mostrar a cruz. Além disso, prende o occipital ao áxis, não só o atlas ao áxis; a sua ruptura na ressonância indica dissociação occipitocervical."
   },
+  "alerta": "A alternativa \"odontoide\" não corresponde a nenhum ligamento descrito no resumo nem nos livros locais (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48; Campbell's Operative Orthopaedics, 15ª ed., cap. 48; HEBERT, cap. 39), que só citam o apical e os alares presos ao dente; ela foi explicada pelo que os livros dizem dessas estruturas. O gabarito oficial (C) é sustentado pelo Rockwood.",
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Anatomia aplicada e biomecânica."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções de imagem (Fig. 48-15), do ligamento transverso e da anatomia occipitocervical",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 39 (coluna cervical alta) (anatomia e biomecânica da cervical alta)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1895",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atlas, ligamento transverso e instabilidade C1–C2",
-      "Anatomia aplicada e biomecânica"
-     ],
-     "blocos": [
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
-      "anatomia-aplicada-e-biomecanica-bb0e36ca",
-      "anatomia-aplicada-e-biomecanica-b1c9d54b"
-     ],
-     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
-     "trechosSha256": "186e191ca4416da4c2fc55bc80e054cb2f7b80cc29e641fba0b58023f83e1867"
-    }
-   ],
-   "questaoSha256": "ffcf59ff85816906f2fce046bc0cc6e4dd52d19eca500343bc3f2deb51a81d86",
-   "comentarioSha256": "aa0b346435cd60cdcbac71e3f7d0b2d21e8ff174a70ce83bb1a6dd75d885e98a"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/rwa10-48-15-t02.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48, Fig. 48-15, seção de imagem (PDF sem página impressa). Ressonância axial em T2 no anel de C1: as pontas de seta marcam o ligamento transverso íntegro, que vai de uma massa lateral à outra passando atrás do processo odontoide (O).",
+    "largura": 1157,
+    "altura": 808
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0165": {
   "conceito": "**A imagem.** É uma dissecção da parte baixa do pescoço vista de frente. No centro, a **traqueia**, com os anéis cartilaginosos bem marcados, desce até a altura da clavícula, que aparece cortada embaixo. Acima dela vê-se a musculatura da faringe e da laringe. À direita do desenho correm os **grandes vasos vermelhos** do pescoço, longe da traqueia. A seta amarela aponta um **nervo fino, amarelo, que sobe colado à parede lateral da traqueia**, no ângulo entre ela e o esôfago, e desaparece para dentro da laringe. Esse trajeto, rente à via aérea e separado da bainha dos vasos, é o do **nervo laríngeo recorrente**.\n\n**De onde vem o nome.** O recorrente é ramo do vago que desce até o tórax e \"volta\" para o pescoço. O HOPPENFELD (p. 340 e 351) descreve a assimetria que interessa ao cirurgião:\n- o **esquerdo** sai do vago no **arco da aorta**, contorna-o e sobe protegido **entre a traqueia e o esôfago**, num trajeto longo e vertical;\n- o **direito** contorna a **artéria subclávia direita**, sobe ao lado da traqueia e, na parte inferior do pescoço, **cruza de lateral para medial** para chegar a ela; por isso é **um pouco mais vulnerável**;\n- em raras ocasiões o direito é **não recorrente**: sai alto da bainha carótica e atravessa o campo na altura da tireoide.\n\n**Por que o lado esquerdo protege.** Na via anterior, o plano passa exatamente entre a bainha carótica, levada para lateral, e o bloco traqueia e esôfago, levado para medial (HOPPENFELD, p. 343). Um nervo que atravessa esse corredor em diagonal, como o direito, fica no caminho das lâminas e da tesoura; um nervo que corre dentro do sulco traqueoesofágico, como o esquerdo, vai junto com o bloco medial e sai do caminho. Daí a frase do livro: o acesso pelo lado esquerdo é, com frequência, o preferido, e o recorrente é a **estrutura de risco mais importante** da via (p. 340). Em qualquer lado, os nervos ficam seguros com os afastadores embaixo da borda medial dos longos do pescoço (p. 346 e 351).\n\n**O outro livro discorda do benefício.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 44, p. 1708 e 1709), confirma a mesma anatomia e acrescenta a artéria tireóidea inferior: à direita, o nervo tem relação variável com ela e fica muito exposto se esses vasos não forem ligados o mais lateralmente possível. Mas conclui de outro jeito: muitos cirurgiões operam pela direita com baixa incidência de paralisia sintomática, e **a redução do risco pela esquerda não foi demonstrada na literatura**; na Campbell Clinic, o lado é escolhido pela **mão dominante** do cirurgião. O capítulo 45 (p. 1758) dá a única regra de lado que não se discute: se uma corda vocal já está paralisada, opera-se **do mesmo lado**, para não arriscar o nervo que ainda funciona.\n\nPara a prova, o enunciado já assume a premissa do HOPPENFELD (\"diminui o risco\"), e o nervo que ela protege é o recorrente. A comparação entre os dois lados, com a tabela, está na seção \"O laríngeo recorrente e a escolha do lado\" do resumo.",

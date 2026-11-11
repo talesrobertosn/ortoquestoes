@@ -6359,86 +6359,53 @@
   }
  },
  "trauma-0220": {
-  "conceito": "As linhas azuis acompanham os platôs e desenham a angulação cifótica do segmento lesado. Não estão medindo uma distância entre corpos: o critério perguntado é **cifose maior que 11 graus**, sugestiva de lesão do complexo posterior e instabilidade.\n\nO método angular usa os platôs, no raciocínio de Cobb. Uma deformidade em cunha pode parecer apenas uma fratura do corpo, mas o aumento da cifose alerta para perda da contenção posterior. Por isso o alinhamento deve ser avaliado junto da morfologia óssea (Rockwood, 10ª ed., cap. 48, “White e Panjabi: 3,5 mm e 11 graus”).\n\n**Graus e milímetros respondem a perguntas diferentes.** O outro limiar clássico da seção é translação sagital maior que 3,5 mm, medida entre linhas das paredes posteriores. A alternativa com 3,5 graus troca a unidade e o tipo de deformidade.\n\nO sinal sugere gravidade, mas não define sozinho o déficit ou a operação. Exame neurológico, disco, ligamentos e outros achados de instabilidade completam a análise.\n\n> **Na prova:** o desenho é angular: 11 graus. Translação de 3,5 é em milímetros.",
-  "correta": "**C: 11 graus.** O ângulo de cifose segmentar acima desse limite sugere comprometimento posterior. A figura usa linhas de platôs, não uma régua de translação.",
+  "conceito": "A imagem da prova é o desenho do método de COBB que o Rockwood usa no capítulo de coluna cervical: uma linha no platô superior da vértebra íntegra de cima, outra no platô inferior da vértebra íntegra de baixo, e perpendiculares a elas se cruzando. O ângulo marcado em vermelho é a **cifose segmentar**. A pergunta é o número a partir do qual essa cifose deixa de ser deformidade aceitável e passa a indicar instabilidade.\n\n**O número e o que ele denuncia.** Segundo WHITE e PANJABI, a **cifose segmentar maior que 11 graus** sugere lesão do **complexo ligamentar posterior** (o ligamento amarelo, os interespinhosos e os supraespinhosos). Para ler o valor, o Rockwood manda comparar a cifose do nível lesado com a lordose normal dos vizinhos, de **2 a 4 graus** entre vértebras adjacentes, e registra que o método dos platôs foi melhor que o das tangentes posteriores (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48, seção de imagem). O raciocínio mecânico é simples: o corpo vertebral só fecha em cunha além desse ponto se a banda de tensão de trás tiver cedido.\n\n**O mesmo critério no Campbell, desenhado de outro jeito.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, Box 48.6, p. 1900, e Fig. 48.27, p. 1901), traz a lista inteira de WHITE, SOUTHWICK e PANJABI e mede o ângulo como **diferença de rotação sagital** entre segmentos vizinhos. Na figura, embaixo, o segmento C5-C6 está a +20°, e os vizinhos a menos 2° e menos 4°: as diferenças, 22° e 24°, passam de 11°. Em cima, a outra regra da mesma lista, a **translação sagital maior que 3,5 mm** entre as paredes posteriores dos corpos.\n\n| Critério de WHITE e PANJABI (Campbell, Box 48.6) | Pontos |\n|---|---|\n| Elementos anteriores destruídos ou sem função | 2 |\n| Elementos posteriores destruídos ou sem função | 2 |\n| Translação sagital maior que 3,5 mm | 2 |\n| Rotação sagital maior que 11° | 2 |\n| Teste de estiramento positivo | 2 |\n| Lesão medular | 2 |\n| Lesão radicular, estreitamento discal anormal, carga perigosa prevista | 1 cada |\n\nCom **5 pontos ou mais**, a coluna cervical baixa é instável. Os dois livros chegam ao mesmo 11: o Rockwood pelo COBB do nível lesado comparado com a lordose normal, o Campbell pela diferença entre segmentos.\n\n**Onde mais o 11 aparece.** Na fratura em cunha da subaxial, a cifose acima de 11 graus é a medida que separa a fratura estável, tratada com órtese, da que tem o complexo posterior roto e equivale a um estágio 3 de compressão-flexão.\n\nOs dois números estão na seção \"WHITE e PANJABI: 3,5 mm e 11 graus\" do resumo.",
+  "correta": "**C) 11 graus.** Pelo critério de WHITE e PANJABI, a cifose segmentar acima de 11 graus, medida pelos platôs como na figura da questão, sugere lesão do complexo ligamentar posterior e instabilidade (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1900 e 1901), dá o mesmo limite como diferença de rotação sagital entre segmentos vizinhos, valendo 2 pontos na lista de instabilidade.",
   "incorretas": {
-   "A": "**Emprega o número da translação com unidade angular.** Três vírgula cinco é o limiar linear em milímetros para deslocamento sagital na fonte. Aplicá-lo em graus não corresponde à medida mostrada.",
-   "B": "**Não é o corte angular apresentado.** Sete graus não substitui 11 graus. É preciso reconhecer o método da figura antes de importar números de outras avaliações cervicais.",
-   "D": "**Aceitaria uma deformidade maior antes de reconhecer o sinal.** Vinte graus ultrapassa o limiar descrito e não é o valor de corte solicitado. O resumo já considera preocupante a cifose maior que 11 graus."
+   "A": "**3,5 graus** pega o número certo da medida errada. Na lista de WHITE e PANJABI, 3,5 é a translação sagital em **milímetros**, medida entre as linhas que prolongam as paredes posteriores dos corpos, a medida mais reprodutível na radiografia e na tomografia. Um ângulo de 3,5 graus está dentro da variação normal entre vértebras vizinhas (2 a 4 graus de lordose) e não indica nada.",
+   "B": "**7 graus** não é limite de instabilidade em nenhum dos livros. Na subaxial, 2 a 7 graus é a faixa normal de **rotação axial** por segmento, segundo o Rockwood (cap. 48, anatomia aplicada), e o 7 mais lembrado da cervical é outro: os 7 mm de afastamento das massas laterais de C1 na regra de SPENCE, como o HEBERT (cap. 39) escreve. Nenhum desses números mede cifose.",
+   "D": "**20 graus** é movimento normal, não lesão: a flexoextensão da subaxial é maior em C4-C5 e C5-C6, cerca de 20 graus em cada (Rockwood, cap. 48). Na figura do Campbell, o segmento lesado está justamente a +20°, mas o que acusa a instabilidade é a diferença para os vizinhos, maior que 11°, e não o valor absoluto."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade; Compressão, explosão e teardrop."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções de imagem e de classificação da subaxial (Fig. 48-8)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Box 48.6, p. 1900, e Figs. 48.26 e 48.27, p. 1901",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Coluna subaxial: classificações e estabilidade",
-      "Compressão, explosão e teardrop"
-     ],
-     "blocos": [
-      "coluna-subaxial-classificacoes-e-estabilidade-a450a4bb",
-      "compressao-explosao-e-teardrop-c61e3e01"
-     ],
-     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
-     "trechosSha256": "eb50a5f1fbe9d068bba74a3aec925c0998316b27ded85450f975c2eb1d87ca29"
-    }
-   ],
-   "questaoSha256": "d82eaab66a1a09780a83a924553c2f3aed37967034380e0e1a228d51529f05d9",
-   "comentarioSha256": "939b7d89289599e69e12175f6e1f532176cab3eb7dfc9a6c1d4526ab6b0f3d7a"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/campbell15-48-27-t02.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 48, Figs. 48.26 e 48.27, p. 1901 (redesenhadas de WHITE, JOHNSON e PANJABI). Em cima, translação sagital maior que 3,5 mm entre as paredes posteriores de dois corpos. Embaixo, rotação sagital: o ângulo de C5-C6 (+20°) comparado com o dos segmentos vizinhos (menos 2° e menos 4°) dá diferença de 22° e 24°, acima de 11°, sinal de instabilidade.",
+    "largura": 923,
+    "altura": 1917
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0221": {
-  "conceito": "Na incidência transoral de uma fratura do atlas, as massas laterais de C1 ultrapassam as de C2. Somar quanto isso ocorre dos dois lados estima quanto o anel se abriu. Um deslocamento total acima de aproximadamente **7 mm sugere lesão do ligamento transverso**.\n\nO transverso passa de uma massa lateral à outra por trás do dente. A expansão radial de C1 o tensiona, relacionando a abertura do anel à possível perda dessa contenção. É a lógica da regra de Spence, cujo limiar clássico é 6,9 mm (Rockwood, 10ª ed., cap. 48, “O ligamento transverso decide a estabilidade”).\n\n**Sugere não significa demonstra diretamente.** O resumo discute correção de ampliação para 8,1 mm e limitações dos estudos de correlação; rupturas podem ocorrer com deslocamentos menores. A ressonância complementa a análise ao mostrar o ligamento, e uma soma abaixo do corte não deve ser usada isoladamente para excluir lesão.\n\nTambém não se deve confundir essa soma lateral com o ADI medido no perfil entre o arco anterior e o dente. Ambos ajudam a avaliar C1–C2, mas medem relações diferentes.\n\n> **Na prova:** abertura das massas laterais na fratura de C1 remete ao transverso; Spence é um indício indireto.",
-  "correta": "**C: transverso.** O afastamento das massas laterais tensiona o ligamento que as une atrás do dente. O valor sugere ruptura e exige integração com os demais achados, não confirmação automática.",
+  "conceito": "A questão traz o número e pede o ligamento. Para responder sem decorar, basta imaginar o anel do atlas visto na incidência de boca aberta: quando ele explode, as massas laterais de C1 escorregam para fora das de C2, e só um ligamento está esticado entre elas para impedir isso.\n\n**A fratura.** O anel de C1 não quebra num ponto só; o mínimo são dois traços. A fratura de **JEFFERSON** clássica tem traços **bilaterais nos arcos anterior e posterior**, por **carga axial** que gera forças de expansão radial. A lesão medular é rara, porque o anel se abre e o canal aumenta. A diferença entre a JEFFERSON estável e a instável é o **ligamento transverso**, que vai de uma massa lateral à outra passando atrás do dente; quando as massas se afastam, ele rompe por **tração** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48, seção do atlas).\n\n**A medida, na figura do Campbell.** As setas vermelhas mostram as massas laterais de C1 indo para fora; as linhas roxas marcam a borda lateral de C1 e a de C2 de cada lado. Mede-se quanto C1 passa de C2 à esquerda (x) e à direita (y) e **soma-se**. Acima de **6,9 mm**, infere-se a ruptura do transverso: é a **regra de SPENCE** (Campbell's Operative Orthopaedics, 15ª ed., cap. 48, Fig. 48.14, p. 1887).\n\n**De onde vêm os 7 mm do enunciado.** Os livros dão o mesmo limite com arredondamentos diferentes:\n\n| Fonte | Limite | Observação |\n|---|---|---|\n| Rockwood, cap. 48 | 6,9 mm (ou 7 mm) | 8,1 mm se corrigida a ampliação da radiografia; na tomografia, que não amplia, volta o 6,9 |\n| Campbell, cap. 48, p. 1887 | mais de 6,9 mm | sugere lesão do ligamento transverso |\n| HEBERT, cap. 39 | mais de 7 mm | estudos em cadáver; chama de \"método de SPENCER\" |\n\n**Por que a palavra é \"sugere\".** O próprio Rockwood relativiza a regra: num estudo biomecânico o transverso rompeu com deslocamento médio de **3,8 mm**, e outra série não achou correlação entre o deslocamento e a integridade do ligamento. Por isso a medida complementa a **ressonância**, que mostra o transverso nos cortes axiais. E o motivo de importar: transverso roto deixa instabilidade C1-C2 que, lembra o HEBERT, permanece mesmo depois de consolidados os arcos. Os autores do Rockwood tratam a explosão com transverso roto com **tração pelo halo por 3 a 5 dias** e depois **halo-colete**; sem suspeita de lesão do transverso, basta colar ou órtese cervicotorácica por 12 semanas.\n\n> **Na prova:** massas laterais de C1 somando mais de 6,9 ou 7 mm na transoral = transverso roto, JEFFERSON instável.\n\nA regra e as suas ressalvas estão na seção \"O ligamento transverso decide a estabilidade\" do resumo.",
+  "correta": "**C) transverso.** O ligamento transverso une as massas laterais de C1 por trás do dente; quando a explosão do anel as afasta, ele rompe por tração. A soma do deslocamento das massas sobre C2 acima de 6,9 mm (SPENCE; 7 mm no HEBERT, cap. 39) indica essa ruptura e a fratura instável (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48; Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1887).",
   "incorretas": {
-   "A": "**Troca o ligamento avaliado pela abertura do anel.** Na regra de Spence, a ligação anatômica é entre o afastamento das massas e a tensão do transverso. Os alares entram em outra discussão de contenção C1–C2, inclusive quando o ADI ultrapassa 5 mm.",
-   "B": "**Escolhe um componente posterior diferente.** O ligamento nucal integra a descrição do complexo ligamentar posterior cervical. Não é a faixa entre as massas laterais de C1 cuja integridade a regra procura inferir.",
-   "D": "**Confunde o espaço entre espinhosos com a abertura lateral do atlas.** Afastamento interespinhoso sugere lesão posterior na subaxial. A medida da questão compara massas laterais de C1 com C2 e aponta para o transverso."
+   "A": "**Alar** é o ligamento que vai da ponta do dente à borda anterior do forame magno e limita a rotação da cabeça (a rotação para a direita é freada pelo alar esquerdo, segundo o HEBERT, cap. 39). Na fratura de JEFFERSON ele costuma ficar íntegro, porque o dente não se desloca em relação ao forame magno (Rockwood, cap. 48). Ele aparece em outro número: ADI acima de 5 mm, no perfil, quando os alares caem junto com o transverso.",
+   "B": "**Nucal** é o ligamento posterior que vai do ínion a C7, continuação dos supraespinhosos e parte do complexo ligamentar posterior (Rockwood, cap. 48, anatomia aplicada); o HEBERT (cap. 39) o cita entre os que estabilizam a flexão da cervical alta. Fica atrás dos arcos e não liga as massas laterais de C1; o afastamento delas na transoral não tem como tensioná-lo.",
+   "D": "**Interespinhoso** pertence ao complexo ligamentar posterior da subaxial, junto com o amarelo e o supraespinhoso. A sua lesão se procura pelo afastamento entre os espinhosos no perfil ou pela quebra da linha interespinhosa, e no SLIC o alargamento interespinhoso isolado conta como complexo discoligamentar indeterminado (Campbell, cap. 48, Tabela 48.6). Nada disso se mede na boca aberta do atlas."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atlas, ligamento transverso e instabilidade C1–C2; Anatomia aplicada e biomecânica; Imagem: rastreio, radiografia, tomografia e ressonância."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções da fratura do atlas e do ligamento transverso",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Fig. 48.14, p. 1887",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 39 (coluna cervical alta), Fig. 39.5 (método de SPENCER)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atlas, ligamento transverso e instabilidade C1–C2",
-      "Anatomia aplicada e biomecânica",
-      "Imagem: rastreio, radiografia, tomografia e ressonância"
-     ],
-     "blocos": [
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-f6e52077",
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-da5452c1",
-      "atlas-ligamento-transverso-e-instabilidade-c1-c2-d1f88712",
-      "anatomia-aplicada-e-biomecanica-cafff61f",
-      "imagem-rastreio-radiografia-tomografia-e-ressona-253dda60"
-     ],
-     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
-     "trechosSha256": "a541e65f04058e5021c19e00f0b6fb312801adbcf747040bc66890a8cfc8be7f"
-    }
-   ],
-   "questaoSha256": "e7847961aa743c38d02ee40feefe021b1177bfa2cf556f77e79dffb39f843f95",
-   "comentarioSha256": "bee001e4635b97d79fffd52265fd1ffc09ed8f87e049159254b3f73705946da5"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/campbell15-48-14-t02.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 48, Fig. 48.14, p. 1887. Regra de SPENCE na incidência transoral: as setas mostram as massas laterais de C1 escorregando para fora de C2; a soma dos dois excessos (x + y) acima de 6,9 mm sugere lesão do ligamento transverso.",
+    "largura": 923,
+    "altura": 485
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0222": {
   "conceito": "A classificação de SCHENCK (o enunciado escreve \"Schenk\") nasceu de um problema prático: a maioria dos joelhos luxados chega ao pronto-socorro **já reduzida**, e a classificação antiga, pela direção da tíbia, pedia uma informação que ninguém tinha. A solução foi classificar pelo que se rompeu, e é isso que a questão cobra.\n\n**De KENNEDY a SCHENCK.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 61, seção de classificação), conta a história. KENNEDY, em 1963, classificava pela **direção**: anterior, posterior, medial, lateral e rotatória. SCHENCK passou a classificar pelas **estruturas anatômicas rompidas**; WASCHER acrescentou as fraturas associadas, e a ressonância deixou a classificação mais precisa. O capítulo reconhece as críticas (pouco valor prognóstico e pouca validação de reprodutibilidade), mas é a classificação preferida dos autores.\n\n**A lógica do número romano.** O número conta **ligamentos**, e a referência são os dois cruzados:\n\n| Tipo | Cruzados | Colaterais |\n|---|---|---|\n| KD I | cruzado posterior **funcionando** | variáveis (em geral o lateral) |\n| **KD II** | **os dois rotos** | **os dois íntegros** |\n| KD III | os dois rotos | **um** roto (M ou L) |\n| KD IV | os dois rotos | os dois rotos |\n| KD V | luxação com fratura periarticular | |\n\nOs sufixos acrescentam o que veio junto: **C** para lesão arterial e **N** para lesão neurológica. O exemplo do próprio capítulo é o KD III-MC: os dois cruzados, o colateral medial e a artéria poplítea.\n\n**Por que o KD II é o tipo menos intuitivo.** O capítulo o chama de **incomum**: romper os dois cruzados sem levar nenhum colateral exige um deslocamento quase puro, anteroposterior. É também o tipo mais fácil de definir por exclusão: do KD II em diante os dois cruzados estão sempre rotos, e o que muda de um tipo para o outro é só a contagem de colaterais. Zero colateral é o II.\n\n**O que a banca fez.** As alternativas brincam com combinações de quatro estruturas: os dois colaterais, os dois cruzados, um de cada e um cruzado com o canto posterolateral. Só uma delas segue a regra de que, do II em diante, os dois cruzados estão rotos.\n\n> **Na prova:** **KD II = os dois cruzados, colaterais íntegros.** Um colateral a mais é III; os dois, IV; o cruzado posterior funcionando é I.\n\nA classificação está na seção \"Classificação de Schenck\" do resumo.",
@@ -9168,44 +9135,28 @@
   "conferido": false
  },
  "trauma-0325": {
-  "conceito": "Imagine apertar um parafuso que comprime os fragmentos ao longo do seu próprio eixo. Se o traço da fratura fica aproximadamente perpendicular a esse eixo, a compressão aproxima as superfícies. Se fica paralelo, o fragmento pode escorregar. Essa geometria explica a indicação do **parafuso anterior no odontoide**.\n\nO traço favorável é o **transverso ou oblíquo de anterossuperior para posteroinferior**, enquadrado como **Grauer IIb**. No sentido oposto, de anteroinferior para posterossuperior, o traço é IIc e a compressão tende a aumentar o desvio por deslizamento (Rockwood, 10ª ed., cap. 48, “O parafuso anterior: a geometria decide”).\n\n**Direção do traço e nome do subtipo precisam concordar.** A questão oferece tanto uma geometria inadequada com o nome de outro tipo quanto a geometria correta com a letra errada. Não basta reconhecer “IIb” sem desenhar a inclinação.\n\nMesmo no traço favorável, a técnica exige redução quase anatômica e uma trajetória anterior executável. Cifose acentuada e tórax em barril podem impedir o caminho do implante; por isso a indicação não se resume à letra da classificação.\n\n> **Na prova:** anterossuperior para posteroinferior, Grauer IIb, é o par favorável ao parafuso anterior.",
-  "correta": "**C: anterossuperior para posteroinferior, IIb.** A orientação permite que a compressão axial aproxime os fragmentos, desde que haja redução e trajetória adequadas.",
+  "conceito": "O parafuso anterior do odontoide funciona como um parafuso de compressão: entra pela borda anteroinferior do corpo de C2, sobe pelo dente e, ao apertar, puxa a ponta contra a base ao longo do próprio eixo. Toda a questão sai daí. Compressão só aproxima fragmentos quando o traço fica mais ou menos **perpendicular** ao parafuso; se o traço corre **paralelo**, apertar faz um fragmento escorregar sobre o outro.\n\n**A classificação.** ANDERSON e D'ALONZO continua a mais usada para o odontoide: tipo I a ponta, tipo II a cintura, tipo III o corpo de C2. **GRAUER** fez duas coisas com ela. Definiu a fronteira entre II e III pela **faceta articular superior de C2** (se o traço a atinge, é III) e dividiu o tipo II, o mais comum, pela **orientação do traço** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48; Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1895):\n- **IIa:** transverso, com desvio mínimo;\n- **IIb:** oblíquo de **anterossuperior para posteroinferior**;\n- **IIc:** oblíquo de **anteroinferior para posterossuperior**, ou com cominuição anterior.\n\n**A figura: onde o parafuso passa.** Na radioscopia em perfil do Campbell (Fig. 48.22, p. 1898), o fio-guia (E) e depois o parafuso (F) entram na borda anteroinferior de C2 e sobem inclinados para trás, até a ponta do dente. Desenhe mentalmente os dois traços oblíquos sobre esse trajeto: o IIb, que desce da frente para trás, corta o parafuso quase em ângulo reto, e a compressão fecha o foco; o IIc, que sobe da frente para trás, fica quase paralelo ao parafuso, e a compressão empurra o fragmento para fora. Por isso o Campbell (p. 1896 e 1897) diz que o IIb é o mais adequado, \"porque a compressão será aplicada perpendicular ao traço\", e que a técnica não é recomendada no IIc nem nas fraturas de obliquidade reversa. O Rockwood chama o IIc de **contraindicação**.\n\n**O traço certo não basta.** O método exige redução quase anatômica (o Campbell fala em menos de 1 mm de translação) e uma trajetória possível: **tórax em barril** e **cifose cervical** acentuada podem impedir o caminho. Cominuição importante ou osteoporose também o afastam, e acima de 65 anos a soltura torna a idade contraindicação relativa. Os resultados não são perfeitos: o Rockwood cita 82% de consolidação numa revisão, 12% de pseudartrose e 24% de complicações maiores numa série; o Campbell, 85% com um parafuso e 90% com dois, com mais disfagia nos dois parafusos.\n\n> **Na prova:** IIb = anterossuperior para posteroinferior = parafuso anterior. IIc = anteroinferior para posterossuperior = contraindicado.\n\nA geometria está na seção \"O parafuso anterior: a geometria decide\" do resumo.",
+  "correta": "**C) anterossuperior para posteroinferior, IIb.** É a definição do subtipo IIb de GRAUER e o padrão em que a compressão do parafuso anterior, que sobe da borda anteroinferior de C2 até a ponta do dente, cai perpendicular ao traço e fecha o foco (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48; Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1895 a 1897). Exige ainda redução quase anatômica e trajetória possível.",
   "incorretas": {
-   "A": "**Combina um traço desfavorável com o subtipo favorável.** Anteroinferior para posterossuperior corresponde ao IIc; nele o parafuso tende a produzir deslizamento. Chamar esse desenho de IIb não muda sua mecânica.",
-   "B": "**Classifica corretamente o traço que contraindica a técnica.** O par anteroinferior para posterossuperior com IIc é coerente, mas a pergunta solicita o ideal para fixação anterior. Nesse sentido, a compressão aumenta o desvio em vez de controlar o foco.",
-   "D": "**Acerta o desenho e troca a letra.** O traço anterossuperior para posteroinferior é favorável, porém pertence ao IIb descrito na fonte. IIc é o sentido oposto ou o padrão cominutivo."
+   "A": "**Anteroinferior para posterossuperior, IIb** junta a direção de um subtipo com o nome do outro. O traço que sobe da frente para trás é o IIc de GRAUER, e não o IIb; e é justamente o traço paralelo ao parafuso, em que a compressão faria o fragmento escorregar. Quem marca esta opção decorou \"IIb\" sem desenhar a inclinação.",
+   "B": "**Anteroinferior para posterossuperior, IIc** acerta o par, mas responde outra pergunta: é a descrição exata do IIc, que o Rockwood (cap. 48) e o Campbell (cap. 48, p. 1897) colocam como contraindicação do parafuso anterior. No IIc, o traço fica paralelo ao trajeto e a compressão aumenta o desvio; para operar esse padrão sobra a artrodese posterior C1-C2, que o Rockwood admite em qualquer odontoide cirúrgico.",
+   "D": "**Anterossuperior para posteroinferior, IIc** tem a direção certa e o rótulo errado. Esse traço é o IIb; o IIc é o de obliquidade reversa, de anteroinferior para posterossuperior, às vezes com cominuição anterior, e é aí que a técnica fica contraindicada. A banca troca a letra para pegar quem lembra a figura, mas não o nome."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções Odontoid Fractures (classificação e parafuso anterior)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1895 a 1898 (GRAUER, Technique 48.11 e Fig. 48.22)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Fratura do odontoide (C2)"
-     ],
-     "blocos": [
-      "fratura-do-odontoide-c2-b60ceadc",
-      "fratura-do-odontoide-c2-dd277a76",
-      "fratura-do-odontoide-c2-95546c7a",
-      "fratura-do-odontoide-c2-4660967c"
-     ],
-     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
-     "trechosSha256": "b8853449db304958743d7d837bc97304620c7f1f9d79269cd0919f80f89e3946"
-    }
-   ],
-   "questaoSha256": "412850a4747d7bf423470d62f56b1f4bf925e468b7ea01df21bae5ec931593bf",
-   "comentarioSha256": "6486e0d9a35992d113922053971704449017909be489269ea0544fbe038b3af0"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/campbell15-48-22-t02.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 48, Fig. 48.22 (E e F), p. 1898. Radioscopia em perfil do parafuso anterior do odontoide: em E, o fio-guia entra pela borda anteroinferior de C2 e sobe até a ponta do dente; em F, o parafuso no mesmo trajeto.",
+    "largura": 1165,
+    "altura": 529
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0326": {
   "incorretas": {
@@ -15192,44 +15143,28 @@
   "conferido": false
  },
  "trauma-0755": {
-  "conceito": "Os cortes mostram translação entre vértebras e perda da relação das facetas, com luxação. Mesmo sem déficit neurológico, esse padrão pode somar pontos suficientes para tratamento cirúrgico no SLIC: **translação 4, complexo discoligamentar roto 2 e neurologia intacta 0, total 6**.\n\nO escore combina três domínios; não é uma escala apenas de força ou sensibilidade. A perda grosseira da relação facetária e o desalinhamento caracterizam a morfologia de rotação/translação e implicam falha da contenção discoligamentar no padrão mostrado (Rockwood, 10ª ed., cap. 48, “SLIC: a classificação que vira conduta”).\n\n**Um paciente pode estar neurologicamente íntegro e mecanicamente instável.** O exame intacto zera o componente neurológico, mas não apaga a luxação nem restaura os ligamentos. No sistema apresentado, 3 ou menos costuma orientar tratamento não cirúrgico; 4 é intermediário; 5 ou mais favorece cirurgia.\n\nO total descreve a indicação pelo escore. A imagem e a avaliação clínica também são necessárias para planejar redução, investigar disco e escolher a via de estabilização; os seis pontos não especificam sozinhos uma técnica operatória.\n\n> **Na prova:** fratura-luxação com translação e neurologia intacta pode somar 6 e ter indicação cirúrgica.",
-  "correta": "**B: cirúrgico, 6 pontos.** A soma mantém 4 pela translação, 2 pela ruptura discoligamentar do padrão luxado e 0 pelo exame intacto. Ausência de déficit não significa ausência de instabilidade.",
+  "conceito": "Um motociclista sem nenhum déficit e uma tomografia assustadora. A questão quer saber se o exame neurológico normal basta para tratar sem cirurgia, e a resposta do SLIC é não: a coluna pode estar mecanicamente perdida com a medula intacta.\n\n**A imagem.** São três cortes sagitais da coluna cervical baixa. Os dois das pontas passam pelas colunas articulares: a fileira de facetas, que normalmente se empilha como telhas, se interrompe num nível, onde a faceta de cima perdeu o encaixe com a de baixo e escorregou para frente dela (a seta, no corte da direita, aponta esse ponto). O corte do meio, na linha média, mostra os corpos vertebrais. É uma **luxação facetária**, lesão de **translação**. A figura do Rockwood mostra o mesmo padrão numa luxação unilateral: o canal é normal acima e abaixo e fica menor exatamente no nível que transladou, sem fratura do arco (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48, Fig. 48-21).\n\n**O SLIC.** A Subaxial Cervical Injury Classification, de VACCARO e do Spine Trauma Study Group, pontua três domínios e soma. O Rockwood dá os domínios, o teto de 10 pontos e os cortes; a pontuação item a item está no Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, Tabela 48.6, p. 1901):\n\n| Domínio | Achado | Pontos |\n|---|---|---|\n| Morfologia | sem alteração / compressão / explosão | 0 / 1 / 2 |\n| Morfologia | distração (faceta empoleirada, hiperextensão) | 3 |\n| Morfologia | **rotação ou translação** (luxação facetária, teardrop instável) | **4** |\n| Complexo discoligamentar | íntegro / indeterminado | 0 / 1 |\n| Complexo discoligamentar | **roto** (disco anterior alargado, faceta empoleirada ou luxada) | **2** |\n| Neurológico | intacto / raiz / medular completa / medular incompleta | 0 / 1 / 2 / 3 |\n| Neurológico | compressão medular contínua com déficit | +1 |\n\n**A conta do caso.** Translação 4, complexo discoligamentar **roto** 2 (a própria tabela põe a luxação facetária entre os exemplos de complexo roto: as facetas só saem do lugar se a cápsula e os ligamentos cederem) e neurológico intacto 0: **6 pontos**. Com **3 ou menos**, o tratamento costuma ser não cirúrgico; com **4**, decidem os fatores associados; com **5 ou mais**, cirúrgico. O texto do Rockwood escreve \"acima de 5\" para a faixa cirúrgica; na proposta original e nas provas, 5 já é cirúrgico, o que aqui não muda nada, porque 6 está acima de qualquer das duas leituras.\n\n**Por que o sistema pesa assim.** O SLIC deu ao exame neurológico um domínio próprio, e a lesão incompleta pontua mais que a completa, por ter medula a salvar. Mas um neurológico zerado não apaga os outros dois domínios: morfologia e ligamentos, sozinhos, já somam 6. Os cirurgiões concordaram com a recomendação do sistema em **93%** dos casos, embora ele ainda não tenha validação prospectiva.\n\n> **Na prova:** luxação facetária sem déficit = 4 + 2 + 0 = 6, cirurgia. Explosão isolada = 2, sem cirurgia.\n\nA tabela e os cortes estão na seção \"SLIC: a classificação que vira conduta\" do resumo.",
+  "correta": "**B) Cirúrgico, com total de 6 pontos.** A luxação facetária vale 4 pela morfologia (translação), 2 pelo complexo discoligamentar roto, que a Tabela 48.6 do Campbell's Operative Orthopaedics, 15ª ed. (p. 1901), associa à faceta luxada, e 0 pelo neurológico intacto. Seis está na faixa cirúrgica do SLIC, como descrevem o Campbell e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48).",
   "incorretas": {
-   "A": "**Acerta a faixa cirúrgica e erra a conta do caso.** Cinco pontos já favorecem cirurgia, mas a translação com complexo roto soma 6 mesmo sem déficit. A indicação correta não corrige uma pontuação incorreta.",
-   "C": "**Diminui a gravidade morfológica e ligamentar.** Três pontos ou menos costuma orientar tratamento não cirúrgico, mas não é a soma da luxação com translação e ruptura mostradas. Não se pode zerar esses domínios porque o paciente move os membros.",
-   "D": "**Usa a zona intermediária sem corresponder à lesão.** Quatro pontos isolados não incluem os 2 do complexo roto, e o caso soma 6. Além disso, 4 é decisão por fatores associados, não sinônimo automático de tratamento conservador."
+   "A": "**Cirúrgico, com total de 5 pontos** acerta a conduta e erra a conta. Cinco seria, por exemplo, translação (4) com complexo discoligamentar indeterminado (1), o que não combina com uma faceta luxada: para a faceta sair do lugar, a cápsula e os ligamentos posteriores romperam, e a tabela do Campbell dá 2 a essa situação. A soma correta é 4 + 2 + 0.",
+   "C": "**Conservador, com total de 3 pontos** descreve uma lesão de outra classe, como a explosão (2) com complexo indeterminado (1), ou uma compressão (1) com complexo roto (2). Com 3 ou menos o SLIC indica tratamento não cirúrgico, mas a translação, sozinha, já vale 4 e nunca cabe nessa faixa. Seria a resposta se a tomografia mostrasse corpo fraturado com as facetas no lugar.",
+   "D": "**Conservador, com total de 4 pontos** trata a zona cinzenta como se fosse a resposta. Com 4 pontos, o SLIC deixa a decisão para os fatores associados (outras lesões, comorbidades, déficit), e 4 é o que a translação vale sozinha, antes de somar o complexo discoligamentar. Ignorar a ruptura ligamentar da luxação é o erro que leva a esse total."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Coluna subaxial: classificações e estabilidade."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seção SLIC e Fig. 48-21",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), Tabela 48.6, p. 1901",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Coluna subaxial: classificações e estabilidade"
-     ],
-     "blocos": [
-      "coluna-subaxial-classificacoes-e-estabilidade-e22b0f15",
-      "coluna-subaxial-classificacoes-e-estabilidade-63694d69",
-      "coluna-subaxial-classificacoes-e-estabilidade-c01dd9e0",
-      "coluna-subaxial-classificacoes-e-estabilidade-b5e7c0e5"
-     ],
-     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
-     "trechosSha256": "5eb537ac8a6d6c070859d412ad5c2f58d45d0ad30408be87d4bd800a2baa251a"
-    }
-   ],
-   "questaoSha256": "ff10fc195a359656509c509b40751748e2fa2d1692b6c6d4fa6ed8af2393a57e",
-   "comentarioSha256": "73723066f96b604ddad390f8a5df0cc0ffb0f83873514575d222007626263d3a"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/rwa10-48-21-w87.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48, Fig. 48-21, p. 1930. Reconstrução sagital de tomografia numa luxação facetária unilateral cervical: o diâmetro anteroposterior do canal é normal acima (A) e abaixo (C) da lesão e fica menor no nível da translação (B), sem fratura do arco.",
+    "largura": 680,
+    "altura": 1010
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0756": {
   "conceito": "A combinação escolhida é **homens e ruptura extraperitoneal**, alternativa B. Ela reúne duas informações relacionadas, mas distintas: a maior vulnerabilidade da uretra masculina e o tipo mais comum de ruptura da bexiga.\n\nO resumo descreve lesões de bexiga e uretra em **6% a 15%** das fraturas do anel, conforme a gravidade. No homem, a uretra posterior sofre sobretudo por **cisalhamento**; a uretra feminina é curta e protegida pela relação com a vagina. Nas rupturas vesicais, a **extraperitoneal representa cerca de 60%**, a intraperitoneal 30% e as combinadas 10% (Rockwood, 10ª ed., cap. 50, “Lesões urológicas”).\n\n**Extraperitoneal não descreve uma região da uretra.** É a ruptura vesical que comunica a urina com a área da fratura anterior. A intraperitoneal costuma envolver o teto da bexiga distendida e exige reparo urgente. Entender qual estrutura cada termo classifica evita decorar um par sem sentido anatômico.\n\nA investigação também é sequencial. Na suspeita de lesão uretral masculina, a uretrografia retrógrada avalia a uretra antes da sondagem vesical; com uretra íntegra, a cistografia estuda a bexiga. Se houver fixação interna anterior e ruptura extraperitoneal, o reparo conjunto ajuda a evitar urina no campo do implante.",
@@ -15375,43 +15310,30 @@
   "conferido": false
  },
  "trauma-0763": {
-  "conceito": "**O que a imagem mostra.** É um corte axial de C2 em tomografia. Dois parafusos entram pela base do processo espinhoso e seguem cruzados, em X, cada um por dentro de uma das lâminas. Não atravessam pedículo nem articulação: ficam inteiros no osso laminar. São os **parafusos translaminares** (ou intralaminares) de C2.\n\n**A artrodese C1–C2 e suas montagens.** O Rockwood (10ª ed., cap. 48) descreve três famílias para fundir o atlas ao áxis:\n- **Fios sublaminares** (Brooks, Gallie): menos complicações, mas exigem halo depois e podem acentuar fraturas desviadas para trás.\n- **Parafusos transarticulares**: atravessam a articulação C1–C2 e exigem redução razoável para que as massas laterais se sobreponham no trajeto.\n- **Massa lateral em C1 e parafuso em C2**: a montagem **mais versátil**, que não exige redução anatômica e ainda ajuda a reduzir. Em C2, o parafuso pode ser pedicular, de istmo ou intralaminar; num estudo biomecânico, o pedicular foi o mais forte, seguido do intralaminar.\n\n**De onde vêm os nomes.** O capítulo descreve a montagem sem os epônimos. O resumo registra a convenção que a banca usa: **Harms** para massa lateral em C1 com parafuso **pedicular** em C2; **Wright** para o parafuso **translaminar** em C2; **Magerl** para o transarticular. A imagem com lâminas atravessadas em X aponta para Wright.\n\n**Na prova:** parafusos cruzados nas lâminas de C2 = Wright; parafuso pelo pedículo = Harms; parafuso atravessando C1–C2 = Magerl; fio sob o arco com enxerto = Gallie.\n\nA seção de artrodese posterior C1–C2, no resumo de coluna cervical, mostra as três montagens lado a lado.",
-  "correta": "**D: Wright.** A montagem combina massa lateral em C1 com parafusos translaminares em C2, que é exatamente o desenho em X da tomografia. É uma variante da montagem mais versátil do capítulo.",
+  "conceito": "Quatro sobrenomes para uma mesma ideia, fundir o atlas ao áxis. O que distingue um do outro é por onde passa o implante em C2, e a imagem da prova mostra isso com clareza.\n\n**A imagem.** É um corte axial de tomografia em C2. Dois parafusos entram pela **base do processo espinhoso** e seguem cruzados, em X, cada um por dentro da **lâmina do lado oposto**; a cabeça de um deles aparece grande, à direita. Não atravessam pedículo, istmo nem articulação. São **parafusos translaminares** (ou intralaminares) de C2, que o enunciado diz estarem ligados a parafusos de massa lateral em C1.\n\n**A técnica, passo a passo na figura do Campbell.** A Fig. 39.18 (Campbell's Operative Orthopaedics, 15ª ed., cap. 39, p. 1502) mostra em A a sequência: uma janela cortical na junção do espinhoso com a lâmina, a broca avançando ao longo da lâmina contralateral, o primeiro parafuso, e o segundo entrando do outro lado e cruzando o primeiro. Em B, a montagem pronta: parafusos de massa lateral em C1 ligados por hastes aos laminares de C2. O capítulo de coluna do adulto (cap. 48, p. 1890) acrescenta os detalhes: a técnica foi **descrita em 2004** como alternativa com **menos risco para a artéria vertebral**; um parafuso fica um pouco mais caudal e mais inclinado que o outro, para os dois caberem; biomecanicamente equivale à montagem de HARMS para C1-C2, mas não para occipital-C2; e é usada quando a anatomia impede o parafuso no istmo de C2, como na artéria vertebral de trajeto anômalo, presente em cerca de **20%** das pessoas (cap. 39, p. 1501).\n\n**As famílias de artrodese C1-C2 lado a lado.**\n\n| Técnica | Em C1 | Em C2 | Fonte |\n|---|---|---|---|\n| GALLIE | fio sublaminar na linha média | fio pelo espinhoso, enxerto em bloco | Campbell, cap. 48, p. 1888 |\n| BROOKS | fios sublaminares laterais | fios sublaminares, enxerto em bloco entre os arcos | Campbell, cap. 48, p. 1889 e 1891 |\n| MAGERL | parafuso transarticular, do istmo de C2 até a massa lateral de C1 | o mesmo parafuso | Campbell, cap. 48, p. 1890 |\n| HARMS | parafuso de massa lateral | parafuso de istmo ou pedicular | Campbell, cap. 48, Técnica 48.6 |\n| translaminar (WRIGHT) | parafuso de massa lateral | parafusos cruzados nas lâminas | Campbell, caps. 39 e 48; resumo |\n\nO Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), descreve a montagem com massa lateral em C1 como a **mais versátil**: não exige redução anatômica e ainda ajuda a reduzir. Em C2, o parafuso pode ser pedicular, de istmo ou intralaminar; num estudo biomecânico, o **pedicular** foi o mais forte, seguido do **intralaminar** e do de istmo.\n\n> **Na prova:** cruzado nas lâminas de C2 = WRIGHT; istmo ou pedículo de C2 = HARMS; atravessando a articulação C1-C2 = MAGERL; fio e enxerto = GALLIE ou BROOKS.\n\nA montagem está na seção de artrodese posterior C1-C2, dentro de \"Fratura do odontoide (C2)\", no resumo.",
+  "correta": "**D) WRIGHT.** É o nome que o resumo registra para a montagem com parafusos de massa lateral em C1 e parafusos translaminares cruzados em C2, a da imagem. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1890; cap. 39, p. 1501 e 1502, Fig. 39.18), descreve a técnica, publicada em 2004, como alternativa quando a anatomia impede o parafuso no istmo ou no pedículo de C2, com menos risco para a artéria vertebral.",
   "incorretas": {
-   "A": "**Harms também usa massa lateral em C1, mas o parafuso de C2 vai pelo pedículo.** A diferença está toda em C2: na imagem, os parafusos estão dentro das lâminas, cruzando a linha média, e não seguindo o pedículo para o corpo vertebral.",
-   "B": "**Gallie é a técnica com fio sublaminar.** Um fio passa sob o arco de C1 e prende um enxerto ao processo espinhoso de C2. Não há parafuso, e o capítulo lembra que essas técnicas exigem halo depois.",
-   "C": "**\"Margel\" é Magerl, o parafuso transarticular C1–C2.** Ele cruza a articulação entre as massas laterais de C1 e C2 e exige redução razoável. Não é o parafuso que corre dentro da lâmina de C2."
+   "A": "**HARMS** usa o mesmo parafuso de massa lateral em C1, mas em C2 o parafuso vai pelo **istmo** (ou pelo pedículo), não pela lâmina: é a Técnica 48.6 do Campbell (cap. 48), com o parafuso de C1 descrito por GOEL e refinado por HARMS e MELCHER. Seria a resposta se o corte mostrasse os parafusos de C2 subindo pelos istmos, divergentes, e não cruzados atrás do canal. O translaminar é justamente a saída quando o istmo não aceita parafuso.",
+   "B": "**GALLIE** não tem parafuso: é um fio passado sob o arco posterior de C1 na linha média, amarrado ao espinhoso de C2 sobre um enxerto em bloco. O Campbell (cap. 48, p. 1888) lembra que ele cria força dirigida para trás, útil em algumas lesões do transverso, mas resiste mal à rotação, porque a fixação é central; o Rockwood acrescenta que as técnicas com fio exigem halo depois. Nada disso aparece num corte com parafusos.",
+   "C": "**MAGERL** (escrito \"MARGEL\" na prova) é o **parafuso transarticular** C1-C2: entra em C2, passa pelo istmo, cruza a articulação C1-C2 e termina na massa lateral de C1. Precedeu a técnica de HARMS, é tecnicamente difícil e fica impossível em até 23% dos pacientes por restrição óssea ou vascular (Campbell, cap. 48, p. 1890); o Rockwood lembra que exige redução razoável para as massas laterais se sobreporem. No axial de C2 ele não aparece na lâmina."
   },
-  "conferido": false,
+  "alerta": "Nenhum livro local usa o epônimo WRIGHT. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1890, e cap. 39, p. 1501 e 1502), descreve a técnica de parafusos translaminares em C2 ligados à massa lateral de C1 e diz que foi publicada em 2004, sem citar o autor; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), fala em parafusos intralaminares, também sem epônimo. O nome vem da convenção registrada no resumo, a mesma que a banca usa, e o gabarito oficial (D) foi mantido.",
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Fratura do odontoide (C2)."
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48 (Fractures, Dislocations, and Fracture-Dislocations of the Spine), p. 1888 a 1891 (GALLIE, BROOKS, Técnica 48.6 de HARMS, translaminar e transarticular)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 39, p. 1501 e 1502 (Técnica 39.3, Fig. 39.18)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seção Odontoid Fractures (artrodese posterior C1-C2)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Fratura do odontoide (C2)"
-     ],
-     "blocos": [
-      "fratura-do-odontoide-c2-0a216035",
-      "fratura-do-odontoide-c2-feeecbd6",
-      "fratura-do-odontoide-c2-ed2832d8"
-     ],
-     "sha256": "0811defd439c8c56e9fcf9d2a36856a7264201eb096be5b228c224b4f50e77dd",
-     "trechosSha256": "497ee711afdb5d9988e1906e59612ee33f794597b81f0c604fea619e18c7a9a2"
-    }
-   ],
-   "questaoSha256": "40d94054ef4eb7b4adb650267ebd3ed6e37d281d4a44d95c7899714efc42b588",
-   "comentarioSha256": "8e08f70dd286ea0d76e5f9f9806a8b4849c64d320b5ec68047021853a5a8a187"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/campbell15-39-18-t02.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 39, Fig. 39.18, p. 1502. Em A, a sequência da colocação dos parafusos translaminares de C2: entrada na base do processo espinhoso e trajeto por dentro da lâmina do lado oposto, os dois se cruzando em X. Em B, a montagem pronta em perfil e de frente, com os parafusos de massa lateral de C1 ligados aos laminares de C2 por hastes.",
+    "largura": 1138,
+    "altura": 1012
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0764": {
   "conceito": "Na radiografia em perfil, o traço separa o **colo do tálus**, e o corpo perdeu suas relações normais tanto com a subtalar quanto com a pinça tibiotalar. A resposta é **colo do tálus, Hawkins III**, alternativa B.\n\nHá duas perguntas para resolver. Primeiro, localizar o traço: no colo, ele sai à frente da faceta posterior; uma fratura do corpo prossegue para trás do processo lateral e alcança essa faceta. Depois, identificar quais articulações perderam a congruência. Hawkins é uma classificação da **fratura do colo**, não um nome aplicável a toda fratura talar (Rockwood, 10ª ed., cap. 66, “Classificação”).\n\nNo tipo II, a subtalar está subluxada ou luxada, mas o tornozelo permanece congruente. No III, soma-se a luxação tibiotalar; no IV, também a talonavicular. Nesta imagem, a posição do corpo em relação à tíbia afasta a interpretação de um II. Não é necessário inventar uma lesão talonavicular que a reprodução não demonstra para subir ao IV.\n\nO estágio traduz uma agressão importante às ligações vasculares e às partes moles. O corpo luxado, frequentemente posteromedial no tipo III, pode comprimir o feixe tibial posterior e ameaçar a pele; sua redução é urgente. A fixação definitiva depende das condições do paciente e dos tecidos, e a TC ajuda a detalhar o padrão depois de controlar a ameaça imediata.\n\n> **Na prova:** localize colo versus corpo e conte as articulações; subtalar mais tornozelo é Hawkins III.",
@@ -24364,47 +24286,28 @@
   "conferido": false
  },
  "trauma-1109": {
-  "conceito": "O’Driscoll II.3 exige **faceta anteromedial e tubérculo sublime**. A ponta pode acompanhar o fragmento ou permanecer fora dele. Assim, C é a única alternativa que contém as estruturas obrigatórias do subtipo.\n\nO tipo II reúne as fraturas anteromediais. No subtipo 1, só a borda; no2, borda e ponta; no3, borda e tubérculo sublime, **com ou sem ponta**. O número do subtipo não é simplesmente uma escala de altura como a de Regan-Morrey: ele descreve a extensão anatômica da fratura (Rockwood, 10ª ed., cap. 40, “O’Driscoll: o lugar, e o lugar diz o mecanismo”).\n\nO tubérculo sublime não é apenas um ponto de referência no desenho. Nele se insere o feixe anterior do colateral medial, importante contra o valgo. Quando esse local vai junto ao fragmento anteromedial, pode haver instabilidade em valgo além da falha em varo do padrão posteromedial. O capítulo ressalta essa consequência no tratamento da faceta.\n\nPor isso é necessário identificar o que o fragmento leva, não apenas notar que há uma fratura do coronoide. A TC com reconstrução 3D ajuda a definir a borda, o tubérculo e a congruência. Uma descrição de “faceta e ponta” não garante que o tubérculo sublime esteja incluído e pode classificar o subtipo errado.\n\n> **Na prova:** II.3: faceta anteromedial mais sublime; a ponta é opcional.",
-  "correta": "**C: faceta anteromedial e tubérculo sublime.** São os componentes obrigatórios da definição. A inclusão do ponto de inserção medial explica por que o subtipo pode acrescentar instabilidade em valgo.",
+  "conceito": "A palavra que decide a questão é \"necessariamente\". O subtipo pedido tem duas estruturas obrigatórias e uma opcional, e a banca colocou a opcional numa das alternativas para ver quem confunde o que pode vir junto com o que define o subtipo.\n\n**Por que existe uma segunda classificação do coronoide.** A de REGAN e MORREY mede só a **altura** do fragmento no perfil: tipo I a ponta, tipo II menos de 50% da altura, tipo III mais de 50%, cada um A (isolado) ou B (com luxação). O'DRISCOLL e colaboradores acrescentaram o **lugar** da fratura, o tamanho e o mecanismo, e o lugar conta qual lesão de cotovelo está por trás (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40, seção Classification of Coronoid Fractures).\n\n**A classificação, para acompanhar na figura.** O desenho do Rockwood mostra o coronoide visto de cima, com a cabeça do rádio à direita, e três famílias de traço:\n- **Tipo I, ponta (Tip):** subtipo 1 até 2 mm; subtipo 2 acima de 2 mm e abaixo de 50% da altura. É a fratura da **tríade terrível**.\n- **Tipo II, faceta anteromedial (Anteromedial):** subtipo 1 só a **borda**; subtipo 2 borda e **ponta**; subtipo 3 borda e **tubérculo sublime**, **com ou sem a ponta**. É a fratura da **instabilidade rotatória posteromedial em varo**.\n- **Tipo III, base (Basal):** subtipo 1 corpo e base; subtipo 2 base com **fratura transolecraniana**. Acompanha as **fraturas-luxações do olécrano e da ulna proximal**.\n\nO texto do capítulo usa as mesmas palavras do gabarito: o subtipo III do tipo II envolve \"a borda e o tubérculo sublime, com ou sem a ponta\". A ponta, portanto, pode estar no fragmento, mas não precisa.\n\n**Por que o tubérculo sublime pesa tanto.** É nele que se insere o **feixe anterior do colateral medial**, que nasce na face anteroinferior do epicôndilo medial e é o principal estabilizador contra o **valgo**. A faceta anteromedial, por sua vez, é o apoio da tróclea contra o **varo**. A lesão posteromedial nasce de varo com carga axial, quase sempre com avulsão do **colateral lateral**: o úmero roda sobre a ulna e a tróclea esmaga a faceta. Quando o fragmento leva também o sublime (subtipo 3), o cotovelo perde as duas âncoras: soma-se **instabilidade em valgo** à falha em varo.\n\n**O que muda no tratamento.** Mesmo fragmentos pequenos da faceta alteram a cinemática em varo, e reparar só o colateral lateral não devolveu a estabilidade com fragmentos de **5 mm ou mais**. A tomografia com reconstrução 3D é recomendada de rotina para ver o que o fragmento levou. Na maioria se opera: via **medial**, **placa de suporte na faceta anteromedial** (a sutura usada na ponta pequena da tríade não segura essa borda) e, depois do teste em varo, reparo do colateral lateral.\n\n> **Na prova:** II.1 só a borda; II.2 borda e ponta; II.3 borda e sublime, ponta opcional. A ponta isolada é tipo I; a base é tipo III.\n\nA classificação e as associações estão na seção \"O'Driscoll: o lugar, e o lugar diz o mecanismo\" do resumo.",
+  "correta": "**C) a faceta anteromedial e o tubérculo sublime.** São as duas estruturas que definem o subtipo 3 do tipo II de O'DRISCOLL no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 40): a borda anteromedial e o tubérculo sublime, com ou sem a ponta. Como o feixe anterior do colateral medial se insere no sublime, esse subtipo junta à instabilidade em varo uma instabilidade em valgo, o que pesa na fixação.",
   "incorretas": {
-   "A": "**Troca a localização do grupo.** Base é o tipo III, relacionado às fraturas-luxações da ulna proximal. O subtipo II.3 continua sendo uma lesão da faceta anteromedial, com extensão ao sublime.",
-   "B": "**Transforma uma extensão possível em obrigatória.** A ponta pode estar incluída no II.3, mas a definição permite que fique preservada. Ela sozinha não identifica nem a faceta nem o tubérculo que caracterizam o subtipo.",
-   "D": "**Descreve a combinação do subtipo II.2.** Borda anteromedial com ponta não exige o sublime. No II.3, o ponto obrigatório acrescentado é o tubérculo sublime, haja ou não fratura da ponta."
+   "A": "**A base do processo coronoide** define outro tipo, o III de O'DRISCOLL, dividido em corpo e base (subtipo 1) e base com fratura transolecraniana (subtipo 2). É o coronoide das fraturas-luxações do olécrano e da ulna proximal, de mecanismo posterior mais direto, e não o da faceta anteromedial. O subtipo II.3 pode ser um fragmento grande, mas a sua marca é o sublime, não a base.",
+   "B": "**A ponta do processo coronoide** isolada é o tipo I de O'DRISCOLL (até 2 mm, ou acima de 2 mm e abaixo de 50% da altura), a fratura típica da tríade terrível. No subtipo II.3 a ponta é opcional: o capítulo diz \"com ou sem a ponta\". Uma estrutura que pode faltar não é acometida necessariamente.",
+   "D": "**A faceta anteromedial e a ponta do coronoide** é a definição do subtipo 2 do tipo II, não do 3. O que separa os dois é o tubérculo sublime: no II.2 o traço sai da borda e alcança a ponta; no II.3 desce até a inserção do feixe anterior do colateral medial. Escolher esta opção é trocar o componente obrigatório pelo opcional."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fraturas do coronoide; Quem segura o cotovelo; Instabilidade rotatória posteromedial em varo."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40 (Elbow Dislocations and Terrible Triad Injuries), seções Classification of Coronoid Fractures e Varus Posteromedial Rotatory Instability (Fig. 40-13)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 39 (anatomia do colateral medial)",
+   "Resumo OrtoQuestões: Luxação do cotovelo, cabeça do rádio e tríade terrível"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-25",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Fraturas do coronoide",
-      "Quem segura o cotovelo",
-      "Instabilidade rotatória posteromedial em varo"
-     ],
-     "blocos": [
-      "fraturas-do-coronoide-261ac45a",
-      "fraturas-do-coronoide-67ec539b",
-      "quem-segura-o-cotovelo-2b1e3945",
-      "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66",
-      "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29"
-     ],
-     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
-     "trechosSha256": "f34e1bd301f089b4a75cc7e61699fecdf1cda5feb8f05d4cc0c4fa50138e7ab7"
-    }
-   ],
-   "questaoSha256": "e993d023d27512e7d3cc050fa46ccd82cdffe45a2b8daa9846857fedd7940f69",
-   "comentarioSha256": "610805360aca31ae6b84650027c0c4c3831891d364bf0dd2d5454aba66dbb7bf"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-40-13-t02.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40, Fig. 40-13, seção Classification of Coronoid Fractures (PDF sem página impressa). Classificação de O'DRISCOLL vista de cima: os traços da ponta (Tip), da faceta anteromedial (Anteromedial) e da base (Basal) do coronoide, com a cabeça do rádio ao lado.",
+    "largura": 1177,
+    "altura": 859
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-1110": {
   "conceito": "**A suspeita de lesão da radioulnar distal aumenta com um traço radial próximo ao punho e fratura da base do estiloide ulnar.** O resumo situa o grupo de maior instabilidade a até **7,5 cm** da superfície articular e identifica a **base**, não a ponta, como o local relevante do estiloide. Entre as alternativas, isso sustenta C pela bibliografia.\n\nO significado é articular: a Galeazzi associa fratura diafisária radial e lesão distal. A base se relaciona à fixação dos estabilizadores do complexo distal; um traço radial próximo da articulação pede atenção especial à congruência e à estabilidade. Uma fotografia estática, contudo, não informa tudo sobre o comportamento depois de reconstruir o rádio.\n\nO capítulo apresenta a limitação dos parâmetros históricos. Estudos posteriores acharam distância de 7,5 cm e encurtamento de 5 mm pouco confiáveis quando usados sozinhos, recomendando o teste intraoperatório após a fixação. Por isso, os sinais da pergunta orientam **pesquisar**, não dispensam exame nem determinam reparo automático.\n\n**Na Biblioteca, leia “Quem tem a radioulnar distal lesada”, incluindo o contraponto aos números.** Não há gabarito oficial registrado no acervo desta prova; a resposta abaixo é provável pela fonte, preservando essa diferença.",
