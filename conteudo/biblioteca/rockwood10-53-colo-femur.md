@@ -1,6 +1,6 @@
 ---
 id: rockwood10-53-colo-femur
-versao: 1
+versao: 2
 titulo: Fratura do colo do fêmur
 especialidade: trauma
 acesso: gratis
@@ -314,11 +314,13 @@ conceito: Haste cimentada: menos fratura periprotética e mais embolia, com meno
 
 ## A via de Hardinge e o nervo glúteo superior
 
-Na via **lateral direta de Hardinge**, divide-se o terço anterior do glúteo médio e continua-se pelo vasto lateral, deixando uma faixa tendínea no trocânter para a sutura. O limite é proximal: o **nervo glúteo superior** corre entre o glúteo médio e o mínimo, e o risco aumenta quando a divisão do músculo passa de **cerca de 5 cm acima do trocânter**. Sua lesão causa fraqueza abdutora e marcha de Trendelenburg.
+Na via **lateral direta de Hardinge**, incisa-se o tendão do glúteo médio sobre o trocânter e rebate-se o vasto lateral do fêmur; na ponta do trocânter, os glúteos são divididos no sentido das fibras. O limite é proximal: o **nervo glúteo superior** corre entre o glúteo médio e o mínimo, e o risco aumenta quando a divisão do músculo passa de **cerca de 5 cm acima do trocânter**. Sua lesão causa fraqueza abdutora e marcha de Trendelenburg.
+
+A distância segura muda pouco entre os livros. O Rockwood (cap. 53) diz que o risco ao nervo aumenta quando a dissecção passa de **5 cm acima do trocânter**. O Campbell 15 (cap. 1, Técnica 1.69 de HARDINGE, p. 61) manda incisar o tendão do glúteo médio obliquamente, deixando a **metade posterior** presa ao trocânter, e limita a divisão do músculo a **4 a 5 cm da ponta do trocânter maior**, para poupar o nervo e a artéria glúteos superiores. O The Adult Hip (cap. 83, Fig. 83.4) confirma o trajeto do nervo, que sai da pelve acima do piriforme e corre entre o glúteo médio e o mínimo, põe o limite em mais de 5 cm da ponta do trocânter e cita lesão do glúteo superior em até 23% das vias de HARDINGE (RAMESH). A fraqueza abdutora com marcha de TRENDELENBURG pela lesão do nervo está no Campbell 15 (cap. 4, p. 267), que descreve também uma zona segura de 5 cm acima do trocânter (Fig. 4.102).
 
 !questoes central=quadril-0127 treino=trauma-1563
-conceito: Na via de Hardinge, dissecar mais de 3 a 5 cm acima do trocânter lesa o nervo glúteo superior.
-como: É uma questão de anatomia cirúrgica pura e já apareceu em mais de uma prova. A distância (3 a 5 cm) é a pista; o nervo é o que inerva os abdutores que estão sendo divididos.
+conceito: Na via de Hardinge, dividir o glúteo médio mais de 4 a 5 cm (Campbell 15, p. 61) ou de cerca de 5 cm (Rockwood, cap. 53) acima do trocânter lesa o nervo glúteo superior.
+como: É uma questão de anatomia cirúrgica pura e já apareceu em mais de uma prova. A distância é a pista (4 a 5 cm no Campbell, cerca de 5 cm no Rockwood); o nervo é o que inerva os abdutores que estão sendo divididos.
 armadilha: Marcar o ciático, que está em risco na via posterior.
 !fim
 
@@ -367,6 +369,8 @@ armadilha: Confundir menor risco de falha (valgo) com menor risco de necrose (an
 
 O **índice de alinhamento de Garden** compara as trabéculas compressivas da cabeça com a cortical medial da diáfise: **cerca de 160° no AP** e **180° no perfil**. Garden obteve bons resultados entre **155° e 180°** em cada incidência; fora disso, a falha e a necrose aumentam. Na radioscopia é mais fácil usar o **sinal de Lowell**: os contornos corticais da cabeça e do colo formam **curvas suaves em S (ou S invertido)** em todas as incidências; uma curva achatada de um lado e um ângulo agudo do outro indicam má redução.
 
+Os limites do índice não batem nem dentro do Rockwood: o texto do cap. 53 dá bons resultados de GARDEN entre **155° e 180°** em cada incidência, mas a legenda da **Fig. 53-13** considera aceitável de **160° a 180° no AP e no perfil**. O Campbell 15 (cap. 60, p. 2652, Fig. 60.6) fica com **160° a 180° no AP**: abaixo de 160° é **varo**, acima de 180° é **valgo excessivo**; no perfil, cerca de 180°, e desvio de mais de 20° indica anteversão ou retroversão excessiva. Os valores normais (160° no AP, 180° no perfil) são os mesmos nos dois livros; o que muda é o piso aceitável no AP (155° ou 160°).
+
 !questoes central=trauma-0064,trauma-0242,quadril-0331,quadril-0235,quadril-0328 treino=trauma-1539
 conceito: Índice de Garden: cerca de 160° no AP e 180° no perfil; sinal de Lowell: curvas em S na junção cabeça-colo.
 como: É um dos conceitos mais repetidos do tema, em várias provas e anos. As alternativas trocam os valores do AP e do perfil, oferecem 125° a 135° (o ângulo cervicodiafisário, não o índice) e trocam Garden por Lowell. Guarde os dois números na ordem certa: AP 160, perfil 180.
@@ -405,7 +409,9 @@ conceito: Encurtamento do colo acima de 5 mm piora a função (muito pior acima 
 
 ## Colo e diáfise do mesmo lado
 
-É a combinação do jovem com trauma de alta energia: **2% a 9% das fraturas da diáfise** têm fratura do colo associada, e no passado **até 30% passavam despercebidas**. O padrão típico é a fratura **basocervical, vertical e sem desvio**. Para não perder o diagnóstico, Tornetta recomenda **tomografia de cortes finos** e radiografia **AP do colo em rotação interna**. O colo é a prioridade, pelo risco de necrose e pseudartrose.
+É a combinação do jovem com trauma de alta energia: **2% a 9% das fraturas da diáfise** têm fratura do colo associada, e no passado **até 30% passavam despercebidas** (cap. 53). O padrão típico, descrito no capítulo da diáfise (cap. 57), é a fratura **basocervical**, muitas vezes de traço **vertical** e **sem desvio ou com desvio mínimo**. Para não perder o diagnóstico, Tornetta recomenda **tomografia de cortes finos** e radiografia **AP do colo em rotação interna**. O colo é a prioridade, pelo risco de necrose e pseudartrose.
+
+O capítulo da diáfise do fêmur (Rockwood, cap. 57) dá os números com mais detalhe. A fratura do colo acompanha a da diáfise em **cerca de 1% a 10%** dos casos (em outro trecho do mesmo capítulo, 1% a 9%); muitas são **sem desvio ou minimamente desviadas** e passam despercebidas em **30% a 57%** dos pacientes (Tabela 57-3; em outro trecho, 20% a 50%). O padrão varia: ALHO encontrou subcapital em 2%, mesocervical em 21%, **basocervical em 39%**, pertrocantérica em 14% e intertrocantérica em 24%; na revisão de SHULER, a **basocervical foi a mais comum (55%)**, seguida do traço **vertical mesocervical intracapsular de cisalhamento (35%)** e do intertrocantérico (10%). Esses traços verticais são axialmente instáveis, e as fraturas despercebidas foram todas do colo, nenhuma intertrocantérica. O cap. 53 se contradiz na redação: escreve os 2% a 9% como fração das fraturas do colo, enquanto o cap. 57 deixa claro que a porcentagem é das fraturas da diáfise.
 
 Opções de tratamento: haste cefalomedular única (atrativa, mas com **mais má redução do colo**; só serve para colo sem desvio ou perfeitamente reduzido), **haste retrógrada para a diáfise com parafusos canulados ou DHS no colo** (combinação popular, com consolidação do colo em 98% numa série; a diáfise estabilizada facilita reduzir o colo), placa na diáfise distal com parafusos no colo, ou DHS com placa longa.
 

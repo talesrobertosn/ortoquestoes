@@ -1,6 +1,6 @@
 ---
 id: rockwood10-24-fraturas-estresse
-versao: 2
+versao: 3
 titulo: Fraturas por estresse
 especialidade: trauma
 acesso: gratis
@@ -82,6 +82,8 @@ A tríade é a **interação e coexistência frequente de distúrbio alimentar, 
 
 O elo entre as três é a **hipótese do dreno de energia**: com pouca caloria, a produção de **estrogênio e progesterona** cai na lista de prioridades do corpo, os ciclos param, e o estrogênio baixo libera a **atividade osteoclástica**. O treino de alta intensidade, por si só, também suprime a menstruação. A fratura por estresse se associa a **menor ingestão de gordura**, menor ingestão calórica, transtornos alimentares e **peso abaixo de 75% do ideal**. A tríade ajuda a explicar por que **atletas e recrutas mulheres** quebram mais do que homens na mesma atividade.
 
+O HEBERT (cap. 75, Traumatologia do esporte) usa a definição clássica: a tríade da mulher atleta é a presença de **distúrbios dietéticos, amenorreia e osteoporose** e representa um fator de risco importante para a fratura por estresse. No mesmo trecho, ele dá à mulher um **risco relativo de 3,8 a 12 vezes** o do homem e aponta os brancos como mais suscetíveis que os negros americanos e os hispânicos.
+
 Números do capítulo que têm cara de prova:
 
 - Em **390 atletas** mulheres, as adolescentes de **14 a 19 anos** tiveram mais risco que as de 20 anos ou mais. A **amenorreia secundária** (3 meses ou mais sem menstruar) aumentou o risco **12,9 vezes**; o **escore Z da densidade óssea abaixo de −1,0**, **4,5 vezes**; o **IMC abaixo de 17,5**, **1,1 vez**.
@@ -116,7 +118,7 @@ A tríade é mais estudada nas mulheres, mas o capítulo dedica uma seção ao *
 conceito: A mulher tem mais fratura por estresse que o homem na mesma atividade; no homem de resistência, a baixa densidade óssea, a testosterona baixa e a deficiência calórica também são fatores de risco.
 como: O TEOT 2022 perguntou a frequência relativa na mulher e onde ela quebra mais (maior, pelve e fêmur). O TARO 2009 listou quatro fatores, um para cada sexo.
 armadilha: Aumento do IMC na mulher: o risco cresce com o IMC baixo (abaixo de 17,5 a 19 nos estudos do capítulo).
-alerta: O TARO 2009 (trauma-1146) não tem gabarito oficial no acervo. Pelo capítulo, três das quatro afirmativas são verdadeiras: baixa densidade óssea no homem, testosterona baixa no homem e distúrbio alimentar na mulher; só o aumento do IMC na mulher está errado. No TEOT 2022 (trauma-1103), o capítulo sustenta o "maior" (atletas e recrutas mulheres quebram mais) e cita a pelve e a diáfise femoral como sítios típicos de mulheres e corredoras, mas não traz uma comparação de distribuição por sexo.
+alerta: O TARO 2009 (trauma-1146) não tem gabarito oficial no acervo. Pelo capítulo, três das quatro afirmativas são verdadeiras: baixa densidade óssea no homem, testosterona baixa no homem e distúrbio alimentar na mulher; só o aumento do IMC na mulher está errado. No TEOT 2022 (trauma-1103), o capítulo sustenta o "maior" (atletas e recrutas mulheres quebram mais) e cita a pelve e a diáfise femoral como sítios típicos de mulheres e corredoras, mas não traz uma comparação de distribuição por sexo. O HEBERT (cap. 75) quantifica o "maior": risco relativo de 3,8 a 12 vezes o do homem.
 !fim
 
 ## Vitamina D
@@ -378,6 +380,8 @@ A metáfise proximal do quinto metatarso é sítio de **alto risco**: pela **irr
 | III | **diáfise proximal** |
 !fim
 
+Os capítulos de fraturas do pé nomeiam a zona III como a sede da fratura por estresse. O Rockwood (cap. 68, Fig. 68-43, classificação de LAWRENCE e BOTTE) chama a zona 1 de avulsão da tuberosidade, a zona 2 de fratura da junção metáfise-diáfise (a fratura de JONES) e a zona 3 de **fratura por estresse da diáfise proximal**; as frequências relativas vão de **46% a 73% na zona 1**, **14% a 39% na zona 2** e **8% a 15% na zona 3**. O Campbell 15 (cap. 93, p. 4120 e 4121) define a zona III como os **1,5 cm proximais da diáfise**, onde a fratura por estresse costuma ocorrer, e a subdivide pela classificação de **TORG**: tipo I, fratura aguda; tipo II, retardo de consolidação, com reação periosteal, alargamento do traço e alguma esclerose intramedular; tipo III, pseudartrose, com esclerose intramedular e bordas rombas.
+
 Aparece em **jogadores de basquete e corredores**, com dor lateral no pé que piora durante e depois da corrida ou do salto e vai aumentando; não é raro a fratura aguda completa surgir depois de dias ou semanas de dor prévia. A dor à palpação fica distal à tuberosidade, **em geral na zona III**, e a radiografia costuma mostrar **esclerose** ao redor do traço (a figura 24-5B é um grau III num jogador de futebol).
 
 **Tratamento, sempre agressivo:**
@@ -488,11 +492,13 @@ Três mecanismos geram a carga: o **torque rotacional** de balançar ou arremess
 
 A exceção cirúrgica é o **olécrano do arremessador competitivo**: pode consolidar sem cirurgia, mas, **com traço visível (grau III)**, o tratamento ideal é a **fixação interna**. As **costelas** estão entre as de baixo risco; a figura 24-2 é uma remadora com fratura da **sexta costela na linha axilar média**.
 
+No esqueleto imaturo, a carga repetida pode lesar a própria fise. O Rockwood and Wilkins 10ª ed. (cap. 2) descreve a **lesão fisária por estresse** como entidade própria da criança, parecida com a fratura por estresse, vista sobretudo no **rádio e na ulna distais das ginastas competitivas**, na **tíbia proximal no futebol** e no **úmero proximal dos arremessadores do beisebol**; o tratamento é repouso, retorno cuidadoso à atividade e vigilância de distúrbio do crescimento da fise.
+
 !questoes central=trauma-0480 relacionadas=pediatria-0585 treino=trauma-1254
 conceito: No membro superior, a fratura por estresse é rara e quase sempre de baixo risco; quem apoia o peso nos braços (ginastas) quebra distal ao cotovelo; o olécrano do arremessador com traço (grau III) vai para fixação interna.
 como: O ENARE 2023 trouxe um canoísta com dor costal na linha axilar média e pediu as costelas acometidas (quinta à oitava). O TARO 2021 perguntou onde a lesão fisária por estresse é mais frequente (antebraço dos ginastas).
 armadilha: Antebraço do jogador de beisebol: o arremesso sobrecarrega o úmero e o olécrano; o antebraço é dos ginastas, pela carga axial.
-alerta: O capítulo 24 mostra a sexta costela de uma remadora na linha axilar média, mas não dá a faixa da quinta à oitava costela cobrada no ENARE 2023 (trauma-0480), nem trata da lesão fisária por estresse da criança (TARO 2021, pediatria-0585); ele sustenta só o princípio de que a carga axial dos ginastas vai para o segmento distal ao cotovelo.
+alerta: O capítulo 24 mostra a sexta costela de uma remadora na linha axilar média, mas não dá a faixa da quinta à oitava costela cobrada no ENARE 2023 (trauma-0480). A lesão fisária por estresse da criança (TARO 2021, pediatria-0585) não está no capítulo 24, que sustenta só o princípio de que a carga axial dos ginastas vai para o segmento distal ao cotovelo; o Rockwood and Wilkins 10ª ed. (cap. 2) confirma o gabarito: a lesão é vista sobretudo no rádio e na ulna distais das ginastas, além da tíbia proximal no futebol e do úmero proximal no beisebol.
 !fim
 
 # Pelve e sacro {radar=oportunidade}

@@ -1,6 +1,6 @@
 ---
 id: campbell14-lca
-versao: 3
+versao: 4
 titulo: Lesão do ligamento cruzado anterior e o que vem junto
 especialidade: joelho
 acesso: gratis
@@ -405,7 +405,9 @@ alerta: `joelho-0307` não tem gabarito oficial; o gabarito pela bibliografia é
 
 **Quanto tensionar.** A tensão deve ser suficiente para eliminar o LACHMAN; demais, ela "captura" o joelho, dificulta recuperar o movimento ou degenera a cartilagem. **A tensão necessária depende do tecido, do comprimento e da rigidez: o osso-tendão patelar-osso precisa de menos tensão que o semitendíneo, porque é mais curto e mais rígido** (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, Quadro 50.7, p. 2079). Fixando a 30 graus, os isquiotibiais precisam de 80 N, e o patelar de 20 N; o patelar fixado em extensão completa precisa de 90 N. A força cai até 30% depois da fixação se o enxerto não for pré-condicionado. Tensão suprafisiológica degenera o enxerto, com fibras mais grossas e menos orientadas e queda da resistência.
 
-Pense numa mola curta e dura e numa mola longa e macia. Para segurar o mesmo peso sem folga, a mola longa precisa ser esticada muito mais. O tendão patelar é a mola curta e rígida; os isquiotibiais quádruplos, a longa e mais complacente.
+Pense numa mola curta e dura e numa mola longa e macia. Para segurar o mesmo peso sem folga, a mola longa precisa ser esticada muito mais. O tendão patelar é a mola curta e rígida; o semitendíneo, a longa e mais complacente.
+
+Isso não contradiz a tabela de cargas, em que os isquiotibiais quádruplos aparecem mais rígidos que o patelar (807 contra 455 N/mm; cap. 56, Tabela 56.2, p. 2366). A tabela mede o enxerto isolado na máquina, com os quatro fios somados; o Quadro 50.7 compara o patelar com o **semitendíneo** e fala da tensão de fixação, que depende do **comprimento** e da rigidez do enxerto no joelho (cap. 50, Quadro 50.7, p. 2079). Os flexores são longos, presos por tecido mole, sem fixação óssea rígida, e sofrem mais fluência e relaxamento; o patelar tem pontas ósseas que permitem fixação rígida (cap. 50, Tabela 50.4, p. 2076; cap. 56, p. 2366). Os números de rigidez do patelar também variam entre as tabelas do próprio livro: cerca de 620 N/mm na Tabela 50.4 (p. 2076) e 455 N/mm na Tabela 56.2 (p. 2366).
 
 !questoes central=joelho-0056 relacionadas=trauma-1073
 conceito: O patelar precisa de menos tensão na fixação que os isquiotibiais, porque a sua parte tendínea é mais curta e mais rígida.

@@ -1,6 +1,6 @@
 ---
 id: campbell15-biomecanica-ombro-cotovelo
-versao: 1
+versao: 2
 titulo: Biomecânica do ombro e do cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -202,6 +202,12 @@ LIPPITT descreveu o efeito de **concavidade-compressão**: a compressão da cabe
 - A estabilidade por concavidade-compressão é **maior com o braço pendente** do que em abdução e rotação externa. Ou seja, ela é o estabilizador mais importante **nos arcos médios**, quando cápsula e ligamentos estão frouxos. Nos extremos, os ligamentos estirados assumem.
 - Ela depende de uma **concavidade intacta**: o Campbell (cap. 52, p. 2207.e1) diz que a concavidade-compressão é produzida pela estabilização dinâmica do manguito **quando a concavidade da glenoide e do lábio está intacta**, e que a contração sincrônica, excêntrica e concêntrica, do **manguito e do bíceps** é necessária para a estabilidade nos arcos médios.
 
+!questoes treino=ombro-cotovelo-0714
+conceito: A concavidade-compressão estabiliza a cabeça empurrando-a para dentro da glenoide; vale mais nos arcos médios e com o braço pendente, quando cápsula e ligamentos estão frouxos, e depende de uma concavidade intacta da glenoide e do lábio (Campbell, cap. 52, p. 2207.e1).
+como: O simulado pergunta os estabilizadores da glenoumeral segundo o Campbell e mistura o papel de cada ligamento glenoumeral com frases sobre o deltoide e o lábio.
+armadilha: Aceitar que a perda do lábio não muda a compressão na concavidade: sem a concavidade intacta, o mecanismo perde força.
+!fim
+
 ## Os pares de força
 
 Um par de forças são dois músculos de lados opostos que, juntos, centram a cabeça. Há dois na glenoumeral, e a prova pode chamá-los por plano:
@@ -302,6 +308,12 @@ O Campbell (cap. 15, p. 643) descreve o cotovelo como **três articulações**: 
 ## O eixo de rotação
 
 O **centro instantâneo de rotação** da flexoextensão fica no centro de círculos concêntricos formados, na vista lateral, pela projeção do capítulo e da tróclea. Ele é pequeno, com **2 a 3 mm de diâmetro**, e fica **no centro da tróclea** (Campbell, cap. 15, p. 643). O eixo passa **anterior à linha média do úmero**, sobre a linha da **cortical anterior** do úmero distal. O **eixo transverso da radiocapitelar coincide com o da umeroulnar**, e o **eixo longitudinal do antebraço** passa pela cabeça do rádio em cima e pela cabeça da ulna embaixo, oblíquo aos eixos dos dois ossos. Esse é o eixo que um fixador articulado ou uma prótese precisam reproduzir.
+
+!questoes relacionadas=ombro-cotovelo-0043
+conceito: O centro instantâneo de rotação da flexoextensão do cotovelo tem 2 a 3 mm de diâmetro e fica no centro da tróclea na vista lateral, com o eixo passando anterior à linha média do úmero, sobre a cortical anterior (Campbell, cap. 15, p. 643 e 644, Fig. 15.2).
+como: O TARO 2015 perguntou onde fica o eixo de flexoextensão no perfil, com centro da tróclea, centro do capítulo, centro da cabeça do rádio e base do coronoide.
+armadilha: Marcar o centro do capítulo: o eixo transverso da radiocapitelar coincide com o da umeroulnar, mas o livro situa o centro de rotação na tróclea.
+!fim
 
 As superfícies **deslizam** até os extremos da flexão e da extensão, quando então ocorre o **impacto ósseo** (p. 643). O contato também muda com a posição (p. 644): em **extensão total**, fica na **face inferomedial da ulna**; nas outras posições, corre ao longo da incisura troclear, de posterolateral para anteromedial.
 

@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-joelho
-versao: 3
+versao: 4
 titulo: Anatomia do joelho
 especialidade: joelho
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatom
 edicao: 2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026)
 capitulo: Capítulo 9 · Perna/Joelho
 autores: Jon C. Thompson (ilustrações de Frank H. Netter)
-fonte: Livros conferidos localmente em 01/11/2026: Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho) lido por inteiro, inclusive as tabelas que só existem como imagem (aprox. p. 265 a 347), e as tabelas de músculos da coxa do cap. 8 (aprox. p. 237 a 240); Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries, p. 1983 a 2000, 2015 a 2023, 2065 a 2067, 2078, 2098 e 2099), cap. 1 (vias de acesso ao joelho, p. 25 a 47), cap. 8 (p. 412 a 414 e 421) e cap. 10 (p. 500 e 501). As páginas citadas são as impressas; no Netter, que não traz número no cabeçalho do arquivo, foram inferidas pelo deslocamento constante do capítulo e vão marcadas como aproximadas.
+fonte: Livros conferidos localmente em 01/11/2026: Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 9 (Perna/Joelho) lido por inteiro, inclusive as tabelas que só existem como imagem (aprox. p. 265 a 347), e as tabelas de músculos da coxa do cap. 8 (aprox. p. 237 a 240); Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries, p. 1983 a 2000, 2015 a 2023, 2065 a 2067, 2078, 2098 e 2099), cap. 1 (vias de acesso ao joelho, p. 25 a 47), cap. 8 (p. 412 a 414 e 421), cap. 10 (p. 500 e 501) e cap. 68 (p. 3072). As páginas citadas são as impressas; no Netter, que não traz número no cabeçalho do arquivo, foram inferidas pelo deslocamento constante do capítulo e vão marcadas como aproximadas.
 subtemas: Anatomia do joelho; Vias de acesso ao joelho
 resumo: Semimembranáceo e suas cinco expansões (a primeira é o ligamento poplíteo oblíquo) e o oblíquo posterior de HUGHSTON (espessamento do ligamento capsular medial); canto posterolateral com LCF, tendão poplíteo e popliteofibular (rotação externa); poplíteo roda medialmente a tíbia e destrava o joelho; ligamento anterolateral extra-articular, entre GERDY e a fíbula, atuando a 30 e 90 graus; LCA irrigado pela genicular média, feixes AM e PL; LCP e meniscofemorais de HUMPHREY e WRISBERG; platô lateral convexo; trato iliotibial em GERDY; fabela no gastrocnêmio lateral; via de GALLA e LOBENHOFFER entre semimembranáceo e gastrocnêmio medial; ângulo Q; COVENTRY com hipercorreção a 8 a 10 graus de valgo; nervos fibulares e safeno; testes do exame físico.
 ---
@@ -517,7 +517,7 @@ A **artéria poplítea** começa no **hiato dos adutores**, segue pela fossa pop
 !tabela Artérias do joelho (Netter cap. 9, aprox. p. 324 e 325; Campbell caps. 1 e 50)
 | Artéria | Origem | Comentário |
 | --- | --- | --- |
-| descendente do joelho (genicular descendente) | femoral, no canal dos adutores | ramos articular e safeno; o subvasto preserva o seu ramo articular |
+| descendente do joelho (genicular descendente) | femoral superficial, cerca de 13 cm acima do joelho, logo proximal ao hiato dos adutores | ramos osteoarticular, muscular e safeno; o subvasto preserva o seu ramo articular |
 | superior medial do joelho | poplítea | contorna o côndilo medial acima da linha, por baixo dos isquiotibiais |
 | superior lateral do joelho | poplítea | em risco na liberação lateral; cauterizada na artroplastia |
 | média do joelho | poplítea | perfura a cápsula posterior; irriga LCA, LCP e sinóvia |
@@ -527,6 +527,8 @@ A **artéria poplítea** começa no **hiato dos adutores**, segue pela fossa pop
 !fim
 
 As quatro geniculares, superiores e inferiores, anastomosam-se em volta do joelho e da patela e alimentam o plexo perimeniscal (Netter). Na figura medial do joelho, a artéria que contorna o fêmur logo **acima do côndilo medial**, saindo da poplítea por baixo dos isquiotibiais, é a **genicular superior medial**; a **descendente do joelho** vem de cima, da femoral, mais anterior, junto ao safeno; a **femoral profunda** e a **circunflexa femoral medial** ficam no alto da coxa. O Campbell lembra que o acesso subvasto preserva o ramo articular da descendente do joelho (cap. 1, p. 32) e que, na via posterior direta, as geniculares superolateral e superomedial passam por baixo dos isquiotibiais logo acima das cabeças do gastrocnêmio (cap. 1, p. 45, Técnica 1.54).
+
+A descendente do joelho tem mais detalhe no capítulo de enxertos vascularizados do Campbell (cap. 68, p. 3072). Ela sai da **femoral superficial** cerca de **13 cm acima do joelho**, logo proximal ao **hiato dos adutores**, existe em cerca de **90%** das pessoas e se divide em dois ou três destes ramos: **osteoarticular**, **muscular** e **safeno**. O ramo osteoarticular nasce cerca de 11 cm acima do joelho, profundo ou lateral ao tendão do adutor magno, e se anastomosa sobre o côndilo medial com a **genicular superior medial**, que sai da poplítea cerca de 5 cm acima do joelho e é a dominante em 11%. É essa arcada que nutre o retalho livre vascularizado do côndilo femoral medial, usado nas pseudartroses da clavícula e do escafoide.
 
 !figura 1.58 imagem=joelho/campbell15-1-58-w31.jpeg
 Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.58, p. 45. Circulação colateral do joelho vista por trás: a poplítea, no centro, solta as geniculares superiores medial e lateral acima dos côndilos, a genicular média para dentro da cápsula e as geniculares inferiores medial e lateral abaixo da interlinha; o nervo tibial desce ao lado e o fibular comum segue o bíceps.

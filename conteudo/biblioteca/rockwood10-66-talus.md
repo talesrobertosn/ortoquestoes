@@ -1,6 +1,6 @@
 ---
 id: rockwood10-66-talus
-versao: 3
+versao: 4
 titulo: Fraturas do tálus e do calcâneo
 especialidade: trauma
 acesso: gratis
@@ -96,7 +96,7 @@ Duas incidências especiais servem antes da cirurgia e, sobretudo, na fluoroscop
 | Incidência | Como se faz | Para que serve |
 | --- | --- | --- |
 | CANALE e KELLY | pé apoiado no chassi, **pronado 15 graus**, raio inclinado **75 graus** | redução e **comprimento medial do colo** (evita o varo) |
-| BRODEN | decúbito dorsal, tornozelo em **rotação interna de 30 a 45 graus**, flexão neutra, imagens em 10, 20, 30 e 40 graus | **faceta posterior da subtalar** e fragmentos presos na articulação |
+| BRODEN | decúbito dorsal, tornozelo em **rotação interna de 30 a 45 graus**, flexão neutra, imagens seriadas em 10, 20, 30 e 40 graus de **flexão plantar** (o capítulo 66 não fala em inclinar o raio) | **faceta posterior da subtalar** e fragmentos presos na articulação |
 !fim
 
 !figura 66-11
@@ -104,6 +104,8 @@ Posição do pé na incidência de CANALE e KELLY para o colo do tálus.
 !fim
 
 A pronação gira o colo, que é desviado para medial, até ele aparecer no eixo longo. Por isso CANALE é a incidência contra o **varo**: a tabela de armadilhas do capítulo diz que o uso correto dela permite avaliar o alinhamento da coluna medial. BRODEN é, para o capítulo, o melhor exame simples para a subtalar.
+
+Os números de BRODEN mudam de livro para livro, e a banca pode usar qualquer um. No capítulo 66 do Rockwood, os 10 a 40 graus são de **flexão plantar do pé**, com a rotação interna de 30 a 45 graus e sem posição do raio. No capítulo 67 (calcâneo), o mesmo Rockwood põe a perna em rotação interna de 30 a 40 graus e **inclina o raio** a 40, 30, 20 e 10 graus em sentido cranial. O Campbell (cap. 93, p. 4064) descreve uma única BRODEN, com a perna em **rotação interna de 40 graus**, tornozelo neutro e raio a **10 a 15 graus** cefálicos; a legenda da Fig. 93.5, logo adiante, fala em **45 graus** de rotação interna com o tubo inclinado de **10 a 40 graus**, e acrescenta uma vista em rotação externa de 45 graus com o tubo a 30 graus. O que não muda é o alvo: a faceta posterior da subtalar.
 
 !questoes central=trauma-0051,trauma-0319 relacionadas=trauma-0882,trauma-0238,pe-tornozelo-0177 treino=trauma-1610
 conceito: CANALE e KELLY: pé pronado 15 graus e raio a 75 graus, para ver o colo no seu eixo e o comprimento medial; BRODEN mostra a faceta posterior da subtalar.
@@ -215,7 +217,7 @@ como: Uma prova do CET-PR perguntou o desvio ósseo mais comum na fratura do col
 
 ## Processo lateral: a fratura do snowboarder
 
-Mecanismo: **carga axial com o retropé em eversão e o tornozelo em dorsiflexão**, reproduzido em cadáver; outro estudo obteve fraturas semelhantes com carga axial, **rotação externa e inversão**, também em dorsiflexão. Com mais energia, o fragmento cresce e cominui, e a subtalar pode ficar incongruente ou instável. A clínica é a de uma entorse com dor no **seio do tarso**; a incidência do **encaixe** mostra a fratura (figura 66-5), e a TC ou a RM confirmam quando a radiografia é negativa.
+Mecanismo: **carga axial com o retropé em eversão e o tornozelo em dorsiflexão**, reproduzido em cadáver; outro estudo obteve fraturas semelhantes com carga axial, **rotação externa e inversão**, também em dorsiflexão. Os outros livros não concordam entre si. O Campbell (cap. 93, nas fraturas do processo lateral) fala em **carga axial, dorsiflexão, rotação externa e eversão**, lembra que a fratura passa despercebida de início em até 50% dos casos e descreve o **sinal do V** de VON KNOCH (o contorno em V do processo interrompido na radiografia). O HEBERT (cap. 70) dá como mecanismo a **inversão e a dorsiflexão forçadas** do pé, com a clínica de uma entorse em inversão. Com mais energia, o fragmento cresce e cominui, e a subtalar pode ficar incongruente ou instável. A clínica é a de uma entorse com dor no **seio do tarso**; a incidência do **encaixe** mostra a fratura (figura 66-5), e a TC ou a RM confirmam quando a radiografia é negativa.
 
 - **Sem cirurgia:** fragmento pequeno, com pouco ou nenhum desvio: carga protegida e movimento precoce, com controle radiográfico.
 - **Cirurgia:** fragmento **maior que 1 cm** ou desvio da subtalar; a **instabilidade subtalar** criada por fragmento grande é **indicação absoluta**. Fragmentos pequenos presos na subtalar podem ser retirados sem criar instabilidade. A artrodese subtalar primária na cominução irreconstruível tem papel limitado.
@@ -354,7 +356,7 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 67), pede de saída o
 | Perfil | do retropé | perda de altura, depressão e rotação da faceta; **BÖHLER** (normal **25 a 40 graus** no Rockwood, cap. 67; **20 a 40 graus** na Fig. 93.4 do Campbell, cap. 93) cai e **GISSANE** aumenta; separa língua de depressão |
 | Axial de HARRIS | do calcanhar | **perda de altura, aumento da largura, rotação do fragmento sustentacular, angulação da tuberosidade** (varo) |
 | AP e oblíqua do pé | padrão | processo anterior e **calcaneocubóidea** (traço chega a ela em até 48%) |
-| BRODEN | perna em rotação interna (Rockwood: 30 a 40 graus, raio a 40, 30, 20 e 10 graus cranial; Campbell: 40 graus, raio 10 a 15 graus cefálico) | **faceta posterior da subtalar** |
+| BRODEN | perna em rotação interna (Rockwood: 30 a 40 graus, raio a 40, 30, 20 e 10 graus cranial; Campbell: 40 graus no texto da p. 4064, raio 10 a 15 graus cefálico, e 45 graus na legenda da Fig. 93.5, com o tubo de 10 a 40 graus) | **faceta posterior da subtalar** |
 | TC | corte coronal perpendicular à faceta posterior, fatias de 3 mm | o padrão da faceta, o sustentáculo e a forma da tuberosidade |
 !fim
 

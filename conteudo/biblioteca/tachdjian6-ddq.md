@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-ddq
-versao: 3
+versao: 4
 titulo: Displasia do desenvolvimento do quadril
 especialidade: pediatria
 acesso: gratis
@@ -336,6 +336,8 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 13, p. 460 e 461), decide po
 !fim
 
 **SALTER** gira o acetábulo inteiro sobre a **sínfise púbica**, com corte reto pela serra de GIGLI da **incisura isquiática à EIAI** e enxerto triangular da crista; o pré-requisito é a **redução concêntrica**. Abaixo de 18 meses a asa é fina; acima de 9 ou 10 anos o fragmento não roda. Deve ficar **fechada atrás** (aberta só alonga o membro). Os riscos são o **ciático** (ao passar a GIGLI), o femoral e o cutâneo femoral lateral, e gesso em rotação medial acentuada pode **subluxar para trás**; o Campbell diz que ela **não causa retroversão**. **PEMBERTON** dobra na **trirradiada**, corrige mais com menos rotação, dispensa fixação e **diminui o volume**: serve ao acetábulo **capacioso** e é contraindicada no pequeno; o Campbell a usa de 1 ano até a trirradiada endurecer (**12 anos nas meninas, 14 nos meninos**), e o risco é o **fechamento precoce da trirradiada**. Os livros divergem na idade de ambas.
+
+O contraste entre as duas está no princípio. O Lovell and Winter (cap. 23, p. 1046) lembra que SALTER, em 1961, criou a osteotomia para **redirecionar o acetábulo inteiro como uma unidade**, articulando-o na sínfise, e que ela foi desenhada para **preservar as estruturas e a forma normais do acetábulo**, corrigindo só a orientação anterolateral; é a osteotomia pélvica mais usada e, pela facilidade aparente, também a mais mal indicada. Já a PEMBERTON muda a forma e reduz o volume, como visto acima.
 
 **STEEL** é pouco usada hoje: técnica difícil, não muda o tamanho do acetábulo e **distorce a pelve, podendo impedir o parto normal** (Campbell, p. 1158). O Tachdjian indica a tripla com a trirradiada aberta e GANZ no adolescente e adulto jovem; o Campbell põe ambas na "adolescência tardia até a maturidade", STEEL com trirradiada aberta e GANZ com fechada. **GANZ** (p. 465 a 468) faz cortes isquiático, do ramo superior, ilíaco e da coluna posterior, preservando a **coluna posterior** e a irrigação do acetábulo, com **pelve verdadeira inalterada**, carga com muletas precoce e possibilidade de osteotomia trocantérica associada. Leva o centro-borda lateral de **-4° para 23°**; lesa o **cutâneo femoral lateral em até 50%** e tem curva de aprendizado "longa e íngreme". **CHIARI** desloca o acetábulo **medialmente** sob o ílio, quase toda a largura dele (o Campbell a chama de **artroplastia de interposição capsular**), e dá bom resultado em **dois terços**; prótese é mais provável acima de **25 anos** (MACNICOL). O Campbell a prefere ao shelf na subluxação sintomática grave acima de 10 anos e avisa que inclinar mais de 20° põe o corte na sacroilíaca. O **shelf de STAHELI** coloca enxerto sob a cabeça refletida do reto femoral e é contraindicado no quadril congruente, candidato a redirecionamento (Campbell, p. 1163).
 

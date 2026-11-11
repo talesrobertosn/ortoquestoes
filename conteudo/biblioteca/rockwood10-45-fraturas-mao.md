@@ -201,7 +201,7 @@ Fratura isolada, sem rotação, com pouca angulação e encurtamento menor que 5
 
 A tala imobiliza o **punho em 30° de extensão** e as **MCF em 70° a 90°**, deixando os dedos fecharem; nos dedos de borda, goteira radial ou ulnar. Até a **quarta semana** a imobilização sai e a terapia começa. Os autores preferem uma **tala removível de punho com esparadrapo no dedo vizinho**: a tala sai em 3 a 4 semanas e o esparadrapo em 6.
 
-!questoes central=mao-0743,trauma-0091 relacionadas=trauma-0328,conceitos-basicos-0140 treino=mao-1709
+!questoes central=mao-0743,trauma-0091 relacionadas=trauma-0328,conceitos-basicos-0140,mao-1895 treino=mao-1709
 conceito: Na imobilização da mão, as MCF ficam em 70° a 90° de flexão (intrínseca plus) para manter os colaterais esticados e evitar contratura em extensão.
 como: O TARO 2017 e o IAUPE 2025 pediram o ângulo das MCF; o TEOT 2023 (trauma-0328) e o SBOT-SP (conceitos-basicos-0140) pediram o punho do gesso de Burkhalter, e o gabarito de **40°** de extensão é confirmado pelo próprio Rockwood no capítulo de gessos (cap. 10, Fig. 10-17, p. 296): punho em 40° de dorsiflexão e MCF em 70° a 90° de flexão, com tala dorsal que deixa os dedos fletirem. Os 30° de extensão deste capítulo são os da posição intrínseca plus em geral, não os do gesso de Burkhalter.
 !fim

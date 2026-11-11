@@ -1,6 +1,6 @@
 ---
 id: rockwood10-61-luxacao-joelho
-versao: 4
+versao: 5
 titulo: Luxação do joelho e lesão multiligamentar
 especialidade: trauma
 acesso: gratis
@@ -219,7 +219,7 @@ armadilha: Anterolateral em extensão e posteromedial em flexão: é a posição
 
 ## Os ligamentos meniscofemorais
 
-Pelo menos um está presente em **93%** dos joelhos. O de **Humphrey** passa **à frente** do cruzado posterior; o de **Wrisberg**, **atrás**. Ligam o **corno posterior do menisco lateral** à incisura intercondilar, somam em média **17,2%** da área da inserção do cruzado posterior e são considerados **restritores secundários da translação posterior**, além de estabilizarem o corno posterior do menisco lateral.
+Pelo menos um está presente em **93%** dos joelhos. O de **Humphrey** passa **à frente** do cruzado posterior; o de **Wrisberg**, **atrás**. Ligam o **corno posterior do menisco lateral** à incisura intercondilar, somam em média **17,2%** da área da inserção do cruzado posterior (o Campbell 15, cap. 50, p. 2094, dá cerca de **22%** da área de secção do cruzado posterior) e são considerados **restritores secundários da translação posterior**, além de estabilizarem o corno posterior do menisco lateral.
 
 !questoes central=trauma-1060,trauma-1000
 conceito: Os meniscofemorais saem do corno posterior do menisco lateral, acompanham o cruzado posterior (Humphrey à frente, Wrisberg atrás) e são restritores secundários da translação posterior da tíbia.
@@ -230,7 +230,7 @@ armadilha: Translação anterior: eles acompanham o cruzado posterior e seguram 
 
 ## A cápsula posterior e o cisto de Baker
 
-A cápsula posterior nasce na margem proximal dos côndilos femorais e se prende abaixo do planalto; medialmente continua com o colateral medial superficial e o oblíquo posterior. Entre a **cabeça medial do gastrocnêmio** e a inserção direta do **semimembranáceo** costuma haver um defeito de tamanho variável na cápsula posteromedial, provável origem do **cisto de Baker**. O **ligamento poplíteo oblíquo** é um espessamento da cápsula que nasce medialmente da confluência de uma expansão do semimembranáceo com um braço do oblíquo posterior, mede cerca de 48 mm e se alarga de 9,5 para 16,4 mm até a inserção lateral, na fabela e na tíbia posterior logo lateral ao cruzado posterior; em 20 joelhos dissecados, nunca se prendeu ao côndilo femoral lateral.
+A cápsula posterior nasce na margem proximal dos côndilos femorais e se prende abaixo do planalto; medialmente continua com o colateral medial superficial e o oblíquo posterior. Entre a **cabeça medial do gastrocnêmio** e a inserção direta do **semimembranáceo** costuma haver um defeito de tamanho variável na cápsula posteromedial, provável origem do **cisto de Baker**. O **ligamento poplíteo oblíquo** é um espessamento da cápsula que nasce medialmente da confluência de uma expansão do semimembranáceo com um braço do oblíquo posterior, mede cerca de 48 mm e se alarga de 9,5 para 16,4 mm até a inserção lateral, na fabela e na tíbia posterior logo lateral ao cruzado posterior; em 20 joelhos dissecados, nunca se prendeu ao côndilo femoral lateral. O Campbell 15 descreve o trajeto, não a inserção: o ligamento sai da inserção do semimembranáceo na tíbia posteromedial e sobe, oblíquo e para lateral, **em direção à cabeça lateral do gastrocnêmio** (cap. 50, p. 1984), ou em direção ao côndilo femoral lateral, prendendo-se lateralmente à porção meniscofemoral da cápsula posterior e à fabela (p. 1988). Os dois livros concordam na fabela; "em direção ao côndilo" não quer dizer que ele se prenda ao côndilo.
 
 !questoes central=joelho-0256
 conceito: O cisto de Baker sai do defeito da cápsula posteromedial entre a cabeça medial do gastrocnêmio e o semimembranáceo.
@@ -252,6 +252,8 @@ como: O TEOT 2025 perguntou quando o cruzado posterior passa a segurar a hiperex
 
 Numa série de 63 luxações, o cruzado posterior estava roto em **87%**, quase sempre por avulsão proximal ou ruptura no meio; só **5%** eram avulsões distais. Em outra (68 joelhos), predominaram a ruptura intrassubstancial (**37%**), a avulsão tibial sem osso (28%) e a avulsão femoral sem osso (18%); avulsões com osso foram menos comuns (femoral 7%, tibial 10%). Avulsões distais com fragmento ósseo costumam ser reparadas.
 
+Fora da luxação, o Campbell 15 (cap. 50, p. 2095) descreve os dois mecanismos da lesão isolada do cruzado posterior. O mais comum é o **trauma do painel**: no acidente de carro, com o joelho fletido, a tíbia proximal bate no painel e é empurrada para trás; o livro manda procurar junto fratura da diáfise e do colo do fêmur e luxação posterior do quadril. O outro é a **queda sobre o joelho fletido com o pé em flexão plantar**, em que a tuberosidade da tíbia toca o chão primeiro e empurra a tíbia para trás; com o pé em dorsiflexão, quem bate é a patela, e o risco passa a ser a fratura da patela, não o cruzado. Os critérios mais citados para tratar sem cirurgia a lesão isolada estão na p. 2096: **gaveta posterior menor que 10 mm** (grau II) com a tíbia em rotação neutra, **menos de 5° de frouxidão rotatória anormal** (rotação externa a 30°, que indicaria lesão posterolateral) e **nenhuma frouxidão importante em varo ou valgo**; o livro trata sem cirurgia todas as lesões agudas isoladas grau I e a maioria das grau II, com retorno ao esporte em cerca de 85%. O algoritmo da avulsão óssea do cruzado posterior (Fig. 50.124, de VELTRI e WARREN, p. 2097) separa os desvios em "menos de 10 mm" e "mais de 10 a 15 cm": o "cm" é erro de unidade da figura, e a leitura certa é **mais de 10 a 15 mm**.
+
 A **artéria poplítea fica a 7 a 10 mm** da face posterior do cruzado posterior: é ela que corre risco ao perfurar o túnel tibial. Para expor a inserção tibial (reparo de avulsão ou reconstrução **inlay**), a via limitada de **Burks e Schaffer** usa o intervalo entre a **cabeça medial do gastrocnêmio e o semimembranáceo**; o gastrocnêmio medial, afastado lateralmente, protege o feixe neurovascular. Ficam em risco a **artéria genicular média** (muitas vezes ligada) e o ramo motor do nervo tibial para o gastrocnêmio medial.
 
 !questoes central=trauma-1080
@@ -262,7 +264,7 @@ armadilha: Semitendíneo e grácil: são tendões da pata de ganso, anteriores e
 
 ## A técnica preferida e o "killer turn"
 
-Os autores fazem **duplo feixe** com aloenxerto de **tendão calcâneo** (Aquiles), fixação suspensória e os túneis femorais por dentro do côndilo medial. A regra de tensão é a dos feixes: **anterolateral a 90° de flexão**, **posteromedial em extensão completa**. Transtibial e inlay dão resultados parecidos **se o túnel tibial sair baixo, 1,5 a 2 cm abaixo da linha articular**: assim o enxerto transtibial fica na mesma posição do inlay e se elimina a curva aguda (**killer turn**) que alonga ou rompe o enxerto. O inlay fica para o obeso com luxação de baixíssima energia e para KD IV em que a via medial já está aberta.
+Os autores fazem **duplo feixe** com aloenxerto de **tendão calcâneo** (Aquiles), fixação suspensória e os túneis femorais por dentro do côndilo medial. No fêmur, o túnel do **anterolateral** tem **10 a 11 mm** de diâmetro e 25 mm de profundidade, o mais alto possível na incisura e 10 mm atrás da cartilagem; o do **posteromedial** tem **7 a 8 mm** e também 25 mm, logo abaixo do primeiro, com ponte óssea de pelo menos 4 mm e os dois divergindo para a cortical. A regra de tensão é a dos feixes: **anterolateral a 90° de flexão**, **posteromedial em extensão completa**. O Campbell 15 confirma os ângulos na técnica de duplo feixe de LAPRADE (cap. 56, Técnica 56.26, p. 2390 a 2392): o anterolateral é fixado primeiro, a 90° com força de gaveta anterior para refazer o degrau tibiofemoral normal, e o posteromedial a 0°. Transtibial e inlay dão resultados parecidos **se o túnel tibial sair baixo, 1,5 a 2 cm abaixo da linha articular**: assim o enxerto transtibial fica na mesma posição do inlay e se elimina a curva aguda (**killer turn**) que alonga ou rompe o enxerto. O inlay fica para o obeso com luxação de baixíssima energia e para KD IV em que a via medial já está aberta.
 
 Sobre **duplo contra feixe único**: há forte evidência de laboratório a favor do duplo feixe, e metanálises recentes sugerem vantagem clínica (menos translação nas radiografias com estresse, menos rotação externa a 90° e mais IKDC objetivo normal ou quase normal), mas a maioria dos especialistas ainda não considera a evidência clínica suficiente para preferir uma técnica. O duplo feixe vira feixe único quando se reconstrói só o anterolateral.
 
@@ -271,6 +273,8 @@ Para não lesar o feixe neurovascular: perfurar com o joelho a **90° de flexão
 ## O que costuma sobrar depois
 
 Numa série de 35 reconstruções combinadas dos dois cruzados, o Lachman e o pivot shift ficaram normais em **94%**, mas a gaveta posterior só ficou normal em **46%**. Reconstruir só o cruzado posterior num joelho que também perdeu o canto deixa **mais translação posterior residual**. A **ossificação heterotópica** também se associa à reconstrução do cruzado posterior.
+
+O Campbell 15 dá a lista em ordem. Na Tabela 50.7 (cap. 50, p. 2109), a primeira complicação depois do tratamento do cruzado posterior é a **frouxidão posterior residual**, definida como **mais de 4 mm** de translação posterior a mais na radiografia com estresse; a segunda é a **perda de flexão de 10° a 20°**. Sobre o prognóstico, o mesmo capítulo (p. 2098) diz que a variável que mais prediz o estado funcional é a instabilidade ser **unidirecional, e não multidirecional**, no momento da lesão, com correlação direta entre a instabilidade combinada e condromalácia da patela, lesão de menisco, atrofia do quadríceps e artrose; a 13ª edição (cap. 45, p. 2243) dá o autor do estudo, **TORG**. Na mesma página, a gaveta posterior grau III (mais de 10 mm) é indicação relativa de reconstrução.
 
 > Na prova: o problema mais comum depois de reconstruir o cruzado posterior é a **frouxidão posterior residual**.
 

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-50-anel-pelvico
-versao: 1
+versao: 2
 titulo: Lesões do anel pélvico
 especialidade: trauma
 acesso: gratis
@@ -529,6 +529,7 @@ A classificação mais usada é a de **DENIS**, que olha a **orientação e o lu
 !fim
 
 - A **zona III** é a mais heterogênea: inclui traços verticais, oblíquos e horizontais. As fraturas **horizontais** passam despercebidas sem TC de cortes finos e reconstrução sagital; abaixo das sacroilíacas são estáveis para o anel, mas podem lesar raízes e cauda equina, com fragmentos ocluindo o canal, em geral de **S3 para baixo**.
+- Os números da série original de DENIS (236 fraturas) estão no Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1924 e 1925, Fig. 48.40): **zona 1**, 50% das fraturas, com **6% de lesão de L5**; **zona 2**, 34%, com **28% de déficit unilateral** em L5, S1 ou S2; **zona 3**, 16%, e no estudo original **60%** tiveram sintomas de **bexiga e intestino** e **76% disfunção sexual**. O Rockwood arredonda a zona II para cerca de 30% de déficit e dá à zona III até 60% de lesão de raízes ou cauda equina; um estudo posterior citado pelo Campbell achou taxas neurológicas bem menores.
 - A estabilidade do anel fica comprometida nas **fraturas completas** do sacro, em que o traço vai da cortical anterior à posterior no corte axial. MOED descreveu a fenda vertical na linha média associada à CAP instável.
 
 !figura 50-21
@@ -555,6 +556,8 @@ armadilha: Na imagem, o traço que entra no forame é zona II, mesmo que comece 
 
 A classificação da **AO Spine** para o sacro começa pela **morfologia** (tipos A, B e C), depois o **estado neurológico** e por fim os **modificadores** (partes moles, doença osteometabólica, lesão anterior do anel e lesão da sacroilíaca). Ela separa as fraturas verticais **com e sem envolvimento da faceta L5-S1**: as que pegam a faceta podem comprometer a **estabilidade espinopélvica** e entram como **C1**.
 
+A mesma lógica da faceta aparece na classificação de **ISLER**, que o capítulo 50 não cita. O Campbell 15 (cap. 48, p. 1925, Fig. 48.42) traz a classificação, com probabilidade crescente de subluxação lombossacra do tipo I ao III: **tipo I**, lesão **lateral à faceta L5-S1**, que afeta a estabilidade do anel; **tipo II**, lesão **pela faceta L5-S1**, com desvio e sintomas neurológicos; **tipo III**, lesão que **envolve o canal**, instável. Na Fig. 48.43 (p. 1926), a AO Spine define a **C1** como a variante sem fratura em U completa: qualquer subtipo B unilateral em que a faceta superior de S1 do mesmo lado perde a continuidade com a parte medial do sacro, o que pode afetar a estabilidade espinopélvica, e o quadro escreve **(ISLER)** ao lado.
+
 ## A dissociação espinopélvica: U, H e ROY-CAMILLE
 
 Quando um traço **horizontal** atravessa o sacro no nível das sacroilíacas, costuma haver traços **verticais transforaminais bilaterais**, formando a fratura em **U ou em H** (também T e Y). Ela nasce da **hiperflexão aguda** da pelve e da transição lombossacra e produz a **dissociação lombopélvica**: a coluna e o sacro superior perdem a continuidade com a pelve, com **cifose**, impacção e possível compressão do canal sacral. A cifose se vê melhor na **reconstrução sagital** da TC. A lesão é muito instável, resulta de cisalhamento vertical ou de forças rotacionais, e a estabilidade da coluna fica afetada se o traço sobe e rompe a **articulação L5-S1**.
@@ -580,7 +583,7 @@ como: O TARO 2019 perguntou a fratura do sacro associada à instabilidade espino
 armadilha: Transversa abaixo da sacroilíaca: é estável para o anel e para a coluna, embora possa lesar raízes baixas.
 armadilha: Processo transverso de L5: sinaliza a tração do iliolombar, não é o critério da AO C1.
 armadilha: Dissociação das sacroilíacas: é a luxação bilateral das sacroilíacas, que o capítulo separa da dissociação espinopélvica.
-alerta: O capítulo 50 não usa o nome "fratura do suicida" nem a classificação de ISLER; descreve o mesmo padrão como fratura em U ou H com dissociação espinopélvica e a mesma lógica da faceta L5-S1 pela AO Spine.
+alerta: O capítulo 50 não usa o nome "fratura do suicida" nem a classificação de ISLER; descreve o mesmo padrão como fratura em U ou H com dissociação espinopélvica e a mesma lógica da faceta L5-S1 pela AO Spine. ISLER está no Campbell 15 (cap. 48, p. 1925, Fig. 48.42), e a Fig. 48.43 (p. 1926) liga a AO C1 a ISLER.
 !fim
 
 # Tratamento não operatório {radar=clinico}

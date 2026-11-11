@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas9-16-condilo-lateral
-versao: 3
+versao: 4
 titulo: Fraturas do côndilo lateral e do capítulo na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 17 · Lateral Condylar and Capitellar Fractures of the Distal Humerus
 autores: Benjamin W. Sheffer e Jeffrey R. Sawyer (10ª edição); Derek M. Kelly e Jeffrey R. Sawyer (9ª edição)
-fonte: Escrito com o capítulo 16 da 9ª edição (enviado pelo Tales em 19/10/2026) e conferido em 28/10/2026 com o capítulo 17 da 10ª edição, que mantém o texto, os dados e as preferências dos autores; as figuras citadas seguem a numeração da 9ª edição.
+fonte: Escrito com o capítulo 16 da 9ª edição (enviado pelo Tales em 19/10/2026) e conferido em 28/10/2026 com o capítulo 17 da 10ª edição, que mantém o texto, os dados e as preferências dos autores; as figuras citadas seguem a numeração da 10ª edição (capítulo 17). Consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 38, p. 1383.
 subtemas: Côndilo lateral, epicôndilo medial e rádio proximal na criança
 resumo: Extensores radiais e colaterais no fragmento, oblíqua interna, MILCH e SALTER-HARRIS IV, JAKOB, WEISS e SONG (2 mm), redução em extensão e supinação, dissecção posterior e necrose, esporão (75%), cúbito varo, pseudartrose com valgo e ulnar tardio, FLYNN (1 cm) e HAHN-STEINTHAL.
 ---
@@ -30,7 +30,7 @@ Todas as fises do úmero distal podem se lesar, cada uma com um padrão próprio
 | --- | --- | --- |
 | Fise distal inteira (descolamento total) | recém-nascido até 2 a 3 anos | confunde-se com o côndilo lateral; lembrar de maus-tratos |
 | Côndilo lateral | média em torno de **6 anos** | **17%** das fraturas do úmero distal |
-| Côndilo medial | **8 a 12 anos** | rara (capítulo 17) |
+| Côndilo medial | **8 a 12 anos** | rara (capítulo 18 da 10ª edição) |
 !fim
 
 A fratura do côndilo lateral é menos comum que a supracondiliana. Diferente dela, **raramente tem lesão neurovascular** e raramente se associa a lesões fora do cotovelo. Dentro do cotovelo, as associações incomuns são a luxação do cotovelo, a fratura da cabeça do rádio e a fratura do olécrano, muitas vezes em galho verde. A fratura-luxação recupera o movimento mais devagar. Maus-tratos são causa rara, mas entram sempre no diagnóstico diferencial, sobretudo na criança pequena.
@@ -41,7 +41,7 @@ A fratura do côndilo lateral é menos comum que a supracondiliana. Diferente de
 conceito: Obesidade e ângulo de carregamento em varo maior são citados no capítulo como indicadores de fratura do côndilo lateral, e não supracondiliana; o côndilo lateral ocorre por volta dos 6 anos, a fise inteira até 2 a 3 anos e o côndilo medial entre 8 e 12.
 como: O TARO 2026 perguntou o fator de risco para fratura do côndilo lateral em detrimento da supracondiliana, com obesidade, hipotireoidismo, idade mais precoce e ângulo de carregamento mais valgo como alternativas.
 armadilha: Idade mais precoce: abaixo de 2 a 3 anos o que predomina é o descolamento de toda a fise distal.
-alerta: No TARO 2026 (pediatria-0521), o gabarito oficial foi "ângulo de carregamento mais valgo". O capítulo 16 desta edição diz o contrário: cita a obesidade (que também estava entre as alternativas) e um ângulo de carregamento em varo maior. Pelo livro, a resposta seria a obesidade. Guarde o gabarito da banca, mas não aprenda que o valgo é o fator descrito no capítulo.
+alerta: No TARO 2026 (pediatria-0521), o gabarito oficial foi "ângulo de carregamento mais valgo". O capítulo 17 da 10ª edição (16 na 9ª) diz o contrário: cita a obesidade (que também estava entre as alternativas) e um ângulo de carregamento em varo maior. Pelo livro, a resposta seria a obesidade. Guarde o gabarito da banca, mas não aprenda que o valgo é o fator descrito no capítulo.
 !fim
 
 # O fragmento: anatomia, mecanismo e desvio {radar=confirmado}
@@ -83,7 +83,7 @@ Como o traço habitual rompe a **crista lateral da tróclea**, o cotovelo fica i
 
 ## O exame clínico
 
-Comparado à grande deformidade da supracondiliana desviada, o cotovelo com fratura do côndilo lateral distorce pouco, além do hematoma. A **chave do exame é o edema e a dor concentrados na face lateral** do úmero distal. Na fratura de desvio mínimo, pode haver só dor local, que aumenta ao **fletir o punho**, porque os extensores presos ao fragmento são estirados. A aparência benigna explica por que algumas famílias demoram a procurar atendimento. Com desvio maior, há hematoma lateral e crepitação do fragmento ao mobilizar, manobra dolorosa que deve ser evitada quando a radiografia já é clara. Edema extenso de partes moles indica lesão grave de partes moles e prevê instabilidade e desvio tardio: a figura 16-1 mostra uma fratura sem desvio, com muito edema lateral, que desviou em 7 dias.
+Comparado à grande deformidade da supracondiliana desviada, o cotovelo com fratura do côndilo lateral distorce pouco, além do hematoma. A **chave do exame é o edema e a dor concentrados na face lateral** do úmero distal. Na fratura de desvio mínimo, pode haver só dor local, que aumenta ao **fletir o punho**, porque os extensores presos ao fragmento são estirados. A aparência benigna explica por que algumas famílias demoram a procurar atendimento. Com desvio maior, há hematoma lateral e crepitação do fragmento ao mobilizar, manobra dolorosa que deve ser evitada quando a radiografia já é clara. Edema extenso de partes moles indica lesão grave de partes moles e prevê instabilidade e desvio tardio: a figura 17-1 mostra uma fratura sem desvio, com muito edema lateral, que desviou em 7 dias.
 
 ## Radiografias e oblíqua interna
 
@@ -111,11 +111,11 @@ Uma grande dificuldade diagnóstica, diz o capítulo, é diferenciar a fratura d
 | Exames que ajudam | artrografia, ressonância, ultrassom | artrografia, ressonância, ultrassom |
 !fim
 
-!figura 16-5
+!figura 17-5
 A: descolamento total da fise distal do úmero numa criança de 2 anos; o côndilo lateral continua em linha com o rádio proximal, e rádio, ulna e côndilo se deslocam para medial. B: fratura desviada do côndilo lateral numa criança de 2 anos; perde-se a relação do côndilo com o rádio, e rádio e ulna se deslocam discretamente para lateral.
 !fim
 
-A figura 16-4 mostra o outro lado da armadilha: uma criança de 10 anos com radiografia de aparente fratura estável do côndilo lateral, em que a ressonância revelou fratura de toda a fise. O ultrassom distingue fraturas ocultas do cotovelo, incluindo o côndilo lateral e as separações transfisárias, sem a sedação da ressonância. O descolamento total da fise é assunto do capítulo 17.
+A figura 17-4 mostra o outro lado da armadilha: uma criança de 10 anos com radiografia de aparente fratura estável do côndilo lateral, em que a ressonância revelou fratura de toda a fise. O ultrassom distingue fraturas ocultas do cotovelo, incluindo o côndilo lateral e as separações transfisárias, sem a sedação da ressonância. O descolamento total da fise é assunto do capítulo 18 da 10ª edição.
 
 !questoes relacionadas=pediatria-0525 treino=pediatria-0992
 conceito: No descolamento total da fise distal, o núcleo do capítulo continua alinhado com o rádio e o antebraço desvia para posteromedial; na fratura do côndilo lateral, essa relação se perde e o desvio tende a ser lateral.
@@ -149,8 +149,8 @@ armadilha: Tipo II: é a correspondência que se costuma dar ao MILCH II, cujo t
 | III | fragmento **rodado e totalmente desviado** para lateral e proximal | translação do olécrano e da cabeça do rádio |
 !fim
 
-!figura 16-6
-Estágios de desvio: A e B, estágio I, superfície articular íntegra; C e D, estágio II, superfície articular rompida; E e F, estágio III, fragmento rodado.
+!figura 17-6
+Estágios de desvio: A e B, estágio I, superfície articular íntegra; C e D, estágio II, superfície articular rompida; E e F, estágio III, fragmento rodado (p. 575). A radiografia F é a segunda imagem da série do TEOT 2022 (pediatria-0696 e seguintes): o fragmento rodado e desviado do estágio III de JAKOB.
 !fim
 
 !questoes central=pediatria-0697
@@ -188,7 +188,7 @@ SONG propôs cinco estágios baseados na estabilidade, para refinar a indicaçã
 | 5 | mais de 2 mm | com rotação do fragmento | instável |
 !fim
 
-A tabela de **FINNBOGASON** (tabela 16-1) diz o mesmo para as fraturas sem desvio ou com desvio mínimo imobilizadas em gesso: **grupo A** (sem afastamento ou com afastamento pequeno na face radial ou radiodorsal, traço que não chega à cartilagem epifisária) é estável, com risco de desvio de 0; **grupo B** (o mesmo, mas com o traço visível até a cartilagem) tem risco indefinido (razão de risco de 0,17); **grupo C** (afastamento medial tão largo, ou quase, quanto o lateral) tem risco alto (0,42).
+A tabela de **FINNBOGASON** (tabela 16-1 da 9ª edição; a 10ª edição não a reproduz) diz o mesmo para as fraturas sem desvio ou com desvio mínimo imobilizadas em gesso: **grupo A** (sem afastamento ou com afastamento pequeno na face radial ou radiodorsal, traço que não chega à cartilagem epifisária) é estável, com risco de desvio de 0; **grupo B** (o mesmo, mas com o traço visível até a cartilagem) tem risco indefinido (razão de risco de 0,17); **grupo C** (afastamento medial tão largo, ou quase, quanto o lateral) tem risco alto (0,42).
 
 !questoes central=pediatria-0942 treino=pediatria-0999
 conceito: SONG 1 a 3 têm até 2 mm (estável, indeterminado e instável, conforme o traço e o afastamento); 4 tem mais de 2 mm sem rotação; 5, mais de 2 mm com rotação.
@@ -280,14 +280,14 @@ Se a redução adequada é obtida cedo e mantida com fixação sólida, os resul
 
 ## Esporão lateral e pseudovaro
 
-É uma das sequelas **mais comuns**, com taxas em torno de **75%**, após tratamento operatório ou não. Desvio inicial maior e cirurgia aumentam o risco. Após tratamento conservador, o esporão vem do pequeno desvio da lasca metafisária e tem **contorno liso**; após cirurgia, é **irregular**, atribuído à formação óssea hipertrófica do periósteo dissecado (figura 16-13). Limitar a dissecção e recolocar o retalho de periósteo lateral diminuem o esporão. Sem mudança real do ângulo de carregamento, a proeminência lateral pode imitar um varo leve: o **pseudovaro**. Os pais devem saber antes do tratamento que o esporão com pseudovaro é muito provável, em geral sem importância funcional, e pode melhorar em 1 a 2 anos.
+É uma das sequelas **mais comuns**, com taxas em torno de **75%**, após tratamento operatório ou não. Desvio inicial maior e cirurgia aumentam o risco. Após tratamento conservador, o esporão vem do pequeno desvio da lasca metafisária e tem **contorno liso**; após cirurgia, é **irregular**, atribuído à formação óssea hipertrófica do periósteo dissecado (figura 17-14; ver também a 17-13). Limitar a dissecção e recolocar o retalho de periósteo lateral diminuem o esporão. Sem mudança real do ângulo de carregamento, a proeminência lateral pode imitar um varo leve: o **pseudovaro**. Os pais devem saber antes do tratamento que o esporão com pseudovaro é muito provável, em geral sem importância funcional, e pode melhorar em 1 a 2 anos.
 
 ## Cúbito varo
 
 Um número surpreendente de fraturas consolida com algum **cúbito varo**, até **40%** em algumas séries, com a mesma frequência após tratamento cirúrgico ou conservador. A causa pode ser redução inadequada, **estímulo de crescimento da fise do côndilo lateral** pelo trauma, ou ambos. Raramente é grave a ponto de exigir tratamento, mas a família deve ser avisada.
 
-!figura 16-15
-Varo verdadeiro: fratura com desvio mínimo tratada com imobilização numa criança de 5 anos; cinco anos depois, o cotovelo lesado tinha 10 graus de varo, contra 5 graus de valgo do lado normal.
+!figura 17-16
+Varo verdadeiro: fratura com desvio mínimo tratada com imobilização num menino de 6 anos, com consolidação completa; cinco anos depois, ele tinha um cúbito varo de 10 graus, clinicamente evidente e assintomático.
 !fim
 
 ## Cúbito valgo, parada fisária e rabo de peixe
@@ -315,7 +315,7 @@ A maioria recupera quase todo o movimento em **4 a 6 meses** após tirar o gesso
 
 # Osteonecrose {radar=fundamento}
 
-A necrose do fragmento pode ser iatrogênica e está mais associada à **dissecção extensa de uma redução tardia** ou à perda da irrigação no trauma. Já foi descrita necrose parcial numa fratura praticamente sem desvio, com aspecto e evolução de osteocondrite dissecante. Curiosamente, ela é **rara** nas fraturas que recebem pouco ou nenhum tratamento e evoluem para pseudartrose. A dissecção vigorosa da fratura recente pode necrosar o núcleo do côndilo lateral (figura 16-17) ou, raramente, a parte metafisária, levando à pseudartrose (figura 16-18).
+A necrose do fragmento pode ser iatrogênica e está mais associada à **dissecção extensa de uma redução tardia** ou à perda da irrigação no trauma. Já foi descrita necrose parcial numa fratura praticamente sem desvio, com aspecto e evolução de osteocondrite dissecante. Curiosamente, ela é **rara** nas fraturas que recebem pouco ou nenhum tratamento e evoluem para pseudartrose. A dissecção vigorosa da fratura recente pode necrosar o núcleo do côndilo lateral (figura 17-20) ou, raramente, a parte metafisária, levando à pseudartrose (figura 17-21).
 
 Se a fratura consolida, o núcleo necrosado **reossifica ao longo de anos, como na doença de LEGG-CALVÉ-PERTHES**. A deformidade residual pode dar perda de movimento, deformidade e dor. A **necrose central extensa** é a pior: o antebraço subluxa para dentro do defeito, com impacto ósseo, lesão osteocondral, perda de movimento e dor, sem solução anatômica completa. Parar o crescimento das colunas para conter a deformidade e retirar corpos livres por artroscopia deram bons resultados de curto prazo. As questões sobre necrose e dissecção posterior estão na seção de tratamento.
 
@@ -323,7 +323,7 @@ Se a fratura consolida, o núcleo necrosado **reossifica ao longo de anos, como 
 
 ## Por que o côndilo lateral demora a consolidar
 
-O **retardo de consolidação** é a fratura em posição satisfatória cujo fragmento demora a se unir à metáfise. O capítulo cita três fatores, provavelmente combinados: a **circulação pobre do fragmento metafisário**, o **líquido articular** que banha o traço e inibe a formação de fibrina e de calo, e a **tração constante da musculatura extensora** que nasce no fragmento. É mais comum nos tratados **sem cirurgia**. Se o fragmento está estável, o cotovelo indolor, o movimento melhora progressivamente e a posição não muda nas radiografias, a fratura costuma consolidar, muitas vezes com esporão ou varo (figura 16-20). A maioria das fraturas com desvio mínimo acaba consolidando com imobilização longa; a fixação percutânea ou com parafuso acelera. Na dúvida sobre a superfície articular, ressonância ou artrografia.
+O **retardo de consolidação** é a fratura em posição satisfatória cujo fragmento demora a se unir à metáfise. O capítulo cita três fatores, provavelmente combinados: a **circulação pobre do fragmento metafisário**, o **líquido articular** que banha o traço e inibe a formação de fibrina e de calo, e a **tração constante da musculatura extensora** que nasce no fragmento. É mais comum nos tratados **sem cirurgia**. Se o fragmento está estável, o cotovelo indolor, o movimento melhora progressivamente e a posição não muda nas radiografias, a fratura costuma consolidar, muitas vezes com esporão ou varo (figura 17-23). A maioria das fraturas com desvio mínimo acaba consolidando com imobilização longa; a fixação percutânea ou com parafuso acelera. Na dúvida sobre a superfície articular, ressonância ou artrografia.
 
 !questoes relacionadas=pediatria-0734
 conceito: O retardo de consolidação do côndilo lateral resulta da circulação pobre do fragmento metafisário, do líquido sinovial que inibe a fibrina e da tração dos extensores; é mais comum no tratamento sem cirurgia.
@@ -334,9 +334,9 @@ armadilha: Mais frequente nos operados: o capítulo diz o contrário, mais comum
 
 ## Pseudartrose
 
-A fratura desviada que não consolidou em **12 semanas** é pseudartrose. Ela ocorre sobretudo quando a fratura **desvia depois de iniciado o tratamento conservador** ou quando a fratura desviada chega tarde, e é mais comum após tratamento conservador de fraturas instáveis (estágios II e III). A consolidação fica impossível quando o fragmento desvia o bastante para que a **cartilagem articular dele encoste na superfície óssea da metáfise**. Todas essas pseudartroses têm incongruência articular. Pseudartroses com pouco desvio podem não ter angulação e ficar pouco sintomáticas no dia a dia, com fraqueza ou dor só em atividades de alto desempenho (figura 16-22: recruta militar de 19 anos assintomático).
+A fratura desviada que não consolidou em **12 semanas** é pseudartrose. Ela ocorre sobretudo quando a fratura **desvia depois de iniciado o tratamento conservador** ou quando a fratura desviada chega tarde, e é mais comum após tratamento conservador de fraturas instáveis (estágios II e III). A consolidação fica impossível quando o fragmento desvia o bastante para que a **cartilagem articular dele encoste na superfície óssea da metáfise**. Todas essas pseudartroses têm incongruência articular. Pseudartroses com pouco desvio podem não ter angulação e ficar pouco sintomáticas no dia a dia, com fraqueza ou dor só em atividades de alto desempenho (figura 17-25: recruta militar de 19 anos assintomático).
 
-A **sequela mais comum da pseudartrose com desvio é o cúbito valgo progressivo**: o fragmento móvel migra para **proximal e lateral**, produzindo angulação e **translação lateral** do rádio e da ulna (figura 16-24). Quando o traço é do tipo mais lateral, com a crista lateral da tróclea intacta, a translação é menos provável, mas o valgo ainda aparece (figura 16-25).
+A **sequela mais comum da pseudartrose com desvio é o cúbito valgo progressivo**: o fragmento móvel migra para **proximal e lateral**, produzindo angulação e **translação lateral** do rádio e da ulna (figura 17-17). Quando o traço é do tipo mais lateral, com a crista lateral da tróclea intacta, a translação é menos provável, mas o valgo ainda aparece (figura 17-18).
 
 ## A paralisia tardia do nervo ulnar
 
@@ -383,7 +383,7 @@ armadilha: Cúbito valgo com paralisia do ulnar: é motivo para transpor o nervo
 
 ## O que é e quem tem
 
-A fratura do capítulo envolve só a **superfície articular verdadeira** do côndilo lateral, às vezes incluindo a crista lateral da tróclea; o fragmento costuma vir da parte **anterior**. É **rara na criança** e mais provável no **adolescente mais velho**. Fraturas em "manga" anteriores do côndilo lateral foram descritas a partir de **8 anos**: levam boa parte da superfície articular anterior, mas também porções não articulares do epicôndilo e da metáfise, e por isso não são fraturas puras do capítulo. O diagnóstico é difícil porque o fragmento é quase todo cartilagem do centro de ossificação secundário.
+A fratura do capítulo envolve só a **superfície articular verdadeira** do côndilo lateral, às vezes incluindo a crista lateral da tróclea; o fragmento costuma vir da parte **anterior**. É **rara na criança**, menos de 1% das fraturas do cotovelo pediátrico pelo Campbell 15 (cap. 38, p. 1383), e mais provável no **adolescente mais velho**. Fraturas em "manga" anteriores do côndilo lateral foram descritas a partir de **8 anos**: levam boa parte da superfície articular anterior, mas também porções não articulares do epicôndilo e da metáfise, e por isso não são fraturas puras do capítulo. O diagnóstico é difícil porque o fragmento é quase todo cartilagem do centro de ossificação secundário.
 
 **Mecanismo.** O mais aceito é o **cisalhamento da superfície anterior pela cabeça do rádio**. Cúbito em **hiperextensão** ou em **valgo** predispõe. É esperado encontrar fratura da cabeça ou do colo do rádio: lesões do rádio proximal foram relatadas em **31%** de adultos e crianças com fratura do capítulo. A luxação do cotovelo é causa clara, sobretudo das fraturas de cisalhamento posterolateral.
 
@@ -401,14 +401,14 @@ A fratura do capítulo envolve só a **superfície articular verdadeira** do cô
 
 ## Diagnóstico
 
-O edema costuma ser pequeno e o fragmento **bloqueia a flexão**. O fragmento grande aparece no **perfil**, na frente e acima do úmero distal; na figura 16-29, os sulcos radiocapitelar e troclear aparecem no próprio fragmento. No **AP**, ele some, sobreposto à metáfise. Fragmentos pequenos pedem oblíquas e alto índice de suspeita; na criança menor, artrografia ou ressonância. Tomografia ou ressonância confirmam e planejam a fixação.
+O edema costuma ser pequeno e o fragmento **bloqueia a flexão**. O fragmento grande aparece no **perfil**, na frente e acima do úmero distal; na figura 17-30, os sulcos radiocapitelar e troclear aparecem no próprio fragmento. No **AP**, ele some, sobreposto à metáfise. Fragmentos pequenos pedem oblíquas e alto índice de suspeita; na criança menor, artrografia ou ressonância. Tomografia ou ressonância confirmam e planejam a fixação.
 
 ## Tratamento
 
 - **Sem desvio:** imobilização, sobretudo no cisalhamento anterior.
 - A **redução fechada** raramente funciona: o fragmento costuma ser irredutível ou instável.
 - **Excisão:** por artrotomia; funciona na criança muito nova, na fratura pequena que chega tarde e na osteocondrite que não encaixa mais. Mesmo excisando fragmentos grandes, a instabilidade não parece ser problema. Se excisado, acrescenta-se microfratura; resultados ruins tardios podem pedir transplante osteocondral (OATS).
-- **Reinserção:** fragmento grande (tipos I e II) no adolescente indica fratura articular a reduzir. Os autores preferem, na fratura **aguda e grande**, **dois parafusos canulados pequenos de posterior para anterior** por via lateral; com pouco osso no fragmento, parafusos sem cabeça de anterior para posterior, embutidos. Fratura antiga, cominuída ou com pouco osso para a rosca: excisão, microfratura e movimento precoce.
+- **Reinserção:** fragmento grande (tipos I e II) no adolescente indica fratura articular a reduzir. Os autores preferem, na fratura **aguda e grande** que se reduz bem com pouca dissecção, **dois parafusos pequenos de compressão sem cabeça, de posterior para anterior**, por via lateral; o parafuso sem cabeça só serve se houver osso suficiente no fragmento para a rosca. **Com pouco osso no fragmento**, os parafusos vão **de anterior para posterior**, e então se usam **parafusos com cabeça, embutidos** (p. 595). Fratura antiga, cominuída ou com pouco osso para a rosca: excisão, microfratura e movimento precoce.
 
 **Complicação principal: osteonecrose**, que só ocorre quando o fragmento é **mantido**. A artrose pós-traumática pode ocorrer com o fragmento mantido ou excisado. Muitos perdem algum movimento, com ou sem cirurgia, nem sempre com importância funcional; os pais devem ser avisados antes.
 
@@ -419,5 +419,5 @@ conceito: A fratura do capítulo é do adolescente; HAHN-STEINTHAL, a mais comum
 como: O TARO 2012 e o TARO 2007 (este sem gabarito no acervo) pediram a complicação mais frequente do tratamento da fratura do capítulo, com necrose avascular, pseudartrose, limitação articular e instabilidade entre as opções. O TARO 2026 cobrou, em fratura do adulto, a classificação de BRYAN e MORREY, que tem HAHN-STEINTHAL e KOCHER-LORENZ como tipos I e II. O TARO 2008, sem gabarito, perguntou a fratura do capítulo na classificação AO.
 armadilha: Limitação articular: é frequente e os pais devem ser avisados, mas o capítulo chama a osteonecrose de complicação principal.
 armadilha: KOCHER-LORENZ como o tipo mais comum: é raro na criança; o comum é HAHN-STEINTHAL.
-alerta: O capítulo 16 é pediátrico e não traz a classificação AO nem a de BRYAN e MORREY com o tipo III cominutivo (TARO 2008 e TARO 2026); esses dados são do capítulo de úmero distal do adulto. A complicação de maior peso muda com o livro: o capítulo pediátrico chama de principal a osteonecrose do fragmento mantido (gabarito do TARO 2012), e os livros do adulto destacam a limitação de movimento (Skeletal Trauma 5ª edição, capítulo 46, p. 1362 e 1375; Rockwood and Green 10ª edição, capítulo 39), resposta provável do TARO 2007.
+alerta: O capítulo 17 da 10ª edição (16 na 9ª) é pediátrico e não traz a classificação AO nem a de BRYAN e MORREY com o tipo III cominutivo (TARO 2008 e TARO 2026); esses dados são do capítulo de úmero distal do adulto. A complicação de maior peso muda com o livro: o capítulo pediátrico chama de principal a osteonecrose do fragmento mantido (gabarito do TARO 2012), e os livros do adulto destacam a limitação de movimento (Skeletal Trauma 5ª edição, capítulo 46, p. 1362 e 1375; Rockwood and Green 10ª edição, capítulo 39), resposta provável do TARO 2007.
 !fim

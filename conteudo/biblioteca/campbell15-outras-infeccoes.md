@@ -1,6 +1,6 @@
 ---
 id: campbell15-outras-infeccoes
-versao: 3
+versao: 4
 titulo: Artrite séptica, tuberculose e outras infecções osteoarticulares
 especialidade: conceitos-basicos
 acesso: gratis
@@ -355,6 +355,14 @@ armadilha: Marcar metafisário por associação automática com a osteomielite h
 
 Na criança com HIV, a **artrite séptica é a infecção musculoesquelética mais prevalente**, com espectro amplo de germes e tuberculose até 500 vezes mais comum (Tachdjian, p. 996 aprox.). Na **doença granulomatosa crônica**, os fagócitos não matam bactérias e fungos **catalase-positivos**; Aspergillus responde por 41% das infecções e a osteomielite ocorre em 24% dos registrados.
 
+**HIV e prótese.** Muitos hemofílicos com artropatia se contaminaram com o HIV pelos concentrados de fator, e a **complicação mais comum** da artroplastia total do joelho nesses pacientes é a **infecção**, com taxas relatadas de **30%**; a artroplastia do joelho no HIV positivo, com ou sem hemofilia, tem alta taxa de complicação, e uma revisão achou infecção em **7,7%** com HIV contra **3,3%** sem HIV, com sobrevida parecida. Antes de operar, o infectologista deve atestar **carga viral baixa e CD4 adequado** (Campbell's Operative Orthopaedics, 15ª ed., cap. 8, p. 450). No quadril do hemofílico, a infecção hematogênica tardia preocupa mais quando o paciente exposto ao HIV pelo fator evolui para AIDS; ENAYATOLLAHI relatou infecção em 10,98% dos que tinham HIV e hemofilia contra 2,28% dos que tinham só HIV (cap. 4, p. 263). O Skeletal Trauma (cap. 22, p. 574) lembra que os estudos, muitos em artroplastia, divergem sobre o risco de infecção do sítio cirúrgico no HIV, e que no trauma ortopédico o **CD4 abaixo de 300 células/µL** se associou a mais infecção pós-operatória.
+
+!questoes relacionadas=joelho-0217
+conceito: Na artroplastia total do joelho do hemofílico com HIV, a complicação mais comum é a infecção (até 30%), e o HIV com CD4 baixo aumenta o risco de infecção pós-operatória (Campbell, cap. 8, p. 450; Skeletal Trauma, cap. 22, p. 574).
+como: O TARO 2011 perguntou a complicação mais comum da artroplastia total do joelho no hemofílico portador de HIV, entre soltura asséptica, hemorragia, infecção e tromboembolismo.
+armadilha: Marcar hemorragia por causa da hemofilia: o livro lista a hemorragia entre as complicações, mas a mais comum nesses pacientes é a infecção.
+!fim
+
 # A coluna do adulto: endocardite como fonte {radar=confirmado}
 
 Na espondilodiscite piogênica do adulto, o capítulo 49 do Campbell (p. 1945 aprox.) aponta o **S. aureus** como o germe mais comum, com gram-negativos e outros gram-positivos frequentes; **usuários de droga injetável** têm mais **Pseudomonas aeruginosa**; e as infecções por **enterococos e estreptococos se associam à endocardite como fonte primária**. A bactéria pode vir do trato urinário, respiratório, de partes moles ou de outro foco, e a disseminação arterial semeia o **platô vertebral**, região muito vascularizada e de fluxo lento, onde os germes se depositam. 
@@ -404,6 +412,8 @@ A mordedura humana mais grave é o **soco** contra o dente, na **metacarpofalân
 ## Gangrena gasosa
 
 Sem tratamento, a gangrena gasosa é **100% fatal**, com mionecrose extensa, choque e morte rápida. O **Clostridium perfringens** (antigo C. welchii) é o organismo **mais associado** (Campbell, cap. 84, p. 3620); o capítulo 58 cita também C. novyi e C. septicum entre os que causam as infecções mais dramáticas e atribui ao **C. perfringens cerca de 90%** das gangrenas gasosas (p. 2560.e1). O mesmo livro se contradiz no capítulo 84 (p. 3621), que escreve que organismos **não clostridiais** são achados em cerca de **85%** das gangrenas gasosas. A ponte está no próprio capítulo 58: o nome gangrena gasosa implica clostrídio, mas muitas infecções necrosantes de partes moles com gás são causadas por flora mista aeróbia e anaeróbia, e o Clostridium é cultivado em cerca de 30% das infecções profundas, das quais só poucas evoluem para mionecrose. Para a mionecrose clostridial verdadeira, a resposta é o **C. perfringens**. Os clostrídios são bastonetes gram-positivos anaeróbios que crescem em tecido necrótico e baixa oxigenação, onde os esporos viram formas vegetativas e produzem toxinas: **alfa** (mionecrose e hemólise, o principal fator de letalidade), teta (hemólise e cardiotoxicidade), kappa (colagenase), nu (desoxirribonuclease) e mu (hialuronidase). O tratamento é desbridamento e antibiótico; o oxigênio hiperbárico é adjuvante controverso (p. 3621).
+
+O gás nos planos musculares não é exclusividade do clostrídio. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 16, fraturas expostas), lembra que, no paciente que chega tarde, sombras de gás nos planos musculares na radiografia devem levantar a suspeita de infecção estabelecida por **germes produtores de gás**, como o **Clostridium perfringens** ou a **Escherichia coli**.
 
 !questoes central=conceitos-basicos-0283 relacionadas=trauma-1136
 conceito: O Clostridium perfringens é o germe mais associado à gangrena gasosa, e sua toxina alfa é o principal fator de letalidade (Campbell, cap. 84, p. 3620).
