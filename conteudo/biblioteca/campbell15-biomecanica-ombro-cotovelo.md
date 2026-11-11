@@ -393,7 +393,7 @@ Se a cabeça do rádio é retirada, os 60% que ela levava vão para a ulna (Camp
 | colateral medial após retirar a cabeça do rádio | até 9 vezes o peso corporal |
 !fim
 
-!questoes relacionadas=ombro-cotovelo-0381
+!questoes relacionadas=ombro-cotovelo-0381,ombro-cotovelo-0043
 conceito: Com o cotovelo estendido e carga axial, cerca de 40% da carga passa pela umeroulnar e 60% pela radiocapitelar, porque a carga sobe pela mão ao rádio distal e daí à cabeça do rádio; a radiocapitelar transmite as cargas verticais de empurrar e levantar.
 como: A prova de Ortopedia e a SBOT-SP fizeram a mesma pergunta, com as alternativas unicamente radiocapitelar, partes iguais, 60/40 e 40/60.
 armadilha: Inverter para 60% umeroulnar e 40% radiocapitelar, pensando que a ulna, por ser a dobradiça, leva mais carga.
@@ -418,7 +418,7 @@ O Rockwood and Green (cap. 1, Tabela 1-4) dá a escala de cargas que a fixação
 | extrema | flexão isométrica máxima | 9,5 a 13,6 kg | 2,2 a 3,12 vezes o peso |
 !fim
 
-!questoes central=ombro-cotovelo-0105
+!questoes central=ombro-cotovelo-0105 relacionadas=ombro-cotovelo-0356
 conceito: A força máxima de flexão do cotovelo ocorre a 90 graus, quando o braço de momento do bíceps e do braquial é máximo; em extensão ou a 30 graus, gera-se só um terço a metade da força máxima.
 como: O TEOT 2023 perguntou em que ângulo ocorre a força máxima de flexão, com 30, 45, 90 e 130 graus.
 armadilha: Marcar 130 graus (o fim do arco funcional, com o músculo encurtado) ou 30 graus (início do arco funcional, com braço de momento pequeno).

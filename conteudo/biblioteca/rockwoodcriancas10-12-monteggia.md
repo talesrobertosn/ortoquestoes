@@ -289,7 +289,7 @@ armadilha: Imobilizar em extensão como no tipo II, ou moldar em varo.
 
 O Rockwood and Wilkins' Fractures in Children, 10ª ed., diz em dois lugares que as lesões do nervo radial, **sobretudo do ramo interósseo posterior**, são **mais frequentes no tipo III** do que nos outros tipos de MONTEGGIA (seções Type III Clinical Findings e Pathoanatomy, Nerves). O raciocínio é anatômico: o interósseo posterior contorna o **colo do rádio** e passa sob a **arcada de FROHSE**; quando o varo da ulna joga a cabeça para **lateral**, o nervo é estirado sobre ela. O quadro clínico do tipo III já aponta o risco: **edema lateral**, **varo do cotovelo** e perda de movimento, sobretudo da **supinação**. Por isso o exame motor (extensão das metacarpofalângicas e retropulsão do polegar) é obrigatório antes de qualquer manobra.
 
-!questoes central=trauma-0772
+!questoes central=trauma-0772 relacionadas=trauma-0144,trauma-0891
 conceito: O interósseo posterior se lesa mais no BADO III (luxação lateral da cabeça com ulna em varo), pela proximidade com a cabeça e o colo do rádio e pela arcada de FROHSE.
 como: O TEPOP 2024 perguntou em qual tipo de BADO a lesão do interósseo posterior é mais comum (tipo III).
 armadilha: Marcar o tipo I por ser o mais frequente; ele é o mais comum como fratura, mas o nervo sofre mais no tipo III.

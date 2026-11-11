@@ -48,7 +48,7 @@ O tipo **II** é o do adulto e é o mais complexo, porque vem muitas vezes com *
 Classificação de Bado: tipo I com luxação anterior da cabeça e ulna angulada para a frente; tipo II com luxação posterior e ulna angulada para trás; tipo III com luxação lateral ou anterolateral e fratura da metáfise da ulna; tipo IV com luxação anterior e fratura do rádio e da ulna.
 !fim
 
-!questoes central=trauma-1094,trauma-0128,trauma-0158,trauma-0696,ombro-cotovelo-0519,ombro-cotovelo-0526 relacionadas=trauma-0044,trauma-0804 treino=trauma-1431,trauma-1432,trauma-1433
+!questoes central=trauma-1094,trauma-0128,trauma-0158,trauma-0696,ombro-cotovelo-0519,ombro-cotovelo-0526 relacionadas=trauma-0044,trauma-0804,ombro-cotovelo-0510 treino=trauma-1431,trauma-1432,trauma-1433
 conceito: Bado classifica a Monteggia pela direção da cabeça do rádio, que acompanha o ápice da ulna; o tipo I é o da criança e o tipo II, com até 80%, o do adulto.
 como: O TARO pergunta o tipo do adulto (2013) e o tipo da luxação posterior (2014, 2015); o CET-PR juntou criança e adulto (I e II); FMRP-USP e UFG pediram a direção de cada tipo (I anterior, III lateral).
 armadilha: Tipo IV como "lateral": no IV a cabeça vai para a frente, e o que muda é a fratura do rádio junto.
@@ -432,7 +432,7 @@ Antibiótico: cobertura **gram-positiva** venosa para todas; **gram-negativa** j
 
 Nos projéteis de **baixa velocidade**, as fraturas costumam ser de um osso só (na série de Lenihan, só 16% pegaram os dois ossos). As isoladas sem desvio podem ser imobilizadas; a dos dois ossos desviada vai para desbridamento e placa. Cerca de 40% chegaram com paralisia nervosa e 60% delas melhoraram sozinhas (neuropraxia pelo efeito de concussão); dos seis maus resultados, cinco eram fraturas dos dois ossos tratadas com gesso.
 
-!questoes central=trauma-0873 treino=trauma-1456
+!questoes central=trauma-0873 relacionadas=trauma-0880 treino=trauma-1456
 conceito: Na fratura exposta da diáfise do antebraço, o Rockwood trata a maioria com desbridamento e placa imediata, reservando o fixador externo para a destruição maciça de partes moles com contaminação.
 como: O TARO 2011 perguntou a fixação preferencial na emergência, com placa, haste e dois tipos de fixador.
 alerta: No TARO 2011 (trauma-0873), o gabarito oficial foi o fixador externo monolateral. O Rockwood recomenda o contrário para a maioria: desbridamento e **placa imediata** nos tipos I, II e IIIA (e possível no IIIB), com o fixador externo só em casos selecionados com perda maciça de partes moles. Guarde o gabarito da banca para essa prova e o conceito do livro.
@@ -492,7 +492,7 @@ Depois da placa, a pseudartrose fica entre **0% e 10%**. As causas são mecânic
 
 Ocorre em **0% a 3%** (Anderson: 3% de 330, todas em fraturas fechadas, com *Staphylococcus aureus* em primeiro; Hadden: 6% de infecção profunda). A superficial se trata com **10 dias** de antibiótico oral (cefalosporina de primeira geração ou oxacilina); a profunda pede desbridamentos repetidos, **mantendo o material estável** até consolidar, e antibiótico por pelo menos **6 semanas**.
 
-!questoes treino=trauma-1460
+!questoes relacionadas=trauma-1190 treino=trauma-1460
 conceito: Na pseudartrose do antebraço operado com placa, a infecção profunda deve sempre ser investigada, porque acompanha cerca de um terço dos casos.
 !fim
 
