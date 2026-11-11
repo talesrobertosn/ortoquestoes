@@ -18,6 +18,17 @@ pacote da versão 0.1.3) a partir de:
 Os GLB são distribuídos aqui sem modificação geométrica. Esta pasta, e qualquer modificação dos
 modelos, permanece sob CC BY-SA, com os créditos acima.
 
+## Direto do Z-Anatomy (desde 11/11/2026)
+
+Exportados do arquivo completo do Z-Anatomy (`Startup.blend`, CC BY-SA 4.0) por
+`scripts/atlas3d/blender/exportar_extras.py`, sem alteração de forma (só escala para milímetros):
+
+- `modelos/insercoes.glb` e `insercoes.json`: 705 áreas de origem e inserção muscular desenhadas sobre os ossos.
+- `modelos/regions.glb`: 256 regiões topográficas da superfície do corpo (camada "Regiões do corpo").
+- `arvore.json`: a hierarquia sistema › parte de cada estrutura.
+- `nomes-ta2.json`: nomes em português da coluna portuguesa do `TA2.csv` do Z-Anatomy (Terminologia Anatômica 2,
+  FIPAT), com acabamento de grafia descrito em docs/atlas3d/NOMES.md.
+
 ## Nomes e dados
 
 - Identificadores e nomes em inglês: catálogos do Anatomy Atlas 3D (código MIT).

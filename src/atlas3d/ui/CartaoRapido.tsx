@@ -9,6 +9,8 @@ import { relacionadosDe } from '../dados/relacoes'
 
 interface Props {
   estrutura: Estrutura
+  /** a parte imediatamente acima na hierarquia ("Compartimento anterior do braço"), para quem não tem ficha */
+  ondeFica?: string
   faixa?: Faixa
   ficha?: Ficha
   vinculo?: Vinculo
@@ -37,7 +39,7 @@ export const CartaoRapido = memo(function CartaoRapido(p: Props) {
   const grupo = grupoDe(e)
   const titulo = ficha && p.faixa ? ficha.nome : nomeCompleto(e, p.faixa)
   const secundario = temNomePt(e) ? e.la : e.en !== nomeDe(e) ? e.en : undefined
-  const contexto = linhaDeContexto(p)
+  const contexto = linhaDeContexto(p) ?? (p.ondeFica ? `Parte de: ${p.ondeFica}` : undefined)
   const atalhos = r && indice ? atalhosDe(r, indice) : []
   // arrastar o cartão para baixo fecha a seleção (gesto de folha do iPhone), sem disputar com o modelo
   const arraste = useRef<{ y: number; id: number } | null>(null)

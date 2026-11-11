@@ -136,6 +136,12 @@ body:has(.atlas) { overflow: hidden; }
 .at-ficha__titulos .tr-heroi__selo { margin: 0 0 0.45rem; }
 .at-ficha h2 { margin: 0; font-family: "Iowan Old Style", "Charter", Georgia, serif; font-size: 1.6rem; line-height: 1.12; color: var(--sobre-heroi); }
 .at-ficha__latim { margin: 0.25rem 0 0; color: var(--sobre-heroi-2); font-style: italic; }
+/* onde fica: sistema › parte › … (hierarquia do Z-Anatomy, nomes da TA2) */
+.at-trilha { margin: 0.45rem 0 0; }
+.at-trilha ol { display: flex; flex-wrap: wrap; gap: 0.1rem 0; margin: 0; padding: 0; list-style: none; color: var(--sobre-heroi-2); font-size: 0.74rem; line-height: 1.45; }
+.at-trilha li { min-width: 0; overflow-wrap: anywhere; }
+.at-trilha li + li::before { content: "›"; margin: 0 0.35rem; opacity: 0.7; }
+.at-trilha li:last-child { color: var(--sobre-heroi); font-weight: 700; }
 .at-ficha__fechar { display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border: 1px solid var(--heroi-traco); border-radius: 4px; background: var(--heroi-vidro); color: var(--sobre-heroi); cursor: pointer; }
 .at-ficha__fechar:hover { background: rgba(255, 255, 255, 0.18); }
 .at-ficha__acoes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.3rem; }

@@ -147,7 +147,8 @@ export class Motor {
         if (!geo) continue
         const malha = new Mesh(geo, this.material(reg, 'base'))
         malha.userData.id = reg.estrutura.id
-        malha.renderOrder = grupo === 'osso' ? 0 : 1
+        // a pele das regiões é translúcida e cobre tudo: desenhada por último
+        malha.renderOrder = grupo === 'osso' ? 0 : grupo === 'regiao' ? 2 : 1
         malha.visible = false
         reg.malha = malha
         this.raiz.add(malha)
@@ -502,7 +503,16 @@ export class Motor {
    * pontos anatômicos validados, com linhas tracejadas entre origem e inserção. Só usa geometria que
    * o modelo já tem: nada de coordenada inventada. Não reconstrói a cena; troca só esta camada.
    */
-  mostrarRelacoes(destaques: Destaque[], marcos: Marco[] = [], linhas: [Marco['p'], Marco['p'], string][] = []) {
+  mostrarRelacoes(destaques: Destaque[], marcos: Marco[] = [], linhas: [Marco['p'], Marco['p'], string][] = [], areas: Destaque[] = []) {
+    this.pedidoRelacoes = [destaques, marcos, linhas, areas]
+    // áreas de origem e inserção: o GLB só vem quando a primeira área vai aparecer; ao chegar, redesenha o último pedido
+    if (areas.length && !this.geoAreas) {
+      this.carregandoAreas ??= carregarCamada('insercoes', 'insercoes.glb').then((g) => {
+        if (this.descartado) return
+        this.geoAreas = g
+        if (this.pedidoRelacoes) this.mostrarRelacoes(...this.pedidoRelacoes)
+      }).catch(() => { this.carregandoAreas = null })
+    }
     if (!this.relacoesNaCena) { this.raiz.add(this.camadaRelacoes); this.relacoesNaCena = true }
     for (const o of [...this.camadaRelacoes.children]) {
       this.camadaRelacoes.remove(o)
@@ -533,6 +543,24 @@ export class Motor {
         this.camadaRelacoes.add(m)
       }
     }
+    for (const a of areas) {
+      const geo = this.geoAreas?.get(a.id)
+      if (!geo) continue
+      const cor = new Color(a.cor)
+      // duas passadas: a área sólida na superfície do osso e um reflexo translúcido que aparece através do músculo
+      const solida = new MeshStandardMaterial({ color: cor, emissive: cor, emissiveIntensity: 0.45, roughness: 0.5, side: DoubleSide, polygonOffset: true, polygonOffsetFactor: -4, polygonOffsetUnits: -4 })
+      const raiox = new MeshStandardMaterial({ color: cor, emissive: cor, emissiveIntensity: 0.7, side: DoubleSide, transparent: true, opacity: 0.6, depthTest: false, depthWrite: false })
+      if (this.planoCorte) { solida.clippingPlanes = [this.planoCorte]; raiox.clippingPlanes = [this.planoCorte] }
+      // o reflexo só faz sentido com músculos por cima; no osso sozinho, a área de trás apareceria pela frente
+      const passadas = this.ligados.has('musculo') ? [[solida, 3], [raiox, 5]] as const : [[solida, 3]] as const
+      if (!this.ligados.has('musculo')) raiox.dispose()
+      for (const [mat, ordem] of passadas) {
+        const m = new Mesh(geo, mat)
+        m.renderOrder = ordem
+        m.raycast = () => {}
+        this.camadaRelacoes.add(m)
+      }
+    }
     for (const [a, b, cor] of linhas) {
       const g = new BufferGeometry().setFromPoints([new Vector3(...a), new Vector3(...b)])
       const l = new Line(g, new LineDashedMaterial({ color: cor, dashSize: 6, gapSize: 4, depthTest: false, transparent: true, opacity: 0.85 }))
@@ -544,6 +572,11 @@ export class Motor {
     this.pedirQuadro()
   }
   private geoMarco?: SphereGeometry
+  private geoAreas: Map<string, BufferGeometry> | null = null
+  private carregandoAreas: Promise<void> | null = null
+  private pedidoRelacoes: Parameters<Motor['mostrarRelacoes']> | null = null
+  /** Caixa (mm) de uma área de origem ou inserção já baixada, para enquadrar a câmera. */
+  caixaDaArea(id: string) { return this.geoAreas?.get(id)?.boundingBox ?? null }
   estaVisivel(id: string) { return !!this.registros.get(id)?.malha?.visible }
   existe(id: string) { return this.registros.has(id) }
 
@@ -562,6 +595,7 @@ export class Motor {
     const geos = new Set<BufferGeometry>()
     this.raiz.traverse((o) => { const m = o as Mesh; if (m.isMesh) geos.add(m.geometry) })
     this.geoMarco?.dispose()
+    for (const g of this.geoAreas?.values() ?? []) g.dispose()
     for (const g of geos) g.dispose() // libera só a GPU: a geometria segue no cache do módulo para a próxima visita
     for (const m of this.materiais.values()) m.dispose()
     this.renderer.dispose()
@@ -574,7 +608,7 @@ export class Motor {
 function arquivoDe(camada: string) {
   const mapa: Record<string, string> = {
     bone: 'bones.glb', muscle: 'muscles.glb', connective: 'connective.glb', fascia: 'fascia.glb', nerve: 'nerves.glb',
-    vessel: 'vessels.glb', lymph: 'lymph.glb', organ: 'organs.glb', brain: 'brain.glb', tooth: 'teeth.glb',
+    vessel: 'vessels.glb', lymph: 'lymph.glb', organ: 'organs.glb', brain: 'brain.glb', tooth: 'teeth.glb', region: 'regions.glb',
   }
   return mapa[camada]
 }
