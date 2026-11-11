@@ -348,7 +348,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | #1045 | Fase TARO: 50 questões em miniaula com figuras (acetábulo, fraturas e luxações da mão, clavícula, antebraço e punho da criança); foto com rosto parcial trocada na pediatria-0643 |
 | #1046 | Fase TARO: 50 questões em miniaula com figuras (patela e mecanismo extensor, planalto tibial, cotovelo infantil e pronação dolorosa, tornozelo, colo do fêmur, supracondiliana) |
 | #1047 | Fase TARO: 64 questões em miniaula com figuras (cotovelo infantil e fises, tálus, calcâneo, pilão, tornozelo, côndilo lateral, maus-tratos, patela, diáfise do fêmur e do úmero, transtrocantérica, fêmur distal); fecha as listas do TARO ligadas a resumo, menos a a035 |
-| (este PR) | Fase TARO: 42 miniaulas com figuras; 40 questões do TARO que não estavam em nenhum resumo ganharam miniaula e ligação ao bloco certo (v01 a v04); as 2 últimas do TARO já ligadas (a035) |
+| #1048 | Fase TARO: 42 miniaulas com figuras; 40 questões do TARO que não estavam em nenhum resumo ganharam miniaula e ligação ao bloco certo (v01 a v04); as 2 últimas do TARO já ligadas (a035) |
+| (este PR) | Fase TARO: 40 questões que não estavam em nenhum resumo ganharam miniaula com figura e ligação ao bloco do assunto (v05 a v08) |
 
 ## Próximo
 
