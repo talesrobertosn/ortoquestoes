@@ -349,7 +349,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | #1046 | Fase TARO: 50 questões em miniaula com figuras (patela e mecanismo extensor, planalto tibial, cotovelo infantil e pronação dolorosa, tornozelo, colo do fêmur, supracondiliana) |
 | #1047 | Fase TARO: 64 questões em miniaula com figuras (cotovelo infantil e fises, tálus, calcâneo, pilão, tornozelo, côndilo lateral, maus-tratos, patela, diáfise do fêmur e do úmero, transtrocantérica, fêmur distal); fecha as listas do TARO ligadas a resumo, menos a a035 |
 | #1048 | Fase TARO: 42 miniaulas com figuras; 40 questões do TARO que não estavam em nenhum resumo ganharam miniaula e ligação ao bloco certo (v01 a v04); as 2 últimas do TARO já ligadas (a035) |
-| (este PR) | Fase TARO: 40 questões que não estavam em nenhum resumo ganharam miniaula com figura e ligação ao bloco do assunto (v05 a v08) |
+| #1049 | Fase TARO: 40 questões que não estavam em nenhum resumo ganharam miniaula com figura e ligação ao bloco do assunto (v05 a v08) |
+| (este PR) | Fecha o TARO: 47 questões que não estavam em nenhum resumo ganharam miniaula com figura e ligação ao bloco do assunto (v09 a v12). Lista 3 de correções começou: resumos de coluna cervical, cotovelo e fraturas da mão corrigidos (25 correções, 3 figuras preenchidas); comentários antigos reconciliados e 39 sem selo para a fila |
 
 ## Próximo
 
