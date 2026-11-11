@@ -1,6 +1,6 @@
 ---
 id: green-nervos-perifericos
-versao: 1
+versao: 2
 titulo: Lesões de nervos periféricos
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 7ª edição (2017), com o Campbell's Operative Orthopaedics, 15ª ed. (caps. 67 e 73)
 capitulo: Capítulo 30 · Nerve Injury and Repair
 autores: Rolfe Birch e Tom Quick
-fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 30 (Nerve Injury and Repair, pp. 979 a 1010), cap. 31 (Principles of Tendon Transfers of Median, Radial, and Ulnar Nerves, pp. 1023 a 1027, 1046, 1061 a 1065 e 1074 a 1076) e cap. 34 (Traumatic Brachial Plexus Injury, pp. 1146 a 1151, 1159, 1165, 1166 e 1172); Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries, pp. 2979 a 2994, 2997 e 3004 a 3010) e cap. 73 (Nerve Injuries at the Level of the Hand and Wrist, pp. 3256 a 3260). No Green 7ª ed. o capítulo 31 trata de transferências tendinosas; as transferências nervosas estão nos caps. 30, 31 e 34. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Green's Operative Hand Surgery, 7ª ed., cap. 28 (Compression Neuropathies, pp. 928, 929 e 937), cap. 30 (Nerve Injury and Repair, pp. 979 a 1010), cap. 31 (Principles of Tendon Transfers of Median, Radial, and Ulnar Nerves, pp. 1023 a 1027, 1046, 1061 a 1065 e 1074 a 1076) e cap. 34 (Traumatic Brachial Plexus Injury, pp. 1146 a 1151, 1159, 1165 a 1167, 1172 e 1173); Campbell's Operative Orthopaedics, 15ª ed., cap. 67 (Peripheral Nerve Injuries, pp. 2979 a 2994, 2997, 2998 e 3004 a 3012) e cap. 73 (Nerve Injuries at the Level of the Hand and Wrist, pp. 3255 a 3260). No Green 7ª ed. o capítulo 31 trata de transferências tendinosas; as transferências nervosas estão nos caps. 30, 31 e 34. As páginas citadas são as impressas.
 subtemas: Lesões de nervos periféricos
 resumo: Endoneuro envolve a fibra, perineuro o fascículo (barreira de difusão) e epineuro o tronco (60% a 85% da área); SEDDON (neurapraxia, axonotmese, neurotmese) e SUNDERLAND (I mielina, II axônio, III endoneuro, IV perineuro, V tronco); degeneração walleriana distal com pico de receptividade entre 1 e 3 semanas; anidrose igual ou pouco maior que a área sensitiva; TINEL que avança indica regeneração (II e III); fibrilações após 2 a 4 semanas; reparo primário sem tensão, enxerto quando falta 1 cm ou mais, condutos até 3 cm; OBERLIN (fascículo posteromedial do ulnar para o bíceps), LEECHAVENGVONGS (cabeça longa do tríceps para a divisão anterior do axilar), MACKINNON (FDS para ERCC e FRC para interósseo posterior); idade e atraso pesam no resultado; MRC M0 a M5 e S0 a S4.
 ---
@@ -109,6 +109,8 @@ O Campbell chama a classificação de SUNDERLAND (1951) de **mais útil**, porqu
 
 Na Tabela 67.1 o rótulo "axonotmese" aparece na linha do grau II, e é essa correspondência direta que as provas usam: **axonotmese = SUNDERLAND II**. Os graus III e IV ficam entre a axonotmese pura e a neurotmese; o que os separa é o envoltório preservado: no III sobra o perineuro, no IV sobra só o epineuro.
 
+O próprio Campbell, porém, traz outra correspondência no capítulo 73 (Tabela 73.1, p. 3255, tirada de MACKINNON e DELLON): ali **axonotmese cobre os graus II, III e IV** de SUNDERLAND, neurapraxia é o grau I, neurotmese o V, e o grau VI aparece como combinação de quaisquer graus de I a V. As duas tabelas estão no mesmo livro; quando a questão pede "a" equivalência da axonotmese, a resposta clássica é o grau II (Tabela 67.1), mas a alternativa que fala em graus II a IV também tem apoio no Campbell (Tabela 73.1).
+
 !questoes central=mao-0100 relacionadas=mao-0257,mao-0260,mao-0889,mao-1054,mao-1145
 conceito: SUNDERLAND acumula estruturas de dentro para fora: II axônio, III endoneuro com perineuro preservado, IV perineuro com epineuro preservado, V tronco inteiro.
 como: O TEOT 2022 pediu o grau com axônio, endoneuro e perineuro lesados (IV); o ENARE R4 2023 cobrou o grupo III e o grupo IV nos dois sentidos; a UFG 2017, o grau do axônio com endoneuro (III); a PUC-SP 2019 e 2021, a estrutura do grau 4.
@@ -169,7 +171,7 @@ O Green (cap. 30, pp. 985 e 987) insiste: **nervo que parou de funcionar com uma
 
 ## Zonas sensitivas
 
-Depois de uma secção, a área de perda completa é pequena: é a **zona autônoma**, inervada só por aquele nervo (Campbell, p. 2981). Em volta fica a **zona intermediária**, de anestesia tátil e térmica, mais parecida com a distribuição anatômica. A **zona máxima** é a área que um nervo íntegro consegue cobrir quando os vizinhos estão bloqueados. A zona autônoma encolhe nos primeiros dias ou semanas, antes de qualquer regeneração possível, porque ramos anastomóticos de nervos vizinhos assumem parte da função; quem confunde esse encolhimento com regeneração atrasa à toa a exploração. A menor zona autônoma do mediano cobre as **falanges distais do indicador e do médio**, dorsal e volar (p. 3009).
+Depois de uma secção, a área de perda completa é pequena: é a **zona autônoma**, inervada só por aquele nervo (Campbell, p. 2981). Em volta fica a **zona intermediária**, de anestesia tátil e térmica, mais parecida com a distribuição anatômica. A **zona máxima** é a área que um nervo íntegro consegue cobrir quando os vizinhos estão bloqueados. A zona autônoma encolhe nos primeiros dias ou semanas, antes de qualquer regeneração possível, porque ramos anastomóticos de nervos vizinhos assumem parte da função; quem confunde esse encolhimento com regeneração atrasa à toa a exploração. A menor zona autônoma do mediano cobre as **falanges distais do indicador e do médio**, dorsal e volar (p. 3010).
 
 ## O simpático: anidrose, calor e trofismo
 
@@ -177,7 +179,7 @@ Esta é a parte mais traiçoeira para a prova, porque inverte a intuição. O Ca
 
 A temperatura muda com o tempo. Na lesão completa há vasodilatação: no início a área é **mais quente e rosada**; depois de **2 a 3 semanas** fica **mais fria**, pálida, cianótica ou mosqueada (Campbell, p. 2982). O Green (p. 987) chama de sinal quase infalível nas primeiras 48 horas a **pele quente e seca** no território do nervo lesado, porque a lesão profunda atinge também as fibras finas, e afirma que **a paralisia simpática é sinal seguro de interrupção de axônios** (p. 986). Vêm depois as alterações tróficas: pele fina e brilhante, úlceras que cicatrizam devagar, unhas deformadas, osteoporose (mais intensa nas lesões incompletas dolorosas, e no mediano incompleto nas falanges distais do polegar, indicador e médio).
 
-A exceção que explica a hiper-hidrose está no mesmo parágrafo do Campbell: **lesão incompleta, sobretudo associada à causalgia**, pode dar sudorese excessiva, que ultrapassa a zona intermediária. E o teste do suor tem uma leitura reversa (p. 2986): as fibras simpáticas são resistentes ao trauma mecânico, de modo que **sudorese preservada na zona autônoma sugere que a interrupção não foi completa**.
+A exceção que explica a hiper-hidrose está no mesmo parágrafo do Campbell: **lesão incompleta, sobretudo associada à causalgia**, pode dar sudorese excessiva, que ultrapassa a zona intermediária. E o teste do suor tem uma leitura reversa (p. 2987): as fibras simpáticas são resistentes ao trauma mecânico, de modo que **sudorese preservada na zona autônoma sugere que a interrupção não foi completa**.
 
 !tabela Bloqueio de condução contra lesão degenerativa (Green 7ª ed., cap. 30, Tabela 30.2, p. 986)
 | Aspecto | Bloqueio de condução (neurapraxia) | Axonotmese ou neurotmese |
@@ -232,13 +234,13 @@ armadilha: Aceitar que o WARTENBERG avalia sensibilidade (é a incapacidade moto
 
 ## Por que esperar
 
-O Green (cap. 30, p. 988) cita SMITH: a eletroneuromiografia é extensão do exame clínico. Depois da secção, alguma condução persiste por vários dias até a degeneração walleriana se completar, e por isso **os exames não diferenciam neurapraxia de degeneração nos primeiros dias**. Eles **distinguem bloqueio de condução de lesão degenerativa**, mas **não separam axonotmese de neurotmese**: essa distinção só vem com o tempo ou com a exposição do nervo (p. 990).
+O Green (cap. 30, p. 988) cita SMITH: a eletroneuromiografia é extensão do exame clínico. Depois da secção, alguma condução persiste por vários dias até a degeneração walleriana se completar, e por isso **os exames não diferenciam neurapraxia de degeneração nos primeiros dias**. O capítulo 28 do mesmo livro (neuropatias compressivas) dá os prazos em números redondos: mesmo a secção completa só aparece no estudo de condução **2 a 6 semanas** depois da lesão (p. 928), e as fibrilações surgem no músculo desnervado há **pelo menos 2 semanas**, sendo o sinal mais precoce e o indicador mais sensível de perda de axônio motor (p. 929). Eles **distinguem bloqueio de condução de lesão degenerativa**, mas **não separam axonotmese de neurotmese**: essa distinção só vem com o tempo ou com a exposição do nervo (p. 990).
 
 ## A sequência no músculo desnervado
 
 Os dois livros dão números parecidos, com ênfases diferentes, e as provas exploram ambos.
 
-- O Green (p. 988) diz que os **potenciais de fibrilação são um dos sinais eletromiográficos mais precoces** de desnervação, que seu início depende da distância entre a lesão e o músculo e que pode haver um intervalo de **10 a 14 dias** antes de aparecerem. O reaparecimento de potenciais de unidade motora voluntários indica reinervação e costuma **preceder a recuperação clínica**, mas poucas unidades não garantem recuperação completa.
+- O Green (cap. 30, p. 988) diz que os **potenciais de fibrilação são um dos sinais eletromiográficos mais precoces** de desnervação, que seu início depende da distância entre a lesão e o músculo e que pode haver um intervalo de **10 a 14 dias** antes de aparecerem. O reaparecimento de potenciais de unidade motora voluntários indica reinervação e costuma **preceder a recuperação clínica**, mas poucas unidades não garantem recuperação completa.
 - O Campbell (cap. 67, p. 2980) descreve o músculo seccionado: paralisado e atônico; nenhuma alteração significativa na eletromiografia por **8 a 14 dias**, quando surgem potenciais de fibrilação transitórios à inserção da agulha; **fibrilações espontâneas após 2 a 4 semanas, coincidindo com o início da atrofia** das fibras; atrofia de **50% a 70% ao fim de cerca de 2 meses**; estrias e placas motoras persistem por mais de 12 meses; tubos endoneurais vazios encolhem a um terço; substituição completa das fibras pode levar **3 anos**.
 - Na seção de eletrodiagnóstico, o Campbell (pp. 2985 e 2986) detalha: **ondas positivas agudas aos 10 a 14 dias**, **fibrilações entre 14 e 18 dias**, brotamento com aumento da amplitude por volta de **3 meses**, às vezes precedido de potenciais polifásicos, e potenciais maiores que o normal entre **2 e 6 meses**. Na condução, a degeneração walleriana reduz a amplitude dos potenciais em **5 a 10 dias**; se a condução distal continua após 10 dias, trata-se de bloqueio fisiológico e o prognóstico é melhor.
 
@@ -320,7 +322,7 @@ armadilha: Culpar o uso de enxerto, a cirurgia na fase aguda ou o reparo primár
 
 ## Cola de fibrina
 
-O Green (p. 992) descreve a cola de fibrina (Tisseel) como um envelope que sela a linha de sutura, com aprotinina **diluída 1:4** em água estéril (sem diluir, induz fibrose), agulha dirigida para longe da linha de reparo e a ressalva de que ela **não resiste à tensão**; NARAKAS achou seus resultados 15% melhores, e os autores preferem a cola a um excesso de pontos (p. 996). O Campbell (p. 2993) lembra que nenhuma cola aumentou a resistência do reparo; o capítulo 73 (p. 3260) cita um ensaio randomizado sem diferença de resultado em relação à microssutura no mediano e ulnar do punho, com tempo operatório menor.
+O Green (p. 992) descreve a cola de fibrina (Tisseel) como um envelope que sela a linha de sutura, com aprotinina **diluída 1:4** em água estéril (sem diluir, induz fibrose), agulha dirigida para longe da linha de reparo e a ressalva de que ela **não resiste à tensão**; NARAKAS achou seus resultados 15% melhores (p. 992), e os autores preferem a cola a um excesso de pontos (p. 996). O Campbell (p. 2993) lembra que nenhuma cola aumentou a resistência do reparo; o capítulo 73 (p. 3260) cita um ensaio randomizado sem diferença de resultado em relação à microssutura no mediano e ulnar do punho, com tempo operatório menor.
 
 !questoes central=mao-0837
 conceito: A cola de fibrina sela a neurorrafia e reduz o número de pontos, mas não resiste à tensão; a aprotinina vai diluída 1:4.
@@ -363,11 +365,11 @@ alerta: Na `mao-1614`, os livros lidos sustentam que o silicone funciona, mas n�
 
 # Transferências distais: nervo ou tendão {radar=confirmado}
 
-O Green (cap. 30, p. 979) põe cada técnica no seu lugar: se o coto proximal está irreparável ou sem ligação com a medula, **transferir outro nervo para o coto distal**; se o distal está destruído, **neurotização muscular direta**; se a lesão é irreparável, **transferência musculotendínea**. O princípio da transferência distal é encurtar a viagem: o doador, dispensável, é cortado o mais distal possível, e o receptor o mais perto do músculo-alvo, com coaptação sem tensão (cap. 31, p. 1076). A transferência nervosa evita imobilização longa e múltiplas cicatrizes, mas **recupera mais devagar** que a tendínea e não serve se o músculo receptor foi lesado, está preso por cicatriz ou ficou tempo demais desnervado.
+O Green (cap. 30, p. 979) põe cada técnica no seu lugar: se o coto proximal está irreparável ou sem ligação com a medula, **transferir outro nervo para o coto distal**; se o distal está destruído, **neurotização muscular direta**; se a lesão é irreparável, **transferência musculotendínea**. O princípio da transferência distal é encurtar a viagem: o doador, dispensável, é cortado o mais distal possível, e o receptor o mais perto do músculo-alvo, com coaptação sem tensão (cap. 31, p. 1076). O Campbell (cap. 67, p. 2998, técnica de MACKINNON e COLBERT) dá a regra prática no sentido oposto para o receptor: **dividir o doador distalmente e o receptor proximalmente**. Não é contradição de princípio: os dois buscam coaptação sem tensão; o Green corta o receptor perto da inserção para a regeneração ser curta, o Campbell corta o receptor alto para ganhar comprimento até o doador. A transferência nervosa evita imobilização longa e múltiplas cicatrizes, mas **recupera mais devagar** que a tendínea e não serve se o músculo receptor foi lesado, está preso por cicatriz ou ficou tempo demais desnervado.
 
 - **Radial (MACKINNON)**: por incisão volar-radial única, o ramo do mediano para o **FDS vai ao nervo do ERCC** e o ramo do **FRC (ou palmar longo) vai ao interósseo posterior** (cap. 31, p. 1076).
 - **Mediano**: ramo do ERCC para o ramo do pronador redondo e ramo do supinador para o interósseo anterior; pronador aos 4 meses, FLP e FDP do indicador aos 8, grau 4 aos 18.
-- **Ulnar alto**: **interósseo anterior terminal**, antes de entrar no pronador quadrado, para o **ramo motor profundo do ulnar** (cap. 30, p. 1008; Campbell, p. 3008). NOVAK e MACKINNON: pinça lateral de 2,2 para 13,8 lb. Condições: lesão alta do ulnar, mediano normal e alvos saudáveis; o interósseo anterior tem cerca de 1000 fibras motoras contra mais de 4000 no ramo do ulnar.
+- **Ulnar alto**: **interósseo anterior terminal**, antes de entrar no pronador quadrado, para o **ramo motor profundo do ulnar** (cap. 30, p. 1008; Campbell, p. 3009). NOVAK e MACKINNON: pinça lateral de 2,2 para 13,8 lb. Condições: lesão alta do ulnar, mediano normal e alvos saudáveis; o interósseo anterior tem cerca de 1000 fibras motoras contra mais de 4000 no ramo do ulnar.
 
 Na transferência tendínea, o capítulo 31 (p. 1025) lista os princípios: músculo com amplitude e força suficientes (reinervado só se totalmente recuperado), **linha reta de tração**, no máximo uma polia, **evitar angulação aguda**, função original dispensável e sinergismo. BURKHALTER criou a **transferência precoce como tala interna**: no radial, **pronador redondo para o ERCC** término-lateral, no mesmo tempo do reparo, para devolver logo a extensão do punho e a força de preensão; se o nervo recupera, o ERCC volta a trabalhar por conta própria (pp. 1061 e 1065).
 
@@ -384,9 +386,13 @@ O capítulo 34 do Green (pp. 1150 e 1151) dá o exame que localiza a lesão. Per
 
 As prioridades (p. 1159): no pan-plexo, **1) flexão do cotovelo, 2) estabilidade, abdução e rotação externa do ombro, 3) sensibilidade da mão** pelo fascículo lateral, depois flexão do punho e dedos, extensão e intrínsecos. Nas transferências:
 
-- **OBERLIN**: fascículo motor do ulnar para o ramo motor do bíceps, em lesão C5 e C6 (ou C5 a C7) com **C8 e T1 preservados**; fácil e confiável, substituiu os intercostais (p. 1166). Pela topografia de SUNDERLAND, os fascículos **posteromediais** do ulnar no braço levam fibras para o antebraço e os **anterolaterais**, para os intrínsecos; escolhe-se o fascículo que, estimulado, flete o punho sem acionar a mão. O Campbell (p. 2997) chama de a primeira neurotização desse tipo, descrita em 1994.
-- **LEECHAVENGVONGS**: ramo da **cabeça longa do tríceps** para a **divisão anterior do nervo axilar**, que é identificado no **espaço quadrilateral**; contraindicado se o tríceps tem força menor que 4 (p. 1172).
+- **OBERLIN**: fascículo motor do ulnar para o ramo motor do bíceps, em lesão C5 e C6 (ou C5 a C7) com **C8 e T1 preservados**; fácil e confiável, substituiu os intercostais (p. 1166). Pela topografia de SUNDERLAND, os fascículos **posteromediais** do ulnar no braço levam fibras para o antebraço e os **anterolaterais**, para os intrínsecos; escolhe-se o fascículo que, estimulado, flete o punho sem acionar a mão, e a coaptação é epineural com náilon **9-0 ou 10-0**, reforçada com cola de fibrina (p. 1167). O Campbell (p. 2997) chama de a primeira neurotização desse tipo, descrita em 1994, e na técnica (p. 2998) descreve o fascículo dos flexores extrínsecos como situado em geral **anterior e medialmente** no ulnar, suturado com **11-0** sem tensão e com cola. Os dois livros divergem na posição do fascículo (posteromedial no Green, anterior e medial no Campbell) e no fio; o que ambos pedem é o fascículo que, estimulado, flete o punho ou os dedos sem acionar os intrínsecos.
+- **LEECHAVENGVONGS**: ramo da **cabeça longa do tríceps** para a **divisão anterior do nervo axilar**, que é identificado no **espaço quadrilateral**; contraindicado se o tríceps tem força menor que 4 (p. 1172). O radial e os ramos para as três cabeças do tríceps são expostos no **intervalo triangular**, entre a cabeça longa e a lateral, enquanto o axilar é achado no espaço quadrilateral (Fig. 34.28, p. 1173).
 - **Acessório para supraescapular** sem enxerto: abdução antigravitacional em 92%; acessório para musculocutâneo exige enxerto; intercostais para musculocutâneo dão M3 em 72% sem enxerto.
+
+!figura 34.28 imagem=mao/green7-34-28-w22.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 34, Fig. 34.28, p. 1173. Transferência de LEECHAVENGVONGS: A, incisão posterior no braço; B, axilar no espaço quadrilateral e radial com os ramos do tríceps no intervalo triangular; C, o ramo da cabeça longa do tríceps levado à divisão anterior do axilar; D, sutura direta sem tensão.
+!fim
 
 !questoes central=mao-0437 relacionadas=mao-0004,mao-0445,mao-0557,mao-0986,mao-0888,mao-0254,mao-0887,mao-0147
 conceito: OBERLIN leva fascículo posteromedial do ulnar ao ramo do bíceps quando C8 e T1 estão preservados; LEECHAVENGVONGS leva a cabeça longa do tríceps à divisão anterior do axilar, no espaço quadrilateral; a flexão do cotovelo vem primeiro.
@@ -406,7 +412,7 @@ alerta: Na `mao-0480`, o Green (cap. 34, p. 1151) também associa a atrofia para
 
 A regeneração anda cerca de **1 mm por dia**, ritmo do transporte lento de neurofilamentos; é mais rápida na criança, após reparo primário e no segmento proximal (Green, cap. 30, p. 1001). A sensibilidade volta numa ordem: **a dor (picada) primeiro**, porque as fibras finas regeneram mais rápido, depois vibração de 30 Hz e toque em movimento; toque constante e vibração de 256 Hz por último (Campbell, cap. 67, p. 2981).
 
-!tabela Escala do Medical Research Council, HIGHET e SEDDON (Green 7ª ed., cap. 30, Tabelas 30.5 e 30.6, p. 1002; Campbell 15ª ed., Tabela 67.4, p. 2981)
+!tabela Escala do Medical Research Council, HIGHET e SEDDON (Green 7ª ed., cap. 30, Tabelas 30.5 e 30.6, p. 1002; Campbell 15ª ed., cap. 67, Tabela 67.2, motora, p. 2980, e Tabela 67.4, sensitiva, p. 2981)
 | Grau | Motor | Sensitivo |
 | --- | --- | --- |
 | 0 | sem contração | sem sensibilidade na zona autônoma |
@@ -429,10 +435,11 @@ alerta: O Green (p. 1003) chama a violência da lesão de fator mais importante;
 
 # Quadros de cada nervo {radar=confirmado}
 
-- **Interósseo anterior**: sai do mediano entre as cabeças do pronador e inerva **FLP, metade radial do FDP e pronador quadrado** (Campbell, p. 3009).
+- **Ramos do mediano no antebraço** (Campbell, cap. 67, pp. 3011 e 3012): no braço o mediano **não dá ramos**; os ramos para o pronador redondo (em geral dois, um para cada cabeça) e para o FRC saem enquanto o nervo passa sob o lacerto fibroso; vêm também ramos para o FRC e o palmar longo, um para o FDS e um para o FDP. Depois de cruzar as duas cabeças do pronador sai o interósseo anterior, e mais distalmente outros ramos para o FDS; daí até a mão não há ramos importantes. Na transposição anterior, os ramos para pronador, FRC, palmar longo e interósseo anterior são dissecados por dentro do tronco para ganhar 2 a 3 cm (p. 3012).
+- **Interósseo anterior**: sai do lado posteromedial do mediano depois de passar entre as cabeças do pronador e inerva **FLP, metade radial do FDP e pronador quadrado** (Campbell, p. 3011). Na paralisia espontânea, os prazos de esperar divergem: o Campbell (p. 3011, plano de SPINNER) explora se não houver melhora clínica ou eletromiográfica em **12 semanas**; o Green (cap. 28, p. 937) considera exploração ou transferência aos **7 a 10 meses** sem sinal eletromiográfico de reinervação. Lesão penetrante: reparo primário.
 - **Mediano alto** paralisa também pronador, FRC e FDS; a flexão do punho persiste pelo FUC. **Baixo**: APB, oponente e FPB superficial, mas **abdução e oposição frequentemente se mantêm** pelo ulnar (Green, cap. 31, pp. 1025 a 1027).
 - **Interósseo posterior**: **extensão do punho com desvio radial**, porque o ERLC é inervado antes da divisão (p. 1064).
-- **Ulnar baixo**: garra mais intensa que no alto e **dorso ulnar sensível** (ramo dorsal 6 a 8 cm acima do punho). FROMENT e WARTENBERG são motores (p. 1046).
+- **Ulnar baixo**: garra mais intensa que no alto e **dorso ulnar sensível**; o ramo dorsal sai **6 a 8 cm proximal ao punho** pelo Green (cap. 31, p. 1046) e **5 a 8 cm proximal ao pisiforme** pelo Campbell (cap. 67, p. 3008). FROMENT e WARTENBERG são motores (p. 1046).
 - **MARTIN-GRUBER**: conexão mediano-ulnar no antebraço em 17% (p. 1046).
 - **Digitais**: priorizar o ulnar do polegar, o radial do indicador e do médio e o ulnar do mínimo (Campbell, cap. 73, p. 3258).
 

@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-quadril-coxa
-versao: 2
+versao: 3
 titulo: Anatomia do quadril e da coxa
 especialidade: quadril
 acesso: gratis
@@ -26,14 +26,13 @@ A anatomia do quadril aparece nas provas de dois jeitos. O primeiro é a **image
 - **Calcar femoral:** osso denso, orientado na vertical, na **face posteromedial** do fêmur proximal.
 - **Fossa piriforme:** na base posteromedial do trocânter maior; é o **ponto de entrada das hastes femorais**.
 - **Ângulo cervicodiafisário:** **120 a 135 graus**.
-- **Anteversão femoral:** **10 a 15 graus** no adulto.
+- **Anteversão femoral:** **10 a 15 graus** no adulto. Na criança ela é maior e cai com o crescimento: cerca de **30 graus ao nascer** (faixa de 15 a 50) e **20 graus aos 10 anos** (faixa de 10 a 35), segundo o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 27, p. 1265).
 - A densidade do fêmur proximal diminui com a idade, o que facilita a fratura, e a fratura ou a luxação podem interromper a circulação da cabeça e levar à osteonecrose.
 
 !questoes central=quadril-0070 relacionadas=quadril-0037 treino=quadril-0722
 conceito: O calcar é posteromedial, o colo é antevertido (10 a 15 graus no adulto) e os glúteos médio e mínimo são do glúteo superior; a principal artéria da cabeça é a circunflexa medial.
 como: Uma prova de Ortopedia juntou em uma questão a versão do colo, a posição do calcar, a inervação dos abdutores e a artéria principal da cabeça; o TARO 2014 perguntou a anteversão ao nascimento e aos 10 anos.
 armadilha: Pôr o calcar na face anterolateral ou chamar o colo normal de retrovertido.
-alerta: O capítulo lido dá a anteversão do adulto (10 a 15 graus), mas não a anteversão ao nascimento e aos 10 anos pedida em `quadril-0037`; o gabarito oficial foi preservado.
 !fim
 
 # A circulação da cabeça femoral {radar=confirmado}
@@ -52,6 +51,10 @@ O desenho tem três andares, de fora para dentro:
 | do ligamento redondo | pelo ligamento até a fóvea | **mínima**; anastomosa com as epifisárias laterais |
 !fim
 
+!figura 53-9B imagem=quadril/rwa10-53-9b-w05.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 53, Fig. 53-9B. Vista posterior: a circunflexa femoral medial contorna o colo por trás e sobe até a borda póstero-superior da cabeça; no corte do colo, os vasos correm dentro dos retináculos de WEITBRECHT. É o desenho que explica por que a via posterior ameaça a cabeça.
+!fim
+
 !tabela A cabeça femoral na criança (Netter's Concise, cap. 8)
 | Idade | Fontes |
 | --- | --- |
@@ -60,11 +63,17 @@ O desenho tem três andares, de fora para dentro:
 | acima de 8 anos | a circunflexa medial é a predominante |
 !fim
 
+O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 34, p. 1782), desenha a criança: a fonte dominante são os **vasos epifisários laterais**, ramo terminal da circunflexa medial, que furam a cápsula na base do colo perto da fossa piriforme; a circunflexa lateral irriga parte da cabeça anterior **só até 2 a 3 anos** e depois fica com a metáfise; a partir de **14 a 18 meses** a fise vira barreira entre a circulação epifisária e a metafisária; e os vasos do ligamento redondo pouco contribuem, sobretudo **antes dos 8 anos**.
+
+!figura 34-7 imagem=quadril/lw7-34-7-r02.jpeg
+Fonte: Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (2014), cap. 34, Fig. 34-7, p. 1782. Fêmur proximal da criança: em A, a circunflexa lateral (LCA) irriga a metáfise e o trocânter maior, e a circunflexa medial (MCA) é a dominante da cabeça; em B, a artéria lateral ascendente sobe pelo colo póstero-superior e dá os ramos epifisários e metafisários.
+!fim
+
 !questoes central=quadril-0030 relacionadas=quadril-0014,quadril-0490,quadril-0040,quadril-0140,quadril-0033 treino=quadril-0715,quadril-0716
-conceito: A circunflexa medial passa posterior ao colo, sob o quadrado femoral, e os vasos entram no colo póstero-superior; é ela que se preserva no acesso posterior.
+conceito: A circunflexa medial passa posterior ao colo, sob o quadrado femoral, e os vasos entram no colo póstero-superior; é ela que se preserva no acesso posterior. O ramo profundo emerge entre o quadrado femoral e o gêmeo inferior (tabela do Rockwood and Green em "A cabeça femoral: os ramos da circunflexa medial").
 como: O TARO 2015 perguntou as regiões dos vasos capsulares; o TARO 2021, o vaso a preservar no acesso posterior; o TARO 2009, a principal fonte da cabeça; o TEOT 2022, por onde emerge o ramo profundo da circunflexa medial; uma prova de Ortopedia mostrou a circunflexa lateral em imagem; o TARO 2014, a artéria receptora do enxerto vascularizado de fíbula.
 armadilha: Escolher a circunflexa lateral ou o ligamento redondo como fonte principal no adulto.
-alerta: O capítulo lido não descreve a técnica do enxerto vascularizado de fíbula pedida em `quadril-0033`, nem os músculos entre os quais emerge o ramo profundo da circunflexa medial (`quadril-0040`); os gabaritos oficiais foram preservados.
+alerta: O capítulo lido não descreve a técnica do enxerto vascularizado de fíbula pedida em `quadril-0033`; o gabarito oficial foi preservado.
 !fim
 
 # Os nervos {radar=confirmado}
@@ -74,19 +83,25 @@ alerta: O capítulo lido não descreve a técnica do enxerto vascularizado de f�
 | --- | --- | --- | --- |
 | **glúteo superior** | L4 a S1; forame isquiático maior **acima do piriforme** | **glúteo médio, glúteo mínimo, tensor da fáscia lata** | em risco na via lateral, que divide o glúteo médio |
 | **glúteo inferior** | L5 a S2; forame isquiático maior, abaixo do piriforme | **glúteo máximo** | a artéria glútea inferior se lesa na extensão proximal da via posterior |
-| nervo para o piriforme | S2 | piriforme | |
+| nervo para o piriforme | S1 e S2 | piriforme | o Netter dá só S2 nesta tabela e S1 e S2 na dos rotadores; o Campbell (cap. 67, p. 3014) só diz que o ramo sai dentro da pelve, sem as raízes |
 | **obturatório** | L2 a L4; canal obturatório, divisões anterior e posterior | **grácil e adutor longo** (anterior), **adutor curto** (anterior e posterior), **adutor magno** (posterior) | sensitivo na face inferomedial da coxa; lesado por **afastador atrás do ligamento transverso do acetábulo** |
-| **femoral** | L2 a L4; entre o psoas e o ilíaco | quadríceps, sartório | **afastamento medial vigoroso** nas vias anterior e anterolateral |
+| **femoral** | L2 a L4; entre o psoas e o ilíaco | quadríceps, sartório, pectíneo | **afastamento medial vigoroso** nas vias anterior e anterolateral; o pectíneo recebe também a divisão anterior do obturatório (Campbell, cap. 67, p. 3013) |
 | **cutâneo femoral lateral** | L2 e L3; cruza **logo abaixo da espinha ilíaca anterossuperior** | nenhum (sensitivo da face lateral da coxa) | comprimido junto à espinha e sob o ligamento inguinal; **afastado na via anterior** |
 !fim
 
 O **piriforme** é o divisor da saída da pelve: acima dele, o nervo e a artéria glúteos superiores; abaixo, o glúteo inferior, o ciático e os demais. A parte isquiocondilar do adutor magno, a parte que funciona como isquiotibial, recebe o ramo tibial do ciático.
 
+!figura 83.4 imagem=quadril/adulthip-83-4-w05.jpeg
+Fonte: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (2017), cap. 83, Fig. 83.4, p. 1065. O nervo glúteo superior sai da pelve acima do piriforme, com a artéria glútea superior, e corre entre o glúteo médio e o glúteo mínimo; abaixo do piriforme descem o ciático e o cutâneo femoral posterior.
+!fim
+
+**O enxerto do ílio anterior.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 5), lista o que corre risco ao tirar osso da crista anterior: os nervos **cutâneo femoral lateral e ilioinguinal** e os **vasos glúteos superiores**, além de hérnia e deformidade estética da crista nos enxertos grandes.
+
 !questoes central=quadril-0193 relacionadas=quadril-0189,quadril-0042,quadril-0080,quadril-0047,quadril-0135,quadril-0497 treino=quadril-0721
 conceito: O glúteo superior inerva o médio, o mínimo e o tensor da fáscia lata e sai acima do piriforme; o obturatório fica com os adutores e o grácil; o cutâneo femoral lateral cruza abaixo da espinha ilíaca anterossuperior.
 como: O TARO 2012 perguntou o ramo do glúteo superior para o glúteo médio; o TARO 2025, os nervos em risco no enxerto do ílio anterior; as imagens do TEOT e do TARO pedem o ílio-hipogástrico, o obturatório e a inervação dos músculos da coxa; o TARO 2006, a causa da síndrome do piriforme.
 armadilha: Dar o tensor da fáscia lata ao femoral ou o glúteo médio ao glúteo inferior.
-alerta: O capítulo lido não divide o nervo glúteo superior em ramos superior e inferior (`quadril-0193`), não cita o ilioinguinal na retirada de enxerto (`quadril-0189`) nem discute a causa da síndrome do piriforme (`quadril-0497`); os gabaritos oficiais foram preservados.
+alerta: As fontes lidas não dizem que o glúteo médio é do ramo superior do glúteo superior, como pede `quadril-0193`; o gabarito oficial foi preservado.
 !fim
 
 # Os compartimentos e os músculos da coxa {radar=confirmado}
@@ -97,6 +112,12 @@ alerta: O capítulo lido não divide o nervo glúteo superior em ramos superior 
 | anterior | quadríceps: vasto lateral, vasto intermédio, vasto medial e reto femoral |
 | posterior | bíceps femoral (cabeças longa e curta), semitendíneo, semimembranáceo e nervo ciático |
 | medial | adutor magno, adutor longo, adutor curto, grácil, artéria e veia femorais |
+!fim
+
+**Onde ficam os vasos: os livros divergem.** O Netter põe a artéria e a veia femorais no compartimento medial. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 57), e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 53, p. 2245), põem a **femoral no anterior** (com o nervo femoral e o safeno) e a **femoral profunda, a obturatória e o nervo obturatório no medial**, com o obturador externo; no posterior, ramos da femoral profunda, o isquiático e o cutâneo femoral posterior. É a versão que as provas cobram.
+
+!figura 57-8 imagem=quadril/rwa-57-8-w07.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 57, Fig. 57-8. Corte transversal da coxa com os três compartimentos (anterior, medial e posterior) e os três septos intermusculares; os vasos femorais aparecem junto ao septo medial, entre os compartimentos anterior e medial.
 !fim
 
 !tabela Origens que mais caem (Netter's Concise, cap. 8)
@@ -112,25 +133,32 @@ alerta: O capítulo lido não divide o nervo glúteo superior em ramos superior 
 | semitendíneo, semimembranáceo, bíceps (cabeça longa) | tuberosidade isquiática | a cabeça curta do bíceps nasce na linha áspera e divide o tendão com a longa |
 !fim
 
+!figura 2.6 imagem=quadril/adulthip-2-6-w07.jpeg
+Fonte: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (2017), cap. 2, Fig. 2.6A e B. Mapa das origens e inserções no osso do quadril e no fêmur proximal, em vista intrapélvica (A) e extrapélvica (B): sartório na espinha anterossuperior, reto femoral na anteroinferior e acima do acetábulo, vastos no fêmur, glúteos na asa e no trocânter.
+!fim
+
 !questoes central=quadril-0017 relacionadas=quadril-0007,quadril-0131,quadril-0133,quadril-0134,quadril-0130,quadril-0137,quadril-0138,quadril-0139,quadril-0141,quadril-0161,quadril-0183,quadril-0081,quadril-0082,quadril-0083,quadril-0085,quadril-0132,quadril-0191,quadril-0215,quadril-0641
 conceito: Anterior = quadríceps (femoral); medial = adutores e grácil (obturatório); posterior = isquiotibiais (ciático); o sartório nasce na anterossuperior e o reto femoral na anteroinferior e no rebordo acetabular.
 como: O TARO 2017 perguntou a inervação e a irrigação do vasto lateral; uma prova da SBOT-SP, o conteúdo do compartimento medial; o TEOT, o TARO e o CET-PR mostram em imagem os músculos da nádega, os adutores, os isquiotibiais e as origens na pelve.
 armadilha: Confundir a origem do sartório (anterossuperior) com a do reto femoral (anteroinferior), ou o adutor longo (obturatório) com um músculo do femoral.
-alerta: Na questão do compartimento medial (`quadril-0007`), o Netter lista a artéria e a veia femorais no compartimento medial, mas o gabarito oficial aponta a artéria femoral profunda; o gabarito foi preservado.
+alerta: Na questão do compartimento medial (`quadril-0007`), o Netter lista a artéria e a veia femorais no medial; o gabarito oficial (femoral profunda) segue o Rockwood and Green (cap. 57) e o Campbell (cap. 53, p. 2245), que põem a femoral no anterior e a femoral profunda no medial.
 !fim
 
 # O canal adutor e as artérias da coxa {radar=confirmado}
 
 - A **artéria femoral** sai do trígono femoral e corre no **canal adutor**: **sob o sartório, entre o vasto medial e o adutor longo**. Passa para trás pelo **hiato dos adutores** e vira a **artéria poplítea**.
 - No canal correm também o **nervo safeno** e o nervo para o vasto medial.
-- A **artéria femoral profunda** é a principal fonte da coxa: dá as circunflexas e os **ramos perfurantes**, que contornam o fêmur por trás e aparecem na via lateral da coxa.
+- A **artéria femoral profunda** é a principal fonte da coxa: dá as circunflexas e os **ramos perfurantes**, que contornam o fêmur por trás e aparecem na via lateral da coxa. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 57), dá a medida: correm **perpendiculares ao fêmur, a intervalos de cerca de 3 cm**, e precisam ser cauterizados ou ligados; a artéria nutrícia principal também vem da femoral profunda e entra pela linha áspera.
 - Na **via lateral da coxa**, divide-se o vasto lateral (femoral) ou ele é elevado do septo intermuscular; o ramo descendente da circunflexa lateral, as perfurantes da femoral profunda e a geniculada lateral superior precisam ser ligados.
+
+!figura 57-9 imagem=quadril/rwa-57-9-w07.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 57, Fig. 57-9. Artérias da coxa em vista anterior (A) e posterior (B): a femoral profunda dá as circunflexas e as perfurantes, que contornam o fêmur por trás em alças transversais; a femoral passa pelo hiato do adutor magno e vira a poplítea.
+!fim
 
 !questoes central=quadril-0190 relacionadas=quadril-0039 treino=quadril-0722
 conceito: O canal adutor fica sob o sartório, entre o vasto medial e o adutor longo, e leva a artéria femoral e o nervo safeno até o hiato dos adutores.
 como: O TARO 2025 mostrou o canal adutor em imagem; o TEOT 2022 perguntou a orientação e o intervalo das perfurantes na via lateral da coxa.
-armadilha: Pôr o tronco do nervo femoral ou a veia safena magna dentro do canal.
-alerta: O capítulo lido manda ligar as perfurantes na via lateral, mas não dá o intervalo entre elas pedido em `quadril-0039`; o gabarito oficial foi preservado.
+armadilha: Pôr o tronco do nervo femoral ou a veia safena magna dentro do canal, ou desenhar as perfurantes paralelas ao fêmur.
 !fim
 
 # As vias de acesso {radar=confirmado}
@@ -145,11 +173,15 @@ alerta: O capítulo lido manda ligar as perfurantes na via lateral, mas não dá
 | medial | superficial: adutor longo e grácil; profundo: adutor curto e adutor magno | nervo obturatório (divisões anterior e posterior), circunflexa medial, pudenda externa | |
 !fim
 
+!figura 1.67 imagem=quadril/campbell15-1-67-w07.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.67, p. 53. Quadril em vista anterior: o nervo cutâneo femoral lateral desce logo abaixo da espinha ilíaca anterossuperior, por baixo do ligamento inguinal, e se divide sobre a região da via anterior, perto do ramo ascendente da circunflexa femoral lateral.
+!fim
+
 !questoes central=quadril-0071 relacionadas=quadril-0014,quadril-0048,quadril-0640 treino=quadril-0717,quadril-0718,quadril-0719
 conceito: Via anterior = cutâneo femoral lateral; lateral direta = divide o glúteo médio sem osteotomia, com o glúteo superior em risco; posterior = ciático e circunflexa medial sob o quadrado femoral.
 como: Uma prova de Ortopedia perguntou o que é verdadeiro sobre as vias (risco do cutâneo femoral lateral no acesso anterior); o TARO 2021, o vaso a preservar no acesso posterior; o TARO 2022 mostrou uma via em figuras; o TEOT 2025, a via em que se identifica a corona mortis.
-armadilha: Dizer que a via de HARDINGE exige osteotomia do trocânter ou que o acesso posterior previne a osteonecrose.
-alerta: O capítulo lido não traz os epônimos das vias nem a via de STOPPA modificada (`quadril-0048`, `quadril-0640`); os gabaritos oficiais foram preservados.
+armadilha: Dizer que a via de HARDINGE exige osteotomia do trocânter ou que o acesso posterior previne a osteonecrose. Nas figuras do TARO 2022, as fatias retangulares do trocânter levantadas para a frente e para trás são a via de HAY descrita por MCLAUCHLAN, não HARDINGE nem MCFARLAND.
+alerta: Em `quadril-0071`, o Campbell (cap. 1, p. 72) diz que a terceira janela do ilioinguinal dá acesso intrapélvico à lâmina quadrilátera e à coluna posterior, o que dá algum apoio à alternativa D; o gabarito oficial (C, cutâneo femoral lateral no acesso anterior) foi mantido porque é a afirmação sem ressalva, e o ilioinguinal segue sendo a via da coluna anterior.
 !fim
 
 # Os parafusos do acetábulo {radar=confirmado}
@@ -189,6 +221,10 @@ O Netter Atlas de Anatomia Ortopédica (cap. 7) define a pelve como **3 ossos** 
 
 **O fêmur proximal.** O Rockwood and Green dá números únicos para os intervalos do Netter: **anteversão de cerca de 12 graus** e **ângulo cervicodiafisário de 125 graus** (cap. 52); o **calcar femorale** é uma placa vertical densa **sob o trocânter menor**, que reforça a porção **posteroinferior do colo** (cap. 53). A **fossa trocantérica** é a entrada da haste e a **inserção do obturador externo**. No Netter (cap. 8), o **compressivo primário** (da cabeça superior à cortical medial do colo) é o osso esponjoso mais forte; o **de tensão primário** vai da cabeça inferior à cortical lateral; somam-se os grupos secundários e o do trocânter maior, e o **triângulo de WARD** é a área com **poucas trabéculas** no colo. Os grupos servem para **graduar a osteopenia**, e o desalinhamento deles define o tipo de fratura desviada do colo (lei de WOLFF). O eixo anatômico fica a **6 graus** do mecânico, e este a **3 graus** da vertical.
 
+!figura 54-5 imagem=quadril/rwa10-54-5-w08.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 54, Fig. 54-5. Trabéculas do fêmur proximal em corte frontal: o calcar femoral (arco de ADAM) é a placa densa da cortical medial, abaixo do colo, e o triângulo de WARD é a área pobre em trabéculas entre os feixes de compressão e de tensão.
+!fim
+
 # O anel pélvico: articulações e ligamentos {radar=confirmado}
 
 A **sacroilíaca** é **plana**, com rotação mínima na marcha e **nenhum movimento vertical** normal; o lado **sacral** tem **cartilagem articular** e o **ilíaco**, **fibrocartilagem**. A **sínfise** tem cartilagem hialina com **disco fibrocartilagíneo**, e o ligamento púbico **superior** é o forte (Netter Atlas de Anatomia Ortopédica, cap. 7).
@@ -207,6 +243,10 @@ A **sacroilíaca** é **plana**, com rotação mínima na marcha e **nenhum movi
 
 A regra é a **orientação das fibras**: os **horizontais** (posteriores curtos, anterior, **sacroespinal**, **iliolombar**) seguram a **rotação**; os **verticais** (posteriores longos, **sacrotuberal**, lombossacral) seguram o **deslocamento vertical**. Na imagem posterior, o sacroespinal é curto e vai à espinha, por **dentro** do sacrotuberal, que é longo e desce ao túber.
 
+!figura 50-26B imagem=quadril/rwa10-50-26b-w08.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 50, Fig. 50-26B. Pelve em vista posterior: no lado direito, os sacroilíacos posteriores longos, em faixas verticais, e o sacrotuberal descendo largo até o túber; no esquerdo, retirados esses dois, aparecem o sacroilíaco posterior curto, o interósseo e o sacroespinal, curto e horizontal até a espinha isquiática.
+!fim
+
 !questoes central=quadril-0084 relacionadas=quadril-0219,quadril-0538
 conceito: Sacroespinal = sacro à espinha isquiática, segura a rotação e divide os forames; sacrotuberal = sacro ao túber, segura forças verticais; iliolombar = transversos de L IV e L V à crista.
 como: O TEOT 2023 mostrou o sacroespinal em imagem; a SBOT-SP pediu iliolombar e sacroespinhoso numa figura com letras; o R4 Coluna SES-DF 2022 deu como errado o item que juntava sacroilíacos posteriores, sacrotuberais e sacroespinais como limitadores da rotação lateral.
@@ -223,6 +263,10 @@ O **lábio** é **fibrocartilagíneo** e corre por toda a margem **exceto embaix
 | **iliofemoral (em Y de BIGELOW)** | ílio e **espinha anteroinferior**; faixa superior à **linha intertrocantérica**, inferior **logo acima do trocânter menor** | forte suporte **anterior**; limita **hiperextensão** e **rotação externa** |
 | **pubofemoral** | ramo superior do púbis à linha intertrocantérica, **profundo ao Y** | suporte **inferior**; controla a **rotação externa em extensão** |
 | **isquiofemoral** | parede posterior e ísquio, oblíquo ao colo superior | **relativamente fraco**; controla a **rotação interna** |
+!fim
+
+!figura 2.5 imagem=quadril/adulthip-2-5.jpeg
+Fonte: The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (2017), cap. 2, Fig. 2.5A e B, p. 43. Cápsula do quadril em vista anterior (iliofemoral em Y da espinha ilíaca anteroinferior à linha intertrocantérica; pubofemoral na parte inferior e medial) e posterior (isquiofemoral em espiral e zona orbicular).
 !fim
 
 Entre o iliofemoral e o pubofemoral fica a **bolsa iliopectínea**. Na frente a cápsula desce até a **linha intertrocantérica**; atrás, prende-se no colo, de modo que **a metade lateral do colo posterior é extracapsular** (Rockwood and Green, cap. 53). A parte intracapsular **não tem camada câmbio**: consolida **só por via endosteal**. A cápsula fica **tensa em extensão e rotação interna** e tem **volume máximo em leve flexão e rotação externa**, a posição do derrame. Inervação: **obturatório** anteromedial, **femoral** anterior, **isquiático** posterior e **glúteo superior** posterolateral. A força de reação é **um terço do peso** no apoio bipodal, **6 vezes** na marcha e **mais de 2 vezes** ao subir na comadre (cap. 52).
@@ -251,6 +295,10 @@ O plexo lombar forma-se **dentro do psoas**, e o **psoas menor** existe em **50%
 | **obturador externo** | face externa da membrana e ramo isquiopúbico | **fossa trocantérica** | **obturatório** |
 !fim
 
+!figura 1.66 imagem=quadril/campbell15-1-66-w06.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.66, p. 53. Face posterior do quadril em camada profunda: de cima para baixo, o piriforme, o obturador interno com os gêmeos e o quadrado femoral, largo e de fibras horizontais; a circunflexa femoral medial sobe na borda proximal do quadrado e chega à cápsula. As linhas tracejadas marcam onde os músculos podem ser soltos.
+!fim
+
 Na nádega, de cima para baixo: **piriforme, gêmeo superior, obturador interno, gêmeo inferior, quadrado femoral**. Cada gêmeo leva o nervo do vizinho: o superior, o do **obturador interno** (L5 a S2); o inferior, o do **quadrado** (L4 a S1). A ficha aponta uma diferença de redação: o Netter chama esse ramo de "nervo para o quadrado femoral", e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 66), descreve um ramo "para o quadrado femoral e o gêmeo inferior" que também leva fibras sensitivas à cápsula; não há conflito anatômico, e fico com o Campbell, mais específico. O **teste de TRENDELENBURG**: em apoio monopodal, se a pelve do lado elevado cai, falham o glúteo médio ou o glúteo superior.
 
 !questoes relacionadas=quadril-0083
@@ -268,10 +316,10 @@ O Netter Atlas de Anatomia Ortopédica (cap. 8) completa os compartimentos com a
 | --- | --- | --- | --- |
 | **sartório** | pata de ganso | **femoral** | flexão e rotação **lateral** do quadril |
 | **reto femoral** | patela e tuberosidade | femoral | **cabeça direta** na espinha anteroinferior, **refletida** no rebordo acetabular |
-| **pectíneo** | linha pectínea do fêmur | **femoral** | **assoalho do trígono femoral** |
+| **pectíneo** | linha pectínea do fêmur | **femoral**, e também a divisão anterior do **obturatório** (Campbell, cap. 67, p. 3013) | **assoalho do trígono femoral**; inervação dupla |
 | adutor longo | **terço médio da linha áspera** | obturatório (anterior) | o tendão pode ossificar |
 | adutor curto | linha pectínea e linha áspera | obturatório (**anterior e posterior**) | profundo ao pectíneo |
-| **adutor magno** | linha áspera e **tubérculo do adutor** | **obturatório e isquiático** | o único com dois nervos |
+| **adutor magno** | linha áspera e **tubérculo do adutor** | **obturatório e isquiático** | o adutor com dois nervos de compartimentos diferentes |
 | semitendíneo e cabeça longa do bíceps | pata de ganso / cabeça da fíbula | isquiático, **divisão tibial** | enxerto do LCA / avulsão da origem |
 | **bíceps, cabeça curta** | fíbula | isquiático, **divisão fibular** | o único isquiotibial da fibular |
 !fim
@@ -279,9 +327,9 @@ O Netter Atlas de Anatomia Ortopédica (cap. 8) completa os compartimentos com a
 O isquiático desce **profundo aos isquiotibiais e superficial ao adutor magno** e divide-se na **parte distal da coxa**; a pele posterior é do **cutâneo femoral posterior**. A coxa tem **três septos** (lateral, medial e posterior) e **três compartimentos**; o **septo vastoadutor** cobre a entrada dos vasos no hiato. A **fasciotomia** usa **duas incisões**: a **lateral libera o anterior e o posterior**, a **medial libera o medial**. Sob o ligamento inguinal, o Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 75), separa pela **fáscia iliopectínea** a **lacuna dos músculos** (iliopsoas, **nervo femoral** e **cutâneo femoral lateral**) da **lacuna dos vasos** (vasos ilíacos externos e linfáticos).
 
 !questoes central=trauma-0419 relacionadas=joelho-0154
-conceito: Três compartimentos (anterior, medial e posterior) e três septos; a fasciotomia lateral libera anterior e posterior, a medial libera o medial; sartório, pectíneo e quadríceps são do femoral.
+conceito: Três compartimentos (anterior, medial e posterior) e três septos; a fasciotomia lateral libera anterior e posterior, a medial libera o medial; sartório e quadríceps são do femoral, e o pectíneo é do femoral, com ramo também da divisão anterior do obturatório no Campbell.
 como: O TARO 2023 perguntou os compartimentos da coxa; uma prova de Ortopedia apontou em imagem um músculo do femoral.
-armadilha: Inventar um compartimento lateral ou dar sartório e pectíneo ao obturatório.
+armadilha: Inventar um compartimento lateral ou dar o sartório ao obturatório; no pectíneo, se a questão pede um só nervo, a resposta é o femoral.
 !fim
 
 # Os forames isquiáticos e o piriforme {radar=oportunidade}
@@ -301,7 +349,13 @@ O isquiático (L4 a S3; divisões **tibial**, anterior, e **fibular**, posterior
 | o nervo inteiro através do piriforme | 1% |
 !fim
 
+!figura 52-14 imagem=quadril/rwa10-52-14-w06.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 52, Fig. 52-14. As quatro relações do nervo isquiático com o piriforme: em A, o tronco único sai abaixo do músculo (84,2%); em B, uma divisão atravessa o piriforme (11,7%); em C, as divisões o contornam por cima e por baixo (3,3%); em D, o nervo inteiro o atravessa (0,8%). A tabela acima arredonda esses números.
+!fim
+
 A divisão **fibular** é a que varia, a que se lesa mais (em geral de forma **incompleta**) na **luxação posterior** (cap. 51) e a que dá o **pé caído** por retração posterior vigorosa na artroplastia (Netter, cap. 8).
+
+**A síndrome do piriforme.** The Adult Hip: Hip Arthroplasty Surgery, 3ª ed. (cap. 43, p. 590 e 591), a põe ao lado da meralgia parestésica como as duas compressões nervosas mais comuns em torno do quadril, mas a chama de **rara** e controversa: o isquiático é comprimido sob um **tendão do piriforme tenso**, os sintomas imitam a radiculopatia lombar e pioram com o quadril **fletido e em rotação interna**, que estira o tendão; é **diagnóstico de exclusão** com ressonância lombar normal, confirmado por eletroneuromiografia, e a liberação do tendão dá bons resultados em **até 70%**. O HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 2.5) a descreve como síndrome miofascial: dor irradiada à sacroilíaca, à nádega e à coxa posterior, desencadeada por **contração brusca contra uma rotação medial forte**, como na corrida, com compressão no forame isquiático que pode envolver o isquiático, os glúteos e o pudendo. Nenhum dos dois põe a **variação anatômica** como causa principal, o que sustenta o "errado" de `quadril-0497`.
 
 # Os plexos lombar e sacral {radar=confirmado}
 
@@ -315,6 +369,10 @@ O **plexo lombar** (L1 a L4) nasce dentro do psoas; o **sacral** (L4 a S3 ou S4)
 | **genitofemoral** | L1 e L2 | cremaster | perfura o psoas e corre na **face anterior**; ramo femoral na pele do trígono |
 | obturatório acessório | L2 a L4 | psoas | **inconstante** |
 | **cutâneo femoral posterior** | S1 a S3 | nenhum | nádega inferior, períneo posterior e **face posterior da coxa** |
+!fim
+
+!figura 67.23 imagem=quadril/campbell15-67-23-w06.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 67, Fig. 67.23, p. 3013. Esquema do plexo lombossacral: o femoral e o obturatório nascem das mesmas raízes, L2 a L4, e o cutâneo femoral lateral de L2 e L3; do plexo sacral saem os glúteos superior e inferior e o isquiático, com o fibular comum, o tibial e o nervo para os isquiotibiais.
 !fim
 
 **O cutâneo femoral lateral em centímetros.** O Netter o põe **logo abaixo da espinha anterossuperior** (meralgia parestésica); o Campbell's Operative Orthopaedics, 15ª ed., mede: cruza o **sartório 2,5 cm distal à espinha** (cap. 1, p. 54) e pode estar **junto à espinha ou até 3 cm medial** (cap. 1, p. 75); é lesado em **até 81%** na anterior direta (cap. 4, p. 267). O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 51), conta que muitos **excisam 2 cm** dele no ilioinguinal para evitar neuroma.
@@ -352,6 +410,10 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 53), conta três font
 | emergência | borda proximal do quadrado femoral, **1,5 cm medial à crista trocantérica** |
 | entrada | **anterior ao tendão conjunto**; perfura a cápsula **cranial ao gêmeo superior e distal ao piriforme** |
 | terminais | retinacular superior com **2 a 4 ramos** nos retináculos de WEITBRECHT póstero-superiores, entrando **2 a 4 mm lateral à junção osteocartilaginosa** |
+!fim
+
+!figura 51-35 imagem=quadril/rwa10-51-35-w05.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 51, Fig. 51-35. Trajeto do ramo profundo da circunflexa femoral medial (em roxo) em relação aos tendões do obturador externo (a) e do obturador interno (b), com as distâncias à crista trocantérica no trocânter menor (A, 18,2 mm), na inserção do obturador externo (B, 8,8 mm) e na do obturador interno (C, 1,24 mm).
 !fim
 
 Daí as regras da via posterior: o **tendão conjunto** é cortado **1,5 cm medial à crista**, o quadrado femoral não é cortado rente ao fêmur, e o **tendão do obturador externo protege o ramo profundo** (cap. 51). Dos quatro grupos retinaculares, o **lateral** (posterossuperior) é o maior; a **glútea inferior** soma por anastomose na borda inferior do piriforme.
@@ -425,7 +487,11 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 1, p. 53), dá os princípio
 
 **A WATSON-JONES** une **dois músculos do glúteo superior**: é intermuscular, mas não internervosa. Nas fraturas do colo, **reduz e fixa pela mesma incisão**, com visão limitada das subcapitais (Campbell, cap. 1, p. 57).
 
-**As laterais.** A transtrocantérica de **HARRIS** dá mais pseudartrose, bursite e ossificação heterotópica que o lateral direto. MCFARLAND e OSBORNE mostraram o **glúteo médio e o vasto lateral em continuidade** pelo periósteo do trocânter; a variante de **FRNDAK** não sobe **mais de 2 cm** acima do lábio acetabular. Fraqueza após HARDINGE vem da **avulsão do reparo** ou da **lesão do glúteo superior**.
+**As laterais.** A transtrocantérica de **HARRIS** dá mais pseudartrose, bursite e ossificação heterotópica que o lateral direto. MCFARLAND e OSBORNE mostraram o **glúteo médio e o vasto lateral em continuidade** pelo periósteo do trocânter; a variante de **FRNDAK** não sobe **mais de 2 cm** acima do lábio acetabular. Fraqueza após HARDINGE vem da **avulsão do reparo** ou da **lesão do glúteo superior**. A via **transglútea de HAY, descrita por MCLAUCHLAN** (Campbell, cap. 1, p. 62 e 63), usa a mesma continuidade: em decúbito de SIMS, incisão longitudinal sobre o trocânter, e **fatias retangulares do trocânter** levantadas para a frente e para trás com o glúteo médio em cima e o vasto lateral embaixo.
+
+!figura 1.76 imagem=quadril/campbell15-1-76-w07.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.76, p. 63. Via lateral transglútea de HAY, descrita por MCLAUCHLAN: em A, a incisão longitudinal sobre o trocânter; em B, o trocânter com o glúteo médio em cima e o vasto lateral embaixo, e a linha do corte; em C, as duas fatias do trocânter levantadas; em D, a articulação aberta.
+!fim
 
 **A posterior** luxa em **flexão de 90 graus, adução e rotação interna**, solta piriforme, obturador interno e gêmeos e **preserva o obturador externo e o quadrado femoral**. A de **OSBORNE** começa **4,5 cm** distal à espinha posterossuperior, e os gêmeos protegem o isquiático. A luxação pós-operatória é historicamente maior na **posterolateral** e cai com a reinserção dos rotadores (Netter, cap. 8).
 
@@ -467,19 +533,27 @@ O **ilioinguinal** foi criado por **LETOURNEL em 1960** para a **parede e a colu
 
 Riscos (Netter): **vasos ilíacos externos**, **corona mortis**, femoral, cutâneo femoral lateral, **epigástrica inferior**, funículo e **bexiga** (sonda de FOLEY). Na janela média protege-se o **ilioinguinal** e checa-se o pulso da ilíaca (Campbell, p. 75 e 76); o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 51), lembra que o **isquiático** se lesa até no acesso anterior.
 
-**A corona mortis** é a anastomose entre o sistema **obturatório** e o **ilíaco externo ou a epigástrica inferior**, na **face medial do ramo superior**, a cerca de **6 cm da sínfise** (Rockwood and Green, cap. 50). Cortada, a hemostasia é difícil; deve ser **clampeada, ligada e dividida**, de rotina no STOPPA e no pararretal. O cap. 51 distingue as anastomoses finas, comuns, da **corona verdadeira**: a **origem aberrante da obturatória** no sistema ilíaco externo. Nenhum dos livros dá porcentagem; o Campbell diz só "frequente".
+**A corona mortis** é a anastomose entre o sistema **obturatório** e o **ilíaco externo ou a epigástrica inferior**, na **face medial do ramo superior**, a cerca de **6 cm da sínfise** (Rockwood and Green, cap. 50). Cortada, a hemostasia é difícil; deve ser **clampeada, ligada e dividida**, de rotina no STOPPA e no pararretal. O cap. 51 distingue as anastomoses finas, comuns, da **corona verdadeira**: a **origem aberrante da obturatória** no sistema ilíaco externo. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 61, p. 2697), dá a frequência: a anastomose entre os sistemas obturatório e ilíaco externo existe em **mais de 80%** dos pacientes, e, se não for ligada no ilioinguinal ou no intrapélvico anterior, os vasos se retraem para dentro da pelve e o sangramento é difícil de controlar.
+
+!figura 1.82E imagem=quadril/campbell15-1-82e-w07.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.82E, p. 71. Via intrapélvica anterior (STOPPA modificada) vista por dentro da pelve: a corona mortis, ponte entre a artéria obturatória e a epigástrica inferior sobre o ramo superior do púbis, ligada dos dois lados no detalhe.
+!fim
 
 **O STOPPA modificado** usa PFANNENSTIEL ou mediana, de **1 cm abaixo da sínfise a 2 a 3 cm abaixo do umbigo**, pelo espaço **pré-peritoneal e de RETZIUS**; liga a corona, vê o **feixe obturatório cruzando a quadrilátera**, eleva o **obturador interno** e mantém o afastador da incisura **medial ao nervo obturatório** (Campbell, p. 68 a 72). O **pararretal** de KEEL (2012) entra entre os **terços lateral e médio da linha umbigo e espinha** e usa **cinco janelas**. O **iliofemoral de LETOURNEL e JUDET** expõe a coluna e a parede anteriores, **mas não a sínfise**.
 
-**O KOCHER-LANGENBECK** é a via da **parede e da coluna posteriores** e, no Netter (cap. 7), **não tem plano internervoso**: o glúteo máximo é dividido até onde o nervo glúteo inferior permite. Riscos: **isquiático**, **glútea inferior** e **glúteos superiores** na incisura; **ossificação heterotópica** comum, com radioterapia profilática muitas vezes necessária. O Campbell (cap. 1, p. 79 e 80) mede: incisão do trocânter até **6 cm da espinha posterossuperior**, **joelho em pelo menos 45 graus de flexão**, máximo aberto **no máximo 7 cm**, **isquiático sobre o quadrado femoral**, e **quadrado e obturador externo preservados**. O **GIBSON modificado de MOED** usa **incisão lateral reta**, solta a borda anterior do máximo sem dividi-lo e preserva a inervação da sua porção anterior.
+**O KOCHER-LANGENBECK** é a via da **parede e da coluna posteriores** e, no Netter (cap. 7), **não tem plano internervoso**: o glúteo máximo é dividido até onde o nervo glúteo inferior permite. Riscos: **isquiático**, **glútea inferior** e **glúteos superiores** na incisura; **ossificação heterotópica** comum, com radioterapia profilática muitas vezes necessária. O Campbell (cap. 1, p. 79 e 80) mede: incisão do trocânter até **6 cm da espinha posterossuperior**, **joelho em pelo menos 45 graus de flexão**, máximo aberto **no máximo 7 cm**, **isquiático sobre o quadrado femoral**, e **quadrado e obturador externo preservados**. O **GIBSON modificado de MOED** usa **incisão lateral reta**, solta a borda anterior do máximo sem dividi-lo e preserva a inervação da sua porção anterior. A Fig. 1.89 do Campbell (cap. 1, p. 81) desenha as três incisões sobre o mesmo ponto D, logo acima do trocânter: **ADE** é a de **KOCHER-LANGENBECK**, oblíqua para trás sobre o glúteo máximo; **BDE**, a **original de GIBSON**, sobe pela borda anterior do máximo; **CDE**, a de **MOED**, é a reta vertical, em linha com o trato iliotibial.
+
+!figura 1.89 imagem=quadril/campbell15-1-89-r02.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.89, p. 81. Acesso de KOCHER modificado na face lateral do quadril: ADE é a incisão de KOCHER-LANGENBECK, BDE a incisão original de GIBSON e CDE a modificação de MOED, reta e lateral; o tracejado marca o trocânter maior.
+!fim
 
 As vias extensas (Campbell, p. 80 a 85): o **iliofemoral estendido de LETOURNEL** expõe **as duas colunas**, mas arrisca os **vasos glúteos superiores** (necrose dos abdutores) e é contraindicado com fratura pela incisura ou lesão arteriográfica desses vasos; REINERT preserva o **ramo ascendente da circunflexa lateral**, que pode substituir a glútea superior; o **trirradiado de MEARS e RUBASH** tem ramos a cerca de **120 graus**.
 
 !questoes central=quadril-0232 relacionadas=quadril-0515,quadril-0224
-conceito: Coluna e parede anteriores = ilioinguinal (LETOURNEL, três janelas, sem ver a articulação); coluna e parede posteriores = KOCHER-LANGENBECK, sem plano internervoso, preservando quadrado e obturador externo; MOED é a incisão lateral reta que não divide o máximo.
+conceito: Coluna e parede anteriores = ilioinguinal (LETOURNEL, três janelas, sem ver a articulação); coluna e parede posteriores = KOCHER-LANGENBECK, sem plano internervoso, preservando quadrado e obturador externo; MOED é a incisão lateral reta que não divide o máximo; na Fig. 1.89 do Campbell, ADE = KOCHER-LANGENBECK, BDE = GIBSON e CDE = MOED.
 como: O ENARE R4 2024 pediu o acesso para fratura da coluna anterior; o ENARE R4 2025 deu uma fratura OTA/AO 62A2.3; o TARO 2026 mostrou as linhas do KOCHER modificado e pediu MOED e GIBSON.
 armadilha: Seguir a tradução do Netter e usar o ilioinguinal para a coluna posterior, ou achar que ele mostra a superfície articular.
-alerta: A ficha não traz a classificação OTA/AO; o gabarito de `quadril-0515` (KOCHER-LANGENBECK) é coerente com o uso da via nas fraturas posteriores, mas o código 62A2.3 não foi conferido. As fontes lidas não nomeiam as linhas CDE e BDE de `quadril-0224`. Os gabaritos oficiais foram preservados.
+alerta: A ficha não traz a classificação OTA/AO; o gabarito de `quadril-0515` (KOCHER-LANGENBECK) é coerente com o uso da via nas fraturas posteriores, mas o código 62A2.3 não foi conferido; o gabarito oficial foi preservado.
 !fim
 
 # Fechamento {radar=fundamento}

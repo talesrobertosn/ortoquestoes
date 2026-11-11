@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-pe-tornozelo
-versao: 3
+versao: 4
 titulo: Anatomia da perna, do tornozelo e do pé
 especialidade: pe-tornozelo
 acesso: gratis
@@ -34,7 +34,7 @@ A anatomia do pé e do tornozelo nas provas é quase toda de **imagem**: um tend
 
 - **Fasciotomia:** incisão **anterolateral** sobre o septo entre anterior e lateral; incisão **medial** sobre a borda posterior da tíbia.
 - No posterior profundo: **tibial posterior** no meio (membrana interóssea), **flexor longo dos dedos** medial (nasce da tíbia), **flexor longo do hálux** lateral (nasce da fíbula).
-- **Extensor curto dos dedos:** o único ventre do dorso do pé, sobre o seio do tarso; inervado pelo ramo lateral do **fibular profundo**.
+- **Extensor curto dos dedos e extensor curto do hálux:** os ventres do dorso do pé, ambos na face dorsal do calcâneo, sobre o seio do tarso; inervados pelo ramo lateral do **fibular profundo**.
 
 !questoes central=pe-tornozelo-0120 relacionadas=pe-tornozelo-0187,pe-tornozelo-0188,pe-tornozelo-0062,pe-tornozelo-0023,pe-tornozelo-0185,pe-tornozelo-0232,pe-tornozelo-0318,pe-tornozelo-0123,pe-tornozelo-0118,pe-tornozelo-0191 treino=pe-tornozelo-0425
 conceito: Cada compartimento tem o seu nervo: anterior, fibular profundo; lateral, fibular superficial; posteriores, tibial.
@@ -67,7 +67,6 @@ armadilha: Trocar o flexor longo do hálux pelo tibial posterior, que é o mais 
 conceito: Fibular curto no 5º metatarso; fibular longo pelo cuboide até o 1º metatarso; tibial posterior no navicular; sural na face posterolateral.
 como: Provas de Ortopedia e o TEOT 2025 perguntaram as inserções em imagem; o TEOT 2024, o sural; o TARO 2024, o ramo sensitivo do fibular; o TARO 2021, os interósseos do segundo dedo.
 armadilha: Trocar a inserção do fibular curto pela do tibial posterior.
-alerta: O texto extraído do Netter não detalha os interósseos do segundo dedo (`pe-tornozelo-0028`); o gabarito oficial foi preservado.
 !fim
 
 # O tálus e a subtalar {radar=confirmado}
@@ -91,8 +90,7 @@ armadilha: Achar que o sangue do tálus entra pelo corpo.
 !questoes central=pe-tornozelo-0068 relacionadas=pe-tornozelo-0006,pe-tornozelo-0133 treino=pe-tornozelo-0426,pe-tornozelo-0427
 conceito: Na via anterior, o feixe acompanha o extensor longo do hálux; na posterolateral, o flexor longo do hálux protege o nervo tibial.
 como: O TEOT 2021 perguntou o nervo protegido na via posterolateral; o TARO 2020, para onde vai o feixe na via anterior; o TARO 2023, os acessos mediais do tornozelo.
-armadilha: Achar que o feixe anterior acompanha o tibial anterior.
-alerta: O texto consultado não descreve os epônimos dos acessos mediais (`pe-tornozelo-0133`); o gabarito oficial foi preservado.
+armadilha: Achar que o feixe anterior acompanha o tibial anterior; nos acessos mediais, marcar KOCHER, que é lateral, ou KOENIG e SCHAEFER, que é a incisão transversa.
 !fim
 
 # A tíbia, a fíbula e a irrigação da diáfise {radar=confirmado}
@@ -144,10 +142,15 @@ armadilha: Escolher a tibial anterior ou achar que o periósteo é a fonte princ
 | fibular longo | fíbula proximal | cuneiforme medial e base do 1º, plantar | flexão plantar do 1º raio; **S1** |
 | fibular curto | fíbula distal | base do 5º metatarsal | eversão; **ventre mais distal** |
 | gastrocnêmio | côndilos femorais | calcâneo | **fabela** na cabeça lateral; S1 |
+| **sóleo** | face posterior da **cabeça e do terço proximal da fíbula** e **linha do sóleo** da tíbia (Rockwood, Fig. 63-6B) | calcâneo, pelo tendão do calcâneo (parte medial) | arco tendíneo sobre o feixe tibial; flexor plantar com o joelho fletido |
 | plantar | supracondilar lateral do fêmur | calcâneo | tendão para enxerto |
 | **poplíteo** | côndilo lateral do fêmur, anterior e distal ao colateral fibular, **intra-articular** | tíbia posterior proximal | roda a tíbia medialmente; restritor primário da rotação lateral |
 | flexor longo do hálux | **fíbula** posterior | falange distal do hálux | S1 |
 | **flexor longo dos dedos** | **tíbia** posterior | falanges distais dos 4 dedos laterais | no tornozelo, **imediatamente anterior à artéria tibial posterior** |
+!fim
+
+!figura 63-6 imagem=pe-tornozelo/rwa10-63-6-r04.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 63, Fig. 63-6, pág. PDF 3180. Origens e inserções na tíbia e na fíbula: em A (face anterior), tibial anterior na tíbia lateral, extensor longo dos dedos, extensor longo do hálux e fibulares na fíbula; em B (face posterior), poplíteo e flexor longo dos dedos na tíbia, tibial posterior entre os dois ossos, flexor longo do hálux e fibular curto na fíbula e o sóleo na cabeça e no terço proximal da fíbula e na linha oblíqua da tíbia.
 !fim
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 88, p. 3846), acrescenta que o **gastrocnêmio** flete o tornozelo melhor com o **joelho estendido** e o **sóleo** com o **joelho fletido**, e que o **plantar** é o enxerto autógeno preferido para reconstruir o tibial anterior.
@@ -191,7 +194,11 @@ armadilha: Dar ao fibular superficial função motora no pé, ou chamar de profu
 
 **Os troncos** (Netter Atlas de Anatomia Ortopédica, 2ª ed., caps. 9 e 10). A **poplítea** se divide perto do músculo poplíteo nas **tibiais anterior e posterior**. A **tibial anterior** corre sobre a membrana com o fibular profundo, dá as maleolares e continua como **dorsal do pé** (ramos talares, tarsal lateral, arqueada, plantar profunda). A **tibial posterior** desce com o nervo tibial, é palpada atrás do maléolo medial e dá a **fibular** e as **plantares**; a **plantar lateral** é o **maior ramo terminal** e forma, com a plantar profunda da dorsal do pé, o **arco plantar profundo**, na 4ª camada.
 
-**A artéria fibular** é **ramo da tibial posterior**, desce entre o tibial posterior e o flexor longo dos dedos e irriga o compartimento **lateral**, que não tem artéria própria. Acima do tornozelo dá um **ramo comunicante** e um **perfurante**, que atravessa a membrana, une-se à maleolar anterior lateral, forma ou contribui para a **artéria do seio do tarso** e irriga o **tálus posterior**; termina em ramos maleolares e calcâneos laterais.
+**A artéria fibular** é **ramo da tibial posterior** e desce **junto à fíbula**, logo profunda à inserção do sóleo e envolvida pelo **flexor longo do hálux** (na retirada da fíbula vascularizada, o flexor longo do hálux é dividido ao longo do trajeto da artéria, deixando uma manga de 1 cm de músculo no osso; Campbell's Operative Orthopaedics, 15ª ed., cap. 68, p. 3068 a 3070). Irriga o compartimento **lateral**, que não tem artéria própria. Acima do tornozelo dá um **ramo comunicante** e um **perfurante**, que atravessa a membrana, une-se à maleolar anterior lateral, forma ou contribui para a **artéria do seio do tarso** e irriga o **tálus posterior**; termina em ramos maleolares e calcâneos laterais.
+
+!figura 68-36 imagem=pe-tornozelo/campbell15-68-36-w54.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 68, Fig. 68.36B e D, p. 3069. Em B, corte da perna com a artéria tibial anterior à frente da membrana interóssea e a tibial posterior atrás, junto ao nervo tibial; em D, os vasos fibulares logo profundos à inserção do sóleo na fíbula, junto ao flexor longo do hálux.
+!fim
 
 **Por que o tálus necrosa.** Tem **70% da superfície em cartilagem** e **nenhuma inserção muscular** (Rockwood and Green's Fractures in Adults, 10ª ed., caps. 65 e 66): o sangue entra pelo **colo**, cuja face superior é cheia de perfurantes, e pelo **canal do tarso**, túnel entre os sulcos do tálus e do calcâneo que contém a artéria do canal e o ligamento interósseo e se abre no seio do tarso (Campbell's Operative Orthopaedics, 15ª ed., cap. 93, p. 4086 e 4087, aprox.).
 
@@ -220,6 +227,10 @@ armadilha: Achar que o compartimento lateral tem artéria própria ou trocar a f
 **Do lado lateral**, os fibulares ficam sob o **retináculo fibular superior**; sua ruptura subluxa os tendões, e a avulsão óssea no maléolo é o **"fleck sign"** (Campbell, cap. 88, p. 3857).
 
 **Na frente**, o Rockwood põe, de medial para lateral no nível da articulação: **tibial anterior**, **extensor longo do hálux**, **fibular profundo com a dorsal do pé (laterais ao extensor longo do hálux)**, extensor longo dos dedos e fibular terceiro. **Aqui está a divergência com o resumo original.** O HOPPENFELD pôs o feixe "logo medial ao extensor longo do hálux"; as figuras do Netter mostram a tibial anterior e o fibular profundo **entre o tibial anterior e o extensor longo do hálux acima do tornozelo**; o Rockwood os põe **laterais** ao extensor longo do hálux no tornozelo; e o Campbell (cap. 1, p. 15) diz que, no plano entre tibial anterior e extensor longo do hálux, o **feixe é afastado lateralmente** com os extensores. As descrições diferem sobretudo pelo nível: acima da articulação (Netter, HOPPENFELD) ou nela (Rockwood, Campbell). Para a via anterior, vale o Campbell, que é o que o TARO 2020 cobrou.
+
+!figura 1.20 imagem=pe-tornozelo/campbell15-1-20-w54.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.20, p. 15. Via anterior do tornozelo: com o tibial anterior afastado para medial, o extensor longo do hálux e o extensor longo dos dedos ficam do lado lateral, e entre eles e o osso correm a artéria tibial anterior e o nervo fibular profundo.
+!fim
 
 !tabela O que passa ao redor do tornozelo (Rockwood and Green 10, cap. 65; Netter 2, cap. 10)
 | Região | Estruturas | Em risco |
@@ -289,7 +300,11 @@ Na oblíqua, o 4º metatarsal alinha com o cuboide; no LISFRANC, mais de **2 mm*
 
 O Rockwood (cap. 64) chama por erro de impressão a faixa ao sustentáculo de "calcaneofibular", quando é a tibiocalcânea. O estresse em **eversão** testa o deltoide superficial; o de **rotação lateral**, o profundo e a sindesmose (Netter). Na falência do tibial posterior, o **ligamento mola** é o mais envolvido (Campbell, cap. 88, p. 3813, aprox.).
 
-**A subtalar.** Para o Netter, o **calcaneofibular** é a sustentação primária, e no seio do tarso o **talocalcaneano interósseo** (cuja lesão dá instabilidade crônica) e o **cervical** estabilizam. O Campbell (cap. 94, p. 4136) chama de **intrínsecos primários** o interósseo, o cervical e o capsular anterior, e põe o calcaneofibular entre os extrínsecos; seccionar o interósseo com o talofibular anterior altera muito o movimento subtalar. Sobre a reconstrução, o Campbell cita a possível **instabilidade subtalar** do **WATSON-JONES** e a modificação de **CHRISMAN e SNOOK** para estabilizar lado lateral e subtalar.
+**A subtalar.** Para o Netter, o **calcaneofibular** é a sustentação primária, e no seio do tarso o **talocalcaneano interósseo** (cuja lesão dá instabilidade crônica) e o **cervical** estabilizam. O Campbell (cap. 94, p. 4136) chama de **intrínsecos primários** o interósseo, o cervical e o capsular anterior, e põe o calcaneofibular entre os extrínsecos; seccionar o interósseo com o talofibular anterior altera muito o movimento subtalar. Dois ligamentos pequenos completam o lado lateral. O **talocalcaneano lateral** nasce da **ponta do processo lateral do tálus** e desce ao calcâneo, logo à frente do calcaneofibular; atrás e abaixo do processo lateral fica o talofibular posterior (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 66). O **bifurcado** nasce no **processo anterior do calcâneo** e, logo depois da origem, divide-se em **Y** para o **dorsomedial do cuboide** e o **dorsolateral do navicular**; não estabiliza o tornozelo, mas a lesão é confundida com entorse lateral, e na inversão ele arranca o **processo anterior do calcâneo** (Campbell, cap. 94, p. 4136; cap. 93). Sobre a reconstrução, o Campbell cita a possível **instabilidade subtalar** do **WATSON-JONES** e a modificação de **CHRISMAN e SNOOK** para estabilizar lado lateral e subtalar.
+
+!figura 94.2 imagem=pe-tornozelo/campbell15-94-2-w54.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 94, Fig. 94.2, p. 4137. Ligamentos laterais do tornozelo e do retropé: talofibular anterior e posterior, calcaneofibular, talocalcaneano lateral (curto, logo à frente do calcaneofibular) e o bifurcado, do processo anterior do calcâneo ao navicular e ao cuboide.
+!fim
 
 **LISFRANC e CHOPART.** Não há ligamento entre as bases do 1º e do 2º metatarsais; o **ligamento de LISFRANC**, do cuneiforme medial à base do 2º, é o maior da região, com feixes dorsal, interósseo e plantar, e os **plantares são mais fortes**, o que explica as luxações dorsais (Rockwood, cap. 68). A transversa do tarso fica **paralela e flexível em eversão** e **rígida em inversão**. A **placa plantar** é a sustentação primária da metatarsofalângica (turf toe); o neuroma de **MORTON** fica entre o 2º e o 3º metatarsais no Netter (mulheres 5:1) e mais no 3º espaço no Campbell (8:1).
 
@@ -305,6 +320,10 @@ alerta: A `pe-tornozelo-0337` está sem gabarito no banco, e o Campbell 15 não 
 **O tendão** (Campbell's Operative Orthopaedics, 15ª ed., cap. 88, p. 3846) é o **maior e mais forte** do tornozelo e **roda 90°** antes de se inserir: o **gastrocnêmio** termina **lateral** e o **sóleo**, **medial**. Recebe sangue do **paratendão** pela face profunda, de ramos musculares proximais e de vasos intraósseos na inserção, sobrando uma **zona de relativa avascularidade 2 a 6 cm acima da inserção**. No cap. 53 (p. 2253), o Campbell especifica que a principal irrigação vem do **mesotendão**, a mais rica pelo **mesentério anterior**, que diminui com a idade; por isso, no reparo, **não se descola em excesso a face profunda** (cap. 88, p. 3851, aprox.). O sural cruza o tendão **10 cm acima da inserção**.
 
 **O tibial posterior** (Campbell, cap. 88, p. 3814) tem a faixa principal na **tuberosidade do navicular** e uma faixa plantar para os três cuneiformes, o cuboide e as bases do 2º ao 5º metatarsais; o Netter Atlas de Anatomia Ortopédica, 2ª ed. (cap. 10), o chama de principal sustentação do mediopé. É antagonista do fibular curto.
+
+!figura 88.3 imagem=pe-tornozelo/campbell15-88-3.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 88, Fig. 88.3, p. 3814. Vista plantar do pé: o tendão do tibial posterior chega por trás do maléolo medial, prende sua faixa principal na tuberosidade medial do navicular e abre em leque uma faixa plantar para os três cuneiformes, o cuboide e as bases do 2º ao 5º metatarsais.
+!fim
 
 **A fáscia plantar** sustenta o arco longitudinal. A fascite dói na **face inferomedial da tuberosidade**, pela manhã, mais em mulheres (2:1) e obesos (Netter); o **molinete** tensiona a origem da fáscia (Campbell, cap. 88, p. 3872 e 3873, aprox.). Perto dela passam o **ramo calcâneo medial** e o **nervo de BAXTER**.
 
@@ -328,7 +347,20 @@ alerta: O Netter não associa a fascite à dor na cabeça medial do gastrocnêmi
 | 4ª | interósseos plantares e dorsais | fibular longo, tibial posterior, **arco plantar profundo** |
 !fim
 
-O **abdutor do hálux** vai do processo medial da tuberosidade ao sesamoide medial, e sua fáscia comprime o nervo de BAXTER. O **adutor do hálux** (cabeças oblíqua e transversa) vai ao sesamoide lateral e **contribui para o hálux valgo**. Os **interósseos plantares** (3, unipeniformes, dedos III a V) **aduzem**; os **dorsais** (4, bipeniformes) **abduzem**. O eixo é o **2º dedo**, que recebe **dois dorsais e nenhum plantar** (PAD/DAB). Todos são do plantar lateral.
+O **abdutor do hálux** vai do processo medial da tuberosidade ao sesamoide medial, e sua fáscia comprime o nervo de BAXTER. O **quadrado plantar**, da 2ª camada, **insere-se no tendão do flexor longo dos dedos**, na junção do mediopé com o retropé (Campbell, cap. 88, p. 3870); daí o outro nome, **flexor acessório** (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., p. 1397). O Skeletal Trauma, 5ª ed. (p. 2414), descreve a ação: o músculo se insere nos flexores longos extrínsecos e **flete os dedos** por meio deles, e por isso a síndrome compartimental central da planta deixa contratura em flexão dos dedos. Por isso, numa laceração plantar profunda **proximal** a essa junção, o flexor longo dos dedos pode merecer reparo; distal a ela, não (Campbell, p. 3870). O **adutor do hálux** (cabeças oblíqua e transversa) vai ao sesamoide lateral e **contribui para o hálux valgo**.
+
+**Os sesamoides do hálux** ficam **dentro das duas cabeças do flexor curto do hálux**: o **medial (tibial)**, maior, ovoide e mais lesado, na cabeça medial; o **lateral (fibular)**, menor e mais redondo, na cabeça lateral (Rockwood, cap. 68). Recebem também partes do abdutor e do adutor; a **inserção conjunta** do adutor (oblíquo e transverso) com a cabeça lateral do flexor curto chega ao sesamoide lateral. O **ligamento intersesamóideo** é o centro da **placa plantar**, os sesamoides correm um de cada lado do **flexor longo do hálux**, que protegem, e transmitem até **50%** do peso, chegando a **300%** no impulso. Cada um tem **uma artéria** própria, vinda da plantar medial e do arco plantar, com o polo distal pior irrigado, daí necrose e pseudartrose (Rockwood, cap. 68). O Campbell (cap. 87, p. 3709) mostra o lado cirúrgico: no hálux valgo a cabeça lateral do flexor curto e o adutor convergem no sesamoide fibular, que desliza para o 1º espaço intermetatarsal quando a crista da cabeça do metatarsal se aplana.
+
+!figura 68-47 imagem=pe-tornozelo/rwa10-68-47-r04.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 68, Fig. 68-47, pág. PDF 3535. Partes moles ao redor dos sesamoides do hálux, em vista lateral: o ligamento suspensor do sesamoide, o colateral lateral, o tendão do flexor longo do hálux passando sob a cabeça do metatarsal e a inserção conjunta das cabeças oblíqua e transversa do adutor com a cabeça lateral do flexor curto do hálux.
+!fim
+
+**Os interósseos.** Os **interósseos plantares** (3, unipeniformes, dedos III a V) **aduzem**; os **dorsais** (4, bipeniformes) **abduzem**. O eixo é o **2º dedo**, que recebe **dois dorsais e nenhum plantar** (PAD/DAB); o Campbell's Operative Orthopaedics, 15ª ed. (cap. 89, p. 3878), chama isso de característica única do 2º dedo e liga a ela a deformidade: normalmente esses músculos passam plantares ao centro de rotação da metatarsofalângica e a fletem, mas com a metatarsofalângica cronicamente estendida a linha de ação sobe para dorsal ao eixo e o dedo deforma. Todos são do plantar lateral.
+
+!figura 89.3 imagem=pe-tornozelo/campbell15-89-3-w54.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 89, Fig. 89.3, p. 3879. Musculatura extrínseca e intrínseca da metatarsofalângica de um dedo menor: o interósseo e o lumbrical passam plantares ao eixo da articulação e se unem ao capuz extensor; a placa plantar fica sob a cabeça do metatarsal.
+!fim
+
 
 **Os compartimentos.** Classicamente eram quatro; **MANOLI e WEBER** descreveram **nove**, adotados pelo Netter e pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 17): medial, lateral, central superficial, **calcâneo** (central profundo), adutor e quatro interósseos. O **calcâneo**, com o **quadrado plantar** e o feixe tibial posterior, **comunica-se com o posterior profundo da perna**; a barreira entre ele e o central superficial cede a **10 mmHg**. O Rockwood registra a descompressão possível por **duas incisões dorsais de 1 cm**.
 
@@ -374,10 +406,16 @@ alerta: A `pe-tornozelo-0362` atribui ao sóleo a ação excêntrica no médio a
 !tabela Vias mediais do maléolo posterior (Campbell's Operative Orthopaedics, 15ª ed., cap. 1, Fig. 1.28, p. 21 e 22)
 | Letra | Via | Incisão e manobra |
 | --- | --- | --- |
-| A | **KOENIG e SCHAEFER** | medial (desenhada na figura) |
+| A | **KOENIG e SCHAEFER** | **transversa**, curva logo proximal ao maléolo medial, com **osteotomia do maléolo medial** (preserva o deltoide); pouco usada pela proximidade do feixe tibial |
 | B | **BROOMHEAD** | a meio caminho entre a tíbia posterior e o tendão do calcâneo, curvando sob o maléolo; tendões mediais e feixe para trás |
 | C | **COLONNA e RALSTON** | 10 cm acima e 2,5 cm atrás do maléolo, curva pelo centro dele e segue 4 cm ao calcanhar; abre o retináculo dos flexores, flexor longo do hálux e feixe para posterior e lateral, **preserva o deltoide** |
 | | via dupla do colo do tálus | medial entre tibial anterior e tibial posterior; lateral da fíbula à base do 4º metatarsal |
+!fim
+
+As três linhas da figura do Campbell são a pergunta do TARO 2023: **A** é a transversa de KOENIG e SCHAEFER, **B** a vertical de BROOMHEAD e **C**, a que desce atrás do maléolo e curva pelo centro dele, a de **COLONNA e RALSTON**. O **KOCHER** do distrator é via **lateral**, curva por baixo e à frente do maléolo lateral (Campbell, cap. 1, Fig. 1.15, p. 13).
+
+!figura 1.28 imagem=pe-tornozelo/campbell15-1-28-r04.jpeg
+Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.28, p. 21. Incisões (linhas verdes) dos acessos mediais ao tornozelo, no pé visto pelo lado medial: A, transversa de KOENIG e SCHAEFER, logo acima do maléolo medial; B, de BROOMHEAD, vertical entre a tíbia posterior e o tendão do calcâneo, curvando sob o maléolo; C, de COLONNA e RALSTON, que desce atrás e cruza o centro do maléolo rumo ao calcanhar.
 !fim
 
 !tabela Portais do tornozelo (Netter Atlas de Anatomia Ortopédica, 2ª ed., cap. 10)

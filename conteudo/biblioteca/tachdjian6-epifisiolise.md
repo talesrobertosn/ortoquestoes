@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-epifisiolise
-versao: 1
+versao: 2
 titulo: Epifisiólise proximal do fêmur
 especialidade: pediatria
 acesso: gratis
@@ -53,6 +53,8 @@ O ponto que a banca explora é a proporção entre as zonas. A **zona de repouso
 
 A microscopia eletrônica mostrou fibras colágenas da matriz das zonas hipertrófica e proliferativa em geral **em menor número**, de tamanho variável e organização irregular, com alguns focos de colágeno aumentado, além de degeneração e morte de condrócitos nas duas zonas. Alterações significativas dos próprios condrócitos só apareceram na **zona hipertrófica** (p. 586).
 
+O número que a prova cobra vem do Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 25, p. 1172): a fise é muitas vezes **hipocelular**, com excesso de substância fundamental, e a **zona hipertrófica** fica muito maior que o normal, ocupando **até 80% da largura da fise**, contra **15% a 30%** numa fise normal. A zona proliferativa tem colágeno menos denso e mais desorganizado, e o deslizamento passa pelas zonas proliferativa e hipertrófica, de forma irregular.
+
 !tabela A fise na epifisiólise (Tachdjian, cap. 15, p. 585 e 586)
 | Zona | O que o livro descreve | Pegadinha |
 | --- | --- | --- |
@@ -67,7 +69,7 @@ A microscopia eletrônica mostrou fibras colágenas da matriz das zonas hipertr�
 conceito: Na fise deslizada, a zona de repouso é normal mas proporcionalmente menor, as zonas proliferativa e hipertrófica ficam mais espessas, com menos condrócitos e excesso de matriz, e o colágeno é em geral reduzido e desorganizado.
 como: O TARO 2007 pediu a afirmação correta sobre a histologia da placa epifisária, com as zonas de repouso e hipertrófica, a celularidade e o colágeno nas alternativas.
 armadilha: Marcar placa hipercelular ou colágeno aumentado na zona hipertrófica; o livro descreve o contrário (menos células, colágeno em geral menor, só focos aumentados).
-alerta: Questão sem gabarito oficial (`pediatria-0728`). O Tachdjian sustenta a ideia da alternativa A (zona hipertrófica aumentada à custa da proporção da zona de repouso) e contraria B, C e D; o número de até 80% da espessura não aparece no livro.
+alerta: Questão sem gabarito oficial (`pediatria-0728`). O Tachdjian sustenta a ideia da alternativa A (zona hipertrófica aumentada à custa da proporção da zona de repouso) e contraria B, C e D; o número de até 80% da largura da fise não aparece no Tachdjian, mas está no Lovell and Winter, 7ª ed. (cap. 25, p. 1172), que também descreve a fise hipocelular e o colágeno menos denso.
 !fim
 
 # Quem adoece {radar=confirmado}
@@ -199,7 +201,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (p. 1428), reconhece a classifica�
 conceito: A classificação pela duração dos sintomas é a temporal: aguda com até 3 semanas de pródromo, crônica (a mais frequente, 85%) e agudo-sobre-crônica com mais de 3 semanas e piora súbita.
 como: O ENARE de Cirurgia da Mão 2022 descreveu um menino de 12 anos com dor subaguda e perguntou qual classificação usa duração e sintomas, com DREHMANN, CATTERALL, KLEIN, BILLINGS e FAHEY e O'BRIEN nas opções.
 armadilha: KLEIN é linha radiográfica, CATTERALL é classificação de PERTHES, DREHMANN é sinal clínico e BILLING é incidência radiográfica; sobra FAHEY e O'BRIEN.
-alerta: Nenhum dos dois livros atribui a classificação temporal a FAHEY e O'BRIEN (`pediatria-1063`): o Tachdjian a apresenta sem epônimo e cita O'BRIEN e FAHEY só num estudo de remodelação após pinagem in situ (p. 604). Gabarito oficial mantido.
+alerta: Nenhum dos dois livros atribui a classificação temporal a FAHEY e O'BRIEN (`pediatria-1063`): o Tachdjian a apresenta sem epônimo. Os dois nomes aparecem no livro em dois trabalhos: FAHEY e O'BRIEN, 1965 (referência 73, sobre o deslizamento agudo, citada na p. 598 entre os relatos de deslizamentos atípicos, anteriores ou em valgo), e O'BRIEN e FAHEY, 1977, sobre a remodelação após pinagem in situ (p. 604); em nenhum deles o livro dá nome à classificação. Gabarito oficial mantido.
 !fim
 
 ## A classificação de LODER: estável ou instável
@@ -228,9 +230,9 @@ O Campbell (p. 1428) acrescenta a versão pela translação: grau I com o colo d
 
 A medida no perfil em rã tem erro substancial pelo posicionamento; o **perfil verdadeiro**, os perfis de **BILLING** ou **DUNLAP** e, com mais acurácia, o **ângulo cabeça-colo na tomografia** (não rotineira) são melhores (p. 583).
 
-!questoes central=pediatria-0104 relacionadas=pediatria-0120
+!questoes central=pediatria-0120
 conceito: O método de SOUTHWICK mede o ângulo entre o eixo da diáfise e a perpendicular à base da epífise (normal 145° no AP, 10° no perfil) e grada o deslizamento pela diferença em relação ao lado normal.
-como: O TEOT 2021 mostrou a imagem da técnica de medida e perguntou o epônimo; o TARO 2022 mostrou o ângulo traçado e deu KLEIN, DREHMANN, SOUTHWICK e TRETHOWAN.
+como: O TARO 2022 mostrou o ângulo traçado e deu KLEIN, DREHMANN, SOUTHWICK e TRETHOWAN.
 armadilha: KLEIN é uma linha (tangente ao colo) e TRETHOWAN é o sinal de essa linha não cortar a epífise; ângulo com o eixo diafisário é SOUTHWICK.
 !fim
 
@@ -350,7 +352,7 @@ Um parafuso é igual ou superior a vários pinos nos estáveis e nos instáveis 
 !tabela Regras do parafuso (Tachdjian, cap. 15, p. 589 a 593; Campbell 15, cap. 38, p. 1429 a 1431)
 | Item | Regra | Fonte |
 | --- | --- | --- |
-| número | um parafuso no estável; um ou dois no instável | Tachdjian p. 593; Campbell p. 1429 |
+| número | um parafuso no estável; dois de 6,5 mm no instável | Tachdjian p. 593 e 594; Campbell p. 1429 |
 | tipo | canulado totalmente rosqueado, 6,5 a 7,3 mm | Tachdjian p. 589; Campbell p. 1429 |
 | posição | centro-centro da epífise, perpendicular à fise | ambos |
 | roscas na epífise | pelo menos 4 (4 a 5 no perfil) | Tachdjian p. 589 e 592 |
@@ -371,6 +373,8 @@ armadilha: Escolher o quadrante posterossuperior porque os vasos retinaculares s
 
 A complicação mais importante é a **penetração do implante na articulação** (p. 592). WALTERS e SIMON mostraram que até **2 cm** de penetração podem passar despercebidos nas incidências habituais e associaram penetração a **condrólise**. A melhor prevenção é o parafuso no centro da cabeça nas duas incidências e a fluoroscopia em todo o arco. Outras complicações: falha de fusão com crescimento da epífise para fora da ponta do parafuso, perda de fixação, quebra do implante e fraturas do colo ou subtrocantéricas, estas pelos furos não usados. O Campbell (p. 1429) recomenda a ponta a **4 mm ou mais** do osso subcondral.
 
+O Campbell's Operative Orthopaedics, 15ª ed. (p. 1437 e 1438), trata a **fratura do fêmur** após a fixação in situ: rara, em geral **subtrocantérica**, mais rara ainda no colo, tratada com redução aberta e parafuso de quadril com placa lateral longa mantendo a epífise reduzida. Para preveni-la: evitar furos desnecessários, não fresar demais o colo, usar **parafusos totalmente rosqueados** e não deixar o parafuso em níveis que criem concentração de tensão. Na mesma página, a Fig. 38.125 mostra um **parafuso parcialmente rosqueado quebrado** um mês depois da volta ao esporte, e o livro lembra que o deslizamento pode continuar quando a fixação não é estável, o paciente não segue as restrições ou a doença endócrina de base não é tratada.
+
 Pós-operatório no Tachdjian (p. 590): carga parcial em 24 horas, muletas por 6 semanas, esporte depois de 3 meses e controle até a maturidade; o Campbell (p. 1431) libera carga no estável no primeiro dia. A **retirada rotineira** não é recomendada, e o gesso pelvipodálico tem pouca indicação (p. 593).
 
 !questoes central=pediatria-0492
@@ -385,7 +389,7 @@ armadilha: Achar que o parcialmente rosqueado é melhor por comprimir a fise; o 
 
 O instável tem prognóstico pior pela necrose (p. 593). Sobre o momento, PETERSON viu necrose em **7%** com redução **em até 24 horas** e **20%** depois; AADALEN não teve necrose em 50 tratados em 24 horas; LODER, ao contrário, viu menos necrose depois de 48 horas. A maioria recomenda redução precoce (p. 594). O Campbell (p. 1436 e 1437) sugere, se as 24 horas passaram, esperar **pelo menos 7 dias** (janela insegura) e defende **capsulotomia de rotina**, porque a pressão intracapsular chega ao dobro.
 
-A **fixação com redução mínima** continua sendo o **padrão-ouro** (p. 594). A revisão de LODER e DIETZ mostrou o menor risco de necrose com **redução urgente, fixação interna e artrotomia descompressiva**. Na mesa de tração, roda-se o membro até neutro com tração mínima, sem forçar. Preferem-se **dois parafusos de 6,5 mm totalmente rosqueados**; o segundo vai **posterior e inferior**, porque anteriormente há pouca metáfise e o parafuso fica intra-articular se a epífise anterior colapsar por necrose (p. 595). O Campbell (p. 1429) aceita a redução incidental pelo posicionamento e a manobra suave de LEADBETTER, e proíbe manipulação forçada.
+A **fixação com redução mínima** continua sendo o **padrão-ouro** (p. 594). A revisão de LODER e DIETZ mostrou o menor risco de necrose com **redução urgente, fixação interna e artrotomia descompressiva**. Na mesa de tração, roda-se o membro até neutro com tração mínima, sem forçar. Preferem-se **dois parafusos canulados de 6,5 mm totalmente rosqueados**, porque dois dão mais estabilidade que um e o totalmente rosqueado tem pega melhor no osso metafisário (p. 594); o segundo vai **posterior e inferior**, porque anteriormente há pouca metáfise e o parafuso fica intra-articular se a epífise anterior colapsar por necrose (p. 595). O Campbell (p. 1429) aceita a redução incidental pelo posicionamento e a manobra suave de LEADBETTER, e proíbe manipulação forçada.
 
 ## PARSCH e a luxação cirúrgica
 
@@ -440,6 +444,12 @@ A intertrocantérica é **extracapsular** e tem pouca necrose (p. 596). SOUTHWIC
 | IMHÄUSER | intertrocantérica, mais alta | hiperextensão, varo e rotação externa | correção incompleta |
 !fim
 
+!questoes central=pediatria-0104
+conceito: A osteotomia de SOUTHWICK é intertrocantérica, no nível do trocanter menor, com cunha de base anterolateral cujos ângulos saem do ângulo cabeça-diáfise no AP e no perfil em rã; produz flexão e valgo do fragmento distal (Tachdjian, Fig. 15.13, p. 597).
+como: O TEOT 2021 mostrou o desenho da cunha intertrocantérica e perguntou a técnica, com DUNN, LODER, KRAMER e SOUTHWICK.
+armadilha: DUNN é subcapital, pelo calo; KRAMER é na base do colo; LODER é classificação de estabilidade, não técnica cirúrgica.
+!fim
+
 !questoes central=pediatria-0356
 conceito: SOUTHWICK indicou sua osteotomia intertrocantérica biplanar para deslizamentos crônicos ou consolidados com deformidade cabeça-diáfise entre 30 e 70°, sem corrigir mais de 60°.
 como: O TEPOP 2024 cruzou agudos e crônicos com faixas de 10 a 30° e 30 a 70°.
@@ -470,6 +480,7 @@ Na radiografia, o primeiro sinal é a epífise que **não fica osteopênica**, p
 !questoes central=pediatria-0415 relacionadas=pediatria-0855
 conceito: Segundo LODER, o fator preditivo da osteonecrose é a instabilidade: 47% de necrose nos instáveis contra 0% nos estáveis operados.
 como: O TARO 2011 perguntou o fator preditivo da necrose entre idade, instabilidade, grau de desvio e força do trauma; o ENARE R4 2025 pediu o fator ligado à gênese da doença e não ao tratamento.
+alerta: Na `pediatria-0855` o gabarito oficial é E (migração proximal), mas os livros dão a **instabilidade** como preditor de necrose segundo LODER (Tachdjian, p. 599; Campbell 15, p. 1428 e 1436); nenhum dos dois cita a migração proximal como preditor. Gabarito oficial mantido.
 armadilha: Grau de desvio e energia do trauma parecem lógicos, mas a instabilidade da fise, que rasga o periósteo e os vasos, é o preditor.
 !fim
 
