@@ -1,6 +1,6 @@
 ---
 id: rockwood10-65-tornozelo
-versao: 1
+versao: 2
 titulo: Fraturas do tornozelo
 especialidade: trauma
 acesso: gratis
@@ -140,7 +140,7 @@ alerta: Na ENARE 2024 (trauma-1015), o gabarito inclui sutura do ligamento delto
 
 O tornozelo é uma **mortalha**: o corpo do tálus se articula com o **plafond** (teto) e o maléolo medial, ambos da tíbia, e com a fíbula distal do lado de fora. O **maléolo posterior**, uma projeção dorsal da tíbia, aumenta essa superfície. Todas participam da carga; a fíbula recebe cerca de **um sexto**. O maléolo medial é **mais curto e mais anterior**, e o eixo da articulação fica em cerca de **15 graus de rotação externa**.
 
-O tálus tem 70% da superfície coberta de cartilagem, nenhuma inserção muscular e uma irrigação retrógrada frágil. O corpo é um **tronco de cone** (frustum) deitado no encaixe, **mais largo na frente** e mais estreito atrás. Duas consequências que caem: nenhuma incidência mostra ao mesmo tempo as facetas medial e lateral com seus maléolos (daí a série de três incidências), e o tálus fica **comprimido e mais estável na dorsiflexão** (o toque do calcanhar, em que a fíbula roda para fora e a sindesmose se abre um pouco) e mais solto na flexão plantar. Com carga axial, a congruência óssea dá muita estabilidade, mesmo depois de cortar todos os ligamentos.
+O tálus tem 70% da superfície coberta de cartilagem, nenhuma inserção muscular e uma irrigação retrógrada frágil. O corpo é um **tronco de cone** (frustum) deitado no encaixe, **mais largo na frente** e mais estreito atrás. Duas consequências que caem: nenhuma incidência mostra ao mesmo tempo as facetas medial e lateral com seus maléolos (daí a série de três incidências), e o tálus fica **comprimido e mais estável na dorsiflexão** (o toque do calcanhar, em que a fíbula roda para fora e a sindesmose se abre um pouco) e mais solto na flexão plantar. Com carga axial, a congruência óssea dá muita estabilidade, mesmo depois de cortar todos os ligamentos. Quanto a sindesmose se abre, o Rockwood não diz; o Skeletal Trauma, 5ª ed. (cap. 66, p. 2221), cita INMAN e GRATH: na dorsiflexão completa o maléolo lateral se desloca para fora só **0 a 2 mm**, e o espaço tibiofibular fica em cerca de 1 mm com o tornozelo todo em dorsiflexão.
 
 !figura 65-2
 Anatomia óssea do tornozelo: mortalha, vista inferossuperior do lado tibiofibular e vista superoinferior do tálus. A superfície articular do tálus é maior que a tibiofibular, a circunferência lateral da cúpula é maior que a medial e a cúpula é mais larga na frente; os ligamentos da sindesmose permitem que o encaixe se alargue na dorsiflexão, numa posição estável de máximo contato.
@@ -148,7 +148,7 @@ Anatomia óssea do tornozelo: mortalha, vista inferossuperior do lado tibiofibul
 
 !questoes relacionadas=pe-tornozelo-0347 treino=trauma-1690
 conceito: Na dorsiflexão a parte larga do tálus entra no encaixe, a fíbula roda para fora e a sindesmose se alarga; é a posição mais estável do tornozelo.
-como: O TARO 2009 perguntou quanto a distância intermaleolar aumenta na flexão dorsal; está sem gabarito no acervo e o capítulo não dá o número, só o fato de que o encaixe se alarga na dorsiflexão.
+como: O TARO 2009 perguntou quanto a distância intermaleolar aumenta na flexão dorsal; está sem gabarito no acervo e o capítulo não dá o número, só o fato de que o encaixe se alarga na dorsiflexão; o Skeletal Trauma, 5ª ed. (cap. 66, p. 2221), dá 0 a 2 mm de deslocamento lateral do maléolo lateral na dorsiflexão completa (INMAN e GRATH).
 armadilha: Flexão plantar como posição estável: é a posição em que o tálus fica mais solto.
 !fim
 

@@ -1,6 +1,6 @@
 ---
 id: rockwood10-58-femur-distal
-versao: 2
+versao: 3
 titulo: Fratura do fêmur distal
 especialidade: trauma
 acesso: gratis
@@ -47,6 +47,7 @@ como: Duas provas de Ortopedia sem ano cobraram cada metade (os três grupos que
 armadilha: Glúteo médio entre os músculos que dão varo: ele não cruza o foco do fêmur distal.
 armadilha: Valgo como desvio da fratura fresca: o valgo é o erro mais comum da placa lateral mal aplicada, não o desvio muscular.
 alerta: O TARO 2011 (trauma-0850) deu como gabarito jovens do sexo masculino e idosos do sexo feminino. O capítulo 58 descreve a distribuição bimodal por energia (jovem em alta energia, idoso osteoporótico em queda), sem números por sexo; a resposta da banca é compatível, mas o sexo não vem do livro.
+alerta: A trauma-1138, de 2008 e sem gabarito oficial, pediu a consolidação viciosa mais comum; a resposta provável é o varo, desvio das forças musculares e falha clássica das placas antigas sem ângulo fixo. Com as placas atuais, a tabela de armadilhas do capítulo 58 dá o valgo como o desvio coronal mais comum da placa mal aplicada (ver "Desalinhamento").
 !fim
 
 # Lesões associadas {radar=confirmado}
@@ -245,9 +246,13 @@ Os estudos randomizados não mostram vencedor. DUNBAR randomizou 126 pacientes (
 
 A fratura do fêmur distal depois da artroplastia total do joelho ocorre em **0,3% a 2,5%** após a primária e **1,6% a 38%** após a revisão; a supracondiliana é a fratura periprotética mais comum em torno da prótese do joelho. Fatores de risco: osteopenia, artrite reumatoide, corticoide prolongado, **entalhe da cortical anterior** e revisão. A regra do capítulo é a estabilidade da prótese: **componente solto, revisão com prótese de haste; componente fixo, fixação interna** (placa bloqueada ou haste retrógrada, ambas com bons resultados e com complicações). Na haste, é preciso considerar a relação do componente com o ponto de entrada. As fraturas muito distais, que passam da borda proximal do componente, também foram bem fixadas com placa lateral (STREUBEL). O capítulo 59 aprofunda o tema.
 
+O capítulo 59 traz as duas classificações. A de LEWIS e RORABECK olha desvio e prótese (Fig. 59-19): tipo I sem desvio e interface íntegra, tipo II desviada com prótese fixa, tipo III com prótese solta ou falhando, com ou sem desvio. Como ela não diz onde o traço está em relação ao componente, a de **SU** divide pela **borda proximal do componente femoral** (Fig. 59-20): **tipo I**, traço todo **proximal** ao componente; **tipo II**, traço que **nasce na borda proximal** do componente e sobe; **tipo III**, traço que se estende **distal** a essa borda, por dentro da área do componente.
+
+O desvio sagital também tem endereço. Na placa lateral da periprotética, o capítulo 59 avisa que o varo-valgo é difícil de acertar, com **tendência ao valgo** (os parafusos de 95 graus paralelos à articulação dão 5 graus de valgo), e que no perfil a **má redução com ápice posterior é comum**. O capítulo 13 (técnicas de redução) separa os dois sagitais: a **deformidade em flexão** aparece na periprotética **pouco cominuta** e foi corrigida com o triângulo radiotransparente sob o joelho; a **deformidade em extensão é muito comum na periprotética cominuta** e tem de ser corrigida na redução (gancho ósseo; SHARMA sugere a via parapatelar medial nessas fraturas). Na fratura comum, o HEBERT (5ª ed., cap. 62, Fig. 62.12) mostra o **recurvato** do fêmur distal causado pela placa angulada mal posicionada no perfil.
+
 !questoes relacionadas=joelho-0090,trauma-1016 treino=trauma-1641
 conceito: Na periprotética acima da prótese do joelho, o componente decide: solto, revisão com haste; fixo, placa bloqueada ou haste retrógrada, se o componente deixar passar a haste.
-como: Uma prova sem ano deu a haste retrógrada como opção na periprotética do joelho, com RORABECK nos distratores; o ENARE R4 2024 cobrou a classificação de SU num caso clínico. Nenhuma das duas classificações está no capítulo 58.
+como: Uma prova sem ano deu a haste retrógrada como opção na periprotética do joelho, com RORABECK nos distratores; o ENARE R4 2024 cobrou a classificação de SU num caso clínico. Nenhuma das duas classificações está no capítulo 58; as duas estão no capítulo 59 (LEWIS e RORABECK, Fig. 59-19; SU, Fig. 59-20).
 armadilha: Placa ou haste com componente solto: fixariam o osso em volta de uma prótese que já perdeu a fixação.
 !fim
 
@@ -278,7 +283,7 @@ alerta: No TARO 2016 (trauma-0120), o gabarito foi a perda de movimento do joelh
 
 ## Desalinhamento
 
-Desvio acima de **5 a 10 graus** altera a mecânica do joelho e a marcha: varo sobrecarrega o compartimento medial e valgo, o lateral; flexão, extensão, rotação e encurtamento afetam a marcha e o conforto. Com a redução indireta, a pseudartrose caiu, mas o desalinhamento aumentou. A placa mal aplicada impõe deformidade pela **"regra dos demais"**: distal demais, anterior ou posterior demais, ou rodada demais. A tabela de armadilhas lista os desvios mais comuns: **valgo** no plano coronal, **rotação externa** e **encurtamento**. A haste também desalinha pelo trajeto da fresa e pela geometria do implante.
+Desvio acima de **5 a 10 graus** altera a mecânica do joelho e a marcha: varo sobrecarrega o compartimento medial e valgo, o lateral; flexão, extensão, rotação e encurtamento afetam a marcha e o conforto. Com a redução indireta, a pseudartrose caiu, mas o desalinhamento aumentou. A placa mal aplicada impõe deformidade pela **"regra dos demais"**: distal demais, anterior ou posterior demais, ou rodada demais. A tabela de armadilhas lista os desvios mais comuns: **valgo** no plano coronal, **rotação externa** e **encurtamento**; o desvio em flexão ou extensão aparece na mesma tabela, sem lado preferido, e se previne com avaliação radiográfica cuidadosa, rolo bem posto sob o joelho e joysticks (pinos de SCHANZ) ou pinças. A haste também desalinha pelo trajeto da fresa e pela geometria do implante.
 
 ## Pseudartrose, infecção, implante e artrose
 

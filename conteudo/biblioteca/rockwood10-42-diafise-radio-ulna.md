@@ -1,6 +1,6 @@
 ---
 id: rockwood10-42-diafise-radio-ulna
-versao: 1
+versao: 2
 titulo: Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi
 especialidade: trauma
 acesso: gratis
@@ -121,11 +121,13 @@ A fratura de Galeazzi é a **fratura da diáfise do rádio**, tipicamente no **t
 
 A Galeazzi nasce de **torção com carga axial**, como na queda com o **antebraço hiperpronado e o punho em extensão**. A fratura começa no rádio e a lesão corre para distal: rompe a **membrana interóssea**, os **ligamentos radioulnares distais** e, por fim, a **fibrocartilagem triangular**, deixando a radioulnar distal instável. O capítulo acrescenta o sentido da luxação: a **hiperpronação** gera Galeazzi com luxação **anterior** da cabeça da ulna, e a **hipersupinação** com queda sobre a mão espalmada gera a luxação **posterior**.
 
+Os outros livros dizem o contrário para a supinação. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, Fig. 62.87, p. 2824), classifica a Galeazzi pelo desvio do rádio: o **tipo I, de ápice volar**, vem da carga axial com o antebraço em **supinação**, com o rádio desviado para dorsal e a **ulna distal luxada para volar**; o **tipo II, de ápice dorsal**, vem da carga axial em **pronação**, com o rádio desviado para anterior e a **ulna luxada para dorsal**. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 9, Fig. 9-4), chama a Galeazzi de ápice volar de **tipo supinação**, com a ulna distal volar ao rádio, e diz que o ápice volar foi mais comum que o dorsal na série citada. Guarde as duas versões: no Rockwood adulto, hipersupinação com ulna para trás; no Campbell e no Rockwood infantil, supinação com ápice volar e ulna para a frente.
+
 !questoes central=trauma-0893 relacionadas=trauma-0437 treino=trauma-1441
 conceito: O mecanismo clássico da Galeazzi é a carga axial em torção, com o antebraço hiperpronado e o punho estendido; a hipersupinação explica a variante com a ulna luxada para trás.
 como: O TARO 2010 pediu o mecanismo clássico (pronação e punho estendido); o TARO 2023 pediu a variante de ápice volar.
 armadilha: Punho fletido: a queda que produz a Galeazzi é sobre a mão espalmada, com o punho em extensão.
-alerta: No TARO 2023 (trauma-0437), o gabarito oficial foi supinação com punho estendido para a Galeazzi de **ápice volar**. O Rockwood não descreve o ápice da fratura do rádio; ele liga a **hipersupinação** à luxação **posterior** da cabeça da ulna e a **hiperpronação** à luxação anterior. A resposta da banca segue essa mesma divisão (supinação para um padrão, pronação para o outro), mas a ponte entre "ápice volar" e a direção da ulna é da banca, não do livro.
+alerta: No TARO 2023 (trauma-0437), o gabarito oficial foi supinação com punho estendido para a Galeazzi de **ápice volar**. O Rockwood adulto não descreve o ápice da fratura do rádio; ele liga a **hipersupinação** à luxação **posterior** da cabeça da ulna e a **hiperpronação** à luxação anterior. O Campbell (cap. 62, Fig. 62.87, p. 2824) e o Rockwood infantil (cap. 9, Fig. 9-4) confirmam o gabarito: ápice volar é o tipo supinação, mas com a ulna distal luxada para **volar**, o oposto da direção que o Rockwood adulto dá à hipersupinação.
 !fim
 
 ## Quem tem a radioulnar distal lesada
