@@ -1,14 +1,14 @@
 ---
 id: campbell15-osteossarcoma
-versao: 1
+versao: 2
 titulo: Osteossarcoma
 especialidade: tumores
 acesso: gratis
 livro: Campbell's Operative Orthopaedics
-edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição
+edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), o Dahlin's Bone Tumors, 6ª edição (2010), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição
 capitulo: Capítulo 29 · Malignant Tumors of Bone
 autores: Patrick C. TOY e Robert K. HECK Jr.
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone, seção Osteosarcoma inteira, p. 970 a 975, e o início de Chondrosarcoma, p. 975 e 976), cap. 26 (General Principles of Tumors: imagem, laboratório, estadiamento de ENNEKING e AJCC, biópsia, radioterapia, quimioterapia, amputação versus salvamento e margens, p. 871 a 882) e cap. 30 (Soft-Tissue Tumors, osteossarcoma extraesquelético, p. 1026 a 1028); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors, seção Osteosarcoma, p. 1049 a 1061); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (Tumores ósseos malignos e lesões metastáticas: laboratório, classificação da OMS e osteossarcoma), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone, seção Osteosarcoma inteira, p. 970 a 975, e o início de Chondrosarcoma, p. 975 e 976), cap. 26 (General Principles of Tumors: imagem, laboratório, estadiamento de ENNEKING e AJCC, biópsia, radioterapia, quimioterapia, amputação versus salvamento e margens, p. 871 a 882) e cap. 30 (Soft-Tissue Tumors, osteossarcoma extraesquelético, p. 1026 a 1028); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 26 (Malignant Bone Tumors, seção Osteosarcoma, p. 1049 a 1061); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 30 (Tumores ósseos malignos e lesões metastáticas: laboratório, classificação da OMS e osteossarcoma), cujo arquivo não traz número de página impressa; Dahlin's Bone Tumors, 6ª ed., cap. 11 (Osteosarcoma, p. 122 a 154) e cap. 12 (Parosteal Osteosarcoma, p. 158 e 159), conferidos em 11/11/2026. As páginas citadas são as impressas.
 subtemas: Osteossarcoma
 resumo: Neoplasia maligna primária não hematológica mais comum do osso (no SIZÍNIO, a segunda depois do mieloma), segunda década, leve predomínio masculino, metáfise do fêmur distal, tíbia proximal e úmero proximal; dor progressiva sem febre nem caquexia; radiografia com CODMAN e raios de sol, RM para a extensão local e TC de tórax para o pulmão; LDH alta = pior prognóstico; ENNEKING IIB na maioria; parosteal de baixo grau na face posterior do fêmur distal e em mulheres, periosteal intermediário na diáfise do fêmur e da tíbia, telangiectásico lítico como COA, pequenas células simulando EWING; secundário a PAGET (pelve, idoso, sobrevida < 15%) e a radiação (é o sarcoma pós-radiação mais comum); extraesquelético acima de 40 anos com 25% em 5 anos; quimioterapia neoadjuvante, cirurgia com margem ampla e adjuvante, necrose > 90% = bom prognóstico; transfemoral no fêmur distal = margem ampla; fator prognóstico principal = metástase, óssea pior que pulmonar, skip igual a metástase a distância.
 ---
@@ -65,7 +65,9 @@ O raciocínio do Campbell (p. 970) é biológico: os osteossarcomas primários o
 
 O Tachdjian (p. 1049) quantifica: **fêmur distal e tíbia proximal somam mais de 50% dos casos**; em seguida vêm o úmero proximal e o fêmur proximal. Fíbula, pelve e coluna são menos comuns, e mão e pé são raros. O SIZÍNIO resume como "metáfises próximas ao **joelho e ao ombro**".
 
-Dentro do osso, o local típico é a **metáfise**. O Campbell (p. 971) dá as proporções: cerca de **10% são primariamente diafisários** e **menos de 1% são epifisários**. Por isso, uma alternativa que coloque o osteossarcoma "próximo à epífise proximal do fêmur" ou na "metáfise distal da tíbia" como local mais frequente está errada.
+O Dahlin's Bone Tumors, 6ª ed. (cap. 11, p. 123), confirma com a série da Clínica Mayo, de 1.952 osteossarcomas: quase metade estava na **região do joelho**. Os números do desenho da Fig. 11.1 (p. 123) dão a ordem: **fêmur distal 575**, **tíbia proximal 287**, **úmero proximal 154**, **pelve 148** e **fêmur proximal 105**; a **tíbia distal** teve **42**. Só 24 tumores ficaram distais ao tornozelo e ao punho (p. 124).
+
+Dentro do osso, o local típico é a **metáfise**. O Campbell (p. 971) dá as proporções: cerca de **10% são primariamente diafisários** e **menos de 1% são epifisários**. O Dahlin (p. 124) chega ao mesmo número: 152 dos 1.430 osteossarcomas de ossos longos (**10,62%**) eram diafisários. Por isso, uma alternativa que coloque o osteossarcoma "próximo à epífise proximal do fêmur" ou na "metáfise distal da tíbia" como local mais frequente está errada.
 
 !tabela Perfil epidemiológico do osteossarcoma (Campbell 15, cap. 29, p. 970 e 975; Tachdjian 6, cap. 26, p. 1049; SIZÍNIO 5, cap. 30)
 | Aspecto | O que os livros dizem | O detalhe que cai |
@@ -297,7 +299,9 @@ O Tachdjian (p. 1049) chama de **justacorticais** os osteossarcomas de superfíc
 
 O Campbell (p. 972) descreve o parosteal como uma neoplasia rara, de **baixo grau**, que nasce **na superfície do osso** e só invade a cavidade medular em **estágio tardio**. A frase que vira questão é a da sua "tendência peculiar" de se apresentar como **massa ossificada lobulada na face posterior do fêmur distal**. O Tachdjian (p. 1049) o classifica como osteossarcoma fibroblástico de baixo grau.
 
-O SIZÍNIO acrescenta: cerca de **10%** dos osteossarcomas; pessoas **mais velhas** e leve predomínio **feminino**; crescimento lento e indolor; **região posterior do fêmur distal** e úmero proximal; massa esclerótica lobulada em "**couve-flor**", muitas vezes com **linha radiotransparente** entre o tumor e a cortical; medular em geral preservada (a invasão aparece na TC); e, por crescer devagar, pode **englobar vasos e nervos** em vez de rechaçá-los, o que pode levar à amputação.
+O Dahlin (cap. 12, p. 158 e 159) dá os números da Clínica Mayo: o parosteal é **3,7% de todos os osteossarcomas** (pouco mais de 1% dos tumores malignos), **cerca de 63% dos pacientes são mulheres** (contra 58% de homens nos outros osteossarcomas), dois terços estão na **terceira e quarta décadas** e nenhum tinha menos de 10 ou mais de 55 anos; o local mais comum, de longe, é a **face posterior da diáfise distal do fêmur**, com cerca de dois terços dos casos, e o sintoma principal é o **aumento de volume, muitas vezes indolor** e presente há anos.
+
+O SIZÍNIO acrescenta: cerca de **10%** dos osteossarcomas (proporção maior que os 3,7% do Dahlin, p. 158); pessoas **mais velhas** e leve predomínio **feminino**; crescimento lento e indolor; **região posterior do fêmur distal** e úmero proximal; massa esclerótica lobulada em "**couve-flor**", muitas vezes com **linha radiotransparente** entre o tumor e a cortical; medular em geral preservada (a invasão aparece na TC); e, por crescer devagar, pode **englobar vasos e nervos** em vez de rechaçá-los, o que pode levar à amputação.
 
 Os diferenciais por TC estão no Campbell (p. 972):
 
@@ -308,7 +312,7 @@ Histologicamente, como o osteossarcoma intramedular de baixo grau, o parosteal t
 
 ## Periosteal: grau intermediário, diáfise do fêmur e da tíbia
 
-O Campbell (p. 972) descreve o periosteal como neoplasia de **grau intermediário** que nasce na superfície do osso. Os locais mais comuns são as **diáfises do fêmur e da tíbia**, e ele acomete um grupo etário um pouco mais velho e mais amplo que o convencional. A histologia é característica: **fileiras de células fusiformes produtoras de osteoide irradiando entre lóbulos de cartilagem**. Por isso o Tachdjian (p. 1049) o chama de osteossarcoma **condroblástico** de grau intermediário. A Fig. 29.4 do Campbell mostra uma mulher de 67 anos com periosteal do fêmur proximal, sem envolvimento da medular.
+O Campbell (p. 972) descreve o periosteal como neoplasia de **grau intermediário** que nasce na superfície do osso. Os locais mais comuns são as **diáfises do fêmur e da tíbia**, e ele acomete um grupo etário um pouco mais velho e mais amplo que o convencional. A histologia é característica: **fileiras de células fusiformes produtoras de osteoide irradiando entre lóbulos de cartilagem**. Por isso o Tachdjian (p. 1049) o chama de osteossarcoma **condroblástico** de grau intermediário. A Fig. 29.4 do Campbell mostra uma mulher de 67 anos com periosteal do fêmur proximal, sem envolvimento da medular. O Dahlin (cap. 11, p. 146) confirma a preferência pela **diáfise do fêmur e da tíbia**: o local mais comum foi a **porção média do fêmur**, seguida da **porção média da tíbia**; o tumor foi pouco mais de **1,5%** dos casos da Mayo, com nítido predomínio **feminino**.
 
 O SIZÍNIO o descreve como mais raro, com comportamento clínico, radiológico e biológico **intermediário entre o convencional e o parosteal**; o uso de quimioterapia é **controverso**, e o tratamento cirúrgico com **margens amplas** é mandatório.
 
@@ -386,6 +390,7 @@ O Campbell (p. 972) define os osteossarcomas secundários como os que surgem **n
 - Ocorre mais na **sexta à oitava décadas**.
 - O local mais comum é a **pelve**.
 - O prognóstico continua ruim: **menos de 15% de sobrevida longa** (p. 975).
+- O Dahlin (cap. 11, p. 139) dá os números da Mayo: **61 dos 1.952 osteossarcomas (3,12%)** nasceram de PAGET; o osso mais acometido foi o **ílio** (22 casos), seguido do fêmur (13) e do úmero (10). Ali, a incidência de sarcoma na doença de PAGET é estimada em **menos de 1%**, contra cerca de 1% no Campbell (p. 972), e a sobrevida longa é rara.
 
 ## Radiação
 
@@ -420,7 +425,7 @@ alerta: A questão `tumores-0345` está sem gabarito no banco; o Campbell (cap. 
 
 O osteossarcoma também pode nascer fora do osso, nas partes moles. O Campbell (cap. 30, p. 1026 a 1028) o descreve como **extremamente raro**, cerca de **1% de todos os sarcomas de partes moles**. Como o ósseo, é uma neoplasia maligna de células fusiformes marcada pela **produção de osteoide**, e a histologia é semelhante.
 
-Ao contrário do ósseo, acomete em geral **adultos acima de 40 anos**, sobretudo nas **partes moles profundas da coxa**; a imagem mostra ossificação **imatura** na massa; o tratamento é multimodal (**ressecção ampla, radioterapia e quimioterapia**); e o prognóstico é **pior** que o do osteossarcoma do osso e o de outros sarcomas de partes moles, com **sobrevida em 5 anos de cerca de 25%**.
+Ao contrário do ósseo, acomete em geral **adultos acima de 40 anos**, sobretudo nas **partes moles profundas da coxa**; a imagem mostra ossificação **imatura** na massa; o tratamento é multimodal (**ressecção ampla, radioterapia e quimioterapia**); e o prognóstico é **pior** que o do osteossarcoma do osso e o de outros sarcomas de partes moles, com **sobrevida em 5 anos de cerca de 25%**. O Dahlin (cap. 11, p. 122) concorda: os extraesqueléticos ocorrem em **adultos mais velhos**, são quase sempre de **alto grau** e têm prognóstico ruim.
 
 A combinação "acima de 40 anos, com prognóstico pior que o intraósseo" é a resposta, e a armadilha é transferir para o extraesquelético a faixa etária jovem do ósseo.
 
@@ -457,7 +462,7 @@ As drogas-padrão são **metotrexato em alta dose, doxorrubicina e cisplatina** 
 
 ## A necrose como termômetro
 
-A resposta histológica do tumor primário à neoadjuvante é um bom preditor de sobrevida a longo prazo, e **necrose maior que 90% indica prognóstico muito bom** (Campbell, p. 975; Tachdjian, p. 1057). Trocar ou intensificar a quimioterapia nos maus respondedores não melhorou o resultado até agora: o EURAMOS-1, que acrescentou ifosfamida e etoposido no pós-operatório, não mostrou vantagem (Tachdjian, p. 1057).
+A resposta histológica do tumor primário à neoadjuvante é um bom preditor de sobrevida a longo prazo, e **necrose maior que 90% indica prognóstico muito bom** (Campbell, p. 975; Tachdjian, p. 1057). O Dahlin (cap. 11, p. 154) vai além e afirma que hoje é geralmente aceito que a **resposta à quimioterapia é o critério prognóstico isolado mais importante** do osteossarcoma. Trocar ou intensificar a quimioterapia nos maus respondedores não melhorou o resultado até agora: o EURAMOS-1, que acrescentou ifosfamida e etoposido no pós-operatório, não mostrou vantagem (Tachdjian, p. 1057).
 
 A classificação de HUVOS, cobrada pelas bancas, gradua essa necrose na peça operada; os livros conferidos não descrevem os graus, mas dão o que sustenta a resposta: a necrose é medida na peça ressecada **após a quimioterapia pré-operatória**, e o corte que separa os bons respondedores é **90%**.
 
@@ -539,12 +544,14 @@ alerta: Nenhum dos livros enuncia a regra textualmente; o Tachdjian (Fig. 26.7, 
 
 Com quimioterapia múltipla e cirurgia adequada, a sobrevida longa é de **60% a 75%** no alto grau sem metástase e de **90%** no baixo grau (Campbell, p. 975). Os fatores, em ordem de importância:
 
-1. **Presença e localização das metástases**, o fator mais importante ao diagnóstico. Cerca de **15%** têm metástase pulmonar detectável, com **menos de 20%** de sobrevida longa (mais de 50% se uma ou poucas ressecáveis). As **não pulmonares, como as ósseas, são ainda piores: menos de 5%**. As **skip** (no mesmo osso ou do outro lado da articulação) têm o **mesmo mau prognóstico das metástases a distância**.
+1. **Presença e localização das metástases**, o fator mais importante ao diagnóstico. Cerca de **15%** têm metástase pulmonar detectável, com **menos de 20%** de sobrevida longa (mais de 50% se uma ou poucas ressecáveis). As **não pulmonares, como as ósseas, são ainda piores: menos de 5%**. As **skip** (no mesmo osso ou do outro lado da articulação) têm o **mesmo mau prognóstico das metástases a distância**; o Dahlin (cap. 11, p. 131) lembra que áreas de skip na medular são **extremamente raras** e que a imagem moderna dificilmente as deixa passar.
 2. **Grau:** o baixo grau raramente metastatiza.
 3. **Tamanho:** tumores grandes vão pior.
 4. **Localização:** proximal pior que distal, em parte porque os proximais são maiores.
 
 **PAGET** tem menos de 15% de sobrevida longa, o pior subtipo; o pós-radiação, se na extremidade, pode ter o prognóstico do alto grau comum. **Idade e sexo** não têm valor prognóstico. Somam-se a **resposta à quimioterapia** (necrose > 90%) e a **LDH elevada** (Tachdjian, p. 1054).
+
+Os livros divergem sobre qual fator vem primeiro. O Campbell (p. 975) coloca a **presença e o local das metástases ao diagnóstico** como o fator mais importante; o Dahlin (cap. 11, p. 154) diz que hoje se aceita a **resposta à quimioterapia** como o critério prognóstico isolado mais importante. As duas ideias convivem: a metástase é o fator que se conhece no diagnóstico, e a necrose é o que se mede depois da neoadjuvante, no paciente sem metástase.
 
 O Tachdjian (p. 1050 e 1061) concorda: **pulmão primeiro, osso depois**; metástase óssea tem prognóstico sombrio, e skip se compara à metástase pulmonar.
 
@@ -558,7 +565,7 @@ Cerca de **50%** dos alto grau recidivam e cerca de **10%** recidivam localmente
 | grau | baixo: 90% | alto |
 | tamanho e local | pequeno, distal | grande, proximal |
 | tipo | baixo grau de superfície | secundário a PAGET (< 15%) |
-| necrose após neoadjuvante | > 90% | < 90% |
+| necrose após neoadjuvante (o mais importante no Dahlin, p. 154) | > 90% | < 90% |
 | LDH | normal | elevada |
 | idade e sexo | sem valor prognóstico | sem valor prognóstico |
 !fim

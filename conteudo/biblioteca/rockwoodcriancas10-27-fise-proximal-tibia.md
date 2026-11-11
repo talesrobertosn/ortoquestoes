@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-27-fise-proximal-tibia
-versao: 2
+versao: 3
 titulo: Fratura da fise proximal e da tuberosidade da tíbia na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 27 · Proximal Tibial Physeal Fractures (com a fratura metafisária do capítulo 29)
 autores: Benjamin J. Shore e Eric W. Edmonds
-fonte: Livro conferido localmente em 26/10/2026 e relido inteiro em 31/10/2026, capítulo 27 (PDF 2643 a 2695), com a seção da fratura metafisária proximal e do valgo de COZEN do capítulo 29 e os dados de crescimento do capítulo 26. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
+fonte: Livro conferido localmente em 26/10/2026 e relido inteiro em 31/10/2026, capítulo 27 (PDF 2643 a 2695), com a seção da fratura metafisária proximal e do valgo de COZEN do capítulo 29 e os dados de crescimento do capítulo 26; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 34, p. 1808 (complicações da fratura da tuberosidade). O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela.
 subtemas: Fraturas do fêmur e da perna na criança; Outras fraturas na criança; Lesões fisárias; Joelho da criança
 resumo: Fise estável pelos contrafortes (colateral medial na metáfise, fíbula); tíbia proximal cresce 6 mm por ano e fecha de posterior para anterior; tuberosidade = menino adolescente que salta, acima de 30 graus leva a epífise; OGDEN modificada em cinco tipos (III intra-articular, IV fise inteira, V só tendão); MUBARAK: metafisária aos 4 anos, intra-articular aos 15; hiperextensão e poplítea, tuberosidade e recorrente tibial anterior; internar sempre; cirurgia com desvio acima de 2 a 3 mm; complicação mais comum = material; deformidade fisária = recurvato; metafisária de 3 a 6 anos = valgo de COZEN, que aparece em 6 meses, piora até 18 a 24 e corrige sozinho.
 ---
@@ -238,11 +238,13 @@ armadilha: Trocar os vasos das duas lesões.
 
 A fasciotomia profilática do compartimento anterior chegou a ser descrita na redução aberta da tuberosidade. A 10ª edição diz que ela parece **desnecessária** na maioria e ficaria para os tipos **IV ou V** de OGDEN com a **cortical posterior rompida**. Séries recentes não encontraram síndrome compartimental após fratura da tuberosidade: **0%** na revisão de 336 fraturas; numa série de 49 tipos I a III, 13 fasciotomias profiláticas e nenhum caso; **0,4%** (1 em 241) numa série populacional de Helsinque. O capítulo sugere que a preocupação talvez seja maior do que os dados sustentam. A vigilância continua obrigatória, e a via de acesso pode ser estendida para soltar a fáscia da face lateral da tíbia quando necessário.
 
+O Lovell and Winter 7ª ed. (cap. 34, p. 1808) mantém a visão mais antiga: vários autores relataram síndrome compartimental aguda da perna após a avulsão da tuberosidade, porque a tuberosidade fica junto da fáscia do compartimento anterior e o sangue da fratura entra nele. PAPE e colaboradores observaram que ela talvez seja **mais frequente** nos casos tratados por **redução fechada ou por métodos percutâneos**; BOLESTA e FITCH faziam fasciotomia profilática quando havia aumento de volume do compartimento anterior. É a leitura que sustenta o gabarito do TEOT 2025.
+
 !questoes relacionadas=pediatria-0918 treino=pediatria-1120
 conceito: A fasciotomia profilática na tuberosidade parece desnecessária; considerar só nos tipos IV ou V com cortical posterior rompida.
 como: O TEOT 2025 perguntou a complicação mais comum após redução fechada e fixação percutânea da tuberosidade; o resto é projeção com a posição atualizada da 10ª edição.
 armadilha: Fasciotomia em todos os casos.
-alerta: O TEOT 2025 (`pediatria-0918`) dá a síndrome compartimental como a complicação mais comum após redução fechada e fixação percutânea da tuberosidade. Na revisão sistemática citada pelo capítulo, a síndrome compartimental foi 0%, e a complicação mais comum foi a irritação pelo material. O gabarito oficial é mantido; a divergência fica registrada.
+alerta: O TEOT 2025 (`pediatria-0918`) dá a síndrome compartimental como a complicação mais comum após redução fechada e fixação percutânea da tuberosidade. Na revisão sistemática citada pelo capítulo, a síndrome compartimental foi 0%, e a complicação mais comum foi a irritação pelo material. O gabarito oficial é mantido e tem apoio no Lovell and Winter 7ª ed. (cap. 34, p. 1808: PAPE viu síndrome compartimental mais frequente após redução fechada ou percutânea); a divergência com a revisão do Rockwood fica registrada.
 !fim
 
 # Diagnóstico e imagem {radar=clinico}

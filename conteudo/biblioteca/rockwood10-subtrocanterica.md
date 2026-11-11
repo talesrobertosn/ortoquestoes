@@ -1,6 +1,6 @@
 ---
 id: rockwood10-subtrocanterica
-versao: 1
+versao: 2
 titulo: Fratura subtrocantérica do fêmur
 especialidade: trauma
 acesso: gratis
@@ -109,7 +109,7 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 55, PDF 2743, Fig. 55
 
 O Skeletal Trauma, 5ª ed. (cap. 57, p. 1737), explica o mesmo pelo eixo: o **eixo mecânico passa medial ao anatômico** na região subtrocantérica, então a carga axial gera **compressão medial e tração lateral**, o que explica a cominuição medial e as cunhas. Daí a vantagem da haste: ela fica **no centro do osso**, perto do eixo mecânico, enquanto a placa lateral fica **excêntrica**, com menor rigidez à flexão.
 
-!tabela Haste e placa na biomecânica (Rockwood and Green 10, cap. 55, PDF 2743 e 2747; Skeletal Trauma 5, cap. 57, p. 1737 e 1738; Campbell 15, cap. 60, p. 2670 aprox.)
+!tabela Haste e placa na biomecânica (Rockwood and Green 10, cap. 55, PDF 2743 e 2747; Skeletal Trauma 5, cap. 57, p. 1737 e 1738; Campbell 15, cap. 60, p. 2671)
 | Aspecto | Haste intramedular | Placa lateral |
 | --- | --- | --- |
 | posição em relação ao eixo mecânico | central, próxima do eixo | excêntrica, lateral |
@@ -121,9 +121,11 @@ O Skeletal Trauma, 5ª ed. (cap. 57, p. 1737), explica o mesmo pelo eixo: o **ei
 | torção | menos rígida | mais rígida; lâmina 95° com a melhor estabilidade torsional entre as placas |
 !fim
 
-O ponto que a banca transforma em questão é o **braço de alavanca**. A força que tenta fletir o implante age a partir da cabeça femoral; quanto mais longe do centro do osso estiver o implante, maior o momento fletor sobre ele. A placa, presa na face lateral, fica longe; a haste, dentro do canal, fica perto. O Rockwood and Green (PDF 2747) diz que, **pelo braço de alavanca menor e pelo compartilhamento de carga**, as hastes são o implante preferido na maioria dos casos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2670 aprox.), lista as vantagens teóricas do implante intramedular sobre o parafuso com placa lateral: **braço de alavanca encurtado**, menos sangramento, incisões menores e menos encurtamento do colo.
+O ponto que a banca transforma em questão é o **braço de alavanca**. A força que tenta fletir o implante age a partir da cabeça femoral; quanto mais longe do centro do osso estiver o implante, maior o momento fletor sobre ele. A placa, presa na face lateral, fica longe; a haste, dentro do canal, fica perto. O Rockwood and Green (PDF 2747) diz que, **pelo braço de alavanca menor e pelo compartilhamento de carga**, as hastes são o implante preferido na maioria dos casos. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2671), lista as vantagens teóricas do implante intramedular sobre o parafuso com placa lateral: **braço de alavanca encurtado**, menos sangramento, incisões menores e menos encurtamento do colo.
 
 No mesmo trecho, o Rockwood and Green cita o estudo cadavérico que comparou **haste cefalomedular, placa bloqueada femoral proximal e lâmina angulada de 95°** num modelo subtrocantérico: a haste teve **menos colapso em varo**, **maior carga até a falha**, **mais ciclos até a falha** e **maior força na falha**.
+
+Para não confundir os nomes das hastes que aparecem nas alternativas, o Campbell's Operative Orthopaedics, 15ª ed. (cap. 58, p. 2549.e1) define os três tipos pela via de inserção. A **centromedular** entra pelo canal medular e toca o osso em vários pontos, contando com esse contato longitudinal para a estabilidade axial e rotacional (exemplos: a haste em trevo de KÜNTSCHER e a de SAMPSON). A **condilocefálica** é inserida nos côndilos da metáfise, atravessa o foco e chega à região metaepifisária oposta; são hastes finas, colocadas em grupos de duas a quatro, e as de ENDER, o exemplo clássico, foram abandonadas pelos relatos de instabilidade da fratura. A **cefalomedular** fixa do canal medular até a cabeça femoral (exemplos: a haste em Y de KÜNTSCHER e a haste subtrocantérica de ZICKEL). As três ficam dentro do osso, perto do eixo, ao contrário da placa lateral.
 
 !questoes central=trauma-0424 relacionadas=trauma-1134
 conceito: A haste cefalomedular fica perto do eixo mecânico: braço de alavanca menor, compartilhamento de carga e menos colapso em varo que a placa com parafuso deslizante.
@@ -164,13 +166,30 @@ alerta: A `trauma-1147` está sem gabarito oficial. Os livros não ordenam gravi
 
 ## SEINSHEIMER
 
-O Skeletal Trauma, 5ª ed. (cap. 57, p. 1741), resume a SEINSHEIMER numa frase: ela agrupa as fraturas pelas **fragmentações e configurações mais comuns**, pelo **número de segmentos**, identificando o **trocânter menor e o trocânter maior como fragmentos separados**. Nenhum dos livros lidos detalha os tipos. O Rockwood and Green cita SEINSHEIMER apenas pela série com tração (veja o tratamento não operatório). Como o eixo da classificação é o número de fragmentos, o tipo mais alto corresponde à fratura mais fragmentada.
+O Skeletal Trauma, 5ª ed. (cap. 57, p. 1741), resume a SEINSHEIMER numa frase: ela agrupa as fraturas pelas **fragmentações e configurações mais comuns**, pelo **número de segmentos**, identificando o **trocânter menor e o trocânter maior como fragmentos separados**. Nenhum dos livros lidos detalha os tipos, e o Rockwood and Green cita SEINSHEIMER apenas pela série com tração (veja o tratamento não operatório). A classificação completa vem de fora da bibliografia do site: o artigo original (SEINSHEIMER F, Subtrochanteric fractures of the femur, J Bone Joint Surg Am, 1978; PubMed 649632) e a revisão de RIZKALLA, NIMMONS e JONES (Clin Orthop Relat Res, 2019; texto aberto no PMC, PMC6345285), que transcreve os tipos. O raciocínio é contar as partes e, nas de duas e três partes, olhar o traço e o destino do trocânter menor.
+
+!tabela SEINSHEIMER da fratura subtrocantérica (SEINSHEIMER, J Bone Joint Surg Am, 1978; RIZKALLA, NIMMONS e JONES, Clin Orthop Relat Res, 2019)
+| Tipo | O que é |
+| --- | --- |
+| I | sem desvio ou com desvio menor que 2 mm |
+| IIA | duas partes, traço transverso |
+| IIB | duas partes, espiral, trocânter menor preso ao fragmento proximal |
+| IIC | duas partes, espiral, trocânter menor preso ao fragmento distal |
+| IIIA | três partes, espiral, com o trocânter menor como terceiro fragmento, levando uma ponta de cortical inferior |
+| IIIB | três partes, espiral no terço proximal do fêmur, com o terceiro fragmento em asa de borboleta |
+| IV | cominutiva, com quatro ou mais fragmentos |
+| V | qualquer subtrocantérica que se estende pelo trocânter maior |
+!fim
+
+Na série original, de 56 pacientes, 47 fraturas foram fixadas internamente, com nove falhas de fixação, e a espiral de três partes respondeu por oito delas; RIZKALLA e colaboradores apontam o **IIIA**, em que o trocânter menor sai com a cortical medial, como o subtipo de maior falha, o mesmo apoio posteromedial que pesa na RUSSELL-TAYLOR. Os mesmos autores notam que ela pouco orienta o tratamento.
+
+Cuidado com a homônima: SEINSHEIMER também classificou as fraturas do **fêmur distal** em quatro tipos (Skeletal Trauma, 5ª ed., cap. 59, p. 1826): **I**, sem desvio; **II**, supracondiliana sem acometer a superfície articular; **III**, envolvendo o intercôndilo com um ou os dois côndilos separados; **IV**, rompendo a superfície articular de um ou dos dois côndilos. Ali o tipo IV é a fratura articular, e não a cominutiva da subtrocantérica.
 
 !questoes central=trauma-0813
 conceito: SEINSHEIMER classifica pelo número de segmentos e trata os trocânteres como fragmentos separados; quanto mais fragmentos, mais alto o tipo.
 como: O TARO 2012 perguntou qual tipo de SEINSHEIMER corresponde à fratura com mais de quatro fragmentos.
 armadilha: Escolher um subtipo III, que é de três partes.
-alerta: Os livros lidos (Rockwood and Green 10, Campbell 15, Skeletal Trauma 5) não detalham os tipos de SEINSHEIMER; o Skeletal Trauma só diz que ela se baseia no número de segmentos. Gabarito oficial (D, tipo IV) mantido.
+alerta: Os livros lidos (Rockwood and Green 10, Campbell 15, Skeletal Trauma 5) não detalham os tipos de SEINSHEIMER da subtrocantérica; o Skeletal Trauma (p. 1741) só diz que ela se baseia no número de segmentos. Os tipos vêm de fonte externa à bibliografia do site: SEINSHEIMER, J Bone Joint Surg Am, 1978 (https://pubmed.ncbi.nlm.nih.gov/649632/), e RIZKALLA, NIMMONS e JONES, Clin Orthop Relat Res, 2019 (https://pmc.ncbi.nlm.nih.gov/articles/PMC6345285/), em que o tipo IV é a cominutiva com quatro ou mais fragmentos. Gabarito oficial (D, tipo IV) mantido.
 !fim
 
 ## AO/OTA
@@ -186,7 +205,7 @@ O Rockwood and Green (PDF 2740, Fig. 55-3) apresenta a AO/OTA da região subtroc
 | subtrocantérica (AO/OTA) | oblíqua, transversa ou multifragmentar | haste intramedular |
 !fim
 
-A diretriz da AAOS reproduzida na Tabela 60.1 do Campbell (p. 2664) é direta: para **fraturas subtrocantéricas ou com obliquidade reversa**, **dispositivo cefalomedular**. O mesmo capítulo (p. 2670 aprox.) diz que as instáveis, **A3 e provavelmente muitas A2**, são melhor tratadas com implante intramedular. E há um motivo mecânico extra: a placa com parafuso deslizante depende da **parede lateral** do trocânter, e no A3 ela está fraturada; numa série, **22%** dos pacientes com parede lateral fraturada (A3 ou fratura iatrogênica) foram reoperados em 6 meses, e uma parede com menos de **21 mm** de espessura prediz a fratura dela (Campbell, p. 2669 aprox.). Na obliquidade reversa, o parafuso deslizante desliza paralelo ao traço e deixa a diáfise escapar para medial, que é exatamente o que a haste impede.
+A diretriz da AAOS reproduzida na Tabela 60.1 do Campbell (p. 2664) é direta: para **fraturas subtrocantéricas ou com obliquidade reversa**, **dispositivo cefalomedular**. O mesmo capítulo (p. 2671) diz que as instáveis, **A3 e provavelmente muitas A2**, são melhor tratadas com implante intramedular. E há um motivo mecânico extra: a placa com parafuso deslizante depende da **parede lateral** do trocânter, e no A3 ela está fraturada; numa série, **22%** dos pacientes com parede lateral fraturada (A3 ou fratura iatrogênica) foram reoperados em 6 meses, e uma parede com menos de **21 mm** de espessura prediz a fratura dela (Campbell, p. 2670). Na obliquidade reversa, o parafuso deslizante desliza paralelo ao traço e deixa a diáfise escapar para medial, que é exatamente o que a haste impede.
 
 !questoes central=trauma-0728
 conceito: A 31A3 (obliquidade reversa, transversa ou com extensão subtrocantérica) é instável e vai para implante intramedular cefalomedular, que vence o parafuso deslizante e as placas de 95°.

@@ -1,6 +1,6 @@
 ---
 id: campbell15-halux-valgo
-versao: 1
+versao: 2
 titulo: Hálux valgo
 especialidade: pe-tornozelo
 acesso: gratis
@@ -89,6 +89,8 @@ O Tachdjian não decide quem é primário: aceita que muitos pacientes têm meta
 | Articulação | Superfícies incongruentes; inclinação valga excessiva da cabeça metatarsal e da base da falange |
 | Eminência medial | Hipertrofia (hoje considerada fora da patoanatomia) |
 !fim
+
+O "primeiro raio anormalmente longo" do Box tem nome próprio na fórmula metatarsal, que o HEBERT define pela posição das cabeças no plano frontal (Ortopedia e Traumatologia, 5ª ed., cap. 21.5): **index plus** é o pé em que o **primeiro metatarsal é maior do que os demais**; **index plus-minus**, aquele em que as cabeças do **primeiro e do segundo metatarsais ocupam o mesmo plano frontal**; e **index minus**, aquele em que o **plano da cabeça do primeiro fica posterior ao do segundo**. O mesmo capítulo lembra que o primeiro metatarsal é, entre todos, o mais curto e o mais largo. Na lista do Campbell, portanto, o que se associa ao hálux valgo é o primeiro raio longo (index plus), e não o index minus.
 
 ## Mulheres, homens e família
 
@@ -200,10 +202,12 @@ O Campbell adota o algoritmo de COUGHLIN e ANDERSON (fig. 87.11, p. 3715), repro
 | Articulação congruente | Qualquer | Osteotomia metatarsal distal; AKIN; osteotomia dupla ou tripla do primeiro raio; SCARF; osteotomia minimamente invasiva |
 | Incongruente, leve | IMA abaixo de 13° e HVA abaixo de 30° | CHEVRON (idade abaixo de 60 anos); partes moles distal com ou sem osteotomia proximal; SCARF; minimamente invasiva |
 | Incongruente, moderada | HVA abaixo de 40° (IMA impresso abaixo de 13°) | Partes moles distal com osteotomia proximal; SCARF; minimamente invasiva |
-| Incongruente, grave | IMA abaixo de 20° e HVA abaixo de 40° | Partes moles distal com osteotomia proximal |
+| Incongruente, grave | IMA abaixo de 20° e HVA abaixo de 40° | Partes moles distal com osteotomia proximal; artrodese metatarsofalângica; artrodese da primeira metatarsocuneiforme com partes moles distal |
 | Doença degenerativa | Artrose | Artrodese metatarsofalângica; prótese |
 | Primeira metatarsocuneiforme hipermóvel | Instabilidade | Artrodese da metatarsocuneiforme com partes moles distal |
 !fim
+
+Repare nos ramos de artrodese da figura 87.11 (p. 3715). A **artrodese metatarsofalângica** aparece em dois lugares: na **doença degenerativa** (ao lado da prótese) e no **incongruente grave** (IMA abaixo de 20 graus e HVA abaixo de 40 graus), onde divide o ramo com a osteotomia proximal e partes moles distal. A **artrodese da primeira metatarsocuneiforme com partes moles distal** também aparece duas vezes: no mesmo ramo grave e no ramo próprio da **primeira metatarsocuneiforme hipermóvel**.
 
 Em outras palavras: num hálux valgo **congruente com HVA de 22 graus**, a articulação já está bem encaixada; quem precisa mudar é o osso. A resposta é uma **osteotomia** (no algoritmo, a distal do primeiro metatarso aparece em primeiro lugar, e o AKIN entra como complemento); artrodese é para artrose e ressecção da base da falange é para idoso de baixa demanda.
 
@@ -262,7 +266,7 @@ alerta: `pe-tornozelo-0330` está sem gabarito oficial; o Campbell (p. 3726) sus
 
 O CHEVRON foi descrito por CORLESS em 1976 como **modificação do MITCHELL** para o joanete com metatarso primo varo leve a moderado, com bons resultados em **85% a 95%** (p. 3727). A indicação clássica do Campbell é precisa: **pacientes com menos de 50 anos, HVA abaixo de 40 graus e IMA abaixo de 15 graus**, embora haja bons resultados também a partir dos 50 (p. 3727). No algoritmo, ele aparece no incongruente leve com o limite de **60 anos**. Suas vantagens sobre o MITCHELL: corte em **osso esponjoso**, **menos encurtamento** e **estabilidade intrínseca** do V (p. 3727). O limite: **se o HVA passa de 35 graus, o hálux costuma estar pronado e não se corrige só com capsulorrafia ou osteotomia**, sobretudo com IMA acima de 12 graus (p. 3727).
 
-Os números da técnica caem em prova. Os dois braços ficam a cerca de 30 graus do eixo, com **60 a 70 graus entre eles**; a translação lateral é de **4 a 5 mm, sem passar de 40% a 50% da largura** do metatarso (p. 3728). E a regra de ouro: **cerca de 1 mm de translação lateral corrige cerca de 1 grau de IMA** (p. 3735). Por isso as osteotomias distais têm teto: a translação segura é limitada pela largura do metatarso. Para ultrapassar esse teto, MURAWSKI e BESKIN descreveram **translação acima de 6 mm ou acima de 50%** em deformidades moderadas a graves com IMA até 18 graus, à custa de mais risco de hálux varo (p. 3735). JOHNSON modificou os braços e levou a indicação até IMA de 15 ou 16 graus, mas **não recomendava acima de 60 anos**, após cirurgia prévia ou com articulação rígida e crepitante (p. 3734). O CHEVRON extracapsular modificado, com ápice mais proximal, é hoje o "cavalo de batalha" do autor para o leve a moderado e serve até cerca de **35 graus de HVA e 15 graus de IMA**, com fixação obrigatória (p. 3727 a 3729).
+Os números da técnica caem em prova. Os dois braços ficam a cerca de 30 graus do eixo, com **60 a 70 graus entre eles**; a translação lateral é de **4 a 5 mm, sem passar de 40% a 50% da largura** do metatarso (p. 3728). O HEBERT descreve o V com **abertura de 60 graus e ápice distal centrado na cabeça**, e dá o teto da forma clássica por sexo: translação lateral da cabeça de **até 6 mm nos homens e 5 mm nas mulheres** (Ortopedia e Traumatologia, 5ª ed., cap. 21.3, Fig. 21.3.12). Para a prova: 4 a 5 mm no Campbell; até 6 mm no homem e 5 mm na mulher no HEBERT. E a regra de ouro: **cerca de 1 mm de translação lateral corrige cerca de 1 grau de IMA** (p. 3735). Por isso as osteotomias distais têm teto: a translação segura é limitada pela largura do metatarso. Para ultrapassar esse teto, MURAWSKI e BESKIN descreveram **translação acima de 6 mm ou acima de 50%** em deformidades moderadas a graves com IMA até 18 graus, à custa de mais risco de hálux varo (p. 3735). JOHNSON modificou os braços e levou a indicação até IMA de 15 ou 16 graus, mas **não recomendava acima de 60 anos**, após cirurgia prévia ou com articulação rígida e crepitante (p. 3734). O CHEVRON extracapsular modificado, com ápice mais proximal, é hoje o "cavalo de batalha" do autor para o leve a moderado e serve até cerca de **35 graus de HVA e 15 graus de IMA**, com fixação obrigatória (p. 3727 a 3729).
 
 A circulação da cabeça é o ponto sensível. O autor manda **não descolar a cápsula dorsolateral e lateral** da cabeça e do colo (p. 3728), e a seção de complicações mostra que **o canto plantar e lateral do colo é a principal porta de entrada vascular**, de modo que o braço plantar longo deve sair bem proximal à inserção capsular (p. 3774).
 
@@ -270,7 +274,7 @@ A circulação da cabeça é o ponto sensível. O autor manda **não descolar a 
 | Técnica | Corte e gesto | Indicação no livro | Ponto de prova |
 |---|---|---|---|
 | MITCHELL | Distal na diáfise, desvio lateral e angulação | Hoje raramente usada | Metatarsalgia por dorsiflexão ou encurtamento |
-| CHEVRON clássico | V intracapsular na cabeça, braços a 60 a 70° | Abaixo de 50 anos, HVA abaixo de 40°, IMA abaixo de 15° | 1 mm de translação = 1° de IMA; 4 a 5 mm, até 40 a 50% da largura |
+| CHEVRON clássico | V intracapsular na cabeça, braços a 60 a 70° | Abaixo de 50 anos, HVA abaixo de 40°, IMA abaixo de 15° | 1 mm de translação = 1° de IMA; 4 a 5 mm, até 40 a 50% da largura (HEBERT: até 6 mm no homem e 5 mm na mulher) |
 | CHEVRON modificado (extracapsular) | Ápice mais proximal, fixação obrigatória | Leve a moderado, até HVA 35° e IMA 15° | Cavalo de batalha do autor; AKIN só ajuda se a MTF ficou congruente |
 | JOHNSON | Braços modificados, parafuso 2,7 mm | IMA até 15 ou 16° | Não acima de 60 anos nem após cirurgia prévia |
 | MURAWSKI e BESKIN | Translação acima de 6 mm ou 50% | Moderado a grave com IMA até 18° | Mais hálux varo |
@@ -299,7 +303,7 @@ alerta: `pe-tornozelo-0338` está sem gabarito oficial; o Campbell (p. 3722 e 37
 
 # Osteotomias proximais e diafisárias: crescente, LUDLOFF e SCARF {radar=confirmado}
 
-Se o varo do primeiro metatarso contribui para a deformidade, faz sentido **corrigir perto da origem**: um pequeno desvio na base produz grande melhora na ponta, estreita o antepé e tira a pressão do joanete (p. 3742). A indicação do Campbell: paciente **sem artrose significativa, com HVA acima de 35 graus e IMA acima de 10 graus** (ou IMA entre o primeiro e o quinto de 30 graus ou mais com HVA de 35 ou mais) se beneficia de **osteotomia proximal com partes moles distal**; deformidades com **IMA de 13 graus ou menos e HVA de 30 ou menos** se resolvem com procedimento menos exigente (p. 3742). As mais usadas são a **crescente, o CHEVRON proximal, o LUDLOFF e o SCARF**, e a técnica específica importa menos que o cuidado: o fragmento distal não pode inclinar para dorsal; e, **se os sesamoides não voltarem às facetas, o varo e o valgo recidivam qualquer que seja a correção óssea** (p. 3742).
+Se o varo do primeiro metatarso contribui para a deformidade, faz sentido **corrigir perto da origem**: um pequeno desvio na base produz grande melhora na ponta, estreita o antepé e tira a pressão do joanete (p. 3742). A indicação do Campbell: paciente **sem artrose significativa, com HVA acima de 35 graus e IMA acima de 10 graus** (ou IMA entre o primeiro e o quinto de 30 graus ou mais com HVA de 35 ou mais) se beneficia de **osteotomia proximal com partes moles distal**; deformidades com **IMA de 13 graus ou menos e HVA de 30 ou menos** se resolvem com procedimento menos exigente (p. 3742). Repare na redação da mesma frase: no critério principal o livro escreve **"more than 35 degrees"** (mais de 35) para o HVA, e no critério alternativo, junto do IMA entre o primeiro e o quinto metatarsos, usa o sinal de **"35 ou mais"** (p. 3742). Um HVA de exatamente 35 graus fica, a rigor, no limite do primeiro critério e dentro do segundo. As mais usadas são a **crescente, o CHEVRON proximal, o LUDLOFF e o SCARF**, e a técnica específica importa menos que o cuidado: o fragmento distal não pode inclinar para dorsal; e, **se os sesamoides não voltarem às facetas, o varo e o valgo recidivam qualquer que seja a correção óssea** (p. 3742).
 
 A **crescente proximal com partes moles distal** (MANN, RUDICEL e GRAVES) teve 93% de satisfação e corrige **IMA de 20 a 25 graus e HVA de 40 a 50 graus**; não se recomenda com **DMAA acima de 15 graus** nem com artrose moderada a grave (p. 3743). Suas complicações maiores são o **hálux varo, a consolidação em dorsiflexão com metatarsalgia de transferência e a limitação da metatarsofalângica** (p. 3744). O **LUDLOFF** é um corte oblíquo único de dorsal e proximal para plantar e distal; abandonado pela instabilidade, voltou com o parafuso de compressão, mais rígido que a crescente, com correção semelhante e menos elevação e encurtamento (p. 3753).
 
@@ -320,6 +324,7 @@ A complicação típica do SCARF é o **troughing**, o "desmoronamento" ou encai
 conceito: A osteotomia na base do primeiro metatarso entra quando o HVA passa de 35° e o IMA de 10°, sem artrose.
 como: A SBOT-SP perguntou em que situação a osteotomia da base é o método de escolha (HVA de 35°).
 armadilha: IMA de 8° é normal; artrose pede artrodese; o ângulo entre primeiro e quinto metatarsos só entra com 30° ou mais.
+alerta: Na p. 3742 o Campbell escreve "more than 35 degrees" para o HVA no critério principal e "35 ou mais" no critério alternativo (com IMA entre o primeiro e o quinto de 30 ou mais); a alternativa com 35° é a única compatível com a indicação, e o gabarito oficial (C) é mantido.
 !fim
 
 !questoes central=pe-tornozelo-0178 relacionadas=pe-tornozelo-0218
@@ -343,7 +348,7 @@ alerta: O Campbell descreve o parafuso de compressão seguido da placa bloqueada
 
 # Artrodese metatarsofalângica no hálux valgo {radar=fundamento}
 
-Em pacientes bem selecionados, a **artrodese metatarsofalângica é a operação mais apropriada** (p. 3760). Ela sozinha reduz o IMA em **4 a 5 graus** em média (MANN e KATCHURIAN), por isso a osteotomia proximal associada só é necessária nas deformidades mais graves (p. 3760). Suas indicações (p. 3761 e 3762): **deformidade grave** (IMA acima de 20 a 22 graus, HVA acima de 45 graus e pronação grave), sobretudo com calo sob o segundo e o terceiro metatarsos; **artrose com hálux valgo**; **recidiva**; **hálux valgo neuromuscular** (paralisia cerebral); **pós-traumático** com destruição capsular medial; e **artrite reumatoide**. Abaixo de 55 a 60 anos, é preferida à ressecção. A técnica é a mesma do hálux rígido (veja abaixo).
+Em pacientes bem selecionados, a **artrodese metatarsofalângica é a operação mais apropriada** (p. 3760). Ela sozinha reduz o IMA em **4 a 5 graus** em média (MANN e KATCHURIAN), por isso a osteotomia proximal associada só é necessária nas deformidades mais graves (p. 3760). Suas indicações (p. 3761 e 3762): **deformidade grave** (IMA acima de 20 a 22 graus, HVA acima de 45 graus e pronação grave), sobretudo com calo sob o segundo e o terceiro metatarsos; **artrose com hálux valgo**; **recidiva**; **hálux valgo neuromuscular** (paralisia cerebral); **pós-traumático** com destruição capsular medial; e **artrite reumatoide**. Abaixo de 55 a 60 anos, é preferida à ressecção. A técnica é a mesma do hálux rígido (veja abaixo). O HEBERT descreve as mesmas indicações (deformidade grave com degeneração articular intensa, artrite reumatoide ou pós-traumática, distúrbios neuromusculares e recidivas) e resolve a fixação: entre fios de Kirschner, parafusos e placas, **a associação de um parafuso de compressão com uma placa de neutralização dorsal** é biomecanicamente superior em cadáver e dá resultados clínicos melhores (Ortopedia e Traumatologia, 5ª ed., cap. 21.3, Fig. 21.3.15).
 
 # Situações especiais e o hálux valgo juvenil {radar=clinico}
 
@@ -368,7 +373,7 @@ O Campbell lista recidiva, hálux varo, consolidação viciosa, hálux em garra 
 
 Outras complicações: o **ramo do fibular superficial para o dorsomedial do hálux** é o nervo mais vulnerável (p. 3768); o encurtamento médio é de **2 a 6 mm** nas distais e cerca de **3 mm** nas proximais, e a transferência de carga pede um procedimento que alongue, abaixe ou estabilize o primeiro metatarso (p. 3768); a **osteonecrose** da cabeça é risco da osteotomia distal com liberação lateral, provavelmente menos temível do que se pensava (p. 3774).
 
-O **hálux varo iatrogênico** foi notado por McBRIDE em **5%** dos seus casos, e hoje vai de **2% a 17%** após quase todas as cirurgias (p. 3776). As causas (p. 3776 e 3777): **liberação lateral completa com plicatura medial excessiva**, **ressecção excessiva da eminência medial** (perde o contraforte; deve-se ressecar medial ao sulco sagital), **excisão do sesamoide fibular**, **liberação da cabeça lateral do flexor curto** e **IMA fechado a zero ou negativo**. HAWKINS separou o **estático** (flexível, uniplanar, por ressecção ou osteotomia agressiva) do **dinâmico** (multiplanar, rígido, por perda dos intrínsecos, com metatarsofalângica estendida e interfalângica fletida); o autor prefere **flexível ou rígido** (p. 3778). O flexível precoce se trata com enfaixamento em 10 a 15 graus de valgo; o rígido, com artrodese ou ressecção (p. 3778 e 3784).
+O **hálux varo iatrogênico** foi notado por McBRIDE em **5%** dos seus casos, e hoje vai de **2% a 17%** após quase todas as cirurgias (p. 3776). As causas (p. 3776 e 3777): **liberação lateral completa com plicatura medial excessiva**, **ressecção excessiva da eminência medial** (perde o contraforte; deve-se ressecar medial ao sulco sagital), **excisão do sesamoide fibular**, **liberação da cabeça lateral do flexor curto** e **IMA fechado a zero ou negativo**. A referência que explica essa última causa: **normalmente o hálux repousa sobre a cabeça do primeiro metatarso em cerca de 10 graus de valgo**; se o IMA é reduzido a menos de 5 graus e o hálux fica congruente, a angulação em valgo necessária para evitar o varo passa a ser de 15 graus (5 graus de varo do IMA mais 10 graus de valgo do DMAA) (p. 3777 e 3778). HAWKINS separou o **estático** (flexível, uniplanar, por ressecção ou osteotomia agressiva) do **dinâmico** (multiplanar, rígido, por perda dos intrínsecos, com metatarsofalângica estendida e interfalângica fletida); o autor prefere **flexível ou rígido** (p. 3778). O flexível precoce se trata com enfaixamento em 10 a 15 graus de valgo; o rígido, com artrodese ou ressecção (p. 3778 e 3784).
 
 !questoes central=pe-tornozelo-0205
 conceito: A recidiva é a complicação mais comum da cirurgia do hálux valgo; pronação, sesamoides luxados, DMAA não corrigido e partes moles isoladas são os grandes fatores.

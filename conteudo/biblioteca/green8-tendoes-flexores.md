@@ -1,6 +1,6 @@
 ---
 id: green8-tendoes-flexores
-versao: 2
+versao: 3
 titulo: Lesões dos tendões flexores
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Green's Operative Hand Surgery
 edicao: 8ª edição, ampliado com o Green's Operative Hand Surgery, 7ª ed., e o Campbell's Operative Orthopaedics, 15ª ed.
 capitulo: Capítulo 6 · Lesão do tendão flexor
 autores: John Gray Seiler III
-fonte: Livro conferido localmente em 31/10/2026 (tradução), capítulo 6, sobretudo anatomia da bainha, nutrição, vínculos e polias, avulsão do profundo, técnica de reparo, cicatrização e reabilitação, e reconstrução com enxerto. Sem página impressa no texto extraído. Ampliado em 01/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 6 (lido por inteiro), e o Campbell's Operative Orthopaedics, 15ª ed., cap. 71.
+fonte: Livro conferido localmente em 31/10/2026 (tradução), capítulo 6, sobretudo anatomia da bainha, nutrição, vínculos e polias, avulsão do profundo, técnica de reparo, cicatrização e reabilitação, e reconstrução com enxerto. Sem página impressa no texto extraído. Ampliado em 01/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 6 (lido por inteiro), e o Campbell's Operative Orthopaedics, 15ª ed., cap. 71. Corrigido em 11/11/2026 com o Green's Operative Hand Surgery, 7ª ed., cap. 2 (espaço de PARONA, p. 29 e 33) e cap. 6 (p. 185, 189, 194 e 195), e o Campbell, 15ª ed., cap. 71 (p. 3143, 3146 e 3167).
 subtemas: Lesões dos tendões flexores
 resumo: Nutrição dupla (perfusão e difusão sinovial) e face palmar avascular; vínculos curtos e longos; polias anulares e cruciformes, com A2 e A4 indispensáveis; LEDDY e PACKER (tipo I na palma, sem vínculos, urgente); sutura central e epitendínea, lacerações parciais e a regra de 1 cm na zona 1; aderências, excursão e cicatrização intrínseca; enxertos (palmar longo, plantar), PULVERTAFT, quadriga, BOYES e PANEVA-HOLEVICH.
 ---
@@ -59,10 +59,10 @@ armadilha: Confundir o tipo I com o II, em que o vínculo longo segura o coto na
 - **Aderências** com rigidez: complicação **mais comum**; previnem-se com **excursão** na reabilitação. A área até **1 cm** do reparo é a mais ativa. **LUNDBORG**: cicatrização **intrínseca**. Reparo forte permite **carga precoce**.
 
 !questoes central=mao-0091 relacionadas=mao-0002,mao-0152,mao-0135,mao-0402,mao-0541,mao-0229 treino=mao-2594,mao-2595
-conceito: A tensão cíclica estimula a cicatrização intrínseca e a mobilização evita as aderências; a epitendínea reforça a central.
+conceito: A mobilização evita as aderências gerando excursão; a tensão cíclica estimula a cicatrização intrínseca em experimentos (Campbell, p. 3143), mas aumentar a força aplicada não acelera o ganho de resistência (Green, p. 189 e 195, BOYER); a epitendínea reforça a central.
 como: Uma prova de Ortopedia perguntou o papel da tensão e da mobilização e o prazo de reparo na zona V; o TARO 2020, o ganho de força da epitendínea; o TEOT 2023, a sutura na zona 1; a SBOT-SP e outra prova, as técnicas de sutura em imagem; outra prova, o coto do flexor longo do polegar.
 armadilha: Achar que a imobilização protege o reparo sem custo.
-alerta: O texto extraído não dá a porcentagem de ganho da sutura epitendínea (`mao-0002`), o prazo da zona V (`mao-0135`) nem a posição do coto do flexor longo do polegar (`mao-0229`); os gabaritos oficiais foram preservados.
+alerta: O prazo da zona V (`mao-0135`) está em "O momento do reparo" (Campbell's Operative Orthopaedics, 15ª ed., p. 3166) e o coto do flexor longo do polegar (`mao-0229`) em "A zona 2, as zonas proximais e o polegar" (Green's Operative Hand Surgery, 7ª ed., p. 190; Campbell, p. 3165). Para a epitendínea (`mao-0002`), o Green não dá número e o Campbell dá 50% da carga de falha e 22% a mais com o epitendão primeiro (p. 3147) e 117% com o cross-stitch (p. 3146); os gabaritos oficiais foram preservados.
 !fim
 
 # A reconstrução {radar=confirmado}
@@ -112,6 +112,8 @@ alerta: O acervo não registra o gabarito oficial de `mao-0634`; o Green's Opera
 
 **A bainha.** Nas zonas 1 e 2 os tendões correm dentro da **bainha digital fibro-óssea**, cobertos por uma camada de fibroblastos achatados, o **epitendão**, a superfície de deslizamento que o reparo precisa restaurar (Green's Operative Hand Surgery, 7ª ed., cap. 6, p. 186). A bainha retinacular começa no **colo do metacarpo** e termina na **falange distal**; suas condensações formam **cinco polias anulares** e **três cruciformes** (Fig. 6.4).
 
+**As bursas e o espaço de PARONA.** No mínimo, a bainha costuma continuar na **bursa ulnar**, e no polegar a bainha do FPL continua na **bursa radial**; as duas passam proximais ao ligamento transverso do carpo (Green's Operative Hand Surgery, 7ª ed., cap. 2, p. 29). Proximal ao ligamento, elas ficam profundas aos FDP e sobre a fáscia do **pronador quadrado**: é o **espaço de PARONA**, espaço potencial profundo do antebraço distal volar, contínuo com o **espaço palmar médio**, por onde as bursas podem se comunicar (comunicação entre elas em 85% das peças); a infecção que sobe por uma bursa e desce pela outra é o **abscesso em ferradura** (p. 29 e 33).
+
 **As polias têm três camadas**: a **interna** secreta **ácido hialurônico**; a **média**, colágena, resiste à translação palmar; a **externa**, areolar, nutre a polia. **A1, A3 e A5** nascem das **placas volares** da MF, IFP e IFD; **A2**, do **terço proximal da falange proximal**; **A4**, da **falange média**. A **A2 normal mede 18 a 20 mm** (p. 223).
 
 **Quantas polias se pode perder?** Perder **duas anulares contíguas** gera **contratura em flexão da IFP**; BARTON, confirmado por DOYLE e BLYTHE e por HUNTER, estabeleceu que **pelo menos A2 e A4** devem ser mantidas ou reconstruídas, sob pena de **corda de arco** (Green, p. 221). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3154 a 3156), diverge no tom: vários autores mostraram que preservá-las **não é clinicamente relevante** no reparo agudo, tanto que **parte ou toda a A2** pode ser incisada na zona II se o resto da bainha estiver íntegro; para enxerto e tenólise, porém, volta a exigir A2 e A4. O Green aceita abrir a **A4** ("venting"; LIEBER, TANG; p. 190). As janelas ficam nas **cruciformes** C1 a C3 (Campbell, p. 3158). No **polegar**, a essencial é a **oblíqua** (Green, p. 218).
@@ -146,6 +148,12 @@ armadilha: Responder A4 para o superficial (a A4 é a segunda zona isquêmica do
 **A lesão parcial escapa.** Flexão ativa presente **não exclui** parcial; **dor** na flexão a sugere (Green, p. 183). **Ultrassom e RM** ajudam, e sem diagnóstico definitivo a regra é **explorar** (Campbell, p. 3145).
 
 **As zonas** dos dedos são de **KLEINERT e VERDAN** (Green, p. 185, Fig. 6.2). A zona 2, a **"terra de ninguém"** de BUNNELL, tem esse nome porque antes não se fazia reparo primário ali.
+
+!figura 6.2 imagem=mao/green7-6-2-w76.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 6, Fig. 6.2, p. 185. As cinco zonas dos flexores nos dedos e no polegar; no polegar, a zona III fica sob a musculatura tenar e a zona IV é a do túnel do carpo, em linha com a zona IV dos dedos.
+!fim
+
+No polegar, use o desenho do Green: o da Fig. 71.38 do Campbell (p. 3164) põe o rótulo IV sobre a eminência tenar, embora a legenda da mesma figura diga que a zona III fica sob a musculatura tenar e a zona IV corresponde ao túnel do carpo.
 
 !tabela Zonas dos flexores (Green 7, cap. 6, p. 185; Campbell 15, cap. 71, p. 3155 e 3164)
 | Zona | Dedos | Polegar (FPL) |
@@ -198,13 +206,13 @@ Os dois livros usam réguas diferentes.
 | 3-0 contra 4-0 | **52%** mais forte; **2 a 3 vezes** mais resistente à fadiga |
 | núcleo dorsal contra volar | **58%** mais forte |
 | epitendão primeiro contra KESSLER modificado | **22%** mais forte |
-| cross-stitch 6-0 contra KESSLER modificado com epitendínea comum | **117%** mais forte |
+| cross-stitch de SILFVERSKIÖLD 6-0 contra KESSLER modificado com epitendínea comum | **117%** mais forte |
 | epitendínea contínua | suporta **50%** da carga de falha |
 | pontos periféricos a 2 mm contra 1 mm | mais fortes a **2 mm** |
 | 8 fios contra 4 fios (BOYER, cães) | mais fortes de **0 a 21 dias** |
 !fim
 
-**A epitendínea** nasceu para **alisar**, mas **aumenta a força** (DIAO) e segue como **complemento** do núcleo (Green, p. 188). O Green não dá número; o Campbell diz que ela **suporta 50% da carga de falha** e reduz o volume (p. 3147). O Green usa polipropileno **6-0** contínuo, começando num canto volar para esconder o nó, e dispensa a epitendínea nas zonas 3 a 5 (p. 194).
+**A epitendínea** nasceu para **alisar**, mas **aumenta a força** (DIAO) e segue como **complemento** do núcleo (Green, p. 188). O Green desenha as duas formas circunferenciais: a **contínua simples** e a **cross-stitch de SILFVERSKIÖLD** (Fig. 6.15, p. 194); é essa cross-stitch, de poliéster trançado 6-0, que o Campbell achou **117%** mais forte que o KESSLER modificado com epitendínea comum (p. 3146, Fig. 71.8). O Green não dá número; o Campbell diz que ela **suporta 50% da carga de falha** e reduz o volume (p. 3147). O Green usa polipropileno **6-0** contínuo, começando num canto volar para esconder o nó, e dispensa a epitendínea nas zonas 3 a 5 (p. 194).
 
 **Diâmetros diferentes.** Para unir um tendão de **pequeno diâmetro a um de grande diâmetro**, a técnica é a **trama de PULVERTAFT**, em "boca de peixe" (Campbell, p. 3150, Fig. 71.15). O Green a prefere como junção proximal nas zonas 3 a 5, porque é **mais forte que as término-terminais** e permite ajustar a tensão já no primeiro passe; GABUZDA viu a força aumentar com o número de tramas e recomendou **4 ou 5**, e o autor usa **pelo menos duas** (p. 208).
 
@@ -279,7 +287,9 @@ alerta: O acervo não registra o gabarito oficial de `mao-0650`; o Campbell's Op
 
 **As fases.** O Green's Operative Hand Surgery, 7ª ed. (cap. 6, p. 189), descreve três fases sem prazo; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3143), dá os números: **inflamatória 48 a 72 horas**, **fibroblástica 5 dias a 4 semanas**, **remodelação 4 semanas a 3,5 meses**. O mecanismo **extrínseco** parece **dominar as aderências**; o **intrínseco** vem do próprio tendão (LUNDBORG). Aderência extensa exige **lesão do tendão + lesão da bainha + imobilização**, e nenhuma barreira antiaderente se mostrou confiável.
 
-**A força do reparo** **cai nos primeiros 10 dias** e só em **10 a 12 semanas** admite força ativa considerável (Campbell, p. 3148). O **gap** decide: no estudo canino de GELBERMAN, gap **menor que 3 mm** ganha força entre a **4ª e a 6ª semana**; **maior que 3 mm**, não (Green, p. 189, Fig. 6.10). BOYER viu que subir a força de **5 N para 17 N não acelerou** o ganho. Pegar o tendão pelo **endotendão**: cada lesão da superfície gera uma aderência (p. 192 e 224). ROUHANI: **ibuprofeno 2400 mg/dia** melhorou o movimento (p. 198).
+**Tensão e cicatrização: os livros divergem no peso.** O Campbell (p. 3143) diz que, em experimentos, a **tensão cíclica** aplicada ao tendão em cicatrização **estimula a resposta intrínseca** mais que a ausência de tensão, base da mobilização pós-operatória. O Green (p. 189 e 195) põe o limite: alguma força é útil, mas BOYER mostrou que aumentar a força aplicada de **5 N para 17 N não acelerou** o ganho de resistência do reparo multifilamentar e pode arriscar gap ou ruptura; a razão de aplicar força é gerar **pequena excursão proximal**.
+
+**A força do reparo** **cai nos primeiros 10 dias** e só em **10 a 12 semanas** admite força ativa considerável (Campbell, p. 3148). O **gap** decide: no estudo canino de GELBERMAN, gap **menor que 3 mm** ganha força entre a **4ª e a 6ª semana**; **maior que 3 mm**, não (Green, p. 189, Fig. 6.10). Pegar o tendão pelo **endotendão**: cada lesão da superfície gera uma aderência (p. 192 e 224). ROUHANI: **ibuprofeno 2400 mg/dia** melhorou o movimento (p. 198).
 
 **Excursão, não força.** A força aplicada serve para gerar **pequena excursão proximal** (Green, p. 195): **1,6 mm** já evita aderências em cães (p. 189), DURAN calculou **3 a 5 mm**, e **6 a 9 mm** seria o máximo útil. As **primeiras 4 semanas** são as mais importantes.
 
@@ -325,6 +335,8 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3169), lista os requi
 
 **Os princípios do enxerto em um tempo** (Green, p. 202): **um tendão por dedo**; **nunca sacrificar um FDS íntegro**; enxerto de **pequeno calibre**; **junções fora da bainha**; tensão correta. A junção **distal vem primeiro**, para que a tensão seja ajustada na proximal; o motor preferido é o **FDP proximal** do próprio dedo, unido em **PULVERTAFT** logo distal à origem do lumbrical (p. 210 e 211). A **tensão** reproduz a **cascata**: com o punho neutro, cada dedo cai em um pouco menos de flexão que o vizinho ulnar (Fig. 6.33). O Campbell pede, com o punho estendido, flexão **igual ou um pouco maior** que a dos vizinhos e proíbe suturar o lumbrical à junção (p. 3170). No pós-operatório do Campbell, o pull-out sai em cerca de **28 dias**, a proteção vai a **8 semanas** e a atividade vigorosa espera **12 a 14 semanas**.
 
+**A ordem dos doadores** no Campbell (p. 3167) é **palmar longo**, **plantar** e **extensores longos dos dedos do pé**; raramente, o extensor comum do indicador, o extensor próprio do indicador e o FDS. O palmar longo é o de escolha porque tem comprimento, diâmetro e disponibilidade sem deixar deformidade.
+
 **A biologia do enxerto.** Enxertos **intrassinoviais** (flexores dos dedos do pé) sobrevivem na bainha e incorporam com **mínimas aderências**; os **extrassinoviais** (palmar longo, plantar) sofrem **necrose celular** e são repovoados a partir das aderências e das junções (Green, p. 203).
 
 !tabela Doadores de enxerto (Green 7, cap. 6, p. 203 a 206; Campbell 15, cap. 71, p. 3167 a 3169)
@@ -332,7 +344,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3169), lista os requi
 | --- | --- | --- |
 | **palmar longo** | palma-ponta, **mesmo campo**; teste: oposição ao mínimo com punho fletido contra resistência; cerca de **15 cm** | Green: presente em **75% a 85%**; Campbell: **85%** de um lado, **70%** dos dois, ausente em 10% a 15% |
 | **plantar** | antebraço-ponta; dá **2 ou 3** enxertos palma-ponta; anteromedial ao Aquiles; extrator avança cerca de **25 cm** | Green: só **80%** dos membros (HARVEY); Campbell: presente em **93%** |
-| extensores longos dos dedos do pé | terceira opção do Campbell | |
+| extensores longos dos dedos do pé | terceira opção do Campbell (p. 3167) | |
 | flexor longo do 2º dedo do pé | **intrassinovial**, menos aderências | Green |
 | extensor próprio do indicador, fita do extensor do 5º | alternativas | Green |
 | FDS | grosso demais, centro necrosa | Campbell desaconselha; Green aceita o do dedo lesado na **criança** |

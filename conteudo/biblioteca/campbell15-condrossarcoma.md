@@ -1,6 +1,6 @@
 ---
 id: campbell15-condrossarcoma
-versao: 1
+versao: 2
 titulo: Condrossarcoma
 especialidade: tumores
 acesso: gratis
@@ -8,14 +8,14 @@ livro: Campbell's Operative Orthopaedics
 edicao: 15ª edição (2026), com o Tachdjian's Pediatric Orthopaedics, 6ª edição (2021), e o Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição
 capitulo: Capítulo 27 · Tumores cartilaginosos (com o condrossarcoma do capítulo 29)
 autores: Patrick C. TOY e Robert K. HECK Jr.
-fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone, seção Chondrosarcoma inteira, p. 975 a 979), cap. 27 (Benign Bone Tumors, condroma e osteocondroma, p. 928 a 932), cap. 26 (General Principles of Tumors: diagnóstico por imagem, estadiamento, biópsia, margens, curetagem e ressecções pélvicas, p. 869 a 884 e 903 a 905), cap. 19 (amputações do quadril e da pelve, p. 720), cap. 49 (tumores da coluna, p. 1965 aprox.) e cap. 83 (tumores da mão, p. 3580 a 3590); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (osteocondroma, exostose múltipla, encondroma, OLLIER e MAFFUCCI, p. 1019 a 1029) e cap. 26 (condrossarcoma, p. 1071 a 1073); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos: condroma, OLLIER, osteocondroma, exostose múltipla), cap. 30 (tumores ósseos malignos: condrossarcoma e classificação da OMS) e cap. 7 (tumores da mão), cujo arquivo não traz número de página impressa. As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 29 (Malignant Tumors of Bone, seção Chondrosarcoma inteira, p. 975 a 979), cap. 27 (Benign Bone Tumors, condroma e osteocondroma, p. 928 a 932), cap. 26 (General Principles of Tumors: diagnóstico por imagem, estadiamento, biópsia, margens, curetagem e ressecções pélvicas, p. 869 a 884 e 903 a 905), cap. 19 (amputações do quadril e da pelve, p. 720), cap. 49 (tumores da coluna, p. 1965 aprox.) e cap. 83 (tumores da mão, p. 3580 a 3590); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 25 (osteocondroma, exostose múltipla, encondroma, OLLIER e MAFFUCCI, p. 1019 a 1029) e cap. 26 (condrossarcoma, p. 1071 a 1073); Ortopedia e Traumatologia (SIZÍNIO HEBERT), 5ª ed., cap. 29 (tumores ósseos benignos: condroma, OLLIER, osteocondroma, exostose múltipla), cap. 30 (tumores ósseos malignos: condrossarcoma e classificação da OMS) e cap. 7 (tumores da mão), cujo arquivo não traz número de página impressa; Dahlin's Bone Tumors, 6ª ed. (2010), cap. 3 (condroma, p. 22 e 34), cap. 4 (condroblastoma, p. 41) e cap. 6 (condrossarcoma, p. 60 a 63, 70 e 89). As páginas citadas são as impressas.
 subtemas: Condrossarcoma
 resumo: Segundo tumor maligno primário não hematológico do osso, metade da incidência do osteossarcoma, pico de 40 a 60 anos no primário e 25 a 45 no secundário; pelve, fêmur proximal e úmero proximal; maligno primário mais comum da mão; secundário sobre encondromas múltiplos (OLLIER ~25% até os 40 anos, MAFFUCCI ainda mais) e exostose múltipla (~5%) ou osteocondroma solitário (~1%); OLLIER não hereditário e predominantemente unilateral, MAFFUCCI com hemangiomas de partes moles; capa > 2 cm no adulto; calcificação em pipoca, puntiforme ou em anéis; erosão endosteal e massa de partes moles separam do encondroma; osteoide maligno = osteossarcoma condroblástico; células claras de baixo grau e epifisário, mesenquimal de alto grau; margem ampla, sem quimio no convencional; cartilagem avascular recidiva localmente; ressecção pélvica tipo III = púbis e ísquio.
 ---
 
 # Como ler este capítulo {radar=fundamento}
 
-Este resumo é inspirado na seção Chondrosarcoma do capítulo 29 (Malignant Tumors of Bone) do Campbell's Operative Orthopaedics, 15ª edição, de Patrick C. TOY e Robert K. HECK Jr., completada pelos capítulos de tumores benignos e de princípios gerais do mesmo livro, pelo Tachdjian's Pediatric Orthopaedics, 6ª edição, e pelo Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição, que traz a classificação da OMS por graus. As páginas citadas são as impressas.
+Este resumo é inspirado na seção Chondrosarcoma do capítulo 29 (Malignant Tumors of Bone) do Campbell's Operative Orthopaedics, 15ª edição, de Patrick C. TOY e Robert K. HECK Jr., completada pelos capítulos de tumores benignos e de princípios gerais do mesmo livro, pelo Tachdjian's Pediatric Orthopaedics, 6ª edição, pelo Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª edição, que traz a classificação da OMS por graus, e pelos números da série da Mayo Clinic no Dahlin's Bone Tumors, 6ª edição. As páginas citadas são as impressas.
 
 O condrossarcoma é o tumor maligno que fabrica cartilagem e não fabrica osso. Essa frase simples organiza quase tudo o que a prova cobra. Por fabricar cartilagem, ele **calcifica em pipoca, em pontos e em anéis**, como o encondroma, e por isso o grande problema diagnóstico é separar os dois. Por não fabricar osso, qualquer **osteoide maligno** na lâmina muda o nome para **osteossarcoma condroblástico**. Por ser cartilagem, tecido **pouco vascularizado** que vive de embebição, as células sobrevivem quando caem no campo operatório e **recidivam localmente**; e pela mesma biologia lenta, **não responde à quimioterapia nem à radioterapia** no tipo convencional. O tratamento, portanto, é a margem cirúrgica.
 
@@ -30,6 +30,8 @@ A banca cobra quatro blocos: o **perfil** (idade, local, a mão), a **origem sec
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 29, p. 975), abre a seção com três números. O condrossarcoma tem incidência de **cerca de metade da do osteossarcoma** e é o **segundo tumor maligno primário não hematológico mais comum do osso**. A ressalva "não hematológico" importa: o SIZÍNIO HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 30) lembra que, contando todos os primários malignos, o **mieloma** é o mais frequente, seguido por osteossarcoma, condrossarcoma e EWING. Na prova, quem pergunta "segundo mais comum" está excluindo o mieloma.
 
 A idade é larga, mas tem dois picos que o Campbell separa com precisão: **40 a 60 anos para o condrossarcoma primário** e **25 a 45 anos para o secundário**. O secundário nasce sobre lesão presente desde a infância e se transforma cedo na vida adulta; o primário surge em osso antes normal. O SIZÍNIO HEBERT dá uma faixa parecida, **30 a 60 anos**, e frisa que é **muito raro abaixo dos 20 anos**. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 26, p. 1071), vai além: o condrossarcoma ocorre basicamente em adultos, raramente em adolescentes e **quase nunca em crianças**.
+
+O Dahlin's Bone Tumors, 6ª ed. (cap. 6, p. 61), dá a mesma curva com os números da Mayo Clinic: cerca de **60%** dos pacientes estavam entre a **quarta e a sexta década**, e os secundários eram mais jovens, com cerca de **52% na terceira e na quarta década**. Só sete pacientes estavam na primeira década e 5,21% na segunda; o Dahlin avisa que uma série com muitos pacientes nas duas primeiras décadas provavelmente inclui **osteossarcomas condroblásticos**. Na mesma série, o osteossarcoma foi cerca de **1,5 vez** mais comum que o condrossarcoma (p. 60).
 
 Há **leve predomínio masculino**, como na maioria dos tumores ósseos, e **sem predileção racial** (Campbell, cap. 29, p. 975).
 
@@ -101,12 +103,14 @@ O condrossarcoma **primário** nasce em osso previamente normal. O **secundário
 
 O Campbell é direto sobre onde o secundário aparece com mais frequência: **no contexto de encondromas múltiplos e de exostoses múltiplas hereditárias**. Ele também lista condições menos comuns associadas ao condrossarcoma secundário: **condromatose sinovial, fibroma condromixoide, condroma periosteal, condroblastoma, radioterapia prévia e displasia fibrosa** (cap. 29, p. 976).
 
+O Dahlin (cap. 6, p. 60) é mais específico sobre o precursor: o condrossarcoma secundário nasce **mais comumente de osteocondromas**, sobretudo no tipo **múltiplo familiar**. Na série da Mayo Clinic, dos **158** condrossarcomas secundários, **82** nasceram em exostose solitária, **44** em exostose múltipla hereditária e **19** em condromas múltiplos (8 com OLLIER, 5 com MAFFUCCI e 6 com condromas múltiplos sem síndrome); os 10 restantes vieram de condições como displasia fibrosa e radioterapia prévia. O próprio Dahlin (p. 62) dá os denominadores cirúrgicos: 82 em 966 operados por exostose solitária, 44 em 184 operados por exostose múltipla e **19 em 73** operados por condromas múltiplos, e avisa que esses dados **não representam a incidência verdadeira**, porque a seleção leva ao grande centro justamente os pacientes com sarcoma.
+
 ## O risco de cada precursor
 
 Aqui está o coração das questões sobre secundário. O risco individual muda muito conforme a doença de base.
 
 - **Doença de OLLIER** (encondromas múltiplos): incidência de malignidade, sobretudo condrossarcoma, de **cerca de 25% até os 40 anos** (Campbell, cap. 29, p. 975; cap. 27, p. 928).
-- **Síndrome de MAFFUCCI** (encondromas múltiplos com hemangiomas de partes moles): a incidência **pode ser ainda maior** que no OLLIER (Campbell, cap. 29, p. 975). O Tachdjian (cap. 25, p. 1028 aprox.) diz "semelhante ou maior" e cita SCHWARTZ e colaboradores, que relataram expectativa de degeneração maligna **de quase 100%**.
+- **Síndrome de MAFFUCCI** (encondromas múltiplos com hemangiomas de partes moles): a incidência **pode ser ainda maior** que no OLLIER (Campbell, cap. 29, p. 975). O Tachdjian (cap. 25, p. 1028 aprox.) diz "semelhante ou maior" e cita SCHWARTZ e colaboradores, que relataram expectativa de degeneração maligna **de quase 100%**. O Dahlin (cap. 3, p. 22) traz o número oposto: a malignidade no MAFFUCCI é considerada maior, mas, numa grande revisão de casos publicados, LEWIS e colaboradores estimaram a incidência de neoplasia em **23%**. Na série da Mayo (p. 34), havia 3 pacientes com MAFFUCCI sem malignidade e **5 com sarcoma**, ou seja, 5 de 8.
 - **Exostose múltipla hereditária**: risco ao longo da vida estimado em **cerca de 5%** (Campbell, cap. 29, p. 976).
 - **Osteocondroma solitário**: **cerca de 1%** (Campbell, cap. 29, p. 976).
 - **Encondroma solitário**: o Campbell admite que é difícil saber se ele dá origem a condrossarcoma e afirma que, se isso ocorre, a incidência **não justifica tratar profilaticamente** encondromas assintomáticos.
@@ -116,11 +120,11 @@ O Campbell faz uma ressalva honesta que vale para a prova quando a alternativa f
 - o Tachdjian (cap. 25, p. 1020 e 1025 aprox.) estima a degeneração do osteocondroma solitário em **menos de 0,25%** e, na exostose múltipla, **0,9% a 5%**, com risco ao longo da vida de cerca de **1% a 2%**; num inquérito com 779 pacientes, 2,7%;
 - o SIZÍNIO HEBERT (cap. 29) traz a série da Escola Paulista de Medicina: **0,1%** no osteocondroma solitário e **9,77%** (13 de 133 pacientes) na exostose múltipla; para o OLLIER, a série da Mayo Clinic com **16 transformações em 55 pacientes (30%)**, e, no capítulo da mão, cita transformação maligna de **50%** no OLLIER.
 
-!tabela Risco de condrossarcoma secundário conforme o precursor (Campbell cap. 27 e 29; Tachdjian cap. 25; SIZÍNIO cap. 7 e 29)
+!tabela Risco de condrossarcoma secundário conforme o precursor (Campbell cap. 27 e 29; Tachdjian cap. 25; SIZÍNIO cap. 7 e 29; Dahlin cap. 3, p. 22 e 34)
 | Precursor | Campbell | Tachdjian | SIZÍNIO |
 | --- | --- | --- | --- |
-| MAFFUCCI | pode ser maior que no OLLIER | semelhante ou maior; SCHWARTZ: quase 100% | não quantifica |
-| OLLIER | ~25% até os 40 anos | 25% a 30% até os 40; 20% a 33% | 30% (Mayo); 50% na mão |
+| MAFFUCCI | pode ser maior que no OLLIER | semelhante ou maior; SCHWARTZ: quase 100% | não quantifica; Dahlin: LEWIS 23%, 5 de 8 na Mayo |
+| OLLIER | ~25% até os 40 anos (também Dahlin, p. 22) | 25% a 30% até os 40; 20% a 33% | 30% (Mayo); 50% na mão |
 | exostose múltipla hereditária | ~5% ao longo da vida | 0,9% a 5%; vida ~1% a 2% | 9,77% (EPM) |
 | osteocondroma solitário | ~1% | < 0,25% | 0,1% (EPM) |
 | encondroma solitário | incerto; não tratar profilaticamente | raro na infância; mais em pelve e ossos proximais no adulto | raro, sobretudo em mãos e pés |
@@ -128,7 +132,7 @@ O Campbell faz uma ressalva honesta que vale para a prova quando a alternativa f
 
 ## Qual doença tem o secundário mais frequente
 
-Quando a questão pergunta em qual condição o condrossarcoma secundário é **mais frequente**, ela quer o risco por paciente. Pelo Campbell e pelo Tachdjian, a ordem é **MAFFUCCI ≥ OLLIER > exostose múltipla > osteocondroma solitário**. Cuidado com a frase do Campbell "ocorrem com mais frequência no contexto de encondromas múltiplos e exostoses múltiplas": ela descreve de onde vêm os casos, não o risco de cada paciente. As alternativas "doença de CAMPANACCI" (nome que o Tachdjian dá à displasia osteofibrosa da tíbia e da fíbula) e "condroblastoma" (que o Campbell cita apenas entre as associações raras) não competem.
+Quando a questão pergunta em qual condição o condrossarcoma secundário é **mais frequente**, ela quer o risco por paciente. Pelo Campbell e pelo Tachdjian, a ordem é **MAFFUCCI ≥ OLLIER > exostose múltipla > osteocondroma solitário**. O Dahlin mantém o MAFFUCCI como risco considerado maior, mas registra os 23% de LEWIS (cap. 3, p. 22); a divergência fica entre 23% (LEWIS, no Dahlin) e quase 100% (SCHWARTZ, no Tachdjian). Cuidado com a frase do Campbell "ocorrem com mais frequência no contexto de encondromas múltiplos e exostoses múltiplas": ela descreve de onde vêm os casos, não o risco de cada paciente. As alternativas "doença de CAMPANACCI" (nome que o Tachdjian dá à displasia osteofibrosa da tíbia e da fíbula) e "condroblastoma" (que o Campbell cita apenas entre as associações raras) não competem.
 
 !questoes central=tumores-0280 relacionadas=tumores-0329
 conceito: O risco individual de condrossarcoma secundário é maior no MAFFUCCI, igual ou superior ao do OLLIER (~25% até os 40 anos), e bem acima da exostose múltipla (~5%) e do osteocondroma solitário (~1%).
@@ -172,7 +176,7 @@ Na tabela 27.2 do Campbell (p. 931), as duas condições têm o mesmo comentári
 | herança | não hereditário | não hereditário, congênito | autossômica dominante (EXT1, EXT2) |
 | distribuição | predominantemente unilateral | hemangiomas uni ou bilaterais | geralmente simétrica |
 | imagem típica | septação metafisária em leque | flebólitos | exostoses que apontam para longe da fise |
-| risco de condrossarcoma | ~25% até os 40 anos | igual ou maior; até quase 100% | ~5% (Campbell); 1% a 2% (Tachdjian) |
+| risco de condrossarcoma | ~25% até os 40 anos | igual ou maior; 23% (LEWIS, Dahlin) a quase 100% (SCHWARTZ, Tachdjian) | ~5% (Campbell); 1% a 2% (Tachdjian) |
 | outros riscos | leucemias descritas | gliomas, malignidades viscerais | compressões, deformidade do antebraço |
 !fim
 
@@ -331,7 +335,7 @@ alerta: A questão `tumores-0333` está sem gabarito oficial e o enunciado ("bai
 
 ## O que o patologista procura
 
-O condrossarcoma convencional é feito de **células malignas com abundante matriz cartilaginosa** (Campbell, cap. 29, p. 976). Uma regra fecha o diagnóstico diferencial com o osteossarcoma: **se houver osteoide maligno, mesmo em pequena quantidade, o diagnóstico passa a ser osteossarcoma condroblástico**, tumor com prognóstico e tratamento diferentes. O SIZÍNIO HEBERT (cap. 30) diz o mesmo em outra forma: o condrossarcoma é tumor maligno caracterizado pela formação de cartilagem, **mas não de osso**, pelas células tumorais.
+O condrossarcoma convencional é feito de **células malignas com abundante matriz cartilaginosa** (Campbell, cap. 29, p. 976). Uma regra fecha o diagnóstico diferencial com o osteossarcoma: **se houver osteoide maligno, mesmo em pequena quantidade, o diagnóstico passa a ser osteossarcoma condroblástico**, tumor com prognóstico e tratamento diferentes. O Dahlin (cap. 6, p. 60) dá a mesma regra: quando as células malignas produzem osteoide diretamente, **mesmo em pequenos focos**, o tumor tem o comportamento do osteossarcoma e pertence a essa categoria. O SIZÍNIO HEBERT (cap. 30) diz o mesmo em outra forma: o condrossarcoma é tumor maligno caracterizado pela formação de cartilagem, **mas não de osso**, pelas células tumorais.
 
 Os achados que favorecem malignidade, segundo o Campbell, são **hipercelularidade, núcleos volumosos, células binucleadas mais que ocasionais, padrão permeativo e aprisionamento de trabéculas ósseas** (figura 29.9). O SIZÍNIO HEBERT acrescenta grande pleomorfismo e células com núcleos grandes ou duplos, e observa que as **mitoses não são frequentes**, coerente com o crescimento lento. Na biópsia de lesão limítrofe, o Campbell pede **o máximo de tecido possível** e insiste que em nenhuma outra situação a correlação clínico-radiológica é tão importante.
 
@@ -355,7 +359,7 @@ No sistema de ENNEKING (Campbell, cap. 26, p. 873 e 874), o grau entra diretamen
 
 ## O "condrossarcoma de alto grau" da criança
 
-O Tachdjian (cap. 26, p. 1071 e 1072) dá o conceito que resolve a pergunta da criança. Como o condrossarcoma verdadeiro quase não existe na infância, o diagnóstico de condrossarcoma de alto grau em congelação ou em biópsia de adolescente deve levantar a suspeita de **osteossarcoma condroblástico**. Na maioria dos casos, o "condrossarcoma de alto grau" da criança **é na verdade um osteossarcoma condroblástico**, e isso fica evidente quando a peça inteira é examinada e aparece o osso neoplásico. Os autores recomendam **quimioterapia adjuvante, como em qualquer osteossarcoma**. É a regra do Campbell aplicada à idade: osteoide maligno muda o nome.
+O Tachdjian (cap. 26, p. 1071 e 1072) dá o conceito que resolve a pergunta da criança. Como o condrossarcoma verdadeiro quase não existe na infância, o diagnóstico de condrossarcoma de alto grau em congelação ou em biópsia de adolescente deve levantar a suspeita de **osteossarcoma condroblástico**. Na maioria dos casos, o "condrossarcoma de alto grau" da criança **é na verdade um osteossarcoma condroblástico**, e isso fica evidente quando a peça inteira é examinada e aparece o osso neoplásico. Os autores recomendam **quimioterapia adjuvante, como em qualquer osteossarcoma**. É a regra do Campbell aplicada à idade: osteoide maligno muda o nome. O Dahlin chega à mesma conclusão pelos números: na Mayo Clinic, o raro condrossarcoma da infância tem o **mesmo prognóstico** do adulto, e os relatos de pior prognóstico na criança provavelmente refletem a inclusão de **osteossarcomas condroblásticos** nas séries (cap. 6, p. 89; também p. 61). Quanto ao "condroblastoma maligno", o Dahlin (cap. 4, p. 41) registra que **não há nenhum exemplo nos arquivos da Mayo Clinic**; os condroblastomas agressivos ou com metástase são citologicamente iguais aos benignos.
 
 !questoes central=tumores-0291
 conceito: Condrossarcoma de alto grau na infância é quase sempre osteossarcoma condroblástico; o osteoide maligno, visto na peça inteira, muda o diagnóstico e indica quimioterapia.
@@ -440,6 +444,8 @@ O Campbell (cap. 29, p. 978) organiza a conduta assim. O **baixo grau** tem trat
 ## Por que recidiva: a cartilagem avascular
 
 A explicação biológica da recidiva é cobrada como frase de certo ou errado. O Campbell (cap. 29, p. 978) diz: **como a cartilagem é relativamente avascular, as células sobrevivem facilmente ao transplante**, e a recidiva local depois de **contaminação intraoperatória é alta**. O SIZÍNIO HEBERT diz o mesmo com o mecanismo: as células se implantam nas partes moles e causam **recidiva local frequente**, porque **se nutrem por embebição**. Daí a ressecção ampla, a ressecção sem biópsia em osso dispensável e o cuidado de não violar a capa de um osteocondroma malignizado. Depois de ressecção ampla, a recidiva local é **menor que 10%** e se trata com nova ressecção ampla ou amputação; as **metástases pulmonares** também são ressecadas se possível. A recidiva local é o fracasso típico; metástase hepática ou saltatória não aparece na história natural descrita.
+
+O Dahlin (cap. 6, p. 63 e 70) mede essa tendência na série da Mayo Clinic. O condrossarcoma tem **acentuada propensão à recidiva local**, mesmo quando o cirurgião parece ter retirado todo o tumor; a disseminação hematogênica para o **pulmão é bem menos comum que no osteossarcoma** ou no fibrossarcoma, e a metástase em linfonodo regional é rara. No estudo de BJORNSSON e colaboradores, a recidiva foi de cerca de 20%, com probabilidade acumulada de recidiva local de **20,1% em 5 anos, 22,4% em 10 anos e 26,5% em 20 anos**; em cerca de 10% das recidivas, o intervalo desde o tratamento foi de 5 a 10 anos. Os dois números convivem: o Campbell (menos de 10%) fala da recidiva depois de **margem ampla**; o Dahlin, de uma série cirúrgica geral seguida por até 20 anos.
 
 !questoes central=tumores-0353 relacionadas=tumores-0320
 conceito: A cartilagem é relativamente avascular e nutre-se por embebição, então células que caem no campo sobrevivem e implantam; a recidiva local é a complicação típica, menor que 10% após margem ampla.

@@ -1,6 +1,6 @@
 ---
 id: green-tendoes-extensores
-versao: 1
+versao: 2
 titulo: Lesões dos tendões extensores
 especialidade: mao
 acesso: gratis
@@ -44,22 +44,24 @@ No punho os tendões passam por **seis compartimentos** revestidos de sinóvia e
 
 O EPL é o único tendão que muda de direção no punho: usa o **tubérculo de LISTER como polia**, e por isso sofre com fraturas e com a artrite reumatoide.
 
+No 2º compartimento, quem decide a posição são as inserções: o **ECRL** se insere na **base do 2º metacarpal** (Green, cap. 12, p. 414) e o **ECRB** na **base radial do 3º** (Green, cap. 12, p. 397); o longo é, portanto, o mais radial dos dois. A via dorsal do punho do Green (cap. 12, Fig. 12.32, p. 397) usa essa anatomia: a incisão fica centrada sobre o 3º e o 4º compartimentos e alinhada com o 3º metacarpal, o retináculo é aberto **em linha com o EPL**, o autor prefere deixar o EPL **superficial ao retináculo** no fechamento e, na artrodese, o **tubérculo de LISTER é removido** com osteótomo para a placa assentar no rádio.
+
 !questoes central=mao-1086 relacionadas=mao-0394,mao-0104,mao-0578,mao-1240
 conceito: Seis compartimentos com dois, dois, um, cinco, um e um tendões: APL e EPB; ECRL e ECRB; EPL; EDC e EIP; EDM; ECU.
 como: A PUC-SP 2020 pediu a contagem por compartimento; a SBOT-SP, a localização de ECRB, EIP, EDC e EDM; o TEOT 2021, o conteúdo do 2º compartimento em imagem; o ENARE R4 2024 e 2025, o tendão do 3º compartimento.
 armadilha: Colocar o EIP no 3º com o EPL, ou o EDM no 4º; o EIP divide o 4º com o EDC e o EDM tem o 5º só para ele.
-alerta: O Green e o Campbell listam o ECRL e o ECRB no 2º compartimento sem dizer, no texto lido, qual é o mais radial (`mao-0104`); o gabarito oficial (longo mais radial) foi mantido.
+alerta: Em `mao-0104`, o gabarito oficial (longo mais radial) concorda com as inserções descritas no Green: ECRL na base do 2º metacarpal (cap. 12, p. 414) e ECRB na base radial do 3º (cap. 12, p. 397).
 !fim
 
 ## A tabaqueira e as imagens de punho
 
-Muitas questões mostram uma foto do punho com letras. O Campbell (cap. 24, p. 838) descreve o acesso pela **tabaqueira anatômica**: a incisão fica entre o **APL e o EPB, do lado volar**, e o **EPL, do lado dorsal**; aprofundando, é preciso proteger o ramo superficial do radial e a artéria radial. Logo, as bordas da tabaqueira são o EPL de um lado e o par do 1º compartimento do outro; o EPB é a borda mais palpável do lado radial, porque o APL se insere mais volar, na base do primeiro metacarpo.
+Muitas questões mostram uma foto do punho com letras. O Campbell (cap. 24, p. 838) descreve o acesso pela **tabaqueira anatômica**: a incisão fica entre o **APL e o EPB, do lado volar**, e o **EPL, do lado dorsal**; aprofundando, é preciso proteger o ramo superficial do radial e a artéria radial. Logo, as bordas da tabaqueira são o EPL de um lado e o par do 1º compartimento do outro. As inserções separam os dois tendões do 1º compartimento: o **APL** se insere na **base do metacarpo do polegar**, com uma inserção expandida que reforça o ligamento dorsal da carpometacarpal (Green, cap. 8, p. 312 e 314); o **EPB** se insere na **falange proximal** (Green, cap. 31, p. 1034).
 
 !questoes central=mao-0346 relacionadas=mao-0318,mao-0321
 conceito: A tabaqueira é limitada dorsalmente pelo EPL e volarmente pelo APL e pelo EPB; o ECRB corre no 2º compartimento, ao lado do ECRL.
 como: O CET-PR pediu as letras do exame físico do punho (EPL e EPB); provas de Ortopedia pediram a identificação do EPB e de um extensor radial do carpo em fotos.
 armadilha: Chamar de tabaqueira o próprio tendão, ou confundir o EPB com o APL na borda radial.
-alerta: As três questões dependem de imagem, que não pôde ser conferida; os gabaritos oficiais foram mantidos. A inserção do APL na base do metacarpo não está no texto lido; a afirmação de que o EPB é a borda mais palpável é inferência do resumo.
+alerta: As três questões dependem de imagem, que não pôde ser conferida; os gabaritos oficiais foram mantidos. As inserções do APL (base do metacarpo do polegar) e do EPB (falange proximal) estão no Green (cap. 8, p. 312 e 314; cap. 31, p. 1034).
 !fim
 
 ## O sexto compartimento e o ECU que estala
@@ -293,7 +295,7 @@ O martelo é a **descontinuidade do tendão terminal**, com déficit de extensã
 
 ## A anatomia do problema
 
-KATZMAN mostrou que **só a posição da IFD** abre ou fecha o gap, qualquer que seja a IFP; por isso a **IFP não precisa ser imobilizada**. E como 1 mm de alongamento custa 25 graus, até **20% dos pacientes** ficam com déficit residual de 10 graus ou mais. Fragmentos com **menos de 43%** da superfície raramente deixam a falange subluxar; com **mais de 52%**, a subluxação volar é a regra, porque os colaterais ficam presos ao fragmento e o profundo puxa a distal para volar.
+KATZMAN mostrou que a movimentação da IFP e a tensão dos intrínsecos não abrem o gap de um terminal cortado: **só a posição da IFD** o abre (em flexão) ou fecha (em extensão), qualquer que seja a IFP (Green, p. 162); por isso a **IFP não precisa ser imobilizada**. E como 1 mm de alongamento custa 25 graus, até **20% dos pacientes** ficam com déficit residual de 10 graus ou mais. Fragmentos com **menos de 43%** da superfície raramente deixam a falange subluxar; com **mais de 52%**, a subluxação volar é a regra, porque os colaterais ficam presos ao fragmento e o profundo puxa a distal para volar.
 
 !tabela Classificação de DOYLE do dedo em martelo (Green, tabela 5.3, p. 163)
 | Tipo | Descrição |
@@ -325,11 +327,11 @@ O Campbell (p. 3181 a 3183) concorda: tala com a IFD em **hiperextensão por 6 a
 
 ## Tipos II e III, crianças e fraturas grandes
 
-Os **abertos (II e III)** pedem desbridamento e sutura; o III pode exigir cobertura cutânea e enxerto. STRAUCH sutura com 5-0 e protege com fio por 1 mês, seguido de tala. O Campbell usa **roll stitch** ou sutura dermotenodérmica com fio transarticular.
+Os **abertos (II e III)** pedem desbridamento e sutura; o III pode exigir cobertura cutânea e enxerto. STRAUCH sutura com 5-0 e protege com fio por 1 mês, seguido de tala. O Campbell (cap. 71, p. 3181 e 3182) é categórico: a **lesão aberta da inserção exige reparo** do tendão, às vezes ampliando a ferida para proximal para pegar o coto; usa **roll stitch** ou sutura dermotenodérmica, protegida por fio de Kirschner transarticular.
 
 Na **criança**, o martelo ósseo é **transepifisário (SEYMOUR)**: o extensor se insere na epífise e o flexor na metáfise, atravessando a fratura. O Green fixa com fio longitudinal através da IFD e alerta que a lesão é frequentemente **aberta** (a unha sai de baixo do eponíquio), com risco de osteomielite se não for irrigada. O Campbell reduz com hiperextensão e mantém tala por 3 a 4 semanas; a consolidação é rápida.
 
-Nas **fraturas grandes do adulto**, o debate é antigo: WEHBE e SCHNEIDER trataram todas sem cirurgia, inclusive as subluxadas, e viram remodelação; KING relatou **41% de complicações operatórias** (necrose de pele a mais comum); STERN e KASTRUP, complicações menores com tala e maiores com cirurgia; a Cochrane não achou evidência a favor da cirurgia. Quando se opera, a técnica é a **pinagem em bloqueio de extensão**: IFD fletida, fio a 45 graus na cabeça da média como "batente", redução do fragmento volar contra ele e um segundo fio axial pela IFD, retirados em 4 a 6 semanas (Green, p. 164). STRAUCH reserva a pinagem para a fratura com **subluxação volar** e trata as demais com **tala por 5 a 6 semanas**; o calombo dorsal pode ficar.
+Nas **fraturas grandes do adulto**, o debate é antigo: WEHBE e SCHNEIDER trataram todas sem cirurgia, inclusive as subluxadas, e viram remodelação; KING relatou **41% de complicações operatórias** (necrose de pele a mais comum); STERN e KASTRUP, complicações menores com tala e maiores com cirurgia; a Cochrane não achou evidência a favor da cirurgia. Quando se opera, a técnica é a **pinagem em bloqueio de extensão**: IFD fletida, fio a 45 graus na cabeça da média como "batente", redução do fragmento volar contra ele e um segundo fio axial pela IFD, retirados em 4 a 6 semanas (Green, p. 164). STRAUCH reserva a pinagem para a fratura com **subluxação volar** e trata as demais com **tala por 5 a 6 semanas**; o calombo dorsal pode ficar. KALAINOV revisou 22 fraturas com **mais de um terço** da superfície tratadas com 5,5 semanas de tala (13 com subluxação volar): déficit médio de 9 graus, flexão de 59 graus, alterações degenerativas na maioria, mas **dor desprezível** e alta satisfação com a função; o atraso de 1 mês no tratamento não piorou o resultado (Green, p. 164).
 
 !questoes central=mao-1540 relacionadas=mao-1237,mao-0907
 conceito: Martelo tendíneo: tala só na IFD por 6 a 8 semanas, sem incluir a IFP; déficit residual de cerca de 10 graus é comum; na criança, a causa pode ser a separação epifisária.
@@ -355,7 +357,7 @@ Mesmo meses depois, a tala funciona (Green, p. 165). STRAUCH faz uma prova de **
 
 A ideia é engenhosa. O terminal cicatrizou **alongado**; em vez de encurtá-lo, solta-se a **inserção da banda central** na base da falange média. O aparelho todo desliza proximal e a tensão que sobra vai para a IFD, absorvendo a folga do terminal (Green, p. 166 a 167). Não se cria botoeira porque o **ligamento triangular fica intacto**, desde que a central seja cortada por baixo do aparelho. Requisitos: terminal **maduro e cicatrizado** (6 a 12 meses de lesão). Técnica: incisão **médio-lateral** sobre a IFP, **incisão do retinacular transverso**, elevador sob o aparelho e secção da inserção da central de proximal para distal; visto por cima, o aparelho parece contínuo. Corrige com segurança até **35 graus** de déficit. Depois da cirurgia, a IFD estende melhor com a IFP fletida do que estendida (o inverso do normal, a base do ELSON).
 
-O pós-operatório é progressivo, com a IFP a cerca de 20 graus de flexão e a IFD estendida; GRUNDBERG levou o déficit de 37 para 9 graus.
+O pós-operatório é progressivo, com a IFP a cerca de 20 graus de flexão e a IFD estendida. Com movimento imediato, GRUNDBERG e REAGAN levaram o déficit médio de 37 para 9 graus, e HOUPT recuperou a extensão completa em 26 de 35 pacientes (8 ficaram com 10 a 20 graus e 1 com 30); mesmo assim, STRAUCH prefere o esquema progressivo de talas ao movimento livre imediato (Green, p. 166).
 
 A escolha de STRAUCH: **FOWLER** se o déficit é **menor que 35 a 40 graus** e a lesão tem mais de 6 meses; **reconstrução do ORL** se o déficit passa de **45 graus**, se há **pescoço de cisne** ou se não existe continuidade entre o terminal e a distal (Green, p. 168 a 169).
 
@@ -413,7 +415,7 @@ Quando falta tecido, a saída é enxerto ou o **retalho de SNOW**: um retalho da
 conceito: SNOW usa um retalho retrógrado da própria banda central, de base proximal, como reforço sobre o reparo na botoeira aguda com perda de substância.
 como: Uma prova de Ortopedia mostrou a técnica em imagem e pediu o autor.
 armadilha: Confundir com AIACHE, que usa as bandas laterais partidas, e não a central.
-alerta: A imagem não pôde ser conferida; o gabarito oficial foi mantido.
+alerta: A imagem é a do retalho de SNOW na Fig. 5.22 do Green (cap. 5, p. 171); o gabarito oficial foi confirmado.
 !fim
 
 # A botoeira crônica e as reconstruções {radar=confirmado}
@@ -441,7 +443,7 @@ Estágios I e II de BURTON vão para gesso seriado ou tala até a extensão tota
 
 A **tenotomia do terminal (FOWLER distal ou DOLPHIN)** cria de propósito um "martelo": cortando o aparelho transversalmente sobre a falange média, entre o terço médio e o proximal e **distal ao triangular**, a IFD perde tônus e o aparelho desliza proximal, aumentando a tensão na IFP. Só serve com **extensão passiva completa da IFP**; o ORL deve ser preservado (Green, p. 172). O Campbell (p. 3187) indica essa tenotomia na botoeira com IFP flexível.
 
-**CURTIS** organiza a cirurgia sob anestesia local, testando a extensão ativa a cada passo (Green, p. 172 a 174). A conclusão de STRAUCH: esgotar a tala, garantir mobilidade passiva e aceitar que um **déficit de 20 graus é comum**.
+**CURTIS** organiza a cirurgia sob anestesia local, testando a extensão ativa a cada passo (Green, p. 172 a 174). Com 1 ano, o déficit médio da IFP foi de **10 graus**, com melhora média de **31 graus**; no grupo que precisou do estágio 4, com déficit pré-operatório médio de 55 graus, restaram **17 graus**; 20 dos 23 pacientes melhoraram também a flexão (Green, p. 174). A conclusão de STRAUCH: esgotar a tala, garantir mobilidade passiva e aceitar que um **déficit de 20 graus é comum**.
 
 O Campbell (p. 3187 a 3188) lista as reconstruções que as bancas pedem por nome:
 
@@ -467,7 +469,7 @@ armadilha: Achar que o retinacular é cortado já no estágio 1; no 1 ele é só
 conceito: MATEV reloca uma banda lateral para refazer a central; AIACHE parte as duas bandas laterais e sutura as metades mediais na linha média; SNOW usa a própria central.
 como: A USP-SP 2024 pediu a técnica de MATEV; o CET-PR, a técnica das duas hemifitas laterais (grafada AICHE na prova); o TARO 2023, a técnica mostrada em imagem.
 armadilha: Trocar MATEV por AIACHE: hemibandeletas suturadas ao centro é AIACHE.
-alerta: O Campbell só nomeia a técnica de MATEV como "relocação das bandas laterais", sem detalhar que é uma só banda (`mao-1431`); a imagem de `mao-0183` não pôde ser conferida. Gabaritos oficiais mantidos.
+alerta: O Campbell só nomeia a técnica de MATEV como "relocação das bandas laterais", sem detalhar que é uma só banda (`mao-1431`, gabarito mantido). A imagem de `mao-0183` é a técnica de AIACHE na Fig. 71.70 do Campbell (cap. 71, p. 3187 e 3188); o gabarito oficial foi confirmado.
 !fim
 
 ## A botoeira reumatoide
@@ -565,6 +567,8 @@ A zona 9 é a dos **ventres musculares** (Green, p. 180): sutura em oito dos ven
 ## Reparo secundário e o polegar
 
 Depois de 4 a 6 semanas, com coto retraído, o Campbell (p. 3191) usa transferência do EIP, sutura lado a lado ou enxerto. No polegar, o EPL cortado na IF **não retrai** (adutor, abdutor curto e EPB se inserem na expansão), enquanto o **EPB retrai rápido** a partir da MF e contrai em 1 mês.
+
+Na MF do polegar (zona 3), STRAUCH sutura o EPL e o EPB com KESSLER 4-0 ou 3-0 e cross-stitch 5-0, repara a cápsula e mantém MF e IF em extensão por 4 semanas (fio ou tala); se só o EPB foi cortado, a IF fica livre. A **ausência congênita do EPB** não causa déficit de extensão da MF, e por isso o EPB isolado com EPL íntegro e extensão completa pode dispensar sutura; ainda assim, se a secção completa é vista na exploração aguda, STRAUCH o repara para evitar déficit tardio da MF (Green, p. 171).
 
 # Rupturas na artrite reumatoide {radar=confirmado}
 

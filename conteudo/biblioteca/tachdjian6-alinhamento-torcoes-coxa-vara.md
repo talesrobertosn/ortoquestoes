@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-alinhamento-torcoes-coxa-vara
-versao: 2
+versao: 3
 titulo: Alinhamento, torções e coxa vara na criança
 especialidade: pediatria
 acesso: gratis
@@ -71,8 +71,8 @@ alerta: O TARO 2006 (`pediatria-0818`) está sem gabarito oficial. O Tachdjian d
 !tabela Conduta na tíbia vara infantil, segundo o estágio (cap. 18)
 | Situação | Conduta |
 | --- | --- |
-| diagnóstico confirmado | tratar logo; observar é inadequado |
-| menor de 3 anos, estágio I ou II | órtese por no máximo 1 ano (sucesso em até metade, melhor se unilateral) |
+| diagnóstico confirmado | tratar logo; observar é inadequado (Tachdjian p. 642); o Campbell 15 (p. 1213) admite observação ou órtese entre 2 e 3 anos |
+| menor de 3 anos, estágio I ou II | órtese por no máximo 1 ano (Tachdjian p. 643; sucesso em até metade, melhor se unilateral); o Lovell and Winter mantém por 1,5 a 2 anos, até as alterações ósseas sumirem (p. 1278) |
 | sem correção com órtese | osteotomia antes dos 4 anos, com bom resultado em quase 90% |
 | estágios I, II e talvez III | crescimento guiado é alternativa (contraindicado com barra irressecável) |
 | estágio III depois dos 4 anos | osteotomia pode funcionar, com risco de recidiva crescente |
@@ -141,7 +141,7 @@ LANGENSKIÖLD desenhou em 1952 seis estágios que avançam com a idade (Tachdjia
 
 **O que os livros dizem de cada faixa.**
 - **I e II**: para LANGENSKIÖLD, voltavam ao normal com o tratamento.
-- **III e IV**: podiam voltar ao normal. O Tachdjian usa a transição entre os dois na Fig. 18.20: no **III** ainda **não há osso epifisário contínuo descendo** para dentro do defeito da metáfise; quando a epífise ossificada passa a descer para o defeito, a lesão caminha para o **IV**.
+- **III e IV**: podiam voltar ao normal. O Tachdjian usa a transição entre os dois na Fig. 18.20: no **III** ainda **não há osso epifisário contínuo descendo** para dentro do defeito da metáfise; quando a epífise ossificada passa a descer para o defeito, a lesão caminha para o **IV**. O Lovell and Winter (7ª ed., cap. 27, p. 1278) diz que o estágio IV já pode ter **barra inicial** através da fise deformada, que fica vertical; por isso pede realinhar até os 4 a 5 anos, antes de chegar ao IV. Nos Estados Unidos o IV aparece aos 4 a 5 anos, contra 7 a 8 na Finlândia de LANGENSKIÖLD (mesma página).
 - **V e VI**: recidivavam e tinham alterações irreversíveis. No **VI**, o Campbell descreve a parte medial da epífise **fundida em ângulo de 90 graus para baixo**: é a ponte óssea (barra) estabelecida.
 
 **Onde a fise para.** O Tachdjian é explícito: nos estágios **IV e V**, o simples realinhamento raramente funciona, porque **já houve uma parada parcial da fise**. Mesmo que a tomografia raramente mostre uma barra nítida, a lesão nesses estágios **se comporta como uma parada medial**, e ela evolui inevitavelmente para a ponte completa do **estágio VI**. A barra visível define o VI; o comportamento de barra começa no IV.
@@ -151,7 +151,7 @@ LANGENSKIÖLD desenhou em 1952 seis estágios que avançam com a idade (Tachdjia
 **Uma classificação mais nova.** A instituição do Tachdjian propôs três tipos: **A**, defeito metafisário medial parcialmente radiotransparente, com ou sem bico; **B**, defeito totalmente transparente, com a borda inferior em curva e sem queda da epífise; **C**, queda vertical da epífise e da metáfise, a epífise mergulhando na metáfise. O tipo **C** tem mau prognóstico e raramente se resolve com uma osteotomia.
 
 **O tratamento por estágio, no detalhe.**
-- **Órtese** (abaixo de 3 anos, I e II): sucesso em até metade; a órtese elástica de BLOUNT, com haste medial e faixa elástica abaixo do joelho, deu bom resultado em 65% das tíbias, mas **70% dos bilaterais** acabaram operados, contra **6% dos unilaterais**. O uso é diurno, durante a carga, ou em tempo integral; o tutor medial é dobrado a cada poucos meses até o eixo ficar neutro ou em valgo. Não se usa depois dos 3 anos, e o teste máximo é de **1 ano**, para ainda dar tempo de operar antes dos 4.
+- **Órtese** (abaixo de 3 anos, I e II): sucesso em até metade; a órtese elástica de BLOUNT, com haste medial e faixa elástica abaixo do joelho, deu bom resultado em 65% das tíbias, mas **70% dos bilaterais** acabaram operados, contra **6% dos unilaterais**. O uso é diurno, durante a carga, ou em tempo integral; o tutor medial é dobrado a cada poucos meses até o eixo ficar neutro ou em valgo. Não se usa depois dos 3 anos, e o teste máximo é de **1 ano** (Tachdjian, p. 643), para ainda dar tempo de operar antes dos 4. O Lovell and Winter (cap. 27, p. 1278) usa uma KAFO de haste medial única, joelho em extensão, 23 de 24 horas; espera melhora do ângulo metáfise-diáfise em 12 meses, suspende a órtese se aparecer o estágio III e, quando funciona, mantém por **1,5 a 2 anos**, até as alterações ósseas da tíbia medial se resolverem. Sobre observar, os livros divergem: o Tachdjian (p. 642) chama a observação da tíbia vara infantil confirmada de estratégia inadequada; o Campbell 15 (cap. 34, p. 1213) diz que observação ou órtese podem ser indicadas entre 2 e 3 anos de idade.
 - **Crescimento guiado** (placa extraperiosteal lateral, princípio da banda de tensão): alternativa nos estágios I, II e talvez III; a série de HEFLIN corrigiu o plano coronal em 78%. É **contraindicado com barra medial irressecável**. Quebra de parafuso, migração e rebote em varo acontecem; a família deve contar com pelo menos duas cirurgias. O Campbell registra falha de implante em cerca de 12%.
 - **Estágio III depois dos 4 anos**: a osteotomia isolada pode funcionar, mas o risco de recidiva cresce com cada mês de atraso.
 - **Estágios IV e V**: realinhamento com **epifisiólise medial** em menores de 10 anos com 2 anos ou mais de crescimento; 80% dos operados antes dos 7 anos precisaram depois só de correção angular; acima dos 7, a epifisiólise sozinha funcionou em menos da metade. Sem ela, a osteotomia simples num estágio IV ou V negligenciado tem **100% de recidiva** (Tachdjian, Fig. 18.25). Alternativa: epifisiodese lateral depois da osteotomia, aceitando a discrepância.
@@ -287,7 +287,7 @@ alerta: O gabarito do TARO 2012 (`pediatria-0407`) indica cirurgia com ângulo c
 
 # Coxa vara: o que o Campbell 15 acrescenta {radar=confirmado}
 
-O Campbell's Operative Orthopaedics, 15ª edição (cap. 32, pp. 1148 e 1149), descreve a coxa vara do desenvolvimento com três traços: **queda progressiva do ângulo cervicodiafisário**, **encurtamento progressivo** do membro e um **defeito na parte medial do colo**, de tecido cartilaginoso parecido com uma fise anormal, com células desarrumadas e ossificação atípica; o osso metafisário vizinho é osteoporótico. O mecanismo é mecânico: quando a criança anda, o colo fraco recebe mais força e entra em varo. Com o peso e a idade, a deformidade aumenta até o **trocanter maior ficar acima da cabeça**, e pode surgir **pseudartrose do colo**. **Depois dos 8 anos**, a chance de um quadril normal cai rapidamente.
+O Campbell's Operative Orthopaedics, 15ª edição (cap. 32, pp. 1166 e 1167), descreve a coxa vara do desenvolvimento com três traços: **queda progressiva do ângulo cervicodiafisário**, **encurtamento progressivo** do membro e um **defeito na parte medial do colo**, de tecido cartilaginoso parecido com uma fise anormal, com células desarrumadas e ossificação atípica; o osso metafisário vizinho é osteoporótico. O mecanismo é mecânico: quando a criança anda, o colo fraco recebe mais força e entra em varo. Com o peso e a idade, a deformidade aumenta até o **trocanter maior ficar acima da cabeça**, e pode surgir **pseudartrose do colo**. **Depois dos 8 anos**, a chance de um quadril normal cai rapidamente.
 
 **Para onde a cabeça vai.** O Tachdjian (cap. 16) completa o mecanismo: o colo fraco é deformado passivamente em varo pelos músculos e pelo peso, e a **fise da cabeça migra para baixo** através da área enfraquecida. Criar suporte para essa área é parte da lógica da osteotomia em Y de PAUWELS.
 

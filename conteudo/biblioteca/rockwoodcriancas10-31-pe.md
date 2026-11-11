@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-31-pe
-versao: 2
+versao: 3
 titulo: Fraturas, luxações e outras lesões do pé na criança
 especialidade: pediatria
 acesso: gratis
@@ -105,7 +105,7 @@ Dor e edema que persistem **mais de 2 meses** depois de uma "entorse" pedem inve
 !questoes central=pediatria-0626,pediatria-0596 treino=pediatria-1333,pediatria-1334
 conceito: O processo lateral do tálus quebra por dorsiflexão com inversão, o mesmo movimento da entorse em inversão, e passa despercebido em 42%; a lesão osteocondral do tálus da criança é sobretudo medial (79%), profunda, e começa sem cirurgia nos estágios I e II.
 como: TARO 2018 perguntou a que se assemelha o mecanismo da fratura do processo lateral do tálus na criança (entorse em inversão); TARO 2015 perguntou em que região a fratura osteocondral do tálus da criança é mais comum (medial).
-armadilha: Marcar eversão para o processo lateral, ou lateral para a osteocondral (as laterais predominam só no trauma do adulto jovem).
+armadilha: Marcar eversão para o processo lateral, ou lateral para a osteocondral (as laterais são mais ligadas ao trauma e mais sintomáticas, mas não predominam nem no adulto: BERNDT e HARTY acharam 56% mediais em 201 lesões de adultos, Fig. 31-10).
 !fim
 
 # Calcâneo {radar=oportunidade}

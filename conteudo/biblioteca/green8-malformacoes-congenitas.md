@@ -1,6 +1,6 @@
 ---
 id: green8-malformacoes-congenitas
-versao: 2
+versao: 3
 titulo: Malformações congênitas da mão e do antebraço
 especialidade: mao
 acesso: gratis
@@ -205,7 +205,7 @@ armadilha: Indicar o BILHAUT-CLOQUET quando um dos polegares é claramente menor
 
 # O polegar trifalângico, a hipoplasia e o gatilho {radar=confirmado}
 
-**O polegar trifalângico** pode ser isolado, sindrômico (HOLT-ORAM, anemia de FANCONI, DIAMOND-BLACKFAN) ou parte de uma duplicação (WASSEL VII). O Green (cap. 37, p. 1320) o divide em **duas formas**. Na primeira, o polegar parece quase normal e tem uma falange extra de tamanho variável: triangular (a falange delta, que entorta o polegar), trapezoidal ou retangular; o polegar opõe e tem tenar. Na segunda, a falange extra é completa e o dedo fica no plano dos outros: é a **mão de cinco dedos**, sem oposição, com tenar ausente e primeira comissura estreita. A herança é autossômica dominante com expressividade variável e alta penetrância; o Tachdjian cita a talidomida tomada entre o 45º e o 50º dia.
+**O polegar trifalângico** pode ser isolado, sindrômico (HOLT-ORAM, anemia de FANCONI, DIAMOND-BLACKFAN) ou parte de uma duplicação (WASSEL VII). O Green (cap. 37, p. 1320) o divide em **duas formas**. Na primeira, o polegar parece quase normal e tem uma falange extra de tamanho variável: triangular (a falange delta, que entorta o polegar), trapezoidal ou retangular; o polegar opõe e tem tenar. Na segunda, a falange extra é completa e o dedo fica no plano dos outros: é a **mão de cinco dedos**, sem oposição, com tenar ausente e primeira comissura estreita. O Campbell 15 (cap. 85, p. 3662) numera as duas formas: **tipo I** é a falange delta, com o polegar desviado para ulnar na interfalângica; **tipo II** é a **mão de cinco dedos**, com polegar mais longo, preensão lado a lado, tenar hipoplásico, polidactilia em geral, contratura importante da comissura em 60% e falange extra retangular (a média); entre as duas há a forma de transição, com falange trapezoidal. A herança é autossômica dominante com expressividade variável e alta penetrância; o Tachdjian cita a talidomida tomada entre o 45º e o 50º dia.
 
 O tratamento acompanha a forma. A falange extra pequena é observada para ver como cresce; a grande e em cunha pede fusão da articulação que menos se move com retirada de osso, preservando a que mais se move. Na duplicação com componente trifalângico, o Tachdjian descreve o on-top plasty: a base do polegar radial e a parte distal do ulnar formam um polegar só. Na mão de cinco dedos, **policiza-se** o dedo radial não oponível.
 
@@ -219,7 +219,7 @@ O tratamento acompanha a forma. A falange extra pequena é observada para ver co
 conceito: O gatilho da criança é isolado e da polia A1, com o nódulo de NOTTA proximal a ela; o polegar trifalângico vai da falange extra num polegar normal à mão de cinco dedos sem tenar e com comissura estreita.
 como: O TARO 2016 perguntou o tipo de polegar em gatilho da criança e o tipo de polegar trifalângico com comissura estreita e tenar ausente.
 armadilha: Chamar o gatilho do polegar de sindrômico ou pôr o nódulo na A2.
-alerta: O Green divide o polegar trifalângico em duas formas, sem numerar tipos; o gabarito oficial de `mao-0053` (tipo III) foi preservado.
+alerta: O Green divide o polegar trifalângico em duas formas sem numerar; o Campbell 15 (cap. 85, p. 3662) chama a mão de cinco dedos, com comissura estreita e tenar ausente, de tipo II. O gabarito oficial de `mao-0053` (tipo III) diverge e foi preservado.
 !fim
 
 # Os dedos curtos, tortos e dobrados {radar=confirmado}
@@ -241,13 +241,13 @@ Quatro diagnósticos que se confundem, separados pelo osso e pelo plano.
 
 **A deformidade de KIRNER** foi descrita em 1927. A radiografia mostra a fise da falange distal distorcida e alargada e a diáfise encurvada. A causa não é conhecida, o efeito funcional é pequeno e a cirurgia raramente se indica.
 
-**A camptodactilia** envolve pele palmar curta, flexor superficial curto ou mal inserido, placa volar e ligamentos retraídos. O Green (cap. 39, p. 1388) lembra que é mais comum nas artrogriposes distais e pode definir síndromes, como a de BEALS. Quando se opera: zetaplastia ao longo da crista da prega, extensão só até onde os feixes neurovasculares permitem, tenotomia do flexor superficial se ele contribui e o profundo funciona, liberação dos ligamentos de contenção da placa volar e fio em extensão por 2 a 3 semanas.
+**A camptodactilia** envolve pele palmar curta, flexor superficial curto ou mal inserido, placa volar e ligamentos retraídos. O Green (cap. 39, p. 1388) lembra que é mais comum nas artrogriposes distais e pode definir síndromes, como a de BEALS. Quando se opera: zetaplastia ao longo da crista da prega, extensão só até onde os feixes neurovasculares permitem, tenotomia do flexor superficial se ele contribui e o profundo funciona, liberação dos ligamentos de contenção da placa volar e fio em extensão por 2 a 3 semanas. O Campbell 15 (cap. 85, p. 3672 e 3673) acrescenta os números: atinge menos de 1% da população, cerca de **dois terços são bilaterais** (com gravidade assimétrica) e, sem tratamento, 80% pioram no estirão. Nenhum tratamento é previsível: as contraturas **leves, abaixo de 30 graus**, ficam no tratamento não operatório, e a cirurgia é considerada com cautela nas mais graves (20% melhoram sem cirurgia e só 35% com ela). A liberação do flexor superficial, quando a deformidade some com o punho fletido, deve ser feita até os 4 anos.
 
 !questoes central=mao-0516 relacionadas=mao-0249,mao-0146 treino=mao-2590
 conceito: Braquidactilia é falange média; clinodactilia é desvio radioulnar do mínimo por falange média trapezoidal; KIRNER é a falange distal do mínimo curvada para palmar e radial; a camptodactilia é a contratura em flexão da interfalângica proximal, associada a síndromes como a de BEALS.
 como: O TARO 2011 perguntou onde fica a deformidade de KIRNER; uma prova de Ortopedia, o local mais comum da braquidactilia; outra, o tratamento e as características da camptodactilia.
 armadilha: Pôr a KIRNER na falange média ou no plano radioulnar, que é o da clinodactilia.
-alerta: Os capítulos lidos não trazem o limite de 30 a 40 graus nem a frequência da bilateralidade na camptodactilia (`mao-0146`); o gabarito oficial foi preservado.
+alerta: Para `mao-0146`, o Campbell 15 (cap. 85, p. 3672 e 3673) traz cerca de dois terços de bilaterais e o tratamento não operatório abaixo de 30 graus; o gabarito oficial foi preservado.
 !fim
 
 # A macrodactilia {radar=confirmado}
@@ -364,7 +364,7 @@ alerta: O Tachdjian lista também a deficiência femoral e a tibial, o que aprox
 
 **O que é.** Uma ponte entre rádio e ulna, quase sempre **proximal**, que trava a rotação do antebraço. É **falha de diferenciação** (Tachdjian, cap. 12): por volta da 5ª semana, úmero, rádio e ulna dividem o mesmo pericôndrio; se a cavitação que os separa falha, a ossificação produz a ponte. Como os ossos se separam quando o antebraço do feto está em pronação, **quase todas as sinostoses ficam em pronação**. Associa-se a APERT, CARPENTER, artrogripose, KLINEFELTER, POLAND e síndrome alcoólica fetal; formas distais extensas lembram HOLT-ORAM.
 
-**O perfil.** Meninos um pouco mais (3 para 2), **bilateral em 80%**, isolada em um terço (Tachdjian). A criança chega entre **2 e 6 anos** (Green) com ausência indolor da rotação e leve contratura em flexão do cotovelo, porque o bebê quase não precisa girar o antebraço e o ombro e o punho compensam. A ponte começa cartilaginosa e só aparece na radiografia quando ossifica. Na clínica, 40% estão em menos de 30 graus de pronação e 40% em mais de 60.
+**O perfil.** Meninos um pouco mais (3 para 2), **bilateral em 80%** no Tachdjian (cap. 12) e em cerca de **60%** no Green 7ª ed. (cap. 38, p. 1350), isolada em um terço (Tachdjian). A criança chega entre **2 e 6 anos** (Green) com ausência indolor da rotação e leve contratura em flexão do cotovelo, porque o bebê quase não precisa girar o antebraço e o ombro e o punho compensam. A ponte começa cartilaginosa e só aparece na radiografia quando ossifica. Na clínica, 40% estão em menos de 30 graus de pronação e 40% em mais de 60 (o Green 7ª ed., p. 1350, também dá cerca de 40% fixos acima de 60 graus).
 
 !tabela As classificações da sinostose radioulnar (Tachdjian, cap. 12)
 | TACHDJIAN | Descrição | CLEARY e OMER | Descrição (frequência) |
@@ -377,13 +377,13 @@ alerta: O Tachdjian lista também a deficiência femoral e a tibial, o que aprox
 
 **O tratamento.** Três regras dos dois livros:
 
-- **restaurar a rotação não funciona**: a ressecção da ponte, com ou sem interposição, falha de modo uniforme (o Green 8ª ed. cita falha em 22 de 23 antebraços);
+- **restaurar a rotação não funciona**: a ressecção da ponte, com ou sem interposição, falha de modo uniforme (o Green 7ª ed., p. 1351, cita falha em 22 de 23 antebraços);
 - só a **posição** pode ser mudada, por **osteotomia derrotatória** (pela massa da sinostose, ou no rádio distal e na ulna proximal);
 - a indicação é a **pronação extrema que atrapalha**, em geral **acima de 60 graus**. O antebraço unilateral em neutro não se opera; o Tachdjian frequentemente desaconselha a cirurgia.
 
-**As posições.** Unilateral ou não dominante: entre neutro e 20 graus de supinação (Tachdjian) ou 0 a 15 graus de pronação (Green 8ª ed.); bilateral: a dominante entre neutro e 30 graus de pronação (10 a 20 no Green 8ª ed.) e a outra em neutro.
+**As posições.** Unilateral ou não dominante: entre neutro e 20 graus de supinação (Tachdjian) ou 0 a 15 graus de pronação (Green 7ª ed., p. 1351); bilateral: a dominante entre neutro e 30 graus de pronação (10 a 20 no Green 7ª ed., p. 1351) e a outra em neutro.
 
-**As complicações.** De 15 a 33% (Tachdjian): **síndrome compartimental**, comprometimento vascular, paralisia do nervo radial ou do interósseo posterior (por tração), infecção e perda de correção. Daí as precauções do Green 8ª ed.: ressecar alguns milímetros de osso no foco, fasciotomia profilática, internação com elevação e monitoração, e um pino que pode ser retirado à beira do leito para devolver um pouco da rotação.
+**As complicações.** De 15 a 33% (Tachdjian): **síndrome compartimental**, comprometimento vascular, paralisia do nervo radial ou do interósseo posterior (por tração), infecção e perda de correção. Daí as precauções do Green 7ª ed. (p. 1352): ressecar alguns milímetros de osso no foco, fasciotomia profilática, internação com elevação e monitoração, e um pino que pode ser retirado à beira do leito para devolver um pouco da rotação.
 
 **A luxação congênita da cabeça do rádio** (Green, p. 1350) costuma ser **bilateral**, anterior ou posterior; a cabeça é ovoide e o capítulo, hipoplásico. Raramente atrapalha na infância; a redução aberta com reconstrução do ligamento anular falha com frequência. No adolescente ou no adulto com dor, a **ressecção da cabeça** alivia.
 
@@ -437,6 +437,8 @@ armadilha: Achar que o KRUKENBERG funde o rádio e a ulna, ou que a prótese mel
 Três questões caíram neste subtema por proximidade e merecem um registro curto.
 
 **A deformidade de SPRENGEL** (Tachdjian, cap. 12) é a escápula alta congênita: a descida da escápula para entre a 9ª e a 12ª semana. A escápula fica alta, pequena e rodada, presa à coluna por músculos fibrosos e, em 16 a 55%, por um **osso omovertebral**; associa-se a KLIPPEL-FEIL, escoliose e anomalias de costelas. A abdução é limitada pela fixação da escápula, pela glenoide virada para baixo e pelos estabilizadores fracos. A gravidade se mede pela escala de CAVENDISH, e a cirurgia é indicada nos graus 3 e 4, de preferência **antes dos 8 anos**: GREEN (liberação extraperiosteal na borda medial), WOODWARD (desinserção do trapézio, levantador e romboides dos processos espinhosos e reinserção mais baixa, com ressecção do omovertebral) e MEARS (osteotomia do corpo da escápula). A **osteotomia da clavícula** é recomendada nas deformidades graves e nas crianças mais velhas **para prevenir a lesão do plexo braquial** ao abaixar a escápula.
+
+**Os livros divergem na idade e na clavícula.** O Campbell 15 (cap. 33, p. 1174 a 1177) tenta abaixar a escápula **por volta dos 3 anos**, porque a cirurgia fica mais difícil com o crescimento e o risco de plexopatia sobe; o omovertebral aparece em cerca de um terço no texto e em cerca de 50% na tabela de CAVENDISH; os autores usam o WOODWARD. Para a clavícula, o Campbell descreve a **morcelização** (dividir a clavícula a 2 cm de cada ponta, cortar em pedaços e devolvê-los ao tubo periosteal), não de rotina, mas como primeiro passo nas deformidades graves com risco de compressão neurovascular, e a osteotomia de 2 cm no meio da clavícula acima dos 8 anos. O Tachdjian (ePrancha 12.1, escapuloplastia de GREEN modificada) faz a osteotomia em galho verde, com a cortical posteroinferior intacta, e diz que a **morcelização da clavícula não é recomendada**.
 
 **A distrofia fascioescapuloumeral** (Tachdjian, cap. 35) é autossômica dominante, do cromossomo 4q35, com sintomas na segunda década. Os mais fracos são **trapézio, romboides e levantador da escápula**; o **deltoide permanece forte**, mas não abduz porque a escápula solta roda. A **artrodese escapulotorácica** devolve a base ao deltoide. Os membros inferiores costumam ser poupados e a vida é normal.
 
