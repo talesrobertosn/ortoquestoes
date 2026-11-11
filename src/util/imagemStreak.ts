@@ -1,24 +1,24 @@
-import { CAMINHO_VERTEBRA, COR_DESTAQUE, VERTEBRAS } from '../marca/Simbolo'
+import { ALTERNATIVAS, COR_DESTAQUE } from '../marca/Simbolo'
 import { SITE } from '../config'
 import { MARCOS_STREAK } from '../estado/streak'
 
 const LADO = 1080
 
 /** Símbolo do Orto Questões (ver src/marca/Simbolo.tsx) desenhado direto no
- * canvas: quatro vértebras, com a terceira, a certa, em dourado. */
+ * canvas: as três alternativas, com a do meio, a certa, em dourado. */
 export function desenharSelo(ctx: CanvasRenderingContext2D, x: number, y: number, tamanho: number, cor: string) {
-  const escala = tamanho / 64
-  const vertebra = new Path2D(CAMINHO_VERTEBRA)
+  const escala = tamanho / 100
   ctx.save()
   ctx.translate(x, y)
   ctx.scale(escala, escala)
-  for (const v of VERTEBRAS) {
-    ctx.save()
-    ctx.translate(v.x, v.y)
-    ctx.globalAlpha = v.certa ? 1 : 0.55
-    ctx.fillStyle = v.certa ? COR_DESTAQUE : cor
-    ctx.fill(vertebra)
-    ctx.restore()
+  for (const a of ALTERNATIVAS) {
+    ctx.globalAlpha = a.certa ? 1 : 0.55
+    ctx.fillStyle = a.certa ? COR_DESTAQUE : cor
+    ctx.beginPath()
+    ctx.arc(a.cx, a.cy, a.r, 0, Math.PI * 2)
+    ctx.fill()
+    caminhoArredondado(ctx, a.x, a.y, a.largura, a.altura, a.altura / 2)
+    ctx.fill()
   }
   ctx.restore()
 }

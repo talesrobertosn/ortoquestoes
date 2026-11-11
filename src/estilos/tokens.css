@@ -156,8 +156,8 @@
   /* Símbolo da marca (src/marca/Simbolo.tsx): ladrilho, vértebras e a certa. */
   --marca-ladrilho: #14655e;
   --marca-contorno: none;
-  --marca-osso: #ffffff;
-  --marca-osso-opacidade: 0.55;
+  --marca-osso: #f6eedb;
+  --marca-osso-opacidade: 0.5;
   --marca-certa: #f4cf7c;
 
   /* Atlas unificado (01/11/2026): as peças comuns das páginas (base.css, seção "Atlas"). Papel claro para ler,

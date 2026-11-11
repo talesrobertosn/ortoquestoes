@@ -71,7 +71,7 @@ export function Cabecalho({ caminho }: { caminho: string }) {
     <header className="cabecalho nao-imprime">
       <div className="conteudo cabecalho__interno">
         <a className="cabecalho__marca" href={href('/')} aria-label="Orto Questões, página inicial">
-          <span className="cabecalho__selo"><MarcaHorizontal altura={22} /></span>
+          <span className="cabecalho__selo"><MarcaHorizontal altura={22} simbolo={32} /></span>
         </a>
         <nav className="cabecalho__nav cabecalho__nav-principal" aria-label="Principal">
           {LINKS.map((link) => (
