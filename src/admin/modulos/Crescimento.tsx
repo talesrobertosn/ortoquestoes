@@ -14,6 +14,7 @@ import { Carregando, Estado, Faixa, Segmento } from '../ui/kit'
 import { Tabela } from '../ui/tabela'
 import { contarPorPeriodo, type Agrupamento } from './ritmo'
 import { FaixaMetas } from './metasResumo'
+import { SemanaTipica } from './semanaTipica'
 import { PulsoCrescimento, JornadaDeCompra, usarJornada } from './PulsoCrescimento'
 import { Canais, Duplicadas, ForaDoPublico, RetencaoPorTipo } from './qualidade'
 
@@ -25,39 +26,12 @@ import { Canais, Duplicadas, ForaDoPublico, RetencaoPorTipo } from './qualidade'
 
 /* ───────────── Datas de São Paulo ───────────── */
 
-const FUSO = 'America/Sao_Paulo'
 const DIA_MS = 86_400_000
-let fmt: Intl.DateTimeFormat | null = null
-function emSP(d: Date) {
-  fmt ??= new Intl.DateTimeFormat('en-CA', { timeZone: FUSO, year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', hourCycle: 'h23' })
-  const p = Object.fromEntries(fmt.formatToParts(d).map(x => [x.type, x.value]))
-  const dia = `${p.year}-${p.month}-${p.day}`
-  return { dia, hora: Number(p.hour) % 24, semana: (new Date(`${dia}T12:00:00Z`).getUTCDay() + 6) % 7 }
-}
-const DIAS = ['segunda', 'terça', 'quarta', 'quinta', 'sexta', 'sábado', 'domingo']
-const DIAS_CURTOS = ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom']
-const TURNOS: Array<{ nome: string; de: number; ate: number }> = [{ nome: 'de madrugada', de: 0, ate: 6 }, { nome: 'de manhã', de: 6, ate: 12 }, { nome: 'à tarde', de: 12, ate: 18 }, { nome: 'à noite', de: 18, ate: 24 }]
-const turnoDe = (h: number) => TURNOS.findIndex(t => h >= t.de && h < t.ate)
-const artigo = (dia: number) => dia >= 5 ? 'no' : 'na'
 const fim = (n: number, um: string, varios: string) => `${inteiro(n)} ${n === 1 ? um : varios}`
-
-/** Quando acontece: por dia da semana, por hora e o par dia × turno mais forte. */
-function quando(instantes: Date[]) {
-  const semana = Array(7).fill(0) as number[], hora = Array(24).fill(0) as number[]
-  const grade = Array.from({ length: 7 }, () => [0, 0, 0, 0])
-  for (const t of instantes) { const { hora: h, semana: s } = emSP(t); semana[s]++; hora[h]++; grade[s][turnoDe(h)]++ }
-  let melhor = { dia: 0, turno: 0, n: -1 }
-  grade.forEach((l, d) => l.forEach((n, k) => { if (n > melhor.n) melhor = { dia: d, turno: k, n } }))
-  const melhorDia = semana.indexOf(Math.max(...semana)), piorDia = semana.indexOf(Math.min(...semana))
-  const melhorHora = hora.indexOf(Math.max(...hora))
-  const turnos = [0, 1, 2, 3].map(k => grade.reduce((s, l) => s + l[k], 0))
-  return { semana, hora, grade, melhor, melhorDia, piorDia, melhorHora, turnos, total: instantes.length }
-}
-const frase = (q: ReturnType<typeof quando>) => `${artigo(q.melhor.dia)} ${DIAS[q.melhor.dia]} ${TURNOS[q.melhor.turno].nome}`
 
 /* ───────────── Página ───────────── */
 
-const SECOES: Array<[string,string]> = [['cr-pulso','Movimento'],['cr-funil','Da chegada à compra'],['cr-estudo','Estudo'],['cr-retencao','Continuidade'],['cr-quando','Horários'],['cr-perfis','Público'],['cr-origem','Canais'],['cr-indicacoes','Indicações'],['cr-dados','Qualidade']]
+const SECOES: Array<[string,string]> = [['cr-pulso','Movimento'],['cr-funil','Da chegada à compra'],['cr-estudo','Estudo'],['cr-retencao','Continuidade'],['cr-quando','Semana típica'],['cr-perfis','Público'],['cr-origem','Canais'],['cr-indicacoes','Indicações'],['cr-dados','Qualidade']]
 
 export default function Crescimento() {
   const p = usarPainel()
@@ -73,7 +47,7 @@ export default function Crescimento() {
     const cadastros = p.usuariosReais.map(u => new Date(u.criado_em)).filter(d => Number.isFinite(d.getTime()))
     const assinaturas = [...primeira.values()]
     const contar = (a: Agrupamento) => { const [c, s] = contarPorPeriodo([cadastros, assinaturas], a); return { c, s } }
-    return { cadastros, assinaturas, dia: contar('dia'), semana: contar('semana'), mes: contar('mes'), qc: quando(cadastros), qa: quando(assinaturas) }
+    return { cadastros, assinaturas, dia: contar('dia'), semana: contar('semana'), mes: contar('mes') }
   }, [p.usuariosReais, p.reais, p.cobrancas])
 
   const estudo = useMemo(() => {
@@ -136,26 +110,8 @@ export default function Crescimento() {
         <Adocao />
       </Secao>
 
-      <Secao id="cr-quando" numero={3} titulo="Quando as coisas acontecem" texto="Dia da semana e hora do dia, desde o começo. A coluna mais alta fica com a cor cheia.">
-        <div className="cr-grade-2">
-          <CartaoQuando titulo="Cadastros por dia da semana" q={base.qc} tipo="semana" conclusao={base.qc.total ? <>Mais cadastros <b>{artigo(base.qc.melhorDia)} {DIAS[base.qc.melhorDia]}</b> ({inteiro(base.qc.semana[base.qc.melhorDia])}); menos {artigo(base.qc.piorDia)} {DIAS[base.qc.piorDia]}.</> : null} />
-          <CartaoQuando titulo="Cadastros por hora" q={base.qc} tipo="hora" conclusao={base.qc.total ? <>O horário mais forte é das <b>{base.qc.melhorHora}h às {base.qc.melhorHora + 1}h</b>; o par mais forte é <b>{frase(base.qc)}</b>.</> : null} />
-          <CartaoQuando titulo="Assinaturas por dia da semana" q={base.qa} tipo="semana" cor="ouro" conclusao={base.qa.total ? <>Mais assinaturas <b>{artigo(base.qa.melhorDia)} {DIAS[base.qa.melhorDia]}</b> ({inteiro(base.qa.semana[base.qa.melhorDia])} de {inteiro(base.qa.total)}).</> : null} />
-          <CartaoQuando titulo="Assinaturas por hora" q={base.qa} tipo="hora" cor="ouro" conclusao={base.qa.total ? <>Assinam mais das <b>{base.qa.melhorHora}h às {base.qa.melhorHora + 1}h</b>; o par mais forte é <b>{frase(base.qa)}</b>.</> : null} />
-          {estudo && <div className="cr-cartao">
-            <h3>Pessoas estudando por dia da semana <small>média por dia</small></h3>
-            <p className="cr-conclusao">O dia com mais gente estudando é <b>{DIAS[estudo.melhorDia]}</b> ({inteiro(Math.round(estudo.mediaPessoas[estudo.melhorDia]))} pessoas em média); o mais fraco, {DIAS[estudo.piorDia]}.</p>
-            <Colunas descricao="Média de pessoas estudando por dia da semana" altura={190} media={false} destacarMaior
-              pontos={estudo.mediaPessoas.map((v, i) => ({ longo: DIAS[i], curto: DIAS_CURTOS[i], partes: [Math.round(v * 10) / 10] }))} series={[{ nome: 'Pessoas em média' }]} />
-          </div>}
-          {estudo && <div className="cr-cartao">
-            <h3>Questões por dia da semana <small>média por dia</small></h3>
-            <p className="cr-conclusao">Em média, <b>{inteiro(Math.round(estudo.mediaQuestoes[estudo.mediaQuestoes.indexOf(Math.max(...estudo.mediaQuestoes))]))} questões</b> {artigo(estudo.mediaQuestoes.indexOf(Math.max(...estudo.mediaQuestoes)))} {DIAS[estudo.mediaQuestoes.indexOf(Math.max(...estudo.mediaQuestoes))]}, o dia mais puxado.</p>
-            <Colunas descricao="Média de questões respondidas por dia da semana" altura={190} media={false} destacarMaior cor="claro"
-              pontos={estudo.mediaQuestoes.map((v, i) => ({ longo: DIAS[i], curto: DIAS_CURTOS[i], partes: [Math.round(v)] }))} series={[{ nome: 'Questões em média' }]} />
-          </div>}
-        </div>
-        <Turnos qc={base.qc} qa={base.qa} />
+      <Secao id="cr-quando" numero={3} titulo="A semana típica e os horários" texto="A média de cada dia da semana (cadastros, assinaturas, recebido, quem estuda e quantas questões) e a grade de dia × hora. Hoje fica de fora das médias.">
+        <SemanaTipica calor />
       </Secao>
 
       <Perfis />
@@ -199,24 +155,6 @@ function CartaoContagem({ titulo, sub, pontos, nomes, cor = 'verde' }: { titulo:
     <button type="button" className="cr-ver" aria-expanded={aberta} onClick={() => abrir(!aberta)}>{aberta ? 'Esconder os números' : 'Ver os números'}<Icone nome={aberta ? 'cima' : 'baixo'} tamanho={14} /></button>
     {aberta && <ul className="cr-lista-numeros">{[...pontos].reverse().map(x => <li key={x.longo}><span>{x.longo}{x.parcial ? ' (em andamento)' : ''}</span><b>{inteiro(x.partes[0])}</b></li>)}</ul>}
   </article>
-}
-
-function CartaoQuando({ titulo, q, tipo, cor = 'verde', conclusao }: { titulo: string; q: ReturnType<typeof quando>; tipo: 'semana' | 'hora'; cor?: 'verde' | 'ouro'; conclusao: ReactNode }) {
-  const pontos: PontoColuna[] = tipo === 'semana' ? q.semana.map((n, i) => ({ longo: DIAS[i], curto: DIAS_CURTOS[i], partes: [n] }))
-    : q.hora.map((n, h) => ({ longo: `Das ${h}h às ${h + 1}h`, curto: `${h}h`, partes: [n] }))
-  return <article className="cr-cartao">
-    <h3>{titulo} <small>{fim(q.total, 'no total', 'no total')}</small></h3>
-    {conclusao ? <p className="cr-conclusao">{conclusao}</p> : <p className="a3-mudo">Ainda não há dados.</p>}
-    {q.total > 0 && <Colunas descricao={titulo} pontos={pontos} series={[{ nome: titulo }]} cor={cor} media={false} destacarMaior altura={tipo === 'semana' ? 190 : 170} />}
-  </article>
-}
-
-function Turnos({ qc, qa }: { qc: ReturnType<typeof quando>; qa: ReturnType<typeof quando> }) {
-  const linha = (q: ReturnType<typeof quando>) => TURNOS.map((t, k) => ({ nome: t.nome.replace(/^(de|à) /, ''), valor: q.turnos[k], detalhe: `${t.de}h às ${t.ate}h` }))
-  return <div className="cr-grade-2">
-    <article className="cr-cartao"><h3>Cadastros por turno</h3><Barras itens={linha(qc)} total={qc.total} /></article>
-    <article className="cr-cartao"><h3>Assinaturas por turno</h3><Barras itens={linha(qa)} total={qa.total} cor="ouro" /></article>
-  </div>
 }
 
 /* ───────────── 5. Retenção ───────────── */

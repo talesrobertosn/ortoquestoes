@@ -393,14 +393,15 @@ const compradaEm = (a: AssinaturaBase) => new Date(a.criada_em ?? a.inicio_perio
  * para decidir já passou (fim + folga antes de hoje); os que ainda podem renovar ficam de fora para
  * não puxar a taxa para baixo.
  */
-export function renovacaoDoPix(assinaturas: AssinaturaBase[], agora = new Date(), folgaDias = 30) {
+export function renovacaoDoPix(assinaturas: AssinaturaBase[], agora = new Date(), folgaDias = 30, ateAgora = false) {
   const folga = folgaDias * 86_400_000
+  // ateAgora: entra todo Pix que já venceu, mesmo dentro da folga (quem ainda não pagou conta como não renovado, por enquanto).
   const pagas = assinaturas.filter(a => a.status !== 'reembolsada' && (a.ultima_cobranca_em || pagaSemCobranca(a)))
   let encerrados = 0, renovados = 0
   for (const a of pagas) {
     if (meioDe(a) !== 'pix' || !a.fim_periodo) continue
     const fim = new Date(a.fim_periodo).getTime()
-    if (fim + folga > agora.getTime()) continue
+    if ((ateAgora ? fim : fim + folga) > agora.getTime()) continue
     encerrados++
     const inicio = compradaEm(a)
     if (pagas.some(b => b !== a && b.id_usuario === a.id_usuario && compradaEm(b) > inicio && compradaEm(b) <= fim + folga)) renovados++

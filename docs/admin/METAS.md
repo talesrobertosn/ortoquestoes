@@ -3,7 +3,10 @@
 ## Onde fica
 Painel › Financeiro › **Metas** (`src/admin/modulos/Metas.tsx`). Faixas resumidas em Início, Crescimento e Financeiro (`metasResumo.tsx`).
 
-## Cenário oficial
+## Plano oficial (desde 11/11/2026)
+`META_OFICIAL = PLANO_2026_11` (`plano-2026-11-11`): o modelo de `src/admin/dados/projecao.ts` (público finito de cerca de 2.000 pessoas alcançáveis, turma nova de R1 em março, 37% dos cadastros assinando, 80% mensal nas compras novas, 90% dos mensais no Pix e 80% deles renovando) rodado com os números reais de 11/11/2026 e congelado. Novembro: 125 cadastros, 50 primeiras assinaturas, 88 pagantes e R$ 5.460 recebidos; outubro/2027: 351 pagantes e R$ 15.037. O simulador da página roda o mesmo modelo com os números de hoje. A versão moderada abaixo continua guardada, só para comparação.
+
+## Cenário moderado (05/11/2026, guardado)
 `META_MODERADA` em `src/admin/dados/metas.ts`, versão `moderado-2026-11`, registrada em 05/11/2026: 12 meses
 (nov/2026 a out/2027), faturamento somado de R$ 36.403. **Esta versão nunca muda.** O SQL grava a mesma tabela em
 `metas_comerciais` (versão `moderado-2026-11`, com `on conflict do nothing`).
