@@ -141,7 +141,7 @@ A ausência da lordose cervical, o aumento das partes moles pré-vertebrais e a 
 Fonte: Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 21, Fig. 21-1. Pseudossubluxação de C2 sobre C3 em flexão: o corpo de C2 parece deslocado sobre C3, mas o arco posterior de C2 fica alinhado na linha que une os arcos posteriores de C1 e C3 (linha de SWISCHUK e ROWE).
 !fim
 
-!questoes central=pediatria-0851 relacionadas=pediatria-0717,pediatria-0638 treino=pediatria-1241,pediatria-1250
+!questoes central=pediatria-0851 relacionadas=pediatria-0717,pediatria-0638,conceitos-basicos-0055,coluna-0299 treino=pediatria-1241,pediatria-1250
 conceito: A linha de SWISCHUK e ROWE (espinhosos de C1 a C3, com o de C2 a até 3 mm) separa a pseudossubluxação C2-C3 fisiológica, comum até cerca de 11 anos, da subluxação verdadeira; cunha anterior, ADI até 4,5 mm e partes moles alargadas pelo choro são variantes normais.
 como: TEOT 2021 e TARO 2020 perguntaram o que a linha de SWISCHUK avalia (pseudoluxação C2-C3); TARO 2019 perguntou em que nível a ossificação incompleta mais simula fratura por compressão (C3).
 armadilha: Tratar a pseudossubluxação como lesão, ou achar que a linha de SWISCHUK avalia o ligamento transverso ou o os odontoideum.

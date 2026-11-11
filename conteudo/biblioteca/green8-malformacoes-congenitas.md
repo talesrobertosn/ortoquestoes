@@ -215,7 +215,7 @@ O tratamento acompanha a forma. A falange extra pequena é observada para ver co
 
 **O polegar aduzido congênito** (clasped thumb) é a deficiência do mecanismo extensor; o Tachdjian traz a classificação de TSUYUGUCHI (flexível ou rígido), e a tala antes de 1 ano funciona nas formas flexíveis.
 
-!questoes central=mao-0061 relacionadas=mao-0053
+!questoes central=mao-0061 relacionadas=mao-0053,pediatria-0785
 conceito: O gatilho da criança é isolado e da polia A1, com o nódulo de NOTTA proximal a ela; o polegar trifalângico vai da falange extra num polegar normal à mão de cinco dedos sem tenar e com comissura estreita.
 como: O TARO 2016 perguntou o tipo de polegar em gatilho da criança e o tipo de polegar trifalângico com comissura estreita e tenar ausente.
 armadilha: Chamar o gatilho do polegar de sindrômico ou pôr o nódulo na A2.
@@ -387,7 +387,7 @@ alerta: O Tachdjian lista também a deficiência femoral e a tibial, o que aprox
 
 **A luxação congênita da cabeça do rádio** (Green, p. 1350) costuma ser **bilateral**, anterior ou posterior; a cabeça é ovoide e o capítulo, hipoplásico. Raramente atrapalha na infância; a redução aberta com reconstrução do ligamento anular falha com frequência. No adolescente ou no adulto com dor, a **ressecção da cabeça** alivia.
 
-!questoes central=mao-0307 relacionadas=mao-0024,mao-0297,mao-0352 treino=mao-2587
+!questoes central=mao-0307 relacionadas=mao-0024,mao-0297,mao-0352,pediatria-0736 treino=mao-2587
 conceito: A ressecção não devolve a rotação; a osteotomia derrotatória muda a posição e se indica acima de 60 graus de pronação com limitação; a complicação clássica é a síndrome compartimental; TACHDJIAN I é sem cabeça e III é fibrosa.
 como: O TEOT 2024 perguntou o tratamento da sinostose unilateral em neutro; o TARO 2018, a complicação da derrotação de 90 graus; o CET-PR e a SBOT-SP, a classificação de TACHDJIAN.
 armadilha: Indicar a ressecção da sinostose para devolver a rotação, ou operar o antebraço em neutro.

@@ -250,7 +250,7 @@ O Sizínio Hebert (cap. 16, Joelho do adulto, tratamento medicamentoso da artros
 | Gabapentina | Canais de cálcio | Útil na dor neuropática |
 !fim
 
-!questoes central=conceitos-basicos-0022
+!questoes central=conceitos-basicos-0022 relacionadas=conceitos-basicos-0294
 conceito: Analgésicos não opioides agem pela via das prostaglandinas; a aspirina e os AINEs inibem a COX, e o mecanismo do paracetamol é dado como desconhecido.
 como: O TARO 2019 perguntou o mecanismo da dipirona no controle da dor entre COX-1, serotonina, citocromo P450 e prostaglandinas centrais.
 armadilha: Marcar COX-1, que descreve a aspirina e os AINEs com ação periférica.

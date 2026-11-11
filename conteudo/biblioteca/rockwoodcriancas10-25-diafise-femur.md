@@ -161,7 +161,7 @@ Popularizadas por METAIZEAU, são o padrão para as fraturas da diáfise média 
 
 **Resultados.** No estudo multicêntrico de 234 fraturas, o mau resultado foi **5 vezes** mais provável acima de 108,5 libras (cerca de 49 kg) e quase **4 vezes** acima de **11 anos**. HO: 34% de complicações a partir de 10 anos, 9% abaixo. Em 351 fraturas, uma pseudartrose, uma infecção, nenhuma necrose, cerca de 12% de consolidação viciosa (varo leve) e 3% de discrepância relevante. Nos pré-escolares, hipercrescimento acima de 1 cm em 8,2%: técnica pouco indicada antes da idade escolar. A retirada é feita em 6 a 12 meses na maioria dos centros; deixadas, podem migrar com o crescimento e criar ponto de fratura (Fig. 25-13).
 
-!questoes central=pediatria-0623,pediatria-0647,pediatria-0907 relacionadas=pediatria-0749 treino=pediatria-1127,pediatria-1128,pediatria-1136
+!questoes central=pediatria-0623,pediatria-0647,pediatria-0907 relacionadas=pediatria-0749,trauma-0828,pediatria-0673 treino=pediatria-1127,pediatria-1128,pediatria-1136
 conceito: Hastes elásticas: 5 a 11 anos, estável, menos de 50 kg; cada haste 0,4 do canal (40%, total cerca de 80%); pioram acima de 11 anos, acima de 49 kg e nas instáveis no comprimento; causam mais dor e espasmo que a fixação rígida.
 como: TARO 2018 perguntou o preenchimento do istmo (70% a 80%); TARO 2019 trouxe 8 anos, 60 kg e fratura multifragmentada (placa submuscular); CET-PR, oblíqua longa instável aos 7 anos (placa em ponte).
 armadilha: Indicar hastes elásticas só pela idade, esquecendo peso e estabilidade.

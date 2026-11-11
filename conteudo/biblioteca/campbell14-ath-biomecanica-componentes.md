@@ -51,7 +51,7 @@ O roteiro deste resumo:
 
 **O centro de rotação.** A posição do centro de rotação, de cima para baixo, **afeta as forças geradas em torno do implante**. Num modelo matemático, **a força de reação articular foi menor com o centro na posição anatômica do que com ele superior e lateral, ou posterior**. O deslocamento **só superior, sem lateralização**, aumenta pouco os estresses no osso periacetabular, o que importa na displasia e na revisão com falta de osso em cima: uma posição um pouco cefálica dá mais cobertura em osso viável. Ainda assim, os estudos clínicos mostram **mais lucências progressivas e migração** quando o centro fica fora da posição anatômica, na protrusão, na displasia e na revisão (p. 180).
 
-!questoes central=quadril-0054 relacionadas=quadril-0129,quadril-0330,quadril-0032 treino=quadril-0723
+!questoes central=quadril-0054 relacionadas=quadril-0129,quadril-0330,quadril-0032,quadril-0008,quadril-0486 treino=quadril-0723
 conceito: Braço do peso para o dos abdutores 2,5 para 1 (4 para 1 na artrose); carga na cabeça 3 vezes o peso; CHARNLEY medializa o acetábulo (encurta o braço do peso) e lateraliza o trocânter (alonga o dos abdutores); offset maior alonga o braço abdutor e reduz a força exigida; colo curto e rotação externa encurtam o braço abdutor; o centro superior e lateral aumenta as forças em torno do implante.
 como: As provas pedem o efeito da medialização e do offset (Ortopedia), o conceito de CHARNLEY (TEOT 2024), o que encurta o braço abdutor (TARO 2013) e o efeito do centro de rotação superior e lateral (TARO 2014).
 alerta: O Campbell associa o encurtamento do braço abdutor à deformidade em rotação externa (p. 180), mas o gabarito oficial do TARO 2013 (`quadril-0330`) é colo curto com rotação medial; o gabarito foi preservado.
@@ -89,7 +89,7 @@ alerta: O Campbell associa o encurtamento do braço abdutor à deformidade em ro
 
 **Na cúpula não cimentada**, o dorso metálico é obrigatório. Se a cúpula for um pouco **menor** que a cavidade, a carga vai ao **polo**, com folgas periféricas; se for um pouco **maior**, a carga vai à **periferia**, com risco de **fratura da borda** ao impactar. As deformações periféricas, perpendiculares à borda, estabilizam a cúpula; as mediais à borda empurram para fora e desestabilizam (Fig. 3.5). Há shielding também na pelve: a densidade do osso esponjoso caiu 18% em 1 ano (p. 183).
 
-!questoes central=quadril-0128 relacionadas=quadril-0151,quadril-0055,quadril-0079,quadril-0174,quadril-0038,quadril-0056 treino=quadril-0724,quadril-0725,quadril-0726
+!questoes central=quadril-0128 relacionadas=quadril-0151,quadril-0055,quadril-0079,quadril-0174,quadril-0038,quadril-0056,quadril-0477 treino=quadril-0724,quadril-0725,quadril-0726
 conceito: DORR A taça de champanhe, B perda medial e posterior, C chaminé (perda de grande parte da medial e posterior, mulheres idosas, pior para não cimentada); menor módulo = menos estresse na haste e mais no osso; rigidez na quarta potência do diâmetro; hastes grossas e não cimentadas de fixação distal blindam mais; maior perda óssea na cortical proximal e medial; acetábulo cimentado com polietileno espesso e subcondral preservado.
 como: O TEOT 2024 e o TARO 2024 cobraram DORR; o TEOT 2023, o módulo de elasticidade; o SBOT-SP, o tipo de haste que mais blinda; provas de Ortopedia e o TEOT 2022, o polietileno e o subcondral.
 !fim

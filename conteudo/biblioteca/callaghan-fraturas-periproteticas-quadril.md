@@ -90,7 +90,7 @@ A alfa-defensina aparece no The Adult Hip (cap. 81, p. 1042): é um peptídeo an
 
 O ENARE R4 de 2024 juntou essas peças num caso: ATQ **não cimentada há três semanas**, queda em casa, dor e dificuldade para andar, alfa-defensina de 5,4. O gabarito oficial é a **fratura periprotética do componente femoral**. O raciocínio que os livros sustentam é o do mecanismo e do momento: haste não cimentada é a que mais fratura no início, por isso queda de baixa energia com dor nova e incapacidade de carga numa prótese recente aponta primeiro para fratura; soltura asséptica é evento tardio, e o próprio capítulo lembra que marcadores inflamatórios sobem com a fratura.
 
-!questoes central=quadril-0230
+!questoes central=quadril-0230 relacionadas=quadril-0192
 conceito: ATQ não cimentada recente com queda, dor e incapacidade de carga = fratura periprotética femoral até prova em contrário; a haste não cimentada é a que mais fratura e os marcadores inflamatórios sobem com a própria fratura.
 como: O ENARE R4 2024 deu ATQ não cimentada de três semanas, queda e alfa-defensina de 5,4, e pediu o diagnóstico mais provável.
 armadilha: Fixar-se no número do exame e marcar infecção, ignorando a queda, o tempo curto e a dor nova.
