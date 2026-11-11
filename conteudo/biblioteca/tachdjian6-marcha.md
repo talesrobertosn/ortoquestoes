@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-marcha
-versao: 1
+versao: 2
 titulo: Marcha na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Tachdjian's Pediatric Orthopaedics
 edicao: 6ª edição (2021)
 capitulo: Capítulo 5 · Gait Analysis
 autores: John A. HERRING (editor)
-fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 5 (p. 61 a 68), cap. 6 (p. 69 a 72), cap. 3 (p. 34), cap. 4 (p. 53 e 54), cap. 17 (p. 625 e 626), cap. 18 (p. 663 e 664, aprox.), cap. 20 (p. 808), cap. 31 (p. 1422 a 1435 e 1457) e cap. 35 (p. 1709 e 1710, aprox.); Campbell's Operative Orthopaedics, 15ª ed., cap. 3 (p. 192), cap. 7 (p. 358.e1) e cap. 35 (análise de marcha e joelho rígido); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 1 (Marcha normal e patológica), cap. 9.1, cap. 10, cap. 14 e cap. 21.5 (páginas sem numeração impressa no PDF, citadas pelo capítulo). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 5 (p. 61 a 68), cap. 6 (p. 69 a 72), cap. 3 (p. 34), cap. 4 (p. 53 e 54), cap. 17 (p. 625 e 626), cap. 18 (p. 663 e 664, aprox.), cap. 20 (p. 808), cap. 31 (p. 1422 a 1435 e 1457) e cap. 35 (p. 1709 e 1710); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 4 (p. 92 e 116), cap. 16 (p. 591), cap. 23 (p. 991), cap. 27 (p. 1262 e 1264) e cap. 28 (p. 1360); Campbell's Operative Orthopaedics, 15ª ed., cap. 4 (p. 191 e 192), cap. 7 (p. 358.e1), cap. 35 (análise de marcha e joelho rígido) e cap. 38 (p. 1358); Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., cap. 1 (Marcha normal e patológica), cap. 9.1, cap. 10, cap. 14 e cap. 21.5 (páginas sem numeração impressa no PDF, citadas pelo capítulo). As páginas citadas são as impressas.
 subtemas: Marcha na criança
 resumo: Apoio 60% e balanço 40%, com duplo apoio nos 10% iniciais e finais e apoio simples nos 40% centrais; passo é calcanhar a calcanhar dos dois pés, passada é do mesmo pé ao mesmo pé; centro de gravidade anterior a S2, mais baixo no duplo apoio e mais alto no médio apoio; seis determinantes de SAUNDERS; flexão máxima do joelho (60°) no balanço inicial; ângulo de progressão do pé 10 a 15° externo; abdutores cerca de 2,5 vezes o peso; padrão adulto aos 7 anos; antálgica com apoio curto, TRENDELENBURG com tronco sobre o quadril afetado, DUCHENNE com hiperlordose, bamboleio e mais duplo apoio; agachamento do diplégico; anteversão femoral com patela medial no apoio; discrepância acima de 2 cm (3,7%) gera assimetria.
 ---
@@ -27,7 +27,7 @@ O Campbell's Operative Orthopaedics, 15ª ed., entra nas forças sobre o quadril
 
 ## Apoio e balanço
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 5, p. 61), divide o ciclo em duas fases. A **fase de apoio** é o tempo em que o membro está em contato com o solo e sustenta o peso do corpo. A **fase de balanço** é o tempo em que o membro avança no ar, enquanto o peso fica todo no membro contralateral. Em pessoas normais, **o apoio ocupa 60% do ciclo e o balanço 40%**. Essa proporção é constante entre indivíduos normais, mas muda com a velocidade: quanto mais rápido se anda, menor o tempo de duplo apoio; na corrida, o duplo apoio desaparece e dá lugar ao **duplo voo**, período em que nenhum dos pés toca o chão.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 5, p. 61), divide o ciclo em duas fases. A **fase de apoio** é o tempo em que o membro está em contato com o solo e sustenta o peso do corpo. A **fase de balanço** é o tempo em que o membro avança no ar, enquanto o peso fica todo no membro contralateral. Em pessoas normais, **o apoio ocupa 60% do ciclo e o balanço 40%**. Essa proporção é constante entre indivíduos normais, mas muda com a velocidade: quanto mais rápido se anda, menor o tempo de duplo apoio; na corrida, o duplo apoio desaparece e dá lugar ao **duplo voo**, período em que nenhum dos pés toca o chão. O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 4, p. 92), confirma a mesma proporção já na criança de 1 a 4 anos: apesar da marcha variável nessa idade, ela costuma ser simétrica, com **60% do ciclo em apoio e 40% em balanço**.
 
 O raciocínio inverso aparece na Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed. (cap. 1): **quanto mais instável e lenta a deambulação, maior a fase de apoio e menor a de balanço**; quando a velocidade aumenta, o balanço cresce. Guarde isso, porque é a mesma lógica que explica por que a criança pequena, o paciente com DUCHENNE avançado e o diplégico grave passam mais tempo com os dois pés no chão: o duplo apoio é a posição mais estável que existe durante a marcha.
 
@@ -86,6 +86,8 @@ O Tachdjian (cap. 5, Box 5.1, p. 61 e 62) chama esses parâmetros de **cadence p
 
 Existem valores normais pareados por idade, e nomogramas pela altura da criança (Tachdjian, cap. 5, p. 62). O passo aumenta de forma linear com o comprimento da perna. A criança pequena anda com **cadência maior e passo e passada menores**, isto é, muitos passos rápidos e curtos; com o crescimento, passo e passada aumentam e a cadência cai. A criança normal consegue variar a velocidade à vontade; essa capacidade pode estar prejudicada na paralisia cerebral.
 
+O Lovell and Winter (cap. 4, p. 116) repete as definições num exemplo clínico: passo é do contato de um pé ao contato do outro, passada é de um contato ao seguinte do mesmo pé, e **cada passada contém um passo direito e um esquerdo**. Os isquiotibiais contraídos da espondilolistese limitam a extensão do joelho no balanço terminal e **encurtam passo e passada**; nos casos graves, o paciente chega a andar na ponta dos pés.
+
 !tabela Parâmetros espaçotemporais (Tachdjian, cap. 5, Box 5.1, p. 61 e 62)
 | Parâmetro | Definição | Detalhe cobrado |
 | --- | --- | --- |
@@ -108,7 +110,7 @@ Na paralisia cerebral, os bons caminhadores diplégicos mantêm a velocidade à 
 
 ## Onde fica o centro de gravidade
 
-O Tachdjian (cap. 5, p. 62) localiza o centro de gravidade **logo anterior à segunda vértebra sacral**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 3, p. 192), repete: na linha média, **anterior ao corpo de S2**, e acrescenta que, por ficar posterior ao eixo do quadril, ele também gera forças no plano sagital que tendem a dobrar a haste femoral para trás. A Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., dá o número: no capítulo da balança de PAUWELS (cap. 10), o centro de gravidade do corpo fica **cerca de 5 cm anterior a S2**; no capítulo de marcha (cap. 1), o centro de massa está "habitualmente anterior à segunda vértebra sacral".
+O Tachdjian (cap. 5, p. 62) localiza o centro de gravidade **logo anterior à segunda vértebra sacral**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 4, p. 192), repete: na linha média, **anterior ao corpo de S2**, e acrescenta que, por ficar posterior ao eixo do quadril, ele também gera forças no plano sagital que tendem a dobrar a haste femoral para trás. A Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed., dá o número: no capítulo da balança de PAUWELS (cap. 10), o centro de gravidade do corpo fica **cerca de 5 cm anterior a S2**; no capítulo de marcha (cap. 1), o centro de massa está "habitualmente anterior à segunda vértebra sacral".
 
 A marcha bípede é instável e pouco eficiente; para economizar, os movimentos coordenados dos membros inferiores **minimizam a subida e a descida do centro de gravidade**.
 
@@ -122,7 +124,7 @@ Quanto à amplitude, o texto impresso do Tachdjian diz que o centro de gravidade
 conceito: O centro de gravidade fica cerca de 5 cm anterior a S2; é mais baixo no duplo apoio (contato do calcanhar, 50% do ciclo) e mais alto no médio apoio, sobre o membro vertical.
 como: O TARO 2014 pediu as fases de CG mais baixo e mais alto (apoio do calcanhar e acomodação intermediária); duas provas de Ortopedia repetiram a oscilação vertical em centímetros (4,5); outra pediu a localização do CG na posição anatômica (5 cm anterior a S2).
 armadilha: Colocar o ponto mais alto no balanço (oscilação intermediária) ou o CG à frente de L2; o membro em balanço não sustenta o corpo, quem eleva o CG é o membro de apoio vertical.
-alerta: O valor de 4,5 cm (`pediatria-0485`, `pediatria-0485`) não aparece nos livros lidos; o Tachdjian imprime deslocamento médio de "⅛ de polegada". Gabarito oficial mantido. Os 5 cm anteriores a S2 (`pediatria-0477`) vêm do SIZÍNIO, cap. 10; o Tachdjian e o Campbell dizem apenas "anterior a S2".
+alerta: O valor de 4,5 cm (`pediatria-0485`) não aparece nos livros lidos; o Tachdjian imprime deslocamento médio de "⅛ de polegada". Gabarito oficial mantido. Os 5 cm anteriores a S2 (`pediatria-0477`) vêm do SIZÍNIO, cap. 10; o Tachdjian e o Campbell dizem apenas "anterior a S2".
 !fim
 
 ## Os seis determinantes de SAUNDERS
@@ -251,19 +253,20 @@ A **pedobarografia** mede pressões plantares com placas de muitos sensores, div
 
 ## Forças sobre o quadril
 
-A biomecânica do apoio monopodálico é a balança de PAUWELS. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 3, p. 192), explica: como a razão entre o braço de alavanca do peso corporal e o dos abdutores é de cerca de **2,5:1**, **a força dos abdutores precisa ser cerca de 2,5 vezes o peso corporal** para manter a pelve nivelada em apoio unipodal. A carga sobre a cabeça femoral no apoio é a soma das forças dos abdutores e do peso, **cerca de 3 vezes o peso corporal**, e **a carga na elevação da perna estendida é estimada como cerca da mesma**. No quadril artrósico, a razão pode chegar a 4:1; aproximá-la de 1:1 reduz a carga total em cerca de 30%.
+A biomecânica do apoio monopodálico é a balança de PAUWELS. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 4, Applied Biomechanics, p. 191 e 192), explica: como a razão entre o braço de alavanca do peso corporal e o dos abdutores é de cerca de **2,5:1**, **a força dos abdutores precisa ser cerca de 2,5 vezes o peso corporal** para manter a pelve nivelada em apoio unipodal. A carga sobre a cabeça femoral no apoio é a soma das forças dos abdutores e do peso, **cerca de 3 vezes o peso corporal**, e **a carga na elevação da perna estendida é estimada como cerca da mesma**. No quadril artrósico, a razão pode chegar a 4:1; aproximá-la de 1:1 reduz a carga total em cerca de 30%.
 
-O Campbell traz ainda os valores de contato: calculados entre **3,5 e 5 vezes** o peso na marcha e até **6 vezes** no apoio simples; medidos em próteses instrumentadas, mais baixos, **2,6 a 3 vezes**; e ao **levantar, correr ou saltar, a carga pode equivaler a 10 vezes o peso**. No capítulo de quadril do adulto jovem (cap. 7, p. 358.e1), a elevação ativa da perna estendida aparece como cerca de **2 vezes o peso**, pela força dos flexores.
+O Campbell traz ainda os valores de contato: calculados entre **3,5 e 5 vezes** o peso na marcha e até **6 vezes** no apoio simples; medidos em próteses instrumentadas, mais baixos, **2,6 a 3 vezes**; e ao **levantar, correr ou saltar, a carga pode equivaler a 10 vezes o peso**. No capítulo de quadril do adulto jovem (cap. 7, p. 358.e1), a elevação ativa da perna estendida, usada como teste de gravidade da dor no quadril, aparece como cerca de **2 vezes o peso**, pela força de reação articular gerada pelos flexores do quadril. Os dois números do mesmo livro não se contradizem: o cap. 4 compara a elevação com a carga do apoio (cerca de 3 vezes), e o cap. 7 dá a estimativa clínica de cerca de 2 vezes; nos dois casos, a manobra carrega o quadril, não o descarrega.
 
 A Ortopedia e Traumatologia de SIZÍNIO HEBERT, 5ª ed. (cap. 10), usa braço de 3:1 e força quase 3 vezes o peso; com abdutores fracos ou dor, o paciente leva o centro de gravidade para o quadril afetado e encurta o braço do peso.
 
-!tabela Forças sobre o quadril (Campbell 15, cap. 3, p. 192, e cap. 7, p. 358.e1; SIZÍNIO, cap. 10)
+!tabela Forças sobre o quadril (Campbell 15, cap. 4, p. 191 e 192, e cap. 7, p. 358.e1; SIZÍNIO, cap. 10)
 | Situação | Valor | Fonte |
 | --- | --- | --- |
 | força dos abdutores no apoio unipodal | cerca de 2,5 vezes o peso (braços 2,5:1) | Campbell |
 | força dos abdutores | quase 3 vezes o peso (braços 3:1) | SIZÍNIO |
 | carga na cabeça femoral no apoio | cerca de 3 vezes o peso | Campbell |
-| elevação da perna estendida | cerca da mesma carga do apoio | Campbell, cap. 3 |
+| elevação da perna estendida | cerca da mesma carga do apoio | Campbell, cap. 4 |
+| elevação ativa da perna estendida (teste clínico) | cerca de 2 vezes o peso | Campbell, cap. 7 |
 | contato calculado na marcha | 3,5 a 5 vezes; até 6 no apoio simples | Campbell |
 | contato medido em prótese | 2,6 a 3 vezes | Campbell |
 | levantar, correr, saltar | até 10 vezes o peso | Campbell |
@@ -284,7 +287,7 @@ A marcha muda à medida que o sistema nervoso amadurece, em sentido **cefalocaud
 
 Os marcos de idade são cobrados: **padrão adulto de cinética aos 5 anos** (cap. 5, p. 66); **padrão de velocidade estável aos 5 anos** e **padrão adulto de marcha por volta dos 7 anos** (cap. 6, p. 72). O consumo e o custo de oxigênio durante a marcha são **maiores abaixo de 12 anos** que nos adolescentes (cap. 5, p. 62).
 
-O ângulo de progressão do pé também muda com a idade, porque depende da torção tibial e da anteversão femoral, que se remodelam. O recém-nascido costuma andar (quando sustentado) com os pés para fora, pela contratura em rotação externa do quadril; o intoeing por torção tibial interna só aparece por volta dos 12 meses, quando a criança fica de pé e essa contratura se resolve (Tachdjian, cap. 18, p. 664, aprox.). **Até os 7 anos, a tíbia é o principal determinante do ângulo de progressão; depois dos 7, o fêmur passa a pesar mais** (cap. 18, p. 663, aprox.). Daí a faixa normal larga nos primeiros anos.
+O ângulo de progressão do pé também muda com a idade, porque depende da torção tibial e da anteversão femoral, que se remodelam. O recém-nascido costuma andar (quando sustentado) com os pés para fora, pela contratura em rotação externa do quadril; o intoeing por torção tibial interna só aparece por volta dos 12 meses, quando a criança fica de pé e essa contratura se resolve (Tachdjian, cap. 18, p. 664, aprox.). **Até os 7 anos, a tíbia é o principal determinante do ângulo de progressão; depois dos 7, o fêmur passa a pesar mais** (cap. 18, p. 663, aprox.). Daí a faixa normal larga nos primeiros anos. O Lovell and Winter (cap. 4, p. 92) dá o número: o ângulo de progressão do pé, entre o eixo do pé (bissetriz do calcanhar ao centro da cabeça do segundo metatarso) e uma linha reta no chão, **varia de 15° internos a 25° externos entre 1 e 4 anos**. Valores dentro de 2 desvios padrão da média são **variações rotacionais**; fora disso, **deformidades torcionais**.
 
 !tabela Marcha por idade (Tachdjian, cap. 5, p. 62 e 66; cap. 6, p. 71 e 72; cap. 18, p. 663 e 664)
 | Idade | Características |
@@ -292,6 +295,7 @@ O ângulo de progressão do pé também muda com a idade, porque depende da tor�
 | recém-nascido | pés para fora pela contratura em RE do quadril; torção tibial lateral cerca de 5° |
 | cerca de 12 meses | aparece intoeing por torção tibial interna; ângulo coxa-pé medial de até 30° dentro de 2 DP |
 | 1 a 3 anos (toddler) | base larga, quadris e joelhos fletidos, braços abertos, mais duplo apoio, velocidade pela cadência |
+| 1 a 4 anos | ângulo de progressão do pé de 15° internos a 25° externos; apoio 60% e balanço 40% (Lovell and Winter, cap. 4, p. 92) |
 | 5 anos | cinética adulta; velocidade estável |
 | 7 anos | padrão adulto de marcha; o fêmur passa a determinar mais o ângulo de progressão |
 | até 12 anos | custo de oxigênio maior que no adolescente |
@@ -299,10 +303,9 @@ O ângulo de progressão do pé também muda com a idade, porque depende da tor�
 !fim
 
 !questoes central=pediatria-0349
-conceito: Nos primeiros anos o ângulo de progressão do pé tem faixa normal larga, que pode ser negativa (intoeing) pela torção tibial interna fisiológica; o valor adulto é 10 a 15° externo.
+conceito: Entre 1 e 4 anos o ângulo de progressão do pé vai de 15° internos a 25° externos (Lovell and Winter, cap. 4, p. 92), faixa larga que inclui intoeing pela torção tibial interna fisiológica; o valor adulto é 10 a 15° externo.
 como: O TEPOP 2024 pediu a faixa do ângulo de progressão do pé entre 1 e 4 anos, com combinações de +15°, -15° e -25°.
 armadilha: Aplicar à criança pequena a faixa adulta estreita (só valores externos); entre 1 e 4 anos, valores negativos podem ser normais.
-alerta: Nenhum livro lido traz a faixa de +15° a -25° para 1 a 4 anos (`pediatria-0349`); o Tachdjian dá 10 a 15° externos no normal e a resolução espontânea da torção tibial interna do toddler. Gabarito oficial mantido.
 !fim
 
 # Laboratório de marcha {radar=fundamento}
@@ -344,7 +347,7 @@ A marcha de TRENDELENBURG aparece quando os **abdutores do quadril estão funcio
 
 O **teste de TRENDELENBURG** (Tachdjian, cap. 3, p. 34) parte do par abdutor e extensor: ao levantar um pé, todo o peso fica no complexo muscular contralateral. O examinador fica atrás e vê as covinhas das espinhas ilíacas posteriores; o paciente flete quadril e joelho de um lado e sustenta por **10 segundos**, sem apoiar a mão. **Positivo quando a pelve cai enquanto o quadril de apoio aduz**; negativo quando a pelve fica nivelada ou sobe. O Campbell (cap. 7) quantifica: positivo se a pelve cair **mais de 2 cm**, e descreve o **abductor lurch** do quadril doloroso com abdutores fracos, que inclina para o lado afetado.
 
-Na DDQ, o SIZÍNIO (cap. 9.1) lista os achados **após a idade da marcha**: claudicação por fraqueza do glúteo médio e encurtamento aparente, hiperlordose lombar, rotação externa do membro, trocânter proeminente, TRENDELENBURG positivo e, no quadro por idade, claudicação e **marcha na ponta do pé** no membro curto. São achados tardios, que surgem quando o diagnóstico neonatal falhou.
+Na DDQ, o SIZÍNIO (cap. 9.1) lista os achados **após a idade da marcha**: claudicação por fraqueza do glúteo médio e encurtamento aparente, hiperlordose lombar, rotação externa do membro, trocânter proeminente, TRENDELENBURG positivo e, no quadro por idade, claudicação e **marcha na ponta do pé** no membro curto. São achados tardios, que surgem quando o diagnóstico neonatal falhou. O Lovell and Winter (cap. 23, p. 991) acrescenta que o achado de exame mais confiável na DDQ tardia é a **limitação da abdução**, ao lado do encurtamento aparente (sinal de GALEAZZI), da assimetria de pregas e da discrepância; na **luxação bilateral**, a marcha é **bamboleante, com hiperlordose lombar**, sem a assimetria que denuncia o caso unilateral.
 
 !questoes central=pediatria-0893
 conceito: Na DDQ que chega depois da idade da marcha, claudicação (TRENDELENBURG pelo glúteo médio em desvantagem), marcha na ponta do pé do membro curto e limitação da abdução são achados tardios.
@@ -356,7 +359,7 @@ armadilha: Tratar esses sinais como neonatais; no recém-nascido valem BARLOW e 
 
 Os livros de pediatria descrevem essas duas fraquezas pela compensação de tronco. O Tachdjian (cap. 6, p. 70) mostra que, sem força dos extensores do quadril, a criança **anda com lordose lombar aumentada para se manter ereta**, jogando o tronco para trás para que a linha de força passe atrás do quadril. O SIZÍNIO (cap. 14) organiza os desvios do apoio: **inclinação posterior do tronco = debilidade dos extensores do quadril** (é a marcha do glúteo máximo, com o tronco jogado para trás no início do apoio); **flexão ou inclinação anterior do tronco necessitando de apoio = contratura dos flexores, fraqueza dos extensores ou debilidade compensatória do quadríceps**; inclinação lateral da pelve = abdutores contralaterais fracos; lateralização do tronco = abdutores; marcha em tesoura = abdutores contralaterais.
 
-O mecanismo do quadríceps é o mesmo da DUCHENNE: sem extensor do joelho, o paciente precisa manter a força de reação do solo **à frente do joelho**. Inclina o tronco para a frente e, quando isso não basta, **empurra a coxa para trás com a mão** sobre a face anterior, travando o joelho em extensão. A hiperextensão do joelho e o travamento pela cápsula posterior são a versão sem mão do mesmo truque (Tachdjian, cap. 35, p. 1710, aprox.).
+O mecanismo do quadríceps é o mesmo da DUCHENNE: sem extensor do joelho, o paciente precisa manter a força de reação do solo **à frente do joelho**. Inclina o tronco para a frente e, quando isso não basta, **empurra a coxa para trás com a mão** sobre a face anterior, travando o joelho em extensão. A hiperextensão do joelho e o travamento pela cápsula posterior são a versão sem mão do mesmo truque (Tachdjian, cap. 35, p. 1710).
 
 !questoes central=pediatria-0113 relacionadas=pediatria-0035
 conceito: Glúteo máximo fraco leva o tronco para trás no início do apoio, mantendo a linha de força atrás do quadril; quadríceps fraco obriga a inclinar o tronco para a frente e apoiar a mão na face anterior da coxa para travar o joelho.
@@ -367,11 +370,13 @@ alerta: O apoio da mão sobre a coxa (`pediatria-0035`) não está descrito com 
 
 # Distrofia muscular de DUCHENNE: a marcha da fraqueza proximal {radar=confirmado}
 
-O Tachdjian (cap. 35, p. 1709 e 1710, aprox.) descreve a marcha da DUCHENNE como uma cadeia de compensações. A doença aparece entre **3 e 6 anos**, de forma insidiosa, mas o **sinal de GOWERS pode estar presente desde 15 meses**: a criança "escala" o próprio corpo com as mãos nas pernas, joelhos e coxas para levantar do chão (cap. 6, p. 70 e 71). Os primeiros sinais vão de **marcha bamboleante** a dificuldade nas escadas; no início, muitos meninos **andam na ponta dos pés**, e o livro manda pensar em DUCHENNE **em todo menino pequeno com equino e história de parto normal**. A fraqueza é **simétrica** e começa **proximal**, geralmente pelos **extensores do quadril**; os membros inferiores adoecem 3 a 5 anos antes dos superiores.
+O Tachdjian (cap. 35, p. 1709 e 1710) descreve a marcha da DUCHENNE como uma cadeia de compensações. A doença aparece entre **3 e 6 anos**, de forma insidiosa, mas o **sinal de GOWERS pode estar presente desde 15 meses**: a criança "escala" o próprio corpo com as mãos nas pernas, joelhos e coxas para levantar do chão (cap. 6, p. 70 e 71). Os primeiros sinais vão de **marcha bamboleante** a dificuldade nas escadas; no início, muitos meninos **andam na ponta dos pés**, e o livro manda pensar em DUCHENNE **em todo menino pequeno com equino e história de parto normal**. A fraqueza é **simétrica** e começa **proximal**, geralmente pelos **extensores do quadril**; os membros inferiores adoecem 3 a 5 anos antes dos superiores.
 
 O **equino** costuma ser o primeiro sinal. A contratura no tornozelo leva à ponta dos pés e à hiperextensão dos joelhos, que **travam a cápsula posterior e suprem o quadríceps fraco**. A fraqueza dos extensores do quadril leva à **anteversão pélvica e à hiperlordose lombar**: o corpo se realinha para que a força de reação do solo passe **atrás do quadril e à frente do joelho**, estabilizando os dois sem músculo. Os glúteos também enfraquecem cedo, e surge o **TRENDELENBURG**: os abdutores não seguram a pelve, e a criança joga o tronco sobre o membro de apoio a cada passo, o que dá o **aspecto bamboleante (anserino)**. A base alarga para evitar quedas, mais ainda quando a banda iliotibial contrai. Com a progressão, **o apoio se prolonga, o balanço encurta, a cadência cai e o tempo de duplo apoio aumenta**, porque ficar em um pé só é cada vez mais difícil.
 
-!tabela Marcha na DUCHENNE (Tachdjian, cap. 35, p. 1709 e 1710, aprox.; cap. 6, p. 70)
+O Lovell and Winter (cap. 16, p. 591) descreve a mesma cadeia: cadência e dorsiflexão do tornozelo no balanço diminuem, a marcha fica bamboleante e de base larga, com oscilação dos ombros para compensar o glúteo médio, e **a linha de força precisa ficar atrás do quadril e à frente do joelho durante todo o apoio simples**. A fraqueza de abdutores e quadríceps obriga a **circunduzir no balanço**, levando o peso para cima do quadril. Com o equino fixo, o apoio se reduz ao antepé, e o varo aparece porque o tibial posterior é dos últimos músculos atingidos. Sem tratamento, a criança costuma **perder a marcha por volta dos 10 anos**, e a causa principal é a perda de força dos **extensores do quadril e dos dorsiflexores do tornozelo**, que servem para prever quando a marcha vai acabar; a fraqueza da cintura escapular, 3 a 5 anos depois, impede o uso de muletas.
+
+!tabela Marcha na DUCHENNE (Tachdjian, cap. 35, p. 1709 e 1710; cap. 6, p. 70; Lovell and Winter, cap. 16, p. 591)
 | Fraqueza ou contratura | Compensação na marcha |
 | --- | --- |
 | tríceps sural contraído (equino, primeiro sinal) | ponta dos pés; hiperextensão do joelho |
@@ -380,6 +385,7 @@ O **equino** costuma ser o primeiro sinal. A contratura no tornozelo leva à pon
 | glúteo médio fraco | TRENDELENBURG; tronco oscila sobre o apoio (bamboleio, anserina) |
 | banda iliotibial contraída | base ainda mais larga |
 | fraqueza avançada | apoio longo, balanço curto, cadência menor, mais duplo apoio |
+| extensores do quadril e dorsiflexores (perda) | fim da marcha, em geral por volta dos 10 anos sem tratamento |
 !fim
 
 !questoes central=pediatria-0385 relacionadas=pediatria-0354
@@ -393,6 +399,10 @@ armadilha: Associar à cifose torácica, que é da postura parkinsoniana, ou diz
 O Tachdjian (cap. 6, p. 70) diz que a assimetria de marcha aparece quando a discrepância **passa de 3,7% a 5,5%**. Para manter a pelve nivelada, a criança **anda na ponta do pé do membro curto**, ou flete quadril e joelho do membro longo no apoio; discrepâncias menores são compensadas com uma combinação de estratégias.
 
 O capítulo 20 (p. 808) detalha os estudos. Discrepâncias **menores que 2,3 cm** resultaram em assimetria "aceitável". SONG e colaboradores, em 35 crianças, encontraram como compensações **circundução ou flexão persistente do membro longo, salto (vaulting) sobre o membro longo e ponta do pé no membro curto**; abaixo de **3%** não havia compensação; acima de **5,5%** o centro de massa subia e descia mais, e a ponta do pé já não compensava. KAUFMAN e colaboradores notaram que a assimetria além do normal aparecia **quando a discrepância passava de 2 cm (3,7%)**, em geral com mais carga no membro longo. Uma palmilha de 2,3 cm em pessoas normais não mudou as forças no quadril.
+
+O Lovell and Winter (cap. 28, p. 1360) explica o custo: em SONG, discrepâncias **acima de 5,5% do membro longo** aumentaram o trabalho mecânico do membro longo e o deslocamento vertical do centro de massa, com gasto maior de energia; as crianças com discrepâncias menores conseguiam igualar o trabalho dos dois membros, sobretudo andando na ponta do pé do lado curto. Por isso a criança pequena com 3 cm congênitos às vezes prefere andar sem a palmilha.
+
+Os números de tratamento são outros, e a prova gosta de misturá-los. O Campbell (cap. 38, p. 1358) resume a regra para a discrepância prevista na maturidade: **até 2 cm**, observação ou palmilha; **de 2 a 5 cm**, epifisiodese contralateral; **acima de 5 cm**, alongamento. O próprio livro lembra que o alongamento com haste intramedular, mais preciso e com menos complicações, pode mudar esses limites.
 
 !questoes central=pediatria-0208
 conceito: A compensação da marcha deixa de bastar e surge assimetria quando a discrepância passa de cerca de 2 cm (3,7% do comprimento); acima de 5,5% nem a ponta do pé compensa.
@@ -446,7 +456,7 @@ A ponta dos pés indolor no toddler é motivo comum de encaminhamento (Tachdjian
 
 ## Intoeing: três níveis
 
-O Tachdjian (cap. 4, p. 53 e 54) mostra que **intoeing** (ângulo de progressão excessivamente interno) é uma das queixas mais comuns e quase sempre benigna. As três causas comuns se distribuem por idade: **metatarso aduto** do nascimento até a marcha; **torção tibial interna** no toddler e pré-escolar; **anteversão femoral** no escolar e adolescente. Na marcha, olha-se se a borda lateral do pé está desviada (metatarso aduto), se o pé está medial ao joelho (torção tibial) ou se o membro inteiro roda para dentro com **patelas "estrábicas"** (anteversão). Pedir andar nos calcanhares, nas pontas e pular desmascara o intoeing escondido. O perfil torcional de STAHELI é feito em prono. Intoeing grave ou persistente pode ser a apresentação de paralisia cerebral leve, BLOUNT infantil ou displasia.
+O Tachdjian (cap. 4, p. 53 e 54) mostra que **intoeing** (ângulo de progressão excessivamente interno) é uma das queixas mais comuns e quase sempre benigna. As três causas comuns se distribuem por idade: **metatarso aduto** do nascimento até a marcha; **torção tibial interna** no toddler e pré-escolar; **anteversão femoral** no escolar e adolescente. Na marcha, olha-se se a borda lateral do pé está desviada (metatarso aduto), se o pé está medial ao joelho (torção tibial) ou se o membro inteiro roda para dentro com **patelas "estrábicas"** (anteversão). Pedir andar nos calcanhares, nas pontas e pular desmascara o intoeing escondido. O perfil torcional de STAHELI é feito em prono. O Lovell and Winter (cap. 27, p. 1262, Fig. 27-1) mostra como medir: o **ângulo de progressão do pé** é estimado vendo a criança andar, como a diferença angular entre o eixo do pé e a linha de progressão; o **ângulo coxa-pé**, com a criança em prono e o joelho fletido, é a diferença entre os eixos do pé e da coxa; a rotação medial e a lateral do quadril completam o perfil. A rotação medial do quadril é em média **40° no lactente** (10 a 60°) e maior nas meninas; a lateral é maior que a medial no lactente (média de 65°) e cai para cerca de 40° depois dos 10 anos. Intoeing grave ou persistente pode ser a apresentação de paralisia cerebral leve, BLOUNT infantil ou displasia.
 
 ## Anteversão femoral
 
@@ -456,20 +466,21 @@ A anteversão é de cerca de **40° no lactente e 16° no adulto** (Tachdjian, c
 
 A torção tibial é a **causa mais comum de intoeing e outtoeing até 7 anos** (Tachdjian, cap. 18, p. 663, aprox.). A torção lateral aumenta de cerca de **5° ao nascer para 15° na maturidade**. Órteses e barras de DENIS BROWNE são ineficazes e podem criar valgo ou rotação nas articulações. A **torção tibial lateral persistente** aparece em prematuros mantidos em prono e na **síndrome do mau alinhamento torcional** (anteversão femoral com torção tibial externa), com dor e instabilidade patelofemoral. Osteotomia, supramaleolar, só aos 8 anos ou mais e com mais de **15° de progressão interna ou 30° externa** (p. 664, aprox.).
 
-!tabela Desvios rotacionais na marcha (Tachdjian, cap. 4, p. 53 e 54; cap. 17, p. 625; cap. 18, p. 663 e 664)
+O outtoeing patológico tem outra companhia no Lovell and Winter (cap. 27, p. 1264, Fig. 27-3): o **pé planovalgo grave associado à torção tibial externa**, que pode ser secundário a **coalizão tarsal**, mas também aparece no adolescente com pé plano rígido sem coalizão; não se sabe se a rotação externa é adaptação ao pé rígido ou consequência da falta de flexibilidade. Órtese de suporte medial alivia os sintomas, mas não muda a rotação. A tríade **retrotorção femoral, torção tibial externa e planovalgo**, sobretudo no adolescente grande, dá uma marcha com os pés muito para fora. O mesmo trecho manda pensar em **epifisiólise** quando o outtoeing é assimétrico ou recente, e lembra a coxa vara como causa. Na paralisia cerebral, o pé valgo abduzido somado à torção tibial externa e à anteversão femoral forma o mau alinhamento torcional.
+
+!tabela Desvios rotacionais na marcha (Tachdjian, cap. 4, p. 53 e 54; cap. 17, p. 625; cap. 18, p. 663 e 664; Lovell and Winter, cap. 27, p. 1264)
 | Causa | Idade típica | Patela na marcha | Exame |
 | --- | --- | --- | --- |
 | metatarso aduto | nascimento até a marcha | para a frente | borda lateral do pé desviada |
 | torção tibial interna | toddler, pré-escolar | para a frente | ângulo coxa-pé interno |
 | anteversão femoral | escolar, adolescente | medial no apoio | RI do quadril excessiva, RE diminuída |
-| torção tibial externa | criança maior, adolescente | normal ou medial (com anteversão) | ângulo coxa-pé externo; outtoeing |
+| torção tibial externa | criança maior, adolescente | normal ou medial (com anteversão) | ângulo coxa-pé externo; outtoeing; pode vir com planovalgo e coalizão tarsal |
 !fim
 
 !questoes central=pediatria-0141 relacionadas=pediatria-0026
-conceito: Anteversão femoral aumentada roda o quadril para dentro e deixa a patela rodada medialmente na fase de apoio; torção tibial externa patológica pode coexistir e acompanhar outras alterações do pé.
+conceito: Anteversão femoral aumentada roda o quadril para dentro e deixa a patela rodada medialmente na fase de apoio; a torção tibial externa patológica pode coexistir e se associa ao pé planovalgo grave, com ou sem coalizão tarsal (Lovell and Winter, cap. 27, p. 1264).
 como: Uma prova de Ortopedia pediu a rotação da marcha na anteversão aumentada (patela interna no apoio); o TARO 2018 pediu a associação da torção tibial externa patológica (acima de 18°) do adolescente.
 armadilha: Responder rotação externa do quadril ou colocar a patela medial só no balanço; o achado clássico está no apoio.
-alerta: A associação da torção tibial externa acima de 18° com coalizão tarsal (`pediatria-0026`) não aparece nos livros lidos; o Tachdjian associa a torção tibial externa persistente à anteversão femoral (mau alinhamento torcional), à prematuridade e à PC. Gabarito oficial mantido.
 !fim
 
 # Fechamento {radar=fundamento}
