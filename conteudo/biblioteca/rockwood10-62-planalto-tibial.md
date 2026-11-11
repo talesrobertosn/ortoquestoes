@@ -65,7 +65,7 @@ Num estudo mecânico em cadáver, o **LCM íntegro foi requisito** para produzir
 
 A lesão associada do LCM é tratada **sem cirurgia**: MOORE examinou 208 joelhos com fratura unicondilar, em média 3 anos depois, com radiografias sob estresse, e não achou frouxidão crônica, sem nenhum reparo ligamentar. Uma órtese ou um imobilizador pós-operatório de rotina basta.
 
-!questoes treino=trauma-1681
+!questoes relacionadas=joelho-0313 treino=trauma-1681
 conceito: Na fratura lateral, a instabilidade em valgo costuma ser óssea (afundamento) e some com a redução; o LCM íntegro é a dobradiça do mecanismo e, se lesado, é tratado sem cirurgia.
 como: O LCM é o distrator recorrente nas perguntas de lesão associada (TARO 2009 e TARO 2018); a gêmea explica por que ele atrai e por que não é a resposta.
 armadilha: Reparar o LCM na fixação da fratura lateral: não há frouxidão crônica sem reparo.

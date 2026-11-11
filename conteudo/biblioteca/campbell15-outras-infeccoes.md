@@ -345,7 +345,7 @@ A criança com doença falciforme adoece mais de osteomielite e artrite séptica
 
 Como o falciforme tem cerca de **50 vezes mais chance de estar em crise que infectado**, o Tachdjian (p. 996 aprox.) trata primeiro como crise por 24 a 48 horas; sem melhora, aspira os focos e cobre **S. aureus e Salmonella**. Coleção subperiosteal acima de 10 mm no ultrassom e realce geográfico na RM sugerem osteomielite, e não infarto.
 
-!questoes central=conceitos-basicos-0115
+!questoes central=conceitos-basicos-0115 relacionadas=conceitos-basicos-0304
 conceito: A osteomielite por Salmonella associa-se às hemoglobinopatias (doença falciforme) e tem comprometimento predominantemente diafisário (Campbell, Tabela 23.1).
 como: O TARO 2023 combinou dois eixos: diabetes ou hemoglobinopatia, metafisário ou diafisário.
 armadilha: Marcar metafisário por associação automática com a osteomielite hematogênica da criança.
@@ -405,7 +405,7 @@ A mordedura humana mais grave é o **soco** contra o dente, na **metacarpofalân
 
 Sem tratamento, a gangrena gasosa é **100% fatal**, com mionecrose extensa, choque e morte rápida. O **Clostridium perfringens** (antigo C. welchii) é o organismo **mais associado** (Campbell, cap. 84, p. 3620); o capítulo 58 cita também C. novyi e C. septicum entre os que causam as infecções mais dramáticas e atribui ao **C. perfringens cerca de 90%** das gangrenas gasosas (p. 2560.e1). O mesmo livro se contradiz no capítulo 84 (p. 3621), que escreve que organismos **não clostridiais** são achados em cerca de **85%** das gangrenas gasosas. A ponte está no próprio capítulo 58: o nome gangrena gasosa implica clostrídio, mas muitas infecções necrosantes de partes moles com gás são causadas por flora mista aeróbia e anaeróbia, e o Clostridium é cultivado em cerca de 30% das infecções profundas, das quais só poucas evoluem para mionecrose. Para a mionecrose clostridial verdadeira, a resposta é o **C. perfringens**. Os clostrídios são bastonetes gram-positivos anaeróbios que crescem em tecido necrótico e baixa oxigenação, onde os esporos viram formas vegetativas e produzem toxinas: **alfa** (mionecrose e hemólise, o principal fator de letalidade), teta (hemólise e cardiotoxicidade), kappa (colagenase), nu (desoxirribonuclease) e mu (hialuronidase). O tratamento é desbridamento e antibiótico; o oxigênio hiperbárico é adjuvante controverso (p. 3621).
 
-!questoes central=conceitos-basicos-0283
+!questoes central=conceitos-basicos-0283 relacionadas=trauma-1136
 conceito: O Clostridium perfringens é o germe mais associado à gangrena gasosa, e sua toxina alfa é o principal fator de letalidade (Campbell, cap. 84, p. 3620).
 como: O TARO 2013 perguntou a espécie de Clostridium mais frequente na gangrena gasosa.
 armadilha: Marcar C. septicum ou C. novyi, que também causam mionecrose, ou C. difficile, que é germe de colite.
@@ -421,7 +421,7 @@ O Rockwood descreve as etapas. Primeiro, a **adesão** da bactéria à superfíc
 
 O Campbell, 15ª ed., conta a mesma história com a figura de GRISTINA (cap. 58, p. 2524): à medida que a infecção progride, a colonização ocorre dentro de um **biofilme exopolissacarídeo protetor**, especialmente abundante no **fragmento ósseo desvitalizado**, que serve de substrato passivo; as defesas do hospedeiro **não penetram o biofilme**; a inflamação forma abscesso, fístula e, às vezes, extrusão do sequestro. No capítulo 4 (p. 282), a elaboração de **glicocálice por Staphylococcus e Pseudomonas é marcador de virulência**, e no capítulo 23 (p. 814 aprox.) as esferas de PMMA, depois de liberarem todo o antibiótico, viram corpo estranho colonizável por bactérias formadoras de glicocálice. Por isso irrigação com soro não "dissolve" biofilme: o Campbell (cap. 22, p. 786 aprox.) só vê vantagem pequena de lavados antibiofilme sobre o soro.
 
-!questoes relacionadas=conceitos-basicos-0064,conceitos-basicos-0275
+!questoes relacionadas=conceitos-basicos-0064,conceitos-basicos-0275,quadril-0010
 conceito: O biofilme amadurece pela deposição de matriz exopolissacarídea (glicocálice) sobre o osso desvitalizado e o implante, forma-se em horas na fratura exposta, adere ao osso e ao implante e resiste ao antibiótico e às defesas.
 como: O TEOT 2022 e a SBOT-SP perguntaram a substância depositada na maturação do biofilme na infecção pós-osteossíntese; o ENARE R4 2024 pediu a afirmação correta sobre biofilme nas infecções pós-artroplastia.
 armadilha: Fibronectina e fibrinogênio são moléculas do hospedeiro a que a bactéria adere, não a matriz que ela secreta; e o biofilme adere também ao osso, é resistente ao cisalhamento e não sai com irrigação.

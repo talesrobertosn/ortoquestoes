@@ -50,7 +50,7 @@ Por que justamente a face lateral do côndilo medial? Essa é a área do côndil
 | tamanho | poucos mm a 2 a 3 cm | lesões maciças acima de 3 cm vão para artrotomia |
 !fim
 
-!questoes central=joelho-0025 relacionadas=joelho-0072,joelho-0175
+!questoes central=joelho-0025 relacionadas=joelho-0072,joelho-0175,trauma-1052
 conceito: A localização clássica da OCD do joelho é a face lateral do côndilo femoral medial, perto da inserção do cruzado posterior (80% no Campbell; a maioria no Tachdjian).
 como: O TARO 2017 perguntou a localização clássica no adolescente; uma prova de Ortopedia, a localização mais frequente; a SBOT-SP colocou a tróclea, a patela e a face medial do côndilo lateral como distratores.
 armadilha: Inverter os termos e marcar a face medial do côndilo lateral, ou a zona de carga do côndilo medial; a lesão fica na face voltada para o intercôndilo, não no centro da área de carga.
@@ -329,7 +329,7 @@ O Campbell, no capítulo 34 (p. 1205 e 1206), lista as indicações específicas
 
 Quando há instabilidade grosseira, os resultados da cirurgia são melhores que os do conservador. O capítulo 50 (p. 2126) acrescenta critérios objetivos: joelho sintomático em paciente com **idade esquelética acima de 12 anos**, lesão **maior que 1 cm** e acometimento da **superfície de carga**, além da falha do conservador. O capítulo de artroscopia (cap. 56, p. 2360) usa o mesmo corte: artroscopia em todos com **12 anos ou mais pela idade óssea** e lesões **maiores que 1 cm em área de carga**. Lesões **maciças (acima de 3 cm)**, com corpos livres grandes ou múltiplos, ou inacessíveis à artroscopia, vão para **artrotomia**.
 
-!questoes central=joelho-0005
+!questoes central=joelho-0005 relacionadas=ombro-cotovelo-0483
 conceito: São indicações cirúrgicas na criança a dor sem cicatrização por 6 meses, a lesão sintomática que persiste após o fechamento da fise, a lesão esclerótica instável, a RM de instabilidade e o corpo livre.
 como: O TARO 2020 pôs como alternativas bilateralidade, fise aberta, dor por 3 meses e persistência após o fechamento da fise.
 armadilha: Aceitar 3 meses de dor como indicação; 3 meses é o prazo inicial de conservador no Campbell (cap. 56), e o prazo de falha é de 6 meses.

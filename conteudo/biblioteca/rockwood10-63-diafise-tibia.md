@@ -180,7 +180,7 @@ armadilha: Proibir a fresagem na exposta: a preocupação com a circulação nã
 - **Estático ou dinâmico:** ao contrário do fêmur, em que o bloqueio estático é rotina, na tíbia há controvérsia sobre a vantagem do dinâmico. Bloqueio de ângulo estável tem base biomecânica, sem confirmação clínica.
 - **Diástase:** a separação no foco é indesejável, porque aumenta o risco de pseudartrose. Nos traços axialmente estáveis, **bloqueia-se primeiro o distal** e se faz o recuo da haste ("back slapping") para comprimir antes do **bloqueio proximal**; alguns sistemas têm compressão interna. Empurrar para a frente uma haste bloqueada em cima exige mais força, porque a ponta encontra a metáfise distal não fresada.
 
-!questoes central=trauma-0865 relacionadas=trauma-1128 treino=trauma-1717
+!questoes central=trauma-0865 relacionadas=trauma-1128,trauma-1162 treino=trauma-1717
 conceito: A resistência dos parafusos de bloqueio limita a vida da montagem; como o furo não passa da metade do diâmetro da haste, as hastes finas têm parafusos mais finos. Com diástase, bloqueia-se o distal, comprime-se e só então se bloqueia o proximal.
 como: O TARO 2011 perguntou a que se relaciona a quebra dos parafusos de bloqueio distais (diâmetro, comprimento, material ou dinamização da haste). O TARO 2007 pediu a sequência para a diástase depois da haste; está sem gabarito no acervo, e o capítulo sustenta bloqueio distal, redução da diástase e bloqueio proximal.
 armadilha: Comprimento da haste: não muda o diâmetro nem a resistência do parafuso.
@@ -405,7 +405,7 @@ O MESS (2 a 11 pontos) soma **energia, isquemia, choque e idade**; a pontuação
 
 **LEAP:** sem diferença funcional entre salvar e amputar; cerca de metade dos pacientes dos dois grupos com incapacidade duradoura; custo ao longo da vida **três vezes maior na amputação** (prótese). Preditores de mau resultado: reinternação por complicação, pobreza, falta de seguro, baixa autoconfiança, fumo, litígio, pouco apoio social e baixa escolaridade. Num estudo, 92% dos salvos preferiam a perna salva. **Técnica:** preferir **abaixo do joelho**; **não fechar na primeira cirurgia** (a zona de lesão evolui por dias); desbridamentos seriados; retalhos não convencionais com a pele que sobreviver (figura 63-35); tala em **extensão** contra a contratura em flexão; prótese a partir de cerca de 6 semanas do fechamento.
 
-!questoes central=trauma-1093 relacionadas=trauma-0824,trauma-0435 treino=trauma-1712
+!questoes central=trauma-1093 relacionadas=trauma-0824,trauma-0435,trauma-0061,trauma-1183 treino=trauma-1712
 conceito: São indicações absolutas de amputação a isquemia quente acima de 6 horas, o membro preso só por ponte de pele e a reconstrução que põe a vida em risco; o MESS soma energia, isquemia, choque e idade, mas escore alto não prevê amputação.
 como: O TARO 2013 e o TARO 2012 fizeram quase a mesma pergunta (MESS de sete ou mais, lesão vascular com seis horas ou mais, lesão do fibular no IIIC, neuropatia do diabético). O TARO 2023 perguntou o que o MESS leva em conta (isquemia e idade).
 armadilha: Lesão do nervo fibular no IIIC: não é indicação absoluta.

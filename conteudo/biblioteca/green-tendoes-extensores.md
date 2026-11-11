@@ -361,7 +361,7 @@ O pós-operatório é progressivo, com a IFP a cerca de 20 graus de flexão e a 
 
 A escolha de STRAUCH: **FOWLER** se o déficit é **menor que 35 a 40 graus** e a lesão tem mais de 6 meses; **reconstrução do ORL** se o déficit passa de **45 graus**, se há **pescoço de cisne** ou se não existe continuidade entre o terminal e a distal (Green, p. 168 a 169).
 
-!questoes central=mao-1460
+!questoes central=mao-1460 relacionadas=mao-0435
 conceito: FOWLER desinsere completamente a banda central da base da falange média, por via médio-lateral com incisão do retinacular transverso; depende de terminal cicatrizado e alongado e usa imobilização progressiva.
 como: A USP-SP 2024 pediu a afirmação correta sobre a tenotomia de FOWLER no martelo crônico.
 armadilha: Indicar FOWLER quando o terminal não cicatrizou, preservar o retinacular transverso ou mobilizar imediatamente.
@@ -518,7 +518,7 @@ ISHIZUKI mostrou que os casos "espontâneos" (peteleco) rompem só a camada supe
 
 O Campbell (p. 3189) imobiliza MF e punho em extensão por 3 a 4 semanas e cita o splint de movimento relativo (MERRITT).
 
-!questoes central=mao-0039 relacionadas=mao-0667
+!questoes central=mao-0039 relacionadas=mao-0667,mao-0068,mao-0514
 conceito: A ruptura fechada da banda sagital é mais comum no dedo médio, na porção radial, e o EDC luxa para ulnar.
 como: O TARO 2021 e a FMRP-USP 2026 pediram o dedo e o lado mais comuns.
 armadilha: Marcar o indicador ou o lado ulnar; a banda que rompe é a radial, e o tendão vai para ulnar.

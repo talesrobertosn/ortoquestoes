@@ -192,7 +192,7 @@ A de doença: o Tachdjian (p. 92) e o Lovell and Winter (p. 853) descrevem a **c
 
 A de cirurgia: a liberação no mastoide deve ser feita **rente ao osso**, na inserção, justamente para ficar acima do ponto em que o nervo entra no músculo (Tachdjian, p. 95). O Lovell and Winter (p. 854 e 856) lista as estruturas em risco na cirurgia do torcicolo: o **nervo acessório espinal**, as **veias jugulares anterior e externa**, os **vasos carotídeos e sua bainha** e o **nervo facial**. A regra de dissecção no polo proximal tem dois limites: **não descer demais** (acessório) e **não ir para a frente demais** (facial, onde ele sai da região da parótida). O Campbell (cap. 33, p. 1180) faz a mesma advertência, com uma incisão transversa curta logo distal à ponta do mastoide, e avisa que o acessório **pode ter trajeto anômalo**.
 
-!questoes central=pediatria-0288
+!questoes central=pediatria-0288 relacionadas=pediatria-0757
 conceito: A estrutura amarela junto ao processo mastoide, cruzando a face profunda do esternocleidomastóideo, é o nervo acessório; ele inerva o esternocleidomastóideo e o trapézio, cruza o trígono posterior e é o nervo em risco na liberação mastóidea do torcicolo.
 como: O TARO 2024 reproduziu a Fig. 8.9 do Tachdjian (alongamento bipolar do esternocleidomastóideo), com os rótulos traduzidos e uma seta no nervo, e pediu o nome.
 armadilha: Marcar o hipoglosso por ser outro nervo craniano do pescoço; troclear e trigêmeo não têm trajeto cervical junto ao esternocleidomastóideo.
@@ -262,7 +262,7 @@ O Campbell acrescenta um detalhe de exame que ajuda: a criança **consegue aumen
 | Febre | não | frequente no GRISEL |
 !fim
 
-!questoes central=coluna-0210
+!questoes central=coluna-0210 relacionadas=pediatria-0733
 conceito: Na síndrome de GRISEL a criança tem dor, a cabeça inclinada para um lado e rodada para o outro, e o esternocleidomastóideo em espasmo é o do lado para onde o queixo aponta (torcicolo paradoxal).
 como: A SBOT-SP montou quatro alternativas cruzando "com dor" ou "sem dor" com o queixo rodado para o lado da lesão ou para o contralateral.
 armadilha: Descartar a dor porque o torcicolo muscular congênito é indolor, ou aplicar ao GRISEL a regra do torcicolo muscular (queixo para longe do músculo doente).

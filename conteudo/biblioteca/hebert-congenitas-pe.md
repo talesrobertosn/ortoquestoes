@@ -94,7 +94,7 @@ O gesso entra no pé parcialmente flexível com deformidade evidente e no rígid
 
 A manobra é de KITE. O HEBERT descreve uma mão sobre o calcâneo, imobilizando a subtalar, com **o polegar como fulcro sobre a articulação cuboide-metatarsal**, e a outra pinçando o primeiro raio para abduzir o antepé com delicadeza. O Tachdjian (p. 692) diz o mesmo: o calcanhar fica neutro e **o polegar alcança o cuboide, de modo que o fulcro fique na articulação cuboide-metatarsal**. A lógica é de dobradiça: para abrir um ângulo, o apoio vai no vértice, e o vértice está na tarsometatarsal. Apoiar mais atrás mandaria a força para o retropé, que está normal. No pé torto é diferente: o fulcro de PONSETI é a cabeça do tálus, e o "erro de KITE" era apoiar na calcaneocuboide (HEBERT, cap. 20.1).
 
-!questoes central=pe-tornozelo-0010
+!questoes central=pe-tornozelo-0010 relacionadas=pediatria-0500
 conceito: No gesso do metatarso aduto, o polegar da mão que segura o calcanhar em neutro apoia no cuboide, e o fulcro da abdução fica na articulação cuboide-metatarsal, onde está a deformidade.
 como: O TARO 2019 perguntou em que articulação fica o fulcro da correção do metatarso varo com gesso seriado.
 armadilha: Responder calcaneocuboide (o erro de KITE apontado por PONSETI no pé torto) ou talonavicular (região da cabeça do tálus, fulcro do PONSETI).

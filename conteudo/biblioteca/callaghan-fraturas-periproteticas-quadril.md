@@ -90,7 +90,7 @@ A alfa-defensina aparece no The Adult Hip (cap. 81, p. 1042): é um peptídeo an
 
 O ENARE R4 de 2024 juntou essas peças num caso: ATQ **não cimentada há três semanas**, queda em casa, dor e dificuldade para andar, alfa-defensina de 5,4. O gabarito oficial é a **fratura periprotética do componente femoral**. O raciocínio que os livros sustentam é o do mecanismo e do momento: haste não cimentada é a que mais fratura no início, por isso queda de baixa energia com dor nova e incapacidade de carga numa prótese recente aponta primeiro para fratura; soltura asséptica é evento tardio, e o próprio capítulo lembra que marcadores inflamatórios sobem com a fratura.
 
-!questoes central=quadril-0230
+!questoes central=quadril-0230 relacionadas=quadril-0192
 conceito: ATQ não cimentada recente com queda, dor e incapacidade de carga = fratura periprotética femoral até prova em contrário; a haste não cimentada é a que mais fratura e os marcadores inflamatórios sobem com a própria fratura.
 como: O ENARE R4 2024 deu ATQ não cimentada de três semanas, queda e alfa-defensina de 5,4, e pediu o diagnóstico mais provável.
 armadilha: Fixar-se no número do exame e marcar infecção, ignorando a queda, o tempo curto e a dor nova.
@@ -325,7 +325,7 @@ O Campbell (p. 278) traz a voz dissonante que as provas mais novas podem explora
 | Cimento em cimento | B2 selecionada, manto bom, baixa demanda | cirurgia menor | indicação estreita |
 !fim
 
-!questoes central=quadril-0023 relacionadas=quadril-0078,quadril-0002
+!questoes central=quadril-0023 relacionadas=quadril-0078,quadril-0002,quadril-0487
 conceito: Na B2 a haste está solta e o osso é razoável; o tratamento é revisão com haste femoral mais longa, de preferência não cimentada com fixação distal no istmo, e os fragmentos são cerclados ao redor dela.
 como: O TARO 2016 e o TEOT 2023 pediram o tratamento preferencial da B2 (no TEOT, a escolha entre haste longa cimentada e não cimentada); o TARO 2020 mostrou uma imagem de fratura periprotética e pediu a melhor conduta, com gabarito na revisão do componente femoral.
 armadilha: Fixar com placa bloqueada mantendo a haste (é a conduta da B1) ou escolher a haste longa cimentada, que o The Adult Hip diz ter maus resultados e não recomenda.
