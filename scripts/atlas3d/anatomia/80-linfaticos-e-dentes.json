@@ -1,0 +1,461 @@
+{
+  "lote": "80-linfaticos-e-dentes",
+  "fonte": "netter-6",
+  "paginas_lidas": [
+    588,
+    589,
+    590,
+    593,
+    604,
+    609,
+    633,
+    640,
+    645,
+    653,
+    657,
+    658,
+    661,
+    663,
+    666,
+    693,
+    704,
+    708,
+    721,
+    722
+  ],
+  "registros": [
+    {
+      "chave": "lf-axilares",
+      "tipo": "linfatico",
+      "nome": "Linfonodos axilares",
+      "en": "Axillary nodes",
+      "ids": [
+        "anterior_axillary_nodes",
+        "apical_axillary_nodes",
+        "central_axillary_nodes",
+        "lateral_axillary_nodes",
+        "posterior_axillary_nodes"
+      ],
+      "regiao": "ombro",
+      "partes": "Cinco grupos: apical (junto à veia axilar e à 1ª parte da artéria; recebe de todos os outros e forma o tronco linfático subclávio), peitoral ou anterior (parede medial da axila; mama e parede anterior do tórax), subescapular ou posterior (prega axilar posterior; parede posterior do tórax e escápula), umeral ou lateral (parede lateral; membro superior) e central (sob o peitoral menor; recebe dos peitorais, subescapulares e umerais).",
+      "drenagem": "Toda a linfa do membro superior chega aos axilares, assim como a da mama e da parede do tórax acima do umbigo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            693,
+            704
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lf-membro-superior",
+      "tipo": "linfatico",
+      "nome": "Linfonodos cubitais, braquiais, infraclaviculares e interpeitorais",
+      "en": "Nodes of upper limb",
+      "ids": [
+        "brachial_nodes",
+        "cubital_nodes",
+        "infraclavicular_nodes",
+        "interpectoral_nodes",
+        "supratrochlear_nodes"
+      ],
+      "regiao": "braco",
+      "localizacao": "Grupos menores no trajeto do membro superior até a axila: cubitais (supratrocleares), braquiais, infraclaviculares e interpeitorais.",
+      "drenagem": "Toda a linfa do membro superior termina nos linfonodos axilares.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            693,
+            704
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lf-inguinais",
+      "tipo": "linfatico",
+      "nome": "Linfonodos inguinais",
+      "en": "Inguinal nodes",
+      "ids": [
+        "inferior_superficial_inguinal_nodes",
+        "intermediate_deep_inguinal_node",
+        "proximal_deep_inguinal_node",
+        "superolateral_superficial_inguinal_nodes",
+        "superomedial_superficial_inguinal_nodes"
+      ],
+      "regiao": "pelve-quadril",
+      "partes": "Superficiais (superolaterais, superomediais e inferiores, onde chegam a safena magna e os linfáticos que a acompanham) e profundos.",
+      "drenagem": "Superficiais: linfa que segue a safena magna e a da parede do tronco abaixo do umbigo. Profundos: linfáticos profundos do membro, que acompanham os vasos nos compartimentos musculares, e os poplíteos.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            633,
+            708,
+            721,
+            722
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lf-membro-inferior",
+      "tipo": "linfatico",
+      "nome": "Linfonodos poplíteos e da perna",
+      "en": "Popliteal and leg nodes",
+      "ids": [
+        "anterior_tibial_node",
+        "deep_popliteal_nodes",
+        "fibular_node",
+        "posterior_tibial_node",
+        "superficial_popliteal_nodes"
+      ],
+      "regiao": "joelho",
+      "localizacao": "Os poplíteos ficam na gordura da fossa poplítea; os tibiais e fibular, ao longo dos vasos da perna.",
+      "drenagem": "Recebem a linfa que acompanha a safena parva e os vasos profundos da perna; drenam para os inguinais profundos.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            721,
+            722
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lf-cabeca-e-pescoco",
+      "tipo": "linfatico",
+      "nome": "Linfonodos da cabeça e do pescoço",
+      "en": "Nodes of head and neck",
+      "ids": [
+        "anterior_inferior_jugular_nodes",
+        "bucinator_node",
+        "inferior_deep_lateral_cervical_nodes",
+        "infra_auricular_nodes",
+        "intraglandular_parotid_nodes",
+        "jugulodigastric_node",
+        "lateral_superior_jugular_node",
+        "mandibular_node",
+        "mastoid_nodes",
+        "nasolabial_node",
+        "occipital_nodes",
+        "paratracheal_cervical_nodes",
+        "pre_auricular_nodes",
+        "pretracheal_nodes",
+        "retropharyngeal_nodes",
+        "submandibular_nodes",
+        "submental_nodes",
+        "superficial_anterior_cervical_nodes",
+        "superficial_lateral_cervical_nodes",
+        "superficial_parotid_nodes",
+        "supraclavicular_nodes",
+        "thyroid_nodes"
+      ],
+      "regiao": "cabeca-pescoco",
+      "partes": "Grupos superficiais (occipitais, mastóideos, parotídeos, faciais, submandibulares, submentuais) em anel na junção da cabeça com o pescoço, e cervicais profundos ao longo da veia jugular interna (com o jugulodigástrico), além dos pré e paratraqueais.",
+      "drenagem": "Toda a linfa da cabeça e do pescoço chega por fim aos linfonodos cervicais profundos. A tireoide drena para os pré-laríngeos, pré-traqueais, paratraqueais e cervicais profundos.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            593,
+            609
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lf-torax",
+      "tipo": "linfatico",
+      "nome": "Linfonodos do tórax",
+      "en": "Thoracic nodes",
+      "ids": [
+        "brachiocephalic_nodes",
+        "inferior_diaphragmatic_nodes",
+        "inferior_tracheobronchial_nodes",
+        "intercostal_nodes",
+        "intrapulmonary_nodes",
+        "juxta_oesophageal_nodes",
+        "lateral_pericardial_nodes",
+        "node_of_arch_of_azygos_vein",
+        "node_of_ligamentum_arteriosum",
+        "parasternal_nodes",
+        "paratracheal_thoracic_nodes",
+        "prepericardial_nodes",
+        "prevertebral_nodes",
+        "superior_diaphragmatic_nodes",
+        "superior_tracheobronchial_nodes"
+      ],
+      "regiao": "torax",
+      "partes": "Pulmonares e broncopulmonares (no hilo), traqueobronquiais superiores e inferiores (acima e abaixo da bifurcação da traqueia), mediastinais (justaesofágicos, pericárdicos, braquiocefálicos) e parietais (paraesternais, intercostais, pré-vertebrais e diafragmáticos).",
+      "drenagem": "Os pulmões drenam do hilo para os traqueobronquiais; o esôfago, para os mediastinais posteriores e cervicais profundos inferiores.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            640,
+            645
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lf-abdome-parietais",
+      "tipo": "linfatico",
+      "nome": "Linfonodos lombares (para-aórticos e cavais)",
+      "en": "Lumbar nodes",
+      "ids": [
+        "inferior_epigastric_nodes",
+        "intermediate_lumbar_nodes",
+        "lateral_aortic_nodes",
+        "lateral_caval_nodes",
+        "pre_aortic_nodes",
+        "precaval_nodes",
+        "retro_aortic_nodes",
+        "retrocaval_nodes",
+        "subaortic_nodes"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Em volta da aorta e da cava inferior, na parede posterior do abdome.",
+      "drenagem": "Recebem dos ilíacos comuns, da parede posterior do abdome, dos rins, ureteres e gônadas; formam os troncos lombares, que vão à cisterna do quilo e ao ducto torácico.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            653,
+            663,
+            666
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lf-abdome-visceras",
+      "tipo": "linfatico",
+      "nome": "Linfonodos das vísceras abdominais",
+      "en": "Visceral abdominal nodes",
+      "ids": [
+        "appendicular_nodes",
+        "central_superior_mesenteric_nodes",
+        "coeliac_nodes",
+        "cystic_node",
+        "ileocolic_nodes",
+        "inferior_pancreatic_nodes",
+        "juxta_intestinal_mesenteric_nodes",
+        "left_colic_nodes",
+        "middle_colic_nodes",
+        "paracolic_superior_mesenteric_nodes",
+        "precaecal_nodes",
+        "retrocaecal_nodes",
+        "retropyloric_nodes",
+        "right_colic_nodes",
+        "right_gastric_nodes",
+        "right_gastro_omental_nodes",
+        "sigmoid_nodes",
+        "splenic_nodes",
+        "subpyloric_nodes",
+        "superior_pancreatic_nodes",
+        "superior_pancreaticoduodenal_nodes",
+        "suprapyloric_node"
+      ],
+      "regiao": "abdome",
+      "partes": "Acompanham as artérias: celíacos, gástricos, gastromentais, pilóricos, pancreáticos e esplênicos (pancreaticoesplênicos) no andar supramesocólico; mesentéricos superiores, ileocólicos, cólicos, cecais e apendiculares; mesentéricos inferiores (cólicos esquerdos e sigmóideos).",
+      "drenagem": "Linfa local → regional (celíacos e mesentéricos) → troncos intestinais → cisterna do quilo (quando existe, em L1–L2) → ducto torácico, que sobe pelo hiato aórtico.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            657,
+            658,
+            661,
+            663
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lf-pelve",
+      "tipo": "linfatico",
+      "nome": "Linfonodos da pelve",
+      "en": "Pelvic nodes",
+      "ids": [
+        "inferior_gluteal_nodes",
+        "intermediate_common_iliac_nodes",
+        "intermediate_external_iliac_nodes",
+        "intermediate_lacunar_node",
+        "lateral_common_iliac_nodes",
+        "lateral_lacunar_node",
+        "lateral_sacral_nodes",
+        "lateral_vesical_nodes",
+        "medial_common_iliac_nodes",
+        "medial_external_iliac_nodes",
+        "medial_lacunar_node",
+        "median_sacral_nodes",
+        "obturator_nodes",
+        "pararectal_nodes",
+        "postvesical_nodes",
+        "prevesical_nodes",
+        "superior_gluteal_nodes"
+      ],
+      "regiao": "pelve-perineo",
+      "partes": "Ilíacos externos (com os lacunares, junto ao ligamento inguinal, e os obturatórios), ilíacos internos (glúteos e sacrais), ilíacos comuns e os viscerais junto à bexiga e ao reto.",
+      "drenagem": "Os ilíacos comuns recebem dos externos e internos e drenam para os lombares (para-aórticos).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            653
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "timo",
+      "tipo": "linfatico",
+      "nome": "Timo",
+      "en": "Thymus",
+      "ids": [
+        "left_lobe_of_thymus",
+        "right_lobe_of_thymus"
+      ],
+      "regiao": "torax",
+      "localizacao": "Atrás do manúbrio, no mediastino superior e anterior; no adulto restam gordura e resquícios dele.",
+      "funcao": "Papel central no desenvolvimento do sistema imune.",
+      "irriga": "Artérias torácica interna e intercostais anteriores.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            645
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "baco",
+      "tipo": "linfatico",
+      "nome": "Baço",
+      "en": "Spleen",
+      "ids": [
+        "spleen"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Quadrante superior esquerdo, junto às costelas 9 a 11 (separado delas pelo diafragma); à frente o estômago, embaixo a flexura esplênica do colo, medialmente o rim esquerdo, e a cauda do pâncreas chega ao hilo.",
+      "funcao": "Maior órgão linfático, muito vascularizado.",
+      "irriga": "Artéria esplênica, de trajeto tortuoso, com cinco ou mais ramos no hilo e segmentos sem anastomoses entre si.",
+      "drenagem": "Veia esplênica, que se une à mesentérica superior para formar a porta.",
+      "clinica": "É o órgão abdominal mais lesado no trauma, mesmo protegido pelas costelas; sangra muito pela cápsula fina e pelo parênquima mole.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            661
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tonsila-palatina",
+      "tipo": "linfatico",
+      "nome": "Tonsila palatina",
+      "en": "Palatine tonsil",
+      "ids": [
+        "palatine_tonsil"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Na orofaringe, entre os arcos palatoglosso e palatofaríngeo, sobre o leito formado pelo constritor superior e a fáscia faringobasilar.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            604
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "dentes-anteriores",
+      "tipo": "dente",
+      "nome": "Dentes anteriores (incisivos e caninos)",
+      "en": "Anterior teeth",
+      "ids": [
+        "lower_canine",
+        "lower_lateral_incisor",
+        "lower_medial_incisor",
+        "upper_canine",
+        "upper_lateral_incisor",
+        "upper_medial_incisor"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Nos processos alveolares da maxila (superiores) e da mandíbula (inferiores).",
+      "inervacao": "Superiores: ramos alveolares do nervo maxilar. Inferiores: nervo alveolar inferior.",
+      "ver": [
+        "alveolar-inferior",
+        "maxilar"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141,
+            588,
+            589,
+            590
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "dentes-posteriores",
+      "tipo": "dente",
+      "nome": "Dentes posteriores (pré-molares e molares)",
+      "en": "Posterior teeth",
+      "ids": [
+        "lower_first_molar_tooth",
+        "lower_first_premolar",
+        "lower_second_molar_tooth",
+        "lower_second_premolar",
+        "upper_first_molar_tooth",
+        "upper_first_premolar",
+        "upper_second_molar_tooth",
+        "upper_second_premolar"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Nos processos alveolares da maxila e da mandíbula. O ducto parotídeo abre na mucosa da bochecha diante do 2º molar superior.",
+      "inervacao": "Superiores: ramos alveolares do nervo maxilar. Inferiores: nervo alveolar inferior.",
+      "ver": [
+        "alveolar-inferior",
+        "maxilar"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141,
+            588,
+            589,
+            590
+          ]
+        }
+      ],
+      "status": "verificado"
+    }
+  ]
+}

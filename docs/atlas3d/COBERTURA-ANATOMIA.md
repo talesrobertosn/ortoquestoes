@@ -1,6 +1,6 @@
 # Cobertura do banco anatômico do Atlas 3D
 
-Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 20 lote(s). Não editar à mão.
+Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 21 lote(s). Não editar à mão.
 
 ## Totais
 
@@ -13,6 +13,8 @@ Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 20 lote(s). Não ed
 | veia | 10 | 10 | 0 | 0 | 10 |
 | orgao | 58 | 58 | 0 | 0 | 58 |
 | encefalo | 25 | 25 | 0 | 0 | 25 |
+| linfatico | 12 | 12 | 0 | 0 | 12 |
+| dente | 2 | 2 | 0 | 0 | 2 |
 
 ## Por região
 
