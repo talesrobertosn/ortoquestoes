@@ -6063,48 +6063,34 @@
   "conferido": false
  },
  "trauma-0216": {
-  "conceito": "Se a parede lateral deixa de funcionar como batente, o fêmur pode deslocar-se para dentro e perder distância lateral em relação ao quadril: ocorre **medialização com diminuição do offset**, alternativa C.\n\nA parede lateral é a cortical abaixo do trocânter maior, por onde entra o parafuso cefálico. No sistema deslizante, a fratura deve impactar de modo controlado. A parede ajuda a conter o conjunto durante esse movimento; quando está rompida pelo traço ou se quebra na cirurgia, os adutores conseguem medializar a diáfise (resumo do Rockwood, 10ª ed., cap. 54, “Classificação: AO 31A e a parede lateral”).\n\nOffset é a projeção lateral da região proximal em relação ao eixo femoral. Na consequência descrita, sua perda acompanha a medialização e piora a função. Não é apenas uma alteração radiográfica de pouca importância: há menos contato entre os fragmentos, consolidação mais lenta e mais complicações. O capítulo relata associação de medialização acima de 50% com pior recuperação funcional e acima de 5 mm com mais dor; são medidas diferentes de estudos, e não dois limiares intercambiáveis.\n\nA estabilidade da parede entra na escolha do implante. Na 31A1 simples ela permanece íntegra; na A3 de traço reverso ou transverso, está rompida e o comportamento muda. O capítulo favorece haste cefalomedular nas instáveis A2/A3, com menor medialização, e descreve a placa de estabilização trocantérica como um recurso que pode complementar o DHS reproduzindo o papel da parede.\n\nNo resumo da Biblioteca, leia a função de batente junto da classificação. O deslizamento planejado deve aproximar os fragmentos com controle; não pode ser confundido com perda de suporte permitindo migração progressiva da diáfise.",
-  "correta": "**C: medialização do fêmur com diminuição do offset.** A ausência do batente lateral permite deslocamento medial da diáfise sob ação dos adutores, com perda da relação lateral proximal.\n\nO resultado pode comprometer contato e função, razão pela qual a parede precisa ser considerada antes de escolher uma montagem deslizante.",
+  "conceito": "A pergunta parece um jogo de palavras com quatro combinações de \"medial, lateral, aumenta, diminui\", mas por trás dela há uma ideia mecânica simples: a parede lateral é o batente que impede a diáfise de fugir para dentro. Quem entende o batente acerta as duas metades da resposta sem decorar nada.\n\n**O que é a parede lateral.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54, pág. PDF 2691), define a parede lateral como a **cortical lateral do fêmur** até o ponto em que a coluna cortical se estreita e entra no trocânter maior. É por ela que entra o parafuso cefálico. Na classificação AO/OTA, a **31A1** e a **31A2** têm a parede essencialmente íntegra; a **31A3**, de traço reverso ou transverso, corre do trocânter menor até a cortical lateral e a rompe.\n\n**O que acontece quando ela falta.** No parafuso deslizante, o desenho conta com uma impacção controlada: o parafuso desliza no tubo, o fragmento proximal desce e encosta na parede lateral, que segura o conjunto. Sem esse apoio, as forças deformantes ganham. Os **adutores** puxam a diáfise para **posterior e medial**, e ela passa por baixo do fragmento proximal. O livro (cap. 54, pág. PDF 2702) lista as consequências dessa medialização: **menos contato osso com osso**, **consolidação mais lenta**, **mais complicações da consolidação** e **perda de função pela perda do offset femoral**.\n\n**Por que o offset diminui.** O offset é a distância entre o centro da cabeça e o eixo da diáfise. Se a diáfise entra para medial enquanto a cabeça fica no acetábulo, o eixo do fêmur se aproxima do centro da cabeça: o braço de alavanca dos abdutores encurta, e a marcha piora. As duas metades da resposta são, na verdade, o mesmo movimento descrito de dois jeitos.\n\nNa figura, a radiografia A mostra uma trocantérica muito cominuta, sem o apoio lateral; a B mostra a diáfise já medializada sob o fragmento proximal, exatamente o desvio que a parede deveria impedir. A segunda figura (Fig. 54-12) é o desfecho com parafuso deslizante numa A3 transversa: o parafuso deslizou demais, sem batente, e a diáfise medializou **75%**.\n\n**Os números do resumo e dos dois livros.**\n\n| Achado | Número | Fonte |\n|---|---|---|\n| Medialização associada a pior recuperação funcional | acima de **50%** | Rockwood, cap. 54 |\n| Medialização associada a mais dor pós-operatória | acima de **5 mm** | Rockwood, cap. 54 |\n| Medialização média nas A3: parafuso deslizante contra haste | **10% contra 2%** | Rockwood, cap. 54; Campbell, cap. 60 |\n| Espessura da parede que prediz a fratura dela | **menor que 21 mm** | Campbell, cap. 60, p. 2670 aprox. |\n\nO Campbell's Operative Orthopaedics, 15ª ed. (cap. 60, p. 2670 aprox.), acrescenta que três de cada quatro fraturas da parede acontecem **durante a cirurgia**, quando o parafuso deslizante entra numa A2 mais cominuta, e por isso recomenda cautela com esse implante em qualquer fratura mais complexa que a A2.1. A haste cefalomedular resiste melhor porque sua parte proximal se apoia no colo e faz o papel do batente perdido.\n\n> **Na prova:** parede lateral rota = diáfise **medializada** pelos adutores = **offset menor**. A pegadinha mais comum troca só o offset (\"medialização com aumento\").\n\nA explicação está na seção \"Por que a parede lateral importa\" do resumo.",
+  "correta": "**C) medialização do fêmur com diminuição de offset.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 54, pág. PDF 2702), descreve que a perda do apoio da parede lateral deixa os adutores desviarem a diáfise para medial, com menos contato entre os fragmentos, consolidação mais lenta e perda de função pela perda do offset femoral. Como a cabeça fica no acetábulo e a diáfise entra para dentro, a distância entre o centro da cabeça e o eixo do fêmur encurta, e o braço de alavanca dos abdutores diminui.",
   "incorretas": {
-   "A": "**Reconhece a medialização e inverte a mudança do offset.** A fonte descreve perda de offset, não seu aumento.\n\nO fêmur deslocar-se medialmente não deve ser interpretado como ganho da distância lateral que se procura preservar.",
-   "B": "**Troca a direção da diáfise e também a consequência funcional descrita.** O problema da parede insuficiente é a medialização com perda de offset.\n\nO fato de a parede estar no lado lateral não significa que sua falha empurre o fêmur para fora.",
-   "D": "**Conserva a diminuição do offset e muda o deslocamento que a acompanha.** Os adutores medializam a diáfise; não produzem a lateralização proposta.\n\nÉ necessário relacionar a força muscular à perda do batente, em vez de guardar apenas a palavra “offset”."
+   "A": "**Medialização do fêmur com aumento de offset** acerta a direção do desvio e erra a consequência. Quando a diáfise vai para medial e a cabeça permanece no lugar, o eixo femoral se aproxima do centro da cabeça; o offset só poderia aumentar se a diáfise se afastasse dela. O Rockwood (cap. 54, pág. PDF 2702) fala expressamente em perda do offset, e é essa perda que piora a função.",
+   "B": "**Lateralização do fêmur com aumento de offset** é a imagem espelhada do que acontece. A falha da parede fica no lado lateral, e isso confunde: a intuição sugere que, sem a parede de fora, o osso iria para fora. Mas quem move a diáfise são os adutores, que a puxam para medial; a parede lateral serve justamente de anteparo contra esse movimento. Lateralização com ganho de offset não aparece em nenhum dos livros como consequência da parede insuficiente.",
+   "D": "**Lateralização do fêmur com diminuição de offset** acerta a perda do offset mas atribui a ela a direção errada. Lateralizar a diáfise afastaria o eixo femoral do centro da cabeça, o que aumentaria o offset, e não o reduziria; a combinação é incoerente em si. O desvio descrito pelo Rockwood (cap. 54) e visto na Fig. 54-3 é a diáfise passando para dentro, sob o fragmento proximal."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura transtrocantérica”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 54 · Trochanteric Hip Fractures (Martin J. Heetveld e Elvira R. Flikweert). Seções: Classificação: AO 31A e a parede lateral; Anatomia e forças deformantes; Escolha do implante."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 54 (Trochanteric Hip Fractures), pág. PDF 2691, 2693 e 2702 (Figs. 54-3 e 54-12)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 60 (Fractures and Dislocations of the Hip), p. 2670 aprox. (Fig. 60.35)",
+   "Resumo OrtoQuestões: Fratura transtrocantérica"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-54-transtrocanterica",
-     "titulo": "Fratura transtrocantérica",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 54 · Trochanteric Hip Fractures",
-     "secoes": [
-      "Classificação: AO 31A e a parede lateral",
-      "Anatomia e forças deformantes",
-      "Escolha do implante"
-     ],
-     "blocos": [
-      "classificacao-ao-31a-e-a-parede-lateral-ea601e05",
-      "anatomia-e-forcas-deformantes-9923fb88",
-      "classificacao-ao-31a-e-a-parede-lateral-7271b226",
-      "classificacao-ao-31a-e-a-parede-lateral-785664da",
-      "escolha-do-implante-627dbbee",
-      "escolha-do-implante-99aab52e"
-     ],
-     "sha256": "12911c5858ff9db81046556dfa45851406f18f7e693f2015c5b366b8eebe0b0a",
-     "trechosSha256": "a23ad59083126c354fc0eb1a3f19953236ea50b7189747a63004e285ccb2f64e"
-    }
-   ],
-   "questaoSha256": "6d9e3472bbcf31acd4bc299e492dd33b2a08d19329978903c131946316da7ba8",
-   "comentarioSha256": "a3e3c9c27895c345412cad81418cd06cdc2026d1f997561fb334599b061668e1"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-54-3-w84.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 54, Fig. 54-3 A e B. Em A, fratura trocantérica muito cominuta, sem o apoio da parede lateral; em B, a diáfise medializada sob o fragmento proximal, o desvio que a parede lateral deveria impedir.",
+    "largura": 1408,
+    "altura": 806
+   },
+   {
+    "arquivo": "trauma/rwa10-54-12-w84.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 54, Fig. 54-12. Fratura A3 transversa fixada com parafuso deslizante e placa: o parafuso deslizou demais e a diáfise medializou 75%; o livro lembra que a haste cefalomedular reduz a medialização e é hoje a recomendação nesse tipo.",
+    "largura": 676,
+    "altura": 1269
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0217": {
   "conceito": "Quem pode ficar sem cirurgia numa fratura do acetábulo? O Rockwood responde com uma frase, e todas as alternativas devem ser julgadas por ela: **toda fratura estável e concentricamente reduzida que não envolve a cúpula de carga pode ser tratada sem cirurgia** (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 51, seção do tratamento não operatório). São três condições: quadril estável, cabeça congruente e teto preservado.\n\n**Por que o teto manda.** O acetábulo carrega peso na cúpula superior. ROWE e LOWELL perceberam primeiro que o estado dela decide o prognóstico; OLSON e MATTA mostraram que os **10 mm superiores** da superfície articular nos cortes axiais da TC correspondem à cúpula de carga, e a maioria dos autores indica cirurgia quando o desvio ali passa de **2 mm**. Um traço que poupa a cúpula deixa a cabeça apoiada em osso íntegro; um traço que a cruza ameaça diretamente a congruência.\n\n**A transversa e a altura do traço.** A transversa divide o osso inominado num fragmento ilíaco de cima, em geral estável, e num segmento isquiopúbico de baixo, que medializa com a cabeça. LETOURNEL a subdivide pela altura em que ela cruza a superfície articular, como mostra a figura abaixo (Fig. 51-24):\n- A, **infratectal**: cruza a **fossa cotiloide**, abaixo do teto, que fica preservado;\n- B, **justatectal**: no topo da fossa;\n- C, **transtectal**: atravessa a **cúpula de carga**.\n\nTranstectal e justatectal podem desfazer a redução concêntrica da cabeça sob o teto intacto e dão mais artrose se não forem reduzidas com precisão. A transversa **baixa** é a que deixa teto suficiente, e o capítulo a lista, com a coluna anterior baixa e a T baixa, entre as desviadas em que o acetábulo intacto mantém estabilidade e congruência.\n\n**Como se confere \"teto suficiente\".** Pelos **arcos do teto de MATTA**, nas três incidências, **sem tração**, com a cabeça reduzida: uma linha vertical pelo centro da cabeça e outra até onde o traço atinge a articulação. Pelos critérios biomecânicos de VRAHAS, o teto basta com arco acima de **45 graus no AP, 25 na oblíqua obturatriz e 70 na ilíaca**. O capítulo mostra (Fig. 51-36) uma transversa com arcos de cerca de 50 graus nas três incidências que subluxou em três semanas: passava no critério antigo de 45, mas o arco da ilíaca não chegava aos 70 de VRAHAS. A palavra \"baixa\" orienta; os arcos confirmam.\n\n> **Na prova:** conservador = **estável + congruente + cúpula poupada**. Transversa **baixa** (infratectal) sim; dupla coluna só com congruência secundária; parede só com quadril comprovadamente estável.\n\nO critério está na seção \"O teto e o arco de MATTA\" do resumo.",
@@ -11768,45 +11754,30 @@
   "conferido": false
  },
  "trauma-0564": {
-  "conceito": "O par de fatores descreve dois caminhos para o desequilíbrio entre carga e reparo. Nas mulheres, o enunciado reúne os componentes tradicionais da tríade: **distúrbio alimentar, baixa massa óssea e amenorreia**. Nos homens, destaca a **repetição intensa de esforço**, capaz de produzir fadiga óssea.\n\nEsses caminhos não são exclusivos de um sexo. O capítulo também descreve baixa disponibilidade de energia, baixa testosterona e baixa densidade óssea no homem de resistência. Da mesma forma, a carga de treino importa na mulher. A alternativa correta é a combinação compatível com a fonte, e não uma regra de que homens só fraturam por treino e mulheres só por alteração hormonal (resumo do Rockwood, 10ª ed., cap. 24, “A tríade da mulher atleta” e “O homem atleta de resistência”).\n\nNa prática, avaliam-se demanda, condicionamento e capacidade de reparo em ambos. O resumo da Biblioteca mostra como essas peças se somam.",
-  "correta": "**D: anorexia nervosa, osteoporose e amenorreia; esforço físico intenso de repetição.** É o par esperado, relacionado à tríade e à fadiga por carga. A terminologia atual é mais ampla que anorexia e osteoporose: baixa disponibilidade energética e baixa densidade mineral óssea.",
+  "conceito": "A questão junta dois perfis de paciente numa só frase: a corredora que quebra o colo do fêmur porque come pouco, não menstrua e perdeu massa óssea, e o homem que quebra porque treinou além do que o osso consegue reparar. Para escolher a alternativa, é preciso entender que a fratura por estresse é sempre um desequilíbrio entre criar e reparar microdano, e que cada perfil pesa um lado da balança.\n\n**O mecanismo.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 24, pág. PDF 850 e 851), define a fratura por estresse como **falha por fadiga** do osso: carga repetida gera microfissuras, que normalmente são reparadas pelas unidades de remodelação; quando a carga vem numa frequência ou intensidade acima da capacidade de reparo, a fissura se propaga e vira fratura. É **carga elevada sobre osso relativamente normal**, diferente da fratura por insuficiência, que é carga normal sobre osso doente (a idosa osteoporótica). Os fatores modificáveis principais são o **condicionamento prévio do osso** e a **frequência, duração e intensidade** da atividade; sem aclimatação, o risco sobe muito. É o recruta na primeira semana de marcha e o corredor que dobra a quilometragem. O livro também lembra que o músculo cansado deixa de amortecer o impacto, e o osso passa a absorver a energia direto.\n\n**O lado da mulher: a tríade.** Na mulher atleta, o problema está no reparo. A tríade é a coexistência de **distúrbio alimentar, amenorreia e fratura por estresse**; na definição atual, **irregularidade menstrual, ingestão calórica inadequada e baixa densidade mineral óssea** (cap. 24, pág. PDF 851). O elo é a hipótese do dreno de energia: com pouca caloria, o corpo corta a produção de estrogênio e progesterona, os ciclos param, e o estrogênio baixo libera a atividade osteoclástica. Os números do capítulo:\n\n| Fator (390 atletas) | Aumento do risco |\n|---|---|\n| Amenorreia secundária (3 meses ou mais) | **12,9 vezes** |\n| Escore Z da densidade óssea abaixo de -1,0 | **4,5 vezes** |\n| IMC abaixo de 17,5 | 1,1 vez |\n\nA tríade ajuda a explicar por que mulheres atletas e recrutas quebram mais que homens na mesma atividade. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 75, pág. PDF 4134), usa quase as palavras da alternativa correta: a tríade se caracteriza por **distúrbios dietéticos, amenorreia e osteoporose**, e a mulher tem risco relativo **3,8 a 12 vezes maior** que o homem. Para os corredores em geral, o HEBERT aponta como predisponentes o condicionamento insuficiente e a **mudança súbita do treino**, com aumento da distância e da velocidade.\n\n**O lado do homem.** O Rockwood dedica uma seção ao homem atleta de resistência (pág. PDF 852): ele também pode ter baixa densidade óssea, sobretudo na coluna lombar e no rádio, por ingestão calórica inadequada e testosterona baixa. Ou seja, o livro não diz que o homem só quebra por carga; diz que, nele, o desequilíbrio energético é menos estudado e o mecanismo clássico de sobrecarga é o que a literatura mais registra. A banca simplificou: mulher pelo reparo (tríade), homem pela carga (esforço repetitivo intenso).\n\n**Por que o colo do fêmur assusta.** Ele aparece em corredores, bailarinos e recrutas, o diagnóstico atrasa até **3 meses**, e o traço do **lado de tensão**, superior, é o de maior risco de progredir para fratura completa, pseudartrose e necrose da cabeça (cap. 24, pág. PDF 863). A figura mostra esse traço na cortical superior, na radiografia e na TC, e a fixação percutânea com parafusos canulados em triângulo invertido.\n\n> **Na prova:** tríade = **falta** de energia, de menstruação e de massa óssea; fratura por estresse = **carga repetitiva acima do reparo**. Etilismo, tabagismo, sedentarismo e obesidade não fazem parte dessa história.\n\nA tríade e o homem atleta estão nas seções \"A tríade da mulher atleta\" e \"O homem atleta de resistência\" do resumo.",
+  "correta": "**D) à anorexia nervosa, osteoporose e amenorreia, e nos homens devido ao esforço físico intenso de repetição.** Os três componentes femininos são a tríade da mulher atleta, que o HEBERT (cap. 75, pág. PDF 4134) descreve como distúrbios dietéticos, amenorreia e osteoporose e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 24, pág. PDF 851), como ingestão calórica inadequada, irregularidade menstrual e baixa densidade óssea. O componente masculino é o mecanismo de base de toda fratura por estresse: carga repetida numa frequência e intensidade acima da capacidade de reparo do osso, que o Rockwood põe entre os fatores modificáveis principais.",
   "incorretas": {
-   "A": "**Substitui o mecanismo energético por um perfil que a fonte não usa.** Sedentarismo com obesidade não representa a tríade, e etilismo com tabagismo não é o par que explica a carga repetitiva pedida no homem. A questão compara os mecanismos apresentados, sem dizer que outros fatores sejam clinicamente irrelevantes.",
-   "B": "**Acerta a repetição no homem e erra o conjunto feminino.** O componente nutricional da tríade é energia insuficiente, associado à disfunção menstrual e à baixa massa óssea. Sedentarismo e obesidade não reproduzem esse mecanismo.",
-   "C": "**Reconhece a tríade e troca a explicação masculina da pergunta.** O capítulo destaca a demanda repetida e também fatores energéticos e hormonais no homem de resistência. Não coloca etilismo e tabagismo como o par de resposta para esse mecanismo esportivo."
+   "A": "**Sedentarismo e obesidade na mulher, etilismo e tabagismo no homem** descreve o paciente da fratura por fragilidade, não o atleta jovem. A fratura por estresse exige carga elevada e repetida, que o sedentário não produz, e o capítulo associa o risco feminino ao IMC **baixo** (abaixo de 17,5 a 19), nunca à obesidade. Etilismo e tabagismo aparecem no Rockwood and Green's Fractures in Adults, 10ª ed., como fatores de risco de osteoporose e de fratura em geral (cap. 4, Tabela 4-1, pág. PDF 114), mas o capítulo das fraturas por estresse não os cita.",
+   "B": "**Sedentarismo e obesidade na mulher com esforço repetitivo no homem** acerta a metade masculina e inverte a feminina. A tríade é feita de falta: pouca energia, pouca massa óssea, ciclos ausentes. Na série militar do Rockwood (cap. 24, pág. PDF 852), as recrutas com fratura do colo do fêmur e da diáfise da tíbia tinham IMC mais baixo que as de tornozelo e pé. O livro ressalva que peso normal não protege a recruta mal condicionada, mas o fator aí é o mau condicionamento, e não o excesso de peso.",
+   "C": "**A tríade na mulher com etilismo e tabagismo no homem** acerta a metade feminina e troca a masculina por fatores de outra doença. Álcool e cigarro reduzem a massa óssea e aparecem entre os fatores de risco de osteoporose (Rockwood, cap. 4, Tabela 4-1), caminho que leva à fratura por insuficiência, típica do osso doente. O homem jovem da questão quebra o colo do fêmur por fadiga: o capítulo 24 descreve no homem de resistência a carga repetitiva, a baixa disponibilidade de energia e a testosterona baixa, e não menciona etilismo nem tabagismo."
   },
+  "alerta": "O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 24), não separa as causas por sexo como o enunciado: no homem atleta de resistência, ele cita também baixa densidade óssea, ingestão calórica inadequada e testosterona baixa, e a carga repetitiva vale para os dois sexos. A alternativa oficial (D) é a única coerente com os livros (tríade na mulher, sobrecarga no homem), e o gabarito foi mantido. Etilismo e tabagismo só aparecem no livro como fatores de risco de osteoporose (cap. 4, Tabela 4-1).",
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas por estresse”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), capítulo 24 · Stress Fractures (Hull, Yingling e Teague). Seções consultadas: Fatores de risco e a tríade da mulher atleta; Fisiopatologia: fadiga, reparo e insuficiência. Sem atribuição de páginas impressas não consultadas."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 24 (Stress Fractures), pág. PDF 850 a 852 e 863 a 864 (Fig. 24-8)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 4 (Osteoporosis and Metabolic Bone Disease), Tabela 4-1 (pág. PDF 114)",
+   "HEBERT, Ortopedia e Traumatologia, 5ª ed., cap. 75 (Traumatologia do esporte), pág. PDF 4134 e 4142",
+   "Resumo OrtoQuestões: Fraturas por estresse"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-23",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-24-fraturas-estresse",
-     "titulo": "Fraturas por estresse",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 24 · Stress Fractures",
-     "secoes": [
-      "Fatores de risco e a tríade da mulher atleta",
-      "Fisiopatologia: fadiga, reparo e insuficiência"
-     ],
-     "blocos": [
-      "fatores-de-risco-e-a-triade-da-mulher-atleta-17e3832b",
-      "fatores-de-risco-e-a-triade-da-mulher-atleta-69597076",
-      "fatores-de-risco-e-a-triade-da-mulher-atleta-fb9f6f2f",
-      "fisiopatologia-fadiga-reparo-e-insuficiencia-ec1d349d"
-     ],
-     "sha256": "264565f77087242f1c0e1f5892edbc7e721d08058f83d917c51e20abb188463f",
-     "trechosSha256": "ad926c89ef0b62f9b911308dbd22a556074d0b9bf615e6cdfce79b2025d54ca4"
-    }
-   ],
-   "questaoSha256": "28a41354ed025fcc03608a5daed25853255105a8bfc0703617b8c833163daa4d",
-   "comentarioSha256": "44b4ea9232d87cbf100083db5d8cb0d95a6412fccbdd2f36f058e9b5db3c0838"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-24-8-t11.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 24, Fig. 24-8 (pág. PDF 864; arquivo sem página impressa). Em A, radiografia em AP e reconstrução coronal da TC com fratura por estresse do colo do fêmur no lado de tensão (cortical superior); em B, radioscopia após fixação percutânea com parafusos canulados grandes de rosca parcial em triângulo invertido.",
+    "largura": 920,
+    "altura": 902
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0566": {
   "conceito": "A pergunta parece de estatística, mas é de raciocínio sobre o ombro. Das quatro opções, três são complicações que acontecem com o osso (não colar, colar torto, morrer) e uma acontece com a articulação. A banca quer a que atinge quase todo mundo, operado ou não, e não a mais grave.\n\n**Quem sofre essa fratura.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 36, seção de epidemiologia), descreve uma fratura da **mulher idosa** (70% a 85% dos casos, idade média de 63 anos), a terceira fratura osteoporótica não vertebral, depois do fêmur proximal e do rádio distal. É um paciente que já chega com pouca reserva para reabilitar, e a maioria é tratada com tipoia.\n\n**Por que o ombro enrijece.** O capítulo atribui a rigidez a várias causas, mas aponta a **contratura da cápsula** como a principal na rigidez refratária; viciosa, dor regional complexa, implante batendo e lesão do manguito somam. O padrão é **capsular**: perda global, maior na **abdução e na rotação externa**. O protocolo sem cirurgia mostra por que isso é tão comum: imobilização de 4 a 6 semanas, passivos por volta de 2 semanas, ativo-assistidos só com 6. Quem começou a mobilizar já na primeira semana (HODGSON) tinha mais função e menos dor com 16 semanas. Quanto mais tempo parado, mais a cápsula retrai.\n\n**O tamanho das outras complicações no mesmo capítulo.**\n\n| Complicação | O que o Rockwood diz |\n|---|---|\n| Pseudartrose | 1% a 10,4% sem cirurgia; típica do colo cirúrgico, com pouco contato cortical ou interposição |\n| Osteonecrose | depende do padrão: cabeça isolada, fratura-luxação; mais de 10% no valgo |\n| Consolidação viciosa | relativamente comum, inevitável em algum grau nas desviadas sem cirurgia (86% no estudo de OLERUD) e em geral bem tolerada |\n\nNa série de BOILEAU com 203 sequelas operadas com prótese, o grupo maior foi colapso ou necrose da cabeça (67,5%), mas essa é uma série de casos graves que chegaram à prótese, não a frequência na população.\n\n**A pegadinha honesta.** O capítulo não diz, com essas palavras, qual complicação é a mais frequente. Quem lê o número de OLERUD pode ficar tentado pela consolidação viciosa: ela é quase obrigatória nas desviadas tratadas sem cirurgia, só que na maioria das vezes não dá queixa e por isso não costuma ser contada como complicação. A rigidez, ao contrário, é queixa, atinge também as fraturas sem desvio e as operadas, e é a resposta que TARO, TEOT e SBOT-SP deram à mesma pergunta.\n\n> **Na prova:** úmero proximal, complicação mais frequente = **rigidez** (cápsula que retrai). Grave e menos comum = necrose; típica do colo cirúrgico = pseudartrose.\n\nA discussão está na seção \"Complicações: rigidez, viciosa, pseudartrose e tubérculos\" do resumo.",
@@ -23490,46 +23461,28 @@
   "conferido": false
  },
  "trauma-1104": {
-  "conceito": "O fator articular que melhor expressa a gravidade do pilão entre as opções é a **cominuição articular**, alternativa B. Não é apenas “muito osso quebrado”: é a fragmentação da superfície que deve receber a carga do tálus.\n\nA carga axial pode impactar e lesar a cartilagem ao mesmo tempo que fragmenta o osso subcondral. Reconstruir a superfície exige recuperar encaixe, altura e estabilidade dos fragmentos; ainda assim, uma redução anatômica não reverte necessariamente o dano celular inicial. Isso explica por que a artrose pode aparecer mesmo numa radiografia final satisfatória (Rockwood, 10ª ed., cap. 64, “O que define o prognóstico” e “Resultados e artrose pós-traumática”).\n\n**Articulação e metáfise trazem problemas diferentes.** A cominuição metafisária dificulta manter comprimento e eixo e escolher a montagem. A articular atinge diretamente a superfície de deslizamento e carga. Ambas importam, mas não devem ser tratadas como um único atributo de “cominução”.\n\nO resumo apresenta a gravidade articular como determinante central para muitos autores, mas também expõe limites da previsão: no estudo de DeCoster, escores clínicos não se correlacionaram de maneira consistente com gravidade e redução, embora a redução se relacionasse à artrose. Partes moles, exposição e fatores sociais também influenciam o resultado. A resposta é uma prioridade relativa entre as opções, não um prognóstico calculado por uma única variável.\n\n> **Na prova:** cominuição articular indica dano à superfície; reconhecer sua importância não autoriza ignorar a pele e o alinhamento.",
-  "correta": "**B: cominuição articular.** É o atributo que representa diretamente a gravidade da lesão da superfície do plafond. O resumo o coloca no centro da avaliação prognóstica, com ressalvas sobre a influência de outros fatores.",
+  "conceito": "Fratura do pilão é aquela em que o tálus sobe como a mão de um pilão e explode o teto da articulação do tornozelo. A banca pergunta qual dos achados mais pesa no prognóstico, e as alternativas misturam coisas que pioram a evolução (exposição, metáfise cominuta, trombose) com aquilo que define a lesão: o estado da superfície articular.\n\n**O que acontece na superfície.** O mecanismo principal é a **carga axial** de alta energia: o tálus é empurrado contra o plafond e fragmenta o osso subcondral. Ao mesmo tempo, a cartilagem recebe uma carga que causa **apoptose dos condrócitos**. Por isso o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 64), lembra que, mesmo com redução anatômica e partes moles sem complicação, o pilão evolui muitas vezes para artrose: parte do dano está decidida no momento do impacto e a cirurgia não o desfaz.\n\n**A classificação que desenha isso.** A de RÜEDI e ALLGÖWER usa justamente a superfície articular (figura):\n- **Tipo I:** clivagem articular **sem desvio** significativo.\n- **Tipo II:** **desvio** articular significativo **sem cominuição**.\n- **Tipo III:** **impacção e cominuição** da superfície articular.\n\nNa linha III da figura, a vista de baixo mostra o plafond partido em muitas peças pequenas, com áreas de osso impactado (em roxo) entre elas: não há fragmento grande para servir de molde, e cada pedaço carrega cartilagem lesada. O livro faz a ponte com a AO: a RÜEDI II equivale à 43C1, de fragmentos grandes, que pode ter resultado excelente; a RÜEDI III equivale à 43C3, e quanto maior a cominuição, mais difícil a cirurgia e pior o resultado.\n\n**O que os dois livros dizem do prognóstico.**\n- O **Rockwood** (cap. 64, pág. PDF 3277) diz que muitos autores consideram a **gravidade da lesão articular o determinante mais importante do resultado**. Ele mesmo pondera: DECOSTER não achou correlação consistente entre gravidade, redução e escore clínico, embora a redução se correlacionasse com a artrose; CHEN mostrou que a pior lesão de partes moles também piora o resultado; POLLAK, que renda e escolaridade baixas pioram os escores.\n- O **Campbell's Operative Orthopaedics, 15ª ed.** (cap. 59, p. 2579 aprox.), dá uma lista explícita de indicadores de mau prognóstico e a abre com a **cominuição articular (AO C3, RÜEDI III)**, seguida de lesão do tálus, lesão grave de partes moles, redução articular ruim, fixação instável, infecção da ferida e lesão da sindesmose. Ele traz um número que mostra o peso da cominuição: em 37 fraturas B3 e C3, **38%** das que tinham cominuição em \"vidro moído\" (mais de três peças articulares menores que 2 mm na TC) evoluíram com artrose, e **nenhuma** das que não tinham.\n\nUm detalhe que vale para a prova: o Campbell descreve o tipo III de RÜEDI como cominuição **metafisária e articular associadas**; o Rockwood, só como impacção e cominuição **articular**. Os dois concordam que o que define o pior grupo é a fragmentação da articulação.\n\n> **Na prova:** prognóstico do pilão = **superfície articular** (cominuição e impacção, RÜEDI III, AO C3). Partes moles decidem o momento da cirurgia e as complicações; a metáfise decide a fixação.\n\nO tema está na seção \"O que define o prognóstico\" do resumo.",
+  "correta": "**B) cominuição articular.** É o primeiro indicador de mau prognóstico na lista do Campbell's Operative Orthopaedics, 15ª ed. (cap. 59, p. 2579 aprox.), que o identifica com a AO C3 e a RÜEDI III, e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 64, pág. PDF 3277), registra que muitos autores consideram a gravidade da lesão articular o determinante mais importante do resultado. A razão é que a carga axial que fragmenta o plafond também mata condrócitos, e a artrose pode surgir mesmo com redução anatômica; com cominuição em vidro moído, a artrose chegou a 38% numa série do Campbell, contra nenhuma sem ela.",
   "incorretas": {
-   "A": "**A exposição piora o risco, mas não substitui a gravidade articular.** Ela aumenta a preocupação com infecção e cobertura, e o resumo inclui partes moles entre os determinantes do resultado. A questão, contudo, distingue esse risco do dano à própria superfície de carga.",
-   "C": "**É um problema de suporte e alinhamento, em outro nível.** A metáfise cominuída torna a fixação mais difícil e pode perder eixo ou comprimento. A alternativa não descreve a fragmentação da superfície articular, que é o fator destacado pelo enunciado.",
-   "D": "**É uma complicação vascular diferente da lesão articular inicial.** A análise prognóstica do resumo concentra-se na gravidade da articulação, na pele, na redução e no alinhamento. Não apresenta trombose venosa como o indicador principal que supera a cominuição articular nessa comparação."
+   "A": "**Fratura exposta** piora muito a evolução, mas pelo lado das complicações de partes moles e da infecção. Na série de WHITE citada pelo Rockwood (cap. 64, pág. PDF 3273), a infecção profunda foi de **19%** nas expostas contra **2,7%** nas fechadas, e o Campbell (cap. 59) põe a lesão grave de partes moles e a infecção entre os indicadores de mau prognóstico. Seria a resposta se a pergunta fosse sobre infecção ou perda da ferida; para o resultado articular a longo prazo, o fator que os dois livros põem à frente é a cominuição da superfície.",
+   "C": "**Cominuição metafisária** é um problema de suporte e de alinhamento: dificulta manter comprimento e eixo, pede enxerto nas áreas de impacção e é onde se concentram as pseudartroses do pilão, em geral metafisárias e em varo (Rockwood, cap. 64). A metáfise, porém, não é superfície de carga; pode consolidar bem e deixar um tornozelo com artrose se a articulação estiver destruída. A confusão é compreensível, porque o Campbell (cap. 59) descreve a RÜEDI III como cominuição metafisária e articular associadas, mas o que ele lista como indicador de mau prognóstico é a cominuição articular.",
+   "D": "**Trombose venosa profunda** é uma complicação clínica de qualquer fratura do membro inferior, não uma característica da lesão do pilão. Nem o capítulo 64 do Rockwood nem o capítulo 59 do Campbell a citam entre os determinantes do resultado: as listas de prognóstico tratam da articulação, do tálus, das partes moles, da redução, da fixação, da infecção e de fatores sociais. Ela entra na pergunta como distrator de gravidade geral, sem relação com o dano à superfície articular."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fratura do pilão tibial”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 64 · Tibial Pilon Fractures. Seções: Classificações e prognóstico; Resultados e artrose pós-traumática; Segundo tempo: plano, articulação e placas."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 64 (Tibial Pilon Fractures), pág. PDF 3248 (Fig. 64-6), 3273 e 3277",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 59 (Fractures of the Lower Extremity), p. 2578 a 2580 (pág. PDF 3334 a 3337)",
+   "Resumo OrtoQuestões: Fratura do pilão tibial"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-24",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-64-pilao-tibial",
-     "titulo": "Fratura do pilão tibial",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 64 · Tibial Pilon Fractures",
-     "secoes": [
-      "Classificações e prognóstico",
-      "Resultados e artrose pós-traumática",
-      "Segundo tempo: plano, articulação e placas"
-     ],
-     "blocos": [
-      "classificacoes-e-prognostico-d0f22b0e",
-      "classificacoes-e-prognostico-49d4f4bc",
-      "resultados-e-artrose-pos-traumatica-62c34c34",
-      "segundo-tempo-plano-articulacao-e-placas-aebfa6d9"
-     ],
-     "sha256": "40f9cea108c8d5bc9d84c0bd5bc95b9b34933a090455d8eb5289d5ed0c4e59c2",
-     "trechosSha256": "2b17866d558d3e97f5f710d8ac9e8f584887a225916a47ef1a99d6538b155721"
-    }
-   ],
-   "questaoSha256": "a4b3095b0a7d8629f629bc7d8d24afb533a462e9b7a5eed8f57e25141ac79779",
-   "comentarioSha256": "45e15aa1f0eb0e3a685425b0a0f5c05c7ecd994d30d56ff3e2a34cd653fb6838"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-64-6-t11.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 64, Fig. 64-6 (pág. PDF 3248; arquivo sem página impressa). Classificação de RÜEDI e ALLGÖWER em três linhas, cada uma de frente, de perfil e vista de baixo: I, clivagem articular sem desvio; II, desvio da superfície articular sem cominuição; III, impacção e cominuição da superfície articular, com o plafond partido em muitos fragmentos.",
+    "largura": 932,
+    "altura": 974
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-1105": {
   "conceito": "A questão pede o número de tipos de uma classificação específica, a IDEAL. Antes de qualquer coisa, um aviso honesto: nem o Rockwood and Green's Fractures in Adults, 10ª ed., nem o Green's Operative Hand Surgery, 7ª ed., nem o SIZÍNIO trazem a classificação IDEAL. O gabarito oficial é 3 tipos e foi mantido. O que os livros oferecem, e que ajuda o aluno a não cair nas outras opções, é o panorama das classificações e uma lição sobre por que tantas foram criadas.\n\n**Por que existem tantas.** Cada classificação tenta resolver um problema diferente. FRYKMAN (1967) separa articular de extra-articular e registra a fratura da ulna, mas ignora cominuição, encurtamento e desvio (Rockwood, p. 1635). MELONE olha só para as articulares e conta **quatro partes**: diáfise, estiloide, fragmento dorsomedial e palmar medial. A AO quer ser completa e chega a **27 padrões**. FERNANDEZ parte do mecanismo e tem **cinco** tipos. A Universal, modificada por COONEY, separa por redutibilidade e estabilidade em **quatro** tipos (SIZÍNIO, cap. 51).\n\n**O problema que todas compartilham.** ANDERSEN testou FRYKMAN, MELONE, MAYO e AO: só a AO teve confiabilidade inter e intraobservador, e **só nos três tipos A, B e C**; nos subtipos, nenhuma (Rockwood, p. 1636). O Green concorda: concordância aceitável só nos três tipos da AO, e nenhuma classificação prediz resultado (p. 523 e 524). O Rockwood conclui que nenhuma ajuda de fato a decidir o tratamento; servem para descrever e pesquisar (p. 1636). Esse é o pano de fundo que faz surgir propostas novas e mais simples: uma classificação útil precisa ter poucos grupos que observadores diferentes reconheçam do mesmo jeito.\n\n| Classificação | Quantos grupos |\n|---|---|\n| GARTLAND e WERLEY | 3 grupos de COLLES |\n| AO, nível de tipo | 3 (A, B, C) |\n| Universal (COONEY) | 4 tipos |\n| MELONE | 4 partes |\n| FERNANDEZ | 5 tipos |\n| MEDOFF | 5 fragmentos |\n| FRYKMAN | 8 tipos |\n\nA tabela mostra por que a prova coloca 2, 3, 4 e 5 como opções: todos esses números existem em alguma classificação do rádio distal. O assunto está na seção \"Universal (COONEY) e o problema da confiabilidade\" do resumo.",
