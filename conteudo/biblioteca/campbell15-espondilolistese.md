@@ -1,6 +1,6 @@
 ---
 id: campbell15-espondilolistese
-versao: 1
+versao: 2
 titulo: Espondilólise e espondilolistese
 especialidade: coluna
 acesso: gratis
@@ -10,7 +10,7 @@ capitulo: Capítulo 42 · Spondylolisthesis (Adolescent), com a seção Spondylo
 autores: William C. WARNER Jr. (cap. 42); Kirk M. THOMPSON (cap. 46); Daniel J. SUCATO, Charles E. JOHNSTON e Brandon A. RAMO (Tachdjian, cap. 11)
 fonte: Livros conferidos localmente em 01/11/2026: Campbell's Operative Orthopaedics, 15ª ed., cap. 42 inteiro (p. 1665 a 1686) e cap. 46, seção de espondilolistese, espondilólise, ístmica do adulto, degenerativa e complicações (p. 1823 a 1846); Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 11, seção de espondilolistese (p. 270 a 292), e cap. 7, dor lombar (p. 73 a 78). As páginas citadas são as impressas.
 subtemas: Espondilólise e espondilolistese
-resumo: Pars de L5 quebra por estresse em hiperextensão (ausente ao nascer, 4,4% aos 6 anos, 6% no adulto, até 50% nos Inuit); WILTSE I displásico (L5-S1, meninas, sem lise, maior risco neurológico), II ístmico (lítico, alongado, agudo), III degenerativo (L4-L5, mulher acima de 50, o tipo mais comum), IV traumático fora da pars, V patológico, VI iatrogênico; MARCHETTI e BARTOLOZZI separam desenvolvimento (alta displasia: S1 arredondado e L5 trapezoidal) de adquirida (traumática, pós-cirúrgica, patológica, degenerativa); MEYERDING I a V pela translação no perfil; ângulo de escorregamento acima de 55 graus prevê progressão; PI = SS + PT, pelve desequilibrada de HRESKO com SS baixa e PT alto; criança com dor lombar, isquiotibiais curtos, sacro vertical e pelve retrovertida; cirurgia acima de 50% ou com dor persistente; GILL isolado contraindicado; adulto ístmico com dor de L5 e estabilização do tronco; degenerativa com claudicação neurogênica e progressão lenta.
+resumo: Pars de L5 quebra por estresse em hiperextensão (ausente ao nascer, 4,4% aos 6 anos, 6% no adulto, até 50% nos Inuit); WILTSE I displásico (L5-S1, meninas, sem lise, maior risco neurológico), II ístmico (lítico, alongado, agudo), III degenerativo (L4-L5, mulher acima de 50, o tipo mais comum), IV traumático fora da pars, V patológico, VI iatrogênico; MARCHETTI e BARTOLOZZI separam desenvolvimento (alta displasia: S1 arredondado e L5 trapezoidal) de adquirida (traumática, pós-cirúrgica, patológica, degenerativa); MEYERDING I a V pela translação no perfil; ângulo de escorregamento acima de 55 graus correlacionado com progressão (Campbell); PI = SS + PT, pelve desequilibrada de HRESKO com SS baixa e PT alto; criança com dor lombar, isquiotibiais curtos, sacro vertical e pelve retrovertida; cirurgia acima de 50% ou com dor persistente; GILL isolado contraindicado; adulto ístmico com dor de L5 e estabilização do tronco; degenerativa com claudicação neurogênica e progressão lenta.
 ---
 
 # Como ler este capítulo {radar=fundamento}
@@ -27,7 +27,7 @@ As provas cobram quatro blocos: **classificações** (WILTSE, MARCHETTI e BARTOL
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 42, p. 1665) define **espondilolistese** como o escorregamento anterior ou posterior de um segmento da coluna sobre o segmento inferior, e **espondilólise** como o defeito unilateral ou bilateral da **pars interarticularis**. O primeiro relato é atribuído a **HERBINIAUX**, obstetra belga que notou uma proeminência óssea à frente do sacro atrapalhando o parto; o termo foi usado por **KILIAN** em 1854, do grego spondylos (vértebra) e olisthenein (escorregar). O capítulo 46 (p. 1823) data a descrição de HERBINAUX em **1782**.
 
-A pars é a ponte de osso que liga a faceta articular superior à inferior. Na radiografia oblíqua, o Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 274) a descreve como o pescoço do **cachorrinho escocês**: as articulares superior e inferior com a pars entre elas. Quando a pars quebra dos dois lados, o corpo vai para a frente e o arco posterior fica para trás: o canal se alarga e sobra uma **lâmina solta**.
+A pars é a ponte de osso entre a faceta articular superior e a inferior. O Campbell (cap. 43, p. 1691), ao ensinar a localização do pedículo, a define como **a área do osso onde o pedículo se une à lâmina**. Na radiografia oblíqua, o Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 274) a descreve como o pescoço do **cachorrinho escocês**: as articulares superior e inferior com a pars entre elas. Quando a pars quebra dos dois lados, o corpo vai para a frente e o arco posterior fica para trás, e sobra uma **lâmina solta**: é ela que a laminectomia de GILL retira (Campbell, cap. 42, p. 1676).
 
 ## Força, idade e postura
 
@@ -51,7 +51,7 @@ O Tachdjian (cap. 7, p. 74) lembra que espondilólise e espondilolistese são as
 conceito: Espondilólise é o defeito da pars interarticularis, ponte entre as facetas superior e inferior; atinge 5% a 8% da população, duas vezes mais homens, até 50% dos Inuit, e se concentra em L5-S1.
 como: O R4 de Coluna da SES-DF 2024 pediu a afirmação correta sobre espondilólise (defeito da pars, prevalência, sexo, esquimós) e o segmento mais acometido; o TARO 2026 perguntou o que o istmo conecta no tipo II de WILTSE.
 armadilha: Dizer que o defeito é do processo articular, que a prevalência é de 0,5% a 1% ou que é mais comum em mulheres; confundir o nível da ístmica (L5-S1) com o da degenerativa (L4-L5).
-alerta: Em `coluna-0394`, o gabarito L5-S1 vale para a espondilolistese em geral e para as formas ístmica e displásica (Tachdjian, p. 272; Campbell, cap. 46, p. 1832); o Campbell (cap. 46, p. 1825 e 1838) diz que a degenerativa, tipo mais comum no adulto, prefere L4-L5. Em `coluna-0285`, os livros não descrevem o istmo exatamente com as palavras da alternativa A; o Tachdjian (p. 274) só situa a pars entre as articulares superior e inferior, o que sustenta o gabarito por exclusão.
+alerta: Em `coluna-0394`, o gabarito L5-S1 vale para a espondilolistese em geral e para as formas ístmica e displásica (Tachdjian, p. 272; Campbell, cap. 46, p. 1832); o Campbell (cap. 46, p. 1825 e 1838) diz que a degenerativa, tipo mais comum no adulto, prefere L4-L5. Em `coluna-0285`, o gabarito oficial (A, faceta articular superior e inferior à lâmina e ao processo espinhoso) foi mantido, mas a descrição dos livros corresponde à alternativa C: o Campbell (cap. 43, p. 1691) define a pars como a área onde o pedículo se une à lâmina, e o Tachdjian (p. 274) a situa entre as articulares superior e inferior; pedículo, faceta superior, lâmina e faceta inferior são exatamente os elementos da C.
 !fim
 
 # A classificação de WILTSE, NEWMAN e MACNAB {radar=confirmado}
@@ -216,11 +216,11 @@ O sistema mais usado é o de **MEYERDING**: a borda superior de S1 é dividida e
 | V | Mais de 100%: L5 inteiro abaixo do topo do sacro (espondiloptose) |
 !fim
 
-O capítulo 42 escreve os limites como "25% ou menos" e "entre 25% e 50%"; o capítulo 46 usa 0 a 25% e 26 a 50%; a ideia é a mesma. O Tachdjian (p. 276) cita também a porcentagem de **TAILLARD** (A/B). Baixo grau é **menos de 50%**; alto grau, **50% ou mais**.
+O capítulo 42 escreve os limites como "25% ou menos" e "entre 25% e 50%"; o capítulo 46 usa 0 a 25% e 26 a 50%; a ideia é a mesma. O Tachdjian (p. 276) cita também a porcentagem de **TAILLARD** (A/B); a Fig. 11.7 (p. 277) desenha lado a lado a porcentagem de TAILLARD (A), os graus de MEYERDING, com o corpo do sacro dividido em quatro partes e o grau V como espondiloptose (B), e o ângulo de escorregamento medido da borda superior de L5 contra a perpendicular à face posterior do sacro (C). Baixo grau é **menos de 50%**; alto grau, **50% ou mais**.
 
-## Ângulo de escorregamento: o melhor preditor
+## Ângulo de escorregamento: preditor discutido
 
-O Campbell (cap. 42, p. 1670) diz que as **relações angulares são os melhores preditores** de instabilidade e progressão. O **ângulo de escorregamento** é formado por uma linha paralela à borda inferior (ou superior) de L5 e uma perpendicular à face posterior de S1. Normalmente é **lordótico**; no alto grau, vira **cifótico**, e essa cifose segmentar L5-S1 pode ser grande. Um ângulo **acima de 55 graus** foi correlacionado com progressão. O capítulo 46 (p. 1828) dá outro corte: ângulo de escorregamento com valor preditivo **acima de 30 graus** e ângulo lombossacro com valor preditivo **acima de 10 graus**. No intraoperatório, o capítulo 42 (p. 1675) marca **acima de 45 graus** como o grupo com mais risco de lesão da cauda equina após fusão in situ.
+O Campbell (cap. 42, p. 1670) diz que as **relações angulares são os melhores preditores** de instabilidade e progressão. O Tachdjian discorda em parte: estudos com mais de **45 anos** de seguimento não encontraram valor preditivo na idade, na porcentagem de escorregamento, no índice lombar nem no **ângulo de escorregamento medidos na avaliação inicial** (p. 279); na mesma página, porém, lembra que porcentagem, grau de MEYERDING e ângulo de escorregamento foram associados à progressão quando comparados com a PI, que não provou prever. Na prova, o corte numérico vem do Campbell; afirmar que o ângulo é "o melhor preditor" sem ressalva vai além dos livros. O **ângulo de escorregamento** é formado por uma linha paralela à borda inferior (ou superior) de L5 e uma perpendicular à face posterior de S1. Normalmente é **lordótico**; no alto grau, vira **cifótico**, e essa cifose segmentar L5-S1 pode ser grande. Um ângulo **acima de 55 graus** foi correlacionado com progressão. O capítulo 46 (p. 1828) dá outro corte: ângulo de escorregamento com valor preditivo **acima de 30 graus** e ângulo lombossacro com valor preditivo **acima de 10 graus**. No intraoperatório, o capítulo 42 (p. 1675) marca **acima de 45 graus** como o grupo com mais risco de lesão da cauda equina após fusão in situ.
 
 !tabela Os cortes do ângulo de escorregamento nos livros (Campbell 15, cap. 42, p. 1670 e 1675, e cap. 46, p. 1828; Tachdjian 6, p. 285)
 | Valor | O que significa | Fonte |
@@ -234,7 +234,7 @@ O Campbell (cap. 42, p. 1670) diz que as **relações angulares são os melhores
 !fim
 
 !questoes central=coluna-0319
-conceito: O ângulo de escorregamento mede a cifose de L5 sobre S1; é o melhor preditor de progressão, e o capítulo do adolescente do Campbell correlaciona com progressão o ângulo acima de 55 graus.
+conceito: O ângulo de escorregamento mede a cifose de L5 sobre S1; o Campbell (cap. 42) chama as relações angulares de melhores preditores e correlaciona com progressão o ângulo acima de 55 graus, embora o Tachdjian (p. 279) não ache valor preditivo no ângulo inicial nos seguimentos acima de 45 anos.
 como: O TARO 2007 perguntou, citando BOXALL, o ângulo de deslizamento acima do qual a progressão é mais provável.
 armadilha: Marcar 45 graus, que é o corte de risco de cauda equina após fusão in situ, ou 30 graus, citado no capítulo do adulto.
 alerta: Questão sem gabarito oficial. O livro sustenta a alternativa D (55 graus): Campbell, cap. 42, p. 1670, sem citar BOXALL pelo nome. O capítulo 46 (p. 1828) atribui valor preditivo ao ângulo acima de 30 graus.
@@ -306,7 +306,7 @@ O Campbell (cap. 42, p. 1665 e 1666) resume o estudo das 500 crianças acompanha
 
 Quando o escorregamento aumenta, isso acontece **entre 9 e 15 anos** e **raramente depois dos 20** (cap. 42, p. 1666): é o estirão que empurra. Mesmo os graus III e IV sem tratamento evoluíram bem no longo prazo: **36% assintomáticos** e **55% com sintomas leves**, todos ativos; no grupo operado com artrodese in situ, 57% e 38% (cap. 42, p. 1666).
 
-O Tachdjian (p. 280) é ainda mais direto: progressão é rara (**5%**) e vem acompanhada de sintomas; abaixo de **30%**, a progressão é inesperada salvo no imaturo, e mesmo assim rara nas ístmicas; tratamento profilático do baixo grau **não se justifica**.
+O Tachdjian (p. 280) é ainda mais direto. A espondilólise assintomática é **comum** e costuma ser **achado incidental**, descoberto na investigação de outro problema, como uma escoliose: o paciente sem sintomas **não precisa de tratamento**, nem de restrição de atividades, e pode dispensar o seguimento para progressão; abaixo de **10 anos**, discute-se a chance de progressão e orienta-se voltar se surgirem sintomas. A progressão é rara (**5%**) e vem acompanhada de sintomas; abaixo de **30%**, a progressão é inesperada salvo no imaturo, e mesmo assim rara nas ístmicas; tratamento profilático do baixo grau **não se justifica**.
 
 ## Os fatores de risco
 
@@ -315,7 +315,7 @@ O Tachdjian (p. 280) é ainda mais direto: progressão é rara (**5%**) e vem ac
 |---|---|
 | Displasia (tipo I, alta displasia) | Progride mais que a espondilolítica; risco proporcional à displasia |
 | L5 trapezoidal e S1 em cúpula | Sinais de instabilidade; cúpula é fator de risco |
-| Ângulo de escorregamento alto | Melhor preditor angular |
+| Ângulo de escorregamento alto | Preditor angular no Campbell; sem valor preditivo inicial nos seguimentos longos do Tachdjian (p. 279) |
 | Escorregamento acima de 50% ao diagnóstico | Maior chance de progredir |
 | Diagnóstico antes do estirão; idade abaixo de 10 anos | Mais crescimento pela frente |
 | Sexo feminino | Mais progressão em algumas séries |
@@ -460,19 +460,42 @@ O transverso de L5 precisa de pelo menos **2 cm²** para a artrodese posterolate
 |---|---|
 | Com parafusos pediculares contra sem | Fusão 90% contra 77% (KWON e ALBERT) |
 | Circunferencial contra só anterior contra só posterior | Fusão 98%, 75% e 83%; sucesso clínico 86%, 79% e 75% |
-| BMP-7 contra osso ilíaco autólogo | Fusão 54% contra 74%; não recomendam BMP na fusão posterior instrumentada |
+| BMP-7 contra osso ilíaco autólogo | Fusão 54% contra 74%; não recomendam BMP na fusão posterior instrumentada (p. 1834) |
 | Redução do baixo grau contra in situ | Sem melhora do desfecho (BAI) |
 | Via de WILTSE e SPENCER | Entre multífido e longuíssimo; menos lesão muscular; não serve para descompressão direta |
 | Procedimento mais usado pelos autores | TLIF com artrodese posterolateral, em geral com laminectomia de GILL |
 !fim
 
-O enxerto pesa muito. No reparo da pars, o capítulo 46 (p. 1831) diz que a **fonte do enxerto e a técnica de enxertia** são provavelmente o aspecto **mais crítico**, e usa crista ilíaca autóloga, de baixa morbidade nos jovens. Na fusão, o ensaio randomizado mostrou o **osso ilíaco autólogo superior à BMP-7** (74% contra 54%) (p. 1835). O Campbell (cap. 42, p. 1671) também põe o **enxerto autólogo** entre os princípios do reparo. A **ALIF** fica para transversos pequenos demais ou como salvamento de pseudartrose posterolateral, com o risco de **ejaculação retrógrada** no homem jovem (cap. 46, p. 1837).
+A Tabela 46.3 do Campbell (cap. 46, p. 1806), tirada de uma revisão sobre pseudartrose da coluna, mostra que as taxas de fusão lombar variam pouco entre as opções, o que ajuda a entender por que nenhuma técnica se impõe:
+
+!tabela Fatores e taxa de fusão na coluna lombar (Campbell 15, cap. 46, Tabela 46.3, p. 1806)
+| Fator | Opção | Fusão (%) |
+|---|---|---|
+| Instrumentação | Nenhuma | 84 |
+| Instrumentação | Qualquer | 89 |
+| Instrumentação | Semirrígida | 91 |
+| Instrumentação | Rígida | 88 |
+| Local da fusão | Posterolateral | 85 |
+| Local da fusão | Interssomática posterior | 89 |
+| Local da fusão | Interssomática anterior | 86 |
+| Local da fusão | Circunferencial (360 graus) | 91 |
+| Enxerto | Autólogo isolado | 87 |
+| Enxerto | Aloenxerto isolado | 86 |
+| Enxerto | Autólogo com cage interssomático | 90 |
+| Enxerto | Mistura de aloenxerto e autólogo | 86 |
+| Órtese | Nenhuma | 89 |
+| Órtese | Qualquer | 88 |
+| Órtese | Semirrígida ou não rígida | 87 |
+| Órtese | Rígida | 88 |
+!fim
+
+O enxerto pesa muito. No reparo da pars, o capítulo 46 (p. 1831) diz que a **fonte do enxerto e a técnica de enxertia** são provavelmente o aspecto **mais crítico**, e usa crista ilíaca autóloga, de baixa morbidade nos jovens. Na fusão, o ensaio randomizado mostrou o **osso ilíaco autólogo superior à BMP-7** (74% contra 54%) (p. 1834). O Campbell (cap. 42, p. 1671) também põe o **enxerto autólogo** entre os princípios do reparo. A **ALIF** fica para transversos pequenos demais ou como salvamento de pseudartrose posterolateral, com o risco de **ejaculação retrógrada** no homem jovem (cap. 46, p. 1837).
 
 !questoes central=coluna-0396
 conceito: O sucesso da artrodese na espondilolistese depende sobretudo do enxerto: osso autólogo da crista ilíaca consolida mais que BMP-7, e a fonte e a técnica de enxertia são o aspecto mais crítico.
 como: O R4 de Coluna da SES-DF 2024 perguntou de que depende principalmente o sucesso da artrodese.
 armadilha: Escolher a técnica, a via anterior ou o uso de BMP; o Campbell diz que nenhuma técnica de fixação se mostrou superior.
-alerta: O Campbell (cap. 46, p. 1831) faz a afirmação sobre o enxerto no contexto do reparo direto da pars; para a fusão, o apoio vem do ensaio que comparou osso ilíaco autólogo e BMP-7 (p. 1835).
+alerta: O Campbell (cap. 46, p. 1831) faz a afirmação sobre o enxerto no contexto do reparo direto da pars; para a fusão, o apoio vem do ensaio que comparou osso ilíaco autólogo e BMP-7 (p. 1834).
 !fim
 
 # Espondilolistese degenerativa {radar=confirmado}
@@ -485,14 +508,14 @@ alerta: O Campbell (cap. 46, p. 1831) faz a afirmação sobre o enxerto no conte
 
 Vem da **cascata degenerativa de KIRKALDY-WILLIS**: o disco perde altura, a vértebra de cima anda para a frente, e as facetas e o ligamento amarelo hipertrofiados causam **estenose central e do recesso lateral**, mais do que nas outras formas (cap. 46, p. 1824). A diferença decisiva para a ístmica é a **pars intacta**: o arco inteiro acompanha o corpo de L4 para a frente, e o canal **estreita** em vez de alargar (p. 1838). BODEN viu que **facetas sagitais** (mais de 45 graus em L4-L5) dão **25 vezes** mais chance (p. 1838).
 
-!tabela Ístmica e degenerativa no adulto (Campbell 15, cap. 46, p. 1824, 1825 e 1831 a 1842)
+!tabela Ístmica e degenerativa no adulto (Campbell 15, cap. 46, p. 1824, 1825 e 1831 a 1842; Tachdjian 6, p. 270 e 274)
 | Aspecto | Ístmica | Degenerativa |
 |---|---|---|
 | Frequência no adulto | Segunda | Primeira (tipo mais comum) |
 | Nível | L5-S1 (90% a 95%) | L4-L5 (seis vezes mais) |
 | Sexo e idade | Jovens e adultos de 20 a 45 anos | Mulheres acima de 50 anos |
 | Pars | Quebrada ou alongada | Intacta |
-| Canal | Alarga (arco fica atrás) | Estreita (arco vai junto): estenose |
+| Canal | Livre: o arco fica preso pelos músculos e não comprime o saco dural (Tachdjian, p. 270 e 274) | Estreita (arco vai junto): estenose |
 | Raiz típica | L5 no forame L5-S1 | L5 no recesso L4-L5; L4 no forame |
 | Queixa típica | Dor axial mecânica e radicular de L5 | Dor axial e claudicação neurogênica |
 | Grau | Baixo, às vezes alto | Quase sempre I ou II |
@@ -501,6 +524,29 @@ Vem da **cascata degenerativa de KIRKALDY-WILLIS**: o disco perde altura, a vér
 ## Quadro clínico
 
 O capítulo 46 (p. 1824) diz que **dor axial e claudicação neurogênica**, com redução da tolerância para andar e ficar em pé, são os achados **mais comuns**. Na página 1839, descreve os sintomas como **estáveis ou de progressão lenta**: dor lombar e dor e fraqueza nos membros inferiores de caráter **claudicante**, que pioram com a marcha e a posição em pé. Os sintomas neurológicos vêm da estenose, no nível da listese e em outros níveis degenerados. A raiz de **L5** costuma ser comprimida no **recesso lateral L4-L5**, e a **L4** no forame, pela pseudo-hérnia contra o pedículo (p. 1841 e 1842).
+
+Na seção de estenose do mesmo capítulo (p. 1814), os sintomas da estenose lombar têm números: **dor lombar em 95%**, **ciática em 91%**, alteração sensitiva nas pernas em **70%**, fraqueza motora em **33%** e distúrbio urinário em **12%**. Na estenose central, os sintomas costumam ser **bilaterais**, em nádegas e face posterior das coxas, sem distribuição de dermátomo; na estenose do recesso lateral, seguem o **dermátomo** da raiz comprimida. O livro também lembra que a combinação de degeneração, idade e espondilolistese acima dos 50 anos costuma produzir estenose do recesso lateral ou do forame, e que a listese e a lise raramente causam estenose no jovem.
+
+## Claudicação neurogênica ou vascular
+
+A queixa de "dor nas pernas ao andar" obriga a separar as duas claudicações. O Campbell (cap. 46, p. 1815 e Tabela 46.6) dá o raciocínio: a vascular dói na **panturrilha alta**, alivia com **5 minutos parado em pé**, sem precisar sentar ou fletir, e piora andando em subida e na bicicleta ergométrica. A neurogênica melhora com **flexão do tronco**, agachar ou deitar, mas pode levar **20 minutos** para passar; o paciente anda melhor em **subida** e em escada e tolera melhor a bicicleta que a esteira, porque fica fletido. Empurrar o **carrinho de supermercado** flete a coluna e aumenta a tolerância à marcha: é o **sinal do carrinho de compras** (shopping cart sign) positivo.
+
+!tabela Claudicação vascular e neurogênica (Campbell 15, cap. 46, Tabela 46.6, p. 1815)
+| Avaliação | Vascular | Neurogênica |
+|---|---|---|
+| Distância de marcha | Fixa | Variável |
+| O que alivia | Ficar em pé parado | Sentar, fletir o tronco |
+| O que provoca | Andar | Andar ou ficar em pé |
+| Andar em subida | Dói | Não dói |
+| Teste da bicicleta | Positivo (doloroso) | Negativo |
+| Pulsos | Ausentes | Presentes |
+| Pele | Perda de pelos, brilhante | Normal |
+| Fraqueza | Rara | Ocasional |
+| Dor lombar | Ocasional | Comum |
+| Mobilidade lombar | Normal | Limitada |
+| Caráter da dor | Cãibra, de distal para proximal | Dormência e dor, de proximal para distal |
+| Atrofia | Incomum | Ocasional |
+!fim
 
 ## História natural e imagem
 
@@ -533,6 +579,6 @@ As mais comuns são **pseudartrose, falha do material, déficit neurológico, tr
 
 # Fechamento {radar=fundamento}
 
-A espondilolistese é a história de um freio que falha: na criança, o perigo é a displasia que progride no estirão; no adulto, a ístmica de L5-S1 dói pela raiz de L5 e a degenerativa de L4-L5 estreita o canal. Em qualquer idade, tirar o arco solto sem fundir desestabiliza.
+A espondilolistese é a história de um freio que falha: na criança, o perigo é a displasia que progride no estirão; no adulto, a ístmica de L5-S1 dói pela raiz de L5 e a degenerativa de L4-L5 estreita o canal e dá claudicação neurogênica, que melhora com a flexão (sinal do carrinho de compras). Em qualquer idade, tirar o arco solto sem fundir desestabiliza.
 
-> **Na prova:** WILTSE I displásico (L5-S1, meninas, pars intacta, mais risco neurológico), II ístmico (lítico, alongado, agudo), III degenerativo (L4-L5, mulher acima de 50, tipo mais comum), IV traumático fora da pars; MARCHETTI e BARTOLOZZI: traumática é adquirida, alongamento é do desenvolvimento, alta displasia = S1 redondo e L5 trapezoidal; MEYERDING I a V no perfil (V = ptose); ângulo de escorregamento acima de 55 graus prevê progressão; PI = SS + PT, pelve desequilibrada de HRESKO com SS baixa e PT alto; criança com dor lombar, isquiotibiais curtos e pelve retrovertida; operar acima de 50% ou com dor persistente; baixo grau assintomático e maduro não se trata; GILL = laminectomia de L5, nunca isolada; adulto ístmico: raiz L5 e estabilização do tronco; enxerto autólogo decide a fusão.
+> **Na prova:** WILTSE I displásico (L5-S1, meninas, pars intacta, mais risco neurológico), II ístmico (lítico, alongado, agudo), III degenerativo (L4-L5, mulher acima de 50, tipo mais comum), IV traumático fora da pars; MARCHETTI e BARTOLOZZI: traumática é adquirida, alongamento é do desenvolvimento, alta displasia = S1 redondo e L5 trapezoidal; MEYERDING I a V no perfil (V = ptose); ângulo de escorregamento acima de 55 graus correlacionado com progressão no Campbell (o Tachdjian não vê valor preditivo no ângulo inicial); achado incidental assintomático não se trata; PI = SS + PT, pelve desequilibrada de HRESKO com SS baixa e PT alto; criança com dor lombar, isquiotibiais curtos e pelve retrovertida; operar acima de 50% ou com dor persistente; baixo grau assintomático e maduro não se trata; GILL = laminectomia de L5, nunca isolada; adulto ístmico: raiz L5 e estabilização do tronco; enxerto autólogo decide a fusão.
