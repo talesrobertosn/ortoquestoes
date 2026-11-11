@@ -63,8 +63,8 @@ export function Calendario({ pagamentos, todas, assinaturas, taxa, escolher }: {
   const proximos = useMemo(() => [...porDia.keys()].filter(d => d >= hoje).sort().slice(0, 5), [porDia, hoje])
 
   return <section className="fi-secao" aria-labelledby="fi-calendario">
-    <header className="fi-secao__cabeca"><span className="fi-secao__selo">Calendário</span><div><h2 id="fi-calendario">Quem paga em cada dia</h2>
-      <p>Mensais no cartão e no Pix, semestrais e anuais, no dia em que vencem. Os dias que já passaram mostram o que entrou de verdade. O Pix aparece como quem vai pagar de novo; os totais mostram também o cenário escolhido.</p></div></header>
+    <div className="hb-titulo"><div><span className="hb-kicker">Calendário</span><h2 id="fi-calendario">Quem paga em cada dia</h2>
+      <p>Mensais no cartão e no Pix, semestrais e anuais, no dia em que vencem. Os dias que já passaram mostram o que entrou de verdade; os próximos, quem deve pagar (o Pix pela porcentagem escolhida). Toque num dia para ver as pessoas.</p></div></div>
 
     <div className="cal">
       <div className="cal__topo">

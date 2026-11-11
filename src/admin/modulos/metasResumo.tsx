@@ -3,7 +3,7 @@ import { taxaPixSugerida } from '../../componentes/admin/financeiro'
 import { MES, NOME_MES, cobrancas as cobrancasDe } from '../../componentes/admin/receita'
 import { usarRpc } from '../../componentes/admin/usarRpc'
 import { usarPainel } from '../dados/painel'
-import { META_MODERADA, ROTULO_SITUACAO, esperadoAteHoje, metasVigentes, projetarMes, realizadoPorMes, situacao, type LinhaMetaBanco, type MetaMes } from '../dados/metas'
+import { META_OFICIAL, ROTULO_SITUACAO, esperadoAteHoje, metasVigentes, projetarMes, realizadoPorMes, situacao, type LinhaMetaBanco, type MetaMes } from '../dados/metas'
 import { usarNav } from '../nav'
 import { Icone } from '../ui/Icone'
 import { inteiro, reais } from '../ui/formato'
@@ -24,7 +24,7 @@ export function FaixaMetas({ chaves, titulo = 'Metas do mês' }: { chaves: Chave
   const d = useMemo(() => {
     if (!p.reais || !p.usuariosReais) return null
     const atual = MES(new Date())
-    const metas = metasVigentes(META_MODERADA, Array.isArray(metasQ.dados) ? metasQ.dados : null)
+    const metas = metasVigentes(META_OFICIAL, Array.isArray(metasQ.dados) ? metasQ.dados : null)
     const meta = metas.find(x => x.mes === atual)
     if (!meta) return null
     const todas = cobrancasDe(p.reais, p.cobrancas)

@@ -12,16 +12,28 @@ import {
  * dois sempre batem. `todas` é o resultado de `cobrancas(assinaturas, reais)`.
  */
 export const HORIZONTES = [1, 3, 6, 12] as const
-/** Sem histórico suficiente de Pix encerrados, a suposição de recompra começa aqui. */
-export const TAXA_PIX_PADRAO = 0.6
+/**
+ * Sem histórico suficiente de Pix encerrados, a suposição de recompra começa aqui (Tales, 11/11/2026: "por via de
+ * regra, o Pix renova"; 6 de 8 Pix vencidos renovaram até então). Com amostra, vale o que aconteceu.
+ */
+export const TAXA_PIX_PADRAO = 0.8
 export const MINIMO_PARA_OBSERVADA = 5
 export const curto = (chave: string) => NOME_MES(chave, true).replace('.', '')
 
-/** Taxa de recompra do Pix que a tela usa de partida: a observada, com amostra suficiente; senão 60%. */
+/**
+ * Taxa de recompra do Pix que a tela usa de partida (11/11/2026):
+ * 1. "fechada": Pix cujo prazo de 30 dias para pagar de novo já acabou, com 5 casos ou mais;
+ * 2. senão, "até agora": todo Pix que já venceu, renovado ou não (pode subir, porque quem venceu há menos de
+ *    30 dias ainda pode pagar), também com 5 casos ou mais;
+ * 3. senão, 80% (a regra do Tales: por via de regra, o Pix renova).
+ * `fonte` diz qual valeu, para a tela explicar.
+ */
 export function taxaPixSugerida(assinaturas: AssinaturaBase[], agora = new Date()) {
   const observado = renovacaoDoPix(assinaturas, agora)
-  const taxa = observado.taxa !== null && observado.encerrados >= MINIMO_PARA_OBSERVADA ? Math.round(observado.taxa * 100) / 100 : TAXA_PIX_PADRAO
-  return { taxa, observado }
+  const parcial = renovacaoDoPix(assinaturas, agora, 30, true)
+  if (observado.taxa !== null && observado.encerrados >= MINIMO_PARA_OBSERVADA) return { taxa: Math.round(observado.taxa * 100) / 100, observado, parcial, fonte: 'fechada' as const }
+  if (parcial.taxa !== null && parcial.encerrados >= MINIMO_PARA_OBSERVADA) return { taxa: Math.round(parcial.taxa * 100) / 100, observado, parcial, fonte: 'parcial' as const }
+  return { taxa: TAXA_PIX_PADRAO, observado, parcial, fonte: 'padrao' as const }
 }
 
 export function calcularFinanceiro(assinaturas: AssinaturaBase[], todas: Cobranca[], agora = new Date()) {

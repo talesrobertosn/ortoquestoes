@@ -9,8 +9,7 @@ import { normalizar } from './formatos'
  * Para incluir um serviço, acrescente uma linha: os apelidos valem sem acento
  * e sem diferença de maiúscula, e valem também dentro de um texto maior
  * ("HAC Curitiba"). Com `ufs`, o serviço só é reconhecido quando a pessoa
- * informou um desses estados ou não informou nenhum. Siglas ambíguas (HRC,
- * HGVC, "Hospital de Base", "Santa Casa" sozinha) ficam de fora de propósito.
+ * informou um desses estados ou não informou nenhum. Siglas ambíguas (HRC, HGVC, "Hospital de Base", "Santa Casa" sozinha) ficam de fora de propósito.
  *
  * O `nome` é o que fica gravado quando a pessoa escolhe na lista: não mude o
  * nome de um serviço que já existe (perfis antigos guardam o texto); se
@@ -74,7 +73,12 @@ export const SERVICOS_CONHECIDOS: ServicoConhecido[] = [
   { nome: 'Hospital Universitário Pedro Ernesto (UERJ)', cidade: 'Rio de Janeiro', uf: 'RJ', apelidos: ['hupe', 'pedro ernesto', 'hospital universitario pedro ernesto'] },
   { nome: 'Hospital Municipal Miguel Couto', cidade: 'Rio de Janeiro', uf: 'RJ', apelidos: ['miguel couto', 'hospital miguel couto', 'hospital municipal miguel couto'] },
   { nome: 'Hospital Municipal Jesus', cidade: 'Rio de Janeiro', uf: 'RJ', apelidos: ['hospital municipal jesus'] },
+  // 11/11/2026: nomes que apareciam soltos na lista de serviços do Crescimento.
+  { nome: 'Hospital Federal do Andaraí', cidade: 'Rio de Janeiro', uf: 'RJ', apelidos: ['andarai', 'hospital federal do andarai', 'hfa rj'] },
+  { nome: 'Hospital Central da Polícia Militar (RJ)', cidade: 'Rio de Janeiro', uf: 'RJ', apelidos: ['hcpm', 'hospital central da policia militar', 'hospital central da pm'], ufs: ['RJ'] },
   { nome: 'Hospital Universitário Antônio Pedro (UFF)', cidade: 'Niterói', uf: 'RJ', apelidos: ['huap', 'antonio pedro', 'hospital universitario antonio pedro'] },
+
+  { nome: 'Hospital Alvorada Moema', cidade: 'São Paulo', uf: 'SP', apelidos: ['alvorada moema', 'hospital alvorada moema'] },
 
   // Paraná
   { nome: 'Hospital do Trabalhador', cidade: 'Curitiba', uf: 'PR', apelidos: ['hospital do trabalhador'], ufs: ['PR'] },
@@ -89,6 +93,7 @@ export const SERVICOS_CONHECIDOS: ServicoConhecido[] = [
   // O "Regional do Oeste" de Chapecó; com a pessoa no PR, o "oeste" é outro (HUOP).
   { nome: 'Hospital Regional do Oeste (Chapecó)', cidade: 'Chapecó', uf: 'SC', apelidos: ['hro', 'hro chapeco', 'uffs hro', 'uffs hro chapeco', 'hospital regional do oeste'], ufs: ['SC'] },
   { nome: 'Hospital Governador Celso Ramos', cidade: 'Florianópolis', uf: 'SC', apelidos: ['celso ramos', 'hgcr', 'hospital governador celso ramos'] },
+  { nome: 'Hospital Municipal São José (Joinville)', cidade: 'Joinville', uf: 'SC', apelidos: ['hospital municipal sao jose', 'hmsj'], ufs: ['SC'] },
   { nome: 'Hospital de Clínicas de Porto Alegre', cidade: 'Porto Alegre', uf: 'RS', apelidos: ['hcpa', 'hospital de clinicas de porto alegre'] },
   { nome: 'Hospital Independência (Porto Alegre)', cidade: 'Porto Alegre', uf: 'RS', apelidos: ['hospital independencia', 'independencia porto alegre'], ufs: ['RS'] },
   { nome: 'Hospital Moinhos de Vento', cidade: 'Porto Alegre', uf: 'RS', apelidos: ['moinhos de vento', 'hospital moinhos de vento'] },
@@ -102,10 +107,12 @@ export const SERVICOS_CONHECIDOS: ServicoConhecido[] = [
   { nome: 'Hospital de Base do Distrito Federal (HBDF)', cidade: 'Brasília', uf: 'DF', apelidos: ['hbdf', 'hospital de base do distrito federal', 'hospital de base do df', 'hospital de base de brasilia'] },
   { nome: 'Hospital Estadual de Urgências de Goiânia (HUGO)', cidade: 'Goiânia', uf: 'GO', apelidos: ['hugo', 'hospital de urgencias de goiania', 'hospital estadual de urgencias de goiania'], ufs: ['GO'] },
   { nome: 'Hospital das Clínicas da UFG', cidade: 'Goiânia', uf: 'GO', apelidos: ['hc ufg', 'hospital das clinicas da ufg'] },
+  { nome: 'Hospital Geral de Cuiabá', cidade: 'Cuiabá', uf: 'MT', apelidos: ['hospital geral de cuiaba', 'hgc cuiaba'] },
   { nome: 'Hospital Universitário Maria Aparecida Pedrossian (UFMS)', cidade: 'Campo Grande', uf: 'MS', apelidos: ['humap', 'maria aparecida pedrossian', 'hospital universitario maria aparecida pedrossian'] },
 
   // Nordeste e Norte
   { nome: 'Hospital Geral do Estado (HGE)', cidade: 'Salvador', uf: 'BA', apelidos: ['hospital geral do estado da bahia', 'hge salvador'] },
+  { nome: 'Hospital Geral de Vitória da Conquista', cidade: 'Vitória da Conquista', uf: 'BA', apelidos: ['hospital geral de vitoria da conquista', 'complexo hospitalar vitoria da conquista', 'completo hospitalar vitoria da conquista'], ufs: ['BA'] },
   { nome: 'Hospital Geral Roberto Santos', cidade: 'Salvador', uf: 'BA', apelidos: ['roberto santos', 'hospital geral roberto santos'], ufs: ['BA'] },
   { nome: 'Universidade Estadual do Ceará (Uece)', cidade: 'Fortaleza', uf: 'CE', apelidos: ['uece', 'universidade estadual do ceara'] },
   { nome: 'Instituto Dr. José Frota (IJF)', cidade: 'Fortaleza', uf: 'CE', apelidos: ['ijf', 'jose frota', 'instituto doutor jose frota', 'instituto dr jose frota'] },

@@ -885,3 +885,103 @@ button.a3-heroi__numero[aria-pressed="true"] { background: rgba(255,255,255,.22)
 .a3-gaveta__cabeca.a3-indicacao { --c: var(--cor-indicacao); background: var(--cor-indicacao-veu); }
 .a3-tag--indicacao { background: var(--cor-indicacao-veu); color: var(--cor-indicacao-texto); box-shadow: inset 0 0 0 1px var(--cor-indicacao); }
 li.a3-indicacao .a3-pessoa-linha .a3-avatar { background: var(--cor-indicacao-veu); color: var(--cor-indicacao-texto); box-shadow: inset 0 0 0 1.5px var(--cor-indicacao); }
+
+/* Placar de comparações do Início (11/11/2026): quatro blocos, cada período com barras na mesma escala. */
+.cc-placar { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (max-width: 1200px) { .cc-placar { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 620px) { .cc-placar { grid-template-columns: minmax(0, 1fr); } }
+.cc-bloco { --cc-cor: var(--a3-verde); display: grid; align-content: start; padding: 14px 16px 6px; border-radius: 18px; background: var(--a3-papel); border: 1px solid var(--a3-linha); min-width: 0; position: relative; overflow: hidden; }
+.cc-bloco::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 3px; background: var(--cc-cor); }
+.cc-bloco--ouro { --cc-cor: var(--a3-ouro-cheio, #b8860b); }
+.cc-bloco__cab { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 750; color: var(--a3-tinta); text-decoration: none; padding-bottom: 8px; min-height: 36px; }
+.cc-bloco__cab svg:last-child { margin-left: auto; color: var(--a3-cinza-2); transition: transform .15s, color .15s; }
+.cc-bloco__cab:hover svg:last-child { color: var(--cc-cor); transform: translateX(2px); }
+.cc-bloco--ouro .cc-comp__icone { background: var(--a3-ouro-cheio, #b8860b); }
+.cc-bloco__linha { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "periodo var" "valor valor" "barras barras" "contra contra"; align-items: center; gap: 2px 10px; padding: 10px 0; border-top: 1px solid var(--a3-linha); }
+.cc-bloco__periodo { grid-area: periodo; white-space: nowrap; font-size: 12px; color: var(--a3-cinza); font-weight: 600; }
+.cc-bloco__valor { grid-area: valor; font: 800 24px/1.15 var(--a3-titulo); overflow-wrap: anywhere; letter-spacing: -.02em; color: var(--a3-tinta); font-variant-numeric: tabular-nums; }
+.cc-bloco__var { grid-area: var; justify-self: end; font-size: 11.5px; font-weight: 700; padding: 1px 7px; border-radius: 999px; white-space: nowrap; }
+.cc-bloco__var.sobe { color: var(--a3-ok); background: var(--a3-ok-veu); }
+.cc-bloco__var.desce { color: var(--a3-erro); background: var(--a3-erro-veu); }
+.cc-bloco__var.igual { color: var(--a3-cinza); background: var(--a3-recuo); }
+.cc-bloco__barras { grid-area: barras; display: grid; gap: 2px; margin-top: 4px; }
+.cc-bloco__barras i { display: block; height: 5px; border-radius: 3px; background: var(--cc-cor); min-width: 2px; }
+.cc-bloco__barras i.antes { background: var(--a3-linha-2); }
+.cc-bloco__contra { grid-area: contra; font-size: 11px; color: var(--a3-cinza); }
+@media (prefers-reduced-motion: reduce) { .cc-bloco__cab svg { transition: none; } }
+
+/* ==========================================================================
+   Início › topo "ao vivo" (11/11/2026, Tales: "essa arte verde antiga ta feia; organiza a página Agora melhor").
+   Papel claro, quem está online primeiro (número grande, divisão por tipo e as iniciais de cada pessoa) e os
+   números de hoje em blocos com um ponto de cor. Nada de vidro nem faixa escura; o verde é só o sinal de vivo.
+   ========================================================================== */
+.ag-topo { --ag-assinante: #0f7a6c; --ag-lead: #c08a1e; --ag-gratis: #b9c2c4; --ag-dinheiro: #b27a0e; --ag-vivo: #16a34a; display: grid; gap: 14px; }
+:root[data-tema="escuro"] .ag-topo { --ag-assinante: #34a593; --ag-lead: #d4a03a; --ag-gratis: #4b5456; --ag-dinheiro: #d4a03a; --ag-vivo: #4ade80; }
+.ag-topo__cab { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 6px 24px; padding: 2px 2px 0; }
+.ag-topo__cab > div { display: flex; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.ag-topo__titulo { margin: 0; font: 800 clamp(28px, 3vw, 38px)/1 var(--a3-titulo); letter-spacing: -.04em; color: var(--a3-tinta); }
+.ag-topo__data { font-size: 13px; font-weight: 600; color: var(--a3-cinza); }
+.ag-topo__frase { display: flex; align-items: center; gap: 8px; margin: 0; font-size: 13.5px; color: var(--a3-tinta-2); font-weight: 600; }
+.ag-pulso { position: relative; width: 9px; height: 9px; border-radius: 50%; background: var(--ag-vivo); flex: none; display: inline-block; }
+.ag-pulso::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid var(--ag-vivo); opacity: .5; animation: ag-pulsar 2s ease-out infinite; }
+@keyframes ag-pulsar { from { transform: scale(.6); opacity: .6; } to { transform: scale(1.5); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .ag-pulso::after { animation: none; } }
+
+.ag-topo__grade { display: grid; grid-template-columns: minmax(300px, 0.95fr) minmax(0, 1.6fr); gap: 14px; }
+.ag-vivo, .ag-hoje { background: var(--a3-papel); border: 1px solid var(--a3-linha); border-radius: 20px; padding: 18px 20px; display: grid; gap: 12px; align-content: start; min-width: 0; }
+.ag-vivo { background: linear-gradient(var(--a3-papel), var(--a3-papel)) padding-box, linear-gradient(135deg, color-mix(in srgb, var(--ag-vivo) 55%, transparent), var(--a3-linha) 45%) border-box; border: 1.5px solid transparent; }
+.ag-vivo__cab { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.ag-vivo__cab h2 { margin: 0; display: flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 750; letter-spacing: .08em; text-transform: uppercase; color: var(--a3-tinta-2); }
+.ag-vivo__cab small { font-size: 11.5px; color: var(--a3-cinza); }
+.ag-vivo__total { display: flex; align-items: center; gap: 14px; background: none; border: 0; padding: 4px 8px 4px 0; text-align: left; cursor: pointer; border-radius: 12px; color: var(--a3-tinta); font: inherit; width: fit-content; }
+.ag-vivo__total b { font: 800 64px/0.95 var(--a3-titulo); letter-spacing: -.05em; }
+.ag-vivo__total span { display: grid; font-size: 15px; font-weight: 650; color: var(--a3-tinta-2); }
+.ag-vivo__total small { font-size: 12px; font-weight: 600; color: var(--a3-acento); }
+.ag-vivo__total:hover small, .ag-vivo__total.ativo small { text-decoration: underline; }
+.ag-vivo__total:focus-visible { outline: 2px solid var(--a3-acento); outline-offset: 2px; }
+.ag-vivo__barra { display: flex; gap: 3px; height: 10px; border-radius: 6px; overflow: hidden; }
+.ag-vivo__barra i { min-width: 6px; border-radius: 3px; }
+.ag-c-assinante { background: var(--ag-assinante); }
+.ag-c-lead { background: var(--ag-lead); }
+.ag-c-gratis { background: var(--ag-gratis); }
+.ag-c-vazio { background: var(--a3-recuo); }
+.ag-vivo__tipos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.ag-vivo__tipos button { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 2px 8px; text-align: left; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--a3-linha); background: var(--a3-alt); font: inherit; font-size: 12.5px; font-weight: 600; color: var(--a3-tinta-2); cursor: pointer; min-height: 48px; min-width: 0; }
+.ag-vivo__tipos button i { width: 9px; height: 9px; border-radius: 50%; }
+.ag-vivo__tipos button b { font-size: 20px; font-weight: 800; color: var(--a3-tinta); grid-row: span 2; align-self: center; }
+.ag-vivo__tipos button small { grid-column: 2; font-size: 11px; font-weight: 400; color: var(--a3-cinza); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ag-vivo__tipos button:hover { border-color: var(--a3-linha-2); background: var(--a3-recuo); }
+.ag-vivo__tipos button[aria-pressed="true"] { border-color: var(--a3-acento); box-shadow: inset 0 0 0 1px var(--a3-acento); background: var(--a3-acento-veu); }
+.ag-rostos { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.ag-rosto { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font-size: 11.5px; font-weight: 750; cursor: pointer; border: 0; background: var(--a3-recuo); color: var(--a3-tinta-2); box-shadow: inset 0 0 0 2px var(--ag-gratis); transition: transform .15s; }
+.ag-rosto:hover, .ag-rosto:focus-visible { transform: translateY(-2px); outline: none; box-shadow: inset 0 0 0 2px var(--a3-tinta); }
+.ag-rosto--assinante { background: color-mix(in srgb, var(--ag-assinante) 14%, var(--a3-papel)); color: var(--ag-assinante); box-shadow: inset 0 0 0 2px var(--ag-assinante); }
+.ag-rosto--lead { background: color-mix(in srgb, var(--ag-lead) 16%, var(--a3-papel)); color: var(--ag-dinheiro); box-shadow: inset 0 0 0 2px var(--ag-lead); }
+.ag-rosto--mais { background: var(--a3-tinta); color: var(--a3-papel); box-shadow: none; font-size: 11px; }
+
+.ag-hoje__grade { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.ag-numero { position: relative; display: grid; gap: 1px; padding: 12px 14px; border-radius: 14px; border: 1px solid var(--a3-linha); background: var(--a3-alt); font: inherit; text-align: left; color: var(--a3-tinta); cursor: pointer; min-width: 0; min-height: 86px; align-content: start; transition: border-color .15s, background .15s, transform .15s; }
+.ag-numero span { display: flex; align-items: center; gap: 7px; font-size: 12px; font-weight: 650; color: var(--a3-tinta-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; padding-right: 12px; }
+.ag-numero span i { width: 8px; height: 8px; border-radius: 50%; flex: none; background: var(--ag-gratis); }
+.ag-numero b { font: 800 28px/1.15 var(--a3-titulo); letter-spacing: -.03em; overflow-wrap: anywhere; }
+.ag-numero small { font-size: 11.5px; color: var(--a3-cinza); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ag-numero::after { content: "›"; position: absolute; top: 9px; right: 12px; font-size: 16px; line-height: 1; color: var(--a3-cinza-2); }
+.ag-numero:hover { border-color: var(--a3-linha-2); background: var(--a3-papel); transform: translateY(-1px); }
+.ag-numero:focus-visible { outline: 2px solid var(--a3-acento); outline-offset: 2px; }
+.ag-numero[aria-pressed="true"] { border-color: var(--a3-acento); background: var(--a3-acento-veu); box-shadow: inset 0 0 0 1px var(--a3-acento); }
+.ag-numero--assinante span i { background: var(--ag-assinante); }
+.ag-numero--lead span i { background: var(--ag-lead); }
+.ag-numero--lead b { color: var(--ag-dinheiro); }
+.ag-numero--claro span i { background: var(--a3-cinza); }
+.ag-numero--dinheiro span i { background: var(--ag-dinheiro); }
+.ag-numero--dinheiro b { color: var(--ag-dinheiro); font-size: 24px; }
+@media (max-width: 1100px) { .ag-topo__grade { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 560px) {
+  .ag-vivo, .ag-hoje { padding: 14px; border-radius: 16px; }
+  .ag-vivo__total b { font-size: 52px; }
+  .ag-hoje__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ag-numero b { font-size: 24px; }
+  .ag-numero--dinheiro b { font-size: 20px; }
+  .ag-rosto { width: 32px; height: 32px; }
+}
+@media (prefers-reduced-motion: reduce) { .ag-numero, .ag-rosto { transition: none; } }

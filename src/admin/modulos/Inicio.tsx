@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState, type ReactNode } from 'react'
 import { carregarIndiceBibliotecaLeve } from '../../biblioteca/conteudo'
 import { quadroDoDia } from '../../componentes/admin/agora'
 import { diaSP } from '../../componentes/admin/estudoHoje'
-import { registrarTitulosResumos } from '../../componentes/admin/formatos'
+import { acertoReal, registrarTitulosResumos } from '../../componentes/admin/formatos'
 import { CORTESIA_ADMIN, PLANO_CORTESIA, rotuloPlano } from '../../componentes/admin/rotulos'
 import { indicacaoEmDestaque, planosEmDestaque, viuPlanos, type SinalUsuario } from '../../componentes/admin/sinais'
 import { usarRpc } from '../../componentes/admin/usarRpc'
@@ -16,6 +16,7 @@ import { Icone } from '../ui/Icone'
 import { combina, haQuanto, horario, iniciais, inteiro, normalizar, reais } from '../ui/formato'
 import { Busca, Carregando, Estado, Painel, Selo } from '../ui/kit'
 import { Faz, LinhaDoDia, Listas } from './dia'
+import './hub.css'
 import { LinhaFila, useIrDestino, usarFila } from './fila'
 
 /** Último sinal da pessoa (aparelho, atividade ou login), para saber se entrou hoje. */
@@ -46,12 +47,13 @@ export function temperatura(u: LinhaUsuario, s: SinalUsuario | undefined, hoje: 
 /** Os números de cada pessoa, como no painel antigo: número em cima, rótulo embaixo. Hoje e total em destaque. */
 function Questoes({ u }: { u: LinhaUsuario }) {
   const hoje = u.respondidas_hoje ?? 0
-  const feitas = u.acertos + u.erros
+  // Acerto real (Tales, 11/11/2026): primeira tentativa de cada questão, não o acerto depois da revisão.
+  const real = acertoReal(u)
   return <span className="a3-numeros-pessoa" aria-label={`${hoje} questões hoje, ${u.respondidas} no total`}>
     <span className={'destaque' + (hoje ? '' : ' zero')}><b className="num">{inteiro(hoje)}</b><small>hoje</small></span>
     <span className="destaque"><b className="num">{inteiro(u.respondidas)}</b><small>no total</small></span>
     <span><b className="num">{inteiro(u.respondidas_7d)}</b><small>na semana</small></span>
-    <span><b className="num">{feitas ? `${Math.round((100 * u.acertos) / feitas)}%` : '—'}</b><small>acerto</small></span>
+    <span title="Acerto real: a primeira tentativa de cada questão"><b className="num">{real === null ? '—' : `${real}%`}</b><small>acerto real</small></span>
   </span>
 }
 
@@ -156,7 +158,8 @@ export default function Inicio() {
   }
   const ativo = (v: Vista, f: Filtro = 'todos') => vista === v && (v !== 'online' || filtro === f)
   const n = (v: Vista) => g ? g.listas[v].length : null
-  const dataHoje = new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long', timeZone: 'America/Sao_Paulo' })
+  const dataHoje0 = new Date().toLocaleDateString('pt-BR', { weekday: 'long', day: '2-digit', month: 'long', timeZone: 'America/Sao_Paulo' })
+  const dataHoje = dataHoje0.charAt(0).toUpperCase() + dataHoje0.slice(1)
 
   const VISTAS: Array<{ id: Vista; rotulo: string; titulo: string; texto: string }> = [
     { id: 'online', rotulo: 'Online agora', titulo: 'Online agora', texto: 'Quem usou o site nos últimos 5 minutos. Quem viu os planos hoje vem primeiro.' },
@@ -172,34 +175,37 @@ export default function Inicio() {
   const vazio: Record<Vista, string> = { online: g?.listas.online.length ? 'Ninguém neste filtro agora' : 'Ninguém online agora', assinantes: 'Nenhum assinante entrou hoje ainda', viram: semSinais ? 'Sinal de planos indisponível' : 'Ninguém viu os planos hoje', limite: 'Ninguém bateu o limite hoje', estudaram: 'Ninguém estudou hoje ainda', cadastros: 'Nenhum cadastro hoje ainda', ausentes: 'Todos os assinantes entraram hoje', viram30: 'Ninguém nos últimos 30 dias' }
 
   return <div className="a3-pilha a3-pilha--larga">
-    <section className="a3-heroi" aria-label="Resumo de agora e de hoje">
-      <div className="a3-heroi__topo">
-        <h1 className="a3-titulo-1 a3-so-leitor">Agora</h1>
-        <span className="a3-rotulo">{dataHoje}</span>
-        {g && <p className="a3-heroi__frase">{g.listas.online.length} {g.listas.online.length === 1 ? 'pessoa online' : 'pessoas online'} · {n('assinantes')} de {g.totalAssinantes} assinantes entraram hoje · {inteiro(n('estudaram') ?? 0)} {n('estudaram') === 1 ? 'estudou' : 'estudaram'}</p>}
-      </div>
-      {g && <>
-        <div className="a3-heroi__grupo">
-          <h2 className="a3-heroi__grupo-titulo"><i className="a3-ponto a3-ponto--vivo" aria-hidden="true" />Agora no site</h2>
-          <div className="a3-heroi__numeros a3-heroi__numeros--3">
-            <Numero cor="vivo" rotulo="Online" valor={g.listas.online.length} nota="últimos 5 min" ativo={ativo('online')} aoClicar={() => abrir('online')} />
-            <Numero cor="assinante" rotulo="Assinantes" valor={g.conta.assinante} nota={`de ${g.totalAssinantes}`} ativo={ativo('online', 'assinante')} aoClicar={() => abrir('online', 'assinante')} />
-            <Numero cor="gratis" rotulo="Não assinantes" valor={g.conta.gratis + g.conta.lead} nota={g.conta.lead ? `${g.conta.lead} ${g.conta.lead === 1 ? 'viu' : 'viram'} os planos` : 'online agora'} ativo={ativo('online', 'nao')} aoClicar={() => abrir('online', 'nao')} />
+    <section className="ag-topo" aria-label="Resumo de agora e de hoje">
+      <header className="ag-topo__cab">
+        <div><h1 className="ag-topo__titulo">Agora</h1><span className="ag-topo__data">{dataHoje}</span></div>
+        {g && <p className="ag-topo__frase"><i className="ag-pulso" aria-hidden="true" />{g.listas.online.length} {g.listas.online.length === 1 ? 'pessoa online' : 'pessoas online'} · {n('assinantes')} de {g.totalAssinantes} assinantes entraram hoje · {inteiro(n('estudaram') ?? 0)} {n('estudaram') === 1 ? 'estudou' : 'estudaram'}</p>}
+      </header>
+      {g && <div className="ag-topo__grade">
+        <div className="ag-vivo">
+          <div className="ag-vivo__cab"><h2><i className="ag-pulso" aria-hidden="true" />Agora no site</h2><small>últimos 5 minutos</small></div>
+          <button type="button" className={'ag-vivo__total' + (ativo('online') ? ' ativo' : '')} aria-pressed={ativo('online')} onClick={() => abrir('online')}><b className="num">{g.listas.online.length}</b><span>{g.listas.online.length === 1 ? 'pessoa online' : 'pessoas online'}<small>ver quem é ›</small></span></button>
+          <div className="ag-vivo__barra" role="img" aria-label={`${g.conta.assinante} assinantes, ${g.conta.lead} viram os planos, ${g.conta.gratis} grátis`}>
+            {g.conta.assinante > 0 && <i className="ag-c-assinante" style={{ flexGrow: g.conta.assinante }} />}{g.conta.lead > 0 && <i className="ag-c-lead" style={{ flexGrow: g.conta.lead }} />}{g.conta.gratis > 0 && <i className="ag-c-gratis" style={{ flexGrow: g.conta.gratis }} />}{!g.listas.online.length && <i className="ag-c-vazio" style={{ flexGrow: 1 }} />}
           </div>
+          <div className="ag-vivo__tipos">
+            <button type="button" aria-pressed={ativo('online', 'assinante')} onClick={() => abrir('online', 'assinante')}><i className="ag-c-assinante" />Assinantes <b>{g.conta.assinante}</b><small>de {g.totalAssinantes}</small></button>
+            <button type="button" aria-pressed={ativo('online', 'nao')} onClick={() => abrir('online', 'nao')}><i className="ag-c-gratis" />Não assinantes <b>{g.conta.gratis + g.conta.lead}</b><small>{g.conta.lead ? `${g.conta.lead} ${g.conta.lead === 1 ? 'viu' : 'viram'} os planos` : 'online agora'}</small></button>
+          </div>
+          {g.listas.online.length > 0 && <ul className="ag-rostos" aria-label="Quem está online">{g.listas.online.slice(0, 14).map(u => <li key={u.id_usuario}><button type="button" className={`ag-rosto ag-rosto--${g.tipoDe(u)}`} title={`${nomeDe(u)} · ${g.tipoDe(u) === 'assinante' ? 'assinante' : g.tipoDe(u) === 'lead' ? 'viu os planos' : 'grátis'}`} onClick={() => nav.abrirPessoa(u.id_usuario)}>{iniciais(nomeDe(u))}</button></li>)}{g.listas.online.length > 14 && <li><button type="button" className="ag-rosto ag-rosto--mais" onClick={() => abrir('online')}>+{g.listas.online.length - 14}</button></li>}</ul>}
         </div>
-        <div className="a3-heroi__grupo">
-          <h2 className="a3-heroi__grupo-titulo">Hoje</h2>
-          <div className="a3-heroi__numeros a3-heroi__numeros--hoje">
+        <div className="ag-hoje">
+          <div className="ag-vivo__cab"><h2>Hoje</h2><small>desde a meia-noite</small></div>
+          <div className="ag-hoje__grade">
             <Numero cor="assinante" rotulo="Assinantes hoje" valor={n('assinantes')} nota={`de ${g.totalAssinantes} entraram${g.cortesias ? ` · ${g.cortesias} ${g.cortesias === 1 ? 'cortesia' : 'cortesias'}` : ''}`} ativo={ativo('assinantes')} aoClicar={() => abrir('assinantes')} />
             <Numero cor="lead" rotulo="Viram os planos" valor={semSinais ? null : n('viram')} nota={semSinais ? 'sinal indisponível' : 'não assinantes'} ativo={ativo('viram')} aoClicar={() => abrir('viram')} />
             {limite ? <Numero cor="gratis" rotulo="Bateram o limite" valor={n('limite')} nota={`de ${limite} grátis`} ativo={ativo('limite')} aoClicar={() => abrir('limite')} />
               : <Numero cor="gratis" rotulo="Assinantes ausentes" valor={n('ausentes')} nota="não entraram hoje" ativo={ativo('ausentes')} aoClicar={() => abrir('ausentes')} />}
             <Numero cor="claro" rotulo="Estudaram" valor={n('estudaram')} nota={`${inteiro(g.listas.estudaram.reduce((t, u) => t + (u.respondidas_hoje ?? 0), 0))} questões`} ativo={ativo('estudaram')} aoClicar={() => abrir('estudaram')} />
             <Numero cor="claro" rotulo="Cadastros" valor={n('cadastros')} nota={nm.cadastros7d !== null ? `${inteiro(nm.cadastros7d)} em 7 dias` : 'hoje'} ativo={ativo('cadastros')} aoClicar={() => abrir('cadastros')} />
-            <Numero cor="claro" rotulo="Recebido" valor={nm.valorPago.hoje} formato={reais} nota={nm.valorPago.hoje === null ? 'hoje' : `${inteiro(nm.pagaram.hoje ?? 0)} ${nm.pagaram.hoje === 1 ? 'pagamento' : 'pagamentos'}`} aoClicar={() => nav.ir('cobrancas')} />
+            <Numero cor="dinheiro" rotulo="Recebido" valor={nm.valorPago.hoje} formato={reais} nota={nm.valorPago.hoje === null ? 'hoje' : `${inteiro(nm.pagaram.hoje ?? 0)} ${nm.pagaram.hoje === 1 ? 'pagamento' : 'pagamentos'}`} aoClicar={() => nav.ir('cobrancas')} />
           </div>
         </div>
-      </>}
+      </div>}
     </section>
 
     {!g ? <div className="a3-painel" style={{ padding: 20 }}>{p.usuariosQ.erro ? <Estado tipo="erro" titulo="A lista de pessoas não carregou" texto={p.erroDados} /> : <Carregando linhas={5} texto="Vendo quem está online…" />}</div> :
@@ -228,6 +234,8 @@ export default function Inicio() {
             <button type="button" className="a3-botao a3-botao--contorno a3-botao--pequeno" onClick={() => definirLimiteLista(daVista.length)}>Ver todos os {daVista.length}</button></div>}
         </>}
       </section>}
+    <Comparacoes />
+    <FaixaMetas chaves={['faturamento', 'cadastros', 'novosPagantes', 'ativosFim']} />
 
 
     <div className="a3-grade a3-grade--12" style={{ alignItems: 'start' }}>
@@ -239,8 +247,6 @@ export default function Inicio() {
       </div>
       <div style={{ gridColumn: 'span 7' }} id="a3-linha" className="a3-ancora"><LinhaDoDia quadro={quadro} /></div>
     </div>
-    <FaixaMetas chaves={['faturamento', 'cadastros', 'novosPagantes', 'ativosFim']} />
-    <Comparacoes />
 
     <section className="cr-secao" aria-labelledby="cc-observatorio">
       <header className="cr-secao__cabeca"><span className="cr-secao__numero" aria-hidden="true"><Icone nome="grafico" tamanho={16} /></span><div><h2 id="cc-observatorio">Números do dia a dia</h2><p>Cadastros, estudo, questões e assinaturas em colunas, quem está perto de assinar e quem mais estudou.</p></div></header>
@@ -253,8 +259,8 @@ export default function Inicio() {
   </div>
 }
 
-function Numero({ cor, rotulo, valor, nota, ativo, aoClicar, formato = inteiro }: { cor: 'vivo' | 'claro' | Tipo; rotulo: string; valor: number | null; nota: string; ativo?: boolean; aoClicar: () => void; formato?: (n: number) => string }) {
-  return <button type="button" className={`a3-heroi__numero a3-heroi__numero--${cor}${formato !== inteiro ? ' a3-heroi__numero--dinheiro' : ''}`} aria-pressed={ativo ?? false} onClick={aoClicar}>
+function Numero({ cor, rotulo, valor, nota, ativo, aoClicar, formato = inteiro }: { cor: 'vivo' | 'claro' | 'dinheiro' | Tipo; rotulo: string; valor: number | null; nota: string; ativo?: boolean; aoClicar: () => void; formato?: (n: number) => string }) {
+  return <button type="button" className={`ag-numero ag-numero--${cor}`} aria-pressed={ativo ?? false} onClick={aoClicar}>
     <span><i aria-hidden="true" />{rotulo}</span>
     <b className="num">{valor === null ? '—' : formato(valor)}</b>
     <small>{nota}</small>

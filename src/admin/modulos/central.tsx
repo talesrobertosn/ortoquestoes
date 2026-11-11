@@ -32,11 +32,16 @@ function marcos(agora = Date.now()) {
   return { agora, meiaNoite, segunda, inicioMes, inicioMesPassado, mesmaAlturaMes }
 }
 
-interface Comparacao { rotulo: string; valor: number; antes: number; contra: string; formato?: (n: number) => string; icone: ReactNode; tom?: 'verde' | 'ouro' }
 
+/**
+ * O placar de comparações do Início (refeito em 11/11/2026: "deixar essa parte mais bonitinha"). Quatro blocos
+ * (cadastros, assinantes novos, recebido e quem viu os planos), cada período com o valor, o mesmo trecho do
+ * período anterior em barras na mesma escala e a variação em pílula. Clicar no título abre a página do assunto.
+ */
 export function Comparacoes() {
   const p = usarPainel()
-  const c = useMemo((): Comparacao[] | null => {
+  const nav = usarNav()
+  const c = useMemo(() => {
     if (!p.usuariosReais) return null
     const m = marcos()
     const entre = (t: number, de: number, ate: number) => t >= de && t < ate
@@ -48,29 +53,49 @@ export function Comparacoes() {
     const semanaAntes = [m.segunda - 7 * DIA_MS, m.agora - 7 * DIA_MS] as const
     const hojeAntes = [m.meiaNoite - DIA_MS, m.agora - DIA_MS] as const
     const viram = (dias: number) => p.usuariosReais!.filter(u => !u.plano_vigente && viuPlanos(p.sinais.get(u.id_usuario), dias)).length
-    return [
-      { rotulo: 'Cadastros nesta semana', valor: conta(cad, m.segunda, m.agora), antes: conta(cad, ...semanaAntes), contra: 'semana passada até agora', icone: <Icone nome="pessoas" tamanho={16} /> },
-      { rotulo: 'Cadastros no mês', valor: conta(cad, m.inicioMes, m.agora), antes: conta(cad, m.inicioMesPassado, m.mesmaAlturaMes), contra: 'mês passado, mesma altura', icone: <Icone nome="calendario" tamanho={16} /> },
-      { rotulo: 'Assinantes novos na semana', valor: novas(m.segunda, m.agora), antes: novas(...semanaAntes), contra: 'semana passada até agora', icone: <Icone nome="estrela" tamanho={16} />, tom: 'ouro' },
-      { rotulo: 'Assinantes novos no mês', valor: novas(m.inicioMes, m.agora), antes: novas(m.inicioMesPassado, m.mesmaAlturaMes), contra: 'mês passado, mesma altura', icone: <Icone nome="estrela" tamanho={16} />, tom: 'ouro' },
-      { rotulo: 'Recebido hoje', valor: soma(m.meiaNoite, m.agora), antes: soma(...hojeAntes), contra: 'ontem até esta hora', formato: reais, icone: <Icone nome="receita" tamanho={16} />, tom: 'ouro' },
-      { rotulo: 'Recebido na semana', valor: soma(m.segunda, m.agora), antes: soma(...semanaAntes), contra: 'semana passada até agora', formato: reais, icone: <Icone nome="receita" tamanho={16} />, tom: 'ouro' },
-      { rotulo: 'Recebido no mês', valor: soma(m.inicioMes, m.agora), antes: soma(m.inicioMesPassado, m.mesmaAlturaMes), contra: 'mês passado, mesma altura', formato: reais, icone: <Icone nome="receita" tamanho={16} />, tom: 'ouro' },
-      { rotulo: 'Viram os planos', valor: viram(7), antes: viram(30), contra: 'em 7 dias · em 30 dias', icone: <Icone nome="olho" tamanho={16} /> },
+    const linha = (rotulo: string, valor: number, antes: number, contra: string) => ({ rotulo, valor, antes, contra })
+    const blocos: Array<{ titulo: string; icone: 'pessoas' | 'estrela' | 'receita' | 'olho'; tom: 'verde' | 'ouro'; destino: 'crescimento' | 'assinaturas' | 'financeiro' | 'usuarios'; dinheiro?: boolean; planos?: boolean; linhas: Array<ReturnType<typeof linha>> }> = [
+      { titulo: 'Cadastros', icone: 'pessoas', tom: 'verde', destino: 'crescimento', linhas: [
+        linha('Hoje', conta(cad, m.meiaNoite, m.agora), conta(cad, ...hojeAntes), 'ontem até esta hora'),
+        linha('Nesta semana', conta(cad, m.segunda, m.agora), conta(cad, ...semanaAntes), 'semana passada até agora'),
+        linha('No mês', conta(cad, m.inicioMes, m.agora), conta(cad, m.inicioMesPassado, m.mesmaAlturaMes), 'mês passado, mesma altura'),
+      ] },
+      { titulo: 'Assinantes novos', icone: 'estrela', tom: 'ouro', destino: 'assinaturas', linhas: [
+        linha('Hoje', novas(m.meiaNoite, m.agora), novas(...hojeAntes), 'ontem até esta hora'),
+        linha('Nesta semana', novas(m.segunda, m.agora), novas(...semanaAntes), 'semana passada até agora'),
+        linha('No mês', novas(m.inicioMes, m.agora), novas(m.inicioMesPassado, m.mesmaAlturaMes), 'mês passado, mesma altura'),
+      ] },
+      { titulo: 'Recebido', icone: 'receita', tom: 'ouro', destino: 'financeiro', dinheiro: true, linhas: [
+        linha('Hoje', soma(m.meiaNoite, m.agora), soma(...hojeAntes), 'ontem até esta hora'),
+        linha('Nesta semana', soma(m.segunda, m.agora), soma(...semanaAntes), 'semana passada até agora'),
+        linha('No mês', soma(m.inicioMes, m.agora), soma(m.inicioMesPassado, m.mesmaAlturaMes), 'mês passado, mesma altura'),
+      ] },
+      { titulo: 'Viram os planos', icone: 'olho', tom: 'verde', destino: 'usuarios', planos: true, linhas: [
+        linha('Em 7 dias', viram(7), 0, 'quem ainda não assina'),
+        linha('Em 30 dias', viram(30), 0, 'quem ainda não assina'),
+      ] },
     ]
+    return blocos
   }, [p.usuariosReais, p.reais, p.cobrancas, p.sinais])
   if (!c) return null
-  return <section className="cc-comparacoes" aria-label="Comparações com a semana e o mês passados">
-    {c.map(x => {
-      const f = x.formato ?? inteiro
-      const ehPlanos = x.rotulo === 'Viram os planos'
-      const delta = x.valor - x.antes
-      const pctDelta = x.antes ? Math.round((delta / x.antes) * 100) : null
-      return <article key={x.rotulo} className={`cc-comp cc-comp--${x.tom ?? 'verde'}`}>
-        <span className="cc-comp__rotulo"><span className="cc-comp__icone" aria-hidden="true">{x.icone}</span>{x.rotulo}</span>
-        <b className="cc-comp__valor">{f(x.valor)}</b>
-        {ehPlanos ? <small>{inteiro(x.valor)} em 7 dias · {inteiro(x.antes)} em 30 dias (não assinantes)</small>
-          : <small><span className={delta > 0 ? 'sobe' : delta < 0 ? 'desce' : 'igual'}>{delta > 0 ? '↑' : delta < 0 ? '↓' : '='} {pctDelta === null ? (delta ? f(Math.abs(delta)) : 'igual') : `${Math.abs(pctDelta)}%`}</span> contra {f(x.antes)} ({x.contra})</small>}
+  return <section className="cc-placar" aria-label="Comparações com ontem, a semana e o mês passados">
+    {c.map(g => {
+      const f = g.dinheiro ? (n: number) => reais(n).replace(/,00$/, '') : inteiro
+      return <article key={g.titulo} className={`cc-bloco cc-bloco--${g.tom}`}>
+        <a className="cc-bloco__cab" href={nav.link(g.destino)} onClick={e => { e.preventDefault(); nav.ir(g.destino) }}><span className="cc-comp__icone" aria-hidden="true"><Icone nome={g.icone} tamanho={15} /></span>{g.titulo}<Icone nome="direita" tamanho={13} /></a>
+        {g.linhas.map(x => {
+          const delta = x.valor - x.antes, maior = Math.max(1, x.valor, x.antes)
+          const pct = x.antes ? Math.round((delta / x.antes) * 100) : null
+          return <div key={x.rotulo} className="cc-bloco__linha">
+            <span className="cc-bloco__periodo">{x.rotulo}</span>
+            <b className="cc-bloco__valor">{f(x.valor)}</b>
+            {g.planos ? <small className="cc-bloco__contra">{x.contra}</small> : <>
+              <span className={'cc-bloco__var ' + (delta > 0 ? 'sobe' : delta < 0 ? 'desce' : 'igual')}>{delta > 0 ? '▲' : delta < 0 ? '▼' : '='} {pct === null ? (delta ? f(Math.abs(delta)) : 'igual') : `${Math.abs(pct)}%`}</span>
+              <span className="cc-bloco__barras" aria-hidden="true"><i style={{ width: `${x.valor / maior * 100}%` }} /><i className="antes" style={{ width: `${x.antes / maior * 100}%` }} /></span>
+              <small className="cc-bloco__contra">contra {f(x.antes)} ({x.contra})</small>
+            </>}
+          </div>
+        })}
       </article>
     })}
   </section>

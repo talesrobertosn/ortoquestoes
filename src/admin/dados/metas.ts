@@ -45,6 +45,35 @@ export const META_MODERADA: VersaoMetas = {
   ],
 }
 
+/**
+ * O plano oficial desde 11/11/2026 (Tales: "faz a projeção baseada nos dados"): o modelo de público finito de
+ * `projecao.ts`, rodado uma vez com os números reais de 11/11/2026 (`PARAMETROS_PLANO`) e congelado aqui. Os
+ * cadastros caem devagar porque o público é finito (com a turma nova de R1 em março); as primeiras assinaturas
+ * acompanham; a base cresce porque os mensais renovam. O cenário moderado de 05/11 fica guardado para comparação.
+ * Esta versão nunca muda: ajustes vão para a camada "vigente", só em meses futuros.
+ */
+export const PLANO_2026_11: VersaoMetas = {
+  id: 'plano-2026-11-11',
+  nome: 'Plano de 12 meses · dados reais de 11/11/2026',
+  registradaEm: '2026-11-11',
+  meses: [
+    m('2026-11', 125, 50, 88, 3037, 5460),
+    m('2026-12', 116, 48, 126, 4463, 6502),
+    m('2027-01', 109, 47, 157, 5633, 7299),
+    m('2027-02', 101, 46, 183, 6596, 7898),
+    m('2027-03', 139, 61, 221, 8006, 10042),
+    m('2027-04', 129, 60, 252, 9146, 10989),
+    m('2027-05', 120, 58, 278, 10082, 11477),
+    m('2027-06', 112, 57, 300, 10850, 11814),
+    m('2027-07', 104, 55, 318, 11483, 12026),
+    m('2027-08', 97, 54, 333, 12005, 12137),
+    m('2027-09', 91, 52, 345, 12409, 12713),
+    m('2027-10', 84, 51, 351, 12648, 15037),
+  ],
+}
+/** A versão que vale nas telas (faixas de metas, página Metas). */
+export const META_OFICIAL = PLANO_2026_11
+
 /** Linha da tabela metas_comerciais (camada "vigente", editável pelo painel). */
 export interface LinhaMetaBanco { versao: string; mes: string; cadastros: number; novos_pagantes: number; ativos_fim: number; receita_equivalente: number; faturamento: number }
 
