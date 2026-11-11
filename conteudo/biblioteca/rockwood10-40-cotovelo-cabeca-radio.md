@@ -407,7 +407,7 @@ A cirurgia segue um roteiro sistemático, de dentro para fora:
 
 > Na prova: **coronoide, cabeça do rádio, colateral lateral e, se precisar, colateral medial.** E um cotovelo **rígido e estável** é preferível a um frouxo e incongruente.
 
-!questoes central=trauma-0205,trauma-0318,trauma-1295 relacionadas=trauma-0684 treino=trauma-1422,trauma-1424,trauma-1425
+!questoes central=trauma-0205,trauma-0318,trauma-1295 relacionadas=trauma-0684,ombro-cotovelo-0246 treino=trauma-1422,trauma-1424,trauma-1425
 conceito: Na tríade terrível, repara-se o coronoide, depois a cabeça do rádio, depois o colateral lateral (em geral avulsionado da origem) e só então, se houver instabilidade, o medial.
 como: O TEOT 2022 pediu a ordem num caso com Mason 3 e Regan-Morrey 2; o TEOT 2023, o tipo de lesão do colateral lateral (avulsão na origem); o SBOT-SP, o que fazer depois de coronoide e cabeça (lateral, e medial se persistir).
 armadilha: Medial antes do lateral: o lateral é o que mais rompe e é reparado primeiro.
