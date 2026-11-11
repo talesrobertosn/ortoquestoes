@@ -1,6 +1,6 @@
 ---
 id: campbell15-outros-ombro-cotovelo
-versao: 1
+versao: 2
 titulo: Outros temas de ombro e cotovelo: instabilidade posterior, biomecânica do cotovelo, MONTEGGIA e prótese do cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -278,6 +278,14 @@ O cotovelo normal vai de 0 grau de extensão a 140 ou 150 graus de flexão, com 
 A segunda pergunta clássica é quanto do olécrano pode ser retirado sem soltar o cotovelo. Ela nasce de duas situações: a fratura tratada com excisão do fragmento e avanço do tríceps e a consolidação viciosa. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 41, tratamento das fraturas do olécrano) põe os três números lado a lado: **MCKEEVER e BUCK, quando descreveram o procedimento, afirmaram que até 80% da incisura troclear podia ser excisada**; INHOFE e HOWARD tiveram resultados bons ou excelentes com até 70% da superfície articular; e AN mostrou, em estudo biomecânico, que a ressecção de **mais de 50% da superfície articular pode levar à instabilidade**. A frase da prova é a de MCKEEVER e BUCK, com a condição que dá sentido a ela: o que sobra na frente, isto é, o coronoide e as estruturas anteriores, tem de estar íntegro, porque é isso que impede a ulna de escapar.
 
 O Campbell (cap. 63, p. 2881) não dá porcentagem; dá uma regra radiográfica para a consolidação viciosa. Na radiografia de perfil com 90 graus de flexão, traça-se uma linha pelo eixo longitudinal do úmero atravessando a articulação: **devem sobrar pelo menos 0,3 cm de olécrano atrás dessa linha**, o bastante para impedir a subluxação anterior da ulna proximal; o resto pode ser excisado, com o tríceps reinserido com firmeza. O livro desaconselha a osteotomia de realinhamento nesses casos, que quase sempre piora a função.
+
+A terceira situação é a ressecção da **porção posteromedial** do olécrano, feita para tirar o osteófito do impacto posteromedial no arremessador. Aqui o risco não é a subluxação anterior, e sim o **valgo**. O Campbell (cap. 57, p. 2502) diz que é seguro retirar o osteófito e **no máximo 3 mm de osso da ponta do olécrano**; a retirada mais agressiva **aumenta a tensão no ligamento colateral ulnar** (o medial), com risco de frouxidão ou de nova lesão, isto é, de instabilidade em valgo. O Skeletal Trauma, 5ª ed. (cap. 46, p. 1353), ao discutir a excisão do olécrano na fratura (30% ou mais sem prejuízo da estabilidade, até 80% em algumas séries, desde que o coronoide e os estabilizadores anteriores estejam íntegros), apoia-se nos estudos biomecânicos de AN (1986), de KAMINENI e colaboradores (Partial posteromedial olecranon resection: a kinematic study, J Bone Joint Surg Am, 2003) e de BELL e colaboradores (Contribution of the olecranon to elbow stability, J Bone Joint Surg Am, 2010).
+
+!questoes relacionadas=ombro-cotovelo-0461
+conceito: Retirar a porção posteromedial do olécrano além do osteófito e de cerca de 3 mm da ponta sobrecarrega o ligamento colateral ulnar e leva à instabilidade em valgo (Campbell, cap. 57, p. 2502).
+como: O TARO 2013 perguntou que instabilidade a ressecção posteromedial do olécrano provoca, com varo, posterior, valgo e rotacional.
+armadilha: Marcar instabilidade posterior pensando na excisão ampla do olécrano da fratura; a ressecção posteromedial, pequena, ameaça o colateral medial, que segura o valgo.
+!fim
 
 !questoes central=ombro-cotovelo-0506 relacionadas=ombro-cotovelo-0515,ombro-cotovelo-0461
 conceito: Arco funcional de MORREY = 30 a 130 graus de flexoextensão e 50 graus de pronação e de supinação. Olécrano: até 80% da incisura pode ser excisada (MCKEEVER e BUCK) se o coronoide e as estruturas anteriores estiverem íntegros.

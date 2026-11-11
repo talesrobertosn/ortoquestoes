@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-22-coluna-toracolombar
-versao: 3
+versao: 4
 titulo: Fraturas da coluna toracolombar na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 22 · Thoracolumbar Spine Fractures
 autores: Kenneth D. Illingworth e David L. Skaggs
-fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 22, com trechos do Tachdjian's Pediatric Orthopaedics (6ª ed., caps. 7 e 28) sobre SCIWORA e fratura do anel apofisário. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e algoritmo.
+fonte: Livro conferido localmente em 28/10/2026 e relido em 31/10/2026, capítulo 22, com trechos do Tachdjian's Pediatric Orthopaedics (6ª ed., caps. 7 e 28) sobre SCIWORA e fratura do anel apofisário, e a classificação de TAKATA da fratura do limbo pelo HEBERT (5ª ed., cap. 38, Quadro 38.1) e pelo Lovell and Winter (7ª ed., cap. 34, p. 1776). O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e algoritmo.
 subtemas: Trauma da coluna na criança
 resumo: Mecanismos (maus-tratos no lactente, cinto abdominal, queda com carga axial); lesão abdominal em quase metade das CHANCE; 32% de outra fratura vertebral; 85% sem déficit; SCIWORA; radiografia, tomografia e ressonância; DENIS, TLICS e AO Spine; compressão (cifose menor que 30 graus, perda de altura acima de 50%); explosão estável com TLSO; CHANCE e faceta vazia; fratura-luxação e escoliose paralítica abaixo de 10 anos; placa terminal e faceta no atleta jovem; corticoide.
 ---
@@ -241,11 +241,22 @@ armadilha: Atribuir a fratura-luxação do lactente a uma queda banal, ou espera
 
 O Tachdjian (6ª edição, cap. 7) acrescenta a epidemiologia que as provas cobram: a fratura do anel apofisário ocorre antes da fusão do anel ao corpo, sobretudo em **adolescentes**, **mais em meninos** (especialmente levantadores de peso), por flexão súbita com compressão axial ou microtrauma repetido, e o local mais comum é a **apófise posteroinferior de L4**, isto é, o espaço **L4-L5** (Fig. 7.5).
 
+**A classificação de TAKATA.** O Rockwood não classifica a lesão. O HEBERT (Ortopedia e Traumatologia, 5ª ed., cap. 38, "Fratura do limbo") chama-a de **fratura do limbo**, ou da apófise posterior do corpo vertebral, e explica que a apófise anelar só se funde ao corpo **entre 18 e 25 anos**; o arrancamento pode ser da margem **posteroinferior ou superior**. Cerca de **60%** dos casos estão na margem posteroinferior de **L4**, **30% em L5** e **10% em L3**, e o exame de escolha é a **TC**, porque a RM pode confundir a fratura com hérnia discal. A lesão foi classificada por TAKATA e colaboradores em três tipos, e EPSTEIN e EPSTEIN acrescentaram o **tipo IV** (Quadro 38.1). O Lovell and Winter's Pediatric Orthopaedics (7ª ed., cap. 34, p. 1776) cita os quatro tipos de TAKATA e lembra que o tratamento não operatório **raramente dá certo, qualquer que seja o tipo**: a retirada do fragmento do limbo, em pedaços, é feita por **laminectomia com exposição direta**, e não por técnica minimamente invasiva.
+
+!tabela Classificação de TAKATA, com o tipo IV de EPSTEIN (HEBERT 5, cap. 38, Quadro 38.1)
+| Tipo | Característica |
+| --- | --- |
+| I | avulsão marginal cartilaginosa pura, sem envolvimento ósseo |
+| II | fragmento central ósseo, com osso cortical e esponjoso |
+| III | localização lateral, em forma de "lágrima" |
+| IV | comprometimento de toda a parede posterior do corpo vertebral |
+!fim
+
 **Fratura da faceta.** Fonte provavelmente subestimada de lombalgia no **atleta jovem**, por **hiperextensão repetitiva**, com ou sem torção, muitas vezes junto com **espondilólise** (Fig. 22-23). A dor é mais crônica que aguda e se reproduz na **hiperextensão em pé**, localizada; se a hiperextensão não reproduz a dor, desconfiar do diagnóstico. A radiografia quase nunca mostra, e a ressonância frequentemente perde; a **tomografia** com 3D é o **padrão-ouro** (Fig. 22-24). Infiltração confirma o gerador da dor, com falsos negativos. O tratamento da fratura isolada da faceta é a **retirada cirúrgica** do fragmento, por incisão de cerca de 16 mm, com alívio imediato.
 
 !questoes central=pediatria-0627 relacionadas=trauma-0997 treino=pediatria-1263,pediatria-1267
-conceito: A fratura da placa terminal é uma lesão fisária do anel apofisário, por flexão, que imita hérnia de disco; mais comum em meninos adolescentes, na apófise posteroinferior de L4; confirma-se na tomografia sagital e trata-se com retirada do fragmento.
-como: TARO 2018 perguntou em que gênero e segmento a fratura da placa terminal lombar é mais comum (masculino, L4-L5).
+conceito: A fratura da placa terminal é uma lesão fisária do anel apofisário, por flexão, que imita hérnia de disco; mais comum em meninos adolescentes, na apófise posteroinferior de L4; confirma-se na tomografia sagital e trata-se com retirada do fragmento. Na classificação de TAKATA com o tipo IV de EPSTEIN (HEBERT, cap. 38, Quadro 38.1), o tipo IV é o comprometimento de toda a parede posterior do corpo vertebral.
+como: TARO 2018 perguntou em que gênero e segmento a fratura da placa terminal lombar é mais comum (masculino, L4-L5); TARO 2026 perguntou o que caracteriza o tipo IV de TAKATA na modificação de EPSTEIN, com as descrições dos quatro tipos como alternativas.
 armadilha: Tratar como hérnia com fisioterapia e infiltração.
 alerta: O capítulo 22 do Rockwood não traz sexo nem segmento (o exemplo dele é uma menina com fratura da placa inferior de L4); o masculino e a posteroinferior de L4 vêm do Tachdjian (6ª ed., cap. 7).
 !fim
