@@ -51,6 +51,13 @@ POR_PAGINA = 25
 # páginas de assunto ficam só com os subtemas e o convite para criar a conta.
 PAGINAS_DE_QUESTAO = True
 
+# Questões com imagem que mostram o comentário inteiro, aberto, na página
+# pública (teste do Tales, 11/11/2026: "a questão 100% exposta para o Google").
+# A lista fica fixa em seo_questoes_completas.json; selecionar_completas.py a
+# refaz. As figuras de livro do comentário ficam só no site (direitos das editoras).
+ARQUIVO_COMPLETAS = Path(__file__).resolve().parent / "seo_questoes_completas.json"
+COMPLETAS: set[str] = set((ler_json(ARQUIVO_COMPLETAS, {}) or {}).get("ids", []))
+
 ESTILO = """
 :root {
   --fundo: #f1f3f2; --superficie: #fff; --superficie-2: #f7f9f8; --texto: #12181a; --texto-2: #5b686c;
@@ -101,12 +108,18 @@ figcaption { font-size: 0.85rem; color: var(--texto-2); }
 mark { background: #f5df72; color: inherit; padding: 0 0.2em; border-radius: 0.2em; }
 .nota { margin: 0.4rem 0 0.8rem; padding: 0.8rem 1rem; border-radius: 12px; background: var(--ouro-veu); border-left: 4px solid var(--ouro); }
 .nota p { margin: 0; }
+.tabela { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0.3rem 0 1rem; }
+.tabela table { margin: 0; min-width: 28rem; }
 table { width: 100%; border-collapse: collapse; margin: 0.3rem 0 1rem; font-size: 0.92em; }
 th, td { padding: 0.45rem 0.6rem; text-align: left; vertical-align: top; border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent); }
 th { font-weight: 700; }
 details.resposta { margin-top: 0.5rem; border-top: 1px solid var(--traco); padding-top: 0.75rem; }
 details.resposta summary { cursor: pointer; font-weight: 700; color: var(--destaque); }
 .gabarito { font-size: 1.05rem; }
+.resposta-aberta { margin-top: 1.5rem; border-top: 1px solid var(--traco); padding-top: 0.5rem; }
+.resposta-aberta h2 { margin-top: 1rem; }
+.resposta-aberta .alt { margin-bottom: 0.8rem; }
+.referencias { font-size: 0.9375rem; color: var(--texto-2); padding-left: 1.2rem; }
 .convite { margin-top: 1rem; padding: 1rem 1.1rem; border-radius: 14px; background: var(--superficie-2); border: 1px dashed var(--traco); }
 .paginacao { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.75rem; margin: 1.5rem 0; font-weight: 600; }
 .aviso { background: var(--veu); border-radius: 14px; padding: 0.9rem 1rem; margin: 1.5rem 0; }
@@ -150,7 +163,7 @@ def editorial(texto: str) -> str:
                 if linhas_t:
                     cab = "".join(f"<th>{_inline(c)}</th>" for c in linhas_t[0])
                     corpo = "".join("<tr>" + "".join(f"<td>{_inline(c)}</td>" for c in l) + "</tr>" for l in linhas_t[1:])
-                    partes.append(f"<table><thead><tr>{cab}</tr></thead><tbody>{corpo}</tbody></table>")
+                    partes.append(f"<div class=\"tabela\"><table><thead><tr>{cab}</tr></thead><tbody>{corpo}</tbody></table></div>")
             elif tipo_atual == "nota":
                 partes.append('<aside class="nota">' + "".join(f"<p>{_inline(l[2:])}</p>" for l in grupo) + "</aside>")
             grupo, tipo_atual = [], ""
@@ -340,12 +353,20 @@ def dimensoes(arquivo: str) -> str:
     return _DIMENSOES[arquivo]
 
 
-def figuras(questao: dict, raiz: str) -> str:
+def figuras(questao: dict, raiz: str, assunto: str = "", origem: str = "", primeira_na_tela: bool = False) -> str:
+    """Figuras da questão. Sem legenda própria, o alt descreve o assunto e a
+    prova ("Imagem da questão de fratura do planalto tibial (TEOT 2023)"), que é
+    o que a busca de imagens lê. Na página da questão a primeira figura aparece
+    logo no início: carrega já, com prioridade, em vez de esperar a rolagem."""
+    imagens = questao.get("imagens") or []
     saida = []
-    for imagem in questao.get("imagens") or []:
-        legenda = imagem.get("legenda") or f"Figura da questão {questao['id']}"
+    for i, imagem in enumerate(imagens):
+        numero = f", figura {i + 1}" if len(imagens) > 1 else ""
+        descricao = f"Imagem da questão de {assunto}{' (' + origem + ')' if origem else ''}{numero}" if assunto else ""
+        legenda = imagem.get("legenda") or descricao or f"Figura da questão {questao['id']}"
+        carga = ' fetchpriority="high" decoding="async"' if (primeira_na_tela and i == 0) else ' loading="lazy" decoding="async"'
         saida.append(
-            f'<figure><img src="{raiz}imagens/{esc(imagem["arquivo"])}" alt="{html.escape(legenda, quote=True)}"{dimensoes(imagem["arquivo"])} loading="lazy" decoding="async">'
+            f'<figure><img src="{raiz}imagens/{esc(imagem["arquivo"])}" alt="{html.escape(legenda, quote=True)}"{dimensoes(imagem["arquivo"])}{carga}>'
             + (f"<figcaption>{esc(imagem['legenda'])}</figcaption>" if imagem.get("legenda") else "")
             + "</figure>"
         )
@@ -374,6 +395,10 @@ def titulo_questao(questao: dict, tema: dict, nivel: int = 0) -> str:
     marca = f" · {questao['id']}" if nivel >= 2 else ""
     cabeca = f"{subtema} ({rotulo})" if rotulo else subtema
     limite = 62 if nivel == 0 else 100
+    if questao["id"] in COMPLETAS:
+        # Comentário inteiro na página: o título diz isso, que é o que decide o clique.
+        cabeca = f"{subtema} ({rotulo}), questão comentada" if rotulo else f"{subtema}, questão comentada"
+        limite += 16
     return resumir(f"{cabeca}: {questao['enunciado']}", limite - len(marca)) + marca + SUFIXO_TITULO
 
 
@@ -381,8 +406,9 @@ def descricao_questao(questao: dict, tema: dict, desempate: bool = False) -> str
     """Descrição com a origem e o começo do enunciado; o id só desempata."""
     origem = origem_da_questao(questao)
     fim = f" Questão {questao['id']}." if desempate else ""
+    oferta = "comentada alternativa por alternativa, com a imagem e o gabarito" if questao["id"] in COMPLETAS else "com gabarito e conceito-chave"
     return resumir(
-        f"Questão de {tema['nome'].lower()}{' (' + origem + ')' if origem else ''} com gabarito e conceito-chave: {questao['enunciado']}",
+        f"Questão de {tema['nome'].lower()}{' (' + origem + ')' if origem else ''} {oferta}: {questao['enunciado']}",
         158 - len(fim),
     ) + fim
 
@@ -419,18 +445,26 @@ def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict |
         f'<a href="{raiz}questoes/{slug}.html">{esc(tema["nome"])}</a> › {esc(subtema)}</nav>'
     )
     nome_h1 = subtema.lower() if subtema.isupper() else subtema
-    corpo.append(f"<h1>Questão de {esc(nome_h1)}{' (' + esc(origem) + ')' if origem else ''}</h1>")
+    comentada = " comentada" if questao["id"] in COMPLETAS else ""
+    corpo.append(f"<h1>Questão{comentada} de {esc(nome_h1)}{' (' + esc(origem) + ')' if origem else ''}</h1>")
     rotulos = [tema["nome"], subtema] + ([origem] if origem else [])
     corpo.append('<p class="etiquetas">' + "".join(f"<span>{esc(r)}</span>" for r in dict.fromkeys(rotulos)) + "</p>")
     corpo.append('<article class="questao">')
     if questao.get("simulado"):
         corpo.append(nota_simulado(questao))
     corpo.append(f'<p class="enunciado">{esc(questao["enunciado"])}</p>')
-    corpo.append(figuras(questao, raiz))
+    corpo.append(figuras(questao, raiz, nome_h1, origem, primeira_na_tela=True))
     corpo.append('<ol type="A">')
     for alternativa in questao.get("alternativas") or []:
         corpo.append(f"<li>{esc(alternativa['texto'])}</li>")
     corpo.append("</ol>")
+    if questao["id"] in COMPLETAS:
+        corpo.append(resposta_completa(questao, comentario, raiz))
+        corpo.append("</article>")
+        corpo.append(ld(questao_ld(questao, comentario, caminho, titulo)))
+        corpo.append(navegacao_questao(questao, slug, tema, anterior, proxima, raiz))
+        corpo.append(rodape(raiz))
+        return "\n".join(corpo)
     corpo.append(
         f'<a class="acao" href="{raiz}#/questao/{esc(questao["id"])}">Responder no Orto Questões</a>'
     )
@@ -446,15 +480,96 @@ def pagina_questao(questao: dict, comentario: dict, tema: dict, anterior: dict |
     )
     corpo.append("</details>")
     corpo.append("</article>")
+    corpo.append(navegacao_questao(questao, slug, tema, anterior, proxima, raiz))
+    corpo.append(rodape(raiz))
+    return "\n".join(corpo)
+
+
+def navegacao_questao(questao: dict, slug: str, tema: dict, anterior: dict | None, proxima: dict | None, raiz: str) -> str:
     navegacao = []
     if anterior:
         navegacao.append(f'<a href="./{esc(anterior["id"])}.html">‹ Questão anterior</a>')
     navegacao.append(f'<a href="{raiz}questoes/{slug}.html">Todas de {esc(tema["nome"].lower())}</a>')
     if proxima:
         navegacao.append(f'<a href="./{esc(proxima["id"])}.html">Próxima questão ›</a>')
-    corpo.append('<nav class="paginacao">' + "".join(navegacao) + "</nav>")
-    corpo.append(rodape(raiz))
-    return "\n".join(corpo)
+    return '<nav class="paginacao">' + "".join(navegacao) + "</nav>"
+
+
+def _sem_marcas(texto: str) -> str:
+    """Texto puro do comentário, para os dados estruturados."""
+    texto = re.sub(r"\*\*([^*]+)\*\*|==([^=]+)==", lambda m: m.group(1) or m.group(2), texto or "")
+    return " ".join(re.sub(r"^(#{1,4} |> |- |[0-9]+[.] )", "", l.strip()) for l in texto.split("\n") if l.strip())
+
+
+def resposta_completa(questao: dict, comentario: dict, raiz: str) -> str:
+    """Gabarito e comentário inteiro, abertos: conceito, a correta e cada
+    incorreta, e a bibliografia. Mesmo texto do site, sem as figuras de livro."""
+    gabarito = questao.get("gabarito")
+    textos = {a["letra"]: a["texto"] for a in questao.get("alternativas") or []}
+    partes = ['<section class="resposta-aberta" aria-labelledby="comentario">',
+              '<h2 id="comentario">Gabarito e comentário</h2>',
+              f'<p class="gabarito">Gabarito: <strong>{esc(gabarito or "–")}</strong>{" · " + esc(textos.get(gabarito or "", "")) if gabarito else ""}</p>']
+    if comentario.get("conceito"):
+        partes.append('<div class="conceito"><p class="rotulo">A ideia da questão</p>' + editorial(comentario["conceito"]) + "</div>")
+    if comentario.get("correta"):
+        partes.append('<h3>Por que a alternativa correta está certa</h3>')
+        partes.append(f'<div class="alt certa"><p class="rotulo">{esc(gabarito or "")} · {esc(textos.get(gabarito or "", "correta"))}</p>{editorial(comentario["correta"])}</div>')
+    incorretas = sorted((comentario.get("incorretas") or {}).items())
+    if incorretas:
+        partes.append('<h3>Por que as outras estão erradas</h3>')
+        for letra, texto in incorretas:
+            partes.append(f'<div class="alt"><p class="rotulo">{esc(letra)} · {esc(textos.get(letra, ""))}</p>{editorial(texto)}</div>')
+    referencias = comentario.get("referencias") or []
+    if referencias:
+        partes.append('<h3>Bibliografia</h3><ul class="referencias">' + "".join(f"<li>{esc(r)}</li>" for r in referencias) + "</ul>")
+    nota_figuras = (" As figuras dos livros citadas no comentário aparecem lá, ao lado do texto." if comentario.get("imagens") else "")
+    partes.append(
+        '<div class="convite"><p><strong>Treine as próximas como esta.</strong> No site, a questão vem com revisão espaçada, '
+        f"caderno de erros e desempenho por tema.{nota_figuras}</p>"
+        f'<a class="acao" href="{raiz}#/questao/{esc(questao["id"])}">Responder no Orto Questões</a></div>'
+    )
+    partes.append("</section>")
+    return "\n".join(partes)
+
+
+def questao_ld(questao: dict, comentario: dict, caminho: str, titulo: str) -> dict:
+    """Quiz com uma questão de múltipla escolha, a resposta da banca e o
+    comentário (formato que o Google usa para questões de estudo)."""
+    gabarito = questao.get("gabarito")
+    alternativas = questao.get("alternativas") or []
+    explicacao = _sem_marcas(comentario.get("correta") or comentario.get("conceito") or "")
+    respostas = []
+    for a in alternativas:
+        item = {"@type": "Answer", "position": ord(a["letra"]) - 64, "text": f"{a['letra']}) {a['texto']}", "encodingFormat": "text/html"}
+        if a["letra"] == gabarito:
+            item["comment"] = {"@type": "Comment", "text": resumir(explicacao, 600)}
+        else:
+            outra = (comentario.get("incorretas") or {}).get(a["letra"])
+            if outra:
+                item["comment"] = {"@type": "Comment", "text": resumir(_sem_marcas(outra), 400)}
+        respostas.append(item)
+    certa = next((r for r in respostas if r["text"].startswith(f"{gabarito})")), None)
+    pergunta = {
+        "@type": "Question",
+        "eduQuestionType": "Multiple choice",
+        "learningResourceType": "Practice problem",
+        "name": resumir(questao["enunciado"], 110),
+        "text": questao["enunciado"],
+        "encodingFormat": "text/html",
+        "suggestedAnswer": [r for r in respostas if r is not certa],
+    }
+    if certa:
+        pergunta["acceptedAnswer"] = certa
+    return {
+        "@context": "https://schema.org",
+        "@type": "Quiz",
+        "name": titulo.replace(SUFIXO_TITULO, ""),
+        "url": f"{SITE}{caminho}",
+        "inLanguage": "pt-BR",
+        "about": {"@type": "Thing", "name": (questao.get("subtemas") or [questao.get("tema") or ""])[0]},
+        "educationalLevel": "Residência médica em ortopedia e traumatologia",
+        "hasPart": [pergunta],
+    }
 
 
 def ld(bloco: dict) -> str:

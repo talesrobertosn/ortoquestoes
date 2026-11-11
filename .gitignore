@@ -35,6 +35,7 @@ tsconfig.tsbuildinfo
 # Resumos da Biblioteca em HTML puro (scripts/gerar_resumos_seo.py).
 /public/resumos/
 /public/sitemap.xml
+/public/sitemap-imagens-questoes.xml
 # Páginas de destino e textos para assistentes de IA (scripts/gerar_paginas_destino.py).
 /public/banco-de-questoes-ortopedia/
 /public/teot/

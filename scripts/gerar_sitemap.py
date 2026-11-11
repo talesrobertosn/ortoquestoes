@@ -37,7 +37,38 @@ Allow: /
 
 Sitemap: {SITE}sitemap.xml
 Sitemap: {SITE}sitemap-imagens.xml
+Sitemap: {SITE}sitemap-imagens-questoes.xml
 """
+
+
+def mapa_de_imagens_das_questoes() -> int:
+    """sitemap-imagens-questoes.xml (11/11/2026): as figuras das páginas de
+    questão (radiografias, fotos, esquemas), com o título vindo do alt, para a
+    busca de imagens. O sitemap-imagens.xml do blog é escrito à mão e fica como está."""
+    from html import unescape
+    from xml.sax.saxutils import escape
+
+    linhas = []
+    total = 0
+    if DIR_QUESTOES.is_dir():
+        for pasta in sorted(p for p in DIR_QUESTOES.iterdir() if p.is_dir()):
+            for pagina in sorted(pasta.glob("*.html")):
+                texto = pagina.read_text(encoding="utf-8")
+                imagens = re.findall(r'<img src="\.\./\.\./imagens/([^"]+)" alt="([^"]*)"', texto)
+                if not imagens:
+                    continue
+                blocos = "".join(
+                    f"<image:image><image:loc>{escape(SITE + 'imagens/' + unescape(arquivo))}</image:loc>"
+                    f"<image:title>{escape(unescape(alt))}</image:title></image:image>"
+                    for arquivo, alt in imagens[:1000]
+                )
+                total += len(imagens)
+                linhas.append(f"<url><loc>{SITE}questoes/{pasta.name}/{pagina.name}</loc>{blocos}</url>")
+    xml = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
+           *linhas, "</urlset>"]
+    (DIR_PUBLICO / "sitemap-imagens-questoes.xml").write_text("\n".join(xml) + "\n", encoding="utf-8")
+    return total
 
 
 def data_do_acervo() -> str:
@@ -135,7 +166,8 @@ def principal() -> int:
     (DIR_PUBLICO / "sitemap.xml").write_text("\n".join(xml) + "\n", encoding="utf-8")
     (DIR_PUBLICO / "robots.txt").write_text(ROBOTS, encoding="utf-8")
 
-    print(f"sitemap.xml: {len(urls)} endereços, lastmod {data}")
+    imagens = mapa_de_imagens_das_questoes()
+    print(f"sitemap.xml: {len(urls)} endereços, lastmod {data}; sitemap-imagens-questoes.xml: {imagens} imagens")
     return 0
 
 
