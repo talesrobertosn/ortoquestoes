@@ -48,11 +48,20 @@ function partesMoles(e: Estrutura): string | undefined {
   return EXTRAS[baseDoId(e.id)]
 }
 
-/** Nome principal em português, ou o inglês do catálogo quando ainda não há tradução revisada. */
+/**
+ * Nome principal em português. Ordem: o nome escrito à mão (ossos, NOMES_PT, banco anatômico conferido),
+ * depois o português da Terminologia Anatômica (TA2, coluna portuguesa do Z-Anatomy, em nomes-ta2.json)
+ * e, por último, o inglês do catálogo.
+ */
 export function nomeDe(e: Estrutura): string {
-  return (e.k === 'bone' ? osso(baseDoId(e.id)) : partesMoles(e)) ?? e.en
+  return nomeRevisado(e) ?? TA2[baseDoId(e.id)] ?? e.en
 }
-export function temNomePt(e: Estrutura) { return !!(e.k === 'bone' ? osso(baseDoId(e.id)) : partesMoles(e)) }
+function nomeRevisado(e: Estrutura) { return e.k === 'bone' ? osso(baseDoId(e.id)) : partesMoles(e) }
+export function temNomePt(e: Estrutura) { return !!(nomeRevisado(e) ?? TA2[baseDoId(e.id)]) }
+
+/** Português da TA2 por id base (carregado com o atlas; vazio até chegar). */
+const TA2: Record<string, string> = {}
+export function registrarNomesTa2(nomes: Record<string, string>) { Object.assign(TA2, nomes) }
 
 export const LADO: Record<string, string> = { e: 'esquerdo', d: 'direito', m: '' }
 
@@ -70,5 +79,5 @@ export function nomeCompleto(e: Estrutura, faixa?: Faixa) {
 
 export const SINGULAR: Record<string, string> = {
   osso: 'Osso', musculo: 'Músculo', ligamento: 'Ligamento ou cápsula', nervo: 'Nervo', arteria: 'Artéria', veia: 'Veia',
-  fascia: 'Fáscia ou bolsa', linfatico: 'Linfático', orgao: 'Órgão', encefalo: 'Encéfalo', dente: 'Dente',
+  fascia: 'Fáscia ou bolsa', linfatico: 'Linfático', orgao: 'Órgão', encefalo: 'Encéfalo', dente: 'Dente', regiao: 'Região do corpo',
 }

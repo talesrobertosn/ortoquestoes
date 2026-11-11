@@ -1,7 +1,7 @@
 /** Camadas dos arquivos GLB (uma malha por estrutura, nó = id estável). */
-export type Camada = 'bone' | 'muscle' | 'connective' | 'fascia' | 'nerve' | 'vessel' | 'lymph' | 'organ' | 'brain' | 'tooth'
+export type Camada = 'bone' | 'muscle' | 'connective' | 'fascia' | 'nerve' | 'vessel' | 'lymph' | 'organ' | 'brain' | 'tooth' | 'region'
 /** Camadas que a pessoa liga e desliga. Os vasos se dividem em artérias e veias pelo nome. */
-export type Grupo = 'osso' | 'musculo' | 'ligamento' | 'fascia' | 'nervo' | 'arteria' | 'veia' | 'linfatico' | 'orgao' | 'encefalo' | 'dente'
+export type Grupo = 'osso' | 'musculo' | 'ligamento' | 'fascia' | 'nervo' | 'arteria' | 'veia' | 'linfatico' | 'orgao' | 'encefalo' | 'dente' | 'regiao'
 export type Lado = 'e' | 'd' | 'm'
 
 /** Uma estrutura do catálogo (public/atlas3d/v1/estruturas.json). */
@@ -29,3 +29,14 @@ export type Faixa = 'proximal' | 'diafise' | 'distal'
 
 /** O que está selecionado: uma estrutura e, nos ossos longos, a faixa clicada. */
 export interface Selecao { id: string; faixa?: Faixa }
+
+/**
+ * Área de origem ou inserção muscular desenhada sobre o osso (insercoes.json, do Z-Anatomy).
+ * id = nó em modelos/insercoes.glb; k = nome do músculo (inglês, minúsculo); mu = id base da malha
+ * do músculo, quando o modelo tem uma com o mesmo nome; o = id do osso (com lado) onde a área fica;
+ * nm = nome em português do músculo quando não há malha própria ("Bíceps braquial" como um todo).
+ */
+export interface Area { id: string; k: string; t: 'o' | 'i'; s: Lado; b: Estrutura['b']; n?: number; mu?: string; o?: string; nm?: string }
+
+/** Hierarquia do Z-Anatomy (arvore.json): nós [nome, pai] e, por id, o nó pai da estrutura. */
+export interface Arvore { n: ([string] | [string, number])[]; e: Record<string, number> }

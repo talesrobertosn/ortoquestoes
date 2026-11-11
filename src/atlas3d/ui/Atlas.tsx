@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Motor, type Corte, type EixoCorte, type Passagem, type Vista } from '../motor/Motor'
-import { carregarCatalogo, carregarPontos } from '../motor/carregador'
+import { carregarAreas, carregarArvore, carregarCatalogo, carregarNomesTa2, carregarPontos } from '../motor/carregador'
 import { GRUPOS, ORDEM_GRUPOS, grupoDe } from '../config'
-import type { Catalogo, Estrutura, Grupo, Ponto, Selecao } from '../tipos'
+import type { Arvore, Catalogo, Estrutura, Grupo, Ponto, Selecao } from '../tipos'
 import { REGIOES, caixasDaRegiao, regiaoPorId, type Lateralidade } from '../dados/regioes'
-import { LADO, nomeCompleto, nomeDe, registrarNomes } from '../dados/nomes'
+import { LADO, nomeCompleto, nomeDe, registrarNomes, registrarNomesTa2 } from '../dados/nomes'
 import { fichaDe, carregarVinculos, type Vinculo } from '../dados/fichas'
 import { buscar } from '../dados/busca'
 import { Icone } from '../../componentes/Icone'
@@ -21,8 +21,9 @@ import { GuiaControles } from './GuiaControles'
 import { CartaoRapido } from './CartaoRapido'
 import { ModalDetalhes } from './ModalDetalhes'
 import { FichaAnatomica, FixacoesDoOsso } from './FichaAnatomica'
-import { carregarAnatomia, idNoLado, registroDaEstrutura, type IndiceAnatomico } from '../dados/anatomia'
-import { fixadosNoOsso, idsDoRegistro, indexarPontos, marcosNoOsso, montarRelacoes, relacionadosDe, type Mundo, type Relacao } from '../dados/relacoes'
+import { baseDoId, carregarAnatomia, idNoLado, registroDaEstrutura, type IndiceAnatomico } from '../dados/anatomia'
+import { CORES_RELACAO, areasDoMusculo, areasNoOsso, fixadosNoOsso, idsDoRegistro, indexarAreas, indexarPontos, marcosNoOsso, montarAreas, montarRelacoes, relacionadosDe, type IndiceAreas, type Mundo, type Relacao } from '../dados/relacoes'
+import { AreasDoOsso, FichaGeral, Trilha } from './FichaGeral'
 import { faixaPorAltura } from '../dados/faixas'
 import { CORES_PRESET, PRESETS, type Preset } from '../dados/presets'
 import { corDaArea } from '../../dados/coresAreas'
@@ -80,6 +81,10 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const [contexto, definirContexto] = useState(false)
   const [pontosOsso, definirPontosOsso] = useState(false)
   const [preset, definirPreset] = useState<Preset | null>(null)
+  // do Z-Anatomy: áreas de origem e inserção, hierarquia (sistema › parte) e nomes da TA2
+  const [idxAreas, definirIdxAreas] = useState<IndiceAreas | null>(null)
+  const [arvore, definirArvore] = useState<Arvore | null>(null)
+  const [, definirNomesTa2] = useState(false)
   const toque = typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches
   const previa = useRef<ReturnType<typeof setTimeout> | null>(null)
   useEffect(() => () => { if (previa.current) clearTimeout(previa.current) }, [])
@@ -129,6 +134,9 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
       if (vivo) definirIndice(a)
     }).catch(() => {})
     carregarPontos().then((p) => vivo && definirPontos(indexarPontos(p))).catch(() => {})
+    carregarNomesTa2().then((n) => { registrarNomesTa2(n); if (vivo) definirNomesTa2(true) }).catch(() => {})
+    carregarAreas().then((a) => vivo && definirIdxAreas(indexarAreas(a))).catch(() => {})
+    carregarArvore().then((a) => vivo && definirArvore(a)).catch(() => {})
     return () => { vivo = false; m.descartar(); motorRef.current = null }
     // monta uma vez; o resto do estado conversa com o motor pelos efeitos abaixo
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -275,18 +283,24 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   // ---------- relações anatômicas no modelo ----------
   const registro = estrutura && indice ? registroDaEstrutura(indice, estrutura) : undefined
   const mundo: Mundo | null = motor ? { existe: (id) => motor.existe(id), estrutura: (id) => motor.estrutura(id), grupoDe: (id) => motor.grupoDe(id) } : null
+  // músculo fora do banco conferido: origem e inserção só pelas áreas desenhadas no modelo
+  const areasMusculo = useMemo(() => (estrutura && idxAreas && !registro && grupoDe(estrutura) === 'musculo'
+    ? areasDoMusculo(idxAreas, estrutura.s, [baseDoId(estrutura.id)], [estrutura.en]) : []
+  ), [estrutura, idxAreas, registro])
   // cada estrutura abre com a origem e a inserção acesas (quando existem); o resto a pessoa liga
   useEffect(() => {
-    definirAtivas(new Set(registro && registro.tipo !== 'nervo' ? (['origem', 'insercao'] as const).filter((x) => registro[x]) : []))
+    const doModelo = (['origem', 'insercao'] as const).filter((x) => areasMusculo.some((a) => a.t === (x === 'origem' ? 'o' : 'i')))
+    definirAtivas(new Set(registro && registro.tipo !== 'nervo' ? (['origem', 'insercao'] as const).filter((x) => registro[x]) : doModelo))
     definirPontosOsso(false)
     if (contexto) { motorRef.current?.isolar(null); definirIsolado(false) }
     definirContexto(false)
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [estrutura?.id, registro?.chave])
+  }, [estrutura?.id, registro?.chave, areasMusculo.length])
   const montagem = useMemo(() => (registro && indice && pontos && mundo && estrutura
-    ? montarRelacoes(registro, indice, estrutura.s, ativas, pontos, mundo) : null
+    ? montarRelacoes(registro, indice, estrutura.s, ativas, pontos, mundo, idxAreas)
+    : areasMusculo.length ? montarAreas(areasMusculo, ativas) : null
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  ), [registro, indice, pontos, estrutura?.id, ativas, motor])
+  ), [registro, indice, pontos, estrutura?.id, ativas, motor, idxAreas, areasMusculo])
   const ladoPreset: Estrutura['s'] = lado === 'e' ? 'e' : 'd'
   const destaquesPreset = useMemo(() => {
     if (!preset || !indice || !motor) return []
@@ -299,19 +313,35 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
   const fixados = useMemo(() => (estrutura && indice && pontos && grupoDe(estrutura) === 'osso'
     ? fixadosNoOsso(indice, estrutura, selecao?.faixa, pontos, (z) => faixaPorAltura(estrutura, z)) : []
   ), [estrutura, indice, pontos, selecao?.faixa])
+  const areasOsso = useMemo(() => (estrutura && idxAreas && grupoDe(estrutura) === 'osso'
+    ? areasNoOsso(idxAreas, estrutura, selecao?.faixa, (z) => faixaPorAltura(estrutura, z)) : []
+  ), [estrutura, idxAreas, selecao?.faixa])
+  // onde a estrutura fica, da raiz (sistema) até a parte imediatamente acima
+  const passosArvore = useMemo(() => {
+    if (!arvore || !estrutura) return [] as string[]
+    const passos: string[] = []
+    let i: number | undefined = arvore.e[estrutura.id]
+    while (i !== undefined && i >= 0 && passos.length < 12) { const no: [string] | [string, number] = arvore.n[i]; passos.unshift(no[0]); i = no[1] }
+    return passos
+  }, [arvore, estrutura])
   useEffect(() => {
     const m = motorRef.current
     if (!m) return
-    if (montagem) m.mostrarRelacoes(montagem.destaques, montagem.marcos, montagem.linhas)
-    else if (fixados.length && pontosOsso && estrutura && pontos) m.mostrarRelacoes([], marcosNoOsso(fixados, estrutura, pontos))
-    else m.mostrarRelacoes(preset ? destaquesPreset : [])
+    if (montagem) m.mostrarRelacoes(montagem.destaques, montagem.marcos, montagem.linhas, montagem.areas)
+    else if (pontosOsso && estrutura && (fixados.length || areasOsso.length)) {
+      // a área desenhada no osso é mais exata que o ponto: com áreas, os pontos ficam de fora
+      const areas = areasOsso.map((a) => ({ id: a.id, cor: a.t === 'o' ? CORES_RELACAO.origem : CORES_RELACAO.insercao }))
+      m.mostrarRelacoes([], !areas.length && pontos ? marcosNoOsso(fixados, estrutura, pontos) : [], [], areas)
+    } else m.mostrarRelacoes(preset ? destaquesPreset : [])
     // as camadas recém-carregadas entram no desenho: depende de ligados e do progresso
-  }, [montagem, fixados, pontosOsso, estrutura, pontos, ligados, progresso, preset, destaquesPreset])
+  }, [montagem, fixados, areasOsso, pontosOsso, estrutura, pontos, ligados, progresso, preset, destaquesPreset])
 
   const alternarRelacao = (x: Relacao) => {
     const novo = new Set(ativas)
     if (novo.has(x)) novo.delete(x); else novo.add(x)
     definirAtivas(novo)
+    // áreas do modelo ficam no osso: a camada de ossos precisa estar ligada
+    if (novo.has(x) && !registro && areasMusculo.length && !ligados.has('osso')) mudarGrupo('osso', true)
     if (!novo.has(x) || !registro || !indice || !pontos || !mundo || !estrutura) return
     // liga a camada que a relação precisa (nervos, por exemplo), com as regras do plano
     const precisa = montarRelacoes(registro, indice, estrutura.s, new Set([x]), pontos, mundo).precisa
@@ -359,14 +389,26 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     <FichaAnatomica registro={registro} indice={indice} ativas={ativas} semGeometria={montagem?.semGeometria ?? []} contexto={contexto}
       aoAlternar={alternarRelacao} aoContexto={alternarContexto} aoIr={irParaChave} />
   ) : undefined
-  const fixacoes = fixados.length && indice ? (
-    <FixacoesDoOsso itens={fixados} indice={indice} pontos={pontosOsso} aoPontos={() => definirPontosOsso((v) => !v)} aoIr={irParaChave} />
+  const estruturaDe = (id: string) => motorRef.current?.estrutura(id)
+  const listaAreasOsso = areasOsso.length ? (
+    <AreasDoOsso areas={areasOsso} semBotao={fixados.length > 0} mostrar={pontosOsso} aoMostrar={() => definirPontosOsso((v) => !v)} estrutura={estruturaDe} aoIr={irPara} />
+  ) : null
+  const fixacoes = (fixados.length && indice) || areasOsso.length ? (
+    <>
+      {fixados.length > 0 && indice && <FixacoesDoOsso itens={fixados} indice={indice} pontos={pontosOsso} comAreas={areasOsso.length > 0} aoPontos={() => definirPontosOsso((v) => !v)} aoIr={irParaChave} />}
+      {listaAreasOsso && (fixados.length > 0
+        ? <details className="fa-secao"><summary>Todos os músculos desenhados no modelo <small>{new Set(areasOsso.map((a) => a.mu ?? a.k)).size}</small></summary>{listaAreasOsso}</details>
+        : listaAreasOsso)}
+    </>
+  ) : undefined
+  const geral = estrutura && !registro ? (
+    <FichaGeral estrutura={estrutura} areas={areasMusculo} ativas={ativas} aoAlternar={alternarRelacao} estruturaDe={estruturaDe} aoIr={irPara} />
   ) : undefined
 
   const painelDireito = estrutura ? (
     questoes
       ? <PainelQuestoes titulo={questoes.titulo} ids={questoes.ids} aoVoltar={() => definirQuestoes(null)} />
-      : <PainelFicha key={`${estrutura.id}|${selecao?.faixa ?? ''}`} anatomia={anatomia} fixacoes={fixacoes} estrutura={estrutura} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} favorita={pref.favoritos.includes(estrutura.id)}
+      : <PainelFicha key={`${estrutura.id}|${selecao?.faixa ?? ''}`} anatomia={anatomia} fixacoes={fixacoes} geral={geral} trilha={<Trilha passos={passosArvore} />} estrutura={estrutura} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} favorita={pref.favoritos.includes(estrutura.id)}
           isolada={isolado} aoFocar={focarSelecao} aoIsolar={isolarSelecao} aoOcultar={ocultarSelecao} aoFavoritar={alternarFavorito}
           aoFechar={larga ? () => motorRef.current?.selecionar(null) : () => definirDetalhes(false)} aoRecolher={larga ? () => definirDetalhes(false) : undefined}
           aoResponder={(titulo, ids) => { definirQuestoes({ titulo, ids }); definirDetalhes(true) }} />
@@ -383,7 +425,7 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
     if (g && !ligados.has(g)) mudarGrupo(g, true, ir); else ir()
   }
   const cartao = estrutura ? (
-    <CartaoRapido estrutura={estrutura} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} registro={registro} indice={indice} isolada={isolado}
+    <CartaoRapido estrutura={estrutura} ondeFica={passosArvore[passosArvore.length - 1]} faixa={selecao?.faixa} ficha={ficha} vinculo={vinculo} registro={registro} indice={indice} isolada={isolado}
       podeVoltar={posTrilha > 0} podeAvancar={posTrilha < trilha.current.length - 1}
       aoDetalhes={() => definirDetalhes(true)} aoFocar={focarSelecao} aoIsolar={isolarSelecao}
       aoVoltar={() => irNaTrilha(-1)} aoAvancar={() => irNaTrilha(1)}
