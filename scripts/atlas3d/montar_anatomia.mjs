@@ -24,9 +24,16 @@ const SO_CHECAR = process.argv.includes('--checar')
 
 const FONTES = {
   'netter-ao2': 'Thompson JC. Netter Atlas de Anatomia Ortopédica. 2ª ed. Rio de Janeiro: Elsevier; 2012.',
+  'netter-6': 'Netter FH. Atlas of Human Anatomy. 6th ed. Philadelphia: Saunders Elsevier; 2014.',
 }
-const TIPOS = { musculo: 'muscle', nervo: 'nerve', ligamento: 'connective', osso: 'bone', arteria: 'vessel', veia: 'vessel', fascia: 'fascia' }
-const REGIOES = ['coluna', 'ombro', 'braco', 'cotovelo', 'antebraco', 'punho-mao', 'pelve-quadril', 'coxa', 'joelho', 'perna', 'tornozelo-pe']
+// tipo → camada(s) do modelo onde as malhas do registro podem estar
+const TIPOS = {
+  musculo: 'muscle', nervo: 'nerve', ligamento: 'connective', osso: 'bone', arteria: 'vessel', veia: 'vessel', fascia: 'fascia',
+  orgao: 'organ', encefalo: 'brain', linfatico: 'lymph', dente: 'tooth',
+}
+// regiões ortopédicas (as primeiras) e as do resto do corpo
+const REGIOES = ['coluna', 'ombro', 'braco', 'cotovelo', 'antebraco', 'punho-mao', 'pelve-quadril', 'coxa', 'joelho', 'perna', 'tornozelo-pe',
+  'cabeca-pescoco', 'torax', 'abdome', 'pelve-perineo', 'sistema-nervoso-central', 'corpo-inteiro']
 const STATUS = ['verificado', 'pendente', 'conflito']
 
 const catalogo = JSON.parse(readFileSync(join(RAIZ, 'public/atlas3d/v1/estruturas.json'), 'utf8'))
@@ -62,11 +69,15 @@ for (const arq of lotes) {
 
 // Campos aceitos por tipo: um nervo com "inserção" ou um ligamento com "nervos" é erro de lote.
 const COMUNS = ['chave', 'tipo', 'nome', 'en', 'ids', 'regiao', 'grupo', 'relacoes', 'clinica', 'ver', 'fonte', 'status', 'notas', '_lote']
+const VISCERA = [...COMUNS, 'localizacao', 'funcao', 'irriga', 'drenagem', 'inervacao', 'partes']
 const CAMPOS = {
-  musculo: [...COMUNS, 'origem', 'insercao', 'nervos', 'acao'],
-  nervo: [...COMUNS, 'raizes', 'trajeto', 'sensitivo'],
+  // "inervacao" (texto) quando o nervo não tem registro próprio no banco (ramos ventrais, nervo frênico…)
+  musculo: [...COMUNS, 'origem', 'insercao', 'nervos', 'inervacao', 'acao', 'irrigacao'],
+  nervo: [...COMUNS, 'raizes', 'trajeto', 'sensitivo', 'funcao'],
   ligamento: [...COMUNS, 'articulacao', 'origem', 'insercao', 'funcao', 'restringe'],
   arteria: [...COMUNS, 'trajeto', 'ramos', 'irriga'],
+  veia: [...COMUNS, 'trajeto', 'ramos', 'drenagem'],
+  orgao: VISCERA, encefalo: VISCERA, linfatico: VISCERA, dente: VISCERA,
 }
 const porChave = new Map()
 const donoDoId = new Map()
@@ -102,7 +113,7 @@ for (const r of registros) {
     r[campo] = { ...r[campo], o: expandir(r[campo].o) }
     for (const o of r[campo].o) if (camadaDaBase.get(o) !== 'bone') erros.push(`${onde}: osso inexistente "${o}" em ${campo}`)
   }
-  if (r.tipo === 'musculo' && !r.nervos?.length) avisos.push(`${onde}: músculo sem nervo`)
+  if (r.tipo === 'musculo' && !r.nervos?.length && !r.inervacao) avisos.push(`${onde}: músculo sem nervo`)
 }
 for (const r of registros) {
   const onde = `${r._lote} › ${r.chave}`

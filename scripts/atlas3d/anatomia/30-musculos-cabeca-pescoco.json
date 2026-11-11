@@ -1,0 +1,1518 @@
+{
+  "lote": "30-musculos-cabeca-pescoco",
+  "fonte": "netter-6",
+  "paginas_lidas": [
+    140,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    612
+  ],
+  "registros": [
+    {
+      "chave": "bucinador",
+      "tipo": "musculo",
+      "nome": "Bucinador",
+      "en": "Buccinator",
+      "ids": [
+        "bucinator"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Processos alveolares da maxila e da mandíbula na altura dos molares e borda anterior da rafe pterigomandibular."
+      },
+      "insercao": {
+        "t": "Ângulo da boca."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Comprime a bochecha contra os dentes, expele o ar entre os lábios e ajuda a mastigação mantendo o alimento entre os dentes.",
+      "irrigacao": "Ramos musculares da artéria facial e ramo bucal da maxilar.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            170
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "corrugador-do-supercilio",
+      "tipo": "musculo",
+      "nome": "Corrugador do supercílio",
+      "en": "Corrugator supercilii",
+      "ids": [
+        "corrugator_supercilii"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Parte medial da margem supraorbital."
+      },
+      "insercao": {
+        "t": "Pele da metade medial do supercílio."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Puxa o supercílio para baixo e para dentro; forma as rugas verticais da testa franzida.",
+      "irrigacao": "Ramos zigomático e anterior da artéria temporal superficial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            170
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "abaixador-do-angulo-da-boca",
+      "tipo": "musculo",
+      "nome": "Abaixador do ângulo da boca",
+      "en": "Depressor anguli oris",
+      "ids": [
+        "depressor_anguli_oris"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Linha oblíqua da mandíbula, em continuidade com o platisma."
+      },
+      "insercao": {
+        "t": "Ângulo da boca, misturando-se ao orbicular e à pele."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Abaixa o ângulo da boca.",
+      "irrigacao": "Ramo labial inferior da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            170
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "abaixador-do-labio-inferior",
+      "tipo": "musculo",
+      "nome": "Abaixador do lábio inferior",
+      "en": "Depressor labii inferioris",
+      "ids": [
+        "depressor_labii_inferioris"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Face lateral da mandíbula, entre a sínfise e o forame mentual."
+      },
+      "insercao": {
+        "t": "Pele do lábio inferior, misturada ao orbicular da boca."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Abaixa o lábio inferior e o puxa para o lado.",
+      "irrigacao": "Ramo labial inferior da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            170
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "abaixador-do-septo-nasal",
+      "tipo": "musculo",
+      "nome": "Abaixador do septo nasal",
+      "en": "Depressor septi nasi",
+      "ids": [
+        "depressor_septi_nasi"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Fossa incisiva da maxila."
+      },
+      "insercao": {
+        "t": "Septo e parte posterior da asa do nariz."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Estreita a narina e puxa o septo para baixo.",
+      "irrigacao": "Ramo labial superior da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            170
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "frontal-musculo",
+      "tipo": "musculo",
+      "nome": "Ventre frontal do occipitofrontal",
+      "en": "Frontalis muscle",
+      "ids": [
+        "frontalis_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Aponeurose epicrânica, na altura da sutura coronal."
+      },
+      "insercao": {
+        "t": "Pele da fronte."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Enruga a testa e eleva os supercílios.",
+      "irrigacao": "Ramo frontal da artéria temporal superficial.",
+      "ver": [
+        "occipital-musculo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            170
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "occipital-musculo",
+      "tipo": "musculo",
+      "nome": "Ventre occipital do occipitofrontal",
+      "en": "Occipitalis muscle",
+      "ids": [
+        "occipitalis_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Dois terços laterais da linha nucal superior e processo mastoide."
+      },
+      "insercao": {
+        "t": "Pele da região occipital e aponeurose epicrânica."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Puxa o couro cabeludo para trás.",
+      "irrigacao": "Artéria auricular posterior e ramo descendente da occipital.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "levantador-do-angulo-da-boca",
+      "tipo": "musculo",
+      "nome": "Levantador do ângulo da boca",
+      "en": "Levator anguli oris",
+      "ids": [
+        "levator_anguli_oris"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Fossa canina da maxila, logo abaixo do forame infraorbital."
+      },
+      "insercao": {
+        "t": "Ângulo da boca."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Eleva o ângulo da boca.",
+      "irrigacao": "Ramo labial superior da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "levantador-do-labio-superior",
+      "tipo": "musculo",
+      "nome": "Levantador do lábio superior",
+      "en": "Levator labii superioris",
+      "ids": [
+        "levator_labii_superioris"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Maxila acima do forame infraorbital."
+      },
+      "insercao": {
+        "t": "Pele do lábio superior."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Eleva o lábio superior e dilata a narina.",
+      "irrigacao": "Artéria labial superior e ramos angulares da facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "levantador-do-labio-superior-e-asa-do-nariz",
+      "tipo": "musculo",
+      "nome": "Levantador do lábio superior e da asa do nariz",
+      "en": "Levator labii superioris alaeque nasi",
+      "ids": [
+        "levator_nasolabialis"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Parte superior do processo frontal da maxila."
+      },
+      "insercao": {
+        "t": "Cartilagem alar maior, pele do nariz e parte lateral do lábio superior."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Eleva o lábio superior e dilata a narina.",
+      "irrigacao": "Ramos labial superior e angulares da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "mentual-musculo",
+      "tipo": "musculo",
+      "nome": "Mentual",
+      "en": "Mentalis muscle",
+      "ids": [
+        "mentalis_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Fossa incisiva da mandíbula."
+      },
+      "insercao": {
+        "t": "Pele do mento."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Eleva e projeta o lábio inferior (enruga o queixo).",
+      "irrigacao": "Ramo labial inferior da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "nasal-musculo",
+      "tipo": "musculo",
+      "nome": "Nasal",
+      "en": "Nasalis muscle",
+      "ids": [
+        "nasalis_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Eminência canina da maxila, acima e ao lado da fossa incisiva."
+      },
+      "insercao": {
+        "t": "Aponeurose sobre as cartilagens do nariz."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "A parte transversa comprime a narina; a parte alar a abre.",
+      "irrigacao": "Ramos labial superior, septal e nasal lateral da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "orbicular-da-boca",
+      "tipo": "musculo",
+      "nome": "Orbicular da boca",
+      "en": "Orbicularis oris muscle",
+      "ids": [
+        "orbicularis_oris_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Maxila acima dos incisivos (e fibras dos músculos vizinhos que convergem para a boca)."
+      },
+      "insercao": {
+        "t": "Pele ao redor dos lábios."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Fecha, comprime e projeta os lábios.",
+      "irrigacao": "Ramos labiais superior e inferior da artéria facial.",
+      "clinica": "Na paralisia facial periférica o canto da boca cai do lado afetado, com escape de saliva e alimento.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173,
+            623
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "orbicular-do-olho",
+      "tipo": "musculo",
+      "nome": "Orbicular do olho",
+      "en": "Orbicularis oculi",
+      "ids": [
+        "orbital_part_of_orbicularis_oculi",
+        "palpebral_part_of_orbicularis_oculi"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Margem medial da órbita, ligamento palpebral medial e osso lacrimal."
+      },
+      "insercao": {
+        "t": "Pele ao redor da órbita e pálpebras superior e inferior."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Fecha as pálpebras: a parte palpebral no piscar, a parte orbital no fechamento forçado.",
+      "irrigacao": "Artérias facial e temporal superficial.",
+      "clinica": "Sem ele (paralisia facial), o olho não fecha, a pálpebra inferior cai para fora e a córnea resseca.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173,
+            623
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "procero",
+      "tipo": "musculo",
+      "nome": "Prócero",
+      "en": "Procerus muscle",
+      "ids": [
+        "procerus_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Fáscia sobre a parte inferior do osso nasal e a cartilagem nasal lateral."
+      },
+      "insercao": {
+        "t": "Pele entre os supercílios."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Puxa para baixo o ângulo medial do supercílio; faz as rugas transversas na raiz do nariz.",
+      "irrigacao": "Ramos angular e nasal lateral da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "risorio",
+      "tipo": "musculo",
+      "nome": "Risório",
+      "en": "Risorius muscle",
+      "ids": [
+        "risorius_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Fáscia sobre o masseter, superficial ao platisma."
+      },
+      "insercao": {
+        "t": "Pele do ângulo da boca."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Puxa o ângulo da boca para o lado.",
+      "irrigacao": "Ramo labial superior da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "zigomatico-maior",
+      "tipo": "musculo",
+      "nome": "Zigomático maior",
+      "en": "Zygomaticus major muscle",
+      "ids": [
+        "zygomaticus_major_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Arco zigomático."
+      },
+      "insercao": {
+        "t": "Ângulo da boca."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Puxa o ângulo da boca para cima e para trás (sorriso).",
+      "irrigacao": "Ramo labial superior da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            175
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "zigomatico-menor",
+      "tipo": "musculo",
+      "nome": "Zigomático menor",
+      "en": "Zygomaticus minor muscle",
+      "ids": [
+        "zygomaticus_minor_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mimica",
+      "origem": {
+        "t": "Arco zigomático."
+      },
+      "insercao": {
+        "t": "Ângulo da boca e lábio superior."
+      },
+      "nervos": [
+        "facial"
+      ],
+      "acao": "Eleva o lábio superior.",
+      "irrigacao": "Ramo labial superior da artéria facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            175
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "masseter",
+      "tipo": "musculo",
+      "nome": "Masseter",
+      "en": "Masseter",
+      "ids": [
+        "superficial_part_of_masseter",
+        "deep_part_of_masseter"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mastigacao",
+      "origem": {
+        "t": "Arco zigomático."
+      },
+      "insercao": {
+        "t": "Face lateral do ramo da mandíbula e processo coronoide."
+      },
+      "nervos": [
+        "mandibular"
+      ],
+      "acao": "Eleva e projeta a mandíbula; as fibras profundas a retraem.",
+      "irrigacao": "Artéria transversa da face e ramo massetérico das artérias maxilar e facial.",
+      "ver": [
+        "temporal-musculo",
+        "pterigoideo-medial",
+        "pterigoideo-lateral"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "temporal-musculo",
+      "tipo": "musculo",
+      "nome": "Temporal",
+      "en": "Temporalis muscle",
+      "ids": [
+        "temporalis_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mastigacao",
+      "origem": {
+        "t": "Assoalho da fossa temporal e fáscia temporal profunda."
+      },
+      "insercao": {
+        "t": "Processo coronoide e ramo da mandíbula."
+      },
+      "nervos": [
+        "mandibular"
+      ],
+      "acao": "Eleva a mandíbula; as fibras posteriores a retraem.",
+      "irrigacao": "Artérias temporal superficial e maxilar (temporais profundas anterior e posterior, temporal média).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            175
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "pterigoideo-medial",
+      "tipo": "musculo",
+      "nome": "Pterigóideo medial",
+      "en": "Medial pterygoid muscle",
+      "ids": [
+        "medial_pterygoid_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mastigacao",
+      "origem": {
+        "t": "Face medial da lâmina lateral do processo pterigoide, processo piramidal do palatino e túber da maxila."
+      },
+      "insercao": {
+        "t": "Face medial do ramo e do ângulo da mandíbula, abaixo do forame da mandíbula."
+      },
+      "nervos": [
+        "mandibular"
+      ],
+      "acao": "Dos dois lados, projeta e eleva a mandíbula; alternando os lados, faz o movimento lateral da mastigação.",
+      "irrigacao": "Artérias facial e maxilar.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "pterigoideo-lateral",
+      "tipo": "musculo",
+      "nome": "Pterigóideo lateral",
+      "en": "Lateral pterygoid",
+      "ids": [
+        "superior_head_of_lateral_pterygoid_muscle",
+        "inferior_head_of_lateral_pterygoid_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "mastigacao",
+      "origem": {
+        "t": "Cabeça superior: face infratemporal da asa maior do esfenoide. Cabeça inferior: lâmina lateral do processo pterigoide."
+      },
+      "insercao": {
+        "t": "Fóvea pterigóidea do colo da mandíbula, cápsula e disco da articulação temporomandibular."
+      },
+      "nervos": [
+        "mandibular"
+      ],
+      "acao": "Dos dois lados, projeta a mandíbula (abre a boca levando o côndilo para a frente); alternando, faz a trituração lateral.",
+      "irrigacao": "Ramos musculares da artéria maxilar.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "anel-tendineo-comum",
+      "tipo": "musculo",
+      "nome": "Anel tendíneo comum (de Zinn)",
+      "en": "Common tendinous ring",
+      "ids": [
+        "common_tendinous_ring"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "olho",
+      "relacoes": [
+        "Anel fibroso no ápice da órbita, em volta do canal óptico e de parte da fissura orbital superior, de onde partem os quatro músculos retos do olho.",
+        "Por dentro dele passam o nervo óptico, a artéria oftálmica, o oculomotor, o nasociliar e o abducente."
+      ],
+      "ver": [
+        "reto-superior",
+        "reto-inferior",
+        "reto-medial",
+        "reto-lateral"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            140,
+            171,
+            172,
+            175
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "reto-superior",
+      "tipo": "musculo",
+      "nome": "Reto superior do olho",
+      "en": "Superior rectus muscle",
+      "ids": [
+        "superior_rectus_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "olho",
+      "origem": {
+        "t": "Anel tendíneo comum."
+      },
+      "insercao": {
+        "t": "Face superior do bulbo do olho, atrás da junção corneoescleral."
+      },
+      "nervos": [
+        "oculomotor"
+      ],
+      "acao": "Eleva, aduz e roda medialmente o olho.",
+      "irrigacao": "Artéria oftálmica.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            175
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "reto-inferior",
+      "tipo": "musculo",
+      "nome": "Reto inferior do olho",
+      "en": "Inferior rectus muscle",
+      "ids": [
+        "inferior_rectus_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "olho",
+      "origem": {
+        "t": "Anel tendíneo comum."
+      },
+      "insercao": {
+        "t": "Face inferior do bulbo do olho, atrás da junção corneoescleral."
+      },
+      "nervos": [
+        "oculomotor"
+      ],
+      "acao": "Abaixa, aduz e roda lateralmente o olho.",
+      "irrigacao": "Artéria oftálmica.",
+      "clinica": "O assoalho e a parede medial da órbita são finos: um golpe no olho pode causar fratura \"blow-out\" do assoalho, com sangramento na órbita e herniação do conteúdo orbitário para o seio maxilar.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171,
+            614
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "reto-medial",
+      "tipo": "musculo",
+      "nome": "Reto medial do olho",
+      "en": "Medial rectus muscle",
+      "ids": [
+        "medial_rectus_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "olho",
+      "origem": {
+        "t": "Anel tendíneo comum."
+      },
+      "insercao": {
+        "t": "Face medial do bulbo do olho, atrás da junção corneoescleral."
+      },
+      "nervos": [
+        "oculomotor"
+      ],
+      "acao": "Aduz o olho.",
+      "irrigacao": "Artéria oftálmica.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "reto-lateral",
+      "tipo": "musculo",
+      "nome": "Reto lateral do olho",
+      "en": "Lateral rectus muscle",
+      "ids": [
+        "lateral_rectus_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "olho",
+      "origem": {
+        "t": "Anel tendíneo comum."
+      },
+      "insercao": {
+        "t": "Face lateral do bulbo do olho, atrás da junção corneoescleral."
+      },
+      "nervos": [
+        "abducente"
+      ],
+      "acao": "Abduz o olho.",
+      "irrigacao": "Artéria oftálmica.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "obliquo-superior-do-olho",
+      "tipo": "musculo",
+      "nome": "Oblíquo superior do olho",
+      "en": "Superior oblique muscle",
+      "ids": [
+        "superior_oblique_muscle",
+        "trochlea_of_superior_oblique_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "olho",
+      "origem": {
+        "t": "Corpo do esfenoide, acima do canal óptico e medial à origem do reto superior."
+      },
+      "insercao": {
+        "t": "Passa pela tróclea (polia fibrocartilaginosa na parede superomedial da órbita) e se fixa na esclera superior, entre os retos superior e lateral."
+      },
+      "nervos": [
+        "troclear"
+      ],
+      "acao": "Abaixa, abduz e roda medialmente o olho.",
+      "irrigacao": "Artéria oftálmica.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            174
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "obliquo-inferior-do-olho",
+      "tipo": "musculo",
+      "nome": "Oblíquo inferior do olho",
+      "en": "Inferior oblique muscle",
+      "ids": [
+        "inferior_oblique_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "olho",
+      "origem": {
+        "t": "Parte anterior do assoalho da órbita, lateral ao canal nasolacrimal."
+      },
+      "insercao": {
+        "t": "Esclera lateral, sob o reto lateral."
+      },
+      "nervos": [
+        "oculomotor"
+      ],
+      "acao": "Abduz, eleva e roda lateralmente o olho.",
+      "irrigacao": "Artéria oftálmica.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "levantador-da-palpebra-superior",
+      "tipo": "musculo",
+      "nome": "Levantador da pálpebra superior",
+      "en": "Levator palpebrae superioris",
+      "ids": [
+        "levator_palpebrae_superioris"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "olho",
+      "origem": {
+        "t": "Asa menor do esfenoide, à frente do canal óptico."
+      },
+      "insercao": {
+        "t": "Placa tarsal superior."
+      },
+      "nervos": [
+        "oculomotor"
+      ],
+      "acao": "Eleva a pálpebra superior.",
+      "irrigacao": "Artéria oftálmica.",
+      "clinica": "Na paralisia do oculomotor, a pálpebra cai (ptose).",
+      "ver": [
+        "tarsos-das-palpebras"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172,
+            612,
+            623
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tarsos-das-palpebras",
+      "tipo": "musculo",
+      "nome": "Tarsos das pálpebras",
+      "en": "Superior and inferior tarsus",
+      "ids": [
+        "superior_tarsus",
+        "inferior_tarsus"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "olho",
+      "relacoes": [
+        "Placas de tecido conjuntivo denso que dão firmeza às pálpebras superior e inferior.",
+        "No tarso superior se insere o levantador da pálpebra superior."
+      ],
+      "ver": [
+        "levantador-da-palpebra-superior"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172,
+            612
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "genioglosso",
+      "tipo": "musculo",
+      "nome": "Genioglosso",
+      "en": "Genioglossus muscle",
+      "ids": [
+        "genioglossus_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "lingua",
+      "origem": {
+        "t": "Espinha mentual da mandíbula."
+      },
+      "insercao": {
+        "t": "Dorso da língua e osso hioide."
+      },
+      "nervos": [
+        "hipoglosso"
+      ],
+      "acao": "Abaixa e projeta a língua para fora.",
+      "irrigacao": "Artérias sublingual e submentual.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "hioglosso",
+      "tipo": "musculo",
+      "nome": "Hioglosso",
+      "en": "Hyoglossus muscle",
+      "ids": [
+        "hyoglossus_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "lingua",
+      "origem": {
+        "t": "Corpo e corno maior do osso hioide."
+      },
+      "insercao": {
+        "t": "Face lateral e inferior da língua."
+      },
+      "nervos": [
+        "hipoglosso"
+      ],
+      "acao": "Abaixa e retrai a língua.",
+      "irrigacao": "Artérias sublingual e submentual.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "constritor-superior-da-faringe",
+      "tipo": "musculo",
+      "nome": "Constritor superior da faringe",
+      "en": "Superior pharyngeal constrictor",
+      "ids": [
+        "superior_pharyngeal_constrictor"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "faringe",
+      "origem": {
+        "t": "Hâmulo pterigóideo, rafe pterigomandibular e linha milo-hióidea da mandíbula."
+      },
+      "insercao": {
+        "t": "Rafe mediana da faringe."
+      },
+      "nervos": [
+        "vago"
+      ],
+      "acao": "Contrai a parede da faringe na deglutição.",
+      "irrigacao": "Artéria faríngea ascendente e ramos palatino ascendente e tonsilar da facial; ramos dorsais da lingual.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            175
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "constritor-medio-da-faringe",
+      "tipo": "musculo",
+      "nome": "Constritor médio da faringe",
+      "en": "Middle pharyngeal constrictor",
+      "ids": [
+        "middle_pharyngeal_constrictor"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "faringe",
+      "origem": {
+        "t": "Ligamento estilo-hióideo e cornos do osso hioide."
+      },
+      "insercao": {
+        "t": "Rafe mediana da faringe."
+      },
+      "nervos": [
+        "vago"
+      ],
+      "acao": "Contrai a parede da faringe na deglutição.",
+      "irrigacao": "Artéria faríngea ascendente; ramos da facial e da lingual.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "constritor-inferior-da-faringe",
+      "tipo": "musculo",
+      "nome": "Constritor inferior da faringe",
+      "en": "Inferior pharyngeal constrictor",
+      "ids": [
+        "inferior_pharyngeal_constrictor"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "faringe",
+      "origem": {
+        "t": "Linha oblíqua da cartilagem tireóidea e cartilagem cricóidea."
+      },
+      "insercao": {
+        "t": "Rafe mediana da faringe."
+      },
+      "nervos": [
+        "vago"
+      ],
+      "acao": "Contrai a parede da faringe na deglutição.",
+      "irrigacao": "Artéria faríngea ascendente e ramos da tireóidea superior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "palatofaringeo",
+      "tipo": "musculo",
+      "nome": "Palatofaríngeo",
+      "en": "Palatopharyngeus muscle",
+      "ids": [
+        "palatopharyngeus_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "faringe",
+      "origem": {
+        "t": "Palato duro e aponeurose palatina."
+      },
+      "insercao": {
+        "t": "Parede lateral da faringe."
+      },
+      "nervos": [
+        "vago"
+      ],
+      "acao": "Tensiona o palato mole e puxa a parede da faringe para cima, para a frente e para dentro na deglutição.",
+      "irrigacao": "Artérias palatina ascendente (da facial) e palatina descendente (da maxilar).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "estilofaringeo",
+      "tipo": "musculo",
+      "nome": "Estilofaríngeo",
+      "en": "Stylopharyngeus muscle",
+      "ids": [
+        "stylopharyngeus_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "faringe",
+      "origem": {
+        "t": "Face medial do processo estiloide."
+      },
+      "insercao": {
+        "t": "Parede da faringe."
+      },
+      "nervos": [
+        "glossofaringeo"
+      ],
+      "acao": "Eleva a faringe e a laringe ao engolir e falar.",
+      "irrigacao": "Artéria faríngea ascendente e ramos da facial e da lingual.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            174
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "cricotireoideo",
+      "tipo": "musculo",
+      "nome": "Cricotireóideo",
+      "en": "Cricothyroid",
+      "ids": [
+        "straight_part_of_cricothyroid_muscle",
+        "oblique_part_of_cricothyroid_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "laringe",
+      "origem": {
+        "t": "Face anterior da cartilagem cricóidea."
+      },
+      "insercao": {
+        "t": "Borda inferior e corno inferior da cartilagem tireóidea."
+      },
+      "nervos": [
+        "vago"
+      ],
+      "acao": "Alonga e tensiona os ligamentos vocais (voz aguda). É o único músculo da laringe inervado pelo ramo externo do laríngeo superior.",
+      "irrigacao": "Artérias tireóideas superior e inferior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            145,
+            170
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "cricoaritenoideo-posterior",
+      "tipo": "musculo",
+      "nome": "Cricoaritenóideo posterior",
+      "en": "Posterior crico-arytenoid muscle",
+      "ids": [
+        "posterior_crico_arytenoid_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "laringe",
+      "origem": {
+        "t": "Face posterior da lâmina da cartilagem cricóidea."
+      },
+      "insercao": {
+        "t": "Processo muscular da cartilagem aritenóidea."
+      },
+      "nervos": [
+        "vago"
+      ],
+      "acao": "Abduz as pregas vocais: é o único que abre a glote (via laríngeo recorrente).",
+      "irrigacao": "Artérias tireóideas superior e inferior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "cricoaritenoideo-lateral",
+      "tipo": "musculo",
+      "nome": "Cricoaritenóideo lateral",
+      "en": "Lateral crico-arytenoid muscle",
+      "ids": [
+        "lateral_crico_arytenoid_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "laringe",
+      "origem": {
+        "t": "Arco da cartilagem cricóidea."
+      },
+      "insercao": {
+        "t": "Processo muscular da cartilagem aritenóidea."
+      },
+      "nervos": [
+        "vago"
+      ],
+      "acao": "Aduz as pregas vocais (via laríngeo recorrente).",
+      "irrigacao": "Artérias tireóideas superior e inferior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tireoaritenoideo",
+      "tipo": "musculo",
+      "nome": "Tireoaritenóideo",
+      "en": "Thyro-arytenoid",
+      "ids": [
+        "external_part_of_thyro_arytenoid_muscle",
+        "thyro_epiglottic_part_of_thyro_arytenoid_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "laringe",
+      "origem": {
+        "t": "Face posterior da cartilagem tireóidea."
+      },
+      "insercao": {
+        "t": "Processo muscular da cartilagem aritenóidea (a parte tireoepiglótica segue até a epiglote)."
+      },
+      "nervos": [
+        "vago"
+      ],
+      "acao": "Encurta e relaxa as pregas vocais; funciona como esfíncter do vestíbulo da laringe.",
+      "irrigacao": "Artérias tireóideas superior e inferior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            175
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "aritenoideos",
+      "tipo": "musculo",
+      "nome": "Aritenóideos transverso e oblíquo",
+      "en": "Transverse and oblique arytenoid",
+      "ids": [
+        "transverse_arytenoid_muscle",
+        "ary_epiglottic_part_of_oblique_arytenoid_muscle"
+      ],
+      "regiao": "cabeca-pescoco",
+      "grupo": "laringe",
+      "origem": {
+        "t": "Cartilagem aritenóidea."
+      },
+      "insercao": {
+        "t": "Cartilagem aritenóidea do outro lado (a parte ariepiglótica continua até a epiglote)."
+      },
+      "nervos": [
+        "vago"
+      ],
+      "acao": "Fecham a parte intercartilagínea da rima da glote.",
+      "irrigacao": "Artérias tireóideas superior e inferior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            175
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "longo-da-cabeca",
+      "tipo": "musculo",
+      "nome": "Longo da cabeça",
+      "en": "Longus capitis muscle",
+      "ids": [
+        "longus_capitis_muscle"
+      ],
+      "regiao": "coluna",
+      "grupo": "pre-vertebral",
+      "origem": {
+        "t": "Tubérculos anteriores dos processos transversos de C3 a C6.",
+        "o": [
+          "vertebra_c3",
+          "vertebra_c4",
+          "vertebra_c5",
+          "vertebra_c6"
+        ]
+      },
+      "insercao": {
+        "t": "Face inferior da parte basilar do occipital.",
+        "o": [
+          "occipital_bone"
+        ]
+      },
+      "inervacao": "Ramos ventrais dos nervos cervicais (C1–C4).",
+      "acao": "Flete a cabeça e o pescoço e ajuda a rodá-los.",
+      "irrigacao": "Ramo cervical ascendente da tireóidea inferior, faríngea ascendente e ramos da vertebral.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "longo-do-pescoco",
+      "tipo": "musculo",
+      "nome": "Longo do pescoço",
+      "en": "Longus colli muscle",
+      "ids": [
+        "longus_colli_muscle"
+      ],
+      "regiao": "coluna",
+      "grupo": "pre-vertebral",
+      "origem": {
+        "t": "Parte vertical: corpos de C5 a T3. Parte oblíqua inferior: corpos de T1 a T3. Parte oblíqua superior: tubérculos anteriores de C3 a C5."
+      },
+      "insercao": {
+        "t": "Parte vertical: corpos de C2 a C4. Oblíqua inferior: tubérculos anteriores de C5 e C6. Oblíqua superior: tubérculo do arco anterior do atlas.",
+        "o": [
+          "atlas_c1",
+          "axis_c2"
+        ]
+      },
+      "inervacao": "Ramos ventrais dos nervos cervicais (C2–C8).",
+      "acao": "Dos dois lados, flete a coluna cervical; de um lado, inclina-a para o mesmo lado.",
+      "irrigacao": "Ramos da faríngea ascendente, da cervical ascendente e da vertebral.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            172
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "reto-anterior-da-cabeca",
+      "tipo": "musculo",
+      "nome": "Reto anterior da cabeça",
+      "en": "Rectus capitis anterior",
+      "ids": [
+        "rectus_anterior_capitis_muscle"
+      ],
+      "regiao": "coluna",
+      "grupo": "pre-vertebral",
+      "origem": {
+        "t": "Massa lateral do atlas.",
+        "o": [
+          "atlas_c1"
+        ]
+      },
+      "insercao": {
+        "t": "Base do occipital, à frente do forame magno.",
+        "o": [
+          "occipital_bone"
+        ]
+      },
+      "inervacao": "Ramos ventrais de C1 e C2.",
+      "acao": "Flete a cabeça.",
+      "irrigacao": "Ramos da vertebral e faríngea ascendente.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "reto-lateral-da-cabeca",
+      "tipo": "musculo",
+      "nome": "Reto lateral da cabeça",
+      "en": "Rectus capitis lateralis",
+      "ids": [
+        "rectus_lateralis_capitis_muscle"
+      ],
+      "regiao": "coluna",
+      "grupo": "pre-vertebral",
+      "origem": {
+        "t": "Face superior do processo transverso do atlas.",
+        "o": [
+          "atlas_c1"
+        ]
+      },
+      "insercao": {
+        "t": "Face inferior do processo jugular do occipital.",
+        "o": [
+          "occipital_bone"
+        ]
+      },
+      "inervacao": "Ramos ventrais de C1 e C2.",
+      "acao": "Inclina a cabeça para o mesmo lado.",
+      "irrigacao": "Ramos da vertebral, occipital e faríngea ascendente.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173
+          ]
+        }
+      ],
+      "status": "verificado"
+    }
+  ]
+}

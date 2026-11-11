@@ -58,6 +58,9 @@ export function FichaAnatomica({ registro: r, indice, ativas, semGeometria, cont
             <span className="fa-chips">{nervos.map((n) => <Chip key={n.chave} r={n} aoIr={aoIr} extra={raizCurta(n.raizes)} />)}</span>
           </Linha>
         )}
+        {!nervos.length && r.inervacao && <Linha cor={CORES_RELACAO.nervo} rotulo="Inervação">{r.inervacao}</Linha>}
+        {r.localizacao && <Linha rotulo="Onde fica">{r.localizacao}</Linha>}
+        {r.partes && <Linha rotulo="Partes">{r.partes}</Linha>}
         {r.acao && <Linha rotulo="Ação">{r.acao}</Linha>}
         {r.articulacao && <Linha rotulo="Articulação">{r.articulacao}</Linha>}
         {r.funcao && <Linha rotulo="Função">{r.funcao}</Linha>}
@@ -65,12 +68,15 @@ export function FichaAnatomica({ registro: r, indice, ativas, semGeometria, cont
         {r.raizes && r.tipo === 'nervo' && <Linha rotulo="Raízes">{r.raizes}</Linha>}
         {r.sensitivo && <Linha rotulo="Sensitivo">{r.sensitivo}</Linha>}
         {r.ramos && <Linha rotulo="Ramos">{r.ramos}</Linha>}
-        {r.irriga && <Linha rotulo="Irriga">{r.irriga}</Linha>}
+        {r.irriga && <Linha rotulo={r.tipo === 'arteria' ? 'Irriga' : 'Irrigação'}>{r.irriga}</Linha>}
+        {r.irrigacao && <Linha rotulo="Irrigação">{r.irrigacao}</Linha>}
+        {r.drenagem && <Linha rotulo={r.tipo === 'veia' ? 'Drena' : 'Drenagem'}>{r.drenagem}</Linha>}
+        {r.inervacao && r.tipo !== 'musculo' && <Linha rotulo="Inervação">{r.inervacao}</Linha>}
       </dl>
 
       {r.clinica && (
         <section className="fa-clinica">
-          <h3><Icone nome="osso" tamanho={15} /> Importância ortopédica</h3>
+          <h3><Icone nome="osso" tamanho={15} /> {ORTOPEDICAS.has(r.regiao) ? 'Importância ortopédica' : 'Importância clínica'}</h3>
           <p>{r.clinica}</p>
         </section>
       )}
@@ -145,7 +151,8 @@ function Linha({ rotulo, cor, children }: { rotulo: string; cor?: string; childr
   )
 }
 
-const TIPO: Record<string, string> = { musculo: 'músculo', nervo: 'nervo', ligamento: 'ligamento', arteria: 'artéria' }
+const TIPO: Record<string, string> = { musculo: 'músculo', nervo: 'nervo', ligamento: 'ligamento', arteria: 'artéria', veia: 'veia', orgao: 'órgão', encefalo: 'encéfalo', linfatico: 'linfático', dente: 'dente' }
+const ORTOPEDICAS = new Set(['coluna', 'ombro', 'braco', 'cotovelo', 'antebraco', 'punho-mao', 'pelve-quadril', 'coxa', 'joelho', 'perna', 'tornozelo-pe'])
 function Chip({ r, aoIr, extra }: { r: RegistroAnatomico; aoIr: (c: string) => void; extra?: string }) {
   return (
     <button type="button" className={`fa-chip fa-chip--${r.tipo}`} onClick={() => aoIr(r.chave)} title={`Ir até: ${r.nome} (${TIPO[r.tipo] ?? r.tipo})`} disabled={!r.ids.length}>

@@ -1,0 +1,1441 @@
+{
+  "lote": "50-orgaos",
+  "fonte": "netter-6",
+  "paginas_lidas": [
+    125,
+    129,
+    143,
+    589,
+    590,
+    599,
+    602,
+    604,
+    606,
+    611,
+    638,
+    639,
+    641,
+    642,
+    643,
+    645,
+    656,
+    657,
+    658,
+    659,
+    660,
+    661,
+    665,
+    666,
+    667,
+    672,
+    673
+  ],
+  "registros": [
+    {
+      "chave": "pulmao-direito",
+      "tipo": "orgao",
+      "nome": "Pulmão direito",
+      "en": "Right lung",
+      "ids": [
+        "superior_lobe_of_right_lung",
+        "middle_lobe_of_right_lung",
+        "inferior_lobe_of_right_lung"
+      ],
+      "regiao": "torax",
+      "localizacao": "Na cavidade pleural direita, ligado ao mediastino pela raiz (hilo).",
+      "partes": "Três lobos (superior, médio e inferior), separados pelas fissuras oblíqua e horizontal. A horizontal vai da fissura oblíqua, na linha axilar média, ao longo da 4ª costela até a cartilagem.",
+      "funcao": "Troca gasosa. É maior que o esquerdo.",
+      "ver": [
+        "pulmao-esquerdo",
+        "bronquios-principais",
+        "pleura"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            639
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "pulmao-esquerdo",
+      "tipo": "orgao",
+      "nome": "Pulmão esquerdo",
+      "en": "Left lung",
+      "ids": [
+        "superior_lobe_of_left_lung",
+        "inferior_lobe_of_left_lung"
+      ],
+      "regiao": "torax",
+      "localizacao": "Na cavidade pleural esquerda; a margem anterior tem a incisura cardíaca, que deixa no lobo superior uma lingueta, a língula.",
+      "partes": "Dois lobos (superior e inferior), separados pela fissura oblíqua, que vai de T2 atrás à 6ª cartilagem costal na frente.",
+      "funcao": "Troca gasosa.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            639
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "traqueia",
+      "tipo": "orgao",
+      "nome": "Traqueia",
+      "en": "Trachea",
+      "ids": [
+        "trachea"
+      ],
+      "regiao": "torax",
+      "localizacao": "Do pescoço ao tórax; divide-se nos dois brônquios principais na altura do disco T4–T5 (ângulo do esterno). A carina é a crista entre as duas aberturas.",
+      "clinica": "Na traqueostomia, a abertura é feita entre o 1º e o 2º anel, ou do 2º ao 4º, depois de afastar os músculos infra-hióideos e o istmo da tireoide.",
+      "ver": [
+        "bronquios-principais"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            588,
+            639
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bronquios-principais",
+      "tipo": "orgao",
+      "nome": "Brônquios principais",
+      "en": "Main bronchi",
+      "ids": [
+        "right_main_bronchus",
+        "left_main_bronchus",
+        "intermediate_bronchus"
+      ],
+      "regiao": "torax",
+      "partes": "O brônquio principal direito se divide em lobar superior e brônquio intermédio (que dá o lobar médio e o inferior) antes de entrar no pulmão; o esquerdo dá o lobar superior e o inferior.",
+      "ver": [
+        "bronquios-lobares",
+        "traqueia"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            639,
+            645
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bronquios-lobares",
+      "tipo": "orgao",
+      "nome": "Brônquios lobares",
+      "en": "Lobar bronchi",
+      "ids": [
+        "right_superior_lobar_bronchus",
+        "middle_lobar_bronchus",
+        "right_inferior_lobar_bronchus",
+        "left_superior_lobar_bronchus",
+        "left_inferior_lobar_bronchus"
+      ],
+      "regiao": "torax",
+      "partes": "Três à direita (superior, médio e inferior) e dois à esquerda (superior e inferior). Cada lobar se ramifica nos segmentares.",
+      "ver": [
+        "bronquios-segmentares"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            639
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bronquios-segmentares",
+      "tipo": "orgao",
+      "nome": "Brônquios segmentares",
+      "en": "Segmental bronchi",
+      "ids": [
+        "apical_segmental_bronchus_of_right_lung_bi",
+        "posterior_segmental_bronchus_of_right_lung_bii",
+        "anterior_segmental_bronchus_of_right_lung_biii",
+        "lateral_segmental_bronchus_of_right_lung_biv",
+        "medial_segmental_bronchus_of_right_lung_bv",
+        "superior_segmental_bronchus_of_right_lung_bvi",
+        "medial_basal_segmental_bronchus_of_right_lung_bvii",
+        "anterior_basal_segmental_bronchus_of_right_lung_bviii",
+        "lateral_basal_segmental_bronchus_of_right_lung_bix",
+        "posterior_basal_segmental_bronchus_of_right_lung_bx",
+        "apicoposterior_segmental_bronchus_of_left_lung_bi_bii",
+        "anterior_segmental_bronchus_of_left_lung_biii",
+        "superior_lingular_segmental_bronchus_of_left_lung_biv",
+        "inferior_lingular_segmental_bronchus_of_left_lung_bv",
+        "superior_segmental_bronchus_of_left_lung_bvi",
+        "anteromedial_basal_segmental_bronchus_of_left_lung",
+        "medial_basal_segmental_bronchus_of_left_lung_bvii",
+        "anterior_basal_segmental_bronchus_of_left_lung_bviii",
+        "lateral_basal_segmental_bronchus_of_left_lung_bix",
+        "posterior_basal_segmental_bronchus_of_left_lung_bx"
+      ],
+      "regiao": "torax",
+      "partes": "Cada brônquio segmentar ventila um segmento broncopulmonar. Direito: apical, posterior e anterior (lobo superior); lateral e medial (médio); superior e basais medial, anterior, lateral e posterior (inferior). Esquerdo: apicoposterior, anterior e as duas lingulares (superior); superior e basais (inferior).",
+      "funcao": "O segmento broncopulmonar é a menor unidade do pulmão com brônquio próprio, o que permite retirá-lo em separado.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            639,
+            641
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "pleura",
+      "tipo": "orgao",
+      "nome": "Pleura",
+      "en": "Pleura",
+      "ids": [
+        "pleura"
+      ],
+      "regiao": "torax",
+      "partes": "Visceral (cobre o pulmão e não se separa dele) e parietal (forra a cavidade), contínuas no hilo. A parietal tem as partes costal, mediastinal, diafragmática e cervical.",
+      "inervacao": "A pleura parietal é sensível (frênico e intercostais); a visceral não tem inervação sensitiva.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            638,
+            639,
+            641
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "esofago",
+      "tipo": "orgao",
+      "nome": "Esôfago",
+      "en": "Oesophagus",
+      "ids": [
+        "oesophagus"
+      ],
+      "regiao": "torax",
+      "localizacao": "Tubo fibromuscular da faringe ao estômago; atravessa o pilar direito do diafragma em T10 e segue 1 a 2 cm abaixo dele.",
+      "partes": "Terço superior com músculo esquelético; dois terços inferiores com músculo liso.",
+      "inervacao": "Plexo esofágico, com fibras dos dois vagos e simpáticas.",
+      "drenagem": "Linfonodos cervicais profundos inferiores e mediastinais posteriores.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            645
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "atrio-direito",
+      "tipo": "orgao",
+      "nome": "Átrio direito",
+      "en": "Right atrium",
+      "ids": [
+        "right_atrium"
+      ],
+      "regiao": "torax",
+      "partes": "Parede posterior lisa (seio das veias cavas), com as aberturas da veia cava superior, da inferior e do seio coronário; parede anterior com músculos pectíneos; separadas pela crista terminal. No septo interatrial fica a fossa oval, resto do forame oval fetal.",
+      "funcao": "Recebe o sangue venoso do corpo e do coração. Abriga o nó sinoatrial (marca-passo, na ponta superior do sulco terminal) e o nó atrioventricular.",
+      "ver": [
+        "ventriculo-direito",
+        "valva-tricuspide"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642,
+            643
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ventriculo-direito",
+      "tipo": "orgao",
+      "nome": "Ventrículo direito",
+      "en": "Right ventricle",
+      "ids": [
+        "right_ventricle"
+      ],
+      "regiao": "torax",
+      "partes": "Trabéculas cárneas salientes, trabécula septomarginal (banda moderadora, com fibras de Purkinje do ramo direito) e via de saída lisa (cone arterial) até a valva pulmonar.",
+      "localizacao": "Forma quase toda a face anterior (esternocostal) do coração e a maior parte da borda inferior.",
+      "ver": [
+        "valva-tricuspide",
+        "musculos-papilares",
+        "valva-pulmonar"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "atrio-esquerdo",
+      "tipo": "orgao",
+      "nome": "Átrio esquerdo",
+      "en": "Left atrium",
+      "ids": [
+        "left_atrium"
+      ],
+      "regiao": "torax",
+      "localizacao": "Forma a base do coração (face posterior).",
+      "funcao": "Recebe as quatro veias pulmonares e passa o sangue ao ventrículo esquerdo pelo orifício atrioventricular esquerdo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            641,
+            642
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ventriculo-esquerdo",
+      "tipo": "orgao",
+      "nome": "Ventrículo esquerdo",
+      "en": "Left ventricle",
+      "ids": [
+        "left_ventricle"
+      ],
+      "regiao": "torax",
+      "partes": "Parede quase duas vezes mais grossa que a do direito; cavidade cônica cujo ápice é o ápice do coração (5º espaço intercostal esquerdo, na linha hemiclavicular).",
+      "funcao": "Bombeia o sangue para todo o corpo pela aorta.",
+      "ver": [
+        "valva-mitral",
+        "valva-aortica"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            641,
+            642
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "valva-tricuspide",
+      "tipo": "orgao",
+      "nome": "Valva tricúspide (atrioventricular direita)",
+      "en": "Right atrioventricular valve",
+      "ids": [
+        "inferior_leaflet_of_right_atrioventricular_valve",
+        "septal_leaflet_of_right_atrioventricular_valve"
+      ],
+      "regiao": "torax",
+      "partes": "Três válvulas presas ao anel fibroso; a borda livre de cada uma vai, pelas cordas tendíneas, a dois dos três músculos papilares.",
+      "funcao": "Impede o refluxo do ventrículo direito para o átrio.",
+      "ver": [
+        "musculos-papilares"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "valva-mitral",
+      "tipo": "orgao",
+      "nome": "Valva mitral (atrioventricular esquerda)",
+      "en": "Left atrioventricular valve",
+      "ids": [
+        "posterior_leaflet_of_left_atrioventricular_valve"
+      ],
+      "regiao": "torax",
+      "partes": "Duas válvulas, presas pelas cordas tendíneas aos músculos papilares anterior e posterior do ventrículo esquerdo.",
+      "funcao": "Impede o refluxo do ventrículo esquerdo para o átrio esquerdo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "musculos-papilares",
+      "tipo": "orgao",
+      "nome": "Músculos papilares",
+      "en": "Papillary muscles",
+      "ids": [
+        "anterior_papillary_muscle_of_right_ventricle",
+        "inferior_papillary_muscle_of_right_ventricle",
+        "septal_papillary_muscle_of_right_ventricle",
+        "inferior_papillary_muscle_of_left_ventricle"
+      ],
+      "regiao": "torax",
+      "partes": "Três no ventrículo direito (anterior, posterior/inferior e septal) e dois no esquerdo (anterior e posterior).",
+      "funcao": "Contraem antes do ventrículo, esticam as cordas tendíneas e aproximam as válvulas, impedindo o refluxo para o átrio. O papilar anterior direito recebe as fibras de Purkinje pela banda moderadora.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642,
+            643
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "valva-aortica",
+      "tipo": "orgao",
+      "nome": "Valva aórtica",
+      "en": "Aortic valve",
+      "ids": [
+        "right_coronary_leaflet",
+        "left_coronary_leaflet",
+        "non_coronary_leaflet"
+      ],
+      "regiao": "torax",
+      "partes": "Três válvulas semilunares (coronária direita, coronária esquerda e não coronária) presas ao anel fibroso.",
+      "funcao": "Abrem-se como bolsos que aparam o sangue que volta da aorta na diástole. Logo acima ficam os seios aórticos: do direito nasce a coronária direita; do esquerdo, a esquerda.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "valva-pulmonar",
+      "tipo": "orgao",
+      "nome": "Valva pulmonar",
+      "en": "Pulmonary valve",
+      "ids": [
+        "anterior_semilunar_leaflet_of_pulmonary_valve",
+        "left_semilunar_leaflet_of_pulmonary_valve",
+        "right_semilunar_leaflet_of_pulmonary_valve"
+      ],
+      "regiao": "torax",
+      "partes": "Três válvulas semilunares, na saída do ventrículo direito para o tronco pulmonar.",
+      "funcao": "Impedem o refluxo do tronco pulmonar para o ventrículo na diástole.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "veias-do-coracao",
+      "tipo": "orgao",
+      "nome": "Veia posterior do ventrículo esquerdo",
+      "en": "Inferior vein of left ventricle",
+      "ids": [
+        "inferior_vein_of_left_ventricle",
+        "inferior_vein_of_left_ventricle_posterior"
+      ],
+      "regiao": "torax",
+      "drenagem": "Drena a face diafragmática do ventrículo esquerdo para o seio coronário, que corre no sulco coronário posterior e desemboca no átrio direito.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            643
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "estomago",
+      "tipo": "orgao",
+      "nome": "Estômago",
+      "en": "Stomach",
+      "ids": [
+        "stomach",
+        "mucosa_of_stomach"
+      ],
+      "regiao": "abdome",
+      "partes": "Cárdia, fundo, corpo e parte pilórica (antro, canal e piloro, com o esfíncter pilórico). Curvaturas maior e menor; mucosa em pregas (rugas).",
+      "funcao": "Digestão enzimática: a secreção ácida transforma o alimento em quimo.",
+      "irriga": "Gástrica esquerda (do tronco celíaco), gástrica direita (da hepática comum), gastromentais direita e esquerda e gástricas curtas (da esplênica).",
+      "drenagem": "Veias para a porta (gástricas) e para a esplênica e a mesentérica superior; linfa para os linfonodos gástricos, gastromentais, pancreaticoesplênicos e pilóricos.",
+      "inervacao": "Parassimpático pelos troncos vagais (aumenta o peristaltismo, relaxa o piloro); simpático de T6–T9 pelo esplâncnico maior e plexo celíaco.",
+      "clinica": "Hérnia de hiato: parte do estômago sobe pelo hiato esofágico (deslizamento, mais comum, ou rolamento). Estenose hipertrófica do piloro: vômitos em jato no lactente de 3 a 8 semanas.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            656,
+            657,
+            659
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "duodeno",
+      "tipo": "orgao",
+      "nome": "Duodeno",
+      "en": "Duodenum",
+      "ids": [
+        "duodenum"
+      ],
+      "regiao": "abdome",
+      "partes": "Quatro partes em C em volta da cabeça do pâncreas: superior (L1), descendente (com a papila maior), horizontal (cruza a cava, a aorta e L3, sob os vasos mesentéricos superiores) e ascendente (até a flexura duodenojejunal, presa pelo ligamento de Treitz). Da 2ª à 4ª parte é retroperitoneal.",
+      "irriga": "Pancreaticoduodenais superiores (da gastroduodenal) e inferiores (da mesentérica superior): anastomose entre o tronco celíaco e a mesentérica superior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            657
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "jejuno",
+      "tipo": "orgao",
+      "nome": "Jejuno e íleo",
+      "en": "Jejunum",
+      "ids": [
+        "jejunum"
+      ],
+      "regiao": "abdome",
+      "partes": "Juntos medem cerca de 6 m, presos pelo mesentério. O jejuno (dois quintos, no quadrante superior esquerdo) tem parede grossa e muito vascularizada; o íleo (três quintos, no quadrante inferior direito), parede fina.",
+      "irriga": "Ramos da mesentérica superior que formam arcadas e vasos retos (arcadas duplas no íleo).",
+      "drenagem": "Veia mesentérica superior; linfa pelos lácteos para os linfonodos mesentéricos e a cisterna do quilo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            657,
+            658
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "colo-ascendente",
+      "tipo": "orgao",
+      "nome": "Colo ascendente",
+      "en": "Ascending colon",
+      "ids": [
+        "ascending_colon"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Lado direito da parede posterior do abdome, do ceco à flexura hepática; secundariamente retroperitoneal.",
+      "irriga": "Artérias ileocólica e cólica direita (da mesentérica superior).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            658
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "colo-transverso",
+      "tipo": "orgao",
+      "nome": "Colo transverso",
+      "en": "Transverse colon",
+      "ids": [
+        "transverse_colon"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Da flexura hepática à esplênica; a parte maior e mais móvel do colo, presa pelo mesocolo transverso.",
+      "irriga": "Cólica média (da mesentérica superior), com contribuição das cólicas direita e esquerda.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            658
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "colo-descendente",
+      "tipo": "orgao",
+      "nome": "Colo descendente",
+      "en": "Descending colon",
+      "ids": [
+        "descending_colon"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Lado esquerdo da parede posterior, da flexura esplênica ao sigmoide; secundariamente retroperitoneal.",
+      "irriga": "Cólica esquerda e sigmóidea superior (da mesentérica inferior).",
+      "inervacao": "Simpático do tronco lombar e plexo hipogástrico superior; parassimpático dos esplâncnicos pélvicos.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            658
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "colo-sigmoide",
+      "tipo": "orgao",
+      "nome": "Colo sigmoide",
+      "en": "Sigmoid colon",
+      "ids": [
+        "sigmoid_colon"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Alça em S que liga o colo descendente ao reto, com mesentério longo (mesocolo sigmoide) de raiz em V.",
+      "irriga": "Ramos da mesentérica inferior.",
+      "clinica": "O mesentério longo favorece o volvo do sigmoide.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            659
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tenias-do-colo",
+      "tipo": "orgao",
+      "nome": "Tênias do colo",
+      "en": "Taeniae coli",
+      "ids": [
+        "free_taenia",
+        "mesocolic_taenia",
+        "omental_taenia"
+      ],
+      "regiao": "abdome",
+      "partes": "Três faixas longitudinais de músculo (livre, mesocólica e omental) que franzem o colo em saculações (haustros). Não existem no apêndice nem no reto.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            658
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "apendice-vermiforme",
+      "tipo": "orgao",
+      "nome": "Apêndice vermiforme",
+      "en": "Vermiform appendix",
+      "ids": [
+        "vermiform_appendix",
+        "meso_appendix"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Sai da face posteromedial do ceco, em geral atrás dele (retrocecal), com um mesentério curto, o mesoapêndice.",
+      "irriga": "Artéria apendicular, ramo da ileocólica.",
+      "clinica": "A dor da apendicite começa periumbilical (T10–T11) e depois vai para a fossa ilíaca direita.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            658,
+            665
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "omentos-e-mesocolo",
+      "tipo": "orgao",
+      "nome": "Omentos e mesocolo",
+      "en": "Omenta and mesocolon",
+      "ids": [
+        "greater_omentum",
+        "lesser_omentum",
+        "mesocolon"
+      ],
+      "regiao": "abdome",
+      "partes": "Omento menor: do estômago e do duodeno ao fígado; sua borda livre (ligamento hepatoduodenal) leva a tríade portal. Omento maior: desce da curvatura maior e se dobra sobre o colo transverso. Mesocolo: prende o colo à parede posterior.",
+      "funcao": "O omento maior se move e envolve órgãos inflamados, localizando a inflamação ('policial do abdome').",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            656,
+            657
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "figado",
+      "tipo": "orgao",
+      "nome": "Fígado",
+      "en": "Liver",
+      "ids": [
+        "liver"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Quadrante superior direito, sob o diafragma; maior glândula do corpo (cerca de 1,5 kg).",
+      "partes": "Lobos direito, esquerdo, caudado e quadrado (o 'fígado esquerdo' funcional inclui o caudado e o quadrado). No hilo (porta hepática) entram e saem a veia porta, a artéria hepática, os ductos hepáticos, nervos e linfáticos.",
+      "irriga": "Veia porta (cerca de 70%) e artéria hepática (cerca de 30%).",
+      "drenagem": "Três veias hepáticas direto para a cava inferior; linfa para os linfonodos hepáticos e celíacos.",
+      "ver": [
+        "segmentos-hepaticos",
+        "vesicula-biliar"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            659,
+            660
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "segmentos-hepaticos",
+      "tipo": "orgao",
+      "nome": "Segmentos do fígado (I a VIII)",
+      "en": "Segments of liver",
+      "ids": [
+        "posterior_segment_of_liver_i",
+        "left_posterior_lateral_segment_of_liver_ii",
+        "left_anterior_lateral_segment_of_liver_iii",
+        "left_medial_segment_of_liver_iv",
+        "anterior_medial_segment_of_liver_v",
+        "anterior_lateral_segment_of_liver_vi",
+        "posterior_lateral_segment_of_liver_vii",
+        "posterior_medial_segment_of_liver_viii"
+      ],
+      "regiao": "abdome",
+      "partes": "Divisão funcional pela distribuição da veia porta, da artéria hepática e dos ductos: I (caudado), II e III (lateral esquerdo), IV (medial esquerdo), V a VIII (fígado direito).",
+      "funcao": "Cada segmento tem pedículo próprio, o que permite ressecções segmentares.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            660
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "vesicula-biliar",
+      "tipo": "orgao",
+      "nome": "Vesícula biliar",
+      "en": "Gallbladder",
+      "ids": [
+        "gallbladder"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Na fossa entre os lobos direito e esquerdo do fígado; o fundo projeta-se na ponta da 9ª cartilagem costal.",
+      "funcao": "Armazena a bile. O ducto cístico se junta ao hepático comum para formar o colédoco.",
+      "irriga": "Artéria cística, ramo da hepática direita.",
+      "inervacao": "Simpático do plexo celíaco, parassimpático do vago e sensibilidade pelo frênico direito.",
+      "clinica": "Cálculo que obstrui o ducto cístico dá cólica biliar no quadrante superior direito, sobretudo após refeição gordurosa; se descer, pode causar icterícia ou pancreatite.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            660,
+            661
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "coledoco",
+      "tipo": "orgao",
+      "nome": "Ducto colédoco",
+      "en": "Bile duct",
+      "ids": [
+        "bile_duct"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Formado pelo cístico e o hepático comum; corre no ligamento hepatoduodenal, atravessa a cabeça do pâncreas e se une ao ducto pancreático na ampola hepatopancreática (de Vater), que abre na papila duodenal maior.",
+      "ver": [
+        "ductos-pancreaticos",
+        "vesicula-biliar"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            656,
+            660,
+            661
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "pancreas",
+      "tipo": "orgao",
+      "nome": "Pâncreas",
+      "en": "Pancreas",
+      "ids": [
+        "pancreas"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Retroperitoneal, atravessado na parede posterior: a cabeça no C do duodeno, o colo sobre os vasos mesentéricos superiores (atrás dele nasce a veia porta), o corpo sobre L2 e a aorta, a cauda até o hilo do baço.",
+      "funcao": "Exócrina (suco digestivo) e endócrina (insulina e glucagon).",
+      "irriga": "Sobretudo ramos da esplênica; também gastroduodenal e pancreaticoduodenais.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            660,
+            661
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ductos-pancreaticos",
+      "tipo": "orgao",
+      "nome": "Ductos pancreáticos",
+      "en": "Pancreatic ducts",
+      "ids": [
+        "pancreatic_duct",
+        "accessory_pancreatic_duct"
+      ],
+      "regiao": "abdome",
+      "partes": "Principal: da cauda à cabeça, une-se ao colédoco na ampola de Vater (papila maior, com o esfíncter de Oddi). Acessório: abre na papila menor; liga-se ao principal em cerca de 60% das pessoas.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            661
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "rim",
+      "tipo": "orgao",
+      "nome": "Rim",
+      "en": "Kidney",
+      "ids": [
+        "kidney",
+        "renal_pelvis"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Retroperitoneal, de T12 a L3; o esquerdo é mais alto (o fígado empurra o direito). Envolvido pela gordura perirrenal e pela fáscia renal.",
+      "partes": "Córtex e medula (10 a 18 pirâmides); papilas abrem nos cálices menores, que formam os maiores e a pelve renal. No hilo: veia à frente, artéria e pelve atrás.",
+      "funcao": "Remove o excesso de água, sais e produtos do metabolismo das proteínas (1 a 4 milhões de néfrons).",
+      "irriga": "Artéria renal (da aorta em L1–L2; a direita passa atrás da cava), com cinco ramos segmentares terminais.",
+      "drenagem": "Veia renal (a esquerda passa entre a aorta e a mesentérica superior); linfa para os linfonodos lombares.",
+      "clinica": "A dor renal é referida na região lombar e no flanco (T10–L1).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            665,
+            666
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ureter",
+      "tipo": "orgao",
+      "nome": "Ureter",
+      "en": "Ureter",
+      "ids": [
+        "ureter"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Tubo muscular retroperitoneal da pelve renal à bexiga; cruza a borda da pelve na altura da sacroilíaca, à frente da bifurcação da ilíaca comum.",
+      "partes": "Três estreitamentos: junção pieloureteral, cruzamento da borda pélvica e trajeto na parede da bexiga (locais de impactação de cálculos).",
+      "clinica": "A dor do cálculo ureteral irradia 'do lombo à virilha' (T11–L2).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            665,
+            666,
+            672
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "suprarrenal",
+      "tipo": "orgao",
+      "nome": "Glândula suprarrenal",
+      "en": "Suprarenal gland",
+      "ids": [
+        "suprarenal_gland"
+      ],
+      "regiao": "abdome",
+      "localizacao": "Entre o polo superior do rim e o diafragma, dentro da fáscia renal. A direita é triangular; a esquerda, semilunar.",
+      "funcao": "Glândula endócrina com duas partes de origens diferentes: o córtex (mesoderma) secreta glicocorticoides e mineralocorticoides, que controlam a retenção de sódio e água pelos rins; a medula (crista neural) funciona como um gânglio simpático e libera adrenalina e noradrenalina.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            665,
+            666,
+            667
+          ]
+        }
+      ],
+      "status": "verificado",
+      "drenagem": "Uma veia suprarrenal: para a veia renal à esquerda e para a cava inferior à direita; linfa para os linfonodos lombares."
+    },
+    {
+      "chave": "bexiga",
+      "tipo": "orgao",
+      "nome": "Bexiga urinária",
+      "en": "Urinary bladder",
+      "ids": [
+        "urinary_bladder"
+      ],
+      "regiao": "pelve-perineo",
+      "localizacao": "Atrás do púbis e da sínfise; vazia, fica toda na pelve verdadeira; cheia, pode subir até o umbigo.",
+      "partes": "Trígono vesical entre os dois óstios ureterais e o óstio interno da uretra; parede de músculo liso entrelaçado (detrusor), que forma o esfíncter interno no colo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            672,
+            673
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "uretra",
+      "tipo": "orgao",
+      "nome": "Uretra",
+      "en": "Urethra",
+      "ids": [
+        "urethra"
+      ],
+      "regiao": "pelve-perineo",
+      "partes": "No homem vai do óstio interno da bexiga ao óstio externo na glande, com as partes prostática, membranácea e esponjosa.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            673
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "prostata",
+      "tipo": "orgao",
+      "nome": "Próstata",
+      "en": "Prostate",
+      "ids": [
+        "prostate"
+      ],
+      "regiao": "pelve-perineo",
+      "localizacao": "Abaixo do colo da bexiga, envolvendo a parte prostática da uretra; atravessada pelos ductos ejaculatórios.",
+      "ver": [
+        "uretra",
+        "vias-espermaticas"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            673
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "vias-espermaticas",
+      "tipo": "orgao",
+      "nome": "Ducto deferente, glândula seminal e ducto ejaculatório",
+      "en": "Ductus deferens, seminal gland and ejaculatory duct",
+      "ids": [
+        "ductus_deferens",
+        "seminal_gland",
+        "ejaculatory_duct"
+      ],
+      "regiao": "pelve-perineo",
+      "localizacao": "O ducto deferente sobe no funículo espermático, entra pelo anel inguinal profundo e cruza por cima do ureter; junta-se ao ducto da glândula seminal (atrás da bexiga) e forma o ducto ejaculatório, que se abre na uretra prostática.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            672,
+            673
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "testiculo-e-epididimo",
+      "tipo": "orgao",
+      "nome": "Testículo e epidídimo",
+      "en": "Testis and epididymis",
+      "ids": [
+        "testis",
+        "epididymis"
+      ],
+      "regiao": "pelve-perineo",
+      "funcao": "O testículo produz os espermatozoides e a testosterona; o epidídimo, colado à sua face posterior, armazena os espermatozoides e continua como ducto deferente.",
+      "drenagem": "Linfa para os linfonodos lombares (aórticos), não para os inguinais.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            653,
+            672
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "penis",
+      "tipo": "orgao",
+      "nome": "Pênis",
+      "en": "Penis",
+      "ids": [
+        "corpus_cavernosum_of_penis",
+        "corpus_spongiosum_of_penis",
+        "glans_penis"
+      ],
+      "regiao": "pelve-perineo",
+      "partes": "Dois corpos cavernosos no dorso e um corpo esponjoso embaixo, que envolve a uretra esponjosa e termina na glande, onde fica o óstio externo da uretra.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            438,
+            673
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "parotida",
+      "tipo": "orgao",
+      "nome": "Glândula parótida",
+      "en": "Parotid gland",
+      "ids": [
+        "parotid_gland",
+        "accessory_parotid_gland",
+        "parotid_duct"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Maior glândula salivar, entre o ramo da mandíbula e o esternocleidomastóideo, sobre a parte posterior do masseter; o ducto parotídeo sai pela borda anterior e cruza o masseter.",
+      "funcao": "Secreção serosa e aquosa.",
+      "inervacao": "Parassimpático pelo glossofaríngeo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            602,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "submandibular",
+      "tipo": "orgao",
+      "nome": "Glândula submandibular",
+      "en": "Submandibular gland",
+      "ids": [
+        "submandibular_gland",
+        "submandibular_duct"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Na fossa submandibular, abaixo da linha milo-hióidea; o ducto abre no assoalho da boca, ao lado do frênulo da língua.",
+      "inervacao": "Parassimpático pela corda do tímpano (nervo facial), via nervo lingual.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            590,
+            602
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "sublingual",
+      "tipo": "orgao",
+      "nome": "Glândula sublingual",
+      "en": "Sublingual gland",
+      "ids": [
+        "sublingual_gland"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Na fossa sublingual da mandíbula, no assoalho da boca.",
+      "inervacao": "Parassimpático pela corda do tímpano, via nervo lingual.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            590,
+            602
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tireoide",
+      "tipo": "orgao",
+      "nome": "Glândula tireoide",
+      "en": "Thyroid gland",
+      "ids": [
+        "thyroid_gland"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Na frente da traqueia, envolvida pela lâmina pré-traqueal da fáscia cervical; o istmo fica sobre os primeiros anéis e é afastado ou seccionado na traqueostomia.",
+      "relacoes": [
+        "O laríngeo recorrente passa junto da artéria tireóidea inferior e precisa ser poupado na cirurgia da tireoide."
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            588,
+            596,
+            606,
+            609
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "paratireoides",
+      "tipo": "orgao",
+      "nome": "Glândulas paratireoides",
+      "en": "Parathyroid glands",
+      "ids": [
+        "superior_parathyroid_gland",
+        "inferior_parathyroid_gland"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Em geral quatro (duas superiores e duas inferiores), na face posterior da tireoide, dentro da mesma bainha pré-traqueal.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            596,
+            606
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "aparelho-lacrimal",
+      "tipo": "orgao",
+      "nome": "Aparelho lacrimal",
+      "en": "Lacrimal apparatus",
+      "ids": [
+        "lacrimal_gland",
+        "lacrimal_canaliculus",
+        "ampulla_of_lacrimal_canaliculus",
+        "lacrimal_sac",
+        "nasolacrimal_duct"
+      ],
+      "regiao": "cabeca-pescoco",
+      "partes": "Glândula lacrimal (fossa superolateral da órbita, partes orbital e palpebral divididas pelo tendão do levantador da pálpebra), canalículos, saco lacrimal e ducto nasolacrimal, que leva a lágrima à cavidade nasal.",
+      "inervacao": "Fibras secretomotoras parassimpáticas do nervo facial.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            611
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bulbo-do-olho",
+      "tipo": "orgao",
+      "nome": "Bulbo do olho",
+      "en": "Eyeball",
+      "ids": [
+        "anterior_segment_of_eyeball",
+        "posterior_segment_of_eyeball",
+        "anterior_chamber_of_eyeball",
+        "iris",
+        "retina",
+        "suspensory_ligament_of_eyeball"
+      ],
+      "regiao": "cabeca-pescoco",
+      "partes": "Três túnicas: fibrosa (esclera e córnea), vascular (corioide, corpo ciliar e íris) e interna (retina). Envolvido pela bainha do bulbo (cápsula de Tenon), atravessada pelos tendões dos músculos extrínsecos.",
+      "ver": [
+        "optico",
+        "oculomotor"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            611
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "faringe",
+      "tipo": "orgao",
+      "nome": "Faringe",
+      "en": "Pharynx",
+      "ids": [
+        "nasopharynx",
+        "oropharynx",
+        "laryngopharynx"
+      ],
+      "regiao": "cabeca-pescoco",
+      "partes": "Nasofaringe (com a tonsila tubária junto à tuba auditiva); orofaringe, do palato mole à epiglote, com as tonsilas palatinas entre os arcos palatoglosso e palatofaríngeo; laringofaringe, da epiglote à borda inferior da cricoide.",
+      "ver": [
+        "constritor-superior-da-faringe"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            604
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "epiglote",
+      "tipo": "orgao",
+      "nome": "Epiglote",
+      "en": "Epiglottis",
+      "ids": [
+        "epiglottis"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Cartilagem elástica em folha, atrás da raiz da língua e à frente da entrada da laringe; a ponta superior é livre e a inferior se prende ao ângulo da tireóidea.",
+      "funcao": "Cobre a entrada da laringe na deglutição.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            604,
+            606
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "palato-mole",
+      "tipo": "orgao",
+      "nome": "Palato mole e úvula",
+      "en": "Soft palate",
+      "ids": [
+        "soft_palate",
+        "uvula_of_palate"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Separa a nasofaringe da orofaringe ao engolir; seus músculos (exceto o tensor do véu) são inervados pelo vago, via plexo faríngeo.",
+      "ver": [
+        "palatofaringeo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            173,
+            175,
+            599
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lingua",
+      "tipo": "orgao",
+      "nome": "Língua",
+      "en": "Tongue",
+      "ids": [
+        "tongue"
+      ],
+      "regiao": "cabeca-pescoco",
+      "inervacao": "Motora: hipoglosso (o palatoglosso pelo vago). Dois terços anteriores: sensibilidade pelo lingual (V3) e paladar pela corda do tímpano (VII). Terço posterior: glossofaríngeo.",
+      "ver": [
+        "genioglosso",
+        "hioglosso",
+        "hipoglosso"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            171,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "gengiva-e-mucosa-nasal",
+      "tipo": "orgao",
+      "nome": "Gengiva e mucosa nasal",
+      "en": "Gingiva and nasal mucosa",
+      "ids": [
+        "gingiva",
+        "mucosa_of_nasal_cavity"
+      ],
+      "regiao": "cabeca-pescoco",
+      "partes": "A gengiva reveste os processos alveolares em volta dos dentes, limitando o vestíbulo da boca. A mucosa nasal forra a cavidade nasal; sua parte superior tem os filetes do nervo olfatório.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            599,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "orelha-interna",
+      "tipo": "orgao",
+      "nome": "Orelha média e interna",
+      "en": "Middle and inner ear",
+      "ids": [
+        "tympanic_membrane",
+        "cochlea",
+        "vestibule"
+      ],
+      "regiao": "cabeca-pescoco",
+      "partes": "A membrana timpânica separa a orelha externa da média. Na orelha interna ficam a cóclea (audição) e o vestíbulo (equilíbrio), ligados ao tronco encefálico pelo nervo vestibulococlear.",
+      "ver": [
+        "vestibulococlear"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            143
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "hipofise",
+      "tipo": "orgao",
+      "nome": "Hipófise",
+      "en": "Pituitary gland",
+      "ids": [
+        "adenohypophysis",
+        "neurohypophysis"
+      ],
+      "regiao": "cabeca-pescoco",
+      "localizacao": "Na sela turca do esfenoide, na fossa média do crânio, presa ao hipotálamo pela haste.",
+      "partes": "Adeno-hipófise (lobo anterior) e neuro-hipófise (lobo posterior).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            589
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "pineal",
+      "tipo": "orgao",
+      "nome": "Glândula pineal",
+      "en": "Pineal gland",
+      "ids": [
+        "pineal_gland"
+      ],
+      "regiao": "sistema-nervoso-central",
+      "localizacao": "Na linha média, atrás do terceiro ventrículo, acima dos colículos superiores do mesencéfalo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            125,
+            129
+          ]
+        }
+      ],
+      "status": "verificado"
+    }
+  ]
+}

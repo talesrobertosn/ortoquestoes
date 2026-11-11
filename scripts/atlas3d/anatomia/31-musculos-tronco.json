@@ -1,0 +1,147 @@
+{
+  "lote": "31-musculos-tronco",
+  "fonte": "netter-6",
+  "paginas_lidas": [273, 279, 365, 438, 652],
+  "registros": [
+    {
+      "chave": "diafragma", "tipo": "musculo", "nome": "Diafragma", "en": "Diaphragm",
+      "ids": ["diaphragm"], "regiao": "torax", "grupo": "respiracao",
+      "origem": { "t": "Processo xifoide, seis cartilagens costais inferiores e corpos de L1 a L3 (pelos pilares).", "o": ["xiphoid_process", "vertebra_l1", "vertebra_l2", "vertebra_l3"] },
+      "insercao": { "t": "As fibras convergem para o centro tendíneo." },
+      "inervacao": "Nervo frênico (C3–C5): única inervação motora; sensibilidade da parte central pelo frênico e da periferia pelos intercostais.",
+      "acao": "Principal músculo da inspiração: puxa o centro tendíneo para baixo e para a frente.",
+      "irrigacao": "Artérias pericardicofrênica, musculofrênica e frênicas superior e inferior.",
+      "fonte": [{ "l": "netter-6", "p": [273, 365, 623] }], "status": "verificado"
+    },
+    {
+      "chave": "intercostais-externos", "tipo": "musculo", "nome": "Intercostais externos", "en": "External intercostal muscles",
+      "ids": ["external_intercostal_muscles"], "regiao": "torax", "grupo": "parede-toracica",
+      "origem": { "t": "Borda inferior de cada costela." }, "insercao": { "t": "Borda superior da costela de baixo." },
+      "nervos": ["intercostais"], "acao": "Sustentam os espaços intercostais e elevam as costelas na inspiração.",
+      "irrigacao": "Artérias intercostais posteriores e anteriores, tronco costocervical e musculofrênica.",
+      "fonte": [{ "l": "netter-6", "p": [273] }], "status": "verificado"
+    },
+    {
+      "chave": "intercostais-internos", "tipo": "musculo", "nome": "Intercostais internos", "en": "Internal intercostal muscles",
+      "ids": ["internal_intercostal_muscles"], "regiao": "torax", "grupo": "parede-toracica",
+      "origem": { "t": "Borda inferior de cada costela." }, "insercao": { "t": "Cartilagem costal e borda do sulco costal da costela de cima." },
+      "nervos": ["intercostais"], "acao": "Impedem que os espaços intercostais abaúlem ou afundem; abaixam as costelas na expiração forçada.",
+      "irrigacao": "Ramos das artérias intercostais anteriores e posteriores, torácica interna e musculofrênica.",
+      "fonte": [{ "l": "netter-6", "p": [273] }], "status": "verificado"
+    },
+    {
+      "chave": "intercostais-intimos", "tipo": "musculo", "nome": "Intercostais íntimos", "en": "Innermost intercostal muscles",
+      "ids": ["innermost_intercostal_muscles"], "regiao": "torax", "grupo": "parede-toracica",
+      "origem": { "t": "Borda inferior das costelas." }, "insercao": { "t": "Borda superior da costela de baixo." },
+      "nervos": ["intercostais"], "acao": "Elevam as costelas.",
+      "irrigacao": "Ramos das artérias intercostais anteriores e posteriores e da torácica interna.",
+      "relacoes": ["O feixe intercostal (veia, artéria e nervo) corre entre os intercostais internos e os íntimos, no sulco costal."],
+      "fonte": [{ "l": "netter-6", "p": [273] }], "status": "verificado"
+    },
+    {
+      "chave": "transverso-do-torax", "tipo": "musculo", "nome": "Transverso do tórax", "en": "Transversus thoracis muscle",
+      "ids": ["transversus_thoracis_muscle"], "regiao": "torax", "grupo": "parede-toracica",
+      "origem": { "t": "Face posterior da parte inferior do esterno.", "o": ["body_of_sternum", "xiphoid_process"] },
+      "insercao": { "t": "Face interna das cartilagens costais 2 a 6." },
+      "nervos": ["intercostais"], "acao": "Abaixa as costelas e as cartilagens costais.",
+      "irrigacao": "Artérias intercostais anteriores e torácica interna.",
+      "fonte": [{ "l": "netter-6", "p": [273] }], "status": "verificado"
+    },
+    {
+      "chave": "obliquo-externo", "tipo": "musculo", "nome": "Oblíquo externo do abdome", "en": "External abdominal oblique muscle",
+      "ids": ["external_abdominal_oblique_muscle"], "regiao": "abdome", "grupo": "parede-abdominal",
+      "origem": { "t": "Face externa das costelas 5 a 12." },
+      "insercao": { "t": "Linha alba, tubérculo púbico e metade anterior da crista ilíaca.", "o": ["hip_bone"] },
+      "inervacao": "Ramos ventrais dos seis nervos torácicos inferiores.",
+      "acao": "Comprime e sustenta as vísceras abdominais; flete e roda o tronco.",
+      "irrigacao": "Artérias epigástricas superior e inferior.",
+      "ver": ["ligamento-inguinal", "obliquo-interno"],
+      "fonte": [{ "l": "netter-6", "p": [365] }], "status": "verificado"
+    },
+    {
+      "chave": "obliquo-interno", "tipo": "musculo", "nome": "Oblíquo interno do abdome", "en": "Internal abdominal oblique muscle",
+      "ids": ["internal_abdominal_oblique_muscle"], "regiao": "abdome", "grupo": "parede-abdominal",
+      "origem": { "t": "Fáscia toracolombar, dois terços anteriores da crista ilíaca e metade lateral do ligamento inguinal.", "o": ["hip_bone"] },
+      "insercao": { "t": "Borda inferior das costelas 10 a 12, linha alba e púbis (pelo tendão conjunto)." },
+      "nervos": ["ilio-hipogastrico", "ilioinguinal"],
+      "inervacao": "Ramos ventrais dos seis nervos torácicos inferiores e do primeiro lombar.",
+      "acao": "Comprime e sustenta as vísceras abdominais; flete e roda o tronco.",
+      "irrigacao": "Artérias epigástricas superior e inferior e circunflexa ilíaca profunda.",
+      "fonte": [{ "l": "netter-6", "p": [365] }], "status": "verificado"
+    },
+    {
+      "chave": "transverso-do-abdome", "tipo": "musculo", "nome": "Transverso do abdome", "en": "Transversus abdominis muscle",
+      "ids": ["transversus_abdominis_muscle"], "regiao": "abdome", "grupo": "parede-abdominal",
+      "origem": { "t": "Face interna das cartilagens costais 7 a 12, fáscia toracolombar, crista ilíaca e terço lateral do ligamento inguinal.", "o": ["hip_bone"] },
+      "insercao": { "t": "Linha alba (com a aponeurose do oblíquo interno), crista e pécten do púbis pelo tendão conjunto." },
+      "nervos": ["ilio-hipogastrico", "ilioinguinal"],
+      "inervacao": "Ramos ventrais dos seis nervos torácicos inferiores e do primeiro lombar.",
+      "acao": "Comprime e sustenta as vísceras abdominais.",
+      "irrigacao": "Artérias circunflexa ilíaca profunda e epigástrica inferior.",
+      "fonte": [{ "l": "netter-6", "p": [365] }], "status": "verificado"
+    },
+    {
+      "chave": "reto-do-abdome", "tipo": "musculo", "nome": "Reto do abdome", "en": "Rectus abdominis muscle",
+      "ids": ["rectus_abdominis_muscle"], "regiao": "abdome", "grupo": "parede-abdominal",
+      "origem": { "t": "Sínfise e crista púbicas.", "o": ["hip_bone"] },
+      "insercao": { "t": "Processo xifoide e cartilagens costais 5 a 7.", "o": ["xiphoid_process"] },
+      "inervacao": "Ramos ventrais dos seis nervos torácicos inferiores.",
+      "acao": "Flete o tronco e comprime as vísceras abdominais.",
+      "irrigacao": "Artérias epigástricas superior e inferior.",
+      "fonte": [{ "l": "netter-6", "p": [365] }], "status": "verificado"
+    },
+    {
+      "chave": "piramidal-do-abdome", "tipo": "musculo", "nome": "Piramidal", "en": "Pyramidalis muscle",
+      "ids": ["pyramidalis_muscle"], "regiao": "abdome", "grupo": "parede-abdominal",
+      "origem": { "t": "Corpo do púbis, à frente do reto do abdome.", "o": ["hip_bone"] }, "insercao": { "t": "Linha alba." },
+      "nervos": ["ilio-hipogastrico"], "acao": "Tensiona a linha alba.", "irrigacao": "Artéria epigástrica inferior.",
+      "fonte": [{ "l": "netter-6", "p": [365] }], "status": "verificado"
+    },
+    {
+      "chave": "quadrado-do-lombo", "tipo": "musculo", "nome": "Quadrado do lombo", "en": "Quadratus lumborum muscle",
+      "ids": ["quadratus_lumborum_muscle"], "regiao": "coluna", "grupo": "parede-abdominal-posterior",
+      "origem": { "t": "Ligamento iliolombar e lábio interno da crista ilíaca.", "o": ["hip_bone"] },
+      "insercao": { "t": "Metade medial da borda inferior da 12ª costela e pontas dos processos transversos lombares.", "o": ["twelfth_rib"] },
+      "inervacao": "Ramos ventrais de T12 e dos quatro primeiros nervos lombares.",
+      "acao": "Estende e inclina lateralmente a coluna; fixa a 12ª costela na inspiração.",
+      "irrigacao": "Artéria iliolombar.",
+      "fonte": [{ "l": "netter-6", "p": [365] }], "status": "verificado"
+    },
+    {
+      "chave": "ligamento-inguinal", "tipo": "musculo", "nome": "Ligamento inguinal (de Poupart)", "en": "Inguinal ligament",
+      "ids": ["inguinal_ligament"], "regiao": "pelve-quadril", "grupo": "parede-abdominal",
+      "origem": { "t": "Espinha ilíaca anterossuperior.", "m": ["hip_bone:Anterior superior iliac spine"] },
+      "insercao": { "t": "Tubérculo púbico." },
+      "relacoes": ["É a borda inferior espessada da aponeurose do oblíquo externo.", "Por baixo dele passam o iliopsoas (até o trocânter menor), o nervo femoral e os vasos femorais."],
+      "ver": ["obliquo-externo", "femoral"],
+      "fonte": [{ "l": "netter-6", "p": [279, 365, 652] }], "status": "verificado"
+    },
+    {
+      "chave": "coccigeo", "tipo": "musculo", "nome": "Coccígeo (isquiococcígeo)", "en": "Coccygeus muscle",
+      "ids": ["coccygeus_muscle"], "regiao": "pelve-perineo", "grupo": "assoalho-pelvico",
+      "origem": { "t": "Espinha isquiática e ligamento sacroespinal.", "o": ["hip_bone"] }, "insercao": { "t": "Parte inferior do sacro e cóccix.", "o": ["sacrum", "coccyx"] },
+      "inervacao": "Ramos ventrais dos nervos sacrais inferiores.",
+      "acao": "Sustenta as vísceras pélvicas e puxa o cóccix para a frente.", "irrigacao": "Artéria glútea inferior.",
+      "fonte": [{ "l": "netter-6", "p": [438] }], "status": "verificado"
+    },
+    {
+      "chave": "levantador-do-anus", "tipo": "musculo", "nome": "Levantador do ânus", "en": "Levator ani",
+      "ids": ["iliococcygeus_muscle", "pubococcygeus_muscle", "pubo_analis_muscle"], "regiao": "pelve-perineo", "grupo": "assoalho-pelvico",
+      "origem": { "t": "Corpo do púbis, arco tendíneo da fáscia do obturador interno e espinha isquiática.", "o": ["hip_bone"] },
+      "insercao": { "t": "Corpo do períneo, cóccix, rafe anococcígea e paredes da próstata ou da vagina, do reto e do canal anal.", "o": ["coccyx"] },
+      "nervos": ["pudendo"], "inervacao": "Ramos ventrais dos nervos sacrais inferiores e nervo perineal (do pudendo).",
+      "acao": "Sustenta as vísceras pélvicas e eleva o assoalho da pelve. Tem as partes iliococcígea, pubococcígea e puboanal (puborretal).",
+      "irrigacao": "Artérias glútea inferior e pudenda interna (retal inferior e perineal).",
+      "fonte": [{ "l": "netter-6", "p": [438] }], "status": "verificado"
+    },
+    {
+      "chave": "esfincter-externo-do-anus", "tipo": "musculo", "nome": "Esfíncter externo do ânus", "en": "External anal sphincter",
+      "ids": ["external_anal_sphincter"], "regiao": "pelve-perineo", "grupo": "perineo",
+      "origem": { "t": "Ponta do cóccix e ligamento anococcígeo.", "o": ["coccyx"] },
+      "insercao": { "t": "As fibras profundas circundam o canal anal; prende-se atrás ao cóccix e à frente ao centro tendíneo do períneo." },
+      "nervos": ["pudendo"], "acao": "Fecha o orifício anal (controle voluntário).",
+      "irrigacao": "Artérias retal inferior e perineal transversa.",
+      "fonte": [{ "l": "netter-6", "p": [438] }], "status": "verificado"
+    }
+  ]
+}

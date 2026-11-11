@@ -1,0 +1,733 @@
+{
+  "lote": "40-nervos-cranianos-e-plexo",
+  "fonte": "netter-6",
+  "paginas_lidas": [
+    137,
+    139,
+    140,
+    141,
+    143,
+    144,
+    145,
+    460,
+    503,
+    507,
+    622,
+    623
+  ],
+  "registros": [
+    {
+      "chave": "olfatorio",
+      "tipo": "nervo",
+      "nome": "Nervo olfatório (I)",
+      "en": "Olfactory nerve (I)",
+      "ids": [
+        "olfactory_nerve_i"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Sensitivo especial: olfato.",
+      "trajeto": "Filetes que atravessam os forames da lâmina cribriforme do etmoide e terminam no bulbo olfatório.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            137,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "optico",
+      "tipo": "nervo",
+      "nome": "Nervo óptico (II)",
+      "en": "Optic nerve (II)",
+      "ids": [
+        "optic_nerve_ii"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Sensitivo especial: visão.",
+      "trajeto": "Da retina ao quiasma óptico, passando pelo canal óptico; no quiasma cruzam as fibras das metades nasais das retinas.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            139,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "oculomotor",
+      "tipo": "nervo",
+      "nome": "Nervo oculomotor (III)",
+      "en": "Oculomotor nerve (III)",
+      "ids": [
+        "oculomotor_nerve_iii"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Motor de quase todos os músculos extrínsecos do olho (retos superior, inferior e medial, oblíquo inferior) e do levantador da pálpebra; parassimpático para o esfíncter da pupila e o músculo ciliar, pelo gânglio ciliar.",
+      "trajeto": "Entra na órbita pela fissura orbital superior e se divide em ramos superior e inferior.",
+      "clinica": "Na paralisia do III: ptose, pupila dilatada sem reflexo à luz, perda da acomodação e olho desviado 'para baixo e para fora' (sobram o reto lateral e o oblíquo superior).",
+      "ver": [
+        "troclear",
+        "abducente"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            140,
+            622,
+            623
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "nucleo-do-troclear",
+      "tipo": "nervo",
+      "nome": "Núcleo do nervo troclear",
+      "en": "Nucleus of trochlear nerve",
+      "ids": [
+        "nucleus_of_trochlear_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Origem das fibras motoras do nervo troclear, no mesencéfalo.",
+      "ver": [
+        "troclear"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            140
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "troclear",
+      "tipo": "nervo",
+      "nome": "Nervo troclear (IV)",
+      "en": "Trochlear nerve (IV)",
+      "ids": [
+        "trochlear_nerve_iv"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Motor de um único músculo: o oblíquo superior do olho.",
+      "trajeto": "Entra na órbita pela fissura orbital superior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            140,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "trigemeo",
+      "tipo": "nervo",
+      "nome": "Nervo trigêmeo (V)",
+      "en": "Trigeminal nerve (V)",
+      "ids": [
+        "trigeminal_nerve_v",
+        "sensory_root_of_trigeminal_nerve",
+        "motor_root_of_trigeminal_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Sensibilidade geral da face, da órbita, do nariz e dos dois terços anteriores da língua; motor dos músculos da mastigação (pela raiz motora, que segue com o mandibular).",
+      "trajeto": "Três divisões saem do gânglio trigeminal: oftálmica (V1), maxilar (V2) e mandibular (V3), cada uma por uma abertura própria do crânio.",
+      "clinica": "Neuralgia do trigêmeo: crises de dor intensa de poucos segundos, quase sempre de um lado, em geral no território maxilar ou mandibular, disparadas ao tocar um 'ponto-gatilho'.",
+      "ver": [
+        "oftalmico",
+        "maxilar",
+        "mandibular"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141,
+            622,
+            623
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "oftalmico",
+      "tipo": "nervo",
+      "nome": "Nervo oftálmico (V1)",
+      "en": "Ophthalmic nerve",
+      "ids": [
+        "ophthalmic_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "sensitivo": "Órbita, bulbo do olho, pálpebra superior, fronte, dorso do nariz e parte da dura-máter (anterior e tentório).",
+      "trajeto": "Entra na órbita pela fissura orbital superior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "maxilar",
+      "tipo": "nervo",
+      "nome": "Nervo maxilar (V2)",
+      "en": "Maxillary nerve",
+      "ids": [
+        "maxillary_nerve",
+        "meningeal_branch_of_maxillary_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "sensitivo": "Pele da face média, lábio superior, dentes superiores, cavidade nasal, palato e dura-máter das fossas anterior e média (ramo meníngeo).",
+      "trajeto": "Sai do crânio pelo forame redondo para a fossa pterigopalatina.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "mandibular",
+      "tipo": "nervo",
+      "nome": "Nervo mandibular (V3)",
+      "en": "Mandibular nerve",
+      "ids": [
+        "anterior_division_of_mandibular_nerve",
+        "posterior_division_of_mandibular_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Única divisão mista do trigêmeo: motor dos músculos da mastigação (temporal, masseter, pterigóideos), do milo-hióideo, do ventre anterior do digástrico, do tensor do tímpano e do tensor do véu palatino.",
+      "sensitivo": "Pele da face inferior e da região temporal, dentes inferiores, mucosa da bochecha e dois terços anteriores da língua (sensibilidade geral).",
+      "trajeto": "Sai pelo forame oval e logo se divide em tronco anterior (sobretudo motor, com o nervo bucal) e posterior (lingual, alveolar inferior e auriculotemporal).",
+      "ver": [
+        "bucal",
+        "lingual",
+        "alveolar-inferior"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "bucal",
+      "tipo": "nervo",
+      "nome": "Nervo bucal",
+      "en": "Buccal nerve",
+      "ids": [
+        "buccal_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "sensitivo": "Pele e mucosa da bochecha. É ramo sensitivo do V3, diferente dos ramos bucais do facial, que são motores.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "lingual",
+      "tipo": "nervo",
+      "nome": "Nervo lingual",
+      "en": "Lingual nerve",
+      "ids": [
+        "lingual_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "sensitivo": "Sensibilidade geral dos dois terços anteriores da língua e do assoalho da boca. Recebe a corda do tímpano, que traz o paladar dessa parte da língua e as fibras para as glândulas submandibular e sublingual.",
+      "ver": [
+        "corda-do-timpano"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "alveolar-inferior",
+      "tipo": "nervo",
+      "nome": "Nervo alveolar inferior",
+      "en": "Inferior alveolar nerve",
+      "ids": [
+        "inferior_alveolar_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "sensitivo": "Dentes inferiores; termina como nervo mentual (pele do mento e do lábio inferior). Antes de entrar no forame da mandíbula dá o nervo para o milo-hióideo.",
+      "ver": [
+        "mentual"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "mentual",
+      "tipo": "nervo",
+      "nome": "Nervo mentual",
+      "en": "Mental nerve",
+      "ids": [
+        "mental_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "sensitivo": "Pele do mento e do lábio inferior. Sai pelo forame mentual como continuação do alveolar inferior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "corda-do-timpano",
+      "tipo": "nervo",
+      "nome": "Corda do tímpano",
+      "en": "Chorda tympani",
+      "ids": [
+        "chorda_tympani"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Ramo do nervo facial: paladar dos dois terços anteriores da língua e parassimpático para as glândulas submandibular e sublingual.",
+      "trajeto": "Atravessa a orelha média e se junta ao nervo lingual.",
+      "ver": [
+        "facial",
+        "lingual"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            141,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "abducente",
+      "tipo": "nervo",
+      "nome": "Nervo abducente (VI)",
+      "en": "Abducens nerve (VI)",
+      "ids": [
+        "abducens_nerve_vi"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Motor de um único músculo: o reto lateral do olho (abdução).",
+      "trajeto": "Entra na órbita pela fissura orbital superior.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            140,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "vestibulococlear",
+      "tipo": "nervo",
+      "nome": "Nervo vestibulococlear (VIII)",
+      "en": "Vestibulocochlear nerve (VIII)",
+      "ids": [
+        "vestibulocochlear_nerve_viii"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Sensitivo especial: audição (parte coclear) e equilíbrio (parte vestibular).",
+      "trajeto": "Entra no meato acústico interno.",
+      "clinica": "Tumores do nervo (neuroma do acústico) podem comprimir também o facial, que passa pelo mesmo meato.",
+      "ver": [
+        "coclear",
+        "vestibular"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            143,
+            622,
+            623
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "coclear",
+      "tipo": "nervo",
+      "nome": "Nervo coclear",
+      "en": "Cochlear nerve",
+      "ids": [
+        "cochlear_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Parte auditiva do VIII, que sai da cóclea.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            143
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "vestibular",
+      "tipo": "nervo",
+      "nome": "Nervo vestibular",
+      "en": "Vestibular nerve",
+      "ids": [
+        "vestibular_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Parte do VIII que leva o equilíbrio, do labirinto vestibular (utrículo, sáculo e canais semicirculares).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            143
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "glossofaringeo",
+      "tipo": "nervo",
+      "nome": "Nervo glossofaríngeo (IX)",
+      "en": "Glossopharyngeal nerve (IX)",
+      "ids": [
+        "glossopharyngeal_nerve_ix"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Misto: motor do estilofaríngeo; parassimpático para a parótida; paladar e sensibilidade do terço posterior da língua; sensibilidade da faringe e da orelha média; aferências do seio e do glomo caróticos.",
+      "trajeto": "Sai do crânio pelo forame jugular.",
+      "ver": [
+        "vago"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            144,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "vago",
+      "tipo": "nervo",
+      "nome": "Nervo vago (X)",
+      "en": "Vagus nerve (X)",
+      "ids": [
+        "vagus_nerve_x",
+        "posterior_nucleus_of_vagus_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Misto: motor dos músculos da faringe, do palato mole e da laringe; parassimpático das vísceras torácicas e abdominais; sensibilidade da faringe, da laringe e das vísceras.",
+      "trajeto": "Sai pelo forame jugular, desce na bainha carótica e entra no tórax; forma os troncos vagais no esôfago. O laríngeo recorrente direito contorna a artéria subclávia e o esquerdo, o arco da aorta. O núcleo posterior (dorsal) é a origem das fibras parassimpáticas.",
+      "clinica": "O laríngeo recorrente, que inerva os músculos intrínsecos da laringe, passa junto da artéria tireóidea inferior e precisa ser poupado nas cirurgias do pescoço. Lesão de um lado: rouquidão (uma prega não encosta na outra); dos dois lados: perda da voz.",
+      "ver": [
+        "glossofaringeo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            145,
+            609,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "nucleo-do-hipoglosso",
+      "tipo": "nervo",
+      "nome": "Núcleo do nervo hipoglosso",
+      "en": "Nucleus of hypoglossal nerve",
+      "ids": [
+        "nucleus_of_hypoglossal_nerve"
+      ],
+      "regiao": "cabeca-pescoco",
+      "funcao": "Origem, no bulbo, das fibras motoras dos músculos da língua.",
+      "ver": [
+        "hipoglosso"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            137,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tronco-simpatico",
+      "tipo": "nervo",
+      "nome": "Tronco simpático",
+      "en": "Sympathetic trunk",
+      "ids": [
+        "sympathetic_trunk",
+        "ganglia_of_sympathetic_trunk",
+        "sympathetic_nerves"
+      ],
+      "regiao": "corpo-inteiro",
+      "funcao": "Cadeia de gânglios ao lado da coluna, da base do crânio ao cóccix, que distribui as fibras simpáticas para os vasos, as glândulas e as vísceras.",
+      "trajeto": "Liga-se aos nervos espinais pelos ramos comunicantes; na região cervical dá fibras ao músculo dilatador da pupila e aos vasos da cabeça.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            140,
+            622
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ganglio-espinal",
+      "tipo": "nervo",
+      "nome": "Gânglio espinal (da raiz posterior)",
+      "en": "Spinal ganglion",
+      "ids": [
+        "spinal_ganglion"
+      ],
+      "regiao": "coluna",
+      "funcao": "Reúne os corpos dos neurônios sensitivos de cada nervo espinal, na raiz posterior, junto ao forame intervertebral.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            137
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "plexo-braquial-raizes",
+      "tipo": "nervo",
+      "nome": "Raízes do plexo braquial (C5–T1)",
+      "en": "Roots of brachial plexus",
+      "ids": [
+        "roots_of_brachial_plexus"
+      ],
+      "regiao": "ombro",
+      "raizes": "C5–T1",
+      "trajeto": "Ramos ventrais de C5 a T1, que emergem entre os escalenos anterior e médio. Das raízes saem o dorsal da escápula (C5) e o torácico longo (C5–C7).",
+      "clinica": "Doença, trauma ou estiramento (inclusive no parto) no trígono posterior do pescoço ou na axila lesam o plexo: paralisia e anestesia no território dos nervos atingidos. A paralisia de Erb atinge a parte superior do plexo; a de Klumpke, a inferior.",
+      "ver": [
+        "tronco-superior-do-plexo",
+        "tronco-medio-do-plexo",
+        "tronco-inferior-do-plexo",
+        "dorsal-da-escapula",
+        "toracico-longo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            460,
+            705
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tronco-superior-do-plexo",
+      "tipo": "nervo",
+      "nome": "Tronco superior do plexo braquial",
+      "en": "Superior trunk of brachial plexus",
+      "ids": [
+        "superior_trunk_of_brachial_plexus",
+        "anterior_division_of_superior_trunk_of_brachial_plexus",
+        "posterior_division_of_superior_trunk_of_brachial_plexus"
+      ],
+      "regiao": "ombro",
+      "raizes": "C5–C6",
+      "trajeto": "União de C5 e C6. Dá o supraescapular e o nervo do subclávio e se divide em divisão anterior (para o fascículo lateral) e posterior (para o fascículo posterior).",
+      "clinica": "A paralisia de Erb atinge os nervos que saem da parte superior do plexo (C5–C6).",
+      "ver": [
+        "supraescapular",
+        "subclavio-nervo",
+        "fasciculo-posterior-do-plexo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            460,
+            705
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tronco-medio-do-plexo",
+      "tipo": "nervo",
+      "nome": "Tronco médio do plexo braquial",
+      "en": "Middle trunk of brachial plexus",
+      "ids": [
+        "middle_trunk_of_brachial_plexus",
+        "anterior_division_of_middle_trunk_of_brachial_plexus",
+        "posterior_division_of_middle_trunk_of_brachial_plexus"
+      ],
+      "regiao": "ombro",
+      "raizes": "C7",
+      "trajeto": "Continuação de C7. A divisão anterior vai para o fascículo lateral e a posterior, para o fascículo posterior.",
+      "ver": [
+        "fasciculo-posterior-do-plexo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            460
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tronco-inferior-do-plexo",
+      "tipo": "nervo",
+      "nome": "Tronco inferior do plexo braquial",
+      "en": "Inferior trunk of brachial plexus",
+      "ids": [
+        "inferior_trunk_of_brachial_plexus",
+        "anterior_division_of_inferior_trunk_of_brachial_plexus",
+        "posterior_division_of_inferior_trunk_of_brachial_plexus"
+      ],
+      "regiao": "ombro",
+      "raizes": "C8–T1",
+      "trajeto": "União de C8 e T1, apoiado na 1ª costela atrás da artéria subclávia. A divisão anterior forma o fascículo medial; a posterior vai para o fascículo posterior.",
+      "clinica": "A paralisia de Klumpke atinge os nervos que saem da parte inferior do plexo (C8–T1).",
+      "ver": [
+        "ulnar",
+        "fasciculo-posterior-do-plexo"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            460,
+            705
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "fasciculo-posterior-do-plexo",
+      "tipo": "nervo",
+      "nome": "Fascículo posterior do plexo braquial",
+      "en": "Posterior cord of brachial plexus",
+      "ids": [
+        "posterior_cord_of_brachial_plexus"
+      ],
+      "regiao": "ombro",
+      "raizes": "C5–T1",
+      "trajeto": "Formado pelas três divisões posteriores, atrás da artéria axilar. Dá os subescapulares superior e inferior e o toracodorsal, e termina como axilar e radial.",
+      "ver": [
+        "axilar",
+        "radial",
+        "toracodorsal",
+        "subescapular-superior",
+        "subescapular-inferior"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            460
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "comunicante-mediano-ulnar",
+      "tipo": "nervo",
+      "nome": "Ramo comunicante do mediano com o ulnar",
+      "en": "Communicating branch of median nerve with ulnar nerve",
+      "ids": [
+        "communicating_branch_of_median_nerve_with_ulnar_nerve"
+      ],
+      "regiao": "punho-mao",
+      "funcao": "Ramo que liga o nervo mediano ao ulnar na palma da mão, entre os ramos digitais comuns.",
+      "ver": [
+        "mediano",
+        "ulnar"
+      ],
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            503,
+            507
+          ]
+        }
+      ],
+      "status": "verificado"
+    }
+  ]
+}

@@ -6,7 +6,7 @@ import type { Estrutura } from '../tipos'
  * scripts/atlas3d/montar_anatomia.mjs a partir dos lotes conferidos página a página).
  * Fica separado da interface e só é baixado quando o atlas abre.
  */
-export type TipoRegistro = 'musculo' | 'nervo' | 'ligamento' | 'osso' | 'arteria' | 'veia' | 'fascia'
+export type TipoRegistro = 'musculo' | 'nervo' | 'ligamento' | 'osso' | 'arteria' | 'veia' | 'fascia' | 'orgao' | 'encefalo' | 'linfatico' | 'dente'
 export type StatusRegistro = 'verificado' | 'pendente' | 'conflito'
 /** Fixação: texto próprio, marcos pontuais do modelo ("osso:Nome do marco") e ossos inteiros. */
 export interface Fixacao { t: string; m?: string[]; o?: string[] }
@@ -38,6 +38,14 @@ export interface RegistroAnatomico {
   citado?: string[]
   ramos?: string
   irriga?: string
+  /** inervação em texto, quando o nervo não tem registro próprio */
+  inervacao?: string
+  /** irrigação do músculo (tabelas do Netter 6ª) */
+  irrigacao?: string
+  /** vísceras e veias: drenagem venosa/linfática ou território drenado */
+  drenagem?: string
+  localizacao?: string
+  partes?: string
   fonte: { l: string; p: number[] }[]
   status: StatusRegistro
   notas?: string
@@ -83,5 +91,5 @@ export function idNoLado(base: string, lado: Estrutura['s'], existe: (id: string
 
 /** Fonte para mostrar na ficha. As páginas ficam só no banco, para auditoria: são as posições no PDF local, não a paginação impressa. */
 export function nomeDaFonte(indice: IndiceAnatomico, r: RegistroAnatomico) {
-  return [...new Set(r.fonte.map((f) => (f.l === 'netter-ao2' ? 'Netter, Atlas de Anatomia Ortopédica, 2ª ed.' : indice.fontes[f.l] ?? f.l)))].join(' · ')
+  return [...new Set(r.fonte.map((f) => (f.l === 'netter-ao2' ? 'Netter, Atlas de Anatomia Ortopédica, 2ª ed.' : f.l === 'netter-6' ? 'Netter, Atlas of Human Anatomy, 6ª ed.' : indice.fontes[f.l] ?? f.l)))].join(' · ')
 }
