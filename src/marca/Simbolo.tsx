@@ -6,7 +6,9 @@
  * - 'selo': o ladrilho. As cores vêm de --marca-* em tokens.css, então o
  *   tema escuro troca o ladrilho sozinho. Mesmo desenho do favicon e do
  *   ícone do aplicativo (public/favicon.svg, scripts/gerar_icones.py).
- *   Abaixo de 24 px usa a versão mini: sem o visto e com traços mais grossos.
+ *   O desenho muda com o tamanho para ficar nítido: cheio a partir de 48 px,
+ *   médio de 24 a 47 px (traços grossos e visto grosso, alinhados à grade de
+ *   pixels de 32 px, usado no topo) e mini abaixo de 24 px (sem o visto).
  * - 'traco': só as alternativas, na cor do texto (currentColor), para selos
  *   pequenos dentro de botões e etiquetas.
  *
@@ -42,6 +44,13 @@ export const ALTERNATIVAS: readonly Alternativa[] = [
   { cx: 30, cy: 70, r: 6.5, x: 43, y: 65.5, largura: 26, altura: 9, certa: false },
 ]
 
+/** Versão média, de 24 a 47 px: traços grossos alinhados à grade de 32 px. */
+export const ALTERNATIVAS_MEDIA: readonly Alternativa[] = [
+  { cx: 28.1, cy: 25, r: 9.4, x: 43.75, y: 18.75, largura: 37.5, altura: 12.5, certa: false },
+  { cx: 28.1, cy: 50, r: 12.5, x: 43.75, y: 42.2, largura: 40.6, altura: 15.6, certa: true },
+  { cx: 28.1, cy: 75, r: 9.4, x: 43.75, y: 68.75, largura: 25, altura: 12.5, certa: false },
+]
+
 /** Versão mini, para tamanhos pequenos: traços grossos e sem o visto. */
 export const ALTERNATIVAS_MINI: readonly Alternativa[] = [
   { cx: 28, cy: 27, r: 9, x: 44, y: 20, largura: 36, altura: 14, certa: false },
@@ -51,11 +60,13 @@ export const ALTERNATIVAS_MINI: readonly Alternativa[] = [
 
 /** O visto dentro da bolinha certa (desenho cheio). */
 export const CAMINHO_VISTO = 'M25.8 50.2l2.9 3 5.6-6'
+const CAMINHO_VISTO_MEDIO = 'M22.4 50.6l4 4 7.3-8'
 
 export function Simbolo({ tamanho = 28, variante = 'selo', titulo = null }: Props) {
   const selo = variante === 'selo'
   const mini = tamanho < 24
-  const alternativas = mini ? ALTERNATIVAS_MINI : ALTERNATIVAS
+  const medio = !mini && tamanho < 48
+  const alternativas = mini ? ALTERNATIVAS_MINI : medio ? ALTERNATIVAS_MEDIA : ALTERNATIVAS
   return (
     <svg
       width={tamanho}
@@ -70,7 +81,7 @@ export function Simbolo({ tamanho = 28, variante = 'selo', titulo = null }: Prop
       {titulo && <title>{titulo}</title>}
       {selo && (
         <rect
-          x="1.5" y="1.5" width="97" height="97" rx="23"
+          x="1.5" y="1.5" width="97" height="97" rx={mini || medio ? 24 : 23}
           style={{ fill: `var(--marca-ladrilho, ${COR_MARCA})`, stroke: 'var(--marca-contorno, none)', strokeWidth: 3 }}
         />
       )}
@@ -78,7 +89,7 @@ export function Simbolo({ tamanho = 28, variante = 'selo', titulo = null }: Prop
         const estilo = a.certa
           ? { fill: selo ? `var(--marca-certa, ${COR_DESTAQUE})` : 'currentColor' }
           : selo
-            ? { fill: 'var(--marca-osso, #F6EEDB)', opacity: 'var(--marca-osso-opacidade, .5)' }
+            ? { fill: 'var(--marca-osso, #F6EEDB)', opacity: medio || mini ? 'calc(var(--marca-osso-opacidade, .5) * 1.24)' : 'var(--marca-osso-opacidade, .5)' }
             : { fill: 'currentColor', opacity: 0.45 }
         return (
           <g key={a.cy} style={estilo}>
@@ -89,9 +100,9 @@ export function Simbolo({ tamanho = 28, variante = 'selo', titulo = null }: Prop
       })}
       {selo && !mini && (
         <path
-          d={CAMINHO_VISTO}
+          d={medio ? CAMINHO_VISTO_MEDIO : CAMINHO_VISTO}
           fill="none"
-          strokeWidth={2.8}
+          strokeWidth={medio ? 4.6 : 2.8}
           strokeLinecap="round"
           strokeLinejoin="round"
           style={{ stroke: `var(--marca-ladrilho, ${COR_MARCA})` }}
