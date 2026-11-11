@@ -1,12 +1,14 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react'
+import { Suspense, lazy, useEffect, useRef, useState, type FormEvent } from 'react'
 import { supabase } from '../conta/supabase'
 import { textoErro } from '../conta/erros'
 import { href, navegar } from '../util/rotas'
 import { Icone } from './Icone'
 import { BotaoGoogle } from './BotaoGoogle'
-import { ModalConfirmarEmail } from './ModalConfirmarEmail'
 import { limparConfirmacaoPendente } from '../conta/confirmacaoPendente'
 import { levarEmail, linkConta } from '../conta/passagem'
+
+// A confirmação de e-mail só aparece depois de criar a conta: carrega sob demanda (11/11/2026).
+const ModalConfirmarEmail = lazy(() => import('./ModalConfirmarEmail').then((m) => ({ default: m.ModalConfirmarEmail })))
 
 /**
  * Entrar sem sair da página inicial: um pop-up pequeno e centralizado, não um
@@ -71,7 +73,7 @@ export function ModalEntrar({ aberto, aoFechar }: { aberto: boolean; aoFechar: (
     }
   }
 
-  if (pendente) return <ModalConfirmarEmail email={pendente} aoFechar={() => { definirPendente(null); fechar() }} aoEntrar={() => definirPendente(null)} />
+  if (pendente) return <Suspense fallback={null}><ModalConfirmarEmail email={pendente} aoFechar={() => { definirPendente(null); fechar() }} aoEntrar={() => definirPendente(null)} /></Suspense>
 
   return (
     <>

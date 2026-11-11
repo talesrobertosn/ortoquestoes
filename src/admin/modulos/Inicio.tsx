@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState, type ReactNode } from 'react'
-import { carregarIndiceBiblioteca } from '../../biblioteca/conteudo'
+import { carregarIndiceBibliotecaLeve } from '../../biblioteca/conteudo'
 import { quadroDoDia } from '../../componentes/admin/agora'
 import { diaSP } from '../../componentes/admin/estudoHoje'
 import { registrarTitulosResumos } from '../../componentes/admin/formatos'
@@ -100,7 +100,7 @@ export default function Inicio() {
   const [busca, definirBusca] = useState('')
   const [limiteLista, definirLimiteLista] = useState(POR_VEZ)
   const [, recontar] = useState(0)
-  useEffect(() => { carregarIndiceBiblioteca().then(i => { registrarTitulosResumos(i.capitulos); recontar(k => k + 1) }).catch(() => undefined) }, [])
+  useEffect(() => { carregarIndiceBibliotecaLeve().then(i => { registrarTitulosResumos(i.capitulos); recontar(k => k + 1) }).catch(() => undefined) }, [])
   useEffect(() => { definirLimiteLista(POR_VEZ) }, [vista, filtro, busca])
   const sinaisLista = Array.isArray(p.sinaisQ.dados) ? p.sinaisQ.dados : null
   const quadro = useMemo(() => quadroDoDia({ usuarios: p.usuarios, sinais: sinaisLista, serie: Array.isArray(serieQ.dados) ? serieQ.dados : null, resumo: p.resumo, funil, assinaturas: p.reais, cobrancas: p.cobrancas }),

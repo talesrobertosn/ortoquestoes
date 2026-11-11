@@ -64,6 +64,13 @@ export interface ResumoCapitulo {
 }
 
 export interface IndiceBiblioteca { geradoEm: string; capitulos: ResumoCapitulo[] }
+/**
+ * Índice leve (11/11/2026): o mesmo índice sem a lista de seções, que é metade do arquivo. As caixas de
+ * sugestão (página inicial, cronograma, questão, flashcards) só usam título, livro, resumo e subtemas; a
+ * lista de seções fica para a Biblioteca e a busca. Gerado no build (vite.config.ts, fatiarAcervo).
+ */
+export type ResumoCapituloLeve = Omit<ResumoCapitulo, 'secoes'>
+export interface IndiceBibliotecaLeve { geradoEm: string; capitulos: ResumoCapituloLeve[] }
 
 // ─── Dados da pessoa (sincronizados) ──────────────────────────────────────
 
