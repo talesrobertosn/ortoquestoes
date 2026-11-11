@@ -327,7 +327,7 @@ como: O TARO 2018 perguntou onde passa a ressecção marginal; uma prova de Orto
 
 **A cintura escapular.** Os tumores da escápula costumam estender-se à glenoumeral, e o tendão do bíceps é uma via de passagem do úmero proximal para a articulação, o que leva às **ressecções extra-articulares**. MALAWER propôs seis tipos, conforme as estruturas retiradas e a relação com a articulação: I ressecção intra-articular do úmero proximal; II escapulectomia parcial; III escapulectomia total intra-articular; IV escapulectomia total e cabeça umeral extra-articulares; V cabeça umeral extra-articular; VI úmero e escápula extra-articulares; cada um com A (abdutores intactos) ou B (ressecados) (p. 908). **A cirurgia de TIKHOFF-LINBERG consiste em escapulectomia total, excisão parcial ou completa da clavícula e excisão do úmero proximal**, útil nos tumores malignos do ombro com margem de tecido normal suficiente para liberar o feixe neurovascular (técnica 24.1, de MARCOVE, LEWIS e HUVOS, p. 909). Quando não há essa margem, a alternativa é a **amputação interescapulotorácica (forequarter)**, pela via anterior de BERGER ou posterior (cap. 18, p. 750).
 
-!questoes central=tumores-0296
+!questoes central=tumores-0296 relacionadas=tumores-0356
 conceito: TIKHOFF-LINBERG = escapulectomia total, clavícula parcial ou total e úmero proximal, preservando o membro; MALAWER classifica as ressecções do ombro em seis tipos; a ressecção do úmero proximal costuma sacrificar o axilar; a biópsia do úmero é pelo terço anterior do deltoide.
 como: Uma prova de Ortopedia perguntou o nome da ressecção da escápula com o úmero proximal.
 !fim

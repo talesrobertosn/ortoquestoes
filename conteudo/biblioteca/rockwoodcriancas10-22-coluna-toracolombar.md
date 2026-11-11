@@ -243,7 +243,7 @@ O Tachdjian (6ª edição, cap. 7) acrescenta a epidemiologia que as provas cobr
 
 **Fratura da faceta.** Fonte provavelmente subestimada de lombalgia no **atleta jovem**, por **hiperextensão repetitiva**, com ou sem torção, muitas vezes junto com **espondilólise** (Fig. 22-23). A dor é mais crônica que aguda e se reproduz na **hiperextensão em pé**, localizada; se a hiperextensão não reproduz a dor, desconfiar do diagnóstico. A radiografia quase nunca mostra, e a ressonância frequentemente perde; a **tomografia** com 3D é o **padrão-ouro** (Fig. 22-24). Infiltração confirma o gerador da dor, com falsos negativos. O tratamento da fratura isolada da faceta é a **retirada cirúrgica** do fragmento, por incisão de cerca de 16 mm, com alívio imediato.
 
-!questoes central=pediatria-0627 treino=pediatria-1263,pediatria-1267
+!questoes central=pediatria-0627 relacionadas=trauma-0997 treino=pediatria-1263,pediatria-1267
 conceito: A fratura da placa terminal é uma lesão fisária do anel apofisário, por flexão, que imita hérnia de disco; mais comum em meninos adolescentes, na apófise posteroinferior de L4; confirma-se na tomografia sagital e trata-se com retirada do fragmento.
 como: TARO 2018 perguntou em que gênero e segmento a fratura da placa terminal lombar é mais comum (masculino, L4-L5).
 armadilha: Tratar como hérnia com fisioterapia e infiltração.

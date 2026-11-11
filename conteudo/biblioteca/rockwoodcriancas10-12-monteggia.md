@@ -239,7 +239,7 @@ O gesso axilopalmar fica **4 a 6 semanas**, com radiografias a cada **1 a 2 sema
 
 É também o momento de procurar uma **deformidade plástica do rádio** que impeça a redução.
 
-!questoes treino=pediatria-1294,pediatria-1295
+!questoes relacionadas=trauma-0005 treino=pediatria-1294,pediatria-1295
 conceito: No tipo I, corrige-se a ulna primeiro e depois se flete o cotovelo para reduzir a cabeça; imobiliza-se em 110 a 120 graus por 4 a 6 semanas; a cabeça que não reduz tem o anular interposto, reposto pela via de KOCHER com o antebraço pronado.
 como: Questões de projeção sobre a sequência da redução e a causa da redução incompleta.
 armadilha: Reduzir a cabeça antes de corrigir a ulna, ou aceitar a ulna ainda curvada porque a cabeça entrou.

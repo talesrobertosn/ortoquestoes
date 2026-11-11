@@ -205,7 +205,7 @@ O Tachdjian (p. 1032) lista ainda **encondroma**, **lesões sinoviais** (sinovit
 | lesões sinoviais (sinovite vilonodular, artrite reumatoide) | variável | doença articular primária |
 !fim
 
-!questoes central=tumores-0091
+!questoes central=tumores-0091 relacionadas=tumores-0019
 conceito: Lesão tumoral epifisária num paciente de 15 anos (esqueleto imaturo, fise aberta) é, mais provavelmente, condroblastoma; o TCG é a lesão epifisária do esqueleto maduro (20 a 40 anos).
 como: Uma prova de Ortopedia perguntou o diagnóstico mais provável de lesão tumoral epifisária aos 15 anos, contra cisto ósseo aneurismático, condrossarcoma e TCG.
 armadilha: Escolher o TCG por ser "o" tumor epifisário clássico, sem olhar a idade; ou o cisto ósseo aneurismático, que é metafisário e pode aparecer como componente secundário do próprio condroblastoma.

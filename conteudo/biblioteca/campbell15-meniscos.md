@@ -223,7 +223,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2000.e1), trata essas
 
 A RM detecta raiz e rampa, mas com **sensibilidade menor** que para as demais lesões (cap. 50, p. 2003); o capítulo 56 (p. 2352) diz que **rips e rampas escapam à RM em até 50%** e **raízes em 70%**. Daí a regra: procurá-las na artroscopia mesmo com RM negativa, e muitos defendem o **portal posteromedial** de rotina na artroscopia do LCA para não perder a rampa (p. 2335 aprox.).
 
-!questoes central=trauma-1032 relacionadas=joelho-0170,joelho-0180
+!questoes central=trauma-1032 relacionadas=joelho-0170,joelho-0180,trauma-1068
 conceito: Rampa é a separação longitudinal da junção meniscocapsular do corno posterior do medial, quase sempre com LCA, pouco vista na RM; o edema ósseo posteromedial da tíbia é seu sinal secundário (72%).
 como: O TARO 2025 pediu a definição de lesão em rampa; o CET-PR, o nome da lesão meniscocapsular do corno posterior medial que envolve o meniscotibial; o TEOT 2025, o significado do edema ósseo posteromedial da tíbia na RM de um LCA.
 armadilha: Confundir com a raiz (radial junto à inserção) ou com a LMORT (lateral); atribuir o edema posteromedial à própria lesão do LCA, quando o livro o descreve como sinal secundário de rampa.

@@ -140,7 +140,7 @@ como: Os simulados pedem a origem de cada liga e as propriedades do cobalto e do
 
 Outras ligas: Ti-6Al-7Nb na Europa; ligas de **zircônio** (Zr-2,5Nb, base do Oxinium) e **tântalo** (o "metal trabecular", malha parecida com o osso, usada como substrato de crescimento ósseo).
 
-!questoes treino=quadril-0471,quadril-0472
+!questoes relacionadas=quadril-0483 treino=quadril-0471,quadril-0472
 conceito: Titânio puro: monofásico HC, quatro graus que diferem no oxigênio (escoamento de 150 a 480 MPa), alfa-case com oxigênio demais (menos fadiga), não tem resistência para hastes, é usado como revestimento poroso. Ti-6Al-4V: bimodal alfa mais beta, deformado abaixo da beta transus (cerca de 930 °C); acima, vira acicular e perde fadiga; módulo cerca de metade do cobalto; sensível ao entalhe.
 como: Os simulados pedem a microestrutura e o processamento do Ti-6Al-4V e o que diferencia os graus do titânio puro.
 !fim

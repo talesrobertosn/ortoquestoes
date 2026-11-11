@@ -388,7 +388,7 @@ armadilha: Trocar os três números da deficiência ulnar, ou associar a clinoda
 
 **STELLING e TUREK** classificaram pelo esqueleto (Tachdjian, p. 358): **I** sem ligação esquelética; **II** ligação esquelética a uma **falange ou metacarpo alargado ou bífido**; **III** duplicação completa com metacarpo (a mais rara). O Lovell and Winter (p. 949) e o HEBERT aplicam à pós-axial (II = duplicação falangeana sobre cabeça de metacarpo única ou bífida). É o tipo **II** que a UFG 2021 descreveu.
 
-!questoes central=mao-1003 treino=mao-2533
+!questoes central=mao-1003 relacionadas=pediatria-0804 treino=mao-2533
 conceito: Pré-axial = lado radial, predomínio em brancos; pós-axial = lado ulnar, predomínio em negros; STELLING e TUREK: I partes moles, II ligação a falange ou metacarpo alargado ou bífido, III raio completo.
 como: O SIMÃO 2021 perguntou a epidemiologia pelo Green; a UFG 2021, o tipo de TUREK do dedo articulado com metacarpo ou falange alargada.
 armadilha: Inverter lado e raça, ou dar o tipo III a qualquer dedo com osso.

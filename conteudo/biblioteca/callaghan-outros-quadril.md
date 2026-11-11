@@ -528,7 +528,7 @@ Ou seja: Campbell e CALLAGHAN tratam a sobrecarga vizinha como fato estabelecido
 
 No quadril neuromuscular, a artrodese é raramente indicada e fica contraindicada quando o outro quadril está doente ou há deformidade da coluna (The Adult Hip, cap. 74, p. 957), pelo mesmo raciocínio: quem compensaria já está comprometido.
 
-!questoes central=quadril-0503
+!questoes central=quadril-0503 relacionadas=quadril-0501
 conceito: O quadril artrodesado sobrecarrega a coluna lombar, o joelho ipsilateral e o quadril contralateral; a dor lombar é a mais frequente (75%, contra 54% do joelho), embora joelho e quadril contralateral sejam os que mais exigem cirurgia.
 como: O TARO de 2006 afirmou que o joelho ipsilateral é o segmento com mais sobrecarga e sintomas dolorosos a longo prazo na artrodese do quadril.
 armadilha: Lembrar que o joelho do mesmo lado sofre e aceitar que ele sofre mais que todos; quem lidera é a coluna lombar.

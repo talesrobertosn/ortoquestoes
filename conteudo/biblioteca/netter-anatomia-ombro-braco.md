@@ -289,7 +289,7 @@ Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 1, Fig. 1.113, p
 | supraclaviculares | ramo medial a 2,7 cm da esternoclavicular; lateral a 1,9 cm da acromioclavicular |
 !fim
 
-!questoes central=ombro-cotovelo-0542 relacionadas=ombro-cotovelo-0072,ombro-cotovelo-0456,ombro-cotovelo-0323
+!questoes central=ombro-cotovelo-0542 relacionadas=ombro-cotovelo-0072,ombro-cotovelo-0456,ombro-cotovelo-0323,mao-0574
 conceito: O axilar cruza o deltoide cerca de 5 cm abaixo do acrômio e 3,5 cm abaixo do tubérculo maior; o musculocutâneo perfura o coracobraquial e termina como cutâneo lateral do antebraço; o radial perfura o septo lateral na junção do terço médio com o distal, é lesado em 12% das fraturas da diáfise e se recupera sozinho em 91%.
 como: O ENARE R4 2025 perguntou o trajeto do axilar nas vias do úmero proximal; o TARO 2022, o dermátomo do ramo sensitivo do musculocutâneo; o TARO 2024, o mediano numa imagem; o TARO 2025, o lacertus fibrosus.
 armadilha: Dividir o deltoide além de 5 cm, ou achar que o musculocutâneo dá sensibilidade ao braço.

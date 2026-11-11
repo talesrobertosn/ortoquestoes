@@ -348,7 +348,7 @@ como: O TEOT 2024 perguntou o TT-TG que indica realinhamento distal no adulto se
 armadilha: Marcar 15 mm, que é o corte para a tróclea displásica, ou 25 mm, que não aparece nos livros.
 !fim
 
-!questoes central=trauma-1018
+!questoes central=trauma-1018 relacionadas=trauma-1067
 conceito: Com tróclea displásica, TT-TG acima de 15 mm já indica osteotomia da tuberosidade; com tróclea normal, o corte é 20 mm.
 como: O TARO 2026 cruzou o valor de 15 mm com tróclea normal e displásica nas quatro alternativas.
 armadilha: Aplicar o 15 mm à tróclea normal, que só se opera acima de 20 mm.

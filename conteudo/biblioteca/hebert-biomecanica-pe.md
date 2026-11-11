@@ -225,7 +225,7 @@ A combinação é perversa: mais carga, menos área e cartilagem mais fina. O qu
 
 O coxim plantar merece uma frase. O HEBERT (cap. 21.1) o define como estrutura especializada em **receber e amortecer o impacto do peso do corpo na fase do toque do calcâneo**, com cargas de até sete vezes o peso. É a primeira estrutura a receber o choque do primeiro rolamento; na atrofia do idoso, a tuberosidade fica exposta a pressões anômalas, com periostite e fratura de estresse.
 
-!questoes central=pediatria-0191
+!questoes central=pediatria-0191 relacionadas=pe-tornozelo-0346
 conceito: O tornozelo recebe cerca de 5 vezes (5,5 vezes no Campbell) o peso corporal na marcha normal, com área de contato menor e cartilagem mais fina que o joelho.
 como: O TARO 2023 perguntou a carga suportada pelo tornozelo na marcha normal, com alternativas de meio, uma, duas e cinco vezes o peso.
 armadilha: Pensar que o tornozelo, por estar "embaixo de tudo", recebe só o peso corporal; a carga articular soma o peso à força muscular do tríceps.

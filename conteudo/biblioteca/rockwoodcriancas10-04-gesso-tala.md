@@ -409,7 +409,7 @@ Os números são do Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 
 
 **Gesso sobre feridas e fios.** Gaze só sobre a ferida, algodão estéril que estica com o edema; curativo não aderente. Pontas dos fios dobradas, feltro estéril ou curativo com antibiótico no orifício, algodão sobre os fios (protetores de fio que se soltam viram pontos de pressão). Na técnica de fios e gesso, os fios incorporados funcionam como fixador externo e saem com o calo, sem tirar o gesso.
 
-!questoes treino=pediatria-1371,pediatria-1379,pediatria-1146
+!questoes relacionadas=conceitos-basicos-0047 treino=pediatria-1371,pediatria-1379,pediatria-1146
 conceito: Abrir o gesso de paris de um lado tira 40% a 60% da pressão, e o algodão mais 10% a 20%; a cunha corrige a fratura fresca com uma ponte no ápice; a serra queima quando desliza, com gesso grosso, pouco algodão ou lâmina gasta.
 como: Questões de projeção; nenhuma questão oficial do conjunto analisado cobrou a abertura, a janela, a cunha ou a retirada do gesso.
 armadilha: Abrir o gesso e deixar o algodão, ou deslizar a serra ao longo do gesso.

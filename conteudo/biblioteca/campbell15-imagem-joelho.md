@@ -154,7 +154,7 @@ O Campbell (cap. 50, p. 1983 a 1987 aprox.) situa a fabela no canto posterolater
 | Fabela | perfil, atrás do côndilo lateral | ossículo corticado, cabeça lateral do gastrocnêmio |
 !fim
 
-!questoes central=joelho-0105
+!questoes central=joelho-0105 relacionadas=trauma-1046
 conceito: HUMPHRY passa à frente do LCP e WRISBERG atrás; ambos vão do corno posterior do menisco lateral ao côndilo femoral medial.
 como: O TEOT 2023 mostrou um sagital com a seta na faixa escura logo à frente do LCP e pediu o nome entre intermeniscal, HUMPHRY, WRISBERG e cruzado anterior.
 armadilha: Trocar HUMPHRY por WRISBERG; a regra é anterior para HUMPHRY e posterior para WRISBERG.

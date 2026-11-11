@@ -334,7 +334,7 @@ Na artroscopia, o Campbell (cap. 56, p. 2344) dá a pista: se a **borda livre in
 | Sensibilidade na criança | geral | RM 38,9% contra exame físico 88,9% | Lovell and Winter |
 !fim
 
-!questoes central=joelho-0241
+!questoes central=joelho-0241 relacionadas=pediatria-0491
 conceito: Os sinais indiretos do discoide lateral na radiografia são espaço lateral alargado, côndilo lateral quadrado, platô lateral em taça, hipoplasia da espinha tibial lateral e cabeça da fíbula alta.
 como: Uma prova de Ortopedia ofereceu as quatro combinações de hipoplasia ou hiperplasia da espinha tibial lateral com cabeça fibular alta ou baixa.
 armadilha: Inverter um dos dois sinais: a espinha é hipoplásica (não hiperplásica) e a fíbula é alta (não baixa).

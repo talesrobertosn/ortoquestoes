@@ -355,7 +355,7 @@ armadilha: Avaliar a congruência e o diâmetro das corticais no foco: é o sina
 
 **Joelho flutuante e outras combinações.** Tíbia e fêmur pela mesma incisão retrógrada, fêmur primeiro. Fêmur distal articular: no estável, a articular primeiro (atenção aos parafusos no caminho da haste; parafusos sozinhos desviaram 40% numa série); no grave, a diáfise primeiro. Diáfise com aparelho extensor (trauma do painel): haste, de preferência retrógrada, e depois o extensor.
 
-!questoes central=trauma-0568 relacionadas=trauma-0748,trauma-0115
+!questoes central=trauma-0568 relacionadas=trauma-0748,trauma-0115,trauma-1158
 conceito: Na fratura por projétil de baixa velocidade, a haste intramedular é o tratamento de escolha e a ferida é tratada como fechada; alta velocidade e espingarda pedem desbridamentos seriados antes da haste.
 como: O TEOT 2024 perguntou o método preferencial de estabilização definitiva na fratura por projétil de baixa energia (haste intramedular, contra placa em ponte e fixadores). O TEOT 2025 e o TARO 2016 cobraram o joelho flutuante (lesões de pior evolução; frequência de exposição).
 armadilha: Fixador externo na arma de fogo de baixa energia: é para a alta velocidade, até os desbridamentos terminarem.

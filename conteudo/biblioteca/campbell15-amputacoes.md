@@ -352,7 +352,7 @@ Os Campbell's Concepts (p. 702) chamam o SYME de amputação **"implacável"**: 
 
 O HEBERT (cap. 25) acrescenta o olhar pediátrico: na criança, sobretudo abaixo de 5 anos, o SYME é feito **sem ressecar os maléolos** nem a cartilagem da tíbia, que remodelam com o crescimento; a complicação mais comum é a **migração posterior do coxim** pela tração do Aquiles, minimizada pela tenotomia. O BOYD retira o tálus e funde o calcâneo à epífise distal da tíbia **preservando a fise**, sem migração e com menos encurtamento. Na hemimelia fibular, SYME ou BOYD são a cirurgia de escolha.
 
-!questoes central=conceitos-basicos-0167
+!questoes central=conceitos-basicos-0167 relacionadas=conceitos-basicos-0301
 conceito: SARMIENTO modificou o SYME seccionando a tíbia e a fíbula cerca de 1 a 1,5 cm acima do tornozelo e retirando os dois maléolos, para um coto menos bulboso e um encaixe expansível sem janela.
 como: O TARO 2024 descreveu a transecção a cerca de 1,3 cm da articulação com excisão dos maléolos e deu BOYD, SYME, WAGNER e SARMIENTO como alternativas.
 armadilha: Marcar SYME, cujo corte é 0,5 a 1 cm acima e passa pela cúpula, sem excisão programada dos maléolos; WAGNER é o SYME em dois tempos, que tira os maléolos só no segundo tempo.
