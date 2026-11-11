@@ -702,6 +702,12 @@ export function Atlas({ segmentos, consulta, aoFechar }: { segmentos: string[]; 
 
       {/* camadas do modo */}
       <div className="atlas__camadas" role="group" aria-label="Camadas">
+        {corpo && (
+          <div className="at-sexo" role="radiogroup" aria-label="Sexo do modelo">
+            <button type="button" role="radio" aria-checked={!ligados.has('feminino')} onClick={() => ligados.has('feminino') && mudarGrupo('feminino', false)} title="Pelve masculina">Masculino</button>
+            <button type="button" role="radio" aria-checked={ligados.has('feminino')} onClick={() => { if (!ligados.has('feminino')) { mudarGrupo('feminino', true); if (!ligados.has('orgao') && podeLigar('orgao')) mudarGrupo('orgao', true) } }} title="Pelve feminina: útero, colo, ovários e tubas">Feminino{fechado('feminino') && <Icone nome="cadeado" tamanho={11} />}</button>
+          </div>
+        )}
         {gruposBarra.map((g, i) => (
           <button key={g} type="button" aria-pressed={ligados.has(g)} onClick={() => alternarGrupo(g)} title={GRUPOS[g].rotulo}
             className={corpo && SO_CORPO.has(g) && !SO_CORPO.has(gruposBarra[i - 1]) ? 'at-camada--inicio-corpo' : undefined}>

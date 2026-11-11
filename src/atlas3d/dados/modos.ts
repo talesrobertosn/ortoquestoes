@@ -10,7 +10,8 @@ export type Modo = 'ortopedia' | 'corpo'
 /** Camadas que aparecem na barra em cada modo (na ordem da tela). */
 export const GRUPOS_DO_MODO: Record<Modo, Grupo[]> = {
   ortopedia: ['osso', 'musculo', 'ligamento', 'nervo', 'arteria', 'veia', 'fascia'],
-  corpo: ['osso', 'musculo', 'ligamento', 'nervo', 'arteria', 'veia', 'orgao', 'encefalo', 'linfatico', 'dente', 'fascia', 'regiao', 'feminino'],
+  // a pelve feminina não aparece como camada: é a chave Masculino | Feminino do Corpo inteiro
+  corpo: ['osso', 'musculo', 'ligamento', 'nervo', 'arteria', 'veia', 'orgao', 'encefalo', 'linfatico', 'dente', 'fascia', 'regiao'],
 }
 /** As camadas que só existem no Corpo inteiro (busca e quiz da Ortopedia ficam sem elas). */
 export const SO_CORPO = new Set<Grupo>(['orgao', 'encefalo', 'linfatico', 'dente', 'regiao', 'feminino'])
@@ -29,9 +30,9 @@ export const SISTEMAS: Sistema[] = [
   { id: 'endocrino', nome: 'Glândulas endócrinas', resumo: 'Tireoide, paratireoides, suprarrenais, hipófise', nos: ['Glândulas endócrinas'], cor: '#8e5bd1' },
   { id: 'nervoso-central', nome: 'Encéfalo e medula', resumo: 'Lobos, tronco, cerebelo e tratos da medula', nos: ['Sistema nervoso central'], cor: '#d5a2a8' },
   { id: 'nervos', nome: 'Nervos', resumo: 'Cranianos, plexos e nervos periféricos', nos: ['Sistema nervoso periférico'], cor: '#e9bf3c' },
-  { id: 'sentidos', nome: 'Órgãos dos sentidos', resumo: 'Olho, orelha, nariz e língua', nos: ['Sense organs'], cor: '#4fb3a8' },
+  { id: 'sentidos', nome: 'Órgãos dos sentidos', resumo: 'Olho, orelha, nariz e língua', nos: ['Órgãos dos sentidos'], cor: '#4fb3a8' },
   { id: 'linfatico', nome: 'Linfático', resumo: 'Linfonodos, baço, timo e tonsilas', nos: ['Órgãos linfoides'], cor: '#5cb88a' },
-  { id: 'dentes', nome: 'Dentes', resumo: 'Incisivos, caninos, pré-molares e molares', nos: ['Teeth'], cor: '#bfb59a' },
+  { id: 'dentes', nome: 'Dentes', resumo: 'Incisivos, caninos, pré-molares e molares', nos: ['Dentes'], cor: '#bfb59a' },
   { id: 'regioes', nome: 'Regiões do corpo', resumo: 'A superfície dividida como no exame físico', nos: ['Regiões do corpo humano'], cor: '#d9a98c' },
 ]
 

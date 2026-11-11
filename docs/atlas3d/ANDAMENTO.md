@@ -78,3 +78,11 @@ Estudar, "Atlas 3D · Beta". Código em `src/atlas3d/` (motor, carregador, dados
 - Nomes em português de vasos e de estruturas fora do foco ortopédico (ver NOMES.md).
 - Modo estudo ("o que é isso?"), comparação lado a lado, comparação de lados.
 - Rádio distal do adulto: falta o capítulo do Rockwood na Biblioteca; hoje a ficha usa o resumo pediátrico.
+
+## 11/11/2026: Corpo inteiro, chave de sexo e páginas de SEO com imagens
+
+- Dois modos: **Ortopedia** (abertura, sempre) e **Corpo inteiro** (sistemas, órgãos, encéfalo, dentes, linfáticos e regiões; só assinante). A chave **Masculino | Feminino** fica na barra de camadas do Corpo inteiro e troca a pelve masculina pela feminina (HuBMAP).
+- Navegador por sistema (12 sistemas), Teste-se (quiz no modelo), nomes no modelo, salvar imagem e copiar link.
+- Nós da hierarquia que a TA2 deixava em inglês ganharam português no `MANUAL` de `preparar_extras.mjs` (dentes, órgãos dos sentidos, ramos da cerebral média etc.).
+- Imagens das páginas públicas: `scripts/atlas3d/capturas_seo.mjs` grava 20 capturas em `public/atlas3d/telas/` (rodar de novo quando a tela mudar; `CENAS=a,b` refaz só algumas).
+- Página nova `atlas-3d-online/` (corpo humano completo, galerias por sistema, sem o sistema reprodutor) e galerias nas páginas atlas-3d, esqueleto e músculos; cada imagem com alt, legenda e `ImageObject`; `sitemap-imagens-atlas.xml` listado no robots.txt.

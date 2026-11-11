@@ -38,7 +38,42 @@ Allow: /
 Sitemap: {SITE}sitemap.xml
 Sitemap: {SITE}sitemap-imagens.xml
 Sitemap: {SITE}sitemap-imagens-questoes.xml
+Sitemap: {SITE}sitemap-imagens-atlas.xml
 """
+
+
+# Páginas públicas do Atlas 3D (paginas_atlas_seo.py) com galerias de capturas reais do atlas.
+PAGINAS_ATLAS_IMAGENS = ["atlas-3d-online", "atlas-3d", "esqueleto-humano-3d", "musculos-do-corpo-humano-3d"]
+
+
+def mapa_de_imagens_do_atlas() -> int:
+    """sitemap-imagens-atlas.xml (11/11/2026): as capturas do Atlas 3D (public/atlas3d/telas/) de cada página
+    pública do atlas, com título e legenda tirados do alt e do figcaption, para o Google Imagens."""
+    from html import unescape
+    from xml.sax.saxutils import escape
+
+    linhas = []
+    total = 0
+    for pasta in PAGINAS_ATLAS_IMAGENS:
+        pagina = DIR_PUBLICO / pasta / "index.html"
+        if not pagina.exists():
+            continue
+        texto = pagina.read_text(encoding="utf-8")
+        figuras = re.findall(r'<img src="\.\./(atlas3d/telas/[^"]+)"[^>]*?alt="([^"]*)"[^>]*></a><figcaption>([^<]*)</figcaption>', texto)
+        if not figuras:
+            continue
+        blocos = "".join(
+            f"<image:image><image:loc>{escape(SITE + unescape(arquivo))}</image:loc>"
+            f"<image:title>{escape(unescape(alt))}</image:title><image:caption>{escape(unescape(legenda))}</image:caption></image:image>"
+            for arquivo, alt, legenda in figuras
+        )
+        total += len(figuras)
+        linhas.append(f"<url><loc>{SITE}{pasta}/</loc>{blocos}</url>")
+    xml = ['<?xml version="1.0" encoding="UTF-8"?>',
+           '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">',
+           *linhas, "</urlset>"]
+    (DIR_PUBLICO / "sitemap-imagens-atlas.xml").write_text("\n".join(xml) + "\n", encoding="utf-8")
+    return total
 
 
 def mapa_de_imagens_das_questoes() -> int:
@@ -167,7 +202,8 @@ def principal() -> int:
     (DIR_PUBLICO / "robots.txt").write_text(ROBOTS, encoding="utf-8")
 
     imagens = mapa_de_imagens_das_questoes()
-    print(f"sitemap.xml: {len(urls)} endereços, lastmod {data}; sitemap-imagens-questoes.xml: {imagens} imagens")
+    do_atlas = mapa_de_imagens_do_atlas()
+    print(f"sitemap.xml: {len(urls)} endereços, lastmod {data}; sitemap-imagens-questoes.xml: {imagens} imagens; sitemap-imagens-atlas.xml: {do_atlas} imagens")
     return 0
 
 

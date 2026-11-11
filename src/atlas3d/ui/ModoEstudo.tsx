@@ -31,7 +31,7 @@ export function ModoEstudo({ motor, estruturas, grupos, aoFechar, aoVerFicha }: 
   const recentes = useRef<string[]>([])
 
   // candidatas: na tela quando o teste começou (camadas e região), com nome em português e grandes o bastante para ver
-  const candidatas = useMemo(() => estruturas.filter((e) => grupos.has(grupoDe(e)) && motor.estaVisivel(e.id) && temNomePt(e) && tamanho(e) >= 8),
+  const candidatas = useMemo(() => estruturas.filter((e) => grupos.has(grupoDe(e)) && motor.estaVisivel(e.id) && temNomePt(e) && tamanho(e) >= 14),
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [estruturas, grupos, motor])
 

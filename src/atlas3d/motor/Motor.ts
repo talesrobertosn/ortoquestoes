@@ -626,7 +626,7 @@ export class Motor {
   }
 }
 
-const SO_MASCULINO = /prostate|seminal_gland|ductus_deferens|ejaculatory|testi(s|cular)|epididym|penis/
+const SO_MASCULINO = /prostate|seminal_gland|ductus_deferens|ejaculatory|testi(s|cular)|epididym|penis|^urethra$/
 
 function arquivoDe(camada: string) {
   const mapa: Record<string, string> = {

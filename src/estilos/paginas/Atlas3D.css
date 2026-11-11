@@ -713,3 +713,9 @@ body:has(.atlas) { overflow: hidden; }
 /* a seta do tutorial aponta para o botão "?" (computador) ou para Ferramentas (celular) */
 .gc::before { right: 6.8rem; }
 .atlas--estreita .gc::before { right: 3.6rem; }
+/* chave Masculino | Feminino no começo da barra do Corpo inteiro */
+.at-sexo { flex: none; display: inline-flex; align-items: center; gap: 0.1rem; margin-right: 0.45rem; padding: 0.15rem; border-radius: 999px; background: color-mix(in srgb, var(--texto) 6%, transparent); }
+.at-sexo button { min-height: 2rem !important; padding: 0 0.7rem !important; font-size: 0.82rem; }
+.at-sexo button[aria-checked="true"] { background: var(--superficie); color: var(--texto); box-shadow: 0 1px 2px rgba(16, 28, 26, 0.12), inset 0 0 0 1px var(--at-borda); }
+.at-sexo button[aria-checked="false"] { background: none; color: var(--texto-2); box-shadow: none; }
+.at-sexo button[aria-checked="true"] { background: #8a4b5a !important; color: #fff !important; box-shadow: 0 3px 10px -4px rgba(138, 75, 90, 0.8) !important; }
