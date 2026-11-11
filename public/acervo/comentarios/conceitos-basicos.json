@@ -3529,18 +3529,35 @@
   "conferido": false
  },
  "conceitos-basicos-0252": {
-  "conceito": "**O centro de rotação da angulação (CORA).** Paley sistematizou o planejamento da correção de deformidades. Toda deformidade angular tem um ponto em que a angulação \"acontece\": o **CORA**.\n\n**Como encontrar.**\n1. Traçar o **eixo proximal** do segmento (o eixo do fragmento acima da deformidade).\n2. Traçar o **eixo distal** (o eixo do fragmento abaixo).\n3. O **ponto em que os dois eixos se cruzam** é o CORA, e o ângulo entre eles é a magnitude da deformidade.\n\n**A regra da coerência.** Os dois eixos devem ser do **mesmo tipo**: **mecânico com mecânico** ou **anatômico com anatômico**. Misturar um eixo anatômico de um lado com um mecânico do outro gera um ponto que não corresponde a deformidade nenhuma. Paley e colaboradores descreveram o método nos planos frontal e sagital.\n\n| Osso | Relação entre eixos | Implicação |\n|---|---|---|\n| **Tíbia** | Eixos anatômico e mecânico quase **paralelos e muito próximos** | Na prática, pode-se usar qualquer um dos dois, desde que o mesmo nos dois fragmentos |\n| Fêmur | Eixos divergem cerca de 6 a 7 graus | É essencial saber qual se está usando |\n\n**Por que o CORA importa.**\n- **Osteotomia no CORA**: corrige angulação sem criar translação.\n- **Osteotomia fora do CORA**: corrige o ângulo, mas gera **translação** (deslocamento) secundária, a não ser que se translade intencionalmente o fragmento.\n- **CORA fora do osso** ou deformidade com dois CORAs indicam deformidade multiapical ou com translação.\n\n**Não confundir** com o ponto mais convexo da cortical: a cortical mais saliente nem sempre coincide com o cruzamento dos eixos, sobretudo em deformidades com translação.\n\n> CORA: cruzamento dos eixos proximal e distal do mesmo tipo (ambos mecânicos ou ambos anatômicos).",
-  "correta": "**B: No qual eixo mecânico proximal e distal se encontram.** O CORA é o cruzamento dos eixos proximal e distal; usando eixos mecânicos dos dois lados, mantém-se a coerência exigida pelo método.",
+  "conceito": "Para corrigir uma tíbia torta, o cirurgião precisa saber em que ponto girar o osso. Esse ponto é o CORA, e a questão quer saber como ele é achado; as alternativas erradas exploram o desenho do osso e a confusão entre os dois tipos de eixo.\n\n**O ponto de partida: dois eixos por osso.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 31), dá a cada osso longo um **eixo anatômico**, que passa pelo meio da diáfise, e um **eixo mecânico**, que liga os centros das duas articulações. A figura do Campbell mostra a diferença no membro inteiro: o eixo mecânico vai da cabeça femoral ao centro do tornozelo, e o eixo diafisário do fêmur fica cerca de 6 graus em valgo em relação a ele (Campbell's Operative Orthopaedics, 15ª ed., cap. 8, Fig. 8.14, p. 410). Na tíbia, ao contrário, os dois eixos praticamente se sobrepõem (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 20, p. 850).\n\n**Como se acha o CORA, na ordem do Rockwood.**\n1. Traçar o eixo do segmento proximal e o do segmento distal, os dois do mesmo tipo.\n2. Marcar o cruzamento: é o CORA, e o ângulo entre os eixos é a magnitude da angulação no plano.\n3. Olhar as articulações. Cruzamento no ponto óbvio da deformidade e articulações bem orientadas: deformidade **uniapical**. Cruzamento longe desse ponto, ou articulação mal orientada: existe um **segundo CORA** ou uma **translação**.\n\n**Por que não se mistura eixo.** O Rockwood é categórico: o anatômico ou o mecânico podem ser usados, mas não misturados. O eixo mecânico de um segmento é amarrado ao centro de uma articulação; o anatômico, ao centro da diáfise. No fêmur, em que eles divergem 5 a 7 graus e a metade proximal do eixo mecânico fica fora do osso, cruzar um com o outro dá um ponto que não corresponde a nenhuma deformidade real. Na tíbia o erro parece pequeno, e é por isso que a banca o escolheu como distrator.\n\n**O que a posição do CORA conta.** No painel A da figura do Rockwood, a tíbia em varo tem o CORA no nível da dobra, com a bissetriz passando por ele; todo ponto dessa bissetriz serve de eixo de correção sem criar translação. No painel B, o cruzamento cai fora do osso: na tíbia, isso significa deformidade multiapical, e o eixo do segmento do meio revela os dois CORAs. O mesmo raciocínio vale entre incidências: CORA no **mesmo nível** no AP e no perfil indica angulação num **plano oblíquo**; em **níveis diferentes**, angulação com **translação**. O Campbell (cap. 63, p. 2841 e 2856) acrescenta que o plano de deformidade máxima pode ser achado girando a perna sob fluoroscopia até ver a maior angulação.\n\nO passo a passo está na seção \"O CORA: definição e como achar\" do resumo, e a leitura em dois planos na seção \"Plano da deformidade, translação e multiapical\".",
+  "correta": "**B) No qual eixo mecânico proximal e distal se encontram.** Pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 31), o CORA é a intersecção do eixo proximal com o eixo distal do osso deformado, usando os dois anatômicos ou os dois mecânicos. Esta alternativa é a única que respeita essa regra; como na tíbia os eixos anatômico e mecânico coincidem quase totalmente (Tachdjian, cap. 20, p. 850), o ponto obtido com os mecânicos é o mesmo da diáfise.",
   "incorretas": {
-   "A": "**O ponto mais convexo da cortical** é uma referência visual que pode não coincidir com o cruzamento dos eixos, especialmente quando há translação.",
-   "C": "**Mecânico proximal com anatômico distal** mistura tipos de eixo, gerando um ponto sem significado.",
-   "D": "**Anatômico proximal com mecânico distal** mistura tipos de eixo e não define o CORA."
+   "A": "**Mais convexo da cortical da deformidade.** Confunde o ápice visual com o ponto geométrico. O Rockwood (cap. 31) define o CORA pelos eixos, e o resumo lista a cortical convexa entre o que o CORA não é. Ela pode servir como dobradiça de uma osteotomia de fechamento quando fica sobre a bissetriz, mas numa tíbia com translação ou dois ápices a cortical mais saliente não marca onde os eixos se cruzam.",
+   "C": "**No qual eixo mecânico proximal e anatômico distal se encontram.** Cruza um eixo preso ao centro da articulação com outro preso ao meio da diáfise, o que o Rockwood (cap. 31) proíbe. Na tíbia o ponto até cairia perto do certo, porque os eixos quase coincidem, mas o método não pode depender dessa sorte: no fêmur, com eixos separados por 5 a 7 graus, o cruzamento misto não tem significado.",
+   "D": "**No qual eixo anatômico proximal e mecânico distal se encontram.** É a mesma mistura trocada de lado, e por isso também não define o CORA (Rockwood, cap. 31). A banca põe as duas combinações mistas para ver se o candidato lembra que a regra vale nos dois sentidos, não para um eixo específico."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults, 9ª edição (Tornetta et al.), Cap. 30",
-   "Paley D, Herzenberg JE, Tetsworth K, McKie J, Bhave A. Deformity planning for frontal and sagittal plane corrective osteotomies. Orthop Clin North Am. 1994;25(3):425-465."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 31 (Principles of Malunion Treatment) (Fig. 31-8)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 8 (Arthroplasty of the Knee), p. 410 (Fig. 8.14)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 63 (Malunited Fractures), p. 2841 e 2856",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 20, p. 850",
+   "Resumo OrtoQuestões: Deformidades ósseas e alongamento"
   ],
-  "geradoEm": "2026-10-05",
+  "imagens": [
+   {
+    "arquivo": "joelho/campbell15-8-14-w41.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 8, Fig. 8.14, p. 410. Eixos do membro inferior: o eixo mecânico, da cabeça femoral ao centro do tornozelo, fica a 3° de valgo da vertical; o eixo diafisário do fêmur fica 6° em valgo em relação ao mecânico (9° da vertical) e o eixo anatômico da tíbia, 3° de varo da vertical; a linha articular é perpendicular à vertical.",
+    "largura": 681,
+    "altura": 1389
+   },
+   {
+    "arquivo": "conceitos-basicos/rwa10-31-8-u02.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 31, Fig. 31-8 (arquivo sem página impressa). Em A, tíbia com deformidade em varo: o eixo proximal e o eixo distal se cruzam no CORA, e a bissetriz tracejada passa por ele dividindo o ângulo ao meio. Em B, deformidade multiapical: o cruzamento dos eixos proximal e distal (CORA aparente, círculo branco) cai fora do osso, e o eixo do segmento do meio (tracejado) mostra os dois CORAs verdadeiros dentro do osso.",
+    "largura": 917,
+    "altura": 686
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "conceitos-basicos-0253": {
