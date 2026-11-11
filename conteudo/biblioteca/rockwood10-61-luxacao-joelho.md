@@ -274,7 +274,7 @@ Numa série de 35 reconstruções combinadas dos dois cruzados, o Lachman e o pi
 
 > Na prova: o problema mais comum depois de reconstruir o cruzado posterior é a **frouxidão posterior residual**.
 
-!questoes central=joelho-0027,joelho-0269,trauma-1048 relacionadas=joelho-0013 treino=trauma-1628
+!questoes central=joelho-0027,joelho-0269,trauma-1048 relacionadas=joelho-0013,joelho-0288 treino=trauma-1628
 conceito: A reconstrução do cruzado posterior restaura bem menos a gaveta posterior do que a do cruzado anterior restaura o Lachman; a frouxidão posterior residual é o problema mais comum.
 como: O TARO cobrou a mesma ideia em 2013, 2016 e 2023, com perda de flexão, dor, lesão nervosa e instabilidade posterolateral como distratores.
 armadilha: Perda de flexão: a rigidez existe, mas, quando a instabilidade residual está entre as alternativas, é ela que a banca considera a mais comum.
