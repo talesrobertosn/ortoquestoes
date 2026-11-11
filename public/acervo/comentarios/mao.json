@@ -1918,14 +1918,28 @@
   "conferido": false
  },
  "mao-0090": {
-  "conceito": "### Pré-ganglionar × pós-ganglionar\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar (ruptura) |\n|---|---|---|\n| ==Horner== | ==presente== (T1) | ausente |\n| ==Tinel== | ==negativo== | positivo, avança com o tempo |\n| dor | **neuropática intensa** (desaferentação) | variável |\n| músculos proximais | romboides (dorsal da escápula), serrátil (torácico longo) **paralisados** | preservados |\n| hemidiafragma | pode estar paralisado (C5, frênico) | normal |\n| ENMG | **potencial sensitivo preservado** com anestesia | potencial sensitivo ausente |\n| mielo-TC / RM | pseudomeningocele | |\n\n### Por que o Tinel é negativo\n- O Tinel depende de axônios **regenerando** a partir do coto proximal.\n- Na avulsão, a raiz foi arrancada da medula: não há coto proximal viável.\n\n### Tratamento\n- Pré-ganglionar: sem reparo direto; ==transferências nervosas== (acessório, intercostais, frênico, contralateral C7, Oberlin).\n- Pós-ganglionar: enxertos a partir do coto proximal.\n\n> **Na prova:** Horner = ==pré-ganglionar com Tinel negativo==.",
-  "correta": "**Pré-ganglionar, Tinel negativo.**\n- Horner indica avulsão de T1.\n- Sem coto proximal viável, não há regeneração nem Tinel.",
+  "conceito": "A síndrome de HORNER é o conjunto de sinais de um olho que perdeu a inervação simpática: pálpebra caída, pupila pequena, falta de suor naquele lado do rosto e olho afundado na órbita. No plexo braquial ela não é um detalhe oftalmológico; é uma pista de onde a raiz se rompeu.\n\n**A imagem.** Foto de frente de um menino. A seta aponta o olho esquerdo: a **pálpebra superior está mais baixa** que a do lado direito e a **pupila é menor**. É a ptose com miose da síndrome de HORNER, no lado do plexo lesado.\n\n**Por que o HORNER aponta para a raiz arrancada.** O Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1150 e 1152), descreve a síndrome com **miose, ptose, anidrose e enoftalmia** e explica a ligação: o **gânglio simpático de T1 fica junto da raiz**, de modo que o HORNER se correlaciona com **avulsão de C8 e T1**. Avulsão é lesão **pré-ganglionar**: a raiz sai da medula, onde está o corpo do neurônio motor, e não pode ser reparada nem enxertada (p. 1150). Na criança, o capítulo de paralisia obstétrica (cap. 40, p. 1393) dá o mesmo sentido, avulsão das raízes inferiores, e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 405), atribui a síndrome à lesão dos simpáticos de T1. É mau prognóstico, e é o HORNER que separa NARAKAS III de IV.\n\n**Por que o TINEL fica negativo, olhando a figura.** A figura do Green mostra a raiz e o gânglio no forame (A), a avulsão da raiz na medula (B) e o estiramento depois do gânglio (C). O TINEL nasce de axônios em regeneração num coto proximal: percutir o neuroma provoca choque no território do nervo. Na avulsão (B) não há coto ligado à medula nem neuroma no pescoço, e o Green (p. 1151 e 1152) põe entre os sinais pré-ganglionares a **ausência de TINEL e de dor à percussão no pescoço**. Na lesão pós-ganglionar (C), o coto proximal continua ligado ao neurônio, forma neuroma, dói à percussão e o **TINEL avança** com a regeneração.\n\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar |\n|---|---|---|\n| HORNER | presente na avulsão de C8 e T1 | ausente |\n| TINEL e dor à percussão no pescoço | ausentes | presentes, TINEL que avança |\n| romboide e serrátil | paralisados nas raízes altas | preservados |\n| hemidiafragma | pode estar elevado | normal |\n| potencial sensitivo com pele anestesiada | preservado | ausente |\n\nOs sinais estão na seção \"A síndrome de HORNER\" do resumo.",
+  "correta": "**B) pré-ganglionares, com Tinel negativo.** A ptose com miose da foto é o HORNER, que o Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1150 a 1152), liga à avulsão de C8 e T1, porque o gânglio simpático de T1 fica junto da raiz. Na avulsão não há coto proximal nem neuroma, e por isso a ausência de TINEL e de dor à percussão no pescoço está entre os sinais pré-ganglionares do livro.",
   "incorretas": {
-   "A": "**Tinel errado.**\n- A avulsão não deixa coto que regenere.",
-   "C": "**Topografia errada.**\n- A lesão pós-ganglionar não produz Horner.",
-   "D": "**Erra os dois.**\n- Nem a topografia nem o Tinel conferem."
+   "A": "**Pré-ganglionares, com Tinel positivo** acerta o nível e erra o sinal. O TINEL depende de um coto proximal com axônios que regeneram; a avulsão arranca a raiz da medula e não deixa esse coto. O Green (cap. 34, p. 1151 e 1152) lista justamente a ausência de TINEL no pescoço como sinal de lesão pré-ganglionar.",
+   "C": "**Pós-ganglionares, com Tinel positivo** descreve a combinação verdadeira da ruptura depois do gânglio: neuroma no coto, dor à percussão e TINEL que avança (Green, cap. 34, p. 1152). Seria a resposta para um plexo com romboide e serrátil funcionando e sem HORNER. Com a ptose e a miose da foto, o nível é outro.",
+   "D": "**Pós-ganglionares, com Tinel negativo** erra as duas metades. A lesão pós-ganglionar não produz HORNER, porque o gânglio simpático de T1 continua ligado à medula, e quando o coto proximal existe o TINEL costuma estar presente."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), p. 1147 e 1150 a 1152 (Fig. 34.2)",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 40 (Pediatric Brachial Plexus Palsy), p. 1393 e 1394",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 405",
+   "Resumo OrtoQuestões: Plexo braquial e paralisia obstétrica"
+  ],
+  "imagens": [
+   {
+    "arquivo": "mao/green7-34-2.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 34, Fig. 34.2, p. 1147. A: a raiz e o gânglio da raiz dorsal no forame; B: avulsão da raiz na medula (lesão pré-ganglionar); C: estiramento depois do gânglio (pós-ganglionar); D: ruptura extraforaminal do nervo.",
+    "largura": 800,
+    "altura": 570
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "mao-0091": {
