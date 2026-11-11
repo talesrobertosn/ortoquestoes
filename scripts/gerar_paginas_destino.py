@@ -103,6 +103,9 @@ PAGINAS = [
 ]
 # Fora do menu do topo, mas com página própria (rodapé e sitemap).
 PAGINAS_EXTRAS = [("sobre", "Sobre o Orto Questões"),
+                  # Licença das imagens (11/11/2026): o Google pede "license" e "acquireLicensePage" no
+                  # ImageObject das imagens do blog (Metadados de imagens no Search Console); os dois apontam para cá.
+                  ("licenca-de-imagens", "Licença das imagens"),
                   # Atlas 3D (25/10/2026): páginas próprias em paginas_atlas_seo.py, para quem busca "atlas 3D" e "anatomia 3D"
                   ("atlas-3d", "Atlas 3D"), ("esqueleto-humano-3d", "Esqueleto humano 3D"), ("musculos-do-corpo-humano-3d", "Músculos em 3D")]
 
@@ -1544,6 +1547,48 @@ formas são o mesmo projeto.</p></section>""")
     return "\n".join(corpo), {"pasta": pasta, "titulo": titulo, "descricao": descricao, "faq": []}
 
 
+def pagina_licenca_imagens(d: dict) -> tuple[str, dict]:
+    """Licença das imagens do site. É o endereço de "license" e de
+    "acquireLicensePage" no ImageObject das imagens publicadas (blog), o que o
+    Google pede para mostrar o selo "Detalhes da licença" na busca de imagens."""
+    pasta = "licenca-de-imagens"
+    titulo = "Licença das imagens do Orto Questões: uso, crédito e autorização"
+    descricao = ("As radiografias, os esquemas de classificação e as telas publicados pelo Orto Questões têm direitos reservados. "
+                 "Veja como compartilhar, como dar o crédito e como pedir autorização para usar uma imagem.")
+    ld = ld_pagina(pasta, titulo, descricao, "Licença das imagens", d["data"], ["Licença de imagens", "Direitos autorais"])
+    corpo = [cabeca(pasta, titulo, descricao, ld)]
+    pedir = (f'escreva para <a href="mailto:{esc(CONTATO)}?subject=Uso%20de%20imagem">{esc(CONTATO)}</a> ou use a '
+             '<a href="../#/contato">página de contato</a>' if CONTATO else 'use a <a href="../#/contato">página de contato</a>')
+    corpo.append(heroi(
+        "Licença",
+        "Licença das imagens: <em>como usar e dar o crédito</em>",
+        "As radiografias comentadas, os desenhos de classificação e as telas do site publicados pelo Orto Questões "
+        "(ortoquestoes.com.br) são do Orto Questões, com todos os direitos reservados.",
+        "Licença das imagens",
+        [("Ver as radiografias do blog", "../blog/radiografias-e-classificacoes-de-ortopedia/", "principal"),
+         ("Pedir autorização", "#autorizacao", "claro")],
+        ["Direitos reservados", "Compartilhar o link é livre", "Autorização por e-mail"],
+    ))
+    corpo.append("""<section><h2>O que vale para as imagens</h2><ul class="lista">
+<li><strong>Direitos reservados.</strong> As imagens publicadas pelo Orto Questões (radiografias com explicação, esquemas
+desenhados, como o da classificação de Schatzker, e capturas de tela do site) não podem ser copiadas, editadas ou republicadas sem autorização.</li>
+<li><strong>Compartilhar o link é sempre livre.</strong> Mandar para colegas, citar em aula ou postar o endereço da página onde a imagem está
+não precisa de pedido nenhum.</li>
+<li><strong>Radiografias sem identificação.</strong> As radiografias são publicadas sem nome, data ou qualquer dado que identifique o paciente,
+apenas com finalidade de ensino.</li>
+<li><strong>Figuras de livros</strong> que aparecem nos comentários e resumos são de seus autores e editoras, com a fonte na legenda;
+elas não entram nesta licença e o pedido de uso vai para quem tem os direitos.</li>
+</ul></section>""")
+    corpo.append(f"""<section id="autorizacao"><h2>Como pedir autorização</h2>
+<p>Para usar uma imagem numa aula, apresentação, artigo ou material, {pedir} dizendo qual imagem (o endereço da página basta)
+e onde ela vai aparecer. A resposta vem pelo mesmo canal.</p>
+<p>Quando o uso for autorizado, o crédito é <strong>“Imagem: Orto Questões (ortoquestoes.com.br)”</strong>, com link para a página de origem
+quando o meio permitir.</p></section>""")
+    corpo.append(relacionados(pasta, [("../sobre/", "Sobre o Orto Questões", "Quem faz, missão e contato.")]))
+    corpo.append(rodape())
+    return "\n".join(corpo), {"pasta": pasta, "titulo": titulo, "descricao": descricao, "faq": []}
+
+
 # ---------------------------------------------------------------- llms.txt
 
 def llms(d: dict, paginas: list[dict], completo: bool) -> str:
@@ -1662,7 +1707,7 @@ def principal() -> int:
         print("erro: acervo vazio", file=sys.stderr)
         return 1
     geradores = [pagina_banco, pagina_teot, pagina_curso_preparatorio, pagina_provas, pagina_r1, pagina_simulado,
-                 pagina_flashcards, pagina_cirurgia_mao, pagina_sobre]
+                 pagina_flashcards, pagina_cirurgia_mao, pagina_sobre, pagina_licenca_imagens]
     from paginas_atlas_seo import GERADORES_ATLAS  # importa este módulo; por isso fica aqui dentro
     geradores += GERADORES_ATLAS
     paginas = []
