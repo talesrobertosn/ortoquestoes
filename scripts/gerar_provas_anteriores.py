@@ -7,11 +7,10 @@ por edição (/provas-anteriores/teot-2024/, /provas-anteriores/taro-2019/,
 Por que existem. Muita gente procura "TEOT anos anteriores", "provas anteriores
 do TARO", "TARO 2019", "provas anteriores de cirurgia da mão". As páginas de
 destino respondem pelo conjunto; nenhuma tinha endereço próprio para UMA edição.
-Cada página de edição é útil sem buscador nenhum: lista todas as questões da
-prova separadas por assunto, com o começo do enunciado e o link para a
-página da questão (enunciado, alternativas, gabarito e conceito, sem conta),
-mostra o que aquela edição cobrou por assunto e leva direto para fazer a prova
-no site. Nada de página feita só de palavra-chave (ver gerar_paginas_seo.py).
+Cada página de edição é útil sem buscador nenhum: mostra o que aquela edição
+cobrou por assunto e até 20 questões completas, com o gabarito e o comentário
+de cada alternativa (Tales, 11/11/2026: só uma amostra, senão a assinatura perde
+o sentido), e leva direto para fazer a prova inteira no site. Nada de página feita só de palavra-chave (ver gerar_paginas_seo.py).
 
 Regras (as mesmas de gerar_paginas_destino.py, de onde vem a moldura):
 - Números saem do acervo a cada deploy; datas de prova, nunca.
@@ -33,7 +32,8 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import gerar_paginas_destino as d  # noqa: E402
-from comum import DIR_PUBLICO  # noqa: E402
+import gerar_paginas_seo as seo  # noqa: E402
+from comum import DIR_ACERVO, DIR_PUBLICO, ler_json  # noqa: E402
 
 PASTA = "provas-anteriores"
 FAMILIAS = [
@@ -72,6 +72,43 @@ def pagina_questao(q: dict) -> str | None:
     return None
 
 
+# Até 20 questões completas por edição (Tales, 11/11/2026): a página mostra uma amostra da prova com o
+# comentário inteiro, e não mais a prova toda com o gabarito; o resto fica no site, para quem treina.
+# A escolha é fixa, em seo_questoes_completas.json (scripts/selecionar_completas.py).
+ABERTAS: dict[str, list[str]] = (ler_json(seo.ARQUIVO_COMPLETAS, {}) or {}).get("por_edicao", {})
+_COMENTARIOS: dict[str, dict] = {}
+
+
+def comentario(qid: str) -> dict:
+    if not _COMENTARIOS:
+        for arquivo in (DIR_ACERVO / "comentarios").glob("*.json"):
+            _COMENTARIOS.update(ler_json(arquivo, {}) or {})
+    return _COMENTARIOS.get(qid) or {}
+
+
+def questao_aberta(q: dict, n: int, assunto: str) -> str:
+    """Uma questão inteira: enunciado, figura, alternativas, gabarito e o comentário de cada alternativa."""
+    c = comentario(q["id"])
+    gabarito = q.get("gabarito")
+    textos = {a["letra"]: a["texto"] for a in q.get("alternativas") or []}
+    partes = [f'<article class="aberta" id="{d.esc(q["id"])}"><p class="aberta__rotulo">Questão {n} · {d.esc(assunto)}</p>',
+              f'<p class="aberta__enunciado">{d.esc(q.get("enunciado") or "")}</p>',
+              seo.figuras(q, "../", assunto, f"{q.get('prova')} {q.get('ano')}"),
+              '<ol type="A" class="aberta__alts">' + "".join(
+                  f'<li{" class=certa" if a["letra"] == gabarito else ""}>{d.esc(a["texto"])}</li>' for a in q.get("alternativas") or []) + "</ol>",
+              f'<details class="aberta__resposta"><summary>Gabarito: <strong>{d.esc(gabarito or "–")}</strong> · ver o comentário</summary>']
+    if c.get("conceito"):
+        partes.append('<div class="conceito"><p class="rotulo">A ideia da questão</p>' + seo.editorial(c["conceito"]) + "</div>")
+    if c.get("correta"):
+        partes.append(f'<div class="alt certa"><p class="rotulo">{d.esc(gabarito or "")} · {d.esc(textos.get(gabarito or "", "correta"))}</p>{seo.editorial(c["correta"])}</div>')
+    for letra, texto in sorted((c.get("incorretas") or {}).items()):
+        partes.append(f'<div class="alt"><p class="rotulo">{d.esc(letra)} · {d.esc(textos.get(letra, ""))}</p>{seo.editorial(texto)}</div>')
+    if c.get("referencias"):
+        partes.append('<p class="aberta__refs"><strong>Bibliografia:</strong> ' + d.esc("; ".join(c["referencias"])) + "</p>")
+    partes.append("</details></article>")
+    return "\n".join(partes)
+
+
 def subir(texto: str) -> str:
     """As páginas de edição ficam um nível abaixo: todo link relativo à raiz
     (escrito como "../x") passa a "../../x"."""
@@ -104,6 +141,23 @@ ESTILO = """
 background:var(--sup);border:1px solid var(--traco);text-decoration:none;color:var(--texto)}
 .questoes b{font-size:.86rem;color:var(--texto2);font-weight:700}
 .questoes span{font-size:.97rem}
+.aberta{padding:1.1rem 1.15rem;border-radius:16px;background:var(--sup);border:1px solid var(--traco);margin:0 0 1rem}
+.aberta__rotulo{margin:0 0 .4rem;font-size:.82rem;font-weight:800;color:var(--marca);text-transform:uppercase;letter-spacing:.04em}
+.aberta__enunciado{margin:0 0 .8rem;font-size:1.02rem;line-height:1.6}
+.aberta figure{margin:0 0 .8rem}.aberta figure img{max-width:100%;height:auto;max-height:24rem;border-radius:10px;border:1px solid var(--traco)}
+.aberta figcaption{font-size:.85rem;color:var(--texto2)}
+.aberta__alts{margin:0 0 .6rem;padding-left:1.4rem;display:grid;gap:.3rem}
+.aberta__resposta summary{cursor:pointer;font-weight:700;color:var(--marca);padding:.5rem 0}
+.aberta__resposta[open] .aberta__alts li.certa{font-weight:700}
+.aberta .conceito{padding:.9rem 1rem;border-radius:14px;background:var(--veu);margin:.4rem 0 .8rem}
+.aberta .alt{padding:.85rem 1rem;border-radius:14px;border:1px solid var(--traco);margin:0 0 .7rem}
+.aberta .alt.certa{background:var(--veu);border-color:transparent}
+.aberta .rotulo{margin:0 0 .35rem;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;color:var(--marca)}
+.aberta .alt p,.aberta .conceito p{margin:0 0 .55rem}
+.aberta table{width:100%;border-collapse:collapse;font-size:.9em}.aberta th,.aberta td{border:1px solid var(--traco);padding:.35rem .5rem;text-align:left;vertical-align:top}
+.aberta .tabela{overflow-x:auto;margin:.3rem 0 .9rem}.aberta .tabela table{min-width:28rem}
+.aberta .nota{border-left:3px solid var(--marca);padding:.2rem .8rem;margin:0 0 .7rem}
+.aberta__refs{font-size:.88rem;color:var(--texto2)}
 .questoes .anulada{color:var(--ouro-escuro);font-weight:700}
 .questoes .letra{font-style:normal;font-size:.86rem;font-weight:800;color:var(--marca,#14655e);justify-self:start;padding:.1rem .55rem;border-radius:999px;background:var(--veu,#e6efee);margin-top:.25rem}
 .vizinhas{display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap;margin-top:1.4rem}
@@ -142,7 +196,6 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
     validas = [q for q in qs if not q.get("anulada")]
     anuladas = len(qs) - len(validas)
     comentadas = sum(1 for q in qs if q["id"] in d.comentados())
-    ligadas = sum(1 for q in qs if pagina_questao(q))
     com_imagem = sum(1 for q in qs if q.get("imagens"))
     # Na cirurgia da mão tudo é "Mão e punho": o que separa as questões é o subtema.
     def assunto_de(q: dict) -> str:
@@ -156,10 +209,10 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
     comentado = "comentada" if fem else "comentado"
     anatomia = sum(1 for q in qs if "anatomia" in ((q.get("origem") or {}).get("arquivo") or "").lower())
     if prova == "TEOT":
-        titulo = f"Gabarito TEOT {ano} e prova comentada | Orto Questões"
+        titulo = f"TEOT {ano}: gabarito e questões comentadas | Orto Questões"
         tipo = "a prova teórica do título de especialista da SBOT" + (" e a prova de anatomia" if anatomia else "")
     elif prova == "TARO":
-        titulo = f"Gabarito TARO {ano} e prova comentada | Orto Questões"
+        titulo = f"TARO {ano}: gabarito e questões comentadas | Orto Questões"
         tipo = "a avaliação anual dos residentes da SBOT"
     else:
         titulo = f"{nome}: prova de cirurgia da mão com gabarito | Orto Questões"
@@ -172,13 +225,15 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
     else:
         extra = ""
     # "gabarito taro 2026" é a busca que mais traz gente depois do nome do site (Search Console, 11/11/2026).
-    descricao = (f"Gabarito {artigo} {nome} e todas as questões da prova, por assunto, com a letra da banca{extra}. "
-                 f"O que mais caiu: {principais}.")
+    n_abertas = len(ABERTAS.get(slug(prova, ano), []))
+    descricao = ((f"{nome}: {n_abertas} questões da prova comentadas na íntegra, com o gabarito da banca e a explicação de cada "
+                  f"alternativa. O que mais caiu: {principais}.") if n_abertas else
+                 (f"{nome}: as questões da prova com o gabarito da banca{extra}. O que mais caiu: {principais}."))
     faq = [
         (f"Onde ver o gabarito {artigo} {nome}?",
-         ("Nesta página, cada questão leva à sua página própria, com as alternativas, o gabarito da banca e o conceito-chave, sem conta."
-          if ligadas else "No site: faça a prova e, ao responder, veja o gabarito da banca de cada questão.")
-         + (" No site, depois de responder, o comentário percorre todas as alternativas." if comentadas else "")),
+         (f"Nesta página há {n_abertas} questões da prova com o gabarito e o comentário completo. " if n_abertas else "")
+         + "A prova inteira, com o gabarito da banca de cada questão, está no site: no modo prova, no tempo, ou no modo estudo"
+         + (", com o comentário de todas as alternativas depois de cada resposta." if comentadas else ".")),
         (f"Quantas questões tem {art} {nome} no acervo?",
          f"{d.num(len(qs))} questões transcritas do caderno"
          + (f", das quais {d.num(anuladas)} foram anuladas pela banca e ficam marcadas, sem contar no desempenho." if anuladas else ".")),
@@ -195,14 +250,14 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
 
     treino = d.link_treino(prova, [ano], area=area)
     corpo = [d.cabeca(pasta, titulo, descricao, ld, estilo=ESTILO)]
-    garantias = [f"{d.num(len(qs))} questões", "Gabarito da banca"]
-    if comentadas:
-        garantias.append("Comentário de cada alternativa" if comentadas == len(qs) else f"{d.num(comentadas)} comentadas")
+    garantias = ([f"{d.num(n_abertas)} comentadas aqui", f"{d.num(len(qs))} questões no site", "Gabarito da banca"] if n_abertas
+                 else [f"{d.num(len(qs))} questões no site", "Gabarito da banca"])
     corpo.append(heroi(
         "Prova anterior" + (" · cirurgia da mão" if mao else ""),
         f"{d.esc(nome)}: <em>gabarito e prova {comentado}</em>",
-        f"Todas as questões {artigo} {d.esc(nome)}, {d.esc(tipo)}, com o gabarito da banca e organizadas por assunto. "
-        "Abra cada uma para ver as alternativas e o conceito, ou faça a prova inteira no site, no tempo, e revise os erros depois.",
+        (f"{d.esc(nome)}, {d.esc(tipo)}: o que a prova cobrou e {n_abertas} questões comentadas na íntegra, com o gabarito da banca. "
+         if n_abertas else f"{d.esc(nome)}, {d.esc(tipo)}: o que a prova cobrou, por assunto. ")
+        + "A prova inteira fica no site, para fazer no tempo e revisar os erros depois.",
         nome,
         [(f"Fazer {art} {nome} no site", treino, "principal"), ("Criar conta grátis", d.CRIAR_CONTA, "claro")],
         garantias,
@@ -224,29 +279,22 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
 {'' if mao else '<p style="margin-top:1rem">Assuntos específicos que mais apareceram: ' + d.esc(", ".join(s for s, n in subtemas.most_common(8) if n > 1)) + '.</p>' if any(n > 1 for n in subtemas.values()) else ''}
 </section>""")
 
-    por_tema: dict[str, list[dict]] = defaultdict(list)
-    for q in qs:
-        por_tema[assunto_de(q)].append(q)
-    blocos = []
-    for tema, lista in sorted(por_tema.items(), key=lambda x: (-len(x[1]), x[0])):
-        itens = []
-        for q in lista:
-            marcas = ""
-            if anatomia and "anatomia" in ((q.get("origem") or {}).get("arquivo") or "").lower():
-                marcas += " · prova de anatomia"
-            if q.get("anulada"):
-                marcas += ' <span class="anulada">· anulada</span>'
-            assunto = (q.get("subtemas") or [tema])[0] if not mao else ", ".join((q.get("subtemas") or [])[1:]) or tema
-            texto = d.esc(d.resumir(q.get("enunciado") or "", 150))
-            rotulo = f"{d.esc(assunto)}{marcas}" if assunto != tema else marcas.lstrip(" ·")
-            letra = "" if q.get("anulada") or not q.get("gabarito") else f'<i class="letra">Gabarito: {d.esc(q["gabarito"])}</i>'
-            conteudo = (f"<b>{rotulo}</b>" if rotulo else "") + f"<span>{texto}</span>" + letra
-            destino = pagina_questao(q)
-            itens.append(f'<li><a href="{destino}">{conteudo}</a></li>' if destino else f"<li><div>{conteudo}</div></li>")
-        blocos.append(f'<h3>{d.esc(tema)} <small>({d.num(len(lista))})</small></h3><ul class="questoes">{"".join(itens)}</ul>')
-    corpo.append(f"""<section id="gabarito"><h2>Gabarito e questões {artigo} {d.esc(nome)}</h2>
-<p class="sub">{"Separadas por assunto, com a letra do gabarito da banca. Toque numa questão para ver as alternativas e o comentário, sem conta." if ligadas else "Separadas por assunto, com a letra do gabarito da banca. Para responder, faça a prova no site."}</p>
-<div class="familia">{"".join(blocos)}</div></section>""")
+    # Amostra aberta: as questões escolhidas, na ordem da prova, com o comentário; o resto fica no site.
+    abertas_ids = set(ABERTAS.get(slug(prova, ano), []))
+    abertas = [q for q in qs if q["id"] in abertas_ids]
+    fechadas = len(qs) - len(abertas)
+    if abertas:
+        itens = "".join(questao_aberta(q, i + 1, (q.get("subtemas") or [assunto_de(q)])[0]) for i, q in enumerate(abertas))
+        corpo.append(f"""<section id="questoes"><h2>{d.num(len(abertas))} questões {artigo} {d.esc(nome)} comentadas</h2>
+<p class="sub">Uma amostra da prova, de vários assuntos, com o enunciado, as alternativas e o comentário de cada uma. Tente responder antes de abrir o gabarito.</p>
+{itens}
+<div class="aviso"><p><strong>As outras {d.num(fechadas)} questões {artigo} {d.esc(nome)}</strong> estão no site, com o gabarito da banca e o
+comentário de cada alternativa. Faça a prova inteira no tempo ou treine por assunto, e o que errar volta na revisão.</p>
+<p style="margin-top:.6rem"><a class="botao principal" href="{treino}">Fazer {art} {d.esc(nome)} completa</a></p></div></section>""")
+    else:
+        corpo.append(f"""<section id="questoes"><h2>As questões {artigo} {d.esc(nome)}</h2>
+<div class="aviso"><p>As {d.num(len(qs))} questões {artigo} {d.esc(nome)} estão no site, com o gabarito da banca.</p>
+<p style="margin-top:.6rem"><a class="botao principal" href="{treino}">Fazer {art} {d.esc(nome)} no site</a></p></div></section>""")
 
     pos = anos.index(ano)
     anterior = anos[pos - 1] if pos > 0 else None
@@ -286,7 +334,7 @@ def pagina_indice(dados: dict, grupos: dict) -> tuple[str, dict]:
     n_mao = sum(len(por[p]) for p in provas_mao)
     titulo = "Provas anteriores do TEOT e do TARO com gabarito, ano a ano | Orto Questões"
     descricao = (f"Provas anteriores do TEOT ({d.faixa(anos_teot)}) e do TARO ({d.faixa(anos_taro)}) com gabarito e comentário, e {n_mao} provas de "
-                 "residência em cirurgia da mão. Cada edição com as questões, a letra da banca e o que mais caiu.")
+                 "residência em cirurgia da mão. Cada edição com 20 questões comentadas na íntegra e o que mais caiu.")
     faq = [
         ("Onde encontrar as provas anteriores do TEOT?",
          f"Aqui estão as provas do TEOT de {d.faixa(anos_teot)}, uma página por ano, com as questões separadas por assunto, "
