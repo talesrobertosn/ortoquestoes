@@ -52,7 +52,7 @@ A **cintura tem pouca ou nenhuma perfuração vascular**, e não entra vaso pela
 
 O capítulo agrupa os ossos do carpo pelo risco de necrose. **Escafoide, capitato e semilunar** têm o risco maior: dependem de um vaso único, e escafoide e capitato têm, além disso, irrigação **retrógrada** dos polos proximais. **Trapézio, piramidal, pisiforme e a maioria dos semilunares** recebem vasos por pelo menos duas faces não articulares com anastomoses constantes e têm risco baixo. **Trapezoide e hamato** ficam no meio, por falta de anastomose intraóssea. O semilunar aparece nos dois grupos porque cerca de 80% recebem vasos pelas faces palmar e dorsal e cerca de 20% só pela palmar.
 
-!questoes central=mao-0052 relacionadas=mao-0648 treino=mao-1669
+!questoes central=mao-0052 relacionadas=mao-0648 treino=mao-1669,mao-2418
 conceito: A maior parte da irrigação do polo proximal do escafoide entra pela crista dorsal, por ramos da artéria radial, e chega ao polo de forma retrógrada.
 como: O TARO 2016 pediu a crista por onde entra o sangue do polo proximal; o TARO 2006, em certo ou errado, afirmou que o risco de necrose é maior no escafoide e no capitato por terem suprimento vascular único. Essa questão de 2006 não tem gabarito no acervo; o capítulo sustenta a afirmação.
 armadilha: Crista palmar: o ramo volar entra pelo tubérculo e irriga só o terço distal.
@@ -300,7 +300,7 @@ Os objetivos são aliviar a dor, **corrigir a deformidade**, consolidar e talvez
 
 A fixação padrão é o **parafuso canulado de compressão**, por via **dorsal** no polo proximal e **volar** quando é preciso corrigir o alinhamento (cunha anterior com redução prévia do semilunar e fio radiolunar temporário). O parafuso consolidou mais que os fios (94% contra 77%) na pseudartrose instável.
 
-!questoes central=trauma-0122,trauma-0326,mao-0918,mao-1544 relacionadas=trauma-0875,mao-1471 treino=mao-1678
+!questoes central=trauma-0122,trauma-0326,mao-0918,mao-1544 relacionadas=trauma-0875,mao-1471 treino=mao-1678,mao-1782
 conceito: Matti-Russe é enxerto cortical não vascularizado por via volar, indicado quando não há encurtamento nem instabilidade do carpo; a pseudartrose da cintura com flexão pede via volar e enxerto estruturado.
 como: O TARO 2016 pediu o tipo de enxerto e a via; o SBOT-SP e a UFG 2019 pediram a indicação (sem reabsorção ou encurtamento, sem instabilidade); a USP-SP 2026 pôs a regra da cintura com flexão ao lado de condutas trocadas para o polo proximal e o SNAC. O TARO 2010 perguntou o plano do acesso de Matti-Russe (entre a artéria radial e o flexor radial do carpo); o capítulo descreve a via volar pelo flexor radial do carpo, sem detalhar o plano específico da técnica. A USP-SP 2024 mostrou tomografia de pseudartrose e pediu via, enxerto e fixação.
 armadilha: Matti-Russe com reabsorção significativa e DISI: sem enxerto em cunha, a técnica não devolve o comprimento.
