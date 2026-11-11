@@ -337,11 +337,11 @@ def pagina_indice(dados: dict, grupos: dict) -> tuple[str, dict]:
                  "residência em cirurgia da mão. Cada edição com 20 questões comentadas na íntegra e o que mais caiu.")
     faq = [
         ("Onde encontrar as provas anteriores do TEOT?",
-         f"Aqui estão as provas do TEOT de {d.faixa(anos_teot)}, uma página por ano, com as questões separadas por assunto, "
-         "o gabarito da banca e o que cada edição cobrou. No site, dá para fazer cada prova no tempo e ler o comentário de todas as alternativas."),
+         f"Aqui estão as provas do TEOT de {d.faixa(anos_teot)}, uma página por ano, com o que cada edição cobrou "
+         "e 20 questões comentadas na íntegra. No site, dá para fazer cada prova inteira no tempo e ler o comentário de todas as alternativas."),
         ("E as provas anteriores do TARO?",
          f"O acervo tem o TARO de {d.faixa(anos_taro)}, um ano por página. Os cadernos são divulgados pela Comissão de Ensino e Treinamento "
-         "da SBOT; aqui eles estão transcritos, com gabarito e comentário."),
+         "da SBOT; no site eles estão transcritos, com gabarito e comentário, e aqui cada ano mostra 20 questões comentadas."),
         ("Tem provas anteriores de cirurgia da mão?",
          "Sim, as provas de seleção para a residência em cirurgia da mão: " + ", ".join(nome_prova(p) for p in provas_mao)
          + ". As provas de título da SBCM e o SIMÃO não estão no acervo; para elas há OrtoQuestões Simulados no padrão das provas, "
@@ -359,7 +359,7 @@ def pagina_indice(dados: dict, grupos: dict) -> tuple[str, dict]:
     corpo.append(d.heroi(
         "Anos anteriores",
         "Provas anteriores <em>do TEOT, do TARO e de cirurgia da mão</em>",
-        "Uma página para cada edição: as questões separadas por assunto, o gabarito da banca e o que aquele ano mais cobrou. "
+        "Uma página para cada edição: o que aquele ano mais cobrou e 20 questões comentadas na íntegra, com o gabarito da banca. "
         "Escolha a prova e o ano, veja o que caiu e faça a prova no site, no tempo.",
         "Provas anteriores",
         [("Provas do TEOT", "#teot", "principal"), ("Provas do TARO", "#taro", "claro"), ("Cirurgia da mão", "#mao", "claro")],
