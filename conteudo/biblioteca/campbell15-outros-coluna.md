@@ -54,7 +54,7 @@ SCIWORA é diagnóstico de exclusão: avaliação e reanimação como em qualque
 
 A imobilização divide os autores. PANG e POLLACK recomendaram colete de GUILFORD por 3 meses e afastamento dos esportes, porque 15% das crianças sofreram uma segunda SCIWORA. BRESNAN, da mesma instituição, não encontrou déficit permanente por recorrência nem benefício do colete. O Tachdjian conclui que o risco é baixo e imobiliza apenas quem teve lesão neurológica significativa; o Lovell and Winter considera questionável a utilidade biomecânica do colete quando não há instabilidade documentada, mas exige acompanhamento neurológico próximo.
 
-!questoes central=coluna-0239 relacionadas=coluna-0280
+!questoes central=coluna-0239 relacionadas=coluna-0280,trauma-0094,coluna-0301,pediatria-0755
 conceito: Na SCIWORA a coluna elástica da criança se deforma além do limite da medula e volta ao lugar; o prognóstico é dado pelo estado neurológico inicial (lesão completa ou incompleta).
 como: O TARO 2012 perguntou a que se relaciona o prognóstico de recuperação; uma prova de Ortopedia pediu o mecanismo de trauma.
 armadilha: Marcar a ressonância ou a idade como o fator prognóstico. As duas se associam ao resultado, mas por refletirem a gravidade da lesão de apresentação.
@@ -175,7 +175,7 @@ A única diferença entre os livros está no grau IV: o Tachdjian põe o número
 
 Deformidade leve não se opera. Nas mais graves, os objetivos são a aparência e a abdução. O Campbell considera ideal operar **por volta dos 3 anos**, porque a cirurgia fica mais difícil com o crescimento e o risco de lesão do plexo braquial aumenta; o Tachdjian dá o limite de 8 anos como idade ótima. As duas técnicas clássicas são a de GREEN (liberação extraperiosteal dos músculos na escápula e reinserção mais abaixo) e a de **WOODWARD** (liberação das origens do trapézio, do elevador e dos romboides nos processos espinhosos e reinserção distal), preferida pelo Campbell por mobilizar mais e deixar cicatriz melhor. A complicação mais grave é a **paralisia do plexo braquial** (0% a 12,5%); nos casos graves e nas crianças mais velhas, a osteotomia da clavícula protege o plexo.
 
-!questoes central=coluna-0261
+!questoes central=coluna-0261 relacionadas=pediatria-0725
 conceito: CAVENDISH classifica a deformidade de SPRENGEL pelo exame físico, conforme a altura do ombro e da escápula (nivelado, quase nivelado, 2 a 5 cm, junto ao occipício).
 como: O TARO 2010 perguntou em que se baseia a classificação, oferecendo rotação, forma, altura e mobilidade.
 armadilha: Confundir com a mobilidade, que piora com o grau mas não o define, ou com a classificação de RIGAULT, que também mede altura, só que na radiografia.
@@ -281,7 +281,7 @@ A escoliose é a manifestação esquelética mais comum da neurofibromatose do t
 
 O mecanismo dos sinais distróficos é em parte mecânico: neurofibromas intraespinais e paraespinais e a **ectasia dural** (alargamento do saco dural) erodem o osso por dentro. Por isso, antes de operar, o Campbell exige excluir lesão intraespinal. O Tachdjian chama a atenção para a modulação: uma curva não distrófica em criança pequena pode adquirir sinais distróficos com o tempo, e o acompanhamento precisa procurar por eles.
 
-!questoes central=coluna-0338 relacionadas=coluna-0093
+!questoes central=coluna-0338 relacionadas=coluna-0093,coluna-0256
 conceito: A escoliose distrófica da neurofibromatose do tipo 1 é curta, de angulação aguda, precoce e progressiva; colete não funciona.
 como: O TARO 2006 apresentou a afirmação para julgar certo ou errado.
 armadilha: Achar que toda escoliose da neurofibromatose é distrófica; a não distrófica se comporta como a idiopática.

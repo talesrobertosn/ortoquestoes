@@ -140,7 +140,7 @@ O Green (cap. 34, pp. 1151 e 1152) lista: **romboide e serrátil paralisados** (
 | dor à percussão, anidrose no território, TINEL que avança | neuroma periférico | pós-ganglionar |
 !fim
 
-!questoes central=mao-1428 relacionadas=mao-0797,mao-0108,mao-0985,mao-1522,mao-0154,mao-0414
+!questoes central=mao-1428 relacionadas=mao-0797,mao-0108,mao-0985,mao-1522,mao-0154,mao-0414,pediatria-0802
 conceito: Romboide e serrátil paralisados, HORNER, diafragma elevado, paraespinais atróficos e ausência de dor à percussão no pescoço sugerem lesão pré-ganglionar; a ancoragem de C5-C6 é mais forte que a de C8-T1.
 como: A USP-SP 2024 pediu a afirmação certa sobre lesão pré-ganglionar e o sinal de gravidade no C5-C6; o INTO 2023, o significado da perda de romboide e serrátil; o TEOT 2021, o músculo que denuncia lesão pré-ganglionar na criança; a UFG 2020, o nervo da escápula alada; o TEOT 2023 e 2025, a protração da escápula.
 armadilha: Dizer que a ancoragem de C8-T1 é mais forte, que a cabeça desvia para o lado da lesão, que o HORNER é parassimpático, ou escolher trapézio (acessório) e tríceps como sinal pré-ganglionar.
@@ -151,7 +151,7 @@ alerta: `mao-0797` está sem gabarito; o Green (p. 1151) chama a perda de romboi
 
 No Green (cap. 34, pp. 1150 e 1152) são quatro: **miose, ptose, anidrose e enoftalmia**; o Tachdjian (p. 405) cita ptose, miose e enoftalmia, por lesão dos simpáticos de T1. A pupila é **pequena** (midríase não entra) e a anidrose é **falta** de suor. O prognóstico é ruim: avulsão das raízes inferiores (Green, cap. 40, p. 1393), **forte indicador de mau resultado** (Campbell, p. 1311). É o HORNER que separa NARAKAS III de IV.
 
-!questoes central=mao-0721 relacionadas=mao-0671,mao-0438,mao-0090
+!questoes central=mao-0721 relacionadas=mao-0671,mao-0438,mao-0090,ombro-cotovelo-0500
 conceito: HORNER = ptose, miose, anidrose e enoftalmia, por lesão simpática junto de T1; indica avulsão de C8-T1 e mau prognóstico.
 como: O IAUPE 2025 pediu a tríade; a FMRP-USP 2026, o sinal que não faz parte (midríase); o TARO 2025, o tipo de alteração do suor e o prognóstico na paralisia obstétrica.
 armadilha: Marcar midríase, hiperidrose ou bom prognóstico; ou lembrar a síndrome como parassimpática.
@@ -315,7 +315,7 @@ No ERB-DUCHENNE (Tachdjian, p. 405), o membro fica em **adução e rotação int
 
 O Tachdjian (p. 404) põe no grupo 2 também a falta de extensão do cotovelo; o Campbell (p. 1310) acrescenta um tipo V, o KLUMPKE isolado (C8-T1), raro (menos de 1%). Na criança, **C5-C6 é 46%** e **C5-C7, 29%**, em geral pós-ganglionares; o global é o menos comum, com **avulsões de C8-T1** (Green, cap. 40, p. 1394). O HORNER vem dos simpáticos de **T1** (Tachdjian, p. 405), não de C4, C6 e C7.
 
-!questoes central=mao-0033 relacionadas=mao-0530,mao-0580,mao-1124,mao-0062
+!questoes central=mao-0033 relacionadas=mao-0530,mao-0580,mao-1124,mao-0062,pediatria-0745
 conceito: NARAKAS I = C5-C6 (90% de recuperação espontânea, completa em 1 a 8 semanas); II = C5-C7 (gorjeta de garçom); III = total sem HORNER; IV = total com HORNER.
 como: O TARO 2021 e 2010 pediram o grupo 2; o ENARE R4 2024, a afirmação correta entre NARAKAS, HORNER e postura do cotovelo; a PUC-SP 2021, o grupo com 90% de recuperação; o TARO 2016, o tipo que se recupera entre a primeira e a oitava semana.
 armadilha: Pôr C5-C6 no grupo 2, chamar o grupo 2 de lesão isolada do tronco superior, dizer que o grupo 3 tem HORNER, ou que no C5-C6 o cotovelo fica em posição intermediária (isso é com C7).

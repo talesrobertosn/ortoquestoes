@@ -405,7 +405,7 @@ As manchas café com leite estão em mais de 90% e têm **bordas lisas**, difere
 
 O **arqueamento anterolateral da tíbia** que evolui para fratura e **pseudartrose congênita da tíbia** está ligado à NF1 em **até 55%** no Tachdjian, e a deformidade pode aparecer antes de qualquer mancha (p. 1874). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31), dá incidência de 1 em 250.000 e associação de **50% a 90%** com estigmas de NF (p. 1073 aprox.). Por isso, diante de um recém-nascido com tíbias arqueadas para a frente e para fora, a associação esperada é **NF1 com pseudartrose congênita da tíbia**, não NF2.
 
-!questoes central=pediatria-0062 relacionadas=pediatria-0289,pediatria-0330
+!questoes central=pediatria-0062 relacionadas=pediatria-0289,pediatria-0330,tumores-0012
 conceito: A NF1 é a forma periférica (cromossomo 17) e concentra as manifestações ortopédicas: escoliose, arqueamento anterolateral e pseudartrose congênita da tíbia.
 como: O TARO 2016 perguntou duas vezes se a NF1 é central ou periférica e se tem manifestações ortopédicas frequentes; o CET-PR e o TEOT 2025 mostraram tíbias arqueadas e pediram a associação.
 armadilha: Chamar a NF1 de central ou ligar a pseudartrose da tíbia à NF2.

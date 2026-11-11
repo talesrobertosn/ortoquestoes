@@ -207,7 +207,7 @@ O resto da aula são os três eixos, que caem em outras provas e completam o rac
 
 O Tachdjian acrescenta que os ossos proximais (cintura e úmero) se formam antes da diferenciação da crista, enquanto os ossos distais e os dedos dependem dela, e que o membro superior anda 1 a 2 dias na frente do inferior. No Campbell, a placa da mão está presente no dia 31 e as fendas entre os raios se completam, por morte celular programada, até o dia 36.
 
-!questoes central=ombro-cotovelo-0243
+!questoes central=ombro-cotovelo-0243 relacionadas=conceitos-basicos-0038,conceitos-basicos-0297
 conceito: Mesoderma da placa lateral = ossos e tecido conjuntivo do membro (cartilagem, tendão); mesoderma somítico = músculos.
 como: O TEOT 2024 perguntou o que o mesoderma lateral forma no membro superior.
 armadilha: Incluir músculo no pacote do mesoderma lateral.
@@ -279,7 +279,7 @@ A segunda pergunta clássica é quanto do olécrano pode ser retirado sem soltar
 
 O Campbell (cap. 63, p. 2881) não dá porcentagem; dá uma regra radiográfica para a consolidação viciosa. Na radiografia de perfil com 90 graus de flexão, traça-se uma linha pelo eixo longitudinal do úmero atravessando a articulação: **devem sobrar pelo menos 0,3 cm de olécrano atrás dessa linha**, o bastante para impedir a subluxação anterior da ulna proximal; o resto pode ser excisado, com o tríceps reinserido com firmeza. O livro desaconselha a osteotomia de realinhamento nesses casos, que quase sempre piora a função.
 
-!questoes central=ombro-cotovelo-0506 relacionadas=ombro-cotovelo-0515
+!questoes central=ombro-cotovelo-0506 relacionadas=ombro-cotovelo-0515,ombro-cotovelo-0461
 conceito: Arco funcional de MORREY = 30 a 130 graus de flexoextensão e 50 graus de pronação e de supinação. Olécrano: até 80% da incisura pode ser excisada (MCKEEVER e BUCK) se o coronoide e as estruturas anteriores estiverem íntegros.
 como: O TARO 2006 cobrou os dois fatos em certo ou errado.
 armadilha: Trocar o arco por 0 a 130 ou 30 a 100; esquecer a condição do coronoide íntegro na excisão do olécrano.

@@ -2001,14 +2001,30 @@
   "conferido": false
  },
  "trauma-0094": {
+  "conceito": "A pergunta parece de trauma do adulto, mas a SCIWORA é uma lesão da infância, e a resposta sai de um experimento simples em cadáver: quanto a coluna da criança estica e quanto a medula aguenta.\n\n**O que é.** SCIWORA é a sigla de spinal cord injury without radiographic abnormality, a lesão medular sem alteração radiográfica. A criança chega com déficit neurológico, completo ou incompleto, e as radiografias (e, na descrição original, a tomografia) não mostram fratura nem desalinhamento. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 28, p. 1173 e 1174), atribui o termo a PANG e WILBERGER, em 1982.\n\n**O que acontece.** A coluna da criança é mais elástica que a medula. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, p. 1408 e 1409), dá os números: pela frouxidão ligamentar, a coluna infantil suporta **4 a 5 cm** de distração antes de romper, enquanto a medula suporta **4 a 5 mm**. A coluna se alonga, ultrapassa o limite do tecido neural, volta ao lugar quando a força cessa, e a imagem fica normal com a medula lesada. O mesmo capítulo atribui a lesão a uma **flexão com distração grave** da coluna cervical, sem ruptura das estruturas ósseas, e lembra que a cabeça grande da criança pequena é o peso que puxa o pescoço para a frente. Por isso o livro manda transportar a criança pequena com o tronco elevado, para que a cabeça não force a flexão cervical (p. 1411).\n\nNa figura do Tachdjian, à direita, está o retrato da lesão: radiografia em perfil sem nada de anormal num paciente paraplégico depois de acidente de carro, e a ressonância mostrando o aumento de sinal dentro da medula (seta). A ressonância é o exame que fecha o diagnóstico.\n\n**Os mecanismos nos três livros.**\n\n| Livro | Mecanismo descrito |\n|---|---|\n| Campbell, cap. 38, p. 1408 e 1409 | flexão com distração grave; lesão vascular por estiramento também proposta |\n| Lovell and Winter, cap. 21, p. 877 e 878 | quatro fatores: hiperextensão, flexão, distração e isquemia medular |\n| Rockwood and Wilkins, cap. 22 | estiramento da medula e ruptura ou infarto vascular |\n\n**A pegadinha.** As alternativas combinam duas palavras, e só uma delas junta os dois componentes que o Campbell descreve. Rotação é a força que luxa facetas; compressão é a força que achata o corpo vertebral e deixaria, justamente, a alteração radiográfica que a SCIWORA não tem.\n\n**O que mais cai.** Piora neurológica tardia em 50% no Campbell (15% de segunda SCIWORA no Tachdjian, cerca de um quarto no Lovell and Winter), e o prognóstico é dado pelo estado neurológico de apresentação, completo ou incompleto.\n\nO mecanismo, os números e a divergência entre os livros estão na seção \"SCIWORA: lesão medular sem alteração radiográfica\" do resumo.",
+  "correta": "**B) flexão e distração.** É o mecanismo que o Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, p. 1408 e 1409), atribui à SCIWORA: uma flexão com distração grave da coluna cervical da criança, que se alonga 4 a 5 cm sem romper enquanto a medula tolera só 4 a 5 mm. A coluna volta ao lugar e a radiografia sai normal. O Lovell and Winter coloca flexão e distração entre os quatro fatores do mecanismo, ao lado da hiperextensão e da isquemia.",
   "incorretas": {
-   "A": "A flexão com rotação produz as luxações facetárias.",
-   "C": "A compressão com rotação não é o mecanismo típico da SCIWORA.",
-   "D": "Compressão e distração são forças opostas, uma combinação incoerente."
+   "A": "**Flexão e rotação** é a combinação que tira as facetas articulares do lugar e produz luxação ou subluxação facetária, lesão que aparece na radiografia como desalinhamento. Seria a resposta numa pergunta sobre luxação facetária unilateral da coluna subaxial. Nenhum dos três livros pediátricos coloca a rotação no mecanismo da SCIWORA, e o que define a lesão é a ausência de alteração na imagem.",
+   "C": "**Compressão e rotação** é uma força que esmaga e torce o osso, gerando fratura do corpo vertebral, que a radiografia ou a tomografia mostram. Isso é o oposto da SCIWORA, cuja medula se lesa por estiramento enquanto o osso fica íntegro. Os livros falam em distração, flexão, hiperextensão e isquemia; a compressão não entra na lista.",
+   "D": "**Compressão e distração** junta duas forças contrárias no mesmo eixo: uma aproxima as vértebras, a outra as afasta, e a alternativa não descreve um mecanismo de lesão. A distração está certa e é o ponto central da SCIWORA (a coluna estica 4 a 5 cm, a medula 4 a 5 mm), mas vem acompanhada da flexão, não da compressão."
   },
-  "conceito": "A **SCIWORA** é a **lesão medular sem alteração radiográfica**: o paciente tem déficit neurológico, mas a radiografia e a TC são normais. É típica da **criança**, sobretudo abaixo de **8 anos**, e da coluna **cervical**.\n\n**Por que acontece**: a coluna infantil é **elástica**. Ligamentos frouxos, facetas horizontais e corpos vertebrais em cunha deixam a coluna **esticar até 5 cm**, enquanto a **medula** só aguenta cerca de **5 mm**. A coluna estira e volta ao lugar; a medula fica lesada.\n\n**O mecanismo mais comum**: **flexão e distração**. Também ocorrem hiperextensão e lesão isquêmica.\n\n**A investigação**: a **RM** mostra edema, hemorragia da medula ou lesão ligamentar. Por isso, muitos casos hoje são chamados de lesão sem alteração **neurorradiológica** só quando a RM também é normal.\n\n**O alerta**: o déficit pode aparecer **tardiamente** (horas a dias) em até metade dos casos.\n\n**O tratamento**: imobilização (colar ou halo) por cerca de 12 semanas e evitar atividades de risco por 6 meses. O prognóstico depende do déficit inicial e da RM; hemorragia medular indica pior evolução.\n\n**Na prova**: o mecanismo mais comum da SCIWORA é a **flexão e distração**.",
-  "correta": "Na flexão com distração, a coluna elástica da criança estica muito mais que a medula, que se lesa sem fratura.",
-  "geradoEm": "2026-10-04",
+  "alerta": "O gabarito oficial (B, flexão e distração) foi mantido e tem apoio no Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, p. 1408 e 1409). O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 21, p. 878), lista quatro fatores (hiperextensão, flexão, distração e isquemia) sem eleger um como o mais comum, e o Tachdjian fala em estiramento da coluna além do limite da medula.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 38 (Fractures and Dislocations in Children), p. 1408 e 1409",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 28 (Spinal Injuries), p. 1173 e 1174 (Fig. 28.26)",
+   "Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 21, p. 877 a 879",
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 22",
+   "Resumo OrtoQuestões: Outros temas de coluna: SCIWORA, choque neurogênico, SPRENGEL e escolioses especiais"
+  ],
+  "imagens": [
+   {
+    "arquivo": "pediatria/tach6-28-26.jpeg",
+    "legenda": "Fonte: Tachdjian's Pediatric Orthopaedics, 6ª ed. (2021), cap. 28 (Spinal Injuries), Fig. 28.26, p. 1173. SCIWORA: A, radiografia em perfil sem nenhuma anormalidade num paciente com paralisia dos membros inferiores depois de acidente de carro em alta velocidade; B, ressonância sagital com aumento de sinal dentro da medula (seta).",
+    "largura": 748,
+    "altura": 1138
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "trauma-0095": {
@@ -2250,7 +2266,7 @@
       "o-lado-medial-2c6e9a4b",
       "canto-posterolateral-a39e9622"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "ea6032e26a30175359dc2d9b4804975d78aca953cd4934fb5925ef3c768a743e"
     }
    ],
@@ -2723,7 +2739,7 @@
       "classificacao-de-schenck-6a3443c0",
       "a-arteria-poplitea-b9951f36"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "6e7ce3bfbf8e86a3e55b71fbb92f1195fd933d68950ed7824b222d944bd2831f"
     }
    ],
@@ -3131,14 +3147,29 @@
   "conferido": false
  },
  "trauma-0144": {
+  "conceito": "Para responder sem decorar, basta olhar o que está encostado na cabeça do rádio. Na MONTEGGIA a cabeça sai do lugar, e o nervo que dá a volta no colo do rádio é o primeiro a sofrer.\n\n**A anatomia do lugar.** O nervo radial desce entre o braquial e o braquiorradial e, na altura da cabeça do rádio, se divide em dois. O **ramo superficial** é sensitivo e segue sob o braquiorradial para o dorso da mão. O **interósseo posterior** é motor: contorna o **colo do rádio**, passa sob a **arcada de FROHSE** e entre as duas cabeças do supinador, e sai no dorso do antebraço para inervar os extensores (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Pathoanatomy, Nerves). Na figura, veja o nervo radial descendo junto do úmero, o ramo superficial seguindo o braquiorradial e o interósseo posterior mergulhando no supinador, logo abaixo do ligamento anular.\n\n**O que a luxação faz.** Quando a cabeça do rádio sai para a frente ou para o lado, o interósseo posterior é estirado sobre ela ou comprimido no colo e sob o supinador. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 20, seção do cotovelo), registra no adulto a lesão do interósseo posterior associada à MONTEGGIA e lembra que o mecanismo pode ser também lesão direta mais distal pela fratura da ulna.\n\n**Os números.** O Rockwood infantil (cap. 12, seção Nerve Injuries) dá a lesão do radial em **10% a 20%**, a **complicação mais comum** da MONTEGGIA, mais nos tipos **I e III**; o ramo mais atingido é o **interósseo posterior**. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, p. 1391 aprox.), repete os 10% a 20%, sobretudo nas luxações anteriores e laterais. O padrão é a neuropraxia: na criança a função volta em geral até 12 semanas, e uma série recomenda esperar até 6 meses; no adulto, o Rockwood (cap. 20) indica explorar se não houver sinal de recuperação em 8 semanas.\n\n**Como se reconhece.** O interósseo posterior não tem território sensitivo na pele. A criança ou o adulto não estendem as metacarpofalângicas nem fazem a retropulsão do polegar, com sensibilidade normal (cap. 12, seção Clinical Findings).\n\n> **Na prova:** MONTEGGIA + nervo = **interósseo posterior** (motor, colo do rádio, arcada de FROHSE). Ulnar no tipo II, mediano e interósseo anterior raros.\n\nO nervo está na seção \"O nervo do tipo III\" do resumo da MONTEGGIA na criança; o resumo do antebraço do adulto fala do interósseo posterior como o nervo da cirurgia.",
+  "correta": "**D) interósseo posterior.** É o ramo motor do radial que contorna o colo do rádio e passa sob a arcada de FROHSE, exatamente onde a cabeça luxada o estira. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 12), dá a lesão do radial em 10% a 20% das MONTEGGIA, a complicação mais comum, com o interósseo posterior como o ramo mais atingido; o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 20), registra a mesma associação no adulto.",
   "incorretas": {
-   "A": "O ramo dorsal do ulnar é distal e sem relação com a lesão.",
-   "B": "O ramo superficial do radial é sensitivo e menos exposto.",
-   "C": "O interósseo anterior é típico da supracondiliana da criança."
+   "A": "**Ramo dorsal do ulnar** é o ramo sensitivo que sai na borda posteromedial do flexor ulnar do carpo cerca de 5 cm acima do pisiforme (Rockwood and Green, cap. 42, via da ulna), longe da cabeça do rádio. Ele entra em risco na via cirúrgica da ulna distal, não na luxação do cotovelo. O próprio nervo ulnar só se lesa raramente na MONTEGGIA, associado ao tipo II (Rockwood infantil, cap. 12).",
+   "B": "**Ramo superficial do radial** sai do mesmo tronco, mas segue sob o braquiorradial, sem contornar o colo do rádio nem passar pelo supinador. É o ramo que se protege na via anterior de HENRY e nos fios do rádio distal. A lesão da MONTEGGIA é motora, sem perda de sensibilidade, e isso aponta para o ramo profundo.",
+   "C": "**Interósseo anterior** é ramo do mediano, motor do flexor longo do polegar, do flexor profundo do indicador e do pronador quadrado. O Rockwood infantil (cap. 12) cita a lesão do interósseo anterior na MONTEGGIA só como relato raro; no adulto, ela é mais lembrada como neuropraxia por tração na via de HENRY (resumo do antebraço, seção \"O nervo da cirurgia\")."
   },
-  "conceito": "Na **lesão de Monteggia**, o nervo mais lesado é o **interósseo posterior**, ramo profundo do nervo radial.\n\n**Por quê**: ele passa sob a **arcada de Frohse**, na borda do **supinador**, enrolado no **colo do rádio**. Quando a **cabeça do rádio luxa**, sobretudo para a **frente** ou para o **lado** (Bado I e III), o nervo é **estirado** sobre ela.\n\n**O quadro**: perda da **extensão dos dedos** e do polegar, com o punho estendendo em desvio radial (o extensor radial longo do carpo é inervado antes). **Sem perda sensitiva**, porque o ramo é motor.\n\n**A evolução**: quase sempre **neuropraxia**. Recupera em **6 a 12 semanas** depois da **redução** da cabeça do rádio; explorar só se não houver recuperação.\n\n**Os outros nervos**: o **interósseo anterior** é típico da fratura supracondiliana da criança; o **ramo superficial do radial** é sensitivo e menos exposto; o **ramo dorsal do ulnar** é distal, sem relação com a lesão.\n\n**Na prova**: a complicação nervosa mais frequente da Monteggia é a lesão do **interósseo posterior**.",
-  "correta": "O interósseo posterior passa junto ao colo do rádio e é estirado pela cabeça luxada, quase sempre como neuropraxia.",
-  "geradoEm": "2026-10-04",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation), seções Pathoanatomy (Nerves), Clinical Findings e Nerve Injuries",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 20 (Principles of Nerve Injuries and Their Management), seção do cotovelo",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 38 (Fractures and Dislocations in Children), p. 1391 aprox.",
+   "Resumo OrtoQuestões: Fratura-luxação de MONTEGGIA na criança",
+   "Resumo OrtoQuestões: Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi"
+  ],
+  "imagens": [
+   {
+    "arquivo": "mao/rwa10-42-18c-w10.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 42, Fig. 42-18 (painel C). Face posterior do antebraço, camada profunda: o interósseo posterior sai do supinador e se abre em ramos sobre o abdutor longo do polegar, o extensor curto do polegar, o extensor longo do polegar e o extensor do indicador, dispostos do lateral para o medial logo abaixo do supinador.",
+    "largura": 1127,
+    "altura": 610
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "trauma-0145": {
@@ -3541,7 +3572,7 @@
       "quem-luxa-o-joelho-e-o-que-vem-junto-95bec7df",
       "a-arteria-poplitea-b9951f36"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "f7b2fb20411d3018651c9e95091958c7eb2ca79bb79f9e2c66d742bc84812c0e"
     }
    ],
@@ -4790,7 +4821,7 @@
       "imagem-c89ac8ba",
       "o-nervo-fibular-comum-8a85bf5b"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "7e7d7e9c488824292748441a0f883fd25bba60779fc5ad08cf5ecfda0798282b"
     }
    ],
@@ -5309,7 +5340,7 @@
       "epidemiologia-mecanismo-e-lesoes-associadas-8577dc1c",
       "situacoes-especiais-034a55d1"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "4cb0fb48068a4fa4d70527f277190698ef4f6e76f08fa6291d13afc7e5f0bb8e"
     }
    ],
@@ -5367,7 +5398,7 @@
      "blocos": [
       "anatomia-aplicada-e-forcas-deformantes-96ba7854"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "da066b81a9ab08fa1f04969243fd8dd1315f7c1a61236a27b6591afefb0428c7"
     }
    ],
@@ -5622,7 +5653,7 @@
       "fratura-da-cabeca-do-radio-74811875",
       "fratura-da-cabeca-do-radio-8dbbe2b9"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "0c386d9c181c0a639c845772a529bbbef11e1b08fcef7e3f12ca3e7aa62275d2"
     }
    ],
@@ -5688,7 +5719,7 @@
       "fratura-da-cabeca-do-radio-510692ed",
       "fratura-da-cabeca-do-radio-e729e04e"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "8725a40996e0d5b829ebfda85293fb3467cfb7cda7380bbbe6fddac165d4c209"
     }
    ],
@@ -6019,7 +6050,7 @@
       "a-fratura-do-colo-do-mesmo-lado-447c2a22",
       "a-fratura-do-colo-do-mesmo-lado-6064015f"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "c0a06ece592d398dc749a2baaa06d79a1eb87a13148e1fe7c59f33ae83b52e1d"
     }
    ],
@@ -6469,7 +6500,7 @@
       "haste-retrograda-8469a2aa",
       "fixador-externo-placa-e-controle-de-dano-373ad787"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "21e9485cb6fe25bfdba6e7fe58455d2a1057289e32644d09c6c0f5fc9ac2f9da"
     }
    ],
@@ -6565,7 +6596,7 @@
       "a-arteria-poplitea-82164fda",
       "a-arteria-poplitea-bca7b985"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "a7bb22f9971f7200cc46db54cf23ea129bf19de943b12010010f0ec997b65bff"
     }
    ],
@@ -8663,7 +8694,7 @@
      "blocos": [
       "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "f5455e517fad6a7e91a497a6bbb6f4dcd9580f56d9c5dab6024680d3a3d8ca4f"
     }
    ],
@@ -8911,7 +8942,7 @@
       "fratura-da-cabeca-do-radio-9e1dbc64",
       "fratura-da-cabeca-do-radio-109bc9e4"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "12f3049aabd3ca8e7aed420e8d9ccc6c44dbf2ec79c0bb85c95f307a1dde77ee"
     }
    ],
@@ -8949,7 +8980,7 @@
       "ulna-proximal-olecrano-e-monteggia-posterior-e1b9aba4",
       "ulna-proximal-olecrano-e-monteggia-posterior-706a5726"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "04de0a1dade79d2befb6e912c08e9d90358fd7addae65c29dac54401245163ac"
     }
    ],
@@ -9291,7 +9322,7 @@
       "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-1239920b",
       "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-2fa5f304"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "dc5761f08dc691265683f96e10e060a9d35da33c53d9c751b3043e3279e91459"
     }
    ],
@@ -9484,7 +9515,7 @@
       "o-lado-medial-9548c808",
       "imagem-1f49da70"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "ee383697d59892370c3c3e94ef97091e4e48ed59121883a3e0be94705e5eeab5"
     }
    ],
@@ -9527,7 +9558,7 @@
       "tratamento-0fd132be",
       "canto-posterolateral-474af362"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "5cf78e02d181b00205562177a16593f2fb9f63f8624e6abc62ab919d62b71ef2"
     }
    ],
@@ -10556,7 +10587,7 @@
       "triade-terrivel-625087ee",
       "fratura-da-cabeca-do-radio-8dbbe2b9"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "75e9c4e01db528a6a6e7728651be9a402e6c0032abdbb5849e6e1dd10da3d256"
     }
    ],
@@ -10770,7 +10801,7 @@
       "quem-segura-o-cotovelo-834827b5",
       "quem-segura-o-cotovelo-e5d8f9c3"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "15d93fd9d5591a9e0b1c1c6e6ef2b664a67a5489209eff9a638936f4f5a2dfba"
     }
    ],
@@ -10930,7 +10961,7 @@
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-a253b883"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "0e0ed90604944f2aa4ded455f03cbbf39ffb49717b0e3acfd2173af738d168a3"
     }
    ],
@@ -11252,7 +11283,7 @@
       "a-arteria-poplitea-82164fda",
       "a-arteria-poplitea-5543f024"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "376990f05077251777744a23c475d842bdbefd4de8a5829ec30e033231c7c10f"
     }
    ],
@@ -12786,7 +12817,7 @@
       "luxacao-simples-do-cotovelo-5adb2600",
       "luxacao-simples-do-cotovelo-68cf7694"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "f5700b5b9f9dd95e1b1fe8c89b011e7e549000d6141ffdb457f61c030f0b7987"
     }
    ],
@@ -14656,50 +14687,29 @@
   "conferido": false
  },
  "trauma-0874": {
-  "conceito": "O coronoide não quebra sempre do mesmo jeito, e o lugar onde ele quebra conta a força que agiu. É essa a ideia que a banca cobra quando pergunta com que lesão a fratura da faceta anteromedial se relaciona.\n\n**Três lugares, três mecanismos.** O Rockwood and Green (10ª ed., cap. 40) usa a classificação de O'Driscoll: a **ponta** (tipo I) é cisalhada na luxação posterolateral e acompanha a **tríade terrível**; a **faceta anteromedial** (tipo II) é esmagada sob **varo**; a **base** (tipo III) aparece nas fraturas-luxações do olécrano e da ulna proximal.\n\n**Como a faceta anteromedial quebra.** Com **pronação, varo e carga axial**, o úmero roda sobre a ulna e a tróclea esmaga a parte anteromedial do coronoide, quase sempre com avulsão do colateral lateral. A ulna escapa **para trás e para dentro**: o capítulo chama esse padrão de **instabilidade rotatória posteromedial em varo**. A maioria não chega luxada; há história de luxação ou estalo que reduziu sozinho, e a pista é um coronoide fraturado com a cabeça do rádio intacta.\n\n**O que não é.** A tríade terrível nasce do mecanismo espelho (valgo, supinação e carga axial), com fratura da ponta e da cabeça do rádio, num padrão posterolateral. A fratura-luxação **anterior** é a transolecraniana, em que o segmento instável é o antebraço e o coronoide, quando fratura, é um fragmento anterior grande da base.\n\n> **Na prova:** ponta é tríade (posterolateral); faceta anteromedial é posteromedial em varo; base é olécrano.",
-  "correta": "**C: fratura-luxação posterior.** A fratura da faceta anteromedial acompanha a instabilidade rotatória posteromedial em varo, em que a ulna se desloca para trás e medialmente sob o úmero. Entre as alternativas, é a única com a direção posterior desse padrão; o nome usado no capítulo é instabilidade posteromedial.",
+  "conceito": "Uma lasca do coronoide parece detalhe numa radiografia de cotovelo, mas o lugar exato onde ela quebrou conta qual força agiu e, com isso, qual instabilidade vem junto. A questão testa essa leitura: a faceta anteromedial tem um mecanismo próprio, e ele não é o da tríade terrível.\n\n**A anatomia que explica a fragilidade.** O coronoide se estende para medial e proximal a partir da ulna e se alarga até o **tubérculo sublime**, onde se insere o feixe anterior do colateral medial. A ulna proximal é mais estreita que o úmero distal, e cerca de **60% dessa extensão medial fica sem apoio da metáfise**, o que a torna vulnerável à fratura (Skeletal Trauma, cap. 46).\n\n**O'DRISCOLL: o lugar diz o mecanismo.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 40), usa a classificação que a figura abaixo desenha sobre o coronoide visto de cima, com os três traços:\n\n| Tipo | Onde quebra | Lesão que acompanha |\n|---|---|---|\n| I, ponta (Tip) | cisalhamento da ponta | tríade terrível, luxação posterolateral |\n| II, faceta anteromedial | borda medial, com ou sem ponta e tubérculo sublime | instabilidade rotatória posteromedial em varo |\n| III, base (Basal) | corpo e base | fratura-luxação do olécrano e da ulna proximal |\n\n**Como a faceta anteromedial quebra.** Com **pronação, varo e carga axial**, o úmero roda sobre a ulna e a tróclea esmaga a faceta anteromedial, quase sempre com **avulsão do colateral lateral** (Rockwood, cap. 40). O Green's Operative Hand Surgery, 7ª ed. (cap. 22, p. 817), descreve a queda com o braço estendido, o ombro fletido e abduzido: a força posteromedial em varo arranca o colateral lateral do epicôndilo em tensão e, ao mesmo tempo, comprime o coronoide medial contra a tróclea. A ulna escapa **para trás e para medial**. A **cabeça do rádio raramente fratura**, e essa é a pista: coronoide quebrado com cabeça do rádio inteira. Muitas não chegam luxadas, e a incongruência é sutil; sem tratamento, a artrose vem rápido (Green, p. 817).\n\n**Por que posterior.** A instabilidade é posteromedial, e entre as alternativas a única com a direção posterior desse padrão é a fratura-luxação posterior. O Green (p. 817) registra a fratura anteromedial em combinação com luxação do cotovelo, às vezes com fratura do olécrano.\n\n> **Na prova:** ponta = tríade (posterolateral); faceta anteromedial = posteromedial em varo; base = olécrano.\n\nA classificação está na seção \"O'Driscoll: o lugar, e o lugar diz o mecanismo\" do resumo, e o mecanismo, em \"Instabilidade rotatória posteromedial em varo\".",
+  "correta": "**C) fratura-luxação posterior.** Pelo Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 40), a fratura da faceta anteromedial (tipo II de O'DRISCOLL) acompanha a instabilidade rotatória posteromedial em varo, em que a ulna se desloca para trás e para medial, com avulsão do colateral lateral e a cabeça do rádio geralmente intacta. O Green's Operative Hand Surgery, 7ª ed. (cap. 22, p. 817), a descreve em combinação com a luxação do cotovelo.",
   "incorretas": {
-   "A": "**A tríade leva a ponta.** Na tríade terrível, o coronoide quebra na ponta (tipo I de O'Driscoll), cisalhado pela tróclea na luxação posterolateral, junto com a cabeça do rádio. O resumo marca \"faceta anteromedial com tríade terrível\" como armadilha.",
-   "B": "**A anterior é a transolecraniana.** Na fratura-luxação anterior do olécrano, a radioulnar proximal fica preservada e o coronoide, quando fratura, é um fragmento grande da base, não da faceta anteromedial.",
-   "D": "**Direção oposta.** A instabilidade posterolateral é a do colateral ulnar lateral e da tríade, com supinação e valgo. A faceta anteromedial quebra sob varo e pronação, no padrão posteromedial."
+   "A": "**Tríade terrível** é a armadilha clássica. Ela soma luxação, fratura da cabeça do rádio e fratura do coronoide, mas o coronoide da tríade quebra na **ponta** (tipo I de O'DRISCOLL), cisalhado pela tróclea na luxação posterolateral, por valgo, supinação e carga axial (Rockwood, cap. 40). Na lesão anteromedial, ao contrário, a cabeça do rádio quase nunca fratura.",
+   "B": "**Fratura-luxação anterior** é a transolecraniana: o olécrano quebra e o antebraço inteiro vai para a frente, com a radioulnar proximal preservada. Quando o coronoide fratura nela, é um fragmento grande da **base** (tipo III), que o Rockwood (cap. 40) associa às fraturas-luxações do olécrano e da ulna proximal, não à faceta anteromedial.",
+   "D": "**Instabilidade póstero-lateral** é o espelho do mecanismo perguntado: valgo e supinação, com falha do colateral ulnar lateral, e é a direção da tríade terrível. A faceta anteromedial quebra sob varo e pronação, e a ulna roda para posteromedial (Rockwood, cap. 40). Confundir as duas é tão comum que o resumo registra um gabarito de banca com essa troca."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Luxação do cotovelo, cabeça do rádio e tríade terrível”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries. Seções: Fraturas do coronoide; Instabilidade rotatória posteromedial em varo; Ulna proximal: olécrano e Monteggia posterior; Tríade terrível."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 40 (Fig. 40-13)",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 22, p. 816 e 817",
+   "Skeletal Trauma: Basic Science, Management, and Reconstruction, cap. 46 (anatomia do coronoide)",
+   "Resumo OrtoQuestões: Luxação do cotovelo, cabeça do rádio e tríade terrível"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-40-cotovelo-cabeca-radio",
-     "titulo": "Luxação do cotovelo, cabeça do rádio e tríade terrível",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 40 · Elbow Dislocations and Terrible Triad Injuries",
-     "secoes": [
-      "Fraturas do coronoide",
-      "Instabilidade rotatória posteromedial em varo",
-      "Ulna proximal: olécrano e Monteggia posterior",
-      "Tríade terrível"
-     ],
-     "blocos": [
-      "fraturas-do-coronoide-7e8453cb",
-      "fraturas-do-coronoide-261ac45a",
-      "fraturas-do-coronoide-67ec539b",
-      "instabilidade-rotatoria-posteromedial-em-varo-79ce6093",
-      "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
-      "ulna-proximal-olecrano-e-monteggia-posterior-92a639ad",
-      "triade-terrivel-1483748a"
-     ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
-     "trechosSha256": "9720f7b84df55b4242bb09799223bd27c4fe28699abffed5fcc3c91c97909be7"
-    }
-   ],
-   "questaoSha256": "7a49a47a1e96ecb6b9a9991d71eef1a089e66cb483b01ee9a569ab45ae31588d",
-   "comentarioSha256": "de40a4621aede4451432732f8a8fa10ccc488674b7617a70a1a4bdb5a0ab7148"
-  }
+  "imagens": [
+   {
+    "arquivo": "trauma/rwa10-40-13-t02.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 40, Fig. 40-13, seção Classification of Coronoid Fractures (PDF sem página impressa). Classificação de O'DRISCOLL vista de cima: os traços da ponta (Tip), da faceta anteromedial (Anteromedial) e da base (Basal) do coronoide, com a cabeça do rádio ao lado.",
+    "largura": 1177,
+    "altura": 859
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "trauma-0875": {
   "conceito": "A técnica de MATTI-RUSSE é das mais antigas da pseudartrose do escafoide, e a banca perguntou o plano por onde se chega ao osso. Fica mais fácil acertar depois de entender o que a técnica faz e por que ela pede uma via pela frente.\n\n**A técnica.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 44), descreve o MATTI-RUSSE como enxerto **não vascularizado por via volar**. A figura abaixo (Fig. 44-32) mostra a ideia: escava-se um **sulco na cortical volar dos dois fragmentos**, e um bloco **corticoesponjoso** da crista ilíaca é socado nele, atravessando o foco. À esquerda, a pinça leva o enxerto ao leito aberto nos dois fragmentos; à direita, ele já está encaixado, unindo-os. O texto fala num enxerto cortical volar em escora, sozinho ou com fios. Era a forma de tratar a pseudartrose antes dos métodos modernos de fixação; hoje, a fixação padrão é o parafuso canulado de compressão.\n\n**Para quem serve.** A legenda da figura explica o limite da técnica: a cortical volar costuma estar **encurtada** pela erosão dos fragmentos, e sem um enxerto cortical é difícil devolver o comprimento. Por isso o MATTI-RUSSE clássico serve quando **não há encurtamento nem instabilidade do carpo**. O enxerto alado de RUSSE modificado tenta alongar, e a pseudartrose com humpback e DISI pede uma cunha volar estrutural (FISK-FERNANDEZ ou crista ilíaca) com parafuso.\n\n**Por que pela frente.** O sulco fica na cortical **volar**, e é pela frente que se trabalha o lado do escafoide que encurta e se dobra. O capítulo segue a mesma lógica na fixação: via volar quando é preciso corrigir o alinhamento; via dorsal para o polo proximal pequeno.\n\n**O acesso no capítulo.** A via aberta volar segue o **flexor radial do carpo**: abre-se a bainha do tendão, ele é **afastado para ulnar**, o **ramo palmar superficial da artéria radial** é afastado ou ligado, e a cápsula é aberta preservando o radioescafocapitato. Na pseudartrose estável, a incisão vai do tubérculo do escafoide ao rádio distal, sobre o mesmo tendão, de novo afastado para ulnar. Repare na geometria: se o tendão vai para o lado ulnar, a janela se abre no **lado radial** dele, onde está o ramo da artéria radial que precisa ser protegido. É esse corredor, entre a artéria radial e o tendão, que o gabarito nomeia. O capítulo não descreve um plano próprio do MATTI-RUSSE; descreve o acesso volar ao escafoide pelo flexor radial do carpo.\n\n**A via volar que leva ao mediano é outra.** No mesmo capítulo, o acesso que expõe o nervo mediano é o **túnel do carpo estendido**, usado na luxação perilunar quando a redução não sai por trás ou há sintomas do mediano, para fechar o rasgo no espaço de POIRIER.\n\nO enxerto está na seção \"Tratamento da pseudartrose\" do resumo, e a via volar, em \"Via volar e via dorsal na fixação percutânea\".",
@@ -14819,14 +14829,29 @@
   "conferido": false
  },
  "trauma-0880": {
+  "conceito": "O projétil de baixa velocidade fratura o antebraço com uma ferida pequena, e é fácil subestimar o que acontece por dentro. A questão quer saber qual característica da fratura se associa à síndrome compartimental nesses casos, e aqui os livros e o gabarito não dizem a mesma coisa; vale entender os dois lados.\n\n**O que é a síndrome no antebraço.** Pressão dentro de um compartimento fechado que supera a perfusão do músculo. O antebraço é o **segundo local mais frequente** de síndrome compartimental aguda pós-traumática, presente em **3%** das fraturas do antebraço, mais em homens com menos de 35 anos; o sinal clínico mais sensível é a dor à extensão passiva dos dedos (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42). O corte do Green mostra o que está em jogo: o compartimento volar superficial (flexor radial do carpo, palmar longo, flexor superficial, flexor ulnar do carpo), o volar profundo junto aos ossos (flexor profundo dos dedos e flexor longo do polegar) e o dorsal, com o tracejado indicando os planos da fasciotomia.\n\n**O projétil.** O Skeletal Trauma, 5ª ed. (cap. 19, p. 516), resume as séries clássicas. MOED e FAKHOURI estudaram 131 ferimentos do antebraço por projétil de baixa velocidade (60 com fratura, 71 sem lesão óssea) e acharam síndrome compartimental em **10%**. Na análise dos fatores ligados à fratura, **a localização foi o único fator significativo**; **desvio, cominuição e fragmentos metálicos na ferida não tiveram efeito**. O livro recomenda alto índice de suspeita, sobretudo nas fraturas do **terço proximal**, e medir a pressão sempre que houver dúvida. Na série de LENIHAN, 7% precisaram de fasciotomia.\n\n**Por que o terço proximal.** É onde a massa muscular volar é maior e os compartimentos mais volumosos ficam presos sob a fáscia. Uma fratura distal, junto aos tendões, tem pouco músculo para inchar.\n\n**O gabarito da banca.** A resposta oficial é o grau de **fragmentação**. A ideia por trás é intuitiva: mais fragmentos significam mais energia transferida e mais lesão de partes moles, e a cominuição pesa no risco compartimental de outras fraturas. Mas, para o projétil no antebraço, a série que os livros citam testou exatamente esse fator e não achou associação.\n\n| Fator (MOED e FAKHOURI, no Skeletal Trauma) | Associação com a síndrome |\n|---|---|\n| Localização da fratura | **significativa** (terço proximal) |\n| Desvio | nenhuma |\n| Cominuição | nenhuma |\n| Fragmentos metálicos | nenhuma |\n\n> **Na prova:** guarde o gabarito oficial desta prova (fragmentação) e o dado do livro: no antebraço por projétil, o que pesa é **onde** a fratura está, sobretudo no **terço proximal**.\n\nA síndrome compartimental do antebraço está na seção \"Síndrome compartimental do antebraço\" do resumo, e o projétil, em \"Fraturas expostas e por projétil\".",
+  "correta": "**C) ao grau de fragmentação da fratura.** É o gabarito oficial: fratura mais fragmentada indica mais energia transferida ao membro e mais lesão das partes moles, que é o substrato da síndrome compartimental. O Skeletal Trauma, 5ª ed. (cap. 19, p. 516), porém, relata que na série de MOED e FAKHOURI, com 131 ferimentos do antebraço por projétil, a cominuição não teve efeito e a localização foi o único fator significativo (veja o alerta).",
   "incorretas": {
-   "A": "**Sem associação significativa.** O desvio da fratura não mostrou relação com a síndrome compartimental nesses casos.",
-   "B": "**Sem associação significativa.** A localização da fratura não foi o fator associado.",
-   "D": "**Sem associação significativa.** Os fragmentos metálicos livres não se relacionaram com a síndrome compartimental."
+   "A": "**Grau de desvio** foi testado na série de MOED e FAKHOURI e não teve efeito sobre a síndrome compartimental (Skeletal Trauma, cap. 19, p. 516). O desvio decide outra coisa: as fraturas por projétil sem desvio vão bem com gesso, e as desviadas, sobretudo as dos dois ossos, pedem desbridamento e placa (Rockwood and Green, cap. 42).",
+   "B": "**Localização anatômica** é, pelo Skeletal Trauma (cap. 19, p. 516), o único fator ligado à fratura que se associou significativamente à síndrome compartimental, com atenção especial ao terço proximal, onde a massa muscular é maior. Pelos livros, seria a resposta; a banca preferiu a fragmentação, e o conflito está no alerta.",
+   "D": "**Fragmentos metálicos livres** entraram na mesma análise de MOED e FAKHOURI e não tiveram efeito (Skeletal Trauma, cap. 19, p. 516). O metal retido importa para outras discussões, como a contaminação e a retirada quando está dentro da articulação, mas não aumenta a pressão no compartimento."
   },
-  "conceito": "**A energia do projétil.** O dano de um projétil depende da **energia cinética** transferida aos tecidos, que cresce com o **quadrado da velocidade** e com a massa, e aumenta quando o projétil **tomba** ou se **fragmenta** dentro do corpo. A energia cria a **cavidade permanente** (o trajeto) e a **cavidade temporária**, uma expansão momentânea que estira e lesa músculos, vasos e nervos à distância do trajeto.\n\n**O osso como marcador.** Não se mede a energia no pronto-socorro, mas o **osso** funciona como um **dosímetro**: a **fragmentação** (cominuição) da fratura reflete a energia transferida. Fraturas simples, com poucos fragmentos, indicam baixa energia; fraturas muito cominutivas, com fragmentos dispersos, indicam alta energia, com mais dano muscular, vascular e de partes moles ao redor.\n\n**A síndrome compartimental.** Nas fraturas do **antebraço** por projétil, o grau de **fragmentação** da fratura se associa significativamente à **síndrome compartimental**, porque reflete o dano muscular e o sangramento no compartimento. A **lesão vascular** associada (radial ou ulnar) também aumenta o risco. O **desvio** da fratura, a **localização** e a presença de **fragmentos metálicos** livres não mostraram a mesma associação.\n\n**A conduta.** Vigilância clínica rigorosa (dor desproporcional, dor à extensão passiva dos dedos, tensão), medida de pressão quando o exame é duvidoso e **fasciotomia** sem demora quando indicada. As fraturas por projétil de **baixa energia** e pouco cominutivas se comportam como fechadas; as de alta energia pedem desbridamento, fixação (placa ou fixador externo) e atenção às partes moles.\n\n**Na prova:** no antebraço baleado, a síndrome compartimental se associa ao **grau de fragmentação** da fratura, marcador da energia transferida.",
-  "correta": "**Ao grau de fragmentação da fratura.** A cominuição reflete a energia transferida pelo projétil, e com ela o dano muscular e vascular que eleva a pressão no compartimento.",
-  "geradoEm": "2026-09-30",
+  "alerta": "O gabarito oficial (grau de fragmentação) foi mantido, mas diverge da bibliografia. O Skeletal Trauma, 5ª ed. (cap. 19, p. 516), relata que, na série de MOED e FAKHOURI (131 ferimentos do antebraço por projétil de baixa velocidade, síndrome compartimental em 10%), a localização foi o único fator significativo ligado à fratura, e que desvio, cominuição e fragmentos metálicos não tiveram efeito; o resumo do artigo (J Orthop Trauma, 1991;5:134) confirma a localização como único fator. Pelos livros, a resposta seria a localização anatômica.",
+  "referencias": [
+   "Skeletal Trauma (BROWNER, JUPITER, KRETTEK, ANDERSON), 5ª ed. (2015), cap. 19 (Gunshot Wounds and Blast Injuries), p. 516",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42 (Diaphyseal Fractures of the Radius and Ulna), seções Compartment Syndrome e Gunshot",
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 51 (Compartment Syndrome and Volkmann Ischemic Contracture), Fig. 51.7, p. 1770",
+   "Resumo OrtoQuestões: Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi"
+  ],
+  "imagens": [
+   {
+    "arquivo": "pediatria/green7-51-7-v02.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 51, Fig. 51.7, p. 1770. Corte transversal do terço médio do antebraço com os compartimentos: na face volar, o superficial (flexor radial do carpo, palmar longo, flexor superficial dos dedos, flexor ulnar do carpo) e o profundo, junto aos ossos (flexor profundo dos dedos e flexor longo do polegar); as setas e o tracejado mostram os planos da fasciotomia volar e dorsal.",
+    "largura": 723,
+    "altura": 806
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "trauma-0881": {
@@ -15048,14 +15073,28 @@
   "conferido": false
  },
  "trauma-0891": {
+  "conceito": "Imagine o pronto-socorro: uma fratura da ulna proximal com a cabeça do rádio fora do lugar, e o paciente que, ao ser pedido para abrir a mão, não consegue esticar os dedos, embora sinta tudo normalmente. Esse quadro, motor puro sem perda sensitiva, é a assinatura do nervo que a questão pede, e entender por que ele se lesa ajuda a descartar os outros três.\n\n**O nervo e o seu caminho.** O interósseo posterior é o ramo **motor** do radial. Ele nasce na altura da cabeça do rádio, contorna o **colo do rádio**, passa sob a **arcada de FROHSE**, atravessa o supinador e sai no dorso do antebraço para inervar os extensores dos dedos e do polegar e o extensor ulnar do carpo (Rockwood and Wilkins' Fractures in Children, 10ª ed., cap. 12, seção Pathoanatomy, Nerves). Na MONTEGGIA, a cabeça do rádio que sai do lugar estira ou comprime justamente esse trecho.\n\n**Os números.** O Rockwood infantil (cap. 12, seção Nerve Injuries) é explícito: a lesão do nervo radial aparece em **10% a 20%** e é a **complicação mais comum** da MONTEGGIA, mais nos tipos **I e III**, e o **interósseo posterior** é o ramo mais lesado, pela proximidade com a cabeça e o colo e pela relação com a arcada. No adulto, o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 20, seção do cotovelo), registra a mesma lesão junto da MONTEGGIA e do olécrano, com recuperação espontânea provável.\n\n**Como examinar.** Testar sempre o extensor comum dos dedos e o extensor longo do polegar: a falta de extensão das metacarpofalângicas e da retropulsão do polegar indica paralisia do interósseo posterior (cap. 12, seção Clinical Findings). O punho ainda estende, mas desvia para o lado radial, porque o extensor radial longo do carpo é inervado acima da divisão e fica íntegro, enquanto o extensor ulnar do carpo para. É o que mostra a fotografia do Green: punho em extensão radial e dedos fletidos, sem conseguir estender.\n\n**Conduta.** É neuropraxia na imensa maioria. Na criança, a função volta em geral até 12 semanas, e a maioria das séries relata 100% de recuperação; no adulto, o Rockwood (cap. 20) recomenda explorar e descomprimir se não houver sinal de recuperação em 8 semanas.\n\n| Nervo | Na MONTEGGIA (Rockwood infantil, cap. 12) |\n|---|---|\n| Interósseo posterior | o mais lesado, 10% a 20% de lesão do radial |\n| Ulnar | raro, associado ao tipo II |\n| Mediano e interósseo anterior | raros, relatos isolados |\n\n> **Na prova:** MONTEGGIA + não estende os dedos + sensibilidade normal = **interósseo posterior**.\n\nO nervo está na seção \"O nervo do tipo III\" e em \"Complicações\" do resumo da MONTEGGIA na criança.",
+  "correta": "**D) interósseo posterior.** O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 12), dá a lesão do radial em 10% a 20% das MONTEGGIA, a complicação mais comum, e aponta o interósseo posterior como o ramo mais atingido, porque ele contorna o colo do rádio e passa sob a arcada de FROHSE. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 20), descreve a mesma associação no adulto.",
   "incorretas": {
-   "A": "**Raramente lesado.** O ulnar fica no lado medial, longe da cabeça do rádio luxada.",
-   "B": "**Raramente lesado.** O mediano corre na frente do cotovelo e não é o típico da Monteggia.",
-   "C": "**Outro contexto.** O interósseo anterior, ramo do mediano, pode ser lesado em fraturas do antebraço, mas não é o nervo característico da Monteggia."
+   "A": "**Ulnar** passa atrás do epicôndilo medial, longe da cabeça do rádio. O Rockwood infantil (cap. 12, seção Nerve Injuries) cita só relatos isolados, ligados ao tipo II, a luxação posterior, e lesões combinadas com o radial. Seria a resposta numa luxação do cotovelo com fratura do epicôndilo medial, não na MONTEGGIA.",
+   "B": "**Mediano** corre na face anterior do cotovelo, medial ao tendão do bíceps, e raramente se lesa na MONTEGGIA: o Rockwood infantil (cap. 12) cita um caso de mediano preso numa fratura em galho verde da ulna. É o nervo da supracondiliana em extensão com desvio posterolateral e o que fica encarcerado na redução da luxação do cotovelo (Rockwood adulto, cap. 20).",
+   "C": "**Interósseo anterior** é o ramo motor do mediano para o flexor longo do polegar, o flexor profundo do indicador e o pronador quadrado; a lesão tira o pinçamento em \"OK\". Na MONTEGGIA, o Rockwood infantil (cap. 12) o cita apenas em relato isolado. No adulto, ele aparece como neuropraxia por tração na via anterior de HENRY."
   },
-  "conceito": "**O nervo em risco na Monteggia.** O nervo **radial** se divide na altura da articulação **radiocapitelar**: o ramo **superficial**, sensitivo, segue sob o braquiorradial; o ramo **profundo**, motor, entra no **supinador** sob a sua borda fibrosa, a **arcada de Frohse**, e contorna o **colo do rádio** dentro do músculo, saindo como **interósseo posterior**. Nesse trecho, ele fica relativamente **fixo** e muito próximo da cabeça e do colo do rádio.\n\n**Por que ele é o mais lesado.** Na **lesão de Monteggia**, a **cabeça do rádio luxa**, e o interósseo posterior, preso na arcada de Frohse, é **estirado** ou comprimido. É o nervo **mais comumente** comprometido, sobretudo no tipo **III** de Bado (lateral) e no tipo I. Geralmente é uma **neuropraxia** que se recupera após a redução da cabeça do rádio, em semanas a poucos meses.\n\n**Como examinar.** Perda da **extensão** dos dedos e do polegar, com o **punho** ainda estendendo em **desvio radial** (o extensor radial longo do carpo, inervado antes da divisão, está preservado, mas o extensor ulnar do carpo não), e **sem perda sensitiva** (o ramo superficial está íntegro). Documentar **antes** de qualquer manobra.\n\n**A conduta.** Reduzir a **cabeça do rádio** restaurando o comprimento e o alinhamento da **ulna** (redução fechada na criança, placa no adulto). Se não houver sinais de recuperação em cerca de **3 meses**, eletroneuromiografia e, se necessário, exploração. O **ulnar** e o **mediano** são lesados raramente; o **interósseo anterior** pode ser lesado em fraturas do antebraço, mas não é o típico da Monteggia.\n\n**Na prova:** nervo mais comprometido na **Monteggia** = **interósseo posterior** (estirado na arcada de Frohse pela luxação da cabeça do rádio); geralmente neuropraxia.",
-  "correta": "**Interósseo posterior.** Ele contorna o colo do rádio dentro do supinador, sob a arcada de Frohse, e é estirado quando a cabeça do rádio luxa.",
-  "geradoEm": "2026-09-30",
+  "referencias": [
+   "Rockwood and Wilkins' Fractures in Children, 10ª ed. (2025), cap. 12 (Monteggia Fracture-Dislocation), seções Pathoanatomy (Nerves), Clinical Findings e Nerve Injuries",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 20 (Principles of Nerve Injuries and Their Management), seção do cotovelo",
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 31, Fig. 31.33, p. 1064",
+   "Resumo OrtoQuestões: Fratura-luxação de MONTEGGIA na criança"
+  ],
+  "imagens": [
+   {
+    "arquivo": "mao/green7-31-33-w22.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 31, Fig. 31.33, p. 1064. Paralisia do interósseo posterior: o extensor radial longo do carpo está íntegro, o radial curto e o extensor ulnar do carpo estão paralisados, e o punho estende desviado para o lado radial, com os dedos sem extensão.",
+    "largura": 641,
+    "altura": 292
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "trauma-0892": {
@@ -15248,7 +15287,7 @@
       "haste-retrograda-d0c23ae9",
       "haste-retrograda-c9d138a5"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "32851338d49bb69b6580aa2c1dc9c6b2f27318b054c94f4400fca9c0e0975c81"
     }
    ],
@@ -15600,7 +15639,7 @@
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7353be7e",
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "8c6937ddd3d5f16ac77b55468a98ba469328ef47d73a27216a1267253cfe7820"
     }
    ],
@@ -16063,7 +16102,7 @@
       "o-antebraco-como-articulacao-arco-radial-forcas--bec67379",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "3b3cba8cf70d841068a55ab31a5241a78b865a065e53097351f58d654c3a1570"
     }
    ],
@@ -16103,7 +16142,7 @@
       "sinostose-radioulnar-ed7e5eeb",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "ec1ac942ea3fd5cfefedcf2dc739417fc33cb57fb5053415c431ec5d909f565d"
     }
    ],
@@ -16285,7 +16324,7 @@
       "epidemiologia-mecanismo-e-lesoes-associadas-b22e4239",
       "epidemiologia-mecanismo-e-lesoes-associadas-439de276"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "5e65130a38ff26452eaa36a4c7a09b74819b891c68a3cdf002f875d4d8d1cb38"
     }
    ],
@@ -16914,7 +16953,7 @@
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-c9e0d469",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "0deb911be83f922356c2e790f7e59e2e27e378335a591dc71e5b2ff4530754a1"
     }
    ],
@@ -17009,7 +17048,7 @@
       "triade-terrivel-fe3d9fe4",
       "triade-terrivel-499f49dc"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "9bca1356eef2ec65463276c9d3765e4e4c568d725076713281f1946fa85efe79"
     }
    ],
@@ -18407,7 +18446,7 @@
       "cruzado-anterior-f62f620b",
       "cruzado-posterior-a-pedra-fundamental-ae278a04"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "4ec5d11a7518cddca1ddad527f1f3c28a5ee7a1a3d2d00461b28b05ad6046954"
     }
    ],
@@ -18581,7 +18620,7 @@
       "canto-posterolateral-a148610d",
       "cruzado-posterior-a-pedra-fundamental-ed726e98"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "dd6cb5b24b60c0a308b60d625d869eee218f0f2ff0a2d03303927c03ca541168"
     }
    ],
@@ -18897,7 +18936,7 @@
       "cruzado-posterior-a-pedra-fundamental-ae278a04",
       "cruzado-posterior-a-pedra-fundamental-6c39d4e8"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "fa35347b2511eb909356e1bc4c989f0d2651cb4706171041fdcd3a7292040fce"
     }
    ],
@@ -19326,17 +19365,22 @@
   "conferido": false
  },
  "trauma-1069": {
+  "conceito": "A diacereína é um dos remédios mais receitados para artrose de joelho no Brasil, e a banca quer saber em que ela mexe. A resposta está no que a artrose é por dentro: não um desgaste puramente mecânico, mas uma doença em que citocinas inflamatórias empurram a cartilagem para a degradação.\n\n**A artrose como doença inflamatória de baixo grau.** O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 16), descreve três tecidos doentes ao mesmo tempo: **cartilagem, osso subcondral e sinóvia**. Na cartilagem há desbalanço metabólico, com sinalizadores de degradação estimulados por **cascatas de citocinas** e mediadores inflamatórios; a sinovite é precoce e, nos estudos artroscópicos, aparece em até 50% dos pacientes, muitas vezes sem sinal clínico.\n\n**Quem é a interleucina 1.** O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 10, Diseases of the Hematopoietic System), ao explicar a artropatia do hemofílico, define a **IL-1 beta** como **mediador importante da osteoartrite e da artrite reumatoide**, produzida pelas células mononucleares da sinóvia e não pelos condrócitos, e mostra o efeito dela na cartilagem: **inibe a síntese de proteoglicanos**, a parte da matriz que segura a água e dá à cartilagem a resistência à compressão. A IL-1 é, portanto, a citocina que liga a sinovite à perda de cartilagem.\n\n**Onde entra a diacereína.** O HEBERT (cap. 16) agrupa os condroprotetores sob o nome **SYSADOA**, drogas sintomáticas de ação lenta, porque o rótulo de \"modificadoras da doença\" parece exagerado. Para cada uma, dá o mecanismo:\n\n| Droga | Mecanismo no HEBERT (cap. 16) |\n|---|---|\n| **Diacereína** | atua **principalmente pela inibição dos efeitos da IL-1** |\n| Insaponificáveis de soja e abacate | inibem IL-1, IL-6, IL-8 e metaloproteases in vitro |\n| Cloroquina | suprime o óxido nítrico induzido pela IL-1 |\n| Glicosamina | participa da síntese de glicosaminoglicanas; resultado controverso conforme a formulação |\n| Condroitina | pequena redução do estreitamento do espaço articular |\n\nO benefício descrito para essa classe é a **menor necessidade de analgésicos e anti-inflamatórios**, não a regeneração da cartilagem. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 10, Tabela 10.4, p. 498), nem lista a diacereína entre as recomendações da AAOS.\n\n**As outras interleucinas.** As interleucinas que os livros locais associam à inflamação articular e ao trauma são a 1, a 6 e a 8: o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 2, p. 46 aprox.), cita IL-1 beta, IL-6 e IL-8 no caldo inflamatório do hematoma de fratura. A IL-3 e a IL-5 não aparecem nos capítulos conferidos, e a IL-10 aparece no HEBERT só como marcador no politraumatizado.\n\nO tratamento conservador está na seção \"O que o HEBERT defende: uma divergência real\" do resumo de gonartrose e osteotomias.",
+  "correta": "**A) 1.** O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 16), diz que a diacereína atua principalmente pela inibição dos efeitos da interleucina 1. A IL-1 beta é o mediador da osteoartrite que inibe a síntese de proteoglicanos da cartilagem (Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 10); bloquear seus efeitos é a base do uso da diacereína como droga sintomática de ação lenta.",
   "incorretas": {
-   "B": "**IL-3 não é o alvo descrito.** Participa de processos hematopoiéticos e imunes, mas não define a ação cobrada para a diacereína.",
-   "C": "**IL-5 tem outra associação clássica.** Relaciona-se à resposta eosinofílica; não é a citocina visada pelo fármaco nesta questão.",
-   "D": "**IL-10 tem papel predominantemente regulador.** Sua ação anti-inflamatória não corresponde ao alvo de inibição solicitado."
+   "B": "**3** não é citada em nenhum dos capítulos conferidos sobre artrose, sinóvia ou consolidação. Os livros locais ligam a inflamação articular à IL-1 (HEBERT, 5ª ed., cap. 16; Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 10) e o hematoma de fratura à IL-1 beta, IL-6 e IL-8 (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 2). Nada nesses textos relaciona a diacereína a ela.",
+   "C": "**5** fica fora dos capítulos de artrose dos livros locais, e o HEBERT (5ª ed., cap. 16), ao listar os mecanismos dos condroprotetores, só cita IL-1, IL-6 e IL-8. Não há base nas fontes para atribuir à diacereína qualquer ação sobre ela; a droga é descrita como inibidora dos efeitos da IL-1.",
+   "D": "**10** aparece no HEBERT (5ª ed.) em outro contexto: no politraumatizado, ao lado da IL-6 e da procalcitonina, como marcador que pode orientar a decisão pelo controle de danos. Não é a citocina que degrada a cartilagem na artrose nem a que a diacereína inibe; o capítulo de artrose atribui à diacereína a inibição dos efeitos da IL-1."
   },
-  "conceito": "**O alvo farmacológico.** A diacereína e seu metabólito ativo, a reína, são estudados na osteoartrite por sua ação sobre vias mediadas pela interleucina-1, especialmente IL-1 beta. Essa citocina favorece inflamação sinovial e degradação da matriz cartilaginosa. Entre as interleucinas oferecidas, a 1 é a que corresponde ao mecanismo descrito para o fármaco.\n\n**Mecanismo não é promessa de regeneração.** Inibir uma via inflamatória em laboratório não significa reconstruir cartilagem ou alterar comprovadamente a história natural da artrose. Ao interpretar estudos de tratamento, separe o alvo molecular dos resultados clínicos, como dor, função e efeitos adversos. A questão examina apenas o primeiro ponto.",
-  "correta": "**A: interleucina-1.** O mecanismo associado à diacereína envolve redução dos efeitos da IL-1, sobretudo da IL-1 beta.",
+  "alerta": "Os livros locais não descrevem as interleucinas 3 e 5, e não dão a função anti-inflamatória da IL-10; a explicação dessas alternativas se apoia no que os livros dizem da IL-1 e da diacereína (HEBERT, 5ª ed., cap. 16). O gabarito oficial (A) é o que o HEBERT afirma.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 13.7"
+   "HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed., cap. 16 (Joelho do adulto: osteoartrite, tratamento conservador e osteotomias)",
+   "Lovell and Winter's Pediatric Orthopaedics, 7ª ed., cap. 10 (Diseases of the Hematopoietic System)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 2 (Bone, Cartilage, and Tendon Healing), p. 46 aprox.",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 10 (Knee Preservation Surgery), p. 498 (Tabela 10.4)",
+   "Resumo OrtoQuestões: Gonartrose e osteotomias"
   ],
-  "geradoEm": "2026-09-30",
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "trauma-1070": {
@@ -19501,17 +19545,28 @@
   "conferido": false
  },
  "trauma-1078": {
+  "conceito": "Uma osteotomia tibial mexe em dois planos ao mesmo tempo, quer o cirurgião queira, quer não: o coronal, que corrige o varo, e o sagital, que muda a inclinação do planalto. No joelho sem cruzado posterior, o segundo plano deixa de ser um efeito colateral e vira parte do tratamento.\n\n**O que a inclinação sagital faz com a tíbia.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2095), dá o número normal e o efeito: o slope tibial posterior nativo fica em torno de **7 a 10 graus**, e **o slope maior contrapõe a translação posterior da tíbia** e reduz a tensão sobre o cruzado posterior. Imagine o fêmur apoiado num planalto inclinado para trás: quando a carga entra, ele empurra a tíbia para a frente em relação a si mesmo; quanto mais inclinado o planalto, maior esse empurrão anterior. É exatamente o que falta ao joelho que perdeu o cruzado posterior, cuja tíbia cai para trás. O mesmo trecho mostra o outro lado: **slope diminuído é fator de risco** para lesão do cruzado posterior, e nos joelhos reconstruídos o slope menor se associou a **mais translação posterior residual**.\n\n**Como a osteotomia muda o slope.** O Campbell (cap. 50, p. 2061) explica pela forma da cunha. A **abertura medial** costuma ficar **mais larga na frente** que atrás, e isso **aumenta o slope posterior**, ajudando o joelho com **cruzado posterior deficiente**. O **fechamento lateral** retira mais osso na frente, **aplaina o slope** e beneficia o joelho com **cruzado anterior deficiente**. O HEBERT, Ortopedia e Traumatologia, 5ª ed. (cap. 16), cita NOYES na mesma direção, pelo lado do cruzado anterior: o aumento do slope é indesejado na instabilidade anterior, e por isso abre-se a cunha de forma **trapezoidal**, com a abertura anterior igual à **metade da posterior**; o fechamento lateral, que diminui o slope, deve ser **evitado na instabilidade posterior**.\n\n| Cruzado deficiente | O que se quer do slope | Osteotomia que ajuda |\n|---|---|---|\n| **Posterior** | **aumentar** (empurra a tíbia para a frente) | abertura medial, mais larga na frente |\n| Anterior | diminuir (tira o escorregamento anterior) | fechamento lateral, ou abertura trapezoidal |\n\n**A figura** mostra a abertura medial de HERNIGOU vista de frente (Campbell, cap. 10, Fig. 10.19, p. 505): o corte sobe de medial para lateral, acima da tuberosidade, até a ponta da fíbula, e a cunha de enxerto que se abre corrige o varo no plano coronal. O que a figura não mostra é o perfil: é a altura dessa cunha na frente e atrás que decide se o slope sobe ou desce, e no joelho sem cruzado posterior ela deve ser mais alta na frente.\n\n> **Na prova:** cruzado **posterior** deficiente = corrige o varo **e aumenta** o slope. Cruzado **anterior** deficiente = corrige o varo **e diminui** o slope.\n\nO assunto está na seção \"Osteotomia e instabilidade: slope, LCA, LCP e canto posterolateral\" do resumo de gonartrose e osteotomias.",
+  "correta": "**D) Coronal e aumentar a inclinação sagital da tíbia.** O plano coronal corrige o varo; o aumento do slope posterior empurra a tíbia para a frente sob carga e contrapõe a queda posterior do joelho sem cruzado posterior. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2061), diz que a abertura medial, mais larga na frente, aumenta o slope e ajuda o joelho com cruzado posterior deficiente, e a p. 2095 registra que o slope maior contrapõe a translação posterior da tíbia.",
   "incorretas": {
-   "A": "**Só o plano sagital deixa o varo.** A sobrecarga medial e seu efeito sobre a instabilidade permanecem sem correção.",
-   "B": "**Só o plano coronal trata o eixo, não o slope.** Perde-se a oportunidade de influenciar a queda posterior da tíbia sob carga.",
-   "C": "**Diminuir o slope tem o sentido oposto.** Essa mudança pode favorecer a translação posterior que se quer reduzir na insuficiência do LCP."
+   "A": "**Sagital isoladamente** trataria a translação posterior e deixaria o varo, que é o motivo da osteotomia: a carga continuaria no compartimento medial e, se houver frouxidão lateral, o thrust em varo continuaria estirando as estruturas a cada passo (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2061). A correção sagital é um ajuste que se soma à coronal, não a substitui.",
+   "B": "**Coronal isoladamente** corrige o varo e ignora o plano que mais importa ao cruzado posterior. Além disso, toda osteotomia tibial mexe no slope, e a maioria acaba biplanar (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2061); não planejar o perfil arrisca diminuir o slope sem querer, o que, segundo a p. 2095 do mesmo capítulo, se associa a mais translação posterior. Seria aceitável num joelho varo com ligamentos íntegros.",
+   "C": "**Coronal e diminuir a inclinação sagital da tíbia** é a receita para o joelho sem cruzado **anterior**. Diminuir o slope tira o escorregamento anterior da tíbia, e o fechamento lateral, que faz isso, beneficia o joelho com cruzado anterior deficiente (Campbell's Operative Orthopaedics, 15ª ed., cap. 50, p. 2061). No joelho sem cruzado posterior, o HEBERT (5ª ed., cap. 16) manda evitá-la, porque deixa a tíbia cair ainda mais para trás."
   },
-  "conceito": "**Dois planos, dois problemas.** No joelho varo com insuficiência do LCP, a osteotomia pode corrigir o eixo coronal para redistribuir a carga medial e modificar a inclinação posterior do planalto tibial. Aumentar essa inclinação favorece deslocamento anterior da tíbia sob carga e reduz a tendência de queda posterior causada pela falta do LCP. Corrigir apenas o varo deixa de aproveitar esse efeito sobre a instabilidade.\n\n**A direção depende do cruzado lesionado.** Maior inclinação posterior tende a aumentar a demanda sobre o LCA, mas pode beneficiar o joelho deficiente de LCP. Por isso, o planejamento exige medir o slope no perfil e considerar todos os ligamentos, não apenas produzir uma correção coronal satisfatória na radiografia de frente. A questão pede a combinação: correção do varo e aumento da inclinação tibial posterior.",
-  "correta": "**D: corrigir o plano coronal e aumentar a inclinação sagital.** A primeira medida trata o varo; a segunda reduz a translação posterior funcional no joelho deficiente de LCP.",
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 9.7"
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 50 (Knee Injuries), p. 2061 e 2095",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 10 (Knee Preservation Surgery), p. 505 (Fig. 10.19)",
+   "HEBERT, Ortopedia e Traumatologia: Princípios e Prática, 5ª ed., cap. 16 (Joelho do adulto: osteoartrite, tratamento conservador e osteotomias)",
+   "Resumo OrtoQuestões: Gonartrose e osteotomias"
   ],
-  "geradoEm": "2026-09-30",
+  "imagens": [
+   {
+    "arquivo": "joelho/campbell15-10-19-v03.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 10, Fig. 10.19, p. 505. Osteotomia tibial de abertura medial de HERNIGOU: o corte começa 3,5 cm abaixo da interlinha medial, acima da tuberosidade, e vai em direção à ponta da fíbula, deixando a cortical lateral inteira (A); a osteotomia é aberta e recebe cunhas de enxerto ilíaco, fixadas com placa (B).",
+    "largura": 723,
+    "altura": 750
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "trauma-1079": {
@@ -19563,7 +19618,7 @@
       "o-lado-medial-5c9f047e",
       "cruzado-posterior-a-pedra-fundamental-075e0a72"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "d65bfe5e52c0e04284823fa49e642f7a9f5388b9d2c366dc6faf9a431d9a66e5"
     }
    ],
@@ -21433,7 +21488,7 @@
       "fresagem-diametro-bloqueio-e-carga-999f60a0",
       "fixador-externo-placa-e-controle-de-dano-373ad787"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "2ab78d97e0cc65382262e4de2479c2ab022d7cc2a57587daf6796a97167cb7f0"
     }
    ],
@@ -22002,17 +22057,21 @@
   "conferido": false
  },
  "trauma-1187": {
+  "conceito": "Uma afirmação técnica de certo ou errado, e a resposta está numa frase do Campbell sobre a retirada de placas do fêmur. Para entendê-la é preciso saber o que a placa faz com o osso embaixo dela e o que os furos dos parafusos deixam para trás.\n\n**Quando se usam duas placas.** A placa ainda tem lugar na diáfise do fêmur: canal muito estreito, fratura que se estende para a região pertrocantérica ou metafisária, lesão vascular a reparar, fratura do colo do mesmo lado, fratura junto a implantes e pseudartrose (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 57). O Rockwood and Green's (cap. 1) lembra que a fixação biplanar, com uma segunda placa a 90 graus da primeira (placas ortogonais), é usada com frequência nas fraturas complexas.\n\n**O que a placa faz com o osso.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 59, p. 2636), lembra que a **cortical sob uma placa rígida remodela como osso esponjoso**: protegida da carga, ela afina. Para voltar à força normal, a carga precisa ser reaplicada aos poucos depois da retirada.\n\n**O que os furos fazem.** O Rockwood and Green's (cap. 1, seção Hardware Removal and Fracture Risk) quantifica o risco: o furo do parafuso é um concentrador de tensão. Furos menores que 10% do diâmetro do osso não alteram a resistência à torção; entre 10% e 20%, a resistência cai **34%**; acima disso, cai linearmente. Furos de 3 a 5 mm na tíbia distal tiraram 28% a 38% da resistência torcional.\n\n**Juntando as duas coisas.** Com duas placas, o osso tem cortical enfraquecida e furos em dois planos. O Campbell (p. 2636) escreve que, quando se usaram duas placas a 90 graus, **as duas não devem ser retiradas ao mesmo tempo, porque o osso fica duplamente fraco e a refratura é provável; a segunda placa pode sair 6 meses depois da primeira**, e o osso deve ser protegido de esforço excessivo por pelo menos 6 semanas depois de cada retirada.\n\n**O contexto da retirada.** A retirada não é rotina (Campbell, p. 2636; Rockwood, cap. 1). No fêmur, quando indicada, o Campbell fala em 2 a 3 anos depois do trauma, com a consolidação completa; o AO Principles of Fracture Management, 3ª ed. (cap. 4.7), deixa os implantes pelo menos 1 a 2 anos, exige radiografia de consolidação antes e adia esporte de contato e trabalho pesado por 2 a 4 meses depois de tirar placas grandes. O resumo do fêmur acrescenta que a consolidação primária, típica da placa, pode pedir 12 a 24 meses.\n\nA placa no fêmur está na seção \"Fixador externo, placa e controle de dano\" do resumo de fratura da diáfise do fêmur, que ainda não traz a regra das duas placas.",
+  "correta": "**A) Certo.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 59, p. 2636), diz que, quando duas placas a 90 graus foram usadas no fêmur, elas não devem ser retiradas juntas, porque o osso fica duplamente fraco e a refratura é provável; a segunda placa pode ser retirada 6 meses depois da primeira. A cortical sob a placa rígida remodela como esponjosa e precisa de carga gradual para recuperar a força.",
   "incorretas": {
-   "B": "**Errado seria uma leitura excessiva se significasse retirar as duas placas juntas sem ponderar a refratura.** Pode haver casos em que a retirada simultânea seja planejada, mas a escolha deve ser individualizada, e não decidida por uma regra automática."
+   "B": "**Errado** seria a resposta se a retirada simultânea fosse segura ou se o livro não estabelecesse intervalo. O Campbell (cap. 59, p. 2636) diz o contrário: retirar as duas placas ao mesmo tempo deixa o osso duplamente enfraquecido, pela cortical remodelada sob a placa e pelos furos em dois planos, e expõe à refratura; por isso a retirada é feita em dois tempos, com 6 meses entre eles."
   },
-  "alerta": "A banca não divulgou o gabarito oficial desta prova; a resposta foi definida pelo Orto Questões a partir da bibliografia e conta no seu desempenho. Mantenho A como resposta provável, mas não localizei fundamento para tratar seis meses como intervalo obrigatório na retirada de duas placas ortogonais do fêmur. Recomendações de retirada sequencial com intervalo mínimo de seis meses encontradas na AO referem-se a placas nos dois ossos do antebraço, situação diferente.",
-  "conceito": "**Duas placas criam uma construção muito rígida.** Na osteossíntese ortogonal da diáfise femoral, placas em planos diferentes podem acrescentar estabilidade em fraturas complexas. A decisão sobre retirada de material, porém, não decorre apenas do arranjo das placas. Primeiro é preciso confirmar consolidação, investigar sintomas ou infecção e pesar o risco de uma nova operação.\n\n**Depois da retirada, o osso precisa suportar a carga.** Os orifícios dos parafusos e a mudança brusca da distribuição de tensões podem favorecer refratura, sobretudo no fêmur, que recebe cargas elevadas. Retirar os implantes em etapas preserva temporariamente parte do suporte e é uma estratégia biomecanicamente plausível em casos selecionados. Isso não transforma um intervalo fixo em regra universal.\n\n**A frase mistura princípio e prazo.** A cautela na retirada de placas duplas é compreensível, mas faltam dados para afirmar que toda construção ortogonal femoral deva ser removida em dois tempos exatamente separados por seis meses. Para o paciente, importam consolidação radiográfica, qualidade óssea, extensão do implante, sintomas e plano de proteção da carga após cada etapa.",
-  "correta": "**Certo é a resposta provável da questão, pela lógica de retirada cautelosa e escalonada.** O prazo de seis meses, contudo, não deve ser entendido como prescrição obrigatória para todo fêmur com placas ortogonais.",
-  "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 2829."
-  ],
   "provavel": "A",
-  "geradoEm": "2026-10-01",
+  "alerta": "A banca não divulgou o gabarito oficial; a resposta A segue a bibliografia e conta no seu desempenho. O texto que decide a questão está no Campbell's Operative Orthopaedics, 15ª ed. (cap. 59, Fixation with Plates and Screws, p. 2636), o mesmo trecho da 10ª edição citada pela prova (p. 2829). O comentário anterior desta questão dizia não ter encontrado fundamento para os seis meses; o fundamento existe e está citado.",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 59 (Fractures of the Lower Extremity), p. 2636",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 1, seção Hardware Removal and Fracture Risk",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 57",
+   "AO Principles of Fracture Management, 3ª ed., cap. 4.7 (implant removal)",
+   "Resumo OrtoQuestões: Fratura da diáfise do fêmur"
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "trauma-1188": {
@@ -22045,16 +22104,19 @@
   "conferido": false
  },
  "trauma-1190": {
+  "conceito": "A frase da banca soa engenhosa: se um osso do antebraço não consolidou e perdeu um pedaço, encurta-se o outro, aproximam-se as pontas e fixam-se os dois. O Campbell diz exatamente o contrário, e o motivo é uma ideia que atravessa todo o capítulo do antebraço: rádio e ulna funcionam como uma articulação, e mexer no osso sadio cria um problema novo.\n\n**O que é a situação.** Fratura de um osso só (ou dos dois, com um deles consolidado bem), em que o outro evoluiu para **pseudartrose com falha óssea**. O osso íntegro funciona como uma tala: impede que as pontas do osso doente se aproximem, e o defeito não fecha por si (Campbell's Operative Orthopaedics, 15ª ed., cap. 64, p. 2934).\n\n**O que o livro manda fazer.** Na seção \"Radius or ulna alone\", o Campbell escreve que **é preferível pontear o defeito a encurtar o osso normal e arriscar uma segunda pseudartrose**. Defeitos curtos se resolvem com **placa de compressão e enxerto esponjoso autógeno** no intervalo. Para falhas maiores, a mesma página cita bons resultados de RING com enxerto esponjoso e placa em defeitos de até 6 cm (média de 2,2 cm), o enxerto tricortical e a **fíbula vascularizada** nos defeitos segmentares. Na pseudartrose infectada com falha, desbridamento, espaçador ou pérolas de antibiótico e enxertia em tempo posterior, ou transporte ósseo.\n\n**Quando se encurta.** O encurtamento só aparece quando **os dois ossos** estão fraturados: se ambos têm falha, ressecam-se as pontas escleróticas e igualam-se os comprimentos, desde que sem encurtar demais o membro; e, se um osso consolidou viciado e o outro não, resseca-se osso da consolidação viciosa para igualar (p. 2934). Encurtar um osso **são** de propósito é criar uma fratura nova, com o risco de ela não consolidar.\n\n**Por que o comprimento importa.** O Campbell (p. 2933 aprox.) lembra que a diferença de comprimento entre os dois ossos limita a rotação e dá dor na radioulnar distal, e que o arco radial precisa ser recriado. O enxerto deve ficar longe do outro osso, para não provocar sinostose.\n\n> **Na prova:** pseudartrose de **um** osso com falha e o outro íntegro = **pontear o defeito** (placa + enxerto), **não** encurtar o osso sadio. Encurtamento só para igualar os dois quando ambos estão comprometidos.\n\nO resumo do antebraço trata a pseudartrose na seção \"Pseudartrose\" (tirar o material, desbridar até osso vivo, refixar e enxertar só se houver falha óssea).",
+  "correta": "**B) Errado.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 64, p. 2934), diz que, quando um osso não consolida e o outro está íntegro ou consolidado sem encurtamento, pontear o defeito é preferível a encurtar o osso normal, que arrisca uma segunda pseudartrose. O tratamento é placa de compressão com enxerto esponjoso autógeno nos defeitos curtos, e enxerto estrutural ou fíbula vascularizada nos maiores.",
   "incorretas": {
-   "A": "**Certo apenas em reconstrução excepcional bem planejada.** Um ajuste de comprimento pode ser necessário em situação específica, mas deve preservar as articulações radioulnares e a função rotatória, não ser presumido pela simples presença do defeito."
+   "A": "**Certo** exigiria que o livro recomendasse sacrificar o osso sadio. O encurtamento aparece no Campbell (cap. 64, p. 2934) só para igualar os dois ossos quando ambos estão comprometidos, pela falha ou pela consolidação viciosa; com um osso íntegro, o livro manda manter o comprimento e pontear a falha."
   },
-  "conceito": "**Dois ossos funcionam como uma unidade.** Rádio e ulna mantêm comprimentos e curvaturas próprios, ligados pela membrana interóssea e pelas articulações radioulnar proximal e distal. A pronação e a supinação dependem desse alinhamento; reduzir um osso à custa de encurtar o outro pode prejudicar a rotação e a congruência do punho.\n\n**O que fazer com a perda óssea.** Em uma pseudartrose isolada com defeito, o tratamento procura restaurar o comprimento do osso afetado, obter estabilidade e fornecer biologia para consolidação. Dependendo do tamanho do defeito e dos tecidos moles, usam-se enxerto intercalar, fixação com placa, enxerto vascularizado ou outras técnicas reconstrutivas. Também é preciso pesquisar infecção antes de escolher o método.\n\n**Por que não encurtar o íntegro de rotina.** Osteotomizar um osso saudável cria outra área a consolidar e altera a relação entre rádio e ulna sem resolver diretamente o defeito. Procedimentos de encurtamento podem ter indicações especiais, mas não constituem a conduta padrão para toda pseudartrose de apenas um osso do antebraço.",
-  "correta": "**Errado.** A regra é reconstruir comprimento e estabilidade do osso com perda de substância, não encurtar automaticamente o osso íntegro e fixar os dois.",
-  "referencias": [
-   "Canale ST. Campbell’s operative orthopaedics. St. Louis: Mosby/Manole. 10ª edição, p. 3157."
-  ],
+  "alerta": "Questão sem gabarito oficial; a resposta Errado segue o gabarito pela bibliografia e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 64, p. 2934), que prefere pontear o defeito a encurtar o osso normal. O resumo do antebraço (Rockwood and Green, cap. 42) cobre a pseudartrose só de forma geral e não discute o encurtamento.",
   "provavel": "B",
-  "geradoEm": "2026-10-01",
+  "referencias": [
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 64 (Delayed Union and Nonunion of Fractures), p. 2933 e 2934",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 42 (Diaphyseal Fractures of the Radius and Ulna), seção Nonunion",
+   "Resumo OrtoQuestões: Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi"
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "trauma-1191": {
@@ -25071,7 +25133,7 @@
       "triade-terrivel-fc91076c",
       "triade-terrivel-7f75b022"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "58174445f400708396f95cdab740a6cdc07ac8025700ee961ea6749e1544666d"
     }
    ],
@@ -25109,7 +25171,7 @@
      "blocos": [
       "fratura-da-cabeca-do-radio-9e1dbc64"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "b14621ab715a02050924eeffac86f037109bbc8e871f1cbd2958a9f8eecf5b26"
     }
    ],
@@ -29023,7 +29085,7 @@
       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117",
       "triade-terrivel-1483748a"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "c0f9c313f977e6aa4a4a56d2bdeeb22934e7f384045021cec0eb719df2d02f55"
     }
    ],
@@ -29090,7 +29152,7 @@
       "fraturas-do-coronoide-261ac45a",
       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "16563d4921afdad0a462e49d977361fe2970bc3add85dc9422b4baea465e826c"
     }
    ],
@@ -29131,7 +29193,7 @@
       "quem-segura-o-cotovelo-7b7c7f11",
       "luxacao-simples-do-cotovelo-4dc4fd08"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "27bc41bea80dcc0232aad12fab47481f53b21e53e44d1061f6028b420ebcacf7"
     }
    ],
@@ -29172,7 +29234,7 @@
       "luxacao-simples-do-cotovelo-e9cc7169",
       "fratura-da-cabeca-do-radio-109bc9e4"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "d743fef0cebb1ca324e8a690644e75e5d382693c29b6bbf98bd0acbccbcd96de"
     }
    ],
@@ -29214,7 +29276,7 @@
       "instabilidade-rotatoria-posterolateral-cronica-f56bbbfa",
       "luxacao-simples-do-cotovelo-100eb4d3"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "43079ebd2bce5595769b93b8dc3246265cb85315f8c5a2c02c93e84f589ef522"
     }
    ],
@@ -29253,7 +29315,7 @@
       "luxacao-simples-do-cotovelo-3e95d9b4",
       "luxacao-simples-do-cotovelo-569d2234"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "272af9f234d693258967e238f607c58fb538204fc42365c513423ad4f2363a14"
     }
    ],
@@ -29294,7 +29356,7 @@
       "fratura-da-cabeca-do-radio-74811875",
       "fratura-da-cabeca-do-radio-23601215"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "3d841e856150b136e65220b1e5d1c928558fdca60532e03ed36b808a509f5657"
     }
    ],
@@ -29332,7 +29394,7 @@
       "fratura-da-cabeca-do-radio-9e1dbc64",
       "fratura-da-cabeca-do-radio-109bc9e4"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "12f3049aabd3ca8e7aed420e8d9ccc6c44dbf2ec79c0bb85c95f307a1dde77ee"
     }
    ],
@@ -29372,7 +29434,7 @@
       "fratura-da-cabeca-do-radio-fe207e21",
       "fratura-da-cabeca-do-radio-510692ed"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "4435f40fbd1273c3c8c2d089eae52131c1cea62c9cefcc14725c3eb3d1f4d545"
     }
    ],
@@ -29463,7 +29525,7 @@
       "fratura-da-cabeca-do-radio-510692ed",
       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "a97515291930d7ef2932bd617f399b92d92a26328e22f2e394ec1c8db0759d03"
     }
    ],
@@ -29506,7 +29568,7 @@
       "quem-segura-o-cotovelo-2b1e3945",
       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "392faaa4facdc7094834987b15873800bb9b2ac68f93212218567d284a458d27"
     }
    ],
@@ -29549,7 +29611,7 @@
       "fraturas-do-coronoide-261ac45a",
       "fraturas-do-coronoide-67ec539b"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "c2413a6f784056c54aee3eb4cd596e6c7cb11f672675b0645a7683a209e3ca1c"
     }
    ],
@@ -29590,7 +29652,7 @@
       "triade-terrivel-ccad4df0",
       "triade-terrivel-499f49dc"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "c57e0074d7540aa11a6b7c6f29bf9a7bee485986a73e603be6fe1b0bd6d1395c"
     }
    ],
@@ -29632,7 +29694,7 @@
       "triade-terrivel-735f104a",
       "triade-terrivel-a4db2fcf"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "4afb9709ea56f454ac5e18de20b6b2dff8d2252e36eb5dd94182fb5eec59f941"
     }
    ],
@@ -29673,7 +29735,7 @@
       "instabilidade-rotatoria-posteromedial-em-varo-df0d6f45",
       "instabilidade-rotatoria-posteromedial-em-varo-79ce6093"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "c267ec247cdaa57a84ae3a071d010e5a06cebb826778ea415eeece6cee9af1b3"
     }
    ],
@@ -29715,7 +29777,7 @@
       "triade-terrivel-7f75b022",
       "triade-terrivel-fe3d9fe4"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "37b7b85a0d8112f90178a5185ca6cba4b3e4d92ca6c66262633406c9704906c0"
     }
    ],
@@ -29758,7 +29820,7 @@
       "instabilidade-rotatoria-posteromedial-em-varo-e52aaa29",
       "instabilidade-rotatoria-posteromedial-em-varo-28c9d117"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "7afbee2e1c5bdfb8867320bcc0cfcee40fda72892d7bc6e392b61488bc24d8a4"
     }
    ],
@@ -29798,7 +29860,7 @@
       "instabilidade-rotatoria-posteromedial-em-varo-4d5eecdf",
       "fraturas-do-coronoide-261ac45a"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "94233d3f483e0d12eae4013e7cf3fbc265e4f26e854aae0057980d9ac914be47"
     }
    ],
@@ -29838,7 +29900,7 @@
       "quem-segura-o-cotovelo-7b7c7f11",
       "instabilidade-rotatoria-posteromedial-em-varo-20aaeb66"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "f031f20ae296196a8ad93df486a955d9ea03ae08999b778f419398445c5b011b"
     }
    ],
@@ -29878,7 +29940,7 @@
       "ulna-proximal-olecrano-e-monteggia-posterior-d94b44b4",
       "ulna-proximal-olecrano-e-monteggia-posterior-706a5726"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "6e307398d8cb05cef20eae3d429ff8eec2e85cb837bbfb31b9aac022b92d4e95"
     }
    ],
@@ -29917,7 +29979,7 @@
       "ulna-proximal-olecrano-e-monteggia-posterior-13cd0e0b",
       "ulna-proximal-olecrano-e-monteggia-posterior-e1b9aba4"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "6c30f2e06b0adc8d9fcd219a966b968514059a95e51d47063b73f835f226843c"
     }
    ],
@@ -29958,7 +30020,7 @@
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-001fc2f2",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "09f6c610d07cf033e5aebd59c88498f74c3797151a3f6318c13b27160e303fd4"
     }
    ],
@@ -29998,7 +30060,7 @@
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-1604c100",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "85fe6f3648062ea92e0a313845cb29bff99d82309d6955d9e34703b4d7bd26d0"
     }
    ],
@@ -30039,7 +30101,7 @@
       "ulna-proximal-olecrano-e-monteggia-posterior-94f5c40a",
       "ulna-proximal-olecrano-e-monteggia-posterior-2a8f01a4"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "6fdd63872313412f20ecb70604f768880151c0928e51e1febff8b11af5baeb19"
     }
    ],
@@ -30080,7 +30142,7 @@
       "ulna-proximal-olecrano-e-monteggia-posterior-2a8f01a4",
       "ulna-proximal-olecrano-e-monteggia-posterior-13cd0e0b"
      ],
-     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
+     "sha256": "a590a7ec6d2e5decb3876c9ce466248c5ec77ccd15bb7cf3ad4aedfbccb75ce5",
      "trechosSha256": "2cc7c45643ad75b8b471486ee12da68f3eaab2c5e191fd5a6842e2fdd53bc9e2"
     }
    ],
@@ -30121,7 +30183,7 @@
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-7adfdbaf",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-af74e8a7"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "eb7c245d106234edf5f1b2a1ed30d1a66b26800f0815206fb3f3ee602c93553f"
     }
    ],
@@ -30162,7 +30224,7 @@
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-001fc2f2",
       "monteggia-bado-jupiter-e-a-ulna-que-reduz-o-radi-d63ad277"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "c7d0298074b54e7a18f423a872b86b6113a2207cbae702f99789e0dfb5adf65d"
     }
    ],
@@ -30203,7 +30265,7 @@
       "vias-de-acesso-e-o-nervo-interosseo-posterior-a6bcc01c",
       "vias-de-acesso-e-o-nervo-interosseo-posterior-655215a8"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "aa9aedb355e63a6a5e9c7c28f63342c84ea0c9b30a63d58b51c3c6662c57099a"
     }
    ],
@@ -30243,7 +30305,7 @@
       "vias-de-acesso-e-o-nervo-interosseo-posterior-cf047815",
       "o-antebraco-como-articulacao-arco-radial-forcas--cce6674f"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "e3cc75c3dde51a94f6396dfe8d56a3e1f551f6a253823697b701bd4c49d61c2c"
     }
    ],
@@ -30284,7 +30346,7 @@
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-5e1ab933",
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "5fc9b986faa89d243e692288009fe50151546cca0ed5e1f9f47eac70ccb0945b"
     }
    ],
@@ -30326,7 +30388,7 @@
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7fe16693",
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-5e1ab933"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "78f89a76364dbc5236c0ad130b7c8975a389fd0d75917a5dd26f98605335b893"
     }
    ],
@@ -30392,7 +30454,7 @@
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34",
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-f5e1d35e"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "235ff07b530f431320fd5ea1b6129bb1b238f4d06e7760b67d3817c6c49c6f0c"
     }
    ],
@@ -30431,7 +30493,7 @@
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7353be7e",
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-64c13f34"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "8c6937ddd3d5f16ac77b55468a98ba469328ef47d73a27216a1267253cfe7820"
     }
    ],
@@ -30473,7 +30535,7 @@
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-c4e6e4c1",
       "galeazzi-o-radio-quebrado-e-a-radioulnar-distal-7386a3e5"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "609ee0b83cb7963337fbb81d0592739dbb989498097728d9fb40bb8589409793"
     }
    ],
@@ -30513,7 +30575,7 @@
       "o-antebraco-como-articulacao-arco-radial-forcas--bec67379",
       "o-antebraco-como-articulacao-arco-radial-forcas--0614ee82"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "12233869e41f40fdc4d136b9028ce97dcaa6e25608846fd7f08d73b802c95a6a"
     }
    ],
@@ -30552,7 +30614,7 @@
       "o-antebraco-como-articulacao-arco-radial-forcas--1fddf15b",
       "o-antebraco-como-articulacao-arco-radial-forcas--e602b577"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "b6752c260d5adb70bbe2cd1164e30ddf4a73b161bfb4b8367daeedf87082b68a"
     }
    ],
@@ -30591,7 +30653,7 @@
       "quem-se-machuca-como-e-o-que-vem-junto-b20f609d",
       "quem-se-machuca-como-e-o-que-vem-junto-1c80acff"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "1276997924a2b530d51aaaec5ee75c8de1bb9a6cf3dddf85da4e3c7cb7dba0e8"
     }
    ],
@@ -30632,7 +30694,7 @@
       "sindrome-compartimental-do-antebraco-e7ea6f10",
       "sindrome-compartimental-do-antebraco-9723cec1"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "31983ef3b38192ef1ed9b18047a0b81b8a90e52aa447becd7f112b9f1732b221"
     }
    ],
@@ -30672,7 +30734,7 @@
       "sindrome-compartimental-do-antebraco-408a137e",
       "sindrome-compartimental-do-antebraco-e7ea6f10"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "737e9a01e2a9daa8e001b532b2dcb3ea3e0659bc6ac1bcc206a1f8ba82b35b95"
     }
    ],
@@ -30711,7 +30773,7 @@
       "vias-de-acesso-e-o-nervo-interosseo-posterior-e6512d10",
       "vias-de-acesso-e-o-nervo-interosseo-posterior-21492905"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "f4703056de425319cd2511884b568d06f09dcb2a2b08d9a0e71525a2ed75928e"
     }
    ],
@@ -30751,7 +30813,7 @@
       "vias-de-acesso-e-o-nervo-interosseo-posterior-c472565c",
       "vias-de-acesso-e-o-nervo-interosseo-posterior-70016f08"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "22d865362f8f0ce21ddc0b0fe2e64efe5a89b356bcbaabe9be5bba7666be0567"
     }
    ],
@@ -30795,7 +30857,7 @@
       "a-placa-tecnica-que-a-prova-cobra-b28ae921",
       "quem-trata-sem-cirurgia-a-fratura-isolada-da-uln-2fa5f304"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "72cb0952a8a79e325acc81893896e688f68f6c698874e64edd1ca0a00f9b4c1f"
     }
    ],
@@ -30833,7 +30895,7 @@
       "o-antebraco-como-articulacao-arco-radial-forcas--99a6b318",
       "o-antebraco-como-articulacao-arco-radial-forcas--a65a2ca5"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "9907a8ffc48c1b609954ca065b97806411f438d8ba80358519e3bab0acbb072c"
     }
    ],
@@ -30871,7 +30933,7 @@
       "a-placa-tecnica-que-a-prova-cobra-9a510e06",
       "a-placa-tecnica-que-a-prova-cobra-8863bbb3"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "d914eca8c433e3d1c6eac6b191ad73bce025e50aa7b958507935758f6da52a5d"
     }
    ],
@@ -30912,7 +30974,7 @@
       "a-haste-intramedular-aff2082f",
       "a-placa-tecnica-que-a-prova-cobra-cdc349b7"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "5c5b795f1ba8f5bcdf17d576a3827eca2314e0a230c3f78aa43e7342f3efff8a"
     }
    ],
@@ -30932,34 +30994,7 @@
   "referencias": [
    "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 42: Diaphyseal Fractures of the Radius and Ulna. Conteúdo consultado no resumo Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi, Biblioteca OrtoQuestões. Seções: Fraturas expostas e por projétil; A haste intramedular."
   ],
-  "geradoEm": "2026-10-21",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-42-diafise-radio-ulna",
-     "titulo": "Fraturas diafisárias do rádio e da ulna, Monteggia e Galeazzi",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 42 · Diaphyseal Fractures of the Radius and Ulna",
-     "secoes": [
-      "Fraturas expostas e por projétil",
-      "A haste intramedular"
-     ],
-     "blocos": [
-      "fraturas-expostas-e-por-projetil-5aeafa05",
-      "fraturas-expostas-e-por-projetil-217de6d1",
-      "a-haste-intramedular-418a2c99",
-      "fraturas-expostas-e-por-projetil-cffa5e06"
-     ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
-     "trechosSha256": "6add28c139f4a0ba9b21b6069b26d1632a282b20978c1cc0df0e61e1d7765b2c"
-    }
-   ],
-   "questaoSha256": "4cd263b56c61f64241ba4fa828265f1c19c07e48ff5cec43a597448a4784f8c5",
-   "comentarioSha256": "3b67fb16a549e5b5059abb96126fa07dc371ff15453de2d3f21a1955131d5652"
-  }
+  "geradoEm": "2026-10-21"
  },
  "trauma-1457": {
   "conceito": "**A radiografia mostra uma ponte óssea entre rádio e ulna, compatível com sinostose radioulnar pós-traumática.** Há material de osteossíntese e alterações do foco, mas o dado que define a complicação é a continuidade óssea ocupando o espaço entre os dois ossos. Essa união impede que o rádio gire livremente em relação à ulna.\n\nO resumo relaciona a sinostose a **fraturas dos dois ossos no mesmo nível com cominuição**, alta energia e **traumatismo craniano**. A associação com trauma de crânio se repete nas séries citadas. Isso é informação de risco da fonte; uma radiografia do antebraço não permite concluir que o paciente específico sofreu lesão craniana.\n\nA prevenção inclui evitar osso, enxerto, parafusos ou metal no espaço interósseo e não usar via única para os dois ossos proximais. A proposta não é evitar toda placa ou todo movimento, e sim preservar o espaço de rotação e reduzir fatores que favoreçam uma ponte.\n\n**Na Biblioteca, leia “Sinostose radioulnar”.** Separe o que a imagem mostra, a ponte óssea, do que a história deve pesquisar, como energia e trauma craniano. Essa distinção permite interpretar a figura sem inventar antecedentes do paciente.\n\n**Por que esta questão foi criada.** Usa uma radiografia para reconhecer a complicação e distinguir achado visível de fatores de risco, tema cobrado no SBOT-SP e na FMRP-USP 2026.",
@@ -30993,7 +31028,7 @@
       "sinostose-radioulnar-62eba46d",
       "a-placa-tecnica-que-a-prova-cobra-0d9b4a72"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "5f22d1bbc187f6ccfc04b1eba2cdd6b954f4f53f08b3865ca8150a2f11e210e0"
     }
    ],
@@ -31033,7 +31068,7 @@
       "retirada-do-material-e-refratura-f53f826b",
       "retirada-do-material-e-refratura-da1712aa"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "5d3602a02b711419dd0071cd354a921a12ad8dee6c95bb37eac1995d0bca6384"
     }
    ],
@@ -31071,7 +31106,7 @@
       "consolidacao-viciosa-pseudartrose-e-infeccao-8b98a6b6",
       "consolidacao-viciosa-pseudartrose-e-infeccao-a40e83d9"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "68d638a93204b759ff508c35270994f64d37073a8d8168dabad75ee6f330981a"
     }
    ],
@@ -31112,7 +31147,7 @@
       "a-placa-tecnica-que-a-prova-cobra-0d9b4a72",
       "a-placa-tecnica-que-a-prova-cobra-9a510e06"
      ],
-     "sha256": "c0c9529c5b7600dbf1bc705cbaa483dd1f6043fb542f4386811768fef37b539b",
+     "sha256": "ba9c0c0bc0f69c2acf208fce9ecf9922cee5c42280ffe7de54ef05cced7c3df9",
      "trechosSha256": "b742cf8f92ab7127188d9540d1e46a95795e11737fbe33fdc06c714f5b7552c9"
     }
    ],
@@ -33227,7 +33262,7 @@
       "haste-retrograda-c19a5fde",
       "fixador-externo-placa-e-controle-de-dano-373ad787"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "ef972be755d590769b9aa6705872cd164926a0400217b4bfe95dc911612e19ca"
     }
    ],
@@ -36759,7 +36794,7 @@
       "a-arteria-poplitea-9f539f11",
       "a-arteria-poplitea-0851428b"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "c3bbb10dfba7e914cadbec8f2dab6b6acbd0b4bf33c720313423cdd6ce02204f"
     }
    ],
@@ -36815,7 +36850,7 @@
       "o-nervo-fibular-comum-05d3e14c",
       "a-arteria-poplitea-b9951f36"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "20aee214d0b1d6dd129b08261f749be9cc10535b8baa8c8f2d3030caac5b0ecd"
     }
    ],
@@ -36854,7 +36889,7 @@
       "canto-posterolateral-1d24e09d",
       "canto-posterolateral-04216df0"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "93b2a2d34c57d8f1e14dc404f37bca2a57d435cd8253a96793752e6541d68055"
     }
    ],
@@ -36896,7 +36931,7 @@
       "a-arteria-poplitea-29c433db",
       "a-arteria-poplitea-cd6b4a13"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "3fa6ff376d8e33d5ebb22b9d9b21e5adf92f96d30ab0994ced32dab25a4937ce"
     }
    ],
@@ -36938,7 +36973,7 @@
       "o-lado-medial-f9dd2cc7",
       "exame-e-luxacao-irredutivel-a17fc1b9"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "22b9dfac52411439f9fd954ad967350f63a2d2e6016705e4c937fe89fad5874b"
     }
    ],
@@ -36980,7 +37015,7 @@
       "canto-posterolateral-e1623413",
       "tratamento-0fd132be"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "f4048d9e9a908b44c21f5cc51b8bda4ff63623b868be70366650b7920e87ac35"
     }
    ],
@@ -37020,7 +37055,7 @@
       "canto-posterolateral-e1623413",
       "tratamento-c73151d3"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "712ed0d001aea3005f4156bfead49641a6e23acafe7c4def85914f5974e97863"
     }
    ],
@@ -37063,7 +37098,7 @@
       "a-arteria-poplitea-a5075ff5",
       "tratamento-0fd132be"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "706c4b9aed53937efe3282a2d56ae72b0fa137134e0cca885709aa59bd5a8067"
     }
    ],
@@ -37127,7 +37162,7 @@
       "o-nervo-fibular-comum-6c2619c5",
       "o-nervo-fibular-comum-05d3e14c"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "5dd68129cbac4c5f7dd645af119b9df2c9d3b0e36889b8dd8d847094f798ad66"
     }
    ],
@@ -37169,7 +37204,7 @@
       "cruzado-posterior-a-pedra-fundamental-ed726e98",
       "imagem-ef4a6509"
      ],
-     "sha256": "fabf21561b3c0a90d51c3c39c7da2de90de0824c1ec09f5d252bfcb0bafb3eaf",
+     "sha256": "4fb55285682539b2c95ead69a6e2bdcd2fd8a5c4c824fab1de733feecbb0ec77",
      "trechosSha256": "dd6ce15ef115d182bafde296f491fdc79edf896c5aad1e3bcc05269d0c6996d9"
     }
    ],
@@ -37498,7 +37533,7 @@
       "haste-retrograda-e34374de",
       "haste-retrograda-cc1ee60b"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "9bdead148033cb2a17a6e857d99348ab7cae3c6edda979d18631faa9dc902fa1"
     }
    ],
@@ -38095,7 +38130,7 @@
       "epidemiologia-mecanismo-e-lesoes-associadas-b22e4239",
       "epidemiologia-mecanismo-e-lesoes-associadas-2349852b"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "8ff8bba05befc382b686f840215a90ff442a978a949ad78324c08fd5f8dfd36d"
     }
    ],
@@ -38138,7 +38173,7 @@
       "a-fratura-do-colo-do-mesmo-lado-ab880107",
       "a-fratura-do-colo-do-mesmo-lado-38892e1f"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "b57907f405e9c1861cbfdc66a072dd74708371f8463c3ec952c5c4194c4ea30c"
     }
    ],
@@ -38188,7 +38223,7 @@
       "a-fratura-do-colo-do-mesmo-lado-81cd5787",
       "a-fratura-do-colo-do-mesmo-lado-99f043a3"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "b03954808ad35a7612692fae860db816c0a092f3d3447142f8b5680362903df4"
     },
     {
@@ -38244,7 +38279,7 @@
       "haste-anterograda-o-ponto-de-entrada-469e83ef",
       "haste-anterograda-o-ponto-de-entrada-0550ca82"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "ebc9ea7d6a240daa3dbd718870b1d6f8f7ea56e188f70477deb8b660753f4f0b"
     },
     {
@@ -38298,7 +38333,7 @@
       "haste-anterograda-o-ponto-de-entrada-01dab420",
       "haste-anterograda-o-ponto-de-entrada-d377b34e"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "1196e6e440b25adaacfa5fe1cb3f088491cf92a9705cac3abd10be7af6cf82bd"
     }
    ],
@@ -38336,7 +38371,7 @@
      "blocos": [
       "haste-anterograda-o-ponto-de-entrada-2e8e945f"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "5758e6ddd09a8cec6b9fda0ce9e0c2abf1e4f8ac89a4ad4edc7040ae152f4e06"
     },
     {
@@ -38390,7 +38425,7 @@
       "tratamento-nao-operatorio-e-tracao-afec236d",
       "tratamento-nao-operatorio-e-tracao-0e1b2fc1"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "39bf4a850e3d06e9ce989caf4178f995630f08de8595bac71deefbacd95672c7"
     }
    ],
@@ -38431,7 +38466,7 @@
       "haste-retrograda-8469a2aa",
       "a-fratura-do-colo-do-mesmo-lado-2c1abd51"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "3d777a11f946e5ab633d981584bb9082460b0406bf47e6265a1ec2548087dc7d"
     }
    ],
@@ -38535,7 +38570,7 @@
       "fixador-externo-placa-e-controle-de-dano-20d4259a",
       "fixador-externo-placa-e-controle-de-dano-d740b6e2"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "0bdfbade44acbc419b6173a2ef633c0112e7fcd79c932c9d2c66cad3d24ef064"
     }
    ],
@@ -38573,7 +38608,7 @@
       "posicionamento-e-mesa-de-tracao-a31ba87c",
       "posicionamento-e-mesa-de-tracao-a573848a"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "32f62cc0c4f0064fc44862b73599ddb3a2de39cbc607b6b2ff63b888bb36ed78"
     }
    ],
@@ -38614,7 +38649,7 @@
       "pseudartrose-infeccao-retirada-e-quebra-da-haste-4fb4bece",
       "pseudartrose-infeccao-retirada-e-quebra-da-haste-f057c4bb"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "6aa0cedaaedf1fb796f2de7b77880163182e94e9a1246663110790f5b107963c"
     }
    ],
@@ -38651,7 +38686,7 @@
      "blocos": [
       "epidemiologia-mecanismo-e-lesoes-associadas-439de276"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "3ec77b940ee739af0e59fc9ed2f06abbf857be31ee4528554ca55cac3f9edad8"
     }
    ],
@@ -40655,7 +40690,7 @@
       "fixador-externo-placa-e-controle-de-dano-8029d0d1",
       "fixador-externo-placa-e-controle-de-dano-5b33401f"
      ],
-     "sha256": "1d75ae65e72d8cd272418e0ee8606c6981876e38687040485923379ddcd4e796",
+     "sha256": "1efe27caf67d88fcc16dd162c4b8aa25ba4ecb58ac29ae651d241d00367afddc",
      "trechosSha256": "04b19252a5fc96ec1acf187ff3aa3b761a9a06e5c9e6c630f7ff534e59e93471"
     }
    ],

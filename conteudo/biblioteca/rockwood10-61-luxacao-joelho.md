@@ -161,7 +161,7 @@ A base biomecânica do teste está no capítulo. Cortar o canto com o **cruzado 
 
 > Na prova: rotação externa aumentada **só a 30°** sugere canto posterolateral isolado; **a 30° e a 90°**, canto **e** cruzado posterior.
 
-!questoes central=trauma-1030,joelho-0222 relacionadas=joelho-0308 treino=trauma-1622
+!questoes central=trauma-1030,joelho-0222 relacionadas=joelho-0308,joelho-0043 treino=trauma-1622
 conceito: Rotação externa aumentada a 30° e a 90° de flexão indica lesão combinada do cruzado posterior e do canto posterolateral.
 como: O TARO 2025 deu o teste positivo nos dois ângulos; o TARO 2011, a diferença de 10° com o joelho a 90°. No TARO 2006 (certo ou errado, sem gabarito oficial registrado no acervo), a afirmação de que o cruzado posterior isolado aumenta a rotação a 30° e a 90° contraria a biomecânica do capítulo: o aumento em todos os ângulos exige o canto lesado junto.
 armadilha: Canto posterolateral isolado: aumenta a rotação sobretudo a 30°, menos a 90°.
@@ -243,7 +243,7 @@ armadilha: Sóleo: não entra no defeito capsular que o capítulo descreve, que 
 
 O cruzado posterior dá a maior parte da restrição à translação posterior em todos os ângulos e **95%** dela entre 30° e 90°. É restritor **secundário** do varo (só aumenta o varo se o canto também estiver cortado), do valgo e das rotações. Um detalhe que a prova pode usar: num estudo em cadáver, o **ligamento poplíteo oblíquo** foi o principal restritor ligamentar da **hiperextensão**; cortá-lo aumentou a hiperextensão tanto quanto, ou mais que, cortar os dois cruzados juntos. A ordem entre os cruzados está no Campbell 15 (cap. 50, p. 2095): o posterior só freia a hiperextensão **depois da ruptura do cruzado anterior**.
 
-!questoes relacionadas=joelho-0186 treino=joelho-0358
+!questoes relacionadas=joelho-0186,joelho-0228 treino=joelho-0358
 conceito: Na hiperextensão, o cruzado posterior é restritor secundário: pelo Campbell 15 (cap. 50, p. 2095), ele só passa a segurar a hiperextensão depois da ruptura do cruzado anterior; o Rockwood destaca o ligamento poplíteo oblíquo, expansão do semimembranáceo, como o principal restritor ligamentar.
 como: O TEOT 2025 perguntou quando o cruzado posterior passa a segurar a hiperextensão; o gabarito oficial, depois da ruptura do cruzado anterior, é o que diz o Campbell 15 (cap. 50, p. 2095), que também lhe dá 89% da resistência à translação posterior.
 !fim
@@ -274,7 +274,7 @@ Numa série de 35 reconstruções combinadas dos dois cruzados, o Lachman e o pi
 
 > Na prova: o problema mais comum depois de reconstruir o cruzado posterior é a **frouxidão posterior residual**.
 
-!questoes central=joelho-0027,joelho-0269,trauma-1048 relacionadas=joelho-0013 treino=trauma-1628
+!questoes central=joelho-0027,joelho-0269,trauma-1048 relacionadas=joelho-0013,joelho-0288 treino=trauma-1628
 conceito: A reconstrução do cruzado posterior restaura bem menos a gaveta posterior do que a do cruzado anterior restaura o Lachman; a frouxidão posterior residual é o problema mais comum.
 como: O TARO cobrou a mesma ideia em 2013, 2016 e 2023, com perda de flexão, dor, lesão nervosa e instabilidade posterolateral como distratores.
 armadilha: Perda de flexão: a rigidez existe, mas, quando a instabilidade residual está entre as alternativas, é ela que a banca considera a mais comum.

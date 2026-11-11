@@ -208,7 +208,7 @@ O HEBERT detalha os condroprotetores, que prefere chamar de **SYSADOA** (drogas 
 
 Para a prova, o raciocínio que evita erro é: quando o enunciado pergunta qual tratamento **tem evidência de melhorar a evolução** ou de retardar a progressão, a resposta é a **perda de peso no paciente com sobrepeso**. Ácido hialurônico, glucosamina com condroitina e acupuntura são exatamente os itens que a AAOS, citada pelo Campbell, coloca do lado da evidência contrária.
 
-!questoes central=joelho-0131
+!questoes central=joelho-0131 relacionadas=trauma-1069
 conceito: Pela AAOS no Campbell, a perda de peso com IMC acima de 25 tem evidência moderada a favor e retarda a progressão; ácido hialurônico, glucosamina com condroitina e acupuntura têm evidência contra.
 como: A SBOT-SP perguntou qual tratamento da artrose do joelho tem evidência de melhora na evolução, entre ácido hialurônico, perda de peso com IMC acima de 25, glucosamina com condroitina e acupuntura.
 armadilha: Marcar o ácido hialurônico porque o HEBERT o descreve como modificador favorável do curso; a banca seguiu a AAOS, que o coloca com evidência contra.
@@ -378,7 +378,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 50, p. 2060 a 2061 aprox.), 
 
 A Técnica 50.16 do Campbell (p. 2061 aprox.) tem um detalhe que contrasta com a osteotomia da artrose: na osteotomia valgizante associada à reconstrução posterolateral, a fíbula é cortada **no meio da diáfise** e a tibiofibular proximal **não é solta**, porque a migração proximal da fíbula encurtaria as estruturas posterolaterais e pioraria a instabilidade.
 
-!questoes central=joelho-0179
+!questoes central=joelho-0179 relacionadas=joelho-0009,trauma-1078
 conceito: Com instabilidade posterolateral crônica, LCP insuficiente e varo, faz-se osteotomia tibial antes ou junto da reconstrução, com cunha de abertura medial, que aumenta o slope posterior e ajuda o LCP deficiente.
 como: O TEOT 2025 pediu a conduta entre reparo isolado, reconstrução isolada, abertura medial aumentando o slope e fechamento lateral diminuindo o slope.
 armadilha: Escolher o fechamento lateral; ele diminui o slope, o que serve ao LCA deficiente e deve ser evitado na instabilidade posterior.

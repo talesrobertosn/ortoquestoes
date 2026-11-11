@@ -94,7 +94,7 @@ alerta: O AO descreve a remodelação até a morfologia original, mas não usa a
 
 O AO cita estudos de microangiografia mostrando que **boa parte da irrigação do calo vem das partes moles ao redor**, uma boa razão para não descolar tecidos (AO, cap. 1.2, p. 12). Osso só se forma apoiado numa rede vascular, e cartilagem não persiste sem perfusão. A resposta angiogênica depende da fixação: é maior com fixação mais flexível (talvez pelo calo maior) e menor quando o strain é excessivo. A fresagem reduz o fluxo endosteal, mas não afeta a perfusão dentro do calo, justamente porque esse sangue vem das partes moles. Logo após a fratura o fluxo cortical cai quase 50%, com hiperemia de pico em cerca de 2 semanas (AO, cap. 1.2, p. 11).
 
-!questoes central=conceitos-basicos-0001
+!questoes central=conceitos-basicos-0001 relacionadas=conceitos-basicos-0291
 conceito: Na consolidação da diáfise, grande parte da irrigação do calo vem das partes moles ao redor, não do endósteo nem do periósteo isolados.
 como: O TARO 2020 perguntou de onde provém a maior parte da resposta vascular na consolidação das fraturas diafisárias.
 armadilha: Escolher periósteo; o periósteo é importante para a vitalidade dos fragmentos, mas o AO atribui a irrigação do calo às partes moles adjacentes.

@@ -53,7 +53,7 @@ O ponto que a banca cobra é a ordem dos acontecimentos. O osteoblasto maduro, c
 | **Pontes cruzadas** | ligações entre fibrilas | tração; liberam **CTX e NTX** na reabsorção | formação espontânea das fibrilas |
 !fim
 
-!questoes central=conceitos-basicos-0180
+!questoes central=conceitos-basicos-0180 relacionadas=conceitos-basicos-0295
 conceito: O osteoide é a camada de matriz orgânica, ainda não mineralizada, produzida pelos osteoblastos durante o crescimento e a remodelação; só depois ela calcifica.
 como: A SBOT-SP cruzou dois eixos nas alternativas: orgânica ou inorgânica, osteoblasto ou osteoclasto.
 armadilha: Chamar o osteoide de inorgânico (o mineral entra depois) ou atribuí-lo ao osteoclasto, que só reabsorve.
@@ -80,7 +80,7 @@ Na fratura entram mais duas células. O **condrócito** não existe no osso cons
 | **Célula satélite** | músculo | amplifica sinais iniciais | sem ela não sobem BMP, IGF-1, FGF-2 |
 !fim
 
-!questoes central=conceitos-basicos-0068
+!questoes central=conceitos-basicos-0068 relacionadas=conceitos-basicos-0286,conceitos-basicos-0293
 conceito: O osteoclasto deriva da linhagem hematopoética (monócito/macrófago) e reabsorve osso em fossetas da superfície, as lacunas de HOWSHIP.
 como: O TEOT 2022 pediu o tipo celular de linhagem hematopoética que forma as lacunas de HOWSHIP, com fibroblasto, osteoblasto e condroblasto como distratores.
 armadilha: Marcar osteoblasto por associar "osteo" a "osso"; o osteoblasto é mesenquimal e forma, não escava.

@@ -244,7 +244,7 @@ como: Os simulados perguntam a composição de cada parte, o motivo do pó pré-
 - A pressurização deve estar **completa antes de inserir a cúpula**; a cúpula não é o pressurizador.
 - As **cúpulas flangeadas** (desde 1976; a Ogee em 1981) foram feitas para aumentar a pressão de injeção e orientar a cúpula; estudos mais recentes mostraram que elas **não geram, de forma consistente, pressões maiores** que as sem flange. A sobrevida em longo prazo da cúpula flangeada cimentada foi de 77% em 21 anos.
 
-!questoes treino=quadril-0542,quadril-0549
+!questoes relacionadas=quadril-0016 treino=quadril-0542,quadril-0549
 conceito: Fêmur: preservar 2 a 3 mm de esponjoso forte (fresar agressivo reduz o cisalhamento), lavagem pulsátil, restritor, cimento a vácuo retrógrado pela pistola e pressurização (o restritor não a dispensa). Acetábulo: orifícios de ancoragem, lavagem, pressão contínua acima de 5 kPa (impede o sangue de laminar), pressurizar antes de pôr a cúpula; flange não gera pressão maior de forma consistente.
 como: Os simulados pedem o detalhe técnico correto de cada etapa e oferecem as técnicas da primeira geração como alternativas.
 !fim

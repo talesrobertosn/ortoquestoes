@@ -41,7 +41,7 @@ alerta: No ENARE R4 2025 (ombro-cotovelo-0539), o gabarito oficial foi a alterna
 
 O **complexo colateral lateral** tem três componentes: o **colateral radial**, o **ligamento anular** e o **colateral ulnar lateral**. Juntos, são o principal estabilizador contra o **varo** e contra a **rotação posterolateral**. O anular abraça a cabeça do rádio e se prende nas bordas anterior e posterior da incisura radial da ulna; o colateral radial nasce no epicôndilo lateral e se mistura ao anular; o **colateral ulnar lateral** passa por trás do colateral radial e se insere na **crista do supinador** da ulna, logo abaixo do anular. É ele que falha na instabilidade posterolateral.
 
-!questoes central=ombro-cotovelo-0451,ombro-cotovelo-0064,ombro-cotovelo-0249
+!questoes central=ombro-cotovelo-0451,ombro-cotovelo-0064,ombro-cotovelo-0249 relacionadas=ombro-cotovelo-0498
 conceito: O colateral ulnar lateral vai do epicôndilo lateral à crista do supinador e é a banda que falha na instabilidade rotatória posterolateral.
 como: As três questões mostram imagem da face lateral: duas pedem o nome da estrutura apontada (o colateral ulnar lateral), a outra pede qual banda insuficiente explica a subluxação posterolateral da figura.
 armadilha: Colateral radial: está no mesmo complexo, mas não chega à ulna e não segura a rotação.
@@ -261,7 +261,7 @@ Operam-se as desviadas com **bloqueio**, as que fazem parte de uma **fratura-lux
 
 > Na prova: **não retire a cabeça do rádio sem repor** quando há lesão do colateral (medial ou lateral), luxação do cotovelo, ruptura da membrana interóssea ou fratura do coronoide. Ela é o estabilizador que sobrou.
 
-!questoes central=trauma-0157,ombro-cotovelo-0490,ombro-cotovelo-0509,trauma-1124 treino=trauma-1416
+!questoes central=trauma-0157,ombro-cotovelo-0490,ombro-cotovelo-0509,trauma-1124 relacionadas=ombro-cotovelo-0517 treino=trauma-1416
 conceito: Na fratura cominutiva da cabeça do rádio com lesão ligamentar ou instabilidade longitudinal, a cabeça deve ser substituída por prótese; a ressecção isolada é contraindicada.
 como: O TARO cobra a mesma ideia desde 2006, trocando a lesão associada: colateral medial roto, Essex-Lopresti, instabilidade longitudinal do antebraço.
 armadilha: Ressecção com reparo ligamentar: tira o apoio ósseo justamente quando os ligamentos estão fracos.
@@ -346,7 +346,7 @@ Cada tipo é A (isolado) ou B (com luxação).
 
 > Na prova: o tratamento do coronoide se entende pelo **padrão da lesão**, não pelo coronoide isolado. Ponta é tríade; faceta anteromedial é posteromedial em varo; base é olécrano.
 
-!questoes central=trauma-0008,trauma-0055,trauma-1109,trauma-0757 relacionadas=ombro-cotovelo-0476 treino=trauma-1420,trauma-1421
+!questoes central=trauma-0008,trauma-0055,trauma-1109,trauma-0757 relacionadas=ombro-cotovelo-0476,trauma-0874 treino=trauma-1420,trauma-1421
 conceito: Na classificação de O'Driscoll, a ponta (tipo I) se associa à tríade terrível, a faceta anteromedial (tipo II) à instabilidade posteromedial e a base (tipo III) às fraturas-luxações da ulna proximal.
 como: O TARO pergunta a associação de cada tipo, trocando base e faceta; o TEOT 2024 pediu o que o subtipo II.3 acomete obrigatoriamente (faceta anteromedial e tubérculo sublime), e o TEOT 2025 mostrou a tomografia.
 armadilha: Faceta anteromedial com tríade terrível: a tríade leva a ponta.
