@@ -1,6 +1,6 @@
 # Cobertura do banco anatômico do Atlas 3D
 
-Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 18 lote(s). Não editar à mão.
+Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 20 lote(s). Não editar à mão.
 
 ## Totais
 
@@ -9,8 +9,10 @@ Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 18 lote(s). Não ed
 | musculo | 193 | 192 | 0 | 1 | 193 |
 | nervo | 92 | 90 | 0 | 2 | 84 |
 | ligamento | 84 | 82 | 1 | 1 | 84 |
-| arteria | 38 | 37 | 0 | 1 | 38 |
+| arteria | 53 | 52 | 0 | 1 | 53 |
+| veia | 10 | 10 | 0 | 0 | 10 |
 | orgao | 58 | 58 | 0 | 0 | 58 |
+| encefalo | 25 | 25 | 0 | 0 | 25 |
 
 ## Por região
 
@@ -21,17 +23,17 @@ Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 18 lote(s). Não ed
 | braco | 4 | 8 | 0 | 5 |
 | cotovelo | 0 | 0 | 6 | 0 |
 | antebraco | 20 | 6 | 1 | 4 |
-| punho-mao | 10 | 8 | 18 | 2 |
+| punho-mao | 10 | 8 | 18 | 3 |
 | pelve-quadril | 13 | 14 | 7 | 8 |
-| coxa | 14 | 0 | 0 | 2 |
+| coxa | 14 | 0 | 0 | 3 |
 | joelho | 1 | 0 | 14 | 2 |
 | perna | 13 | 7 | 1 | 3 |
 | tornozelo-pe | 12 | 2 | 20 | 2 |
-| cabeca-pescoco | 43 | 21 | 0 | 0 |
-| torax | 5 | 0 | 0 | 0 |
-| abdome | 5 | 0 | 0 | 0 |
-| pelve-perineo | 3 | 0 | 0 | 0 |
-| sistema-nervoso-central | 0 | 0 | 0 | 0 |
+| cabeca-pescoco | 43 | 21 | 0 | 3 |
+| torax | 5 | 0 | 0 | 4 |
+| abdome | 5 | 0 | 0 | 4 |
+| pelve-perineo | 3 | 0 | 0 | 1 |
+| sistema-nervoso-central | 0 | 0 | 0 | 1 |
 | corpo-inteiro | 0 | 1 | 0 | 0 |
 
 ## Campos preenchidos (músculos)

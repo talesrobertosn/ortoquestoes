@@ -1,0 +1,886 @@
+{
+  "lote": "70-vasos",
+  "fonte": "netter-6",
+  "paginas_lidas": [
+    273,
+    438,
+    588,
+    589,
+    590,
+    593,
+    609,
+    624,
+    630,
+    639,
+    642,
+    643,
+    653,
+    658,
+    660,
+    662,
+    663,
+    666,
+    703,
+    706,
+    708,
+    721
+  ],
+  "registros": [
+    {
+      "chave": "coronarias",
+      "tipo": "arteria",
+      "nome": "Artérias coronárias",
+      "en": "Coronary arteries",
+      "ids": [
+        "anterior_interventricular_artery",
+        "circumflex_artery_of_heart",
+        "left_coronary_artery",
+        "right_coronary_artery",
+        "right_inferolateral_branch_of_right_coronary_artery",
+        "septal_branches_of_anterior_interventricular_artery"
+      ],
+      "regiao": "torax",
+      "trajeto": "Primeiros ramos da aorta, nascem dos seios aórticos direito e esquerdo. A esquerda passa entre a aurícula esquerda e o tronco pulmonar e dá o ramo interventricular anterior (descendente anterior) e o circunflexo; a direita corre no sulco atrioventricular até a face posterior e dá os ramos marginal direito, do nó AV e interventricular posterior.",
+      "irriga": "Esquerda: átrio esquerdo, quase todo o ventrículo esquerdo, parte do direito e o septo; nó sinoatrial em 40%. Direita: átrio direito, quase todo o ventrículo direito, face diafragmática do esquerdo, parte dos septos; nó sinoatrial em 60% e nó atrioventricular.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642,
+            643
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "veias-cardiacas",
+      "tipo": "veia",
+      "nome": "Seio coronário e veias cardíacas",
+      "en": "Coronary sinus and cardiac veins",
+      "ids": [
+        "coronary_sinus",
+        "great_cardiac_vein",
+        "middle_cardiac_vein"
+      ],
+      "regiao": "torax",
+      "trajeto": "O seio coronário corre transversal no sulco coronário posterior e desemboca no átrio direito.",
+      "ramos": "Recebe a veia cardíaca magna (sulco interventricular anterior, pela ponta esquerda), a média (sulco interventricular posterior, pela ponta direita), as pequenas, a marginal esquerda e as posteriores do ventrículo esquerdo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            643
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "aorta-toracica",
+      "tipo": "arteria",
+      "nome": "Aorta ascendente, arco e tronco braquiocefálico",
+      "en": "Ascending aorta, aortic arch and brachiocephalic trunk",
+      "ids": [
+        "aortic_arch",
+        "ascending_aorta",
+        "brachiocephalic_trunk",
+        "left_common_carotid_artery",
+        "right_common_carotid_artery"
+      ],
+      "regiao": "torax",
+      "trajeto": "A aorta ascendente sai do ventrículo esquerdo (seus primeiros ramos são as coronárias); o arco dá o tronco braquiocefálico (que se divide em subclávia e carótida comum direitas), a carótida comum esquerda e a subclávia esquerda.",
+      "ramos": "As carótidas comuns sobem no pescoço e se dividem na borda superior da cartilagem tireóidea em carótida interna e externa.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642,
+            643,
+            624
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tronco-e-arterias-pulmonares",
+      "tipo": "arteria",
+      "nome": "Tronco e artérias pulmonares",
+      "en": "Pulmonary arteries",
+      "ids": [
+        "anterior_basal_segmental_artery_of_left_lung",
+        "anterior_basal_segmental_artery_of_right_lung",
+        "anterior_segmental_artery_of_left_lung",
+        "anterior_segmental_artery_of_right_lung",
+        "apical_segmental_artery_of_left_lung",
+        "apical_segmental_artery_of_right_lung",
+        "bifurcation_of_pulmonary_trunk",
+        "inferior_lingular_artery_of_left_lung",
+        "inferior_lobar_artery_of_right_lung",
+        "lateral_basal_segmental_artery_of_left_lung",
+        "lateral_basal_segmental_artery_of_right_lung",
+        "lateral_segmental_artery_of_right_lung",
+        "left_pulmonary_artery",
+        "medial_basal_segmental_artery_of_left_lung",
+        "medial_basal_segmental_artery_of_right_lung",
+        "medial_segmental_artery_of_right_lung",
+        "middle_lobar_artery_of_right_lung",
+        "posterior_basal_segmental_artery_of_left_lung",
+        "posterior_basal_segmental_artery_of_right_lung",
+        "posterior_segmental_artery_of_left_lung",
+        "posterior_segmental_artery_of_right_lung",
+        "pulmonary_trunk",
+        "right_pulmonary_artery",
+        "superior_lingular_artery_of_left_lung",
+        "superior_lobar_artery_of_right_lung",
+        "superior_segmental_artery_of_left_lung",
+        "superior_segmental_artery_of_right_lung"
+      ],
+      "regiao": "torax",
+      "trajeto": "O tronco pulmonar sai do ventrículo direito pela valva pulmonar e se divide em artérias pulmonares direita e esquerda, que acompanham os brônquios até cada lobo e segmento.",
+      "irriga": "Levam o sangue venoso aos pulmões para a troca gasosa.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            639,
+            642
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "veias-pulmonares",
+      "tipo": "veia",
+      "nome": "Veias pulmonares",
+      "en": "Pulmonary veins",
+      "ids": [
+        "anterior_vein_of_left_lung",
+        "anterior_vein_of_right_lung",
+        "apical_vein_of_right_lung",
+        "apicoposterior_vein_of_left_lung",
+        "inferior_basal_vein_of_left_lung",
+        "inferior_basal_vein_of_right_lung",
+        "inferior_lingular_vein_of_left_lung",
+        "lateral_vein_of_right_lung",
+        "left_inferior_pulmonary_vein",
+        "left_superior_pulmonary_vein",
+        "lingular_vein_of_left_lung",
+        "medial_vein_of_right_lung",
+        "posterior_vein_of_right_lung",
+        "right_inferior_pulmonary_vein",
+        "right_superior_pulmonary_vein",
+        "superior_basal_vein_of_left_lung",
+        "superior_basal_vein_of_right_lung",
+        "superior_lingular_vein_of_left_lung",
+        "superior_vein_of_left_lung",
+        "superior_vein_of_right_lung"
+      ],
+      "regiao": "torax",
+      "trajeto": "Quatro veias pulmonares (superior e inferior de cada lado) chegam ao átrio esquerdo; suas tributárias drenam os segmentos.",
+      "drenagem": "Trazem o sangue oxigenado dos pulmões ao coração esquerdo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "veias-cavas",
+      "tipo": "veia",
+      "nome": "Veias cavas e braquiocefálicas",
+      "en": "Venae cavae",
+      "ids": [
+        "inferior_vena_cava_abdominal_part",
+        "inferior_vena_cava_thoracic_part",
+        "left_brachiocephalic_vein",
+        "right_brachiocephalic_vein",
+        "superior_vena_cava"
+      ],
+      "regiao": "torax",
+      "trajeto": "A cava superior abre na parte superior do átrio direito; a inferior, na parte inferior, alinhada com a superior. A cava inferior começa à frente de L5, pela união das ilíacas comuns, e atravessa o diafragma em T8.",
+      "drenagem": "Cava superior: cabeça, pescoço, membros superiores e tórax (pelas braquiocefálicas). Cava inferior: membros inferiores, pelve e abdome (as vísceras do tubo digestivo chegam a ela pela porta e pelas veias hepáticas).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            642,
+            653,
+            663
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "sistema-azigos",
+      "tipo": "veia",
+      "nome": "Sistema ázigos e veias da parede do tórax",
+      "en": "Azygos system",
+      "ids": [
+        "accessory_hemi_azygos_vein",
+        "azygos_vein",
+        "hemi_azygos_vein",
+        "internal_thoracic_veins",
+        "left_ascending_lumbar_vein",
+        "left_subcostal_vein",
+        "left_superior_intercostal_vein",
+        "musculophrenic_veins",
+        "occipital_vein",
+        "right_ascending_lumbar_vein",
+        "right_subcostal_vein",
+        "right_superior_intercostal_vein",
+        "right_superior_phrenic_vein",
+        "superior_epigastric_veins",
+        "vertebral_vein"
+      ],
+      "regiao": "torax",
+      "trajeto": "As veias lombares ascendentes sobem e continuam como ázigos à direita e hemiázigos à esquerda, que levam o sangue à cava superior.",
+      "drenagem": "Forma uma anastomose entre as cavas inferior e superior; o plexo venoso vertebral externo também se liga ao ázigos.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            630,
+            653,
+            663
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "aorta-toracica-descendente",
+      "tipo": "arteria",
+      "nome": "Aorta torácica descendente e ramos",
+      "en": "Thoracic aorta",
+      "ids": [
+        "posterior_intercostal_arteries",
+        "subcostal_artery",
+        "superior_phrenic_arteries",
+        "thoracic_aorta"
+      ],
+      "regiao": "torax",
+      "trajeto": "Continua o arco no mediastino posterior até o hiato aórtico do diafragma, onde passa a ser aorta abdominal.",
+      "ramos": "Intercostais posteriores (que irrigam os músculos intercostais e dão ramos dorsais ao dorso e à coluna), subcostais (na borda da 12ª costela) e frênicas superiores.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            273,
+            653,
+            663
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "cerebrais-e-circulo",
+      "tipo": "arteria",
+      "nome": "Artérias do encéfalo e círculo arterial",
+      "en": "Cerebral arteries",
+      "ids": [
+        "anterior_cerebral_artery",
+        "anterior_communicating_artery",
+        "anterior_inferior_cerebellar_artery",
+        "anterior_spinal_artery",
+        "anterior_temporal_branch",
+        "artery_of_central_sulcus",
+        "artery_of_precentral_sulcus",
+        "basilar_artery",
+        "branch_to_angular_gyrus",
+        "callosomarginal_artery",
+        "distal_lateral_striate_branches",
+        "frontal_branches_of_callosomarginal_artery",
+        "insular_branches_of_middle_cerebral_artery_m2",
+        "insular_branches_of_middle_cerebral_artery_m2_segment",
+        "internal_carotid_artery",
+        "lateral_frontobasal_artery",
+        "lateral_occipital_artery",
+        "lateral_pontine_branches_of_basilar_artery",
+        "medial_occipital_artery",
+        "medial_pontine_branches_of_basilar_artery",
+        "middle_cerebral_artery_m1_segment",
+        "middle_cerebral_artery_m3_segment",
+        "orbitofrontal_branches_of_anterior_cerebral_artery",
+        "parietal_branches_of_middle_cerebral_artery",
+        "parieto_occipital_artery",
+        "pericallosal_artery",
+        "postcentral_arterial_branch",
+        "posterior_cerebral_artery",
+        "posterior_communicating_artery",
+        "posterior_inferior_cerebellar_artery",
+        "posterior_parietal_artery",
+        "posterior_temporal_branch",
+        "prefrontal_artery",
+        "proximal_lateral_striate_branches",
+        "superior_cerebellar_artery",
+        "temporal_branches_of_middle_cerebral_artery",
+        "temporo_occipital_branch",
+        "vertebral_artery"
+      ],
+      "regiao": "sistema-nervoso-central",
+      "trajeto": "As carótidas internas (circulação anterior) e as vertebrais (circulação posterior) irrigam o encéfalo. As vertebrais sobem pelos forames transversos de C6 a C1, entram pelo forame magno e formam a basilar, que termina nas cerebrais posteriores. As comunicantes anterior e posteriores fecham o círculo arterial (de Willis), no espaço subaracnóideo.",
+      "irriga": "Cerebral anterior: faces medial e superior do hemisfério (exceto o occipital). Média: face lateral. Posterior: face inferior e lobo occipital. Cerebelares: cerebelo. A espinal anterior (das vertebrais) irriga os dois terços anteriores da medula.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            624,
+            630
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "ramos-da-carotida-externa",
+      "tipo": "arteria",
+      "nome": "Carótida externa e seus ramos",
+      "en": "External carotid artery and branches",
+      "ids": [
+        "accessory_branch_of_middle_meningeal_artery",
+        "angular_artery",
+        "anterior_deep_temporal_artery",
+        "artery_of_pterygoid_canal",
+        "ascending_pharyngeal_artery",
+        "buccal_artery",
+        "descending_palatine_artery",
+        "external_carotid_artery",
+        "facial_artery",
+        "frontal_branch_of_superficial_temporal_artery",
+        "greater_palatine_artery",
+        "inferior_alveolar_artery",
+        "inferior_labial_artery",
+        "infra_orbital_artery",
+        "maxillary_artery",
+        "mental_branch_of_inferior_alveolar_artery",
+        "middle_meningeal_artery",
+        "mylohyoid_branch_of_inferior_alveolar_artery",
+        "occipital_artery",
+        "posterior_deep_temporal_artery",
+        "posterior_lateral_nasal_branches_of_sphenopalatine_artery",
+        "posterior_septal_branches_of_sphenopalatine_artery",
+        "posterior_superior_alveolar_artery",
+        "submental_artery",
+        "superficial_temporal_artery",
+        "superficial_temporal_veins",
+        "superior_labial_artery",
+        "transverse_facial_artery"
+      ],
+      "regiao": "cabeca-pescoco",
+      "trajeto": "Nasce da carótida comum na borda superior da tireóidea e termina nas artérias temporal superficial e maxilar.",
+      "irriga": "Face, couro cabeludo, mastigação, cavidade nasal e dura-máter (meníngea média). A artéria facial é a principal da face: cruza a mandíbula e vai ao ângulo medial do olho.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            593,
+            624
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "oftalmica-e-ramos",
+      "tipo": "arteria",
+      "nome": "Artéria oftálmica e seus ramos",
+      "en": "Ophthalmic artery",
+      "ids": [
+        "anterior_ethmoidal_artery",
+        "anterior_septal_branches_of_anterior_ethmoidal_artery",
+        "central_retinal_artery",
+        "lacrimal_artery",
+        "long_posterior_ciliary_arteries",
+        "ophthalmic_artery",
+        "posterior_ethmoidal_artery",
+        "septal_branches_of_posterior_ethmoidal_artery",
+        "short_posterior_ciliary_arteries",
+        "supra_orbital_artery",
+        "supratrochlear_artery"
+      ],
+      "regiao": "cabeca-pescoco",
+      "trajeto": "Ramo da carótida interna que entra na órbita pelo canal óptico.",
+      "irriga": "Bulbo do olho e retina (central da retina, ciliares), músculos da órbita, glândula lacrimal, cavidade nasal (etmoidais) e fronte (supraorbital e supratroclear).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            170,
+            590,
+            593
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "subclavia-e-ramos",
+      "tipo": "arteria",
+      "nome": "Ramos da subclávia (tireocervical, costocervical, torácica interna)",
+      "en": "Branches of subclavian artery",
+      "ids": [
+        "costocervical_trunk",
+        "deep_branch_of_transverse_cervical_artery",
+        "deep_cervical_artery",
+        "first_posterior_intercostal_artery",
+        "inferior_thyroid_artery",
+        "internal_thoracic_artery",
+        "musculophrenic_artery",
+        "second_posterior_intercostal_artery",
+        "superficial_branch_of_transverse_cervical_artery",
+        "superior_epigastric_artery",
+        "supreme_intercostal_artery",
+        "thyrocervical_trunk",
+        "transverse_cervical_artery"
+      ],
+      "regiao": "cabeca-pescoco",
+      "trajeto": "A vertebral é o primeiro ramo da subclávia; dela também saem o tronco tireocervical (tireóidea inferior, cervical transversa, supraescapular), o costocervical (cervical profunda e intercostal suprema) e a torácica interna, que desce atrás das cartilagens costais e termina como musculofrênica e epigástrica superior.",
+      "irriga": "Tireoide e paratireoides (tireóidea inferior), pescoço e escápula, parede anterior do tórax e diafragma.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            273,
+            588,
+            609,
+            624
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "veias-da-cabeca-e-pescoco",
+      "tipo": "veia",
+      "nome": "Veias da face e do pescoço",
+      "en": "Veins of head and neck",
+      "ids": [
+        "angular_vein",
+        "anterior_division_of_retromandibular_vein",
+        "anterior_jugular_vein",
+        "common_facial_vein",
+        "external_jugular_vein",
+        "facial_vein",
+        "inferior_labial_veins",
+        "inferior_ophthalmic_vein",
+        "internal_jugular_vein",
+        "lingual_vein",
+        "maxillary_veins",
+        "posterior_auricular_vein",
+        "posterior_division_of_retromandibular_vein",
+        "retromandibular_vein",
+        "submental_vein",
+        "superior_labial_vein",
+        "superior_ophthalmic_vein",
+        "superior_thyroid_vein"
+      ],
+      "regiao": "cabeca-pescoco",
+      "trajeto": "As supratrocleares e supraorbitais formam a angular, que continua como facial; a retromandibular une a temporal superficial e as maxilares; a facial e a divisão anterior da retromandibular formam a facial comum, tributária da jugular interna. A jugular externa recebe a divisão posterior da retromandibular e a auricular posterior.",
+      "drenagem": "Face, couro cabeludo, tireoide e órbita (oftálmicas, que se ligam ao seio cavernoso).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            593,
+            609
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "seios-da-dura",
+      "tipo": "veia",
+      "nome": "Seios venosos da dura-máter",
+      "en": "Dural venous sinuses",
+      "ids": [
+        "anterior_intercavernous_sinus",
+        "basilar_venous_plexus",
+        "cavernous_sinus",
+        "inferior_petrosal_sinus",
+        "inferior_sagittal_sinus",
+        "occipital_sinus",
+        "posterior_intercavernous_sinus",
+        "sigmoid_sinus",
+        "straight_sinus",
+        "superior_petrosal_sinus",
+        "superior_sagittal_sinus",
+        "transverse_sinus"
+      ],
+      "regiao": "sistema-nervoso-central",
+      "trajeto": "Canais entre as camadas da dura que recebem as veias do encéfalo: as das faces superior e lateral vão ao seio sagital superior; as basais vão à veia magna, que drena para o seio reto. Os seios terminam no sigmoide, que passa pelo forame jugular e continua como jugular interna.",
+      "drenagem": "Todo o sangue venoso do encéfalo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            589,
+            624
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "aorta-abdominal-e-ramos",
+      "tipo": "arteria",
+      "nome": "Aorta abdominal e ramos parietais e pares",
+      "en": "Abdominal aorta",
+      "ids": [
+        "abdominal_aorta",
+        "anterior_branch_of_renal_artery",
+        "inferior_phrenic_artery",
+        "inferior_suprarenal_artery",
+        "intrarenal_arteries_of_left_kidney",
+        "intrarenal_arteries_of_right_kidney",
+        "left_renal_artery",
+        "left_testicular_artery",
+        "lumbar_arteries",
+        "median_sacral_artery",
+        "posterior_branch_of_renal_artery",
+        "right_renal_artery",
+        "right_testicular_artery"
+      ],
+      "regiao": "abdome",
+      "trajeto": "Ramos ímpares viscerais: tronco celíaco (T12), mesentérica superior (L1) e inferior (L3). Pares viscerais: suprarrenais, renais (L1–L2; a direita é mais longa e passa atrás da cava, com cinco ramos segmentares terminais) e gonadais. Parietais: frênicas inferiores, subcostais, quatro pares de lombares e a sacral mediana, logo acima da bifurcação.",
+      "ramos": "Bifurca-se nas ilíacas comuns na altura da crista ilíaca (pouco abaixo do umbigo).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            653,
+            662,
+            663,
+            666
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "tronco-celiaco",
+      "tipo": "arteria",
+      "nome": "Tronco celíaco e ramos",
+      "en": "Coeliac trunk",
+      "ids": [
+        "coeliac_trunk",
+        "common_hepatic_artery",
+        "gastroduodenal_artery",
+        "left_gastric_artery",
+        "proper_hepatic_artery",
+        "splenic_artery"
+      ],
+      "regiao": "abdome",
+      "trajeto": "Nasce em T12 e dá a gástrica esquerda, a hepática comum (que se divide em gastroduodenal e hepática própria) e a esplênica.",
+      "irriga": "Terço inferior do esôfago, estômago, 1ª e 2ª partes do duodeno, pâncreas, baço, fígado e vias biliares.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            662
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "mesenterica-superior",
+      "tipo": "arteria",
+      "nome": "Mesentérica superior e ramos",
+      "en": "Superior mesenteric artery",
+      "ids": [
+        "anterior_inferior_pancreaticoduodenal_artery",
+        "appendicular_artery",
+        "colic_branch_of_ileocolic_artery",
+        "ileal_branch_of_ileocolic_artery",
+        "ileocolic_artery",
+        "inferior_pancreaticoduodenal_artery",
+        "middle_colic_artery",
+        "right_colic_artery",
+        "superior_mesenteric_artery"
+      ],
+      "regiao": "abdome",
+      "trajeto": "Nasce em L1 e desce no mesentério, com 15 a 18 ramos para o jejuno e o íleo que formam arcadas e vasos retos.",
+      "irriga": "Do duodeno distal à papila até os dois terços proximais do colo transverso: pancreaticoduodenal inferior, jejunais e ileais, ileocólica (ceco, apêndice), cólica direita e cólica média.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            658,
+            662
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "mesenterica-inferior",
+      "tipo": "arteria",
+      "nome": "Mesentérica inferior e ramos",
+      "en": "Inferior mesenteric artery",
+      "ids": [
+        "ascending_branch_of_left_colic_artery",
+        "descending_branch_of_left_colic_artery",
+        "inferior_mesenteric_artery",
+        "left_colic_artery",
+        "marginal_artery",
+        "sigmoid_arteries",
+        "superior_anorectal_artery"
+      ],
+      "regiao": "abdome",
+      "trajeto": "Nasce em L3; termina como retal superior.",
+      "irriga": "Terço distal do colo transverso, colo descendente, sigmoide e reto proximal (cólica esquerda, sigmóideas e retal superior). A artéria marginal liga as cólicas ao longo do colo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            662
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "veia-porta",
+      "tipo": "veia",
+      "nome": "Veia porta e tributárias",
+      "en": "Hepatic portal vein",
+      "ids": [
+        "hepatic_portal_vein",
+        "hepatic_veins",
+        "inferior_epigastric_vein",
+        "inferior_mesenteric_vein",
+        "left_gastro_omental_vein",
+        "middle_colic_vein",
+        "right_colic_vein",
+        "right_gastro_omental_vein",
+        "sigmoid_veins",
+        "splenic_vein",
+        "superficial_epigastric_vein",
+        "superior_mesenteric_vein"
+      ],
+      "regiao": "abdome",
+      "trajeto": "A esplênica e a mesentérica superior se unem atrás do colo do pâncreas e formam a porta; a mesentérica inferior chega à esplênica. As veias hepáticas (duas ou três) saem do fígado direto para a cava inferior, logo abaixo do diafragma.",
+      "drenagem": "Todo o sangue do tubo digestivo abdominal, do baço e do pâncreas passa pelo fígado antes da cava (cerca de 70% do sangue que chega ao fígado).",
+      "clinica": "Na hipertensão portal (cirrose, obstrução pós-hepática ou pré-hepática) surgem ascite, esplenomegalia congestiva, encefalopatia e dilatação das anastomoses portocava.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            660,
+            663
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "veias-do-abdome-e-pelve",
+      "tipo": "veia",
+      "nome": "Veias renais, gonadais, lombares e ilíacas",
+      "en": "Renal, gonadal, lumbar and iliac veins",
+      "ids": [
+        "common_iliac_vein",
+        "deep_dorsal_vein_of_penis",
+        "external_iliac_vein",
+        "iliolumbar_vein",
+        "inferior_gluteal_veins",
+        "internal_iliac_vein",
+        "internal_pudendal_vein",
+        "intrarenal_veins_of_left_kidney",
+        "intrarenal_veins_of_right_kidney",
+        "lateral_sacral_veins",
+        "left_renal_vein",
+        "left_testicular_vein",
+        "lumbar_veins",
+        "right_renal_vein",
+        "right_testicular_vein",
+        "superior_gluteal_veins"
+      ],
+      "regiao": "abdome",
+      "trajeto": "As ilíacas comuns formam a cava inferior. A veia renal esquerda passa à frente da aorta e atrás da mesentérica superior (\"quebra-nozes\") e recebe a gonadal, a suprarrenal e a frênica inferior esquerdas; do lado direito essas veias vão direto à cava.",
+      "drenagem": "Rins, gônadas, parede posterior do abdome, pelve e períneo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            653,
+            663,
+            666
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "arterias-da-pelve",
+      "tipo": "arteria",
+      "nome": "Artérias ilíacas e da pelve",
+      "en": "Iliac and pelvic arteries",
+      "ids": [
+        "deep_artery_of_penis",
+        "dorsal_artery_of_penis",
+        "inferior_epigastric_artery",
+        "internal_pudendal_artery"
+      ],
+      "regiao": "pelve-perineo",
+      "trajeto": "As ilíacas comuns seguem a borda medial do psoas até a borda pélvica, onde se dividem em interna (vísceras da pelve, períneo e região glútea) e externa (membro inferior; dá a epigástrica inferior antes de passar sob o ligamento inguinal).",
+      "ramos": "A pudenda interna irriga o períneo e os corpos eréteis (artérias profunda e dorsal do pênis).",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            438,
+            663
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "veias-do-membro-superior",
+      "tipo": "veia",
+      "nome": "Veias do membro superior",
+      "en": "Veins of upper limb",
+      "ids": [
+        "anterior_circumflex_humeral_vein",
+        "axillary_vein",
+        "basilic_vein",
+        "brachial_veins",
+        "cephalic_vein",
+        "circumflex_scapular_vein",
+        "deep_venous_palmar_arch",
+        "dorsal_digital_veins_of_hand",
+        "dorsal_venous_network_of_hand",
+        "lateral_thoracic_vein",
+        "left_subclavian_vein",
+        "median_antebrachial_vein",
+        "median_cubital_vein",
+        "palmar_digital_veins",
+        "posterior_circumflex_humeral_vein",
+        "radial_veins",
+        "right_subclavian_vein",
+        "subscapular_vein",
+        "superficial_venous_palmar_arch",
+        "suprascapular_vein",
+        "thoracodorsal_vein",
+        "ulnar_veins"
+      ],
+      "regiao": "braco",
+      "trajeto": "Superficiais: a rede venosa dorsal da mão drena para a cefálica (borda lateral do antebraço, depois sulco deltopeitoral até a axilar) e a basílica (face medial; perfura a fáscia na junção dos terços médio e inferior do braço). A mediana do cotovelo liga as duas sobre a fossa cubital. Profundas: veias pareadas (radiais, ulnares, braquiais) acompanham as artérias e se comunicam com as superficiais.",
+      "drenagem": "Tudo chega à veia axilar, que continua como subclávia.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            703
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "veias-do-membro-inferior",
+      "tipo": "veia",
+      "nome": "Veias do membro inferior",
+      "en": "Veins of lower limb",
+      "ids": [
+        "anterior_tibial_veins",
+        "deep_femoral_vein",
+        "dorsal_digital_veins_of_foot",
+        "dorsal_metatarsal_veins",
+        "dorsal_venous_arch_of_foot",
+        "external_pudendal_veins",
+        "femoral_vein",
+        "fibular_veins",
+        "genicular_veins",
+        "great_saphenous_vein",
+        "intercapitular_veins_of_foot",
+        "lateral_circumflex_femoral_veins",
+        "lateral_plantar_veins",
+        "medial_circumflex_femoral_veins",
+        "medial_plantar_veins",
+        "perforating_veins",
+        "plantar_digital_veins",
+        "plantar_metatarsal_veins",
+        "plantar_venous_arch",
+        "popliteal_vein",
+        "posterior_tibial_veins",
+        "small_saphenous_vein",
+        "superficial_dorsal_veins_of_penis"
+      ],
+      "regiao": "coxa",
+      "trajeto": "Superficiais: a safena magna sobe pela face medial da perna e da coxa, passando atrás do joelho, até a femoral; a safena parva sobe atrás da perna, entre as cabeças do gastrocnêmio, acompanhada do nervo sural, e drena na poplítea. Profundas: veias pareadas acompanham as artérias, formam a poplítea e continuam como femoral. Perfurantes com válvulas ligam o sistema superficial ao profundo.",
+      "drenagem": "A linfa que acompanha a safena magna vai aos linfonodos inguinais superficiais; a da safena parva, aos poplíteos.",
+      "clinica": "Válvulas incompetentes deixam as safenas e suas tributárias dilatadas e tortuosas (varizes). A fáscia lata firme ajuda o bombeamento muscular do sangue venoso.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            706,
+            708,
+            721
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "arterias-superficiais-da-coxa-e-do-pe",
+      "tipo": "arteria",
+      "nome": "Ramos superficiais da femoral e artérias digitais do pé",
+      "en": "Superficial femoral branches and digital arteries of foot",
+      "ids": [
+        "deep_external_pudendal_artery",
+        "dorsal_digital_arteries_of_foot",
+        "perforating_branches_of_plantar_metatarsal_arteries",
+        "superficial_epigastric_artery",
+        "superficial_external_pudendal_artery"
+      ],
+      "regiao": "coxa",
+      "trajeto": "Logo abaixo do ligamento inguinal, a femoral dá ramos superficiais para a parede abdominal inferior (epigástrica superficial) e a genitália externa (pudendas externas superficial e profunda). No pé, as digitais dorsais e os ramos perfurantes ligam as arcadas plantar e dorsal.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            721
+          ]
+        }
+      ],
+      "status": "verificado"
+    },
+    {
+      "chave": "arterias-da-mao-dorsais",
+      "tipo": "arteria",
+      "nome": "Arcos e artérias dorsais do carpo e da mão",
+      "en": "Dorsal carpal and hand arteries",
+      "ids": [
+        "dorsal_carpal_anastomosis",
+        "dorsal_carpal_branch_of_ulnar_artery",
+        "dorsal_digital_arteries_of_hand",
+        "dorsal_metacarpal_arteries",
+        "palmar_carpal_branch_of_radial_artery"
+      ],
+      "regiao": "punho-mao",
+      "trajeto": "Ramos carpais dorsais das artérias radial e ulnar formam a rede carpal dorsal, de onde saem as metacarpais e as digitais dorsais; o ramo carpal palmar da radial contribui para a rede palmar do carpo.",
+      "fonte": [
+        {
+          "l": "netter-6",
+          "p": [
+            703
+          ]
+        }
+      ],
+      "status": "verificado"
+    }
+  ]
+}
