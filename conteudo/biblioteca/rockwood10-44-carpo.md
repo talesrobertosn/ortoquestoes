@@ -1,6 +1,6 @@
 ---
 id: rockwood10-44-carpo
-versao: 1
+versao: 2
 titulo: Fraturas e luxações do carpo
 especialidade: mao
 acesso: gratis
@@ -110,7 +110,7 @@ O **desalinhamento do carpo** (DISI e VISI) é visto no **perfil neutro**. Barto
 !questoes central=trauma-0994,trauma-0167 relacionadas=mao-1259 treino=mao-1672
 conceito: A incidência de Ziter é um AP em desvio ulnar com o tubo angulado 20° para o cotovelo; o desvio do carpo na fratura do escafoide é avaliado no perfil.
 como: O TARO 2026 mostrou a fotografia do posicionamento com a radiografia e pediu o autor; o TARO 2014 perguntou em que incidência se identifica o desvio carpal (lateral). A questão do SBOT-SP sobre Ziter não tem gabarito no acervo; o livro diz que ela ajuda no diagnóstico da fratura do escafoide.
-armadilha: Stecher e Schneck: outras incidências especiais do escafoide que não são descritas nesse capítulo; a fotografia com desvio ulnar e tubo angulado para o cotovelo é a de Ziter.
+armadilha: STECHER e Schneck: outras incidências especiais do escafoide que não são descritas nesse capítulo (a de STECHER, PA com o feixe angulado 20° da vertical de distal para proximal, está no Skeletal Trauma, cap. 43, p. 1218); a fotografia com desvio ulnar e tubo angulado para o cotovelo é a de Ziter.
 armadilha: Posteroanterior: ótima para os espaços e os arcos de Gilula, ruim para o ângulo entre semilunar e capitato.
 !fim
 
@@ -168,8 +168,7 @@ O capítulo cita quatro sistemas: **Russe** (pela inclinação do traço, preven
 
 !questoes central=trauma-0731,mao-1038,mao-0998,trauma-0483,mao-1434,trauma-0811 relacionadas=trauma-0665 treino=mao-1674
 conceito: Na Herbert e Fisher, A é aguda estável, B é aguda instável (B2 cintura, a mais comum; B3 polo proximal; B4 transescafoperilunar), C é retardo e D é pseudartrose.
-como: É uma das classificações mais repetidas do tema: o SBOT-SP pediu a mais prevalente; a UFG pediu o B3 e o B4; o ENARE R4 2023, o tipo C; a USP-SP 2024 e o Einstein 2026 pediram o D2 com as mesmas quatro alternativas.
-alerta: O TARO 2024 (trauma-0665) deu como gabarito que a pseudartrose com necrose do polo proximal é o tipo **D4** de Herbert. A figura do Rockwood (44-21) traz só **D1 (fibrosa) e D2 (esclerótica)**; os subtipos D3 e D4 não aparecem no capítulo. Guarde o gabarito da banca, mas saiba que a resposta depende de uma versão ampliada da classificação que esse livro não mostra.
+como: É uma das classificações mais repetidas do tema: o SBOT-SP pediu a mais prevalente; a UFG pediu o B3 e o B4; o ENARE R4 2023, o tipo C; a USP-SP 2024 e o Einstein 2026 pediram o D2 com as mesmas quatro alternativas. O TARO 2024 (trauma-0665) deu a pseudartrose com necrose como **D4**: a figura do Rockwood (44-21) traz só D1 e D2, mas o HEBERT (cap. 52, Quadro 52.1) mostra a versão ampliada por FILAN e HERBERT, com **D1 fibrosa, D2 com deformidade inicial, D3 esclerótica com deformidade avançada e D4 necrose avascular**. Note a divergência: a esclerótica é D2 na figura do Rockwood e D3 no quadro do HEBERT.
 armadilha: D2 como "fratura-luxação transescafoperilunar": essa é a B4, aguda e instável.
 armadilha: Tipo C como pseudartrose: C é o retardo; a pseudartrose é D.
 !fim
@@ -441,7 +440,7 @@ Para a deformidade fixa, a lesão sem tecido, a artrose local ou a alta demanda,
 
 !questoes central=mao-0994,mao-1550,mao-1520,mao-0526,mao-0594,mao-0968 relacionadas=mao-0132,mao-1436
 conceito: Ligamento irreparável e deformidade redutível pedem reconstrução com tendão (Brunelli usa o flexor radial do carpo); a artrodese triescafoide estabiliza o escafoide na subluxação rotatória e não serve quando já há artrose radioescafoide.
-como: A UFG 2020 contou dissociação com mais de 4 meses sem artrose (ligamentoplastia de Garcia-Elias); a USP-SP 2024 mostrou lesão aguda após queda de 4 m (reparo e fixação temporária); a USP-SP 2026, lesão estática com 9 meses (reconstrução dorsal e volar). O TARO 2010 pediu o tendão de Brunelli; o TARO 2013 e a UFG 2020, a indicação da triescafoide; a prova de Ortopedia, a contraindicação (artrose radioescafoide com colapso). A USP-SP 2024 pediu a artrodese de indicação parecida com a escafocapitato (triescafo).
+como: A UFG 2020 contou dissociação com mais de 4 meses sem artrose (ligamentoplastia de Garcia-Elias); a USP-SP 2024 mostrou lesão aguda após queda de 4 m (reparo e fixação temporária); a USP-SP 2026, lesão estática com 9 meses (reconstrução dorsal e volar). O TARO 2010 pediu o tendão de Brunelli; o TARO 2013 e a UFG 2020, a indicação da triescafoide; a prova de Ortopedia, a contraindicação (artrose radioescafoide com colapso; no Campbell 15, p. 3354, a triescafoide é contraindicada na artrose radioescafoide ou nas fases iniciais da evolução para SLAC). A USP-SP 2024 pediu a artrodese de indicação parecida com a escafocapitato (triescafo).
 armadilha: Extensor radial curto ou longo do carpo: aparecem em reconstruções dorsais, mas o Brunelli clássico é com o flexor radial do carpo.
 armadilha: Triescafoide na instabilidade não dissociativa ou na lesão lunopiramidal: a ETT trata o escafoide instável.
 armadilha: Reparo com miniâncoras na lesão crônica: o ligamento já não é reparável.
@@ -507,8 +506,7 @@ Na radiografia: **quebra dos arcos de Gilula** na PA, **semilunar triangular** (
 
 !questoes central=mao-0239,mao-1074 relacionadas=mao-1169
 conceito: Cerca de um quarto das luxações perilunares não é diagnosticado no primeiro atendimento; a forma mais comum de instabilidade complexa é a fratura-luxação transescafoperilunar.
-como: A prova de Ortopedia pediu a porcentagem de luxações perdidas (25%); a PUC-SP 2019, o tipo mais comum de dissociação complexa; a PUC-SP 2022, o percentual de associação com fratura do escafoide.
-alerta: Na PUC-SP 2022 (mao-1169), o gabarito foi que a fratura do escafoide acompanha cerca de **60%** das luxações perilunares. O Rockwood não dá esse número: diz que as fraturas-luxações são duas vezes mais comuns que as luxações puras e que a maior parte é transescafoperilunar dorsal. A proporção fica perto do gabarito, mas o valor exato é da banca.
+como: A prova de Ortopedia pediu a porcentagem de luxações perdidas (25%); a PUC-SP 2019, o tipo mais comum de dissociação complexa; a PUC-SP 2022, o percentual de associação com fratura do escafoide (mao-1169: cerca de **60%**, número do Green 7, cap. 13, p. 470, para as perilunares com fratura desviada do escafoide, quase sempre no terço médio; o Rockwood diz que as fraturas-luxações são duas vezes mais comuns que as luxações puras).
 armadilha: Luxação perilunar pura: é a de pequeno arco, a metade menos comum.
 !fim
 
@@ -622,7 +620,7 @@ armadilha: Impacção: existe (estiloide da ulna ou hamato contra o piramidal), 
 
 ## Semilunar
 
-Menos de 1% das fraturas do carpo, quase sempre dentro de uma perilunar ou como avulsão. O semilunar é a **pedra angular** da fileira proximal. A fratura do corpo vem de hiperextensão: o capitato é empurrado contra a fossa e o semilunar quebra em plano sagital ou coronal. As **avulsões** contam a lesão ligamentar: **polo dorsal** pela tensão do **escafossemilunar** (dissociação escafossemilunar); **polo volar** pelo **lunopiramidal** (perilunar).
+Menos de 1% das fraturas do carpo, quase sempre dentro de uma perilunar ou como avulsão. O semilunar é a **pedra angular** da fileira proximal. A fratura do corpo vem de hiperextensão: o capitato é empurrado contra a fossa e o semilunar quebra em plano sagital ou coronal. As **avulsões** contam a lesão ligamentar: **polo dorsal** pela tensão do **escafossemilunar** (dissociação escafossemilunar); **polo volar** pelo **lunopiramidal** (perilunar). Aqui os livros divergem: para o Green 7 (cap. 16, p. 638), a fratura palmar do semilunar vem da extensão do punho, com o polo arrancado pelo **radiolunar curto**.
 
 Teisen e Hjarbaek classificaram em cinco grupos: frontal do polo palmar (com as artérias nutrícias palmares), osteocondral da superfície proximal, frontal do polo dorsal, transversal do corpo e frontal transarticular do corpo. A radiografia engana (o traço transversal fica escondido sob as bordas do rádio, e o corno volar sob o pisiforme e o escafoide); a **tomografia** é essencial. Sem desvio: gesso por cerca de 6 semanas. Desvio ou instabilidade associada: fixação; se o capitato separa os fragmentos, não consolida e o risco de necrose sobe. A pseudartrose do corpo é rara porque a maioria evolui para **Kienböck**.
 
@@ -648,11 +646,11 @@ armadilha: PA ou AP: o gancho fica sobreposto; o sinal na PA é indireto (gancho
 
 ## Pisiforme
 
-É um **sesamoide no tendão do flexor ulnar do carpo**. Quebra por **avulsão** (contração do flexor ulnar do carpo), por **impacção piramidal-pisiforme** ou por **golpe direto**, quase sempre no corpo; é comum no esporte e passa despercebida. Ajudam o perfil em 20° a 45° de supinação e o túnel do carpo. O ramo terminal do nervo ulnar pode lesar. O gesso costuma bastar; a fratura **desviada ou sintomática** e a pseudartrose dolorosa vão para **excisão** por via volar (com possível perda de força e de flexão, embora isso seja discutido).
+É um **sesamoide no tendão do flexor ulnar do carpo**. Quebra por **avulsão** (contração do flexor ulnar do carpo), por **impacção piramidal-pisiforme** ou por **golpe direto**, quase sempre no corpo; é comum no esporte e passa despercebida. Ajudam o perfil em 20° a 45° de supinação e o túnel do carpo. O ramo terminal do nervo ulnar pode lesar. O gesso costuma bastar; a fratura **desviada ou sintomática** e a pseudartrose dolorosa vão para **excisão** por via volar (com possível perda de força e de flexão, embora isso seja discutido). O Green 7 (cap. 16, p. 635, Box 16.5) classifica em quatro tipos: **tipo 1 transversa (a mais comum)**, tipo 2 parassagital, tipo 3 cominutiva e tipo 4 impacção piso-piramidal.
 
 !questoes central=mao-1465,mao-1545 relacionadas=mao-1060
 conceito: O pisiforme quebra por trauma direto, avulsão do flexor ulnar do carpo ou impacção; a fratura desviada, cominutiva ou com pseudartrose dolorosa pode ser tratada com excisão.
-como: A USP-SP 2024 pôs a afirmação certa sobre o pisiforme entre erros sobre capitato (que necrosa) e trapezoide (que é raro e de alta energia); a USP-SP 2026 cobrou a excisão nas fraturas cominutas ou muito desviadas. A PUC-SP 2019 pediu o traço mais comum (transversa); o capítulo diz só que predominam as fraturas do corpo.
+como: A USP-SP 2024 pôs a afirmação certa sobre o pisiforme entre erros sobre capitato (que necrosa) e trapezoide (que é raro e de alta energia); a USP-SP 2026 cobrou a excisão nas fraturas cominutas ou muito desviadas. A PUC-SP 2019 pediu o traço mais comum (transversa): o capítulo do Rockwood diz só que predominam as fraturas do corpo, e o Green 7 (p. 635, Box 16.5) dá a transversa como o tipo 1, o mais comum.
 armadilha: "Excisão deve ser evitada na não união sintomática": o capítulo indica a excisão justamente aí.
 armadilha: "Necrose comum": o pisiforme recebe vasos da ulnar por dois pontos com anastomoses; o risco é baixo.
 !fim
@@ -700,11 +698,11 @@ Os ligamentos do punho ficam dentro da cápsula. Os **extrínsecos** ligam o car
 - **Ulnocárpicos:** ulnopiramidal, ulnolunar e ulnocapitato, saindo da borda palmar da fibrocartilagem triangular e da cabeça da ulna.
 - **Dorsais:** **radiocárpico dorsal** e **intercarpal dorsal**, em "V" deitado.
 
-Os palmares radiais, oblíquos, impedem o carpo de escorregar para ulnar na inclinação do rádio, em dois "V": um **proximal** (radiolunar longo, radioescafossemilunar, ulnolunar e ulnopiramidal) para a fileira proximal e um **distal** (radioescafocapitato e ulnocapitato) para a distal. Entre os ligamentos radiais e ulnares, sobre a **capitossemilunar**, fica um sulco de fraqueza da cápsula: o **espaço de Poirier**. Ele é maior com o punho em dorsiflexão e quase some na flexão palmar; é por ali que o **semilunar escapa para o túnel do carpo** nas luxações. O **ligamento arqueado** (também chamado deltoide, "V" distal palmar ou de Weitbrecht) é uma tipoia da cabeça do capitato.
+Os palmares radiais, oblíquos, impedem o carpo de escorregar para ulnar na inclinação do rádio, em dois "V": um **proximal** (radiolunar longo, radioescafossemilunar, ulnolunar e ulnopiramidal) para a fileira proximal e um **distal** (radioescafocapitato e ulnocapitato) para a distal. Entre os ligamentos radiais e ulnares, sobre a **capitossemilunar**, fica um sulco de fraqueza da cápsula: o **espaço de Poirier**. Ele é maior com o punho em dorsiflexão e quase some na flexão palmar; é por ali que o **semilunar escapa para o túnel do carpo** nas luxações. O Green 7 (cap. 13, p. 420) situa o espaço com mais precisão: é o sulco entre o **radioescafocapitato e o radiolunar longo**, que divergem. O **ligamento arqueado** (também chamado deltoide, "V" distal palmar ou de Weitbrecht) é uma tipoia da cabeça do capitato.
 
 !questoes central=mao-1033 relacionadas=mao-0829
 conceito: O espaço de Poirier é a zona fraca da cápsula palmar sobre a capitossemilunar, entre os ligamentos palmares radiais e ulnares; é por ali que o semilunar luxa para o túnel do carpo.
-como: A UFG 2021 pediu entre quais ligamentos fica a zona de fragilidade da luxação volar do semilunar (o gabarito nomeou o radioescafocapitato e o radiolunar longo; o capítulo descreve o espaço como o sulco entre os palmares radiais e ulnares); o INTO 2026 mostrou uma figura com linha tracejada e pediu o nome.
+como: A UFG 2021 pediu entre quais ligamentos fica a zona de fragilidade da luxação volar do semilunar (o gabarito nomeou o radioescafocapitato e o radiolunar longo, como o Green 7, p. 420; o capítulo do Rockwood descreve o espaço como o sulco entre os palmares radiais e ulnares); o INTO 2026 mostrou uma figura com linha tracejada e pediu o nome.
 armadilha: Radiolunar longo e curto: são vizinhos no "V" proximal; o curto costuma ficar íntegro e serve de dobradiça para o semilunar luxado.
 !fim
 
@@ -726,14 +724,13 @@ armadilha: Capitato e trapezoide: é a coluna central na modificação de Taleis
 
 ## Como as fileiras se movem
 
-O eixo do movimento combinado passa pela **cabeça e colo do capitato**. Na flexoextensão, os ossos angulam no mesmo sentido e quase na mesma amplitude (angulação sincrônica). A divisão entre radiocárpica e mediocárpica varia com o estudo: Sarrafian achou 40% da flexão na radiocárpica e 60% na mediocárpica, e 66,5% da extensão na radiocárpica; estudos 3D recentes deram, na flexão, **62% a 75% do movimento na radioescafoide e 31% a 50% na radiolunar**, e na extensão 87% a 99% e 52% a 68%.
+O eixo do movimento combinado passa pela **cabeça e colo do capitato**. Na flexoextensão, os ossos angulam no mesmo sentido e quase na mesma amplitude (angulação sincrônica). A divisão entre radiocárpica e mediocárpica varia com o estudo: Sarrafian achou 40% da flexão na radiocárpica e 60% na mediocárpica, e 66,5% da extensão na radiocárpica; estudos 3D recentes deram, na flexão, **62% a 75% do movimento na radioescafoide e 31% a 50% na radiolunar**, e na extensão 87% a 99% e 52% a 68%. O Green 7 (cap. 13, p. 423) dá um número único: do neutro à flexão máxima, **escafoide e semilunar contribuem com 70% e 46%** do arco; na extensão máxima, com 72% e 42%.
 
 No **desvio radial**, a fileira proximal **flete** (o escafoide "deita" quando trapézio e trapezoide se aproximam do rádio) e o capitato estende: é o movimento recíproco. No **desvio ulnar**, a fileira proximal **estende**: a forma helicoidal da piramidal-hamato empurra o piramidal para extensão, e o semilunar vai junto. O desvio acontece sobretudo na mediocárpica (cerca de 60% do radial e 85% do ulnar). O arco de movimento é de cerca de 70° de flexão e 70° de extensão, 20° de desvio radial e 40° de ulnar.
 
 !questoes central=mao-0028,mao-0991 relacionadas=mao-1090,mao-1318
 conceito: No desvio ulnar a fileira proximal estende (gira para dorsal); no desvio radial ela flete, e o escafoide se horizontaliza.
-como: O TARO 2018 perguntou para onde gira a fileira proximal do desvio radial para o ulnar (dorsal); a UFG 2020 perguntou o que acontece com o escafoide no desvio radial (horizontalização). A USP-SP 2025 pôs como falsa a afirmação de que, no desvio ulnar, a fileira proximal flete.
-alerta: Na PUC-SP 2020 (mao-1090), o gabarito foi 70% (escafoide) e 46% (semilunar) de contribuição na flexão. O Rockwood dá **faixas**: 62% a 75% na radioescafoide e 31% a 50% na radiolunar. O par do gabarito cabe nelas, mas duas alternativas erradas também cabem (62 e 48; 74 e 42); o livro não permite escolher entre elas.
+como: O TARO 2018 perguntou para onde gira a fileira proximal do desvio radial para o ulnar (dorsal); a UFG 2020 perguntou o que acontece com o escafoide no desvio radial (horizontalização). A USP-SP 2025 pôs como falsa a afirmação de que, no desvio ulnar, a fileira proximal flete. A PUC-SP 2020 (mao-1090) pediu a contribuição de escafoide e semilunar na flexão: 70% e 46%, o par do Green 7 (p. 423).
 armadilha: "Giro do semilunar para dorsal no desvio radial": no desvio radial a fileira inteira, semilunar incluído, vai para flexão.
 !fim
 

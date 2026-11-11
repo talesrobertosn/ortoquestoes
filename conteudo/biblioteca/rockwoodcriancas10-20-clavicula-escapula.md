@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-20-clavicula-escapula
-versao: 2
+versao: 3
 titulo: Fraturas da clavícula e da escápula e lesões acromioclavicular e esternoclavicular na criança
 especialidade: pediatria
 acesso: gratis
@@ -278,6 +278,8 @@ armadilha: Confiar só no AP e deixar passar o tipo IV.
 
 **A epífise medial.** Só **ossifica** aos **18 a 20 anos** e **fecha** aos **22 a 25**. Por isso a radiografia mal separa a **fratura fisária** (a epífise continua no esterno e a metáfise se desloca) da **luxação** (a epífise sai). A cirurgia mostrou que **as duas têm incidência quase igual**, ao contrário do ensino antigo de que quase todas eram fisárias. A fise medial faz cerca de 80% do crescimento da clavícula, mas a remodelação de uma fratura fisária é incerta, e a luxação não remodela.
 
+**O exame da separação fisária medial no Tachdjian.** O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 29, p. 1177), chama a lesão de **pseudoluxação** e descreve os dois desvios da metáfise. No **anterior**, a ponta esternal da clavícula fica afiada e palpável logo abaixo da pele, e a **cabeça clavicular do esternocleidomastóideo é puxada para a frente junto com o osso** e entra em espasmo, o que **inclina a cabeça do paciente para o lado afetado**. No **posteromedial**, há inchaço, dor e **depressão** da ponta medial da clavícula; o desvio grave comprime a traqueia (dispneia, rouquidão) e pode comprimir os vasos subclávios ou o plexo braquial, com pulsos distais diminuídos. Como a bainha periosteal fica íntegra, o Tachdjian (p. 1179) espera muita remodelação e trata sem cirurgia o desvio anterior e o posterior sem lesão do mediastino na tomografia (tipoia ou oito); no posterior com compressão de via aérea, esôfago ou feixe neurovascular, faz redução fechada de urgência no centro cirúrgico e, se falhar, aberta, com sutura em vez de metal. É uma diferença de conduta em relação ao Rockwood and Wilkins, cujo autor opera todas as posteriores agudas.
+
 **A imagem.** O AP de tórax é difícil (Fig. 20-16). Incidências especiais: tangencial de HEINIG, perfil cefalocaudal de HOBBS e **serendipity** (raio **40 graus cefálico** centrado no esterno): a luxação **anterior** aparece **mais alta**, a **posterior**, **mais baixa** (Figs. 20-17 e 20-18). Mas o melhor exame é a **tomografia**, que mostra também o mediastino. A ressonância separa fratura fisária de luxação sem radiação.
 
 **O tratamento.**
@@ -300,7 +302,7 @@ armadilha: Confiar só no AP e deixar passar o tipo IV.
 conceito: Esternoclavicular posterior: alta energia, disfagia ou dispneia em até 30%; tomografia; o autor opera todas; a redução fechada é feita no centro cirúrgico com cirurgião vascular, coxim entre as escápulas e tração do braço abduzido em linha com a clavícula, depois extensão. Epífise medial ossifica aos 18 a 20 e fecha aos 22 a 25; fratura fisária e luxação têm incidência quase igual. Serendipity: anterior mais alta, posterior mais baixa.
 como: O TARO 2025 perguntou a posição e a manobra da redução da luxação posterior; o TEOT 2024, a fratura fisária com desvio anterior da metáfise.
 armadilha: Pôr o coxim sob o ombro lesado ou fletir o braço na redução da posterior.
-alerta: O capítulo não descreve a inclinação da cabeça na lesão fisária esternoclavicular perguntada pelo TEOT 2024 (`pediatria-0558`); o Tachdjian (cap. 29) descreve a tensão do esternocleidomastóideo inclinando a cabeça para o lado lesado na fratura da clavícula.
+alerta: O capítulo do Rockwood and Wilkins não descreve a inclinação da cabeça na lesão fisária esternoclavicular perguntada pelo TEOT 2024 (`pediatria-0558`); o Tachdjian (cap. 29, p. 1177) descreve exatamente essa lesão: na separação fisária medial com desvio anterior, o esternocleidomastóideo é puxado para a frente com o osso e a cabeça inclina para o lado afetado.
 !fim
 
 # As complicações das pontas {radar=clinico}

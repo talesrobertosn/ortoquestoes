@@ -1,6 +1,6 @@
 ---
 id: rockwood10-49-fratura-toracolombar
-versao: 1
+versao: 2
 titulo: Fraturas e luxações da coluna toracolombar
 especialidade: coluna
 acesso: gratis
@@ -61,6 +61,8 @@ Fluxograma do Harborview para o manejo hemodinâmico da lesão medular traumáti
 
 O **choque medular** é neurológico, não hemodinâmico: logo depois da lesão, toda a atividade reflexa abaixo do nível some, inclusive os reflexos que dependem só de arcos locais. Enquanto ele dura, uma medula parcialmente viva fica silenciosa e **não dá para classificar a lesão como completa ou incompleta**.
 
+Quanto ele dura, este capítulo não diz, e os livros divergem. O CAMPBELL 15 (cap. 48, p. 1875) diz que o choque medular costuma se resolver em **24 a 48 horas**, mesmo nas lesões graves, mas pode persistir por semanas ou, raramente, meses. O próprio Rockwood, no capítulo 47 (p. 1888), diz que o fim do choque, marcado pela volta dos reflexos abaixo da lesão, acontece em geral **entre 48 horas e 2 semanas**.
+
 O marcador que o capítulo manda pesquisar, e que ele chama de crítico, é o **reflexo bulbocavernoso**, um reflexo sacral cuja resposta é a contração do esfíncter anal. **Ausente**, sugere que o paciente ainda está em choque medular; **presente**, indica que o choque acabou e que a ausência de função abaixo do nível passa a ter valor. O capítulo acrescenta que um bulbocavernoso **hiperativo** provavelmente representa lesão medular completa: o arco sacral voltou a funcionar, mas nada desce de cima para modulá-lo. E lembra duas exceções úteis: o reflexo costuma **demorar** nas lesões do **cone medular** e da **cauda equina**, porque nelas o próprio arco reflexo foi atingido; e o **priapismo** é um sinal ominoso de lesão aguda completa. Os reflexos tendinosos ajudam a separar lesão medular de lesão de raiz, mas a hiper-reflexia costuma não aparecer na fase aguda.
 
 !questoes central=coluna-0254,coluna-0372,coluna-0374 relacionadas=coluna-0049,coluna-0373 treino=coluna-0509
@@ -68,7 +70,7 @@ conceito: A presença do reflexo bulbocavernoso marca o fim do choque medular; s
 como: O TARO 2011 perguntou o que significa o reflexo positivo e ofereceu prognósticos motores e sensitivos; a prova de R4 de Coluna da SES-DF de 2024 pediu qual reflexo pesquisar e qual reflexo indica o fim do choque, com cremastérico, cutâneo abdominal, patelar e plantar como distratores. O TEOT 2022 e a mesma prova da SES-DF pediram a duração do choque medular.
 armadilha: "Bom prognóstico motor ou sensitivo": o reflexo diz que o choque acabou, não que a lesão é boa; uma lesão completa também recupera o bulbocavernoso.
 armadilha: Reflexo patelar, cremastérico ou cutâneo plantar: não são os marcadores usados para o fim do choque medular.
-alerta: O capítulo não informa quanto tempo dura o choque medular. O gabarito oficial do TEOT 2022 foi 24 a 48 horas, e o da prova da SES-DF de 2024 também foi 24 a 48 horas; guarde esse número da prova, que não vem deste capítulo.
+alerta: O capítulo 49 não informa quanto tempo dura o choque medular. O gabarito oficial do TEOT 2022 e o da prova da SES-DF de 2024 foram 24 a 48 horas, que é o número do CAMPBELL 15 (p. 1875); o Rockwood, no capítulo 47 (p. 1888), dá 48 horas a 2 semanas. Na prova, fique com 24 a 48 horas.
 !fim
 
 ## Preservação sacral e a escala da ASIA
@@ -100,7 +102,7 @@ No adulto a medula termina em **L1**, e seu afilamento final, o **cone medular**
 
 Um detalhe que o capítulo valoriza: nas explosões do nível do cone, a **disfunção vesical isolada** pode passar despercebida em pacientes que parecem neurologicamente normais, porque todos chegam sondados para controle de diurese.
 
-Duas observações honestas sobre o que **não** está aqui: o capítulo não descreve as síndromes medulares incompletas (central, anterior, de Brown-Séquard, posterior), muito cobradas no subtema de lesão medular, nem dá a duração do choque medular. Essas perguntas precisam de outra fonte.
+Duas observações honestas sobre o que **não** está aqui: o capítulo não descreve as síndromes medulares incompletas (central, anterior, de Brown-Séquard, posterior), muito cobradas no subtema de lesão medular, nem dá a duração do choque medular (que está no CAMPBELL 15 e no capítulo 47 do Rockwood, como visto acima). As síndromes precisam de outra fonte.
 
 !questoes treino=coluna-0533
 conceito: Fratura da transição toracolombar com anestesia em sela, retenção urinária e sinais mistos de primeiro e segundo neurônio motor sugere lesão do cone medular, que fica entre T11 e L1.
@@ -108,11 +110,11 @@ conceito: Fratura da transição toracolombar com anestesia em sela, retenção 
 
 ## Lesão primária e lesão secundária
 
-A lesão medular acontece em dois tempos. A **primária** é a fase aguda de **compressão** mecânica, no momento do trauma, por impacto direto ou comprometimento vascular. A **secundária** é uma cascata bioquímica que se instala nas horas seguintes, com isquemia, radicais livres, vasoconstrição, entrada de cálcio nas células, peroxidação lipídica e excitotoxinas, e amplia o dano. Proteger contra a lesão secundária é a razão de ser da descompressão, da estabilização, do controle da pressão e das tentativas farmacológicas.
+A lesão medular acontece em dois tempos. A **primária** é a fase aguda de **compressão** mecânica, no momento do trauma, por impacto direto ou comprometimento vascular. O Skeletal Trauma (5ª ed., cap. 31, p. 794) descreve quatro mecanismos de lesão primária: **impacto com compressão persistente**, impacto com compressão transitória, distração e laceração ou secção; o **mais frequente é o impacto com compressão persistente**. A **secundária** é uma cascata bioquímica que se instala nas horas seguintes, com isquemia, radicais livres, vasoconstrição, entrada de cálcio nas células, peroxidação lipídica e excitotoxinas, e amplia o dano. Proteger contra a lesão secundária é a razão de ser da descompressão, da estabilização, do controle da pressão e das tentativas farmacológicas.
 
 !questoes relacionadas=coluna-0009
 conceito: A lesão primária da medula é a compressão mecânica do momento do trauma; a secundária é a cascata de isquemia, inflamação e excitotoxicidade que vem depois.
-como: O TARO 2019 perguntou o mecanismo mais frequente da lesão primária, com distração, laceração, impacto com compressão transitória e impacto com compressão persistente; o gabarito foi impacto com compressão persistente. O capítulo descreve a fase primária como compressão aguda, sem quantificar os subtipos.
+como: O TARO 2019 perguntou o mecanismo mais frequente da lesão primária, com distração, laceração, impacto com compressão transitória e impacto com compressão persistente; o gabarito foi impacto com compressão persistente. O capítulo 49 descreve a fase primária como compressão aguda, sem quantificar os subtipos; o Skeletal Trauma (p. 794) confirma o gabarito, chamando o impacto com compressão persistente de mecanismo mais frequente.
 !fim
 
 # Classificações: estabilidade, Denis, AO Spine e TLICS {radar=confirmado}
@@ -471,6 +473,8 @@ As lesões tipo B são as de **banda de tensão**: a coluna dobra em torno de um
 ## B1: a fratura de Chance
 
 Na **B1**, a falha posterior em tração atravessa **só osso** e corta **uma única vértebra** de trás para a frente (processo espinhoso, lâminas, pedículos, processos transversos e corpo), sem atingir o disco. O **eixo de rotação fica à frente do corpo vertebral**, e é justamente por isso que a lesão se associa tanto a **lesões viscerais e vasculares**: o cinto abdominal funciona como fulcro sobre o abdome. O capítulo mostra uma criança passageira com cinto abdominal e uma variante de Chance em L3.
+
+E o **ligamento longitudinal anterior**? Os livros divergem. O Skeletal Trauma (5ª ed., p. 938) diz que, na CHANCE, os elementos posteriores, os pedículos e o corpo falham em tensão enquanto o ligamento longitudinal anterior **muitas vezes fica íntegro**. O CAMPBELL 13 (p. 1806) diz o contrário: como a rotação acontece em torno de um ponto à frente da coluna, o próprio ligamento longitudinal anterior **falha em tensão** e não sobra estrutura intacta; por isso a montagem é em compressão, e a distração deve ser evitada.
 
 Como é uma lesão de **três colunas puramente óssea**, ela consolida bem. Por isso é a lesão tipo B que o capítulo aceita, com tranquilidade, tratar com **órtese em hiperextensão** (para a B2, só há alguma evidência em pacientes jovens, intactos e com angulação mínima), no paciente com alinhamento mantido, lesão isolada e bom potencial de consolidação, ou no paciente sem condição clínica. No paciente ativo, a cirurgia é uma **montagem posterior curta em compressão**, que se opõe diretamente à força de distração; como o disco está intacto, **não precisa de artrodese**, e o material pode ser retirado depois, devolvendo o movimento. O ligamento amarelo redundante é retirado antes da redução para não invadir o canal, e a técnica percutânea serve bem.
 

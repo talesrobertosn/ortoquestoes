@@ -1,6 +1,6 @@
 ---
 id: green-exame-mao-punho
-versao: 1
+versao: 2
 titulo: Exame físico da mão e do punho
 especialidade: mao
 acesso: gratis
@@ -274,7 +274,9 @@ O primeiro compartimento leva o **abdutor longo** e o **extensor curto** do pole
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 81, p. 3535), chama o FINKELSTEIN de **sinal objetivo mais patognomônico**, mas não diagnóstico sozinho; mulheres 6 a 10 vezes mais, pico no pós-parto e na lactação. O diferencial inclui a **síndrome da intersecção** (mais proximal, segundo compartimento), o gatilho do polegar, a artrose trapeziometacarpal e escafotrapeziotrapezoidal e a neurite do **ramo sensitivo do radial**. Nesta (WARTENBERG), os sintomas vêm com **pronação e flexão ulnar do punho** e o **FINKELSTEIN também pode ser positivo**, mas a DE QUERVAIN tem **sensibilidade dorsorradial normal** (Green, cap. 28, p. 948).
 
-!tabela Dor no lado radial do punho pelo exame (Green's Operative Hand Surgery, 7ª ed., pp. 948 e 1916; Campbell's Operative Orthopaedics, 15ª ed., p. 3535; Netter, p. 160)
+**A tendinite do flexor radial do carpo, o diferencial do lado palmar.** O Green's Operative Hand Surgery, 7ª ed. (cap. 56, pp. 1922 e 1923), explica por que esse tendão sofre: ele faz uma angulação aguda sobre a crista do **trapézio** e corre num canal fibroso apertado até a base do segundo metacarpo; o tubérculo do trapézio forma de **61% a 80%** da parede do túnel, e o tendão ocupa **90%** da área disponível. É mais comum em **mulheres** na **quinta década**, de início insidioso. A dor fica na **prega palmar do punho, sobre o tubérculo do escafoide**, e a **dor à flexão do punho com desvio radial contra resistência** é chamada de **patognomônica**. Radiografia mostra a artrose do trapézio vizinha; o alívio após infiltração de lidocaína ou corticoide na bainha confirma. O Green alerta que cistos, artrose basal, fratura e pseudartrose do escafoide e a própria DE QUERVAIN levam a erro de diagnóstico. Tratamento: tala, gelo, anti-inflamatório e infiltração; a liberação cirúrgica é rara, por incisão em taco de hóquei sobre o tubérculo do escafoide, protegendo o **ramo cutâneo palmar do mediano**. A ruptura crônica do tendão, curiosamente, costuma **acabar com a dor** e em geral não pede reparo.
+
+!tabela Dor no lado radial do punho pelo exame (Green's Operative Hand Surgery, 7ª ed., pp. 948, 1916 e 1923; Campbell's Operative Orthopaedics, 15ª ed., p. 3535; Netter, p. 160)
 | Condição | Onde dói | Teste que reproduz | Detalhe que separa |
 | --- | --- | --- | --- |
 | DE QUERVAIN | estiloide radial, 1º compartimento | FINKELSTEIN e EICHHOFF | sensibilidade dorsorradial normal |
@@ -282,6 +284,7 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 81, p. 3535), chama o FINKEL
 | Síndrome de WARTENBERG | ramo sensitivo do radial | pronação com flexão ulnar; TINEL | alteração sensitiva dorsorradial |
 | Artrose trapeziometacarpal | base do polegar | compressão axial e rotação da CMC | radiografia |
 | Fratura do escafoide | tabaqueira | palpação | radiografia |
+| Tendinite do flexor radial do carpo | prega palmar, sobre o tubérculo do escafoide | flexão com desvio radial contra resistência | lado palmar; alívio com infiltração da bainha |
 !fim
 
 !questoes central=mao-0948
@@ -353,6 +356,12 @@ alerta: O ENARE 2022 (`mao-1843`) dá como correta "o impacto ulnocarpal avalia 
 # O polegar: o colateral ulnar da metacarpofalângica {radar=confirmado}
 
 A lesão do ligamento colateral ulnar da MF do polegar é a do esquiador: desvio radial (abdução) forçado, como na queda segurando o bastão. O Green's Operative Hand Surgery, 7ª ed. (cap. 8, p. 302), lembra que MOBERG e STENER acharam essa lesão dez vezes mais comum que a do colateral radial. A pergunta do exame é quando a lesão é completa, porque a completa pode ter a lesão de STENER (a aponeurose do adutor se interpõe entre o ligamento e a inserção) e precisa de cirurgia.
+
+STENER descreveu a lesão em 1962 e a encontrou em **25 de 39** rupturas completas do colateral ulnar (Green, cap. 8, p. 302). A Fig. 8.32 do Green (p. 303) mostra o mecanismo em quatro tempos: o ligamento coberto pela aponeurose do adutor; com angulação radial leve, a margem proximal da aponeurose desliza para distal; com angulação maior, o ligamento rompe na inserção distal e escapa por baixo dela; ao realinhar a articulação, a borda proximal da aponeurose varre o coto para proximal e fica **interposta** entre o ligamento e a inserção. Sem cirurgia, o ligamento não cicatriza direito e fica instável ao estresse lateral. Como o diagnóstico clínico da STENER é difícil, quem pensa em tratar sem cirurgia precisa afastá-la, em geral com ultrassom ou RM (Green, p. 303).
+
+!figura 8.32 imagem=mao/green7-8-32-w75.jpeg
+Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 8, Fig. 8.32, p. 303. Lesão de STENER: A, colateral ulnar coberto pela aponeurose do adutor; B e C, com a angulação radial a aponeurose desliza para distal e o ligamento rompe e escapa; D, ao realinhar, a aponeurose fica interposta entre o coto e a inserção.
+!fim
 
 **Por que testar em flexão.** O colateral próprio fica tenso em flexão; em extensão, a **placa volar** e o colateral acessório dão estabilidade lateral. Por isso o Green diz que o exame em flexão é **muito mais relevante** para a lesão completa: um polegar estável em extensão pode ter o colateral próprio roto. O critério que a maioria usa é **30 graus de abertura** do lado ulnar ao estresse radial com a MF em extensão e em **40 graus de flexão**, ou **15 graus a mais** que o polegar do outro lado. O autor confia mais na **ausência de ponto final** (endpoint): o ligamento roto deixa a articulação abrir sem resistência.
 

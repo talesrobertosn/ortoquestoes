@@ -1,6 +1,6 @@
 ---
 id: rockwood10-40-cotovelo-cabeca-radio
-versao: 1
+versao: 2
 titulo: Luxação do cotovelo, cabeça do rádio e tríade terrível
 especialidade: trauma
 acesso: gratis
@@ -41,9 +41,9 @@ alerta: No ENARE R4 2025 (ombro-cotovelo-0539), o gabarito oficial foi a alterna
 
 O **complexo colateral lateral** tem três componentes: o **colateral radial**, o **ligamento anular** e o **colateral ulnar lateral**. Juntos, são o principal estabilizador contra o **varo** e contra a **rotação posterolateral**. O anular abraça a cabeça do rádio e se prende nas bordas anterior e posterior da incisura radial da ulna; o colateral radial nasce no epicôndilo lateral e se mistura ao anular; o **colateral ulnar lateral** passa por trás do colateral radial e se insere na **crista do supinador** da ulna, logo abaixo do anular. É ele que falha na instabilidade posterolateral.
 
-!questoes central=ombro-cotovelo-0451,ombro-cotovelo-0064
+!questoes central=ombro-cotovelo-0451,ombro-cotovelo-0064,ombro-cotovelo-0249
 conceito: O colateral ulnar lateral vai do epicôndilo lateral à crista do supinador e é a banda que falha na instabilidade rotatória posterolateral.
-como: As duas questões mostram imagem: uma pede o nome da estrutura apontada, a outra pede qual banda insuficiente explica a subluxação posterolateral da figura.
+como: As três questões mostram imagem da face lateral: duas pedem o nome da estrutura apontada (o colateral ulnar lateral), a outra pede qual banda insuficiente explica a subluxação posterolateral da figura.
 armadilha: Colateral radial: está no mesmo complexo, mas não chega à ulna e não segura a rotação.
 !fim
 
@@ -53,9 +53,9 @@ O **colateral medial** tem um feixe **anterior** e um **posterior**. O **anterio
 
 O capítulo faz uma ressalva que ajuda a entender a clínica: o medial só é o ligamento mais importante para quem carrega o cotovelo em valgo o tempo todo, como o **arremessador**. Nas atividades do dia a dia, o cotovelo sofre mais **varo** do que valgo; por isso a instabilidade residual depois de uma luxação costuma vir do **lado lateral** mal cicatrizado.
 
-!questoes central=ombro-cotovelo-0025,ombro-cotovelo-0032,ombro-cotovelo-0249,ombro-cotovelo-0257,ombro-cotovelo-0121 treino=trauma-1409
+!questoes central=ombro-cotovelo-0025,ombro-cotovelo-0032,ombro-cotovelo-0257,ombro-cotovelo-0121 treino=trauma-1409
 conceito: O feixe anterior do colateral medial vai do epicôndilo medial ao tubérculo sublime e é o principal restritor do valgo.
-como: Caiu como pergunta direta (valgo a 90°), como anatomia (o que se insere no tubérculo sublime) e três vezes como figura com números, pedindo o feixe mais importante.
+como: Caiu como pergunta direta (valgo a 90°), como anatomia (o que se insere no tubérculo sublime) e como figura com números da face medial, pedindo o feixe mais importante.
 armadilha: Cabeça do rádio: segura o valgo, mas como estabilizadora secundária; ganha importância quando o medial está roto.
 armadilha: Feixe posterior: é secundário ao valgo.
 !fim
@@ -75,13 +75,15 @@ Luxação **simples** é a que não tem fratura associada. O cotovelo é a **seg
 
 ## Mecanismo: de lateral para medial
 
-A causa típica é a **queda com a mão espalmada**. O'Driscoll descreveu a combinação de **valgo, carga axial e força posterolateral** que leva à luxação posterolateral. A lesão de partes moles **começa no lado lateral**, com a ruptura do colateral lateral, atravessa a **cápsula** e termina no lado **medial**, com o colateral medial **por último**. Em algumas luxações, o medial nem chega a romper. Esse anel de lesões em sequência é o que as provas chamam de círculo de Horii.
+A causa típica é a **queda com a mão espalmada**. O'Driscoll descreveu a combinação de **valgo, carga axial e força posterolateral** que leva à luxação posterolateral. A lesão de partes moles **começa no lado lateral**, com a ruptura do colateral lateral, atravessa a **cápsula** e termina no lado **medial**, com o colateral medial **por último**. Em algumas luxações, o medial nem chega a romper. Esse anel de lesões em sequência é o que as provas chamam de círculo de HORII.
+
+Os **estágios de O'DRISCOLL** não estão no Rockwood: vêm do Campbell (15ª ed., cap. 52, Fig. 52.38, p. 2230), que desenha o mesmo círculo, de lateral para medial, da subluxação à luxação. **Estágio 1:** ruptura da parte ulnar do colateral lateral (o colateral ulnar lateral). **Estágio 2:** ruptura das outras estruturas ligamentares laterais e da cápsula posterior. **Estágio 3A:** ruptura parcial do colateral medial, só da sua parte posterior. **Estágio 3B:** ruptura completa do colateral medial.
 
 O capítulo traz também a visão mais recente: estudos com ressonância e vídeo mostraram rupturas completas **mais frequentes no lado medial**, com o lateral preservado em alguns casos, sugerindo que às vezes a falha começa medialmente (valgo agudo com o cotovelo estendido). Isso explica por que alguns cotovelos ficam muito estáveis depois da redução. Para a prova, porém, a sequência clássica é **lateral, cápsula, medial**.
 
 !questoes central=ombro-cotovelo-0012,ombro-cotovelo-0332,ombro-cotovelo-0351,ombro-cotovelo-0348,ombro-cotovelo-0473 relacionadas=ombro-cotovelo-0197,ombro-cotovelo-0441 treino=trauma-1408
 conceito: Na luxação posterolateral, as partes moles cedem em anel, de lateral para medial: colateral lateral, cápsula e, por último, colateral medial.
-como: É o assunto mais repetido do capítulo no TARO: a banca pede a sequência inteira, a primeira, a última estrutura, o sentido (lateral para medial) ou o mecanismo (valgo, carga axial e rotação externa, ou seja, supinação). Duas questões do TECOC usam figura e pedem o estágio de O'Driscoll.
+como: É o assunto mais repetido do capítulo no TARO: a banca pede a sequência inteira, a primeira, a última estrutura, o sentido (lateral para medial) ou o mecanismo (valgo, carga axial e rotação externa, ou seja, supinação). Duas questões do TECOC usam figura e pedem o estágio de O'DRISCOLL, que só o Campbell desenha (Fig. 52.38).
 armadilha: "Medial, cápsula, lateral": é a sequência invertida.
 armadilha: Varo e supinação: o varo é o mecanismo da instabilidade posteromedial, não da posterolateral.
 !fim
@@ -207,7 +209,7 @@ AP e perfil bastam para a maioria. A fratura sem desvio pode só aparecer como *
 - **Mason I:** fissura ou fratura marginal sem desvio.
 - **Mason II:** fratura marginal com desvio.
 - **Mason III:** cominutiva, de toda a cabeça.
-- **Tipo IV** (acrescentado depois): qualquer fratura da cabeça com **luxação do cotovelo**.
+- **Tipo IV** (acrescentado por **JOHNSTON**, em 1962): qualquer fratura da cabeça com **luxação do cotovelo**. O capítulo 40 só diz que o tipo veio depois; quem dá o nome de JOHNSTON são o capítulo 41 do mesmo Rockwood e o Skeletal Trauma (5ª ed., cap. 46A, Fig. 46A-2, p. 1348).
 
 **Broberg e Morrey** modificaram Mason com números: tipo I sem desvio ou com desvio **menor que 2 mm** e menos de **30%** da superfície; tipo II com desvio **maior que 2 mm** e mais de **30%**; tipo III cominutiva.
 
@@ -281,7 +283,7 @@ Na fixação, preserve as inserções do periósteo (irrigação), reduza com fi
 
 ## A prótese e o excesso de altura
 
-Ao reconstruir os fragmentos retirados na mesa, mede-se o tamanho. Como a cabeça nativa é **elíptica** e a maioria das próteses é redonda, o diâmetro ideal é o **menor diâmetro** da elipse (em geral 2 mm menor que o maior). Na dúvida entre dois tamanhos, escolha o **menor**, no diâmetro e na espessura. A prótese deve articular no nível da **radioulnar proximal**, cerca de **2 mm abaixo da ponta do coronoide**. Não use a distância entre o capítulo e o corte do colo para medir: o colateral lateral costuma estar roto e o espaço fica aberto.
+Ao reconstruir os fragmentos retirados na mesa, mede-se o tamanho. Como a cabeça nativa é **elíptica** e a maioria das próteses é redonda, o diâmetro ideal é o **menor diâmetro** da elipse (em geral 2 mm menor que o maior). Na dúvida entre dois tamanhos, escolha o **menor**, no diâmetro e na espessura. A prótese deve articular no nível da **radioulnar proximal**, cerca de **2 mm abaixo da ponta do coronoide** (no capítulo 41 do mesmo Rockwood, 1 a 2 mm). O Campbell (15ª ed., cap. 15, Fig. 15.11, p. 652) usa outra referência: a borda proximal da cabeça nativa fica em geral **0,9 mm abaixo da borda lateral do coronoide**, e a borda proximal da prótese deve ficar **no nível da borda lateral do coronoide**, para não sobrecarregar a radiocapitelar. São dois pontos de medida diferentes: a ponta do coronoide no Rockwood, a borda lateral no Campbell. Não use a distância entre o capítulo e o corte do colo para medir: o colateral lateral costuma estar roto e o espaço fica aberto.
 
 O erro mais temido é o **alongamento excessivo** (overstuffing), uma prótese grossa demais: causa **dor, rigidez e desgaste do capítulo**, e é **a causa técnica mais comum de falha**. A radiografia é ruim para detectá-lo: o espaço umeroulnar medial deixa de ser paralelo e abre do lado lateral, mas isso só aparece com 6 a 8 mm de alongamento. Radiografias do outro lado ajudam a medir.
 
@@ -292,7 +294,7 @@ conceito: Na prótese da cabeça do rádio, o diâmetro segue o menor eixo da ca
 como: O TECOC pediu o que evitar na escolha do tamanho (o maior diâmetro); o TARO 2019, a principal complicação; o CET-PR, o sinal radiográfico de alongamento.
 armadilha: Usar o maior diâmetro: deixa a prótese grande demais, o que erode a tróclea lateral e atrapalha o fechamento do anular.
 alerta: No TARO 2019 (trauma-0027), o gabarito oficial foi "sobrecarga do capítulo". O capítulo apoia essa resposta como a principal falha técnica, mas, entre os motivos de revisão, o mais frequente foi o afrouxamento asséptico (30%), que também estava entre as alternativas. Guarde o gabarito da banca: na prova, "principal complicação" da prótese tem sido lida como o excesso de altura.
-alerta: No CET-PR (trauma-0692), o gabarito oficial foi a diminuição da variância ulnar. O Rockwood não fala da variância ulnar; o sinal que ele descreve é a perda do paralelismo do espaço umeroulnar medial, que abre lateralmente e só aparece com alongamentos grandes. Os dois sinais vêm do mesmo fenômeno (o rádio ficou mais comprido).
+alerta: No CET-PR (trauma-0692), o gabarito oficial foi a diminuição da variância ulnar. O Rockwood não fala da variância ulnar; o sinal que ele descreve é a perda do paralelismo do espaço umeroulnar medial, que abre lateralmente e só aparece com alongamentos grandes. Os dois sinais vêm do mesmo fenômeno (o rádio ficou mais comprido). O Campbell (15ª ed., cap. 15, p. 652) traz o sinal da banca: o excesso de altura da prótese pode diminuir a variância ulnar do mesmo lado, e isso serve na cirurgia para conferir o tamanho.
 !fim
 
 ## Complicações

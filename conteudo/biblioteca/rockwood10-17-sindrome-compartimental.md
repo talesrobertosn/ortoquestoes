@@ -1,6 +1,6 @@
 ---
 id: rockwood10-17-sindrome-compartimental
-versao: 1
+versao: 2
 titulo: Síndrome compartimental aguda
 especialidade: trauma
 acesso: gratis
@@ -95,7 +95,7 @@ alerta: No TARO 2021 (trauma-0081), o gabarito foi "a baixa idade" como preditor
 
 Dados recentes mostram taxa de síndrome de **12% no planalto tibial contra 3% na diáfise**, com o **Schatzker VI** como de risco particularmente alto. No tratamento preferido dos autores, a fratura **desviada do planalto** é a principal preocupação no adulto, seguida pela diáfise da tíbia e pela fratura dos dois ossos do antebraço. A haste da tíbia foi suspeita no passado, mas **não aumenta** a síndrome; os fatores que sobraram foram juventude, sexo masculino e fratura diafisária.
 
-A alta energia não é obrigatória: na tíbia, a baixa energia apareceu em 59% dos casos com síndrome em alguns estudos, e em Edimburgo houve mais risco nas fechadas que nas expostas. Na coxa e no antebraço, a alta energia aumenta o risco, talvez por serem lesões de homens jovens. No grande banco americano (203.500 fraturas da tíbia), cominuição, fratura exposta, abuso de substâncias, cirrose e tabagismo se associaram à síndrome, e a hipertensão protegeu os mais velhos.
+A alta energia não é obrigatória: na tíbia, a baixa energia apareceu em 59% dos casos com síndrome em alguns estudos, e em Edimburgo houve mais risco nas fechadas que nas expostas. Na coxa e no antebraço, a alta energia aumenta o risco, talvez por serem lesões de homens jovens. No grande banco americano (203.500 fraturas da tíbia), cominuição, fratura exposta, abuso de substâncias, cirrose e tabagismo se associaram à síndrome, e a hipertensão protegeu os mais velhos. A fratura exposta não protege: o capítulo 18 do mesmo livro (Principles of Mangled Extremity Management) registra síndrome compartimental em **até 10% das fraturas expostas** e em **até 59% das expostas IIIC**, em que a contusão, a obstrução venosa, a isquemia e a reperfusão depois do reparo arterial elevam a pressão; por isso a fasciotomia é recomendada depois de qualquer revascularização.
 
 A grande exceção à juventude é a **síndrome sem fratura**: esses pacientes são mais velhos, têm mais comorbidades, usam com frequência **anticoagulantes** e a razão homem para mulher cai para **5 para 1**. Na criança, 61% das síndromes sem fratura são **iatrogênicas**.
 
@@ -203,7 +203,7 @@ Três compartimentos, **anterior, posterior e adutor (medial)**, envolvidos pela
 
 !questoes central=trauma-0767,trauma-0099,trauma-0419 relacionadas=trauma-0816,trauma-0916
 conceito: A coxa tem três compartimentos (anterior, posterior e adutor), e o anterior é o mais acometido e o local do cateter.
-como: A pergunta do compartimento mais acometido da coxa caiu no TARO 2017 (fratura da diáfise do fêmur), no TEOT 2025 e no SBOT-SP; o TARO 2023 pediu a lista dos compartimentos, e o TARO 2012, qual septo separa medial e posterior (o capítulo só nomeia os septos medial e lateral).
+como: A pergunta do compartimento mais acometido da coxa caiu no TARO 2017 (fratura da diáfise do fêmur), no TEOT 2025 e no SBOT-SP; o TARO 2023 pediu a lista dos compartimentos, e o TARO 2012, qual septo separa medial e posterior (o capítulo só nomeia os septos medial e lateral, e nenhum livro local nomeia um septo posterior da coxa: o Campbell 15, cap. 1 p. 48 e cap. 53 p. 2246, e o Skeletal Trauma 5ª ed., cap. 16 p. 458, só citam o septo intermuscular lateral, que se abre para descomprimir o compartimento posterior).
 armadilha: Compartimento lateral da coxa: não existe como compartimento separado; a incisão lateral é só o acesso.
 armadilha: Posterior superficial e profundo: é a divisão da perna, não da coxa.
 !fim

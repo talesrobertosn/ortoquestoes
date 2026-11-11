@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-02-consolidacao-fise
-versao: 2
+versao: 3
 titulo: Consolidação, fise e remodelação na criança
 especialidade: pediatria
 acesso: gratis
@@ -277,11 +277,17 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 20, p. 815 aprox.), resume o
 
 **Idade óssea.** ANDERSON usou a mão e o punho de GREULICH e PYLE, mas lembrou que **cotovelo, quadril, joelho e pé** também servem. A idade óssea dá estimativa mais precisa quando a criança está **adiantada ou atrasada 2 anos ou mais**. O próprio atlas tem limite: quatro radiologistas discordaram em mais de 1 ano em **50%** das radiografias e em mais de 2 anos em **10%**, e KASSER e JENKINS não viram ganho do atlas sobre a idade cronológica entre 5 e 10 anos, exceto em meninas com idade óssea adiantada.
 
+**SAUVEGRAIN, a idade óssea pelo cotovelo.** O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 1, p. 27), separa o método do atlas (GREULICH e PYLE) dos métodos por osso individual, que somam pontos de cada centro: o escore de Oxford no quadril e na pelve, o TANNER-WHITEHOUSE na mão e no punho e o **SAUVEGRAIN no cotovelo**, todos derivados de crianças europeias saudáveis. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 40, p. 1542), dá a receita: radiografias em AP e perfil do **cotovelo esquerdo**, sistema de **27 pontos** com **quatro estruturas** (côndilo lateral, tróclea, apófise do olécrano e epífise proximal do rádio), e a soma vira idade óssea. A vantagem é a puberdade, quando o cotovelo tem vários centros em mudança: DIMEGLIO achou o método confiável nessa fase, com mais estágios que o GREULICH e PYLE (Lovell and Winter, cap. 1, p. 29). No cap. 28 (p. 1351), o Lovell and Winter acrescenta que a versão modificada por DIMEGLIO dá a idade óssea em intervalos de **6 meses** justamente entre **9 e 15 anos**, faixa em que o atlas da mão tem poucas referências, e que **não serve antes dos 9 anos nas meninas e dos 11 nos meninos**. CHARLES simplificou tudo para o **olécrano** sozinho: idade óssea a cada 6 meses dos **11 aos 13 anos nas meninas** e dos **13 aos 15 nos meninos**, complementando RISSER 0 e o fechamento da cartilagem trirradiada (Campbell, p. 1542, Figs. 40.23 e 40.24; Lovell and Winter, p. 29).
+
+!figura 1-29 imagem=pediatria/lovell7-1-29-r22.jpeg
+Fonte: Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (2014), cap. 1, Fig. 1-29, p. 31. Sistema de SAUVEGRAIN: estágios desenhados do côndilo lateral e epicôndilo (1 a 9), da tróclea (1 a 5), da apófise do olécrano (1 a 7) e da epífise proximal do rádio (1 a 6), que somados dão os 27 pontos.
+!fim
+
 !questoes central=pediatria-0174 relacionadas=pediatria-0064,pediatria-0332
 conceito: Pelo método de MENELAUS, o fêmur distal cresce cerca de 3/8 de polegada (perto de 10 mm) e a tíbia proximal 1/4 de polegada (perto de 6 mm) por ano, até os 16 anos nos meninos e 14 nas meninas; o estirão tem pico aos 10 a 12 anos nas meninas e 12 a 14 nos meninos.
 como: O TEOT 2023 perguntou o crescimento anual do fêmur distal e da tíbia proximal pelo método de MENELAUS (9 e 6 mm); o TARO 2015, o crescimento do tronco na puberdade; o TEOT 2025, o que usa o método de SAUVEGRAIN.
 armadilha: Inverter os números (a tíbia proximal cresce menos que o fêmur distal) ou usar 17 e 16 anos, que são os limites originais de WHITE.
-alerta: O Tachdjian traz o ritmo em polegadas, sem citar a idade de nove anos (`pediatria-0174`). Nenhum dos livros compara tronco e membros na puberdade (`pediatria-0064`); o Tachdjian só diz que, depois dos 10 anos, o segmento superior fica mais curto que o inferior. O método de SAUVEGRAIN (`pediatria-0332`) não aparece nos dois livros; o Tachdjian apenas lembra que o cotovelo pode ser usado para a idade óssea.
+alerta: O Tachdjian traz o ritmo em polegadas, sem citar a idade de nove anos (`pediatria-0174`). Nenhum dos livros compara tronco e membros na puberdade (`pediatria-0064`); o Tachdjian só diz que, depois dos 10 anos, o segmento superior fica mais curto que o inferior. O método de SAUVEGRAIN (`pediatria-0332`) não aparece no Rockwood and Wilkins nem no Tachdjian, mas está no Lovell and Winter (cap. 1, pp. 27 a 31, Fig. 1-29; cap. 28, p. 1351) e no Campbell 15 (cap. 40, p. 1542), resumidos no parágrafo acima.
 !fim
 
 # Centros de ossificação do ombro e do cotovelo {radar=confirmado}
@@ -388,13 +394,15 @@ O hipercrescimento é o lado oposto da parada fisária. Depois da fratura da di�
 | prevenção | capa biológica (crista ilíaca tricortical, DAVIDS) melhor que capa sintética; fíbula proximal transferida para a tíbia distal sem hipercrescimento em 50 casos (FEDORAK, 7,2 anos) |
 !fim
 
+**Qual amputação dá mais hipercrescimento.** O Campbell's Operative Orthopaedics, 15ª ed. (cap. 16, p. 681), diz que o hipercrescimento terminal é **mais comum depois das amputações traumáticas** que das feitas por outras indicações, **mais comum nas crianças mais novas** e mais frequente no **úmero e na fíbula**, depois tíbia, fêmur, rádio e ulna; em uma série, **27%** das crianças amputadas precisaram de revisão por ele, e a epifisiodese não funciona e é contraindicada (p. 684). O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 30, p. 1531), chama o hipercrescimento de **problema mais comum do amputado juvenil**, com **20% a 50%** de ocorrência, mais frequente na **amputação traumática** ou eletiva através do osso, menos na congênita por bridas amnióticas e ausente na falha de formação e na desarticulação; o osso novo é **aposicional periosteal e endosteal**, e o problema aparece mais na fíbula que na tíbia e na transumeral. A idade é onde os livros divergem: o Campbell diz que é mais comum nas crianças mais novas, e o Lovell and Winter diz que a incidência é **menor quando a amputação primária é feita antes dos 12 anos**, com recidiva mais comum nos períodos de crescimento rápido, como a adolescência.
+
 Na amputação transtibial, o Tachdjian sugere bloquear o canal com segmentos cobertos de cartilagem, como cabeças de metatarsais do pé amputado, e a fíbula recidivante pode ser tratada com sinostose distal entre fíbula e tíbia (procedimento de ERTL). A capa biológica profilática na amputação inicial é recomendada por alguns autores quando todo o tecido contaminado foi desbridado.
 
 !questoes central=pediatria-0284 relacionadas=pediatria-0784,pediatria-0813
 conceito: O hipercrescimento do coto é aposição periosteal na ponta do osso amputado através da diáfise, mais comum no úmero, depois fíbula, tíbia e fêmur, e não ocorre na desarticulação; o hipercrescimento após fratura do fêmur é de cerca de 0,9 cm, mais comum entre 2 e 10 anos.
 como: O TARO 2024 perguntou o osso com mais hipercrescimento após amputação diafisária em menores de 12 anos (úmero); o TARO 2009, a causa de amputação com mais crescimento aposicional no coto; o TARO 2006 afirmou que a placa no fêmur dá mais hipercrescimento que a fixação intramedular.
 armadilha: Achar que o hipercrescimento do coto vem da fise ou que acontece na desarticulação.
-alerta: O TARO 2009 (`pediatria-0784`) e o TARO 2006 (`pediatria-0813`) estão sem gabarito oficial. O Tachdjian descreve o hipercrescimento na amputação através de osso longo sem comparar causas, e o Rockwood and Wilkins não compara placa com haste quanto ao hipercrescimento.
+alerta: O TARO 2009 (`pediatria-0784`) e o TARO 2006 (`pediatria-0813`) estão sem gabarito oficial. O Tachdjian descreve o hipercrescimento na amputação através de osso longo sem comparar causas, mas o Campbell 15 (cap. 16, p. 681) e o Lovell and Winter (cap. 30, p. 1531) dão a amputação traumática como a causa mais comum, e o Rockwood and Wilkins não compara placa com haste quanto ao hipercrescimento.
 !fim
 
 # Fechamento {radar=fundamento}

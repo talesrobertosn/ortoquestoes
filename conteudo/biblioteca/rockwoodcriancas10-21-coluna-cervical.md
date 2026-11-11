@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-21-coluna-cervical
-versao: 2
+versao: 3
 titulo: Lesões da coluna cervical na criança
 especialidade: pediatria
 acesso: gratis
@@ -152,7 +152,7 @@ alerta: O TARO 2020 (`pediatria-0717`) está sem gabarito oficial; o capítulo s
 
 O capítulo organiza a imagem pelo nível da coluna (seção Radiographic Evaluation of the Spine by Level).
 
-**Junção atlanto-occipital.** A ferramenta principal é a **tomografia**, com reconstruções sagitais e coronais; a radiografia não mostra a articulação com detalhe suficiente, e quase toda criança avaliada para luxação atlanto-occipital já tem tomografia de trauma. Pelo trabalho de PANG (2007), o **intervalo côndilo-C1 (CCI)** deve medir **menos de 3,0 mm**; **acima de 3,5 mm** é suspeito e pede **ressonância**; **acima de 4,0 mm**, uni ou bilateral, é **forte evidência** de luxação atlanto-occipital (Fig. 21-2). Mede-se em quatro pontos equidistantes para compensar a irregularidade da fenda. O CCI diminui com a idade, mas entre **0 e 3 anos** a cartilagem das superfícies, invisível na tomografia, pode aumentá-lo artificialmente. A **razão de POWERS** e o **intervalo básio-dente** são **ultrapassados ou enganosos** na criança, pelos falsos negativos e falsos positivos.
+**Junção atlanto-occipital.** A ferramenta principal é a **tomografia**, com reconstruções sagitais e coronais; a radiografia não mostra a articulação com detalhe suficiente, e quase toda criança avaliada para luxação atlanto-occipital já tem tomografia de trauma. Pelo trabalho de PANG (2007), o **intervalo côndilo-C1 (CCI)** deve medir **menos de 3,0 mm**; **acima de 3,5 mm** é suspeito e pede **ressonância**; **acima de 4,0 mm**, uni ou bilateral, é **forte evidência** de luxação atlanto-occipital (Fig. 21-2). Mede-se em quatro pontos equidistantes para compensar a irregularidade da fenda. O CCI diminui com a idade, mas entre **0 e 3 anos** a cartilagem das superfícies, invisível na tomografia, pode aumentá-lo artificialmente. A **razão de POWERS** e o **intervalo básio-dente** são **ultrapassados ou enganosos** na criança, pelos falsos negativos e falsos positivos. O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 28, p. 1160), pensa diferente: entre as várias medidas descritas, os autores **preferem a razão de POWERS** (Fig. 28.9): a distância do básio ao arco posterior do atlas dividida pela do arco anterior do atlas ao opístio; **normal abaixo de 0,9**, e **acima de 1,0 é diagnóstica** de luxação atlanto-occipital. O Tachdjian também lembra que a ressonância é cada vez mais usada para achar essa lesão e as lesões mais sutis da membrana tectória.
 
 **Junção atlantoaxial.** Vê-se bem na radiografia e na tomografia. Usam-se o **intervalo atlantodental (ADI)** e o **espaço disponível para a medula** (Fig. 21-3). O ADI normal é **3 mm no adulto**; na criança pequena, aceita-se até **5 mm** (outro trecho do capítulo dá **4,5 mm**, acima do qual se presume lesão do transverso). Nas extensões da criança muito pequena, o arco anterior de C1 pode parecer subluxado sobre o dente ainda não ossificado: é pseudossubluxação, não instabilidade. A Fig. 21-3 lembra outras linhas: **WACKENHEIM** (clivo-canal) para a lesão atlanto-occipital, **McRAE** e **McGREGOR** para a invaginação basilar.
 
@@ -193,7 +193,7 @@ Antes vista como lesão fatal achada na autópsia, a **luxação atlanto-occipit
 - **um pouco de sangue no espaço subaracnoide em volta do tronco encefálico** na tomografia de trauma, com sinais de lesão medular alta;
 - **fraqueza sem explicação** ou **dificuldade de desmame do ventilador** depois de um traumatismo craniano.
 
-**Diagnóstico.** Tomografia com o **CCI de PANG** (acima de 3,5 mm, ressonância; acima de 4,0 mm, forte evidência). A ressonância mostra sinal anormal dentro da articulação ou ruptura completa da cápsula; lesão da membrana tectória, do ligamento interespinhoso posterior ou dos alares apoia o diagnóstico, mas não é patognomônica. As classificações antigas (distração longitudinal, rotação, deslocamento anterior ou posterior) têm hoje só interesse histórico.
+**Diagnóstico.** Tomografia com o **CCI de PANG** (acima de 3,5 mm, ressonância; acima de 4,0 mm, forte evidência). A ressonância mostra sinal anormal dentro da articulação ou ruptura completa da cápsula; lesão da membrana tectória, do ligamento interespinhoso posterior ou dos alares apoia o diagnóstico, mas não é patognomônica. As classificações antigas (distração longitudinal, rotação, deslocamento anterior ou posterior) têm hoje só interesse histórico. Na radiografia, o Tachdjian (cap. 28, p. 1160) prefere a **razão de POWERS** (acima de 1,0 = luxação), que o Rockwood and Wilkins chama de ultrapassada na criança.
 
 **Tratamento.** É uma lesão **ligamentar**: o tratamento sem cirurgia costuma **falhar**, e há instabilidade persistente depois do halo. Recomenda-se a **estabilização cirúrgica** na maioria dos casos:
 - **instrumentação occipitocervical posterior rígida, do occipital a C2**, é a preferida;
@@ -207,8 +207,8 @@ Antes vista como lesão fatal achada na autópsia, a **luxação atlanto-occipit
 !questoes central=pediatria-1080 treino=pediatria-1244,pediatria-1245
 conceito: A luxação atlanto-occipital se diagnostica pelo intervalo côndilo-C1 na tomografia (acima de 3,5 mm, ressonância; acima de 4 mm, forte evidência) e se trata com artrodese posterior rígida do occipital a C2.
 como: ENARE Cirurgia da Mão 2023 perguntou um método auxiliar no diagnóstico radiográfico da luxação occipitocervical na criança.
-armadilha: Confiar na razão de POWERS ou tratar só com halo.
-alerta: O gabarito do ENARE 2023 (`pediatria-1080`) é a razão de POWERS; o capítulo diz que a razão de POWERS e o intervalo básio-dente são ultrapassados ou enganosos na criança e usa o CCI de PANG na tomografia.
+armadilha: Tratar só com halo, ou descartar a razão de POWERS como método auxiliar da radiografia: o Rockwood and Wilkins a acha ultrapassada, mas o Tachdjian a prefere.
+alerta: O gabarito do ENARE 2023 (`pediatria-1080`) é a razão de POWERS, sustentado pelo Tachdjian (cap. 28, p. 1160), que prefere essa razão; o capítulo do Rockwood and Wilkins diz que a razão de POWERS e o intervalo básio-dente são ultrapassados ou enganosos na criança e usa o CCI de PANG na tomografia.
 !fim
 
 # Fratura do atlas (JEFFERSON) {radar=confirmado}
@@ -272,7 +272,7 @@ armadilha: Aplicar a classificação do adulto à criança pequena, ou chamar de
 
 # Fixação C1-C2 e occipitocervical {radar=clinico}
 
-O capítulo descreve as técnicas posteriores com detalhe (seções Posterior C1–C2 Instrumentation e Tabela 21-3).
+O capítulo descreve as técnicas posteriores com detalhe (seções Posterior C1-C2 Instrumentation e Tabela 21-3).
 
 **Planejamento.** Conferir na tomografia a integridade do **arco posterior de C1** (a ossificação incompleta é comum na criança) e a anatomia de C2, sobretudo uma **artéria vertebral alta**. Às vezes C1 não permite fixação e é preciso ir ao occipital.
 
@@ -443,7 +443,7 @@ armadilha: Tratar a metilprednisolona como obrigatória nas primeiras 8 horas.
 | Pseudossubluxação | C2-C3 até 3 mm, até cerca de 11 anos, prevalência até 20% |
 | SWISCHUK | Espinhosos de C1 a C3; o de C2 a até 3 mm |
 | C1-C2 espinhosos | Afastamento acima de 10 mm = lesão ligamentar |
-| Atlanto-occipital | CCI menor que 3 mm normal; acima de 3,5 mm ressonância; acima de 4 mm forte evidência; POWERS ultrapassada |
+| Atlanto-occipital | CCI menor que 3 mm normal; acima de 3,5 mm ressonância; acima de 4 mm forte evidência; POWERS ultrapassada no Rockwood and Wilkins, preferida no Tachdjian (acima de 1,0) |
 | ADI | 3 mm no adulto; 4,5 a 5 mm na criança |
 | Côndilo occipital | TULI 2B e ANDERSON e MONTESANO III instáveis (halo); hipoglosso em risco |
 | JEFFERSON | Menos de 5%; transverso decide; DICKMAN I artrodese, II halo (75%) |

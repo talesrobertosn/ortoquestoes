@@ -1,6 +1,6 @@
 ---
 id: rockwood10-48-coluna-cervical
-versao: 1
+versao: 2
 titulo: Fraturas e luxações da coluna cervical
 especialidade: coluna
 acesso: gratis
@@ -17,7 +17,7 @@ resumo: ANDERSON e D'ALONZO, GRAUER, JEFFERSON e SPENCE (6,9 mm), ADI de 3 e 5 m
 
 Este resumo foi escrito a partir do capítulo 48 do Rockwood and Green (10ª edição), na ordem em que as provas cobram o tema, e não na ordem do livro. Ele reorganiza as ideias em português, explica o porquê de cada regra e mostra, no meio do texto, as questões reais do acervo que exploraram cada ponto. Os números são os do capítulo; quando a prova cobra um dado que o capítulo não traz, o texto avisa.
 
-As fraturas e luxações cervicais aparecem em **1,5% a 3,5% dos grandes traumatizados**. A distribuição é **bimodal**: o jovem se fere em alta energia (acidente de carro em mais da metade dos casos, quedas em 23%), e o idoso, numa **queda da própria altura**, com lesões que podem ser tão graves quanto as do jovem. A **coluna cervical alta** (do occipital a C2) é o local mais fraturado, mas é na **subaxial** (C3 a C7) que a medula mais sofre, porque o canal alto é mais largo; cerca de **40% das lesões subaxiais ficam em C6 ou C7**. No idoso, a fratura cervical pesa como a do quadril: mortalidade de **19% em 3 meses** e perto de **30% em 1 ano** numa grande série, e maior que a da fratura do quadril num estudo recente.
+As fraturas e luxações cervicais aparecem em **1,5% a 3,5% dos grandes traumatizados**. A distribuição é **bimodal**: o jovem se fere em alta energia (acidente de carro em mais da metade dos casos, quedas em 23%), e o idoso, numa **queda da própria altura**, com lesões que podem ser tão graves quanto as do jovem. A **coluna cervical alta** (do occipital a C2) é o local mais fraturado, mas é na **subaxial** (C3 a C7) que a medula mais sofre, porque o canal alto é mais largo; cerca de **40% das lesões subaxiais ficam em C6 ou C7**. O Campbell 15 (cap. 48, p. 1900) conta de outro jeito: o **áxis** é a vértebra isolada mais lesada, mas a **região subaxial** (C3 a T1) soma cerca de **65%** de todas as lesões cervicais e a maioria das lesões medulares cervicais. Se a prova perguntar a região mais fraturada, veja o livro da bibliografia: alta no Rockwood, subaxial no Campbell. No idoso, a fratura cervical pesa como a do quadril: mortalidade de **19% em 3 meses** e perto de **30% em 1 ano** numa grande série, e maior que a da fratura do quadril num estudo recente.
 
 O capítulo inteiro gira em torno de duas perguntas: **a medula está em risco?** e **os ligamentos seguram?** Osso quebrado, por si, quase nunca decide a conduta; o que decide é a integridade do **ligamento transverso** em C1, do **complexo ligamentar posterior** na subaxial, da **membrana tectória** na junção occipitocervical, e o estado neurológico.
 
@@ -53,13 +53,15 @@ Duas informações de anatomia completam o quadro. A medula cervical é irrigada
 
 Na substância cinzenta, as fibras que servem os segmentos **mais altos** ficam mais **centrais**. É essa organização, diz o capítulo, que explica por que na **síndrome medular central** os **membros superiores** são mais atingidos que os inferiores. O paciente típico é o **idoso com estenose cervical** (por espondilose ou canal congenitamente estreito) que sofre um trauma em **hiperextensão**, muitas vezes uma queda batendo a testa, e chega com déficit motor e sensitivo pior nos braços e nas mãos, às vezes com alteração das pernas, da bexiga e do intestino, **sem fratura, luxação nem lesão ligamentar** na imagem. É a forma mais comum de lesão medular sem instabilidade na coluna espondilótica.
 
+O Campbell 15 (cap. 48, p. 1878) dá a frequência que o Rockwood não traz: a síndrome central é a **síndrome medular incompleta mais comum** e a de **melhor prognóstico**, e a forma aguda traumática responde por **até 70%** dos casos, nos graus B a E da ASIA. Para a recuperação, o mesmo capítulo dá dois números: na p. 1878, **mais de 50%** dos pacientes recuperam o controle vesical e intestinal, voltam a andar e melhoram a função da mão; na p. 1879, operados ou não, **70% a 80%** recuperam o controle vesical e a marcha, com melhora da mão, embora a recuperação completa seja incomum.
+
 !figura 48-57
 Ressonância de um homem de 55 anos com fraqueza maior nos membros superiores que nos inferiores, compatível com síndrome medular central; a tomografia não mostrou lesão óssea nem desalinhamento; depois de um período de observação, com a recuperação estabilizada, foi feita laminectomia e artrodese posterior para acelerar a melhora.
 !fim
 
 !questoes central=coluna-0113,coluna-0037,coluna-0251,coluna-0266 relacionadas=coluna-0277,coluna-0078,coluna-0076,coluna-0177 treino=coluna-0532
 conceito: A síndrome medular central é a lesão incompleta do idoso com canal estreito que sofre hiperextensão: tetraparesia pior nos membros superiores, porque as fibras dos segmentos altos ficam mais centrais na substância cinzenta.
-como: O TARO 2015 cruzou mecanismo (hiperflexão ou hiperextensão) com o membro mais afetado; o TARO 2023 somou a faixa etária (idoso ou jovem) e o tipo de síndrome. O TARO 2011 e outra prova sem ano pediram o nome da síndrome a partir da fraqueza maior nas mãos e nos braços. Uma questão com figura pediu a afirmação correta e o gabarito foi a osteoartrite preexistente. O TARO 2024 perguntou a síndrome incompleta mais comum (gabarito: central); o capítulo não dá essa frequência, mas diz que é a lesão habitual da coluna espondilótica sem instabilidade.
+como: O TARO 2015 cruzou mecanismo (hiperflexão ou hiperextensão) com o membro mais afetado; o TARO 2023 somou a faixa etária (idoso ou jovem) e o tipo de síndrome. O TARO 2011 e outra prova sem ano pediram o nome da síndrome a partir da fraqueza maior nas mãos e nos braços. Uma questão com figura pediu a afirmação correta e o gabarito foi a osteoartrite preexistente. O TARO 2024 perguntou a síndrome incompleta mais comum (gabarito: central); o Rockwood não dá essa frequência, mas o Campbell 15 (cap. 48, p. 1878) diz que é a incompleta mais comum, com até 70% dos casos.
 armadilha: Hiperflexão: é o mecanismo associado à síndrome anterior, não à central.
 armadilha: Membros inferiores mais afetados: inverte a somatotopia; as fibras sacrais e lombares ficam por fora e são relativamente poupadas.
 armadilha: Síndrome medular anterior em idoso por hiperflexão: troca a síndrome e o mecanismo na mesma alternativa.
@@ -119,9 +121,13 @@ Outros dados da chegada que a prova pode usar: **fratura da pelve** associada au
 
 A lesão medular cervical desliga as vias **simpáticas**. O resultado é o **choque neurogênico**: **hipotensão com bradicardia**, porque falta tônus vascular e falta o estímulo que aceleraria o coração, e não por perda de volume. O alerta prático do capítulo é que tratar esse paciente só com **volume** pode causar **edema pulmonar**. O tratamento é **vasopressor**, posição de **Trendelenburg** e uso **criterioso** de líquidos. Na lesão medular, recomenda-se manter a **pressão sistólica acima de 100 mmHg** e a **média acima de 85 mmHg**, porque a perfusão da medula lesada depende da pressão.
 
+O nível vem de outros capítulos do mesmo livro: a lesão medular **cervical ou torácica alta** tira o efluxo simpático central (Rockwood, cap. 14, p. 472); o choque neurogênico aparece em cerca de **20%** das lesões medulares cervicais e fica menos frequente à medida que a lesão desce, além de ser mais comum na lesão completa (Rockwood, cap. 47, p. 1886). A tríade completa inclui a **hipotermia**, pela perda da termorregulação (Campbell 15, cap. 48, p. 1875; o Rockwood, cap. 47, p. 1886, diz que ela é comum, mas pouco lembrada), e o paciente costuma ter a pele **quente e seca** (Rockwood, cap. 14, p. 472).
+
+A conduta diverge entre os livros. O Rockwood, neste capítulo, manda **vasopressor** e média **acima de 85 mmHg**; o cap. 47 (p. 1886) fala em média acima de 85 mmHg por **1 semana**, com **noradrenalina** nas lesões cervicais e torácicas altas. O Campbell 15 (cap. 48, p. 1876) segue outra ordem: tratar a hipotensão primeiro como **hemorrágica**, com cristaloide balanceado e, se preciso, transfusão; só se ela persistir com pressão venosa central normal entram os **vasopressores**, de preferência os com ação **alfa e beta** (dobutamina, dopamina, noradrenalina), porque o alfa puro (fenilefrina) pode causar **bradicardia reflexa**; a meta é média de **75 a 95 mmHg** por **3 a 7 dias**. O próprio Rockwood, no cap. 14 (p. 472), também manda afastar a hipovolemia antes de presumir o choque neurogênico e repor volume antes do suporte inotrópico criterioso.
+
 !questoes central=coluna-0025,coluna-0035 relacionadas=coluna-0001,coluna-0155 treino=coluna-0508
 conceito: Choque neurogênico é hipotensão com bradicardia por perda do simpático; trata-se com vasopressor e volume criterioso, mantendo a pressão média acima de 85 mmHg.
-como: O TARO 2016 e o TARO 2017 cruzaram frequência cardíaca com diurese e temperatura das extremidades (gabarito: bradicardia, diurese normal, extremidades quentes). O TARO 2020 perguntou a ação do vasopressor (gabarito: alfa e beta-agonista), que trata as duas metades do defeito, o tônus e a frequência. Uma prova da SBOT-SP pediu a região cuja lesão pode desencadear o choque neurogênico (gabarito: parte superior da coluna dorsal); o capítulo explica o mecanismo simpático, mas não dá o nível.
+como: O TARO 2016 e o TARO 2017 cruzaram frequência cardíaca com diurese e temperatura das extremidades (gabarito: bradicardia, diurese normal, extremidades quentes). O TARO 2020 perguntou a ação do vasopressor (gabarito: alfa e beta-agonista), que trata as duas metades do defeito, o tônus e a frequência. Uma prova da SBOT-SP pediu a região cuja lesão pode desencadear o choque neurogênico (gabarito: parte superior da coluna dorsal); este capítulo explica o mecanismo simpático, e o nível está nos caps. 14 e 47 do Rockwood: lesão cervical ou torácica alta.
 armadilha: Reposição volêmica agressiva: corrige o choque hipovolêmico, mas no neurogênico pode causar edema pulmonar.
 armadilha: Taquicardia: é a resposta do choque hemorrágico, que o simpático íntegro permite.
 !fim
@@ -160,6 +166,8 @@ armadilha: Extensão do punho para C7: na tabela do capítulo, a extensão do pu
 
 A força é graduada de **0 a 5** (3 é vencer a gravidade sem resistência; 4 é ceder ao examinador; 5 é resistir à força plena), e a sensibilidade em três graus (normal, diminuída, ausente). A lesão é **completa** quando não há função motora nem sensitiva abaixo do nível, e **incompleta** quando sobra alguma. O **choque medular** é definido pela **ausência do reflexo bulbocavernoso**: enquanto ele dura, a lesão não pode ser classificada, e a volta do reflexo marca o seu fim.
 
+Quanto dura e que raízes o reflexo testa, os livros dizem de modo diferente. O Rockwood (cap. 47, p. 1888) põe o fim do choque medular **entre 48 horas e 2 semanas** e diz que o bulbocavernoso avalia os neurônios motores e sensitivos de **S2 a S4** no cone medular. O Campbell 15 (cap. 48, p. 1875) diz que o choque costuma passar em **24 a 48 horas**, mesmo nas lesões graves, mas pode durar semanas ou, raramente, meses; e a sua Fig. 48.4, do reflexo bulbocavernoso, marca o arco em **S2 e S3**. Na lesão do cone, o bulbocavernoso e o reflexo anal podem nunca voltar (Campbell 15, p. 1875).
+
 !tabela Graus de lesão medular (Tabela 48-3 do capítulo)
 | Grau | Força abaixo da lesão | Sensibilidade abaixo da lesão |
 | --- | --- | --- |
@@ -177,7 +185,7 @@ conceito: O choque medular é a ausência do reflexo bulbocavernoso; quando o re
 como: O TEOT 2023 perguntou as raízes avaliadas pelo bulbocavernoso. O TARO 2011 pediu o significado do reflexo positivo (fim do choque, não prognóstico), e a prova de R4 de Coluna da SES-DF de 2024 pediu qual reflexo pesquisar e qual marca o fim do choque, com cremastérico, cutâneo abdominal, patelar e plantar como distratores.
 armadilha: "Bom prognóstico motor ou sensitivo": a volta do reflexo diz que o choque acabou; uma lesão completa também recupera o bulbocavernoso.
 armadilha: Reflexo patelar ou cremastérico como marcador do fim do choque.
-alerta: A questão do TEOT 2023 foi anulada; o gabarito publicado era S2 e S3. O capítulo põe o bulbocavernoso na linha sacral da sua tabela (S5, com tônus retal e sensibilidade perianal) e não detalha as raízes do arco; a descrição usual da literatura é S2 a S4. Na dúvida da prova, pense em arco sacral baixo, pelo nervo pudendo.
+alerta: A questão do TEOT 2023 foi anulada; o gabarito publicado era S2 e S3. Este capítulo põe o bulbocavernoso na linha sacral da sua tabela (S5, com tônus retal e sensibilidade perianal) e não detalha as raízes do arco. O Rockwood, no cap. 47 (p. 1888), dá S2 a S4; a Fig. 48.4 do Campbell 15 (p. 1875) marca S2 e S3, o gabarito publicado. Os dois livros discordam; na prova, as duas respostas têm fonte.
 !fim
 
 !questoes relacionadas=coluna-0292,coluna-0371,coluna-0355,coluna-0364,coluna-0375 treino=coluna-0510
@@ -202,6 +210,8 @@ conceito: No STASCIS, a descompressão em até 24 horas aumentou 2,8 vezes a cha
 
 O mecanismo não é claro. Um estudo em cadáver sugeriu forças laterais ou oblíquas para o tipo II e extensão para o tipo III; outro mostrou que a direção da carga pouco importa e que a **densidade óssea** decide. A fratura, antes vista no jovem de alta energia, é cada vez mais a **fratura isolada do idoso que cai da própria altura**, em geral batendo a **testa** (lacerações frontais e equimose periocular são comuns) e hiperestendendo o pescoço.
 
+Os números epidemiológicos que as provas copiam estão no HEBERT (cap. 39): a fratura do odontoide é **9% a 15%** das fraturas cervicais do adulto, é a **fratura cervical mais comum acima dos 70 anos**, e a lesão neurológica associada varia de **2% a 27%**, grave ou até fatal quando presente. O tipo I fica acima do ligamento transverso, por avulsão do apical ou do alar; o tipo II fica entre o transverso e o corpo do áxis, sem chegar às facetas de C2, e é o mais comum.
+
 A classificação de **ANDERSON e D'ALONZO** continua a mais aceita. É só descritiva: não define tratamento nem prevê resultado.
 
 - **Tipo I:** avulsão da **ponta** do dente. Isolada, é **raríssima**; pode ser sinal de dissociação occipitocervical oculta.
@@ -223,12 +233,12 @@ conceito: Na classificação de ANDERSON e D'ALONZO, o tipo I é a avulsão da p
 como: O TARO 2014 e o TARO 2016 repetiram a mesma pergunta: o tipo mais comum e que cursa com pseudartrose em 36% (gabarito: II). O TARO 2019 pediu o ligamento que avulsiona no tipo I e a sua frequência (alar, 1%). A SES-DF 2022 deu um idoso com tipo II e julgou itens: que o II ocorre acima do transverso por avulsão do apical ou do alar (errado, isso é o tipo I), que é a fratura cervical mais comum depois dos 70 anos (certo) e que o envolvimento neurológico varia de 2% a 27% (certo).
 armadilha: Tipo III como o que mais pseudartrosa: é o contrário; o III, em osso esponjoso do corpo, consolida bem.
 armadilha: Tipo I por avulsão do ligamento transverso: o transverso passa atrás do dente e não se insere na ponta.
-alerta: O capítulo não traz algumas das cifras desses itens: os 36% de pseudartrose (ele cita perto de 30% numa série e 66% de consolidação do tipo II no halo em outra), o 1% do tipo I (ele diz apenas que a forma isolada é raríssima), a frequência depois dos 70 anos (ele diz que a fratura é cada vez mais típica do idoso) e o 2% a 27% de déficit. Os gabaritos foram mantidos; os números são das provas.
+alerta: Os itens da SES-DF 2022 copiam o HEBERT (cap. 39), que traz a fratura cervical mais comum acima dos 70 anos e o déficit de 2% a 27%. Nenhum livro local traz os 36% de pseudartrose (o Rockwood cita perto de 30% numa série e 66% de consolidação do tipo II no halo em outra; o HEBERT, 26% a 80%) nem o 1% do tipo I (o Rockwood diz apenas que a forma isolada é raríssima). Os gabaritos foram mantidos.
 !fim
 
 ## Por que o tipo II não consolida, e o tratamento sem cirurgia
 
-A maioria das fraturas do odontoide pode ser tratada **sem cirurgia**, com colar, órtese cervicotorácica ou halo. A diferença está no tipo. O **tipo III** consolida bem imobilizado (**87%** no halo numa série multicêntrica, perto de **100%** em outra, cerca de **95%** numa revisão). O **tipo II** não: **66%** de consolidação no halo numa série, **menos de 50%** em outra; **50% a 90%** numa revisão; e numa série de 340 fraturas de C2 a **pseudartrose do tipo II chegou perto de 30%**. Fraturas com **50% ou mais de subluxação** anteroposterior têm risco bem maior de pseudartrose e de morte, qualquer que seja o tratamento.
+A maioria das fraturas do odontoide pode ser tratada **sem cirurgia**, com colar, órtese cervicotorácica ou halo. A diferença está no tipo. O **tipo III** consolida bem imobilizado (**87%** no halo numa série multicêntrica, perto de **100%** em outra, cerca de **95%** numa revisão). O **tipo II** não: **66%** de consolidação no halo numa série, **menos de 50%** em outra; **50% a 90%** numa revisão; e numa série de 340 fraturas de C2 a **pseudartrose do tipo II chegou perto de 30%**. Fraturas com **50% ou mais de subluxação** anteroposterior têm risco bem maior de pseudartrose e de morte, qualquer que seja o tratamento. O HEBERT (cap. 39) dá a faixa que a SES-DF copiou: com tratamento conservador, a pseudartrose do tipo II varia de **26% a 80%**, atribuída à instabilidade da fratura e à pior vascularização da região.
 
 O **colar rígido** pode tratar **qualquer fratura sem desvio**, de qualquer tipo, e é o tratamento sintomático do idoso de baixa demanda com fratura sem desvio. O halo reduz e mantém as fraturas desviadas II e III, mas sem consolidar muito mais que a órtese. Uma série deu **74%** de consolidação do tipo II tratado com órtese quando o desvio era **menor que 5 mm**, o afastamento entre fragmentos menor que 2 mm e a angulação **menor que 11 graus**. No idoso, outra série deu **50% de consolidação, mas 90% de estabilidade radiográfica**: a pseudartrose fibrosa estável muitas vezes não importa.
 
@@ -242,9 +252,11 @@ armadilha: "O tipo II é mais estável que o III": a cintura do dente tem pouca 
 
 No adulto jovem, o capítulo lista como indicações gerais: **desvio maior que 5 mm**, **angulação maior que 10 graus**, **déficit neurológico**, **cominuição** importante e **politrauma** em que a imobilização externa seria mal tolerada. Numa grande série, também se operavam a fratura que a órtese não mantinha alinhada, a associada a **lesão do ligamento transverso** e o tipo II com **desvio acima de 6 mm**. No idoso (acima de 65 a 70 anos), as indicações são menos claras: fraturas desviadas podem ir bem sem cirurgia no paciente de baixa demanda, neurologicamente intacto e com espaço para a medula.
 
+Os limites mudam de livro para livro. O Campbell 15 (cap. 48, p. 1895 e 1896) usa números menores: os fatores que pesam no resultado são o tipo, o **desvio inicial maior que 2 mm**, a **angulação maior que 15 graus** e a idade, sobretudo **acima de 80 anos**; abaixo dos 80, recomenda cirurgia no tipo II com **desvio maior que 2 a 3 mm** ou **mais de 15 graus** de angulação, e acima dos 80 aceita o colar rígido. O HEBERT (cap. 39) lista como fatores de risco de pseudartrose o **desvio inicial maior que 4 a 6 mm**, a **angulação maior que 10 graus**, o **retardo no diagnóstico** e a **idade acima de 40 a 65 anos**, e indica cirurgia para quem soma esses fatores. Resumindo: 5 mm e 10 graus no Rockwood, 2 a 3 mm e 15 graus (com corte aos 80 anos) no Campbell, 4 a 6 mm e 10 graus no HEBERT.
+
 !questoes central=coluna-0466
 conceito: Desvio maior que 5 mm, angulação maior que 10 graus, déficit neurológico, cominuição e politrauma são as indicações de cirurgia do odontoide no jovem; os mesmos fatores aumentam o risco de pseudartrose.
-como: A SES-DF 2022 julgou como certo que os fatores de risco de pseudartrose são desvio inicial maior que 4 a 6 mm, angulação maior que 10 graus e retardo no diagnóstico. O capítulo usa 5 mm e 10 graus como limites cirúrgicos e cita 6 mm numa série; o retardo no diagnóstico não aparece no texto.
+como: A SES-DF 2022 julgou como certo que os fatores de risco de pseudartrose são desvio inicial maior que 4 a 6 mm, angulação maior que 10 graus e retardo no diagnóstico. A frase é do HEBERT (cap. 39), que lista esses três fatores e a idade acima de 40 a 65 anos; o Rockwood usa 5 mm e 10 graus como limites cirúrgicos e cita 6 mm numa série.
 !fim
 
 ## O parafuso anterior: a geometria decide
@@ -380,13 +392,15 @@ armadilha: Flexão-compressão estágio 1 ou 2 para a luxação unifacetária: s
 
 Dois números do capítulo atravessam toda a subaxial. Segundo **WHITE e PANJABI**, **translação sagital maior que 3,5 mm** sugere instabilidade mecânica; mede-se entre as linhas que prolongam as paredes posteriores dos corpos, a medida mais reprodutível na radiografia e na tomografia. E **cifose segmentar maior que 11 graus**, medida pelo método dos platôs (COBB), sugere lesão do **complexo ligamentar posterior**. A cifose do nível lesado deve ser comparada com a lordose normal dos vizinhos, que é de **2 a 4 graus** entre vértebras adjacentes. O método dos platôs foi melhor que o das tangentes posteriores.
 
+Os dois números vêm de uma lista de pontos que o Rockwood não reproduz e o Campbell 15 traz (Box 48.6, p. 1900), a de WHITE, SOUTHWICK e PANJABI para a instabilidade clínica da coluna cervical baixa. Valem **2 pontos** cada: elementos **anteriores** destruídos ou sem função, elementos **posteriores** destruídos ou sem função, **translação sagital maior que 3,5 mm**, **rotação sagital maior que 11 graus**, **teste de estiramento positivo** e **lesão medular**. Valem **1 ponto** cada: **lesão radicular**, **estreitamento discal anormal** e **carga perigosa prevista**. Somados **5 pontos ou mais**, a coluna é instável.
+
 !figura 48-8
 Método de COBB para medir a cifose cervical: uma linha no platô superior da vértebra íntegra acima e outra no platô inferior da vértebra íntegra abaixo; mede-se o ângulo entre elas.
 !fim
 
 !questoes central=trauma-0220 relacionadas=coluna-0323,coluna-0315 treino=coluna-0517
 conceito: Na coluna cervical subaxial, cifose segmentar maior que 11 graus sugere lesão do complexo ligamentar posterior, e translação sagital maior que 3,5 mm sugere instabilidade mecânica.
-como: O TEOT 2021 mostrou o ângulo na imagem e pediu o valor a partir do qual indica instabilidade (11 graus). O TARO 2007 pediu a translação sagital crítica de WHITE e PANJABI (o acervo não registra o gabarito; o capítulo dá 3,5 mm). O TARO 2020 perguntou que itens valem 2 pontos na lista de WHITE e PANJABI; o capítulo não traz essa lista de pontos, só os limites de 3,5 mm e 11 graus.
+como: O TEOT 2021 mostrou o ângulo na imagem e pediu o valor a partir do qual indica instabilidade (11 graus). O TARO 2007 pediu a translação sagital crítica de WHITE e PANJABI (o acervo não registra o gabarito; o capítulo dá 3,5 mm). O TARO 2020 perguntou que itens valem 2 pontos na lista de WHITE e PANJABI; o Rockwood dá só os limites de 3,5 mm e 11 graus, e a lista inteira está no Campbell 15 (Box 48.6, p. 1900).
 armadilha: 3,5 graus: é o número da translação (em milímetros), não do ângulo.
 armadilha: 20 graus: é a flexoextensão média de C4–C5 e C5–C6, não um limite de instabilidade.
 !fim
