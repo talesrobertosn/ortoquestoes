@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-pe-torto-congenito
-versao: 1
+versao: 2
 titulo: Pé torto congênito
 especialidade: pediatria
 acesso: gratis
@@ -114,7 +114,7 @@ No plano coronal, o tálus está em **pronação ou "intorção"**, e o calcâne
 conceito: O tálus do pé torto tem colo curto, desviado medial e plantar, declinação colo-corpo diminuída e facetas anterior e média alteradas; o colo roda internamente e o corpo externamente no encaixe; o navicular fica medial e plantar, em inversão extrema.
 como: O CET-PR perguntou como se apresenta o tálus; uma prova de Ortopedia pediu a afirmação errada sobre as alterações osteoarticulares; o ENARE R4 de Ortopedia 2025 pediu a afirmação correta sobre a anatomopatologia.
 armadilha: Achar que colo e corpo do tálus giram juntos para dentro (o corpo gira para fora), trocar o navicular em inversão por eversão, ou descrever o colo como desviado para lateral.
-alerta: Em `pediatria-0864`, a alternativa D (primeiro e segundo metatarsos angulados plantarmente em relação ao quinto) descreve o cavo; os livros corrigem o cavo supinando o antepé e elevando o primeiro metatarso (Tachdjian p. 715; Campbell p. 1051), o que confirma o primeiro raio abaixado, mas não citam o segundo metatarso nominalmente.
+alerta: Em `pediatria-0864`, a alternativa D (primeiro e segundo metatarsos angulados plantarmente em relação ao quinto) descreve o cavo; os livros corrigem o cavo supinando o antepé e elevando o primeiro metatarso (Tachdjian p. 715; Campbell p. 1051), e o Lovell and Winter (p. 1419) descreve o primeiro metatarso mais fletido plantarmente que os metatarsos laterais, o que confirma o primeiro raio abaixado, mas nenhum cita o segundo metatarso nominalmente.
 !fim
 
 # A anatomia patológica: o bloco que gira ao redor do tálus {radar=confirmado}
@@ -135,7 +135,7 @@ Essa última frase explica por que a banca escreve "aduto do mediopé" e não "a
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31) descreve a mecânica do calcâneo (p. 1049). TURCO atribuiu a deformidade ao **deslocamento medial do navicular e do calcâneo ao redor do tálus**. Ao **girar horizontalmente pivotando no ligamento interósseo**, o calcâneo **escorrega para baixo da cabeça e do colo do tálus** e a **tuberosidade se aproxima do maléolo fibular**; essa proximidade vem da rotação horizontal, não só do equino. A **talonavicular fica em posição extrema de inversão**, o cuboide desvia medialmente no calcâneo, e a faceta inclinada da calcaneocuboide aumenta a rotação interna do mediopé.
 
-Juntando os dois livros, o pé torto tem quatro componentes, que o Campbell lista nesta ordem: **cavo, aduto, varo e equino** (p. 1048). A figura 31.25 do Campbell mostra o recém-nascido de costas: inversão, flexão plantar e rotação interna do calcâneo, e cavo com **prega plantar transversa**. Na descrição de uma prova, o pé torto é portanto **cavo, varo, aduto e equino, com o antepé supinado em relação à perna**; nunca valgo, pronado ou dorsifletido. E, quando a banca separa as articulações, o varo é do **retropé, na subtalar** (o calcâneo girando sob o tálus) e o aduto é do **mediopé** (navicular e cuboide desviados), com o equino na tibiotársica.
+Juntando os dois livros, o pé torto tem quatro componentes, que o Campbell lista nesta ordem: **cavo, aduto, varo e equino** (p. 1048). A figura 31.25 do Campbell mostra o recém-nascido de costas: inversão, flexão plantar e rotação interna do calcâneo, e cavo com **prega plantar transversa**. O Lovell and Winter (cap. 29, p. 1412) descreve a mesma prega: uma **prega cutânea transversa profunda cruza o mediopé** e se estende sob o arco longitudinal, junto com a prega posterior do tornozelo única (às vezes dupla) e o calcanhar vazio. Na descrição de uma prova, o pé torto é portanto **cavo, varo, aduto e equino, com o antepé supinado em relação à perna**; nunca valgo, pronado ou dorsifletido. E, quando a banca separa as articulações, o varo é do **retropé, na subtalar** (o calcâneo girando sob o tálus) e o aduto é do **mediopé** (navicular e cuboide desviados), com o equino na tibiotársica.
 
 !tabela Cada osso no pé torto (Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 709 a 711; Campbell's Operative Orthopaedics, 15ª ed., p. 1049)
 | Osso ou articulação | Posição no pé torto | Consequência clínica |
@@ -164,7 +164,7 @@ armadilha: Confundir o par cuboide e calcâneo com o par navicular e tálus, que
 
 ## Músculos e tendões
 
-O Tachdjian's Pediatric Orthopaedics, 6ª ed. descreve **espessamento e contratura das bainhas tendíneas e dos ligamentos** e músculo **inelástico**, com alterações neurogênicas no tibial posterior, nos fibulares, no tríceps e nos flexores longos, efeito da própria condição; as unidades musculotendíneas estão sempre **encurtadas** (p. 711), e o pé torto verdadeiro tem **atrofia** e rigidez (p. 712). Em resumo: músculos atróficos e encurtados, ligamentos e bainhas espessados.
+O Tachdjian's Pediatric Orthopaedics, 6ª ed. descreve **espessamento e contratura das bainhas tendíneas e dos ligamentos** e músculo **inelástico**, com alterações neurogênicas no tibial posterior, nos fibulares, no tríceps e nos flexores longos, efeito da própria condição; as unidades musculotendíneas estão sempre **encurtadas** (p. 711), e o pé torto verdadeiro tem **atrofia** e rigidez (p. 712). O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 29, p. 1416) acrescenta que os músculos do pé torto são menores que o normal, com mais tecido conjuntivo no tríceps e no tibial posterior, e que há **predomínio de fibras tipo I nos grupos musculares posterior e medial**; os ligamentos são espessos, com mais colágeno e mais células. Em resumo: músculos atróficos e encurtados, ligamentos e bainhas espessados.
 
 Na prática, quatro músculos sustentam a deformidade, e o livro diz por quê (p. 711):
 
@@ -180,7 +180,7 @@ Fibrosam a **fáscia plantar**, o **ligamento calcaneonavicular plantar (mola)**
 
 O Campbell's Operative Orthopaedics, 15ª ed. (cap. 31) organiza as resistências por articulação (p. 1049): as estruturas posteriores do tibiotalar e do subtalar sustentam o **varo e o equino do retropé**; as contraturas talonaviculares e subtalares mediais, o **cavo e o aduto do mediopé**. Na lista do que resiste à talonavicular, o **tendão do tibial posterior** vem em primeiro lugar (tabela abaixo).
 
-Quando a prova pergunta o maior obstáculo à redução do complexo talocalcaneonavicular, a leitura dos dois livros aponta o **tendão do tibial posterior**: é o primeiro da lista do Campbell, e o Tachdjian diz que a mobilização do navicular depende de alongá-lo; na cirurgia, ele é alongado em Z justamente para permitir a redução do navicular (Tachdjian p. 725).
+Quando a prova pergunta o maior obstáculo à redução do complexo talocalcaneonavicular, os livros sustentam dois candidatos. O **ligamento tibionavicular** (a porção anterior e superficial do deltoide) é a estrutura que prende o navicular ao maléolo medial: o Tachdjian descreve a estrutura ligamentar excessivamente espessa entre o navicular e o maléolo medial (p. 709), manda fazer a **liberação completa do tibionavicular** na liberação posteromedial (p. 725) e atribui a **subluxação dorsal do navicular** depois da cirurgia de TURCO à falta dessa liberação (p. 727); o Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 29, p. 1438) diz que, para soltar a talonavicular, o mola e o tibionavicular têm de ser divididos. O **tendão do tibial posterior** é o primeiro da lista do Campbell, e o Tachdjian liga a mobilização do navicular ao seu alongamento em Z (p. 711 e 725). A leitura que fica é o tibionavicular, com o tibial posterior defensável pelo Campbell.
 
 !tabela Quem resiste a cada correção (Campbell's Operative Orthopaedics, 15ª ed., p. 1049; Tachdjian's Pediatric Orthopaedics, 6ª ed., p. 711)
 | Correção desejada | Estruturas que resistem |
@@ -193,10 +193,10 @@ Quando a prova pergunta o maior obstáculo à redução do complexo talocalcaneo
 !fim
 
 !questoes central=pediatria-0465 relacionadas=pediatria-0939,pediatria-0740
-conceito: As forças deformantes do pé torto são o tibial posterior, o flexor longo do hálux, o flexor longo dos dedos (nó de HENRY) e o tríceps; os músculos são atróficos e encurtados e os ligamentos e bainhas, espessados; o tibial posterior é o primeiro obstáculo à redução talonavicular.
+conceito: As forças deformantes do pé torto são o tibial posterior, o flexor longo do hálux, o flexor longo dos dedos (nó de HENRY) e o tríceps; os músculos são atróficos e encurtados e os ligamentos e bainhas, espessados; o ligamento tibionavicular prende o navicular ao maléolo medial e precisa ser liberado por inteiro, e o tibial posterior abre a lista do Campbell do que resiste à talonavicular.
 como: A SBOT-SP perguntou os músculos que mais contribuem para a deformidade e o estado de músculos e ligamentos; o TARO 2007 perguntou o maior obstáculo à redução do complexo talocalcaneonavicular.
 armadilha: Incluir o fibular longo, o fibular curto ou o tibial anterior entre as forças deformantes do recém-nascido; dizer que os músculos estão hipertrofiados.
-alerta: `pediatria-0939` e `pediatria-0740` estão sem gabarito oficial. Para `pediatria-0939`, o Tachdjian (p. 711 e 712) descreve atrofia e músculos inelásticos com bainhas e ligamentos espessados, o que sustenta B (hipotrofiados e espessados). Para `pediatria-0740`, o Campbell (p. 1049) põe o tendão do tibial posterior à frente da lista do que resiste à talonavicular, e o Tachdjian (p. 711) liga a mobilização do navicular ao alongamento do tibial posterior, o que sustenta D; nenhum dos livros usa a expressão "maior obstáculo".
+alerta: `pediatria-0939` e `pediatria-0740` estão sem gabarito oficial. Para `pediatria-0939`, o Tachdjian (p. 711 e 712) descreve atrofia e músculos inelásticos com bainhas e ligamentos espessados, o que sustenta B (hipotrofiados e espessados). Para `pediatria-0740`, a resposta provável é A (ligamento tibionavicular): o Tachdjian descreve a estrutura espessa que prende o navicular ao maléolo medial (p. 709), manda liberar por completo o tibionavicular (p. 725) e liga a subluxação dorsal do navicular à falta dessa liberação (p. 727), e o Lovell and Winter (p. 1438) exige dividir o tibionavicular para soltar a talonavicular. D (tibial posterior) também é defensável, porque o Campbell (p. 1049) põe o tendão à frente da lista do que resiste à talonavicular; nenhum dos livros usa a expressão "maior obstáculo".
 !fim
 
 # Diagnóstico, diferencial e imagem {radar=clinico}
@@ -296,7 +296,7 @@ J.H. KITE tratou mais de 800 pacientes entre 1924 e 1960 (p. 715) corrigindo **u
 
 ## O método francês, ou funcional
 
-O método francês (MASSE e BENSAHEL, anos 1970) usa **manipulações diárias**, **estímulo dos fibulares** (cócegas no quinto raio) e **esparadrapo não elástico**, sem gesso, que BENSAHEL achava prejudicial (Tachdjian p. 719 a 721). Cada sessão dura **cerca de 30 minutos por pé**, feita por **fisioterapeuta**; o objetivo é reduzir a talonavicular e alongar os tecidos mediais antes de corrigir aduto, varo e equino.
+O método francês (MASSE e BENSAHEL, anos 1970) usa **manipulações diárias**, **estímulo dos fibulares** (cócegas no quinto raio) e imobilização temporária com **esparadrapo adesivo não elástico** na descrição original (Tachdjian p. 719), sem gesso, que BENSAHEL achava prejudicial. Na técnica atual, o livro troca o material: depois de cada sessão, o pé é enfaixado com **Elastoplast**, fita **elástica** que segura a posição mas, por esticar, deixa o pé enfaixado se exercitar, sobre uma espuma fina (M-wrap) e com Hypafix nas bordas (p. 721). Cada sessão dura **cerca de 30 minutos por pé**, feita por **fisioterapeuta**; o objetivo é reduzir a talonavicular e alongar os tecidos mediais antes de corrigir aduto, varo e equino.
 
 Quase toda a melhora ocorre nos **3 primeiros meses**; bons resultados em quase 50% sem cirurgia (86% com cirurgia complementar). No serviço do Tachdjian, correção inicial de 95% e recidiva de 29%, parecidas com o PONSETI, mas as cirurgias foram menores no grupo PONSETI (p. 721).
 
@@ -305,7 +305,7 @@ Quase toda a melhora ocorre nos **3 primeiros meses**; bons resultados em quase 
 |---|---|---|---|
 | Quem manipula | Ortopedista | Fisioterapeuta, diariamente | Ortopedista, semanalmente |
 | Frequência e duração | Gessos por 26 a 49 semanas | Diário, cerca de 30 minutos por pé, por 2 meses; depois 3 vezes por semana | 1 a 3 minutos de manipulação, gesso a cada 5 a 7 dias, 5 ou 6 gessos |
-| Contenção | Gesso | Esparadrapo não elástico e tala | Gesso acima do joelho |
+| Contenção | Gesso | Esparadrapo não elástico na descrição original; hoje fita elástica (Elastoplast) e tala | Gesso acima do joelho |
 | Ordem | Aduto, varo, equino (um por vez) | Talonavicular, aduto, varo, equino | Cavo, aduto e varo juntos, equino |
 | Ponto de partida | Aduto do antepé | Redução talonavicular | Cavo, com fulcro na face lateral da cabeça do tálus |
 | Manutenção | | Tala noturna 2 a 3 anos | Órtese de abdução 2 a 4 anos |
@@ -314,8 +314,8 @@ Quase toda a melhora ocorre nos **3 primeiros meses**; bons resultados em quase 
 O fulcro é o detalhe que separa o PONSETI dos demais: o Tachdjian avisa que a correção do varo é atrapalhada se a contrapressão for aplicada na coluna lateral ou na calcaneocuboide, em vez da cabeça do tálus (p. 716).
 
 !questoes central=pediatria-1059
-conceito: O método francês usa manipulações diárias de cerca de 30 minutos por pé, feitas por fisioterapeuta, com estímulo dos fibulares e esparadrapo para manter a posição, sem gesso.
-como: O ENARE de Cirurgia da Mão 2022 pediu a afirmação correta sobre o método francês.
+conceito: O método francês usa manipulações diárias de cerca de 30 minutos por pé, feitas por fisioterapeuta, com estímulo dos fibulares e enfaixamento para manter a posição (fita elástica Elastoplast na técnica atual), sem gesso.
+como: O ENARE 2022, na prova de pré-requisito para Cirurgia da Mão, pediu a afirmação correta sobre o método francês.
 armadilha: Atribuir ao método francês as trocas semanais de gesso do PONSETI ou o fulcro na cabeça do tálus, ou trocar as sessões diárias por semanais.
 !fim
 
@@ -337,7 +337,7 @@ Por que o equino é o último? Porque o calcâneo só sai do equino depois de sa
 
 Esta é a questão mais repetida do tema. O **primeiro objetivo é corrigir o cavo**, **supinando o antepé em relação ao retropé** e **elevando o primeiro metatarso** (Tachdjian p. 715). A manobra parece contraditória, porque aumenta a aparência de inversão do pé inteiro, e o livro destaca que ela é o oposto de outros métodos, que corrigiam o cavo **pronando** o primeiro metatarso. Na primeira sessão, o antepé é supinado e abduzido ao mesmo tempo, e **o cavo quase sempre se corrige com o primeiro gesso**.
 
-O raciocínio é geométrico: o cavo existe porque o antepé está desalinhado do retropé, com o primeiro raio abaixado; supinar o antepé o traz para o mesmo plano do calcanhar, e os metatarsos ficam colineares, prontos para servir de alavanca na abdução (Tachdjian p. 716). O Campbell descreve o primeiro gesso exatamente assim: **alinhar o antepé com o retropé, supinando o antepé e elevando (dorsifletindo) o primeiro metatarso** (p. 1051).
+O raciocínio é geométrico: o cavo existe porque o antepé está desalinhado do retropé, com o primeiro raio abaixado; supinar o antepé o traz para o mesmo plano do calcanhar, e os metatarsos ficam colineares, prontos para servir de alavanca na abdução (Tachdjian p. 716). O Campbell descreve o primeiro gesso exatamente assim: **alinhar o antepé com o retropé, supinando o antepé e elevando (dorsifletindo) o primeiro metatarso** (p. 1051). O Lovell and Winter (cap. 29, p. 1419) explica de onde vem o cavo: o pé inteiro está em supinação extrema, mas o **antepé está pronado em relação ao retropé**, e por isso o **primeiro metatarso fica mais fletido plantarmente que os laterais**; a primeira manipulação supina o antepé e dorsiflete o primeiro metatarso, o que estica a fáscia plantar e destrava a subtalar.
 
 ## Os gessos seguintes: aduto e varo juntos
 
