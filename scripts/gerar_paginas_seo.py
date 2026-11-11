@@ -750,10 +750,10 @@ def principal() -> int:
         gerados.append((slug, tema["nome"], len(publicaveis), len(dados["questoes"])))
 
     # Índice das páginas por assunto.
-    titulo = "Questões de ortopedia comentadas por assunto | Orto Questões"
+    titulo = "Questões de ortopedia comentadas por assunto, com gabarito | Orto Questões"
     resumo = (
-        "Questões de ortopedia e traumatologia por assunto: provas anteriores de TEOT, TARO e ENARE R4 "
-        "com gabarito da banca e conceito-chave, no Orto Questões (OrtoQuestões)."
+        "Questões de ortopedia e traumatologia separadas por assunto, do trauma à coluna: provas anteriores do TEOT, "
+        "do TARO e do ENARE R4, cada uma com o gabarito da banca e o conceito-chave, para ler sem conta."
     )
     lista_temas = {
         "@context": "https://schema.org",

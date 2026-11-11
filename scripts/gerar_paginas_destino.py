@@ -648,9 +648,9 @@ na tela, não são questões oficiais e não têm vínculo com as instituições
 
 def pagina_teot(d: dict) -> tuple[str, dict]:
     pasta = "teot"
-    titulo = "TEOT: como funciona e como se preparar com provas anteriores | Orto Questões"
-    descricao = ("TEOT, o título de especialista da SBOT: como a prova se organiza e como se preparar com provas anteriores "
-                 "comentadas, cronograma e simulados.")
+    titulo = "TEOT: o que é, provas anteriores com gabarito e como se preparar | Orto Questões"
+    descricao = ("O que é o TEOT, o título de especialista em ortopedia da SBOT, como a prova se organiza e as provas anteriores "
+                 "do TEOT com gabarito e comentário, ano a ano, para treinar no tempo.")
     teot = d["por_prova"].get("TEOT", Counter())
     anos_teot = sorted(a for a in teot if a)
     taro = d["por_prova"].get("TARO", Counter())
@@ -1010,9 +1010,9 @@ def pagina_curso_preparatorio(d: dict) -> tuple[str, dict]:
     honesta: o Orto Questões não é curso de aulas, e a página diz isso logo no
     começo. Nenhum curso é citado, comparado ou ranqueado (regra do dono)."""
     pasta = "curso-preparatorio-teot"
-    titulo = "Curso preparatório para o TEOT: como escolher e combinar | Orto Questões"
-    descricao = ("Curso preparatório para o TEOT: os tipos de preparação, o que perguntar antes de escolher e como combinar "
-                 "o curso com um banco de questões comentadas.")
+    titulo = "Curso preparatório para o TEOT: o que avaliar antes de escolher | Orto Questões"
+    descricao = ("Vai fazer curso preparatório para o TEOT? Os tipos de preparação, as perguntas que valem antes de pagar e como "
+                 "somar o curso às provas anteriores comentadas, sem gastar tempo em dobro.")
     teot = d["por_prova"].get("TEOT", Counter())
     taro = d["por_prova"].get("TARO", Counter())
     anos_teot = sorted(a for a in teot if a)
