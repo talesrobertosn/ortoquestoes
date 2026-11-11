@@ -71,7 +71,7 @@ A fratura da patela é cerca de **1% de todas as fraturas**; a incidência cresc
 
 **Lesões associadas.** BOSTRÖM encontrou **15%**; nas expostas, perto de **80%**. CATALANO relatou **44%** de fraturas ipsilaterais do membro inferior em expostas, contra cerca de 5% nas séries dos anos 1970. Pela direção da força no golpe direto, um estudo encontrou **lesão do ligamento cruzado posterior em 25%** das fraturas operadas. O trauma direto também pode deixar microfraturas subcondrais na ressonância sem fratura na radiografia.
 
-!questoes central=trauma-0297,trauma-0032 treino=trauma-1648
+!questoes central=trauma-0297,trauma-0032 relacionadas=trauma-0555 treino=trauma-1648
 conceito: A maioria das fraturas da patela tem componente transverso por tração; a vertical vem de golpe direto com o joelho parcialmente fletido e retináculo íntegro; o golpe direto de alta energia pede busca de lesão do quadril, do fêmur e dos ligamentos do joelho, com LCP em 25% das operadas.
 como: Uma prova sem ano pediu a afirmação certa sobre a fratura da patela (mecanismo mais comum indireto com traço transversal, contra fratura associada quase sempre, contração com joelho estendido e polo proximal sem lesão de partes moles). O TARO 2019 cobrou o mecanismo do traço vertical em par (trauma direto com joelho em flexão e mecanismo extensor íntegro).
 armadilha: Contração do quadríceps com o joelho estendido: a fratura indireta ocorre com o joelho fletido.

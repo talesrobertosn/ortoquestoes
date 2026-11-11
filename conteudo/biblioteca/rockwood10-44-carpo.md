@@ -612,7 +612,7 @@ A regra geral do capítulo: fratura **sem desvio** do corpo ou das tuberosidades
 
 A avulsão dorsal some na PA (sobreposta ao semilunar) e aparece no **perfil ou na oblíqua pronada**. Tratamento: **tala por 2 semanas** e alongamento ativo; dor persistente sugere lesão capsular ou lunopiramidal. A fratura do corpo com desarranjo do carpo vai para fixação; a avulsão volar é tratada como lesão lunopiramidal (6 semanas de imobilização).
 
-!questoes central=trauma-0210 treino=mao-1682
+!questoes central=trauma-0210 relacionadas=mao-2048 treino=mao-1682
 conceito: A fratura do piramidal é quase sempre uma avulsão cortical dorsal, benigna, tratada com tala curta.
 como: O TEOT 2021 pediu o mecanismo mais frequente (avulsão).
 armadilha: Impacção: existe (estiloide da ulna ou hamato contra o piramidal), mas é bem menos comum.
