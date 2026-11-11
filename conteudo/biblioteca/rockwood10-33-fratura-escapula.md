@@ -1,6 +1,6 @@
 ---
 id: rockwood10-33-fratura-escapula
-versao: 2
+versao: 3
 titulo: Fratura da escápula
 especialidade: trauma
 acesso: gratis
@@ -44,8 +44,8 @@ O anel é sustentado por **dois pilares** (struts). O **superior** é o **terço
 
 A função do anel, nas palavras de Goss, é manter uma relação estável entre a escápula, o membro superior e o esqueleto axial, permitindo o pouco movimento que existe na acromioclavicular e nos ligamentos coracoclaviculares. A regra que dele deriva é simples: **uma ruptura isolada do anel costuma ser estável**; **duas rupturas** (ou uma ruptura com fratura de um pilar) criam uma situação **potencialmente instável**, que pode levar a retardo de consolidação, pseudartrose ou consolidação viciosa.
 
-!figura 33-2
-Complexo suspensor superior do ombro, vista anterior da escápula direita: acrômio, acromioclavicular, clavícula, coracoide, ligamentos coracoacromial e coracoclavicular, colo e borda lateral da escápula.
+!figura 33-2 imagem=ombro-cotovelo/rwa10-33-2-w59.jpeg
+Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 33, Fig. 33-2, p. 1014. Complexo suspensor superior do ombro, vista anterior da escápula direita: acrômio, acromioclavicular, clavícula, coracoide, ligamentos coracoacromial e coracoclavicular, colo e borda lateral da escápula.
 !fim
 
 !questoes central=ombro-cotovelo-0401,trauma-0126 treino=trauma-1302
@@ -53,7 +53,7 @@ conceito: O anel de Goss é formado por glenoide, coracoide, ligamentos coracocl
 como: O TECOC pediu quais estruturas compõem o anel, com distratores que misturam peças de fora (ligamento coracoumeral, ligamento transverso do úmero, espinha da escápula). O TARO 2013 pediu qual combinação torna o anel instável: fratura do colo com lesão do ligamento acromioclavicular (duas rupturas).
 armadilha: Ligamento coracoumeral: aparece na figura do anel, mas liga o coracoide ao úmero e não faz parte do complexo.
 armadilha: Fratura do coracoide com lesão do trapezoide (TARO 2013): coracoide e ligamentos coracoclaviculares formam uma mesma unidade de Goss (a ligação clavícula, ligamentos coracoclaviculares e coracoide); não são dois pontos distantes do anel.
-alerta: No TARO 2013 (trauma-0126), o gabarito oficial foi colo da escápula com lesão do ligamento acromioclavicular, que segue Goss (a acromioclavicular é o segundo ponto do anel). O capítulo, ao descrever o colo cirúrgico, diz que o que decide a estabilidade são os ligamentos **coracoclavicular e coracoacromial** (numa passagem escreve "coracoclavicular e acromioclavicular"). Pelo raciocínio do autor, a ruptura do coracoclavicular (do qual o trapezoide faz parte) também pesaria; na prova, responda Goss.
+alerta: No TARO 2013 (trauma-0126), o gabarito oficial foi colo da escápula com lesão do ligamento acromioclavicular, que segue Goss (a acromioclavicular é o segundo ponto do anel). O capítulo, ao descrever o colo cirúrgico, diz que o que decide a estabilidade são os ligamentos **coracoclavicular e coracoacromial** (Figura 33-13, p. 1027, e WILLIAMS, p. 1043); na p. 1044, porém, escreve que a estabilidade do colo cirúrgico depende dos ligamentos "coracoclavicular e acromioclavicular". Pelo raciocínio do autor, a ruptura do coracoclavicular (do qual o trapezoide faz parte) também pesaria; na prova, responda Goss.
 !fim
 
 ## A história do ombro flutuante
@@ -105,6 +105,8 @@ O colo cirúrgico tem subtipos conforme os ligamentos presos ao coracoide, e é 
 - **Instável em rotação:** rompe o **coracoacromial**; a distância coracoacromial alarga, a coracoclavicular fica normal, e o ápice do coracoide gira para distal e medial pelos músculos presos a ele.
 - **Totalmente instável (ligamentar):** rompem **coracoclavicular e coracoacromial**; as duas distâncias aumentam, sobretudo a **coracoclavicular**, e o fragmento glenoidal gira e desvia para **distal e medial**, puxado pelos músculos presos ao coracoide.
 - **Totalmente instável (ósseo):** a **base do coracoide** se separa do colo, com os ligamentos íntegros; as distâncias ficam normais e, como no colo anatômico, o fragmento vai para **distal e em valgo**, porque os músculos do coracoide não o puxam mais.
+
+Os nomes dos ligamentos variam dentro do próprio capítulo. Na Figura 33-13 (p. 1027) e na discussão de WILLIAMS (p. 1043), os dois ligamentos do coracoide que decidem o colo cirúrgico são o **coracoclavicular** e o **coracoacromial**; na p. 1044, o texto diz que a estabilidade do colo cirúrgico depende da integridade dos ligamentos **coracoclavicular e acromioclavicular**. O TEOT 2023 usou essa segunda forma no enunciado.
 
 > Na prova: **colo anatômico, distal e valgo**. **Colo cirúrgico com ligamentos rotos, distal e medial**, com a distância coracoclavicular aumentada. **Transespinhal, varo**.
 
@@ -247,7 +249,7 @@ Classificação de Goss das fraturas da glenoide: Ia borda anterior, Ib borda po
 !fim
 
 !questoes central=trauma-1082,trauma-0963,trauma-0777 treino=trauma-1312
-conceito: Na Ideberg-Goss, o tipo I é a fratura da borda (Ia anterior, Ib posterior); o tipo III separa o terço superior da glenoide com o coracoide e sai pela borda superior; o II sai pela borda lateral; o IV cruza o corpo até a borda medial; o VI é cominuto.
+conceito: Na Ideberg-Goss, o tipo I é a fratura da borda (Ia anterior, Ib posterior); o tipo III separa a metade superior da glenoide com o coracoide (legenda da Figura 33-9, p. 1022) e sai pela borda superior; o II sai pela borda lateral; o IV cruza o corpo até a borda medial; o VI é cominuto.
 como: O TARO 2015 pediu o tipo da fratura do terço superior com o coracoide (III). Uma prova sem ano mostrou a imagem de uma fratura da borda anterior para classificar (Ia). O TECOC perguntou o tipo que resulta da cabeça batendo no centro da concavidade (gabarito IV).
 armadilha: Tipo II: também separa parte da glenoide, mas o fragmento é o inferior e o traço sai pela borda lateral.
 armadilha: Tipo IA ou IB no impacto central: as fraturas da borda vêm da luxação, quando a cabeça sai e arranca a borda.

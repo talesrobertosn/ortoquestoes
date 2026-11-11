@@ -1,6 +1,6 @@
 ---
 id: rockwood10-36-umero-proximal
-versao: 3
+versao: 4
 titulo: Fratura do úmero proximal
 especialidade: trauma
 acesso: gratis
@@ -155,13 +155,15 @@ Hertel estudou **100 fraturas intracapsulares** operadas e mediu se a cabeça sa
 
 A lógica é anatômica: os ramos posteromediais entram justamente ali. Se a cabeça leva um bom pedaço de calcar e a dobradiça medial está íntegra, o pedículo posteromedial tende a estar vivo.
 
+O Campbell's Operative Orthopaedics, 15ª ed. (cap. 62, p. 2775.e1, eFig. 62.1), dá o número que o Rockwood não dá: para HERTEL, a **dobradiça medial desviada mais de 2 mm** prediz isquemia, junto com a extensão metafisária menor que 8 mm, e também lembra que isso não se correlaciona diretamente com o risco de necrose. Na mesma página, ele lê a irrigação pela **AO/ASIF**: o tipo A, extra-articular, tem irrigação intacta; o B, lesão possível; o C, articular, alta probabilidade de osteonecrose. E acrescenta um critério de osso: a **espessura cortical somada** da diáfise (média das corticais medial e lateral em dois níveis) **menor que 4 mm** em geral contraindica a fixação interna, por falta de pega dos parafusos; nesse caso, tratamento sem cirurgia, hemiartroplastia ou reversa podem ser melhores. O HEBERT (cap. 45) lê HERTEL de outro modo (veja a seção da osteonecrose, adiante).
+
 > Na prova: **Hertel olha o calcar**. Extensão metafisária **curta (8 mm ou menos)** e **dobradiça medial rompida** predizem isquemia; mantidos os dois, a cabeça conserva a perfusão.
 
 O capítulo faz duas ressalvas. O acompanhamento dos mesmos autores mostrou **correlação ruim entre isquemia na cirurgia e necrose tardia**, provavelmente porque a cabeça **revasculariza**. E Crosby deu tetraciclina a 19 pacientes com fraturas de três e quatro partes antes da cirurgia: **todas** as cabeças retiradas tinham fluorescência, ou seja, ainda recebiam sangue.
 
 !questoes central=trauma-0973,trauma-0016,trauma-1101,trauma-0265 treino=ombro-cotovelo-0606,ombro-cotovelo-0607
 conceito: Para Hertel, extensão metafisária da cabeça de 8 mm ou menos, ruptura da dobradiça medial e traço no colo anatômico predizem isquemia da cabeça.
-como: Caiu quatro vezes (TARO 2020, TEOT 2022 e duas sem ano): pela definição do preditor (8 mm ou menos), pela combinação dos dois parâmetros e invertendo "maior" e "menor". No TARO 2020 as alternativas trazem desvio da dobradiça de 2 mm; o capítulo não dá esse número, só fala em dobradiça rompida. No TEOT 2022 o gabarito descreve o lado bom dos critérios (dobradiça mantida e extensão maior que 8 mm): a pergunta era quais parâmetros os critérios consideram.
+como: Caiu quatro vezes (TARO 2020, TEOT 2022 e duas sem ano): pela definição do preditor (8 mm ou menos), pela combinação dos dois parâmetros e invertendo "maior" e "menor". No TARO 2020 as alternativas trazem desvio da dobradiça de 2 mm; o capítulo não dá esse número, só fala em dobradiça rompida, mas o Campbell 15 (cap. 62, p. 2775.e1) dá: desvio maior que 2 mm. No TEOT 2022 o gabarito descreve o lado bom dos critérios (dobradiça mantida e extensão maior que 8 mm): a pergunta era quais parâmetros os critérios consideram.
 armadilha: Cabeça partida (head-split): entra na classificação LEGO, mas não foi um dos preditores independentes.
 armadilha: Extensão metafisária maior que 8 mm: é o fator protetor.
 alerta: Na prova de Ortopedia sem ano (trauma-0265), a alternativa "impactadas em valgo" foi considerada errada e o gabarito foi a ruptura da dobradiça medial. O capítulo concorda que a dobradiça é o preditor de Hertel, mas os dados dos próprios autores mostram necrose **mais frequente** no padrão em valgo do que no varo posteromedial ou no colo cirúrgico (veja abaixo). Na prova, responda Hertel.
@@ -171,7 +173,7 @@ alerta: Na prova de Ortopedia sem ano (trauma-0265), a alternativa "impactadas e
 
 A necrose é mais provável nos padrões que **isolam a cabeça**: fraturas-luxações complexas e as que soltam a cabeça dos dois tubérculos. Também pode vir da **cirurgia** (manipulação excessiva e desperiostização) e de fatores do paciente (comorbidades, remédios, cigarro, álcool, desnutrição). Ela não aparece sempre, mesmo em cabeças sem nenhuma irrigação. O tempo até a cirurgia parece pesar na fratura-luxação, mas não na fixação das fraturas sem luxação.
 
-O dado que mais contraria o ensino clássico é o do **valgo**. Jakob descreveu melhor prognóstico das impactadas em valgo entre as quatro partes, e é isso que as provas antigas cobram. Mas, na série Mayo/FJD, a necrose foi **mais comum no valgo** do que no varo posteromedial ou no colo cirúrgico: mais de **10%** sem cirurgia e, depois de placa bloqueada, **12% contra 2%** nos padrões colo cirúrgico e varo (**seis vezes mais**). No algoritmo, os autores avisam que **10% a 15%** dos valgos podem ter necrose global.
+O dado que mais contraria o ensino clássico é o do **valgo**. Jakob descreveu melhor prognóstico das impactadas em valgo entre as quatro partes, e é isso que as provas antigas cobram. O HEBERT (cap. 45) dá os números dessa leitura: nas quatro partes, a necrose varia de **21% a 75%**; na impactada em valgo de JAKOB, a cápsula inferomedial e as artérias posteromediais ficam preservadas e a necrose cai para cerca de **8% a 26%**. Mas, na série Mayo/FJD, a necrose foi **mais comum no valgo** do que no varo posteromedial ou no colo cirúrgico: mais de **10%** sem cirurgia e, depois de placa bloqueada, **12% contra 2%** nos padrões colo cirúrgico e varo (**seis vezes mais**). No algoritmo, os autores avisam que **10% a 15%** dos valgos podem ter necrose global.
 
 A apresentação típica é **dor, rigidez e perda de função depois de um período bom**. A radiografia vai da esclerose em placas ao colapso total. O diferencial é a artrose pós-traumática (colapso menor) e a infecção (puncionar se houver suspeita).
 
@@ -534,7 +536,7 @@ Para boa parte das fraturas desviadas, foi difícil provar que operar é melhor,
 
 !questoes relacionadas=trauma-1177 treino=trauma-1227
 conceito: O ProFHER e a Cochrane não mostraram vantagem da cirurgia nas fraturas desviadas do colo cirúrgico estudadas, mas excluíram justamente os padrões mais graves.
-como: O TARO 2006 (certo ou errado, sem gabarito oficial registrado no acervo) afirmou que a quatro partes vai melhor com redução aberta e fixação; o capítulo não sustenta isso (Fjalestad não achou diferença, e muitas quatro partes vão para prótese).
+como: O TARO 2006 (certo ou errado, sem gabarito oficial registrado no acervo) afirmou que a quatro partes vai melhor com redução aberta e fixação; o capítulo não sustenta isso (Fjalestad não achou diferença, e muitas quatro partes vão para prótese). O HEBERT (cap. 45) dá argumento ao outro lado: nas quatro partes, chama a placa bloqueada de ângulo fixo de "opção de escolha", embora aponte muitas complicações.
 !fim
 
 ## As indicações, padrão por padrão

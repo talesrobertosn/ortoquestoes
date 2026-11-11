@@ -3863,7 +3863,7 @@
       "mayfield-e-a-luxacao-perilunar-69ef1e7a",
       "mayfield-e-a-luxacao-perilunar-7a90dc33"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "cc811d94f9dc4140c4322e8890f22b14f7261a880b07003d5aed6df2137024df"
     }
    ],
@@ -3906,7 +3906,7 @@
       "dissociacao-escafossemilunar-7503c999",
       "dissociacao-escafossemilunar-2e41c596"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "b0cb736c2be44623c0445b3ef9acb8dc4b6f7b3f194d61a1439ec697eed833ea"
     }
    ],
@@ -4782,7 +4782,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
     }
    ],
@@ -5754,7 +5754,7 @@
       "mayfield-e-a-luxacao-perilunar-fdfdb76a",
       "dissociacao-escafossemilunar-4b14cd81"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "cce17099b6a404cc74c0cf642fec3df9f14f1eee1462150ca3f00de8150c5224"
     }
    ],
@@ -6899,7 +6899,7 @@
       "dissociacao-escafossemilunar-8935e6ce",
       "dissociacao-escafossemilunar-65f85568"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "b65b7c28b82fd3be6f22eff0d28ccbfe2f01dcba18589744877bbc3d891b9d70"
     }
    ],
@@ -10968,7 +10968,7 @@
       "dissociacao-escafossemilunar-b886eabc",
       "dissociacao-escafossemilunar-719be38b"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "d2bff24427d36ffbf2ba319926b88eefd86911833fb489fee03a72c1c47c958d"
     }
    ],
@@ -12435,56 +12435,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Escafoide: classificação de Herbert e Fisher; Mayfield e a luxação perilunar; Dissociação escafossemilunar; Artrose do colapso: SNAC e SLAC."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-29",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "wilkins9-08-radio-ulna-distal-crianca",
-     "titulo": "Fraturas do rádio e da ulna distais na criança",
-     "livro": "Rockwood and Wilkins' Fractures in Children",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 9 · Fractures of the Distal Radius and Ulna",
-     "secoes": [
-      "A ginasta: lesão fisária por estresse"
-     ],
-     "blocos": [
-      "a-ginasta-lesao-fisaria-por-estresse-decda032"
-     ],
-     "sha256": "a6b6d8f15496f271f1b0f7529eabab3beef9ecd0df97959c3ec802e905b0c873",
-     "trechosSha256": "8a270d5802f1580167c48ea00a482cde29ba9fb44a817610ceaec980db8b3e56"
-    },
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: anatomia, irrigação e mecanismo",
-      "Escafoide: classificação de Herbert e Fisher",
-      "Mayfield e a luxação perilunar",
-      "Dissociação escafossemilunar",
-      "Artrose do colapso: SNAC e SLAC"
-     ],
-     "blocos": [
-      "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
-      "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
-      "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
-      "escafoide-classificacao-de-herbert-e-fisher-62750cf0",
-      "mayfield-e-a-luxacao-perilunar-fdfdb76a",
-      "dissociacao-escafossemilunar-67e58eaf",
-      "dissociacao-escafossemilunar-1f9a739d",
-      "artrose-do-colapso-snac-e-slac-a82703f6"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "8ce740bf3882b59b60ab866a473b4a784df0db67ff317a154f3214e187ad5de5"
-    }
-   ],
-   "questaoSha256": "bc14eb1457d100a394e205fcc7f5b7c0a3e1b2f559536253089fd8938cd3a687",
-   "comentarioSha256": "64c4a76f408075e4ef249bca5521ccd5120a22b49d41b392a35fba343d04de06"
-  }
+  "geradoEm": "2026-10-29"
  },
  "mao-0743": {
   "conceito": "**A posição intrínseca plus mantém as MCF em 70° a 90° de flexão.** As articulações metacarpofalângicas (MCF) unem os metacarpos às falanges proximais. Seus colaterais se originam dorsalmente na cabeça metacarpal, cuja forma faz com que fiquem mais tensionados em flexão. Essa relação anatômica explica a posição de proteção durante a imobilização.\n\nSe a MCF permanece estendida por longo período, o sistema colateral pode encurtar e dificultar a flexão depois da retirada da tala. Em 70° a 90°, o ligamento é mantido alongado. Nas interfalângicas a proteção usual é diferente: extensão para reduzir o risco de contratura da placa volar. Não se deve escolher um mesmo ângulo para todas as articulações do dedo.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, associa essa posição a punho em cerca de 30° de extensão e imobilização apenas das articulações necessárias. O objetivo não é manter a mão fechada indefinidamente: é proteger o tecido lesionado e permitir mobilização assim que a estabilidade da fratura autoriza.\n\n**Leia “Tratamento sem cirurgia”**, na seção dos metacarpos do resumo “Fraturas e luxações da mão”, para relacionar posição e prevenção de rigidez.",
@@ -13124,7 +13075,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "abaec9fe61dd3e9fada7765d5dc9347441199cb5171772b5f57abf488d8f823b"
     }
    ],
@@ -13167,7 +13118,7 @@
       "dissociacao-escafossemilunar-7503c999",
       "dissociacao-escafossemilunar-2e41c596"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "ef5783173ee18504e6f3485ff008c3497b54bcd517a36fd73974bb49ca0fd5af"
     }
    ],
@@ -15678,7 +15629,7 @@
       "escafoide-tratamento-da-fratura-aguda-ace416a4",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "a118b10e67ebec88343698f7a36234c5f2fb55f9b04dd39bc19b7a97e0db1a4f"
     }
    ],
@@ -15698,36 +15649,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: consolidação viciosa e pseudartrose"
-     ],
-     "blocos": [
-      "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-8b0f9bfb",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-c0273553",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-478ad42b",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "1feb3937fac7e4e68f07e28ceed21365f36c5760952ae03fecb28c9131f243ba"
-    }
-   ],
-   "questaoSha256": "c142328f8ac8c1ffbd2750f9f16c11a99d01ed472898d908f32a5de9733d2b65",
-   "comentarioSha256": "2c88c2eb5e47d3cfa241c7d3c9626005cef0b701ae5f52cfb7ab71333da57721"
-  }
+  "geradoEm": "2026-10-26"
  },
  "mao-0919": {
   "conceito": "**O complexo da fibrocartilagem triangular (CFCT).** Estabiliza a radioulnar distal e transmite carga do carpo para a ulna. Inclui o disco articular, os ligamentos radioulnares dorsal e palmar (com inserções superficiais no estiloide da ulna e profundas na fóvea), o menisco homólogo, a bainha do extensor ulnar do carpo e os ligamentos ulnocárpicos. A periferia é vascularizada e pode cicatrizar; o centro é avascular.\n\n**Classificação de Palmer para lesões traumáticas (classe 1).** A letra indica onde o complexo se rompeu.\n\n| Tipo | Local | Tratamento habitual |\n|---|---|---|\n| 1A | Perfuração central do disco | Desbridamento |\n| 1B | Avulsão ulnar, com ou sem fratura do estiloide | Reparo periférico ou foveal |\n| 1C | Avulsão distal, dos ligamentos ulnocárpicos | Reparo |\n| 1D | Avulsão radial, da incisura sigmoide | Desbridamento ou reinserção |\n\nUm truque para lembrar: a sequência A, B, C, D percorre o complexo do centro para a ulna, depois para o carpo e por fim para o rádio.\n\n**O que é especial na 1B.** É a avulsão da inserção ulnar. Ela pode ser apenas superficial, na região do estiloide, ou envolver a inserção foveal dos ligamentos radioulnares, que é a principal estabilizadora da radioulnar distal. Atzei e Luchetti refinaram essa distinção: lesões foveais causam instabilidade e precisam de reinserção na fóvea, geralmente com âncora ou túnel ósseo, enquanto lesões apenas periféricas podem ser suturadas à cápsula.\n\n**Como suspeitar.** Dor no lado ulnar do punho, sinal da fóvea positivo (dor à palpação entre o estiloide da ulna e o flexor ulnar do carpo) e instabilidade da radioulnar distal na gaveta, comparada ao outro lado. Pode acompanhar fraturas do rádio distal, sobretudo com fratura da base do estiloide da ulna.\n\n> Palmer 1B = avulsão ulnar. Pense: B de borda ulnar, onde ficam o estiloide e a fóvea.",
@@ -17143,7 +17065,7 @@
       "escafoide-classificacao-de-herbert-e-fisher-d0ae7a5a",
       "mayfield-e-a-luxacao-perilunar-a286746f"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "84c71440840a0e8c116edc90c904a36c63af3f1c4bc31f5937cfd2f8f9abd408"
     }
    ],
@@ -17208,7 +17130,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
     }
    ],
@@ -17890,7 +17812,7 @@
       "escafoide-anatomia-irrigacao-e-mecanismo-52d9acbe",
       "fraturas-dos-outros-ossos-do-carpo-fe223feb"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "1aad68064a9ca66198c7cdabdd392b3435b0bc443fa9994020e5f7fd02ea53f6"
     }
    ],
@@ -17910,38 +17832,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Padrões de instabilidade: DISI, VISI e o que é dissociativo; Dissociação lunopiramidal; Escafoide: consolidação viciosa e pseudartrose; Dissociação escafossemilunar."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Padrões de instabilidade: DISI, VISI e o que é dissociativo",
-      "Dissociação lunopiramidal",
-      "Escafoide: consolidação viciosa e pseudartrose",
-      "Dissociação escafossemilunar"
-     ],
-     "blocos": [
-      "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
-      "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9",
-      "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
-      "dissociacao-lunopiramidal-5eb7978d",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
-      "dissociacao-escafossemilunar-1f9a739d"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "95fcf4730bcca4aaae8498d9b8b8c99d46cca3e50b4f249279ff22351dcb076a"
-    }
-   ],
-   "questaoSha256": "51b671deaba5cae91e6b7a0ae2ddc2f5c3f2e770db18ca8c5b412b85e4f90525",
-   "comentarioSha256": "aec881da1bb91cc5ef38fb6ade683f58ed3efd23faf2afee6e6795f41489c65c"
-  }
+  "geradoEm": "2026-10-26"
  },
  "mao-1037": {
   "conceito": "A descrição ligamentar mais específica do estágio III de Mayfield é a **ruptura lunopiramidal**. A energia inicia no lado escafossemilunar, desloca o capitato para dorsal no II e depois rompe o elo ulnar entre semilunar e piramidal no III.\n\nO resultado habitual desse terceiro estágio é a luxação mediocárpica, com o semilunar permanecendo na fossa radial e o carpo deslocado à sua volta. No IV, rompe a contenção radiocárpica dorsal e o próprio semilunar gira para palmar.\n\nIsso cria uma ressalva nesta questão: a opção que diz apenas luxação perilunar também descreve o padrão resultante do III. A resposta oficial privilegia o ligamento característico, mas não há fundamento para ensinar que a expressão genérica luxação perilunar seja incompatível com o estágio. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Mayfield e a luxação perilunar.",
@@ -17977,7 +17868,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
     }
    ],
@@ -18018,7 +17909,7 @@
       "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "778f5a7318ef264a1ab7899104f3065395f4aabab62a7afc5da43e2030189ffb"
     }
    ],
@@ -18291,7 +18182,7 @@
       "o-exame-rotacao-nervos-e-lesoes-associadas-447f5f27",
       "limites-de-angulacao-e-remodelacao-cd21842f"
      ],
-     "sha256": "2073045640e51d506d19c75a9636c3a5d093df00f202f4d89487e18e69dfee1a",
+     "sha256": "49a5c292be57ee5daa93733d3c926b6c50aeab7aa81f2705f642fd43d8a9e0d3",
      "trechosSha256": "91d67a1864b0527bc34abea982317bc1f0b65428c44108a565abe9d5399f1ac8"
     }
    ],
@@ -18769,7 +18660,7 @@
       "mayfield-e-a-luxacao-perilunar-9979fb84",
       "fraturas-dos-outros-ossos-do-carpo-bc810ef4"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "98c3c1d08aa10fe198cde752e4961d21408a9cd731f603349792e7cc43711894"
     }
    ],
@@ -20923,7 +20814,7 @@
       "mayfield-e-a-luxacao-perilunar-a286746f",
       "mayfield-e-a-luxacao-perilunar-9979fb84"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "aa4dc37d5b97c083028bc0d01e86a26ed52272b9ff207485bb377d1d4031ccea"
     }
    ],
@@ -21242,7 +21133,7 @@
       "dissociacao-escafossemilunar-f6a7a76b",
       "dissociacao-escafossemilunar-fcaf9e16"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "31ac04afbc0af347365cebae18deeefa887c7e8b3137a32b95062261cd485c80"
     }
    ],
@@ -23105,7 +22996,7 @@
       "escafoide-tratamento-da-fratura-aguda-056fbc49",
       "escafoide-tratamento-da-fratura-aguda-594f812e"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "b34d52a9bad7f16b9d664a14439637b7253787f233970836e9c23165f1670655"
     }
    ],
@@ -25149,34 +25040,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: classificação de Herbert e Fisher; Escafoide: consolidação viciosa e pseudartrose."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: classificação de Herbert e Fisher",
-      "Escafoide: consolidação viciosa e pseudartrose"
-     ],
-     "blocos": [
-      "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
-      "escafoide-classificacao-de-herbert-e-fisher-15c87e8c",
-      "escafoide-classificacao-de-herbert-e-fisher-d0ae7a5a",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "fd395b109ea1469c58a37ba975f69e2bba7baa1e972f49b67c7f8b203581a62f"
-    }
-   ],
-   "questaoSha256": "aa296e0124842750d05ab89826b4ddd346a369572c84626cc6f45c2fb97d8097",
-   "comentarioSha256": "e98ec0d5a56525e0acf0e1a4d7cac34c66591eda5c2471bb373d75deb06cd270"
-  }
+  "geradoEm": "2026-10-26"
  },
  "mao-1435": {
   "conceito": "A amputação da ponta do dedo é a amputação mais comum do membro superior (Green's Operative Hand Surgery, 7ª ed., cap. 49, p. 1709), e escolher o retalho certo depende de uma pergunta geométrica simples: **para que lado o corte está inclinado?** O V-Y de ATASOY é a resposta para um tipo de ângulo e a contraindicação para o oposto.\n\n**Primeiro, nem todo caso precisa de retalho.** O Green repete que a grande maioria das amputações de ponta se trata melhor por **segunda intenção**: perdas de até cerca de 1,5 cm reepitelizam em 3 a 4 semanas com sensibilidade melhor que a das reconstruções (cap. 49, p. 1710; cap. 44, p. 1548). O retalho entra quando há osso exposto e o comprimento importa.\n\n**Como o ATASOY funciona.** Descrito por ATASOY e KLEINERT em 1970, é um **triângulo de pele volar** com a base na borda da amputação e o ápice na **prega da IFD**. A pele é cortada só na derme, os nervos e vasos ficam intactos no subcutâneo, e os **septos fibrosos** que prendem a polpa ao osso são divididos para que o triângulo deslize para a ponta; o avanço chega a cerca de 1 cm, e os lados devem medir ao menos 1,5 vez o avanço (Green, cap. 49, p. 1712 a 1713). O Campbell's Operative Orthopaedics, 15ª ed. (cap. 21, p. 753), dá a largura da base: igual à da borda cortada da unha.\n\n**A geometria decide.** O retalho avança a pele que **sobrou na polpa**. Se o corte é **transverso** ou **oblíquo dorsal**, isto é, levou mais do dorso e da unha e preservou a polpa, há pele palmar de sobra para avançar sobre o osso. Se o corte é **oblíquo volar**, a polpa é exatamente o que se perdeu, e não há o que avançar. Por isso o Green dá a indicação e a contraindicação no mesmo parágrafo: indicado em amputações **dorsais oblíquas ou transversas** distais ao meio da unha; **contraindicado** na amputação oblíqua com mais perda palmar que dorsal e na grande perda cutânea (cap. 49, p. 1712). O capítulo 44 desenha o mesmo raciocínio: perda mais palmar pede cross-finger ou tenar; perda igual ou maior no dorso, V-Y (p. 1548 a 1549).\n\n**O que esperar.** Os problemas, segundo o Green, vêm quase sempre da **mobilização insuficiente** (cap. 44, p. 1548). Os resultados sensitivos são irregulares: FRANDSEN encontrou hipoestesia ou disestesia em 7 de 10 (cap. 49, p. 1713).\n\n| Tipo de perda na ponta | Escolha (Green, caps. 44 e 49) |\n|---|---|\n| só pele, até 1,5 cm | segunda intenção |\n| transversa ou oblíqua dorsal com osso exposto | V-Y de ATASOY |\n| polpa comprometida, pele lateral íntegra | V-Y de KUTLER |\n| oblíqua volar, médio ou anular | ilha da artéria digital |\n| volar extensa com osso e tendão | cross-finger |\n\n> **Na prova:** ATASOY avança a polpa que sobrou; se a polpa foi o que se perdeu, não serve.\n\nA ponta do dedo está na seção \"A ponta do dedo: cicatrização, ATASOY e KUTLER\" do resumo.",
@@ -25834,35 +25698,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: consolidação viciosa e pseudartrose"
-     ],
-     "blocos": [
-      "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-700a724b",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-7dd29aa9",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-95053c39",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "e5a841ff2fb38a6fcfa799cb393846e47573a4f272b9654c30213b558021387f"
-    }
-   ],
-   "questaoSha256": "80f200e4851b0303cb4a6aadfbe2eb9502314f812e1e57bcbeb85419f18eb6b6",
-   "comentarioSha256": "d8e40218038eb4b24e948ca69b6c12becdc4f9f12cf83f6722d9d9ba24441916"
-  }
+  "geradoEm": "2026-10-27"
  },
  "mao-1472": {
   "conceito": "Esta questão mistura epidemiologia com três cirurgias históricas do ombro, cada uma com um detalhe trocado. A afirmação verdadeira é a de epidemiologia, e as outras caem por erros de músculo ou de local.\n\n**Quem tem paralisia obstétrica.** O mecanismo é o estiramento do plexo no parto: na apresentação cefálica, o ombro preso sob a sínfise e a tração lateral do pescoço rompem o tronco superior, e é por isso que a **distocia de ombro** é o fator de maior risco (Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 404; Green's Operative Hand Surgery, 7ª ed., cap. 40, p. 1392). O **bebê grande** está na lista dos três livros: o Tachdjian lembra que, acima de cerca de 3500 g, os ombros passam a ser maiores que a cabeça (p. 404). Entram também diabetes materno, parto anterior com paralisia, segundo período prolongado, parto assistido e apresentação pélvica.\n\n**E a cesárea?** Ela protege muito, mas não zera o risco. O Green (p. 1392) diz que a cesárea **reduz a lesão cerca de 100 vezes**, sem garantir sua ausência; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 36, p. 1310), dá a queda de 0,2% para 0,02%; o Tachdjian chama os casos de raros. A frase \"pode ocorrer no parto cesariana\" está, portanto, certa.\n\n**As cirurgias do ombro.** Todas tentam corrigir o mesmo problema, a contratura em rotação interna com perda da rotação externa (Green, p. 1408):\n\n| Cirurgia | O que o livro descreve |\n|---|---|\n| SEVER-L'EPISCOPO (GREEN) | alonga peitoral maior e subescapular; transfere grande dorsal e **redondo maior** para a face lateral do úmero (Campbell, pp. 1315 e 1316) |\n| L'EPISCOPO original | redondo maior, depois redondo maior e grande dorsal (Green, pp. 1411 e 1412) |\n| CARLIOZ | liberação do subescapular **na origem**, na escápula (Tachdjian, p. 409) |\n| GILBERT, BROCKMAN e CARLIOZ | alongar o subescapular se a RE passiva não volta aos 6 a 12 meses (Green, p. 1413) |\n\n**A pegadinha.** O redondo menor é rotador externo, inervado pelo axilar; transferi-lo para dar rotação externa não teria sentido. O músculo transferido, junto com o grande dorsal, é o redondo maior. As cirurgias estão na seção \"A displasia glenoumeral de WATERS e as cirurgias do ombro\" do resumo, e os fatores de risco, em \"Paralisia obstétrica: quem tem e por quê\".",
@@ -26777,7 +26613,7 @@
       "dissociacao-escafossemilunar-65f85568",
       "dissociacao-escafossemilunar-fcaf9e16"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "240ea575399c26ced3e095569f85b4013e88129c03423ceebd855638c6dec25a"
     }
    ],
@@ -27020,7 +26856,7 @@
       "escafoide-tratamento-da-fratura-aguda-594f812e",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "5d545bb0e9c16ca8c7fb79201fb0bd78cda96bf342204ea995abe2c487a4975e"
     }
    ],
@@ -29347,35 +29183,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Escafoide: tratamento da fratura aguda."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: anatomia, irrigação e mecanismo",
-      "Escafoide: tratamento da fratura aguda"
-     ],
-     "blocos": [
-      "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd",
-      "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
-      "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
-      "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
-      "escafoide-tratamento-da-fratura-aguda-056fbc49"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "8c5b52e4a6273493d6d020bf1d1f014ec3a6a82e2e908f5cbfcbacf45a36e526"
-    }
-   ],
-   "questaoSha256": "01df92afccb3ead9c167e6c4c990f46e2fb3463e3235d73fcbe9754ad9be7882",
-   "comentarioSha256": "0a4ee9edd6b2aa63ca5ec142caeba6b5c35f2b76b70906299d66f5e4ab348168"
-  }
+  "geradoEm": "2026-10-26"
  },
  "mao-1670": {
   "conceito": "Os ligamentos escafossemilunar e lunopiramidal unem os ossos da fileira proximal, mas suas partes mais resistentes ficam em lados **opostos**: dorsal no escafossemilunar e palmar no lunopiramidal. Decorar apenas dorsal para todo ligamento interósseo leva à inversão cobrada aqui.\n\nO escafossemilunar tem forma de C. Sua parte dorsal é espessa e forte, a palmar participa da contenção rotacional e a membrana proximal é mais fina e fraca. Já o resumo destaca que a parte palmar do lunopiramidal é a mais grossa e forte e se entrelaça com ligamentos palmares vizinhos.\n\nA diferença é útil para compreender falhas e reparos, mas não transforma a lesão de uma única porção em deformidade estática obrigatória. A fonte relaciona o desalinhamento fixo também à perda dos estabilizadores secundários. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de dissociação escafossemilunar e lunopiramidal.",
@@ -29410,7 +29218,7 @@
       "dissociacao-escafossemilunar-1f9a739d",
       "dissociacao-lunopiramidal-5eb7978d"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "ae40254d0d73acbe9fd91e1be65e28e82f47dc0bc10160062d264a234dc685e1"
     }
    ],
@@ -29449,7 +29257,7 @@
       "dissociacao-escafossemilunar-cade5531",
       "dissociacao-lunopiramidal-86b34ab3"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "38511cb3392bcef530e32d2b446c8b7b384660e8d66fcb6012bc727ddbdf429d"
     }
    ],
@@ -29490,7 +29298,7 @@
       "escafoide-diagnostico-e-imagem-a2e36c9b",
       "escafoide-diagnostico-e-imagem-54713833"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "e3f74078e70ea0efdd2b832c976f6536bca7d620a90c9b4bacfdc6a1d482fd82"
     }
    ],
@@ -29530,7 +29338,7 @@
       "escafoide-diagnostico-e-imagem-7fab1799",
       "escafoide-diagnostico-e-imagem-456f44f5"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "86d0002879ab426b22d397db33c3d582e6ef88543060f3cc317416758776cc68"
     }
    ],
@@ -29569,7 +29377,7 @@
       "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
       "mayfield-e-a-luxacao-perilunar-a286746f"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "e2322b1c28413c4ae1fc0d953ca38a3fc1a03eb089f8cf7609fea097b8f299ba"
     }
    ],
@@ -29610,7 +29418,7 @@
       "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
       "escafoide-consolidacao-viciosa-e-pseudartrose-95053c39"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "9a35852eb431a7f42699c900a915a295bb1e2c6fdef301da4eec7b37fe94660e"
     }
    ],
@@ -29644,31 +29452,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: consolidação viciosa e pseudartrose"
-     ],
-     "blocos": [
-      "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-bdd7562e"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "3c7adfc6bb40046da1df21286f6efae53a0527a6b188780c5ab64b8952840f90"
-    }
-   ],
-   "questaoSha256": "638cc38f17498228ad48e943adf0de7e943843d2f95ab4357205079eb5960a5d",
-   "comentarioSha256": "4f5994694875fb368bfe0a24a9c134ebfecffef30db6972f0e56937072ef9bc6"
-  }
+  "geradoEm": "2026-10-27"
  },
  "mao-1678": {
   "conceito": "Matti-Russe é uma técnica clássica de enxertia da pseudartrose do escafoide por **via volar**, com enxerto **não vascularizado**. A descrição envolve preparar um leito através da cortical volar dos fragmentos e acomodar o enxerto, distinguindo-a de transferências que levam um pedículo vascular.\n\nA escolha da técnica também depende do problema mecânico. O resumo ressalta que a técnica clássica é limitada para recuperar comprimento quando a cortical volar está encurtada; serve quando não há encurtamento importante a corrigir. Deformidade em humpback pode exigir uma cunha estrutural, como na estratégia de Fisk-Fernandez.\n\nAssim, tipo de enxerto, acesso e objetivo de correção precisam ser considerados separadamente. Via volar não significa enxerto vascularizado, e enxerto não vascularizado não define sozinho por onde ele será inserido em qualquer operação. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: consolidação viciosa e pseudartrose.",
@@ -29682,33 +29466,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: consolidação viciosa e pseudartrose"
-     ],
-     "blocos": [
-      "escafoide-consolidacao-viciosa-e-pseudartrose-8b0f9bfb",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-c0273553",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "8a9532aa9532deff94732265e90b262725eeb2b862501b97aaca03dc63541f0e"
-    }
-   ],
-   "questaoSha256": "ca54989f03fa915f05569880b388d8eba08a08944de374cac152679e609ce645",
-   "comentarioSha256": "7b19c871ce0fb97cb9075e1c16a1818bf00c260d286653d0046f7a5818c98cad"
-  }
+  "geradoEm": "2026-10-26"
  },
  "mao-1679": {
   "conceito": "Na pseudartrose do escafoide, saber se o polo proximal está vivo é uma pergunta diferente de saber se o osso está torto ou se o traço permanece aberto. O critério intraoperatório de referência descrito é a **ausência de sangramento puntiforme no polo proximal depois de soltar o garrote**.\n\nA liberação do garrote é parte essencial da interpretação: enquanto a circulação está deliberadamente bloqueada, a ausência de sangramento não responde à mesma pergunta sobre viabilidade. O achado precisa ser observado no contexto cirúrgico adequado, e não inferido automaticamente de uma deformidade radiográfica.\n\nA imagem ajuda a estudar o foco, mas tem limitações para a biologia. O resumo informa que a esclerose na tomografia é muito específica, porém pouco sensível para necrose; portanto, nem toda necrose será reconhecida por esse sinal. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Escafoide: consolidação viciosa e pseudartrose.",
@@ -29722,34 +29480,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose; Padrões de instabilidade: DISI, VISI e o que é dissociativo."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-26",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: consolidação viciosa e pseudartrose",
-      "Padrões de instabilidade: DISI, VISI e o que é dissociativo"
-     ],
-     "blocos": [
-      "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-db28ea7d",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
-      "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "aead05c4fb12889b09445416a1b617018a8556ee0d293e1e729913100fffdab9"
-    }
-   ],
-   "questaoSha256": "b03a764a9e3a8a8dbebc0ecdfa1e25f3541e356967a7ea727aaff6bf8d68831b",
-   "comentarioSha256": "e6417813efd392dee3a636fe17eef13fe6a7570c46e59b692eb5390a87fa8bb1"
-  }
+  "geradoEm": "2026-10-26"
  },
  "mao-1680": {
   "conceito": "No SNAC, o colapso avançado da pseudartrose do escafoide, a artrose começa na relação do fragmento distal fletido com a estiloide radial e progride para outras interfaces. A articulação **radiolunar** permanece relativamente poupada na descrição do resumo.\n\nEssa preservação ajuda a compreender os procedimentos de salvamento: o cirurgião procura uma interface ainda aproveitável para transmitir movimento e carga depois de retirar ou fundir regiões comprometidas. A capitossemilunar, por outro lado, pode se desgastar no estágio III, alterando a indicação da carpectomia proximal convencional.\n\nHá uma segunda preservação relativa que não deve ser confundida com toda a radioescafoide: no SNAC, o fragmento proximal do escafoide pode manter uma articulação relativamente poupada com o rádio, enquanto o fragmento distal está em conflito com a estiloide. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seções de pseudartrose e Artrose do colapso: SNAC e SLAC.",
@@ -29785,7 +29516,7 @@
       "artrose-do-colapso-snac-e-slac-75ec5c30",
       "escafoide-consolidacao-viciosa-e-pseudartrose-2d0f6a61"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "5a1e1b5a47d25e1b48d450b964e66f153d95cbf2e9326196c38b5c0f96fa0eba"
     }
    ],
@@ -29824,7 +29555,7 @@
       "fraturas-dos-outros-ossos-do-carpo-0d61d01c",
       "fraturas-dos-outros-ossos-do-carpo-5577eb4e"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "f814c17372b34af4fa3e2e4cc7bff2fd3553ad7d7272682980c9f66db14b30fd"
     },
     {
@@ -29880,7 +29611,7 @@
       "fraturas-dos-outros-ossos-do-carpo-6df6cfc4",
       "fraturas-dos-outros-ossos-do-carpo-a57392eb"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "030c9f5ad9b91d2ce2686757bdb7811cd279357291ce2e183471763514e3fb61"
     }
    ],
@@ -29922,7 +29653,7 @@
       "fraturas-dos-outros-ossos-do-carpo-6df6cfc4",
       "escafoide-anatomia-irrigacao-e-mecanismo-02f7a0bf"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "e28d1858c15234530be12ea5c722b58a3874f209988d2196d994419e64be05f5"
     }
    ],
@@ -29966,7 +29697,7 @@
       "dissociacao-escafossemilunar-67e58eaf",
       "escafoide-anatomia-irrigacao-e-mecanismo-485298b2"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "7652b102f3873ead07377849d34ed6145b00919764ba34ee15bf170aebc885c2"
     }
    ],
@@ -30006,7 +29737,7 @@
       "dissociacao-escafossemilunar-b886eabc",
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-64863bdb"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "86a99400a1bee51c2370ff7c1c068eafb13a6bea92ad49993c9db8bf783597da"
     }
    ],
@@ -30046,7 +29777,7 @@
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-850d5bab",
       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "a8744da3315fd8e8d91e7c985f848006447ad40a5604e86275427b804876693f"
     }
    ],
@@ -30085,7 +29816,7 @@
       "dissociacao-escafossemilunar-8935e6ce",
       "dissociacao-escafossemilunar-6cbb5bca"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "5d926a47260cd6b4dea90e5f885cd5621c554b75463e5c46299c8d865286fce8"
     }
    ],
@@ -30126,7 +29857,7 @@
       "artrose-do-colapso-snac-e-slac-cbb1d7e8",
       "mayfield-e-a-luxacao-perilunar-7a90dc33"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "cd4e900f329b49d26ad4a027c73ff42e3550122e7bd32a2e9c1479765b331e96"
     }
    ],
@@ -30166,7 +29897,7 @@
       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "7e3590295536f6507593afee264077f1360585b4b1b80dd8ac1d06387a66f44c"
     }
    ],
@@ -30208,7 +29939,7 @@
       "mayfield-e-a-luxacao-perilunar-61bf80f6",
       "mayfield-e-a-luxacao-perilunar-05a279d4"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "d10dd572966f949845c624dcbaa125a14351353a1bff1e78a395b0d1ba02e5eb"
     }
    ],
@@ -30247,7 +29978,7 @@
       "mayfield-e-a-luxacao-perilunar-a286746f",
       "mayfield-e-a-luxacao-perilunar-9979fb84"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "eb77d2e6a025f3e1e0121a2b7b0154e44a503f5064277d97a9fe9edbf1ea03f1"
     }
    ],
@@ -30287,7 +30018,7 @@
       "mayfield-e-a-luxacao-perilunar-05a279d4",
       "mayfield-e-a-luxacao-perilunar-dae12b7d"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "df992b6debee64d7a67ac959fab5da1fef0b5312ea9ff140c3df0f483650569c"
     }
    ],
@@ -30326,7 +30057,7 @@
       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "d397fbc74a9cae170d94e35ad0ad3bbd000f4adafc1ad7206c53312b8067c2b8"
     }
    ],
@@ -32183,36 +31914,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: consolidação viciosa e pseudartrose."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: consolidação viciosa e pseudartrose"
-     ],
-     "blocos": [
-      "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-700a724b",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-7dd29aa9",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-95053c39",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
-      "escafoide-consolidacao-viciosa-e-pseudartrose-734985f3"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "9e62da65424ff8ec6147eef60a332b89cb3072cf48d31e918fed898e092d38ca"
-    }
-   ],
-   "questaoSha256": "749645090a31cf9acd8c63e3a653b8064d76af88324955ac0b96af9452737c4f",
-   "comentarioSha256": "90c0a1a215014fc1fe344a9354a8849749b8f0eaecf10084a8aa4568eeaf2d6f"
-  }
+  "geradoEm": "2026-10-27"
  },
  "mao-1783": {
   "conceito": "O ligamento irreparável e a cartilagem normal já afastam dois extremos: não há tecido adequado para um reparo direto e não se está descrevendo um punho com artrose estabelecida. Falta saber se o **desalinhamento pode ser reduzido**. Essa é a fronteira que a pergunta procura no algoritmo de Garcia-Elias (Rockwood adultos, 10ª ed., cap. 44, dissociação escafossemilunar).\n\nO exame não deve parar na existência de uma diástase ou de um escafoide fletido. Uma deformidade **redutível** ainda pode ser colocada em posição e mantida por uma reconstrução tendínea, como a tenodese de três ligamentos. Uma deformidade **fixa** não se corrige apenas oferecendo um novo ligamento: é preciso considerar procedimentos de salvamento, entre eles artrodeses limitadas.\n\nNa tabela de tratamento de seis estágios apresentada pelo resumo, o **IV** é irreparável, desalinhado, redutível e sem artrose; o **V** é desalinhado e irredutível, ainda sem artrose. O estágio **III**, por sua vez, tem ligamento irreparável, mas conserva o alinhamento. Assim, “irreparável” e “irredutível” respondem a perguntas diferentes: qualidade do tecido e mobilidade da deformidade.\n\nHá uma cautela de nomenclatura: o próprio resumo também descreve uma tabela de sete estágios, que acrescenta um passo de translação ulnar e desloca a numeração das fases finais. A resposta deve acompanhar a tabela de tratamento usada no enunciado. A decisão mecânica entre reconstruir uma deformidade redutível e tratar uma deformidade fixa permanece a mesma.\n\n**Por que esta questão foi criada.** Inspirada na questão 62 do SIMÃO 2026, que cobrou o critério que separa a tenodese da artrodese intercarpal no algoritmo de Garcia-Elias.",
@@ -32248,7 +31950,7 @@
       "dissociacao-escafossemilunar-dea04ab1",
       "dissociacao-escafossemilunar-8935e6ce"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "bc916e182511cf7f9a9dfccda4354c8a2197530d4a479f6c51b5c35c20ff1d1a"
     }
    ],
@@ -32324,7 +32026,7 @@
       "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
       "mayfield-e-a-luxacao-perilunar-05a279d4"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "cc1cb1b276f0c62b8bc92806a521288e55900f3af00631f6b46c6064229c31d6"
     }
    ],
@@ -35363,7 +35065,7 @@
       "dissociacao-escafossemilunar-79d4b223",
       "dissociacao-escafossemilunar-8935e6ce"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "6bb5a5cfe68c38ae4800c1f96644fb7b10e407c26fb9f7bb2deb98119d549e94"
     }
    ],
@@ -35432,7 +35134,7 @@
       "dissociacao-escafossemilunar-1f9a739d",
       "dissociacao-escafossemilunar-65f85568"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "cee886fecf07c48dc444dd75d9daf68aec3649683626f4feb62d5396d065c162"
     }
    ],
@@ -36734,7 +36436,7 @@
       "artrose-do-colapso-snac-e-slac-118d45f0",
       "mayfield-e-a-luxacao-perilunar-7a90dc33"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "6c03118b48e7f3e4560c313d164a5e34ba7a780774f70cd680b75cb74ef98395"
     }
    ],
@@ -36926,7 +36628,7 @@
       "escafoide-diagnostico-e-imagem-2c167e09",
       "escafoide-diagnostico-e-imagem-c1f614fc"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "ae56c93b2af8c822d3838dcc42c4ae90465077605a8a8a160bf2087ed7ae6111"
     }
    ],
@@ -36965,7 +36667,7 @@
       "escafoide-anatomia-irrigacao-e-mecanismo-9df32e5e",
       "escafoide-tratamento-da-fratura-aguda-9cdac99f"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "07573bebd2f769b069206e17640b30208edfea24af60cea1bf2443a250772465"
     }
    ],
@@ -39316,7 +39018,7 @@
      "blocos": [
       "dissociacao-escafossemilunar-cade5531"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "7c814dcd494183078877c9d1a1b68f99afc3a2a5c65eaf28bd7fc8d02665c152"
     }
    ],
@@ -39481,7 +39183,7 @@
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
       "dissociacao-lunopiramidal-5eb7978d"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "948a5256e1637f964cbac95ff9525dbcd3712251ff12c8f262a00c8ce87d2619"
     }
    ],
@@ -39522,7 +39224,7 @@
       "dissociacao-escafossemilunar-6cbb5bca",
       "dissociacao-escafossemilunar-dea04ab1"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "a2b143a796890c13175c9ac63a5d1d0fc97c4ebae1128b5847de91a959bf73a5"
     }
    ],
@@ -39605,7 +39307,7 @@
       "dissociacao-escafossemilunar-67e58eaf",
       "dissociacao-escafossemilunar-2039b898"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "207181b9f4d2aad23e21247e82dd301ecb6698c26767e56442602a994fc5ee2a"
     }
    ],
@@ -39766,7 +39468,7 @@
       "escafoide-tratamento-da-fratura-aguda-dcc89a77",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "62d3f9d7115e3a740a63b4aac362b6f5167436bd58ea01b525052e853f6e54a6"
     }
    ],
@@ -40836,7 +40538,7 @@
       "dissociacao-escafossemilunar-8935e6ce",
       "dissociacao-escafossemilunar-f6a7a76b"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "4f0c9b850768ad9e4e96cbc7aa40f4ba7b6ce774e1fd4c9e40f7591ff80e2413"
     }
    ],
@@ -40896,7 +40598,7 @@
       "luxacao-radiocarpica-ffe770be",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "d38ea0ee63f8aaac421d8bcd57c59b80a695b328d951b3200ab4d567dbad5dfd"
     }
    ],
@@ -40933,7 +40635,7 @@
      "blocos": [
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-22ed1a15"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "50c9ddfbefd13f5a96025789b9ac721158bce58919ab0b90e06fd2e7d5a6386a"
     }
    ],
@@ -41367,7 +41069,7 @@
       "escafoide-tratamento-da-fratura-aguda-ace416a4",
       "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "c4c0b5b655f3e4400cf5ee0ee6e997cf5d0b7fd05de5824d67e7e5135cf7243c"
     }
    ],
@@ -42918,37 +42620,7 @@
    "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Escafoide: anatomia, irrigação e mecanismo; Anatomia ligamentar e cinemática do carpo; Escafoide: tratamento da fratura aguda."
   ],
   "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-44-carpo",
-     "titulo": "Fraturas e luxações do carpo",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 44 · Carpal Fractures and Dislocations",
-     "secoes": [
-      "Escafoide: anatomia, irrigação e mecanismo",
-      "Anatomia ligamentar e cinemática do carpo",
-      "Escafoide: tratamento da fratura aguda"
-     ],
-     "blocos": [
-      "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd",
-      "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
-      "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
-      "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
-      "anatomia-ligamentar-e-cinematica-do-carpo-09fa55ed",
-      "escafoide-tratamento-da-fratura-aguda-056fbc49"
-     ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
-     "trechosSha256": "b8881c1017121568a4428ca8c3b891254a69a1549f75724ceeb43af6909cd9b3"
-    }
-   ],
-   "questaoSha256": "4fcc5c8e7f4f60a6281fed3a4111f4a52906891bb51a28224c9642a05cb07068",
-   "comentarioSha256": "8e023304261f23a51307c4594e65e68a9deb39171ce69229299f51d37c3d641c"
-  }
+  "geradoEm": "2026-10-27"
  },
  "mao-2419": {
   "conceito": "A polidactilia central é a duplicação de um dedo do meio da mão (indicador, médio ou anelar). Ela costuma vir escondida dentro de uma sindactilia, e é isso que a torna difícil.\n\n**A classificação** (Green, cap. 36, p. 1389):\n- **Tipo I:** dedo residual só de partes moles.\n- **Tipo II:** estruturas osteoarticulares incompletas. **É o tipo mais frequente**, e se divide em IIA (sem sindactilia) e IIB (sinpolidactilia, com sindactilia).\n- **Tipo III:** dedo completo, com metacarpo próprio e todos os tecidos moles.\n\n**A genética.** A forma familiar está ligada a mutações do gene HOXD13, e muitas vezes o dedo envolvido e o vizinho estão unidos. (Green, cap. 36, p. 1388 e 1389).\n\n**Por que esta questão foi criada.** Inspirada na questão 51 do SIMÃO 2022, que perguntou o tipo mais frequente da polidactilia central na classificação de STELLING e TUREK.\n\n> **Na prova:** STELLING e TUREK: I = só PARTES MOLES; II = osso INCOMPLETO (o MAIS COMUM; IIB = sinpolidactilia); III = dedo COMPLETO com metacarpo.",
@@ -43671,7 +43343,7 @@
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9",
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "a7b5ff87c2c99ee9e050bd41f591321cc5215cf1075a3a69caad4403316fd9e6"
     }
    ],
@@ -43910,7 +43582,7 @@
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "5aba5b978fa4ba27accc594205b16deadc78707e581c3be6d4721d805c0c2a5d"
     }
    ],
@@ -44046,7 +43718,7 @@
      "blocos": [
       "dissociacao-escafossemilunar-1aa45ccb"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "3fc462fbfe0eeed235343bcb77e05da79dec952da3adafe774c58bed158d93b9"
     }
    ],
@@ -44693,7 +44365,7 @@
       "escafoide-tratamento-da-fratura-aguda-28d72402",
       "escafoide-classificacao-de-herbert-e-fisher-8972bd5a"
      ],
-     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
+     "sha256": "eab1b7bd03a69b956e6051bb81d5abeb9e29f50d86cbc4f3ef2edb794bf5a955",
      "trechosSha256": "dea57355cd7cadc48ab893f358b1afe7011009d19b22a2a8001bc29d1082d3a3"
     }
    ],
