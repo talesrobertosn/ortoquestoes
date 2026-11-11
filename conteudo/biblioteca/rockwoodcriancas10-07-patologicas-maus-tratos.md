@@ -1,6 +1,6 @@
 ---
 id: rockwoodcriancas10-07-patologicas-maus-tratos
-versao: 2
+versao: 3
 titulo: Fraturas patológicas e maus-tratos na criança
 especialidade: pediatria
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Wilkins' Fractures in Children
 edicao: 10ª edição (2025)
 capitulo: Capítulo 7 · Pathologic Fractures and Nonaccidental Injuries
 autores: Alexandre Arkader e Karim Masrouha
-fonte: Livro conferido localmente em 27/10/2026, capítulo 7. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela. Ampliado em 01/11/2026 com o cap. 7 relido, o Tachdjian's Pediatric Orthopaedics, 6ª ed., e o Campbell's Operative Orthopaedics, 15ª ed., cap. 38.
+fonte: Livro conferido localmente em 27/10/2026, capítulo 7. O PDF não traz numeração impressa; as referências citam capítulo, seção, figura e tabela. Ampliado em 01/11/2026 com o cap. 7 relido, o Tachdjian's Pediatric Orthopaedics, 6ª ed., e o Campbell's Operative Orthopaedics, 15ª ed., cap. 38. Em 12/11/2026, Rockwood and Wilkins cap. 29 e Tachdjian cap. 27 (Tabela 27.1).
 subtemas: Maus-tratos
 resumo: Cisto ósseo simples e aneurismático, fibroma não ossificante, displasia fibrosa, osteogênese imperfeita, escorbuto e fraturas nas doenças neuromusculares; nos maus-tratos, KLEINMAN (metafisária clássica, costela posterior, escápula, processo espinhoso, esterno), inventário esquelético abaixo de 2 anos repetido em 2 semanas, equimoses, queimaduras, fêmur e conduta.
 ---
@@ -85,11 +85,13 @@ Ortopedistas atendem 30% a 50% dos maltratados; criança devolvida sem diagnóst
 
 A **lesão metafisária clássica** (canto ou alça de balde), fratura pela esponjosa primária logo acima da zona de calcificação provisória, por sacudidas ou tração, é quase patognomônica, mas não a mais comum (15% a 32%). **Costelas**: valor preditivo de 95% abaixo de 3 anos, posteriores entre T4 e T9, pela alavanca sobre o processo transverso. Na série de KING, 60% das fraturas ficaram em proporções parecidas entre úmero, fêmur e tíbia; em AKBARNIA, as costelas foram duas vezes mais frequentes que qualquer osso longo. **Fêmur**: 42% de abuso no lactente que não anda, 2,6% no que anda; **transversa** em 71% das diafisárias dos maltratados.
 
+Não confunda a fratura mais comum da criança em geral com a mais comum do abuso. Somando cinco grandes estudos epidemiológicos, o Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 27, p. 1130, Tabela 27.1), mostra que o **antebraço distal** é a fratura mais comum da infância, com quase **25%** de 12.946 fraturas, seguido da clavícula, com mais de 8%; na mesma página, fratura abaixo de 18 meses é rara e deve levantar a suspeita de trauma não acidental. Nos maltratados, o osso longo que se destaca é outro: o Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 29, diáfise da tíbia e da fíbula), diz que a **tíbia** está entre os ossos longos mais fraturados no abuso, presente em cerca de **11% a 26%** das crianças abusadas com lesão de osso longo.
+
 !questoes central=pediatria-0066,pediatria-0097,pediatria-0160,pediatria-0173,pediatria-0362,pediatria-0383 relacionadas=pediatria-0422,pediatria-0478,pediatria-0146,pediatria-0327 treino=pediatria-1204,pediatria-1206,pediatria-1207,pediatria-1209
 conceito: Alta especificidade de KLEINMAN: metafisária clássica, costela posterior, escápula, processo espinhoso e esterno; partes moles são o achado mais comum.
 como: TARO 2015 perguntou a fratura de extremidade mais sugestiva (canto); SBOT-SP e TEOT 2022, a escápula; TARO 2009, escápula, esterno e metafisárias; TEOT 2023, o processo espinhoso; TEPOP 2024, costela posterior, escápula e canto; TARO 2025, metafisárias em alça de balde e costelas posteriores.
 armadilha: Marcar clavícula, diáfise ou corpo vertebral como de alta especificidade, ou "epifisária" no lugar de "metafisária".
-alerta: O TARO 2011 (`pediatria-0422`) tem gabarito "antebraço" como fratura mais comum abaixo de 2 anos nos maltratados; o capítulo cita úmero, fêmur e tíbia em proporções parecidas (KING) ou costelas e úmero (AKBARNIA), não o antebraço.
+alerta: O TARO 2011 (`pediatria-0422`) tem gabarito "antebraço" como fratura mais comum abaixo de 2 anos nos maltratados. O antebraço distal é a fratura mais comum da criança em geral (Tachdjian, cap. 27, p. 1130, Tabela 27.1), não a do abuso: o capítulo 7 do Rockwood and Wilkins cita úmero, fêmur e tíbia em proporções parecidas (KING) ou costelas e úmero (AKBARNIA), e o capítulo 29 dá a tíbia em 11% a 26% das crianças abusadas com lesão de osso longo.
 !fim
 
 # Inventário esquelético e conduta {radar=oportunidade}

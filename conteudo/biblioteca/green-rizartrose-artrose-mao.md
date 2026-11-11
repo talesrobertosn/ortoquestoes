@@ -1,6 +1,6 @@
 ---
 id: green-rizartrose-artrose-mao
-versao: 1
+versao: 2
 titulo: Rizartrose e artrose da mão
 especialidade: mao
 acesso: gratis
@@ -478,6 +478,8 @@ A indicação principal da **artrodese da IFP** é a **artrose primária ou pós
 
 Os **ângulos** são o assunto preferido das bancas. O Green (p. 350, Fig. 11.6) posiciona a IFP do **indicador em 30 graus** e cada dedo seguinte com cerca de **10 graus a mais**: indicador 30, médio 40, anelar 50 e mínimo 60 graus no método do autor. Como a precisão de 10 graus raramente é alcançável, ele aceita na prática **30 a 40 graus para indicador e médio** e **50 a 60 graus para anelar e mínimo**. A lógica é a da cascata da preensão: os dedos ulnares precisam fechar mais para envolver um cabo, enquanto o indicador trabalha em pinça com o polegar e precisa ficar mais aberto.
 
+**O desenho não bate com o texto.** A Fig. 11.6 do Green (p. 350), que ilustra a flexão progressiva, marca a IFP em **40 graus no indicador, 45 no médio, 50 no anelar e 55 no mínimo**, a MCF em **25, 30, 35 e 40 graus** e a IFD em **0 a 5 graus no indicador e 5 graus nos outros**. Ou seja, o indicador tem 40 graus na figura e 30 no texto, e o Campbell (p. 3468) fica ainda mais baixo, com 25. Quando a questão cita a figura, valem os números do desenho; quando cita o texto ou o método do autor, a sequência 30, 40, 50 e 60.
+
 No método do autor, **os ligamentos colaterais são liberados** (mais flexão, correção de contratura), o ângulo é dado no corte da falange proximal e a fixação preferida é a **banda de tensão**, em que a flexão ativa comprime o foco (p. 350 e 352); parafuso sem cabeça e placa (perda óssea) são opções, todas com movimento imediato. As complicações incluem pseudartrose, consolidação viciosa, material saliente, fratura, infecção e SDRC.
 
 O Campbell (p. 3468 e 3469) dá valores menores (IFP de **25 graus no indicador a quase 40 no mínimo**; MCF dos dedos **20 a 30 graus**) e também libera os colaterais. O princípio é o mesmo: **menos flexão nos dedos radiais, mais nos ulnares**.
@@ -485,12 +487,12 @@ O Campbell (p. 3468 e 3469) dá valores menores (IFP de **25 graus no indicador 
 !tabela Ângulos de artrodese dos dedos (Green, cap. 11, p. 347, 350 e 352; Campbell 15, cap. 78, p. 3468, 3469 e 3487)
 | Articulação | Green | Campbell |
 |---|---|---|
-| IFD | Extensão completa a leve flexão (preferida extensão completa) | 0 a 20 graus |
-| IFP indicador | 30 graus (prática: 30 a 40) | 25 graus |
-| IFP médio | 40 graus (prática: 30 a 40) | Intermediário |
-| IFP anelar | 50 graus (prática: 50 a 60) | Intermediário |
-| IFP mínimo | 60 graus (prática: 50 a 60) | Quase 40 graus (técnica até 45) |
-| MCF dos dedos | Artrodese não recomendada na OA | 20 a 30 graus |
+| IFD | Extensão completa a leve flexão (preferida extensão completa); Fig. 11.6: 0 a 5 no indicador, 5 nos outros | 0 a 20 graus |
+| IFP indicador | 30 graus (prática: 30 a 40); Fig. 11.6: 40 | 25 graus |
+| IFP médio | 40 graus (prática: 30 a 40); Fig. 11.6: 45 | Intermediário |
+| IFP anelar | 50 graus (prática: 50 a 60); Fig. 11.6: 50 | Intermediário |
+| IFP mínimo | 60 graus (prática: 50 a 60); Fig. 11.6: 55 | Quase 40 graus (técnica até 45) |
+| MCF dos dedos | Artrodese não recomendada na OA; Fig. 11.6: 25 no indicador a 40 no mínimo | 20 a 30 graus |
 | MCF do polegar | 20 graus | 15 graus com pronação |
 | IF do polegar | Não detalhado | 0 a 15 graus |
 !fim
@@ -517,10 +519,10 @@ armadilha: Achar que o trabalhador que precisa de pinça forte no indicador é c
 !fim
 
 !questoes treino=mao-2329,mao-2205
-conceito: A Fig. 11.6 do Green mostra a flexão progressiva das artrodeses do radial para o ulnar; no texto, a IFP vai de 30 graus no indicador a 60 no mínimo, a IFD fica perto da extensão e o Campbell dá a MCF dos dedos em 20 a 30 graus.
+conceito: A Fig. 11.6 do Green mostra a flexão progressiva das artrodeses do radial para o ulnar: MCF de 25 a 40 graus, IFP de 40 a 55 graus e IFD de 0 a 5 graus, do indicador ao mínimo; no texto, a IFP vai de 30 graus no indicador a 60 no mínimo, e o Campbell dá a MCF dos dedos em 20 a 30 graus.
 como: O SIMÃO 2024 pediu os ângulos do anelar (MCF, IFP e IFD); a SBCM 2023, os do dedo mínimo.
 armadilha: Usar o mesmo ângulo em todos os dedos ou trocar a sequência; a flexão cresce em direção ao mínimo em cada nível.
-alerta: Os valores da MCF por dedo da Fig. 11.6 não aparecem no texto do Green e o resumo não reproduz figuras. No texto, a IFP do anelar é 50 graus (coincide com `mao-2329`), mas a do mínimo é 60 graus no método do autor (50 a 60 na prática), enquanto `mao-2205` dá 55. Os gabaritos oficiais foram mantidos.
+alerta: As duas questões pedem os números da Fig. 11.6 do Green (p. 350), conferida: anelar com MCF 35, IFP 50 e IFD 5 (`mao-2329`) e mínimo com MCF 40, IFP 55 e IFD 5 (`mao-2205`), como nos gabaritos. O texto do mesmo livro dá 60 graus à IFP do mínimo no método do autor (50 a 60 na prática).
 !fim
 
 # Artroplastia das interfalângicas e da MCF {radar=clinico}

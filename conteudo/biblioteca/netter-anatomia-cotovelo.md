@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-cotovelo
-versao: 2
+versao: 3
 titulo: Anatomia do cotovelo
 especialidade: ombro-cotovelo
 acesso: gratis
@@ -343,6 +343,13 @@ A pergunta de toda via é a mesma: entre que músculos eu entro, que nervos iner
 **KOCHER (lateral).** Para a maioria das cirurgias da **cabeça do rádio** e do **côndilo lateral**. O plano é entre o **ancôneo (radial)** e o **EUC (interósseo posterior)**, um plano internervoso verdadeiro. Riscos: **NIP e radial**. Proteção, nas palavras do Netter: ficar **acima do ligamento anular** e manter o antebraço em **pronação**. O ramo distal dessa via é a **posterolateral à cabeça e ao colo do rádio** (técnica 1.116, p. 119): segundo o Campbell, a melhor para ressecar a cabeça, porque é extensível, preserva o nervo do ancôneo e é mais segura do que separar o EUC do extensor dos dedos ou este dos radiais, planos que ameaçam o NIP; STRACHAN e ELLIS recomendaram **pronação total**, que afasta o nervo do campo.
 
 **KAPLAN e os outros laterais.** A Tabela 1.1 do Campbell lista **KOCHER entre EUC e ancôneo**, CADENAT entre ERCC e ERLC, **KAPLAN entre ERCC e EUC** (como está impresso) e KEY-CONWELL entre braquiorradial e ERLC. Na via global, o mesmo capítulo usa o intervalo de KAPLAN como o espaço **entre o extensor dos dedos e os radiais**, seguido até o NIP na arcada de FROHSE. O que vale para a prova: o KAPLAN é **mais anterior** que o KOCHER e chega mais perto do NIP, por isso exige pronação.
+
+!questoes relacionadas=ombro-cotovelo-0175
+conceito: Na Tabela 1.1 do Campbell 15 (cap. 1, p. 110), a via lateral de KAPLAN passa entre o extensor radial curto do carpo e o extensor ulnar do carpo; KOCHER fica entre o EUC e o ancôneo, CADENAT entre ERCC e ERLC e KEY-CONWELL entre braquiorradial e ERLC.
+como: O TARO 2023 perguntou entre que músculos se faz a via lateral de KAPLAN, oferecendo os intervalos de KOCHER (EUC e ancôneo), de KEY-CONWELL (ERLC e braquiorradial) e de CADENAT (ERCC e ERLC) como distratores.
+armadilha: Marcar EUC e ancôneo, que é o KOCHER, o intervalo lateral mais conhecido; o KAPLAN é mais anterior.
+alerta: O gabarito oficial (B, EUC e ERCC) segue a Tabela 1.1 como impressa. Em outro ponto o mesmo livro descreve o KAPLAN entre o extensor comum dos dedos e o ERLC (Campbell 15, p. 2802), e a via global o usa entre o extensor dos dedos e os radiais.
+!fim
 
 **Lateral para o côndilo** (técnica 1.111, pp. 113 a 115). Ótima para a fratura do côndilo lateral, porque a origem extensora fica presa ao fragmento. Desenvolve-se o intervalo entre o **tríceps** atrás e o **braquiorradial e ERLC** à frente; na parte proximal, cuidado com o **radial** entre o braquial e o braquiorradial; distalmente, proteger o ramo profundo onde entra no supinador.
 

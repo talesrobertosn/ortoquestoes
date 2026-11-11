@@ -1,6 +1,6 @@
 ---
 id: campbell15-paget
-versao: 1
+versao: 2
 titulo: Doença de PAGET
 especialidade: tumores
 acesso: gratis
@@ -411,6 +411,15 @@ O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 4), diz que a cirurgi
 ## O sangramento
 
 A frase do Campbell é a que a prova usa: **nos períodos de doença ativa, o sangramento intraoperatório pode ser maciço** (cap. 27, p. 945). No capítulo da artroplastia, o mesmo livro recomenda **bisfosfonato e calcitonina no pré-operatório** para **controlar a dor e diminuir a perda sanguínea do osso hipervascular**, e, com a doença ativa, **calcitonina antes e depois da cirurgia** para reduzir a atividade osteoclástica e talvez o risco de **soltura** por reabsorção pós-operatória (cap. 4, p. 261). O Rockwood é mais cético: o bisfosfonato pré-operatório é dado **na esperança** de reduzir o sangramento, mas esse efeito **nunca foi estudado formalmente** (p. 100). É uma divergência real entre os livros: o Campbell recomenda, o Rockwood registra que falta prova.
+
+Qual fase sangra mais? O Campbell liga o sangramento à **doença ativa**, sem nomear a fase (cap. 27, p. 945). A ponte vem do The Adult Hip (CALLAGHAN), 3ª ed.: **no início da doença as lesões são líticas**, e a imagem tardia é a de córtex espesso e trabéculas grosseiras (cap. 23, p. 365); na forma **ativa** predomina a reabsorção, e a forma **latente** é mais esclerótica e menos ativa (cap. 39, p. 556). Somando com a **vascularização aumentada** do osso pagético (Rockwood, cap. 4, p. 97), a fase de maior risco de sangramento é a **lítica**; a blástica (esclerótica) é a fase do osso duro, que pede broca de alta rotação (Campbell, cap. 4, p. 262), e não a do osso que sangra.
+
+!questoes relacionadas=osteometabolicas-0084
+conceito: Nos períodos de doença ativa o sangramento intraoperatório do osso pagético pode ser maciço (Campbell, cap. 27, p. 945); a doença ativa e mais vascular é a da fase lítica, inicial.
+como: O TARO 2009 perguntou em que fase o sangramento intraoperatório é mais significativo, com pré-clínica, lítica, mista e blástica como alternativas.
+armadilha: Marcar blástica por associar osso denso e alargado a mais vasos; o osso esclerótico é a fase tardia e relativamente menos ativa, e "pré-clínica" não é fase descrita nos livros.
+alerta: Sem gabarito oficial; a resposta provável (B) é a da bibliografia. O Campbell 15 não nomeia a fase; a equivalência entre doença ativa e fase lítica vem do The Adult Hip (cap. 23, p. 365, e cap. 39, p. 556).
+!fim
 
 ## Fraturas
 

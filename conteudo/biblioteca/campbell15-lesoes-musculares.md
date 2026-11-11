@@ -1,6 +1,6 @@
 ---
 id: campbell15-lesoes-musculares
-versao: 1
+versao: 2
 titulo: Lesões musculares
 especialidade: conceitos-basicos
 acesso: gratis
@@ -466,6 +466,15 @@ Quando muito músculo morre, a mioglobina vai para o sangue e ameaça o rim. O C
 ## A síndrome compartimental crônica do esforço
 
 A síndrome compartimental crônica do esforço é uma **isquemia reversível** causada por um compartimento osteofascial **não complacente**, que não acomoda o aumento de volume do músculo durante o exercício (p. 2249). É mais comum em **corredores recreativos jovens, atletas de elite e recrutas militares**. Os compartimentos **anterior e lateral** são os mais afetados, os sintomas são **bilaterais em cerca de 75%** e o atraso típico no diagnóstico é de **dois anos**.
+
+Atenção à divergência dentro do próprio Campbell. Na introdução do capítulo, a forma crônica de esforço aparece como recorrência do aumento de pressão **mais frequente no compartimento anterior ou no posterior profundo** da perna, os mesmos que o livro aponta como os mais atingidos na forma aguda por serem os menos complacentes (cap. 53, p. 2242); na seção própria da síndrome crônica, os mais afetados passam a ser o **anterior e o lateral** (p. 2249). O compartimento **anterior** está nas duas frases; a diferença é o segundo, posterior profundo na p. 2242 e lateral na p. 2249. A mesma p. 2249 mostra por que o par anterior e lateral costuma ser liberado junto: a fasciotomia isolada do anterior tem sucesso de 80% a 90%, enquanto a do posterior profundo e a combinada anterior e lateral ficam em 50% a 70%.
+
+!questoes relacionadas=trauma-0872
+conceito: O Campbell 15 dá o anterior e o lateral como os compartimentos mais afetados na síndrome compartimental crônica do esforço (cap. 53, p. 2249), mas o anterior e o posterior profundo como os menos complacentes e mais atingidos na forma aguda e, na introdução, também na crônica (p. 2242).
+como: O TARO 2011 perguntou quais compartimentos da perna são os mais frequentemente acometidos na síndrome compartimental, com os pares anterior e lateral, anterior e posterior profundo, posterior superficial e lateral, e os dois posteriores.
+armadilha: Marcar anterior e posterior profundo, par que o próprio Campbell usa na p. 2242; o gabarito ficou com anterior e lateral, o par da p. 2249. Os pares sem o anterior estão errados nas duas versões.
+alerta: Divergência no Campbell 15 (cap. 53): p. 2242, anterior ou posterior profundo; p. 2249, anterior e lateral. Gabarito oficial (A, anterior e lateral) mantido.
+!fim
 
 Contribuem para a pressão o aumento de volume do músculo no esforço (até **20%** do tamanho em repouso), a dinâmica da marcha (aterrissagem com retropé, hiperpronação), a hipertrofia e o uso de **esteroides anabolizantes e creatina** (p. 2249). Uma **hérnia fascial** aparece em **15% a 40%** dos pacientes (p. 2242).
 

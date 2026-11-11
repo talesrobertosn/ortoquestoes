@@ -1,6 +1,6 @@
 ---
 id: green8-malformacoes-congenitas
-versao: 3
+versao: 4
 titulo: Malformações congênitas da mão e do antebraço
 especialidade: mao
 acesso: gratis
@@ -384,6 +384,8 @@ alerta: O Tachdjian lista também a deficiência femoral e a tibial, o que aprox
 **As posições.** Unilateral ou não dominante: entre neutro e 20 graus de supinação (Tachdjian) ou 0 a 15 graus de pronação (Green 7ª ed., p. 1351); bilateral: a dominante entre neutro e 30 graus de pronação (10 a 20 no Green 7ª ed., p. 1351) e a outra em neutro.
 
 **As complicações.** De 15 a 33% (Tachdjian): **síndrome compartimental**, comprometimento vascular, paralisia do nervo radial ou do interósseo posterior (por tração), infecção e perda de correção. Daí as precauções do Green 7ª ed. (p. 1352): ressecar alguns milímetros de osso no foco, fasciotomia profilática, internação com elevação e monitoração, e um pino que pode ser retirado à beira do leito para devolver um pouco da rotação.
+
+**Quanto girar.** O risco depende do tamanho da correção. O Green 7ª ed. (cap. 38, p. 1354) diz que o comprometimento vascular e a síndrome compartimental são mais frequentes quando a rotação muda **mais de 85 graus**; se a correção precisa ser maior, é mais seguro fazê-la em **dois tempos** ou com uma osteotomia de encurtamento da ulna. O Lovell and Winter (cap. 22, p. 927) dá a mesma linha de 85 graus, mas lembra que a faixa habitual das derrotações já é de **60 a 90 graus**: o antebraço chega em 60 a 100 graus de pronação, termina em 0 a 20 graus de pronação, e a síndrome compartimental aparece em **um terço** dos operados, pela mudança do volume e da vascularização dos compartimentos; por isso recomenda ressecar um segmento da sinostose ou fazer fasciotomia dorsal e volar de rotina.
 
 **A luxação congênita da cabeça do rádio** (Green, p. 1350) costuma ser **bilateral**, anterior ou posterior; a cabeça é ovoide e o capítulo, hipoplásico. Raramente atrapalha na infância; a redução aberta com reconstrução do ligamento anular falha com frequência. No adolescente ou no adulto com dor, a **ressecção da cabeça** alivia.
 

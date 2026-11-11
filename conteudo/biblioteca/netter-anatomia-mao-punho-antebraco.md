@@ -1,6 +1,6 @@
 ---
 id: netter-anatomia-mao-punho-antebraco
-versao: 3
+versao: 4
 titulo: Anatomia da mão, do punho e do antebraço
 especialidade: mao
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Netter Atlas de Anatomia Ortopédica (Netter's Concise Orthopaedic Anatom
 edicao: 2ª edição, com o Campbell's Operative Orthopaedics, 15ª edição (2026), e o Green's Operative Hand Surgery, 7ª edição (2017)
 capitulo: Capítulo 5 · Antebraço e Capítulo 6 · Mão
 autores: Jon C. Thompson (ilustrações de Frank H. Netter)
-fonte: Livro conferido localmente em 29/10/2026 (tradução brasileira, 2012, e original em inglês, 2009), capítulos 5 e 6. Páginas citadas só quando confirmadas pelo índice remissivo ou pelo texto. Ampliado em 31/10/2026 com o Campbell's Operative Orthopaedics, 15ª ed., caps. 1 (vias de acesso), 67 (nervos), 71 (tendões flexores) e 74 (colunas do carpo), o Green's Operative Hand Surgery, 7ª ed., caps. 12, 13, 15, 28, 30, 31, 35, 41 e 59, e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (embriologia).
+fonte: Livro conferido localmente em 29/10/2026 (tradução brasileira, 2012, e original em inglês, 2009), capítulos 5 e 6. Páginas citadas só quando confirmadas pelo índice remissivo ou pelo texto. Ampliado em 31/10/2026 com o Campbell's Operative Orthopaedics, 15ª ed., caps. 1 (vias de acesso), 67 (nervos), 71 (tendões flexores) e 74 (colunas do carpo), o Green's Operative Hand Surgery, 7ª ed., caps. 12, 13, 15, 18, 28, 30, 31, 35, 41 e 59, e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (embriologia).
 subtemas: Anatomia da mão e punho
 resumo: Ossificação do carpo e colunas de NAVARRO, gota de lágrima e bossa; MARTIN-GRUBER (quatro tipos), RICHE-CANNIEU e os sinais do ulnar; vias de THOMPSON, HENRY, BOYD e do punho; nutrição e cicatrização do tendão flexor, efeito quadriga; camadas do nervo; rotação do membro na sétima semana; mediano e interósseo anterior (FPD 2 e 3, FLP, pronador quadrado), radial, interósseo posterior e FROHSE, ulnar e GUYON; compartimentos extensores I a VI e compartimento móvel; lumbricais (1 e 2 mediano e unipenados, 3 e 4 ulnar e bipenados), DAB e PAD; túnel do carpo (nove tendões, ramo recorrente 50/30/20), ligamentos do punho e espaço de POIRIER; arcos palmares (superficial ulnar, profundo radial, principal do polegar), escafoide 75% dorsal; aparelho extensor, polias A2 e A4, vínculos, efeito came; espaços tenar, mediopalmar e de PARONA.
 ---
@@ -197,6 +197,8 @@ Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 5, Fig. 5.2 (painel 
 !fim
 
 No antebraço, Thompson divide os músculos em **anterior** (superficial: pronador redondo, FRC, palmar longo, FUC; médio: FSD; profundo: FPD, FLP, pronador quadrado), **posterior** (superficial: ancôneo, ED, EDM, EUC; profundo: supinador, ALP, ECP, ELP, EI) e **móvel**: **braquiorradial, extensor radial longo e curto do carpo**. Na fasciotomia, a incisão anterior libera o anterior; a **dorsal libera o posterior e o móvel**.
+
+As origens do grupo móvel não são iguais, e a prova gosta da diferença. O Green's Operative Hand Surgery, 7ª edição (cap. 18, p. 698), mostra que o **braquiorradial** e o **extensor radial longo do carpo** nascem da **crista supracondiliana lateral** do úmero, enquanto o **extensor radial curto do carpo** sai do **epicôndilo lateral**, na massa extensora comum, junto com o extensor dos dedos, o extensor ulnar do carpo e a parte proximal do ancôneo, logo atrás da origem do complexo ligamentar lateral, com o qual se mistura.
 
 !questoes central=mao-0394 relacionadas=mao-0104,mao-0027,mao-0049,mao-0410,mao-0094,mao-0171,mao-0570,mao-0029,mao-0167,ombro-cotovelo-0320,mao-0408,mao-0317,ombro-cotovelo-0129 treino=mao-2559,mao-2563,mao-1265,mao-1266,mao-1267,mao-1268,mao-1269,mao-1273,mao-1277,mao-1280,mao-1281
 conceito: Seis compartimentos dorsais, com o ELP sozinho no III, contornando LISTER; o compartimento móvel do antebraço é braquiorradial, ERLC e ERCC, liberado pela incisão dorsal.

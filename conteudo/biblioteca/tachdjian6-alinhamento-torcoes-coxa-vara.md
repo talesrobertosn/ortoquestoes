@@ -1,6 +1,6 @@
 ---
 id: tachdjian6-alinhamento-torcoes-coxa-vara
-versao: 3
+versao: 4
 titulo: Alinhamento, torções e coxa vara na criança
 especialidade: pediatria
 acesso: gratis
@@ -226,6 +226,8 @@ armadilha: Hipercorrigir em valgo como na forma infantil, ou esquecer o varo do 
 **Torção tibial** (cap. 18, Tibial Torsion). No feto, o pé está rodado medialmente; o **maléolo medial** está atrás do lateral no feto precoce, **no mesmo nível ao nascer** e **à frente** na idade da marcha. O ângulo bimaleolar vai de **cerca de 5 graus ao nascer** a **15 graus na maturidade**. A torção tibial é a **causa mais comum de marcha em rotação interna ou externa até os 7 anos**; depois, o fêmur passa a pesar mais. A torção interna costuma aparecer **por volta dos 12 meses**, quando se desfaz a contratura em rotação externa do quadril do recém-nascido; marcha em rotação interna no lactente sugere metatarso aduto. O tratamento é **observação e orientação**; órteses são ineficazes, e a **goteira de DENIS BROWNE pode causar valgo** ou torção lateral excessiva. Deformidade moderada a grave que não se resolve pede atenção para **paralisia cerebral**. A osteotomia é rara: **mais de 15 graus de progressão interna ou 30 graus externa aos 8 anos ou mais**, com prejuízo real, feita na **região supramaleolar**; a osteotomia rotacional **proximal** da tíbia é **contraindicada**.
 
 **Síndrome de malalinhamento torcional.** Anteversão femoral aumentada com torção tibial externa: marcha desajeitada e sintomas patelofemorais. A maioria é tratada sem cirurgia; quando se opera, é preciso corrigir fêmur e tíbia.
+
+**Retrações que mudam a marcha.** Duas contraturas de partes moles rodam o membro para fora. O **trato iliotibial** retraído (o exemplo do Tachdjian é a poliomielite) passa à frente e por fora do quadril e por fora do joelho: puxa o quadril em **flexão, abdução e rotação externa**, abduz a tíbia sobre o fêmur como a corda de um arco (**geno valgo**) e, junto com a cabeça curta do bíceps, roda a tíbia e a fíbula para fora (**torção tibial externa**), podendo chegar à subluxação posterolateral do joelho; a retração leve se trata com alongamento, nos passos do teste de OBER, e a fixa, com as fasciotomias de OBER e YOUNT (Tachdjian, cap. 33, p. 1591 e 1592). O **tríceps sural** encurtado da criança espástica (diplegia, quadriplegia) obriga o calcâneo a rodar para fora sob o tálus para o pé apoiar no chão; a cabeça do tálus cai, o pé fica **planovalgo** e a marcha vira **em rotação externa**, muitas vezes com o joelho rodado para dentro pela anteversão (Lovell and Winter, cap. 27, p. 1264).
 
 !questoes central=pediatria-0440 relacionadas=pediatria-0776,pediatria-0778,pediatria-0311,pediatria-0349,pediatria-0200,pediatria-0073,pediatria-0788 treino=pediatria-1404,pediatria-1405
 conceito: Anteversão de 40 graus no lactente a 16 no adulto, com rotação interna excessiva e externa pequena no exame em decúbito ventral; a tíbia roda lateralmente com o crescimento (bimaleolar de 5 a 15 graus); quase tudo melhora sozinho, e órteses não ajudam.
