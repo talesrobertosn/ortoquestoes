@@ -5,6 +5,15 @@ de divulgação. Decisões do dono do projeto, Tales Roberto. Atualizar sempre q
 for dada. Detalhes técnicos dos posts em [marketing/instagram/README.md](../../marketing/instagram/README.md)
 e o catálogo de estilos em [marketing/instagram/estilos/ESTILOS.md](../../marketing/instagram/estilos/ESTILOS.md).
 
+## Marca e símbolos nos posts (11/11/2026)
+
+O **ladrilho das alternativas** é o símbolo oficial (site e posts). O selo, o brasão em pixel art e as versões do kit
+do ladrilho são variações aprovadas da identidade e entram **em rodízio** nos posts (assinatura, capa ou fechamento),
+sem repetir o mesmo dois posts seguidos, sempre na paleta padrão: verdete `#14655E`, verde-noite `#0E2E2A`, creme
+`#F6EEDB`, creme claro `#FBF7EC`, grafite `#2E3638` e ouro `#F4CF7C` só na certa. Arquivos e ordem dos posts de marca em
+[marketing/instagram/marca/README.md](../../marketing/instagram/marca/README.md). Variações temáticas (Natal etc.)
+partem do mesmo ladrilho. O "O que vira Q" foi descartado (parecido com o logo de outro curso).
+
 ## Padrão aula: o jeito oficial de fazer post de questão (09/11/2026)
 
 **Leia primeiro [marketing/instagram/estilos/PADRAO-AULA.md](../../marketing/instagram/estilos/PADRAO-AULA.md).** O

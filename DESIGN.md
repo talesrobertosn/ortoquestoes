@@ -164,6 +164,8 @@ Ideia em estudo (não aplicada): interface monocromática estilo shadcn com a ar
 - **Paleta padrão da marca (Tales, 11/11/2026)**: verdete `#14655e`, verde-noite `#0e2e2a`, creme `#f6eedb`, creme
   claro `#fbf7ec`, grafite `#2e3638` e ouro `#f4cf7c` (só a alternativa certa). Tokens `--paleta-marca-*`, iguais nos
   dois temas. É a base de logos, posts e peças novas; acervo e símbolos em `marketing/instagram/marca/`.
+- **Símbolo oficial: o ladrilho das alternativas** (11/11/2026), em `src/marca/Simbolo.tsx`. No topo, o ladrilho é
+  maior que o nome (32 px para um nome de 22) para a marca ficar visível.
 
 ## Typography
 

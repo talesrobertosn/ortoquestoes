@@ -1,13 +1,16 @@
 /**
- * Símbolo do Orto Questões: uma coluna de alternativas. Quatro vértebras em
- * perfil (corpo, pedículo e processo espinhoso), com a terceira em dourado
- * como a resposta certa.
+ * Símbolo do Orto Questões: o ladrilho das alternativas (marca aprovada pelo
+ * Tales em 11/11/2026). Três linhas de resposta; a do meio, a certa, é
+ * dourada, com o visto dentro da bolinha.
  *
- * - 'selo': ladrilho com as vértebras. As cores vêm de --marca-* em
- *   tokens.css, então o tema escuro troca o ladrilho sozinho. É o mesmo
- *   desenho do favicon e do ícone do aplicativo.
- * - 'traco': só as vértebras, na cor do texto (currentColor), para selos
+ * - 'selo': o ladrilho. As cores vêm de --marca-* em tokens.css, então o
+ *   tema escuro troca o ladrilho sozinho. Mesmo desenho do favicon e do
+ *   ícone do aplicativo (public/favicon.svg, scripts/gerar_icones.py).
+ *   Abaixo de 24 px usa a versão mini: sem o visto e com traços mais grossos.
+ * - 'traco': só as alternativas, na cor do texto (currentColor), para selos
  *   pequenos dentro de botões e etiquetas.
+ *
+ * Variações temáticas (Natal, por exemplo) devem partir deste desenho.
  */
 export type VarianteSimbolo = 'selo' | 'traco'
 
@@ -20,27 +23,44 @@ interface Props {
 export const COR_MARCA = '#14655E'
 export const COR_DESTAQUE = '#F4CF7C'
 
-/** Uma vértebra em perfil, frente à esquerda, no quadro de 64 por 64:
- * corpo e pedículo emendado no processo espinhoso. */
-export const CAMINHO_VERTEBRA =
-  'M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0Z' +
-  'M21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z'
+/** Uma alternativa no quadro de 100: a bolinha e a linha da resposta. */
+export interface Alternativa {
+  cx: number
+  cy: number
+  r: number
+  x: number
+  y: number
+  largura: number
+  altura: number
+  certa: boolean
+}
 
-/** Onde cada vértebra fica no quadro de 64. A terceira é a certa. */
-export const VERTEBRAS = [
-  { x: 13, y: 9.5, certa: false },
-  { x: 11, y: 21.2, certa: false },
-  { x: 11, y: 32.9, certa: true },
-  { x: 13, y: 44.6, certa: false },
-] as const
+/** Desenho cheio, para 24 px ou mais. */
+export const ALTERNATIVAS: readonly Alternativa[] = [
+  { cx: 30, cy: 30, r: 6.5, x: 43, y: 25.5, largura: 34, altura: 9, certa: false },
+  { cx: 30, cy: 50, r: 9, x: 43, y: 45, largura: 40, altura: 10, certa: true },
+  { cx: 30, cy: 70, r: 6.5, x: 43, y: 65.5, largura: 26, altura: 9, certa: false },
+]
+
+/** Versão mini, para tamanhos pequenos: traços grossos e sem o visto. */
+export const ALTERNATIVAS_MINI: readonly Alternativa[] = [
+  { cx: 28, cy: 27, r: 9, x: 44, y: 20, largura: 36, altura: 14, certa: false },
+  { cx: 28, cy: 50, r: 11, x: 44, y: 42, largura: 40, altura: 16, certa: true },
+  { cx: 28, cy: 73, r: 9, x: 44, y: 66, largura: 26, altura: 14, certa: false },
+]
+
+/** O visto dentro da bolinha certa (desenho cheio). */
+export const CAMINHO_VISTO = 'M25.8 50.2l2.9 3 5.6-6'
 
 export function Simbolo({ tamanho = 28, variante = 'selo', titulo = null }: Props) {
   const selo = variante === 'selo'
+  const mini = tamanho < 24
+  const alternativas = mini ? ALTERNATIVAS_MINI : ALTERNATIVAS
   return (
     <svg
       width={tamanho}
       height={tamanho}
-      viewBox="0 0 64 64"
+      viewBox="0 0 100 100"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       role={titulo ? 'img' : 'presentation'}
@@ -50,18 +70,33 @@ export function Simbolo({ tamanho = 28, variante = 'selo', titulo = null }: Prop
       {titulo && <title>{titulo}</title>}
       {selo && (
         <rect
-          x="0.75" y="0.75" width="62.5" height="62.5" rx="15.25"
-          style={{ fill: `var(--marca-ladrilho, ${COR_MARCA})`, stroke: 'var(--marca-contorno, none)', strokeWidth: 1.5 }}
+          x="1.5" y="1.5" width="97" height="97" rx="23"
+          style={{ fill: `var(--marca-ladrilho, ${COR_MARCA})`, stroke: 'var(--marca-contorno, none)', strokeWidth: 3 }}
         />
       )}
-      {VERTEBRAS.map((v) => {
-        const estilo = v.certa
+      {alternativas.map((a) => {
+        const estilo = a.certa
           ? { fill: selo ? `var(--marca-certa, ${COR_DESTAQUE})` : 'currentColor' }
           : selo
-            ? { fill: 'var(--marca-osso, #FFFFFF)', opacity: 'var(--marca-osso-opacidade, .55)' }
-            : { fill: 'currentColor', opacity: 0.5 }
-        return <path key={v.y} d={CAMINHO_VERTEBRA} transform={`translate(${v.x} ${v.y})`} style={estilo} />
+            ? { fill: 'var(--marca-osso, #F6EEDB)', opacity: 'var(--marca-osso-opacidade, .5)' }
+            : { fill: 'currentColor', opacity: 0.45 }
+        return (
+          <g key={a.cy} style={estilo}>
+            <circle cx={a.cx} cy={a.cy} r={a.r} />
+            <rect x={a.x} y={a.y} width={a.largura} height={a.altura} rx={a.altura / 2} />
+          </g>
+        )
       })}
+      {selo && !mini && (
+        <path
+          d={CAMINHO_VISTO}
+          fill="none"
+          strokeWidth={2.8}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          style={{ stroke: `var(--marca-ladrilho, ${COR_MARCA})` }}
+        />
+      )}
     </svg>
   )
 }
@@ -85,14 +120,15 @@ function Nome({ tamanho }: { tamanho: number }) {
   )
 }
 
-/** Marca horizontal: símbolo + nome. */
-export function MarcaHorizontal({ altura = 26 }: { altura?: number }) {
+/** Marca horizontal: símbolo + nome. `simbolo` deixa o ladrilho maior que a
+ * altura do nome (no topo do site, para a marca ficar visível). */
+export function MarcaHorizontal({ altura = 26, simbolo }: { altura?: number; simbolo?: number }) {
   return (
     <span
-      style={{ display: 'inline-flex', alignItems: 'center', gap: altura * 0.36 }}
+      style={{ display: 'inline-flex', alignItems: 'center', gap: altura * 0.4 }}
       aria-hidden="true"
     >
-      <Simbolo tamanho={altura} />
+      <Simbolo tamanho={simbolo ?? altura} />
       <Nome tamanho={altura * 0.74} />
     </span>
   )

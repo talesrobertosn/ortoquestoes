@@ -33,14 +33,18 @@ FUNDO = (0x14, 0x65, 0x5E)
 # de trabalho no Windows.
 TAMANHOS_ICO = (16, 32, 48)
 
+# Ícones grandes (aplicativo, iPhone) usam o ladrilho cheio, com o visto; o favicon.svg é a versão mini,
+# sem o visto, que só funciona de 48 px para baixo.
+CHEIO = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7.7" fill="#14655E"/><g transform="scale(.32)"><g fill="#F6EEDB" opacity=".5"><circle cx="30" cy="30" r="6.5"/><rect x="43" y="25.5" width="34" height="9" rx="4.5"/><circle cx="30" cy="70" r="6.5"/><rect x="43" y="65.5" width="26" height="9" rx="4.5"/></g><circle cx="30" cy="50" r="9" fill="#F4CF7C"/><rect x="43" y="45" width="40" height="10" rx="5" fill="#F4CF7C"/><path d="M25.8 50.2l2.9 3 5.6-6" fill="none" stroke="#14655E" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>""".encode()
+
 # Ícone "maskable" do aplicativo instalado: o Android recorta em círculo,
 # gota ou quadrado, então o fundo ocupa tudo e o desenho fica dentro da zona
-# segura central (80%). Mesmo desenho do favicon, reduzido.
+# segura central (80%). Mesmo desenho, reduzido.
 MASCARAVEL = """<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
   <rect width="32" height="32" fill="#14655E"/>
-  <g transform="translate(16 16) scale(0.72) translate(-14.9 -16)">
-    <g transform="scale(.5)"><g fill="#FFFFFF" opacity=".55"><path transform="translate(13 9.5)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(11 21.2)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/><path transform="translate(13 44.6)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g><g fill="#F4CF7C"><path transform="translate(11 32.9)" d="M3.2 0H18.8A3.2 3.2 0 0 1 22 3.2V5.4A3.2 3.2 0 0 1 18.8 8.6H3.2A3.2 3.2 0 0 1 0 5.4V3.2A3.2 3.2 0 0 1 3.2 0ZM21 2.6H24.6L34.2 5.2Q35.6 5.8 35 7.2L34.4 8.4Q33.8 9.6 32.4 9.1L24.6 6.2H21Z"/></g></g>
-  </g>
+  <g transform="translate(16 16) scale(0.94) translate(-16.8 -16)"><g transform="scale(.32)"><g fill="#F6EEDB" opacity=".5"><circle cx="30" cy="30" r="6.5"/><rect x="43" y="25.5" width="34" height="9" rx="4.5"/><circle cx="30" cy="70" r="6.5"/><rect x="43" y="65.5" width="26" height="9" rx="4.5"/></g><circle cx="30" cy="50" r="9" fill="#F4CF7C"/><rect x="43" y="45" width="40" height="10" rx="5" fill="#F4CF7C"/><path d="M25.8 50.2l2.9 3 5.6-6" fill="none" stroke="#14655E" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/></g></g>
 </svg>""".encode()
 
 
@@ -121,14 +125,14 @@ def main() -> int:
     (PUBLICO / "favicon.ico").write_bytes(ico)
     gerados.append((PUBLICO / "favicon.ico", len(ico)))
 
-    apple = renderizar(180, opaco=True)
+    apple = renderizar(180, opaco=True, svg=CHEIO)
     (PUBLICO / "apple-touch-icon.png").write_bytes(apple)
     gerados.append((PUBLICO / "apple-touch-icon.png", len(apple)))
 
     # Ícones do aplicativo instalado (manifest.webmanifest).
     for nome, dados in (
-        ("icone-192.png", renderizar(192)),
-        ("icone-512.png", renderizar(512)),
+        ("icone-192.png", renderizar(192, svg=CHEIO)),
+        ("icone-512.png", renderizar(512, svg=CHEIO)),
         ("icone-mascaravel-512.png", renderizar(512, opaco=True, svg=MASCARAVEL)),
     ):
         (PUBLICO / nome).write_bytes(dados)
