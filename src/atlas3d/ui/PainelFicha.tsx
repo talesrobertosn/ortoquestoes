@@ -25,6 +25,10 @@ interface Props {
   anatomia?: ReactNode
   /** no osso: o que se origina e se insere nele */
   fixacoes?: ReactNode
+  /** fora do banco conferido: nome, latim e o que o modelo garante (áreas de origem e inserção) */
+  geral?: ReactNode
+  /** onde a estrutura fica: sistema › parte › … */
+  trilha?: ReactNode
 }
 
 /** Ficha da estrutura selecionada: o que importa para a ortopedia, com as questões e as classificações. */
@@ -44,6 +48,7 @@ export function PainelFicha(p: Props) {
           <p className="tr-heroi__selo">{SINGULAR[grupo]}{e.s !== 'm' ? ` · lado ${LADO[e.s]}` : ''}</p>
           <h2>{titulo}</h2>
           {secundario && <p className="at-ficha__latim">{secundario}</p>}
+          {p.trilha}
         </div>
         <span className="at-ficha__botoes">
           {p.aoRecolher && <button type="button" className="at-ficha__fechar" onClick={p.aoRecolher} aria-label="Recolher a ficha" title="Recolher"><Icone nome="baixo" tamanho={18} /></button>}
@@ -85,7 +90,7 @@ export function PainelFicha(p: Props) {
             </div>
           )}
         </>
-      ) : p.anatomia ?? (p.fixacoes ? <>{p.fixacoes}</> : (
+      ) : p.anatomia ?? (p.fixacoes ? <>{p.fixacoes}</> : p.geral ?? (
         <div className="at-sobre">
           <p>{grupo === 'osso' ? 'A ficha ortopédica deste osso ainda está em preparação.' : 'A ficha desta estrutura ainda está em preparação: entra só com fonte conferida.'}</p>
           {!temNomePt(e) && <p className="at-nota">Nome em português em revisão; por enquanto mostramos o termo do catálogo de origem.</p>}

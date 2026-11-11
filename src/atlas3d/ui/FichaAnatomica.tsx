@@ -106,17 +106,17 @@ export function FichaAnatomica({ registro: r, indice, ativas, semGeometria, cont
 }
 
 /** Ficha do osso: músculos e ligamentos que se fixam nele (na faixa clicada, nos ossos longos). */
-export function FixacoesDoOsso({ itens, indice, pontos, aoPontos, aoIr }: { itens: NoOsso[]; indice: IndiceAnatomico; pontos: boolean; aoPontos: () => void; aoIr: (chave: string) => void }) {
+export function FixacoesDoOsso({ itens, indice, pontos, aoPontos, aoIr, comAreas }: { itens: NoOsso[]; indice: IndiceAnatomico; pontos: boolean; aoPontos: () => void; aoIr: (chave: string) => void; comAreas?: boolean }) {
   const lista = (t: 'o' | 'i') => itens.filter((x) => x.t === t).map((x) => indice.porChave.get(x.c)).filter(Boolean) as RegistroAnatomico[]
   const origens = lista('o')
   const insercoes = lista('i')
   if (!origens.length && !insercoes.length) return null
-  const comMarco = itens.some((x) => x.m?.length)
+  const comMarco = comAreas || itens.some((x) => x.m?.length)
   return (
     <div className="fa">
       {comMarco && (
         <div className="fa-controles" role="group" aria-label="Mostrar no modelo">
-          <button type="button" aria-pressed={pontos} onClick={aoPontos} style={{ ['--fa-cor' as string]: CORES_RELACAO.origem }}><i aria-hidden="true" />Mostrar os pontos no osso</button>
+          <button type="button" aria-pressed={pontos} onClick={aoPontos} style={{ ['--fa-cor' as string]: CORES_RELACAO.origem }}><i aria-hidden="true" />{comAreas ? 'Pintar as áreas no osso' : 'Mostrar os pontos no osso'}</button>
         </div>
       )}
       {origens.length > 0 && (

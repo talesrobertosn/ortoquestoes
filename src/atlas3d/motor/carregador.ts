@@ -2,7 +2,7 @@ import { BufferGeometry } from 'three'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import { BASE_ASSETS, VERSAO_ASSETS } from '../config'
-import type { Camada, Catalogo, Ponto } from '../tipos'
+import type { Area, Arvore, Camada, Catalogo, Ponto } from '../tipos'
 
 /**
  * Carregamento das camadas. Cada GLB é baixado uma vez e guardado no Cache Storage do
@@ -13,7 +13,8 @@ import type { Camada, Catalogo, Ponto } from '../tipos'
 const NOME_CACHE = `atlas3d-${VERSAO_ASSETS}`
 let draco: DRACOLoader | null = null
 let loader: GLTFLoader | null = null
-const geometrias = new Map<Camada, Promise<Map<string, BufferGeometry>>>()
+/** 'insercoes' = áreas de origem e inserção (não é camada que a pessoa liga: aparece com a ficha). */
+const geometrias = new Map<Camada | 'insercoes', Promise<Map<string, BufferGeometry>>>()
 
 function obterLoader() {
   if (!loader) {
@@ -54,7 +55,7 @@ async function baixar(url: string, aoProgresso?: (fracao: number) => void): Prom
 }
 
 /** Geometrias de uma camada, por id da estrutura (normais calculadas: o GLB só traz posições). */
-export function carregarCamada(camada: Camada, arquivo: string, aoProgresso?: (fracao: number) => void) {
+export function carregarCamada(camada: Camada | 'insercoes', arquivo: string, aoProgresso?: (fracao: number) => void) {
   let p = geometrias.get(camada)
   if (!p) {
     p = (async () => {
@@ -91,3 +92,19 @@ export function carregarPontos() {
   pontos.catch(() => { pontos = null })
   return pontos
 }
+
+/** Busca um JSON dos assets uma vez por visita (com nova tentativa se falhar). */
+function jsonUnico<T>(arquivo: string) {
+  let p: Promise<T> | null = null
+  return () => {
+    p ??= fetch(`${BASE_ASSETS}${arquivo}`).then((r) => { if (!r.ok) throw new Error(arquivo); return r.json() as Promise<T> })
+    p.catch(() => { p = null })
+    return p
+  }
+}
+/** Áreas de origem e inserção sobre os ossos (o GLB só é baixado quando uma área vai aparecer). */
+export const carregarAreas = jsonUnico<Area[]>('insercoes.json')
+/** Onde cada estrutura fica: sistema › parte › … */
+export const carregarArvore = jsonUnico<Arvore>('arvore.json')
+/** Português da Terminologia Anatômica (TA2) por id base. */
+export const carregarNomesTa2 = jsonUnico<Record<string, string>>('nomes-ta2.json')
