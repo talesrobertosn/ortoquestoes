@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><title>Identidade visual Orto Questões (estudo)</title>
+<!-- Estudo de identidade visual (11/11/2026, pedido do Tales). Cores: verdete da marca e creme, com o grafite e o ouro
+     como apoio (a SBOT serviu só de referência de cor). Referências de linguagem: Papier (símbolo de traço fino sobre
+     verde-noite), Norton (serifa grande), Eider (símbolo geométrico com nome simples), Boardly (um único ponto de cor).
+     Todos os símbolos são originais, desenhados aqui em SVG. Gera os PNGs com:
+     node marketing/instagram/gerar.mjs docs/design/marca-2026/painel.html -->
+<style>
+@font-face { font-family: Jakarta; src: url(../../../marketing/instagram/fontes/plus-jakarta-sans-latin-wght-normal.woff2) format('woff2'); font-weight: 200 800; }
+@font-face { font-family: Inter; src: url(../../../marketing/instagram/fontes/inter-latin-wght-normal.woff2) format('woff2'); font-weight: 100 900; }
+@font-face { font-family: Playfair; src: url(../../../marketing/instagram/fontes/playfair-display-latin-wght-normal.woff2) format('woff2'); font-weight: 400 900; }
+@font-face { font-family: Serif4; src: url(../../../marketing/instagram/fontes/source-serif-4-latin-opsz-normal.woff2) format('woff2'); font-weight: 200 900; }
+:root { --verde: #14655E; --noite: #0E2E2A; --noite2: #0A221F; --creme: #F6EEDB; --creme2: #FBF7EC; --ouro: #F4CF7C; --ouro2: #D9A94A; --grafite: #2E3638; --cinza: #6B7775; --linha: #E2DAC6; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #444; font-family: Inter, sans-serif; color: var(--grafite); }
+section { position: relative; width: 1600px; margin-bottom: 40px; background: var(--creme2); overflow: hidden; }
+.pad { padding: 72px 80px; }
+.rot { font: 700 15px Inter; letter-spacing: .22em; text-transform: uppercase; color: var(--verde); }
+h1 { font: 800 64px/1.02 Jakarta; letter-spacing: -.04em; color: var(--noite); }
+h2 { font: 800 40px/1.05 Jakarta; letter-spacing: -.03em; color: var(--noite); }
+p.l { font: 500 19px/1.5 Inter; color: var(--cinza); max-width: 620px; }
+.grid { display: grid; gap: 24px; }
+.cel { position: relative; border-radius: 18px; display: grid; place-items: center; overflow: hidden; }
+.cel .tag { position: absolute; left: 22px; top: 18px; font: 700 13px Inter; letter-spacing: .18em; text-transform: uppercase; opacity: .7; }
+.claro { background: #fff; box-shadow: inset 0 0 0 1px var(--linha); }
+.creme { background: var(--creme); }
+.verde { background: var(--verde); color: var(--creme); }
+.noite { background: var(--noite); color: var(--creme); }
+.ouro { background: var(--ouro); }
+.wm { display: flex; align-items: center; gap: 22px; }
+.wm .n { font: 800 56px/1 Jakarta; letter-spacing: -.035em; }
+.wm .n span { font-weight: 500; }
+.serif { font-family: Playfair; font-weight: 700; letter-spacing: -.01em; }
+.sub { font: 600 14px Inter; letter-spacing: .32em; text-transform: uppercase; }
+.num { position: absolute; right: 26px; top: 20px; font: 800 64px Jakarta; letter-spacing: -.05em; color: rgba(14,46,42,.08); }
+.ficha { font: 500 16px/1.5 Inter; color: var(--cinza); }
+.ficha b { color: var(--noite); }
+.sw { border-radius: 16px; padding: 18px; height: 170px; display: flex; flex-direction: column; justify-content: flex-end; font: 600 14px/1.4 Inter; }
+.sw b { font: 800 22px Jakarta; letter-spacing: -.02em; display: block; }
+</style></head><body>
+
+<!-- ─────────── os símbolos (SVG original) ─────────── -->
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <!-- A · Ladrilho das alternativas (evolução do símbolo atual): três linhas de resposta; a certa é dourada, com o visto. -->
+    <symbol id="sA" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="24" fill="var(--fundo, #14655E)"/>
+      <g fill="var(--tinta, #F6EEDB)" opacity=".5"><circle cx="30" cy="30" r="6.5"/><rect x="43" y="25.5" width="34" height="9" rx="4.5"/><circle cx="30" cy="70" r="6.5"/><rect x="43" y="65.5" width="26" height="9" rx="4.5"/></g>
+      <circle cx="30" cy="50" r="9" fill="#F4CF7C"/><path d="M25.8 50.2l2.9 3 5.6-6" fill="none" stroke="var(--fundo, #14655E)" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="43" y="45" width="40" height="10" rx="5" fill="#F4CF7C"/>
+    </symbol>
+    <symbol id="sA-mono" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="24" fill="currentColor"/>
+      <g fill="var(--vazado, #fff)"><circle cx="30" cy="30" r="6.5" opacity=".45"/><rect x="43" y="25.5" width="34" height="9" rx="4.5" opacity=".45"/><circle cx="30" cy="70" r="6.5" opacity=".45"/><rect x="43" y="65.5" width="26" height="9" rx="4.5" opacity=".45"/><circle cx="30" cy="50" r="9"/><rect x="43" y="45" width="40" height="10" rx="5"/></g>
+      <path d="M25.8 50.2l2.9 3 5.6-6" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <!-- B · O que vira Q: um anel (o O de Orto) que, com o visto dourado cortando a base, vira o Q de Questões. -->
+    <symbol id="sB" viewBox="0 0 100 100">
+      <circle cx="47" cy="47" r="30" fill="none" stroke="var(--tinta, #14655E)" stroke-width="13"/>
+      <path d="M52 63 L65 76 L90 47" fill="none" stroke="var(--fundo-recorte, #FBF7EC)" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M52 63 L65 76 L90 47" fill="none" stroke="#F4CF7C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <!-- C · Leque das alternativas: cinco lâminas abrindo de um mesmo ponto (A a E, um livro que abre, um dia que nasce); a certa é dourada. -->
+    <symbol id="sC" viewBox="0 0 100 100">
+      <g transform="translate(50 82)">
+        <g fill="var(--tinta, #14655E)">
+          <rect x="-4.5" y="-50" width="9" height="32" rx="4.5" transform="rotate(-64)"/>
+          <rect x="-4.5" y="-64" width="9" height="44" rx="4.5" transform="rotate(-33)"/>
+          <rect x="-4.5" y="-64" width="9" height="44" rx="4.5" transform="rotate(33)"/>
+          <rect x="-4.5" y="-50" width="9" height="32" rx="4.5" transform="rotate(64)"/>
+        </g>
+        <rect x="-5" y="-70" width="10" height="50" rx="5" fill="#F4CF7C"/>
+        <rect x="-30" y="-6" width="60" height="9" rx="4.5" fill="var(--tinta, #14655E)"/>
+      </g>
+    </symbol>
+    <!-- E · Selo: o anel B dentro de um selo com o nome em volta, para certificados, ranking e conquistas. -->
+    <symbol id="sE" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="96" fill="var(--fundo, #14655E)"/>
+      <circle cx="100" cy="100" r="86" fill="none" stroke="#F4CF7C" stroke-width="2"/>
+      <circle cx="100" cy="100" r="58" fill="none" stroke="var(--tinta, #F6EEDB)" stroke-width="1.5" opacity=".5"/>
+      <path id="arcoE" d="M100 100 m-72 0 a72 72 0 1 1 144 0 a72 72 0 1 1 -144 0" fill="none"/>
+      <text font-family="Inter" font-weight="800" font-size="13.5" letter-spacing="3.1" fill="var(--tinta, #F6EEDB)"><textPath href="#arcoE" startOffset="0" textLength="446" lengthAdjust="spacing">ORTO QUESTÕES · QUESTÕES DE PROVA COMENTADAS ·</textPath></text>
+      <g transform="translate(55 55) scale(.9)">
+        <circle cx="47" cy="47" r="30" fill="none" stroke="var(--tinta, #F6EEDB)" stroke-width="13"/>
+        <path d="M52 63 L65 76 L90 47" fill="none" stroke="var(--fundo, #14655E)" stroke-width="23" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M52 63 L65 76 L90 47" fill="none" stroke="#F4CF7C" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ═══════════ 1 · VISÃO GERAL ═══════════ -->
+<section id="01-conceitos" style="height:950px">
+  <div class="pad">
+    <div class="rot">Orto Questões · identidade visual · estudo</div>
+    <h1 style="margin-top:10px">Quatro caminhos para a marca</h1>
+    <p class="l" style="margin-top:14px">Verdete e creme na frente, grafite e ouro de apoio. Um único ponto dourado em cada símbolo: a alternativa certa.</p>
+  </div>
+  <div class="grid" style="grid-template-columns:repeat(4,1fr);padding:0 80px;gap:20px">
+    <div>
+      <div class="cel creme" style="height:400px"><span class="num">A</span><svg width="190" height="190"><use href="#sA"/></svg></div>
+      <h2 style="margin-top:22px;font-size:28px">Ladrilho das alternativas</h2>
+      <p class="ficha" style="margin-top:8px">O símbolo de hoje, desenhado de novo: três linhas de resposta e a certa em ouro, com o visto. <b>Continuidade total.</b></p>
+    </div>
+    <div>
+      <div class="cel noite" style="height:400px;--tinta:#F6EEDB;--fundo-recorte:#0E2E2A"><span class="num" style="color:rgba(246,238,219,.08)">B</span><svg width="200" height="200"><use href="#sB"/></svg></div>
+      <h2 style="margin-top:22px;font-size:28px">O que vira Q</h2>
+      <p class="ficha" style="margin-top:8px">O anel é o <b>O</b> de Orto; o visto dourado que corta a base o transforma no <b>Q</b> de Questões. Acertar fecha a letra.</p>
+    </div>
+    <div>
+      <div class="cel claro" style="height:400px"><span class="num">C</span><svg width="210" height="210"><use href="#sC"/></svg></div>
+      <h2 style="margin-top:22px;font-size:28px">Leque das alternativas</h2>
+      <p class="ficha" style="margin-top:8px">Cinco lâminas, de A a E, abrindo de um ponto: um livro que abre, um dia que nasce. <b>A do meio é a certa.</b></p>
+    </div>
+    <div>
+      <div class="cel creme" style="height:400px"><span class="num">D</span><svg width="250" height="250" style="--fundo:#0E2E2A"><use href="#sE"/></svg></div>
+      <h2 style="margin-top:22px;font-size:28px">Selo</h2>
+      <p class="ficha" style="margin-top:8px">O anel B dentro de um selo com o nome em volta. Para <b>certificados, ranking, conquistas</b> e o perfil.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 2 · A · LADRILHO ═══════════ -->
+<section id="02-ladrilho" style="height:1000px">
+  <div class="pad" style="padding-bottom:36px"><div class="rot">Caminho A</div><h1 style="margin-top:8px">Ladrilho das alternativas</h1>
+    <p class="l" style="margin-top:12px">Mantém o que já é reconhecido e corrige o que pesa em tamanho pequeno: menos traços, a linha certa mais longa e o visto dentro do círculo.</p></div>
+  <div class="grid" style="grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:280px 280px;padding:0 80px">
+    <div class="cel claro" style="grid-row:span 2"><span class="tag">Marca horizontal</span>
+      <div class="wm"><svg width="104" height="104"><use href="#sA"/></svg><div><div class="n" style="color:var(--noite)">Orto <span>Questões</span></div><div class="sub" style="margin-top:10px;color:var(--verde)">Questões de prova, comentadas</div></div></div></div>
+    <div class="cel verde"><span class="tag">Sobre verdete</span><div class="wm"><svg width="76" height="76" style="--fundo:#F6EEDB;--tinta:#14655E"><use href="#sA"/></svg><div class="n" style="font-size:38px">Orto <span>Questões</span></div></div></div>
+    <div class="cel noite"><span class="tag">Sobre verde-noite</span><div class="wm"><svg width="76" height="76"><use href="#sA"/></svg><div class="n" style="font-size:38px">Orto <span>Questões</span></div></div></div>
+    <div class="cel creme" style="gap:18px;grid-auto-flow:column"><span class="tag">Tamanhos</span>
+      <svg width="96" height="96"><use href="#sA"/></svg><svg width="48" height="48"><use href="#sA"/></svg><svg width="32" height="32"><use href="#sA"/></svg><svg width="16" height="16"><use href="#sA"/></svg></div>
+    <div class="cel claro" style="gap:28px;grid-auto-flow:column"><span class="tag">Uma cor</span>
+      <svg width="88" height="88" style="color:#14655E"><use href="#sA-mono"/></svg><svg width="88" height="88" style="color:#2E3638"><use href="#sA-mono"/></svg><svg width="88" height="88" style="color:#F6EEDB;--vazado:#2E3638"><use href="#sA-mono"/></svg></div>
+  </div>
+</section>
+
+<!-- ═══════════ 3 · B · O QUE VIRA Q ═══════════ -->
+<section id="03-anel-q" style="height:1000px;background:var(--noite);color:var(--creme)">
+  <div class="pad" style="padding-bottom:36px"><div class="rot" style="color:var(--ouro)">Caminho B</div><h1 style="margin-top:8px;color:var(--creme)">O que vira Q</h1>
+    <p class="l" style="margin-top:12px;color:#c9d6d1">Monograma de uma linha só. Em serifa, a marca ganha o peso de instituição; o visto dourado é a única cor quente.</p></div>
+  <div class="grid" style="grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:280px 280px;padding:0 80px">
+    <div class="cel" style="grid-row:span 2;background:var(--noite2);box-shadow:inset 0 0 0 1px rgba(244,207,124,.25);--tinta:#F6EEDB;--fundo-recorte:#0A221F"><span class="tag">Marca principal</span>
+      <div style="display:grid;justify-items:center;gap:22px"><svg width="150" height="150"><use href="#sB"/></svg>
+        <div class="serif" style="font-size:66px;line-height:1">Orto Questões</div><div class="sub" style="color:var(--ouro)">Questões de prova · comentadas</div></div></div>
+    <div class="cel claro" style="--tinta:#14655E;--fundo-recorte:#fff;color:var(--noite)"><span class="tag">Sobre branco</span><div class="wm"><svg width="80" height="80"><use href="#sB"/></svg><div class="serif" style="font-size:42px">Orto Questões</div></div></div>
+    <div class="cel verde" style="--tinta:#F6EEDB;--fundo-recorte:#14655E"><span class="tag">Sobre verdete</span><div class="wm"><svg width="80" height="80"><use href="#sB"/></svg><div class="serif" style="font-size:42px">Orto Questões</div></div></div>
+    <div class="cel creme" style="--tinta:#14655E;--fundo-recorte:#F6EEDB;color:var(--noite)"><span class="tag">Caixa alta, à moda Norton</span><div style="text-align:center"><div class="serif" style="font-size:42px;letter-spacing:.06em;white-space:nowrap">ORTO QUESTÕES</div><div class="sub" style="margin-top:8px;color:var(--verde)">Ortopedia · Cirurgia da Mão</div></div></div>
+    <div class="cel claro" style="gap:24px;grid-auto-flow:column"><span class="tag" style="color:var(--noite)">Ícone do app</span>
+      <svg width="92" height="92" style="background:#F6EEDB;border-radius:22px;--tinta:#14655E;--fundo-recorte:#F6EEDB"><use href="#sB"/></svg>
+      <svg width="92" height="92" style="background:#14655E;border-radius:22px;--tinta:#F6EEDB;--fundo-recorte:#14655E"><use href="#sB"/></svg>
+      <svg width="92" height="92" style="background:#0E2E2A;border-radius:22px;--tinta:#F6EEDB;--fundo-recorte:#0E2E2A"><use href="#sB"/></svg></div>
+  </div>
+</section>
+
+<!-- ═══════════ 4 · C · LEQUE ═══════════ -->
+<section id="04-leque" style="height:1000px">
+  <div class="pad" style="padding-bottom:36px"><div class="rot">Caminho C</div><h1 style="margin-top:8px">Leque das alternativas</h1>
+    <p class="l" style="margin-top:12px">Geométrico, com cara de marca de produto (à moda Eider): lê-se como livro aberto e como sol nascendo, sem nenhum osso desenhado.</p></div>
+  <div class="grid" style="grid-template-columns:1.4fr 1fr 1fr;grid-template-rows:280px 280px;padding:0 80px">
+    <div class="cel claro" style="grid-row:span 2"><span class="tag">Marca horizontal</span>
+      <div class="wm" style="gap:26px"><svg width="120" height="120"><use href="#sC"/></svg><div class="n" style="color:var(--grafite);font-size:62px;font-weight:700;letter-spacing:-.045em">orto<span style="color:var(--verde);font-weight:800">questões</span></div></div></div>
+    <div class="cel verde" style="--tinta:#F6EEDB"><span class="tag">Sobre verdete</span><div class="wm"><svg width="80" height="80"><use href="#sC"/></svg><div class="n" style="font-size:40px;font-weight:700;letter-spacing:-.045em">orto<span style="font-weight:800;color:var(--ouro)">questões</span></div></div></div>
+    <div class="cel noite" style="--tinta:#F6EEDB"><span class="tag">Sobre verde-noite</span><svg width="150" height="150"><use href="#sC"/></svg></div>
+    <div class="cel creme" style="gap:20px;grid-auto-flow:column"><span class="tag">Ícone do app</span>
+      <svg width="104" height="104" style="background:#14655E;border-radius:24px;--tinta:#F6EEDB;padding:12px"><use href="#sC"/></svg>
+      <svg width="64" height="64" style="background:#14655E;border-radius:15px;--tinta:#F6EEDB;padding:7px"><use href="#sC"/></svg>
+      <svg width="32" height="32" style="background:#14655E;border-radius:8px;--tinta:#F6EEDB;padding:3px"><use href="#sC"/></svg></div>
+    <div class="cel" style="background:var(--grafite);--tinta:#F6EEDB"><span class="tag" style="color:#cfd6d4">Padrão para fundos</span>
+      <div style="position:absolute;inset:0;display:grid;grid-template-columns:repeat(7,1fr);opacity:.16">
+        <svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg>
+        <svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg>
+        <svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg><svg viewBox="0 0 100 100"><use href="#sC"/></svg>
+      </div><svg width="110" height="110" style="position:relative"><use href="#sC"/></svg></div>
+  </div>
+</section>
+
+<!-- ═══════════ 5 · SISTEMA ═══════════ -->
+<section id="05-sistema" style="height:1180px">
+  <div class="pad" style="padding-bottom:30px"><div class="rot">O sistema</div><h1 style="margin-top:8px">Cores, letras e aplicações</h1></div>
+  <div class="grid" style="grid-template-columns:repeat(6,1fr);padding:0 80px;gap:16px">
+    <div class="sw" style="background:#14655E;color:#F6EEDB"><b>Verdete</b>#14655E · ação, marca</div>
+    <div class="sw" style="background:#0E2E2A;color:#F6EEDB"><b>Verde-noite</b>#0E2E2A · fundos fortes</div>
+    <div class="sw" style="background:#F6EEDB;color:#0E2E2A;box-shadow:inset 0 0 0 1px var(--linha)"><b>Creme</b>#F6EEDB · papel</div>
+    <div class="sw" style="background:#FBF7EC;color:#0E2E2A;box-shadow:inset 0 0 0 1px var(--linha)"><b>Creme claro</b>#FBF7EC · superfície</div>
+    <div class="sw" style="background:#2E3638;color:#F6EEDB"><b>Grafite</b>#2E3638 · texto</div>
+    <div class="sw" style="background:#F4CF7C;color:#0E2E2A"><b>Ouro</b>#F4CF7C · só a resposta certa</div>
+  </div>
+  <div style="display:flex;margin:16px 80px 0;height:18px;border-radius:9px;overflow:hidden;box-shadow:inset 0 0 0 1px var(--linha)">
+    <i style="background:#14655E;flex:40"></i><i style="background:#F6EEDB;flex:30"></i><i style="background:#0E2E2A;flex:15"></i><i style="background:#2E3638;flex:10"></i><i style="background:#F4CF7C;flex:5"></i>
+  </div>
+  <div class="ficha" style="margin:8px 80px 0">Proporção de uso: muito verde e creme, pouco grafite, um toque de ouro.</div>
+
+  <div class="grid" style="grid-template-columns:1fr 1fr 1fr;padding:34px 80px 0;gap:20px">
+    <div class="cel claro" style="height:260px;place-items:start;padding:30px">
+      <div class="tag" style="position:static">Títulos</div>
+      <div style="font:800 54px/1 Jakarta;letter-spacing:-.04em;color:var(--noite);margin-top:14px">Plus Jakarta</div>
+      <div class="ficha" style="margin-top:10px">Marca, títulos e números. Peso 800, entreletra apertada.</div></div>
+    <div class="cel claro" style="height:260px;place-items:start;padding:30px">
+      <div class="tag" style="position:static">Institucional</div>
+      <div class="serif" style="font-size:54px;line-height:1;color:var(--noite);margin-top:14px">Playfair</div>
+      <div class="ficha" style="margin-top:10px">Certificados, selos, capas e o caminho B. Nunca em botão.</div></div>
+    <div class="cel claro" style="height:260px;place-items:start;padding:30px">
+      <div class="tag" style="position:static">Texto</div>
+      <div style="font:600 54px/1 Inter;letter-spacing:-.02em;color:var(--noite);margin-top:14px">Inter</div>
+      <div class="ficha" style="margin-top:10px">Enunciados, comentários e interface. Legível em qualquer tamanho.</div></div>
+  </div>
+
+  <div class="grid" style="grid-template-columns:1.2fr 1fr 1fr;padding:24px 80px 0;gap:20px">
+    <!-- cartão de visita -->
+    <div class="cel creme" style="height:330px">
+      <span class="tag">Cartão</span>
+      <div style="width:400px;height:230px;border-radius:12px;background:#14655E;color:#F6EEDB;padding:30px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 20px 40px rgba(14,46,42,.3)">
+        <svg width="54" height="54" style="--fundo:#F6EEDB;--tinta:#14655E"><use href="#sA"/></svg>
+        <div><div style="font:800 26px Jakarta;letter-spacing:-.02em">Tales Roberto</div><div style="font:500 14px Inter;opacity:.8;margin-top:4px">Ortopedia · Orto Questões</div>
+          <div style="font:700 13px Inter;letter-spacing:.2em;margin-top:14px;color:#F4CF7C">ORTOQUESTOES.COM.BR</div></div>
+      </div></div>
+    <!-- perfil do Instagram -->
+    <div class="cel claro" style="height:330px">
+      <span class="tag">Perfil</span>
+      <div style="display:grid;justify-items:center;gap:12px">
+        <div style="width:150px;height:150px;border-radius:50%;padding:5px;background:conic-gradient(#F4CF7C,#14655E,#F4CF7C)"><div style="width:100%;height:100%;border-radius:50%;background:#14655E;display:grid;place-items:center;border:4px solid #fff"><svg width="86" height="86" style="--tinta:#F6EEDB;--fundo-recorte:#14655E"><use href="#sB"/></svg></div></div>
+        <b style="font:800 20px Jakarta">ortoquestoes</b><span class="ficha" style="font-size:14px">Questões de prova, comentadas</span></div></div>
+    <!-- botão e selo -->
+    <div class="cel noite" style="height:330px;gap:26px">
+      <span class="tag">Interface</span>
+      <div style="display:grid;justify-items:center;gap:22px">
+        <div style="padding:16px 30px;border-radius:12px;background:#F6EEDB;color:#14655E;font:800 20px Jakarta">Treine grátis →</div>
+        <div style="padding:16px 30px;border-radius:12px;background:#14655E;color:#F6EEDB;font:800 20px Jakarta;box-shadow:inset 0 0 0 1px #2a7f74">Continuar de onde parei</div>
+        <div style="display:flex;gap:10px"><span style="padding:6px 12px;border-radius:999px;background:#F4CF7C;color:#0E2E2A;font:800 13px Inter">CERTA</span><span style="padding:6px 12px;border-radius:999px;box-shadow:inset 0 0 0 1.5px #F6EEDB;font:700 13px Inter">TEOT 2022</span></div>
+      </div></div>
+  </div>
+</section>
+
+<!-- ═══════════ 6 · EXTRA EM PIXEL ═══════════ -->
+<section id="06-pixel" style="height:1000px;background:#06100f;color:var(--creme)">
+  <img src="pixel/cena.png" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;image-rendering:pixelated">
+  <div class="pad" style="position:relative"><div class="rot" style="color:var(--ouro)">Extra · pixel art HD-2D</div>
+    <h1 style="margin-top:8px;color:var(--creme)">O brasão do aventureiro</h1>
+    <p class="l" style="margin-top:12px;color:#d7e2de">O ladrilho como placa de pedra verde, com a alternativa certa em ouro aceso, sob a luz da fogueira. Para o site, o mascote e os posts.</p></div>
+  <div style="position:absolute;right:80px;bottom:60px;display:flex;gap:26px;align-items:flex-end">
+    <div style="text-align:center"><img src="pixel/icone-64.png" alt="" style="width:128px;image-rendering:pixelated;display:block"><span class="ficha" style="color:#cfd6d4">64 px, ampliado</span></div>
+    <div style="text-align:center"><img src="pixel/icone-32.png" alt="" style="width:96px;image-rendering:pixelated;display:block"><span class="ficha" style="color:#cfd6d4">32 px</span></div>
+  </div>
+</section>
+</body></html>
