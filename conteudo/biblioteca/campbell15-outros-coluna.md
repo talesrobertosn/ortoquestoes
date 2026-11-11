@@ -281,7 +281,7 @@ A escoliose é a manifestação esquelética mais comum da neurofibromatose do t
 
 O mecanismo dos sinais distróficos é em parte mecânico: neurofibromas intraespinais e paraespinais e a **ectasia dural** (alargamento do saco dural) erodem o osso por dentro. Por isso, antes de operar, o Campbell exige excluir lesão intraespinal. O Tachdjian chama a atenção para a modulação: uma curva não distrófica em criança pequena pode adquirir sinais distróficos com o tempo, e o acompanhamento precisa procurar por eles.
 
-!questoes central=coluna-0338
+!questoes central=coluna-0338 relacionadas=coluna-0093
 conceito: A escoliose distrófica da neurofibromatose do tipo 1 é curta, de angulação aguda, precoce e progressiva; colete não funciona.
 como: O TARO 2006 apresentou a afirmação para julgar certo ou errado.
 armadilha: Achar que toda escoliose da neurofibromatose é distrófica; a não distrófica se comporta como a idiopática.

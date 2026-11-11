@@ -130,7 +130,7 @@ A AL que leva um pedaço da cortical medial com ela não é uma avulsão do ilio
 | C | bem abaixo da ponta | indiferente | indiferente | osteossíntese independente da prótese |
 !fim
 
-!questoes central=quadril-0043
+!questoes central=quadril-0043 relacionadas=quadril-0126
 conceito: VANCOUVER se apoia em localização da fratura, estabilidade do componente femoral e qualidade do estoque ósseo; idade e tipo de fixação não definem o tipo.
 como: O TEOT 2022 perguntou em que se fundamenta a classificação, com alternativas que trocavam estoque ósseo por idade ou por tipo de fixação.
 armadilha: Marcar "estabilidade e tipo de fixação": cimentada ou não muda o implante da revisão, não o tipo de VANCOUVER.
