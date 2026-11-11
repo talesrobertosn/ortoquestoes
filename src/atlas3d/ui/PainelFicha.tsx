@@ -90,7 +90,7 @@ export function PainelFicha(p: Props) {
             </div>
           )}
         </>
-      ) : p.anatomia ?? (p.fixacoes ? <>{p.fixacoes}</> : p.geral ?? (
+      ) : p.anatomia ? <>{p.anatomia}{p.fixacoes}</> : (p.fixacoes ? <>{p.fixacoes}</> : p.geral ?? (
         <div className="at-sobre">
           <p>{grupo === 'osso' ? 'A ficha ortopédica deste osso ainda está em preparação.' : 'A ficha desta estrutura ainda está em preparação: entra só com fonte conferida.'}</p>
           {!temNomePt(e) && <p className="at-nota">Nome em português em revisão; por enquanto mostramos o termo do catálogo de origem.</p>}

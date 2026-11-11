@@ -1,6 +1,6 @@
 # Cobertura do banco anatômico do Atlas 3D
 
-Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 22 lote(s). Não editar à mão.
+Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 23 lote(s). Não editar à mão.
 
 ## Totais
 
@@ -9,6 +9,7 @@ Gerado por `scripts/atlas3d/montar_anatomia.mjs` a partir de 22 lote(s). Não ed
 | musculo | 193 | 192 | 0 | 1 | 193 |
 | nervo | 92 | 90 | 0 | 2 | 84 |
 | ligamento | 97 | 95 | 1 | 1 | 97 |
+| osso | 8 | 8 | 0 | 0 | 8 |
 | arteria | 53 | 52 | 0 | 1 | 53 |
 | veia | 10 | 10 | 0 | 0 | 10 |
 | fascia | 9 | 9 | 0 | 0 | 9 |
