@@ -1,41 +1,21 @@
 {
  "coluna-0001": {
-  "conceito": "Um paciente com lesão medular cervical chega hipotenso. A primeira reação seria dar volume, como num politraumatizado sangrando. O Rockwood and Green (10ª ed., cap. 48) explica por que isso pode dar errado e o que a pressão desse paciente realmente precisa.\n\n**O que a lesão desliga.** A medula cervical carrega as vias **simpáticas**. Quando ela é lesada, perde-se ao mesmo tempo o **tônus dos vasos**, que se dilatam, e o estímulo que aceleraria o coração. O resultado é o **choque neurogênico**: **hipotensão com bradicardia**, não por falta de volume, mas por falta de comando simpático.\n\n**Por que só volume não serve.** Encher de líquido um sistema que perdeu o tônus pode causar **edema pulmonar**. O tratamento descrito no capítulo é **vasopressor**, posição de Trendelenburg e uso **criterioso** de líquidos, mantendo a **pressão sistólica acima de 100 mmHg** e a **média acima de 85 mmHg**, porque a perfusão da medula lesada depende da pressão.\n\n**Por que alfa e beta.** O defeito tem duas metades: a vasodilatação (que pede efeito **alfa**, para contrair os vasos) e a bradicardia (que pede efeito **beta**, para acelerar o coração). O resumo registra esta questão do TARO 2020 justamente com essa leitura: o vasopressor com ação **alfa e beta-agonista** trata as duas metades do defeito.\n\n> **Na prova:** choque neurogênico é hipotensão com bradicardia; vasopressor com ação alfa e beta, volume com critério e pressão média acima de 85 mmHg.",
-  "correta": "**D: alfa e beta-agonista.** A ação alfa devolve o tônus vascular perdido e a ação beta corrige a bradicardia; juntas tratam as duas metades do choque neurogênico.",
+  "conceito": "A pergunta parece de farmacologia, mas a resposta sai da fisiologia do trauma raquimedular. Quem entende o que a medula cervical lesada deixa de fazer escolhe o vasopressor sem decorar nome de droga.\n\n**O que a lesão desliga.** A medula cervical e a torácica alta carregam o efluxo simpático central (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14, p. 472). Lesada essa via, somem ao mesmo tempo duas coisas: o **tônus dos vasos**, que se dilatam e baixam a resistência periférica, e o **estímulo simpático ao coração**, que deixaria de acelerar. É o **choque neurogênico**: **hipotensão com bradicardia**, extremidades quentes e secas, sem perda de volume (cap. 14, p. 472). O cap. 47 do mesmo livro (p. 1886) dá a frequência, cerca de **20%** das lesões medulares cervicais, mais comum na lesão completa e mais rara quanto mais baixa a lesão; o Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1875), acrescenta a **hipotermia** pela perda da termorregulação.\n\n**Por que volume não basta.** O capítulo 48 do Rockwood, na seção de atendimento inicial, é direto: tratar esse paciente como se estivesse sangrando, só com líquido, pode causar **edema pulmonar** com risco de vida. A conduta é **vasopressor**, posição de TRENDELENBURG e líquido com critério, mantendo a **sistólica acima de 100 mmHg** e a **média acima de 85 mmHg**, porque a medula lesada perdeu a autorregulação e a sua perfusão passa a depender da pressão sistêmica.\n\n**Por que alfa e beta.** O defeito tem duas metades, e cada receptor cuida de uma:\n\n| Metade do defeito | O que falta | Receptor que corrige |\n|---|---|---|\n| Vasodilatação | tônus arteriolar | **alfa** (vasoconstrição) |\n| Bradicardia | estímulo cronotrópico | **beta** (frequência e contratilidade) |\n\nO Campbell (cap. 48, p. 1876) transforma isso em regra: quando a hipotensão persiste com pressão venosa central normal, preferem-se os vasopressores com ação **alfa e beta**, como **dopamina, dobutamina e noradrenalina**, aos **alfa puros**, como a **fenilefrina**, que pode provocar **bradicardia reflexa**: a pressão sobe, o barorreflexo freia o coração, e num paciente sem simpático para compensar a frequência cai ainda mais. A meta do Campbell é média de **75 a 95 mmHg por 3 a 7 dias**.\n\n**Os livros lado a lado.** Na ordem das condutas eles diferem. O Rockwood, no cap. 48, vai direto ao vasopressor e à média acima de 85 mmHg; no cap. 47 (p. 1886) fala em **1 semana** com **noradrenalina** nas lesões cervicais e torácicas altas. O Campbell trata a hipotensão primeiro como **hemorrágica**, com cristaloide e, se preciso, sangue, e só então o vasopressor; o próprio Rockwood, no cap. 14 (p. 472), também manda afastar a hipovolemia antes de presumir o choque neurogênico. No que a questão cobra, os dois convergem: a noradrenalina do Rockwood tem ação alfa e beta, e o Campbell recomenda exatamente essa classe.\n\n> **Na prova:** choque neurogênico = hipotensão + bradicardia + pele quente. Volume com critério, vasopressor **alfa e beta**, média acima de 85 mmHg. Alfa puro = risco de bradicardia reflexa.\n\nO mecanismo e as metas estão na seção \"Choque neurogênico\" do resumo.",
+  "correta": "**D) alfa e beta-agonista.** A ação alfa devolve o tônus vascular que a perda do simpático tirou, e a ação beta corrige a bradicardia que acompanha o choque neurogênico. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1876), prefere expressamente essa classe (dopamina, dobutamina, noradrenalina) aos alfa puros, e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 47, p. 1886), indica a noradrenalina para manter a média acima de 85 mmHg.",
   "incorretas": {
-   "A": "**Trata só metade.** O efeito alfa contrai os vasos e sobe a resistência, mas não corrige a bradicardia, que é parte do mesmo defeito simpático.",
-   "B": "**Também trata só metade.** O efeito beta acelera o coração, mas sem efeito alfa os vasos continuam dilatados e a pressão não se sustenta.",
-   "C": "**Agrava o problema.** Um betabloqueador reduz ainda mais a frequência num paciente que já está bradicárdico pela perda do simpático."
+   "A": "**alfa-agonista** é o distrator mais forte, porque contrai os vasos e de fato sobe a pressão. O problema é a outra metade do defeito: sem ação beta, a bradicardia fica sem tratamento, e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1876), avisa que o alfa puro, como a fenilefrina, pode piorar a frequência por **bradicardia reflexa**. Seria uma escolha razoável num choque distributivo com frequência normal ou alta, não no paciente que já chega bradicárdico.",
+   "B": "**beta-agonista** trata só a frequência: acelera o coração e aumenta a contratilidade, mas não devolve o tônus dos vasos, que continuam dilatados pela perda do simpático. Com a resistência periférica baixa, o débito maior não se converte em pressão suficiente para perfundir a medula, cuja meta no Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), é a média acima de 85 mmHg.",
+   "C": "**beta-antagonista** faz o contrário do que o paciente precisa. O betabloqueador reduz a frequência e a contratilidade, e o paciente em choque neurogênico já tem bradicardia por falta do estímulo simpático ao coração (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14, p. 472). Dar a ele um betabloqueador aprofundaria a bradicardia e a hipotensão; é droga de taquiarritmia e de hipertensão, nunca de choque."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: Atendimento inicial e exame neurológico."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seção de atendimento inicial (choque neurogênico)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 14, p. 472",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 47, p. 1886",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1875 e 1876",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "Atendimento inicial e exame neurológico"
-     ],
-     "blocos": [
-      "atendimento-inicial-e-exame-neurologico-cef312c6",
-      "atendimento-inicial-e-exame-neurologico-ca374b67"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "68e272d6ea3e8e7e4980162d51817d687826a727492a894782932ea5341bbea7"
-    }
-   ],
-   "questaoSha256": "f1402b0b3e7414f40bec7a156c4795a17cdadf3d31437459528b26f230b2a94b",
-   "comentarioSha256": "5ad8a410c1a92bc63b5da765b310371fdd8e1d754dcbb49fe34b580bb1c345dc"
-  }
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0002": {
   "conceito": "### Glúteo médio e L5\n- **Nervo:** glúteo superior (L4, L5, S1), com ==predomínio de L5==.\n- **Função:** principal **abdutor** do quadril e **estabilizador da pelve** no apoio unipodal.\n- **Déficit:** **Trendelenburg**, marcha em báscula. Por isso a radiculopatia L5 pode dar Trendelenburg, não só pé caído.\n\n### Diferenciar L5 do nervo fibular (pé caído)\n| | Radiculopatia L5 | Nervo fibular |\n|---|---|---|\n| Dorsiflexão / hálux | fraca | fraca |\n| **Inversão** (tibial posterior, L5 via tibial) | ==fraca== | **preservada** |\n| **Abdução do quadril** (glúteo médio) | ==fraca== | preservada |\n| Dor lombar ou ciatalgia | sim | não |\n\n### Miótomos\n| Raiz | Motor | Reflexo |\n|---|---|---|\n| L3 | flexão do quadril, extensão do joelho | patelar (parcial) |\n| L4 | quadríceps, **tibial anterior** | **patelar** |\n| ==L5== | ==glúteo médio==, **extensor longo do hálux**, tibial anterior | nenhum |\n| S1 | **tríceps sural**, glúteo máximo, fibulares | **aquileu** |\n\n> **Na prova:** glúteo médio = ==L5==.",
@@ -3419,44 +3399,29 @@
   "conferido": false
  },
  "coluna-0251": {
-  "conceito": "Imagine um idoso com estenose cervical que cai e bate a testa. Ele chega com as mãos e os braços muito fracos e as pernas relativamente boas, e a tomografia não mostra fratura nem luxação. Por que os braços sofrem mais?\n\n**A organização dentro da medula.** O Rockwood and Green (10ª ed., cap. 48) explica que, na substância cinzenta, as fibras que servem os **segmentos mais altos** ficam mais **centrais**. É essa organização que faz a **síndrome medular central** atingir mais os **membros superiores** que os inferiores: a lesão que começa no centro pega primeiro as fibras dos braços.\n\n**Quem tem e como acontece.** O paciente típico é o **idoso com canal estreito** (espondilose ou canal congenitamente estreito) que sofre **hiperextensão**, muitas vezes batendo a testa numa queda. O déficit motor e sensitivo é pior nos braços e nas mãos, às vezes com alteração das pernas, da bexiga e do intestino, sem fratura, luxação ou lesão ligamentar na imagem.\n\n**O prognóstico.** Muitos recuperam boa parte só com observação. O capítulo cita a idade jovem, boa função motora na chegada e ausência de alteração de sinal na medula como fatores favoráveis.\n\n> **Na prova:** braços mais fracos que as pernas, idoso com estenose e hiperextensão: síndrome medular central.",
-  "correta": "**C: síndrome medular central.** As fibras dos segmentos cervicais ficam mais centrais na medula; a lesão central as atinge primeiro, e os membros superiores ficam mais fracos que os inferiores.",
+  "conceito": "Fraqueza maior nos braços que nas pernas depois de um trauma cervical é a assinatura da **síndrome medular central**. A banca, porém, colocou entre as opções a única outra síndrome que também pega mais os braços, a paralisia cruzada de BELL, e por isso vale entender o porquê e não só o nome.\n\n**A anatomia que explica o padrão.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48, seção sobre a medula cervical), descreve a organização somatotópica: na **substância cinzenta**, as fibras dos segmentos **mais altos** ficam mais **centrais**, e nos tratos corticoespinhais as fibras dos níveis cervicais também ficam na porção **interna, anteromedial**, com as lombares e sacrais por fora. O livro diz que essa disposição é a explicação fisiológica do predomínio nos membros superiores. Na figura do Rockwood, o círculo central marca a área da síndrome central: ela abraça a substância cinzenta e a parte interna dos tratos motores, justamente onde passam as fibras das mãos e dos braços. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1878), detalha que os neurônios motores dos membros superiores, centrais no corticoespinhal lateral, são os mais atingidos, e que o déficit costuma ser **maior na parte distal** do membro (a mão) que na proximal; a sensibilidade sacral ao alfinete em geral fica preservada.\n\n**Quem tem e como acontece.** O paciente típico é o **idoso com estenose cervical** (espondilose ou canal congenitamente estreito) que sofre **hiperextensão**, muitas vezes numa queda batendo a testa, e chega sem fratura, luxação ou lesão ligamentar na imagem. Pelo Rockwood, é a forma mais comum de lesão medular sem instabilidade na coluna espondilótica; pelo Campbell (p. 1878), é a **síndrome incompleta mais comum**, até **70%** dos casos, e a de **melhor prognóstico**: mais de 50% recuperam bexiga e intestino, voltam a andar e melhoram a mão.\n\n**As outras síndromes, pelo mesmo raciocínio.**\n\n| Síndrome | Onde está a lesão | O que se perde |\n|---|---|---|\n| Central | centro da medula | braços mais que pernas, mão mais que ombro |\n| Anterior | dois terços anteriores (artéria espinal anterior) | força, dor e temperatura; propriocepção preservada |\n| BROWN-SÉQUARD | metade da medula | força e propriocepção do mesmo lado; dor e temperatura do lado oposto |\n| Cruzada de BELL | junção do bulbo com a medula | braços mais que pernas, ombro mais que mão |\n\n**A pegadinha de BELL.** O Skeletal Trauma, 5ª ed. (cap. 33, p. 815), descreve a paralisia cruzada de BELL entre as síndromes cervicomedulares, raras, causadas pela anatomia peculiar dos tratos na **junção do tronco cerebral com a medula**, nas lesões craniocervicais. Ela pode imitar a síndrome central, mas atinge mais a parte **proximal** do membro superior. A diferença decide: no trauma raquimedular cervical comum, a resposta é a central; a cruzada pertence às lesões do occipital, do atlas e do áxis.\n\n> **Na prova:** braços piores que pernas no idoso com estenose que bateu a testa = **síndrome central**, a incompleta mais comum e a de melhor prognóstico.\n\nA anatomia dos tratos e as síndromes estão na seção \"Síndrome medular central\" do resumo.",
+  "correta": "**C) síndrome medular central.** No Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), as fibras dos segmentos cervicais ocupam o centro da substância cinzenta e a porção interna dos tratos corticoespinhais; a lesão que começa no centro da medula as atinge primeiro, e os membros superiores ficam mais fracos que os inferiores. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, p. 1878), confirma o padrão e acrescenta que é a síndrome incompleta mais comum, com até 70% dos casos.",
   "incorretas": {
-   "A": "**Não é a síndrome descrita pelo capítulo para este quadro.** O resumo atribui a fraqueza maior nos membros superiores à síndrome medular central, pela posição central das fibras dos segmentos altos; a paralisia cruzada não está entre as síndromes que ele deduz dos tratos.",
-   "B": "**A anterior separa força de propriocepção.** Na síndrome anterior perdem-se força, dor e temperatura, com propriocepção preservada, sem a predominância nos braços.",
-   "D": "**A hemissecção divide por lados.** Na BROWN-SÉQUARD o déficit motor e proprioceptivo é de um lado e a perda de dor e temperatura, do outro; não há o padrão braço maior que perna."
+   "A": "**paralisia cruzada de BELL** é a armadilha da questão, porque é a outra síndrome que enfraquece mais os braços que as pernas. O Skeletal Trauma, 5ª ed. (cap. 33, p. 815), a descreve como síndrome cervicomedular rara, da junção do bulbo com a medula, que pode imitar a síndrome central mas atinge mais a parte proximal do membro superior. Seria a resposta numa lesão craniocervical (côndilo occipital, atlas, odontoide); como fraqueza dos braços no trauma raquimedular em geral, a resposta é a central, muito mais comum.",
+   "B": "**síndrome medular anterior** é a lesão dos dois terços anteriores da medula, território da artéria espinal anterior: perdem-se a força e a dor e a temperatura, com a propriocepção preservada pelas colunas dorsais, irrigadas pelas artérias posteriores (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48). A perda motora atinge braços e pernas sem o predomínio nos membros superiores. Seria a resposta se o enunciado descrevesse paralisia com propriocepção preservada.",
+   "D": "**síndrome de BROWN-SÉQUARD** é a hemissecção da medula, com o ferimento por arma branca como exemplo clássico. O déficit se divide por lados, não por altura: força e propriocepção somem do mesmo lado da lesão, porque esses tratos já cruzaram acima do forame magno, e dor e temperatura somem do lado oposto, porque o espinotalâmico cruza logo ao entrar (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48). Seria a resposta para um membro superior e um inferior fracos do mesmo lado."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seção sobre a medula cervical e as síndromes incompletas (Fig. 48-22)",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1878",
+   "Skeletal Trauma: Basic Science, Management and Reconstruction, 5ª ed., cap. 33 (Craniocervical Injuries), p. 815",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "A medula cervical e as síndromes incompletas"
-     ],
-     "blocos": [
-      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
-      "a-medula-cervical-e-as-sindromes-incompletas-568b3953",
-      "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
-      "a-medula-cervical-e-as-sindromes-incompletas-8ba63afc"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "ad1e9df069b56836bf4761da00526200fd42462393773634911dc2f7d386d834"
-    }
-   ],
-   "questaoSha256": "1fde239c90e33a36132c6f957189df1f5123d472ae97dce3307bab91ae49546a",
-   "comentarioSha256": "b97f40846f01e313d19fd393cdccb54e17b672f55fb958eb630644d64ed7a98b"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/rwa10-48-22-w87.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 48, Fig. 48-22, p. 1931. Corte transversal da medula com as áreas das síndromes incompletas: a hachura cobre a metade lesada na BROWN-SÉQUARD (fascículos grácil e cuneiforme, corticoespinhal e espinotalâmico lateral do mesmo lado), o azul marca a medular anterior e o círculo central, a centromedular.",
+    "largura": 900,
+    "altura": 794
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0252": {
   "conceito": "Na criança, o tipo de espondilolistese mais frequente não é o mais perigoso, e a banca vive dessa diferença. O ístmico (II) aparece mais; o displásico (I) é o que mais ameaça os nervos e o que mais progride. A explicação está em para onde vai o arco posterior quando L5 escorrega.\n\n**O que é o tipo I.** No displásico, a pars está intacta, mas as facetas superiores do sacro ou as inferiores de L5 são malformadas desde o nascimento (Campbell's Operative Orthopaedics, 15ª ed., cap. 42, Box 42.1, p. 1667). O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 11, p. 270), acrescenta que ele ocorre só em L5-S1, se associa com frequência a espinha bífida oculta de L5 e do sacro e é mais comum no sexo feminino.\n\n**Por que os nervos sofrem.** Com a faceta incompetente, L5 escorrega levando junto todo o arco, porque não há fratura que o separe do corpo. O arco intacto avança e estrangula o saco dural. O Tachdjian (p. 270) diz que, sem lise nem alongamento da pars, um escorregamento **acima de 25%** quase certamente produz déficit neurológico. O Campbell (cap. 42, p. 1667) diz o mesmo com outro número: o displásico tem maior risco de lesão neural porque o arco intacto cria estenose do canal com cerca de **50%** de escorregamento. No ístmico acontece o oposto: os elementos posteriores ficam no lugar (Tachdjian, Tabela 11.1, p. 271), o canal se alarga e o deslocamento pode ficar grande sem déficit. Quando o displásico também tem a pars alongada ou quebrada, ele ganha essa folga e pode escorregar muito sem sequela neurológica (p. 270).\n\n**A figura.** Na radiografia do Tachdjian (Fig. 11.2, p. 272), A é um displásico de alto grau: L5 bem à frente do sacro, com a pars posterior **alongada e intacta**. Em B, no AP, o corpo de L5 inclinado aparece visto de cima e desenha o chapéu de NAPOLEÃO invertido (setas).\n\n**Por que progride mais.** O capítulo 46 do Campbell (p. 1828) diz que a espondilolistese com displasia progride mais que a espondilolítica, e que a displasia da parte anterior do sacro é o que melhor se correlaciona com a progressão. Na linguagem de MARCHETTI e BARTOLOZZI, é a alta displasia, com risco diretamente proporcional ao grau de displasia (p. 1826). O Tachdjian completa: os displásicos mais graves se apresentam mais cedo, pela maior instabilidade lombossacra (p. 274), e o risco é maior abaixo dos 10 anos (p. 281).\n\n| Na criança | Displásico (I) | Ístmico (II) |\n|---|---|---|\n| Frequência | menor | a forma mais comum |\n| Pars | intacta (ou alongada) | lise por estresse |\n| Arco ao escorregar | vai junto e aperta a dura | fica para trás; canal alarga |\n| Déficit | quase certo acima de 25% sem lise | raro |\n| Progressão | maior | rara |\n\nO tipo I está na seção \"Tipo I, displásico: o mais perigoso para os nervos\" do resumo.",
@@ -9448,45 +9413,28 @@
   }
  },
  "coluna-0532": {
-  "conceito": "O caso é o retrato da síndrome medular central: idoso com estenose degenerativa, queda batendo a testa (hiperextensão), tomografia sem fratura nem luxação e mãos e braços muito mais fracos que as pernas. A banca não pergunta o nome, pergunta o porquê.\n\n**Onde ficam as fibras.** O Rockwood and Green (10ª ed., cap. 48) explica que, na **substância cinzenta**, as fibras que servem os **segmentos mais altos** ficam mais **centrais**. Uma lesão que nasce no centro da medula, como a da hiperextensão sobre um canal estreito, atinge primeiro as fibras dos braços e das mãos. As fibras dos segmentos lombares e sacrais ficam mais para fora e são relativamente poupadas.\n\n**Por que o canal estreito importa.** No idoso espondilótico, o canal já tem pouco espaço; a hiperextensão aperta a medula entre os osteófitos na frente e o ligamento amarelo atrás, sem precisar quebrar osso. É a forma mais comum de lesão medular sem instabilidade na coluna espondilótica.\n\n**Como a anatomia elimina as outras explicações.** A oclusão da artéria espinal anterior produz a síndrome anterior, com perda de força e dor e propriocepção preservada, sem predomínio nos braços. E o quadro não é radicular: há uma lesão medular, com distribuição pelos segmentos dentro da medula.\n\n> **Na prova:** braços piores que pernas porque as fibras dos segmentos altos ficam no centro da medula; idoso, estenose e hiperextensão.",
-  "correta": "**A: as fibras dos membros superiores ficam mais centrais na medula.** É a organização descrita no capítulo que explica a síndrome central: a lesão por hiperextensão sobre o canal estreito começa no centro e pega primeiro as fibras dos braços.",
+  "conceito": "O caso clínico é a síndrome medular central sem tirar nem pôr, e a banca nem pede o nome: pede o porquê do padrão. Quem souber onde ficam as fibras das mãos dentro da medula, e o que a hiperextensão faz com um canal estreito, responde sem hesitar.\n\n**O cenário.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), descreve a lesão medular sem instabilidade na coluna espondilótica ou congenitamente estreita como, quase sempre, síndrome central: déficit motor e sensitivo **maior nos membros superiores**, às vezes com alteração das pernas, da bexiga e do intestino, e **sem fratura, luxação nem lesão ligamentar** na imagem. A estenose prévia aumenta o risco de lesão neural com movimentos bruscos do pescoço que não bastariam para quebrar osso ou romper ligamento.\n\n**Como a medula é ferida sem fratura.** A figura do Campbell's Operative Orthopaedics, 15ª ed. (cap. 48, Fig. 48.7, p. 1879), mostra o mecanismo em A: no idoso com artrose, a hiperextensão **pinça a medula** entre o complexo de disco e osteófitos na frente e o **ligamento amarelo dobrado** e a lâmina atrás (p. 1878). O canal disponível importa: na série de KANG citada pelo Rockwood, o espaço para a medula media em média **10,5 mm** nas lesões completas, **13 mm** nas incompletas e perto de **17 mm** sem déficit.\n\n**Por que as mãos.** Em B, a mesma figura marca a zona central lesada. O Rockwood explica a somatotopia: na substância cinzenta, as fibras dos segmentos **mais altos** ficam no **centro**; nos tratos corticoespinhais, as cervicais ficam na porção **interna, anteromedial**, e as lombares e sacrais, por fora. A lesão que nasce no centro pega primeiro as fibras dos braços e das mãos, e as das pernas, periféricas, sofrem menos. O Campbell (p. 1878) completa: o déficit é maior **distal** que proximal, e a sensibilidade sacral costuma ficar preservada, porque as fibras sacrais são as mais externas.\n\n**Como a anatomia elimina as outras explicações.** Em D, a figura mostra a síndrome anterior: os dois terços anteriores, território da **artéria espinal anterior**, com as colunas dorsais poupadas pelas duas artérias posteriores. É outro quadro, com perda de força, dor e temperatura nos quatro membros e propriocepção preservada. E a inversão da somatotopia, com as fibras das pernas no centro, levaria ao padrão oposto ao do enunciado.\n\n**O que esperar.** Pelo Campbell (p. 1878), é a síndrome incompleta mais comum e a de melhor prognóstico. O Rockwood lista como favoráveis a **idade jovem**, a boa função motora na chegada e a ausência de alteração de sinal na medula; os autores observam 2 a 3 dias depois do fim do choque medular e só descomprimem se não houver recuperação.\n\n**Por que esta questão foi criada.** As provas cobram a síndrome central pelo nome; esta questão força o passo seguinte, a somatotopia, que é o que permite reconhecer a síndrome mesmo quando o enunciado troca as palavras ou inverte a organização das fibras.\n\n> **Na prova:** idoso + estenose + testa batida + mãos fracas = **síndrome central**; fibras cervicais no centro, sacrais por fora.\n\nA organização dos tratos está nas seções \"Os tratos e para que lado cada um cruza\" e \"Síndrome medular central\" do resumo.",
+  "correta": "**A) as fibras dos membros superiores ficam mais centrais na medula, mais expostas à lesão central por hiperextensão.** É a explicação do Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48): na substância cinzenta e nos tratos corticoespinhais, as fibras dos segmentos cervicais são centrais e anteromediais. A hiperextensão sobre o canal estreito lesa o centro da medula, pinçada entre osteófitos e ligamento amarelo (Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1878), e as mãos e os braços sofrem mais que as pernas.",
   "incorretas": {
-   "B": "**Inverte a somatotopia.** As fibras dos membros inferiores ficam por fora, e não no centro. Elas são poupadas justamente por estarem mais periféricas.",
-   "C": "**Não é lesão de raiz.** O quadro é medular, de síndrome central, sem fratura nem luxação; uma lesão radicular bilateral de C5 a T1 não explica a apresentação típica descrita no capítulo.",
-   "D": "**É a síndrome anterior.** A oclusão da artéria espinal anterior tira força, dor e temperatura e poupa as colunas dorsais, mas não produz o padrão de braços mais fracos que pernas."
+   "B": "**as fibras dos membros inferiores ficam no centro da medula e são poupadas pela compressão periférica** inverte a somatotopia que o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), descreve: as fibras lombares e sacrais ficam **por fora** no corticoespinhal, e é por isso que a sensibilidade sacral costuma sobrar na síndrome central (Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1878). Além disso, a lesão por hiperextensão no canal estreito é central, não periférica; se as fibras das pernas estivessem no centro, elas é que ficariam mais fracas.",
+   "C": "**a lesão compromete as raízes de C5 a T1 dos dois lados, sem lesão medular** não explica o quadro. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 48), descreve nesse cenário uma lesão da medula, que pode atingir também as pernas, a bexiga e o intestino, o que nenhuma lesão de raiz cervical produz. Uma radiculopatia bilateral dessa extensão exigiria compressão foraminal em vários níveis, e os livros não a descrevem como consequência da queda com hiperextensão.",
+   "D": "**a oclusão da artéria espinal anterior poupa as colunas dorsais** é uma frase verdadeira, mas descreve a síndrome medular anterior: perda de força, dor e temperatura nos dois terços anteriores, com propriocepção preservada pelas artérias posteriores (Campbell's Operative Orthopaedics, 15ª ed., cap. 48, Fig. 48.7 D). Esse quadro atinge braços e pernas sem predomínio dos membros superiores, e o mecanismo é vascular ou de flexão, não a hiperextensão sobre a estenose do enunciado."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da coluna cervical”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 48 · Cervical Spine Fractures and Dislocations. Seções: A medula cervical e as síndromes incompletas."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 48 (Cervical Spine Fractures and Dislocations), seções sobre a medula cervical e a lesão sem instabilidade na coluna espondilótica",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 48, p. 1878 e 1879 (Fig. 48.7)",
+   "Resumo OrtoQuestões: Fraturas e luxações da coluna cervical"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27",
-  "baseResumo": {
-   "tipo": "resumo",
-   "versao": 1,
-   "fontes": [
-    {
-     "resumo": "rockwood10-48-coluna-cervical",
-     "titulo": "Fraturas e luxações da coluna cervical",
-     "livro": "Rockwood and Green's Fractures in Adults",
-     "edicao": "10ª edição (2025)",
-     "capitulo": "Capítulo 48 · Cervical Spine Fractures and Dislocations",
-     "secoes": [
-      "A medula cervical e as síndromes incompletas"
-     ],
-     "blocos": [
-      "a-medula-cervical-e-as-sindromes-incompletas-ebd0e9aa",
-      "a-medula-cervical-e-as-sindromes-incompletas-568b3953",
-      "a-medula-cervical-e-as-sindromes-incompletas-600e318b",
-      "a-medula-cervical-e-as-sindromes-incompletas-0d50e411",
-      "a-medula-cervical-e-as-sindromes-incompletas-5cd2ecb0"
-     ],
-     "sha256": "a1f6f574198e54ee75206b3d0b62c0edde37705ffbf4b3fe471714747a7b8f35",
-     "trechosSha256": "18fc1957f04e2277cf605e95e5fd5c2b49338a58e15d175f32c18246502f4317"
-    }
-   ],
-   "questaoSha256": "1562e5a9d5c65ed9dc8d1468e9033bb9575e01126aa4461b604ebd51caa17b46",
-   "comentarioSha256": "1a75b59a9afd80f829079d8eac2c5fbf5d2402601ed365ae81afb3d47d6c0d97"
-  }
+  "imagens": [
+   {
+    "arquivo": "coluna/campbell15-48-7-w32.jpeg",
+    "legenda": "Fonte: Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 48, Fig. 48.7, p. 1879. Lesões da medula cervical: em A, a medula do idoso pinçada entre o disco e os osteófitos na frente e o ligamento amarelo dobrado atrás; em B, o centro da medula lesado na síndrome central; em C, a hemissecção de BROWN-SÉQUARD; em D, a síndrome anterior, no território da artéria espinal anterior.",
+    "largura": 935,
+    "altura": 854
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "coluna-0533": {
   "conceito": "A fratura está em T12–L1 e o paciente tem anestesia em sela, retenção urinária e sinais motores mistos nos membros inferiores. O conjunto aponta para o **cone medular**, na transição entre medula e raízes.\n\nNo adulto, o resumo situa o afilamento final da medula entre T11 e L1 e a terminação medular em L1. A lesão nessa região pode combinar sinais de primeiro e segundo neurônio motor, déficits nos membros inferiores e alterações vesicais, intestinais e sexuais. É essa combinação, e não apenas o número de uma vértebra, que localiza o caso (Rockwood, 10ª ed., cap. 49, “O cone medular e a cauda equina”).\n\n**A cauda equina contém raízes, não medula.** Por isso chamá-la de lesão isolada não explica tão bem os sinais mistos apresentados. Os sintomas esfincterianos precisam ser pesquisados ativamente; o capítulo adverte que uma disfunção vesical pode passar despercebida quando o paciente já chega sondado.\n\nAs síndromes central e anterior são padrões de lesão medular incompleta definidos por outras dissociações: predomínio de fraqueza nos braços na central e perda motora/dolorosa/térmica com propriocepção preservada na anterior. Não são a melhor localização para o conjunto em sela e esfincteriano descrito.\n\n> **Na prova:** transição toracolombar, sinais mistos e anestesia em sela com disfunção vesical: cone medular.\n\n**Por que esta questão foi criada.** Treina a localização pela associação de achados, incluindo uma função vesical que pode ficar oculta pela sondagem.",
