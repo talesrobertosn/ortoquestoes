@@ -289,7 +289,7 @@ O erro mais temido é o **alongamento excessivo** (overstuffing), uma prótese g
 
 Na revisão sistemática citada (152 próteses que falharam), os motivos de revisão foram **afrouxamento asséptico (30%)**, **rigidez (20%)** e **dor persistente (17%)**, com mediana de 14 meses; as de **encaixe sob pressão** falharam mais, por afrouxamento sintomático. Linhas radiolúcidas que não progridem em volta de hastes lisas são comuns e não se associam a sintomas; linha que progride faz pensar em infecção ou instabilidade.
 
-!questoes central=trauma-0972 relacionadas=trauma-0027,trauma-0692,ombro-cotovelo-0674 treino=trauma-1417,trauma-1418
+!questoes central=trauma-0972 relacionadas=trauma-0027,trauma-0692 treino=trauma-1417,trauma-1418,ombro-cotovelo-0674
 conceito: Na prótese da cabeça do rádio, o diâmetro segue o menor eixo da cabeça elíptica e a altura não pode exceder a anatômica; o alongamento excessivo é a causa técnica mais comum de falha.
 como: O TECOC pediu o que evitar na escolha do tamanho (o maior diâmetro); o TARO 2019, a principal complicação; o CET-PR, o sinal radiográfico de alongamento.
 armadilha: Usar o maior diâmetro: deixa a prótese grande demais, o que erode a tróclea lateral e atrapalha o fechamento do anular.
