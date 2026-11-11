@@ -29,6 +29,25 @@ Estudar, "Atlas 3D · Beta". Código em `src/atlas3d/` (motor, carregador, dados
 - Ficha anatômica (`ui/FichaAnatomica.tsx`), relações no modelo (`dados/relacoes.ts`, `Motor.mostrarRelacoes`) e aba
   Inserções na ficha dos ossos.
 
+## Z-Anatomy completo (11/11/2026)
+- Fonte: `C:\Users\tales_zh0ni7\zanatomy` (fora do git): `Startup.blend` do Z-Anatomy e `TA2.csv`. Blender 3.6.23
+  instalado; rodar sempre com `--background --factory-startup --disable-autoexec` (ler o texto das etiquetas trava o
+  Blender). Scripts: `scripts/atlas3d/blender/inventario.py` e `exportar_extras.py`, depois
+  `node scripts/atlas3d/preparar_extras.mjs <pasta zanatomy>`.
+- Inventário: 7.184 objetos (4.569 malhas, 951 curvas, 1.660 etiquetas). A geometria anatômica já estava quase toda no
+  site (vinda do Anatomy Atlas 3D 0.1.3). O que entrou agora:
+  - **Áreas de origem e inserção** (705, `insercoes.json` + `modelos/insercoes.glb`, baixado só quando uma área
+    aparece): na ficha do músculo, a origem e a inserção acendem a área exata no osso (com reflexo translúcido quando
+    os músculos estão ligados); na ficha do osso, "Pintar as áreas no osso" e a lista de todos os músculos desenhados.
+    Músculos fora do banco conferido (cabeça, tronco) ganham origem e inserção pelos ossos das áreas.
+  - **Regiões do corpo** (256, camada `region` → grupo `regiao`, translúcida, em Personalizar).
+  - **Nomes em português da TA2** para 2.898 das 3.048 estruturas (ver NOMES.md).
+  - **Onde fica**: trilha sistema › parte na ficha e "Parte de: …" no cartão rápido (`arvore.json`).
+- O Z-Anatomy não tem o aparelho reprodutor feminino nem os músculos intrínsecos da língua separados.
+- Netter, Atlas of Human Anatomy, 6ª ed. (inglês), em `OrtoQuestoes-Biblioteca\livros`; texto extraído com
+  `pdftotext -layout` em `OrtoQuestoes-Biblioteca\netter6-texto\netter6.txt` (página = posição no PDF). Tem as tabelas
+  de músculos (origem, inserção, inervação, ação, irrigação) e textos por região: fonte das fichas não ortopédicas.
+
 ## Pendências
 - Vasos (artérias e veias) no banco anatômico; músculos do tronco e da cabeça (fora do livro de referência ortopédico).
 - Conflitos e pendências do banco: ver COBERTURA-ANATOMIA.md.
