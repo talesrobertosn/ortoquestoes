@@ -17,6 +17,8 @@ interface Props {
   aoIsolar: () => void
   aoOcultar: () => void
   aoFavoritar: () => void
+  /** copia o link desta estrutura */
+  aoCompartilhar?: () => void
   aoFechar: () => void
   /** no computador: recolhe o painel no cartão compacto, sem perder a seleção */
   aoRecolher?: () => void
@@ -61,6 +63,7 @@ export function PainelFicha(p: Props) {
         <button type="button" onClick={p.aoIsolar} aria-pressed={p.isolada}><Icone nome="olho" tamanho={17} /><span>{p.isolada ? 'Ver tudo' : 'Isolar'}</span></button>
         <button type="button" onClick={p.aoOcultar}><Icone nome="olho-riscado" tamanho={17} /><span>Esconder</span></button>
         <button type="button" onClick={p.aoFavoritar} aria-pressed={p.favorita}><Icone nome="estrela" tamanho={17} /><span>{p.favorita ? 'Salva' : 'Salvar'}</span></button>
+        {p.aoCompartilhar && <button type="button" onClick={p.aoCompartilhar}><Icone nome="link" tamanho={17} /><span>Link</span></button>}
       </div>
 
       {ficha ? (

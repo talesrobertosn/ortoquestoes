@@ -59,6 +59,19 @@ Estudar, "Atlas 3D · Beta". Código em `src/atlas3d/` (motor, carregador, dados
   sínfise sacrococcígea, ligamento transverso inferior da escápula, o oponente do dedo mínimo do pé, o temporoparietal,
   o arco iliopectíneo e o nervo do quadrado femoral que o modelo põe na camada do encéfalo.
 
+## Experiência nova (11/11/2026, pedido do Tales)
+- **Dois modos** no topo (`ui/Atlas.tsx`, `dados/modos.ts`): **Ortopedia** (sempre o modo de abertura) e **Corpo inteiro**.
+  O Corpo inteiro de entrada só por link `?m=corpo` ou link de estrutura de camada do corpo. A busca da Ortopedia
+  inclui o que o banco põe em região ortopédica (medula, raízes, cauda equina) e avisa quando há resultados no outro modo.
+- **Sistemas** (`SISTEMAS`) e **navegador por partes** (`ui/Navegador.tsx`): abre o sistema, isola, enquadra e desce
+  pela hierarquia; a trilha da ficha também abre o grupo.
+- **Teste-se** (`ui/ModoEstudo.tsx`, tecla T): alvo em dourado com o resto translúcido, quatro opções da mesma camada,
+  placar e sequência.
+- **Nomes no modelo** (`ui/Rotulos.tsx`): rótulos sobre o que está isolado (até 40), sem sobreposição.
+- **Ferramentas**: salvar imagem (PNG com assinatura), copiar link, como usar; botão de link na ficha.
+- Plano: ossos e músculos para todos; o resto (inclusive todo o Corpo inteiro) para assinantes, com convite gentil.
+- Visualizações prontas novas: plexo braquial, túnel do carpo, disco-ligamentos-raízes.
+
 ## Pendências
 - Vasos (artérias e veias) no banco anatômico; músculos do tronco e da cabeça (fora do livro de referência ortopédico).
 - Conflitos e pendências do banco: ver COBERTURA-ANATOMIA.md.

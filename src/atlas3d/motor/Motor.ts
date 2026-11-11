@@ -193,6 +193,8 @@ export class Motor {
 
   /** Restringe a cena a caixas (região ortopédica, uma por lado). null = corpo inteiro. */
   definirRegiao(caixas: Box3[] | null) { this.regiao = caixas?.length ? caixas : null; this.aplicarVisibilidade() }
+  /** Ids isolados agora (visualização pronta, sistema, relações); null quando nada está isolado. */
+  get idsIsolados(): string[] | null { return this.isoladas ? [...this.isoladas].filter((id) => this.registros.get(id)?.malha?.visible) : null }
   private get caixaDaRegiao() { if (!this.regiao) return null; const c = new Box3(); for (const r of this.regiao) c.union(r); return c }
 
   private dentroDaRegiao(e: Estrutura) {
@@ -419,6 +421,22 @@ export class Motor {
 
   // ---------- quadro a quadro ----------
 
+  /** Chamado depois de cada quadro desenhado (rótulos que acompanham a câmera). Devolve a função que desliga. */
+  private ouvintesQuadro = new Set<() => void>()
+  ouvirQuadro(f: () => void) { this.ouvintesQuadro.add(f); this.pedirQuadro(); return () => { this.ouvintesQuadro.delete(f) } }
+
+  /** Centro (mm) da caixa de uma estrutura, para rótulos e medidas. */
+  centroDe(id: string) {
+    const e = this.registros.get(id)?.estrutura
+    return e ? new Vector3((e.b[0] + e.b[3]) / 2, (e.b[1] + e.b[4]) / 2, (e.b[2] + e.b[5]) / 2) : null
+  }
+
+  /** Imagem do que está na tela (PNG). Desenha de novo na hora: o buffer do WebGL não é preservado entre quadros. */
+  capturarImagem() {
+    this.renderer.render(this.cena, this.camera)
+    return this.renderer.domElement.toDataURL('image/png')
+  }
+
   pedirQuadro() {
     if (this.quadroPendente || this.descartado) return
     this.quadroPendente = requestAnimationFrame(this.quadro)
@@ -439,6 +457,7 @@ export class Motor {
     if (this.controles.update()) continuar = true
     this.renderer.render(this.cena, this.camera)
     this.quadros++
+    for (const f of this.ouvintesQuadro) f()
     if (continuar) this.pedirQuadro()
   }
 
