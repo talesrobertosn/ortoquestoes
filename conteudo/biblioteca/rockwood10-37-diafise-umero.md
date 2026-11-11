@@ -1,6 +1,6 @@
 ---
 id: rockwood10-37-diafise-umero
-versao: 1
+versao: 2
 titulo: Fratura da diáfise do úmero
 especialidade: trauma
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025)
 capitulo: Capítulo 37 · Humeral Shaft Fractures
 autores: Dominique M. Rouleau, Claire Bastard, Rocio Branes e Julien Chapleau
-fonte: Capítulo enviado pelo Tales em 17/10/2026 (diafise_umero.pdf, 34 páginas; capítulo 37 nas pp. 1 a 33, a p. 34 é o início do capítulo 38 e foi ignorada)
+fonte: Capítulo enviado pelo Tales em 17/10/2026 (diafise_umero.pdf, 34 páginas; capítulo 37 nas pp. 1 a 33, a p. 34 é o início do capítulo 38 e foi ignorada); consulta ao Campbell's Operative Orthopaedics, 15ª ed., cap. 13 (Fig. 13.21, p. 613). As páginas citadas são as impressas.
 subtemas: Fratura da diáfise do úmero
 resumo: Nervo radial e HOLSTEIN-LEWIS, órtese funcional de SARMIENTO, tolerâncias (20 graus, 30 graus de rotação, 3 cm), indicações de cirurgia e cotovelo flutuante, vias anterolateral e posterior, placa de 4,5 mm com oito corticais, MIPO e o musculocutâneo, haste com bloqueio distal aberto e pseudartrose atrófica.
 ---
@@ -609,14 +609,14 @@ Cresce com as artroplastias de ombro e cotovelo e com a longevidade. Fatores de 
 
 - **WRIGHT e COFIELD** (ombro): **tipo A** começa na ponta da haste e sobe; **tipo B** fica em volta da ponta; **tipo C** fica abaixo da ponta.
 - **O'DRISCOLL e MORREY** (cotovelo, classificação da Mayo): **I** periarticular ou metafisária (côndilos ou olécrano), **II** na altura da haste, **III** além da ponta, na diáfise.
+- **CAMPBELL** (fora deste capítulo; Campbell 15, cap. 13, Fig. 13.21, p. 613): o úmero com prótese de ombro dividido em **quatro regiões**: **1** tubérculos, **2** metáfise proximal, **3** diáfise proximal e **4** diáfise média e distal. O mesmo capítulo do Campbell (p. 612) lembra que a fratura intraoperatória mais comum da artroplastia do ombro é a da diáfise, em geral no terço médio a distal.
 
 **Conduta:** depende da **estabilidade da prótese**, do nível e do osso. Com **prótese estável**, tentar o tratamento sem cirurgia, desviada ou não; operar quando ele falha, o que é mais comum nos **tipos B e C** do ombro e no **III** do cotovelo. **Prótese solta: revisão com haste mais longa**, cimentada ou não, que **ultrapasse a fratura em pelo menos dois diâmetros corticais**, sem deixar o cimento entrar no foco; em geral com **placa lateral e cerclagens**. Complicações de até **39%**. Na revisão de prótese reversa, 16% de fraturas intraoperatórias, que, bem fixadas, não mudam o resultado.
 
 !questoes relacionadas=trauma-0926 treino=trauma-1386
 conceito: Na fratura periprotética da diáfise, prótese estável permite tentar o tratamento sem cirurgia; prótese solta exige revisão com haste longa que ultrapasse a fratura em dois diâmetros corticais, em geral com placa e cerclagens.
-como: A SBOT-SP (sem ano) perguntou em que região da classificação de CAMPBELL fica a fratura periprotética da diáfise proximal (região 3).
+como: A SBOT-SP (sem ano) perguntou em que região da classificação de CAMPBELL fica a fratura periprotética da diáfise proximal: região 3, pela Fig. 13.21 do Campbell 15 (cap. 13, p. 613), que vai de 1 (tubérculos) e 2 (metáfise proximal) a 4 (diáfise média e distal). O Rockwood usa WRIGHT e COFIELD para o ombro e O'DRISCOLL e MORREY para o cotovelo.
 armadilha: Fixar com placa mantendo uma haste solta: a instabilidade do componente só se resolve trocando a haste.
-alerta: A classificação de CAMPBELL não está neste capítulo, que usa WRIGHT e COFIELD para o ombro e O'DRISCOLL e MORREY para o cotovelo.
 !fim
 
 # Epidemiologia e mecanismo {radar=fundamento}
