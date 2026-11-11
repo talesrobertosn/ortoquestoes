@@ -10,14 +10,14 @@ edições mais novas, com o comentário mais completo; repartidas entre as área
 A lista fica fixa no arquivo para as páginas não mudarem a cada deploy.
 
 Provas anteriores (Tales, 11/11/2026: "só umas 20 de cada, senão perde sentido
-a pessoa pagar a assinatura"): cada edição (/provas-anteriores/taro-2026/ ...)
-mostra no máximo 20 questões completas, com o comentário, e não mais a prova
-inteira com o gabarito. As 20 de cada edição ficam em "por_edicao" e também
+a pessoa pagar a assinatura"; 11/11/2026, depois: "no máximo tipo 10"): cada edição (/provas-anteriores/taro-2026/ ...)
+mostra no máximo 10 questões completas, com o comentário, e não mais a prova
+inteira com o gabarito. As 10 de cada edição ficam em "por_edicao" e também
 entram em "ids" (a página própria delas mostra o comentário inteiro). Escolha:
 questões válidas, com comentário sem alerta, uma de cada assunto por vez, com
 imagem e comentário mais completo primeiro.
 
-    python3 scripts/selecionar_completas.py [--total 50] [--por-edicao 20]
+    python3 scripts/selecionar_completas.py [--total 50] [--por-edicao 10]
 """
 
 from __future__ import annotations
@@ -94,7 +94,7 @@ def por_edicao(limite: int) -> dict[str, list[str]]:
 def principal() -> int:
     argumentos = argparse.ArgumentParser()
     argumentos.add_argument("--total", type=int, default=50)
-    argumentos.add_argument("--por-edicao", type=int, default=20)
+    argumentos.add_argument("--por-edicao", type=int, default=10)
     opcoes = argumentos.parse_args()
     total = opcoes.total
     por_area = candidatas()

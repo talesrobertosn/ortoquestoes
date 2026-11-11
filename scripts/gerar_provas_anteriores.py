@@ -8,7 +8,7 @@ Por que existem. Muita gente procura "TEOT anos anteriores", "provas anteriores
 do TARO", "TARO 2019", "provas anteriores de cirurgia da mão". As páginas de
 destino respondem pelo conjunto; nenhuma tinha endereço próprio para UMA edição.
 Cada página de edição é útil sem buscador nenhum: mostra o que aquela edição
-cobrou por assunto e até 20 questões completas, com o gabarito e o comentário
+cobrou por assunto e até 10 questões completas, com o gabarito e o comentário
 de cada alternativa (Tales, 11/11/2026: só uma amostra, senão a assinatura perde
 o sentido), e leva direto para fazer a prova inteira no site. Nada de página feita só de palavra-chave (ver gerar_paginas_seo.py).
 
@@ -72,7 +72,7 @@ def pagina_questao(q: dict) -> str | None:
     return None
 
 
-# Até 20 questões completas por edição (Tales, 11/11/2026): a página mostra uma amostra da prova com o
+# Até 10 questões completas por edição (Tales, 11/11/2026): a página mostra uma amostra da prova com o
 # comentário inteiro, e não mais a prova toda com o gabarito; o resto fica no site, para quem treina.
 # A escolha é fixa, em seo_questoes_completas.json (scripts/selecionar_completas.py).
 ABERTAS: dict[str, list[str]] = (ler_json(seo.ARQUIVO_COMPLETAS, {}) or {}).get("por_edicao", {})
@@ -158,6 +158,7 @@ background:var(--sup);border:1px solid var(--traco);text-decoration:none;color:v
 .aberta .tabela{overflow-x:auto;margin:.3rem 0 .9rem}.aberta .tabela table{min-width:28rem}
 .aberta .nota{border-left:3px solid var(--marca);padding:.2rem .8rem;margin:0 0 .7rem}
 .aberta__refs{font-size:.88rem;color:var(--texto2)}
+.aviso--prova{margin:0 0 1.1rem}
 .questoes .anulada{color:var(--ouro-escuro);font-weight:700}
 .questoes .letra{font-style:normal;font-size:.86rem;font-weight:800;color:var(--marca,#14655e);justify-self:start;padding:.1rem .55rem;border-radius:999px;background:var(--veu,#e6efee);margin-top:.25rem}
 .vizinhas{display:flex;justify-content:space-between;gap:.6rem;flex-wrap:wrap;margin-top:1.4rem}
@@ -207,6 +208,7 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
     fem = prova in FEMININAS
     artigo, art = ("da", "a") if fem else ("do", "o")
     comentado = "comentada" if fem else "comentado"
+    completa = "completa" if fem else "completo"
     anatomia = sum(1 for q in qs if "anatomia" in ((q.get("origem") or {}).get("arquivo") or "").lower())
     if prova == "TEOT":
         titulo = f"TEOT {ano}: gabarito e questões comentadas | Orto Questões"
@@ -285,12 +287,15 @@ def pagina_edicao(dados: dict, prova: str, ano: int, qs: list[dict], anos: list[
     fechadas = len(qs) - len(abertas)
     if abertas:
         itens = "".join(questao_aberta(q, i + 1, (q.get("subtemas") or [assunto_de(q)])[0]) for i, q in enumerate(abertas))
-        corpo.append(f"""<section id="questoes"><h2>{d.num(len(abertas))} questões {artigo} {d.esc(nome)} comentadas</h2>
-<p class="sub">Uma amostra da prova, de vários assuntos, com o enunciado, as alternativas e o comentário de cada uma. Tente responder antes de abrir o gabarito.</p>
+        corpo.append(f"""<section id="questoes"><h2>Amostra: {d.num(len(abertas))} questões {artigo} {d.esc(nome)} comentadas</h2>
+<div class="aviso aviso--prova"><p><strong>Esta página mostra uma amostra.</strong> {art.capitalize()} {d.esc(nome)} {completa}, com as {d.num(len(qs))} questões,
+o gabarito da banca e o comentário de cada alternativa, está no Orto Questões.</p>
+<p style="margin-top:.6rem"><a class="botao principal" href="{treino}">Fazer {art} {d.esc(nome)} {completa} no site</a></p></div>
+<p class="sub">{d.num(len(abertas))} questões de vários assuntos, com o enunciado, as alternativas e o comentário. Tente responder antes de abrir o gabarito.</p>
 {itens}
 <div class="aviso"><p><strong>As outras {d.num(fechadas)} questões {artigo} {d.esc(nome)}</strong> estão no site, com o gabarito da banca e o
 comentário de cada alternativa. Faça a prova inteira no tempo ou treine por assunto, e o que errar volta na revisão.</p>
-<p style="margin-top:.6rem"><a class="botao principal" href="{treino}">Fazer {art} {d.esc(nome)} completa</a></p></div></section>""")
+<p style="margin-top:.6rem"><a class="botao principal" href="{treino}">Fazer {art} {d.esc(nome)} {completa}</a></p></div></section>""")
     else:
         corpo.append(f"""<section id="questoes"><h2>As questões {artigo} {d.esc(nome)}</h2>
 <div class="aviso"><p>As {d.num(len(qs))} questões {artigo} {d.esc(nome)} estão no site, com o gabarito da banca.</p>
@@ -334,14 +339,14 @@ def pagina_indice(dados: dict, grupos: dict) -> tuple[str, dict]:
     n_mao = sum(len(por[p]) for p in provas_mao)
     titulo = "Provas anteriores do TEOT e do TARO com gabarito, ano a ano | Orto Questões"
     descricao = (f"Provas anteriores do TEOT ({d.faixa(anos_teot)}) e do TARO ({d.faixa(anos_taro)}) com gabarito e comentário, e {n_mao} provas de "
-                 "residência em cirurgia da mão. Cada edição com 20 questões comentadas na íntegra e o que mais caiu.")
+                 "residência em cirurgia da mão. Cada edição com 10 questões comentadas de amostra e o que mais caiu.")
     faq = [
         ("Onde encontrar as provas anteriores do TEOT?",
          f"Aqui estão as provas do TEOT de {d.faixa(anos_teot)}, uma página por ano, com o que cada edição cobrou "
-         "e 20 questões comentadas na íntegra. No site, dá para fazer cada prova inteira no tempo e ler o comentário de todas as alternativas."),
+         "e 10 questões comentadas de amostra. No site, dá para fazer cada prova inteira no tempo e ler o comentário de todas as alternativas."),
         ("E as provas anteriores do TARO?",
          f"O acervo tem o TARO de {d.faixa(anos_taro)}, um ano por página. Os cadernos são divulgados pela Comissão de Ensino e Treinamento "
-         "da SBOT; no site eles estão transcritos, com gabarito e comentário, e aqui cada ano mostra 20 questões comentadas."),
+         "da SBOT; no site eles estão transcritos, com gabarito e comentário, e aqui cada ano mostra 10 questões comentadas de amostra."),
         ("Tem provas anteriores de cirurgia da mão?",
          "Sim, as provas de seleção para a residência em cirurgia da mão: " + ", ".join(nome_prova(p) for p in provas_mao)
          + ". As provas de título da SBCM e o SIMÃO não estão no acervo; para elas há OrtoQuestões Simulados no padrão das provas, "
@@ -359,7 +364,7 @@ def pagina_indice(dados: dict, grupos: dict) -> tuple[str, dict]:
     corpo.append(d.heroi(
         "Anos anteriores",
         "Provas anteriores <em>do TEOT, do TARO e de cirurgia da mão</em>",
-        "Uma página para cada edição: o que aquele ano mais cobrou e 20 questões comentadas na íntegra, com o gabarito da banca. "
+        "Uma página para cada edição: o que aquele ano mais cobrou e 10 questões comentadas de amostra. A prova completa fica no site. "
         "Escolha a prova e o ano, veja o que caiu e faça a prova no site, no tempo.",
         "Provas anteriores",
         [("Provas do TEOT", "#teot", "principal"), ("Provas do TARO", "#taro", "claro"), ("Cirurgia da mão", "#mao", "claro")],
