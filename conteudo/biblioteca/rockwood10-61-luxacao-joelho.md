@@ -161,7 +161,7 @@ A base biomecânica do teste está no capítulo. Cortar o canto com o **cruzado 
 
 > Na prova: rotação externa aumentada **só a 30°** sugere canto posterolateral isolado; **a 30° e a 90°**, canto **e** cruzado posterior.
 
-!questoes central=trauma-1030,joelho-0222 relacionadas=joelho-0308 treino=trauma-1622
+!questoes central=trauma-1030,joelho-0222 relacionadas=joelho-0308,joelho-0043 treino=trauma-1622
 conceito: Rotação externa aumentada a 30° e a 90° de flexão indica lesão combinada do cruzado posterior e do canto posterolateral.
 como: O TARO 2025 deu o teste positivo nos dois ângulos; o TARO 2011, a diferença de 10° com o joelho a 90°. No TARO 2006 (certo ou errado, sem gabarito oficial registrado no acervo), a afirmação de que o cruzado posterior isolado aumenta a rotação a 30° e a 90° contraria a biomecânica do capítulo: o aumento em todos os ângulos exige o canto lesado junto.
 armadilha: Canto posterolateral isolado: aumenta a rotação sobretudo a 30°, menos a 90°.
@@ -243,7 +243,7 @@ armadilha: Sóleo: não entra no defeito capsular que o capítulo descreve, que 
 
 O cruzado posterior dá a maior parte da restrição à translação posterior em todos os ângulos e **95%** dela entre 30° e 90°. É restritor **secundário** do varo (só aumenta o varo se o canto também estiver cortado), do valgo e das rotações. Um detalhe que a prova pode usar: num estudo em cadáver, o **ligamento poplíteo oblíquo** foi o principal restritor ligamentar da **hiperextensão**; cortá-lo aumentou a hiperextensão tanto quanto, ou mais que, cortar os dois cruzados juntos. A ordem entre os cruzados está no Campbell 15 (cap. 50, p. 2095): o posterior só freia a hiperextensão **depois da ruptura do cruzado anterior**.
 
-!questoes relacionadas=joelho-0186 treino=joelho-0358
+!questoes relacionadas=joelho-0186,joelho-0228 treino=joelho-0358
 conceito: Na hiperextensão, o cruzado posterior é restritor secundário: pelo Campbell 15 (cap. 50, p. 2095), ele só passa a segurar a hiperextensão depois da ruptura do cruzado anterior; o Rockwood destaca o ligamento poplíteo oblíquo, expansão do semimembranáceo, como o principal restritor ligamentar.
 como: O TEOT 2025 perguntou quando o cruzado posterior passa a segurar a hiperextensão; o gabarito oficial, depois da ruptura do cruzado anterior, é o que diz o Campbell 15 (cap. 50, p. 2095), que também lhe dá 89% da resistência à translação posterior.
 !fim
