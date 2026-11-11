@@ -260,7 +260,7 @@ Na criança, a classificação foi adaptada: a clavícula sai do tubo de periós
 
 **O tratamento.** I e II sem cirurgia (no adulto, dor e limitação em 9% a 30% do I e 23% a 42% do II; a criança parece ir melhor). O III é controverso. **IV, V e VI** são em geral operados. A **indicação cirúrgica mais comum no jovem** é o **tipo IV** com o osso preso no trapézio. O autor: tipoia por 2 a 4 semanas para I, II e a maioria dos III, contato evitado por 6 a 12 semanas; IV, V e VI operados, quase sempre só com **sutura do periósteo** sobre a clavícula reduzida; placa em gancho no mais velho com fratura segmentar ou articular, retirada com cerca de 12 semanas. Contato só depois de 3 meses. A maior armadilha: **não reconhecer o tipo IV**.
 
-!questoes treino=pediatria-1239
+!questoes relacionadas=pediatria-0915 treino=pediatria-1239
 conceito: A acromioclavicular da criança costuma ser pseudoluxação (o osso sai do periósteo); o tipo IV, posterior no trapézio, é o mais perdido no AP e o mais operado nos jovens; ZANCA a 10 a 15 graus cefálicos; tomografia para o IV.
 como: Projeção; nenhuma questão oficial do acervo cobrou a acromioclavicular da criança.
 armadilha: Confiar só no AP e deixar passar o tipo IV.

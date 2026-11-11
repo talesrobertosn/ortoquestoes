@@ -151,7 +151,7 @@ alerta: `mao-0797` está sem gabarito; o Green (p. 1151) chama a perda de romboi
 
 No Green (cap. 34, pp. 1150 e 1152) são quatro: **miose, ptose, anidrose e enoftalmia**; o Tachdjian (p. 405) cita ptose, miose e enoftalmia, por lesão dos simpáticos de T1. A pupila é **pequena** (midríase não entra) e a anidrose é **falta** de suor. O prognóstico é ruim: avulsão das raízes inferiores (Green, cap. 40, p. 1393), **forte indicador de mau resultado** (Campbell, p. 1311). É o HORNER que separa NARAKAS III de IV.
 
-!questoes central=mao-0721 relacionadas=mao-0671,mao-0438
+!questoes central=mao-0721 relacionadas=mao-0671,mao-0438,mao-0090
 conceito: HORNER = ptose, miose, anidrose e enoftalmia, por lesão simpática junto de T1; indica avulsão de C8-T1 e mau prognóstico.
 como: O IAUPE 2025 pediu a tríade; a FMRP-USP 2026, o sinal que não faz parte (midríase); o TARO 2025, o tipo de alteração do suor e o prognóstico na paralisia obstétrica.
 armadilha: Marcar midríase, hiperidrose ou bom prognóstico; ou lembrar a síndrome como parassimpática.

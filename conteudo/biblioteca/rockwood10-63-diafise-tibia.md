@@ -555,7 +555,7 @@ alerta: A afirmação do TARO 2006 de que a neuropatia é um dos fatores causado
 
 Rara nas fechadas e expostas tipo I (**1,8%**), chega a **8% a 16%** no tipo III; numa série de 323 expostas, 20,7%. O germe mais implicado é o **Staphylococcus aureus**, em **64%** das infecções profundas da tíbia, mas há muitos germes hospitalares, e alguns dão antibiótico com cobertura hospitalar no fechamento definitivo das partes moles. Na haste, a infecção se associa a necrose térmica, manejo inadequado da fasciotomia, troca de haste, fixador primário, gravidade da exposta, uso de drogas e complicações da cobertura. O tratamento pode manter ou retirar a haste conforme a fase da consolidação, mas o biofilme dificulta; as **hastes com antibiótico** dão mais estabilidade que espaçadores e pérolas, com até 90% de sucesso (menos quando a haste fica). A osteomielite da tíbia pode voltar anos depois, pede desbridamento agressivo e antibiótico prolongado, e pode acabar em amputação tardia.
 
-!questoes relacionadas=trauma-0877
+!questoes relacionadas=trauma-0877,trauma-0218
 conceito: O Staphylococcus aureus é o germe mais implicado na infecção profunda da tíbia (64%), com muitos germes hospitalares.
 como: O TARO 2010 perguntou o agente mais comum na exposta tipo 3B de GUSTILO (S. aureus, contra Morganella, Klebsiella e Pseudomonas).
 armadilha: Pseudomonas: aparece entre os germes hospitalares, mas não é o mais comum.

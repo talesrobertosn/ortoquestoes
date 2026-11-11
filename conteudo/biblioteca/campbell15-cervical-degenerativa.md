@@ -157,7 +157,7 @@ Os detalhes que o Campbell sublinha são justamente os que pegam o candidato. O 
 
 Assim, a **hérnia C6-C7** dá radiculopatia de **C7**: fraqueza do tríceps, do flexor radial do carpo e dos extensores dos dedos, **reflexo tricipital diminuído** e alteração no dedo médio. A face lateral do braço é C5; o bíceps é C5 e C6; a região tenar (polegar) é C6.
 
-!questoes central=coluna-0207
+!questoes central=coluna-0207 relacionadas=coluna-0048,coluna-0314
 conceito: O disco C6-C7 comprime a raiz C7, que sai acima do pedículo de C7: fraqueza do tríceps e do flexor radial do carpo, reflexo tricipital diminuído e alteração no dedo médio.
 como: A SBOT-SP perguntou o que o paciente com hérnia C6-C7 pode apresentar, com distratores das raízes C5 (braço lateral) e C6 (bíceps, região tenar).
 armadilha: Aplicar a regra lombar e achar que C6-C7 pega C6; na cervical, o disco pega a raiz de número maior.

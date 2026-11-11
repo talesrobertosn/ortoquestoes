@@ -232,7 +232,7 @@ O **neurofibroma** nasce **dentro dos fascículos**, e por isso é mais difícil
 
 O **hamartoma lipofibromatoso (lipofibroma do nervo)** é um tumor raro de nervo periférico que, no membro superior, acomete **quase sempre o mediano**; o ulnar e o radial são exceções relatadas (Green, p. 2011 e 2012). Aparece na infância ou na adolescência como aumento lento do antebraço distal ou da palma, às vezes com sintomas compressivos. A **ressonância pode ser diagnóstica**: o Campbell (p. 3572) descreve feixes nervosos serpiginosos de baixo sinal mergulhados em gordura de alto sinal, e lembra que **um terço tem macrodactilia**. A conduta é conservadora: a dissecção interfascicular e a excisão parcial costumam deixar déficit permanente e devem ser evitadas; opera-se **só para descomprimir** o nervo (em regra, abrir o túnel do carpo), e, se a ressonância não fechar o diagnóstico, biopsia-se um ramo cutâneo.
 
-!questoes central=mao-1551 relacionadas=mao-0754 treino=mao-2185
+!questoes central=mao-1551 relacionadas=mao-0754,tumores-0124 treino=mao-2185
 conceito: schwannoma é o tumor benigno de nervo mais comum do membro superior, lento, bem delimitado, excêntrico e enucleável; neurofibroma é o tumor da doença de VON RECKLINGHAUSEN, dentro dos fascículos; hamartoma lipofibromatoso acomete o nervo mediano
 como: a USP-SP 2026 pediu a afirmativa correta sobre schwannomas; o IAUPE 2025 pediu o tumor benigno de nervo ligado à doença de VON RECKLINGHAUSEN; a SBCM 2022 pediu o nervo mais acometido pelo hamartoma fibrolipomatoso
 armadilha: dizer que o schwannoma tem limites mal definidos ou que exige ressecção segmentar do nervo (isso descreve o neurofibroma); marcar neurilemoma ou schwannoma, que são o mesmo tumor, na pergunta da neurofibromatose

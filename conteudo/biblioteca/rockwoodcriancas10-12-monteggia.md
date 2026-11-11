@@ -380,7 +380,7 @@ Depois: gesso bivalvado com o antebraço em **60 a 90 graus de supinação** e o
 
 **Redeslocamento.** Ocorre em até **25%**. As causas são bíceps encurtado, osteotomia insuficiente, partes moles ainda interpostas e deformidade plástica do rádio não reconhecida; falha precoce pede nova cirurgia.
 
-!questoes central=pediatria-0742 treino=pediatria-1298,pediatria-1299,pediatria-1451
+!questoes central=pediatria-0742 relacionadas=trauma-0332 treino=pediatria-1298,pediatria-1299,pediatria-1451
 conceito: BELL TAWSE reconstrói o anular com a porção central do tríceps, passada por um furo na ulna e em volta do colo do rádio, com força posterior; hoje o centro da reconstrução é a osteotomia de abertura da ulna com reparo do anular nativo, se a cabeça ainda é côncava.
 como: TARO 2007 perguntou o que a técnica de BELL TAWSE utiliza para reconstruir o ligamento anular (porção central do tríceps).
 armadilha: Trocar a porção central (BELL TAWSE) pela lateral (BUCKNILL e LLOYD-ROBERTS), ou reconstruir só o anular sem corrigir a ulna.

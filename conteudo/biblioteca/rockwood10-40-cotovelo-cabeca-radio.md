@@ -289,7 +289,7 @@ O erro mais temido é o **alongamento excessivo** (overstuffing), uma prótese g
 
 Na revisão sistemática citada (152 próteses que falharam), os motivos de revisão foram **afrouxamento asséptico (30%)**, **rigidez (20%)** e **dor persistente (17%)**, com mediana de 14 meses; as de **encaixe sob pressão** falharam mais, por afrouxamento sintomático. Linhas radiolúcidas que não progridem em volta de hastes lisas são comuns e não se associam a sintomas; linha que progride faz pensar em infecção ou instabilidade.
 
-!questoes central=trauma-0972 relacionadas=trauma-0027,trauma-0692 treino=trauma-1417,trauma-1418
+!questoes central=trauma-0972 relacionadas=trauma-0027,trauma-0692 treino=trauma-1417,trauma-1418,ombro-cotovelo-0674
 conceito: Na prótese da cabeça do rádio, o diâmetro segue o menor eixo da cabeça elíptica e a altura não pode exceder a anatômica; o alongamento excessivo é a causa técnica mais comum de falha.
 como: O TECOC pediu o que evitar na escolha do tamanho (o maior diâmetro); o TARO 2019, a principal complicação; o CET-PR, o sinal radiográfico de alongamento.
 armadilha: Usar o maior diâmetro: deixa a prótese grande demais, o que erode a tróclea lateral e atrapalha o fechamento do anular.
@@ -407,7 +407,7 @@ A cirurgia segue um roteiro sistemático, de dentro para fora:
 
 > Na prova: **coronoide, cabeça do rádio, colateral lateral e, se precisar, colateral medial.** E um cotovelo **rígido e estável** é preferível a um frouxo e incongruente.
 
-!questoes central=trauma-0205,trauma-0318,trauma-1295 relacionadas=trauma-0684 treino=trauma-1422,trauma-1424,trauma-1425
+!questoes central=trauma-0205,trauma-0318,trauma-1295 relacionadas=trauma-0684,ombro-cotovelo-0246 treino=trauma-1422,trauma-1424,trauma-1425
 conceito: Na tríade terrível, repara-se o coronoide, depois a cabeça do rádio, depois o colateral lateral (em geral avulsionado da origem) e só então, se houver instabilidade, o medial.
 como: O TEOT 2022 pediu a ordem num caso com Mason 3 e Regan-Morrey 2; o TEOT 2023, o tipo de lesão do colateral lateral (avulsão na origem); o SBOT-SP, o que fazer depois de coronoide e cabeça (lateral, e medial se persistir).
 armadilha: Medial antes do lateral: o lateral é o que mais rompe e é reparado primeiro.

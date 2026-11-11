@@ -266,7 +266,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "c8d6f10f07b9d142201df8a12d57671805444d1f3de09287ef421b7bc083934e"
     }
    ],
@@ -397,7 +397,7 @@
       "mayfield-e-a-luxacao-perilunar-a286746f",
       "mayfield-e-a-luxacao-perilunar-9979fb84"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "31c499ffa53ccf164558ef8ebf7fea314fcda69af80bd0beb755535bb84374a2"
     }
    ],
@@ -607,7 +607,7 @@
       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "55926929051f1460b8b3f768644a55090bb29cc5434b84ba8ef72b2e148c92d8"
     }
    ],
@@ -1110,7 +1110,7 @@
       "escafoide-anatomia-irrigacao-e-mecanismo-004adf59",
       "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "89190d7c3390915894797186e2555c3a24e9c28cd4d5c11b36fbd1ced8db15e3"
     }
    ],
@@ -1211,7 +1211,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
     }
    ],
@@ -1590,7 +1590,7 @@
       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "bee8cf9899fcf073ef836652146d2df0942a3ee8f3ad4eeef2623fe6f1eb68c1"
     }
    ],
@@ -1707,7 +1707,7 @@
       "anatomia-ligamentar-e-cinematica-do-carpo-09fa55ed",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "f7f13f45498747cfb43f9fad09d1be1ae4f2001418ebee92266bab1d459f1881"
     }
    ],
@@ -1918,14 +1918,28 @@
   "conferido": false
  },
  "mao-0090": {
-  "conceito": "### Pré-ganglionar × pós-ganglionar\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar (ruptura) |\n|---|---|---|\n| ==Horner== | ==presente== (T1) | ausente |\n| ==Tinel== | ==negativo== | positivo, avança com o tempo |\n| dor | **neuropática intensa** (desaferentação) | variável |\n| músculos proximais | romboides (dorsal da escápula), serrátil (torácico longo) **paralisados** | preservados |\n| hemidiafragma | pode estar paralisado (C5, frênico) | normal |\n| ENMG | **potencial sensitivo preservado** com anestesia | potencial sensitivo ausente |\n| mielo-TC / RM | pseudomeningocele | |\n\n### Por que o Tinel é negativo\n- O Tinel depende de axônios **regenerando** a partir do coto proximal.\n- Na avulsão, a raiz foi arrancada da medula: não há coto proximal viável.\n\n### Tratamento\n- Pré-ganglionar: sem reparo direto; ==transferências nervosas== (acessório, intercostais, frênico, contralateral C7, Oberlin).\n- Pós-ganglionar: enxertos a partir do coto proximal.\n\n> **Na prova:** Horner = ==pré-ganglionar com Tinel negativo==.",
-  "correta": "**Pré-ganglionar, Tinel negativo.**\n- Horner indica avulsão de T1.\n- Sem coto proximal viável, não há regeneração nem Tinel.",
+  "conceito": "A síndrome de HORNER é o conjunto de sinais de um olho que perdeu a inervação simpática: pálpebra caída, pupila pequena, falta de suor naquele lado do rosto e olho afundado na órbita. No plexo braquial ela não é um detalhe oftalmológico; é uma pista de onde a raiz se rompeu.\n\n**A imagem.** Foto de frente de um menino. A seta aponta o olho esquerdo: a **pálpebra superior está mais baixa** que a do lado direito e a **pupila é menor**. É a ptose com miose da síndrome de HORNER, no lado do plexo lesado.\n\n**Por que o HORNER aponta para a raiz arrancada.** O Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1150 e 1152), descreve a síndrome com **miose, ptose, anidrose e enoftalmia** e explica a ligação: o **gânglio simpático de T1 fica junto da raiz**, de modo que o HORNER se correlaciona com **avulsão de C8 e T1**. Avulsão é lesão **pré-ganglionar**: a raiz sai da medula, onde está o corpo do neurônio motor, e não pode ser reparada nem enxertada (p. 1150). Na criança, o capítulo de paralisia obstétrica (cap. 40, p. 1393) dá o mesmo sentido, avulsão das raízes inferiores, e o Tachdjian's Pediatric Orthopaedics, 6ª ed. (p. 405), atribui a síndrome à lesão dos simpáticos de T1. É mau prognóstico, e é o HORNER que separa NARAKAS III de IV.\n\n**Por que o TINEL fica negativo, olhando a figura.** A figura do Green mostra a raiz e o gânglio no forame (A), a avulsão da raiz na medula (B) e o estiramento depois do gânglio (C). O TINEL nasce de axônios em regeneração num coto proximal: percutir o neuroma provoca choque no território do nervo. Na avulsão (B) não há coto ligado à medula nem neuroma no pescoço, e o Green (p. 1151 e 1152) põe entre os sinais pré-ganglionares a **ausência de TINEL e de dor à percussão no pescoço**. Na lesão pós-ganglionar (C), o coto proximal continua ligado ao neurônio, forma neuroma, dói à percussão e o **TINEL avança** com a regeneração.\n\n| Achado | Pré-ganglionar (avulsão) | Pós-ganglionar |\n|---|---|---|\n| HORNER | presente na avulsão de C8 e T1 | ausente |\n| TINEL e dor à percussão no pescoço | ausentes | presentes, TINEL que avança |\n| romboide e serrátil | paralisados nas raízes altas | preservados |\n| hemidiafragma | pode estar elevado | normal |\n| potencial sensitivo com pele anestesiada | preservado | ausente |\n\nOs sinais estão na seção \"A síndrome de HORNER\" do resumo.",
+  "correta": "**B) pré-ganglionares, com Tinel negativo.** A ptose com miose da foto é o HORNER, que o Green's Operative Hand Surgery, 7ª ed. (cap. 34, p. 1150 a 1152), liga à avulsão de C8 e T1, porque o gânglio simpático de T1 fica junto da raiz. Na avulsão não há coto proximal nem neuroma, e por isso a ausência de TINEL e de dor à percussão no pescoço está entre os sinais pré-ganglionares do livro.",
   "incorretas": {
-   "A": "**Tinel errado.**\n- A avulsão não deixa coto que regenere.",
-   "C": "**Topografia errada.**\n- A lesão pós-ganglionar não produz Horner.",
-   "D": "**Erra os dois.**\n- Nem a topografia nem o Tinel conferem."
+   "A": "**Pré-ganglionares, com Tinel positivo** acerta o nível e erra o sinal. O TINEL depende de um coto proximal com axônios que regeneram; a avulsão arranca a raiz da medula e não deixa esse coto. O Green (cap. 34, p. 1151 e 1152) lista justamente a ausência de TINEL no pescoço como sinal de lesão pré-ganglionar.",
+   "C": "**Pós-ganglionares, com Tinel positivo** descreve a combinação verdadeira da ruptura depois do gânglio: neuroma no coto, dor à percussão e TINEL que avança (Green, cap. 34, p. 1152). Seria a resposta para um plexo com romboide e serrátil funcionando e sem HORNER. Com a ptose e a miose da foto, o nível é outro.",
+   "D": "**Pós-ganglionares, com Tinel negativo** erra as duas metades. A lesão pós-ganglionar não produz HORNER, porque o gânglio simpático de T1 continua ligado à medula, e quando o coto proximal existe o TINEL costuma estar presente."
   },
-  "geradoEm": "2026-09-24",
+  "referencias": [
+   "Green's Operative Hand Surgery, 7ª ed., cap. 34 (Traumatic Brachial Plexus Injury), p. 1147 e 1150 a 1152 (Fig. 34.2)",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 40 (Pediatric Brachial Plexus Palsy), p. 1393 e 1394",
+   "Tachdjian's Pediatric Orthopaedics, 6ª ed., cap. 12, p. 405",
+   "Resumo OrtoQuestões: Plexo braquial e paralisia obstétrica"
+  ],
+  "imagens": [
+   {
+    "arquivo": "mao/green7-34-2.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 34, Fig. 34.2, p. 1147. A: a raiz e o gânglio da raiz dorsal no forame; B: avulsão da raiz na medula (lesão pré-ganglionar); C: estiramento depois do gânglio (pós-ganglionar); D: ruptura extraforaminal do nervo.",
+    "largura": 800,
+    "altura": 570
+   }
+  ],
+  "geradoEm": "2026-11-11",
   "conferido": false
  },
  "mao-0091": {
@@ -3941,7 +3955,7 @@
       "mayfield-e-a-luxacao-perilunar-69ef1e7a",
       "mayfield-e-a-luxacao-perilunar-7a90dc33"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "cc811d94f9dc4140c4322e8890f22b14f7261a880b07003d5aed6df2137024df"
     }
    ],
@@ -3984,7 +3998,7 @@
       "dissociacao-escafossemilunar-7503c999",
       "dissociacao-escafossemilunar-2e41c596"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "b0cb736c2be44623c0445b3ef9acb8dc4b6f7b3f194d61a1439ec697eed833ea"
     }
    ],
@@ -4860,7 +4874,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
     }
    ],
@@ -5832,7 +5846,7 @@
       "mayfield-e-a-luxacao-perilunar-fdfdb76a",
       "dissociacao-escafossemilunar-4b14cd81"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "cce17099b6a404cc74c0cf642fec3df9f14f1eee1462150ca3f00de8150c5224"
     }
    ],
@@ -6970,7 +6984,7 @@
       "dissociacao-escafossemilunar-8935e6ce",
       "dissociacao-escafossemilunar-65f85568"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "b65b7c28b82fd3be6f22eff0d28ccbfe2f01dcba18589744877bbc3d891b9d70"
     }
    ],
@@ -7914,7 +7928,7 @@
       "mayfield-e-a-luxacao-perilunar-198892b5",
       "mayfield-e-a-luxacao-perilunar-dae12b7d"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "33dc4b5f30cfb1985ac59582d997d506382074771039d94c321e74a48d342112"
     }
    ],
@@ -8031,7 +8045,7 @@
       "dissociacao-escafossemilunar-1f9a739d",
       "mayfield-e-a-luxacao-perilunar-501fc79c"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "0cdc7e364bbb7046bde054d5f67ed4377abfe85c2b8f790385eb63336b679355"
     }
    ],
@@ -8208,7 +8222,7 @@
       "dissociacao-escafossemilunar-cade5531",
       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "8cce0668abfe790723bf7af45d86c63ae5df53946be79c818336e24495b77c19"
     }
    ],
@@ -8633,18 +8647,28 @@
   "conferido": false
  },
  "mao-0543": {
-  "conceito": "O tratamento da **pseudartrose do escafoide** se escolhe por três perguntas feitas na tomografia e no perfil radiográfico, e cada resposta leva a uma técnica diferente:\n- Há **perda óssea** e deformidade?\n- Há **instabilidade cárpica** (DISI)?\n- O **polo proximal** está vivo?\n\nA técnica de **Matti-Russe** (enxerto ósseo não vascularizado, em bloco cortico-esponjoso, encaixado em calha por via volar através da bainha do flexor radial do carpo) é a opção para o cenário mais benigno: pseudartrose sem reabsorção óssea significativa, sem encurtamento importante e sem instabilidade cárpica associada. Ela funciona como um enxerto de preenchimento (inlay), oferecendo osteocondução e osteoindução, mas não tem capacidade estrutural de restaurar altura nem de corrigir angulação.\n\nPor isso, quando há reabsorção com colapso, encurtamento e deformidade em corcova com DISI, a técnica indicada é outra: o **enxerto estrutural em cunha volar**, de crista ilíaca tricortical (técnica de Fisk-Fernandez), que abre o ângulo, restaura o comprimento e corrige o alinhamento do semilunar, sempre associado a fixação com parafuso sem cabeça.\n\nE quando o polo proximal está **necrótico** (sinais de esclerose, ausência de sangramento pontilhado no intraoperatório, ausência de realce na ressonância com contraste), nenhum enxerto convencional resolve, e a indicação passa para o **enxerto vascularizado**: pediculado do rádio distal pela artéria 1,2 intercompartimental supra-retinacular (Zaidemberg) ou livre do côndilo femoral medial, com anastomose microcirúrgica.\n\nNos casos com artrose já instalada (SNAC), o caminho deixa de ser a reconstrução e passa a ser o resgate: estiloidectomia, carpectomia proximal ou artrodese dos quatro cantos.",
-  "correta": "B. A Matti-Russe é indicada quando NÃO existem reabsorção óssea significativa NEM instabilidade cárpica: o enxerto de preenchimento por via volar oferece biologia, mas não tem capacidade estrutural de restaurar altura nem de corrigir a deformidade.",
+  "conceito": "Antes de escolher a técnica para um escafoide que não consolidou, o cirurgião de mão faz um inventário. A banca resumiu esse inventário em dois itens, osso perdido e carpo instável, e pergunta em que combinação a MATTI-RUSSE é a escolha.\n\n**O inventário do Green.** O Green's Operative Hand Surgery, 7ª ed. (cap. 16, p. 608), lista o que avaliar em toda pseudartrose do escafoide: onde está (cintura ou polo proximal), se está desviada, se há **humpback**, se há cominuição, cistos ou cavitação, se há **DISI**, se houve cirurgia, se o polo proximal parece sem irrigação, se há artrose (SNAC) e se o osso ainda é recuperável. Deformidade e mau alinhamento do carpo, quando presentes, podem precisar ser corrigidos no momento do enxerto e da fixação. Pseudartrose estável, bem alinhada e com **pouca perda óssea** pede pouco: abrir pouco o foco, curetar, enxerto esponjoso e parafuso sem cabeça.\n\n**O que é a técnica.** O Green conta a história em três degraus (p. 610). Na técnica original de MATTI, só osso esponjoso era usado, e ela é ótima para a pseudartrose da cintura **sem humpback e sem colapso do carpo**. A de MATTI-RUSSE e a modificação de GREEN usam muito mais osso cortical: dois blocos corticoesponjosos encaixados numa calha escavada nos dois fragmentos, com as faces corticais para fora e as esponjosas uma contra a outra, como na figura abaixo. O próprio autor do capítulo prefere hoje o RUSSE híbrido, com uma escora cortical bem menor que ainda \"abre\" o escafoide, esponjoso no resto e parafuso de compressão sem cabeça, e que serve tanto ao escafoide alinhado quanto ao em humpback.\n\n**Onde a técnica entra no algoritmo.** Na Tabela 16.4 (p. 608 a 610), a pseudartrose **estabelecida da cintura, sem deformidade**, fibrosa ou esclerótica, é a linha das opções por via volar: enxerto corticoesponjoso de RUSSE ou MATTI-RUSSE, enxerto intercalado em cunha ou RUSSE híbrido. A demora sem deformidade e sem perda óssea relevante pode consolidar só com fixação rígida: SHAH e JONES fixaram 50 pseudartroses com parafuso de HERBERT e viram consolidar sem enxerto as que tinham envelope de cartilagem íntegro ou união fibrosa estável.\n\n**A irrigação decide o prognóstico.** GREEN mostrou consolidação em **92%** dos escafoides com boa irrigação tratados com enxerto de RUSSE, em **71%** quando a irrigação estava diminuída e em **nenhum** quando o polo proximal era avascular (p. 608). Esse é o limite biológico da técnica, assim como a deformidade é o limite mecânico.\n\n**O Rockwood diz o mesmo com outras palavras.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 44), explica que a cortical volar costuma estar encurtada, que sem um enxerto cortical em cunha é difícil devolver o comprimento e que a MATTI-RUSSE clássica serve quando não há encurtamento. Com humpback e DISI, os dois livros mandam corrigir: cunha anterior, redução do semilunar e fio radiolunar temporário (o Green usa fio de KIRSCHNER de 0,062 polegada, p. 610).\n\n> **Na prova:** MATTI-RUSSE = cintura, sem reabsorção importante, sem humpback, sem DISI e com polo proximal vivo.\n\nO tratamento está na seção \"Tratamento da pseudartrose\" do resumo de fraturas do carpo.",
+  "correta": "**B) Não existem reabsorção óssea significativa nem instabilidade cárpica associada.** O Green's Operative Hand Surgery, 7ª ed. (cap. 16, p. 610), descreve a técnica de MATTI como ótima para a pseudartrose da cintura sem humpback e sem colapso do carpo, e a Tabela 16.4 põe RUSSE e MATTI-RUSSE na linha da pseudartrose estabelecida sem deformidade. O Rockwood and Green, 10ª ed. (cap. 44), concorda: o enxerto embutido não devolve o comprimento perdido, e por isso só serve quando não há encurtamento.",
   "incorretas": {
-   "A": "Com reabsorção significativa E instabilidade cárpica associada, a indicação é o enxerto ESTRUTURAL em cunha volar de crista ilíaca tricortical (Fisk-Fernandez), que restaura o comprimento e corrige a corcova e o DISI, coisa que o enxerto de preenchimento não faz.",
-   "C": "Reabsorção óssea significativa, mesmo sem instabilidade, já exige enxerto com capacidade estrutural para restaurar o comprimento do escafoide: um enxerto apenas de preenchimento colapsaria e a pseudartrose se manteria.",
-   "D": "A presença de instabilidade cárpica (DISI) implica que o alinhamento do semilunar precisa ser corrigido, e isso só se consegue restaurando a altura e o ângulo do escafoide com enxerto estrutural, não com a técnica de preenchimento de Matti-Russe."
+   "A": "**Existem reabsorção óssea significativa e instabilidade cárpica associada.** É o escafoide que perdeu osso volar, fletiu em humpback e deixou o semilunar cair em DISI. O autor do capítulo do Green (cap. 16, p. 610) procura corrigir o mau alinhamento do carpo e o DISI na mesma cirurgia, reduzindo o semilunar com fio radiolunar antes de enxertar e fixar, e o Rockwood (cap. 44) usa cunha estrutural volar com parafuso de compressão. A calha preenchida da MATTI-RUSSE não abre o ângulo do escafoide.",
+   "C": "**Existe reabsorção óssea significativa, porém sem instabilidade cárpica associada.** A perda óssea importante é, sozinha, o que tira a indicação: o osso encurtado precisa de um enxerto que devolva o comprimento, e o Rockwood (cap. 44) diz que a MATTI-RUSSE clássica tem dificuldade para isso. Quem tenta resolver com um enxerto de RUSSE é a variante alada, ou o RUSSE híbrido do Green (cap. 16, p. 610), em que a escora cortical \"abre\" o escafoide.",
+   "D": "**Não existe reabsorção óssea significativa, porém com instabilidade cárpica associada.** Um carpo em DISI não é problema que o enxerto embutido resolva, porque a correção depende de reduzir o semilunar e realinhar o escafoide. O Green (cap. 16, p. 608) põe a deformidade e o mau alinhamento do carpo entre os itens a avaliar e, quando presentes, a corrigir no mesmo tempo, com cunha e fio radiolunar temporário. Na prática, o DISI da pseudartrose quase sempre vem com o defeito volar que o provoca."
   },
-  "geradoEm": "2026-09-10",
-  "conferido": false,
   "referencias": [
-   "Motta Filho, Barros Filho, Ortopedia e Traumatologia, 1ª edição, Cap. 2.18"
-  ]
+   "Green's Operative Hand Surgery, 7ª ed., cap. 16 (Fractures of the Carpal Bones), p. 608 a 610 (Tabela 16.4, Fig. 16.21)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 44 (Carpal Fractures and Dislocations)",
+   "Resumo OrtoQuestões: Fraturas e luxações do carpo"
+  ],
+  "imagens": [
+   {
+    "arquivo": "mao/green7-16-21-u02.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 16, Fig. 16.21, p. 610. Técnica de RUSSE com dois enxertos corticoesponjosos: os blocos são encaixados numa calha escavada nos dois fragmentos do escafoide, com as superfícies corticais para fora e as esponjosas voltadas uma para a outra (detalhe no quadro).",
+    "largura": 683,
+    "altura": 591
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "mao-0545": {
   "conceito": "### Lesão do colateral ulnar da MF do polegar\n| Nome | Mecanismo |\n|---|---|\n| polegar do esquiador | agudo, valgo forçado (queda com bastão) |\n| polegar do guarda-caça | crônico, atenuação repetida |\n\n### Lesão de Stener\n- Coto do ==colateral ulnar== retrai e fica ==acima da aponeurose do adutor==.\n- A aponeurose se interpõe e impede a cicatrização: ==cirurgia obrigatória==.\n- Incidência: cerca de 60 a 80% das rupturas completas.\n- Sinal: nódulo palpável proximal à MF (o coto dobrado).\n\n### Exame\n| Achado | Interpretação |\n|---|---|\n| abertura > 30 a 35° em 30° de flexão | ruptura do colateral próprio |\n| abertura também em extensão | + colateral acessório (lesão completa) |\n| > 15° a mais que o lado oposto | instabilidade |\n| sem ponto final firme | ruptura completa |\n\n- RX antes do estresse (fratura-avulsão); US ou RM para ver Stener.\n\n### Local da avulsão\n- Mais frequente na ==inserção distal (base da falange proximal)==.\n- Fragmento ósseo < 15 a 20% da superfície: ressecar e usar âncora; maior e desviado: fixar.\n\n> **Na prova:** Stener = colateral ==ulnar==, avulsão na ==falange proximal==",
@@ -9483,7 +9507,7 @@
       "artrose-do-colapso-snac-e-slac-118d45f0",
       "artrose-do-colapso-snac-e-slac-75ec5c30"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "bae520f31df96e288d7788b029966ca4ded9206386edf9c5d172ec2fa12a7940"
     }
    ],
@@ -9574,7 +9598,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
     }
    ],
@@ -9643,7 +9667,7 @@
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-64863bdb",
       "dissociacao-lunopiramidal-5eb7978d"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "8dddd85d7907f88ec32fcdf07bc888d5d69400fbb5016aee97dfd027723a0216"
     }
    ],
@@ -9703,7 +9727,7 @@
       "dissociacao-lunopiramidal-5eb7978d",
       "dissociacao-lunopiramidal-776fb4a9"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "ad80f0c011fce4f99eb38e1b2c3579da3565a18b9eb43d800b52252034a1f647"
     }
    ],
@@ -9992,7 +10016,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "a75097597a7384f2f500c7d5a0fa47b3085337c37711369b9650bd5eaeb3d0ba"
     }
    ],
@@ -10376,7 +10400,7 @@
       "dissociacao-escafossemilunar-1f9a739d",
       "dissociacao-escafossemilunar-65f85568"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "cee886fecf07c48dc444dd75d9daf68aec3649683626f4feb62d5396d065c162"
     }
    ],
@@ -10984,7 +11008,7 @@
       "dissociacao-escafossemilunar-67e58eaf",
       "dissociacao-escafossemilunar-65f85568"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "684bdf5927e9f286c7889887009776b0b440d41b97114b75ffafef7e1552410d"
     }
    ],
@@ -11280,7 +11304,7 @@
       "dissociacao-escafossemilunar-b886eabc",
       "dissociacao-escafossemilunar-719be38b"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "d2bff24427d36ffbf2ba319926b88eefd86911833fb489fee03a72c1c47c958d"
     }
    ],
@@ -12853,7 +12877,7 @@
       "dissociacao-escafossemilunar-1f9a739d",
       "artrose-do-colapso-snac-e-slac-a82703f6"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "8ce740bf3882b59b60ab866a473b4a784df0db67ff317a154f3214e187ad5de5"
     }
    ],
@@ -13562,7 +13586,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "abaec9fe61dd3e9fada7765d5dc9347441199cb5171772b5f57abf488d8f823b"
     }
    ],
@@ -13605,7 +13629,7 @@
       "dissociacao-escafossemilunar-7503c999",
       "dissociacao-escafossemilunar-2e41c596"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "ef5783173ee18504e6f3485ff008c3497b54bcd517a36fd73974bb49ca0fd5af"
     }
    ],
@@ -14489,19 +14513,29 @@
   "conferido": false
  },
  "mao-0829": {
-  "conceito": "A fotografia mostra a face **palmar** do carpo. A linha tracejada acompanha uma região de fraqueza capsular sobre a articulação capitossemilunar: o **espaço de Poirier**. Ela delimita um intervalo entre conjuntos ligamentares, e não um feixe ligamentar isolado.\n\nO resumo organiza os ligamentos palmares em dois conjuntos em V. Um grupo se relaciona à fileira proximal; o outro, à distal. Entre os ligamentos radiais e ulnares, sobre a capitossemilunar, fica o sulco de Poirier. Ele aumenta em dorsiflexão e quase desaparece na flexão palmar. Essa variação ajuda a entender sua relação com a luxação palmar do semilunar.\n\nÉ diferente de reconhecer um ligamento pelo nome ou pela resistência. O Testut é descrito como pedículo neurovascular fraco, e o arqueado funciona como tipoia da cabeça do capitato. A imagem foi inspecionada; não é necessário atribuir à linha limites por um par de ligamentos que o corpo do resumo não especifica. Conteúdo consultado no resumo do Rockwood and Green, 10ª edição, capítulo 44, seção Ligamentos extrínsecos e o espaço de Poirier.",
-  "correta": "Correta: C (espaço de Poirier). A linha destaca o intervalo palmar sobre a capitossemilunar, cuja fraqueza e abertura na dorsiflexão participam do mecanismo de luxação palmar. É um espaço capsular entre conjuntos ligamentares, não um ligamento.",
+  "conceito": "A imagem da questão é a dissecção de um punho de cadáver vista pela face palmar, com os ligamentos numerados e uma linha pontilhada em arco. É a Fig. 13.3A do Green's Operative Hand Surgery, 7ª ed. (cap. 13, p. 421), e a legenda do próprio livro diz o que a linha marca: o **espaço de POIRIER**.\n\n**A imagem.** As letras dão os ossos: C capitato, H hamato, L semilunar, S escafoide, Tq piramidal, Tr trapézio. Os números dão os ligamentos: 1 radioescafocapitato, 2 radiolunar longo, 3 radiolunar curto, 4 semilunopiramidal palmar, 5 piramidal-hamato-capitato e 6 escafocapitato. A linha pontilhada passa sobre o semilunar, logo abaixo do capitato, na concavidade entre os ligamentos que sobem para o capitato (1 e 5) e os que se prendem no semilunar (2 e 4).\n\n**O que é o espaço.** Os ligamentos palmares do punho formam dois \"V\". O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 44, Ligamentous Anatomy), descreve um V **proximal** (radiolunar longo, radioescafossemilunar, ulnolunar e ulnopiramidal), que segura a fileira proximal, e um V **distal** (radioescafocapitato e ulnocapitato), que segura a distal. Entre eles, sobre a **articulação capitossemilunar**, sobra um sulco sem ligamento: a cápsula ali é fraca. O espaço **aumenta com o punho em dorsiflexão** e quase some na flexão palmar.\n\n**Os dois livros situam o espaço de um jeito um pouco diferente:**\n\n| | Limites do espaço de POIRIER |\n|---|---|\n| Rockwood (cap. 44) | sulco entre os ligamentos palmares radiais e ulnares, sobre a capitossemilunar |\n| Green (cap. 13, p. 420) | sulco interligamentar entre o **radioescafocapitato** e o **radiolunar longo**, que divergem |\n\nA diferença é de precisão, não de conceito, e a figura da questão é a do Green.\n\n**Por que importa.** O Green (p. 420 e 421) chama o espaço de zona fraca por onde ocorre a maioria das luxações perissemilunares. Na luxação perilunar, é por ali que o **semilunar escapa para o túnel do carpo** (Rockwood). O Rockwood ainda observa que a necrose do semilunar depois da luxação é rara, provavelmente porque a saída pelo espaço de POIRIER preserva o arco radiocárpico volar e o radiolunar curto, que serve de dobradiça.\n\n**Por que não é um ligamento.** A pegadinha é que as quatro outras opções são ligamentos ou nomes de ligamentos. A linha não acompanha nenhuma faixa de fibras; ela marca justamente o lugar onde as fibras faltam.\n\nO espaço está na seção \"Anatomia ligamentar e cinemática do carpo\" do resumo, no trecho \"Ligamentos extrínsecos e o espaço de Poirier\".",
+  "correta": "**C) espaço de POIRIER.** A linha pontilhada é a marcação original da Fig. 13.3A do Green's Operative Hand Surgery, 7ª ed. (cap. 13, p. 421), que a descreve como um sulco interligamentar relativamente fraco por onde acontece a maioria das luxações perissemilunares. Fica sobre a capitossemilunar, entre o radioescafocapitato e o radiolunar longo (Green, p. 420), ou entre os ligamentos palmares radiais e ulnares (Rockwood and Green, 10ª ed., cap. 44), e se abre com o punho em dorsiflexão.",
   "incorretas": {
-   "A": "Testut é o radioescafossemilunar, descrito como estrutura fraca com função de pedículo neurovascular para o escafossemilunar. Nomeia um componente do conjunto palmar, não o sulco entre os conjuntos radiais e ulnares assinalado pela linha.",
-   "B": "Weitbrecht é um dos nomes do ligamento arqueado ou deltoide, o V distal palmar. A fonte o relaciona à tipoia da cabeça do capitato; o epônimo designa essa estrutura, e não a área de fraqueza capsular de Poirier.",
-   "D": "O escafossemilunar é intrínseco, unindo os dois ossos da fileira proximal, com porções dorsal, palmar e membranosa. A linha tracejada passa sobre o intervalo capitossemilunar palmar; não identifica o ligamento interósseo entre escafoide e semilunar.",
-   "E": "Arqueado é o mesmo conjunto também chamado Weitbrecht na alternativa B, não uma segunda estrutura distinta. Seu papel de contenção da cabeça do capitato deve ser separado do espaço adjacente de fraqueza que aumenta na extensão do punho."
+   "A": "**ligamento de TESTUT.** É o radioescafossemilunar (Rockwood, cap. 44), parte do V proximal. O Green (cap. 13, p. 422) faz questão de dizer que o ligamento de TESTUT-KUENTZ não é um ligamento verdadeiro, mas um feixe de tecido conjuntivo frouxo com os vasos que irrigam o canto palmar do polo proximal do escafoide; é um pedículo neurovascular. Seria a resposta numa pergunta sobre a estrutura fraca que leva vasos ao escafossemilunar, não sobre o sulco da imagem.",
+   "B": "**ligamento de WEITBRECHT.** No punho, o Rockwood (cap. 44) usa o nome como sinônimo do ligamento arqueado: arqueado, deltoide, V distal palmar ou ligamento oblíquo de WEITBRECHT. É a tipoia da cabeça do capitato, formada no Green (p. 421) pelo radioescafocapitato e pelo braço ulnar (piramidal-hamato-capitato), os números 1 e 5 da imagem, que contornam o espaço sem ser ele. Cuidado: no mesmo Rockwood, o ligamento de WEITBRECHT do quadril é outra estrutura, a prega retinacular do colo do fêmur.",
+   "D": "**ligamento escafosemilunar.** É intrínseco, une escafoide e semilunar, tem forma de \"C\" com porção dorsal (a mais forte), palmar e proximal membranosa, e é o estabilizador primário da dupla (Rockwood, cap. 44). Na imagem, ficaria entre S e L, profundo aos ligamentos extrínsecos; a linha pontilhada está sobre o semilunar, abaixo do capitato, longe desse intervalo.",
+   "E": "**ligamento arqueado.** É o V distal palmar, a tipoia da cabeça do capitato, e corresponde ao mesmo complexo que a opção do WEITBRECHT nomeia por epônimo (Rockwood, cap. 44). Na figura, seus braços são o radioescafocapitato (1) e o piramidal-hamato-capitato (5): a linha pontilhada corre logo proximal a eles, marcando o sulco sem fibras que separa o arqueado do radiolunar longo."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Anatomia ligamentar e cinemática do carpo; Dissociação escafossemilunar."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 13 (Carpal Instability), p. 420 a 422 (Figs. 13.2 e 13.3)",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 44 (Carpal Fractures and Dislocations), seção Ligamentous Anatomy (Fig. 44-2)",
+   "Resumo OrtoQuestões: Fraturas e luxações do carpo"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27"
+  "imagens": [
+   {
+    "arquivo": "mao/rwa10-44-2.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 44, Fig. 44-2. Ligamentos extrínsecos do carpo: em A, os palmares (radioescafocapitato, radiolunar longo e curto, colateral radial, ulnolunar e ulnopiramidal); em B, os dois dorsais, o radiocárpico dorsal, do rádio ao piramidal, e o intercarpal dorsal, atravessando o dorso do carpo, formando um V deitado.",
+    "largura": 924,
+    "altura": 493
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "mao-0830": {
   "conceito": "A classificação da EWAS nasceu para resolver uma limitação da de GEISSLER, e a questão só se resolve entendendo o que cada uma mede. A de GEISSLER descreve quanto a articulação abre; a da EWAS acrescenta **onde** o ligamento rompeu.\n\n**O que se olha na artroscopia.** O escafossemilunar tem três partes: a **dorsal**, mais grossa e forte, chave da estabilidade; a **palmar**, mais fina e oblíqua, que segura a rotação; e a proximal, membranosa, a mais fraca (Rockwood and Green's Fractures in Adults, 10ª ed., cap. 44). A artroscopia é o padrão de referência dessa lesão: mostra o ligamento, o local (dorsal, volar ou completo), a redutibilidade e a cartilagem.\n\n**GEISSLER, a de base.** I, hemorragia ou atenuação vista da mediocárpica, com ossos congruentes; II, incongruência vista da mediocárpica; III, desalinhamento nas duas articulações, com espaço que admite o **probe de 1 mm**; IV, instabilidade grosseira, com espaço que admite o **artroscópio de 2,7 mm**. Descreve bem a frouxidão, mas não separa bem a frouxidão normal da instabilidade patológica.\n\n**EWAS, estágio por estágio.**\n\n| Estágio | Achado (cap. 44) |\n|---|---|\n| I | normal |\n| II | lesão da membrana; a ponta do probe entra; estável |\n| IIIA | lesão palmar (frouxidão anterior) |\n| IIIB | lesão dorsal (frouxidão posterior) |\n| IIIC | ruptura completa **redutível**: o probe inteiro entra e a articulação volta ao tirar o probe |\n| IV | ruptura completa em que a **cânula de 2,7 mm passa** da mediocárpica para a radiocárpica, sem achado radiográfico estático |\n| V | igual ao IV, com intervalo estático e talvez DISI |\n\n**Como ler o enunciado.** \"Ruptura dorsal e volar\" quer dizer que as duas porções caíram: já não é o IIIA nem o IIIB, que isolam um lado. \"Sem diástase\" diz que os ossos não se afastam a ponto de deixar a cânula atravessar: a ruptura é completa, mas a articulação ainda se fecha quando o probe sai. É o **IIIC**. O passo seguinte, o IV, é a mesma ruptura com a cânula passando; o V acrescenta o intervalo visível na radiografia simples. Só o estágio III tem letras.\n\n**Para que serve.** As lesões menores ficam com a artroscopia: na pré-dinâmica, desbridamento, e a radiofrequência em lesões GEISSLER I e II deu alívio em 14 de 16 pacientes. Na lesão aguda completa, o reparo direto tem resultado melhor que a reconstrução, e os autores preferem fazê-lo por artroscopia.\n\nAs duas classificações estão na seção \"Classificações artroscópicas\" do resumo.",
@@ -16255,7 +16289,7 @@
       "escafoide-tratamento-da-fratura-aguda-ace416a4",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "a118b10e67ebec88343698f7a36234c5f2fb55f9b04dd39bc19b7a97e0db1a4f"
     }
    ],
@@ -16298,7 +16332,7 @@
       "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
       "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "1feb3937fac7e4e68f07e28ceed21365f36c5760952ae03fecb28c9131f243ba"
     }
    ],
@@ -17763,7 +17797,7 @@
       "escafoide-classificacao-de-herbert-e-fisher-d0ae7a5a",
       "mayfield-e-a-luxacao-perilunar-a286746f"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "84c71440840a0e8c116edc90c904a36c63af3f1c4bc31f5937cfd2f8f9abd408"
     }
    ],
@@ -17828,7 +17862,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
     }
    ],
@@ -18557,7 +18591,7 @@
       "escafoide-anatomia-irrigacao-e-mecanismo-52d9acbe",
       "fraturas-dos-outros-ossos-do-carpo-fe223feb"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "1aad68064a9ca66198c7cdabdd392b3435b0bc443fa9994020e5f7fd02ea53f6"
     }
    ],
@@ -18602,7 +18636,7 @@
       "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
       "dissociacao-escafossemilunar-1f9a739d"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "95fcf4730bcca4aaae8498d9b8b8c99d46cca3e50b4f249279ff22351dcb076a"
     }
    ],
@@ -18644,7 +18678,7 @@
       "mayfield-e-a-luxacao-perilunar-07798063",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "156eb9e350d3317e303d0a9c87213fb4a758224145278027aa73e59955ee88a0"
     }
    ],
@@ -18685,7 +18719,7 @@
       "escafoide-anatomia-irrigacao-e-mecanismo-31718cbb",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "778f5a7318ef264a1ab7899104f3065395f4aabab62a7afc5da43e2030189ffb"
     }
    ],
@@ -19436,7 +19470,7 @@
       "mayfield-e-a-luxacao-perilunar-9979fb84",
       "fraturas-dos-outros-ossos-do-carpo-bc810ef4"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "98c3c1d08aa10fe198cde752e4961d21408a9cd731f603349792e7cc43711894"
     }
    ],
@@ -20638,18 +20672,33 @@
   "conferido": false
  },
  "mao-1137": {
-  "conceito": "Depois de um trauma na interfalângica proximal, o dedo pode estar inchado e doloroso a ponto de esconder a ruptura da banda central. Se ela passa despercebida, semanas depois aparece a **botoeira**: a IFP fletida e a IFD em hiperextensão. A questão pergunta o nome do teste que denuncia a lesão cedo.\n\n**O que é a banda central.** O aparelho extensor chega ao dedo e se divide. A **banda central** se insere na **base dorsal da falange média** e estende a IFP; as **bandas laterais** passam dos lados e vão ao tendão terminal, que estende a IFD (Rockwood and Green, 10ª ed., cap. 45).\n\n**Como funciona o teste de Elson.** A ideia é isolar a banda central. Com a **IFP fletida a 90°** na borda da mesa, o paciente tenta **estender a IFP contra resistência**, e o examinador sente a IFD:\n\n- **IFD frouxa:** a banda central está íntegra. Toda a força de extensão foi para a falange média, e as bandas laterais, frouxas com a IFP fletida, não conseguem estender a IFD.\n- **IFD rígida, estendendo:** a banda central rompeu. Sem ela, o extensor recruta as bandas laterais, que tensionam o tendão terminal e estendem a IFD.\n\nA lógica é contraintuitiva: a IFD que estende é o sinal da lesão, não da integridade.\n\n**O que fazer com o resultado.** Na lesão aguda da banda central, o capítulo trata com tala só na IFP, **em extensão por 4 a 6 semanas**, deixando a **IFD e a MCF livres** para mexer ativamente, para cicatrizar a banda central e evitar a botoeira.\n\n> **Na prova:** teste de Elson: IFP a 90° na borda da mesa, extensão contra resistência; IFD que fica rígida e estende indica ruptura da banda central.\n\nNo resumo de fraturas da mão, a seção da IFP e da banda central explica o teste e a tala da lesão aguda.",
-  "correta": "**B: teste de Elson.** É o teste que o capítulo usa para a banda central depois de qualquer trauma da IFP: com a IFP fletida a 90° na borda da mesa, a extensão contra resistência deixa a IFD frouxa quando a banda central está íntegra e a faz estender quando ela rompeu.",
+  "conceito": "A banda central pode romper num dedo que, no primeiro dia, ainda estende. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3180), explica por quê: cortada a banda central, a extensão da IFP só se perde quando as bandas laterais escorregam para volar, e isso leva tempo. Quando a botoeira aparece, perdeu-se a fase em que a tala bastava. A questão pede o teste que pega a lesão antes da deformidade.\n\n**A anatomia que o teste usa.** O aparelho extensor se divide sobre a falange proximal: a **banda central** vai à base dorsal da falange média e estende a IFP; as **bandas laterais** passam dos lados e se juntam no tendão terminal, que estende a IFD. As duas partes estão ligadas por expansões laterais, de modo que a posição da IFP mexe na tensão das bandas laterais.\n\n**O mecanismo, na figura do Green.** O Green's Operative Hand Surgery, 7ª ed. (cap. 5, p. 155 a 157, Fig. 5.8), mostra a ideia em três tempos. Em A, com a IFP estendida, as bandas laterais ficam tensas e limitam a flexão da IFD. Em B a D, com a IFP fletida ao máximo, a banda central íntegra é puxada para distal e cria **folga** nas bandas laterais: a IFD fica frouxa e não estende ativamente. Em E e F, com a banda central rota, a folga não se forma, e a força extensora chega à IFD, que estende mesmo com a IFP dobrada.\n\n**A técnica de ELSON.** O examinador **flete a IFP a 90 graus sobre a borda da mesa** e pede **extensão da IFP contra resistência**, sentindo a IFD (Green, p. 155 e 156):\n\n| Achado na IFD | Significado |\n|---|---|\n| frouxa, sem força de extensão | banda central íntegra |\n| rígida, estendendo com força ou hiperestendendo | banda central rota |\n\nO Green o chama de **teste de exame mais sensível para a ruptura aguda da banda central** e prefere fazê-lo sob **bloqueio digital**, para tirar a dor da articulação traumatizada. O Netter Atlas de Anatomia Ortopédica, 2ª ed. (p. 205), descreve igual, e o Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 45), usa o teste depois de qualquer trauma da IFP. A lesão aguda vai para tala só na IFP, em extensão por 4 a 6 semanas, com IFD e MCF livres.\n\n**O contraponto do tempo.** O teste de BOYES (IFP estendida, resistência à flexão passiva da IFD) só fica positivo quando a botoeira já se formou. Regra do resumo: **ELSON agudo, BOYES crônico**.\n\nO teste está na seção \"O aparelho extensor: ELSON, BOYES e o ligamento retinacular oblíquo\" do resumo de exame da mão e do punho.",
+  "correta": "**B) Teste de ELSON.** É o teste da integridade da banda central: IFP fletida a 90 graus na borda da mesa e extensão contra resistência; com a banda central rota, a IFP fica sem força e a IFD estende com força ou hiperestende (Green's Operative Hand Surgery, 7ª ed., cap. 5, p. 155 e 156). O Green o considera o exame mais sensível da ruptura aguda, de preferência sob bloqueio digital.",
   "incorretas": {
-   "A": "**Avalia outra estrutura.** O teste de Haines-Zancolli examina o ligamento retinacular oblíquo, que liga a IFP à IFD. Ele não isola a banda central.",
-   "C": "**Teste dos intrínsecos.** O teste de Bunnell-Littler compara a flexão passiva da IFP com a MCF em extensão e em flexão para diagnosticar o encurtamento da musculatura intrínseca. Não mede a integridade da banda central.",
-   "D": "**Não é o teste da banda central.** Entre as alternativas, o teste que o capítulo descreve para a banda central é o de Elson; o de Muckart não tem esse papel."
+   "A": "**Teste de HAINES-ZANCOLLI.** O nome se liga ao ligamento retinacular oblíquo, que LANDSMEER descreveu da bainha flexora, na face volar da IFP, até o tendão terminal, e que se tensiona com a extensão da IFP e estende a IFD junto (Green, cap. 5, p. 156). O teste avalia a tensão desse ligamento, útil no pescoço de cisne e na botoeira antiga; os livros lidos descrevem o ligamento e sua função, mas não o teste pelo nome. Não isola a banda central.",
+   "C": "**Teste de BUNNELL-LITTLER.** É o teste da tensão dos intrínsecos: a flexão passiva da IFP é comparada com a MCF estendida e fletida, e é positivo quando a IFP flete menos com a MCF em extensão (Green, cap. 10, p. 339; Netter, p. 205). Seria a resposta numa mão reumatoide com deformidade intrínseco plus ou numa rigidez pós-traumática dos interósseos, não na suspeita de botoeira aguda.",
+   "D": "**Teste de MUCKART.** Não aparece em nenhum dos livros consultados (Green, Campbell, Rockwood, HEBERT) nem em fonte médica conferida, e por isso não dá para descrevê-lo aqui. Os epônimos de exame que os livros associam à tenossinovite de DE QUERVAIN são o EICHHOFF e o FINKELSTEIN, que estiram o abdutor longo e o extensor curto do polegar sobre o estiloide radial (Green, cap. 56, p. 1916; Campbell, cap. 81, p. 3535). Para a banda central, o único teste que os livros descrevem é o ELSON, feito no próprio dedo."
   },
+  "alerta": "O teste de MUCKART não é descrito em nenhum dos livros locais (Green's Operative Hand Surgery, 7ª ed.; Campbell's Operative Orthopaedics, 15ª ed.; Rockwood and Green, 10ª ed.; HEBERT, 5ª ed.). Também não foi achado em fonte médica conferida (busca no PubMed e no PMC por \"Muckart test\" e \"Muckard test\" sem descrição do teste); a alternativa é explicada só pelo que os livros dizem do exame da tenossinovite de DE QUERVAIN e pelo fato de o ELSON ser o teste descrito para a banda central. O teste de HAINES-ZANCOLLI também não é descrito pelo nome nos livros; o Green descreve o ligamento retinacular oblíquo que ele avalia. O gabarito (ELSON) é sustentado pelo Green, p. 155 e 156.",
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações da mão”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 45 · Hand Fractures and Dislocations. Seções: Interfalângica proximal: luxações e banda central."
+   "Green's Operative Hand Surgery, 7ª ed., cap. 5 (Extensor Tendon Injury), p. 155 a 157 (Fig. 5.8)",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 10, p. 339",
+   "Campbell's Operative Orthopaedics, 15ª ed., cap. 71, p. 3180",
+   "Netter Atlas de Anatomia Ortopédica, 2ª ed., p. 205",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 45 (Hand Fractures and Dislocations), seção Proximal Interphalangeal Joint (teste de ELSON)",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho",
+   "Resumo OrtoQuestões: Fraturas e luxações da mão"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27"
+  "imagens": [
+   {
+    "arquivo": "mao/green7-5-8.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 5, Fig. 5.8, p. 157. A mecânica do teste de ELSON: com a IFP estendida as bandas laterais ficam tensas e limitam a flexão da IFD (A); com a IFP fletida ao máximo elas afrouxam, a IFD flete livre e perde a força de extensão (B a D); com a banda central rota a folga some e a IFD volta a estender com a IFP fletida (E e F).",
+    "largura": 1382,
+    "altura": 1249
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "mao-1138": {
   "conceito": "As quatro alternativas são feitas com as mesmas peças, trocadas de lugar: flexão ou extensão, mais ou menos relevante, estabilidade ou instabilidade. Só uma combinação faz sentido anatômico, e para achá-la basta saber quais estruturas ficam tensas em cada posição da metacarpofalângica do polegar.\n\n**Uma caixa de três lados.** O Green's Operative Hand Surgery, 7ª ed. (cap. 8, p. 301 e 302), descreve a metacarpofalângica do polegar como uma articulação de pouca estabilidade intrínseca, sustentada por uma caixa de ligamentos:\n- **colateral próprio**: nasce no côndilo do metacarpo e vai obliquamente ao terço volar da falange proximal; fica **tenso em flexão** e frouxo em extensão;\n- **colateral acessório**: nasce mais volar na cabeça do metacarpo e vai à placa volar e aos sesamoides; fica **tenso em extensão** e frouxo em flexão;\n- **placa volar**: o assoalho da caixa, reforçada pelos sesamoides, onde se inserem o adutor e os tenares.\n\nO Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 45, seção Metacarpophalangeal Joint Dislocation and Ligamentous Disruption), descreve a mesma divisão e tira a consequência: o teste deve ser feito em flexão.\n\n**O raciocínio.** Imagine um colateral próprio rompido por completo. Se o examinador força o desvio radial com o polegar **estendido**, o acessório e a placa volar estão esticados e seguram a articulação; ela abre pouco, e a ruptura passa despercebida. Com a articulação em **30° a 40° de flexão**, acessório e placa volar afrouxam, e quem segura o desvio é só o colateral próprio. Se ele estiver roto, a articulação abre sem ponto final. O Green (p. 302) diz quase com as palavras da alternativa correta: o exame em flexão é muito mais relevante para o diagnóstico da ruptura completa, porque a placa volar dá **considerável estabilidade lateral** em extensão total.\n\n**Os números.** O Green (p. 302) cita o critério da maioria dos autores: 30° de abertura em extensão e em 40° de flexão, ou 15° a mais que o outro polegar; ele mesmo prefere procurar a presença ou a ausência de **ponto final**. O Rockwood considera significativa uma diferença de **15°** em relação ao lado normal e opera quando não há ponto final firme e o desvio passa de 20°. Na figura do Rockwood (Fig. 45-52), abaixo, o polegar lesado (A) abre muito mais que o normal (B), e a radioscopia (C) confirma.\n\n**E a STENER?** O enunciado fala dela, mas o exame não a enxerga. A interposição da aponeurose do adutor só acontece na ruptura completa, e por isso o que o exame precisa decidir é se a ruptura é completa. O Rockwood é explícito: determinar a interposição clinicamente é impossível; ultrassom ou ressonância ajudam quando a suspeita é alta.\n\nO exame está na seção \"Anatomia que explica o exame\" do resumo.",
@@ -21638,7 +21687,7 @@
       "mayfield-e-a-luxacao-perilunar-a286746f",
       "mayfield-e-a-luxacao-perilunar-9979fb84"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "aa4dc37d5b97c083028bc0d01e86a26ed52272b9ff207485bb377d1d4031ccea"
     }
    ],
@@ -21957,7 +22006,7 @@
       "dissociacao-escafossemilunar-f6a7a76b",
       "dissociacao-escafossemilunar-fcaf9e16"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "31ac04afbc0af347365cebae18deeefa887c7e8b3137a32b95062261cd485c80"
     }
    ],
@@ -22274,14 +22323,31 @@
   "conferido": false
  },
  "mao-1225": {
-  "conceito": "**Elson investiga como a força extensora chega à falange média e à distal.** Com a IFP a 90° na borda da mesa, o paciente tenta estendê-la contra resistência. O examinador avalia a IFD: se a banda central está íntegra, ela transmite força à base dorsal da falange média e a IFD permanece relativamente frouxa. Se a banda central rompe, o tendão terminal e as bandas laterais são recrutados, e a IFD fica rígida e estende.\n\nPor isso, observar extensão distal nesse contexto não prova integridade da banda central; pode indicar precisamente sua falha. É necessário distinguir o resultado do teste das posições usadas no tratamento. A lesão aguda da banda central é protegida com IFP em extensão e IFD livre para flexão ativa.\n\nA radiografia normal não afasta uma lesão tendínea fechada. A anatomia e o exame dirigido permitem procurar uma ruptura que pode evoluir com deformidade em botoeira. O teste não deve ser reduzido a pedir extensão da ponta sem posicionar a IFP e avaliar a resistência e a rigidez distal.\n\n**Leia “Teste de Elson”**, na seção “Interfalângica proximal: luxações e banda central” do resumo do Rockwood & Green, 10ª edição, capítulo 45.",
-  "correta": "**a) Teste.** Realizar o teste de Elson: colocar a IFP a 90° na borda da mesa e pedir extensão da IFP contra resistência, avaliando a resposta da IFD. A banda central íntegra transmite força à falange média e deixa a IFD relativamente frouxa; na ruptura, a IFD fica rígida e tende a estender pela transmissão ao sistema lateral e terminal. Dor e edema podem dificultar o exame e precisam ser considerados.\n\n**b) Proteção.** No tratamento conservador descrito, manter apenas a IFP em extensão por 4 a 6 semanas, deixando IFD e MCF livres para movimento ativo. A flexão ativa da IFD é estimulada. Não confundir a postura diagnóstica a 90° com a posição da tala.\n\n**c) Evolução.** A lesão inicial pode não apresentar ainda a deformidade em botoeira estabelecida. Com o tempo sem proteção adequada, a alteração do equilíbrio extensor pode tornar a postura deformada e a perda de movimento mais evidentes. O resumo descreve a preocupação com botoeira tardia, mas não fixa três semanas como prazo universal para sua instalação. Na consulta tardia, reavaliar mobilidade e se já há contratura, sem supor que toda paciente terá exatamente o mesmo exame.",
+  "conceito": "A UERJ montou um caso que acontece todo plantão: dedo inchado depois de uma pancada na ponta, interfalângica proximal dolorida, radiografia normal e o paciente ainda estendendo o dedo. É exatamente a situação em que a lesão da bandeleta central passa despercebida. As três perguntas seguem a história natural da lesão: como achá-la no primeiro dia, como tratá-la sem cirurgia e como ela muda se ninguém a tratar.\n\n**Por que a lesão engana.** Na zona 3, sobre a IFP, o extensor se divide em três: a **bandeleta central**, que se insere na base dorsal da falange média, e as duas **bandas laterais**, que seguem para formar o tendão terminal na falange distal. O ligamento triangular, no dorso, segura as bandas laterais em cima do eixo da IFP. O Green's Operative Hand Surgery, 7ª ed. (cap. 5), explica que a IFP ainda estende sem a bandeleta central enquanto o triangular, as bandas laterais e os retinaculares transversos funcionam. O Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3180), diz o mesmo com outras palavras: cortada a bandeleta, a extensão da IFP **só se perde depois que as bandas laterais subluxam para volar**. Por isso o exame comum é normal nas primeiras horas e a deformidade só aparece depois.\n\n**O teste de ELSON, olhando a figura.** Com a IFP estendida, as bandas laterais ficam tensas (A). Quando a IFP é fletida ao máximo, a bandeleta central é puxada para distal e cria **folga** nas bandas laterais: a IFD fica frouxa e não estende com força (B a D). Se a bandeleta está rota, a folga não se forma, e a força extensora chega à IFD (E e F). Na prática (Green, p. 155 a 157): **IFP fletida a 90 graus sobre a borda da mesa**, o paciente tenta estender a IFP contra a resistência do examinador. Positivo é **nenhuma força na IFP e extensão com força, ou hiperextensão, da IFD**. É o teste de exame mais sensível para a ruptura aguda, e o Green recomenda fazê-lo **sob bloqueio digital** quando a dor atrapalha, o caso desta paciente.\n\n**O tempo muda o exame.** O Green (p. 170) dá o prazo: em **2 a 3 semanas** sem tratamento, o triangular se alonga, as bandas laterais migram para palmar do eixo da IFP e passam a fleti-la; a IFP fica fletida e a IFD em hiperextensão, a **botoeira** (figura abaixo). Aí o ELSON já não ajuda, porque as bandas deslocadas não criam mais a folga que o teste procura, e o que fica positivo é o **BOYES**: IFP mantida em extensão e resistência à flexão passiva da IFD, sinal das bandas retraídas (Green, p. 156).\n\n| | Agudo (ELSON) | Três semanas (botoeira) |\n|---|---|---|\n| IFP | estende ainda, sem força contra resistência | fletida, perde a extensão |\n| IFD | estende com força com a IFP fletida | hiperestendida, resiste à flexão (BOYES) |\n| Bandas laterais | no dorso | migradas para palmar |\n\n> **Na prova:** ELSON no agudo, sob bloqueio; tala só na IFP, 6 semanas, com flexão ativa da IFD; BOYES na botoeira crônica.\n\nOs dois testes estão na seção \"O aparelho extensor: ELSON, BOYES e o ligamento retinacular oblíquo\" do resumo.",
+  "correta": "**a) Teste de ELSON.** Sob bloqueio anestésico digital, porque há dor e edema, o examinador flete a IFP do dedo médio a 90 graus sobre a borda da mesa e pede que a paciente estenda a IFP contra resistência, observando a IFD. Na ruptura aguda da bandeleta central não há força de extensão na IFP e a IFD estende com força ou hiperestende; com a bandeleta íntegra, a IFD fica frouxa, porque a flexão da IFP afrouxa as bandas laterais (Green's Operative Hand Surgery, 7ª ed., cap. 5, p. 155 a 157).\n\n**b) Tratamento conservador.** Tala de alumínio com espuma, ou órtese, mantendo **só a IFP em extensão total**, em tempo integral por cerca de **6 semanas**; durante todo o período, exercícios de **flexão ativa e passiva da IFD** de hora em hora, com a IFP estendida, para trazer as bandas laterais de volta ao dorso e alongá-las. Depois, uso intermitente e noturno por mais **4 a 6 semanas** (Green, cap. 5, p. 170). O Green avisa que, mesmo tratada cedo, costuma sobrar leve hiperextensão da IFD e um pequeno déficit de extensão da IFP.\n\n**c) Três semanas depois.** Em 2 a 3 semanas sem tratamento, o ligamento triangular se alonga e as bandas laterais migram para palmar do eixo da IFP: a paciente teria a **deformidade em botoeira**, com IFP fletida sem extensão ativa e IFD em hiperextensão. O ELSON deixa de ser útil, porque as bandas deslocadas já não criam a folga que ele mede; o achado passa a ser o BOYES positivo, resistência à flexão passiva da IFD com a IFP estendida (Green, p. 156 e 170).",
   "incorretas": {},
+  "alerta": "Questão dissertativa, sem gabarito oficial. A resposta segue o Green's Operative Hand Surgery, 7ª ed. (cap. 5, p. 155 a 157 para o ELSON, p. 156 para o BOYES e p. 170 para o tratamento e o prazo de 2 a 3 semanas), e o Campbell's Operative Orthopaedics, 15ª ed. (cap. 71, p. 3180). O tratamento conservador não está no resumo do exame físico; vem do Green, p. 170.",
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Interfalângica proximal: luxações e banda central."
+   "Green's Operative Hand Surgery, 7ª ed. (2017), cap. 5 (Extensor Tendon Injury), p. 155 a 157 (Fig. 5.8), p. 169 (Fig. 5.20) e p. 170",
+   "Campbell's Operative Orthopaedics, 15ª ed. (2026), cap. 71 (Flexor and Extensor Tendon Injuries), p. 3180",
+   "Resumo OrtoQuestões: Exame físico da mão e do punho"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-20"
+  "imagens": [
+   {
+    "arquivo": "mao/green7-5-8.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 5, Fig. 5.8, p. 157. A mecânica do teste de ELSON: com a IFP estendida as bandas laterais ficam tensas e limitam a flexão da IFD (A); com a IFP fletida ao máximo elas afrouxam, a IFD flete livre e perde a força de extensão (B a D); com a banda central rota a folga some e a IFD volta a estender com a IFP fletida (E e F).",
+    "largura": 1382,
+    "altura": 1249
+   },
+   {
+    "arquivo": "mao/green7-5-20-w03.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 5, Fig. 5.20, p. 169. Patomecânica da botoeira: a central atenuada deixa a flexão da IFP sem oposição (A); com a IFP fletida, as bandas laterais migram para palmar do eixo da IFP e ali ficam pela perda do apoio dorsal do triangular alongado e pela contratura do retinacular transverso, e a IFD hiperestende (B).",
+    "largura": 731,
+    "altura": 512
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "mao-1226": {
   "conceito": "**A polpa digital é dividida em pequenos compartimentos por septos fibrosos verticais que vão da pele ao periósteo da falange distal.** Essa anatomia faz uma infecção da polpa se comportar como uma **síndrome compartimental**.\n\n### Felon (panarício)\n\n- abscesso **profundo** da polpa, que envolve os **múltiplos compartimentos septais** do coxim gorduroso volar;\n- dor **latejante e intensa**, polpa **tensa** e edemaciada;\n- geralmente após trauma penetrante (espinho, farpa, glicemia capilar); *S. aureus* é o agente mais comum;\n- **consequências** se não for drenado: aumento da pressão nos compartimentos com **necrose da polpa**, **osteomielite** da falange distal, **artrite séptica** da IFD, **tenossinovite** (extensão para a bainha flexora proximalmente), perda da polpa;\n- **drenagem:** incisão **mediolateral** (do lado não oponente; evitar a face de pinça) ou **volar longitudinal** sobre o ponto de flutuação, abrindo os septos; evitar as antigas incisões em boca de peixe e em taco de hóquei (cicatriz dolorosa, instabilidade da polpa); não ultrapassar a prega da IFD (risco à bainha).\n\n### Infecção apical (subepidérmica, superficial)\n\n- coleção **superficial** na ponta do dedo, logo abaixo da epiderme (às vezes em forma de botão de colarinho, com um componente profundo);\n- **não envolve o coxim gorduroso** nem os compartimentos septais;\n- drenagem simples, superficial.\n\n### Diagnóstico diferencial\n\n**Panarício herpético**: vesículas, polpa **mole**, contexto de exposição a saliva; **não drenar** (risco de disseminação e superinfecção).",
@@ -23803,7 +23869,7 @@
      "blocos": [
       "fratura-da-cabeca-do-radio-8dbbe2b9"
      ],
-     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
+     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
      "trechosSha256": "7c2ef0c88ba38ed9ef1856c331f78ab12e3febdda81312f7cf3bee34f0ff1a38"
     }
    ],
@@ -23908,7 +23974,7 @@
       "escafoide-tratamento-da-fratura-aguda-056fbc49",
       "escafoide-tratamento-da-fratura-aguda-594f812e"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "b34d52a9bad7f16b9d664a14439637b7253787f233970836e9c23165f1670655"
     }
    ],
@@ -25973,7 +26039,7 @@
       "escafoide-classificacao-de-herbert-e-fisher-d0ae7a5a",
       "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "fd395b109ea1469c58a37ba975f69e2bba7baa1e972f49b67c7f8b203581a62f"
     }
    ],
@@ -26659,7 +26725,7 @@
       "escafoide-consolidacao-viciosa-e-pseudartrose-95053c39",
       "escafoide-consolidacao-viciosa-e-pseudartrose-1772b039"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "e5a841ff2fb38a6fcfa799cb393846e47573a4f272b9654c30213b558021387f"
     }
    ],
@@ -27316,7 +27382,7 @@
      "blocos": [
       "fratura-da-cabeca-do-radio-fe207e21"
      ],
-     "sha256": "86b7c8747f28c7bc76172748ec48f4e84d7a5364154a9d8d77d131813d195c70",
+     "sha256": "383877b0ff421bb4f18a9f85afef1fd0aaef8a5cbd44cfabc1018e6143b098f2",
      "trechosSha256": "67e3f8d3fd7ab112b05bcad69e84dccc84fa18a38785c402cbe4784ee5b86c12"
     }
    ],
@@ -27643,7 +27709,7 @@
       "dissociacao-escafossemilunar-65f85568",
       "dissociacao-escafossemilunar-fcaf9e16"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "240ea575399c26ced3e095569f85b4013e88129c03423ceebd855638c6dec25a"
     }
    ],
@@ -27886,7 +27952,7 @@
       "escafoide-tratamento-da-fratura-aguda-594f812e",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "5d545bb0e9c16ca8c7fb79201fb0bd78cda96bf342204ea995abe2c487a4975e"
     }
    ],
@@ -30298,7 +30364,7 @@
       "escafoide-anatomia-irrigacao-e-mecanismo-8aefe31e",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "8c5b52e4a6273493d6d020bf1d1f014ec3a6a82e2e908f5cbfcbacf45a36e526"
     }
    ],
@@ -30339,7 +30405,7 @@
       "dissociacao-escafossemilunar-1f9a739d",
       "dissociacao-lunopiramidal-5eb7978d"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "ae40254d0d73acbe9fd91e1be65e28e82f47dc0bc10160062d264a234dc685e1"
     }
    ],
@@ -30378,7 +30444,7 @@
       "dissociacao-escafossemilunar-cade5531",
       "dissociacao-lunopiramidal-86b34ab3"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "38511cb3392bcef530e32d2b446c8b7b384660e8d66fcb6012bc727ddbdf429d"
     }
    ],
@@ -30419,7 +30485,7 @@
       "escafoide-diagnostico-e-imagem-a2e36c9b",
       "escafoide-diagnostico-e-imagem-54713833"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "e3f74078e70ea0efdd2b832c976f6536bca7d620a90c9b4bacfdc6a1d482fd82"
     }
    ],
@@ -30459,7 +30525,7 @@
       "escafoide-diagnostico-e-imagem-7fab1799",
       "escafoide-diagnostico-e-imagem-456f44f5"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "86d0002879ab426b22d397db33c3d582e6ef88543060f3cc317416758776cc68"
     }
    ],
@@ -30498,7 +30564,7 @@
       "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
       "mayfield-e-a-luxacao-perilunar-a286746f"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "e2322b1c28413c4ae1fc0d953ca38a3fc1a03eb089f8cf7609fea097b8f299ba"
     }
    ],
@@ -30539,7 +30605,7 @@
       "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
       "escafoide-consolidacao-viciosa-e-pseudartrose-95053c39"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "9a35852eb431a7f42699c900a915a295bb1e2c6fdef301da4eec7b37fe94660e"
     }
    ],
@@ -30591,7 +30657,7 @@
       "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
       "escafoide-consolidacao-viciosa-e-pseudartrose-bdd7562e"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "3c7adfc6bb40046da1df21286f6efae53a0527a6b188780c5ab64b8952840f90"
     }
    ],
@@ -30631,7 +30697,7 @@
       "escafoide-consolidacao-viciosa-e-pseudartrose-ac5ed10b",
       "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "8a9532aa9532deff94732265e90b262725eeb2b862501b97aaca03dc63541f0e"
     }
    ],
@@ -30672,7 +30738,7 @@
       "escafoide-consolidacao-viciosa-e-pseudartrose-f4a49f20",
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "aead05c4fb12889b09445416a1b617018a8556ee0d293e1e729913100fffdab9"
     }
    ],
@@ -30714,7 +30780,7 @@
       "artrose-do-colapso-snac-e-slac-75ec5c30",
       "escafoide-consolidacao-viciosa-e-pseudartrose-2d0f6a61"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "5a1e1b5a47d25e1b48d450b964e66f153d95cbf2e9326196c38b5c0f96fa0eba"
     }
    ],
@@ -30753,7 +30819,7 @@
       "fraturas-dos-outros-ossos-do-carpo-0d61d01c",
       "fraturas-dos-outros-ossos-do-carpo-5577eb4e"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "f814c17372b34af4fa3e2e4cc7bff2fd3553ad7d7272682980c9f66db14b30fd"
     },
     {
@@ -30809,7 +30875,7 @@
       "fraturas-dos-outros-ossos-do-carpo-6df6cfc4",
       "fraturas-dos-outros-ossos-do-carpo-a57392eb"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "030c9f5ad9b91d2ce2686757bdb7811cd279357291ce2e183471763514e3fb61"
     }
    ],
@@ -30851,7 +30917,7 @@
       "fraturas-dos-outros-ossos-do-carpo-6df6cfc4",
       "escafoide-anatomia-irrigacao-e-mecanismo-02f7a0bf"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "e28d1858c15234530be12ea5c722b58a3874f209988d2196d994419e64be05f5"
     }
    ],
@@ -30895,7 +30961,7 @@
       "dissociacao-escafossemilunar-67e58eaf",
       "escafoide-anatomia-irrigacao-e-mecanismo-485298b2"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "7652b102f3873ead07377849d34ed6145b00919764ba34ee15bf170aebc885c2"
     }
    ],
@@ -30935,7 +31001,7 @@
       "dissociacao-escafossemilunar-b886eabc",
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-64863bdb"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "86a99400a1bee51c2370ff7c1c068eafb13a6bea92ad49993c9db8bf783597da"
     }
    ],
@@ -30975,7 +31041,7 @@
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-850d5bab",
       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "a8744da3315fd8e8d91e7c985f848006447ad40a5604e86275427b804876693f"
     }
    ],
@@ -31014,7 +31080,7 @@
       "dissociacao-escafossemilunar-8935e6ce",
       "dissociacao-escafossemilunar-6cbb5bca"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "5d926a47260cd6b4dea90e5f885cd5621c554b75463e5c46299c8d865286fce8"
     }
    ],
@@ -31055,7 +31121,7 @@
       "artrose-do-colapso-snac-e-slac-cbb1d7e8",
       "mayfield-e-a-luxacao-perilunar-7a90dc33"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "cd4e900f329b49d26ad4a027c73ff42e3550122e7bd32a2e9c1479765b331e96"
     }
    ],
@@ -31095,7 +31161,7 @@
       "mayfield-e-a-luxacao-perilunar-2b1b5c96",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "7e3590295536f6507593afee264077f1360585b4b1b80dd8ac1d06387a66f44c"
     }
    ],
@@ -31137,7 +31203,7 @@
       "mayfield-e-a-luxacao-perilunar-61bf80f6",
       "mayfield-e-a-luxacao-perilunar-05a279d4"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "d10dd572966f949845c624dcbaa125a14351353a1bff1e78a395b0d1ba02e5eb"
     }
    ],
@@ -31176,7 +31242,7 @@
       "mayfield-e-a-luxacao-perilunar-a286746f",
       "mayfield-e-a-luxacao-perilunar-9979fb84"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "eb77d2e6a025f3e1e0121a2b7b0154e44a503f5064277d97a9fe9edbf1ea03f1"
     }
    ],
@@ -31216,7 +31282,7 @@
       "mayfield-e-a-luxacao-perilunar-05a279d4",
       "mayfield-e-a-luxacao-perilunar-dae12b7d"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "df992b6debee64d7a67ac959fab5da1fef0b5312ea9ff140c3df0f483650569c"
     }
    ],
@@ -31255,7 +31321,7 @@
       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a",
       "anatomia-ligamentar-e-cinematica-do-carpo-b5c61adb"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "d397fbc74a9cae170d94e35ad0ad3bbd000f4adafc1ad7206c53312b8067c2b8"
     }
    ],
@@ -31960,18 +32026,30 @@
   "conferido": false
  },
  "mao-1706": {
-  "conceito": "**Na luxação rotatória da IFP, a cabeça falangeana fica presa como em uma casa de botão do aparelho extensor.** O côndilo da falange proximal passa entre a banda lateral e a banda central. A banda lateral deslocada funciona como o obstáculo que impede o retorno à posição normal, mesmo quando a radiografia não tem a aparência exuberante de uma luxação dorsal completa.\n\nA articulação interfalângica proximal (IFP) é uma dobradiça, e a rotação altera a relação entre a cabeça proximal e a base da falange média. No perfil, os contornos deixam de corresponder. Por isso reconhecer o padrão rotatório importa: a dificuldade de redução não depende apenas de um desvio lateral visível, mas da captura do osso pelos tecidos extensores.\n\nO resumo do Rockwood & Green, 10ª edição, capítulo 45, descreve redução delicada com ajuste da posição do punho e da MCF, seguido de correção da rotação. Se a tentativa fechada falha, é necessário liberar o ponto em que o côndilo atravessou o aparelho extensor. Não se deve confundir o osso que está aprisionado com a estrutura que o aprisiona.\n\n**Leia “Luxação rotatória”**, na seção “Interfalângica proximal: luxações e banda central” do resumo da Biblioteca.",
-  "correta": "A **banda lateral** é a estrutura que participa do aprisionamento do côndilo entre ela e a banda central. Ela constitui o obstáculo de partes moles que mais diretamente explica a irredutibilidade do padrão rotatório. Liberar a estrutura interposta permite que a cabeça volte à sua relação normal com a falange média. A alternativa identifica o mecanismo, em vez de apenas citar uma estrutura próxima.",
+  "conceito": "A radiografia da luxação rotatória da interfalângica proximal (IFP) costuma decepcionar: não há aquela falange média montada no dorso da proximal, só um perfil em que os contornos das duas falanges não combinam. E mesmo assim a redução fechada pode falhar repetidas vezes. A questão pede a peça que explica essa teimosia.\n\n**O que acontece no dedo.** A IFP é uma dobradiça guardada por uma caixa de tecidos: colaterais dos lados, placa volar embaixo e, por cima, o aparelho extensor, com a **banda central** inserida na base dorsal da falange média e as duas **bandas laterais** correndo dos lados rumo ao tendão terminal. O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 45, Interfalângica proximal), descreve que, na luxação rotatória, o **côndilo da falange proximal atravessa o aparelho extensor e fica preso entre a banda lateral e a banda central**, como um botão que passou pela casa. O Green's Operative Hand Surgery, 7ª ed. (cap. 8, p. 280), conta o mesmo com mais detalhe: a falange média gira sobre o colateral que ficou inteiro, o lado oposto subluxa para volar e o côndilo rompe o aparelho extensor, em geral entre a banda central e a banda lateral do mesmo lado. É a **banda lateral** que aprisiona o côndilo, e a tração com a articulação estendida **aperta ainda mais o laço** e bloqueia a redução. O mecanismo típico citado pelo Green é o dedo preso numa secadora de roupa que ainda girava.\n\n**Na figura.** O desenho do Rockwood mostra a fenda aberta no aparelho extensor: a banda central passa por cima, a banda lateral passa por baixo da cabeça da falange proximal, e a seta indica a rotação do dedo. Repare que o osso é o botão; quem faz a casa, e a aperta, são as partes moles.\n\n**Como se desfaz o laço.** Os dois livros pensam igual, com detalhes próprios:\n\n| | Rockwood (cap. 45) | Green (cap. 8, p. 281) |\n|---|---|---|\n| Relaxar o extensor | estender o punho e fletir a MCF | tração suave com MCF e IFP fletidas; extensão moderada do punho se preciso |\n| Gesto final | rodar o dedo com delicadeza | rotação suave para soltar a banda lateral de trás do côndilo |\n| Se falhar | abrir sobre o ponto em que o côndilo atravessou o extensor | via dorsolateral do lado da lesão ligamentar; tirar a banda lateral da articulação |\n\nO Green acrescenta que, se a banda lateral estiver esfiapada, pode ser ressecada, porque a do outro lado basta para a extensão intrínseca; e que, se depois da redução o paciente não estender a IFP até o neutro, trata-se como uma botoeira fechada, com a IFP em extensão por 6 semanas.\n\n**A pegadinha.** O côndilo é o que fica preso, não o que prende. E a placa volar, tão famosa como bloqueio em outras luxações, não é a vilã deste padrão.\n\n**Por que esta questão foi criada.** Para separar a luxação rotatória da IFP das luxações em que a placa volar ou o laço dos flexores bloqueiam a redução, usando a frase do Rockwood sobre a banda lateral.\n\nO padrão e a manobra estão na seção \"Interfalângica proximal: luxações e banda central\" do resumo, no trecho \"Luxação rotatória\".",
+  "correta": "**B) banda lateral.** É a estrutura do aparelho extensor que passa por baixo do côndilo da falange proximal depois que ele atravessa a fenda entre ela e a banda central (Rockwood and Green, 10ª ed., cap. 45; Green's Operative Hand Surgery, 7ª ed., cap. 8, p. 280). Com a articulação estendida e tracionada, ela se tensiona e prende o côndilo; por isso a redução pede MCF fletida, punho em extensão e rotação delicada, e, se falhar, a via aberta tira justamente a banda lateral da articulação.",
   "incorretas": {
-   "A": "A placa volar limita hiperextensão e é importante em luxações dorsais, mas o aprisionamento rotatório descrito ocorre entre banda lateral e central. A cabeça atravessa essa abertura do aparelho extensor como uma casa de botão. A alternativa troca o bloqueio específico por uma estrutura de outro padrão de interposição.",
-   "C": "O resumo identifica a **banda lateral** da IFP, e não a banda sagital dorsal, como a estrutura que aprisiona o côndilo no padrão rotatório. Os nomes de partes do aparelho extensor não são intercambiáveis. A localização e o trajeto do osso entre as bandas precisam corresponder ao mecanismo da luxação.",
-   "D": "A polia A1 integra o sistema da bainha flexora e pode ser liberada na abordagem volar de uma luxação complexa da MCF. Aqui o mecanismo está na IFP, com o côndilo aprisionado pelo aparelho extensor. A alternativa mistura nível articular e estrutura de bloqueio. O padrão rotatório pede reconhecer a banda lateral."
+   "A": "**placa volar.** Ela é o bloqueio clássico de outras luxações. Na MCF do indicador, a luxação dorsal complexa fica irredutível porque a placa volar se interpõe entre a cabeça do metacarpo e a falange (Rockwood, cap. 45, Luxação metacarpofalângica); na própria IFP, o Green (cap. 8, p. 280) descreve a placa volar rompida proximalmente e interposta, mas na luxação dorsal, que nasce da hiperextensão. A rotatória é outra lesão: o côndilo sai por cima, pelo aparelho extensor, e não esbarra na placa.",
+   "C": "**banda sagital.** As bandas sagitais ficam na MCF, não na IFP: nascem da placa volar e dos ligamentos intermetacarpais, laçam a base da falange proximal e centralizam o extensor comum sobre a cabeça do metacarpo (Green, cap. 5, p. 153 e 154, no resumo de tendões extensores). A ruptura delas faz o tendão escorregar para o vale entre as cabeças. Estão uma articulação acima do problema e não têm como abraçar o côndilo da falange proximal.",
+   "D": "**polia anular A1.** É uma polia da bainha flexora, na altura da MCF. Ela entra em cena na luxação complexa da MCF, quando a via volar abre a A1 para afrouxar o laço formado pelo tendão flexor e pelo lumbrical em volta do colo do metacarpo (Rockwood, cap. 45, Redução aberta). Além de pertencer a outra articulação, faz parte do sistema flexor, e a pergunta pede uma estrutura do aparelho extensor."
   },
   "referencias": [
-   "Rockwood and Green's Fractures in Adults. 10ª edição (2025). Capítulo 45: Hand Fractures and Dislocations. Conteúdo consultado no resumo Fraturas e luxações da mão, Biblioteca OrtoQuestões, seção Interfalângica proximal: luxações e banda central."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 45 (Hand Fractures and Dislocations), seção Proximal Interphalangeal Joint Dislocations (Fig. 45-33)",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 8 (Dislocations and Ligament Injuries of the Digits), p. 280 e 281",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 5 (Extensor Tendon Injury), p. 153 e 154",
+   "Resumo OrtoQuestões: Fraturas e luxações da mão",
+   "Resumo OrtoQuestões: Lesões dos tendões extensores"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-20"
+  "imagens": [
+   {
+    "arquivo": "mao/rwa10-45-33-t05.jpeg",
+    "legenda": "Fonte: Rockwood and Green's Fractures in Adults, 10ª ed. (2025), cap. 45, Fig. 45-33 (arquivo sem página impressa). Luxação rotatória da interfalângica proximal: a cabeça da falange proximal atravessa o aparelho extensor e fica presa entre a banda lateral e a banda central, como um botão na casa; a seta mostra a rotação do dedo.",
+    "largura": 1096,
+    "altura": 426
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "mao-1707": {
   "conceito": "**A falange proximal fraturada se deforma pelo desequilíbrio entre os interósseos e o aparelho extensor.** Os interósseos fletem o fragmento proximal, enquanto o aparelho extensor tende a estender o distal. O resultado é uma angulação de **ápice volar**, com o componente distal dirigido dorsalmente. Saber de qual referência se está falando evita chamar duas descrições do mesmo padrão de contraditórias.\n\nO tendão flexor superficial insere-se na falange **média**, e não é a inserção que explica a flexão do fragmento proximal nesta fratura. O extensor participa do equilíbrio e da extensão do componente distal, mas não deve substituir os interósseos como principal causa da flexão proximal. O mecanismo muda quando se passa da falange proximal para a média.\n\nEssa deformidade também ajuda a compreender a pseudogarra. A perda de alinhamento pode alterar a relação entre extensão da MCF e movimento da IFP. Rotação e cruzamento dos dedos precisam ser examinados, porque um alinhamento aparentemente satisfatório em uma projeção não garante função normal. Na proteção inicial, flexionar a MCF faz o aparelho extensor atuar como uma banda de tensão no traço transverso.\n\n**Leia “Falange proximal: os interósseos”**, no resumo do Rockwood & Green, 10ª edição, capítulo 45, na seção “Desvios das falanges e a falange proximal”.",
@@ -33570,7 +33648,7 @@
       "escafoide-consolidacao-viciosa-e-pseudartrose-ffc95edb",
       "escafoide-consolidacao-viciosa-e-pseudartrose-734985f3"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "9e62da65424ff8ec6147eef60a332b89cb3072cf48d31e918fed898e092d38ca"
     }
    ],
@@ -33612,7 +33690,7 @@
       "dissociacao-escafossemilunar-dea04ab1",
       "dissociacao-escafossemilunar-8935e6ce"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "bc916e182511cf7f9a9dfccda4354c8a2197530d4a479f6c51b5c35c20ff1d1a"
     }
    ],
@@ -33688,7 +33766,7 @@
       "escafoide-classificacao-de-herbert-e-fisher-65b06daa",
       "mayfield-e-a-luxacao-perilunar-05a279d4"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "cc1cb1b276f0c62b8bc92806a521288e55900f3af00631f6b46c6064229c31d6"
     }
    ],
@@ -36790,7 +36868,7 @@
       "dissociacao-escafossemilunar-79d4b223",
       "dissociacao-escafossemilunar-8935e6ce"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "6bb5a5cfe68c38ae4800c1f96644fb7b10e407c26fb9f7bb2deb98119d549e94"
     }
    ],
@@ -36859,7 +36937,7 @@
       "dissociacao-escafossemilunar-1f9a739d",
       "dissociacao-escafossemilunar-65f85568"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "cee886fecf07c48dc444dd75d9daf68aec3649683626f4feb62d5396d065c162"
     }
    ],
@@ -38161,7 +38239,7 @@
       "artrose-do-colapso-snac-e-slac-118d45f0",
       "mayfield-e-a-luxacao-perilunar-7a90dc33"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "6c03118b48e7f3e4560c313d164a5e34ba7a780774f70cd680b75cb74ef98395"
     }
    ],
@@ -38353,7 +38431,7 @@
       "escafoide-diagnostico-e-imagem-2c167e09",
       "escafoide-diagnostico-e-imagem-c1f614fc"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "ae56c93b2af8c822d3838dcc42c4ae90465077605a8a8a160bf2087ed7ae6111"
     }
    ],
@@ -38392,7 +38470,7 @@
       "escafoide-anatomia-irrigacao-e-mecanismo-9df32e5e",
       "escafoide-tratamento-da-fratura-aguda-9cdac99f"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "07573bebd2f769b069206e17640b30208edfea24af60cea1bf2443a250772465"
     }
    ],
@@ -38401,18 +38479,29 @@
   }
  },
  "mao-2048": {
-  "conceito": "Excluindo o escafoide, o osso do carpo mais fraturado é o **piramidal**. O resumo o descreve como a segunda fratura mais comum do carpo, e escafoide e piramidal, juntos, representam mais de 90% dessas fraturas. A resposta depende de comparar frequência, não de escolher o osso cuja fratura parece mais grave (Rockwood adultos, 10ª ed., cap. 44, outros ossos do carpo).\n\nO padrão habitual do piramidal é uma **avulsão cortical dorsal**, responsável por mais de 90% de suas fraturas. Pode ocorrer arrancamento capsular ou impacção contra estruturas vizinhas. O pequeno fragmento pode se esconder na PA pela sobreposição com o semilunar e aparecer melhor no perfil ou em uma oblíqua pronada.\n\nNa forma dorsal isolada, o tratamento descrito costuma ser uma tala curta, seguida de movimento ativo. Isso não transforma toda fratura do piramidal em lesão simples: fratura do corpo com desarranjo do carpo pode fazer parte de uma perilunar, e a avulsão volar deve levantar a possibilidade de lesão lunopiramidal. O padrão e as relações articulares continuam importantes.\n\nHamato, pisiforme e trapézio também fraturam, mas pertencem ao grupo menos frequente. Reconhecer seus mecanismos próprios ajuda a não trocar a frequência geral por uma associação marcante, como hâmulo e esportes com raquete ou taco.\n\n**Por que esta questão foi criada.** Inspirada na questão 85 da SBCM 2024, que perguntou qual osso do carpo é o mais fraturado depois do escafoide.",
-  "correta": "**Correta: B (piramidal).** É o segundo osso do carpo mais fraturado no resumo, atrás do escafoide. A apresentação predominante é a pequena avulsão cortical dorsal, que pode ser discreta na radiografia inicial.",
+  "conceito": "O escafoide domina tanto as fraturas do carpo que a pergunta precisa tirá-lo da disputa para ficar interessante. Sem ele, quem lidera? A resposta é um osso cuja fratura quase nunca é operada e, por isso, raramente ganha destaque: o **piramidal**.\n\n**Os números do Rockwood.** O Rockwood and Green's Fractures in Adults, 10ª ed. (cap. 44, Epidemiology of Carpal Fractures), diz que fraturas do carpo são 2% a 3% de todas as fraturas e que **escafoide e piramidal somam mais de 90%** delas; hamato, pisiforme, semilunar, capitato, trapézio e trapezoide são raros. O capítulo de epidemiologia do mesmo livro (cap. 10, Carpal Fractures) dá a proporção numa população: **escafoide 73,8%**, **piramidal 23,0%**, nenhum piramidal operado. O piramidal ainda foge do perfil das outras: média de **51 anos** e distribuição parecida entre os sexos, enquanto escafoide, hamato, pisiforme e trapézio predominam em homens jovens.\n\n**O que o Green mostra.** O Green's Operative Hand Surgery, 7ª ed. (cap. 16, p. 624 e 625), é mais cauteloso: chama a frequência relativa de **controversa**, diz que muitos autores põem o piramidal logo depois do escafoide e que, na maioria das séries, ele é o segundo ou o terceiro. A Tabela 16.6 deixa ver por quê:\n\n| Série (Green, Tabela 16.6) | Fraturas | Piramidal | Trapézio | Semilunar | Hamato | Pisiforme |\n|---|---|---|---|---|---|---|\n| GARCIA-ELIAS | 249 | **64** | 15 | 2 | 4 | 5 |\n| AUFFRAY | 245 | **72** | 10 | 10 | 4 | 1 |\n| BORGESKOV | 143 | **29** | 5 | 2 | 1 | 1 |\n| SNODGRASS | 170 | 7 | 3 | **11** | 1 | 1 |\n| FRANZ | 122 | 6 | 8 | **13** | 3 | 4 |\n\nNas séries maiores o piramidal ganha com folga; em duas menores, o semilunar aparece na frente. O Box 16.1 do Green fecha com o piramidal como a **segunda fratura mais comum do carpo**, cerca de 15% delas. A divergência com o Rockwood é sobre o semilunar, que o Rockwood põe abaixo de 1%; para a pergunta, os dois livros apontam o mesmo osso.\n\n**Por que tanto piramidal.** Mais de 90% são a **avulsão cortical dorsal**, uma lasca arrancada pelo radiocárpico dorsal e pelo intercarpal dorsal, ou cinzelada pela estiloide da ulna ou pelo hamato na queda com o punho em dorsiflexão e desvio ulnar (Green, p. 625; Rockwood, cap. 44). Na figura do Green, a seta mostra essa lasca no perfil: na PA ela some atrás do semilunar, e por isso o perfil e a oblíqua pronada de 45 graus são as incidências que a encontram. O tratamento costuma ser curto, tala por 2 semanas no Rockwood, gesso de 3 a 4 semanas no Green.\n\n**Por que esta questão foi criada.** Inspirada na questão 85 da SBCM 2024, que perguntou qual osso do carpo mais fratura depois do escafoide; aqui a pergunta tira o escafoide do páreo de forma explícita.\n\nO panorama está na seção \"Como ler este capítulo\" (Panorama em números) e o osso na seção \"Fraturas dos outros ossos do carpo\" (Piramidal) do resumo.",
+  "correta": "**B) Piramidal.** O Rockwood and Green, 10ª ed. (cap. 44), soma escafoide e piramidal em mais de 90% das fraturas do carpo e o capítulo de epidemiologia (cap. 10) dá 23,0% ao piramidal, contra 73,8% do escafoide. O Green's Operative Hand Surgery, 7ª ed. (cap. 16, Box 16.1, p. 625), o chama de segunda fratura mais comum do carpo. O padrão dominante é a pequena avulsão dorsal, vista no perfil.",
   "incorretas": {
-   "A": "O pisiforme é um sesamoide no tendão do flexor ulnar do carpo e pode fraturar por avulsão, impacto ou golpe direto. Esses mecanismos explicam a lesão, mas não o colocam acima do piramidal em frequência. Ele integra o grupo raro de fraturas do carpo descrito no panorama do capítulo.",
-   "C": "O hamato se associa a mecanismos bem reconhecíveis: o hâmulo pode sofrer compressão por raquete ou taco, e o corpo pode fraturar em trauma de alta energia com lesão carpometacarpal. Apesar dessas associações, o resumo atribui ao piramidal a segunda posição em frequência.",
-   "D": "O trapézio pode apresentar fraturas do corpo, da crista e lesões carpometacarpais do polegar. Isso não o torna o mais fraturado depois do escafoide. A comparação epidemiológica do resumo coloca o piramidal à frente desse grupo de ossos menos frequentemente lesionados."
+   "A": "**Pisiforme.** É um sesamoide dentro do tendão do flexor ulnar do carpo e quebra por avulsão desse tendão, por impacção contra o piramidal ou por golpe direto, quase sempre no corpo (Rockwood, cap. 44). Passa despercebido com facilidade, mas a frequência é baixa: 5 em 249 fraturas na série de GARCIA-ELIAS (Green, Tabela 16.6). Seria a resposta se a pergunta fosse o osso do carpo que é sesamoide ou que se trata por excisão na pseudartrose dolorosa.",
+   "C": "**Hamato.** Fica em torno de 5% das fraturas do carpo no Rockwood (cap. 44). Ganhou fama pela fratura do hâmulo no golfe e nos esportes de raquete e pela vizinhança do ramo profundo do nervo ulnar, o que o torna muito cobrado, não muito frequente. Na Tabela 16.6 do Green, não passa de 4 casos em nenhuma série. Seria a resposta numa pergunta sobre a fratura do carpo ligada ao taco ou à incidência do túnel do carpo.",
+   "D": "**Trapézio.** É o candidato mais forte ao terceiro lugar: o Green (cap. 16, p. 626) dá 1% a 5% das fraturas do carpo e o chama de terceiro osso mais fraturado na maioria das séries, com 15 casos na série de GARCIA-ELIAS. Fratura no corpo, na crista ou junto da luxação carpometacarpal do polegar. Mesmo nessa série, fica a uma distância grande dos 64 piramidais."
   },
   "referencias": [
-   "Conteúdo consultado no resumo “Fraturas e luxações do carpo”, Biblioteca do OrtoQuestões, baseado em Rockwood and Green's Fractures in Adults, 10ª edição (2025), Capítulo 44 · Carpal Fractures and Dislocations. Seções: Como ler este capítulo; Fraturas dos outros ossos do carpo."
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 44 (Carpal Fractures and Dislocations), seções Epidemiology of Carpal Fractures e Triquetral Fractures",
+   "Rockwood and Green's Fractures in Adults, 10ª ed., cap. 10 (Epidemiology of Fractures and Dislocations), seção Carpal Fractures",
+   "Green's Operative Hand Surgery, 7ª ed., cap. 16 (Fractures of the Carpal Bones), p. 624 a 626 (Tabela 16.6, Box 16.1, Fig. 16.37)",
+   "Resumo OrtoQuestões: Fraturas e luxações do carpo"
   ],
-  "conferido": false,
-  "geradoEm": "2026-10-27"
+  "imagens": [
+   {
+    "arquivo": "mao/green7-16-37-s304.jpeg",
+    "legenda": "Fonte: Green's Operative Hand Surgery, 7ª ed. (2017), cap. 16, Fig. 16.37, p. 626. Radiografia do punho em perfil: a seta aponta a pequena lasca da cortical dorsal do piramidal, o padrão de fratura do piramidal de longe mais comum, que costuma sumir na PA por sobreposição.",
+    "largura": 697,
+    "altura": 468
+   }
+  ],
+  "geradoEm": "2026-11-11",
+  "conferido": false
  },
  "mao-2049": {
   "conceito": "**Como o Green trata o Kienböck hoje.** A escolha do tratamento é controversa desde a descrição original, e o livro propõe decidir por objetivos: aliviar a dor, proteger o semilunar do colapso, proteger o punho da degeneração, reconstruir o semilunar comprometido e, se ele ou o punho não forem reconstruíveis, partir para preservação de movimento ou salvamento (cap. 16, p. 733). O algoritmo de Lichtman e Bain incorpora o estado ósseo, condral e vascular do semilunar e os efeitos secundários no punho, e a individualização considera também as características do paciente (p. 733, Tabela 16.6).\n\n**A idade em primeiro lugar.** O Green é taxativo: \"A idade é um fator prognóstico importante na doença de Kienböck, e a grande maioria dos pacientes pediátricos com doença de Kienböck experimentará melhora radiográfica e clínica completa após um período de imobilização com tala ou gesso\" (cap. 16, p. 733). O semilunar da criança tem uma capacidade de recuperação que o do adulto não tem, e a imobilização protege o osso enquanto ele se revasculariza.\n\n**Os casos que não respondem.** Na criança mais velha e no adolescente, a chamada osteomalácia juvenil, há casos recalcitrantes (Green, cap. 16, p. 733). Para eles, o livro indica a osteotomia de encurtamento do rádio quando a variância ulnar é negativa, e a osteotomia em cunha de fechamento do rádio ou a fixação temporária da escafotrapeziotrapezoidal quando a variância é neutra ou negativa (p. 733).\n\n**No adulto, a lógica é outra.** Para o semilunar intacto (B1), o algoritmo protege o osso com um procedimento de descarga; para o semilunar reconstruível (B2), com colapso do osso proximal mas cartilagem íntegra, usa enxerto para preencher o vazio, com ou sem descarga, e um fio escafocapitato pode reduzir a carga sobre o semilunar; o semilunar irreconstruível (B3) precisa ser ressecado (Green, cap. 16, p. 733).\n\n| Situação (Green, cap. 16, p. 733) | Conduta |\n|---|---|\n| Criança | Imobilização com tala ou gesso; a grande maioria melhora por completo |\n| Adolescente recalcitrante, variância negativa | Encurtamento do rádio |\n| Adolescente recalcitrante, variância neutra ou negativa | Cunha de fechamento do rádio ou fixação temporária da STT |\n| Adulto, semilunar reconstruível (B2) | Enxerto, com ou sem descarga |\n\n**Por que esta questão foi criada.** Inspirada na questão 30 da SBCM 2024, que perguntou a conduta, pelo algoritmo de Lichtman, no Kienböck que aparece na infância. As três cirurgias das alternativas existem, mas pertencem a outros cenários.\n\n> **Na prova:** Kienböck na CRIANÇA = imobilização (tala ou gesso); a grande maioria melhora por completo. Cirurgia só nos recalcitrantes, sobretudo adolescentes.",
@@ -40732,7 +40821,7 @@
      "blocos": [
       "dissociacao-escafossemilunar-cade5531"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "7c814dcd494183078877c9d1a1b68f99afc3a2a5c65eaf28bd7fc8d02665c152"
     }
    ],
@@ -40897,7 +40986,7 @@
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-d201ee21",
       "dissociacao-lunopiramidal-5eb7978d"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "948a5256e1637f964cbac95ff9525dbcd3712251ff12c8f262a00c8ce87d2619"
     }
    ],
@@ -40938,7 +41027,7 @@
       "dissociacao-escafossemilunar-6cbb5bca",
       "dissociacao-escafossemilunar-dea04ab1"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "a2b143a796890c13175c9ac63a5d1d0fc97c4ebae1128b5847de91a959bf73a5"
     }
    ],
@@ -41021,7 +41110,7 @@
       "dissociacao-escafossemilunar-67e58eaf",
       "dissociacao-escafossemilunar-2039b898"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "207181b9f4d2aad23e21247e82dd301ecb6698c26767e56442602a994fc5ee2a"
     }
    ],
@@ -41182,7 +41271,7 @@
       "escafoide-tratamento-da-fratura-aguda-dcc89a77",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "62d3f9d7115e3a740a63b4aac362b6f5167436bd58ea01b525052e853f6e54a6"
     }
    ],
@@ -42252,7 +42341,7 @@
       "dissociacao-escafossemilunar-8935e6ce",
       "dissociacao-escafossemilunar-f6a7a76b"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "4f0c9b850768ad9e4e96cbc7aa40f4ba7b6ce774e1fd4c9e40f7591ff80e2413"
     }
    ],
@@ -42312,7 +42401,7 @@
       "luxacao-radiocarpica-ffe770be",
       "mayfield-e-a-luxacao-perilunar-fdfdb76a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "d38ea0ee63f8aaac421d8bcd57c59b80a695b328d951b3200ab4d567dbad5dfd"
     }
    ],
@@ -42349,7 +42438,7 @@
      "blocos": [
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-22ed1a15"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "50c9ddfbefd13f5a96025789b9ac721158bce58919ab0b90e06fd2e7d5a6386a"
     }
    ],
@@ -42783,7 +42872,7 @@
       "escafoide-tratamento-da-fratura-aguda-ace416a4",
       "escafoide-anatomia-irrigacao-e-mecanismo-7ffd8afd"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "c4c0b5b655f3e4400cf5ee0ee6e997cf5d0b7fd05de5824d67e7e5135cf7243c"
     }
    ],
@@ -44358,7 +44447,7 @@
       "anatomia-ligamentar-e-cinematica-do-carpo-09fa55ed",
       "escafoide-tratamento-da-fratura-aguda-056fbc49"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "b8881c1017121568a4428ca8c3b891254a69a1549f75724ceeb43af6909cd9b3"
     }
    ],
@@ -45087,7 +45176,7 @@
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-39f357c9",
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "a7b5ff87c2c99ee9e050bd41f591321cc5215cf1075a3a69caad4403316fd9e6"
     }
    ],
@@ -45326,7 +45415,7 @@
       "padroes-de-instabilidade-disi-visi-e-o-que-e-dis-da36cf1e",
       "anatomia-ligamentar-e-cinematica-do-carpo-2350fd9a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "5aba5b978fa4ba27accc594205b16deadc78707e581c3be6d4721d805c0c2a5d"
     }
    ],
@@ -45462,7 +45551,7 @@
      "blocos": [
       "dissociacao-escafossemilunar-1aa45ccb"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "3fc462fbfe0eeed235343bcb77e05da79dec952da3adafe774c58bed158d93b9"
     }
    ],
@@ -46109,7 +46198,7 @@
       "escafoide-tratamento-da-fratura-aguda-28d72402",
       "escafoide-classificacao-de-herbert-e-fisher-8972bd5a"
      ],
-     "sha256": "619ca17d6a29a62495113332944a028d6bc218cc585983530a98cb72f0e9e9c1",
+     "sha256": "136b5e92245a4c2815148f5d278225b6fb10764fc1585cb50e5db8f05f40a057",
      "trechosSha256": "dea57355cd7cadc48ab893f358b1afe7011009d19b22a2a8001bc29d1082d3a3"
     }
    ],
