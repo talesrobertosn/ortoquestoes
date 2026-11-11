@@ -321,7 +321,8 @@ Resumos curtos refeitos como aula (45 KB ou mais) e todos os comentários do sub
 | 1002 | Fim da onda 1 confirmado (nenhuma das 429 abaixo de 1.200 caracteres). Onda 2: 48 miniaulas refeitas com figuras (27 da paralisia cerebral, 12 da doença de BLOUNT, 9 da anatomia da mão) |
 | 1003 | Onda 2: 45 miniaulas refeitas com figuras (24 de alinhamento, torções, BLOUNT e coxa vara; 11 de nervos periféricos; 10 de escoliose idiopática) |
 | 1004 | Onda 2: 41 miniaulas refeitas com figuras (21 de nervos periféricos, fim deste resumo; 20 de escoliose idiopática, fim deste resumo) |
-| (este PR) | Onda 2: 45 miniaulas refeitas com figuras (27 dos princípios de osteossíntese, AO, Rockwood e Campbell, fim deste resumo; 18 da anatomia do joelho, Campbell, Rockwood e Skeletal Trauma) |
+| 1005 | Onda 2: 45 miniaulas refeitas com figuras (27 dos princípios de osteossíntese, AO, Rockwood e Campbell, fim deste resumo; 18 da anatomia do joelho, Campbell, Rockwood e Skeletal Trauma) |
+| (este PR) | Onda 2: 54 miniaulas refeitas com figuras (27 da coluna cervical e lesão medular, fim deste resumo; 18 da espondilolistese; 9 da anatomia do joelho, fim deste resumo) |
 
 ## Próximo
 
