@@ -1,6 +1,6 @@
 ---
 id: rockwood10-lesao-medular
-versao: 1
+versao: 2
 titulo: Lesão medular e síndromes medulares
 especialidade: coluna
 acesso: gratis
@@ -8,7 +8,7 @@ livro: Rockwood and Green's Fractures in Adults
 edicao: 10ª edição (2025), com o Campbell's Operative Orthopaedics, 15ª ed. (cap. 48)
 capitulo: Capítulo 47 · Principles of Spine Trauma Care
 autores: Harry M. Lightsey, Mitchel B. Harris, and Daniel G. Tobert
-fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 47 inteiro (p. 1884 a 1899), capítulo 14 (p. 472 e 483), capítulo 48 (p. 1905 a 1908, 1930 e 1931, 2001 a 2003) e capítulo 49 (p. 2010 a 2014 e 2039 a 2040); Campbell's Operative Orthopaedics, 15ª ed., capítulo 48 (p. 1866 a 1880), capítulo 38 (p. 1408 e 1409), capítulo 42 (p. 1675 e 1676) e capítulo 46 (p. 1787 e 1788); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 28 (p. 1173 e 1174); Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 22 (seção SCIWORA). As páginas citadas são as impressas.
+fonte: Livros conferidos localmente em 01/11/2026: Rockwood and Green's Fractures in Adults, 10ª ed., capítulo 47 inteiro (p. 1884 a 1899), capítulo 14 (p. 472 e 483), capítulo 48 (p. 1905 a 1908, 1930 e 1931, 2001 a 2003) e capítulo 49 (p. 2010 a 2014 e 2039 a 2040); Campbell's Operative Orthopaedics, 15ª ed., capítulo 48 (p. 1866 a 1880), capítulo 38 (p. 1408 e 1409), capítulo 42 (p. 1675 e 1676) e capítulo 46 (p. 1787 e 1788); Tachdjian's Pediatric Orthopaedics, 6ª ed., capítulo 28 (p. 1173 e 1174); Rockwood and Wilkins' Fractures in Children, 10ª ed., capítulo 22 (seção SCIWORA); Lovell and Winter's Pediatric Orthopaedics, 7ª ed., capítulo 21 (p. 878 e 879) e capítulo 34 (p. 1773 e 1774). As páginas citadas são as impressas.
 subtemas: Lesão medular e síndromes medulares
 resumo: Choque neurogênico (bradicardia, hipotensão, pele quente, lesão cervical ou torácica alta, vasopressor alfa e beta) contra choque medular (arreflexia, fim com o bulbocavernoso, em geral 24 a 48 h); ASIA/FRANKEL A a E com preservação sacral S4-S5 e o corte do grau 3; centromedular (a mais comum, idoso, hiperextensão, membros superiores piores), anterior (hiperflexão, artéria espinhal anterior, propriocepção poupada, pior prognóstico), BROWN-SÉQUARD (motor e propriocepção do mesmo lado, dor e temperatura do outro), posterior (só propriocepção), cone e cauda equina; metilprednisolona como opção controversa; SCIWORA na criança pequena, cervical, por flexão-distração.
 ---
@@ -476,6 +476,10 @@ O Campbell's Operative Orthopaedics, 15ª ed. (cap. 38, p. 1408 e 1409), define 
 
 O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 28, p. 1173), completa: a coluna, **mais elástica que a medula**, estica e volta ao lugar, deixando a medula lesada e a radiografia normal; o termo é de PANG e WILBERGER (1982); a lesão é **esmagadoramente pediátrica** (no adulto costuma haver lesão ligamentar na RM) e responde por **15% a 35%** das lesões medulares da criança. Pode ocorrer em qualquer idade e local, **mas é mais comum na coluna cervical**. A **criança pequena** tem mais lesões **completas cervicais**, de **prognóstico ruim**, porque a cabeça grande deforma a coluna além do limite da medula; o **adolescente** tem mais lesões **incompletas**. O Rockwood and Wilkins' Fractures in Children, 10ª ed. (cap. 22), acrescenta que os **menores de 8 anos** têm envolvimento neurológico **mais grave**.
 
+O Lovell and Winter's Pediatric Orthopaedics, 7ª ed. (cap. 21, p. 878), dá a SCIWORA em **5% a 55%** das lesões medulares da criança na literatura neurocirúrgica, embora bancos multicêntricos recentes sugiram bem menos. Os fatores são quatro: **hiperextensão, flexão, distração e isquemia medular** (por contusão ou por insulto vascular direto); a estenose do canal não pesa, porque a razão de TORG média foi maior que 1,0 em 145 crianças com SCIWORA cervical. **78%** dos déficits são **cervicais**, e a cervical alta dá lesões mais graves que a baixa. A RM correlaciona com o resultado, mas o achado positivo aparece sobretudo nas crianças que chegam com quadro neurológico muito grave; o resultado é ditado pelo **estado neurológico de apresentação**, e cerca de **um quarto** piora tardiamente. A piora tardia é o número que mais diverge: **50%** no Campbell (cap. 38, p. 1409), cerca de um quarto no Lovell and Winter (p. 878) e **15%** de segunda SCIWORA na série de PANG e POLLACK citada pelo Tachdjian (p. 1173).
+
+No capítulo de coluna toracolombar (cap. 34, p. 1773), o mesmo livro explica que a lesão medular é menos frequente na criança que no adulto porque a coluna infantil, mais flexível, se deforma sem quebrar, elasticidade que a medula não tem, e é daí que vem a SCIWORA. A cabeça desproporcionalmente grande põe em maior risco a coluna **cervical e a torácica alta**; o trauma da torácica baixa ou da lombar raramente lesa a medula na criança. A recuperação da lesão **incompleta** é melhor que no adulto, mas a lesão **completa** raramente melhora. Na p. 1774, a SCIWORA aparece entre as lesões próprias da criança.
+
 !tabela SCIWORA por idade (Tachdjian 6, cap. 28, p. 1173; Campbell 15, cap. 38, p. 1408 e 1409; Rockwood and Wilkins 10, cap. 22)
 | Aspecto | Menor de 8 anos | Adolescente |
 | --- | --- | --- |
@@ -485,7 +489,7 @@ O Tachdjian's Pediatric Orthopaedics, 6ª ed. (cap. 28, p. 1173), completa: a co
 | motor do mecanismo | cabeça grande, frouxidão, flexão-distração | coluna mais madura |
 !fim
 
-É **diagnóstico de exclusão**: radiografia, TC se indicada e **RM**, que mostra sinal medular anormal sem lesão da coluna; como quase todos têm algum achado na RM, o termo é considerado ultrapassado (Tachdjian, cap. 28, p. 1173; Rockwood and Wilkins, cap. 22). A **imobilização** é polêmica. PANG e POLLACK viram **15%** de **segunda SCIWORA** entre 3 dias e 10 semanas e propuseram imobilizar; BRESNAN não viu déficit permanente por recorrência nem benefício do colete. O Tachdjian (p. 1174) conclui que o risco é **baixo**, a decisão é **individual**, e que, embora ainda imobilize o déficit significativo, **o colete na SCIWORA de baixa energia provavelmente não se justifica**.
+É **diagnóstico de exclusão**: radiografia, TC se indicada e **RM**, que mostra sinal medular anormal sem lesão da coluna; como quase todos têm algum achado na RM, o termo é considerado ultrapassado (Tachdjian, cap. 28, p. 1173; Rockwood and Wilkins, cap. 22). A **imobilização** é polêmica. PANG e POLLACK viram **15%** de **segunda SCIWORA** entre 3 dias e 10 semanas e propuseram imobilizar; BRESNAN não viu déficit permanente por recorrência nem benefício do colete. O Tachdjian (p. 1174) conclui que o risco é **baixo**, a decisão é **individual**, e que, embora ainda imobilize o déficit significativo, **o colete na SCIWORA de baixa energia provavelmente não se justifica**. O Lovell and Winter (cap. 21, p. 879) vai na mesma linha: PANG e POLLACK recomendaram colete de GUILFORD por 3 meses e nenhum esporte, mas na própria série de PANG nenhuma criança tinha instabilidade na chegada e só uma a desenvolveu depois; sem instabilidade documentada, a utilidade biomecânica do colete é questionável, e o próprio PANG passou a dispensá-lo na criança com déficit transitório, RM normal e potencial evocado somatossensitivo normal. Com ou sem colete, o seguimento neurológico é próximo; radiografias em flexão e extensão após 3 meses de colete, e instabilidade tardia pede estabilização cirúrgica.
 
 !questoes central=coluna-0211 relacionadas=coluna-0312
 conceito: A SCIWORA cervical da criança é atribuída à flexão-distração grave: a coluna infantil estica 4 a 5 cm, a medula só 4 a 5 mm.
@@ -497,14 +501,14 @@ armadilha: Escolher compressão ou rotação, que não explicam uma medula lesad
 conceito: A SCIWORA é mais comum na coluna cervical e na criança menor de 8 anos, que tem lesões mais graves e com frequência completas.
 como: O TEPOP 2024 perguntou a combinação mais comum de local e idade (cervical, menor de 8 anos); a SBOT-SP perguntou em que segmento o déficit neurológico da SCIWORA é mais comum, com gabarito na coluna torácica.
 armadilha: Achar que a lesão é típica do adolescente por ele sofrer mais trauma de alta energia; no adolescente ela tende a ser incompleta.
-alerta: O gabarito de `coluna-0273` (coluna torácica) diverge do Tachdjian, que diz que a SCIWORA é mais comum na coluna cervical (cap. 28, p. 1173); nenhum livro conferido sustenta a coluna torácica como local mais comum.
+alerta: O gabarito de `coluna-0273` (coluna torácica) diverge do Tachdjian, que diz que a SCIWORA é mais comum na coluna cervical (cap. 28, p. 1173); nenhum livro conferido sustenta a coluna torácica como local mais comum (o Lovell and Winter dá 78% cervicais, cap. 21, p. 878).
 !fim
 
 !questoes central=coluna-0179
 conceito: Na SCIWORA, PANG e POLLACK justificaram a imobilização pelo risco de segunda lesão (15%), mas o Tachdjian considera o risco baixo e o colete na SCIWORA de baixa energia provavelmente desnecessário; cirurgia não tem papel sem lesão estrutural.
 como: O TARO 2024 perguntou a conduta na maioria das crianças com SCIWORA cervical por trauma de baixa energia, com gabarito em imobilização.
 armadilha: Escolher descompressão ou artrodese numa coluna sem lesão estrutural.
-alerta: O gabarito de `coluna-0179` (indicação de imobilização) diverge da conclusão do Tachdjian, para quem o colete na SCIWORA de baixa energia provavelmente não se justifica (cap. 28, p. 1174); o gabarito apoia-se na proposta de PANG e POLLACK, citada no mesmo livro (p. 1173), de imobilizar pelo risco de recorrência.
+alerta: O gabarito de `coluna-0179` (indicação de imobilização) diverge da conclusão do Tachdjian, para quem o colete na SCIWORA de baixa energia provavelmente não se justifica (cap. 28, p. 1174); o gabarito apoia-se na proposta de PANG e POLLACK, citada no mesmo livro (p. 1173), de imobilizar pelo risco de recorrência. O Lovell and Winter (cap. 21, p. 879) também considera questionável o colete sem instabilidade documentada.
 !fim
 
 # Fechamento {radar=fundamento}
